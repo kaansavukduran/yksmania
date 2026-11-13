@@ -43,13 +43,34 @@ Drive upload; ordinary app development and authorized GitHub/Vercel work continu
 
 Local check/build: PASS. Unit/storage/content: 20 tests PASS. Browser acceptance:
 19 tests PASS in Chromium on Linux. Electron offline visual lesson, reload and
-process restart: PASS with zero renderer errors. The final catalogue lifecycle
-cleanup is checked again before pushing; remote package/public-origin runs are
-recorded at the delivery checkpoint. The real-source
+process restart: PASS with zero renderer errors. The catalogue lifecycle cleanup
+and readable mobile selector layout passed focused acceptance before pushing.
+Remote package/public-origin runs are recorded at the delivery checkpoint. The real-source
 local import and offline reading checks are in QA. Native production signing,
 clean-install/portable relocation, physical devices, non-Chromium browsers and
 real two-package native updates remain open gates. Never call emulation physical
 verification. Preserve the accepted +2/+6/+20 ordinal review policy.
+
+## 0.2.0 delivery verification
+
+- Final application source: `123b1b8ced9deac7fb4fa0bebab1bd66d14a7c33`.
+- [Published web acceptance](https://github.com/kaansavukduran/yksmania/actions/runs/43485490494):
+  19/19 browser tests passed against https://yksmania.vercel.app, including offline
+  reload, prior records, private-catalogue fixtures and the three new visual flows.
+- Production deployment `dpl_HCkQhaFvGVmGZbKqjDibhukwNEYD` is READY for this source.
+- [Final package build](https://github.com/kaansavukduran/yksmania/actions/runs/43485370541)
+  passed all four jobs: 20 unit/storage/content tests, 19 browser tests, Windows
+  and Linux packaged offline lesson/reload/process-restart checks with zero renderer
+  errors, and Android APK signature/manifest verification. The superseded c66e42b
+  build was cancelled. These automation checks do not replace the physical-device,
+  installer/portable-extractor and two-package update gates listed above.
+- [Release publication](https://github.com/kaansavukduran/yksmania/actions/runs/43486494460)
+  passed and published [v0.2.0-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.2.0-alpha.1).
+  The tag resolves to the verified application source above. All five binaries
+  (Windows Setup/Portable, Linux AppImage/DEB, Android debug APK), SHA256SUMS,
+  verified-run.json and Android verification evidence are uploaded. The earlier
+  0.1.0 prerelease remains intact. Private catalogue/PDF packs are still local;
+  the blocked Drive export was not retried or routed through another destination.
 
 # Historical checkpoint: YKSMania 0.1.0 alpha
 

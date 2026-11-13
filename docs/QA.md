@@ -32,7 +32,7 @@ reported in the current Forge checkpoint. No WCAG certification is claimed.
 
 ## Content limits
 
-Six original topics / thirty original questions. No official score, national rank,
+Nine interactive lessons / forty-five original questions in 0.2.0. No official score, national rank,
 year-specific complete syllabus or full-source import claim. Content volume and
 mastery are different. XP is discovery feedback, not academic assessment.
 
@@ -107,5 +107,9 @@ accessible names in the next accessibility pass; the alpha is not fully audited.
   actor-box and reduced-motion regression are separate from this source measurement.
 
 Package, published-origin and complete final test counts are recorded in FORGE.md.
+The final 0.2.0 package CI passed on all four jobs; the published production origin
+also passed all 19 browser acceptance tests. Both Windows and Linux packaged
+executables passed offline lesson/reload/process-restart checks with zero renderer
+errors. The Android APK's signature and manifest passed verification.
 Physical Android, clean Windows installation/portable extraction and two-package
 update preservation remain unverified. No full WCAG certification is claimed.

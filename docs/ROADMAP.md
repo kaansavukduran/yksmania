@@ -2,10 +2,14 @@
 
 1. First vertical slice: real original lessons, retrieval, assisted/independent
    evidence, local state, availability, day-ordinal reviews, source atlas, PDF
-   import and offline builds. Six topics and thirty questions are the initial scope.
-2. Private content inventory: complete recursive file and edition/page/question
-   matching of the user's Aurelia YKS archive. Catalogue presence is not verified
-   content readiness. Geometry portions inside mathematics books need mapping.
+   import and offline builds. The 0.1.0 slice had six topics and thirty questions;
+   0.2.0 has nine visual lessons and forty-five original questions, separate theory
+   and practice, and reusable cell, element-table and geometry explorations.
+2. Private content inventory: recursive metadata inventory and workbook headings
+   are complete for the inspected Aurelia YKS subtree. Batch PDF/catalogue import
+   works; 143 PDFs were prepared and checked locally. Edition/page/question matching
+   and verified answer keys remain work. Catalogue presence is not content readiness.
+   Geometry portions inside mathematics books need mapping.
 3. Curated topic packs for every TYT subject and numerical AYT, with source rights,
    answer-key verification, prerequisite links and official examination-year scope.
 4. More teaching activities: fading examples, diagnostic hints, repair questions,
