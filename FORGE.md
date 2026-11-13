@@ -34,3 +34,32 @@ Past Aurelia learning/plan owners have not been overwritten or synchronized.
 Complete the private content catalogue and curated packs, add a full exam/diagnostic
 flow and evidence-sensitive adaptive practice. Native production signing, physical
 device checks and two-version updates remain explicit release gates. See ROADMAP.
+
+## Distribution checkpoint
+
+- Application implementation: `59894d7c2082725fbe987727d3cba161cd5e05b6`.
+- Packaged source: `9f83cc4411bc8e1ee3631b25beccec2b91de7075` (same application
+  code; corrected Android verification tooling, durable-save test synchronization
+  and manual release workflow).
+- [Package CI run](https://github.com/kaansavukduran/yksmania/actions/runs/43467374511):
+  type/build, 12 unit/storage tests, 9 browser tests; Windows/Linux packaged
+  application smoke flows and Android signature/manifest verification.
+- [Published web acceptance](https://github.com/kaansavukduran/yksmania/actions/runs/43466580212):
+  9/9 browser tests passed against the live production HTTPS origin.
+- Web: https://yksmania.vercel.app
+- Prerelease: https://github.com/kaansavukduran/yksmania/releases/tag/v0.1.0-alpha.1
+- The release workflow accepts only a fully successful main package run, uploads
+  its existing binaries without rebuilding, and includes the source SHA and SHA256
+  checksums. Release automation is manually dispatched, not triggered by a push.
+
+Observed package automation is not clean-install, physical Android or two-version
+update verification. Windows is unsigned; Android uses a debug test key. Keep
+portable `YKSManiaData` with the executable, back up progress, and keep separate
+PDF copies. Production native signing/update migration remains open work.
+
+Supplementary verification: progress backup restored into a fresh browser profile
+and survived reload; light-theme axe found no serious/critical violations and one
+moderate repeated-landmark issue tracked in QA. No remote browser trust checks were
+bypassed. Published browser acceptance ran in GitHub to avoid the local proxy CA
+limitation. Private source files and historical Aurelia learning records were not
+imported into the public repository or synchronized.

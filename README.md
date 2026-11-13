@@ -2,6 +2,8 @@
 
 An offline-first YKS learning application by Fragaria Interactive. **0.1.0 alpha: first working vertical slice, not the complete curriculum.**
 
+[Open the web app](https://yksmania.vercel.app) · [Download alpha packages](https://github.com/kaansavukduran/yksmania/releases/tag/v0.1.0-alpha.1)
+
 ## What works
 
 - TYT's 10 subjects and numerical AYT's 5 subjects in a searchable topic map.
@@ -44,7 +46,10 @@ clean-install or physical Windows verification; see [QA](docs/QA.md).
 
 ## Android
 
-The workflow builds an installable **debug-signed alpha APK** for Android 7+ (API 24+).
+The workflow builds a **debug-signed alpha APK** with manifest minimum API 24.
+It requires a current Android System WebView. The manifest minimum is an installation
+threshold, not proof of compatibility with every Android 7 device; physical-device
+compatibility is still unverified.
 This is for testing. Debug signing is not a production signing identity; builds from
 different runners may not update over one another. Export progress before replacing
 an alpha installation. Stable production signing and update migration are open work.

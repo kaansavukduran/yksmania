@@ -7,7 +7,7 @@
 
 Windows için Setup kurulum, Portable taşınabilir sürümdür. Portable ile oluşan YKSManiaData klasörünü birlikte saklayın. Electron/Chromium dahildir; WebView2 indirmek gerekmez. Windows dosyaları Authenticode imzalı değildir.
 
-Linux: AppImage veya DEB. Android: Android 7+ için **debug imzalı test APK'sı**. APK imza/paket çıktısı ektedir; üretim imzası değildir. Sonraki debug sürümünün aynı imzayla güncelleneceği garanti edilmez; değiştirmeden önce ilerlemenizi dışa aktarın.
+Linux: AppImage veya DEB. Android: **debug imzalı test APK'sı**. Manifest alt sınırı API 24; güncel Android System WebView gerekir. Bu alt sınır her Android 7 cihazda uyumluluk doğrulandığı anlamına gelmez. APK imza/paket çıktısı ektedir; üretim imzası değildir. Sonraki debug sürümünün aynı imzayla güncelleneceği garanti edilmez; değiştirmeden önce ilerlemenizi dışa aktarın.
 
 Tamamlanmış sınav hazırlık ürünü değildir: tüm TYT/AYT dersleri gezinti haritasında bulunur; etkileşimli içerik şu anda 6 konudur. Özel Drive arşivi ve telifli MEBİ/OGM kitapları bu herkese açık sürüme kopyalanmadı. Kendi kullanma hakkınız olan PDF'leri Kütüphane'den ekleyebilirsiniz.
 
