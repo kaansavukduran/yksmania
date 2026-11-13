@@ -299,3 +299,14 @@ Canlı kabul 43509055312 bu yeni kaynağı doğrular; önceki 0.3.0 testleri kul
 Canlı 0.3.1 kabulü 43509055312: 28/28 PASS; kaynak 3f3cb54 ve READY üretim dağıtımı
 ile eşleşir. Nihai native paket koşusu 43508957418 ve indirme yayını Forge teslim
 kaydında ayrı tutulur; eski paket koşusu son düzeltmeyi içermez.
+
+Nihai paket CI 43508957418, kaynak 3f3cb54: dört işte PASS. 26 birim/depolama/
+içerik ve 28 tarayıcı testi; Windows/Linux paketlerinde cheatsheets, AYT ve
+çevrimdışı/reload/process-restart PASS, renderer hataları 0. Android debug APK
+imza/manifest doğrulaması PASS. Fiziksel cihaz ve temiz kurulum açık kapıları
+korunur; bu otomasyonlar üretim imzası veya iki paket arası güncelleme kanıtı değildir.
+
+Yayın koşusu 43510112404 PASS: v0.3.1-alpha.1 sekiz dosyayla herkese açık.
+Etiket/verified-run.json kaynak 3f3cb54 ile eşleşir; indirilen kanıt hash değerleri
+checksum listesiyle eşleşir. Android versionCode 6 / versionName 0.3.1 / minimum
+API 24 ve APK v2 imzası doğrulandı. Herkese açık APK bağlantısı HTTP 200.

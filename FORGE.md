@@ -54,8 +54,20 @@ açık ders bekler. İlk paket koşusu 43507301865 başarılı olsa da bu son d�
   28/28 PASS; yeni menü sırası, ayrı kaynak türü, konu PDF’si, not/taslak koruma,
   çevrimdışı ilk giriş ve %200/%150 dar ekran akışları dahil.
 - [Nihai paket CI](https://github.com/kaansavukduran/yksmania/actions/runs/43508957418)
-  ve yayın kanıtları tamamlandığında aşağıya eklenir. Önceki 43507301865 koşusu
-  son arama düzeltmesinden önceki kaynaktır; nihai paket kaynağı yerine geçmez.
+  dört işte PASS: 26 birim/depolama/içerik, 28 tarayıcı; Windows ve Linux paketli
+  yeni bölüm/AYT/çevrimdışı ders/yeniden yükleme/süreç yeniden başlatma kontrolleri,
+  renderer hataları 0. Android debug APK imza ve manifest kontrolü PASS.
+  Önceki 43507301865 koşusu son düzeltmeden önceki kaynaktır; nihai paket kanıtı
+  yerine geçmez. Yayın bu nihai koşunun beş dosyasını yeniden derlemeden kullanır.
+- [Yayın koşusu](https://github.com/kaansavukduran/yksmania/actions/runs/43510112404)
+  PASS: [v0.3.1-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.3.1-alpha.1)
+  herkese açık; Windows Setup/Portable, Linux AppImage/DEB ve Android debug APK
+  ile üç kanıt/checksum dosyası hazır. Etiket ve indirilen verified-run.json
+  nihai kaynak 3f3cb54 ile eşleşir. İndirilen iki kanıt dosyasının SHA256 değerleri
+  SHA256SUMS ile eşleşir; listede yedi dosya var. Android versionCode 6 /
+  versionName 0.3.1 / minimum API 24 ve APK v2 imzası doğrulandı. APK bağlantısı
+  HTTP 200. Önceki sürümler korunur; sonraki dokümantasyon commitleri uygulama
+  kodunu değiştirmez. Fiziksel cihaz/temiz kurulum/güncelleme açık kapıları korunur.
 
 # Delivered checkpoint: YKSMania 0.3.0 alpha
 
