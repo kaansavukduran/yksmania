@@ -1,8 +1,8 @@
 YKSMania 0.3.0 alpha. Web: https://yksmania.vercel.app
 
-Son web dağıtım denemesi Vercel günlük sınırına takıldı ve 24 saat sonra tekrar
-deneme istendi. Son gözlemde mevcut web adresi 0.2.1'i sunuyordu.
-Bu sürümün Windows/Linux/Android indirmeleri yalnızca Türkçe çalışan 0.3.0 paketleridir.
+Web 0.3.0 yayını hazır; önceki Vercel günlük sınır engeli bu otomatik dağıtımda
+gözlenmedi. Windows/Linux/Android indirmeleri de yalnızca Türkçe çalışan 0.3.0
+paketleridir. Kaynak ve doğrulama kayıtları FORGE.md içinde.
 
 - 0.3.0: MEBİ konu özeti PDF’lerinin ilgili bölümleri incelenerek dört AYT anlatımı eklendi: türev, elektrik alan, kimyasal denge ve DNA eşlenmesi. Yeni vektör modelleri ve 20 özgün soru; toplam 13 anlatım / 65 soru. Kaynak sayfaları ve model sınırları docs/SOURCE_REVIEW.md içinde.
 - 0.2.2: Uygulama yalnızca Türkçe. Dil seçimi ve İngilizce çeviriler kaldırıldı; eski İngilizce ayarlı kayıtlar ve yedekler diğer verileri korunarak Türkçe açılır.

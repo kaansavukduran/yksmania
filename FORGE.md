@@ -27,10 +27,21 @@ yükleme ve süreç yeniden başlatma PASS; keşif adımı korundu, renderer hat
 Sürüm 0.3.0; Android versionCode 5. Fiziksel cihazlar, temiz kurulum/portable
 çıkarma-taşıma, kararlı imza ve iki paket arası güncelleme henüz doğrulanmadı.
 
-Önceki Vercel yayını günlük sınıra takıldı; son gözlenen web sürümü 0.2.1.
-0.3.0 için otomatik dağıtım durumu ve paket CI/yayın kanıtı teslim kaydına eklenir.
-Eski web, yeni kaynak için doğrulama sayılmaz. Özel Drive dışa aktarımındaki önceki
+Vercel otomatik üretim dağıtımı dpl_5L7aa779UHEyqZaqBa8gLVdSsDHj bu kaynak için
+READY; https://yksmania.vercel.app/version.json 0.3.0 sunuyor. Önceki günlük sınır
+engeli yeni dağıtımda gözlenmedi. Canlı kabul ve paket CI/yayın kanıtları teslim
+kaydına eklenir; önceki sürüm testleri yeni kaynak için doğrulama sayılmaz. Özel Drive dışa aktarımındaki önceki
 onay engeli bu geliştirmede yeniden denenmedi; başka hedefe aktarım yapılmadı.
+
+## 0.3.0 teslim doğrulaması
+
+- Uygulama kaynağı: `1dc5d44c1e2cb1ae19ad32225fedc97b71e6a654`.
+- Vercel üretim dağıtımı `dpl_5L7aa779UHEyqZaqBa8gLVdSsDHj` READY; aynı kaynak.
+  Kanonik https://yksmania.vercel.app/version.json 0.3.0 döndürüyor.
+- [Canlı web kabulü](https://github.com/kaansavukduran/yksmania/actions/runs/43503377912)
+  26/26 PASS: dört yeni model ve eski kayıt/çevrimdışı/soru/not regresyonları dahil.
+- [Paket CI](https://github.com/kaansavukduran/yksmania/actions/runs/43503304731)
+  ve indirme yayınının tamamlanma durumu teslim bitiminde güncellenir.
 
 # Delivered checkpoint: YKSMania 0.2.2 alpha
 

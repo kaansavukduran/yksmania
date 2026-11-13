@@ -9,7 +9,8 @@ Target 0.3.0 alpha. This file is updated at the verified Forge checkpoint.
 - Storage tests: settings independence, unfinished draft, invalid backup and date,
   unknown topic/option references, original PDF bytes and untouched learning state.
 - Browser tests: normal lesson → hint/error → save → reload → undo; full offline
-  reload and completion; blocked dates; TR/EN, Lexend, 200% UI + 150% text on 390px;
+  reload and completion; blocked dates; Turkish UI and legacy en-US compatibility,
+  Lexend, 200% UI + 150% text on 390px;
   corrupted backup; keyboard scale control; serious/critical axe issues.
 
 ## Observed regressions during development
@@ -229,3 +230,8 @@ yeniden başlatır. DNA keşif adımı korunur; renderer hataları 0. Windows/Li
 paket CI, Android imza/manifest ve gerçek web yayını sonuçları FORGE.md içinde
 ayrı kaydedilir. Temiz kurulum/portable taşıma, fiziksel Android, üretim imzası ve
 iki sürümlük native güncelleme açık kapılardır.
+
+Canlı 0.3.0: published-web kabul koşusu 43503377912, 26/26 PASS. Vercel
+üretim dağıtımı dpl_5L7aa779UHEyqZaqBa8gLVdSsDHj ve kaynak 1dc5d44 eşleşir.
+Önceki 0.2.2 kota engeli bu yeni otomatik dağıtımda gözlenmedi. Paket ve yayın
+sonuçları aşağıdaki teslim kaydıyla birlikte FORGE.md içinde tamamlanır.

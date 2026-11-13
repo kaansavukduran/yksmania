@@ -4,9 +4,8 @@ An offline-first YKS learning application by Fragaria Interactive. **0.3.0 alpha
 
 [Open the web app](https://yksmania.vercel.app) · [Download alpha packages](https://github.com/kaansavukduran/yksmania/releases/tag/v0.3.0-alpha.1)
 
-The last observed web publication was blocked by Vercel's daily deployment limit;
-the web URL still served 0.2.1. New 0.3.0 native packages include the four AYT
-models and twenty new exercises. See FORGE.md for current delivery evidence.
+The web origin now serves 0.3.0. Native packages include the four AYT models and
+twenty new exercises. See FORGE.md for delivery and verification evidence.
 
 ## What works
 
