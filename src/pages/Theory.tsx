@@ -4,6 +4,8 @@ import { lessonById, subjectById } from "../domain/content";
 import type { Lesson } from "../domain/model";
 import { VisualLab } from "../learning/VisualLab";
 import { Aion } from "../components/Aion";
+import { TopicCompletion } from "../components/StudyPlanning";
+import { lessonTopic } from "../domain/studyPlan";
 export function Theory({
   id,
   practice,
@@ -65,6 +67,9 @@ export function Theory({
             {t("startQuestions")}
             <ArrowRight size={18} />
           </button>
+          {lessonTopic[lesson.id] && (
+            <TopicCompletion id={lessonTopic[lesson.id]} mode="theory" />
+          )}
         </article>
         <aside className="panel study-notes" aria-label={t("studyNotes")}>
           <h2>{t("note")}</h2>

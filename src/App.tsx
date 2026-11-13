@@ -5,7 +5,6 @@ import {
   CalendarDays,
   Compass,
   Home,
-  LibraryBig,
   Settings2,
   Sprout,
   Wifi,
@@ -29,6 +28,7 @@ import { World } from "./pages/World";
 import { Settings } from "./pages/Settings";
 import { Theory } from "./pages/Theory";
 import { Study, Result } from "./pages/Study";
+import { Topic } from "./pages/Topic";
 import type { Lesson } from "./domain/model";
 const routes = [
   { route: "/today", key: "today", Icon: Home },
@@ -37,7 +37,6 @@ const routes = [
   { route: "/questions", key: "questions", Icon: ListChecks },
   { route: "/calendar", key: "calendar", Icon: CalendarDays },
   { route: "/mistakes", key: "mistakes", Icon: Sprout },
-  { route: "/library", key: "library", Icon: LibraryBig },
   { route: "/world", key: "world", Icon: Compass },
   { route: "/settings", key: "settings", Icon: Settings2 },
 ];
@@ -181,15 +180,21 @@ export default function App() {
   };
   const path = route.split("?")[0];
   const navKey =
-    path === "/lesson"
-      ? "courses"
-      : path === "/practice" || path === "/result"
-        ? "questions"
-        : path === "/study"
-          ? state.draft?.phase === "read"
-            ? "courses"
-            : "questions"
-          : (routes.find((v) => v.route === path)?.key ?? "today");
+    path === "/sources" || path === "/library"
+      ? "settings"
+      : path === "/topic"
+        ? new URLSearchParams(route.split("?")[1]).get("mode") === "questions"
+          ? "questions"
+          : "courses"
+        : path === "/lesson"
+          ? "courses"
+          : path === "/practice" || path === "/result"
+            ? "questions"
+            : path === "/study"
+              ? state.draft?.phase === "read"
+                ? "courses"
+                : "questions"
+              : (routes.find((v) => v.route === path)?.key ?? "today");
   const updateCallback = useState(
     () => (ready: boolean, applyFn?: () => void) => {
       setUpdateReady(ready);
@@ -249,14 +254,14 @@ export default function App() {
             <span>{t("localFirst")}</span>
           </div>
           <button
-            className={path === "/settings" ? "nav-item active" : "nav-item"}
-            aria-current={path === "/settings" ? "page" : undefined}
+            className={navKey === "settings" ? "nav-item active" : "nav-item"}
+            aria-current={navKey === "settings" ? "page" : undefined}
             onClick={() => navigate("/settings")}
           >
             <Settings2 size={20} />
             {t("settings")}
           </button>
-          <span className="sidebar-version">0.3.1 alpha</span>
+          <span className="sidebar-version">0.4.0 alpha</span>
         </div>
       </aside>
       {menu && (
@@ -343,7 +348,28 @@ export default function App() {
               }}
             />
           ) : path === "/cheatsheets" ? (
-            <Cheatsheets navigate={navigate} />
+            <Cheatsheets
+              key={route}
+              navigate={navigate}
+              topicId={
+                new URLSearchParams(route.split("?")[1]).get("topic") ??
+                undefined
+              }
+            />
+          ) : path === "/topic" ? (
+            <Topic
+              id={new URLSearchParams(route.split("?")[1]).get("id") ?? ""}
+              mode={
+                new URLSearchParams(route.split("?")[1]).get("mode") ===
+                "questions"
+                  ? "questions"
+                  : "theory"
+              }
+              navigate={navigate}
+              practice={(lesson) => {
+                void start(lesson, undefined, true);
+              }}
+            />
           ) : path === "/questions" ? (
             <Courses
               mode="questions"
@@ -361,6 +387,7 @@ export default function App() {
             />
           ) : path === "/calendar" ? (
             <Calendar
+              navigate={navigate}
               start={(l, r) => {
                 void start(l, r);
               }}
@@ -372,12 +399,13 @@ export default function App() {
               }}
               navigate={navigate}
             />
-          ) : path === "/library" ? (
+          ) : path === "/sources" || path === "/library" ? (
             <Library />
           ) : path === "/world" ? (
-            <World />
+            <World navigate={navigate} />
           ) : path === "/settings" ? (
             <Settings
+              openSources={() => navigate("/sources")}
               updateReady={updateReady}
               applyUpdate={() => {
                 if (status === "saved") apply();

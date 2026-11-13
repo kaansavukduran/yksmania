@@ -2,6 +2,8 @@ import { z } from "zod";
 export type Locale = "tr";
 export type Text = { tr: string };
 export const txt = (tr: string): Text => ({ tr });
+export const DEFAULT_EXAM_DATE = "2027-06-18";
+export const THEORY_DEADLINE = "2027-02-28";
 const date = z
   .string()
   .regex(/^\d{4}-\d{2}-\d{2}$/)
@@ -32,7 +34,10 @@ export const settingsSchema = z.object({
   dailyMinutes: z.number().int().min(10).max(600),
   blockedWeekdays: z.array(z.number().int().min(0).max(6)).max(7),
   blockedDates: z.array(date).max(3650),
-  examDate: z.union([date, z.literal("")]),
+  examDate: z
+    .union([date, z.literal("")])
+    .default(DEFAULT_EXAM_DATE)
+    .transform((v) => v || DEFAULT_EXAM_DATE),
 });
 export type Settings = z.infer<typeof settingsSchema>;
 export const responseSchema = z.object({
@@ -53,6 +58,7 @@ const sessionSchema = z.object({
   minutes: z.number().min(0).max(1440),
   note: z.string().max(20000),
   reviewId: id.optional(),
+  includesTheory: z.boolean().optional(),
 });
 export type Session = z.infer<typeof sessionSchema>;
 const reviewSchema = z.object({
@@ -103,6 +109,15 @@ export const stateSchema = z.object({
   readingPages: z
     .record(z.string(), z.number().int().min(1).max(100000))
     .default({}),
+  topicProgress: z
+    .record(
+      z.string(),
+      z.object({
+        theory: date.optional(),
+        questions: date.optional(),
+      }),
+    )
+    .default({}),
 });
 export type AppState = z.infer<typeof stateSchema>;
 export const initialState = (): AppState => ({
@@ -119,7 +134,7 @@ export const initialState = (): AppState => ({
     dailyMinutes: 90,
     blockedWeekdays: [],
     blockedDates: [],
-    examDate: "",
+    examDate: DEFAULT_EXAM_DATE,
   },
   sessions: [],
   reviews: [],
@@ -128,6 +143,7 @@ export const initialState = (): AppState => ({
   unlocked: [],
   readingPages: {},
   explorations: {},
+  topicProgress: {},
 });
 export interface Question {
   id: string;

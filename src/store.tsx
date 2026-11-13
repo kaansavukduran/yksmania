@@ -14,8 +14,10 @@ import {
 } from "./domain/model";
 import { loadState, saveState } from "./domain/storage";
 import { localise, translate } from "./i18n";
+import { localDate } from "./domain/scheduler";
 type Store = {
   state: AppState;
+  today: string;
   update: (fn: (s: AppState) => AppState) => Promise<void>;
   commit: (fn: (s: AppState) => AppState) => Promise<void>;
   setSetting: <K extends keyof Settings>(
@@ -30,6 +32,7 @@ type Store = {
 };
 const Context = createContext<Store | null>(null);
 export function Provider({ children }: { children: ReactNode }) {
+  const [today, setToday] = useState(localDate);
   const [state, setState] = useState<AppState | null>(null);
   const [fatal, setFatal] = useState(false);
   const [status, setStatus] = useState<"saved" | "saving" | "error">("saved");
@@ -40,6 +43,17 @@ export function Provider({ children }: { children: ReactNode }) {
   const toastTimer = useRef<ReturnType<typeof setTimeout> | undefined>(
     undefined,
   );
+  useEffect(() => {
+    const refreshDay = () => setToday(localDate());
+    const timer = setInterval(refreshDay, 60000);
+    window.addEventListener("focus", refreshDay);
+    document.addEventListener("visibilitychange", refreshDay);
+    return () => {
+      clearInterval(timer);
+      window.removeEventListener("focus", refreshDay);
+      document.removeEventListener("visibilitychange", refreshDay);
+    };
+  }, []);
   useEffect(() => {
     let live = true;
     loadState()
@@ -114,6 +128,7 @@ export function Provider({ children }: { children: ReactNode }) {
     <Context.Provider
       value={{
         state,
+        today,
         update,
         commit,
         setSetting: (key, value) =>

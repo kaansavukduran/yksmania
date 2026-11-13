@@ -1,7 +1,7 @@
 {
-  "version": "0.3.1",
+  "version": "0.4.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Kopya Kağıtları ayrı bölümde: TYT/AYT, ders ve konu seçimi; eşleşen PDF’leri çevrimdışı açma. Konu anlatımı ve soruların kaynaklarından ayrıldı."
+    "tr": "İki hedefli günlük plan, Excel çalışma sırası, TYT/AYT konu ağaçları ve ders grafiği; beş OGM kimya anlatımı ve 32 pozluk yeni Aion."
   }
 }

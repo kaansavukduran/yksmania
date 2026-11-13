@@ -1,6 +1,7 @@
 import { openDB } from "idb";
 import { initialState, stateSchema, type AppState } from "./model";
 import { lessonById } from "./content";
+import { studyTopicById } from "./studyPlan";
 import {
   parseCatalogue,
   type SourceCatalogue,
@@ -8,6 +9,8 @@ import {
 } from "./catalogue";
 export function validateState(input: unknown): AppState {
   const state = stateSchema.parse(input);
+  if (Object.keys(state.topicProgress).some((id) => !studyTopicById(id)))
+    throw Error("UNKNOWN_STUDY_TOPIC");
   const ids = new Set<string>();
   for (const session of state.sessions) {
     if (ids.has(session.id)) throw Error("DUPLICATE_SESSION");
@@ -93,7 +96,8 @@ export async function loadState(): Promise<AppState> {
   const data = await d.get("state", "current");
   if (!data) return initialState();
   const state = validateState(data);
-  if (data.settings?.locale === "en") await d.put("state", state, "current");
+  if (JSON.stringify(data) !== JSON.stringify(state))
+    await d.put("state", state, "current");
   return state;
 }
 export async function saveState(state: AppState): Promise<void> {

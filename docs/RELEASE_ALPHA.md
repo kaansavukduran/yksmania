@@ -1,26 +1,44 @@
-YKSMania 0.3.1 alpha. Web: https://yksmania.vercel.app
+YKSMania 0.4.0 alpha. Web: https://yksmania.vercel.app
 
-Web 0.3.1 yayını hazır. Bu sayfadaki Windows/Linux/Android indirmeleri de yeni
-Kopya Kağıtları bölümünü içeren 0.3.1 paketleridir. İlk yayındaki Vercel günlük
-sınır engeli son kodun otomatik dağıtımında gözlenmedi. Doğrulama kayıtları FORGE.md içinde.
+- Varsayılan hedef sınav tarihi **18 Haziran 2027**; Ayarlar’dan değiştirilebilir.
+  Konu anlatımları **28 Şubat 2027**, soru çalışmaları sınav tarihine planlanır.
+  Kalan konu sayısı uygun günlere bölünür; kapalı hafta günleri/tarihler çıkarılır.
+  Tarihler gün/ay/yıl biçimindedir.
+- Excel Üretim Sırası ve Todoist ilk çalışma sırası karşılaştırılarak **479 başlık**
+  sıralandı. Bugünün hedefi, tamamlananlar ve tüm gelecek tarihler görünür.
+  Konu ve soru çalışma kayıtları ayrı tutulur, geri alınabilir. Elle işaretleme
+  XP, doğru cevap veya ustalık oluşturmaz.
+- Dünyam’da tüm dersleri gösteren tek renklenen grafik; solda TYT, sağda AYT
+  Sayısal ders/konu/soru ağaçları. Dar ekranlarda alt alta gelir. İlerlemeyle
+  renklenen piksel manzara; oyunlaştırma kapalıyken plan ve ağaçlar kullanılabilir.
+- İlk beş konu için OGM Dersler Cepte kimya PDF’lerinden hazırlanmış özgün anlatım:
+  simya/ayırma, disiplinler, sembolik dil, güvenlik, atom modelleri. Etkileşimli
+  vektör şemaları ve 25 yeni özgün soru; toplam **18 anlatım / 90 soru**.
+- Karakter referansına bağlı yeni 32 pozluk piksel Aion, fareye bakma ve dört farklı
+  tıklama tepkisi. Azaltılmış hareket desteklenir; karakterin dünya konumu kaymaz.
+- Kütüphane sol menüden kaldırıldı; mevcut PDF’ler silinmeden kaynak yönetimi
+  **Ayarlar → Kaynak dosyalarını yönet** altına taşındı. Kopya Kağıtları bölümü
+  Konu Anlatımı ile Sorular arasında kalır. Notlar anlatım/soruların altındadır.
+- Türkçe arayüz; çevrimdışı ders/PDF/plan, kayıt, not ve yarım oturum koruması.
 
-- 0.3.1: Sol menüde Konu Anlatımı → Kopya Kağıtları → Sorular sırası. Kopya kağıtları ayrı TYT/AYT, ders ve konu görünümüne taşındı. Konu anlatımı ve soru kaynakları bu dosyaları göstermez. Cihaza eklenmiş PDF ve notları çevrimdışı açılır; dosya yoksa durumu belirtilir. 320px büyük yazı/ölçek yerleşimi düzeltildi.
-- 0.3.0: MEBİ konu özeti PDF’lerinin ilgili bölümleri incelenerek dört AYT anlatımı eklendi: türev, elektrik alan, kimyasal denge ve DNA eşlenmesi. Yeni vektör modelleri ve 20 özgün soru; toplam 13 anlatım / 65 soru. Kaynak sayfaları ve model sınırları docs/SOURCE_REVIEW.md içinde.
-- 0.2.2: Uygulama yalnızca Türkçe. Dil seçimi ve İngilizce çeviriler kaldırıldı; eski İngilizce ayarlı kayıtlar ve yedekler diğer verileri korunarak Türkçe açılır.
-- 0.2.1: Konu anlatımı tam genişlikte; Notun alanı içeriğin sonunda. Soru ekranındaki not alanı altta kalır. Notlar ve yarım kalan oturumlar korunur.
-- Konu Anlatımı ve Sorular ayrı bölümler; ikisinde de TYT/AYT ve ders seçimi.
-- Excel kaynaklarından 341 ana konu ve 479 ayrıntılı kopya kâğıdı başlığı.
-- On üç görsel etkileşimli ders ve 65 özgün soru. Hücre yapıları, 118 elementlik tablo, geometride parça taşıma; kesir, çarpanlar, kuvvet, mol, ATP ve paragraf modelleri.
-- Orijinal Aion referanslarıyla hazırlanan sola bakan cartoon sprite sheet; göz kırpma ve kaydedilmiş başarıya bağlı kısa tepki.
-- Özel kaynak kataloğu, toplu PDF/klasör içe aktarma, aynı içeriği birleştirme, durdurma ve hata raporu.
-- PDF’de sayfaya gitme ve kalınan sayfayı koruma; eski yerel kayıtlar için uyumlu veritabanı geçişi.
+479 başlık, kaynak Excel’in ayrıntılı listesidir; geometri kapsamı sınırlıdır.
+Ayrı 341 ana konu haritası korunur. Tam müfredatın tüm etkileşimli içeriği hazır
+değildir. Henüz hazırlanmayan konu/soru ekranı bunu açıkça belirtir ve kendi
+kaynağındaki çalışmayı kaydetmene izin verir. Özel PDF arşivi herkese açık pakete
+gömülmez. Kaynak sayfaları ve model sınırları docs/SOURCE_REVIEW.md içindedir.
 
-Windows: Setup kurulum; Portable taşınabilir sürüm. YKSManiaData klasörünü portable dosyayla birlikte saklayın. Chromium dahildir. Windows dosyaları Authenticode imzalı değildir.
+Windows: Setup veya Portable x64; Chromium dahildir. Portable dosyanın yanındaki
+YKSManiaData klasörünü birlikte saklayın. Windows dosyaları Authenticode imzalı değildir.
+Linux: AppImage veya DEB. Android: debug imzalı test APK’sı, minimum API 24 ve güncel
+Android System WebView gerekir. Fiziksel Android, temiz Windows kurulum/portable
+taşıma ve iki paket arasında veri koruyan güncelleme henüz doğrulanmadı. Debug
+anahtarı derlemeler arasında değişebilir; değiştirmeden önce ilerleme yedeği alın.
+Kararlı üretim imzası ayrı yapılmalıdır.
 
-Linux: AppImage veya DEB. Android: debug imzalı test APK’sı; manifest minimum API 24, güncel Android System WebView gerekir. Fiziksel Android uyumluluğu doğrulanmadı. Debug imza anahtarı önceki derlemeyle aynı olmayabilir: kurulum değiştirmeden önce ilerleme yedeğinizi alın. Kararlı üretim imzası ve veri koruyan iki sürümlük güncelleme ayrıca yapılmalıdır.
+Web ilk çevrimiçi yükleme tamamlandıktan sonra çevrimdışı açılabilir; native paket
+arayüzü yerel dosyalardan çalıştırır. Veriler cihaz bazındadır. İlerleme JSON yedeği
+PDF veya kaynak kataloğunu içermez; bunları ayrı saklayın.
 
-Tam müfredatın tüm etkileşimli içeriği hazır değildir. Başlık listeleri, kaynak PDF'leri ve tek tek doğrulanmış sorular farklı kapsamlardır. Özel arşiv ve kaynak paketleri bu herkese açık indirme dosyalarına gömülmemiştir. Kütüphane’den kendi kataloğunuzu ve kullanma hakkınız olan PDF'leri ekleyebilirsiniz. PDF eklemek öğrenme veya doğru cevap kaydı oluşturmaz.
-
-İlk web kullanımı sonrası uygulama indirildiğinde çevrimdışı çalışır. Veriler cihaz bazındadır. İlerleme JSON yedeği PDF'leri ve kaynak kataloğunu içermez; bunların ayrı kopyalarını saklayın.
-
-Derleme kaynağı verified-run.json içinde. Dosyaları SHA256SUMS.txt ile kontrol edebilirsiniz. Paket çalıştırma testleri; temiz kurulum, fiziksel cihaz ve paketler arası güncelleme testleriyle aynı değildir.
+Kaynak ve başarılı paket koşusu verified-run.json içindedir. SHA256SUMS.txt dosya
+bütünlüğünü kontrol etmek içindir. Web yayını ve platform testlerinin gözlenen
+sonuçları FORGE.md / docs/QA.md içindedir; alpha tam cihaz uyumluluğu iddiası değildir.

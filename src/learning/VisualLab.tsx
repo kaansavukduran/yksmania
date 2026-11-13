@@ -8,11 +8,20 @@ const Derivative = lazy(() => import("./DerivativeExplorer"));
 const Field = lazy(() => import("./ElectricFieldExplorer"));
 const Equilibrium = lazy(() => import("./EquilibriumExplorer"));
 const Dna = lazy(() => import("./DnaExplorer"));
+const Foundations = lazy(() => import("./ChemistryFoundations"));
 export function VisualLab({ id }: { id: string }) {
   const { t } = useApp();
   return (
     <Suspense fallback={<p role="status">{t("loading")}</p>}>
-      {id === "hucre-organelleri" ? (
+      {[
+        "simyadan-kimyaya",
+        "kimya-disiplinleri",
+        "sembolik-dil",
+        "kimya-guvenlik",
+        "atom-modelleri",
+      ].includes(id) ? (
+        <Foundations id={id} />
+      ) : id === "hucre-organelleri" ? (
         <Cell />
       ) : id === "periyodik-sistem" ? (
         <Periodic />

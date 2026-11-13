@@ -7,7 +7,7 @@ const messages: Record<string, string> = {
   courses: "Konu Anlatımı",
   calendar: "Takvim",
   mistakes: "Yanlışlarım",
-  library: "Kütüphane",
+  library: "Kaynak dosyaları",
   world: "Dünyam",
   settings: "Ayarlar",
   learn: "Çalışmaya başla",
@@ -197,15 +197,16 @@ const messages: Record<string, string> = {
   nativeUpdates:
     "Kurulu paket güncellemelerini GitHub sürümlerinden kontrol et.",
   releasePage: "Sürüm sayfasını aç",
-  examDate: "Hedef sınav tarihi (isteğe bağlı)",
-  examHelp: "Resmî sınav tarihi otomatik varsayılmaz.",
+  examDate: "Hedef sınav tarihi",
+  examHelp:
+    "Planlama için varsayılan 18 Haziran 2027. İstersen değiştirebilirsin.",
   scaleError: "80–200 arasında, 5’in katı bir değer yaz.",
   restartPending: "Kaydedilmemiş değişiklikler var. Önce kaydı yeniden dene.",
   closeSession: "Çalışmayı bırakmadan çık",
   startOver: "Taslağı bırak ve yeni çalışma aç",
   draftConfirm:
     "Yarım kalan çalışma var. Bu taslak bırakılıp yeni çalışma açılsın mı?",
-  footer: "Fragaria Interactive · YKSMania 0.3.1 alpha",
+  footer: "Fragaria Interactive · YKSMania 0.4.0 alpha",
   scopeNote:
     "İlk çalışan sürüm. Tam müfredat içeriği ve yerel paket testleri ayrıca tamamlanacak.",
   questions: "Sorular",
@@ -216,9 +217,9 @@ const messages: Record<string, string> = {
   allCheatsheetFiles: "Dersteki tüm kopya kağıdı PDF’leri",
   cheatsheetImport: "PDF veya kaynak kataloğu ekle",
   cheatsheetNoFiles:
-    "Eşleşmiş PDF bulunamadı. Dosyalarını Kütüphane’den ekleyebilir veya dersin tüm kopya kağıdı PDF’lerine bakabilirsin.",
+    "Eşleşmiş PDF bulunamadı. Dosyalarını Ayarlar → Kaynak dosyaları bölümünden ekleyebilir veya dersin tüm kopya kağıdı PDF’lerine bakabilirsin.",
   cheatsheetsScope:
-    "479 kaynak başlığı listelenir. PDF’ler ayrıca Kütüphane’den bu cihaza eklenir; başlık sayısı hazır PDF sayısı değildir.",
+    "479 kaynak başlığı listelenir. PDF’ler ayrıca Ayarlar → Kaynak dosyaları bölümünden bu cihaza eklenir; başlık sayısı hazır PDF sayısı değildir.",
   mainNavigation: "Ana gezinme",
   studyNotes: "Çalışma notları",
   examChoice: "Sınav seçimi",
@@ -239,7 +240,7 @@ const messages: Record<string, string> = {
   sourceCatalogue: "Kişisel kaynak kataloğu",
   importCatalogue: "Kaynak kataloğunu ekle",
   importCatalogueHelp:
-    "Kendi arşivini eşleştirmek için Kütüphane’den kaynak kataloğu ve PDF’lerini ekle.",
+    "Kendi arşivini eşleştirmek için Ayarlar → Kaynak dosyaları bölümünden kaynak kataloğu ve PDF’lerini ekle.",
   cataloguePrivacy:
     "Katalog ve PDF’ler yalnız bu cihazda tutulur. İçe aktarma dosyaları internete yüklemez; ilerleme yedeği PDF’leri ve kaynak kataloğunu içermez. Orijinal dosyalarını ayrıca sakla.",
   catalogueReferences: "kaynak dosya kaydı",

@@ -1,9 +1,12 @@
 # Accepted direction and remaining stages
 
-Current 0.3.0: 13 interactive Turkish lessons / 65 original questions. Four new
-AYT models follow 12 close-read source pages; see [SOURCE_REVIEW](SOURCE_REVIEW.md).
-Next content priority: source-checked TYT social-subject packs and item-level
-question/answer verification; preserve existing records and offline operation.
+Current 0.4.0: 18 interactive Turkish lessons / 90 original questions. The first
+five workbook topics have OGM-based chemistry explorations. Theory is planned to
+28 February 2027; question topics to the editable exam default 18 June 2027.
+The 479-heading order is checked against both workbook and Todoist first occurrences.
+Next content priority: continue from the next source-ordered topic, repair geometry
+coverage in the source mapping without inventing equivalences, and progressively
+verify item-level source questions/answers. Preserve records and offline operation.
 
 1. First vertical slice: real original lessons, retrieval, assisted/independent
    evidence, local state, availability, day-ordinal reviews, source atlas, PDF

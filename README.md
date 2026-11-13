@@ -1,18 +1,25 @@
 # YKSMania
 
-An offline-first YKS learning application by Fragaria Interactive. **0.3.1 alpha: visual learning and private resource import; not the complete curriculum.**
+An offline-first YKS learning application by Fragaria Interactive. **0.4.0 alpha: visual learning and private resource import; not the complete curriculum.**
 
-[Open the web app](https://yksmania.vercel.app) · [Download alpha packages](https://github.com/kaansavukduran/yksmania/releases/tag/v0.3.1-alpha.1)
+[Open the web app](https://yksmania.vercel.app) · [Download alpha packages](https://github.com/kaansavukduran/yksmania/releases/tag/v0.4.0-alpha.1)
 
-The web origin serves 0.3.1 with separate cheatsheet navigation. Native packages
-include the same new section. See FORGE.md for delivery and verification evidence.
+0.4.0 adds two deadline plans, workbook study order, separate topic/question records,
+subject progress trees and five OGM-based chemistry explorations. Publication and
+native package verification are recorded in FORGE.md when observed.
 
 ## What works
 
+- Default editable exam date: **18 June 2027**; theory deadline: **28 February 2027**.
+  Remaining workbook topics are distributed across eligible days in verified order.
+  Day-first date inputs, blocked weekdays/dates and independent topic/question progress.
+- One all-subject progress chart, TYT tree left / numerical AYT tree right; usable
+  without gamification. Manual study reports do not earn mastery or XP.
+- Source management moved to **Ayarlar → Kaynak dosyalarını yönet**; imported PDFs remain.
 - TYT's 10 subjects and numerical AYT's 5 subjects: all 341 main topic rows and
   479 detailed cheat-sheet headings from the source workbooks (different granularity,
   not 820 distinct official exam topics).
-- Thirteen Turkish lessons, thirteen interactive vector explanations, 65 original exercises, hints, confidence and explanations.
+- Eighteen Turkish lessons, eighteen interactive vector explanations, 90 original exercises, hints, confidence and explanations.
 - Clickable animal/plant cells, a 118-element periodic table, area-preserving geometry,
   fractions, algebraic areas, force balance, moles, ATP and paragraph structure.
 - Four new AYT explorations: secant/tangent and a non-differentiable corner, signed
@@ -31,7 +38,7 @@ include the same new section. See FORGE.md for delivery and verification evidenc
   merging, cancellation and per-file failure reporting. PDF limit: 256 MB each.
 - Turkish only, dark/light/system/high contrast, independent interface/text scaling,
   bundled Lexend, reduced motion and optional gamification/sound.
-- New left-facing cartoon Aion sprite atlas, real event-driven response, persistent discovery milestones.
+- Reference-faithful left-facing pixel Aion: 32 poses, mouse gaze, four click reactions and reduced-motion support.
 - Validated progress backup/restore. PDFs are separate and must be backed up separately.
 - PWA, Electron Windows/Linux packaging, Capacitor Android project and GitHub build workflow.
 

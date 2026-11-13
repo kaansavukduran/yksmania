@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { ChevronLeft, ChevronRight, Plus, X } from "lucide-react";
 import { useApp } from "../store";
 import {
@@ -10,12 +10,16 @@ import {
 } from "../domain/scheduler";
 import { lessonById } from "../domain/content";
 import type { Lesson } from "../domain/model";
+import { DateInput } from "../components/DateInput";
+import { studyPlan } from "../domain/studyPlan";
 export function Calendar({
   start,
+  navigate,
 }: {
   start: (l: Lesson, r?: string) => void;
+  navigate: (r: string) => void;
 }) {
-  const { state, t, l, setSetting } = useApp();
+  const { state, today, t, l, setSetting } = useApp();
   const [month, setMonth] = useState(() => {
     const d = new Date();
     d.setDate(1);
@@ -23,7 +27,19 @@ export function Calendar({
   });
   const [selected, setSelected] = useState(localDate());
   const [blockedDate, setBlockedDate] = useState("");
-  const plan = reviewPlan(state);
+  const plan = reviewPlan(state, today);
+  const study = useMemo(
+    () => [
+      studyPlan(state, "theory", today),
+      studyPlan(state, "questions", today),
+    ],
+    [state.topicProgress, state.sessions, state.settings, today],
+  );
+  const studyLoad = new Map<string, number>();
+  for (const p of study)
+    for (const entry of p.scheduled)
+      if (entry.day)
+        studyLoad.set(entry.day, (studyLoad.get(entry.day) ?? 0) + 1);
   const date = new Date(month + "T12:00:00");
   const offset = (date.getDay() + 6) % 7;
   const startDay = addDays(month, -offset);
@@ -89,12 +105,14 @@ export function Calendar({
             {Array.from({ length: 42 }, (_, i) => addDays(startDay, i)).map(
               (day) => {
                 const closed = isBlocked(day, state.settings);
-                const count = plan.filter((p) => p.scheduled === day).length;
+                const count =
+                  plan.filter((p) => p.scheduled === day).length +
+                  (studyLoad.get(day) ?? 0);
                 return (
                   <button
                     key={day}
-                    className={`calendar-day ${day.slice(0, 7) !== month.slice(0, 7) ? "other-month" : ""} ${day === selected ? "selected" : ""} ${closed ? "closed" : ""} ${day === localDate() ? "is-today" : ""}`}
-                    aria-label={`${formatDate(day, state.settings.locale, { day: "numeric", month: "long", year: "numeric" })}${closed ? `, ${t("unavailable")}` : ""}${count ? `, ${count} ${t("review")}` : ""}`}
+                    className={`calendar-day ${day.slice(0, 7) !== month.slice(0, 7) ? "other-month" : ""} ${day === selected ? "selected" : ""} ${closed ? "closed" : ""} ${day === today ? "is-today" : ""}`}
+                    aria-label={`${formatDate(day, state.settings.locale, { day: "numeric", month: "long", year: "numeric" })}${closed ? `, ${t("unavailable")}` : ""}${count ? `, ${count} çalışma` : ""}`}
                     aria-pressed={selected === day}
                     onClick={() => setSelected(day)}
                   >
@@ -116,7 +134,7 @@ export function Calendar({
             </span>
             <span>
               <i className="legend-review" />
-              {t("review")}
+              Konu, soru ve tekrar
             </span>
             <span>
               <i className="legend-closed" />
@@ -135,8 +153,8 @@ export function Calendar({
               <p className="small muted">
                 {isBlocked(selected, state.settings)
                   ? t("unavailable")
-                  : chosen.length
-                    ? `${chosen.length} ${t("review")}`
+                  : chosen.length || studyLoad.get(selected)
+                    ? `${studyLoad.get(selected) ?? 0} yeni çalışma · ${chosen.length} tekrar`
                     : t("emptyDay")}
               </p>
             </div>
@@ -160,7 +178,7 @@ export function Calendar({
                 {lesson && (
                   <button
                     className="text-button"
-                    disabled={p.review.targetDate > localDate()}
+                    disabled={p.review.targetDate > today}
                     onClick={() => start(lesson, p.review.id)}
                   >
                     {t("review")}
@@ -169,6 +187,32 @@ export function Calendar({
               </div>
             );
           })}
+          {study.map((p) => (
+            <section className="calendar-study" key={p.mode}>
+              <h3>
+                {p.mode === "theory" ? "Konu çalışması" : "Soru çalışması"}
+              </h3>
+              {p.scheduled
+                .filter((v) => v.day === selected)
+                .map(({ topic }) => (
+                  <button
+                    key={topic.id}
+                    className="ready-topic"
+                    onClick={() =>
+                      navigate(`/topic?id=${topic.id}&mode=${p.mode}`)
+                    }
+                  >
+                    <span>
+                      <small>{topic.order}. konu</small>
+                      {topic.title}
+                    </span>
+                  </button>
+                ))}
+              {!p.scheduled.some((v) => v.day === selected) && (
+                <p className="small muted">Bu gün için yeni konu atanmadı.</p>
+              )}
+            </section>
+          ))}
         </section>
         <aside className="panel availability-panel">
           <h2>{t("availability")}</h2>
@@ -218,13 +262,14 @@ export function Calendar({
               );
             })}
           </div>
-          <label className="field">
+          <div className="field">
             {t("singleClosed")}
             <div className="date-add">
-              <input
-                type="date"
+              <DateInput
+                label={t("singleClosed")}
+                allowEmpty
                 value={blockedDate}
-                onChange={(e) => setBlockedDate(e.target.value)}
+                onChange={setBlockedDate}
               />
               <button
                 className="icon-button"
@@ -246,7 +291,7 @@ export function Calendar({
                 <Plus size={18} />
               </button>
             </div>
-          </label>
+          </div>
           <div className="closed-list">
             {state.settings.blockedDates.toSorted().map((day) => (
               <div key={day}>

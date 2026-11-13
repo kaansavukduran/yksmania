@@ -1,4 +1,5 @@
 import { visualLessons } from "../learning/lessons";
+import { introLessons } from "../learning/introLessons";
 import { aytLessons } from "../learning/aytLessons";
 import curriculum from "../data/curriculum.json";
 import { txt as t, type Subject, type Lesson, type Question } from "./model";
@@ -212,7 +213,7 @@ const baseSubjects: Subject[] = [
     id: "ayt-matematik",
     exam: "AYT",
     name: t("Matematik"),
-    color: "#b4cced",
+    color: "#81b2ed",
     icon: "∫",
     topics: [
       "Fonksiyonlar",
@@ -234,7 +235,7 @@ const baseSubjects: Subject[] = [
     id: "ayt-geometri",
     exam: "AYT",
     name: t("Geometri"),
-    color: "#b8cae3",
+    color: "#8dd3e1",
     icon: "△",
     topics: [
       "Üçgenler",
@@ -249,7 +250,7 @@ const baseSubjects: Subject[] = [
     id: "ayt-fizik",
     exam: "AYT",
     name: t("Fizik"),
-    color: "#c2b8e7",
+    color: "#a98ced",
     icon: "↗",
     topics: [
       "Vektörler",
@@ -270,7 +271,7 @@ const baseSubjects: Subject[] = [
     id: "ayt-kimya",
     exam: "AYT",
     name: t("Kimya"),
-    color: "#e5c394",
+    color: "#f1ae6a",
     icon: "H₂",
     topics: [
       "Modern atom teorisi",
@@ -290,7 +291,7 @@ const baseSubjects: Subject[] = [
     id: "ayt-biyoloji",
     exam: "AYT",
     name: t("Biyoloji"),
-    color: "#b5d9ba",
+    color: "#77c69b",
     icon: "◉",
     topics: [
       "ATP ve metabolizma",
@@ -805,6 +806,7 @@ export const lessons: Lesson[] = [
   },
   ...visualLessons,
   ...aytLessons,
+  ...introLessons,
 ];
 export const lessonById = (id: string) => lessons.find((l) => l.id === id);
 export const subjectById = (id: string) => subjects.find((s) => s.id === id);

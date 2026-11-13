@@ -42,6 +42,39 @@ try {
     await page.getByRole("button", { name: new RegExp(title) }).click();
     await page.locator(".visual-lab").waitFor();
   };
+  await navigate("Ayarlar");
+  await expect(
+    page.getByRole("textbox", { name: "Hedef sınav tarihi", exact: true }),
+  ).toHaveValue("18/06/2027");
+  await navigate("Bugün");
+  await expect(
+    page.getByRole("region", { name: "Konu planı", exact: true }),
+  ).toContainText("28/02/2027");
+  const chemistry = [
+    /Simyadan kimyaya: amaç/,
+    /Kimya disiplinleri:/,
+    /Kimyanın sembolik dili:/,
+    /Kimyada güvenlik:/,
+    /Atom modelleri:/,
+  ];
+  for (const [i, title] of chemistry.entries()) {
+    await navigate("Konu Anlatımı");
+    await page.getByRole("button", { name: "TYT", exact: true }).click();
+    await page.getByRole("button", { name: /Kimya.*17 konu/ }).click();
+    await page.getByRole("button", { name: title }).click();
+    await expect(page.locator(".chemistry-lab")).toBeVisible();
+    if (!i) {
+      await page
+        .getByRole("button", { name: "Konuyu çalıştım", exact: true })
+        .click();
+      await expect(
+        page.getByRole("button", {
+          name: "Çalışma kaydını geri al",
+          exact: true,
+        }),
+      ).toBeVisible();
+    }
+  }
   await navigate("Kopya Kağıtları");
   await expect(
     page.getByRole("heading", { name: "Kopya Kağıtları", exact: true }),
@@ -72,7 +105,10 @@ try {
   await expect(page.locator(".dna-count strong")).toHaveText("2");
   await navigate("Bugün");
   await expect(page.locator(".stat-number").first()).toHaveText("0");
-  await page.locator(".hero .primary").click();
+  await navigate("Konu Anlatımı");
+  await page.getByRole("button", { name: "TYT", exact: true }).click();
+  await page.getByRole("button", { name: /Matematik.*31/ }).click();
+  await page.getByRole("button", { name: /Rasyonel sayılar.*18/ }).click();
   await page.waitForSelector(".visual-lab");
   await page.locator(".lesson-article > .primary").click();
   for (const index of [1, 2, 0, 1, 1]) {
@@ -91,6 +127,16 @@ try {
   await page.waitForSelector(".hero");
   await expect(page.locator(".stat-number").first()).toHaveText("1");
   await page.context().setOffline(true);
+  await navigate("Dünyam");
+  await expect(
+    page.getByRole("img", { name: /Genel konu çalışma ilerlemesi/ }),
+  ).toHaveAttribute("aria-label", /1\/479 konu/);
+  await expect(
+    page.getByRole("region", { name: "TYT konu ağacı", exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("region", { name: "AYT konu ağacı", exact: true }),
+  ).toBeVisible();
   await openAyt("Biyoloji", "DNA eşlenmesi: eski ve yeni zincirler");
   await expect(page.locator(".dna-count strong")).toHaveText("2");
   expect(errors).toEqual([]);
@@ -99,6 +145,8 @@ try {
       desktop: "PASS",
       aytVisuals: "PASS",
       cheatsheets: "PASS",
+      orderedPlanAndRestart: "PASS",
+      ogmChemistryVisuals: "PASS",
       profile,
       offlineLesson: "PASS",
       reload: "PASS",

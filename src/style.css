@@ -594,13 +594,15 @@ small,
 }
 .stats-strip {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 6rem), 1fr));
   padding: 1.7rem 0 1.9rem;
   border-bottom: 1px solid var(--border);
   margin-bottom: 2rem;
   gap: 1rem;
 }
 .stats-strip > div {
+  min-width: 0;
+  overflow-wrap: anywhere;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -627,6 +629,14 @@ small,
   display: grid;
   grid-template-columns: minmax(0, 1.45fr) minmax(16rem, 1fr);
   gap: 1.3rem;
+}
+.today-grid > .panel {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.today-grid .text-button {
+  max-width: 100%;
+  flex-wrap: wrap;
 }
 .path-panel,
 .weekly-panel {
@@ -693,8 +703,8 @@ small,
   margin-top: 0.5rem;
 }
 .week-days {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 2.4rem), 1fr));
   gap: 0.3rem;
   margin: 1.8rem 0 1.3rem;
 }
@@ -1953,7 +1963,7 @@ progress::-moz-progress-bar {
     transform: scale(0.85);
   }
   .today-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
   .subject-grid {
     grid-template-columns: minmax(0, 1fr);
@@ -2974,5 +2984,382 @@ progress::-moz-progress-bar {
   .ayt-chart-grid,
   .equilibrium-vessel {
     grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Date text has a stable Turkish order independent of the OS picker locale. */
+.date-control {
+  min-width: 0;
+  width: 100%;
+}
+.date-control-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.date-control-row > input[type="text"] {
+  min-width: 0;
+  flex: 1;
+}
+.date-control-row .native-date-picker {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  right: 1rem;
+  bottom: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.date-control > small {
+  display: block;
+  margin-top: 0.4rem;
+  overflow-wrap: anywhere;
+}
+.date-add > .date-control {
+  flex: 1;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+.daily-study-plans {
+  margin: 1.8rem 0;
+}
+.daily-plan-grid,
+.study-trees {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr));
+  gap: 1.2rem;
+  align-items: start;
+}
+.daily-plan {
+  min-width: 0;
+  padding: 1.5rem;
+  overflow-wrap: anywhere;
+}
+.daily-plan h3 {
+  font-size: 1.1em;
+  margin: 0;
+}
+.daily-plan progress {
+  width: 100%;
+  height: 0.55rem;
+}
+.plan-equation {
+  line-height: 1.8;
+  margin: 1rem 0 0.4rem;
+}
+.plan-today-target {
+  margin: 1rem 0 0.4rem;
+}
+.plan-status {
+  padding: 1rem 0;
+}
+.planned-topics {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.planned-topics strong {
+  font-weight: 550;
+}
+.plan-full-order {
+  margin-top: 1.2rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+.plan-full-order summary {
+  cursor: pointer;
+}
+.topic-completion {
+  margin-top: 1.4rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1.2rem;
+}
+.topic-completion button {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.completed-topic {
+  border-color: var(--mint);
+}
+.topic-source-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin: 1rem 0;
+}
+.topic-study {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.topic-study p {
+  line-height: 1.9;
+}
+.calendar-study {
+  margin-top: 1.2rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+.world-progress {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr));
+  gap: 1.6rem;
+  align-items: center;
+  padding: 0;
+}
+.world-progress-visual {
+  overflow: hidden;
+  position: relative;
+  min-height: 23rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.world-progress-visual > svg {
+  position: relative;
+  width: min(100%, 20rem);
+  height: auto;
+  z-index: 1;
+}
+.donut-percent {
+  fill: var(--text);
+  font-size: 29px;
+  font-weight: 650;
+}
+.donut-label {
+  fill: var(--muted);
+  font-size: 13px;
+}
+.world-progress-details {
+  padding: 1.5rem 1.5rem 1.5rem 0;
+  min-width: 0;
+}
+.subject-progress-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85em;
+}
+.subject-progress-table th,
+.subject-progress-table td {
+  border-bottom: 1px solid var(--border);
+  padding: 0.5rem 0.3rem;
+  text-align: start;
+  overflow-wrap: anywhere;
+}
+.subject-progress-table tbody th {
+  font-weight: 400;
+}
+.subject-color {
+  display: inline-block;
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+.skill-tree {
+  padding: 1.2rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.subject-tree-diagram {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+}
+.subject-tree-diagram [role="button"] {
+  cursor: pointer;
+}
+.subject-tree-diagram [role="button"]:focus circle {
+  stroke: var(--accent);
+  stroke-width: 5;
+}
+.tree-mark {
+  fill: var(--text);
+  font-size: 15px;
+}
+.tree-label {
+  fill: var(--text);
+  font-size: 12px;
+}
+.skill-branches {
+  list-style: none;
+  padding: 0 0 0 1rem;
+  margin: 1rem 0 0;
+}
+.skill-branches > li {
+  position: relative;
+  border-left: 2px solid var(--branch-color);
+  padding: 0 0 1.4rem 1rem;
+}
+.skill-branches > li::before {
+  content: "";
+  position: absolute;
+  left: -0.35rem;
+  top: 0.7rem;
+  border: 2px solid var(--branch-color);
+  background: var(--bg);
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+}
+.skill-topic,
+.skill-question {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  text-align: start;
+  padding: 0.7rem 0.9rem;
+  border-radius: 0.55rem;
+  color: var(--text);
+  overflow-wrap: anywhere;
+  min-width: 0;
+  max-width: 100%;
+}
+.skill-topic {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  width: 100%;
+}
+.skill-topic strong {
+  font-weight: 500;
+}
+.skill-topic small {
+  color: var(--muted);
+  font-size: 0.72em;
+}
+.skill-topic.is-complete,
+.skill-question.is-complete {
+  border-color: var(--branch-color);
+}
+.question-branch {
+  margin-left: 1.2rem;
+  padding: 0.6rem 0 0 1.2rem;
+  border-left: 1px solid var(--branch-color);
+  position: relative;
+}
+.question-branch::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.4rem;
+  width: 1.2rem;
+  height: 1px;
+  background: var(--branch-color);
+}
+.skill-question {
+  font-size: 0.75em;
+}
+.study-landscape {
+  position: absolute;
+  inset: 0;
+  background-image: url("/assets/study-world.png");
+  background-size: cover;
+  background-position: center bottom;
+  image-rendering: pixelated;
+  pointer-events: none;
+  transition:
+    filter 0.5s,
+    opacity 0.5s;
+}
+.hero-art {
+  background: #273c40;
+}
+.hero-art .study-landscape {
+  opacity: 0.9;
+}
+.hero-art .art-caption {
+  color: #fff;
+  text-shadow: 0 1px 3px #000;
+  z-index: 2;
+}
+.aion-companion,
+.aion-companion:disabled {
+  position: relative;
+  z-index: 2;
+  display: block;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  opacity: 1;
+}
+.aion-companion:disabled {
+  cursor: default;
+}
+.aion-sprite {
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  image-rendering: pixelated;
+}
+.aion-texture {
+  display: block;
+  position: absolute;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  image-rendering: pixelated;
+}
+.hero-art .aion-companion {
+  margin-top: auto;
+  margin-bottom: 1rem;
+}
+.hero-art .aion-sprite {
+  transform: none;
+}
+.study-notes .aion-companion {
+  margin: 1.5rem auto 0;
+}
+.result-page .aion-companion {
+  margin: 0 auto;
+}
+@media (max-width: 1000px) {
+  .daily-plan-grid,
+  .study-trees,
+  .world-progress {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .world-progress-details {
+    padding: 1.2rem;
+  }
+  .world-progress-visual {
+    min-height: 18rem;
+  }
+}
+@media (max-width: 560px) {
+  .hero-art .aion-companion {
+    max-width: min(100%, 11rem);
+  }
+  .daily-plan,
+  .skill-tree {
+    padding: 1rem;
+  }
+  .question-branch {
+    margin-left: 0.2rem;
+    padding-left: 0.6rem;
+  }
+  .question-branch::before {
+    width: 0.6rem;
+  }
+  .skill-branches {
+    padding-left: 0.35rem;
+  }
+  .skill-branches > li {
+    padding-left: 0.65rem;
   }
 }

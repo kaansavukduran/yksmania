@@ -1,4 +1,4 @@
-# Content coverage, 0.3.1 alpha
+# Content coverage, 0.4.0 alpha
 
 These are different measurements. None measures a learner's mastery.
 
@@ -6,8 +6,8 @@ These are different measurements. None measures a learner's mastery.
 | --- | --- |
 | Main topic reference | 341 source rows: TYT 201, numerical AYT 140; stable topic IDs retained |
 | Detailed cheat-sheet outline | 479 headings; finer granularity and overlap with the main outline |
-| Interactive teaching | 13 lessons with authored SVG/vector interactions |
-| Interactive question bank | 65 original Turkish exercises; no official-item claim |
+| Interactive teaching | 18 lessons with authored SVG/vector interactions |
+| Interactive question bank | 90 original Turkish exercises; no official-item claim |
 | Private archive inventory | 8,584 PDF file records in 246 folders; about 23.6 GB, before content-hash deduplication |
 | Locally prepared private packs | 143 PDFs / 4,989 pages: 126 cheat sheets, 14 MEBİ-named PDFs and 3 OGM past-question books |
 
@@ -89,3 +89,25 @@ hash, page and question references; faithful mathematical/visual rendering;
 answer-key verification; subject/topic matching; duplicate handling and a clear
 verified/unverified state. Complete exam-year syllabus and every historical ÖSYM
 session are not verified. No complete-archive or score-improvement claim is made.
+
+## Ordered plans and OGM chemistry in 0.4.0
+
+The current workbook's Üretim Sırası sheet contains exactly 479 unique TYT and
+numerical AYT detailed headings matching the app IDs. The Todoist “28 Şubat 2027”
+document has 536 study lines, 479 unique first-study headings, in the same order.
+Only those existing topic IDs and their order enter the public application; personal
+statuses, dates, private identifiers and review repetitions do not. Theory and
+question plans use this same granularity, not 341 + 479 separate new topics.
+
+Coverage gap: this detailed source has only one TYT geometry heading and four AYT
+geometry headings. The separate 341-row main outline remains available. The 479-row
+study plan is faithful to the supplied workbook; it is not independently verified as
+complete official YKS coverage. An existing area lesson lacks an exact detailed-topic
+match and deliberately does not receive a fabricated progress association.
+
+Five OGM Dersler Cepte chemistry explanations add 25 original exercises: simya,
+disciplines, symbolic language, laboratory safety and atom models. Eight narrative
+pages across two fascicules were close-read. These are the first five entries in the
+verified study sequence. Most of the 479 headings still need an authored lesson and
+question set; their routes explicitly say so and allow recording external work.
+Source management remains under Settings and supports existing offline imports.

@@ -65,6 +65,7 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
       finishedAt: new Date().toISOString(),
       responses: draft.responses,
       kind: draft.reviewId ? "review" : "learn",
+      includesTheory: false,
       minutes: Math.min(
         1440,
         Math.max(0, Math.round((Date.now() - draft.startedAt) / 60000)),

@@ -9,9 +9,10 @@ import {
 } from "lucide-react";
 import { Capacitor } from "@capacitor/core";
 import { useApp } from "../store";
+import { DateInput } from "../components/DateInput";
 import { parseBackup } from "../domain/storage";
 import type { Settings as SettingsType } from "../domain/model";
-const VERSION = "0.3.1";
+const VERSION = "0.4.0";
 function NumericControl({
   label,
   value,
@@ -134,9 +135,11 @@ function Toggle({
   );
 }
 export function Settings({
+  openSources,
   updateReady,
   applyUpdate,
 }: {
+  openSources: () => void;
   updateReady: boolean;
   applyUpdate: () => void;
 }) {
@@ -242,15 +245,15 @@ export function Settings({
       <div className="settings-grid">
         <section className="panel settings-panel">
           <h2>{t("general")}</h2>
-          <label className="field">
+          <div className="field">
             {t("examDate")}
-            <input
-              type="date"
+            <DateInput
+              label={t("examDate")}
               value={state.settings.examDate}
-              onChange={(e) => set("examDate", e.target.value)}
+              onChange={(value) => set("examDate", value)}
             />
             <small className="muted">{t("examHelp")}</small>
-          </label>
+          </div>
         </section>
         <section className="panel settings-panel appearance-panel">
           <h2>{t("appearance")}</h2>
@@ -320,6 +323,9 @@ export function Settings({
         </section>
         <section className="panel settings-panel">
           <h2>{t("data")}</h2>
+          <button className="secondary" onClick={openSources}>
+            Kaynak dosyalarını yönet
+          </button>
           <p className="small muted">{t("backupHelp")}</p>
           <div className="settings-buttons">
             <button

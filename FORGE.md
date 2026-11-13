@@ -1,4 +1,62 @@
-# Forge checkpoint: YKSMania 0.3.1 alpha
+# Forge checkpoint: YKSMania 0.4.0 alpha
+
+İstek: 18 Haziran 2027 varsayılan sınavı; 28 Şubat 2027 konu bitirme hedefi;
+Excel/Todoist sırası ve kapalı günlere göre konu/soru ölçekleme; gün/ay/yıl;
+Kütüphane menüsünü kaldırma; tek ders grafiği ve TYT/AYT ağaçları; kaynaklı yeni
+anlatımlar, daha zengin referans uyumlu piksel Aion.
+
+Uygulandı: iki bağımsız 479 başlıklı plan, bugünün tam sayı hedefi, tamamlanandan
+sonra azalan günlük kuyruk, tarihli tüm çalışma sırası, takvim konu/soru yükleri,
+kalıcı/geri alınabilen manuel kayıt. Uygun gün hesabı bugün/hedef dahil; yinelenen
+kapalı tarih ve hafta günü bir kez çıkarılır. Geçmiş hedef/uygun gün yok/tamamlandı
+ayrı gösterilir; sıfıra bölünmez. Yeni soru oturumu konu anlatımını otomatik
+bitirmez; eski tamamlanmış derslerin tarihsel kayıtları korunur. İşaretler XP,
+ustalık veya cevap kaydı oluşturmaz; eski tekrar hedefleri değişmez.
+
+Çalışma sırası güncel Excel Üretim Sırası ile 479/479 tekil eşleşti; Todoist’in
+536 satır / 479 ilk çalışma başlığı aynı sırayı doğruladı. Kişisel tamamlanma,
+tarih ve özel Drive kimlikleri import edilmedi. Ayrıntılı listenin geometri açığı
+vardır; 341 ana harita korunur, bu iki liste toplanmaz. OGM iki fasikülde sekiz
+anlatım sayfası yakın okundu; ilk beş kimya başlığına beş özgün görsel anlatım ve
+25 alıştırma eklendi. Toplam 18/90. Tüm arşiv veya bütün müfredat hazır denmez.
+Kaynak/sayfa/kavram/anahtarlar docs/SOURCE_REVIEW.md içinde.
+
+Dünyam: 15 dersi bir halkada, konu sayısına ağırlıklı renkli tamamlanan alanlarla
+gösterir. TYT solda, AYT Sayısal sağda; dar/büyük ölçekte alt alta. Dallar kaynak
+çalışma sırasıdır, doğrulanmış bir önkoşul grafiği iddiası değildir. Kaynak içe
+aktarma Ayarlar’a taşındı; eski /library bağlantısı, PDF’ler ve notlar korunur.
+Uygulama yalnız Türkçe; önceki kopya kağıdı ayrımı ve tam genişlik/alttaki notlar korunur.
+
+Aion ana pafta ve T-pose A tekrar incelendi. Kullanıcının son açık piksel isteği,
+eski cartoon tercihini bu uygulama için değiştirir. Yeni 8×4 atlas 32 pozu,
+farklı klik tepkilerini ve fare yönü bakışını içerir. Dünya konumu sabit; kare
+bazlı ayak çıpası metadata ile düzeltilir. Yeni manzara ilerlemeyle renklenir.
+Azaltılmış hareket, görünmez/arka plan duraklaması korunur. Ayrıntı ART_BIBLE.md.
+Güncel Fragaria Unslop/Unslop, React kontrol listesi ve canlı AIONIA v1.7 / indeks
+v3 kullanıldı. Yeni yetki gerektiren dışa aktarım denenmedi.
+
+Yerel/uzak son doğrulama sonuçları aşağıdaki teslim kaydına eklenir. Sürüm 0.4.0,
+Android versionCode 7; fiziksel cihaz, temiz kurulum/portable taşıma, üretim imzası
+ve iki sürümlük native güncelleme açık kapılardır.
+
+
+## 0.4.0 yerel kontrol
+
+TypeScript/build ve 35 birim/depolama/içerik testi PASS. 38 benzersiz tarayıcı
+senaryosu yerel tam + hedefli koşularda geçti; bir tam koşunun PDF kurulumu dist
+aynı anda değiştiğinde zaman aşımına uğradığı için o koşu tam PASS sayılmadı.
+Sabit son derleme üzerinde PDF tekrarları ve yeni gece yarısı/arka plandan dönüş
+regresyonu PASS. Nihai kaynağın tek koşudaki tam tarayıcı/paket sonucu CI’da beklenir.
+Chromium 156.0.8078.79 / Node 24.22.1 / Linux. Koyu 1440×1000 ve açık 390×1000,
+beş kimya modeli, 32 ayrı Aion karesi incelendi. 320px/%200 UI/%150 yazı gerçek
+kontrol akışı PASS; taşma/kırpma onarımları QA.md içinde. Örnek görsel akışta
+renderer hataları 0. Electron Linux beş OGM modeli, konu kaydı, eski AYT/cheatsheet,
+offline 5/5 soru, reload ve süreç yeniden başlatma PASS; renderer hataları 0.
+Yeni yayın ve native dosyalar doğrulanınca ayrı teslim kaydı eklenir.
+
+---
+
+# Historical checkpoint: YKSMania 0.3.1 alpha
 
 Kullanıcı isteği: kopya kağıtları derslerin içinde görünmesin; sol menüde Konu
 Anlatımı ile Sorular arasında ayrı bölüm olsun. Yeni /cheatsheets yolu TYT/AYT,

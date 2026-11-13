@@ -1,6 +1,6 @@
 # Quality evidence
 
-Target 0.3.1 alpha. This file is updated at the verified Forge checkpoint.
+Target 0.4.0 alpha. This file is updated at the verified Forge checkpoint.
 
 ## Automated acceptance
 
@@ -310,3 +310,55 @@ Yayın koşusu 43510112404 PASS: v0.3.1-alpha.1 sekiz dosyayla herkese açık.
 Etiket/verified-run.json kaynak 3f3cb54 ile eşleşir; indirilen kanıt hash değerleri
 checksum listesiyle eşleşir. Android versionCode 6 / versionName 0.3.1 / minimum
 API 24 ve APK v2 imzası doğrulandı. Herkese açık APK bağlantısı HTTP 200.
+
+## 0.4.0 — YKS-009 / 010 / 011
+
+YKS-009: iki hedef ve kalıcı konu ilerlemesi. Birim testleri kapsayıcı gün sayısı,
+çakışan/yinelenen kapanışlar, artık yıl, geçmiş/kapalı/tamamlanmış plan, seyrek
+çalışma dağıtımı, aynı gün sabit hedef, geri alma, eski kayıt ve soru/anlatım
+ayrılığını doğrular. Normal UI testleri İngilizce cihaz dilinde Türkçe gün/ay/yıl,
+tarih değiştirme, yanlış ABD tarihini reddetme, hafta günü + tek tarih kapatma,
+479 tarihlenmiş sıra, kaydetme hatası/yeniden deneme ve çevrimdışı geri alma içerir.
+
+YKS-010: tek ders grafiği, tüm 15 satır, TYT solda/AYT sağda, klavye ile ders seçme,
+gerçek konu ve soru dallarından bağımsız kayıt, oyunlaştırmadan bağımsız kullanım.
+Axe, SVG dekoratif harflerle erişilebilir ad uyuşmazlığını yakaladı; adlar görünür
+sembol ve ders metnini içerir, metin araları açıkça ayrılır. Ciddi/kritik kontrol
+aynı normal akışta tekrar edilir. Bu tam WCAG veya ekran okuyucu sertifikası değildir.
+
+YKS-011: 32 kareli PNG tarayıcıda gerçekten çözülür; ayak piksel ölçümü metadata
+ile birleşerek kaynak taban çizgilerini doğrular. Bu, dünya konum ölçümünden
+ayrıdır. Tıklama tepkisi değişimi, bitiş/idle, fare yönü, sabit actor box ve azaltılmış
+hareket test edilir. Mobilde eski 12.5rem sahnede 240px kare karakterin ayakları
+kırpılıyordu; aktör mevcut yüksekliğe sığar. 320px geometri regresyonu bunu korur.
+
+Beş OGM şeması seçeneklerini normal kontrollerle değiştirir, her özgün seti 5/5
+bitirir; atom modelinin ilk çevrimdışı yüklemesi, seçim/yeniden yükleme ve ciddi/
+kritik axe kontrolü yapılır. Electron otomasyonu beş yeni görseli ilk çevrimdışı
+kullanır, konu kaydını yapar ve süreç yeniden başlayınca 1/479 grafik kaydını,
+önceki AYT keşfini ve tamamlanmış soru oturumunu doğrular. Eski ders/PDF/taslak/
+yedek/not/tekrar regresyonları korunur. Son test sayıları ve gerçek paket/web
+kaynak eşleşmeleri FORGE.md teslim kaydında tutulur.
+
+Dar ekran denetimi ek kusur yakaladı: 320px / %200 UI / %150 yazıda Bugün
+sayfası 510px genişliyordu. Özetin üç intrinsic grid sütunu ve today-grid’in
+1fr min-content alt sınırı neden oldu. Özet uygun sütun sayısına, alt paneller
+minmax(0,1fr) sınırına geçer; hafta günleri sığmadığında satıra geçer. Yazı veya
+ölçek küçültülmedi, içerik gizlenmedi. Aynı gerçek ayar/plan/ağaç akışı onarımdan
+sonra PASS; Bugün/Dünyam 320px, Ayarlar 321px (yuvarlama toleransı 1px).
+
+Kaynak koruma kontrolü eski content.ts modülünü HEAD’den ayrı yükledi ve mevcut
+13 anlatım / 65 sorunun bütün eğitim alanlarıyla birebir aynı kaldığını doğruladı.
+AYT ders renkleri bilerek ayrıştırıldı; soru kimlikleri/anahtarları değiştirilmedi.
+
+Bir yerel tam koşuda 36/37 test geçti; PDF testinin serviceWorker.ready bekleyişi,
+aynı anda dist yeniden oluşturulduğu için kurulum sırasında zaman aşımına uğradı.
+Bu koşu tam PASS olarak sayılmadı. Dağıtım dosyaları sabitlendikten sonra PDF
+regresyonu ayrı tekrar edilir; nihai kaynağın tüm testleri CI’da yeniden çalışır.
+
+Ek süreklilik regresyonu: uygulama gece boyunca açıkken gün en geç bir dakika
+sonra, arka plandan dönüşte odak/görünürlük olayıyla yenilenir. Plan ve takvim
+aynı gün kaynağını kullanır; geçmiş çalışma tarihleri değiştirilmez. Gece yarısı
+kabul testi saat dilimini açıkça UTC seçer, 14 → 15 → 16 Kasım geçişini sınar.
+PDF’nin sabit dist üzerindeki ayrı tekrarları PASS; testin önkoşulu service worker
+kurulumunun gerçekten tamamlanmasıdır, zaman aşımı büyütülerek örtülmedi.

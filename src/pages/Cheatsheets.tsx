@@ -8,14 +8,23 @@ import { SourceList } from "../components/SourceList";
 
 export function Cheatsheets({
   navigate,
+  topicId,
 }: {
   navigate: (route: string) => void;
+  topicId?: string;
 }) {
   const { t, l } = useApp();
-  const [exam, setExam] = useState("TYT");
+  const initialTopic = detailTopics.find((v) => v.id === topicId);
+  const [exam, setExam] = useState(
+    initialTopic?.subjectId.startsWith("ayt-") ? "AYT" : "TYT",
+  );
   const [search, setSearch] = useState("");
-  const [open, setOpen] = useState<string | null | undefined>(undefined);
-  const [selected, setSelected] = useState<string | null>("");
+  const [open, setOpen] = useState<string | null | undefined>(
+    initialTopic?.subjectId,
+  );
+  const [selected, setSelected] = useState<string | null>(
+    initialTopic?.id ?? "",
+  );
   const query = search.trim().toLocaleLowerCase("tr-TR");
   const filtered = subjects.filter(
     (s) =>
@@ -67,7 +76,7 @@ export function Cheatsheets({
           />
         </label>
       </div>
-      <button className="secondary" onClick={() => navigate("/library")}>
+      <button className="secondary" onClick={() => navigate("/sources")}>
         <LibraryBig size={18} />
         {t("cheatsheetImport")}
       </button>

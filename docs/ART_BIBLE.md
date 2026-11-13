@@ -2,12 +2,11 @@
 
 Visual identity: warm charcoal, restrained coral actions, mint learning feedback,
 source-derived Aion sprite art and calm typography. Normal text stays in system
-fonts or user-selected Lexend, rather than a pixel font. The world view uses simple
-CSS scenery; it introduces no new canon or character biography.
+fonts or user-selected Lexend, rather than a pixel font. The world view uses a generated pixel landscape; it introduces no new canon or character biography.
 
-## Aion — cartoon direction for 0.2.0
+## Historical Aion — cartoon direction for 0.2.0
 
-The user's latest explicit direction is smooth cartoon, not pixel art. The new
+The user's explicit direction at 0.2.0 was smooth cartoon. It is superseded for this app by the 0.4.0 pixel request below. The new
 atlas follows the main Aion character reference and T-pose variant A inspected
 through the authorized Drive connector. Pink body, blue-tipped external gills,
 blue eyes, coat, leaf/infinity emblem, striped badge and DNA tail are retained.
@@ -55,3 +54,37 @@ Lexend is bundled in Latin and Latin Extended regular/semibold subsets, OFL 1.1.
 The source font cmap was checked for Çç Ğğ İı Öö Şş Üü. Font selection is independent
 of text size, interface scale and theme. It is an optional readability alternative,
 not a treatment or a guaranteed learning improvement.
+
+## Aion — current explicit pixel direction, 0.4.0
+
+The latest user request explicitly asks for richer pixel art faithful to the same
+character sheet. Main reference and T-pose variant A were inspected again. Pink
+body, blue-tipped gills, blue eyes, white coat, original emblem/badge placement and
+DNA tail are preserved. Default three-quarter left, tail on the right; never CSS
+mirror the asymmetric coat. Old cartoon assets are retained as historical art.
+
+`public/assets/aion-pixel.png`: generated 1774×887 RGBA, 8 columns × 4 rows.
+The cell pitch is exactly 221.75 source pixels; metadata preserves fractional
+origins rather than assuming an integer tile size. 32 authored poses: idle/blink
+0–7; gaze 8–15; wave 16–19; think 20–23; happy 24–27; stretch 28–31.
+Idle holds frame 0 for 18 ticks then 1–7, 150ms. One-shot reaction clips use 160ms.
+Click chooses a different action from the previous click. Mouse pointer changes
+gaze only, resets after 1100ms. It does not move the actor's world position.
+
+`src/data/aion-pixel-atlas.json` has per-frame source corrections. Opaque pink foot
+pixels in x13–56%, y73–98% are measured independently from tail and coat. Bottom
+foot baseline is aligned to y94% and the last four rows' foot midpoint to x35%.
+Runtime PNG decoding checks corrected vertical baselines for all 32 frames; actor
+box, gaze, click variability, return to idle and reduced motion are separate tests.
+All 32 corrected cells were also displayed on a dark runtime background and inspected.
+Reduced/user-disabled motion holds frame 0 and disables cosmetic interaction;
+hidden/offscreen timers pause. Click reactions award no XP. A session celebration
+still follows durable completion. A mobile hero clipping regression limits the
+actor to its available art height instead of hiding its feet.
+
+`public/assets/study-world.png`: generated 1774×887 landscape, mountain/stream,
+rooted forest and study building. Grayscale changes continuously with actual topic
+progress; world opacity also increases. Decorative scenery earns no completion.
+The progress chart and trees remain available with gamification off. Real UI text
+continues to use readable system/Lexend fonts. This art decision is project-specific,
+not a change to every AIONIA game's style or canon.

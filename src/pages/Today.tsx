@@ -6,13 +6,14 @@ import {
   formatDate,
   independentCorrect,
   isBlocked,
-  localDate,
   reviewPlan,
   xp,
 } from "../domain/scheduler";
 import { Aion } from "../components/Aion";
 import { LessonRow, SectionLink } from "../components/Shared";
 import type { Lesson } from "../domain/model";
+import { DailyStudyPlans } from "../components/StudyPlanning";
+import { studyPlan, completionDates, studyTopics } from "../domain/studyPlan";
 export function Today({
   start,
   navigate,
@@ -20,8 +21,7 @@ export function Today({
   start: (lesson: Lesson, reviewId?: string) => void;
   navigate: (route: string) => void;
 }) {
-  const { state, t, l } = useApp();
-  const today = localDate();
+  const { state, today, t, l } = useApp();
   const closed = isBlocked(today, state.settings);
   const due = reviewPlan(state).filter((p) => p.scheduled === today);
   const next =
@@ -32,6 +32,7 @@ export function Today({
         ),
     ) ?? lessons[0];
   const first = due[0];
+  const nextTopic = studyPlan(state, "theory", today).items[0]?.topic;
   const recommended = first
     ? (lessonById(first.review.lessonId) ?? next)
     : next;
@@ -74,7 +75,11 @@ export function Today({
                 ? navigate("/courses")
                 : state.draft
                   ? navigate("/study")
-                  : start(recommended, first?.review.id)
+                  : first
+                    ? start(recommended, first.review.id)
+                    : nextTopic
+                      ? navigate(`/topic?id=${nextTopic.id}&mode=theory`)
+                      : navigate("/courses")
             }
           >
             {t(closed ? "freeStudy" : state.draft ? "continue" : "learn")}
@@ -90,8 +95,13 @@ export function Today({
           </p>
         </div>
         <div className="hero-art">
-          <div className="pixel-spark spark-one" />
-          <div className="pixel-spark spark-two" />
+          <div
+            className="study-landscape"
+            aria-hidden="true"
+            style={{
+              filter: `grayscale(${1 - completionDates(state, "theory").size / studyTopics.length})`,
+            }}
+          />
           <Aion size={240} />
           <span className="art-caption">AIONIA</span>
         </div>
@@ -114,10 +124,11 @@ export function Today({
           <span>{t("reviewsDue")}</span>
         </div>
       </div>
+      <DailyStudyPlans navigate={navigate} />
       <div className="today-grid">
         <section className="panel path-panel">
           <div className="section-heading">
-            <h2>{t("dailyPath")}</h2>
+            <h2>{t("reviewsDue")}</h2>
             <SectionLink onClick={() => navigate("/courses")}>
               {t("courses")}
             </SectionLink>
@@ -147,21 +158,9 @@ export function Today({
                   />
                 ) : null;
               })}
-              <LessonRow
-                lesson={next}
-                reason={t("nextReason")}
-                onStart={() => start(next)}
-              />
-              {lessons
-                .filter((x) => x.id !== next.id)
-                .slice(0, 1)
-                .map((lesson) => (
-                  <LessonRow
-                    key={lesson.id}
-                    lesson={lesson}
-                    onStart={() => start(lesson)}
-                  />
-                ))}
+              {!due.length && (
+                <p className="muted">Bugün planlanmış tekrar yok.</p>
+              )}
             </>
           )}
           <div className="panel-foot">

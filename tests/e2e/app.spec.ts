@@ -6,10 +6,27 @@ async function open(page: Page) {
     page.getByRole("heading", { name: "Bugün", exact: true }),
   ).toBeVisible();
 }
-async function start(page: Page) {
+async function nav(page: Page, name: string) {
+  const menu = page.getByRole("button", { name: "Menüyü aç", exact: true });
+  if (await menu.isVisible()) await menu.click();
   await page
-    .getByRole("button", { name: "Çalışmaya başla", exact: true })
+    .locator(".sidebar")
+    .getByRole("button", { name, exact: true })
     .click();
+}
+async function openSources(page: Page) {
+  await nav(page, "Ayarlar");
+  await page
+    .getByRole("button", { name: "Kaynak dosyalarını yönet", exact: true })
+    .click();
+}
+async function start(page: Page) {
+  await nav(page, "Konu Anlatımı");
+  await page.getByRole("button", { name: "TYT", exact: true }).click();
+  const subject = page.getByRole("button", { name: /Matematik.*31/ });
+  if ((await subject.getAttribute("aria-expanded")) !== "true")
+    await subject.click();
+  await page.getByRole("button", { name: /Rasyonel sayılar.*18/ }).click();
   await page.getByRole("button", { name: "Sorulara geç", exact: true }).click();
 }
 async function answer(page: Page, index: number, last = false) {
@@ -128,7 +145,7 @@ test("local PDF opens for the first time offline and retains notes without learn
   await page.evaluate(async () => {
     await navigator.serviceWorker.ready;
   });
-  await page.getByRole("button", { name: "Kütüphane", exact: true }).click();
+  await openSources(page);
   await page.locator('input[accept="application/pdf,.pdf"]').setInputFiles({
     name: "local-test.pdf",
     mimeType: "application/pdf",
@@ -446,7 +463,7 @@ test("catalogue and batch PDFs merge duplicate bytes, report failures and open i
   await page.evaluate(async () => {
     await navigator.serviceWorker.ready;
   });
-  await page.getByRole("button", { name: "Kütüphane", exact: true }).click();
+  await openSources(page);
   const c = {
     format: "yksmania-source-catalogue",
     version: 1,
@@ -611,7 +628,7 @@ test("v1 data opens in the upgraded database without losing a draft or PDF", asy
   await expect(
     page.getByRole("textbox", { name: "Notun", exact: true }),
   ).toHaveValue("Eski sürüm notu");
-  await page.getByRole("button", { name: "Kütüphane", exact: true }).click();
+  await openSources(page);
   await expect(page.locator(".document-row")).toContainText("legacy.pdf");
 });
 
@@ -874,7 +891,7 @@ test("PDF page navigation retains its last valid page after offline reload", asy
   await page.evaluate(async () => {
     await navigator.serviceWorker.ready;
   });
-  await page.getByRole("button", { name: "Kütüphane", exact: true }).click();
+  await openSources(page);
   await page.locator('input[accept="application/pdf,.pdf"]').setInputFiles({
     name: "two-pages.pdf",
     mimeType: "application/pdf",
@@ -903,56 +920,91 @@ test("PDF page navigation retains its last valid page after offline reload", asy
     page.getByRole("spinbutton", { name: "PDF sayfası", exact: true }),
   ).toHaveValue("2");
 });
-test("cartoon atlas keeps a fixed foot anchor and actor box; reduced motion stops the loop", async ({
+test("pixel atlas keeps all 32 planted-foot anchors; pointer and click change poses without actor drift", async ({
   page,
 }) => {
   await open(page);
-  await page.evaluate(async () => {
-    await document.fonts.ready;
+  const metadata = await import("../../src/data/aion-pixel-atlas.json", {
+    with: { type: "json" },
   });
-  const atlas = await page.locator(".hero .aion-sprite").evaluate(async (e) => {
-    const src = getComputedStyle(e).backgroundImage.slice(5, -2);
-    const im = new Image();
-    await new Promise<void>((resolve, reject) => {
-      im.onload = () => resolve();
-      im.onerror = reject;
-      im.src = src;
-    });
-    const canvas = document.createElement("canvas");
-    canvas.width = im.width;
-    canvas.height = im.height;
-    const ctx = canvas.getContext("2d")!;
-    ctx.drawImage(im, 0, 0);
-    const pixels = ctx.getImageData(0, 0, im.width, im.height).data;
-    const baselines = [];
-    for (let frame = 0; frame < 8; frame++) {
-      let baseline = -1;
-      for (let y = 390; y < 490; y++)
-        for (let x = 60; x < 230; x++) {
-          const px = (frame % 4) * 384 + x,
-            py = Math.floor(frame / 4) * 512 + y;
-          if (pixels[(py * im.width + px) * 4 + 3] > 220)
-            baseline = Math.max(baseline, y);
+  const info = await page
+    .locator(".hero .aion-texture")
+    .evaluate(async (e, atlas) => {
+      const src = getComputedStyle(e).backgroundImage.slice(5, -2),
+        im = new Image();
+      await new Promise<void>((resolve, reject) => {
+        im.onload = () => resolve();
+        im.onerror = reject;
+        im.src = src;
+      });
+      const canvas = document.createElement("canvas");
+      canvas.width = im.width;
+      canvas.height = im.height;
+      const ctx = canvas.getContext("2d")!;
+      ctx.drawImage(im, 0, 0);
+      const pixels = ctx.getImageData(0, 0, im.width, im.height).data;
+      const cw = im.width / 8,
+        ch = im.height / 4,
+        anchors = [];
+      for (let f = 0; f < 32; f++) {
+        const ox = Math.round((f % 8) * cw),
+          oy = Math.round(Math.floor(f / 8) * ch);
+        let foot = -1;
+        for (let y = Math.floor(ch * 0.73); y < Math.floor(ch * 0.98); y++) {
+          let count = 0;
+          for (let x = Math.floor(cw * 0.13); x < Math.floor(cw * 0.56); x++) {
+            const k = ((oy + y) * im.width + ox + x) * 4,
+              [r, g, b, a] = pixels.slice(k, k + 4);
+            if (
+              r > 160 &&
+              g > 35 &&
+              g < 180 &&
+              b > 60 &&
+              b < 210 &&
+              r > g * 1.25 &&
+              b < r * 0.95 &&
+              a > 235
+            )
+              count++;
+          }
+          if (count >= 4) foot = y;
         }
-      baselines.push(baseline);
-    }
-    return { width: im.width, height: im.height, baselines };
-  });
-  expect(atlas.width).toBe(1536);
-  expect(atlas.height).toBe(1024);
-  expect(Math.min(...atlas.baselines)).toBeGreaterThan(0);
-  expect(
-    Math.max(...atlas.baselines) - Math.min(...atlas.baselines),
-  ).toBeLessThanOrEqual(1);
-  const actor = page.locator(".hero .aion-sprite");
-  await expect(actor).toHaveAttribute("data-facing", "left");
+        anchors.push(foot + (oy - Math.floor(f / 8) * ch) + atlas.frames[f].y);
+      }
+      return {
+        width: im.width,
+        height: im.height,
+        anchors,
+        rendering: getComputedStyle(e).imageRendering,
+      };
+    }, metadata.default);
+  expect(info.width).toBe(metadata.default.width);
+  expect(info.height).toBe(metadata.default.height);
+  expect(info.anchors).toHaveLength(32);
+  expect(Math.max(...info.anchors) - Math.min(...info.anchors)).toBeLessThan(
+    0.01,
+  );
+  expect(info.rendering).toBe("pixelated");
+  const actor = page.locator(".hero .aion-sprite"),
+    button = page.getByRole("button", {
+      name: "Aion ile etkileş",
+      exact: true,
+    });
   const before = await actor.boundingBox();
+  await button.click();
+  await expect.poll(() => actor.getAttribute("data-reaction")).not.toBe("idle");
+  const first = await actor.getAttribute("data-reaction");
+  await button.click();
+  await expect.poll(() => actor.getAttribute("data-reaction")).not.toBe(first);
   await expect
-    .poll(() => actor.getAttribute("data-frame"), { timeout: 5000 })
-    .not.toBe("0");
+    .poll(() => actor.getAttribute("data-reaction"), { timeout: 4000 })
+    .toBe("idle");
+  await page.mouse.move(before!.x - 80, before!.y + before!.height * 0.35);
+  await expect(actor).toHaveAttribute("data-frame", "11");
   expect(await actor.boundingBox()).toEqual(before);
   await page.emulateMedia({ reducedMotion: "reduce" });
   await expect(actor).toHaveAttribute("data-frame", "0");
+  await expect(button).toBeDisabled();
   await page.waitForTimeout(300);
   await expect(actor).toHaveAttribute("data-frame", "0");
 });
@@ -1178,7 +1230,7 @@ test("YKS-008 cheatsheets have a separate subject/topic route and keep PDF notes
   await page
     .getByRole("textbox", { name: "Notun", exact: true })
     .fill("Soru taslağım korunmalı.");
-  await page.getByRole("button", { name: "Kütüphane", exact: true }).click();
+  await openSources(page);
   const catalogue = {
     format: "yksmania-source-catalogue",
     version: 1,
@@ -1338,7 +1390,7 @@ test("YKS-008 cheatsheet topic search and manual PDFs remain usable at narrow sc
   await page.evaluate(async () => {
     await navigator.serviceWorker.ready;
   });
-  await page.getByRole("button", { name: "Kütüphane", exact: true }).click();
+  await openSources(page);
   await page
     .locator(".import-options select")
     .nth(0)
@@ -1432,6 +1484,6 @@ test("YKS-008 cheatsheet topic search and manual PDFs remain usable at narrow sc
     .getByRole("button", { name: "PDF veya kaynak kataloğu ekle", exact: true })
     .click();
   await expect(
-    page.getByRole("heading", { name: "Kütüphane", exact: true }),
+    page.getByRole("heading", { name: "Kaynak dosyaları", exact: true }),
   ).toBeVisible();
 });

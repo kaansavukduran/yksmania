@@ -1,4 +1,52 @@
-# 0.3.0 kaynak ve model kontrolü
+# Kaynak ve model kontrolü
+
+## 0.4.0 — çalışma sırası ve ilk beş OGM konusu
+
+Güncel “YKS ve AÖF - Kopya Kâğıtları Takip.xlsx” dosyasının Üretim Sırası
+sayfası açıldı. TYT ve AYT Sayısal filtreleri, mevcut ayrıntılı konu kimlikleriyle
+ders + normalleştirilmiş başlık üzerinden 479/479 tekil eşleşti. Todoist YKS
+klasöründeki 28 Şubat 2027 görev belgesinin 536 çalışma satırından elde edilen
+479 ilk çalışma başlığı aynı sırayı verdi. Tekrar satırları yeni konu sayılmadı.
+Public study-order.json yalnız mevcut konu kimliklerini sıralar; kişisel tarihler,
+durumlar ve özel Drive kimlikleri yayımlanmaz. Liste 341 ana konu haritasıyla
+toplanarak yeni bir konu sayısı üretilmez. Geometri kapsam açığı CONTENT_COVERAGE.md
+içinde açıkça belirtilir; ağaç çizgileri bilimsel önkoşul kanıtı değil çalışma sırasıdır.
+
+İki OGM Materyal Dersler Cepte Kimya 9 fasikülünün sekiz anlatım sayfası yakın
+okundu. Ek soru/komşu sayfalar karşılaştırma için okundu; kitap soruları aktarılmadı.
+PDF metnini çıkarmak tüm sayfaları incelemek anlamına gelmez.
+
+| Özgün uygulama anlatımı | Fasikül kapsamı | PDF ve basılı sayfa |
+| --- | --- | --- |
+| Simyadan kimyaya | Simyadan Kimyaya / Kimya Disiplinleri / Sembolik Dil (24 sayfa) | 10 |
+| Kimya disiplinleri | Aynı fasikül | 13–14 |
+| Kimyanın sembolik dili | Aynı fasikül | 18–19 |
+| Kimyada güvenlik | İş Sağlığı ve Güvenliği / Atom ve Periyodik Sistem (32 sayfa) | 10–11 |
+| Atom modelleri | Aynı ikinci fasikül | 17 |
+
+Kavram ve görsel denetimi:
+
+- Sıradan süzme çözünmüş tuzu tutmaz. Damıtma buharlaşma + yoğunlaşma + ayrı
+  kapta suyu toplama içerir; buharlaştırma ile tuzu elde etme farklı hedeftir.
+- Disiplin araştırma amacına göre seçilir; polimer örneğinin miktar analizi de
+  analitiktir. Organik kimya “bütün karbon içerenler” diye genellenmez.
+- Co / CO, O₂ element / H₂O bileşik, katsayı ve parantez çarpımı ayrılır.
+  Ca(OH)₂ iyonik formül birimidir; daireler molekül geometrisi/bağ açısı göstermez.
+- Yanıcı yalın alev ile oksitleyici alev üstü halka ayrılır. Şematik piktogramlar
+  ürün etiketi değildir; gözetim, uygun koruma ve atık kuralları bağlamda anlatılır.
+- Dalton → Thomson → Rutherford → Bohr → modern kavramsal sırası kullanılır.
+  Kaynak tablosundaki tartışmalı tarih yılları aktarılmadı. Bohr modeli tek
+  elektronlu örnekle sınırlanır. Modern çizimdeki 70 nokta eşzamanlı 70 elektron
+  değil, bir elektronun olası konumlarının şemasıdır. Orbital kesin yol değildir.
+
+25 özgün alıştırmanın anahtarları (1 tabanlı seçenek): simya 2/2/3/1/2,
+disiplinler 1/2/3/2/3, semboller 1/3/2/1/2, güvenlik 2/1/3/2/1,
+atom 2/3/1/2/3. Kavram, seçenek ve açıklamalar tek tek karşılaştırıldı;
+tarayıcıda her beşli set normal soru akışından 5/5 tamamlanır. Bunlar resmî
+ÖSYM veya OGM kitap sorusu diye etiketlenmez. Toplam 18 anlatım / 90 özgün soru.
+Önceki 65 sorunun kimlikleri, seçenekleri, anahtarları ve açıklamaları korunur.
+
+## 0.3.0 — AYT kaynakları
 
 Bu turda dört MEBİ konu özeti dosyasının ilgili 12 PDF sayfası yakın okumayla
 incelendi; formül ve şekillerin bulunduğu örnek sayfalar görsel olarak da açıldı.
