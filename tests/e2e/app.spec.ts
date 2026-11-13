@@ -287,6 +287,9 @@ test("blocked day is respected and settings survive reloading", async ({
     })
     .click();
   await expect(page.locator(".calendar-day.selected")).toHaveClass(/closed/);
+  await expect(page.locator(".save-status")).toContainText(
+    "Bu cihazda kaydedildi",
+  );
   await page.reload();
   await expect(page.locator(".calendar-day.selected")).toHaveClass(/closed/);
   await page.getByRole("button", { name: "Bugün", exact: true }).click();

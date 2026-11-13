@@ -1,0 +1,61 @@
+name: Publish verified alpha packages
+on:
+  workflow_dispatch:
+    inputs:
+      build_run:
+        description: Successful Verify and build packages run ID
+        required: true
+permissions:
+  contents: write
+  actions: read
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: kaansavukduran/yksmania
+      BUILD_RUN: ${{ inputs.build_run }}
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Require a fully successful main build
+        shell: bash
+        run: |
+          [[ "$BUILD_RUN" =~ ^[0-9]+$ ]]
+          gh run view "$BUILD_RUN" --json status,conclusion,headSha,headBranch,name > verified-run.json
+          python3 - <<'PY'
+          import json, os
+          r = json.load(open('verified-run.json'))
+          assert r['status'] == 'completed' and r['conclusion'] == 'success', r
+          assert r['headBranch'] == 'main' and r['name'] == 'Verify and build packages', r
+          with open(os.environ['GITHUB_ENV'], 'a') as f:
+              f.write('VERIFIED_SHA=' + r['headSha'] + '\n')
+          PY
+      - name: Collect packages without rebuilding
+        run: |
+          gh run download "$BUILD_RUN" --dir packages
+          python3 - <<'PY'
+          from pathlib import Path
+          import shutil, hashlib
+          files = [p for p in Path('packages').rglob('*') if p.suffix in ('.exe', '.AppImage', '.deb', '.apk')]
+          assert len(files) == 5, files
+          out = Path('release-files')
+          out.mkdir()
+          for p in files:
+              name = 'YKSMania-0.1.0-Android-debug.apk' if p.suffix == '.apk' else p.name
+              shutil.copyfile(p, out / name)
+          evidence = list(Path('packages').rglob('verification.txt'))
+          assert len(evidence) == 1, evidence
+          shutil.copyfile(evidence[0], out / 'Android-verification.txt')
+          shutil.copyfile('verified-run.json', out / 'verified-run.json')
+          with (out / 'SHA256SUMS.txt').open('w') as f:
+              for p in sorted(out.iterdir()):
+                  if p.name != 'SHA256SUMS.txt':
+                      f.write(hashlib.file_digest(p.open('rb'), 'sha256').hexdigest() + '  ' + p.name + '\n')
+          PY
+      - name: Publish complete prerelease
+        run: |
+          gh release create v0.1.0-alpha.1 --target "$VERIFIED_SHA" --title "YKSMania 0.1.0 alpha 1" --draft --prerelease --notes-file docs/RELEASE_ALPHA.md
+          gh release upload v0.1.0-alpha.1 release-files/*
+          gh release edit v0.1.0-alpha.1 --draft=false --prerelease=true --latest=false
