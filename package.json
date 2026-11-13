@@ -1,0 +1,111 @@
+{
+  "name": "yksmania",
+  "version": "0.1.0",
+  "description": "Offline-first YKS learning with spaced retrieval and AIONIA companions",
+  "main": "desktop/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "check": "tsc --noEmit",
+    "build": "node scripts/prepare-assets.mjs && tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "desktop:dev": "electron .",
+    "desktop:pack": "npm run build && electron-builder",
+    "android:sync": "npm run build && cap sync android",
+    "test:desktop": "node scripts/test-desktop.mjs",
+    "format": "prettier --write src tests desktop scripts *.ts *.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaansavukduran/yksmania.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Fragaria Interactive",
+    "email": "77486300+kaansavukduran@users.noreply.github.com"
+  },
+  "license": "UNLICENSED",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/kaansavukduran/yksmania/issues"
+  },
+  "homepage": "https://github.com/kaansavukduran/yksmania#readme",
+  "dependencies": {
+    "@capacitor/android": "^8.6.2",
+    "@capacitor/core": "^8.6.2",
+    "@capacitor/filesystem": "^8.1.5",
+    "@capacitor/share": "^8.0.3",
+    "@fontsource/lexend": "^5.3.0",
+    "idb": "^8.0.4",
+    "lucide-react": "^1.72.0",
+    "pdfjs-dist": "^6.5.438",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@capacitor/cli": "^8.6.2",
+    "@playwright/test": "^1.65.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "electron": "^45.3.2",
+    "electron-builder": "^26.18.0",
+    "fake-indexeddb": "^6.2.8",
+    "prettier": "^3.10.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vite-plugin-pwa": "^2.0.0",
+    "vitest": "^5.1.0"
+  },
+  "private": true,
+  "build": {
+    "appId": "com.fragaria.yksmania",
+    "productName": "YKSMania",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "desktop/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "artifactName": "YKSMania-${version}-Windows-${arch}-Setup.${ext}"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Education",
+      "artifactName": "YKSMania-${version}-Linux-${arch}.${ext}",
+      "desktopName": "yksmania.desktop",
+      "syncDesktopName": true
+    },
+    "icon": "public/icon.png",
+    "portable": {
+      "artifactName": "YKSMania-${version}-Windows-${arch}-Portable.${ext}"
+    }
+  }
+}

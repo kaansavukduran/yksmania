@@ -1,0 +1,100 @@
+import { openDB } from "idb";
+import { initialState, stateSchema, type AppState } from "./model";
+import { lessonById } from "./content";
+export function validateState(input: unknown): AppState {
+  const state = stateSchema.parse(input);
+  const ids = new Set<string>();
+  for (const session of state.sessions) {
+    if (ids.has(session.id)) throw Error("DUPLICATE_SESSION");
+    ids.add(session.id);
+    const lesson = lessonById(session.lessonId);
+    if (!lesson) throw Error("UNKNOWN_LESSON");
+    const questionIds = new Set<string>();
+    for (const r of session.responses) {
+      const q = lesson.questions.find((q) => q.id === r.questionId);
+      if (
+        !q ||
+        r.selected >= q.options.length ||
+        r.correct !== (r.selected === q.answer) ||
+        questionIds.has(r.questionId)
+      )
+        throw Error("INVALID_RESPONSE");
+      questionIds.add(r.questionId);
+    }
+  }
+  const reviewIds = new Set<string>();
+  for (const review of state.reviews) {
+    if (
+      reviewIds.has(review.id) ||
+      !ids.has(review.originSessionId) ||
+      !lessonById(review.lessonId) ||
+      (review.completedSessionId && !ids.has(review.completedSessionId))
+    )
+      throw Error("INVALID_REVIEW");
+    reviewIds.add(review.id);
+  }
+  if (state.draft) {
+    const d = state.draft;
+    const lesson = lessonById(d.lessonId);
+    if (
+      !lesson ||
+      d.index >= lesson.questions.length ||
+      (d.selected !== null &&
+        d.selected >= lesson.questions[d.index].options.length) ||
+      (d.reviewId && !reviewIds.has(d.reviewId))
+    )
+      throw Error("INVALID_DRAFT");
+    for (const r of d.responses) {
+      const q = lesson.questions.find((q) => q.id === r.questionId);
+      if (
+        !q ||
+        r.selected >= q.options.length ||
+        r.correct !== (r.selected === q.answer)
+      )
+        throw Error("INVALID_DRAFT_RESPONSE");
+    }
+  }
+  return state;
+}
+const db = () =>
+  openDB("yksmania", 1, {
+    upgrade(d) {
+      d.createObjectStore("state");
+      d.createObjectStore("documents", { keyPath: "id" });
+    },
+  });
+export async function loadState(): Promise<AppState> {
+  const d = await db();
+  const data = await d.get("state", "current");
+  if (!data) return initialState();
+  return validateState(data);
+}
+export async function saveState(state: AppState): Promise<void> {
+  const d = await db();
+  await d.put("state", validateState(state), "current");
+}
+export interface LocalDocument {
+  id: string;
+  name: string;
+  subjectId: string;
+  size: number;
+  type: string;
+  addedAt: string;
+  blob: Blob;
+}
+export async function putDocument(doc: LocalDocument) {
+  const d = await db();
+  await d.put("documents", doc);
+}
+export async function getDocuments(): Promise<LocalDocument[]> {
+  const d = await db();
+  return d.getAll("documents");
+}
+export async function deleteDocument(id: string) {
+  const d = await db();
+  await d.delete("documents", id);
+}
+export async function parseBackup(text: string): Promise<AppState> {
+  if (text.length > 20_000_000) throw Error("BACKUP_TOO_LARGE");
+  return validateState(JSON.parse(text));
+}
