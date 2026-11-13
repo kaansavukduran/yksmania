@@ -1129,7 +1129,7 @@ small,
 }
 .study-layout {
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(14rem, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 1.3rem;
 }
 .lesson-article {
@@ -1968,9 +1968,6 @@ progress::-moz-progress-bar {
   }
   .settings-panel.appearance-panel {
     grid-row: auto;
-  }
-  .study-layout {
-    grid-template-columns: 1fr;
   }
   .study-notes textarea {
     min-height: 8rem;
@@ -2844,11 +2841,6 @@ progress::-moz-progress-bar {
 .study-notes,
 .visual-lab {
   overflow-wrap: anywhere;
-}
-@media (max-width: 1200px) {
-  .study-layout {
-    grid-template-columns: minmax(0, 1fr);
-  }
 }
 .study-heading h1 {
   overflow-wrap: anywhere;

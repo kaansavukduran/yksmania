@@ -352,8 +352,8 @@ const messages: Record<string, [string, string]> = {
     "An unfinished session exists. Discard its draft and start a new session?",
   ],
   footer: [
-    "Fragaria Interactive · YKSMania 0.2.0 alpha",
-    "Fragaria Interactive · YKSMania 0.2.0 alpha",
+    "Fragaria Interactive · YKSMania 0.2.1 alpha",
+    "Fragaria Interactive · YKSMania 0.2.1 alpha",
   ],
   scopeNote: [
     "İlk çalışan sürüm. Tam müfredat içeriği ve yerel paket testleri ayrıca tamamlanacak.",

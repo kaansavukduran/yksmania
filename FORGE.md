@@ -1,4 +1,28 @@
-# Forge checkpoint: YKSMania 0.2.0 alpha
+# Forge checkpoint: YKSMania 0.2.1 alpha
+
+Current task: move theory notes below the content, preserve the question screen's
+existing bottom notes, and continue the verified cross-platform delivery flow.
+YKS-006 was reproduced before the CSS repair and then passed. Theory now uses one
+full-width track at every breakpoint. Note contents, question drafts, settings,
+source files and original review dates retain their existing storage/behavior.
+
+Live AIONIA standard re-read through the authorized connector on 2026-11-13: v1.7;
+no source-version mismatch. Fragaria Unslop UI/behavior checks applied to the named
+screens. No character designs, animation frames or private archive exports changed.
+
+Local check/build: PASS; unit/storage/content 20/20; browser 20/20. The new regression
+checks geometry at 320–1440px plus real note edits/reload and continued question
+state. Dark/light desktop/mobile screenshots inspected in Chromium 156 on Linux;
+full-width article, bottom notes, no horizontal overflow, zero renderer errors.
+The full 200% UI / 150% text English regression also passed. See docs/QA.md YKS-006.
+
+Web and Windows/Linux/Android package version is 0.2.1, Android versionCode 3.
+Remote build, production acceptance and release IDs are recorded here after those
+checks complete. Physical-device, clean-install and native two-package update
+gates remain open. The earlier private Drive export remains blocked pending the
+specific permission already requested; this UI task does not retry that upload.
+
+# Delivered checkpoint: YKSMania 0.2.0 alpha
 
 Authoritative project: `kaansavukduran/yksmania`, `main`, working checkout
 `/workspace/yksmania`. Prior published 0.1.0 alpha remains preserved below.

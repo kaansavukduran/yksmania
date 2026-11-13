@@ -549,6 +549,68 @@ async function openVisualLesson(page: Page, subject: RegExp, lesson: RegExp) {
   await page.getByRole("button", { name: lesson }).click();
   await expect(page.locator(".visual-lab")).toBeVisible();
 }
+test("YKS-006 notes stay below full-width theory and questions and retain edits", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await openVisualLesson(
+    page,
+    /Biyoloji.*18/,
+    /Hücre organelleri: yapı ve görev/,
+  );
+  for (const width of [1440, 1280, 1024, 390, 320]) {
+    await page.setViewportSize({ width, height: 1000 });
+    const article = await page.locator(".lesson-article").boundingBox();
+    const notes = await page.locator(".study-notes").boundingBox();
+    const layout = await page.locator(".study-layout").boundingBox();
+    expect(article).not.toBeNull();
+    expect(notes).not.toBeNull();
+    expect(layout).not.toBeNull();
+    expect(notes!.y, `notes below theory at ${width}px`).toBeGreaterThanOrEqual(
+      article!.y + article!.height,
+    );
+    expect(
+      article!.width,
+      `theory uses full row at ${width}px`,
+    ).toBeGreaterThanOrEqual(layout!.width - 1);
+    expect(
+      await page.evaluate(() => document.documentElement.scrollWidth),
+    ).toBeLessThanOrEqual(width + 1);
+  }
+  const note = page.getByRole("textbox", { name: "Notun", exact: true });
+  await note.fill("Çekirdek ve ribozom arasındaki farkı karşılaştır.");
+  await expect(
+    page.getByText("Bu cihazda kaydedildi", { exact: true }),
+  ).toBeVisible();
+  await page.reload();
+  await expect(note).toHaveValue(
+    "Çekirdek ve ribozom arasındaki farkı karşılaştır.",
+  );
+  await page.getByRole("button", { name: "Sorulara geç", exact: true }).click();
+  for (const width of [1440, 390, 320]) {
+    await page.setViewportSize({ width, height: 1000 });
+    const panel = await page.locator(".question-panel").boundingBox();
+    const practiceNote = await page.locator(".practice-note").boundingBox();
+    expect(panel).not.toBeNull();
+    expect(practiceNote).not.toBeNull();
+    expect(
+      practiceNote!.y,
+      `notes below questions at ${width}px`,
+    ).toBeGreaterThanOrEqual(panel!.y + panel!.height);
+    expect(
+      await page.evaluate(() => document.documentElement.scrollWidth),
+    ).toBeLessThanOrEqual(width + 1);
+  }
+  await note.fill("Soru çözümünde hatırlayacağım not.");
+  await answer(page, 0);
+  await expect(page.locator(".question-meta")).toContainText("2 / 5");
+  await expect(
+    page.getByText("Bu cihazda kaydedildi", { exact: true }),
+  ).toBeVisible();
+  await page.reload();
+  await expect(note).toHaveValue("Soru çözümünde hatırlayacağım not.");
+  await expect(page.locator(".question-meta")).toContainText("2 / 5");
+});
 test("cell structures respond to actual diagram clicks, preserve a guided route, and score only a completed question session", async ({
   page,
 }) => {

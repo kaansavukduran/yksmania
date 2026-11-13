@@ -1,6 +1,6 @@
 # Quality evidence
 
-Target 0.2.0 alpha. This file is updated at the verified Forge checkpoint.
+Target 0.2.1 alpha. This file is updated at the verified Forge checkpoint.
 
 ## Automated acceptance
 
@@ -113,3 +113,29 @@ executables passed offline lesson/reload/process-restart checks with zero render
 errors. The Android APK's signature and manifest passed verification.
 Physical Android, clean Windows installation/portable extraction and two-package
 update preservation remain unverified. No full WCAG certification is claimed.
+
+## 0.2.1 — YKS-006: notes must not narrow teaching content
+
+Source: user report and screenshot, 2026-11-13. At 1440px the theory notes occupied
+the right-hand column and reduced the space available for the diagram and text.
+The question notes were already below the question panel; that behavior is retained.
+
+Root cause confirmed: the shared `.study-layout` defined two columns above 1200px.
+It now has one full-width track at every breakpoint, with the existing notes after
+the article in both DOM and visual order. Redundant breakpoint overrides were removed.
+No saved-data fields or note handlers changed.
+
+Regression: `YKS-006 notes stay below full-width theory and questions and retain edits`
+in `tests/e2e/app.spec.ts`. The same test failed on the old 0.2.0 layout at 1440px
+(notes y277.19 while the article ended at y1592.38), then passed after the repair.
+It checks theory widths 1440/1280/1024/390/320 and question widths 1440/390/320,
+actual note editing, reload, and continuing to question 2 with the note retained.
+
+Local PASS: check, 20 unit/storage/content tests, production build and 20 browser
+tests. Chromium 156.0.8078.79 on Linux; Turkish default scale plus the existing
+English 200% interface / 150% text regression. Dark/light screenshots inspected at
+1440×1000 and 390×1000, zero renderer errors. At 1440px the article uses the entire
+1108.81px content row; at 390px it uses the entire 361.22px row. Notes follow the
+article and neither view has horizontal page overflow. Native and published-origin
+results for this version are recorded in FORGE.md when observed; prior release
+evidence above is historical and is not evidence for a new binary.

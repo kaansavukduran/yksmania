@@ -1,8 +1,8 @@
 # YKSMania
 
-An offline-first YKS learning application by Fragaria Interactive. **0.2.0 alpha: visual learning and private resource import; not the complete curriculum.**
+An offline-first YKS learning application by Fragaria Interactive. **0.2.1 alpha: visual learning and private resource import; not the complete curriculum.**
 
-[Open the web app](https://yksmania.vercel.app) · [Download alpha packages](https://github.com/kaansavukduran/yksmania/releases/tag/v0.2.0-alpha.1)
+[Open the web app](https://yksmania.vercel.app) · [Download alpha packages](https://github.com/kaansavukduran/yksmania/releases/tag/v0.2.1-alpha.1)
 
 ## What works
 
@@ -12,6 +12,8 @@ An offline-first YKS learning application by Fragaria Interactive. **0.2.0 alpha
 - Nine bilingual lessons, nine interactive vector explanations, 45 original exercises, hints, confidence and explanations.
 - Clickable animal/plant cells, a 118-element periodic table, area-preserving geometry,
   fractions, algebraic areas, force balance, moles, ATP and paragraph structure.
+- Full-width topic explanations with notes below the content; question notes remain
+  below the question panel. Saved notes and unfinished sessions are retained.
 - Separate independent, assisted and incorrect responses; real session history and undo.
 - Day 1/3/7/21 reviews: learning is day 1, original targets are +2/+6/+20 days.
 - Recurring unavailable weekdays, blocked dates, daily capacity and visible rescheduling.

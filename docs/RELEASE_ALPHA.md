@@ -1,5 +1,6 @@
-YKSMania 0.2.0 alpha. Web: https://yksmania.vercel.app
+YKSMania 0.2.1 alpha. Web: https://yksmania.vercel.app
 
+- 0.2.1: Konu anlatımı tam genişlikte; Notun alanı içeriğin sonunda. Soru ekranındaki not alanı altta kalır. Notlar ve yarım kalan oturumlar korunur.
 - Konu Anlatımı ve Sorular ayrı bölümler; ikisinde de TYT/AYT ve ders seçimi.
 - Excel kaynaklarından 341 ana konu ve 479 ayrıntılı kopya kâğıdı başlığı.
 - Dokuz görsel etkileşimli ders ve 45 özgün soru. Hücre yapıları, 118 elementlik tablo, geometride parça taşıma; kesir, çarpanlar, kuvvet, mol, ATP ve paragraf modelleri.

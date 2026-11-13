@@ -1,1 +1,1 @@
-{"version": "0.2.0", "channel": "alpha", "notes": {"tr": "Konu Anlatımı ve Sorular ayrıldı; 9 görsel ders, cartoon Aion, kaynak kataloğu ve toplu PDF içe aktarma.", "en": "Separate explanations and questions; 9 visual lessons, cartoon Aion, source catalogue and batch PDF import."}}
+{"version":"0.2.1","channel":"alpha","notes":{"tr":"Konu anlatımları tam genişlikte; not alanı içeriğin altında. Soru notları ve taslaklar korunur.","en":"Full-width topic explanations with notes below the content. Question notes and drafts are retained."}}
