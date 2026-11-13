@@ -185,3 +185,12 @@ uses a fresh en-US browser context and exercises settings, practice, user-author
 English text, selected answer and reload. That compatibility test does not reintroduce
 English as a supported UI language. Final local, deployed and package results are
 recorded at the 0.2.2 Forge checkpoint; earlier version evidence above is historical.
+
+Local and GitHub package CI 43491193602: PASS, 21 unit/storage/content and 21 browser
+tests; Windows/Linux packaged offline/reload/process-restart tests and Android
+debug APK signature/manifest verification passed. Production web publication is
+BLOCKED by Vercel's daily deployment limit (GitHub Vercel status requests a retry
+in 24 hours). The public origin remains 0.2.1. A new production-origin suite was
+not run against the older site and is not claimed as a 0.2.2 pass. Retry deployment
+and production acceptance after the limit clears; do not change plans or hosting
+destinations to work around the quota without user direction.

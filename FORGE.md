@@ -26,6 +26,32 @@ PASS. Final deployed and package evidence is recorded in the delivery checkpoint
 Physical devices, clean installers/portable extraction and native two-package
 update migration remain open gates; this is still an alpha/debug APK release.
 
+## 0.2.2 delivery verification
+
+- Application source: `ad2397d198c9c8b07bfec31488eced465d2bab3e`.
+- Local acceptance: 21 unit/storage/content and 21 browser tests PASS, including
+  English device/legacy preference compatibility with a Turkish-only UI. Desktop
+  settings and 390px / 200% UI / 150% text screenshots inspected; no renderer errors.
+- [Package CI](https://github.com/kaansavukduran/yksmania/actions/runs/43491193602)
+  passed all four jobs: 21 unit/storage/content tests, 21 browser acceptance tests,
+  Windows/Linux packaged offline lesson/reload/process-restart checks with zero
+  renderer errors, and Android debug APK signature/manifest verification.
+- Production web deployment: BLOCKED by Vercel's platform rate limit. The GitHub
+  Vercel status for this source is failure: “Deployment rate limited — retry in
+  24 hours.” The public origin still serves 0.2.1 (`7cfbe0b`); it is not evidence
+  for the new Turkish-only UI. New published-origin acceptance has not been run.
+  No quota workaround, paid-plan change or new hosting destination was attempted.
+  When the limit clears, deploy this verified source/current main to the existing
+  Vercel project, confirm READY/production alias, then run published-smoke.yml.
+- [Release publication](https://github.com/kaansavukduran/yksmania/actions/runs/43492362390)
+  PASS: [v0.2.2-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.2.2-alpha.1)
+  is published with all five native binaries and source/checksum/Android verification
+  evidence. The tag and downloaded verified-run.json match the application source
+  above; verification-file hashes match SHA256SUMS. Android confirms versionCode 4 /
+  versionName 0.2.2. Release notes explicitly distinguish these new native packages
+  from the rate-limited 0.2.1 web origin. Earlier releases remain intact. Follow-up
+  documentation changes do not modify the tested application code.
+
 # Delivered checkpoint: YKSMania 0.2.1 alpha
 
 Current task: move theory notes below the content, preserve the question screen's

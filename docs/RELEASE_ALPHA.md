@@ -1,5 +1,9 @@
 YKSMania 0.2.2 alpha. Web: https://yksmania.vercel.app
 
+Web yayını bekliyor: Vercel günlük dağıtım sınırı nedeniyle yeni yayını reddetti ve
+24 saat sonra tekrar denemeyi istiyor. Mevcut web adresi şimdilik 0.2.1'i sunuyor.
+Bu sürümün Windows/Linux/Android indirmeleri yalnızca Türkçe çalışan 0.2.2 paketleridir.
+
 - 0.2.2: Uygulama yalnızca Türkçe. Dil seçimi ve İngilizce çeviriler kaldırıldı; eski İngilizce ayarlı kayıtlar ve yedekler diğer verileri korunarak Türkçe açılır.
 - 0.2.1: Konu anlatımı tam genişlikte; Notun alanı içeriğin sonunda. Soru ekranındaki not alanı altta kalır. Notlar ve yarım kalan oturumlar korunur.
 - Konu Anlatımı ve Sorular ayrı bölümler; ikisinde de TYT/AYT ve ders seçimi.

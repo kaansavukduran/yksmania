@@ -4,6 +4,10 @@ An offline-first YKS learning application by Fragaria Interactive. **0.2.2 alpha
 
 [Open the web app](https://yksmania.vercel.app) · [Download alpha packages](https://github.com/kaansavukduran/yksmania/releases/tag/v0.2.2-alpha.1)
 
+The 0.2.2 web publication is blocked by Vercel's daily deployment limit. The existing
+web URL still serves 0.2.1 until deployment is retried after the limit clears.
+The 0.2.2 native downloads contain the Turkish-only change. See FORGE.md for evidence.
+
 ## What works
 
 - TYT's 10 subjects and numerical AYT's 5 subjects: all 341 main topic rows and
