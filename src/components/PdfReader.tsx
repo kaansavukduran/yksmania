@@ -16,7 +16,20 @@ export default function PdfReader({
 }) {
   const { state, t, update } = useApp();
   const [pdf, setPdf] = useState<PDFDocumentProxy | null>(null);
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(() => state.readingPages[doc.id] ?? 1);
+  const [jump, setJump] = useState(() =>
+    String(state.readingPages[doc.id] ?? 1),
+  );
+  const [pageError, setPageError] = useState(false);
+  const goPage = (n: number) => {
+    setPage(n);
+    setJump(String(n));
+    setPageError(false);
+    void update((s) => ({
+      ...s,
+      readingPages: { ...s.readingPages, [doc.id]: n },
+    })).catch(() => {});
+  };
   const [error, setError] = useState(false);
   const [text, setText] = useState("");
   const canvas = useRef<HTMLCanvasElement>(null);
@@ -47,7 +60,13 @@ export default function PdfReader({
         return task.promise;
       })
       .then((p) => {
-        if (live && p) setPdf(p);
+        if (live && p) {
+          setPdf(p);
+          if (page > p.numPages) {
+            setPage(1);
+            setJump("1");
+          }
+        }
       })
       .catch(() => {
         if (live) setError(true);
@@ -113,22 +132,53 @@ export default function PdfReader({
                 className="icon-button"
                 disabled={page <= 1}
                 aria-label={t("pdfPrev")}
-                onClick={() => setPage((p) => p - 1)}
+                onClick={() => goPage(page - 1)}
               >
                 <ChevronLeft />
               </button>
-              <span>
-                {page} / {pdf.numPages}
-              </span>
+              <form
+                className="pdf-page-jump"
+                noValidate
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  const n = Number(jump);
+                  if (!Number.isInteger(n) || n < 1 || n > pdf.numPages) {
+                    setPageError(true);
+                    return;
+                  }
+                  goPage(n);
+                }}
+              >
+                <label>
+                  {t("pdfPage")}
+                  <input
+                    type="number"
+                    aria-label={t("pdfPage")}
+                    min={1}
+                    max={pdf.numPages}
+                    value={jump}
+                    onChange={(e) => setJump(e.target.value)}
+                  />
+                </label>
+                <span>/ {pdf.numPages}</span>
+                <button type="submit" className="secondary">
+                  {t("goPage")}
+                </button>
+              </form>
               <button
                 className="icon-button"
                 disabled={page >= pdf.numPages}
                 aria-label={t("pdfNext")}
-                onClick={() => setPage((p) => p + 1)}
+                onClick={() => goPage(page + 1)}
               >
                 <ChevronRight />
               </button>
             </div>
+            {pageError && (
+              <p role="alert">
+                {t("pageRange")} 1–{pdf.numPages}
+              </p>
+            )}
             <canvas
               ref={canvas}
               aria-label={`${doc.name}, ${page}`}

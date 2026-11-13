@@ -164,7 +164,7 @@ export function Today({
             {t("reviewPolicy")}
           </div>
         </section>
-        <aside className="panel weekly-panel">
+        <aside className="panel weekly-panel" aria-label={t("weekly")}>
           <div className="section-heading">
             <h2>{t("weekly")}</h2>
             <span className="small muted">

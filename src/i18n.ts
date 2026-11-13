@@ -1,7 +1,7 @@
 import type { Locale, Text } from "./domain/model";
 const messages: Record<string, [string, string]> = {
   today: ["Bugün", "Today"],
-  courses: ["Dersler", "Subjects"],
+  courses: ["Konu Anlatımı", "Topic explanations"],
   calendar: ["Takvim", "Calendar"],
   mistakes: ["Yanlışlarım", "My mistakes"],
   library: ["Kütüphane", "Library"],
@@ -204,12 +204,12 @@ const messages: Record<string, [string, string]> = {
     "No PDFs yet. Import your MEBİ, OGM materials or personal notes.",
   ],
   pdfLimit: [
-    "PDF başına en fazla 100 MB. Kaynakların kullanım koşulları korunmalıdır.",
-    "Up to 100 MB per PDF. Respect the source’s usage terms.",
+    "PDF başına en fazla 256 MB. Kaynakların kullanım koşulları korunmalıdır.",
+    "Up to 256 MB per PDF. Respect the source’s usage terms.",
   ],
   pdfInvalid: [
-    "Geçerli bir PDF seç; en fazla 100 MB olabilir.",
-    "Choose a valid PDF of up to 100 MB.",
+    "Geçerli bir PDF seç; en fazla 256 MB olabilir.",
+    "Choose a valid PDF of up to 256 MB.",
   ],
   fileSaved: ["PDF bu cihaza kaydedildi.", "PDF saved on this device."],
   fileError: [
@@ -229,8 +229,8 @@ const messages: Record<string, [string, string]> = {
   pdfPrev: ["Önceki sayfa", "Previous page"],
   pdfNext: ["Sonraki sayfa", "Next page"],
   catalogueStatus: [
-    "6 hazır ders · 30 özgün soru",
-    "6 ready lessons · 30 original exercises",
+    "9 hazır ders · 45 özgün soru",
+    "9 ready lessons · 45 original exercises",
   ],
   catalogueBody: [
     "Drive arşivi incelendi. Tüm kitaplar bu pakete aktarılmış değildir. Özel ve dağıtım izni belirsiz kaynaklar herkese açık koda eklenmez.",
@@ -352,12 +352,122 @@ const messages: Record<string, [string, string]> = {
     "An unfinished session exists. Discard its draft and start a new session?",
   ],
   footer: [
-    "Fragaria Interactive · YKSMania 0.1.0 alpha",
-    "Fragaria Interactive · YKSMania 0.1.0 alpha",
+    "Fragaria Interactive · YKSMania 0.2.0 alpha",
+    "Fragaria Interactive · YKSMania 0.2.0 alpha",
   ],
   scopeNote: [
     "İlk çalışan sürüm. Tam müfredat içeriği ve yerel paket testleri ayrıca tamamlanacak.",
     "First working release. Full curriculum content and native package checks remain in progress.",
+  ],
+  questions: ["Sorular", "Questions"],
+  mainNavigation: ["Ana gezinme", "Main navigation"],
+  studyNotes: ["Çalışma notları", "Study notes"],
+  examChoice: ["Sınav seçimi", "Exam selection"],
+  readyNarratives: ["hazır anlatım", "ready explanations"],
+  readyQuestionSets: ["hazır soru seti", "ready question sets"],
+  originalQuestions: ["özgün soru", "original questions"],
+  detailTopics: ["Kopya kâğıdı alt başlıkları", "Cheat sheet subtopics"],
+  catalogueHeading: ["Konu başlığı", "Topic heading"],
+  sourceHeading: ["Kaynak başlığı", "Source heading"],
+  curriculumScope: [
+    "Excel kaynaklarından 341 ana konu ve 479 ayrıntılı kopya kâğıdı başlığı. Bir başlığın listelenmesi, içeriğinin veya sorularının hazır olduğu anlamına gelmez. Sınav yılına ait resmî tam kapsam ayrıca doğrulanmalıdır. Kaynak başlıkları özgün Türkçesiyle korunur.",
+    "341 main topics and 479 detailed cheat sheet headings from the source workbooks. A listed heading does not mean its teaching or questions are ready. The official year-specific syllabus still needs verification. Source headings retain their original Turkish.",
+  ],
+  theoryIntro: [
+    "TYT veya AYT seç, dersini aç ve konu anlatımlarına ulaş. Sorular ayrı bölümde.",
+    "Choose TYT or AYT, open a subject and read its explanations. Questions have their own section.",
+  ],
+  questionsIntro: [
+    "Sınavını ve dersini seç. Hazır soru setlerini çöz veya cihazındaki kaynak PDF’lerini aç.",
+    "Choose an exam and subject. Practise a ready question set or open source PDFs stored on this device.",
+  ],
+  readingNotMastery: [
+    "Okumak tek başına öğrenme puanı kazandırmaz. Bağımsız çözüm ayrı kaydedilir.",
+    "Reading alone earns no learning credit. Independent answers are recorded separately.",
+  ],
+  sourceFiles: ["Kaynak dosyaları", "Source files"],
+  sourceCatalogue: ["Kişisel kaynak kataloğu", "Personal source catalogue"],
+  importCatalogue: ["Kaynak kataloğunu ekle", "Import source catalogue"],
+  importCatalogueHelp: [
+    "Kendi arşivini eşleştirmek için Kütüphane’den kaynak kataloğu ve PDF’lerini ekle.",
+    "Import your source catalogue and PDFs in Library to connect your archive.",
+  ],
+  cataloguePrivacy: [
+    "Katalog ve PDF’ler yalnız bu cihazda tutulur. İçe aktarma dosyaları internete yüklemez; ilerleme yedeği PDF’leri ve kaynak kataloğunu içermez. Orijinal dosyalarını ayrıca sakla.",
+    "The catalogue and PDFs stay on this device. Import never uploads files; progress backups do not include PDFs or the source catalogue. Keep separate copies of your original files.",
+  ],
+  catalogueReferences: ["kaynak dosya kaydı", "source file references"],
+  onDevice: ["cihazda", "on this device"],
+  notOnDevice: ["cihazda değil", "not on this device"],
+  catalogueNotDownload: [
+    "Katalog eklendi; PDF dosyaları ayrıca içe alınır.",
+    "Catalogue imported; PDF files must be imported separately.",
+  ],
+  pdfNotQuestionBank: [
+    "PDF içe almak, soruları tek tek etkileşimli soru bankasına dönüştürmez ve öğrenme kaydı oluşturmaz.",
+    "Importing a PDF does not turn its items into interactive questions or create learning credit.",
+  ],
+  sourceFilter: ["Kaynak filtresi", "Source filter"],
+  sourceSearch: ["Kaynak dosyası ara", "Search source files"],
+  provider_all: ["Tüm kaynaklar", "All sources"],
+  provider_mebi: ["MEBİ", "MEBİ"],
+  provider_ogm: ["OGM Materyal", "OGM Materyal"],
+  provider_past: ["Çıkmış sorular / ÖSYM", "Past papers / ÖSYM"],
+  provider_aurelia: ["Kopya kâğıtları", "Cheat sheets"],
+  provider_other: ["Diğer kaynaklar", "Other sources"],
+  kind_theory: ["Konu anlatımı", "Explanations"],
+  kind_questions: ["Sorular", "Questions"],
+  kind_mixed: ["Anlatım ve sorular", "Explanations and questions"],
+  kind_cheatsheet: ["Kopya kâğıdı", "Cheat sheet"],
+  kind_exam: ["Deneme", "Mock exam"],
+  openPdf: ["PDF’yi aç", "Open PDF"],
+  openDrive: ["Drive’da aç (internet)", "Open in Drive (online)"],
+  showMore: ["Daha fazla göster", "Show more"],
+  fallbackSubject: [
+    "Eşleşmeyen dosyalar için ders",
+    "Subject for unmatched files",
+  ],
+  documentKind: [
+    "Eşleşmeyen dosyalar için içerik türü",
+    "Content type for unmatched files",
+  ],
+  bulkImportHelp: [
+    "Birden çok PDF veya klasör seçebilirsin. Katalogda dosya adı tekil eşleşirse dersi ve türü otomatik bulunur. Belirsiz eşleşmeler yukarıdaki derse eklenir. Dosyalar sırayla işlenir; sınır PDF başına 256 MB.",
+    "Select multiple PDFs or a folder. A unique catalogue filename match sets subject and type automatically. Ambiguous matches use the subject above. Files are processed sequentially; limit 256 MB per PDF.",
+  ],
+  importFolder: ["Klasör ekle", "Import folder"],
+  importProgress: ["Dosya içe aktarma", "File import progress"],
+  filesProcessed: ["dosya işlendi", "files processed"],
+  stopImport: ["İçe aktarmayı durdur", "Stop import"],
+  filesImported: ["yeni dosya eklendi", "new files imported"],
+  duplicateFiles: ["aynı içerik birleştirildi", "duplicate contents merged"],
+  failedFiles: ["eklenemeyen dosya", "failed files"],
+  importStopped: [
+    "İçe aktarma durdu. Daha önce kaydedilen dosyalar korunuyor.",
+    "Import stopped. Files already saved are retained.",
+  ],
+  fallbackUsed: [
+    "dosya seçili ders/tür ile eklendi veya birleştirildi; sınıflandırmayı kontrol et.",
+    "files used the selected fallback subject/type; check their classification.",
+  ],
+  replaceCatalogue: [
+    "Mevcut kaynak kataloğu değiştirilecek. PDF’lerin, notların ve çalışma kayıtların korunacak. Devam edilsin mi?",
+    "Replace the existing source catalogue? PDFs, notes and learning history will be kept. Continue?",
+  ],
+  catalogueSaved: [
+    "Kaynak kataloğu bu cihaza kaydedildi.",
+    "Source catalogue saved on this device.",
+  ],
+  catalogueInvalid: [
+    "Katalog açılamadı. Beklenen YKSMania kaynak kataloğu biçimini ve ders kimliklerini kontrol et. Mevcut katalog korunuyor.",
+    "Catalogue could not be read. Check its YKSMania source format and subject IDs. Your existing catalogue is retained.",
+  ],
+  pdfPage: ["PDF sayfası", "PDF page"],
+  goPage: ["Git", "Go"],
+  pageRange: ["Geçerli sayfa aralığı:", "Valid page range:"],
+  importKeepOpen: [
+    "İçe aktarırken bu bölümü açık tut. Başka bölüme geçersen işlem durur; kaydedilmiş dosyalar korunur.",
+    "Keep this section open during import. Leaving stops the batch; files already saved are retained.",
   ],
 };
 export function translate(key: string, locale: Locale): string {

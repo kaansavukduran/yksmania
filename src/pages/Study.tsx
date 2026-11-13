@@ -115,195 +115,140 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
           {draft.reviewId ? ` · ${t("review")}` : ""}
         </span>
         <h1>{l(lesson.title)}</h1>
-        <div className="study-steps">
-          <span className={draft.phase === "read" ? "active" : ""}>
-            {t("read")}
-          </span>
-          <span>→</span>
-          <span className={draft.phase === "practice" ? "active" : ""}>
-            {t("practice")}
-          </span>
-          <span>→</span>
-          <span>{t("result")}</span>
-        </div>
       </header>
-      {draft.phase === "read" ? (
-        <div className="study-layout">
-          <article className="panel lesson-article">
-            <h2>{t("objectives")}</h2>
-            <ul>
-              {lesson.objectives.map((v, i) => (
-                <li key={i}>{l(v)}</li>
-              ))}
-            </ul>
-            {lesson.body.map((section, i) => (
-              <section key={i}>
-                <h2>{l(section.title)}</h2>
-                <p>{l(section.text)}</p>
-              </section>
-            ))}
-            <div className="source-box">
-              <strong>{t("sourceInfo")}</strong>
-              <p>{l(lesson.source)}</p>
-            </div>
-            <button
-              className="primary"
-              onClick={() => patch({ phase: "practice" })}
-            >
-              {t("startQuestions")}
-              <ArrowRight size={18} />
-            </button>
-          </article>
-          <aside className="panel study-notes">
-            <h2>{t("note")}</h2>
-            <textarea
-              value={draft.note}
-              onChange={(e) => patch({ note: e.target.value })}
-              placeholder={t("notePlaceholder")}
-              aria-label={t("note")}
-              maxLength={20000}
-            />
-            <p className="small muted">{t("selfCheck")}</p>
-            <Aion size={144} />
-          </aside>
-        </div>
-      ) : (
-        <div className="practice-wrap">
-          <section className="panel question-panel">
-            <div className="question-meta">
-              <span>
-                {t("question")} {draft.index + 1} / {lesson.questions.length}
-              </span>
-              <span className="small muted">{t("original")}</span>
-            </div>
-            <progress
-              aria-label={t("progress")}
-              value={draft.responses.length}
-              max={lesson.questions.length}
-            />
-            <h2>{l(question.prompt)}</h2>
-            <div
-              className="answer-options"
-              role="group"
-              aria-label={t("question")}
-            >
-              {question.options.map((option, i) => (
-                <button
-                  key={i}
-                  className={`answer ${draft.selected === i ? "chosen" : ""} ${draft.checked && i === question.answer ? "answer-correct" : ""} ${draft.checked && draft.selected === i && i !== question.answer ? "answer-wrong" : ""}`}
-                  disabled={draft.checked}
-                  aria-pressed={draft.selected === i}
-                  onClick={() => patch({ selected: i })}
-                >
-                  <span className="answer-letter">
-                    {String.fromCharCode(65 + i)}
-                  </span>
-                  <span>{l(option)}</span>
-                  {draft.checked && i === question.answer && (
-                    <CheckCircle2 size={19} />
-                  )}
-                </button>
-              ))}
-            </div>
-            {!draft.checked && (
-              <fieldset className="confidence">
-                <legend>{t("confidence")}</legend>
-                <div className="segmented">
-                  {(["low", "medium", "high"] as const).map((v) => (
-                    <button
-                      key={v}
-                      aria-pressed={draft.confidence === v}
-                      className={draft.confidence === v ? "active" : ""}
-                      onClick={() => patch({ confidence: v })}
-                    >
-                      {t(v)}
-                    </button>
-                  ))}
-                </div>
-              </fieldset>
-            )}
-            {draft.hint && (
-              <aside className="hint-box">
-                <Lightbulb size={18} />
-                <p>{l(question.hint)}</p>
-                <span className="small">{t("assisted")}</span>
-              </aside>
-            )}
-            {draft.checked && (
-              <div
-                className={
-                  draft.selected === question.answer
-                    ? "feedback correct"
-                    : "feedback repair"
-                }
-                role="status"
+      <div className="practice-wrap">
+        <section className="panel question-panel">
+          <div className="question-meta">
+            <span>
+              {t("question")} {draft.index + 1} / {lesson.questions.length}
+            </span>
+            <span className="small muted">{t("original")}</span>
+          </div>
+          <progress
+            aria-label={t("progress")}
+            value={draft.responses.length}
+            max={lesson.questions.length}
+          />
+          <h2>{l(question.prompt)}</h2>
+          <div
+            className="answer-options"
+            role="group"
+            aria-label={t("question")}
+          >
+            {question.options.map((option, i) => (
+              <button
+                key={i}
+                className={`answer ${draft.selected === i ? "chosen" : ""} ${draft.checked && i === question.answer ? "answer-correct" : ""} ${draft.checked && draft.selected === i && i !== question.answer ? "answer-wrong" : ""}`}
+                disabled={draft.checked}
+                aria-pressed={draft.selected === i}
+                onClick={() => patch({ selected: i })}
               >
-                <strong>
-                  {t(
-                    draft.selected === question.answer
-                      ? "correct"
-                      : "incorrect",
-                  )}
-                </strong>
-                <p>{l(question.explanation)}</p>
+                <span className="answer-letter">
+                  {String.fromCharCode(65 + i)}
+                </span>
+                <span>{l(option)}</span>
+                {draft.checked && i === question.answer && (
+                  <CheckCircle2 size={19} />
+                )}
+              </button>
+            ))}
+          </div>
+          {!draft.checked && (
+            <fieldset className="confidence">
+              <legend>{t("confidence")}</legend>
+              <div className="segmented">
+                {(["low", "medium", "high"] as const).map((v) => (
+                  <button
+                    key={v}
+                    aria-pressed={draft.confidence === v}
+                    className={draft.confidence === v ? "active" : ""}
+                    onClick={() => patch({ confidence: v })}
+                  >
+                    {t(v)}
+                  </button>
+                ))}
               </div>
-            )}
-            <div className="question-actions">
-              {!draft.checked ? (
-                <>
-                  <button
-                    className="text-button"
-                    disabled={draft.hint}
-                    onClick={() => patch({ hint: true })}
-                  >
-                    <Lightbulb size={18} />
-                    {t("hint")}
-                  </button>
-                  <button
-                    className="primary"
-                    disabled={draft.selected === null}
-                    onClick={check}
-                  >
-                    {t("check")}
-                    <ArrowRight size={18} />
-                  </button>
-                </>
-              ) : (
-                <>
-                  <span className="small muted">
-                    {draft.hint ? t("assisted") : t("selfCheck")}
-                  </span>
-                  <button
-                    className="primary"
-                    disabled={busy}
-                    onClick={() => {
-                      void next();
-                    }}
-                  >
-                    {busy
-                      ? t("saving")
-                      : t(
-                          draft.index === lesson.questions.length - 1
-                            ? "finish"
-                            : "next",
-                        )}
-                    <ArrowRight size={18} />
-                  </button>
-                </>
-              )}
+            </fieldset>
+          )}
+          {draft.hint && (
+            <aside className="hint-box">
+              <Lightbulb size={18} />
+              <p>{l(question.hint)}</p>
+              <span className="small">{t("assisted")}</span>
+            </aside>
+          )}
+          {draft.checked && (
+            <div
+              className={
+                draft.selected === question.answer
+                  ? "feedback correct"
+                  : "feedback repair"
+              }
+              role="status"
+            >
+              <strong>
+                {t(
+                  draft.selected === question.answer ? "correct" : "incorrect",
+                )}
+              </strong>
+              <p>{l(question.explanation)}</p>
             </div>
-          </section>
-          <label className="field practice-note">
-            {t("note")}
-            <textarea
-              value={draft.note}
-              onChange={(e) => patch({ note: e.target.value })}
-              placeholder={t("notePlaceholder")}
-              maxLength={20000}
-            />
-          </label>
-        </div>
-      )}
+          )}
+          <div className="question-actions">
+            {!draft.checked ? (
+              <>
+                <button
+                  className="text-button"
+                  disabled={draft.hint}
+                  onClick={() => patch({ hint: true })}
+                >
+                  <Lightbulb size={18} />
+                  {t("hint")}
+                </button>
+                <button
+                  className="primary"
+                  disabled={draft.selected === null}
+                  onClick={check}
+                >
+                  {t("check")}
+                  <ArrowRight size={18} />
+                </button>
+              </>
+            ) : (
+              <>
+                <span className="small muted">
+                  {draft.hint ? t("assisted") : t("selfCheck")}
+                </span>
+                <button
+                  className="primary"
+                  disabled={busy}
+                  onClick={() => {
+                    void next();
+                  }}
+                >
+                  {busy
+                    ? t("saving")
+                    : t(
+                        draft.index === lesson.questions.length - 1
+                          ? "finish"
+                          : "next",
+                      )}
+                  <ArrowRight size={18} />
+                </button>
+              </>
+            )}
+          </div>
+        </section>
+        <label className="field practice-note">
+          {t("note")}
+          <textarea
+            value={draft.note}
+            onChange={(e) => patch({ note: e.target.value })}
+            placeholder={t("notePlaceholder")}
+            maxLength={20000}
+          />
+        </label>
+      </div>
     </>
   );
 }

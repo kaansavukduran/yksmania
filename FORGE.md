@@ -1,4 +1,57 @@
-# Forge checkpoint: YKSMania 0.1.0 alpha
+# Forge checkpoint: YKSMania 0.2.0 alpha
+
+Authoritative project: `kaansavukduran/yksmania`, `main`, working checkout
+`/workspace/yksmania`. Prior published 0.1.0 alpha remains preserved below.
+
+## Current work
+
+Konu Anlatımı and Sorular now have separate subject navigation and entry routes.
+Workbook source coverage is 341 main rows (201 TYT / 140 numerical AYT) and 479
+detailed cheat-sheet headings. These are source outlines, not completed lessons.
+Nine lessons have real interactive vector explanations; the original bilingual
+question bank contains 45 items. Cell, periodic-table and geometry lessons are new;
+the six previous lessons now have visual models. All old lesson/question identities,
+sessions, original review dates and drafts remain valid. Legacy /study is supported.
+
+A new left-facing cartoon atlas replaces pixel rendering at runtime. The original
+motion atlas remains in art/archive. Bibliographic sources, frame timings and
+anchor evidence are in ART_BIBLE and CONTENT_COVERAGE. Live AIONIA v1.7 was read
+again on 2026-11-13 through the authorized connector; updated Unslop UI, behavior
+and sprite checks were applied. This is a learning app, not a game requiring a
+Fragaria game splash or a new gamepad scheme.
+
+Private catalogue and batch PDF/folder imports support source matching, 2 MB
+streaming hashes, duplicate merging, cancellation and per-file failures. PDFs can
+be opened from the relevant subject. IndexedDB schema v2 preserves existing stores;
+AppState stays backward compatible with defaulted explorations/readingPages fields.
+PDF page navigation and positions are saved. Exploration never creates learning XP.
+
+## Private content and remaining work
+
+8,584 PDF metadata records (~23.6 GB) were inventoried with pagination. 143 PDFs
+(126 cheat sheets, 14 MEBİ-named sources, 3 OGM past-question books; 4,989 pages)
+were prepared and integrity-checked in the private task workspace, outside Git.
+The whole archive is not imported as individual interactive questions. The next
+content stage needs source/page/item records, verified keys and mathematical/visual
+checking; do not replace this with fabricated readiness or mastery.
+
+Drive export is BLOCKED: automatic approval review rejected the specific private
+catalogue upload because explicit permission for that payload/destination was not
+present. No workaround export was attempted. The source catalogue and two ZIPs
+remain local, concrete deliverables. Ask for that explicit permission before any
+Drive upload; ordinary app development and authorized GitHub/Vercel work continue.
+
+Local check/build: PASS. Unit/storage/content: 20 tests PASS. Browser acceptance:
+19 tests PASS in Chromium on Linux. Electron offline visual lesson, reload and
+process restart: PASS with zero renderer errors. The final catalogue lifecycle
+cleanup is checked again before pushing; remote package/public-origin runs are
+recorded at the delivery checkpoint. The real-source
+local import and offline reading checks are in QA. Native production signing,
+clean-install/portable relocation, physical devices, non-Chromium browsers and
+real two-package native updates remain open gates. Never call emulation physical
+verification. Preserve the accepted +2/+6/+20 ordinal review policy.
+
+# Historical checkpoint: YKSMania 0.1.0 alpha
 
 Authoritative source: `kaansavukduran/yksmania`, `main`. Repository was empty when
 implementation began. The latest verified commit and remote build IDs are recorded

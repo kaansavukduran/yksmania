@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import {
   BookOpen,
+  ListChecks,
   CalendarDays,
   Compass,
   Home,
@@ -24,11 +25,13 @@ import { Mistakes } from "./pages/Mistakes";
 import { Library } from "./pages/Library";
 import { World } from "./pages/World";
 import { Settings } from "./pages/Settings";
+import { Theory } from "./pages/Theory";
 import { Study, Result } from "./pages/Study";
 import type { Lesson } from "./domain/model";
 const routes = [
   { route: "/today", key: "today", Icon: Home },
   { route: "/courses", key: "courses", Icon: BookOpen },
+  { route: "/questions", key: "questions", Icon: ListChecks },
   { route: "/calendar", key: "calendar", Icon: CalendarDays },
   { route: "/mistakes", key: "mistakes", Icon: Sprout },
   { route: "/library", key: "library", Icon: LibraryBig },
@@ -127,13 +130,28 @@ export default function App() {
     state.settings.textSize,
     state.settings.motion,
   ]);
-  const start = async (lesson: Lesson, reviewId?: string) => {
+  const start = async (lesson: Lesson, reviewId?: string, practice = false) => {
+    if (!practice && !reviewId) {
+      navigate(`/lesson?id=${encodeURIComponent(lesson.id)}`);
+      return;
+    }
     if (
       state.draft &&
       state.draft.lessonId === lesson.id &&
       state.draft.reviewId === reviewId
     ) {
-      navigate("/study");
+      if (state.draft.phase === "read") {
+        try {
+          await commit((s) => ({
+            ...s,
+            draft: s.draft ? { ...s.draft, phase: "practice" } : null,
+          }));
+        } catch {
+          toast(t("saveError"));
+          return;
+        }
+      }
+      navigate("/practice");
       return;
     }
     if (state.draft && !confirm(t("draftConfirm"))) return;
@@ -142,25 +160,34 @@ export default function App() {
         ...s,
         draft: {
           lessonId: lesson.id,
-          phase: "read",
+          phase: "practice",
           index: 0,
           responses: [],
           selected: null,
           checked: false,
           hint: false,
           confidence: "medium",
-          note: "",
+          note: s.notes["lesson:" + lesson.id] ?? "",
           startedAt: Date.now(),
           reviewId,
         },
       }));
-      navigate("/study");
+      navigate("/practice");
     } catch {
       toast(t("saveError"));
     }
   };
   const path = route.split("?")[0];
-  const navKey = routes.find((v) => v.route === path)?.key ?? "today";
+  const navKey =
+    path === "/lesson"
+      ? "courses"
+      : path === "/practice" || path === "/result"
+        ? "questions"
+        : path === "/study"
+          ? state.draft?.phase === "read"
+            ? "courses"
+            : "questions"
+          : (routes.find((v) => v.route === path)?.key ?? "today");
   const updateCallback = useState(
     () => (ready: boolean, applyFn?: () => void) => {
       setUpdateReady(ready);
@@ -185,6 +212,7 @@ export default function App() {
       </a>
       <aside
         className={`sidebar ${menu ? "menu-open" : ""}`}
+        aria-label={t("mainNavigation")}
         inert={mobile && !menu}
       >
         <a className="brand" href="#/today">
@@ -206,14 +234,14 @@ export default function App() {
             .filter((v) => v.key !== "settings")
             .map(({ route: r, key, Icon }) => (
               <button
-                className={path === r ? "nav-item active" : "nav-item"}
-                aria-current={path === r ? "page" : undefined}
+                className={navKey === key ? "nav-item active" : "nav-item"}
+                aria-current={navKey === key ? "page" : undefined}
                 key={key}
                 onClick={() => navigate(r)}
               >
                 <Icon size={20} />
                 <span>{t(key)}</span>
-                {path === r && <span className="nav-dot" />}
+                {navKey === key && <span className="nav-dot" />}
               </button>
             ))}
         </nav>
@@ -230,7 +258,7 @@ export default function App() {
             <Settings2 size={20} />
             {t("settings")}
           </button>
-          <span className="sidebar-version">0.1.0 alpha</span>
+          <span className="sidebar-version">0.2.0 alpha</span>
         </div>
       </aside>
       {menu && (
@@ -322,7 +350,7 @@ export default function App() {
         <main
           id="main-content"
           tabIndex={-1}
-          className={`main-content ${path === "/study" ? "study-main" : ""}`}
+          className={`main-content ${["/study", "/lesson", "/practice"].includes(path) ? "study-main" : ""}`}
         >
           {path === "/today" ? (
             <Today
@@ -337,6 +365,21 @@ export default function App() {
                 void start(l);
               }}
             />
+          ) : path === "/questions" ? (
+            <Courses
+              mode="questions"
+              start={(l) => {
+                void start(l, undefined, true);
+              }}
+            />
+          ) : path === "/lesson" ? (
+            <Theory
+              id={new URLSearchParams(route.split("?")[1]).get("id") ?? ""}
+              practice={(l) => {
+                void start(l, undefined, true);
+              }}
+              navigate={navigate}
+            />
           ) : path === "/calendar" ? (
             <Calendar
               start={(l, r) => {
@@ -346,7 +389,7 @@ export default function App() {
           ) : path === "/mistakes" ? (
             <Mistakes
               start={(l) => {
-                void start(l);
+                void start(l, undefined, true);
               }}
               navigate={navigate}
             />
@@ -362,14 +405,22 @@ export default function App() {
                 else toast(t("restartPending"));
               }}
             />
-          ) : path === "/study" ? (
+          ) : path === "/study" && state.draft?.phase === "read" ? (
+            <Theory
+              id={state.draft.lessonId}
+              practice={(l) => {
+                void start(l, state.draft?.reviewId, true);
+              }}
+              navigate={navigate}
+            />
+          ) : path === "/study" || path === "/practice" ? (
             <Study navigate={navigate} />
           ) : path === "/result" ? (
             <Result
               id={new URLSearchParams(route.split("?")[1]).get("id") ?? ""}
               navigate={navigate}
               start={(l) => {
-                void start(l);
+                void start(l, undefined, true);
               }}
             />
           ) : (

@@ -31,8 +31,10 @@ const safeExternal = (url) => {
     const u = new URL(url);
     return (
       u.protocol === "https:" &&
-      u.hostname === "github.com" &&
-      u.pathname.startsWith("/kaansavukduran/yksmania")
+      ((u.hostname === "github.com" &&
+        u.pathname.startsWith("/kaansavukduran/yksmania")) ||
+        (u.hostname === "drive.google.com" &&
+          /^\/file\/d\/[\w-]+\/view$/.test(u.pathname)))
     );
   } catch {
     return false;

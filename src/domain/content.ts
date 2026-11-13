@@ -1,5 +1,7 @@
+import { visualLessons } from "../learning/lessons";
+import curriculum from "../data/curriculum.json";
 import { txt as t, type Subject, type Lesson, type Question } from "./model";
-export const subjects: Subject[] = [
+const baseSubjects: Subject[] = [
   {
     id: "tyt-turkce",
     exam: "TYT",
@@ -309,6 +311,13 @@ export const subjects: Subject[] = [
     ],
   },
 ];
+export const subjects: Subject[] = baseSubjects.map((subject) => ({
+  ...subject,
+  topics: curriculum
+    .filter((topic) => topic.subjectId === subject.id)
+    .map((topic) => topic.title),
+}));
+
 const q = (
   id: string,
   tr: string,
@@ -1138,6 +1147,7 @@ export const lessons: Lesson[] = [
       ),
     ],
   },
+  ...visualLessons,
 ];
 export const lessonById = (id: string) => lessons.find((l) => l.id === id);
 export const subjectById = (id: string) => subjects.find((s) => s.id === id);

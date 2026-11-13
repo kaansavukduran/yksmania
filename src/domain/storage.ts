@@ -1,6 +1,11 @@
 import { openDB } from "idb";
 import { initialState, stateSchema, type AppState } from "./model";
 import { lessonById } from "./content";
+import {
+  parseCatalogue,
+  type SourceCatalogue,
+  type ResourceKind,
+} from "./catalogue";
 export function validateState(input: unknown): AppState {
   const state = stateSchema.parse(input);
   const ids = new Set<string>();
@@ -56,13 +61,33 @@ export function validateState(input: unknown): AppState {
   }
   return state;
 }
-const db = () =>
-  openDB("yksmania", 1, {
-    upgrade(d) {
-      d.createObjectStore("state");
-      d.createObjectStore("documents", { keyPath: "id" });
-    },
-  });
+let database: ReturnType<typeof openDB> | undefined;
+function db() {
+  if (!database) {
+    const pending = openDB("yksmania", 2, {
+      upgrade(d) {
+        if (!d.objectStoreNames.contains("state")) d.createObjectStore("state");
+        if (!d.objectStoreNames.contains("documents"))
+          d.createObjectStore("documents", { keyPath: "id" });
+        if (!d.objectStoreNames.contains("catalogue"))
+          d.createObjectStore("catalogue");
+      },
+      blocking() {
+        void database?.then((d) => d.close());
+        database = undefined;
+      },
+      terminated() {
+        database = undefined;
+      },
+    });
+    database = pending;
+    void pending.catch(() => {
+      if (database === pending) database = undefined;
+    });
+  }
+  return database;
+}
+
 export async function loadState(): Promise<AppState> {
   const d = await db();
   const data = await d.get("state", "current");
@@ -81,6 +106,9 @@ export interface LocalDocument {
   type: string;
   addedAt: string;
   blob: Blob;
+  kind?: ResourceKind;
+  sourceIds?: string[];
+  subjectIds?: string[];
 }
 export async function putDocument(doc: LocalDocument) {
   const d = await db();
@@ -97,4 +125,15 @@ export async function deleteDocument(id: string) {
 export async function parseBackup(text: string): Promise<AppState> {
   if (text.length > 20_000_000) throw Error("BACKUP_TOO_LARGE");
   return validateState(JSON.parse(text));
+}
+
+export async function getCatalogue(): Promise<SourceCatalogue | null> {
+  const d = await db();
+  const c = await d.get("catalogue", "current");
+  return c ? parseCatalogue(JSON.stringify(c)) : null;
+}
+export async function putCatalogue(c: SourceCatalogue) {
+  const verified = parseCatalogue(JSON.stringify(c));
+  const d = await db();
+  await d.put("catalogue", verified, "current");
 }

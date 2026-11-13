@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "TYT-TUR-01",
+    "exam": "TYT",
+    "title": "Sözcükte anlam: gerçek, mecaz, terim",
+    "subjectId": "tyt-turkce"
+  },
+  {
+    "id": "TYT-TUR-02",
+    "exam": "TYT",
+    "title": "Söz öbekleri, deyimler ve atasözleri",
+    "subjectId": "tyt-turkce"
+  },
+  {
+    "id": "TYT-TUR-03",
+    "exam": "TYT",
+    "title": "Anlam ilişkileri ve çok anlamlılık",
+    "subjectId": "tyt-turkce"
+  },
+  {
+    "id": "TYT-TUR-04",
+    "exam": "TYT",
+    "title": "Cümlede anlam, yargı ve çıkarım",
+    "subjectId": "tyt-turkce"
+  },
+  {
+    "id": "TYT-TUR-05",
+    "exam": "TYT",
+    "title": "Paragrafta konu, başlık ve ana düşünce",
+    "subjectId": "tyt-turkce"
+  },
+  {
+    "id": "TYT-TUR-06",
+    "exam": "TYT",
+    "title": "Paragrafta yardımcı düşünce",
+    "subjectId": "tyt-turkce"
+  },
+  {
+    "id": "TYT-TUR-07",
+    "exam": "TYT",
+    "title": "Paragraf yapısı, akışı ve tamamlama",
+    "subjectId": "tyt-turkce"
+  },
+  {
+    "id": "TYT-TUR-08",
+    "exam": "TYT",
+    "title": "Anlatım biçimleri ve düşünceyi geliştirme",
+    "subjectId": "tyt-turkce"
+  },
+  {
+    "id": "TYT-TUR-09",
+    "exam": "TYT",
+    "title": "Ses bilgisi ve ses olayları",
+    "subjectId": "tyt-turkce"
+  },
+  {
+    "id": "TYT-TUR-10",
+    "exam": "TYT",
+    "title": "Kök, gövde, yapım/çekim ekleri, sözcük yapısı",
+    "subjectId": "tyt-turkce"
+  },
+  {
+    "id": "TYT-TUR-11",
+    "exam": "TYT",
+    "title": "İsim, sıfat ve tamlamalar",
+    "subjectId": "tyt-turkce"
+  },
+  {
+    "id": "TYT-TUR-12",
+    "exam": "TYT",
+    "title": "Zamir ve zarf",
+    "subjectId": "tyt-turkce"
+  },
+  {
+    "id": "TYT-TUR-13",
+    "exam": "TYT",
+    "title": "Edat, bağlaç ve ünlem",
+    "subjectId": "tyt-turkce"
+  },
+  {
+    "id": "TYT-TUR-14",
+    "exam": "TYT",
+    "title": "Fiiller: kip, kişi, zaman ve yapı",
+    "subjectId": "tyt-turkce"
+  },
+  {
+    "id": "TYT-TUR-15",
+    "exam": "TYT",
+    "title": "Ek fiil ve fiilimsi",
+    "subjectId": "tyt-turkce"
+  },
+  {
+    "id": "TYT-TUR-16",
+    "exam": "TYT",
+    "title": "Fiilde çatı",
+    "subjectId": "tyt-turkce"
+  },
+  {
+    "id": "TYT-TUR-17",
+    "exam": "TYT",
+    "title": "Cümlenin ögeleri",
+    "subjectId": "tyt-turkce"
+  },
+  {
+    "id": "TYT-TUR-18",
+    "exam": "TYT",
+    "title": "Cümle türleri",
+    "subjectId": "tyt-turkce"
+  },
+  {
+    "id": "TYT-TUR-19",
+    "exam": "TYT",
+    "title": "Anlatım bozuklukları",
+    "subjectId": "tyt-turkce"
+  },
+  {
+    "id": "TYT-TUR-20",
+    "exam": "TYT",
+    "title": "Yazım kuralları",
+    "subjectId": "tyt-turkce"
+  },
+  {
+    "id": "TYT-TUR-21",
+    "exam": "TYT",
+    "title": "Noktalama işaretleri",
+    "subjectId": "tyt-turkce"
+  },
+  {
+    "id": "TYT-TUR-22",
+    "exam": "TYT",
+    "title": "Metin, tablo ve görsel yorumlama",
+    "subjectId": "tyt-turkce"
+  },
+  {
+    "id": "TYT-MAT-01",
+    "exam": "TYT",
+    "title": "Sayı kümeleri, sayı doğrusu ve temel işlemler",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-02",
+    "exam": "TYT",
+    "title": "Tek/çift, işaret ve ardışık sayılar",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-03",
+    "exam": "TYT",
+    "title": "Sayı basamakları",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-04",
+    "exam": "TYT",
+    "title": "Asallık, çarpanlar, bölme ve bölünebilme",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-05",
+    "exam": "TYT",
+    "title": "EBOB ve EKOK",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-06",
+    "exam": "TYT",
+    "title": "Kesir, rasyonel sayı ve ondalık gösterim",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-07",
+    "exam": "TYT",
+    "title": "Birinci derece denklemler",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-08",
+    "exam": "TYT",
+    "title": "Basit eşitsizlikler ve aralıklar",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-09",
+    "exam": "TYT",
+    "title": "Mutlak değer",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-10",
+    "exam": "TYT",
+    "title": "Üslü ifadeler ve bilimsel gösterim",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-11",
+    "exam": "TYT",
+    "title": "Köklü ifadeler",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-12",
+    "exam": "TYT",
+    "title": "Özdeşlikler ve çarpanlara ayırma",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-13",
+    "exam": "TYT",
+    "title": "Oran ve orantı",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-14",
+    "exam": "TYT",
+    "title": "Sayı ve kesir problemleri",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-15",
+    "exam": "TYT",
+    "title": "Yaş problemleri",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-16",
+    "exam": "TYT",
+    "title": "Yüzde, kâr-zarar ve faiz problemleri",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-17",
+    "exam": "TYT",
+    "title": "Karışım problemleri",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-18",
+    "exam": "TYT",
+    "title": "Hareket problemleri",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-19",
+    "exam": "TYT",
+    "title": "İşçi, iş ve havuz problemleri",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-20",
+    "exam": "TYT",
+    "title": "Tablo ve grafik problemleri",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-21",
+    "exam": "TYT",
+    "title": "Önerme, bağlaç ve mantık",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-22",
+    "exam": "TYT",
+    "title": "Kümeler ve işlemler",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-23",
+    "exam": "TYT",
+    "title": "Kartezyen çarpım",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-24",
+    "exam": "TYT",
+    "title": "Fonksiyon kavramı ve gösterimi",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-25",
+    "exam": "TYT",
+    "title": "Bileşke ve ters fonksiyon temeli",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-26",
+    "exam": "TYT",
+    "title": "Sayma, faktöriyel ve permütasyon",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-27",
+    "exam": "TYT",
+    "title": "Kombinasyon ve binom",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-28",
+    "exam": "TYT",
+    "title": "Basit olasılık",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-29",
+    "exam": "TYT",
+    "title": "Veri, grafik, merkezî eğilim ve yayılım",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-30",
+    "exam": "TYT",
+    "title": "Polinomlar ve işlemleri",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-MAT-31",
+    "exam": "TYT",
+    "title": "İkinci derece denklemler",
+    "subjectId": "tyt-matematik"
+  },
+  {
+    "id": "TYT-GEO-01",
+    "exam": "TYT",
+    "title": "Nokta, doğru, ışın, doğru parçası ve açı",
+    "subjectId": "tyt-geometri"
+  },
+  {
+    "id": "TYT-GEO-02",
+    "exam": "TYT",
+    "title": "Doğruda açılar ve paralellik",
+    "subjectId": "tyt-geometri"
+  },
+  {
+    "id": "TYT-GEO-03",
+    "exam": "TYT",
+    "title": "Üçgende açılar",
+    "subjectId": "tyt-geometri"
+  },
+  {
+    "id": "TYT-GEO-04",
+    "exam": "TYT",
+    "title": "Üçgende kenar bağıntıları ve eşitsizlik",
+    "subjectId": "tyt-geometri"
+  },
+  {
+    "id": "TYT-GEO-05",
+    "exam": "TYT",
+    "title": "Dik üçgen, Pisagor ve Öklid",
+    "subjectId": "tyt-geometri"
+  },
+  {
+    "id": "TYT-GEO-06",
+    "exam": "TYT",
+    "title": "Özel üçgenler",
+    "subjectId": "tyt-geometri"
+  },
+  {
+    "id": "TYT-GEO-07",
+    "exam": "TYT",
+    "title": "Üçgenlerde eşlik ve benzerlik",
+    "subjectId": "tyt-geometri"
+  },
+  {
+    "id": "TYT-GEO-08",
+    "exam": "TYT",
+    "title": "Açıortay, kenarortay, yükseklik ve merkezler",
+    "subjectId": "tyt-geometri"
+  },
+  {
+    "id": "TYT-GEO-09",
+    "exam": "TYT",
+    "title": "Dik üçgende trigonometrik oranlar",
+    "subjectId": "tyt-geometri"
+  },
+  {
+    "id": "TYT-GEO-10",
+    "exam": "TYT",
+    "title": "Üçgende alan",
+    "subjectId": "tyt-geometri"
+  },
+  {
+    "id": "TYT-GEO-11",
+    "exam": "TYT",
+    "title": "Çokgenler",
+    "subjectId": "tyt-geometri"
+  },
+  {
+    "id": "TYT-GEO-12",
+    "exam": "TYT",
+    "title": "Dörtgenler ve özel dörtgenler",
+    "subjectId": "tyt-geometri"
+  },
+  {
+    "id": "TYT-GEO-13",
+    "exam": "TYT",
+    "title": "Çemberde açı, kiriş ve teğet",
+    "subjectId": "tyt-geometri"
+  },
+  {
+    "id": "TYT-GEO-14",
+    "exam": "TYT",
+    "title": "Daire, daire dilimi, çevre ve alan",
+    "subjectId": "tyt-geometri"
+  },
+  {
+    "id": "TYT-GEO-15",
+    "exam": "TYT",
+    "title": "Prizma, piramit, silindir, koni ve küre",
+    "subjectId": "tyt-geometri"
+  },
+  {
+    "id": "TYT-GEO-16",
+    "exam": "TYT",
+    "title": "Analitik düzlemde nokta, uzaklık ve doğru",
+    "subjectId": "tyt-geometri"
+  },
+  {
+    "id": "TYT-FIZ-01",
+    "exam": "TYT",
+    "title": "Fizik bilimi, ölçme ve birimler",
+    "subjectId": "tyt-fizik"
+  },
+  {
+    "id": "TYT-FIZ-02",
+    "exam": "TYT",
+    "title": "Skaler ve vektörel büyüklükler",
+    "subjectId": "tyt-fizik"
+  },
+  {
+    "id": "TYT-FIZ-03",
+    "exam": "TYT",
+    "title": "Madde, kütle, hacim ve özkütle",
+    "subjectId": "tyt-fizik"
+  },
+  {
+    "id": "TYT-FIZ-04",
+    "exam": "TYT",
+    "title": "Dayanıklılık, yüzey gerilimi, kılcallık, adezyon/kohezyon",
+    "subjectId": "tyt-fizik"
+  },
+  {
+    "id": "TYT-FIZ-05",
+    "exam": "TYT",
+    "title": "Hareket ve grafikler",
+    "subjectId": "tyt-fizik"
+  },
+  {
+    "id": "TYT-FIZ-06",
+    "exam": "TYT",
+    "title": "Kuvvet ve sürtünme",
+    "subjectId": "tyt-fizik"
+  },
+  {
+    "id": "TYT-FIZ-07",
+    "exam": "TYT",
+    "title": "İş, güç ve enerji",
+    "subjectId": "tyt-fizik"
+  },
+  {
+    "id": "TYT-FIZ-08",
+    "exam": "TYT",
+    "title": "Isı, sıcaklık ve ısı alışverişi",
+    "subjectId": "tyt-fizik"
+  },
+  {
+    "id": "TYT-FIZ-09",
+    "exam": "TYT",
+    "title": "Hâl değişimi ve genleşme",
+    "subjectId": "tyt-fizik"
+  },
+  {
+    "id": "TYT-FIZ-10",
+    "exam": "TYT",
+    "title": "Elektrostatik ve elektriklenme",
+    "subjectId": "tyt-fizik"
+  },
+  {
+    "id": "TYT-FIZ-11",
+    "exam": "TYT",
+    "title": "Elektrik akımı, direnç ve devreler",
+    "subjectId": "tyt-fizik"
+  },
+  {
+    "id": "TYT-FIZ-12",
+    "exam": "TYT",
+    "title": "Mıknatıslar ve manyetik alan",
+    "subjectId": "tyt-fizik"
+  },
+  {
+    "id": "TYT-FIZ-13",
+    "exam": "TYT",
+    "title": "Katı, sıvı ve gaz basıncı",
+    "subjectId": "tyt-fizik"
+  },
+  {
+    "id": "TYT-FIZ-14",
+    "exam": "TYT",
+    "title": "Kaldırma kuvveti",
+    "subjectId": "tyt-fizik"
+  },
+  {
+    "id": "TYT-FIZ-15",
+    "exam": "TYT",
+    "title": "Dalgaların kavramları ve yay dalgaları",
+    "subjectId": "tyt-fizik"
+  },
+  {
+    "id": "TYT-FIZ-16",
+    "exam": "TYT",
+    "title": "Su, ses ve deprem dalgaları",
+    "subjectId": "tyt-fizik"
+  },
+  {
+    "id": "TYT-FIZ-17",
+    "exam": "TYT",
+    "title": "Aydınlanma ve gölge",
+    "subjectId": "tyt-fizik"
+  },
+  {
+    "id": "TYT-FIZ-18",
+    "exam": "TYT",
+    "title": "Yansıma ve aynalar",
+    "subjectId": "tyt-fizik"
+  },
+  {
+    "id": "TYT-FIZ-19",
+    "exam": "TYT",
+    "title": "Kırılma ve mercekler",
+    "subjectId": "tyt-fizik"
+  },
+  {
+    "id": "TYT-FIZ-20",
+    "exam": "TYT",
+    "title": "Prizmalar, renk ve optik uygulamaları",
+    "subjectId": "tyt-fizik"
+  },
+  {
+    "id": "TYT-KIM-01",
+    "exam": "TYT",
+    "title": "Simyadan kimyaya, disiplinler ve meslekler",
+    "subjectId": "tyt-kimya"
+  },
+  {
+    "id": "TYT-KIM-02",
+    "exam": "TYT",
+    "title": "Sembolik dil ve laboratuvar güvenliği",
+    "subjectId": "tyt-kimya"
+  },
+  {
+    "id": "TYT-KIM-03",
+    "exam": "TYT",
+    "title": "Atom modelleri ve atom yapısı",
+    "subjectId": "tyt-kimya"
+  },
+  {
+    "id": "TYT-KIM-04",
+    "exam": "TYT",
+    "title": "Periyodik sistem ve özellikler",
+    "subjectId": "tyt-kimya"
+  },
+  {
+    "id": "TYT-KIM-05",
+    "exam": "TYT",
+    "title": "Türler arası güçlü/zayıf etkileşimler",
+    "subjectId": "tyt-kimya"
+  },
+  {
+    "id": "TYT-KIM-06",
+    "exam": "TYT",
+    "title": "Fiziksel ve kimyasal değişimler",
+    "subjectId": "tyt-kimya"
+  },
+  {
+    "id": "TYT-KIM-07",
+    "exam": "TYT",
+    "title": "Katı, sıvı, gaz ve plazma",
+    "subjectId": "tyt-kimya"
+  },
+  {
+    "id": "TYT-KIM-08",
+    "exam": "TYT",
+    "title": "Su, hayat ve çevre kimyası",
+    "subjectId": "tyt-kimya"
+  },
+  {
+    "id": "TYT-KIM-09",
+    "exam": "TYT",
+    "title": "Temel kimya kanunları",
+    "subjectId": "tyt-kimya"
+  },
+  {
+    "id": "TYT-KIM-10",
+    "exam": "TYT",
+    "title": "Mol kavramı",
+    "subjectId": "tyt-kimya"
+  },
+  {
+    "id": "TYT-KIM-11",
+    "exam": "TYT",
+    "title": "Tepkimeler ve denkleştirme",
+    "subjectId": "tyt-kimya"
+  },
+  {
+    "id": "TYT-KIM-12",
+    "exam": "TYT",
+    "title": "Kimyasal hesaplamalar",
+    "subjectId": "tyt-kimya"
+  },
+  {
+    "id": "TYT-KIM-13",
+    "exam": "TYT",
+    "title": "Karışımlar ve çözeltiler",
+    "subjectId": "tyt-kimya"
+  },
+  {
+    "id": "TYT-KIM-14",
+    "exam": "TYT",
+    "title": "Derişim ifadeleri",
+    "subjectId": "tyt-kimya"
+  },
+  {
+    "id": "TYT-KIM-15",
+    "exam": "TYT",
+    "title": "Karışımları ayırma",
+    "subjectId": "tyt-kimya"
+  },
+  {
+    "id": "TYT-KIM-16",
+    "exam": "TYT",
+    "title": "Asit, baz ve tuz",
+    "subjectId": "tyt-kimya"
+  },
+  {
+    "id": "TYT-KIM-17",
+    "exam": "TYT",
+    "title": "Temizlik, polimer, kozmetik, ilaç ve gıdalar",
+    "subjectId": "tyt-kimya"
+  },
+  {
+    "id": "TYT-BIO-01",
+    "exam": "TYT",
+    "title": "Biyoloji ve canlıların ortak özellikleri",
+    "subjectId": "tyt-biyoloji"
+  },
+  {
+    "id": "TYT-BIO-02",
+    "exam": "TYT",
+    "title": "Bilimsel yöntem",
+    "subjectId": "tyt-biyoloji"
+  },
+  {
+    "id": "TYT-BIO-03",
+    "exam": "TYT",
+    "title": "İnorganik bileşikler",
+    "subjectId": "tyt-biyoloji"
+  },
+  {
+    "id": "TYT-BIO-04",
+    "exam": "TYT",
+    "title": "Karbonhidrat, lipit ve proteinler",
+    "subjectId": "tyt-biyoloji"
+  },
+  {
+    "id": "TYT-BIO-05",
+    "exam": "TYT",
+    "title": "Enzim ve vitaminler",
+    "subjectId": "tyt-biyoloji"
+  },
+  {
+    "id": "TYT-BIO-06",
+    "exam": "TYT",
+    "title": "Nükleik asitler ve ATP",
+    "subjectId": "tyt-biyoloji"
+  },
+  {
+    "id": "TYT-BIO-07",
+    "exam": "TYT",
+    "title": "Hücre teorisi, prokaryot/ökaryot yapı",
+    "subjectId": "tyt-biyoloji"
+  },
+  {
+    "id": "TYT-BIO-08",
+    "exam": "TYT",
+    "title": "Organeller",
+    "subjectId": "tyt-biyoloji"
+  },
+  {
+    "id": "TYT-BIO-09",
+    "exam": "TYT",
+    "title": "Hücre zarı ve madde geçişleri",
+    "subjectId": "tyt-biyoloji"
+  },
+  {
+    "id": "TYT-BIO-10",
+    "exam": "TYT",
+    "title": "Canlı çeşitliliği ve sınıflandırma",
+    "subjectId": "tyt-biyoloji"
+  },
+  {
+    "id": "TYT-BIO-11",
+    "exam": "TYT",
+    "title": "Canlı âlemleri ve virüsler",
+    "subjectId": "tyt-biyoloji"
+  },
+  {
+    "id": "TYT-BIO-12",
+    "exam": "TYT",
+    "title": "Mitoz ve eşeysiz üreme",
+    "subjectId": "tyt-biyoloji"
+  },
+  {
+    "id": "TYT-BIO-13",
+    "exam": "TYT",
+    "title": "Mayoz ve eşeyli üreme",
+    "subjectId": "tyt-biyoloji"
+  },
+  {
+    "id": "TYT-BIO-14",
+    "exam": "TYT",
+    "title": "Mendel ilkeleri ve çaprazlamalar",
+    "subjectId": "tyt-biyoloji"
+  },
+  {
+    "id": "TYT-BIO-15",
+    "exam": "TYT",
+    "title": "Eş baskınlık, çok alellilik, kan grupları",
+    "subjectId": "tyt-biyoloji"
+  },
+  {
+    "id": "TYT-BIO-16",
+    "exam": "TYT",
+    "title": "Eşeye bağlı kalıtım ve soyağaçları",
+    "subjectId": "tyt-biyoloji"
+  },
+  {
+    "id": "TYT-BIO-17",
+    "exam": "TYT",
+    "title": "Ekosistem, enerji akışı ve madde döngüleri",
+    "subjectId": "tyt-biyoloji"
+  },
+  {
+    "id": "TYT-BIO-18",
+    "exam": "TYT",
+    "title": "Çevre sorunları ve biyolojik çeşitliliği koruma",
+    "subjectId": "tyt-biyoloji"
+  },
+  {
+    "id": "TYT-TAR-01",
+    "exam": "TYT",
+    "title": "Tarih bilimi, yöntem ve zaman",
+    "subjectId": "tyt-tarih"
+  },
+  {
+    "id": "TYT-TAR-02",
+    "exam": "TYT",
+    "title": "İnsanlığın ilk dönemleri; İlk/Orta Çağ medeniyetleri",
+    "subjectId": "tyt-tarih"
+  },
+  {
+    "id": "TYT-TAR-03",
+    "exam": "TYT",
+    "title": "İlk/Orta Çağ Türk dünyası",
+    "subjectId": "tyt-tarih"
+  },
+  {
+    "id": "TYT-TAR-04",
+    "exam": "TYT",
+    "title": "İslam medeniyetinin doğuşu",
+    "subjectId": "tyt-tarih"
+  },
+  {
+    "id": "TYT-TAR-05",
+    "exam": "TYT",
+    "title": "İlk Türk-İslam devletleri",
+    "subjectId": "tyt-tarih"
+  },
+  {
+    "id": "TYT-TAR-06",
+    "exam": "TYT",
+    "title": "Selçuklu Türkiyesi ve Anadolu",
+    "subjectId": "tyt-tarih"
+  },
+  {
+    "id": "TYT-TAR-07",
+    "exam": "TYT",
+    "title": "Osmanlı kuruluş ve devletleşme",
+    "subjectId": "tyt-tarih"
+  },
+  {
+    "id": "TYT-TAR-08",
+    "exam": "TYT",
+    "title": "Osmanlı askerî yapı, yönetim ve medeniyet",
+    "subjectId": "tyt-tarih"
+  },
+  {
+    "id": "TYT-TAR-09",
+    "exam": "TYT",
+    "title": "Osmanlı yükselme dönemi",
+    "subjectId": "tyt-tarih"
+  },
+  {
+    "id": "TYT-TAR-10",
+    "exam": "TYT",
+    "title": "Klasik Osmanlı toplum düzeni",
+    "subjectId": "tyt-tarih"
+  },
+  {
+    "id": "TYT-TAR-11",
+    "exam": "TYT",
+    "title": "Değişen dünya dengeleri ve Osmanlı (1595–1774)",
+    "subjectId": "tyt-tarih"
+  },
+  {
+    "id": "TYT-TAR-12",
+    "exam": "TYT",
+    "title": "Avrupa ve Osmanlı'da değişim",
+    "subjectId": "tyt-tarih"
+  },
+  {
+    "id": "TYT-TAR-13",
+    "exam": "TYT",
+    "title": "Devrimler ve devlet-toplum ilişkileri",
+    "subjectId": "tyt-tarih"
+  },
+  {
+    "id": "TYT-TAR-14",
+    "exam": "TYT",
+    "title": "Osmanlı denge siyaseti (1774–1914)",
+    "subjectId": "tyt-tarih"
+  },
+  {
+    "id": "TYT-TAR-15",
+    "exam": "TYT",
+    "title": "19–20. yüzyılda sosyoekonomik değişim",
+    "subjectId": "tyt-tarih"
+  },
+  {
+    "id": "TYT-TAR-16",
+    "exam": "TYT",
+    "title": "20. yüzyıl başlarında Osmanlı; Trablusgarp/Balkan savaşları",
+    "subjectId": "tyt-tarih"
+  },
+  {
+    "id": "TYT-TAR-17",
+    "exam": "TYT",
+    "title": "Birinci Dünya Savaşı, Mondros ve işgaller",
+    "subjectId": "tyt-tarih"
+  },
+  {
+    "id": "TYT-TAR-18",
+    "exam": "TYT",
+    "title": "Millî Mücadele hazırlığı ve TBMM",
+    "subjectId": "tyt-tarih"
+  },
+  {
+    "id": "TYT-TAR-19",
+    "exam": "TYT",
+    "title": "Kurtuluş Savaşı, Mudanya ve Lozan",
+    "subjectId": "tyt-tarih"
+  },
+  {
+    "id": "TYT-TAR-20",
+    "exam": "TYT",
+    "title": "Atatürk ilkeleri ve inkılapları",
+    "subjectId": "tyt-tarih"
+  },
+  {
+    "id": "TYT-TAR-21",
+    "exam": "TYT",
+    "title": "Cumhuriyet dönemi iç/dış gelişmeler",
+    "subjectId": "tyt-tarih"
+  },
+  {
+    "id": "TYT-TAR-22",
+    "exam": "TYT",
+    "title": "İki savaş arası, İkinci Dünya Savaşı ve sonrası çerçevesi",
+    "subjectId": "tyt-tarih"
+  },
+  {
+    "id": "TYT-COG-01",
+    "exam": "TYT",
+    "title": "Doğa, insan ve coğrafya bilimi",
+    "subjectId": "tyt-cografya"
+  },
+  {
+    "id": "TYT-COG-02",
+    "exam": "TYT",
+    "title": "Dünya'nın şekli ve hareketleri",
+    "subjectId": "tyt-cografya"
+  },
+  {
+    "id": "TYT-COG-03",
+    "exam": "TYT",
+    "title": "Konum ve koordinatlar",
+    "subjectId": "tyt-cografya"
+  },
+  {
+    "id": "TYT-COG-04",
+    "exam": "TYT",
+    "title": "Yerel saat ve zaman",
+    "subjectId": "tyt-cografya"
+  },
+  {
+    "id": "TYT-COG-05",
+    "exam": "TYT",
+    "title": "Harita, ölçek ve yer şekillerini gösterme",
+    "subjectId": "tyt-cografya"
+  },
+  {
+    "id": "TYT-COG-06",
+    "exam": "TYT",
+    "title": "Atmosfer, hava durumu ve sıcaklık",
+    "subjectId": "tyt-cografya"
+  },
+  {
+    "id": "TYT-COG-07",
+    "exam": "TYT",
+    "title": "Basınç ve rüzgârlar",
+    "subjectId": "tyt-cografya"
+  },
+  {
+    "id": "TYT-COG-08",
+    "exam": "TYT",
+    "title": "Nem ve yağış",
+    "subjectId": "tyt-cografya"
+  },
+  {
+    "id": "TYT-COG-09",
+    "exam": "TYT",
+    "title": "İklim tipleri ve Türkiye iklimi",
+    "subjectId": "tyt-cografya"
+  },
+  {
+    "id": "TYT-COG-10",
+    "exam": "TYT",
+    "title": "Yerleşmeler ve bölgeler",
+    "subjectId": "tyt-cografya"
+  },
+  {
+    "id": "TYT-COG-11",
+    "exam": "TYT",
+    "title": "Dünya'nın iç yapısı, tektonik ve jeolojik zamanlar",
+    "subjectId": "tyt-cografya"
+  },
+  {
+    "id": "TYT-COG-12",
+    "exam": "TYT",
+    "title": "İç kuvvetler",
+    "subjectId": "tyt-cografya"
+  },
+  {
+    "id": "TYT-COG-13",
+    "exam": "TYT",
+    "title": "Dış kuvvetler",
+    "subjectId": "tyt-cografya"
+  },
+  {
+    "id": "TYT-COG-14",
+    "exam": "TYT",
+    "title": "Türkiye'nin yüzey şekilleri",
+    "subjectId": "tyt-cografya"
+  },
+  {
+    "id": "TYT-COG-15",
+    "exam": "TYT",
+    "title": "Su kaynakları",
+    "subjectId": "tyt-cografya"
+  },
+  {
+    "id": "TYT-COG-16",
+    "exam": "TYT",
+    "title": "Toprak ve bitki örtüsü",
+    "subjectId": "tyt-cografya"
+  },
+  {
+    "id": "TYT-COG-17",
+    "exam": "TYT",
+    "title": "Nüfus",
+    "subjectId": "tyt-cografya"
+  },
+  {
+    "id": "TYT-COG-18",
+    "exam": "TYT",
+    "title": "Göçler",
+    "subjectId": "tyt-cografya"
+  },
+  {
+    "id": "TYT-COG-19",
+    "exam": "TYT",
+    "title": "Ekonomik faaliyetler ve ulaşım",
+    "subjectId": "tyt-cografya"
+  },
+  {
+    "id": "TYT-COG-20",
+    "exam": "TYT",
+    "title": "Afetler",
+    "subjectId": "tyt-cografya"
+  },
+  {
+    "id": "TYT-COG-21",
+    "exam": "TYT",
+    "title": "Çevre ve doğal kaynak kullanımı",
+    "subjectId": "tyt-cografya"
+  },
+  {
+    "id": "TYT-FEL-01",
+    "exam": "TYT",
+    "title": "Felsefeyi tanıma, özellikleri ve işlevi",
+    "subjectId": "tyt-felsefe"
+  },
+  {
+    "id": "TYT-FEL-02",
+    "exam": "TYT",
+    "title": "Düşünme, akıl yürütme ve argüman",
+    "subjectId": "tyt-felsefe"
+  },
+  {
+    "id": "TYT-FEL-03",
+    "exam": "TYT",
+    "title": "Varlık felsefesi",
+    "subjectId": "tyt-felsefe"
+  },
+  {
+    "id": "TYT-FEL-04",
+    "exam": "TYT",
+    "title": "Bilgi felsefesi",
+    "subjectId": "tyt-felsefe"
+  },
+  {
+    "id": "TYT-FEL-05",
+    "exam": "TYT",
+    "title": "Bilim felsefesi",
+    "subjectId": "tyt-felsefe"
+  },
+  {
+    "id": "TYT-FEL-06",
+    "exam": "TYT",
+    "title": "Ahlak felsefesi",
+    "subjectId": "tyt-felsefe"
+  },
+  {
+    "id": "TYT-FEL-07",
+    "exam": "TYT",
+    "title": "Din felsefesi",
+    "subjectId": "tyt-felsefe"
+  },
+  {
+    "id": "TYT-FEL-08",
+    "exam": "TYT",
+    "title": "Siyaset felsefesi",
+    "subjectId": "tyt-felsefe"
+  },
+  {
+    "id": "TYT-FEL-09",
+    "exam": "TYT",
+    "title": "Sanat felsefesi",
+    "subjectId": "tyt-felsefe"
+  },
+  {
+    "id": "TYT-FEL-10",
+    "exam": "TYT",
+    "title": "Felsefi metin analizi",
+    "subjectId": "tyt-felsefe"
+  },
+  {
+    "id": "TYT-FEL-11",
+    "exam": "TYT",
+    "title": "MÖ 6. yüzyıl–MS 2. yüzyıl felsefesi",
+    "subjectId": "tyt-felsefe"
+  },
+  {
+    "id": "TYT-FEL-12",
+    "exam": "TYT",
+    "title": "MS 2. yüzyıl–15. yüzyıl felsefesi",
+    "subjectId": "tyt-felsefe"
+  },
+  {
+    "id": "TYT-FEL-13",
+    "exam": "TYT",
+    "title": "15–17. yüzyıl felsefesi",
+    "subjectId": "tyt-felsefe"
+  },
+  {
+    "id": "TYT-FEL-14",
+    "exam": "TYT",
+    "title": "18–19. yüzyıl felsefesi",
+    "subjectId": "tyt-felsefe"
+  },
+  {
+    "id": "TYT-FEL-15",
+    "exam": "TYT",
+    "title": "20. yüzyıl felsefesi ve ana akımlar",
+    "subjectId": "tyt-felsefe"
+  },
+  {
+    "id": "TYT-DIN-01",
+    "exam": "TYT",
+    "title": "Bilgi ve inanç",
+    "subjectId": "tyt-din"
+  },
+  {
+    "id": "TYT-DIN-02",
+    "exam": "TYT",
+    "title": "Din ve İslam",
+    "subjectId": "tyt-din"
+  },
+  {
+    "id": "TYT-DIN-03",
+    "exam": "TYT",
+    "title": "İslam ve ibadet",
+    "subjectId": "tyt-din"
+  },
+  {
+    "id": "TYT-DIN-04",
+    "exam": "TYT",
+    "title": "Gençlik ve değerler",
+    "subjectId": "tyt-din"
+  },
+  {
+    "id": "TYT-DIN-05",
+    "exam": "TYT",
+    "title": "Gönül coğrafyamız ve İslam medeniyeti",
+    "subjectId": "tyt-din"
+  },
+  {
+    "id": "TYT-DIN-06",
+    "exam": "TYT",
+    "title": "Allah-insan ilişkisi",
+    "subjectId": "tyt-din"
+  },
+  {
+    "id": "TYT-DIN-07",
+    "exam": "TYT",
+    "title": "Hz. Muhammed ve gençlik",
+    "subjectId": "tyt-din"
+  },
+  {
+    "id": "TYT-DIN-08",
+    "exam": "TYT",
+    "title": "Din ve hayat",
+    "subjectId": "tyt-din"
+  },
+  {
+    "id": "TYT-DIN-09",
+    "exam": "TYT",
+    "title": "Ahlaki tutum ve davranışlar",
+    "subjectId": "tyt-din"
+  },
+  {
+    "id": "TYT-DIN-10",
+    "exam": "TYT",
+    "title": "İtikadi, siyasi ve fıkhi yorumlar",
+    "subjectId": "tyt-din"
+  },
+  {
+    "id": "TYT-DIN-11",
+    "exam": "TYT",
+    "title": "Dünya ve ahiret",
+    "subjectId": "tyt-din"
+  },
+  {
+    "id": "TYT-DIN-12",
+    "exam": "TYT",
+    "title": "Kur'an'a göre Hz. Muhammed",
+    "subjectId": "tyt-din"
+  },
+  {
+    "id": "TYT-DIN-13",
+    "exam": "TYT",
+    "title": "Kur'an'da bazı kavramlar",
+    "subjectId": "tyt-din"
+  },
+  {
+    "id": "TYT-DIN-14",
+    "exam": "TYT",
+    "title": "İnançla ilgili meseleler",
+    "subjectId": "tyt-din"
+  },
+  {
+    "id": "TYT-DIN-15",
+    "exam": "TYT",
+    "title": "Yahudilik ve Hristiyanlık",
+    "subjectId": "tyt-din"
+  },
+  {
+    "id": "TYT-DIN-16",
+    "exam": "TYT",
+    "title": "İslam ve bilim",
+    "subjectId": "tyt-din"
+  },
+  {
+    "id": "TYT-DIN-17",
+    "exam": "TYT",
+    "title": "Anadolu'da İslam ve tasavvuf",
+    "subjectId": "tyt-din"
+  },
+  {
+    "id": "TYT-DIN-18",
+    "exam": "TYT",
+    "title": "Güncel dinî meseleler",
+    "subjectId": "tyt-din"
+  },
+  {
+    "id": "TYT-DIN-19",
+    "exam": "TYT",
+    "title": "Hint ve Çin dinleri",
+    "subjectId": "tyt-din"
+  },
+  {
+    "id": "AYT-MAT-01",
+    "exam": "AYT",
+    "title": "TYT sayılar, cebir, mantık ve kümeler ortak temeli",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-02",
+    "exam": "AYT",
+    "title": "Fonksiyon, tanım/değer/görüntü ve grafik",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-03",
+    "exam": "AYT",
+    "title": "Bileşke ve ters fonksiyon",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-04",
+    "exam": "AYT",
+    "title": "Fonksiyonlarda işlemler ve uygulamalar",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-05",
+    "exam": "AYT",
+    "title": "Fonksiyon grafiklerinde dönüşümler",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-06",
+    "exam": "AYT",
+    "title": "Polinomlarda işlemler",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-07",
+    "exam": "AYT",
+    "title": "Polinomlarda bölme, kalan ve çarpan",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-08",
+    "exam": "AYT",
+    "title": "Polinomların çarpanlara ayrılması",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-09",
+    "exam": "AYT",
+    "title": "İkinci derece denklemler ve kök-katsayı",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-10",
+    "exam": "AYT",
+    "title": "Karmaşık sayılar",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-11",
+    "exam": "AYT",
+    "title": "Parabol",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-12",
+    "exam": "AYT",
+    "title": "İkinci derece denklem sistemleri",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-13",
+    "exam": "AYT",
+    "title": "İkinci derece eşitsizlik ve sistemleri",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-14",
+    "exam": "AYT",
+    "title": "Yönlü açılar, radyan ve birim çember",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-15",
+    "exam": "AYT",
+    "title": "Trigonometrik fonksiyon, periyot ve grafik",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-16",
+    "exam": "AYT",
+    "title": "Özdeşlik, toplam-fark ve iki kat açı",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-17",
+    "exam": "AYT",
+    "title": "Trigonometrik denklemler",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-18",
+    "exam": "AYT",
+    "title": "Üstel fonksiyon",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-19",
+    "exam": "AYT",
+    "title": "Logaritma fonksiyonu ve kuralları",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-20",
+    "exam": "AYT",
+    "title": "Üstel/logaritmik denklem ve eşitsizlik",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-21",
+    "exam": "AYT",
+    "title": "Gerçek sayı dizileri",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-22",
+    "exam": "AYT",
+    "title": "Aritmetik/geometrik diziler ve toplamlar",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-23",
+    "exam": "AYT",
+    "title": "Sayma, permütasyon, kombinasyon ve binom ortak temeli",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-24",
+    "exam": "AYT",
+    "title": "Koşullu olasılık",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-25",
+    "exam": "AYT",
+    "title": "Bağımlı/bağımsız olay, deneysel/teorik olasılık",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-26",
+    "exam": "AYT",
+    "title": "Limit ve limit kuralları",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-27",
+    "exam": "AYT",
+    "title": "Süreklilik",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-28",
+    "exam": "AYT",
+    "title": "Anlık değişim ve türev tanımı",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-29",
+    "exam": "AYT",
+    "title": "Türev alma kuralları",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-30",
+    "exam": "AYT",
+    "title": "Teğet ve normal",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-31",
+    "exam": "AYT",
+    "title": "Artma/azalma, ekstremum ve grafik",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-32",
+    "exam": "AYT",
+    "title": "Maksimum-minimum problemleri",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-33",
+    "exam": "AYT",
+    "title": "Belirsiz integral ve kurallar",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-34",
+    "exam": "AYT",
+    "title": "İntegralde değişken değiştirme",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-35",
+    "exam": "AYT",
+    "title": "Belirli integral ve özellikleri",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-MAT-36",
+    "exam": "AYT",
+    "title": "İntegralle alan",
+    "subjectId": "ayt-matematik"
+  },
+  {
+    "id": "AYT-GEO-01",
+    "exam": "AYT",
+    "title": "TYT açı, üçgen, dörtgen ve çokgen ortak temeli",
+    "subjectId": "ayt-geometri"
+  },
+  {
+    "id": "AYT-GEO-02",
+    "exam": "AYT",
+    "title": "Doğrunun analitik incelenmesi",
+    "subjectId": "ayt-geometri"
+  },
+  {
+    "id": "AYT-GEO-03",
+    "exam": "AYT",
+    "title": "Fonksiyon grafikleri ve analitik uygulamalar",
+    "subjectId": "ayt-geometri"
+  },
+  {
+    "id": "AYT-GEO-04",
+    "exam": "AYT",
+    "title": "Çemberin elemanları ve açılar",
+    "subjectId": "ayt-geometri"
+  },
+  {
+    "id": "AYT-GEO-05",
+    "exam": "AYT",
+    "title": "Çemberde teğet ve uzunluk",
+    "subjectId": "ayt-geometri"
+  },
+  {
+    "id": "AYT-GEO-06",
+    "exam": "AYT",
+    "title": "Dairenin çevresi ve alanı",
+    "subjectId": "ayt-geometri"
+  },
+  {
+    "id": "AYT-GEO-07",
+    "exam": "AYT",
+    "title": "Katı cisimlerde yüzey alanı ve hacim",
+    "subjectId": "ayt-geometri"
+  },
+  {
+    "id": "AYT-GEO-08",
+    "exam": "AYT",
+    "title": "Analitik düzlemde öteleme, simetri ve dönme",
+    "subjectId": "ayt-geometri"
+  },
+  {
+    "id": "AYT-GEO-09",
+    "exam": "AYT",
+    "title": "Çemberin analitik incelenmesi",
+    "subjectId": "ayt-geometri"
+  },
+  {
+    "id": "AYT-FIZ-01",
+    "exam": "AYT",
+    "title": "Vektörler",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-02",
+    "exam": "AYT",
+    "title": "Bağıl hareket",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-03",
+    "exam": "AYT",
+    "title": "Newton yasaları ve sürtünme",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-04",
+    "exam": "AYT",
+    "title": "Bir boyutta sabit ivmeli hareket",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-05",
+    "exam": "AYT",
+    "title": "İki boyutta hareket ve atışlar",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-06",
+    "exam": "AYT",
+    "title": "Enerji ve hareket",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-07",
+    "exam": "AYT",
+    "title": "İtme, momentum ve çarpışmalar",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-08",
+    "exam": "AYT",
+    "title": "Tork, denge ve kütle merkezi",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-09",
+    "exam": "AYT",
+    "title": "Basit makineler",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-10",
+    "exam": "AYT",
+    "title": "Elektriksel kuvvet ve elektrik alan",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-11",
+    "exam": "AYT",
+    "title": "Elektriksel potansiyel ve enerji",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-12",
+    "exam": "AYT",
+    "title": "Düzgün elektrik alan ve yüklü parçacık",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-13",
+    "exam": "AYT",
+    "title": "Sığa ve sığaçlar",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-14",
+    "exam": "AYT",
+    "title": "Manyetik alan ve kuvvet",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-15",
+    "exam": "AYT",
+    "title": "Elektromanyetik indüklenme",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-16",
+    "exam": "AYT",
+    "title": "Alternatif akım",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-17",
+    "exam": "AYT",
+    "title": "Transformatörler",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-18",
+    "exam": "AYT",
+    "title": "Düzgün çembersel hareket",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-19",
+    "exam": "AYT",
+    "title": "Dönme, yuvarlanma ve eylemsizlik momenti",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-20",
+    "exam": "AYT",
+    "title": "Açısal momentum",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-21",
+    "exam": "AYT",
+    "title": "Kütle çekimi ve Kepler kanunları",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-22",
+    "exam": "AYT",
+    "title": "Basit harmonik hareket",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-23",
+    "exam": "AYT",
+    "title": "Girişim ve kırınım",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-24",
+    "exam": "AYT",
+    "title": "Doppler olayı",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-25",
+    "exam": "AYT",
+    "title": "Elektromanyetik dalgalar",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-26",
+    "exam": "AYT",
+    "title": "Atom kavramının gelişimi ve atom modelleri",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-27",
+    "exam": "AYT",
+    "title": "Büyük Patlama, evren ve temel parçacıklar",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-28",
+    "exam": "AYT",
+    "title": "Radyoaktivite ve nükleer tepkimeler",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-29",
+    "exam": "AYT",
+    "title": "Özel görelilik",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-30",
+    "exam": "AYT",
+    "title": "Kuantum fiziği ve fotoelektrik olay",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-31",
+    "exam": "AYT",
+    "title": "Compton ve de Broglie",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-FIZ-32",
+    "exam": "AYT",
+    "title": "Modern fiziğin teknolojideki uygulamaları",
+    "subjectId": "ayt-fizik"
+  },
+  {
+    "id": "AYT-KIM-01",
+    "exam": "AYT",
+    "title": "Atomun kuantum modeli ve elektron dizilimi",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-02",
+    "exam": "AYT",
+    "title": "Periyodik özellikler ve elementler",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-03",
+    "exam": "AYT",
+    "title": "Yükseltgenme basamakları",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-04",
+    "exam": "AYT",
+    "title": "Gaz özellikleri ve yasaları",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-05",
+    "exam": "AYT",
+    "title": "İdeal gaz ve kinetik teori",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-06",
+    "exam": "AYT",
+    "title": "Gaz karışımları ve gerçek gazlar",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-07",
+    "exam": "AYT",
+    "title": "Çözücü-çözünen etkileşimleri",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-08",
+    "exam": "AYT",
+    "title": "Derişim birimleri",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-09",
+    "exam": "AYT",
+    "title": "Koligatif özellikler",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-10",
+    "exam": "AYT",
+    "title": "Çözünürlük ve etkileyen faktörler",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-11",
+    "exam": "AYT",
+    "title": "Tepkimelerde ısı ve entalpi",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-12",
+    "exam": "AYT",
+    "title": "Oluşum entalpisi ve Hess yasası",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-13",
+    "exam": "AYT",
+    "title": "Bağ enerjileri",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-14",
+    "exam": "AYT",
+    "title": "Tepkime hızı ve hız bağıntısı",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-15",
+    "exam": "AYT",
+    "title": "Hızı etkileyen faktörler",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-16",
+    "exam": "AYT",
+    "title": "Kimyasal denge ve sabit",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-17",
+    "exam": "AYT",
+    "title": "Dengeyi etkileyen faktörler",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-18",
+    "exam": "AYT",
+    "title": "Suyun iyonlaşması, pH ve pOH",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-19",
+    "exam": "AYT",
+    "title": "Asit-baz dengesi ve kuvvet",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-20",
+    "exam": "AYT",
+    "title": "Tampon, hidroliz ve titrasyon",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-21",
+    "exam": "AYT",
+    "title": "Çözünürlük dengesi ve çökelme",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-22",
+    "exam": "AYT",
+    "title": "Redoks",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-23",
+    "exam": "AYT",
+    "title": "Elektrokimyasal hücre ve potansiyel",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-24",
+    "exam": "AYT",
+    "title": "Elektroliz ve korozyon",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-25",
+    "exam": "AYT",
+    "title": "Organik/anorganik, basit/molekül formülü",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-26",
+    "exam": "AYT",
+    "title": "Karbon allotropları",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-27",
+    "exam": "AYT",
+    "title": "Lewis, hibritleşme ve molekül geometrisi",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-28",
+    "exam": "AYT",
+    "title": "Hidrokarbonlar",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-29",
+    "exam": "AYT",
+    "title": "Adlandırma ve izomerlik",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-30",
+    "exam": "AYT",
+    "title": "Alkol ve eter",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-31",
+    "exam": "AYT",
+    "title": "Aldehit ve keton",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-32",
+    "exam": "AYT",
+    "title": "Karboksilik asit ve ester",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-33",
+    "exam": "AYT",
+    "title": "Enerji kaynakları ve sürdürülebilirlik",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-KIM-34",
+    "exam": "AYT",
+    "title": "Nanoteknoloji ve bilimsel gelişmeler",
+    "subjectId": "ayt-kimya"
+  },
+  {
+    "id": "AYT-BIO-01",
+    "exam": "AYT",
+    "title": "Sinir sistemi ve homeostazi",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-02",
+    "exam": "AYT",
+    "title": "Endokrin sistem",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-03",
+    "exam": "AYT",
+    "title": "Duyu organları",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-04",
+    "exam": "AYT",
+    "title": "Destek ve hareket",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-05",
+    "exam": "AYT",
+    "title": "Sindirim ve emilim",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-06",
+    "exam": "AYT",
+    "title": "Kalp, kan ve dolaşım",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-07",
+    "exam": "AYT",
+    "title": "Lenf sistemi",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-08",
+    "exam": "AYT",
+    "title": "Bağışıklık ve savunma",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-09",
+    "exam": "AYT",
+    "title": "Solunum sistemi",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-10",
+    "exam": "AYT",
+    "title": "Üriner sistem ve iç denge",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-11",
+    "exam": "AYT",
+    "title": "Üreme sistemi",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-12",
+    "exam": "AYT",
+    "title": "Embriyonik gelişim",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-13",
+    "exam": "AYT",
+    "title": "Komünite ekolojisi",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-14",
+    "exam": "AYT",
+    "title": "Popülasyon ekolojisi",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-15",
+    "exam": "AYT",
+    "title": "Nükleik asitlerin keşfi, yapısı ve önemi",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-16",
+    "exam": "AYT",
+    "title": "DNA eşlenmesi",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-17",
+    "exam": "AYT",
+    "title": "Genetik şifre ve protein sentezi",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-18",
+    "exam": "AYT",
+    "title": "Genetik mühendisliği ve biyoteknoloji",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-19",
+    "exam": "AYT",
+    "title": "Canlılık ve enerji",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-20",
+    "exam": "AYT",
+    "title": "Fotosentez",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-21",
+    "exam": "AYT",
+    "title": "Kemosentez",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-22",
+    "exam": "AYT",
+    "title": "Hücresel solunum",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-23",
+    "exam": "AYT",
+    "title": "Fermantasyon",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-24",
+    "exam": "AYT",
+    "title": "Fotosentez-solunum ilişkisi",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-25",
+    "exam": "AYT",
+    "title": "Bitkisel doku, organ ve yapı",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-26",
+    "exam": "AYT",
+    "title": "Bitkilerde taşıma",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-27",
+    "exam": "AYT",
+    "title": "Bitkisel hormon, büyüme ve hareket",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-28",
+    "exam": "AYT",
+    "title": "Bitkilerde eşeyli üreme",
+    "subjectId": "ayt-biyoloji"
+  },
+  {
+    "id": "AYT-BIO-29",
+    "exam": "AYT",
+    "title": "Çevre, varyasyon, adaptasyon ve seçilim",
+    "subjectId": "ayt-biyoloji"
+  }
+]

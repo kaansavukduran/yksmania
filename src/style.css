@@ -552,13 +552,13 @@ small,
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #a3a1b5;
+  background: #dddbe8;
   border-radius: 0 0.85rem 0.85rem 0;
   overflow: hidden;
 }
 .aion-sprite {
   flex-shrink: 0;
-  image-rendering: pixelated;
+  image-rendering: auto;
   background-repeat: no-repeat;
 }
 .hero-art .aion-sprite {
@@ -2077,7 +2077,7 @@ progress::-moz-progress-bar {
     min-height: 0;
   }
   .hero-art {
-    height: 10rem;
+    height: 12.5rem;
     border-radius: 0.85rem 0.85rem 0 0;
   }
   .hero-art .aion-sprite {
@@ -2370,4 +2370,489 @@ progress::-moz-progress-bar {
 }
 .reader-overlay::backdrop {
   background: #0008;
+}
+
+.subject-content {
+  padding: 0 1.3rem 1.3rem;
+  min-width: 0;
+}
+.ready-topic-list h3,
+.source-browser h3 {
+  font-size: 0.94em;
+  margin: 1rem 0 0.6rem;
+}
+.ready-topic {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+  padding: 0.85rem 0;
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+}
+.ready-topic span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.ready-topic small {
+  display: block;
+  color: var(--muted);
+  margin-top: 0.25rem;
+}
+.curriculum-details {
+  border-top: 1px solid var(--border);
+  padding: 1rem 0;
+}
+.curriculum-details summary {
+  cursor: pointer;
+  font-weight: 550;
+  overflow-wrap: anywhere;
+}
+.curriculum-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+.curriculum-list li {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--border);
+  overflow-wrap: anywhere;
+}
+.curriculum-list li > span:first-child {
+  flex: 1 1 11rem;
+}
+.source-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 1rem 0;
+}
+.source-filters label {
+  flex: 1 1 10rem;
+  min-width: 0;
+}
+.source-rows {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.source-rows li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.8rem 0;
+  border-top: 1px solid var(--border);
+}
+.source-rows li > div {
+  flex: 1 1 10rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.source-rows strong {
+  font-size: 0.83em;
+  font-weight: 500;
+}
+.source-rows li > div > span {
+  display: block;
+  margin-top: 0.3rem;
+}
+.source-rows .secondary,
+.source-rows .text-button {
+  font-size: 0.78em;
+}
+.import-options {
+  display: grid;
+  gap: 0.8rem;
+  width: min(100%, 35rem);
+}
+.import-options .field {
+  min-width: 0;
+}
+.import-options select {
+  max-width: 100%;
+}
+.import-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+.import-report,
+.bulk-progress {
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
+  overflow-wrap: anywhere;
+}
+.bulk-progress progress {
+  width: 100%;
+}
+.source-status {
+  margin-bottom: 1.2rem;
+}
+
+.pdf-page-jump {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+.pdf-page-jump label {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pdf-page-jump input {
+  width: 5.5em;
+  min-width: 0;
+  padding: 0.45rem;
+}
+.pdf-controls {
+  flex-wrap: wrap;
+}
+
+/* Learning diagrams: authored vectors, real controls, one natural page scroll. */
+.visual-lab {
+  margin: 1.5rem 0;
+  padding: 1.15rem;
+  border-block: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface-2) 62%, var(--surface));
+  min-width: 0;
+}
+.visual-lab svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+.visual-lab .lab-heading h2 {
+  margin: 0 0 0.55rem;
+  font-size: 1.15em;
+}
+.visual-lab .lab-heading p {
+  margin: 0 0 1rem;
+  font-size: 0.88em;
+  color: var(--muted);
+}
+.visual-lab button {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.lab-toolbar,
+.lab-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+  margin: 0.8rem 0;
+}
+.lab-toolbar > .field {
+  flex: 1 1 13rem;
+  min-width: 0;
+}
+.lab-toolbar select {
+  min-width: 0;
+  max-width: 100%;
+}
+.lab-caption {
+  color: var(--muted);
+  font-size: 0.76em;
+  line-height: 1.6;
+  margin: 0.85rem 0 0;
+}
+.lab-kicker {
+  font-size: 0.75em;
+  color: var(--muted);
+}
+.cell-workbench {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(11rem, 1fr);
+  gap: 1rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+.cell-part {
+  cursor: pointer;
+  outline: none;
+  transition: filter 0.2s;
+}
+.cell-part.selected,
+.cell-part:focus-visible {
+  filter: drop-shadow(0 0 3px #ce795f);
+}
+.cell-part:focus-visible > * {
+  stroke: #8d3e2a;
+  stroke-width: 4px;
+}
+.organelle-info h3 {
+  margin: 0.4rem 0 0.6rem;
+  font-size: 1.1em;
+}
+.organelle-info p {
+  font-size: 0.86em;
+  line-height: 1.7;
+}
+.organelle-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+.organelle-options button {
+  min-height: 2.75rem;
+  padding: 0.5rem 0.7rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 0.45rem;
+  font-size: 0.8em;
+  max-width: 100%;
+}
+.organelle-options button.selected {
+  border-color: var(--accent);
+  box-shadow: inset 0 -2px var(--accent);
+}
+.lab-experiment {
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+.route-explanation,
+.geometry-explanation {
+  font-size: 0.9em;
+  line-height: 1.75;
+  min-width: 0;
+}
+.geometry-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+.lab-slider {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  min-width: 0;
+  font-size: 0.85em;
+  margin: 0.8rem 0;
+}
+.lab-slider input[type="range"] {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  accent-color: var(--accent);
+}
+.lab-check {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 2.75rem;
+  font-size: 0.85em;
+}
+.geometry-piece,
+.phosphate {
+  transition: transform 0.65s cubic-bezier(0.3, 0, 0.2, 1);
+}
+.vector-dot {
+  transition: cx 0.3s;
+}
+.force-arrow {
+  transition: x2 0.3s;
+}
+.phosphate-bond {
+  transition: opacity 0.4s;
+}
+.area-result {
+  display: block;
+  border-top: 1px solid var(--border);
+  padding: 1rem 0 0;
+  font-size: 1em;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+.periodic-scroll {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  padding: 0.5rem;
+}
+.periodic-table {
+  display: grid;
+  grid-template-columns: repeat(18, minmax(2.75rem, 1fr));
+  gap: 0.18rem;
+  min-width: 53rem;
+}
+.table-group {
+  font-size: 0.65em;
+  text-align: center;
+  color: var(--muted);
+}
+.element-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 4.5rem), 1fr));
+  gap: 0.4rem;
+}
+.element-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.35rem 0.15rem;
+  min-height: 3rem;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 0.25rem;
+  background: var(--surface);
+}
+.element-tile.metal {
+  border-bottom: 3px solid #97b8bc;
+}
+.element-tile.nonmetal {
+  border-bottom: 3px solid #acd0a8;
+}
+.element-tile.metalloid {
+  border-bottom: 3px solid #d4bd91;
+}
+.element-tile.noble {
+  border-bottom: 3px solid #bbafd2;
+}
+.element-tile.selected {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+  background: var(--surface-2);
+}
+.element-tile strong {
+  font-size: 1em;
+  font-weight: 600;
+}
+.element-tile small {
+  font-size: 0.58em;
+  color: var(--muted);
+}
+.element-tile > span {
+  font-size: 0.57em;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.fblock-placeholder,
+.fblock-label {
+  align-self: center;
+  text-align: center;
+  font-size: 0.58em;
+  color: var(--muted);
+}
+.atom-inspector {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1.3rem;
+  margin-top: 1.5rem;
+}
+.element-symbol {
+  font-size: 2.8em;
+  font-weight: 500;
+  color: var(--accent);
+}
+.element-detail h3 {
+  font-size: 1.1em;
+  margin: 0.3rem 0 1rem;
+}
+.element-detail dl {
+  margin: 0;
+}
+.element-detail dl > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.8em;
+}
+.element-detail dt,
+.element-detail dd {
+  min-width: 0;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.element-detail p,
+.atom-diagram p {
+  font-size: 0.8em;
+}
+.atom-diagram h3 {
+  font-size: 0.95em;
+}
+.shell-distribution {
+  text-align: center;
+  font-weight: 600;
+}
+.paragraph-explorer {
+  display: grid;
+  gap: 0.5rem;
+}
+.paragraph-explorer button {
+  padding: 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
+  background: var(--surface);
+  color: var(--text);
+  text-align: start;
+  line-height: 1.8;
+  font-size: 0.95em;
+}
+.paragraph-explorer button.selected {
+  border-color: var(--accent);
+  box-shadow: inset 3px 0 var(--accent);
+}
+@media (max-width: 1200px) {
+  .cell-workbench {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .visual-lab {
+    padding: 0.8rem;
+    margin-inline: -0.3rem;
+  }
+  .atom-inspector {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .visual-lab .segmented {
+    flex-wrap: wrap;
+  }
+  .visual-lab .segmented > button {
+    min-width: 0;
+    flex: 1 1 5rem;
+  }
+  .cell-workbench {
+    gap: 0;
+  }
+}
+.study-layout > * {
+  min-width: 0;
+}
+.lesson-article,
+.study-notes,
+.visual-lab {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 1200px) {
+  .study-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+.study-heading h1 {
+  overflow-wrap: anywhere;
+}
+.nav-item > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }

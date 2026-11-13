@@ -28,6 +28,7 @@ try {
   await page.waitForSelector(".hero");
   await page.context().setOffline(true);
   await page.locator(".hero .primary").click();
+  await page.waitForSelector(".visual-lab");
   await page.locator(".lesson-article > .primary").click();
   for (const index of [1, 2, 0, 1, 1]) {
     await page.locator(".answer").nth(index).click();

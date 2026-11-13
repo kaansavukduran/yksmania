@@ -1,6 +1,6 @@
 # Quality evidence
 
-Target 0.1.0 alpha. This file is updated at the verified Forge checkpoint.
+Target 0.2.0 alpha. This file is updated at the verified Forge checkpoint.
 
 ## Automated acceptance
 
@@ -36,7 +36,7 @@ Six original topics / thirty original questions. No official score, national ran
 year-specific complete syllabus or full-source import claim. Content volume and
 mastery are different. XP is discovery feedback, not academic assessment.
 
-## Verified checkpoint — 2026-11-13
+## Historical 0.1.0 checkpoint — 2026-11-13
 
 | Check | Observed result |
 | --- | --- |
@@ -76,3 +76,36 @@ is distinct from a durable production signing identity.
 A supplementary light-theme axe check found no serious/critical violations and one
 moderate `landmark-unique` issue. Give repeated complementary landmarks distinct
 accessible names in the next accessibility pass; the alpha is not fully audited.
+
+
+## 0.2.0 regression and content evidence
+
+- YKS-004: source-periodic buttons concatenated visible spans without spaces, while
+  accessible names had spaces. Axe reported serious label-content-name-mismatch.
+  Explicit text spacing now matches the visible/accessibility names; preserve the
+  new visual-flow axe regression.
+- YKS-005: at 390px, 200% UI, 150% text and English, intrinsic grid sizing and the
+  long word “parallelograms” produced page overflow. Grid children now shrink,
+  the single-column track is minmax(0,1fr), and long headings/control labels wrap.
+  No content was clipped and the selected scale was not reduced.
+- Cell route, actual diagram taps, plant/animal differences, saved selection,
+  original question completion, ion identity, all 118 element buttons, physical
+  polygon translation, conserved area, offline reload and reduced motion are
+  covered through normal UI entry points.
+- Old database v1 fixture: answer choice, draft note and original PDF retained after
+  database v2 upgrade. New exploration/reading-position fields default safely.
+- Local real-source check: complete private catalogue accepted; all 143 PDFs imported
+  with zero per-file failures. A 92.8 MB MEBİ biology book opened offline, displayed
+  page 56 text and reopened at page 56 after reload. Learning session count stayed 0.
+  This private test uses disposable local browser storage, not CI uploads.
+- All 143 prepared PDFs opened in a PDF parser; 4,989 total pages. This is file
+  integrity/page-count evidence, not item-by-item or answer-key verification.
+- Nine diagrams opened at 390×844 with zero renderer exceptions or page overflow
+  at default scale. Desktop screenshots and representative mobile views inspected.
+  High-scale and contrast coverage is separately recorded in the acceptance suite.
+- Cartoon Aion: all eight authored frames share measured foot baseline y458. Runtime
+  actor-box and reduced-motion regression are separate from this source measurement.
+
+Package, published-origin and complete final test counts are recorded in FORGE.md.
+Physical Android, clean Windows installation/portable extraction and two-package
+update preservation remain unverified. No full WCAG certification is claimed.

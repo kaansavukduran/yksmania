@@ -5,24 +5,39 @@ source-derived Aion sprite art and calm typography. Normal text stays in system
 fonts or user-selected Lexend, rather than a pixel font. The world view uses simple
 CSS scenery; it introduces no new canon or character biography.
 
-## Aion
+## Aion — cartoon direction for 0.2.0
 
-Source: user-owned AIONIA reference collection, `Aion_Motion_Sprite.png`, obtained
-through the authorized Drive connector. Original bytes preserved as
-`public/assets/aion-motion.png`. Public-source use is within this commissioned app;
-no third-party redistribution license is granted. The reference index says final
-character-variant approval and runtime readiness are separate questions. This is
-an existing atlas integration, not a claim that every archived variant is approved.
+The user's latest explicit direction is smooth cartoon, not pixel art. The new
+atlas follows the main Aion character reference and T-pose variant A inspected
+through the authorized Drive connector. Pink body, blue-tipped external gills,
+blue eyes, coat, leaf/infinity emblem, striped badge and DNA tail are retained.
+Facing is authored three-quarter left toward the home text; no CSS mirroring.
+This product choice does not approve every archived design variant for other games.
 
-- Atlas inspected visually: 1536×1024, 12 columns, 8 rows, 128×128 cells.
-- Idle: row 0, cells 0–11, 260 ms per cell (each cell is held for two ticks).
-- Completion: row 6, cells 1–11, 110 ms per cell, once, then idle cell 0.
-- Character origin is a fixed cell box. No actor-position animation is applied.
-- Atlas includes its own background. It is intentionally preserved, not claimed
-  transparent. The surrounding stage uses matching muted colours.
-- Reduced-motion and disabled animation use row 0/cell 0. Hidden tabs pause timers.
-- Only a successfully persisted session triggers the completion screen.
-- Sound is independent and initially off. Gamification never locks learning content.
+`public/assets/aion-cartoon.png`: 1536×1024 RGBA, 4 columns × 2 rows, 384×512 cells.
+Created for this commissioned app with image generation and inspected as a sheet
+and in the app. The original atlas is preserved under `art/archive/aion-motion.png`
+and is excluded from runtime bundles.
+
+- Idle sequence: cell 0 held 18 ticks, then 1, 2, 3; 120 ms per tick, loop.
+- Success sequence: 4,4,5,5,6,6,6,5,7,7; 120 ms per tick, once, then cell 0.
+- The actor box never translates. Alpha-based foot inspection in local x60–229,
+  y390–489 with alpha >220 found baseline y458 in all eight cells; foot midpoint
+  differs by at most 0.5 source pixel. This is separate from world-position checks.
+- Texture rendering is smooth. No pixelated CSS filter, actor flipping or background
+  painting is used to simulate poses. The sheet contains separately authored poses.
+- Reduced motion/disabled motion hold cell 0. Hidden tabs pause the timer; completion
+  is not replayed indefinitely. A success reaction follows a persisted session only.
+- Sound and gamification remain independently configurable.
+
+## Learning diagrams
+
+Diagrams are authored SVG, not screenshots copied from source books. Cell structures
+and secretory-protein steps are selected explicitly; typical-cell and scale limits
+are stated. Periodic-table data has a separate factual source record. Geometry uses
+actual polygons and translations preserving area. Motion settings disable transitions
+without disabling controls. Interaction choices and PDF page positions are retained
+outside scored responses and do not earn XP.
 
 ## Fonts
 

@@ -1,0 +1,1084 @@
+[
+  {
+    "z": 1,
+    "symbol": "H",
+    "tr": "Hidrojen",
+    "en": "Hydrogen",
+    "group": 1,
+    "period": 1,
+    "family": "Nonmetal",
+    "shells": [1]
+  },
+  {
+    "z": 2,
+    "symbol": "He",
+    "tr": "Helyum",
+    "en": "Helium",
+    "group": 18,
+    "period": 1,
+    "family": "Noble gas",
+    "shells": [2]
+  },
+  {
+    "z": 3,
+    "symbol": "Li",
+    "tr": "Lityum",
+    "en": "Lithium",
+    "group": 1,
+    "period": 2,
+    "family": "Alkali metal",
+    "shells": [2, 1]
+  },
+  {
+    "z": 4,
+    "symbol": "Be",
+    "tr": "Berilyum",
+    "en": "Beryllium",
+    "group": 2,
+    "period": 2,
+    "family": "Alkaline earth metal",
+    "shells": [2, 2]
+  },
+  {
+    "z": 5,
+    "symbol": "B",
+    "tr": "Bor",
+    "en": "Boron",
+    "group": 13,
+    "period": 2,
+    "family": "Metalloid",
+    "shells": [2, 3]
+  },
+  {
+    "z": 6,
+    "symbol": "C",
+    "tr": "Karbon",
+    "en": "Carbon",
+    "group": 14,
+    "period": 2,
+    "family": "Nonmetal",
+    "shells": [2, 4]
+  },
+  {
+    "z": 7,
+    "symbol": "N",
+    "tr": "Azot",
+    "en": "Nitrogen",
+    "group": 15,
+    "period": 2,
+    "family": "Nonmetal",
+    "shells": [2, 5]
+  },
+  {
+    "z": 8,
+    "symbol": "O",
+    "tr": "Oksijen",
+    "en": "Oxygen",
+    "group": 16,
+    "period": 2,
+    "family": "Nonmetal",
+    "shells": [2, 6]
+  },
+  {
+    "z": 9,
+    "symbol": "F",
+    "tr": "Flor",
+    "en": "Fluorine",
+    "group": 17,
+    "period": 2,
+    "family": "Halogen",
+    "shells": [2, 7]
+  },
+  {
+    "z": 10,
+    "symbol": "Ne",
+    "tr": "Neon",
+    "en": "Neon",
+    "group": 18,
+    "period": 2,
+    "family": "Noble gas",
+    "shells": [2, 8]
+  },
+  {
+    "z": 11,
+    "symbol": "Na",
+    "tr": "Sodyum",
+    "en": "Sodium",
+    "group": 1,
+    "period": 3,
+    "family": "Alkali metal",
+    "shells": [2, 8, 1]
+  },
+  {
+    "z": 12,
+    "symbol": "Mg",
+    "tr": "Magnezyum",
+    "en": "Magnesium",
+    "group": 2,
+    "period": 3,
+    "family": "Alkaline earth metal",
+    "shells": [2, 8, 2]
+  },
+  {
+    "z": 13,
+    "symbol": "Al",
+    "tr": "Alüminyum",
+    "en": "Aluminum",
+    "group": 13,
+    "period": 3,
+    "family": "Post-transition metal",
+    "shells": [2, 8, 3]
+  },
+  {
+    "z": 14,
+    "symbol": "Si",
+    "tr": "Silisyum",
+    "en": "Silicon",
+    "group": 14,
+    "period": 3,
+    "family": "Metalloid",
+    "shells": [2, 8, 4]
+  },
+  {
+    "z": 15,
+    "symbol": "P",
+    "tr": "Fosfor",
+    "en": "Phosphorus",
+    "group": 15,
+    "period": 3,
+    "family": "Nonmetal",
+    "shells": [2, 8, 5]
+  },
+  {
+    "z": 16,
+    "symbol": "S",
+    "tr": "Kükürt",
+    "en": "Sulfur",
+    "group": 16,
+    "period": 3,
+    "family": "Nonmetal",
+    "shells": [2, 8, 6]
+  },
+  {
+    "z": 17,
+    "symbol": "Cl",
+    "tr": "Klor",
+    "en": "Chlorine",
+    "group": 17,
+    "period": 3,
+    "family": "Halogen",
+    "shells": [2, 8, 7]
+  },
+  {
+    "z": 18,
+    "symbol": "Ar",
+    "tr": "Argon",
+    "en": "Argon",
+    "group": 18,
+    "period": 3,
+    "family": "Noble gas",
+    "shells": [2, 8, 8]
+  },
+  {
+    "z": 19,
+    "symbol": "K",
+    "tr": "Potasyum",
+    "en": "Potassium",
+    "group": 1,
+    "period": 4,
+    "family": "Alkali metal",
+    "shells": [2, 8, 8, 1]
+  },
+  {
+    "z": 20,
+    "symbol": "Ca",
+    "tr": "Kalsiyum",
+    "en": "Calcium",
+    "group": 2,
+    "period": 4,
+    "family": "Alkaline earth metal",
+    "shells": [2, 8, 8, 2]
+  },
+  {
+    "z": 21,
+    "symbol": "Sc",
+    "tr": "Skandiyum",
+    "en": "Scandium",
+    "group": 3,
+    "period": 4,
+    "family": "Transition metal"
+  },
+  {
+    "z": 22,
+    "symbol": "Ti",
+    "tr": "Titanyum",
+    "en": "Titanium",
+    "group": 4,
+    "period": 4,
+    "family": "Transition metal"
+  },
+  {
+    "z": 23,
+    "symbol": "V",
+    "tr": "Vanadyum",
+    "en": "Vanadium",
+    "group": 5,
+    "period": 4,
+    "family": "Transition metal"
+  },
+  {
+    "z": 24,
+    "symbol": "Cr",
+    "tr": "Krom",
+    "en": "Chromium",
+    "group": 6,
+    "period": 4,
+    "family": "Transition metal"
+  },
+  {
+    "z": 25,
+    "symbol": "Mn",
+    "tr": "Mangan",
+    "en": "Manganese",
+    "group": 7,
+    "period": 4,
+    "family": "Transition metal"
+  },
+  {
+    "z": 26,
+    "symbol": "Fe",
+    "tr": "Demir",
+    "en": "Iron",
+    "group": 8,
+    "period": 4,
+    "family": "Transition metal"
+  },
+  {
+    "z": 27,
+    "symbol": "Co",
+    "tr": "Kobalt",
+    "en": "Cobalt",
+    "group": 9,
+    "period": 4,
+    "family": "Transition metal"
+  },
+  {
+    "z": 28,
+    "symbol": "Ni",
+    "tr": "Nikel",
+    "en": "Nickel",
+    "group": 10,
+    "period": 4,
+    "family": "Transition metal"
+  },
+  {
+    "z": 29,
+    "symbol": "Cu",
+    "tr": "Bakır",
+    "en": "Copper",
+    "group": 11,
+    "period": 4,
+    "family": "Transition metal"
+  },
+  {
+    "z": 30,
+    "symbol": "Zn",
+    "tr": "Çinko",
+    "en": "Zinc",
+    "group": 12,
+    "period": 4,
+    "family": "Transition metal"
+  },
+  {
+    "z": 31,
+    "symbol": "Ga",
+    "tr": "Galyum",
+    "en": "Gallium",
+    "group": 13,
+    "period": 4,
+    "family": "Post-transition metal"
+  },
+  {
+    "z": 32,
+    "symbol": "Ge",
+    "tr": "Germanyum",
+    "en": "Germanium",
+    "group": 14,
+    "period": 4,
+    "family": "Metalloid"
+  },
+  {
+    "z": 33,
+    "symbol": "As",
+    "tr": "Arsenik",
+    "en": "Arsenic",
+    "group": 15,
+    "period": 4,
+    "family": "Metalloid"
+  },
+  {
+    "z": 34,
+    "symbol": "Se",
+    "tr": "Selenyum",
+    "en": "Selenium",
+    "group": 16,
+    "period": 4,
+    "family": "Nonmetal"
+  },
+  {
+    "z": 35,
+    "symbol": "Br",
+    "tr": "Brom",
+    "en": "Bromine",
+    "group": 17,
+    "period": 4,
+    "family": "Halogen"
+  },
+  {
+    "z": 36,
+    "symbol": "Kr",
+    "tr": "Kripton",
+    "en": "Krypton",
+    "group": 18,
+    "period": 4,
+    "family": "Noble gas"
+  },
+  {
+    "z": 37,
+    "symbol": "Rb",
+    "tr": "Rubidyum",
+    "en": "Rubidium",
+    "group": 1,
+    "period": 5,
+    "family": "Alkali metal"
+  },
+  {
+    "z": 38,
+    "symbol": "Sr",
+    "tr": "Stronsiyum",
+    "en": "Strontium",
+    "group": 2,
+    "period": 5,
+    "family": "Alkaline earth metal"
+  },
+  {
+    "z": 39,
+    "symbol": "Y",
+    "tr": "İtriyum",
+    "en": "Yttrium",
+    "group": 3,
+    "period": 5,
+    "family": "Transition metal"
+  },
+  {
+    "z": 40,
+    "symbol": "Zr",
+    "tr": "Zirkonyum",
+    "en": "Zirconium",
+    "group": 4,
+    "period": 5,
+    "family": "Transition metal"
+  },
+  {
+    "z": 41,
+    "symbol": "Nb",
+    "tr": "Niyobyum",
+    "en": "Niobium",
+    "group": 5,
+    "period": 5,
+    "family": "Transition metal"
+  },
+  {
+    "z": 42,
+    "symbol": "Mo",
+    "tr": "Molibden",
+    "en": "Molybdenum",
+    "group": 6,
+    "period": 5,
+    "family": "Transition metal"
+  },
+  {
+    "z": 43,
+    "symbol": "Tc",
+    "tr": "Teknesyum",
+    "en": "Technetium",
+    "group": 7,
+    "period": 5,
+    "family": "Transition metal"
+  },
+  {
+    "z": 44,
+    "symbol": "Ru",
+    "tr": "Rutenyum",
+    "en": "Ruthenium",
+    "group": 8,
+    "period": 5,
+    "family": "Transition metal"
+  },
+  {
+    "z": 45,
+    "symbol": "Rh",
+    "tr": "Rodyum",
+    "en": "Rhodium",
+    "group": 9,
+    "period": 5,
+    "family": "Transition metal"
+  },
+  {
+    "z": 46,
+    "symbol": "Pd",
+    "tr": "Paladyum",
+    "en": "Palladium",
+    "group": 10,
+    "period": 5,
+    "family": "Transition metal"
+  },
+  {
+    "z": 47,
+    "symbol": "Ag",
+    "tr": "Gümüş",
+    "en": "Silver",
+    "group": 11,
+    "period": 5,
+    "family": "Transition metal"
+  },
+  {
+    "z": 48,
+    "symbol": "Cd",
+    "tr": "Kadmiyum",
+    "en": "Cadmium",
+    "group": 12,
+    "period": 5,
+    "family": "Transition metal"
+  },
+  {
+    "z": 49,
+    "symbol": "In",
+    "tr": "İndiyum",
+    "en": "Indium",
+    "group": 13,
+    "period": 5,
+    "family": "Post-transition metal"
+  },
+  {
+    "z": 50,
+    "symbol": "Sn",
+    "tr": "Kalay",
+    "en": "Tin",
+    "group": 14,
+    "period": 5,
+    "family": "Post-transition metal"
+  },
+  {
+    "z": 51,
+    "symbol": "Sb",
+    "tr": "Antimon",
+    "en": "Antimony",
+    "group": 15,
+    "period": 5,
+    "family": "Metalloid"
+  },
+  {
+    "z": 52,
+    "symbol": "Te",
+    "tr": "Tellür",
+    "en": "Tellurium",
+    "group": 16,
+    "period": 5,
+    "family": "Metalloid"
+  },
+  {
+    "z": 53,
+    "symbol": "I",
+    "tr": "İyot",
+    "en": "Iodine",
+    "group": 17,
+    "period": 5,
+    "family": "Halogen"
+  },
+  {
+    "z": 54,
+    "symbol": "Xe",
+    "tr": "Ksenon",
+    "en": "Xenon",
+    "group": 18,
+    "period": 5,
+    "family": "Noble gas"
+  },
+  {
+    "z": 55,
+    "symbol": "Cs",
+    "tr": "Sezyum",
+    "en": "Cesium",
+    "group": 1,
+    "period": 6,
+    "family": "Alkali metal"
+  },
+  {
+    "z": 56,
+    "symbol": "Ba",
+    "tr": "Baryum",
+    "en": "Barium",
+    "group": 2,
+    "period": 6,
+    "family": "Alkaline earth metal"
+  },
+  {
+    "z": 57,
+    "symbol": "La",
+    "tr": "Lantan",
+    "en": "Lanthanum",
+    "group": null,
+    "period": 6,
+    "family": "Lanthanide"
+  },
+  {
+    "z": 58,
+    "symbol": "Ce",
+    "tr": "Seryum",
+    "en": "Cerium",
+    "group": null,
+    "period": 6,
+    "family": "Lanthanide"
+  },
+  {
+    "z": 59,
+    "symbol": "Pr",
+    "tr": "Praseodimyum",
+    "en": "Praseodymium",
+    "group": null,
+    "period": 6,
+    "family": "Lanthanide"
+  },
+  {
+    "z": 60,
+    "symbol": "Nd",
+    "tr": "Neodimyum",
+    "en": "Neodymium",
+    "group": null,
+    "period": 6,
+    "family": "Lanthanide"
+  },
+  {
+    "z": 61,
+    "symbol": "Pm",
+    "tr": "Prometyum",
+    "en": "Promethium",
+    "group": null,
+    "period": 6,
+    "family": "Lanthanide"
+  },
+  {
+    "z": 62,
+    "symbol": "Sm",
+    "tr": "Samaryum",
+    "en": "Samarium",
+    "group": null,
+    "period": 6,
+    "family": "Lanthanide"
+  },
+  {
+    "z": 63,
+    "symbol": "Eu",
+    "tr": "Evropiyum",
+    "en": "Europium",
+    "group": null,
+    "period": 6,
+    "family": "Lanthanide"
+  },
+  {
+    "z": 64,
+    "symbol": "Gd",
+    "tr": "Gadolinyum",
+    "en": "Gadolinium",
+    "group": null,
+    "period": 6,
+    "family": "Lanthanide"
+  },
+  {
+    "z": 65,
+    "symbol": "Tb",
+    "tr": "Terbiyum",
+    "en": "Terbium",
+    "group": null,
+    "period": 6,
+    "family": "Lanthanide"
+  },
+  {
+    "z": 66,
+    "symbol": "Dy",
+    "tr": "Disprozyum",
+    "en": "Dysprosium",
+    "group": null,
+    "period": 6,
+    "family": "Lanthanide"
+  },
+  {
+    "z": 67,
+    "symbol": "Ho",
+    "tr": "Holmiyum",
+    "en": "Holmium",
+    "group": null,
+    "period": 6,
+    "family": "Lanthanide"
+  },
+  {
+    "z": 68,
+    "symbol": "Er",
+    "tr": "Erbiyum",
+    "en": "Erbium",
+    "group": null,
+    "period": 6,
+    "family": "Lanthanide"
+  },
+  {
+    "z": 69,
+    "symbol": "Tm",
+    "tr": "Tulyum",
+    "en": "Thulium",
+    "group": null,
+    "period": 6,
+    "family": "Lanthanide"
+  },
+  {
+    "z": 70,
+    "symbol": "Yb",
+    "tr": "İterbiyum",
+    "en": "Ytterbium",
+    "group": null,
+    "period": 6,
+    "family": "Lanthanide"
+  },
+  {
+    "z": 71,
+    "symbol": "Lu",
+    "tr": "Lutesyum",
+    "en": "Lutetium",
+    "group": null,
+    "period": 6,
+    "family": "Lanthanide"
+  },
+  {
+    "z": 72,
+    "symbol": "Hf",
+    "tr": "Hafniyum",
+    "en": "Hafnium",
+    "group": 4,
+    "period": 6,
+    "family": "Transition metal"
+  },
+  {
+    "z": 73,
+    "symbol": "Ta",
+    "tr": "Tantal",
+    "en": "Tantalum",
+    "group": 5,
+    "period": 6,
+    "family": "Transition metal"
+  },
+  {
+    "z": 74,
+    "symbol": "W",
+    "tr": "Tungsten",
+    "en": "Tungsten",
+    "group": 6,
+    "period": 6,
+    "family": "Transition metal"
+  },
+  {
+    "z": 75,
+    "symbol": "Re",
+    "tr": "Renyum",
+    "en": "Rhenium",
+    "group": 7,
+    "period": 6,
+    "family": "Transition metal"
+  },
+  {
+    "z": 76,
+    "symbol": "Os",
+    "tr": "Osmiyum",
+    "en": "Osmium",
+    "group": 8,
+    "period": 6,
+    "family": "Transition metal"
+  },
+  {
+    "z": 77,
+    "symbol": "Ir",
+    "tr": "İridyum",
+    "en": "Iridium",
+    "group": 9,
+    "period": 6,
+    "family": "Transition metal"
+  },
+  {
+    "z": 78,
+    "symbol": "Pt",
+    "tr": "Platin",
+    "en": "Platinum",
+    "group": 10,
+    "period": 6,
+    "family": "Transition metal"
+  },
+  {
+    "z": 79,
+    "symbol": "Au",
+    "tr": "Altın",
+    "en": "Gold",
+    "group": 11,
+    "period": 6,
+    "family": "Transition metal"
+  },
+  {
+    "z": 80,
+    "symbol": "Hg",
+    "tr": "Cıva",
+    "en": "Mercury",
+    "group": 12,
+    "period": 6,
+    "family": "Transition metal"
+  },
+  {
+    "z": 81,
+    "symbol": "Tl",
+    "tr": "Talyum",
+    "en": "Thallium",
+    "group": 13,
+    "period": 6,
+    "family": "Post-transition metal"
+  },
+  {
+    "z": 82,
+    "symbol": "Pb",
+    "tr": "Kurşun",
+    "en": "Lead",
+    "group": 14,
+    "period": 6,
+    "family": "Post-transition metal"
+  },
+  {
+    "z": 83,
+    "symbol": "Bi",
+    "tr": "Bizmut",
+    "en": "Bismuth",
+    "group": 15,
+    "period": 6,
+    "family": "Post-transition metal"
+  },
+  {
+    "z": 84,
+    "symbol": "Po",
+    "tr": "Polonyum",
+    "en": "Polonium",
+    "group": 16,
+    "period": 6,
+    "family": "Metalloid"
+  },
+  {
+    "z": 85,
+    "symbol": "At",
+    "tr": "Astatin",
+    "en": "Astatine",
+    "group": 17,
+    "period": 6,
+    "family": "Halogen"
+  },
+  {
+    "z": 86,
+    "symbol": "Rn",
+    "tr": "Radon",
+    "en": "Radon",
+    "group": 18,
+    "period": 6,
+    "family": "Noble gas"
+  },
+  {
+    "z": 87,
+    "symbol": "Fr",
+    "tr": "Fransiyum",
+    "en": "Francium",
+    "group": 1,
+    "period": 7,
+    "family": "Alkali metal"
+  },
+  {
+    "z": 88,
+    "symbol": "Ra",
+    "tr": "Radyum",
+    "en": "Radium",
+    "group": 2,
+    "period": 7,
+    "family": "Alkaline earth metal"
+  },
+  {
+    "z": 89,
+    "symbol": "Ac",
+    "tr": "Aktinyum",
+    "en": "Actinium",
+    "group": null,
+    "period": 7,
+    "family": "Actinide"
+  },
+  {
+    "z": 90,
+    "symbol": "Th",
+    "tr": "Toryum",
+    "en": "Thorium",
+    "group": null,
+    "period": 7,
+    "family": "Actinide"
+  },
+  {
+    "z": 91,
+    "symbol": "Pa",
+    "tr": "Protaktinyum",
+    "en": "Protactinium",
+    "group": null,
+    "period": 7,
+    "family": "Actinide"
+  },
+  {
+    "z": 92,
+    "symbol": "U",
+    "tr": "Uranyum",
+    "en": "Uranium",
+    "group": null,
+    "period": 7,
+    "family": "Actinide"
+  },
+  {
+    "z": 93,
+    "symbol": "Np",
+    "tr": "Neptünyum",
+    "en": "Neptunium",
+    "group": null,
+    "period": 7,
+    "family": "Actinide"
+  },
+  {
+    "z": 94,
+    "symbol": "Pu",
+    "tr": "Plütonyum",
+    "en": "Plutonium",
+    "group": null,
+    "period": 7,
+    "family": "Actinide"
+  },
+  {
+    "z": 95,
+    "symbol": "Am",
+    "tr": "Amerikyum",
+    "en": "Americium",
+    "group": null,
+    "period": 7,
+    "family": "Actinide"
+  },
+  {
+    "z": 96,
+    "symbol": "Cm",
+    "tr": "Küriyum",
+    "en": "Curium",
+    "group": null,
+    "period": 7,
+    "family": "Actinide"
+  },
+  {
+    "z": 97,
+    "symbol": "Bk",
+    "tr": "Berkelyum",
+    "en": "Berkelium",
+    "group": null,
+    "period": 7,
+    "family": "Actinide"
+  },
+  {
+    "z": 98,
+    "symbol": "Cf",
+    "tr": "Kaliforniyum",
+    "en": "Californium",
+    "group": null,
+    "period": 7,
+    "family": "Actinide"
+  },
+  {
+    "z": 99,
+    "symbol": "Es",
+    "tr": "Aynştaynyum",
+    "en": "Einsteinium",
+    "group": null,
+    "period": 7,
+    "family": "Actinide"
+  },
+  {
+    "z": 100,
+    "symbol": "Fm",
+    "tr": "Fermiyum",
+    "en": "Fermium",
+    "group": null,
+    "period": 7,
+    "family": "Actinide"
+  },
+  {
+    "z": 101,
+    "symbol": "Md",
+    "tr": "Mendelevyum",
+    "en": "Mendelevium",
+    "group": null,
+    "period": 7,
+    "family": "Actinide"
+  },
+  {
+    "z": 102,
+    "symbol": "No",
+    "tr": "Nobelyum",
+    "en": "Nobelium",
+    "group": null,
+    "period": 7,
+    "family": "Actinide"
+  },
+  {
+    "z": 103,
+    "symbol": "Lr",
+    "tr": "Lavrensiyum",
+    "en": "Lawrencium",
+    "group": null,
+    "period": 7,
+    "family": "Actinide"
+  },
+  {
+    "z": 104,
+    "symbol": "Rf",
+    "tr": "Rutherfordiyum",
+    "en": "Rutherfordium",
+    "group": 4,
+    "period": 7,
+    "family": "Transition metal"
+  },
+  {
+    "z": 105,
+    "symbol": "Db",
+    "tr": "Dubniyum",
+    "en": "Dubnium",
+    "group": 5,
+    "period": 7,
+    "family": "Transition metal"
+  },
+  {
+    "z": 106,
+    "symbol": "Sg",
+    "tr": "Seaborgiyum",
+    "en": "Seaborgium",
+    "group": 6,
+    "period": 7,
+    "family": "Transition metal"
+  },
+  {
+    "z": 107,
+    "symbol": "Bh",
+    "tr": "Bohriyum",
+    "en": "Bohrium",
+    "group": 7,
+    "period": 7,
+    "family": "Transition metal"
+  },
+  {
+    "z": 108,
+    "symbol": "Hs",
+    "tr": "Hassiyum",
+    "en": "Hassium",
+    "group": 8,
+    "period": 7,
+    "family": "Transition metal"
+  },
+  {
+    "z": 109,
+    "symbol": "Mt",
+    "tr": "Meitneriyum",
+    "en": "Meitnerium",
+    "group": 9,
+    "period": 7,
+    "family": "Transition metal"
+  },
+  {
+    "z": 110,
+    "symbol": "Ds",
+    "tr": "Darmstadtiyum",
+    "en": "Darmstadtium",
+    "group": 10,
+    "period": 7,
+    "family": "Transition metal"
+  },
+  {
+    "z": 111,
+    "symbol": "Rg",
+    "tr": "Röntgenyum",
+    "en": "Roentgenium",
+    "group": 11,
+    "period": 7,
+    "family": "Transition metal"
+  },
+  {
+    "z": 112,
+    "symbol": "Cn",
+    "tr": "Kopernikyum",
+    "en": "Copernicium",
+    "group": 12,
+    "period": 7,
+    "family": "Transition metal"
+  },
+  {
+    "z": 113,
+    "symbol": "Nh",
+    "tr": "Nihonyum",
+    "en": "Nihonium",
+    "group": 13,
+    "period": 7,
+    "family": "Post-transition metal"
+  },
+  {
+    "z": 114,
+    "symbol": "Fl",
+    "tr": "Flerovyum",
+    "en": "Flerovium",
+    "group": 14,
+    "period": 7,
+    "family": "Post-transition metal"
+  },
+  {
+    "z": 115,
+    "symbol": "Mc",
+    "tr": "Moskovyum",
+    "en": "Moscovium",
+    "group": 15,
+    "period": 7,
+    "family": "Post-transition metal"
+  },
+  {
+    "z": 116,
+    "symbol": "Lv",
+    "tr": "Livermoryum",
+    "en": "Livermorium",
+    "group": 16,
+    "period": 7,
+    "family": "Post-transition metal"
+  },
+  {
+    "z": 117,
+    "symbol": "Ts",
+    "tr": "Tenesin",
+    "en": "Tennessine",
+    "group": 17,
+    "period": 7,
+    "family": "Halogen"
+  },
+  {
+    "z": 118,
+    "symbol": "Og",
+    "tr": "Oganesson",
+    "en": "Oganesson",
+    "group": 18,
+    "period": 7,
+    "family": "Noble gas"
+  }
+]

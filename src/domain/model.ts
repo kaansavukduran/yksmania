@@ -86,6 +86,22 @@ export const stateSchema = z.object({
   draft: draftSchema.nullable(),
   notes: z.record(z.string(), z.string().max(20000)),
   unlocked: z.array(id).max(10000),
+  explorations: z
+    .record(
+      z.string().max(100),
+      z.record(
+        z.string().max(60),
+        z.union([
+          z.string().max(128),
+          z.number().min(-1000000).max(1000000),
+          z.boolean(),
+        ]),
+      ),
+    )
+    .default({}),
+  readingPages: z
+    .record(z.string(), z.number().int().min(1).max(100000))
+    .default({}),
 });
 export type AppState = z.infer<typeof stateSchema>;
 export const initialState = (): AppState => ({
@@ -113,6 +129,8 @@ export const initialState = (): AppState => ({
   draft: null,
   notes: {},
   unlocked: [],
+  readingPages: {},
+  explorations: {},
 });
 export interface Question {
   id: string;

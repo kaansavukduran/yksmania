@@ -1,34 +1,56 @@
-import { useState } from "react";
-import { CheckCircle2, Search, ChevronDown } from "lucide-react";
+import { useMemo, useState } from "react";
+import { Search, ChevronDown, ArrowRight } from "lucide-react";
 import { useApp } from "../store";
 import { lessons, subjects } from "../domain/content";
-import { LessonRow, Empty, SubjectMark } from "../components/Shared";
+import curriculum from "../data/curriculum.json";
+import detailTopics from "../data/detail-topics.json";
+import { Empty, SubjectMark } from "../components/Shared";
+import { SourceList } from "../components/SourceList";
 import type { Lesson } from "../domain/model";
-export function Courses({ start }: { start: (l: Lesson) => void }) {
-  const { t, l, state } = useApp();
+export function Courses({
+  start,
+  mode = "theory",
+}: {
+  start: (l: Lesson) => void;
+  mode?: "theory" | "questions";
+}) {
+  const { t, l } = useApp();
   const [exam, setExam] = useState("TYT");
   const [search, setSearch] = useState("");
   const [open, setOpen] = useState<string | null>(null);
-  const filtered = subjects.filter(
-    (s) =>
-      s.exam === exam &&
-      (l(s.name).toLocaleLowerCase().includes(search.toLocaleLowerCase()) ||
-        s.topics.some((v) =>
-          v.toLocaleLowerCase().includes(search.toLocaleLowerCase()),
-        )),
+  const query = search.toLocaleLowerCase("tr-TR");
+  const filtered = useMemo(
+    () =>
+      subjects.filter(
+        (s) =>
+          s.exam === exam &&
+          (l(s.name).toLocaleLowerCase("tr-TR").includes(query) ||
+            s.topics.some((v) =>
+              v.toLocaleLowerCase("tr-TR").includes(query),
+            ) ||
+            detailTopics.some(
+              (v) =>
+                v.subjectId === s.id &&
+                v.title.toLocaleLowerCase("tr-TR").includes(query),
+            )),
+      ),
+    [exam, query, l],
   );
   return (
     <>
       <header className="page-heading">
         <div>
-          <p className="eyebrow">TYT + AYT SAYISAL</p>
-          <h1>{t("courses")}</h1>
+          <h1>{t(mode === "theory" ? "courses" : "questions")}</h1>
         </div>
-        <span className="quiet-chip">{t("catalogueStatus")}</span>
+        <span className="quiet-chip">
+          {curriculum.length} {t("topics")}
+        </span>
       </header>
-      <p className="lead muted">{t("mapNote")}</p>
+      <p className="lead muted">
+        {t(mode === "theory" ? "theoryIntro" : "questionsIntro")}
+      </p>
       <div className="toolbar">
-        <div className="segmented" aria-label={t("courses")}>
+        <div className="segmented" aria-label={t("examChoice")}>
           {["TYT", "AYT"].map((x) => (
             <button
               key={x}
@@ -56,11 +78,22 @@ export function Courses({ start }: { start: (l: Lesson) => void }) {
       <div className="subject-grid">
         {filtered.map((subject) => {
           const ready = lessons.filter((v) => v.subjectId === subject.id);
+          const expanded = open === subject.id || !!query;
+          const details = detailTopics.filter(
+            (v) =>
+              v.subjectId === subject.id &&
+              (!query || v.title.toLocaleLowerCase("tr-TR").includes(query)),
+          );
+          const topics = curriculum.filter(
+            (v) =>
+              v.subjectId === subject.id &&
+              (!query || v.title.toLocaleLowerCase("tr-TR").includes(query)),
+          );
           return (
             <section className="panel subject-panel" key={subject.id}>
               <button
                 className="subject-header"
-                aria-expanded={open === subject.id}
+                aria-expanded={expanded}
                 onClick={() => setOpen(open === subject.id ? null : subject.id)}
               >
                 <SubjectMark id={subject.id} />
@@ -68,48 +101,97 @@ export function Courses({ start }: { start: (l: Lesson) => void }) {
                   <h2>{l(subject.name)}</h2>
                   <span className="small muted">
                     {subject.topics.length} {t("topics")} · {ready.length}{" "}
-                    {t("lessonCount")}
+                    {t(
+                      mode === "theory"
+                        ? "readyNarratives"
+                        : "readyQuestionSets",
+                    )}
                   </span>
                 </span>
-                <ChevronDown
-                  size={18}
-                  className={open === subject.id ? "rotated" : ""}
-                />
+                <ChevronDown size={18} className={expanded ? "rotated" : ""} />
               </button>
-              {ready.map((lesson) => (
-                <div key={lesson.id} className="course-lesson">
-                  <LessonRow lesson={lesson} onStart={() => start(lesson)} />
-                  {state.sessions.some((s) => s.lessonId === lesson.id) && (
-                    <span className="studied small">
-                      <CheckCircle2 size={13} />
-                      {t("completed")}
-                    </span>
-                  )}
-                </div>
-              ))}
-              {open === subject.id && (
-                <div className="topic-list">
-                  <h3>{t("topicMap")}</h3>
-                  {subject.topics.map((topic) => (
-                    <div key={topic}>
-                      <span>{topic}</span>
-                      <span className="small muted">
-                        {ready.some((r) => r.title.tr === topic)
-                          ? t("available")
-                          : t("planned")}
-                      </span>
+              {expanded && (
+                <div className="subject-content">
+                  {!!ready.length && (
+                    <div className="ready-topic-list">
+                      <h3>
+                        {t(
+                          mode === "theory"
+                            ? "readyNarratives"
+                            : "readyQuestionSets",
+                        )}
+                      </h3>
+                      {ready.map((lesson) => (
+                        <button
+                          className="ready-topic"
+                          key={lesson.id}
+                          onClick={() => start(lesson)}
+                        >
+                          <span>
+                            {l(lesson.title)}
+                            <small>
+                              {mode === "theory"
+                                ? `${lesson.minutes} ${t("minutes")}`
+                                : `${lesson.questions.length} ${t("originalQuestions")}`}
+                            </small>
+                          </span>
+                          <ArrowRight size={18} />
+                        </button>
+                      ))}
                     </div>
-                  ))}
+                  )}
+                  {(!query || topics.length > 0) && (
+                    <details className="curriculum-details" open={!!query}>
+                      <summary>
+                        {t("topicMap")} ({subject.topics.length})
+                      </summary>
+                      <ul className="curriculum-list">
+                        {topics.map((topic) => (
+                          <li key={topic.id}>
+                            <span>{topic.title}</span>
+                            <span className="small muted">
+                              {t("catalogueHeading")}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </details>
+                  )}
+                  {(!query || details.length > 0) && (
+                    <details className="curriculum-details" open={!!query}>
+                      <summary>
+                        {t("detailTopics")} (
+                        {
+                          detailTopics.filter((v) => v.subjectId === subject.id)
+                            .length
+                        }
+                        )
+                      </summary>
+                      <ul className="curriculum-list">
+                        {details.map((topic) => (
+                          <li key={topic.id}>
+                            <span>{topic.title}</span>
+                            <span className="small muted">
+                              {t("sourceHeading")}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </details>
+                  )}
+                  <SourceList
+                    key={`${subject.id}:${mode}`}
+                    subjectId={subject.id}
+                    mode={mode}
+                  />
                 </div>
-              )}
-              {!ready.length && (
-                <p className="subject-pending muted small">{t("planned")}</p>
               )}
             </section>
           );
         })}
       </div>
       {!filtered.length && <Empty text={t("noResults")} />}
+      <p className="scope-note">{t("curriculumScope")}</p>
     </>
   );
 }

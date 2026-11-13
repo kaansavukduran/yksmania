@@ -1,18 +1,18 @@
-İlk çalışan YKSMania alpha sürümü. Web: https://yksmania.vercel.app
+YKSMania 0.2.0 alpha. Web: https://yksmania.vercel.app
 
-- 6 özgün etkileşimli ders, 30 soru; ipuçları, açıklamalar ve yanlış geçmişi.
-- Öğrenme günü 1; 3/7/21. gün tekrarları, kapalı günler ve günlük kapasite.
-- Çevrimdışı çalışma, yerel PDF okuma/notlar, ilerleme yedeği ve geri yükleme.
-- Türkçe/İngilizce, bağımsız yazı/arayüz boyutu, tema, hareket ve oyunlaştırma ayarları; Aion sprite animasyonu.
+- Konu Anlatımı ve Sorular ayrı bölümler; ikisinde de TYT/AYT ve ders seçimi.
+- Excel kaynaklarından 341 ana konu ve 479 ayrıntılı kopya kâğıdı başlığı.
+- Dokuz görsel etkileşimli ders ve 45 özgün soru. Hücre yapıları, 118 elementlik tablo, geometride parça taşıma; kesir, çarpanlar, kuvvet, mol, ATP ve paragraf modelleri.
+- Orijinal Aion referanslarıyla hazırlanan sola bakan cartoon sprite sheet; göz kırpma ve kaydedilmiş başarıya bağlı kısa tepki.
+- Özel kaynak kataloğu, toplu PDF/klasör içe aktarma, aynı içeriği birleştirme, durdurma ve hata raporu.
+- PDF’de sayfaya gitme ve kalınan sayfayı koruma; eski yerel kayıtlar için uyumlu veritabanı geçişi.
 
-Windows için Setup kurulum, Portable taşınabilir sürümdür. Portable ile oluşan YKSManiaData klasörünü birlikte saklayın. Electron/Chromium dahildir; WebView2 indirmek gerekmez. Windows dosyaları Authenticode imzalı değildir.
+Windows: Setup kurulum; Portable taşınabilir sürüm. YKSManiaData klasörünü portable dosyayla birlikte saklayın. Chromium dahildir. Windows dosyaları Authenticode imzalı değildir.
 
-Linux: AppImage veya DEB. Android: **debug imzalı test APK'sı**. Manifest alt sınırı API 24; güncel Android System WebView gerekir. Bu alt sınır her Android 7 cihazda uyumluluk doğrulandığı anlamına gelmez. APK imza/paket çıktısı ektedir; üretim imzası değildir. Sonraki debug sürümünün aynı imzayla güncelleneceği garanti edilmez; değiştirmeden önce ilerlemenizi dışa aktarın.
+Linux: AppImage veya DEB. Android: debug imzalı test APK’sı; manifest minimum API 24, güncel Android System WebView gerekir. Fiziksel Android uyumluluğu doğrulanmadı. Debug imza anahtarı önceki derlemeyle aynı olmayabilir: kurulum değiştirmeden önce ilerleme yedeğinizi alın. Kararlı üretim imzası ve veri koruyan iki sürümlük güncelleme ayrıca yapılmalıdır.
 
-Tamamlanmış sınav hazırlık ürünü değildir: tüm TYT/AYT dersleri gezinti haritasında bulunur; etkileşimli içerik şu anda 6 konudur. Özel Drive arşivi ve telifli MEBİ/OGM kitapları bu herkese açık sürüme kopyalanmadı. Kendi kullanma hakkınız olan PDF'leri Kütüphane'den ekleyebilirsiniz.
+Tam müfredatın tüm etkileşimli içeriği hazır değildir. Başlık listeleri, kaynak PDF'leri ve tek tek doğrulanmış sorular farklı kapsamlardır. Özel arşiv ve kaynak paketleri bu herkese açık indirme dosyalarına gömülmemiştir. Kütüphane’den kendi kataloğunuzu ve kullanma hakkınız olan PDF'leri ekleyebilirsiniz. PDF eklemek öğrenme veya doğru cevap kaydı oluşturmaz.
 
-Web'de ilk çevrimdışı kullanım öncesi uygulamanın indirilmesini bekleyin. Veriler cihazda tutulur; cihazlar arasında otomatik eşitlenmez. İlerleme JSON yedeğine PDF dosyaları dahil değildir.
+İlk web kullanımı sonrası uygulama indirildiğinde çevrimdışı çalışır. Veriler cihaz bazındadır. İlerleme JSON yedeği PDF'leri ve kaynak kataloğunu içermez; bunların ayrı kopyalarını saklayın.
 
-Windows/Linux paketindeki uygulamanın açılması, internet olmadan ders bitirmesi ve yeniden açılınca kaydı koruması otomatik doğrulanır. Windows temiz kurulum/portable kabuğu, fiziksel Android kurulumu ve iki sürüm arasında veri koruyan güncelleme ayrıca test edilmelidir. İmza doğrulaması fiziksel cihaz testi değildir.
-
-Derleme kaynağı verified-run.json içinde; indirilen dosyalar SHA256SUMS.txt ile kontrol edilebilir.
+Derleme kaynağı verified-run.json içinde. Dosyaları SHA256SUMS.txt ile kontrol edebilirsiniz. Paket çalıştırma testleri; temiz kurulum, fiziksel cihaz ve paketler arası güncelleme testleriyle aynı değildir.
