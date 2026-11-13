@@ -46,7 +46,7 @@ TypeScript/build ve 35 birim/depolama/içerik testi PASS. 38 benzersiz tarayıc�
 senaryosu yerel tam + hedefli koşularda geçti; bir tam koşunun PDF kurulumu dist
 aynı anda değiştiğinde zaman aşımına uğradığı için o koşu tam PASS sayılmadı.
 Sabit son derleme üzerinde PDF tekrarları ve yeni gece yarısı/arka plandan dönüş
-regresyonu PASS. Nihai kaynağın tek koşudaki tam tarayıcı/paket sonucu CI’da beklenir.
+regresyonu PASS. Sabit uygulama derlemesinde sonraki tam yerel koşu 38/38 PASS. Uzak CI ve paket sonucu aşağıda ayrı kaydedilir.
 Chromium 156.0.8078.79 / Node 24.22.1 / Linux. Koyu 1440×1000 ve açık 390×1000,
 beş kimya modeli, 32 ayrı Aion karesi incelendi. 320px/%200 UI/%150 yazı gerçek
 kontrol akışı PASS; taşma/kırpma onarımları QA.md içinde. Örnek görsel akışta

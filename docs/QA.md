@@ -362,3 +362,16 @@ aynı gün kaynağını kullanır; geçmiş çalışma tarihleri değiştirilmez
 kabul testi saat dilimini açıkça UTC seçer, 14 → 15 → 16 Kasım geçişini sınar.
 PDF’nin sabit dist üzerindeki ayrı tekrarları PASS; testin önkoşulu service worker
 kurulumunun gerçekten tamamlanmasıdır, zaman aşımı büyütülerek örtülmedi.
+
+Nihai sabit yerel uygulama derlemesinde tam koşu 38/38 PASS (3 dakika). İlk uzak
+CI 43521938654 iki katalog akışında yanlış giriş seçti: Ayarlar ve kaynak sayfası
+aynı JSON accept değerine sahip. navigate hashchange ile asenkrondur; test dosyayı
+eski Ayarlar ilerleme-yedeği input’una verebiliyordu. openSources yardımcı akışı,
+katalog input’una geçmeden “Kaynak dosyaları” h1’ini bekler. Süre aşımı veya
+ürün doğrulaması gevşetilmez; uygulama kodu bu düzeltmede değişmez. Bu eski CI
+koşusu yayın/paket kanıtı sayılmaz; yeni kaynakla tüm işler yeniden çalışır.
+
+Kaynak girişindeki iki regresyon, yeni h1 bekleyişiyle üçer kez tekrarlandı:
+6/6 PASS. İlk published-web koşusu 43522084035 de eski test kaynağıdır ve nihai
+web doğrulaması yerine geçmez. Takvim günlük süresinin tekrar yerleşimine ait
+olduğu, yeni konuların uygun gün hesabıyla dağıtıldığı arayüzde açıklandı.

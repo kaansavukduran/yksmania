@@ -236,6 +236,10 @@ export function Calendar({
               </output>
             </div>
           </label>
+          <p className="small muted">
+            Günlük süre tekrarların yerleşiminde kullanılır. Yeni konular,
+            hedefe kalan uygun gün sayısına göre dağıtılır.
+          </p>
           <h3>{t("weeklyClosed")}</h3>
           <div className="weekday-toggles">
             {weekdays.map((d, i) => {

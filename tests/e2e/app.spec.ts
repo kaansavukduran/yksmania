@@ -19,6 +19,12 @@ async function openSources(page: Page) {
   await page
     .getByRole("button", { name: "Kaynak dosyalarını yönet", exact: true })
     .click();
+  // Settings also has a JSON picker for progress backups. Wait for the source
+  // page before addressing its catalogue picker, otherwise a fast runner can
+  // upload the catalogue to the old settings input during route replacement.
+  await expect(
+    page.getByRole("heading", { name: "Kaynak dosyaları", exact: true }),
+  ).toBeVisible();
 }
 async function start(page: Page) {
   await nav(page, "Konu Anlatımı");
