@@ -2827,10 +2827,11 @@ progress::-moz-progress-bar {
   }
   .visual-lab .segmented {
     flex-wrap: wrap;
+    width: 100%;
   }
   .visual-lab .segmented > button {
     min-width: 0;
-    flex: 1 1 5rem;
+    flex: 1 1 auto;
   }
   .cell-workbench {
     gap: 0;
