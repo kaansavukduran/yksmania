@@ -100,12 +100,15 @@
       ],
       "category": "Education",
       "artifactName": "YKSMania-${version}-Linux-${arch}.${ext}",
-      "desktopName": "yksmania.desktop",
       "syncDesktopName": true
     },
     "icon": "public/icon.png",
     "portable": {
       "artifactName": "YKSMania-${version}-Windows-${arch}-Portable.${ext}"
     }
+  },
+  "desktopName": "yksmania.desktop",
+  "engines": {
+    "node": "24.x"
   }
 }
