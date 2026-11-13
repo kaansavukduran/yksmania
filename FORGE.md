@@ -63,3 +63,7 @@ moderate repeated-landmark issue tracked in QA. No remote browser trust checks w
 bypassed. Published browser acceptance ran in GitHub to avoid the local proxy CA
 limitation. Private source files and historical Aurelia learning records were not
 imported into the public repository or synchronized.
+
+Publication completed: [release workflow](https://github.com/kaansavukduran/yksmania/actions/runs/43468351719)
+passed and published `v0.1.0-alpha.1`. Five binaries and signature/source/checksum
+evidence are uploaded. All four jobs in the final package CI run passed.
