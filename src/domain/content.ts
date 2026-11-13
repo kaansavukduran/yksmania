@@ -5,7 +5,7 @@ const baseSubjects: Subject[] = [
   {
     id: "tyt-turkce",
     exam: "TYT",
-    name: t("Türkçe", "Turkish"),
+    name: t("Türkçe"),
     color: "#edb29f",
     icon: "Aa",
     topics: [
@@ -27,7 +27,7 @@ const baseSubjects: Subject[] = [
   {
     id: "tyt-matematik",
     exam: "TYT",
-    name: t("Matematik", "Mathematics"),
+    name: t("Matematik"),
     color: "#b4cced",
     icon: "∑",
     topics: [
@@ -60,7 +60,7 @@ const baseSubjects: Subject[] = [
   {
     id: "tyt-geometri",
     exam: "TYT",
-    name: t("Geometri", "Geometry"),
+    name: t("Geometri"),
     color: "#b8cae3",
     icon: "△",
     topics: [
@@ -80,7 +80,7 @@ const baseSubjects: Subject[] = [
   {
     id: "tyt-fizik",
     exam: "TYT",
-    name: t("Fizik", "Physics"),
+    name: t("Fizik"),
     color: "#c2b8e7",
     icon: "↗",
     topics: [
@@ -102,7 +102,7 @@ const baseSubjects: Subject[] = [
   {
     id: "tyt-kimya",
     exam: "TYT",
-    name: t("Kimya", "Chemistry"),
+    name: t("Kimya"),
     color: "#e5c394",
     icon: "H₂",
     topics: [
@@ -121,7 +121,7 @@ const baseSubjects: Subject[] = [
   {
     id: "tyt-biyoloji",
     exam: "TYT",
-    name: t("Biyoloji", "Biology"),
+    name: t("Biyoloji"),
     color: "#b5d9ba",
     icon: "◉",
     topics: [
@@ -139,7 +139,7 @@ const baseSubjects: Subject[] = [
   {
     id: "tyt-tarih",
     exam: "TYT",
-    name: t("Tarih", "History"),
+    name: t("Tarih"),
     color: "#dfbaa1",
     icon: "⌛",
     topics: [
@@ -157,7 +157,7 @@ const baseSubjects: Subject[] = [
   {
     id: "tyt-cografya",
     exam: "TYT",
-    name: t("Coğrafya", "Geography"),
+    name: t("Coğrafya"),
     color: "#a9d1cb",
     icon: "◎",
     topics: [
@@ -177,7 +177,7 @@ const baseSubjects: Subject[] = [
   {
     id: "tyt-felsefe",
     exam: "TYT",
-    name: t("Felsefe", "Philosophy"),
+    name: t("Felsefe"),
     color: "#d2bdd8",
     icon: "?",
     topics: [
@@ -195,7 +195,7 @@ const baseSubjects: Subject[] = [
   {
     id: "tyt-din",
     exam: "TYT",
-    name: t("Din Kültürü", "Religious Culture"),
+    name: t("Din Kültürü"),
     color: "#d4c99c",
     icon: "◇",
     topics: [
@@ -210,7 +210,7 @@ const baseSubjects: Subject[] = [
   {
     id: "ayt-matematik",
     exam: "AYT",
-    name: t("Matematik", "Mathematics"),
+    name: t("Matematik"),
     color: "#b4cced",
     icon: "∫",
     topics: [
@@ -232,7 +232,7 @@ const baseSubjects: Subject[] = [
   {
     id: "ayt-geometri",
     exam: "AYT",
-    name: t("Geometri", "Geometry"),
+    name: t("Geometri"),
     color: "#b8cae3",
     icon: "△",
     topics: [
@@ -247,7 +247,7 @@ const baseSubjects: Subject[] = [
   {
     id: "ayt-fizik",
     exam: "AYT",
-    name: t("Fizik", "Physics"),
+    name: t("Fizik"),
     color: "#c2b8e7",
     icon: "↗",
     topics: [
@@ -268,7 +268,7 @@ const baseSubjects: Subject[] = [
   {
     id: "ayt-kimya",
     exam: "AYT",
-    name: t("Kimya", "Chemistry"),
+    name: t("Kimya"),
     color: "#e5c394",
     icon: "H₂",
     topics: [
@@ -288,7 +288,7 @@ const baseSubjects: Subject[] = [
   {
     id: "ayt-biyoloji",
     exam: "AYT",
-    name: t("Biyoloji", "Biology"),
+    name: t("Biyoloji"),
     color: "#b5d9ba",
     icon: "◉",
     topics: [
@@ -320,53 +320,46 @@ export const subjects: Subject[] = baseSubjects.map((subject) => ({
 
 const q = (
   id: string,
-  tr: string,
-  en: string,
-  opts: [string, string][],
+  prompt: string,
+  opts: string[],
   answer: number,
-  h: [string, string],
-  e: [string, string],
+  h: string,
+  e: string,
   skill: string,
 ): Question => ({
   id,
-  prompt: t(tr, en),
-  options: opts.map((x) => t(...x)),
+  prompt: t(prompt),
+  options: opts.map((x) => t(x)),
   answer,
-  hint: t(...h),
-  explanation: t(...e),
+  hint: t(h),
+  explanation: t(e),
   skill,
 });
 export const lessons: Lesson[] = [
   {
     id: "rasyonel-sayilar",
     subjectId: "tyt-matematik",
-    title: t("Rasyonel sayılar", "Rational numbers"),
+    title: t("Rasyonel sayılar"),
     minutes: 18,
     tags: ["number-line", "fractions"],
     source: t(
       "OGM matematik konu notlarındaki kavramlar esas alınarak hazırlanmış özgün öğretim. Sorular resmî sınav sorusu değildir.",
-      "Original instruction based on concepts in OGM mathematics notes. Exercises are not official exam questions.",
     ),
     objectives: [
-      t("Kesirleri karşılaştır.", "Compare fractions."),
-      t(
-        "İşlem sırasını ve payda koşulunu uygula.",
-        "Apply operation order and denominator restrictions.",
-      ),
+      t("Kesirleri karşılaştır."),
+      t("İşlem sırasını ve payda koşulunu uygula."),
     ],
     body: [
       {
-        title: t("Önce büyüklüğü gör", "See the magnitude first"),
+        title: t("Önce büyüklüğü gör"),
         text: t(
           "Rasyonel sayılar a/b biçiminde yazılır; a ve b tam sayıdır ve b ≠ 0 olmalıdır. Pozitif birim kesirlerde payda büyüdükçe parça küçülür: 1/8 < 1/6. Negatif sayılarda sayı doğrusunda sağda kalan sayı daha büyüktür.",
-          "A rational number can be written as a/b, where a and b are integers and b ≠ 0. For positive unit fractions a larger denominator means a smaller piece: 1/8 < 1/6. The number farther right on the number line is greater.",
         ),
       },
       {
-        title: t("İşlemi anlamıyla kur", "Give operations meaning"),
+        title: t("İşlemi anlamıyla kur"),
         text: t(
           "Toplarken ortak payda kullan: 1/2 + 1/3 = 3/6 + 2/6 = 5/6. Bölmede ikinci kesrin tersini kullan: (2/3) ÷ (4/5) = (2/3) × (5/4) = 5/6. Sonucu yaklaşık büyüklükle kontrol et.",
-          "Use a common denominator for addition: 1/2 + 1/3 = 5/6. For division multiply by the reciprocal: (2/3) ÷ (4/5) = 5/6. Check the result against an estimate.",
         ),
       },
     ],
@@ -374,92 +367,46 @@ export const lessons: Lesson[] = [
       q(
         "r1",
         "Hangisi daha büyüktür?",
-        "Which is greater?",
-        [
-          ["1/8", "1/8"],
-          ["1/6", "1/6"],
-          ["Eşitler", "Equal"],
-        ],
+        ["1/8", "1/6", "Eşitler"],
         1,
-        [
-          "Eşit bir bütünü kaç parçaya ayırıyorsun?",
-          "How many equal pieces is the whole divided into?",
-        ],
-        [
-          "Birim kesirde daha küçük payda daha büyük parça verir: 1/6 > 1/8.",
-          "For unit fractions the smaller denominator gives the larger piece: 1/6 > 1/8.",
-        ],
+        "Eşit bir bütünü kaç parçaya ayırıyorsun?",
+        "Birim kesirde daha küçük payda daha büyük parça verir: 1/6 > 1/8.",
         "fraction-comparison",
       ),
       q(
         "r2",
         "1/2 + 1/3 kaçtır?",
-        "What is 1/2 + 1/3?",
-        [
-          ["2/5", "2/5"],
-          ["1/6", "1/6"],
-          ["5/6", "5/6"],
-        ],
+        ["2/5", "1/6", "5/6"],
         2,
-        ["6 ortak paydasını kullan.", "Use the common denominator 6."],
-        [
-          "3/6 + 2/6 = 5/6. Paydalar doğrudan toplanmaz.",
-          "3/6 + 2/6 = 5/6. Do not add denominators.",
-        ],
+        "6 ortak paydasını kullan.",
+        "3/6 + 2/6 = 5/6. Paydalar doğrudan toplanmaz.",
         "fraction-operations",
       ),
       q(
         "r3",
         "−1/4 ile −1/2 için hangisi doğrudur?",
-        "Compare −1/4 and −1/2.",
-        [
-          ["−1/4 > −1/2", "−1/4 > −1/2"],
-          ["−1/4 < −1/2", "−1/4 < −1/2"],
-          ["Eşitler", "Equal"],
-        ],
+        ["−1/4 > −1/2", "−1/4 < −1/2", "Eşitler"],
         0,
-        [
-          "Sayı doğrusunda sıfıra daha yakın olan negatif sayı hangisi?",
-          "Which negative number is closer to zero?",
-        ],
-        [
-          "−0,25, −0,5’in sağındadır; dolayısıyla daha büyüktür.",
-          "−0.25 lies to the right of −0.5, so it is greater.",
-        ],
+        "Sayı doğrusunda sıfıra daha yakın olan negatif sayı hangisi?",
+        "−0,25, −0,5’in sağındadır; dolayısıyla daha büyüktür.",
         "negative-comparison",
       ),
       q(
         "r4",
         "(2/3) ÷ (4/5) kaçtır?",
-        "What is (2/3) ÷ (4/5)?",
-        [
-          ["8/15", "8/15"],
-          ["5/6", "5/6"],
-          ["6/5", "6/5"],
-        ],
+        ["8/15", "5/6", "6/5"],
         1,
-        [
-          "Bölen kesri ters çevirip çarp.",
-          "Multiply by the reciprocal of the divisor.",
-        ],
-        ["2/3 × 5/4 = 10/12 = 5/6.", "2/3 × 5/4 = 10/12 = 5/6."],
+        "Bölen kesri ters çevirip çarp.",
+        "2/3 × 5/4 = 10/12 = 5/6.",
         "fraction-division",
       ),
       q(
         "r5",
         "3/(x−2) hangi x değeri için tanımsızdır?",
-        "For which x is 3/(x−2) undefined?",
-        [
-          ["0", "0"],
-          ["2", "2"],
-          ["3", "3"],
-        ],
+        ["0", "2", "3"],
         1,
-        ["Payda sıfır olamaz.", "The denominator cannot be zero."],
-        [
-          "x−2 = 0 olduğunda ifade tanımsızdır: x = 2.",
-          "The expression is undefined when x−2 = 0, so x = 2.",
-        ],
+        "Payda sıfır olamaz.",
+        "x−2 = 0 olduğunda ifade tanımsızdır: x = 2.",
         "denominator-restriction",
       ),
     ],
@@ -467,36 +414,22 @@ export const lessons: Lesson[] = [
   {
     id: "carpanlara-ayirma",
     subjectId: "tyt-matematik",
-    title: t("Çarpanlara ayırma", "Factorisation"),
+    title: t("Çarpanlara ayırma"),
     minutes: 16,
     tags: ["algebra"],
-    source: t(
-      "OGM matematik kavramlarıyla uyumlu özgün örnek ve sorular.",
-      "Original examples and exercises consistent with OGM mathematics concepts.",
-    ),
-    objectives: [
-      t("Ortak çarpanı gör.", "Identify common factors."),
-      t(
-        "Denklem çözerken kök kaybetme.",
-        "Avoid losing roots when solving equations.",
-      ),
-    ],
+    source: t("OGM matematik kavramlarıyla uyumlu özgün örnek ve sorular."),
+    objectives: [t("Ortak çarpanı gör."), t("Denklem çözerken kök kaybetme.")],
     body: [
       {
-        title: t("Ortak yapıyı bul", "Find the shared structure"),
+        title: t("Ortak yapıyı bul"),
         text: t(
           "ax + ay = a(x+y). Bir ifadeyi çarpanlarına ayırmak, toplamı çarpım biçiminde yazmaktır. x²−4 = (x−2)(x+2) iki kare farkıdır.",
-          "ax + ay = a(x+y). Factorisation rewrites a sum as a product. x²−4 = (x−2)(x+2) is a difference of squares.",
         ),
       },
       {
-        title: t(
-          "Sıfır olabilen ifadeyle bölme",
-          "Do not divide away a possible zero",
-        ),
+        title: t("Sıfır olabilen ifadeyle bölme"),
         text: t(
           "x(x−2)=0 için çarpanlardan en az biri sıfırdır: x=0 veya x=2. İki tarafı x’e bölmek x=0 olasılığını kaybettirir. Önce hangi ifadenin sıfır olabileceğini kontrol et.",
-          "For x(x−2)=0 at least one factor is zero: x=0 or x=2. Dividing both sides by x loses the possibility x=0. First check which expressions may equal zero.",
         ),
       },
     ],
@@ -504,86 +437,46 @@ export const lessons: Lesson[] = [
       q(
         "c1",
         "6x + 9 ifadesinin ortak çarpanlı biçimi nedir?",
-        "Factor out the common factor in 6x + 9.",
-        [
-          ["3(2x+3)", "3(2x+3)"],
-          ["6(x+9)", "6(x+9)"],
-          ["9(x+6)", "9(x+6)"],
-        ],
+        ["3(2x+3)", "6(x+9)", "9(x+6)"],
         0,
-        ["6 ve 9’un ortak bölenini bul.", "Find a common divisor of 6 and 9."],
-        [
-          "3 ortak çarpandır: 3×2x + 3×3 = 3(2x+3).",
-          "The common factor is 3: 3(2x+3).",
-        ],
+        "6 ve 9’un ortak bölenini bul.",
+        "3 ortak çarpandır: 3×2x + 3×3 = 3(2x+3).",
         "common-factor",
       ),
       q(
         "c2",
         "x(x−2)=0 denkleminde x’e bölmek hangi kökü kaybettirir?",
-        "Which root is lost by dividing x(x−2)=0 by x?",
-        [
-          ["0", "0"],
-          ["2", "2"],
-          ["Hiçbiri", "None"],
-        ],
+        ["0", "2", "Hiçbiri"],
         0,
-        [
-          "Bölme adımında bölen sıfır olabilir mi?",
-          "Could the divisor equal zero?",
-        ],
-        [
-          "x=0 bir çözümdür. Sıfıra bölme yapılamaz; bu olasılık ayrıca korunmalıdır.",
-          "x=0 is a solution. Division by zero is invalid, so that possibility must be retained.",
-        ],
+        "Bölme adımında bölen sıfır olabilir mi?",
+        "x=0 bir çözümdür. Sıfıra bölme yapılamaz; bu olasılık ayrıca korunmalıdır.",
         "lost-root",
       ),
       q(
         "c3",
         "x²−25 nasıl çarpanlarına ayrılır?",
-        "Factorise x²−25.",
-        [
-          ["(x−5)²", "(x−5)²"],
-          ["(x−5)(x+5)", "(x−5)(x+5)"],
-          ["(x−25)(x+1)", "(x−25)(x+1)"],
-        ],
+        ["(x−5)²", "(x−5)(x+5)", "(x−25)(x+1)"],
         1,
-        ["İki kare farkını düşün.", "Use the difference of squares."],
-        ["a²−b²=(a−b)(a+b). Burada b=5.", "a²−b²=(a−b)(a+b), with b=5."],
+        "İki kare farkını düşün.",
+        "a²−b²=(a−b)(a+b). Burada b=5.",
         "difference-squares",
       ),
       q(
         "c4",
         "(x−1)(x+3)=0 denkleminin kökleri nedir?",
-        "What are the roots of (x−1)(x+3)=0?",
-        [
-          ["1 ve −3", "1 and −3"],
-          ["−1 ve 3", "−1 and 3"],
-          ["Yalnız 1", "Only 1"],
-        ],
+        ["1 ve −3", "−1 ve 3", "Yalnız 1"],
         0,
-        [
-          "Her çarpanı ayrı ayrı sıfıra eşitle.",
-          "Set each factor equal to zero.",
-        ],
-        [
-          "x−1=0 veya x+3=0; x=1 veya x=−3.",
-          "x−1=0 or x+3=0 gives x=1 or x=−3.",
-        ],
+        "Her çarpanı ayrı ayrı sıfıra eşitle.",
+        "x−1=0 veya x+3=0; x=1 veya x=−3.",
         "zero-product",
       ),
       q(
         "c5",
         "x²+6x+9 hangi ifadeye eşittir?",
-        "Which expression equals x²+6x+9?",
-        [
-          ["(x+3)²", "(x+3)²"],
-          ["(x+9)²", "(x+9)²"],
-          ["(x−3)²", "(x−3)²"],
-        ],
+        ["(x+3)²", "(x+9)²", "(x−3)²"],
         0,
-        ["(a+b)² = a²+2ab+b².", "Use (a+b)² = a²+2ab+b²."],
-        ["(x+3)²=x²+6x+9.", "(x+3)²=x²+6x+9."],
+        "(a+b)² = a²+2ab+b².",
+        "(x+3)²=x²+6x+9.",
         "perfect-square",
       ),
     ],
@@ -591,39 +484,27 @@ export const lessons: Lesson[] = [
   {
     id: "atp-metabolizma",
     subjectId: "ayt-biyoloji",
-    title: t("ATP ve metabolizma", "ATP and metabolism"),
+    title: t("ATP ve metabolizma"),
     minutes: 20,
     tags: ["energy", "process"],
     source: t(
       "Aurelia ATP ve Metabolizma V5 kopya kâğıdı ile MEBİ/OGM kavramları incelenerek hazırlanmış özgün öğretim. Kaynak sorular kopyalanmamıştır.",
-      "Original instruction informed by the Aurelia ATP and Metabolism V5 guide and MEBİ/OGM concepts. Source questions are not reproduced.",
     ),
     objectives: [
-      t(
-        "Yapım ve yıkım olaylarını ayır.",
-        "Distinguish synthesis and breakdown.",
-      ),
-      t(
-        "ATP sentezi türlerini koşullarıyla tanı.",
-        "Recognise ATP synthesis mechanisms and their conditions.",
-      ),
+      t("Yapım ve yıkım olaylarını ayır."),
+      t("ATP sentezi türlerini koşullarıyla tanı."),
     ],
     body: [
       {
-        title: t(
-          "Enerjiyi eşleyen molekül",
-          "A molecule that couples energy transfers",
-        ),
+        title: t("Enerjiyi eşleyen molekül"),
         text: t(
           "ATP; adenin, riboz ve üç fosfat grubundan oluşur. ATP hidroliziyle açığa çıkan serbest enerji, uygun moleküler mekanizmalarla enerji isteyen olaylara bağlanabilir. ATP uzun süreli enerji deposu değildir; hücre içinde sürekli üretilir ve tüketilir.",
-          "ATP consists of adenine, ribose and three phosphate groups. Free energy released by ATP hydrolysis can be coupled to energy-requiring processes through molecular mechanisms. ATP is continually synthesised and consumed rather than stored long-term.",
         ),
       },
       {
-        title: t("Üç farklı ATP sentezi yolu", "Three routes to ATP synthesis"),
+        title: t("Üç farklı ATP sentezi yolu"),
         text: t(
           "Substrat düzeyinde fosforilasyonda bir organik ara üründen ADP’ye fosfat aktarılır. Oksidatif fosforilasyon elektron taşıma sisteminin kurduğu proton gradyanını kullanır. Fotofosforilasyonda enerji kaynağı ışıktır. Anabolizma yapım, katabolizma yıkımdır; canlı hücrede ikisi birlikte sürer.",
-          "Substrate-level phosphorylation transfers phosphate from an organic intermediate to ADP. Oxidative phosphorylation uses a proton gradient established by electron transport. Photophosphorylation is driven by light. Anabolism builds molecules; catabolism breaks them down. Both occur in living cells.",
         ),
       },
     ],
@@ -631,104 +512,58 @@ export const lessons: Lesson[] = [
       q(
         "a1",
         "ATP’nin yapısında hangi şeker bulunur?",
-        "Which sugar is present in ATP?",
-        [
-          ["Deoksiriboz", "Deoxyribose"],
-          ["Riboz", "Ribose"],
-          ["Glikoz", "Glucose"],
-        ],
+        ["Deoksiriboz", "Riboz", "Glikoz"],
         1,
-        ["ATP, bir ribonükleotittir.", "ATP is a ribonucleotide."],
-        [
-          "ATP’de adenin bazı, riboz ve üç fosfat vardır.",
-          "ATP contains adenine, ribose and three phosphate groups.",
-        ],
+        "ATP, bir ribonükleotittir.",
+        "ATP’de adenin bazı, riboz ve üç fosfat vardır.",
         "atp-structure",
       ),
       q(
         "a2",
         "Protein sentezi hangi gruptadır?",
-        "Protein synthesis is an example of…",
-        [
-          ["Anabolizma", "Anabolism"],
-          ["Katabolizma", "Catabolism"],
-          ["Hidroliz", "Hydrolysis"],
-        ],
+        ["Anabolizma", "Katabolizma", "Hidroliz"],
         0,
-        [
-          "Küçük birimlerden büyük molekül kuruluyor.",
-          "Small units are assembled into a larger molecule.",
-        ],
-        [
-          "Amino asitlerden protein yapımı anabolik bir olaydır.",
-          "Building proteins from amino acids is an anabolic process.",
-        ],
+        "Küçük birimlerden büyük molekül kuruluyor.",
+        "Amino asitlerden protein yapımı anabolik bir olaydır.",
         "metabolism",
       ),
       q(
         "a3",
         "ETS zorunlu olmadan ATP oluşturabilen yol hangisidir?",
-        "Which route can produce ATP without requiring an electron transport chain?",
         [
-          ["Oksidatif fosforilasyon", "Oxidative phosphorylation"],
-          ["Fotofosforilasyon", "Photophosphorylation"],
-          [
-            "Substrat düzeyinde fosforilasyon",
-            "Substrate-level phosphorylation",
-          ],
+          "Oksidatif fosforilasyon",
+          "Fotofosforilasyon",
+          "Substrat düzeyinde fosforilasyon",
         ],
         2,
-        [
-          "Fosfat doğrudan bir ara üründen aktarılabilir.",
-          "Phosphate can be transferred directly from an intermediate.",
-        ],
-        [
-          "Substrat düzeyinde fosforilasyon, fosfatı organik ara üründen ADP’ye aktarır.",
-          "Substrate-level phosphorylation directly transfers phosphate to ADP.",
-        ],
+        "Fosfat doğrudan bir ara üründen aktarılabilir.",
+        "Substrat düzeyinde fosforilasyon, fosfatı organik ara üründen ADP’ye aktarır.",
         "phosphorylation",
       ),
       q(
         "a4",
         "“Oksijen yoksa ATP üretilemez.” ifadesi neden yanlıştır?",
-        "Why is “ATP cannot be made without oxygen” incorrect?",
         [
-          ["ATP yalnız bitkilerde üretilir.", "ATP is made only in plants."],
-          [
-            "Substrat düzeyinde fosforilasyon oksijensiz de gerçekleşebilir.",
-            "Substrate-level phosphorylation can occur without oxygen.",
-          ],
-          ["ATP enerji gerektirmez.", "ATP requires no energy to synthesise."],
+          "ATP yalnız bitkilerde üretilir.",
+          "Substrat düzeyinde fosforilasyon oksijensiz de gerçekleşebilir.",
+          "ATP enerji gerektirmez.",
         ],
         1,
-        ["Glikolizi düşün.", "Think about glycolysis."],
-        [
-          "Glikolizde substrat düzeyinde ATP sentezi oksijen gerektirmez.",
-          "Substrate-level ATP synthesis in glycolysis does not require oxygen.",
-        ],
+        "Glikolizi düşün.",
+        "Glikolizde substrat düzeyinde ATP sentezi oksijen gerektirmez.",
         "misconception",
       ),
       q(
         "a5",
         "Büyüyen bir hücre için hangisi doğrudur?",
-        "Which statement is true of a growing cell?",
         [
-          ["Yalnız yapım olur.", "Only synthesis occurs."],
-          [
-            "Yapım ve yıkım birlikte sürer.",
-            "Synthesis and breakdown occur together.",
-          ],
-          ["ATP tüketimi durur.", "ATP consumption stops."],
+          "Yalnız yapım olur.",
+          "Yapım ve yıkım birlikte sürer.",
+          "ATP tüketimi durur.",
         ],
         1,
-        [
-          "Büyümek için enerji ve yapı taşları gerekir.",
-          "Growth requires both energy and building blocks.",
-        ],
-        [
-          "Büyüme, katabolizmanın durduğu anlamına gelmez; enerji dönüşümleri sürer.",
-          "Growth does not mean catabolism stops; energy conversions continue.",
-        ],
+        "Büyümek için enerji ve yapı taşları gerekir.",
+        "Büyüme, katabolizmanın durduğu anlamına gelmez; enerji dönüşümleri sürer.",
         "metabolism",
       ),
     ],
@@ -736,35 +571,22 @@ export const lessons: Lesson[] = [
   {
     id: "newton",
     subjectId: "tyt-fizik",
-    title: t("Kuvvet ve Newton yasaları", "Force and Newton’s laws"),
+    title: t("Kuvvet ve Newton yasaları"),
     minutes: 18,
     tags: ["force"],
-    source: t(
-      "MEB/OGM fizik kavramlarına dayalı özgün alıştırmalar.",
-      "Original exercises based on MEB/OGM physics concepts.",
-    ),
-    objectives: [
-      t(
-        "Net kuvvet ile ivmeyi ilişkilendir.",
-        "Relate net force and acceleration.",
-      ),
-    ],
+    source: t("MEB/OGM fizik kavramlarına dayalı özgün alıştırmalar."),
+    objectives: [t("Net kuvvet ile ivmeyi ilişkilendir.")],
     body: [
       {
-        title: t("Önce hedef cismi seç", "Choose the object first"),
+        title: t("Önce hedef cismi seç"),
         text: t(
           "Bir cismi incelerken yalnız o cisme etki eden kuvvetleri çiz. Aynı doğrultudaki kuvvetleri yönlerine göre topla. Net kuvvet sıfırsa ivme sıfırdır; cisim durabilir veya sabit hızla hareket edebilir.",
-          "Draw only forces acting on the object being analysed. Add collinear forces with their directions. Zero net force means zero acceleration: the object can be at rest or move at constant velocity.",
         ),
       },
       {
-        title: t(
-          "Net kuvvet = kütle × ivme",
-          "Net force = mass × acceleration",
-        ),
+        title: t("Net kuvvet = kütle × ivme"),
         text: t(
           "Sabit kütlede Fnet = ma. 2 kg cisme sağa 10 N, sola 4 N etki ederse net kuvvet sağa 6 N, ivme sağa 3 m/s² olur. Etki ve tepki kuvvetleri farklı cisimlere etki eder.",
-          "For constant mass, Fnet = ma. A 2 kg object with 10 N right and 4 N left has a net force of 6 N right and acceleration of 3 m/s² right. Action and reaction act on different objects.",
         ),
       },
     ],
@@ -772,101 +594,50 @@ export const lessons: Lesson[] = [
       q(
         "n1",
         "2 kg cisme sağa 10 N, sola 4 N uygulanıyor. İvme?",
-        "A 2 kg object has 10 N right and 4 N left. Its acceleration?",
-        [
-          ["Sağa 3 m/s²", "3 m/s² right"],
-          ["Sağa 7 m/s²", "7 m/s² right"],
-          ["Sola 3 m/s²", "3 m/s² left"],
-        ],
+        ["Sağa 3 m/s²", "Sağa 7 m/s²", "Sola 3 m/s²"],
         0,
-        [
-          "Önce net kuvveti bul, sonra kütleye böl.",
-          "Find net force, then divide by mass.",
-        ],
-        [
-          "Fnet=10−4=6 N sağa; a=6/2=3 m/s² sağa.",
-          "Fnet=6 N right; a=6/2=3 m/s² right.",
-        ],
+        "Önce net kuvveti bul, sonra kütleye böl.",
+        "Fnet=10−4=6 N sağa; a=6/2=3 m/s² sağa.",
         "net-force",
       ),
       q(
         "n2",
         "Net kuvvet sıfırsa hangisi zorunludur?",
-        "If net force is zero, which must be true?",
-        [
-          ["Hız sıfırdır.", "Velocity is zero."],
-          ["İvme sıfırdır.", "Acceleration is zero."],
-          ["Konum sıfırdır.", "Position is zero."],
-        ],
+        ["Hız sıfırdır.", "İvme sıfırdır.", "Konum sıfırdır."],
         1,
-        [
-          "Hız ile hızın değişimi aynı şey değil.",
-          "Velocity and its rate of change differ.",
-        ],
-        [
-          "Net kuvvet sıfırsa ivme sıfırdır; hız sabit ve sıfırdan farklı olabilir.",
-          "Acceleration is zero; velocity may be constant and nonzero.",
-        ],
+        "Hız ile hızın değişimi aynı şey değil.",
+        "Net kuvvet sıfırsa ivme sıfırdır; hız sabit ve sıfırdan farklı olabilir.",
         "newton-first",
       ),
       q(
         "n3",
         "Etki ve tepki kuvvetleri…",
-        "Action and reaction forces…",
         [
-          [
-            "Aynı cisim üzerinde birbirini götürür.",
-            "Cancel on the same object.",
-          ],
-          ["Farklı cisimlere etki eder.", "Act on different objects."],
-          ["Her zaman aynı yönlüdür.", "Always point in the same direction."],
+          "Aynı cisim üzerinde birbirini götürür.",
+          "Farklı cisimlere etki eder.",
+          "Her zaman aynı yönlüdür.",
         ],
         1,
-        [
-          "Kuvvet çiftindeki iki etkileşen cismi düşün.",
-          "Think of the two interacting objects.",
-        ],
-        [
-          "Etki ve tepki eşit büyüklükte, zıt yönde ve farklı cisimler üzerindedir.",
-          "They are equal in magnitude, opposite in direction and act on different objects.",
-        ],
+        "Kuvvet çiftindeki iki etkileşen cismi düşün.",
+        "Etki ve tepki eşit büyüklükte, zıt yönde ve farklı cisimler üzerindedir.",
         "newton-third",
       ),
       q(
         "n4",
         "Net kuvvet sabitken kütle iki katına çıkarsa ivme…",
-        "At constant net force, doubling mass makes acceleration…",
-        [
-          ["İki kat olur.", "Double."],
-          ["Yarıya iner.", "Halve."],
-          ["Değişmez.", "Stay unchanged."],
-        ],
+        ["İki kat olur.", "Yarıya iner.", "Değişmez."],
         1,
-        ["a=Fnet/m bağıntısını kullan.", "Use a=Fnet/m."],
-        [
-          "Aynı kuvvet için kütleyle ivme ters orantılıdır.",
-          "At fixed force acceleration is inversely proportional to mass.",
-        ],
+        "a=Fnet/m bağıntısını kullan.",
+        "Aynı kuvvet için kütleyle ivme ters orantılıdır.",
         "newton-second",
       ),
       q(
         "n5",
         "Sürtünmesiz yatay düzlemde sabit hızla giden cisim için yatay net kuvvet?",
-        "An object moves at constant velocity on a frictionless horizontal surface. Horizontal net force?",
-        [
-          ["Sıfır", "Zero"],
-          ["Hareket yönünde", "In the direction of motion"],
-          ["Kütlesine eşit", "Equal to its mass"],
-        ],
+        ["Sıfır", "Hareket yönünde", "Kütlesine eşit"],
         0,
-        [
-          "Sabit hız, sıfır ivme demektir.",
-          "Constant velocity means zero acceleration.",
-        ],
-        [
-          "Hızı korumak için net kuvvet gerekmez; hız değişimi için gerekir.",
-          "Net force is required to change velocity, not maintain it.",
-        ],
+        "Sabit hız, sıfır ivme demektir.",
+        "Hızı korumak için net kuvvet gerekmez; hız değişimi için gerekir.",
         "newton-first",
       ),
     ],
@@ -874,32 +645,22 @@ export const lessons: Lesson[] = [
   {
     id: "mol",
     subjectId: "tyt-kimya",
-    title: t("Mol kavramı", "The mole"),
+    title: t("Mol kavramı"),
     minutes: 15,
     tags: ["chemistry"],
-    source: t(
-      "MEB/OGM kimya kavramlarına dayalı özgün alıştırmalar.",
-      "Original exercises based on MEB/OGM chemistry concepts.",
-    ),
-    objectives: [
-      t(
-        "Kütle, mol ve tanecik sayısını ilişkilendir.",
-        "Relate mass, moles and particle count.",
-      ),
-    ],
+    source: t("MEB/OGM kimya kavramlarına dayalı özgün alıştırmalar."),
+    objectives: [t("Kütle, mol ve tanecik sayısını ilişkilendir.")],
     body: [
       {
-        title: t("Bir sayma birimi", "A counting unit"),
+        title: t("Bir sayma birimi"),
         text: t(
           "Mol, tanecikleri saymak için kullanılır. 1 mol yaklaşık 6,02×10²³ tanecik içerir. Taneciğin atom mu, molekül mü, iyon mu olduğunu belirt.",
-          "A mole is a counting unit. One mole contains approximately 6.02×10²³ entities. Specify whether you count atoms, molecules or ions.",
         ),
       },
       {
-        title: t("Birimleri görünür tut", "Keep units visible"),
+        title: t("Birimleri görünür tut"),
         text: t(
           "n=m/M: mol sayısı, kütlenin molar kütleye bölümüdür. H₂O için M=18 g/mol kabul edildiğinde 36 g su 2 mol su molekülüdür. Her molekül iki H ve bir O atomu içerir.",
-          "n=m/M: amount in moles equals mass divided by molar mass. With M(H₂O)=18 g/mol, 36 g water is 2 mol of water molecules. Each molecule contains two H atoms and one O atom.",
         ),
       },
     ],
@@ -907,86 +668,46 @@ export const lessons: Lesson[] = [
       q(
         "m1",
         "Molar kütlesi 18 g/mol olan suyun 36 gramı kaç moldür?",
-        "How many moles are in 36 g water with molar mass 18 g/mol?",
-        [
-          ["1", "1"],
-          ["2", "2"],
-          ["18", "18"],
-        ],
+        ["1", "2", "18"],
         1,
-        ["n=m/M", "n=m/M"],
-        ["36/18=2 mol.", "36/18=2 mol."],
+        "n=m/M",
+        "36/18=2 mol.",
         "mole-mass",
       ),
       q(
         "m2",
         "1 mol H₂O kaç mol H atomu içerir?",
-        "How many moles of H atoms are in 1 mol H₂O?",
-        [
-          ["1", "1"],
-          ["2", "2"],
-          ["3", "3"],
-        ],
+        ["1", "2", "3"],
         1,
-        [
-          "Her molekülde 2 H atomu vardır.",
-          "Each molecule contains 2 H atoms.",
-        ],
-        [
-          "Molekül başına 2 H olduğundan 2 mol H atomu bulunur.",
-          "Two H atoms per molecule means 2 mol of H atoms.",
-        ],
+        "Her molekülde 2 H atomu vardır.",
+        "Molekül başına 2 H olduğundan 2 mol H atomu bulunur.",
         "particle-count",
       ),
       q(
         "m3",
         "0,5 mol CO₂ kaç mol O atomu içerir?",
-        "How many moles of O atoms are in 0.5 mol CO₂?",
-        [
-          ["0,5", "0.5"],
-          ["1", "1"],
-          ["2", "2"],
-        ],
+        ["0,5", "1", "2"],
         1,
-        [
-          "Her CO₂ molekülündeki O sayısını kullan.",
-          "Use the number of O atoms per CO₂ molecule.",
-        ],
-        ["0,5×2=1 mol O atomu.", "0.5×2=1 mol of O atoms."],
+        "Her CO₂ molekülündeki O sayısını kullan.",
+        "0,5×2=1 mol O atomu.",
         "particle-count",
       ),
       q(
         "m4",
         "M=44 g/mol olan CO₂’nin 0,5 molü kaç gramdır?",
-        "What is the mass of 0.5 mol CO₂ if M=44 g/mol?",
-        [
-          ["11", "11"],
-          ["22", "22"],
-          ["88", "88"],
-        ],
+        ["11", "22", "88"],
         1,
-        ["m=nM", "m=nM"],
-        ["0,5×44=22 g.", "0.5×44=22 g."],
+        "m=nM",
+        "0,5×44=22 g.",
         "mole-mass",
       ),
       q(
         "m5",
         "Aynı mol sayısındaki He atomları ve H₂ molekülleri için hangisi eşittir?",
-        "Equal amounts in moles of He atoms and H₂ molecules have equal…",
-        [
-          ["Kütleleri", "Masses"],
-          ["Saydığımız tanecik sayıları", "Numbers of the specified entities"],
-          ["Toplam atom sayıları", "Total numbers of atoms"],
-        ],
+        ["Kütleleri", "Saydığımız tanecik sayıları", "Toplam atom sayıları"],
         1,
-        [
-          "Mol, belirtilen taneciği sayar.",
-          "The mole counts the specified entity.",
-        ],
-        [
-          "Belirtilen taneciklerin sayısı eşittir. Bir H₂ molekülünde iki atom bulunduğu için toplam atom sayısı eşit değildir.",
-          "The specified entity counts are equal; H₂ has two atoms per molecule, so total atom counts differ.",
-        ],
+        "Mol, belirtilen taneciği sayar.",
+        "Belirtilen taneciklerin sayısı eşittir. Bir H₂ molekülünde iki atom bulunduğu için toplam atom sayısı eşit değildir.",
         "entity-type",
       ),
     ],
@@ -994,32 +715,22 @@ export const lessons: Lesson[] = [
   {
     id: "paragraf",
     subjectId: "tyt-turkce",
-    title: t("Paragrafta ana düşünce", "Main idea in a paragraph"),
+    title: t("Paragrafta ana düşünce"),
     minutes: 12,
     tags: ["reading"],
-    source: t(
-      "YKSMania için yazılmış özgün metin ve sorular.",
-      "Original text and exercises written for YKSMania.",
-    ),
-    objectives: [
-      t(
-        "Ana düşünceyi metindeki kanıtla seç.",
-        "Select the main idea using textual evidence.",
-      ),
-    ],
+    source: t("YKSMania için yazılmış özgün metin ve sorular."),
+    objectives: [t("Ana düşünceyi metindeki kanıtla seç.")],
     body: [
       {
-        title: t("Metin neyi savunuyor?", "What does the text argue?"),
+        title: t("Metin neyi savunuyor?"),
         text: t(
           "“Bir kitabı bitirmek, onu anlamakla aynı şey değildir. Okur bazen bir sayfada durup kendi sorularını kurduğunda metinle daha güçlü bir ilişki kurar. Okumanın değeri, yalnız çevrilen sayfalarda değil, kurulan düşüncelerde de aranmalıdır.”",
-          "“Finishing a book is not the same as understanding it. When readers pause to form their own questions, they may build a stronger connection with the text. Reading’s value lies in the thoughts formed as well as the pages turned.”",
         ),
       },
       {
-        title: t("Kapsamı koru", "Keep the scope"),
+        title: t("Kapsamı koru"),
         text: t(
           "Ana düşünce, metnin bütününü kapsar. Metinde bulunmayan “her zaman”, “yalnızca” gibi genellemeleri ekleme. Bir ayrıntıyı bütün metnin savı gibi sunma.",
-          "The main idea covers the whole passage. Do not add absolute claims such as “always” or “only” that the passage does not support. Do not confuse a detail with the central argument.",
         ),
       },
     ],
@@ -1027,122 +738,66 @@ export const lessons: Lesson[] = [
       q(
         "p1",
         "Metnin ana düşüncesi nedir?",
-        "What is the main idea?",
         [
-          [
-            "Okumanın değeri düşünsel etkileşimde de bulunur.",
-            "Reading’s value also lies in thoughtful engagement.",
-          ],
-          [
-            "Bütün kitaplar yavaş okunmalıdır.",
-            "All books must be read slowly.",
-          ],
-          ["Kitap bitirmek gereksizdir.", "Finishing books is pointless."],
+          "Okumanın değeri düşünsel etkileşimde de bulunur.",
+          "Bütün kitaplar yavaş okunmalıdır.",
+          "Kitap bitirmek gereksizdir.",
         ],
         0,
-        [
-          "Metnin son cümlesi hangi ilişkiyi kuruyor?",
-          "What relationship does the last sentence establish?",
-        ],
-        [
-          "Metin sayfa sayısına ek olarak düşünsel etkileşimi vurgular; bitirmeyi gereksiz saymaz.",
-          "The passage values thoughtful engagement alongside page count; it does not dismiss finishing books.",
-        ],
+        "Metnin son cümlesi hangi ilişkiyi kuruyor?",
+        "Metin sayfa sayısına ek olarak düşünsel etkileşimi vurgular; bitirmeyi gereksiz saymaz.",
         "main-idea",
       ),
       q(
         "p2",
         "Hangi sonuç metinden çıkarılamaz?",
-        "Which conclusion is not supported?",
         [
-          [
-            "Soru sormak anlamaya katkı sağlayabilir.",
-            "Asking questions may aid understanding.",
-          ],
-          [
-            "Çok sayfa okumak anlamayı tek başına göstermez.",
-            "Page count alone does not prove understanding.",
-          ],
-          [
-            "Hızlı okuyan hiç kimse anlayamaz.",
-            "No fast reader can understand a text.",
-          ],
+          "Soru sormak anlamaya katkı sağlayabilir.",
+          "Çok sayfa okumak anlamayı tek başına göstermez.",
+          "Hızlı okuyan hiç kimse anlayamaz.",
         ],
         2,
-        [
-          "Kesin ve kapsayıcı genellemeleri kontrol et.",
-          "Check absolute generalisations.",
-        ],
-        [
-          "Metin tüm hızlı okurlar hakkında kesin bir yargı vermiyor.",
-          "The passage makes no absolute claim about all fast readers.",
-        ],
+        "Kesin ve kapsayıcı genellemeleri kontrol et.",
+        "Metin tüm hızlı okurlar hakkında kesin bir yargı vermiyor.",
         "scope",
       ),
       q(
         "p3",
         "“Bazen” sözcüğünün işlevi nedir?",
-        "What does “may” imply here?",
         [
-          [
-            "Durumu her okuma için zorunlu kılmaz.",
-            "The effect is not guaranteed in every instance.",
-          ],
-          ["Bütün okurları aynı sayar.", "All readers are identical."],
-          ["Bir tarih verir.", "It gives a date."],
+          "Durumu her okuma için zorunlu kılmaz.",
+          "Bütün okurları aynı sayar.",
+          "Bir tarih verir.",
         ],
         0,
-        [
-          "İfadenin kesinlik derecesini düşün.",
-          "Consider the certainty of the statement.",
-        ],
-        [
-          "Olasılık ve duruma bağlılık korunur.",
-          "It preserves possibility and context dependence.",
-        ],
+        "İfadenin kesinlik derecesini düşün.",
+        "Olasılık ve duruma bağlılık korunur.",
         "qualifier",
       ),
       q(
         "p4",
         "Metinde hangi iki unsur karşılaştırılıyor?",
-        "Which two aspects are contrasted?",
         [
-          ["Yazar ve yayınevi", "Author and publisher"],
-          [
-            "Bitirilen sayfalar ve kurulan düşünceler",
-            "Pages completed and thoughts formed",
-          ],
-          ["Roman ve şiir", "Novels and poetry"],
+          "Yazar ve yayınevi",
+          "Bitirilen sayfalar ve kurulan düşünceler",
+          "Roman ve şiir",
         ],
         1,
-        [
-          "İlk ve son cümleyi birlikte oku.",
-          "Read the first and last sentences together.",
-        ],
-        [
-          "Nicel tamamlama ile düşünsel etkileşim arasındaki fark anlatılır.",
-          "The passage distinguishes quantity completed from thoughtful engagement.",
-        ],
+        "İlk ve son cümleyi birlikte oku.",
+        "Nicel tamamlama ile düşünsel etkileşim arasındaki fark anlatılır.",
         "structure",
       ),
       q(
         "p5",
         "Metne en uygun başlık hangisidir?",
-        "Which title best fits the passage?",
         [
-          ["Sayfaların Ötesinde Okumak", "Reading Beyond the Pages"],
-          ["En Hızlı Okuma Teknikleri", "The Fastest Reading Techniques"],
-          ["Kitapların Basım Tarihi", "The History of Book Printing"],
+          "Sayfaların Ötesinde Okumak",
+          "En Hızlı Okuma Teknikleri",
+          "Kitapların Basım Tarihi",
         ],
         0,
-        [
-          "Bütün metni kapsayanı seç.",
-          "Choose the title covering the whole text.",
-        ],
-        [
-          "Başlık, metnin anlama ve düşünme vurgusunu kapsar.",
-          "This title captures the emphasis on understanding and reflection.",
-        ],
+        "Bütün metni kapsayanı seç.",
+        "Başlık, metnin anlama ve düşünme vurgusunu kapsar.",
         "main-idea",
       ),
     ],

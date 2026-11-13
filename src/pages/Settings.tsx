@@ -11,7 +11,7 @@ import { Capacitor } from "@capacitor/core";
 import { useApp } from "../store";
 import { parseBackup } from "../domain/storage";
 import type { Settings as SettingsType } from "../domain/model";
-const VERSION = "0.2.1";
+const VERSION = "0.2.2";
 function NumericControl({
   label,
   value,
@@ -154,7 +154,7 @@ export function Settings({
   async function exportData() {
     try {
       const data = JSON.stringify(state, null, 2);
-      const name = `YKSMania-backup-${new Date().toISOString().slice(0, 10)}.json`;
+      const name = `YKSMania-yedek-${new Date().toISOString().slice(0, 10)}.json`;
       if (Capacitor.isNativePlatform()) {
         const [{ Filesystem, Directory, Encoding }, { Share }] =
           await Promise.all([
@@ -242,17 +242,6 @@ export function Settings({
       <div className="settings-grid">
         <section className="panel settings-panel">
           <h2>{t("general")}</h2>
-          <label className="field">
-            {t("language")}
-            <select
-              aria-label={t("language")}
-              value={state.settings.locale}
-              onChange={(e) => set("locale", e.target.value as "tr" | "en")}
-            >
-              <option value="tr">Türkçe</option>
-              <option value="en">English</option>
-            </select>
-          </label>
           <label className="field">
             {t("examDate")}
             <input

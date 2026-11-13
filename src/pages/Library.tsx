@@ -199,7 +199,7 @@ export function Library() {
         {catalogue && (
           <p className="small">
             <strong>{catalogue.name}</strong> ·{" "}
-            {catalogue.entries.length.toLocaleString()}{" "}
+            {catalogue.entries.length.toLocaleString("tr-TR")}{" "}
             {t("catalogueReferences")} ·{" "}
             {(
               catalogue.entries.reduce((n, e) => n + e.bytes, 0) /

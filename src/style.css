@@ -477,14 +477,6 @@ small,
 .save-status.error svg {
   color: var(--danger);
 }
-.locale-button {
-  background: var(--surface-2);
-  border: 1px solid var(--border);
-  height: 2rem;
-  min-width: 2.5rem;
-  border-radius: 0.4rem;
-  font-size: 0.7em;
-}
 .mobile-menu {
   display: none;
 }
@@ -1841,6 +1833,12 @@ progress::-moz-progress-bar {
 .settings-buttons button,
 .settings-panel > .secondary {
   font-size: 0.8em;
+}
+.settings-buttons button,
+.settings-panel > button {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 .version-row {
   display: flex;

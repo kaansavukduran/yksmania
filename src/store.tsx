@@ -100,18 +100,16 @@ export function Provider({ children }: { children: ReactNode }) {
     return (
       <main className="boot">
         <h1>YKSMania</h1>
-        <p>{translate("loadError", "tr")}</p>
-        <p>{translate("loadError", "en")}</p>
-        <button onClick={() => location.reload()}>Yeniden dene / Retry</button>
+        <p>{translate("loadError")}</p>
+        <button onClick={() => location.reload()}>{translate("retry")}</button>
       </main>
     );
   if (!state)
     return (
       <main className="boot" aria-busy="true">
-        YKSMania · {translate("loading", "tr")}
+        YKSMania · {translate("loading")}
       </main>
     );
-  const locale = state.settings.locale;
   return (
     <Context.Provider
       value={{
@@ -124,8 +122,8 @@ export function Provider({ children }: { children: ReactNode }) {
         retry: () => {
           void persist(current.current).catch(() => {});
         },
-        t: (k) => translate(k, locale),
-        l: (v) => localise(v, locale),
+        t: translate,
+        l: localise,
         toast,
       }}
     >

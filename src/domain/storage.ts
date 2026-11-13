@@ -92,7 +92,9 @@ export async function loadState(): Promise<AppState> {
   const d = await db();
   const data = await d.get("state", "current");
   if (!data) return initialState();
-  return validateState(data);
+  const state = validateState(data);
+  if (data.settings?.locale === "en") await d.put("state", state, "current");
+  return state;
 }
 export async function saveState(state: AppState): Promise<void> {
   const d = await db();

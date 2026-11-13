@@ -57,7 +57,7 @@ function WebUpdates({
   return null;
 }
 export default function App() {
-  const { state, t, update, commit, status, retry, toast } = useApp();
+  const { state, t, commit, status, retry, toast } = useApp();
   const [route, setRoute] = useState(() => location.hash.slice(1) || "/today");
   const [online, setOnline] = useState(navigator.onLine);
   const [menu, setMenu] = useState(false);
@@ -111,7 +111,7 @@ export default function App() {
     };
   }, []);
   useEffect(() => {
-    document.documentElement.lang = state.settings.locale;
+    document.documentElement.lang = "tr";
     document.documentElement.dataset.theme = state.settings.theme;
     document.documentElement.dataset.font = state.settings.font;
     document.documentElement.style.fontSize = `${(16 * state.settings.scale) / 100}px`;
@@ -123,7 +123,6 @@ export default function App() {
       ? "on"
       : "off";
   }, [
-    state.settings.locale,
     state.settings.theme,
     state.settings.font,
     state.settings.scale,
@@ -208,7 +207,7 @@ export default function App() {
           document.getElementById("main-content")?.focus();
         }}
       >
-        {state.settings.locale === "tr" ? "İçeriğe geç" : "Skip to content"}
+        {t("skipToContent")}
       </a>
       <aside
         className={`sidebar ${menu ? "menu-open" : ""}`}
@@ -225,11 +224,7 @@ export default function App() {
           </span>
         </a>
         <p className="sidebar-caption">{t("brandNote")}</p>
-        <nav
-          aria-label={
-            state.settings.locale === "tr" ? "Ana gezinme" : "Main navigation"
-          }
-        >
+        <nav aria-label={t("mainNavigation")}>
           {routes
             .filter((v) => v.key !== "settings")
             .map(({ route: r, key, Icon }) => (
@@ -258,7 +253,7 @@ export default function App() {
             <Settings2 size={20} />
             {t("settings")}
           </button>
-          <span className="sidebar-version">0.2.1 alpha</span>
+          <span className="sidebar-version">0.2.2 alpha</span>
         </div>
       </aside>
       {menu && (
@@ -272,13 +267,7 @@ export default function App() {
         <header className="topbar">
           <button
             className="icon-button mobile-menu"
-            aria-label={
-              menu
-                ? t("close")
-                : state.settings.locale === "tr"
-                  ? "Menüyü aç"
-                  : "Open menu"
-            }
+            aria-label={menu ? t("close") : t("openMenu")}
             aria-expanded={menu}
             onClick={() => setMenu(!menu)}
           >
@@ -311,21 +300,6 @@ export default function App() {
               {online ? <Wifi size={15} /> : <WifiOff size={15} />}
               <span>{t(online ? "online" : "offline")}</span>
             </span>
-            <button
-              className="locale-button"
-              aria-label={`${state.settings.locale === "tr" ? "TR" : "EN"} · ${t("language")}`}
-              onClick={() => {
-                void update((s) => ({
-                  ...s,
-                  settings: {
-                    ...s.settings,
-                    locale: s.settings.locale === "tr" ? "en" : "tr",
-                  },
-                })).catch(() => {});
-              }}
-            >
-              {state.settings.locale === "tr" ? "TR" : "EN"}
-            </button>
           </div>
         </header>
         {status === "error" && (

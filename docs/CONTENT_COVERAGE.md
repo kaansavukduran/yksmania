@@ -1,4 +1,4 @@
-# Content coverage, 0.2.0 alpha
+# Content coverage, 0.2.2 alpha
 
 These are different measurements. None measures a learner's mastery.
 
@@ -7,7 +7,7 @@ These are different measurements. None measures a learner's mastery.
 | Main topic reference | 341 source rows: TYT 201, numerical AYT 140; stable topic IDs retained |
 | Detailed cheat-sheet outline | 479 headings; finer granularity and overlap with the main outline |
 | Interactive teaching | 9 lessons with authored SVG/vector interactions |
-| Interactive question bank | 45 original bilingual exercises; no official-item claim |
+| Interactive question bank | 45 original Turkish exercises; no official-item claim |
 | Private archive inventory | 8,584 PDF file records in 246 folders; about 23.6 GB, before content-hash deduplication |
 | Locally prepared private packs | 143 PDFs / 4,989 pages: 126 cheat sheets, 14 MEBİ-named PDFs and 3 OGM past-question books |
 

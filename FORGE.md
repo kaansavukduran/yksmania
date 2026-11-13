@@ -1,4 +1,32 @@
-# Forge checkpoint: YKSMania 0.2.1 alpha
+# Forge checkpoint: YKSMania 0.2.2 alpha
+
+User decision: this application is Turkish only. Language choices and English
+translations were removed from the app, visual lessons and authored question bank.
+AGENTS.md and the applicable project profile preserve this choice for future work;
+no English translation work should be added. Existing platform/art/scheduling
+decisions remain in force. The private Drive export remains blocked separately
+and was not retried as part of this language change.
+
+Initial state, document language, formatting, loading and failure screens are Turkish
+regardless of device language. Earlier `en` preferences and backups normalize to `tr`
+without changing other settings, drafts, answers, notes, original review targets or
+PDFs. Storage shape/version and stable lesson/question IDs are retained. User input
+and imported source documents are not translated. Old unknown/corrupt locales are
+still rejected. Source catalogue and document stores are not rewritten.
+
+Turkish text/answer preservation was checked against the prior source, including
+option order and answer indexes. The bank remains 9 interactive lessons / 45 original
+questions. The settings and visual regressions now exercise Turkish at 200% UI,
+150% text and 390px. A newly observed long update-button overflow was fixed with
+wrapping inside the existing panel. See docs/QA.md YKS-007 for migration and device
+language tests. Application/package version 0.2.2, Android versionCode 4.
+
+Local check/build, 21 unit/storage/content tests and 21 browser acceptance tests:
+PASS. Final deployed and package evidence is recorded in the delivery checkpoint.
+Physical devices, clean installers/portable extraction and native two-package
+update migration remain open gates; this is still an alpha/debug APK release.
+
+# Delivered checkpoint: YKSMania 0.2.1 alpha
 
 Current task: move theory notes below the content, preserve the question screen's
 existing bottom notes, and continue the verified cross-platform delivery flow.

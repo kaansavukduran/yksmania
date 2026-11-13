@@ -1,10 +1,8 @@
 import { useId } from "react";
 import elements from "../data/elements.json";
-import { useApp } from "../store";
 import { useExploration } from "./useExploration";
 import { useVisualCopy } from "./copy";
 export default function PeriodicExplorer() {
-  const { state } = useApp();
   const v = useVisualCopy();
   const uid = useId();
   const [s, set] = useExploration("periodic", { z: 11, all: false, charge: 0 });
@@ -15,7 +13,6 @@ export default function PeriodicExplorer() {
   const choose = (n: number) =>
     set({ z: n, charge: 0, ...(n > 20 ? { all: true } : {}) });
   const list = s.all ? elements : elements.slice(0, 20);
-  const tr = state.settings.locale === "tr";
   return (
     <section
       className="visual-lab periodic-lab"
@@ -31,7 +28,7 @@ export default function PeriodicExplorer() {
           <select value={z} onChange={(e) => choose(Number(e.target.value))}>
             {elements.map((e) => (
               <option key={e.z} value={e.z}>
-                {e.z} · {e.symbol} · {tr ? e.tr : e.en}
+                {e.z} · {e.symbol} · {e.tr}
               </option>
             ))}
           </select>
@@ -115,12 +112,12 @@ export default function PeriodicExplorer() {
                       }
                     : undefined
                 }
-                aria-label={`${e.z} ${e.symbol} ${tr ? e.tr : e.en}`}
+                aria-label={`${e.z} ${e.symbol} ${e.tr}`}
                 aria-pressed={e.z === z}
                 onClick={() => choose(e.z)}
               >
                 <small>{e.z}</small> <strong>{e.symbol}</strong>{" "}
-                {!s.all && <span>{tr ? e.tr : e.en}</span>}
+                {!s.all && <span>{e.tr}</span>}
               </button>
             );
           })}
@@ -130,7 +127,7 @@ export default function PeriodicExplorer() {
       <div className="atom-inspector">
         <div className="element-detail" aria-live="polite">
           <span className="element-symbol">{atom.symbol}</span>
-          <h3>{tr ? atom.tr : atom.en}</h3>
+          <h3>{atom.tr}</h3>
           <dl>
             <div>
               <dt>{v("atomicNumber")}</dt>

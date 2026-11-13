@@ -117,7 +117,6 @@ export function Mistakes({
                   {l(
                     lessonById(s.lessonId)?.title ?? {
                       tr: s.lessonId,
-                      en: s.lessonId,
                     },
                   )}
                   <ArrowUpRight size={15} />

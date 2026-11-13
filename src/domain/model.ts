@@ -1,7 +1,7 @@
 import { z } from "zod";
-export type Locale = "tr" | "en";
-export type Text = { tr: string; en: string };
-export const txt = (tr: string, en: string): Text => ({ tr, en });
+export type Locale = "tr";
+export type Text = { tr: string };
+export const txt = (tr: string): Text => ({ tr });
 const date = z
   .string()
   .regex(/^\d{4}-\d{2}-\d{2}$/)
@@ -15,7 +15,8 @@ const date = z
   });
 const id = z.string().min(1).max(160);
 export const settingsSchema = z.object({
-  locale: z.enum(["tr", "en"]),
+  // Read earlier English preferences/backups without losing the rest of the state.
+  locale: z.enum(["tr", "en"]).transform(() => "tr" as const),
   theme: z.enum(["dark", "light", "system", "contrast"]),
   scale: z
     .number()
@@ -107,11 +108,7 @@ export type AppState = z.infer<typeof stateSchema>;
 export const initialState = (): AppState => ({
   version: 1,
   settings: {
-    locale:
-      typeof navigator !== "undefined" &&
-      navigator.language.toLowerCase().startsWith("en")
-        ? "en"
-        : "tr",
+    locale: "tr",
     theme: "dark",
     scale: 100,
     textSize: 100,

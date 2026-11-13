@@ -6,137 +6,114 @@ import { useVisualCopy } from "./copy";
 const parts = [
   {
     id: "nucleus",
-    name: text("Çekirdek", "Nucleus"),
-    structure: text("Çift zarlı yapı", "Double-membrane structure"),
+    name: text("Çekirdek"),
+    structure: text("Çift zarlı yapı"),
     description: text(
       "Çekirdekteki DNA kalıtsal bilgiyi taşır. Bu bilginin bir bölümü RNA’ya aktarılır. Tipik ökaryot hücrede bulunur; olgun insan alyuvarı gibi özelleşmiş istisnalar vardır.",
-      "Nuclear DNA stores hereditary information, some of which is transcribed into RNA. Typical eukaryotic cells have a nucleus; specialised exceptions include mature human red blood cells.",
     ),
   },
   {
     id: "mitochondrion",
-    name: text("Mitokondri", "Mitochondrion"),
-    structure: text("Çift zarlı organel", "Double-membrane organelle"),
+    name: text("Mitokondri"),
+    structure: text("Çift zarlı organel"),
     description: text(
       "Oksijenli solunumun önemli basamakları burada gerçekleşir. Besinlerdeki enerjinin ATP’ye aktarılmasında rol alır. Hem hayvan hem bitki hücrelerinde bulunabilir.",
-      "Important stages of aerobic respiration occur here. It helps transfer energy from nutrients to ATP. It occurs in both animal and plant cells.",
     ),
   },
   {
     id: "ribosome",
-    name: text("Ribozom", "Ribosome"),
-    structure: text("Zarsız organel", "Non-membranous organelle"),
+    name: text("Ribozom"),
+    structure: text("Zarsız organel"),
     description: text(
       "mRNA bilgisine göre amino asitleri birleştirerek protein sentezler. Prokaryotlarda da bulunur. Sitoplazmada serbest veya granüllü ER’ye bağlı olabilir.",
-      "Synthesises proteins by joining amino acids according to mRNA information. Prokaryotes also have ribosomes. They may be free in the cytoplasm or bound to rough ER.",
     ),
   },
   {
     id: "er",
-    name: text("Endoplazmik retikulum", "Endoplasmic reticulum"),
-    structure: text("Tek zarlı organel", "Single-membrane organelle"),
+    name: text("Endoplazmik retikulum"),
+    structure: text("Tek zarlı organel"),
     description: text(
       "Granüllü ER’nin yüzeyinde ribozomlar bulunur; salgılanacak bazı proteinlerin işlenmesi ve taşınmasına katılır. Granülsüz ER, lipit sentezi gibi görevler üstlenir.",
-      "Rough ER has ribosomes on its surface and participates in processing and transporting some secreted proteins. Smooth ER performs tasks such as lipid synthesis.",
     ),
   },
   {
     id: "golgi",
-    name: text("Golgi aygıtı", "Golgi apparatus"),
-    structure: text("Tek zarlı organel", "Single-membrane organelle"),
+    name: text("Golgi aygıtı"),
+    structure: text("Tek zarlı organel"),
     description: text(
       "ER’den gelen bazı ürünleri değiştirir, sınıflandırır ve veziküllere paketler. Protein sentezi yapan yapı Golgi değil, ribozomdur.",
-      "Modifies, sorts and packages some ER products into vesicles. Ribosomes synthesise proteins; Golgi does not.",
     ),
   },
   {
     id: "membrane",
-    name: text("Hücre zarı", "Plasma membrane"),
-    structure: text(
-      "Organel değil; hücrenin seçici sınırı",
-      "Not an organelle; the selective cell boundary",
-    ),
+    name: text("Hücre zarı"),
+    structure: text("Organel değil; hücrenin seçici sınırı"),
     description: text(
       "Çift katlı lipit tabakası ve proteinlerden oluşur. Madde geçişini düzenler. “Çift katlı lipit” ifadesi, mitokondrideki gibi iki ayrı zar demek değildir.",
-      "Consists of a lipid bilayer and proteins and regulates transport. A lipid bilayer is not the same as two separate membranes, as in a mitochondrion.",
     ),
   },
   {
     id: "vacuole",
-    name: text("Koful", "Vacuole"),
-    structure: text("Tek zarlı organel", "Single-membrane organelle"),
+    name: text("Koful"),
+    structure: text("Tek zarlı organel"),
     description: text(
       "Depolama ve hücre içi dengeye katılır. Olgun bitki hücrelerindeki büyük merkezî koful, turgor basıncında önemli rol oynar.",
-      "Participates in storage and internal balance. The large central vacuole of mature plant cells is important for turgor pressure.",
     ),
   },
   {
     id: "chloroplast",
-    name: text("Kloroplast", "Chloroplast"),
-    structure: text("Çift zarlı plastit", "Double-membrane plastid"),
+    name: text("Kloroplast"),
+    structure: text("Çift zarlı plastit"),
     description: text(
       "Fotosentezde ışık enerjisinin kimyasal enerjiye dönüştürülmesine katılır. Yeşil bitki hücrelerinde görülebilir; kök gibi her bitki hücresinde bulunması gerekmez.",
-      "Participates in converting light energy into chemical energy during photosynthesis. It occurs in green plant cells, but not necessarily in all plant cells, such as root cells.",
     ),
   },
   {
     id: "lysosome",
-    name: text("Lizozom", "Lysosome"),
-    structure: text("Tek zarlı organel", "Single-membrane organelle"),
+    name: text("Lizozom"),
+    structure: text("Tek zarlı organel"),
     description: text(
       "Hücre içi sindirimde enzimleriyle görev alır. Tipik hayvan hücresi şemasında gösterilir. Bitkilerde bazı benzer yıkım görevlerini litik kofullar üstlenebilir.",
-      "Its enzymes participate in intracellular digestion. It is shown in this typical animal cell; lytic vacuoles can perform similar degradative functions in plants.",
     ),
   },
   {
     id: "peroxisome",
-    name: text("Peroksizom", "Peroxisome"),
-    structure: text("Tek zarlı organel", "Single-membrane organelle"),
+    name: text("Peroksizom"),
+    structure: text("Tek zarlı organel"),
     description: text(
       "Bazı oksidasyon tepkimelerinde ve hidrojen peroksidin parçalanmasında görev alır. Katalaz enzimi bu ilişkiye örnektir. Mitokondriyle aynı yapı değildir.",
-      "Participates in some oxidation reactions and in breaking down hydrogen peroxide; catalase is an example. It is not the same structure as a mitochondrion.",
     ),
   },
   {
     id: "centrosome",
-    name: text("Sentrozom", "Centrosome"),
-    structure: text("Zarsız yapı", "Non-membranous structure"),
+    name: text("Sentrozom"),
+    structure: text("Zarsız yapı"),
     description: text(
       "Tipik hayvan hücresinde mikrotübüllerin düzenlenmesine katılır. Şemadaki sentriyollü yapı yüksek yapılı bitkilerin tipik hücrelerinde gösterilmez. İğ ipliklerini yalnız sentrozom varlığıyla açıklama.",
-      "Helps organise microtubules in a typical animal cell. This centriole-containing structure is not shown in typical higher-plant cells. Do not assume spindle formation requires it in every cell.",
     ),
   },
   {
     id: "cytoskeleton",
-    name: text("Hücre iskeleti", "Cytoskeleton"),
-    structure: text("Zarsız protein ağı", "Non-membranous protein network"),
+    name: text("Hücre iskeleti"),
+    structure: text("Zarsız protein ağı"),
     description: text(
       "Hücre şekline, harekete ve hücre içi taşımaya katılan proteinlerden oluşur. Mikrotübüller ve mikrofilamentler bu ağın elemanlarıdır.",
-      "A protein network involved in cell shape, movement and intracellular transport. Microtubules and microfilaments are components.",
     ),
   },
   {
     id: "wall",
-    name: text("Hücre duvarı", "Cell wall"),
-    structure: text(
-      "Organel değil; zarın dışında destek",
-      "Not an organelle; support outside the membrane",
-    ),
+    name: text("Hücre duvarı"),
+    structure: text("Organel değil; zarın dışında destek"),
     description: text(
       "Bitki hücresinde temel yapısal maddesi selülozdur. Destek ve biçim sağlar. Hayvan hücrelerinde bulunmaz; hücre zarıyla karıştırılmamalıdır.",
-      "Cellulose is its main structural material in plant cells. It provides support and shape. Animal cells lack a wall; do not confuse it with the plasma membrane.",
     ),
   },
   {
     id: "cytoplasm",
-    name: text("Sitoplazma", "Cytoplasm"),
-    structure: text(
-      "Sitozol, organeller ve hücre iskeleti",
-      "Cytosol, organelles and cytoskeleton",
-    ),
+    name: text("Sitoplazma"),
+    structure: text("Sitozol, organeller ve hücre iskeleti"),
     description: text(
       "Ökaryot hücrede hücre zarı ile çekirdek arasındaki içeriği kapsar. Yalnızca “su dolu boşluk” değildir; birçok tepkime burada gerçekleşir.",
-      "In a eukaryotic cell, it includes the contents between the plasma membrane and nucleus. It is not an empty watery space; many reactions occur here.",
     ),
   },
 ];

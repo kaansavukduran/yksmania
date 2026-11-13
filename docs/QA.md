@@ -1,6 +1,6 @@
 # Quality evidence
 
-Target 0.2.1 alpha. This file is updated at the verified Forge checkpoint.
+Target 0.2.2 alpha. This file is updated at the verified Forge checkpoint.
 
 ## Automated acceptance
 
@@ -151,3 +151,37 @@ and 20 browser tests, Windows/Linux packaged offline lesson/reload/process resta
 and Android signature/manifest verification. Published-origin run 43487744351 also
 passed 20/20 browser tests, including the new layout/note regression. Release source
 and publication evidence are recorded in FORGE.md.
+
+## 0.2.2 — YKS-007: Turkish-only product language
+
+Source: explicit user decision, 2026-11-13. Turkish is now the sole product language.
+Language switches and selectors, English UI messages, lesson/question translations,
+visual-board translations and English element names were removed. The loading and
+failure screens, navigation labels, PDF controls and number/date formatting remain
+Turkish even on an English-language device. User-authored notes, source PDF contents
+and filenames are preserved.
+
+Compatibility: the stored state/backup shape and lesson/question IDs are unchanged.
+Valid old `en` preferences normalize to `tr`; the load path persists that normalization.
+Unknown locale values still fail validation. The v1 database fixture now starts with
+an English preference and verifies persisted Turkish locale, retained answer/draft
+note and original PDF after the database upgrade. Backup normalization is separately
+covered by storage tests. Original review dates and other settings are untouched.
+
+The one-time content projection check compared all Turkish lesson/cell labels,
+question IDs, option order, correct-answer indexes, hints, explanations and source
+labels against the prior commit. All were unchanged; no educational rewrite was
+mixed into translation removal. Previous English UI acceptance was replaced with
+the same Turkish settings/learning actions, preserving narrow-screen 200% UI / 150%
+text, Lexend, keyboard access, reduced motion and persistence checks.
+
+At 390px with 200% UI / 150% text and Lexend, the Turkish update-check button caused
+428px page overflow. Settings buttons now wrap within their panel without changing
+font/scale or clipping. The settings regression checks page geometry and actually
+activates the update check, then continues into a lesson and question session.
+
+`YKS-007 English device language still opens Turkish-only UI and retains the user's text`
+uses a fresh en-US browser context and exercises settings, practice, user-authored
+English text, selected answer and reload. That compatibility test does not reintroduce
+English as a supported UI language. Final local, deployed and package results are
+recorded at the 0.2.2 Forge checkpoint; earlier version evidence above is historical.

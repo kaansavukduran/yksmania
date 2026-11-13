@@ -12,13 +12,39 @@ import {
 describe("durable local state and untrusted backups", () => {
   it("persists independent settings without resetting the others", async () => {
     const s = initialState();
-    s.settings.locale = "en";
     s.settings.scale = 135;
     s.settings.textSize = 150;
     s.settings.font = "lexend";
     s.settings.motion = false;
     await saveState(s);
     expect((await loadState()).settings).toEqual(s.settings);
+  });
+  it("normalizes legacy English preferences and backups without changing user records", async () => {
+    const s = initialState();
+    s.settings.scale = 135;
+    s.settings.textSize = 150;
+    s.settings.font = "lexend";
+    s.notes = { personal: "Keep my own English note: ÇĞİÖŞÜ." };
+    s.draft = {
+      lessonId: "rasyonel-sayilar",
+      phase: "practice",
+      index: 0,
+      responses: [],
+      selected: 1,
+      checked: false,
+      hint: true,
+      confidence: "low",
+      note: "My original note",
+      startedAt: 123,
+    };
+    const legacy = { ...s, settings: { ...s.settings, locale: "en" } };
+    expect(validateState(legacy)).toEqual(s);
+    expect(await parseBackup(JSON.stringify(legacy))).toEqual(s);
+    await saveState(validateState(legacy));
+    expect(await loadState()).toEqual(s);
+    expect(() =>
+      validateState({ ...s, settings: { ...s.settings, locale: "xx" } }),
+    ).toThrow();
   });
   it("keeps an unfinished answer and note after reopening", async () => {
     const s = initialState();

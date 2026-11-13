@@ -65,7 +65,7 @@ export function SourceList({
           {!!entries.length && (
             <>
               <p className="small muted">
-                {entries.length.toLocaleString()} {t("catalogueReferences")} ·{" "}
+                {entries.length.toLocaleString("tr-TR")} {t("catalogueReferences")} ·{" "}
                 {entries.filter((e) => localBySource.has(e.id)).length}{" "}
                 {t("onDevice")}. {t("pdfNotQuestionBank")}
               </p>

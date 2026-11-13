@@ -185,11 +185,7 @@ export default function PdfReader({
               role="img"
             />
             <details className="pdf-text">
-              <summary>
-                {state.settings.locale === "tr"
-                  ? "Sayfanın metni"
-                  : "Page text"}
-              </summary>
+              <summary>{t("pdfText")}</summary>
               <p>{text}</p>
             </details>
           </>

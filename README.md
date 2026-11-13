@@ -1,15 +1,15 @@
 # YKSMania
 
-An offline-first YKS learning application by Fragaria Interactive. **0.2.1 alpha: visual learning and private resource import; not the complete curriculum.**
+An offline-first YKS learning application by Fragaria Interactive. **0.2.2 alpha: visual learning and private resource import; not the complete curriculum.**
 
-[Open the web app](https://yksmania.vercel.app) · [Download alpha packages](https://github.com/kaansavukduran/yksmania/releases/tag/v0.2.1-alpha.1)
+[Open the web app](https://yksmania.vercel.app) · [Download alpha packages](https://github.com/kaansavukduran/yksmania/releases/tag/v0.2.2-alpha.1)
 
 ## What works
 
 - TYT's 10 subjects and numerical AYT's 5 subjects: all 341 main topic rows and
   479 detailed cheat-sheet headings from the source workbooks (different granularity,
   not 820 distinct official exam topics).
-- Nine bilingual lessons, nine interactive vector explanations, 45 original exercises, hints, confidence and explanations.
+- Nine Turkish lessons, nine interactive vector explanations, 45 original exercises, hints, confidence and explanations.
 - Clickable animal/plant cells, a 118-element periodic table, area-preserving geometry,
   fractions, algebraic areas, force balance, moles, ATP and paragraph structure.
 - Full-width topic explanations with notes below the content; question notes remain
@@ -21,7 +21,7 @@ An offline-first YKS learning application by Fragaria Interactive. **0.2.1 alpha
 - Offline PDF reader with direct page navigation, retained reading positions and bundled worker/font/image resources.
 - Private source catalogue import, multi-PDF/folder import, streaming hashes, duplicate
   merging, cancellation and per-file failure reporting. PDF limit: 256 MB each.
-- Turkish/English, dark/light/system/high contrast, independent interface/text scaling,
+- Turkish only, dark/light/system/high contrast, independent interface/text scaling,
   bundled Lexend, reduced motion and optional gamification/sound.
 - New left-facing cartoon Aion sprite atlas, real event-driven response, persistent discovery milestones.
 - Validated progress backup/restore. PDFs are separate and must be backed up separately.

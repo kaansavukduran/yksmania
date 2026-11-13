@@ -25,6 +25,48 @@ async function answer(page: Page, index: number, last = false) {
     .click();
 }
 test.use({ locale: "tr-TR" });
+test("YKS-007 English device language still opens Turkish-only UI and retains the user's text", async ({
+  browser,
+}) => {
+  const context = await browser.newContext({ locale: "en-US" });
+  try {
+    const page = await context.newPage();
+    await open(page);
+    expect(await page.evaluate(() => navigator.language)).toBe("en-US");
+    await expect(page.locator("html")).toHaveAttribute("lang", "tr");
+    await expect(page.locator(".locale-button")).toHaveCount(0);
+    await page.getByRole("button", { name: "Ayarlar", exact: true }).click();
+    await expect(
+      page.getByRole("heading", { name: "Ayarlar", exact: true }),
+    ).toBeVisible();
+    await expect(
+      page.getByRole("combobox", { name: "Dil", exact: true }),
+    ).toHaveCount(0);
+    await page.getByRole("button", { name: "Bugün", exact: true }).click();
+    await start(page);
+    await expect(
+      page.getByRole("button", { name: "Cevabı kontrol et", exact: true }),
+    ).toBeVisible();
+    await page
+      .getByRole("textbox", { name: "Notun", exact: true })
+      .fill("Keep my English note unchanged: ÇĞİÖŞÜ.");
+    await page.locator(".answer").nth(1).click();
+    await expect(
+      page.getByText("Bu cihazda kaydedildi", { exact: true }),
+    ).toBeVisible();
+    await page.reload();
+    await expect(page.locator("html")).toHaveAttribute("lang", "tr");
+    await expect(
+      page.getByRole("textbox", { name: "Notun", exact: true }),
+    ).toHaveValue("Keep my English note unchanged: ÇĞİÖŞÜ.");
+    await expect(page.locator(".answer").nth(1)).toHaveAttribute(
+      "aria-pressed",
+      "true",
+    );
+  } finally {
+    await context.close();
+  }
+});
 test("turning off gamification hides world rewards and keeps learning usable", async ({
   page,
 }) => {
@@ -232,7 +274,7 @@ test("offline reload preserves a draft and supports completing it", async ({
     page.getByRole("heading", { name: "Bir adım daha ilerledin." }),
   ).toBeVisible();
 });
-test("settings stay independent at 200% scale, large text and English on a narrow screen", async ({
+test("settings stay independent at 200% scale, large Turkish text on a narrow screen", async ({
   page,
 }) => {
   await page.setViewportSize({ width: 390, height: 844 });
@@ -246,38 +288,43 @@ test("settings stay independent at 200% scale, large text and English on a narro
   );
   await page.getByLabel("Yalnızca yazı boyutu %", { exact: true }).fill("150");
   await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
-  await page.getByLabel("Dil", { exact: true }).selectOption("en");
   await expect(
-    page.getByRole("heading", { name: "Settings", exact: true }),
+    page.getByRole("heading", { name: "Ayarlar", exact: true }),
   ).toBeVisible();
   await expect(
-    page.getByLabel("Text size only %", { exact: true }),
+    page.getByLabel("Yalnızca yazı boyutu %", { exact: true }),
   ).toHaveValue("150");
-  await expect(page.getByLabel("Font", { exact: true })).toHaveValue("lexend");
+  await expect(page.getByLabel("Yazı tipi", { exact: true })).toHaveValue(
+    "lexend",
+  );
   await page.reload();
+  await expect(page.getByLabel("Arayüz ölçeği %", { exact: true })).toHaveValue(
+    "200",
+  );
   await expect(
-    page.getByLabel("Interface scale %", { exact: true }),
-  ).toHaveValue("200");
-  await expect(
-    page.getByLabel("Text size only %", { exact: true }),
+    page.getByLabel("Yalnızca yazı boyutu %", { exact: true }),
   ).toHaveValue("150");
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= innerWidth + 1,
     ),
   ).toBe(true);
-  await page.getByRole("button", { name: "Open menu", exact: true }).click();
   await page
-    .getByRole("button", { name: "Topic explanations", exact: true })
+    .getByRole("button", { name: "Güncellemeleri kontrol et", exact: true })
     .click();
-  await page.getByRole("button", { name: /Mathematics.*31/ }).click();
-  await page.getByRole("button", { name: /Rational numbers.*18/ }).click();
+  await expect(
+    page.getByText("Bu web kanalında yeni sürüm bulunamadı.", { exact: true }),
+  ).toBeVisible();
+  await page.getByRole("button", { name: "Menüyü aç", exact: true }).click();
   await page
-    .getByRole("button", { name: "Start questions", exact: true })
+    .getByRole("button", { name: "Konu Anlatımı", exact: true })
     .click();
+  await page.getByRole("button", { name: /Matematik.*31/ }).click();
+  await page.getByRole("button", { name: /Rasyonel sayılar.*18/ }).click();
+  await page.getByRole("button", { name: "Sorulara geç", exact: true }).click();
   await expect(page.locator(".answer").first()).toBeVisible();
   await expect(
-    page.getByRole("button", { name: "Check answer", exact: true }),
+    page.getByRole("button", { name: "Cevabı kontrol et", exact: true }),
   ).toBeVisible();
   expect(
     await page.evaluate(
@@ -466,7 +513,7 @@ test("v1 data opens in the upgraded database without losing a draft or PDF", asy
     const fixture = {
       version: 1,
       settings: {
-        locale: "tr",
+        locale: "en",
         theme: "dark",
         font: "system",
         scale: 100,
@@ -525,9 +572,35 @@ test("v1 data opens in the upgraded database without losing a draft or PDF", asy
     });
   });
   await open(page);
+  expect(
+    await page.evaluate(
+      () =>
+        new Promise<string>((resolve, reject) => {
+          const req = indexedDB.open("yksmania");
+          req.onerror = () => reject(req.error);
+          req.onsuccess = () => {
+            const d = req.result;
+            const read = d
+              .transaction("state")
+              .objectStore("state")
+              .get("current");
+            read.onsuccess = () => {
+              d.close();
+              resolve(read.result.settings.locale);
+            };
+            read.onerror = () => {
+              d.close();
+              reject(read.error);
+            };
+          };
+        }),
+    ),
+  ).toBe("tr");
   await page
     .getByRole("button", { name: "Kaldığın yerden devam et", exact: true })
     .click();
+  await expect(page.locator("html")).toHaveAttribute("lang", "tr");
+  await expect(page.locator(".locale-button")).toHaveCount(0);
   await expect(page.locator(".answer").nth(1)).toHaveAttribute(
     "aria-pressed",
     "true",
@@ -736,7 +809,7 @@ test("geometry pieces actually translate while area is conserved and exploration
   await page.reload();
   await expect(page.locator(".area-result")).toContainText("22,5");
 });
-test("visual boards remain usable with English, large independent scales, reduced motion and narrow touch layout", async ({
+test("visual boards remain usable in Turkish, large independent scales, reduced motion and narrow touch layout", async ({
   page,
 }) => {
   await page.setViewportSize({ width: 390, height: 844 });
@@ -746,18 +819,17 @@ test("visual boards remain usable with English, large independent scales, reduce
   await page.getByRole("button", { name: "Ayarlar", exact: true }).click();
   await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
   await page.getByLabel("Yalnızca yazı boyutu %", { exact: true }).fill("150");
-  await page.getByLabel("Dil", { exact: true }).selectOption("en");
-  await page.getByRole("button", { name: "Open menu", exact: true }).click();
+  await page.getByRole("button", { name: "Menüyü aç", exact: true }).click();
   await page
-    .getByRole("button", { name: "Topic explanations", exact: true })
+    .getByRole("button", { name: "Konu Anlatımı", exact: true })
     .click();
-  await page.getByRole("button", { name: /Geometry.*16/ }).click();
+  await page.getByRole("button", { name: /Geometri.*16/ }).click();
   await page
-    .getByRole("button", { name: /Areas of triangles and parallelograms/ })
+    .getByRole("button", { name: /Üçgen ve paralelkenarda alan/ })
     .click();
-  await page.getByRole("button", { name: "Next step", exact: true }).click();
+  await page.getByRole("button", { name: "Sonraki adım", exact: true }).click();
   await expect(page.locator(".geometry-explanation")).toContainText(
-    "Cut the left triangle",
+    "Soldaki üçgeni dik yükseklik boyunca kes",
   );
   expect(
     await page
@@ -769,9 +841,7 @@ test("visual boards remain usable with English, large independent scales, reduce
       () => document.documentElement.scrollWidth <= innerWidth + 1,
     ),
   ).toBe(true);
-  await page
-    .getByRole("button", { name: "Start questions", exact: true })
-    .click();
+  await page.getByRole("button", { name: "Sorulara geç", exact: true }).click();
   await expect(page.locator(".answer")).toHaveCount(3);
 });
 test("new visual flows have no serious or critical axe violations", async ({
@@ -802,13 +872,11 @@ test("PDF page navigation retains its last valid page after offline reload", asy
     await navigator.serviceWorker.ready;
   });
   await page.getByRole("button", { name: "Kütüphane", exact: true }).click();
-  await page
-    .locator('input[accept="application/pdf,.pdf"]')
-    .setInputFiles({
-      name: "two-pages.pdf",
-      mimeType: "application/pdf",
-      buffer: samplePdf(true),
-    });
+  await page.locator('input[accept="application/pdf,.pdf"]').setInputFiles({
+    name: "two-pages.pdf",
+    mimeType: "application/pdf",
+    buffer: samplePdf(true),
+  });
   await page.locator(".document-open").click();
   await expect(page.locator("canvas")).toBeVisible();
   await page

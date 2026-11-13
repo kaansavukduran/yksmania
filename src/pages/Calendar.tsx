@@ -281,7 +281,6 @@ export function Calendar({
                 {l(
                   lessonById(p.review.lessonId)?.title ?? {
                     tr: p.review.lessonId,
-                    en: p.review.lessonId,
                   },
                 )}{" "}
                 · {t("day")} {p.review.stage}

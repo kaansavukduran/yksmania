@@ -6,6 +6,9 @@ The authenticated private source is identified in the originating task; private
 document links and personal excerpts are deliberately excluded from public code.
 
 Product: an educational application with gamification, not an action game.
+Current explicit project language decision: Turkish only. Earlier bilingual
+checks are historical; do not restore English UI or require English translations.
+Preserve user-written text and original source documents in their existing form.
 
 Applicable: coherent visual design, hierarchy, progressive disclosure, readable
 system typography, independent settings, localization, keyboard and touch access,

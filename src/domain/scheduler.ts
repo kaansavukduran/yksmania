@@ -117,11 +117,10 @@ export function independentCorrect(session: Session): number {
 }
 export function formatDate(
   day: string,
-  locale: "tr" | "en",
+  locale: "tr",
   options: Intl.DateTimeFormatOptions = { day: "numeric", month: "long" },
 ): string {
-  return new Intl.DateTimeFormat(
-    locale === "tr" ? "tr-TR" : "en-GB",
-    options,
-  ).format(new Date(day + "T12:00:00"));
+  return new Intl.DateTimeFormat(locale, options).format(
+    new Date(day + "T12:00:00"),
+  );
 }

@@ -1,6 +1,10 @@
 # YKSMania
 
 Build an offline-first YKS learning application for Windows, Linux, Android and web.
+Product language is Turkish only, per the user's explicit project decision.
+Do not add English UI or translation work. Read earlier English preferences and
+backups by normalizing their locale to Turkish while preserving all other data.
+User-written text and imported source documents retain their original contents.
 Preserve learning events, original review dates, availability, settings and drafts.
 Default review policy: learning day is day 1; reviews on days 3, 7, 21 (+2,+6,+20).
 Never infer mastery from file imports, elapsed time or manually checked tasks.
