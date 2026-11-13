@@ -81,7 +81,12 @@ export function Today({
             <ArrowRight size={18} />
           </button>
           <p className="hero-foot small">
-            {t("catalogueStatus")} · {t("offline")}
+            {lessons.length} {t("readyLessonCount")} ·{" "}
+            {lessons.reduce(
+              (total, lesson) => total + lesson.questions.length,
+              0,
+            )}{" "}
+            {t("originalQuestions")} · {t("offline")}
           </p>
         </div>
         <div className="hero-art">

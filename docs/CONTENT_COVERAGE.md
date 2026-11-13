@@ -1,4 +1,4 @@
-# Content coverage, 0.2.2 alpha
+# Content coverage, 0.3.0 alpha
 
 These are different measurements. None measures a learner's mastery.
 
@@ -6,8 +6,8 @@ These are different measurements. None measures a learner's mastery.
 | --- | --- |
 | Main topic reference | 341 source rows: TYT 201, numerical AYT 140; stable topic IDs retained |
 | Detailed cheat-sheet outline | 479 headings; finer granularity and overlap with the main outline |
-| Interactive teaching | 9 lessons with authored SVG/vector interactions |
-| Interactive question bank | 45 original Turkish exercises; no official-item claim |
+| Interactive teaching | 13 lessons with authored SVG/vector interactions |
+| Interactive question bank | 65 original Turkish exercises; no official-item claim |
 | Private archive inventory | 8,584 PDF file records in 246 folders; about 23.6 GB, before content-hash deduplication |
 | Locally prepared private packs | 143 PDFs / 4,989 pages: 126 cheat sheets, 14 MEBİ-named PDFs and 3 OGM past-question books |
 
@@ -43,6 +43,16 @@ The perpendicular height is distinguished from a slanted side. Other existing
 lessons now contain fraction, algebraic-area, force, molecule, ATP or argument
 structure explorations. Clicks and animation playback earn no learning credit.
 Exploration choices and reading positions are stored separately from responses.
+
+## New AYT coverage in 0.3.0
+
+Four MEBİ AYT topic-summary files were used for a close reading of 12 relevant
+PDF pages. Four original SVG explorations cover secant/tangent and a corner,
+signed electric field/force, dynamic equilibrium/catalyst, and semiconservative
+DNA replication. Twenty original exercises bring the total to 13 lessons / 65
+questions. Exact source-page mappings, scientific assumptions and answer checks
+are in [SOURCE_REVIEW](SOURCE_REVIEW.md). These are curated sections, not a full
+review or conversion of the 143 prepared PDFs or the 8,584-record archive.
 
 ## Private source use
 

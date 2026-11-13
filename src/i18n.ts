@@ -141,7 +141,7 @@ const messages: Record<string, string> = {
   pdfError: "PDF açılamadı. Dosyanın sağlam olduğunu kontrol et.",
   pdfPrev: "Önceki sayfa",
   pdfNext: "Sonraki sayfa",
-  catalogueStatus: "9 hazır ders · 45 özgün soru",
+  readyLessonCount: "hazır ders",
   catalogueBody:
     "Drive arşivi incelendi. Tüm kitaplar bu pakete aktarılmış değildir. Özel ve dağıtım izni belirsiz kaynaklar herkese açık koda eklenmez.",
   worldTitle: "Bilginle büyüyen bir dünya.",
@@ -205,7 +205,7 @@ const messages: Record<string, string> = {
   startOver: "Taslağı bırak ve yeni çalışma aç",
   draftConfirm:
     "Yarım kalan çalışma var. Bu taslak bırakılıp yeni çalışma açılsın mı?",
-  footer: "Fragaria Interactive · YKSMania 0.2.2 alpha",
+  footer: "Fragaria Interactive · YKSMania 0.3.0 alpha",
   scopeNote:
     "İlk çalışan sürüm. Tam müfredat içeriği ve yerel paket testleri ayrıca tamamlanacak.",
   questions: "Sorular",

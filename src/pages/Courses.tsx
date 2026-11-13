@@ -25,6 +25,11 @@ export function Courses({
         (s) =>
           s.exam === exam &&
           (l(s.name).toLocaleLowerCase("tr-TR").includes(query) ||
+            lessons.some(
+              (lesson) =>
+                lesson.subjectId === s.id &&
+                l(lesson.title).toLocaleLowerCase("tr-TR").includes(query),
+            ) ||
             s.topics.some((v) =>
               v.toLocaleLowerCase("tr-TR").includes(query),
             ) ||
@@ -77,7 +82,13 @@ export function Courses({
       </div>
       <div className="subject-grid">
         {filtered.map((subject) => {
-          const ready = lessons.filter((v) => v.subjectId === subject.id);
+          const ready = lessons.filter(
+            (v) =>
+              v.subjectId === subject.id &&
+              (!query ||
+                l(subject.name).toLocaleLowerCase("tr-TR").includes(query) ||
+                l(v.title).toLocaleLowerCase("tr-TR").includes(query)),
+          );
           const expanded = open === subject.id || !!query;
           const details = detailTopics.filter(
             (v) =>

@@ -2847,3 +2847,111 @@ progress::-moz-progress-bar {
   min-width: 0;
   overflow-wrap: anywhere;
 }
+
+/* AYT models share the existing lesson page and its single scroll owner. */
+:root {
+  --plot-blue: #94bddf;
+}
+:root[data-theme="light"] {
+  --plot-blue: #275e85;
+}
+:root[data-theme="contrast"] {
+  --plot-blue: #8ce5ff;
+}
+@media (prefers-color-scheme: light) {
+  :root[data-theme="system"] {
+    --plot-blue: #275e85;
+  }
+}
+.ayt-controls,
+.ayt-chart-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.3rem;
+  align-items: end;
+  margin: 1rem 0;
+}
+.ayt-controls > *,
+.ayt-chart-grid > * {
+  min-width: 0;
+}
+.ayt-controls .field {
+  margin: 0;
+}
+.lab-choices {
+  border: 0;
+  padding: 0;
+  margin: 1rem 0;
+  min-width: 0;
+}
+.lab-choices legend {
+  font-size: 0.85em;
+  margin-bottom: 0.6rem;
+  color: var(--muted);
+}
+.plot-label {
+  fill: var(--text);
+  font-size: 17px;
+}
+.lab-axis {
+  stroke: var(--muted);
+  stroke-width: 1.5;
+}
+.plot-grid {
+  stroke: var(--border);
+  stroke-width: 1;
+}
+.model-results {
+  display: grid;
+  gap: 0.65rem;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  border-block: 1px solid var(--border);
+  overflow-wrap: anywhere;
+}
+.model-results p {
+  margin: 0;
+}
+.model-results output {
+  display: block;
+}
+.model-results h3 {
+  margin: 0;
+  font-size: 1em;
+}
+.ayt-chart {
+  margin: 0;
+  min-width: 0;
+}
+.ayt-chart figcaption {
+  font-size: 0.85em;
+  margin: 0.6rem 0;
+}
+.equilibrium-vessel {
+  display: grid;
+  grid-template-columns: minmax(0, 18rem) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+.equilibrium-vessel p {
+  font-size: 0.85em;
+  color: var(--muted);
+}
+.equilibrium-vessel circle {
+  transition: fill 0.18s ease;
+}
+.dna-bond {
+  stroke: var(--muted);
+  stroke-width: 2;
+  stroke-dasharray: 3 3;
+}
+.visual-lab .secondary[aria-pressed="true"] {
+  border-color: var(--accent);
+}
+@media (max-width: 850px) {
+  .ayt-controls,
+  .ayt-chart-grid,
+  .equilibrium-vessel {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

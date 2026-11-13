@@ -1,5 +1,10 @@
 # Accepted direction and remaining stages
 
+Current 0.3.0: 13 interactive Turkish lessons / 65 original questions. Four new
+AYT models follow 12 close-read source pages; see [SOURCE_REVIEW](SOURCE_REVIEW.md).
+Next content priority: source-checked TYT social-subject packs and item-level
+question/answer verification; preserve existing records and offline operation.
+
 1. First vertical slice: real original lessons, retrieval, assisted/independent
    evidence, local state, availability, day-ordinal reviews, source atlas, PDF
    import and offline builds. The 0.1.0 slice had six topics and thirty questions;

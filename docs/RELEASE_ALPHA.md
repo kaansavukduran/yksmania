@@ -1,14 +1,15 @@
-YKSMania 0.2.2 alpha. Web: https://yksmania.vercel.app
+YKSMania 0.3.0 alpha. Web: https://yksmania.vercel.app
 
-Web yayını bekliyor: Vercel günlük dağıtım sınırı nedeniyle yeni yayını reddetti ve
-24 saat sonra tekrar denemeyi istiyor. Mevcut web adresi şimdilik 0.2.1'i sunuyor.
-Bu sürümün Windows/Linux/Android indirmeleri yalnızca Türkçe çalışan 0.2.2 paketleridir.
+Son web dağıtım denemesi Vercel günlük sınırına takıldı ve 24 saat sonra tekrar
+deneme istendi. Son gözlemde mevcut web adresi 0.2.1'i sunuyordu.
+Bu sürümün Windows/Linux/Android indirmeleri yalnızca Türkçe çalışan 0.3.0 paketleridir.
 
+- 0.3.0: MEBİ konu özeti PDF’lerinin ilgili bölümleri incelenerek dört AYT anlatımı eklendi: türev, elektrik alan, kimyasal denge ve DNA eşlenmesi. Yeni vektör modelleri ve 20 özgün soru; toplam 13 anlatım / 65 soru. Kaynak sayfaları ve model sınırları docs/SOURCE_REVIEW.md içinde.
 - 0.2.2: Uygulama yalnızca Türkçe. Dil seçimi ve İngilizce çeviriler kaldırıldı; eski İngilizce ayarlı kayıtlar ve yedekler diğer verileri korunarak Türkçe açılır.
 - 0.2.1: Konu anlatımı tam genişlikte; Notun alanı içeriğin sonunda. Soru ekranındaki not alanı altta kalır. Notlar ve yarım kalan oturumlar korunur.
 - Konu Anlatımı ve Sorular ayrı bölümler; ikisinde de TYT/AYT ve ders seçimi.
 - Excel kaynaklarından 341 ana konu ve 479 ayrıntılı kopya kâğıdı başlığı.
-- Dokuz görsel etkileşimli ders ve 45 özgün soru. Hücre yapıları, 118 elementlik tablo, geometride parça taşıma; kesir, çarpanlar, kuvvet, mol, ATP ve paragraf modelleri.
+- On üç görsel etkileşimli ders ve 65 özgün soru. Hücre yapıları, 118 elementlik tablo, geometride parça taşıma; kesir, çarpanlar, kuvvet, mol, ATP ve paragraf modelleri.
 - Orijinal Aion referanslarıyla hazırlanan sola bakan cartoon sprite sheet; göz kırpma ve kaydedilmiş başarıya bağlı kısa tepki.
 - Özel kaynak kataloğu, toplu PDF/klasör içe aktarma, aynı içeriği birleştirme, durdurma ve hata raporu.
 - PDF’de sayfaya gitme ve kalınan sayfayı koruma; eski yerel kayıtlar için uyumlu veritabanı geçişi.

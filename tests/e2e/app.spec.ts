@@ -953,3 +953,211 @@ test("cartoon atlas keeps a fixed foot anchor and actor box; reduced motion stop
   await page.waitForTimeout(300);
   await expect(actor).toHaveAttribute("data-frame", "0");
 });
+
+async function openAyt(page: Page, subject: string, title: string) {
+  await open(page);
+  const menu = page.getByRole("button", { name: "Menüyü aç", exact: true });
+  if (await menu.isVisible()) await menu.click();
+  await page
+    .locator(".sidebar")
+    .getByRole("button", { name: "Konu Anlatımı", exact: true })
+    .click();
+  await page.getByRole("button", { name: "AYT", exact: true }).click();
+  await page.getByRole("button", { name: new RegExp(subject) }).click();
+  await page.getByRole("button", { name: new RegExp(title) }).click();
+  await expect(page.locator(".visual-lab")).toBeVisible();
+}
+async function completeAyt(page: Page, answers: number[]) {
+  await page.getByRole("button", { name: "Sorulara geç", exact: true }).click();
+  for (const [i, index] of answers.entries())
+    await answer(page, index, i === answers.length - 1);
+  await expect(page.locator(".result-stats")).toContainText("5/5");
+}
+test("AYT derivative compares signed secants with a tangent and rejects a continuous corner before independent questions", async ({
+  page,
+  context,
+}) => {
+  await open(page);
+  await page
+    .locator(".sidebar")
+    .getByRole("button", { name: "Konu Anlatımı", exact: true })
+    .click();
+  await page.getByRole("button", { name: "AYT", exact: true }).click();
+  await page
+    .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
+    .fill("kirişten");
+  await expect(page.locator(".ready-topic")).toHaveCount(1);
+  await page.getByRole("button", { name: /Türev: kirişten teğete/ }).click();
+  await expect(page.locator(".secant-result")).toContainText("2,5");
+  await page.getByRole("button", { name: "0,01", exact: true }).click();
+  await expect(page.locator(".secant-result strong")).toHaveText("2,01");
+  await page
+    .getByRole("button", { name: "Sağdan yaklaşılıyor (h > 0)", exact: true })
+    .click();
+  await expect(page.locator(".secant-result strong")).toHaveText("1,99");
+  await page
+    .getByRole("button", { name: "Teğeti kontrol et", exact: true })
+    .click();
+  await expect(page.locator(".tangent-result")).toContainText("= 2");
+  await page.getByLabel("Fonksiyon", { exact: true }).selectOption("absolute");
+  await page.getByLabel("A noktasının x değeri", { exact: true }).fill("0");
+  await page
+    .getByRole("button", { name: "Teğeti kontrol et", exact: true })
+    .click();
+  await expect(page.locator(".tangent-result")).toContainText("türev yok");
+  await expect(page.locator('[data-line="tangent"]')).toHaveCount(0);
+  await page.getByRole("button", { name: "Bugün", exact: true }).click();
+  await expect(page.locator(".stat-number").first()).toHaveText("0");
+  await page.goBack();
+  await expect(page.locator(".tangent-result")).toContainText("türev yok");
+  await page.evaluate(async () => {
+    await navigator.serviceWorker.ready;
+  });
+  await context.setOffline(true);
+  await page.reload();
+  await expect(page.locator(".tangent-result")).toContainText("türev yok");
+  await completeAyt(page, [1, 2, 0, 1, 2]);
+});
+test("AYT electric field keeps source field fixed when test charge changes and obeys inverse square distance", async ({
+  page,
+}) => {
+  await openAyt(page, "Fizik", "Elektrik alan ve test yükü");
+  await expect(page.locator(".field-result")).toContainText("9.000 N/C");
+  await expect(page.locator(".force-result")).toContainText("0,009 N");
+  await page.getByRole("button", { name: "−1 µC", exact: true }).click();
+  await expect(page.locator(".field-result")).toContainText("yön: sağa");
+  await expect(page.locator(".force-result")).toContainText("yön: sola");
+  await page.getByLabel("Uzaklık r", { exact: true }).fill("2");
+  await expect(page.locator(".field-result")).toContainText("2.250 N/C");
+  await page
+    .getByRole("button", { name: "Yüksüz tanecik", exact: true })
+    .click();
+  await expect(page.locator(".force-result")).toContainText("0 N");
+  await expect(page.locator('[data-vector="F"]')).toHaveCount(0);
+  await expect(page.locator('[data-vector="E"]')).toHaveCount(1);
+  await completeAyt(page, [1, 1, 2, 0, 1]);
+});
+test("AYT equilibrium separates equal reaction rates from unequal concentrations and preserves the ratio with catalyst", async ({
+  page,
+}) => {
+  await openAyt(page, "Kimya", "Denge: derişim ve tepkime hızı");
+  await expect(page.locator(".concentration-result")).toContainText(
+    "[A] = 3 mol/L",
+  );
+  await page
+    .getByRole("button", { name: "1 saniye ilerlet", exact: true })
+    .click();
+  await page
+    .getByRole("button", { name: "Başlangıçta katalizör kullan", exact: true })
+    .click();
+  await expect(page.getByLabel("Geçen süre", { exact: true })).toHaveValue("0");
+  await expect(page.locator(".concentration-result")).toContainText(
+    "[A] = 3 mol/L",
+  );
+  await page
+    .getByRole("button", {
+      name: "Katalizörlü başlangıç: iki hız da ×3",
+      exact: true,
+    })
+    .click();
+  await page
+    .getByLabel("Başlangıç karışımı", { exact: true })
+    .selectOption("2");
+  await expect(page.locator(".rate-result")).toContainText(
+    "İleri hız = 0,6 · Geri hız = 0,6",
+  );
+  await page
+    .getByRole("button", { name: "Başlangıçta katalizör kullan", exact: true })
+    .click();
+  await expect(page.locator(".rate-result")).toContainText(
+    "İleri hız = 1,8 · Geri hız = 1,8",
+  );
+  await expect(page.locator(".concentration-result")).toContainText(
+    "[B] = 2 mol/L",
+  );
+  await expect(page.locator(".equilibrium-limit")).toContainText(
+    "Kc = [B] / [A] = 2",
+  );
+  await page
+    .getByLabel("Başlangıç karışımı", { exact: true })
+    .selectOption("3");
+  await expect(page.locator(".rate-result")).toContainText(
+    "İleri hız = 0 · Geri hız = 2,7",
+  );
+  await page
+    .getByRole("button", { name: "1 saniye ilerlet", exact: true })
+    .click();
+  await expect(page.getByLabel("Geçen süre", { exact: true })).toHaveValue("1");
+  await completeAyt(page, [1, 2, 0, 2, 2]);
+});
+test("AYT DNA preserves twelve parental nucleotides while making two antiparallel daughter strands", async ({
+  page,
+}) => {
+  await openAyt(page, "Biyoloji", "DNA eşlenmesi: eski ve yeni zincirler");
+  await expect(page.locator('[data-strand="old"]')).toHaveCount(12);
+  await expect(page.locator('[data-strand="new"]')).toHaveCount(0);
+  await page.locator(".dna-lab .primary").click();
+  for (let added = 1; added <= 6; added++) {
+    await page.locator(".dna-lab .primary").click();
+    await expect(page.locator('[data-strand="old"]')).toHaveCount(12);
+    await expect(page.locator('[data-strand="new"]')).toHaveCount(added * 2);
+  }
+  await expect(page.locator(".dna-count")).toContainText("2 molekül");
+  await expect(page.locator(".dna-step")).toContainText("8/8");
+  await expect(page.locator(".dna-lab .primary")).toBeDisabled();
+  await page.getByRole("button", { name: "3. G–C", exact: true }).click();
+  await expect(page.locator(".model-results")).toContainText("3. konumda");
+  await completeAyt(page, [1, 2, 0, 1, 2]);
+});
+test("all four new AYT lessons first open offline at 320px with large Turkish controls and accessible diagrams", async ({
+  page,
+  context,
+}) => {
+  let discardedDrafts = 0;
+  page.on("dialog", async (dialog) => {
+    expect(dialog.type()).toBe("confirm");
+    discardedDrafts++;
+    await dialog.accept();
+  });
+  await page.setViewportSize({ width: 320, height: 844 });
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await open(page);
+  await page.getByRole("button", { name: "Menüyü aç", exact: true }).click();
+  await page.getByRole("button", { name: "Ayarlar", exact: true }).click();
+  await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
+  await page.getByLabel("Yalnızca yazı boyutu %", { exact: true }).fill("150");
+  await expect(
+    page.getByText("Bu cihazda kaydedildi", { exact: true }),
+  ).toBeVisible();
+  await page.evaluate(async () => {
+    await navigator.serviceWorker.ready;
+  });
+  await context.setOffline(true);
+  for (const [subject, title] of [
+    ["Matematik", "Türev: kirişten teğete"],
+    ["Fizik", "Elektrik alan ve test yükü"],
+    ["Kimya", "Denge: derişim ve tepkime hızı"],
+    ["Biyoloji", "DNA eşlenmesi: eski ve yeni zincirler"],
+  ]) {
+    await openAyt(page, subject, title);
+    expect(
+      await page.evaluate(() => document.documentElement.scrollWidth),
+    ).toBeLessThanOrEqual(321);
+    const a = await page.locator(".lesson-article").boundingBox(),
+      n = await page.locator(".study-notes").boundingBox();
+    expect(n!.y).toBeGreaterThanOrEqual(a!.y + a!.height);
+    const scan = await new AxeBuilder({ page })
+      .include(".main-content")
+      .analyze();
+    expect(
+      scan.violations.filter((v) =>
+        ["serious", "critical"].includes(v.impact ?? ""),
+      ),
+    ).toEqual([]);
+    await page
+      .getByRole("button", { name: "Sorulara geç", exact: true })
+      .click();
+    await expect(page.locator(".answer")).toHaveCount(3);
+  }
+  expect(discardedDrafts).toBe(3);
+});

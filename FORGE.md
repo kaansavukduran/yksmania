@@ -1,4 +1,38 @@
-# Forge checkpoint: YKSMania 0.2.2 alpha
+# Forge checkpoint: YKSMania 0.3.0 alpha
+
+Uygulama yalnızca Türkçe kalır. Bu turda Aurelia içindeki dört MEBİ AYT konu
+özeti dosyasından 12 ilgili PDF sayfası yakın okumayla incelendi. Formül ve şekil
+örnekleri görsel olarak da açıldı. Özel kaynak dosyaları ve kimlikler Git dışında
+kalır. Sayfa eşlemeleri, model sınırları ve özgün cevap kontrolleri:
+[docs/SOURCE_REVIEW.md](docs/SOURCE_REVIEW.md).
+
+Yeni anlatımlar: kiriş/teğet ve |x| köşesi, elektrik alan/kuvvet yönü ve ters-kare
+ilişkisi, dinamik denge/katalizör, yarı korunumlu DNA eşlenmesi. Dört tembel yüklenen
+SVG modülü, 20 özgün alıştırma; toplam 13 anlatım / 65 soru. Eski 45 soru, kimlikleri,
+cevapları ve kayıt akışları korunur. Anlatım araması hazır ders adını da bulur;
+Bugün ekranı içerik sayısını gerçek listeden hesaplar. Etkileşimler öğrenme puanı
+üretmez; soru oturumları ayrı akışta kaydedilir. Notlar tam genişlikli anlatımın
+altındadır. Yeni keşif seçimleri mevcut kayıt yapısında saklanır.
+
+Güncel Fragaria Unslop uygulandı. Yetkili bağlayıcıdan AIONIA standardı yeniden
+okundu: v1.7, 2026-11-13; sürüm uyuşmazlığı yok. Mevcut cartoon atlas değiştirilmedi.
+Dört modelin koyu 1440px/açık 390px ekran görüntüleri incelendi: taşma, notların
+anlatımı daraltması veya renderer hatası gözlenmedi. Yeni modellerde 320px,
+%200 arayüz / %150 yazı, azaltılmış hareket ve ciddi/kritik axe kontrolleri geçti.
+
+Yerel PASS: check/build, 25 birim/depolama/içerik testi, 26 tarayıcı kabul testi.
+Dört yeni setin her biri normal arayüzde 5/5 tamamlandı. Electron Linux: dört yeni
+modelin ilk çevrimdışı açılışı, puan üretmemesi, mevcut dersin tamamlanması, yeniden
+yükleme ve süreç yeniden başlatma PASS; keşif adımı korundu, renderer hatası 0.
+Sürüm 0.3.0; Android versionCode 5. Fiziksel cihazlar, temiz kurulum/portable
+çıkarma-taşıma, kararlı imza ve iki paket arası güncelleme henüz doğrulanmadı.
+
+Önceki Vercel yayını günlük sınıra takıldı; son gözlenen web sürümü 0.2.1.
+0.3.0 için otomatik dağıtım durumu ve paket CI/yayın kanıtı teslim kaydına eklenir.
+Eski web, yeni kaynak için doğrulama sayılmaz. Özel Drive dışa aktarımındaki önceki
+onay engeli bu geliştirmede yeniden denenmedi; başka hedefe aktarım yapılmadı.
+
+# Delivered checkpoint: YKSMania 0.2.2 alpha
 
 User decision: this application is Turkish only. Language choices and English
 translations were removed from the app, visual lessons and authored question bank.

@@ -1,6 +1,6 @@
 # Quality evidence
 
-Target 0.2.2 alpha. This file is updated at the verified Forge checkpoint.
+Target 0.3.0 alpha. This file is updated at the verified Forge checkpoint.
 
 ## Automated acceptance
 
@@ -194,3 +194,38 @@ in 24 hours). The public origin remains 0.2.1. A new production-origin suite was
 not run against the older site and is not claimed as a 0.2.2 pass. Retry deployment
 and production acceptance after the limit clears; do not change plans or hosting
 destinations to work around the quota without user direction.
+
+
+## 0.3.0 — kaynak kontrollü AYT görselleri
+
+Dört MEBİ dosyasından 12 sayfa yakın okundu. Kaynak/sayfa, kavram, varsayım ve
+20 özgün cevap kontrolü SOURCE_REVIEW.md içinde. Sayısal model testleri sağ/sol
+türev ve köşe, SI birimleri/işaret/ters-kare, toplam derişimin korunumu/katalizörün
+zaman ölçeği ve DNA tamamlayıcılığına bakar. Kaynak incelemesi bütün arşivin madde
+ve cevap anahtarı denetimi değildir.
+
+YKS-002 ailesi yeniden yakalandı: select etiketine seçenek metinlerinin katılması
+seçici adını belirsizleştiriyordu. Fonksiyon ve başlangıç karışımı kontrollerine
+görünen etiketle aynı açık erişilebilir ad verildi. Katalizör modeli yayın öncesi
+kavram denetiminde düzeltildi: seçim zamanı sıfırlar, başlangıçtan beri katalizörlü
+ayrı koşulu karşılaştırır; mevcut karışıma ekleme anında derişim sıçraması göstermez.
+Denge sınırı sonlu zamanın yuvarlanmış sonuçlarından ayrı sunulur.
+
+Yeni beş kabul testi, her modelin değişkenlerini normal kontrollerden değiştirir,
+dört özgün seti 5/5 tamamlar ve kaydı doğrular. İlk açılış çevrimdışı, 320px,
+%200 arayüz / %150 yazı, azaltılmış hareket ve ana içerikte ciddi/kritik axe
+kontrolleri PASS. Yeni soruya geçerken eski taslağı değiştirme onayı korunur;
+test normal onayı kabul ederek ilerler. Eski ders, PDF, taslak, İngilizce cihazdan
+Türkçe açılış, notların altta kalması ve tekrar takvimi regresyonları da PASS.
+
+Yerel toplam: 25 birim/depolama/içerik + 26 tarayıcı testi. Chromium
+156.0.8078.79/Linux; dört modelin koyu 1440×1000 ve açık 390×1000 durumlarının
+sekiz ekran görüntüsü incelendi. Sayfa yatay taşması yok, Notun anlatımdan sonra,
+renderer hataları 0. Bu ölçümler fiziksel cihaz kanıtı değildir.
+
+Electron Linux genişletilmiş otomasyonu dört yeni modeli çevrimdışı açar, öğrenme
+kaydı oluşmadığını kontrol eder, önceki dersi tamamlar, yeniden yükler ve süreci
+yeniden başlatır. DNA keşif adımı korunur; renderer hataları 0. Windows/Linux
+paket CI, Android imza/manifest ve gerçek web yayını sonuçları FORGE.md içinde
+ayrı kaydedilir. Temiz kurulum/portable taşıma, fiziksel Android, üretim imzası ve
+iki sürümlük native güncelleme açık kapılardır.

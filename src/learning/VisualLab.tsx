@@ -4,6 +4,10 @@ const Cell = lazy(() => import("./CellExplorer"));
 const Periodic = lazy(() => import("./PeriodicExplorer"));
 const Geometry = lazy(() => import("./GeometryExplorer"));
 const Compact = lazy(() => import("./CompactExplorers"));
+const Derivative = lazy(() => import("./DerivativeExplorer"));
+const Field = lazy(() => import("./ElectricFieldExplorer"));
+const Equilibrium = lazy(() => import("./EquilibriumExplorer"));
+const Dna = lazy(() => import("./DnaExplorer"));
 export function VisualLab({ id }: { id: string }) {
   const { t } = useApp();
   return (
@@ -14,6 +18,14 @@ export function VisualLab({ id }: { id: string }) {
         <Periodic />
       ) : id === "alan-donusumleri" ? (
         <Geometry />
+      ) : id === "turev-teget" ? (
+        <Derivative />
+      ) : id === "elektrik-alan" ? (
+        <Field />
+      ) : id === "kimyasal-denge" ? (
+        <Equilibrium />
+      ) : id === "dna-eslenmesi" ? (
+        <Dna />
       ) : (
         <Compact id={id} />
       )}

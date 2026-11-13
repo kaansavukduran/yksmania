@@ -39,6 +39,16 @@ actual polygons and translations preserving area. Motion settings disable transi
 without disabling controls. Interaction choices and PDF page positions are retained
 outside scored responses and do not earn XP.
 
+## AYT diagrams, 0.3.0
+
+Four new lazy-loaded SVG models reuse the app palette. Green/coral distinguish
+curves and concentrations; blue dashed lines distinguish tangent or field direction.
+DNA uses blue for old strands and coral for new strands with explicit direction
+labels. Pattern/labels and textual results accompany color. Dark/light/high-contrast
+plot blue has its own theme token. No new character or canon was introduced.
+Numerical readouts remain HTML at the chosen text scale; controls wrap on narrow
+screens. Diagram assumptions are shown with each model and in SOURCE_REVIEW.md.
+
 ## Fonts
 
 Lexend is bundled in Latin and Latin Extended regular/semibold subsets, OFL 1.1.

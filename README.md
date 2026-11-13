@@ -1,21 +1,24 @@
 # YKSMania
 
-An offline-first YKS learning application by Fragaria Interactive. **0.2.2 alpha: visual learning and private resource import; not the complete curriculum.**
+An offline-first YKS learning application by Fragaria Interactive. **0.3.0 alpha: visual learning and private resource import; not the complete curriculum.**
 
-[Open the web app](https://yksmania.vercel.app) · [Download alpha packages](https://github.com/kaansavukduran/yksmania/releases/tag/v0.2.2-alpha.1)
+[Open the web app](https://yksmania.vercel.app) · [Download alpha packages](https://github.com/kaansavukduran/yksmania/releases/tag/v0.3.0-alpha.1)
 
-The 0.2.2 web publication is blocked by Vercel's daily deployment limit. The existing
-web URL still serves 0.2.1 until deployment is retried after the limit clears.
-The 0.2.2 native downloads contain the Turkish-only change. See FORGE.md for evidence.
+The last observed web publication was blocked by Vercel's daily deployment limit;
+the web URL still served 0.2.1. New 0.3.0 native packages include the four AYT
+models and twenty new exercises. See FORGE.md for current delivery evidence.
 
 ## What works
 
 - TYT's 10 subjects and numerical AYT's 5 subjects: all 341 main topic rows and
   479 detailed cheat-sheet headings from the source workbooks (different granularity,
   not 820 distinct official exam topics).
-- Nine Turkish lessons, nine interactive vector explanations, 45 original exercises, hints, confidence and explanations.
+- Thirteen Turkish lessons, thirteen interactive vector explanations, 65 original exercises, hints, confidence and explanations.
 - Clickable animal/plant cells, a 118-element periodic table, area-preserving geometry,
   fractions, algebraic areas, force balance, moles, ATP and paragraph structure.
+- Four new AYT explorations: secant/tangent and a non-differentiable corner, signed
+  electric field/force, dynamic equilibrium/catalyst, and semiconservative DNA copying.
+  Source sections and model limits are recorded in [SOURCE_REVIEW](docs/SOURCE_REVIEW.md).
 - Full-width topic explanations with notes below the content; question notes remain
   below the question panel. Saved notes and unfinished sessions are retained.
 - Separate independent, assisted and incorrect responses; real session history and undo.
@@ -94,7 +97,6 @@ The private Aurelia YKS catalogue and representative MEBİ/OGM/Aurelia learning
 materials were inspected during planning. The public application contains original
 instruction and exercises, not copies of the private archive or official exam items.
 The topic map is a reference outline, not a verified official year-specific syllabus.
-Some topic headings retain the original Turkish source terminology in English mode.
 Use **Kütüphane → PDF ekle** to import materials you are allowed to use. Nothing is
 uploaded. There is no account, analytics, cloud AI or automatic Drive synchronization.
 Browser storage can be cleared or evicted: use **Ayarlar → Veri ve yedekler** regularly.
