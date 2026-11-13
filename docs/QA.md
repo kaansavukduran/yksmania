@@ -382,3 +382,18 @@ henüz soru paneli açılmadan dönüyordu; teori ve soruda aynı adlı Notun al
 Soru paneli açıkça beklenir; not beklentisi ve çevrimdışı kayıt doğrulaması korunur.
 Bu tek regresyon yerelde 3/3 tekrar PASS. Native Linux ve Android kontrolleri
 ayrı ilerler; eski public koşu tam PASS sayılmaz, yeni tüm canlı koşu gerekir.
+
+Nihai CI 43523758199: dört işte PASS, 35 birim + 38 tarayıcı. Windows/Linux
+paketli plan/konu kaydı, beş OGM görseli, offline/reload/process restart PASS,
+renderer hataları 0; Android debug imza/manifest PASS. Canlı koşu 43523965580:
+38/38 PASS. Web uygulama kaynağı 0101829, son test kaynağı 66539f0; uygulama
+alt ağaçları birebir aynı. Son test-only commitinin Vercel dağıtımı kota nedeniyle
+oluşmadı; bu durum ve hash karşılaştırması FORGE.md içinde açıkça kaydedildi.
+Quota aşma/manuel dağıtım denemesi yapılmadı. Fiziksel cihaz ve installer/update
+kontrolleri açık kalır. Release dosya doğrulaması teslim kaydına eklenir.
+
+Yayın 43524926879 PASS: v0.4.0-alpha.1 public/prerelease, sekiz dosya. Tag ve
+verified-run.json 66539f0 ile eşleşir; indirilen iki kanıtın SHA-256 değerleri
+checksum listesiyle aynı. Android 7/0.4.0, minimum API 24 ve v2 imza doğrulandı;
+public APK adresi HTTP 200. Büyük beş binary ayrıca yerel hash kontrolü için
+indirilmedi. Tam teslim ve web/app test kaynağı ayrımı FORGE.md içindedir.

@@ -54,6 +54,43 @@ renderer hataları 0. Electron Linux beş OGM modeli, konu kaydı, eski AYT/chea
 offline 5/5 soru, reload ve süreç yeniden başlatma PASS; renderer hataları 0.
 Yeni yayın ve native dosyalar doğrulanınca ayrı teslim kaydı eklenir.
 
+
+## 0.4.0 teslim doğrulaması
+
+- Nihai paket/test kaynağı: `66539f0830c544dbc4a6de9964e2924a3a7d304a`.
+- [Nihai paket CI](https://github.com/kaansavukduran/yksmania/actions/runs/43523758199)
+  dört işte PASS: check/build, 35 birim/depolama/içerik, 38 tarayıcı; Windows/Linux
+  paketlerinde beş OGM görseli, iki hedefli plan/konu kaydı, 5/5 özgün soru,
+  offline/reload/process restart, önceki AYT ve kopya kağıdı regresyonları. Renderer
+  hataları 0. Android debug APK imza/manifest kontrolü PASS. Önceki 43522838357 de
+  dört işte PASS olmakla birlikte son test-harness düzeltmesinden önceki kaynaktır.
+- [Canlı 0.4.0 kabulü](https://github.com/kaansavukduran/yksmania/actions/runs/43523965580)
+  **38/38 PASS**, kanonik https://yksmania.vercel.app üzerinde. Test kaynağı 66539f0,
+  Vercel üretim uygulama kaynağı `0101829fcfaa1d9dcac6fd841ec48ef6868cb3a5`;
+  READY dağıtım `dpl_AiuejjxxkVQsQmyM3z9aykBwT8F7`. /version.json 0.4.0 döndürür.
+  Son commit yalnız tests/e2e/app.spec.ts ve docs/QA.md değiştirir. src ağaç hash’i
+  iki kaynakta da da489899679e77a886b2b812f25a6583ac0b1e92; public hash’i iki
+  kaynakta da 107144b7cc07e85dc20006fcfeb3367aaa9f6cc9. src/public/package/
+  android/desktop/scripts/vercel diff’i sıfırdır; eski sürüm üzerinde yeni işlev
+  PASS iddiası yapılmaz. 66539f0 için Vercel günlük kota durumu failure: yeniden
+  dağıtım, ücret/plan değişimi veya alternatif host denenmedi. Mevcut yayındaki
+  aynı 0.4.0 uygulama kodu güncellenmiş test bekleyişleriyle doğrulandı. 66539f0’ın
+  Vercel’e dağıtıldığı iddia edilmez. İlk iki public koşu nihai PASS sayılmaz.
+- [Yayın koşusu](https://github.com/kaansavukduran/yksmania/actions/runs/43524926879)
+  PASS: [v0.4.0-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.4.0-alpha.1)
+  herkese açık, prerelease; beş native dosya + üç kanıt/checksum dosyası. Yeniden
+  derleme yok: 43523758199 çıktıları kullanıldı. Etiket ve indirilen verified-run.json
+  tam kaynak 66539f0830c544dbc4a6de9964e2924a3a7d304a ile eşleşir. İndirilen iki
+  kanıt dosyasının SHA-256 değerleri checksum listesiyle eşleşti; büyük native
+  dosyaların tamamı yerel makineye indirilip yeniden hash’lenmiş diye sunulmaz.
+  Android versionCode 7 / versionName 0.4.0 / minimum API 24 ve APK v2 imzası
+  doğrulandı. Herkese açık APK indirme bağlantısı HTTP 200. Windows Setup/Portable,
+  Linux amd64 DEB / x86_64 AppImage ve Android debug APK dosyaları hazır.
+- Native fiziksel Android, temiz Windows kurulum/portable extractor/taşıma,
+  üretim imzası ve iki paket arası güncelleme henüz doğrulanmadı. Emulator/runner
+  testleri bu açık kapıların yerine geçmez. Özel kaynak PDF’leri public pakete
+  gömülmez; yeni içerik toplamı 18 anlatım/90 özgün sorudur, 479 hazır anlatım değildir.
+
 ---
 
 # Historical checkpoint: YKSMania 0.3.1 alpha

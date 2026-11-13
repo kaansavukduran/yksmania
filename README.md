@@ -5,8 +5,9 @@ An offline-first YKS learning application by Fragaria Interactive. **0.4.0 alpha
 [Open the web app](https://yksmania.vercel.app) · [Download alpha packages](https://github.com/kaansavukduran/yksmania/releases/tag/v0.4.0-alpha.1)
 
 0.4.0 adds two deadline plans, workbook study order, separate topic/question records,
-subject progress trees and five OGM-based chemistry explorations. Publication and
-native package verification are recorded in FORGE.md when observed.
+subject progress trees and five OGM-based chemistry explorations. Web 0.4.0 passed
+38 live acceptance tests. Windows/Linux packaged offline flows and Android APK
+signature/manifest checks passed; delivery evidence is in FORGE.md.
 
 ## What works
 
