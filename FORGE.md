@@ -29,8 +29,8 @@ Sürüm 0.3.0; Android versionCode 5. Fiziksel cihazlar, temiz kurulum/portable
 
 Vercel otomatik üretim dağıtımı dpl_5L7aa779UHEyqZaqBa8gLVdSsDHj bu kaynak için
 READY; https://yksmania.vercel.app/version.json 0.3.0 sunuyor. Önceki günlük sınır
-engeli yeni dağıtımda gözlenmedi. Canlı kabul ve paket CI/yayın kanıtları teslim
-kaydına eklenir; önceki sürüm testleri yeni kaynak için doğrulama sayılmaz. Özel Drive dışa aktarımındaki önceki
+engeli yeni dağıtımda gözlenmedi. Canlı kabul ve paket CI/yayın kanıtları aşağıdaki
+teslim kaydındadır; önceki sürüm testleri yeni kaynak için doğrulama sayılmaz. Özel Drive dışa aktarımındaki önceki
 onay engeli bu geliştirmede yeniden denenmedi; başka hedefe aktarım yapılmadı.
 
 ## 0.3.0 teslim doğrulaması
@@ -41,7 +41,19 @@ onay engeli bu geliştirmede yeniden denenmedi; başka hedefe aktarım yapılmad
 - [Canlı web kabulü](https://github.com/kaansavukduran/yksmania/actions/runs/43503377912)
   26/26 PASS: dört yeni model ve eski kayıt/çevrimdışı/soru/not regresyonları dahil.
 - [Paket CI](https://github.com/kaansavukduran/yksmania/actions/runs/43503304731)
-  ve indirme yayınının tamamlanma durumu teslim bitiminde güncellenir.
+  dört işte PASS: 25 birim/depolama/içerik, 26 tarayıcı testi; Windows ve Linux
+  paketlerinde dört yeni AYT modelinin ilk çevrimdışı açılışı, sıfır öğrenme kaydı,
+  önceki dersin tamamlanması, yeniden yükleme ve süreç yeniden başlatma kontrolleri.
+  Keşif adımı korunur; renderer hatası 0. Android debug APK imza/manifest kontrolü
+  PASS. İndirme yayını bu başarılı koşunun dosyalarını yeniden derlemeden kullanır.
+- [Yayın koşusu](https://github.com/kaansavukduran/yksmania/actions/runs/43504471113)
+  PASS: [v0.3.0-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.3.0-alpha.1)
+  herkese açık ön sürüm, beş native dosya ve üç doğrulama/checksum dosyasıyla hazır.
+  Etiket ve indirilen verified-run.json yukarıdaki kaynak commit ile eşleşir.
+  İndirilen iki kanıt dosyasının SHA256 değerleri SHA256SUMS ile eşleşir; dosya
+  yedi checksum girdisi içerir. Android manifesti versionCode 5 / versionName 0.3.0,
+  minimum API 24; APK v2 imzası doğrulandı. Herkese açık APK indirme adresi HTTP 200.
+  Önceki sürümler korunur. Sonraki dokümantasyon commitleri uygulama kodunu değiştirmez.
 
 # Delivered checkpoint: YKSMania 0.2.2 alpha
 

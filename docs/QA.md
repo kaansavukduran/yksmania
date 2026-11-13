@@ -234,4 +234,13 @@ iki sürümlük native güncelleme açık kapılardır.
 Canlı 0.3.0: published-web kabul koşusu 43503377912, 26/26 PASS. Vercel
 üretim dağıtımı dpl_5L7aa779UHEyqZaqBa8gLVdSsDHj ve kaynak 1dc5d44 eşleşir.
 Önceki 0.2.2 kota engeli bu yeni otomatik dağıtımda gözlenmedi. Paket ve yayın
-sonuçları aşağıdaki teslim kaydıyla birlikte FORGE.md içinde tamamlanır.
+sonuçları FORGE.md teslim kaydında tutulur. Paket CI 43503304731 dört işte PASS:
+25 birim/depolama/içerik, 26 tarayıcı, Windows/Linux paketli dört AYT modeli ve
+çevrimdışı/yeniden başlatma, Android debug APK imza/manifest kontrolü. Masaüstü
+renderer hataları 0; fiziksel cihaz ve temiz kurulum açık kapıları aynen kalır.
+
+Yayın koşusu 43504471113 PASS: v0.3.0-alpha.1 beş native dosya ve üç kanıt dosyasıyla
+herkese açık. Etiket/verified-run.json kaynak 1dc5d44 ile eşleşir; indirilen kanıtların
+hash değerleri checksum listesiyle eşleşir. Android versionCode 5 / versionName
+0.3.0 / minimum API 24 ve APK v2 imzası doğrulandı. APK indirme adresi HTTP 200.
+Ayrıntılar ve alpha sınırları FORGE.md ile RELEASE_ALPHA.md içinde.
