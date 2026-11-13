@@ -1,8 +1,8 @@
 YKSMania 0.3.1 alpha. Web: https://yksmania.vercel.app
 
-Web 0.3.1 yayını Vercel günlük dağıtım sınırına takıldı; canlı adres hâlâ 0.3.0
-sunuyor. Bu sayfadaki Windows/Linux/Android indirmeleri yeni Kopya Kağıtları
-bölümünü içeren 0.3.1 paketleridir. Kaynak ve doğrulama kayıtları FORGE.md içinde.
+Web 0.3.1 yayını hazır. Bu sayfadaki Windows/Linux/Android indirmeleri de yeni
+Kopya Kağıtları bölümünü içeren 0.3.1 paketleridir. İlk yayındaki Vercel günlük
+sınır engeli son kodun otomatik dağıtımında gözlenmedi. Doğrulama kayıtları FORGE.md içinde.
 
 - 0.3.1: Sol menüde Konu Anlatımı → Kopya Kağıtları → Sorular sırası. Kopya kağıtları ayrı TYT/AYT, ders ve konu görünümüne taşındı. Konu anlatımı ve soru kaynakları bu dosyaları göstermez. Cihaza eklenmiş PDF ve notları çevrimdışı açılır; dosya yoksa durumu belirtilir. 320px büyük yazı/ölçek yerleşimi düzeltildi.
 - 0.3.0: MEBİ konu özeti PDF’lerinin ilgili bölümleri incelenerek dört AYT anlatımı eklendi: türev, elektrik alan, kimyasal denge ve DNA eşlenmesi. Yeni vektör modelleri ve 20 özgün soru; toplam 13 anlatım / 65 soru. Kaynak sayfaları ve model sınırları docs/SOURCE_REVIEW.md içinde.

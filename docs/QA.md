@@ -291,3 +291,11 @@ kopya kağıdı PDF’leri” düğmesi üç kaynak listesini de açıyordu. Ger
 3 ders / 3 kaynak tarayıcısı. Düğme artık aktif dersi de seçer; ek kabul adımı
 3 arama sonucu / 1 açık ders / 1 kaynak tarayıcısı bekler. İlk 43507301865 paket
 koşusu son düzeltme öncesidir; nihai kaynak ve paket kanıtı Forge’da ayrılır.
+
+Sonraki 3f3cb54 kaynağının otomatik üretim dağıtımı dpl_JBh2d7qbX56PY8g65ZFKju5LLkJM
+READY; kanonik /version.json 0.3.1. Önceki kota engeli bu kaynakta gözlenmedi.
+Canlı kabul 43509055312 bu yeni kaynağı doğrular; önceki 0.3.0 testleri kullanılmaz.
+
+Canlı 0.3.1 kabulü 43509055312: 28/28 PASS; kaynak 3f3cb54 ve READY üretim dağıtımı
+ile eşleşir. Nihai native paket koşusu 43508957418 ve indirme yayını Forge teslim
+kaydında ayrı tutulur; eski paket koşusu son düzeltmeyi içermez.

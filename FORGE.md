@@ -30,12 +30,12 @@ yeniden yükleme ve süreç yeniden başlatma PASS; renderer hatası 0. Chromium
 156/Linux, koyu 1440×1000 ve açık 390×1000 ekran görüntüleri incelendi; taşma ve
 renderer hatası yok. 320px, %200 arayüz / %150 yazı, ilk çevrimdışı giriş, gerçek
 manuel PDF açma ve ciddi/kritik axe kontrolleri PASS. Yeni yayın ve native paket
-CI sonuçları teslim kaydına eklenir. 0.3.1 web dağıtımı BLOCKED: GitHub Vercel
-durumu “Deployment rate limited — retry in 24 hours.” Canlı /version.json 0.3.0;
-son READY dağıtım dpl_5L7aa779UHEyqZaqBa8gLVdSsDHj, kaynak 1dc5d44. Eski siteye
-karşı yeni yayın kabulü çalıştırılmaz. Plan/ücret değişikliği, alternatif host veya
-kota aşma yolu denenmedi. Sınır kalkınca mevcut projeye dağıtım ve ardından
-published-smoke.yml gerekir. Eski fiziksel cihaz,
+CI sonuçları teslim kaydına eklenir. İlk 27584be dağıtımı Vercel günlük sınırına
+takıldı ve eski 0.3.0 üzerinde yeni test çalıştırılmadı. Gerçek çoklu arama hatasını
+gideren son 3f3cb54 kodunun otomatik dağıtımı ise READY:
+dpl_JBh2d7qbX56PY8g65ZFKju5LLkJM. Kanonik /version.json artık 0.3.1 döndürüyor;
+yeni canlı kabul koşusu bu kaynağa karşı başlatıldı. Plan/ücret değişikliği,
+alternatif host veya manuel kota aşma/yeniden deneme yolu kullanılmadı. Eski fiziksel cihaz,
 temiz kurulum/portable taşıma, üretim imzası ve iki paket arası güncelleme kapıları
 açıktır. Özel Drive dışa aktarımı bu turda yeniden denenmez.
 
@@ -44,6 +44,18 @@ düğmesi üç kaynak listesini birden açıyordu. Gerçek UI ile gözlendi (3 �
 Düğme artık açık dersi de seçer; yeni regresyon yalnız bir kaynak listesi ve bir
 açık ders bekler. İlk paket koşusu 43507301865 başarılı olsa da bu son düzeltmeden
 öncedir; nihai paket ve yayın kanıtı sonraki kaynak/koşuyla kaydedilecektir.
+
+## 0.3.1 teslim doğrulaması
+
+- Nihai uygulama kaynağı: `3f3cb54fa541ec71ab2272197343eab00909a281`.
+- Vercel üretim dağıtımı `dpl_JBh2d7qbX56PY8g65ZFKju5LLkJM` READY, kaynak eşleşir.
+  https://yksmania.vercel.app/version.json 0.3.1 döndürür.
+- [Canlı web kabulü](https://github.com/kaansavukduran/yksmania/actions/runs/43509055312)
+  28/28 PASS; yeni menü sırası, ayrı kaynak türü, konu PDF’si, not/taslak koruma,
+  çevrimdışı ilk giriş ve %200/%150 dar ekran akışları dahil.
+- [Nihai paket CI](https://github.com/kaansavukduran/yksmania/actions/runs/43508957418)
+  ve yayın kanıtları tamamlandığında aşağıya eklenir. Önceki 43507301865 koşusu
+  son arama düzeltmesinden önceki kaynaktır; nihai paket kaynağı yerine geçmez.
 
 # Delivered checkpoint: YKSMania 0.3.0 alpha
 
