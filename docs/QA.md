@@ -139,3 +139,15 @@ English 200% interface / 150% text regression. Dark/light screenshots inspected 
 article and neither view has horizontal page overflow. Native and published-origin
 results for this version are recorded in FORGE.md when observed; prior release
 evidence above is historical and is not evidence for a new binary.
+
+Additional local PASS: Electron on Linux, explicitly sized to a 1440×1000 content
+window, gives the article the entire content row with notes after it. Offline note
+editing survives reload and process restart in a disposable task profile. This is
+local desktop-shell evidence, separate from remote packaged binaries and physical
+device/installer verification.
+
+Remote 0.2.1 PASS: package CI run 43487684984, all four jobs; 20 unit/storage/content
+and 20 browser tests, Windows/Linux packaged offline lesson/reload/process restart,
+and Android signature/manifest verification. Published-origin run 43487744351 also
+passed 20/20 browser tests, including the new layout/note regression. Release source
+and publication evidence are recorded in FORGE.md.

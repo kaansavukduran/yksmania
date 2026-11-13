@@ -17,10 +17,31 @@ full-width article, bottom notes, no horizontal overflow, zero renderer errors.
 The full 200% UI / 150% text English regression also passed. See docs/QA.md YKS-006.
 
 Web and Windows/Linux/Android package version is 0.2.1, Android versionCode 3.
-Remote build, production acceptance and release IDs are recorded here after those
-checks complete. Physical-device, clean-install and native two-package update
+Remote build, production acceptance and release IDs are recorded below.
+Physical-device, clean-install and native two-package update
 gates remain open. The earlier private Drive export remains blocked pending the
 specific permission already requested; this UI task does not retry that upload.
+
+## 0.2.1 delivery verification
+
+- Application source: `2c3f6bd90cb243b0fc6a3478f5e79853eea47ad7`.
+- [Published acceptance](https://github.com/kaansavukduran/yksmania/actions/runs/43487744351):
+  20/20 browser tests PASS against https://yksmania.vercel.app, including YKS-006.
+- Production deployment `dpl_yx9WNLPhJZjg6Mazt6aUEnQhmoPi` observed READY for this source.
+- Local Electron Linux: PASS at 1440×1000 for full-row theory / bottom notes;
+  offline note save, reload and process restart PASS, zero observed renderer errors.
+- [Package build](https://github.com/kaansavukduran/yksmania/actions/runs/43487684984)
+  passed all four jobs: 20 unit/storage/content tests, 20 browser tests, Windows
+  and Linux packaged offline lesson/reload/process-restart checks with zero renderer
+  errors, and Android debug APK signature/manifest verification. It is the source
+  of the new release binaries; physical-device and clean-install gates remain open.
+- [Publication](https://github.com/kaansavukduran/yksmania/actions/runs/43488912473)
+  PASS: [v0.2.1-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.2.1-alpha.1)
+  is published with five binaries and checksum/source/Android verification files.
+  The tag and downloaded verified-run.json identify the application source above;
+  downloaded evidence hashes match SHA256SUMS. Android metadata confirms versionCode
+  3 / versionName 0.2.1. Earlier releases remain available. Only documentation changes
+  follow this application source; no private catalogue or PDF export was retried.
 
 # Delivered checkpoint: YKSMania 0.2.0 alpha
 
