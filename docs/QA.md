@@ -375,3 +375,10 @@ Kaynak girişindeki iki regresyon, yeni h1 bekleyişiyle üçer kez tekrarlandı
 6/6 PASS. İlk published-web koşusu 43522084035 de eski test kaynağıdır ve nihai
 web doğrulaması yerine geçmez. Takvim günlük süresinin tekrar yerleşimine ait
 olduğu, yeni konuların uygun gün hesabıyla dağıtıldığı arayüzde açıklandı.
+
+İlk düzeltilmiş published-web 43522891459: 37/38 PASS, son kaynak girişleri artık
+geçti. Kalan not testi de aynı ayrılan/gelecek sayfa kontrolü sorunuydu: start
+henüz soru paneli açılmadan dönüyordu; teori ve soruda aynı adlı Notun alanı var.
+Soru paneli açıkça beklenir; not beklentisi ve çevrimdışı kayıt doğrulaması korunur.
+Bu tek regresyon yerelde 3/3 tekrar PASS. Native Linux ve Android kontrolleri
+ayrı ilerler; eski public koşu tam PASS sayılmaz, yeni tüm canlı koşu gerekir.

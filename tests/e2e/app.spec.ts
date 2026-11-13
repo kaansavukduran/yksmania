@@ -34,6 +34,9 @@ async function start(page: Page) {
     await subject.click();
   await page.getByRole("button", { name: /Rasyonel sayılar.*18/ }).click();
   await page.getByRole("button", { name: "Sorulara geç", exact: true }).click();
+  // Theory and practice both have a "Notun" field. Await the question page so
+  // subsequent note edits belong to the answer draft, not the departing theory.
+  await expect(page.locator(".question-panel")).toBeVisible();
 }
 async function answer(page: Page, index: number, last = false) {
   await page.locator(".answer").nth(index).click();
