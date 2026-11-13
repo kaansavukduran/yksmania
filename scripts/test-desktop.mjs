@@ -3,14 +3,17 @@ import path from "node:path";
 const profile =
   process.env.YKSMANIA_TEST_PROFILE ||
   path.resolve("../work", `desktop-test-${Date.now()}`);
-const binary = process.env.YKSMANIA_BINARY;
+const binary = process.env.YKSMANIA_BINARY
+  ? path.resolve(process.env.YKSMANIA_BINARY)
+  : undefined;
 const launch = () =>
   _electron.launch({
     ...(binary ? { executablePath: binary } : {}),
     args: [
       ...(binary ? [] : ["desktop/main.cjs"]),
-      "--no-sandbox",
-      "--ozone-platform=headless",
+      ...(process.platform === "linux"
+        ? ["--no-sandbox", "--ozone-platform=headless"]
+        : []),
       "--disable-gpu",
       `--user-data-dir=${profile}`,
     ],

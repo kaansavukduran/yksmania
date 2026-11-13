@@ -25,6 +25,23 @@ async function answer(page: Page, index: number, last = false) {
     .click();
 }
 test.use({ locale: "tr-TR" });
+test("turning off gamification hides world rewards and keeps learning usable", async ({
+  page,
+}) => {
+  await open(page);
+  await page.getByRole("button", { name: "Ayarlar", exact: true }).click();
+  await page
+    .getByRole("switch", { name: "Oyunlaştırma", exact: true })
+    .uncheck();
+  await page.getByRole("button", { name: "Dünyam", exact: true }).click();
+  await expect(page.locator(".main-content")).toContainText(
+    "Oyunlaştırma kapalı",
+  );
+  await expect(page.locator(".world-scene")).toHaveCount(0);
+  await page.getByRole("button", { name: "Bugün", exact: true }).click();
+  await start(page);
+  await expect(page.locator(".answer")).toHaveCount(3);
+});
 function samplePdf() {
   const parts = ["%PDF-1.4\n"];
   const offsets = [0];
@@ -58,13 +75,11 @@ test("local PDF opens for the first time offline and retains notes without learn
     await navigator.serviceWorker.ready;
   });
   await page.getByRole("button", { name: "Kütüphane", exact: true }).click();
-  await page
-    .locator("input[type=file]")
-    .setInputFiles({
-      name: "local-test.pdf",
-      mimeType: "application/pdf",
-      buffer: samplePdf(),
-    });
+  await page.locator("input[type=file]").setInputFiles({
+    name: "local-test.pdf",
+    mimeType: "application/pdf",
+    buffer: samplePdf(),
+  });
   await expect(
     page.getByRole("button", { name: /local-test.pdf/ }).first(),
   ).toBeVisible();

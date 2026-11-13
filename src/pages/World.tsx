@@ -4,6 +4,15 @@ import { useApp } from "../store";
 import { xp } from "../domain/scheduler";
 export function World() {
   const { state, t } = useApp();
+  if (!state.settings.gamification)
+    return (
+      <>
+        <header className="page-heading">
+          <h1>{t("world")}</h1>
+        </header>
+        <p className="lead muted">{t("worldOff")}</p>
+      </>
+    );
   const distinct = new Set(
     state.sessions.filter((s) => s.kind === "learn").map((s) => s.lessonId),
   ).size;

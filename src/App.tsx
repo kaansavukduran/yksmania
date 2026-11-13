@@ -58,6 +58,33 @@ export default function App() {
   const [route, setRoute] = useState(() => location.hash.slice(1) || "/today");
   const [online, setOnline] = useState(navigator.onLine);
   const [menu, setMenu] = useState(false);
+  const [mobile, setMobile] = useState(
+    () => matchMedia("(max-width:850px)").matches,
+  );
+  useEffect(() => {
+    const media = matchMedia("(max-width:850px)");
+    const listener = () => setMobile(media.matches);
+    media.addEventListener("change", listener);
+    return () => media.removeEventListener("change", listener);
+  }, []);
+  useEffect(() => {
+    if (!menu) return;
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setMenu(false);
+        setTimeout(
+          () =>
+            document.querySelector<HTMLButtonElement>(".mobile-menu")?.focus(),
+          0,
+        );
+      }
+    };
+    document.addEventListener("keydown", onKey);
+    document
+      .querySelector<HTMLButtonElement>('.sidebar button[aria-current="page"]')
+      ?.focus();
+    return () => document.removeEventListener("keydown", onKey);
+  }, [menu]);
   const [updateReady, setUpdateReady] = useState(false);
   const [apply, setApply] = useState<() => void>(() => () => {});
   const navigate = (r: string) => {
@@ -156,7 +183,10 @@ export default function App() {
       >
         {state.settings.locale === "tr" ? "İçeriğe geç" : "Skip to content"}
       </a>
-      <aside className={`sidebar ${menu ? "menu-open" : ""}`}>
+      <aside
+        className={`sidebar ${menu ? "menu-open" : ""}`}
+        inert={mobile && !menu}
+      >
         <a className="brand" href="#/today">
           <span className="brand-symbol" aria-hidden="true">
             Y<span>✦</span>
