@@ -1398,6 +1398,24 @@ test("YKS-008 cheatsheet topic search and manual PDFs remain usable at narrow sc
   await page
     .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
     .fill("");
+  await page
+    .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
+    .fill("asit");
+  await expect(page.locator(".subject-panel")).toHaveCount(3);
+  await page
+    .getByRole("button", {
+      name: "Dersteki tüm kopya kağıdı PDF’leri",
+      exact: true,
+    })
+    .first()
+    .click();
+  await expect(page.locator(".source-browser")).toHaveCount(1);
+  await expect(
+    page.locator('.subject-header[aria-expanded="true"]'),
+  ).toHaveCount(1);
+  await page
+    .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
+    .fill("");
   await page.getByRole("button", { name: "AYT", exact: true }).click();
   await expect(page.locator(".subject-panel")).toHaveCount(5);
   await page.getByRole("button", { name: /Matematik.*konu başlığı/ }).click();

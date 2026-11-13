@@ -281,3 +281,13 @@ manuel PDF açma ve ciddi/kritik axe kontrolü PASS. Electron Linux yeni bölüm
 izin vermedi; GitHub durumu 24 saat sonra deneme istiyor. Canlı site 0.3.0.
 Eski kaynağa karşı koşu çalıştırılıp yeni sürüm PASS diye sunulmadı. Native paket
 ve yerel kontroller ayrı ilerler; nihai sonuçlar Forge teslim kaydına eklenir.
+
+Ek mobil Chromium dokunma emülasyonu: 390×844 → 844×390 → 390×844; arama metni
+ve açık konu korunur, normal tap ile açılıp kapanır, sayfa taşması ve renderer
+hatası yok. Fiziksel telefon, ekran okuyucu veya gerçek klavye açılışı kanıtı değildir.
+
+YKS-008 çoklu arama: “asit” sorgusunda üç ders görünürken tek bir “Dersteki tüm
+kopya kağıdı PDF’leri” düğmesi üç kaynak listesini de açıyordu. Gerçek UI baseline:
+3 ders / 3 kaynak tarayıcısı. Düğme artık aktif dersi de seçer; ek kabul adımı
+3 arama sonucu / 1 açık ders / 1 kaynak tarayıcısı bekler. İlk 43507301865 paket
+koşusu son düzeltme öncesidir; nihai kaynak ve paket kanıtı Forge’da ayrılır.

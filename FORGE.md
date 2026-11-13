@@ -39,6 +39,12 @@ published-smoke.yml gerekir. Eski fiziksel cihaz,
 temiz kurulum/portable taşıma, üretim imzası ve iki paket arası güncelleme kapıları
 açıktır. Özel Drive dışa aktarımı bu turda yeniden denenmez.
 
+Son arama kontrolü: “asit” üç dersi eşleştirdiğinde tek bir dersteki tüm PDF’ler
+düğmesi üç kaynak listesini birden açıyordu. Gerçek UI ile gözlendi (3 → 3).
+Düğme artık açık dersi de seçer; yeni regresyon yalnız bir kaynak listesi ve bir
+açık ders bekler. İlk paket koşusu 43507301865 başarılı olsa da bu son düzeltmeden
+öncedir; nihai paket ve yayın kanıtı sonraki kaynak/koşuyla kaydedilecektir.
+
 # Delivered checkpoint: YKSMania 0.3.0 alpha
 
 Uygulama yalnızca Türkçe kalır. Bu turda Aurelia içindeki dört MEBİ AYT konu

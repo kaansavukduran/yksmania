@@ -108,7 +108,10 @@ export function Cheatsheets({
                   <button
                     className="ready-topic cheatsheet-topic"
                     aria-expanded={selected === null}
-                    onClick={() => setSelected(selected === null ? "" : null)}
+                    onClick={() => {
+                      setOpen(subject.id);
+                      setSelected(selected === null ? "" : null);
+                    }}
                   >
                     <span>{t("allCheatsheetFiles")}</span>
                     <ChevronDown
