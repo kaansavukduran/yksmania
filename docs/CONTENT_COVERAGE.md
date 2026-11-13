@@ -1,4 +1,4 @@
-# Content coverage, 0.3.0 alpha
+# Content coverage, 0.3.1 alpha
 
 These are different measurements. None measures a learner's mastery.
 
@@ -53,6 +53,16 @@ DNA replication. Twenty original exercises bring the total to 13 lessons / 65
 questions. Exact source-page mappings, scientific assumptions and answer checks
 are in [SOURCE_REVIEW](SOURCE_REVIEW.md). These are curated sections, not a full
 review or conversion of the 143 prepared PDFs or the 8,584-record archive.
+
+## Cheatsheet navigation in 0.3.1
+
+The 479 detailed headings now live in a separate Kopya Kağıtları section, between
+Konu Anlatımı and Sorular. These headings and cheatsheet-kind PDF references no
+longer appear in the other two sections. Explicit catalogue topic IDs take
+precedence; without them, a complete title word sequence in a Unicode-normalized
+filename can associate an imported PDF. All subject cheatsheet PDFs remain
+accessible even when no topic association is available. No source PDFs are added
+to the public bundle and a heading does not establish PDF availability.
 
 ## Private source use
 

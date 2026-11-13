@@ -1,1 +1,7 @@
-{"version":"0.3.0","channel":"alpha","notes":{"tr":"MEBİ PDF bölümleriyle kontrol edilen 4 yeni AYT modeli: türev, elektrik alan, denge ve DNA eşlenmesi. 13 etkileşimli anlatım, 65 özgün soru; tamamı Türkçe ve çevrimdışı."}}
+{
+  "version": "0.3.1",
+  "channel": "alpha",
+  "notes": {
+    "tr": "Kopya Kağıtları ayrı bölümde: TYT/AYT, ders ve konu seçimi; eşleşen PDF’leri çevrimdışı açma. Konu anlatımı ve soruların kaynaklarından ayrıldı."
+  }
+}

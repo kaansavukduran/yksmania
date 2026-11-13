@@ -1,4 +1,40 @@
-# Forge checkpoint: YKSMania 0.3.0 alpha
+# Forge checkpoint: YKSMania 0.3.1 alpha
+
+Kullanıcı isteği: kopya kağıtları derslerin içinde görünmesin; sol menüde Konu
+Anlatımı ile Sorular arasında ayrı bölüm olsun. Yeni /cheatsheets yolu TYT/AYT,
+ders, konu araması ve 479 kaynak başlığını içerir. Ders açıldığında konu listesi
+görünür; konu seçimi ilgili kopya kağıdı PDF’lerini açar. Dersteki tüm PDF’ler
+ayrı açılabilir; konusu eşleşmeyen dosyalar burada erişilebilir kalır.
+
+Konu Anlatımı ve Sorular’dan kopya kağıdı alt başlıkları kaldırıldı. Ortak kaynak
+türü filtresi cheatsheet dosyalarını yalnız yeni bölümde gösterir; diğer PDF
+türlerinin yerleşimi korunur. Açık katalog konu kimlikleri önceliklidir; kimlik
+olmadığında tam başlık sözcük dizisinin Unicode dosya adı eşleşmesi kullanılır.
+Belirsiz/kısmi sözcük eşleşmeleri konuya bağlanmaz. Kaynak PDF’leri herkese açık
+pakete gömülmez; Kütüphane’deki içe aktarma ve yerel PDF okuyucu yeniden kullanılır.
+Kayıt/veritabanı biçimi, soru kimlikleri, ilerleme, notlar ve tekrar tarihi değişmez.
+
+Güncel Fragaria Unslop ve React bileşen kontrolleri uygulandı. AIONIA canlı kaynağı
+2026-11-13 yeniden okundu: v1.7. YKS-008 gezinme regresyonu eski eb5ab16 kaynağında
+başarısız olarak gözlendi. Yeni akışta 320px, %200 arayüz ve %150 yazıda 477px
+sayfa taşması yakalandı: arama alanının 14rem minimumu ve tek sütunlu grid’in
+min-content boyutu. Ortak arama ve konu kartı sınırları düzeltildi; yazı/ölçek
+küçültülmez, içerik kırpılmaz. Yeni sayfanın gereksiz çift iç boşluğu kaldırıldı.
+Kopya kağıtları konu anlatımına alan kaybettirmez; notların altta kalması korunur.
+
+İçerik miktarı aynı: 341 ana konu, ayrı bölümde 479 kopya kağıdı başlığı,
+13 görsel anlatım / 65 özgün soru. Sürüm 0.3.1, Android versionCode 6.
+Yerel PASS: check/build, 26 birim/depolama/içerik ve 28 tarayıcı kabul testi.
+Electron Linux yeni bölümün ilk çevrimdışı açılışı, AYT modelleri, ders kaydı,
+yeniden yükleme ve süreç yeniden başlatma PASS; renderer hatası 0. Chromium
+156/Linux, koyu 1440×1000 ve açık 390×1000 ekran görüntüleri incelendi; taşma ve
+renderer hatası yok. 320px, %200 arayüz / %150 yazı, ilk çevrimdışı giriş, gerçek
+manuel PDF açma ve ciddi/kritik axe kontrolleri PASS. Yeni yayın ve native paket
+CI sonuçları teslim kaydına eklenir. Eski fiziksel cihaz,
+temiz kurulum/portable taşıma, üretim imzası ve iki paket arası güncelleme kapıları
+açıktır. Özel Drive dışa aktarımı bu turda yeniden denenmez.
+
+# Delivered checkpoint: YKSMania 0.3.0 alpha
 
 Uygulama yalnızca Türkçe kalır. Bu turda Aurelia içindeki dört MEBİ AYT konu
 özeti dosyasından 12 ilgili PDF sayfası yakın okumayla incelendi. Formül ve şekil

@@ -14,12 +14,14 @@ import {
   AlertCircle,
   Menu,
   X,
+  Files,
 } from "lucide-react";
 import { useRegisterSW } from "virtual:pwa-register/react";
 import { Capacitor } from "@capacitor/core";
 import { useApp } from "./store";
 import { Today } from "./pages/Today";
 import { Courses } from "./pages/Courses";
+import { Cheatsheets } from "./pages/Cheatsheets";
 import { Calendar } from "./pages/Calendar";
 import { Mistakes } from "./pages/Mistakes";
 import { Library } from "./pages/Library";
@@ -31,6 +33,7 @@ import type { Lesson } from "./domain/model";
 const routes = [
   { route: "/today", key: "today", Icon: Home },
   { route: "/courses", key: "courses", Icon: BookOpen },
+  { route: "/cheatsheets", key: "cheatsheets", Icon: Files },
   { route: "/questions", key: "questions", Icon: ListChecks },
   { route: "/calendar", key: "calendar", Icon: CalendarDays },
   { route: "/mistakes", key: "mistakes", Icon: Sprout },
@@ -253,7 +256,7 @@ export default function App() {
             <Settings2 size={20} />
             {t("settings")}
           </button>
-          <span className="sidebar-version">0.3.0 alpha</span>
+          <span className="sidebar-version">0.3.1 alpha</span>
         </div>
       </aside>
       {menu && (
@@ -339,6 +342,8 @@ export default function App() {
                 void start(l);
               }}
             />
+          ) : path === "/cheatsheets" ? (
+            <Cheatsheets navigate={navigate} />
           ) : path === "/questions" ? (
             <Courses
               mode="questions"

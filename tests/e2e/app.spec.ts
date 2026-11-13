@@ -405,7 +405,10 @@ test("theory and questions have separate subject navigation and preserve the com
   await open(page);
   const nav = page.locator(".sidebar nav button");
   const labels = await nav.allTextContents();
-  expect(labels.indexOf("Sorular")).toBe(labels.indexOf("Konu Anlatımı") + 1);
+  expect(labels.indexOf("Kopya Kağıtları")).toBe(
+    labels.indexOf("Konu Anlatımı") + 1,
+  );
+  expect(labels.indexOf("Sorular")).toBe(labels.indexOf("Kopya Kağıtları") + 1);
   await page
     .getByRole("button", { name: "Konu Anlatımı", exact: true })
     .first()
@@ -1160,4 +1163,257 @@ test("all four new AYT lessons first open offline at 320px with large Turkish co
     await expect(page.locator(".answer")).toHaveCount(3);
   }
   expect(discardedDrafts).toBe(3);
+});
+
+test("YKS-008 cheatsheets have a separate subject/topic route and keep PDF notes and question drafts offline", async ({
+  page,
+  context,
+}) => {
+  await open(page);
+  await page.evaluate(async () => {
+    await navigator.serviceWorker.ready;
+  });
+  await start(page);
+  await page.locator(".answer").nth(1).click();
+  await page
+    .getByRole("textbox", { name: "Notun", exact: true })
+    .fill("Soru taslağım korunmalı.");
+  await page.getByRole("button", { name: "Kütüphane", exact: true }).click();
+  const catalogue = {
+    format: "yksmania-source-catalogue",
+    version: 1,
+    name: "Ayrılmış kaynaklar",
+    createdAt: "2026-11-13T00:00:00Z",
+    entries: [
+      {
+        id: "test-cell-sheet",
+        name: "cell-sheet.pdf",
+        subjectIds: ["tyt-biyoloji"],
+        kind: "cheatsheet",
+        provider: "aurelia",
+        bytes: samplePdf().length,
+        topicIds: ["detail-11"],
+      },
+      {
+        id: "test-dna-sheet",
+        name: "dna-sheet.pdf",
+        subjectIds: ["tyt-biyoloji"],
+        kind: "cheatsheet",
+        provider: "aurelia",
+        bytes: 100,
+        topicIds: ["detail-10"],
+      },
+      {
+        id: "test-mixed-biology",
+        name: "biology.pdf",
+        subjectIds: ["tyt-biyoloji"],
+        kind: "mixed",
+        provider: "mebi",
+        bytes: samplePdf(true).length,
+      },
+      {
+        id: "test-other-subject",
+        name: "math-sheet.pdf",
+        subjectIds: ["tyt-matematik"],
+        kind: "cheatsheet",
+        provider: "aurelia",
+        bytes: 100,
+      },
+    ],
+  };
+  await page.locator('input[accept="application/json,.json"]').setInputFiles({
+    name: "catalogue.json",
+    mimeType: "application/json",
+    buffer: Buffer.from(JSON.stringify(catalogue)),
+  });
+  await expect(page.locator(".source-status")).toContainText(
+    "Ayrılmış kaynaklar",
+  );
+  await page.locator('input[accept="application/pdf,.pdf"]').setInputFiles([
+    {
+      name: "cell-sheet.pdf",
+      mimeType: "application/pdf",
+      buffer: samplePdf(),
+    },
+    {
+      name: "biology.pdf",
+      mimeType: "application/pdf",
+      buffer: samplePdf(true),
+    },
+  ]);
+  await expect(page.locator(".import-report")).toContainText(
+    "2 yeni dosya eklendi",
+  );
+  for (const route of ["Konu Anlatımı", "Sorular"]) {
+    await page
+      .locator(".sidebar")
+      .getByRole("button", { name: route, exact: true })
+      .click();
+    const subject = page.getByRole("button", { name: /Biyoloji.*18/ });
+    if ((await subject.getAttribute("aria-expanded")) !== "true")
+      await subject.click();
+    await expect(page.locator(".source-rows")).toContainText("biology.pdf");
+    await expect(page.locator("main")).not.toContainText("cell-sheet.pdf");
+    await expect(page.locator("main")).not.toContainText("dna-sheet.pdf");
+    await expect(
+      page.getByText("Kopya kâğıdı alt başlıkları", { exact: false }),
+    ).toHaveCount(0);
+  }
+  await page
+    .locator(".sidebar")
+    .getByRole("button", { name: "Kopya Kağıtları", exact: true })
+    .click();
+  await expect(
+    page.locator('.sidebar nav button[aria-current="page"]'),
+  ).toHaveText("Kopya Kağıtları");
+  await page.getByRole("button", { name: /Biyoloji.*konu başlığı/ }).click();
+  await page
+    .getByRole("button", {
+      name: "Dersteki tüm kopya kağıdı PDF’leri",
+      exact: true,
+    })
+    .click();
+  await expect(page.locator(".source-rows")).toContainText("cell-sheet.pdf");
+  await expect(page.locator(".source-rows")).toContainText("dna-sheet.pdf");
+  await expect(page.locator("main")).not.toContainText("biology.pdf");
+  await expect(page.locator("main")).not.toContainText("math-sheet.pdf");
+  await page
+    .getByRole("button", { name: "Hücre Organelleri", exact: true })
+    .click();
+  await expect(page.locator(".source-rows li")).toHaveCount(1);
+  await expect(page.locator(".source-rows")).toContainText("cell-sheet.pdf");
+  await context.setOffline(true);
+  await page.getByRole("button", { name: "PDF’yi aç", exact: true }).click();
+  await expect(page.locator("canvas")).toBeVisible();
+  await page
+    .getByRole("textbox", { name: "Notun", exact: true })
+    .fill("Hücre kopya kağıdı notum.");
+  await page.getByRole("button", { name: "Kapat", exact: true }).click();
+  await expect(
+    page.getByText("Bu cihazda kaydedildi", { exact: true }),
+  ).toBeVisible();
+  await page.reload();
+  await expect(
+    page.getByRole("heading", { name: "Kopya Kağıtları", exact: true }),
+  ).toBeVisible();
+  await page.getByRole("button", { name: /Biyoloji.*konu başlığı/ }).click();
+  await page
+    .getByRole("button", { name: "Hücre Organelleri", exact: true })
+    .click();
+  await page.getByRole("button", { name: "PDF’yi aç", exact: true }).click();
+  await expect(page.locator("canvas")).toBeVisible();
+  await expect(
+    page.getByRole("textbox", { name: "Notun", exact: true }),
+  ).toHaveValue("Hücre kopya kağıdı notum.");
+  await page.getByRole("button", { name: "Kapat", exact: true }).click();
+  await page
+    .getByRole("button", { name: "Nükleik Asitler DNA ve RNA", exact: true })
+    .click();
+  await expect(page.locator(".source-rows")).toContainText("dna-sheet.pdf");
+  await expect(
+    page.getByRole("button", { name: "PDF’yi aç", exact: true }),
+  ).toHaveCount(0);
+  await expect(
+    page.getByRole("link", { name: "Drive’da aç (internet)", exact: true }),
+  ).toBeVisible();
+  await page.getByRole("button", { name: "Bugün", exact: true }).click();
+  await expect(page.locator(".stat-number").first()).toHaveText("0");
+  await page
+    .getByRole("button", { name: "Kaldığın yerden devam et", exact: true })
+    .click();
+  await expect(page.locator(".answer").nth(1)).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+  await expect(
+    page.getByRole("textbox", { name: "Notun", exact: true }),
+  ).toHaveValue("Soru taslağım korunmalı.");
+});
+
+test("YKS-008 cheatsheet topic search and manual PDFs remain usable at narrow scale without clipping", async ({
+  page,
+  context,
+}) => {
+  await open(page);
+  await page.evaluate(async () => {
+    await navigator.serviceWorker.ready;
+  });
+  await page.getByRole("button", { name: "Kütüphane", exact: true }).click();
+  await page
+    .locator(".import-options select")
+    .nth(0)
+    .selectOption("tyt-biyoloji");
+  await page
+    .locator(".import-options select")
+    .nth(1)
+    .selectOption("cheatsheet");
+  await page.locator('input[accept="application/pdf,.pdf"]').setInputFiles({
+    name: "Hücre Organelleri - Kopya Kağıdı.pdf",
+    mimeType: "application/pdf",
+    buffer: samplePdf(),
+  });
+  await expect(page.locator(".import-report")).toContainText(
+    "1 yeni dosya eklendi",
+  );
+  await context.setOffline(true);
+  await page.getByRole("button", { name: "Ayarlar", exact: true }).click();
+  await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
+  await page.getByLabel("Yalnızca yazı boyutu %", { exact: true }).fill("150");
+  await page.getByRole("switch", { name: /Aion animasyonu/ }).uncheck();
+  await page.setViewportSize({ width: 320, height: 844 });
+  await page.getByRole("button", { name: "Menüyü aç", exact: true }).click();
+  await page
+    .locator(".sidebar")
+    .getByRole("button", { name: "Kopya Kağıtları", exact: true })
+    .click();
+  await page
+    .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
+    .fill("hücre organelleri");
+  await expect(page.locator(".subject-panel")).toHaveCount(1);
+  await page
+    .getByRole("button", { name: "Hücre Organelleri", exact: true })
+    .click();
+  await expect(page.locator(".source-rows")).toContainText(
+    "Hücre Organelleri - Kopya Kağıdı.pdf",
+  );
+  expect(
+    await page.evaluate(() => document.documentElement.scrollWidth),
+  ).toBeLessThanOrEqual(321);
+  await context.setOffline(true);
+  await page.getByRole("button", { name: "PDF’yi aç", exact: true }).click();
+  await expect(page.locator("canvas")).toBeVisible();
+  await page.getByRole("button", { name: "Kapat", exact: true }).click();
+  const violations = (
+    await new AxeBuilder({ page }).include("main").analyze()
+  ).violations.filter((v) => v.impact === "serious" || v.impact === "critical");
+  expect(violations).toEqual([]);
+  await page.getByRole("button", { name: /Biyoloji.*konu başlığı/ }).click();
+  await expect(
+    page.getByRole("button", { name: "Hücre Organelleri", exact: true }),
+  ).toHaveCount(0);
+  await page
+    .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
+    .fill("olmayan-konu");
+  await expect(page.locator(".subject-panel")).toHaveCount(0);
+  await page
+    .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
+    .fill("");
+  await page.getByRole("button", { name: "AYT", exact: true }).click();
+  await expect(page.locator(".subject-panel")).toHaveCount(5);
+  await page.getByRole("button", { name: /Matematik.*konu başlığı/ }).click();
+  await page
+    .getByRole("button", { name: "Alan ve Riemann", exact: true })
+    .click();
+  await expect(page.locator(".source-browser")).toContainText(
+    "Eşleşmiş PDF bulunamadı",
+  );
+  expect(
+    await page.evaluate(() => document.documentElement.scrollWidth),
+  ).toBeLessThanOrEqual(321);
+  await page
+    .getByRole("button", { name: "PDF veya kaynak kataloğu ekle", exact: true })
+    .click();
+  await expect(
+    page.getByRole("heading", { name: "Kütüphane", exact: true }),
+  ).toBeVisible();
 });

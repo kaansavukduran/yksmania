@@ -2,15 +2,22 @@ import { useMemo, useState } from "react";
 import { Download, FileText, ExternalLink } from "lucide-react";
 import { useApp } from "../store";
 import { useLibrary } from "../useLibrary";
-import { visibleIn } from "../domain/catalogue";
+import {
+  visibleIn,
+  matchesSourceTopic,
+  type SourceMode,
+  type SourceTopic,
+} from "../domain/catalogue";
 import type { LocalDocument } from "../domain/storage";
 import { DocumentReader } from "./DocumentReader";
 export function SourceList({
   subjectId,
   mode,
+  topic,
 }: {
   subjectId: string;
-  mode: "theory" | "questions";
+  mode: SourceMode;
+  topic?: SourceTopic;
 }) {
   const { t } = useApp();
   const { catalogue, documents, error, loading } = useLibrary();
@@ -30,9 +37,12 @@ export function SourceList({
   const entries = useMemo(
     () =>
       catalogue?.entries.filter(
-        (e) => e.subjectIds.includes(subjectId) && visibleIn(e.kind, mode),
+        (e) =>
+          e.subjectIds.includes(subjectId) &&
+          visibleIn(e.kind, mode) &&
+          (!topic || matchesSourceTopic(e.name, e.topicIds, topic)),
       ) ?? [],
-    [catalogue, subjectId, mode],
+    [catalogue, subjectId, mode, topic],
   );
   const filtered = entries.filter(
     (e) =>
@@ -48,26 +58,30 @@ export function SourceList({
     (d) =>
       !d.sourceIds?.length &&
       (d.subjectIds ?? [d.subjectId]).includes(subjectId) &&
-      visibleIn(d.kind ?? "mixed", mode),
+      visibleIn(d.kind ?? "mixed", mode) &&
+      (!topic || matchesSourceTopic(d.name, undefined, topic)),
   );
+  const title = t(mode === "cheatsheets" ? "cheatsheetFiles" : "sourceFiles");
   return (
-    <section className="source-browser" aria-label={t("sourceFiles")}>
-      <h3>{t("sourceFiles")}</h3>
+    <section className="source-browser" aria-label={title}>
+      <h3>{title}</h3>
       {loading ? (
         <p>{t("loading")}</p>
       ) : error ? (
         <p role="alert">{t("fileError")}</p>
       ) : (
         <>
-          {!catalogue && (
+          {!catalogue && mode !== "cheatsheets" && (
             <p className="muted small">{t("importCatalogueHelp")}</p>
           )}
           {!!entries.length && (
             <>
               <p className="small muted">
-                {entries.length.toLocaleString("tr-TR")} {t("catalogueReferences")} ·{" "}
+                {entries.length.toLocaleString("tr-TR")}{" "}
+                {t("catalogueReferences")} ·{" "}
                 {entries.filter((e) => localBySource.has(e.id)).length}{" "}
-                {t("onDevice")}. {t("pdfNotQuestionBank")}
+                {t("onDevice")}.{" "}
+                {mode !== "cheatsheets" && t("pdfNotQuestionBank")}
               </p>
               <div className="source-filters">
                 <label className="field">
@@ -165,6 +179,9 @@ export function SourceList({
                 </li>
               ))}
             </ul>
+          )}
+          {mode === "cheatsheets" && !entries.length && !manual.length && (
+            <p className="muted small">{t("cheatsheetNoFiles")}</p>
           )}
         </>
       )}

@@ -11,7 +11,7 @@ import { Capacitor } from "@capacitor/core";
 import { useApp } from "../store";
 import { parseBackup } from "../domain/storage";
 import type { Settings as SettingsType } from "../domain/model";
-const VERSION = "0.3.0";
+const VERSION = "0.3.1";
 function NumericControl({
   label,
   value,

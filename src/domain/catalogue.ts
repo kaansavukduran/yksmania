@@ -58,10 +58,29 @@ export function matchSource(
 ): SourceEntry | undefined {
   return index.get(normalizeName(name)) ?? undefined;
 }
-export function visibleIn(kind: ResourceKind, mode: "theory" | "questions") {
+export type SourceMode = "theory" | "questions" | "cheatsheets";
+export type SourceTopic = { id: string; title: string };
+export function visibleIn(kind: ResourceKind, mode: SourceMode) {
+  if (mode === "cheatsheets") return kind === "cheatsheet";
   return mode === "theory"
-    ? kind === "theory" || kind === "mixed" || kind === "cheatsheet"
-    : kind !== "theory";
+    ? kind === "theory" || kind === "mixed"
+    : kind === "questions" || kind === "mixed" || kind === "exam";
+}
+// Explicit catalogue associations take precedence over filename fallback.
+export function matchesSourceTopic(
+  name: string,
+  topicIds: string[] | undefined,
+  topic: SourceTopic,
+) {
+  if (topicIds?.length) return topicIds.includes(topic.id);
+  const words = (s: string) =>
+    normalizeName(s)
+      .replace(/[^\p{L}\p{N}]+/gu, " ")
+      .trim();
+  const title = words(topic.title);
+  return (
+    !!title && ` ${words(name.replace(/\.pdf$/i, ""))} `.includes(` ${title} `)
+  );
 }
 export async function hashPdf(
   file: File,

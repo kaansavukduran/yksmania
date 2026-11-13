@@ -801,7 +801,8 @@ small,
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  min-width: 14rem;
+  min-width: 0;
+  width: 14rem;
   max-width: 100%;
   background: var(--surface);
   border: 1px solid var(--border);
@@ -824,6 +825,8 @@ small,
 }
 .subject-panel {
   padding: 0 1.3rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 .subject-header {
   padding: 1.3rem 0;
@@ -1953,7 +1956,7 @@ progress::-moz-progress-bar {
     grid-template-columns: 1fr;
   }
   .subject-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
   .calendar-layout {
     grid-template-columns: 1fr;
@@ -2423,6 +2426,24 @@ progress::-moz-progress-bar {
 }
 .curriculum-list li > span:first-child {
   flex: 1 1 11rem;
+}
+.cheatsheet-grid {
+  margin-top: 1.3rem;
+  align-items: start;
+}
+.cheatsheet-grid .subject-content {
+  padding-inline: 0;
+}
+.cheatsheet-topics {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.cheatsheet-topic[aria-expanded="true"] {
+  color: var(--accent);
+}
+.cheatsheet-topic svg {
+  flex-shrink: 0;
 }
 .source-filters {
   display: flex;

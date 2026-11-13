@@ -1,6 +1,6 @@
 # Quality evidence
 
-Target 0.3.0 alpha. This file is updated at the verified Forge checkpoint.
+Target 0.3.1 alpha. This file is updated at the verified Forge checkpoint.
 
 ## Automated acceptance
 
@@ -244,3 +244,35 @@ herkese açık. Etiket/verified-run.json kaynak 1dc5d44 ile eşleşir; indirilen
 hash değerleri checksum listesiyle eşleşir. Android versionCode 5 / versionName
 0.3.0 / minimum API 24 ve APK v2 imzası doğrulandı. APK indirme adresi HTTP 200.
 Ayrıntılar ve alpha sınırları FORGE.md ile RELEASE_ALPHA.md içinde.
+
+
+## 0.3.1 — YKS-008: kopya kağıtları ayrı bölümde
+
+Kaynak: kullanıcının 2026-11-13 ekran görüntüsü ve menü sırası isteği. Baseline
+eb5ab16: yeni menü öğesini arayan normal gezinme regresyonu FAIL (beklenen sıra 2,
+gerçek index −1). Eski ders/soru kartları 479 ayrıntılı başlığı ve cheatsheet türü
+PDF’leri birlikte listeliyordu. Yeni /cheatsheets bu başlıkları ders/konu olarak
+listeler; ortak visibleIn filtresi cheatsheet türünü diğer iki bölümden çıkarır.
+
+İki yeni kabul akışı gerçek UI’den katalog/PDF içe aktarır. Katalogdaki konu
+kimliği dosya adından farklı olsa bile doğru konuya bağlanır; başka dersin veya
+mixed türünün PDF’si yeni bölümde görünmez. Konu PDF’si çevrimdışı açılır; notu
+yeniden yükleme sonrası korunur. İçe alınmayan dosya çevrimdışı PDF gibi sunulmaz.
+Mevcut soru seçimi/notu ve sıfır tamamlanmış oturum yeni bölümden dönüşte korunur.
+Katalogsuz manuel cheatsheet dosyası tam başlık adına göre bulunur. Ek bir model
+testi açık konu kimliklerinin önceliğini, Unicode adını ve kısmi sözcük reddini sınar.
+
+320px, %200 arayüz / %150 yazı kabulünde 477px taşma gözlendi. Arama alanının
+14rem minimum genişliği ve grid’in intrinsic minimumu doğrulandı. Arama alanı
+artık daralabilir; tek sütun minmax(0,1fr), konu kartı min-width:0 ve başlıkları
+satıra kırılır. Yeni bölümde çift yatay iç boşluk kaldırıldı. Aynı test dosyayı
+gerçekten açar, ciddi/kritik axe kontrolü yapar, arama/kapama/boş sonuç ve AYT
+geçişini kullanır; yazı/ölçek azaltılmaz. Fiziksel cihaz doğrulaması değildir.
+
+Son yerel, canlı web ve native paket sonuçları FORGE.md teslim kaydında tutulur.
+
+Yerel 0.3.1 PASS: check/build, 26 birim/depolama/içerik ve 28 tarayıcı kabul testi.
+Chromium 156/Linux koyu 1440×1000 ve açık 390×1000 ekran görüntüleri incelendi;
+yatay taşma yok, renderer hataları 0. Mobil büyük ölçek/yazı, çevrimdışı ilk giriş,
+manuel PDF açma ve ciddi/kritik axe kontrolü PASS. Electron Linux yeni bölüm ve
+önceki offline/reload/process-restart akışları PASS, renderer hataları 0.

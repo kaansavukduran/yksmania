@@ -1,10 +1,10 @@
 # YKSMania
 
-An offline-first YKS learning application by Fragaria Interactive. **0.3.0 alpha: visual learning and private resource import; not the complete curriculum.**
+An offline-first YKS learning application by Fragaria Interactive. **0.3.1 alpha: visual learning and private resource import; not the complete curriculum.**
 
-[Open the web app](https://yksmania.vercel.app) · [Download alpha packages](https://github.com/kaansavukduran/yksmania/releases/tag/v0.3.0-alpha.1)
+[Open the web app](https://yksmania.vercel.app) · [Download alpha packages](https://github.com/kaansavukduran/yksmania/releases/tag/v0.3.1-alpha.1)
 
-The web origin now serves 0.3.0. Native packages include the four AYT models and
+The web origin now serves 0.3.1. Native packages include the four AYT models and
 twenty new exercises. See FORGE.md for delivery and verification evidence.
 
 ## What works
@@ -18,6 +18,8 @@ twenty new exercises. See FORGE.md for delivery and verification evidence.
 - Four new AYT explorations: secant/tangent and a non-differentiable corner, signed
   electric field/force, dynamic equilibrium/catalyst, and semiconservative DNA copying.
   Source sections and model limits are recorded in [SOURCE_REVIEW](docs/SOURCE_REVIEW.md).
+- A separate **Kopya Kağıtları** section between theory and questions, with TYT/AYT,
+  subject/topic navigation and offline access to imported cheatsheet PDFs.
 - Full-width topic explanations with notes below the content; question notes remain
   below the question panel. Saved notes and unfinished sessions are retained.
 - Separate independent, assisted and incorrect responses; real session history and undo.

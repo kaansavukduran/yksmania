@@ -43,7 +43,7 @@ jobs:
           out = Path('release-files')
           out.mkdir()
           for p in files:
-              name = 'YKSMania-0.3.0-Android-debug.apk' if p.suffix == '.apk' else p.name
+              name = 'YKSMania-0.3.1-Android-debug.apk' if p.suffix == '.apk' else p.name
               shutil.copyfile(p, out / name)
           evidence = list(Path('packages').rglob('verification.txt'))
           assert len(evidence) == 1, evidence
@@ -56,6 +56,6 @@ jobs:
           PY
       - name: Publish complete prerelease
         run: |
-          gh release create v0.3.0-alpha.1 --target "$VERIFIED_SHA" --title "YKSMania 0.3.0 alpha 1" --draft --prerelease --notes-file docs/RELEASE_ALPHA.md
-          gh release upload v0.3.0-alpha.1 release-files/*
-          gh release edit v0.3.0-alpha.1 --draft=false --prerelease=true --latest=false
+          gh release create v0.3.1-alpha.1 --target "$VERIFIED_SHA" --title "YKSMania 0.3.1 alpha 1" --draft --prerelease --notes-file docs/RELEASE_ALPHA.md
+          gh release upload v0.3.1-alpha.1 release-files/*
+          gh release edit v0.3.1-alpha.1 --draft=false --prerelease=true --latest=false

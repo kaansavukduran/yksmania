@@ -3,7 +3,6 @@ import { Search, ChevronDown, ArrowRight } from "lucide-react";
 import { useApp } from "../store";
 import { lessons, subjects } from "../domain/content";
 import curriculum from "../data/curriculum.json";
-import detailTopics from "../data/detail-topics.json";
 import { Empty, SubjectMark } from "../components/Shared";
 import { SourceList } from "../components/SourceList";
 import type { Lesson } from "../domain/model";
@@ -30,14 +29,7 @@ export function Courses({
                 lesson.subjectId === s.id &&
                 l(lesson.title).toLocaleLowerCase("tr-TR").includes(query),
             ) ||
-            s.topics.some((v) =>
-              v.toLocaleLowerCase("tr-TR").includes(query),
-            ) ||
-            detailTopics.some(
-              (v) =>
-                v.subjectId === s.id &&
-                v.title.toLocaleLowerCase("tr-TR").includes(query),
-            )),
+            s.topics.some((v) => v.toLocaleLowerCase("tr-TR").includes(query))),
       ),
     [exam, query, l],
   );
@@ -90,11 +82,6 @@ export function Courses({
                 l(v.title).toLocaleLowerCase("tr-TR").includes(query)),
           );
           const expanded = open === subject.id || !!query;
-          const details = detailTopics.filter(
-            (v) =>
-              v.subjectId === subject.id &&
-              (!query || v.title.toLocaleLowerCase("tr-TR").includes(query)),
-          );
           const topics = curriculum.filter(
             (v) =>
               v.subjectId === subject.id &&
@@ -162,28 +149,6 @@ export function Courses({
                             <span>{topic.title}</span>
                             <span className="small muted">
                               {t("catalogueHeading")}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-                    </details>
-                  )}
-                  {(!query || details.length > 0) && (
-                    <details className="curriculum-details" open={!!query}>
-                      <summary>
-                        {t("detailTopics")} (
-                        {
-                          detailTopics.filter((v) => v.subjectId === subject.id)
-                            .length
-                        }
-                        )
-                      </summary>
-                      <ul className="curriculum-list">
-                        {details.map((topic) => (
-                          <li key={topic.id}>
-                            <span>{topic.title}</span>
-                            <span className="small muted">
-                              {t("sourceHeading")}
                             </span>
                           </li>
                         ))}

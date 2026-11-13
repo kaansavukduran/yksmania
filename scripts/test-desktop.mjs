@@ -42,6 +42,17 @@ try {
     await page.getByRole("button", { name: new RegExp(title) }).click();
     await page.locator(".visual-lab").waitFor();
   };
+  await navigate("Kopya Kağıtları");
+  await expect(
+    page.getByRole("heading", { name: "Kopya Kağıtları", exact: true }),
+  ).toBeVisible();
+  await page.getByRole("button", { name: /Biyoloji.*konu başlığı/ }).click();
+  await page
+    .getByRole("button", { name: "Hücre Organelleri", exact: true })
+    .click();
+  await expect(page.locator(".source-browser")).toContainText(
+    "Eşleşmiş PDF bulunamadı",
+  );
   await openAyt("Matematik", "Türev: kirişten teğete");
   await page
     .getByRole("button", { name: "Teğeti kontrol et", exact: true })
@@ -87,6 +98,7 @@ try {
     JSON.stringify({
       desktop: "PASS",
       aytVisuals: "PASS",
+      cheatsheets: "PASS",
       profile,
       offlineLesson: "PASS",
       reload: "PASS",

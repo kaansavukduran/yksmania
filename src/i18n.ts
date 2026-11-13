@@ -205,21 +205,30 @@ const messages: Record<string, string> = {
   startOver: "Taslağı bırak ve yeni çalışma aç",
   draftConfirm:
     "Yarım kalan çalışma var. Bu taslak bırakılıp yeni çalışma açılsın mı?",
-  footer: "Fragaria Interactive · YKSMania 0.3.0 alpha",
+  footer: "Fragaria Interactive · YKSMania 0.3.1 alpha",
   scopeNote:
     "İlk çalışan sürüm. Tam müfredat içeriği ve yerel paket testleri ayrıca tamamlanacak.",
   questions: "Sorular",
+  cheatsheets: "Kopya Kağıtları",
+  cheatsheetsIntro:
+    "TYT veya AYT seç, dersini aç ve kopya kağıtlarını konu konu incele.",
+  cheatsheetFiles: "Kopya kağıdı PDF’leri",
+  allCheatsheetFiles: "Dersteki tüm kopya kağıdı PDF’leri",
+  cheatsheetImport: "PDF veya kaynak kataloğu ekle",
+  cheatsheetNoFiles:
+    "Eşleşmiş PDF bulunamadı. Dosyalarını Kütüphane’den ekleyebilir veya dersin tüm kopya kağıdı PDF’lerine bakabilirsin.",
+  cheatsheetsScope:
+    "479 kaynak başlığı listelenir. PDF’ler ayrıca Kütüphane’den bu cihaza eklenir; başlık sayısı hazır PDF sayısı değildir.",
   mainNavigation: "Ana gezinme",
   studyNotes: "Çalışma notları",
   examChoice: "Sınav seçimi",
   readyNarratives: "hazır anlatım",
   readyQuestionSets: "hazır soru seti",
   originalQuestions: "özgün soru",
-  detailTopics: "Kopya kâğıdı alt başlıkları",
   catalogueHeading: "Konu başlığı",
   sourceHeading: "Kaynak başlığı",
   curriculumScope:
-    "Excel kaynaklarından 341 ana konu ve 479 ayrıntılı kopya kâğıdı başlığı. Bir başlığın listelenmesi, içeriğinin veya sorularının hazır olduğu anlamına gelmez. Sınav yılına ait resmî tam kapsam ayrıca doğrulanmalıdır. Kaynak başlıkları özgün Türkçesiyle korunur.",
+    "Excel kaynaklarından 341 ana konu başlığı. Bir başlığın listelenmesi, içeriğinin veya sorularının hazır olduğu anlamına gelmez. Sınav yılına ait resmî tam kapsam ayrıca doğrulanmalıdır. Kaynak başlıkları özgün Türkçesiyle korunur.",
   theoryIntro:
     "TYT veya AYT seç, dersini aç ve konu anlatımlarına ulaş. Sorular ayrı bölümde.",
   questionsIntro:
@@ -245,7 +254,7 @@ const messages: Record<string, string> = {
   provider_mebi: "MEBİ",
   provider_ogm: "OGM Materyal",
   provider_past: "Çıkmış sorular / ÖSYM",
-  provider_aurelia: "Kopya kâğıtları",
+  provider_aurelia: "Aurelia",
   provider_other: "Diğer kaynaklar",
   kind_theory: "Konu anlatımı",
   kind_questions: "Sorular",

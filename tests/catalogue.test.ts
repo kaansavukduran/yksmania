@@ -3,6 +3,7 @@ import {
   parseCatalogue,
   matchSource,
   visibleIn,
+  matchesSourceTopic,
   hashPdf,
 } from "../src/domain/catalogue";
 import curriculum from "../src/data/curriculum.json";
@@ -63,12 +64,40 @@ describe("source catalogue and workbook coverage", () => {
     c.entries.push({ ...c.entries[0], id: "sample-2" });
     expect(matchSource("Özgün.pdf", c)).toBeUndefined();
   });
-  it("keeps theory-only resources out of questions while mixed/cheatsheets remain usable in both", () => {
+  it("separates cheatsheets from theory and questions while keeping mixed resources in both", () => {
+    for (const mode of ["theory", "questions"] as const)
+      expect(visibleIn("cheatsheet", mode)).toBe(false);
+    for (const kind of ["theory", "questions", "mixed", "exam"] as const)
+      expect(visibleIn(kind, "cheatsheets")).toBe(false);
+    expect(visibleIn("cheatsheet", "cheatsheets")).toBe(true);
     expect(visibleIn("theory", "questions")).toBe(false);
     expect(visibleIn("questions", "theory")).toBe(false);
     expect(
       visibleIn("mixed", "theory") && visibleIn("mixed", "questions"),
     ).toBe(true);
+  });
+  it("uses explicit topic IDs before Unicode filename fallback and refuses partial-word matches", () => {
+    const topic = { id: "detail-11", title: "Hücre Organelleri" };
+    expect(matchesSourceTopic("hucre.pdf", ["detail-11"], topic)).toBe(true);
+    expect(
+      matchesSourceTopic("Hücre Organelleri.pdf", ["detail-12"], topic),
+    ).toBe(false);
+    expect(
+      matchesSourceTopic(
+        "011 - TYT - Biyoloji - Hücre Organelleri - Kopya Kağıdı.pdf",
+        undefined,
+        topic,
+      ),
+    ).toBe(true);
+    expect(matchesSourceTopic("Hücre bölünmeleri.pdf", undefined, topic)).toBe(
+      false,
+    );
+    expect(
+      matchesSourceTopic("Suyun özellikleri.pdf", undefined, {
+        id: "detail-4",
+        title: "Su",
+      }),
+    ).toBe(false);
   });
   it("hashes PDF chunks consistently, rejects invalid bytes and stops an aborted import", async () => {
     const f = new File(["%PDF-1.4\nhello"], "test.pdf");
