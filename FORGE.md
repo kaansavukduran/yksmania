@@ -30,7 +30,12 @@ yeniden yükleme ve süreç yeniden başlatma PASS; renderer hatası 0. Chromium
 156/Linux, koyu 1440×1000 ve açık 390×1000 ekran görüntüleri incelendi; taşma ve
 renderer hatası yok. 320px, %200 arayüz / %150 yazı, ilk çevrimdışı giriş, gerçek
 manuel PDF açma ve ciddi/kritik axe kontrolleri PASS. Yeni yayın ve native paket
-CI sonuçları teslim kaydına eklenir. Eski fiziksel cihaz,
+CI sonuçları teslim kaydına eklenir. 0.3.1 web dağıtımı BLOCKED: GitHub Vercel
+durumu “Deployment rate limited — retry in 24 hours.” Canlı /version.json 0.3.0;
+son READY dağıtım dpl_5L7aa779UHEyqZaqBa8gLVdSsDHj, kaynak 1dc5d44. Eski siteye
+karşı yeni yayın kabulü çalıştırılmaz. Plan/ücret değişikliği, alternatif host veya
+kota aşma yolu denenmedi. Sınır kalkınca mevcut projeye dağıtım ve ardından
+published-smoke.yml gerekir. Eski fiziksel cihaz,
 temiz kurulum/portable taşıma, üretim imzası ve iki paket arası güncelleme kapıları
 açıktır. Özel Drive dışa aktarımı bu turda yeniden denenmez.
 

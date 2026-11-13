@@ -276,3 +276,8 @@ Chromium 156/Linux koyu 1440×1000 ve açık 390×1000 ekran görüntüleri ince
 yatay taşma yok, renderer hataları 0. Mobil büyük ölçek/yazı, çevrimdışı ilk giriş,
 manuel PDF açma ve ciddi/kritik axe kontrolü PASS. Electron Linux yeni bölüm ve
 önceki offline/reload/process-restart akışları PASS, renderer hataları 0.
+
+0.3.1 canlı web kabulü BLOCKED: Vercel günlük dağıtım sınırı yeni kaynak yayınına
+izin vermedi; GitHub durumu 24 saat sonra deneme istiyor. Canlı site 0.3.0.
+Eski kaynağa karşı koşu çalıştırılıp yeni sürüm PASS diye sunulmadı. Native paket
+ve yerel kontroller ayrı ilerler; nihai sonuçlar Forge teslim kaydına eklenir.
