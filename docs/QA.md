@@ -1,6 +1,6 @@
 # Quality evidence
 
-Target 0.5.2 alpha. This file is updated at the verified Forge checkpoint.
+Target 0.5.3 alpha. This file is updated at the verified Forge checkpoint.
 
 ## Automated acceptance
 

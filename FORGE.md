@@ -1,3 +1,20 @@
+# YKSMania 0.5.3 — ağaçların yönü
+
+Kullanıcının dar kapsamlı isteği: TYT/AYT kökleri üstte, dallar aşağıya.
+StudyTree SVG koordinatları dikey yansıtıldı; yazılar ters çevrilmedi. Ders
+kimlikleri, renkleri, yatay sıraları, seçim/bağlantılar ve ilerleme korunur.
+Önceki yayımlanmamış 50 anlatımlı konu taslağı bu yamaya dahil edilmez.
+
+Yerel check,45 unit,build ve ilgili2 browser kontrolü PASS. Koyu TYT/açık AYT
+SVG görüntüleri görsel incelendi; kökler üstte, etiketler düz ve kadraj içinde.
+Tam50/50 browser PASS (Chromium/Linux). Yön, klavye/ders seçimi, konu ve
+soru bağlantıları,320px %200UI/%150yazı ve offline akışları korundu.
+Konu taslağına da yalnız SVG/test aktarıldı; o dalda build/ilgili2browser PASS.
+CI/native/yayın doğrulamaları bekliyor; aşağıdaki0.5.2 kayıtları yeni sürümün
+test sonucu sayılmaz.
+
+---
+
 # Doğrulanmış teslim — YKSMania0.5.2 / YKS-015
 
 Uygulama ve paket kaynağı7aedafb350f62a07cb8a28d4b331326333627241.

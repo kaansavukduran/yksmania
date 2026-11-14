@@ -1,7 +1,7 @@
 {
-  "version": "0.5.2",
+  "version": "0.5.3",
   "channel": "alpha",
   "notes": {
-    "tr": "Paragraf sorularında ilgili metin artık soru kökünün üstünde tam gösterilir. Konu anlatımı ve cümle keşfi aynı metni kullanır; eksik soru bağlamları ve dar ekrandaki seçenek taşması düzeltildi."
+    "tr": "Dünyam bölümünde TYT ve AYT kök yuvarlakları üste alındı; ders dalları yukarıdan aşağı açılır. Ders renkleri, seçimler ve ilerleme kayıtları korunur."
   }
 }

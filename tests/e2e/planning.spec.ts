@@ -243,6 +243,14 @@ test("YKS-010 one subject-colored progress chart and separate TYT/AYT trees link
   const a = await left.boundingBox(),
     b = await right.boundingBox();
   expect(a!.x).toBeLessThan(b!.x);
+  for (const tree of [left, right]) {
+    const diagram = tree.locator(".subject-tree-diagram");
+    const root = await diagram.locator(":scope > circle").boundingBox();
+    for (const subject of await diagram.getByRole("button").all()) {
+      const branchBounds = await subject.boundingBox();
+      expect(root!.y + root!.height).toBeLessThan(branchBounds!.y);
+    }
+  }
   const branch = page.getByRole("button", {
     name: "TYT H₂ Kimya konuları",
     exact: true,

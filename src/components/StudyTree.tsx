@@ -31,11 +31,11 @@ export function StudyTree({
           const col = i % 5,
             row = Math.floor(i / 5),
             x = 42 + col * 94,
-            y = row ? 146 : 42;
+            y = row ? 154 : 258;
           return (
             <g key={s.id}>
               <path
-                d={`M230 270 C230 ${190 + row * 25} ${x} 210 ${x} ${y + 21}`}
+                d={`M230 30 C230 ${110 - row * 25} ${x} 90 ${x} ${y - 21}`}
                 fill="none"
                 stroke={s.color}
                 strokeWidth={selected === s.id ? 4 : 2}
@@ -67,7 +67,7 @@ export function StudyTree({
                 </text>
                 <text
                   x={x}
-                  y={y + 42}
+                  y={y - 36}
                   textAnchor="middle"
                   className="tree-label"
                 >
@@ -80,13 +80,13 @@ export function StudyTree({
         })}
         <circle
           cx="230"
-          cy="270"
+          cy="30"
           r="26"
           fill="var(--surface-2)"
           stroke="var(--border)"
           strokeWidth="2"
         />
-        <text x="230" y="275" textAnchor="middle" className="tree-mark">
+        <text x="230" y="35" textAnchor="middle" className="tree-mark">
           {exam}
         </text>
       </svg>
