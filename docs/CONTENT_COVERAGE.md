@@ -1,4 +1,12 @@
-# Content coverage, 0.5.1 alpha
+# Content coverage, 0.8.0 alpha
+
+Current navigation: cheatsheets open inline from the topic header, not from the
+sidebar. Legacy deep links remain supported. The source-only fallback is explicit
+for unprepared headings; listing a heading does not mean the lesson is ready.
+115 original questions and 8 verified official references (5 booklets) remain.
+The timer is shared local state, never learning evidence. Reset preserves local
+PDFs, notes, settings and page positions. Historical sections below describe
+earlier versions; current source-page review is in SOURCE_REVIEW.md.
 
 These are different measurements. None measures a learner's mastery.
 
@@ -6,7 +14,7 @@ These are different measurements. None measures a learner's mastery.
 | --- | --- |
 | Main topic reference | 341 source rows: TYT 201, numerical AYT 140; stable topic IDs retained |
 | Detailed cheat-sheet outline | 479 headings; finer granularity and overlap with the main outline |
-| Interactive teaching | 23 lessons with authored SVG/vector interactions |
+| Interactive teaching | 54 lessons with authored SVG/vector interactions; 17 detailed guides; first 43 ordered headings have theory |
 | Interactive question bank | 115 original Turkish exercises; no official-item claim |
 | Private archive inventory | 8,584 PDF file records in 246 folders; about 23.6 GB, before content-hash deduplication |
 | Locally prepared private packs | 143 PDFs / 4,989 pages: 126 cheat sheets, 14 MEBİ-named PDFs and 3 OGM past-question books |

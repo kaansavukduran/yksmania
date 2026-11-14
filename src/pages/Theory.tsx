@@ -6,6 +6,7 @@ import { lessonById, subjectById } from "../domain/content";
 import type { Lesson, ReviewStage } from "../domain/model";
 import { VisualLab } from "../learning/VisualLab";
 import { Aion } from "../components/Aion";
+import { StudyTimer } from "../components/StudyTimer";
 import { TopicCheatsheet } from "../components/TopicCheatsheet";
 import { GuidedReading } from "../learning/GuidedReading";
 import { lessonGuides } from "../learning/guides";
@@ -63,6 +64,7 @@ export function Theory({
           </span>
           <h1>{l(lesson.title)}</h1>
         </div>
+        <StudyTimer />
         {topic && (
           <TopicCheatsheet
             key={topic.id}

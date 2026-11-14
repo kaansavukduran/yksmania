@@ -1,3 +1,97 @@
+# 0.8.0 — son yerel kabul tamamlandı, yayın hazırlanıyor
+
+72 birim, check/build ve son tam Chromium kabulü73/73 PASS.
+YKS-021 ve YKS-022 aynı başlangıç koşullarında düzeldi; bu kapsamda açık
+kanıtlanmış kusur kalmadı. Geliştirme Electron offline/reload/süreç yeniden
+başlatma/kum saati/sıfırlama PASS, rendererErrors0. Bu sonuç paketlenmiş
+Windows/Linux veya fiziksel Android testi değildir. İki gerçek web build'iyle
+0.5.3→0.8.0 veri koruyan güncelleme ayrıca PASS; native yükseltme sayılmaz.
+13 son görsel alındı, koyu/açık başlık, ağaç, model, reset ve büyük menü
+incelendi. Menü metin alanı41→248px; Ayarlar belge346→320px, font ölçekleri
+korundu. 47 değişen dosyada özel envanter kimliği/PDF yok. React denetiminde
+yeni model lazy, sayaç güncellemeleri yerel, terminal kayıtlar dayanıklı,
+effect/listener temizliği, erişilebilir adlar ve motion tercihleri kontrol edildi.
+Kanıt: /workspace/work/forge-080/{check-final,unit-final,build-final,
+full-browser-accepted,native-final,update-check-final,source-repeat}.log,
+menu-width-final.log, reset-overflow-final.log ve visuals/.
+
+54 anlatım /17 ayrıntılı rehber /115 özgün soru /8 doğrulanmış ÖSYM referansı.
+İlk43/479 başlık anlatıma hazır; bütün müfredat/20 yıllık arşiv hazır değildir.
+Vercel, platform CI ve paket yayın sonucu bu başlığın üstüne ayrıca eklenecek.
+
+---
+
+# 0.8.0 — çalışma kum saati ve ilerleme denetimi, geliştirme kaydı
+
+Başlangıç main ve çalışma dalı `7cfb5b7c0287f0a0d4730c5ce3b4c3792797a206`.
+`git fetch --all` ve `ls-remote --heads` uç karşılaştırması tamamlandı.
+Kullanıcının Unslop, Fragaria Unslop ve güncel aynı kimlikteki Yazılım Denetle
+becerileri uygulandı; canlı AIONIA v1.7 okundu. Atlas/karakter değişmedi.
+Türkçe ve Windows/Linux/Android/web kararları korunur. Yeni kaynak ve test
+sonuçları aşağıdadır; uzaktaki 0.8.0 dağıtım/paket sonucu henüz bu kayıtta
+başarılı sayılmaz. Son teslim kanıtı bu başlığın üstüne eklenecek.
+
+- Ortak kalıcı SVG kum saati: varsayılan 5dk, tıklamayla ters dönüp başlatma,
+  durdur/devam et, 1/5/10/20dk ve 1–120dk özel sürgü/sayı girişi. Çalışırken
+  mutlak son zaman; durunca kalan süre. Her karede IDB yazılmaz. Girdi
+  kilidi, başarısız yazmada eski süre ve görünür yeniden deneme; hareket azaltma.
+- Ayarlar/Veri'de onaylı ilerleme sıfırlama. Bütün konu/soru/tekrar/taslak ve
+  keşif kayıtları tek dayanıklı commit ile temizlenir; ayarlar/notlar/PDF'ler/
+  PDF konumları korunur. Başarısız yazmada önceki öğrenme kaydı korunur.
+- Ders simgeleri ortak Lucide vektörlerine taşındı; ağaç etiketleri çemberlerin
+  altında, kenar boşlukları simetrik. TYT/AYT kökleri üstte kalır. Sıfır
+  bankalı konu dalı artık 0 soru yerine Kaynak çalışması der. Güncelleme
+  bildirimine kayıttan sonra uygulanabilen doğrudan düğme eklendi.
+- Selçuklu Türkiyesi/detail-232 ve katman elektron dizilimi/detail-147 eklendi;
+  paragraf özgün metni korunarak yedi bölüme ve dört çözümlü örneğe genişletildi.
+  Kaynak sınırları SOURCE_REVIEW'de. 54 anlatım / 17 ayrıntılı rehber /
+  115 özgün soru / 8 ÖSYM referansı. İlk 43 sıralı başlıkta anlatım var;
+  bütün 479 veya son 20 yıllık arşiv tamamlandı iddiası yok.
+
+Eski istemci: gerçek iki web build'iyle 0.5.3 → 0.8.0 güncelleme PASS.
+Yarım paragraf yanıtı/not korunur; sonrasında offline yeniden açılır. Ağaç
+kökleri yukarıdadır. Eski fallback padding x/y 1px → güncel 33px. Bu önceki
+YKS-016 düzeltmesinin dağıtım regresyonudur; güncel 0.7'de yeniden üretilmiş
+bir padding kusuru diye sayılmaz. Kullanıcı görüntüsü 0.5.2 ve bekleyen sürüm
+bildirimi gösterir; kullanıcı cihazının durumu ayrıca doğrudan incelenmedi.
+Eski UI: Ayarlar → Güncellemeler ve hakkında → Güncelle ve yeniden aç.
+Bu web testi native paket yükseltme veya fiziksel cihaz testi değildir.
+
+YKS-021 / Orta: yeni kum saati panelinde 320px, UI%200/yazı%150 açık temada
+iki sabit sütun ve rem padding, dakika sözcüğüne 41px bırakıyordu; gerekli
+kelime genişliği 130,08px. Onarım öncesi ölçüm FAIL ve görüntü kanıtı var.
+Otomatik sığan sütunlar ve ekrana göre sınırlı padding ile onarıldı; font
+ölçekleri düşürülmez. Aynı ölçüm PASS:248px alan >=130,08px sözcük; root32px
+ve text-scale1,5 korunur. Son ölçüm/kabul sonucu teslim kaydında tamamlanır.
+İlk çalışma denemesinde testin yanlış Gizle düğme adı düzeltilip aynı gerçek
+Görüntüle düğmesiyle aç/kapat sınandı; ürün kusuru diye kaydedilmez. Node24
+JSON import hatası, e2e'de içerik modülü ithali kaldırılıp gerçek soru akışıyla
+çözüldü. Beklenti azaltılmadı. Bütün bankalı sorular ve metin regresyonları korunur.
+
+İlk check/build ve 72 birim PASS. Odaklı 7/7 ve geliştirme Electron offline /
+kapanış-açılış/kum saati/sıfırlama PASS; rendererErrors 0. 13 koyu/açık ve
+320px büyük ölçek görüntüsü alındı; ilk inceleme YKS-021'i ortaya çıkardı.
+Son UI onarımı sonrası tam test, görsel ve platform sonuçları ayrıca eklenecek.
+Kanıtlar /workspace/work/forge-080 içindedir; özel kaynaklar Git dışında.
+İlk 45 değişen dosyada envanter kimliği ve eklenen PDF kontrolü: sıfır eşleşme.
+İlk tam browser koşusu71/73: YKS-021 ve YKS-022 FAIL; onarımlardan sonra
+aynı testler ve son tam kabul tekrar çalıştırılır. İkinci tam koşu72/73:
+YKS-021/022 ve diğer bütün ürün akışları PASS; yeni geometri testinde
+kaymakta olan sayfanın iki ayrı zamandaki rect'leri karşılaştırılmıştı.
+Ölçümler tek DOM değerlendirmesine alındı; aynı >=18px kabulü korunarak3/3
+tekrar PASS. Son tam koşu bundan sonra yeniden başlatıldı.
+
+YKS-022 / Orta: yeni Ayarlar sıfırlama düğmesi 320px UI%200/yazı%150'de
+kendi kartını aşıp belge genişliğini346px yapıyordu. Eski mevcut plan/ayarlar
+regresyonu FAIL; DOM geometrisiyle tek taşan öğe doğrulandı. Düğmenin dekoratif
+ikonu kaldırıldı, genişliği kartla ve iç boşluğu ekranla sınırlandı. Ölçekler
+korunur; son aynı regresyon PASS; belge genişliği320px ve taşan öğe0.
+
+Sonraki içerik: sıra 44/detail-233 Osmanlı siyaseti, sıra45/detail-234 askerler
+ve ordu. Kalan dokuz kısa başlangıç anlatımını kapsamlı rehbere dönüştür.
+
+---
+
 # 0.7.0 yayımlandı — güncel teslim kaydı
 
 Uygulama/paket kaynağı: `d88f332d0ec14d40a5241108e1716690973fb95b`.

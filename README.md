@@ -1,10 +1,10 @@
 # YKSMania
 
-Fragaria Interactive’in çevrimdışı YKS çalışma uygulaması. **0.7.0 alpha**.
+Fragaria Interactive’in çevrimdışı YKS çalışma uygulaması. **0.8.0 alpha**.
 
-[Uygulamayı aç](https://yksmania.vercel.app) · [Windows, Linux ve Android paketleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.7.0-alpha.1)
+[Uygulamayı aç](https://yksmania.vercel.app) · [Windows, Linux ve Android paketleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.8.0-alpha.1)
 
-52 anlatım / 115 özgün soru / 15 ayrıntılı rehber. İlk beş TYT kimya ve ilk
+54 anlatım / 115 özgün soru / 17 ayrıntılı rehber. İlk beş TYT kimya ve ilk
 beş TYT matematik konusu, rasyonel sayılar, hücre, periyodik sistem, denklemler
 ve eşitsizlikler; MEBİ/OGM ve ilgili Aurelia kağıtlarıyla karşılaştırılan
 gerekçeli açıklamalar, etkileşimli modeller, çözümlü örnekler ve hatırlama içerir.
@@ -21,6 +21,12 @@ PDF’de veya onun cihazdaki doğrulanmış kopyasında açılır. 479 ayrıntı
 başlık, bütün anlatım ve soru içeriğinin tamamlandığı anlamına gelmez.
 Test ve dağıtım kanıtları [FORGE.md](FORGE.md) içindedir.
 
+Konu, kopya kağıdı ve soru ekranlarında kalıcı kum saati: varsayılan 5 dakika;
+1/5/10/20 dakika veya 1–120 dakika özel süre, ters çevir, durdur/devam et.
+Ayarlar → Veri bölümünde ilerlemeyi sıfırlama; not, PDF ve ayarlar korunur.
+Selçuklu Türkiyesi ve katman elektron dizilimi eklendi, paragraf genişletildi.
+Doğrulanan çalışma sırasının ilk 43 başlığında anlatım vardır.
+
 ## What works
 
 - Today retains completed work and shows, for example, **5 soruda 4 doğru · 1 yanlış**.
@@ -34,7 +40,7 @@ Test ve dağıtım kanıtları [FORGE.md](FORGE.md) içindedir.
 - TYT's 10 subjects and numerical AYT's 5 subjects: all 341 main topic rows and
   479 detailed cheat-sheet headings from the source workbooks (different granularity,
   not 820 distinct official exam topics).
-- Fifty-two Turkish lessons and interactive vector explanations, 115 original exercises, hints, confidence and explanations.
+- Fifty-four Turkish lessons and interactive vector explanations, 115 original exercises, hints, confidence and explanations.
 - Number-set membership, sign/parity comparisons, paired consecutive sums, prime
   divisor trials and ordered-book factorials, with saved exploration choices.
 - Clickable animal/plant cells, a 118-element periodic table, area-preserving geometry,

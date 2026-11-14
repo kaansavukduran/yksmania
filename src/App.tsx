@@ -266,7 +266,7 @@ export default function App() {
             <Settings2 size={20} />
             {t("settings")}
           </button>
-          <span className="sidebar-version">0.7.0 alpha</span>
+          <span className="sidebar-version">0.8.0 alpha</span>
         </div>
       </aside>
       {menu && (
@@ -326,6 +326,15 @@ export default function App() {
         {updateReady && (
           <div className="update-banner">
             <span>{t("updateReady")}</span>
+            <button
+              className="primary"
+              disabled={status !== "saved"}
+              onClick={() => {
+                if (status === "saved") apply();
+              }}
+            >
+              {t("applyUpdate")}
+            </button>
             <button
               className="text-button"
               onClick={() => navigate("/settings")}

@@ -1,3 +1,4 @@
+import { electronShells } from "../src/learning/ElectronShellExplorer";
 import { describe, it, expect } from "vitest";
 import { lessons } from "../src/domain/content";
 import elements from "../src/data/elements.json";
@@ -52,4 +53,14 @@ describe("learning content and backward-compatible exploration state", () => {
     expect(restored.reviews).toEqual([]);
     expect(restored.explorations.geometry.base).toBe(12);
   });
+});
+
+it("conserves all first-20 electron counts and distinguishes calcium ion from its neutral period", () => {
+  expect(electronShells(0)).toEqual([]);
+  for (const e of elements.slice(0, 20))
+    expect(electronShells(e.z)).toEqual(e.shells);
+  expect(electronShells(20 - 2)).toEqual([2, 8, 8]);
+  expect(electronShells(8 - -2)).toEqual([2, 8]);
+  for (const n of [-1, 21, 1.5, NaN, Infinity])
+    expect(() => electronShells(n)).toThrow();
 });

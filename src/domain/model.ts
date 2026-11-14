@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { focusTimerSchema, initialFocusTimer } from "./focusTimer";
 export type Locale = "tr";
 export type Text = { tr: string };
 export const txt = (tr: string): Text => ({ tr });
@@ -99,6 +100,7 @@ export type TheoryReviewCompletion = z.infer<
 export const stateSchema = z.object({
   version: z.literal(1),
   settings: settingsSchema,
+  focusTimer: focusTimerSchema.default(initialFocusTimer),
   sessions: z.array(sessionSchema).max(100000),
   reviews: z.array(reviewSchema).max(300000),
   theoryReviewCompletions: z
@@ -137,6 +139,7 @@ export const stateSchema = z.object({
 export type AppState = z.infer<typeof stateSchema>;
 export const initialState = (): AppState => ({
   version: 1,
+  focusTimer: initialFocusTimer(),
   settings: {
     locale: "tr",
     theme: "dark",

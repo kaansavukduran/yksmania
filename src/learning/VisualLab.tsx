@@ -17,11 +17,15 @@ const Narrative = lazy(() =>
 );
 const MathFoundations = lazy(() => import("./MathFoundations"));
 const Algebra = lazy(() => import("./AlgebraExplorer"));
+const Shells = lazy(() => import("./ElectronShellExplorer"));
 export function VisualLab({ id }: { id: string }) {
   const { t } = useApp();
   return (
     <Suspense fallback={<p role="status">{t("loading")}</p>}>
-      {id === "birinci-dereceden-denklemler" || id === "basit-esitsizlikler" ? (
+      {id === "katman-elektron-dizilimi" ? (
+        <Shells />
+      ) : id === "birinci-dereceden-denklemler" ||
+        id === "basit-esitsizlikler" ? (
         <Algebra key={id} inequality={id === "basit-esitsizlikler"} />
       ) : narrativeById.has(id) ? (
         <Narrative key={id} id={id} />

@@ -42,3 +42,8 @@ models and worked examples; summaries alone are insufficient. Past ÖSYM items
 are verified references to actual booklets, with exam/year/test/question/page,
 answer source and exact PDF identity. Never imply that partial %10 papers or
 partially reviewed years are a complete 20-year question bank.
+
+Study hourglass state is local and shared across theory, PDF and question routes.
+Use an absolute deadline while running; never persist every display tick or award
+learning evidence for time. Reset progress only through explicit UI confirmation
+and one durable state commit; preserve settings, notes, documents and PDF pages.

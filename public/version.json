@@ -1,7 +1,7 @@
 {
-  "version": "0.7.0",
+  "version": "0.8.0",
   "channel": "alpha",
   "notes": {
-    "tr": "52 anlatım ve 15 ayrıntılı rehber. İlk beş TYT matematik konusu, hücre ve periyodik sistem genişletildi; denklemler ve eşitsizlikler etkileşimli modellerle eklendi. Yaklaşık kesir sonuçları ve İçindekiler klavye odağı düzeltildi. Kaynak PDF ve ilerlemen korunur."
+    "tr": "Kalıcı çalışma kum saati: ters çevir, durdur/devam et, 1/5/10/20 dakika ve 2 saate kadar özel süre. İlerlemeyi sıfırlarken not, PDF ve ayarlar korunur. Ders simgeleri yenilendi, güncelleme düğmesi görünür oldu. Selçuklu ve elektron katmanları eklendi, paragraf genişletildi: 54 anlatım, 17 ayrıntılı rehber."
   }
 }

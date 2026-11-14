@@ -6,6 +6,7 @@ import curriculum from "../data/curriculum.json";
 import { Empty, SubjectMark } from "../components/Shared";
 import { SourceList } from "../components/SourceList";
 import type { Lesson } from "../domain/model";
+import { StudyTimer } from "../components/StudyTimer";
 export function Courses({
   start,
   mode = "theory",
@@ -42,6 +43,7 @@ export function Courses({
         <span className="quiet-chip">
           {curriculum.length} {t("topics")}
         </span>
+        <StudyTimer />
       </header>
       <p className="lead muted">
         {t(mode === "theory" ? "theoryIntro" : "questionsIntro")}

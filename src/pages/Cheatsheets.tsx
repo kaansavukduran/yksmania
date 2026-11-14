@@ -5,6 +5,7 @@ import { subjects } from "../domain/content";
 import detailTopics from "../data/detail-topics.json";
 import { Empty, SubjectMark } from "../components/Shared";
 import { SourceList } from "../components/SourceList";
+import { StudyTimer } from "../components/StudyTimer";
 
 export function Cheatsheets({
   navigate,
@@ -39,10 +40,13 @@ export function Cheatsheets({
   return (
     <>
       <header className="page-heading">
-        <h1>{t("cheatsheets")}</h1>
-        <span className="quiet-chip">
-          {detailTopics.length} {t("topics")}
-        </span>
+        <div>
+          <h1>{t("cheatsheets")}</h1>
+          <span className="quiet-chip">
+            {detailTopics.length} {t("topics")}
+          </span>
+        </div>
+        <StudyTimer />
       </header>
       <p className="lead muted">{t("cheatsheetsIntro")}</p>
       <div className="toolbar">

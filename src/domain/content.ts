@@ -3,6 +3,7 @@ import { visualLessons } from "../learning/lessons";
 import { introLessons } from "../learning/introLessons";
 import { mathLessons } from "../learning/mathLessons";
 import { algebraLessons } from "../learning/algebraLessons";
+import { sourceExpansionLessons } from "../learning/sourceExpansionLessons";
 import { aytLessons } from "../learning/aytLessons";
 import curriculum from "../data/curriculum.json";
 import { paragraphPassage } from "../data/reading";
@@ -722,7 +723,7 @@ export const lessons: Lesson[] = [
     id: "paragraf",
     subjectId: "tyt-turkce",
     title: t("Paragrafta ana düşünce"),
-    minutes: 12,
+    minutes: 40,
     tags: ["reading"],
     source: t("YKSMania için yazılmış özgün metin ve sorular."),
     objectives: [t("Ana düşünceyi metindeki kanıtla seç.")],
@@ -811,6 +812,7 @@ export const lessons: Lesson[] = [
   ...introLessons,
   ...mathLessons,
   ...algebraLessons,
+  ...sourceExpansionLessons,
   ...sourceNarratives,
 ];
 export const lessonById = (id: string) => lessons.find((l) => l.id === id);

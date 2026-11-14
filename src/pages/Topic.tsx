@@ -13,6 +13,7 @@ import { SourceList } from "../components/SourceList";
 import { TopicCheatsheet } from "../components/TopicCheatsheet";
 import { PastExamQuestions } from "../components/PastExamQuestions";
 import { Theory } from "./Theory";
+import { StudyTimer } from "../components/StudyTimer";
 export function Topic({
   id,
   mode,
@@ -69,6 +70,7 @@ export function Topic({
           </span>
           <h1>{topic.title}</h1>
         </div>
+        <StudyTimer />
         <TopicCheatsheet
           key={topic.id}
           topic={topic}

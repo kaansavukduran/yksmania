@@ -13,6 +13,7 @@ import { learningReviewPlan } from "../domain/learningReviews";
 import { Aion } from "../components/Aion";
 import { PastExamQuestions } from "../components/PastExamQuestions";
 import { lessonTopic } from "../domain/studyPlan";
+import { StudyTimer } from "../components/StudyTimer";
 export function Study({ navigate }: { navigate: (s: string) => void }) {
   const { state, t, l, update, commit, toast } = useApp();
   const [busy, setBusy] = useState(false);
@@ -113,11 +114,14 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
         {t("closeSession")}
       </button>
       <header className="study-heading">
-        <span className="eyebrow">
-          {subject.exam} · {l(subject.name)}
-          {draft.reviewId ? ` · ${t("review")}` : ""}
-        </span>
-        <h1>{l(lesson.title)}</h1>
+        <div className="study-title">
+          <span className="eyebrow">
+            {subject.exam} · {l(subject.name)}
+            {draft.reviewId ? ` · ${t("review")}` : ""}
+          </span>
+          <h1>{l(lesson.title)}</h1>
+        </div>
+        <StudyTimer />
       </header>
       <div className="practice-wrap">
         <section className="panel question-panel">

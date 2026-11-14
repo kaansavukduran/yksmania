@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { subjects } from "../domain/content";
 import { studyTopics, topicLessons, type StudyMode } from "../domain/studyPlan";
+import { SubjectIcon } from "./SubjectIcon";
 export function StudyTree({
   exam,
   completed,
@@ -30,7 +31,7 @@ export function StudyTree({
         {list.map((s, i) => {
           const col = i % 5,
             row = Math.floor(i / 5),
-            x = 42 + col * 94,
+            x = 50 + col * 90,
             y = row ? 154 : 258;
           return (
             <g key={s.id}>
@@ -44,7 +45,7 @@ export function StudyTree({
               <g
                 role="button"
                 tabIndex={0}
-                aria-label={`${exam} ${s.icon} ${s.name.tr} konuları`}
+                aria-label={`${exam} ${s.name.tr} konuları`}
                 aria-pressed={selected === s.id}
                 onClick={() => setSelected(s.id)}
                 onKeyDown={(e) => {
@@ -62,12 +63,12 @@ export function StudyTree({
                   stroke={s.color}
                   strokeWidth={selected === s.id ? 4 : 2}
                 />
-                <text x={x} y={y + 5} textAnchor="middle" className="tree-mark">
-                  {s.icon}
-                </text>
+                <g transform={`translate(${x - 12} ${y - 12})`} color={s.color}>
+                  <SubjectIcon id={s.id} width={24} height={24} />
+                </g>
                 <text
                   x={x}
-                  y={y - 36}
+                  y={y + 38}
                   textAnchor="middle"
                   className="tree-label"
                 >
@@ -135,7 +136,9 @@ export function StudyTree({
                 Sorular ·{" "}
                 {questions.has(topic.id)
                   ? "Çalışıldı"
-                  : topicLessons(topic.id).length
+                  : topicLessons(topic.id).some(
+                        (lesson) => lesson.questions.length > 0,
+                      )
                     ? `${topicLessons(topic.id).reduce((n, l) => n + l.questions.length, 0)} özgün soru`
                     : "Kaynak çalışması"}
               </button>

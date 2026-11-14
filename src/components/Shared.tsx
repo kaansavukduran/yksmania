@@ -2,6 +2,7 @@ import { ArrowUpRight, BookOpen, ChevronRight, Clock3 } from "lucide-react";
 import { useApp } from "../store";
 import { subjectById } from "../domain/content";
 import type { Lesson } from "../domain/model";
+import { SubjectIcon } from "./SubjectIcon";
 export function SubjectMark({ id }: { id: string }) {
   const s = subjectById(id);
   return (
@@ -10,7 +11,7 @@ export function SubjectMark({ id }: { id: string }) {
       style={{ "--subject": s?.color } as React.CSSProperties}
       aria-hidden="true"
     >
-      {s?.icon ?? "•"}
+      <SubjectIcon id={id} />
     </span>
   );
 }

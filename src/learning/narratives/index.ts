@@ -8,6 +8,7 @@ import { divisionNarratives } from "./mathDivision";
 import { turkishNarratives } from "./turkish";
 import { energyNarrative } from "./physicsEnergy";
 import { narrativeLesson } from "./types";
+import { seljukNarrative } from "./seljuk";
 export const narrativePacks = [
   ...biologyNarratives,
   ...mathematicsNarratives,
@@ -18,6 +19,7 @@ export const narrativePacks = [
   ...divisionNarratives,
   ...turkishNarratives,
   energyNarrative,
+  seljukNarrative,
 ];
 export const narrativeById = new Map(
   narrativePacks.map((pack) => [pack.id, pack]),

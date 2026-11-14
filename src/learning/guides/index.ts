@@ -9,6 +9,8 @@ import { primesGuide, factorialGuide } from "./primeFactorial";
 import { cellsGuide } from "./cells";
 import { periodicGuide } from "./periodic";
 import { equationGuide, inequalityGuide } from "./algebra";
+import { shellsGuide } from "./shells";
+import { paragraphGuide } from "./paragraph";
 export const lessonGuides = new Map(
   [
     rationalGuide,
@@ -26,5 +28,7 @@ export const lessonGuides = new Map(
     periodicGuide,
     equationGuide,
     inequalityGuide,
+    shellsGuide,
+    paragraphGuide,
   ].map((guide) => [guide.id, guide]),
 );

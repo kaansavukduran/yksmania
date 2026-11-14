@@ -11,8 +11,9 @@ import { Capacitor } from "@capacitor/core";
 import { useApp } from "../store";
 import { DateInput } from "../components/DateInput";
 import { parseBackup } from "../domain/storage";
+import { ResetProgress } from "../components/ResetProgress";
 import type { Settings as SettingsType } from "../domain/model";
-const VERSION = "0.7.0";
+const VERSION = "0.8.0";
 function NumericControl({
   label,
   value,
@@ -352,6 +353,7 @@ export function Settings({
               {t("restore")}
             </button>
           </div>
+          <ResetProgress />
         </section>
         <section className="panel settings-panel">
           <h2>{t("updates")}</h2>

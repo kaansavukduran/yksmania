@@ -252,7 +252,7 @@ test("YKS-010 one subject-colored progress chart and separate TYT/AYT trees link
     }
   }
   const branch = page.getByRole("button", {
-    name: "TYT H₂ Kimya konuları",
+    name: "TYT Kimya konuları",
     exact: true,
   });
   await branch.focus();

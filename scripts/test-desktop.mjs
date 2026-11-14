@@ -271,6 +271,20 @@ try {
   await expect(page.locator(".save-status")).toContainText(
     "Bu cihazda kaydedildi",
   );
+  await page
+    .getByRole("button", { name: "Kum saati süre ayarları", exact: true })
+    .click();
+  await page.getByRole("button", { name: "20 dakika", exact: true }).click();
+  await page
+    .getByRole("button", {
+      name: "Kum saatini ters çevir ve başlat",
+      exact: true,
+    })
+    .click();
+  await expect(page.locator(".hourglass-state")).toHaveText("Kum akıyor");
+  await expect(page.locator(".save-status")).toContainText(
+    "Bu cihazda kaydedildi",
+  );
   await app.close();
   app = await launch();
   page = await app.firstWindow();
@@ -288,6 +302,13 @@ try {
   await expect(
     page.getByRole("textbox", { name: "Notun", exact: true }),
   ).toHaveValue("Paragraf taslağı korunmalı.");
+  await expect(page.locator(".hourglass-state")).toHaveText("Kum akıyor");
+  await page.getByRole("button", { name: "Durdur", exact: true }).click();
+  const timerRemaining = await page.locator(".hourglass-time").innerText();
+  expect(timerRemaining).toMatch(/^19:/);
+  await page.reload();
+  await expect(page.locator(".hourglass-time")).toHaveText(timerRemaining);
+  await expect(page.locator(".hourglass-state")).toHaveText("Duraklatıldı");
   for (const [i, index] of [0, 2, 0, 1, 0].entries()) {
     await expect(paragraphText()).toHaveText(passage);
     await page.locator(".answer").nth(index).click();
@@ -302,10 +323,34 @@ try {
       .click();
   }
   await expect(page.locator(".result-stats")).toContainText("5/5");
+  await navigate("Ayarlar");
+  await page
+    .getByRole("button", { name: "İlerlemeyi sıfırla", exact: true })
+    .click();
+  await page
+    .getByRole("dialog")
+    .getByRole("button", { name: "Vazgeç", exact: true })
+    .click();
+  await page
+    .getByRole("button", { name: "İlerlemeyi sıfırla", exact: true })
+    .click();
+  await page
+    .getByRole("dialog")
+    .getByRole("button", { name: "Evet, ilerlemeyi sıfırla", exact: true })
+    .click();
+  await expect(page.getByRole("dialog")).not.toBeVisible();
+  await page.reload();
+  await navigate("Bugün");
+  await expect(page.locator(".stat-number").first()).toHaveText("0");
+  await expect(
+    page.getByRole("region", { name: "Konu planı", exact: true }),
+  ).toContainText("0/479");
   expect(errors).toEqual([]);
   console.log(
     JSON.stringify({
       desktop: "PASS",
+      hourglassProcessRestartAndPause: "PASS",
+      resetProgressOffline: "PASS",
       aytVisuals: "PASS",
       cheatsheets: "PASS",
       detailedGuidesAndOfficialReferences: "PASS",

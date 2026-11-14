@@ -2728,6 +2728,11 @@ progress::-moz-progress-bar {
 .vector-dot {
   transition: cx 0.3s;
 }
+.shell-electron {
+  transition:
+    cx 0.3s,
+    cy 0.3s;
+}
 .force-arrow {
   transition: x2 0.3s;
 }
@@ -3140,6 +3145,237 @@ progress::-moz-progress-bar {
   padding: clamp(1.2rem, 3vw, 2rem);
   min-width: 0;
   overflow-wrap: anywhere;
+}
+.study-timer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem 0.5rem;
+  width: 11rem;
+  max-width: 100%;
+  min-width: 0;
+  justify-self: end;
+  grid-column: 2;
+  grid-row: 1;
+  color: var(--text);
+}
+.hourglass-visual {
+  position: relative;
+  width: 5.25rem;
+  max-width: 100%;
+  flex: 0 1 5.25rem;
+}
+.hourglass-button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  border-radius: 0.6rem;
+}
+.hourglass-button:hover {
+  background: color-mix(in srgb, var(--accent) 7%, transparent);
+}
+.hourglass-button svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.hourglass-notch {
+  position: absolute;
+  right: -0.3rem;
+  bottom: -0.2rem;
+  width: 2.75rem;
+  min-height: 2.75rem;
+  padding: 0.3rem;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+.hourglass-controls {
+  text-align: center;
+  min-width: 0;
+}
+.hourglass-time {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.hourglass-state {
+  margin: 0.3rem 0;
+  font-size: 0.7em;
+  color: var(--muted);
+}
+.hourglass-pause {
+  min-height: 2.75rem;
+  justify-content: center;
+  max-width: 100%;
+}
+.hourglass-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.5rem);
+  z-index: 20;
+  padding: clamp(12px, 2vw, 16px);
+  width: min(22rem, calc(100vw - 32px));
+  max-height: min(75dvh, 40rem);
+  overflow-y: auto;
+  box-shadow: 0 12px 35px #0003;
+  text-align: start;
+}
+.hourglass-menu > .section-heading {
+  margin: 0 0 0.8rem;
+}
+.hourglass-presets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 8em), 1fr));
+  gap: 0.5rem;
+}
+.hourglass-menu .secondary {
+  padding-inline: clamp(10px, 1.8vw, 16px);
+}
+.hourglass-menu button {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.hourglass-custom input {
+  max-width: 100%;
+  min-width: 0;
+}
+.hourglass-custom {
+  margin-block: 0.8rem;
+}
+.hourglass-turn {
+  transform-origin: 50px 70px;
+  animation: hourglass-flip 650ms ease-in-out;
+}
+.hourglass-stream {
+  animation: hourglass-grains 700ms linear infinite;
+}
+.timer-error {
+  flex-basis: 100%;
+  font-size: 0.8em;
+  color: var(--danger);
+}
+@keyframes hourglass-flip {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+@keyframes hourglass-grains {
+  to {
+    stroke-dashoffset: -12;
+  }
+}
+:root[data-motion="off"] .hourglass-turn,
+:root[data-motion="off"] .hourglass-stream {
+  animation: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hourglass-turn,
+  .hourglass-stream {
+    animation: none;
+  }
+}
+.study-heading:has(.study-timer) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.7rem 1.5rem;
+  align-items: center;
+}
+.study-heading:has(.study-timer) .study-title {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+.study-heading:has(.study-timer) > .cheatsheet-toggle {
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: end;
+}
+.study-heading:has(.study-timer) > .topic-cheatsheet {
+  grid-row: 3;
+}
+.reset-progress {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+.reset-progress > button {
+  max-width: 100%;
+  min-width: 0;
+  padding-inline: clamp(10px, 2vw, 20px);
+  overflow-wrap: anywhere;
+}
+.danger-button {
+  color: var(--danger);
+  border-color: var(--danger);
+}
+.primary.danger-button {
+  background: var(--danger);
+  color: var(--accent-text);
+}
+.reset-dialog {
+  width: min(36rem, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  overflow: auto;
+  padding: clamp(16px, 3vw, 32px);
+  color: var(--text);
+  background: var(--surface);
+}
+.reset-dialog::backdrop {
+  background: #0009;
+}
+.reset-dialog h2 {
+  margin-top: 0;
+}
+.reset-dialog p {
+  line-height: 1.8;
+}
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+@media (max-width: 700px) {
+  .study-heading:has(.study-timer) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .study-heading:has(.study-timer) .study-title {
+    grid-row: 1;
+  }
+  .study-heading:has(.study-timer) > .study-timer {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .study-heading:has(.study-timer) > .cheatsheet-toggle {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: start;
+  }
+  .study-heading:has(.study-timer) > .topic-cheatsheet {
+    grid-row: 4;
+  }
+  .hourglass-menu {
+    position: static;
+    flex-basis: 100%;
+    width: 100%;
+    max-height: none;
+    box-shadow: none;
+  }
+  .study-timer:has(.hourglass-menu) {
+    width: 100%;
+  }
 }
 .topic-study > h2:first-child {
   margin-top: 0;

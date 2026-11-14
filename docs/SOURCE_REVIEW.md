@@ -1,5 +1,35 @@
 # Kaynak ve model kontrolü
 
+## 0.8.0 — Selçuklu, elektron katmanları ve paragraf derinliği
+
+Canlı AIONIA v1.7 yeniden okundu. Karakter paftası/atlası değiştirilmedi.
+Yeni öğretim metinleri kaynakların kavramsal kapsamıyla karşılaştırılan özgün
+anlatımlardır; özel PDF, dosya kimliği ve ham kitap sayfası yayımlanmaz.
+
+| Anlatım | Doğrudan okunan kapsam |
+| --- | --- |
+| Selçuklu Türkiyesi, detail-232 / sıra 42 | OGM Dersler Cepte 10. Sınıf 1072–1308 / Türkmen Akınları, bağlayıcı metin basılı s.10–12; Aurelia Yerleşme ve Devletleşme Sürecinde Selçuklu PDF s.1–5 |
+| Katman elektron dizilimi, detail-147 / sıra 43 | MEBİ TYT Kimya Konu Özetleri PDF s.30–31; Aurelia Katman elektron dizilimi PDF s.1–5 |
+| Paragraf, mevcut anlatımın genişletilmesi | OGM 12. Sınıf Paragrafta Anlam I ders notunun konu, başlık, ana düşünce ve yardımcı düşünce bölümleri; bağlayıcının okunabilir metni, PDF sayfa indeksi ayrıca doğrulanmadı |
+
+Selçuklu: 1071 askerî dönüm noktası, 1077 kuruluş, 1176 kalıcılık ve 1243
+zayıflama/1308 son ayrılır. İlk beylikler, kurum ve ticaret bağları eklenir;
+kronoloji oku tek neden veya eşzamanlı toplumsal dönüşüm kanıtı sayılmaz.
+Kaynaklardaki sınav atıfları yeni doğrulanmış ÖSYM sorusu kabul edilmez.
+
+Elektron modeli ilk 20 nötr temel hâl ve altı seçilmiş basit iyonla sınırlı:
+q=Z−e, 2n² kapasitesi/dolma sırası ayrımı, K/Ca istisnası, He'nin 18. grubu.
+Gerçek iyonun elektron sayısı ve katman çizimi birlikte değişir; proton sayısı
+ve nötr elementin periyot/grubu korunur. Şema elektronların gerçek yolu değildir.
+Birim denetimi 1…20 dağılımını veri tablosuyla ve seçilen iyon toplamıyla sınar.
+
+Paragraf: yedi açıklama bölümü, dört tam metinli özgün çözüm ve hatırlama soruları.
+Orijinal üç cümlelik paragraf ve beş bankalı sorunun metin/anahtarları korunur.
+Örnekler resmî sınav maddeleri değildir. Yeni toplam 54 anlatım, 17 ayrıntılı
+rehber; 115 özgün soru ve 8 ÖSYM referansı korunur. İlk 43 sıra başlığında
+anlatım var; 479 başlığın tamamı ve 20 yıllık sınav arşivi hazır iddiası yok.
+
+
 ## 0.5.0 — sıradaki beş TYT Matematik konusu
 
 Excel/Todoist ilk çalışma sırasının 6–10. başlıkları, mevcut detail-194 … detail-198

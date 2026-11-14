@@ -1,30 +1,24 @@
-YKSMania 0.7.0 alpha
+YKSMania 0.8.0 alpha
 
-Denklemler ve eşitsizlikler çalışma sırasında artık hazır anlatımlara açılır.
-İlk 41 kaynak sırası başlığının tamamında anlatım vardır; toplam 52 anlatımdan
-15'i ayrıntılı rehber düzeyindedir. 479 başlığın tümü henüz hazır değildir.
+Konu anlatımı, kopya kağıdı ve sorularda ortak çalışma kum saati var. Üstüne
+basınca ters döner ve başlar; durdur/devam et, 1/5/10/20 dakika veya 1–120
+dakika özel süre seçilebilir. Sayfa değişimi, çevrimdışı yeniden açma ve arka
+planda geçen süre korunur. Süre dolması konu tamamlanması veya XP kazandırmaz.
 
-- İlk beş TYT matematik konusu, hücre organelleri ve periyodik sistem genişletildi:
-  kuralın gerekçesi, koşulu, karşı örneği, sık hatası ve adım adım çözümler.
-- Birinci dereceden denklemler ve basit eşitsizlikler yeni etkileşimli anlatımlardır.
-  Katsayıları değiştir; eşdeğer dönüşümleri, sıfır katsayı durumlarını, negatif
-  katsayıda yön değişimini ve açık/kapalı çözüm aralığını incele. Deneme x'ini
-  yerine koyup koşulu sağlayıp sağlamadığını gör. Seçimler çevrimdışı saklanır.
-- 1/3 gibi yuvarlanmış kesir sonuçları artık yaklaşık eşitlik işaretiyle gösterilir;
-  sonlu kesin sonuçlarda eşittir işareti korunur.
-- İçindekiler'den seçilen başlığa klavye odağı da taşınır; uzun anlatımlarda
-  görünür bölüm ile klavyenin devam ettiği yer ayrışmaz.
-- Küçük ekranda iç içe yan boşluklar düzenlendi; büyük yazıda da anlatımın
-  okunabilir genişliği korunur. Kullanıcının arayüz ve yazı ölçeği değiştirilmez.
-- 115 özgün banka sorusu, paragraf metinleri, notlar, plan ve 3/7/21 tekrarları korunur.
-  Yeni konu içi çözümlü örnekler sınav, XP veya ustalık kaydı oluşturmaz.
-- Konu başlığındaki Kopya Kağıdını Görüntüle düğmesi tam yerel PDF'yi açmayı sürdürür.
+Ayarlar → Veri → İlerlemeyi sıfırla, açık onayla çalışma kayıtlarını sıfırlar;
+ayar, not, PDF ve PDF sayfa konumları korunur. Yazma başarısızsa eski ilerleme
+korunur. Ders simgeleri ortak vektörlerle yenilendi; TYT/AYT kökleri üsttedir.
+Yeni web sürümünü kayıttan sonra uygulamak için bildirimde doğrudan düğme var.
+Eski istemciler: Ayarlar → Güncellemeler ve hakkında → Güncelle ve yeniden aç.
 
-Kapsam: 52 anlatım / 15 ayrıntılı rehber / 115 özgün soru / 8 ÖSYM referansı.
-5 resmî kitapçık ve bunların konu bağlantıları önceki sürümden korunur; bu sürümde
-20 yıllık arşiv genişletilmiş veya tamamlanmış değildir. 2026 kitapçıkları kamuya
-açık %10 bölümleridir. Kaynak sayfa kayıtları SOURCE_REVIEW.md, güncel test ve
-dağıtım sonuçları FORGE.md içindedir.
+Selçuklu Türkiyesi ve katman elektron dizilimi kaynak okumasıyla eklendi.
+Nötr/iyon elektron modeli, sıralı tarih şemaları, gerekçeler ve çözümlü örnekler
+var. Paragraf rehberi kapsam, kanıt, olumsuz kök ve yapı sorularıyla genişletildi.
+Toplam 54 anlatım / 17 ayrıntılı rehber / 115 özgün soru / 8 ÖSYM referansı.
+İlk 43 kaynak sırası başlığında anlatım vardır; 479'un tamamı henüz hazır değildir.
+115 bağımsız soru ve beş paragrafın tam metni korunur. ÖSYM referansları aynı
+5 kitapçıktan 8 kayıttır; 20 yıllık arşiv bu sürümde tamamlanmış değildir.
+Kaynak okuma sınırları SOURCE_REVIEW.md, test ve yayın kanıtı FORGE.md'dedir.
 
 Özel Drive PDF'leri/katalog ve kişisel kimlikler public pakete eklenmez. PDF'lerini
 Ayarlar → Kaynak dosyalarını yönet'ten bir kez ekleyip konu içinden açabilirsin.

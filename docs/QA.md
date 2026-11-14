@@ -1,5 +1,55 @@
 # Quality evidence
 
+0.8.0 son yerel kabul:72 unit, check/build,73/73 Chromium PASS. İki yeni
+kusur YKS-021/022 aynı koşullarda PASS; diğer önceki regresyonlar korunur.
+Geliştirme Electron yeniden başlatma/offline/kum saati/reset PASS, renderer0.
+Güncel yayın/paket/canlı sonuçları FORGE başında ayrıca gösterilecektir.
+
+## 0.8.0 — kalıcı kum saati, güvenli sıfırlama ve eski web istemcisi
+
+Başlangıç main `7cfb5b7c0287f0a0d4730c5ce3b4c3792797a206` + çalışma diff'i.
+72 unit, ilk odaklı 7/7 browser PASS. Gerçek 0.5.3 → 0.8.0 service-worker
+uygulaması yarım yanıtı/notu korudu, offline yeniden açıldı; rendererErrors 0.
+Fallback padding 1→33px; bu mevcut YKS-016'nın eski istemci regresyon kontrolü.
+TYT/AYT kökleri yukarıda (YKS-010), paragraf beş soruda tam metin (YKS-015),
+Today skor ve tekrar ilişkileri mevcut kabulde korunur. Yeni doğrudan güncelleme
+düğmesi kayıt bitmeden etkinleşmez. Kullanıcının 0.5.2 cihazına bağlanılmadı.
+
+**YKS-021 / Orta / StudyTimer + style.css:** Yeni süre paneli 320px ve
+UI%200/yazı%150 açık temada dakika sözcüğünü harf harf kırıyordu. Menüye
+normal dokunmatik giriş ve gerçek görüntüde gözlendi; başlangıç ölçümü 41px
+kullanılabilir genişlik < 130,08px sözcük genişliği, FAIL. Sütun sayısı gerçek
+metin alanına göre uyarlanır, rem kenar boşluğu piksel sınırına çekilir;
+fontlar korunur. Aynı ölçüm ve ciddi/kritik axe, yatay/dikey/offline kayıt
+regresyonları son teslimde ayrıca raporlanır. Taşma kontrolü tek başına yeterli
+olmadığı için okunabilir sözcük alanı kabulü eklendi.
+
+**YKS-022 / Orta / ResetProgress + style.css:** Yeni sıfırla düğmesi320px,
+UI%200/yazı%150 Ayarlar'da sağ sınır346,13px ve belge genişliği346px yaptı.
+Mevcut planning dar-ekran regresyonu FAIL; tek taşan öğe DOM ile doğrulandı.
+Dekoratif ikon kaldırıldı, düğme ve yatay boşluğu kart genişliğiyle sınırlandı;
+ölçekler korunur. Aynı mevcut test son sürümde tekrar çalıştırılır.
+
+Son yerel onarım: YKS-021 için alan248px >= sözcük130,08px, root32px ve
+text-scale1,5 korunur. YKS-022 için belge320px, taşan öğe0; iki aynı regresyon
+2/2 PASS. İkinci tam kabul72/73; yeni padding testi kayan sayfada farklı
+zamandaki iki rect’i karşılaştırmıştı. Tek DOM örneklemiyle aynı18px sınırı
+korundu,3/3 tekrar PASS; son tam kabul yeniden çalıştırılıyor.
+
+Yeni senaryolar: timer 05:00 → 04:00, durdur, 10dk geçir, aynı kalan, sayfa
+geçişi, devam et, bitiş/offline, 1/5/10/20 ve özel120 sınırı; sentetik disk
+hatasında önceki süre. Onay/vazgeç ve sentetik disk hatasında ilerleme sıfırlama;
+gerçek 5/5 soru geçmişi, gerçek sentetik iki sayfalı PDF, not ve ayarların
+korunması. Geçmiş öğrenme kayıtları test profiline aittir; gerçek kullanıcı
+verisi sıfırlanmaz. JSON ithaliyle eski şema varsayılan timer eklenmesi sınanır.
+
+Selçuklu/elektron/paragraf gerçek ders girişleri, iyonun çizimiyle toplamın
+birlikte değişmesi, worked example, offline keşif, vektör ders logoları,
+ağaç kök ve padding kontrolleri eklenir. Güncel tam CI/public/paket sonuçları
+FORGE başındaki son teslim kaydında gösterilir; fiziksel Android, temiz Windows
+kurulumu, portable taşıma ve iki native paketle yükseltme NOT TESTED.
+
+
 ## 0.7.0 — YKS-018 / YKS-019 / YKS-020 ve yeni cebir anlatımları
 
 Son kaynak `d88f332`: [CI43594722140](https://github.com/kaansavukduran/yksmania/actions/runs/43594722140)

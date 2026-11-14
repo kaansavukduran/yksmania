@@ -46,6 +46,7 @@ export const lessonTopic: Record<string, string> = {
   faktoriyel: "detail-198",
   "birinci-dereceden-denklemler": "detail-203",
   "basit-esitsizlikler": "detail-204",
+  "katman-elektron-dizilimi": "detail-147",
 };
 export const topicLessons = (topicId: string) =>
   lessons.filter((l) => lessonTopic[l.id] === topicId);
