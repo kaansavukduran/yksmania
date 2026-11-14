@@ -272,7 +272,11 @@ export function NarrativeExplorer({ id }: { id: string }) {
             <g key={`${scenario}:${i}`}>
               <path
                 className={step === i + 1 ? "walk-path active" : "walk-path"}
-                d={`M${sx} ${sy}L${tx} ${ty}`}
+                d={
+                  dx === 0
+                    ? `M${from.x + (from.x > 260 ? 49 : -49)} ${from.y} C${from.x + (from.x > 260 ? 96 : -96)} ${from.y} ${to.x + (to.x > 260 ? 96 : -96)} ${to.y} ${to.x + (to.x > 260 ? 49 : -49)} ${to.y}`
+                    : `M${sx} ${sy}L${tx} ${ty}`
+                }
                 fill="none"
                 stroke={step === i + 1 ? "var(--accent)" : "var(--muted)"}
                 strokeWidth="2"
@@ -280,9 +284,9 @@ export function NarrativeExplorer({ id }: { id: string }) {
               />
               {current.links?.[i] && (
                 <text
-                  x={(from.x + to.x) / 2 + (dx === 0 ? 18 : 0)}
-                  y={(from.y + to.y) / 2 - 8}
-                  textAnchor={dx === 0 ? "start" : "middle"}
+                  x={(from.x + to.x) / 2}
+                  y={(from.y + to.y) / 2 + (dx === 0 ? 15 : -8)}
+                  textAnchor="middle"
                   fontSize="11"
                   fill="var(--muted)"
                 >

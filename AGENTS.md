@@ -33,3 +33,12 @@ validation and direct Questions/offline/mobile regressions when adding content.
 Today keeps completed daily work visible and shows the latest complete saved
 question attempt with its actual correct/wrong counts. Never sum retries or infer
 manual theory completion from question answers. Preserve the YKS-013 regression.
+
+Latest navigation decision (2026-11-14): remove Cheatsheets from the sidebar.
+Every theory header offers Kopya Kağıdını Görüntüle; PDFs stay on-device and
+open inline. Keep legacy cheatsheet deep links working. Topic/question panels
+need balanced internal padding. Expand lessons with explanations, interactive
+models and worked examples; summaries alone are insufficient. Past ÖSYM items
+are verified references to actual booklets, with exam/year/test/question/page,
+answer source and exact PDF identity. Never imply that partial %10 papers or
+partially reviewed years are a complete 20-year question bank.

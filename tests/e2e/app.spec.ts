@@ -1,3 +1,4 @@
+import { samplePdf } from "./helpers/pdf";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 async function open(page: Page) {
@@ -32,7 +33,7 @@ async function start(page: Page) {
   const subject = page.getByRole("button", { name: /Matematik.*31/ });
   if ((await subject.getAttribute("aria-expanded")) !== "true")
     await subject.click();
-  await page.getByRole("button", { name: /Rasyonel sayılar.*18/ }).click();
+  await page.getByRole("button", { name: /Rasyonel sayılar.*45/ }).click();
   await page.getByRole("button", { name: "Sorulara geç", exact: true }).click();
   // Theory and practice both have a "Notun" field. Await the question page so
   // subsequent note edits belong to the answer draft, not the departing theory.
@@ -110,42 +111,7 @@ test("turning off gamification hides world rewards and keeps learning usable", a
   await start(page);
   await expect(page.locator(".answer")).toHaveCount(3);
 });
-function samplePdf(secondPage = false) {
-  const parts = ["%PDF-1.4\n"];
-  const offsets = [0];
-  const objects = [
-    "<< /Type /Catalog /Pages 2 0 R >>",
-    "<< /Type /Pages /Kids [3 0 R] /Count 1 >>",
-    "<< /Type /Page /Parent 2 0 R /MediaBox [0 0 300 200] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>",
-    "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>",
-  ];
-  const stream = "BT /F1 16 Tf 20 100 Td (Local learning material) Tj ET";
-  objects.push(`<< /Length ${stream.length} >>\nstream\n${stream}\nendstream`);
-  if (secondPage) {
-    objects[1] = "<< /Type /Pages /Kids [3 0 R 6 0 R] /Count 2 >>";
-    objects.push(
-      "<< /Type /Page /Parent 2 0 R /MediaBox [0 0 300 200] /Resources << /Font << /F1 4 0 R >> >> /Contents 7 0 R >>",
-    );
-    const second = "BT /F1 16 Tf 20 100 Td (Second page material) Tj ET";
-    objects.push(
-      `<< /Length ${second.length} >>\nstream\n${second}\nendstream`,
-    );
-  }
-  objects.forEach((object, i) => {
-    offsets.push(Buffer.byteLength(parts.join("")));
-    parts.push(`${i + 1} 0 obj\n${object}\nendobj\n`);
-  });
-  const xref = Buffer.byteLength(parts.join(""));
-  parts.push(
-    `xref\n0 ${objects.length + 1}\n0000000000 65535 f \n${offsets
-      .slice(1)
-      .map((n) => String(n).padStart(10, "0") + " 00000 n \n")
-      .join(
-        "",
-      )}trailer\n<< /Size ${objects.length + 1} /Root 1 0 R >>\nstartxref\n${xref}\n%%EOF`,
-  );
-  return Buffer.from(parts.join(""));
-}
+
 test("local PDF opens for the first time offline and retains notes without learning credit", async ({
   page,
   context,
@@ -346,7 +312,7 @@ test("settings stay independent at 200% scale, large Turkish text on a narrow sc
     .getByRole("button", { name: "Konu Anlatımı", exact: true })
     .click();
   await page.getByRole("button", { name: /Matematik.*31/ }).click();
-  await page.getByRole("button", { name: /Rasyonel sayılar.*18/ }).click();
+  await page.getByRole("button", { name: /Rasyonel sayılar.*45/ }).click();
   await page.getByRole("button", { name: "Sorulara geç", exact: true }).click();
   await expect(page.locator(".answer").first()).toBeVisible();
   await expect(
@@ -431,16 +397,14 @@ test("theory and questions have separate subject navigation and preserve the com
   await open(page);
   const nav = page.locator(".sidebar nav button");
   const labels = await nav.allTextContents();
-  expect(labels.indexOf("Kopya Kağıtları")).toBe(
-    labels.indexOf("Konu Anlatımı") + 1,
-  );
-  expect(labels.indexOf("Sorular")).toBe(labels.indexOf("Kopya Kağıtları") + 1);
+  expect(labels).not.toContain("Kopya Kağıtları");
+  expect(labels.indexOf("Sorular")).toBe(labels.indexOf("Konu Anlatımı") + 1);
   await page
     .getByRole("button", { name: "Konu Anlatımı", exact: true })
     .first()
     .click();
   await page.getByRole("button", { name: /Matematik.*31/ }).click();
-  await page.getByRole("button", { name: /Rasyonel sayılar.*18/ }).click();
+  await page.getByRole("button", { name: /Rasyonel sayılar.*45/ }).click();
   await expect(page.locator(".lesson-article")).toBeVisible();
   await expect(page.locator(".answer")).toHaveCount(0);
   await page.getByRole("button", { name: "Sorular", exact: true }).click();
@@ -1226,7 +1190,7 @@ test("all four new AYT lessons first open offline at 320px with large Turkish co
   expect(discardedDrafts).toBe(3);
 });
 
-test("YKS-008 cheatsheets have a separate subject/topic route and keep PDF notes and question drafts offline", async ({
+test("YKS-008 legacy cheatsheet links keep PDF notes and question drafts offline", async ({
   page,
   context,
 }) => {
@@ -1320,13 +1284,10 @@ test("YKS-008 cheatsheets have a separate subject/topic route and keep PDF notes
       page.getByText("Kopya kâğıdı alt başlıkları", { exact: false }),
     ).toHaveCount(0);
   }
-  await page
-    .locator(".sidebar")
-    .getByRole("button", { name: "Kopya Kağıtları", exact: true })
-    .click();
+  await page.goto("/#/cheatsheets");
   await expect(
     page.locator('.sidebar nav button[aria-current="page"]'),
-  ).toHaveText("Kopya Kağıtları");
+  ).toHaveText("Konu Anlatımı");
   await page.getByRole("button", { name: /Biyoloji.*konu başlığı/ }).click();
   await page
     .getByRole("button", {
@@ -1423,10 +1384,7 @@ test("YKS-008 cheatsheet topic search and manual PDFs remain usable at narrow sc
   await page.getByRole("switch", { name: /Aion animasyonu/ }).uncheck();
   await page.setViewportSize({ width: 320, height: 844 });
   await page.getByRole("button", { name: "Menüyü aç", exact: true }).click();
-  await page
-    .locator(".sidebar")
-    .getByRole("button", { name: "Kopya Kağıtları", exact: true })
-    .click();
+  await page.goto("/#/cheatsheets");
   await page
     .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
     .fill("hücre organelleri");

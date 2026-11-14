@@ -27,6 +27,11 @@ export const catalogueSchema = z.object({
   entries: z.array(entrySchema).max(30000),
 });
 export type SourceEntry = z.infer<typeof entrySchema>;
+export const isPastExamSource = (name: string, provider?: string) =>
+  provider === "osym" ||
+  /çıkmış|ösym|(^|[^\p{L}\p{N}])(ales|dgs|kpss|öss|msü|ygs|lys)($|[^\p{L}\p{N}])/iu.test(
+    name,
+  );
 export type SourceCatalogue = z.infer<typeof catalogueSchema>;
 export function parseCatalogue(text: string): SourceCatalogue {
   if (text.length > 25_000_000) throw Error("CATALOGUE_TOO_LARGE");
@@ -60,6 +65,15 @@ export function matchSource(
 }
 export type SourceMode = "theory" | "questions" | "cheatsheets";
 export type SourceTopic = { id: string; title: string };
+export const sourceWords = (s: string) =>
+  normalizeName(s)
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/ı/g, "i")
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .replace(/\bve\b/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 export function visibleIn(kind: ResourceKind, mode: SourceMode) {
   if (mode === "cheatsheets") return kind === "cheatsheet";
   return mode === "theory"
@@ -73,13 +87,15 @@ export function matchesSourceTopic(
   topic: SourceTopic,
 ) {
   if (topicIds?.length) return topicIds.includes(topic.id);
-  const words = (s: string) =>
-    normalizeName(s)
-      .replace(/[^\p{L}\p{N}]+/gu, " ")
-      .trim();
+  const words = sourceWords;
   const title = words(topic.title);
-  return (
-    !!title && ` ${words(name.replace(/\.pdf$/i, ""))} `.includes(` ${title} `)
+  const aliases: Record<string, string[]> = {
+    "detail-194": ["Sayı Kümeleri ve Temel İşlemler"],
+  };
+  return [title, ...(aliases[topic.id] ?? []).map(words)].some(
+    (candidate) =>
+      !!candidate &&
+      ` ${words(name.replace(/\.pdf$/i, ""))} `.includes(` ${candidate} `),
   );
 }
 export async function hashPdf(

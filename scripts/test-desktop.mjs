@@ -95,17 +95,22 @@ try {
       await expect(page.locator(".prime-result")).toContainText("49 bileşik");
     }
   }
-  await navigate("Kopya Kağıtları");
-  await expect(
-    page.getByRole("heading", { name: "Kopya Kağıtları", exact: true }),
-  ).toBeVisible();
-  await page.getByRole("button", { name: /Biyoloji.*konu başlığı/ }).click();
+  await navigate("Konu Anlatımı");
+  await page.getByRole("button", { name: /Biyoloji.*18/ }).click();
   await page
-    .getByRole("button", { name: "Hücre Organelleri", exact: true })
+    .getByRole("button", { name: /Hücre organelleri: yapı ve görev/ })
     .click();
-  await expect(page.locator(".source-browser")).toContainText(
-    "Eşleşmiş PDF bulunamadı",
+  await page
+    .getByRole("button", { name: "Kopya Kağıdını Görüntüle", exact: true })
+    .click();
+  await expect(page.locator(".topic-cheatsheet")).toContainText(
+    "Bu konuya ait PDF henüz bu cihazda yok",
   );
+  await expect(
+    page
+      .locator(".sidebar nav")
+      .getByRole("button", { name: "Kopya Kağıtları", exact: true }),
+  ).toHaveCount(0);
   await openAyt("Matematik", "Türev: kirişten teğete");
   await page
     .getByRole("button", { name: "Teğeti kontrol et", exact: true })
@@ -128,8 +133,14 @@ try {
   await navigate("Konu Anlatımı");
   await page.getByRole("button", { name: "TYT", exact: true }).click();
   await page.getByRole("button", { name: /Matematik.*31/ }).click();
-  await page.getByRole("button", { name: /Rasyonel sayılar.*18/ }).click();
+  await page.getByRole("button", { name: /Rasyonel sayılar.*45/ }).click();
   await page.waitForSelector(".visual-lab");
+  const example = page.locator(".worked-example").first();
+  await example.locator("summary").click();
+  await example
+    .getByRole("button", { name: "Çözümün tamamını göster", exact: true })
+    .click();
+  await expect(example.locator(".worked-conclusion")).toContainText("1/4");
   await page.locator(".lesson-article > .primary").click();
   for (const index of [1, 2, 0, 1, 1]) {
     await page.locator(".answer").nth(index).click();
@@ -137,6 +148,14 @@ try {
     await page.locator(".question-actions .primary").click();
   }
   await expect(page.locator(".result-stats")).toContainText("5/5");
+  const past = page.getByRole("region", {
+    name: "Bu konunun geçmiş ÖSYM soruları",
+    exact: true,
+  });
+  await expect(past).toContainText("2021 TYT · Temel Matematik · Soru 1");
+  await past.getByLabel("Sınav", { exact: true }).selectOption("DGS");
+  await expect(past).toContainText("2026 DGS · Sayısal · Soru 1");
+  await past.getByLabel("Sınav", { exact: true }).selectOption("all");
   await page.screenshot({ path: path.resolve("../work/desktop-result.png") });
   await page.reload();
   await expect(page.locator(".result-stats")).toContainText("5/5");
@@ -179,6 +198,31 @@ try {
   await page.getByRole("button", { name: /Matematik.*31 konu/ }).click();
   await page.getByRole("button", { name: /Asal sayılar: bölen/ }).click();
   await expect(page.locator(".prime-result")).toContainText("49 bileşik");
+  await navigate("Konu Anlatımı");
+  await page
+    .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
+    .fill("Bölme ve bölünebilme:");
+  await page
+    .getByRole("button", { name: /Bölme ve bölünebilme: gruplar/ })
+    .click();
+  await page
+    .getByRole("spinbutton", {
+      name: "Bölünen nesne sayısı, sayıyla",
+      exact: true,
+    })
+    .fill("29");
+  await page
+    .getByRole("spinbutton", {
+      name: "Bir gruptaki nesne sayısı, sayıyla",
+      exact: true,
+    })
+    .fill("6");
+  await expect(page.locator(".model-result")).toContainText("29 = 6 × 4 + 5");
+  await expect(page.locator(".save-status")).toContainText(
+    "Bu cihazda kaydedildi",
+  );
+  await page.reload();
+  await expect(page.locator(".model-result")).toContainText("29 = 6 × 4 + 5");
   await navigate("Sorular");
   await page.getByRole("button", { name: "TYT", exact: true }).click();
   await page.getByRole("button", { name: /Türkçe.*22 konu/ }).click();
@@ -234,6 +278,8 @@ try {
       desktop: "PASS",
       aytVisuals: "PASS",
       cheatsheets: "PASS",
+      detailedGuidesAndOfficialReferences: "PASS",
+      sourceNarrativeModelOfflineReload: "PASS",
       orderedPlanAndRestart: "PASS",
       ogmChemistryVisuals: "PASS",
       mathematicsVisualsAndRestart: "PASS",

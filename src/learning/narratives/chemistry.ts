@@ -66,7 +66,8 @@ export const chemistryNarratives: NarrativePack[] = [
           n(
             "Bir elektron dışarı",
             "Yalnız elektron sayısı değişir.",
-            "molecule",
+            "number",
+            "e⁻",
           ),
           n("Na⁺", "11−10=+1.", "number", "+1"),
           n("Aynı çekirdek", "Z ve A korunur.", "nucleus"),

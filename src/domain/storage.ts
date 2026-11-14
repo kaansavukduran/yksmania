@@ -128,6 +128,7 @@ export interface LocalDocument {
   kind?: ResourceKind;
   sourceIds?: string[];
   subjectIds?: string[];
+  topicIds?: string[];
 }
 export async function putDocument(doc: LocalDocument) {
   const d = await db();

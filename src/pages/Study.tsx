@@ -11,6 +11,8 @@ import {
 import type { Draft, Lesson, Session } from "../domain/model";
 import { learningReviewPlan } from "../domain/learningReviews";
 import { Aion } from "../components/Aion";
+import { PastExamQuestions } from "../components/PastExamQuestions";
+import { lessonTopic } from "../domain/studyPlan";
 export function Study({ navigate }: { navigate: (s: string) => void }) {
   const { state, t, l, update, commit, toast } = useApp();
   const [busy, setBusy] = useState(false);
@@ -304,6 +306,10 @@ export function Result({
           <span>{t("assisted")}</span>
         </div>
       </div>
+      <PastExamQuestions
+        topicId={lessonTopic[lesson.id]}
+        subjectId={lesson.subjectId}
+      />
       {plan.length > 0 && (
         <div className="panel result-reviews">
           <h2>{t("reviewDates")}</h2>

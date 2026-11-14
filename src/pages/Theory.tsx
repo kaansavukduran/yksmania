@@ -6,9 +6,12 @@ import { lessonById, subjectById } from "../domain/content";
 import type { Lesson, ReviewStage } from "../domain/model";
 import { VisualLab } from "../learning/VisualLab";
 import { Aion } from "../components/Aion";
+import { TopicCheatsheet } from "../components/TopicCheatsheet";
+import { GuidedReading } from "../learning/GuidedReading";
+import { lessonGuides } from "../learning/guides";
 import { TheoryReviewAction } from "../components/LearningReviews";
 import { TopicCompletion } from "../components/StudyPlanning";
-import { lessonTopic } from "../domain/studyPlan";
+import { lessonTopic, studyTopicById } from "../domain/studyPlan";
 const NarrativeRecall = lazy(() =>
   import("../learning/NarrativeExplorer").then((module) => ({
     default: module.NarrativeRecall,
@@ -39,6 +42,11 @@ export function Theory({
     );
   const subject = subjectById(lesson.subjectId)!;
   const noteKey = "lesson:" + lesson.id;
+  const topic = studyTopicById(lessonTopic[lesson.id]) ?? {
+    id: `lesson:${lesson.id}`,
+    title: l(lesson.title),
+  };
+  const guide = lessonGuides.get(lesson.id);
   return (
     <>
       <button
@@ -49,26 +57,42 @@ export function Theory({
         {t("courses")}
       </button>
       <header className="study-heading">
-        <span className="eyebrow">
-          {subject.exam} · {l(subject.name)} · {t("courses")}
-        </span>
-        <h1>{l(lesson.title)}</h1>
+        <div className="study-title">
+          <span className="eyebrow">
+            {subject.exam} · {l(subject.name)} · {t("courses")}
+          </span>
+          <h1>{l(lesson.title)}</h1>
+        </div>
+        {topic && (
+          <TopicCheatsheet
+            key={topic.id}
+            topic={topic}
+            subjectId={lesson.subjectId}
+            navigate={navigate}
+          />
+        )}
       </header>
       <div className="study-layout">
         <article className="panel lesson-article">
           <h2>{t("objectives")}</h2>
           <ul>
-            {lesson.objectives.map((v, i) => (
-              <li key={i}>{l(v)}</li>
+            {(guide?.objectives ?? lesson.objectives.map(l)).map((v, i) => (
+              <li key={i}>{v}</li>
             ))}
           </ul>
-          <VisualLab id={lesson.id} />
-          {lesson.body.map((v, i) => (
-            <section key={i}>
-              <h2>{l(v.title)}</h2>
-              <p>{l(v.text)}</p>
-            </section>
-          ))}
+          {guide ? (
+            <GuidedReading guide={guide} />
+          ) : (
+            <>
+              <VisualLab id={lesson.id} />
+              {lesson.body.map((v, i) => (
+                <section key={i}>
+                  <h2>{l(v.title)}</h2>
+                  <p>{l(v.text)}</p>
+                </section>
+              ))}
+            </>
+          )}
           {narrativeById.has(lesson.id) && (
             <Suspense fallback={<p>Hatırlama alanı açılıyor…</p>}>
               <NarrativeRecall id={lesson.id} />
@@ -76,7 +100,7 @@ export function Theory({
           )}
           <div className="source-box">
             <strong>{t("sourceInfo")}</strong>
-            <p>{l(lesson.source)}</p>
+            <p>{guide?.source ?? l(lesson.source)}</p>
           </div>
           {reviewStage && lessonTopic[lesson.id] ? (
             <TheoryReviewAction

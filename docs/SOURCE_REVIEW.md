@@ -161,3 +161,80 @@ başlığı ve 479 ayrıntılı kaynak başlığı aynı kalır. Arşivdeki büt
 aktarımı, resmî cevap anahtarlarının tamamının denetimi ve tüm yıl kapsamı bitmiş
 sayılmaz. Kullanıcı bu görsellerle oynadığında öğrenme puanı oluşmaz; bağımsız soru
 cevapları ayrı Sorular akışında kaydedilir. YKS puanı veya başarı artışı iddiası yoktur.
+
+
+## 0.6.0 kapsamlı anlatım ve ÖSYM kaynak kontrolü
+
+14.11.2026: Drive'daki MEBİ TYT Matematik Konu Özetleri PDF28–30 ve
+TYT Kimya Konu Özetleri PDF11–29 okunarak aşağıdaki rehberler genişletildi.
+Anlatım, senaryolar ve çözümler özgündür; özel PDF'ler veya kişisel katalog
+yayımlanan pakete eklenmez. Kullanıcı PDF'leri cihazda saklanır.
+
+| Rehber | İncelenen MEBİ sayfaları (PDF / basılı) | Ek karşılaştırma |
+| --- | --- | --- |
+| Rasyonel sayılar |28–30 /26–28 | Aurelia konu kağıdı1–8 |
+| Simyadan kimyaya |11–13 /9–11 | Aurelia konu kağıdı1–9, önceki OGM kontrolü |
+| Kimya disiplinleri |14–15 /12–13 | Önceki OGM Dersler Cepte kontrolü |
+| Kimyanın sembolik dili |16–17 /14–15 | Aurelia konu kağıdı1–9 |
+| Kimyada güvenlik |18–24 /16–22 | Önceki OGM kontrolü |
+| Atom modelleri |25–26 /23–24 | Önceki OGM atom modelleri kontrolü |
+
+Sağlıkla ilgili miktar önerileri eklenmedi. Besinsel iyon ile metalik element,
+CO ile CO₂, molekül ile iyonik formül birimi, model ile deneysel kanıt ayrıldı.
+Ürünleri karıştırmama ilkesi [CDC kaynağından](https://www.cdc.gov/hygiene/about/cleaning-and-disinfecting-with-bleach.html) ayrıca kontrol edildi.
+
+### Önceki kaynaklı konu taslağından korunan anlatımlar
+
+Bu tabloda bir dosyanın anılması, dosyanın bütün müfredatının uygulamaya
+aktarılmış olduğu anlamına gelmez. Yalnız incelenen sayfa kapsamı esastır.
+
+| Konu | Başlık kimliği | İncelenen kaynak bölümü |
+| --- | --- | --- |
+| Canlıların ortak özellikleri: tek belirtiyle karar verme | detail-1 | MEBİ TYT Biyoloji Konu Özetleri, PDF s.11–17 (basılı s.9–15); OGM Dersler Cepte, Biyoloji ve Canlıların Ortak Özellikleri, PDF/basılı s.10–17. |
+| Bilimsel yöntem: sorudan kontrollü karşılaştırmaya | detail-2 | Aurelia TYT Biyoloji Bilimsel Yöntem ve Çalışma Basamakları kopya kağıdı, PDF s.1–7. Kaynağın atıf yaptığı bütün özgün yayınlar ayrıca doğrulanmış sayılmaz. |
+| Mineraller: yapı, iyon dengesi ve kofaktör | detail-3 | MEBİ TYT Biyoloji Konu Özetleri, PDF s.20–21 (basılı s.18–19); OGM Dersler Cepte, Temel Bileşikler I, PDF/basılı s.12–14; Aurelia Mineraller kopya kağıdı PDF s.1–3. |
+| Su, asit–baz ve tuz: etkileşimden iç dengeye | detail-4 | OGM Dersler Cepte, Canlıların Yapısında Bulunan Temel Bileşikler I, PDF/basılı s.10–12. |
+| Karbohidratlar: birim, bağ ve görev | detail-5 | OGM Dersler Cepte, Canlıların Yapısında Bulunan Temel Bileşikler I, PDF/basılı s.15–17. |
+| Lipitler: depo, zar ve düzenleyici yapı | detail-6 | OGM Dersler Cepte, Canlıların Yapısında Bulunan Temel Bileşikler I, PDF/basılı s.18. |
+| Proteinler: dizilişten üç boyutlu işleve | detail-7 | OGM Dersler Cepte, Canlıların Yapısında Bulunan Temel Bileşikler I, PDF/basılı s.19. |
+| Enzimler: enerji engeli, özgüllük ve koşullar | detail-8 | OGM Dersler Cepte, Canlıların Yapısında Bulunan Temel Bileşikler II, PDF/basılı s.10–11. |
+| Vitaminler: çözünürlük, düzenleme ve sınırlar | detail-9 | OGM Dersler Cepte, Canlıların Yapısında Bulunan Temel Bileşikler II, PDF/basılı s.12–13. |
+| DNA ve RNA: birimden bilgi akışına | detail-10 | OGM Dersler Cepte, Canlıların Yapısında Bulunan Temel Bileşikler II, PDF/basılı s.14–16. |
+| Sayı basamakları: rakamdan koşullu denkleme | detail-199 | Aurelia TYT Matematik Sayı Basamakları kopya kağıdı, PDF s.1–5. Atıf yapılan özgün ders kitabının tamamı ayrıca okunmuş sayılmaz. |
+| Tarih ve zaman: kanıtı sıraya koy | detail-226 | OGM Dersler Cepte 9. Sınıf İnsanlığın Hafızası Tarih – Neden Tarih – Zamanın Taksimi, PDF s.10–15. Takvimde yıl başlangıcı ile milat ayrılarak açıklanmıştır. |
+| İnsanlığın ilk dönemleri: yerleşimden yazıya | detail-227 | OGM Dersler Cepte 9. Sınıf İnsanlığın İlk İzleri – Yazının Gelişimi – İlk Çağ’da Başlıca Medeniyet Havzaları, PDF s.10–19; İnsan ve Göç – Kabileden Devlete – Kanunlar Doğuyor, PDF s.10,12–16. Görsel tablolar yorumlanmış, özgün şemalar hazırlanmıştır. |
+| Orta Çağ’da dünya: toprak, ticaret ve güç | detail-228 | OGM Dersler Cepte 9. Sınıf Orta Çağ’da Siyasi Yapılar – Tarımdan Ticarete Ekonomi – Orta Çağ’da Ordu, PDF s.10–16; Kanunlar Gelişiyor – Avrasya’da İlk Türk İzleri – Boylardan Devlete, PDF s.10. |
+| İlk ve Orta Çağlarda Türk dünyası: coğrafyadan kuruma | detail-229 | OGM Dersler Cepte 9. Sınıf Kanunlar Gelişiyor – Avrasya’da İlk Türk İzleri – Boylardan Devlete, PDF s.12–20; Türklerde Coğrafya ile Oluşan Yaşam Tarzı – Kavimler Göçü – İlk Türk Devletleri ve Komşuları, PDF s.10–15. |
+| Fizik bilimine giriş: ölç, modelle, sınırını bil | detail-114 | OGM 9. Sınıf Fizik Bilimine Giriş konu özeti, PDF s.1; Aurelia TYT Fizik Fizik Bilimine Giriş kopya kağıdı, PDF s.1–5. Kurum örnekleri kaynak bağlamındadır; güncel proje veya yönetim iddiası değildir. |
+| Madde ve özellikleri: kütleden yoğunluğa | detail-115 | OGM Dersler Cepte 9. Sınıf Madde ve Özkütle – Dayanıklılık – Yapışma ve Birbirini Tutma – Kılcallık, PDF s.10–17. Karışım ve dayanıklılık bağıntıları kabulleri belirtilerek açıklanmıştır. |
+| Doğrusal hareket: yol, yön ve grafik | detail-116 | OGM Dersler Cepte 9. Sınıf Hareket ve Çeşitleri – Konum, Alınan Yol, Yer Değiştirme, Sürat ve Hız – Düzgün Doğrusal Hareket, PDF s.10–16. İşaretli alan ve ortalama tanımları eksen seçimiyle açıklanmıştır. |
+| İslam medeniyetinin doğuşu: olay, kurum ve kültür | detail-230 | OGM Dersler Cepte 9. Sınıf İslamiyet Yayılıyor – Emeviler – Abbasi Devleti ve Türkler, PDF s.10–17; Bilim Medeniyeti, PDF s.10–12; Aurelia TYT Tarih İslam Medeniyetinin Doğuşu kopya kağıdı, PDF s.1–5. Mevali ve mezhepleşme anlatımları mutlak genellemelerden ayrılmıştır. |
+| Türklerin İslamiyeti kabulü: temas, tercih ve değişim | detail-231 | OGM Dersler Cepte 9. Sınıf Bilim Medeniyeti – Türk-İslam Tarihindeki Siyasi Gelişmeler – Türklerin İslamiyet’i Kabulü, PDF s.16–17; İslamiyet Yayılıyor – Emeviler – Abbasi Devleti ve Türkler, PDF s.16–17; Aurelia TYT Tarih Türklerin İslamiyeti Kabulü kopya kağıdı, PDF s.1–5. Aurelia’daki dış atıfların tümü ayrıca okunmuş sayılmaz. |
+| Atomun temel tanecikleri: kimlik, kütle ve yük | detail-144 | OGM Dersler Cepte 9. Sınıf Kimya Uygulamalarında İş Sağlığı ve Güvenliği – Atom ve Periyodik Sistem – Atomun Yapısı, PDF s.20–21. Çekirdek, yük ve tanecik sayma çizimleri özgündür; elektronlar gerçek dairesel yollar olarak gösterilmez. |
+| İzotop, izoton, izobar: hangi sayı aynı? | detail-145 | OGM Dersler Cepte 9. Sınıf Kimya Uygulamalarında İş Sağlığı ve Güvenliği – Atom ve Periyodik Sistem – Atomun Yapısı, PDF s.20–21. Örnek tanecik çiftleri özgün karşılaştırmalarla açıklanmıştır. |
+| Bölme ve bölünebilme: gruplar, kalanlar ve koşullar | detail-200 | OGM 9. Sınıf Matematik Kalanlı Bölme – Bölünebilme Kuralları I ve Bölünebilme Kuralları II konu özetleri, her biri PDF s.1, görsel olarak okundu; Aurelia Bölme Bölünebilme Kuralları kopya kağıdı, PDF s.1–4. |
+| EBOB ve EKOK: ortak parça mı, ortak tekrar mı? | detail-201 | OGM 9. Sınıf Matematik EBOB–EKOK konu özeti, PDF s.1, görsel olarak okundu; Aurelia TYT Matematik Ebob Ekok kopya kağıdı, PDF s.1–3. |
+| Ses bilgisi: önceki biçimi bul, değişimi gör | detail-250 | Aurelia TYT Türkçe Ses Bilgisi kopya kağıdı, PDF s.1–5. Dosyanın atıf yaptığı EBA ve diğer kaynakların tümü bu anlatım için ayrıca okunmuş sayılmaz. Örnek çözümlemeler özgün etkileşimli biçimde yeniden kurulmuştur. |
+| Sözcükte yapı: anlamı koruyarak parçala | detail-251 | Aurelia TYT Türkçe Sözcükte Yapı kopya kağıdı, PDF s.1–5. Atıf yapılan EBA belgelerinin tamamı ayrıca okunmuş sayılmaz; örnekler güncel okul dil bilgisi işlevleriyle açıklanır. |
+| Enerji ve hareket: dönüşümü hesapla, sistemi seç | detail-118 | OGM Dersler Cepte 9. Sınıf İş, Enerji ve Güç – Mekanik Enerji – Enerjinin Korunumu ve Enerji Dönüşümleri – Verim – Enerji Kaynakları, PDF s.10–18. Sürtünme, sistem sınırı ve yenilenebilir kaynaklarla ilgili genellemeler koşullarıyla açıklanmıştır. |
+
+### Gerçek ÖSYM kayıtları
+
+Beş resmî kitapçık ve sekiz konu bağlantısı `official-booklets.json` ve
+`pastExams.ts` içinde tutulur. Tam soru metni veya resmi çizim kopyalanmaz;
+resmî dosya/sayfa açılır. Özgün çözümler ayrı etiketlidir. 2018 ve2021TYT,
+2026ALES/2,DGS,KPSS Lisans GY–GK sayfaları ve cevap kaynakları incelendi.
+2026 dosyaları kamuya açık %10 kitapçıklarıdır. ALES bağlantısının dosya adı
+2025 taşımasına rağmen kapağında2026-ALES/2 ve2Ağustos2026 yazdığı doğrulandı;
+sınav yılı dosya adından tahmin edilmedi.
+
+2006–2026 tarama hedefinin tüm yılları, oturumları ve soru konuları henüz
+incelenmiş değildir. Doğrulanmış bir bağlantı bulunmaması o sınavda konu
+sorulmadığını göstermez. Eski kayıtların sonradan iptal/düzeltme duyuruları
+için bütün ÖSYM duyuru arşivi eksiksiz taranmış sayılmaz.
+
+126 mevcut özel kopya kağıdı ders/tür bakımından sınıflandı;124ü çalışma
+kitabındaki ayrıntılı başlıkla eşleşir. İki genel geometri dosyası başlık
+ilerlemesine zorla bağlanmadan dersteki bütün kağıtlar üzerinden erişilir.
+Bu kontrol126PDF'nin uygulamaya gömüldüğü veya479kağıdın hazır olduğu
+anlamına gelmez.

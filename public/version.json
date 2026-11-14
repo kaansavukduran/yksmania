@@ -1,7 +1,7 @@
 {
-  "version": "0.5.3",
+  "version": "0.6.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Dünyam bölümünde TYT ve AYT kök yuvarlakları üste alındı; ders dalları yukarıdan aşağı açılır. Ders renkleri, seçimler ve ilerleme kayıtları korunur."
+    "tr": "Kopya kağıtları konu başlığındaki düğmeden açılır. Kart boşlukları düzeltildi; anlatım sayısı 50’ye çıktı, ilk beş kimya konusu ve rasyonel sayılar ayrıntılı açıklamalar ve adım adım çözümlerle genişletildi. Soru sonuçlarına doğrulanmış ÖSYM kaynakları eklendi; 3/7/21. gün konu tekrarları önce gösterilir."
   }
 }

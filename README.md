@@ -1,14 +1,24 @@
 # YKSMania
 
-An offline-first YKS learning application by Fragaria Interactive. **0.5.3 alpha: visual learning and private resource import; not the complete curriculum.**
+Fragaria Interactive’in çevrimdışı YKS çalışma uygulaması. **0.6.0 alpha**.
 
-[Open the web app](https://yksmania.vercel.app) · [Download alpha packages](https://github.com/kaansavukduran/yksmania/releases/tag/v0.5.3-alpha.1)
+[Uygulamayı aç](https://yksmania.vercel.app) · [Windows, Linux ve Android paketleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.6.0-alpha.1)
 
-0.5.3 places the TYT and AYT root circles at the top of the World trees, with
-subject branches descending. Subject colors, selection, links and saved progress
-are preserved.
-Content remains 23 lessons / 115 questions. Current local, package and published
-verification results are recorded separately in FORGE.md.
+50 anlatım / 115 özgün soru. İlk beş TYT kimya konusu ve rasyonel sayılar,
+MEBİ/OGM ve ilgili Aurelia kağıtlarıyla karşılaştırılarak ayrıntılı açıklama,
+etkileşimli model, çözümlü örnek ve hatırlama sorularıyla genişletildi.
+Kopya kağıtları sol menüden çıkarıldı; konu başlığındaki **Kopya Kağıdını
+Görüntüle** düğmesi ilgili PDF’yi aynı sayfada açar. Özel PDF’ler cihazda
+saklanır. **Ayarlar → Kaynak dosyalarını yönet** bölümünden klasör halinde
+veya konu ekranından tek dosya olarak eklenebilir.
+
+Soru sonuçları doğrulanmış ÖSYM kayıtlarına bağlanır: kitapçık, sınav/yıl,
+test, soru ve PDF sayfası, cevap kaynağı ve özgün çözüm. Şu an 5 kitapçıktan
+8 referans vardır; son 20 yılın bütün sınavları henüz eksiksiz taranmadı.
+Kamuya açık %10 kitapçıkları ayrıca işaretlidir. Tam soru ve şekiller resmî
+PDF’de veya onun cihazdaki doğrulanmış kopyasında açılır. 479 ayrıntılı
+başlık, bütün anlatım ve soru içeriğinin tamamlandığı anlamına gelmez.
+Test ve dağıtım kanıtları [FORGE.md](FORGE.md) içindedir.
 
 ## What works
 
@@ -23,7 +33,7 @@ verification results are recorded separately in FORGE.md.
 - TYT's 10 subjects and numerical AYT's 5 subjects: all 341 main topic rows and
   479 detailed cheat-sheet headings from the source workbooks (different granularity,
   not 820 distinct official exam topics).
-- Twenty-three Turkish lessons and interactive vector explanations, 115 original exercises, hints, confidence and explanations.
+- Fifty Turkish lessons and interactive vector explanations, 115 original exercises, hints, confidence and explanations.
 - Number-set membership, sign/parity comparisons, paired consecutive sums, prime
   divisor trials and ordered-book factorials, with saved exploration choices.
 - Clickable animal/plant cells, a 118-element periodic table, area-preserving geometry,
@@ -31,12 +41,13 @@ verification results are recorded separately in FORGE.md.
 - Four new AYT explorations: secant/tangent and a non-differentiable corner, signed
   electric field/force, dynamic equilibrium/catalyst, and semiconservative DNA copying.
   Source sections and model limits are recorded in [SOURCE_REVIEW](docs/SOURCE_REVIEW.md).
-- A separate **Kopya Kağıtları** section between theory and questions, with TYT/AYT,
-  subject/topic navigation and offline access to imported cheatsheet PDFs.
+- Cheatsheets open from the topic header, inline, with retained PDF pages and notes.
+  Older /cheatsheets links still work; the sidebar keeps theory and questions adjacent.
 - Full-width topic explanations with notes below the content; question notes remain
   below the question panel. Saved notes and unfinished sessions are retained.
 - Separate independent, assisted and incorrect responses; real session history and undo.
 - Day 1/3/7/21 reviews: learning is day 1, original targets are +2/+6/+20 days.
+  Theory recall appears before new daily topics and is completed explicitly.
 - Recurring unavailable weekdays, blocked dates, daily capacity and visible rescheduling.
 - Device-local IndexedDB for settings, drafts, history, notes and imported PDFs.
 - Offline PDF reader with direct page navigation, retained reading positions and bundled worker/font/image resources.

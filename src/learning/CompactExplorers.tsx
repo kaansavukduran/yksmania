@@ -114,7 +114,7 @@ function Fractions() {
               fill="currentColor"
               fontSize="17"
             >
-              {t}
+              {new Intl.NumberFormat("tr-TR").format(t)}
             </text>
           </g>
         ))}

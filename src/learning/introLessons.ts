@@ -22,7 +22,7 @@ export const introLessons: Lesson[] = [
     id: "simyadan-kimyaya",
     subjectId: "tyt-kimya",
     title: t("Simyadan kimyaya: amaç, yöntem ve kanıt"),
-    minutes: 16,
+    minutes: 40,
     tags: ["kimya-tarihi"],
     source: t(
       `${source1}, PDF/basılı s.10. Kaynak kavramlarıyla karşılaştırılmış özgün anlatım, şema ve alıştırmalar; resmî sınav soruları değildir.`,
@@ -115,7 +115,7 @@ export const introLessons: Lesson[] = [
     id: "kimya-disiplinleri",
     subjectId: "tyt-kimya",
     title: t("Kimya disiplinleri: maddeye hangi soruyu soruyoruz?"),
-    minutes: 14,
+    minutes: 35,
     tags: ["kimya-disiplinleri"],
     source: t(
       `${source1}, PDF/basılı s.13–14. Özgün örnekler ve alıştırmalar; kitap soruları kopyalanmamıştır.`,
@@ -192,7 +192,7 @@ export const introLessons: Lesson[] = [
     id: "sembolik-dil",
     subjectId: "tyt-kimya",
     title: t("Kimyanın sembolik dili: harf, alt indis ve katsayı"),
-    minutes: 18,
+    minutes: 40,
     tags: ["sembol", "formul"],
     source: t(
       `${source1}, PDF/basılı s.18–19. Atom sayma şeması ve 5 alıştırma özgündür; şema molekül geometrisi değildir.`,
@@ -277,7 +277,7 @@ export const introLessons: Lesson[] = [
     id: "kimya-guvenlik",
     subjectId: "tyt-kimya",
     title: t("Kimyada güvenlik: etiketten doğru davranışa"),
-    minutes: 15,
+    minutes: 40,
     tags: ["laboratuvar-guvenligi"],
     source: t(
       `${source2}, PDF/basılı s.10–11. Uyarı işaretleri ve davranış ilişkileriyle karşılaştırılan özgün anlatım ve alıştırmalar.`,
@@ -370,7 +370,7 @@ export const introLessons: Lesson[] = [
     id: "atom-modelleri",
     subjectId: "tyt-kimya",
     title: t("Atom modelleri: yeni kanıt modeli değiştirir"),
-    minutes: 20,
+    minutes: 40,
     tags: ["atom-modelleri"],
     source: t(
       `${source2}, PDF/basılı s.17. Model özellikleri ve sınırları karşılaştırıldı; tarih yılları yerine kavramsal sıra kullanılır. Şema ve alıştırmalar özgündür.`,

@@ -2586,11 +2586,16 @@ progress::-moz-progress-bar {
   background: color-mix(in srgb, var(--surface-2) 62%, var(--surface));
   min-width: 0;
 }
-.visual-lab svg {
+.visual-lab svg:not(.lucide) {
   display: block;
   width: 100%;
   height: auto;
   overflow: visible;
+}
+.visual-lab .lucide {
+  width: 1.1rem;
+  height: 1.1rem;
+  flex-shrink: 0;
 }
 .visual-lab .lab-heading h2 {
   margin: 0 0 0.55rem;
@@ -3132,11 +3137,205 @@ progress::-moz-progress-bar {
   margin: 1rem 0;
 }
 .topic-study {
+  padding: clamp(1.2rem, 3vw, 2rem);
   min-width: 0;
   overflow-wrap: anywhere;
 }
+.topic-study > h2:first-child {
+  margin-top: 0;
+}
+.study-heading:has(.cheatsheet-toggle) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1.25rem 2rem;
+}
+.study-title {
+  min-width: 0;
+}
+.study-title h1 {
+  margin-bottom: 0;
+}
+.cheatsheet-toggle {
+  justify-self: end;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  max-width: 100%;
+  min-width: 0;
+  text-align: start;
+}
+.cheatsheet-toggle > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.topic-cheatsheet {
+  grid-column: 1 / -1;
+  padding: clamp(1.1rem, 3vw, 2rem);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.topic-cheatsheet h2 {
+  margin-top: 0;
+}
+.topic-cheatsheet .pdf-reader {
+  margin-top: 1.25rem;
+}
+.topic-cheatsheet .source-browser {
+  margin-top: 1.25rem;
+}
+.topic-cheatsheet .field {
+  max-width: 100%;
+}
+@media (max-width: 700px) {
+  .study-heading:has(.cheatsheet-toggle) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .cheatsheet-toggle {
+    justify-self: start;
+  }
+}
 .topic-study p {
   line-height: 1.9;
+}
+.guide-contents {
+  border-block: 1px solid var(--border);
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+.guide-contents details > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1.5rem;
+}
+.guide-contents summary {
+  cursor: pointer;
+  min-height: 2.75rem;
+  padding-block: 0.5rem;
+}
+.guide-contents button {
+  text-align: start;
+}
+.guide-section {
+  scroll-margin-top: 2rem;
+}
+.guide-section > p {
+  max-width: 80ch;
+}
+.guide-table {
+  max-width: 100%;
+  overflow-x: auto;
+  margin-block: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+}
+.guide-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.guide-table th,
+.guide-table td {
+  text-align: start;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--border);
+  min-width: 6rem;
+}
+.guide-table th {
+  background: var(--surface-2);
+}
+.guide-table tr:last-child td {
+  border-bottom: 0;
+}
+.worked-example {
+  border-top: 1px solid var(--border);
+  padding-block: 1.25rem;
+}
+.worked-example summary,
+.guide-recall summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding-block: 0.5rem;
+}
+.worked-example > p,
+.worked-steps p,
+.worked-conclusion p,
+.guide-recall p {
+  line-height: 1.85;
+  max-width: 80ch;
+}
+.example-prompt {
+  color: var(--text);
+  font-weight: 500;
+}
+.worked-steps {
+  padding-inline-start: 1.5rem;
+}
+.worked-steps li {
+  padding: 0.7rem 0 0.7rem 0.5rem;
+}
+.worked-steps p {
+  margin: 0.5rem 0;
+}
+.math-expression {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--accent);
+  overflow-wrap: anywhere;
+}
+.example-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.3rem;
+}
+.worked-conclusion {
+  margin-top: 1.2rem;
+  border-inline-start: 3px solid var(--mint);
+  padding-inline-start: 1rem;
+}
+.guide-recall details {
+  border-top: 1px solid var(--border);
+  padding-block: 0.75rem;
+}
+.past-exams {
+  text-align: start;
+  margin-block: 2rem;
+  padding-block: 1.5rem;
+  border-block: 1px solid var(--border);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.result-page > .past-exams {
+  width: 100%;
+}
+.past-exams > h2 {
+  margin-top: 0;
+}
+.past-exam-reference {
+  padding-block: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+.past-exam-reference h3 {
+  margin-top: 0.5rem;
+}
+.past-exam-reference p,
+.past-exam-reference li,
+.exam-archive-scope p {
+  line-height: 1.85;
+}
+.past-exam-reference li {
+  margin-block: 0.75rem;
+}
+.past-exam-reference summary,
+.exam-archive-scope summary {
+  cursor: pointer;
+  padding-block: 0.5rem;
+}
+.exam-archive-scope {
+  margin-top: 1.25rem;
+}
+.past-exams .secondary {
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 .calendar-study {
   margin-top: 1.2rem;

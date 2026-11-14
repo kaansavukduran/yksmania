@@ -1,3 +1,48 @@
+# 0.6.0 — kapsamlı anlatım ve konu içi kaynak akışı (çalışıyor)
+
+Yetkili repo kaansavukduran/yksmania; yerel /workspace/yksmania,
+forge/in-depth-learning. Önceki 50 anlatımlı yerel dal, doğrulanmış0.5.3
+main ile birleştirildi (a6cf5b7). Public son sürüm0.5.3, yerel yeni çalışma
+henüz yayımlanmadı. Önceki kayıtlar aşağıda tarihsel olarak korunur.
+
+Yeni kullanıcı kararı: kopya kağıtları soldan çıkar, konu başlığında düğmeyle
+tam PDF olarak göster; kaynaklar korunur. Ders anlatımı kapsamlı açıklama,
+etkileşim ve çözümlü örnek içermeli. Kart iç boşluğu eksikliği doğrulandı ve
+topic-study üzerinde düzeltildi. Geçmiş ÖSYM kaynakları çözüm sonuna bağlandı.
+
+6 ayrıntılı rehber: simya/disiplinler/sembolik dil/güvenlik/atom modelleri ve
+rasyonel sayılar. 50 toplam anlatım,115 özgün banka sorusu; bütün479 konu
+anlatımı tamamlanmış değildir. Önceki27 kaynaklı anlatım ve konu tekrarları
+korunur. İncelenen126 özel kopya kağıdı dosyasının126'sı derse/türe
+sınıflanır,124'ü ayrıntılı başlıkla eşleşir;2 genel geometri dosyası bütün
+ders kağıtları seçeneğinden erişilir. Özel PDF/kimlik/katalog Git'e girmez.
+
+Canlı AIONIA belgesi bu aşamada tekrar okundu: v1.7 (14.11.2026); karakter
+varlıkları değiştirilmedi. Yalnız Türkçe ve Win/Linux/Android/web kapsamı.
+MEBİ TYT Matematik PDF28–30; Kimya PDF11–29 incelendi. Rasyonel/sembolik/
+simya Aurelia kağıtları da okundu. Kamuya açık5 ÖSYM kitapçığı indirildi;
+8 referans soru ve anahtar sayfalarıyla kontrol edildi:2018/2021TYT,2026
+ALES2,DGS,KPSS. 2006–2026 bütün oturumlar taranmış değildir, arşiv kısmi.
+
+YKS-016 yeni3tarayıcı testinin ilk koşusunda iki sorun bulundu: büyük yazıda
+header düğmesinin min-content taşması ve sınav seçiminin etiketle bulunmaması.
+İkisi düzeltildi;3/3 odaklı test PASS. Sonraki rehber eklemeleri ardından
+Yerel check/build,64unit ve tam64/64Chromium kabulü PASS (4,5dk).
+Son bağlantı etiketi düzeltmesi ardından9/9anlatım regresyonu PASS. Linux
+geliştirme Electron'u offline/reload/process restart, derin rehber, kaynak
+bağlantıları ve yeni bölme modelinde PASS; rendererErrors0. Bankadaki115
+sorunun bütün alanları0.5.3ile aynen korunduğu ayrıca karşılaştırıldı.
+Gerçek özel Aurelia PDF: inline/readingPage/not/offline PASS. Gerçek2021TYT
+resmî PDF: hash ile import, offline soru26/anahtar45sayfası PASS. Bunlar
+CI'ye veyaGit'e konulan özel dosyalar değildir.
+12temsilci model şablonu, koyu/açık masaüstü,390px ve320pxbüyük yazı
+görsel/etkileşimsel incelendi. Şema sembollerinde ve etiketlerde gözlenen
+kusurlar giderildi. Son filter regex düzeltmesi ALES'i Thales/Kalesi
+sözcüklerinden ayırır; birim kontrolü var. Son check/unit/build ve64unit PASS; ilgili2YKS-008 kaynak regresyonu PASS.
+PaketlenmişCI/public/release BEKLİYOR.
+
+---
+
 # Korunan ağaç yönü düzeltmesi
 
 TYT/AYT kökleri üstte, ders dalları aşağıya açılır. Yayımlanacak0.5.3

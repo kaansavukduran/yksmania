@@ -6,9 +6,11 @@ const PdfReader = lazy(() => import("./PdfReader"));
 export function DocumentReader({
   document: doc,
   close,
+  initialPage,
 }: {
   document: LocalDocument;
   close: () => void;
+  initialPage?: number;
 }) {
   const { t } = useApp();
   const ref = useRef<HTMLDialogElement>(null);
@@ -32,7 +34,11 @@ export function DocumentReader({
         </button>
       </div>
       <Suspense fallback={<p>{t("pdfLoading")}</p>}>
-        <PdfReader document={doc} />
+        <PdfReader
+          key={`${doc.id}:${initialPage ?? "saved"}`}
+          document={doc}
+          initialPage={initialPage}
+        />
       </Suspense>
     </dialog>
   );

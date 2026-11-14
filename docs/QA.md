@@ -1,6 +1,6 @@
 # Quality evidence
 
-Target 0.5.3 alpha. This file is updated at the verified Forge checkpoint.
+Target 0.6.0 alpha. This file is updated at the verified Forge checkpoint.
 
 ## 0.5.3 ağaç yönü
 
@@ -552,3 +552,32 @@ Android v2 imza/code10/name0.5.2 PASS. [Public43579996297](https://github.com/ka
 8asset yayımladı. Yerel HTTPS tarayıcı yolu proxyCA nedeniyle BLOCKED; TLS
 kontrolü kapatılmadı. İlk CI49/50 sonucu ve testin durable kayıt beklemesi
 FORGE.md’de korunur. Fiziksel cihaz/kurulum/güncelleme NOT TESTED kalır.
+
+
+## YKS-016: konu içi kaynak ve okunabilir anlatım
+
+Kaynak:14.11.2026 kullanıcı ekranı. Soru-kaynak kartındaki başlık, satırlar ve
+eylemler kenarlara dayalıydı. Kök neden doğrulandı: topic-study üzerinde
+container padding eksikti. Responsive iç boşluk eklendi; eşdeğer kontroller
+hizalandı. Kopya kağıdı menüsünü kaldırıp konu başlığına taşıma en yeni
+açık kullanıcı kararıdır; eski YKS-008 kayıtları tarihsel davranıştır.
+
+Gerilemeler: yeni learning-depth3test PDF içe aktarma, sayfa/notun offline
+reload ile korunması, başarısız içe aktarmada önceki dosyanın kalması,
+sahte ilerleme olmaması, kart geometrisi ve gerçek soru sonucu→ÖSYM
+kaynağı akışını kapsar.320px %200UI/%150metin, gerçek emüle tap ve axe
+denetimi vardır. Yanlış kitapçık hash ile reddedilir. Eski /cheatsheets
+bağlantıları ve soru taslakları korunur.
+
+Gözlenen ek kusurlar: (1) büyük yazıda header düğmesi335px min-content ile
+320px sayfayı taşıyordu; span/grid ile yeniden akış düzeltildi. (2) eski
+bağlantıya geçerken açık mobil menü içeriği örtüyordu; hash değişimi menüyü
+kapatır. (3) visual-lab SVG boyut kuralı Lucide oklarını da büyütüyordu;
+şema ve simge seçicileri ayrıldı. (4) dikey şema bağlantıları düğüm
+etiketinden geçiyordu; yandan kıvrılan bağlantıya alındı. Mevcut anlatım
+testleri küçük simge boyutu ve gerçek SVG yol örneklerinin etiket kutularını
+kesiştirmemesi denetimini içerir. Elektron adımındaki molekül piktogramı
+e⁻ sembolüyle düzeltildi.
+
+0.6.0 son koşu ve dağıtım durumları FORGE.md içindedir; tarihsel test
+sonuçları bu sürümün kabul sonucu sayılmaz.

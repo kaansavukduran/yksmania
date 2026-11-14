@@ -1,0 +1,57 @@
+[
+  {
+    "id": "2018-tyt",
+    "title": "2018 TYT",
+    "exam": "TYT",
+    "year": 2018,
+    "url": "https://dokuman.osym.gov.tr/pdfdokuman/2018/YKS/TYT_01072018.pdf",
+    "pages": 42,
+    "coverage": "tam",
+    "sha256": "e6ba4a863d26ecfb1461a2c65cca19bbc3c5c28b230b30fa0c5ac1f8c3df1d0b",
+    "checkedAt": "2026-11-14"
+  },
+  {
+    "id": "2021-tyt",
+    "title": "2021 TYT",
+    "exam": "TYT",
+    "year": 2021,
+    "url": "https://dokuman.osym.gov.tr/pdfdokuman/2021/YKS/TSK/tyt_yks_2021.pdf",
+    "pages": 45,
+    "coverage": "tam",
+    "sha256": "c9220ca9ffdee89ba220bf3cdd3f34ce02f8c0e2b1a3a20b42d7ff810f73d95b",
+    "checkedAt": "2026-11-14"
+  },
+  {
+    "id": "2026-ales2",
+    "title": "2026 ALES/2",
+    "exam": "ALES",
+    "year": 2026,
+    "url": "https://dokuman.osym.gov.tr/web/2026/8/2025-ales2-temel-soru-kitapcigi-ve-cevap-anahtari-10-b22o51-02132535.pdf",
+    "pages": 34,
+    "coverage": "%10",
+    "sha256": "7935d38ebdabed5ac08d55dc656fa327e7e7b137b264b472f0fbb356d81d9a8e",
+    "checkedAt": "2026-11-14"
+  },
+  {
+    "id": "2026-dgs",
+    "title": "2026 DGS",
+    "exam": "DGS",
+    "year": 2026,
+    "url": "https://dokuman.osym.gov.tr/pdfdokuman/2026/DGS/TSK/intkitapcik_td19072026.pdf",
+    "pages": 33,
+    "coverage": "%10",
+    "sha256": "085f79b3294035d549dffa478b50148a5930d35d9575404d83600d5714ea3621",
+    "checkedAt": "2026-11-14"
+  },
+  {
+    "id": "2026-kpss",
+    "title": "2026 KPSS Lisans GY–GK",
+    "exam": "KPSS",
+    "year": 2026,
+    "url": "https://dokuman.osym.gov.tr/web/2026/9/2026-kpss-lisansgenel-yetenek-genel-kultur-temel-soru-kitapcigi-ve-cevap-anahtari-10-9dh155-06125847.pdf",
+    "pages": 35,
+    "coverage": "%10",
+    "sha256": "becc024ea962ac4cba97a4e7eea3b703808431e4602077c7ecb7c04273b636f8",
+    "checkedAt": "2026-11-14"
+  }
+]

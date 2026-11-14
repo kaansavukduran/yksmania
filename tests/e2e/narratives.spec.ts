@@ -72,9 +72,59 @@ for (const subject of [
       await open(page, pack.id);
       const lab = page.locator(".narrative-lab"),
         scenario = pack.cases[1];
-      await lab
-        .getByRole("button", { name: scenario.name, exact: true })
-        .click();
+      for (const graphCase of pack.cases.slice(0, 2)) {
+        await lab
+          .getByRole("button", { name: graphCase.name, exact: true })
+          .click();
+        const icon = await lab
+          .locator(".walk-step-controls button svg")
+          .last()
+          .boundingBox();
+        expect(icon!.width).toBeLessThan(40);
+        expect(icon!.height).toBeLessThan(40);
+        const intersections = await lab
+          .locator(":scope > svg")
+          .evaluate((svg) => {
+            const labels = [...svg.querySelectorAll(".walk-node > text")].map(
+              (label) => label.getBoundingClientRect(),
+            );
+            let hits = 0;
+            for (const link of svg.querySelectorAll(".walk-path + text")) {
+              const box = link.getBoundingClientRect();
+              if (
+                labels.some(
+                  (rect) =>
+                    box.left < rect.right &&
+                    box.right > rect.left &&
+                    box.top < rect.bottom &&
+                    box.bottom > rect.top,
+                )
+              )
+                hits++;
+            }
+            for (const path of svg.querySelectorAll<SVGPathElement>(
+              ".walk-path",
+            )) {
+              for (let at = 0; at <= path.getTotalLength(); at += 2) {
+                const point = path
+                  .getPointAtLength(at)
+                  .matrixTransform(path.getScreenCTM()!);
+                if (
+                  labels.some(
+                    (rect) =>
+                      point.x > rect.left &&
+                      point.x < rect.right &&
+                      point.y > rect.top &&
+                      point.y < rect.bottom,
+                  )
+                )
+                  hits++;
+              }
+            }
+            return hits;
+          });
+        expect(intersections).toBe(0);
+      }
       const last = scenario.nodes.at(-1)!;
       await lab
         .locator(".walk-node-controls")

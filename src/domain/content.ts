@@ -345,7 +345,7 @@ export const lessons: Lesson[] = [
     id: "rasyonel-sayilar",
     subjectId: "tyt-matematik",
     title: t("Rasyonel sayılar"),
-    minutes: 18,
+    minutes: 45,
     tags: ["number-line", "fractions"],
     source: t(
       "OGM matematik konu notlarındaki kavramlar esas alınarak hazırlanmış özgün öğretim. Sorular resmî sınav sorusu değildir.",

@@ -10,6 +10,8 @@ import type { Lesson, ReviewStage } from "../domain/model";
 import { TheoryReviewAction } from "../components/LearningReviews";
 import { TopicCompletion } from "../components/StudyPlanning";
 import { SourceList } from "../components/SourceList";
+import { TopicCheatsheet } from "../components/TopicCheatsheet";
+import { PastExamQuestions } from "../components/PastExamQuestions";
 import { Theory } from "./Theory";
 export function Topic({
   id,
@@ -60,11 +62,19 @@ export function Topic({
         Bugün’e dön
       </button>
       <header className="study-heading">
-        <span className="eyebrow">
-          {topic.order}. konu · {subject.exam} {l(subject.name)} ·{" "}
-          {mode === "theory" ? "Konu Anlatımı" : "Sorular"}
-        </span>
-        <h1>{topic.title}</h1>
+        <div className="study-title">
+          <span className="eyebrow">
+            {topic.order}. konu · {subject.exam} {l(subject.name)} ·{" "}
+            {mode === "theory" ? "Konu Anlatımı" : "Sorular"}
+          </span>
+          <h1>{topic.title}</h1>
+        </div>
+        <TopicCheatsheet
+          key={topic.id}
+          topic={topic}
+          subjectId={topic.subjectId}
+          navigate={navigate}
+        />
       </header>
       <section className="panel topic-study">
         {mode === "questions" && available.length ? (
@@ -99,17 +109,14 @@ export function Topic({
           </>
         )}
         <div className="topic-source-actions">
-          <button
-            className="secondary"
-            onClick={() => navigate(`/cheatsheets?topic=${topic.id}`)}
-          >
-            Kopya kağıdına git
-          </button>
           <button className="secondary" onClick={() => navigate("/sources")}>
             Kaynak dosyalarını yönet
           </button>
         </div>
         <SourceList subjectId={topic.subjectId} mode={mode} topic={topic} />
+        {mode === "questions" && (
+          <PastExamQuestions topicId={topic.id} subjectId={topic.subjectId} />
+        )}
         {mode === "theory" && reviewStage ? (
           <TheoryReviewAction
             topicId={topic.id}

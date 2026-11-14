@@ -13,7 +13,6 @@ import {
   AlertCircle,
   Menu,
   X,
-  Files,
 } from "lucide-react";
 import { useRegisterSW } from "virtual:pwa-register/react";
 import { Capacitor } from "@capacitor/core";
@@ -33,7 +32,6 @@ import type { Lesson, ReviewStage } from "./domain/model";
 const routes = [
   { route: "/today", key: "today", Icon: Home },
   { route: "/courses", key: "courses", Icon: BookOpen },
-  { route: "/cheatsheets", key: "cheatsheets", Icon: Files },
   { route: "/questions", key: "questions", Icon: ListChecks },
   { route: "/calendar", key: "calendar", Icon: CalendarDays },
   { route: "/mistakes", key: "mistakes", Icon: Sprout },
@@ -99,6 +97,7 @@ export default function App() {
   useEffect(() => {
     const handle = () => {
       setRoute(location.hash.slice(1) || "/today");
+      setMenu(false);
       window.scrollTo(0, 0);
     };
     window.addEventListener("hashchange", handle);
@@ -184,21 +183,23 @@ export default function App() {
   };
   const path = route.split("?")[0];
   const navKey =
-    path === "/sources" || path === "/library"
-      ? "settings"
-      : path === "/topic"
-        ? new URLSearchParams(route.split("?")[1]).get("mode") === "questions"
-          ? "questions"
-          : "courses"
-        : path === "/lesson"
-          ? "courses"
-          : path === "/practice" || path === "/result"
+    path === "/cheatsheets"
+      ? "courses"
+      : path === "/sources" || path === "/library"
+        ? "settings"
+        : path === "/topic"
+          ? new URLSearchParams(route.split("?")[1]).get("mode") === "questions"
             ? "questions"
-            : path === "/study"
-              ? state.draft?.phase === "read"
-                ? "courses"
-                : "questions"
-              : (routes.find((v) => v.route === path)?.key ?? "today");
+            : "courses"
+          : path === "/lesson"
+            ? "courses"
+            : path === "/practice" || path === "/result"
+              ? "questions"
+              : path === "/study"
+                ? state.draft?.phase === "read"
+                  ? "courses"
+                  : "questions"
+                : (routes.find((v) => v.route === path)?.key ?? "today");
   const updateCallback = useState(
     () => (ready: boolean, applyFn?: () => void) => {
       setUpdateReady(ready);
@@ -265,7 +266,7 @@ export default function App() {
             <Settings2 size={20} />
             {t("settings")}
           </button>
-          <span className="sidebar-version">0.5.3 alpha</span>
+          <span className="sidebar-version">0.6.0 alpha</span>
         </div>
       </aside>
       {menu && (

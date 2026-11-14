@@ -5,11 +5,13 @@ import { useLibrary } from "../useLibrary";
 import {
   visibleIn,
   matchesSourceTopic,
+  isPastExamSource,
   type SourceMode,
   type SourceTopic,
 } from "../domain/catalogue";
 import type { LocalDocument } from "../domain/storage";
 import { DocumentReader } from "./DocumentReader";
+import { topicDocuments } from "../domain/sourceMatching";
 export function SourceList({
   subjectId,
   mode,
@@ -48,19 +50,22 @@ export function SourceList({
     (e) =>
       (provider === "all" ||
         (provider === "past"
-          ? /çıkmış|ösym|ygs|lys/i.test(e.name)
+          ? isPastExamSource(e.name, e.provider)
           : e.provider === provider)) &&
       e.name
         .toLocaleLowerCase("tr-TR")
         .includes(search.toLocaleLowerCase("tr-TR")),
   );
-  const manual = documents.filter(
-    (d) =>
-      !d.sourceIds?.length &&
-      (d.subjectIds ?? [d.subjectId]).includes(subjectId) &&
-      visibleIn(d.kind ?? "mixed", mode) &&
-      (!topic || matchesSourceTopic(d.name, undefined, topic)),
+  const represented = new Set(
+    entries.map((entry) => localBySource.get(entry.id)?.id),
   );
+  const manual = topicDocuments(
+    documents,
+    catalogue,
+    subjectId,
+    mode,
+    topic,
+  ).filter((doc) => !represented.has(doc.id));
   const title = t(mode === "cheatsheets" ? "cheatsheetFiles" : "sourceFiles");
   return (
     <section className="source-browser" aria-label={title}>

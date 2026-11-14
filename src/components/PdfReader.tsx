@@ -11,14 +11,18 @@ import type { LocalDocument } from "../domain/storage";
 GlobalWorkerOptions.workerSrc = workerUrl;
 export default function PdfReader({
   document: doc,
+  initialPage,
 }: {
   document: LocalDocument;
+  initialPage?: number;
 }) {
   const { state, t, update } = useApp();
   const [pdf, setPdf] = useState<PDFDocumentProxy | null>(null);
-  const [page, setPage] = useState(() => state.readingPages[doc.id] ?? 1);
+  const [page, setPage] = useState(
+    () => initialPage ?? state.readingPages[doc.id] ?? 1,
+  );
   const [jump, setJump] = useState(() =>
-    String(state.readingPages[doc.id] ?? 1),
+    String(initialPage ?? state.readingPages[doc.id] ?? 1),
   );
   const [pageError, setPageError] = useState(false);
   const goPage = (n: number) => {

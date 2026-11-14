@@ -17,6 +17,7 @@ import {
   type ResourceKind,
 } from "../domain/catalogue";
 import { useLibrary, libraryChanged } from "../useLibrary";
+import { inferSourceFile } from "../domain/sourceMatching";
 import { DocumentReader } from "../components/DocumentReader";
 import { Empty } from "../components/Shared";
 export function Library() {
@@ -93,10 +94,12 @@ export function Library() {
             }),
           );
           const source = matchSource(file.name, catalogue, lookup);
+          const inferred = inferSourceFile(file.name);
           const prior = known.get(hash);
-          const subjectIds = source?.subjectIds ?? [subject];
+          const subjectIds = source?.subjectIds ?? inferred.subjectIds ?? [subject];
           if (!source) result.unmatched++;
           const doc: LocalDocument = {
+            ...prior,
             id: hash,
             name: prior?.name ?? file.name,
             subjectId: prior?.subjectId ?? subjectIds[0],
@@ -113,9 +116,9 @@ export function Library() {
               ]),
             ],
             kind:
-              prior && prior.kind !== (source?.kind ?? kind)
+              prior && prior.kind !== (source?.kind ?? inferred.kind ?? kind)
                 ? "mixed"
-                : (source?.kind ?? kind),
+                : (source?.kind ?? inferred.kind ?? kind),
             size: file.size,
             type: "application/pdf",
             addedAt: prior?.addedAt ?? new Date().toISOString(),
