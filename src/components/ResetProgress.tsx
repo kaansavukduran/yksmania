@@ -66,13 +66,15 @@ export function ResetProgress() {
       >
         <h2 id="reset-progress-title">İlerlemeyi sıfırlamak istiyor musun?</h2>
         <p id="reset-progress-description">
-          Tamamlanan konular, soru geçmişi, tekrarlar, etkileşim seçimleri ve
-          yarım soru çalışması silinir. Bütün konular çalışılmamış kabul edilir.
-          Bu işlem geri alınamaz; dışa aktardığın yedeği geri yükleyebilirsin.
+          Tamamlanan konular, soru ve deneme geçmişi, tekrarlar, etkileşim
+          seçimleri ve yarım soru/deneme çalışmaları silinir. Bütün konular
+          çalışılmamış kabul edilir. Bu işlem geri alınamaz; dışa aktardığın
+          yedeği geri yükleyebilirsin.
         </p>
         <p>
           <strong>
-            Ayarların, notların, PDF’lerin ve PDF sayfa konumların korunur.
+            Ayarların, notların ve önceki sürümlerden kalan kişisel dosyaların
+            korunur.
           </strong>{" "}
           Kum saati durur; seçtiğin süre korunur.
         </p>

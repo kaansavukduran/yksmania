@@ -1,8 +1,8 @@
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
-import { samplePdf } from "./helpers/pdf";
 test.use({ hasTouch: true, locale: "tr-TR" });
 async function nav(page: Page, name: string) {
+  await expect(page.locator(".sidebar")).toBeAttached();
   const menu = page.getByRole("button", { name: "Menüyü aç", exact: true });
   if (await menu.isVisible()) await menu.click();
   await page
@@ -18,7 +18,7 @@ async function rational(page: Page) {
     page.getByRole("heading", { name: "Rasyonel sayılar", exact: true }),
   ).toBeVisible();
 }
-test("YKS-016 topic header opens the full local cheatsheet inline, keeps notes/page offline and leaves study progress untouched", async ({
+test("YKS-016 full-width theory and separate ready cheatsheets retain notes offline without learning credit", async ({
   page,
   context,
 }) => {
@@ -28,34 +28,21 @@ test("YKS-016 topic header opens the full local cheatsheet inline, keeps notes/p
   });
   await rational(page);
   await expect(
-    page
-      .locator(".sidebar nav")
-      .getByRole("button", { name: "Kopya Kağıtları", exact: true }),
+    page.locator(".topic-cheatsheet,.cheatsheet-toggle"),
   ).toHaveCount(0);
-  const title = await page.locator(".study-title").boundingBox();
-  const toggle = page.getByRole("button", {
-    name: "Kopya Kağıdını Görüntüle",
-    exact: true,
-  });
-  const button = await toggle.boundingBox();
-  expect(button!.x).toBeGreaterThanOrEqual(title!.x + title!.width);
-  await toggle.click();
+  await nav(page, "Kopya Kağıtları");
+  await page
+    .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
+    .fill("Rasyonel Sayılar");
+  await page
+    .locator(".cheatsheet-topic")
+    .filter({ hasText: "Rasyonel Sayılar" })
+    .click();
   const sheet = page.getByRole("region", {
     name: "Rasyonel Sayılar kopya kağıdı",
     exact: true,
   });
-  await sheet.getByLabel("Bu konunun kopya kağıdı PDF’si").setInputFiles({
-    name: "private-notes.pdf",
-    mimeType: "application/pdf",
-    buffer: samplePdf(true),
-  });
-  await expect(sheet.locator("canvas")).toBeVisible();
-  await sheet
-    .getByRole("button", { name: "Sonraki sayfa", exact: true })
-    .click();
-  await expect(
-    sheet.getByRole("spinbutton", { name: "PDF sayfası", exact: true }),
-  ).toHaveValue("2");
+  await expect(sheet).toContainText(/payda/i);
   await sheet
     .getByRole("textbox", { name: "Notun", exact: true })
     .fill("Kağıt notum kaybolmasın.");
@@ -64,30 +51,25 @@ test("YKS-016 topic header opens the full local cheatsheet inline, keeps notes/p
   );
   await context.setOffline(true);
   await page.reload();
+  await nav(page, "Kopya Kağıtları");
   await page
-    .getByRole("button", { name: "Kopya Kağıdını Görüntüle", exact: true })
+    .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
+    .fill("Rasyonel Sayılar");
+  await page
+    .locator(".cheatsheet-topic")
+    .filter({ hasText: "Rasyonel Sayılar" })
     .click();
-  await expect(sheet.locator("canvas")).toBeVisible();
-  await expect(
-    sheet.getByRole("spinbutton", { name: "PDF sayfası", exact: true }),
-  ).toHaveValue("2");
   await expect(
     sheet.getByRole("textbox", { name: "Notun", exact: true }),
   ).toHaveValue("Kağıt notum kaybolmasın.");
-  await sheet.getByLabel("Bu konunun kopya kağıdı PDF’si").setInputFiles({
-    name: "invalid.pdf",
-    mimeType: "application/pdf",
-    buffer: Buffer.from("not a pdf"),
-  });
-  await expect(sheet.getByRole("alert")).toContainText("PDF eklenemedi");
-  await expect(sheet.locator("canvas")).toBeVisible();
+  await expect(page.locator('input[accept*="pdf"]')).toHaveCount(0);
   await nav(page, "Bugün");
   await expect(
     page.getByRole("region", { name: "Konu planı", exact: true }),
   ).toContainText("0/479");
   await expect(page.locator(".stat-number").first()).toHaveText("0");
 });
-test("YKS-016 guides explain steps and keep topic/question cards padded; completed practice offers actual OSYM references and rejects a wrong booklet", async ({
+test("YKS-016 guides explain steps and keep topic/question cards padded; completed practice offers verified OSYM references without material imports", async ({
   page,
 }) => {
   await page.goto("/");
@@ -144,34 +126,31 @@ test("YKS-016 guides explain steps and keep topic/question cards padded; complet
     exact: true,
   });
   await expect(archive).toContainText("2021 TYT · Fen Bilimleri · Soru 8");
+  await archive.locator(".past-exam-reference summary").click();
   await expect(
     archive.getByRole("link", {
-      name: "ÖSYM’de soruyu aç (internet)",
+      name: "Resmî kaynak kaydı (internet)",
       exact: true,
     }),
   ).toHaveAttribute("href", /tyt_yks_2021\.pdf#page=40$/);
-  await archive
-    .getByRole("button", {
-      name: "Çevrimdışı kullanım için PDF’yi ekle",
-      exact: true,
-    })
-    .click({ noWaitAfter: true });
-  await archive.getByLabel("Doğrulanmış ÖSYM kitapçığı").setInputFiles({
-    name: "wrong.pdf",
-    mimeType: "application/pdf",
-    buffer: samplePdf(),
-  });
-  await expect(archive.getByRole("alert")).toContainText("eşleşmiyor");
-  await expect(
-    archive.getByRole("button", { name: /Soruyu görüntüle/ }),
-  ).toHaveCount(0);
-  await archive.locator(".past-exam-reference summary").click();
-  await expect(archive).toContainText("Doğrulanan cevap: A");
+  await expect(archive.locator('input[type="file"]')).toHaveCount(0);
+  await expect(archive.getByRole("button", { name: /PDF.*ekle/ })).toHaveCount(
+    0,
+  );
+  await expect(archive).toContainText("Resmî cevap: A");
+  const teaching = archive.locator(".exam-teaching-case").first();
+  await expect(teaching.locator(".example-prompt")).not.toBeEmpty();
+  await teaching
+    .getByRole("button", { name: "Çözümü adım adım aç", exact: true })
+    .click();
+  await expect(teaching.locator("ol li")).toHaveCount(1);
   await archive.getByLabel("Sınav", { exact: true }).selectOption("ALES");
-  await expect(archive).toContainText("henüz doğrulanmış kayıt yok");
+  await expect(archive).toContainText(
+    "Bu seçim için sınav bağlantıları hazırlanıyor",
+  );
   await expect(page.locator(".result-stats")).toContainText("5/5");
 });
-test("YKS-016 inline sources and long explanations reflow at 320px, 200% UI and 150% text with touch, offline and no serious accessibility defects", async ({
+test("YKS-016 native sheets and long explanations reflow at 320px, 200% UI and 150% text with touch, offline and no serious accessibility defects", async ({
   page,
   context,
 }) => {
@@ -187,18 +166,9 @@ test("YKS-016 inline sources and long explanations reflow at 320px, 200% UI and 
   });
   await context.setOffline(true);
   await rational(page);
-  const toggle = page.getByRole("button", {
-    name: "Kopya Kağıdını Görüntüle",
-    exact: true,
-  });
-  const title = await page.locator(".study-title").boundingBox(),
-    button = await toggle.boundingBox();
-  expect(button!.y).toBeGreaterThanOrEqual(title!.y + title!.height);
-  await toggle.tap();
-  await expect(page.locator(".topic-cheatsheet")).toContainText(
-    "henüz bu cihazda yok",
-  );
-  await toggle.tap();
+  await expect(
+    page.locator(".topic-cheatsheet,.cheatsheet-toggle"),
+  ).toHaveCount(0);
   const example = page.locator(".worked-example").first();
   await example.locator("summary").tap();
   await example
@@ -208,10 +178,82 @@ test("YKS-016 inline sources and long explanations reflow at 320px, 200% UI and 
   expect(
     await page.evaluate(() => document.documentElement.scrollWidth),
   ).toBeLessThanOrEqual(321);
+  await nav(page, "Kopya Kağıtları");
+  await page
+    .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
+    .fill("Rasyonel Sayılar");
+  await page
+    .locator(".cheatsheet-topic")
+    .filter({ hasText: "Rasyonel Sayılar" })
+    .tap();
+  await expect(page.locator(".cheat-reader")).toContainText(/payda/i);
+  expect(
+    await page.evaluate(() => document.documentElement.scrollWidth),
+  ).toBeLessThanOrEqual(321);
   const scan = await new AxeBuilder({ page }).include("main").analyze();
   expect(
     scan.violations.filter((v) =>
       ["serious", "critical"].includes(v.impact ?? ""),
     ),
   ).toEqual([]);
+});
+
+test("guided study advances meaningful sections, keeps its place and notes offline, and never awards completion for paging", async ({
+  page,
+  context,
+}) => {
+  await page.goto("/");
+  await page.evaluate(async () => {
+    await navigator.serviceWorker.ready;
+  });
+  await rational(page);
+  const sections = page.locator(".guide-section");
+  const fullCount = await sections.count();
+  expect(fullCount).toBeGreaterThanOrEqual(6);
+  const firstTitle = await sections.first().locator(":scope > h2").innerText();
+  await page
+    .getByRole("textbox", { name: "Notun", exact: true })
+    .fill("Konu notum adımlarla korunmalı.");
+  await expect(page.locator(".save-status")).toContainText(
+    "Bu cihazda kaydedildi",
+  );
+  await page
+    .getByRole("button", { name: "Adım adım çalış", exact: true })
+    .click();
+  await expect(sections).toHaveCount(1);
+  await expect(sections.locator(":scope > h2")).toHaveText(firstTitle);
+  await page
+    .getByRole("button", { name: "Sonraki bölüm", exact: true })
+    .click();
+  await expect(sections.locator(":scope > h2")).not.toHaveText(firstTitle);
+  await expect(sections.locator(":scope > h2")).toBeFocused();
+  await expect(page.locator(".visual-lab")).toHaveCount(1);
+  await page.getByRole("slider", { name: /^Payda:/ }).fill("3");
+  await expect(page.locator(".area-result")).toContainText("1/3 ≈ 0,333");
+  await page
+    .getByRole("button", { name: "Sonraki bölüm", exact: true })
+    .click();
+  const savedTitle = await sections.locator(":scope > h2").innerText();
+  await expect(page.locator(".save-status")).toContainText(
+    "Bu cihazda kaydedildi",
+  );
+  await context.setOffline(true);
+  await page.reload();
+  await expect(
+    page.getByRole("button", { name: "Adım adım çalış", exact: true }),
+  ).toHaveAttribute("aria-pressed", "true");
+  await expect(sections).toHaveCount(1);
+  await expect(sections.locator(":scope > h2")).toHaveText(savedTitle);
+  await expect(
+    page.getByRole("textbox", { name: "Notun", exact: true }),
+  ).toHaveValue("Konu notum adımlarla korunmalı.");
+  await page.getByRole("button", { name: "Önceki bölüm", exact: true }).click();
+  await expect(page.locator(".area-result")).toContainText("1/3 ≈ 0,333");
+  await page.getByRole("button", { name: "Tüm anlatım", exact: true }).click();
+  await expect(sections).toHaveCount(fullCount);
+  await nav(page, "Bugün");
+  await expect(page.locator(".stat-number").first()).toHaveText("0");
+  await expect(
+    page.getByRole("region", { name: "Konu planı", exact: true }),
+  ).toContainText("0/479");
 });

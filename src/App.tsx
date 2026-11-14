@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import {
   BookOpen,
+  Files,
+  ClipboardCheck,
   ListChecks,
   CalendarDays,
   Compass,
@@ -22,7 +24,7 @@ import { Courses } from "./pages/Courses";
 import { Cheatsheets } from "./pages/Cheatsheets";
 import { Calendar } from "./pages/Calendar";
 import { Mistakes } from "./pages/Mistakes";
-import { Library } from "./pages/Library";
+import { Exams, ExamDeadlineWatcher } from "./pages/Exams";
 import { World } from "./pages/World";
 import { Settings } from "./pages/Settings";
 import { Theory } from "./pages/Theory";
@@ -32,7 +34,9 @@ import type { Lesson, ReviewStage } from "./domain/model";
 const routes = [
   { route: "/today", key: "today", Icon: Home },
   { route: "/courses", key: "courses", Icon: BookOpen },
+  { route: "/cheatsheets", key: "cheatsheets", Icon: Files },
   { route: "/questions", key: "questions", Icon: ListChecks },
+  { route: "/exams", key: "exams", Icon: ClipboardCheck },
   { route: "/calendar", key: "calendar", Icon: CalendarDays },
   { route: "/mistakes", key: "mistakes", Icon: Sprout },
   { route: "/world", key: "world", Icon: Compass },
@@ -184,9 +188,9 @@ export default function App() {
   const path = route.split("?")[0];
   const navKey =
     path === "/cheatsheets"
-      ? "courses"
+      ? "cheatsheets"
       : path === "/sources" || path === "/library"
-        ? "settings"
+        ? "courses"
         : path === "/topic"
           ? new URLSearchParams(route.split("?")[1]).get("mode") === "questions"
             ? "questions"
@@ -208,6 +212,7 @@ export default function App() {
   )[0];
   return (
     <div className="app-shell">
+      <ExamDeadlineWatcher />
       {!Capacitor.isNativePlatform() &&
         ["http:", "https:"].includes(location.protocol) && (
           <WebUpdates onReady={updateCallback} />
@@ -266,7 +271,7 @@ export default function App() {
             <Settings2 size={20} />
             {t("settings")}
           </button>
-          <span className="sidebar-version">0.8.0 alpha</span>
+          <span className="sidebar-version">0.9.0 alpha</span>
         </div>
       </aside>
       {menu && (
@@ -425,12 +430,23 @@ export default function App() {
               navigate={navigate}
             />
           ) : path === "/sources" || path === "/library" ? (
-            <Library />
+            <Courses
+              start={(lesson) => {
+                void start(lesson);
+              }}
+            />
+          ) : path === "/exams" ? (
+            <Exams
+              navigate={navigate}
+              resultId={
+                new URLSearchParams(route.split("?")[1]).get("result") ??
+                undefined
+              }
+            />
           ) : path === "/world" ? (
             <World navigate={navigate} />
           ) : path === "/settings" ? (
             <Settings
-              openSources={() => navigate("/sources")}
               updateReady={updateReady}
               applyUpdate={() => {
                 if (status === "saved") apply();

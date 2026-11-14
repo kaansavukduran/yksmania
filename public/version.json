@@ -1,7 +1,7 @@
 {
-  "version": "0.8.0",
+  "version": "0.9.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Kalıcı çalışma kum saati: ters çevir, durdur/devam et, 1/5/10/20 dakika ve 2 saate kadar özel süre. İlerlemeyi sıfırlarken not, PDF ve ayarlar korunur. Ders simgeleri yenilendi, güncelleme düğmesi görünür oldu. Selçuklu ve elektron katmanları eklendi, paragraf genişletildi: 54 anlatım, 17 ayrıntılı rehber."
+    "tr": "PDF ve kaynak yükleme ekranları kaldırıldı. Kopya Kağıtları ayrı bölümde: 60 hazır kağıt. 57 anlatım, 28 ayrıntılı rehber, 220 özgün soru. Adım adım öğrenme, etkileşimli Türkçe/cebir/tarih; TYT ve AYT karma, 11 branş denemesi, orantılı süre ve açıklamalı sonuçlar."
   }
 }

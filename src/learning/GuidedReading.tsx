@@ -1,4 +1,6 @@
-import { useId, useState } from "react";
+import { useId, useState, useEffect } from "react";
+import { useExploration } from "./useExploration";
+import "./guidedJourney.css";
 import { ArrowRight, RotateCcw } from "lucide-react";
 import { VisualLab } from "./VisualLab";
 import type { LessonGuide, WorkedExample } from "./guides/types";
@@ -72,8 +74,78 @@ function Example({ example }: { example: WorkedExample }) {
 }
 export function GuidedReading({ guide }: { guide: LessonGuide }) {
   const prefix = useId();
+  const [journey, setJourney] = useExploration(`guide:${guide.id}`, {
+    step: 0,
+    guided: false,
+  });
+  const stages = guide.sections.length + 2;
+  const step = Math.max(0, Math.min(stages - 1, Math.trunc(journey.step)));
+  const guided = journey.guided;
+  useEffect(() => {
+    if (!guided) return;
+    const frame = requestAnimationFrame(() => {
+      const id =
+        step < guide.sections.length
+          ? `${prefix}-${step}`
+          : step === guide.sections.length
+            ? `${prefix}-examples`
+            : `${prefix}-recall`;
+      moveToSection(id);
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [step, guided, prefix, guide.sections.length]);
+  function jump(i: number) {
+    if (guided) setJourney({ step: i });
+    else
+      moveToSection(
+        i < guide.sections.length
+          ? `${prefix}-${i}`
+          : i === guide.sections.length
+            ? `${prefix}-examples`
+            : `${prefix}-recall`,
+      );
+  }
+
   return (
     <>
+      <div
+        className="learning-journey"
+        role="group"
+        aria-label="Anlatım düzeni"
+      >
+        <div className="segmented">
+          <button
+            aria-pressed={guided}
+            className={guided ? "active" : ""}
+            onClick={() => setJourney({ guided: true })}
+          >
+            Adım adım çalış
+          </button>
+          <button
+            aria-pressed={!guided}
+            className={!guided ? "active" : ""}
+            onClick={() => setJourney({ guided: false })}
+          >
+            Tüm anlatım
+          </button>
+        </div>
+        {guided && (
+          <>
+            <p className="small muted">
+              Bölüm {step + 1} / {stages} ·{" "}
+              {step < guide.sections.length
+                ? guide.sections[step].title
+                : step === guide.sections.length
+                  ? "Birlikte çöz"
+                  : "Bakmadan hatırla"}
+            </p>
+            <p className="small muted">
+              Bu sıra, anlatımda bulunduğun yeri gösterir. Öğrenme veya
+              tamamlanma puanı değildir.
+            </p>
+          </>
+        )}
+      </div>
       <nav className="guide-contents" aria-label="Anlatım içeriği">
         <p className="small muted">
           Yaklaşık {guide.minutes} dk · Anlatım, etkileşim ve örneklerle çalışma
@@ -81,89 +153,120 @@ export function GuidedReading({ guide }: { guide: LessonGuide }) {
         <details>
           <summary>İçindekiler</summary>
           <div>
-            {guide.sections.map((section, i) => (
-              <button
-                className="text-button"
-                key={section.title}
-                onClick={() => moveToSection(`${prefix}-${i}`)}
-              >
-                {section.title}
-              </button>
-            ))}
+            {guide.sections.map(
+              (section, i) =>
+                (!guided || i === step) && (
+                  <button
+                    className="text-button"
+                    key={section.title}
+                    onClick={() => jump(i)}
+                  >
+                    {section.title}
+                  </button>
+                ),
+            )}
             <button
               className="text-button"
-              onClick={() => moveToSection(`${prefix}-examples`)}
+              onClick={() => jump(guide.sections.length)}
             >
               Çözümlü örnekler
             </button>
           </div>
         </details>
       </nav>
-      {guide.sections.map((section, i) => (
-        <section
-          className="guide-section"
-          key={section.title}
-          id={`${prefix}-${i}`}
-        >
-          <h2 tabIndex={-1}>{section.title}</h2>
-          {section.paragraphs.map((paragraph, j) => (
-            <p key={j}>{paragraph}</p>
-          ))}
-          {section.table && (
-            <div
-              className="guide-table"
-              role="region"
-              tabIndex={0}
-              aria-label={`${section.title} tablosu`}
+      {guide.sections.map(
+        (section, i) =>
+          (!guided || i === step) && (
+            <section
+              className="guide-section"
+              key={section.title}
+              id={`${prefix}-${i}`}
             >
-              <table>
-                <thead>
-                  <tr>
-                    {section.table.headers.map((header, j) => (
-                      <th scope="col" key={j}>
-                        {header}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {section.table.rows.map((row, j) => (
-                    <tr key={j}>
-                      {row.map((cell, k) => (
-                        <td key={k}>{cell}</td>
+              <h2 tabIndex={-1}>{section.title}</h2>
+              {section.paragraphs.map((paragraph, j) => (
+                <p key={j}>{paragraph}</p>
+              ))}
+              {section.table && (
+                <div
+                  className="guide-table"
+                  role="region"
+                  tabIndex={0}
+                  aria-label={`${section.title} tablosu`}
+                >
+                  <table>
+                    <thead>
+                      <tr>
+                        {section.table.headers.map((header, j) => (
+                          <th scope="col" key={j}>
+                            {header}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {section.table.rows.map((row, j) => (
+                        <tr key={j}>
+                          {row.map((cell, k) => (
+                            <td key={k}>{cell}</td>
+                          ))}
+                        </tr>
                       ))}
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          )}
-          {i === 1 && <VisualLab id={guide.id} />}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+              {i === 1 && <VisualLab id={guide.id} />}
+            </section>
+          ),
+      )}
+      {(!guided || step === guide.sections.length) && (
+        <section className="guide-examples" id={`${prefix}-examples`}>
+          <h2 tabIndex={-1}>Çözümlü örnekler</h2>
+          <p className="small muted">
+            Önce kendin düşün; gerekçeleri adım adım aç ve sonucu kontrol et.
+            Bunlar özgün öğretim örnekleridir.
+          </p>
+          {guide.examples.map((example) => (
+            <Example key={example.title} example={example} />
+          ))}
         </section>
-      ))}
-      <section className="guide-examples" id={`${prefix}-examples`}>
-        <h2 tabIndex={-1}>Çözümlü örnekler</h2>
-        <p className="small muted">
-          Önce kendin düşün; gerekçeleri adım adım aç ve sonucu kontrol et.
-          Bunlar özgün öğretim örnekleridir.
-        </p>
-        {guide.examples.map((example) => (
-          <Example key={example.title} example={example} />
-        ))}
-      </section>
-      <section className="guide-recall">
-        <h2>Anlatmadan önce hatırla</h2>
-        <p className="small muted">
-          Cevabı açmadan kendi cümlelerinle söyle. Puan veya ustalık kaydı
-          oluşturmaz.
-        </p>
-        {guide.recall.map((item) => (
-          <details key={item.prompt}>
-            <summary>{item.prompt}</summary>
-            <p>{item.answer}</p>
-          </details>
-        ))}
-      </section>
+      )}
+      {(!guided || step === guide.sections.length + 1) && (
+        <section className="guide-recall" id={`${prefix}-recall`}>
+          <h2 tabIndex={-1}>Anlatmadan önce hatırla</h2>
+          <p className="small muted">
+            Cevabı açmadan kendi cümlelerinle söyle. Puan veya ustalık kaydı
+            oluşturmaz.
+          </p>
+          {guide.recall.map((item) => (
+            <details key={item.prompt}>
+              <summary>{item.prompt}</summary>
+              <p>{item.answer}</p>
+            </details>
+          ))}
+        </section>
+      )}
+      {guided && (
+        <nav className="journey-actions" aria-label="Anlatım adımları">
+          <button
+            className="secondary"
+            disabled={step === 0}
+            onClick={() => setJourney({ step: step - 1 })}
+          >
+            Önceki bölüm
+          </button>
+          <span className="small muted">
+            {step + 1} / {stages}
+          </span>
+          <button
+            className="primary"
+            disabled={step === stages - 1}
+            onClick={() => setJourney({ step: step + 1 })}
+          >
+            Sonraki bölüm <ArrowRight size={17} />
+          </button>
+        </nav>
+      )}
     </>
   );
 }

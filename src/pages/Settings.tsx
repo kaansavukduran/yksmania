@@ -13,7 +13,7 @@ import { DateInput } from "../components/DateInput";
 import { parseBackup } from "../domain/storage";
 import { ResetProgress } from "../components/ResetProgress";
 import type { Settings as SettingsType } from "../domain/model";
-const VERSION = "0.8.0";
+const VERSION = "0.9.0";
 function NumericControl({
   label,
   value,
@@ -136,11 +136,9 @@ function Toggle({
   );
 }
 export function Settings({
-  openSources,
   updateReady,
   applyUpdate,
 }: {
-  openSources: () => void;
   updateReady: boolean;
   applyUpdate: () => void;
 }) {
@@ -324,9 +322,6 @@ export function Settings({
         </section>
         <section className="panel settings-panel">
           <h2>{t("data")}</h2>
-          <button className="secondary" onClick={openSources}>
-            Kaynak dosyalarını yönet
-          </button>
           <p className="small muted">{t("backupHelp")}</p>
           <div className="settings-buttons">
             <button

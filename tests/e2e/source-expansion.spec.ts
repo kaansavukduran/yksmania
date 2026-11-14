@@ -1,5 +1,6 @@
 import { test, expect, type Page } from "@playwright/test";
 async function nav(page: Page, name: string) {
+  await expect(page.locator(".sidebar")).toBeAttached();
   const menu = page.getByRole("button", { name: "Menüyü aç", exact: true });
   if (await menu.isVisible()) await menu.click();
   await page
@@ -91,10 +92,14 @@ test("reviewed Seljuk, shell distribution and paragraph lessons explain evidence
       .all())
       await expect(leaf.locator("svg.lucide")).toHaveCount(1);
   }
-  await page.goto("/#/topic?id=detail-233&mode=theory");
-  await expect(page.locator(".topic-study")).toContainText(
-    "Bu konuyu kaynağınla çalış",
+  await page.goto("/#/topic?id=detail-450&mode=theory");
+  await expect(page.locator(".study-title h1")).toHaveText(
+    "Sikloalkanlar ve izomerlik",
   );
+  await expect(page.locator(".topic-study")).toBeVisible();
+  await expect(
+    page.getByRole("button", { name: /PDF.*ekle|Kaynak dosyalarını yönet/ }),
+  ).toHaveCount(0);
   const padding = await page.locator(".topic-study").evaluate((panel) => {
     const box = panel.getBoundingClientRect(),
       heading = panel.querySelector("h2")!.getBoundingClientRect();

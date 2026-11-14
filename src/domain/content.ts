@@ -1,3 +1,6 @@
+import { lessonGuides } from "../learning/guides";
+import { turkishLanguageLessons } from "../learning/turkishLanguageLessons";
+import { factorizationLesson } from "../learning/factorizationLesson";
 import { sourceNarratives } from "../learning/narratives";
 import { visualLessons } from "../learning/lessons";
 import { introLessons } from "../learning/introLessons";
@@ -342,7 +345,7 @@ const q = (
   explanation: t(e),
   skill,
 });
-export const lessons: Lesson[] = [
+const baseLessons: Lesson[] = [
   {
     id: "rasyonel-sayilar",
     subjectId: "tyt-matematik",
@@ -813,7 +816,16 @@ export const lessons: Lesson[] = [
   ...mathLessons,
   ...algebraLessons,
   ...sourceExpansionLessons,
+  factorizationLesson,
   ...sourceNarratives,
 ];
+export const lessons: Lesson[] = baseLessons.map((lesson) => {
+  const expanded =
+    turkishLanguageLessons.find((item) => item.id === lesson.id) ?? lesson;
+  return {
+    ...expanded,
+    minutes: lessonGuides.get(expanded.id)?.minutes ?? expanded.minutes,
+  };
+});
 export const lessonById = (id: string) => lessons.find((l) => l.id === id);
 export const subjectById = (id: string) => subjects.find((s) => s.id === id);

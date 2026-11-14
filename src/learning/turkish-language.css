@@ -1,0 +1,95 @@
+.language-lab {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.language-lab select {
+  min-width: 0;
+  max-width: 100%;
+}
+.morph-pieces {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-block: 1.2rem;
+  transition: gap 0.3s ease;
+}
+.morph-pieces.is-joined {
+  gap: 0.1rem;
+}
+.morph-piece {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  max-width: 100%;
+  padding: 0.65em clamp(10px, 2vw, 18px);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--surface);
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+.morph-piece small {
+  display: block;
+  margin-top: 0.3em;
+  font-size: 0.72em;
+  color: var(--muted);
+}
+button.morph-piece[aria-pressed="true"] {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.morph-piece.kind-derive {
+  border-bottom: 3px solid var(--accent);
+}
+.morph-piece.kind-inflect {
+  border-bottom: 3px solid var(--plot-blue);
+}
+.morph-piece.kind-bridge {
+  border-bottom-style: dashed;
+}
+.language-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.7rem;
+  margin-block: 1rem;
+}
+.language-lab button {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.language-sentence {
+  font-weight: 600;
+}
+.language-result,
+.language-feedback {
+  padding: clamp(12px, 2vw, 20px);
+  margin-block: 1rem;
+  border-left: 3px solid var(--accent);
+  background: var(--surface);
+}
+.language-result h3 {
+  margin-top: 0;
+}
+.language-result > strong,
+.language-word {
+  font-size: 1.25em;
+  font-weight: 650;
+  overflow-wrap: anywhere;
+}
+.language-word {
+  display: block;
+  margin-block: 1rem;
+}
+@media (prefers-reduced-motion: reduce) {
+  .morph-pieces {
+    transition: none;
+  }
+}
+:root[data-motion="off"] .morph-pieces {
+  transition: none;
+}

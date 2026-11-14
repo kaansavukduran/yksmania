@@ -180,7 +180,7 @@ const messages: Record<string, string> = {
   export: "İlerlemeyi dışa aktar",
   restore: "Yedekten geri yükle",
   backupHelp:
-    "JSON yedeği ilerleme, notlar ve ayarları içerir. PDF dosyalarını ayrıca koru.",
+    "JSON yedeği kişisel ilerlemeni, deneme kayıtlarını, notlarını ve ayarlarını içerir. Ders içerikleri uygulamada hazırdır.",
   restoreConfirm:
     "Bu yedek mevcut ilerleme ve ayarların yerini alacak. Önce dışa aktarman önerilir. Devam edilsin mi?",
   backupInvalid: "Yedek doğrulanamadı. Mevcut verin korunuyor.",
@@ -206,10 +206,11 @@ const messages: Record<string, string> = {
   startOver: "Taslağı bırak ve yeni çalışma aç",
   draftConfirm:
     "Yarım kalan çalışma var. Bu taslak bırakılıp yeni çalışma açılsın mı?",
-  footer: "Fragaria Interactive · YKSMania 0.8.0 alpha",
+  footer: "Fragaria Interactive · YKSMania 0.9.0 alpha",
   scopeNote:
-    "İlk çalışan sürüm. Tam müfredat içeriği ve yerel paket testleri ayrıca tamamlanacak.",
+    "İçerikler kaynaklardan sırayla işleniyor; hazır anlatımlar ve soru setleri doğrudan uygulamada çalışır.",
   questions: "Sorular",
+  exams: "Sınavlar",
   cheatsheets: "Kopya Kağıtları",
   cheatsheetsIntro:
     "TYT veya AYT seç, dersini aç ve kopya kağıtlarını konu konu incele.",

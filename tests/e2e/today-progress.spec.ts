@@ -1,5 +1,6 @@
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
+import { initialState } from "../../src/domain/model";
 
 test.use({ locale: "tr-TR", timezoneId: "UTC" });
 test.beforeEach(async ({ page }) => {
@@ -10,6 +11,7 @@ test.beforeEach(async ({ page }) => {
   ).toBeVisible();
 });
 async function nav(page: Page, name: string) {
+  await expect(page.locator(".sidebar")).toBeAttached();
   const menu = page.getByRole("button", { name: "Menüyü aç", exact: true });
   if (await menu.isVisible()) await menu.click();
   await page
@@ -86,11 +88,9 @@ test("YKS-013 completed daily topics retain the actual four-of-five score offlin
     path: test.info().outputPath("today-progress-dark-mobile.png"),
   });
   await page.setViewportSize({ width: 1440, height: 1000 });
-  await page
-    .locator(".daily-study-plans")
-    .screenshot({
-      path: test.info().outputPath("today-progress-dark-desktop.png"),
-    });
+  await page.locator(".daily-study-plans").screenshot({
+    path: test.info().outputPath("today-progress-dark-desktop.png"),
+  });
   await page.evaluate(async () => {
     await navigator.serviceWorker.ready;
   });
@@ -171,7 +171,9 @@ test("YKS-013 existing question-only records show their score and allow explicit
   ).toBeLessThanOrEqual(321);
   const skip = page.locator(".skip-link");
   await expect(skip).not.toBeFocused();
-  expect(await skip.evaluate(element => element.getBoundingClientRect().bottom)).toBeLessThanOrEqual(0);
+  expect(
+    await skip.evaluate((element) => element.getBoundingClientRect().bottom),
+  ).toBeLessThanOrEqual(0);
 
   expect(
     (
@@ -200,7 +202,9 @@ test("YKS-013 existing question-only records show their score and allow explicit
   expect(bounds!.x + bounds!.width).toBeLessThanOrEqual(321);
   await page.keyboard.press("Enter");
   await expect(page.locator("#main-content")).toBeFocused();
-  expect(await skip.evaluate(element => element.getBoundingClientRect().bottom)).toBeLessThanOrEqual(0);
+  expect(
+    await skip.evaluate((element) => element.getBoundingClientRect().bottom),
+  ).toBeLessThanOrEqual(0);
   await row(page)
     .getByRole("button", { name: "Sonucu gör", exact: true })
     .click();
@@ -238,17 +242,41 @@ test("YKS-013 latest attempts show zero correctly and undo restores the earlier 
 test("YKS-013 external question work has no invented score and stays visible on a closed day", async ({
   page,
 }) => {
-  await card(page, "Soru planı")
-    .locator(".planned-topics")
-    .getByRole("button", { name: /Simyadan kimyaya/ })
-    .first()
-    .click();
-  await page
-    .getByRole("button", {
-      name: "Kaynağımdaki soruları çalıştım",
-      exact: true,
-    })
-    .click();
+  // Historical source-study records remain legible, but the removed external
+  // study workflow must not be recreated just to make this legacy record.
+  await page.evaluate(
+    (initial) =>
+      new Promise<void>((resolve, reject) => {
+        const req = indexedDB.open("yksmania");
+        req.onsuccess = () => {
+          const db = req.result,
+            tx = db.transaction("state", "readwrite"),
+            store = tx.objectStore("state"),
+            read = store.get("current");
+          read.onsuccess = () => {
+            const current = read.result ?? initial;
+            store.put(
+              {
+                ...current,
+                topicProgress: {
+                  ...current.topicProgress,
+                  "detail-139": { questions: "2026-11-14" },
+                },
+              },
+              "current",
+            );
+          };
+          tx.oncomplete = () => {
+            db.close();
+            resolve();
+          };
+          tx.onerror = () => reject(tx.error);
+        };
+        req.onerror = () => reject(req.error);
+      }),
+    initialState(),
+  );
+  await page.reload();
   await nav(page, "Takvim");
   await page.getByRole("button", { name: "Cmt", exact: true }).click();
   await expect(page.locator(".save-status")).toContainText(

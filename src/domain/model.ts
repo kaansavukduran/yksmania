@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { examDraftSchema, examSessionSchema } from "./examModel";
 import { focusTimerSchema, initialFocusTimer } from "./focusTimer";
 export type Locale = "tr";
 export type Text = { tr: string };
@@ -97,49 +98,65 @@ const theoryReviewCompletionSchema = z.object({
 export type TheoryReviewCompletion = z.infer<
   typeof theoryReviewCompletionSchema
 >;
-export const stateSchema = z.object({
-  version: z.literal(1),
-  settings: settingsSchema,
-  focusTimer: focusTimerSchema.default(initialFocusTimer),
-  sessions: z.array(sessionSchema).max(100000),
-  reviews: z.array(reviewSchema).max(300000),
-  theoryReviewCompletions: z
-    .array(theoryReviewCompletionSchema)
-    .max(300000)
-    .default([]),
-  draft: draftSchema.nullable(),
-  notes: z.record(z.string(), z.string().max(20000)),
-  unlocked: z.array(id).max(10000),
-  explorations: z
-    .record(
-      z.string().max(100),
-      z.record(
-        z.string().max(60),
-        z.union([
-          z.string().max(128),
-          z.number().min(-1000000).max(1000000),
-          z.boolean(),
-        ]),
-      ),
+export const stateSchema = z
+  .object({
+    version: z.literal(1),
+    settings: settingsSchema,
+    focusTimer: focusTimerSchema.default(initialFocusTimer),
+    examDraft: examDraftSchema.nullable().default(null),
+    examSessions: z
+      .array(examSessionSchema)
+      .max(10000)
+      .refine((rows) => new Set(rows.map((row) => row.id)).size === rows.length)
+      .default([]),
+    sessions: z.array(sessionSchema).max(100000),
+    reviews: z.array(reviewSchema).max(300000),
+    theoryReviewCompletions: z
+      .array(theoryReviewCompletionSchema)
+      .max(300000)
+      .default([]),
+    draft: draftSchema.nullable(),
+    notes: z.record(z.string(), z.string().max(20000)),
+    unlocked: z.array(id).max(10000),
+    explorations: z
+      .record(
+        z.string().max(100),
+        z.record(
+          z.string().max(60),
+          z.union([
+            z.string().max(128),
+            z.number().min(-1000000).max(1000000),
+            z.boolean(),
+          ]),
+        ),
+      )
+      .default({}),
+    readingPages: z
+      .record(z.string(), z.number().int().min(1).max(100000))
+      .default({}),
+    topicProgress: z
+      .record(
+        z.string(),
+        z.object({
+          theory: date.optional(),
+          questions: date.optional(),
+        }),
+      )
+      .default({}),
+  })
+  .superRefine((state, context) => {
+    if (
+      state.examDraft &&
+      state.examSessions.some((session) => session.id === state.examDraft!.id)
     )
-    .default({}),
-  readingPages: z
-    .record(z.string(), z.number().int().min(1).max(100000))
-    .default({}),
-  topicProgress: z
-    .record(
-      z.string(),
-      z.object({
-        theory: date.optional(),
-        questions: date.optional(),
-      }),
-    )
-    .default({}),
-});
+      context.addIssue({ code: "custom", message: "EXAM_ALREADY_COMPLETED" });
+  });
 export type AppState = z.infer<typeof stateSchema>;
 export const initialState = (): AppState => ({
   version: 1,
   focusTimer: initialFocusTimer(),
+  examDraft: null,
+  examSessions: [],
   settings: {
     locale: "tr",
     theme: "dark",

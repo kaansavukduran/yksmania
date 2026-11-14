@@ -4,6 +4,7 @@ import { initialState } from "../../src/domain/model";
 import { samplePdf } from "./helpers/pdf";
 test.use({ locale: "tr-TR", hasTouch: true });
 async function nav(page: Page, name: string) {
+  await expect(page.locator(".sidebar")).toBeAttached();
   const menu = page.getByRole("button", { name: "Menüyü aç", exact: true });
   if (await menu.isVisible()) await menu.click();
   await page
@@ -225,12 +226,16 @@ test("hourglass settings remain usable with touch, large text and reduced motion
   ).toEqual([]);
 });
 
-test("progress reset is cancellable and atomic, preserves imported PDF/notes/settings, and stays reset offline", async ({
+test("progress reset is cancellable and atomic, preserves legacy files and native sheet notes/settings, and stays reset offline", async ({
   page,
   context,
 }) => {
   const seed = initialState();
-  seed.notes = { personal: "Korunacak konu notum" };
+  seed.notes = {
+    personal: "Korunacak konu notum",
+    "legacy-reset-pdf": "Eski PDF notum",
+  };
+  seed.readingPages = { "legacy-reset-pdf": 2 };
   seed.topicProgress["detail-139"] = { theory: "2026-11-14" };
   seed.settings.theme = "light";
   seed.settings.blockedWeekdays = [0];
@@ -243,27 +248,49 @@ test("progress reset is cancellable and atomic, preserves imported PDF/notes/set
     buffer: Buffer.from(JSON.stringify(seed)),
   });
   await expect(page.locator(".toast")).toContainText("geri yüklendi");
-  await rational(page);
+  // Existing user files remain backward-compatible storage, not a learning upload workflow.
+  await page.evaluate(
+    (bytes) =>
+      new Promise<void>((resolve, reject) => {
+        const req = indexedDB.open("yksmania");
+        req.onsuccess = () => {
+          const db = req.result,
+            tx = db.transaction("documents", "readwrite");
+          tx.objectStore("documents").put({
+            id: "legacy-reset-pdf",
+            name: "legacy.pdf",
+            subjectId: "tyt-matematik",
+            size: bytes.length,
+            type: "application/pdf",
+            addedAt: "2026-11-14",
+            blob: new Blob([new Uint8Array(bytes)], {
+              type: "application/pdf",
+            }),
+          });
+          tx.oncomplete = () => {
+            db.close();
+            resolve();
+          };
+          tx.onerror = () => reject(tx.error);
+        };
+        req.onerror = () => reject(req.error);
+      }),
+    [...samplePdf(true)],
+  );
+  await nav(page, "Kopya Kağıtları");
   await page
-    .getByRole("button", { name: "Kopya Kağıdını Görüntüle", exact: true })
+    .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
+    .fill("Rasyonel Sayılar");
+  await page
+    .locator(".cheatsheet-topic")
+    .filter({ hasText: "Rasyonel Sayılar" })
     .click();
-  const sheet = page.locator(".topic-cheatsheet");
-  await sheet.getByLabel("Bu konunun kopya kağıdı PDF’si").setInputFiles({
-    name: "notes.pdf",
-    mimeType: "application/pdf",
-    buffer: samplePdf(true),
-  });
-  await expect(sheet.locator("canvas")).toBeVisible();
-  await sheet
-    .getByRole("button", { name: "Sonraki sayfa", exact: true })
-    .click();
-  await sheet
+  await expect(page.locator(".cheat-reader")).toBeVisible();
+  await page
     .getByRole("textbox", { name: "Notun", exact: true })
-    .fill("PDF notum korunmalı");
+    .fill("Kağıt notum korunmalı");
   await saved(page);
-  await page
-    .getByRole("button", { name: "Kopya Kağıdını Görüntüle", exact: true })
-    .click();
+  await rational(page);
   await page.locator(".lesson-article > .primary").click();
   for (const index of [1, 2, 0, 1, 1]) {
     await page.locator(".answer").nth(index).click();
@@ -332,15 +359,88 @@ test("progress reset is cancellable and atomic, preserves imported PDF/notes/set
     page.getByRole("region", { name: "Konu planı", exact: true }),
   ).toContainText("0/479");
   await expect(page.locator(".stat-number").first()).toHaveText("0");
-  await rational(page);
+  await nav(page, "Kopya Kağıtları");
   await page
-    .getByRole("button", { name: "Kopya Kağıdını Görüntüle", exact: true })
+    .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
+    .fill("Rasyonel Sayılar");
+  await page
+    .locator(".cheatsheet-topic")
+    .filter({ hasText: "Rasyonel Sayılar" })
     .click();
-  await expect(sheet.locator("canvas")).toBeVisible();
   await expect(
-    sheet.getByRole("spinbutton", { name: "PDF sayfası", exact: true }),
-  ).toHaveValue("2");
+    page.getByRole("textbox", { name: "Notun", exact: true }),
+  ).toHaveValue("Kağıt notum korunmalı");
+  const legacyBytes = await page.evaluate(
+    () =>
+      new Promise<number[]>((resolve, reject) => {
+        const req = indexedDB.open("yksmania");
+        req.onsuccess = () => {
+          const db = req.result,
+            read = db
+              .transaction("documents")
+              .objectStore("documents")
+              .get("legacy-reset-pdf");
+          read.onsuccess = async () => {
+            resolve([...new Uint8Array(await read.result.blob.arrayBuffer())]);
+            db.close();
+          };
+          read.onerror = () => reject(read.error);
+        };
+        req.onerror = () => reject(req.error);
+      }),
+  );
+  expect(legacyBytes).toEqual([...samplePdf(true)]);
+});
+
+test("reset confirmation keeps large-text copy and both actions inside the dialog at 320px and landscape", async ({
+  page,
+}) => {
+  await page.goto("/");
   await expect(
-    sheet.getByRole("textbox", { name: "Notun", exact: true }),
-  ).toHaveValue("PDF notum korunmalı");
+    page.getByRole("heading", { name: "Bugün", exact: true }),
+  ).toBeVisible();
+  await nav(page, "Ayarlar");
+  await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
+  await page.getByLabel("Yalnızca yazı boyutu %", { exact: true }).fill("150");
+  await page.getByLabel("Tema", { exact: true }).selectOption("light");
+  await saved(page);
+  const before = await stored(page);
+  for (const size of [
+    { width: 320, height: 844 },
+    { width: 844, height: 390 },
+  ]) {
+    await page.setViewportSize(size);
+    await page
+      .getByRole("button", { name: "İlerlemeyi sıfırla", exact: true })
+      .click();
+    const modal = page.getByRole("dialog");
+    await expect(modal).toBeVisible();
+    const fit = await modal.evaluate((e) => {
+      const box = e.getBoundingClientRect();
+      return {
+        left: box.left,
+        right: box.right,
+        viewport: innerWidth,
+        scroll: e.scrollWidth,
+        client: e.clientWidth,
+        rootFont: document.documentElement.style.fontSize,
+        textScale:
+          document.documentElement.style.getPropertyValue("--text-scale"),
+      };
+    });
+    expect(fit.left).toBeGreaterThanOrEqual(0);
+    expect(fit.right).toBeLessThanOrEqual(fit.viewport);
+    expect(fit.scroll).toBeLessThanOrEqual(fit.client + 1);
+    expect(fit.rootFont).toBe("32px");
+    expect(fit.textScale).toBe("1.5");
+    await expect(
+      modal.getByRole("button", {
+        name: "Evet, ilerlemeyi sıfırla",
+        exact: true,
+      }),
+    ).toBeEnabled();
+    await modal.getByRole("button", { name: "Vazgeç", exact: true }).tap();
+    await expect(modal).not.toBeVisible();
+    expect(await stored(page)).toEqual(before);
+  }
 });

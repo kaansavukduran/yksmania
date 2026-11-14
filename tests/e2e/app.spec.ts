@@ -1,4 +1,3 @@
-import { samplePdf } from "./helpers/pdf";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 async function open(page: Page) {
@@ -8,6 +7,7 @@ async function open(page: Page) {
   ).toBeVisible();
 }
 async function nav(page: Page, name: string) {
+  await expect(page.locator(".sidebar")).toBeAttached();
   const menu = page.getByRole("button", { name: "Menüyü aç", exact: true });
   if (await menu.isVisible()) await menu.click();
   await page
@@ -15,17 +15,30 @@ async function nav(page: Page, name: string) {
     .getByRole("button", { name, exact: true })
     .click();
 }
-async function openSources(page: Page) {
-  await nav(page, "Ayarlar");
+async function openSheet(page: Page, title: string) {
+  await nav(page, "Kopya Kağıtları");
   await page
-    .getByRole("button", { name: "Kaynak dosyalarını yönet", exact: true })
+    .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
+    .fill(title);
+  await page
+    .locator(".cheatsheet-topic")
+    .filter({ hasText: title })
+    .first()
     .click();
-  // Settings also has a JSON picker for progress backups. Wait for the source
-  // page before addressing its catalogue picker, otherwise a fast runner can
-  // upload the catalogue to the old settings input during route replacement.
-  await expect(
-    page.getByRole("heading", { name: "Kaynak dosyaları", exact: true }),
-  ).toBeVisible();
+  await expect(page.locator(".cheat-reader")).toBeVisible();
+}
+async function offlineReady(page: Page) {
+  await page.evaluate(async () => {
+    await navigator.serviceWorker.ready;
+    if (!navigator.serviceWorker.controller)
+      await new Promise<void>((resolve) =>
+        navigator.serviceWorker.addEventListener(
+          "controllerchange",
+          () => resolve(),
+          { once: true },
+        ),
+      );
+  });
 }
 async function start(page: Page) {
   await nav(page, "Konu Anlatımı");
@@ -112,48 +125,34 @@ test("turning off gamification hides world rewards and keeps learning usable", a
   await expect(page.locator(".answer")).toHaveCount(3);
 });
 
-test("local PDF opens for the first time offline and retains notes without learning credit", async ({
+test("built-in cheatsheet first opens offline with retained notes and no learning credit or material upload", async ({
   page,
   context,
 }) => {
   await open(page);
-  await page.evaluate(async () => {
-    await navigator.serviceWorker.ready;
-  });
-  await openSources(page);
-  await page.locator('input[accept="application/pdf,.pdf"]').setInputFiles({
-    name: "local-test.pdf",
-    mimeType: "application/pdf",
-    buffer: samplePdf(),
-  });
-  await expect(
-    page.getByRole("button", { name: /local-test.pdf/ }).first(),
-  ).toBeVisible();
+  await offlineReady(page);
   await context.setOffline(true);
-  await page
-    .getByRole("button", { name: /local-test.pdf/ })
-    .first()
-    .click();
-  await expect(page.locator("canvas")).toBeVisible();
-  await page.getByText("Sayfanın metni", { exact: true }).click();
-  await expect(page.locator(".pdf-text")).toContainText(
-    "Local learning material",
-  );
+  await openSheet(page, "Rasyonel Sayılar");
+  await expect(page.locator(".cheat-reader")).toContainText(/payda/i);
+  await expect(page.locator('input[accept*="pdf"]')).toHaveCount(0);
   await page
     .getByRole("textbox", { name: "Notun", exact: true })
-    .fill("PDF notum.");
+    .fill("Hazır kağıt notum kaybolmasın.");
   await expect(page.locator(".save-status")).toContainText(
     "Bu cihazda kaydedildi",
   );
   await page.reload();
-  await page
-    .getByRole("button", { name: /local-test.pdf/ })
-    .first()
-    .click();
+  await openSheet(page, "Rasyonel Sayılar");
   await expect(
     page.getByRole("textbox", { name: "Notun", exact: true }),
-  ).toHaveValue("PDF notum.");
+  ).toHaveValue("Hazır kağıt notum kaybolmasın.");
+  await nav(page, "Bugün");
+  await expect(page.locator(".stat-number").first()).toHaveText("0");
+  await expect(
+    page.getByRole("region", { name: "Konu planı", exact: true }),
+  ).toContainText("0/479");
 });
+
 test("a failed terminal save retains the answer draft and never celebrates false success", async ({
   page,
 }) => {
@@ -397,8 +396,11 @@ test("theory and questions have separate subject navigation and preserve the com
   await open(page);
   const nav = page.locator(".sidebar nav button");
   const labels = await nav.allTextContents();
-  expect(labels).not.toContain("Kopya Kağıtları");
-  expect(labels.indexOf("Sorular")).toBe(labels.indexOf("Konu Anlatımı") + 1);
+  expect(labels.indexOf("Kopya Kağıtları")).toBe(
+    labels.indexOf("Konu Anlatımı") + 1,
+  );
+  expect(labels.indexOf("Sorular")).toBe(labels.indexOf("Kopya Kağıtları") + 1);
+  expect(labels.indexOf("Sınavlar")).toBe(labels.indexOf("Sorular") + 1);
   await page
     .getByRole("button", { name: "Konu Anlatımı", exact: true })
     .first()
@@ -428,74 +430,32 @@ test("theory and questions have separate subject navigation and preserve the com
   );
 });
 
-test("catalogue and batch PDFs merge duplicate bytes, report failures and open in the right subject offline", async ({
+test("every main learning route is ready to use without PDF or catalogue import controls", async ({
   page,
-  context,
 }) => {
   await open(page);
-  await page.evaluate(async () => {
-    await navigator.serviceWorker.ready;
-  });
-  await openSources(page);
-  const c = {
-    format: "yksmania-source-catalogue",
-    version: 1,
-    name: "Test archive",
-    createdAt: "2026-11-13T00:00:00Z",
-    entries: [
-      {
-        id: "test-math",
-        name: "math.pdf",
-        subjectIds: ["tyt-matematik"],
-        kind: "theory",
-        provider: "ogm",
-        bytes: samplePdf().length,
-      },
-      {
-        id: "test-physics",
-        name: "physics.pdf",
-        subjectIds: ["tyt-fizik"],
-        kind: "questions",
-        provider: "mebi",
-        bytes: samplePdf().length,
-      },
-    ],
-  };
-  await page.locator('input[accept="application/json,.json"]').setInputFiles({
-    name: "catalogue.json",
-    mimeType: "application/json",
-    buffer: Buffer.from(JSON.stringify(c)),
-  });
-  await expect(page.locator(".source-status")).toContainText("Test archive");
-  await page.locator('input[accept="application/pdf,.pdf"]').setInputFiles([
-    { name: "math.pdf", mimeType: "application/pdf", buffer: samplePdf() },
-    { name: "physics.pdf", mimeType: "application/pdf", buffer: samplePdf() },
-    {
-      name: "broken.pdf",
-      mimeType: "application/pdf",
-      buffer: Buffer.from("broken"),
-    },
-  ]);
-  await expect(page.locator(".import-report")).toContainText(
-    "1 yeni dosya eklendi",
-  );
-  await expect(page.locator(".import-report")).toContainText(
-    "1 aynı içerik birleştirildi",
-  );
-  await expect(page.locator(".import-report")).toContainText(
-    "1 eklenemeyen dosya",
-  );
-  await expect(page.locator(".document-row")).toHaveCount(1);
-  await page.reload();
-  await page.getByRole("button", { name: "Sorular", exact: true }).click();
-  await page.getByRole("button", { name: /Fizik.*20/ }).click();
-  await expect(page.locator(".source-rows")).toContainText("physics.pdf");
-  await context.setOffline(true);
-  await page.getByRole("button", { name: "PDF’yi aç", exact: true }).click();
-  await expect(page.locator("canvas")).toBeVisible();
-  await page.getByRole("button", { name: "Kapat", exact: true }).click();
-  await page.getByRole("button", { name: "Bugün", exact: true }).click();
-  await expect(page.locator(".stat-number").first()).toHaveText("0");
+  for (const name of [
+    "Konu Anlatımı",
+    "Kopya Kağıtları",
+    "Sorular",
+    "Sınavlar",
+    "Ayarlar",
+  ]) {
+    await nav(page, name);
+    await expect(page.locator('input[accept*="pdf"]')).toHaveCount(0);
+    await expect(
+      page.getByRole("button", {
+        name: /Kaynak dosyalarını yönet|PDF.*ekle|kaynak kataloğu ekle/,
+      }),
+    ).toHaveCount(0);
+  }
+  for (const route of ["sources", "library"]) {
+    await page.goto(`/#/${route}`);
+    await expect(
+      page.getByRole("heading", { name: "Konu Anlatımı", exact: true }),
+    ).toBeVisible();
+    await expect(page.locator('input[accept*="pdf"]')).toHaveCount(0);
+  }
 });
 
 test("v1 data opens in the upgraded database without losing a draft or PDF", async ({
@@ -601,8 +561,37 @@ test("v1 data opens in the upgraded database without losing a draft or PDF", asy
   await expect(
     page.getByRole("textbox", { name: "Notun", exact: true }),
   ).toHaveValue("Eski sürüm notu");
-  await openSources(page);
-  await expect(page.locator(".document-row")).toContainText("legacy.pdf");
+  const legacy = await page.evaluate(
+    () =>
+      new Promise<any>((resolve, reject) => {
+        const req = indexedDB.open("yksmania");
+        req.onsuccess = () => {
+          const db = req.result,
+            tx = db.transaction(["documents", "state"]),
+            r = tx.objectStore("documents").get("legacy-pdf"),
+            state = tx.objectStore("state").get("current");
+          tx.oncomplete = async () => {
+            resolve({
+              name: r.result.name,
+              bytes: await r.result.blob.text(),
+              note: state.result.notes["legacy-pdf"],
+            });
+            db.close();
+          };
+          tx.onerror = () => reject(tx.error);
+        };
+        req.onerror = () => reject(req.error);
+      }),
+  );
+  expect(legacy).toEqual({
+    name: "legacy.pdf",
+    bytes: "%PDF-1.4",
+    note: "Eski PDF notu",
+  });
+  await nav(page, "Ayarlar");
+  await expect(
+    page.getByRole("button", { name: "Kaynak dosyalarını yönet", exact: true }),
+  ).toHaveCount(0);
 });
 
 async function openVisualLesson(page: Page, subject: RegExp, lesson: RegExp) {
@@ -856,43 +845,41 @@ test("new visual flows have no serious or critical axe violations", async ({
   }
 });
 
-test("PDF page navigation retains its last valid page after offline reload", async ({
+test("built-in cheatsheet notes belong to their topic and stay independent after offline reload", async ({
   page,
   context,
 }) => {
   await open(page);
-  await page.evaluate(async () => {
-    await navigator.serviceWorker.ready;
-  });
-  await openSources(page);
-  await page.locator('input[accept="application/pdf,.pdf"]').setInputFiles({
-    name: "two-pages.pdf",
-    mimeType: "application/pdf",
-    buffer: samplePdf(true),
-  });
-  await page.locator(".document-open").click();
-  await expect(page.locator("canvas")).toBeVisible();
+  await offlineReady(page);
+  await openSheet(page, "Hücre Organelleri");
   await page
-    .getByRole("spinbutton", { name: "PDF sayfası", exact: true })
-    .fill("2");
-  await page.getByRole("button", { name: "Git", exact: true }).click();
-  await page.getByText("Sayfanın metni", { exact: true }).click();
-  await expect(page.locator(".pdf-text")).toContainText("Second page material");
+    .getByRole("textbox", { name: "Notun", exact: true })
+    .fill("Çekirdek ve ribozom ayrımı.");
+  await expect(page.locator(".save-status")).toContainText(
+    "Bu cihazda kaydedildi",
+  );
+  await openSheet(page, "Rasyonel Sayılar");
+  await expect(
+    page.getByRole("textbox", { name: "Notun", exact: true }),
+  ).toHaveValue("");
   await page
-    .getByRole("spinbutton", { name: "PDF sayfası", exact: true })
-    .fill("9");
-  await page.getByRole("button", { name: "Git", exact: true }).click();
-  await expect(page.getByRole("alert")).toContainText("1–2");
+    .getByRole("textbox", { name: "Notun", exact: true })
+    .fill("Payda sıfır olmaz.");
   await expect(page.locator(".save-status")).toContainText(
     "Bu cihazda kaydedildi",
   );
   await context.setOffline(true);
   await page.reload();
-  await page.locator(".document-open").click();
+  await openSheet(page, "Hücre Organelleri");
   await expect(
-    page.getByRole("spinbutton", { name: "PDF sayfası", exact: true }),
-  ).toHaveValue("2");
+    page.getByRole("textbox", { name: "Notun", exact: true }),
+  ).toHaveValue("Çekirdek ve ribozom ayrımı.");
+  await openSheet(page, "Rasyonel Sayılar");
+  await expect(
+    page.getByRole("textbox", { name: "Notun", exact: true }),
+  ).toHaveValue("Payda sıfır olmaz.");
 });
+
 test("pixel atlas keeps all 32 planted-foot anchors; pointer and click change poses without actor drift", async ({
   page,
 }) => {
@@ -1190,156 +1177,31 @@ test("all four new AYT lessons first open offline at 320px with large Turkish co
   expect(discardedDrafts).toBe(3);
 });
 
-test("YKS-008 legacy cheatsheet links keep PDF notes and question drafts offline", async ({
+test("YKS-008 separate native cheatsheets keep a saved question draft and notes offline", async ({
   page,
   context,
 }) => {
   await open(page);
-  await page.evaluate(async () => {
-    await navigator.serviceWorker.ready;
-  });
+  await offlineReady(page);
   await start(page);
   await page.locator(".answer").nth(1).click();
   await page
     .getByRole("textbox", { name: "Notun", exact: true })
-    .fill("Soru taslağım korunmalı.");
-  await openSources(page);
-  const catalogue = {
-    format: "yksmania-source-catalogue",
-    version: 1,
-    name: "Ayrılmış kaynaklar",
-    createdAt: "2026-11-13T00:00:00Z",
-    entries: [
-      {
-        id: "test-cell-sheet",
-        name: "cell-sheet.pdf",
-        subjectIds: ["tyt-biyoloji"],
-        kind: "cheatsheet",
-        provider: "aurelia",
-        bytes: samplePdf().length,
-        topicIds: ["detail-11"],
-      },
-      {
-        id: "test-dna-sheet",
-        name: "dna-sheet.pdf",
-        subjectIds: ["tyt-biyoloji"],
-        kind: "cheatsheet",
-        provider: "aurelia",
-        bytes: 100,
-        topicIds: ["detail-10"],
-      },
-      {
-        id: "test-mixed-biology",
-        name: "biology.pdf",
-        subjectIds: ["tyt-biyoloji"],
-        kind: "mixed",
-        provider: "mebi",
-        bytes: samplePdf(true).length,
-      },
-      {
-        id: "test-other-subject",
-        name: "math-sheet.pdf",
-        subjectIds: ["tyt-matematik"],
-        kind: "cheatsheet",
-        provider: "aurelia",
-        bytes: 100,
-      },
-    ],
-  };
-  await page.locator('input[accept="application/json,.json"]').setInputFiles({
-    name: "catalogue.json",
-    mimeType: "application/json",
-    buffer: Buffer.from(JSON.stringify(catalogue)),
-  });
-  await expect(page.locator(".source-status")).toContainText(
-    "Ayrılmış kaynaklar",
+    .fill("Soru taslağı korunmalı.");
+  await expect(page.locator(".save-status")).toContainText(
+    "Bu cihazda kaydedildi",
   );
-  await page.locator('input[accept="application/pdf,.pdf"]').setInputFiles([
-    {
-      name: "cell-sheet.pdf",
-      mimeType: "application/pdf",
-      buffer: samplePdf(),
-    },
-    {
-      name: "biology.pdf",
-      mimeType: "application/pdf",
-      buffer: samplePdf(true),
-    },
-  ]);
-  await expect(page.locator(".import-report")).toContainText(
-    "2 yeni dosya eklendi",
-  );
-  for (const route of ["Konu Anlatımı", "Sorular"]) {
-    await page
-      .locator(".sidebar")
-      .getByRole("button", { name: route, exact: true })
-      .click();
-    const subject = page.getByRole("button", { name: /Biyoloji.*18/ });
-    if ((await subject.getAttribute("aria-expanded")) !== "true")
-      await subject.click();
-    await expect(page.locator(".source-rows")).toContainText("biology.pdf");
-    await expect(page.locator("main")).not.toContainText("cell-sheet.pdf");
-    await expect(page.locator("main")).not.toContainText("dna-sheet.pdf");
-    await expect(
-      page.getByText("Kopya kâğıdı alt başlıkları", { exact: false }),
-    ).toHaveCount(0);
-  }
-  await page.goto("/#/cheatsheets");
-  await expect(
-    page.locator('.sidebar nav button[aria-current="page"]'),
-  ).toHaveText("Konu Anlatımı");
-  await page.getByRole("button", { name: /Biyoloji.*konu başlığı/ }).click();
-  await page
-    .getByRole("button", {
-      name: "Dersteki tüm kopya kağıdı PDF’leri",
-      exact: true,
-    })
-    .click();
-  await expect(page.locator(".source-rows")).toContainText("cell-sheet.pdf");
-  await expect(page.locator(".source-rows")).toContainText("dna-sheet.pdf");
-  await expect(page.locator("main")).not.toContainText("biology.pdf");
-  await expect(page.locator("main")).not.toContainText("math-sheet.pdf");
-  await page
-    .getByRole("button", { name: "Hücre Organelleri", exact: true })
-    .click();
-  await expect(page.locator(".source-rows li")).toHaveCount(1);
-  await expect(page.locator(".source-rows")).toContainText("cell-sheet.pdf");
-  await context.setOffline(true);
-  await page.getByRole("button", { name: "PDF’yi aç", exact: true }).click();
-  await expect(page.locator("canvas")).toBeVisible();
+  await openSheet(page, "Hücre Organelleri");
+  await expect(page.locator(".cheat-reader")).toContainText(/ribozom/i);
   await page
     .getByRole("textbox", { name: "Notun", exact: true })
-    .fill("Hücre kopya kağıdı notum.");
-  await page.getByRole("button", { name: "Kapat", exact: true }).click();
-  await expect(
-    page.getByText("Bu cihazda kaydedildi", { exact: true }),
-  ).toBeVisible();
+    .fill("Kağıt notu ayrı kalmalı.");
+  await expect(page.locator(".save-status")).toContainText(
+    "Bu cihazda kaydedildi",
+  );
+  await context.setOffline(true);
   await page.reload();
-  await expect(
-    page.getByRole("heading", { name: "Kopya Kağıtları", exact: true }),
-  ).toBeVisible();
-  await page.getByRole("button", { name: /Biyoloji.*konu başlığı/ }).click();
-  await page
-    .getByRole("button", { name: "Hücre Organelleri", exact: true })
-    .click();
-  await page.getByRole("button", { name: "PDF’yi aç", exact: true }).click();
-  await expect(page.locator("canvas")).toBeVisible();
-  await expect(
-    page.getByRole("textbox", { name: "Notun", exact: true }),
-  ).toHaveValue("Hücre kopya kağıdı notum.");
-  await page.getByRole("button", { name: "Kapat", exact: true }).click();
-  await page
-    .getByRole("button", { name: "Nükleik Asitler DNA ve RNA", exact: true })
-    .click();
-  await expect(page.locator(".source-rows")).toContainText("dna-sheet.pdf");
-  await expect(
-    page.getByRole("button", { name: "PDF’yi aç", exact: true }),
-  ).toHaveCount(0);
-  await expect(
-    page.getByRole("link", { name: "Drive’da aç (internet)", exact: true }),
-  ).toBeVisible();
-  await page.getByRole("button", { name: "Bugün", exact: true }).click();
-  await expect(page.locator(".stat-number").first()).toHaveText("0");
+  await nav(page, "Bugün");
   await page
     .getByRole("button", { name: "Kaldığın yerden devam et", exact: true })
     .click();
@@ -1349,108 +1211,53 @@ test("YKS-008 legacy cheatsheet links keep PDF notes and question drafts offline
   );
   await expect(
     page.getByRole("textbox", { name: "Notun", exact: true }),
-  ).toHaveValue("Soru taslağım korunmalı.");
+  ).toHaveValue("Soru taslağı korunmalı.");
+  await openSheet(page, "Hücre Organelleri");
+  await expect(
+    page.getByRole("textbox", { name: "Notun", exact: true }),
+  ).toHaveValue("Kağıt notu ayrı kalmalı.");
 });
 
-test("YKS-008 cheatsheet topic search and manual PDFs remain usable at narrow scale without clipping", async ({
+test("YKS-008 built-in sheet search and notes remain usable at 320px and large independent scales offline", async ({
   page,
   context,
 }) => {
   await open(page);
-  await page.evaluate(async () => {
-    await navigator.serviceWorker.ready;
-  });
-  await openSources(page);
-  await page
-    .locator(".import-options select")
-    .nth(0)
-    .selectOption("tyt-biyoloji");
-  await page
-    .locator(".import-options select")
-    .nth(1)
-    .selectOption("cheatsheet");
-  await page.locator('input[accept="application/pdf,.pdf"]').setInputFiles({
-    name: "Hücre Organelleri - Kopya Kağıdı.pdf",
-    mimeType: "application/pdf",
-    buffer: samplePdf(),
-  });
-  await expect(page.locator(".import-report")).toContainText(
-    "1 yeni dosya eklendi",
-  );
-  await context.setOffline(true);
-  await page.getByRole("button", { name: "Ayarlar", exact: true }).click();
+  await offlineReady(page);
+  await nav(page, "Ayarlar");
   await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
   await page.getByLabel("Yalnızca yazı boyutu %", { exact: true }).fill("150");
-  await page.getByRole("switch", { name: /Aion animasyonu/ }).uncheck();
   await page.setViewportSize({ width: 320, height: 844 });
-  await page.getByRole("button", { name: "Menüyü aç", exact: true }).click();
-  await page.goto("/#/cheatsheets");
-  await page
-    .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
-    .fill("hücre organelleri");
-  await expect(page.locator(".subject-panel")).toHaveCount(1);
-  await page
-    .getByRole("button", { name: "Hücre Organelleri", exact: true })
-    .click();
-  await expect(page.locator(".source-rows")).toContainText(
-    "Hücre Organelleri - Kopya Kağıdı.pdf",
-  );
-  expect(
-    await page.evaluate(() => document.documentElement.scrollWidth),
-  ).toBeLessThanOrEqual(321);
   await context.setOffline(true);
-  await page.getByRole("button", { name: "PDF’yi aç", exact: true }).click();
-  await expect(page.locator("canvas")).toBeVisible();
-  await page.getByRole("button", { name: "Kapat", exact: true }).click();
-  const violations = (
-    await new AxeBuilder({ page }).include("main").analyze()
-  ).violations.filter((v) => v.impact === "serious" || v.impact === "critical");
-  expect(violations).toEqual([]);
-  await page.getByRole("button", { name: /Biyoloji.*konu başlığı/ }).click();
-  await expect(
-    page.getByRole("button", { name: "Hücre Organelleri", exact: true }),
-  ).toHaveCount(0);
+  await openSheet(page, "Hücre Organelleri");
+  await expect(page.locator(".cheat-reader")).toContainText(/ribozom/i);
   await page
-    .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
-    .fill("olmayan-konu");
-  await expect(page.locator(".subject-panel")).toHaveCount(0);
-  await page
-    .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
-    .fill("");
-  await page
-    .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
-    .fill("asit");
-  await expect(page.locator(".subject-panel")).toHaveCount(3);
-  await page
-    .getByRole("button", {
-      name: "Dersteki tüm kopya kağıdı PDF’leri",
-      exact: true,
-    })
-    .first()
-    .click();
-  await expect(page.locator(".source-browser")).toHaveCount(1);
-  await expect(
-    page.locator('.subject-header[aria-expanded="true"]'),
-  ).toHaveCount(1);
-  await page
-    .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
-    .fill("");
-  await page.getByRole("button", { name: "AYT", exact: true }).click();
-  await expect(page.locator(".subject-panel")).toHaveCount(5);
-  await page.getByRole("button", { name: /Matematik.*konu başlığı/ }).click();
-  await page
-    .getByRole("button", { name: "Alan ve Riemann", exact: true })
-    .click();
-  await expect(page.locator(".source-browser")).toContainText(
-    "Eşleşmiş PDF bulunamadı",
+    .getByRole("textbox", { name: "Notun", exact: true })
+    .fill("Küçük ekranda yerel not.");
+  await expect(page.locator(".save-status")).toContainText(
+    "Bu cihazda kaydedildi",
   );
-  expect(
-    await page.evaluate(() => document.documentElement.scrollWidth),
-  ).toBeLessThanOrEqual(321);
-  await page
-    .getByRole("button", { name: "PDF veya kaynak kataloğu ekle", exact: true })
-    .click();
+  for (const size of [
+    { width: 320, height: 844 },
+    { width: 844, height: 390 },
+  ]) {
+    await page.setViewportSize(size);
+    expect(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= innerWidth + 1,
+      ),
+    ).toBe(true);
+  }
+  await page.reload();
+  await openSheet(page, "Hücre Organelleri");
   await expect(
-    page.getByRole("heading", { name: "Kaynak dosyaları", exact: true }),
-  ).toBeVisible();
+    page.getByRole("textbox", { name: "Notun", exact: true }),
+  ).toHaveValue("Küçük ekranda yerel not.");
+  expect(
+    (
+      await new AxeBuilder({ page }).include("main").analyze()
+    ).violations.filter((v) =>
+      ["serious", "critical"].includes(v.impact ?? ""),
+    ),
+  ).toEqual([]);
 });

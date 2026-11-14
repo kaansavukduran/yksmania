@@ -7,12 +7,11 @@ import type { Lesson, ReviewStage } from "../domain/model";
 import { VisualLab } from "../learning/VisualLab";
 import { Aion } from "../components/Aion";
 import { StudyTimer } from "../components/StudyTimer";
-import { TopicCheatsheet } from "../components/TopicCheatsheet";
 import { GuidedReading } from "../learning/GuidedReading";
 import { lessonGuides } from "../learning/guides";
 import { TheoryReviewAction } from "../components/LearningReviews";
 import { TopicCompletion } from "../components/StudyPlanning";
-import { lessonTopic, studyTopicById } from "../domain/studyPlan";
+import { lessonTopic } from "../domain/studyPlan";
 const NarrativeRecall = lazy(() =>
   import("../learning/NarrativeExplorer").then((module) => ({
     default: module.NarrativeRecall,
@@ -43,10 +42,6 @@ export function Theory({
     );
   const subject = subjectById(lesson.subjectId)!;
   const noteKey = "lesson:" + lesson.id;
-  const topic = studyTopicById(lessonTopic[lesson.id]) ?? {
-    id: `lesson:${lesson.id}`,
-    title: l(lesson.title),
-  };
   const guide = lessonGuides.get(lesson.id);
   return (
     <>
@@ -65,14 +60,6 @@ export function Theory({
           <h1>{l(lesson.title)}</h1>
         </div>
         <StudyTimer />
-        {topic && (
-          <TopicCheatsheet
-            key={topic.id}
-            topic={topic}
-            subjectId={lesson.subjectId}
-            navigate={navigate}
-          />
-        )}
       </header>
       <div className="study-layout">
         <article className="panel lesson-article">
@@ -95,7 +82,7 @@ export function Theory({
               ))}
             </>
           )}
-          {narrativeById.has(lesson.id) && (
+          {!guide && narrativeById.has(lesson.id) && (
             <Suspense fallback={<p>Hatırlama alanı açılıyor…</p>}>
               <NarrativeRecall id={lesson.id} />
             </Suspense>

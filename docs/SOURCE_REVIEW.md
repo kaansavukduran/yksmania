@@ -1,5 +1,53 @@
 # Kaynak ve model kontrolü
 
+## 0.9.0 — kaynaklardan yerleşik ve ayrıntılı öğretim
+
+Kullanıcının son kararı: öğrenci PDF/katalog yüklemez. Kaynakların kendisi ve
+özel kimlikleri yayımlanmaz; aşağıdaki incelemelerden özgün uygulama anlatımı,
+örnek ve soru üretilir. Eski ilerleme/not/dosya baytları korunur, kaynak UI kaldırılır.
+Canlı AIONIA v1.7 okundu; onaylı Aion atlası ve marka sanatı değiştirilmedi.
+
+| Öğretim | Doğrudan okunan kaynak sınırı |
+| --- | --- |
+| Ses bilgisi/yapı | Aurelia Ses Bilgisi PDF1–17; Sözcükte Yapı1–19; canlı OGM Ekler/Sözcüğün Yapısı okunabilir tam metni, PDF indeksi ayrıca doğrulanmadı |
+| Çarpanlara ayırma | MEBİ TYT Matematik PDF98–103 ve105; OGM yöntemler PDF2–9,11sayfalık dosya; PDF2 görsel kontrol ve OGM Video Ders Notu okunabilir metni |
+| Geometri alan | MEBİ TYT Matematik PDF139–140 ve147–148, basılı137–138/145–146 |
+| Newton | MEBİ AYT Fizik PDF23–24,31; Aurelia Newton1–16 |
+| Elektrik alan | MEBİ AYT Fizik PDF105–106,113, basılı103–104,111 |
+| Mol | MEBİ TYT Kimya PDF63–65, basılı61–63; PDF63 görsel kontrol |
+| Kimyasal denge | MEBİ AYT Kimya PDF70–75, basılı68–73; PDF72 görsel kontrol |
+| Türev | MEBİ AYT Matematik PDF78–89, basılı76–87; tanım/kurallar/grafik/ekstremum/optimizasyon metinleri |
+| DNA/ATP | MEBİ AYT Biyoloji Bölüm2 PDF38–40 ve52–54, basılı158–160/172–174; Aurelia ATP1–5 |
+| Osmanlı siyaset/ordu/medeniyet | Aurelia008/009 PDF2–4,010 PDF2–5 ve7–9; aşağıdaki10 OGM tek sayfalık dosyanın tamamı görsel okundu |
+| Üç ek fen kağıdı | Aurelia Basınç PDF1–4, Kaldırma1–2, Akım1–4 |
+
+OGM tek sayfalık tarih kaynakları: kuruluş görüşleri, Osmanlı–Bizans ilişkileri,
+Balkan fetihleri, Türk siyasi birliği, Fetret Devri, askerî sınıf, beylik dönemi
+askerî gücü, tımar, yeniçeriler/devşirme ve Osmanlı’nın kılıcı yeniçeriler.
+Bozuk font eşlemeli çıkarımların yerine orijinal sayfa görüntüleri okundu.
+
+Kavramsal düzeltmeler ve sınırlar: modern mol tam SI sabiti kullanılır, okul
+hesaplarında6,02×10²³ yaklaşımı açıkça ayrılır; kaynakta tek atom kütlesinin
+pozitif üs yazım hatası tekrarlanmadı.22,4 L/mol için T/P belirtilir. Denge
+katsayıları evrensel hız yasası sanılmaz, saf fazın devamı ve sabitV/sabitP
+inert gaz ayrılır. Türevde artan x³ için0’daki sıfır türev karşı örneğiyle
+pozitif eğimin gerekli koşul olmadığı anlatılır; f(a) değer,(a,f(a)) nokta;
+teğet denkleminde sonlu türev koşulu ve tanım dışı noktalar korunur.
+
+Yeni Türkçe20, ileri çarpanlara10, Osmanlı15 ve kaynaklı fen60 soru:105 özgün
+madde. Önceki115 kimlik/cevap anahtarı sabit fixture ile korunur. Çarpanlara
+ayırmanın eski5 sorusu aynı derste kalır; ileri10 ayrı soru setidir. Bu setin
+özet haritasını ezmesi engellenir. Bütün yayınlanmış maddeler eksik metin/şekil
+atıf denetiminden geçer; yeni resmî ÖSYM maddesi eklendiği iddia edilmez.
+Sekiz eski sınav kaydı için sekiz tam bağlamlı özgün öğretim varyantı ve üç
+adımlı çözüm yerleşiktir; resmî sorunun birebir aktarımı olarak etiketlenmez.
+
+57 anlatım/28 ayrıntılı rehber/60 kağıt/220 soru. İlk45 sıralı başlık hazır;
+46 Elementlerin sınıflandırılması henüz ayrı anlatım olarak işlenmedi. Osmanlı
+medeniyeti daha sonraki ayrı başlığa bağlıdır. Bütün479 başlık,126 özel kopya
+kağıdının tüm ayrıntıları ve20 yıllık ÖSYM arşivi tamamlandı iddiası yok.
+
+
 ## 0.8.0 — Selçuklu, elektron katmanları ve paragraf derinliği
 
 Canlı AIONIA v1.7 yeniden okundu. Karakter paftası/atlası değiştirilmedi.

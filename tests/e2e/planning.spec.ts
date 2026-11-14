@@ -10,6 +10,7 @@ test.beforeEach(async ({ page }) => {
   ).toBeVisible();
 });
 async function nav(page: Page, name: string) {
+  await expect(page.locator(".sidebar")).toBeAttached();
   const menu = page.getByRole("button", { name: "Menüyü aç", exact: true });
   if (await menu.isVisible()) await menu.click();
   await page
@@ -271,20 +272,29 @@ test("YKS-010 one subject-colored progress chart and separate TYT/AYT trees link
       name: "Kaynağımdaki soruları çalıştım",
       exact: true,
     }),
-  ).toHaveAttribute("aria-pressed", "false");
-  await page
-    .getByRole("button", {
-      name: "Kaynağımdaki soruları çalıştım",
-      exact: true,
-    })
-    .click();
-  await expect(
-    page.getByRole("button", { name: "Çalışma kaydını geri al", exact: true }),
-  ).toBeVisible();
+  ).toHaveCount(0);
+  await page.locator(".topic-study .ready-topic").first().click();
+  for (const [i, selected] of [1, 1, 2, 0, 1].entries()) {
+    await page.locator(".answer").nth(selected).click();
+    await page
+      .getByRole("button", { name: "Cevabı kontrol et", exact: true })
+      .click();
+    await page
+      .getByRole("button", {
+        name: i === 4 ? "Çalışmayı kaydet" : "Sonraki soru",
+        exact: true,
+      })
+      .click();
+  }
+  await expect(page.locator(".result-stats")).toContainText("5/5");
   await nav(page, "Dünyam");
   await expect(
     page.locator(".subject-progress-table tr").filter({ hasText: "TYT Kimya" }),
   ).toContainText("1/55");
+  await left.getByRole("combobox").selectOption("tyt-kimya");
+  await expect(left.locator(".skill-question").first()).toHaveClass(
+    /is-complete/,
+  );
   await expect(chart).toHaveAttribute("aria-label", /1\/479 konu/);
   const issues = await new AxeBuilder({ page })
     .include(".main-content")
@@ -364,7 +374,7 @@ test("new plan, trees and dates stay usable at 320px and 200% UI / 150% text off
   await page
     .getByRole("region", { name: "AYT konu ağacı", exact: true })
     .locator(".skill-topic")
-    .first()
+    .filter({ hasText: "DNA Replikasyonu" })
     .click();
   await expect(
     page.getByRole("button", { name: "Konuyu çalıştım", exact: true }),

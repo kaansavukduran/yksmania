@@ -3,6 +3,7 @@ import AxeBuilder from "@axe-core/playwright";
 test.use({ hasTouch: true, locale: "tr-TR" });
 
 async function nav(page: Page, name: string) {
+  await expect(page.locator(".sidebar")).toBeAttached();
   const menu = page.getByRole("button", { name: "Menüyü aç", exact: true });
   if (await menu.isVisible()) await menu.click();
   await page
@@ -264,10 +265,12 @@ test("expanded source-led guides expose interactive models and reasoned worked e
       .click();
     await expect(example.locator(".worked-conclusion")).toContainText(answer);
     await expect(
-      page.getByRole("button", {
-        name: "Kopya Kağıdını Görüntüle",
-        exact: true,
-      }),
+      page.locator(".cheatsheet-toggle,.topic-cheatsheet"),
+    ).toHaveCount(0);
+    await expect(
+      page
+        .locator(".sidebar nav")
+        .getByRole("button", { name: "Kopya Kağıtları", exact: true }),
     ).toBeVisible();
   }
 });

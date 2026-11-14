@@ -18,11 +18,17 @@ const Narrative = lazy(() =>
 const MathFoundations = lazy(() => import("./MathFoundations"));
 const Algebra = lazy(() => import("./AlgebraExplorer"));
 const Shells = lazy(() => import("./ElectronShellExplorer"));
+const Language = lazy(() => import("./TurkishLanguageExplorer"));
+const Factorization = lazy(() => import("./FactorizationExplorer"));
 export function VisualLab({ id }: { id: string }) {
   const { t } = useApp();
   return (
     <Suspense fallback={<p role="status">{t("loading")}</p>}>
-      {id === "katman-elektron-dizilimi" ? (
+      {id === "ses-bilgisi" || id === "sozcukte-yapi" ? (
+        <Language structure={id === "sozcukte-yapi"} />
+      ) : id === "carpanlara-ayirma" ? (
+        <Factorization />
+      ) : id === "katman-elektron-dizilimi" ? (
         <Shells />
       ) : id === "birinci-dereceden-denklemler" ||
         id === "basit-esitsizlikler" ? (

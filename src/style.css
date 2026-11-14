@@ -3325,11 +3325,19 @@ progress::-moz-progress-bar {
 }
 .reset-dialog {
   width: min(36rem, calc(100vw - 32px));
+  max-width: calc(100vw - 32px);
+  overflow-wrap: anywhere;
   max-height: calc(100dvh - 32px);
   overflow: auto;
   padding: clamp(16px, 3vw, 32px);
   color: var(--text);
   background: var(--surface);
+}
+.reset-dialog .dialog-actions button {
+  max-width: 100%;
+  min-width: 0;
+  padding-inline: clamp(10px, 2vw, 20px);
+  overflow-wrap: anywhere;
 }
 .reset-dialog::backdrop {
   background: #0009;

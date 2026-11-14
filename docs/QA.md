@@ -1,5 +1,18 @@
 # Quality evidence
 
+## 0.9.0 son yerel kabul
+
+check/build,94/94 birim ve87/87 Chromium tarayıcı PASS;87 test5,5dk’da çalıştı.
+YKS-023–028 ve önceki ilgili regresyonlar PASS. Ayrı exam4/4 ve son Electron
+offline/restart/deadline/sonuç/reset akışı PASS; rendererErrors0. Normal/büyük
+yazı ve iki temada320/844/1440px sınırları gerçek görüntü ve DOM ile kontrol edildi.
+16 erişilebilir rotada akademik yükleme kontrolü yok. Altı yeni React bileşeni
+kaynak incelemesinde yeni kusur bulunmadı. Gizlilik/diff kontrolü PASS.
+İlk son-kabul başlatmasında kurulu Chromium yolu verilmediği için testler tarayıcıyı
+açamadı; ortam ayarı düzeltilerek aynı87testin tamamı geçti. CI/canlı/paket sonuçları
+FORGE başındaki güncel yayın kaydında ayrıca belirtilecektir. Fiziksel Android,
+temiz Windows kurulumu/portable taşıma ve iki native sürümle yükseltme NOT TESTED.
+
 İlk uzak CI43600766700 verify72unit/73browser PASS; yeni native timer testinde
 19:… beklenirken20:00 okundu. Gerçek azalmayı ve pause kayıt sonucunu bekleme,
 kayıtlı deadline’ın süreçler arasında tam eşitliği eklendi; yerel tekrar PASS.
@@ -23,6 +36,37 @@ ayrıca hash'lenmedi; verified-run doğru başarılı main kaynağını gösteri
 YKS-021/022 ve ilgili önceki regresyonlar PASS; açık doğrulanmış kusur yok.
 Fiziksel cihaz/temiz kurulum/portable taşıma/native yükseltme NOT TESTED.
 Gerçek iki web build'iyle0.5.3→0.8.0 veri koruma ayrı PASS. Tam iz FORGE başında.
+
+## 0.9.0 — kullanıcı materyal yüklemeden öğretim ve deneme
+
+Hedef başlangıçead659b + yerel diff. Yeni ürün kararıyla akademik PDF/katalog
+UI testleri hazır kağıt/yerleşik model/gerçek soru/offline kayıt testlerine
+çevrildi; eski dosya baytları ve notlar IDB üzerinden korunur. Kayıt yedeği
+ithali isteğe bağlıdır, ders sağlamanın önkoşulu değildir.94 unit/check/build
+ilk PASS. İlk tam85testte79PASS,6FAIL; test seçicileri ve aşağıdaki taşma
+nedenleri ayrıldı, ilk sonuçlar saklandı. Son tam sonucun yeri FORGE başıdır.
+
+- YKS-023/Orta/Exams:320px UI200 text150 uzun başlık belge325px.
+- YKS-024/Orta/shared dialogs: UAmaxwidth224px, içerik309/321px; yazar maxwidth
+  ve copywrap ile288/286px, tanı yatay taşma0. Reset de aynı kusurdan etkileniyordu.
+- YKS-025/Orta/Exams: iki saatlik sayaç+ikon belge331px; satırlar ve kontrollü
+  saat ayırma ile320px. Font boyutu veya erişilebilir süre metni küçültülmez.
+
+Aynı gerçek giriş/bounds/activation/failure/offline/reset denetimleri final build'de
+tekrarlanacak.87test toplanır: yeni clock/dialog/reset büyük yazı dokunmatik ve
+yatay erişim, gerçek5/10soru kaydı, sekiz derinleştirilmiş model, sözcük parçaları,
+kanıt atölyesi ve deneme cevap/flag/net/expires/missingdata/failedwrite/recovery.
+Aion32kare/zemin/pointer, Today son gerçek skor, 1/3/7/21 ve özerk ayarlar korunur.
+Yerel geliştirmeElectron offline+exam snapshot/deadline/restart/reset ilk PASS;
+gerçek paket/CI/canlı sonuçları ayrı kaydedilir. Fiziksel Android ve temiz kurulum
+bu yerel/emüle testlerin yerine sayılmaz. Kaynak okuma/fiziksel sınırlar FORGE'de.
+
+
+Sonraki tam kabul85/86: tablo klavye odağı YKS-028/Orta bulundu; adlandırılmış
+focusableregion ve gerçek ArrowRight→scrollLeft>0 koşulu eklendi. YKS-026/Orta
+yeni elektrik alan metnindeki F'yi elektriksel kuvvet diye netleştirir;
+YKS-027/Düşük soru-only/boş-bank içeriklerin yanlış arama kartını engeller,
+aynı hedefli test onarım öncesi FAIL. Son tam build testleri buna göre tekrarlanır.
 
 ## 0.8.0 — kalıcı kum saati, güvenli sıfırlama ve eski web istemcisi
 

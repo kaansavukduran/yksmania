@@ -48,6 +48,7 @@ try {
   await page.waitForSelector(".hero");
   await page.context().setOffline(true);
   const navigate = async (name) => {
+    await expect(page.locator(".sidebar")).toBeAttached();
     const menu = page.getByRole("button", { name: "Menüyü aç", exact: true });
     if (await menu.isVisible()) await menu.click();
     await page
@@ -120,17 +121,35 @@ try {
   await page
     .getByRole("button", { name: /Hücre organelleri: yapı ve görev/ })
     .click();
-  await page
-    .getByRole("button", { name: "Kopya Kağıdını Görüntüle", exact: true })
-    .click();
-  await expect(page.locator(".topic-cheatsheet")).toContainText(
-    "Bu konuya ait PDF henüz bu cihazda yok",
-  );
   await expect(
-    page
-      .locator(".sidebar nav")
-      .getByRole("button", { name: "Kopya Kağıtları", exact: true }),
+    page.locator(".topic-cheatsheet,.cheatsheet-toggle"),
   ).toHaveCount(0);
+  const openSheet = async (title) => {
+    await navigate("Kopya Kağıtları");
+    await page
+      .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
+      .fill(title);
+    await page
+      .locator(".cheatsheet-topic")
+      .filter({ hasText: title })
+      .first()
+      .click();
+    await expect(page.locator(".cheat-reader")).toBeVisible();
+  };
+  await openSheet("Hücre Organelleri");
+  await expect(page.locator(".cheat-reader")).toContainText(/ribozom/i);
+  await page
+    .getByRole("textbox", { name: "Notun", exact: true })
+    .fill("Masaüstü kağıt notum korunmalı.");
+  await expect(page.locator(".save-status")).toContainText(
+    "Bu cihazda kaydedildi",
+  );
+  await page.reload();
+  await openSheet("Hücre Organelleri");
+  await expect(
+    page.getByRole("textbox", { name: "Notun", exact: true }),
+  ).toHaveValue("Masaüstü kağıt notum korunmalı.");
+  await expect(page.locator('input[accept*="pdf"]')).toHaveCount(0);
   await openAyt("Matematik", "Türev: kirişten teğete");
   await page
     .getByRole("button", { name: "Teğeti kontrol et", exact: true })
@@ -350,6 +369,69 @@ try {
       .click();
   }
   await expect(page.locator(".result-stats")).toContainText("5/5");
+  await navigate("Sınavlar");
+  await page
+    .getByRole("button", { name: "Başlat: TYT karma denemesi", exact: true })
+    .click();
+  await expect(page.locator(".exam-runner")).toBeVisible();
+  await page.locator(".exam-answer").first().click();
+  await expect(page.locator(".exam-answer").first()).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+  const savedExam = await page.evaluate(
+    () =>
+      new Promise((resolve, reject) => {
+        const r = indexedDB.open("yksmania");
+        r.onsuccess = () => {
+          const db = r.result,
+            q = db.transaction("state").objectStore("state").get("current");
+          q.onsuccess = () => {
+            resolve(q.result.examDraft);
+            db.close();
+          };
+          q.onerror = () => reject(q.error);
+        };
+        r.onerror = () => reject(r.error);
+      }),
+  );
+  await app.close();
+  app = await launch();
+  page = await app.firstWindow();
+  page.on("pageerror", (error) => errors.push(String(error)));
+  await page.waitForSelector(".hero");
+  await page.context().setOffline(true);
+  await navigate("Sınavlar");
+  await expect(page.locator(".exam-answer").first()).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+  const resumedExam = await page.evaluate(
+    () =>
+      new Promise((resolve, reject) => {
+        const r = indexedDB.open("yksmania");
+        r.onsuccess = () => {
+          const db = r.result,
+            q = db.transaction("state").objectStore("state").get("current");
+          q.onsuccess = () => {
+            resolve(q.result.examDraft);
+            db.close();
+          };
+          q.onerror = () => reject(q.error);
+        };
+        r.onerror = () => reject(r.error);
+      }),
+  );
+  expect(resumedExam).toEqual(savedExam);
+  await page
+    .getByRole("button", { name: "Denemeyi bitir", exact: true })
+    .click();
+  await page
+    .getByRole("dialog")
+    .getByRole("button", { name: "Bitir ve sonucu gör", exact: true })
+    .click();
+  await expect(page.locator(".exam-results")).toBeVisible();
+  await expect(page.locator(".exam-score-summary")).toContainText("Boş");
   await navigate("Ayarlar");
   await page
     .getByRole("button", { name: "İlerlemeyi sıfırla", exact: true })
@@ -372,10 +454,20 @@ try {
   await expect(
     page.getByRole("region", { name: "Konu planı", exact: true }),
   ).toContainText("0/479");
+  await openSheet("Hücre Organelleri");
+  await expect(
+    page.getByRole("textbox", { name: "Notun", exact: true }),
+  ).toHaveValue("Masaüstü kağıt notum korunmalı.");
+  await navigate("Sınavlar");
+  await expect(page.locator(".exam-runner")).toHaveCount(0);
+  await expect(page.locator(".exam-history")).toContainText(
+    "İlk denemeni bitirdiğinde",
+  );
   expect(errors).toEqual([]);
   console.log(
     JSON.stringify({
       desktop: "PASS",
+      examOfflineProcessRestartAndResult: "PASS",
       hourglassProcessRestartAndPause: "PASS",
       resetProgressOffline: "PASS",
       aytVisuals: "PASS",

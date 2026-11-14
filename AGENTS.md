@@ -21,7 +21,9 @@ first-study order; personal workbook progress is not application progress. Keep
 manual theory/question records independent and do not award XP for checkmarks.
 The user's latest Aion art direction is reference-faithful pixel art with richer
 sprite reactions; it supersedes the historical cartoon-only request for this app.
-Source imports remain under Settings; do not reintroduce the Library navigation tab.
+Learners never import PDF, source catalogues or study materials. Teaching, summaries
+and questions must be built in; preserve existing private files invisibly in storage.
+Keep personal-progress backup/restore separate from educational content.
 
 Questions must be answerable from their own card: include the referenced passage,
 define named points and state needed model/data assumptions. Never depend on a
@@ -34,14 +36,14 @@ Today keeps completed daily work visible and shows the latest complete saved
 question attempt with its actual correct/wrong counts. Never sum retries or infer
 manual theory completion from question answers. Preserve the YKS-013 regression.
 
-Latest navigation decision (2026-11-14): remove Cheatsheets from the sidebar.
-Every theory header offers Kopya Kağıdını Görüntüle; PDFs stay on-device and
-open inline. Keep legacy cheatsheet deep links working. Topic/question panels
-need balanced internal padding. Expand lessons with explanations, interactive
-models and worked examples; summaries alone are insufficient. Past ÖSYM items
-are verified references to actual booklets, with exam/year/test/question/page,
-answer source and exact PDF identity. Never imply that partial %10 papers or
-partially reviewed years are a complete 20-year question bank.
+Latest navigation decision (user correction): Cheatsheets are a separate sidebar
+section between Theory and Questions. Remove inline cheatsheets from theory.
+Exams follows Questions and offers built-in TYT, numerical AYT and subject practices,
+with accurate question counts and proportional official-format times. Never label
+an incomplete bank as a full official-distribution mock. No source upload routes,
+source-dependent study buttons or booklet upload controls. Unprepared headings
+are explicitly unavailable; users are not tasked with supplying missing content.
+Preserve existing settings/notes/PDF bytes/learning records across this UI migration.
 
 Study hourglass state is local and shared across theory, PDF and question routes.
 Use an absolute deadline while running; never persist every display tick or award

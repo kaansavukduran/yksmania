@@ -140,7 +140,7 @@ export function StudyTree({
                         (lesson) => lesson.questions.length > 0,
                       )
                     ? `${topicLessons(topic.id).reduce((n, l) => n + l.questions.length, 0)} özgün soru`
-                    : "Kaynak çalışması"}
+                    : "Sorular hazırlanıyor"}
               </button>
             </div>
           </li>

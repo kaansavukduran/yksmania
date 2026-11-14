@@ -7,10 +7,6 @@ import {
   type StudyMode,
 } from "../domain/studyPlan";
 import type { Lesson, ReviewStage } from "../domain/model";
-import { TheoryReviewAction } from "../components/LearningReviews";
-import { TopicCompletion } from "../components/StudyPlanning";
-import { SourceList } from "../components/SourceList";
-import { TopicCheatsheet } from "../components/TopicCheatsheet";
 import { PastExamQuestions } from "../components/PastExamQuestions";
 import { Theory } from "./Theory";
 import { StudyTimer } from "../components/StudyTimer";
@@ -41,7 +37,7 @@ export function Topic({
   const narratives = topicLessons(topic.id);
   const available =
     mode === "theory"
-      ? narratives
+      ? narratives.filter((lesson) => !lesson.tags.includes("soru-seti"))
       : narratives.filter((lesson) => lesson.questions.length > 0);
   if (mode === "theory" && available.length)
     return (
@@ -71,12 +67,6 @@ export function Topic({
           <h1>{topic.title}</h1>
         </div>
         <StudyTimer />
-        <TopicCheatsheet
-          key={topic.id}
-          topic={topic}
-          subjectId={topic.subjectId}
-          navigate={navigate}
-        />
       </header>
       <section className="panel topic-study">
         {mode === "questions" && available.length ? (
@@ -100,33 +90,25 @@ export function Topic({
           <>
             <h2>
               {mode === "theory"
-                ? "Bu konuyu kaynağınla çalış"
-                : "Bu konunun sorularını kaynağında çöz"}
+                ? "Anlatım hazırlanıyor"
+                : "Soru çalışması hazırlanıyor"}
             </h2>
             <p>
-              {mode === "theory"
-                ? "Bu başlık için uygulama içi anlatım henüz hazırlanmadı. Kopya kağıdını veya kendi ders kaynağını kullanarak çalışmanı kaydedebilirsin."
-                : "Bu başlık için uygulama içi soru seti henüz hazırlanmadı. Kendi soru kaynağında yaptığın çalışmayı planına işleyebilirsin."}
+              Bu başlığın uygulama içi içeriği henüz tamamlanmadı. Hazır
+              derslerden öğrenmeye devam edebilirsin.
             </p>
+            <button
+              className="primary"
+              onClick={() =>
+                navigate(mode === "theory" ? "/courses" : "/questions")
+              }
+            >
+              Hazır {mode === "theory" ? "anlatımları" : "soruları"} aç
+            </button>
           </>
         )}
-        <div className="topic-source-actions">
-          <button className="secondary" onClick={() => navigate("/sources")}>
-            Kaynak dosyalarını yönet
-          </button>
-        </div>
-        <SourceList subjectId={topic.subjectId} mode={mode} topic={topic} />
         {mode === "questions" && (
           <PastExamQuestions topicId={topic.id} subjectId={topic.subjectId} />
-        )}
-        {mode === "theory" && reviewStage ? (
-          <TheoryReviewAction
-            topicId={topic.id}
-            stage={reviewStage}
-            navigate={navigate}
-          />
-        ) : (
-          <TopicCompletion id={topic.id} mode={mode} />
         )}
       </section>
     </>

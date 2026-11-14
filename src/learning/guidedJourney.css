@@ -1,0 +1,41 @@
+.learning-journey {
+  margin-block: 1.25rem;
+  min-width: 0;
+}
+.learning-journey .segmented {
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+.learning-journey .segmented button {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.journey-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  padding-block: 1.25rem;
+  border-block-start: 1px solid var(--border);
+}
+.journey-actions button {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.exam-teaching-case {
+  border-inline-start: 3px solid var(--accent);
+  padding: clamp(12px, 2vw, 24px);
+  margin-block: 1.25rem;
+  min-width: 0;
+}
+.exam-teaching-case p,
+.exam-teaching-case li {
+  line-height: 1.85;
+}
+.exam-teaching-case button {
+  max-width: 100%;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}

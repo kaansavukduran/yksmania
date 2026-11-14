@@ -1,0 +1,238 @@
+import { lessons, subjects } from "./content";
+import type { AppState, Lesson } from "./model";
+import type { ExamDraft, ExamItem, ExamSession } from "./examModel";
+export type ExamSpec = {
+  id: string;
+  title: string;
+  exam: "TYT" | "AYT";
+  kind: "mixed" | "branch";
+  items: ExamItem[];
+  durationSeconds: number;
+  fullLength: boolean;
+  missingSubjects: string[];
+};
+export const examReference = {
+  TYT: { questions: 120, seconds: 165 * 60 },
+  AYT: { questions: 80, seconds: 180 * 60 },
+} as const;
+export function scaledExamSeconds(exam: "TYT" | "AYT", count: number) {
+  if (!Number.isInteger(count) || count < 1 || count > 300)
+    throw Error("EXAM_SIZE");
+  return Math.round(
+    (examReference[exam].seconds * count) / examReference[exam].questions,
+  );
+}
+function snapshot(lesson: Lesson): ExamItem[] {
+  const subject = subjects.find((s) => s.id === lesson.subjectId)!;
+  return lesson.questions.map((q) => ({
+    id: q.id,
+    lessonId: lesson.id,
+    subjectId: subject.id,
+    subjectName: subject.name.tr,
+    lessonTitle: lesson.title.tr,
+    prompt: q.prompt.tr,
+    ...(q.passage ? { passage: q.passage.tr } : {}),
+    options: q.options.map((o) => o.tr),
+    answer: q.answer,
+    explanation: q.explanation.tr,
+  }));
+}
+// Interleave lesson questions, so a short section samples several taught skills.
+function subjectItems(ids: string[], limit: number) {
+  const rows = lessons
+      .filter((l) => ids.includes(l.subjectId) && l.questions.length)
+      .map(snapshot),
+    result: ExamItem[] = [];
+  for (
+    let index = 0;
+    result.length < limit && rows.some((r) => index < r.length);
+    index++
+  )
+    for (const row of rows)
+      if (row[index] && result.length < limit) result.push(row[index]);
+  return result;
+}
+function mixed(exam: "TYT" | "AYT"): ExamSpec {
+  const groups: [string[], number][] =
+    exam === "TYT"
+      ? [
+          [["tyt-turkce"], 40],
+          [["tyt-matematik", "tyt-geometri"], 40],
+          [["tyt-tarih"], 5],
+          [["tyt-cografya"], 5],
+          [["tyt-felsefe"], 5],
+          [["tyt-din"], 5],
+          [["tyt-fizik"], 7],
+          [["tyt-kimya"], 7],
+          [["tyt-biyoloji"], 6],
+        ]
+      : [
+          [["ayt-matematik", "ayt-geometri"], 40],
+          [["ayt-fizik"], 14],
+          [["ayt-kimya"], 13],
+          [["ayt-biyoloji"], 13],
+        ];
+  const items = groups.flatMap(([ids, count]) => subjectItems(ids, count));
+  const missingSubjects = groups
+    .filter(([ids, count]) => subjectItems(ids, count).length < count)
+    .map(([ids]) =>
+      ids.map((id) => subjects.find((s) => s.id === id)!.name.tr).join(" / "),
+    );
+  const fullLength = missingSubjects.length === 0;
+  return {
+    id: `mixed-${exam.toLowerCase()}`,
+    title: exam === "TYT" ? "TYT karma denemesi" : "AYT Sayısal karma denemesi",
+    exam,
+    kind: "mixed",
+    items,
+    durationSeconds: scaledExamSeconds(exam, items.length),
+    fullLength,
+    missingSubjects,
+  };
+}
+export function examCatalogue(): ExamSpec[] {
+  return [
+    ...["TYT", "AYT"].map((e) => mixed(e as "TYT" | "AYT")),
+    ...subjects.flatMap((subject) => {
+      const items = subjectItems([subject.id], 40);
+      return items.length
+        ? [
+            {
+              id: `branch-${subject.id}`,
+              title: `${subject.exam} ${subject.name.tr} branş denemesi`,
+              exam: subject.exam,
+              kind: "branch" as const,
+              items,
+              durationSeconds: scaledExamSeconds(subject.exam, items.length),
+              fullLength: false,
+              missingSubjects: [],
+            },
+          ]
+        : [];
+    }),
+  ];
+}
+export function beginExam(
+  state: AppState,
+  spec: ExamSpec,
+  now: number,
+): AppState {
+  if (state.examDraft) throw Error("EXAM_IN_PROGRESS");
+  if (!spec.items.length) throw Error("EXAM_EMPTY");
+  const draft: ExamDraft = {
+    id: `exam:${now}:${spec.id}`,
+    title: spec.title,
+    exam: spec.exam,
+    kind: spec.kind,
+    items: spec.items,
+    answers: spec.items.map(() => null),
+    flagged: [],
+    index: 0,
+    startedAt: now,
+    deadline: now + spec.durationSeconds * 1000,
+    durationSeconds: spec.durationSeconds,
+  };
+  return { ...state, examDraft: draft };
+}
+export function changeExam(
+  state: AppState,
+  id: string,
+  action:
+    | { type: "answer"; index: number; value: number | null }
+    | { type: "index"; index: number }
+    | { type: "flag"; index: number },
+  now: number,
+): AppState {
+  const draft = state.examDraft;
+  if (!draft || draft.id !== id) throw Error("EXAM_CHANGED");
+  if (now >= draft.deadline) throw Error("EXAM_EXPIRED");
+  if (
+    !Number.isInteger(action.index) ||
+    action.index < 0 ||
+    action.index >= draft.items.length
+  )
+    throw Error("EXAM_INDEX");
+  if (action.type === "index")
+    return { ...state, examDraft: { ...draft, index: action.index } };
+  if (action.type === "flag")
+    return {
+      ...state,
+      examDraft: {
+        ...draft,
+        flagged: draft.flagged.includes(action.index)
+          ? draft.flagged.filter((i) => i !== action.index)
+          : [...draft.flagged, action.index],
+      },
+    };
+  const q = draft.items[action.index];
+  if (
+    action.value !== null &&
+    (!Number.isInteger(action.value) ||
+      action.value < 0 ||
+      action.value >= q.options.length)
+  )
+    throw Error("EXAM_ANSWER");
+  return {
+    ...state,
+    examDraft: {
+      ...draft,
+      answers: draft.answers.map((value, i) =>
+        i === action.index ? action.value : value,
+      ),
+    },
+  };
+}
+export function finishExam(state: AppState, id: string, now: number): AppState {
+  if (state.examSessions.some((s) => s.id === id)) return state;
+  const draft = state.examDraft;
+  if (!draft || draft.id !== id) throw Error("EXAM_CHANGED");
+  const session: ExamSession = {
+    ...draft,
+    finishedAt: Math.min(draft.deadline, Math.max(now, draft.startedAt)),
+    timedOut: now >= draft.deadline,
+  };
+  return {
+    ...state,
+    examDraft: null,
+    examSessions: [...state.examSessions, session],
+  };
+}
+export function examScore(session: Pick<ExamDraft, "items" | "answers">) {
+  const result = new Map<
+    string,
+    {
+      subject: string;
+      correct: number;
+      wrong: number;
+      blank: number;
+      net: number;
+    }
+  >();
+  session.items.forEach((q, i) => {
+    const row = result.get(q.subjectId) ?? {
+      subject: q.subjectName,
+      correct: 0,
+      wrong: 0,
+      blank: 0,
+      net: 0,
+    };
+    if (session.answers[i] === null) row.blank++;
+    else if (session.answers[i] === q.answer) row.correct++;
+    else row.wrong++;
+    row.net = row.correct - row.wrong / 4;
+    result.set(q.subjectId, row);
+  });
+  const totals = [...result.values()].reduce(
+    (sum, row) => ({
+      correct: sum.correct + row.correct,
+      wrong: sum.wrong + row.wrong,
+      blank: sum.blank + row.blank,
+      net: sum.net + row.net,
+    }),
+    { correct: 0, wrong: 0, blank: 0, net: 0 },
+  );
+  return {
+    subjects: [...result.entries()].map(([id, row]) => ({ id, ...row })),
+    ...totals,
+  };
+}

@@ -3,6 +3,7 @@ import AxeBuilder from "@axe-core/playwright";
 import { narrativePacks } from "../../src/learning/narratives";
 test.use({ locale: "tr-TR", timezoneId: "Europe/Istanbul" });
 async function nav(page: Page, name: string) {
+  await expect(page.locator(".sidebar")).toBeAttached();
   const menu = page.getByRole("button", { name: "Menüyü aç", exact: true });
   if (await menu.isVisible()) await menu.click();
   await page
@@ -12,19 +13,82 @@ async function nav(page: Page, name: string) {
 }
 async function open(page: Page, id: string) {
   const pack = narrativePacks.find((p) => p.id === id)!;
+  const title =
+    id === "ses-bilgisi"
+      ? "Ses bilgisi: sesi karşılaştır, olayı kanıtla"
+      : id === "sozcukte-yapi"
+        ? "Sözcükte yapı: kökten anlama, adım adım"
+        : pack.title;
   await nav(page, "Konu Anlatımı");
   await page
     .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
-    .fill(pack.title);
+    .fill(title);
   await page
     .getByRole("button", {
-      name: new RegExp(pack.title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")),
+      name: new RegExp(title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")),
     })
     .click();
   await expect(
-    page.getByRole("heading", { name: pack.title, exact: true }),
+    page.getByRole("heading", { name: title, exact: true }),
   ).toBeVisible();
-  await expect(page.locator(".narrative-lab")).toBeVisible();
+  await expect(
+    page.locator(
+      id === "ses-bilgisi" || id === "sozcukte-yapi"
+        ? ".language-lab"
+        : ".narrative-lab",
+    ),
+  ).toBeVisible();
+}
+async function languageInteraction(page: Page, id: string) {
+  if (id === "ses-bilgisi") {
+    await page
+      .getByRole("combobox", { name: "Ses örneği", exact: true })
+      .selectOption("1");
+    await page
+      .getByRole("combobox", { name: "Beklediğin ses olayı", exact: true })
+      .selectOption("Yumuşama");
+    await page
+      .getByRole("button", { name: "Kanıtla karşılaştır", exact: true })
+      .click();
+    await expect(page.locator(".language-feedback")).toContainText(
+      "Başlangıç ile sonucu yeniden karşılaştır",
+    );
+    await page
+      .getByRole("combobox", { name: "Beklediğin ses olayı", exact: true })
+      .selectOption("Benzeşme");
+    await page
+      .getByRole("button", { name: "Kanıtla karşılaştır", exact: true })
+      .click();
+    await expect(page.locator(".language-feedback")).toContainText(
+      "Karşılaştırman bu örnekle örtüşüyor",
+    );
+    await expect(page.locator(".language-result")).toContainText("kitapta");
+  } else {
+    await page
+      .getByRole("combobox", { name: "Yapı örneği", exact: true })
+      .selectOption("0");
+    await page
+      .getByRole("button", { name: "Sözcüğü birleştir", exact: true })
+      .click();
+    await expect(
+      page.getByRole("status", { name: "Birleşen sözcük", exact: true }),
+    ).toHaveText("evlerimizden");
+    await expect(page.locator(".language-result")).toContainText(
+      "0 yapım · 3 çekim · Basit",
+    );
+    await page
+      .getByRole("button", { name: "Bir yapım eki ekle: -siz", exact: true })
+      .click();
+    await expect(page.locator(".language-result")).toContainText(
+      "1 yapım · 3 çekim · Türemiş",
+    );
+    await page
+      .getByRole("button", { name: "Yapım ekini çıkar: -siz", exact: true })
+      .click();
+    await expect(page.locator(".language-result")).toContainText(
+      "0 yapım · 3 çekim · Basit",
+    );
+  }
 }
 async function stored(page: Page) {
   return page.evaluate(
@@ -70,6 +134,47 @@ for (const subject of [
     await context.setOffline(true);
     for (const pack of narrativePacks.filter((p) => p.subjectId === subject)) {
       await open(page, pack.id);
+      if (subject === "tyt-turkce") {
+        await languageInteraction(page, pack.id);
+        const evidence = await page
+          .locator(".language-result")
+          .evaluate((el) => el.textContent ?? "");
+        const paragraphs = await page
+          .locator(".language-result > p")
+          .allTextContents();
+        const heading = await page
+          .locator(".language-result > strong,.language-result > h3")
+          .allTextContents();
+        const recalls = page.locator(".guide-recall details");
+        await expect(recalls).toHaveCount(4);
+        for (const recall of await recalls.all()) {
+          await recall.locator("summary").click();
+          await expect(recall.locator("p")).not.toBeEmpty();
+        }
+        await expect(page.locator(".narrative-recall")).toHaveCount(0);
+        const ownNote = page
+          .locator(".study-notes")
+          .getByRole("textbox", { name: "Notun", exact: true });
+        await ownNote.fill(
+          "Kendi açıklamam: kanıtı önceki biçimle karşılaştırırım.",
+        );
+        await expect(page.locator(".save-status")).toContainText(
+          "Bu cihazda kaydedildi",
+        );
+        await page.reload();
+        await expect(page.locator(".language-result")).toHaveText(evidence);
+        await expect(page.locator(".language-result > p")).toHaveText(
+          paragraphs,
+        );
+        await expect(
+          page.locator(".language-result > strong,.language-result > h3"),
+        ).toHaveText(heading);
+        await expect(ownNote).toHaveValue(
+          "Kendi açıklamam: kanıtı önceki biçimle karşılaştırırım.",
+        );
+        await expect(page.locator(".answer")).toHaveCount(0);
+        continue;
+      }
       const lab = page.locator(".narrative-lab"),
         scenario = pack.cases[1];
       for (const graphCase of pack.cases.slice(0, 2)) {
@@ -150,9 +255,7 @@ for (const subject of [
       await expect(recall.locator(".recall-explanation")).toContainText(
         pack.recall[1].answer,
       );
-      await expect(
-        page.getByRole("button", { name: "Sorulara geç", exact: true }),
-      ).toHaveCount(0);
+      await expect(page.locator(".answer")).toHaveCount(0);
       await page.reload();
       await expect(lab.locator(".walk-conclusion")).toContainText(
         scenario.conclusion,
@@ -298,10 +401,13 @@ test("new models keep controls usable at 320px with 200% UI and 150% text; notes
     "sozcukte-yapi",
   ]) {
     await open(page, id);
-    const lab = page.locator(".narrative-lab");
-    await lab
-      .getByRole("button", { name: "Sonraki adım", exact: true })
-      .click();
+    const isLanguage = id === "ses-bilgisi" || id === "sozcukte-yapi";
+    const lab = page.locator(isLanguage ? ".language-lab" : ".narrative-lab");
+    if (isLanguage) await languageInteraction(page, id);
+    else
+      await lab
+        .getByRole("button", { name: "Sonraki adım", exact: true })
+        .click();
     expect(
       await page.evaluate(
         () => document.documentElement.scrollWidth <= innerWidth + 1,
@@ -318,10 +424,19 @@ test("new models keep controls usable at 320px with 200% UI and 150% text; notes
         ["serious", "critical"].includes(v.impact!),
       ),
     ).toEqual([]);
-    const motion = await lab
-      .locator(".walk-path.active")
-      .evaluate((el) => getComputedStyle(el).animationName);
-    expect(motion).toBe("none");
+    if (isLanguage)
+      expect(
+        await lab
+          .locator(".morph-piece")
+          .first()
+          .evaluate((el) => getComputedStyle(el).transitionDuration),
+      ).toBe("0s");
+    else {
+      const motion = await lab
+        .locator(".walk-path.active")
+        .evaluate((el) => getComputedStyle(el).animationName);
+      expect(motion).toBe("none");
+    }
   }
 });
 test("division, common periods, energy and word transformations explain changed controls and preserve them offline", async ({
@@ -398,23 +513,9 @@ test("division, common periods, energy and word transformations explain changed 
     "Nötron sayısı 7, protonlar farklı",
   );
   await open(page, "ses-bilgisi");
-  await page
-    .getByRole("region", { name: "Ses değişimi keşfi", exact: true })
-    .getByRole("button", { name: "kitapta", exact: true })
-    .click();
-  await page
-    .getByRole("button", { name: "Eki birleştir", exact: true })
-    .click();
-  await expect(page.locator(".model-result")).toContainText("Ünsüz benzeşmesi");
+  await languageInteraction(page, "ses-bilgisi");
   await open(page, "sozcukte-yapi");
-  await page.getByRole("button", { name: "Evlerimizden", exact: true }).click();
-  await page
-    .locator(".word-branches")
-    .getByRole("button", { name: /evlerimizden/ })
-    .click();
-  await expect(page.locator(".model-result")).toContainText(
-    "Uzun olsa da yapı basittir",
-  );
+  await languageInteraction(page, "sozcukte-yapi");
   await expect(page.locator(".save-status")).toContainText(
     "Bu cihazda kaydedildi",
   );
@@ -423,8 +524,8 @@ test("division, common periods, energy and word transformations explain changed 
   });
   await context.setOffline(true);
   await page.reload();
-  await expect(page.locator(".model-result")).toContainText(
-    "Uzun olsa da yapı basittir",
+  await expect(page.locator(".language-result")).toContainText(
+    "0 yapım · 3 çekim · Basit",
   );
   const s = await stored(page);
   expect(s.sessions).toEqual([]);

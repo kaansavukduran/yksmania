@@ -1,12 +1,19 @@
-# Content coverage, 0.8.0 alpha
+# Content coverage,0.9.0 alpha
 
-Current navigation: cheatsheets open inline from the topic header, not from the
-sidebar. Legacy deep links remain supported. The source-only fallback is explicit
-for unprepared headings; listing a heading does not mean the lesson is ready.
-115 original questions and 8 verified official references (5 booklets) remain.
-The timer is shared local state, never learning evidence. Reset preserves local
-PDFs, notes, settings and page positions. Historical sections below describe
-earlier versions; current source-page review is in SOURCE_REVIEW.md.
+Current decision: all prepared educational content is built in. No learner PDF,
+source catalogue or booklet import. Separate Theory/Cheatsheets/Questions/Exams.
+57 theory lessons,28 detailed guides,60 native sheets,220 original questions;
+first45/479 ordered headings ready. One additional question-only factorization
+pack does not count as extra theory.120/80full-distribution mocks and entire
+MEB/OGM/private archive conversion are not complete. Current practice is90TYT,
+25numericalAYT and11branches, scaled165/120 or180/80minutes perquestion.
+All115 legacyquestionIDs/answers are retained;105 original items added.
+Eight verified official references have eight original native teaching variants;
+no new official question body or twenty-year completeness claim is made.
+Prior imported files remain in storage but source UI is removed. Personal progress
+backup is optional and never needed to supply a lesson. Historical sections below
+are superseded where they describe source imports or inline sheets. Current
+source-page boundaries are in SOURCE_REVIEW.md; test/release evidence inFORGE.md.
 
 These are different measurements. None measures a learner's mastery.
 
@@ -14,8 +21,10 @@ These are different measurements. None measures a learner's mastery.
 | --- | --- |
 | Main topic reference | 341 source rows: TYT 201, numerical AYT 140; stable topic IDs retained |
 | Detailed cheat-sheet outline | 479 headings; finer granularity and overlap with the main outline |
-| Interactive teaching | 54 lessons with authored SVG/vector interactions; 17 detailed guides; first 43 ordered headings have theory |
-| Interactive question bank | 115 original Turkish exercises; no official-item claim |
+| Interactive teaching | 57 lessons with authored interactions; 28 detailed guides; first 45 ordered headings have theory |
+| Native revision sheets | 60 built-in sheets, separate from theory; no material import |
+| Interactive question bank | 220 original Turkish exercises; 115 legacy IDs and answers preserved; no official-item claim |
+| Timed practice | 2 mixed sets and 11 branches; TYT 90 / numerical AYT 25 questions; proportionate times, incomplete official distribution |
 | Private archive inventory | 8,584 PDF file records in 246 folders; about 23.6 GB, before content-hash deduplication |
 | Locally prepared private packs | 143 PDFs / 4,989 pages: 126 cheat sheets, 14 MEBİ-named PDFs and 3 OGM past-question books |
 

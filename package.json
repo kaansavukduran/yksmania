@@ -1,6 +1,6 @@
 {
   "name": "yksmania",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Offline-first YKS learning with spaced retrieval and AIONIA companions",
   "main": "desktop/main.cjs",
   "scripts": {
@@ -40,7 +40,6 @@
     "@noble/hashes": "^2.4.0",
     "idb": "^8.0.4",
     "lucide-react": "^1.72.0",
-    "pdfjs-dist": "^6.5.438",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "zod": "^4.6.7"

@@ -20,7 +20,12 @@ it("publishes reviewed interactive theory separately from the question bank and 
     topics.add(pack.topicId);
     expect(studyTopicById(pack.topicId)?.subjectId).toBe(pack.subjectId);
     expect(lessonTopic[pack.id]).toBe(pack.topicId);
-    expect(lessonById(pack.id)?.questions).toEqual([]);
+    const prepared = lessonById(pack.id)!;
+    expect(prepared).toBeDefined();
+    for (const q of prepared.questions) {
+      expect(q.prompt.tr.length).toBeGreaterThan(20);
+      expect(q.answer).toBeLessThan(q.options.length);
+    }
     expect(pack.source).toMatch(/PDF/);
     expect(pack.body.length).toBeGreaterThanOrEqual(5);
     expect(pack.cases.length).toBeGreaterThanOrEqual(2);
@@ -56,8 +61,8 @@ it("publishes reviewed interactive theory separately from the question bank and 
     completionDate(s, narrativePacks[0].topicId, "questions"),
   ).toBeUndefined();
 });
-it("keeps an authored lesson at every one of the first 43 verified workbook headings", () => {
-  for (const topic of studyTopics.slice(0, 43))
+it("keeps an authored lesson at every one of the first 45 verified workbook headings", () => {
+  for (const topic of studyTopics.slice(0, 45))
     expect(
       topicLessons(topic.id).length,
       `${topic.order}: ${topic.title}`,

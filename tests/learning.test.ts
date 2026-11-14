@@ -1,3 +1,4 @@
+import legacyAnswers from "./fixtures/legacy-question-answers.json";
 import { electronShells } from "../src/learning/ElectronShellExplorer";
 import { describe, it, expect } from "vitest";
 import { lessons } from "../src/domain/content";
@@ -17,14 +18,14 @@ describe("learning content and backward-compatible exploration state", () => {
     for (const e of elements.slice(0, 20))
       expect(e.shells?.reduce((n, x) => n + x, 0)).toBe(e.z);
   });
-  it("gives each visual lesson a real Turkish five-item question set with valid answers", () => {
+  it("gives each visual lesson a self-contained Turkish question bank and preserves all115 legacy identities/answers with valid answers", () => {
     const questionLessons = lessons.filter(
       (lesson) => lesson.questions.length > 0,
     );
-    expect(questionLessons).toHaveLength(23);
+    expect(questionLessons.length).toBeGreaterThan(23);
     const ids = new Set<string>();
     for (const l of questionLessons) {
-      expect(l.questions).toHaveLength(5);
+      expect(l.questions.length).toBeGreaterThanOrEqual(5);
       expect(l.body.length).toBeGreaterThan(0);
       for (const q of l.questions) {
         expect(ids.has(q.id)).toBe(false);
@@ -35,7 +36,11 @@ describe("learning content and backward-compatible exploration state", () => {
         expect(Object.keys(q.explanation)).toEqual(["tr"]);
       }
     }
-    expect(ids.size).toBe(115);
+    const all = questionLessons.flatMap((l) => l.questions);
+    for (const [id, answer] of Object.entries(legacyAnswers))
+      expect(all.find((q) => q.id === id)?.answer).toBe(answer);
+    expect(Object.keys(legacyAnswers)).toHaveLength(115);
+    expect(ids.size).toBeGreaterThan(115);
   });
   it("opens the prior backup shape and keeps exploration separate from scored evidence", () => {
     const old: any = initialState();

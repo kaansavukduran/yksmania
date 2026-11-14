@@ -1,3 +1,4 @@
+import OttomanWorkshop from "./OttomanWorkshop";
 import { useExploration } from "./useExploration";
 import { ModelNumber } from "./ModelNumber";
 import { AtomCounter } from "./AtomCounter";
@@ -705,6 +706,14 @@ function Motion() {
   );
 }
 export function NarrativeModels({ id }: { id: string }) {
+  if (
+    [
+      "osmanli-kurulus-siyaseti",
+      "osmanli-askeri-teskilat",
+      "osmanli-medeniyeti",
+    ].includes(id)
+  )
+    return <OttomanWorkshop id={id} />;
   if (id === "bolme-bolunebilme") return <DivisionModel />;
   if (id === "ebob-ekok") return <CommonNumberModel />;
   if (id === "enerji-ve-hareket") return <EnergyModel />;

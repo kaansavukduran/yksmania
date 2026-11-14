@@ -1,0 +1,147 @@
+.cheat-reader {
+  padding: clamp(16px, 3vw, 32px);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.cheat-reader h2 {
+  margin-top: 0;
+}
+.cheat-reader p,
+.cheat-reader li {
+  line-height: 1.85;
+}
+.cheat-intro {
+  margin-top: 0;
+  color: var(--muted);
+}
+.cheat-sections {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-block: 2rem;
+}
+.cheat-section {
+  min-width: 0;
+  border-top: 2px solid var(--border);
+  padding-top: 1.25rem;
+}
+.cheat-section p:last-child {
+  margin-bottom: 0;
+}
+.cheat-comparisons {
+  margin-top: 1.25rem;
+  display: grid;
+  gap: 0.75rem;
+}
+.cheat-comparisons dl {
+  padding: clamp(12px, 2vw, 20px);
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+}
+.cheat-comparisons dl > div + div {
+  margin-top: 0.7rem;
+}
+.cheat-comparisons dt {
+  color: var(--muted);
+  font-size: 0.8em;
+}
+.cheat-comparisons dd {
+  margin: 0.25rem 0 0;
+}
+.cheat-cautions,
+.cheat-examples,
+.cheat-recall {
+  border-top: 1px solid var(--border);
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+}
+.cheat-cautions li + li {
+  margin-top: 0.5rem;
+}
+.cheat-solution {
+  padding-block: 0.75rem;
+}
+.cheat-solution summary {
+  cursor: pointer;
+  padding-block: 0.7rem;
+  min-height: 2.75rem;
+}
+.cheat-solution li + li {
+  margin-top: 0.7rem;
+}
+.cheat-recall-card {
+  padding-block: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+.cheat-recall-card h3 {
+  margin-top: 0;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+.cheat-recall-card button {
+  max-width: 100%;
+  min-width: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.cheat-recall-answer {
+  padding-inline-start: 1rem;
+  border-inline-start: 2px solid var(--accent);
+}
+.cheat-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+.cheat-actions button {
+  max-width: 100%;
+  min-width: 0;
+  text-align: start;
+  overflow-wrap: anywhere;
+}
+.cheat-source {
+  margin-top: 2rem;
+}
+.cheat-source summary {
+  cursor: pointer;
+  min-height: 2.75rem;
+  padding-block: 0.7rem;
+}
+.cheat-note {
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+}
+.cheat-note textarea {
+  width: 100%;
+  min-height: 8rem;
+}
+.cheatsheet-topics.subject-content {
+  margin: 0;
+  list-style: none;
+  padding-top: 0;
+}
+@media (max-width: 850px) {
+  .cheat-sections {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 400px) {
+  .cheat-sections {
+    gap: 1.25rem;
+  }
+  .cheat-reader {
+    padding: 16px;
+  }
+  .cheat-recall-card button,
+  .cheat-actions button {
+    padding-inline: 12px;
+    flex-wrap: wrap;
+  }
+  .cheat-cautions ul,
+  .cheat-solution ol {
+    padding-inline-start: 1.2em;
+  }
+}

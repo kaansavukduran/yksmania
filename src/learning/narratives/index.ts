@@ -1,3 +1,5 @@
+import { ottomanNarratives, ottomanQuestions } from "./ottoman";
+import { narrativeScienceQuestions } from "../narrativeScienceQuestions";
 import { mathematicsNarratives } from "./mathematics";
 import { biologyNarratives } from "./biology";
 import { historyNarratives } from "./history";
@@ -10,6 +12,7 @@ import { energyNarrative } from "./physicsEnergy";
 import { narrativeLesson } from "./types";
 import { seljukNarrative } from "./seljuk";
 export const narrativePacks = [
+  ...ottomanNarratives,
   ...biologyNarratives,
   ...mathematicsNarratives,
   ...historyNarratives,
@@ -24,7 +27,11 @@ export const narrativePacks = [
 export const narrativeById = new Map(
   narrativePacks.map((pack) => [pack.id, pack]),
 );
-export const sourceNarratives = narrativePacks.map(narrativeLesson);
+export const sourceNarratives = narrativePacks.map((pack) => ({
+  ...narrativeLesson(pack),
+  questions:
+    ottomanQuestions[pack.id] ?? narrativeScienceQuestions[pack.id] ?? [],
+}));
 export const narrativeTopics: Record<string, string> = Object.fromEntries(
   narrativePacks.map((pack) => [pack.id, pack.topicId]),
 );

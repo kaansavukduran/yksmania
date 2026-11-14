@@ -1,3 +1,95 @@
+# 0.9.0 — yerleşik öğretim ve denemeler, yerel kabul tamamlandı
+
+Son kaynak derlemesi: check, 94/94 unit ve 87/87 Chromium browser PASS (5,5 dk).
+YKS-023–028 kabul koşulları ve önceki ilgili regresyonlar geçti; hazırlanmamış
+paketlerin aramada boş kart üretmesi de giderildi. Ayrı exam kabulü 4/4 PASS.
+Son yerel Electron akışı PASS, rendererErrors 0. Normal/büyük yazı, koyu/açık
+tema, 320/844/1440px ve çevrimdışı akışlar gerçek DOM/görüntü ile sınandı.
+Altı yeni React bileşeninde hook/cleanup/kayıt/odak incelemesi yeni kusur bulmadı.
+16 ulaşılabilir rotada akademik yükleme kontrolü yok; kişisel JSON yedeği ayrı.
+294 değişen yolun gizlilik incelemesi: 8.845 özel kaynak kimliğiyle 0 eşleşme,
+özel PDF/indirme URL’si/anahtar veya kapsam dışı dosya yok. PDF.js varlıkları silindi.
+İlk son-kabul başlatması sistem Chromium yolu verilmediğinden tarayıcıyı açamadı;
+bu ortam hatası saklandı, aynı 87 test doğru kurulu Chromium ile eksiksiz geçti.
+Kabul kanıtları: `/workspace/work/forge-090/{check-final,unit-final,build-accepted,
+browser-accepted,native-final,exams-focused-accepted}.log`; erişilebilir rota,
+mahremiyet ve piksel sınırı JSON kayıtları aynı özel çalışma dizinindedir.
+CI, canlı Vercel ve yeni paket sonuçları yayımdan sonra bu kayda eklenecek.
+
+Başlangıç `ead659b153aef689bf689d56b0343dd57e49376b`, forge/in-depth-learning;
+fetch/remote uç karşılaştırması yapıldı. Kullanıcının son talimatı önceki kaynak
+ithali/inlinekağıt kararını değiştirdi: öğrenci materyal sağlamaz. Akademik
+PDF/katalog arayüzü, eski Library/SourceList/TopicCheatsheet/Reader kaldırıldı.
+Kaynaklar özgün yerleşik öğretime dönüştürüldü. Eski IDB dosyaları/notları ve
+kişisel ilerleme JSON geri yükleme korunur. Eski/sources ve/library hazır dersleri
+sunar. Kopya Kağıtları menüde ayrı; Sınavlar Sorular'ın altındadır.
+
+57 anlatım,28 derin rehber,60 yerleşik kağıt,220 özgün soru.28 rehber dışında
+kalan hazır anlatımlar kaynaklı, aşamalı vaka/kanıt çalışmalarıdır. Önceki8 kısa
+başlangıç dersi gerçek kaynaklarla genişletildi. Ses/yapı, çarpanlara ve üç
+Osmanlı başlığı yeni model/öğretim aldı.105 yeni soru eklendi, eski115 soru ve
+cevapları sabit fixture ile korunur. Eski çarpanlara5'lik set aynıdır; ileri10
+ayrı soru paketidir, anlatım/kağıt sayısını şişirmez. Soru paketinin zengin kağıdı
+ezme riski odaklı regresyonla engellendi. Sekiz eski ÖSYM referansı için sekiz
+bağımsız özgün öğretim varyantı yerleşiktir; resmî sorunun birebir kopyası değildir.
+İlk45/479 sıra başlığı hazırdır,46 kimyadaki Elementlerin sınıflandırılmasıdır.
+Osmanlı medeniyeti ayrı sonraki başlık; ilk46 hazır diye sayılmaz. Bütün arşiv,
+126 özel kağıdın tüm ayrıntıları ve20 yıllık ÖSYM taraması hazır değildir.
+
+Denemeler: TYT karma90, AYT Sayısal25,11 branş. TYT120/165dk ve AYT80/180dk
+oranından süre; tam120/80 resmî dağılım diye sunulmaz. Kayıtlı soru/anahtar/
+metin snapshot, cevap/boş/flag ve son zaman; offline/süreç yeniden başlatma;
+yan ekran veya açılışta expiry, açık onaylı erken bitir, doğru/yanlış/boş/net
+ve tam özgün açıklamalar. Sonuçlar deneme geçmişinde ayrıdır, XP veya teori
+ustalığı oluşturmaz. Yazma hatasında yanlış başarı yok; globalRetry sonrası
+expiry bir kez yeniden denenir, her500ms tekrarlanan yazma hatası üretilmez.
+Aynı set tekrar edilebilir; rastgele yeni tam deneme üretildiği iddiası yok.
+
+Unslop/Fragaria/Yazılım Denetle uygulandı, canlı AIONIA v1.7 okundu. Onaylı32kare
+Aion atlası değişmedi.94 birim + check/build PASS. İlk tam browser79/85; altı
+hatanın beşi yeni testlerin seçici/başlatma/DOM metin örneklemesi uyumsuzluğu,
+biri aşağıdaki yeni exam taşması. Beklentiler zayıflatılmadan düzeltildi:
+Theoryselector yanlışlıkla.cheatsheet-topic olmuştu; rehber h2 içinde model h2
+vardı; innerText/textContent blok boşluğu farkı; Provider açılmadan menü kontrolü;
+açgözlü PDF.*ekle regex'inin örnekler kelimesini eşleştirmesi. Gerçek yükleme
+kontrolü/girdi yokluğu, içerik/odak/not/offline sonuç denetimleri korunur.
+
+YKS-023 (Orta):320px UI%200/yazı%150 Türkçe deneme başlığı313px metinle belgeyi
+325px yaptı. Scoped h1 wrap, font korunur; aynı yeni gerçek UI testi tekrar edilir.
+YKS-024 (Orta): aynı ölçeklerde yerel dialog UAmaxwidth hem reset hem sınav bitir
+penceresini224px'e sıkıştırdı; yatay içerik309/321px. Yazar maxwidth/copywrap/
+kontrollü padding ile288px dialog,286px içerik; tanı ölçümü yatay taşma0.
+YKS-025 (Orta): TYT2:03:45 saati+ikon331px belge oluşturdu. İkon/etiket ayrı,
+sayaç tam satır ve gerekirse saat sonrası<wbr>; metin ve font korunur. Tanı320px.
+40 normal/büyük ölçek koyu/açık görüntüsü, gerçek DOM ölçümleri ve emüle touch
+alındı; son derlemede aynı ölçümler/testler tekrar edilecektir.
+
+Yerel Electron tüm offline ders/rehber/kağıt/not, soru taslağı, saat, exam snapshot
+ve deadline ile süreç yeniden başlatma, sonuç/reset akışları PASS; renderer0.
+Bu ilk sonuç yeni CSS onarımı öncesidir; son paket/canlı sonuç ayrıca eklenecek.
+Native fiziksel Android, temiz Windows kurulumu/portable taşıma ve iki native
+paket arasında yükseltme NOT TESTED. İlk0.8veri/PDF baytlarını gizli koruma testi
+korunur. Root ve altı iş kolu kaynak/uygulama/denetimi paylaşılmış dosyalarda
+çakışmadan yaptı; kaynak okuma sınırları SOURCE_REVIEW.md'de.
+
+Sonraki tam browser85/86 PASS; aynı exam testinde sonuç tablosunun klavyeyle
+kaydırılamadığı doğrulandı (YKS-028/Orta). Tabindex0 ve adlandırılmış bölge,
+gerçek ArrowRight ile scrollLeft>0 kabulü eklendi. YKS-026/Orta: yeni elektrik
+alan tanımında F'nin elektriksel kuvvet olduğu açıklandı; net kuvvet değil.
+Sekiz fizik örneği bağımsız olarak tekrar hesaplandı. YKS-027/Düşük: soru-only
+paket Theoryaramasında boş subjectkartı üretiyordu; mode-aware arama ve memo
+bağımlılığı düzeltildi. Aynı görünür kart yokluğu testi onarım öncesi FAIL;
+yeni build'de ve son tam kabulde tekrar çalıştırılacak. Son CSS gerçekten
+320/844/1440px'de yeniden render edilerek ölçüldü: dialog288px, yatay scroll0;
+sayaç ve belge320px, renderer0. Yerel native son akışlar tekrar PASS.
+
+Kanıt/work/forge-090: check-final,unit-final,build-final,browser-full,native.log;
+exams-focused.log,manual-ui.json, görseller ve geometryJSON kayıtları. Son tam
+kabul/CI/yayın sonucu bu kaydın üstüne eklenecek. PDF.js ve200 gereksiz font
+varlığı paketten kaldırıldı; ilk hazır asset cache13,1MiB'den8,65MiB'ye indi.
+
+---
+
 # 0.8.0 yayımlandı — güncel teslim kaydı
 
 Teslim/paket kaynağı `b08c9c118b6ac16c73f53ae55ccfb78a26e0c281`.

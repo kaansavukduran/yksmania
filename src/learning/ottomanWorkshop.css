@@ -1,0 +1,68 @@
+.ottoman-workshop {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  padding: clamp(12px, 3vw, 24px);
+}
+.ottoman-workshop h3 {
+  margin-top: 0;
+}
+.ottoman-evidence {
+  max-width: 75ch;
+  line-height: 1.9;
+}
+.ottoman-choices {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 10em), 1fr));
+  gap: 0.65rem;
+  margin-block: 1rem;
+}
+.ottoman-choices button {
+  min-width: 0;
+  max-width: 100%;
+  min-height: 44px;
+  overflow-wrap: anywhere;
+  padding-inline: clamp(10px, 2vw, 18px);
+}
+.ottoman-feedback {
+  padding-block: 1.2rem;
+  margin-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+.ottoman-feedback svg {
+  display: block;
+  width: 100%;
+  max-height: 100px;
+  margin-top: 1rem;
+}
+.ottoman-chain {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.8rem;
+  padding-left: 1.5rem;
+}
+.ottoman-chain li {
+  padding-left: 0.2rem;
+}
+.ottoman-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.ottoman-flow {
+  animation: ottoman-flow 1.2s linear infinite;
+}
+@keyframes ottoman-flow {
+  to {
+    stroke-dashoffset: -30;
+  }
+}
+:root[data-motion="off"] .ottoman-flow {
+  animation: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ottoman-flow {
+    animation: none;
+  }
+}

@@ -4,7 +4,6 @@ import { useApp } from "../store";
 import { lessons, subjects } from "../domain/content";
 import curriculum from "../data/curriculum.json";
 import { Empty, SubjectMark } from "../components/Shared";
-import { SourceList } from "../components/SourceList";
 import type { Lesson } from "../domain/model";
 import { StudyTimer } from "../components/StudyTimer";
 export function Courses({
@@ -28,11 +27,14 @@ export function Courses({
             lessons.some(
               (lesson) =>
                 lesson.subjectId === s.id &&
+                (mode === "theory"
+                  ? !lesson.tags.includes("soru-seti")
+                  : lesson.questions.length > 0) &&
                 l(lesson.title).toLocaleLowerCase("tr-TR").includes(query),
             ) ||
             s.topics.some((v) => v.toLocaleLowerCase("tr-TR").includes(query))),
       ),
-    [exam, query, l],
+    [exam, query, l, mode],
   );
   return (
     <>
@@ -79,7 +81,9 @@ export function Courses({
           const ready = lessons.filter(
             (v) =>
               v.subjectId === subject.id &&
-              (mode === "theory" || v.questions.length > 0) &&
+              (mode === "theory"
+                ? !v.tags.includes("soru-seti")
+                : v.questions.length > 0) &&
               (!query ||
                 l(subject.name).toLocaleLowerCase("tr-TR").includes(query) ||
                 l(v.title).toLocaleLowerCase("tr-TR").includes(query)),
@@ -158,11 +162,6 @@ export function Courses({
                       </ul>
                     </details>
                   )}
-                  <SourceList
-                    key={`${subject.id}:${mode}`}
-                    subjectId={subject.id}
-                    mode={mode}
-                  />
                 </div>
               )}
             </section>
