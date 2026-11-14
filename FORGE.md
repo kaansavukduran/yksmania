@@ -1,4 +1,19 @@
-# 0.9.0 — paket kabulü tamamlandı, Vercel günlük kotada
+# 0.9.0 — Vercel ve indirilebilir paketler yayımlandı
+
+[Canlı43613106471](https://github.com/kaansavukduran/yksmania/actions/runs/43613106471)
+87/87 PASS (5,0dk), normal production HTTPS üzerinde. Test kaynağı eb188d6,
+uygulama kaynağı b92b2b5 ile aynı; aradaki fark yalnız teslim dokümanları.
+Yerel87, temiz CI87 ve canlı87 ayrı ayrı PASS. Üç runtime hash'i yerel/canlı
+birebir eşleşir. İçerik57 anlatım/28 ayrıntılı rehber/60 kağıt/220 özgün soru;
+sıranın ilk45/479 başlığı hazır. Bütün arşiv veya tam resmî dağılımlı denemeler
+tamamlanmış değildir. Fiziksel/native geçiş boşlukları aşağıda korunur.
+
+Son Vercel kontrolünde GitHub kaynaklı production dağıtımı
+`dpl_HVAerBa5W5bAocHakgZqKwM5e6X6`/da4c2ec58eaf0c7fea0b00b447c806b8bbb38f8d
+READY bulundu; HTTPS version.json0.9.0. index.html, sw.js ve version.json
+SHA-256 değerleri kabul edilmiş yerel derlemeyle birebir aynı. Manuel API'nin
+önceki kota hatası uygulamanın GitHub bağlantılı dağıtımını engellemiş görünmüyor;
+kota kalktı diye varsayılmaz. Yeni canlı87test kabulü43613106471 PASS.
 
 [0.9.0-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.9.0-alpha.1)
 yayımlandı, draft değil. [Release43612877695](https://github.com/kaansavukduran/yksmania/actions/runs/43612877695)
@@ -9,7 +24,7 @@ Tag ve verified-run.json aynı b92b2b5 başarılı main kaynağını gösterir.
 eşleşti; liste7payload içerir. Android code15/name0.9.0/v2 signature PASS.
 Beş büyük binary ayrıca yerelde indirilip hash'lenmedi. Son kayıt commit'leri
 yalnız dört teslim dokümanını değiştirir; kabul edilen runtime hash'leri aynıdır.
-Son normal TLS canlı version.json kontrolü yine0.8.0: Vercel güncellenmedi.
+Son normal TLS canlı version.json kontrolü0.9.0; gerçek dağıtım yukarıda doğrulandı.
 
 Doğrulanan uygulama/paket kaynağı `b92b2b52be5f5a08b9238b565f73b6998481b65a`.
 [CI43611757852](https://github.com/kaansavukduran/yksmania/actions/runs/43611757852)
@@ -31,13 +46,13 @@ offline açıldı; reload/taslak devam PASS, renderer0. Bu izole yerel web kabul
 aşıldı. İlk harness'in iki meşru güncelleme düğmesini eşleştiren seçici hatası
 saklandı; Settings içindeki gerçek düğme seçildi, ürün/test şartı zayıflatılmadı.
 
-**Vercel/new public acceptance BLOCKED:** günlük100 dağıtım kotası dolu.
-Git kaynaklı production talebi HTTP402, `api-deployments-free-per-day`,
-retryAfter86400 verdi; kurulu/kimlikli CLI alternatifi yok. Canlı site hâlâ0.8.0,
-eski dağıtım `dpl_bpyVHjvmsFLKFWVditzEZYtBmTpe`/ead659b;0.9 canlı denetimi
-yapılmadı. Kota açılınca doğrulanmış yeni main kaynağını aynı projeye dağıt,
-version.json ve commit'i kontrol et, ardından published-smoke87testini çalıştır.
-Yeni proje/plan/hesap değişimi veya arka plan zamanlama yapılmadı.
+**İlk manuel dağıtım engeli:** Git kaynaklı API production talebi HTTP402,
+`api-deployments-free-per-day`/günlük100, retryAfter86400 verdi; yerel CLI yoktu.
+İlk kontrolde eski dağıtım dpl_bpyVHjvmsFLKFWVditzEZYtBmTpe/ead659b0.8.0 idi.
+Sonraki normal TLS kontrolü0.9.0'ı gösterdi; metadata GitHub da4c2ec production
+READY ve üç runtime hash eşitliğiyle doğrulandı. İlk BLOCKED kaydı geçmiş
+kanıttır; Vercel0.9 güncel durumu READY. Yeni proje/plan/hesap değişimi veya
+arka plan zamanlama yapılmadı. Canlı kabul ayrıca yukarıda kaydedilir.
 0.9 paket yayını başarılı CI'nin mevcut dosyalarını yeniden derlemeden kullandı.
 
 İlk uzak CI43611497875 npm ci sırasında source-map-0.9.0 için404 verdi.
@@ -62,7 +77,7 @@ bu ortam hatası saklandı, aynı 87 test doğru kurulu Chromium ile eksiksiz ge
 Kabul kanıtları: `/workspace/work/forge-090/{check-final,unit-final,build-accepted,
 browser-accepted,native-final,exams-focused-accepted}.log`; erişilebilir rota,
 mahremiyet ve piksel sınırı JSON kayıtları aynı özel çalışma dizinindedir.
-CI, canlı Vercel ve yeni paket sonuçları yayımdan sonra bu kayda eklenecek.
+CI, canlı Vercel ve yeni paket sonuçları bu kaydın başında ayrıca gösterilir.
 
 Başlangıç `ead659b153aef689bf689d56b0343dd57e49376b`, forge/in-depth-learning;
 fetch/remote uç karşılaştırması yapıldı. Kullanıcının son talimatı önceki kaynak

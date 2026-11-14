@@ -1,12 +1,21 @@
 # Quality evidence
 
-## 0.9.0 paket kabulü / canlı dağıtım sınırı
+## 0.9.0 paket kabulü / canlı dağıtım
+
+Published web43613106471, normal production HTTPS:87/87 PASS (5,0dk).
+Test kaynağı eb188d6 ve uygulama/paket b92b2b5 arasındaki fark yalnız teslim
+dokümanlarıdır. Yerel87/CI87/public87 ayrı PASS; runtime hash eşitliği korunur.
+
+Son production Vercel dpl_HVAerBa5W5bAocHakgZqKwM5e6X6/da4c2ec READY,
+HTTPS version0.9.0. Üç runtime hash'i kabul edilen yerel derlemeyle eşit;
+önceki manuel kota hatasından sonra GitHub bağlantılı dağıtım gerçekleşti.
+Yeni canlı87test43613106471 PASS.
 
 Release43612877695 PASS, v0.9.0-alpha.1 draft değil;8asset yayımlandı.
 Tag/verified-run doğru b92b2b5 başarılı CI43611757852 kaynağı; indirilen iki
 kanıt hash'i eşleşti, checksum listesi7payload. Android code15/name0.9.0/v2PASS.
-Beş büyük binary ayrıca yerelde hash'lenmedi. Son canlı version.json0.8.0;
-Vercel ve yeni üretim kabulü aşağıdaki kota nedeniyle BLOCKED kalır.
+Beş büyük binary ayrıca yerelde hash'lenmedi. Son canlı version.json0.9.0;
+Vercel READY, yeni canlı kabul yukarıda ayrı izlenir.
 
 Kaynak b92b2b52be5f5a08b9238b565f73b6998481b65a; CI43611757852 dört iş PASS.
 Temiz npm ci/check/build,94 birim ve87 browser (4,2dk). Windows/Linux gerçek
@@ -21,9 +30,9 @@ Taslak/not/ayarlar/öğrenme kayıtları/PDF baytları tam korundu; yeni kağıt
 kez offline açıldı, reload ve paragraf devam PASS, renderer0. Bu üretim veya
 native-paket geçişi değildir; önkoşul NOT TESTED kaydının yerini aldı.
 
-Vercel0.9 production ve yeni canlı87test BLOCKED: API402 günlük100deploy kotası,
-retry86400s. Yerel CLI alternatifi yok. Production hâlâ0.8.0, yeni sürüm orada
-varmış gibi raporlanmaz. Kota sonrası dağıtım+canlı kabul gerekir; tam iz FORGE.
+İlk manuel Vercel talebi API402 günlük100deploy kotası/retry86400s verdi;
+yerel CLI alternatifi yoktu. İlk0.8.0/BLOCKED kaydı, sonraki GitHub dağıtımı
+READY ve gerçek0.9.0/hash kontrolüyle güncellendi. Tam zaman çizgisi FORGE'de.
 
 ## 0.9.0 son yerel kabul
 

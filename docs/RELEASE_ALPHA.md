@@ -1,9 +1,10 @@
 YKSMania 0.9.0 alpha
 
-Bu sayfa 0.9.0 indirilebilir paketlerini sunar. Vercel’in günlük100 dağıtım
-kotası nedeniyle canlı site hâlâ0.8.0’dadır; yeni web dağıtımı bekliyor.
+Bu sayfa 0.9.0 indirilebilir paketlerini sunar. Canlı site de0.9.0:
+https://yksmania.vercel.app — dağıtım READY ve kabul edilen derlemeyle eşleşir.
 Paket kaynağı b92b2b52be5f5a08b9238b565f73b6998481b65a.
 CI43611757852:94 birim,87 tarayıcı ve Windows/Linux/Android işleri PASS.
+Canlı HTTPS kabulü43613106471:87/87 PASS (5,0dk).
 Yerel gerçek0.8→0.9 web güncellemesi taslak/not/ayar/dosya baytlarını korudu;
 bu sonuç üretim veya native paket yükseltme testi değildir.
 
