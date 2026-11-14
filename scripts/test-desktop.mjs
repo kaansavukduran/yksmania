@@ -24,6 +24,26 @@ try {
   app = await launch();
   let page = await app.firstWindow();
   const errors = [];
+  const storedTimer = () =>
+    page.evaluate(
+      () =>
+        new Promise((resolve, reject) => {
+          const request = indexedDB.open("yksmania");
+          request.onsuccess = () => {
+            const db = request.result,
+              read = db
+                .transaction("state")
+                .objectStore("state")
+                .get("current");
+            read.onsuccess = () => {
+              resolve(read.result.focusTimer);
+              db.close();
+            };
+            read.onerror = () => reject(read.error);
+          };
+          request.onerror = () => reject(request.error);
+        }),
+    );
   page.on("pageerror", (error) => errors.push(String(error)));
   await page.waitForSelector(".hero");
   await page.context().setOffline(true);
@@ -282,6 +302,8 @@ try {
     })
     .click();
   await expect(page.locator(".hourglass-state")).toHaveText("Kum akıyor");
+  await expect(page.locator(".hourglass-time")).not.toHaveText("20:00");
+  const runningTimerBeforeRestart = await storedTimer();
   await expect(page.locator(".save-status")).toContainText(
     "Bu cihazda kaydedildi",
   );
@@ -303,7 +325,12 @@ try {
     page.getByRole("textbox", { name: "Notun", exact: true }),
   ).toHaveValue("Paragraf taslağı korunmalı.");
   await expect(page.locator(".hourglass-state")).toHaveText("Kum akıyor");
+  expect(await storedTimer()).toEqual(runningTimerBeforeRestart);
   await page.getByRole("button", { name: "Durdur", exact: true }).click();
+  await expect(page.locator(".hourglass-state")).toHaveText("Duraklatıldı");
+  await expect(page.locator(".save-status")).toContainText(
+    "Bu cihazda kaydedildi",
+  );
   const timerRemaining = await page.locator(".hourglass-time").innerText();
   expect(timerRemaining).toMatch(/^19:/);
   await page.reload();

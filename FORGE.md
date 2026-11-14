@@ -1,3 +1,22 @@
+# 0.8.0 — paket ve canlı kabul izleme
+
+İlk kaynak8df0d25 CI43600766700: verify72unit/73browser PASS, Android PASS;
+Windows ve Linux paketleri üretildi fakat yeni native timer testinin19:…
+beklentisi20:00 okudu. Kapatmadan önce gerçek azalma beklenmesi, IDB bitiş
+zamanının süreçler arasında birebir eşitliği ve duraklatmanın dayanıklı UI
+sonucunun beklenmesi eklendi. Yerel native tekrar PASS, rendererErrors0.
+Aynı regex/gerçek kalan süre kabulü korunur; bekleme uzatılıp test atlanmaz.
+Uygulama dosyaları bu düzeltmede değişmedi. Paket CI yeni kaynakta tekrarlanır.
+
+İlk public43600807364:72/73; ilk offline PDF canvas açılışında30s süre aşımı.
+Diğer PDF/not/timer/sıfırlama ve yeni içerik denetimleri PASS. İlk koşuda iz
+kapalı olduğundan sonuç ağ/geçici hata diye varsayılmaz; yeni public koşu
+retain-on-failure trace tutacak. Yerel public deneme sandbox Chromium TLS
+sertifika engeline takıldı; bu, public CI'nin PDF bulgusundan ayrı sınırdır.
+Son başarılı test ve yayın kaydı bu başlığın üstüne eklenecek.
+
+---
+
 # 0.8.0 — son yerel kabul tamamlandı, yayın hazırlanıyor
 
 72 birim, check/build ve son tam Chromium kabulü73/73 PASS.

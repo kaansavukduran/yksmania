@@ -1,5 +1,11 @@
 # Quality evidence
 
+İlk uzak CI43600766700 verify72unit/73browser PASS; yeni native timer testinde
+19:… beklenirken20:00 okundu. Gerçek azalmayı ve pause kayıt sonucunu bekleme,
+kayıtlı deadline’ın süreçler arasında tam eşitliği eklendi; yerel tekrar PASS.
+İlk public43600807364:72/73, ilk offline PDF canvas30s süre aşımı; yeni public
+iz kaydıyla tekrar çalıştırılır, neden henüz geçici ağ diye sınıflandırılmaz.
+
 0.8.0 son yerel kabul:72 unit, check/build,73/73 Chromium PASS. İki yeni
 kusur YKS-021/022 aynı koşullarda PASS; diğer önceki regresyonlar korunur.
 Geliştirme Electron yeniden başlatma/offline/kum saati/reset PASS, renderer0.
