@@ -11,7 +11,7 @@ import {
   density,
   digitParts,
   motionSteps,
-} from "./narrativeModels";
+} from "./narrativeCalculations";
 const fmt = (value: number) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 3 }).format(value);
 function ChainBuilder({ id }: { id: string }) {

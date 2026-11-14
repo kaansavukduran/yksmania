@@ -1,3 +1,25 @@
+# 0.6.0 — Windows modül adı çakışması düzeltmesi
+
+CI43589340483:64unit/64browser PASS; Linux paketli kabul ve Android imza
+kontrolü PASS. Windows build TS1149/TS1261 ile durdu: NarrativeModels.tsx
+ve narrativeModels.ts uzantısız import çözümlemesinde Windows üzerinde
+çakışıyordu. Bu gerçek platform kusurudur; test hatası diye geçilmedi.
+Saf hesap modülü narrativeCalculations.ts adını aldı;4import güncellendi.
+check/build artık case-insensitive uzantısız modül yolu denetimiyle başlar.
+Eski çakışmayı içeren geçici2dosyalı örnek guard tarafından reddedildi.
+Yerel85modül yolu, check/build,64unit,9anlatım browser ve Linux geliştirme
+Electron offline/reload/restart PASS; rendererErrors0.
+
+Public43588836416:64/64 PASS (7,1dk), checkout95978b0. Daha sonraki e21b838
+sadece test onay beklemeleri/belgedir. Modül adı düzeltmesinin derlenmiş
+JS/CSS/worker/version çıktıları yayındaki0.6.0ile byte düzeyinde karşılaştırıldı;
+sonuç /workspace/work/lesson-depth/runtime-byte-comparison.json içindedir.
+Bu kaynak düzeltmesi öğrenme metinlerini, veri kimliklerini veya arayüz
+davranışını değiştirmez. Yeni tam paketCI bekleniyor; Windows paketi bu
+kontrol geçmeden yayımlanmayacak.
+
+---
+
 # 0.6.0 yayın doğrulaması — kalıcı kayıt beklemeleri
 
 Uygulama kaynağı95978b0dc47294fc914fd04c5b70c13fcba96d14 main'e gönderildi.

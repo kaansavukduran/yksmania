@@ -1,6 +1,6 @@
 import { ModelNumber } from "./ModelNumber";
 import { clampInt } from "./mathModels";
-import { fallEnergy } from "./narrativeModels";
+import { fallEnergy } from "./narrativeCalculations";
 import { useExploration } from "./useExploration";
 const fmt = (n: number) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 3 }).format(n);

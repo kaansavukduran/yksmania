@@ -8,7 +8,7 @@ import {
   euclideanDivision,
   commonNumbers,
   fallEnergy,
-} from "../src/learning/narrativeModels";
+} from "../src/learning/narrativeCalculations";
 it("decomposes every supported natural number without dropping internal zero positions", () => {
   for (let n = 0; n <= 9999; n++) {
     const parts = digitParts(n);

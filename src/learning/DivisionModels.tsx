@@ -1,7 +1,7 @@
 import { useExploration } from "./useExploration";
 import { clampInt } from "./mathModels";
 import { ModelNumber } from "./ModelNumber";
-import { commonNumbers, euclideanDivision } from "./narrativeModels";
+import { commonNumbers, euclideanDivision } from "./narrativeCalculations";
 export function DivisionModel() {
   const [saved, set] = useExploration("euclidean-groups", {
     total: 29,

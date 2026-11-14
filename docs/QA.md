@@ -581,3 +581,15 @@ e⁻ sembolüyle düzeltildi.
 
 0.6.0 son koşu ve dağıtım durumları FORGE.md içindedir; tarihsel test
 sonuçları bu sürümün kabul sonucu sayılmaz.
+
+
+## YKS-017: Windows modül çözümleme çakışması
+
+0.6.0 ilk Windows build'inde TS1149/TS1261 doğrulandı: büyük-küçük harfle
+ayrılan NarrativeModels.tsx ve narrativeModels.ts, Linux'ta geçmesine rağmen
+Windows TypeScript çözümlemesinde çakıştı. Saf hesap modülü
+narrativeCalculations.ts adını aldı;4kullanıcı import'u güncellendi.
+check-module-paths.mjs uzantısız kaynak yollarını case-insensitive denetler;
+check/build girişlerine bağlandı. Aynı eski kusuru içeren geçici örnekle
+reddetme kontrolü PASS; mevcut85kaynak modülü PASS. Hesapların davranış
+testleri korunur. Windows paket sonucu son Forge kaydında belirtilir.
