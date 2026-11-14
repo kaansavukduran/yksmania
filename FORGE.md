@@ -25,9 +25,19 @@ korundu; p1–p5 passage taşıyor. WIP konu üretimi07e46da dal commit'inde sak
 
 AIONIA v1.7 canlı standardı yeniden okundu, aynı revizyon. Art değişmedi.
 
-Sürüm 0.5.2, Android code10. Paket/yayın kanıtı henüz oluşturulmadı; hiçbir
-başarılı dağıtım veya fiziksel cihaz doğrulaması varsayma. Sonuçları ilerledikçe
-bu başlığa ekle. Önceki tarihsel kayıt aşağıda korunur.
+Sürüm0.5.2, Android code10. Kaynak596882d GitHub main'e gönderildi;
+Vercel production dpl_2T8VBids1QSF3K5QLSZ27BuCLZ9K READY, public version.json
+0.5.2 doğrulandı. Yerel tarayıcıyla HTTPS kabulü proxy sertifika kökü nedeniyle
+ERR_CERT_AUTHORITY_INVALID / BLOCKED; TLS doğrulaması kapatılmadı. GitHub
+Published web acceptance43579996297 aynı kaynağın public site kabulünü yürütüyor.
+
+İlk CI43579848849:45unit PASS, browser49/50. Mobil test hatalı cevabın
+optimistik görünümünden hemen sonra IndexedDB kaydını beklemeden reload yapmış;
+normal kaydediliyor/kaydedildi durumunu izlemiyordu. Test, kayıt başarı durumunu
+bekleyecek şekilde düzeltildi; yanlış cevabın, metnin ve notun reload sonrası
+korunma beklentisi aynı kaldı. Odaklı yerel2/2 tekrar PASS. Uygulama kodu
+bu test düzeltmesinde değişmedi. Yeni CI/paket ve canlı sonuçlarını ekle;
+fiziksel cihaz/temiz kurulum doğrulaması varsayma. Tarihsel kayıt aşağıdadır.
 
 ---
 
