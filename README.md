@@ -2,9 +2,10 @@
 
 Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.9.2 alpha**.
 
-[Uygulamayı aç](https://yksmania.vercel.app) · [Windows/Linux/Android paketleri](https://github.com/kaansavukduran/yksmania/releases)
+[Uygulamayı aç](https://yksmania.vercel.app) · [Windows/Linux/Android paketleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.9.2-alpha.1)
 
-**Yayın durumu:** 0.9.2 yerel kabulü geçti; canlı ve paket doğrulamaları sürüyor.
+**Yayın durumu:** 0.9.2 Vercel’de ve Windows/Linux/Android paketlerinde yayında.
+126 birim, temiz CI ve canlı sitede ayrı ayrı 101 tarayıcı testi geçti.
 Paket ve canlı dağıtım kanıtları [FORGE](FORGE.md)’de.
 
 Ders materyali yüklemek gerekmez. **Konu Anlatımı → Kopya Kağıtları → Sorular →

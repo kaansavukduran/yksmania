@@ -1,15 +1,36 @@
 # 0.9.2 kabul kaydı
 
+Kaynak9825e32960a712c81dcb6861c7386189d7a8d2ae Vercel production READY;
+normalTLS version0.9.2 ve index/sw/version yerel/canlı SHA256 eşitliği PASS.
+CI43627576911 verify126unit/101browser PASS (5,1dk); canlı43627628221
+aynı9825e32 kaynağında101/101 PASS (5,7dk). CI43627576911 dört iş de PASS;
+paketli Windows/Linux offline/yeniden başlatma/deneme/timer/reset mevcut smoke
+akışları PASS, rendererErrors0. Android build ve imza/manifest komutları PASS.
+Release43628665935 PASS; v0.9.2-alpha.1 draft değil,8 asset. Beş binary
+başarılı43627576911 koşusundan yeniden derlenmeden yayımlandı. Tag ve
+verified-run aynı9825e32; indirilen iki kanıt hash'i eşit,7 payload listesi.
+Android0.9.2/code17/v2 signature PASS; beş büyük binary ayrıca yerelde
+hash'lenmedi. Fiziksel Android/temiz kurulum/portable taşıma ve iki native
+sürümle yükseltme NOT TESTED. Kapsamda açık doğrulanmış kusur yok.
+
+Ayrı yerel origin/profilde gerçek0.9.1→0.9.2 SW update PASS: eski build
+normalTLS/hash/revision ile doğrulandı; uygulamanın gerçek update düğmesi
+kullanıldı. Eski nükleik kimlik/not/tamamlanma, soru taslağı, öğrenme+üç tekrar,
+ayarlar ve sentetik legacy870bayt PDF/not/sayfa tam korundu. Yeni DNA/RNA
+modeli ilk kez offline açıldı,16 H bağı/not/keşif reload kalıcı, XP25→25,
+renderer0. Yalnız eski belge koşulu IDB'ye seed edildi; yeni gerçek özel PDF yok.
+Bu web/yerel origin kabulüdür; fiziksel/native veya production profil geçişi değil.
+
 Altı kaynaklı atölye:62 açıklama bölümü,31 çözümlü örnek,29 recall ve60 yeni
 özgün soru. Önceki240 soru değişmezliği ve ilk58 çalışma başlığı sürekliliği
 birim kabulüne eklendi. check/build ve126 birim PASS; son browser/yayın
-sonuçları tamamlandıktan sonra buraya eklenecek. İlk hedefli12 test11PASS;
+sonuçları bu bölümün başında. İlk hedefli12 test11PASS;
 ısıdaki gerçek320px iç taşma YKS-030 olarak korundu ve onarıldı.
 
 Yerel tam101/101 browser PASS (6,8dk). Son scoped düğme boşluğu ve sürüm notu
 derlemesinde check/build,126 unit ve12/12 yeni kaynak testi PASS (55,3s).
 Kelime genişliği regresyonu font45px korunurken PASS; kabul sınırı gevşetilmedi.
-Son kaynağın temiz CI tam101/paket ve canlı sonuçları henüz bekleniyor.
+Son kaynağın temiz CI tam101, canlı101 ve dört paket/verify işi yukarıda PASS.
 
 Son derleme kopyasında17 manuel ölçüm ve gerçek düğme etkinleştirmesi PASS,
 renderer0.320px büyük yazıda ısı270/270; tahmin metin alanı222px, en uzun

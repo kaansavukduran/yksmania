@@ -16,6 +16,11 @@ Karma çalışmalar 90 TYT/25 AYT; ayrıca 11 branş seti vardır.
 
 Canlı site https://yksmania.vercel.app — kaynak, test ve paket kanıtı FORGE.md.
 
+Kaynak 9825e32960a712c81dcb6861c7386189d7a8d2ae; CI43627576911 dört iş PASS
+(126 birim,101 tarayıcı,Windows/Linux/Android). Canlı43627628221 ayrıca101/101
+PASS. Ayrı yerel web0.9.1→0.9.2 güncellemesinde not/taslak/ilerleme korundu;
+bu fiziksel cihaz veya native paketler arası yükseltme testi değildir.
+
 Assets bölümünden cihazına uygun dosyayı seç:
 Windows Setup.exe kurulum, Portable.exe doğrudan çalıştırma içindir. İkisi de x64
 ve Authenticode imzasızdır. Linux AppImage'e çalıştırma izni ver; DEB Debian/Ubuntu

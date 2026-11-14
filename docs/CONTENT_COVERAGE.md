@@ -23,7 +23,7 @@ These are different measurements. None measures a learner's mastery.
 | Detailed cheat-sheet outline | 479 headings; finer granularity and overlap with the main outline |
 | Interactive teaching | 66 lessons with authored interactions; 38 detailed guides; first 58 ordered headings have theory |
 | Native revision sheets | 69 built-in sheets, separate from theory; no material import |
-| Interactive question bank | 300 original Turkish exercises; 115 legacy IDs and answers preserved; no official-item claim |
+| Interactive question bank | 300 original Turkish exercises; all 240 previous IDs, prompts, choices and answers preserved; no official-item claim |
 | Timed practice | 2 mixed sets and 11 branches; TYT 90 / numerical AYT 25 questions; proportionate times, incomplete official distribution |
 | Private archive inventory | 8,584 PDF file records in 246 folders; about 23.6 GB, before content-hash deduplication |
 | Locally prepared private packs | 143 PDFs / 4,989 pages: 126 cheat sheets, 14 MEBİ-named PDFs and 3 OGM past-question books |

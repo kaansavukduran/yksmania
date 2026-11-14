@@ -1,4 +1,38 @@
-# 0.9.2 — altı kaynaklı etkileşimli atölye
+# 0.9.2 yayımlandı — altı kaynaklı etkileşimli atölye
+
+Uygulama kaynağı `9825e32960a712c81dcb6861c7386189d7a8d2ae` main'e gönderildi.
+Vercel production `dpl_919iZQfVUcjyRKEM1cKN9g2ynykY` aynı kaynakta READY;
+normal HTTPS version0.9.2. Canlı index/sw/version SHA256 değerleri kabul edilmiş
+yerel derlemeyle birebir aynı. Temiz CI43627576911 verify126/101 PASS (5,1dk);
+[canlı43627628221](https://github.com/kaansavukduran/yksmania/actions/runs/43627628221)
+aynı9825e32 kaynağında101/101 PASS (5,7dk). CI43627576911 dört iş de PASS:
+verify, Windows, Linux, Android. Paketli Windows/Linux offline ders/not/kağıt,
+soru taslağı/gerçek skor, yeniden başlatma, sınav snapshot/sonuç, timer ve reset
+mevcut smoke akışları PASS; rendererErrors0. Android APK build ve imza/manifest
+komutları PASS. Bu fiziksel cihaz veya iki native sürüm geçişi değildir.
+[Release43628665935](https://github.com/kaansavukduran/yksmania/actions/runs/43628665935)
+PASS; [v0.9.2-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.9.2-alpha.1)
+draft değil,8 asset:5 binary ve3 kanıt. Başarılı43627576911 main koşusunun
+dosyaları yeniden derlenmedi. Tag ve verified-run aynı9825e32 kaynağında;
+indirilen iki kanıtın hash'i SHA256SUMS ile eşleşti,7 payload listesi mevcut.
+Android versionName0.9.2/code17/v2 signature PASS. Beş büyük binary ayrıca
+yerelde indirilip hash'lenmedi. Kaynak/canlı/paket kabulünde açık doğrulanmış
+kusur yok; fiziksel/native geçiş boşlukları aşağıda korunur.
+
+Son teslim kaydı yalnız FORGE/README/CONTENT_COVERAGE/QA/RELEASE_ALPHA
+dokümanlarını değiştirir; doğrulanan uygulama, test ve paket kaynağı9825e32
+aynıdır. Bu doküman değişikliği için uygulama testleri tekrar çalıştırılmadı.
+
+Gerçek0.9.1→0.9.2 web SW güncellemesi ayrı yerel origin/profilde PASS: normal
+TLS ile eski production42dosyası/7revision doğrulandı, uygulamanın kendi
+Güncellemeleri kontrol et → Güncelle ve yeniden aç akışı yeni worker'ı etkinleştirdi.
+Eski nükleik kimliği/not/tamamlanma, soru taslağı/notu, öğrenme+üç tekrar ve
+ayarlar korundu. Sentetik eski870bayt PDF metadata/not/sayfa/byte eşitliği PASS;
+bu tek legacy koşulu IDB'ye seed edildi, gerçek özel PDF kullanılmadı. Yeni
+DNA/RNA modeli ilk kez offline açıldı;16 H bağı ve yeni not/keşif reload ile
+korundu, XP25→25, renderer0. Yeni53manifest kaydı/51tekil dosyada revision ve
+finaldist byte farkı0. Bu fiziksel/native yükseltme veya production profilinde
+güncelleme değildir; eski favicon iki404, gerekli dosyalarda eksik istek yok.
 
 Başlangıç c4ab5ab75d2a71e3a98db7bfb5c8d32c08901512. Dünya Gücü Osmanlı,
 kimyasal türler/Lewis, ısı–sıcaklık, nükleik asitler, iyonik bağ ve iyonik bileşik
@@ -26,13 +60,13 @@ küçültme veya kabul toleransı değişimi yok. YKS-031/Düşük: Lewis sıfı
 ısı seçim/tahmin düğmeleri ortak düğme sınıflarına alındı. Gerçek320px büyük
 yazıda tahmin eyleminin kelime ortasından kırılması, yalnız bu düğmenin yatay
 boşluğu uyarlanarak düzeltildi;45px metin korunur. Son derleme/kabul ve uzak
-yayın sonuçları tamamlandıkça bu kayda eklenecek.
+yayın sonuçları bu bölümün başında kaydedildi.
 
 Yerel tam101/101 browser PASS (6,8dk); son yalnız tahmin düğmesi yatay boşluğu
 ve sürüm notu derlemesinde check/build,126/126 unit ve yeni kaynakların12/12
 browser kabulü tekrar PASS (55,3s). Yeni kelime genişliği regresyonu da PASS;
 320px UI200/text150 koşulunda font küçültülmeden bütün kelimeler sığar.
-Temiz uzak kurulumun tam101 kabulü ve paket işleri ayrıca doğrulanacak.
+Temiz uzak kurulumun tam101 kabulü ve dört paket/verify işi de yukarıda PASS.
 
 Son kopyalanmış derlemede17 manuel ölçüm PASS, renderer0: ısı270/270 ve tahmin
 düğmesinde222px metin alanına202,54px en uzun kelime sığar;45px font korunur.
