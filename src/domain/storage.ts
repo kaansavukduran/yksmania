@@ -1,6 +1,7 @@
 import { openDB } from "idb";
 import { initialState, stateSchema, type AppState } from "./model";
 import { lessonById } from "./content";
+import { addDays } from "./scheduler";
 import { studyTopicById } from "./studyPlan";
 import {
   parseCatalogue,
@@ -11,12 +12,24 @@ export function validateState(input: unknown): AppState {
   const state = stateSchema.parse(input);
   if (Object.keys(state.topicProgress).some((id) => !studyTopicById(id)))
     throw Error("UNKNOWN_STUDY_TOPIC");
+  const theoryKeys = new Set<string>();
+  for (const record of state.theoryReviewCompletions) {
+    const key = `${record.topicId}:${record.anchorDate}:${record.stage}`;
+    if (
+      !studyTopicById(record.topicId) ||
+      theoryKeys.has(key) ||
+      record.completedDate < addDays(record.anchorDate, record.stage - 1)
+    )
+      throw Error("INVALID_THEORY_REVIEW");
+    theoryKeys.add(key);
+  }
   const ids = new Set<string>();
   for (const session of state.sessions) {
     if (ids.has(session.id)) throw Error("DUPLICATE_SESSION");
     ids.add(session.id);
     const lesson = lessonById(session.lessonId);
     if (!lesson) throw Error("UNKNOWN_LESSON");
+    if (!lesson.questions.length) throw Error("LESSON_HAS_NO_QUESTION_SET");
     const questionIds = new Set<string>();
     for (const r of session.responses) {
       const q = lesson.questions.find((q) => q.id === r.questionId);

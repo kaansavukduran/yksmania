@@ -12,7 +12,9 @@ import {
   type StudyMode,
 } from "../domain/studyPlan";
 import type { Session } from "../domain/model";
-import { independentCorrect } from "../domain/scheduler";
+import { repeatName } from "../domain/learningReviews";
+import { reviewStages } from "../domain/model";
+import { independentCorrect, addDays } from "../domain/scheduler";
 import { dateTR } from "./DateInput";
 
 export function TopicCompletion({
@@ -26,7 +28,8 @@ export function TopicCompletion({
 }) {
   const { state, commit, toast } = useApp();
   const [busy, setBusy] = useState(false);
-  const done = !!completionDate(state, id, mode);
+  const anchor = completionDate(state, id, mode);
+  const done = !!anchor;
   const auto = completionDate({ ...state, topicProgress: {} }, id, mode);
   const toggle = async () => {
     if (busy || auto) return;
@@ -67,6 +70,17 @@ export function TopicCompletion({
           {auto
             ? "Bu kayıt tamamlanmış soru oturumuna bağlıdır. Oturumu sonuç ekranından geri alabilirsin."
             : "Kendi çalışma bildirimin planı ve yüzdeleri günceller. Doğru cevap, ustalık veya XP kaydı oluşturmaz."}
+        </p>
+      )}
+      {!compact && mode === "theory" && anchor && (
+        <p className="small topic-repeat-targets">
+          İlk çalışma 1. gün.{" "}
+          {reviewStages.map((stage) => (
+            <span key={stage}>
+              {repeatName(stage)} ({stage}. gün):{" "}
+              {dateTR(addDays(anchor, stage - 1))}{" "}
+            </span>
+          ))}
         </p>
       )}
     </div>

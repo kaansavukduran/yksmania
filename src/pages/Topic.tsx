@@ -6,7 +6,8 @@ import {
   topicLessons,
   type StudyMode,
 } from "../domain/studyPlan";
-import type { Lesson } from "../domain/model";
+import type { Lesson, ReviewStage } from "../domain/model";
+import { TheoryReviewAction } from "../components/LearningReviews";
 import { TopicCompletion } from "../components/StudyPlanning";
 import { SourceList } from "../components/SourceList";
 import { Theory } from "./Theory";
@@ -15,11 +16,13 @@ export function Topic({
   mode,
   navigate,
   practice,
+  reviewStage,
 }: {
   id: string;
   mode: StudyMode;
   navigate: (r: string) => void;
   practice: (lesson: Lesson) => void;
+  reviewStage?: ReviewStage;
 }) {
   const { l } = useApp();
   const topic = studyTopicById(id);
@@ -32,10 +35,19 @@ export function Topic({
         </button>
       </section>
     );
-  const available = topicLessons(topic.id);
+  const narratives = topicLessons(topic.id);
+  const available =
+    mode === "theory"
+      ? narratives
+      : narratives.filter((lesson) => lesson.questions.length > 0);
   if (mode === "theory" && available.length)
     return (
-      <Theory id={available[0].id} practice={practice} navigate={navigate} />
+      <Theory
+        id={available[0].id}
+        practice={practice}
+        navigate={navigate}
+        reviewStage={reviewStage}
+      />
     );
   const subject = subjectById(topic.subjectId)!;
   return (
@@ -98,7 +110,15 @@ export function Topic({
           </button>
         </div>
         <SourceList subjectId={topic.subjectId} mode={mode} topic={topic} />
-        <TopicCompletion id={topic.id} mode={mode} />
+        {mode === "theory" && reviewStage ? (
+          <TheoryReviewAction
+            topicId={topic.id}
+            stage={reviewStage}
+            navigate={navigate}
+          />
+        ) : (
+          <TopicCompletion id={topic.id} mode={mode} />
+        )}
       </section>
     </>
   );

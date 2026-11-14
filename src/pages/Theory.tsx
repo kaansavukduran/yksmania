@@ -1,19 +1,29 @@
+import { lazy, Suspense } from "react";
+import { narrativeById } from "../learning/narratives";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useApp } from "../store";
 import { lessonById, subjectById } from "../domain/content";
-import type { Lesson } from "../domain/model";
+import type { Lesson, ReviewStage } from "../domain/model";
 import { VisualLab } from "../learning/VisualLab";
 import { Aion } from "../components/Aion";
+import { TheoryReviewAction } from "../components/LearningReviews";
 import { TopicCompletion } from "../components/StudyPlanning";
 import { lessonTopic } from "../domain/studyPlan";
+const NarrativeRecall = lazy(() =>
+  import("../learning/NarrativeExplorer").then((module) => ({
+    default: module.NarrativeRecall,
+  })),
+);
 export function Theory({
   id,
   practice,
   navigate,
+  reviewStage,
 }: {
   id: string;
   practice: (lesson: Lesson) => void;
   navigate: (r: string) => void;
+  reviewStage?: ReviewStage;
 }) {
   const { state, t, l, update } = useApp();
   const lesson = lessonById(id);
@@ -59,16 +69,36 @@ export function Theory({
               <p>{l(v.text)}</p>
             </section>
           ))}
+          {narrativeById.has(lesson.id) && (
+            <Suspense fallback={<p>Hatırlama alanı açılıyor…</p>}>
+              <NarrativeRecall id={lesson.id} />
+            </Suspense>
+          )}
           <div className="source-box">
             <strong>{t("sourceInfo")}</strong>
             <p>{l(lesson.source)}</p>
           </div>
-          <button className="primary" onClick={() => practice(lesson)}>
-            {t("startQuestions")}
-            <ArrowRight size={18} />
-          </button>
-          {lessonTopic[lesson.id] && (
-            <TopicCompletion id={lessonTopic[lesson.id]} mode="theory" />
+          {reviewStage && lessonTopic[lesson.id] ? (
+            <TheoryReviewAction
+              topicId={lessonTopic[lesson.id]}
+              stage={reviewStage}
+              navigate={navigate}
+            />
+          ) : (
+            lessonTopic[lesson.id] && (
+              <TopicCompletion id={lessonTopic[lesson.id]} mode="theory" />
+            )
+          )}
+          {lesson.questions.length > 0 ? (
+            <button className="primary" onClick={() => practice(lesson)}>
+              {t("startQuestions")}
+              <ArrowRight size={18} />
+            </button>
+          ) : (
+            <p className="small muted">
+              Bu konu şu aşamada anlatım olarak hazır. Soru seti ayrı aşamada
+              hazırlanacak.
+            </p>
           )}
         </article>
         <aside className="panel study-notes" aria-label={t("studyNotes")}>

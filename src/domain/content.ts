@@ -1,3 +1,4 @@
+import { sourceNarratives } from "../learning/narratives";
 import { visualLessons } from "../learning/lessons";
 import { introLessons } from "../learning/introLessons";
 import { mathLessons } from "../learning/mathLessons";
@@ -809,6 +810,7 @@ export const lessons: Lesson[] = [
   ...aytLessons,
   ...introLessons,
   ...mathLessons,
+  ...sourceNarratives,
 ];
 export const lessonById = (id: string) => lessons.find((l) => l.id === id);
 export const subjectById = (id: string) => subjects.find((s) => s.id === id);

@@ -85,11 +85,26 @@ export const draftSchema = z.object({
   reviewId: id.optional(),
 });
 export type Draft = z.infer<typeof draftSchema>;
+export const reviewStages = [3, 7, 21] as const;
+export type ReviewStage = (typeof reviewStages)[number];
+const theoryReviewCompletionSchema = z.object({
+  topicId: id,
+  anchorDate: date,
+  stage: z.union([z.literal(3), z.literal(7), z.literal(21)]),
+  completedDate: date,
+});
+export type TheoryReviewCompletion = z.infer<
+  typeof theoryReviewCompletionSchema
+>;
 export const stateSchema = z.object({
   version: z.literal(1),
   settings: settingsSchema,
   sessions: z.array(sessionSchema).max(100000),
   reviews: z.array(reviewSchema).max(300000),
+  theoryReviewCompletions: z
+    .array(theoryReviewCompletionSchema)
+    .max(300000)
+    .default([]),
   draft: draftSchema.nullable(),
   notes: z.record(z.string(), z.string().max(20000)),
   unlocked: z.array(id).max(10000),
@@ -138,6 +153,7 @@ export const initialState = (): AppState => ({
   },
   sessions: [],
   reviews: [],
+  theoryReviewCompletions: [],
   draft: null,
   notes: {},
   unlocked: [],

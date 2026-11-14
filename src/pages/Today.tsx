@@ -1,4 +1,4 @@
-import { ArrowRight, CalendarDays, Check, Sprout } from "lucide-react";
+import { ArrowRight, Check, Sprout } from "lucide-react";
 import { useApp } from "../store";
 import { lessons, lessonById } from "../domain/content";
 import {
@@ -6,12 +6,16 @@ import {
   formatDate,
   independentCorrect,
   isBlocked,
-  reviewPlan,
   xp,
 } from "../domain/scheduler";
 import { Aion } from "../components/Aion";
-import { LessonRow, SectionLink } from "../components/Shared";
+import { SectionLink } from "../components/Shared";
 import type { Lesson } from "../domain/model";
+import { learningReviewPlan } from "../domain/learningReviews";
+import {
+  TodayReviewQueue,
+  theoryReviewRoute,
+} from "../components/LearningReviews";
 import { DailyStudyPlans } from "../components/StudyPlanning";
 import { studyPlan, completionDates, studyTopics } from "../domain/studyPlan";
 export function Today({
@@ -21,9 +25,10 @@ export function Today({
   start: (lesson: Lesson, reviewId?: string) => void;
   navigate: (route: string) => void;
 }) {
-  const { state, today, t, l } = useApp();
+  const { state, today, t } = useApp();
   const closed = isBlocked(today, state.settings);
-  const due = reviewPlan(state).filter((p) => p.scheduled === today);
+  const reviews = learningReviewPlan(state, today);
+  const due = reviews.filter((p) => p.scheduled === today);
   const next =
     lessons.find(
       (lesson) =>
@@ -33,9 +38,7 @@ export function Today({
     ) ?? lessons[0];
   const first = due[0];
   const nextTopic = studyPlan(state, "theory", today).items[0]?.topic;
-  const recommended = first
-    ? (lessonById(first.review.lessonId) ?? next)
-    : next;
+  const recommended = first ? (lessonById(first.lessonId ?? "") ?? next) : next;
   const correct = state.sessions.reduce((n, s) => n + independentCorrect(s), 0);
   const dates = Array.from({ length: 7 }, (_, i) => addDays(today, i - 6));
   return (
@@ -76,13 +79,17 @@ export function Today({
                 : state.draft
                   ? navigate("/study")
                   : first
-                    ? start(recommended, first.review.id)
+                    ? first.kind === "theory"
+                      ? navigate(theoryReviewRoute(first))
+                      : start(recommended, first.id)
                     : nextTopic
                       ? navigate(`/topic?id=${nextTopic.id}&mode=theory`)
                       : navigate("/courses")
             }
           >
-            {t(closed ? "freeStudy" : state.draft ? "continue" : "learn")}
+            {first && !closed && !state.draft
+              ? "Tekrara başla"
+              : t(closed ? "freeStudy" : state.draft ? "continue" : "learn")}
             <ArrowRight size={18} />
           </button>
           <p className="hero-foot small">
@@ -124,50 +131,14 @@ export function Today({
           <span>{t("reviewsDue")}</span>
         </div>
       </div>
-      <DailyStudyPlans navigate={navigate} />
-      <div className="today-grid">
-        <section className="panel path-panel">
-          <div className="section-heading">
-            <h2>{t("reviewsDue")}</h2>
-            <SectionLink onClick={() => navigate("/courses")}>
-              {t("courses")}
-            </SectionLink>
-          </div>
-          {closed ? (
-            <div className="rest-state">
-              <CalendarDays size={30} />
-              <p>{t("blockedBody")}</p>
-              <button
-                className="secondary"
-                onClick={() => navigate("/calendar")}
-              >
-                {t("seeCalendar")}
-              </button>
-            </div>
-          ) : (
-            <>
-              {due.slice(0, 3).map((p) => {
-                const lesson = lessonById(p.review.lessonId);
-                return lesson ? (
-                  <LessonRow
-                    key={p.review.id}
-                    lesson={lesson}
-                    review
-                    reason={`${t("reviewReason")} ${t("day")} ${p.review.stage}`}
-                    onStart={() => start(lesson, p.review.id)}
-                  />
-                ) : null;
-              })}
-              {!due.length && (
-                <p className="muted">Bugün planlanmış tekrar yok.</p>
-              )}
-            </>
-          )}
-          <div className="panel-foot">
-            <span className="tiny-dot" />
-            {t("reviewPolicy")}
-          </div>
-        </section>
+      <div className="today-flow">
+        <TodayReviewQueue
+          items={reviews}
+          closed={closed}
+          start={start}
+          navigate={navigate}
+        />
+        <DailyStudyPlans navigate={navigate} />
         <aside className="panel weekly-panel" aria-label={t("weekly")}>
           <div className="section-heading">
             <h2>{t("weekly")}</h2>
@@ -178,7 +149,11 @@ export function Today({
           </div>
           <div className="week-days">
             {dates.map((day) => {
-              const count = state.sessions.filter((s) => s.date === day).length;
+              const count =
+                state.sessions.filter((s) => s.date === day).length +
+                state.theoryReviewCompletions.filter(
+                  (r) => r.completedDate === day,
+                ).length;
               return (
                 <div
                   key={day}

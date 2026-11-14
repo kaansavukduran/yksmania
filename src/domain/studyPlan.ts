@@ -1,3 +1,4 @@
+import { narrativeTopics } from "../learning/narratives";
 import details from "../data/detail-topics.json";
 import order from "../data/study-order.json";
 import { lessons } from "./content";
@@ -20,6 +21,7 @@ export const studyTopicById = (id: string) =>
   studyTopics.find((t) => t.id === id);
 // Only reviewed one-to-one subject/topic associations; no fuzzy learning credit.
 export const lessonTopic: Record<string, string> = {
+  ...narrativeTopics,
   "rasyonel-sayilar": "detail-202",
   "carpanlara-ayirma": "detail-221",
   "atp-metabolizma": "detail-283",
@@ -51,7 +53,12 @@ export function topicResults(state: AppState) {
   for (const session of state.sessions) {
     const id = lessonTopic[session.lessonId];
     const lesson = lessonIndex.get(session.lessonId);
-    if (!id || !lesson || session.responses.length !== lesson.questions.length)
+    if (
+      !id ||
+      !lesson ||
+      !lesson.questions.length ||
+      session.responses.length !== lesson.questions.length
+    )
       continue;
     const previous = results.get(id);
     if (
@@ -78,6 +85,7 @@ export function completionDates(state: AppState, mode: StudyMode) {
     if (
       id &&
       lesson &&
+      lesson.questions.length > 0 &&
       s.responses.length === lesson.questions.length &&
       (mode === "questions" ||
         (s.kind === "learn" && s.includesTheory !== false))

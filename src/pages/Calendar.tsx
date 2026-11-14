@@ -1,16 +1,12 @@
 import { useMemo, useState } from "react";
 import { ChevronLeft, ChevronRight, Plus, X } from "lucide-react";
 import { useApp } from "../store";
-import {
-  addDays,
-  formatDate,
-  isBlocked,
-  localDate,
-  reviewPlan,
-} from "../domain/scheduler";
+import { addDays, formatDate, isBlocked, localDate } from "../domain/scheduler";
 import { lessonById } from "../domain/content";
 import type { Lesson } from "../domain/model";
 import { DateInput } from "../components/DateInput";
+import { learningReviewPlan, repeatName } from "../domain/learningReviews";
+import { theoryReviewRoute } from "../components/LearningReviews";
 import { studyPlan } from "../domain/studyPlan";
 export function Calendar({
   start,
@@ -27,7 +23,7 @@ export function Calendar({
   });
   const [selected, setSelected] = useState(localDate());
   const [blockedDate, setBlockedDate] = useState("");
-  const plan = reviewPlan(state, today);
+  const plan = learningReviewPlan(state, today);
   const study = useMemo(
     () => [
       studyPlan(state, "theory", today),
@@ -48,7 +44,9 @@ export function Calendar({
       weekday: "short",
     }),
   );
-  const chosen = plan.filter((p) => p.scheduled === selected);
+  const chosen = plan.filter(
+    (p) => p.scheduled === selected || p.completedDate === selected,
+  );
   const change = (n: number) => {
     const d = new Date(month + "T12:00:00");
     d.setMonth(d.getMonth() + n);
@@ -106,8 +104,9 @@ export function Calendar({
               (day) => {
                 const closed = isBlocked(day, state.settings);
                 const count =
-                  plan.filter((p) => p.scheduled === day).length +
-                  (studyLoad.get(day) ?? 0);
+                  plan.filter(
+                    (p) => p.scheduled === day || p.completedDate === day,
+                  ).length + (studyLoad.get(day) ?? 0);
                 return (
                   <button
                     key={day}
@@ -163,27 +162,35 @@ export function Calendar({
             </button>
           </div>
           {chosen.map((p) => {
-            const lesson = lessonById(p.review.lessonId);
+            const lesson = p.lessonId ? lessonById(p.lessonId) : undefined;
             return (
-              <div className="planned-review" key={p.review.id}>
+              <div className="planned-review" key={p.id}>
                 <div>
                   <strong>
-                    {lesson ? l(lesson.title) : p.review.lessonId}
+                    {p.title} ({repeatName(p.stage)})
                   </strong>
                   <p className="small muted">
-                    {t("day")} {p.review.stage} · {t("originalDue")}:{" "}
-                    {formatDate(p.review.targetDate, state.settings.locale)}
+                    {p.kind === "theory" ? "Konu anlatımı" : "Sorular"} ·{" "}
+                    {p.stage}. gün · Özgün tarih:{" "}
+                    {formatDate(p.targetDate, state.settings.locale)}
+                    {p.completedDate ? " · Tekrar tamamlandı" : ""}
                   </p>
                 </div>
-                {lesson && (
-                  <button
-                    className="text-button"
-                    disabled={p.review.targetDate > today}
-                    onClick={() => start(lesson, p.review.id)}
-                  >
-                    {t("review")}
-                  </button>
-                )}
+                <button
+                  className="text-button"
+                  disabled={p.targetDate > today}
+                  onClick={() => {
+                    if (p.completedSessionId)
+                      navigate(
+                        `/result?id=${encodeURIComponent(p.completedSessionId)}`,
+                      );
+                    else if (p.kind === "theory")
+                      navigate(theoryReviewRoute(p));
+                    else if (lesson) start(lesson, p.id);
+                  }}
+                >
+                  {p.completedSessionId ? "Sonucu gör" : "Tekrar"}
+                </button>
               </div>
             );
           })}
@@ -324,25 +331,24 @@ export function Calendar({
         {!plan.length ? (
           <p className="muted">{t("noData")}</p>
         ) : (
-          plan.slice(0, 12).map((p) => (
-            <div className="upcoming-row" key={p.review.id}>
-              <span>
-                {l(
-                  lessonById(p.review.lessonId)?.title ?? {
-                    tr: p.review.lessonId,
-                  },
-                )}{" "}
-                · {t("day")} {p.review.stage}
-              </span>
-              <span className="small muted">
-                {t("originalDue")}:{" "}
-                {formatDate(p.review.targetDate, state.settings.locale)} →{" "}
-                {p.scheduled
-                  ? formatDate(p.scheduled, state.settings.locale)
-                  : t("noAvailability")}
-              </span>
-            </div>
-          ))
+          plan
+            .filter((p) => !p.completedDate)
+            .slice(0, 12)
+            .map((p) => (
+              <div className="upcoming-row" key={p.id}>
+                <span>
+                  {p.title} ({repeatName(p.stage)}) · {p.stage}. gün ·{" "}
+                  {p.kind === "theory" ? "Konu" : "Sorular"}
+                </span>
+                <span className="small muted">
+                  Özgün tarih: {formatDate(p.targetDate, state.settings.locale)}{" "}
+                  →{" "}
+                  {p.scheduled
+                    ? formatDate(p.scheduled, state.settings.locale)
+                    : t("noAvailability")}
+                </span>
+              </div>
+            ))
         )}
       </section>
     </>

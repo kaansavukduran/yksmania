@@ -1,4 +1,84 @@
-# Forge checkpoint: YKSMania 0.5.1 alpha
+# 14 Kasım devam durumu — konu üretimi taslak dalı
+
+forge/source-ordered-theory dalı; henüz yayınlanmadı. 27 yeni theory-only anlatım,
+23 eski anlatımla toplam50; 115 soru korunur. Excel/Todoist sırasındaki ilk39
+başlık anlatıma bağlıdır. 479 başlıktan kesin eşleşen49 anlatım var; geometri
+alan dönüşümü mevcut haritaya uydurma bağlanmaz. Bir sonraki hazırlanmamış
+başlık40/detail-203 Birinci Dereceden Denklemler, ardından detail-204 eşitsizlikler.
+
+Biyoloji detail1–10; Matematik detail199/200/201; Tarih detail226–231;
+Fizik detail114/115/116/118; Kimya detail144/145; Türkçe detail250/251.
+Her yeni pack kaynak sayfaları,5+ açıklama bölümü,3 senaryo,3 püf noktası,
+2 puansız hatırlama içerir. Sayısal ve sözcük modelleri aktif. Sorusu olmayan
+anlatım hazır soru seti değildir; boş oturum oluşturamaz.
+
+Tekrar altyapısı: ilk çalışma1.gün;3/7/21.gün özgün hedefleri +2/+6/+20;
+teori+soru ortak uygun-gün kapasitesi, tekrarlar Bugün'de yeni işlerin önünde;
+açık durable/geri alınabilir tekrar işareti; XP ve soru yanıtı üretmez.
+
+Ortam kesintisi sonrası check +55unit PASS (forge-resumed-unit.log).
+41 anlatımlı ara yapıda56 browser PASS; son50 anlatımlı yapı ve11-model mobil
+süpürmesi henüz tam browser/native doğrulamasından geçmedi. Yeni içerik hazır
+live sanılmamalı. Source-review-0.6 ve özel çalışma dosyaları Git'e konulmaz.
+
+Kullanıcının metinsiz paragraf hatası acil öncelik aldı. YKS-015 onarımı ayrı
+/workspace/yksmania-question-fix / fix/question-passage dalında0.5.2 olarak
+hazırlanıyor; bu kaynak üretimini hotfix'e katma. Onarım yayınlanınca buraya
+merge edilip model/content/Study çatışmaları korunarak çözülmeli. Eski passage
+hatasını tekrar taşımamak için yeni question-content testleri burada da koşmalı.
+
+Eski çalışma notları aşağıda tarihsel olarak tutuluyor; üstteki50/27/39 sayıları
+günceldir. Konular önce; sonra kopya kağıtları; sonra soru bankası üretimi.
+
+---
+
+# Forge in progress: source-ordered theory and review-first learning
+
+Active request: continue substantial source-based development, theory first, then
+cheatsheets, then questions. Every new theory needs meaningful interactive visuals,
+pitfalls, explanatory reasoning and recall. Do not promise addictive manipulation,
+mastery of every MEB publication or completion of 479 authored topics prematurely.
+Turkish-only project decision remains; no k44 activation or platform expansion.
+
+Working copy adds theory-anchored review completions, shared theory/question review
+capacity, first-study day 1 / repeats +2,+6,+20, (İlk tekrar)/(İkinci tekrar)/(Son tekrar).
+Existing question review IDs and original dates are unchanged. Today queue precedes
+new daily assignments; hero prioritizes a due repeat, Calendar/Result use the same
+combined plan. Explicit theory-repeat marks are durable/undoable, no XP or answers.
+New optional state field defaults safely in older backups; no IndexedDB schema bump.
+Focused review browser acceptance 2/2 PASS on the first working build; check/unit
+runs pass (latest count in logs). Full/native/live verification remains pending.
+
+New theory-only narrative registry currently holds ten TYT biology topics (detail-1
+through detail-10) and mathematics place value (detail-199). Eleven additions to
+23 old lessons = 34 working-copy narratives; question bank stays 115, 23 sets.
+Zero-question narratives never appear as ready question sets or create empty sessions.
+Original content and IDs must be retained. Generic interactive flow cases have
+per-topic nodes, explanations, worked reasoning and persisted unscored recall;
+pH/chain/basamak/yüzyıl/özkütle/hareket numerical manipulators are being integrated.
+Read source PDFs, not inventory presence, establish readiness. App code is not yet
+published by this checkpoint; last public version is 0.5.1 / source 776f62c.
+
+Sources remain private under /workspace/work/source-review-0.6 and attachments.
+Read: MEBİ TYT Biyoloji selected PDF11–17,20–21; OGM common traits10–17,
+compounds I10–19, compounds II10–16; Aurelia scientific method1–8, minerals1–3,
+place value1–5, physics intro1–5. History selected source readings and previews
+are in the ongoing task; record exact reviewed pages when publishing. Extraction
+of entire books is not full review. Several original source tables have broad
+claims or typos; authored text preserves conditions instead of copying them.
+No private PDF/Drive IDs/raw excerpts belong in Git. Private pack export rejection
+from earlier work remains in force; no alternate export was tried.
+
+Next: fill missing source-order entries14–21 (place value now authored, history
+and physics in progress), continue theory development beyond that checkpoint;
+complete review/visual/source QA and keep a verified coverage record. The user
+asked to keep progressing, not stop after five lessons or at a deployment.
+No new scored question bank work before the theory phase. Geometry coverage gap
+in the supplied 479-heading order remains and must not be silently invented away.
+
+---
+
+# Historical checkpoint: YKSMania 0.5.1 alpha
 
 Kullanıcı bildirimi: Bugün → Bugünün çalışma yolu ekranında Simyadan Kimyaya
 çalışılmış olmasına ve beş soruda dört doğruya rağmen tamamlanma/sonuç görünmüyor.

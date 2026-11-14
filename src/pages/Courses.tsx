@@ -77,6 +77,7 @@ export function Courses({
           const ready = lessons.filter(
             (v) =>
               v.subjectId === subject.id &&
+              (mode === "theory" || v.questions.length > 0) &&
               (!query ||
                 l(subject.name).toLocaleLowerCase("tr-TR").includes(query) ||
                 l(v.title).toLocaleLowerCase("tr-TR").includes(query)),

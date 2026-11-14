@@ -3471,3 +3471,331 @@ progress::-moz-progress-bar {
 .planned-topic-actions button {
   min-height: 44px;
 }
+
+.review-queue-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.6rem 0;
+}
+.review-queue-row {
+  border-bottom: 1px solid var(--border);
+  padding: 0.9rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.review-queue-row > div {
+  flex: 1 1 15rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.review-queue-row h3 {
+  margin: 0.35rem 0;
+  font-size: 1em;
+}
+.review-queue-row p {
+  margin: 0.4rem 0;
+}
+.review-queue-row button {
+  min-height: 44px;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.review-done {
+  color: var(--mint);
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+.theory-review-action {
+  border-top: 1px solid var(--border);
+  margin-top: 1.3rem;
+  padding-top: 1.2rem;
+}
+.review-actions {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+.review-actions button {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.walk-scenarios,
+.walk-node-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.9rem 0;
+}
+.walk-scenarios button,
+.walk-node-controls button {
+  min-height: 44px;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.narrative-lab .selected {
+  border-color: var(--accent);
+}
+.narrative-lab h2 {
+  margin-top: 0;
+}
+.walk-question {
+  font-weight: 550;
+}
+.narrative-lab > svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.6rem 0;
+}
+.walk-node {
+  transition: color 180ms ease;
+}
+.walk-path.active {
+  stroke-dasharray: 6 3;
+  animation: walk-connection 450ms ease-out 1;
+}
+@keyframes walk-connection {
+  from {
+    stroke-dashoffset: 36;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.walk-explanation,
+.walk-conclusion,
+.narrative-recall {
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+.walk-step-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.walk-step-controls button {
+  min-height: 44px;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+}
+.walk-data svg {
+  width: 100%;
+  height: auto;
+}
+.walk-data table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.walk-data th,
+.walk-data td {
+  padding: 0.55rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+.walk-data caption {
+  font-size: 0.85em;
+  text-align: left;
+  color: var(--muted);
+  padding: 0.6rem 0;
+}
+.narrative-pitfalls li {
+  margin-bottom: 1rem;
+}
+.narrative-pitfalls li p {
+  margin-top: 0.35rem;
+}
+.narrative-recall textarea {
+  min-height: 5rem;
+}
+@media (prefers-reduced-motion: reduce) {
+  .walk-path,
+  .walk-node {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+:root[data-motion="off"] .walk-path,
+:root[data-motion="off"] .walk-node {
+  animation: none !important;
+  transition: none !important;
+}
+
+.today-flow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.3rem;
+}
+.today-flow > .daily-study-plans {
+  margin: 0;
+}
+.today-flow > .panel {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.today-flow .text-button {
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+.topic-repeat-targets span {
+  display: block;
+  margin-top: 0.3rem;
+}
+
+.concept-model {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1.2rem;
+  margin-bottom: 1.3rem;
+}
+.concept-model > svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.model-control {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.4rem;
+  margin: 0.9rem 0;
+}
+.model-control label {
+  display: block;
+}
+.model-control input[type="range"] {
+  width: 100%;
+  display: block;
+}
+.model-exact input {
+  display: block;
+  width: min(100%, 8rem);
+}
+.model-result {
+  overflow-wrap: anywhere;
+}
+.word-transform {
+  display: grid;
+  gap: 0.8rem;
+  margin: 1rem 0;
+}
+.word-transform p {
+  margin: 0;
+  padding: 0.9rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+}
+.word-transform .small,
+.word-final strong {
+  display: block;
+}
+.word-parts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.4rem;
+}
+.word-final strong {
+  margin-top: 0.4rem;
+  overflow-wrap: anywhere;
+}
+.word-transform.joined .word-final {
+  border-color: var(--mint);
+  animation: word-reveal 220ms ease-out 1;
+}
+.word-branches {
+  display: grid;
+  gap: 0.7rem;
+  margin: 1rem 0;
+}
+.word-branches button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  justify-content: space-between;
+  text-align: left;
+}
+.word-branches button span {
+  font-size: 0.85em;
+}
+.word-branches [aria-pressed="true"] {
+  border-color: var(--accent);
+}
+@keyframes word-reveal {
+  from {
+    opacity: 0.5;
+    transform: translateY(0.3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.energy-height-marker {
+  transition: y 180ms ease;
+}
+.energy-bar {
+  transition:
+    y 180ms ease,
+    height 180ms ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .word-transform.joined .word-final,
+  .energy-height-marker,
+  .energy-bar {
+    animation: none;
+    transition: none;
+  }
+}
+:root[data-motion="off"] .word-transform.joined .word-final,
+:root[data-motion="off"] .energy-height-marker,
+:root[data-motion="off"] .energy-bar {
+  animation: none;
+  transition: none;
+}
+.model-marker {
+  transition: cx 180ms ease;
+}
+.model-plot-marker {
+  transition:
+    cx 180ms ease,
+    cy 180ms ease;
+}
+.model-data {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9em;
+}
+.model-data th,
+.model-data td {
+  text-align: left;
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--border);
+  overflow-wrap: anywhere;
+}
+.model-data caption {
+  text-align: left;
+  margin: 0.5rem 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .model-marker {
+    transition: none;
+  }
+}
+:root[data-motion="off"] .model-marker {
+  transition: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .model-plot-marker {
+    transition: none;
+  }
+}
+:root[data-motion="off"] .model-plot-marker {
+  transition: none;
+}

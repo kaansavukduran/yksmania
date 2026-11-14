@@ -17,9 +17,12 @@ describe("learning content and backward-compatible exploration state", () => {
       expect(e.shells?.reduce((n, x) => n + x, 0)).toBe(e.z);
   });
   it("gives each visual lesson a real Turkish five-item question set with valid answers", () => {
-    expect(lessons).toHaveLength(23);
+    const questionLessons = lessons.filter(
+      (lesson) => lesson.questions.length > 0,
+    );
+    expect(questionLessons).toHaveLength(23);
     const ids = new Set<string>();
-    for (const l of lessons) {
+    for (const l of questionLessons) {
       expect(l.questions).toHaveLength(5);
       expect(l.body.length).toBeGreaterThan(0);
       for (const q of l.questions) {

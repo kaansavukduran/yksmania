@@ -29,7 +29,7 @@ import { Settings } from "./pages/Settings";
 import { Theory } from "./pages/Theory";
 import { Study, Result } from "./pages/Study";
 import { Topic } from "./pages/Topic";
-import type { Lesson } from "./domain/model";
+import type { Lesson, ReviewStage } from "./domain/model";
 const routes = [
   { route: "/today", key: "today", Icon: Home },
   { route: "/courses", key: "courses", Icon: BookOpen },
@@ -132,6 +132,10 @@ export default function App() {
     state.settings.motion,
   ]);
   const start = async (lesson: Lesson, reviewId?: string, practice = false) => {
+    if (practice && !lesson.questions.length) {
+      navigate(`/lesson?id=${encodeURIComponent(lesson.id)}`);
+      return;
+    }
     if (!practice && !reviewId) {
       navigate(`/lesson?id=${encodeURIComponent(lesson.id)}`);
       return;
@@ -364,6 +368,17 @@ export default function App() {
                 "questions"
                   ? "questions"
                   : "theory"
+              }
+              reviewStage={
+                ([3, 7, 21].includes(
+                  Number(
+                    new URLSearchParams(route.split("?")[1]).get("review"),
+                  ),
+                )
+                  ? Number(
+                      new URLSearchParams(route.split("?")[1]).get("review"),
+                    )
+                  : undefined) as ReviewStage | undefined
               }
               navigate={navigate}
               practice={(lesson) => {

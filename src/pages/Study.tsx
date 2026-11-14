@@ -7,9 +7,9 @@ import {
   formatDate,
   independentCorrect,
   localDate,
-  reviewPlan,
 } from "../domain/scheduler";
 import type { Draft, Lesson, Session } from "../domain/model";
+import { learningReviewPlan } from "../domain/learningReviews";
 import { Aion } from "../components/Aion";
 export function Study({ navigate }: { navigate: (s: string) => void }) {
   const { state, t, l, update, commit, toast } = useApp();
@@ -266,8 +266,13 @@ export function Result({
   const session = state.sessions.find((s) => s.id === id);
   if (!session) return <p>{t("noData")}</p>;
   const lesson = lessonById(session.lessonId)!;
-  const plan = reviewPlan(state).filter(
-    (p) => p.review.originSessionId === session.id,
+  const related = new Set(
+    state.reviews
+      .filter((r) => r.originSessionId === session.id)
+      .map((r) => r.id),
+  );
+  const plan = learningReviewPlan(state).filter(
+    (p) => related.has(p.id) && !p.completedDate,
   );
   return (
     <section className="result-page">
@@ -298,19 +303,19 @@ export function Result({
         <div className="panel result-reviews">
           <h2>{t("reviewDates")}</h2>
           {plan.map((p) => (
-            <div key={p.review.id}>
+            <div key={p.id}>
               <span>
-                {t("day")} {p.review.stage}
+                {t("day")} {p.stage}
               </span>
               <strong>
                 {p.scheduled
                   ? formatDate(p.scheduled, state.settings.locale)
                   : t("noAvailability")}
               </strong>
-              {p.scheduled !== p.review.targetDate && (
+              {p.scheduled !== p.targetDate && (
                 <span className="small muted">
                   {t("originalDue")}:{" "}
-                  {formatDate(p.review.targetDate, state.settings.locale)}
+                  {formatDate(p.targetDate, state.settings.locale)}
                 </span>
               )}
             </div>
