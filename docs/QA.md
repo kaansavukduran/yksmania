@@ -1,6 +1,15 @@
 # Quality evidence
 
-Target 0.5.2 alpha. This file is updated at the verified Forge checkpoint.
+Target 0.5.3 alpha. This file is updated at the verified Forge checkpoint.
+
+## 0.5.3 ağaç yönü
+
+TYT ve AYT kökleri üstte; ders düğümleri aşağıya açılır. Mevcut YKS-010
+kontrolü iki kökün de bütün ders düğümlerinden yukarıda olduğunu ölçer.
+Klavye/ders seçimi, gerçek konu/soru bağlantıları ve320px büyük yazılı offline
+regresyonu korunur. Yerel45unit/50browser ve public43582897828:50/50 PASS.
+Koyu/açık masaüstü ve390px mobil SVG görüntüleri görsel incelendi.
+Paket/yayın doğrulamasının son durumu FORGE.md içindedir.
 
 ## Automated acceptance
 
@@ -535,3 +544,11 @@ metninin küçülemeyip yatay taşması gözlendi. min-width:0 ve sözcük sarma
 dar ekranda tek sütun seçenek, uyarlanan boşluklarla giderildi. Yazı veya kullanıcı
 ölçeği küçültülmedi; metin gizlenmedi. Yerel/native/canlı sonuçlar FORGE.md’de
 ayrı kaydedilir. Fiziksel Android/ekran okuyucu kontrolü ayrıca yapılmalıdır.
+
+0.5.2 teslim kanıtı: [CI43580314183](https://github.com/kaansavukduran/yksmania/actions/runs/43580314183)
+45unit/50browser ve paketlenmiş Windows/Linux paragraf offline/restart kabulü PASS;
+Android v2 imza/code10/name0.5.2 PASS. [Public43579996297](https://github.com/kaansavukduran/yksmania/actions/runs/43579996297)
+50/50 PASS; [release43581051297](https://github.com/kaansavukduran/yksmania/actions/runs/43581051297)
+8asset yayımladı. Yerel HTTPS tarayıcı yolu proxyCA nedeniyle BLOCKED; TLS
+kontrolü kapatılmadı. İlk CI49/50 sonucu ve testin durable kayıt beklemesi
+FORGE.md’de korunur. Fiziksel cihaz/kurulum/güncelleme NOT TESTED kalır.

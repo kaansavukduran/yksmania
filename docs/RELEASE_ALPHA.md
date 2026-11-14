@@ -1,18 +1,11 @@
-YKSMania 0.5.2 alpha
+YKSMania 0.5.3 alpha
 
-- Paragraf sorularında ilgili metin, beş sorunun her birinde soru kökünün üstünde
-  tam olarak görünür. Sorular bölümünden doğrudan girişte de konu anlatımını
-  önceden açmak gerekmez; metin çevrimdışı kullanılabilir.
-- Konu anlatımı, cümle keşfi ve sorular aynı özgün paragrafı kullanır. Cevap
-  seçenekleri, anahtarlar ve soru kimlikleri korunur; eski sonuçlar ve taslak
-  notları geçerlidir.
-- Türev sorusundaki A–B noktaları, elektrik alanının noktasal kaynak koşulu,
-  kimyasal denge modeli ve Rutherford deneyinin bağlamı açık yazıldı.
-- Dar ekranda büyük yazılı cevap seçeneklerinin yatay taşması giderildi.
-  Metin kısaltılmaz, gizlenmez veya ayrı bir kaydırma kutusuna sıkıştırılmaz.
-- Soru bankasına eksik metin/şekil atfını denetleyen içerik kontrolü ve
-  doğrudan soru girişi, beşli çözüm, hatalı cevap, çevrimdışı yeniden açılış,
-  ekran döndürme ve büyük yazı regresyonları eklendi.
+- Dünyam bölümünde TYT ve AYT kök yuvarlakları üstte, ders dalları aşağıya
+  doğru açılır. Etiketler düz ve okunabilir kalır.
+- Ders renkleri, yatay sıraları, seçimler, konu/soru bağlantıları ve kayıtlı
+  ilerleme korunur. Önceki paragraf sorusu düzeltmeleri bu sürümde de vardır.
+- Mevcut ağaç regresyonu her iki kökün ders düğümlerinden yukarıda olduğunu
+  denetler; küçük ekran, büyük yazı ve çevrimdışı kullanım kontrolleri korunur.
 
 23 anlatım / 115 özgün soru. Bu düzeltme yayını önceki Forge dalındaki henüz
 bitmemiş yeni konu üretimini içermez. 479 ayrıntılı başlık ve ayrı 341 ana konu
