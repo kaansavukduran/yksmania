@@ -238,3 +238,39 @@ kitabındaki ayrıntılı başlıkla eşleşir. İki genel geometri dosyası ba�
 ilerlemesine zorla bağlanmadan dersteki bütün kağıtlar üzerinden erişilir.
 Bu kontrol126PDF'nin uygulamaya gömüldüğü veya479kağıdın hazır olduğu
 anlamına gelmez.
+# 0.7.0 — ayrıntılı rehberleri ve kaynak sırasını genişletme
+
+14 Kasım 2026: mevcut 6 rehbere 9 rehber eklendi; toplam 15. Yedi mevcut
+anlatım genişletildi; denklemler ve eşitsizlikler iki yeni theory-only anlatımdır.
+İlk 41 çalışma sırası başlığının anlatımı bulunur; bütün 479 başlık tamamlanmadı.
+115 özgün banka sorusu ve 8 doğrulanmış ÖSYM referansı korunur; bu turda yeni
+resmî soru doğrulaması yapılmadı.
+
+| Anlatım | İncelenen kaynak sayfaları | Öğretim ve sınır |
+| --- | --- | --- |
+| Temel kavramlar | MEBİ TYT Matematik PDF 11–13, basılı 9–11; OGM Temel Kavramlar–Sayılar PDF 1–2; Aurelia kağıdı 1–4 | Rakam/değer, kümeler, işlem özellikleri, tanım ve karşı örnek |
+| Tek–çift ve işaret | MEBİ Matematik PDF 14–16; OGM PDF 4,8; Aurelia kağıdı 1–4 | Tam sayı paritesi ile gerçek sayının işareti ayrı; sıfır/üs/bölüm koşulları |
+| Ardışık sayılar | MEBİ Matematik PDF 17; OGM PDF 5–7; Aurelia kağıdı 1–4 | Aralık ve terim sayısı, uçlar, ortalama, toplam ve sıra koşulu |
+| Asal sayılar | MEBİ Matematik PDF 19,24; Aurelia kağıdı 1–4 | Karekök sınırı dahil; asal/ortak asallık ve üç farklı çarpan sayacı |
+| Faktöriyel | MEBİ Matematik PDF 73, basılı 71; Aurelia kağıdı 1–4 | Doğal sayı alanı, boş çarpım, ortak çarpan ve asal üs sayımı |
+| Hücre organelleri | MEBİ TYT Biyoloji PDF 55–65, basılı 53–63; Aurelia Hücre Organelleri 1–4 | Zar/katman, salgı yolu, organel görevleri ve özelleşmiş hücre istisnaları |
+| Periyodik sistem | MEBİ TYT Kimya PDF 30–36, basılı 28–34 | Atom numarası, ilk 20 nötr temel hâl, iyon/izotop, özellik eğilimleri/istisnalar |
+| Birinci dereceden denklemler | MEBİ Matematik PDF 33, basılı 31; Aurelia ilgili kağıt 1–4 | Tersinir dönüşüm, parametre, tanım koşulu ve ilk denklemde sağlama |
+| Basit eşitsizlikler | MEBİ Matematik PDF 34, basılı 32; Aurelia ilgili kağıt 1–4 | Negatif katsayı, sıfır, açık/kapalı sınır, kesişim/birleşim ve tam sayı seçimi |
+
+Kaynak metinler olduğu gibi kopyalanmadı. Özellikle sıfırla çarpmanın bir doğru
+eşitliği koruması ile çözüm kümesini koruması ayrıldı. Ribozom için tipik hücre
+genellemesinin olgun memeli alyuvarı istisnası belirtildi. Hücre ölümünü tek
+başına lizozom patlamasına indirgeme veya bir pigmenti bütün meyvelere atama
+gibi aşırı genellemeler taşınmadı. Periyodik eğilimler koşulsuz yasa veya sabit
+bir iyonlaşma enerjisi oranı olarak sunulmadı.
+
+Yeni cebir modeli katsayı ve deneme girdilerini tam sayılarla sınırlar; çözüm
+kesir olabilir ve sade kesirle gösterilir. a=0 durumunda bölme yapılmaz;
+denklem artık birinci dereceden değildir. Eşitsizlik modeli uç dahil oluşunu,
+negatif katsayıda yönü ve denenen değerin ilk koşulu sağlayışını ayrı gösterir.
+Keşif ve çözümlü örnekler puan, oturum veya ustalık üretmez.
+
+Özel kaynak PDF'leri, katalog ve kişisel kimlikler sürüm deposuna eklenmedi.
+
+---

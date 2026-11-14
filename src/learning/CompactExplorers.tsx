@@ -35,6 +35,7 @@ function Fractions() {
   const d = Math.max(1, Math.min(12, Math.round(s.denominator)));
   const n = Math.max(0, Math.min(d, Math.round(s.numerator)));
   const value = ((s.negative ? -1 : 1) * n) / d;
+  const rounded = Math.round(value * 1000) / 1000 !== value;
   return (
     <Frame title={v("fractionsTitle")} help={v("fractionHelp")}>
       <div className="geometry-controls">
@@ -130,11 +131,16 @@ function Fractions() {
       </svg>
       <output className="area-result">
         {s.negative ? "−" : ""}
-        {n}/{d} ={" "}
+        {n}/{d} {rounded ? "≈" : "="}{" "}
         {new Intl.NumberFormat(state.settings.locale, {
           maximumFractionDigits: 3,
         }).format(value)}
       </output>
+      {rounded && (
+        <p className="small muted">
+          ≈ yaklaşık eşittir; ondalık değer üç basamağa yuvarlandı.
+        </p>
+      )}
     </Frame>
   );
 }

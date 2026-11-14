@@ -21,7 +21,7 @@ export const visualLessons: Lesson[] = [
     id: "hucre-organelleri",
     subjectId: "tyt-biyoloji",
     title: t("Hücre organelleri: yapı ve görev"),
-    minutes: 20,
+    minutes: 55,
     tags: ["cell", "visual", "structure-function"],
     source: t(
       "MEBİ TYT Biyoloji Konu Özetleri: Hücresel Yapılar ve Görevleri; Aurelia Hücre Organelleri kopya kâğıdı ile karşılaştırılan özgün anlatım ve şema. Alıştırmalar resmî sınav sorusu değildir.",
@@ -112,7 +112,7 @@ export const visualLessons: Lesson[] = [
     id: "periyodik-sistem",
     subjectId: "tyt-kimya",
     title: t("Periyodik sistem ve iyonlar"),
-    minutes: 18,
+    minutes: 50,
     tags: ["periodic", "visual", "atomic-number"],
     source: t(
       "Aurelia Periyodik Cetvel Genel Özellikler ve MEBİ Kimya özetlerindeki kavramlarla karşılaştırılmış özgün anlatım. Temel element verileri PubChem Periodic Table’dan alınmıştır. Özgün sorular resmî sınav maddesi değildir.",

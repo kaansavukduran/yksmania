@@ -141,6 +141,10 @@ try {
     .getByRole("button", { name: "Çözümün tamamını göster", exact: true })
     .click();
   await expect(example.locator(".worked-conclusion")).toContainText("1/4");
+  await page.getByRole("slider", { name: /^Payda:/ }).fill("3");
+  await expect(page.locator(".compact-lab .area-result")).toContainText(
+    "1/3 ≈ 0,333",
+  );
   await page.locator(".lesson-article > .primary").click();
   for (const index of [1, 2, 0, 1, 1]) {
     await page.locator(".answer").nth(index).click();
@@ -223,6 +227,32 @@ try {
   );
   await page.reload();
   await expect(page.locator(".model-result")).toContainText("29 = 6 × 4 + 5");
+  for (const [title, expected] of [
+    [/Birinci dereceden denklemler: eşitliği koru/, "Çözüm: x=3"],
+    [/Basit eşitsizlikler: yön/, "x > −3"],
+  ]) {
+    await navigate("Konu Anlatımı");
+    await page.getByRole("button", { name: /Matematik.*31 konu/ }).click();
+    await page.getByRole("button", { name: title }).click();
+    const lab = page.locator(".algebra-lab");
+    if (expected === "Çözüm: x=3") {
+      await lab
+        .getByRole("button", {
+          name: "Sabit terimi iki taraftan çıkar",
+          exact: true,
+        })
+        .click();
+      await lab
+        .getByRole("button", { name: "İki tarafı a’ya böl", exact: true })
+        .click();
+    }
+    await expect(lab.locator(".algebra-result")).toContainText(expected);
+    await expect(page.locator(".save-status")).toContainText(
+      "Bu cihazda kaydedildi",
+    );
+    await page.reload();
+    await expect(lab.locator(".algebra-result")).toContainText(expected);
+  }
   await navigate("Sorular");
   await page.getByRole("button", { name: "TYT", exact: true }).click();
   await page.getByRole("button", { name: /Türkçe.*22 konu/ }).click();
@@ -283,6 +313,7 @@ try {
       orderedPlanAndRestart: "PASS",
       ogmChemistryVisuals: "PASS",
       mathematicsVisualsAndRestart: "PASS",
+      algebraGuidesAndOfflineReload: "PASS",
       profile,
       offlineLesson: "PASS",
       reload: "PASS",

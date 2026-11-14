@@ -1,7 +1,7 @@
 {
-  "version": "0.6.0",
+  "version": "0.7.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Kopya kağıtları konu başlığındaki düğmeden açılır. Kart boşlukları düzeltildi; anlatım sayısı 50’ye çıktı, ilk beş kimya konusu ve rasyonel sayılar ayrıntılı açıklamalar ve adım adım çözümlerle genişletildi. Soru sonuçlarına doğrulanmış ÖSYM kaynakları eklendi; 3/7/21. gün konu tekrarları önce gösterilir."
+    "tr": "52 anlatım ve 15 ayrıntılı rehber. İlk beş TYT matematik konusu, hücre ve periyodik sistem genişletildi; denklemler ve eşitsizlikler etkileşimli modellerle eklendi. Yaklaşık kesir sonuçları ve İçindekiler klavye odağı düzeltildi. Kaynak PDF ve ilerlemen korunur."
   }
 }

@@ -2099,7 +2099,7 @@ progress::-moz-progress-bar {
 }
 @media (max-width: 560px) {
   .main-content {
-    padding: 1.4rem 0.9rem 2rem;
+    padding: 1.4rem clamp(12px, 3vw, 18px) 2rem;
   }
   .topbar .save-status {
     font-size: 0.63em;
@@ -2227,7 +2227,7 @@ progress::-moz-progress-bar {
   }
   .lesson-article,
   .question-panel {
-    padding: 1.3rem;
+    padding: clamp(12px, 3vw, 18px);
   }
   .study-heading h1 {
     font-size: 1.8rem;
@@ -2882,8 +2882,8 @@ progress::-moz-progress-bar {
 }
 @media (max-width: 560px) {
   .visual-lab {
-    padding: 0.8rem;
-    margin-inline: -0.3rem;
+    padding: clamp(10px, 2.5vw, 14px);
+    margin-inline: 0;
   }
   .atom-inspector {
     grid-template-columns: minmax(0, 1fr);
@@ -3216,6 +3216,10 @@ progress::-moz-progress-bar {
   text-align: start;
 }
 .guide-section {
+  scroll-margin-top: 2rem;
+}
+.guide-section > h2,
+.guide-examples > h2 {
   scroll-margin-top: 2rem;
 }
 .guide-section > p {

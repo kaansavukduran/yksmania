@@ -1,12 +1,13 @@
 # YKSMania
 
-Fragaria Interactive’in çevrimdışı YKS çalışma uygulaması. **0.6.0 alpha**.
+Fragaria Interactive’in çevrimdışı YKS çalışma uygulaması. **0.7.0 alpha**.
 
-[Uygulamayı aç](https://yksmania.vercel.app) · [Windows, Linux ve Android paketleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.6.0-alpha.1)
+[Uygulamayı aç](https://yksmania.vercel.app) · [Windows, Linux ve Android paketleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.7.0-alpha.1)
 
-50 anlatım / 115 özgün soru. İlk beş TYT kimya konusu ve rasyonel sayılar,
-MEBİ/OGM ve ilgili Aurelia kağıtlarıyla karşılaştırılarak ayrıntılı açıklama,
-etkileşimli model, çözümlü örnek ve hatırlama sorularıyla genişletildi.
+52 anlatım / 115 özgün soru / 15 ayrıntılı rehber. İlk beş TYT kimya ve ilk
+beş TYT matematik konusu, rasyonel sayılar, hücre, periyodik sistem, denklemler
+ve eşitsizlikler; MEBİ/OGM ve ilgili Aurelia kağıtlarıyla karşılaştırılan
+gerekçeli açıklamalar, etkileşimli modeller, çözümlü örnekler ve hatırlama içerir.
 Kopya kağıtları sol menüden çıkarıldı; konu başlığındaki **Kopya Kağıdını
 Görüntüle** düğmesi ilgili PDF’yi aynı sayfada açar. Özel PDF’ler cihazda
 saklanır. **Ayarlar → Kaynak dosyalarını yönet** bölümünden klasör halinde
@@ -33,7 +34,7 @@ Test ve dağıtım kanıtları [FORGE.md](FORGE.md) içindedir.
 - TYT's 10 subjects and numerical AYT's 5 subjects: all 341 main topic rows and
   479 detailed cheat-sheet headings from the source workbooks (different granularity,
   not 820 distinct official exam topics).
-- Fifty Turkish lessons and interactive vector explanations, 115 original exercises, hints, confidence and explanations.
+- Fifty-two Turkish lessons and interactive vector explanations, 115 original exercises, hints, confidence and explanations.
 - Number-set membership, sign/parity comparisons, paired consecutive sums, prime
   divisor trials and ordered-book factorials, with saved exploration choices.
 - Clickable animal/plant cells, a 118-element periodic table, area-preserving geometry,

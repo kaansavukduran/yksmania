@@ -1,3 +1,60 @@
+# 0.7.0 — konu derinliği ve denetim, yerel doğrulama tamamlandı
+
+Başlangıç main: `730b37297fda2fcde70c838bb96c021119b442be`; remote fetch ve
+uç karşılaştırması yapıldı. Kullanıcının Unslop / Fragaria Unslop / Denetle
+isteği uygulandı; Denetle aynı beceri kimliğinde güncel Yazılım Denetle adıyla
+bulundu. Canlı AIONIA standardı v1.7 yeniden okundu. Varlık, karakter ve atlas
+değişmedi; Türkçe, Win/Linux/Android/web kapsamı ve mevcut kayıt şeması korunur.
+
+52 anlatım / 15 ayrıntılı rehber / 115 özgün banka sorusu / 8 ÖSYM referansı.
+Yedi mevcut anlatım genişletildi: temel kavramlar, tek–çift/işaret, ardışık,
+asal, faktöriyel, hücre, periyodik sistem. İki yeni kapsamlı anlatım ve vektör
+model eklendi: birinci dereceden denklemler detail-203 ve basit eşitsizlikler
+detail-204. İlk 41 kaynak sırası başlığı artık anlatıma açılır. Açıklamalar,
+koşullar, karşı örnekler, adım adım çözümler ve hatırlama içerir. Kaynak sayfa
+kapsamı docs/SOURCE_REVIEW.md'de. Bütün 479 anlatım/20 yıllık ÖSYM arşivi hazır
+iddiası yok; bu turda yeni resmî soru eklenmedi. Özel PDF/katalog/kimlik yok.
+
+Doğrulanan kusurlar: YKS-018 (Orta) yuvarlanmış kesirde yanlış kesin eşitlik;
+YKS-019 (Düşük) içindekiler geçişinde klavye odağının geride kalması;
+YKS-020 (Orta) 320px %200 UI/%150 yazıda rem boşlukların okuma alanını daraltması.
+Üçü de onarım öncesi FAIL ile kanıtlandı. İlk ikisi paylaşılan gösterim/gezinmede;
+üçüncüsü küçük ekranın ana içerik, ders/soru ve model yan boşluklarında düzeltildi.
+Gerçek 320px viewport'ta okunabilir alan 144,8→250px; root font 32px ve text-scale
+1,5 korunur. Yeni modelin tanımsız renk token'ı mevcut accent ile düzeltildi.
+
+Yerel PASS: check/build (94 çakışmasız modül), 67 birim, son tam 69/69 Chromium
+kabulü. Önceki YKS-006/007/008/009/010/013/014/015/016/017 ilgili denetimleri
+korunur. İlk 69/69 koşusundan sonra görsel genişlik bulgusu geldi; bu nedenle
+son CSS düzeltmesinden sonra tam koşu tekrarlandı. Rehber gezinmesi testinin
+ilk 4/5 koşusundaki anlık DOM okuması, seçilen gerçek h1 beklenerek düzeltildi;
+beklenti azaltılmadan üç tekrar 3/3 ve son tam koşu PASS.
+
+Linux geliştirme Electron: yeni cebir, çevrimdışı yeniden yükleme, süreç yeniden
+başlatma, paragraf taslağı ve günlük skor kontrolleri PASS; rendererErrors 0.
+Bu yerel çalışma paketlenmiş Windows/Linux veya fiziksel Android testi değildir.
+22 model/çözüm görüntüsü koyu/açık 1440px, 320px ve 768px büyük ölçekte alındı;
+temsilci görüntüler incelendi. Gerçek 320px viewport ayrıca kontrol edildi.
+Uzun element screenshot'larında görülen sabit skip-link artifaktı normal viewport
+ile karşılaştırıldı: odaksız bağlantı ekranın dışında (-320…-199px); canlı bir
+örtme hatası değildir. Testler normal giriş, gerçek emüle tap, yatay geçiş,
+PDF/not/tekrar korunması ve ciddi/kritik axe kontrollerini içerir.
+
+Kanıtlar yerel /workspace/work/forge-061 içindedir: baseline-audit.log,
+baseline-readable-width.log, unit-final.log, full-browser-final.log,
+guide-navigation-repeat.log, native-final.log, viewport-check.log ve visuals/.
+Git'e özel kaynak dosyası ve envanter kimliği girmediği 35 değişen dosyada kontrol
+edildi. İndirme/production/paket CI sonucu aşağıdaki yayın kaydına eklenecek;
+0.7.0 paketleri henüz bu yerel kayıtta yayımlandı sayılmaz.
+
+Sonraki içerik: kalan 10 kısa başlangıç anlatımını aynı derinliğe çıkar; yeni
+kaynak sırası 42/detail-232 Selçuklu, 43/detail-147 Katman elektron dizilimi,
+44/detail-233 Osmanlı siyaseti. Şimdiki periyodik rehberin bu başlıkları kısmen
+anlatması otomatik ayrı konu tamamlanması sağlamaz. Yeni soru bankası fazına
+geçmeden anlatım önceliğini ve 1/3/7/21 ilkesini koru.
+
+---
+
 # 0.6.0 teslimi — doğrulanan güncel durum
 
 Uygulama ve paket kaynağı: `c05291f4e9af991eda642e2d0f312194a7721ce0`.

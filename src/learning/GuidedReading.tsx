@@ -3,6 +3,12 @@ import { ArrowRight, RotateCcw } from "lucide-react";
 import { VisualLab } from "./VisualLab";
 import type { LessonGuide, WorkedExample } from "./guides/types";
 
+function moveToSection(id: string) {
+  const heading = document.getElementById(id)?.querySelector("h2");
+  heading?.focus({ preventScroll: true });
+  heading?.scrollIntoView({ behavior: "instant", block: "start" });
+}
+
 function Example({ example }: { example: WorkedExample }) {
   const [count, setCount] = useState(0);
   return (
@@ -79,22 +85,14 @@ export function GuidedReading({ guide }: { guide: LessonGuide }) {
               <button
                 className="text-button"
                 key={section.title}
-                onClick={() =>
-                  document
-                    .getElementById(`${prefix}-${i}`)
-                    ?.scrollIntoView({ behavior: "instant", block: "start" })
-                }
+                onClick={() => moveToSection(`${prefix}-${i}`)}
               >
                 {section.title}
               </button>
             ))}
             <button
               className="text-button"
-              onClick={() =>
-                document
-                  .getElementById(`${prefix}-examples`)
-                  ?.scrollIntoView({ behavior: "instant", block: "start" })
-              }
+              onClick={() => moveToSection(`${prefix}-examples`)}
             >
               Çözümlü örnekler
             </button>
@@ -107,7 +105,7 @@ export function GuidedReading({ guide }: { guide: LessonGuide }) {
           key={section.title}
           id={`${prefix}-${i}`}
         >
-          <h2>{section.title}</h2>
+          <h2 tabIndex={-1}>{section.title}</h2>
           {section.paragraphs.map((paragraph, j) => (
             <p key={j}>{paragraph}</p>
           ))}
@@ -144,7 +142,7 @@ export function GuidedReading({ guide }: { guide: LessonGuide }) {
         </section>
       ))}
       <section className="guide-examples" id={`${prefix}-examples`}>
-        <h2>Çözümlü örnekler</h2>
+        <h2 tabIndex={-1}>Çözümlü örnekler</h2>
         <p className="small muted">
           Önce kendin düşün; gerekçeleri adım adım aç ve sonucu kontrol et.
           Bunlar özgün öğretim örnekleridir.

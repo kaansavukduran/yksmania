@@ -1,8 +1,50 @@
 # Quality evidence
 
-Target 0.6.0 alpha. This file is updated at the verified Forge checkpoint.
+## 0.7.0 — YKS-018 / YKS-019 / YKS-020 ve yeni cebir anlatımları
 
-Current delivery: application/package source `c05291f`;
+Denetlenen başlangıç: main `730b37297fda2fcde70c838bb96c021119b442be`.
+Remote fetch ve dal uçlarıyla eşleşmesi doğrulandı. Önceki 0.6.0 teslimindeki
+YKS-015/016/017 senaryoları korunur; bu turdaki gözlemler ayrı kaydedilir.
+
+- **YKS-018 / Orta:** Konu Anlatımı → Matematik → Rasyonel sayılar → Payda 3.
+  Gerçekte `1/3 = 0,333` görünüyordu; yaklaşık sonuç kesin eşitlik gibi öğretiliyordu.
+  1440px Chromium/Linux, Türkçe, varsayılan ölçek ve klavye/fare yolunda
+  odaklı test başlangıçta FAIL. Yuvarlama gerektiğinde ≈ ve açıklaması gösterilir;
+  1/4 gibi kesin sonlu sonuçta = korunur. Aynı test onarım sonrası PASS.
+- **YKS-019 / Düşük:** Aynı rehberde İçindekiler'i klavyeyle açıp bir bölüm seçince
+  sayfa kayıyor fakat odak eski görünmez düğmede kalıyordu. Aynı ortamda
+  `toBeFocused` başlangıçta FAIL. Paylaşılan rehber gezinmesi hedef h2'ye odağı
+  taşır; başlıklar yalnız programlı odak alır, Tab sırasına eklenmez. Aynı test PASS.
+- **YKS-020 / Orta:** Yeni cebir modelinin görsel incelemesinde, 320px ve
+  %200 arayüz/%150 yazıda iç içe rem yan boşluklarının okunabilir alanı 144,8px'e
+  indirdiği gözlendi. Taşma denetimi tek başına bunu yakalamıyordu. Aynı koşuldaki
+  en az 220px içerik alanı testi başlangıçta FAIL. Küçük ekranın ana içerik,
+  ders/soru kartı ve şema yan boşlukları ekran genişliğine göre sınırlandı;
+  font ve kullanıcının iki ölçeği korunur. Yeni test bunları ayrı ayrı ölçer.
+  Yeni modelde tanımsız renk değişkeni de mevcut accent token'ına bağlandı;
+  deneme noktası açıklaması renk dışındaki konum bilgisini de kullanır.
+
+Son küçük ekran düzeltmesi sonrası ilk odaklı koşu 4/5 geçti: rehber gezinme
+testi hash geçişi tamamlanmadan section sayısını anlık okudu (0). Hata anından
+sonraki snapshot doğru hücre rehberini gösteriyordu. Test artık seçilen konunun
+gerçek h1'ini bekleyip aynı kapsam denetimini yapar; beklenti azaltılmadı veya
+timeout uzatılmadı. Tekrarlı ve tam son koşu sonuçları FORGE'de kaydedilir.
+
+Yeni kabul: normal ders girişinden genişletilen yedi rehberin model ve çözümlü
+örneği; yeni denklemin dönüşümleri, sıfır katsayı ve offline yeniden açılması;
+eşitsizlikte yön/açık-kapalı sınır, gerçek emüle tap, 320px %200 arayüz/%150 yazı,
+844×390 yatay görünüm, offline kayıt ve ciddi/kritik axe kontrolü. Notlar altta
+kalır; keşif ders tamamlanması veya XP üretmez. İlk odaklı 5/5 browser PASS;
+67 birim testi ve ilk check/build PASS. Tam son sürüm/paket/canlı sonuçları
+güncel FORGE kaydında ayrıca belirtilir.
+
+Bu turda AIONIA canlı v1.7 standardı yeniden okundu; karakter, atlas veya dünya
+sanatı değiştirilmedi. Sanat regresyonları tam tarayıcı kabulünde korunur.
+Fiziksel Android ve temiz Windows kurulum/güncelleme burada test edilmiş sayılmaz.
+
+Target 0.7.0 alpha. This file is updated at the verified Forge checkpoint.
+
+Previous 0.6.0 delivery: application/package source `c05291f`;
 [CI 43590369220](https://github.com/kaansavukduran/yksmania/actions/runs/43590369220)
 passed 64 unit and 64 browser tests plus all Windows, Linux and Android jobs.
 Both packaged desktop applications passed offline/reload/process-restart flows

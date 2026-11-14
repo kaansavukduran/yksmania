@@ -2,6 +2,7 @@ import { sourceNarratives } from "../learning/narratives";
 import { visualLessons } from "../learning/lessons";
 import { introLessons } from "../learning/introLessons";
 import { mathLessons } from "../learning/mathLessons";
+import { algebraLessons } from "../learning/algebraLessons";
 import { aytLessons } from "../learning/aytLessons";
 import curriculum from "../data/curriculum.json";
 import { paragraphPassage } from "../data/reading";
@@ -809,6 +810,7 @@ export const lessons: Lesson[] = [
   ...aytLessons,
   ...introLessons,
   ...mathLessons,
+  ...algebraLessons,
   ...sourceNarratives,
 ];
 export const lessonById = (id: string) => lessons.find((l) => l.id === id);

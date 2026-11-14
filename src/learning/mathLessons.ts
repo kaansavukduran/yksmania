@@ -24,7 +24,7 @@ export const mathLessons: Lesson[] = [
     id: "temel-kavramlar",
     subjectId: "tyt-matematik",
     title: t("Temel kavramlar: sayı, değer ve tanım koşulu"),
-    minutes: 20,
+    minutes: 45,
     tags: ["sayi-kumeleri", "islem-onceligi"],
     source: t(
       `${numbersSource}, PDF s.1–2; Aurelia Temel Kavramlar kopya kağıdı s.1–4. ${original}`,
@@ -111,7 +111,7 @@ export const mathLessons: Lesson[] = [
     id: "tek-cift-isaret",
     subjectId: "tyt-matematik",
     title: t("Tek–çift ve işaret: iki ayrı özellik"),
-    minutes: 18,
+    minutes: 40,
     tags: ["parite", "isaret"],
     source: t(
       `${numbersSource}, PDF s.4, 8; Aurelia Tek Çift Pozitif Negatif Sayılar kopya kağıdı s.1–2. ${original}`,
@@ -202,7 +202,7 @@ export const mathLessons: Lesson[] = [
     id: "ardisik-sayilar",
     subjectId: "tyt-matematik",
     title: t("Ardışık sayılar: adım, terim ve toplam"),
-    minutes: 20,
+    minutes: 40,
     tags: ["ardisik", "gauss"],
     source: t(
       `${numbersSource}, PDF s.5, 10; Aurelia Ardışık Sayılar kopya kağıdı s.1–2. ${original}`,
@@ -289,7 +289,7 @@ export const mathLessons: Lesson[] = [
     id: "asal-sayilar",
     subjectId: "tyt-matematik",
     title: t("Asal sayılar: bölen, kanıt ve çarpan"),
-    minutes: 20,
+    minutes: 45,
     tags: ["asal", "bolen"],
     source: t(
       `Aurelia Asal Sayılar kopya kağıdı, s.1–2. Tanım, karekök sınırı ve çarpan ayrımıyla karşılaştırıldı. ${original}`,
@@ -372,7 +372,7 @@ export const mathLessons: Lesson[] = [
     id: "faktoriyel",
     subjectId: "tyt-matematik",
     title: t("Faktöriyel: azalan seçimler ve ortak çarpım"),
-    minutes: 20,
+    minutes: 45,
     tags: ["faktoriyel", "sayma"],
     source: t(
       `OGM Video Ders Notu, Permütasyon–Kombinasyon–Binom, PDF s.1, 5–6; Aurelia Faktöriyel Kavramı kopya kağıdı s.1–4. ${original}`,

@@ -16,11 +16,14 @@ const Narrative = lazy(() =>
   })),
 );
 const MathFoundations = lazy(() => import("./MathFoundations"));
+const Algebra = lazy(() => import("./AlgebraExplorer"));
 export function VisualLab({ id }: { id: string }) {
   const { t } = useApp();
   return (
     <Suspense fallback={<p role="status">{t("loading")}</p>}>
-      {narrativeById.has(id) ? (
+      {id === "birinci-dereceden-denklemler" || id === "basit-esitsizlikler" ? (
+        <Algebra key={id} inequality={id === "basit-esitsizlikler"} />
+      ) : narrativeById.has(id) ? (
         <Narrative key={id} id={id} />
       ) : [
           "temel-kavramlar",
