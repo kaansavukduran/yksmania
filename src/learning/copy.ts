@@ -1,3 +1,4 @@
+import { paragraphSentences } from "../data/reading";
 export const visualCopy: Record<string, string> = {
   adenosine: "Adenozin",
   phosphateNote: "Şemada P, bağlı fosfat grubunu temsil eder.",
@@ -98,15 +99,15 @@ export const visualCopy: Record<string, string> = {
   atpNote:
     "Hücre enerjiyi yoktan üretmez; dönüştürür ve aktarır. ATP uzun süreli enerji deposu değildir.",
   paragraphTitle: "Düşüncenin izini sür",
-  paragraphHelp: "Bir cümleye dokun. Örneği, karşıtlığı ve ana düşünceyi ayır.",
-  sentence0: "Bir bilgiyi bir kez okumak onu kolayca tanıdık hissettirebilir.",
-  sentence1:
-    "Oysa kitabı kapatıp açıklamaya çalışmak, eksik kalan noktaları ortaya çıkarır.",
-  sentence2:
-    "Bu yüzden çalışmanın niteliği, yalnız tekrar sayısıyla değil, bilgiyi kullanabilmekle değerlendirilmelidir.",
-  sentenceRole0: "Giriş gözlemi: tanıdıklık hissini kuruyor.",
+  paragraphHelp:
+    "Bir cümleye dokun. Karşıtlığı, açıklamayı ve ana düşünceyi ayır.",
+  sentence0: paragraphSentences[0],
+  sentence1: paragraphSentences[1],
+  sentence2: paragraphSentences[2],
+  sentenceRole0:
+    "Karşıtlık: kitabı bitirmek ile anlamanın aynı şey olmadığını söylüyor.",
   sentenceRole1:
-    "Karşıtlık ve açıklama: “oysa” ile önceki gözlemin sınırını gösteriyor.",
+    "Açıklama: okurun kendi sorularını kurmasıyla metinle ilişkisinin güçlenebileceğini gösteriyor.",
   sentenceRole2: "Ana düşünce: önceki cümlelerden çıkan genel yargı.",
 };
 export function useVisualCopy() {

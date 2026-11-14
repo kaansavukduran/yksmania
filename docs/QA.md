@@ -1,6 +1,6 @@
 # Quality evidence
 
-Target 0.5.1 alpha. This file is updated at the verified Forge checkpoint.
+Target 0.5.2 alpha. This file is updated at the verified Forge checkpoint.
 
 ## Automated acceptance
 
@@ -506,3 +506,32 @@ match 776f62c. Two small evidence-file hashes match SHA256SUMS; five large nativ
 binaries were not all downloaded and rehashed locally. Android 9 / 0.5.1 / API24 /
 v2 signature verified; public APK HEAD HTTP 200. Native physical/signing/update
 gaps above remain open. Documentation-only handoff changes do not alter app code.
+
+## 0.5.2 — YKS-015: metinsiz paragraf sorusu
+
+Kullanıcı bildirimi: “Metnin ana düşüncesi nedir?” sorusunda metin yok;
+son cümleye atıf yapan ipucu da kullanılamıyor. 0.5.1 / 9cf8a65 yerel yapısında
+Sorular → TYT → Türkçe → Paragrafta ana düşünce normal girişiyle FAIL tekrarlandı.
+Beş soru aynı, yalnız konu anlatımında bulunan metne bağlıydı; Study yalnız soru
+kökü ve seçenekleri çiziyordu. Cümle keşfindeki farklı paragraf da aynı özgün
+metin kaynağına bağlandı.
+
+Onarım: Question.passage seçili sorunun tam metnidir; Study bunu soru kökünden
+önce çizer. Ders gövdesinin tamamı cevap ipuçlarıyla birlikte soru ekranına
+kopyalanmaz. Soru kimlikleri, cevap anahtarları ve kayıt şeması değişmez. Mevcut
+115 soru metni/ipucu/seçeneği bağımsız bağlam açısından okundu. Türevde A–B
+koordinatları; elektrik alanında noktasal kaynak ve sabit ortam; denge modelinde
+A⇌B ve başlangıç; iki atom sorusunda Rutherford/altın levha/alfa bağlamı açıklandı.
+Bu kontrol bütün gelecekteki içeriğin hatasızlığı veya resmî soru doğrulaması değildir.
+
+Kalıcı kontrol: soru metninde/ipucunda dış metne açık atıf varsa passage gerekir;
+mevcut renderer’ın desteklemediği şekil/grafik/tablo atıfları CI testini durdurur.
+Elle okuma ve gerçek ekran kabulü bu sözcük kontrolünü tamamlar. Kesirlerdeki
+“kaç parçaya” ifadesi paragraf atfı sayılmaz. Yeni medya türleri payload ve renderer
+birlikte eklenmeden hazır soru olarak yayımlanmamalıdır.
+
+Yeni mobil kabul sırasında 320px, %200 arayüz, %150 yazıda seçenek içindeki flex
+metninin küçülemeyip yatay taşması gözlendi. min-width:0 ve sözcük sarma;
+dar ekranda tek sütun seçenek, uyarlanan boşluklarla giderildi. Yazı veya kullanıcı
+ölçeği küçültülmedi; metin gizlenmedi. Yerel/native/canlı sonuçlar FORGE.md’de
+ayrı kaydedilir. Fiziksel Android/ekran okuyucu kontrolü ayrıca yapılmalıdır.

@@ -1,3 +1,36 @@
+# YKSMania 0.5.2 — soru bağlamı düzeltmesi
+
+Öncelikli kullanıcı hatası YKS-015: metinsiz ana düşünce sorusu. Önceki konu
+üretiminin 50 anlatımlı çalışma kopyası /workspace/yksmania içinde korunuyor;
+bu hotfix ayrı /workspace/yksmania-question-fix, fix/question-passage dalında
+9cf8a65 üzerine hazırlanıyor. Yeni konuları yayın hazırmış gibi bu yamaya katma.
+
+0.5.1 normal Sorular girişiyle eksik metin FAIL gözlendi. Tam özgün paragraf
+beş soruya passage olarak eklendi; soru, anlatım ve keşif aynı kaynağı kullanır.
+Diğer 110 soru da eksik bağlam açısından okundu; A–B koordinatları ve birkaç
+model/deney koşulu açıklandı. IDs/anahtar/not/oturum/tekrar politikası korunur.
+115 soru, 23 anlatım; bütün arşiv veya müfredat hazır iddiası yok.
+
+İçerik guard’ı ve kalıcı YKS-015 kabulü eklendi. Yerel check/build ve45 birim
+PASS; tam Chromium tarayıcı koşusu50/50 PASS (3,1dk). Normal soru girişi,
+beş soruda tam metin, ipucu, hatalı/doğru cevap, her adımda offline reload,
+not,5/5 sonuç ve başka derse geçince metnin kaldırılması test edildi.
+320px, %200 arayüz/%150 yazı, açık tema, dokunma, yatay/dikey ve ciddi-kritik
+axe PASS. 1440/390px koyu/açık dört soru paneli görsel incelendi; rootWidth
+viewport ile eşit, renderer hatası0. İç scroll yok; notesbelow geometrisi PASS.
+Linux geliştirme Electron'u offline/paragraf taslağı/process restart/tam5/5
+kabulü PASS, renderer0. Bu yerel paketlenmiş/kurulum veya fiziksel cihaz testi değildir.
+115 ID/anahtar/seçenek/açıklama eski içerik dökümüyle birebir karşılaştırılıp
+korundu; p1–p5 passage taşıyor. WIP konu üretimi07e46da dal commit'inde saklı.
+
+AIONIA v1.7 canlı standardı yeniden okundu, aynı revizyon. Art değişmedi.
+
+Sürüm 0.5.2, Android code10. Paket/yayın kanıtı henüz oluşturulmadı; hiçbir
+başarılı dağıtım veya fiziksel cihaz doğrulaması varsayma. Sonuçları ilerledikçe
+bu başlığa ekle. Önceki tarihsel kayıt aşağıda korunur.
+
+---
+
 # 14 Kasım devam durumu — konu üretimi taslak dalı
 
 forge/source-ordered-theory dalı; henüz yayınlanmadı. 27 yeni theory-only anlatım,

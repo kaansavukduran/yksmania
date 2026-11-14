@@ -411,7 +411,7 @@ export const introLessons: Lesson[] = [
       ),
       q(
         "atom-2",
-        "Saçılmada taneciklerin çoğunun levhadan geçmesi en doğrudan hangi yorumu destekler?",
+        "Rutherford’un ince altın levhaya alfa tanecikleri gönderdiği deneyde taneciklerin çoğunun levhadan geçmesi en doğrudan hangi yorumu destekler?",
         [
           "Atom tamamen doludur.",
           "Elektronların hepsi çekirdektedir.",
@@ -423,7 +423,7 @@ export const introLessons: Lesson[] = [
       ),
       q(
         "atom-3",
-        "Az sayıdaki alfa taneciğinin büyük açılarla sapması neyi destekler?",
+        "Rutherford’un ince altın levhaya alfa tanecikleri gönderdiği deneyde az sayıdaki taneciğin büyük açılarla sapması neyi destekler?",
         [
           "Pozitif yükün küçük ve yoğun çekirdekte toplanmasını",
           "Pozitif yükün her yerde eşit yoğunlukta olmasını",

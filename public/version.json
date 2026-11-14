@@ -1,7 +1,7 @@
 {
-  "version": "0.5.1",
+  "version": "0.5.2",
   "channel": "alpha",
   "notes": {
-    "tr": "Bugünün çalışma yolunda tamamlanan konular görünür kalır; son soru sonucunun doğru/yanlış sayısı, ipucu bilgisi ve sonuç bağlantısı gösterilir."
+    "tr": "Paragraf sorularında ilgili metin artık soru kökünün üstünde tam gösterilir. Konu anlatımı ve cümle keşfi aynı metni kullanır; eksik soru bağlamları ve dar ekrandaki seçenek taşması düzeltildi."
   }
 }

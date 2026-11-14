@@ -54,10 +54,10 @@ export const aytLessons: Lesson[] = [
     questions: [
       q(
         "dt-1",
-        "f(x)=x² için a=2 ve h=0,5 seçiliyor. A ve B’den geçen kirişin eğimi kaçtır?",
+        "f(x)=x² eğrisi üzerindeki A(2; 4) ve B(2,5; 6,25) noktalarından geçen kirişin eğimi kaçtır?",
         ["4", "4,5", "5"],
         1,
-        "Kiriş eğimi bu fonksiyonda 2a+h olur.",
+        "İki noktanın y değerleri farkını x değerleri farkına böl.",
         "(2,5²−2²)/0,5 = (6,25−4)/0,5 = 4,5. Bu, iki nokta arasındaki ortalama değişim oranıdır.",
         "secant-rate",
       ),
@@ -157,7 +157,7 @@ export const aytLessons: Lesson[] = [
       ),
       q(
         "ef-2",
-        "Bir kaynağın 1 m uzağında alan büyüklüğü 9.000 N/C. Kaynak sabitken 2 m uzakta alan kaç N/C olur?",
+        "Noktasal bir yükün 1 m uzağında alan büyüklüğü 9.000 N/C. Yük ve ortam aynı kalırken 2 m uzakta alan kaç N/C olur?",
         ["4.500", "2.250", "18.000"],
         1,
         "E, uzaklığın karesiyle ters orantılıdır.",
@@ -266,7 +266,7 @@ export const aytLessons: Lesson[] = [
       ),
       q(
         "eq-3",
-        "Sabit sıcaklıkta modeldeki katalizör iki hız sabitini de üç katına çıkarıyor. Hangisi doğrudur?",
+        "Dengeye henüz ulaşmamış, sabit sıcaklıklı A ⇌ B modelinde bir katalizör her iki yönün hız sabitini de üç katına çıkarıyor. Hangisi doğrudur?",
         [
           "Denge derişimleri ve Kc aynı kalır; dengeye yaklaşım hızlanır.",
           "Kc üç katına çıkar.",

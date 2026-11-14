@@ -1204,6 +1204,17 @@ small,
   line-height: 1.6;
   margin-bottom: 1.6rem;
 }
+.question-passage {
+  margin-bottom: 1.6rem;
+  padding-left: 1.1rem;
+  border-left: 2px solid var(--accent);
+  line-height: 1.85;
+  overflow-wrap: anywhere;
+}
+.question-passage p {
+  margin: 0;
+  white-space: pre-wrap;
+}
 progress {
   display: block;
   width: 100%;
@@ -1243,6 +1254,27 @@ progress::-moz-progress-bar {
 }
 .answer > span:nth-child(2) {
   flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.question-panel h2,
+.question-panel .feedback,
+.question-panel .hint-box p {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 400px) {
+  .practice-wrap > .question-panel {
+    padding: min(1.3rem, 4vw);
+  }
+  .question-panel .question-passage {
+    padding-left: min(1.1rem, 3vw);
+  }
+  .question-panel .answer {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: start;
+    padding: min(0.85rem, 3vw);
+  }
 }
 .answer-letter {
   display: flex;

@@ -12,7 +12,7 @@ import { useApp } from "../store";
 import { DateInput } from "../components/DateInput";
 import { parseBackup } from "../domain/storage";
 import type { Settings as SettingsType } from "../domain/model";
-const VERSION = "0.5.1";
+const VERSION = "0.5.2";
 function NumericControl({
   label,
   value,

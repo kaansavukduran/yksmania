@@ -23,6 +23,13 @@ The user's latest Aion art direction is reference-faithful pixel art with richer
 sprite reactions; it supersedes the historical cartoon-only request for this app.
 Source imports remain under Settings; do not reintroduce the Library navigation tab.
 
+Questions must be answerable from their own card: include the referenced passage,
+define named points and state needed model/data assumptions. Never depend on a
+previous theory page or the current state of its interactive explorer. Preserve
+YKS-015: all five paragraph items show the full shared passage above the stem;
+theory and sentence exploration use that same text. Run the question-content
+validation and direct Questions/offline/mobile regressions when adding content.
+
 Today keeps completed daily work visible and shows the latest complete saved
 question attempt with its actual correct/wrong counts. Never sum retries or infer
 manual theory completion from question answers. Preserve the YKS-013 regression.

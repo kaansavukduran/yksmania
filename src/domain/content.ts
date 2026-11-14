@@ -4,6 +4,7 @@ import { introLessons } from "../learning/introLessons";
 import { mathLessons } from "../learning/mathLessons";
 import { aytLessons } from "../learning/aytLessons";
 import curriculum from "../data/curriculum.json";
+import { paragraphPassage } from "../data/reading";
 import { txt as t, type Subject, type Lesson, type Question } from "./model";
 const baseSubjects: Subject[] = [
   {
@@ -727,9 +728,7 @@ export const lessons: Lesson[] = [
     body: [
       {
         title: t("Metin neyi savunuyor?"),
-        text: t(
-          "“Bir kitabı bitirmek, onu anlamakla aynı şey değildir. Okur bazen bir sayfada durup kendi sorularını kurduğunda metinle daha güçlü bir ilişki kurar. Okumanın değeri, yalnız çevrilen sayfalarda değil, kurulan düşüncelerde de aranmalıdır.”",
-        ),
+        text: t(paragraphPassage),
       },
       {
         title: t("Kapsamı koru"),
@@ -804,7 +803,7 @@ export const lessons: Lesson[] = [
         "Başlık, metnin anlama ve düşünme vurgusunu kapsar.",
         "main-idea",
       ),
-    ],
+    ].map((question) => ({ ...question, passage: t(paragraphPassage) })),
   },
   ...visualLessons,
   ...aytLessons,
