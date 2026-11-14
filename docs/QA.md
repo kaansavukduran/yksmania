@@ -1,5 +1,24 @@
 # Quality evidence
 
+## 0.9.0 paket kabulü / canlı dağıtım sınırı
+
+Kaynak b92b2b52be5f5a08b9238b565f73b6998481b65a; CI43611757852 dört iş PASS.
+Temiz npm ci/check/build,94 birim ve87 browser (4,2dk). Windows/Linux gerçek
+paketli süreçte offline ders/not/kağıt/soru, exam deadline/sonuç, timer ve reset
+PASS; renderer0. Android üretim ve signature/manifest komutları PASS.
+YKS-023–029 ve önceki ilgili regresyonlar PASS. Fiziksel cihaz/temiz kurulum,
+portable taşıma/native sürümlerle güncelleme NOT TESTED.
+
+Gerçek0.8→0.9 yerel web SW update PASS: önceki kabul hash'leriyle doğrulanan
+eski build ve kabul edilmiş yeni build, uygulamanın Settings update düğmesi.
+Taslak/not/ayarlar/öğrenme kayıtları/PDF baytları tam korundu; yeni kağıt ilk
+kez offline açıldı, reload ve paragraf devam PASS, renderer0. Bu üretim veya
+native-paket geçişi değildir; önkoşul NOT TESTED kaydının yerini aldı.
+
+Vercel0.9 production ve yeni canlı87test BLOCKED: API402 günlük100deploy kotası,
+retry86400s. Yerel CLI alternatifi yok. Production hâlâ0.8.0, yeni sürüm orada
+varmış gibi raporlanmaz. Kota sonrası dağıtım+canlı kabul gerekir; tam iz FORGE.
+
 ## 0.9.0 son yerel kabul
 
 **YKS-029/Kritik/package-lock:** ilk uzak CI43611497875 temiz kurulumda

@@ -1,5 +1,12 @@
 YKSMania 0.9.0 alpha
 
+Bu sayfa 0.9.0 indirilebilir paketlerini sunar. Vercel’in günlük100 dağıtım
+kotası nedeniyle canlı site hâlâ0.8.0’dadır; yeni web dağıtımı bekliyor.
+Paket kaynağı b92b2b52be5f5a08b9238b565f73b6998481b65a.
+CI43611757852:94 birim,87 tarayıcı ve Windows/Linux/Android işleri PASS.
+Yerel gerçek0.8→0.9 web güncellemesi taslak/not/ayar/dosya baytlarını korudu;
+bu sonuç üretim veya native paket yükseltme testi değildir.
+
 Ders materyali yükleme adımı kaldırıldı. Konu Anlatımı, Kopya Kağıtları,
 Sorular ve yeni Sınavlar ayrı bölümlerdir. Bütün hazır öğretim metinleri,
 özetler, modeller ve sorular doğrudan uygulamada, çevrimdışı çalışır.

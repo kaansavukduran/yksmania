@@ -1,4 +1,33 @@
-# 0.9.0 — yerleşik öğretim ve denemeler, yerel kabul tamamlandı
+# 0.9.0 — paket kabulü tamamlandı, Vercel günlük kotada
+
+Doğrulanan uygulama/paket kaynağı `b92b2b52be5f5a08b9238b565f73b6998481b65a`.
+[CI43611757852](https://github.com/kaansavukduran/yksmania/actions/runs/43611757852)
+tamamı PASS: temiz npm ci, check/build,94 birim,87/87 browser (4,2dk),
+Windows/Linux/Android. Windows ve Linux paketlenmiş uygulamalarında ders,
+rehber/kağıt/not, paragraf taslağı, bugünkü gerçek skor, offline/süreç yeniden
+başlatma, kum saati/deadline, exam snapshot/sonuç ve reset PASS; rendererErrors0.
+Android APK üretimi ve imza/manifest komutları PASS. Bu fiziksel cihaz veya
+temiz Windows kurulumu/portable taşıma/native sürümler arası geçiş değildir.
+YKS-023–029 ve önceki ilgili regresyonlar PASS; kapsamda açık doğrulanmış kusur yok.
+
+Yerel gerçek0.8→0.9 SW geçişi ayrıca PASS: eski canlı0.8 index/sw/version üç
+hash'i önceki kabul ile birebir eşleşti;228asset indirildi,196revision doğrulandı.
+Eski uygulamanın gerçek Ayarlar güncelleme düğmesiyle yeni kopya aktive edildi.
+Paragraf A taslağı/notu, açık tema/UI115/yazı110, önceki öğrenme kayıtları ve
+sentetik870bayt PDF metadata+byte'ları tam korundu. Yeni yerleşik kağıt ilk kez
+offline açıldı; reload/taslak devam PASS, renderer0. Bu izole yerel web kabulüdür.
+İlk önkoşul NOT TESTED kaydı, eski canlı build indirildikten sonra bu PASS ile
+aşıldı. İlk harness'in iki meşru güncelleme düğmesini eşleştiren seçici hatası
+saklandı; Settings içindeki gerçek düğme seçildi, ürün/test şartı zayıflatılmadı.
+
+**Vercel/new public acceptance BLOCKED:** günlük100 dağıtım kotası dolu.
+Git kaynaklı production talebi HTTP402, `api-deployments-free-per-day`,
+retryAfter86400 verdi; kurulu/kimlikli CLI alternatifi yok. Canlı site hâlâ0.8.0,
+eski dağıtım `dpl_bpyVHjvmsFLKFWVditzEZYtBmTpe`/ead659b;0.9 canlı denetimi
+yapılmadı. Kota açılınca doğrulanmış yeni main kaynağını aynı projeye dağıt,
+version.json ve commit'i kontrol et, ardından published-smoke87testini çalıştır.
+Yeni proje/plan/hesap değişimi veya arka plan zamanlama yapılmadı.
+0.9 paket yayını başarılı CI'nin mevcut dosyalarını yeniden derlemeden kullanacak.
 
 İlk uzak CI43611497875 npm ci sırasında source-map-0.9.0 için404 verdi.
 YKS-029/Kritik: uygulama sürümü metin değişimi kilitteki iki bağımlılık sürümünü
