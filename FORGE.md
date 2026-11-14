@@ -1,3 +1,12 @@
+# Korunan ağaç yönü düzeltmesi
+
+TYT/AYT kökleri üstte, ders dalları aşağıya açılır. Yayımlanacak0.5.3
+yamasındaki SVG ve mevcut YKS-010 yön denetimi bu yerel konu dalına aktarıldı.
+Build ve ağaç/küçük ekran2browser PASS. 50 anlatımlı bu dal yayımlanmadı;
+önceki konu/kaynak QA durumu aşağıdaki kayıtlarda korunur.
+
+---
+
 Public hotfix0.5.2 teslimi tamamlandı: uygulama/paket kaynağı7aedafb;
 GitHub main belge başı45ba975. CI43580314183 tüm4job PASS, public43579996297
 50/50 PASS, release43581051297 PASS;0.5.2-alpha.1 sekiz asset yayımlı.
