@@ -10,8 +10,22 @@ SVG görüntüleri görsel incelendi; kökler üstte, etiketler düz ve kadraj i
 Tam50/50 browser PASS (Chromium/Linux). Yön, klavye/ders seçimi, konu ve
 soru bağlantıları,320px %200UI/%150yazı ve offline akışları korundu.
 Konu taslağına da yalnız SVG/test aktarıldı; o dalda build/ilgili2browser PASS.
-CI/native/yayın doğrulamaları bekliyor; aşağıdaki0.5.2 kayıtları yeni sürümün
-test sonucu sayılmaz.
+Git kaynağı8c1153995080c70e01f1d963ebbd4d63be76e0dc.
+Vercel production dpl_FZcz2pMWdSdWcoz6EBoaGmtNNP6d READY; domain
+https://yksmania.vercel.app/version.json0.5.3 doğrulandı. Public kabul
+43582897828 tamamlandı:50/50 PASS (4,2dk), doğru kaynak8c11539.
+CI43582852608 tüm4iş PASS:45unit/50browser; Windows ve Linux paketlenmiş
+uygulamada offline/reload/process restart/günlük skor/paragraf kabulü PASS,
+rendererErrors0. Android APK derleme/imza/metadata işi PASS. Fiziksel cihaz,
+temiz Windows kurulumu,portable taşıma ve native sürümler arası güncelleme
+bu turda test edilmedi. Alpha yayın43583533431 PASS:
+https://github.com/kaansavukduran/yksmania/releases/tag/v0.5.3-alpha.1
+8asset:WinSetup/Portable,LinuxAppImage/DEB,AndroiddebugAPK+3kanıt/hash.
+Tag ve verified-run kaynağı8c11539; iki küçük kanıt dosyasının SHA256 değeri
+doğrulandı. APK v2 imzası PASS,code11/name0.5.3. Beş büyük ikili bu
+makinede yeniden hash'lenmedi. Yerel konu dalı b586674 ile yönü korur;
+yeni 50 anlatımlı içerik bu sürüme katılmadı.
+Aşağıdaki0.5.2 kayıtları yeni sürümün test sonucu sayılmaz.
 
 ---
 

@@ -2,6 +2,15 @@
 
 Target 0.5.3 alpha. This file is updated at the verified Forge checkpoint.
 
+## 0.5.3 ağaç yönü
+
+TYT ve AYT kökleri üstte; ders düğümleri aşağıya açılır. Mevcut YKS-010
+kontrolü iki kökün de bütün ders düğümlerinden yukarıda olduğunu ölçer.
+Klavye/ders seçimi, gerçek konu/soru bağlantıları ve320px büyük yazılı offline
+regresyonu korunur. Yerel45unit/50browser ve public43582897828:50/50 PASS.
+Koyu/açık masaüstü ve390px mobil SVG görüntüleri görsel incelendi.
+Paket/yayın doğrulamasının son durumu FORGE.md içindedir.
+
 ## Automated acceptance
 
 - Unit tests: ordinal review dates, year/leap boundaries, closed days, all-days
