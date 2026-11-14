@@ -415,6 +415,9 @@ test("division, common periods, energy and word transformations explain changed 
   await expect(page.locator(".model-result")).toContainText(
     "Uzun olsa da yapı basittir",
   );
+  await expect(page.locator(".save-status")).toContainText(
+    "Bu cihazda kaydedildi",
+  );
   await page.evaluate(async () => {
     await navigator.serviceWorker.ready;
   });

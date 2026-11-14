@@ -1,3 +1,28 @@
+# 0.6.0 yayın doğrulaması — kalıcı kayıt beklemeleri
+
+Uygulama kaynağı95978b0dc47294fc914fd04c5b70c13fcba96d14 main'e gönderildi.
+Vercel dpl_5gTmD1PRmk1bcpgvPEkewiZBPD5R production READY, version.json0.6.0.
+CI43588713692:64unit PASS, browser62/64; native işler güvenli biçimde SKIPPED.
+İki test UI olayından hemen sonra IndexedDB onayını beklemeden reload yaptı:
+son sözcük adımı ve başarısız tekrar yazısından sonraki başarılı retry. Store
+kodunda sıradan düzenleme “kaydediliyor” durumundaydı; terminal tekrar eylemi
+DB onayından önce başarı göstermiyordu. Testler saved durumu / gerçek undo
+onayını reload'dan ÖNCE bekleyecek şekilde düzeltildi. Keyfi timeout/retry veya
+atlanan assertion eklenmedi. İki senaryo üçer kez,6/6 PASS. Bu düzeltme yalnız
+testler ve bu devir notudur; uygulama kaynakları95978b0ile aynıdır.
+
+Yeni tamCI ve public kabul başlatılacak; eski43588836416 public koşusu ilk
+beklemesiz test revizyonudur. Son başarılı kaynaktan paket yayımlanmadan alpha
+paketlerinin hazır olduğu söylenmez. Kaynak arşivi2006–2026halen kısmi;
+50anlatım,6ayrıntılı rehber,115özgün soru ve8ÖSYMreferansı gerçek kapsamdır.
+
+Sıradaki içerik işi: kalan kısa başlangıç anlatımlarını kaynak okuyarak aynı
+ayrıntıya çıkar; kaynak sırası40/detail203 ve41/detail204 sonraki yeni başlıklardır.
+20yıllık bütün ÖSYM taraması, yeni soru setleri ve eksik kağıt üretimi tamamlanmadı.
+Özel126PDF cihazda içe aktarılır; public pakette özel Drive arşivi yoktur.
+
+---
+
 # 0.6.0 — kapsamlı anlatım ve konu içi kaynak akışı (çalışıyor)
 
 Yetkili repo kaansavukduran/yksmania; yerel /workspace/yksmania,

@@ -106,6 +106,9 @@ test("YKS-014 repeats share closed-day capacity and a failed topic-repeat write 
     .getByRole("textbox", { name: "Tek tarih kapat", exact: true })
     .fill("16/11/2026");
   await page.getByRole("button", { name: "Ekle", exact: true }).click();
+  await expect(page.locator(".save-status")).toContainText(
+    "Bu cihazda kaydedildi",
+  );
   await page.clock.setFixedTime(new Date("2026-11-16T12:00:00Z"));
   await nav(page, "Bugün");
   await page.reload();
@@ -140,6 +143,9 @@ test("YKS-014 repeats share closed-day capacity and a failed topic-repeat write 
   await page
     .getByRole("button", { name: "Tekrarı tamamladım", exact: true })
     .click();
+  await expect(
+    page.getByRole("button", { name: "Tekrar kaydını geri al", exact: true }),
+  ).toBeVisible();
   await page.reload();
   await expect(
     page.getByRole("button", { name: "Tekrar kaydını geri al", exact: true }),
