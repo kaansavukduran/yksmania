@@ -535,3 +535,11 @@ metninin küçülemeyip yatay taşması gözlendi. min-width:0 ve sözcük sarma
 dar ekranda tek sütun seçenek, uyarlanan boşluklarla giderildi. Yazı veya kullanıcı
 ölçeği küçültülmedi; metin gizlenmedi. Yerel/native/canlı sonuçlar FORGE.md’de
 ayrı kaydedilir. Fiziksel Android/ekran okuyucu kontrolü ayrıca yapılmalıdır.
+
+0.5.2 teslim kanıtı: [CI43580314183](https://github.com/kaansavukduran/yksmania/actions/runs/43580314183)
+45unit/50browser ve paketlenmiş Windows/Linux paragraf offline/restart kabulü PASS;
+Android v2 imza/code10/name0.5.2 PASS. [Public43579996297](https://github.com/kaansavukduran/yksmania/actions/runs/43579996297)
+50/50 PASS; [release43581051297](https://github.com/kaansavukduran/yksmania/actions/runs/43581051297)
+8asset yayımladı. Yerel HTTPS tarayıcı yolu proxyCA nedeniyle BLOCKED; TLS
+kontrolü kapatılmadı. İlk CI49/50 sonucu ve testin durable kayıt beklemesi
+FORGE.md’de korunur. Fiziksel cihaz/kurulum/güncelleme NOT TESTED kalır.

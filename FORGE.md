@@ -1,3 +1,42 @@
+# Doğrulanmış teslim — YKSMania0.5.2 / YKS-015
+
+Uygulama ve paket kaynağı7aedafb350f62a07cb8a28d4b331326333627241.
+Paragrafın tam metni beş sorunun her birinde soru kökünden önce gösterilir;
+anlatım/keşif aynı özgün metne bağlıdır. Diğer115 banka kayıtlarının ID,
+seçenek,anahtar,açıklama alanları eski dökümle korunmuştur. Eksik nokta/model
+koşulları açıklandı; doğrudan Sorular girişi önceki teori ekranına bağlı değildir.
+
+- Yerel check/build,45unit,50/50 Chromium ve Linux geliştirme Electron'u PASS.
+- CI43580314183 tüm4iş PASS:45unit/50browser; paketlenmiş Windows ve Linux'ta
+  paragraf,offline,taslak/not,process restart ve5/5 kabulü PASS; renderer0.
+  Android APK v2 imzası PASS; code10,name0.5.2,minAPI24.
+- https://yksmania.vercel.app public version.json0.5.2. Vercel production
+  dpl_BEoaMJYM6EBgCWN2zyNSKSWeAV97 READY, Git kaynağı7aedafb.
+- Public kabul43579996297:50/50 PASS (3,2dk). Test checkout596882d'dir;
+  sonraki7aedafb yalnız testte durable-save beklemesi ve Forge belgesi değiştirir,
+  uygulama kaynakları aynıdır. Yerel HTTPS tarayıcı yolu proxyCA nedeniyle
+  BLOCKED olarak kaldı; sertifika doğrulaması kapatılmadı. Public CI kabulü ayrıdır.
+- Release43581051297 PASS:
+  https://github.com/kaansavukduran/yksmania/releases/tag/v0.5.2-alpha.1
+  8asset:WinSetup/Portable,LinuxAppImage/DEB,AndroiddebugAPK+3kanıt/hash dosyası.
+  Tag/verified-run kaynağı7aedafb. İki küçük kanıt dosyası SHA256 doğrulandı;
+  beş büyük ikilinin tamamı yerelde yeniden hash'lenmiş değildir.
+
+1440/390px koyu/açık soru panelleri görsel incelendi;320px %200UI/%150yazı,
+gerçek dokunma,yanlış/doğru cevap,offline reload,yön değiştirme,ciddi/kritik axe
+ve altta not geometrisi PASS. Metin kesilmez, kendi iç scroll'u yoktur.
+Fiziksel Android/temiz Windows kurulumu/portable taşıma ve iki native sürüm
+arasında güncelleme NOT TESTED. Windowsunsigned,APKdebug; üretim imzası yok.
+
+Önceki50 anlatımlı konu üretimi yerel forge/source-ordered-theory dalında
+korunur; bu release23 anlatım/115sorudur. Hotfix o dala da merge edilmiştir;
+59unit/61tam browser PASS. Yeni konu modellerinin son görsel/native kaynak
+QA'sı halen ayrıdır; bütün479başlık tamamlandı veya yayımlandı denmez.
+
+Önceki hata ve doğrulama kayıtları aşağıda tarihsel olarak korunur.
+
+---
+
 # YKSMania 0.5.2 — soru bağlamı düzeltmesi
 
 Öncelikli kullanıcı hatası YKS-015: metinsiz ana düşünce sorusu. Önceki konu
