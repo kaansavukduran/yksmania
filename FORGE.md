@@ -1,3 +1,37 @@
+# 0.7.0 yayımlandı — güncel teslim kaydı
+
+Uygulama/paket kaynağı: `d88f332d0ec14d40a5241108e1716690973fb95b`.
+[CI 43594722140](https://github.com/kaansavukduran/yksmania/actions/runs/43594722140)
+67 birim / 69 tarayıcı ve Windows, Linux, Android işlerinin tamamında PASS.
+Paketlenmiş Windows/Linux: yeni cebir rehberleri ve offline reload dahil
+normal ders → kayıt → yeniden yükleme → süreç yeniden başlatma akışları PASS;
+her iki platformda rendererErrors 0. APK code 13 / name 0.7.0 / v2 imza PASS.
+
+[Canlı kabul 43594788583](https://github.com/kaansavukduran/yksmania/actions/runs/43594788583)
+aynı kaynakta 69/69 PASS (4,9dk). Vercel production
+`dpl_47uB8RaPw1qJfe1LpUqi9pHoCu8x` READY; canlı version.json 0.7.0 doğrulandı.
+[Release 43595550431](https://github.com/kaansavukduran/yksmania/actions/runs/43595550431)
+PASS; [v0.7.0-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.7.0-alpha.1)
+yayımlandı. Başarılı CI paketleri yeniden derlenmeden alındı: Windows Setup ve
+Portable, Linux AppImage ve DEB, Android debug APK; üç kanıtla toplam 8 asset.
+İndirilen iki kanıt dosyasının SHA-256 değerleri yayın listesiyle eşleşti;
+verified-run kaynağı aynı commit ve başarılı main koşusu. Beş büyük binary
+ayrıca yerelde yeniden indirilip hash'lenmiş değildir.
+
+YKS-018/019/020 onarımları aynı başlangıç senaryolarında ve son tam kabulde PASS.
+Denetlenen bu kapsamda açık doğrulanmış kusur kalmadı. Önceki şikâyetlerin
+regresyonları korundu; bu sonuç bütün ürün için hatasızlık garantisi değildir.
+Fiziksel Android, temiz Windows kurulum/portable taşıma ve iki sürüm arasında
+veri koruyan güncelleme NOT TESTED. Yerel/donanım/paket sonuçları birbirinden
+ayrıdır; özel PDF ve Drive kimlikleri public pakete eklenmez.
+
+Gerçek içerik kapsamı: 52 anlatım, bunların 15'i ayrıntılı rehber; 115 özgün soru,
+8 doğrulanmış ÖSYM referansı. İlk 41 çalışma sırası başlığı anlatıma açılır;
+479 başlığın tamamı ve bütün 20 yıllık ÖSYM arşivi henüz hazır değildir.
+Sonraki içerik sırası ve yerel başlangıç/onarım kanıtı aşağıdadır.
+
+---
+
 # 0.7.0 — konu derinliği ve denetim, yerel doğrulama tamamlandı
 
 Başlangıç main: `730b37297fda2fcde70c838bb96c021119b442be`; remote fetch ve

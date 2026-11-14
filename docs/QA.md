@@ -2,6 +2,16 @@
 
 ## 0.7.0 — YKS-018 / YKS-019 / YKS-020 ve yeni cebir anlatımları
 
+Son kaynak `d88f332`: [CI43594722140](https://github.com/kaansavukduran/yksmania/actions/runs/43594722140)
+67 unit / 69 browser ve tüm dört iş PASS. Paketlenmiş Windows/Linux yeni
+cebir ve offline/restart akışları PASS, rendererErrors 0. Android code13/name0.7.0
+v2 imza PASS. [Public43594788583](https://github.com/kaansavukduran/yksmania/actions/runs/43594788583)
+69/69 PASS; release43595550431 v0.7.0-alpha.1'i 8 asset ile yayımladı.
+Yerel son tam koşu 69/69 (4,8dk); gezinme beklemesi üç tekrar 3/3 PASS.
+YKS-020 genişlik denetimi PASS: gerçek 320px görünümde 250px okuma alanı,
+32px root font ve 1,5 text-scale korunur. Fiziksel cihaz/temiz kurulum/güncelleme
+NOT TESTED; ayrıntılı kaynak, kanıt hash kapsamı ve teslim kaydı FORGE'dedir.
+
 Denetlenen başlangıç: main `730b37297fda2fcde70c838bb96c021119b442be`.
 Remote fetch ve dal uçlarıyla eşleşmesi doğrulandı. Önceki 0.6.0 teslimindeki
 YKS-015/016/017 senaryoları korunur; bu turdaki gözlemler ayrı kaydedilir.
