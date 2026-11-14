@@ -1,10 +1,11 @@
 # Accepted direction and remaining stages
 
-Current 0.4.0: 18 interactive Turkish lessons / 90 original questions. The first
-five workbook topics have OGM-based chemistry explorations. Theory is planned to
+Current 0.5.0: 23 interactive Turkish lessons / 115 original questions. The first
+ten workbook topics have chemistry and mathematics explorations. Topics 6–10 are
+number concepts, parity/sign, consecutive numbers, primes and factorials. Theory is planned to
 28 February 2027; question topics to the editable exam default 18 June 2027.
 The 479-heading order is checked against both workbook and Todoist first occurrences.
-Next content priority: continue from the next source-ordered topic, repair geometry
+Next content priority: continue from topic 11 (Canlıların Karakteristik Özellikleri), repair geometry
 coverage in the source mapping without inventing equivalences, and progressively
 verify item-level source questions/answers. Preserve records and offline operation.
 

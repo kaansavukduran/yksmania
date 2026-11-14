@@ -1,4 +1,4 @@
-# Content coverage, 0.4.0 alpha
+# Content coverage, 0.5.0 alpha
 
 These are different measurements. None measures a learner's mastery.
 
@@ -6,8 +6,8 @@ These are different measurements. None measures a learner's mastery.
 | --- | --- |
 | Main topic reference | 341 source rows: TYT 201, numerical AYT 140; stable topic IDs retained |
 | Detailed cheat-sheet outline | 479 headings; finer granularity and overlap with the main outline |
-| Interactive teaching | 18 lessons with authored SVG/vector interactions |
-| Interactive question bank | 90 original Turkish exercises; no official-item claim |
+| Interactive teaching | 23 lessons with authored SVG/vector interactions |
+| Interactive question bank | 115 original Turkish exercises; no official-item claim |
 | Private archive inventory | 8,584 PDF file records in 246 folders; about 23.6 GB, before content-hash deduplication |
 | Locally prepared private packs | 143 PDFs / 4,989 pages: 126 cheat sheets, 14 MEBİ-named PDFs and 3 OGM past-question books |
 
@@ -111,3 +111,14 @@ pages across two fascicules were close-read. These are the first five entries in
 verified study sequence. Most of the 479 headings still need an authored lesson and
 question set; their routes explicitly say so and allow recording external work.
 Source management remains under Settings and supports existing offline imports.
+
+## Source-ordered mathematics in 0.5.0
+
+Workbook topics 6–10 now have original interactive lessons and five exercises each:
+Temel Kavramlar, Tek Çift Pozitif Negatif Sayılar, Ardışık Sayılar, Asal Sayılar,
+Faktöriyel Kavramı. Two OGM video-note files were read at nine selected PDF pages;
+five Aurelia cheat sheets were read at fourteen selected pages. Primes are sourced
+to the Aurelia pages; their cited original MEB book was not independently read.
+See SOURCE_REVIEW.md for exact pages and model assumptions. This is not a full
+archive review. The previous eighteen lessons and ninety exercises remain intact.
+The main 341-row outline, detailed 479-row plan and geometry mapping gap are unchanged.

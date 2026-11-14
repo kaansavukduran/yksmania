@@ -1,5 +1,6 @@
 import { visualLessons } from "../learning/lessons";
 import { introLessons } from "../learning/introLessons";
+import { mathLessons } from "../learning/mathLessons";
 import { aytLessons } from "../learning/aytLessons";
 import curriculum from "../data/curriculum.json";
 import { txt as t, type Subject, type Lesson, type Question } from "./model";
@@ -807,6 +808,7 @@ export const lessons: Lesson[] = [
   ...visualLessons,
   ...aytLessons,
   ...introLessons,
+  ...mathLessons,
 ];
 export const lessonById = (id: string) => lessons.find((l) => l.id === id);
 export const subjectById = (id: string) => subjects.find((s) => s.id === id);

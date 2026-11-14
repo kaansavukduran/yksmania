@@ -75,6 +75,26 @@ try {
       ).toBeVisible();
     }
   }
+  const mathematics = [
+    /Temel kavramlar: sayı, değer/,
+    /Tek–çift ve işaret:/,
+    /Ardışık sayılar: adım/,
+    /Asal sayılar: bölen/,
+    /Faktöriyel: azalan/,
+  ];
+  for (const [i, title] of mathematics.entries()) {
+    await navigate("Konu Anlatımı");
+    await page.getByRole("button", { name: "TYT", exact: true }).click();
+    await page.getByRole("button", { name: /Matematik.*31 konu/ }).click();
+    await page.getByRole("button", { name: title }).click();
+    await expect(page.locator(".math-foundation-lab")).toBeVisible();
+    if (i === 3) {
+      await page
+        .getByRole("button", { name: "7 ile bölmeyi dene", exact: true })
+        .click();
+      await expect(page.locator(".prime-result")).toContainText("49 bileşik");
+    }
+  }
   await navigate("Kopya Kağıtları");
   await expect(
     page.getByRole("heading", { name: "Kopya Kağıtları", exact: true }),
@@ -139,6 +159,11 @@ try {
   ).toBeVisible();
   await openAyt("Biyoloji", "DNA eşlenmesi: eski ve yeni zincirler");
   await expect(page.locator(".dna-count strong")).toHaveText("2");
+  await navigate("Konu Anlatımı");
+  await page.getByRole("button", { name: "TYT", exact: true }).click();
+  await page.getByRole("button", { name: /Matematik.*31 konu/ }).click();
+  await page.getByRole("button", { name: /Asal sayılar: bölen/ }).click();
+  await expect(page.locator(".prime-result")).toContainText("49 bileşik");
   expect(errors).toEqual([]);
   console.log(
     JSON.stringify({
@@ -147,6 +172,7 @@ try {
       cheatsheets: "PASS",
       orderedPlanAndRestart: "PASS",
       ogmChemistryVisuals: "PASS",
+      mathematicsVisualsAndRestart: "PASS",
       profile,
       offlineLesson: "PASS",
       reload: "PASS",

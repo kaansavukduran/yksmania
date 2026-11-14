@@ -1,31 +1,24 @@
-YKSMania 0.4.0 alpha. Web: https://yksmania.vercel.app
+YKSMania 0.5.0 alpha
 
-- Varsayılan hedef sınav tarihi **18 Haziran 2027**; Ayarlar’dan değiştirilebilir.
-  Konu anlatımları **28 Şubat 2027**, soru çalışmaları sınav tarihine planlanır.
-  Kalan konu sayısı uygun günlere bölünür; kapalı hafta günleri/tarihler çıkarılır.
-  Tarihler gün/ay/yıl biçimindedir.
-- Excel Üretim Sırası ve Todoist ilk çalışma sırası karşılaştırılarak **479 başlık**
-  sıralandı. Bugünün hedefi, tamamlananlar ve tüm gelecek tarihler görünür.
-  Konu ve soru çalışma kayıtları ayrı tutulur, geri alınabilir. Elle işaretleme
-  XP, doğru cevap veya ustalık oluşturmaz.
-- Dünyam’da tüm dersleri gösteren tek renklenen grafik; solda TYT, sağda AYT
-  Sayısal ders/konu/soru ağaçları. Dar ekranlarda alt alta gelir. İlerlemeyle
-  renklenen piksel manzara; oyunlaştırma kapalıyken plan ve ağaçlar kullanılabilir.
-- İlk beş konu için OGM Dersler Cepte kimya PDF’lerinden hazırlanmış özgün anlatım:
-  simya/ayırma, disiplinler, sembolik dil, güvenlik, atom modelleri. Etkileşimli
-  vektör şemaları ve 25 yeni özgün soru; toplam **18 anlatım / 90 soru**.
-- Karakter referansına bağlı yeni 32 pozluk piksel Aion, fareye bakma ve dört farklı
-  tıklama tepkisi. Azaltılmış hareket desteklenir; karakterin dünya konumu kaymaz.
-- Kütüphane sol menüden kaldırıldı; mevcut PDF’ler silinmeden kaynak yönetimi
-  **Ayarlar → Kaynak dosyalarını yönet** altına taşındı. Kopya Kağıtları bölümü
-  Konu Anlatımı ile Sorular arasında kalır. Notlar anlatım/soruların altındadır.
-- Türkçe arayüz; çevrimdışı ders/PDF/plan, kayıt, not ve yarım oturum koruması.
+- Excel/Todoist çalışma sırasındaki 6–10. başlıklar eklendi: Temel Kavramlar,
+  Tek Çift Pozitif Negatif Sayılar, Ardışık Sayılar, Asal Sayılar, Faktöriyel.
+- Sayı kümelerine yerleştirip gerekçeyi gör, işaret/tek–çift işlemlerini değiştir,
+  ardışık toplamı ters eşlemeyle kur, asal bölenleri dene, kitapları raflara
+  yerleştirerek faktöriyeli ve sadeleştirmeyi keşfet. Seçimler offline saklanır.
+- Beş yeni etkileşimli anlatım ve 25 özgün soru; toplam **23 anlatım / 115 soru**.
+  Kaynaklar OGM video notlarının ve Aurelia kopya kağıtlarının seçili sayfalarıdır.
+  Bunlar özgün alıştırmalardır, resmî sınav maddesi değildir.
+- Önceki dersler, sorular, notlar, yarım oturumlar ve 1/3/7/21 tekrar tarihleri korunur.
+  18 Haziran 2027 varsayılan sınavı ve 28 Şubat 2027 konu hedefi; kapalı günleri
+  dışarıda bırakan 479 başlıklı sıralı iki bağımsız plan, ders grafiği/ağaçları,
+  ayrı Kopya Kağıtları ve altta Notun düzeni korunur. Yalnız Türkçedir.
 
 479 başlık, kaynak Excel’in ayrıntılı listesidir; geometri kapsamı sınırlıdır.
-Ayrı 341 ana konu haritası korunur. Tam müfredatın tüm etkileşimli içeriği hazır
-değildir. Henüz hazırlanmayan konu/soru ekranı bunu açıkça belirtir ve kendi
-kaynağındaki çalışmayı kaydetmene izin verir. Özel PDF arşivi herkese açık pakete
-gömülmez. Kaynak sayfaları ve model sınırları docs/SOURCE_REVIEW.md içindedir.
+Ayrı 341 ana konu haritası korunur. Tüm etkileşimli müfredat hazır değildir.
+Özel PDF arşivi herkese açık pakete gömülmez. Kaynaklar/model sınırları
+[source review](https://github.com/kaansavukduran/yksmania/blob/main/docs/SOURCE_REVIEW.md)
+içindedir. Web: https://yksmania.vercel.app ; güncel web sürümü paket sürümünden
+farklı olabilir, doğrulanmış dağıtım durumu FORGE.md içinde ayrı kaydedilir.
 
 Windows: Setup veya Portable x64; Chromium dahildir. Portable dosyanın yanındaki
 YKSManiaData klasörünü birlikte saklayın. Windows dosyaları Authenticode imzalı değildir.

@@ -1,4 +1,39 @@
-# Forge checkpoint: YKSMania 0.4.0 alpha
+# Forge checkpoint: YKSMania 0.5.0 alpha
+
+Excel sırasının 6–10. başlıkları geliştirildi: Temel Kavramlar, Tek Çift Pozitif
+Negatif Sayılar, Ardışık Sayılar, Asal Sayılar, Faktöriyel Kavramı. Beş özgün
+etkileşimli anlatım ve 25 özgün soru; toplam 23/115. OGM Video Ders Notu iki
+dosyanın dokuz seçili sayfası ve Aurelia beş kopya kağıdının on dört seçili sayfası
+yakın okundu. Asal sayılarda doğrudan kaynak Aurelia’dır; atıf yaptığı orijinal
+MEB kitabı ayrıca okunmadı. Sayfa/kavram/anahtar kaydı SOURCE_REVIEW.md içinde.
+Arşivin tamamı, resmî soru bankası veya tüm müfredat hazır diye sunulmaz.
+
+Sayı kümeleri çoklu seçim ve gerekçe; tek–çift/işaret işlemleri; ters eşleme ile
+ardışık toplam; √n dahil bölen denemesi ve çarpan grupları; farklı kitapları
+sıralayarak faktöriyel ve ortak çarpan sadeleştirmesi. Seçimler offline kalıcıdır,
+keşif XP/ustalık kazandırmaz. Eski 18 anlatım/90 sorunun tüm içerik alanları
+birebir korunur. Plan 479, ana harita 341 ve geometri açığı değişmez. Yeni soru
+kimlikleri bas/par/seq/pri/fac-1…5; eski tekrar tarihleri/notlar/taslaklar korunur.
+
+Güncel Fragaria Unslop ve React kontrol listesi uygulandı. Canlı AIONIA v1.7 ve
+indeks v3 yeniden okundu (14 Kasım 2026), revizyon aynı. Bu tur karakter/manzara
+varlıkları değişmedi; önceki piksel tercih ve 32 poz regresyonları korunur.
+YKS-012 yeni asal SVG’sinin gereksiz sabit yüksekliği gözlenip düzeltildi; eski
+sürümde varmış gibi sunulmaz. Matematik çizimleri açık/koyu ve mobilde incelendi.
+
+Yerel PASS: check/build, 40 birim/depolama/içerik, 44/44 tarayıcı (2,4 dk).
+320px / %200 UI / %150 yazı / azaltılmış hareket, gerçek kontrol kullanımı,
+offline ilk açılış/reload, ciddi-kritik axe beş modelde PASS. Electron Linux beş
+yeni modeli offline açar; 49 bölen kanıtı süreç yeniden başlayınca korunur;
+renderer hata sayısı 0. Uzak paket/yayın durumu doğrulanınca aşağıya eklenecektir.
+
+Sürüm 0.5.0 / Android versionCode 8. Fiziksel Android, temiz Windows kurulum,
+portable taşıma, üretim imzası ve iki sürümlük native güncelleme açık kapılardır.
+Sıradaki içerik önceliği 11. başlık: Canlıların Karakteristik Özellikleri.
+
+---
+
+# Historical checkpoint: YKSMania 0.4.0 alpha
 
 İstek: 18 Haziran 2027 varsayılan sınavı; 28 Şubat 2027 konu bitirme hedefi;
 Excel/Todoist sırası ve kapalı günlere göre konu/soru ölçekleme; gün/ay/yıl;

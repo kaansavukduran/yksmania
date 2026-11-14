@@ -1,13 +1,13 @@
 # YKSMania
 
-An offline-first YKS learning application by Fragaria Interactive. **0.4.0 alpha: visual learning and private resource import; not the complete curriculum.**
+An offline-first YKS learning application by Fragaria Interactive. **0.5.0 alpha: visual learning and private resource import; not the complete curriculum.**
 
-[Open the web app](https://yksmania.vercel.app) · [Download alpha packages](https://github.com/kaansavukduran/yksmania/releases/tag/v0.4.0-alpha.1)
+[Open the web app](https://yksmania.vercel.app) · [Download alpha packages](https://github.com/kaansavukduran/yksmania/releases/tag/v0.5.0-alpha.1)
 
-0.4.0 adds two deadline plans, workbook study order, separate topic/question records,
-subject progress trees and five OGM-based chemistry explorations. Web 0.4.0 passed
-38 live acceptance tests. Windows/Linux packaged offline flows and Android APK
-signature/manifest checks passed; delivery evidence is in FORGE.md.
+0.5.0 adds five TYT mathematics explorations and 25 original exercises, following
+workbook topics 6–10. Local checks passed 40 unit tests, 44 browser scenarios and
+Linux Electron offline/restart flows. Package and published-web status are recorded
+separately in FORGE.md; a source push is not proof of a new live deployment.
 
 ## What works
 
@@ -20,7 +20,9 @@ signature/manifest checks passed; delivery evidence is in FORGE.md.
 - TYT's 10 subjects and numerical AYT's 5 subjects: all 341 main topic rows and
   479 detailed cheat-sheet headings from the source workbooks (different granularity,
   not 820 distinct official exam topics).
-- Eighteen Turkish lessons, eighteen interactive vector explanations, 90 original exercises, hints, confidence and explanations.
+- Twenty-three Turkish lessons and interactive vector explanations, 115 original exercises, hints, confidence and explanations.
+- Number-set membership, sign/parity comparisons, paired consecutive sums, prime
+  divisor trials and ordered-book factorials, with saved exploration choices.
 - Clickable animal/plant cells, a 118-element periodic table, area-preserving geometry,
   fractions, algebraic areas, force balance, moles, ATP and paragraph structure.
 - Four new AYT explorations: secant/tangent and a non-differentiable corner, signed
@@ -106,7 +108,7 @@ The private Aurelia YKS catalogue and representative MEBİ/OGM/Aurelia learning
 materials were inspected during planning. The public application contains original
 instruction and exercises, not copies of the private archive or official exam items.
 The topic map is a reference outline, not a verified official year-specific syllabus.
-Use **Kütüphane → PDF ekle** to import materials you are allowed to use. Nothing is
+Use **Ayarlar → Kaynak dosyalarını yönet → PDF ekle** to import materials you are allowed to use. Nothing is
 uploaded. There is no account, analytics, cloud AI or automatic Drive synchronization.
 Browser storage can be cleared or evicted: use **Ayarlar → Veri ve yedekler** regularly.
 

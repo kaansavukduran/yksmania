@@ -88,3 +88,14 @@ progress; world opacity also increases. Decorative scenery earns no completion.
 The progress chart and trees remain available with gamification off. Real UI text
 continues to use readable system/Lexend fonts. This art decision is project-specific,
 not a change to every AIONIA game's style or canon.
+
+## Mathematics diagrams, 0.5.0
+
+Five original SVG models use the existing theme and textual results. Nested sets,
+pairing links, grouped units and ordered shelves encode mathematical relationships;
+color alone is insufficient to answer. Numeric results use normal scaled HTML text.
+Diagrams adapt height to visible rows; no empty shelf diagram for the empty product.
+Controls wrap at large text sizes and reduced motion keeps all actions available.
+Explorations persist outside scored responses. No character atlas, landscape or
+canon change in this iteration; existing Aion frame/anchor regressions remain.
+Live AIONIA v1.7 and reference index v3 were reread on 14 November 2026, unchanged.

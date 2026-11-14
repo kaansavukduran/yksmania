@@ -1,6 +1,6 @@
 # Applicable AIONIA profile
 
-Live standard re-read at the 0.4.0 checkpoint (2026-11-14): **v1.7**; observed source modified at
+Live standard re-read at the 0.5.0 checkpoint (2026-11-14): **v1.7**; observed source modified at
 2026-11-13T00:29:34.975Z. Reference index revision 3 was re-read for this checkpoint.
 The authenticated private source is identified in the originating task; private
 document links and personal excerpts are deliberately excluded from public code.

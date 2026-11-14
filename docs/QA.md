@@ -1,6 +1,6 @@
 # Quality evidence
 
-Target 0.4.0 alpha. This file is updated at the verified Forge checkpoint.
+Target 0.5.0 alpha. This file is updated at the verified Forge checkpoint.
 
 ## Automated acceptance
 
@@ -397,3 +397,34 @@ verified-run.json 66539f0 ile eşleşir; indirilen iki kanıtın SHA-256 değerl
 checksum listesiyle aynı. Android 7/0.4.0, minimum API 24 ve v2 imza doğrulandı;
 public APK adresi HTTP 200. Büyük beş binary ayrıca yerel hash kontrolü için
 indirilmedi. Tam teslim ve web/app test kaynağı ayrımı FORGE.md içindedir.
+
+## 0.5.0 — TYT mathematics, local verification
+
+TypeScript and production build PASS. Forty unit/storage/content tests PASS;
+44/44 browser scenarios PASS on the fixed final build (2.4m). Chromium
+156.0.8078.79 / Node 24.22.1 / Linux. The five new models each support normal
+control changes and five independent question responses, retained offline reload,
+320px / 200% interface / 150% text / light / reduced-motion interaction and
+serious/critical axe checks. A landscape resize returns to portrait with selections
+intact. No new database schema or translation was introduced. Static math components
+are lazy-loaded; React checklist reviewed, no new dependency or global handler.
+
+YKS-012, observed during this iteration: the new prime-divisor SVG reserved height
+for many rows even for a single row. On the pre-fix new-lesson build, the regression
+measured 385.23px height where the single-row bound was <169.21px and failed.
+The viewBox now follows the row count; the zero-book factorial omits an empty SVG,
+and the unpaired consecutive sum uses a shorter viewBox. The geometry assertion
+and all 44 browser scenarios pass after repair. This was a defect in the newly
+authored diagrams, not a reproduced defect in the earlier 0.4.0 release.
+
+All five dark 1440×1000 and light 390×1000 activities visually inspected, including
+the compact prime repair; page widths equal viewports and renderer exceptions 0.
+Local Electron Linux opens all five math activities for the first time offline;
+49=7×7 evidence survives reload/process restart. Existing AYT, PDF, notes, question,
+review, chart, Aion and plan regressions pass; desktop renderer exceptions 0.
+A direct old/current module comparison preserved the previous eighteen lessons
+and ninety questions including IDs, options, hints, keys and explanations.
+
+Remote packages, live web and release evidence will be recorded in FORGE.md after
+observation. These local passes do not establish physical Android, Windows clean
+installer/portable relocation, production signing or two-version native updates.

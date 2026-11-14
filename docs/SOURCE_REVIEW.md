@@ -1,5 +1,55 @@
 # Kaynak ve model kontrolü
 
+## 0.5.0 — sıradaki beş TYT Matematik konusu
+
+Excel/Todoist ilk çalışma sırasının 6–10. başlıkları, mevcut detail-194 … detail-198
+kimlikleriyle eşleştirildi. Özel arşivden iki OGM Video Ders Notu dosyası yeniden
+okundu. Sayfa numaraları dosya içi PDF sayfalarıdır; kitap basılı sayfası varsayılmaz.
+
+| Özgün anlatım | Doğrudan okunan kaynak ve PDF sayfası |
+| --- | --- |
+| Temel kavramlar | OGM Temel Kavramlar–Sayılar–Basit Eşitsizlikler–Mutlak Değer, 1–2; Aurelia Temel Kavramlar, 1–4 |
+| Tek–çift ve işaret | Aynı OGM dosyası, 4 ve 8; Aurelia Tek Çift Pozitif Negatif Sayılar, 1–2 |
+| Ardışık sayılar | Aynı OGM dosyası, 5 ve 10; Aurelia Ardışık Sayılar, 1–2 |
+| Asal sayılar | Aurelia Asal Sayılar, 1–2 |
+| Faktöriyel | OGM Permütasyon–Kombinasyon–Binom, 1, 5–6; Aurelia Faktöriyel Kavramı, 1–4 |
+
+Dokuz OGM ve on dört Aurelia sayfası yakın okundu. Metin çıkarımı/komşu sayfa
+önizlemesi kitapların tamamının denetimi değildir. Asal sayılar kopya kağıdının
+atıf yaptığı MEB kitabı ayrıca okunmadı; doğrudan OGM/MEB doğrulaması iddia edilmez.
+Faktöriyel tanımı ikinci OGM dosyasının 5. sayfasında görsel olarak kontrol edildi.
+Hiçbir kaynak PDF’si, özel dosya kimliği veya ham sayfa public pakete alınmadı.
+
+Kavram ve çizim denetimi:
+
+- Sayı örnekleri sembolik olarak sınıflanır; ondalık yaklaşım irrasyonellik kanıtı
+  olarak kullanılmaz. ℕ, 0 ile başlar. İç içe kutular kapsama ilişkisidir; alanları
+  eleman sayısını göstermez. Rakam/sayı, işlem önceliği, |x| ve yasak değerler ayrılır.
+- Negatiflik ve tek–çift farklı özelliklerdir. Sıfır çift ve işaretsizdir. Bölümün
+  tek–çifti yalnız tam sayıysa söylenir; sıfıra bölme tanımsızdır. Noktalar mutlak
+  büyüklüğü gösterir. OGM’deki üs kuralı pozitif tam sayı üsle sınırlandırıldı.
+- Ardışık model eş aralıklı gerçek terimleri, n−1 aralığı ve ters sırayla eşlenen
+  ikinci toplamı gösterir. 2S = n(a+b); ortalamanın dizide bulunması gerekmez.
+- Asallık için √n dahil gerekli asal bölenler denenir: 49’da 7 atlanmaz. Tek bir
+  gerçek bölen bileşikliği kanıtlar; eksik denemeyle asal sonucu verilmez. 1 ne
+  asal ne bileşik, 2 asaldır. Gruplar birim adetlerini, kalan ayrı rengi gösterir.
+- Faktöriyel modeli farklı kitapları sıralı raflara yerleştirir; kısıtlı/permutasyon
+  çeşidi varsayılmaz. n=0 için boş düzenin sayısı 1; 0!=1. n!/m! için 0≤m≤n,
+  yalnız ortak çarpanlar sadeleşir. UI n≤7; hesap yordamı güvenli tam sayı için n≤18.
+
+| Özgün set | Soru kimlikleri | Doğru seçenekler | Bağımsız hesap örnekleri |
+| --- | --- | --- | --- |
+| Temel | bas-1 … bas-5 | B, C, A, C, B | √49=7; farklı rakamlarla en büyük iki basamaklı 98; 15÷3×2=10; x≠−2; √(−7)²=7 |
+| Tek–çift | par-1 … par-5 | A, B, C, C, B | −8 negatif çift; −3²=−9, (−3)²=9; çift/çift tam sayı olmak zorunda değil; 0 çift |
+| Ardışık | seq-1 … seq-5 | B, C, A, C, B | −5,−3,−1,1,3; 4…28 artış 3 → 9 terim; 6+10+…+30=126; 12+14+16=42 |
+| Asal | pri-1 … pri-5 | B, A, C, B, C | 1 ayrı durum; 49=7²; 84=2²×3×7; 2+19=21 ve 2×19=38 |
+| Faktöriyel | fac-1 … fac-5 | B, C, A, C, B | 3!=6; 9!/7!=72; (7!+6!)/6!=8; n!=1 için n=0 veya 1; 35! sonunda 7+1=8 sıfır |
+
+Bunlar özgün alıştırmalardır, ÖSYM/OGM kitap maddesi diye sunulmaz. Her beşli
+normal soru ekranından 5/5 bitirildi. Önceki 18 anlatım/90 sorunun tüm içerik
+alanları, kimlikleri ve anahtarları korunur. Toplam 23 anlatım/115 özgün soru;
+sıradaki hazırlanmamış başlık 11: Canlıların Karakteristik Özellikleri.
+
 ## 0.4.0 — çalışma sırası ve ilk beş OGM konusu
 
 Güncel “YKS ve AÖF - Kopya Kâğıtları Takip.xlsx” dosyasının Üretim Sırası
