@@ -2,6 +2,12 @@
 
 ## 0.9.0 son yerel kabul
 
+**YKS-029/Kritik/package-lock:** ilk uzak CI43611497875 temiz kurulumda
+source-map-0.9.0 HTTP404. Uygulama sürüm etiketi değişimi iki dependency sürümüne
+ve üç sürüm aralığına taşmıştı. Tüm ortak dependency kayıtları doğrulanmış tabana
+geri alındı; PDF.js kaldırılması ve kök uygulama0.9.0 korunur. Ayrı boş cache ile
+npm ci PASS (680paket/16s); son check/unit/build ve yeni uzak paket koşusu gerekir.
+
 check/build,94/94 birim ve87/87 Chromium tarayıcı PASS;87 test5,5dk’da çalıştı.
 YKS-023–028 ve önceki ilgili regresyonlar PASS. Ayrı exam4/4 ve son Electron
 offline/restart/deadline/sonuç/reset akışı PASS; rendererErrors0. Normal/büyük

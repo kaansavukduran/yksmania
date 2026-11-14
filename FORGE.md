@@ -1,5 +1,13 @@
 # 0.9.0 — yerleşik öğretim ve denemeler, yerel kabul tamamlandı
 
+İlk uzak CI43611497875 npm ci sırasında source-map-0.9.0 için404 verdi.
+YKS-029/Kritik: uygulama sürümü metin değişimi kilitteki iki bağımlılık sürümünü
+ve üç aralık kaydını da değiştirmişti; mevcut node_modules ile yerel build bunu
+yakalamadı. PDF.js kaldırılması dışındaki tüm ortak dependency kayıtları0.8
+tabanından birebir geri alındı; uygulama sürümü0.9.0 kaldı. Boş ayrı npm cache ile
+gerçek npm ci680paketi16s’de kurdu, PASS. Check/unit/build temiz kurulumdan sonra
+yeniden uygulanır; yeni başarılı tüm-platform CI olmadan paket yayımlanmaz.
+
 Son kaynak derlemesi: check, 94/94 unit ve 87/87 Chromium browser PASS (5,5 dk).
 YKS-023–028 kabul koşulları ve önceki ilgili regresyonlar geçti; hazırlanmamış
 paketlerin aramada boş kart üretmesi de giderildi. Ayrı exam kabulü 4/4 PASS.
