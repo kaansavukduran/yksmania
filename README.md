@@ -1,16 +1,18 @@
 # YKSMania
 
-An offline-first YKS learning application by Fragaria Interactive. **0.5.0 alpha: visual learning and private resource import; not the complete curriculum.**
+An offline-first YKS learning application by Fragaria Interactive. **0.5.1 alpha: visual learning and private resource import; not the complete curriculum.**
 
-[Open the web app](https://yksmania.vercel.app) · [Download alpha packages](https://github.com/kaansavukduran/yksmania/releases/tag/v0.5.0-alpha.1)
+[Open the web app](https://yksmania.vercel.app) · [Download alpha packages](https://github.com/kaansavukduran/yksmania/releases/tag/v0.5.1-alpha.1)
 
-0.5.0 adds five TYT mathematics explorations and 25 original exercises, following
-workbook topics 6–10. Local checks passed 40 unit tests, 44 browser scenarios and
-Linux Electron offline/restart flows. Web 0.5.0 passed all 44 published-site acceptance scenarios. Windows/Linux packaged offline/restart and Android APK signature/manifest
-checks passed. Release evidence is recorded in FORGE.md.
+0.5.1 keeps completed topics visible on Today's study path and shows the latest
+question score, hint information and a link to the saved result. Question and
+theory records remain independent. Current verification/release evidence is in
+FORGE.md. Interactive content remains 23 lessons and 115 original questions.
 
 ## What works
 
+- Today retains completed work and shows, for example, **5 soruda 4 doğru · 1 yanlış**.
+  Existing question-only history can be explicitly marked studied from the same card.
 - Default editable exam date: **18 June 2027**; theory deadline: **28 February 2027**.
   Remaining workbook topics are distributed across eligible days in verified order.
   Day-first date inputs, blocked weekdays/dates and independent topic/question progress.

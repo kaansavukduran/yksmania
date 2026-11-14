@@ -1,4 +1,4 @@
-# Content coverage, 0.5.0 alpha
+# Content coverage, 0.5.1 alpha
 
 These are different measurements. None measures a learner's mastery.
 

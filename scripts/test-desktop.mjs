@@ -146,6 +146,21 @@ try {
   page.on("pageerror", (error) => errors.push(String(error)));
   await page.waitForSelector(".hero");
   await expect(page.locator(".stat-number").first()).toHaveText("1");
+  const dailyTheory = page
+    .getByRole("region", { name: "Konu planı", exact: true })
+    .getByRole("list", { name: "Bugünün konuları", exact: true });
+  await expect(
+    dailyTheory.locator("li").filter({ hasText: "Simyadan kimyaya" }),
+  ).toContainText("Konu tamamlandı");
+  const rationalRow = dailyTheory
+    .locator("li")
+    .filter({ hasText: "Rasyonel Sayılar" });
+  await expect(rationalRow).toContainText("5 soruda 5 doğru · 0 yanlış");
+  await rationalRow
+    .getByRole("button", { name: "Sonucu gör", exact: true })
+    .click();
+  await expect(page.locator(".result-stats")).toContainText("5/5");
+
   await page.context().setOffline(true);
   await navigate("Dünyam");
   await expect(
@@ -177,6 +192,7 @@ try {
       offlineLesson: "PASS",
       reload: "PASS",
       processRestart: "PASS",
+      dailyCompletionAndScore: "PASS",
       rendererErrors: errors.length,
     }),
   );

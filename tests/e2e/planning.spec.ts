@@ -177,10 +177,17 @@ test("YKS-009 daily completion is durable, undoable, independent of questions an
   await expect(plan(page)).toContainText(
     "Bugünün hedefi: 5 konu · 1 tamamlandı",
   );
-  await expect(plan(page).locator(".planned-topics li")).toHaveCount(4);
-  await expect(plan(page).locator(".planned-topics li").first()).toContainText(
-    "2. konu",
+  // Completed work remains visible; the four pending topics keep their order.
+  await expect(plan(page).locator(".planned-topics li")).toHaveCount(5);
+  await expect(plan(page).locator(".planned-topic.is-complete")).toContainText(
+    "Konu tamamlandı",
   );
+  await expect(
+    plan(page).locator(".planned-topic:not(.is-complete)"),
+  ).toHaveCount(4);
+  await expect(
+    plan(page).locator(".planned-topic:not(.is-complete)").first(),
+  ).toContainText("2. konu");
   await expect(plan(page, "Soru planı")).toContainText("479 kalan konu");
   const s = await stored(page);
   expect(s.sessions).toEqual([]);

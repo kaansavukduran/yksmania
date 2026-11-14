@@ -1,16 +1,17 @@
-YKSMania 0.5.0 alpha
+YKSMania 0.5.1 alpha
 
-- Excel/Todoist çalışma sırasındaki 6–10. başlıklar eklendi: Temel Kavramlar,
-  Tek Çift Pozitif Negatif Sayılar, Ardışık Sayılar, Asal Sayılar, Faktöriyel.
-- Sayı kümelerine yerleştirip gerekçeyi gör, işaret/tek–çift işlemlerini değiştir,
-  ardışık toplamı ters eşlemeyle kur, asal bölenleri dene, kitapları raflara
-  yerleştirerek faktöriyeli ve sadeleştirmeyi keşfet. Seçimler offline saklanır.
-- Beş yeni etkileşimli anlatım ve 25 özgün soru; toplam **23 anlatım / 115 soru**.
-  Kaynaklar OGM video notlarının ve Aurelia kopya kağıtlarının seçili sayfalarıdır.
-  Bunlar özgün alıştırmalardır, resmî sınav maddesi değildir.
-- Önceki dersler, sorular, notlar, yarım oturumlar ve 1/3/7/21 tekrar tarihleri korunur.
-  18 Haziran 2027 varsayılan sınavı ve 28 Şubat 2027 konu hedefi; kapalı günleri
-  dışarıda bırakan 479 başlıklı sıralı iki bağımsız plan, ders grafiği/ağaçları,
+- Bugün → Bugünün çalışma yolu, tamamlanan konuları listede tutar. Konu tamamlandı
+  etiketi ve onay simgesi, kalan bugünkü atamalarla birlikte görünür.
+- Konu ve soru kartlarında **5 soruda 4 doğru · 1 yanlış** gibi gerçek son deneme
+  sonucu, soru tarihi ve Sonucu gör bağlantısı bulunur. İpucuyla çözülenler ayrıca
+  belirtilir. Tekrar çözümleri toplanmaz; 0 doğru da doğru gösterilir.
+- Daha önce sadece soru çözümü kaydedildiyse Konuyu çalıştım düğmesiyle konu
+  kaydı aynı ekrandan açıkça tamamlanabilir ve geri alınabilir. Soru çözümü tek
+  başına teoriye çevrilmez. Haricî kaynaktaki çalışma için sonuç uydurulmaz.
+- Çevrimdışı kayıt, eski notlar, yarım oturumlar, 1/3/7/21 tekrarları ve bağımsız
+  planlar korunur. Hazır içerik aynı: 23 anlatım / 115 özgün soru. Yalnız Türkçe.
+
+479 başlıklı sıralı iki bağımsız plan, ders grafiği/ağaçları,
   ayrı Kopya Kağıtları ve altta Notun düzeni korunur. Yalnız Türkçedir.
 
 479 başlık, kaynak Excel’in ayrıntılı listesidir; geometri kapsamı sınırlıdır.

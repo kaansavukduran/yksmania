@@ -1,4 +1,42 @@
-# Forge checkpoint: YKSMania 0.5.0 alpha
+# Forge checkpoint: YKSMania 0.5.1 alpha
+
+Kullanıcı bildirimi: Bugün → Bugünün çalışma yolu ekranında Simyadan Kimyaya
+çalışılmış olmasına ve beş soruda dört doğruya rağmen tamamlanma/sonuç görünmüyor.
+YKS-013. Önceki 0.5.0 build’inde normal arayüzle konu kaydı + 4/5 soru oturumu
+sonrası Bugün’e dönüşte yeni kabul testi FAIL: tamamlanan günlük satır yok.
+Doğrulanan neden: liste yalnız studyPlan.items (kalanlar) çiziyordu; tamamlanan
+konular filtreleniyor, kaydedilen Session yanıtları satıra bağlanmıyordu.
+
+Onarım: günlük liste, kalan bugünkü atamalar + bugün çalışılmış konular + bugünkü
+son soru denemelerinin tekil birleşimidir; Excel sırası korunur. Tamamlanan konu
+yeşil onay ve metinle görünür kalır. Her iki kartta son tamamlanmış denemeden
+“5 soruda 4 doğru · 1 yanlış”, soru tarihi, varsa bağımsız doğru/ipucu bilgisi ve
+Sonucu gör bağlantısı bulunur. Tüm çalışma sırası listesi de aynı satırı kullanır.
+Son deneme gösterilir; en iyi skor seçilmez, tekrarların cevapları toplanmaz.
+Eksik oturum sonuç sayılmaz. Haricî çalışma işaretine uydurma 0/5 atanmaz.
+
+Önceki sadece-soru kaydı teoriye çevrilmez: satır “Konu henüz işaretlenmedi” der,
+aynı karttaki Konuyu çalıştım ile açık/durable/geri alınabilir konu bildirimi
+sunulur. Kayıt başarısızsa tamamlandı gösterilmez; soru sonucu korunur. Teori ve
+soru planları, XP, orijinal tekrar tarihleri ve 479 başlık sırası değişmez.
+Mevcut veritabanı/yedek biçimi aynı; eski kayıtlar kendiliğinden gösterilir.
+Hazır içerik değişmedi: 23 anlatım / 115 özgün soru. Yeni PDF/art üretimi yok.
+
+Fragaria Unslop güncel UI/davranış profili uygulandı; canlı AIONIA v1.7 14 Kasım
+2026 yeniden okundu, revizyon aynı. Karakter/splash kapsam dışı ve değiştirilmedi.
+Yerel check/build, 41 birim testi ve dört yeni YKS-013 kabulü PASS. Mobil 320px,
+%200 UI / %150 yazı, açık tema, ciddi-kritik axe, offline reload, 0/5, yeniden çözme,
+oturum geri alma, disk yazma hatası/yeniden deneme ve kapalı günde dış kaynak
+kaydı test edildi. Linux Electron günlük konu + soru sonucu ve süreç restart PASS,
+renderer hataları 0. Tam tarayıcı koşusu 48/48 PASS (2,8 dk).
+1440×1000 koyu/açık ve 390×844 koyu/açık günlük kartları görsel incelendi;
+320px büyük yazıda gerçek kontroller/taşma ölçümü PASS, renderer hataları 0.
+Uzak paket ve yayın sonuçları aşağıya eklenir.
+Sürüm 0.5.1 / Android versionCode 9. Önceki fiziksel cihaz/imza/update kapıları açık.
+
+---
+
+# Historical checkpoint: YKSMania 0.5.0 alpha
 
 Excel sırasının 6–10. başlıkları geliştirildi: Temel Kavramlar, Tek Çift Pozitif
 Negatif Sayılar, Ardışık Sayılar, Asal Sayılar, Faktöriyel Kavramı. Beş özgün

@@ -1,6 +1,6 @@
 # Quality evidence
 
-Target 0.5.0 alpha. This file is updated at the verified Forge checkpoint.
+Target 0.5.1 alpha. This file is updated at the verified Forge checkpoint.
 
 ## Automated acceptance
 
@@ -444,3 +444,46 @@ verified-run.json match bd95c5d. Two downloaded evidence hashes match SHA256SUMS
 large native binaries were not all downloaded and rehashed locally. Android
 versionCode 8 / versionName 0.5.0 / minimum API 24 / APK v2 signature verified;
 public APK download HEAD is HTTP 200. Signing/physical-device/update gates remain.
+
+## 0.5.1 — YKS-013: daily completion and question results
+
+Source: the user's Today screenshot and four-of-five Simya report. User data was
+not read from the device. Baseline: normal synthetic UI flow on the old 0.5.0 build,
+mark Simya studied, finish 4/5, return to Today; the expected completed daily row
+is absent and the new acceptance test FAILS. Static cause confirmed: daily rows
+came only from remaining plan.items and contained no Session result. Screenshot
+CSS viewport is unknown; reproduced on desktop Chromium/Linux before the repair.
+
+Daily rows now retain today's completed topics and question attempts alongside
+remaining assignments, without changing eligible-day math or study order. Latest
+complete saved attempt supplies score, never a sum or best attempt. Zero is valid;
+partial sessions and manual external work do not invent a score. Both cards and
+full-order rows show result/date, optional independent/hint counts and a link to
+the saved result. A question-only history is not silently relabeled theory;
+explicit compact topic completion is available on Today and remains undoable.
+
+Local check/build and 41 unit tests PASS. Four focused normal-UI tests PASS (22.7s):
+4/5 with durable theory, offline reopening/result link; old question-only history,
+failed-write/retry and explicit theory mark/undo; 0/5 latest attempt and session
+undo restoring 4/5; external manual questions on a blocked day with no invented
+result. At 320px / 200% UI / 150% text / light, real mark/undo/result controls work,
+page width <=321px and serious/critical axe violations 0. The first development
+run of the latter tests used an incorrect text-size accessible name and expected
+an extra theory step after Result → Yeniden çalış; these harness assumptions were
+corrected to the existing normal UI. No product assertions/timeouts were relaxed.
+
+The previous YKS-009 browser assertion expected completed rows to disappear. It
+now expects five visible rows (one completed, four pending in order), while the
+underlying plan's four remaining assignments are unchanged. Existing independent
+record tests remain. Native Linux validates a completed Simya row and the saved
+rational-question score after process restart; renderer errors 0. Final full-suite,
+remote package, visual and live deployment evidence is recorded in FORGE.md.
+
+Final local browser run: 48/48 PASS (2.8m), same fixed 0.5.1 bundle. All old
+forty-four scenarios remain. Dark/light 1440×1000 and 390×844 daily cards inspected,
+normal-width score/completion/actions readable; actual page widths 390/390 and
+320/320, visual-flow renderer exceptions 0. A tall locator screenshot showed an
+apparent skip-link overlay. Live bounds before/after capture proved it hidden
+(bottom −199.06px, unfocused); this is not recorded as a product defect. Added
+large-scale hidden-link geometry plus actual Tab → Enter → main focus checks,
+focused rerun PASS (11.7s). No skip-link CSS change was made from the screenshot.

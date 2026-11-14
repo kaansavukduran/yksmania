@@ -1,6 +1,6 @@
 # Accepted direction and remaining stages
 
-Current 0.5.0: 23 interactive Turkish lessons / 115 original questions. The first
+Current 0.5.1: 23 interactive Turkish lessons / 115 original questions. The first
 ten workbook topics have chemistry and mathematics explorations. Topics 6–10 are
 number concepts, parity/sign, consecutive numbers, primes and factorials. Theory is planned to
 28 February 2027; question topics to the editable exam default 18 June 2027.

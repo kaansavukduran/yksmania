@@ -1,7 +1,7 @@
 {
-  "version": "0.5.0",
+  "version": "0.5.1",
   "channel": "alpha",
   "notes": {
-    "tr": "Çalışma sırasındaki beş matematik konusu: sayı kümeleri, tek–çift ve işaret, ardışık sayılar, asallar ve faktöriyel. Toplam 23 etkileşimli anlatım, 115 özgün soru."
+    "tr": "Bugünün çalışma yolunda tamamlanan konular görünür kalır; son soru sonucunun doğru/yanlış sayısı, ipucu bilgisi ve sonuç bağlantısı gösterilir."
   }
 }

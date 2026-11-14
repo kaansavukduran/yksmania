@@ -6,6 +6,7 @@ import {
   studyTopics,
   setTopicCompletion,
   completionDate,
+  topicResults,
 } from "../src/domain/studyPlan";
 import { validateState } from "../src/domain/storage";
 import { addDays, isBlocked, xp } from "../src/domain/scheduler";
@@ -160,4 +161,52 @@ describe("ordered YKS deadlines and independent study records", () => {
     expect(parseDateTR("06/18/2027")).toBeNull();
     expect(parseDateTR("29/02/2028")).toBe("2028-02-29");
   });
+});
+
+it("selects the latest complete topic attempt including a zero score without changing theory or review history", () => {
+  const s = initialState();
+  const lesson = lessonById("simyadan-kimyaya")!;
+  const attempt = (id: string, correct: boolean, finishedAt: string) => ({
+    id,
+    lessonId: lesson.id,
+    date: today,
+    finishedAt,
+    responses: lesson.questions.map((q) => ({
+      questionId: q.id,
+      selected: correct ? q.answer : (q.answer + 1) % q.options.length,
+      correct,
+      assisted: false,
+      confidence: "medium" as const,
+    })),
+    kind: "learn" as const,
+    includesTheory: false,
+    minutes: 1,
+    note: "",
+  });
+  const first = attempt("first", true, "2026-11-14T12:00:00Z");
+  const last = attempt("last", false, "2026-11-14T12:05:00Z");
+  s.sessions = [
+    last,
+    {
+      ...last,
+      id: "partial",
+      responses: last.responses.slice(0, 2),
+      finishedAt: "2026-11-14T12:10:00Z",
+    },
+    first,
+  ];
+  const before = structuredClone(s);
+  expect(topicResults(s).get("detail-139")).toEqual(last);
+  expect(
+    topicResults(s)
+      .get("detail-139")!
+      .responses.filter((r) => r.correct),
+  ).toHaveLength(0);
+  expect(completionDate(s, "detail-139", "theory")).toBeUndefined();
+  expect(s).toEqual(before);
+  s.sessions = [first];
+  expect(topicResults(s).get("detail-139")).toEqual(first);
+  s.sessions = [];
+  s.topicProgress["detail-139"] = { questions: today };
+  expect(topicResults(s).has("detail-139")).toBe(false);
 });

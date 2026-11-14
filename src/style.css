@@ -3431,3 +3431,43 @@ progress::-moz-progress-bar {
     fill 0.25s,
     stroke 0.25s;
 }
+
+/* Daily work stays visible after completion, with scores from the last saved attempt. */
+.planned-topic {
+  border-bottom: 1px solid var(--border);
+}
+.planned-topic > .ready-topic {
+  border-bottom: 0;
+}
+.planned-topic .ready-topic > svg {
+  flex-shrink: 0;
+}
+.planned-topic .topic-state {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.planned-topic .topic-state.completed {
+  color: var(--mint);
+}
+.planned-topic .topic-score {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9em;
+}
+.planned-topic-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  padding-bottom: 0.8rem;
+}
+.topic-completion.compact {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+.planned-topic-actions button {
+  min-height: 44px;
+}

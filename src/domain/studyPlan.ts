@@ -1,7 +1,12 @@
 import details from "../data/detail-topics.json";
 import order from "../data/study-order.json";
 import { lessons } from "./content";
-import { THEORY_DEADLINE, type AppState, type Settings } from "./model";
+import {
+  THEORY_DEADLINE,
+  type AppState,
+  type Settings,
+  type Session,
+} from "./model";
 import { addDays, isBlocked, localDate } from "./scheduler";
 
 export type StudyMode = "theory" | "questions";
@@ -40,6 +45,26 @@ export const lessonTopic: Record<string, string> = {
 };
 export const topicLessons = (topicId: string) =>
   lessons.filter((l) => lessonTopic[l.id] === topicId);
+// Latest complete attempt, never a sum/best score across repeated sessions.
+export function topicResults(state: AppState) {
+  const results = new Map<string, Session>();
+  for (const session of state.sessions) {
+    const id = lessonTopic[session.lessonId];
+    const lesson = lessonIndex.get(session.lessonId);
+    if (!id || !lesson || session.responses.length !== lesson.questions.length)
+      continue;
+    const previous = results.get(id);
+    if (
+      !previous ||
+      session.date > previous.date ||
+      (session.date === previous.date &&
+        (Date.parse(session.finishedAt) || 0) >=
+          (Date.parse(previous.finishedAt) || 0))
+    )
+      results.set(id, session);
+  }
+  return results;
+}
 export function completionDates(state: AppState, mode: StudyMode) {
   const dates = new Map<string, string>();
   const put = (id: string, day: string) => {
