@@ -1,3 +1,12 @@
+Public hotfix0.5.2 teslimi tamamlandı: uygulama/paket kaynağı7aedafb;
+GitHub main belge başı45ba975. CI43580314183 tüm4job PASS, public43579996297
+50/50 PASS, release43581051297 PASS;0.5.2-alpha.1 sekiz asset yayımlı.
+Vercel production READY/version.json0.5.2. Ayrıntılı public teslim kaydı
+fix/question-passage dalındaki FORGE.md / docs/QA.md içindedir. Bu dalın
+50 anlatımlı çalışma kopyası yine yayımlanmamıştır; aşağıdaki59/61 yerel sonuçlar
+onun ayrı kanıtıdır. Yeni görsel/native QA ve kaynak kapsam tablosu ardından
+sıradaki konu40/detail203 ile devam edilebilir.
+
 # Yayımlanmamış konu üretimi — son yerel kontrol
 
 forge/source-ordered-theory; uygulama kaynağı5f54192. Check/build,59 birim ve
