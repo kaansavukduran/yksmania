@@ -1,3 +1,42 @@
+# 0.6.0 teslimi — doğrulanan güncel durum
+
+Uygulama ve paket kaynağı: `c05291f4e9af991eda642e2d0f312194a7721ce0`.
+[CI 43590369220](https://github.com/kaansavukduran/yksmania/actions/runs/43590369220)
+tüm dört işte başarılı: 64 birim testi, 64 tarayıcı kabulü, Windows/Linux
+paketleri ve Android APK. Paketlenmiş Windows ve Linux uygulamaları çevrimdışı
+ders, ayrıntılı rehber/kaynak akışı, yeniden yükleme ve süreç yeniden başlatma
+kontrollerini geçti; gözlenen renderer hatası her ikisinde de 0.
+
+[Public kabul 43588836416](https://github.com/kaansavukduran/yksmania/actions/runs/43588836416)
+64/64 geçti; kaynak `95978b0`. Sonraki değişiklikler test kayıt beklemeleri,
+Windows modül dosyası adı ve derleme denetimidir. Son derlemenin 27 JS/CSS,
+PDF worker, servis worker ve sürüm dosyası yayınlanan uygulamayla SHA-256
+düzeyinde aynı bulundu. Son kaynak için Vercel production
+`dpl_J7JKwvJf2T4od3d8J5tRtcVkWWBC` READY; canlı `version.json` 0.6.0.
+
+[Release 43591167018](https://github.com/kaansavukduran/yksmania/actions/runs/43591167018)
+başarılı. [v0.6.0-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.6.0-alpha.1)
+yayımlandı: Windows Setup/Portable, Linux AppImage/DEB, Android debug APK ve
+üç kanıt dosyası; toplam 8 asset. Paketler başarılı CI'den alındı, yeniden
+derlenmedi. `verified-run.json` kaynak SHA'sı ve başarılı main koşusu doğrulandı;
+iki kanıt dosyasının indirilen SHA-256 değerleri yayın listesiyle eşleşti.
+Android code 12 / versionName 0.6.0 / v2 imza doğrulaması başarılı.
+Beş büyük binary ayrıca yerelde yeniden indirilip hash'lenmiş değildir.
+
+Gerçek kapsam: 50 anlatım, bunlardan 6 ayrıntılı rehber; 115 özgün soru,
+5 resmî kitapçıkta 8 doğrulanmış ÖSYM referansı. 479 başlığın tamamı ve bütün
+20 yıllık ÖSYM arşivi henüz hazır değildir. Özel 126 kopya kağıdı public pakete
+gömülmez; cihazda içe aktarılır ve konu başlığındaki düğmeden tam açılır.
+Fiziksel Android, temiz Windows kurulum/portable taşıma, iki sürüm arasında
+güncelleme ve diğer tarayıcılar ayrıca doğrulanmalıdır.
+
+Sıradaki içerik işi: kalan kısa başlangıç anlatımlarını kaynak sayfalarını
+okuyarak ayrıntılandırmak; sonra kaynak sırasındaki 40/detail203 ve 41/detail204.
+Kopya kağıdı ve geçmiş soru kapsamını genişletirken kısmi kaynakları tam arşiv
+diye sunma. Önceki başarısız koşuların nedenleri aşağıda tarihsel tutulur.
+
+---
+
 # 0.6.0 — Windows modül adı çakışması düzeltmesi
 
 CI43589340483:64unit/64browser PASS; Linux paketli kabul ve Android imza

@@ -2,6 +2,17 @@
 
 Target 0.6.0 alpha. This file is updated at the verified Forge checkpoint.
 
+Current delivery: application/package source `c05291f`;
+[CI 43590369220](https://github.com/kaansavukduran/yksmania/actions/runs/43590369220)
+passed 64 unit and 64 browser tests plus all Windows, Linux and Android jobs.
+Both packaged desktop applications passed offline/reload/process-restart flows
+with zero observed renderer errors. Android code 12 / version 0.6.0 / v2
+signature verified. Release `v0.6.0-alpha.1` contains five packages and three
+evidence files from that successful build. The full published-origin acceptance
+passed 64/64 at `95978b0`; subsequent source/build-only changes produced 27
+byte-identical runtime/version assets. See the current FORGE entry for provenance,
+the two locally checked evidence hashes and platform checks still unverified.
+
 ## 0.5.3 ağaç yönü
 
 TYT ve AYT kökleri üstte; ders düğümleri aşağıya açılır. Mevcut YKS-010
