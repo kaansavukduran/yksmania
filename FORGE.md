@@ -1,3 +1,28 @@
+# Yayımlanmamış konu üretimi — son yerel kontrol
+
+forge/source-ordered-theory; uygulama kaynağı5f54192. Check/build,59 birim ve
+61/61 tam Chromium kabulü PASS (forge-final-unit.log / forge-final-browser.log).
+Yeni50 anlatımlı dal,27 theory-only ek içerir; public main yalnız paragraf
+hotfix'idir,23 anlatım/115 sorudur. Tam61 koşusu yeni27 anlatımın senaryoları,
+hatırlama/offline seçimleri,11-model320px %200 UI/%150 metin/axe, anlamlı
+sayısal/sözcük kontrolü,3/7/21 teori tekrarları ve YKS-015 düzeltmesini içerdi.
+
+İki kusur düzeltildi: atom karşılaştırmasının6 sütunu büyük yazıda sayfayı
+taşırıyordu; değerler iki okunabilir, dar ekranda üst üste gelen tanecik kartına
+dönüştürüldü. Sözcük modelindeki kitapta düğmesi testte şema adımıyla karışıyordu;
+ses değişimi bölgesindeki gerçek kontrol hedefleniyor. Atom kartları ve diğer
+son yeni modellerin normal koyu/açık görsel incelemesi/native kabulü halen
+NOT TESTED; bu dal henüz yayın hazır diye sunulmamalı. Kaynak sayfa kayıtları
+pack.source alanlarında; public SOURCE_REVIEW kapsam tablosuna taşınmalı.
+
+Metinsiz soru hotfix7aedafb bu dala merge edildi; yeni59/61 kontrollerde de
+geçti. Eski notlar/115 anahtar korunur. Sonraki konu40/detail203,41/detail204.
+Aurelia iki ilgili PDF'nin1–4 sayfaları ayrıca okundu, özel next-theory-reading
+notunda kaynak düzeltmesi var: iki tarafı0 ile çarpmak eşitliği sağlar ama
+çözüm eşdeğerliğini korumaz. Yeni soru bankası ekleme; önce konuları sürdür.
+
+---
+
 # YKSMania 0.5.2 — soru bağlamı düzeltmesi
 
 Öncelikli kullanıcı hatası YKS-015: metinsiz ana düşünce sorusu. Önceki konu
