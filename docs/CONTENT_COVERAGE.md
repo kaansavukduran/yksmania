@@ -1,4 +1,4 @@
-# Content coverage, 0.10.0 alpha candidate
+# Content coverage, 0.10.0 alpha
 
 Current decision: all prepared educational content is built in. No learner PDF,
 source catalogue or booklet import. Separate Theory/Cheatsheets/Questions/Exams.

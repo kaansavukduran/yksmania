@@ -1,8 +1,30 @@
-# 0.10.0: 20 kapsamlı ünite, yayın kabulünde
+# 0.10.0 yayımlandı: 20 kapsamlı ünite
 
-Yetkili proje /workspace/yksmania, dal forge/twenty-units; başlangıç
-f3b06134061d7937c3e38e8c9530b0d4b4944284. Yeni sürüm0.10.0/code18.
-Canlı/paket durumları uzak kabul tamamlandığında bu bölümün başına eklenecek.
+Uygulama ve paket kaynağı `22872a289b26da02bc6feab9fb34db587670a55d`.
+Yetkili repo kaansavukduran/yksmania; dal forge/twenty-units → main;
+başlangıç f3b06134061d7937c3e38e8c9530b0d4b4944284.
+
+[CI43635461738](https://github.com/kaansavukduran/yksmania/actions/runs/43635461738)
+dört iş PASS: temiz npmci/check/build,192 unit ve142 browser (6,7dk),Windows,
+Linux,Android. Paketli Windows/Linux'ta altı yeni model ailesinin ilk offline
+açılışı/gerçek değişimi/reload ile eski ders/not/taslak/skor/sınav/timer/reset
+akışları PASS,renderer0. Android APK build+imza/manifest komutları PASS.
+[Canlı43635597330](https://github.com/kaansavukduran/yksmania/actions/runs/43635597330)
+aynı22872a2 kaynağında142/142 PASS (7,6dk). Vercel production
+`dpl_9t9vcgss5RDpF8m6FK332X86QkH7` aynı kaynakta READY,version0.10.0;
+normalTLS index/sw/version SHA256 kabul edilmiş yerel derlemeyle eşit.
+
+[Release43636719923](https://github.com/kaansavukduran/yksmania/actions/runs/43636719923)
+PASS; [v0.10.0-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.10.0-alpha.1)
+draft değil,8asset:5binary ve3kanıt. Başarılı CI'nin dosyaları yeniden
+üretilmeden yayımlandı. Tag ve verified-run aynı22872a2 main kaynağında;
+indirilen iki kanıt hash'i eşleşti,checksum listesi7payload. Android
+versionName0.10.0/code18/v2 signature PASS. Beş büyük binary ayrıca yerelde
+indirilip hash'lenmedi. Denetlenen kapsamda açık doğrulanmış kusur yok.
+
+Son teslim kaydı yalnız FORGE/README/CONTENT_COVERAGE/QA/RELEASE_ALPHA
+belgelerini değiştirir; kabul edilmiş uygulama/test/paket kodu22872a2 aynıdır.
+Bu yalnız doküman değişikliği için uygulama testleri tekrar çalıştırılmadı.
 
 Kullanıcının istediği20 ünitenin tamamı, doğrulanmış sıranın59–78 başlıkları:
 5 matematik,5 fizik,2 kimya,2 biyoloji,3 Türkçe,3 tarih.189 ayrıntılı bölüm,

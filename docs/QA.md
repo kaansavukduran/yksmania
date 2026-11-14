@@ -1,29 +1,39 @@
-# 0.10.0 kabul kaydı
+# 0.10.0 doğrulanmış teslim
 
-20 yeni ünite/189 bölüm/91 örnek/200 özgün soru. Önceki300 tam soru kaydı
-korundu. Check/build ve192 unit PASS; tam142 browser PASS (9,7dk).
-Bundan sonra yalnız kimya kontrolID'si, Türkçe vektör ilişki ikonu ve orantı
-etiket hizası değişti; son derlemede check/192unit/build ve41/41 ilgili
-browser tekrar PASS(2,8dk).Gerçek labelbağlantısı/benzersizID,okbaşıgeometrisi
-veSVG12/xBBoxayrımı kabulde korunur.
-YKS032–042 sabit bulguları/ilk hatalar/kabul koşulları FORGE başında kayıtlıdır.
+Kaynak22872a289b26da02bc6feab9fb34db587670a55d. CI43635461738 dört iş PASS:
+check/build,192 unit,142 browser (6,7dk),Windows/Linux/Android. Canlı
+43635597330 ayrıca142/142 PASS (7,6dk). Vercel production READY,0.10.0;
+normalTLS üçruntimehash'i yerel/canlı birebir eşit. Release43636719923 PASS,
+v0.10.0-alpha.1 draft değil,8asset; kaynak/tag/verified-run aynı22872a2.
+İndirilen iki kanıt hash'i eşleşti;7payload listesi. Android0.10.0/code18/v2
+signature PASS. Beş büyük binary ayrıca yerelde hash'lenmedi.
 
-Yeni41test tüm20 ünitede normal courseentry→gerçek değişen görsel→sonuç→not→
-offline reload→ilk özgün soru/feedback→taslak reload; XP/learning eşitliği ve
-320px UI200/text150/azaltılmış hareket/gerçek touch/HTML sonuç/axe denetimlerini
-kapsar. Türkçe model SVG zorunluluğu yerine gerçek HTML sözcük diyagramıyla
-ölçülür. Hiçbir timeout veya beklenen akademik sonuç gevşetilmedi.
+Yerel192 unit ve tam142browser (9,7dk); son3UIyamasından sonra aynı192unit,
+check/build ve41ilgili browser tekrarPASS (2,8dk). Yeni41test tüm20ünitede
+normalgiriş→gerçek değişen SVG/HTMLdiyagram→sonuç→not→offline reload→ilk
+özgün soru/feedback→taslak reload akışını ve noXP/learning eşitliğini denetler.
+320pxUI200/text150/reducedmotion/touch/HTMLsonuç/axe ve uniqueID koşulları
+korunur. TürkçeHTMLdiyagramını SVG sanan3, sıfatdönüşümsırasınıkaçıran1 ve
+r0ikiuçsayımınıvarsayan2 ilk harnessFAIL düzeltildi; sonuç/timeout/bounds
+gevşetilmedi. YKS032–042 kanıtları ve onarımlar FORGE'de korunur.
 
-Geliştirme Electron'da altı yeni model ailesi dahil offline/reload/deneme/
-timer/reset mevcut akışlar PASS; ilk runtime fetch engeli, checksum'u doğrulanmış
-pinned cached runtime ile aşıldı. Manuel66+45durum ve kimya12ekdurumda taşma/
-renderer hatası bulunmadı; onarım öncesi tofu/etiket/duplicateID kanıtları saklanır.
-SonUIpatch16durumPASS; toplam127 manuelölçüm+12 bağımsız kimya durumu.
-Kök tüm72dosyayı iki son kopyayla byteeşit doğruladı. Son gerçek webSW
-0.9.2→0.10 update tümstate/checkedtaslak/legacy870bayt eşitliği ve3yeni
-offlinemodel/noXP/renderer0 ilePASS. Son geliştirmeElectron6yeni aile veeski
-akışlar tekrarPASS. UzakCI/canlı/paket sonuçları ayrıca eklenecek.
-Fiziksel Android/temiz kurulum/portable taşıma/iki native yükseltme NOT TESTED.
+127 manuel ölçüm+12 bağımsız kimya durumu; son4model16durumda gerçek labeltap,
+vektörikon ve12/x boşluğu ayrıcaPASS. Kök tüm72dosyanın final iki kopyayla
+byte eşitliğini doğruladı. Son0.9.2→0.10 gerçek yerel webSWupdate tam eski
+state/documents/catalogue eşitliği,checkedtaslak/not/üçreview ve sentetik
+870baytPDFkoruma ilePASS. Üç yenimodelilkkezofflineaçıldı/reloadkorundu,
+XP25→25,renderer0. Bu production profilinde veya native sürümlerle geçiş değil.
+
+Geliştirme Electron ve gerçek paketli Windows/Linux'ta altı yeni model
+ailesi/offline/reload+eski akışlarPASS,renderer0. İlk yerel runtimefetch
+başarısızlığı pinned45.3.2checksum ile doğrulanmış mevcutcache'le aşıldı.
+Webtestleri Chromium'dur; Firefox/WebKit/Edge/Safari marka/cihaz kombinasyonları,
+fiziksel Android,temiz Windows kurulumu/portable taşıma ve iki native sürümle
+veri koruyan güncelleme NOT TESTED. Emülasyon fiziksel cihaz sayılmaz.
+
+Gizlilik49metinyolu/8845bilinenözelID+URL karşılaştırmasında0eşleşme;
+özelPDF/binary/anahtar yok. Kilit yalnız iki kök sürüm alanında değişti;
+bağımlılık/marka/Aionvarlıkları aynı. Son teslimdoccommit yalnız5belge değiştirir.
 
 # 0.9.2 kabul kaydı
 

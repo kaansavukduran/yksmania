@@ -1,11 +1,11 @@
 # YKSMania
 
-Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.10.0 alpha adayı**.
+Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.10.0 alpha**.
 
-[Uygulamayı aç](https://yksmania.vercel.app) · [Windows/Linux/Android paketleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.9.2-alpha.1)
+[Uygulamayı aç](https://yksmania.vercel.app) · [Windows/Linux/Android paketleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.10.0-alpha.1)
 
-**Yayın durumu:** 0.10.0 yerel kabulde; canlı ve indirilebilir son sürüm 0.9.2.
-Yeni adayda 192 birim testi geçti; bütünleşik tarayıcı ve paket kontrolleri sürüyor.
+**Yayın durumu:** 0.10.0 Vercel’de ve Windows/Linux/Android paketlerinde yayında.
+192 birim testi, temiz CI ve canlı sitede ayrı ayrı 142 tarayıcı testi geçti.
 Paket ve canlı dağıtım kanıtları [FORGE](FORGE.md)’de.
 
 Ders materyali yüklemek gerekmez. **Konu Anlatımı → Kopya Kağıtları → Sorular →
@@ -15,7 +15,7 @@ arayüzleri kaldırıldı; daha önce saklanmış kişisel dosyalar/veriler sili
 
 ## İçerik ve öğrenme
 
-0.10.0 adayı, kaynak sırasındaki 59–78. başlıkları işler: 5 matematik, 5 fizik,
+0.10.0, kaynak sırasındaki 59–78. başlıkları işler: 5 matematik, 5 fizik,
 2 kimya, 2 biyoloji, 3 Türkçe ve 3 tarih ünitesi. 20 ayrı ayrıntılı rehberde
 189 anlatım bölümü, 91 çözümlü örnek, 92 hatırlama çalışması ve 200 yeni özgün
 soru var. Sayı doğruları, devreler, genleşme ve enerji grafikleri, molekül
