@@ -1,5 +1,12 @@
 # 0.9.1 — dört periyodik kimya konusu
 
+İlk uzak CI43621833448:96unit/check/build PASS, browser88/89. Yeni
+periodic-depth testi gerekçe görünür olur olmaz reload yaptı; Provider update
+optimistic, IDB kaydı henüz bitmemişti. Test görünür .save-status kaydedildi
+onayını bekler; aynı seçim+gerekçe offline koruma koşulu tutulur. Ürün davranışı
+ve timeout değiştirilmedi. Onarım sonrası aynı2test yerelde PASS; yeni CI gerekir.
+
+
 Başlangıç cfe0db0da56ee343db4da1a4c408ff7fb8ab9199. Son kullanıcı düzeltmesiyle
 ikonlar aynen korundu; k44/Aionlaştır/aionia komutları bu tur etkinleştirilmedi.
 MEBİ TYT Kimya basılı30–34 canlı metni ve Aurelia010–013 kağıtları s.2–3 okundu.

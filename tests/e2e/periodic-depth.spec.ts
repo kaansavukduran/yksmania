@@ -23,6 +23,9 @@ test("four new lessons expose explanations, actual changing models and saved off
       .getByRole("button", { name: "Gerekçeyi göster", exact: true })
       .click();
     await expect(lab.getByRole("status")).toBeVisible();
+    await expect(page.locator(".save-status")).toContainText(
+      "Bu cihazda kaydedildi",
+    );
   }
   await context.setOffline(true);
   await page.reload();
