@@ -1,5 +1,16 @@
 # 0.9.0 — paket kabulü tamamlandı, Vercel günlük kotada
 
+[0.9.0-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.9.0-alpha.1)
+yayımlandı, draft değil. [Release43612877695](https://github.com/kaansavukduran/yksmania/actions/runs/43612877695)
+PASS; başarılı CI43611757852'nin mevcut5 binary'si yeniden derlenmeden alındı:
+Windows Setup/Portable, Linux AppImage/DEB, Android debug APK; üç kanıtla8 asset.
+Tag ve verified-run.json aynı b92b2b5 başarılı main kaynağını gösterir.
+İndirilen Android-verification.txt ve verified-run.json iki hash'i SHA256SUMS ile
+eşleşti; liste7payload içerir. Android code15/name0.9.0/v2 signature PASS.
+Beş büyük binary ayrıca yerelde indirilip hash'lenmedi. Son kayıt commit'leri
+yalnız dört teslim dokümanını değiştirir; kabul edilen runtime hash'leri aynıdır.
+Son normal TLS canlı version.json kontrolü yine0.8.0: Vercel güncellenmedi.
+
 Doğrulanan uygulama/paket kaynağı `b92b2b52be5f5a08b9238b565f73b6998481b65a`.
 [CI43611757852](https://github.com/kaansavukduran/yksmania/actions/runs/43611757852)
 tamamı PASS: temiz npm ci, check/build,94 birim,87/87 browser (4,2dk),
@@ -27,7 +38,7 @@ eski dağıtım `dpl_bpyVHjvmsFLKFWVditzEZYtBmTpe`/ead659b;0.9 canlı denetimi
 yapılmadı. Kota açılınca doğrulanmış yeni main kaynağını aynı projeye dağıt,
 version.json ve commit'i kontrol et, ardından published-smoke87testini çalıştır.
 Yeni proje/plan/hesap değişimi veya arka plan zamanlama yapılmadı.
-0.9 paket yayını başarılı CI'nin mevcut dosyalarını yeniden derlemeden kullanacak.
+0.9 paket yayını başarılı CI'nin mevcut dosyalarını yeniden derlemeden kullandı.
 
 İlk uzak CI43611497875 npm ci sırasında source-map-0.9.0 için404 verdi.
 YKS-029/Kritik: uygulama sürümü metin değişimi kilitteki iki bağımlılık sürümünü

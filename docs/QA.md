@@ -2,6 +2,12 @@
 
 ## 0.9.0 paket kabulü / canlı dağıtım sınırı
 
+Release43612877695 PASS, v0.9.0-alpha.1 draft değil;8asset yayımlandı.
+Tag/verified-run doğru b92b2b5 başarılı CI43611757852 kaynağı; indirilen iki
+kanıt hash'i eşleşti, checksum listesi7payload. Android code15/name0.9.0/v2PASS.
+Beş büyük binary ayrıca yerelde hash'lenmedi. Son canlı version.json0.8.0;
+Vercel ve yeni üretim kabulü aşağıdaki kota nedeniyle BLOCKED kalır.
+
 Kaynak b92b2b52be5f5a08b9238b565f73b6998481b65a; CI43611757852 dört iş PASS.
 Temiz npm ci/check/build,94 birim ve87 browser (4,2dk). Windows/Linux gerçek
 paketli süreçte offline ders/not/kağıt/soru, exam deadline/sonuç, timer ve reset
