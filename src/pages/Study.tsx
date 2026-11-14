@@ -130,6 +130,11 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
             value={draft.responses.length}
             max={lesson.questions.length}
           />
+          {question.passage && (
+            <section className="question-passage" aria-label="Sorunun metni">
+              <p>{l(question.passage)}</p>
+            </section>
+          )}
           <h2>{l(question.prompt)}</h2>
           <div
             className="answer-options"

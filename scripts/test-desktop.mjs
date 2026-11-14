@@ -179,6 +179,55 @@ try {
   await page.getByRole("button", { name: /Matematik.*31 konu/ }).click();
   await page.getByRole("button", { name: /Asal sayılar: bölen/ }).click();
   await expect(page.locator(".prime-result")).toContainText("49 bileşik");
+  await navigate("Sorular");
+  await page.getByRole("button", { name: "TYT", exact: true }).click();
+  await page.getByRole("button", { name: /Türkçe.*22 konu/ }).click();
+  await page
+    .getByRole("button", { name: /Paragrafta ana düşünce.*5 özgün soru/ })
+    .click();
+  const passage =
+    "Bir kitabı bitirmek, onu anlamakla aynı şey değildir. Okur bazen bir sayfada durup kendi sorularını kurduğunda metinle daha güçlü bir ilişki kurar. Okumanın değeri, yalnız çevrilen sayfalarda değil, kurulan düşüncelerde de aranmalıdır.";
+  const paragraphText = () =>
+    page.getByRole("region", { name: "Sorunun metni", exact: true });
+  await expect(paragraphText()).toHaveText(passage);
+  await page.locator(".answer").first().click();
+  await page
+    .getByRole("textbox", { name: "Notun", exact: true })
+    .fill("Paragraf taslağı korunmalı.");
+  await expect(page.locator(".save-status")).toContainText(
+    "Bu cihazda kaydedildi",
+  );
+  await app.close();
+  app = await launch();
+  page = await app.firstWindow();
+  page.on("pageerror", (error) => errors.push(String(error)));
+  await page.context().setOffline(true);
+  await page.waitForSelector(".hero");
+  await page
+    .getByRole("button", { name: "Kaldığın yerden devam et", exact: true })
+    .click();
+  await expect(paragraphText()).toHaveText(passage);
+  await expect(page.locator(".answer").first()).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+  await expect(
+    page.getByRole("textbox", { name: "Notun", exact: true }),
+  ).toHaveValue("Paragraf taslağı korunmalı.");
+  for (const [i, index] of [0, 2, 0, 1, 0].entries()) {
+    await expect(paragraphText()).toHaveText(passage);
+    await page.locator(".answer").nth(index).click();
+    await page
+      .getByRole("button", { name: "Cevabı kontrol et", exact: true })
+      .click();
+    await page
+      .getByRole("button", {
+        name: i === 4 ? "Çalışmayı kaydet" : "Sonraki soru",
+        exact: true,
+      })
+      .click();
+  }
+  await expect(page.locator(".result-stats")).toContainText("5/5");
   expect(errors).toEqual([]);
   console.log(
     JSON.stringify({
@@ -193,6 +242,7 @@ try {
       reload: "PASS",
       processRestart: "PASS",
       dailyCompletionAndScore: "PASS",
+      paragraphPassageOfflineAndRestart: "PASS",
       rendererErrors: errors.length,
     }),
   );

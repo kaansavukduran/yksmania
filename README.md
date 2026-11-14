@@ -1,15 +1,16 @@
 # YKSMania
 
-An offline-first YKS learning application by Fragaria Interactive. **0.5.1 alpha: visual learning and private resource import; not the complete curriculum.**
+An offline-first YKS learning application by Fragaria Interactive. **0.5.2 alpha: visual learning and private resource import; not the complete curriculum.**
 
-[Open the web app](https://yksmania.vercel.app) · [Download alpha packages](https://github.com/kaansavukduran/yksmania/releases/tag/v0.5.1-alpha.1)
+[Open the web app](https://yksmania.vercel.app) · [Download alpha packages](https://github.com/kaansavukduran/yksmania/releases/tag/v0.5.2-alpha.1)
 
-0.5.1 keeps completed topics visible on Today's study path and shows the latest
-question score, hint information and a link to the saved result. Question and
-theory records remain independent. Web 0.5.1 passed 48 live browser scenarios;
-41 unit tests and Windows/Linux offline/restart checks passed. Android APK
-signature/manifest passed. Packages are published; evidence is in FORGE.md.
-Content remains 23 lessons / 115 questions.
+0.5.2 fixes missing reading passages in the five paragraph questions. The full
+passage is shown above each question, including direct entry from Questions and
+offline use. Theory, the sentence exploration and the question set share the same
+original text. Other incomplete question assumptions and narrow-screen answer
+wrapping were repaired. IDs, answer keys and saved progress are preserved.
+Content remains 23 lessons / 115 questions. Current local, package and published
+verification results are recorded separately in FORGE.md.
 
 ## What works
 

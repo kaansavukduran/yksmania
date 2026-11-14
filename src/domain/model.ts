@@ -147,6 +147,7 @@ export const initialState = (): AppState => ({
 });
 export interface Question {
   id: string;
+  passage?: Text;
   prompt: Text;
   options: Text[];
   answer: number;
