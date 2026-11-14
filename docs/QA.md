@@ -11,6 +11,19 @@ kusur YKS-021/022 aynı koşullarda PASS; diğer önceki regresyonlar korunur.
 Geliştirme Electron yeniden başlatma/offline/kum saati/reset PASS, renderer0.
 Güncel yayın/paket/canlı sonuçları FORGE başında ayrıca gösterilecektir.
 
+0.8.0 teslim kaynağı b08c9c1: [CI43601785473](https://github.com/kaansavukduran/yksmania/actions/runs/43601785473)
+72unit/73browser ve dört iş PASS. Paketli Windows/Linux offline, yeniden
+başlatma, kayıtlı timer son zamanı/pause/reset PASS; rendererErrors0.
+[Public43601821513](https://github.com/kaansavukduran/yksmania/actions/runs/43601821513)
+73/73 PASS; ilk offline PDF11,1s. İlk72/73 koşusundaki PDF30s tekrarlanmadı;
+PDF kodu ve test timeout'u değiştirilmedi, ilk sonuç kayıtta korunur.
+Release43602680263 v0.8.0-alpha.1'i8 asset ile yayımladı. Android code14/name0.8.0
+v2 imza ve indirilen iki kanıt hash'i doğrulandı. Beş büyük binary yerelde
+ayrıca hash'lenmedi; verified-run doğru başarılı main kaynağını gösterir.
+YKS-021/022 ve ilgili önceki regresyonlar PASS; açık doğrulanmış kusur yok.
+Fiziksel cihaz/temiz kurulum/portable taşıma/native yükseltme NOT TESTED.
+Gerçek iki web build'iyle0.5.3→0.8.0 veri koruma ayrı PASS. Tam iz FORGE başında.
+
 ## 0.8.0 — kalıcı kum saati, güvenli sıfırlama ve eski web istemcisi
 
 Başlangıç main `7cfb5b7c0287f0a0d4730c5ce3b4c3792797a206` + çalışma diff'i.

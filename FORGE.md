@@ -1,3 +1,75 @@
+# 0.8.0 yayımlandı — güncel teslim kaydı
+
+Teslim/paket kaynağı `b08c9c118b6ac16c73f53ae55ccfb78a26e0c281`.
+Uygulama değişikliği `8df0d255b90247614ac67f37f120f3cf42200a62`; sonraki commit
+native kabulün beklemelerini ve public iz kaydını güçlendirir, uygulamayı değiştirmez.
+[CI43601785473](https://github.com/kaansavukduran/yksmania/actions/runs/43601785473)
+72 birim, check/build,73/73 browser ve Windows/Linux/Android işlerinin hepsinde PASS.
+Paketlenmiş Windows ve Linux: offline ders, not/taslak/PDF, reload/süreç yeniden
+başlatma, kayıtlı kum saati deadline eşitliği, pause ve ilerleme sıfırlama PASS;
+her iki platformda gözlenen rendererErrors0. Android code14 / name0.8.0 / v2
+imza PASS. Bu, fiziksel Android veya temiz kurulum testi değildir.
+
+[Canlı43601821513](https://github.com/kaansavukduran/yksmania/actions/runs/43601821513)
+aynı kaynakta73/73 PASS (6,2dk); ilk offline PDF11,1s ve yeni üç timer/reset kabulü
+PASS. Önceki public72/73 koşusunun ilk PDF30s hatası kayıtta korundu; tekrar
+aynı koşullarda üretilmedi, PDF kodu veya timeout değiştirilmedi. Ayrı yerel
+izde ilk cache hazırlığı26,722s, offline canvas0,873s ölçüldü; bu tanı koşusu
+sandbox TLS istisnasıyla yapıldığı için sıkı public CI kabulünün yerine sayılmaz.
+İlk iki native denemenin20:00/19:… sorunu, testin gerçek azalmayı/pause sonucunu
+beklemesi ve kayıtlı son zamanı süreçler arasında birebir karşılaştırmasıyla
+çözüldü; aynı kalan süre kabulü iki paketli platformda PASS. Ürün süresi
+sahte sonuçla değiştirilmedi, test atlanmadı, kabul sınırı genişletilmedi.
+
+Vercel production `dpl_EpWKp4zqSgcWQKKuHuRPZNCDshE3` READY; canlı version.json0.8.0.
+Test edilen yerel build ile index.html, sw.js ve version.json SHA-256 değerleri
+birebir eşleşir. Son kayıt dokümanlarının dağıtımı ayrıca kontrol edilecek.
+[Release43602680263](https://github.com/kaansavukduran/yksmania/actions/runs/43602680263)
+PASS; [v0.8.0-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.8.0-alpha.1)
+yayımlandı, draft değil. Başarılı CI paketleri yeniden derlenmeden alındı:
+Windows Setup/Portable, Linux AppImage/DEB, Android debug APK ve üç kanıt =8 asset.
+İndirilen Android-verification.txt ve verified-run.json hash'leri SHA256SUMS ile
+eşleşti. Verified-run doğru başarılı main kaynağını gösterir; hash listesi7
+payload içerir. Beş büyük binary ayrıca yerelde indirilip hash'lenmiş değildir.
+
+Yeni çalışma kum saati varsayılan5dk; üstüne basınca ters dönüp başlar, durdur/
+devam et ve alt köşe menüsünde1/5/10/20dk,1–120dk özel sürgü/sayı girişi var.
+Konu anlatımı, kopya kağıdı ve soru yollarında aynı yerel süre korunur; zamanı
+bitirmek öğrenme veya XP üretmez. Ayarlar/Veri'de açık onaylı sıfırlama,
+öğrenme kanıtlarını temizler; ayarlar, notlar, PDF ve sayfa konumları korunur.
+Yazma hatası önceki ilerlemeyi/süreyi korur. Ders simgeleri ortak vektörlerdir;
+TYT/AYT kökleri yukarıdadır, etiketler ve kart kenar boşlukları denetlendi.
+
+YKS-021 (Orta):320px UI%200/yazı%150 menüde41px alan,130,08px dakika sözcüğünü
+harf harf kırıyordu;248px'e çıktı, aynı ölçüm PASS. YKS-022 (Orta): yeni reset
+butonu belgeyi346px'e taşıyordu;320px ve taşan öğe0, aynı eski regresyon PASS.
+YKS-006/008/010/013/014/015/016/018/019/020 ilgili kontrolleri son tam kabulde
+PASS. Denetlenen bu kapsamda açık doğrulanmış kusur kalmadı; bütün ürün için
+hatasızlık garantisi değildir. Geometri testinin iki ayrı zamandaki rect okuması
+tek DOM örneklemine alındı; >=18px sınırı korunarak3/3 ve tam73/73 PASS.
+
+Kullanıcı görüntüsü0.5.2 istemcisini ve bekleyen sürüm bildirimini gösterir.
+Gerçek0.5.3→0.8.0 web güncellemesi, yarım yanıt/not korunarak ve offline yeniden
+açılarak PASS; eski padding1→33px, kökler üstte. Bu kullanıcı cihazına doğrudan
+bağlanıldığı veya0.5.2 yükseltmesinin birebir test edildiği anlamına gelmez.
+Eski UI'da Ayarlar → Güncellemeler ve hakkında → Güncelle ve yeniden aç.
+Yeni bildirimde bu eylem doğrudan görünür; kayıt bitmeden etkinleşmez.
+
+Gerçek kapsam54 anlatım /17 ayrıntılı rehber /115 özgün soru /8 ÖSYM referansı.
+Selçuklu ve elektron katmanları eklendi; paragraf derinleştirildi. İlk43/479
+sıralı başlıkta anlatım hazırdır; bütün müfredat/20 yıllık arşiv hazır değildir.
+Özel PDF/katalog/Drive kimlikleri yayımlanmadı. Fiziksel Android, temiz Windows
+kurulumu, portable taşıma ve iki native paket arasında veri koruyan yükseltme
+NOT TESTED. İki web build'iyle güncelleme bunlardan ayrı doğrulanmıştır.
+
+Yerel kanıt /workspace/work/forge-080: ci-accepted.log, public-accepted.log,
+release-evidence/, runtime-before-docs.json; başlangıç/onarım/görseller aşağıda.
+Sonraki içerik sıra44/detail-233 Osmanlı siyaseti,45/detail-234 askerler ve ordu;
+kalan9 kısa başlangıç anlatımını derinleştir. Yeni soru fazına geçmeden anlatım
+önceliği ve1/3/7/21 (+2,+6,+20) sözleşmesi korunur.
+
+---
+
 # 0.8.0 — paket ve canlı kabul izleme
 
 İlk kaynak8df0d25 CI43600766700: verify72unit/73browser PASS, Android PASS;
