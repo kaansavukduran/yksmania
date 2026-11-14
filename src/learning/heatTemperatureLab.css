@@ -1,0 +1,227 @@
+.heat-temperature-lab {
+  min-width: 0;
+}
+.heat-temperature-lab h4 {
+  margin-top: 1.6rem;
+}
+.heat-temperature-lab p,
+.heat-temperature-lab label,
+.heat-temperature-lab strong,
+.heat-temperature-lab dd {
+  overflow-wrap: anywhere;
+}
+.heat-temperature-lab fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: clamp(12px, 2vw, 22px);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+.heat-temperature-lab legend {
+  max-width: 100%;
+  padding-inline: 6px;
+  font-weight: 600;
+}
+.heat-lab-modes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-block: 20px;
+}
+.heat-lab-modes button {
+  flex: 1 1 180px;
+  white-space: normal;
+}
+.heat-lab-modes button[aria-pressed="true"] {
+  border-color: var(--accent);
+  box-shadow: inset 0 -2px var(--accent);
+}
+.heat-lab-settings {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-block: 24px;
+}
+.heat-temperature-lab select,
+.heat-temperature-lab textarea,
+.heat-temperature-lab input[type="number"] {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+.heat-temperature-lab .model-exact {
+  display: block;
+}
+.heat-temperature-lab .model-exact input {
+  margin-top: 6px;
+}
+.heat-temperature-lab input[type="range"] {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+}
+.heat-temperature-lab select {
+  margin-block: 8px 16px;
+}
+.heat-prediction {
+  margin-bottom: 24px !important;
+}
+.heat-prediction-choices {
+  display: grid;
+  gap: 10px;
+  margin-block: 8px 20px;
+}
+.heat-prediction-choices label {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  min-height: 44px;
+}
+.heat-prediction-choices input {
+  flex: 0 0 auto;
+  margin-top: 4px;
+}
+.heat-prediction textarea {
+  display: block;
+  margin-block: 10px 16px;
+}
+.heat-prediction button {
+  max-width: 100%;
+  padding-inline: clamp(10px, 2vw, 20px);
+  white-space: normal;
+}
+.heat-reasoning {
+  padding: 16px;
+  margin-top: 20px;
+  border-left: 3px solid var(--mint);
+  background: var(--surface);
+}
+.heat-reasoning p:last-child {
+  margin-bottom: 0;
+}
+.heat-lab-vessels {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-block: 24px;
+}
+.heat-lab-vessels figure {
+  display: grid;
+  justify-items: center;
+  margin: 0;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  min-width: 0;
+}
+.heat-lab-vessels figcaption {
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+  text-align: center;
+  width: 100%;
+}
+.heat-lab-vessels output {
+  display: block;
+  font-size: 1.4em;
+  font-weight: 650;
+  color: var(--accent);
+}
+.heat-thermometer {
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+}
+.heat-thermometer-tube {
+  position: relative;
+  height: 150px;
+  width: 34px;
+  overflow: hidden;
+  border: 2px solid var(--text);
+  border-radius: 22px;
+  background: var(--surface-2);
+}
+.heat-thermometer-tube > div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: var(--accent);
+  transition: height 220ms ease-out;
+}
+.heat-thermometer-scale {
+  font-size: 0.85em;
+  color: var(--muted);
+}
+.heat-lab-balance {
+  margin-block: 24px;
+  padding: clamp(12px, 2vw, 20px);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+.heat-lab-balance p:last-child {
+  margin-bottom: 0;
+}
+.heat-temperature-lab svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-block: 24px;
+  overflow: visible;
+}
+.heat-phase-bar {
+  display: flex;
+  width: 100%;
+  height: 28px;
+  border: 1px solid var(--text);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.heat-phase-bar span:first-child {
+  background: #dcebef;
+}
+.heat-phase-bar span:last-child {
+  background: #285c74;
+}
+.heat-energy-steps {
+  display: grid;
+  gap: 14px;
+}
+.heat-energy-steps > div {
+  padding-block: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.heat-energy-steps dt {
+  font-weight: 600;
+}
+.heat-energy-steps dd {
+  margin: 6px 0 0;
+}
+@media (max-width: 700px) {
+  .heat-lab-settings {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .heat-lab-vessels {
+    gap: 10px;
+  }
+  .heat-lab-vessels figure {
+    padding: 12px 8px;
+  }
+}
+@media (max-width: 420px) {
+  .heat-lab-vessels {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .heat-thermometer-tube > div {
+    transition: none;
+  }
+}
+:root[data-motion="off"] .heat-thermometer-tube > div {
+  transition: none;
+}

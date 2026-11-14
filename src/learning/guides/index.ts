@@ -1,3 +1,8 @@
+import { worldPowerOttomanGuide } from "../worldPowerOttoman";
+import { chemicalSpeciesGuide } from "../chemicalSpecies";
+import { heatTemperatureGuide } from "../heatTemperature";
+import { nucleicAcidsGuide } from "../nucleicAcids";
+import { ionicGuides } from "../ionicBonding";
 import { periodicDepthGuides } from "../periodicDepth";
 import { chemistryDepthGuides } from "./chemistryDepth";
 import { newtonGuide, electricFieldGuide } from "./physicsDepth";
@@ -23,6 +28,11 @@ export const lessonGuides = new Map(
   [
     ...chemistryDepthGuides,
     ...periodicDepthGuides,
+    worldPowerOttomanGuide,
+    chemicalSpeciesGuide,
+    heatTemperatureGuide,
+    nucleicAcidsGuide,
+    ...ionicGuides,
     newtonGuide,
     electricFieldGuide,
     dnaDepthGuide,

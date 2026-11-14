@@ -1,10 +1,10 @@
 # YKSMania
 
-Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.9.1 alpha**.
+Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.9.2 alpha**.
 
-[Uygulamayı aç](https://yksmania.vercel.app) · [Windows/Linux/Android paketleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.9.1-alpha.1)
+[Uygulamayı aç](https://yksmania.vercel.app) · [Windows/Linux/Android paketleri](https://github.com/kaansavukduran/yksmania/releases)
 
-**Yayın durumu:** 0.9.1 Vercel’de ve Windows/Linux/Android paketlerinde yayında.
+**Yayın durumu:** 0.9.2 yerel kabulü geçti; canlı ve paket doğrulamaları sürüyor.
 Paket ve canlı dağıtım kanıtları [FORGE](FORGE.md)’de.
 
 Ders materyali yüklemek gerekmez. **Konu Anlatımı → Kopya Kağıtları → Sorular →
@@ -14,12 +14,14 @@ arayüzleri kaldırıldı; daha önce saklanmış kişisel dosyalar/veriler sili
 
 ## İçerik ve öğrenme
 
-0.9.1: Elementlerin sınıflandırılması, atom çapı, iyonlaşma enerjisi ve elektron
-ilgisi/elektronegatiflik için dört ayrıntılı rehber, 12 çözümlü örnek ve20 yeni
-soru. Kaydedilen etkileşimli karşılaştırmalar ve güncellenen kimya branş seti.
+0.9.2: Dünya Gücü Osmanlı, kimyasal türler/Lewis, ısı ve sıcaklık,
+DNA/RNA, iyonik bağ ve iyonik adlandırmada altı kapsamlı rehber. Beş yeni ders,
+mevcut nükleik asitler anlatımında genişletme; 62 anlatım bölümü, 31 çözümlü örnek,
+29 hatırlama ve 60 özgün soru. Etkileşimli zaman çizelgesi, enerji alışverişi,
+elektron ve baz eşleşmeleri ile yük/formül atölyeleri çevrimdışı kaydedilir.
 
-61 anlatım, bunların 32’inde ayrıntılı rehber; 64 yerleşik kopya kağıdı ve
-240 özgün soru. Kaynak sırasının ilk 50/479 başlığında anlatım hazırdır.
+66 anlatım, bunların 38’inde ayrıntılı rehber; 69 yerleşik kopya kağıdı ve
+300 özgün soru. Kaynak sırasının ilk 58/479 başlığında anlatım hazırdır.
 341 ana konu ile 479 ayrıntılı başlık farklı düzeylerdir. Bütün MEB/OGM/Drive
 arşivinin dönüşümü tamamlanmış değildir; hazırlanmamış başlıklar hazır gösterilmez
 ve kullanıcıdan eksik materyal sağlaması istenmez.
@@ -30,8 +32,8 @@ ve medeniyet anlatımları; sözcük parçalama, cebir parçaları ve tarihsel k
 atölyeleri vardır. Rehberlerde **Adım adım çalış / Tüm anlatım** seçilebilir.
 Kaynakların gerçekten okunan sayfa sınırları [SOURCE_REVIEW](docs/SOURCE_REVIEW.md)’de.
 
-Sorular kendi metin/verileriyle çözülebilir. Önceki 115 sorunun kimlikleri ve
-cevapları korunur; yeni 125 soru eklenir. Doğru/yanlış, ipucu ve gerekçeli çözüm
+Sorular kendi metin/verileriyle çözülebilir. Önceki 240 sorunun kimlikleri ve
+cevapları korunur; yeni 60 soru eklenir. Doğru/yanlış, ipucu ve gerekçeli çözüm
 ayrıdır. Sekiz doğrulanmış ÖSYM bağlantısı, uygulamada bağımsız öğretim örneği ve
 özgün çözümle desteklenir; bu örnekler resmî soruların birebir aktarımı değildir.
 Son 20 yıllık arşivin tamamı taranmış veya soru bankasına çevrilmiş değildir.

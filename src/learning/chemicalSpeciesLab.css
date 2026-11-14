@@ -1,0 +1,156 @@
+.chemical-species-lab {
+  min-width: 0;
+}
+.chemical-species-lab > .field,
+.chemical-species-lab select {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+.chemical-species-lab p,
+.chemical-species-lab h2,
+.chemical-species-lab h3,
+.chemical-species-lab dd,
+.chemical-species-lab button {
+  overflow-wrap: anywhere;
+}
+.chemical-species-lab .species-kind {
+  margin: 1rem 0;
+  color: var(--text);
+}
+.species-prediction,
+.species-inspector {
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.species-prediction > p:first-child,
+.species-inspector > h3:first-child {
+  margin-top: 0;
+}
+.species-prediction-controls,
+.species-navigation,
+.species-atom-controls {
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+.species-prediction-controls .field {
+  flex: 1 1 12rem;
+  min-width: 0;
+}
+.species-prediction-controls button,
+.species-navigation button,
+.species-atom-controls button {
+  min-height: 44px;
+  white-space: normal;
+  max-width: 100%;
+}
+.species-feedback {
+  border-left: 3px solid var(--accent);
+  padding-left: 0.8rem;
+  margin-bottom: 0;
+}
+.species-step-heading {
+  margin: 1.4rem 0 0;
+}
+.species-step-heading > p:first-child {
+  color: var(--muted);
+  margin-bottom: 0.3rem;
+}
+.species-step-heading h3 {
+  margin-top: 0;
+}
+.species-drawing {
+  display: block;
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto 1rem;
+}
+.species-bond {
+  stroke: var(--text);
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+.species-atom {
+  fill: var(--surface);
+  stroke: var(--border);
+  stroke-width: 2;
+}
+.species-atom.selected {
+  stroke: var(--accent);
+  stroke-width: 3;
+}
+.species-symbol {
+  fill: var(--text);
+  font-size: 24px;
+  font-weight: 600;
+}
+.species-dot {
+  fill: var(--plot-blue);
+}
+.species-bracket path {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.species-bracket text {
+  fill: var(--text);
+  font-size: 24px;
+}
+.species-counts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+  margin: 1rem 0;
+}
+.species-counts > div {
+  min-width: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.8rem;
+}
+.species-counts dt {
+  color: var(--muted);
+}
+.species-counts dd {
+  margin: 0.4rem 0 0;
+  font-weight: 600;
+}
+.species-atom-controls {
+  align-items: center;
+}
+.species-atom-controls button {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 0.8rem;
+  color: var(--text);
+}
+.species-atom-controls button.active {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+.species-central {
+  margin-bottom: 0;
+}
+.species-limit {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+@media (max-width: 600px) {
+  .species-counts {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .chemical-species-lab .species-prediction,
+  .chemical-species-lab .species-inspector {
+    padding: 0.7rem;
+  }
+  .species-navigation > button,
+  .species-prediction-controls > button {
+    width: 100%;
+  }
+}

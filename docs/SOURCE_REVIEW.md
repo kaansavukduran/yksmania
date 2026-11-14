@@ -1,5 +1,37 @@
 # Kaynak ve model kontrolü
 
+## 0.9.2 — kaynak sırasını 58 başlığa genişletme
+
+Altı rehber: 5 yeni ders, mevcut nukleik-asitler/detail-10 zenginleştirmesi.
+62 açıklama bölümü, 31 özgün çözümlü örnek, 29 recall ve 60 özgün soru. Önceki 240
+sorunun metin/seçenek/anahtar/pasajları birebir korunur. Yeni resmî soru aktarımı yok.
+
+| Ders | Doğrudan okunan sınır |
+| --- | --- |
+| Dünya Gücü Osmanlı | Aurelia 011 PDF2–10; OGM Tarih10 özetleri 017–026, her biri tek sayfa ve görsel okuma |
+| Türler/Lewis | MEBİ TYT Kimya basılı35–36/PDF37–38; Aurelia 014 PDF2–5 ve çizim kontrolü; OGM012 canlı sınıflama metni |
+| Isı/sıcaklık | MEBİ TYT Fizik basılı59–66,70–71; Aurelia006 PDF1–8; ayrı hâl değişimi için008’den sınırlı plato köprüsü |
+| DNA/RNA | Aurelia9sayfalık dosyanın tamamı; MEBİ AYT Biyoloji ikinci bölüm dosyası PDF32–36/basılı152–156; OGM Biyoloji2 önceki doğrulanmış PDF14 metni |
+| İyonik bağ/adlandırma | MEBİ TYT Kimya basılı35–38 canlı metni; Aurelia015/016 PDF1–3 |
+
+Önemli sınırlar: Viyana kuşatması fetih değildir; kapitülasyon ve hilafetle ilgili
+tartışmalı ilk-tarih/devir anlatıları kesin cevap anahtarı yapılmadı. Atom/molekül/
+çok atomlu iyon ve radikal ayrılır; NO radikali özgün bilimsel ek olarak açıklanır.
+Lewis noktaları toplam elektron sayısı değildir (Na⁺10elektron, çizimde0nokta).
+Q=mcΔT’de faz/iş/dış aktarım sınırları ve denge modelinde C=mc açıkça yazılır;
+ısıl ilerleme gerçek zaman yasası değildir. Hâl değişimi/detail-121 hazır sayılmaz.
+DNA çift zincir koşulları, antiparalellik, doğrusal omurga ve RNA istisnaları
+belirtilir. Enerji/bağ/baz hesapları bağımsız yeniden hesaplandı. Al₂O₃ yükle
+doğrulanır; formül birimi ile birim hücre, çözünme/erime/elektroliz ayrıdır.
+Her tuz çok çözünür, her metal–ametal örneği moleküldür gibi genellemeler yok.
+Cıva(I) için Hg₂²⁺ notu ve değişken metalin Roma rakamı hesabı korunur.
+
+Ham PDF/sayfa görseli, özel kimlik veya kişisel kayıtlar Git’e alınmadı.
+Yeni modüller özgün öğretim/çizim/alıştırmadır; resmî ÖSYM sorusu iddiası yok.
+AIONIA canlı standart 0.9.2 kontrolünde yeniden okundu: v1.7; karakter/marka sanatı
+aynı, SVG ve arayüz kontrolleri ürünün uygulama kapsamına göre değerlendirildi.
+
+
 ## 0.9.1 — sınıflandırma ve periyodik özellikler
 
 Drive’daki MEBİ TYT Kimya Konu Özetleri metninin basılı30–34 bölümü canlı

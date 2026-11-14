@@ -1,3 +1,8 @@
+import { worldPowerOttomanLesson } from "../learning/worldPowerOttoman";
+import { chemicalSpeciesLesson } from "../learning/chemicalSpecies";
+import { heatTemperatureLesson } from "../learning/heatTemperature";
+import { nucleicAcidsLesson } from "../learning/nucleicAcids";
+import { ionicLessons } from "../learning/ionicBonding";
 import { periodicDepthLessons } from "../learning/periodicDepth";
 import { lessonGuides } from "../learning/guides";
 import { turkishLanguageLessons } from "../learning/turkishLanguageLessons";
@@ -818,12 +823,19 @@ const baseLessons: Lesson[] = [
   ...algebraLessons,
   ...sourceExpansionLessons,
   ...periodicDepthLessons,
+  worldPowerOttomanLesson,
+  chemicalSpeciesLesson,
+  heatTemperatureLesson,
+  ...ionicLessons,
   factorizationLesson,
   ...sourceNarratives,
 ];
 export const lessons: Lesson[] = baseLessons.map((lesson) => {
   const expanded =
-    turkishLanguageLessons.find((item) => item.id === lesson.id) ?? lesson;
+    lesson.id === nucleicAcidsLesson.id
+      ? nucleicAcidsLesson
+      : (turkishLanguageLessons.find((item) => item.id === lesson.id) ??
+        lesson);
   return {
     ...expanded,
     minutes: lessonGuides.get(expanded.id)?.minutes ?? expanded.minutes,

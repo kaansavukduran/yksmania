@@ -1,3 +1,54 @@
+# 0.9.2 — altı kaynaklı etkileşimli atölye
+
+Başlangıç c4ab5ab75d2a71e3a98db7bfb5c8d32c08901512. Dünya Gücü Osmanlı,
+kimyasal türler/Lewis, ısı–sıcaklık, nükleik asitler, iyonik bağ ve iyonik bileşik
+adlandırma işlendi. Beş yeni anlatım eklendi; mevcut nükleik asitler kimliği
+korunarak genişletildi. Altı rehberde62 bölüm,31 çözümlü örnek,29 hatırlama
+kontrolü ve60 özgün beş seçenekli soru var. Önceki240 sorunun kimliği, kökü,
+seçenekleri, cevabı ve metni değişmedi. Toplam66 anlatım/38 ayrıntılı rehber/
+69 yerleşik kağıt/300 özgün soru; doğrulanmış sıranın ilk58/479 başlığı hazır.
+Sıradaki eksik başlık59: kovalent bağ, polar ve apolar bağ (`detail-155`).
+Tüm Drive arşivi veya tam resmî dağılımlı denemeler tamamlandı iddiası yok.
+
+Yedi tarih olayı/kanıt karşılaştırması,11 Lewis türü/elektron bütçesi,
+enerji koruyan ısıl temas ve sıcaklık–enerji grafiği, DNA/RNA yapımı ve gerçek
+bağ sayıları, iyon adedi/yük dengesi ve adım adım adlandırma modelleri eklendi.
+Keşifler ayrı kaydolur; notlar/öğrenme/1–3–7–21 tekrarları korunur ve keşif
+XP, ustalık veya tamamlanma sayılmaz. Nükleik asitler eski not anahtarı korunur.
+Kaynak sayfa sınırları ve bilimsel düzeltmeler docs/SOURCE_REVIEW.md içinde.
+AIONIA ana standardı canlı v1.7 ile karşılaştırıldı; logolar ve32 karelik Aion
+paftası değişmedi. k44/Aionlaştır/aionia bu görevde etkinleştirilmedi.
+
+İlk check/build ve126 birim PASS. İlk odaklı browser11/12: yalnız ısı atölyesi
+320px UI200/text150 koşulunda client270/scroll272. YKS-030/Düşük: range
+kontrolünün UA yatay2px marjı kaldırıldı; aynı durumda270/270. Kesme, font
+küçültme veya kabul toleransı değişimi yok. YKS-031/Düşük: Lewis sıfırlama ve
+ısı seçim/tahmin düğmeleri ortak düğme sınıflarına alındı. Gerçek320px büyük
+yazıda tahmin eyleminin kelime ortasından kırılması, yalnız bu düğmenin yatay
+boşluğu uyarlanarak düzeltildi;45px metin korunur. Son derleme/kabul ve uzak
+yayın sonuçları tamamlandıkça bu kayda eklenecek.
+
+Yerel tam101/101 browser PASS (6,8dk); son yalnız tahmin düğmesi yatay boşluğu
+ve sürüm notu derlemesinde check/build,126/126 unit ve yeni kaynakların12/12
+browser kabulü tekrar PASS (55,3s). Yeni kelime genişliği regresyonu da PASS;
+320px UI200/text150 koşulunda font küçültülmeden bütün kelimeler sığar.
+Temiz uzak kurulumun tam101 kabulü ve paket işleri ayrıca doğrulanacak.
+
+Son kopyalanmış derlemede17 manuel ölçüm PASS, renderer0: ısı270/270 ve tahmin
+düğmesinde222px metin alanına202,54px en uzun kelime sığar;45px font korunur.
+Lewis sıfırlama beş boyutta CO₂ adım4→1, C8→0, bağ0 olarak gerçek tıklandı.
+44 değişen/yeni metin yolunda8.845 özel Drive kimliği ve URL’si0 eşleşme;
+özel PDF/binary/anahtar veya değişen marka varlığı yok. Kilitte752 ortak
+bağımlılık kaydı birebir aynı, yalnız iki kök sürüm alanı0.9.2 değişti.
+
+İlk manuel inceleme altı modelde30 görünüm/durum: masaüstü koyu/açık,390px,
+320px büyük yazı ve844px yatay. Belge yatay taşması yok; ısıdaki2px iç taşma
+yukarıdaki onarımla giderildi. Nükleik alt zincir/yönleri HTML olarak da okunur;
+termometre üst etiketi gösterdiği ölçekle100°C olarak eşleşir. Fiziksel Android,
+temiz kurulum/portable taşıma ve iki native sürümle yükseltme NOT TESTED.
+
+---
+
 # 0.9.1 yayımlandı — doğrulanmış teslim
 
 Uygulama kodu12e7431d3576fd3a1244cbab1f38a1b8c1726b5b; paket kaynağı

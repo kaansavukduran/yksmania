@@ -24,6 +24,11 @@ export const studyTopicById = (id: string) =>
 export const lessonTopic: Record<string, string> = {
   ...narrativeTopics,
   ...periodicDepthTopics,
+  "dunya-gucu-osmanli": "detail-236",
+  "kimyasal-turler-lewis": "detail-152",
+  "isi-ve-sicaklik": "detail-119",
+  "iyonik-bag-ve-guclu-etkilesimler": "detail-153",
+  "iyonik-bilesik-adlandirma": "detail-154",
   "rasyonel-sayilar": "detail-202",
   "carpanlara-ayirma": "detail-221",
   "atp-metabolizma": "detail-283",

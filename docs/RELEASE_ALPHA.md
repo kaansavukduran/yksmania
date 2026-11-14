@@ -1,18 +1,20 @@
-YKSMania 0.9.1 alpha
+YKSMania 0.9.2 alpha
 
-Dört yeni ayrıntılı TYT Kimya dersi: elementlerin sınıflandırılması, atom çapı,
-iyonlaşma enerjisi, elektron ilgisi/elektronegatiflik ve metalik karakter.
-24 açıklama bölümü,12 adım adım çözümlü örnek,12 hatırlama ve20 özgün soru.
-Etkileşimli karşılaştırmalar ve kimya branş soruları zenginleşti. Logolar korundu.
+Kaynak sırasındaki konular genişliyor: Dünya Gücü Osmanlı, kimyasal türler ve
+Lewis yapısı, ısı ve sıcaklık, DNA/RNA, iyonik bağ ve iyonik adlandırma.
+Beş yeni ders, bir mevcut anlatımda genişletme; altı rehberde 62 açıklama bölümü,
+31 adım adım çözümlü örnek, 29 hatırlama ve 60 özgün beş seçenekli soru.
 
-Toplam61 anlatım,32 rehber,64 yerleşik kağıt ve240 özgün soru. Çalışma sırasının
-ilk50/479 başlığı hazır; bütün arşiv tamamlanmış değildir. Karma setler hâlâ
-90TYT/25AYT çalışmasıdır; tam resmî dağılım olarak sunulmaz. Önceki deneme
-snapshot’ları, öğrenme kayıtları ve notlar korunur. Materyal yüklemek gerekmez.
+Olay/kanıt zaman çizelgesi, enerji koruyan ısıl temas, Lewis elektron yerleşimi,
+DNA/RNA molekül ve baz keşfi, yük dengeleme ve formülden adlandırma atölyeleri.
+Model seçimleri ve notlar çevrimdışı korunur; keşifler puan veya tamamlama vermez.
+Öğrencinin kaynak yüklemesi gerekmez. Önceki 240 sorunun kimliği/anahtarı korunur.
 
-Canlı site https://yksmania.vercel.app
-CI43622440349:96 birim,89 tarayıcı ve üç platform işi PASS.
-Canlı43623257610:89/89 PASS. Paket kaynağı e1b8150; kaynak/test/paket kanıtı FORGE.md.
+Toplam 66 anlatım, 38 rehber, 69 kağıt ve 300 özgün soru. İlk 58/479 başlık hazır;
+bütün arşiv ve tam resmî dağılımlı deneme bankası henüz tamamlanmadı.
+Karma çalışmalar 90 TYT/25 AYT; ayrıca 11 branş seti vardır.
+
+Canlı site https://yksmania.vercel.app — kaynak, test ve paket kanıtı FORGE.md.
 
 Assets bölümünden cihazına uygun dosyayı seç:
 Windows Setup.exe kurulum, Portable.exe doğrudan çalıştırma içindir. İkisi de x64

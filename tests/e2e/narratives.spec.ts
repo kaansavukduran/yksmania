@@ -18,7 +18,9 @@ async function open(page: Page, id: string) {
       ? "Ses bilgisi: sesi karşılaştır, olayı kanıtla"
       : id === "sozcukte-yapi"
         ? "Sözcükte yapı: kökten anlama, adım adım"
-        : pack.title;
+        : id === "nukleik-asitler"
+          ? "Nükleik asitler: DNA ve RNA’yı kur ve karşılaştır"
+          : pack.title;
   await nav(page, "Konu Anlatımı");
   await page
     .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
@@ -35,7 +37,9 @@ async function open(page: Page, id: string) {
     page.locator(
       id === "ses-bilgisi" || id === "sozcukte-yapi"
         ? ".language-lab"
-        : ".narrative-lab",
+        : id === "nukleik-asitler"
+          ? ".nucleic-lab"
+          : ".narrative-lab",
     ),
   ).toBeVisible();
 }
@@ -171,6 +175,66 @@ for (const subject of [
         ).toHaveText(heading);
         await expect(ownNote).toHaveValue(
           "Kendi açıklamam: kanıtı önceki biçimle karşılaştırırım.",
+        );
+        await expect(page.locator(".answer")).toHaveCount(0);
+        continue;
+      }
+      if (pack.id === "nukleik-asitler") {
+        const lab = page.locator(".nucleic-lab");
+        await lab
+          .getByRole("button", { name: "Zincirleri karşılaştır", exact: true })
+          .click();
+        await lab
+          .getByRole("button", { name: "Seçili bazı G yap", exact: true })
+          .click();
+        await lab
+          .getByRole("button", {
+            name: "Bağları ve hesabı göster",
+            exact: true,
+          })
+          .click();
+        await expect(lab.locator(".nucleic-result > strong")).toHaveText(
+          "16 hidrojen bağı",
+        );
+        await expect(lab.locator('line[data-bond="hydrogen"]')).toHaveCount(16);
+        const recalls = page.locator(".guide-recall details");
+        await expect(recalls).toHaveCount(5);
+        for (const recall of await recalls.all()) {
+          await recall.locator("summary").click();
+          await expect(recall.locator("p")).not.toBeEmpty();
+        }
+        await expect(page.locator(".narrative-recall")).toHaveCount(0);
+        const ownNote = page
+          .locator(".study-notes")
+          .getByRole("textbox", { name: "Notun", exact: true });
+        const note =
+          "Kendi açıklamam: iki A–T ve dört G–C çifti toplam 16 H bağı kurar; RNA için aynı hesabı zorlamam.";
+        await ownNote.fill(note);
+        await expect
+          .poll(
+            async () => (await stored(page)).notes["lesson:nukleik-asitler"],
+          )
+          .toBe(note);
+        await expect(page.locator(".save-status")).toContainText(
+          "Bu cihazda kaydedildi",
+        );
+        const saved = (await stored(page)).explorations["nucleic-acids"];
+        expect(saved).toMatchObject({
+          panel: "chains",
+          sequence: "GGTCCA",
+          showBonds: true,
+        });
+        await page.reload();
+        await expect(
+          lab.getByRole("combobox", { name: "Örnek baz dizisi", exact: true }),
+        ).toHaveValue("GGTCCA");
+        await expect(lab.locator(".nucleic-result > strong")).toHaveText(
+          "16 hidrojen bağı",
+        );
+        await expect(lab.locator('line[data-bond="hydrogen"]')).toHaveCount(16);
+        await expect(ownNote).toHaveValue(note);
+        expect((await stored(page)).explorations["nucleic-acids"]).toEqual(
+          saved,
         );
         await expect(page.locator(".answer")).toHaveCount(0);
         continue;

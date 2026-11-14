@@ -2,6 +2,11 @@ import { narrativeById } from "./narratives";
 import { lazy, Suspense } from "react";
 import { useApp } from "../store";
 const PeriodicReasoning = lazy(() => import("./PeriodicReasoning"));
+const WorldPower = lazy(() => import("./WorldPowerOttomanLab"));
+const Species = lazy(() => import("./ChemicalSpeciesLab"));
+const Heat = lazy(() => import("./HeatTemperatureLab"));
+const Nucleic = lazy(() => import("./NucleicAcidsLab"));
+const Ionic = lazy(() => import("./IonicWorkshop"));
 const Cell = lazy(() => import("./CellExplorer"));
 const Periodic = lazy(() => import("./PeriodicExplorer"));
 const Geometry = lazy(() => import("./GeometryExplorer"));
@@ -25,12 +30,24 @@ export function VisualLab({ id }: { id: string }) {
   const { t } = useApp();
   return (
     <Suspense fallback={<p role="status">{t("loading")}</p>}>
-      {[
-        "elementlerin-siniflandirilmasi",
-        "atom-capi-karsilastirma",
-        "iyonlasma-enerjisi",
-        "elektron-ilgisi-elektronegatiflik",
-      ].includes(id) ? (
+      {id === "dunya-gucu-osmanli" ? (
+        <WorldPower />
+      ) : id === "kimyasal-turler-lewis" ? (
+        <Species />
+      ) : id === "isi-ve-sicaklik" ? (
+        <Heat />
+      ) : id === "nukleik-asitler" ? (
+        <Nucleic />
+      ) : id === "iyonik-bag-ve-guclu-etkilesimler" ? (
+        <Ionic />
+      ) : id === "iyonik-bilesik-adlandirma" ? (
+        <Ionic naming />
+      ) : [
+          "elementlerin-siniflandirilmasi",
+          "atom-capi-karsilastirma",
+          "iyonlasma-enerjisi",
+          "elektron-ilgisi-elektronegatiflik",
+        ].includes(id) ? (
         <PeriodicReasoning key={id} id={id} />
       ) : id === "ses-bilgisi" || id === "sozcukte-yapi" ? (
         <Language structure={id === "sozcukte-yapi"} />

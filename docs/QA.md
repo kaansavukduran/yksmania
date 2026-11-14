@@ -1,3 +1,33 @@
+# 0.9.2 kabul kaydı
+
+Altı kaynaklı atölye:62 açıklama bölümü,31 çözümlü örnek,29 recall ve60 yeni
+özgün soru. Önceki240 soru değişmezliği ve ilk58 çalışma başlığı sürekliliği
+birim kabulüne eklendi. check/build ve126 birim PASS; son browser/yayın
+sonuçları tamamlandıktan sonra buraya eklenecek. İlk hedefli12 test11PASS;
+ısıdaki gerçek320px iç taşma YKS-030 olarak korundu ve onarıldı.
+
+Yerel tam101/101 browser PASS (6,8dk). Son scoped düğme boşluğu ve sürüm notu
+derlemesinde check/build,126 unit ve12/12 yeni kaynak testi PASS (55,3s).
+Kelime genişliği regresyonu font45px korunurken PASS; kabul sınırı gevşetilmedi.
+Son kaynağın temiz CI tam101/paket ve canlı sonuçları henüz bekleniyor.
+
+Son derleme kopyasında17 manuel ölçüm ve gerçek düğme etkinleştirmesi PASS,
+renderer0.320px büyük yazıda ısı270/270; tahmin metin alanı222px, en uzun
+kelime202,54px, font45px.44 yol/8.845 özel kimlik+URL gizlilik kontrolü PASS;
+752 bağımlılık kaydı değişmedi. Son kaynak/doküman kanıtları FORGE’de.
+
+- YKS-030/Düşük: ısı range UA marjı client270/scroll272; scoped margin0 ile
+  270/270. Belge320px, UI200/text150, font ve tolerans aynı kalır.
+- YKS-031/Düşük: Lewis reset ve ısı eylemlerindeki yerel çıplak düğmeler ortak
+  stile alındı. Tahmin düğmesinin yatay boşluğu büyük yazıda kelimelerin bütün
+  kalmasını sağlar;45px metin küçültülmez. Reset gerçek adım4→1 değiştirir.
+
+Otuz gerçek görünüm/durum incelendi. Temel bilimsel sonuçlar görsel yanında
+normal HTML olarak verilir. Seçimler ve notlar çevrimdışı saklanır; model
+etkileşimi öğrenme/XP/tamamlanma oluşturmaz. Yeni sorular kendi köklerindeki
+bilgiyle çözülebilir. Kaynak sınırları SOURCE_REVIEW, geçmiş kusurlar FORGE’de.
+Paket/ci/canlı kabulü fiziksel cihaz veya native sürüm geçişi yerine sayılmaz.
+
 # 0.9.1 son teslim kabulü
 
 Paket e1b8150 / CI43622440349:96unit,89browser,Win/Linux/Android dört iş PASS.
