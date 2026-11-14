@@ -615,9 +615,20 @@ test("YKS-006 notes stay below full-width theory and questions and retain edits"
   );
   for (const width of [1440, 1280, 1024, 390, 320]) {
     await page.setViewportSize({ width, height: 1000 });
-    const article = await page.locator(".lesson-article").boundingBox();
-    const notes = await page.locator(".study-notes").boundingBox();
-    const layout = await page.locator(".study-layout").boundingBox();
+    const { article, notes, layout } = await page.evaluate(() => ({
+      article: document
+        .querySelector(".lesson-article")
+        ?.getBoundingClientRect()
+        .toJSON(),
+      notes: document
+        .querySelector(".study-notes")
+        ?.getBoundingClientRect()
+        .toJSON(),
+      layout: document
+        .querySelector(".study-layout")
+        ?.getBoundingClientRect()
+        .toJSON(),
+    }));
     expect(article).not.toBeNull();
     expect(notes).not.toBeNull();
     expect(layout).not.toBeNull();
@@ -644,8 +655,16 @@ test("YKS-006 notes stay below full-width theory and questions and retain edits"
   await page.getByRole("button", { name: "Sorulara geç", exact: true }).click();
   for (const width of [1440, 390, 320]) {
     await page.setViewportSize({ width, height: 1000 });
-    const panel = await page.locator(".question-panel").boundingBox();
-    const practiceNote = await page.locator(".practice-note").boundingBox();
+    const { panel, practiceNote } = await page.evaluate(() => ({
+      panel: document
+        .querySelector(".question-panel")
+        ?.getBoundingClientRect()
+        .toJSON(),
+      practiceNote: document
+        .querySelector(".practice-note")
+        ?.getBoundingClientRect()
+        .toJSON(),
+    }));
     expect(panel).not.toBeNull();
     expect(practiceNote).not.toBeNull();
     expect(

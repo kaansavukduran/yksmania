@@ -1,5 +1,15 @@
 # 0.9.1 — dört periyodik kimya konusu
 
+Son CI43622440349 verify96unit/89browser PASS. İlk public43621890680 aynı
+save-onayı yarışında88/89; ikinci43622465069 yeni konular PASS, eski YKS-006
+not sınırında88/89 (beklenen908,59375, ölçülen907,59375). İki viewport rect
+ayrı zamanlarda ölçülüyordu; theory/notes/layout ve question/note tek DOM
+örneğinde ölçülür. Sıfır toleranslı not-altında koşulu aynıdır. Aynı YKS-006
+1440/1280/1024/390/320 senaryosu yerelde PASS. Trace artefact indirmesi403 ile
+engellendi; konsol kanıtı saklandı, CSS normal akışta20px note marjı içeriyor.
+Uygulama veya CSS değiştirilmedi; yeni public kabul gerekir.
+
+
 İlk uzak CI43621833448:96unit/check/build PASS, browser88/89. Yeni
 periodic-depth testi gerekçe görünür olur olmaz reload yaptı; Provider update
 optimistic, IDB kaydı henüz bitmemişti. Test görünür .save-status kaydedildi
