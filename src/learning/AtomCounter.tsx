@@ -162,30 +162,31 @@ export function AtomCounter({ comparison = false }: { comparison?: boolean }) {
               </button>
             ))}
           </div>
-          <table className="model-data">
-            <caption>{pair.name}: tanecikleri karşılaştır</caption>
-            <thead>
-              <tr>
-                {["Tanecik", "p", "n", "e", "A", "q"].map((c) => (
-                  <th scope="col" key={c}>
-                    {c}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {pair.rows.map(([name, p, n, e]) => (
-                <tr key={name}>
-                  <th scope="row">{name}</th>
-                  <td>{p}</td>
-                  <td>{n}</td>
-                  <td>{e}</td>
-                  <td>{p + n}</td>
-                  <td>{p - e}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <div
+            className="atom-comparison"
+            role="group"
+            aria-label={`${pair.name}: tanecikleri karşılaştır`}
+          >
+            {pair.rows.map(([name, p, n, e]) => (
+              <section key={name}>
+                <h4>{name}</h4>
+                <dl>
+                  {[
+                    ["Proton p", p],
+                    ["Nötron n", n],
+                    ["Elektron e", e],
+                    ["Kütle numarası A", p + n],
+                    ["Yük q", p - e],
+                  ].map(([label, value]) => (
+                    <div key={label}>
+                      <dt>{label}</dt>
+                      <dd>{value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </section>
+            ))}
+          </div>
           <p aria-live="polite">{pair.reason}</p>
         </>
       )}

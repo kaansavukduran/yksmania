@@ -122,6 +122,9 @@ test("YKS-015 full passage wraps at 320px with large type, survives wrong answer
     .getByRole("button", { name: "Cevabı kontrol et", exact: true })
     .tap();
   await expect(page.locator(".feedback.repair")).toBeVisible();
+  await expect(page.locator(".save-status")).toContainText(
+    "Bu cihazda kaydedildi",
+  );
   await page.evaluate(async () => {
     await navigator.serviceWorker.ready;
   });

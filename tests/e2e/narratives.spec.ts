@@ -343,12 +343,15 @@ test("division, common periods, energy and word transformations explain changed 
   await page
     .getByRole("button", { name: "İzoton örneği", exact: true })
     .click();
-  await expect(page.locator(".model-data")).toContainText("¹³₆C");
+  await expect(page.locator(".atom-comparison")).toContainText("¹³₆C");
   await expect(page.locator(".concept-model")).toContainText(
     "Nötron sayısı 7, protonlar farklı",
   );
   await open(page, "ses-bilgisi");
-  await page.getByRole("button", { name: "kitapta", exact: true }).click();
+  await page
+    .getByRole("region", { name: "Ses değişimi keşfi", exact: true })
+    .getByRole("button", { name: "kitapta", exact: true })
+    .click();
   await page
     .getByRole("button", { name: "Eki birleştir", exact: true })
     .click();
