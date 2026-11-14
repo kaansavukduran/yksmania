@@ -206,7 +206,7 @@ const messages: Record<string, string> = {
   startOver: "Taslağı bırak ve yeni çalışma aç",
   draftConfirm:
     "Yarım kalan çalışma var. Bu taslak bırakılıp yeni çalışma açılsın mı?",
-  footer: "Fragaria Interactive · YKSMania 0.9.2 alpha",
+  footer: "Fragaria Interactive · YKSMania 0.10.0 alpha",
   scopeNote:
     "İçerikler kaynaklardan sırayla işleniyor; hazır anlatımlar ve soru setleri doğrudan uygulamada çalışır.",
   questions: "Sorular",

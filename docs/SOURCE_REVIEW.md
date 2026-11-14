@@ -1,5 +1,43 @@
 # Kaynak ve model kontrolü
 
+## 0.10.0: çalışma sırasındaki 20 ünite
+
+59–78. başlıkların tamamı işlendi. 20 ayrı rehberde 189 açıklama bölümü,
+91 çözümlü örnek,92 aktif hatırlama ve200 özgün beş seçenekli soru var.
+Önceki300 tam soru kaydı korunur. Ham PDF, kişisel plan veya özel kaynak
+kimliği/URL'si yayımlanmaz; öğretim metinleri ve çizimler özgün olarak yazıldı.
+
+| Alan | Doğrudan okunan kaynak sınırı |
+| --- | --- |
+| Matematik5 | MEBİ TYT Matematik PDF38–48/basılı36–46; Aurelia012 mutlak değer PDF2–5,013 üsler2–5,014 bilimsel gösterim1–3,015 kökler1–3,016 oran-orantı ilgili öğretim sayfaları |
+| Fizik5 | MEBİ TYT Fizik basılı67–71,80–86,87–102,103–121,122–129; PDF sayfası basılı+2. İlgili PDF69/85/92/105/124/128 şekilleri ayrıca görüldü. Aurelia007 genleşme,008 hâl,009 durgun elektrik,010 akım,011 manyetizma öğretim ve örnekleri karşılaştırıldı |
+| Kimya2 | MEBİ TYT Kimya PDF40–43/basılı38–41; Aurelia017 kovalent bağ10sayfa ve018 molekül polarlığı12sayfa; OGM tek sayfalık Kovalent Bağ özeti görsel okundu |
+| Biyoloji2 | MEBİ TYT Biyoloji PDF66–73,75–78/basılı64–71,73–76; Aurelia zar taşınmaları12 ve sınıflandırma10sayfa; dört ilgili şekil ayrıca incelendi |
+| Türkçe3 | Aurelia003/004/005 PDF2–5,7–9; OGM İsim Soylu Sözcükler40sayfalık notun3–17,19–22bölümleri ve12/19görseli; Dersler Cepte isim15–16,sıfat18–20,zamir basılı15–16. Mevcut olmayan MEBİ Türkçe kitabı okunmuş sayılmadı |
+| Tarih3 | Aurelia012 PDF1–5,013/014 PDF1–6; OGM Tarih10 özet027–028 ve Tarih11 özet001–009 tek sayfaları görsel okundu. Tarih10 sunu068/069/070 millet,lonca/toprak ve vakıf öğretim sayfaları okunabilir metin üzerinden; metinsiz ara resimlerden ek iddia üretilmedi |
+
+Bilimsel sınırlar: esas karekök ve denklem kökü farklı; sıfır/negatif üs ve
+parantez kapsamı korunur. Standart bilimsel katsayı ile eşdeğer değer ayrılır.
+Genleşmede katsayı/kısıt; hâl değişiminde saf madde/basınç; devrede ideal
+kaynak/ohmik eleman; manyetik çizimde yaklaşım ve birimler açıkça verilir.
+Polar bağ tek başına polar molekül değildir; gerçek3B yönlerin bileşkesi
+kullanılır. Kimyasal polarlaşma oku δ+→δ− gösterim geleneğidir, SI dipol
+momenti yönü iddiası yapılmaz. Zar akışı maddeyi korur, protein ile ATP ayrı
+koşullardır; ozmoz basınç ve geçirgenlikle koşullandırılır. Sınıflandırma
+öğretim dizileri gerçek genom veya evrensel çıkarım algoritması sayılmaz.
+
+Türkçe sorularında cümle ve gönderim kendi kartında tamdır. Kişi adı/duygu
+belirsizliği giderildi. Tarihte görev/yetki/sınıf, din/meslek, bağımsızlık/ilhak
+ayrılır. Bucaş1672 ile Zoravna1676 karşılaştırıldı; Nasuh Paşa1611/1612 kaynak
+farkı kesin cevap anahtarı yapılmadı. Kaynaktaki aşırı genellemeler aynen
+aktarılmadı. Yeni200 anahtar ve91 örnek ikinci incelemede yeniden hesaplandı.
+
+Yerleşik kopya kağıtları rehberlerden türedi; önceki akım kağıdının örnek ve
+uyarıları yeni rehberle birleştirilerek korundu. Toplam86 anlatım/58 rehber/
+88 kağıt/500 özgün soru, ilk78/479 hazırdır. Tüm arşiv veya son20yıl resmî
+soru bankası tamamlandı iddiası yoktur. Sıradaki başlık79:Sayı Problemleri.
+
+
 ## 0.9.2 — kaynak sırasını 58 başlığa genişletme
 
 Altı rehber: 5 yeni ders, mevcut nukleik-asitler/detail-10 zenginleştirmesi.

@@ -40,7 +40,8 @@ function lessonSheet(id: string): CheatSheet | undefined {
     subjectId: lesson.subjectId,
   };
   const guide = lessonGuides.get(id),
-    narrative = narrativeById.get(id);
+    narrative = narrativeById.get(id),
+    reviewed = physicsCheatSheets.find((sheet) => sheet.topicId === topic.id);
   const firstQuestion = lesson.questions[0];
   const sections = guide
     ? guide.sections.map((section) => ({
@@ -84,7 +85,7 @@ function lessonSheet(id: string): CheatSheet | undefined {
             },
           ]
         : [];
-  return {
+  const sheet: CheatSheet = {
     topicId: topic.id,
     lessonId: lesson.id,
     title: topic.title,
@@ -115,6 +116,17 @@ function lessonSheet(id: string): CheatSheet | undefined {
           ]
         : []),
     source: guide?.source ?? narrative?.source ?? lesson.source.tr,
+  };
+  if (!reviewed) return sheet;
+  // An expanded lesson supplements the already reviewed sheet for this topic.
+  // Preserve its examples and cautions instead of replacing them in the map.
+  return {
+    ...sheet,
+    sections: [...reviewed.sections, ...sheet.sections],
+    examples: [...reviewed.examples, ...sheet.examples],
+    cautions: [...new Set([...reviewed.cautions, ...sheet.cautions])],
+    recall: [...reviewed.recall, ...sheet.recall],
+    source: reviewed.source + " " + sheet.source,
   };
 }
 export const builtInCheatSheets = new Map<string, CheatSheet>(

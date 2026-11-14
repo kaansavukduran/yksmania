@@ -1,3 +1,30 @@
+# 0.10.0 kabul kaydı
+
+20 yeni ünite/189 bölüm/91 örnek/200 özgün soru. Önceki300 tam soru kaydı
+korundu. Check/build ve192 unit PASS; tam142 browser PASS (9,7dk).
+Bundan sonra yalnız kimya kontrolID'si, Türkçe vektör ilişki ikonu ve orantı
+etiket hizası değişti; son derlemede check/192unit/build ve41/41 ilgili
+browser tekrar PASS(2,8dk).Gerçek labelbağlantısı/benzersizID,okbaşıgeometrisi
+veSVG12/xBBoxayrımı kabulde korunur.
+YKS032–042 sabit bulguları/ilk hatalar/kabul koşulları FORGE başında kayıtlıdır.
+
+Yeni41test tüm20 ünitede normal courseentry→gerçek değişen görsel→sonuç→not→
+offline reload→ilk özgün soru/feedback→taslak reload; XP/learning eşitliği ve
+320px UI200/text150/azaltılmış hareket/gerçek touch/HTML sonuç/axe denetimlerini
+kapsar. Türkçe model SVG zorunluluğu yerine gerçek HTML sözcük diyagramıyla
+ölçülür. Hiçbir timeout veya beklenen akademik sonuç gevşetilmedi.
+
+Geliştirme Electron'da altı yeni model ailesi dahil offline/reload/deneme/
+timer/reset mevcut akışlar PASS; ilk runtime fetch engeli, checksum'u doğrulanmış
+pinned cached runtime ile aşıldı. Manuel66+45durum ve kimya12ekdurumda taşma/
+renderer hatası bulunmadı; onarım öncesi tofu/etiket/duplicateID kanıtları saklanır.
+SonUIpatch16durumPASS; toplam127 manuelölçüm+12 bağımsız kimya durumu.
+Kök tüm72dosyayı iki son kopyayla byteeşit doğruladı. Son gerçek webSW
+0.9.2→0.10 update tümstate/checkedtaslak/legacy870bayt eşitliği ve3yeni
+offlinemodel/noXP/renderer0 ilePASS. Son geliştirmeElectron6yeni aile veeski
+akışlar tekrarPASS. UzakCI/canlı/paket sonuçları ayrıca eklenecek.
+Fiziksel Android/temiz kurulum/portable taşıma/iki native yükseltme NOT TESTED.
+
 # 0.9.2 kabul kaydı
 
 Kaynak9825e32960a712c81dcb6861c7386189d7a8d2ae Vercel production READY;

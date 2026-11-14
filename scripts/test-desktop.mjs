@@ -96,6 +96,149 @@ try {
       ).toBeVisible();
     }
   }
+  const newSourceUnits = [
+    {
+      id: "uslu-sayilar",
+      title: "Üslü sayılar: işaret",
+      expected: "= -1",
+      async act(lab) {
+        const exponent = lab.getByRole("slider", {
+          name: "Tam sayı üs",
+          exact: true,
+        });
+        await exponent.press("Home");
+        for (let i = 0; i < 3; i++) await exponent.press("ArrowRight");
+        await lab
+          .getByRole("checkbox", {
+            name: "Eksi işaretini tabanın parantezine al",
+            exact: true,
+          })
+          .uncheck();
+        await expect(
+          lab.locator("svg text").filter({ hasText: /^-1$/ }),
+        ).toHaveCount(1);
+      },
+    },
+    {
+      id: "elektrik-akimi",
+      title: "Elektrik akımı",
+      expected: "12 A",
+      async act(lab) {
+        await lab
+          .getByRole("combobox", {
+            name: "Dirençlerin bağlantısı",
+            exact: true,
+          })
+          .selectOption("parallel");
+        await lab
+          .getByRole("spinbutton", {
+            name: "Kaynak gerilimi (V), sayıyla",
+            exact: true,
+          })
+          .fill("24");
+        await expect(lab.locator("[data-model-result]")).toContainText(
+          "Kaynak gücü = 288 W",
+        );
+      },
+    },
+    {
+      id: "kovalent-bag-polar-apolar",
+      title: "Kovalent bağ: ortaklaşma",
+      expected: "Apolar",
+      async act(lab) {
+        await lab.getByLabel("Bağ örneği", { exact: true }).selectOption("n2");
+        await lab
+          .getByRole("button", { name: "Sonraki bağ adımı", exact: true })
+          .click();
+        await lab
+          .getByRole("button", { name: "Sonraki bağ adımı", exact: true })
+          .click();
+      },
+    },
+    {
+      id: "hucre-zarinda-madde-alisverisleri",
+      title: "Hücre zarında madde alışverişleri",
+      expected: "Net geçiş yok",
+      async act(lab) {
+        await lab
+          .getByRole("combobox", { name: "İzlenen madde", exact: true })
+          .selectOption("sodium");
+        await lab
+          .getByRole("combobox", { name: "Taşıma düzeni", exact: true })
+          .selectOption("active");
+        await expect(lab.locator(".f093-bio-channel")).toHaveCount(0);
+        await lab
+          .getByRole("checkbox", {
+            name: "Uygun taşıma proteini mevcut",
+            exact: true,
+          })
+          .check();
+        await lab
+          .getByRole("checkbox", { name: "ATP kaynağı açık", exact: true })
+          .uncheck();
+      },
+    },
+    {
+      id: "isimler-isim-tamlamasi",
+      title: "İsimler ve isim tamlaması",
+      expected: "Zincirleme isim tamlaması",
+      async act(lab) {
+        await lab
+          .getByRole("checkbox", { name: "İlgi ekini ekle", exact: true })
+          .check();
+        await lab
+          .getByRole("checkbox", { name: "İç tamlama kur", exact: true })
+          .check();
+        await lab
+          .getByRole("radio", { name: "Zincirleme", exact: true })
+          .check();
+        await lab
+          .getByRole("textbox", { name: "Cümleden kanıtın", exact: true })
+          .fill("Bahçe kapısı iç tamlaması okulun sözcüğüne bağlanır.");
+        await lab
+          .getByRole("button", { name: "Yanıtı denetle", exact: true })
+          .click();
+      },
+    },
+    {
+      id: "sultan-osmanli-merkez-teskilati",
+      title: "Sultan ve Osmanlı Merkez Teşkilatı",
+      expected: "Gelir–gider → defterdar → kalemiye",
+      async act(lab) {
+        await lab
+          .getByRole("combobox", { name: "İncelenecek durum", exact: true })
+          .selectOption("1");
+        await lab
+          .getByRole("radio", { name: "Defterdar", exact: true })
+          .check();
+        await lab
+          .getByRole("button", { name: "Kanıtla karşılaştır", exact: true })
+          .click();
+      },
+    },
+  ];
+  for (const unit of newSourceUnits) {
+    await navigate("Konu Anlatımı");
+    await page.getByRole("button", { name: "TYT", exact: true }).click();
+    await page
+      .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
+      .fill(unit.title);
+    await page.locator(".ready-topic").filter({ hasText: unit.title }).click();
+    const lab = page.locator(`[data-forge093="${unit.id}"]`);
+    await expect(lab).toBeVisible();
+    await unit.act(lab);
+    await expect(lab.locator("[data-model-result]")).toContainText(
+      unit.expected,
+    );
+    await expect(page.locator(".save-status")).toContainText(
+      "Bu cihazda kaydedildi",
+    );
+    await page.reload();
+    await expect(lab.locator("[data-model-result]")).toContainText(
+      unit.expected,
+    );
+  }
+
   const mathematics = [
     /Temel kavramlar: sayı, değer/,
     /Tek–çift ve işaret:/,
@@ -474,6 +617,7 @@ try {
       cheatsheets: "PASS",
       detailedGuidesAndOfficialReferences: "PASS",
       sourceNarrativeModelOfflineReload: "PASS",
+      sixNewSourceFamiliesOfflineReload: "PASS",
       orderedPlanAndRestart: "PASS",
       ogmChemistryVisuals: "PASS",
       mathematicsVisualsAndRestart: "PASS",

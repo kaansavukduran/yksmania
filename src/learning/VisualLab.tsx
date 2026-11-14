@@ -1,4 +1,10 @@
 import { narrativeById } from "./narratives";
+import { forge093MathTopics } from "./forge093Math";
+import { forge093PhysicsTopics } from "./forge093Physics";
+import { forge093ChemistryTopics } from "./forge093Chemistry";
+import { forge093BiologyTopics } from "./forge093Biology";
+import { forge093TurkishTopics } from "./forge093Turkish";
+import { forge093HistoryTopics } from "./forge093History";
 import { lazy, Suspense } from "react";
 import { useApp } from "../store";
 const PeriodicReasoning = lazy(() => import("./PeriodicReasoning"));
@@ -7,6 +13,12 @@ const Species = lazy(() => import("./ChemicalSpeciesLab"));
 const Heat = lazy(() => import("./HeatTemperatureLab"));
 const Nucleic = lazy(() => import("./NucleicAcidsLab"));
 const Ionic = lazy(() => import("./IonicWorkshop"));
+const NextMath = lazy(() => import("./Forge093MathLab"));
+const NextPhysics = lazy(() => import("./Forge093PhysicsLab"));
+const NextChemistry = lazy(() => import("./Forge093ChemistryLab"));
+const NextBiology = lazy(() => import("./Forge093BiologyLab"));
+const NextTurkish = lazy(() => import("./Forge093TurkishLab"));
+const NextHistory = lazy(() => import("./Forge093HistoryLab"));
 const Cell = lazy(() => import("./CellExplorer"));
 const Periodic = lazy(() => import("./PeriodicExplorer"));
 const Geometry = lazy(() => import("./GeometryExplorer"));
@@ -28,9 +40,25 @@ const Language = lazy(() => import("./TurkishLanguageExplorer"));
 const Factorization = lazy(() => import("./FactorizationExplorer"));
 export function VisualLab({ id }: { id: string }) {
   const { t } = useApp();
+  const ContinuationLab =
+    id in forge093MathTopics
+      ? NextMath
+      : id in forge093PhysicsTopics
+        ? NextPhysics
+        : id in forge093ChemistryTopics
+          ? NextChemistry
+          : id in forge093BiologyTopics
+            ? NextBiology
+            : id in forge093TurkishTopics
+              ? NextTurkish
+              : id in forge093HistoryTopics
+                ? NextHistory
+                : null;
   return (
     <Suspense fallback={<p role="status">{t("loading")}</p>}>
-      {id === "dunya-gucu-osmanli" ? (
+      {ContinuationLab ? (
+        <ContinuationLab key={id} id={id} />
+      ) : id === "dunya-gucu-osmanli" ? (
         <WorldPower />
       ) : id === "kimyasal-turler-lewis" ? (
         <Species />

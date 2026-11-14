@@ -1,0 +1,200 @@
+.forge093-turkish-lab {
+  min-width: 0;
+  max-width: 100%;
+}
+.forge093-turkish-lab p {
+  line-height: 1.75;
+}
+.forge093-turkish-lab h3 {
+  margin-top: 0;
+}
+.turkish-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1rem 0;
+  min-width: 0;
+}
+.forge093-turkish-lab button {
+  min-width: 0;
+  max-width: 100%;
+  min-height: 44px;
+  padding: 0.65em 0.45em;
+  white-space: normal;
+  line-height: 1.5;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.forge093-turkish-lab button[aria-pressed="true"] {
+  border-color: var(--accent);
+  box-shadow: inset 0 -2px var(--accent);
+}
+.forge093-turkish-lab fieldset {
+  min-width: 0;
+  max-width: 100%;
+  margin: 1.2rem 0;
+  padding: clamp(12px, 2vw, 22px);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.forge093-turkish-lab legend {
+  max-width: 100%;
+  padding-inline: 0.3em;
+  line-height: 1.6;
+}
+.turkish-transform {
+  display: grid;
+  gap: 0.7rem;
+}
+.turkish-transform label,
+.turkish-choices label {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-height: 44px;
+  min-width: 0;
+  padding: 0.5rem 0;
+  line-height: 1.6;
+}
+.forge093-turkish-lab input[type="checkbox"],
+.forge093-turkish-lab input[type="radio"] {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+.turkish-live-sentence {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4em;
+  padding: 1rem 0;
+  font-size: 1.05em;
+  font-weight: 500;
+  min-width: 0;
+  border-block: 1px solid var(--border);
+}
+.turkish-live-sentence > * {
+  max-width: 100%;
+}
+.turkish-live-sentence mark {
+  padding: 0.15em 0.25em;
+  color: var(--text);
+  background: var(--panel);
+  border-bottom: 3px solid var(--accent);
+}
+.forge093-turkish-lab .turkish-target {
+  font: inherit;
+  padding: 0.2em 0.1em;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  background: var(--panel);
+  color: var(--text);
+}
+.turkish-relation {
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+  min-width: 0;
+  border-left: 3px solid var(--accent);
+  padding: 0.6rem 0 0.6rem 0.8rem;
+}
+.turkish-relation > span {
+  color: var(--accent);
+  flex: 0 0 auto;
+}
+.turkish-relation p {
+  margin: 0;
+  min-width: 0;
+}
+.turkish-structure {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+  min-width: 0;
+}
+.turkish-piece {
+  flex: 1 1 10rem;
+  min-width: 0;
+  padding: 0.8rem;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: 8px;
+}
+.turkish-piece span,
+.turkish-piece strong {
+  display: block;
+  line-height: 1.7;
+}
+.turkish-piece span {
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+.turkish-choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.5rem;
+  min-width: 0;
+}
+.turkish-prediction > label {
+  display: block;
+  margin: 0.8rem 0 0.4rem;
+  line-height: 1.7;
+}
+.forge093-turkish-lab textarea {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  font: inherit;
+  color: var(--text);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.65em;
+  resize: vertical;
+}
+.turkish-prediction > button {
+  margin-top: 0.8rem;
+}
+.turkish-result {
+  border-left: 3px solid var(--accent);
+  padding: clamp(12px, 2vw, 22px);
+  background: var(--panel);
+  margin: 1rem 0;
+  min-width: 0;
+}
+.turkish-result p:last-child {
+  margin-bottom: 0;
+}
+.forge093-turkish-lab :is(button, input, textarea):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+@media (max-width: 540px) {
+  .turkish-controls > button {
+    flex: 1 1 6rem;
+  }
+  .turkish-prediction {
+    padding-inline: 10px !important;
+  }
+  .turkish-choices {
+    display: grid;
+  }
+  .turkish-piece {
+    flex-basis: 100%;
+  }
+  .turkish-relation {
+    gap: 0.4rem;
+    padding-left: 0.5rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .forge093-turkish-lab *,
+  .forge093-turkish-lab *::before,
+  .forge093-turkish-lab *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

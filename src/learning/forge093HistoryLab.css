@@ -1,0 +1,183 @@
+.forge093-history-lab {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  line-height: 1.75;
+}
+.forge093-history-lab h3 {
+  margin: 0 0 12px;
+}
+.forge093-history-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 16px;
+  margin: 22px 0;
+  min-width: 0;
+}
+.forge093-history-controls label {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+}
+.forge093-history-controls select {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  white-space: normal;
+}
+.forge093-history-time {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+  flex-wrap: wrap;
+  border-bottom: 2px solid var(--border);
+}
+.forge093-history-time li {
+  min-width: 0;
+  flex: 1 1 70px;
+  padding-bottom: 8px;
+}
+.forge093-history-time button {
+  width: 100%;
+  min-height: 44px;
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+}
+.forge093-history-time .is-selected button {
+  border-color: var(--accent);
+  background: var(--surface-2);
+}
+.forge093-history-diagram {
+  margin: 20px 0;
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+}
+.forge093-history-diagram svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 180px;
+}
+.forge093-history-diagram .history-connection {
+  stroke: var(--border);
+  stroke-width: 4;
+  fill: none;
+}
+.forge093-history-diagram .history-node,
+.forge093-history-diagram .history-hub {
+  stroke: var(--plot-blue);
+  stroke-width: 3;
+  fill: var(--surface-2);
+}
+.forge093-history-diagram .history-node.is-active {
+  stroke: var(--accent);
+  stroke-width: 5;
+}
+.forge093-history-diagram .history-mark {
+  stroke: var(--text);
+  stroke-width: 3;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.forge093-history-relations {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 16px 0 0;
+}
+.forge093-history-relations div {
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.forge093-history-relations .is-active {
+  border-color: var(--accent);
+}
+.forge093-history-relations dt {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.forge093-history-relations dd {
+  margin: 0;
+}
+.forge093-history-evidence {
+  padding: 16px;
+  border-left: 3px solid var(--plot-blue);
+  background: var(--surface-2);
+  margin: 24px 0;
+  border-radius: 0 10px 10px 0;
+}
+.forge093-history-evidence strong,
+.forge093-history-evidence span {
+  display: block;
+}
+.forge093-history-evidence strong {
+  margin-bottom: 8px;
+}
+.forge093-history-choices {
+  padding: 0;
+  border: 0;
+  min-width: 0;
+  margin: 20px 0;
+}
+.forge093-history-choices legend {
+  font-weight: 600;
+  margin-bottom: 12px;
+  padding: 0;
+}
+.forge093-history-choices label {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  min-width: 0;
+  cursor: pointer;
+}
+.forge093-history-choices .is-selected {
+  border-color: var(--accent);
+  background: var(--surface-2);
+}
+.forge093-history-choices input {
+  flex: 0 0 auto;
+  margin-top: 7px;
+  accent-color: var(--accent);
+}
+.forge093-history-lab > .secondary {
+  max-width: 100%;
+  padding: 12px 16px;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.forge093-history-result {
+  margin-top: 24px;
+  border-top: 1px solid var(--border);
+  padding-top: 18px;
+}
+.forge093-history-result p {
+  margin-top: 12px;
+}
+.forge093-history-credit {
+  margin: 24px 0 0;
+}
+@media (max-width: 640px) {
+  .forge093-history-relations {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .forge093-history-diagram {
+    padding: 12px;
+  }
+}

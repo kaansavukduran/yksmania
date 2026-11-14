@@ -1,0 +1,134 @@
+.forge093-chemistry {
+  min-width: 0;
+  max-width: 100%;
+}
+.forge093-chemistry :is(p, label, legend, dd, h2, h3, strong) {
+  overflow-wrap: anywhere;
+}
+.forge093-chemistry :is(select, textarea) {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+}
+.forge093-chemistry select {
+  margin: 8px 0 20px;
+}
+.forge093-chemistry textarea {
+  margin: 8px 0 16px;
+  resize: vertical;
+}
+.forge093-chemistry svg {
+  width: 100%;
+  height: auto;
+  max-height: 460px;
+  display: block;
+  margin: 18px auto;
+}
+.forge093-chemistry svg text {
+  fill: var(--text);
+  font-family: inherit;
+  font-size: 24px;
+}
+.forge093-chemistry .f093c-atom {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.forge093-chemistry .f093c-atom.selected {
+  stroke: var(--accent);
+  stroke-width: 4;
+}
+.forge093-chemistry .f093c-center {
+  fill: var(--surface);
+  stroke: var(--mint);
+  stroke-width: 3;
+}
+.forge093-chemistry .f093c-bond {
+  stroke: var(--muted);
+  stroke-width: 3;
+}
+.forge093-chemistry .f093c-wedge {
+  fill: var(--muted);
+}
+.forge093-chemistry .f093c-cloud {
+  fill: var(--accent);
+  fill-opacity: 0.18;
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+.forge093-chemistry .f093c-bond-dipole {
+  stroke: var(--accent);
+  stroke-width: 3;
+}
+.forge093-chemistry .f093c-net-dipole {
+  stroke: var(--mint);
+  stroke-width: 5;
+}
+.forge093-chemistry .f093c-arrow-tip {
+  fill: var(--accent);
+}
+.forge093-chemistry .f093c-net-tip {
+  fill: var(--mint);
+}
+.f093c-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0;
+  min-width: 0;
+}
+.forge093-chemistry .f093c-actions button,
+.forge093-chemistry .f093c-prediction button {
+  flex: 1 1 180px;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 44px;
+  white-space: normal;
+  padding: 12px;
+}
+.f093c-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+  gap: 16px;
+  margin-block: 20px;
+}
+.f093c-facts dt {
+  color: var(--muted);
+}
+.f093c-facts dd {
+  margin: 6px 0 0;
+  font-weight: 600;
+}
+.f093c-result {
+  min-width: 0;
+  padding: clamp(12px, 2vw, 22px);
+  border-left: 3px solid var(--accent);
+  background: var(--surface);
+  margin-block: 22px;
+}
+.f093c-result p:last-child {
+  margin-bottom: 0;
+}
+.f093c-prediction {
+  min-width: 0;
+  margin: 24px 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: clamp(12px, 2vw, 22px);
+}
+.f093c-prediction legend {
+  max-width: 100%;
+  padding-inline: 5px;
+  font-weight: 600;
+}
+.f093c-feedback {
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid var(--border);
+}
+.forge093-chemistry :is(button, select, textarea):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}

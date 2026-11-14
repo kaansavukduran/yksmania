@@ -1,3 +1,9 @@
+import { forge093MathGuides } from "../forge093Math";
+import { forge093PhysicsGuides } from "../forge093Physics";
+import { forge093ChemistryGuides } from "../forge093Chemistry";
+import { forge093BiologyGuides } from "../forge093Biology";
+import { forge093TurkishGuides } from "../forge093Turkish";
+import { forge093HistoryGuides } from "../forge093History";
 import { worldPowerOttomanGuide } from "../worldPowerOttoman";
 import { chemicalSpeciesGuide } from "../chemicalSpecies";
 import { heatTemperatureGuide } from "../heatTemperature";
@@ -26,6 +32,12 @@ import { shellsGuide } from "./shells";
 import { paragraphGuide } from "./paragraph";
 export const lessonGuides = new Map(
   [
+    ...forge093MathGuides,
+    ...forge093PhysicsGuides,
+    ...forge093ChemistryGuides,
+    ...forge093BiologyGuides,
+    ...forge093TurkishGuides,
+    ...forge093HistoryGuides,
     ...chemistryDepthGuides,
     ...periodicDepthGuides,
     worldPowerOttomanGuide,

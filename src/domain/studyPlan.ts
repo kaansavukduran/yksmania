@@ -1,3 +1,9 @@
+import { forge093MathTopics } from "../learning/forge093Math";
+import { forge093PhysicsTopics } from "../learning/forge093Physics";
+import { forge093ChemistryTopics } from "../learning/forge093Chemistry";
+import { forge093BiologyTopics } from "../learning/forge093Biology";
+import { forge093TurkishTopics } from "../learning/forge093Turkish";
+import { forge093HistoryTopics } from "../learning/forge093History";
 import { periodicDepthTopics } from "../learning/periodicDepth";
 import { narrativeTopics } from "../learning/narratives";
 import details from "../data/detail-topics.json";
@@ -22,6 +28,12 @@ export const studyTopicById = (id: string) =>
   studyTopics.find((t) => t.id === id);
 // Only reviewed one-to-one subject/topic associations; no fuzzy learning credit.
 export const lessonTopic: Record<string, string> = {
+  ...forge093MathTopics,
+  ...forge093PhysicsTopics,
+  ...forge093ChemistryTopics,
+  ...forge093BiologyTopics,
+  ...forge093TurkishTopics,
+  ...forge093HistoryTopics,
   ...narrativeTopics,
   ...periodicDepthTopics,
   "dunya-gucu-osmanli": "detail-236",

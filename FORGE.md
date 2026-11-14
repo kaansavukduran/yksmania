@@ -1,3 +1,72 @@
+# 0.10.0: 20 kapsamlı ünite, yayın kabulünde
+
+Yetkili proje /workspace/yksmania, dal forge/twenty-units; başlangıç
+f3b06134061d7937c3e38e8c9530b0d4b4944284. Yeni sürüm0.10.0/code18.
+Canlı/paket durumları uzak kabul tamamlandığında bu bölümün başına eklenecek.
+
+Kullanıcının istediği20 ünitenin tamamı, doğrulanmış sıranın59–78 başlıkları:
+5 matematik,5 fizik,2 kimya,2 biyoloji,3 Türkçe,3 tarih.189 ayrıntılı bölüm,
+91 çözümlü örnek,92 recall ve200 özgün5seçenekli soru eklendi. Önceki300
+sorunun tamJSON kimlik/metin/pasaj/şık/ipucu/açıklama/anahtar eşitliği PASS.
+Toplam86 anlatım/58 rehber/88 kağıt/500 soru; ilk78/479 hazır. Akım kağıdının
+önceden incelenmiş örnekleri yeni dersle birleştirildi; bu yüzden20 ders,
+19 yeni kağıt sayımı vardır. TYT karma105/AYT karma25 ve11 branş seti;
+120/80 tam dağılım veya bütün arşiv tamamlandı iddiası yok. Sıradaki79:
+Sayı Problemleri/detail-210. Özel komutlar etkinleştirilmedi, Türkçe ve mevcut
+Windows/Linux/Android/web kapsamı ve onaylı ikonlar/Aion32kare korunur.
+Canlı AIONIA standardı tekrar okundu:v1.7. Kaynak sınırları SOURCE_REVIEW'dedir.
+
+Yeni200 anahtar ve91 örnek bağımsız ikinci incelemeden geçti. Yayımdan önce
+kanıtlanan ve onarılan bulgular:
+
+| Kimlik | Önem | Belirti ve onarım |
+| --- | --- | --- |
+| YKS-032 | Orta | Sevgi/Umut kişi adı-duygu belirsizliği; açık duygusal bağlam ve regresyon |
+| YKS-033 | Orta | Matematik topic eşlemesi ters; ilk entegrasyon Mutlak Değer0ders FAIL, doğru lesson→topic ile10/10 ilgili kabul PASS |
+| YKS-034 | Orta | Parantezsiz−2⁰ sayısal−1/SVG+1 çelişkisi; çizim ve açıklama−1 ile tutarlı |
+| YKS-035 | Orta | r0 açık sınır merkez noktasıyla dolu görünüyordu; işaretler ayrıldı, gerçek açık uç kontrolü |
+| YKS-036 | Orta | Elektroskop sorusunda ikinci belirsiz seçenek; kökte açık nötr başlangıçla çeldirici ayrıldı |
+| YKS-037 | Orta | Protein kapalıyken aktif pompa SVG'de vardı; gerçek protein/ATP koşulları ayrıldı |
+| YKS-038 | Orta | Dipol ok başı atomla örtülüyordu;33uç geometrisi ve gerçek H₂O/NH₃/HF görüntüleriyle açıklık doğrulandı |
+| YKS-039 | Düşük | Metin boşluğu düzenlemesi CSS class'ı bölmüştü; yalnız class düzeltildi, API/state kimlikleri korundu |
+| YKS-040 | Orta | Molecular SVGmarker ve select aynı ID; gerçekDOM label.control=null. Kontrol '-bond-choice' ile ayrıldı, AT/uniqueID regresyonu eklendi |
+| YKS-041 | Düşük | Türkçe ilişki ikonunda↳ tofu; mevcut lucide vektörüyle iki dekoratif ikon onarıldı |
+| YKS-042 | Düşük | Orantı12 tick ve x ekseni birleşiyordu; tick sağ uca hizalandı, gerçekBBox boşluk kabulü eklendi |
+
+Yerel check/build ve192/192 unit PASS. İlk yeni41 browser35PASS/6FAIL:
+üç Türkçe testinin SVG varsayımı erişilebilir HTML parça diyagramına düzeltildi;
+sıfatın dönüşüm sırası gerçek Ada bağla→Fiile bağla akışına uyarlandı;
+r0'da iki eş uç yerine bir ayrı açık uç beklendi. Açık uç/merkez ayrımı,
+gerçek görselDOMdeğişimi, sonuç, offline ve noXP koşulları gevşetilmedi.
+Son tam142/142 browser PASS (9,7dk). Bu koşudan sonra yalnız YKS040/041/042
+UI yamaları eklendi; son derlemede check/build,192 unit ve41/41 etkilenen
+browser tekrar kabulü PASS(2,8dk). Label binding/benzersizID,vectorikon ve
+BBoxayrımı yeni koşulları da geçti. Son frozen source yerel kabuldedir.
+
+Geliştirme Electron offline/yeniden başlatma/not/soru/deneme/timer/reset ve
+altı yeni ders ailesinin gerçek menüden ilk offline açılışı+model değişimi+
+reload PASS, renderer0. İlk deneme eksik Electron runtime fetch başarısızdı;
+pinned45.3.2 paket checksums değeriyle eşleşen mevcut cache kullanıldı.
+Bu geliştirme kabulü paketli Windows/Linux veya fiziksel cihaz yerine sayılmaz.
+
+Manuel ilk66 durum+son45 ek durum; belge/lab/kontrol geometrisi ve renderer0.
+Yeni alan keşifleri session/review/topicProgress değiştirmedi. Kimya12ekdurum
+ve30viewport görseliyle negatif yön okları/δ etiketleri gerçekten incelendi.
+YKS040/041/042 son4model/16durum görsel ve gerçek labeltap kontrolü PASS;
+oran12/x etiket aralığı320px büyük yazıda9,74CSSpx. Toplam127 manuel ölçüm
+ve bağımsız12 kimya durumu,0renderer/taşma. Kök tüm72distdosyasının manuel
+veSWkopyalarında byte eşitliğini ayrıca doğruladı.
+Gerçek0.9.2→0.10 yerel webSW geçişi PASS; son UI yamalı kopyayla aynı tam
+state/legacy870bayt/checkedtaslak/noXP kabulü tekrar PASS: tam eski snapshot
+eşit, üç yeni model ilk offline açılış/reload,XP25→25,renderer0. İlk başarılı
+kopyanın kanıtları da korundu. Son geliştimeElectron6aile/offline/reload
+ve eski deneme/timer/reset kabulü tekrar PASS; renderer0.
+
+Fiziksel Android, temiz kurulum/portable taşıma ve iki native sürümle
+veri koruyan yükseltme NOT TESTED. Chromium emülasyonu fiziksel cihaz değildir.
+
+---
+
 # 0.9.2 yayımlandı — altı kaynaklı etkileşimli atölye
 
 Uygulama kaynağı `9825e32960a712c81dcb6861c7386189d7a8d2ae` main'e gönderildi.

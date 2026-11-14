@@ -1,0 +1,277 @@
+.f093-biology-lab {
+  min-width: 0;
+  margin-block: 24px;
+  padding: clamp(8px, 1.5vw, 20px);
+  border-block: 1px solid var(--border);
+  background: var(--surface-2);
+  overflow-wrap: anywhere;
+}
+.f093-biology-lab h3 {
+  margin-top: 0;
+}
+.f093-biology-lab label {
+  display: block;
+  min-width: 0;
+  line-height: 1.65;
+}
+.f093-biology-lab select,
+.f093-biology-lab textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  margin-block: 8px 16px;
+}
+.f093-biology-lab input[type="range"] {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  margin: 8px 0;
+}
+.f093-biology-lab button {
+  max-width: 100%;
+  min-width: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.f093-biology-lab .secondary {
+  padding-inline: clamp(10px, 2vw, 20px);
+}
+.f093-bio-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-block: 20px;
+}
+.f093-bio-tabs button {
+  flex: 1 1 180px;
+}
+.f093-bio-tabs button[aria-pressed="true"] {
+  border-color: var(--accent);
+  box-shadow: inset 0 -2px var(--accent);
+}
+.f093-bio-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+  gap: 20px;
+  margin-block: 20px;
+}
+.f093-bio-range output {
+  font-weight: 650;
+}
+.f093-bio-checks {
+  display: grid;
+  gap: 12px;
+  margin-block: 20px;
+}
+.f093-biology-lab .f093-bio-check,
+.f093-bio-checks label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+}
+.f093-bio-check input,
+.f093-bio-checks input {
+  flex: 0 0 auto;
+  margin: 0;
+}
+.f093-bio-drawing {
+  display: block;
+  width: 100%;
+  max-width: 680px;
+  height: auto;
+  margin: 20px auto;
+}
+.f093-bio-drawing text {
+  fill: var(--text);
+  font-family: inherit;
+  font-size: 16px;
+}
+.f093-bio-drawing .f093-bio-svg-note {
+  font-size: 13px;
+}
+.f093-bio-compartment {
+  fill: var(--surface);
+  stroke: var(--border);
+}
+.f093-bio-lipid {
+  fill: var(--mint);
+  stroke: var(--text);
+}
+.f093-bio-line {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.f093-bio-channel {
+  fill: var(--plot-blue);
+  fill-opacity: 0.45;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.f093-bio-net-arrow {
+  stroke: var(--text);
+  stroke-width: 3;
+  fill: none;
+}
+.f093-bio-solute {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.f093-bio-drawing .f093-bio-solute-label {
+  fill: var(--accent-text);
+  font-size: 14px;
+  font-weight: 650;
+}
+.f093-bio-micro-arrow {
+  stroke: var(--muted);
+  fill: none;
+  stroke-width: 2;
+}
+.f093-bio-travel {
+  animation: f093-bio-passage 2.4s linear infinite;
+}
+.f093-bio-travel.out {
+  animation-direction: reverse;
+}
+@keyframes f093-bio-passage {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(270px);
+  }
+}
+.f093-bio-wall {
+  fill: none;
+  stroke: var(--mint);
+  stroke-width: 8;
+}
+.f093-bio-cell {
+  fill: var(--plot-blue);
+  fill-opacity: 0.25;
+  stroke: var(--text);
+  stroke-width: 3;
+}
+.f093-bio-nucleus {
+  fill: var(--accent);
+  fill-opacity: 0.5;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.f093-bio-result,
+.f093-bio-feedback {
+  margin-block: 20px;
+  padding: clamp(10px, 1.5vw, 20px);
+  border-left: 3px solid var(--accent);
+  background: var(--surface);
+}
+.f093-bio-result p:last-child,
+.f093-bio-feedback p:last-child {
+  margin-bottom: 0;
+}
+.f093-bio-result dl {
+  display: grid;
+  gap: 12px;
+}
+.f093-bio-result dt {
+  color: var(--muted);
+}
+.f093-bio-result dd {
+  margin: 0;
+  font-weight: 650;
+}
+.f093-bio-prediction {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  min-width: 0;
+}
+.f093-bio-tree-lines path {
+  stroke: var(--mint);
+  fill: none;
+  stroke-width: 3;
+}
+.f093-bio-tree-node {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.f093-bio-tree-leaf {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.f093-bio-traits {
+  padding-left: 1.2em;
+  line-height: 1.8;
+}
+.f093-bio-sequences {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 140px), 1fr));
+  gap: 12px;
+}
+.f093-bio-sequences > div {
+  min-width: 0;
+}
+.f093-bio-sequences dd {
+  margin: 0;
+  font-family: ui-monospace, monospace;
+  letter-spacing: 0.08em;
+  overflow-wrap: anywhere;
+}
+.f093-bio-ranks {
+  padding: 0;
+  list-style: none;
+}
+.f093-bio-ranks li {
+  display: grid;
+  grid-template-columns: minmax(0, 0.7fr) repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.f093-bio-ranks li.shared {
+  border-left: 3px solid var(--mint);
+  background: var(--surface);
+}
+.f093-bio-bone {
+  fill: none;
+  stroke-linecap: round;
+  stroke-width: 11;
+}
+.f093-bio-bone.upper {
+  stroke: var(--accent);
+}
+.f093-bio-bone.lower {
+  stroke: var(--plot-blue);
+}
+.f093-bio-bone.tip {
+  stroke: var(--mint);
+  stroke-width: 6;
+}
+.f093-bio-insect-wing {
+  fill: var(--mint);
+  fill-opacity: 0.35;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+@media (max-width: 600px) {
+  .f093-bio-ranks li {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .f093-bio-controls {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .f093-bio-travel {
+    animation: none;
+  }
+}
+:root[data-motion="off"] .f093-bio-travel {
+  animation: none;
+}

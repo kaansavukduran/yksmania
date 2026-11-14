@@ -1,11 +1,11 @@
 # YKSMania
 
-Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.9.2 alpha**.
+Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.10.0 alpha adayı**.
 
 [Uygulamayı aç](https://yksmania.vercel.app) · [Windows/Linux/Android paketleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.9.2-alpha.1)
 
-**Yayın durumu:** 0.9.2 Vercel’de ve Windows/Linux/Android paketlerinde yayında.
-126 birim, temiz CI ve canlı sitede ayrı ayrı 101 tarayıcı testi geçti.
+**Yayın durumu:** 0.10.0 yerel kabulde; canlı ve indirilebilir son sürüm 0.9.2.
+Yeni adayda 192 birim testi geçti; bütünleşik tarayıcı ve paket kontrolleri sürüyor.
 Paket ve canlı dağıtım kanıtları [FORGE](FORGE.md)’de.
 
 Ders materyali yüklemek gerekmez. **Konu Anlatımı → Kopya Kağıtları → Sorular →
@@ -15,14 +15,15 @@ arayüzleri kaldırıldı; daha önce saklanmış kişisel dosyalar/veriler sili
 
 ## İçerik ve öğrenme
 
-0.9.2: Dünya Gücü Osmanlı, kimyasal türler/Lewis, ısı ve sıcaklık,
-DNA/RNA, iyonik bağ ve iyonik adlandırmada altı kapsamlı rehber. Beş yeni ders,
-mevcut nükleik asitler anlatımında genişletme; 62 anlatım bölümü, 31 çözümlü örnek,
-29 hatırlama ve 60 özgün soru. Etkileşimli zaman çizelgesi, enerji alışverişi,
-elektron ve baz eşleşmeleri ile yük/formül atölyeleri çevrimdışı kaydedilir.
+0.10.0 adayı, kaynak sırasındaki 59–78. başlıkları işler: 5 matematik, 5 fizik,
+2 kimya, 2 biyoloji, 3 Türkçe ve 3 tarih ünitesi. 20 ayrı ayrıntılı rehberde
+189 anlatım bölümü, 91 çözümlü örnek, 92 hatırlama çalışması ve 200 yeni özgün
+soru var. Sayı doğruları, devreler, genleşme ve enerji grafikleri, molekül
+geometrisi/dipoller, zar taşınmaları, akrabalık ağacı, cümle dönüşümleri ve
+tarihsel kanıt modelleri seçimlerini çevrimdışı korur.
 
-66 anlatım, bunların 38’inde ayrıntılı rehber; 69 yerleşik kopya kağıdı ve
-300 özgün soru. Kaynak sırasının ilk 58/479 başlığında anlatım hazırdır.
+86 anlatım, bunların 58’inde ayrıntılı rehber; 88 yerleşik kopya kağıdı ve
+500 özgün soru. Kaynak sırasının ilk 78/479 başlığında anlatım hazırdır.
 341 ana konu ile 479 ayrıntılı başlık farklı düzeylerdir. Bütün MEB/OGM/Drive
 arşivinin dönüşümü tamamlanmış değildir; hazırlanmamış başlıklar hazır gösterilmez
 ve kullanıcıdan eksik materyal sağlaması istenmez.
@@ -33,15 +34,15 @@ ve medeniyet anlatımları; sözcük parçalama, cebir parçaları ve tarihsel k
 atölyeleri vardır. Rehberlerde **Adım adım çalış / Tüm anlatım** seçilebilir.
 Kaynakların gerçekten okunan sayfa sınırları [SOURCE_REVIEW](docs/SOURCE_REVIEW.md)’de.
 
-Sorular kendi metin/verileriyle çözülebilir. Önceki 240 sorunun kimlikleri ve
-cevapları korunur; yeni 60 soru eklenir. Doğru/yanlış, ipucu ve gerekçeli çözüm
+Sorular kendi metin/verileriyle çözülebilir. Önceki 300 sorunun kimlikleri,
+metinleri, seçenekleri ve açıklamaları korunur; 200 yeni soru eklenir. Doğru/yanlış, ipucu ve gerekçeli çözüm
 ayrıdır. Sekiz doğrulanmış ÖSYM bağlantısı, uygulamada bağımsız öğretim örneği ve
 özgün çözümle desteklenir; bu örnekler resmî soruların birebir aktarımı değildir.
 Son 20 yıllık arşivin tamamı taranmış veya soru bankasına çevrilmiş değildir.
 
 ## Denemeler
 
-TYT karma 90 soru, AYT Sayısal karma 25 soru ve 11 hazır branş çalışması.
+TYT karma 105 soru, AYT Sayısal karma 25 soru ve 11 hazır branş çalışması.
 Bunlar şu aşamada **kısa pratik** setleridir; 120/80 soruluk tam dağılımlı deneme
 diye sunulmaz. Eksik branş kapsamı kartlarda belirtilir. Süre soru sayısına göre
 TYT 120 soru/165 dk, AYT 80 soru/180 dk oranından hesaplanır. Kayıtlı mutlak son zaman,
