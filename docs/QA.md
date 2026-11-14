@@ -1,3 +1,14 @@
+# 0.9.1 yerel kabul
+
+Başlangıç cfe0db0 + çalışma diff’i: check/build,96/96 unit,89/89 browser PASS
+(5,5dk). Dört yeni kaynaklı dersin normal giriş/gerekçe/gerçek SVG değişimi,
+offline kalıcılık ve320px UI200/text150/reduced-motion/axe iki yeni kabulü PASS.
+390/1440px gerçek görseller incelendi. Eski paragraf/TODAY/tekrar/timer/reset ve
+sınav regressions PASS. Bağımlılıklar eski kayıtlarla birebir aynı; kilitte yalnız
+iki kök sürüm alanı0.9.1 oldu. Yeni sorular5seçenekli, kendi kökleriyle çözülür;
+kimya branş havuzuna katılır. Öğrenci kaydı/XP keşif ile değiştirilmez.
+Kaynak sınırları SOURCE_REVIEW; dağıtım/paket sonucu FORGE başına eklenecek.
+
 # Quality evidence
 
 ## 0.9.0 paket kabulü / canlı dağıtım

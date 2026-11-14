@@ -61,8 +61,8 @@ it("publishes reviewed interactive theory separately from the question bank and 
     completionDate(s, narrativePacks[0].topicId, "questions"),
   ).toBeUndefined();
 });
-it("keeps an authored lesson at every one of the first 45 verified workbook headings", () => {
-  for (const topic of studyTopics.slice(0, 45))
+it("keeps an authored lesson at every one of the first 50 verified workbook headings", () => {
+  for (const topic of studyTopics.slice(0, 50))
     expect(
       topicLessons(topic.id).length,
       `${topic.order}: ${topic.title}`,

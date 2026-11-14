@@ -1,5 +1,24 @@
 # Kaynak ve model kontrolü
 
+## 0.9.1 — sınıflandırma ve periyodik özellikler
+
+Drive’daki MEBİ TYT Kimya Konu Özetleri metninin basılı30–34 bölümü canlı
+bağlayıcıdan okundu; PDF sayfa indeksi ayrıca doğrulanmadı. Aurelia Kimya010,
+011,012,013 dosyalarının karşılaştırma/istisna/karar bölümleri s.2–3 yerel
+PDF’den okundu. Dört özgün ders,24 açıklama bölümü,12 çözümlü örnek,12 hatırlama
+ve20 beş seçenekli özgün soru üretildi; resmî soru aktarımı değildir.
+
+Sınırlar: H metal değildir; Hg sıvı metal, grafit iletken ametal allotropudur.
+Yarı metal sınır listesi MEBİ bağlamında verilir, Og’a oda koşulu gaz özelliği
+yüklenmez. Atom bulutu keskin sınır değildir; çap karşılaştırması model türüne
+bağlıdır. Eş elektronluda proton farkı, İE’de2A/3A ve5A/6A istisnaları korunur.
+Sıçrama için sabit3,5 katsayısı evrensel yasa yapılmaz. Elektron ilgisinin
+enerji işareti ve EN’nin birimsiz bağ içi ölçeği ayrılır; Cl/F ayrımı belirtilir.
+SVG yarıçapları yalnız nitel, İE sütunları seçili örnekte doğrusal/etiketlidir;
+büyük yazı için veriler ayrıca normal HTML metninde bulunur. Özel PDF/Drive
+kimlikleri veya kaynak dosyalar uygulamaya/depo içine alınmadı.
+
+
 ## 0.9.0 — kaynaklardan yerleşik ve ayrıntılı öğretim
 
 Kullanıcının son kararı: öğrenci PDF/katalog yüklemez. Kaynakların kendisi ve

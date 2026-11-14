@@ -1,7 +1,7 @@
 {
-  "version": "0.9.0",
+  "version": "0.9.1",
   "channel": "alpha",
   "notes": {
-    "tr": "PDF ve kaynak yükleme ekranları kaldırıldı. Kopya Kağıtları ayrı bölümde: 60 hazır kağıt. 57 anlatım, 28 ayrıntılı rehber, 220 özgün soru. Adım adım öğrenme, etkileşimli Türkçe/cebir/tarih; TYT ve AYT karma, 11 branş denemesi, orantılı süre ve açıklamalı sonuçlar."
+    "tr": "Dört yeni ayrıntılı TYT Kimya dersi: elementlerin sınıflandırılması, atom çapı, iyonlaşma enerjisi ve elektron ilgisi/elektronegatiflik. Etkileşimli karşılaştırmalar, 12 çözümlü örnek ve 20 yeni özgün soru. Toplam 61 anlatım, 32 rehber, 64 kopya kağıdı, 240 soru; çalışma sırasının ilk 50 başlığı hazır."
   }
 }

@@ -1,13 +1,13 @@
-# Content coverage,0.9.0 alpha
+# Content coverage,0.9.1 alpha
 
 Current decision: all prepared educational content is built in. No learner PDF,
 source catalogue or booklet import. Separate Theory/Cheatsheets/Questions/Exams.
-57 theory lessons,28 detailed guides,60 native sheets,220 original questions;
-first45/479 ordered headings ready. One additional question-only factorization
+61 theory lessons,32 detailed guides,64 native sheets,240 original questions;
+first50/479 ordered headings ready. One additional question-only factorization
 pack does not count as extra theory.120/80full-distribution mocks and entire
 MEB/OGM/private archive conversion are not complete. Current practice is90TYT,
 25numericalAYT and11branches, scaled165/120 or180/80minutes perquestion.
-All115 legacyquestionIDs/answers are retained;105 original items added.
+All115 legacyquestionIDs/answers are retained;125 original items added.
 Eight verified official references have eight original native teaching variants;
 no new official question body or twenty-year completeness claim is made.
 Prior imported files remain in storage but source UI is removed. Personal progress
@@ -21,9 +21,9 @@ These are different measurements. None measures a learner's mastery.
 | --- | --- |
 | Main topic reference | 341 source rows: TYT 201, numerical AYT 140; stable topic IDs retained |
 | Detailed cheat-sheet outline | 479 headings; finer granularity and overlap with the main outline |
-| Interactive teaching | 57 lessons with authored interactions; 28 detailed guides; first 45 ordered headings have theory |
-| Native revision sheets | 60 built-in sheets, separate from theory; no material import |
-| Interactive question bank | 220 original Turkish exercises; 115 legacy IDs and answers preserved; no official-item claim |
+| Interactive teaching | 61 lessons with authored interactions; 32 detailed guides; first 50 ordered headings have theory |
+| Native revision sheets | 64 built-in sheets, separate from theory; no material import |
+| Interactive question bank | 240 original Turkish exercises; 115 legacy IDs and answers preserved; no official-item claim |
 | Timed practice | 2 mixed sets and 11 branches; TYT 90 / numerical AYT 25 questions; proportionate times, incomplete official distribution |
 | Private archive inventory | 8,584 PDF file records in 246 folders; about 23.6 GB, before content-hash deduplication |
 | Locally prepared private packs | 143 PDFs / 4,989 pages: 126 cheat sheets, 14 MEBİ-named PDFs and 3 OGM past-question books |

@@ -1,3 +1,4 @@
+import { periodicDepthLessons } from "../learning/periodicDepth";
 import { lessonGuides } from "../learning/guides";
 import { turkishLanguageLessons } from "../learning/turkishLanguageLessons";
 import { factorizationLesson } from "../learning/factorizationLesson";
@@ -816,6 +817,7 @@ const baseLessons: Lesson[] = [
   ...mathLessons,
   ...algebraLessons,
   ...sourceExpansionLessons,
+  ...periodicDepthLessons,
   factorizationLesson,
   ...sourceNarratives,
 ];

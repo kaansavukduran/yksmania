@@ -1,32 +1,16 @@
-YKSMania 0.9.0 alpha
+YKSMania 0.9.1 alpha
 
-Bu sayfa 0.9.0 indirilebilir paketlerini sunar. Canlı site de0.9.0:
-https://yksmania.vercel.app — dağıtım READY ve kabul edilen derlemeyle eşleşir.
-Paket kaynağı b92b2b52be5f5a08b9238b565f73b6998481b65a.
-CI43611757852:94 birim,87 tarayıcı ve Windows/Linux/Android işleri PASS.
-Canlı HTTPS kabulü43613106471:87/87 PASS (5,0dk).
-Yerel gerçek0.8→0.9 web güncellemesi taslak/not/ayar/dosya baytlarını korudu;
-bu sonuç üretim veya native paket yükseltme testi değildir.
+Dört yeni ayrıntılı TYT Kimya dersi: elementlerin sınıflandırılması, atom çapı,
+iyonlaşma enerjisi, elektron ilgisi/elektronegatiflik ve metalik karakter.
+24 açıklama bölümü,12 adım adım çözümlü örnek,12 hatırlama ve20 özgün soru.
+Etkileşimli karşılaştırmalar ve kimya branş soruları zenginleşti. Logolar korundu.
 
-Ders materyali yükleme adımı kaldırıldı. Konu Anlatımı, Kopya Kağıtları,
-Sorular ve yeni Sınavlar ayrı bölümlerdir. Bütün hazır öğretim metinleri,
-özetler, modeller ve sorular doğrudan uygulamada, çevrimdışı çalışır.
-Önceki kişisel dosyalar ve öğrenme kayıtları bu geçişte silinmez.
+Toplam61 anlatım,32 rehber,64 yerleşik kağıt ve240 özgün soru. Çalışma sırasının
+ilk50/479 başlığı hazır; bütün arşiv tamamlanmış değildir. Karma setler hâlâ
+90TYT/25AYT çalışmasıdır; tam resmî dağılım olarak sunulmaz. Önceki deneme
+snapshot’ları, öğrenme kayıtları ve notlar korunur. Materyal yüklemek gerekmez.
 
-57 anlatım /28 ayrıntılı rehber /60 yerleşik kağıt /220 özgün soru.
-İlk45/479 kaynak sırası başlığında anlatım vardır; bütün arşiv henüz hazır değil.
-Ses bilgisi/yapı, çarpanlara ayırma, geometri, Newton, elektrik alan, mol,
-denge, türev, DNA ve ATP rehberleri derinleştirildi. Üç Osmanlı anlatımı ve
-kanıt atölyeleri eklendi. Önceki115 soru/cevap korunarak105 yeni soru eklenir.
-
-TYT90 soruluk ve AYT Sayısal25 soruluk karma pratik,11 hazır branş çalışması.
-Tam120/80 soruluk resmî dağılım diye sunulmaz. Süreler165/120 ve180/80dk/soru
-oranıyla hesaplanır; deneme taslağı, gerçek son zaman ve sonuçlar korunur.
-Doğru/yanlış/boş/net ve bütün özgün çözümler aynı uygulamada görülebilir.
-
-Kişisel ilerleme yedeği/geri yükleme Ayarlar’dadır; ders dosyası hazırlamak
-gerekmez. Kum saati, tekrarlar, Today sonuçları ve büyük yazı tercihleri korunur.
-Kaynak okuma sınırları SOURCE_REVIEW.md; test/paket/canlı sonuçları FORGE.md’dedir.
+Canlı site https://yksmania.vercel.app — güncel dağıtım/test/paket kanıtı FORGE.md.
 
 Assets bölümünden cihazına uygun dosyayı seç:
 Windows Setup.exe kurulum, Portable.exe doğrudan çalıştırma içindir. İkisi de x64

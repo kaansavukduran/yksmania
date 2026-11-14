@@ -1,6 +1,7 @@
 import { narrativeById } from "./narratives";
 import { lazy, Suspense } from "react";
 import { useApp } from "../store";
+const PeriodicReasoning = lazy(() => import("./PeriodicReasoning"));
 const Cell = lazy(() => import("./CellExplorer"));
 const Periodic = lazy(() => import("./PeriodicExplorer"));
 const Geometry = lazy(() => import("./GeometryExplorer"));
@@ -24,7 +25,14 @@ export function VisualLab({ id }: { id: string }) {
   const { t } = useApp();
   return (
     <Suspense fallback={<p role="status">{t("loading")}</p>}>
-      {id === "ses-bilgisi" || id === "sozcukte-yapi" ? (
+      {[
+        "elementlerin-siniflandirilmasi",
+        "atom-capi-karsilastirma",
+        "iyonlasma-enerjisi",
+        "elektron-ilgisi-elektronegatiflik",
+      ].includes(id) ? (
+        <PeriodicReasoning key={id} id={id} />
+      ) : id === "ses-bilgisi" || id === "sozcukte-yapi" ? (
         <Language structure={id === "sozcukte-yapi"} />
       ) : id === "carpanlara-ayirma" ? (
         <Factorization />

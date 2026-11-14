@@ -1,3 +1,26 @@
+# 0.9.1 — dört periyodik kimya konusu
+
+Başlangıç cfe0db0da56ee343db4da1a4c408ff7fb8ab9199. Son kullanıcı düzeltmesiyle
+ikonlar aynen korundu; k44/Aionlaştır/aionia komutları bu tur etkinleştirilmedi.
+MEBİ TYT Kimya basılı30–34 canlı metni ve Aurelia010–013 kağıtları s.2–3 okundu.
+Sınıflandırma, atom çapı, İE, Eİ/EN/metalik karakter:4 ders,24 açıklama bölümü,
+12 çözümlü örnek,12 recall,20 özgün soru;4 yerleşik kağıt otomatik türedi.
+Toplam61/32/64/240; ilk50/479 kaynak başlığı hazır. Kimya branş seti yeni konuları
+sırayla örnekler; önceki kayıtlı sınavların snapshot’ları değiştirilmez. Dört
+model13 durumu kanıt/süreç/bağıl yarıçap/enerji sütunlarıyla gösterir. Keşifler
+ayrı kayıtlıdır, XP veya tamamlanma oluşturmaz. Tüm arşiv tamamlandı iddiası yok.
+
+Check/build ve96 birim PASS. Yeni iki browser testi PASS:4 dersin normal giriş,
+model değişimi/gerekçe, offline reload kalıcılığı;320px UI200/text150/reduced
+motion/klavye ve ciddi/kritik axe. Gerçek390/1440 görüntüleri incelendi;96 unit
+ve ilk50 başlık sürekliliği PASS. Tam89/89 browser PASS (5,5dk). Yerel kanıt dizini:
+/workspace/work/forge-periodic. Paket/canlı sonuçları tamamlanınca eklenecek.
+
+Sürüm npm version ile güncellendi; bağımlılık kilidinde yalnız iki kök sürüm
+alanı değişti. Özel kaynak kimliği/PDF/indirilen içerik depoya eklenmedi.
+
+---
+
 # 0.9.0 — Vercel ve indirilebilir paketler yayımlandı
 
 [Canlı43613106471](https://github.com/kaansavukduran/yksmania/actions/runs/43613106471)

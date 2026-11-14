@@ -1,3 +1,4 @@
+import { periodicDepthGuides } from "../periodicDepth";
 import { chemistryDepthGuides } from "./chemistryDepth";
 import { newtonGuide, electricFieldGuide } from "./physicsDepth";
 import { dnaDepthGuide, atpDepthGuide } from "./biologyDepth";
@@ -21,6 +22,7 @@ import { paragraphGuide } from "./paragraph";
 export const lessonGuides = new Map(
   [
     ...chemistryDepthGuides,
+    ...periodicDepthGuides,
     newtonGuide,
     electricFieldGuide,
     dnaDepthGuide,

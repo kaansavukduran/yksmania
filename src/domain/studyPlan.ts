@@ -1,3 +1,4 @@
+import { periodicDepthTopics } from "../learning/periodicDepth";
 import { narrativeTopics } from "../learning/narratives";
 import details from "../data/detail-topics.json";
 import order from "../data/study-order.json";
@@ -22,6 +23,7 @@ export const studyTopicById = (id: string) =>
 // Only reviewed one-to-one subject/topic associations; no fuzzy learning credit.
 export const lessonTopic: Record<string, string> = {
   ...narrativeTopics,
+  ...periodicDepthTopics,
   "rasyonel-sayilar": "detail-202",
   "carpanlara-ayirma": "detail-221",
   "atp-metabolizma": "detail-283",

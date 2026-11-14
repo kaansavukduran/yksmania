@@ -1,0 +1,38 @@
+.periodic-comparison select {
+  width: 100%;
+  max-width: 100%;
+  margin: 8px 0 20px;
+}
+.periodic-comparison svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 720px;
+  margin: 16px auto;
+}
+.periodic-comparison circle {
+  transition: r 0.25s ease;
+}
+.periodic-evidence {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+  margin: 24px 0;
+}
+.periodic-evidence li {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  overflow-wrap: anywhere;
+  text-align: center;
+}
+@media (prefers-reduced-motion: reduce) {
+  .periodic-comparison circle {
+    transition: none;
+  }
+}
+html[data-motion="off"] .periodic-comparison circle {
+  transition: none;
+}
