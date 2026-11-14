@@ -31,8 +31,31 @@ kaydı test edildi. Linux Electron günlük konu + soru sonucu ve süreç restar
 renderer hataları 0. Tam tarayıcı koşusu 48/48 PASS (2,8 dk).
 1440×1000 koyu/açık ve 390×844 koyu/açık günlük kartları görsel incelendi;
 320px büyük yazıda gerçek kontroller/taşma ölçümü PASS, renderer hataları 0.
-Uzak paket ve yayın sonuçları aşağıya eklenir.
+Uzak paket ve yayın sonuçları aşağıdadır.
 Sürüm 0.5.1 / Android versionCode 9. Önceki fiziksel cihaz/imza/update kapıları açık.
+
+## 0.5.1 dağıtım ve paket takibi
+
+Uygulama/test kaynağı: `776f62c1603d9af7b37dbdf5fdbbee6c49f569d7`.
+Vercel normal Git dağıtımı `dpl_2a1omXD7s6HJosPdx6LzBZiirp2r` üretimde READY;
+kanonik https://yksmania.vercel.app/version.json 0.5.1 döndürür. Canlı kabul
+[43569397941](https://github.com/kaansavukduran/yksmania/actions/runs/43569397941)
+48/48 PASS (3,8 dk). Test ve üretim uygulama kaynağı aynı 776f62c. [Paket CI 43569363475](https://github.com/kaansavukduran/yksmania/actions/runs/43569363475)
+dört işte PASS: check/build, 41 birim testi, 48 tarayıcı senaryosu (2,0 dk);
+Windows/Linux paketlerinde günlük tamamlanma ve son soru sonucu, offline/reload/
+process restart PASS, renderer hataları 0. Android debug APK imza/manifest PASS.
+[Yayın 43570014722](https://github.com/kaansavukduran/yksmania/actions/runs/43570014722)
+PASS: [v0.5.1-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.5.1-alpha.1)
+public/prerelease, sekiz dosya (beş native paket + üç kanıt/checksum). Başarılı
+43569363475 paketleri yeniden derlenmeden yayımlandı. Tag ve indirilen
+verified-run.json aynı 776f62c1603d9af7b37dbdf5fdbbee6c49f569d7 kaynağına bağlı.
+İndirilen iki kanıt dosyasının SHA-256 değerleri eşleşti; beş büyük binary ayrıca
+yerelde yeniden indirilip hash’lendi denmez. Android code 9 / name 0.5.1 /
+minimum API 24 ve APK v2 imzası doğrulandı; public APK adresi HTTP 200.
+
+Fiziksel Android, temiz Windows installer/portable taşıma, üretim imzası ve iki
+sürümlük native güncelleme NOT TESTED. Windows imzasız, APK debug imzalı.
+Soru sonucunu göstermeyi konu ustalığı veya sınav puanı artışı diye sunmayın.
 
 ---
 

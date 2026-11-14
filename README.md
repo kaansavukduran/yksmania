@@ -6,8 +6,10 @@ An offline-first YKS learning application by Fragaria Interactive. **0.5.1 alpha
 
 0.5.1 keeps completed topics visible on Today's study path and shows the latest
 question score, hint information and a link to the saved result. Question and
-theory records remain independent. Current verification/release evidence is in
-FORGE.md. Interactive content remains 23 lessons and 115 original questions.
+theory records remain independent. Web 0.5.1 passed 48 live browser scenarios;
+41 unit tests and Windows/Linux offline/restart checks passed. Android APK
+signature/manifest passed. Packages are published; evidence is in FORGE.md.
+Content remains 23 lessons / 115 questions.
 
 ## What works
 

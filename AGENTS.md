@@ -22,3 +22,7 @@ manual theory/question records independent and do not award XP for checkmarks.
 The user's latest Aion art direction is reference-faithful pixel art with richer
 sprite reactions; it supersedes the historical cartoon-only request for this app.
 Source imports remain under Settings; do not reintroduce the Library navigation tab.
+
+Today keeps completed daily work visible and shows the latest complete saved
+question attempt with its actual correct/wrong counts. Never sum retries or infer
+manual theory completion from question answers. Preserve the YKS-013 regression.

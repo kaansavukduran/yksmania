@@ -487,3 +487,22 @@ apparent skip-link overlay. Live bounds before/after capture proved it hidden
 (bottom −199.06px, unfocused); this is not recorded as a product defect. Added
 large-scale hidden-link geometry plus actual Tab → Enter → main focus checks,
 focused rerun PASS (11.7s). No skip-link CSS change was made from the screenshot.
+
+Live 0.5.1 acceptance 43569397941: 48/48 PASS (3.8m). The canonical origin and
+test suite both use 776f62c1603d9af7b37dbdf5fdbbee6c49f569d7; deployment
+dpl_2a1omXD7s6HJosPdx6LzBZiirp2r READY, /version.json 0.5.1. No code-subtree
+substitution or tests against an older deployment were used.
+
+Remote package CI 43569363475: all four jobs PASS, 41 unit tests, 48 browser
+scenarios (2.0m). Windows/Linux packaged executable checks include visible daily
+theory completion and the saved five-of-five question result after process restart,
+offline reload and old regressions; renderer errors 0. Android debug APK
+signature/manifest PASS. Physical devices, clean installer/portable relocation,
+production signing and two-version native updates remain NOT TESTED.
+
+Release 43570014722 PASS: v0.5.1-alpha.1 public/prerelease, eight assets from the
+successful package run without rebuilding. Tag and downloaded verified-run.json
+match 776f62c. Two small evidence-file hashes match SHA256SUMS; five large native
+binaries were not all downloaded and rehashed locally. Android 9 / 0.5.1 / API24 /
+v2 signature verified; public APK HEAD HTTP 200. Native physical/signing/update
+gaps above remain open. Documentation-only handoff changes do not alter app code.
