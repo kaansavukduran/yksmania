@@ -25,11 +25,44 @@ Yerel PASS: check/build, 40 birim/depolama/içerik, 44/44 tarayıcı (2,4 dk).
 320px / %200 UI / %150 yazı / azaltılmış hareket, gerçek kontrol kullanımı,
 offline ilk açılış/reload, ciddi-kritik axe beş modelde PASS. Electron Linux beş
 yeni modeli offline açar; 49 bölen kanıtı süreç yeniden başlayınca korunur;
-renderer hata sayısı 0. Uzak paket/yayın durumu doğrulanınca aşağıya eklenecektir.
+renderer hata sayısı 0. Uzak paket/yayın doğrulaması aşağıdadır.
+
+Web 0.5.0 dağıtımı READY: dpl_J5zjwumi6YL1dCXDJXAFaaBnF5nE,
+kaynak bd95c5ddf89eaed78445710dbea91b2f45517e23. Kanonik /version.json
+0.5.0 döndürür. Normal Git entegrasyonu yayımladı; manuel kota tekrarı/host/plan
+değişikliği yok. [Canlı kabul](https://github.com/kaansavukduran/yksmania/actions/runs/43567601148)
+44/44 PASS (3,8 dk), aynı bd95c5d kaynağı. Paket CI 43567554549 dört işte PASS;
+nihai paket/release kanıtı aşağıdadır.
 
 Sürüm 0.5.0 / Android versionCode 8. Fiziksel Android, temiz Windows kurulum,
 portable taşıma, üretim imzası ve iki sürümlük native güncelleme açık kapılardır.
 Sıradaki içerik önceliği 11. başlık: Canlıların Karakteristik Özellikleri.
+
+## 0.5.0 uzak teslim doğrulaması
+
+- Uygulama ve paket/test kaynağı: `bd95c5ddf89eaed78445710dbea91b2f45517e23`.
+- [Paket CI](https://github.com/kaansavukduran/yksmania/actions/runs/43567554549)
+  dört işte PASS: check/build, 40 birim/depolama/içerik testi ve 44 tarayıcı
+  senaryosu (1,9 dk). Windows/Linux paketleri yeni beş matematik modeli ve 49
+  bölen kanıtının süreç yeniden başlatma sonrası kalıcılığını, eski AYT/kimya/
+  kopya kağıdı/PDF/konu-plan/soru kaydını offline doğrular. Renderer hataları 0.
+  Android debug APK derlemesi ve imza/manifest kontrolü PASS.
+- [Canlı web kabulü](https://github.com/kaansavukduran/yksmania/actions/runs/43567601148)
+  44/44 PASS (3,8 dk). Test ve web uygulama kaynağı aynı bd95c5d;
+  READY üretim dağıtımı dpl_J5zjwumi6YL1dCXDJXAFaaBnF5nE, kanonik
+  https://yksmania.vercel.app/version.json 0.5.0 döndürür.
+- [Yayın koşusu](https://github.com/kaansavukduran/yksmania/actions/runs/43568202257)
+  PASS. [v0.5.0-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.5.0-alpha.1)
+  public/prerelease, sekiz dosya: Windows Setup/Portable x64, Linux DEB/AppImage,
+  Android debug APK ve üç kanıt/checksum dosyası. Yeniden derleme yok; başarılı
+  43567554549 paketleri kullanıldı. Tag ve indirilen verified-run.json aynı
+  bd95c5ddf89eaed78445710dbea91b2f45517e23 kaynağını gösterir. İndirilen iki
+  kanıt dosyasının SHA-256 değerleri listeyle eşleşti. Beş büyük native dosyanın
+  tamamı yerelde tekrar indirilip hash’lendi iddiası yoktur. Android code 8 /
+  name 0.5.0 / minimum API 24 / APK v2 imza doğrulandı; public APK adresi HTTP 200.
+- Fiziksel Android, temiz Windows installer/portable taşıma, kararlı üretim imzası
+  ve iki sürümlük native güncelleme NOT TESTED. Windows imzasız, APK debug imzalı.
+  Otomatik executable testleri bu açık kapıların yerine geçmez.
 
 ---
 

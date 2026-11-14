@@ -425,6 +425,22 @@ review, chart, Aion and plan regressions pass; desktop renderer exceptions 0.
 A direct old/current module comparison preserved the previous eighteen lessons
 and ninety questions including IDs, options, hints, keys and explanations.
 
-Remote packages, live web and release evidence will be recorded in FORGE.md after
-observation. These local passes do not establish physical Android, Windows clean
+Remote package and live-web evidence is recorded below and in FORGE.md.
+These automated passes do not establish physical Android, Windows clean
 installer/portable relocation, production signing or two-version native updates.
+
+0.5.0 live acceptance: run 43567601148, 44/44 PASS (3.8m) on the canonical HTTPS
+origin. Both test source and READY production deployment use bd95c5ddf89eaed78445710dbea91b2f45517e23;
+/version.json reports 0.5.0. No code-subtree equivalence workaround was needed.
+
+0.5.0 remote package CI 43567554549: all four jobs PASS. Forty unit tests and
+44 browser scenarios (1.9m); packaged Windows/Linux offline/reload/process restart
+including all five mathematics activities and retained prime evidence, renderer
+errors 0. Android APK signature/manifest step PASS. This is executable automation,
+not a clean installer/portable relocation or physical Android test.
+
+Release 43568202257 PASS: public prerelease v0.5.0-alpha.1, eight assets. Tag and
+verified-run.json match bd95c5d. Two downloaded evidence hashes match SHA256SUMS;
+large native binaries were not all downloaded and rehashed locally. Android
+versionCode 8 / versionName 0.5.0 / minimum API 24 / APK v2 signature verified;
+public APK download HEAD is HTTP 200. Signing/physical-device/update gates remain.

@@ -39,7 +39,7 @@ Kavram ve çizim denetimi:
 
 | Özgün set | Soru kimlikleri | Doğru seçenekler | Bağımsız hesap örnekleri |
 | --- | --- | --- | --- |
-| Temel | bas-1 … bas-5 | B, C, A, C, B | √49=7; farklı rakamlarla en büyük iki basamaklı 98; 15÷3×2=10; x≠−2; √(−7)²=7 |
+| Temel | bas-1 … bas-5 | B, C, A, C, B | √49=7; farklı rakamlarla en büyük iki basamaklı 98; 15÷3×2=10; x≠−2; √((−7)²)=7 |
 | Tek–çift | par-1 … par-5 | A, B, C, C, B | −8 negatif çift; −3²=−9, (−3)²=9; çift/çift tam sayı olmak zorunda değil; 0 çift |
 | Ardışık | seq-1 … seq-5 | B, C, A, C, B | −5,−3,−1,1,3; 4…28 artış 3 → 9 terim; 6+10+…+30=126; 12+14+16=42 |
 | Asal | pri-1 … pri-5 | B, A, C, B, C | 1 ayrı durum; 49=7²; 84=2²×3×7; 2+19=21 ve 2×19=38 |

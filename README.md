@@ -6,8 +6,8 @@ An offline-first YKS learning application by Fragaria Interactive. **0.5.0 alpha
 
 0.5.0 adds five TYT mathematics explorations and 25 original exercises, following
 workbook topics 6–10. Local checks passed 40 unit tests, 44 browser scenarios and
-Linux Electron offline/restart flows. Package and published-web status are recorded
-separately in FORGE.md; a source push is not proof of a new live deployment.
+Linux Electron offline/restart flows. Web 0.5.0 passed all 44 published-site acceptance scenarios. Windows/Linux packaged offline/restart and Android APK signature/manifest
+checks passed. Release evidence is recorded in FORGE.md.
 
 ## What works
 
