@@ -1,3 +1,37 @@
+# 0.9.1 yayımlandı — doğrulanmış teslim
+
+Uygulama kodu12e7431d3576fd3a1244cbab1f38a1b8c1726b5b; paket kaynağı
+`e1b8150c4ff077716c9043b06241fc7af294cb06`. Sonraki cc88e28 yalnız test ölçümü
+ve bu kayıt dosyasını değiştirir; uygulama dosyaları aynıdır.
+[CI43622440349](https://github.com/kaansavukduran/yksmania/actions/runs/43622440349)
+96 birim/89browser ve Windows/Linux/Android dört iş PASS. Yeni ölçümle son
+CI43623231137 verify96/89 PASS; teslim paketleri önceki tamamen başarılı
+43622440349 koşusundan yeniden derlenmeden yayımlandı.
+[Canlı43623257610](https://github.com/kaansavukduran/yksmania/actions/runs/43623257610)
+cc88e28 kaynağında89/89 PASS (5,2dk). İlk iki public88/89 nedenleri aşağıda
+korunur; beklenti, timeout veya uygulama davranışı gevşetilmedi.
+
+Vercel production dpl_6DTrXJDaHQFmYd3FXnFpXCCKYtUW/cc88e28 READY; version0.9.1.
+Canlı index/sw/version hash’leri kabul edilmiş yerel derlemeyle birebir aynı.
+[Release43623370247](https://github.com/kaansavukduran/yksmania/actions/runs/43623370247)
+PASS; [v0.9.1-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.9.1-alpha.1)
+draft değil,8asset:5binary ve3kanıt. Tag ve verified-run aynı başarılı e1b8150
+main kaynağında. İndirilen iki kanıt hash’i eşleşti;7payload listesi mevcut.
+Android0.9.1/code16/v2 signature PASS. Beş büyük binary ayrıca yerelde hash’lenmedi.
+Paketli Windows/Linux offline/yeniden başlatma/sınav/timer/not/reset mevcut
+smoke akışları PASS. Fiziksel Android, temiz kurulum, portable taşıma ve iki
+native sürümle güncelleme NOT TESTED. Yeni görseller390/1440px incelendi;
+yeni modeller320px UI200/text150, az hareket ve ciddi/kritik axe kabulü PASS.
+
+61 anlatım/32 rehber/64 kağıt/240 özgün soru;4 yeni rehberde24 açıklama bölümü,
+12 çözümlü örnek ve12 recall. İlk50/479 hazır. Karma90TYT/25AYT ve11branş;
+tam resmî dağılım veya bütün Drive arşivi tamamlandı iddiası yok. Son kullanıcı
+kararıyla logolar değişmedi, öğrenci materyal yüklemez. Sıradaki eksik başlıklar:
+51 Dünya Gücü Osmanlı,52 kimyasal türler/Lewis,53 ısı–sıcaklık,54 nükleik asitler.
+55 ATP mevcut; yeni kaynak işleme bu sıradan sürdürülmeli.
+
+---
+
 # 0.9.1 — dört periyodik kimya konusu
 
 Son CI43622440349 verify96unit/89browser PASS. İlk public43621890680 aynı

@@ -1,3 +1,15 @@
+# 0.9.1 son teslim kabulü
+
+Paket e1b8150 / CI43622440349:96unit,89browser,Win/Linux/Android dört iş PASS.
+Son ölçüm kaynağı cc88e28 / public43623257610:89/89 PASS,5,2dk. Ek CI43623231137
+verify96/89 PASS. Aradaki fark yalnız test ve kayıt; uygulama dosyaları aynıdır.
+İlk iki public88/89 ve ilk CI88/89, save-onayı ve ayrı rect örnekleme hataları
+FORGE’de saklanır. Son iki onarım kabul sınırını veya timeout’u değiştirmez.
+Production0.9.1 READY, üç runtime hash’i eşit; release43623370247 sekiz asset
+ile yayımlandı, Android code16/v2 ve indirilen iki kanıt hash’i PASS.
+Beş büyük binary ayrıca indirilmedi. Fiziksel cihaz/temiz kurulum/portable taşıma
+ve iki native sürümle yükseltme NOT TESTED. Kaynak sayfaları SOURCE_REVIEW’dedir.
+
 # 0.9.1 yerel kabul
 
 Başlangıç cfe0db0 + çalışma diff’i: check/build,96/96 unit,89/89 browser PASS

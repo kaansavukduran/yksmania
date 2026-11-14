@@ -10,7 +10,9 @@ ilk50/479 başlığı hazır; bütün arşiv tamamlanmış değildir. Karma setl
 90TYT/25AYT çalışmasıdır; tam resmî dağılım olarak sunulmaz. Önceki deneme
 snapshot’ları, öğrenme kayıtları ve notlar korunur. Materyal yüklemek gerekmez.
 
-Canlı site https://yksmania.vercel.app — güncel dağıtım/test/paket kanıtı FORGE.md.
+Canlı site https://yksmania.vercel.app
+CI43622440349:96 birim,89 tarayıcı ve üç platform işi PASS.
+Canlı43623257610:89/89 PASS. Paket kaynağı e1b8150; kaynak/test/paket kanıtı FORGE.md.
 
 Assets bölümünden cihazına uygun dosyayı seç:
 Windows Setup.exe kurulum, Portable.exe doğrudan çalıştırma içindir. İkisi de x64
