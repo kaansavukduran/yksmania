@@ -476,13 +476,30 @@ try {
       .fill(item.title);
     const entry = page.locator(".ready-topic").filter({ hasText: item.title });
     await expect(entry).toHaveCount(1);
-    // Replacing a partial question draft is an explicit user-visible decision.
-    if ((await foundationState()).draft)
-      page.once("dialog", (dialog) => dialog.accept());
+    // Use the same in-app confirmation as learners on every platform. Opening
+    // it must not alter the durable partial draft before explicit approval.
+    const beforeReplacement = await foundationState();
     await entry.click();
+    if (beforeReplacement.draft) {
+      const confirmation = page.getByRole("dialog", {
+        name: "Yarım kalan çalışmayı değiştirelim mi?",
+        exact: true,
+      });
+      await expect(confirmation).toBeVisible();
+      expect(await foundationState()).toEqual(beforeReplacement);
+      await confirmation
+        .getByRole("button", { name: "Yeni çalışmayı aç", exact: true })
+        .click();
+    }
     await expect(page.locator(".question-panel")).toBeVisible();
     await expect(page.locator(".question-panel h2")).toHaveText(item.prompt);
     await expect(page.locator(".question-meta")).toContainText("Soru 1 / 10");
+    await expect
+      .poll(async () => (await foundationState()).draft?.lessonId)
+      .toBe(item.id);
+    const { draft: previousDraft, ...beforeRest } = beforeReplacement;
+    const { draft: replacementDraft, ...afterRest } = await foundationState();
+    expect(afterRest).toEqual(beforeRest);
     await expect(page.locator(".answer")).toHaveCount(5);
     await expect(page.locator(".answer").nth(item.answer)).toContainText(
       item.correct,

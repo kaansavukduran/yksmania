@@ -49,7 +49,15 @@ alma. Varsayılan iptal odağı, Escape/odak dönüşü, açık onay ve prompt/k
 boyunca çift tıklama kilidi korunur. Native API stub kabul yerine kullanılmaz.
 Dört yeni ve dört eski ilgili browser vakası 8/8 PASS; son kaynakta 355/355
 birim, check ve ayrı web/Pages derlemeleri PASS. Yeni genel liste 23 dosyada
-303 vakadır; son tam koşu, Pages ve aynı profil native kabulü sürüyor.
+303 vakadır. Son tam yerel koşu 302/303 PASS idi: tek başarısızlık, yeni
+cebir bankasını hâlâ sorusuz sayan eski `prepared-search` beklentisiydi.
+Arama testi artık yeni bankanın tek kart/10 soru olduğunu doğrular; eski
+question-only paket ayrımı korunur. Düzeltilen arama ve dört onay vakası
+birlikte 5/5 PASS (19,6 sn); yerel tam 303/303 iddiası yoktur.
+Son Pages alt yol kontrolü PASS. Geliştirme Electron’da aynı süreç/profilde
+kontrol edilmiş yanlış taslak/not korunurken iptal → bütün state aynılığı →
+yeniden açık onay → yeni soru → çevrimdışı reload PASS; renderer hatası 0.
+İki gerçek onay ekranı ayrıca görüntüden incelendi.
 İlk veri kaydı henüz yazılmadan state okumaya çalışan fresh-profile smoke
 varsayımı da gerçek kayıt + saved durumu beklenerek düzeltildi; eksik kayıt
 boş veriyle örtülmedi.
@@ -60,6 +68,30 @@ ilk açılışı, gerçek 9/10 kaydını, 3/7/21 tekrarlarını ve 320px büyük
 sınamak üzere hazırlanmıştır. Pages ve Electron betiklerine bir matematik ve
 bir tarih soru rotası eklendi; eski akışlar korunur. Betik sözdizimi kontrolü
 çalışan paket veya fiziksel cihaz kanıtı değildir.
+
+Son derlemeyle gerçek 0.12→0.13 aynı köken service worker güncellemesi PASS:
+güncelleme düğmesi/waiting geçişi kullanıldı, bütün eski state/doküman/katalog
+aynen korundu. Eski 5/5 oturum, üç özgün tekrar, kontrol edilmiş yanlış taslak,
+notlar ve sentetik 870 bayt PDF kaldı; XP25→25. Altı KORUNAN 0.12 model ilk
+kez çevrimdışı açıldı ve reload kaldı; bunlar yeni 0.13 üniteleri değildir.
+Bu yerel web güncellemesidir; fiziksel/native sürüm geçişi değildir.
+
+Yayın öncesi mahremiyet denetimi, 0.12 son belge tabanı345415c ile farktaki
+metinleri 8.845 bilinen özel kimlik/bağlantıya karşı taradı: özel kimlik,
+ham PDF, binary veya anahtar yok. 752 bağımlılık kaydı korunur; kilitte yalnız
+iki kök sürüm alanı değişir. 0.13 uzak CI ve yayın kabulü henüz bekleniyor.
+
+Pages ilk uzak kabulü 43714489303, temel soru geçişinde testin kaldırılmış
+native onayı beklemesi nedeniyle FAIL oldu. Uygulama HTML onayı gösteriyordu;
+betik gerçek pencereyi açıp onay öncesi bütün kaydın aynılığını ve görünür
+“Yeni çalışmayı aç” eylemini doğrulayacak şekilde düzeltildi. Eski yerel PASS
+raporu aynı akışla yeniden üretilemediği için son kabul kanıtından çıkarıldı.
+Kaynak tekrar ayrı prefix dizinine derlendi; 99 dosyanın tamamı eski prefix ile
+byte eşitti. Eski betik yeni prefix'te de aynı hatayı üretti; yalnız test
+beklentisi onarıldı, uygulama/soru verisi değişmedi. Yeni yerel Pages kabulü PASS; HTML onaydan sonra her iki yeni banka ilk kez
+çevrimdışı açıldı, yanıt/geri bildirim/reload ve bütün eski akışlar korundu.
+Uzak tekrarlar bu düzeltilmiş betikle ayrı kaydedilir. İlk CI/canlı koşuları,
+nihai aynı kaynakta tekrar için iptal edildi; tamamlanmış kabul sayılmaz.
 
 Android kaynak sürümü 0.13.0/code21; 752 bağımlılık kaydı değişmez. Deneme
 kataloğu hâlâ 13 settir: TYT 105, AYT 25 ve 11 branş. Eksik resmî dağılım
