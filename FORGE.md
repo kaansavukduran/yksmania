@@ -48,6 +48,13 @@ canlı URL sertifika otoritesi hatası verdi; TLS kontrolü kapatılmadı. İş 
 GitHub runner'da doğrudan yayımlanan adreste aynı kabulü yapan üçüncü iş eklendi.
 Ayrıca artık geride kalmış CI kaynağı ana dal ilerlediyse otomatik yayınlanmaz.
 
+İlk ana CI43697993699: 203/204 browser PASS; eski YKS-006 testi Sorulara geç
+sonrasında hedef sayfa bağlanmadan DOM ölçtü, practiceNote undefined oldu.
+Test artık gerçek soru paneli ve not alanının görünmesini bekler, undefined
+ölçümü açıkça reddeder; simetri/taşma/boşluk sınırları aynı. Son derlemede
+ilgili test PASS (4,7s); uygulama kaynakları ve runtime değişmez. Yeni tam
+CI bu test onarımıyla başlatılır; başarısız koşudan paket yayımlanmaz.
+
 Yayımdan önce düzeltilen somut bulgular:
 - YKS-043/Orta: Zarflar gerekçesi 240, kayıt sınırı 128 idi; UI 120 karaktere
   alındı ve kalıcılıkla denetlenir.

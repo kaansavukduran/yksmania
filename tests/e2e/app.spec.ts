@@ -653,6 +653,8 @@ test("YKS-006 notes stay below full-width theory and questions and retain edits"
     "Çekirdek ve ribozom arasındaki farkı karşılaştır.",
   );
   await page.getByRole("button", { name: "Sorulara geç", exact: true }).click();
+  await expect(page.locator(".question-panel")).toBeVisible();
+  await expect(page.locator(".practice-note")).toBeVisible();
   for (const width of [1440, 390, 320]) {
     await page.setViewportSize({ width, height: 1000 });
     const { panel, practiceNote } = await page.evaluate(() => ({
@@ -665,8 +667,8 @@ test("YKS-006 notes stay below full-width theory and questions and retain edits"
         ?.getBoundingClientRect()
         .toJSON(),
     }));
-    expect(panel).not.toBeNull();
-    expect(practiceNote).not.toBeNull();
+    expect(panel).toBeDefined();
+    expect(practiceNote).toBeDefined();
     expect(
       practiceNote!.y,
       `notes below questions at ${width}px`,
