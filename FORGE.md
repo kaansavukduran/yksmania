@@ -1,3 +1,21 @@
+# 0.15.0 — yerel kabul tamamlandı, uzak yayın bekleniyor
+
+Kaynak adayında çalışma sırasının 169–198. başlıkları için 30 yeni ünite; toplam 204 anlatım / 176 derin rehber / 204 özet / 1.840 soru vardır. İlk 198/479 başlık anlatım ve soruyla hazırdır. Eklenen 245 bölüm, 490 paragraf, 122 üç adımlı çözüm, 122 hatırlama ve 300 özgün beş seçenekli kart gerçek kaynak okuması ve ikinci okuyucuyla denetlendi. Eski 1.540 sorunun bütün alanları ve 175 ders kaydının soru dışındaki alanları korunur. Öğrenci kaynak/PDF yüklemez.
+
+C3 runtime kaynağı `abd6cdded9d809b77ca89fb5918576f22c7de2a5`; son 0.14 yayın kanıtı daha sonra yalnız belgelerle merge edildi. 123 dosyalı artefakt donduruldu. Kaynak kontrolü, 478/478 birim ve derleme PASS. Gerçek Electron’da 25 model ailesi, iki eski soru rotası, HTML taslak iptal→tam kayıt aynılığı→onay ve aynı profil/süreç yeniden açılışı/offline/reload PASS; renderer 0. Pages prefix’inde aynı 25 aile ve iki soru rotası ilk çevrimdışı kullanım/kayıt/reload ile PASS.
+
+Gerçek 0.14→0.15 service-worker güncellemesi, eski sürümden gerçek menüyle başlanmış 25 soruluk AYT denemesinin bütün sorularını, cevabını, işaretini ve bitiş süresini aynen korudu; yeni katalog ayrı 37 soru gösterdi. Güncellemenin hemen ardından bütün state/belge/katalog eşitti. Eski 5/5 oturum, 17 Kasım/21 Kasım/5 Aralık tekrarları, kontrol edilmiş yanlış soru taslağı, notlar, ayarlar ve 870 bayt sentetik eski PDF korundu; XP 25→25. Altı yeni 0.15 model bu profilde ilk kez çevrimdışı açılıp yenilendi. Bu web yükseltme kanıtıdır, iki native sürüm arası test değildir.
+
+YKS-068 kimya büyük yazıda sözcük bölünmesi: görünür/erişilebilir kısa etiket ve iç boşluk onarımı; C1 üç gerçek FAIL→C2 aynıları+ilerleme kontrolü dört PASS. YKS-069 PWA geliştirme updater döngüsü: gerçek Vite menü/tema/ölçek testi önce FAIL→ref ile son uygulamayı tutma sonrası PASS; üretim hook’u zaten stable, üretim döngüsü iddiası yok. YKS-070 fizik telefon SVG’sinde 7,24 px etiket: eşit fiziksel eksen ölçeği korunarak uyumlu görünüm/16 px alt sınır/getBBox ve mevcut ok koordinatı regresyonları eklendi. Yeni denklem başvuru koruması, yalnız ipucunda/açıklamada bulunan öncülü görünür soru verisi saymaz.
+
+İlk C3 tam koşu, dört CPU kotasında eşzamanlı native/SW ve özel censuslerle ölçülen yük 19 sırasında iki eski testte zaman aşımı verdi; 82 PASS, 2 FAIL, 2 kesilen, 337 çalışmayan olarak korunur. Kaynak/artefakt/asser/timeout değişmeden diğer ağır browserlar durdurulunca aynı iki test 12,5 s ve 3,5 s ile PASS oldu. Son tam koşuda aynı kaynak, assertion ve süre sınırlarıyla 423/423 tarayıcı vakası iki worker ile 18,8 dakikada geçti. Önceki C1 61/61 yeni vaka, 477 birim ve 25-aile kabulü yalnız kendi artefakt kapsamındadır.
+
+TYT 110/9075 s ve AYT 37/4995 s karma setleriyle 12 branş pratik vardır; tam resmî 120/80 dağılım değildir. 0.15 uzak CI/public/Pages ve Android 23 paket yayını henüz bekleniyor. Son yayımlanmış paket 0.14’tür; onun gerçek kabulü aşağıdadır. Bütün 479, bütün Drive/YKS ve 20 yıllık tüm resmî sınavlar tamamlanmadı. Fiziksel Android, temiz Windows kurulumu, portable taşıma ve native-to-native yükseltme NOT TESTED.
+
+---
+
+## Tarihsel doğrulanmış 0.14 kaydı
+
 # 0.14.0 — yayın ve paket kabulü tamamlandı
 
 0.14 sürümü, doğrulanmış çalışma sırasının 139–168. başlıklarını kapsar. Önceden

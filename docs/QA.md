@@ -1,3 +1,32 @@
+# 0.15.0 — yerel kabul tamamlandı, uzak yayın bekleniyor
+
+Çalışma sırasının 169–198. başlıklarına 30 yeni ünite eklendi: toplam 204 anlatım, 176 ayrıntılı rehber, 204 yerleşik özet ve 1.840 özgün soru. Son uygulama kaynağı `abd6cdded9d809b77ca89fb5918576f22c7de2a5`; ardından yalnız tamamlanmış 0.14 yayın belgeleri birleştirildi. C3 artefaktının 123 dosyası sabittir.
+
+C3 kaynak kontrolü, 478/478 birim testi ve derleme PASS. Son tam tarayıcı koşusu **423/423 PASS**, iki worker ile 18,8 dakika. Test veya assertion çıkarılmadı. Gerçek Electron'da 25 model ailesi, iki eski soru rotası, HTML taslak iptal→tam kayıt aynılığı→onay, çevrimdışı kullanım/yenileme ve aynı profil ile süreç yeniden açılışı PASS; renderer hatası yok. Pages alt yolunda 25 aile ve iki eski soru rotası ilk çevrimdışı kullanım/kayıt/yenileme ile PASS.
+
+Gerçek 0.14→0.15 service-worker güncellemesinin hemen ardından eski state, belge ve katalog birebir aynı kaldı. Eski arayüzde başlatılmış 25 soruluk AYT denemesinin tam soruları, cevabı, bayrağı ve bitiş süresi korunur; yeni katalog ayrı 37 soru gösterir. 5/5 oturum, 17 Kasım/21 Kasım/5 Aralık tekrarları, kontrol edilmiş yanlış soru taslağı, notlar, ayarlar ve 870 bayt sentetik eski PDF korunur; XP 25→25. Altı yeni model ilk kez çevrimdışı açılıp yenilendi. Bekleyen güncelleme, 25/37 ayrımı ve yeni model ekran görüntüleri ayrıca görüldü. Bu web yükseltmesi, iki native sürüm arası test değildir.
+
+## Kanıtlanan kusurlar ve onarımlar
+
+- **YKS-068:** 320 px/UI 200/text 150 görünümünde gerçek 45 px kimya metni, dar iç boşlukta sözcükleri bölüyordu. Görünür ve erişilebilir kontrol etiketi birlikte “İlerleme (%)” oldu; font boyutu ve öğretim korunarak iç yatay boşluk azaltıldı. C1'de yeni DOMRange regresyonu üç FAIL; C2'de aynı üç vaka ve gerçek 50→100 kontrolü dört PASS. Son C3 tam koşuda da geçer. Veri, 120 soru ve keşif anahtarları korunur.
+- **YKS-069:** Geliştirme PWA hook'u her render'da yeni updater üretiyor, WebUpdates effect'i tekrar bildirim/render döngüsüne giriyordu. Gerçek Vite menü/tema/ölçek/arama testi önce FAIL, güncel updater ref ile tutulunca PASS. Üretim hook'u zaten sabitti; üretimde aynı döngü var denmez. Bu bir yerel geliştirme regresyonudur, uzaktaki site testi sayılmaz.
+- **YKS-070:** Fizikte 390 px telefon şemasındaki 700 birim viewBox, etiketleri 7,24 CSS px'e düşürüyordu. Eşit fiziksel eksen ölçeği ve eski ok koordinatları korunarak duyarlı SVG düzeni onarıldı. Son üç vakada CTM×fontSize≥16 px, SVG sınırları ve eski d/cx/cy/world kontrolleri geçer.
+- **Soru öncülü:** “Verilen denkleme göre” başvurusu için gerçek denklem görünür soru kökü/pasajında bulunmalıdır. Yalnız ipucu veya açıklamadaki denklem öncül sayılmaz. Olumlu ve olumsuz regresyonlar geçer.
+
+## Önceki koşuların sınırları
+
+C1'de 477 birim ve yeni 61 tarayıcı vakası PASS idi. Gerçek sözcük kusuru görülünce ilk tam 422 koşu bilinçli durduruldu: 106 PASS, 2 kesilen, 314 çalışmayan. C1 normal uygulamada matematik 12 görünüm, biyoloji 28 görünüm ve dört ek grup, coğrafya 16 görünüm/75 glif kontrastı PASS idi; kimya 48 çalışma kontrolü geçse de sözcük kusuruyla bütün görsel kabul geçmedi. Bunlar son C3 kabulünün yerine yazılmaz.
+
+İlk C3 tam koşuda, dört CPU kotasında eşzamanlı native/SW ve özel tarayıcı sayımları sırasında yük 19 ölçüldü: 82 PASS, 2 zaman aşımı FAIL, 2 kesilen, 337 çalışmayan. Diğer ağır süreçler durdurulunca aynı C3 baytları, assertion'lar ve süre sınırlarıyla aynı iki eski test 12,5 s/3,5 s PASS; ardından tam 423/423 PASS. İlk günlükler korunur, assertion veya zaman sınırı gevşetilmedi.
+
+Özel veri taraması 71 değişen metin yolunda 8.993 özel kimlik ve 9.004 bağlantıyı karşılaştırdı; özel kimlik, ham materyal, binary veya hassas örüntü bulunmadı. 752 bağımlılık kaydı değişmedi. Yayın korumasının güncel 0.15.0/kod 23 için 18 sentetik vakası PASS; eski/yanlış sürüm ve eksik/çoğaltılmış paketler reddedildi.
+
+Uzak CI, yayımlanan HTTPS, Pages ve Android kod 23 paket yayını henüz bekleniyor. Fiziksel Android, temiz Windows kurulumu, portable taşıma ve native sürümler arasında veri koruyan yükseltme NOT TESTED.
+
+---
+
+## Tarihsel doğrulanmış 0.14 kaydı
+
 # 0.14.0 — yayın ve paket kabulü tamamlandı
 
 0.14 sürümü, doğrulanmış çalışma sırasının 139–168. başlıklarını kapsar. Önceden

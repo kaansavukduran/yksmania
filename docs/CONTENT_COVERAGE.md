@@ -1,3 +1,26 @@
+# İçerik kapsamı — 0.15.0 adayı
+
+Doğrulanmış çalışma sırasının 169–198. başlıklarına 30 yeni ünite eklendi. Her ünitede kendine özgü etkileşimli model, açıklamalı bağımsız sorular, adım adım çözümler ve uygulamaya gömülü kapsamlı özet bulunur. Kullanıcı kaynak/PDF yüklemez.
+
+| Ölçüm | Kaynakta doğrulanan sayı |
+| --- | --- |
+| Ayrıntılı sıra |479 başlık; ilk 198 anlatım ve soruyla hazır |
+| Anlatım / derin rehber / yerleşik kağıt |204 /176 /204 |
+| Özgün soru |1.840; önceki 1.540 tam alanlarıyla korunur |
+| Yeni öğretim |30 ünite,245 bölüm,490 paragraf |
+| Yeni açıklama ve uygulama |122 üç adımlı çözüm,122 hatırlama,300 bağımsız beş seçenekli soru |
+| Zamanlı pratik |14 set: TYT 110/9075 s, AYT 37/4995 s ve 12 branş |
+
+TYT karma 151 dk 15 sn; AYT karma 83 dk 15 sn. TYT'de felsefe/din, AYT'de matematik/geometri ve kimya kotası eksiktir; setler tam 120/80 resmî dağılım olarak sunulmaz. AYT'de 14 fizik ve 13 biyoloji sorusu seçilebilir. Eski 110 TYT ve 25 AYT tam soru kopyaları yeni katalog nedeniyle büyütülmez, karıştırılmaz veya yeniden sürelenmez.
+
+Yeni konular: istatistik 1; vektör/bağıl hareket/nehir 3; kimyasal hesaplamalar ve karışımlar 12; genetik çeşitlilik/sinir sistemi 7; iklim/tektonik/iç kuvvetler 4; fiilimsiler/cümle ögeleri/cümle türleri 3. Kaynak sayfaları SOURCE_REVIEW'da, gerçek kabul sürümü QA/FORGE'dadır.
+
+341 ana referans satırı ile 479 çalışma sırası ve 204 hazırlanmış anlatım farklı ölçümlerdir. İlk 198 dışındaki bazı eski hazırlanmış anlatımlar toplamda bulunur. Bütün 479 başlık, bütün güncel Drive/YKS dosyaları ve 20 yıllık bütün ÖSYM sınavları henüz tamamlanmadı. Sonraki sıra 199/detail-48 Kayaçlar'dır.
+
+---
+
+## Tarihsel doğrulanmış 0.14 kaydı
+
 # İçerik kapsamı — 0.14.0
 
 Son C6 yerel kabulü ve aynı kaynakla uzak yayın tamamlandı: 414 birim, CI ve canlıda ayrı 361/361 tarayıcı, Pages üç iş, Windows/Linux paketli çevrimdışı kabul ve Android 0.14.0/kod 22 imza kontrolü PASS. Sekiz alpha dosyası yayımlandı; fiziksel cihaz ve native sürümler arası yükseltme ayrı kapsamdadır.
