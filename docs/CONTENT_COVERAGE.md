@@ -1,4 +1,4 @@
-# İçerik kapsamı — 0.13.0 alpha adayı
+# İçerik kapsamı — 0.13.0 alpha
 
 Öğretim uygulamaya gömülüdür. Konu Anlatımı, Kopya Kağıtları, Sorular ve
 Sınavlar ayrı bölümlerdir; öğrenci PDF, kaynak kataloğu veya kitapçık yüklemez.
