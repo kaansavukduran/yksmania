@@ -168,3 +168,8 @@
   animation: none !important;
   transition: none !important;
 }
+
+/* Filled atom symbols need ink opposite the colored fill in every theme. */
+.c012-drawing :is([data-carbon-atom], [data-solid-charge]) {
+  fill: var(--bg);
+}

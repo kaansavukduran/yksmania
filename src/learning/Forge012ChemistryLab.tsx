@@ -197,7 +197,7 @@ function Solids() {
                 }
               />
               {solid.id === "salt" && (
-                <text x={x} y={y + 6} textAnchor="middle">
+                <text data-solid-charge x={x} y={y + 6} textAnchor="middle">
                   {i % 2 === 0 ? "+" : "−"}
                 </text>
               )}

@@ -135,7 +135,12 @@ async function readableGeometry(page: Page, lesson: LessonCase) {
           };
         })
         .filter((rect) => rect.width > 0 && rect.height > 0);
-      const words: { word: string; lines: number; font: string }[] = [];
+      const words: {
+        word: string;
+        lines: number;
+        font: string;
+        control: boolean;
+      }[] = [];
       for (const element of lab.querySelectorAll<HTMLElement>(
         "button,strong,h3,h4,p",
       )) {
@@ -157,6 +162,12 @@ async function readableGeometry(page: Page, lesson: LessonCase) {
               lines: new Set(rows.map((rect) => Math.round(rect.top * 2) / 2))
                 .size,
               font: getComputedStyle(element).fontSize,
+              control:
+                element.tagName === "BUTTON" ||
+                (element.tagName === "STRONG" &&
+                  !!element.closest(
+                    '[role="status"],.bio012-feedback,.grammar012-feedback,.f012m-feedback,.h012-feedback',
+                  )),
             });
           }
         }
@@ -205,7 +216,7 @@ async function readableGeometry(page: Page, lesson: LessonCase) {
   expect(geometry.noteTop).toBeGreaterThanOrEqual(geometry.articleBottom);
   expect(geometry.words.length).toBeGreaterThan(0);
   for (const word of geometry.words) {
-    if (/^(?:Tahminimi|Seçimin|karşılaştır)$/iu.test(word.word))
+    if (word.control)
       expect(
         word.font,
         `${lesson.id}: ${word.word} keeps the selected size`,
@@ -315,3 +326,29 @@ for (const lesson of units) {
     ).toEqual([]);
   });
 }
+
+test("solid atom labels remain readable on their actual filled particles in all three themes", async ({
+  page,
+}) => {
+  const { solidSymbolContrast } = await import("./forge012-chemistry-cases");
+  await page.goto("/");
+  const lesson = units.find((unit) => unit.id === "katilar-viskozite")!;
+  for (const theme of ["dark", "light", "contrast"]) {
+    await nav(page, "Ayarlar");
+    await page.getByLabel("Tema", { exact: true }).selectOption(theme);
+    await openFromCourses(page, lesson);
+    const lab = page.locator(lesson.lab);
+    for (const specimen of ["salt", "graphite", "diamond"]) {
+      await lab
+        .getByRole("combobox", { name: "Katı örneği", exact: true })
+        .selectOption(specimen);
+      const ratios = await solidSymbolContrast(lab);
+      expect(ratios).toHaveLength(12);
+      for (const ratio of ratios)
+        expect(
+          ratio,
+          `${theme}/${specimen} actual glyph contrast`,
+        ).toBeGreaterThanOrEqual(4.5);
+    }
+  }
+});
