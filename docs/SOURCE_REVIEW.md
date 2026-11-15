@@ -17,6 +17,8 @@ Gerçek kaynak çelişkileri yanlış anahtar olarak aktarılmadı: OGM CO/O₂ 
 
 Eski 8.845 dosya envanteri sonradan eklenen kağıtları kaçırıyordu; her aile canlı klasör/ad metadata'sını yeniden doğruladı. Bu tur 30 üniteyi bitirmek tüm Drive arşivinin bittiği anlamına gelmez. Detaylı okuma ledger'ları/özel SHA'lar özel çalışma alanında, ürün kapsamı CONTENT_COVERAGE'dadır.
 
+Bu 30 ünite 0.15.0 olarak yayımlandı: 478 birim, CI ve canlıda ayrı 423/423 tarayıcı, 25-aile native/Pages ve gerçek 0.14→0.15 veri koruyan web güncellemesi kabulü vardır. Fiziksel cihaz sınırı QA’da belirtilir.
+
 ---
 
 ## Tarihsel doğrulanmış 0.14 kaydı

@@ -1,8 +1,8 @@
-# İçerik kapsamı — 0.15.0 adayı
+# İçerik kapsamı — 0.15.0
 
 Doğrulanmış çalışma sırasının 169–198. başlıklarına 30 yeni ünite eklendi. Her ünitede kendine özgü etkileşimli model, açıklamalı bağımsız sorular, adım adım çözümler ve uygulamaya gömülü kapsamlı özet bulunur. Kullanıcı kaynak/PDF yüklemez.
 
-| Ölçüm | Kaynakta doğrulanan sayı |
+| Ölçüm | Yayımlanan ve doğrulanan sayı |
 | --- | --- |
 | Ayrıntılı sıra |479 başlık; ilk 198 anlatım ve soruyla hazır |
 | Anlatım / derin rehber / yerleşik kağıt |204 /176 /204 |
@@ -16,6 +16,8 @@ TYT karma 151 dk 15 sn; AYT karma 83 dk 15 sn. TYT'de felsefe/din, AYT'de matema
 Yeni konular: istatistik 1; vektör/bağıl hareket/nehir 3; kimyasal hesaplamalar ve karışımlar 12; genetik çeşitlilik/sinir sistemi 7; iklim/tektonik/iç kuvvetler 4; fiilimsiler/cümle ögeleri/cümle türleri 3. Kaynak sayfaları SOURCE_REVIEW'da, gerçek kabul sürümü QA/FORGE'dadır.
 
 341 ana referans satırı ile 479 çalışma sırası ve 204 hazırlanmış anlatım farklı ölçümlerdir. İlk 198 dışındaki bazı eski hazırlanmış anlatımlar toplamda bulunur. Bütün 479 başlık, bütün güncel Drive/YKS dosyaları ve 20 yıllık bütün ÖSYM sınavları henüz tamamlanmadı. Sonraki sıra 199/detail-48 Kayaçlar'dır.
+
+478 birim, yerel/CI/canlıda ayrı 423/423 tarayıcı, Pages üç iş ve sekiz alpha paket kabulü tamamlandı. İlk canlı 422/423 koşusu ve değişmeyen kaynakla ikinci PASS kanıtı QA’da korunur.
 
 ---
 

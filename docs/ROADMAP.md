@@ -1,10 +1,12 @@
 # 0.15 sonrası çalışma sırası
 
-0.15 kaynak adayı: 204 anlatım / 176 rehber / 204 özet / 1.840 soru; ilk 198/479 anlatım+soru hazır. 169–198. başlıklara 30 yeni konu; son yerel 478 birim ve 25-aile native/Pages/web-yükseltme kabulü var, 423/423 tarayıcı geçti, uzak sürüm kapıları sürüyor. 0.14 yayımlandı; 0.15 paket kabulü henüz onun yerine geçirilmez.
+Yayımlanan 0.15: 204 anlatım / 176 rehber / 204 özet / 1.840 soru; ilk 198/479 anlatım+soru hazır. 169–198. başlıklara 30 yeni konu; son yerel 478 birim ve 25-aile native/Pages/web-yükseltme kabulü var, yerel, CI ve canlıda ayrı 423/423 tarayıcı, CI dört iş ve Pages üç iş geçti. Sekiz 0.15 alpha dosyası yayımlandı.
 
-Sonraki sıra 199/detail-48 Kayaçlar. 199–228 arasındaki 30 başlık için gerçek kaynak okuması ve sahipli kaynak dosyaları üzerinde çalışma ilerliyor; untracked/tamamlanmamış veya yalnız source-harness geçen dosyalar ürün kapsamına eklenmiş sayılmaz. Kaynak→derin anlatım→etkileşim→tam yerleşik özet→bağımsız soru/çözüm→kota/süre doğru pratik ve normal giriş/offline/yeniden açılış kabulü aynı sırada yürütülür.
+Sonraki sıra 199/detail-48 Kayaçlar. 199–258 arasındaki 60 başlık için gerçek kaynak okuması ve sahipli kaynak dosyaları üzerinde çalışma ilerliyor; untracked/tamamlanmamış veya yalnız source-harness geçen dosyalar ürün kapsamına eklenmiş sayılmaz. Kaynak→derin anlatım→etkileşim→tam yerleşik özet→bağımsız soru/çözüm→kota/süre doğru pratik ve normal giriş/offline/yeniden açılış kabulü aynı sırada yürütülür.
 
 Kalan amaç bütün 479 başlığın ve ilgili gerçek materyal bilgilerinin açıklayıcı öğretimle işlenmesi; kalan branş kotalarının tamamlanması; doğrulanmış ÖSYM kaynak kapsamının genişletilmesidir. ÖSYM’nin 20 yıllık tüm arşivi veya bütün Drive bitmiş sayılmaz. Fiziksel cihaz, temiz Windows kurulum/portable taşıma ve native sürümler arası ilerleme koruması ayrıca sınanmalıdır. Eski öğrenme/taslak/not/tekrarlar korunur; kayıt veya model süresinden otomatik ustalık üretilmez.
+
+Sonraki iki kaynak paketi tek geniş 0.16.0 güncellemede birleştirilecek. Özel çalışma dalındaki kısmi 234 anlatım/2.140 soru, ilk 228 hazır sıra ve 542 birim/62 ek tarayıcı kabulü yayımlanan 0.15 kapsamı değildir. Nihai 60 başlıkta ikinci okuyucu, etkileşim ve bütün ürün kabulü tamamlanmadan yayınlanmaz.
 
 ---
 
