@@ -1,8 +1,31 @@
+# 0.15 kaynak yakın okuması ve öğretime aktarım
+
+Bu tur 30 ünite,245 kapsam bölümü,122 çözümlü örnek ve 300 özgün soru ekler. Özel Drive kimlikleri, kişisel çalışma kayıtları, ham PDF'ler veya indirme URL'leri Git'e girmez. Kaynakça/indirme tek başına bütün arşivin işlendiği anlamına gelmez.
+
+| Ders | Gerçek okuma sınırı |
+| --- | --- |
+| Veri analizi | Canlı Aurelia 037'nin 7 sayfası; MEBİ TYT Matematik PDF 109–112/basılı 107–110. OGM 16 slaytın metin katmanı yazarca, bütün 16 gerçek raster slayt ve iki sayfalık etkinlik bağımsız okuyucu tarafından görüldü. |
+| AYT fizik | MEBİ PDF 11–22;26 slayt vektör ve 14 slayt vektör/bağıl hız sunularının metni ve raporda ayrılan gerçek şekiller; tek sayfalık OGM özetinin tamamı görselden. Bütün grafiklerin yalnız metin çıkarımıyla görüldüğü iddia edilmez. |
+| Kimya | Canlı Aurelia 036–047:12 PDF/84 sayfa,042 ve 044 mevcut v1.1. MEBİ PDF 65–94 ve üç OGM fasikülünün 21 öğretim sayfası. MEBİ 81+ sonraki konuların sınırı olarak da okundu; hepsi bu 12 yeni ünitede tamamlandı sayılmaz. |
+| Biyoloji | MEBİ AYT PDF 11–24, genetik varyasyon için gerçek TYT 145–146; OGM Sinir Sistemi I PDF 10–17 ve iki özel etkinlik. Canlı 002 Genetik 6,003 Nöron 7,004 AP 9 sayfa; kalan dört sinir başlığında MEBİ/OGM kullanıldı. Canlı kağıt klasörünün 001–004 yanıtı tüm Drive'da küresel yokluk kanıtı değildir. |
+| Coğrafya | Canlı Aurelia 008–011'in 28 sayfası ve iki OGM Cepte fasikülünün 17 öğretim sayfası. Bu tur ayrı MEBİ kitabı açılmış sayılmaz; kağıtlardaki dolaylı atıflar bağımsız kaynak okuması diye sunulmaz. |
+| Türkçe | Canlı Aurelia 011–013'ün 21 sayfası. OGM Fiiller 21–30, Ögeler 34 ve Türler 33 sayfalık notların metni; resmî soru son sayfaları ayrıca anahtar doğrulanmış sayılmaz. MEBİ 107–109,114–120/basılı 105–107,112–118 ve dört kritik gerçek şekil. |
+
+Özgün öğretimde kritik sınırlar korunur: histogramda adet/yoğunluk ve grup genişliği; okul mod tanımı/n−1; kuvvet uygulama noktası ile serbest vektör cebiri; bağıl hız–uzaklık değişimi; akıntı telafisinin hız koşulu; atomik kütle/gazın koşulu; ürün dönüşümü/verim/saflık; mg/L≈ppm yoğunluk varsayımı; nöron hızı/frekansı/genliği; glia/miyelin/boğum ve pompa–kanal; iklimin temsili aylık verileri/ayrı ideal düşey sütunu; litosferin kabuk+sert üst manto olması; Türkçe hazırlanmış bağlamların genel otomatik dil çözümlemesi olmaması.
+
+Gerçek kaynak çelişkileri yanlış anahtar olarak aktarılmadı: OGM CO/O₂ sınırlayıcı etiketi,40% hesabının altındaki 25% satırı, MEBİ negatif/sıfır vektör çarpanı genellemesi ve sinir şemasındaki iyon oku koşulları bağımsız hesapla düzeltildi. 300 sorunun tamamı,122 örnek ve modellerin anlamlı sınırları ikinci okuyucularca bağımsız denetlendi; düzeltmelerin ilk başarısız kanıtları korunur. Kaynaktaki bir geçmiş ÖSYM atfını okumak, onun asıl kitapçığını ve anahtarını ayrıca doğrulamak değildir. Yeni 300 kart özgündür, resmî soru etiketi yoktur.
+
+Eski 8.845 dosya envanteri sonradan eklenen kağıtları kaçırıyordu; her aile canlı klasör/ad metadata'sını yeniden doğruladı. Bu tur 30 üniteyi bitirmek tüm Drive arşivinin bittiği anlamına gelmez. Detaylı okuma ledger'ları/özel SHA'lar özel çalışma alanında, ürün kapsamı CONTENT_COVERAGE'dadır.
+
+---
+
+## Tarihsel doğrulanmış 0.14 kaydı
+
 # 0.14.0: 139–168 sırasındaki 28 yeni ünitenin kaynak sınırları
 
-Son yerel C6 kontrolü: 414 birim, 361 tarayıcı, Pages/Electron ve gerçek 0.13→0.14 yükseltmesi PASS; uzak yayın henüz bekleniyor.
+Son C6 yerel kabulü ve aynı kaynakla uzak yayın tamamlandı: 414 birim, CI ve canlıda ayrı 361/361 tarayıcı, Pages üç iş, Windows/Linux paketli çevrimdışı kabul ve Android 0.14.0/kod 22 imza kontrolü PASS. Sekiz alpha dosyası yayımlandı; fiziksel cihaz ve native sürümler arası yükseltme ayrı kapsamdadır.
 
-0.14 adayı, doğrulanmış çalışma sırasının 139–168. başlıklarını kapsar. Önceden
+0.14 sürümü, doğrulanmış çalışma sırasının 139–168. başlıklarını kapsar. Önceden
 hazır mol ve çarpanlara ayırma anlatımları yeniden sayılmadan 28 yeni etkileşimli
 ünite eklendi: 236 bölüm, 479 paragraf, 121 çözümlü örnek, 121 hatırlama ve
 280 özgün beş seçenekli soru. Toplam 174 anlatım, 146 ayrıntılı rehber,

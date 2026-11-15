@@ -1,6 +1,35 @@
-# 0.14.0 — son C6 yerel kabulü
+# 0.15.0 — yerel kabul tamamlandı, uzak yayın bekleniyor
 
-0.14 adayı, doğrulanmış çalışma sırasının 139–168. başlıklarını kapsar. Önceden
+Çalışma sırasının 169–198. başlıklarına 30 yeni ünite eklendi: toplam 204 anlatım, 176 ayrıntılı rehber, 204 yerleşik özet ve 1.840 özgün soru. Son uygulama kaynağı `abd6cdded9d809b77ca89fb5918576f22c7de2a5`; ardından yalnız tamamlanmış 0.14 yayın belgeleri birleştirildi. C3 artefaktının 123 dosyası sabittir.
+
+C3 kaynak kontrolü, 478/478 birim testi ve derleme PASS. Son tam tarayıcı koşusu **423/423 PASS**, iki worker ile 18,8 dakika. Test veya assertion çıkarılmadı. Gerçek Electron'da 25 model ailesi, iki eski soru rotası, HTML taslak iptal→tam kayıt aynılığı→onay, çevrimdışı kullanım/yenileme ve aynı profil ile süreç yeniden açılışı PASS; renderer hatası yok. Pages alt yolunda 25 aile ve iki eski soru rotası ilk çevrimdışı kullanım/kayıt/yenileme ile PASS.
+
+Gerçek 0.14→0.15 service-worker güncellemesinin hemen ardından eski state, belge ve katalog birebir aynı kaldı. Eski arayüzde başlatılmış 25 soruluk AYT denemesinin tam soruları, cevabı, bayrağı ve bitiş süresi korunur; yeni katalog ayrı 37 soru gösterir. 5/5 oturum, 17 Kasım/21 Kasım/5 Aralık tekrarları, kontrol edilmiş yanlış soru taslağı, notlar, ayarlar ve 870 bayt sentetik eski PDF korunur; XP 25→25. Altı yeni model ilk kez çevrimdışı açılıp yenilendi. Bekleyen güncelleme, 25/37 ayrımı ve yeni model ekran görüntüleri ayrıca görüldü. Bu web yükseltmesi, iki native sürüm arası test değildir.
+
+## Kanıtlanan kusurlar ve onarımlar
+
+- **YKS-068:** 320 px/UI 200/text 150 görünümünde gerçek 45 px kimya metni, dar iç boşlukta sözcükleri bölüyordu. Görünür ve erişilebilir kontrol etiketi birlikte “İlerleme (%)” oldu; font boyutu ve öğretim korunarak iç yatay boşluk azaltıldı. C1'de yeni DOMRange regresyonu üç FAIL; C2'de aynı üç vaka ve gerçek 50→100 kontrolü dört PASS. Son C3 tam koşuda da geçer. Veri, 120 soru ve keşif anahtarları korunur.
+- **YKS-069:** Geliştirme PWA hook'u her render'da yeni updater üretiyor, WebUpdates effect'i tekrar bildirim/render döngüsüne giriyordu. Gerçek Vite menü/tema/ölçek/arama testi önce FAIL, güncel updater ref ile tutulunca PASS. Üretim hook'u zaten sabitti; üretimde aynı döngü var denmez. Bu bir yerel geliştirme regresyonudur, uzaktaki site testi sayılmaz.
+- **YKS-070:** Fizikte 390 px telefon şemasındaki 700 birim viewBox, etiketleri 7,24 CSS px'e düşürüyordu. Eşit fiziksel eksen ölçeği ve eski ok koordinatları korunarak duyarlı SVG düzeni onarıldı. Son üç vakada CTM×fontSize≥16 px, SVG sınırları ve eski d/cx/cy/world kontrolleri geçer.
+- **Soru öncülü:** “Verilen denkleme göre” başvurusu için gerçek denklem görünür soru kökü/pasajında bulunmalıdır. Yalnız ipucu veya açıklamadaki denklem öncül sayılmaz. Olumlu ve olumsuz regresyonlar geçer.
+
+## Önceki koşuların sınırları
+
+C1'de 477 birim ve yeni 61 tarayıcı vakası PASS idi. Gerçek sözcük kusuru görülünce ilk tam 422 koşu bilinçli durduruldu: 106 PASS, 2 kesilen, 314 çalışmayan. C1 normal uygulamada matematik 12 görünüm, biyoloji 28 görünüm ve dört ek grup, coğrafya 16 görünüm/75 glif kontrastı PASS idi; kimya 48 çalışma kontrolü geçse de sözcük kusuruyla bütün görsel kabul geçmedi. Bunlar son C3 kabulünün yerine yazılmaz.
+
+İlk C3 tam koşuda, dört CPU kotasında eşzamanlı native/SW ve özel tarayıcı sayımları sırasında yük 19 ölçüldü: 82 PASS, 2 zaman aşımı FAIL, 2 kesilen, 337 çalışmayan. Diğer ağır süreçler durdurulunca aynı C3 baytları, assertion'lar ve süre sınırlarıyla aynı iki eski test 12,5 s/3,5 s PASS; ardından tam 423/423 PASS. İlk günlükler korunur, assertion veya zaman sınırı gevşetilmedi.
+
+Özel veri taraması 71 değişen metin yolunda 8.993 özel kimlik ve 9.004 bağlantıyı karşılaştırdı; özel kimlik, ham materyal, binary veya hassas örüntü bulunmadı. 752 bağımlılık kaydı değişmedi. Yayın korumasının güncel 0.15.0/kod 23 için 18 sentetik vakası PASS; eski/yanlış sürüm ve eksik/çoğaltılmış paketler reddedildi.
+
+Uzak CI, yayımlanan HTTPS, Pages ve Android kod 23 paket yayını henüz bekleniyor. Fiziksel Android, temiz Windows kurulumu, portable taşıma ve native sürümler arasında veri koruyan yükseltme NOT TESTED.
+
+---
+
+## Tarihsel doğrulanmış 0.14 kaydı
+
+# 0.14.0 — yayın ve paket kabulü tamamlandı
+
+0.14 sürümü, doğrulanmış çalışma sırasının 139–168. başlıklarını kapsar. Önceden
 hazır mol ve çarpanlara ayırma anlatımları yeniden sayılmadan 28 yeni etkileşimli
 ünite eklendi: 236 bölüm, 479 paragraf, 121 çözümlü örnek, 121 hatırlama ve
 280 özgün beş seçenekli soru. Toplam 174 anlatım, 146 ayrıntılı rehber,
@@ -38,11 +67,10 @@ görünüm; C4 coğrafya 28 görünüm ve 48 glif ölçümü ayrı kapsamlarda P
 Glif kontrastının en düşüğü 5,967 idi. Bu önceki görsel sonuçlar C6
 tam tarayıcı kabulü veya fiziksel cihaz testiyle eşitlenmez.
 
-Özel veri taraması 64 değişen metin yolunu, eski 8.845 ve canlı metadata'yla
+Özel veri taraması 65 değişen metin yolunu, eski 8.845 ve canlı metadata'yla
 8.959 özel kimlik/bağlantıyı kontrol etti; özel kimlik, ham PDF/binary veya
 secret örüntüsü bulunmadı. 752 bağımlılık kaydı değişmedi. Sürüm/paket
-korumasının 18 sentetik vakası PASS. CI, canlı Vercel/Pages ve yeni paket
-release kabulü henüz bekleniyor; bu yerel sonuçlar yayın kabulü sayılmaz.
+korumasının 18 sentetik vakası PASS. Uzak kabul sonuçları aşağıdadır.
 Fiziksel Android, temiz Windows kurulum, portable taşıma ve iki native sürüm
 arasında veri koruyan yükseltme NOT TESTED.
 
@@ -56,9 +84,30 @@ yanıtı 20 saniye geciktirilince hata yeniden üretildi. Test gerçek
 serviceWorker.ready, controllerchange ve activated durumunu beklediğinde
 bütün eski çevrimdışı/model/kayıt asserleri geçti; normal preview odaklı 2/2
 ve kaynak kontrolü PASS. Test veya assertion çıkarılmadı; uygulama kodu ve
-111 çıktı baytı değişmedi. Yeni aynı-SHA CI/Pages/canlı kapıları bekleniyor.
+111 çıktı dosyasının baytları değişmedi. Son aynı-SHA CI/Pages/canlı kapıları geçti.
 Uzak trace indirilemediği için trace görüldü denmedi; iş logu ve gerçek
 önce/sonra tarayıcı kanıtı kullanıldı.
+
+## Doğrulanmış yayın
+
+Kaynak `6c888e66cb81a0594264784cb760f22bed3c2dc3`. [CI 43730467669](https://github.com/kaansavukduran/yksmania/actions/runs/43730467669)
+dört iş PASS: kaynak/derleme, 414 birim, 361/361 tarayıcı; gerçek Windows ve
+Linux paketleriyle çevrimdışı kullanım, kayıt, aynı profil onayı ve yeniden
+açılış; Android paket ve imza kontrolü. [Canlı Vercel 43730808569](https://github.com/kaansavukduran/yksmania/actions/runs/43730808569)
+361/361 PASS; tam tarayıcı koşuları iki worker ile yapıldı.
+[Pages 43730804858](https://github.com/kaansavukduran/yksmania/actions/runs/43730804858)
+derleme, dağıtım ve gerçek HTTPS kabulü üç iş PASS. Her iki yayının index.html,
+sw.js ve version.json dosyaları normal TLS ile donmuş yerel karşılıklarına
+bayt eşittir; Vercel doğru kaynakla READY durumundadır.
+
+[Release 43732075907](https://github.com/kaansavukduran/yksmania/actions/runs/43732075907)
+PASS; [v0.14.0-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.14.0-alpha.1)
+sekiz dosyayla yayımlandı, taslak değil. Tag ve verified-run aynı kaynak ve
+başarılı CI'ı gösterir. SHA256SUMS.txt yedi dosya listeler; normal TLS ile
+indirilen verified-run ve Android-verification dosyalarının iki hash'i
+listeyle eşleşir. GitHub'ın sekiz varlık digest'i de karşılaştırıldı. Android
+paketi com.fragaria.yksmania, sürüm 0.14.0, sürüm kodu 22; v2 imzası PASS.
+Beş büyük paket dosyası ayrıca yerelde indirilip hash'lenmedi.
 
 ---
 
