@@ -56,7 +56,7 @@ yanıtı 20 saniye geciktirilince hata yeniden üretildi. Test gerçek
 serviceWorker.ready, controllerchange ve activated durumunu beklediğinde
 bütün eski çevrimdışı/model/kayıt asserleri geçti; normal preview odaklı 2/2
 ve kaynak kontrolü PASS. Test veya assertion çıkarılmadı; uygulama kodu ve
-111 çıktı baytı değişmedi. Yeni aynı-SHA CI/Pages/canlı kapıları bekleniyor.
+111 çıktı dosyasının baytları değişmedi. Yeni aynı-SHA CI/Pages/canlı kapıları bekleniyor.
 Uzak trace indirilemediği için trace görüldü denmedi; iş logu ve gerçek
 önce/sonra tarayıcı kanıtı kullanıldı.
 
