@@ -1,40 +1,42 @@
-YKSMania 0.13.0 alpha 1
+YKSMania 0.14.0 alpha 1 — yayın adayı
 
-Önceden anlatımı hazır 13 başlığa 130 açıklamalı özgün soru eklendi: sayı
-basamakları, bölme/bölünebilme, EBOB–EKOK, denklemler, eşitsizlikler, katman
-elektron dizilimi ve tarihin ilk yedi başlığı. Yeni anlatım veya model eklenmedi.
-Toplam 146 anlatım, 118 rehber, 146 kopya kağıdı ve 1.260 soru. Hazır 146 anlatımın
-tamamı ve sıralı ilk 138/479 başlık anlatım+soru içerir; bütün arşiv tamamlanmadı.
-Önceki 1.130 soru, ders gövdeleri ve kişisel kayıtlar korunur. Öğrenci kaynak yüklemez.
+0.14 adayı, doğrulanmış çalışma sırasının 139–168. başlıklarını kapsar. Önceden
+hazır mol ve çarpanlara ayırma anlatımları yeniden sayılmadan 28 yeni etkileşimli
+ünite eklendi: 236 bölüm, 479 paragraf, 121 çözümlü örnek, 121 hatırlama ve
+280 özgün beş seçenekli soru. Toplam 174 anlatım, 146 ayrıntılı rehber,
+174 yerleşik kopya kağıdı ve 1.540 soru; ilk 168/479 başlık anlatım ve soruyla
+hazırdır. Eski 1.260 sorunun bütün alanları ve 147 eski dersin soru dışındaki
+alanları korunur. Öğrenci PDF veya kaynak yüklemez. Tüm arşivin, tüm 479
+başlığın veya son 20 yıllık bütün resmî sınavların tamamlandığı iddia edilmez.
 
-Yarım çalışmayı değiştirme, ilerleme yedeği geri yükleme ve oturum geri alma
-uygulama içi açık onay kullanır. Vazgeç/Escape kayıtları korur; çift tıklama
-kilidi ve kalıcı kayıt öncesi onay vardır. Aynı profil masaüstü/offline/reload
-ve gerçek 0.12→0.13 web yükseltmesi eski kayıtları, notları ve XP 25’i korudu.
+Ekoloji, coğrafya, optik, kimyanın kanunları/mol hesapları, grafikler/kümeler/
+mantık ve ek fiil; anlamlı etkileşim, tahmin/gerekçe ve 121 çözümlü örnekle işlendi.
+TYT karma 110/151 dk 15 sn, AYT Sayısal 25/56 dk 15 sn ve 12 branş kısa pratik setidir;
+resmî 120/80 dağılım değildir. Eski deneme/soru taslağı ve kişisel kayıtlar korunur.
 
-Kaynak ba8f553cbf8dff2dae985921096378ccd5908503; CI 43715126173 dört iş PASS: 355 birim/303 tarayıcı,
-Windows/Linux gerçek paketli kabulü, Android 0.13.0 (sürüm kodu 21), v2 imza.
-Canlı Vercel 43715186079: 303/303 PASS; Pages 43715151603: üç iş PASS.
-Release 43716979510: sekiz dosya; tag/verified-run aynı kaynağa bağlı.
-SHA256SUMS.txt yedi dosya listeler; iki indirilen kanıt dosyasının hash’i eşleşir.
-Beş büyük paket dosyası ayrıca yerelde indirilip hash’lenmedi. Yerel 302/303 ve eski
-arama beklentisinin 5/5 onarımı, son uzak 303/303 sonuçlarından ayrı kayıttır.
+Son C 6 kaynak kontrolü ve 414/414 birim testi PASS; 361 tarayıcı vakası listelendi.
+Bunlar runtime/yayın kabulü değildir. C 6 tam tarayıcı, Pages, Electron, gerçek
+0.13→0.14 web güncellemesi ve uzak CI/yayın kabulü henüz bekleniyor. Önceki
+C 4 tam koşu 359/360 PASS idi: yeni Basınç ve Rüzgârlar başlığı eski Basınç
+kopya kağıdı seçicisini belirsiz yaptı; tam düğme adına geçildi. C 4'ün 57 yeni
+ünite kabulü, 19 model ailesiyle Pages/Electron ve ayrı görsel denetimleri
+geçmişti; bu sonuçlar C 6'nın yeni runtime kabulü yerine kullanılamaz.
 
-TYT karma 105, AYT karma 25 ve 11 branş kısa pratik setidir; tam 120/80 resmî
-dağılım değildir. Yeni deneme seçimi mevcut havuzdan çeşitlenir; başlamış ve
-bitmiş denemenin tam soruları sabitlenir. Küçük havuzda sorular tekrar gelebilir.
+C 5/C 6'da iki gerçek kusur onarıldı: coğrafya gerekçesi state sınırını aşmaması
+için 120 karakterle hem girişte hem gösterimde sınırlandı; sayı alanında
+1800 seri yazarken ara değerin 4000'e kırpılması, yerel taslak ve blur/Enter
+ile tek commit kullanılarak düzeltildi. 361. regresyon uzun gerekçeyi
+çevrimdışı yeniden açar. Sayısal smoke girdileri gerçek Tab ile commit eder.
+Önceki başarısızlıklar özel kanıtlarda ve tarihsel kayıtta korunur.
+
+Fiziksel Android, temiz Windows kurulumu, portable taşıma ve iki native sürüm
+arasında veri koruyan yükseltme NOT TESTED. Son doğrulanmış yayımlanmış paket
+0.13.0'dır; bu 0.14 adayının yayınlandığı anlamına gelmez.
 
 Web: https://yksmania.vercel.app
 Pages: https://kaansavukduran.github.io/yksmania/
-İki adres ayrı ilerleme saklar; kişisel JSON yedeğiyle aktarım yapılabilir.
-Web ilk çevrimiçi hazırlıktan sonra, native arayüz yerel dosyalardan çalışır.
 
-Windows Setup.exe kurulum, Portable.exe doğrudan çalıştırma içindir; x64 ve
-Authenticode imzasızdır. Linux AppImage’e çalıştırma izni ver; DEB Debian/Ubuntu
-içindir. Android APK debug imzalı alpha test paketidir: 0.13.0/code 21, minimum
-API 24 ve güncel WebView. Debug anahtarı sürümler arasında değişebilir;
-geçişten önce kişisel ilerleme yedeğini dışa aktar.
-
-Fiziksel Android, temiz Windows kurulumu, portable taşıma ve iki native sürüm
-arasında veri koruyan yükseltme NOT TESTED. Kaynak okuma sınırları
-SOURCE_REVIEW’da; bütün kabul, ilk başarısız koşular ve kalan sınırlar FORGE/QA’da.
+Windows Setup kurulum, Portable doğrudan çalıştırma içindir; Authenticode
+imzası yoktur. Linux AppImage çalıştırma izni/DEB Debian–Ubuntu; Android 0.14.0
+sürüm kodu 22, debug imzalı test APK, minimum API 24 ve güncel WebView gerektirir.
+Debug anahtarı değişebilir; kişisel ilerleme yedeğini geçişten önce dışa aktar.

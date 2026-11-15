@@ -1,5 +1,10 @@
 import { _electron, expect } from "@playwright/test";
 import path from "node:path";
+import {
+  forge014SmokeCases,
+  runForge014SmokeCase,
+  assertForge014ProcessRestart,
+} from "./forge014-smoke-cases.mjs";
 const profile =
   process.env.YKSMANIA_TEST_PROFILE ||
   path.resolve("../work", `desktop-test-${Date.now()}`);
@@ -554,6 +559,12 @@ try {
       );
   }
 
+  // Keep every earlier offline family flow above intact; add the six 0.14 families.
+  expect(forge014SmokeCases).toHaveLength(6);
+  const forge014Snapshots = [];
+  for (const unit of forge014SmokeCases)
+    forge014Snapshots.push(await runForge014SmokeCase(page, navigate, unit));
+
   const mathematics = [
     /Temel kavramlar: sayı, değer/,
     /Tek–çift ve işaret:/,
@@ -665,6 +676,10 @@ try {
   page = await app.firstWindow();
   page.on("pageerror", (error) => errors.push(String(error)));
   await page.waitForSelector(".hero");
+  // Reopen saved 0.14 models in this same real profile after the native restart.
+  await page.context().setOffline(true);
+  await assertForge014ProcessRestart(page, navigate, forge014Snapshots);
+  await navigate("Bugün");
   await expect(page.locator(".stat-number").first()).toHaveText("1");
   const dailyTheory = page
     .getByRole("region", { name: "Konu planı", exact: true })
@@ -1106,6 +1121,11 @@ try {
       sixNewSourceFamiliesOfflineReload: "PASS",
       sevenContinuationFamiliesOfflineReload: "PASS",
       sixAdditionalSourceFamiliesOfflineReload: "PASS",
+      forge014FamiliesOfflineHtmlStateAndReload: forge014Snapshots.map(
+        (item) => item.id,
+      ),
+      forge014SameProfileProcessRestart: "PASS",
+      forge014ExplorationWithoutLearningCredit: "PASS",
       orderedPlanAndRestart: "PASS",
       ogmChemistryVisuals: "PASS",
       mathematicsVisualsAndRestart: "PASS",

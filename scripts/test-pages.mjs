@@ -2,6 +2,10 @@ import { createServer } from "node:http";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { chromium, expect } from "@playwright/test";
+import {
+  forge014SmokeCases,
+  runForge014SmokeCase,
+} from "./forge014-smoke-cases.mjs";
 
 const prefix = "/yksmania/";
 const evidence = path.resolve(
@@ -373,6 +377,16 @@ try {
       );
     cases.push(unit.id);
   }
+  // Existing model actions above establish a real durable state. New families
+  // still open for the first time offline; never invent an empty IDB baseline.
+  expect(forge014SmokeCases).toHaveLength(6);
+  const forge014Snapshots = [];
+  for (const unit of forge014SmokeCases) {
+    forge014Snapshots.push(await runForge014SmokeCase(page, nav, unit));
+    cases.push(unit.id);
+  }
+
+  expect(cases).toHaveLength(19);
   await page.getByRole("button", { name: "Sorulara geç", exact: true }).click();
   await expect(page.locator(".answer")).toHaveCount(5);
   await page.locator(".answer").first().click();
@@ -573,6 +587,10 @@ try {
     manifestScope: manifest.scope,
     firstUseOfflineFamilies: cases,
     modelChangesAndReload: "PASS",
+    forge014FamiliesOfflineHtmlStateAndReload: forge014Snapshots.map(
+      (item) => item.id,
+    ),
+    forge014ExplorationWithoutLearningCredit: "PASS",
     questionFeedbackReload: "PASS",
     foundationQuestionRoutesOfflineReload: foundationRouteCases,
     navigation: "theory/cheatsheets/questions/exams/settings",

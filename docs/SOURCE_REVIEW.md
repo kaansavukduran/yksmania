@@ -1,3 +1,47 @@
+# 0.14.0: 139–168 sırasındaki 28 yeni ünitenin kaynak sınırları
+
+0.14 adayı, doğrulanmış çalışma sırasının 139–168. başlıklarını kapsar. Önceden
+hazır mol ve çarpanlara ayırma anlatımları yeniden sayılmadan 28 yeni etkileşimli
+ünite eklendi: 236 bölüm, 479 paragraf, 121 çözümlü örnek, 121 hatırlama ve
+280 özgün beş seçenekli soru. Toplam 174 anlatım, 146 ayrıntılı rehber,
+174 yerleşik kopya kağıdı ve 1.540 soru; ilk 168/479 başlık anlatım ve soruyla
+hazırdır. Eski 1.260 sorunun bütün alanları ve 147 eski dersin soru dışındaki
+alanları korunur. Öğrenci PDF veya kaynak yüklemez. Tüm arşivin, tüm 479
+başlığın veya son 20 yıllık bütün resmî sınavların tamamlandığı iddia edilmez.
+
+Kaynakları yazarlar gerçek PDF metinlerinden ve gerektiği sayfalarda görüntülerden
+okudu; altı aile yazar dışı soru/çözüm/model denetiminden geçti. Eski envanterde
+olmamak güncel Drive'da yokluk sayılmadı. Canlı Aurelia listeleri tazelenerek
+bulunan kâğıtların tamamı ayrıca okundu ve örtük öğretim açıkları giderildi.
+
+| Aile | Gerçek yakın okuma ve ek canlı kâğıtlar |
+| --- | --- |
+| Matematik | MEBİ PDF 58–71 ve 109–112; mevcut çarpanlara ayırma sınırı için 99–103. Aurelia 027/029/030/031/037:35 sayfa; beşinin PDF 2 görselleri. |
+| Fizik | MEBİ PDF 180–200,21 sayfa;184/188/195/198 şekilleri. Aurelia 021–024:36 sayfa ve her birinin 1–2. sayfa görselleri. |
+| Kimya | MEBİ PDF 56–65; OGM Su–Çevre 10–12,15–20; Temel Kanunlar 10,13–17; Mol 10–12,17–18. Aurelia 029–035 ve ayrı eski 031:8 PDF/60 sayfa. |
+| Biyoloji | MEBİ PDF 147–173,27 sayfa;155/156/160/164 görselleri. Aurelia 031–036:42 sayfa;032/034 PDF 2 görselleri. |
+| Coğrafya | OGM Doğa–İnsan 10–11,14–16; Atmosfer 10–17; Konum 15–17. Canlı Aurelia 001–007:49 sayfa. |
+| Türkçe | OGM Fiiller 10–15; boş Örnekler sayfaları çözüm kaynağı sayılmadı. Eski Aurelia 008 PDF 3,5,8–10 korundu; canlı 010 Ek Fiil 1–7 ve PDF 2 tablosu eklendi. MEBİ PDF 103–104/basılı 101–102; -ken sınırı için OGM 28. |
+
+Türkçede altı kişi çekimi, biz/siz/onlar satırları ve ad tabanı + ken ile
+fiil tabanlı zarf-fiil sınırı açıklandı; 48 mevcut model durumu ve on soru
+korundu. Coğrafyada UTC/sivil gün ile boylamsal saat ayrılır; °C/K sembolleri
+kontrastla okunur. Optikte normal, indis ve iki prizma yüzeyi gerçek geometriyle
+izlenir; odakta sonlu görüntü uydurulmaz. Kimyada sistem sınırı, sabit SI mol
+sabiti, gaz koşulu ve tanecik türü; biyolojide enerji/madde, stok/akı ve çevre
+mekanizmalarının sınırları korunur. Kaynaktaki bilimsel genellemeler ve OCR
+hataları kör biçimde aktarılmadı.
+
+280 yeni soru özgün öğretim sorusudur. Kâğıtların resmî arşiv atıfları, ilgili
+resmî kitapçık ve anahtar bu tur ayrıca açılmadan yeni doğrulanmış soru sayılmadı.
+Önceki sekiz resmî referans korunur; bütün ÖSYM geçmişi iddiası yoktur. Ham
+PDF, özel Drive kimlikleri, kişisel çalışma kayıtları ve kaynak metinleri Git'e
+konulmadı. Test/yayın durumu FORGE ve QA'da ayrıca tutulur.
+
+---
+
+## Tarihsel 0.13 kaynak kaydı
+
 # 0.13.0: 13 mevcut anlatıma bağımsız soru çalışması
 
 Bu sürüm 50 matematik, 70 tarih ve 10 kimya olmak üzere 130 özgün soru ekler.
@@ -11,19 +55,19 @@ PDF’lerinin tamamının yeniden okunduğu anlamına gelmez.
 
 | Soru kapsamı | Gerçekte okunan öğretim sayfaları |
 | --- | --- |
-| Sayı basamakları, bölme/bölünebilme, EBOB–EKOK: 30 soru | MEBİ TYT Matematik PDF18,20–23,25–27/basılı16,18–21,23–25; PDF19 ve24 yakın önbilgi. Aurelia006 PDF1–8,007 PDF1–8,008 PDF1–10. Üç Aurelia ilk sayfası ayrıca gerçek görüntüden incelendi. Dosyaların tamamı okunmuş sayılmadı. |
-| Birinci dereceden denklemler, basit eşitsizlikler: 20 soru | MEBİ TYT Matematik PDF33–34/basılı31–32 metin ve gerçek sayfa görüntüleri; Aurelia010–011 PDF1–8 metin. İki mevcut cebir rehberi bütünüyle okundu. Aurelia’nın9. sayfası ve bağlantılı resmî kitapçıklar bu görevde bağımsız okunmadı. |
-| Katman elektron dizilimi: 10 soru | MEBİ TYT Kimya PDF30–31/basılı28–29 metin ve gerçek görüntüler; Aurelia009 PDF1–5 metin,1–3 gerçek görüntüler. Mevcut katman rehberi ve model sınırları karşılaştırıldı. Kalan resmî soru arşivi yeni bağımsız okuma sayılmadı. |
-| İlk yedi tarih anlatımı: 70 soru | Aurelia001 PDF1–5,002 PDF1–7,003 PDF1–5,004 PDF1–6,005–007 PDF1–5. İlgili OGM Dersler Cepte öğretim gövdeleri ve aşağıda ayrı belirtilen görseller incelendi; bütün fasiküller veya anahtarlar okunmuş sayılmadı. |
+| Sayı basamakları, bölme/bölünebilme, EBOB–EKOK: 30 soru | MEBİ TYT Matematik PDF 18,20–23,25–27/basılı 16,18–21,23–25; PDF 19 ve 24 yakın önbilgi. Aurelia 006 PDF 1–8,007 PDF 1–8,008 PDF 1–10. Üç Aurelia ilk sayfası ayrıca gerçek görüntüden incelendi. Dosyaların tamamı okunmuş sayılmadı. |
+| Birinci dereceden denklemler, basit eşitsizlikler: 20 soru | MEBİ TYT Matematik PDF 33–34/basılı 31–32 metin ve gerçek sayfa görüntüleri; Aurelia 010–011 PDF 1–8 metin. İki mevcut cebir rehberi bütünüyle okundu. Aurelia’nın 9. sayfası ve bağlantılı resmî kitapçıklar bu görevde bağımsız okunmadı. |
+| Katman elektron dizilimi: 10 soru | MEBİ TYT Kimya PDF 30–31/basılı 28–29 metin ve gerçek görüntüler; Aurelia 009 PDF 1–5 metin,1–3 gerçek görüntüler. Mevcut katman rehberi ve model sınırları karşılaştırıldı. Kalan resmî soru arşivi yeni bağımsız okuma sayılmadı. |
+| İlk yedi tarih anlatımı: 70 soru | Aurelia 001 PDF 1–5,002 PDF 1–7,003 PDF 1–5,004 PDF 1–6,005–007 PDF 1–5. İlgili OGM Dersler Cepte öğretim gövdeleri ve aşağıda ayrı belirtilen görseller incelendi; bütün fasiküller veya anahtarlar okunmuş sayılmadı. |
 
 Tarih için OGM öğretim sınırı: İnsanlığın Hafızası Tarih/Neden Tarih/Zamanın
-Taksimi PDF10–12,14–15; İnsanlığın İlk İzleri/Yazının Gelişimi/Medeniyet
-Havzaları PDF10–12,14–15 metin ve17–19 görüntü; Orta Çağ siyasi yapı/ekonomi/
-ordu PDF10,12,15–16; Kanunlar/Avrasya/Boylardan Devlete PDF12–13,15,19;
-İslamiyet Yayılıyor/Emeviler/Abbasiler PDF10–13 görüntü ve11 tanım metni;
-Bilim Medeniyeti/Türklerin İslamiyeti Kabulü PDF16–17 mevcut metin ve18 görüntü;
-1072–1308/Oğuz Göçleri PDF10–12; İlk Fatihler/Türkleşme/Haçlılar
-PDF10–12,14,16–17 metin. Yalnız başlık çıkan bazı sayfalar ayrıca görüntüden
+Taksimi PDF 10–12,14–15; İnsanlığın İlk İzleri/Yazının Gelişimi/Medeniyet
+Havzaları PDF 10–12,14–15 metin ve 17–19 görüntü; Orta Çağ siyasi yapı/ekonomi/
+ordu PDF 10,12,15–16; Kanunlar/Avrasya/Boylardan Devlete PDF 12–13,15,19;
+İslamiyet Yayılıyor/Emeviler/Abbasiler PDF 10–13 görüntü ve 11 tanım metni;
+Bilim Medeniyeti/Türklerin İslamiyeti Kabulü PDF 16–17 mevcut metin ve 18 görüntü;
+1072–1308/Oğuz Göçleri PDF 10–12; İlk Fatihler/Türkleşme/Haçlılar
+PDF 10–12,14,16–17 metin. Yalnız başlık çıkan bazı sayfalar ayrıca görüntüden
 okundu; belirtilmeyen sorular, anahtarlar veya görseller tam incelenmiş sayılmadı.
 
 Matematikte sayı bloklarının onluk yazımı, başta sıfır ve farklı rakam koşulları
@@ -38,12 +82,12 @@ açık/kapalı uç, ve/veya, tam sayı bütçesi ve pozitiflik koşulu sorunun i
 Bağımsız okuyucunun bulduğu “sıfırdan uzakta” ipucu, pozitif sayıların sıfıra
 keyfî yaklaşabilmesini koruyan açık koşulla düzeltildi; doğru cevap değişmedi.
 
-Kimyada 2n² katman kapasitesi, bütün atomlar için dolma sırası diye öğretilmez.
+Kimyada 2 n² katman kapasitesi, bütün atomlar için dolma sırası diye öğretilmez.
 İlk 20 nötr temel hâl ve belirtilen basit iyonlarla sınırlı örnekler kullanılır.
 Periyot/grup nötr temel hâl kimliğinden okunur; He 18. gruptadır. İyonlaşma
 proton sayısını değiştirmez; katman çemberleri kesin elektron yolu sayılmaz.
 
-Tarihte yalnız kronolojik sıra nedensellik kanıtı değildir. Yıl0 yokluğu,
+Tarihte yalnız kronolojik sıra nedensellik kanıtı değildir. Yıl 0 yokluğu,
 yüzyıl sınırları, takvimin esası/miladı/yıl başlangıcı; serf/vassal,
 kurultay/modern parlamento, hanedan/medeniyet, temas/resmî kabul ve
 Malazgirt/kuruluş/Miryokefalon ayrımları korunur. Kaynaklardaki koşulsuz “ilk”
@@ -51,8 +95,8 @@ iddiaları, tek olaydan toplu kabul veya bütün bir döneme genelleme sorulara
 aktarılmadı. Her tarih sorusu gerekli bağlamı kendi pasajında taşır.
 
 130 soru yazar dışı içerik incelemesinden geçti: matematik ve cebirde bağımsız
-hesaplar; tarihte70 ve katmanda10 kartın bütün pasaj/seçenek/anahtar/ipucu/
-gerekçeleri okundu. Uygulamaya dönüşümde incelenen130 kartın alanları korunur,
+hesaplar; tarihte 70 ve katmanda 10 kartın bütün pasaj/seçenek/anahtar/ipucu/
+gerekçeleri okundu. Uygulamaya dönüşümde incelenen 130 kartın alanları korunur,
 yalnız kararlı uygulama kimliği tanımlanıp özel kaynak metadata’sı çıkarılır.
 Önceki 1.130 soru tam kayıtlarıyla kalır. Bu içerik denetimi tarayıcı, cihaz,
 kişisel başarı etkisi veya bütün ÖSYM arşivi kabulü değildir.
@@ -64,13 +108,13 @@ soru verileri ve önceki ders gövdeleri bu arayüz düzeltmesinde değişmedi.
 ## 0.12 önceki temel biyoloji soru onarımı
 
 Karbohidratlar, lipitler ve vitaminlerin mevcut anlatım/model kimlikleri korundu;
-her birine 10 açıklamalı özgün soru eklendi. MEBİ TYT Biyoloji PDF23–29 ve38–39,
-Aurelia005/006 öğretimi ile009p2–3’teki emilim/depo/işlevler karşılaştırıldı.
+her birine 10 açıklamalı özgün soru eklendi. MEBİ TYT Biyoloji PDF 23–29 ve 38–39,
+Aurelia 005/006 öğretimi ile 009 p 2–3’teki emilim/depo/işlevler karşılaştırıldı.
 Glikoz–galaktoz için kaynakta aşırı geniş kullanılan yapısal izomer ifadesi
-stereo ayrımıyla düzeltildi; B12 depo istisnası korundu. Yeni30 soru ikinci
+stereo ayrımıyla düzeltildi; B 12 depo istisnası korundu. Yeni 30 soru ikinci
 okuyucudan geçti; derlenen kartlarda anahtar/seçenek/metin dönüşümü de denetlendi.
 Bunlar resmî soru kopyası değildir. Üçüncü setin tüm verisi kökte bulunur;
-gösterilmeyen bir tabloya başvurulmaz. Yeni soru toplamı330, uygulama toplamı1130.
+gösterilmeyen bir tabloya başvurulmaz. Yeni soru toplamı 330, uygulama toplamı 1130.
 
 # 0.12.0: çalışma sırasındaki 109–138. başlıklar
 
@@ -81,12 +125,12 @@ PDF’ler öğretimin kapsamını belirlemek için incelendi; ham metinler, orij
 
 | Alan | Doğrudan okunan öğretim sınırı |
 | --- | --- |
-| Matematik | Aurelia 022–023 PDF s.1–6,024 s.1–9,025–026 s.1–8. MEBİ TYT Matematik PDF52/basılı50 işçi,55/53 karışım,56/54 hareket. Beş Aurelia şekli gerçek görüntü olarak incelendi. MEBİ’de ayrı faiz bölümü bulunmuş sayılmadı. |
-| Fizik | MEBİ TYT Fizik PDF158–179/basılı156–177: su, ses/deprem, ışık, gölge ve düzlem ayna. PDF159,163,170,173,178 şekilleri ayrıca görüntülendi. Aurelia016–020 orijinalleri bulunmadığından okunmuş gibi kaynak gösterilmedi. |
-| Kimya | MEBİ TYT Kimya PDF48–60/basılı46–58; Aurelia025–027 öğretim ve örnek PDF s.1–4. MEBİ PDF48,50,51,53,56 görsel incelemesi. Ayrı024/028 Aurelia kağıtları bulunmadı; ilgili öğretim MEBİ’den yazıldı. |
-| Biyoloji | MEBİ TYT Biyoloji PDF123–144/basılı121–142; Aurelia024–026 PDF s.1–7. AB0/Rh PDF135 ve soy ağacı PDF144 şekilleri görüntülendi. Ayrı027–030 Aurelia kağıtları bulunmadı; bu dört başlık gerçek MEBİ sayfalarına dayanır. |
-| Türkçe | Aurelia007 PDF s.1–8 ve008 s.1–10; doğrudan OGM Fiiller notu PDF2–25,27–29 ve31–42; OGM İsim Soylu Sözcükler PDF32–39. OGM34 fiil çatısı ve36 edat şekilleri görüntülendi. Resmî soru atıfları yeni bağımsız kitapçık/anahtar okuması sayılmadı. |
-| Tarih | Aurelia020–021 öğretim PDF s.1–4. OGM Dersler Cepte İnkılap12 sayı3 PDF10–21, sayı4 PDF10–22, sayı5 PDF10–21. OGM124 dış politika,125 ölüm/seçim,126 uluslararası düzen/kriz ve127 II. Dünya Savaşı notlarının ilgili öğretim slaytları metin olarak okundu; örnek harita/tablo ve sekiz kaynak sayfası ayrıca görüntülendi. Bütün slaytların veya arşiv sorularının tek tek incelendiği iddiası yok. |
+| Matematik | Aurelia 022–023 PDF s.1–6,024 s.1–9,025–026 s.1–8. MEBİ TYT Matematik PDF 52/basılı 50 işçi,55/53 karışım,56/54 hareket. Beş Aurelia şekli gerçek görüntü olarak incelendi. MEBİ’de ayrı faiz bölümü bulunmuş sayılmadı. |
+| Fizik | MEBİ TYT Fizik PDF 158–179/basılı 156–177: su, ses/deprem, ışık, gölge ve düzlem ayna. PDF 159,163,170,173,178 şekilleri ayrıca görüntülendi. Aurelia 016–020 orijinalleri bulunmadığından okunmuş gibi kaynak gösterilmedi. |
+| Kimya | MEBİ TYT Kimya PDF 48–60/basılı 46–58; Aurelia 025–027 öğretim ve örnek PDF s.1–4. MEBİ PDF 48,50,51,53,56 görsel incelemesi. Ayrı 024/028 Aurelia kağıtları bulunmadı; ilgili öğretim MEBİ’den yazıldı. |
+| Biyoloji | MEBİ TYT Biyoloji PDF 123–144/basılı 121–142; Aurelia 024–026 PDF s.1–7. AB 0/Rh PDF 135 ve soy ağacı PDF 144 şekilleri görüntülendi. Ayrı 027–030 Aurelia kağıtları bulunmadı; bu dört başlık gerçek MEBİ sayfalarına dayanır. |
+| Türkçe | Aurelia 007 PDF s.1–8 ve 008 s.1–10; doğrudan OGM Fiiller notu PDF 2–25,27–29 ve 31–42; OGM İsim Soylu Sözcükler PDF 32–39. OGM 34 fiil çatısı ve 36 edat şekilleri görüntülendi. Resmî soru atıfları yeni bağımsız kitapçık/anahtar okuması sayılmadı. |
+| Tarih | Aurelia 020–021 öğretim PDF s.1–4. OGM Dersler Cepte İnkılap 12 sayı 3 PDF 10–21, sayı 4 PDF 10–22, sayı 5 PDF 10–21. OGM 124 dış politika,125 ölüm/seçim,126 uluslararası düzen/kriz ve 127 II. Dünya Savaşı notlarının ilgili öğretim slaytları metin olarak okundu; örnek harita/tablo ve sekiz kaynak sayfası ayrıca görüntülendi. Bütün slaytların veya arşiv sorularının tek tek incelendiği iddiası yok. |
 
 Matematikte faiz birimi ve yeniden yatırma kuralı, karışımda homojenlik ve ayrı
 kütle hesabı, işçide sabit-bağımsız hız, havuzda fiziksel 0–kapasite sınırı ve
@@ -105,7 +149,7 @@ ilişkilendirilir. Hava ısınınca su miktarı kendiliğinden artmaz; lav yaln�
 sıcak diye plazma olmaz. Arıtma adımı doğrudan içilebilirlik onayı değildir.
 
 Biyolojide alel genin sürümüdür; gamet tek lokusta iki alelli sayılmaz.
-Bağlı genlerde eşit gamet oranları varsayılmaz. AB0/Rh modeli klinik nakil
+Bağlı genlerde eşit gamet oranları varsayılmaz. AB 0/Rh modeli klinik nakil
 uygunluğu veya kimlik kanıtı değildir; ilk gebelik koşulsuz zararsız diye
 öğretilmez. X/Y modeli bütün gelişim çeşitliliğini açıklayan teşhis değildir.
 Soy ağacında birden fazla uyumlu model varsa tek kesin sonuç üretilmez.
@@ -147,7 +191,7 @@ Dosya indirmek, içindeki bütün sayfaları incelemek anlamına gelmez.
 | Tarih | Aurelia 015–019; OGM Dersler Cepte Tarih 11 sayılar 3–7 ile İnkılap Tarihi 12 sayılar 1–2 içindeki ilgili öğretim sayfaları; OGM Tarih 11 özetleri 019,025–028. Tarihsel sıra ve belgelerin yetki sınırları karşılaştırıldı. |
 | Zarflar | Aurelia 006 öğretim s.1–5, yöntem/onarım s.8–12; OGM İsim Soylu Sözcükler PDF 24–31. MEBİ Türkçe bağımsız dosyası okunmadı; Aurelia atıfları doğrudan okuma sayılmaz. |
 
-Kaynak kusurları aynen taşınmadı: 5 katının 14 eksiği 5x−14'tür; eşeysiz
+Kaynak kusurları aynen taşınmadı: 5 katının 14 eksiği 5 x−14'tür; eşeysiz
 üreme ile endospor dayanıklılığı farklıdır; bütün virüslerin enzim taşımadığı,
 bütün omurgasızların açık dolaşımlı olduğu gibi genellemeler kullanılmadı.
 Mayozda homolog çift ile farklı çiftler ayrıldı. Kaldırmada ıslanan yüzey,
@@ -166,24 +210,24 @@ uygulamaya veya Git'e konulmadı.
 ## 0.10.0: çalışma sırasındaki 20 ünite
 
 59–78. başlıkların tamamı işlendi. 20 ayrı rehberde 189 açıklama bölümü,
-91 çözümlü örnek,92 aktif hatırlama ve200 özgün beş seçenekli soru var.
-Önceki300 tam soru kaydı korunur. Ham PDF, kişisel plan veya özel kaynak
+91 çözümlü örnek,92 aktif hatırlama ve 200 özgün beş seçenekli soru var.
+Önceki 300 tam soru kaydı korunur. Ham PDF, kişisel plan veya özel kaynak
 kimliği/URL'si yayımlanmaz; öğretim metinleri ve çizimler özgün olarak yazıldı.
 
 | Alan | Doğrudan okunan kaynak sınırı |
 | --- | --- |
-| Matematik5 | MEBİ TYT Matematik PDF38–48/basılı36–46; Aurelia012 mutlak değer PDF2–5,013 üsler2–5,014 bilimsel gösterim1–3,015 kökler1–3,016 oran-orantı ilgili öğretim sayfaları |
-| Fizik5 | MEBİ TYT Fizik basılı67–71,80–86,87–102,103–121,122–129; PDF sayfası basılı+2. İlgili PDF69/85/92/105/124/128 şekilleri ayrıca görüldü. Aurelia007 genleşme,008 hâl,009 durgun elektrik,010 akım,011 manyetizma öğretim ve örnekleri karşılaştırıldı |
-| Kimya2 | MEBİ TYT Kimya PDF40–43/basılı38–41; Aurelia017 kovalent bağ10sayfa ve018 molekül polarlığı12sayfa; OGM tek sayfalık Kovalent Bağ özeti görsel okundu |
-| Biyoloji2 | MEBİ TYT Biyoloji PDF66–73,75–78/basılı64–71,73–76; Aurelia zar taşınmaları12 ve sınıflandırma10sayfa; dört ilgili şekil ayrıca incelendi |
-| Türkçe3 | Aurelia003/004/005 PDF2–5,7–9; OGM İsim Soylu Sözcükler40sayfalık notun3–17,19–22bölümleri ve12/19görseli; Dersler Cepte isim15–16,sıfat18–20,zamir basılı15–16. Mevcut olmayan MEBİ Türkçe kitabı okunmuş sayılmadı |
-| Tarih3 | Aurelia012 PDF1–5,013/014 PDF1–6; OGM Tarih10 özet027–028 ve Tarih11 özet001–009 tek sayfaları görsel okundu. Tarih10 sunu068/069/070 millet,lonca/toprak ve vakıf öğretim sayfaları okunabilir metin üzerinden; metinsiz ara resimlerden ek iddia üretilmedi |
+| Matematik 5 | MEBİ TYT Matematik PDF 38–48/basılı 36–46; Aurelia 012 mutlak değer PDF 2–5,013 üsler 2–5,014 bilimsel gösterim 1–3,015 kökler 1–3,016 oran-orantı ilgili öğretim sayfaları |
+| Fizik 5 | MEBİ TYT Fizik basılı 67–71,80–86,87–102,103–121,122–129; PDF sayfası basılı+2. İlgili PDF 69/85/92/105/124/128 şekilleri ayrıca görüldü. Aurelia 007 genleşme,008 hâl,009 durgun elektrik,010 akım,011 manyetizma öğretim ve örnekleri karşılaştırıldı |
+| Kimya 2 | MEBİ TYT Kimya PDF 40–43/basılı 38–41; Aurelia 017 kovalent bağ 10 sayfa ve 018 molekül polarlığı 12 sayfa; OGM tek sayfalık Kovalent Bağ özeti görsel okundu |
+| Biyoloji 2 | MEBİ TYT Biyoloji PDF 66–73,75–78/basılı 64–71,73–76; Aurelia zar taşınmaları 12 ve sınıflandırma 10 sayfa; dört ilgili şekil ayrıca incelendi |
+| Türkçe 3 | Aurelia 003/004/005 PDF 2–5,7–9; OGM İsim Soylu Sözcükler 40 sayfalık notun 3–17,19–22 bölümleri ve 12/19 görseli; Dersler Cepte isim 15–16,sıfat 18–20,zamir basılı 15–16. Mevcut olmayan MEBİ Türkçe kitabı okunmuş sayılmadı |
+| Tarih 3 | Aurelia 012 PDF 1–5,013/014 PDF 1–6; OGM Tarih 10 özet 027–028 ve Tarih 11 özet 001–009 tek sayfaları görsel okundu. Tarih 10 sunu 068/069/070 millet,lonca/toprak ve vakıf öğretim sayfaları okunabilir metin üzerinden; metinsiz ara resimlerden ek iddia üretilmedi |
 
 Bilimsel sınırlar: esas karekök ve denklem kökü farklı; sıfır/negatif üs ve
 parantez kapsamı korunur. Standart bilimsel katsayı ile eşdeğer değer ayrılır.
 Genleşmede katsayı/kısıt; hâl değişiminde saf madde/basınç; devrede ideal
 kaynak/ohmik eleman; manyetik çizimde yaklaşım ve birimler açıkça verilir.
-Polar bağ tek başına polar molekül değildir; gerçek3B yönlerin bileşkesi
+Polar bağ tek başına polar molekül değildir; gerçek 3 B yönlerin bileşkesi
 kullanılır. Kimyasal polarlaşma oku δ+→δ− gösterim geleneğidir, SI dipol
 momenti yönü iddiası yapılmaz. Zar akışı maddeyi korur, protein ile ATP ayrı
 koşullardır; ozmoz basınç ve geçirgenlikle koşullandırılır. Sınıflandırma
@@ -191,14 +235,14 @@ koşullardır; ozmoz basınç ve geçirgenlikle koşullandırılır. Sınıfland
 
 Türkçe sorularında cümle ve gönderim kendi kartında tamdır. Kişi adı/duygu
 belirsizliği giderildi. Tarihte görev/yetki/sınıf, din/meslek, bağımsızlık/ilhak
-ayrılır. Bucaş1672 ile Zoravna1676 karşılaştırıldı; Nasuh Paşa1611/1612 kaynak
+ayrılır. Bucaş 1672 ile Zoravna 1676 karşılaştırıldı; Nasuh Paşa 1611/1612 kaynak
 farkı kesin cevap anahtarı yapılmadı. Kaynaktaki aşırı genellemeler aynen
-aktarılmadı. Yeni200 anahtar ve91 örnek ikinci incelemede yeniden hesaplandı.
+aktarılmadı. Yeni 200 anahtar ve 91 örnek ikinci incelemede yeniden hesaplandı.
 
 Yerleşik kopya kağıtları rehberlerden türedi; önceki akım kağıdının örnek ve
-uyarıları yeni rehberle birleştirilerek korundu. Toplam86 anlatım/58 rehber/
-88 kağıt/500 özgün soru, ilk78/479 hazırdır. Tüm arşiv veya son20yıl resmî
-soru bankası tamamlandı iddiası yoktur. Sıradaki başlık79:Sayı Problemleri.
+uyarıları yeni rehberle birleştirilerek korundu. Toplam 86 anlatım/58 rehber/
+88 kağıt/500 özgün soru, ilk 78/479 hazırdır. Tüm arşiv veya son 20 yıl resmî
+soru bankası tamamlandı iddiası yoktur. Sıradaki başlık 79:Sayı Problemleri.
 
 
 ## 0.9.2 — kaynak sırasını 58 başlığa genişletme
@@ -209,16 +253,16 @@ sorunun metin/seçenek/anahtar/pasajları birebir korunur. Yeni resmî soru akta
 
 | Ders | Doğrudan okunan sınır |
 | --- | --- |
-| Dünya Gücü Osmanlı | Aurelia 011 PDF2–10; OGM Tarih10 özetleri 017–026, her biri tek sayfa ve görsel okuma |
-| Türler/Lewis | MEBİ TYT Kimya basılı35–36/PDF37–38; Aurelia 014 PDF2–5 ve çizim kontrolü; OGM012 canlı sınıflama metni |
-| Isı/sıcaklık | MEBİ TYT Fizik basılı59–66,70–71; Aurelia006 PDF1–8; ayrı hâl değişimi için008’den sınırlı plato köprüsü |
-| DNA/RNA | Aurelia9sayfalık dosyanın tamamı; MEBİ AYT Biyoloji ikinci bölüm dosyası PDF32–36/basılı152–156; OGM Biyoloji2 önceki doğrulanmış PDF14 metni |
-| İyonik bağ/adlandırma | MEBİ TYT Kimya basılı35–38 canlı metni; Aurelia015/016 PDF1–3 |
+| Dünya Gücü Osmanlı | Aurelia 011 PDF 2–10; OGM Tarih 10 özetleri 017–026, her biri tek sayfa ve görsel okuma |
+| Türler/Lewis | MEBİ TYT Kimya basılı 35–36/PDF 37–38; Aurelia 014 PDF 2–5 ve çizim kontrolü; OGM 012 canlı sınıflama metni |
+| Isı/sıcaklık | MEBİ TYT Fizik basılı 59–66,70–71; Aurelia 006 PDF 1–8; ayrı hâl değişimi için 008’den sınırlı plato köprüsü |
+| DNA/RNA | Aurelia 9 sayfalık dosyanın tamamı; MEBİ AYT Biyoloji ikinci bölüm dosyası PDF 32–36/basılı 152–156; OGM Biyoloji 2 önceki doğrulanmış PDF 14 metni |
+| İyonik bağ/adlandırma | MEBİ TYT Kimya basılı 35–38 canlı metni; Aurelia 015/016 PDF 1–3 |
 
 Önemli sınırlar: Viyana kuşatması fetih değildir; kapitülasyon ve hilafetle ilgili
 tartışmalı ilk-tarih/devir anlatıları kesin cevap anahtarı yapılmadı. Atom/molekül/
 çok atomlu iyon ve radikal ayrılır; NO radikali özgün bilimsel ek olarak açıklanır.
-Lewis noktaları toplam elektron sayısı değildir (Na⁺10elektron, çizimde0nokta).
+Lewis noktaları toplam elektron sayısı değildir (Na⁺10 elektron, çizimde 0 nokta).
 Q=mcΔT’de faz/iş/dış aktarım sınırları ve denge modelinde C=mc açıkça yazılır;
 ısıl ilerleme gerçek zaman yasası değildir. Hâl değişimi/detail-121 hazır sayılmaz.
 DNA çift zincir koşulları, antiparalellik, doğrusal omurga ve RNA istisnaları
@@ -229,23 +273,23 @@ Cıva(I) için Hg₂²⁺ notu ve değişken metalin Roma rakamı hesabı korunu
 
 Ham PDF/sayfa görseli, özel kimlik veya kişisel kayıtlar Git’e alınmadı.
 Yeni modüller özgün öğretim/çizim/alıştırmadır; resmî ÖSYM sorusu iddiası yok.
-AIONIA canlı standart 0.9.2 kontrolünde yeniden okundu: v1.7; karakter/marka sanatı
+AIONIA canlı standart 0.9.2 kontrolünde yeniden okundu: v 1.7; karakter/marka sanatı
 aynı, SVG ve arayüz kontrolleri ürünün uygulama kapsamına göre değerlendirildi.
 
 
 ## 0.9.1 — sınıflandırma ve periyodik özellikler
 
-Drive’daki MEBİ TYT Kimya Konu Özetleri metninin basılı30–34 bölümü canlı
-bağlayıcıdan okundu; PDF sayfa indeksi ayrıca doğrulanmadı. Aurelia Kimya010,
+Drive’daki MEBİ TYT Kimya Konu Özetleri metninin basılı 30–34 bölümü canlı
+bağlayıcıdan okundu; PDF sayfa indeksi ayrıca doğrulanmadı. Aurelia Kimya 010,
 011,012,013 dosyalarının karşılaştırma/istisna/karar bölümleri s.2–3 yerel
 PDF’den okundu. Dört özgün ders,24 açıklama bölümü,12 çözümlü örnek,12 hatırlama
-ve20 beş seçenekli özgün soru üretildi; resmî soru aktarımı değildir.
+ve 20 beş seçenekli özgün soru üretildi; resmî soru aktarımı değildir.
 
 Sınırlar: H metal değildir; Hg sıvı metal, grafit iletken ametal allotropudur.
 Yarı metal sınır listesi MEBİ bağlamında verilir, Og’a oda koşulu gaz özelliği
 yüklenmez. Atom bulutu keskin sınır değildir; çap karşılaştırması model türüne
-bağlıdır. Eş elektronluda proton farkı, İE’de2A/3A ve5A/6A istisnaları korunur.
-Sıçrama için sabit3,5 katsayısı evrensel yasa yapılmaz. Elektron ilgisinin
+bağlıdır. Eş elektronluda proton farkı, İE’de 2 A/3 A ve 5 A/6 A istisnaları korunur.
+Sıçrama için sabit 3,5 katsayısı evrensel yasa yapılmaz. Elektron ilgisinin
 enerji işareti ve EN’nin birimsiz bağ içi ölçeği ayrılır; Cl/F ayrımı belirtilir.
 SVG yarıçapları yalnız nitel, İE sütunları seçili örnekte doğrusal/etiketlidir;
 büyük yazı için veriler ayrıca normal HTML metninde bulunur. Özel PDF/Drive
@@ -257,21 +301,21 @@ kimlikleri veya kaynak dosyalar uygulamaya/depo içine alınmadı.
 Kullanıcının son kararı: öğrenci PDF/katalog yüklemez. Kaynakların kendisi ve
 özel kimlikleri yayımlanmaz; aşağıdaki incelemelerden özgün uygulama anlatımı,
 örnek ve soru üretilir. Eski ilerleme/not/dosya baytları korunur, kaynak UI kaldırılır.
-Canlı AIONIA v1.7 okundu; onaylı Aion atlası ve marka sanatı değiştirilmedi.
+Canlı AIONIA v 1.7 okundu; onaylı Aion atlası ve marka sanatı değiştirilmedi.
 
 | Öğretim | Doğrudan okunan kaynak sınırı |
 | --- | --- |
-| Ses bilgisi/yapı | Aurelia Ses Bilgisi PDF1–17; Sözcükte Yapı1–19; canlı OGM Ekler/Sözcüğün Yapısı okunabilir tam metni, PDF indeksi ayrıca doğrulanmadı |
-| Çarpanlara ayırma | MEBİ TYT Matematik PDF98–103 ve105; OGM yöntemler PDF2–9,11sayfalık dosya; PDF2 görsel kontrol ve OGM Video Ders Notu okunabilir metni |
-| Geometri alan | MEBİ TYT Matematik PDF139–140 ve147–148, basılı137–138/145–146 |
-| Newton | MEBİ AYT Fizik PDF23–24,31; Aurelia Newton1–16 |
-| Elektrik alan | MEBİ AYT Fizik PDF105–106,113, basılı103–104,111 |
-| Mol | MEBİ TYT Kimya PDF63–65, basılı61–63; PDF63 görsel kontrol |
-| Kimyasal denge | MEBİ AYT Kimya PDF70–75, basılı68–73; PDF72 görsel kontrol |
-| Türev | MEBİ AYT Matematik PDF78–89, basılı76–87; tanım/kurallar/grafik/ekstremum/optimizasyon metinleri |
-| DNA/ATP | MEBİ AYT Biyoloji Bölüm2 PDF38–40 ve52–54, basılı158–160/172–174; Aurelia ATP1–5 |
-| Osmanlı siyaset/ordu/medeniyet | Aurelia008/009 PDF2–4,010 PDF2–5 ve7–9; aşağıdaki10 OGM tek sayfalık dosyanın tamamı görsel okundu |
-| Üç ek fen kağıdı | Aurelia Basınç PDF1–4, Kaldırma1–2, Akım1–4 |
+| Ses bilgisi/yapı | Aurelia Ses Bilgisi PDF 1–17; Sözcükte Yapı 1–19; canlı OGM Ekler/Sözcüğün Yapısı okunabilir tam metni, PDF indeksi ayrıca doğrulanmadı |
+| Çarpanlara ayırma | MEBİ TYT Matematik PDF 98–103 ve 105; OGM yöntemler PDF 2–9,11 sayfalık dosya; PDF 2 görsel kontrol ve OGM Video Ders Notu okunabilir metni |
+| Geometri alan | MEBİ TYT Matematik PDF 139–140 ve 147–148, basılı 137–138/145–146 |
+| Newton | MEBİ AYT Fizik PDF 23–24,31; Aurelia Newton 1–16 |
+| Elektrik alan | MEBİ AYT Fizik PDF 105–106,113, basılı 103–104,111 |
+| Mol | MEBİ TYT Kimya PDF 63–65, basılı 61–63; PDF 63 görsel kontrol |
+| Kimyasal denge | MEBİ AYT Kimya PDF 70–75, basılı 68–73; PDF 72 görsel kontrol |
+| Türev | MEBİ AYT Matematik PDF 78–89, basılı 76–87; tanım/kurallar/grafik/ekstremum/optimizasyon metinleri |
+| DNA/ATP | MEBİ AYT Biyoloji Bölüm 2 PDF 38–40 ve 52–54, basılı 158–160/172–174; Aurelia ATP 1–5 |
+| Osmanlı siyaset/ordu/medeniyet | Aurelia 008/009 PDF 2–4,010 PDF 2–5 ve 7–9; aşağıdaki 10 OGM tek sayfalık dosyanın tamamı görsel okundu |
+| Üç ek fen kağıdı | Aurelia Basınç PDF 1–4, Kaldırma 1–2, Akım 1–4 |
 
 OGM tek sayfalık tarih kaynakları: kuruluş görüşleri, Osmanlı–Bizans ilişkileri,
 Balkan fetihleri, Türk siyasi birliği, Fetret Devri, askerî sınıf, beylik dönemi
@@ -279,30 +323,30 @@ askerî gücü, tımar, yeniçeriler/devşirme ve Osmanlı’nın kılıcı yeni
 Bozuk font eşlemeli çıkarımların yerine orijinal sayfa görüntüleri okundu.
 
 Kavramsal düzeltmeler ve sınırlar: modern mol tam SI sabiti kullanılır, okul
-hesaplarında6,02×10²³ yaklaşımı açıkça ayrılır; kaynakta tek atom kütlesinin
+hesaplarında 6,02×10²³ yaklaşımı açıkça ayrılır; kaynakta tek atom kütlesinin
 pozitif üs yazım hatası tekrarlanmadı.22,4 L/mol için T/P belirtilir. Denge
 katsayıları evrensel hız yasası sanılmaz, saf fazın devamı ve sabitV/sabitP
-inert gaz ayrılır. Türevde artan x³ için0’daki sıfır türev karşı örneğiyle
+inert gaz ayrılır. Türevde artan x³ için 0’daki sıfır türev karşı örneğiyle
 pozitif eğimin gerekli koşul olmadığı anlatılır; f(a) değer,(a,f(a)) nokta;
 teğet denkleminde sonlu türev koşulu ve tanım dışı noktalar korunur.
 
-Yeni Türkçe20, ileri çarpanlara10, Osmanlı15 ve kaynaklı fen60 soru:105 özgün
-madde. Önceki115 kimlik/cevap anahtarı sabit fixture ile korunur. Çarpanlara
-ayırmanın eski5 sorusu aynı derste kalır; ileri10 ayrı soru setidir. Bu setin
+Yeni Türkçe 20, ileri çarpanlara 10, Osmanlı 15 ve kaynaklı fen 60 soru:105 özgün
+madde. Önceki 115 kimlik/cevap anahtarı sabit fixture ile korunur. Çarpanlara
+ayırmanın eski 5 sorusu aynı derste kalır; ileri 10 ayrı soru setidir. Bu setin
 özet haritasını ezmesi engellenir. Bütün yayınlanmış maddeler eksik metin/şekil
 atıf denetiminden geçer; yeni resmî ÖSYM maddesi eklendiği iddia edilmez.
 Sekiz eski sınav kaydı için sekiz tam bağlamlı özgün öğretim varyantı ve üç
 adımlı çözüm yerleşiktir; resmî sorunun birebir aktarımı olarak etiketlenmez.
 
-57 anlatım/28 ayrıntılı rehber/60 kağıt/220 soru. İlk45 sıralı başlık hazır;
+57 anlatım/28 ayrıntılı rehber/60 kağıt/220 soru. İlk 45 sıralı başlık hazır;
 46 Elementlerin sınıflandırılması henüz ayrı anlatım olarak işlenmedi. Osmanlı
-medeniyeti daha sonraki ayrı başlığa bağlıdır. Bütün479 başlık,126 özel kopya
-kağıdının tüm ayrıntıları ve20 yıllık ÖSYM arşivi tamamlandı iddiası yok.
+medeniyeti daha sonraki ayrı başlığa bağlıdır. Bütün 479 başlık,126 özel kopya
+kağıdının tüm ayrıntıları ve 20 yıllık ÖSYM arşivi tamamlandı iddiası yok.
 
 
 ## 0.8.0 — Selçuklu, elektron katmanları ve paragraf derinliği
 
-Canlı AIONIA v1.7 yeniden okundu. Karakter paftası/atlası değiştirilmedi.
+Canlı AIONIA v 1.7 yeniden okundu. Karakter paftası/atlası değiştirilmedi.
 Yeni öğretim metinleri kaynakların kavramsal kapsamıyla karşılaştırılan özgün
 anlatımlardır; özel PDF, dosya kimliği ve ham kitap sayfası yayımlanmaz.
 
@@ -318,7 +362,7 @@ kronoloji oku tek neden veya eşzamanlı toplumsal dönüşüm kanıtı sayılma
 Kaynaklardaki sınav atıfları yeni doğrulanmış ÖSYM sorusu kabul edilmez.
 
 Elektron modeli ilk 20 nötr temel hâl ve altı seçilmiş basit iyonla sınırlı:
-q=Z−e, 2n² kapasitesi/dolma sırası ayrımı, K/Ca istisnası, He'nin 18. grubu.
+q=Z−e, 2 n² kapasitesi/dolma sırası ayrımı, K/Ca istisnası, He'nin 18. grubu.
 Gerçek iyonun elektron sayısı ve katman çizimi birlikte değişir; proton sayısı
 ve nötr elementin periyot/grubu korunur. Şema elektronların gerçek yolu değildir.
 Birim denetimi 1…20 dağılımını veri tablosuyla ve seçilen iyon toplamıyla sınar.
@@ -359,7 +403,7 @@ Kavram ve çizim denetimi:
   tek–çifti yalnız tam sayıysa söylenir; sıfıra bölme tanımsızdır. Noktalar mutlak
   büyüklüğü gösterir. OGM’deki üs kuralı pozitif tam sayı üsle sınırlandırıldı.
 - Ardışık model eş aralıklı gerçek terimleri, n−1 aralığı ve ters sırayla eşlenen
-  ikinci toplamı gösterir. 2S = n(a+b); ortalamanın dizide bulunması gerekmez.
+  ikinci toplamı gösterir. 2 S = n(a+b); ortalamanın dizide bulunması gerekmez.
 - Asallık için √n dahil gerekli asal bölenler denenir: 49’da 7 atlanmaz. Tek bir
   gerçek bölen bileşikliği kanıtlar; eksik denemeyle asal sonucu verilmez. 1 ne
   asal ne bileşik, 2 asaldır. Gruplar birim adetlerini, kalan ayrı rengi gösterir.
@@ -448,7 +492,7 @@ Mevcut kütüphane içe aktarma ve PDF sayfaya gitme işlevleri bu dosyalar içi
 ## Kavram kontrolü ve çizimin sınırları
 
 - **Türev:** Kiriş eğimi, h ≠ 0 için fark oranıdır. x² üzerinde sağdan/soldan yaklaşım
-  2a’ya gider. |x| modelinin 0 noktasında sağ/sol değerler farklıdır; tek teğet/türev
+  2 a’ya gider. |x| modelinin 0 noktasında sağ/sol değerler farklıdır; tek teğet/türev
   çizilmez. Bu iki örnek, bütün fonksiyonlar için türev varlığı kanıtı değildir.
 - **Elektrik:** Alan ve kuvvet farklı niceliklerdir. Kaynaktaki denklemlerle birlikte
   E = F/q ve F = qE ilişkileri ve birimler kontrol edildi. Model tek sabit noktasal
@@ -477,7 +521,7 @@ resmî ÖSYM maddesi olarak sunulmuş sorular değildir.
 | --- | --- | --- | --- |
 | Türev | dt-1 … dt-5 | B, C, A, B, C | (2,5²−2²)/0,5 = 4,5; f′(2)=4; f′(−1)=−2; köşede sağ/sol eğimler −1/+1 |
 | Elektrik | ef-1 … ef-5 | B, B, C, A, B | 9.000 / 2² = 2.250 N/C; negatif q kuvveti ters çevirir; q iki katına çıkınca sabit E’de kuvvet iki kat olur |
-| Denge | eq-1 … eq-5 | B, C, A, C, C | Kc=2/1=2; toplam 6 ve B=2A için A=2, B=4; katalizörde hız sabitlerinin oranı değişmez |
+| Denge | eq-1 … eq-5 | B, C, A, C, C | Kc=2/1=2; toplam 6 ve B=2 A için A=2, B=4; katalizörde hız sabitlerinin oranı değişmez |
 | DNA | dna-1 … dna-5 | B, C, A, B, C | 6 baz çifti için iki yeni 6’lı zincir = 12 nükleotit; iki turda 8 zincirin 2’si başlangıçtan, 6’sı sonradan |
 
 Bu setler için normal arayüzden yapılan cevaplama akışında 5/5 sonuç ve kalıcı
@@ -495,17 +539,17 @@ cevapları ayrı Sorular akışında kaydedilir. YKS puanı veya başarı artı�
 
 ## 0.6.0 kapsamlı anlatım ve ÖSYM kaynak kontrolü
 
-14.11.2026: Drive'daki MEBİ TYT Matematik Konu Özetleri PDF28–30 ve
-TYT Kimya Konu Özetleri PDF11–29 okunarak aşağıdaki rehberler genişletildi.
+14.11.2026: Drive'daki MEBİ TYT Matematik Konu Özetleri PDF 28–30 ve
+TYT Kimya Konu Özetleri PDF 11–29 okunarak aşağıdaki rehberler genişletildi.
 Anlatım, senaryolar ve çözümler özgündür; özel PDF'ler veya kişisel katalog
 yayımlanan pakete eklenmez. Kullanıcı PDF'leri cihazda saklanır.
 
 | Rehber | İncelenen MEBİ sayfaları (PDF / basılı) | Ek karşılaştırma |
 | --- | --- | --- |
-| Rasyonel sayılar |28–30 /26–28 | Aurelia konu kağıdı1–8 |
-| Simyadan kimyaya |11–13 /9–11 | Aurelia konu kağıdı1–9, önceki OGM kontrolü |
+| Rasyonel sayılar |28–30 /26–28 | Aurelia konu kağıdı 1–8 |
+| Simyadan kimyaya |11–13 /9–11 | Aurelia konu kağıdı 1–9, önceki OGM kontrolü |
 | Kimya disiplinleri |14–15 /12–13 | Önceki OGM Dersler Cepte kontrolü |
-| Kimyanın sembolik dili |16–17 /14–15 | Aurelia konu kağıdı1–9 |
+| Kimyanın sembolik dili |16–17 /14–15 | Aurelia konu kağıdı 1–9 |
 | Kimyada güvenlik |18–24 /16–22 | Önceki OGM kontrolü |
 | Atom modelleri |25–26 /23–24 | Önceki OGM atom modelleri kontrolü |
 
@@ -552,10 +596,10 @@ aktarılmış olduğu anlamına gelmez. Yalnız incelenen sayfa kapsamı esastı
 
 Beş resmî kitapçık ve sekiz konu bağlantısı `official-booklets.json` ve
 `pastExams.ts` içinde tutulur. Tam soru metni veya resmi çizim kopyalanmaz;
-resmî dosya/sayfa açılır. Özgün çözümler ayrı etiketlidir. 2018 ve2021TYT,
-2026ALES/2,DGS,KPSS Lisans GY–GK sayfaları ve cevap kaynakları incelendi.
+resmî dosya/sayfa açılır. Özgün çözümler ayrı etiketlidir. 2018 ve 2021 TYT,
+2026 ALES/2,DGS,KPSS Lisans GY–GK sayfaları ve cevap kaynakları incelendi.
 2026 dosyaları kamuya açık %10 kitapçıklarıdır. ALES bağlantısının dosya adı
-2025 taşımasına rağmen kapağında2026-ALES/2 ve2Ağustos2026 yazdığı doğrulandı;
+2025 taşımasına rağmen kapağında 2026-ALES/2 ve 2 Ağustos 2026 yazdığı doğrulandı;
 sınav yılı dosya adından tahmin edilmedi.
 
 2006–2026 tarama hedefinin tüm yılları, oturumları ve soru konuları henüz
@@ -563,10 +607,10 @@ incelenmiş değildir. Doğrulanmış bir bağlantı bulunmaması o sınavda kon
 sorulmadığını göstermez. Eski kayıtların sonradan iptal/düzeltme duyuruları
 için bütün ÖSYM duyuru arşivi eksiksiz taranmış sayılmaz.
 
-126 mevcut özel kopya kağıdı ders/tür bakımından sınıflandı;124ü çalışma
+126 mevcut özel kopya kağıdı ders/tür bakımından sınıflandı;124 ü çalışma
 kitabındaki ayrıntılı başlıkla eşleşir. İki genel geometri dosyası başlık
 ilerlemesine zorla bağlanmadan dersteki bütün kağıtlar üzerinden erişilir.
-Bu kontrol126PDF'nin uygulamaya gömüldüğü veya479kağıdın hazır olduğu
+Bu kontrol 126 PDF'nin uygulamaya gömüldüğü veya 479 kağıdın hazır olduğu
 anlamına gelmez.
 # 0.7.0 — ayrıntılı rehberleri ve kaynak sırasını genişletme
 

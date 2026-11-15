@@ -1,0 +1,204 @@
+.bio014 {
+  margin-block: 1.5rem;
+  padding: clamp(0.8rem, 2vw, 1.5rem);
+  background: var(--surface);
+  border-block: 1px solid var(--border);
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+.bio014 h3 {
+  margin-block: 0 1rem;
+}
+.bio014 p,
+.bio014 li {
+  line-height: 1.7;
+}
+.bio014-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 1.2rem;
+  margin-block: 1.2rem;
+  min-width: 0;
+}
+.bio014-field,
+.bio014-prediction {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.6rem;
+  min-width: 0;
+}
+.bio014-field > *,
+.bio014-prediction > * {
+  min-width: 0;
+}
+.bio014 select,
+.bio014 textarea,
+.bio014 input[type="range"] {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-inline: 0;
+}
+.bio014 select,
+.bio014 textarea {
+  min-height: 44px;
+}
+.bio014 input[type="range"] {
+  min-height: 44px;
+}
+.bio014 input[type="checkbox"] {
+  flex: 0 0 auto;
+  margin-top: 0.35rem;
+}
+.bio014-check {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.65rem;
+  align-items: flex-start;
+  min-height: 44px;
+}
+.bio014-check > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.bio014-current-choice {
+  display: block;
+  color: var(--text);
+  white-space: normal;
+  overflow-wrap: break-word;
+  line-height: 1.7;
+}
+.bio014 output {
+  font-variant-numeric: tabular-nums;
+}
+.bio014-drawing {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin-block: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg);
+  overflow: visible;
+}
+.bio014-drawing text {
+  fill: var(--text);
+  font:
+    30px system-ui,
+    sans-serif;
+}
+.bio014-line {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+.bio014-arrow {
+  fill: var(--text);
+}
+.bio014-outline {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio014-live {
+  fill: var(--mint);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio014-selected-node {
+  fill: var(--bg);
+  stroke: var(--mint);
+  stroke-width: 6;
+}
+.bio014-organism {
+  fill: var(--surface-2, var(--surface));
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio014-sun {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio014-water {
+  fill: var(--surface-2, var(--surface));
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio014-plant {
+  fill: none;
+  stroke: var(--mint);
+  stroke-width: 5;
+}
+.bio014-pollution {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 12;
+  stroke-linecap: round;
+}
+.bio014-disabled {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 3;
+  stroke-dasharray: 6 6;
+}
+.bio014-detritus {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 10;
+  stroke-linejoin: round;
+}
+.bio014-result,
+.bio014-feedback {
+  min-width: 0;
+  padding: 1rem;
+  border-inline-start: 3px solid var(--mint);
+  background: var(--bg);
+  margin-block: 1rem;
+}
+.bio014-result ul,
+.bio014-result ol,
+.bio014-key {
+  padding-inline-start: 1.3rem;
+}
+.bio014-result li,
+.bio014-key li {
+  margin-block: 0.65rem;
+}
+.bio014-prediction {
+  padding-block: 1rem;
+  border-top: 1px solid var(--border);
+}
+.bio014-prediction button {
+  justify-self: start;
+  max-width: 100%;
+  min-height: 44px;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+@media (max-width: 440px) {
+  .bio014 {
+    padding: 0.75rem 6px;
+  }
+  .bio014-controls {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .bio014-result,
+  .bio014-feedback {
+    padding: 0.75rem 6px;
+  }
+  .bio014-prediction button {
+    width: 100%;
+    padding-inline: 6px;
+    gap: 6px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bio014 * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

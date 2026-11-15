@@ -165,9 +165,7 @@ async function readableGeometry(page: Page, lesson: LessonCase) {
               control:
                 element.tagName === "BUTTON" ||
                 (element.tagName === "STRONG" &&
-                  !!element.closest(
-                    '[role="status"],[data-feedback]',
-                  )),
+                  !!element.closest('[role="status"],[data-feedback]')),
             });
           }
         }
@@ -327,3 +325,30 @@ for (const lesson of units) {
   });
 }
 
+test("geography reasons respect the durable string boundary and keep a checked prediction after offline reload", async ({
+  page,
+  context,
+}) => {
+  const unit = units.find((u) => u.id === "doga-insan-cografya")!;
+  await page.goto("/");
+  await openFromCourses(page, unit);
+  const lab = page.locator(unit.lab);
+  await unit.interact(page, lab);
+  const before = learningEvidence(await stored(page));
+  const reason = lab.getByRole("textbox", { name: "Gerekçen", exact: true });
+  await reason.fill("Ç".repeat(160));
+  await expect(reason).toHaveValue("Ç".repeat(120));
+  await lab.getByRole("button", { name: "Tahmini dene", exact: true }).click();
+  const key = "forge014-geo-prediction-" + unit.id;
+  await expect
+    .poll(async () => (await stored(page))?.explorations[key]?.reason)
+    .toBe("Ç".repeat(120));
+  const saved = (await stored(page))!.explorations[key];
+  await offlineReady(page);
+  await context.setOffline(true);
+  await page.reload();
+  await expect(reason).toHaveValue("Ç".repeat(120));
+  await unit.assertOutcome(page, lab);
+  expect((await stored(page))!.explorations[key]).toEqual(saved);
+  expect(learningEvidence(await stored(page))).toEqual(before);
+});

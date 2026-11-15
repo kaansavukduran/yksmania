@@ -15,7 +15,7 @@ async function sheet(page: Page, name: string) {
   await page
     .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
     .fill(name);
-  await page.locator(".cheatsheet-topic").filter({ hasText: name }).click();
+  await page.getByRole("button", { name, exact: true }).click();
   await expect(page.locator(".cheat-reader")).toBeVisible();
 }
 test("built-in sheet opens through subject search, reveals real explanations and preserves notes offline without a source upload", async ({
@@ -26,18 +26,14 @@ test("built-in sheet opens through subject search, reveals real explanations and
   await sheet(page, "Rasyonel Sayılar");
   await expect(page.locator('.cheat-reader input[type="file"]')).toHaveCount(0);
   await expect(
-    page
-      .locator(".cheat-reader")
-      .getByRole("button", {
-        name: /(?:PDF|dosya|katalog).*(?:ekle|yükle)|Kaynak dosyalarını yönet/i,
-      }),
+    page.locator(".cheat-reader").getByRole("button", {
+      name: /(?:PDF|dosya|katalog).*(?:ekle|yükle)|Kaynak dosyalarını yönet/i,
+    }),
   ).toHaveCount(0);
   await expect(
-    page
-      .locator(".cheat-reader")
-      .getByRole("link", {
-        name: /(?:PDF|dosya|katalog).*(?:ekle|yükle)|Kaynak dosyalarını yönet/i,
-      }),
+    page.locator(".cheat-reader").getByRole("link", {
+      name: /(?:PDF|dosya|katalog).*(?:ekle|yükle)|Kaynak dosyalarını yönet/i,
+    }),
   ).toHaveCount(0);
   const recall = page.locator(".cheat-recall-card").first();
   await recall

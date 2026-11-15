@@ -1,0 +1,149 @@
+.grammar014-lab {
+  min-width: 0;
+  max-width: 100%;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+.grammar014-lab h3 {
+  margin-top: 0;
+}
+.grammar014-lab label {
+  display: block;
+  margin-block: 0.7em 0.3em;
+}
+.grammar014-lab select,
+.grammar014-lab textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  font: inherit;
+  min-height: 44px;
+}
+.grammar014-lab button,
+.grammar014-lab summary {
+  min-height: 44px;
+  min-width: 0;
+  max-width: 100%;
+  white-space: normal;
+  line-height: 1.5;
+  font: inherit;
+  padding: 0.6em 0.7em;
+}
+.grammar014-lab button[aria-pressed="true"] {
+  border-color: var(--accent);
+}
+.grammar014-lab .grammar014-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding-block: 0.4em;
+}
+.grammar014-check input {
+  flex: 0 0 auto;
+}
+.grammar014-sentence {
+  border-block: 1px solid var(--border);
+  margin-block: 1em;
+}
+.grammar014-sentence p:first-child {
+  font-weight: 650;
+}
+.grammar014-lab fieldset {
+  min-width: 0;
+  margin: 1em 0;
+  border: 1px solid var(--border);
+  padding: 0.65em;
+  border-radius: 10px;
+}
+.grammar014-lab legend {
+  max-width: 100%;
+  padding-inline: 0.2em;
+}
+.grammar014-lab fieldset > button {
+  margin-block: 1em 0;
+}
+.grammar014-feedback {
+  min-width: 0;
+  border-block: 1px solid var(--mint);
+  padding-block: 0.7em;
+  margin-top: 1em;
+}
+.grammar014-model {
+  min-width: 0;
+  margin-block: 1em;
+}
+.grammar014-model svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  color: var(--text);
+}
+.grammar014-parts {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
+  display: grid;
+  gap: 0.65em;
+}
+.grammar014-parts li {
+  border-inline-start: 3px solid var(--border);
+  padding: 0.2em 0.6em;
+  min-width: 0;
+}
+.grammar014-parts li[data-model-part="copula"] {
+  border-color: var(--accent);
+}
+.grammar014-parts li[data-model-part="first"] {
+  border-color: var(--mint);
+}
+.grammar014-parts strong,
+.grammar014-parts span {
+  display: block;
+}
+.grammar014-result {
+  border-block: 1px solid var(--border);
+  min-width: 0;
+}
+.grammar014-result h4 {
+  margin-block: 1em 0.5em;
+}
+.grammar014-result ul {
+  padding-inline-start: 1.1em;
+}
+.grammar014-boundary {
+  border-block-end: 1px solid var(--border);
+  padding-bottom: 0.7em;
+}
+.grammar014-boundary summary {
+  padding-inline: 0;
+}
+@media (prefers-reduced-motion: no-preference) {
+  [data-motion="on"] .grammar014-model rect {
+    transition: stroke 0.15s ease;
+  }
+}
+@media (max-width: 460px) {
+  .grammar014-lab select,
+  .grammar014-lab textarea {
+    padding-inline: 6px;
+  }
+  .grammar014-result ul {
+    padding-inline-start: 0.7em;
+  }
+  .grammar014-lab fieldset {
+    border-inline: 0;
+    border-radius: 0;
+    padding-inline: 0;
+  }
+  .grammar014-lab button {
+    width: 100%;
+    padding-inline: 6px;
+    gap: 6px;
+  }
+  .grammar014-parts li {
+    padding-inline: 6px;
+  }
+}
