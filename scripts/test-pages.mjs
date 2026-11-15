@@ -202,6 +202,35 @@ try {
     .getByRole("button", { name: "Cevabı kontrol et", exact: true })
     .click();
   await expect(page.locator(".feedback")).toBeVisible();
+  await expect(page.locator(".save-status")).toContainText(
+    "Bu cihazda kaydedildi",
+  );
+  await expect
+    .poll(() =>
+      page.evaluate(
+        () =>
+          new Promise((resolve, reject) => {
+            const request = indexedDB.open("yksmania");
+            request.onsuccess = () => {
+              const db = request.result;
+              const record = db
+                .transaction("state")
+                .objectStore("state")
+                .get("current");
+              record.onsuccess = () => {
+                db.close();
+                resolve(record.result?.draft?.checked);
+              };
+              record.onerror = () => {
+                db.close();
+                reject(record.error);
+              };
+            };
+            request.onerror = () => reject(request.error);
+          }),
+      ),
+    )
+    .toBe(true);
   await page.reload();
   await expect(page.locator(".feedback")).toBeVisible();
   await nav("Kopya Kağıtları");

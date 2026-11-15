@@ -36,6 +36,11 @@ Son geliştirme Electron akışı yedi yeni aile ve eski çalışma/deneme/kayı
 akışlarıyla PASS, renderer0. Yerel Pages alt yol kabulü ve gerçek 0.10→0.11
 web güncellemesi PASS; 87 runtime dosyası yükseltme test kopyasıyla byte eşit.
 Uzak CI, paket ve iki canlı yayın bu aday kaydından sonra doğrulanacak.
+Pages ilk uzak43698319741 koşusu yedi modelden sonra soru taslağının disk
+kaydı beklenmeden yenilenmesi yüzünden FAIL verdi. Test artık kaydedildi
+durumunu ve gerçek IDB checked=true kaydını bekler; feedback/reload koşulu
+korunur. Aynı runtime ile düzeltilmiş yerel Pages kabulü PASS. Bu yalnız test
+onarımıdır; uygulama dosyaları 4065dc7 ile byte eşittir.
 
 Yayımdan önce düzeltilen somut bulgular:
 - YKS-043/Orta: Zarflar gerekçesi 240, kayıt sınırı 128 idi; UI 120 karaktere
