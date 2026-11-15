@@ -1,4 +1,4 @@
-# İçerik kapsamı — 0.12.0 alpha adayı
+# İçerik kapsamı — 0.12.0 alpha
 
 Hazır eğitim içeriği uygulamaya gömülüdür. Konu Anlatımı, Kopya Kağıtları,
 Sorular ve Sınavlar ayrı bölümlerdir. Öğrenci PDF, kaynak kataloğu veya kitapçık
@@ -11,12 +11,12 @@ bırakılmaz. Kişisel ilerleme yedeği ders kaynağından ayrı ve isteğe bağ
 | Ayrıntılı çalışma sırası | 479 başlık; kaynak çalışma kitabındaki sıra korunur |
 | Konu anlatımı | 146 anlatım, 118 ayrıntılı rehber; sıradaki ilk 138/479 başlık hazır |
 | Yerleşik kopya kağıdı | 146 kağıt; yeni 30 başlığın bütün anlatım paragrafları ve örnekleri dahil |
-| Soru bankası | 1.130 özgün Türkçe soru; önceki 800 tam kayıt korunur, 300 yeni soru |
+| Soru bankası | 1.130 özgün Türkçe soru; önceki 800 tam kayıt korunur, 330 yeni soru |
 | Zamanlı pratik | 2 karma ve 11 branş; TYT 105 / AYT Sayısal 25, sayıya orantılı süre; tam 120/80 dağılım değil |
 | Önceki arşiv envanteri | 246 klasörde 8.584 PDF kaydı, yaklaşık 23,6 GB; içerik hash’leriyle tekilleştirilmiş sayım değil |
 | Önceki yerel hazırlık paketleri | 143 PDF / 4.989 sayfa: 126 kopya kağıdı, 14 MEBİ adlı PDF, 3 OGM geçmiş soru kitabı; bütün güncel okuma sayfası sayımı değil |
 
-0.12 adayı 109–138. başlıklara 263 bölüm, 123 çözümlü örnek, 128 hatırlama ve
+0.12 sürümü 109–138. başlıklara 263 bölüm, 123 çözümlü örnek, 128 hatırlama ve
 300 soru ekler. 5 matematik, 5 fizik, 5 kimya, 7 biyoloji, 3 Türkçe, 5 tarih.
 Sonraki 139. başlık Su, Hayat ve Çevre Kimyası/detail-167’dir. 341 ana konu,
 479 ayrıntılı başlık ve hazır anlatım sayısı farklı ölçümlerdir; hiçbiri bir
@@ -40,6 +40,10 @@ ve ham kaynak metni ürün verisine alınmaz. Öğrenme günü 1, tekrarlar 3/7/
 keşif, süre veya kağıdı açma öğrenme puanı oluşturmaz. Aşağıdaki tarihsel
 bölümler eski sürümlerin davranışını açıklar; kaynak yüklemeyi veya eski sayaçları
 anlatan kısımlarda bu güncel kararlar geçerlidir.
+
+## Tarihsel sürüm ve kaynak akışları
+
+Aşağıdaki kayıtlar eski sürümlere aittir; öğrenci için PDF/kaynak yükleme arayüzü güncel üründe yoktur.
 
 ## What the app actually does
 

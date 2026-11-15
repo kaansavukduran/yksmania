@@ -1,6 +1,6 @@
 # YKSMania
 
-Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.12.0 alpha adayı**. Canlı sürüm henüz 0.11.0’dır.
+Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.12.0 alpha**; Vercel, GitHub Pages ve native paket yayını doğrulandı.
 
 [Vercel uygulaması](https://yksmania.vercel.app) · [GitHub Pages](https://kaansavukduran.github.io/yksmania/) · [GitHub deposu](https://github.com/kaansavukduran/yksmania)
 
@@ -23,7 +23,7 @@ Güncel kabul ve yayın durumu [FORGE](FORGE.md) ve [QA](docs/QA.md)’dedir.
 
 ## İçerik ve öğrenme
 
-0.12.0 adayı, kaynak sırasındaki 109–138. başlıkları işler: 5 matematik,
+0.12.0, kaynak sırasındaki 109–138. başlıkları işler: 5 matematik,
 5 fizik, 5 kimya, 7 biyoloji, 3 Türkçe ve 5 tarih ünitesi. Faiz, karışım, işçi,
 havuz ve hareket problemleri; su/ses/deprem dalgaları, ışık, gölge ve düzlem ayna;
 katılar, viskozite, buhar basıncı, kaynama, nem, gazlar, plazma ve çevre; eşeyli

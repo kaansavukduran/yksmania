@@ -1,3 +1,17 @@
+# Güncel yön ve kalan içerik — 0.12.0
+
+Doğrulanan sürüm 146 anlatım, 118 ayrıntılı rehber, 146 yerleşik kağıt ve 1130
+özgün soru sunar. İlk 138/479 anlatım hazır; sonraki başlık 139 Su, Hayat ve Çevre
+Kimyası. Kaynaklı etkileşimli öğretim, çözümlü örnekler ve önceki 13 anlatımın soru
+kapsamı geliştirilecek. Öğrenci PDF/katalog yüklemez. Tam resmî TYT/AYT dağılımı,
+bütün ÖSYM arşivi ve fiziksel/native yükseltme kabulleri bitmedi. Güncel kanıt
+FORGE/QA; gerçek okuma sınırları SOURCE_REVIEW’dedir.
+
+## Tarihsel yol haritası
+
+Aşağıdaki eski planlar tarihçedir; PDF yükleme ve eski sayaçlar güncel kullanıcı
+akışı veya hazır içerik sayısı olarak okunmamalıdır.
+
 # Accepted direction and remaining stages
 
 Current 0.5.1: 23 interactive Turkish lessons / 115 original questions. The first
