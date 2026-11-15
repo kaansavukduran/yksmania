@@ -31,6 +31,8 @@ Kaynak/tag `3f237c12100a702e09884d65f735de6a3f11db1b`. CI [43734178222](https://
 
 [0.15 alpha](https://github.com/kaansavukduran/yksmania/releases/tag/v0.15.0-alpha.1), başarılı [43738552491](https://github.com/kaansavukduran/yksmania/actions/runs/43738552491) ile aynı doğrulanmış CI çıktılarından sekiz dosya olarak yayımlandı. Tag ve verified-run kaydı aynı kaynak SHA'sını gösterir. Yedi checksum girdisi, sekiz GitHub asset digest'i ve indirilen iki kanıt dosyasının özeti eşleşti. Beş büyük binary yerelde ayrıca indirilip hashlenmedi. Vercel ve Pages index/sw/version dosyaları normal TLS ile ilgili dondurulmuş C3 çıktılarıyla aynıydı.
 
+Canlı web iş akışının 423 vakası, yayımlanmış HTTPS’ye çalışan 422 vaka ile ayrı gerçek Vite geliştirme sunucusunu başlatan bir YKS-069 regresyonundan oluşur. Yerel geliştirme vakası uzaktaki site denetimi diye sayılmaz.
+
 ---
 
 ## Tarihsel doğrulanmış 0.14 kaydı
