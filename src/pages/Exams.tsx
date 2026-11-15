@@ -14,12 +14,14 @@ import {
   examCatalogue,
   examReference,
   examScore,
+  examAssistance,
   finishExam,
   type ExamSpec,
 } from "../domain/exams";
 import { formatCountdown } from "../domain/focusTimer";
 import type { ExamDraft, ExamSession } from "../domain/examModel";
 import "../exams.css";
+import { QuestionHelp } from "../components/QuestionHelp";
 
 // Deadline follows the saved exam even while another learning page is open.
 export function ExamDeadlineWatcher() {
@@ -79,6 +81,7 @@ export function Exams({
   const { state, commit } = useApp();
   const specs = useMemo(examCatalogue, []);
   const [tab, setTab] = useState("TYT");
+  const [mode, setMode] = useState<"simulation" | "learning">("simulation");
   const [catalog, setCatalog] = useState(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
@@ -105,7 +108,7 @@ export function Exams({
     setError("");
     const now = Date.now();
     try {
-      await commit((s) => beginExam(s, spec, now));
+      await commit((s) => beginExam(s, spec, now, mode));
       setCatalog(false);
       navigate("/exams");
     } catch {
@@ -178,6 +181,23 @@ export function Exams({
           {error}
         </p>
       )}
+      <label className="field exam-mode">
+        Çalışma biçimi
+        <select
+          value={mode}
+          disabled={!!state.examDraft || busy}
+          onChange={(event) => setMode(event.target.value as typeof mode)}
+        >
+          <option value="simulation">
+            Sınav simülasyonu · ipuçları kapalı
+          </option>
+          <option value="learning">Öğrenme denemesi · ipuçları açık</option>
+        </select>
+        <span className="small muted">
+          İki biçimde de süre işler. Açtığın ipuçları ayrıca kaydedilir; doğru,
+          yanlış ve net hesabı aynı kalır.
+        </span>
+      </label>
       <div className="exam-catalog">
         {specs
           .filter((spec) =>
@@ -411,6 +431,11 @@ function ExamRunner({
         Süre duraklatılmaz; sayfadan ayrılsan veya uygulamayı kapatsan da son
         zaman korunur. Süre bitince mevcut yanıtlarla sonuç kaydedilir.
       </p>
+      <p className="small muted">
+        {draft.mode === "learning"
+          ? "Öğrenme denemesi · çözüm desteği açık"
+          : "Sınav simülasyonu · çözüm desteği isteğe bağlı"}
+      </p>
       {error && (
         <div role="alert" className="panel exam-error">
           <p>{error}</p>
@@ -475,6 +500,41 @@ function ExamRunner({
               </button>
             ))}
           </div>
+          {draft.mode !== "learning" && (
+            <div className="exam-help-gate">
+              <label>
+                <input
+                  type="checkbox"
+                  checked={draft.helpEnabled ?? false}
+                  disabled={busy || expired}
+                  onChange={(event) =>
+                    void change({
+                      type: "help-enabled",
+                      index: draft.index,
+                      value: event.target.checked,
+                    })
+                  }
+                />
+                <span>
+                  Çözüm desteğini aç{" "}
+                  <span className="small muted">
+                    · ipucu açtığın sorular yardımlı olarak kaydedilir
+                  </span>
+                </span>
+              </label>
+            </div>
+          )}
+          {(draft.mode === "learning" || draft.helpEnabled) && (
+            <QuestionHelp
+              key={q.id}
+              question={q}
+              level={draft.helpLevels?.[draft.index] ?? 0}
+              disabled={busy || expired}
+              onLevel={(level) =>
+                void change({ type: "help", index: draft.index, level })
+              }
+            />
+          )}
           <div className="exam-question-tools">
             <button
               className="text-button"
@@ -543,7 +603,7 @@ function ExamRunner({
               <button
                 key={item.id}
                 className={`exam-number ${draft.answers[index] !== null ? "answered" : ""}`}
-                aria-label={`Soru ${index + 1}, ${draft.answers[index] !== null ? "yanıtlandı" : "boş"}${draft.flagged.includes(index) ? ", işaretli" : ""}`}
+                aria-label={`Soru ${index + 1}, ${draft.answers[index] !== null ? "yanıtlandı" : "boş"}${draft.flagged.includes(index) ? ", işaretli" : ""}${(draft.helpLevels?.[index] ?? 0) > 0 ? ", yardım alındı" : ""}`}
                 aria-current={draft.index === index ? "step" : undefined}
                 disabled={busy || expired}
                 onClick={() => void change({ type: "index", index })}
@@ -604,6 +664,7 @@ function ExamResults({
   navigate: (route: string) => void;
 }) {
   const score = examScore(session);
+  const assistance = examAssistance(session);
   return (
     <section className="exam-results">
       <button
@@ -649,6 +710,14 @@ function ExamResults({
       <p className="small muted">
         Net = doğru − yanlış / 4. Bu alıştırma sonucu YKS puanı veya sıralama
         tahmini değildir; konu tamamlanması ve XP oluşturmaz.
+      </p>
+      <p className="exam-assistance-summary" aria-label="Yardım kullanımı">
+        {assistance.independentCorrect} bağımsız doğru ·{" "}
+        {assistance.assistedCorrect} yardımlı doğru · {assistance.helped} soruda
+        yardım açıldı.
+        {session.helpLevels === undefined &&
+          session.mode === undefined &&
+          " Önceki sürümden kaydedilen bu denemede çözüm desteği yoktu."}
       </p>
       <section className="panel exam-breakdown" aria-label="Ders sonuçları">
         <h2>Ders sonuçları</h2>
@@ -699,6 +768,9 @@ function ExamResults({
               <summary>
                 {index + 1}. soru · {q.subjectName} ·{" "}
                 {selected === null ? "Boş" : correct ? "Doğru" : "Yanlış"}
+                {(session.helpLevels?.[index] ?? 0) > 0
+                  ? " · Yardım alındı"
+                  : ""}
               </summary>
               <p className="small muted">{q.lessonTitle}</p>
               {q.passage && (
@@ -723,6 +795,7 @@ function ExamResults({
                 <h4>Çözümün mantığı</h4>
                 <p>{q.explanation}</p>
               </div>
+              <SolutionHelp question={q} />
               <button
                 className="text-button"
                 onClick={() =>
@@ -736,5 +809,21 @@ function ExamResults({
         })}
       </section>
     </section>
+  );
+}
+
+function SolutionHelp({
+  question,
+}: {
+  question: ExamSession["items"][number];
+}) {
+  const [level, setLevel] = useState(0);
+  return (
+    <QuestionHelp
+      question={question}
+      level={level}
+      onLevel={setLevel}
+      reviewed
+    />
   );
 }

@@ -26,7 +26,8 @@ describe("learning content and backward-compatible exploration state", () => {
     const ids = new Set<string>();
     for (const l of questionLessons) {
       expect(l.questions.length).toBeGreaterThanOrEqual(5);
-      expect(l.body.length).toBeGreaterThan(0);
+      if (!l.tags.includes("soru-seti"))
+        expect(l.body.length, l.id).toBeGreaterThan(0);
       for (const q of l.questions) {
         expect(ids.has(q.id)).toBe(false);
         ids.add(q.id);

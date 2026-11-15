@@ -1,3 +1,5 @@
+import { publishedQuestion } from "./helpers/publishedQuestion";
+import retainedCatalogue from "./fixtures/retained-exam-catalogue-016.json";
 import { createHash } from "node:crypto";
 import { expect, it } from "vitest";
 import releasedQuestions from "./fixtures/source-stage-016-questions.json";
@@ -37,7 +39,7 @@ it("retains every published question and teaching field while adding 300 distinc
   expect(all.length).toBeGreaterThanOrEqual(2140);
   expect(byId.size).toBe(all.length);
   for (const question of oldQuestions)
-    expect(byId.get(question.id), question.id).toEqual(question);
+    expect(byId.get(question.id), question.id).toEqual(publishedQuestion(question));
   expect(Object.keys(oldTeaching)).toHaveLength(205);
   for (const [id, hash] of Object.entries(oldTeaching)) {
     const lesson = lessonById(id)!;
@@ -122,7 +124,10 @@ it("expands AYT practice to 37 items while keeping existing 37-item AYT and 110-
   const catalogue = examCatalogue(),
     ayt = catalogue.find((e) => e.id === "mixed-ayt")!,
     tyt = catalogue.find((e) => e.id === "mixed-tyt")!;
-  expect(catalogue).toHaveLength(14);
+  expect(catalogue.map((e) => e.id)).toEqual(
+    expect.arrayContaining(retainedCatalogue),
+  );
+  expect(catalogue.length).toBeGreaterThanOrEqual(14);
   expect(tyt.items).toHaveLength(110);
   expect(ayt.items.length).toBeGreaterThanOrEqual(37);
   expect(ayt.items.filter((q) => q.subjectId === "ayt-fizik")).toHaveLength(14);

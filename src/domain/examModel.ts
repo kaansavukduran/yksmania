@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { helpLevelSchema, questionGuidanceSchema } from "./questionHelpModel";
 const examItemSchema = z.object({
   id: z.string().min(1).max(200),
   lessonId: z.string().min(1).max(160),
@@ -10,6 +11,8 @@ const examItemSchema = z.object({
   options: z.array(z.string().min(1).max(10000)).min(2).max(10),
   answer: z.number().int().min(0).max(9),
   explanation: z.string().min(1).max(20000),
+  hint: z.string().min(1).max(20000).optional(),
+  guidance: questionGuidanceSchema.optional(),
 });
 const shape = {
   id: z.string().min(1).max(240),
@@ -23,15 +26,24 @@ const shape = {
   startedAt: z.number().int().nonnegative(),
   deadline: z.number().int().positive(),
   durationSeconds: z.number().int().min(1).max(86400),
+  mode: z.enum(["simulation", "learning"]).optional(),
+  helpEnabled: z.boolean().optional(),
+  helpLevels: z.array(helpLevelSchema).min(1).max(300).optional(),
 };
 type DraftValue = {
-  items: { id: string; options: string[]; answer: number }[];
+  items: {
+    id: string;
+    options: string[];
+    answer: number;
+    guidance?: { optionReasons: string[] };
+  }[];
   answers: (number | null)[];
   flagged: number[];
   index: number;
   startedAt: number;
   deadline: number;
   durationSeconds: number;
+  helpLevels?: number[];
 };
 function check(value: DraftValue, context: z.RefinementCtx) {
   if (
@@ -44,8 +56,12 @@ function check(value: DraftValue, context: z.RefinementCtx) {
     value.items.some(
       (q, i) =>
         q.answer >= q.options.length ||
+        (q.guidance !== undefined &&
+          q.guidance.optionReasons.length !== q.options.length) ||
         (value.answers[i] !== null && value.answers[i]! >= q.options.length),
-    )
+    ) ||
+    (value.helpLevels !== undefined &&
+      value.helpLevels.length !== value.items.length)
   ) {
     context.addIssue({ code: "custom", message: "INVALID_EXAM_STATE" });
   }

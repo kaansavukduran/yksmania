@@ -1,3 +1,9 @@
+import { forge019BiologyLessons } from "../learning/forge019Biology";
+import { forge019ChemistryLessons } from "../learning/forge019Chemistry";
+import { forge019PhysicsLessons } from "../learning/forge019Physics";
+import { forge019GeographyLessons } from "../learning/forge019Geography";
+import { forge019TurkishLessons } from "../learning/forge019Turkish";
+import { forge019MathLessons } from "../learning/forge019Math";
 import { forge018BiologyLessons } from "../learning/forge018Biology";
 import { forge018ChemistryLessons } from "../learning/forge018Chemistry";
 import { forge018PhysicsLessons } from "../learning/forge018Physics";
@@ -691,7 +697,7 @@ const baseLessons: Lesson[] = [
       ),
       q(
         "n4",
-        "Net kuvvet sabitken kütle iki katına çıkarsa ivme…",
+        "Sıfırdan farklı net kuvvet aynı kalırken kütle iki katına çıkarsa ivme…",
         ["İki kat olur.", "Yarıya iner.", "Değişmez."],
         1,
         "a=Fnet/m bağıntısını kullan.",
@@ -878,6 +884,12 @@ const baseLessons: Lesson[] = [
   chemicalSpeciesLesson,
   heatTemperatureLesson,
   ...ionicLessons,
+  ...forge019BiologyLessons,
+  ...forge019ChemistryLessons,
+  ...forge019PhysicsLessons,
+  ...forge019GeographyLessons,
+  ...forge019TurkishLessons,
+  ...forge019MathLessons,
   ...forge018BiologyLessons,
   ...forge018ChemistryLessons,
   ...forge018PhysicsLessons,

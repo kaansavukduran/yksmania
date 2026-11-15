@@ -1,0 +1,442 @@
+[
+  {
+    "id": "r1",
+    "identity": "[\"r1\",\"Hangisi daha büyüktür?\",\"\",[\"1/8\",\"1/6\",\"Eşitler\"],1,\"Birim kesirde daha küçük payda daha büyük parça verir: 1/6 > 1/8.\"]",
+    "hint": "Eşit bir bütünü kaç parçaya ayırıyorsun?",
+    "guidance": {
+      "knowledge": [
+        "Birim kesirde pay 1’dir. Eşit büyüklükteki bütünlerde daha çok eş parça, daha küçük tek parça demektir."
+      ],
+      "strategy": "İki kesrin payı aynı ve pozitiftir; bu nedenle paydalar üzerinden karşılaştır.",
+      "steps": [
+        "Aynı büyüklükte iki bütünü birinde 8, diğerinde 6 eş parçaya ayırdığını düşün.",
+        "6 parçalı bütünün tek parçası daha büyüktür; bu parça 1/6’dır."
+      ],
+      "optionReasons": [
+        "1/8, bütünü daha çok parçaya ayırdığı için 1/6’dan küçüktür.",
+        "1/6 doğrudur: eşit pozitif paylarda küçük payda büyük kesir verir.",
+        "Paydalar farklı olduğundan bu iki birim kesir eşit değildir."
+      ],
+      "commonError": "Paydanın büyümesini kesrin büyümesi sanma; burada paylar eşittir ve kesirler pozitiftir.",
+      "check": "Ortak payda ile 1/8=3/24 ve 1/6=4/24. 4/24 daha büyüktür."
+    }
+  },
+  {
+    "id": "r2",
+    "identity": "[\"r2\",\"1/2 + 1/3 kaçtır?\",\"\",[\"2/5\",\"1/6\",\"5/6\"],2,\"3/6 + 2/6 = 5/6. Paydalar doğrudan toplanmaz.\"]",
+    "hint": "6 ortak paydasını kullan.",
+    "guidance": {
+      "knowledge": [
+        "Payda eş parçanın büyüklüğünü, pay bu parçalardan kaç tane alındığını belirtir. Toplamadan önce parça büyüklüklerini eşitle."
+      ],
+      "strategy": "2 ve 3’ün ortak katı olan 6’yı payda yap; genişletirken payı ve paydayı aynı sayı ile çarp.",
+      "steps": [
+        "1/2=(1×3)/(2×3)=3/6; 1/3=(1×2)/(3×2)=2/6.",
+        "Artık aynı büyüklükteki parçaları sayabilirsin: 3/6+2/6=(3+2)/6."
+      ],
+      "optionReasons": [
+        "2/5, pay ve paydayı ayrı ayrı toplama hatasıdır; ortak parça büyüklüğü kurulmamıştır.",
+        "1/6, 1/2 ile 1/3’ün çarpımıdır; soruda toplama istenir.",
+        "5/6 doğrudur: 3 tane altıda bir ile 2 tane altıda bir toplam 5 tane altıda birdir."
+      ],
+      "commonError": "Kesir toplamında paydaları toplama; ortak payda aynı kalır.",
+      "check": "Sonuç 1/2’den büyük, 1’den küçük olmalı. 5/6 bu aralıktadır; 5/6−1/3=1/2."
+    }
+  },
+  {
+    "id": "r3",
+    "identity": "[\"r3\",\"−1/4 ile −1/2 için hangisi doğrudur?\",\"\",[\"−1/4 > −1/2\",\"−1/4 < −1/2\",\"Eşitler\"],0,\"−0,25, −0,5’in sağındadır; dolayısıyla daha büyüktür.\"]",
+    "hint": "Sayı doğrusunda sıfıra daha yakın olan negatif sayı hangisi?",
+    "guidance": {
+      "knowledge": [
+        "Sayı doğrusunda sağdaki sayı büyüktür. Negatif sayılarda sıfıra yakın olan sayı daha büyüktür."
+      ],
+      "strategy": "İki sayıyı aynı paydada yazıp sayı doğrusundaki sırasını belirle.",
+      "steps": [
+        "−1/2=−2/4. Böylece karşılaştırılacak sayılar −1/4 ve −2/4 olur.",
+        "−1/4, −2/4’ün sağındadır; bu nedenle −1/4 daha büyüktür."
+      ],
+      "optionReasons": [
+        "−1/4>−1/2 doğrudur; −0,25, −0,5’ten büyüktür.",
+        "Bu işaret, pozitif 1/4 ve 1/2’nin sırasını negatif sayılara aynen aktarma hatasıdır.",
+        "Sayıların sıfıra uzaklıkları farklıdır; eşit değillerdir."
+      ],
+      "commonError": "Mutlak değeri büyük olan negatif sayıyı daha büyük sanma.",
+      "check": "−1/4−(−1/2)=1/4>0 olduğundan ilk sayı ikinciden büyüktür."
+    }
+  },
+  {
+    "id": "r4",
+    "identity": "[\"r4\",\"(2/3) ÷ (4/5) kaçtır?\",\"\",[\"8/15\",\"5/6\",\"6/5\"],1,\"2/3 × 5/4 = 10/12 = 5/6.\"]",
+    "hint": "Bölen kesri ters çevirip çarp.",
+    "guidance": {
+      "knowledge": [
+        "Sıfırdan farklı bir kesre bölmek, onun çarpma işlemine göre tersiyle çarpmaktır. a/b’nin tersi b/a’dır; a ve b sıfır olamaz."
+      ],
+      "strategy": "Bölünen 2/3’ü koru; bölen 4/5’i ters çevirip çarp.",
+      "steps": [
+        "(2/3)÷(4/5)=(2/3)×(5/4).",
+        "Payları ve paydaları çarp: 10/12. Pay ve paydayı 2’ye bölerek sadeleştir."
+      ],
+      "optionReasons": [
+        "8/15, iki kesri doğrudan çarpma sonucudur; bölme işlemini karşılamaz.",
+        "5/6 doğrudur: 10/12 sadeleşince 5/6 olur.",
+        "6/5, doğru sonucun tersidir; bölünen ile bölenin görevleri karıştırılmıştır."
+      ],
+      "commonError": "Bölüneni değil, yalnız böleni ters çevir.",
+      "check": "(5/6)×(4/5)=20/30=2/3. Bölüm ile bölenin çarpımı bölüneni vermelidir."
+    }
+  },
+  {
+    "id": "r5",
+    "identity": "[\"r5\",\"3/(x−2) hangi x değeri için tanımsızdır?\",\"\",[\"0\",\"2\",\"3\"],1,\"x−2 = 0 olduğunda ifade tanımsızdır: x = 2.\"]",
+    "hint": "Payda sıfır olamaz.",
+    "guidance": {
+      "knowledge": [
+        "Bir kesrin paydası sıfır olamaz. Payın sıfır olmaması bu kısıtı ortadan kaldırmaz."
+      ],
+      "strategy": "İstenen değer, paydayı sıfır yapan x’tir; önce x−2=0 denklemini kur.",
+      "steps": [
+        "x−2=0 eşitliğinin iki tarafına 2 ekle.",
+        "Bulduğun değeri yalnız paydada yerine koy; sıfır elde edilirse bu değer tanım kümesinden çıkarılır."
+      ],
+      "optionReasons": [
+        "x=0 için payda −2 olur; kesir tanımlıdır.",
+        "x=2 için payda 0 olur; ifade tanımsızdır.",
+        "x=3 için payda 1 olur; kesir tanımlıdır."
+      ],
+      "commonError": "Payı sıfıra eşitlemeye çalışma; sorun paydanın sıfır olmasıdır.",
+      "check": "3/(2−2)=3/0 sayı olarak tanımlı değildir. x≠2 koşulunu yaz."
+    }
+  },
+  {
+    "id": "c1",
+    "identity": "[\"c1\",\"6x + 9 ifadesinin ortak çarpanlı biçimi nedir?\",\"\",[\"3(2x+3)\",\"6(x+9)\",\"9(x+6)\"],0,\"3 ortak çarpandır: 3×2x + 3×3 = 3(2x+3).\"]",
+    "hint": "6 ve 9’un ortak bölenini bul.",
+    "guidance": {
+      "knowledge": [
+        "Dağılma özelliği a(b+c)=ab+ac’dir. Ortak çarpana alma, bu özelliğin ters yönde kullanılmasıdır."
+      ],
+      "strategy": "6x ve 9 terimlerinin ikisini de bölen bir sayıyı dışarı al; kalanları parantez içine yaz.",
+      "steps": [
+        "6 ve 9’un en büyük ortak pozitif böleni 3’tür.",
+        "6x/3=2x ve 9/3=3; dışarı aldığın 3’ü bu toplamla çarp."
+      ],
+      "optionReasons": [
+        "3(2x+3) doğrudur; açıldığında 6x+9 verir.",
+        "6(x+9)=6x+54 olur; sabit terim 9 kalmaz.",
+        "9(x+6)=9x+54 olur; hem x’in katsayısı hem sabit terim değişir."
+      ],
+      "commonError": "Bir terimi dışarıdaki çarpana bölüp diğerini bölmeden bırakma.",
+      "check": "3×2x+3×3=6x+9. Çarpanlı biçimi açarak ilk ifadeye dön."
+    }
+  },
+  {
+    "id": "c2",
+    "identity": "[\"c2\",\"x(x−2)=0 denkleminde x’e bölmek hangi kökü kaybettirir?\",\"\",[\"0\",\"2\",\"Hiçbiri\"],0,\"x=0 bir çözümdür. Sıfıra bölme yapılamaz; bu olasılık ayrıca korunmalıdır.\"]",
+    "hint": "Bölme adımında bölen sıfır olabilir mi?",
+    "guidance": {
+      "knowledge": [
+        "Gerçek sayılarda bir çarpım sıfırsa çarpanlardan en az biri sıfırdır. Sıfır olabilecek ifadeye bölmek eşdeğerliği bozabilir."
+      ],
+      "strategy": "Bölmek yerine x=0 ve x−2=0 olasılıklarını ayrı ayrı koru.",
+      "steps": [
+        "İlk çarpan x=0 olduğunda çarpım sıfırdır.",
+        "x’e bölmek, işlemi yalnız x≠0 koşulunda geçerli kılar; x=0 çözümü bu sırada dışlanır."
+      ],
+      "optionReasons": [
+        "0 kökü kaybolur; x=0 için bölme işlemi tanımlı değildir.",
+        "2 kökü kaybolmaz; x=2 sıfırdan farklı olduğundan bölme adımını sağlar.",
+        "Hiçbiri yanlıştır; x’e bölmek 0 çözümünü dışarıda bırakır."
+      ],
+      "commonError": "Denklemde bilinmeyene bölmeden önce o bilinmeyenin sıfır olup olamayacağını denetle.",
+      "check": "0×(0−2)=0 ve 2×(2−2)=0. Başlangıç denkleminde iki kök vardır."
+    }
+  },
+  {
+    "id": "c3",
+    "identity": "[\"c3\",\"x²−25 nasıl çarpanlarına ayrılır?\",\"\",[\"(x−5)²\",\"(x−5)(x+5)\",\"(x−25)(x+1)\"],1,\"a²−b²=(a−b)(a+b). Burada b=5.\"]",
+    "hint": "İki kare farkını düşün.",
+    "guidance": {
+      "knowledge": [
+        "İki kare farkı a²−b²=(a−b)(a+b) biçimindedir. Çıkarma işareti ile her iki terimin kare olması birlikte gereklidir."
+      ],
+      "strategy": "25’i 5² olarak yaz; a=x ve b=5 seç.",
+      "steps": [
+        "x²−25=x²−5².",
+        "Özdeşlikte bir çarpan x−5, diğeri x+5 olur."
+      ],
+      "optionReasons": [
+        "(x−5)²=x²−10x+25; aranan ifade bu değildir.",
+        "(x−5)(x+5) doğrudur; orta terimler birbirini götürür.",
+        "(x−25)(x+1)=x²−24x−25; fazladan bir x terimi vardır."
+      ],
+      "commonError": "İki kare farkını tam kare açılımıyla karıştırma.",
+      "check": "(x−5)(x+5)=x²+5x−5x−25=x²−25."
+    }
+  },
+  {
+    "id": "c4",
+    "identity": "[\"c4\",\"(x−1)(x+3)=0 denkleminin kökleri nedir?\",\"\",[\"1 ve −3\",\"−1 ve 3\",\"Yalnız 1\"],0,\"x−1=0 veya x+3=0; x=1 veya x=−3.\"]",
+    "hint": "Her çarpanı ayrı ayrı sıfıra eşitle.",
+    "guidance": {
+      "knowledge": [
+        "Sıfır çarpım kuralına göre AB=0 ise A=0 veya B=0’dır. Her iki çarpanın aynı anda sıfır olması gerekmez."
+      ],
+      "strategy": "İki birinci dereceden denklemi ayrı ayrı çöz; sonuçları tek çözüm kümesinde birleştir.",
+      "steps": [
+        "x−1=0 için x=1.",
+        "x+3=0 için x=−3. Her iki değer de başlangıç çarpımını sıfır yapar."
+      ],
+      "optionReasons": [
+        "1 ve −3 doğrudur; sırasıyla birinci ve ikinci çarpanı sıfırlar.",
+        "−1 ve 3 işaret hatasıdır; bu değerler verilen çarpanları sıfır yapmaz.",
+        "Yalnız 1 eksiktir; ikinci çarpandan gelen −3 de çözümdür."
+      ],
+      "commonError": "Parantezde görünen sayıyı işaretini koruyarak kök yazma; çarpanı sıfıra eşitle.",
+      "check": "(1−1)(1+3)=0 ve (−3−1)(−3+3)=0."
+    }
+  },
+  {
+    "id": "c5",
+    "identity": "[\"c5\",\"x²+6x+9 hangi ifadeye eşittir?\",\"\",[\"(x+3)²\",\"(x+9)²\",\"(x−3)²\"],0,\"(x+3)²=x²+6x+9.\"]",
+    "hint": "(a+b)² = a²+2ab+b².",
+    "guidance": {
+      "knowledge": [
+        "Tam kare açılımı (a+b)²=a²+2ab+b²’dir. Ortadaki terim, iki terimin çarpımının iki katıdır."
+      ],
+      "strategy": "İlk terimi x² ve son terimi 3² olarak gör; ortanın 2×x×3 olup olmadığını denetle.",
+      "steps": [
+        "9=3² ve 6x=2×x×3.",
+        "Üç terim de açılıma uyduğu için kare, x+3 toplamına aittir."
+      ],
+      "optionReasons": [
+        "(x+3)² doğrudur; açılımı x²+6x+9’dur.",
+        "(x+9)²=x²+18x+81; 9 son terimin karekökü değildir.",
+        "(x−3)²=x²−6x+9; orta terimin işareti verilen ifadeyle uyuşmaz."
+      ],
+      "commonError": "Son terimdeki 9’u parantezin içine doğrudan taşıma; karesi 9 olan sayı 3’tür.",
+      "check": "(x+3)(x+3)=x²+3x+3x+9=x²+6x+9."
+    }
+  },
+  {
+    "id": "n1",
+    "identity": "[\"n1\",\"2 kg cisme sağa 10 N, sola 4 N uygulanıyor. İvme?\",\"\",[\"Sağa 3 m/s²\",\"Sağa 7 m/s²\",\"Sola 3 m/s²\"],0,\"Fnet=10−4=6 N sağa; a=6/2=3 m/s² sağa.\"]",
+    "hint": "Önce net kuvveti bul, sonra kütleye böl.",
+    "guidance": {
+      "knowledge": [
+        "Sabit kütleli cisim için net kuvvet F=m a’dır. F newton, m kilogram, a m/s² birimindedir. Kuvvetler yönleriyle toplanır."
+      ],
+      "strategy": "Sağı pozitif seç. Önce yatay net kuvveti hesapla, sonra kütleye böl.",
+      "steps": [
+        "Sağ yönlü 10 N ile sol yönlü 4 N’nin bileşkesi +10−4=+6 N’dir.",
+        "a=F/m=6/2=3 m/s². Pozitif işaret sağ yönü gösterir."
+      ],
+      "optionReasons": [
+        "Sağa 3 m/s² doğrudur; net kuvvet 6 N ve kütle 2 kg’dır.",
+        "Sağa 7 m/s², zıt kuvvetlerin büyüklüklerini 10+4 olarak toplama hatasıdır.",
+        "Büyüklük 3 olsa da sol yön yanlıştır; daha büyük kuvvet sağa etkir."
+      ],
+      "commonError": "Zıt yönlü kuvvetleri aynı işaretle toplama; kuvveti doğrudan ivme diye yazma.",
+      "check": "m a=2×3=6 N sağa; bu sonuç kuvvetlerin bileşkesiyle aynıdır."
+    }
+  },
+  {
+    "id": "n2",
+    "identity": "[\"n2\",\"Net kuvvet sıfırsa hangisi zorunludur?\",\"\",[\"Hız sıfırdır.\",\"İvme sıfırdır.\",\"Konum sıfırdır.\"],1,\"Net kuvvet sıfırsa ivme sıfırdır; hız sabit ve sıfırdan farklı olabilir.\"]",
+    "hint": "Hız ile hızın değişimi aynı şey değil.",
+    "guidance": {
+      "knowledge": [
+        "Net kuvvet, hızın değişimi olan ivmeyi belirler. Sabit hızın sıfır olması gerekmez."
+      ],
+      "strategy": "Fnet=m a bağıntısında Fnet=0 koy; pozitif kütlede hangi büyüklüğün zorunlu sıfır olduğunu bul.",
+      "steps": [
+        "0=m a ve m>0 olduğundan a=0.",
+        "a=0 iken hız değişmez; başlangıç hızı sıfırsa durur, sıfır değilse sabit hızla gider."
+      ],
+      "optionReasons": [
+        "Hızın sıfır olması zorunlu değildir; sabit ve sıfırdan farklı olabilir.",
+        "İvmenin sıfır olması doğrudur; net kuvvet hızın değişimini belirler.",
+        "Konum, seçilen başlangıç noktasına bağlıdır; net kuvvetin sıfır olması konumu sıfırlamaz."
+      ],
+      "commonError": "Dengeyi yalnız durmak olarak yorumlama; sabit hızlı hareket de mümkündür.",
+      "check": "Sürtünmesiz düzlemde 2 m/s sabit hızla giden cisimde a=0 ve Fnet=0’dır; bu karşı örnek hızın sıfır olması gerektiği iddiasını çürütür."
+    }
+  },
+  {
+    "id": "n3",
+    "identity": "[\"n3\",\"Etki ve tepki kuvvetleri…\",\"\",[\"Aynı cisim üzerinde birbirini götürür.\",\"Farklı cisimlere etki eder.\",\"Her zaman aynı yönlüdür.\"],1,\"Etki ve tepki eşit büyüklükte, zıt yönde ve farklı cisimler üzerindedir.\"]",
+    "hint": "Kuvvet çiftindeki iki etkileşen cismi düşün.",
+    "guidance": {
+      "knowledge": [
+        "Newton’un üçüncü yasasında A’nın B’ye kuvveti ile B’nin A’ya kuvveti eşit büyüklükte ve zıt yönlüdür."
+      ],
+      "strategy": "Her kuvvetin hangi cisim üzerine etki ettiğini adlandır; tek cismin kuvvet şemasına yalnız o cisme etki eden kuvveti al.",
+      "steps": [
+        "A’nın B’ye uyguladığı kuvvetin hedefi B’dir.",
+        "B’nin A’ya uyguladığı tepki kuvvetinin hedefi A’dır; iki kuvvet aynı cisim üzerinde değildir."
+      ],
+      "optionReasons": [
+        "Aynı cisim üzerinde birbirini götürmezler; etki ettikleri cisimler farklıdır.",
+        "Farklı cisimlere etki ederler; doğru ayrım budur.",
+        "Aynı yönlü değillerdir; eşit büyüklükte ve zıt yönlüdürler."
+      ],
+      "commonError": "Bir cisme ait serbest cisim şemasına onun başka cisme uyguladığı tepkiyi ekleme.",
+      "check": "El duvarı ittiğinde elin duvara kuvveti duvarda, duvarın ele kuvveti elde etkir."
+    }
+  },
+  {
+    "id": "n4",
+    "identity": "[\"n4\",\"Sıfırdan farklı net kuvvet aynı kalırken kütle iki katına çıkarsa ivme…\",\"\",[\"İki kat olur.\",\"Yarıya iner.\",\"Değişmez.\"],1,\"Aynı kuvvet için kütleyle ivme ters orantılıdır.\"]",
+    "hint": "a=Fnet/m bağıntısını kullan.",
+    "guidance": {
+      "knowledge": [
+        "a=Fnet/m bağıntısı sabit kütleli cisimler için kullanılır. Net kuvvet sabit tutulduğunda ivme kütleyle ters orantılıdır."
+      ],
+      "strategy": "İlk durum için a=F/m, ikinci durum için m yerine 2m yaz; iki ivmeyi karşılaştır.",
+      "steps": [
+        "Yeni kütle 2m iken a₂=F/(2m).",
+        "F/(2m)=(1/2)(F/m) olduğundan yeni ivme eski ivmenin yarısıdır."
+      ],
+      "optionReasons": [
+        "İki kat olma, ters orantıyı doğru orantı sanmaktır.",
+        "Yarıya inme doğrudur; kuvvet aynı, kütle iki kattır.",
+        "Değişmeme doğru değildir; aynı kuvvet daha büyük kütlede daha küçük ivme üretir."
+      ],
+      "commonError": "Kuvvetin sabit tutulduğunu unutup iki değişkeni birden değiştirme.",
+      "check": "Örneğin F=6 N için 2 kg’da a=3 m/s², 4 kg’da a=1,5 m/s² bulunur."
+    }
+  },
+  {
+    "id": "n5",
+    "identity": "[\"n5\",\"Sürtünmesiz yatay düzlemde sabit hızla giden cisim için yatay net kuvvet?\",\"\",[\"Sıfır\",\"Hareket yönünde\",\"Kütlesine eşit\"],0,\"Hızı korumak için net kuvvet gerekmez; hız değişimi için gerekir.\"]",
+    "hint": "Sabit hız, sıfır ivme demektir.",
+    "guidance": {
+      "knowledge": [
+        "Sabit hız, ivmenin sıfır olmasıdır. Yatay net kuvveti belirlemek için Fnet=m a kullanılır."
+      ],
+      "strategy": "Yatay hareketin hız değişimine bak; sürüyor olması tek başına yatay net kuvvet gerektiğini göstermez.",
+      "steps": [
+        "Hız sabit olduğundan yatay ivme 0’dır.",
+        "Fnet,x=m×0=0. Düşey ağırlık ve yüzeyin tepki kuvveti yatay net kuvvet sorusuyla karıştırılmamalıdır."
+      ],
+      "optionReasons": [
+        "Sıfır doğrudur; sabit hız için yatay ivme yoktur.",
+        "Hareket yönünde sıfırdan farklı net kuvvet olsaydı cisim o yönde ivmelenirdi.",
+        "Kütle kilogram, kuvvet newton birimindedir; birbirine eşit fiziksel büyüklükler değildir."
+      ],
+      "commonError": "Hareketi sürdürmek için her zaman net kuvvet gerektiğini düşünme.",
+      "check": "Fnet,x=0 ⇒ aₓ=0 ⇒ vₓ sabit. Bu, verilen sabit hızlı hareketle uyumludur."
+    }
+  },
+  {
+    "id": "p1",
+    "identity": "[\"p1\",\"Metnin ana düşüncesi nedir?\",\"Bir kitabı bitirmek, onu anlamakla aynı şey değildir. Okur bazen bir sayfada durup kendi sorularını kurduğunda metinle daha güçlü bir ilişki kurar. Okumanın değeri, yalnız çevrilen sayfalarda değil, kurulan düşüncelerde de aranmalıdır.\",[\"Okumanın değeri düşünsel etkileşimde de bulunur.\",\"Bütün kitaplar yavaş okunmalıdır.\",\"Kitap bitirmek gereksizdir.\"],0,\"Metin sayfa sayısına ek olarak düşünsel etkileşimi vurgular; bitirmeyi gereksiz saymaz.\"]",
+    "hint": "Metnin son cümlesi hangi ilişkiyi kuruyor?",
+    "guidance": {
+      "knowledge": [
+        "Ana düşünce, yazarın metnin bütünüyle savunduğu temel yargıdır. Bir ayrıntı, bütün metnin savı yerine geçirilmemelidir."
+      ],
+      "strategy": "İlk cümledeki bitirmek–anlamak ayrımını, son cümledeki yalnız değil…de yapısıyla birleştir.",
+      "steps": [
+        "İlk cümle bir kitabı bitirmek ile anlamanın aynı şey olmadığını söyler; bitirmeyi tümden reddetmez.",
+        "Son cümlede değerin düşünsel etkileşimde de aranması istenir. Seçenek bu ek boyutu kapsamalıdır."
+      ],
+      "optionReasons": [
+        "Düşünsel etkileşimde de bulunur ifadesi son cümledeki ek vurguyu korur; doğrudur.",
+        "Bütün kitaplar ve yavaş okunmalıdır genellemeleri metinde savunulmaz.",
+        "Kitap bitirmek gereksizdir yargısı metnin kapsamını aşar; bitirmek ile anlamak yalnızca ayırt edilir."
+      ],
+      "commonError": "Yalnız…de ifadesini okuyup bir unsuru tümden gereksiz ilan etme.",
+      "check": "Seçtiğin yargı hem ilk cümledeki ayrımı hem soru kurmaya ilişkin orta cümleyi hem de son cümledeki vurguyu açıklayabilmelidir."
+    }
+  },
+  {
+    "id": "p2",
+    "identity": "[\"p2\",\"Hangi sonuç metinden çıkarılamaz?\",\"Bir kitabı bitirmek, onu anlamakla aynı şey değildir. Okur bazen bir sayfada durup kendi sorularını kurduğunda metinle daha güçlü bir ilişki kurar. Okumanın değeri, yalnız çevrilen sayfalarda değil, kurulan düşüncelerde de aranmalıdır.\",[\"Soru sormak anlamaya katkı sağlayabilir.\",\"Çok sayfa okumak anlamayı tek başına göstermez.\",\"Hızlı okuyan hiç kimse anlayamaz.\"],2,\"Metin tüm hızlı okurlar hakkında kesin bir yargı vermiyor.\"]",
+    "hint": "Kesin ve kapsayıcı genellemeleri kontrol et.",
+    "guidance": {
+      "knowledge": [
+        "Çıkarılamaz sorusu, metnin desteklemediği yargıyı arar. Olasılık bildiren bir anlatımdan herkes için kesin hüküm çıkarılamaz."
+      ],
+      "strategy": "Her seçenekteki kesinlik derecesini metindeki bazen, yalnız değil ve de ifadeleriyle karşılaştır.",
+      "steps": [
+        "Soru kurmanın ilişkiyi güçlendirmesi ve bitirmenin anlamayla aynı olmaması metinde desteklenir.",
+        "Hızlı okuyanların hiçbirinin anlayamayacağı, bütün bir gruba ilişkin kesin bir yargıdır; metin bunu söylemez."
+      ],
+      "optionReasons": [
+        "Soru sormanın katkı sağlayabilmesi orta cümleyle uyumludur; metinden çıkarılabilir.",
+        "Sayfa sayısının tek başına anlama kanıtı olmaması ilk ve son cümleyle uyumludur.",
+        "Hızlı okuyan hiç kimse anlayamaz sonucu çıkarılamaz; metin böyle bir kesin genelleme yapmaz."
+      ],
+      "commonError": "Metinde bir okuma biçiminin eleştirilmesini, o biçimdeki herkes hakkında mutlak yargı sanma.",
+      "check": "Metinde hızlı okuyan bütün kişileri kapsayan bir ifade ara; böyle bir dayanak yoktur."
+    }
+  },
+  {
+    "id": "p3",
+    "identity": "[\"p3\",\"“Bazen” sözcüğünün işlevi nedir?\",\"Bir kitabı bitirmek, onu anlamakla aynı şey değildir. Okur bazen bir sayfada durup kendi sorularını kurduğunda metinle daha güçlü bir ilişki kurar. Okumanın değeri, yalnız çevrilen sayfalarda değil, kurulan düşüncelerde de aranmalıdır.\",[\"Durumu her okuma için zorunlu kılmaz.\",\"Bütün okurları aynı sayar.\",\"Bir tarih verir.\"],0,\"Olasılık ve duruma bağlılık korunur.\"]",
+    "hint": "İfadenin kesinlik derecesini düşün.",
+    "guidance": {
+      "knowledge": [
+        "Bazen, bir durumun her zaman zorunlu olduğunu söylemez; sıklığı ve kapsamı sınırlar."
+      ],
+      "strategy": "Sözcüğü bulunduğu cümlede oku; her zaman ile değiştirince iddianın nasıl güçlendiğine bak.",
+      "steps": [
+        "Okurun bir sayfada durup soru kurması, bazen sözcüğüyle her okumaya zorunlu tutulmamıştır.",
+        "Bu nedenle sözcük, durumun kapsamını sınırlar; tarih bildirmez ve bütün okurları aynı saymaz."
+      ],
+      "optionReasons": [
+        "Her okumaya zorunlu kılmaması doğrudur; bazen kesin bir evrensel yargı değildir.",
+        "Bütün okurları aynı saymak, sözcüğün sınırlayıcı işlevine aykırıdır.",
+        "Bazen belirli bir takvim tarihi vermez; sıklık belirtir."
+      ],
+      "commonError": "Sözcüğün cümledeki anlam etkisi yerine yalnız zamanla ilişkili olmasına bakarak tarih seçme.",
+      "check": "Bazen yerine her zaman yazıldığında anlamın güçlenmesi, özgün sözcüğün kapsamı dar tuttuğunu gösterir."
+    }
+  },
+  {
+    "id": "p4",
+    "identity": "[\"p4\",\"Metinde hangi iki unsur karşılaştırılıyor?\",\"Bir kitabı bitirmek, onu anlamakla aynı şey değildir. Okur bazen bir sayfada durup kendi sorularını kurduğunda metinle daha güçlü bir ilişki kurar. Okumanın değeri, yalnız çevrilen sayfalarda değil, kurulan düşüncelerde de aranmalıdır.\",[\"Yazar ve yayınevi\",\"Bitirilen sayfalar ve kurulan düşünceler\",\"Roman ve şiir\"],1,\"Nicel tamamlama ile düşünsel etkileşim arasındaki fark anlatılır.\"]",
+    "hint": "İlk ve son cümleyi birlikte oku.",
+    "guidance": {
+      "knowledge": [
+        "Karşılaştırılan unsurlar, metinde birlikte ele alınıp fark veya ilişki kurulan kavramlardır."
+      ],
+      "strategy": "İlk cümledeki karşıtlığı bul; son cümlede aynı ayrımın hangi sözcüklerle sürdüğünü izle.",
+      "steps": [
+        "Bitirmek–anlamak ayrımı ilk cümlede kurulur.",
+        "Son cümlede bu ayrım çevrilen sayfalar ve kurulan düşünceler olarak somutlaşır."
+      ],
+      "optionReasons": [
+        "Yazar ve yayınevi arasında metinde bir karşılaştırma yoktur.",
+        "Bitirilen sayfalar ve kurulan düşünceler, nicel tamamlama ile düşünsel etkileşim ayrımını yansıtır.",
+        "Roman ve şiir metinde karşılaştırılan iki tür değildir."
+      ],
+      "commonError": "Okumayla ilişkili olabilecek kavramları, metinde gerçekten geçen karşılaştırma sanma.",
+      "check": "İki unsur için de doğrudan metinsel dayanak gösterebilmelisin: çevrilen sayfalar ve kurulan düşünceler."
+    }
+  },
+  {
+    "id": "p5",
+    "identity": "[\"p5\",\"Metne en uygun başlık hangisidir?\",\"Bir kitabı bitirmek, onu anlamakla aynı şey değildir. Okur bazen bir sayfada durup kendi sorularını kurduğunda metinle daha güçlü bir ilişki kurar. Okumanın değeri, yalnız çevrilen sayfalarda değil, kurulan düşüncelerde de aranmalıdır.\",[\"Sayfaların Ötesinde Okumak\",\"En Hızlı Okuma Teknikleri\",\"Kitapların Basım Tarihi\"],0,\"Başlık, metnin anlama ve düşünme vurgusunu kapsar.\"]",
+    "hint": "Bütün metni kapsayanı seç.",
+    "guidance": {
+      "knowledge": [
+        "Başlık, metnin ana konusunu ve baskın vurgusunu kapsamalıdır; metinde işlenmeyen ayrı bir konu vaat etmemelidir."
+      ],
+      "strategy": "Başlığı, okumanın sayfa tamamlamanın ötesinde düşünsel bir ilişki olması vurgusuna göre seç.",
+      "steps": [
+        "Metin bir hız tekniği veya kitapların basım tarihi hakkında bilgi vermiyor.",
+        "Sayfaların ötesi, sayfa sayısıyla sınırlanmayan anlama ve düşünme boyutunu karşılar."
+      ],
+      "optionReasons": [
+        "Sayfaların Ötesinde Okumak, bütün metindeki anlama ve düşünme vurgusunu kapsar.",
+        "En Hızlı Okuma Teknikleri başlığı, metinde öğretilmeyen bir yöntem vaat eder.",
+        "Kitapların Basım Tarihi başlığı, metnin hiç ele almadığı bir konudur."
+      ],
+      "commonError": "Başlığı yalnız okumayla ilgili olmasına göre seçme; metnin asıl vurgusunu da taşımalıdır.",
+      "check": "Başlığın altında üç cümleyi de düşün: hepsi sayfa bitirmenin ötesindeki anlama ilişkisine bağlanır."
+    }
+  }
+]

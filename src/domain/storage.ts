@@ -62,6 +62,7 @@ export function validateState(input: unknown): AppState {
       d.index >= lesson.questions.length ||
       (d.selected !== null &&
         d.selected >= lesson.questions[d.index].options.length) ||
+      (!d.checked && (d.helpLevel ?? 0) > 0 && !d.hint) ||
       (d.reviewId && !reviewIds.has(d.reviewId))
     )
       throw Error("INVALID_DRAFT");

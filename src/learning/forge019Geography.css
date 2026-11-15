@@ -1,0 +1,324 @@
+.forge019-geography-lab {
+  min-width: 0;
+  line-height: 1.75;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+.forge019-geography-lab
+  :is(p, h3, h4, label, output, summary, strong, span, dt, dd, figcaption) {
+  word-break: normal;
+  overflow-wrap: normal;
+}
+.forge019-geography-lab :is(h3, h4) {
+  margin: 0 0 14px;
+}
+.forge019-geography-lab p {
+  margin: 16px 0;
+}
+.g019-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  gap: 24px;
+  margin: 24px 0;
+}
+.g019-control {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  margin: 22px 0;
+}
+.g019-control label,
+.g019-prediction > label {
+  display: block;
+  min-width: 0;
+}
+.g019-control :is(input, select),
+.g019-prediction textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+.g019-control input[type="range"] {
+  min-height: 44px;
+  margin-inline: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.g019-control input[type="number"],
+.g019-control select {
+  min-height: 44px;
+}
+.g019-selected {
+  display: block;
+  min-width: 0;
+  color: var(--muted);
+}
+.g019-check {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 12px;
+  min-height: 44px;
+  margin: 22px 0;
+  cursor: pointer;
+}
+.g019-check input {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  margin: 0;
+}
+.g019-check span {
+  flex: 1 1 14ch;
+  min-inline-size: min(100%, 14ch);
+}
+.g019-result,
+.g019-feedback {
+  min-width: 0;
+  margin: 24px 0;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.g019-result > strong,
+.g019-feedback > strong {
+  display: block;
+}
+.g019-prediction {
+  min-width: 0;
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+.g019-prediction textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.g019-prediction button {
+  max-width: 100%;
+  min-height: 44px;
+  font: inherit;
+  white-space: normal;
+  margin-top: 16px;
+}
+.g019-help,
+.forge019-geography-lab figcaption {
+  color: var(--muted);
+}
+.forge019-geography-lab figure {
+  margin: 24px 0;
+  min-width: 0;
+}
+.forge019-geography-lab figcaption {
+  margin-top: 14px;
+}
+.forge019-geography-lab details {
+  margin: 22px 0;
+  min-width: 0;
+}
+.forge019-geography-lab summary {
+  min-height: 44px;
+  padding: 12px 0;
+  cursor: pointer;
+  font: inherit;
+  list-style-position: inside;
+}
+.g019-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+  gap: 14px;
+  margin: 24px 0;
+}
+.g019-facts > div {
+  min-width: 0;
+  border-top: 1px solid var(--border);
+  padding: 14px 0;
+}
+.g019-facts dt {
+  font-weight: 600;
+}
+.g019-facts dd {
+  margin: 8px 0 0;
+}
+.g019-diagram {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  max-height: 780px;
+  overflow: visible;
+}
+.g019-diagram text {
+  fill: var(--text);
+  font:
+    20px system-ui,
+    sans-serif;
+  text-anchor: middle;
+}
+.g019-axis-text {
+  text-anchor: end !important;
+}
+.g019-axis,
+.g019-grid,
+.g019-link {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1.5;
+}
+.g019-grid {
+  stroke: var(--border);
+}
+.g019-cell,
+.g019-formal,
+.g019-node {
+  fill: var(--surface);
+  stroke: var(--muted);
+  stroke-width: 2;
+}
+.g019-formal {
+  stroke: var(--accent);
+  stroke-width: 5;
+}
+.g019-service {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+  stroke-dasharray: 6 4;
+}
+.g019-focus {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+  stroke-dasharray: 2 5;
+}
+.g019-sea {
+  fill: var(--surface);
+  stroke: var(--muted);
+  stroke-width: 2;
+}
+.g019-canal,
+.g019-natural {
+  fill: var(--surface);
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+.g019-route,
+.g019-route-short,
+.g019-closed {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 3;
+}
+.g019-route-short {
+  stroke: var(--accent);
+  stroke-width: 5;
+}
+.g019-closed {
+  stroke: var(--muted);
+  stroke-dasharray: 6 5;
+}
+.g019-cross {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 4;
+}
+.g019-mass {
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.g019-mass-A {
+  fill: var(--surface);
+}
+.g019-mass-B {
+  fill: var(--muted);
+}
+.g019-mass-C {
+  fill: var(--accent);
+}
+.g019-water {
+  fill: var(--muted);
+  opacity: 0.25;
+}
+.g019-water-line {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 3;
+}
+.g019-ground {
+  fill: var(--surface);
+}
+.g019-land-line {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.g019-house path,
+.g019-house-exposed path {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 1.5;
+}
+.g019-house-exposed path {
+  fill: var(--accent);
+  stroke: var(--text);
+}
+.g019-house .g019-brace,
+.g019-house-exposed .g019-brace {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 1;
+}
+.g019-data-list {
+  padding-left: 1.3em;
+}
+.g019-data-list li {
+  padding: 12px 0;
+}
+.g019-action {
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+}
+@media (max-width: 700px) {
+  .g019-controls {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .g019-result,
+  .g019-feedback {
+    padding: 6px;
+  }
+  .g019-result > strong,
+  .g019-feedback > strong,
+  .g019-facts dt,
+  .forge019-geography-lab :is(h3, h4),
+  .g019-control strong {
+    font-weight: 400;
+  }
+  .g019-control input[type="number"],
+  .g019-control select,
+  .g019-prediction textarea {
+    padding-inline: 4px;
+  }
+  .g019-prediction button {
+    padding-inline: 4px;
+  }
+  .g019-data-list {
+    padding-left: 18px;
+  }
+  .g019-facts {
+    grid-template-columns: 1fr;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .forge019-geography-lab * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+html[data-motion="off"] .forge019-geography-lab * {
+  animation: none !important;
+  transition: none !important;
+}

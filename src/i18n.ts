@@ -1,4 +1,5 @@
 import type { Text } from "./domain/model";
+import { APP_VERSION } from "./version";
 const messages: Record<string, string> = {
   openMenu: "Menüyü aç",
   skipToContent: "İçeriğe geç",
@@ -206,7 +207,7 @@ const messages: Record<string, string> = {
   startOver: "Taslağı bırak ve yeni çalışma aç",
   draftConfirm:
     "Yarım kalan çalışma var. Bu taslak bırakılıp yeni çalışma açılsın mı?",
-  footer: "Fragaria Interactive · YKSMania 0.16.0 alpha",
+  footer: `Fragaria Interactive · YKSMania ${APP_VERSION} alpha`,
   scopeNote:
     "İçerikler kaynaklardan sırayla işleniyor; hazır anlatımlar ve soru setleri doğrudan uygulamada çalışır.",
   questions: "Sorular",

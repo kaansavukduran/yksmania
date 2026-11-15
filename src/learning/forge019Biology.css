@@ -1,0 +1,323 @@
+.bio019 {
+  min-width: 0;
+  margin-block: 1.5rem;
+  padding: clamp(0.8rem, 2vw, 1.5rem);
+  border-block: 1px solid var(--border);
+  background: var(--surface);
+  overflow-wrap: break-word;
+}
+.bio019 h3 {
+  margin-block: 0 1rem;
+}
+.bio019 p {
+  line-height: 1.7;
+}
+.bio019-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 1.2rem;
+  margin-block: 1.2rem;
+  min-width: 0;
+}
+.bio019-field,
+.bio019-prediction {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.6rem;
+  min-width: 0;
+}
+.bio019-field > *,
+.bio019-prediction > * {
+  min-width: 0;
+}
+.bio019 select,
+.bio019 textarea,
+.bio019 input[type="range"] {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-inline: 0;
+  min-height: 44px;
+}
+.bio019-check {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 0.65rem;
+  align-items: start;
+  min-height: 44px;
+}
+.bio019-check input {
+  margin: 0;
+  width: 44px;
+  height: 44px;
+}
+.bio019-check > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.bio019 output {
+  display: block;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+  white-space: normal;
+  overflow-wrap: break-word;
+  line-height: 1.7;
+}
+.bio019-drawing {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 540px;
+  margin: 1rem auto;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg);
+  overflow: visible;
+}
+.bio019-drawing text {
+  fill: var(--text);
+  font-family: inherit;
+  font-size: 26px;
+}
+.bio019-drawing .bio019-small {
+  font-size: 26px;
+}
+.bio019-node rect {
+  fill: var(--surface-2);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio019-node.bio019-active rect {
+  stroke: var(--mint);
+  stroke-width: 4;
+}
+.bio019-flow,
+.bio019-micro {
+  fill: none;
+  stroke: var(--mint);
+  stroke-width: 5;
+}
+.bio019-faded {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 3;
+  stroke-dasharray: 5 5;
+}
+.bio019-dot,
+.bio019-bar {
+  fill: var(--mint);
+  stroke: var(--text);
+  stroke-width: 1.5;
+}
+.bio019-stop {
+  fill: var(--bg);
+  stroke: var(--accent);
+  stroke-width: 5;
+  stroke-dasharray: 3 2;
+}
+.bio019-red {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 1;
+}
+.bio019-fibrin {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 3;
+}
+.bio019-antigen {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio019-cell {
+  fill: var(--bg);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio019-organ,
+.bio019-airway {
+  fill: var(--surface-2);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio019-guide,
+.bio019-bracket,
+.bio019-leader {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio019-guide {
+  stroke-width: 4;
+}
+.bio019-thick {
+  fill: var(--surface-2);
+  stroke: var(--accent);
+  stroke-width: 4;
+}
+.bio019-thick-line {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 7;
+  stroke-linecap: round;
+}
+.bio019-thin {
+  fill: none;
+  stroke: var(--mint);
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+.bio019-i {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 5;
+}
+.bio019-node {
+  fill: var(--mint);
+  stroke: var(--text);
+  stroke-width: 1;
+}
+.bio019-selected {
+  fill: var(--surface-2);
+  stroke: var(--mint);
+  stroke-width: 4;
+}
+.bio019-arrow {
+  color: var(--text);
+}
+.bio019-arrow > path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 3;
+}
+.bio019-muted {
+  color: var(--muted);
+  stroke-dasharray: 5 5;
+}
+.bio019-gate {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+.bio019-bolus {
+  fill: var(--mint);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio019-mucus {
+  fill: none;
+  stroke: var(--mint);
+  stroke-width: 7;
+}
+.bio019-blood {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 7;
+}
+.bio019-bond {
+  stroke: var(--text);
+  stroke-width: 3;
+}
+.bio019-cut {
+  stroke: var(--accent);
+  stroke-width: 3;
+  stroke-dasharray: 3 4;
+}
+.bio019-result,
+.bio019-feedback {
+  min-width: 0;
+  padding: 1rem;
+  border-inline-start: 3px solid var(--mint);
+  background: var(--bg);
+  margin-block: 1rem;
+}
+.bio019-prediction {
+  padding-block: 1rem;
+  border-top: 1px solid var(--border);
+}
+.bio019-prediction button {
+  justify-self: start;
+  max-width: 100%;
+  min-height: 44px;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+.bio019 summary {
+  min-height: 44px;
+  cursor: pointer;
+  padding-block: 0.6rem;
+}
+.bio019 details {
+  margin-block: 1rem;
+  min-width: 0;
+}
+@media (max-width: 440px) {
+  .bio019 {
+    padding: 0.75rem 6px;
+  }
+  .bio019-controls {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .bio019-result,
+  .bio019-feedback {
+    padding: 0.75rem 6px;
+  }
+  .bio019-prediction button {
+    width: 100%;
+    padding-inline: 6px;
+    gap: 6px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bio019 * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+[data-motion="off"] .bio019 * {
+  animation: none !important;
+  transition: none !important;
+}
+.bio019-key {
+  min-width: 0;
+  border-block-start: 1px solid var(--border);
+  padding-block: 0.5rem;
+  line-height: 1.7;
+}
+.bio019-volume-bars {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  min-width: 0;
+}
+.bio019-volume-bars label {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  min-width: 0;
+  gap: 0.5rem;
+}
+.bio019 meter {
+  display: block;
+  width: 100%;
+  height: 24px;
+}
+.bio019-feedback p,
+.bio019-result p {
+  margin-block: 0.6rem;
+}
+.bio019 [data-selected-prediction] {
+  padding-block: 0.5rem;
+}
+.bio019 [data-nephron-region][data-selected="true"] {
+  stroke: var(--mint);
+}
+
+@media (max-width: 440px) {
+  .bio019-check {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 6px;
+  }
+}
