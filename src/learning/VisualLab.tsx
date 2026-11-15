@@ -76,7 +76,10 @@ const Forge014Chemistry = lazy(() => import("./Forge014ChemistryLab"));
 const Forge014Biology = lazy(() => import("./Forge014BiologyLab"));
 const Forge014Geography = lazy(() => import("./Forge014GeographyLab"));
 const Forge014Turkish = lazy(() => import("./Forge014TurkishLab"));
-const source014Labs: { topics: Record<string,string>; Component: ComponentType<{lessonId:string}> }[] = [
+const source014Labs: {
+  topics: Record<string, string>;
+  Component: ComponentType<{ lessonId: string }>;
+}[] = [
   { topics: forge014MathTopics, Component: Forge014Math },
   { topics: forge014PhysicsTopics, Component: Forge014Physics },
   { topics: forge014ChemistryTopics, Component: Forge014Chemistry },
@@ -110,7 +113,9 @@ const continuationLabs: {
 ];
 export function VisualLab({ id }: { id: string }) {
   const { t } = useApp();
-  const Source014Lab = source014Labs.find(({topics}) => Object.hasOwn(topics,id))?.Component;
+  const Source014Lab = source014Labs.find(({ topics }) =>
+    Object.hasOwn(topics, id),
+  )?.Component;
   const ContinuationLab = continuationLabs.find(({ topics }) =>
     Object.hasOwn(topics, id),
   )?.Component;

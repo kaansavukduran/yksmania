@@ -311,7 +311,7 @@ let result = { status: "INCOMPLETE", url: origin };
 try {
   expect(additionalFamilies).toHaveLength(6);
   await page.goto(origin);
-  await expect(page.locator(".sidebar-version")).toContainText("0.13.0");
+  await expect(page.locator(".sidebar-version")).toContainText("0.14.0");
   const manifestLink = await page
     .locator('link[rel="manifest"]')
     .getAttribute("href");
@@ -327,7 +327,7 @@ try {
     new URL("version.json", origin).href,
   );
   expect(versionResponse.status()).toBe(200);
-  expect((await versionResponse.json()).version).toBe("0.13.0");
+  expect((await versionResponse.json()).version).toBe("0.14.0");
   const worker = await page.evaluate(async () => {
     const reg = await navigator.serviceWorker.ready;
     if (!navigator.serviceWorker.controller)

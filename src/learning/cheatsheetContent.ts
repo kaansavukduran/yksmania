@@ -42,6 +42,8 @@ export interface CheatSheet {
 }
 
 const completeSourceSheets = new Set([
+  "mol",
+  "carpanlara-ayirma",
   ...Object.keys(forge014MathTopics),
   ...Object.keys(forge014PhysicsTopics),
   ...Object.keys(forge014ChemistryTopics),

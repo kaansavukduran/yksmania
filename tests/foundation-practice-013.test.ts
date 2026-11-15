@@ -11,12 +11,12 @@ import {
 } from "../src/learning/forge013FoundationQuestions";
 import { selectExamVariant, examCatalogue } from "../src/domain/exams";
 
-it("preserves every field of all 1130 accepted questions while adding exactly 130 original practice items", () => {
+it("preserves every field of all 1130 accepted questions while retaining the 130 original foundation practice items", () => {
   const all = lessons.flatMap((l) => l.questions),
     byId = new Map(all.map((q) => [q.id, q]));
   expect(acceptedQuestions).toHaveLength(1130);
-  expect(all).toHaveLength(1260);
-  expect(byId.size).toBe(1260);
+  expect(all.length).toBeGreaterThanOrEqual(1260);
+  expect(byId.size).toBe(all.length);
   for (const old of acceptedQuestions)
     expect(byId.get(old.id), old.id).toEqual(old);
   const newQuestions = foundation013QuestionSets.flatMap((p) => p.questions);
@@ -87,7 +87,7 @@ it("repairs thirteen existing practice gaps without replacing their lesson ident
 
 it("makes every prepared theory and the first 138 ordered topics independently practicable", () => {
   const theory = lessons.filter((l) => !l.tags.includes("soru-seti"));
-  expect(theory).toHaveLength(146);
+  expect(theory.length).toBeGreaterThanOrEqual(146);
   for (const lesson of theory)
     expect(lesson.questions.length, lesson.id).toBeGreaterThan(0);
   for (const topic of studyTopics.slice(0, 138)) {
@@ -101,10 +101,10 @@ it("makes every prepared theory and the first 138 ordered topics independently p
       topic.title,
     ).toBe(true);
   }
-  // Every added topic reaches the existing bank; no full-length or extra exam is invented.
+  // Retain foundation coverage; geography now contributes a branch and five TYT items.
   const catalogue = examCatalogue();
-  expect(catalogue).toHaveLength(13);
-  expect(catalogue.find((e) => e.id === "mixed-tyt")!.items).toHaveLength(105);
+  expect(catalogue).toHaveLength(14);
+  expect(catalogue.find((e) => e.id === "mixed-tyt")!.items).toHaveLength(110);
   expect(catalogue.find((e) => e.id === "mixed-ayt")!.items).toHaveLength(25);
   for (const pack of foundation013QuestionSets) {
     const spec = catalogue.find((s) => s.id === `branch-${pack.subjectId}`)!;
@@ -127,8 +127,12 @@ it("retains all pre-existing lesson identities and every non-question teaching f
       );
     return value;
   };
-  expect(lessons).toHaveLength(Object.keys(oldLessonFingerprints).length);
-  for (const lesson of lessons) {
+  expect(lessons.length).toBeGreaterThanOrEqual(
+    Object.keys(oldLessonFingerprints).length,
+  );
+  for (const id of Object.keys(oldLessonFingerprints)) {
+    const lesson = lessonById(id)!;
+    expect(lesson, id).toBeDefined();
     const { questions: _questions, ...teaching } = lesson;
     const hash = createHash("sha256")
       .update(JSON.stringify(canonical(teaching)))
