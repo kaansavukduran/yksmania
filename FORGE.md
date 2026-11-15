@@ -37,7 +37,7 @@ Yerel `check`, `build` ve 351/351 birim testi PASS. İlk birleşik birim koşusu
 58 karakterlik açıklamayı reddetti. Öğretim metni sırf sayı için uzatılmadı;
 gerçek yazılmış geri bildirimin aynılığı, boş olmaması ve cevap metninden
 farklı olması denetlenir. Sonuç veya kullanıcı davranışı kabulü gevşetilmedi.
-Hedefli 66 ve tam 272 tarayıcı kabulü ile manuel görüntü, Electron, Pages,
+Hedefli 66 ve tam 273 tarayıcı kabulü ile manuel görüntü, Electron, Pages,
 gerçek web yükseltmesi ve uzak 0.12 yayın/paket kabulü bu aday kaydında henüz
 sonuçlanmadı. Önceki 0.11 başarıları yeni adaya otomatik aktarılmaz.
 
@@ -68,7 +68,7 @@ Gerçek görsel incelemede ek bulgular ve dar onarımlar:
 İlk hedefli 66 browser PASS (4,5dk); iki 120 durumluk ölçüm/snapshot koşusu
 renderer0 ile PASS. Bu sayılar bütün görüntülerin görsel bakımdan kusursuz
 olduğu iddiası değildir: yukarıdaki kusurlar gerçek görüntülerde saptandı.
-Son dört aile dolgu onarımından sonra tam 272 browser ve etkilenen 88 görünüm
+Son dört aile dolgu onarımından sonra tam 273 browser ve etkilenen 88 görünüm
 tekrar kabulü sürüyor. Uzun node ekran görüntülerindeki skip-link örtüşmesi
 aynı gerçek viewport/aktif eleman/sınır ölçümüyle Chromium capture artefaktı
 olarak doğrulandı; erişilebilirlik bağlantısı gizlenmedi veya silinmedi.
@@ -95,13 +95,22 @@ tekrarlarını korudu: altı test4+2PASS. İlk iki lipid testinin kaynak arşivi
 başlığıyla UI başlığını eşleştirmesi bekledi; benzersiz gerçek Lipitler girişi
 kullanıldı. Yeni E2E’nin uygulama JSON importu Node’da test yüklenmesini
 engellemişti; doğrudan özgün soru seti ve gerçek UI kullanıldı. Davranış,
-süre ve erişilebilirlik sınırları aynı. Tam272 tarayıcı koşusu halen sürüyor.
+süre ve erişilebilirlik sınırları aynı. Tam273 tarayıcı koşusu halen sürüyor.
 
 Bu sürüm adayı henüz yayımlanmadı. Fiziksel Android, temiz Windows kurulumu,
 portable taşıma ve iki native sürüm arasında veri koruyan yükseltme ayrıca
 doğrulanmalıdır.
 
 ---
+
+0.12 ilk tam yerel koşu269/272 PASS (19,1dk), ilk CI de aynı üç Türkçe
+caption denetiminde FAIL. Küçük açıklamadaki37,35px metin45px ana eylemle
+eşit sanılmıştı; ana eylem/geribildirim font koruması ve bütün sözcük satırı
+koşulu korunarak tipografik roller ayrıldı. İlgili dokuz tarayıcı testi PASS.
+YKS-066/Orta: dolu karbon/iyon dairelerinde açık etiketler düşük kontrastlıydı;
+yazı zıt tema zeminiyle boyandı. Gerçek C ve iyon işaretleri dokuz tema/örnek
+durumunda12’şer glyph için en az4,5:1 kontrastı geçti. Soru/öğrenme verisi
+değişmedi. Son tam273 ve temiz paket CI yeni kaynakta tekrar koşacak.
 
 # 0.11.0 yayımlandı: 30 yeni ünite ve GitHub Pages
 

@@ -1,3 +1,12 @@
+# 0.12 son font ve simge düzeltmesi
+
+İlk yerel tam koşu269/272, ilk CI de üç Türkçe caption font beklentisiyle FAIL.
+Ana eylem45px kalır;37,35px küçük açıklamanın ayrı tipografik rolü testte ayrıldı.
+Sözcüklerin bölünmeme ve erişilebilir ölçek koşulları korunur. Dokuz ilgili
+browser testi PASS; karbon/iyon işaretleri gerçek dolguları üzerinde üç tema
+ve üç örnekte en az4,5:1 kontrastla denetlendi. 351unit/check PASS; tam273,
+yeni CI ve canlı kabul henüz bu ek kayıtta sonuçlanmadı.
+
 # 0.12 son yerel ek kabul
 
 351 birim testi, check ve build PASS. Geliştirme Electron’da bütün eski akışlar
