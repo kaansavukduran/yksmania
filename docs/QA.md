@@ -62,6 +62,18 @@ yanlış taslak, not ve 870 bayt sentetik PDF korunur. XP25→25; altı KORUNAN
 veya native/fiziksel yükseltme değildir. 0.13 uzak CI/yayın/paket kabulü bu
 yerel sonuçlardan çıkarılmaz.
 
+Pages ilk uzak kabulü 43714489303, temel soru geçişinde testin kaldırılmış
+native onayı beklemesi nedeniyle FAIL oldu. Uygulama HTML onayı gösteriyordu;
+betik gerçek pencereyi açıp onay öncesi bütün kaydın aynılığını ve görünür
+“Yeni çalışmayı aç” eylemini doğrulayacak şekilde düzeltildi. Eski yerel PASS
+raporu aynı akışla yeniden üretilemediği için son kabul kanıtından çıkarıldı.
+Kaynak tekrar ayrı prefix dizinine derlendi; 99 dosyanın tamamı eski prefix ile
+byte eşitti. Eski betik yeni prefix'te de aynı hatayı üretti; yalnız test
+beklentisi onarıldı, uygulama/soru verisi değişmedi. Yeni yerel Pages kabulü PASS; HTML onaydan sonra her iki yeni banka ilk kez
+çevrimdışı açıldı, yanıt/geri bildirim/reload ve bütün eski akışlar korundu.
+Uzak tekrarlar bu düzeltilmiş betikle ayrı kaydedilir. İlk CI/canlı koşuları,
+nihai aynı kaynakta tekrar için iptal edildi; tamamlanmış kabul sayılmaz.
+
 Fiziksel Android, temiz Windows kurulumu, portable taşıma ve iki native sürüm
 arasında veri koruyan yükseltme ayrıca doğrulanmalıdır. Kaynak ve bağımsız
 inceleme sınırları SOURCE_REVIEW’da; ilk başarısız denemeler FORGE’dedir.

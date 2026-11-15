@@ -81,6 +81,18 @@ metinleri 8.845 bilinen özel kimlik/bağlantıya karşı taradı: özel kimlik,
 ham PDF, binary veya anahtar yok. 752 bağımlılık kaydı korunur; kilitte yalnız
 iki kök sürüm alanı değişir. 0.13 uzak CI ve yayın kabulü henüz bekleniyor.
 
+Pages ilk uzak kabulü 43714489303, temel soru geçişinde testin kaldırılmış
+native onayı beklemesi nedeniyle FAIL oldu. Uygulama HTML onayı gösteriyordu;
+betik gerçek pencereyi açıp onay öncesi bütün kaydın aynılığını ve görünür
+“Yeni çalışmayı aç” eylemini doğrulayacak şekilde düzeltildi. Eski yerel PASS
+raporu aynı akışla yeniden üretilemediği için son kabul kanıtından çıkarıldı.
+Kaynak tekrar ayrı prefix dizinine derlendi; 99 dosyanın tamamı eski prefix ile
+byte eşitti. Eski betik yeni prefix'te de aynı hatayı üretti; yalnız test
+beklentisi onarıldı, uygulama/soru verisi değişmedi. Yeni yerel Pages kabulü PASS; HTML onaydan sonra her iki yeni banka ilk kez
+çevrimdışı açıldı, yanıt/geri bildirim/reload ve bütün eski akışlar korundu.
+Uzak tekrarlar bu düzeltilmiş betikle ayrı kaydedilir. İlk CI/canlı koşuları,
+nihai aynı kaynakta tekrar için iptal edildi; tamamlanmış kabul sayılmaz.
+
 Android kaynak sürümü 0.13.0/code21; 752 bağımlılık kaydı değişmez. Deneme
 kataloğu hâlâ 13 settir: TYT 105, AYT 25 ve 11 branş. Eksik resmî dağılım
 etiketleri ve süreler korunur; yeni deneme başlangıçta çeşitlenir, eski taslak
