@@ -21,6 +21,12 @@ Kaynak bileşen QA'sı normal uygulama veya fiziksel cihaz kabulü diye sayılma
 
 ---
 
+Geliştirme testinin ilk tam koşusunda ortak Vite bağımlılık önbelleği iki gerçek HTTP504/Outdated Optimize Dep yanıtı verdi. Teste yalnız kendisine ait cacheDir eklendi; assertion ve süreler korunur. İlk Ctrl-C tool kabuğunu kapatsa da alt npm süreçleri çalıştığı için ikinci koşu dört browser worker ile çakıştı. PID ile sınırlandırılmış süreç temizliği sonrasında sıfır canlı test tarayıcısı doğrulandı; aynı eski AYT vakası değişmeyen C5 ile17,6s, sonraki iki-worker koşusunda19,8s PASS oldu. İki ilk eksik koşu ayrı korunur (138 PASS/1 FAIL ve79 PASS/1 FAIL; tam kabul değildir).
+
+Gerçek ayrılmış C5 tam koşusu494 PASS/1 FAIL/2kesilen/51çalışmayan olarak bilinçli durduruldu. Atom yarıçapı etkinliğinin45px başlığı “karşılaştırma” sözcüğünü bölüyordu. İlk dar etiket onarımı tek başına yetmedi; son C7'de başlık “Önce kıyas koşulu”, erişilebilir ve görünür seçim etiketi “Örnek türü” oldu. Font, geometri,70soru/74bölüm ve model kayıtları değişmedi. Aynı katı RangeRect beklentili telefon regresyonu5,7s PASS; ortak KimyaB modülünün bütün yedi modeli son derlemeyle14/14 ayrı normal/telefon vakasında geçti. C5durdurulmuş koşusu tam PASS diye sunulmaz. Tam548 kabulü yeni adayda GitHub geliştirme dalında yapılacak; ana yayın öncesi kapıdır.
+
+Son C7 derlemesi ve tam TypeScript kontrolü PASS. Gerçek0.15→C7 web güncellemesi tekrar taze profilde12 yeni modelin ilk çevrimdışı kullanımını, tam eski state/belge/katalog aynılığını,37soruluk eski AYT taslağı ve45soruluk yeni kataloğu,5/5oturumu/üçtekrar/notları/870bayt eski sentetikPDF'yi korudu;XP25→25. PrefixC7 derlemesi ve son özel-veri/bağımlılık taraması PASS. C5native/Pages37aile kanıtları önceki C5 artefaktına aittir; son C7'nin tam548 ve gerçek paket kabulü ayrı GitHub geliştirme dalı kapısında doğrulanacaktır.
+
 ## Tarihsel doğrulanmış 0.15 kaydı
 
 # 0.15.0 — yayın ve paket kabulü tamamlandı

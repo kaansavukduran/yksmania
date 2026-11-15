@@ -115,7 +115,7 @@ export const chemistryB017Cases = [
     "ayt-periyodik-sistem-atom-capi",
     key("ayt-periyodik-sistem-atom-capi"),
     async (_page, lab) => {
-      await select(lab, "Karşılaştırma ailesi", "iso");
+      await select(lab, "Örnek türü", "iso");
       await select(lab, "İlk tanecik", "4");
       await select(lab, "Son tanecik", "0");
       await predict(

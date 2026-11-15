@@ -450,10 +450,10 @@ function RadiusLab() {
     second = Math.round(bound(p.second, 0, f.species.length - 1)),
     m = radiusB017(family, first, second);
   return (
-    <Frame id={id} title="Önce karşılaştırma koşulu">
+    <Frame id={id} title="Önce kıyas koşulu">
       <div className="cb017-controls">
         <Choice
-          label="Karşılaştırma ailesi"
+          label="Örnek türü"
           value={family}
           options={[
             ["iso", "İyonlar"],
