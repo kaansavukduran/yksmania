@@ -23,7 +23,7 @@ jobs:
         env:
           ELECTRON_SKIP_BINARY_DOWNLOAD: "1"
       - run: npx playwright install --with-deps chromium
-      - run: npm run test:e2e -- --trace retain-on-failure
+      - run: npm run test:e2e -- --workers=2 --trace retain-on-failure
         env:
           BASE_URL: ${{ inputs.url }}
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
