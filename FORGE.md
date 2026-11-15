@@ -46,6 +46,20 @@ release kabulü henüz bekleniyor; bu yerel sonuçlar yayın kabulü sayılmaz.
 Fiziksel Android, temiz Windows kurulum, portable taşıma ve iki native sürüm
 arasında veri koruyan yükseltme NOT TESTED.
 
+## İlk canlı koşu: soğuk önbellek önkoşulu
+
+İlk uzak c110f215 kaynağında CI dört iş (414 birim/361 tarayıcı) ve Pages üç
+iş PASS; canlı web 360/361 idi. Eski periyodik karşılaştırma testi, service
+worker hazır ve sayfayı kontrol ediyor olmadan ağı kapatıyordu; reload
+ERR_INTERNET_DISCONNECTED verdi. Aynı değişmeyen C6 uygulamasıyla sw.js
+yanıtı 20 saniye geciktirilince hata yeniden üretildi. Test gerçek
+serviceWorker.ready, controllerchange ve activated durumunu beklediğinde
+bütün eski çevrimdışı/model/kayıt asserleri geçti; normal preview odaklı 2/2
+ve kaynak kontrolü PASS. Test veya assertion çıkarılmadı; uygulama kodu ve
+111 çıktı baytı değişmedi. Yeni aynı-SHA CI/Pages/canlı kapıları bekleniyor.
+Uzak trace indirilemediği için trace görüldü denmedi; iş logu ve gerçek
+önce/sonra tarayıcı kanıtı kullanıldı.
+
 ---
 
 ## Tarihsel doğrulanmış 0.13 yayını
