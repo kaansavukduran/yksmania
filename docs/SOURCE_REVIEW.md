@@ -1,3 +1,32 @@
+# 0.16: 199–258 sırasındaki 60 ünitenin kaynak yakın okuması
+
+Canlı Aurelia/YKS klasörleri ve gerçek PDF baytları kullanıldı. Eski envanterde görünmeyen dosya yok sayılmadı; ilgili klasörler yeniden listelendi. Aşağıdaki sınırlar gerçek metin ve kritik sayfa görüntüsü okumalarıdır; bütün kitap veya bütün arşiv okunduğu anlamına gelmez. Ham PDF, özel dosya kimlikleri ve bağlantıları ürüne konulmadı.
+
+| Aile                                   | Gerçekte okunan öğretim kapsamı                                                                                                                                                         |
+| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Endokrin                               | MEBİ AYT Biyoloji PDF 25–33; OGM Endokrin 10–16. Sekiz kritik görüntü. Tam canlı AYT kopya klasöründe endokrin kağıdı bulunmadı; bütün Drive'da yokluğu iddia edilmedi.                 |
+| Duyu ve destek-hareket                 | MEBİ 34–53; OGM Duyu Organları III 10–15/18–20. On beş gerçek görüntü; yakın göz ışınları ve eklem ankrajları bağımsız geometrik hesapla denetlendi.                                    |
+| Kas ve sindirim                        | MEBİ 54–61/64–69; OGM kas 20–22 ve sindirim 10–11/14–15. On sekiz gerçek şekil. Keratin/kreatin, mide mukusu ve pankreas kanalı ayrımları korunur.                                      |
+| Yüzey şekilleri ve dünya suları        | Aurelia 012–020: 63 sayfa; OGM 18 öğretim sayfası; MEBİ 66–82: 17 sayfa. Toplam 98 farklı metin sayfası ve on kritik görüntü.                                                           |
+| Türkiye suları, toprak, bitki ve nüfus | Aurelia 021–028: 56 sayfa; OGM 23; MEBİ 21 sayfa. Toplam 100 farklı metin sayfası ve on iki gerçek şekil. Toprak sınıfları, bitki örnekleri ve yerleşme ölçütleri ayrıca eşleştirildi.  |
+| Koligatif, ayırma ve asit-baz          | Aurelia üç kağıt: 21 sayfa; MEBİ 83–86 ve OGM ilgili öğretim sayfaları. Bağımsız okuyucu MEBİ 83/86 ve OGM 17 gerçek görüntülerini ayrıca gördü.                                        |
+| Metal tepkimeleri ve günlük kimya      | Aurelia 051–055: 35 sayfa; MEBİ 83–94 ve ilgili OGM öğretim sayfaları. Kırk iki gerçek görüntü. Kapak/anahtar dahil fiziksel metin sayfası sayımı öğretilen bölüm sayısı diye sunulmaz. |
+| Modern atom ve gazlar                  | Aurelia TYT köprü kağıtları 009/011/012/013/027: 41 sayfa; MEBİ AYT 11–37: 27 sayfa; OGM 21 öğretim sayfası. On beş gerçek şekil. NIST temel hâl dizilimleri ayrıca karşılaştırıldı.    |
+| Newton ve ivmeli hareket               | MEBİ PDF 23–46:24 metin sayfası; Aurelia 003/004:36 sayfa; Newton Cepte 10–16/18 ve Hareket Cepte 10–13. OGM 004–010 yedi gerçek pafta, kritik kuvvet/grafik şekilleri ayrıca açıldı. Kuvvet, yönlü hız/ivme ve grafik koşulları ayrı açıklandı.   |
+| Atış ve enerji                         | MEBİ 47–71: 25 sayfa; Aurelia 005: 19 sayfa; Dersler Cepte 15 sayfa; OGM 011–015 öğretim paftaları ve gerçek şekiller. Yanlış seçenek/eksen/enerji tablo hizaları öğretime aktarılmadı. |
+| Yazım ve noktalama                     | Aurelia 014/015 tam 1–7; OGM Yazım 1–52 ve Noktalama 3–47; MEBİ 41–64. Sekiz gerçek tablo görüntüsü. Başlık/kapak öğretim sayfası sayılmadı.                                            |
+| Anlatım ve sözcük anlamı               | Aurelia 016/017: 14 sayfa; OGM anlatım 30 ve sözcük 21 sayfa; MEBİ 11–16/121–127: 13 sayfa. Kritik tablo ve cümle şekilleri ayrıca açıldı.                                              |
+
+İki okuyucu bütün 600 yeni soruyu, 248 çözümü, model koşullarını ve anahtarları kontrol etti. Sorular kendi kartında gerekli metin, veri ve varsayımı taşır; yalnız ipucunda bulunan denklem öncül sayılmaz. Şekil/fotoğraf/harita başvurusu varsa gerçek gösterim veya açık veri aranır. Yeni kartlar özgün öğretim sorusudur; kağıttaki eski ÖSYM atfı, asıl kitapçık ve anahtarı ayrıca doğrulanmadan resmî soru diye sunulmaz.
+
+Model sınırları açık kalır: pH 7'nin 25°C koşulu; eşdeğerlikte makine yuvarlaması; amfoter metalin verilen ortamı; derişik HNO₃'te NO₂; Pauli/Hund ve iyonlaşmada dış katmanın önce boşalması; ideal/gerçek gaz ayrımı; depo/akı ve hormon sentez-salım farkı; kuvvet/enerji işaretleri; nüfus sayısı/oranı ayrımı. Sığla Türkiye ülke endemiği diye öğretilmez. Kaynaktaki yanlış deyim aktarımı yönü, faya ters ok ve yanlış fizik seçenekleri kopyalanmadı.
+
+Kaynak bileşen kontrolleri ile normal uygulama, üretim service-worker'ı, native ve yayımlanmış HTTPS kontrolleri ayrı kabul kapılarıdır. 0.16 tam ürün ve yayın doğrulaması bu kayıt yazılırken sürüyor.
+
+---
+
+## Tarihsel doğrulanmış 0.15 kaydı
+
 # 0.15 kaynak yakın okuması ve öğretime aktarım
 
 Bu tur 30 ünite,245 kapsam bölümü,122 çözümlü örnek ve 300 özgün soru ekler. Özel Drive kimlikleri, kişisel çalışma kayıtları, ham PDF'ler veya indirme URL'leri Git'e girmez. Kaynakça/indirme tek başına bütün arşivin işlendiği anlamına gelmez.

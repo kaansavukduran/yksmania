@@ -168,7 +168,7 @@ export const forge016SmokeCases = [
     exam: "TYT",
     title: "Yazım kuralları: anlamdan doğru biçime",
     storedKey: "forge016-turkish:yazim-kurallari",
-    persisted: { pair: "de", changed: true },
+    persisted: { pair: "de", changed: true, show: true },
     expected: ["boyanan varlıklar arasına ekler"],
     async act(lab) {
       await lab
@@ -176,6 +176,9 @@ export const forge016SmokeCases = [
         .selectOption("de");
       await lab
         .getByRole("button", { name: "Cümleyi dönüştür", exact: true })
+        .click();
+      await lab
+        .getByRole("button", { name: "Kanıtı göster", exact: true })
         .click();
     },
     async assertModel(lab) {

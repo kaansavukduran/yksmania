@@ -1,3 +1,15 @@
+# 0.16 sonrası çalışma sırası
+
+0.16 adayı: 264 anlatım/236 ayrıntılı rehber/264 özet/2.440 soru; ilk 258/479 hazır.60 yeni başlık, 610 birim ve derleme geçti. Tam ürün ve uzak yayın kapıları sürüyor. Yayımlanmış 0.15 aşağıdaki tarihsel kayıtta ayrı tutulur.
+
+Sonraki 259–288 sırasındaki 30 başlık kaynak okuması ve özel çalışma dalında hazırlanıyor: karaciğer/pankreas/kalp/damar/kan/lenf/bağışıklık; gaz ve çözelti; momentum/tork/kütle merkezi/basit makine/elektrik kuvveti; nüfus/göç/ekonomi; deyimler/cümle anlamı/paragraf; noktanın analitiği. Hazırlık, bitmiş veya yayımlanmış içerik sayılmaz.
+
+479 sıra sonuna dek gerçek kaynak kapsamı → ayrıntılı anlatım → özgün etkileşim → tam yerleşik özet → bağımsız soru/çözüm → ikinci okuyucu → ürün ve yayın kabulü zinciri sürer. Sonra bütün Drive materyali ve doğrulanmış resmî arşiv için ayrı açık matrisi tamamlanır. Tam 120/80 denemeler mevcut kotaya ulaşınca sunulur; eksik kısa pratik tam deneme diye etiketlenmez.
+
+---
+
+## Tarihsel doğrulanmış 0.15 kaydı
+
 # 0.15 sonrası çalışma sırası
 
 Yayımlanan 0.15: 204 anlatım / 176 rehber / 204 özet / 1.840 soru; ilk 198/479 anlatım+soru hazır. 169–198. başlıklara 30 yeni konu; son yerel 478 birim ve 25-aile native/Pages/web-yükseltme kabulü var, yerel, CI ve canlıda ayrı 423/423 tarayıcı, CI dört iş ve Pages üç iş geçti. Sekiz 0.15 alpha dosyası yayımlandı.

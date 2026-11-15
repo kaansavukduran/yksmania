@@ -1,0 +1,235 @@
+.bio017 {
+  min-width: 0;
+  margin-block: 1.5rem;
+  padding: clamp(0.8rem, 2vw, 1.5rem);
+  border-block: 1px solid var(--border);
+  background: var(--surface);
+  overflow-wrap: break-word;
+}
+.bio017 h3 {
+  margin-block: 0 1rem;
+}
+.bio017 p {
+  line-height: 1.7;
+}
+.bio017-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 1.2rem;
+  margin-block: 1.2rem;
+  min-width: 0;
+}
+.bio017-field,
+.bio017-prediction {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.6rem;
+  min-width: 0;
+}
+.bio017-field > *,
+.bio017-prediction > * {
+  min-width: 0;
+}
+.bio017 select,
+.bio017 textarea,
+.bio017 input[type="range"] {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-inline: 0;
+  min-height: 44px;
+}
+.bio017-check {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 0.65rem;
+  align-items: start;
+  min-height: 44px;
+}
+.bio017-check input {
+  margin: 0;
+  width: 44px;
+  height: 44px;
+}
+.bio017-check > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.bio017 output {
+  display: block;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+  white-space: normal;
+  overflow-wrap: break-word;
+  line-height: 1.7;
+}
+.bio017-drawing {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 540px;
+  margin: 1rem auto;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg);
+  overflow: visible;
+}
+.bio017-drawing text {
+  fill: var(--text);
+  font-family: inherit;
+  font-size: 26px;
+}
+.bio017-drawing .bio017-small {
+  font-size: 23px;
+}
+.bio017-cell {
+  fill: var(--bg);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio017-organ,
+.bio017-airway {
+  fill: var(--surface-2);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio017-guide,
+.bio017-bracket,
+.bio017-leader {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio017-guide {
+  stroke-width: 4;
+}
+.bio017-thick {
+  fill: var(--surface-2);
+  stroke: var(--accent);
+  stroke-width: 4;
+}
+.bio017-thick-line {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 7;
+  stroke-linecap: round;
+}
+.bio017-thin {
+  fill: none;
+  stroke: var(--mint);
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+.bio017-i {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 5;
+}
+.bio017-node {
+  fill: var(--mint);
+  stroke: var(--text);
+  stroke-width: 1;
+}
+.bio017-selected {
+  fill: var(--surface-2);
+  stroke: var(--mint);
+  stroke-width: 4;
+}
+.bio017-arrow {
+  color: var(--text);
+}
+.bio017-arrow > path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 3;
+}
+.bio017-muted {
+  color: var(--muted);
+  stroke-dasharray: 5 5;
+}
+.bio017-gate {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+.bio017-bolus {
+  fill: var(--mint);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio017-mucus {
+  fill: none;
+  stroke: var(--mint);
+  stroke-width: 7;
+}
+.bio017-blood {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 7;
+}
+.bio017-bond {
+  stroke: var(--text);
+  stroke-width: 3;
+}
+.bio017-cut {
+  stroke: var(--accent);
+  stroke-width: 3;
+  stroke-dasharray: 3 4;
+}
+.bio017-result,
+.bio017-feedback {
+  min-width: 0;
+  padding: 1rem;
+  border-inline-start: 3px solid var(--mint);
+  background: var(--bg);
+  margin-block: 1rem;
+}
+.bio017-prediction {
+  padding-block: 1rem;
+  border-top: 1px solid var(--border);
+}
+.bio017-prediction button {
+  justify-self: start;
+  max-width: 100%;
+  min-height: 44px;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+.bio017 summary {
+  min-height: 44px;
+  cursor: pointer;
+  padding-block: 0.6rem;
+}
+.bio017 details {
+  margin-block: 1rem;
+  min-width: 0;
+}
+@media (max-width: 440px) {
+  .bio017 {
+    padding: 0.75rem 6px;
+  }
+  .bio017-controls {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .bio017-result,
+  .bio017-feedback {
+    padding: 0.75rem 6px;
+  }
+  .bio017-prediction button {
+    width: 100%;
+    padding-inline: 6px;
+    gap: 6px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bio017 * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+[data-motion="off"] .bio017 * {
+  animation: none !important;
+  transition: none !important;
+}

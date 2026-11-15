@@ -3,9 +3,10 @@ import { createServer } from "vite";
 
 test("YKS-069 development update bridge settles while the menu, theme and scale remain usable", async ({
   page,
-}) => {
+}, testInfo) => {
   const server = await createServer({
     root: process.cwd(),
+    cacheDir: testInfo.outputPath("vite-cache"),
     server: { host: "127.0.0.1", port: 0, strictPort: true, hmr: false },
   });
   const errors: string[] = [];

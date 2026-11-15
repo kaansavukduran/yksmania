@@ -1,3 +1,28 @@
+# İçerik kapsamı — 0.16.0 adayı
+
+Çalışma sırasının 199–258. başlıkları için iki kaynak paketi tek 60 ünitelik güncellemede birleştirildi. Son kaynak kontrolü, 610 birim ve derleme geçti. Tam ürün, çevrimdışı yükseltme ve uzak yayın kapıları henüz tamamlanmadı; aşağıdaki sayılar adayın gerçek içerik sayımıdır.
+
+| Ölçüm                                              | Adaydaki gerçek sayı                                  |
+| -------------------------------------------------- | ----------------------------------------------------- |
+| Ayrıntılı çalışma sırası                           | 479 başlık; ilk 258 anlatım ve bağımsız soruyla hazır |
+| Anlatım / ayrıntılı rehber / yerleşik kopya kağıdı | 264 /236 /264                                         |
+| Özgün soru                                         | 2.440; önceki 1.840 soru bütün alanlarıyla korunur    |
+| Yeni öğretim                                       | 60 ünite, 678 bölüm, 1.356 paragraf                   |
+| Çözümlü örnek / hatırlama / bağımsız soru          | 248 /248 /600                                         |
+| Zamanlı kısa pratik                                | 14 set: TYT 110/9075 s, AYT 45/6075 s ve 12 branş     |
+
+TYT karma 151 dk 15 sn, AYT karma 101 dk 15 sn sürer; süre gerçek soru sayısına orantılıdır. Bunlar tam resmî 120/80 denemeler değildir. TYT felsefe/din, AYT matematik/geometri kotası eksiktir ve kartlarda belirtilir. Devam eden eski deneme yeni havuzla büyütülmez veya yeniden sürelenmez.
+
+Yeni kapsam: endokrin 7; deri, tat-koku, göz, kulak, kemik-kıkırdak-eklem 6; kas ve sindirim 3; kayaç/dış kuvvet/yer şekli/su 9; Türkiye suları/toprak/bitki/yerleşme/nüfus 8; koligatif/ayırma/asit-baz 3; metal tepkimeleri ve günlük kimya 5; modern atom/gaz 7; Newton/ivmeli hareket/grafikler 3; atış/limit hız/enerji 5; yazım/noktalama/anlatım/sözcük anlamı 4.
+
+Her yeni ünitede bir modelin girdisini değiştirip gerçek SVG ile ayrı HTML sonucunu karşılaştırmak, tahminini gerekçesiyle kaydetmek, adım adım örnek çözümü ve bağımsız soruları çalışmak mümkündür. Yerleşik kopya kağıtları ayrıntılı rehberin bütün bölümlerini, örneklerini ve uyarılarını içerir. Kullanıcı PDF yüklemez; model keşfi öğrenme puanı veya doğru cevap kaydı üretmez.
+
+341 ana referans satırı, 479 ayrıntılı çalışma sırası ve 264 anlatım farklı sayımlardır. İlk 258 dışındaki bazı eski hazır anlatımlar toplamda bulunur. Bütün 479, bütün Drive/YKS dosyaları veya son 20 yıllık bütün ÖSYM sınavları tamamlanmış sayılmaz. Sonraki sıra 259/detail-307 Karaciğer'dir.
+
+---
+
+## Tarihsel doğrulanmış 0.15 kaydı
+
 # İçerik kapsamı — 0.15.0
 
 Doğrulanmış çalışma sırasının 169–198. başlıklarına 30 yeni ünite eklendi. Her ünitede kendine özgü etkileşimli model, açıklamalı bağımsız sorular, adım adım çözümler ve uygulamaya gömülü kapsamlı özet bulunur. Kullanıcı kaynak/PDF yüklemez.

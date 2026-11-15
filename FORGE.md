@@ -1,3 +1,15 @@
+# 0.16.0 — 60 konuluk genişletmenin ürün kabulü
+
+Kaynak paketleri 016 ve 017 tek uygulama 0.16.0 güncellemesinde birleşti. Çalışma sırası 199–258: 60 farklı interaktif ünite, 678 bölüm/1.356 paragraf, 248 tam çözüm, 248 hatırlama ve 600 beş seçenekli özgün soru. Toplam 264 anlatım/236 rehber/264 yerleşik özet/2.440 soru; ilk 258/479 sıra hazır. Öğrenci PDF yüklemez. AYT havuzu 45/6075 s; eski devam eden 37 soruluk tam kopya korunur.
+
+Son check, 610 birim ve derleme geçti; 548 ürün tarayıcı vakası toplandı. Kaynak aileleri ayrı yazar ve bilimsel okuyucuyla denetlendi. Normal uygulama, aynı profil native, Pages 37 aile ve gerçek 0.15→0.16 web güncellemesi kabulü sürüyor. Uzak yayın kapıları tamamlanmadı; kaynak/dal adları yayın kanıtı sayılmaz.
+
+Bugün sayacı, nötrleşme yuvarlaması, yakın göz ışınları, yanal fay okları, küçük Türkçe şema metni ve fizik karşılaştırma/eksen/yol kusurları kanıtla onarıldı. Önceki yayın ve ilk başarısız kayıtlar aşağıda korunur. Sonucun gerçek sınırları QA'dadır; bütün 479/bütün Drive/20 yıllık ÖSYM tamamlandı denmez.
+
+---
+
+## Tarihsel doğrulanmış 0.15 kaydı
+
 # 0.15.0 — yayın ve paket kabulü tamamlandı
 
 Kaynak adayında çalışma sırasının 169–198. başlıkları için 30 yeni ünite; toplam 204 anlatım / 176 derin rehber / 204 özet / 1.840 soru vardır. İlk 198/479 başlık anlatım ve soruyla hazırdır. Eklenen 245 bölüm, 490 paragraf, 122 üç adımlı çözüm, 122 hatırlama ve 300 özgün beş seçenekli kart gerçek kaynak okuması ve ikinci okuyucuyla denetlendi. Eski 1.540 sorunun bütün alanları ve 175 ders kaydının soru dışındaki alanları korunur. Öğrenci kaynak/PDF yüklemez.

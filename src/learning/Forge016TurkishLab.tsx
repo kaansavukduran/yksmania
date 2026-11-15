@@ -232,7 +232,13 @@ export default function Forge016TurkishLab({ lessonId }: { lessonId: string }) {
                 stroke={selected === index ? "var(--accent)" : "var(--text)"}
                 strokeWidth={selected === index ? 4 : 1.5}
               />
-              <text x="182" y="54" fontSize="23" fill="var(--text)">
+              <text
+                x="182"
+                y="45"
+                dominantBaseline="central"
+                fontSize="40"
+                fill="var(--text)"
+              >
                 {token}
               </text>
             </g>

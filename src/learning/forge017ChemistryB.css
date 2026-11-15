@@ -1,0 +1,202 @@
+.cb017-lab {
+  color: var(--text);
+  min-width: 0;
+}
+.cb017-lab h3,
+.cb017-lab h4 {
+  margin-block: 0 1rem;
+  line-height: 1.4;
+}
+.cb017-lab p {
+  margin-block: 0.75rem 1rem;
+  line-height: 1.7;
+}
+.cb017-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1.25rem;
+  margin-block: 1.25rem;
+}
+.cb017-field {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.cb017-field label,
+.cb017-prediction > label {
+  display: block;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.cb017-lab select,
+.cb017-lab textarea,
+.cb017-lab button {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  box-sizing: border-box;
+  font: inherit;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 0.625rem 0.75rem;
+}
+.cb017-lab input[type="range"] {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  margin: 0;
+  accent-color: var(--accent);
+}
+.cb017-lab textarea {
+  resize: vertical;
+}
+.cb017-lab :is(select, input, textarea, button):focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+.cb017-lab button {
+  cursor: pointer;
+  white-space: normal;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.cb017-lab button:disabled {
+  cursor: default;
+  opacity: 0.65;
+}
+.cb017-field output {
+  display: block;
+  line-height: 1.6;
+}
+.cb017-diagram {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 760px;
+  margin: 1.5rem auto;
+  overflow: visible;
+}
+.cb017-diagram text {
+  fill: var(--text);
+  font-family: inherit;
+  font-size: 20px;
+}
+.cb017-diagram .cb017-spin {
+  font-size: 24px;
+}
+.cb017-line,
+.cb017-axis {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.cb017-grid {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+}
+.cb017-soft {
+  fill: color-mix(in srgb, var(--accent) 12%, var(--surface));
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+.cb017-empty {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1.5;
+}
+.cb017-tissue {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.cb017-fill {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 1.5;
+}
+.cb017-cloud {
+  fill: color-mix(in srgb, var(--mint) 12%, var(--surface));
+  stroke: var(--mint);
+  stroke-width: 2;
+  stroke-dasharray: 5 3;
+}
+.cb017-signal {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 3;
+}
+.cb017-dot {
+  fill: var(--accent);
+}
+.cb017-point {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.cb017-velocity {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 1.5;
+}
+.cb017-caption {
+  color: var(--muted);
+}
+.cb017-result {
+  margin-block: 1.5rem;
+  padding-block: 1rem;
+  border-block: 1px solid var(--border);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.cb017-prediction {
+  margin-block-start: 1.5rem;
+  padding-block-start: 1.5rem;
+  border-block-start: 1px solid var(--border);
+  min-width: 0;
+}
+.cb017-prediction textarea {
+  margin-block: 0.5rem;
+}
+.cb017-lab .cb017-compare {
+  background: var(--accent);
+  color: var(--accent-text);
+  border-color: var(--accent);
+  font-weight: 600;
+  margin-block: 0.75rem;
+  padding-inline: 4px;
+}
+.cb017-feedback {
+  margin-block: 1rem;
+  padding-block: 1rem;
+  border-block-start: 2px solid var(--mint);
+  overflow-wrap: anywhere;
+}
+[data-motion="off"] .cb017-lab *,
+[data-motion="off"] .cb017-lab *::before,
+[data-motion="off"] .cb017-lab *::after {
+  animation: none !important;
+  transition: none !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .cb017-lab *,
+  .cb017-lab *::before,
+  .cb017-lab *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+@media (max-width: 460px) {
+  .cb017-controls {
+    grid-template-columns: 1fr;
+  }
+  .cb017-lab :is(select, textarea) {
+    padding-inline: 4px;
+  }
+}

@@ -1,4 +1,9 @@
 import {
+  forge017SmokeCases,
+  runForge017SmokeCase,
+  assertForge017ProcessRestart,
+} from "./forge017-smoke-cases.mjs";
+import {
   forge016SmokeCases,
   runForge016SmokeCase,
   assertForge016ProcessRestart,
@@ -585,6 +590,11 @@ try {
   for (const unit of forge016SmokeCases)
     forge016Snapshots.push(await runForge016SmokeCase(page, navigate, unit));
 
+  expect(forge017SmokeCases).toHaveLength(6);
+  const forge017Snapshots = [];
+  for (const unit of forge017SmokeCases)
+    forge017Snapshots.push(await runForge017SmokeCase(page, navigate, unit));
+
   const mathematics = [
     /Temel kavramlar: sayı, değer/,
     /Tek–çift ve işaret:/,
@@ -701,6 +711,7 @@ try {
   await assertForge014ProcessRestart(page, navigate, forge014Snapshots);
   await assertForge015ProcessRestart(page, navigate, forge015Snapshots);
   await assertForge016ProcessRestart(page, navigate, forge016Snapshots);
+  await assertForge017ProcessRestart(page, navigate, forge017Snapshots);
   await navigate("Bugün");
   await expect(page.locator(".stat-number").first()).toHaveText("1");
   const dailyTheory = page
@@ -1152,6 +1163,11 @@ try {
       forge016FamiliesOfflineHtmlStateAndReload: forge016Snapshots.map(
         (item) => item.id,
       ),
+      forge017FamiliesOfflineHtmlStateAndReload: forge017Snapshots.map(
+        (item) => item.id,
+      ),
+      forge017SameProfileProcessRestart: "PASS",
+      forge017ExplorationWithoutLearningCredit: "PASS",
       forge016SameProfileProcessRestart: "PASS",
       forge016ExplorationWithoutLearningCredit: "PASS",
       forge015SameProfileProcessRestart: "PASS",

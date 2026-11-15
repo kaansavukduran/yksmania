@@ -193,21 +193,40 @@ export function GuidedReading({ guide }: { guide: LessonGuide }) {
                   tabIndex={0}
                   aria-label={`${section.title} tablosu`}
                 >
-                  <table>
-                    <thead>
-                      <tr>
+                  <table role="table">
+                    <thead role="rowgroup">
+                      <tr role="row">
                         {section.table.headers.map((header, j) => (
-                          <th scope="col" key={j}>
+                          <th
+                            scope="col"
+                            role="columnheader"
+                            id={`${prefix}-table-${i}-col-${j}`}
+                            key={j}
+                          >
                             {header}
                           </th>
                         ))}
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody role="rowgroup">
                       {section.table.rows.map((row, j) => (
-                        <tr key={j}>
+                        <tr role="row" key={j}>
                           {row.map((cell, k) => (
-                            <td key={k}>{cell}</td>
+                            <td
+                              role="cell"
+                              headers={`${prefix}-table-${i}-col-${k}`}
+                              key={k}
+                            >
+                              <span
+                                className="guide-table-cell-label"
+                                aria-hidden="true"
+                              >
+                                {section.table!.headers[k]}
+                              </span>
+                              <span className="guide-table-cell-value">
+                                {cell}
+                              </span>
+                            </td>
                           ))}
                         </tr>
                       ))}

@@ -1,3 +1,28 @@
+# 0.16.0 — kaynak kabulü geçti, ürün kabulü sürüyor
+
+60 yeni ünite, 678 bölüm, 1.356 paragraf, 248 çözümlü örnek ve 600 özgün soru: toplam 264 anlatım/236 rehber/264 özet/2.440 soru; ilk 258/479 başlık hazır. Check, 610/610 birim ve normal derleme PASS; 548 tarayıcı vaka toplandı. Tam tarayıcı/native/Pages/web güncellemesi ve uzak yayın henüz tamamlanmadı.
+
+Önceki yayımlanmış 0.15'in bütün 1.840 sorusu ve 205 ders kaydının soru dışı alanları golden karşılaştırmayla korunur. Özel kaynak 016 ara kontrolündeki 2.140 soru ve 235 kayıt da ayrıca korunur; bu özel ara kayıt ayrı yayımlanmış sürüm değildir. Zaman/keşif/sayfa öğrenme puanı üretmez.
+
+## Kanıtlanan onarımlar
+
+- Bugün hazır anlatım sayısı, soru-seti etiketi taşıyan eski kaydı da sayıyordu. Gerçek menü ders toplamıyla karşılaştırılan regresyon ve yalnız anlatım filtresi eklendi.
+- Asit-baz eşdeğerliğinde kayan nokta kalanı 75 bağımsız durumda yanlış asit/baz sınıfı veriyordu. Yalnız eşdeğerlikte makine duyarlılığı kullanıldı; gerçek küçük katkı generic pH modelinde korunur. 83.349 tam sayı nötrleşme durumu geçti.
+- Yakın cisimden göze gelen ışınlar paralel çiziliyordu. Ortak sonlu kaynak noktası, ayrılan gelen ışın ve kırılma geometrisi düzeltildi; modelin açık eşdeğer ince sistem koşulu korunur.
+- KAF/DAF şekillerinin yanal hareket okları aynıydı; gerçek sağ/sol atım geometrisi ayrıldı. Özgün 90 soru değişmedi.
+- Türkçe 016/017 SVG yazısı 270 px panelde 9,70 fiziksel px'e iniyordu. Font 40 ile min 16,875 px; iki gerçek fontta 108 görünümde kutu/viewBox içinde, metin kesişimi 0 ve üst–alt iç pay farkı≤1 px. Veriler, dil bağları ve eski 20 soru korunur.
+- Yeni fizikte ortak değiştirici karşılaştırma işaretini siliyordu; açık checked değeri korunur. Negatif kuvvet etiketi taşıyordu; grafik kenar payı düzeltildi. Düşey atış t=0 izine gelecekteki tepe ekleniyordu; yalnız gidilmiş yol çizilir. Özgün 50 soru ve fiziksel koordinatlar korunur.
+
+- Ortak anlatım tabloları büyük yazıda sütunları daraltıp “anlam” sözcüğünü ikiye bölüyordu. Dar okuma alanında her hücreye sütun bağlamı taşıyan satır düzeni, genişte normal tablo korunur. Gerçek normal uygulama regresyonu önce FAIL; ilk onarımdan sonra uzun “Halomorfik” terimi Lexend’de 2,26 px yer darlığıyla bölündüğü için yatay iç pay ayrıca düzeltildi. Font 45 px, tablo semantiği, eski kimya ve yeni coğrafya hücreleri, ekran döndürmede tam içerik, iki gerçek font ve axe kontrolü son iki vakada PASS. İlk yanlış test alan etiketi ve önce/sonra başarısız kayıtlar korunur.
+
+İlk native kabul betiği Türkçe kanıtını kullanıcı açmadan çözüm metnini bekliyordu. Gerçek “Kanıtı göster” eylemi iki yeni Türkçe smoke senaryosuna eklendi; çözüm, SVG, kayıt, yeniden açılış ve noXP beklentileri korunur. İlk başarısız log saklanır; bu bir uygulama kusuru olarak etiketlenmez.
+
+Kaynak bileşen QA'sı normal uygulama veya fiziksel cihaz kabulü diye sayılmaz. Önce/sonra kusur kanıtları özel çalışma alanında tutulur. Son tam ürün kapıları tamamlandığında bu başlık gerçek sonuçlarla güncellenecek. Fiziksel Android, temiz Windows kurulumu, portable taşıma ve native sürümleri arasında veri koruyan yükseltme henüz test edilmedi.
+
+---
+
+## Tarihsel doğrulanmış 0.15 kaydı
+
 # 0.15.0 — yayın ve paket kabulü tamamlandı
 
 Çalışma sırasının 169–198. başlıklarına 30 yeni ünite eklendi: toplam 204 anlatım, 176 ayrıntılı rehber, 204 yerleşik özet ve 1.840 özgün soru. Son uygulama kaynağı `abd6cdded9d809b77ca89fb5918576f22c7de2a5`; ardından yalnız tamamlanmış 0.14 yayın belgeleri birleştirildi. C3 artefaktının 123 dosyası sabittir.

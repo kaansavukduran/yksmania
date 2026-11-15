@@ -1,3 +1,9 @@
+import { forge017BiologyTopics } from "./forge017Biology";
+import { forge017ChemistryATopics } from "./forge017ChemistryA";
+import { forge017ChemistryBTopics } from "./forge017ChemistryB";
+import { forge017GeographyTopics } from "./forge017Geography";
+import { forge017PhysicsTopics } from "./forge017Physics";
+import { forge017TurkishTopics } from "./forge017Turkish";
 import { forge016BiologyATopics } from "./forge016BiologyA";
 import { forge016BiologyBTopics } from "./forge016BiologyB";
 import { forge016ChemistryTopics } from "./forge016Chemistry";
@@ -100,6 +106,23 @@ const Forge016Chemistry = lazy(() => import("./Forge016ChemistryLab"));
 const Forge016Geography = lazy(() => import("./Forge016GeographyLab"));
 const Forge016Physics = lazy(() => import("./Forge016PhysicsLab"));
 const Forge016Turkish = lazy(() => import("./Forge016TurkishLab"));
+const Forge017Biology = lazy(() => import("./Forge017BiologyLab"));
+const Forge017ChemistryA = lazy(() => import("./Forge017ChemistryALab"));
+const Forge017ChemistryB = lazy(() => import("./Forge017ChemistryBLab"));
+const Forge017Geography = lazy(() => import("./Forge017GeographyLab"));
+const Forge017Physics = lazy(() => import("./Forge017PhysicsLab"));
+const Forge017Turkish = lazy(() => import("./Forge017TurkishLab"));
+const source017Labs: {
+  topics: Record<string, string>;
+  Component: ComponentType<{ lessonId: string }>;
+}[] = [
+  { topics: forge017BiologyTopics, Component: Forge017Biology },
+  { topics: forge017ChemistryATopics, Component: Forge017ChemistryA },
+  { topics: forge017ChemistryBTopics, Component: Forge017ChemistryB },
+  { topics: forge017GeographyTopics, Component: Forge017Geography },
+  { topics: forge017PhysicsTopics, Component: Forge017Physics },
+  { topics: forge017TurkishTopics, Component: Forge017Turkish },
+];
 const source016Labs: {
   topics: Record<string, string>;
   Component: ComponentType<{ lessonId: string }>;
@@ -159,6 +182,9 @@ const continuationLabs: {
 ];
 export function VisualLab({ id }: { id: string }) {
   const { t } = useApp();
+  const Source017Lab = source017Labs.find(({ topics }) =>
+    Object.hasOwn(topics, id),
+  )?.Component;
   const Source016Lab = source016Labs.find(({ topics }) =>
     Object.hasOwn(topics, id),
   )?.Component;
@@ -173,7 +199,9 @@ export function VisualLab({ id }: { id: string }) {
   )?.Component;
   return (
     <Suspense fallback={<p role="status">{t("loading")}</p>}>
-      {Source016Lab ? (
+      {Source017Lab ? (
+        <Source017Lab key={id} lessonId={id} />
+      ) : Source016Lab ? (
         <Source016Lab key={id} lessonId={id} />
       ) : Source015Lab ? (
         <Source015Lab key={id} lessonId={id} />

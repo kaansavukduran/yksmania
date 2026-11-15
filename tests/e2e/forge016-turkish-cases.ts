@@ -59,6 +59,63 @@ async function readableWords(lab: Locator) {
     expect(control.height, control.name || "control").toBeGreaterThanOrEqual(
       44,
     );
+  const geometry = await lab.locator("svg").evaluate((element) => {
+    const svg = element as SVGSVGElement;
+    const viewport = svg.getBoundingClientRect();
+    const scale = viewport.width / svg.viewBox.baseVal.width;
+    const words = [...svg.querySelectorAll("[data-svg-token]")].map((group) => {
+      const text = group.querySelector("text")!;
+      const rect = group.querySelector("rect")!.getBoundingClientRect();
+      const box = text.getBoundingClientRect();
+      return {
+        value: text.textContent,
+        paddingDifference: Math.abs(
+          box.top - rect.top - (rect.bottom - box.bottom),
+        ),
+        px: Number.parseFloat(getComputedStyle(text).fontSize) * scale,
+        box: {
+          left: box.left,
+          right: box.right,
+          top: box.top,
+          bottom: box.bottom,
+        },
+        inside:
+          box.left >= rect.left - 0.1 &&
+          box.right <= rect.right + 0.1 &&
+          box.top >= rect.top - 0.1 &&
+          box.bottom <= rect.bottom + 0.1,
+        inViewBox:
+          box.left >= viewport.left - 0.1 &&
+          box.right <= viewport.right + 0.1 &&
+          box.top >= viewport.top - 0.1 &&
+          box.bottom <= viewport.bottom + 0.1,
+      };
+    });
+    let overlaps = 0;
+    for (let i = 0; i < words.length; i++)
+      for (let j = i + 1; j < words.length; j++) {
+        const a = words[i].box,
+          b = words[j].box;
+        if (
+          a.left < b.right &&
+          b.left < a.right &&
+          a.top < b.bottom &&
+          b.top < a.bottom
+        )
+          overlaps++;
+      }
+    return { words, overlaps };
+  });
+  expect(geometry.overlaps).toBe(0);
+  for (const word of geometry.words) {
+    expect(word.px, word.value || "SVG text").toBeGreaterThanOrEqual(16);
+    expect(word.inside, word.value || "SVG text").toBe(true);
+    expect(word.inViewBox, word.value || "SVG text").toBe(true);
+    expect(
+      word.paddingDifference,
+      word.value || "SVG text",
+    ).toBeLessThanOrEqual(1);
+  }
 }
 export const turkish016Cases = [
   forge016Case(
