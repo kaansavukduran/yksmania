@@ -1,7 +1,7 @@
 {
-  "version": "0.13.0",
+  "version": "0.14.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Önceden anlatımı hazır olan 13 temel matematik, kimya ve tarih başlığına 130 açıklamalı özgün soru eklendi. Sayı basamakları, bölünebilme, EBOB–EKOK, denklemler, eşitsizlikler, katman elektron dizilimi ve tarihin ilk yedi başlığı artık doğrudan uygulama içinden çalışılabiliyor. Mevcut 1130 soru, ders anlatımları, modeller ve kişisel kayıtlar korunur. İlk 138 çalışma başlığının anlatım ve soru çalışması hazırdır; bütün 479 başlığın tamamlandığı anlamına gelmez."
+    "tr": "Çalışma sırasındaki 139–168. başlıklar işlendi: önceden hazır iki ders korunarak 28 yeni etkileşimli ünite eklendi. Ekoloji, coğrafya, optik, kimyanın kanunları ve mol hesapları, grafikler, kümeler, mantık ve ek fiil; 280 açıklamalı özgün soru ve kapsamlı yerleşik özetlerle çalışılabiliyor. Toplam 174 anlatım ve 1540 soru vardır; ilk 168 başlığın anlatım ve soruları hazırdır. Önceki 1260 soru ve öğrenci kayıtları korunur; bütün 479 başlık henüz tamamlanmadı."
   }
 }

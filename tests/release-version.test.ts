@@ -14,7 +14,7 @@ it("keeps update discovery, visible labels, lockfile and native release on the s
     expect(read(file), file).toContain(pkg.version);
   const android = read("android/app/build.gradle");
   expect(android.match(/versionName "([^"]+)"/)?.[1]).toBe(pkg.version);
-  expect(Number(android.match(/versionCode (\d+)/)?.[1])).toBe(21);
+  expect(Number(android.match(/versionCode (\d+)/)?.[1])).toBe(22);
   expect(read(".github/workflows/release-alpha.yml")).toContain(
     `RELEASE_VERSION: "${pkg.version}"`,
   );

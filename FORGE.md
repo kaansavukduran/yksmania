@@ -1,4 +1,82 @@
-# 0.13.0 yayın adayı: 13 eski başlığın soru çalışması
+# 0.14.0 yayın adayı — son kabul sürüyor
+
+0.14 adayı, doğrulanmış çalışma sırasının 139–168. başlıklarını kapsar. Önceden
+hazır mol ve çarpanlara ayırma anlatımları yeniden sayılmadan 28 yeni etkileşimli
+ünite eklendi: 236 bölüm, 479 paragraf, 121 çözümlü örnek, 121 hatırlama ve
+280 özgün beş seçenekli soru. Toplam 174 anlatım, 146 ayrıntılı rehber,
+174 yerleşik kopya kağıdı ve 1.540 soru; ilk 168/479 başlık anlatım ve soruyla
+hazırdır. Eski 1.260 sorunun bütün alanları ve 147 eski dersin soru dışındaki
+alanları korunur. Öğrenci PDF veya kaynak yüklemez. Tüm arşivin, tüm 479
+başlığın veya son 20 yıllık bütün resmî sınavların tamamlandığı iddia edilmez.
+
+Son C 6 kaynak kontrolü ve 414/414 birim testi PASS; 361 tarayıcı vakası listelendi.
+Bunlar runtime/yayın kabulü değildir. C 6 tam tarayıcı, Pages, Electron, gerçek
+0.13→0.14 web güncellemesi ve uzak CI/yayın kabulü henüz bekleniyor. Önceki
+C 4 tam koşu 359/360 PASS idi: yeni Basınç ve Rüzgârlar başlığı eski Basınç
+kopya kağıdı seçicisini belirsiz yaptı; tam düğme adına geçildi. C 4'ün 57 yeni
+ünite kabulü, 19 model ailesiyle Pages/Electron ve ayrı görsel denetimleri
+geçmişti; bu sonuçlar C 6'nın yeni runtime kabulü yerine kullanılamaz.
+
+C 5/C 6'da iki gerçek kusur onarıldı: coğrafya gerekçesi state sınırını aşmaması
+için 120 karakterle hem girişte hem gösterimde sınırlandı; sayı alanında
+1800 seri yazarken ara değerin 4000'e kırpılması, yerel taslak ve blur/Enter
+ile tek commit kullanılarak düzeltildi. 361. regresyon uzun gerekçeyi
+çevrimdışı yeniden açar. Sayısal smoke girdileri gerçek Tab ile commit eder.
+Önceki başarısızlıklar özel kanıtlarda ve tarihsel kayıtta korunur.
+
+Fiziksel Android, temiz Windows kurulumu, portable taşıma ve iki native sürüm
+arasında veri koruyan yükseltme NOT TESTED. Son doğrulanmış yayımlanmış paket
+0.13.0'dır; bu 0.14 adayının yayınlandığı anlamına gelmez.
+
+---
+
+## Tarihsel doğrulanmış 0.13 yayını
+
+# 0.13.0 yayını doğrulandı
+
+Kaynak `ba8f553cbf8dff2dae985921096378ccd5908503`. CI [43715126173](https://github.com/kaansavukduran/yksmania/actions/runs/43715126173)
+dört iş PASS: 355 birim, 303/303 tarayıcı; gerçek Windows/Linux paketleriyle
+çevrimdışı/yeniden açılış/onay kabulü; Android 0.13.0 (sürüm kodu 21), v 2 imza doğrulaması.
+Canlı Vercel [43715186079](https://github.com/kaansavukduran/yksmania/actions/runs/43715186079)
+303/303 PASS. Pages [43715151603](https://github.com/kaansavukduran/yksmania/actions/runs/43715151603)
+derleme/dağıtım/canlı kabulü üç iş PASS; 13 korunan model ailesi ve iki yeni
+soru rotası ilk kez çevrimdışı açıldı, gerçek model/yanıt/açıklama/reload korundu;
+renderer 0. Her iki HTTPS kökeninde index/sw/version normal TLS ile yerel
+karşılıklarına byte eşit. Kökenler ayrı ilerleme saklar.
+
+Release [43716979510](https://github.com/kaansavukduran/yksmania/actions/runs/43716979510)
+PASS; [v0.13.0-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.13.0-alpha.1) sekiz dosyayla yayımlandı, taslak değil.
+Tag ve verified-run kaynak SHA’sı yukarıdaki commit’tir. SHA 256 SUMS.txt yedi dosya
+listeler; indirilen verified-run/Android-verification dosyalarının iki hash’i
+eşleşir. Android paket kimliği com.fragaria.yksmania, sürüm 0.13.0 (sürüm kodu 21),
+v 2 imza PASS. Beş büyük paket dosyası ayrıca yerelde indirilip hash’lenmedi.
+
+Bu sürüm yeni anlatım ünitesi eklemez: 13 mevcut anlatıma 130 özgün soru;
+toplam 146 anlatım/118 rehber/146 kağıt/1.260 soru, ilk 138/479 hem anlatım hem
+soru hazır. Hazır 146 anlatımın tamamı bağımsız soruludur. Eski 1.130 sorunun tam
+kayıtları ve 147 dersin soru dışındaki bütün alanları korunur. Bütün arşiv veya
+479 başlığın tamamlandığı iddiası yoktur.
+
+Yerel tam koşu 302/303, eski sorusuz cebir arama beklentisinden FAIL idi;
+onarım ve dört onay kabulü birlikte 5/5 PASS. Son uzak 303/303 sonuçları aynı
+onarılmış kaynakta PASS; yerel tam 303 koşusu yapılmış sayılmaz. İlk Pages uzak
+FAIL ve yeniden üretilemeyen eski yerel PASS kaydı aşağıda korunur. Düzeltilmiş
+HTML onay betiği kaynak tekrar derlenmiş prefix’te ve canlı Pages’te geçti.
+
+Son gerçek 0.12→0.13 web güncellemesi bütün eski state/doküman/kataloğu,
+5/5 oturumu, üç özgün tekrarı, kontrol edilmiş yanlış taslağı, notları ve 870 bayt
+sentetik PDF’yi korudu; XP 25→25. Altı KORUNAN 0.12 model ilk kez offline açılıp
+reload kaldı; bunlar yeni 0.13 üniteleri değildir. Aynı süreç/profil geliştirme
+Electron’da iptal→tam kayıt aynılığı→açık onay→yeni soru→offline/reload PASS.
+
+Fiziksel Android, temiz Windows kurulumu, portable taşıma ve iki native sürüm
+arasında veri koruyan yükseltme NOT TESTED. Windows dosyaları Authenticode
+imzasız, Android paket debug imzalı alpha’dır. Önceki kişisel dosyalar görünmeden
+korunur; öğrenci hiçbir ders PDF’si veya kaynak yüklemez.
+
+---
+
+# 0.13.0 tarihsel hazırlık kaydı: 13 eski başlığın soru çalışması
 
 0.13 veri eklemesi, önceki anlatımı ve modeli hazır 13 başlıktaki bağımsız soru
 açığını kapatır: 5 matematik, 7 tarih ve katman elektron dizilimi. Yeni 130
@@ -9,7 +87,7 @@ Bütün 479 başlık veya tüm kaynak arşivi tamamlandı iddiası yoktur.
 
 Kaynak dalı `forge/earlier-practice-gaps`; 0.13 kaynak eklemesi `ef57b2a`,
 0.12 C2 kaynak düzeltmesi `3104da1` ile yerel birleşim `2994b29`.
-Bunlar yayın veya CI kabulü değildir. C2 ile birleştirilmiş kaynakta yerel
+Bunlar yayın veya CI kabulü değildir. C 2 ile birleştirilmiş kaynakta yerel
 derleme geçti; tarayıcı, Pages, Electron ve paket kabulü ayrıca izlenir.
 
 İlk plan on eski başlığı kapsıyordu. Bütün hazır anlatımlarda soru arayan katı
@@ -64,7 +142,7 @@ boş veriyle örtülmedi.
 
 Soru kartları sıradan Sorular ve anlatımdan soruya geçiş yolunu kullanır.
 Pasaj gerektiğinde kökten önce gösterilir. Yeni tarayıcı vakaları çevrimdışı
-ilk açılışı, gerçek 9/10 kaydını, 3/7/21 tekrarlarını ve 320px büyük yazıyı
+ilk açılışı, gerçek 9/10 kaydını, 3/7/21 tekrarlarını ve 320 px büyük yazıyı
 sınamak üzere hazırlanmıştır. Pages ve Electron betiklerine bir matematik ve
 bir tarih soru rotası eklendi; eski akışlar korunur. Betik sözdizimi kontrolü
 çalışan paket veya fiziksel cihaz kanıtı değildir.
@@ -72,11 +150,11 @@ bir tarih soru rotası eklendi; eski akışlar korunur. Betik sözdizimi kontrol
 Son derlemeyle gerçek 0.12→0.13 aynı köken service worker güncellemesi PASS:
 güncelleme düğmesi/waiting geçişi kullanıldı, bütün eski state/doküman/katalog
 aynen korundu. Eski 5/5 oturum, üç özgün tekrar, kontrol edilmiş yanlış taslak,
-notlar ve sentetik 870 bayt PDF kaldı; XP25→25. Altı KORUNAN 0.12 model ilk
+notlar ve sentetik 870 bayt PDF kaldı; XP 25→25. Altı KORUNAN 0.12 model ilk
 kez çevrimdışı açıldı ve reload kaldı; bunlar yeni 0.13 üniteleri değildir.
 Bu yerel web güncellemesidir; fiziksel/native sürüm geçişi değildir.
 
-Yayın öncesi mahremiyet denetimi, 0.12 son belge tabanı345415c ile farktaki
+Yayın öncesi mahremiyet denetimi, 0.12 son belge tabanı 345415 c ile farktaki
 metinleri 8.845 bilinen özel kimlik/bağlantıya karşı taradı: özel kimlik,
 ham PDF, binary veya anahtar yok. 752 bağımlılık kaydı korunur; kilitte yalnız
 iki kök sürüm alanı değişir. 0.13 uzak CI ve yayın kabulü henüz bekleniyor.
@@ -93,7 +171,7 @@ beklentisi onarıldı, uygulama/soru verisi değişmedi. Yeni yerel Pages kabul�
 Uzak tekrarlar bu düzeltilmiş betikle ayrı kaydedilir. İlk CI/canlı koşuları,
 nihai aynı kaynakta tekrar için iptal edildi; tamamlanmış kabul sayılmaz.
 
-Android kaynak sürümü 0.13.0/code21; 752 bağımlılık kaydı değişmez. Deneme
+Android kaynak sürümü 0.13.0/code 21; 752 bağımlılık kaydı değişmez. Deneme
 kataloğu hâlâ 13 settir: TYT 105, AYT 25 ve 11 branş. Eksik resmî dağılım
 etiketleri ve süreler korunur; yeni deneme başlangıçta çeşitlenir, eski taslak
 ve sonuçlar tam soru kopyasıyla sabit kalır. 0.13 uzak CI, yayın ve native paket
@@ -124,19 +202,19 @@ kısa pratiklerdir; tam 120/80 resmî dağılım veya sınırsız bankanın tama
 - [Pages 43709749730](https://github.com/kaansavukduran/yksmania/actions/runs/43709749730): alt yol derleme, dağıtım ve gerçek HTTPS kabulü üç iş PASS; 13 model ailesinin ilk çevrimdışı kullanımı, değişimi, kaydı, yeniden yüklemesi, soru açıklaması ve mobil gezinme.
 - [Release 43711058866](https://github.com/kaansavukduran/yksmania/actions/runs/43711058866): PASS; [v0.12.0-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.12.0-alpha.1) sekiz dosya, draft değil. Tag ve verified-run aynı 3104da1; yedi payload checksum listesi ve indirilen iki kanıt hash’i PASS. Beş büyük binary ayrıca yerelde indirilip hash’lenmedi.
 
-Yerel check/build, 351 birim ve son C2 tam 273 tarayıcı testi PASS (21 dk).
+Yerel check/build, 351 birim ve son C 2 tam 273 tarayıcı testi PASS (21 dk).
 İlk hedefli 66, son font/simge 9, iki 120 durum ve son 88 görünüm ölçümü PASS.
-Otuz ünitede 45px sözcük bölünmesi 0; seçilmiş gerçek görüntüler ayrıca incelendi.
+Otuz ünitede 45 px sözcük bölünmesi 0; seçilmiş gerçek görüntüler ayrıca incelendi.
 Ölçüm sayısı bütün görüntülerin kusursuz olduğu iddiası değildir. Geliştirme
-Electron ve yerel Pages alt yolu C2’de PASS. Gerçek 0.11→0.12 SW güncellemesinde
+Electron ve yerel Pages alt yolu C 2’de PASS. Gerçek 0.11→0.12 SW güncellemesinde
 bütün eski state/documents/catalogue, skor, not, taslak, ayar, üç tekrar ve 870 bayt
 sentetik legacy PDF korundu; XP 25→25. Altı yeni aile ilk kez çevrimdışı açılıp
 değişti ve yeniden yüklemede kaldı. 99 runtime dosyası test kopyasıyla byte eşittir.
 Renderer/requestfailed 0. Bu fiziksel veya iki native paket yükseltmesi kabulü değildir.
 
 300 anahtar/123 örnek ve 30 temel biyoloji sorusu bağımsız içerik denetiminden geçti.
-Sayfa sınırları SOURCE_REVIEW’dedir. AIONIA canlı v1.7 standardı, bölüm 22 yeniden
-okundu; kaynak değişim zamanı 2026-11-13T00:29:34.975Z. Gizlilik taraması 66 metin
+Sayfa sınırları SOURCE_REVIEW’dedir. AIONIA canlı v 1.7 standardı, bölüm 22 yeniden
+okundu; kaynak değişim zamanı 2026-11-13 T 00:29:34.975 Z. Gizlilik taraması 66 metin
 yolunu 8.845 bilinen özel ID/URL ile karşılaştırdı: eşleşme, PDF, binary ve anahtar
 yok. 752 bağımlılık kaydı aynı; lock değişikliği yalnız kök sürüm alanlarındadır.
 
@@ -144,7 +222,7 @@ yok. 752 bağımlılık kaydı aynı; lock değişikliği yalnız kök sürüm a
 gerçek açıklama aynılığı/boş olmama/cevaptan fark denetlendi. İlk 347/351 temel
 soru testinde bütün verisi kökteki Vitamin 10’un tablo atfı netleştirildi. İlk tam
 yerel 269/272 ve ilk CI/canlı üç Türkçe caption font beklentisinde FAIL oldu;
-37,35px küçük açıklama 45px eylemle eşit sanılmıştı. Tipografik roller ayrıldı,
+37,35 px küçük açıklama 45 px eylemle eşit sanılmıştı. Tipografik roller ayrıldı,
 ölçek/sözcük/davranış sınırları korundu; son kaynakta yerel/CI/canlı 273 PASS.
 
 | Kimlik | Önem | Belirti ve onarım |
@@ -158,22 +236,22 @@ yerel 269/272 ve ilk CI/canlı üç Türkçe caption font beklentisinde FAIL old
 | YKS-058 | Orta | Grafit/elmas çizimleri iki element gibi farklı renkteydi; tek karbon rengi ve C etiketleri kullanıldı, iyonik ayrım korundu. |
 | YKS-059 | Orta | Tek gametin üç aleli üç ayrı hücreyi andırıyordu; ortak haploit hücre sınırı ve tek gamet metni eklendi. |
 | YKS-060 | Orta | Dar ekranda biyoloji tahmin seçeneği kesiliyordu; tam seçili metin satır sararak gösterilir. |
-| YKS-061 | Orta | 320px/UI200/text150’de iç içe dolgular 45px sözcükleri bölüyordu; yazı boyutu korunarak dört ailede dolgu onarıldı. 30 üniteye gerçek sözcük aralığı regresyonu eklendi. Koordinasyon sözcüğü fiziksel olarak sığmayınca anlamı koruyan “Ortak yönetim” kullanıldı. |
+| YKS-061 | Orta | 320 px/UI 200/text 150’de iç içe dolgular 45 px sözcükleri bölüyordu; yazı boyutu korunarak dört ailede dolgu onarıldı. 30 üniteye gerçek sözcük aralığı regresyonu eklendi. Koordinasyon sözcüğü fiziksel olarak sığmayınca anlamı koruyan “Ortak yönetim” kullanıldı. |
 | YKS-062 | Düşük | Tek zigot ve plazma çizimleri boş alanın soluna yığılmıştı; sayısal model değişmeden merkezlendi. |
 | YKS-063 | Orta | Yeni köprü sorusu glikoz–galaktoza yapısal izomer diyordu; stereo ayrımını koruyan genel izomerlik ifadesiyle düzeltildi. |
 | YKS-064 | Orta | Vitamin çıkarım sorusunun kapsamı birden çok yoruma açıktı; kökteki bilgi ile kişi belirtisi birlikte ve açık sınırla ele alındı. |
 | YKS-065 | Orta | Üç eski biyoloji başlığında bağımsız soru rotası kullanılamıyordu; 30 kaynaklı özgün soru bağlandı. On üç diğer önceki soru açığı sonraki işte açıktır. |
 | YKS-032 | Orta | Sevgi/Umut kişi adı-duygu belirsizliği; açık duygusal bağlam ve regresyon |
-| YKS-033 | Orta | Matematik topic eşlemesi ters; ilk entegrasyon Mutlak Değer0ders FAIL, doğru lesson→topic ile10/10 ilgili kabul PASS |
+| YKS-033 | Orta | Matematik topic eşlemesi ters; ilk entegrasyon Mutlak Değer 0 ders FAIL, doğru lesson→topic ile 10/10 ilgili kabul PASS |
 | YKS-034 | Orta | Parantezsiz−2⁰ sayısal−1/SVG+1 çelişkisi; çizim ve açıklama−1 ile tutarlı |
-| YKS-035 | Orta | r0 açık sınır merkez noktasıyla dolu görünüyordu; işaretler ayrıldı, gerçek açık uç kontrolü |
+| YKS-035 | Orta | r 0 açık sınır merkez noktasıyla dolu görünüyordu; işaretler ayrıldı, gerçek açık uç kontrolü |
 | YKS-036 | Orta | Elektroskop sorusunda ikinci belirsiz seçenek; kökte açık nötr başlangıçla çeldirici ayrıldı |
 | YKS-037 | Orta | Protein kapalıyken aktif pompa SVG'de vardı; gerçek protein/ATP koşulları ayrıldı |
-| YKS-038 | Orta | Dipol ok başı atomla örtülüyordu;33uç geometrisi ve gerçek H₂O/NH₃/HF görüntüleriyle açıklık doğrulandı |
+| YKS-038 | Orta | Dipol ok başı atomla örtülüyordu;33 uç geometrisi ve gerçek H₂O/NH₃/HF görüntüleriyle açıklık doğrulandı |
 | YKS-039 | Düşük | Metin boşluğu düzenlemesi CSS class'ı bölmüştü; yalnız class düzeltildi, API/state kimlikleri korundu |
 | YKS-040 | Orta | Molecular SVGmarker ve select aynı ID; gerçekDOM label.control=null. Kontrol '-bond-choice' ile ayrıldı, AT/uniqueID regresyonu eklendi |
 | YKS-041 | Düşük | Türkçe ilişki ikonunda↳ tofu; mevcut lucide vektörüyle iki dekoratif ikon onarıldı |
-| YKS-042 | Düşük | Orantı12 tick ve x ekseni birleşiyordu; tick sağ uca hizalandı, gerçekBBox boşluk kabulü eklendi |
+| YKS-042 | Düşük | Orantı 12 tick ve x ekseni birleşiyordu; tick sağ uca hizalandı, gerçekBBox boşluk kabulü eklendi |
 | YKS-066 | Orta | Karbon/iyon işaretleri dolu daireler üzerinde düşük kontrastlıydı. Zıt tema mürekkebiyle onarıldı; üç tema × üç model × 12 sembol en az 5,381:1 kontrastı geçti, dokuz gerçek görüntü incelendi. |
 
 Fiziksel Android, temiz Windows kurulumu/portable taşıma ve iki native paketle
@@ -188,7 +266,7 @@ kalıcı kayıt bekleme ve eski not yerleşimi testinin hedef sayfayı beklemesi
 dört iş PASS: check/build, 279 unit, 204 browser, gerçek paketli Windows/Linux
 çevrimdışı ve yeniden açılış kabulü, Android build/imza/metadata.
 [Canlı43699042930](https://github.com/kaansavukduran/yksmania/actions/runs/43699042930)
-aynı kaynakta 204/204 PASS (14,3 dk). Önceki canlı43698058438 de 204/204 PASS.
+aynı kaynakta 204/204 PASS (14,3 dk). Önceki canlı 43698058438 de 204/204 PASS.
 Vercel production 0.11.0; normal TLS index/sw/version hash'leri yerel derlemeyle eşit.
 
 [Pages43700388975](https://github.com/kaansavukduran/yksmania/actions/runs/43700388975)
@@ -201,8 +279,8 @@ manifest hash'i yerel Pages derlemesiyle eşit. Vercel ve Pages ayrı ilerleme s
 [Release43700509433](https://github.com/kaansavukduran/yksmania/actions/runs/43700509433)
 PASS; [v0.11.0-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.11.0-alpha.1)
 draft değil, sekiz dosya. Beş binary başarılı CI'den yeniden derlenmeden
-alındı; tag ve verified-run aynı 3cd370b. Yedi payload checksum listesi;
-indirilen iki kanıt hash'i PASS. Android 0.11.0/code19/v2 imza PASS.
+alındı; tag ve verified-run aynı 3 cd 370 b. Yedi payload checksum listesi;
+indirilen iki kanıt hash'i PASS. Android 0.11.0/code 19/v 2 imza PASS.
 Beş büyük binary ayrıca yerelde indirilip hash'lenmedi. Fiziksel Android,
 temiz Windows kurulumu/portable taşıma ve iki native paket arasında veri
 koruyan yükseltme ayrıca doğrulanmalıdır.
@@ -226,8 +304,8 @@ TYT karma 105, AYT karma 25 ve 11 branş çalışması; tam resmî dağılım de
 Önceki 500 soru tüm JSON alanlarıyla korunur. Kaynak sayfa sınırları
 SOURCE_REVIEW içinde; özel PDF/ham metin/kimlik yayımlanmaz.
 
-AIONIA canlı v1.7 bu turda okundu; mevcut Türkçe/Windows/Linux/Android/web,
-onaylı ikon ve Aion paftası korunur. Kullanıcı komut belgesini paylaşmak k44,
+AIONIA canlı v 1.7 bu turda okundu; mevcut Türkçe/Windows/Linux/Android/web,
+onaylı ikon ve Aion paftası korunur. Kullanıcı komut belgesini paylaşmak k 44,
 Aionlaştır veya aionia etkinleştirmesi sayılmadı. Yeni İngilizce/macOS/iOS veya
 Drive yedeği kapsamı açılmadı. GitHub Pages için ayrıca açık yetki verildi.
 Bağlı uygulamayla Pages ayarı POST 403 verdi; kullanıcı Source=GitHub Actions
@@ -246,28 +324,28 @@ artık ilk gerçek soru metninin aynen çizildiğini denetler. Pages ilk kabulü
 select içeren label için exact getByLabel uyuşmadı; gerçek role/name seçicisi
 kullanıldı, etkileşim/sonuç/offline koşulları korunur. Son tam 204/204 browser
 kabulü PASS (13,6 dk); check/build ve 279/279 unit PASS. Son 30×4 ölçüm/
-görüntü durumu PASS, renderer0. Seçilmiş gerçek görüntüler ayrıca incelendi.
+görüntü durumu PASS, renderer 0. Seçilmiş gerçek görüntüler ayrıca incelendi.
 Son geliştirme Electron akışı yedi yeni aile ve eski çalışma/deneme/kayıt
-akışlarıyla PASS, renderer0. Yerel Pages alt yol kabulü ve gerçek 0.10→0.11
+akışlarıyla PASS, renderer 0. Yerel Pages alt yol kabulü ve gerçek 0.10→0.11
 web güncellemesi PASS; 87 runtime dosyası yükseltme test kopyasıyla byte eşit.
 Uzak CI, paket ve iki canlı yayın bu aday kaydından sonra doğrulanacak.
-Pages ilk uzak43698319741 koşusu yedi modelden sonra soru taslağının disk
+Pages ilk uzak 43698319741 koşusu yedi modelden sonra soru taslağının disk
 kaydı beklenmeden yenilenmesi yüzünden FAIL verdi. Test artık kaydedildi
 durumunu ve gerçek IDB checked=true kaydını bekler; feedback/reload koşulu
 korunur. Aynı runtime ile düzeltilmiş yerel Pages kabulü PASS. Bu yalnız test
-onarımıdır; uygulama dosyaları 4065dc7 ile byte eşittir.
+onarımıdır; uygulama dosyaları 4065 dc 7 ile byte eşittir.
 
-Pages43698533483 build/deploy PASS, e47dafe; gerçek HTTPS index/sw/version/
+Pages 43698533483 build/deploy PASS, e 47 dafe; gerçek HTTPS index/sw/version/
 manifest dört hash yerel alt yol derlemesiyle eşit. Yerel sistem Chromium'da
 canlı URL sertifika otoritesi hatası verdi; TLS kontrolü kapatılmadı. İş akışına
 GitHub runner'da doğrudan yayımlanan adreste aynı kabulü yapan üçüncü iş eklendi.
 Ayrıca artık geride kalmış CI kaynağı ana dal ilerlediyse otomatik yayınlanmaz.
 
-İlk ana CI43697993699: 203/204 browser PASS; eski YKS-006 testi Sorulara geç
+İlk ana CI 43697993699: 203/204 browser PASS; eski YKS-006 testi Sorulara geç
 sonrasında hedef sayfa bağlanmadan DOM ölçtü, practiceNote undefined oldu.
 Test artık gerçek soru paneli ve not alanının görünmesini bekler, undefined
 ölçümü açıkça reddeder; simetri/taşma/boşluk sınırları aynı. Son derlemede
-ilgili test PASS (4,7s); uygulama kaynakları ve runtime değişmez. Yeni tam
+ilgili test PASS (4,7 s); uygulama kaynakları ve runtime değişmez. Yeni tam
 CI bu test onarımıyla başlatılır; başarısız koşudan paket yayımlanmaz.
 
 Yayımdan önce düzeltilen somut bulgular:
@@ -287,7 +365,7 @@ Yayımdan önce düzeltilen somut bulgular:
 - YKS-051/Orta: mayoz I sitokinezi tamamlandığında iğ çizimi sürüyordu; yalnız
   ilgili aktif evrelerde çizilir ve sitokinez I durumunda yokluğu denetlenir.
 - YKS-049/Orta: önceki başarılı 0.10.0 koşusu yeni sabit etikete yayınlanabilirdi;
-  exact SHA kaynak sürümü/Android code19/beş gerçek dosya adı ve APK metadata
+  exact SHA kaynak sürümü/Android code 19/beş gerçek dosya adı ve APK metadata
   kapıları eklendi. Eski mantık stale koşuyu kabul etti, yeni kapı reddetti;
   18 sentetik kabul/ret vakası PASS. Uzak yayın bu sentetik teste dahil değil.
 
@@ -304,84 +382,84 @@ Yetkili repo kaansavukduran/yksmania; dal forge/twenty-units → main;
 başlangıç f3b06134061d7937c3e38e8c9530b0d4b4944284.
 
 [CI43635461738](https://github.com/kaansavukduran/yksmania/actions/runs/43635461738)
-dört iş PASS: temiz npmci/check/build,192 unit ve142 browser (6,7dk),Windows,
+dört iş PASS: temiz npmci/check/build,192 unit ve 142 browser (6,7 dk),Windows,
 Linux,Android. Paketli Windows/Linux'ta altı yeni model ailesinin ilk offline
 açılışı/gerçek değişimi/reload ile eski ders/not/taslak/skor/sınav/timer/reset
-akışları PASS,renderer0. Android APK build+imza/manifest komutları PASS.
+akışları PASS,renderer 0. Android APK build+imza/manifest komutları PASS.
 [Canlı43635597330](https://github.com/kaansavukduran/yksmania/actions/runs/43635597330)
-aynı22872a2 kaynağında142/142 PASS (7,6dk). Vercel production
+aynı 22872 a 2 kaynağında 142/142 PASS (7,6 dk). Vercel production
 `dpl_9t9vcgss5RDpF8m6FK332X86QkH7` aynı kaynakta READY,version0.10.0;
-normalTLS index/sw/version SHA256 kabul edilmiş yerel derlemeyle eşit.
+normalTLS index/sw/version SHA 256 kabul edilmiş yerel derlemeyle eşit.
 
 [Release43636719923](https://github.com/kaansavukduran/yksmania/actions/runs/43636719923)
 PASS; [v0.10.0-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.10.0-alpha.1)
-draft değil,8asset:5binary ve3kanıt. Başarılı CI'nin dosyaları yeniden
-üretilmeden yayımlandı. Tag ve verified-run aynı22872a2 main kaynağında;
-indirilen iki kanıt hash'i eşleşti,checksum listesi7payload. Android
-versionName0.10.0/code18/v2 signature PASS. Beş büyük binary ayrıca yerelde
+draft değil,8 asset:5 binary ve 3 kanıt. Başarılı CI'nin dosyaları yeniden
+üretilmeden yayımlandı. Tag ve verified-run aynı 22872 a 2 main kaynağında;
+indirilen iki kanıt hash'i eşleşti,checksum listesi 7 payload. Android
+versionName 0.10.0/code 18/v 2 signature PASS. Beş büyük binary ayrıca yerelde
 indirilip hash'lenmedi. Denetlenen kapsamda açık doğrulanmış kusur yok.
 
 Son teslim kaydı yalnız FORGE/README/CONTENT_COVERAGE/QA/RELEASE_ALPHA
-belgelerini değiştirir; kabul edilmiş uygulama/test/paket kodu22872a2 aynıdır.
+belgelerini değiştirir; kabul edilmiş uygulama/test/paket kodu 22872 a 2 aynıdır.
 Bu yalnız doküman değişikliği için uygulama testleri tekrar çalıştırılmadı.
 
-Kullanıcının istediği20 ünitenin tamamı, doğrulanmış sıranın59–78 başlıkları:
+Kullanıcının istediği 20 ünitenin tamamı, doğrulanmış sıranın 59–78 başlıkları:
 5 matematik,5 fizik,2 kimya,2 biyoloji,3 Türkçe,3 tarih.189 ayrıntılı bölüm,
-91 çözümlü örnek,92 recall ve200 özgün5seçenekli soru eklendi. Önceki300
+91 çözümlü örnek,92 recall ve 200 özgün 5 seçenekli soru eklendi. Önceki 300
 sorunun tamJSON kimlik/metin/pasaj/şık/ipucu/açıklama/anahtar eşitliği PASS.
-Toplam86 anlatım/58 rehber/88 kağıt/500 soru; ilk78/479 hazır. Akım kağıdının
-önceden incelenmiş örnekleri yeni dersle birleştirildi; bu yüzden20 ders,
-19 yeni kağıt sayımı vardır. TYT karma105/AYT karma25 ve11 branş seti;
-120/80 tam dağılım veya bütün arşiv tamamlandı iddiası yok. Sıradaki79:
+Toplam 86 anlatım/58 rehber/88 kağıt/500 soru; ilk 78/479 hazır. Akım kağıdının
+önceden incelenmiş örnekleri yeni dersle birleştirildi; bu yüzden 20 ders,
+19 yeni kağıt sayımı vardır. TYT karma 105/AYT karma 25 ve 11 branş seti;
+120/80 tam dağılım veya bütün arşiv tamamlandı iddiası yok. Sıradaki 79:
 Sayı Problemleri/detail-210. Özel komutlar etkinleştirilmedi, Türkçe ve mevcut
-Windows/Linux/Android/web kapsamı ve onaylı ikonlar/Aion32kare korunur.
-Canlı AIONIA standardı tekrar okundu:v1.7. Kaynak sınırları SOURCE_REVIEW'dedir.
+Windows/Linux/Android/web kapsamı ve onaylı ikonlar/Aion 32 kare korunur.
+Canlı AIONIA standardı tekrar okundu:v 1.7. Kaynak sınırları SOURCE_REVIEW'dedir.
 
-Yeni200 anahtar ve91 örnek bağımsız ikinci incelemeden geçti. Yayımdan önce
+Yeni 200 anahtar ve 91 örnek bağımsız ikinci incelemeden geçti. Yayımdan önce
 kanıtlanan ve onarılan bulgular:
 
 | Kimlik | Önem | Belirti ve onarım |
 | --- | --- | --- |
 | YKS-032 | Orta | Sevgi/Umut kişi adı-duygu belirsizliği; açık duygusal bağlam ve regresyon |
-| YKS-033 | Orta | Matematik topic eşlemesi ters; ilk entegrasyon Mutlak Değer0ders FAIL, doğru lesson→topic ile10/10 ilgili kabul PASS |
+| YKS-033 | Orta | Matematik topic eşlemesi ters; ilk entegrasyon Mutlak Değer 0 ders FAIL, doğru lesson→topic ile 10/10 ilgili kabul PASS |
 | YKS-034 | Orta | Parantezsiz−2⁰ sayısal−1/SVG+1 çelişkisi; çizim ve açıklama−1 ile tutarlı |
-| YKS-035 | Orta | r0 açık sınır merkez noktasıyla dolu görünüyordu; işaretler ayrıldı, gerçek açık uç kontrolü |
+| YKS-035 | Orta | r 0 açık sınır merkez noktasıyla dolu görünüyordu; işaretler ayrıldı, gerçek açık uç kontrolü |
 | YKS-036 | Orta | Elektroskop sorusunda ikinci belirsiz seçenek; kökte açık nötr başlangıçla çeldirici ayrıldı |
 | YKS-037 | Orta | Protein kapalıyken aktif pompa SVG'de vardı; gerçek protein/ATP koşulları ayrıldı |
-| YKS-038 | Orta | Dipol ok başı atomla örtülüyordu;33uç geometrisi ve gerçek H₂O/NH₃/HF görüntüleriyle açıklık doğrulandı |
+| YKS-038 | Orta | Dipol ok başı atomla örtülüyordu;33 uç geometrisi ve gerçek H₂O/NH₃/HF görüntüleriyle açıklık doğrulandı |
 | YKS-039 | Düşük | Metin boşluğu düzenlemesi CSS class'ı bölmüştü; yalnız class düzeltildi, API/state kimlikleri korundu |
 | YKS-040 | Orta | Molecular SVGmarker ve select aynı ID; gerçekDOM label.control=null. Kontrol '-bond-choice' ile ayrıldı, AT/uniqueID regresyonu eklendi |
 | YKS-041 | Düşük | Türkçe ilişki ikonunda↳ tofu; mevcut lucide vektörüyle iki dekoratif ikon onarıldı |
-| YKS-042 | Düşük | Orantı12 tick ve x ekseni birleşiyordu; tick sağ uca hizalandı, gerçekBBox boşluk kabulü eklendi |
+| YKS-042 | Düşük | Orantı 12 tick ve x ekseni birleşiyordu; tick sağ uca hizalandı, gerçekBBox boşluk kabulü eklendi |
 
-Yerel check/build ve192/192 unit PASS. İlk yeni41 browser35PASS/6FAIL:
+Yerel check/build ve 192/192 unit PASS. İlk yeni 41 browser 35 PASS/6 FAIL:
 üç Türkçe testinin SVG varsayımı erişilebilir HTML parça diyagramına düzeltildi;
 sıfatın dönüşüm sırası gerçek Ada bağla→Fiile bağla akışına uyarlandı;
-r0'da iki eş uç yerine bir ayrı açık uç beklendi. Açık uç/merkez ayrımı,
+r 0'da iki eş uç yerine bir ayrı açık uç beklendi. Açık uç/merkez ayrımı,
 gerçek görselDOMdeğişimi, sonuç, offline ve noXP koşulları gevşetilmedi.
-Son tam142/142 browser PASS (9,7dk). Bu koşudan sonra yalnız YKS040/041/042
-UI yamaları eklendi; son derlemede check/build,192 unit ve41/41 etkilenen
-browser tekrar kabulü PASS(2,8dk). Label binding/benzersizID,vectorikon ve
+Son tam 142/142 browser PASS (9,7 dk). Bu koşudan sonra yalnız YKS 040/041/042
+UI yamaları eklendi; son derlemede check/build,192 unit ve 41/41 etkilenen
+browser tekrar kabulü PASS(2,8 dk). Label binding/benzersizID,vectorikon ve
 BBoxayrımı yeni koşulları da geçti. Son frozen source yerel kabuldedir.
 
 Geliştirme Electron offline/yeniden başlatma/not/soru/deneme/timer/reset ve
 altı yeni ders ailesinin gerçek menüden ilk offline açılışı+model değişimi+
-reload PASS, renderer0. İlk deneme eksik Electron runtime fetch başarısızdı;
-pinned45.3.2 paket checksums değeriyle eşleşen mevcut cache kullanıldı.
+reload PASS, renderer 0. İlk deneme eksik Electron runtime fetch başarısızdı;
+pinned 45.3.2 paket checksums değeriyle eşleşen mevcut cache kullanıldı.
 Bu geliştirme kabulü paketli Windows/Linux veya fiziksel cihaz yerine sayılmaz.
 
-Manuel ilk66 durum+son45 ek durum; belge/lab/kontrol geometrisi ve renderer0.
-Yeni alan keşifleri session/review/topicProgress değiştirmedi. Kimya12ekdurum
-ve30viewport görseliyle negatif yön okları/δ etiketleri gerçekten incelendi.
-YKS040/041/042 son4model/16durum görsel ve gerçek labeltap kontrolü PASS;
-oran12/x etiket aralığı320px büyük yazıda9,74CSSpx. Toplam127 manuel ölçüm
-ve bağımsız12 kimya durumu,0renderer/taşma. Kök tüm72distdosyasının manuel
+Manuel ilk 66 durum+son 45 ek durum; belge/lab/kontrol geometrisi ve renderer 0.
+Yeni alan keşifleri session/review/topicProgress değiştirmedi. Kimya 12 ekdurum
+ve 30 viewport görseliyle negatif yön okları/δ etiketleri gerçekten incelendi.
+YKS 040/041/042 son 4 model/16 durum görsel ve gerçek labeltap kontrolü PASS;
+oran 12/x etiket aralığı 320 px büyük yazıda 9,74 CSSpx. Toplam 127 manuel ölçüm
+ve bağımsız 12 kimya durumu,0 renderer/taşma. Kök tüm 72 distdosyasının manuel
 veSWkopyalarında byte eşitliğini ayrıca doğruladı.
-Gerçek0.9.2→0.10 yerel webSW geçişi PASS; son UI yamalı kopyayla aynı tam
-state/legacy870bayt/checkedtaslak/noXP kabulü tekrar PASS: tam eski snapshot
-eşit, üç yeni model ilk offline açılış/reload,XP25→25,renderer0. İlk başarılı
-kopyanın kanıtları da korundu. Son geliştimeElectron6aile/offline/reload
-ve eski deneme/timer/reset kabulü tekrar PASS; renderer0.
+Gerçek 0.9.2→0.10 yerel webSW geçişi PASS; son UI yamalı kopyayla aynı tam
+state/legacy 870 bayt/checkedtaslak/noXP kabulü tekrar PASS: tam eski snapshot
+eşit, üç yeni model ilk offline açılış/reload,XP 25→25,renderer 0. İlk başarılı
+kopyanın kanıtları da korundu. Son geliştimeElectron 6 aile/offline/reload
+ve eski deneme/timer/reset kabulü tekrar PASS; renderer 0.
 
 Fiziksel Android, temiz kurulum/portable taşıma ve iki native sürümle
 veri koruyan yükseltme NOT TESTED. Chromium emülasyonu fiziksel cihaz değildir.
@@ -392,45 +470,45 @@ veri koruyan yükseltme NOT TESTED. Chromium emülasyonu fiziksel cihaz değildi
 
 Uygulama kaynağı `9825e32960a712c81dcb6861c7386189d7a8d2ae` main'e gönderildi.
 Vercel production `dpl_919iZQfVUcjyRKEM1cKN9g2ynykY` aynı kaynakta READY;
-normal HTTPS version0.9.2. Canlı index/sw/version SHA256 değerleri kabul edilmiş
-yerel derlemeyle birebir aynı. Temiz CI43627576911 verify126/101 PASS (5,1dk);
+normal HTTPS version 0.9.2. Canlı index/sw/version SHA 256 değerleri kabul edilmiş
+yerel derlemeyle birebir aynı. Temiz CI 43627576911 verify 126/101 PASS (5,1 dk);
 [canlı43627628221](https://github.com/kaansavukduran/yksmania/actions/runs/43627628221)
-aynı9825e32 kaynağında101/101 PASS (5,7dk). CI43627576911 dört iş de PASS:
+aynı 9825 e 32 kaynağında 101/101 PASS (5,7 dk). CI 43627576911 dört iş de PASS:
 verify, Windows, Linux, Android. Paketli Windows/Linux offline ders/not/kağıt,
 soru taslağı/gerçek skor, yeniden başlatma, sınav snapshot/sonuç, timer ve reset
-mevcut smoke akışları PASS; rendererErrors0. Android APK build ve imza/manifest
+mevcut smoke akışları PASS; rendererErrors 0. Android APK build ve imza/manifest
 komutları PASS. Bu fiziksel cihaz veya iki native sürüm geçişi değildir.
 [Release43628665935](https://github.com/kaansavukduran/yksmania/actions/runs/43628665935)
 PASS; [v0.9.2-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.9.2-alpha.1)
-draft değil,8 asset:5 binary ve3 kanıt. Başarılı43627576911 main koşusunun
-dosyaları yeniden derlenmedi. Tag ve verified-run aynı9825e32 kaynağında;
-indirilen iki kanıtın hash'i SHA256SUMS ile eşleşti,7 payload listesi mevcut.
-Android versionName0.9.2/code17/v2 signature PASS. Beş büyük binary ayrıca
+draft değil,8 asset:5 binary ve 3 kanıt. Başarılı 43627576911 main koşusunun
+dosyaları yeniden derlenmedi. Tag ve verified-run aynı 9825 e 32 kaynağında;
+indirilen iki kanıtın hash'i SHA 256 SUMS ile eşleşti,7 payload listesi mevcut.
+Android versionName 0.9.2/code 17/v 2 signature PASS. Beş büyük binary ayrıca
 yerelde indirilip hash'lenmedi. Kaynak/canlı/paket kabulünde açık doğrulanmış
 kusur yok; fiziksel/native geçiş boşlukları aşağıda korunur.
 
 Son teslim kaydı yalnız FORGE/README/CONTENT_COVERAGE/QA/RELEASE_ALPHA
-dokümanlarını değiştirir; doğrulanan uygulama, test ve paket kaynağı9825e32
+dokümanlarını değiştirir; doğrulanan uygulama, test ve paket kaynağı 9825 e 32
 aynıdır. Bu doküman değişikliği için uygulama testleri tekrar çalıştırılmadı.
 
-Gerçek0.9.1→0.9.2 web SW güncellemesi ayrı yerel origin/profilde PASS: normal
-TLS ile eski production42dosyası/7revision doğrulandı, uygulamanın kendi
+Gerçek 0.9.1→0.9.2 web SW güncellemesi ayrı yerel origin/profilde PASS: normal
+TLS ile eski production 42 dosyası/7 revision doğrulandı, uygulamanın kendi
 Güncellemeleri kontrol et → Güncelle ve yeniden aç akışı yeni worker'ı etkinleştirdi.
 Eski nükleik kimliği/not/tamamlanma, soru taslağı/notu, öğrenme+üç tekrar ve
-ayarlar korundu. Sentetik eski870bayt PDF metadata/not/sayfa/byte eşitliği PASS;
+ayarlar korundu. Sentetik eski 870 bayt PDF metadata/not/sayfa/byte eşitliği PASS;
 bu tek legacy koşulu IDB'ye seed edildi, gerçek özel PDF kullanılmadı. Yeni
 DNA/RNA modeli ilk kez offline açıldı;16 H bağı ve yeni not/keşif reload ile
-korundu, XP25→25, renderer0. Yeni53manifest kaydı/51tekil dosyada revision ve
-finaldist byte farkı0. Bu fiziksel/native yükseltme veya production profilinde
-güncelleme değildir; eski favicon iki404, gerekli dosyalarda eksik istek yok.
+korundu, XP 25→25, renderer 0. Yeni 53 manifest kaydı/51 tekil dosyada revision ve
+finaldist byte farkı 0. Bu fiziksel/native yükseltme veya production profilinde
+güncelleme değildir; eski favicon iki 404, gerekli dosyalarda eksik istek yok.
 
 Başlangıç c4ab5ab75d2a71e3a98db7bfb5c8d32c08901512. Dünya Gücü Osmanlı,
 kimyasal türler/Lewis, ısı–sıcaklık, nükleik asitler, iyonik bağ ve iyonik bileşik
 adlandırma işlendi. Beş yeni anlatım eklendi; mevcut nükleik asitler kimliği
-korunarak genişletildi. Altı rehberde62 bölüm,31 çözümlü örnek,29 hatırlama
-kontrolü ve60 özgün beş seçenekli soru var. Önceki240 sorunun kimliği, kökü,
-seçenekleri, cevabı ve metni değişmedi. Toplam66 anlatım/38 ayrıntılı rehber/
-69 yerleşik kağıt/300 özgün soru; doğrulanmış sıranın ilk58/479 başlığı hazır.
+korunarak genişletildi. Altı rehberde 62 bölüm,31 çözümlü örnek,29 hatırlama
+kontrolü ve 60 özgün beş seçenekli soru var. Önceki 240 sorunun kimliği, kökü,
+seçenekleri, cevabı ve metni değişmedi. Toplam 66 anlatım/38 ayrıntılı rehber/
+69 yerleşik kağıt/300 özgün soru; doğrulanmış sıranın ilk 58/479 başlığı hazır.
 Sıradaki eksik başlık59: kovalent bağ, polar ve apolar bağ (`detail-155`).
 Tüm Drive arşivi veya tam resmî dağılımlı denemeler tamamlandı iddiası yok.
 
@@ -440,35 +518,35 @@ bağ sayıları, iyon adedi/yük dengesi ve adım adım adlandırma modelleri ek
 Keşifler ayrı kaydolur; notlar/öğrenme/1–3–7–21 tekrarları korunur ve keşif
 XP, ustalık veya tamamlanma sayılmaz. Nükleik asitler eski not anahtarı korunur.
 Kaynak sayfa sınırları ve bilimsel düzeltmeler docs/SOURCE_REVIEW.md içinde.
-AIONIA ana standardı canlı v1.7 ile karşılaştırıldı; logolar ve32 karelik Aion
-paftası değişmedi. k44/Aionlaştır/aionia bu görevde etkinleştirilmedi.
+AIONIA ana standardı canlı v 1.7 ile karşılaştırıldı; logolar ve 32 karelik Aion
+paftası değişmedi. k 44/Aionlaştır/aionia bu görevde etkinleştirilmedi.
 
-İlk check/build ve126 birim PASS. İlk odaklı browser11/12: yalnız ısı atölyesi
-320px UI200/text150 koşulunda client270/scroll272. YKS-030/Düşük: range
-kontrolünün UA yatay2px marjı kaldırıldı; aynı durumda270/270. Kesme, font
+İlk check/build ve 126 birim PASS. İlk odaklı browser 11/12: yalnız ısı atölyesi
+320 px UI 200/text 150 koşulunda client 270/scroll 272. YKS-030/Düşük: range
+kontrolünün UA yatay 2 px marjı kaldırıldı; aynı durumda 270/270. Kesme, font
 küçültme veya kabul toleransı değişimi yok. YKS-031/Düşük: Lewis sıfırlama ve
-ısı seçim/tahmin düğmeleri ortak düğme sınıflarına alındı. Gerçek320px büyük
+ısı seçim/tahmin düğmeleri ortak düğme sınıflarına alındı. Gerçek 320 px büyük
 yazıda tahmin eyleminin kelime ortasından kırılması, yalnız bu düğmenin yatay
-boşluğu uyarlanarak düzeltildi;45px metin korunur. Son derleme/kabul ve uzak
+boşluğu uyarlanarak düzeltildi;45 px metin korunur. Son derleme/kabul ve uzak
 yayın sonuçları bu bölümün başında kaydedildi.
 
-Yerel tam101/101 browser PASS (6,8dk); son yalnız tahmin düğmesi yatay boşluğu
-ve sürüm notu derlemesinde check/build,126/126 unit ve yeni kaynakların12/12
-browser kabulü tekrar PASS (55,3s). Yeni kelime genişliği regresyonu da PASS;
-320px UI200/text150 koşulunda font küçültülmeden bütün kelimeler sığar.
-Temiz uzak kurulumun tam101 kabulü ve dört paket/verify işi de yukarıda PASS.
+Yerel tam 101/101 browser PASS (6,8 dk); son yalnız tahmin düğmesi yatay boşluğu
+ve sürüm notu derlemesinde check/build,126/126 unit ve yeni kaynakların 12/12
+browser kabulü tekrar PASS (55,3 s). Yeni kelime genişliği regresyonu da PASS;
+320 px UI 200/text 150 koşulunda font küçültülmeden bütün kelimeler sığar.
+Temiz uzak kurulumun tam 101 kabulü ve dört paket/verify işi de yukarıda PASS.
 
-Son kopyalanmış derlemede17 manuel ölçüm PASS, renderer0: ısı270/270 ve tahmin
-düğmesinde222px metin alanına202,54px en uzun kelime sığar;45px font korunur.
-Lewis sıfırlama beş boyutta CO₂ adım4→1, C8→0, bağ0 olarak gerçek tıklandı.
-44 değişen/yeni metin yolunda8.845 özel Drive kimliği ve URL’si0 eşleşme;
-özel PDF/binary/anahtar veya değişen marka varlığı yok. Kilitte752 ortak
-bağımlılık kaydı birebir aynı, yalnız iki kök sürüm alanı0.9.2 değişti.
+Son kopyalanmış derlemede 17 manuel ölçüm PASS, renderer 0: ısı 270/270 ve tahmin
+düğmesinde 222 px metin alanına 202,54 px en uzun kelime sığar;45 px font korunur.
+Lewis sıfırlama beş boyutta CO₂ adım 4→1, C 8→0, bağ 0 olarak gerçek tıklandı.
+44 değişen/yeni metin yolunda 8.845 özel Drive kimliği ve URL’si 0 eşleşme;
+özel PDF/binary/anahtar veya değişen marka varlığı yok. Kilitte 752 ortak
+bağımlılık kaydı birebir aynı, yalnız iki kök sürüm alanı 0.9.2 değişti.
 
-İlk manuel inceleme altı modelde30 görünüm/durum: masaüstü koyu/açık,390px,
-320px büyük yazı ve844px yatay. Belge yatay taşması yok; ısıdaki2px iç taşma
+İlk manuel inceleme altı modelde 30 görünüm/durum: masaüstü koyu/açık,390 px,
+320 px büyük yazı ve 844 px yatay. Belge yatay taşması yok; ısıdaki 2 px iç taşma
 yukarıdaki onarımla giderildi. Nükleik alt zincir/yönleri HTML olarak da okunur;
-termometre üst etiketi gösterdiği ölçekle100°C olarak eşleşir. Fiziksel Android,
+termometre üst etiketi gösterdiği ölçekle 100°C olarak eşleşir. Fiziksel Android,
 temiz kurulum/portable taşıma ve iki native sürümle yükseltme NOT TESTED.
 
 ---
@@ -479,27 +557,27 @@ Uygulama kodu12e7431d3576fd3a1244cbab1f38a1b8c1726b5b; paket kaynağı
 `e1b8150c4ff077716c9043b06241fc7af294cb06`. Sonraki cc88e28 yalnız test ölçümü
 ve bu kayıt dosyasını değiştirir; uygulama dosyaları aynıdır.
 [CI43622440349](https://github.com/kaansavukduran/yksmania/actions/runs/43622440349)
-96 birim/89browser ve Windows/Linux/Android dört iş PASS. Yeni ölçümle son
-CI43623231137 verify96/89 PASS; teslim paketleri önceki tamamen başarılı
+96 birim/89 browser ve Windows/Linux/Android dört iş PASS. Yeni ölçümle son
+CI 43623231137 verify 96/89 PASS; teslim paketleri önceki tamamen başarılı
 43622440349 koşusundan yeniden derlenmeden yayımlandı.
 [Canlı43623257610](https://github.com/kaansavukduran/yksmania/actions/runs/43623257610)
-cc88e28 kaynağında89/89 PASS (5,2dk). İlk iki public88/89 nedenleri aşağıda
+cc 88 e 28 kaynağında 89/89 PASS (5,2 dk). İlk iki public 88/89 nedenleri aşağıda
 korunur; beklenti, timeout veya uygulama davranışı gevşetilmedi.
 
-Vercel production dpl_6DTrXJDaHQFmYd3FXnFpXCCKYtUW/cc88e28 READY; version0.9.1.
+Vercel production dpl_6 DTrXJDaHQFmYd 3 FXnFpXCCKYtUW/cc 88 e 28 READY; version 0.9.1.
 Canlı index/sw/version hash’leri kabul edilmiş yerel derlemeyle birebir aynı.
 [Release43623370247](https://github.com/kaansavukduran/yksmania/actions/runs/43623370247)
 PASS; [v0.9.1-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.9.1-alpha.1)
-draft değil,8asset:5binary ve3kanıt. Tag ve verified-run aynı başarılı e1b8150
-main kaynağında. İndirilen iki kanıt hash’i eşleşti;7payload listesi mevcut.
-Android0.9.1/code16/v2 signature PASS. Beş büyük binary ayrıca yerelde hash’lenmedi.
+draft değil,8 asset:5 binary ve 3 kanıt. Tag ve verified-run aynı başarılı e 1 b 8150
+main kaynağında. İndirilen iki kanıt hash’i eşleşti;7 payload listesi mevcut.
+Android 0.9.1/code 16/v 2 signature PASS. Beş büyük binary ayrıca yerelde hash’lenmedi.
 Paketli Windows/Linux offline/yeniden başlatma/sınav/timer/not/reset mevcut
 smoke akışları PASS. Fiziksel Android, temiz kurulum, portable taşıma ve iki
-native sürümle güncelleme NOT TESTED. Yeni görseller390/1440px incelendi;
-yeni modeller320px UI200/text150, az hareket ve ciddi/kritik axe kabulü PASS.
+native sürümle güncelleme NOT TESTED. Yeni görseller 390/1440 px incelendi;
+yeni modeller 320 px UI 200/text 150, az hareket ve ciddi/kritik axe kabulü PASS.
 
-61 anlatım/32 rehber/64 kağıt/240 özgün soru;4 yeni rehberde24 açıklama bölümü,
-12 çözümlü örnek ve12 recall. İlk50/479 hazır. Karma90TYT/25AYT ve11branş;
+61 anlatım/32 rehber/64 kağıt/240 özgün soru;4 yeni rehberde 24 açıklama bölümü,
+12 çözümlü örnek ve 12 recall. İlk 50/479 hazır. Karma 90 TYT/25 AYT ve 11 branş;
 tam resmî dağılım veya bütün Drive arşivi tamamlandı iddiası yok. Son kullanıcı
 kararıyla logolar değişmedi, öğrenci materyal yüklemez. Sıradaki eksik başlıklar:
 51 Dünya Gücü Osmanlı,52 kimyasal türler/Lewis,53 ısı–sıcaklık,54 nükleik asitler.
@@ -509,37 +587,37 @@ kararıyla logolar değişmedi, öğrenci materyal yüklemez. Sıradaki eksik ba
 
 # 0.9.1 — dört periyodik kimya konusu
 
-Son CI43622440349 verify96unit/89browser PASS. İlk public43621890680 aynı
-save-onayı yarışında88/89; ikinci43622465069 yeni konular PASS, eski YKS-006
-not sınırında88/89 (beklenen908,59375, ölçülen907,59375). İki viewport rect
+Son CI 43622440349 verify 96 unit/89 browser PASS. İlk public 43621890680 aynı
+save-onayı yarışında 88/89; ikinci 43622465069 yeni konular PASS, eski YKS-006
+not sınırında 88/89 (beklenen 908,59375, ölçülen 907,59375). İki viewport rect
 ayrı zamanlarda ölçülüyordu; theory/notes/layout ve question/note tek DOM
 örneğinde ölçülür. Sıfır toleranslı not-altında koşulu aynıdır. Aynı YKS-006
-1440/1280/1024/390/320 senaryosu yerelde PASS. Trace artefact indirmesi403 ile
-engellendi; konsol kanıtı saklandı, CSS normal akışta20px note marjı içeriyor.
+1440/1280/1024/390/320 senaryosu yerelde PASS. Trace artefact indirmesi 403 ile
+engellendi; konsol kanıtı saklandı, CSS normal akışta 20 px note marjı içeriyor.
 Uygulama veya CSS değiştirilmedi; yeni public kabul gerekir.
 
 
-İlk uzak CI43621833448:96unit/check/build PASS, browser88/89. Yeni
+İlk uzak CI 43621833448:96 unit/check/build PASS, browser 88/89. Yeni
 periodic-depth testi gerekçe görünür olur olmaz reload yaptı; Provider update
 optimistic, IDB kaydı henüz bitmemişti. Test görünür .save-status kaydedildi
 onayını bekler; aynı seçim+gerekçe offline koruma koşulu tutulur. Ürün davranışı
-ve timeout değiştirilmedi. Onarım sonrası aynı2test yerelde PASS; yeni CI gerekir.
+ve timeout değiştirilmedi. Onarım sonrası aynı 2 test yerelde PASS; yeni CI gerekir.
 
 
 Başlangıç cfe0db0da56ee343db4da1a4c408ff7fb8ab9199. Son kullanıcı düzeltmesiyle
-ikonlar aynen korundu; k44/Aionlaştır/aionia komutları bu tur etkinleştirilmedi.
-MEBİ TYT Kimya basılı30–34 canlı metni ve Aurelia010–013 kağıtları s.2–3 okundu.
+ikonlar aynen korundu; k 44/Aionlaştır/aionia komutları bu tur etkinleştirilmedi.
+MEBİ TYT Kimya basılı 30–34 canlı metni ve Aurelia 010–013 kağıtları s.2–3 okundu.
 Sınıflandırma, atom çapı, İE, Eİ/EN/metalik karakter:4 ders,24 açıklama bölümü,
 12 çözümlü örnek,12 recall,20 özgün soru;4 yerleşik kağıt otomatik türedi.
-Toplam61/32/64/240; ilk50/479 kaynak başlığı hazır. Kimya branş seti yeni konuları
+Toplam 61/32/64/240; ilk 50/479 kaynak başlığı hazır. Kimya branş seti yeni konuları
 sırayla örnekler; önceki kayıtlı sınavların snapshot’ları değiştirilmez. Dört
-model13 durumu kanıt/süreç/bağıl yarıçap/enerji sütunlarıyla gösterir. Keşifler
+model 13 durumu kanıt/süreç/bağıl yarıçap/enerji sütunlarıyla gösterir. Keşifler
 ayrı kayıtlıdır, XP veya tamamlanma oluşturmaz. Tüm arşiv tamamlandı iddiası yok.
 
-Check/build ve96 birim PASS. Yeni iki browser testi PASS:4 dersin normal giriş,
-model değişimi/gerekçe, offline reload kalıcılığı;320px UI200/text150/reduced
-motion/klavye ve ciddi/kritik axe. Gerçek390/1440 görüntüleri incelendi;96 unit
-ve ilk50 başlık sürekliliği PASS. Tam89/89 browser PASS (5,5dk). Yerel kanıt dizini:
+Check/build ve 96 birim PASS. Yeni iki browser testi PASS:4 dersin normal giriş,
+model değişimi/gerekçe, offline reload kalıcılığı;320 px UI 200/text 150/reduced
+motion/klavye ve ciddi/kritik axe. Gerçek 390/1440 görüntüleri incelendi;96 unit
+ve ilk 50 başlık sürekliliği PASS. Tam 89/89 browser PASS (5,5 dk). Yerel kanıt dizini:
 /workspace/work/forge-periodic. Paket/canlı sonuçları tamamlanınca eklenecek.
 
 Sürüm npm version ile güncellendi; bağımlılık kilidinde yalnız iki kök sürüm
@@ -550,73 +628,73 @@ alanı değişti. Özel kaynak kimliği/PDF/indirilen içerik depoya eklenmedi.
 # 0.9.0 — Vercel ve indirilebilir paketler yayımlandı
 
 [Canlı43613106471](https://github.com/kaansavukduran/yksmania/actions/runs/43613106471)
-87/87 PASS (5,0dk), normal production HTTPS üzerinde. Test kaynağı eb188d6,
-uygulama kaynağı b92b2b5 ile aynı; aradaki fark yalnız teslim dokümanları.
-Yerel87, temiz CI87 ve canlı87 ayrı ayrı PASS. Üç runtime hash'i yerel/canlı
-birebir eşleşir. İçerik57 anlatım/28 ayrıntılı rehber/60 kağıt/220 özgün soru;
-sıranın ilk45/479 başlığı hazır. Bütün arşiv veya tam resmî dağılımlı denemeler
+87/87 PASS (5,0 dk), normal production HTTPS üzerinde. Test kaynağı eb 188 d 6,
+uygulama kaynağı b 92 b 2 b 5 ile aynı; aradaki fark yalnız teslim dokümanları.
+Yerel 87, temiz CI 87 ve canlı 87 ayrı ayrı PASS. Üç runtime hash'i yerel/canlı
+birebir eşleşir. İçerik 57 anlatım/28 ayrıntılı rehber/60 kağıt/220 özgün soru;
+sıranın ilk 45/479 başlığı hazır. Bütün arşiv veya tam resmî dağılımlı denemeler
 tamamlanmış değildir. Fiziksel/native geçiş boşlukları aşağıda korunur.
 
 Son Vercel kontrolünde GitHub kaynaklı production dağıtımı
 `dpl_HVAerBa5W5bAocHakgZqKwM5e6X6`/da4c2ec58eaf0c7fea0b00b447c806b8bbb38f8d
-READY bulundu; HTTPS version.json0.9.0. index.html, sw.js ve version.json
+READY bulundu; HTTPS version.json 0.9.0. index.html, sw.js ve version.json
 SHA-256 değerleri kabul edilmiş yerel derlemeyle birebir aynı. Manuel API'nin
 önceki kota hatası uygulamanın GitHub bağlantılı dağıtımını engellemiş görünmüyor;
-kota kalktı diye varsayılmaz. Yeni canlı87test kabulü43613106471 PASS.
+kota kalktı diye varsayılmaz. Yeni canlı 87 test kabulü 43613106471 PASS.
 
 [0.9.0-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.9.0-alpha.1)
 yayımlandı, draft değil. [Release43612877695](https://github.com/kaansavukduran/yksmania/actions/runs/43612877695)
-PASS; başarılı CI43611757852'nin mevcut5 binary'si yeniden derlenmeden alındı:
-Windows Setup/Portable, Linux AppImage/DEB, Android debug APK; üç kanıtla8 asset.
-Tag ve verified-run.json aynı b92b2b5 başarılı main kaynağını gösterir.
-İndirilen Android-verification.txt ve verified-run.json iki hash'i SHA256SUMS ile
-eşleşti; liste7payload içerir. Android code15/name0.9.0/v2 signature PASS.
+PASS; başarılı CI 43611757852'nin mevcut 5 binary'si yeniden derlenmeden alındı:
+Windows Setup/Portable, Linux AppImage/DEB, Android debug APK; üç kanıtla 8 asset.
+Tag ve verified-run.json aynı b 92 b 2 b 5 başarılı main kaynağını gösterir.
+İndirilen Android-verification.txt ve verified-run.json iki hash'i SHA 256 SUMS ile
+eşleşti; liste 7 payload içerir. Android code 15/name 0.9.0/v 2 signature PASS.
 Beş büyük binary ayrıca yerelde indirilip hash'lenmedi. Son kayıt commit'leri
 yalnız dört teslim dokümanını değiştirir; kabul edilen runtime hash'leri aynıdır.
-Son normal TLS canlı version.json kontrolü0.9.0; gerçek dağıtım yukarıda doğrulandı.
+Son normal TLS canlı version.json kontrolü 0.9.0; gerçek dağıtım yukarıda doğrulandı.
 
 Doğrulanan uygulama/paket kaynağı `b92b2b52be5f5a08b9238b565f73b6998481b65a`.
 [CI43611757852](https://github.com/kaansavukduran/yksmania/actions/runs/43611757852)
-tamamı PASS: temiz npm ci, check/build,94 birim,87/87 browser (4,2dk),
+tamamı PASS: temiz npm ci, check/build,94 birim,87/87 browser (4,2 dk),
 Windows/Linux/Android. Windows ve Linux paketlenmiş uygulamalarında ders,
 rehber/kağıt/not, paragraf taslağı, bugünkü gerçek skor, offline/süreç yeniden
-başlatma, kum saati/deadline, exam snapshot/sonuç ve reset PASS; rendererErrors0.
+başlatma, kum saati/deadline, exam snapshot/sonuç ve reset PASS; rendererErrors 0.
 Android APK üretimi ve imza/manifest komutları PASS. Bu fiziksel cihaz veya
 temiz Windows kurulumu/portable taşıma/native sürümler arası geçiş değildir.
 YKS-023–029 ve önceki ilgili regresyonlar PASS; kapsamda açık doğrulanmış kusur yok.
 
-Yerel gerçek0.8→0.9 SW geçişi ayrıca PASS: eski canlı0.8 index/sw/version üç
-hash'i önceki kabul ile birebir eşleşti;228asset indirildi,196revision doğrulandı.
+Yerel gerçek 0.8→0.9 SW geçişi ayrıca PASS: eski canlı 0.8 index/sw/version üç
+hash'i önceki kabul ile birebir eşleşti;228 asset indirildi,196 revision doğrulandı.
 Eski uygulamanın gerçek Ayarlar güncelleme düğmesiyle yeni kopya aktive edildi.
-Paragraf A taslağı/notu, açık tema/UI115/yazı110, önceki öğrenme kayıtları ve
-sentetik870bayt PDF metadata+byte'ları tam korundu. Yeni yerleşik kağıt ilk kez
-offline açıldı; reload/taslak devam PASS, renderer0. Bu izole yerel web kabulüdür.
+Paragraf A taslağı/notu, açık tema/UI 115/yazı 110, önceki öğrenme kayıtları ve
+sentetik 870 bayt PDF metadata+byte'ları tam korundu. Yeni yerleşik kağıt ilk kez
+offline açıldı; reload/taslak devam PASS, renderer 0. Bu izole yerel web kabulüdür.
 İlk önkoşul NOT TESTED kaydı, eski canlı build indirildikten sonra bu PASS ile
 aşıldı. İlk harness'in iki meşru güncelleme düğmesini eşleştiren seçici hatası
 saklandı; Settings içindeki gerçek düğme seçildi, ürün/test şartı zayıflatılmadı.
 
-**İlk manuel dağıtım engeli:** Git kaynaklı API production talebi HTTP402,
+**İlk manuel dağıtım engeli:** Git kaynaklı API production talebi HTTP 402,
 `api-deployments-free-per-day`/günlük100, retryAfter86400 verdi; yerel CLI yoktu.
-İlk kontrolde eski dağıtım dpl_bpyVHjvmsFLKFWVditzEZYtBmTpe/ead659b0.8.0 idi.
-Sonraki normal TLS kontrolü0.9.0'ı gösterdi; metadata GitHub da4c2ec production
+İlk kontrolde eski dağıtım dpl_bpyVHjvmsFLKFWVditzEZYtBmTpe/ead 659 b 0.8.0 idi.
+Sonraki normal TLS kontrolü 0.9.0'ı gösterdi; metadata GitHub da 4 c 2 ec production
 READY ve üç runtime hash eşitliğiyle doğrulandı. İlk BLOCKED kaydı geçmiş
-kanıttır; Vercel0.9 güncel durumu READY. Yeni proje/plan/hesap değişimi veya
+kanıttır; Vercel 0.9 güncel durumu READY. Yeni proje/plan/hesap değişimi veya
 arka plan zamanlama yapılmadı. Canlı kabul ayrıca yukarıda kaydedilir.
 0.9 paket yayını başarılı CI'nin mevcut dosyalarını yeniden derlemeden kullandı.
 
-İlk uzak CI43611497875 npm ci sırasında source-map-0.9.0 için404 verdi.
+İlk uzak CI 43611497875 npm ci sırasında source-map-0.9.0 için 404 verdi.
 YKS-029/Kritik: uygulama sürümü metin değişimi kilitteki iki bağımlılık sürümünü
 ve üç aralık kaydını da değiştirmişti; mevcut node_modules ile yerel build bunu
-yakalamadı. PDF.js kaldırılması dışındaki tüm ortak dependency kayıtları0.8
-tabanından birebir geri alındı; uygulama sürümü0.9.0 kaldı. Boş ayrı npm cache ile
-gerçek npm ci680paketi16s’de kurdu, PASS. Check/unit/build temiz kurulumdan sonra
+yakalamadı. PDF.js kaldırılması dışındaki tüm ortak dependency kayıtları 0.8
+tabanından birebir geri alındı; uygulama sürümü 0.9.0 kaldı. Boş ayrı npm cache ile
+gerçek npm ci 680 paketi 16 s’de kurdu, PASS. Check/unit/build temiz kurulumdan sonra
 yeniden uygulanır; yeni başarılı tüm-platform CI olmadan paket yayımlanmaz.
 
 Son kaynak derlemesi: check, 94/94 unit ve 87/87 Chromium browser PASS (5,5 dk).
 YKS-023–028 kabul koşulları ve önceki ilgili regresyonlar geçti; hazırlanmamış
 paketlerin aramada boş kart üretmesi de giderildi. Ayrı exam kabulü 4/4 PASS.
 Son yerel Electron akışı PASS, rendererErrors 0. Normal/büyük yazı, koyu/açık
-tema, 320/844/1440px ve çevrimdışı akışlar gerçek DOM/görüntü ile sınandı.
+tema, 320/844/1440 px ve çevrimdışı akışlar gerçek DOM/görüntü ile sınandı.
 Altı yeni React bileşeninde hook/cleanup/kayıt/odak incelemesi yeni kusur bulmadı.
 16 ulaşılabilir rotada akademik yükleme kontrolü yok; kişisel JSON yedeği ayrı.
 294 değişen yolun gizlilik incelemesi: 8.845 özel kaynak kimliğiyle 0 eşleşme,
@@ -637,68 +715,68 @@ kişisel ilerleme JSON geri yükleme korunur. Eski/sources ve/library hazır der
 sunar. Kopya Kağıtları menüde ayrı; Sınavlar Sorular'ın altındadır.
 
 57 anlatım,28 derin rehber,60 yerleşik kağıt,220 özgün soru.28 rehber dışında
-kalan hazır anlatımlar kaynaklı, aşamalı vaka/kanıt çalışmalarıdır. Önceki8 kısa
+kalan hazır anlatımlar kaynaklı, aşamalı vaka/kanıt çalışmalarıdır. Önceki 8 kısa
 başlangıç dersi gerçek kaynaklarla genişletildi. Ses/yapı, çarpanlara ve üç
-Osmanlı başlığı yeni model/öğretim aldı.105 yeni soru eklendi, eski115 soru ve
-cevapları sabit fixture ile korunur. Eski çarpanlara5'lik set aynıdır; ileri10
+Osmanlı başlığı yeni model/öğretim aldı.105 yeni soru eklendi, eski 115 soru ve
+cevapları sabit fixture ile korunur. Eski çarpanlara 5'lik set aynıdır; ileri 10
 ayrı soru paketidir, anlatım/kağıt sayısını şişirmez. Soru paketinin zengin kağıdı
 ezme riski odaklı regresyonla engellendi. Sekiz eski ÖSYM referansı için sekiz
 bağımsız özgün öğretim varyantı yerleşiktir; resmî sorunun birebir kopyası değildir.
-İlk45/479 sıra başlığı hazırdır,46 kimyadaki Elementlerin sınıflandırılmasıdır.
-Osmanlı medeniyeti ayrı sonraki başlık; ilk46 hazır diye sayılmaz. Bütün arşiv,
-126 özel kağıdın tüm ayrıntıları ve20 yıllık ÖSYM taraması hazır değildir.
+İlk 45/479 sıra başlığı hazırdır,46 kimyadaki Elementlerin sınıflandırılmasıdır.
+Osmanlı medeniyeti ayrı sonraki başlık; ilk 46 hazır diye sayılmaz. Bütün arşiv,
+126 özel kağıdın tüm ayrıntıları ve 20 yıllık ÖSYM taraması hazır değildir.
 
-Denemeler: TYT karma90, AYT Sayısal25,11 branş. TYT120/165dk ve AYT80/180dk
-oranından süre; tam120/80 resmî dağılım diye sunulmaz. Kayıtlı soru/anahtar/
+Denemeler: TYT karma 90, AYT Sayısal 25,11 branş. TYT 120/165 dk ve AYT 80/180 dk
+oranından süre; tam 120/80 resmî dağılım diye sunulmaz. Kayıtlı soru/anahtar/
 metin snapshot, cevap/boş/flag ve son zaman; offline/süreç yeniden başlatma;
 yan ekran veya açılışta expiry, açık onaylı erken bitir, doğru/yanlış/boş/net
 ve tam özgün açıklamalar. Sonuçlar deneme geçmişinde ayrıdır, XP veya teori
 ustalığı oluşturmaz. Yazma hatasında yanlış başarı yok; globalRetry sonrası
-expiry bir kez yeniden denenir, her500ms tekrarlanan yazma hatası üretilmez.
+expiry bir kez yeniden denenir, her 500 ms tekrarlanan yazma hatası üretilmez.
 Aynı set tekrar edilebilir; rastgele yeni tam deneme üretildiği iddiası yok.
 
-Unslop/Fragaria/Yazılım Denetle uygulandı, canlı AIONIA v1.7 okundu. Onaylı32kare
-Aion atlası değişmedi.94 birim + check/build PASS. İlk tam browser79/85; altı
+Unslop/Fragaria/Yazılım Denetle uygulandı, canlı AIONIA v 1.7 okundu. Onaylı 32 kare
+Aion atlası değişmedi.94 birim + check/build PASS. İlk tam browser 79/85; altı
 hatanın beşi yeni testlerin seçici/başlatma/DOM metin örneklemesi uyumsuzluğu,
 biri aşağıdaki yeni exam taşması. Beklentiler zayıflatılmadan düzeltildi:
-Theoryselector yanlışlıkla.cheatsheet-topic olmuştu; rehber h2 içinde model h2
+Theoryselector yanlışlıkla.cheatsheet-topic olmuştu; rehber h 2 içinde model h 2
 vardı; innerText/textContent blok boşluğu farkı; Provider açılmadan menü kontrolü;
 açgözlü PDF.*ekle regex'inin örnekler kelimesini eşleştirmesi. Gerçek yükleme
 kontrolü/girdi yokluğu, içerik/odak/not/offline sonuç denetimleri korunur.
 
-YKS-023 (Orta):320px UI%200/yazı%150 Türkçe deneme başlığı313px metinle belgeyi
-325px yaptı. Scoped h1 wrap, font korunur; aynı yeni gerçek UI testi tekrar edilir.
+YKS-023 (Orta):320 px UI%200/yazı%150 Türkçe deneme başlığı 313 px metinle belgeyi
+325 px yaptı. Scoped h 1 wrap, font korunur; aynı yeni gerçek UI testi tekrar edilir.
 YKS-024 (Orta): aynı ölçeklerde yerel dialog UAmaxwidth hem reset hem sınav bitir
-penceresini224px'e sıkıştırdı; yatay içerik309/321px. Yazar maxwidth/copywrap/
-kontrollü padding ile288px dialog,286px içerik; tanı ölçümü yatay taşma0.
-YKS-025 (Orta): TYT2:03:45 saati+ikon331px belge oluşturdu. İkon/etiket ayrı,
-sayaç tam satır ve gerekirse saat sonrası<wbr>; metin ve font korunur. Tanı320px.
+penceresini 224 px'e sıkıştırdı; yatay içerik 309/321 px. Yazar maxwidth/copywrap/
+kontrollü padding ile 288 px dialog,286 px içerik; tanı ölçümü yatay taşma 0.
+YKS-025 (Orta): TYT 2:03:45 saati+ikon 331 px belge oluşturdu. İkon/etiket ayrı,
+sayaç tam satır ve gerekirse saat sonrası<wbr>; metin ve font korunur. Tanı 320 px.
 40 normal/büyük ölçek koyu/açık görüntüsü, gerçek DOM ölçümleri ve emüle touch
 alındı; son derlemede aynı ölçümler/testler tekrar edilecektir.
 
 Yerel Electron tüm offline ders/rehber/kağıt/not, soru taslağı, saat, exam snapshot
-ve deadline ile süreç yeniden başlatma, sonuç/reset akışları PASS; renderer0.
+ve deadline ile süreç yeniden başlatma, sonuç/reset akışları PASS; renderer 0.
 Bu ilk sonuç yeni CSS onarımı öncesidir; son paket/canlı sonuç ayrıca eklenecek.
 Native fiziksel Android, temiz Windows kurulumu/portable taşıma ve iki native
-paket arasında yükseltme NOT TESTED. İlk0.8veri/PDF baytlarını gizli koruma testi
+paket arasında yükseltme NOT TESTED. İlk 0.8 veri/PDF baytlarını gizli koruma testi
 korunur. Root ve altı iş kolu kaynak/uygulama/denetimi paylaşılmış dosyalarda
 çakışmadan yaptı; kaynak okuma sınırları SOURCE_REVIEW.md'de.
 
-Sonraki tam browser85/86 PASS; aynı exam testinde sonuç tablosunun klavyeyle
-kaydırılamadığı doğrulandı (YKS-028/Orta). Tabindex0 ve adlandırılmış bölge,
+Sonraki tam browser 85/86 PASS; aynı exam testinde sonuç tablosunun klavyeyle
+kaydırılamadığı doğrulandı (YKS-028/Orta). Tabindex 0 ve adlandırılmış bölge,
 gerçek ArrowRight ile scrollLeft>0 kabulü eklendi. YKS-026/Orta: yeni elektrik
 alan tanımında F'nin elektriksel kuvvet olduğu açıklandı; net kuvvet değil.
 Sekiz fizik örneği bağımsız olarak tekrar hesaplandı. YKS-027/Düşük: soru-only
 paket Theoryaramasında boş subjectkartı üretiyordu; mode-aware arama ve memo
 bağımlılığı düzeltildi. Aynı görünür kart yokluğu testi onarım öncesi FAIL;
 yeni build'de ve son tam kabulde tekrar çalıştırılacak. Son CSS gerçekten
-320/844/1440px'de yeniden render edilerek ölçüldü: dialog288px, yatay scroll0;
-sayaç ve belge320px, renderer0. Yerel native son akışlar tekrar PASS.
+320/844/1440 px'de yeniden render edilerek ölçüldü: dialog 288 px, yatay scroll 0;
+sayaç ve belge 320 px, renderer 0. Yerel native son akışlar tekrar PASS.
 
 Kanıt/work/forge-090: check-final,unit-final,build-final,browser-full,native.log;
 exams-focused.log,manual-ui.json, görseller ve geometryJSON kayıtları. Son tam
-kabul/CI/yayın sonucu bu kaydın üstüne eklenecek. PDF.js ve200 gereksiz font
-varlığı paketten kaldırıldı; ilk hazır asset cache13,1MiB'den8,65MiB'ye indi.
+kabul/CI/yayın sonucu bu kaydın üstüne eklenecek. PDF.js ve 200 gereksiz font
+varlığı paketten kaldırıldı; ilk hazır asset cache 13,1 MiB'den 8,65 MiB'ye indi.
 
 ---
 
@@ -711,16 +789,16 @@ native kabulün beklemelerini ve public iz kaydını güçlendirir, uygulamayı 
 72 birim, check/build,73/73 browser ve Windows/Linux/Android işlerinin hepsinde PASS.
 Paketlenmiş Windows ve Linux: offline ders, not/taslak/PDF, reload/süreç yeniden
 başlatma, kayıtlı kum saati deadline eşitliği, pause ve ilerleme sıfırlama PASS;
-her iki platformda gözlenen rendererErrors0. Android code14 / name0.8.0 / v2
+her iki platformda gözlenen rendererErrors 0. Android code 14 / name 0.8.0 / v 2
 imza PASS. Bu, fiziksel Android veya temiz kurulum testi değildir.
 
 [Canlı43601821513](https://github.com/kaansavukduran/yksmania/actions/runs/43601821513)
-aynı kaynakta73/73 PASS (6,2dk); ilk offline PDF11,1s ve yeni üç timer/reset kabulü
-PASS. Önceki public72/73 koşusunun ilk PDF30s hatası kayıtta korundu; tekrar
+aynı kaynakta 73/73 PASS (6,2 dk); ilk offline PDF 11,1 s ve yeni üç timer/reset kabulü
+PASS. Önceki public 72/73 koşusunun ilk PDF 30 s hatası kayıtta korundu; tekrar
 aynı koşullarda üretilmedi, PDF kodu veya timeout değiştirilmedi. Ayrı yerel
-izde ilk cache hazırlığı26,722s, offline canvas0,873s ölçüldü; bu tanı koşusu
+izde ilk cache hazırlığı 26,722 s, offline canvas 0,873 s ölçüldü; bu tanı koşusu
 sandbox TLS istisnasıyla yapıldığı için sıkı public CI kabulünün yerine sayılmaz.
-İlk iki native denemenin20:00/19:… sorunu, testin gerçek azalmayı/pause sonucunu
+İlk iki native denemenin 20:00/19:… sorunu, testin gerçek azalmayı/pause sonucunu
 beklemesi ve kayıtlı son zamanı süreçler arasında birebir karşılaştırmasıyla
 çözüldü; aynı kalan süre kabulü iki paketli platformda PASS. Ürün süresi
 sahte sonuçla değiştirilmedi, test atlanmadı, kabul sınırı genişletilmedi.
@@ -732,35 +810,35 @@ birebir eşleşir. Son kayıt dokümanlarının dağıtımı ayrıca kontrol edi
 PASS; [v0.8.0-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.8.0-alpha.1)
 yayımlandı, draft değil. Başarılı CI paketleri yeniden derlenmeden alındı:
 Windows Setup/Portable, Linux AppImage/DEB, Android debug APK ve üç kanıt =8 asset.
-İndirilen Android-verification.txt ve verified-run.json hash'leri SHA256SUMS ile
-eşleşti. Verified-run doğru başarılı main kaynağını gösterir; hash listesi7
+İndirilen Android-verification.txt ve verified-run.json hash'leri SHA 256 SUMS ile
+eşleşti. Verified-run doğru başarılı main kaynağını gösterir; hash listesi 7
 payload içerir. Beş büyük binary ayrıca yerelde indirilip hash'lenmiş değildir.
 
-Yeni çalışma kum saati varsayılan5dk; üstüne basınca ters dönüp başlar, durdur/
-devam et ve alt köşe menüsünde1/5/10/20dk,1–120dk özel sürgü/sayı girişi var.
+Yeni çalışma kum saati varsayılan 5 dk; üstüne basınca ters dönüp başlar, durdur/
+devam et ve alt köşe menüsünde 1/5/10/20 dk,1–120 dk özel sürgü/sayı girişi var.
 Konu anlatımı, kopya kağıdı ve soru yollarında aynı yerel süre korunur; zamanı
 bitirmek öğrenme veya XP üretmez. Ayarlar/Veri'de açık onaylı sıfırlama,
 öğrenme kanıtlarını temizler; ayarlar, notlar, PDF ve sayfa konumları korunur.
 Yazma hatası önceki ilerlemeyi/süreyi korur. Ders simgeleri ortak vektörlerdir;
 TYT/AYT kökleri yukarıdadır, etiketler ve kart kenar boşlukları denetlendi.
 
-YKS-021 (Orta):320px UI%200/yazı%150 menüde41px alan,130,08px dakika sözcüğünü
-harf harf kırıyordu;248px'e çıktı, aynı ölçüm PASS. YKS-022 (Orta): yeni reset
-butonu belgeyi346px'e taşıyordu;320px ve taşan öğe0, aynı eski regresyon PASS.
+YKS-021 (Orta):320 px UI%200/yazı%150 menüde 41 px alan,130,08 px dakika sözcüğünü
+harf harf kırıyordu;248 px'e çıktı, aynı ölçüm PASS. YKS-022 (Orta): yeni reset
+butonu belgeyi 346 px'e taşıyordu;320 px ve taşan öğe 0, aynı eski regresyon PASS.
 YKS-006/008/010/013/014/015/016/018/019/020 ilgili kontrolleri son tam kabulde
 PASS. Denetlenen bu kapsamda açık doğrulanmış kusur kalmadı; bütün ürün için
 hatasızlık garantisi değildir. Geometri testinin iki ayrı zamandaki rect okuması
-tek DOM örneklemine alındı; >=18px sınırı korunarak3/3 ve tam73/73 PASS.
+tek DOM örneklemine alındı; >=18 px sınırı korunarak 3/3 ve tam 73/73 PASS.
 
-Kullanıcı görüntüsü0.5.2 istemcisini ve bekleyen sürüm bildirimini gösterir.
-Gerçek0.5.3→0.8.0 web güncellemesi, yarım yanıt/not korunarak ve offline yeniden
-açılarak PASS; eski padding1→33px, kökler üstte. Bu kullanıcı cihazına doğrudan
-bağlanıldığı veya0.5.2 yükseltmesinin birebir test edildiği anlamına gelmez.
+Kullanıcı görüntüsü 0.5.2 istemcisini ve bekleyen sürüm bildirimini gösterir.
+Gerçek 0.5.3→0.8.0 web güncellemesi, yarım yanıt/not korunarak ve offline yeniden
+açılarak PASS; eski padding 1→33 px, kökler üstte. Bu kullanıcı cihazına doğrudan
+bağlanıldığı veya 0.5.2 yükseltmesinin birebir test edildiği anlamına gelmez.
 Eski UI'da Ayarlar → Güncellemeler ve hakkında → Güncelle ve yeniden aç.
 Yeni bildirimde bu eylem doğrudan görünür; kayıt bitmeden etkinleşmez.
 
-Gerçek kapsam54 anlatım /17 ayrıntılı rehber /115 özgün soru /8 ÖSYM referansı.
-Selçuklu ve elektron katmanları eklendi; paragraf derinleştirildi. İlk43/479
+Gerçek kapsam 54 anlatım /17 ayrıntılı rehber /115 özgün soru /8 ÖSYM referansı.
+Selçuklu ve elektron katmanları eklendi; paragraf derinleştirildi. İlk 43/479
 sıralı başlıkta anlatım hazırdır; bütün müfredat/20 yıllık arşiv hazır değildir.
 Özel PDF/katalog/Drive kimlikleri yayımlanmadı. Fiziksel Android, temiz Windows
 kurulumu, portable taşıma ve iki native paket arasında veri koruyan yükseltme
@@ -768,23 +846,23 @@ NOT TESTED. İki web build'iyle güncelleme bunlardan ayrı doğrulanmıştır.
 
 Yerel kanıt /workspace/work/forge-080: ci-accepted.log, public-accepted.log,
 release-evidence/, runtime-before-docs.json; başlangıç/onarım/görseller aşağıda.
-Sonraki içerik sıra44/detail-233 Osmanlı siyaseti,45/detail-234 askerler ve ordu;
-kalan9 kısa başlangıç anlatımını derinleştir. Yeni soru fazına geçmeden anlatım
-önceliği ve1/3/7/21 (+2,+6,+20) sözleşmesi korunur.
+Sonraki içerik sıra 44/detail-233 Osmanlı siyaseti,45/detail-234 askerler ve ordu;
+kalan 9 kısa başlangıç anlatımını derinleştir. Yeni soru fazına geçmeden anlatım
+önceliği ve 1/3/7/21 (+2,+6,+20) sözleşmesi korunur.
 
 ---
 
 # 0.8.0 — paket ve canlı kabul izleme
 
-İlk kaynak8df0d25 CI43600766700: verify72unit/73browser PASS, Android PASS;
-Windows ve Linux paketleri üretildi fakat yeni native timer testinin19:…
-beklentisi20:00 okudu. Kapatmadan önce gerçek azalma beklenmesi, IDB bitiş
+İlk kaynak 8 df 0 d 25 CI 43600766700: verify 72 unit/73 browser PASS, Android PASS;
+Windows ve Linux paketleri üretildi fakat yeni native timer testinin 19:…
+beklentisi 20:00 okudu. Kapatmadan önce gerçek azalma beklenmesi, IDB bitiş
 zamanının süreçler arasında birebir eşitliği ve duraklatmanın dayanıklı UI
-sonucunun beklenmesi eklendi. Yerel native tekrar PASS, rendererErrors0.
+sonucunun beklenmesi eklendi. Yerel native tekrar PASS, rendererErrors 0.
 Aynı regex/gerçek kalan süre kabulü korunur; bekleme uzatılıp test atlanmaz.
 Uygulama dosyaları bu düzeltmede değişmedi. Paket CI yeni kaynakta tekrarlanır.
 
-İlk public43600807364:72/73; ilk offline PDF canvas açılışında30s süre aşımı.
+İlk public 43600807364:72/73; ilk offline PDF canvas açılışında 30 s süre aşımı.
 Diğer PDF/not/timer/sıfırlama ve yeni içerik denetimleri PASS. İlk koşuda iz
 kapalı olduğundan sonuç ağ/geçici hata diye varsayılmaz; yeni public koşu
 retain-on-failure trace tutacak. Yerel public deneme sandbox Chromium TLS
@@ -795,14 +873,14 @@ Son başarılı test ve yayın kaydı bu başlığın üstüne eklenecek.
 
 # 0.8.0 — son yerel kabul tamamlandı, yayın hazırlanıyor
 
-72 birim, check/build ve son tam Chromium kabulü73/73 PASS.
+72 birim, check/build ve son tam Chromium kabulü 73/73 PASS.
 YKS-021 ve YKS-022 aynı başlangıç koşullarında düzeldi; bu kapsamda açık
 kanıtlanmış kusur kalmadı. Geliştirme Electron offline/reload/süreç yeniden
-başlatma/kum saati/sıfırlama PASS, rendererErrors0. Bu sonuç paketlenmiş
+başlatma/kum saati/sıfırlama PASS, rendererErrors 0. Bu sonuç paketlenmiş
 Windows/Linux veya fiziksel Android testi değildir. İki gerçek web build'iyle
 0.5.3→0.8.0 veri koruyan güncelleme ayrıca PASS; native yükseltme sayılmaz.
 13 son görsel alındı, koyu/açık başlık, ağaç, model, reset ve büyük menü
-incelendi. Menü metin alanı41→248px; Ayarlar belge346→320px, font ölçekleri
+incelendi. Menü metin alanı 41→248 px; Ayarlar belge 346→320 px, font ölçekleri
 korundu. 47 değişen dosyada özel envanter kimliği/PDF yok. React denetiminde
 yeni model lazy, sayaç güncellemeleri yerel, terminal kayıtlar dayanıklı,
 effect/listener temizliği, erişilebilir adlar ve motion tercihleri kontrol edildi.
@@ -811,7 +889,7 @@ full-browser-accepted,native-final,update-check-final,source-repeat}.log,
 menu-width-final.log, reset-overflow-final.log ve visuals/.
 
 54 anlatım /17 ayrıntılı rehber /115 özgün soru /8 doğrulanmış ÖSYM referansı.
-İlk43/479 başlık anlatıma hazır; bütün müfredat/20 yıllık arşiv hazır değildir.
+İlk 43/479 başlık anlatıma hazır; bütün müfredat/20 yıllık arşiv hazır değildir.
 Vercel, platform CI ve paket yayın sonucu bu başlığın üstüne ayrıca eklenecek.
 
 ---
@@ -821,13 +899,13 @@ Vercel, platform CI ve paket yayın sonucu bu başlığın üstüne ayrıca ekle
 Başlangıç main ve çalışma dalı `7cfb5b7c0287f0a0d4730c5ce3b4c3792797a206`.
 `git fetch --all` ve `ls-remote --heads` uç karşılaştırması tamamlandı.
 Kullanıcının Unslop, Fragaria Unslop ve güncel aynı kimlikteki Yazılım Denetle
-becerileri uygulandı; canlı AIONIA v1.7 okundu. Atlas/karakter değişmedi.
+becerileri uygulandı; canlı AIONIA v 1.7 okundu. Atlas/karakter değişmedi.
 Türkçe ve Windows/Linux/Android/web kararları korunur. Yeni kaynak ve test
 sonuçları aşağıdadır; uzaktaki 0.8.0 dağıtım/paket sonucu henüz bu kayıtta
 başarılı sayılmaz. Son teslim kanıtı bu başlığın üstüne eklenecek.
 
-- Ortak kalıcı SVG kum saati: varsayılan 5dk, tıklamayla ters dönüp başlatma,
-  durdur/devam et, 1/5/10/20dk ve 1–120dk özel sürgü/sayı girişi. Çalışırken
+- Ortak kalıcı SVG kum saati: varsayılan 5 dk, tıklamayla ters dönüp başlatma,
+  durdur/devam et, 1/5/10/20 dk ve 1–120 dk özel sürgü/sayı girişi. Çalışırken
   mutlak son zaman; durunca kalan süre. Her karede IDB yazılmaz. Girdi
   kilidi, başarısız yazmada eski süre ve görünür yeniden deneme; hareket azaltma.
 - Ayarlar/Veri'de onaylı ilerleme sıfırlama. Bütün konu/soru/tekrar/taslak ve
@@ -845,44 +923,44 @@ başarılı sayılmaz. Son teslim kanıtı bu başlığın üstüne eklenecek.
 
 Eski istemci: gerçek iki web build'iyle 0.5.3 → 0.8.0 güncelleme PASS.
 Yarım paragraf yanıtı/not korunur; sonrasında offline yeniden açılır. Ağaç
-kökleri yukarıdadır. Eski fallback padding x/y 1px → güncel 33px. Bu önceki
+kökleri yukarıdadır. Eski fallback padding x/y 1 px → güncel 33 px. Bu önceki
 YKS-016 düzeltmesinin dağıtım regresyonudur; güncel 0.7'de yeniden üretilmiş
 bir padding kusuru diye sayılmaz. Kullanıcı görüntüsü 0.5.2 ve bekleyen sürüm
 bildirimi gösterir; kullanıcı cihazının durumu ayrıca doğrudan incelenmedi.
 Eski UI: Ayarlar → Güncellemeler ve hakkında → Güncelle ve yeniden aç.
 Bu web testi native paket yükseltme veya fiziksel cihaz testi değildir.
 
-YKS-021 / Orta: yeni kum saati panelinde 320px, UI%200/yazı%150 açık temada
-iki sabit sütun ve rem padding, dakika sözcüğüne 41px bırakıyordu; gerekli
-kelime genişliği 130,08px. Onarım öncesi ölçüm FAIL ve görüntü kanıtı var.
+YKS-021 / Orta: yeni kum saati panelinde 320 px, UI%200/yazı%150 açık temada
+iki sabit sütun ve rem padding, dakika sözcüğüne 41 px bırakıyordu; gerekli
+kelime genişliği 130,08 px. Onarım öncesi ölçüm FAIL ve görüntü kanıtı var.
 Otomatik sığan sütunlar ve ekrana göre sınırlı padding ile onarıldı; font
-ölçekleri düşürülmez. Aynı ölçüm PASS:248px alan >=130,08px sözcük; root32px
-ve text-scale1,5 korunur. Son ölçüm/kabul sonucu teslim kaydında tamamlanır.
+ölçekleri düşürülmez. Aynı ölçüm PASS:248 px alan >=130,08 px sözcük; root 32 px
+ve text-scale 1,5 korunur. Son ölçüm/kabul sonucu teslim kaydında tamamlanır.
 İlk çalışma denemesinde testin yanlış Gizle düğme adı düzeltilip aynı gerçek
-Görüntüle düğmesiyle aç/kapat sınandı; ürün kusuru diye kaydedilmez. Node24
-JSON import hatası, e2e'de içerik modülü ithali kaldırılıp gerçek soru akışıyla
+Görüntüle düğmesiyle aç/kapat sınandı; ürün kusuru diye kaydedilmez. Node 24
+JSON import hatası, e 2 e'de içerik modülü ithali kaldırılıp gerçek soru akışıyla
 çözüldü. Beklenti azaltılmadı. Bütün bankalı sorular ve metin regresyonları korunur.
 
 İlk check/build ve 72 birim PASS. Odaklı 7/7 ve geliştirme Electron offline /
 kapanış-açılış/kum saati/sıfırlama PASS; rendererErrors 0. 13 koyu/açık ve
-320px büyük ölçek görüntüsü alındı; ilk inceleme YKS-021'i ortaya çıkardı.
+320 px büyük ölçek görüntüsü alındı; ilk inceleme YKS-021'i ortaya çıkardı.
 Son UI onarımı sonrası tam test, görsel ve platform sonuçları ayrıca eklenecek.
 Kanıtlar /workspace/work/forge-080 içindedir; özel kaynaklar Git dışında.
 İlk 45 değişen dosyada envanter kimliği ve eklenen PDF kontrolü: sıfır eşleşme.
-İlk tam browser koşusu71/73: YKS-021 ve YKS-022 FAIL; onarımlardan sonra
-aynı testler ve son tam kabul tekrar çalıştırılır. İkinci tam koşu72/73:
+İlk tam browser koşusu 71/73: YKS-021 ve YKS-022 FAIL; onarımlardan sonra
+aynı testler ve son tam kabul tekrar çalıştırılır. İkinci tam koşu 72/73:
 YKS-021/022 ve diğer bütün ürün akışları PASS; yeni geometri testinde
 kaymakta olan sayfanın iki ayrı zamandaki rect'leri karşılaştırılmıştı.
-Ölçümler tek DOM değerlendirmesine alındı; aynı >=18px kabulü korunarak3/3
+Ölçümler tek DOM değerlendirmesine alındı; aynı >=18 px kabulü korunarak 3/3
 tekrar PASS. Son tam koşu bundan sonra yeniden başlatıldı.
 
-YKS-022 / Orta: yeni Ayarlar sıfırlama düğmesi 320px UI%200/yazı%150'de
-kendi kartını aşıp belge genişliğini346px yapıyordu. Eski mevcut plan/ayarlar
+YKS-022 / Orta: yeni Ayarlar sıfırlama düğmesi 320 px UI%200/yazı%150'de
+kendi kartını aşıp belge genişliğini 346 px yapıyordu. Eski mevcut plan/ayarlar
 regresyonu FAIL; DOM geometrisiyle tek taşan öğe doğrulandı. Düğmenin dekoratif
 ikonu kaldırıldı, genişliği kartla ve iç boşluğu ekranla sınırlandı. Ölçekler
-korunur; son aynı regresyon PASS; belge genişliği320px ve taşan öğe0.
+korunur; son aynı regresyon PASS; belge genişliği 320 px ve taşan öğe 0.
 
-Sonraki içerik: sıra 44/detail-233 Osmanlı siyaseti, sıra45/detail-234 askerler
+Sonraki içerik: sıra 44/detail-233 Osmanlı siyaseti, sıra 45/detail-234 askerler
 ve ordu. Kalan dokuz kısa başlangıç anlatımını kapsamlı rehbere dönüştür.
 
 ---
@@ -894,10 +972,10 @@ Uygulama/paket kaynağı: `d88f332d0ec14d40a5241108e1716690973fb95b`.
 67 birim / 69 tarayıcı ve Windows, Linux, Android işlerinin tamamında PASS.
 Paketlenmiş Windows/Linux: yeni cebir rehberleri ve offline reload dahil
 normal ders → kayıt → yeniden yükleme → süreç yeniden başlatma akışları PASS;
-her iki platformda rendererErrors 0. APK code 13 / name 0.7.0 / v2 imza PASS.
+her iki platformda rendererErrors 0. APK code 13 / name 0.7.0 / v 2 imza PASS.
 
 [Canlı kabul 43594788583](https://github.com/kaansavukduran/yksmania/actions/runs/43594788583)
-aynı kaynakta 69/69 PASS (4,9dk). Vercel production
+aynı kaynakta 69/69 PASS (4,9 dk). Vercel production
 `dpl_47uB8RaPw1qJfe1LpUqi9pHoCu8x` READY; canlı version.json 0.7.0 doğrulandı.
 [Release 43595550431](https://github.com/kaansavukduran/yksmania/actions/runs/43595550431)
 PASS; [v0.7.0-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.7.0-alpha.1)
@@ -926,7 +1004,7 @@ Sonraki içerik sırası ve yerel başlangıç/onarım kanıtı aşağıdadır.
 Başlangıç main: `730b37297fda2fcde70c838bb96c021119b442be`; remote fetch ve
 uç karşılaştırması yapıldı. Kullanıcının Unslop / Fragaria Unslop / Denetle
 isteği uygulandı; Denetle aynı beceri kimliğinde güncel Yazılım Denetle adıyla
-bulundu. Canlı AIONIA standardı v1.7 yeniden okundu. Varlık, karakter ve atlas
+bulundu. Canlı AIONIA standardı v 1.7 yeniden okundu. Varlık, karakter ve atlas
 değişmedi; Türkçe, Win/Linux/Android/web kapsamı ve mevcut kayıt şeması korunur.
 
 52 anlatım / 15 ayrıntılı rehber / 115 özgün banka sorusu / 8 ÖSYM referansı.
@@ -940,26 +1018,26 @@ iddiası yok; bu turda yeni resmî soru eklenmedi. Özel PDF/katalog/kimlik yok.
 
 Doğrulanan kusurlar: YKS-018 (Orta) yuvarlanmış kesirde yanlış kesin eşitlik;
 YKS-019 (Düşük) içindekiler geçişinde klavye odağının geride kalması;
-YKS-020 (Orta) 320px %200 UI/%150 yazıda rem boşlukların okuma alanını daraltması.
+YKS-020 (Orta) 320 px %200 UI/%150 yazıda rem boşlukların okuma alanını daraltması.
 Üçü de onarım öncesi FAIL ile kanıtlandı. İlk ikisi paylaşılan gösterim/gezinmede;
 üçüncüsü küçük ekranın ana içerik, ders/soru ve model yan boşluklarında düzeltildi.
-Gerçek 320px viewport'ta okunabilir alan 144,8→250px; root font 32px ve text-scale
+Gerçek 320 px viewport'ta okunabilir alan 144,8→250 px; root font 32 px ve text-scale
 1,5 korunur. Yeni modelin tanımsız renk token'ı mevcut accent ile düzeltildi.
 
 Yerel PASS: check/build (94 çakışmasız modül), 67 birim, son tam 69/69 Chromium
 kabulü. Önceki YKS-006/007/008/009/010/013/014/015/016/017 ilgili denetimleri
 korunur. İlk 69/69 koşusundan sonra görsel genişlik bulgusu geldi; bu nedenle
 son CSS düzeltmesinden sonra tam koşu tekrarlandı. Rehber gezinmesi testinin
-ilk 4/5 koşusundaki anlık DOM okuması, seçilen gerçek h1 beklenerek düzeltildi;
+ilk 4/5 koşusundaki anlık DOM okuması, seçilen gerçek h 1 beklenerek düzeltildi;
 beklenti azaltılmadan üç tekrar 3/3 ve son tam koşu PASS.
 
 Linux geliştirme Electron: yeni cebir, çevrimdışı yeniden yükleme, süreç yeniden
 başlatma, paragraf taslağı ve günlük skor kontrolleri PASS; rendererErrors 0.
 Bu yerel çalışma paketlenmiş Windows/Linux veya fiziksel Android testi değildir.
-22 model/çözüm görüntüsü koyu/açık 1440px, 320px ve 768px büyük ölçekte alındı;
-temsilci görüntüler incelendi. Gerçek 320px viewport ayrıca kontrol edildi.
+22 model/çözüm görüntüsü koyu/açık 1440 px, 320 px ve 768 px büyük ölçekte alındı;
+temsilci görüntüler incelendi. Gerçek 320 px viewport ayrıca kontrol edildi.
 Uzun element screenshot'larında görülen sabit skip-link artifaktı normal viewport
-ile karşılaştırıldı: odaksız bağlantı ekranın dışında (-320…-199px); canlı bir
+ile karşılaştırıldı: odaksız bağlantı ekranın dışında (-320…-199 px); canlı bir
 örtme hatası değildir. Testler normal giriş, gerçek emüle tap, yatay geçiş,
 PDF/not/tekrar korunması ve ciddi/kritik axe kontrollerini içerir.
 
@@ -1000,7 +1078,7 @@ yayımlandı: Windows Setup/Portable, Linux AppImage/DEB, Android debug APK ve
 üç kanıt dosyası; toplam 8 asset. Paketler başarılı CI'den alındı, yeniden
 derlenmedi. `verified-run.json` kaynak SHA'sı ve başarılı main koşusu doğrulandı;
 iki kanıt dosyasının indirilen SHA-256 değerleri yayın listesiyle eşleşti.
-Android code 12 / versionName 0.6.0 / v2 imza doğrulaması başarılı.
+Android code 12 / versionName 0.6.0 / v 2 imza doğrulaması başarılı.
 Beş büyük binary ayrıca yerelde yeniden indirilip hash'lenmiş değildir.
 
 Gerçek kapsam: 50 anlatım, bunlardan 6 ayrıntılı rehber; 115 özgün soru,
@@ -1011,7 +1089,7 @@ Fiziksel Android, temiz Windows kurulum/portable taşıma, iki sürüm arasında
 güncelleme ve diğer tarayıcılar ayrıca doğrulanmalıdır.
 
 Sıradaki içerik işi: kalan kısa başlangıç anlatımlarını kaynak sayfalarını
-okuyarak ayrıntılandırmak; sonra kaynak sırasındaki 40/detail203 ve 41/detail204.
+okuyarak ayrıntılandırmak; sonra kaynak sırasındaki 40/detail 203 ve 41/detail 204.
 Kopya kağıdı ve geçmiş soru kapsamını genişletirken kısmi kaynakları tam arşiv
 diye sunma. Önceki başarısız koşuların nedenleri aşağıda tarihsel tutulur.
 
@@ -1019,19 +1097,19 @@ diye sunma. Önceki başarısız koşuların nedenleri aşağıda tarihsel tutul
 
 # 0.6.0 — Windows modül adı çakışması düzeltmesi
 
-CI43589340483:64unit/64browser PASS; Linux paketli kabul ve Android imza
-kontrolü PASS. Windows build TS1149/TS1261 ile durdu: NarrativeModels.tsx
+CI 43589340483:64 unit/64 browser PASS; Linux paketli kabul ve Android imza
+kontrolü PASS. Windows build TS 1149/TS 1261 ile durdu: NarrativeModels.tsx
 ve narrativeModels.ts uzantısız import çözümlemesinde Windows üzerinde
 çakışıyordu. Bu gerçek platform kusurudur; test hatası diye geçilmedi.
-Saf hesap modülü narrativeCalculations.ts adını aldı;4import güncellendi.
+Saf hesap modülü narrativeCalculations.ts adını aldı;4 import güncellendi.
 check/build artık case-insensitive uzantısız modül yolu denetimiyle başlar.
-Eski çakışmayı içeren geçici2dosyalı örnek guard tarafından reddedildi.
-Yerel85modül yolu, check/build,64unit,9anlatım browser ve Linux geliştirme
-Electron offline/reload/restart PASS; rendererErrors0.
+Eski çakışmayı içeren geçici 2 dosyalı örnek guard tarafından reddedildi.
+Yerel 85 modül yolu, check/build,64 unit,9 anlatım browser ve Linux geliştirme
+Electron offline/reload/restart PASS; rendererErrors 0.
 
-Public43588836416:64/64 PASS (7,1dk), checkout95978b0. Daha sonraki e21b838
+Public 43588836416:64/64 PASS (7,1 dk), checkout 95978 b 0. Daha sonraki e 21 b 838
 sadece test onay beklemeleri/belgedir. Modül adı düzeltmesinin derlenmiş
-JS/CSS/worker/version çıktıları yayındaki0.6.0ile byte düzeyinde karşılaştırıldı;
+JS/CSS/worker/version çıktıları yayındaki 0.6.0 ile byte düzeyinde karşılaştırıldı;
 sonuç /workspace/work/lesson-depth/runtime-byte-comparison.json içindedir.
 Bu kaynak düzeltmesi öğrenme metinlerini, veri kimliklerini veya arayüz
 davranışını değiştirmez. Yeni tam paketCI bekleniyor; Windows paketi bu
@@ -1042,33 +1120,33 @@ kontrol geçmeden yayımlanmayacak.
 # 0.6.0 yayın doğrulaması — kalıcı kayıt beklemeleri
 
 Uygulama kaynağı95978b0dc47294fc914fd04c5b70c13fcba96d14 main'e gönderildi.
-Vercel dpl_5gTmD1PRmk1bcpgvPEkewiZBPD5R production READY, version.json0.6.0.
-CI43588713692:64unit PASS, browser62/64; native işler güvenli biçimde SKIPPED.
+Vercel dpl_5 gTmD 1 PRmk 1 bcpgvPEkewiZBPD 5 R production READY, version.json 0.6.0.
+CI 43588713692:64 unit PASS, browser 62/64; native işler güvenli biçimde SKIPPED.
 İki test UI olayından hemen sonra IndexedDB onayını beklemeden reload yaptı:
 son sözcük adımı ve başarısız tekrar yazısından sonraki başarılı retry. Store
 kodunda sıradan düzenleme “kaydediliyor” durumundaydı; terminal tekrar eylemi
 DB onayından önce başarı göstermiyordu. Testler saved durumu / gerçek undo
 onayını reload'dan ÖNCE bekleyecek şekilde düzeltildi. Keyfi timeout/retry veya
 atlanan assertion eklenmedi. İki senaryo üçer kez,6/6 PASS. Bu düzeltme yalnız
-testler ve bu devir notudur; uygulama kaynakları95978b0ile aynıdır.
+testler ve bu devir notudur; uygulama kaynakları 95978 b 0 ile aynıdır.
 
-Yeni tamCI ve public kabul başlatılacak; eski43588836416 public koşusu ilk
+Yeni tamCI ve public kabul başlatılacak; eski 43588836416 public koşusu ilk
 beklemesiz test revizyonudur. Son başarılı kaynaktan paket yayımlanmadan alpha
-paketlerinin hazır olduğu söylenmez. Kaynak arşivi2006–2026halen kısmi;
-50anlatım,6ayrıntılı rehber,115özgün soru ve8ÖSYMreferansı gerçek kapsamdır.
+paketlerinin hazır olduğu söylenmez. Kaynak arşivi 2006–2026 halen kısmi;
+50 anlatım,6 ayrıntılı rehber,115 özgün soru ve 8 ÖSYMreferansı gerçek kapsamdır.
 
 Sıradaki içerik işi: kalan kısa başlangıç anlatımlarını kaynak okuyarak aynı
-ayrıntıya çıkar; kaynak sırası40/detail203 ve41/detail204 sonraki yeni başlıklardır.
-20yıllık bütün ÖSYM taraması, yeni soru setleri ve eksik kağıt üretimi tamamlanmadı.
-Özel126PDF cihazda içe aktarılır; public pakette özel Drive arşivi yoktur.
+ayrıntıya çıkar; kaynak sırası 40/detail 203 ve 41/detail 204 sonraki yeni başlıklardır.
+20 yıllık bütün ÖSYM taraması, yeni soru setleri ve eksik kağıt üretimi tamamlanmadı.
+Özel 126 PDF cihazda içe aktarılır; public pakette özel Drive arşivi yoktur.
 
 ---
 
 # 0.6.0 — kapsamlı anlatım ve konu içi kaynak akışı (çalışıyor)
 
 Yetkili repo kaansavukduran/yksmania; yerel /workspace/yksmania,
-forge/in-depth-learning. Önceki 50 anlatımlı yerel dal, doğrulanmış0.5.3
-main ile birleştirildi (a6cf5b7). Public son sürüm0.5.3, yerel yeni çalışma
+forge/in-depth-learning. Önceki 50 anlatımlı yerel dal, doğrulanmış 0.5.3
+main ile birleştirildi (a 6 cf 5 b 7). Public son sürüm 0.5.3, yerel yeni çalışma
 henüz yayımlanmadı. Önceki kayıtlar aşağıda tarihsel olarak korunur.
 
 Yeni kullanıcı kararı: kopya kağıtları soldan çıkar, konu başlığında düğmeyle
@@ -1077,66 +1155,66 @@ etkileşim ve çözümlü örnek içermeli. Kart iç boşluğu eksikliği doğru
 topic-study üzerinde düzeltildi. Geçmiş ÖSYM kaynakları çözüm sonuna bağlandı.
 
 6 ayrıntılı rehber: simya/disiplinler/sembolik dil/güvenlik/atom modelleri ve
-rasyonel sayılar. 50 toplam anlatım,115 özgün banka sorusu; bütün479 konu
-anlatımı tamamlanmış değildir. Önceki27 kaynaklı anlatım ve konu tekrarları
-korunur. İncelenen126 özel kopya kağıdı dosyasının126'sı derse/türe
+rasyonel sayılar. 50 toplam anlatım,115 özgün banka sorusu; bütün 479 konu
+anlatımı tamamlanmış değildir. Önceki 27 kaynaklı anlatım ve konu tekrarları
+korunur. İncelenen 126 özel kopya kağıdı dosyasının 126'sı derse/türe
 sınıflanır,124'ü ayrıntılı başlıkla eşleşir;2 genel geometri dosyası bütün
 ders kağıtları seçeneğinden erişilir. Özel PDF/kimlik/katalog Git'e girmez.
 
-Canlı AIONIA belgesi bu aşamada tekrar okundu: v1.7 (14.11.2026); karakter
+Canlı AIONIA belgesi bu aşamada tekrar okundu: v 1.7 (14.11.2026); karakter
 varlıkları değiştirilmedi. Yalnız Türkçe ve Win/Linux/Android/web kapsamı.
-MEBİ TYT Matematik PDF28–30; Kimya PDF11–29 incelendi. Rasyonel/sembolik/
-simya Aurelia kağıtları da okundu. Kamuya açık5 ÖSYM kitapçığı indirildi;
-8 referans soru ve anahtar sayfalarıyla kontrol edildi:2018/2021TYT,2026
-ALES2,DGS,KPSS. 2006–2026 bütün oturumlar taranmış değildir, arşiv kısmi.
+MEBİ TYT Matematik PDF 28–30; Kimya PDF 11–29 incelendi. Rasyonel/sembolik/
+simya Aurelia kağıtları da okundu. Kamuya açık 5 ÖSYM kitapçığı indirildi;
+8 referans soru ve anahtar sayfalarıyla kontrol edildi:2018/2021 TYT,2026
+ALES 2,DGS,KPSS. 2006–2026 bütün oturumlar taranmış değildir, arşiv kısmi.
 
-YKS-016 yeni3tarayıcı testinin ilk koşusunda iki sorun bulundu: büyük yazıda
+YKS-016 yeni 3 tarayıcı testinin ilk koşusunda iki sorun bulundu: büyük yazıda
 header düğmesinin min-content taşması ve sınav seçiminin etiketle bulunmaması.
 İkisi düzeltildi;3/3 odaklı test PASS. Sonraki rehber eklemeleri ardından
-Yerel check/build,64unit ve tam64/64Chromium kabulü PASS (4,5dk).
-Son bağlantı etiketi düzeltmesi ardından9/9anlatım regresyonu PASS. Linux
+Yerel check/build,64 unit ve tam 64/64 Chromium kabulü PASS (4,5 dk).
+Son bağlantı etiketi düzeltmesi ardından 9/9 anlatım regresyonu PASS. Linux
 geliştirme Electron'u offline/reload/process restart, derin rehber, kaynak
-bağlantıları ve yeni bölme modelinde PASS; rendererErrors0. Bankadaki115
-sorunun bütün alanları0.5.3ile aynen korunduğu ayrıca karşılaştırıldı.
-Gerçek özel Aurelia PDF: inline/readingPage/not/offline PASS. Gerçek2021TYT
-resmî PDF: hash ile import, offline soru26/anahtar45sayfası PASS. Bunlar
+bağlantıları ve yeni bölme modelinde PASS; rendererErrors 0. Bankadaki 115
+sorunun bütün alanları 0.5.3 ile aynen korunduğu ayrıca karşılaştırıldı.
+Gerçek özel Aurelia PDF: inline/readingPage/not/offline PASS. Gerçek 2021 TYT
+resmî PDF: hash ile import, offline soru 26/anahtar 45 sayfası PASS. Bunlar
 CI'ye veyaGit'e konulan özel dosyalar değildir.
-12temsilci model şablonu, koyu/açık masaüstü,390px ve320pxbüyük yazı
+12 temsilci model şablonu, koyu/açık masaüstü,390 px ve 320 pxbüyük yazı
 görsel/etkileşimsel incelendi. Şema sembollerinde ve etiketlerde gözlenen
 kusurlar giderildi. Son filter regex düzeltmesi ALES'i Thales/Kalesi
-sözcüklerinden ayırır; birim kontrolü var. Son check/unit/build ve64unit PASS; ilgili2YKS-008 kaynak regresyonu PASS.
+sözcüklerinden ayırır; birim kontrolü var. Son check/unit/build ve 64 unit PASS; ilgili 2 YKS-008 kaynak regresyonu PASS.
 PaketlenmişCI/public/release BEKLİYOR.
 
 ---
 
 # Korunan ağaç yönü düzeltmesi
 
-TYT/AYT kökleri üstte, ders dalları aşağıya açılır. Yayımlanacak0.5.3
+TYT/AYT kökleri üstte, ders dalları aşağıya açılır. Yayımlanacak 0.5.3
 yamasındaki SVG ve mevcut YKS-010 yön denetimi bu yerel konu dalına aktarıldı.
-Build ve ağaç/küçük ekran2browser PASS. 50 anlatımlı bu dal yayımlanmadı;
+Build ve ağaç/küçük ekran 2 browser PASS. 50 anlatımlı bu dal yayımlanmadı;
 önceki konu/kaynak QA durumu aşağıdaki kayıtlarda korunur.
 
 ---
 
-Public hotfix0.5.2 teslimi tamamlandı: uygulama/paket kaynağı7aedafb;
-GitHub main belge başı45ba975. CI43580314183 tüm4job PASS, public43579996297
-50/50 PASS, release43581051297 PASS;0.5.2-alpha.1 sekiz asset yayımlı.
-Vercel production READY/version.json0.5.2. Ayrıntılı public teslim kaydı
+Public hotfix 0.5.2 teslimi tamamlandı: uygulama/paket kaynağı 7 aedafb;
+GitHub main belge başı 45 ba 975. CI 43580314183 tüm 4 job PASS, public 43579996297
+50/50 PASS, release 43581051297 PASS;0.5.2-alpha.1 sekiz asset yayımlı.
+Vercel production READY/version.json 0.5.2. Ayrıntılı public teslim kaydı
 fix/question-passage dalındaki FORGE.md / docs/QA.md içindedir. Bu dalın
-50 anlatımlı çalışma kopyası yine yayımlanmamıştır; aşağıdaki59/61 yerel sonuçlar
+50 anlatımlı çalışma kopyası yine yayımlanmamıştır; aşağıdaki 59/61 yerel sonuçlar
 onun ayrı kanıtıdır. Yeni görsel/native QA ve kaynak kapsam tablosu ardından
-sıradaki konu40/detail203 ile devam edilebilir.
+sıradaki konu 40/detail 203 ile devam edilebilir.
 
 # Yayımlanmamış konu üretimi — son yerel kontrol
 
-forge/source-ordered-theory; uygulama kaynağı5f54192. Check/build,59 birim ve
+forge/source-ordered-theory; uygulama kaynağı 5 f 54192. Check/build,59 birim ve
 61/61 tam Chromium kabulü PASS (forge-final-unit.log / forge-final-browser.log).
-Yeni50 anlatımlı dal,27 theory-only ek içerir; public main yalnız paragraf
-hotfix'idir,23 anlatım/115 sorudur. Tam61 koşusu yeni27 anlatımın senaryoları,
-hatırlama/offline seçimleri,11-model320px %200 UI/%150 metin/axe, anlamlı
+Yeni 50 anlatımlı dal,27 theory-only ek içerir; public main yalnız paragraf
+hotfix'idir,23 anlatım/115 sorudur. Tam 61 koşusu yeni 27 anlatımın senaryoları,
+hatırlama/offline seçimleri,11-model 320 px %200 UI/%150 metin/axe, anlamlı
 sayısal/sözcük kontrolü,3/7/21 teori tekrarları ve YKS-015 düzeltmesini içerdi.
 
-İki kusur düzeltildi: atom karşılaştırmasının6 sütunu büyük yazıda sayfayı
+İki kusur düzeltildi: atom karşılaştırmasının 6 sütunu büyük yazıda sayfayı
 taşırıyordu; değerler iki okunabilir, dar ekranda üst üste gelen tanecik kartına
 dönüştürüldü. Sözcük modelindeki kitapta düğmesi testte şema adımıyla karışıyordu;
 ses değişimi bölgesindeki gerçek kontrol hedefleniyor. Atom kartları ve diğer
@@ -1144,10 +1222,10 @@ son yeni modellerin normal koyu/açık görsel incelemesi/native kabulü halen
 NOT TESTED; bu dal henüz yayın hazır diye sunulmamalı. Kaynak sayfa kayıtları
 pack.source alanlarında; public SOURCE_REVIEW kapsam tablosuna taşınmalı.
 
-Metinsiz soru hotfix7aedafb bu dala merge edildi; yeni59/61 kontrollerde de
-geçti. Eski notlar/115 anahtar korunur. Sonraki konu40/detail203,41/detail204.
-Aurelia iki ilgili PDF'nin1–4 sayfaları ayrıca okundu, özel next-theory-reading
-notunda kaynak düzeltmesi var: iki tarafı0 ile çarpmak eşitliği sağlar ama
+Metinsiz soru hotfix 7 aedafb bu dala merge edildi; yeni 59/61 kontrollerde de
+geçti. Eski notlar/115 anahtar korunur. Sonraki konu 40/detail 203,41/detail 204.
+Aurelia iki ilgili PDF'nin 1–4 sayfaları ayrıca okundu, özel next-theory-reading
+notunda kaynak düzeltmesi var: iki tarafı 0 ile çarpmak eşitliği sağlar ama
 çözüm eşdeğerliğini korumaz. Yeni soru bankası ekleme; önce konuları sürdür.
 
 ---
@@ -1157,7 +1235,7 @@ notunda kaynak düzeltmesi var: iki tarafı0 ile çarpmak eşitliği sağlar ama
 Öncelikli kullanıcı hatası YKS-015: metinsiz ana düşünce sorusu. Önceki konu
 üretiminin 50 anlatımlı çalışma kopyası /workspace/yksmania içinde korunuyor;
 bu hotfix ayrı /workspace/yksmania-question-fix, fix/question-passage dalında
-9cf8a65 üzerine hazırlanıyor. Yeni konuları yayın hazırmış gibi bu yamaya katma.
+9 cf 8 a 65 üzerine hazırlanıyor. Yeni konuları yayın hazırmış gibi bu yamaya katma.
 
 0.5.1 normal Sorular girişiyle eksik metin FAIL gözlendi. Tam özgün paragraf
 beş soruya passage olarak eklendi; soru, anlatım ve keşif aynı kaynağı kullanır.
@@ -1165,31 +1243,31 @@ Diğer 110 soru da eksik bağlam açısından okundu; A–B koordinatları ve bi
 model/deney koşulu açıklandı. IDs/anahtar/not/oturum/tekrar politikası korunur.
 115 soru, 23 anlatım; bütün arşiv veya müfredat hazır iddiası yok.
 
-İçerik guard’ı ve kalıcı YKS-015 kabulü eklendi. Yerel check/build ve45 birim
-PASS; tam Chromium tarayıcı koşusu50/50 PASS (3,1dk). Normal soru girişi,
+İçerik guard’ı ve kalıcı YKS-015 kabulü eklendi. Yerel check/build ve 45 birim
+PASS; tam Chromium tarayıcı koşusu 50/50 PASS (3,1 dk). Normal soru girişi,
 beş soruda tam metin, ipucu, hatalı/doğru cevap, her adımda offline reload,
 not,5/5 sonuç ve başka derse geçince metnin kaldırılması test edildi.
-320px, %200 arayüz/%150 yazı, açık tema, dokunma, yatay/dikey ve ciddi-kritik
-axe PASS. 1440/390px koyu/açık dört soru paneli görsel incelendi; rootWidth
-viewport ile eşit, renderer hatası0. İç scroll yok; notesbelow geometrisi PASS.
-Linux geliştirme Electron'u offline/paragraf taslağı/process restart/tam5/5
-kabulü PASS, renderer0. Bu yerel paketlenmiş/kurulum veya fiziksel cihaz testi değildir.
+320 px, %200 arayüz/%150 yazı, açık tema, dokunma, yatay/dikey ve ciddi-kritik
+axe PASS. 1440/390 px koyu/açık dört soru paneli görsel incelendi; rootWidth
+viewport ile eşit, renderer hatası 0. İç scroll yok; notesbelow geometrisi PASS.
+Linux geliştirme Electron'u offline/paragraf taslağı/process restart/tam 5/5
+kabulü PASS, renderer 0. Bu yerel paketlenmiş/kurulum veya fiziksel cihaz testi değildir.
 115 ID/anahtar/seçenek/açıklama eski içerik dökümüyle birebir karşılaştırılıp
-korundu; p1–p5 passage taşıyor. WIP konu üretimi07e46da dal commit'inde saklı.
+korundu; p 1–p 5 passage taşıyor. WIP konu üretimi 07 e 46 da dal commit'inde saklı.
 
-AIONIA v1.7 canlı standardı yeniden okundu, aynı revizyon. Art değişmedi.
+AIONIA v 1.7 canlı standardı yeniden okundu, aynı revizyon. Art değişmedi.
 
-Sürüm0.5.2, Android code10. Kaynak596882d GitHub main'e gönderildi;
-Vercel production dpl_2T8VBids1QSF3K5QLSZ27BuCLZ9K READY, public version.json
+Sürüm 0.5.2, Android code 10. Kaynak 596882 d GitHub main'e gönderildi;
+Vercel production dpl_2 T 8 VBids 1 QSF 3 K 5 QLSZ 27 BuCLZ 9 K READY, public version.json
 0.5.2 doğrulandı. Yerel tarayıcıyla HTTPS kabulü proxy sertifika kökü nedeniyle
 ERR_CERT_AUTHORITY_INVALID / BLOCKED; TLS doğrulaması kapatılmadı. GitHub
-Published web acceptance43579996297 aynı kaynağın public site kabulünü yürütüyor.
+Published web acceptance 43579996297 aynı kaynağın public site kabulünü yürütüyor.
 
-İlk CI43579848849:45unit PASS, browser49/50. Mobil test hatalı cevabın
+İlk CI 43579848849:45 unit PASS, browser 49/50. Mobil test hatalı cevabın
 optimistik görünümünden hemen sonra IndexedDB kaydını beklemeden reload yapmış;
 normal kaydediliyor/kaydedildi durumunu izlemiyordu. Test, kayıt başarı durumunu
 bekleyecek şekilde düzeltildi; yanlış cevabın, metnin ve notun reload sonrası
-korunma beklentisi aynı kaldı. Odaklı yerel2/2 tekrar PASS. Uygulama kodu
+korunma beklentisi aynı kaldı. Odaklı yerel 2/2 tekrar PASS. Uygulama kodu
 bu test düzeltmesinde değişmedi. Yeni CI/paket ve canlı sonuçlarını ekle;
 fiziksel cihaz/temiz kurulum doğrulaması varsayma. Tarihsel kayıt aşağıdadır.
 
@@ -1198,33 +1276,33 @@ fiziksel cihaz/temiz kurulum doğrulaması varsayma. Tarihsel kayıt aşağıdad
 # 14 Kasım devam durumu — konu üretimi taslak dalı
 
 forge/source-ordered-theory dalı; henüz yayınlanmadı. 27 yeni theory-only anlatım,
-23 eski anlatımla toplam50; 115 soru korunur. Excel/Todoist sırasındaki ilk39
-başlık anlatıma bağlıdır. 479 başlıktan kesin eşleşen49 anlatım var; geometri
+23 eski anlatımla toplam 50; 115 soru korunur. Excel/Todoist sırasındaki ilk 39
+başlık anlatıma bağlıdır. 479 başlıktan kesin eşleşen 49 anlatım var; geometri
 alan dönüşümü mevcut haritaya uydurma bağlanmaz. Bir sonraki hazırlanmamış
-başlık40/detail-203 Birinci Dereceden Denklemler, ardından detail-204 eşitsizlikler.
+başlık 40/detail-203 Birinci Dereceden Denklemler, ardından detail-204 eşitsizlikler.
 
-Biyoloji detail1–10; Matematik detail199/200/201; Tarih detail226–231;
-Fizik detail114/115/116/118; Kimya detail144/145; Türkçe detail250/251.
+Biyoloji detail 1–10; Matematik detail 199/200/201; Tarih detail 226–231;
+Fizik detail 114/115/116/118; Kimya detail 144/145; Türkçe detail 250/251.
 Her yeni pack kaynak sayfaları,5+ açıklama bölümü,3 senaryo,3 püf noktası,
 2 puansız hatırlama içerir. Sayısal ve sözcük modelleri aktif. Sorusu olmayan
 anlatım hazır soru seti değildir; boş oturum oluşturamaz.
 
-Tekrar altyapısı: ilk çalışma1.gün;3/7/21.gün özgün hedefleri +2/+6/+20;
+Tekrar altyapısı: ilk çalışma 1.gün;3/7/21.gün özgün hedefleri +2/+6/+20;
 teori+soru ortak uygun-gün kapasitesi, tekrarlar Bugün'de yeni işlerin önünde;
 açık durable/geri alınabilir tekrar işareti; XP ve soru yanıtı üretmez.
 
-Ortam kesintisi sonrası check +55unit PASS (forge-resumed-unit.log).
-41 anlatımlı ara yapıda56 browser PASS; son50 anlatımlı yapı ve11-model mobil
+Ortam kesintisi sonrası check +55 unit PASS (forge-resumed-unit.log).
+41 anlatımlı ara yapıda 56 browser PASS; son 50 anlatımlı yapı ve 11-model mobil
 süpürmesi henüz tam browser/native doğrulamasından geçmedi. Yeni içerik hazır
 live sanılmamalı. Source-review-0.6 ve özel çalışma dosyaları Git'e konulmaz.
 
 Kullanıcının metinsiz paragraf hatası acil öncelik aldı. YKS-015 onarımı ayrı
-/workspace/yksmania-question-fix / fix/question-passage dalında0.5.2 olarak
+/workspace/yksmania-question-fix / fix/question-passage dalında 0.5.2 olarak
 hazırlanıyor; bu kaynak üretimini hotfix'e katma. Onarım yayınlanınca buraya
 merge edilip model/content/Study çatışmaları korunarak çözülmeli. Eski passage
 hatasını tekrar taşımamak için yeni question-content testleri burada da koşmalı.
 
-Eski çalışma notları aşağıda tarihsel olarak tutuluyor; üstteki50/27/39 sayıları
+Eski çalışma notları aşağıda tarihsel olarak tutuluyor; üstteki 50/27/39 sayıları
 günceldir. Konular önce; sonra kopya kağıtları; sonra soru bankası üretimi.
 
 ---
@@ -1235,7 +1313,7 @@ Active request: continue substantial source-based development, theory first, the
 cheatsheets, then questions. Every new theory needs meaningful interactive visuals,
 pitfalls, explanatory reasoning and recall. Do not promise addictive manipulation,
 mastery of every MEB publication or completion of 479 authored topics prematurely.
-Turkish-only project decision remains; no k44 activation or platform expansion.
+Turkish-only project decision remains; no k 44 activation or platform expansion.
 
 Working copy adds theory-anchored review completions, shared theory/question review
 capacity, first-study day 1 / repeats +2,+6,+20, (İlk tekrar)/(İkinci tekrar)/(Son tekrar).
@@ -1254,19 +1332,19 @@ Original content and IDs must be retained. Generic interactive flow cases have
 per-topic nodes, explanations, worked reasoning and persisted unscored recall;
 pH/chain/basamak/yüzyıl/özkütle/hareket numerical manipulators are being integrated.
 Read source PDFs, not inventory presence, establish readiness. App code is not yet
-published by this checkpoint; last public version is 0.5.1 / source 776f62c.
+published by this checkpoint; last public version is 0.5.1 / source 776 f 62 c.
 
 Sources remain private under /workspace/work/source-review-0.6 and attachments.
-Read: MEBİ TYT Biyoloji selected PDF11–17,20–21; OGM common traits10–17,
-compounds I10–19, compounds II10–16; Aurelia scientific method1–8, minerals1–3,
-place value1–5, physics intro1–5. History selected source readings and previews
+Read: MEBİ TYT Biyoloji selected PDF 11–17,20–21; OGM common traits 10–17,
+compounds I 10–19, compounds II 10–16; Aurelia scientific method 1–8, minerals 1–3,
+place value 1–5, physics intro 1–5. History selected source readings and previews
 are in the ongoing task; record exact reviewed pages when publishing. Extraction
 of entire books is not full review. Several original source tables have broad
 claims or typos; authored text preserves conditions instead of copying them.
 No private PDF/Drive IDs/raw excerpts belong in Git. Private pack export rejection
 from earlier work remains in force; no alternate export was tried.
 
-Next: fill missing source-order entries14–21 (place value now authored, history
+Next: fill missing source-order entries 14–21 (place value now authored, history
 and physics in progress), continue theory development beyond that checkpoint;
 complete review/visual/source QA and keep a verified coverage record. The user
 asked to keep progressing, not stop after five lessons or at a deployment.
@@ -1299,15 +1377,15 @@ soru planları, XP, orijinal tekrar tarihleri ve 479 başlık sırası değişme
 Mevcut veritabanı/yedek biçimi aynı; eski kayıtlar kendiliğinden gösterilir.
 Hazır içerik değişmedi: 23 anlatım / 115 özgün soru. Yeni PDF/art üretimi yok.
 
-Fragaria Unslop güncel UI/davranış profili uygulandı; canlı AIONIA v1.7 14 Kasım
+Fragaria Unslop güncel UI/davranış profili uygulandı; canlı AIONIA v 1.7 14 Kasım
 2026 yeniden okundu, revizyon aynı. Karakter/splash kapsam dışı ve değiştirilmedi.
-Yerel check/build, 41 birim testi ve dört yeni YKS-013 kabulü PASS. Mobil 320px,
+Yerel check/build, 41 birim testi ve dört yeni YKS-013 kabulü PASS. Mobil 320 px,
 %200 UI / %150 yazı, açık tema, ciddi-kritik axe, offline reload, 0/5, yeniden çözme,
 oturum geri alma, disk yazma hatası/yeniden deneme ve kapalı günde dış kaynak
 kaydı test edildi. Linux Electron günlük konu + soru sonucu ve süreç restart PASS,
 renderer hataları 0. Tam tarayıcı koşusu 48/48 PASS (2,8 dk).
 1440×1000 koyu/açık ve 390×844 koyu/açık günlük kartları görsel incelendi;
-320px büyük yazıda gerçek kontroller/taşma ölçümü PASS, renderer hataları 0.
+320 px büyük yazıda gerçek kontroller/taşma ölçümü PASS, renderer hataları 0.
 Uzak paket ve yayın sonuçları aşağıdadır.
 Sürüm 0.5.1 / Android versionCode 9. Önceki fiziksel cihaz/imza/update kapıları açık.
 
@@ -1328,7 +1406,7 @@ public/prerelease, sekiz dosya (beş native paket + üç kanıt/checksum). Başa
 verified-run.json aynı 776f62c1603d9af7b37dbdf5fdbbee6c49f569d7 kaynağına bağlı.
 İndirilen iki kanıt dosyasının SHA-256 değerleri eşleşti; beş büyük binary ayrıca
 yerelde yeniden indirilip hash’lendi denmez. Android code 9 / name 0.5.1 /
-minimum API 24 ve APK v2 imzası doğrulandı; public APK adresi HTTP 200.
+minimum API 24 ve APK v 2 imzası doğrulandı; public APK adresi HTTP 200.
 
 Fiziksel Android, temiz Windows installer/portable taşıma, üretim imzası ve iki
 sürümlük native güncelleme NOT TESTED. Windows imzasız, APK debug imzalı.
@@ -1353,23 +1431,23 @@ keşif XP/ustalık kazandırmaz. Eski 18 anlatım/90 sorunun tüm içerik alanla
 birebir korunur. Plan 479, ana harita 341 ve geometri açığı değişmez. Yeni soru
 kimlikleri bas/par/seq/pri/fac-1…5; eski tekrar tarihleri/notlar/taslaklar korunur.
 
-Güncel Fragaria Unslop ve React kontrol listesi uygulandı. Canlı AIONIA v1.7 ve
-indeks v3 yeniden okundu (14 Kasım 2026), revizyon aynı. Bu tur karakter/manzara
+Güncel Fragaria Unslop ve React kontrol listesi uygulandı. Canlı AIONIA v 1.7 ve
+indeks v 3 yeniden okundu (14 Kasım 2026), revizyon aynı. Bu tur karakter/manzara
 varlıkları değişmedi; önceki piksel tercih ve 32 poz regresyonları korunur.
 YKS-012 yeni asal SVG’sinin gereksiz sabit yüksekliği gözlenip düzeltildi; eski
 sürümde varmış gibi sunulmaz. Matematik çizimleri açık/koyu ve mobilde incelendi.
 
 Yerel PASS: check/build, 40 birim/depolama/içerik, 44/44 tarayıcı (2,4 dk).
-320px / %200 UI / %150 yazı / azaltılmış hareket, gerçek kontrol kullanımı,
+320 px / %200 UI / %150 yazı / azaltılmış hareket, gerçek kontrol kullanımı,
 offline ilk açılış/reload, ciddi-kritik axe beş modelde PASS. Electron Linux beş
 yeni modeli offline açar; 49 bölen kanıtı süreç yeniden başlayınca korunur;
 renderer hata sayısı 0. Uzak paket/yayın doğrulaması aşağıdadır.
 
-Web 0.5.0 dağıtımı READY: dpl_J5zjwumi6YL1dCXDJXAFaaBnF5nE,
+Web 0.5.0 dağıtımı READY: dpl_J 5 zjwumi 6 YL 1 dCXDJXAFaaBnF 5 nE,
 kaynak bd95c5ddf89eaed78445710dbea91b2f45517e23. Kanonik /version.json
 0.5.0 döndürür. Normal Git entegrasyonu yayımladı; manuel kota tekrarı/host/plan
 değişikliği yok. [Canlı kabul](https://github.com/kaansavukduran/yksmania/actions/runs/43567601148)
-44/44 PASS (3,8 dk), aynı bd95c5d kaynağı. Paket CI 43567554549 dört işte PASS;
+44/44 PASS (3,8 dk), aynı bd 95 c 5 d kaynağı. Paket CI 43567554549 dört işte PASS;
 nihai paket/release kanıtı aşağıdadır.
 
 Sürüm 0.5.0 / Android versionCode 8. Fiziksel Android, temiz Windows kurulum,
@@ -1386,18 +1464,18 @@ Sıradaki içerik önceliği 11. başlık: Canlıların Karakteristik Özellikle
   kopya kağıdı/PDF/konu-plan/soru kaydını offline doğrular. Renderer hataları 0.
   Android debug APK derlemesi ve imza/manifest kontrolü PASS.
 - [Canlı web kabulü](https://github.com/kaansavukduran/yksmania/actions/runs/43567601148)
-  44/44 PASS (3,8 dk). Test ve web uygulama kaynağı aynı bd95c5d;
-  READY üretim dağıtımı dpl_J5zjwumi6YL1dCXDJXAFaaBnF5nE, kanonik
+  44/44 PASS (3,8 dk). Test ve web uygulama kaynağı aynı bd 95 c 5 d;
+  READY üretim dağıtımı dpl_J 5 zjwumi 6 YL 1 dCXDJXAFaaBnF 5 nE, kanonik
   https://yksmania.vercel.app/version.json 0.5.0 döndürür.
 - [Yayın koşusu](https://github.com/kaansavukduran/yksmania/actions/runs/43568202257)
   PASS. [v0.5.0-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.5.0-alpha.1)
-  public/prerelease, sekiz dosya: Windows Setup/Portable x64, Linux DEB/AppImage,
+  public/prerelease, sekiz dosya: Windows Setup/Portable x 64, Linux DEB/AppImage,
   Android debug APK ve üç kanıt/checksum dosyası. Yeniden derleme yok; başarılı
   43567554549 paketleri kullanıldı. Tag ve indirilen verified-run.json aynı
   bd95c5ddf89eaed78445710dbea91b2f45517e23 kaynağını gösterir. İndirilen iki
   kanıt dosyasının SHA-256 değerleri listeyle eşleşti. Beş büyük native dosyanın
   tamamı yerelde tekrar indirilip hash’lendi iddiası yoktur. Android code 8 /
-  name 0.5.0 / minimum API 24 / APK v2 imza doğrulandı; public APK adresi HTTP 200.
+  name 0.5.0 / minimum API 24 / APK v 2 imza doğrulandı; public APK adresi HTTP 200.
 - Fiziksel Android, temiz Windows installer/portable taşıma, kararlı üretim imzası
   ve iki sürümlük native güncelleme NOT TESTED. Windows imzasız, APK debug imzalı.
   Otomatik executable testleri bu açık kapıların yerine geçmez.
@@ -1438,8 +1516,8 @@ eski cartoon tercihini bu uygulama için değiştirir. Yeni 8×4 atlas 32 pozu,
 farklı klik tepkilerini ve fare yönü bakışını içerir. Dünya konumu sabit; kare
 bazlı ayak çıpası metadata ile düzeltilir. Yeni manzara ilerlemeyle renklenir.
 Azaltılmış hareket, görünmez/arka plan duraklaması korunur. Ayrıntı ART_BIBLE.md.
-Güncel Fragaria Unslop/Unslop, React kontrol listesi ve canlı AIONIA v1.7 / indeks
-v3 kullanıldı. Yeni yetki gerektiren dışa aktarım denenmedi.
+Güncel Fragaria Unslop/Unslop, React kontrol listesi ve canlı AIONIA v 1.7 / indeks
+v 3 kullanıldı. Yeni yetki gerektiren dışa aktarım denenmedi.
 
 Yerel/uzak son doğrulama sonuçları aşağıdaki teslim kaydına eklenir. Sürüm 0.4.0,
 Android versionCode 7; fiziksel cihaz, temiz kurulum/portable taşıma, üretim imzası
@@ -1454,7 +1532,7 @@ aynı anda değiştiğinde zaman aşımına uğradığı için o koşu tam PASS 
 Sabit son derleme üzerinde PDF tekrarları ve yeni gece yarısı/arka plandan dönüş
 regresyonu PASS. Sabit uygulama derlemesinde sonraki tam yerel koşu 38/38 PASS. Uzak CI ve paket sonucu aşağıda ayrı kaydedilir.
 Chromium 156.0.8078.79 / Node 24.22.1 / Linux. Koyu 1440×1000 ve açık 390×1000,
-beş kimya modeli, 32 ayrı Aion karesi incelendi. 320px/%200 UI/%150 yazı gerçek
+beş kimya modeli, 32 ayrı Aion karesi incelendi. 320 px/%200 UI/%150 yazı gerçek
 kontrol akışı PASS; taşma/kırpma onarımları QA.md içinde. Örnek görsel akışta
 renderer hataları 0. Electron Linux beş OGM modeli, konu kaydı, eski AYT/cheatsheet,
 offline 5/5 soru, reload ve süreç yeniden başlatma PASS; renderer hataları 0.
@@ -1474,13 +1552,13 @@ Yeni yayın ve native dosyalar doğrulanınca ayrı teslim kaydı eklenir.
   **38/38 PASS**, kanonik https://yksmania.vercel.app üzerinde. Test kaynağı 66539f0,
   Vercel üretim uygulama kaynağı `0101829fcfaa1d9dcac6fd841ec48ef6868cb3a5`;
   READY dağıtım `dpl_AiuejjxxkVQsQmyM3z9aykBwT8F7`. /version.json 0.4.0 döndürür.
-  Son commit yalnız tests/e2e/app.spec.ts ve docs/QA.md değiştirir. src ağaç hash’i
+  Son commit yalnız tests/e 2 e/app.spec.ts ve docs/QA.md değiştirir. src ağaç hash’i
   iki kaynakta da da489899679e77a886b2b812f25a6583ac0b1e92; public hash’i iki
   kaynakta da 107144b7cc07e85dc20006fcfeb3367aaa9f6cc9. src/public/package/
   android/desktop/scripts/vercel diff’i sıfırdır; eski sürüm üzerinde yeni işlev
-  PASS iddiası yapılmaz. 66539f0 için Vercel günlük kota durumu failure: yeniden
+  PASS iddiası yapılmaz. 66539 f 0 için Vercel günlük kota durumu failure: yeniden
   dağıtım, ücret/plan değişimi veya alternatif host denenmedi. Mevcut yayındaki
-  aynı 0.4.0 uygulama kodu güncellenmiş test bekleyişleriyle doğrulandı. 66539f0’ın
+  aynı 0.4.0 uygulama kodu güncellenmiş test bekleyişleriyle doğrulandı. 66539 f 0’ın
   Vercel’e dağıtıldığı iddia edilmez. İlk iki public koşu nihai PASS sayılmaz.
 - [Yayın koşusu](https://github.com/kaansavukduran/yksmania/actions/runs/43524926879)
   PASS: [v0.4.0-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.4.0-alpha.1)
@@ -1489,9 +1567,9 @@ Yeni yayın ve native dosyalar doğrulanınca ayrı teslim kaydı eklenir.
   tam kaynak 66539f0830c544dbc4a6de9964e2924a3a7d304a ile eşleşir. İndirilen iki
   kanıt dosyasının SHA-256 değerleri checksum listesiyle eşleşti; büyük native
   dosyaların tamamı yerel makineye indirilip yeniden hash’lenmiş diye sunulmaz.
-  Android versionCode 7 / versionName 0.4.0 / minimum API 24 ve APK v2 imzası
+  Android versionCode 7 / versionName 0.4.0 / minimum API 24 ve APK v 2 imzası
   doğrulandı. Herkese açık APK indirme bağlantısı HTTP 200. Windows Setup/Portable,
-  Linux amd64 DEB / x86_64 AppImage ve Android debug APK dosyaları hazır.
+  Linux amd 64 DEB / x 86_64 AppImage ve Android debug APK dosyaları hazır.
 - Native fiziksel Android, temiz Windows kurulum/portable extractor/taşıma,
   üretim imzası ve iki paket arası güncelleme henüz doğrulanmadı. Emulator/runner
   testleri bu açık kapıların yerine geçmez. Özel kaynak PDF’leri public pakete
@@ -1516,9 +1594,9 @@ pakete gömülmez; Kütüphane’deki içe aktarma ve yerel PDF okuyucu yeniden 
 Kayıt/veritabanı biçimi, soru kimlikleri, ilerleme, notlar ve tekrar tarihi değişmez.
 
 Güncel Fragaria Unslop ve React bileşen kontrolleri uygulandı. AIONIA canlı kaynağı
-2026-11-13 yeniden okundu: v1.7. YKS-008 gezinme regresyonu eski eb5ab16 kaynağında
-başarısız olarak gözlendi. Yeni akışta 320px, %200 arayüz ve %150 yazıda 477px
-sayfa taşması yakalandı: arama alanının 14rem minimumu ve tek sütunlu grid’in
+2026-11-13 yeniden okundu: v 1.7. YKS-008 gezinme regresyonu eski eb 5 ab 16 kaynağında
+başarısız olarak gözlendi. Yeni akışta 320 px, %200 arayüz ve %150 yazıda 477 px
+sayfa taşması yakalandı: arama alanının 14 rem minimumu ve tek sütunlu grid’in
 min-content boyutu. Ortak arama ve konu kartı sınırları düzeltildi; yazı/ölçek
 küçültülmez, içerik kırpılmaz. Yeni sayfanın gereksiz çift iç boşluğu kaldırıldı.
 Kopya kağıtları konu anlatımına alan kaybettirmez; notların altta kalması korunur.
@@ -1529,12 +1607,12 @@ Yerel PASS: check/build, 26 birim/depolama/içerik ve 28 tarayıcı kabul testi.
 Electron Linux yeni bölümün ilk çevrimdışı açılışı, AYT modelleri, ders kaydı,
 yeniden yükleme ve süreç yeniden başlatma PASS; renderer hatası 0. Chromium
 156/Linux, koyu 1440×1000 ve açık 390×1000 ekran görüntüleri incelendi; taşma ve
-renderer hatası yok. 320px, %200 arayüz / %150 yazı, ilk çevrimdışı giriş, gerçek
+renderer hatası yok. 320 px, %200 arayüz / %150 yazı, ilk çevrimdışı giriş, gerçek
 manuel PDF açma ve ciddi/kritik axe kontrolleri PASS. Yeni yayın ve native paket
-CI sonuçları teslim kaydına eklenir. İlk 27584be dağıtımı Vercel günlük sınırına
+CI sonuçları teslim kaydına eklenir. İlk 27584 be dağıtımı Vercel günlük sınırına
 takıldı ve eski 0.3.0 üzerinde yeni test çalıştırılmadı. Gerçek çoklu arama hatasını
-gideren son 3f3cb54 kodunun otomatik dağıtımı ise READY:
-dpl_JBh2d7qbX56PY8g65ZFKju5LLkJM. Kanonik /version.json artık 0.3.1 döndürüyor;
+gideren son 3 f 3 cb 54 kodunun otomatik dağıtımı ise READY:
+dpl_JBh 2 d 7 qbX 56 PY 8 g 65 ZFKju 5 LLkJM. Kanonik /version.json artık 0.3.1 döndürüyor;
 yeni canlı kabul koşusu bu kaynağa karşı başlatıldı. Plan/ücret değişikliği,
 alternatif host veya manuel kota aşma/yeniden deneme yolu kullanılmadı. Eski fiziksel cihaz,
 temiz kurulum/portable taşıma, üretim imzası ve iki paket arası güncelleme kapıları
@@ -1564,9 +1642,9 @@ açık ders bekler. İlk paket koşusu 43507301865 başarılı olsa da bu son d�
   PASS: [v0.3.1-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.3.1-alpha.1)
   herkese açık; Windows Setup/Portable, Linux AppImage/DEB ve Android debug APK
   ile üç kanıt/checksum dosyası hazır. Etiket ve indirilen verified-run.json
-  nihai kaynak 3f3cb54 ile eşleşir. İndirilen iki kanıt dosyasının SHA256 değerleri
-  SHA256SUMS ile eşleşir; listede yedi dosya var. Android versionCode 6 /
-  versionName 0.3.1 / minimum API 24 ve APK v2 imzası doğrulandı. APK bağlantısı
+  nihai kaynak 3 f 3 cb 54 ile eşleşir. İndirilen iki kanıt dosyasının SHA 256 değerleri
+  SHA 256 SUMS ile eşleşir; listede yedi dosya var. Android versionCode 6 /
+  versionName 0.3.1 / minimum API 24 ve APK v 2 imzası doğrulandı. APK bağlantısı
   HTTP 200. Önceki sürümler korunur; sonraki dokümantasyon commitleri uygulama
   kodunu değiştirmez. Fiziksel cihaz/temiz kurulum/güncelleme açık kapıları korunur.
 
@@ -1587,9 +1665,9 @@ Bugün ekranı içerik sayısını gerçek listeden hesaplar. Etkileşimler öğ
 altındadır. Yeni keşif seçimleri mevcut kayıt yapısında saklanır.
 
 Güncel Fragaria Unslop uygulandı. Yetkili bağlayıcıdan AIONIA standardı yeniden
-okundu: v1.7, 2026-11-13; sürüm uyuşmazlığı yok. Mevcut cartoon atlas değiştirilmedi.
-Dört modelin koyu 1440px/açık 390px ekran görüntüleri incelendi: taşma, notların
-anlatımı daraltması veya renderer hatası gözlenmedi. Yeni modellerde 320px,
+okundu: v 1.7, 2026-11-13; sürüm uyuşmazlığı yok. Mevcut cartoon atlas değiştirilmedi.
+Dört modelin koyu 1440 px/açık 390 px ekran görüntüleri incelendi: taşma, notların
+anlatımı daraltması veya renderer hatası gözlenmedi. Yeni modellerde 320 px,
 %200 arayüz / %150 yazı, azaltılmış hareket ve ciddi/kritik axe kontrolleri geçti.
 
 Yerel PASS: check/build, 25 birim/depolama/içerik testi, 26 tarayıcı kabul testi.
@@ -1599,7 +1677,7 @@ yükleme ve süreç yeniden başlatma PASS; keşif adımı korundu, renderer hat
 Sürüm 0.3.0; Android versionCode 5. Fiziksel cihazlar, temiz kurulum/portable
 çıkarma-taşıma, kararlı imza ve iki paket arası güncelleme henüz doğrulanmadı.
 
-Vercel otomatik üretim dağıtımı dpl_5L7aa779UHEyqZaqBa8gLVdSsDHj bu kaynak için
+Vercel otomatik üretim dağıtımı dpl_5 L 7 aa 779 UHEyqZaqBa 8 gLVdSsDHj bu kaynak için
 READY; https://yksmania.vercel.app/version.json 0.3.0 sunuyor. Önceki günlük sınır
 engeli yeni dağıtımda gözlenmedi. Canlı kabul ve paket CI/yayın kanıtları aşağıdaki
 teslim kaydındadır; önceki sürüm testleri yeni kaynak için doğrulama sayılmaz. Özel Drive dışa aktarımındaki önceki
@@ -1622,9 +1700,9 @@ onay engeli bu geliştirmede yeniden denenmedi; başka hedefe aktarım yapılmad
   PASS: [v0.3.0-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.3.0-alpha.1)
   herkese açık ön sürüm, beş native dosya ve üç doğrulama/checksum dosyasıyla hazır.
   Etiket ve indirilen verified-run.json yukarıdaki kaynak commit ile eşleşir.
-  İndirilen iki kanıt dosyasının SHA256 değerleri SHA256SUMS ile eşleşir; dosya
+  İndirilen iki kanıt dosyasının SHA 256 değerleri SHA 256 SUMS ile eşleşir; dosya
   yedi checksum girdisi içerir. Android manifesti versionCode 5 / versionName 0.3.0,
-  minimum API 24; APK v2 imzası doğrulandı. Herkese açık APK indirme adresi HTTP 200.
+  minimum API 24; APK v 2 imzası doğrulandı. Herkese açık APK indirme adresi HTTP 200.
   Önceki sürümler korunur. Sonraki dokümantasyon commitleri uygulama kodunu değiştirmez.
 
 # Delivered checkpoint: YKSMania 0.2.2 alpha
@@ -1646,7 +1724,7 @@ still rejected. Source catalogue and document stores are not rewritten.
 Turkish text/answer preservation was checked against the prior source, including
 option order and answer indexes. The bank remains 9 interactive lessons / 45 original
 questions. The settings and visual regressions now exercise Turkish at 200% UI,
-150% text and 390px. A newly observed long update-button overflow was fixed with
+150% text and 390 px. A newly observed long update-button overflow was fixed with
 wrapping inside the existing panel. See docs/QA.md YKS-007 for migration and device
 language tests. Application/package version 0.2.2, Android versionCode 4.
 
@@ -1660,7 +1738,7 @@ update migration remain open gates; this is still an alpha/debug APK release.
 - Application source: `ad2397d198c9c8b07bfec31488eced465d2bab3e`.
 - Local acceptance: 21 unit/storage/content and 21 browser tests PASS, including
   English device/legacy preference compatibility with a Turkish-only UI. Desktop
-  settings and 390px / 200% UI / 150% text screenshots inspected; no renderer errors.
+  settings and 390 px / 200% UI / 150% text screenshots inspected; no renderer errors.
 - [Package CI](https://github.com/kaansavukduran/yksmania/actions/runs/43491193602)
   passed all four jobs: 21 unit/storage/content tests, 21 browser acceptance tests,
   Windows/Linux packaged offline lesson/reload/process-restart checks with zero
@@ -1676,7 +1754,7 @@ update migration remain open gates; this is still an alpha/debug APK release.
   PASS: [v0.2.2-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.2.2-alpha.1)
   is published with all five native binaries and source/checksum/Android verification
   evidence. The tag and downloaded verified-run.json match the application source
-  above; verification-file hashes match SHA256SUMS. Android confirms versionCode 4 /
+  above; verification-file hashes match SHA 256 SUMS. Android confirms versionCode 4 /
   versionName 0.2.2. Release notes explicitly distinguish these new native packages
   from the rate-limited 0.2.1 web origin. Earlier releases remain intact. Follow-up
   documentation changes do not modify the tested application code.
@@ -1689,12 +1767,12 @@ YKS-006 was reproduced before the CSS repair and then passed. Theory now uses on
 full-width track at every breakpoint. Note contents, question drafts, settings,
 source files and original review dates retain their existing storage/behavior.
 
-Live AIONIA standard re-read through the authorized connector on 2026-11-13: v1.7;
+Live AIONIA standard re-read through the authorized connector on 2026-11-13: v 1.7;
 no source-version mismatch. Fragaria Unslop UI/behavior checks applied to the named
 screens. No character designs, animation frames or private archive exports changed.
 
 Local check/build: PASS; unit/storage/content 20/20; browser 20/20. The new regression
-checks geometry at 320–1440px plus real note edits/reload and continued question
+checks geometry at 320–1440 px plus real note edits/reload and continued question
 state. Dark/light desktop/mobile screenshots inspected in Chromium 156 on Linux;
 full-width article, bottom notes, no horizontal overflow, zero renderer errors.
 The full 200% UI / 150% text English regression also passed. See docs/QA.md YKS-006.
@@ -1722,7 +1800,7 @@ specific permission already requested; this UI task does not retry that upload.
   PASS: [v0.2.1-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.2.1-alpha.1)
   is published with five binaries and checksum/source/Android verification files.
   The tag and downloaded verified-run.json identify the application source above;
-  downloaded evidence hashes match SHA256SUMS. Android metadata confirms versionCode
+  downloaded evidence hashes match SHA 256 SUMS. Android metadata confirms versionCode
   3 / versionName 0.2.1. Earlier releases remain available. Only documentation changes
   follow this application source; no private catalogue or PDF export was retried.
 
@@ -1743,14 +1821,14 @@ sessions, original review dates and drafts remain valid. Legacy /study is suppor
 
 A new left-facing cartoon atlas replaces pixel rendering at runtime. The original
 motion atlas remains in art/archive. Bibliographic sources, frame timings and
-anchor evidence are in ART_BIBLE and CONTENT_COVERAGE. Live AIONIA v1.7 was read
+anchor evidence are in ART_BIBLE and CONTENT_COVERAGE. Live AIONIA v 1.7 was read
 again on 2026-11-13 through the authorized connector; updated Unslop UI, behavior
 and sprite checks were applied. This is a learning app, not a game requiring a
 Fragaria game splash or a new gamepad scheme.
 
 Private catalogue and batch PDF/folder imports support source matching, 2 MB
 streaming hashes, duplicate merging, cancellation and per-file failures. PDFs can
-be opened from the relevant subject. IndexedDB schema v2 preserves existing stores;
+be opened from the relevant subject. IndexedDB schema v 2 preserves existing stores;
 AppState stays backward compatible with defaulted explorations/readingPages fields.
 PDF page navigation and positions are saved. Exploration never creates learning XP.
 
@@ -1789,13 +1867,13 @@ verification. Preserve the accepted +2/+6/+20 ordinal review policy.
 - [Final package build](https://github.com/kaansavukduran/yksmania/actions/runs/43485370541)
   passed all four jobs: 20 unit/storage/content tests, 19 browser tests, Windows
   and Linux packaged offline lesson/reload/process-restart checks with zero renderer
-  errors, and Android APK signature/manifest verification. The superseded c66e42b
+  errors, and Android APK signature/manifest verification. The superseded c 66 e 42 b
   build was cancelled. These automation checks do not replace the physical-device,
   installer/portable-extractor and two-package update gates listed above.
 - [Release publication](https://github.com/kaansavukduran/yksmania/actions/runs/43486494460)
   passed and published [v0.2.0-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.2.0-alpha.1).
   The tag resolves to the verified application source above. All five binaries
-  (Windows Setup/Portable, Linux AppImage/DEB, Android debug APK), SHA256SUMS,
+  (Windows Setup/Portable, Linux AppImage/DEB, Android debug APK), SHA 256 SUMS,
   verified-run.json and Android verification evidence are uploaded. The earlier
   0.1.0 prerelease remains intact. Private catalogue/PDF packs are still local;
   the blocked Drive export was not retried or routed through another destination.
@@ -1818,7 +1896,7 @@ Electron desktop shell; Capacitor Android; Vercel configuration and package CI.
 ## Architecture decision
 
 Electron replaces the provisional Tauri candidate for this initial desktop build:
-fully bundled Chromium avoids an online WebView2 prerequisite for Windows portable
+fully bundled Chromium avoids an online WebView 2 prerequisite for Windows portable
 use. The cost is a larger package. No existing implementation was migrated.
 SQLite was a candidate, not an established project constraint; the initial native
 WebViews and Electron use the same persistent IndexedDB model as web. A later
@@ -1851,7 +1929,7 @@ device checks and two-version updates remain explicit release gates. See ROADMAP
 - Web: https://yksmania.vercel.app
 - Prerelease: https://github.com/kaansavukduran/yksmania/releases/tag/v0.1.0-alpha.1
 - The release workflow accepts only a fully successful main package run, uploads
-  its existing binaries without rebuilding, and includes the source SHA and SHA256
+  its existing binaries without rebuilding, and includes the source SHA and SHA 256
   checksums. Release automation is manually dispatched, not triggered by a push.
 
 Observed package automation is not clean-install, physical Android or two-version

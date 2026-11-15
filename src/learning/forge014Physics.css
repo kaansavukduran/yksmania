@@ -1,0 +1,390 @@
+.physics014-lab {
+  min-width: 0;
+  color: var(--text);
+}
+.physics014-lab > h3 {
+  margin: 0 0 0.7rem;
+}
+.physics014-lab > p {
+  margin: 0.75rem 0 1.1rem;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+.physics014-lab > label {
+  display: block;
+  margin: 1rem 0 0.5rem;
+}
+.physics014-lab > select {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  white-space: normal;
+}
+.physics014-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  align-items: start;
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+.physics014-controls .model-control {
+  min-width: 0;
+}
+.physics014-controls input[type="range"] {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  min-width: 0;
+  margin-inline: 0;
+}
+.physics014-controls input[type="number"] {
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 0;
+}
+.physics014-lab .physics014-check {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  min-height: 48px;
+}
+.physics014-check input {
+  flex: 0 0 auto;
+}
+.physics014-lab svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 32rem;
+  margin: 1.5rem auto;
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  background: var(--surface);
+  overflow: visible;
+}
+.physics014-lab svg text {
+  fill: var(--text);
+  font-family: inherit;
+  font-size: 15px;
+}
+.physics014-object {
+  fill: var(--accent);
+  fill-opacity: 0.65;
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+.physics014-ground,
+.physics014-piston {
+  stroke: var(--text);
+  stroke-width: 7;
+}
+.physics014-vessel {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 3;
+}
+.physics014-water {
+  fill: #70b4db;
+  fill-opacity: 0.22;
+}
+.physics014-wet {
+  fill: #549fc9;
+  fill-opacity: 0.4;
+}
+.physics014-u-water {
+  fill: none;
+  stroke: #74b9d9;
+  stroke-width: 24;
+}
+.physics014-surface {
+  stroke: #63a9d2;
+  stroke-width: 3;
+}
+.physics014-dimension {
+  stroke: var(--muted);
+  stroke-width: 2;
+  stroke-dasharray: 5 5;
+}
+.physics014-axis {
+  stroke: var(--muted);
+  stroke-width: 2;
+}
+.physics014-heavy {
+  stroke: var(--muted);
+  stroke-width: 6;
+}
+.physics014-marker {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.physics014-wave,
+.physics014-transmitted {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 4;
+  stroke-linejoin: round;
+}
+.physics014-transmitted {
+  stroke: #75b8d8;
+}
+.physics014-wall {
+  stroke: var(--text);
+  stroke-width: 8;
+}
+.physics014-free-end {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 3;
+}
+.physics014-result {
+  padding: 1.25rem;
+  margin: 1.25rem 0;
+  border: 1px solid var(--border);
+  border-inline-start: 3px solid var(--accent);
+  border-radius: 0.5rem;
+  background: var(--surface);
+  overflow-wrap: anywhere;
+}
+.physics014-result p {
+  margin: 0.75rem 0 0;
+  line-height: 1.8;
+}
+.physics014-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 1.25rem 0;
+}
+.physics014-actions button {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  min-height: 48px;
+}
+.physics014-comparison {
+  min-width: 0;
+  margin: 1.75rem 0;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+}
+.physics014-comparison legend {
+  max-width: 100%;
+  padding: 0 0.4rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.physics014-guesses {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0.5rem 0 1rem;
+}
+.physics014-guesses label {
+  display: flex;
+  align-items: start;
+  gap: 0.7rem;
+  min-height: 44px;
+  padding: 0.6rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
+  overflow-wrap: anywhere;
+}
+.physics014-guesses input {
+  flex: 0 0 auto;
+  margin-top: 0.25rem;
+}
+.physics014-comparison > label {
+  display: block;
+  margin: 1rem 0 0.5rem;
+}
+.physics014-comparison textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  resize: vertical;
+}
+.physics014-comparison button {
+  margin-top: 0.8rem;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+  min-height: 48px;
+}
+.physics014-feedback {
+  margin-top: 1.2rem;
+  padding: 1rem;
+  border-inline-start: 3px solid var(--accent);
+  background: var(--surface);
+  overflow-wrap: anywhere;
+}
+.physics014-feedback p {
+  line-height: 1.8;
+  margin: 0.8rem 0 0;
+}
+@media (max-width: 480px) {
+  .physics014-result {
+    padding: 0.9rem;
+  }
+  /* The lesson supplies its outer gutter. Keep 45px words readable by
+     removing another pair of scaled horizontal paddings in predictions. */
+  .physics014-comparison {
+    margin-inline: 0;
+    padding: 0.9rem 0;
+    border-inline: 0;
+    border-radius: 0;
+  }
+  .physics014-comparison button {
+    box-sizing: border-box;
+    width: 100%;
+    padding-inline: 6px;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .physics014-comparison textarea,
+  .physics014-feedback {
+    padding-inline: 6px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .physics014-lab * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+.physics014-device {
+  stroke: var(--text);
+  stroke-width: 5;
+  fill: none;
+}
+.physics014-device-plane {
+  stroke: var(--muted);
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+}
+.physics014-incoming {
+  stroke: var(--muted);
+  stroke-width: 2;
+  fill: none;
+}
+.physics014-ray,
+.physics014-object-arrow {
+  stroke: var(--accent);
+  stroke-width: 3;
+  fill: none;
+}
+.physics014-ray-second,
+.physics014-image-arrow {
+  stroke: var(--mint);
+  stroke-width: 3;
+  fill: none;
+}
+.physics014-transmitted {
+  stroke: var(--plot-blue);
+  stroke-width: 3;
+  fill: none;
+}
+.physics014-virtual {
+  stroke: var(--accent);
+  stroke-width: 2;
+  stroke-dasharray: 6 5;
+  fill: none;
+}
+.physics014-lens-shape,
+.physics014-prism {
+  fill: var(--plot-blue);
+  fill-opacity: 0.15;
+  stroke: var(--plot-blue);
+  stroke-width: 2;
+}
+.physics014-normal {
+  stroke: var(--muted);
+  stroke-width: 1.5;
+  stroke-dasharray: 5 5;
+  fill: none;
+}
+.physics014-second-medium {
+  fill: var(--plot-blue);
+  fill-opacity: 0.14;
+}
+.physics014-source {
+  min-width: 0;
+  margin: 1.2rem 0;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+}
+.physics014-source legend {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.physics014-source label {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  min-height: 48px;
+  flex-wrap: wrap;
+  padding: 0.4rem;
+}
+.physics014-controls > label {
+  display: grid;
+  gap: 0.6rem;
+  min-width: 0;
+}
+.physics014-controls select {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 48px;
+}
+.physics014-color-device {
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.physics014-channel-0 {
+  stroke: #c43c24;
+  stroke-width: 4;
+  fill: none;
+}
+.physics014-channel-1 {
+  stroke: #238947;
+  stroke-width: 4;
+  fill: none;
+}
+.physics014-channel-2 {
+  stroke: #386dcc;
+  stroke-width: 4;
+  fill: none;
+}
+.physics014-channel-0 text,
+.physics014-channel-1 text,
+.physics014-channel-2 text {
+  stroke: none;
+  fill: var(--text);
+}
+.physics014-prism-red {
+  stroke: #ce4d32;
+  stroke-width: 3;
+  fill: none;
+}
+.physics014-prism-violet {
+  stroke: #9c6ad6;
+  stroke-width: 3;
+  fill: none;
+}
+@media (max-width: 480px) {
+  .physics014-source {
+    padding-inline: 6px;
+    border-inline: 0;
+  }
+  .physics014-actions button {
+    padding-inline: 6px;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+}

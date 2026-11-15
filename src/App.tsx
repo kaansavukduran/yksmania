@@ -289,7 +289,7 @@ export default function App() {
             <Settings2 size={20} />
             {t("settings")}
           </button>
-          <span className="sidebar-version">0.13.0 alpha</span>
+          <span className="sidebar-version">0.14.0 alpha</span>
         </div>
       </aside>
       {menu && (

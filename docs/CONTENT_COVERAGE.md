@@ -1,4 +1,39 @@
-# İçerik kapsamı — 0.13.0 alpha adayı
+# İçerik kapsamı — 0.14.0 adayı
+
+0.14 adayı, doğrulanmış çalışma sırasının 139–168. başlıklarını kapsar. Önceden
+hazır mol ve çarpanlara ayırma anlatımları yeniden sayılmadan 28 yeni etkileşimli
+ünite eklendi: 236 bölüm, 479 paragraf, 121 çözümlü örnek, 121 hatırlama ve
+280 özgün beş seçenekli soru. Toplam 174 anlatım, 146 ayrıntılı rehber,
+174 yerleşik kopya kağıdı ve 1.540 soru; ilk 168/479 başlık anlatım ve soruyla
+hazırdır. Eski 1.260 sorunun bütün alanları ve 147 eski dersin soru dışındaki
+alanları korunur. Öğrenci PDF veya kaynak yüklemez. Tüm arşivin, tüm 479
+başlığın veya son 20 yıllık bütün resmî sınavların tamamlandığı iddia edilmez.
+
+| Ölçüm | Adaydaki gerçek sayı |
+| --- | --- |
+| Ana konu referansı | 341 satır; TYT 201 / AYT Sayısal 140 |
+| Ayrıntılı sıra | 479 başlık; ilk 168 anlatım+soru hazır |
+| Anlatım / rehber / yerleşik kağıt | 174 / 146 / 174 |
+| Özgün soru | 1.540; eski 1.260 alan alan korunur |
+| Yeni kapsam | 28 ünite,236 bölüm,479 paragraf,121 örnek,121 hatırlama,280 soru |
+| Zamanlı çalışma | 14 set: TYT karma 110/9075 s, AYT karma 25/3375 s ve 12 branş |
+
+TYT karma 151 dk 15 sn, AYT karma 56 dk 15 sn sürer; süreler gerçek soruya orantılıdır.
+TYT'de felsefe/din, AYT'de yetersiz branş kotaları kartlarda belirtilir. Hiçbir
+set tam 120/80 resmî dağılımlı sınav değildir. Eski başlamış denemelerin tam soru,
+cevap, işaret ve son zamanı yeni banka yüzünden yeniden örneklenmez.
+Yeni başlangıç mevcut havuzdan çeşitlenir; sınırsız soru iddiası yoktur.
+
+Kaynak yakın okuma sınırları SOURCE_REVIEW'dadır. İlk çevrimiçi hazırlıktan
+sonra web çevrimdışı çalışır; kökenler ayrı ilerleme saklar. Öğrenci hiçbir
+PDF/kitapçık/katalog yüklemez; kişisel JSON yedeği ayrı bir akıştır. Bütün
+kaynak arşivinin kapsamı ile konu sayısı ve öğrenci ustalığı farklı ölçümlerdir.
+
+---
+
+## Tarihsel 0.13 kapsamı
+
+# İçerik kapsamı — 0.13.0 alpha
 
 Öğretim uygulamaya gömülüdür. Konu Anlatımı, Kopya Kağıtları, Sorular ve
 Sınavlar ayrı bölümlerdir; öğrenci PDF, kaynak kataloğu veya kitapçık yüklemez.

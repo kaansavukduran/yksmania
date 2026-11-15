@@ -1,0 +1,269 @@
+.forge014-math-lab {
+  min-width: 0;
+}
+.forge014-math-lab :is(p, h3, label, button, li, strong, output) {
+  overflow-wrap: anywhere;
+}
+.forge014-math-lab :is(select, textarea, input[type="range"]) {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  font: inherit;
+}
+.forge014-math-lab :is(button, select) {
+  min-height: 44px;
+  max-width: 100%;
+  white-space: normal;
+}
+.forge014-math-lab button {
+  font: inherit;
+}
+.forge014-math-lab input[type="range"] {
+  margin: 0;
+  min-height: 44px;
+}
+.f014m-controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: start;
+  margin: 1.25rem 0;
+}
+.f014m-controls > * {
+  min-width: 0;
+}
+.f014m-field {
+  display: grid;
+  gap: 0.5rem;
+  min-width: 0;
+}
+.f014m-toggle {
+  display: flex;
+  gap: 0.65rem;
+  align-items: flex-start;
+  min-height: 44px;
+  padding: 0.5rem 0;
+}
+.f014m-toggle input {
+  flex: 0 0 auto;
+  margin-top: 0.35em;
+}
+.f014m-toggle span {
+  min-width: 0;
+}
+.f014m-diagram {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  margin: 1.25rem auto;
+  overflow: visible;
+}
+.f014m-axis {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 1.8;
+}
+.f014m-grid {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1;
+  stroke-dasharray: 4 5;
+}
+.f014m-series-0 {
+  fill: var(--accent);
+  stroke: var(--surface);
+  stroke-width: 1.5;
+}
+.f014m-series-1 {
+  fill: var(--mint);
+  stroke: var(--surface);
+  stroke-width: 1.5;
+}
+.f014m-series-2 {
+  fill: var(--text);
+  fill-opacity: 0.72;
+  stroke: var(--surface);
+  stroke-width: 1.5;
+}
+.f014m-curve {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 3;
+}
+.f014m-point {
+  fill: var(--accent);
+  stroke: var(--surface);
+  stroke-width: 2;
+}
+.f014m-halo {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2.5;
+  stroke-dasharray: 4 3;
+}
+.f014m-outline {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.f014m-universe {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 1.5;
+}
+.f014m-shading {
+  fill: var(--accent);
+  fill-opacity: 0.18;
+}
+.f014m-element circle {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 1.5;
+}
+.f014m-element text {
+  fill: var(--text);
+  font-size: 22px;
+}
+.f014m-element.selected circle {
+  fill: var(--accent);
+}
+.f014m-element.selected text {
+  fill: var(--accent-text);
+}
+.f014m-element .f014m-halo {
+  fill: none;
+  stroke: var(--text);
+}
+.f014m-key {
+  border-inline-start: 3px solid var(--border);
+  padding: 0.25rem 0 0.25rem 1rem;
+  margin: 1.25rem 0;
+}
+.f014m-key > p:first-child {
+  margin-top: 0;
+}
+.f014m-key > p:last-child {
+  margin-bottom: 0;
+}
+.f014m-result {
+  border-block: 1px solid var(--border);
+  padding: 1rem 0;
+  margin: 1.25rem 0;
+}
+.f014m-result ul {
+  padding-inline-start: 1.2em;
+}
+.f014m-result > p:last-child {
+  margin-bottom: 0;
+}
+.f014m-prediction {
+  display: grid;
+  gap: 0.75rem;
+  padding-block: 1rem;
+  border-block: 1px solid var(--border);
+  margin: 1.25rem 0;
+  min-width: 0;
+}
+.f014m-prediction > button {
+  width: 100%;
+  box-sizing: border-box;
+  padding-inline: 6px;
+  gap: 6px;
+}
+.f014m-feedback {
+  border-inline-start: 3px solid var(--accent);
+  padding-inline-start: 0.65rem;
+  min-width: 0;
+}
+.f014m-pairs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+.f014m-pairs > button {
+  min-width: 44px;
+  box-sizing: border-box;
+  padding: 0.6rem;
+}
+.f014m-truth {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+}
+.f014m-truth li {
+  display: grid;
+  gap: 0.35rem;
+  border: 1px solid var(--border);
+  padding: 0.75rem;
+  min-width: 0;
+}
+.f014m-truth li[data-active="true"] {
+  border-color: var(--accent);
+}
+.f014m-footnote {
+  border-block-start: 1px solid var(--border);
+  padding-top: 1rem;
+}
+@media (max-width: 760px) {
+  .f014m-controls,
+  .f014m-truth {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 460px) {
+  .f014m-feedback {
+    padding-inline-start: 0;
+    border-inline: 0;
+  }
+  .f014m-pairs {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .f014m-pairs > button {
+    width: 100%;
+    padding-inline: 6px;
+  }
+  .f014m-key {
+    padding-inline-start: 0.5rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .forge014-math-lab * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+.f014m-swatch {
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  margin-inline-end: 0.4em;
+  background: var(--text);
+  border: 1px solid var(--text);
+}
+.f014m-swatch.f014m-series-0 {
+  background: var(--accent);
+}
+.f014m-swatch.f014m-series-1 {
+  background: var(--mint);
+}
+
+.f014m-selection {
+  display: none;
+  margin: 0.25rem 0;
+}
+@media (max-width: 760px) {
+  .f014m-selection {
+    display: block;
+  }
+}
+
+.f014m-swatch.f014m-series-2 {
+  opacity: 0.72;
+}

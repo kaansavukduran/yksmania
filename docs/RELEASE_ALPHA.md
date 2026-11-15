@@ -1,52 +1,42 @@
-YKSMania 0.13.0 alpha adayı
+YKSMania 0.14.0 alpha 1 — yayın adayı
 
-Bu belge yayın hazırlığıdır. 0.13.0 için uzak CI, canlı uygulama ve kurulum
-paketi kabulü henüz tamamlanmış sayılmaz; güncel durum FORGE.md ve docs/QA.md’dedir.
+0.14 adayı, doğrulanmış çalışma sırasının 139–168. başlıklarını kapsar. Önceden
+hazır mol ve çarpanlara ayırma anlatımları yeniden sayılmadan 28 yeni etkileşimli
+ünite eklendi: 236 bölüm, 479 paragraf, 121 çözümlü örnek, 121 hatırlama ve
+280 özgün beş seçenekli soru. Toplam 174 anlatım, 146 ayrıntılı rehber,
+174 yerleşik kopya kağıdı ve 1.540 soru; ilk 168/479 başlık anlatım ve soruyla
+hazırdır. Eski 1.260 sorunun bütün alanları ve 147 eski dersin soru dışındaki
+alanları korunur. Öğrenci PDF veya kaynak yüklemez. Tüm arşivin, tüm 479
+başlığın veya son 20 yıllık bütün resmî sınavların tamamlandığı iddia edilmez.
 
-Anlatımı önceden hazır 13 başlığa 130 açıklamalı özgün soru eklendi:
-sayı basamakları, bölme/bölünebilme, EBOB–EKOK, birinci dereceden denklemler,
-basit eşitsizlikler, katman elektron dizilimi ve tarihin ilk yedi başlığı.
-Yeni anlatım veya model eklenmedi; mevcut öğretim ve kimlikler korundu.
+Ekoloji, coğrafya, optik, kimyanın kanunları/mol hesapları, grafikler/kümeler/
+mantık ve ek fiil; anlamlı etkileşim, tahmin/gerekçe ve 121 çözümlü örnekle işlendi.
+TYT karma 110/151 dk 15 sn, AYT Sayısal 25/56 dk 15 sn ve 12 branş kısa pratik setidir;
+resmî 120/80 dağılım değildir. Eski deneme/soru taslağı ve kişisel kayıtlar korunur.
 
-Toplam 146 anlatım, 118 ayrıntılı rehber, 146 kopya kağıdı ve 1.260 soru vardır.
-Hazır 146 anlatımın tamamında, sıradaki ilk 138/479 başlıkta hem anlatım hem
-soru çalışması bulunur. Önceki 1.130 sorunun tam kayıtları korunur. Öğrenci
-PDF veya kaynak yüklemez; gerekli pasaj kartta kökten önce sunulur.
+Son C 6 kaynak kontrolü ve 414/414 birim testi PASS; 361 tarayıcı vakası listelendi.
+Bunlar runtime/yayın kabulü değildir. C 6 tam tarayıcı, Pages, Electron, gerçek
+0.13→0.14 web güncellemesi ve uzak CI/yayın kabulü henüz bekleniyor. Önceki
+C 4 tam koşu 359/360 PASS idi: yeni Basınç ve Rüzgârlar başlığı eski Basınç
+kopya kağıdı seçicisini belirsiz yaptı; tam düğme adına geçildi. C 4'ün 57 yeni
+ünite kabulü, 19 model ailesiyle Pages/Electron ve ayrı görsel denetimleri
+geçmişti; bu sonuçlar C 6'nın yeni runtime kabulü yerine kullanılamaz.
 
-TYT karma 105 / AYT karma 25 ve 11 branş kısa pratik setleridir; tam 120/80 resmî
-dağılım değildir. Yeni denemede mevcut havuzdan seçim çeşitlenir; devam eden
-ve tamamlanan deneme tam soru/seçenek/cevap kaydıyla sabit kalır. Küçük havuzda
-sorular tekrar gelebilir. Bütün 479 başlık veya bütün kaynak arşivi tamamlanmadı.
-
-130 yeni soru bağımsız içerik incelemesinden geçti.
-C2 ile birleştirilmiş kaynakta tip kontrolü, derleme ve 355 birim testi geçti.
-Önceki adayda 32 temel soru tarayıcı vakası ve Pages/Electron ilk soru rotaları
-geçti. Aynı profil taslak değişiminde saptanan native onay kapanması (YKS-067)
-son kaynakta ortak HTML onayıyla giderildi. Dört yeni ve dört eski ilgili
-browser vakası 8/8 PASS; varsayılan iptal odağı, Escape, kayıt koruma ve büyük
-yazı denetlendi. Yerel tam browser koşusu 302/303 geçti; tek eski arama beklentisi yeni cebir
-sorularına göre onarıldı ve onay vakalarıyla birlikte 5/5 geçti. Yerel tam
-303/303 iddiası yoktur. Son Pages ve aynı profil Electron iptal/onay/offline
-reload kabulü PASS. Son derlemeyle 0.12→0.13 gerçek web güncellemesi bütün
-eski kayıtları ve XP25’i korudu; korunan altı 0.12 model ilk kez offline açıldı.
-Uzak CI ve yeni paket/yayın sonuçları ayrıca kaydedilecektir.
-Kaynak sayfa sınırları docs/SOURCE_REVIEW.md’dedir.
-
-Web: https://yksmania.vercel.app
-GitHub Pages: https://kaansavukduran.github.io/yksmania/
-İki adres ayrı kökenlerde ayrı ilerleme saklar; Ayarlar’daki kişisel ilerleme
-yedeğiyle aktarım yapılabilir. Web ilk çevrimiçi hazırlıktan sonra, native
-arayüz yerel dosyalardan çalışır.
-
-Paketler yayımlandığında cihazına uygun dosyayı seç:
-Windows Setup.exe kurulum, Portable.exe doğrudan çalıştırma içindir; x64 ve
-Authenticode imzasızdır. Linux AppImage’e çalıştırma izni ver; DEB Debian/Ubuntu
-içindir. Android APK debug imzalı alpha test paketidir; kaynak sürümü 0.13.0,
-versionCode 21, minimum API 24 ve güncel WebView gerekir. Debug anahtarı derlemeler
-arasında değişebilir; geçişten önce kişisel ilerleme yedeğini dışa aktar.
+C 5/C 6'da iki gerçek kusur onarıldı: coğrafya gerekçesi state sınırını aşmaması
+için 120 karakterle hem girişte hem gösterimde sınırlandı; sayı alanında
+1800 seri yazarken ara değerin 4000'e kırpılması, yerel taslak ve blur/Enter
+ile tek commit kullanılarak düzeltildi. 361. regresyon uzun gerekçeyi
+çevrimdışı yeniden açar. Sayısal smoke girdileri gerçek Tab ile commit eder.
+Önceki başarısızlıklar özel kanıtlarda ve tarihsel kayıtta korunur.
 
 Fiziksel Android, temiz Windows kurulumu, portable taşıma ve iki native sürüm
-arasında veri koruyan yükseltme ayrıca doğrulanmalıdır. verified-run.json
-kaynak koşusunu, SHA256SUMS.txt yayımlanan dosyaların bütünlüğünü gösterir;
-bu kanıtlar yeni 0.13 yayını için henüz üretilmiş sayılmaz. Önceki sürümlerin
-başarıları bu adayın kabulü yerine geçmez.
+arasında veri koruyan yükseltme NOT TESTED. Son doğrulanmış yayımlanmış paket
+0.13.0'dır; bu 0.14 adayının yayınlandığı anlamına gelmez.
+
+Web: https://yksmania.vercel.app
+Pages: https://kaansavukduran.github.io/yksmania/
+
+Windows Setup kurulum, Portable doğrudan çalıştırma içindir; Authenticode
+imzası yoktur. Linux AppImage çalıştırma izni/DEB Debian–Ubuntu; Android 0.14.0
+sürüm kodu 22, debug imzalı test APK, minimum API 24 ve güncel WebView gerektirir.
+Debug anahtarı değişebilir; kişisel ilerleme yedeğini geçişten önce dışa aktar.

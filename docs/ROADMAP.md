@@ -1,12 +1,45 @@
-# Güncel yön ve kalan çalışma — 0.13.0 adayı
+# Güncel yön ve kalan çalışma — 0.14.0 adayı
 
-0.13 adayı 146 anlatım, 118 ayrıntılı rehber, 146 kopya kağıdı ve 1.260 özgün
+0.14 adayı, doğrulanmış çalışma sırasının 139–168. başlıklarını kapsar. Önceden
+hazır mol ve çarpanlara ayırma anlatımları yeniden sayılmadan 28 yeni etkileşimli
+ünite eklendi: 236 bölüm, 479 paragraf, 121 çözümlü örnek, 121 hatırlama ve
+280 özgün beş seçenekli soru. Toplam 174 anlatım, 146 ayrıntılı rehber,
+174 yerleşik kopya kağıdı ve 1.540 soru; ilk 168/479 başlık anlatım ve soruyla
+hazırdır. Eski 1.260 sorunun bütün alanları ve 147 eski dersin soru dışındaki
+alanları korunur. Öğrenci PDF veya kaynak yüklemez. Tüm arşivin, tüm 479
+başlığın veya son 20 yıllık bütün resmî sınavların tamamlandığı iddia edilmez.
+
+Sıradaki yeni anlatım 169. başlık **Fiilimsiler/detail-260**. Kaynak taraması,
+adım adım derin öğretim, anlamlı görsel etkileşim, kendi içinde tam soru ve
+çözümler, yerleşik kopya kağıdı ve bağımsız içerik denetimi birlikte ilerler.
+Başlık listesinin bulunması veya PDF'nin indirilmesi öğretim tamamlanması değildir.
+
+Öğretim hedefi 28 Şubat 2027, değiştirilebilir varsayılan sınav 18 Haziran 2027;
+öğrenme günü 1, tekrarlar 3/7/21. Keşif ve süre öğrenme kredisi oluşturmaz.
+Öğrenciye kaynak yükleme işi verilmez. Mevcut notlar, özgün tekrar tarihleri,
+devam eden soru/deneme tam kopyaları korunur. Şimdiki öncelik bu adayın gerçek
+web/Pages/native yükseltme ve yayın kapılarını tamamlamaktır; ardından kaynak
+sırasıyla TYT ve AYT Sayısal kapsamını genişletmek sürer.
+
+TYT 110/AYT 25 ve 12 branş kısa pratik bankaları tam resmî deneme diye sunulmaz.
+Fiziksel Android, temiz Windows kurulum, portable taşıma ve native sürümler
+arası verili yükseltme ayrı kabul gerektirir. Kişiye özel başarı artışı,
+bütün MEB/Drive veya bütün 20 yıl ÖSYM arşivi tamamlandı iddiası yoktur.
+
+---
+
+## Tarihsel 0.13 yön kaydı
+
+# Güncel yön ve kalan çalışma — 0.13.0
+
+0.13 sürümü 146 anlatım, 118 ayrıntılı rehber, 146 kopya kağıdı ve 1.260 özgün
 soru içerir. Daha önceki 13 anlatımın soru açığı 130 soruyla kapandı; bu ekleme
 yeni konu anlatımı sayılmaz. Hazır 146 anlatımın tamamında ve doğrulanmış
 sıranın ilk 138/479 başlığında hem öğretim hem soru çalışması vardır.
 0.13’te üç sistem onayı, Electron’da kanıtlanan taslak değiştirme kapanmasının
-ardından erişilebilir HTML onayına taşındı. Son tam tarayıcı, paket ve yayın kabulü sürer; kaynak kontrolü veya test
-listeleme, çalışan sürüm kabulü değildir. Sonuçlar FORGE ve QA’da ayrı tutulur.
+ardından erişilebilir HTML onayına taşındı. Tam uzak tarayıcı, paket ve yayın
+kabulü geçti; kaynak kontrolü veya test listeleme tek başına çalışan sürüm
+kabulü sayılmaz. Sonuçlar FORGE ve QA’da ayrı tutulur.
 
 Öncelik çalışma sırasındaki 139. başlık **Su, Hayat ve Çevre Kimyası /
 detail-167** ile devam etmektir. Her başlıkta gerçekten okunan MEBİ/OGM/Aurelia
