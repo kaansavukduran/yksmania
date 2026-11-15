@@ -1,3 +1,74 @@
+# 0.13.0 yayın adayı: 13 eski başlığın soru çalışması
+
+0.13 veri eklemesi, önceki anlatımı ve modeli hazır 13 başlıktaki bağımsız soru
+açığını kapatır: 5 matematik, 7 tarih ve katman elektron dizilimi. Yeni 130
+özgün soru vardır; yeni anlatım, rehber, model veya çalışma sırası başlığı yoktur.
+Toplam 146 anlatım, 118 ayrıntılı rehber, 146 kağıt ve 1.260 soru; hazır 146
+anlatımın tamamında ve sıradaki ilk 138/479 başlıkta soru çalışması bulunur.
+Bütün 479 başlık veya tüm kaynak arşivi tamamlandı iddiası yoktur.
+
+Kaynak dalı `forge/earlier-practice-gaps`; 0.13 kaynak eklemesi `ef57b2a`,
+0.12 C2 kaynak düzeltmesi `3104da1` ile yerel birleşim `2994b29`.
+Bunlar yayın veya CI kabulü değildir. C2 ile birleştirilmiş kaynakta yerel
+derleme geçti; tarayıcı, Pages, Electron ve paket kabulü ayrıca izlenir.
+
+İlk plan on eski başlığı kapsıyordu. Bütün hazır anlatımlarda soru arayan katı
+kabul, iki cebir ve bir katman dizilimi rehberinde üç ek boş banka buldu.
+Kapsam, 20 cebir ve 10 kimya sorusuyla 13 başlığa genişletildi; eksikliği
+örtmek için test azaltılmadı. Önceki 1.130 soru tüm JSON alanlarıyla korunur.
+147 eski ders kaydının soru dışındaki bütün alanları, kabul edilmiş kaynakta
+alınan SHA-256 kayıtlarıyla aynı kalır; bunların 146’sı konu anlatımıdır.
+
+130 sorunun tamamı yazar dışı içerik incelemesinden geçti. Matematik 30 ve
+cebir 20 soru bağımsız hesaplarla; tarih 70 ve katman 10 soru bütün seçenek,
+anahtar, ipucu ve gerekçeleriyle incelendi. Gerçek kaynak sayfa sınırları
+SOURCE_REVIEW’dedir. Resmî soru veya seçenek aktarımı yapılmadı; kaynak
+atıfları yeni bir ÖSYM kitapçığı/anahtarı okuması sayılmadı.
+
+Cebirde karşılıklı sıralama ipucunun “sıfırdan uzakta” sözü, pozitif sayılar
+sıfıra keyfî yakın olabildiği için düzeltilmiştir; sorunun anahtarı değişmedi.
+Dönüştürülen 130 kart, incelenen kaynak soru verisiyle alan alan eşittir;
+yalnız uygulamanın kararlı soru kimlikleri tanımlandı ve özel kaynak metadata’sı
+çıkarıldı. Eski kimlikler, gövdeler, modeller ve öğrenci kayıtları değiştirilmez.
+
+C2 ile birleştirilmiş kaynakta `check`, `build` ve 355/355 birim testi PASS.
+İlk tam birim koşusu
+354/355 PASS idi: eski cebir testinin `questions=[]` beklentisi yeni yetkili
+kapsamla geçersiz kaldı. On bağımsız, benzersiz soru kabulüne güncellendi;
+sıfır katsayı, rasyonel çözüm ve eşitsizlik model denetimleri korunur.
+Önceki 0.13 derlemesinde 16 temel soru paketi için 32/32 tarayıcı,
+Pages ve geliştirme Electron ilk soru/geri bildirim/yeniden açılış kabulü PASS.
+Aynı profilde iki soru taslağını değiştirme denemesi ayrıca gerçek bir native
+onay kusurunu ortaya çıkardı; aşağıdaki onarım son derlemeye eklenmiştir.
+
+YKS-067 (Orta): kontrol edilmiş matematik taslağından tarih sorularına geçişte
+Electron 45.3.2/headless süreci, `window.confirm` sırasında test temizliğinden
+önce SIGTRAP ile kapandı. Bu üç mevcut sistem onayı ortak HTML penceresine
+alındı: taslak değiştirme, kişisel ilerleme yedeği geri yükleme, oturum geri
+alma. Varsayılan iptal odağı, Escape/odak dönüşü, açık onay ve prompt/kayıt
+boyunca çift tıklama kilidi korunur. Native API stub kabul yerine kullanılmaz.
+Dört yeni ve dört eski ilgili browser vakası 8/8 PASS; son kaynakta 355/355
+birim, check ve ayrı web/Pages derlemeleri PASS. Yeni genel liste 23 dosyada
+303 vakadır; son tam koşu, Pages ve aynı profil native kabulü sürüyor.
+İlk veri kaydı henüz yazılmadan state okumaya çalışan fresh-profile smoke
+varsayımı da gerçek kayıt + saved durumu beklenerek düzeltildi; eksik kayıt
+boş veriyle örtülmedi.
+
+Soru kartları sıradan Sorular ve anlatımdan soruya geçiş yolunu kullanır.
+Pasaj gerektiğinde kökten önce gösterilir. Yeni tarayıcı vakaları çevrimdışı
+ilk açılışı, gerçek 9/10 kaydını, 3/7/21 tekrarlarını ve 320px büyük yazıyı
+sınamak üzere hazırlanmıştır. Pages ve Electron betiklerine bir matematik ve
+bir tarih soru rotası eklendi; eski akışlar korunur. Betik sözdizimi kontrolü
+çalışan paket veya fiziksel cihaz kanıtı değildir.
+
+Android kaynak sürümü 0.13.0/code21; 752 bağımlılık kaydı değişmez. Deneme
+kataloğu hâlâ 13 settir: TYT 105, AYT 25 ve 11 branş. Eksik resmî dağılım
+etiketleri ve süreler korunur; yeni deneme başlangıçta çeşitlenir, eski taslak
+ve sonuçlar tam soru kopyasıyla sabit kalır. 0.13 uzak CI, yayın ve native paket
+kabulü henüz bu aday kaydında tamamlanmış sayılmaz.
+
+---
+
 # 0.12.0 yayın adayı: sıradaki 30 ünite ve deneme çeşitliliği
 
 Çalışma ağacı `/workspace/yksmania-next`; canlı 0.11.0 sürümü aşağıdaki kanıt

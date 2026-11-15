@@ -1,3 +1,66 @@
+# 0.13.0: 13 mevcut anlatıma bağımsız soru çalışması
+
+Bu sürüm 50 matematik, 70 tarih ve 10 kimya olmak üzere 130 özgün soru ekler.
+Anlatım, rehber ve modellerin kimlikleri/gövdeleri korunur; soru eklemesi yeni
+konu anlatımı tamamlanması olarak sayılmaz. Öğrenci materyal yüklemez. Özel
+kaynak kimlikleri, orijinal PDF’ler ve ham metinler ürüne aktarılmadı.
+
+Aşağıdaki sınırlar soru yazarlarının gerçek okuma kayıtlarıdır. Bağımsız soru
+okuyucuları bütün kartları ve anahtarları denetledi; bu ikinci inceleme kaynak
+PDF’lerinin tamamının yeniden okunduğu anlamına gelmez.
+
+| Soru kapsamı | Gerçekte okunan öğretim sayfaları |
+| --- | --- |
+| Sayı basamakları, bölme/bölünebilme, EBOB–EKOK: 30 soru | MEBİ TYT Matematik PDF18,20–23,25–27/basılı16,18–21,23–25; PDF19 ve24 yakın önbilgi. Aurelia006 PDF1–8,007 PDF1–8,008 PDF1–10. Üç Aurelia ilk sayfası ayrıca gerçek görüntüden incelendi. Dosyaların tamamı okunmuş sayılmadı. |
+| Birinci dereceden denklemler, basit eşitsizlikler: 20 soru | MEBİ TYT Matematik PDF33–34/basılı31–32 metin ve gerçek sayfa görüntüleri; Aurelia010–011 PDF1–8 metin. İki mevcut cebir rehberi bütünüyle okundu. Aurelia’nın9. sayfası ve bağlantılı resmî kitapçıklar bu görevde bağımsız okunmadı. |
+| Katman elektron dizilimi: 10 soru | MEBİ TYT Kimya PDF30–31/basılı28–29 metin ve gerçek görüntüler; Aurelia009 PDF1–5 metin,1–3 gerçek görüntüler. Mevcut katman rehberi ve model sınırları karşılaştırıldı. Kalan resmî soru arşivi yeni bağımsız okuma sayılmadı. |
+| İlk yedi tarih anlatımı: 70 soru | Aurelia001 PDF1–5,002 PDF1–7,003 PDF1–5,004 PDF1–6,005–007 PDF1–5. İlgili OGM Dersler Cepte öğretim gövdeleri ve aşağıda ayrı belirtilen görseller incelendi; bütün fasiküller veya anahtarlar okunmuş sayılmadı. |
+
+Tarih için OGM öğretim sınırı: İnsanlığın Hafızası Tarih/Neden Tarih/Zamanın
+Taksimi PDF10–12,14–15; İnsanlığın İlk İzleri/Yazının Gelişimi/Medeniyet
+Havzaları PDF10–12,14–15 metin ve17–19 görüntü; Orta Çağ siyasi yapı/ekonomi/
+ordu PDF10,12,15–16; Kanunlar/Avrasya/Boylardan Devlete PDF12–13,15,19;
+İslamiyet Yayılıyor/Emeviler/Abbasiler PDF10–13 görüntü ve11 tanım metni;
+Bilim Medeniyeti/Türklerin İslamiyeti Kabulü PDF16–17 mevcut metin ve18 görüntü;
+1072–1308/Oğuz Göçleri PDF10–12; İlk Fatihler/Türkleşme/Haçlılar
+PDF10–12,14,16–17 metin. Yalnız başlık çıkan bazı sayfalar ayrıca görüntüden
+okundu; belirtilmeyen sorular, anahtarlar veya görseller tam incelenmiş sayılmadı.
+
+Matematikte sayı bloklarının onluk yazımı, başta sıfır ve farklı rakam koşulları
+soru içinde tanımlıdır. Bölende pozitiflik ve 0≤kalan<bölen korunur. EBOB/EKOK
+soruları pozitif tam sayılar kullanır. Ortak tekrar sorusu ilk olayı sayıp
+saymadığını belirtir; karo/küp sorularında hizalama ve kayıpsız bölme koşulları
+vardır. Kaynak genellemeleri bu sınırların dışına taşınmadı.
+
+Cebirde sıfır katsayı özdeşlik/çelişki olarak ayrılır; sıfıra bölünmez. Başlangıç
+payda yasağı sadeleşmeden sonra da korunur. Eşitsizlikte negatifle bölmede yön,
+açık/kapalı uç, ve/veya, tam sayı bütçesi ve pozitiflik koşulu sorunun içindedir.
+Bağımsız okuyucunun bulduğu “sıfırdan uzakta” ipucu, pozitif sayıların sıfıra
+keyfî yaklaşabilmesini koruyan açık koşulla düzeltildi; doğru cevap değişmedi.
+
+Kimyada 2n² katman kapasitesi, bütün atomlar için dolma sırası diye öğretilmez.
+İlk 20 nötr temel hâl ve belirtilen basit iyonlarla sınırlı örnekler kullanılır.
+Periyot/grup nötr temel hâl kimliğinden okunur; He 18. gruptadır. İyonlaşma
+proton sayısını değiştirmez; katman çemberleri kesin elektron yolu sayılmaz.
+
+Tarihte yalnız kronolojik sıra nedensellik kanıtı değildir. Yıl0 yokluğu,
+yüzyıl sınırları, takvimin esası/miladı/yıl başlangıcı; serf/vassal,
+kurultay/modern parlamento, hanedan/medeniyet, temas/resmî kabul ve
+Malazgirt/kuruluş/Miryokefalon ayrımları korunur. Kaynaklardaki koşulsuz “ilk”
+iddiaları, tek olaydan toplu kabul veya bütün bir döneme genelleme sorulara
+aktarılmadı. Her tarih sorusu gerekli bağlamı kendi pasajında taşır.
+
+130 soru yazar dışı içerik incelemesinden geçti: matematik ve cebirde bağımsız
+hesaplar; tarihte70 ve katmanda10 kartın bütün pasaj/seçenek/anahtar/ipucu/
+gerekçeleri okundu. Uygulamaya dönüşümde incelenen130 kartın alanları korunur,
+yalnız kararlı uygulama kimliği tanımlanıp özel kaynak metadata’sı çıkarılır.
+Önceki 1.130 soru tam kayıtlarıyla kalır. Bu içerik denetimi tarayıcı, cihaz,
+kişisel başarı etkisi veya bütün ÖSYM arşivi kabulü değildir.
+YKS-067 sistem onayı onarımı yeni kaynak okuması ya da öğretim içeriği sayılmaz;
+soru verileri ve önceki ders gövdeleri bu arayüz düzeltmesinde değişmedi.
+
+---
+
 ## 0.12 önceki temel biyoloji soru onarımı
 
 Karbohidratlar, lipitler ve vitaminlerin mevcut anlatım/model kimlikleri korundu;

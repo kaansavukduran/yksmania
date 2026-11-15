@@ -11,6 +11,7 @@ import { Capacitor } from "@capacitor/core";
 import { useApp } from "../store";
 import { DateInput } from "../components/DateInput";
 import { parseBackup } from "../domain/storage";
+import { useConfirmationDialog } from "../components/ConfirmationDialog";
 import { ResetProgress } from "../components/ResetProgress";
 import type { Settings as SettingsType } from "../domain/model";
 const VERSION = "0.13.0";
@@ -144,6 +145,10 @@ export function Settings({
 }) {
   const { state, setSetting, t, update, commit, toast, status } = useApp();
   const file = useRef<HTMLInputElement>(null);
+  const restoreTrigger = useRef<HTMLButtonElement>(null);
+  const restoreLock = useRef(false);
+  const [restoring, setRestoring] = useState(false);
+  const { confirm, confirmationDialog } = useConfirmationDialog();
   const [checking, setChecking] = useState(false);
   const [updateMessage, setUpdateMessage] = useState("");
   const [newVersion, setNewVersion] = useState("");
@@ -185,16 +190,31 @@ export function Settings({
     }
   }
   async function restoreData(f: File) {
+    if (restoreLock.current) return;
+    restoreLock.current = true;
+    setRestoring(true);
     try {
       if (f.size > 20_000_000) throw Error();
       const backup = await parseBackup(await f.text());
-      if (!confirm(t("restoreConfirm"))) return;
+      if (
+        !(await confirm(
+          {
+            title: "İlerleme yedeğini geri yükleyelim mi?",
+            description: t("restoreConfirm"),
+            confirmLabel: "Yedeği geri yükle",
+          },
+          restoreTrigger.current,
+        ))
+      )
+        return;
       await commit(() => backup);
       toast(t("backupRestored"));
     } catch {
       toast(t("backupInvalid"));
     } finally {
       if (file.current) file.current.value = "";
+      restoreLock.current = false;
+      setRestoring(false);
     }
   }
   async function checkUpdates() {
@@ -235,6 +255,7 @@ export function Settings({
   }
   return (
     <>
+      {confirmationDialog}
       <header className="page-heading">
         <div>
           <p className="eyebrow">{t("deviceScope")}</p>
@@ -338,12 +359,18 @@ export function Settings({
               ref={file}
               accept="application/json,.json"
               hidden
+              disabled={restoring}
               onChange={(e) => {
                 const f = e.target.files?.[0];
                 if (f) void restoreData(f);
               }}
             />
-            <button className="secondary" onClick={() => file.current?.click()}>
+            <button
+              className="secondary"
+              ref={restoreTrigger}
+              disabled={restoring}
+              onClick={() => file.current?.click()}
+            >
               <Upload size={17} />
               {t("restore")}
             </button>

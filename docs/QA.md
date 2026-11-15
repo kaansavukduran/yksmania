@@ -1,3 +1,59 @@
+# 0.13.0 yerel kabulü — son tam tarayıcı koşusu sürüyor
+
+130 özgün soru, anlatımı önceden hazır 13 başlığa bağlandı. Yeni toplam 1.260
+sorudur. Hazır 146 anlatımın tamamı ve ilk 138 sıralı başlık bağımsız sorulara
+sahiptir; 479 başlığın tamamı bitmiş değildir. 118 rehber ve 146 kağıt korunur.
+
+C2 ile birleştirilmiş kaynakta `check`, `build` ve 55 dosyada 355/355 birim
+testi PASS.
+Önceki 1.130 sorunun tam JSON alanları; 147 eski ders kaydının soru dışındaki
+bütün alanları korunur. İkinci kontrol, yalnız bazı derslerin gövdesini değil
+bütün eski derslerin kimlik, başlık, gövde, hedef, süre, kaynak ve etiketlerini kapsar.
+Derlenen yeni 130 kartın pasaj, seçenek, anahtar, ipucu ve açıklaması incelenen
+soru verisiyle alan alan eşittir. Kaynak metadata’sı ürüne taşınmaz.
+
+İlk kapsam kontrolü üç ek sorusuz rehber buldu; 30 soru daha hazırlanıp bağımsız
+incelenerek eklendi. İlk tam birim koşusundaki 354/355 sonucu, eski cebir
+`questions=[]` beklentisinden kaynaklandı. Bu test yeni 10 soruluk bağımsız
+bankayı doğrular; mevcut matematik model denetimleri korunur. Bu onarımlar
+soru doğruluğu veya gerçek kullanıcı sonucu yerine sayılmadı.
+
+Önceki 0.13 adayında 16 paket × 2 temel soru kabulü 32/32 PASS:
+çevrimdışı ilk giriş, tam pasajın kökten önce görünmesi, açıklama/taslak koruma,
+9 doğru/1 yanlış sonuç, öğrenme gününden +2/+6/+20 tekrar ve 320px
+UI %200/yazı %150. Pages ve geliştirme Electron’da yeni matematik/tarih
+rotalarının ilk çevrimdışı soru/geri bildirim/yeniden açılışı PASS idi.
+Bu kanıtlar aşağıdaki onay onarımından önceki ayrı derlemeye aittir.
+
+## YKS-067 — sistem onayında Electron sürecinin kapanması (Orta)
+
+Aynı profilde kontrol edilmiş matematik taslağı varken başka soru setine
+geçiş, `window.confirm` yolunda geliştirme Electron 45.3.2/headless sürecini
+SIGTRAP ile kapattı. Kapanma test temizliğinden önce gerçekleşti. Fontconfig
+ve NSS uyarıları tek başına neden sayılmadı; tanı çıktısı özel çalışma alanında
+saklandı. Yeni soru verisinin hatası değildir; mevcut native onay bağımlılığı
+bu akışta görünür hâle geldi. Fiziksel masaüstü cihazında aynı çökme iddia edilmez.
+
+Yarım çalışmayı değiştirme, kişisel ilerleme yedeğini geri yükleme ve oturumu
+geri alma artık ortak, erişilebilir HTML onayı kullanır. Vazgeç varsayılan
+odaktır; Escape iptal eder ve odak tetikleyiciye döner. Her çağıranda onay ve
+kalıcı kayıt boyunca çift tıklama kilidi vardır. Açık onay verilmeden kayıt
+değişmez; kalıcı kayıt hatasında önceki veri korunur. Native API taklidi yoktur.
+
+Son kaynakta `check`, iki web derlemesi ve 355/355 birim PASS. Dört yeni
+YKS-067 vakası ve etkilenen dört eski browser vakası 8/8 PASS. Gerçek akışlar
+iptal → bütün kayıt aynılığı, çift tıklamayla tek sonuç, başarısız yazma →
+yeniden açık onay, çevrimdışı yeniden yükleme, odak, 320px/UI %200/yazı %150
+ve erişilebilirliği sınar. Genel listelemede 23 dosyada 303 vaka vardır;
+son tam koşu ve yeni Electron onay kabulü sürüyor. Son Pages derlemesi ayrıca
+sınanıyor; 0.13 uzak CI/yayın/paket kabulü bu yerel sonuçlardan çıkarılmaz.
+
+Fiziksel Android, temiz Windows kurulumu, portable taşıma ve iki native sürüm
+arasında veri koruyan yükseltme ayrıca doğrulanmalıdır. Kaynak ve bağımsız
+inceleme sınırları SOURCE_REVIEW’da; ilk başarısız denemeler FORGE’dedir.
+
+---
+
 # 0.12 son font ve simge düzeltmesi
 
 İlk yerel tam koşu269/272, ilk CI de üç Türkçe caption font beklentisiyle FAIL.

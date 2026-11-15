@@ -1,22 +1,64 @@
-# Accepted direction and remaining stages
+# Güncel yön ve kalan çalışma — 0.13.0 adayı
 
-Current 0.5.1: 23 interactive Turkish lessons / 115 original questions. The first
-ten workbook topics have chemistry and mathematics explorations. Topics 6–10 are
-number concepts, parity/sign, consecutive numbers, primes and factorials. Theory is planned to
-28 February 2027; question topics to the editable exam default 18 June 2027.
-The 479-heading order is checked against both workbook and Todoist first occurrences.
-Next content priority: continue from topic 11 (Canlıların Karakteristik Özellikleri), repair geometry
-coverage in the source mapping without inventing equivalences, and progressively
-verify item-level source questions/answers. Preserve records and offline operation.
+0.13 adayı 146 anlatım, 118 ayrıntılı rehber, 146 kopya kağıdı ve 1.260 özgün
+soru içerir. Daha önceki 13 anlatımın soru açığı 130 soruyla kapandı; bu ekleme
+yeni konu anlatımı sayılmaz. Hazır 146 anlatımın tamamında ve doğrulanmış
+sıranın ilk 138/479 başlığında hem öğretim hem soru çalışması vardır.
+0.13’te üç sistem onayı, Electron’da kanıtlanan taslak değiştirme kapanmasının
+ardından erişilebilir HTML onayına taşındı. Son tam tarayıcı, paket ve yayın kabulü sürer; kaynak kontrolü veya test
+listeleme, çalışan sürüm kabulü değildir. Sonuçlar FORGE ve QA’da ayrı tutulur.
+
+Öncelik çalışma sırasındaki 139. başlık **Su, Hayat ve Çevre Kimyası /
+detail-167** ile devam etmektir. Her başlıkta gerçekten okunan MEBİ/OGM/Aurelia
+sayfalarından kapsamlı anlatım, anlamlı etkileşim, örnek çözüm, püf noktası,
+yerleşik kopya kağıdı ve bağımsız soru hazırlanır. Önceden hazır içerik yeniden
+konu sayılmaz; sadece kaynakça bulmak veya PDF indirmek tamamlanma değildir.
+
+Güncel ürün kararı: öğrenci hiçbir PDF, katalog veya ders materyali yüklemez.
+Kaynakları geliştirici işler; bilgiler uygulamada hazır bulunur. Eski dosya ve
+katalog baytları yalnız görünmeyen eski veri korunumu içindir. Ayarlar’daki
+kişisel ilerleme yedeği eğitim içeriği sağlamaktan ayrı bir işlemdir.
+
+Öğretim planı 28 Şubat 2027’ye; soru planı değiştirilebilir varsayılan sınav
+18 Haziran 2027’ye göre sürer. Öğrenme günü 1, tekrarlar 3/7/21’dir. Eski
+kayıtlar, notlar, özgün tekrar tarihleri ve devam eden taslaklar korunur.
+
+Sıradaki geliştirme alanları:
+
+1. Doğrulanmış sırayla TYT ve AYT Sayısal öğretimini ilerlet; ayrıntılı liste ile
+   ana konu listesini ayrı tut. Geometri eşlemelerini kanıtsız eşitleme.
+2. Desteği azalan örnekler, yeni bağlama aktarım, hataya özel ipuçları ve
+   gecikmeli bağımsız hatırlama havuzlarıyla kalıcılığı destekle. Keşif/XP ile
+   bağımsız soru performansını aynı ölçü sayma.
+3. Deneme havuzunu kaynak ve anahtar incelemesiyle genişlet. Mevcut 105 TYT ve
+   25 AYT setlerini tam 120/80 resmî dağılımlı deneme diye sunma. Başlamış
+   denemenin tam soru/cevap kaydını yeni havuzla değiştirme.
+4. Çevrimdışı web, GitHub Pages alt yolu, gerçek Windows/Linux paketleri ve
+   Android’i aynı kaynakta doğrula. Fiziksel Android, temiz Windows kurulumu,
+   portable taşıma ve iki native sürümde veri koruyan yükseltmeyi ayrıca tamamla.
+5. Üretim imzası ve dağıtım süreçlerini geliştir. Hesap altyapısı, abonelik,
+   sohbet, lider tablosu veya bulut eşitleme ayrı karar olmadan eklenmez.
+
+Bütün kaynak arşivinin veya bütün ÖSYM geçmişinin tamamlandığı, kullanıcının
+YKS puanının artacağı ya da bu tekrar aralığının herkeste en iyi olduğu iddia
+edilmez. Gecikmeli bağımsız başarı ve yeni soruya aktarım gerçek kullanımla
+izlenir; oturum veya tekrar edilen aynı soru sayısı bu etkinin kanıtı değildir.
+
+## 0.5.1 ve öncesi tarihsel yol haritası
+
+Aşağıdaki kayıt, 0.5.1’deki 23 anlatım/115 soru ve daha eski aşamaları anlatır.
+Buradaki PDF içe aktarma ve kaynak yönetimi kararları güncel öğrenci akışında
+geçerli değildir. Üstteki 0.13 kapsamı ve kaynak yüklememe kararı geçerlidir.
 
 1. First vertical slice: real original lessons, retrieval, assisted/independent
-   evidence, local state, availability, day-ordinal reviews, source atlas, PDF
+   evidence, local state, availability, day-ordinal reviews, source atlas, the then-available PDF
    import and offline builds. The 0.1.0 slice had six topics and thirty questions;
    0.2.0 has nine visual lessons and forty-five original questions, separate theory
    and practice, and reusable cell, element-table and geometry explorations.
 2. Private content inventory: recursive metadata inventory and workbook headings
    are complete for the inspected Aurelia YKS subtree. Batch PDF/catalogue import
-   works; 143 PDFs were prepared and checked locally. Edition/page/question matching
+   was part of that historical stage; it is closed in the current learner UI.
+   143 PDFs were prepared and checked locally. Edition/page/question matching
    and verified answer keys remain work. Catalogue presence is not content readiness.
    Geometry portions inside mathematics books need mapping.
 3. Curated topic packs for every TYT subject and numerical AYT, with source rights,
@@ -38,7 +80,7 @@ Personal use is the initial working assumption. Public account infrastructure,
 subscriptions, chat, leaderboards and importing personal historical records are
 not silently introduced. Local settings and learning data remain device-scoped.
 
-## Learning evidence and product claims
+## Öğrenme kanıtı ve ürün iddiaları
 
 The implemented cycle asks the learner to retrieve an answer, gives explanatory
 feedback and schedules another attempt on a later date. Assisted responses remain

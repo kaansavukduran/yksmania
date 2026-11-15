@@ -241,12 +241,15 @@ test("progress reset is cancellable and atomic, preserves legacy files and nativ
   seed.settings.blockedWeekdays = [0];
   await page.goto("/");
   await nav(page, "Ayarlar");
-  page.once("dialog", (dialog) => dialog.accept());
   await page.locator('input[type="file"]').setInputFiles({
     name: "progress.json",
     mimeType: "application/json",
     buffer: Buffer.from(JSON.stringify(seed)),
   });
+  await page
+    .getByRole("dialog")
+    .getByRole("button", { name: "Yedeği geri yükle", exact: true })
+    .click();
   await expect(page.locator(".toast")).toContainText("geri yüklendi");
   // Existing user files remain backward-compatible storage, not a learning upload workflow.
   await page.evaluate(
