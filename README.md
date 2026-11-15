@@ -1,6 +1,6 @@
 # YKSMania
 
-Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.15.0 yayın adayı**; son doğrulanmış yayımlanmış paket [0.14.0](https://github.com/kaansavukduran/yksmania/releases/tag/v0.14.0-alpha.1).
+Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.15.0** webde ve [indirilebilir alpha paketleriyle](https://github.com/kaansavukduran/yksmania/releases/tag/v0.15.0-alpha.1) yayımlandı.
 
 [Vercel](https://yksmania.vercel.app) · [GitHub Pages](https://kaansavukduran.github.io/yksmania/) · [GitHub deposu](https://github.com/kaansavukduran/yksmania)
 
@@ -28,6 +28,6 @@ Ortak kum saati 5 dk; 1/5/10/20 dk ve 1–120 dk özel süre, ters çevirme, dur
 
 Node 24: `npm ci`, `npm run dev`. Kontroller: `npm run check`, `npm test`, `npm run build`, `npm run test:e2e`, `npm run test:desktop`.
 
-C3 kaynak kontrolü, 478 birim testi ve derleme geçti. Electron/Pages’te 25 model ailesi, iki eski soru rotası, çevrimdışı kayıt/yenileme ve aynı profil süreç yeniden açılışı sınandı. Gerçek 0.14→0.15 web güncellemesi eski 25 soruluk AYT taslağını, notları, tamamlanan oturumu, üç tekrar tarihini ve sentetik eski PDF’yi korudu; XP değişmedi. Son tam tarayıcı koşusu 423/423 PASS (iki worker, 18,8 dk). Uzak yayın kapıları henüz bekleniyor. İlk zaman aşımı/yeniden sınama ve kapsam ayrıntısı [QA](docs/QA.md) ile [FORGE](FORGE.md)’dadır.
+C3 kaynak kontrolü, 478 birim testi ve derleme geçti. Electron/Pages’te 25 model ailesi, iki eski soru rotası, çevrimdışı kayıt/yenileme ve aynı profil süreç yeniden açılışı sınandı. Gerçek 0.14→0.15 web güncellemesi eski 25 soruluk AYT taslağını, notları, tamamlanan oturumu, üç tekrar tarihini ve sentetik eski PDF’yi korudu; XP değişmedi. Son tam tarayıcı koşusu 423/423 PASS (iki worker, 18,8 dk). CI dört iş, canlı 423/423 ve Pages üç iş PASS; sekiz alpha dosyası yayımlandı. İlk canlı 422/423 koşusunun trace incelemesi ve değişmeyen kaynakla ikinci tam PASS kaydı QA’da korunur. İlk zaman aşımı/yeniden sınama ve kapsam ayrıntısı [QA](docs/QA.md) ile [FORGE](FORGE.md)’dadır.
 
-Web ilk çevrimiçi hazırlıktan sonra, native arayüz yerel dosyalardan çalışır. Windows Setup/Portable ve Linux AppImage/DEB x64; Android debug imzalı alpha. 0.15 hedefi Android sürüm kodu 23’tür; paket yayını ayrıca doğrulanır. Fiziksel Android, temiz Windows kurulumu, portable taşıma ve iki native sürüm arasında veri koruyan yükseltme bu yerel kontrollerle doğrulanmış sayılmaz.
+Web ilk çevrimiçi hazırlıktan sonra, native arayüz yerel dosyalardan çalışır. Windows Setup/Portable ve Linux AppImage/DEB x64; Android debug imzalı alpha. Android 0.15.0/kod 23 ve v2 imzası doğrulandı. Fiziksel Android, temiz Windows kurulumu, portable taşıma ve iki native sürüm arasında veri koruyan yükseltme bu yerel kontrollerle doğrulanmış sayılmaz.

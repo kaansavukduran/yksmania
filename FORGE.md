@@ -1,4 +1,4 @@
-# 0.15.0 — yerel kabul tamamlandı, uzak yayın bekleniyor
+# 0.15.0 — yayın ve paket kabulü tamamlandı
 
 Kaynak adayında çalışma sırasının 169–198. başlıkları için 30 yeni ünite; toplam 204 anlatım / 176 derin rehber / 204 özet / 1.840 soru vardır. İlk 198/479 başlık anlatım ve soruyla hazırdır. Eklenen 245 bölüm, 490 paragraf, 122 üç adımlı çözüm, 122 hatırlama ve 300 özgün beş seçenekli kart gerçek kaynak okuması ve ikinci okuyucuyla denetlendi. Eski 1.540 sorunun bütün alanları ve 175 ders kaydının soru dışındaki alanları korunur. Öğrenci kaynak/PDF yüklemez.
 
@@ -10,7 +10,15 @@ YKS-068 kimya büyük yazıda sözcük bölünmesi: görünür/erişilebilir kı
 
 İlk C3 tam koşu, dört CPU kotasında eşzamanlı native/SW ve özel censuslerle ölçülen yük 19 sırasında iki eski testte zaman aşımı verdi; 82 PASS, 2 FAIL, 2 kesilen, 337 çalışmayan olarak korunur. Kaynak/artefakt/asser/timeout değişmeden diğer ağır browserlar durdurulunca aynı iki test 12,5 s ve 3,5 s ile PASS oldu. Son tam koşuda aynı kaynak, assertion ve süre sınırlarıyla 423/423 tarayıcı vakası iki worker ile 18,8 dakikada geçti. Önceki C1 61/61 yeni vaka, 477 birim ve 25-aile kabulü yalnız kendi artefakt kapsamındadır.
 
-TYT 110/9075 s ve AYT 37/4995 s karma setleriyle 12 branş pratik vardır; tam resmî 120/80 dağılım değildir. 0.15 uzak CI/public/Pages ve Android 23 paket yayını henüz bekleniyor. Son yayımlanmış paket 0.14’tür; onun gerçek kabulü aşağıdadır. Bütün 479, bütün Drive/YKS ve 20 yıllık tüm resmî sınavlar tamamlanmadı. Fiziksel Android, temiz Windows kurulumu, portable taşıma ve native-to-native yükseltme NOT TESTED.
+TYT 110/9075 s ve AYT 37/4995 s karma setleriyle 12 branş pratik vardır; tam resmî 120/80 dağılım değildir. 0.15 CI/public/Pages ve Android kod 23 yayını tamamlandı; uzak kanıtlar aşağıdadır. Önceki 0.14 kaydı ayrıca korunur. Bütün 479, bütün Drive/YKS ve 20 yıllık tüm resmî sınavlar tamamlanmadı. Fiziksel Android, temiz Windows kurulumu, portable taşıma ve native-to-native yükseltme NOT TESTED.
+
+## Doğrulanmış yayın
+
+Kaynak/tag `3f237c12100a702e09884d65f735de6a3f11db1b`. CI [43734178222](https://github.com/kaansavukduran/yksmania/actions/runs/43734178222) dört iş PASS: 478 birim/423 tarayıcı ve gerçek Windows/Linux paketli çevrimdışı kabul; Android 0.15.0/kod 23/v2 imza. Canlı [43734346767](https://github.com/kaansavukduran/yksmania/actions/runs/43734346767) ikinci denemede 423/423 PASS; Pages [43734349217](https://github.com/kaansavukduran/yksmania/actions/runs/43734349217) üç iş PASS. Yerel, CI ve canlı sonuçlar ayrı kapsamdır.
+
+İlk canlı koşu 422 PASS/1 FAIL idi. Gerçek trace ZIP'i bağlayıcıdan indirilip GitHub özetiyle karşılaştırıldı ve okundu: doğru Kan grupları başlığı/anlatımı görünürken modelin JS/CSS dosyaları ve workbox isteği beş saniyelik kontrolün sonunda henüz yanıt taşımıyordu. Konsol hatası kaydı yoktu; bu, tek başına sunucu veya uygulama kök nedeni kanıtı değildir. Aynı dosyalar normal TLS ile 200 ve dondurulmuş C3 baytlarıyla 0,23–0,27 s'de yeniden alındı. Hiçbir kod, assertion veya süre sınırı değiştirilmeden bütün 423 vaka ikinci denemede geçti. İlk hata ve trace incelemesi korunur.
+
+[0.15 alpha](https://github.com/kaansavukduran/yksmania/releases/tag/v0.15.0-alpha.1), başarılı [43738552491](https://github.com/kaansavukduran/yksmania/actions/runs/43738552491) ile aynı doğrulanmış CI çıktılarından sekiz dosya olarak yayımlandı. Tag ve verified-run kaydı aynı kaynak SHA'sını gösterir. Yedi checksum girdisi, sekiz GitHub asset digest'i ve indirilen iki kanıt dosyasının özeti eşleşti. Beş büyük binary yerelde ayrıca indirilip hashlenmedi. Vercel ve Pages index/sw/version dosyaları normal TLS ile ilgili dondurulmuş C3 çıktılarıyla aynıydı.
 
 ---
 

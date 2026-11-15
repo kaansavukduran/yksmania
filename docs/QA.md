@@ -1,4 +1,4 @@
-# 0.15.0 — yerel kabul tamamlandı, uzak yayın bekleniyor
+# 0.15.0 — yayın ve paket kabulü tamamlandı
 
 Çalışma sırasının 169–198. başlıklarına 30 yeni ünite eklendi: toplam 204 anlatım, 176 ayrıntılı rehber, 204 yerleşik özet ve 1.840 özgün soru. Son uygulama kaynağı `abd6cdded9d809b77ca89fb5918576f22c7de2a5`; ardından yalnız tamamlanmış 0.14 yayın belgeleri birleştirildi. C3 artefaktının 123 dosyası sabittir.
 
@@ -21,7 +21,15 @@ C1'de 477 birim ve yeni 61 tarayıcı vakası PASS idi. Gerçek sözcük kusuru 
 
 Özel veri taraması 71 değişen metin yolunda 8.993 özel kimlik ve 9.004 bağlantıyı karşılaştırdı; özel kimlik, ham materyal, binary veya hassas örüntü bulunmadı. 752 bağımlılık kaydı değişmedi. Yayın korumasının güncel 0.15.0/kod 23 için 18 sentetik vakası PASS; eski/yanlış sürüm ve eksik/çoğaltılmış paketler reddedildi.
 
-Uzak CI, yayımlanan HTTPS, Pages ve Android kod 23 paket yayını henüz bekleniyor. Fiziksel Android, temiz Windows kurulumu, portable taşıma ve native sürümler arasında veri koruyan yükseltme NOT TESTED.
+Fiziksel Android, temiz Windows kurulumu, portable taşıma ve native sürümler arasında veri koruyan yükseltme NOT TESTED.
+
+## Doğrulanmış yayın
+
+Kaynak/tag `3f237c12100a702e09884d65f735de6a3f11db1b`. CI [43734178222](https://github.com/kaansavukduran/yksmania/actions/runs/43734178222) dört iş PASS: 478 birim/423 tarayıcı ve gerçek Windows/Linux paketli çevrimdışı kabul; Android 0.15.0/kod 23/v2 imza. Canlı [43734346767](https://github.com/kaansavukduran/yksmania/actions/runs/43734346767) ikinci denemede 423/423 PASS; Pages [43734349217](https://github.com/kaansavukduran/yksmania/actions/runs/43734349217) üç iş PASS. Yerel, CI ve canlı sonuçlar ayrı kapsamdır.
+
+İlk canlı koşu 422 PASS/1 FAIL idi. Gerçek trace ZIP'i bağlayıcıdan indirilip GitHub özetiyle karşılaştırıldı ve okundu: doğru Kan grupları başlığı/anlatımı görünürken modelin JS/CSS dosyaları ve workbox isteği beş saniyelik kontrolün sonunda henüz yanıt taşımıyordu. Konsol hatası kaydı yoktu; bu, tek başına sunucu veya uygulama kök nedeni kanıtı değildir. Aynı dosyalar normal TLS ile 200 ve dondurulmuş C3 baytlarıyla 0,23–0,27 s'de yeniden alındı. Hiçbir kod, assertion veya süre sınırı değiştirilmeden bütün 423 vaka ikinci denemede geçti. İlk hata ve trace incelemesi korunur.
+
+[0.15 alpha](https://github.com/kaansavukduran/yksmania/releases/tag/v0.15.0-alpha.1), başarılı [43738552491](https://github.com/kaansavukduran/yksmania/actions/runs/43738552491) ile aynı doğrulanmış CI çıktılarından sekiz dosya olarak yayımlandı. Tag ve verified-run kaydı aynı kaynak SHA'sını gösterir. Yedi checksum girdisi, sekiz GitHub asset digest'i ve indirilen iki kanıt dosyasının özeti eşleşti. Beş büyük binary yerelde ayrıca indirilip hashlenmedi. Vercel ve Pages index/sw/version dosyaları normal TLS ile ilgili dondurulmuş C3 çıktılarıyla aynıydı.
 
 ---
 
