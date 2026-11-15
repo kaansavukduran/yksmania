@@ -921,6 +921,123 @@ try {
   await expect(page.locator(".exam-history")).toContainText(
     "İlk denemeni bitirdiğinde",
   );
+
+  // These two existing narratives now have built-in independent question sets.
+  // Start them through the ordinary Questions search while already offline.
+  const foundationRouteCases = [];
+  const foundationState = () =>
+    page.evaluate(
+      () =>
+        new Promise((resolve, reject) => {
+          const request = indexedDB.open("yksmania");
+          request.onsuccess = () => {
+            const db = request.result;
+            const read = db
+              .transaction("state")
+              .objectStore("state")
+              .get("current");
+            read.onsuccess = () => {
+              const value = read.result;
+              db.close();
+              resolve(value);
+            };
+            read.onerror = () => {
+              const error = read.error;
+              db.close();
+              reject(error);
+            };
+          };
+          request.onerror = () => reject(request.error);
+        }),
+    );
+  const foundationLearning = (state) => ({
+    sessions: state.sessions,
+    reviews: state.reviews,
+    topicProgress: state.topicProgress,
+    theoryReviewCompletions: state.theoryReviewCompletions,
+    unlocked: state.unlocked,
+  });
+  const learningBeforeFoundation = foundationLearning(await foundationState());
+  for (const item of [
+    {
+      id: "sayi-basamaklari",
+      title: "Sayı basamakları: rakamdan koşullu denkleme",
+      prompt:
+        "Onluk sayı sisteminde 64027 sayısındaki 4 rakamının basamak değeri kaçtır?",
+      correct: "4000",
+      answer: 0,
+    },
+    {
+      id: "tarih-zaman",
+      title: "Tarih ve zaman: kanıtı sıraya koy",
+      prompt:
+        "İkinci ekibin çalışmasını doğrudan tarih araştırması yapan özellik hangisidir?",
+      correct:
+        "Doğa olayının insan toplulukları üzerindeki etkisini kaynaklarla incelemesi.",
+      answer: 0,
+      passage:
+        "Bir araştırma ekibi bir depremin dalga hızını ölçüyor. Başka bir ekip aynı depremden sonra kasabanın boşalmasını, vergi kayıtlarını ve yeniden yerleşme kararlarını inceliyor.",
+    },
+  ]) {
+    await navigate("Sorular");
+    await page.getByRole("button", { name: "TYT", exact: true }).click();
+    await page
+      .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
+      .fill(item.title);
+    const entry = page.locator(".ready-topic").filter({ hasText: item.title });
+    await expect(entry).toHaveCount(1);
+    // Replacing a partial question draft is an explicit user-visible decision.
+    if ((await foundationState()).draft)
+      page.once("dialog", (dialog) => dialog.accept());
+    await entry.click();
+    await expect(page.locator(".question-panel")).toBeVisible();
+    await expect(page.locator(".question-panel h2")).toHaveText(item.prompt);
+    await expect(page.locator(".question-meta")).toContainText("Soru 1 / 10");
+    await expect(page.locator(".answer")).toHaveCount(5);
+    await expect(page.locator(".answer").nth(item.answer)).toContainText(
+      item.correct,
+    );
+    if (item.passage) {
+      await expect(page.locator(".question-passage")).toHaveText(item.passage);
+      expect(
+        await page.locator(".question-panel").evaluate((element) => {
+          const passage = element.querySelector(".question-passage");
+          const stem = element.querySelector("h2");
+          return !!(
+            passage.compareDocumentPosition(stem) &
+            Node.DOCUMENT_POSITION_FOLLOWING
+          );
+        }),
+      ).toBe(true);
+    }
+    await page.locator(".answer").nth(item.answer).click();
+    await page
+      .getByRole("button", { name: "Cevabı kontrol et", exact: true })
+      .click();
+    await expect(page.locator(".feedback.correct strong")).toHaveText("Doğru");
+    const feedback = await page.locator(".feedback p").innerText();
+    await expect(page.locator(".save-status")).toContainText(
+      "Bu cihazda kaydedildi",
+    );
+    await expect
+      .poll(async () => (await foundationState()).draft?.checked)
+      .toBe(true);
+    const beforeReload = await foundationState();
+    expect(beforeReload.draft.lessonId).toBe(item.id);
+    expect(beforeReload.draft.responses).toHaveLength(1);
+    expect(beforeReload.draft.responses[0].questionId).toMatch(/^f013-/);
+    expect(beforeReload.draft.responses[0].correct).toBe(true);
+    expect(foundationLearning(beforeReload)).toEqual(learningBeforeFoundation);
+    await page.reload();
+    await expect(page.locator(".feedback.correct strong")).toHaveText("Doğru");
+    await expect(page.locator(".feedback p")).toHaveText(feedback);
+    await expect(page.locator(".answer").nth(item.answer)).toBeDisabled();
+    const afterReload = await foundationState();
+    expect(afterReload.draft).toEqual(beforeReload.draft);
+    expect(foundationLearning(afterReload)).toEqual(learningBeforeFoundation);
+    foundationRouteCases.push(item.id);
+  }
+
   expect(errors).toEqual([]);
   console.log(
     JSON.stringify({
@@ -945,6 +1062,7 @@ try {
       processRestart: "PASS",
       dailyCompletionAndScore: "PASS",
       paragraphPassageOfflineAndRestart: "PASS",
+      foundationQuestionRoutesOfflineReload: foundationRouteCases,
       rendererErrors: errors.length,
     }),
   );

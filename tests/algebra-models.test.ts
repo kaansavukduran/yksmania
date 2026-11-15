@@ -55,13 +55,21 @@ it("matches each original inequality across signs, zero and all four relations",
     interval: "[−3, ∞)",
   });
 });
-it("shows consistent course/reading durations and keeps new theory separate from scored questions", () => {
+it("preserves guide durations and topic associations while attaching independent algebra practice", () => {
   for (const guide of lessonGuides.values())
     expect(lessonById(guide.id)?.minutes, guide.id).toBe(guide.minutes);
   expect(lessonTopic["birinci-dereceden-denklemler"]).toBe("detail-203");
   expect(lessonTopic["basit-esitsizlikler"]).toBe("detail-204");
-  expect(lessonById("birinci-dereceden-denklemler")?.questions).toEqual([]);
-  expect(lessonById("basit-esitsizlikler")?.questions).toEqual([]);
+  for (const id of ["birinci-dereceden-denklemler", "basit-esitsizlikler"]) {
+    const questions = lessonById(id)!.questions;
+    expect(questions).toHaveLength(10);
+    expect(new Set(questions.map((question) => question.id)).size).toBe(10);
+    expect(
+      questions.every((question) =>
+        question.id.startsWith(`f013-foundation-${id}-`),
+      ),
+    ).toBe(true);
+  }
   expect(lessons.flatMap((lesson) => lesson.questions).length).toBeGreaterThan(
     115,
   );

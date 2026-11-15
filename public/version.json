@@ -1,7 +1,7 @@
 {
-  "version": "0.12.0",
+  "version": "0.13.0",
   "channel": "alpha",
   "notes": {
-    "tr": "30 yeni kapsamlı ünite ve 330 açıklamalı özgün soru. Faiz, karışım, işçi-havuz ve hız; kalıtım; sıvılar/gazlar; optik; fiiller; yakın tarih. Üç temel biyoloji konusunun soru çalışmaları tamamlandı. Denemeler yeni başlangıçta mevcut havuzdan çeşitlenir; devam eden deneme ve eski kayıtlar korunur. GitHub Pages ve çevrimdışı kullanım sürer."
+    "tr": "Önceden anlatımı hazır olan 13 temel matematik, kimya ve tarih başlığına 130 açıklamalı özgün soru eklendi. Sayı basamakları, bölünebilme, EBOB–EKOK, denklemler, eşitsizlikler, katman elektron dizilimi ve tarihin ilk yedi başlığı artık doğrudan uygulama içinden çalışılabiliyor. Mevcut 1130 soru, ders anlatımları, modeller ve kişisel kayıtlar korunur. İlk 138 çalışma başlığının anlatım ve soru çalışması hazırdır; bütün 479 başlığın tamamlandığı anlamına gelmez."
   }
 }

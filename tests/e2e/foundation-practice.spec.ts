@@ -1,11 +1,10 @@
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
-const titles: Record<string, string> = {
-  karbohidratlar: "Karbohidratlar",
-  lipitler: "Lipitler",
-  vitaminler: "Vitaminler",
-};
-import { foundationQuestionSets } from "../../src/learning/forge012FoundationQuestions";
+import { allFoundationPracticeSets } from "../../src/learning/forge013FoundationQuestions";
+import type { Question } from "../../src/domain/model";
+const titles = Object.fromEntries(
+  allFoundationPracticeSets.map((pack) => [pack.lessonId, pack.lessonTitle]),
+);
 import type { AppState } from "../../src/domain/model";
 test.use({ locale: "tr-TR", timezoneId: "Europe/Istanbul", hasTouch: true });
 async function nav(page: Page, name: string) {
@@ -74,7 +73,25 @@ async function open(
   }
   await expect(page.locator(".question-panel")).toBeVisible();
 }
-for (const pack of foundationQuestionSets) {
+async function assertPassageBeforeStem(page: Page, question: Question) {
+  const passage = page.locator(".question-panel .question-passage");
+  if (!question.passage?.tr) {
+    await expect(passage).toHaveCount(0);
+    return;
+  }
+  await expect(passage).toHaveText(question.passage.tr);
+  expect(
+    await page.locator(".question-panel").evaluate((panel) => {
+      const context = panel.querySelector(".question-passage")!,
+        stem = panel.querySelector("h2")!;
+      return !!(
+        context.compareDocumentPosition(stem) & Node.DOCUMENT_POSITION_FOLLOWING
+      );
+    }),
+  ).toBe(true);
+}
+
+for (const pack of allFoundationPracticeSets) {
   test(`${pack.lessonId}: Questions opens offline and saves a real nine-of-ten result with day 3/7/21 reviews`, async ({
     page,
     context,
@@ -93,6 +110,7 @@ for (const pack of foundationQuestionSets) {
       await expect(page.locator(".question-panel h2")).toHaveText(
         question.prompt.tr,
       );
+      await assertPassageBeforeStem(page, question);
       await expect(page.locator(".answer")).toHaveCount(5);
       for (const [j, option] of question.options.entries())
         await expect(page.locator(".answer").nth(j)).toContainText(option.tr);
@@ -167,6 +185,7 @@ for (const pack of foundationQuestionSets) {
     await open(page, pack.lessonId, "Konu Anlatımı");
     const q = pack.questions[0];
     await expect(page.locator(".question-panel h2")).toHaveText(q.prompt.tr);
+    await assertPassageBeforeStem(page, q);
     await expect(page.locator(".answer")).toHaveCount(5);
     await page.locator(".answer").nth(q.answer).tap();
     await page

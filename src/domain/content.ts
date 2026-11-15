@@ -1,3 +1,4 @@
+import { foundation013QuestionsByLesson } from "../learning/forge013FoundationQuestions";
 import { foundationQuestionsByLesson } from "../learning/forge012FoundationQuestions";
 import { forge012MathLessons } from "../learning/forge012Math";
 import { forge012PhysicsLessons } from "../learning/forge012Physics";
@@ -877,7 +878,10 @@ export const lessons: Lesson[] = baseLessons.map((lesson) => {
         lesson);
   return {
     ...expanded,
-    questions: foundationQuestionsByLesson[expanded.id] ?? expanded.questions,
+    questions:
+      foundation013QuestionsByLesson[expanded.id] ??
+      foundationQuestionsByLesson[expanded.id] ??
+      expanded.questions,
     minutes: lessonGuides.get(expanded.id)?.minutes ?? expanded.minutes,
   };
 });
