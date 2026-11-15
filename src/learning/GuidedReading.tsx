@@ -4,6 +4,7 @@ import "./guidedJourney.css";
 import { ArrowRight, RotateCcw } from "lucide-react";
 import { VisualLab } from "./VisualLab";
 import type { LessonGuide, WorkedExample } from "./guides/types";
+import { resolveGuideStep } from "./guides/position";
 
 function moveToSection(id: string) {
   const heading = document.getElementById(id)?.querySelector("h2");
@@ -74,13 +75,26 @@ function Example({ example }: { example: WorkedExample }) {
 }
 export function GuidedReading({ guide }: { guide: LessonGuide }) {
   const prefix = useId();
-  const [journey, setJourney] = useExploration(`guide:${guide.id}`, {
+  const [journey, persistJourney] = useExploration(`guide:${guide.id}`, {
     step: 0,
     guided: false,
+    sectionCount: 0,
   });
   const stages = guide.sections.length + 2;
-  const step = Math.max(0, Math.min(stages - 1, Math.trunc(journey.step)));
+  const step = resolveGuideStep(
+    guide.id,
+    journey.step,
+    journey.sectionCount,
+    guide.sections.length,
+  );
   const guided = journey.guided;
+  function setJourney(changes: Partial<typeof journey>) {
+    persistJourney({
+      ...changes,
+      step: changes.step ?? step,
+      sectionCount: guide.sections.length,
+    });
+  }
   useEffect(() => {
     if (!guided) return;
     const frame = requestAnimationFrame(() => {

@@ -14,7 +14,7 @@ import { parseBackup } from "../domain/storage";
 import { useConfirmationDialog } from "../components/ConfirmationDialog";
 import { ResetProgress } from "../components/ResetProgress";
 import type { Settings as SettingsType } from "../domain/model";
-const VERSION = "0.16.0";
+import { APP_VERSION } from "../version";
 function NumericControl({
   label,
   value,
@@ -239,9 +239,9 @@ export function Settings({
         !/^\d+\.\d+\.\d+$/.test(data.version)
       )
         throw Error();
-      setNewVersion(data.version !== VERSION ? data.version : "");
+      setNewVersion(data.version !== APP_VERSION ? data.version : "");
       setUpdateMessage(
-        t(data.version === VERSION ? "updateCurrent" : "updateReady"),
+        t(data.version === APP_VERSION ? "updateCurrent" : "updateReady"),
       );
       if ("serviceWorker" in navigator) {
         const reg = await navigator.serviceWorker.getRegistration();
@@ -381,7 +381,7 @@ export function Settings({
           <h2>{t("updates")}</h2>
           <p className="version-row">
             <span>{t("version")}</span>
-            <strong>{VERSION} alpha</strong>
+            <strong>{APP_VERSION} alpha</strong>
           </p>
           <p className="small muted">
             {native ? t("nativeUpdates") : t("scopeNote")}

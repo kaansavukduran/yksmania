@@ -1,3 +1,21 @@
+# 0.17.0 geliştirme checkpoint'i — henüz yayımlanmadı
+
+Güncel kaynakta 321 anlatım,293 ayrıntılı rehber,321 yerleşik özet ve3.040 özgün soru vardır;479 başlığın ilk318'i anlatım ve soruyla eşleşir. 259–318 aralığında57 yeni anlatım ve mevcut paragraf/elektrik alanı/kimyasal denge rehberlerine ekler bulunur. Üç ileri soru seti ayrı tutulur; eski anlatım kimlikleri ve özgün soru sıraları korunur. Bu checkpoint canlı0.16'nın yerine yayımlanmış sayılmaz.
+
+Yeni ortak çözüm rehberi20 özgün soruda bilgi→yöntem→tek tek adım→açık tam çözüm sunar:40 adım ve60 ayrı şık gerekçesi. Diğer3.020 soru kendi mevcut ipucunu ve açıklamasını kullanır; hepsinde ayrıntılı rehber tamamlandı denmez. Denemelerde öğrenme/simülasyon seçimi, açık yardım kapısı, kalıcı soru bazlı yardım seviyesi ve ayrı bağımsız/yardımlı doğru sayıları vardır. Net değişmez; yardım süreyi, şıkları, cevapları veya işaretleri sıfırlamaz. Kök/pasaj/şık sırası/anahtar/açıklama kimlik eşleşmesi, eski denemeye değişmiş soru rehberinin bağlanmasını engeller.
+
+Bağımsız okumada Newton n4'te sıfır kuvvetin de kapsandığı gerçek öncül kusuru bulundu. Yeni soruda sıfırdan farklı net kuvvet koşulu açıklandı; kimlik/anahtar/şıklar korunur. Tarihsel golden fixture'lar değiştirilmedi; yalnız bu kök düzeltmesi adlandırılmış dar bir istisnayla denetlenir. Kaydedilmiş eski deneme anlık görüntüsü yeniden yazılmaz. Eski rehberde örnek/hatırlama adımını kaydırmadan yeni bölümler eklemek için okuma konumu koruması eklendi. Görünen sürüm tek package kaynağından gelir.
+
+Check,derleme ve766/766 birim testi geçti. P0+eski soru/deneme tarayıcı koşusunda11 PASS/1 yanlış switch seçicisi FAIL; seçici düzeltildikten sonra büyük yazılı mobil kontrol de geçti. Ayrıca gerçek taşma ve şık listesi girintisi onarıldı;320px/UI200/yazı150,iki gerçekten yüklenen yazı tipi,bütün çözüm sözcükleri,dokunma veaxe kabulü geçti. İlk başarısız kayıtlar korunur.675 tarayıcı vakası toplanır; tamamı bu checkpoint'te henüz koşulmadı.49 model ailesi native/Pages betikleri yazıldı; bu iki yeni aile grubunun kabulü bekliyor. Bilimsel ikinci okuyucu ve kaynak okuma kanıtları, kullanıcı arayüzü/yayın kabulü yerine sayılmaz.
+
+Android kalıcı imza altyapısı ve sertifika kontrolü hazırdır; kullanıcı secret kurulumunu açıkça erteledi. Yapılandırma yoksa Android işi SKIPPED olur; web ve masaüstü doğrulaması sürer. APK veya bütün platformlu release tamamlandı denmez. Tam release işi APK'yı ve sabit sertifikayı ayrıca zorunlu tutar. Özel imza anahtarı Git'e eklenmez.0.16 debug APK'larının imza değişimi hakkındaki tarihsel uyarı geçerlidir.
+
+Sıradaki somut iş:319–348 kaynak paketini kaydetmek, DNA rehberine eski7 bölümü/5 soruyu koruyarak eklemek; sonra bütünleşik tarayıcı,ilk çevrimdışı kullanım,0.16→0.17 veri koruma,Pages ve masaüstü kabulünü kapatmak. Bricolage/marka, yeni konuların kademeli rehberleri ve bütün479 başlığın derinlik denetimi devam eden kapsamdadır. Arka plan otomasyonu veya tam arşiv tamamlanması iddiası yoktur.
+
+---
+
+## Önceki yayımlanmış kayıt
+
 # 0.16.0 — web ve alpha paket yayını doğrulandı
 
 Çalışma sırasının 199–258. başlıkları: 60 yeni etkileşimli ünite, 678 bölüm/1.356 paragraf, 248 tam çözüm, 248 hatırlama ve 600 özgün soru. Toplam 264 anlatım/236 rehber/264 yerleşik özet/2.440 soru; ilk 258/479 hazır. Öğrenci PDF yüklemez. Eski 1.840 soru ve 205 öğretim kaydı korunur. AYT kataloğu 45/6075 s; eski 37 soruluk devam eden taslak bütün soruları ve süresiyle korunur.

@@ -147,14 +147,14 @@ async function readableGeometry(page: Page, lesson: LessonCase) {
         control: boolean;
       }[] = [];
       for (const element of lab.querySelectorAll<HTMLElement>(
-        "button,strong,h3,h4,p,label",
+        "button,strong,h3,h4,p,label,legend,li,figcaption,output,dt,dd",
       )) {
         if (!element.getClientRects().length) continue;
         const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
         let node: Node | null;
         while ((node = walker.nextNode())) {
           for (const match of (node.textContent ?? "").matchAll(
-            /(?<!\p{L})(?:Tahminimi|Seçimin|karşılaştır|Koordinasyon|örgütlenme|İlerleme|Kapasitenin|gerçekleşmesi|karşılaştırma|stokiyometrik|yükseltgenme|ağırlıklandır)(?!\p{L})/giu,
+            /\p{L}[\p{L}\p{M}]*/gu,
           )) {
             const range = document.createRange();
             range.setStart(node, match.index!);
@@ -217,6 +217,16 @@ async function readableGeometry(page: Page, lesson: LessonCase) {
   expect(geometry.resultText!.length).toBeGreaterThan(20);
   expect(geometry.resultFont).toBeGreaterThanOrEqual(24);
   expect(geometry.noteTop).toBeGreaterThanOrEqual(geometry.articleBottom);
+  const splitWords = geometry.words.filter((word) => word.lines !== 1);
+  if (splitWords.length)
+    await test.info().attach("split-visible-words", {
+      body: JSON.stringify(
+        { lessonId: lesson.id, labFont: geometry.labFont, words: splitWords },
+        null,
+        2,
+      ),
+      contentType: "application/json",
+    });
   expect(geometry.words.length).toBeGreaterThan(0);
   for (const word of geometry.words) {
     if (word.control)
@@ -254,6 +264,8 @@ for (const lesson of units) {
     page.on("pageerror", (e) => errors.push(String(e)));
     page.on("console", (message) => {
       if (
+        (message.type() === "error" &&
+          !/\/favicon\.ico(?:[?#]|$)/.test(message.location().url)) ||
         /Maximum update depth|Minified React error|Too many re-renders|Invalid hook call/.test(
           message.text(),
         )
@@ -311,6 +323,15 @@ for (const lesson of units) {
   test(`${lesson.id}: actual touch interaction and HTML results fit 320px with UI200/text150 and reduced motion`, async ({
     page,
   }) => {
+    const errors: string[] = [];
+    page.on("pageerror", (error) => errors.push(String(error)));
+    page.on("console", (message) => {
+      if (
+        message.type() === "error" &&
+        !/\/favicon\.ico(?:[?#]|$)/.test(message.location().url)
+      )
+        errors.push(message.text());
+    });
     await page.goto("/");
     await nav(page, "Ayarlar");
     await page.getByLabel("Tema", { exact: true }).selectOption("light");
@@ -329,11 +350,36 @@ for (const lesson of units) {
     await lesson.interact(page, lab);
     await lesson.assertOutcome(page, lab);
     await readableGeometry(page, lesson);
+    await nav(page, "Ayarlar");
+    await page.getByLabel("Yazı tipi", { exact: true }).selectOption("lexend");
+    const loadedFonts = await page.evaluate(async () => {
+      const rows = [];
+      for (const weight of [400, 600, 700]) {
+        const faces = await document.fonts.load(
+          `${weight} 45px "Lexend"`,
+          "Çığ Öş Üç İğ Aa",
+        );
+        rows.push({
+          weight,
+          count: faces.length,
+          loaded: faces.every((f) => f.status === "loaded"),
+        });
+      }
+      return rows;
+    });
+    for (const font of loadedFonts) {
+      expect(font.count, `Lexend ${font.weight}`).toBeGreaterThan(0);
+      expect(font.loaded).toBe(true);
+    }
+    await openFromCourses(page, lesson);
+    await lesson.assertOutcome(page, page.locator(lesson.lab));
+    await readableGeometry(page, lesson);
     const scan = await new AxeBuilder({ page }).include("main").analyze();
     expect(
       scan.violations.filter((v) =>
         ["serious", "critical"].includes(v.impact ?? ""),
       ),
     ).toEqual([]);
+    expect(errors).toEqual([]);
   });
 }

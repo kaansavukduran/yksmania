@@ -1,3 +1,4 @@
+import { publishedQuestion } from "./helpers/publishedQuestion";
 import { createHash } from "node:crypto";
 import { expect, it } from "vitest";
 import stageQuestions from "./fixtures/source-stage-017-questions.json";
@@ -37,7 +38,7 @@ it("retains every previously verified source question and teaching field while a
   expect(all.length).toBeGreaterThanOrEqual(2440);
   expect(byId.size).toBe(all.length);
   for (const question of oldQuestions)
-    expect(byId.get(question.id), question.id).toEqual(question);
+    expect(byId.get(question.id), question.id).toEqual(publishedQuestion(question));
   expect(Object.keys(oldTeaching)).toHaveLength(235);
   for (const [id, hash] of Object.entries(oldTeaching)) {
     const lesson = lessonById(id)!;

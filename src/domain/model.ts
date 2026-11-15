@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { examDraftSchema, examSessionSchema } from "./examModel";
 import { focusTimerSchema, initialFocusTimer } from "./focusTimer";
+import { helpLevelSchema, type QuestionGuidance } from "./questionHelpModel";
 export type Locale = "tr";
 export type Text = { tr: string };
 export const txt = (tr: string): Text => ({ tr });
@@ -42,13 +43,19 @@ export const settingsSchema = z.object({
     .transform((v) => v || DEFAULT_EXAM_DATE),
 });
 export type Settings = z.infer<typeof settingsSchema>;
-export const responseSchema = z.object({
-  questionId: id,
-  selected: z.number().int().min(0).max(10),
-  correct: z.boolean(),
-  assisted: z.boolean(),
-  confidence: z.enum(["low", "medium", "high"]),
-});
+export const responseSchema = z
+  .object({
+    questionId: id,
+    selected: z.number().int().min(0).max(10),
+    correct: z.boolean(),
+    assisted: z.boolean(),
+    confidence: z.enum(["low", "medium", "high"]),
+    helpLevel: helpLevelSchema.optional(),
+  })
+  .refine(
+    (response) => !(response.helpLevel && !response.assisted),
+    "HELP_REQUIRES_ASSISTED_RESPONSE",
+  );
 export type Response = z.infer<typeof responseSchema>;
 const sessionSchema = z.object({
   id,
@@ -81,6 +88,7 @@ export const draftSchema = z.object({
   selected: z.number().int().min(0).max(10).nullable(),
   checked: z.boolean(),
   hint: z.boolean(),
+  helpLevel: helpLevelSchema.optional(),
   confidence: z.enum(["low", "medium", "high"]),
   note: z.string().max(20000),
   startedAt: z.number(),
@@ -190,6 +198,7 @@ export interface Question {
   hint: Text;
   explanation: Text;
   skill: string;
+  guidance?: QuestionGuidance;
 }
 export interface Lesson {
   id: string;

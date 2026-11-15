@@ -1,3 +1,17 @@
+# 0.17 kaynak checkpoint'i — yayın kapsamından ayrı
+
+Gerçek kaynak sayımı:325 kayıt içinde321 anlatım ve4 yalnız-soru seti;293 derin rehber,321 yerleşik özet,3.040 özgün soru. Çalışma sırasının ilk318/479 başlığında anlatım+soru eşleşir. Bu sayım bütün alt becerilerin ya da bütün kaynak arşivinin tamamlandığı anlamına gelmez; canlı sürüm halen aşağıdaki0.16 kaydıdır.
+
+Yeni259–318 paketi57 anlatım+üç eski rehbere derin ekler ve600 soru içerir. İleri paragraf/elektrik alanı/denge setleri ayrı soru kayıtlarıdır. Deneme kataloğu15 set:TYT110/9075s,AYT55/7425s ve13 branş;tam120/80 dağılım değildir. Kaydedilmiş45 soruluk eski AYT, kendi soruları ve6075s süresiyle kalır.
+
+Ayrıntılı kademeli yardım20/3040 soruda yazıldı:40 gerçek adım,60 şık gerekçesi. Kalan3020 mevcut kısa ipucu+anlamlı açıklamaya sahiptir; ayrıntılı rehber eksikleri görünmez varsayılmaz. Yardımlı/bağımsız performans ayrı; net hesabı değişmez. n4'ün F≠0 öncül düzeltmesi yeni soru köküne işlenir,eski deneme snapshot'ı korunur.
+
+319–348 ve sonraki kaynak aileleri ayrı üretim/bağımsız inceleme aşamasındadır; bu kaynak sayımına veya canlıya eklenmiş sayılmaz. Doğrulanmış resmî kitapçık ve izin kaydı olmayan özgün sorulara ÖSYM etiketi verilmez.
+
+---
+
+## Önceki yayımlanmış kapsam
+
 # İçerik kapsamı — yayımlanmış 0.16.0
 
 Çalışma sırasının 199–258. başlıkları için iki kaynak paketi tek 60 ünitelik güncellemede birleştirildi. 610 birim, 548 tarayıcı, paketli Windows/Linux ve Pages kabulüyle yayımlandı. Aşağıdaki sayılar yayımlanmış C7 kaynak sayımıdır; bütün arşivin tamamlandığı iddiası değildir.
