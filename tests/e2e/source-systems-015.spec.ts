@@ -147,14 +147,14 @@ async function readableGeometry(page: Page, lesson: LessonCase) {
         control: boolean;
       }[] = [];
       for (const element of lab.querySelectorAll<HTMLElement>(
-        "button,strong,h3,h4,p",
+        "button,strong,h3,h4,p,label",
       )) {
         if (!element.getClientRects().length) continue;
         const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
         let node: Node | null;
         while ((node = walker.nextNode())) {
           for (const match of (node.textContent ?? "").matchAll(
-            /(?<!\p{L})(?:Tahminimi|Seçimin|karşılaştır|Koordinasyon|örgütlenme)(?!\p{L})/giu,
+            /(?<!\p{L})(?:Tahminimi|Seçimin|karşılaştır|Koordinasyon|örgütlenme|İlerleme|Kapasitenin|gerçekleşmesi|karşılaştırma|stokiyometrik|yükseltgenme|ağırlıklandır)(?!\p{L})/giu,
           )) {
             const range = document.createRange();
             range.setStart(node, match.index!);
@@ -252,6 +252,14 @@ for (const lesson of units) {
     ).toBeVisible();
     const errors: string[] = [];
     page.on("pageerror", (e) => errors.push(String(e)));
+    page.on("console", (message) => {
+      if (
+        /Maximum update depth|Minified React error|Too many re-renders|Invalid hook call/.test(
+          message.text(),
+        )
+      )
+        errors.push(message.text());
+    });
     const before = learningEvidence(await stored(page));
     await openFromCourses(page, lesson);
     const lab = page.locator(lesson.lab);

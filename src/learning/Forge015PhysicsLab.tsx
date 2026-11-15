@@ -1,4 +1,11 @@
-import { useId, type ReactNode } from "react";
+import {
+  useId,
+  useLayoutEffect,
+  useRef,
+  useState,
+  type CSSProperties,
+  type ReactNode,
+} from "react";
 import { ModelNumber } from "./ModelNumber";
 import { useExploration } from "./useExploration";
 import {
@@ -120,6 +127,12 @@ type PlotScale = {
   yMin: number;
   yMax: number;
 };
+type PlotView = {
+  compact: boolean;
+  left: number;
+  right: number;
+  unitsPerPixel: number;
+};
 function plotScale(points: Vector2[]): PlotScale {
   const xMin = Math.min(-2, ...points.map((p) => p.x)),
     xMax = Math.max(2, ...points.map((p) => p.x)),
@@ -147,15 +160,55 @@ function Plot({
   title: string;
   unit: string;
   points: Vector2[];
-  children: (p: PlotScale, uid: string) => ReactNode;
+  children: (p: PlotScale, uid: string, view: PlotView) => ReactNode;
   kind: string;
 }) {
   const uid = useId(),
+    ref = useRef<SVGSVGElement>(null),
+    [contentWidth, setContentWidth] = useState(700),
     p = plotScale(points),
+    compact = contentWidth < 770,
+    dataLeft = p.x(p.xMin),
+    dataRight = p.x(p.xMax),
+    dataTop = p.y(p.yMax),
+    dataBottom = p.y(p.yMin),
+    width = Math.max(140, contentWidth),
+    scale = Math.min(
+      Math.max(24, width - 104) / (dataRight - dataLeft),
+      260 / (dataBottom - dataTop),
+    ),
+    unitsPerPixel = compact ? 1 / scale : 1,
+    spareWidth = width - (dataRight - dataLeft) * scale,
+    left = compact ? dataLeft - (64 + (spareWidth - 104) / 2) / scale : 0,
+    right = compact ? left + width / scale : 700,
+    top = compact ? dataTop - 110 / scale : 0,
+    height = compact ? dataBottom - dataTop + 170 / scale : 400,
+    plotLeft = compact ? left + 64 / scale : 65,
+    plotRight = compact ? right - 12 / scale : 635,
+    labelSize = compact ? 16.5 / scale : 15,
     step = Math.max(
       1,
-      Math.ceil(Math.max(p.xMax - p.xMin, p.yMax - p.yMin) / 6),
+      Math.ceil(Math.max(p.xMax - p.xMin, p.yMax - p.yMin) / (compact ? 3 : 6)),
     );
+  useLayoutEffect(() => {
+    const svg = ref.current;
+    if (!svg) return;
+    const measure = () => {
+      const style = getComputedStyle(svg),
+        next =
+          svg.getBoundingClientRect().width -
+          parseFloat(style.borderLeftWidth) -
+          parseFloat(style.borderRightWidth);
+      if (next > 0)
+        setContentWidth((previous) =>
+          Math.abs(previous - next) < 0.25 ? previous : next,
+        );
+    };
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(svg);
+    return () => observer.disconnect();
+  }, []);
   const ticks = (lo: number, hi: number) =>
     Array.from(
       { length: Math.max(0, Math.floor(hi / step) - Math.ceil(lo / step) + 1) },
@@ -163,7 +216,14 @@ function Plot({
     );
   return (
     <svg
-      viewBox="0 0 700 400"
+      ref={ref}
+      viewBox={`${left} ${top} ${right - left} ${height}`}
+      style={
+        {
+          "--physics015-label-size": `${labelSize}px`,
+          ...(compact ? { height: (dataBottom - dataTop) * scale + 172 } : {}),
+        } as CSSProperties
+      }
       role="img"
       aria-labelledby={`${uid}-title`}
       data-plot={kind}
@@ -186,31 +246,53 @@ function Plot({
       </defs>
       {ticks(p.xMin, p.xMax).map((v) => (
         <g key={`x${v}`}>
-          <path className="physics015-grid-line" d={`M${p.x(v)} 65V340`} />
-          <text x={p.x(v)} y="365" textAnchor="middle">
+          <path
+            className="physics015-grid-line"
+            d={`M${p.x(v)} ${compact ? dataTop : 65}V${compact ? dataBottom : 340}`}
+          />
+          <text
+            x={p.x(v)}
+            y={compact ? dataBottom + 36 / scale : 365}
+            textAnchor="middle"
+          >
             {fmt(v)}
           </text>
         </g>
       ))}
       {ticks(p.yMin, p.yMax).map((v) => (
         <g key={`y${v}`}>
-          <path className="physics015-grid-line" d={`M65 ${p.y(v)}H635`} />
-          <text x="48" y={p.y(v) + 5} textAnchor="end">
+          <path
+            className="physics015-grid-line"
+            d={`M${plotLeft} ${p.y(v)}H${plotRight}`}
+          />
+          <text
+            x={compact ? left + 56 / scale : 48}
+            y={compact ? p.y(v) : p.y(v) + 5}
+            dominantBaseline={compact ? "middle" : undefined}
+            textAnchor="end"
+          >
             {fmt(v)}
           </text>
         </g>
       ))}
       <path
         className="physics015-axis"
-        d={`M65 ${p.y(0)}H635M${p.x(0)} 340V60`}
+        d={`M${plotLeft} ${p.y(0)}H${plotRight}M${p.x(0)} ${compact ? dataBottom + 8 / scale : 340}V${compact ? dataTop - 8 / scale : 60}`}
       />
-      <text x="625" y="35" textAnchor="end">
+      <text
+        x={compact ? right - 12 / scale : 625}
+        y={compact ? dataTop - 70 / scale : 35}
+        textAnchor="end"
+      >
         x ({unit})
       </text>
-      <text x="80" y="35">
+      <text
+        x={compact ? left + 12 / scale : 80}
+        y={compact ? dataTop - 70 / scale : 35}
+      >
         y ({unit})
       </text>
-      {children(p, uid)}
+      {children(p, uid, { compact, left, right, unitsPerPixel })}
     </svg>
   );
 }
@@ -657,7 +739,7 @@ function Relative() {
           kind="relative-positions"
           points={[sa, sb, ea, eb]}
         >
-          {(p) => (
+          {(p, _mark, view) => (
             <>
               <path
                 className="physics015-path-guide"
@@ -682,15 +764,27 @@ function Relative() {
                 className="physics015-dot physics015-b"
               />
               {m.distance < 1e-8 ? (
-                <text x={p.x(pa.x)} y={p.y(pa.y) - 15} textAnchor="middle">
+                <text
+                  x={p.x(pa.x) - 14 * view.unitsPerPixel}
+                  y={p.y(pa.y) - 16 * view.unitsPerPixel}
+                  textAnchor="end"
+                >
                   A = B
                 </text>
               ) : (
                 <>
-                  <text x={p.x(pa.x)} y={p.y(pa.y) - 15} textAnchor="middle">
+                  <text
+                    x={p.x(pa.x) - 14 * view.unitsPerPixel}
+                    y={p.y(pa.y) - 16 * view.unitsPerPixel}
+                    textAnchor="end"
+                  >
                     A
                   </text>
-                  <text x={p.x(pb.x)} y={p.y(pb.y) + 25} textAnchor="middle">
+                  <text
+                    x={p.x(pb.x) + 14 * view.unitsPerPixel}
+                    y={p.y(pb.y) + 28 * view.unitsPerPixel}
+                    textAnchor="start"
+                  >
                     B
                   </text>
                 </>
@@ -949,7 +1043,7 @@ function River() {
           ...(m ? [m.position] : []),
         ]}
       >
-        {(p) => (
+        {(p, _mark, view) => (
           <g
             data-crossing={
               m === null ? "unavailable" : m.atBank ? "arrived" : "crossing"
@@ -957,9 +1051,12 @@ function River() {
           >
             <path
               className="physics015-bank"
-              d={`M65 ${p.y(0)}H635M65 ${p.y(width)}H635`}
+              d={`M${view.compact ? view.left + 64 * view.unitsPerPixel : 65} ${p.y(0)}H${view.compact ? view.right - 12 * view.unitsPerPixel : 635}M${view.compact ? view.left + 64 * view.unitsPerPixel : 65} ${p.y(width)}H${view.compact ? view.right - 12 * view.unitsPerPixel : 635}`}
             />
-            <text x="90" y={p.y(width) - 14}>
+            <text
+              x={view.compact ? view.left + 12 * view.unitsPerPixel : 90}
+              y={p.y(width) - (view.compact ? 32 * view.unitsPerPixel : 14)}
+            >
               Karşı kıyı
             </text>
             {landing && (

@@ -1,5 +1,7 @@
 # İçerik kapsamı — 0.14.0 adayı
 
+Son yerel C6 kontrolü: 414 birim, 361 tarayıcı, Pages/Electron ve gerçek 0.13→0.14 yükseltmesi PASS; uzak yayın henüz bekleniyor.
+
 0.14 adayı, doğrulanmış çalışma sırasının 139–168. başlıklarını kapsar. Önceden
 hazır mol ve çarpanlara ayırma anlatımları yeniden sayılmadan 28 yeni etkileşimli
 ünite eklendi: 236 bölüm, 479 paragraf, 121 çözümlü örnek, 121 hatırlama ve

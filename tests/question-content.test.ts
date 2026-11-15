@@ -68,3 +68,29 @@ it("the secant question defines both points and inverse-square field calculation
     "Noktasal bir yükün",
   );
 });
+
+it("rejects a supplied-equation reference when its relation exists only in a hint or explanation", () => {
+  const base = lessonById("paragraf")!.questions[0];
+  const missing = {
+    ...base,
+    passage: undefined,
+    prompt: txt(
+      "Bir zayıf asit ile güçlü baz verilen toplam denkleme göre eşdeğer miktarlarda tepkimeye giriyor. Son pH kesin 7 midir?",
+    ),
+    hint: txt("CH₃COOH + NaOH → CH₃COONa + H₂O"),
+    explanation: txt("CH₃COOH + NaOH → CH₃COONa + H₂O"),
+  };
+  expect(questionContentIssues(missing)).toContain(
+    "Atıf yapılan denklem soruda yok",
+  );
+  const relation = "CH₃COOH + NaOH → CH₃COONa + H₂O. ";
+  expect(
+    questionContentIssues({
+      ...missing,
+      prompt: txt(relation + missing.prompt.tr),
+    }),
+  ).toEqual([]);
+  expect(questionContentIssues({ ...missing, passage: txt(relation) })).toEqual(
+    [],
+  );
+});

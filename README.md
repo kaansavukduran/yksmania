@@ -60,24 +60,12 @@ Sıfırlama notları, ayarları ve önceki kişisel dosyaları korur.
 Node24: `npm ci`, `npm run dev`. Kontroller: `npm run check`, `npm test`,
 `npm run build`, `npm run test:e2e`, `npm run test:desktop`.
 
-Son C 6 kaynak kontrolü ve 414/414 birim testi PASS; 361 tarayıcı vakası listelendi.
-Bunlar runtime/yayın kabulü değildir. C 6 tam tarayıcı, Pages, Electron, gerçek
-0.13→0.14 web güncellemesi ve uzak CI/yayın kabulü henüz bekleniyor. Önceki
-C 4 tam koşu 359/360 PASS idi: yeni Basınç ve Rüzgârlar başlığı eski Basınç
-kopya kağıdı seçicisini belirsiz yaptı; tam düğme adına geçildi. C 4'ün 57 yeni
-ünite kabulü, 19 model ailesiyle Pages/Electron ve ayrı görsel denetimleri
-geçmişti; bu sonuçlar C 6'nın yeni runtime kabulü yerine kullanılamaz.
-
-C 5/C 6'da iki gerçek kusur onarıldı: coğrafya gerekçesi state sınırını aşmaması
-için 120 karakterle hem girişte hem gösterimde sınırlandı; sayı alanında
-1800 seri yazarken ara değerin 4000'e kırpılması, yerel taslak ve blur/Enter
-ile tek commit kullanılarak düzeltildi. 361. regresyon uzun gerekçeyi
-çevrimdışı yeniden açar. Sayısal smoke girdileri gerçek Tab ile commit eder.
-Önceki başarısızlıklar özel kanıtlarda ve tarihsel kayıtta korunur.
-
-Fiziksel Android, temiz Windows kurulumu, portable taşıma ve iki native sürüm
-arasında veri koruyan yükseltme NOT TESTED. Son doğrulanmış yayımlanmış paket
-0.13.0'dır; bu 0.14 adayının yayınlandığı anlamına gelmez.
+Son C6 kaynak/414 birim/derleme ve 361/361 tarayıcı kabulü PASS. Pages prefix
+ve gerçek Electron'da 19 model ailesi, iki soru rotası, offline/reload ve
+aynı profil onay/süreç yeniden açılışı geçti. Gerçek 0.13→0.14 web güncellemesi
+bütün eski kayıtları; 105 soruluk devam eden denemeyi, cevabı/işareti/süreyi
+korudu. Yeni katalog 110 soru gösterir. Uzak CI/yayın ve yeni paket kabulü
+henüz beklenir; son yayımlanmış doğrulanmış paket 0.13.0'dır.
 
 Web ilk çevrimiçi hazırlıktan sonra, native arayüz yerel dosyalardan çalışır.
 Vercel/Pages ayrı ilerleme saklar; kişisel yedekle aktarılır. Windows Setup/Portable,

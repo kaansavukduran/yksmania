@@ -27,6 +27,20 @@ test("four new lessons expose explanations, actual changing models and saved off
       "Bu cihazda kaydedildi",
     );
   }
+  await page.evaluate(async () => {
+    await navigator.serviceWorker.ready;
+    if (!navigator.serviceWorker.controller)
+      await new Promise<void>((resolve) =>
+        navigator.serviceWorker.addEventListener(
+          "controllerchange",
+          () => resolve(),
+          { once: true },
+        ),
+      );
+  });
+  await expect
+    .poll(() => page.evaluate(() => navigator.serviceWorker.controller?.state))
+    .toBe("activated");
   await context.setOffline(true);
   await page.reload();
   const lab = page.locator(".periodic-comparison");
