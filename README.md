@@ -1,10 +1,10 @@
 # YKSMania
 
-Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.14.0 yayın adayı**; son yayımlanmış doğrulanmış paket 0.13.0.
+Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.14.0 alpha yayımlandı**; Windows, Linux ve Android paketleri [sürüm sayfasında](https://github.com/kaansavukduran/yksmania/releases/tag/v0.14.0-alpha.1).
 
 [Vercel](https://yksmania.vercel.app) · [GitHub Pages](https://kaansavukduran.github.io/yksmania/) · [GitHub deposu](https://github.com/kaansavukduran/yksmania)
 
-0.14 adayı, doğrulanmış çalışma sırasının 139–168. başlıklarını kapsar. Önceden
+0.14 sürümü, doğrulanmış çalışma sırasının 139–168. başlıklarını kapsar. Önceden
 hazır mol ve çarpanlara ayırma anlatımları yeniden sayılmadan 28 yeni etkileşimli
 ünite eklendi: 236 bölüm, 479 paragraf, 121 çözümlü örnek, 121 hatırlama ve
 280 özgün beş seçenekli soru. Toplam 174 anlatım, 146 ayrıntılı rehber,
@@ -64,8 +64,10 @@ Son C6 kaynak/414 birim/derleme ve 361/361 tarayıcı kabulü PASS. Pages prefix
 ve gerçek Electron'da 19 model ailesi, iki soru rotası, offline/reload ve
 aynı profil onay/süreç yeniden açılışı geçti. Gerçek 0.13→0.14 web güncellemesi
 bütün eski kayıtları; 105 soruluk devam eden denemeyi, cevabı/işareti/süreyi
-korudu. Yeni katalog 110 soru gösterir. Uzak CI/yayın ve yeni paket kabulü
-henüz beklenir; son yayımlanmış doğrulanmış paket 0.13.0'dır.
+korudu. Yeni katalog 110 soru gösterir. Aynı kaynakta CI dört iş, canlı web
+361/361 ve Pages üç iş PASS; sekiz alpha dosyası yayımlandı. Android sürüm
+kodu 22 ve v2 imzası doğrulandı. Fiziksel Android, temiz Windows kurulumu,
+portable taşıma ve native sürümler arası yükseltme ayrıca test edilmedi.
 
 Web ilk çevrimiçi hazırlıktan sonra, native arayüz yerel dosyalardan çalışır.
 Vercel/Pages ayrı ilerleme saklar; kişisel yedekle aktarılır. Windows Setup/Portable,

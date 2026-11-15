@@ -1,8 +1,8 @@
-# Güncel yön ve kalan çalışma — 0.14.0 adayı
+# Güncel yön ve kalan çalışma — 0.14.0
 
-Son yerel C6 kontrolü: 414 birim, 361 tarayıcı, Pages/Electron ve gerçek 0.13→0.14 yükseltmesi PASS; uzak yayın henüz bekleniyor.
+Son C6 yerel kabulü ve aynı kaynakla uzak yayın tamamlandı: 414 birim, CI ve canlıda ayrı 361/361 tarayıcı, Pages üç iş, Windows/Linux paketli çevrimdışı kabul ve Android 0.14.0/kod 22 imza kontrolü PASS. Sekiz alpha dosyası yayımlandı; fiziksel cihaz ve native sürümler arası yükseltme ayrı kapsamdadır.
 
-0.14 adayı, doğrulanmış çalışma sırasının 139–168. başlıklarını kapsar. Önceden
+0.14 sürümü, doğrulanmış çalışma sırasının 139–168. başlıklarını kapsar. Önceden
 hazır mol ve çarpanlara ayırma anlatımları yeniden sayılmadan 28 yeni etkileşimli
 ünite eklendi: 236 bölüm, 479 paragraf, 121 çözümlü örnek, 121 hatırlama ve
 280 özgün beş seçenekli soru. Toplam 174 anlatım, 146 ayrıntılı rehber,
@@ -19,9 +19,9 @@ Başlık listesinin bulunması veya PDF'nin indirilmesi öğretim tamamlanması 
 Öğretim hedefi 28 Şubat 2027, değiştirilebilir varsayılan sınav 18 Haziran 2027;
 öğrenme günü 1, tekrarlar 3/7/21. Keşif ve süre öğrenme kredisi oluşturmaz.
 Öğrenciye kaynak yükleme işi verilmez. Mevcut notlar, özgün tekrar tarihleri,
-devam eden soru/deneme tam kopyaları korunur. Şimdiki öncelik bu adayın gerçek
-web/Pages/native yükseltme ve yayın kapılarını tamamlamaktır; ardından kaynak
-sırasıyla TYT ve AYT Sayısal kapsamını genişletmek sürer.
+devam eden soru/deneme tam kopyaları korunur. 0.14 web/Pages/paket yayın
+kapıları tamamlandı; kaynak sırasıyla TYT ve AYT Sayısal kapsamını
+genişletmek sürer. Web güncellemesi ile native sürümler arası yükseltme farklı kabullerdir.
 
 TYT 110/AYT 25 ve 12 branş kısa pratik bankaları tam resmî deneme diye sunulmaz.
 Fiziksel Android, temiz Windows kurulum, portable taşıma ve native sürümler
