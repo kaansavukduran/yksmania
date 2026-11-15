@@ -4,6 +4,33 @@ import { VitePWA } from "vite-plugin-pwa";
 const appBase = process.env.YKSMANIA_BASE_PATH || "./";
 export default defineConfig({
   base: appBase,
+  build: {
+    rolldownOptions: {
+      output: {
+        codeSplitting: {
+          groups: [
+            {
+              name: "learning-model",
+              test: /[\\/]src[\\/]domain[\\/](?:model|examModel|focusTimer)\.ts$/,
+              priority: 100,
+            },
+            {
+              // Keep each reviewed content pack below the offline cache limit.
+              // The model group owns their shared runtime dependencies.
+              name: (id) => {
+                const pack = id.match(
+                  /[\\/]learning[\\/]forge(\d{3})[A-Z][^\\/]*\.ts$/,
+                );
+                return pack ? `learning-${pack[1]}` : null;
+              },
+              test: /[\\/]learning[\\/]forge\d{3}[A-Z][^\\/]*\.ts$/,
+              priority: 50,
+            },
+          ],
+        },
+      },
+    },
+  },
   plugins: [
     react(),
     VitePWA({

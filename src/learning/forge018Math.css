@@ -1,0 +1,236 @@
+.m018-lab {
+  color: var(--text);
+  min-width: 0;
+}
+.m018-lab h3,
+.m018-lab h4 {
+  margin-block: 0 1rem;
+  line-height: 1.4;
+}
+.m018-lab > h4 {
+  margin-block-start: 1.5rem;
+}
+.m018-lab p {
+  margin-block: 0.75rem 1rem;
+  line-height: 1.7;
+}
+.m018-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1.25rem;
+  margin-block: 1.25rem;
+}
+.m018-field {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.m018-field label,
+.m018-prediction > label {
+  display: block;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.m018-lab select,
+.m018-lab textarea,
+.m018-lab button {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  box-sizing: border-box;
+  font: inherit;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 0.625rem 0.75rem;
+}
+.m018-lab input[type="range"] {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  margin: 0;
+  accent-color: var(--accent);
+}
+.m018-lab textarea {
+  resize: vertical;
+}
+.m018-lab :is(select, input, textarea, button):focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+.m018-lab button {
+  cursor: pointer;
+  white-space: normal;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.m018-lab button:disabled {
+  cursor: default;
+  opacity: 0.65;
+}
+.m018-field output {
+  display: block;
+  line-height: 1.6;
+}
+.m018-figure {
+  margin: 1.5rem 0;
+  min-width: 0;
+}
+.m018-diagram {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 780px;
+  margin: 1rem auto;
+  overflow: visible;
+}
+.m018-diagram text {
+  fill: var(--text);
+  font-size: inherit;
+  font-family: inherit;
+}
+.m018-diagram :is(line, path, circle, rect) {
+  vector-effect: non-scaling-stroke;
+}
+.m018-plot,
+.m018-label-bg {
+  fill: var(--surface);
+}
+.m018-plot {
+  stroke: var(--border);
+  stroke-width: 1;
+}
+.m018-axis {
+  stroke: var(--text);
+  stroke-width: 2;
+  fill: none;
+}
+.m018-grid {
+  stroke: var(--muted);
+  stroke-width: 1;
+  stroke-dasharray: 3 5;
+  opacity: 0.5;
+}
+.m018-main-line {
+  stroke: var(--accent);
+  stroke-width: 3;
+  fill: none;
+}
+.m018-helper-line {
+  stroke: var(--text);
+  stroke-width: 2;
+  stroke-dasharray: 7 5;
+  fill: none;
+}
+.m018-ratio-line {
+  stroke: var(--mint);
+  stroke-width: 4;
+  stroke-dasharray: 3 5;
+  fill: none;
+}
+.m018-right-angle {
+  stroke: var(--text);
+  stroke-width: 2;
+  fill: none;
+}
+.m018-mirror {
+  stroke: var(--mint);
+  stroke-width: 3;
+  stroke-dasharray: 10 6;
+  fill: none;
+}
+.m018-triangle {
+  fill: color-mix(in srgb, var(--accent) 8%, transparent);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.m018-point {
+  stroke: var(--text);
+  stroke-width: 2;
+  fill: var(--surface);
+}
+.m018-point.m018-a {
+  fill: var(--accent);
+}
+.m018-point.m018-b {
+  fill: var(--mint);
+}
+.m018-point.m018-result {
+  fill: var(--text);
+  stroke: var(--surface);
+  stroke-width: 2;
+}
+.m018-center-mark {
+  stroke: var(--mint);
+  stroke-width: 2;
+  fill: none;
+}
+.m018-figure figcaption,
+.m018-caption {
+  color: var(--muted);
+  line-height: 1.7;
+}
+.m018-result {
+  margin-block: 1.5rem;
+  padding-block: 1rem;
+  border-block: 1px solid var(--border);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.m018-point-list {
+  padding-inline-start: 1.25em;
+  margin-block: 0.75rem 1rem;
+  line-height: 1.7;
+}
+.m018-point-list li {
+  margin-block: 0.5rem;
+}
+.m018-prediction {
+  margin-block-start: 1.5rem;
+  padding-block-start: 1.5rem;
+  border-block-start: 1px solid var(--border);
+  min-width: 0;
+}
+.m018-prediction textarea {
+  margin-block: 0.5rem;
+}
+.m018-lab .m018-compare {
+  background: var(--accent);
+  color: var(--accent-text);
+  border-color: var(--accent);
+  font-weight: 600;
+  margin-block: 0.75rem;
+  padding-inline: 4px;
+}
+.m018-feedback {
+  margin-block: 1rem;
+  padding-block: 1rem;
+  border-block-start: 2px solid var(--mint);
+  overflow-wrap: anywhere;
+}
+[data-motion="off"] .m018-lab *,
+[data-motion="off"] .m018-lab *::before,
+[data-motion="off"] .m018-lab *::after {
+  animation: none !important;
+  transition: none !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .m018-lab *,
+  .m018-lab *::before,
+  .m018-lab *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+@media (max-width: 460px) {
+  .m018-controls {
+    grid-template-columns: 1fr;
+  }
+  .m018-lab :is(select, textarea) {
+    padding-inline: 4px;
+  }
+}

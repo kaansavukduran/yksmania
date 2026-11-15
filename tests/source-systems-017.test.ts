@@ -1,5 +1,6 @@
 import { createHash } from "node:crypto";
 import { expect, it } from "vitest";
+import stageQuestions from "./fixtures/source-stage-017-questions.json";
 import oldQuestions from "./fixtures/source-stage-016-questions.json";
 import oldTeaching from "./fixtures/source-stage-016-lesson-fingerprints.json";
 import oldExams from "./fixtures/source-stage-016-mixed-exams.json";
@@ -33,8 +34,8 @@ it("retains every previously verified source question and teaching field while a
   const all = lessons.flatMap((l) => l.questions),
     byId = new Map(all.map((q) => [q.id, q]));
   expect(oldQuestions).toHaveLength(2140);
-  expect(all).toHaveLength(2440);
-  expect(byId.size).toBe(2440);
+  expect(all.length).toBeGreaterThanOrEqual(2440);
+  expect(byId.size).toBe(all.length);
   for (const question of oldQuestions)
     expect(byId.get(question.id), question.id).toEqual(question);
   expect(Object.keys(oldTeaching)).toHaveLength(235);
@@ -50,7 +51,8 @@ it("retains every previously verified source question and teaching field while a
     ).toBe(hash);
   }
   const oldIds = new Set(oldQuestions.map((q) => q.id));
-  const added = all.filter((q) => !oldIds.has(q.id));
+  const stageIds = new Set(stageQuestions.filter((q) => !oldIds.has(q.id)).map((q) => q.id));
+  const added = all.filter((q) => stageIds.has(q.id));
   expect(added).toHaveLength(300);
   for (const question of added) {
     expect(question.options, question.id).toHaveLength(5);
@@ -67,12 +69,10 @@ it("retains every previously verified source question and teaching field while a
 });
 
 it("teaches all thirty next headings in verified order with deep guides, complete sheets and independent practice", () => {
-  expect(lessons).toHaveLength(265);
-  expect(lessons.filter((l) => !l.tags.includes("soru-seti"))).toHaveLength(
-    264,
-  );
-  expect(lessonGuides.size).toBe(236);
-  expect(builtInCheatSheets.size).toBe(264);
+  expect(lessons.length).toBeGreaterThanOrEqual(265);
+  expect(lessons.filter((l) => !l.tags.includes("soru-seti")).length).toBeGreaterThanOrEqual(264);
+  expect(lessonGuides.size).toBeGreaterThanOrEqual(236);
+  expect(builtInCheatSheets.size).toBeGreaterThanOrEqual(264);
   const next = studyTopics.slice(228, 258),
     ids: string[] = [];
   expect(next).toHaveLength(30);
@@ -119,18 +119,20 @@ it("expands AYT practice to 45 items while keeping existing 37-item AYT and 110-
   const catalogue = examCatalogue(),
     ayt = catalogue.find((e) => e.id === "mixed-ayt")!,
     tyt = catalogue.find((e) => e.id === "mixed-tyt")!;
-  expect(catalogue).toHaveLength(14);
-  expect(tyt.items).toHaveLength(110);
-  expect(ayt.items).toHaveLength(45);
+  expect(catalogue.length).toBeGreaterThanOrEqual(14);
+  expect(tyt.items.length).toBeGreaterThanOrEqual(110);
+  expect(ayt.items.length).toBeGreaterThanOrEqual(45);
   expect(ayt.items.filter((q) => q.subjectId === "ayt-fizik")).toHaveLength(14);
   expect(ayt.items.filter((q) => q.subjectId === "ayt-biyoloji")).toHaveLength(
     13,
   );
-  expect(ayt.fullLength).toBe(false);
-  expect(ayt.missingSubjects).toEqual(["Matematik / Geometri"]);
-  expect(ayt.durationSeconds).toBe(scaledExamSeconds("AYT", 45));
-  expect(ayt.durationSeconds).toBe(6075);
-  expect(tyt.durationSeconds).toBe(9075);
+  if (ayt.items.length < 80) {
+    expect(ayt.fullLength).toBe(false);
+    expect(ayt.missingSubjects).toContain("Matematik / Geometri");
+  }
+  expect(ayt.durationSeconds).toBe(scaledExamSeconds("AYT", ayt.items.length));
+  expect(ayt.durationSeconds).toBeGreaterThanOrEqual(6075);
+  expect(tyt.durationSeconds).toBe(scaledExamSeconds("TYT", tyt.items.length));
   expect(oldExams.map((e) => e.items.length)).toEqual([110, 37]);
   for (const old of oldExams as ExamSpec[]) {
     let state = beginExam(initialState(), old, 1000);

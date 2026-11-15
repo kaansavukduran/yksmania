@@ -1,12 +1,12 @@
 {
   "name": "yksmania",
-  "version": "0.16.0",
+  "version": "0.17.0",
   "description": "Offline-first YKS learning with spaced retrieval and AIONIA companions",
   "main": "desktop/main.cjs",
   "scripts": {
     "dev": "vite",
     "check": "node scripts/check-module-paths.mjs && tsc --noEmit",
-    "build": "node scripts/check-module-paths.mjs && node scripts/prepare-assets.mjs && tsc --noEmit && vite build",
+    "build": "node scripts/check-module-paths.mjs && node scripts/prepare-assets.mjs && tsc --noEmit && vite build && node scripts/verify-build-cache.mjs",
     "preview": "vite preview --host 127.0.0.1",
     "test": "vitest run",
     "test:e2e": "playwright test",

@@ -1,0 +1,210 @@
+.forge018-chemistry {
+  margin: 24px 0;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface-2);
+  color: var(--text);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.forge018-chemistry h3 {
+  margin: 0 0 18px;
+  line-height: 1.5;
+}
+.forge018-chemistry p,
+.forge018-chemistry figcaption {
+  line-height: 1.75;
+}
+.c018-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 24px;
+  margin: 24px 0;
+}
+.c018-field {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+  min-width: 0;
+}
+.c018-field output {
+  font-variant-numeric: tabular-nums;
+}
+.forge018-chemistry input[type="range"] {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  margin: 0;
+  accent-color: var(--accent);
+}
+.c018-choice {
+  min-width: 0;
+  margin: 24px 0;
+  padding: 0;
+  border: 0;
+}
+.c018-choice legend {
+  margin-bottom: 12px;
+  padding: 0;
+  line-height: 1.7;
+}
+.c018-choice > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  min-width: 0;
+}
+.forge018-chemistry button {
+  min-width: 44px;
+  min-height: 44px;
+  max-width: 100%;
+  padding: 12px 16px;
+  font: inherit;
+  line-height: 1.65;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.c018-choice button {
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  border-radius: 10px;
+}
+.c018-choice button[aria-pressed="true"] {
+  border-color: var(--accent);
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.forge018-chemistry button:focus-visible,
+.forge018-chemistry input:focus-visible,
+.forge018-chemistry textarea:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+.forge018-chemistry figure {
+  margin: 26px 0;
+  min-width: 0;
+}
+.c018-svg {
+  display: block;
+  width: 100%;
+  max-width: 460px;
+  height: auto;
+  margin: 24px auto;
+  overflow: visible;
+}
+.c018-svg text {
+  fill: var(--text);
+  font-family: inherit;
+  font-size: 22px;
+}
+.c018-line,
+.c018-arrow {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.c018-reference {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 2;
+  stroke-dasharray: 6 5;
+}
+.c018-mint,
+.c018-oxygen {
+  fill: var(--mint);
+}
+.c018-coral,
+.c018-hydrogen,
+.c018-marker {
+  fill: var(--accent);
+}
+.c018-marker {
+  stroke: var(--text);
+  stroke-width: 1;
+}
+.c018-point {
+  fill: var(--text);
+}
+.c018-cell {
+  fill: var(--bg);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.c018-result {
+  padding: 16px 0;
+  border-block: 1px solid var(--border);
+}
+.c018-result p {
+  margin: 12px 0;
+}
+.c018-prediction {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+  min-width: 0;
+  margin-top: 24px;
+}
+.c018-prediction .c018-choice {
+  margin: 0;
+}
+.forge018-chemistry textarea {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 80px;
+  font: inherit;
+  line-height: 1.7;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  background: var(--bg);
+}
+.c018-feedback {
+  border-left: 3px solid var(--accent);
+  padding: 12px 16px;
+  background: var(--bg);
+  min-width: 0;
+}
+.c018-note {
+  margin: 24px 0 0;
+}
+@media (max-width: 600px) {
+  .forge018-chemistry {
+    margin-inline: -11px;
+    padding: 16px 6px;
+  }
+  .c018-controls {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+  .c018-choice > div {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+  .forge018-chemistry button {
+    width: 100%;
+    padding-inline: 6px;
+  }
+  .forge018-chemistry textarea {
+    padding-inline: 6px;
+  }
+  .c018-feedback {
+    padding: 12px 6px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .forge018-chemistry *,
+  .forge018-chemistry *::before,
+  .forge018-chemistry *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+:root[data-motion="off"] .forge018-chemistry * {
+  animation: none !important;
+  transition: none !important;
+}
