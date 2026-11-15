@@ -1,8 +1,8 @@
 # 0.14.0: 139–168 sırasındaki 28 yeni ünitenin kaynak sınırları
 
-Son yerel C6 kontrolü: 414 birim, 361 tarayıcı, Pages/Electron ve gerçek 0.13→0.14 yükseltmesi PASS; uzak yayın henüz bekleniyor.
+Son C6 yerel kabulü ve aynı kaynakla uzak yayın tamamlandı: 414 birim, CI ve canlıda ayrı 361/361 tarayıcı, Pages üç iş, Windows/Linux paketli çevrimdışı kabul ve Android 0.14.0/kod 22 imza kontrolü PASS. Sekiz alpha dosyası yayımlandı; fiziksel cihaz ve native sürümler arası yükseltme ayrı kapsamdadır.
 
-0.14 adayı, doğrulanmış çalışma sırasının 139–168. başlıklarını kapsar. Önceden
+0.14 sürümü, doğrulanmış çalışma sırasının 139–168. başlıklarını kapsar. Önceden
 hazır mol ve çarpanlara ayırma anlatımları yeniden sayılmadan 28 yeni etkileşimli
 ünite eklendi: 236 bölüm, 479 paragraf, 121 çözümlü örnek, 121 hatırlama ve
 280 özgün beş seçenekli soru. Toplam 174 anlatım, 146 ayrıntılı rehber,

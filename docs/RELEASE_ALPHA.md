@@ -1,6 +1,6 @@
-YKSMania 0.14.0 alpha 1 — yayın adayı
+YKSMania 0.14.0 alpha 1
 
-0.14 adayı, doğrulanmış çalışma sırasının 139–168. başlıklarını kapsar. Önceden
+0.14 sürümü, doğrulanmış çalışma sırasının 139–168. başlıklarını kapsar. Önceden
 hazır mol ve çarpanlara ayırma anlatımları yeniden sayılmadan 28 yeni etkileşimli
 ünite eklendi: 236 bölüm, 479 paragraf, 121 çözümlü örnek, 121 hatırlama ve
 280 özgün beş seçenekli soru. Toplam 174 anlatım, 146 ayrıntılı rehber,
@@ -43,11 +43,10 @@ görünüm; C4 coğrafya 28 görünüm ve 48 glif ölçümü ayrı kapsamlarda P
 Glif kontrastının en düşüğü 5,967 idi. Bu önceki görsel sonuçlar C6
 tam tarayıcı kabulü veya fiziksel cihaz testiyle eşitlenmez.
 
-Özel veri taraması 64 değişen metin yolunu, eski 8.845 ve canlı metadata'yla
+Özel veri taraması 65 değişen metin yolunu, eski 8.845 ve canlı metadata'yla
 8.959 özel kimlik/bağlantıyı kontrol etti; özel kimlik, ham PDF/binary veya
 secret örüntüsü bulunmadı. 752 bağımlılık kaydı değişmedi. Sürüm/paket
-korumasının 18 sentetik vakası PASS. CI, canlı Vercel/Pages ve yeni paket
-release kabulü henüz bekleniyor; bu yerel sonuçlar yayın kabulü sayılmaz.
+korumasının 18 sentetik vakası PASS. Uzak kabul ve paket kanıtı aşağıdadır.
 Fiziksel Android, temiz Windows kurulum, portable taşıma ve iki native sürüm
 arasında veri koruyan yükseltme NOT TESTED.
 
@@ -58,3 +57,38 @@ Windows Setup kurulum, Portable doğrudan çalıştırma içindir; Authenticode
 imzası yoktur. Linux AppImage çalıştırma izni/DEB Debian–Ubuntu; Android 0.14.0
 sürüm kodu 22, debug imzalı test APK, minimum API 24 ve güncel WebView gerektirir.
 Debug anahtarı değişebilir; kişisel ilerleme yedeğini geçişten önce dışa aktar.
+
+İlk canlı kabulün sınırı ve onarımı:
+
+İlk uzak c110f215 kaynağında CI dört iş (414 birim/361 tarayıcı) ve Pages üç
+iş PASS; canlı web 360/361 idi. Eski periyodik karşılaştırma testi, service
+worker hazır ve sayfayı kontrol ediyor olmadan ağı kapatıyordu; reload
+ERR_INTERNET_DISCONNECTED verdi. Aynı değişmeyen C6 uygulamasıyla sw.js
+yanıtı 20 saniye geciktirilince hata yeniden üretildi. Test gerçek
+serviceWorker.ready, controllerchange ve activated durumunu beklediğinde
+bütün eski çevrimdışı/model/kayıt asserleri geçti; normal preview odaklı 2/2
+ve kaynak kontrolü PASS. Test veya assertion çıkarılmadı; uygulama kodu ve
+111 çıktı dosyasının baytları değişmedi. Son aynı-SHA CI/Pages/canlı kapıları geçti.
+Uzak trace indirilemediği için trace görüldü denmedi; iş logu ve gerçek
+önce/sonra tarayıcı kanıtı kullanıldı.
+
+## Doğrulanmış yayın
+
+Kaynak `6c888e66cb81a0594264784cb760f22bed3c2dc3`. [CI 43730467669](https://github.com/kaansavukduran/yksmania/actions/runs/43730467669)
+dört iş PASS: kaynak/derleme, 414 birim, 361/361 tarayıcı; gerçek Windows ve
+Linux paketleriyle çevrimdışı kullanım, kayıt, aynı profil onayı ve yeniden
+açılış; Android paket ve imza kontrolü. [Canlı Vercel 43730808569](https://github.com/kaansavukduran/yksmania/actions/runs/43730808569)
+361/361 PASS; tam tarayıcı koşuları iki worker ile yapıldı.
+[Pages 43730804858](https://github.com/kaansavukduran/yksmania/actions/runs/43730804858)
+derleme, dağıtım ve gerçek HTTPS kabulü üç iş PASS. Her iki yayının index.html,
+sw.js ve version.json dosyaları normal TLS ile donmuş yerel karşılıklarına
+bayt eşittir; Vercel doğru kaynakla READY durumundadır.
+
+[Release 43732075907](https://github.com/kaansavukduran/yksmania/actions/runs/43732075907)
+PASS; [v0.14.0-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.14.0-alpha.1)
+sekiz dosyayla yayımlandı, taslak değil. Tag ve verified-run aynı kaynak ve
+başarılı CI'ı gösterir. SHA256SUMS.txt yedi dosya listeler; normal TLS ile
+indirilen verified-run ve Android-verification dosyalarının iki hash'i
+listeyle eşleşir. GitHub'ın sekiz varlık digest'i de karşılaştırıldı. Android
+paketi com.fragaria.yksmania, sürüm 0.14.0, sürüm kodu 22; v2 imzası PASS.
+Beş büyük paket dosyası ayrıca yerelde indirilip hash'lenmedi.
