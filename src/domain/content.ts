@@ -4,6 +4,7 @@ import { forge014ChemistryLessons } from "../learning/forge014Chemistry";
 import { forge014BiologyLessons } from "../learning/forge014Biology";
 import { forge014GeographyLessons } from "../learning/forge014Geography";
 import { forge014TurkishLessons } from "../learning/forge014Turkish";
+import { foundation013QuestionsByLesson } from "../learning/forge013FoundationQuestions";
 import { foundationQuestionsByLesson } from "../learning/forge012FoundationQuestions";
 import { forge012MathLessons } from "../learning/forge012Math";
 import { forge012PhysicsLessons } from "../learning/forge012Physics";
@@ -889,7 +890,10 @@ export const lessons: Lesson[] = baseLessons.map((lesson) => {
         lesson);
   return {
     ...expanded,
-    questions: foundationQuestionsByLesson[expanded.id] ?? expanded.questions,
+    questions:
+      foundation013QuestionsByLesson[expanded.id] ??
+      foundationQuestionsByLesson[expanded.id] ??
+      expanded.questions,
     minutes: lessonGuides.get(expanded.id)?.minutes ?? expanded.minutes,
   };
 });

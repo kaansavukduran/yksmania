@@ -220,9 +220,12 @@ test("real lesson → assisted error → saved history → calendar → undo", a
   await page
     .getByRole("button", { name: "Çalışma geçmişi", exact: true })
     .click();
-  page.once("dialog", (d) => d.accept());
   await page
     .getByRole("button", { name: "Bu oturumu geri al", exact: true })
+    .click();
+  await page
+    .getByRole("dialog")
+    .getByRole("button", { name: "Oturumu geri al", exact: true })
     .click();
   await expect(page.locator(".history-row")).toHaveCount(0);
   await page.getByRole("button", { name: "Takvim", exact: true }).click();
@@ -1150,11 +1153,6 @@ test("all four new AYT lessons first open offline at 320px with large Turkish co
   context,
 }) => {
   let discardedDrafts = 0;
-  page.on("dialog", async (dialog) => {
-    expect(dialog.type()).toBe("confirm");
-    discardedDrafts++;
-    await dialog.accept();
-  });
   await page.setViewportSize({ width: 320, height: 844 });
   await page.emulateMedia({ reducedMotion: "reduce" });
   await open(page);
@@ -1193,6 +1191,17 @@ test("all four new AYT lessons first open offline at 320px with large Turkish co
     await page
       .getByRole("button", { name: "Sorulara geç", exact: true })
       .click();
+    if (discardedDrafts < 3 && title !== "Türev: kirişten teğete") {
+      const modal = page.getByRole("dialog", {
+        name: "Yarım kalan çalışmayı değiştirelim mi?",
+        exact: true,
+      });
+      await expect(modal).toBeVisible();
+      await modal
+        .getByRole("button", { name: "Yeni çalışmayı aç", exact: true })
+        .click();
+      discardedDrafts++;
+    }
     await expect(page.locator(".answer")).toHaveCount(3);
   }
   expect(discardedDrafts).toBe(3);

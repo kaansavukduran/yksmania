@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { RotateCcw, ArrowUpRight } from "lucide-react";
 import { useApp } from "../store";
 import { lessons, lessonById } from "../domain/content";
 import { formatDate, undoSession } from "../domain/scheduler";
+import { useConfirmationDialog } from "../components/ConfirmationDialog";
 import { Empty } from "../components/Shared";
 import type { Lesson } from "../domain/model";
 export function Mistakes({
@@ -13,6 +14,31 @@ export function Mistakes({
   navigate: (s: string) => void;
 }) {
   const { state, t, l, update, commit, toast } = useApp();
+  const { confirm, confirmationDialog } = useConfirmationDialog();
+  const undoLock = useRef(false);
+  const [undoing, setUndoing] = useState(false);
+  async function undo(id: string) {
+    if (undoLock.current) return;
+    undoLock.current = true;
+    setUndoing(true);
+    try {
+      if (
+        !(await confirm({
+          title: "Bu çalışma oturumunu geri alalım mı?",
+          description: t("undoExplain"),
+          confirmLabel: "Oturumu geri al",
+        }))
+      )
+        return;
+      await commit((current) => undoSession(current, id));
+      toast(t("undoDone"));
+    } catch {
+      // The store exposes the failed save and retains the durable session.
+    } finally {
+      undoLock.current = false;
+      setUndoing(false);
+    }
+  }
   const [tab, setTab] = useState("mistakes");
   const items = state.sessions
     .flatMap((s) =>
@@ -30,6 +56,7 @@ export function Mistakes({
     .reverse();
   return (
     <>
+      {confirmationDialog}
       <header className="page-heading">
         <div>
           <p className="eyebrow">{t("mistakesTitle")}</p>
@@ -130,13 +157,8 @@ export function Mistakes({
                   className="icon-button"
                   aria-label={t("undo")}
                   title={t("undo")}
-                  onClick={() => {
-                    if (confirm(t("undoExplain"))) {
-                      void commit((state) => undoSession(state, s.id))
-                        .then(() => toast(t("undoDone")))
-                        .catch(() => {});
-                    }
-                  }}
+                  disabled={undoing}
+                  onClick={() => void undo(s.id)}
                 >
                   <RotateCcw size={17} />
                 </button>

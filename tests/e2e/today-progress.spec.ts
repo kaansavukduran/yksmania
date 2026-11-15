@@ -229,10 +229,13 @@ test("YKS-013 latest attempts show zero correctly and undo restores the earlier 
   await page
     .getByRole("button", { name: "Çalışma geçmişi", exact: true })
     .click();
-  page.once("dialog", (dialog) => dialog.accept());
   await page
     .getByRole("button", { name: "Bu oturumu geri al", exact: true })
     .first()
+    .click();
+  await page
+    .getByRole("dialog")
+    .getByRole("button", { name: "Oturumu geri al", exact: true })
     .click();
   await nav(page, "Bugün");
   await expect(row(page)).toContainText("5 soruda 4 doğru · 1 yanlış");

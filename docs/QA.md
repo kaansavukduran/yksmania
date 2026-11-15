@@ -1,61 +1,86 @@
-# 0.12 son font ve simge düzeltmesi
+# 0.13.0 yerel kabulü — son tam tarayıcı koşusu sürüyor
 
-İlk yerel tam koşu269/272, ilk CI de üç Türkçe caption font beklentisiyle FAIL.
-Ana eylem45px kalır;37,35px küçük açıklamanın ayrı tipografik rolü testte ayrıldı.
-Sözcüklerin bölünmeme ve erişilebilir ölçek koşulları korunur. Dokuz ilgili
-browser testi PASS; karbon/iyon işaretleri gerçek dolguları üzerinde üç tema
-ve üç örnekte en az4,5:1 kontrastla denetlendi. 351unit/check PASS; tam273,
-yeni CI ve canlı kabul henüz bu ek kayıtta sonuçlanmadı.
+130 özgün soru, anlatımı önceden hazır 13 başlığa bağlandı. Yeni toplam 1.260
+sorudur. Hazır 146 anlatımın tamamı ve ilk 138 sıralı başlık bağımsız sorulara
+sahiptir; 479 başlığın tamamı bitmiş değildir. 118 rehber ve 146 kağıt korunur.
 
-# 0.12 son yerel ek kabul
+C2 ile birleştirilmiş kaynakta `check`, `build` ve 55 dosyada 355/355 birim
+testi PASS.
+Önceki 1.130 sorunun tam JSON alanları; 147 eski ders kaydının soru dışındaki
+bütün alanları korunur. İkinci kontrol, yalnız bazı derslerin gövdesini değil
+bütün eski derslerin kimlik, başlık, gövde, hedef, süre, kaynak ve etiketlerini kapsar.
+Derlenen yeni 130 kartın pasaj, seçenek, anahtar, ipucu ve açıklaması incelenen
+soru verisiyle alan alan eşittir. Kaynak metadata’sı ürüne taşınmaz.
 
-351 birim testi, check ve build PASS. Geliştirme Electron’da bütün eski akışlar
-ve altı ek kaynak ailesi PASS. Pages yerel alt yolunda 13 ailenin ilk çevrimdışı
-açılışı, gerçek model değişimi, kayıt ve yeniden yüklemesi PASS; renderer0.
-Gerçek 0.11→0.12 yerel SW güncellemesi eski verileri, notları, taslağı, üç tekrarı
-ve sentetik 870 bayt belgeyi korudu. Altı yeni model ilk kez çevrimdışı açılıp
-kalıcı kaldı; XP25→25. Son 88 görünüm ölçümü ve 30 ünitede büyük yazıdaki
-sözcükler PASS. Seçilmiş son çizimler ayrıca görüntülerden incelendi.
-Üç temel konunun altı tarayıcı testi 4+2 PASS ile gerçek 9/10 sonucu ve
-3/7/21 tekrarlarını korudu. Tam 272 tarayıcı ve uzak 0.12 kabulü henüz sürüyor.
+İlk kapsam kontrolü üç ek sorusuz rehber buldu; 30 soru daha hazırlanıp bağımsız
+incelenerek eklendi. İlk tam birim koşusundaki 354/355 sonucu, eski cebir
+`questions=[]` beklentisinden kaynaklandı. Bu test yeni 10 soruluk bağımsız
+bankayı doğrular; mevcut matematik model denetimleri korunur. Bu onarımlar
+soru doğruluğu veya gerçek kullanıcı sonucu yerine sayılmadı.
 
+Önceki 0.13 adayında 16 paket × 2 temel soru kabulü 32/32 PASS:
+çevrimdışı ilk giriş, tam pasajın kökten önce görünmesi, açıklama/taslak koruma,
+9 doğru/1 yanlış sonuç, öğrenme gününden +2/+6/+20 tekrar ve 320px
+UI %200/yazı %150. Pages ve geliştirme Electron’da yeni matematik/tarih
+rotalarının ilk çevrimdışı soru/geri bildirim/yeniden açılışı PASS idi.
+Bu kanıtlar aşağıdaki onay onarımından önceki ayrı derlemeye aittir.
 
-# 0.12.0 aday kabulü — son tarayıcı ve yayın doğrulaması sürüyor
+## YKS-067 — sistem onayında Electron sürecinin kapanması (Orta)
 
-Kaynak sırasındaki 109–138. başlıklar eklendi: 30 ünite, 263 bölüm,
-123 çözümlü örnek, 128 hatırlama ve 300 özgün soru. Toplam 146 anlatım,
-118 ayrıntılı rehber, 146 kopya kağıdı, 1.130 soru; ilk 138/479 hazır.
-Önceki 800 soru kayıtları ve öğrenme verilerinin kimlikleri korunur.
+Aynı profilde kontrol edilmiş matematik taslağı varken başka soru setine
+geçiş, `window.confirm` yolunda geliştirme Electron 45.3.2/headless sürecini
+SIGTRAP ile kapattı. Kapanma test temizliğinden önce gerçekleşti. Fontconfig
+ve NSS uyarıları tek başına neden sayılmadı; tanı çıktısı özel çalışma alanında
+saklandı. Yeni soru verisinin hatası değildir; mevcut native onay bağımlılığı
+bu akışta görünür hâle geldi. Fiziksel masaüstü cihazında aynı çökme iddia edilmez.
 
-Yerel `npm run check`, `npm run build` ve 351/351 birim testi PASS.
-İlk birleşik koşu 342/343 PASS: eski keyfî açıklama uzunluğu beklentisi geçerli
-58 karakterlik metni reddetti. Gerçek açıklamanın aynılığı, boş olmaması ve
-cevap metninden farklı olması kabulüyle düzeltildi; metin yapayca uzatılmadı.
-Hedefli 66 ve tam 272 tarayıcı testinin, manuel ekranların, geliştirme Electron,
-Pages alt yol/canlı adres, gerçek web güncellemesi, uzak CI ve yeni native
-paketlerin sonuçları henüz bu aday kaydında doğrulanmış değildir.
+Yarım çalışmayı değiştirme, kişisel ilerleme yedeğini geri yükleme ve oturumu
+geri alma artık ortak, erişilebilir HTML onayı kullanır. Vazgeç varsayılan
+odaktır; Escape iptal eder ve odak tetikleyiciye döner. Her çağıranda onay ve
+kalıcı kayıt boyunca çift tıklama kilidi vardır. Açık onay verilmeden kayıt
+değişmez; kalıcı kayıt hatasında önceki veri korunur. Native API taklidi yoktur.
 
-300 yeni soru anahtarı ve 123 adım adım örnek bağımsız ikinci içerik okumasından
-geçti. Yazarlar arasında fizik→biyoloji, biyoloji→tarih, kimya→Türkçe,
-Türkçe→matematik, matematik→fizik/kimya denetimleri yapıldı. Gerçek kaynak
-sayfası ve model koşulu sınırları SOURCE_REVIEW’da, başarısız ilk denemeler ve
-YKS-052–056 onarımları FORGE’de tutulur. İçerik incelemesi çalışan arayüz veya
-fiziksel cihaz testi değildir.
+Son kaynakta `check`, iki web derlemesi ve 355/355 birim PASS. Dört yeni
+YKS-067 vakası ve etkilenen dört eski browser vakası 8/8 PASS. Gerçek akışlar
+iptal → bütün kayıt aynılığı, çift tıklamayla tek sonuç, başarısız yazma →
+yeniden açık onay, çevrimdışı yeniden yükleme, odak, 320px/UI %200/yazı %150
+ve erişilebilirliği sınar. Genel listelemede 23 dosyada 303 vaka vardır;
+son tam koşu ve yeni Electron onay kabulü sürüyor. Son Pages derlemesi ayrıca
+sınanıyor; 0.13 uzak CI/yayın/paket kabulü bu yerel sonuçlardan çıkarılmaz.
 
-Yeni deneme seçimi yalnız başlangıçta yapılır ve taslağa tam soru kopyasıyla
-sabitlenir. Birim kabulü aynı başlangıç verisinde tekrarlanabilir seçim,
-farklı başlangıçlarda yeterli havuzdan çeşitlenme, benzersiz kimlikler,
-13 sette aynı sayı/süre/kota, tam seçenek/anahtar/pasaj/açıklama taşınması,
-eski sonucun korunması ve yeniden yüklemede aynı taslağı denetler. Öğrenme
-puanı veya ustalık seçime katılmaz. TYT 105/AYT 25 ve 11 branş hâlâ eksik
-resmî dağılımlı kısa pratik setleridir; sınırsız yeni soru garantisi yoktur.
-
-Fiziksel Android, temiz Windows kurulumu, portable taşıma, marka/tarayıcı
-kombinasyonlarının tamamı ve iki native sürümle veri koruyan yükseltme ayrıca
-sınanmalıdır. Aşağıdaki 0.11 yayın kanıtları geçmiş sürüme aittir; yeni 0.12
-kabulünün yerine sayılmaz.
+Fiziksel Android, temiz Windows kurulumu, portable taşıma ve iki native sürüm
+arasında veri koruyan yükseltme ayrıca doğrulanmalıdır. Kaynak ve bağımsız
+inceleme sınırları SOURCE_REVIEW’da; ilk başarısız denemeler FORGE’dedir.
 
 ---
+
+# 0.12.0 doğrulanmış web ve paket yayını
+
+Kaynak 3104da161845175930a7d51d1f9ee1a2ce724b9d. CI 43709394878 dört iş PASS:
+351 birim, 273 tarayıcı, Windows/Linux paketli çevrimdışı/yeniden açılış ve Android
+0.12.0/code20/v2 imza. Canlı 43709747100 gerçek Vercel HTTPS’de 273/273 PASS
+(17,3 dk). Normal TLS runtime hash’leri donmuş C2 ile eşittir. Pages 43709749730
+üç iş PASS: derleme/dağıtım/gerçek HTTPS’de 13 model ailesi, ilk çevrimdışı kullanım,
+değişim, kayıt, yeniden yükleme, soru ve mobil gezinme. Release 43711058866 PASS:
+v0.12.0-alpha.1 sekiz dosya; tag/verified-run 3104da1, iki indirilen kanıt hash’i
+PASS, yedi payload listeli. Beş büyük binary ayrıca yerelde hash’lenmedi.
+
+Yerel check/build/351 birim/273 tarayıcı PASS (21 dk). İki 120 durum ve son 88
+görünüm ölçümü; 30 ünitede 45px sözcük sarma ve seçilmiş gerçek görüntü incelemeleri
+yapıldı. Atom/iyon sembolleri üç tema × üç model × 12 ölçümde en az 5,381:1
+kontrastla ve dokuz gerçek görüntüden denetlendi. Geliştirme Electron ve yerel
+Pages C2’de PASS. Gerçek 0.11→0.12 SW güncellemesi bütün eski state/documents/
+catalogue, skor/not/taslak/ayar/üç tekrar/870 bayt sentetik PDF’i korudu; XP25→25.
+Altı yeni model ilk kez çevrimdışı açıldı, değişti ve kaydı kaldı; renderer/ağ hatası 0.
+
+İlk 342/343, 347/351 ve 269/272 yerel/ilk CI/canlı hatalarıyla YKS-052–066
+onarımları FORGE’de korunur. Son 351/273/273 aynı düzeltilmiş kaynakta PASS.
+Font testinde eylem ve küçük açıklama rolleri ayrıldı; ölçek/sözcük sınırı korunur.
+Gerçek kaynak okuma ve öğretim kapsamı SOURCE_REVIEW’dedir.
+
+Fiziksel Android, temiz Windows kurulumu, portable taşıma ve iki native sürümle
+veri koruyan yükseltme NOT TESTED. Tam kaynak arşivi ve resmî TYT/AYT dağılımı
+bitmedi: 146 anlatım/118 rehber/146 kağıt/1130 soru; ilk 138 anlatım hazır.
 
 # 0.11.0 doğrulanmış web ve paket yayını
 

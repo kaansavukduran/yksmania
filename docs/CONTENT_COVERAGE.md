@@ -1,47 +1,51 @@
-# İçerik kapsamı — 0.12.0 alpha adayı
+# İçerik kapsamı — 0.13.0 alpha adayı
 
-Hazır eğitim içeriği uygulamaya gömülüdür. Konu Anlatımı, Kopya Kağıtları,
-Sorular ve Sınavlar ayrı bölümlerdir. Öğrenci PDF, kaynak kataloğu veya kitapçık
-yüklemez. Önceki kişisel dosyalar depoda korunur; içerik sağlama işi kullanıcıya
-bırakılmaz. Kişisel ilerleme yedeği ders kaynağından ayrı ve isteğe bağlıdır.
+Öğretim uygulamaya gömülüdür. Konu Anlatımı, Kopya Kağıtları, Sorular ve
+Sınavlar ayrı bölümlerdir; öğrenci PDF, kaynak kataloğu veya kitapçık yüklemez.
+Kişisel ilerleme yedeği ders kaynağından ayrı ve isteğe bağlıdır.
 
 | Düzey | Güncel içerik |
 | --- | --- |
 | Ana konu referansı | 341 kaynak satırı: TYT 201, AYT Sayısal 140; kimlikler korunur |
 | Ayrıntılı çalışma sırası | 479 başlık; kaynak çalışma kitabındaki sıra korunur |
-| Konu anlatımı | 146 anlatım, 118 ayrıntılı rehber; sıradaki ilk 138/479 başlık hazır |
-| Yerleşik kopya kağıdı | 146 kağıt; yeni 30 başlığın bütün anlatım paragrafları ve örnekleri dahil |
-| Soru bankası | 1.130 özgün Türkçe soru; önceki 800 tam kayıt korunur, 300 yeni soru |
+| Konu anlatımı | 146 anlatım, 118 ayrıntılı rehber; ilk 138/479 başlık hazır |
+| Yerleşik kopya kağıdı | 146 kağıt; önceki tam paragraflar ve çözümlü örnekler korunur |
+| Soru bankası | 1.260 özgün Türkçe soru; önceki 1.130 tam kayıt korunur, 130 soru eklenir |
+| Hazır anlatımın soru kapsamı | 146 anlatımın tamamı ve ilk 138 sıralı başlık bağımsız soru çalışmasına sahip |
 | Zamanlı pratik | 2 karma ve 11 branş; TYT 105 / AYT Sayısal 25, sayıya orantılı süre; tam 120/80 dağılım değil |
 | Önceki arşiv envanteri | 246 klasörde 8.584 PDF kaydı, yaklaşık 23,6 GB; içerik hash’leriyle tekilleştirilmiş sayım değil |
-| Önceki yerel hazırlık paketleri | 143 PDF / 4.989 sayfa: 126 kopya kağıdı, 14 MEBİ adlı PDF, 3 OGM geçmiş soru kitabı; bütün güncel okuma sayfası sayımı değil |
+| Önceki yerel hazırlık | 143 PDF / 4.989 sayfa; bütün güncel okuma sayfası sayımı değil |
 
-0.12 adayı 109–138. başlıklara 263 bölüm, 123 çözümlü örnek, 128 hatırlama ve
-300 soru ekler. 5 matematik, 5 fizik, 5 kimya, 7 biyoloji, 3 Türkçe, 5 tarih.
-Sonraki 139. başlık Su, Hayat ve Çevre Kimyası/detail-167’dir. 341 ana konu,
-479 ayrıntılı başlık ve hazır anlatım sayısı farklı ölçümlerdir; hiçbiri bir
-öğrencinin ustalığını veya tüm arşivin işlendiğini göstermez. Bir ek soru paketi
-anlatımı yokken fazladan konu anlatımı sayılmaz.
+0.13, önceden hazırlanmış 13 anlatımın soru açığını kapatır: sayı basamakları,
+bölme/bölünebilme, EBOB–EKOK, birinci dereceden denklemler, basit eşitsizlikler,
+katman elektron dizilimi ve tarihin ilk yedi başlığı. 50 matematik, 70 tarih,
+10 kimya sorusu vardır. Yeni anlatım, rehber, model veya konu başlığı eklenmedi.
+YKS-067 onarımı yalnız üç onay etkileşimini değiştirir; öğretim, soru anahtarı,
+puan/XP, tekrar veya tamamlanma ölçümü eklemez.
 
-Yeni deneme başlatırken ilgili havuzdan dersler arasında seçim çeşitlendirilir.
-Katalogdaki sayı, kota ve süre korunur. Başlamış veya tamamlanmış deneme tam
-soru/seçenek/anahtar/pasaj/açıklama kopyasıyla sabittir; yeniden açıldığında
-yeniden karıştırılmaz. Küçük havuz aynı soruları yeniden içerebilir. Yeni
-seçim özelliği sınırsız bankayı veya tam resmî dağılımı sağlamış sayılmaz.
+0.12’de çalışma sırasının 109–138. başlıkları için 30 ünite, 263 bölüm,
+123 çözümlü örnek, 128 hatırlama ve 300 soru; üç eski biyoloji anlatımı için
+30 soru eklenmişti. Sonraki anlatım başlığı hâlâ 139: Su, Hayat ve Çevre
+Kimyası/detail-167. 341 ana konu, 479 ayrıntılı başlık ve hazır içerik sayıları
+farklıdır; hiçbirisi öğrenci ustalığı veya tüm arşivin işlendiği anlamına gelmez.
 
-Sekiz doğrulanmış resmî referansın özgün uygulama içi öğretim örnekleri
-korunur. Yeni resmî soru gövdesi aktarımı ve son 20 yıllık bütün ÖSYM sınavları
-tamamlandı iddiası yoktur. Kaynakça başlığı veya dosya indirme, bütün sayfaların
-ve anahtarların incelendiği kanıtı değildir. Sayfa sınırları SOURCE_REVIEW’da,
-çalışan sürümün kabul ve yayın durumu FORGE ve QA’dadır.
+Yeni deneme başlangıcında ilgili havuzdan dersler arasında seçim çeşitlenir.
+Sayı, kota ve süre korunur. Başlamış ve tamamlanmış deneme tam soru, seçenek,
+anahtar, pasaj ve açıklama kopyasıyla sabittir; yeniden açıldığında karışmaz.
+Küçük havuz aynı soruları yeniden içerebilir. Bu özellik sınırsız bankayı veya
+tam resmî dağılımı sağlamış sayılmaz.
+
+Sekiz doğrulanmış resmî referansın özgün öğretim örnekleri korunur. Yeni resmî
+soru gövdesi aktarımı ve son 20 yıllık bütün ÖSYM sınavları tamamlandı iddiası
+yoktur. Dosya indirme veya kaynakça, bütün sayfaların ve anahtarların okunduğunu
+göstermez. Gerçek sayfa sınırları SOURCE_REVIEW’da, çalışan sürüm ve paket
+kabulü FORGE ve QA’dadır.
 
 Kişisel planlar, çalışma kitabındaki tamamlanma işaretleri, özel Drive kimlikleri
-ve ham kaynak metni ürün verisine alınmaz. Öğrenme günü 1, tekrarlar 3/7/21;
-keşif, süre veya kağıdı açma öğrenme puanı oluşturmaz. Aşağıdaki tarihsel
-bölümler eski sürümlerin davranışını açıklar; kaynak yüklemeyi veya eski sayaçları
-anlatan kısımlarda bu güncel kararlar geçerlidir.
+ve ham kaynak metni ürün verisine alınmaz. Öğrenme günü 1; tekrarlar 3/7/21’dir.
+Aşağıdaki tarihsel kayıtlar eski sürümleri anlatır; bu güncel kapsamın yerine geçmez.
 
-## What the app actually does
+## Tarihsel kayıt: önceki uygulama kapsamı
 
 **Konu Anlatımı** and **Sorular** have independent subject navigation. Theory may
 link to practice, but it does not embed the question session. Existing sessions,
@@ -67,7 +71,7 @@ lessons now contain fraction, algebraic-area, force, molecule, ATP or argument
 structure explorations. Clicks and animation playback earn no learning credit.
 Exploration choices and reading positions are stored separately from responses.
 
-## New AYT coverage in 0.3.0
+## Tarihsel kayıt: New AYT coverage in 0.3.0
 
 Four MEBİ AYT topic-summary files were used for a close reading of 12 relevant
 PDF pages. Four original SVG explorations cover secant/tangent and a corner,
@@ -77,7 +81,7 @@ questions. Exact source-page mappings, scientific assumptions and answer checks
 are in [SOURCE_REVIEW](SOURCE_REVIEW.md). These are curated sections, not a full
 review or conversion of the 143 prepared PDFs or the 8,584-record archive.
 
-## Cheatsheet navigation in 0.3.1
+## Tarihsel kayıt: Cheatsheet navigation in 0.3.1
 
 The 479 detailed headings now live in a separate Kopya Kağıtları section, between
 Konu Anlatımı and Sorular. These headings and cheatsheet-kind PDF references no
@@ -87,23 +91,21 @@ filename can associate an imported PDF. All subject cheatsheet PDFs remain
 accessible even when no topic association is available. No source PDFs are added
 to the public bundle and a heading does not establish PDF availability.
 
-## Private source use
+## Tarihsel kayıt: kapatılmış kaynak içe aktarma akışı
 
-The app accepts a validated `yksmania-source-catalogue` JSON file. A catalogue
-contains references, not PDF bytes. Import PDFs separately with a multi-file or
-folder picker. Exact unique filename matches associate sources with subjects;
-ambiguous matches use the explicit fallback subject/type. Review the import report.
-Hashes are streamed in 2 MB chunks, originals remain Blobs, duplicates are merged,
-and each write is confirmed before counting a successful import. Cancellation
-retains files already saved. Browser quota may limit large libraries.
+Önceki sürümlerde kaynak kataloğu ve PDF içe aktarma uygulanmıştı. Bu bölüm
+eski davranışın kaydıdır; güncel öğrenci arayüzünde bu akış kapalıdır. Öğrenci
+PDF, katalog veya materyal sağlamaz. Kaynakları geliştirici inceler ve öğretimi
+uygulamaya işler. Önceden saklanmış belge/katalog baytları yalnız görünmeyen
+eski veriyi korumak için tutulur; yeni içe aktarma görevi kullanıcıya verilmez.
+Kişisel ilerleme yedeği bu eğitim içeriği akışından ayrıdır.
 
-Private source files are not deployed to public GitHub/Vercel. Locally prepared
-packs are separate deliverables and were not uploaded to Drive: automatic approval
-review rejected that export because the specific payload/destination lacked explicit
-permission. This does not block the application or local imports. No alternative
-external export was attempted.
+Eski sistemde ad eşleme, akışla hash alma, yinelenen belgeleri birleştirme ve
+başarılı yazmayı doğrulama kontrolleri vardı. Özel kaynaklar halka açık web
+paketine konulmadı. Hazırlık paketlerinin geçmişte dışa aktarılmamış olması,
+güncel uygulamada öğrenciye kaynak yükleme işi bırakıldığı anlamına gelmez.
 
-## Still to do
+## Tarihsel kayıt: Still to do
 
 The complete 8,584-PDF archive is not embedded or cached automatically. Most topic
 headings do not yet have an authored interactive lesson. A PDF containing questions
@@ -113,7 +115,7 @@ answer-key verification; subject/topic matching; duplicate handling and a clear
 verified/unverified state. Complete exam-year syllabus and every historical ÖSYM
 session are not verified. No complete-archive or score-improvement claim is made.
 
-## Ordered plans and OGM chemistry in 0.4.0
+## Tarihsel kayıt: Ordered plans and OGM chemistry in 0.4.0
 
 The current workbook's Üretim Sırası sheet contains exactly 479 unique TYT and
 numerical AYT detailed headings matching the app IDs. The Todoist “28 Şubat 2027”
@@ -133,9 +135,10 @@ disciplines, symbolic language, laboratory safety and atom models. Eight narrati
 pages across two fascicules were close-read. These are the first five entries in the
 verified study sequence. Most of the 479 headings still need an authored lesson and
 question set; their routes explicitly say so and allow recording external work.
-Source management remains under Settings and supports existing offline imports.
+Historical note: that Settings source-import flow was later closed. Current
+learners supply no PDFs or catalogues; only existing legacy data is preserved.
 
-## Source-ordered mathematics in 0.5.0
+## Tarihsel kayıt: Source-ordered mathematics in 0.5.0
 
 Workbook topics 6–10 now have original interactive lessons and five exercises each:
 Temel Kavramlar, Tek Çift Pozitif Negatif Sayılar, Ardışık Sayılar, Asal Sayılar,

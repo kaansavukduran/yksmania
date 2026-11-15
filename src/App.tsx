@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   BookOpen,
   Files,
@@ -30,6 +30,7 @@ import { Settings } from "./pages/Settings";
 import { Theory } from "./pages/Theory";
 import { Study, Result } from "./pages/Study";
 import { Topic } from "./pages/Topic";
+import { useConfirmationDialog } from "./components/ConfirmationDialog";
 import type { Lesson, ReviewStage } from "./domain/model";
 const routes = [
   { route: "/today", key: "today", Icon: Home },
@@ -62,6 +63,8 @@ function WebUpdates({
 }
 export default function App() {
   const { state, t, commit, status, retry, toast } = useApp();
+  const { confirm, confirmationDialog } = useConfirmationDialog();
+  const startLock = useRef(false);
   const [route, setRoute] = useState(() => location.hash.slice(1) || "/today");
   const [online, setOnline] = useState(navigator.onLine);
   const [menu, setMenu] = useState(false);
@@ -135,54 +138,68 @@ export default function App() {
     state.settings.motion,
   ]);
   const start = async (lesson: Lesson, reviewId?: string, practice = false) => {
-    if (practice && !lesson.questions.length) {
-      navigate(`/lesson?id=${encodeURIComponent(lesson.id)}`);
-      return;
-    }
-    if (!practice && !reviewId) {
-      navigate(`/lesson?id=${encodeURIComponent(lesson.id)}`);
-      return;
-    }
-    if (
-      state.draft &&
-      state.draft.lessonId === lesson.id &&
-      state.draft.reviewId === reviewId
-    ) {
-      if (state.draft.phase === "read") {
-        try {
-          await commit((s) => ({
-            ...s,
-            draft: s.draft ? { ...s.draft, phase: "practice" } : null,
-          }));
-        } catch {
-          toast(t("saveError"));
-          return;
-        }
-      }
-      navigate("/practice");
-      return;
-    }
-    if (state.draft && !confirm(t("draftConfirm"))) return;
+    if (startLock.current) return;
+    startLock.current = true;
     try {
-      await commit((s) => ({
-        ...s,
-        draft: {
-          lessonId: lesson.id,
-          phase: "practice",
-          index: 0,
-          responses: [],
-          selected: null,
-          checked: false,
-          hint: false,
-          confidence: "medium",
-          note: s.notes["lesson:" + lesson.id] ?? "",
-          startedAt: Date.now(),
-          reviewId,
-        },
-      }));
-      navigate("/practice");
-    } catch {
-      toast(t("saveError"));
+      if (practice && !lesson.questions.length) {
+        navigate(`/lesson?id=${encodeURIComponent(lesson.id)}`);
+        return;
+      }
+      if (!practice && !reviewId) {
+        navigate(`/lesson?id=${encodeURIComponent(lesson.id)}`);
+        return;
+      }
+      if (
+        state.draft &&
+        state.draft.lessonId === lesson.id &&
+        state.draft.reviewId === reviewId
+      ) {
+        if (state.draft.phase === "read") {
+          try {
+            await commit((s) => ({
+              ...s,
+              draft: s.draft ? { ...s.draft, phase: "practice" } : null,
+            }));
+          } catch {
+            toast(t("saveError"));
+            return;
+          }
+        }
+        navigate("/practice");
+        return;
+      }
+      if (
+        state.draft &&
+        !(await confirm({
+          title: "Yarım kalan çalışmayı değiştirelim mi?",
+          description: t("draftConfirm"),
+          confirmLabel: "Yeni çalışmayı aç",
+        }))
+      )
+        return;
+      try {
+        await commit((s) => ({
+          ...s,
+          draft: {
+            lessonId: lesson.id,
+            phase: "practice",
+            index: 0,
+            responses: [],
+            selected: null,
+            checked: false,
+            hint: false,
+            confidence: "medium",
+            note: s.notes["lesson:" + lesson.id] ?? "",
+            startedAt: Date.now(),
+            reviewId,
+          },
+        }));
+        navigate("/practice");
+      } catch {
+        toast(t("saveError"));
+      }
+    } finally {
+      startLock.current = false;
     }
   };
   const path = route.split("?")[0];
@@ -212,6 +229,7 @@ export default function App() {
   )[0];
   return (
     <div className="app-shell">
+      {confirmationDialog}
       <ExamDeadlineWatcher />
       {!Capacitor.isNativePlatform() &&
         ["http:", "https:"].includes(location.protocol) && (
@@ -271,7 +289,7 @@ export default function App() {
             <Settings2 size={20} />
             {t("settings")}
           </button>
-          <span className="sidebar-version">0.12.0 alpha</span>
+          <span className="sidebar-version">0.13.0 alpha</span>
         </div>
       </aside>
       {menu && (
