@@ -1,10 +1,10 @@
 # 0.16 sonrası çalışma sırası
 
-0.16 adayı: 264 anlatım/236 ayrıntılı rehber/264 özet/2.440 soru; ilk 258/479 hazır.60 yeni başlık, 610 birim ve derleme geçti. Tam ürün ve uzak yayın kapıları sürüyor. Yayımlanmış 0.15 aşağıdaki tarihsel kayıtta ayrı tutulur.
+Yayımlanmış 0.16: 264 anlatım, 236 ayrıntılı rehber, 264 özet, 2.440 soru; ilk 258/479 başlık hazır. 60 yeni başlık, 610 birim/548 tarayıcı testi, paketli Windows/Linux ve Pages kabulü geçti.
 
-Sonraki 259–288 sırasındaki 30 başlık kaynak okuması ve özel çalışma dalında hazırlanıyor: karaciğer/pankreas/kalp/damar/kan/lenf/bağışıklık; gaz ve çözelti; momentum/tork/kütle merkezi/basit makine/elektrik kuvveti; nüfus/göç/ekonomi; deyimler/cümle anlamı/paragraf; noktanın analitiği. Hazırlık, bitmiş veya yayımlanmış içerik sayılmaz.
+Özel sonraki dallar 259–318 için 57 yeni anlatım ve mevcut paragraf, elektrik alanı ve denge rehberlerine ekler hazırlıyor. İlk yeni 30 ünitenin 61 bütünleşik vakası geçti. Bütün görünür sözcükleri ve çizim sınırlarını kapsayan daha sıkı telefon denetimi yeni onarımlar buldu; onarımlar ve tekrar kontrolleri sürüyor. 319 sonrası kaynak ve öğretim hazırlığı da devam ediyor. Bu hazırlık yayımlanmış içerik sayılmaz.
 
-479 sıra sonuna dek gerçek kaynak kapsamı → ayrıntılı anlatım → özgün etkileşim → tam yerleşik özet → bağımsız soru/çözüm → ikinci okuyucu → ürün ve yayın kabulü zinciri sürer. Sonra bütün Drive materyali ve doğrulanmış resmî arşiv için ayrı açık matrisi tamamlanır. Tam 120/80 denemeler mevcut kotaya ulaşınca sunulur; eksik kısa pratik tam deneme diye etiketlenmez.
+479 sıra sonuna dek kaynak kapsamı, ayrıntılı anlatım, özgün etkileşim, tam yerleşik özet, bağımsız soru/çözüm, ikinci okuyucu ve ürün/yayın kabulü sürer. Sonra bütün Drive materyali ve doğrulanmış resmî arşiv için ayrı açık matrisi tamamlanır. 120/80 denemeler gerçek kotalar dolduğunda sunulur; eksik kısa pratik tam deneme sayılmaz. Android için kalıcı imza ve veri koruyan kurulum ayrıca çözülmelidir; debug sertifikaları sürümler arasında farklıdır.
 
 ---
 

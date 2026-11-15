@@ -1,10 +1,10 @@
 # YKSMania
 
-Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.16.0 adayı** ürün doğrulamasında; son yayımlanmış 0.15 webde ve [indirilebilir alpha paketleriyle](https://github.com/kaansavukduran/yksmania/releases/tag/v0.15.0-alpha.1) yayımlandı.
+Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.16.0**, webde ve [indirilebilir alpha paketleriyle](https://github.com/kaansavukduran/yksmania/releases/tag/v0.16.0-alpha.1) yayımlandı.
 
 [Vercel](https://yksmania.vercel.app) · [GitHub Pages](https://kaansavukduran.github.io/yksmania/) · [GitHub deposu](https://github.com/kaansavukduran/yksmania)
 
-Çalışma sırasının **199–258. başlıkları** için 60 yeni etkileşimli ünite hazırlandı. Adayda **264 anlatım, 236 ayrıntılı rehber, 264 yerleşik kopya kağıdı ve 2.440 özgün soru** vardır. Yeni pakette 678 bölüm, 248 adım adım çözüm, 248 hatırlama ve 600 beş seçenekli soru bulunur. İlk 258/479 başlık anlatım ve bağımsız soruyla hazırdır. Önceki 1.840 sorunun bütün alanları ve 205 eski ders kaydı korunur. Son kaynak kontrolü, 610 birim ve derleme geçti; tam ürün ve uzak yayın sürüyor.
+Çalışma sırasının **199–258. başlıkları** için 60 yeni etkileşimli ünite hazırlandı. Uygulamada **264 anlatım, 236 ayrıntılı rehber, 264 yerleşik kopya kağıdı ve 2.440 özgün soru** vardır. Yeni pakette 678 bölüm, 248 adım adım çözüm, 248 hatırlama ve 600 beş seçenekli soru bulunur. İlk 258/479 başlık anlatım ve bağımsız soruyla hazırdır. Önceki 1.840 sorunun bütün alanları ve 205 eski ders kaydı korunur. 610 birim, 548 tam tarayıcı vakası, paketli Windows/Linux çevrimdışı açılış ve GitHub Pages kabulü geçti. Yayın denetiminin 547 vakası gerçek HTTPS’de, bir geliştirme regresyonu yerel Vite’da çalışır.
 
 ## İçerik ve öğrenme
 
