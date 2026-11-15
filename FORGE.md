@@ -42,6 +42,12 @@ durumunu ve gerçek IDB checked=true kaydını bekler; feedback/reload koşulu
 korunur. Aynı runtime ile düzeltilmiş yerel Pages kabulü PASS. Bu yalnız test
 onarımıdır; uygulama dosyaları 4065dc7 ile byte eşittir.
 
+Pages43698533483 build/deploy PASS, e47dafe; gerçek HTTPS index/sw/version/
+manifest dört hash yerel alt yol derlemesiyle eşit. Yerel sistem Chromium'da
+canlı URL sertifika otoritesi hatası verdi; TLS kontrolü kapatılmadı. İş akışına
+GitHub runner'da doğrudan yayımlanan adreste aynı kabulü yapan üçüncü iş eklendi.
+Ayrıca artık geride kalmış CI kaynağı ana dal ilerlediyse otomatik yayınlanmaz.
+
 Yayımdan önce düzeltilen somut bulgular:
 - YKS-043/Orta: Zarflar gerekçesi 240, kayıt sınırı 128 idi; UI 120 karaktere
   alındı ve kalıcılıkla denetlenir.
