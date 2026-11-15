@@ -1,4 +1,4 @@
-# 0.13.0 yerel kabulü — son tam tarayıcı koşusu sürüyor
+# 0.13.0 yerel kabulü — uzak yayın doğrulaması bekleniyor
 
 130 özgün soru, anlatımı önceden hazır 13 başlığa bağlandı. Yeni toplam 1.260
 sorudur. Hazır 146 anlatımın tamamı ve ilk 138 sıralı başlık bağımsız sorulara
@@ -45,8 +45,22 @@ YKS-067 vakası ve etkilenen dört eski browser vakası 8/8 PASS. Gerçek akış
 iptal → bütün kayıt aynılığı, çift tıklamayla tek sonuç, başarısız yazma →
 yeniden açık onay, çevrimdışı yeniden yükleme, odak, 320px/UI %200/yazı %150
 ve erişilebilirliği sınar. Genel listelemede 23 dosyada 303 vaka vardır;
-son tam koşu ve yeni Electron onay kabulü sürüyor. Son Pages derlemesi ayrıca
-sınanıyor; 0.13 uzak CI/yayın/paket kabulü bu yerel sonuçlardan çıkarılmaz.
+son tam yerel koşu 302/303 PASS oldu. Tek başarısızlık yeni denklemler
+bankasını hâlâ sorusuz sayan eski arama beklentisiydi. Yeni bankanın tek
+kart/10 soru gösterildiğini doğrulayan onarım ve dört onay vakası birlikte
+5/5 PASS (19,6 sn). Yerel tam 303/303 koşusu yapıldığı söylenmez.
+
+Son Pages alt yol derlemesi PASS. Geliştirme Electron’da aynı süreç/profilde
+kontrol edilmiş yanlış taslak ve notla iptal → bütün state aynılığı → yeniden
+açık onay → yeni soru → çevrimdışı reload PASS; renderer0. Native API stub
+kullanılmadı; iki gerçek HTML onay ekranı görüntüden incelendi.
+
+Son web derlemesinde gerçek 0.12→0.13 service worker güncellemesi PASS: bütün
+eski state/doküman/katalog aynılığı; eski 5/5 oturum, üç tekrar, kontrol edilmiş
+yanlış taslak, not ve 870 bayt sentetik PDF korunur. XP25→25; altı KORUNAN
+0.12 model ilk kez çevrimdışı açılıp reload kaldı. Bunlar 0.13 yeni üniteleri
+veya native/fiziksel yükseltme değildir. 0.13 uzak CI/yayın/paket kabulü bu
+yerel sonuçlardan çıkarılmaz.
 
 Fiziksel Android, temiz Windows kurulumu, portable taşıma ve iki native sürüm
 arasında veri koruyan yükseltme ayrıca doğrulanmalıdır. Kaynak ve bağımsız

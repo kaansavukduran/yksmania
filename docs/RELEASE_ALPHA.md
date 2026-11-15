@@ -24,8 +24,12 @@ C2 ile birleştirilmiş kaynakta tip kontrolü, derleme ve 355 birim testi geçt
 geçti. Aynı profil taslak değişiminde saptanan native onay kapanması (YKS-067)
 son kaynakta ortak HTML onayıyla giderildi. Dört yeni ve dört eski ilgili
 browser vakası 8/8 PASS; varsayılan iptal odağı, Escape, kayıt koruma ve büyük
-yazı denetlendi. Son tam 303 tarayıcı koşusu ve aynı profil Electron kabulü
-sürer; uzak CI ve yeni paket/yayın sonuçları ayrıca kaydedilecektir.
+yazı denetlendi. Yerel tam browser koşusu 302/303 geçti; tek eski arama beklentisi yeni cebir
+sorularına göre onarıldı ve onay vakalarıyla birlikte 5/5 geçti. Yerel tam
+303/303 iddiası yoktur. Son Pages ve aynı profil Electron iptal/onay/offline
+reload kabulü PASS. Son derlemeyle 0.12→0.13 gerçek web güncellemesi bütün
+eski kayıtları ve XP25’i korudu; korunan altı 0.12 model ilk kez offline açıldı.
+Uzak CI ve yeni paket/yayın sonuçları ayrıca kaydedilecektir.
 Kaynak sayfa sınırları docs/SOURCE_REVIEW.md’dedir.
 
 Web: https://yksmania.vercel.app

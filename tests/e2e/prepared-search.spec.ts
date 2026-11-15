@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-test("search never presents a question-only pack as prepared theory or an unprepared narrative as a question set", async ({
+test("search separates question-only packs from theory and exposes the newly prepared algebra bank", async ({
   page,
 }) => {
   await page.goto("/");
@@ -22,8 +22,9 @@ test("search never presents a question-only pack as prepared theory or an unprep
   await page
     .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
     .fill("Birinci dereceden denklemler:");
-  await expect(page.locator(".ready-topic")).toHaveCount(0);
-  await expect(page.locator(".subject-panel")).toHaveCount(0);
+  await expect(page.locator(".ready-topic")).toHaveCount(1);
+  await expect(page.locator(".ready-topic")).toContainText("10 özgün soru");
+  await expect(page.locator(".subject-panel")).toHaveCount(1);
   await page
     .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
     .fill("ileri alıştırmalar");

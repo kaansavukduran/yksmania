@@ -75,14 +75,18 @@ Sıfırlama notları, ayarları ve önceki kişisel dosyaları korur.
 Node 24 gereklidir: `npm ci`, `npm run dev`. Kontroller:
 `npm run check`, `npm test`, `npm run build`, `npm run test:e2e`, `npm run test:desktop`.
 
-0.12 C2 ile birleştirilmiş 0.13 kaynağında tip kontrolü, derleme ve
-355/355 birim testi geçti.
-Önceki 1.130 sorunun tam kayıtları ve 147 ders kaydının soru dışındaki bütün
-alanları korunur; bu 147 kaydın 146’sı konu anlatımıdır. Temel soru akışları için
-32 tarayıcı vakası hazırlandı; genel listelemede 22 dosyada 299 vaka bulundu.
-32 temel soru vakası, Pages ve Electron kontrolleri sürüyor. Tam 299 tarayıcı
-koşusu, uzak CI ve 0.13 paket/yayın sonuçları kabul belgelerine
-ayrıca eklenecektir. Test hazırlığı, çalışan uygulama kabulü sayılmaz.
+0.13 kaynağında tip kontrolü, ayrı web/Pages derlemeleri ve 355/355 birim testi
+geçti. Önceki 1.130 soru ve 147 ders kaydının soru dışındaki bütün alanları
+korunur; bu kayıtların 146’sı konu anlatımıdır. Son tam yerel browser koşusu
+302/303 geçti; tek hata yeni cebir sorularını hâlâ sorusuz sayan eski test
+beklentisiydi. Düzeltilen arama kabulü ve dört onay vakası birlikte 5/5 geçti;
+yerel tam 303/303 koşusu yapılmış iddiası yoktur.
+
+Son geliştirme Electron’da aynı profilde taslak değişimini iptal etme, bütün
+kaydın aynılığı, açık onayla değiştirme ve çevrimdışı yeniden açma geçti.
+Pages alt yolunun son derlemesi ve gerçek 0.12→0.13 web güncellemesi eski
+kayıtları korudu. Uzak CI, canlı web/Pages ve paket yayını ayrı kabul edilir;
+0.13 için bu sonuçlar henüz tamamlanmış sayılmaz.
 
 Web ilk çevrimiçi hazırlıktan sonra, native arayüz yerel dosyalardan çalışır.
 Vercel ve GitHub Pages ayrı kökenlerde ayrı ilerleme saklar; kişisel yedekle
