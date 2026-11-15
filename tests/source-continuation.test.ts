@@ -1,3 +1,4 @@
+import accepted014Questions from "./fixtures/0.14.0-questions.json";
 import { expect, it } from "vitest";
 import acceptedQuestions from "./fixtures/0.13.0-questions.json";
 import acceptedTyt from "./fixtures/0.13.0-tyt-exam.json";
@@ -21,11 +22,14 @@ it("retains all 1260 published question payloads while adding 280 distinct sourc
   const all = lessons.flatMap((l) => l.questions);
   const byId = new Map(all.map((q) => [q.id, q]));
   expect(acceptedQuestions).toHaveLength(1260);
-  expect(all).toHaveLength(1540);
-  expect(byId.size).toBe(1540);
+  expect(all.length).toBeGreaterThanOrEqual(1540);
+  expect(byId.size).toBe(all.length);
   for (const q of acceptedQuestions) expect(byId.get(q.id), q.id).toEqual(q);
   const oldIds = new Set(acceptedQuestions.map((q) => q.id));
-  const added = all.filter((q) => !oldIds.has(q.id));
+  const retained014Ids = new Set(accepted014Questions.map((q) => q.id));
+  const added = all.filter(
+    (q) => retained014Ids.has(q.id) && !oldIds.has(q.id),
+  );
   expect(added).toHaveLength(280);
   for (const q of added) {
     expect(q.options, q.id).toHaveLength(5);
@@ -40,12 +44,12 @@ it("retains all 1260 published question payloads while adding 280 distinct sourc
 });
 
 it("teaches the next thirty headings with twenty-eight new deep lessons and two preserved lessons", () => {
-  expect(lessons).toHaveLength(175);
-  expect(lessons.filter((l) => !l.tags.includes("soru-seti"))).toHaveLength(
-    174,
-  );
-  expect(lessonGuides.size).toBe(146);
-  expect(builtInCheatSheets.size).toBe(174);
+  expect(lessons.length).toBeGreaterThanOrEqual(175);
+  expect(
+    lessons.filter((l) => !l.tags.includes("soru-seti")).length,
+  ).toBeGreaterThanOrEqual(174);
+  expect(lessonGuides.size).toBeGreaterThanOrEqual(146);
+  expect(builtInCheatSheets.size).toBeGreaterThanOrEqual(174);
   const topics = studyTopics.slice(138, 168);
   expect(topics).toHaveLength(30);
   const added: string[] = [],
@@ -107,7 +111,9 @@ it("adds real geography practice while preserving a complete earlier 105-item ex
   expect(
     catalogue.find((e) => e.id === "branch-tyt-cografya")!.items,
   ).toHaveLength(40);
-  expect(catalogue.find((e) => e.id === "mixed-ayt")!.items).toHaveLength(25);
+  expect(
+    catalogue.find((e) => e.id === "mixed-ayt")!.items.length,
+  ).toBeGreaterThanOrEqual(25);
   const old = acceptedTyt as ExamSpec;
   expect(old.items).toHaveLength(105);
   let state = beginExam(initialState(), old, 1000);

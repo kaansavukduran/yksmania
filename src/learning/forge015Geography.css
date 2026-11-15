@@ -1,0 +1,271 @@
+.forge015-geography-lab {
+  min-width: 0;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+.forge015-geography-lab h3,
+.forge015-geography-lab h4 {
+  margin: 0 0 12px;
+}
+.forge015-geography-lab p {
+  margin: 14px 0;
+}
+.g015-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 24px;
+  margin: 24px 0;
+}
+.g015-control {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  margin: 20px 0;
+}
+.g015-control label,
+.g015-prediction > label {
+  display: block;
+  min-width: 0;
+}
+.g015-control input,
+.g015-control select,
+.g015-prediction textarea {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+}
+.g015-control input[type="range"] {
+  min-height: 44px;
+  padding: 0;
+  margin-inline: 0;
+  box-sizing: border-box;
+}
+.g015-control input[type="number"],
+.g015-control select {
+  min-height: 44px;
+}
+.g015-selected {
+  display: block;
+  min-width: 0;
+  color: var(--muted);
+}
+.g015-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-height: 44px;
+  margin: 20px 0;
+}
+.g015-check input {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  margin-top: 10px;
+}
+.g015-result,
+.g015-feedback {
+  margin: 24px 0;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  min-width: 0;
+}
+.g015-result > strong {
+  display: block;
+}
+.g015-prediction {
+  min-width: 0;
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+.g015-prediction textarea {
+  resize: vertical;
+}
+.g015-prediction button {
+  max-width: 100%;
+  min-height: 44px;
+  font: inherit;
+  white-space: normal;
+  margin-top: 16px;
+}
+.g015-help,
+.forge015-geography-lab figcaption {
+  color: var(--muted);
+}
+.forge015-geography-lab figure {
+  margin: 24px 0;
+  min-width: 0;
+}
+.forge015-geography-lab figcaption {
+  margin-top: 14px;
+}
+.forge015-geography-lab details {
+  margin: 20px 0;
+  min-width: 0;
+}
+.forge015-geography-lab summary {
+  font: inherit;
+  min-height: 44px;
+  padding: 12px 0;
+  cursor: pointer;
+}
+.g015-months {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
+  gap: 12px 20px;
+  margin: 20px 0;
+}
+.g015-months > div {
+  min-width: 0;
+  padding: 12px 0;
+  border-top: 1px solid var(--border);
+}
+.g015-months dt {
+  font-weight: 600;
+}
+.g015-months dd {
+  margin: 6px 0 0;
+}
+.g015-diagram {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 560px;
+}
+.g015-line,
+.g015-stratum {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 2;
+}
+.g015-gridline {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 1.5;
+}
+.g015-dashed {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 2;
+  stroke-dasharray: 6 5;
+}
+.g015-accent-line {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.g015-tick {
+  fill: var(--text);
+  font:
+    18px system-ui,
+    sans-serif;
+}
+.g015-on-accent {
+  fill: var(--accent-text);
+}
+.g015-bar {
+  fill: var(--muted);
+  stroke: var(--text);
+  stroke-width: 1;
+  fill-opacity: 0.45;
+}
+.g015-bar-selected {
+  fill: var(--accent);
+  fill-opacity: 1;
+  stroke-width: 2;
+}
+.g015-dot {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 1.5;
+}
+.g015-land {
+  fill: var(--surface);
+  stroke: var(--muted);
+  stroke-width: 2;
+}
+.g015-water {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 4;
+}
+.g015-sun {
+  fill: var(--surface);
+  stroke: var(--accent);
+  stroke-width: 3;
+}
+.g015-layer {
+  fill: var(--surface);
+  stroke: var(--muted);
+  stroke-width: 2;
+}
+.g015-layer-selected {
+  fill: var(--accent);
+  stroke: var(--text);
+}
+.g015-continent {
+  fill: var(--surface-raised, var(--surface));
+  stroke: var(--muted);
+  stroke-width: 1.5;
+}
+.g015-map-ring {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.g015-stripe {
+  fill: var(--surface);
+  stroke: var(--muted);
+  stroke-width: 1.5;
+}
+.g015-stripe-alt {
+  fill: var(--accent);
+  fill-opacity: 0.2;
+}
+.g015-ice {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.g015-magma {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 1.5;
+}
+@media (max-width: 700px) {
+  .g015-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .g015-result,
+  .g015-feedback {
+    padding: 6px;
+  }
+  .g015-control input[type="number"],
+  .g015-control select,
+  .g015-prediction textarea {
+    padding-inline: 6px;
+  }
+  .g015-prediction button {
+    padding-inline: 8px;
+  }
+  .g015-months {
+    grid-template-columns: 1fr;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .forge015-geography-lab * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+html[data-motion="off"] .forge015-geography-lab * {
+  animation: none !important;
+  transition: none !important;
+}

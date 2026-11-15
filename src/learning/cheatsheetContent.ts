@@ -1,3 +1,9 @@
+import { forge015MathTopics } from "./forge015Math";
+import { forge015PhysicsTopics } from "./forge015Physics";
+import { forge015ChemistryTopics } from "./forge015Chemistry";
+import { forge015BiologyTopics } from "./forge015Biology";
+import { forge015GeographyTopics } from "./forge015Geography";
+import { forge015TurkishTopics } from "./forge015Turkish";
 import { forge014MathTopics } from "./forge014Math";
 import { forge014PhysicsTopics } from "./forge014Physics";
 import { forge014ChemistryTopics } from "./forge014Chemistry";
@@ -44,6 +50,12 @@ export interface CheatSheet {
 const completeSourceSheets = new Set([
   "mol",
   "carpanlara-ayirma",
+  ...Object.keys(forge015MathTopics),
+  ...Object.keys(forge015PhysicsTopics),
+  ...Object.keys(forge015ChemistryTopics),
+  ...Object.keys(forge015BiologyTopics),
+  ...Object.keys(forge015GeographyTopics),
+  ...Object.keys(forge015TurkishTopics),
   ...Object.keys(forge014MathTopics),
   ...Object.keys(forge014PhysicsTopics),
   ...Object.keys(forge014ChemistryTopics),

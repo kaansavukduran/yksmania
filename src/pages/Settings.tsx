@@ -14,7 +14,7 @@ import { parseBackup } from "../domain/storage";
 import { useConfirmationDialog } from "../components/ConfirmationDialog";
 import { ResetProgress } from "../components/ResetProgress";
 import type { Settings as SettingsType } from "../domain/model";
-const VERSION = "0.14.0";
+const VERSION = "0.15.0";
 function NumericControl({
   label,
   value,

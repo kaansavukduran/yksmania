@@ -5,6 +5,11 @@ import {
   runForge014SmokeCase,
   assertForge014ProcessRestart,
 } from "./forge014-smoke-cases.mjs";
+import {
+  forge015SmokeCases,
+  runForge015SmokeCase,
+  assertForge015ProcessRestart,
+} from "./forge015-smoke-cases.mjs";
 const profile =
   process.env.YKSMANIA_TEST_PROFILE ||
   path.resolve("../work", `desktop-test-${Date.now()}`);
@@ -565,6 +570,11 @@ try {
   for (const unit of forge014SmokeCases)
     forge014Snapshots.push(await runForge014SmokeCase(page, navigate, unit));
 
+  expect(forge015SmokeCases).toHaveLength(6);
+  const forge015Snapshots = [];
+  for (const unit of forge015SmokeCases)
+    forge015Snapshots.push(await runForge015SmokeCase(page, navigate, unit));
+
   const mathematics = [
     /Temel kavramlar: sayı, değer/,
     /Tek–çift ve işaret:/,
@@ -679,6 +689,7 @@ try {
   // Reopen saved 0.14 models in this same real profile after the native restart.
   await page.context().setOffline(true);
   await assertForge014ProcessRestart(page, navigate, forge014Snapshots);
+  await assertForge015ProcessRestart(page, navigate, forge015Snapshots);
   await navigate("Bugün");
   await expect(page.locator(".stat-number").first()).toHaveText("1");
   const dailyTheory = page
@@ -1124,6 +1135,11 @@ try {
       forge014FamiliesOfflineHtmlStateAndReload: forge014Snapshots.map(
         (item) => item.id,
       ),
+      forge015FamiliesOfflineHtmlStateAndReload: forge015Snapshots.map(
+        (item) => item.id,
+      ),
+      forge015SameProfileProcessRestart: "PASS",
+      forge015ExplorationWithoutLearningCredit: "PASS",
       forge014SameProfileProcessRestart: "PASS",
       forge014ExplorationWithoutLearningCredit: "PASS",
       orderedPlanAndRestart: "PASS",

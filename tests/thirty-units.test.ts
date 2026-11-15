@@ -4,7 +4,7 @@ import { lessons } from "../src/domain/content";
 import { studyTopics, topicLessons } from "../src/domain/studyPlan";
 import { lessonGuides } from "../src/learning/guides";
 import { builtInCheatSheets } from "../src/learning/cheatsheetContent";
-import { examCatalogue } from "../src/domain/exams";
+import { examCatalogue, selectExamVariant } from "../src/domain/exams";
 import { questionContentIssues } from "../src/domain/questionContent";
 
 it("preserves all 500 earlier question records and the next 300 authored questions", () => {
@@ -18,6 +18,22 @@ it("preserves all 500 earlier question records and the next 300 authored questio
 });
 
 it("makes workbook headings 79 through 108 reachable as independent theory, visual, summary and practice content", () => {
+  // A 40-item branch can sample fewer lessons than the growing bank.
+  // Verify reachability through actual seeded attempts instead of one preview.
+  const branchLessons = new Map(
+    examCatalogue()
+      .filter((e) => e.kind === "branch")
+      .map((e) => [
+        e.id,
+        new Set(
+          Array.from({ length: 8 }, (_, i) =>
+            selectExamVariant(e, `coverage-${i}`),
+          )
+            .flat()
+            .map((q) => q.lessonId),
+        ),
+      ]),
+  );
   const next = studyTopics.slice(78, 108),
     ids = new Set<string>();
   expect(next).toHaveLength(30);
@@ -46,9 +62,7 @@ it("makes workbook headings 79 through 108 reachable as independent theory, visu
     expect(sheet.lessonId).toBe(lesson.id);
     expect(sheet.sections.length).toBeGreaterThanOrEqual(8);
     expect(
-      examCatalogue()
-        .find((e) => e.id === `branch-${lesson.subjectId}`)!
-        .items.some((q) => q.lessonId === lesson.id),
+      branchLessons.get(`branch-${lesson.subjectId}`)!.has(lesson.id),
     ).toBe(true);
   }
   expect(ids.size).toBe(30);

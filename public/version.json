@@ -1,7 +1,7 @@
 {
-  "version": "0.14.0",
+  "version": "0.15.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Çalışma sırasındaki 139–168. başlıklar işlendi: önceden hazır iki ders korunarak 28 yeni etkileşimli ünite eklendi. Ekoloji, coğrafya, optik, kimyanın kanunları ve mol hesapları, grafikler, kümeler, mantık ve ek fiil; 280 açıklamalı özgün soru ve kapsamlı yerleşik özetlerle çalışılabiliyor. Toplam 174 anlatım ve 1540 soru vardır; ilk 168 başlığın anlatım ve soruları hazırdır. Önceki 1260 soru ve öğrenci kayıtları korunur; bütün 479 başlık henüz tamamlanmadı."
+    "tr": "Çalışma sırasındaki 169–198. başlıklar için 30 yeni etkileşimli ünite: istatistik, vektörler ve bağıl hareket, kimyasal hesaplamalar ve karışımlar, sinir sistemi, iklim ve iç kuvvetler, fiilimsiler ve cümle bilgisi. 300 açıklamalı özgün soru, adım adım çözümler ve kapsamlı yerleşik özetler eklendi. Toplam 204 anlatım ve 1840 soru; ilk 198 başlığın anlatım ve soruları hazır. Önceki 1540 soru ve öğrenci kayıtları korunur; 479 başlığın bütünü henüz tamamlanmadı."
   }
 }

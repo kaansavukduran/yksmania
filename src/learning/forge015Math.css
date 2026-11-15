@@ -1,0 +1,230 @@
+.stat015-lab {
+  min-width: 0;
+}
+.stat015-lab :is(p, h3, label, li, strong, output, summary, button) {
+  overflow-wrap: anywhere;
+}
+.stat015-lab :is(select, textarea, input[type="text"], input[type="range"]) {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  font: inherit;
+}
+.stat015-lab
+  :is(button, select, input[type="text"], input[type="range"], summary) {
+  min-height: 44px;
+}
+.stat015-lab :is(button, select, input, textarea, summary) {
+  font: inherit;
+}
+.stat015-lab button {
+  max-width: 100%;
+  white-space: normal;
+  box-sizing: border-box;
+}
+.stat015-lab input[type="range"] {
+  margin: 0;
+}
+.stat015-controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+.stat015-controls > * {
+  min-width: 0;
+}
+.stat015-field {
+  display: grid;
+  gap: 0.5rem;
+  min-width: 0;
+}
+.stat015-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1rem 0;
+}
+.stat015-actions > button {
+  padding: 0.7rem 1rem;
+}
+.stat015-definitions {
+  padding-block: 1rem;
+  margin-block: 1rem;
+  border-block: 1px solid var(--border);
+}
+.stat015-definitions summary {
+  cursor: pointer;
+  padding-block: 0.5rem;
+  box-sizing: border-box;
+}
+.stat015-toggle {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  min-height: 44px;
+  padding-block: 0.7rem;
+}
+.stat015-toggle input {
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  margin-top: 0.15em;
+}
+.stat015-toggle span {
+  min-width: 0;
+}
+.stat015-axis-key {
+  border-inline-start: 3px solid var(--border);
+  padding-inline-start: 0.7rem;
+  margin: 1.25rem 0;
+}
+.stat015-axis-key > p:first-child {
+  margin-top: 0;
+}
+.stat015-axis-key > p:last-child {
+  margin-bottom: 0;
+}
+.stat015-lab svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 720px;
+  margin: 1.25rem auto;
+  overflow: visible;
+}
+.stat015-lab svg text {
+  fill: var(--text);
+  font: 16px sans-serif;
+}
+.stat015-axis {
+  stroke: var(--text);
+  stroke-width: 1.7;
+  fill: none;
+}
+.stat015-grid {
+  stroke: var(--muted);
+  stroke-width: 1;
+  stroke-dasharray: 4 5;
+  fill: none;
+}
+.stat015-point {
+  fill: var(--accent);
+  stroke: var(--surface);
+  stroke-width: 1.5;
+}
+.stat015-secondary {
+  fill: var(--mint);
+  stroke: var(--text);
+  stroke-width: 1;
+}
+.stat015-halo {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+  stroke-dasharray: 3 3;
+}
+.stat015-mean {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2.5;
+  stroke-dasharray: 6 4;
+}
+.stat015-median {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 1.8;
+}
+.stat015-hist-primary {
+  fill: var(--accent);
+  stroke: var(--surface);
+  stroke-width: 1.5;
+}
+.stat015-hist-secondary {
+  fill: var(--mint);
+  stroke: var(--surface);
+  stroke-width: 1.5;
+}
+.stat015-result {
+  border-block: 1px solid var(--border);
+  padding-block: 1rem;
+  margin-block: 1.25rem;
+}
+.stat015-result :is(ul, ol) {
+  padding-inline-start: 1.25em;
+}
+.stat015-result > p:last-child {
+  margin-bottom: 0;
+}
+.stat015-frequency {
+  display: grid;
+  gap: 0.5rem;
+}
+.stat015-prediction {
+  display: grid;
+  gap: 0.75rem;
+  min-width: 0;
+  padding-block: 1rem;
+  border-block: 1px solid var(--border);
+  margin-block: 1.25rem;
+}
+.stat015-prediction > button,
+.stat015-wide {
+  width: 100%;
+  padding-inline: 6px;
+  gap: 6px;
+}
+.stat015-feedback {
+  border-inline-start: 3px solid var(--accent);
+  padding-inline-start: 0.65rem;
+  min-width: 0;
+}
+.stat015-error {
+  border-inline-start: 3px solid var(--accent);
+  padding-inline-start: 0.65rem;
+}
+.stat015-footnote {
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+.stat015-chosen {
+  display: none;
+  margin: 0.25rem 0;
+}
+@media (max-width: 760px) {
+  .stat015-controls {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .stat015-chosen {
+    display: block;
+  }
+}
+@media (max-width: 460px) {
+  .stat015-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .stat015-actions > button,
+  .stat015-field > button {
+    width: 100%;
+    padding-inline: 6px;
+  }
+  .stat015-feedback {
+    border-inline: 0;
+    padding-inline: 0;
+  }
+  .stat015-axis-key {
+    padding-inline-start: 0.4rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .stat015-lab * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

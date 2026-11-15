@@ -7,6 +7,14 @@ import {
   runForge014SmokeCase,
 } from "./forge014-smoke-cases.mjs";
 
+import {
+  forge015SmokeCases,
+  runForge015SmokeCase,
+} from "./forge015-smoke-cases.mjs";
+
+const expectedVersion = JSON.parse(
+  await fs.readFile(new URL("../package.json", import.meta.url), "utf8"),
+).version;
 const prefix = "/yksmania/";
 const evidence = path.resolve(
   process.env.YKSMANIA_EVIDENCE_DIR || "/tmp/yksmania-pages-evidence",
@@ -315,7 +323,7 @@ let result = { status: "INCOMPLETE", url: origin };
 try {
   expect(additionalFamilies).toHaveLength(6);
   await page.goto(origin);
-  await expect(page.locator(".sidebar-version")).toContainText("0.14.0");
+  await expect(page.locator(".sidebar-version")).toContainText(expectedVersion);
   const manifestLink = await page
     .locator('link[rel="manifest"]')
     .getAttribute("href");
@@ -331,7 +339,7 @@ try {
     new URL("version.json", origin).href,
   );
   expect(versionResponse.status()).toBe(200);
-  expect((await versionResponse.json()).version).toBe("0.14.0");
+  expect((await versionResponse.json()).version).toBe(expectedVersion);
   const worker = await page.evaluate(async () => {
     const reg = await navigator.serviceWorker.ready;
     if (!navigator.serviceWorker.controller)
@@ -386,7 +394,13 @@ try {
     cases.push(unit.id);
   }
 
-  expect(cases).toHaveLength(19);
+  expect(forge015SmokeCases).toHaveLength(6);
+  const forge015Snapshots = [];
+  for (const unit of forge015SmokeCases) {
+    forge015Snapshots.push(await runForge015SmokeCase(page, nav, unit));
+    cases.push(unit.id);
+  }
+  expect(cases).toHaveLength(25);
   await page.getByRole("button", { name: "Sorulara geç", exact: true }).click();
   await expect(page.locator(".answer")).toHaveCount(5);
   await page.locator(".answer").first().click();
@@ -590,6 +604,10 @@ try {
     forge014FamiliesOfflineHtmlStateAndReload: forge014Snapshots.map(
       (item) => item.id,
     ),
+    forge015FamiliesOfflineHtmlStateAndReload: forge015Snapshots.map(
+      (item) => item.id,
+    ),
+    forge015ExplorationWithoutLearningCredit: "PASS",
     forge014ExplorationWithoutLearningCredit: "PASS",
     questionFeedbackReload: "PASS",
     foundationQuestionRoutesOfflineReload: foundationRouteCases,
