@@ -1,4 +1,27 @@
-# 0.11.0 yerel kabul — uzak yayın bekleniyor
+# 0.11.0 doğrulanmış web ve paket yayını
+
+Kaynak 3cd370beb1f7dd96cd9866508c58c96444e5bce5. CI43699042962 dört iş
+PASS: 279 unit, 204 browser, Windows/Linux gerçek paketli çevrimdışı/yeniden
+açılış akışları renderer0, Android build/imza/metadata. Canlı43699042930
+204/204 PASS (14,3 dk). Vercel normal TLS runtime hash eşitliği PASS.
+Pages43700388975 build/deploy/canlı-HTTPS kabulü üç iş PASS; gerçek alt yolda
+yedi yeni aile ilk çevrimdışı model/kayıt/reload, soru açıklaması ve mobil
+gezinme denetlendi. Yerel Chromium'un sertifika otoritesi hatası güvenlik
+kontrolü kapatılmadan GitHub runner'da gerçek URL kabulüyle çözümlendi.
+
+Release43700509433 PASS; v0.11.0-alpha.1 sekiz dosya, draft değil. Tag ve
+verified-run aynı 3cd370b; iki indirilen kanıt hash'i, Android0.11.0/code19/v2
+PASS. Beş büyük binary ayrıca yerelde hash'lenmedi. Fiziksel cihaz, temiz
+kurulum, portable taşıma ve iki native sürüm yükseltmesi NOT TESTED.
+İlk CI203/204, hedef sayfayı beklemeyen eski not ölçüm testiydi; hedef panel ve
+notun görünürlüğü beklendi, geometri/taşma sınırı değişmedi. Son tam204 PASS.
+Pages ilk kayıt yarışması ve diğer ilk hatalar FORGE'de korunur.
+
+Aşağıdaki kayıt yayın öncesi yerel hazırlığı ve yöntem sınırlarını gösterir.
+
+---
+
+# 0.11.0 yerel hazırlık kaydı
 
 30 yeni başlık (79–108) ile toplam 116 anlatım, 88 ayrıntılı rehber,
 116 yerleşik kopya kağıdı ve 800 özgün soru vardır. Doğrulanmış çalışma sırasının

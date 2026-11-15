@@ -1,4 +1,38 @@
-# 0.11.0 kabul ve yayın adayı: 30 kapsamlı başlık, GitHub Pages
+# 0.11.0 yayımlandı: 30 yeni ünite ve GitHub Pages
+
+Paket/test kaynağı `3cd370beb1f7dd96cd9866508c58c96444e5bce5`; uygulama
+kaynakları `4065dc7` ile aynıdır. Aradaki değişiklikler Pages iş akışı,
+kalıcı kayıt bekleme ve eski not yerleşimi testinin hedef sayfayı beklemesidir.
+[CI43699042962](https://github.com/kaansavukduran/yksmania/actions/runs/43699042962)
+dört iş PASS: check/build, 279 unit, 204 browser, gerçek paketli Windows/Linux
+çevrimdışı ve yeniden açılış kabulü, Android build/imza/metadata.
+[Canlı43699042930](https://github.com/kaansavukduran/yksmania/actions/runs/43699042930)
+aynı kaynakta 204/204 PASS (14,3 dk). Önceki canlı43698058438 de 204/204 PASS.
+Vercel production 0.11.0; normal TLS index/sw/version hash'leri yerel derlemeyle eşit.
+
+[Pages43700388975](https://github.com/kaansavukduran/yksmania/actions/runs/43700388975)
+üç iş PASS: alt yol derlemesi ve yerel kabul, deploy, doğrudan canlı HTTPS
+adresinde yedi yeni model ailesinin ilk çevrimdışı açılışı, gerçek değişimi,
+kayıt/yeniden yükleme, soru açıklaması ve mobil gezinme. Adres:
+https://kaansavukduran.github.io/yksmania/ . İlk gerçek yayında dört runtime/
+manifest hash'i yerel Pages derlemesiyle eşit. Vercel ve Pages ayrı ilerleme saklar.
+
+[Release43700509433](https://github.com/kaansavukduran/yksmania/actions/runs/43700509433)
+PASS; [v0.11.0-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.11.0-alpha.1)
+draft değil, sekiz dosya. Beş binary başarılı CI'den yeniden derlenmeden
+alındı; tag ve verified-run aynı 3cd370b. Yedi payload checksum listesi;
+indirilen iki kanıt hash'i PASS. Android 0.11.0/code19/v2 imza PASS.
+Beş büyük binary ayrıca yerelde indirilip hash'lenmedi. Fiziksel Android,
+temiz Windows kurulumu/portable taşıma ve iki native paket arasında veri
+koruyan yükseltme ayrıca doğrulanmalıdır.
+
+Bu sürüm 79–108. başlıkları ekler: toplam 116 anlatım, 88 ayrıntılı rehber,
+116 kopya kağıdı, 800 özgün soru ve ilk 108/479 başlık hazır. Bütün arşiv
+henüz tamamlanmadı. İlk başarısız denemeler ve onarımlar aşağıda korunur.
+
+---
+
+# 0.11.0 hazırlık kaydı: 30 kapsamlı başlık, GitHub Pages
 
 Yetkili proje kaansavukduran/yksmania; dal forge/next-thirty-units.
 Başlangıç b3a08bd21da38a40c99144c1761c9f68d72c9dfb (uygulama 22872a2).

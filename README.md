@@ -1,8 +1,8 @@
 # YKSMania
 
-Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.11.0 alpha adayı**.
+Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.11.0 alpha**.
 
-[Vercel uygulaması](https://yksmania.vercel.app) · [GitHub deposu](https://github.com/kaansavukduran/yksmania)
+[Vercel uygulaması](https://yksmania.vercel.app) · [GitHub Pages](https://kaansavukduran.github.io/yksmania/) · [GitHub deposu](https://github.com/kaansavukduran/yksmania)
 
 30 yeni kaynak başlığı işlendi: 274 bölüm, 123 çözümlü örnek, 136 hatırlama ve
 300 açıklamalı soru. Toplam **116 anlatım, 88 ayrıntılı rehber, 116 kopya kağıdı
@@ -23,7 +23,7 @@ Güncel kabul ve yayın durumu [FORGE](FORGE.md) ve [QA](docs/QA.md)’dedir.
 
 ## İçerik ve öğrenme
 
-0.11.0 adayı, kaynak sırasındaki 79–108. başlıkları işler: 5 matematik,
+0.11.0, kaynak sırasındaki 79–108. başlıkları işler: 5 matematik,
 4 fizik, 5 kimya, 10 biyoloji, 1 Türkçe ve 5 tarih ünitesi. Sayı, kesir, yaş,
 yüzde ve kâr-zarar problemleri; basınç, kaldırma kuvveti ve dalgalar; bağlar,
 etkileşimler ve hâl değişimleri; canlı grupları, mitoz, mayoz, eşeysiz üreme;
@@ -81,10 +81,11 @@ Node 24 gereklidir: `npm ci`, `npm run dev`. Kontroller:
 Yerel önizleme yalnız loopback’e bağlanır. Yerel, CI, canlı site ve gerçek paket
 kanıtları [FORGE](FORGE.md) ve [QA](docs/QA.md)’dedir.
 
-0.11.0 adayında yerel tip/biçim kontrolü, derleme, 279 birim testi ve 204 tarayıcı
-testi geçti. GitHub Pages alt yolunda yerel çevrimdışı kabulü ve ayrı profilde
-0.10.0→0.11.0 web güncellemesi de geçti. Uzak CI, yeni canlı yayınlar ve yeni
-kurulum paketlerinin son durumu kabul belgelerinde ayrıca belirtilir.
+0.11.0 sürümünde 279 birim ve 204 tarayıcı testi, canlı Vercel’de 204 test,
+Windows/Linux paketli çevrimdışı akışlar ve Android build/imza kontrolü geçti.
+GitHub Pages’te yerel alt yol ve gerçek canlı URL kabulü; ayrı profilde
+0.10.0→0.11.0 web güncellemesi de geçti. [Kurulum paketleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.11.0-alpha.1)
+ve ayrıntılı kanıtlar kabul belgelerindedir.
 
 Web ilk çevrimiçi hazırlıktan sonra, native paketler yerel arayüzle çalışır.
 Veriler cihaz bazındadır. Windows Setup/Portable ve Linux AppImage/DEB x64;
