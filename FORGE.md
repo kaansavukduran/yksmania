@@ -1,3 +1,69 @@
+# 0.11.0 kabul ve yayın adayı: 30 kapsamlı başlık, GitHub Pages
+
+Yetkili proje kaansavukduran/yksmania; dal forge/next-thirty-units.
+Başlangıç b3a08bd21da38a40c99144c1761c9f68d72c9dfb (uygulama 22872a2).
+Kullanıcı bu turda devamı, tüm konuların kapsamlı işlenmesini ve ayrıca GitHub
+Pages yayınını istedi. 79–108. başlıklar için 30 yeni ünite tamamlandı; 274
+bölüm, 123 çözümlü örnek, 136 hatırlama, 300 yeni soru. Toplam 116 anlatım,
+88 rehber, 116 kağıt ve 800 özgün soru; ilk 108/479 hazır. Basınç ve kaldırmanın
+önceki kağıtları korunarak genişlediği için 30 ders, 28 yeni kağıt vardır.
+TYT karma 105, AYT karma 25 ve 11 branş çalışması; tam resmî dağılım değildir.
+Önceki 500 soru tüm JSON alanlarıyla korunur. Kaynak sayfa sınırları
+SOURCE_REVIEW içinde; özel PDF/ham metin/kimlik yayımlanmaz.
+
+AIONIA canlı v1.7 bu turda okundu; mevcut Türkçe/Windows/Linux/Android/web,
+onaylı ikon ve Aion paftası korunur. Kullanıcı komut belgesini paylaşmak k44,
+Aionlaştır veya aionia etkinleştirmesi sayılmadı. Yeni İngilizce/macOS/iOS veya
+Drive yedeği kapsamı açılmadı. GitHub Pages için ayrıca açık yetki verildi.
+Bağlı uygulamayla Pages ayarı POST 403 verdi; kullanıcı Source=GitHub Actions
+seçtiğini doğruladı. Yayın iş akışı aynı kaynak için ayrı gözlemlenir.
+
+Yazar ve ikinci okuyucu 300 anahtarı, 123 örneği ve model koşullarını denetledi.
+Türkçede bir örnek dönüşümü ve soru seçeneği netleştirildi. Kaynakların yanlış
+veya koşulsuz genellemeleri taşınmadı. İlk tam 277 unit PASS, tsc tek string
+SVG prop için FAIL; y=370 sayı yapıldı. Güncelleme metadata sürümü 0.10.0
+kaldığı için ilk gerçek upgrade koruması FAIL verdi; version.json 0.11.0 ve
+30 konunun notuna düzeltildi, sürüm sözleşmesi regresyon testi eklendi.
+
+Yeni 62 browser ilk koşu 61 PASS/1 FAIL: tam ve cevaplanabilir “280'in %15'i
+kaçtır?” kökü keyfî >20 karakter sınırına takıldı. Kök değiştirilmedi; test
+artık ilk gerçek soru metninin aynen çizildiğini denetler. Pages ilk kabulünde
+select içeren label için exact getByLabel uyuşmadı; gerçek role/name seçicisi
+kullanıldı, etkileşim/sonuç/offline koşulları korunur. Son tam 204/204 browser
+kabulü PASS (13,6 dk); check/build ve 279/279 unit PASS. Son 30×4 ölçüm/
+görüntü durumu PASS, renderer0. Seçilmiş gerçek görüntüler ayrıca incelendi.
+Son geliştirme Electron akışı yedi yeni aile ve eski çalışma/deneme/kayıt
+akışlarıyla PASS, renderer0. Yerel Pages alt yol kabulü ve gerçek 0.10→0.11
+web güncellemesi PASS; 87 runtime dosyası yükseltme test kopyasıyla byte eşit.
+Uzak CI, paket ve iki canlı yayın bu aday kaydından sonra doğrulanacak.
+
+Yayımdan önce düzeltilen somut bulgular:
+- YKS-043/Orta: Zarflar gerekçesi 240, kayıt sınırı 128 idi; UI 120 karaktere
+  alındı ve kalıcılıkla denetlenir.
+- YKS-044/Orta: CO otomatik adı monooksit çıkıyordu; monoksit ve saf model testi.
+- YKS-045/Orta: iyon–indüklenmiş dipolün yakın kutbu iyon yüküne bağlı değildi;
+  Na⁺/Cl⁻ iki sıra ve iki anlık durum için saf/gerçek SVG regresyonu eklendi.
+- YKS-046/Orta: ahtapot beş kol çiziyordu; sekiz kol ve gerçek DOM sayımı.
+- YKS-047/Orta: mayoz öğretiminde heterolog çift yazılmıştı; çiftin kendi içinde
+  homolog, farklı çiftlerin homolog olmadığı açıklamasıyla düzeltildi.
+- YKS-048/Orta: litik faj çıkışında konak sınırı kapalıydı; çıkışta kırık kontur,
+  diğer aşamalarda kapalı sınır çizilir; gerçek SVG/renk kontrolü eklendi.
+- YKS-050/Orta: yeni biyoloji çizimleri tanımsız --green, zarflar --panel
+  kullanıyordu; geçerli tema renkleriyle düzeltildi. Kromozom ve gen yollarının
+  gerçek computed stroke görünürlüğü ve tüm yeni tema değişkenleri test edilir.
+- YKS-051/Orta: mayoz I sitokinezi tamamlandığında iğ çizimi sürüyordu; yalnız
+  ilgili aktif evrelerde çizilir ve sitokinez I durumunda yokluğu denetlenir.
+- YKS-049/Orta: önceki başarılı 0.10.0 koşusu yeni sabit etikete yayınlanabilirdi;
+  exact SHA kaynak sürümü/Android code19/beş gerçek dosya adı ve APK metadata
+  kapıları eklendi. Eski mantık stale koşuyu kabul etti, yeni kapı reddetti;
+  18 sentetik kabul/ret vakası PASS. Uzak yayın bu sentetik teste dahil değil.
+
+Fiziksel cihazlar, temiz kurulum/portable taşıma, iki native sürüm yükseltmesi
+ayrıca doğrulanmalıdır. Bu kabul, bütün arşiv veya bütün platformlar tamamlandı
+iddiası değildir. Sıradaki 109. başlık Faiz Problemleri/detail-215.
+
+---
+
 # 0.10.0 yayımlandı: 20 kapsamlı ünite
 
 Uygulama ve paket kaynağı `22872a289b26da02bc6feab9fb34db587670a55d`.

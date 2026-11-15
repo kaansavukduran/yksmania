@@ -1,3 +1,10 @@
+import { forge011MathLessons } from "../learning/forge011Math";
+import { forge011PhysicsLessons } from "../learning/forge011Physics";
+import { forge011ChemistryLessons } from "../learning/forge011Chemistry";
+import { forge011BiologyALessons } from "../learning/forge011BiologyA";
+import { forge011BiologyBLessons } from "../learning/forge011BiologyB";
+import { forge011TurkishLessons } from "../learning/forge011Turkish";
+import { forge011HistoryLessons } from "../learning/forge011History";
 import { forge093MathLessons } from "../learning/forge093Math";
 import { forge093PhysicsLessons } from "../learning/forge093Physics";
 import { forge093ChemistryLessons } from "../learning/forge093Chemistry";
@@ -833,6 +840,13 @@ const baseLessons: Lesson[] = [
   chemicalSpeciesLesson,
   heatTemperatureLesson,
   ...ionicLessons,
+  ...forge011MathLessons,
+  ...forge011PhysicsLessons,
+  ...forge011ChemistryLessons,
+  ...forge011BiologyALessons,
+  ...forge011BiologyBLessons,
+  ...forge011TurkishLessons,
+  ...forge011HistoryLessons,
   ...forge093MathLessons,
   ...forge093PhysicsLessons,
   ...forge093ChemistryLessons,

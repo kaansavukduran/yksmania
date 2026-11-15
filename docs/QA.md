@@ -1,3 +1,51 @@
+# 0.11.0 yerel kabul — uzak yayın bekleniyor
+
+30 yeni başlık (79–108) ile toplam 116 anlatım, 88 ayrıntılı rehber,
+116 yerleşik kopya kağıdı ve 800 özgün soru vardır. Doğrulanmış çalışma sırasının
+ilk 108/479 başlığı hazırdır. Bütün MEB/OGM/Drive arşivinin işlenmesi veya tam
+resmî dağılımlı TYT/AYT denemesi tamamlandı iddiası yoktur.
+
+Yerel `npm run check`, `npm test` (279/279) ve `npm run build` PASS.
+Tam Chromium tarayıcı koşusu 204/204 PASS (13,6 dk). Yeni 62 kabul, 30 ünitenin
+normal ders girişini, gerçek model değişimini, HTML sonucunu, not/gerekçe
+kaydını, ilk soru ve açıklamasını, çevrimdışı yeniden açılışı ve keşfin
+öğrenme/XP kazandırmamasını denetler. 320 px, UI %200/yazı %150, dokunma,
+azaltılmış hareket, erişilebilirlik ve benzersiz kimlik kontrolleri dahildir.
+İyon ve indüklenmiş dipolün iki yük/iki sıra/iki anlık durum kombinasyonları
+gerçek SVG üzerinde ayrıca sınanır.
+
+Son derlemede 30 ünite × 4 görünüm için 120 ölçüm/ekran görüntüsü durumu PASS,
+renderer hatası 0. Görünümler: 1440 px koyu, 390 px açık, 844×390 yatay ve
+320 px açık/büyük arayüz/büyük yazı/azaltılmış hareket. Bu sayı, 120 görüntünün
+tamamının insan gözüyle incelendiği anlamına gelmez; seçilmiş gerçek görüntüler
+ayrıca incelendi. Bu incelemede görünmeyen kromozom/gen çizgileri ve mayoz I
+sitokinezindeki fazladan iğ çizgileri yakalandı ve düzeltildi. Son kabul,
+hesaplanmış çizgi rengini ve ilgili evrede iğ bulunmamasını da denetler.
+
+Ayrı yerel köken/profilde gerçek 0.10.0→0.11.0 service worker güncellemesi PASS:
+eski öğrenme olayları ve üç tekrar tarihi, ayarlar, notlar, belgeler/katalog,
+tamamlanma ve kontrol edilmiş soru taslağı korundu. Yalnız eski dosya koruma
+koşulu için etkisiz, sentetik 870 bayt PDF kullanıldı; gerçek özel PDF eklenmedi.
+Yeni modeller ilk kez çevrimdışı açıldı, seçimleri yeniden açılışta korundu;
+XP 25→25, renderer hatası ve başarısız uygulama isteği 0. Bu test yerel web
+güncellemesidir; kullanıcının canlı profili veya native sürüm geçişi değildir.
+
+GitHub Pages için yerel `/yksmania/` alt yol kabulü PASS: manifest, simgeler,
+worker kapsamı ve sürüm adresi doğru alt yoldadır. Yedi yeni model ailesi ilk
+kez çevrimdışı açıldı; gerçek değişim ve yeniden yükleme, soru açıklaması,
+kopya kağıdı, sınav ve mobil gezinme denetlendi. Vercel ile Pages ayrı kökenlerde
+ayrı ilerleme saklar; kişisel yedek aktarımı gerekir.
+
+Son kaynakta geliştirme Electron kabulü yedi yeni model ailesi, ilk çevrimdışı
+açılış/gerçek değişim/yeniden açılış ve eski çalışma/deneme/kayıt akışlarıyla
+PASS; renderer hatası 0. Uzak CI, Windows/Linux paketleri, Android paketi ve
+iki canlı yayın henüz bu kayıtta doğrulanmış sayılmaz. Fiziksel Android, temiz Windows kurulumu, portable taşıma ve iki
+native sürüm arasında veri koruyan yükseltme ayrıca doğrulanmalıdır.
+İlk başarısız denemeler ve somut YKS-043–051 onarımları [FORGE](../FORGE.md)'de
+korunur; test kabul sınırları bu hataları örtmek için gevşetilmedi.
+
+---
+
 # 0.10.0 doğrulanmış teslim
 
 Kaynak22872a289b26da02bc6feab9fb34db587670a55d. CI43635461738 dört iş PASS:

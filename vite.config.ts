@@ -1,8 +1,9 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
+const appBase = process.env.YKSMANIA_BASE_PATH || "./";
 export default defineConfig({
-  base: "./",
+  base: appBase,
   plugins: [
     react(),
     VitePWA({
@@ -15,17 +16,18 @@ export default defineConfig({
         theme_color: "#15191f",
         background_color: "#15191f",
         display: "standalone",
-        start_url: "/",
+        start_url: appBase,
+        scope: appBase,
         lang: "tr",
         icons: [
           {
-            src: "/icon.svg",
+            src: "icon.svg",
             sizes: "any",
             type: "image/svg+xml",
             purpose: "any",
           },
           {
-            src: "/icon.png",
+            src: "icon.png",
             sizes: "512x512",
             type: "image/png",
             purpose: "any",
@@ -38,7 +40,7 @@ export default defineConfig({
         globPatterns: [
           "**/*.{js,mjs,css,html,svg,png,woff2,wasm,bcmap,pfb,ttf}",
         ],
-        navigateFallback: "index.html",
+        navigateFallback: `${appBase === "./" ? "" : appBase}index.html`,
         cleanupOutdatedCaches: true,
         clientsClaim: true,
       },

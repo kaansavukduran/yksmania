@@ -1,3 +1,34 @@
+# 0.11.0: sıradaki 30 başlık için kaynak incelemesi
+
+79–108. başlıklar: 5 matematik, 4 fizik, 5 kimya, 10 biyoloji, 5 tarih ve 1 Türkçe.
+Yeni içerik 274 bölüm, 123 adım adım örnek, 136 hatırlama ve 300 özgün sorudur.
+Kaynaklar öğretim kapsamını belirler; kurum soruları veya özel PDF'ler yayımlanmaz.
+Dosya indirmek, içindeki bütün sayfaları incelemek anlamına gelmez.
+
+| Alan | Bu turda gerçekten okunan öğretim kapsamı |
+| --- | --- |
+| Matematik | MEBİ PDF 49/50/51/53/54 (basılı 47/48/49/51/52); Aurelia 017–018 s.1–3,5–6; 019 s.1–6; 020–021 s.1–8. Beş kaynak şekli görsel olarak incelendi. |
+| Fizik | MEBİ basılı 130–155 (PDF 132–157): basınç, kaldırma, dalgalar ve yaylar; Aurelia 012 s.2–5, 013 s.1–3, 014–015 s.1–4. Beş MEBİ ve dört Aurelia şekli görüldü. |
+| Kimya | MEBİ PDF 41–54 (basılı 39–52); Aurelia 019 s.1–6,020–021 s.1–9,022 s.1–8,023 s.1–10. Beş OGM tek sayfalık konu özeti ve ilgili orijinal şekiller incelendi. |
+| Canlı grupları | MEBİ PDF 79–91,100–102 (basılı 77–89,98–100); Aurelia 014–018 temel öğretim ve yöntem/karşılaştırma sayfaları. Beş MEBİ figürü görüldü. |
+| Hayvanlar ve bölünmeler | MEBİ PDF 92–99,103–122 (basılı 90–97,101–120); Aurelia 019–020 s.1–3,5–6 ve 021–023 s.1–7. Sınıflama ve hücre evresi figürleri incelendi. |
+| Tarih | Aurelia 015–019; OGM Dersler Cepte Tarih 11 sayılar 3–7 ile İnkılap Tarihi 12 sayılar 1–2 içindeki ilgili öğretim sayfaları; OGM Tarih 11 özetleri 019,025–028. Tarihsel sıra ve belgelerin yetki sınırları karşılaştırıldı. |
+| Zarflar | Aurelia 006 öğretim s.1–5, yöntem/onarım s.8–12; OGM İsim Soylu Sözcükler PDF 24–31. MEBİ Türkçe bağımsız dosyası okunmadı; Aurelia atıfları doğrudan okuma sayılmaz. |
+
+Kaynak kusurları aynen taşınmadı: 5 katının 14 eksiği 5x−14'tür; eşeysiz
+üreme ile endospor dayanıklılığı farklıdır; bütün virüslerin enzim taşımadığı,
+bütün omurgasızların açık dolaşımlı olduğu gibi genellemeler kullanılmadı.
+Mayozda homolog çift ile farklı çiftler ayrıldı. Kaldırmada ıslanan yüzey,
+Pascal'da basınç değişimi, gazda kelvin, dalgada kaynak/ortam koşulları belirtilir.
+Hidrojen bağında verici/alıcı/yönlenme, değişimde bileşim ve fiziksel ortam ayrılır.
+Tarihte 1833/1841, 1853/1856, 1914/1915 ve 1917/1918 bağlamları karıştırılmaz.
+
+300 yeni anahtar bağımsız ikinci okumadan geçti; önceki 500 soru kaydı tam
+metin/seçenek/pasaj/ipucu/açıklama/anahtar eşitliğiyle korunur. Tüm arşivin veya
+son 20 yıllık bütün ÖSYM sınavlarının incelendiği iddia edilmez. Kaynak adları
+öğretim bibliyografyasıdır; özel Drive kimlikleri, kişisel plan ve ham metinler
+uygulamaya veya Git'e konulmadı.
+
 # Kaynak ve model kontrolü
 
 ## 0.10.0: çalışma sırasındaki 20 ünite

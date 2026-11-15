@@ -1,39 +1,33 @@
-YKSMania 0.10.0 alpha
+YKSMania 0.11.0 alpha
 
-Kaynak sırasındaki 59–78. başlıklar için 20 yeni ünite: 5 matematik, 5 fizik,
-2 kimya, 2 biyoloji, 3 Türkçe ve 3 tarih. Ayrıntılı rehberlerde 189 açıklama
-bölümü, 91 adım adım çözümlü örnek, 92 hatırlama ve 200 yeni özgün soru var.
+Kaynak sırasındaki 79–108. başlıklar için 30 yeni ünite: 5 matematik, 4 fizik,
+5 kimya, 10 biyoloji, 5 tarih ve zarflar. 274 açıklama bölümü, 123 çözümlü
+örnek, 136 hatırlama ve 300 yeni açıklamalı özgün soru eklendi.
 
-Mutlak değer, üsler, bilimsel gösterim, kökler, oran orantı; genleşme, hâl
-değişimi, durgun elektrik, devreler, manyetik alan; kovalent bağ ve molekül
-polarlığı; zar taşınmaları ve sınıflandırma; isim/tamlama, sıfat, zamir;
-Osmanlı merkez teşkilatı, toplum ve değişen dünya dengeleri işlendi.
-Konuya özgü görsel modeller, cümle dönüşümleri ve tahmin/kanıt/gerekçe
-çalışmaları çevrimdışı korunur. Öğrenci materyal yüklemez. Keşifler puan
-veya tamamlanma oluşturmaz.
+Kesir tabanı, yaş farkı, ardışık yüzde ve başabaş; basınç/kaldırma ve dalga;
+kimyasal etkileşim/bağ/evre; canlı grupları/mitoz/mayoz; tarihsel belge ve
+neden-sonuç; sözcük bağlantıları konuya özgü görsel modellerle işlenir.
+Öğrenci materyal yüklemez. Keşifler puan veya tamamlanma oluşturmaz.
 
-Toplam 86 anlatım, 58 rehber, 88 kağıt ve 500 özgün soru; ilk 78/479 başlık
-hazırdır. Önceki 300 tam soru kaydı korunur. TYT karma 105/AYT karma 25 soru
-ve 11 branş seti vardır. Tüm arşiv veya tam resmî dağılımlı deneme bankası
-henüz tamamlanmadı. Canlı site: https://yksmania.vercel.app.
-Kaynak ve test kanıtları: FORGE.md ve docs/QA.md.
+Toplam 116 anlatım, 88 ayrıntılı rehber, 116 kopya kağıdı ve 800 özgün soru;
+çalışma sırasındaki ilk 108/479 başlık hazırdır. Önceki 500 tam soru kaydı
+korunur. TYT karma 105 / AYT karma 25 ve 11 branş seti vardır. Bütün kaynak
+arşivi veya tam resmî dağılımlı deneme bankası henüz tamamlanmadı.
 
-Doğrulanan kaynak: `22872a289b26da02bc6feab9fb34db587670a55d`.
-[CI koşusundaki](https://github.com/kaansavukduran/yksmania/actions/runs/43635461738)
-dört iş başarılı: 192 birim testi, 142 tarayıcı testi ve Windows/Linux/Android paketleri.
-[Canlı site kabulünde](https://github.com/kaansavukduran/yksmania/actions/runs/43635597330)
-ayrıca 142/142 test geçti. Gerçek yerel web güncellemesinde notlar,
-ilerleme ve taslak korundu; fiziksel/native yükseltme kabulü değildir.
+Web: https://yksmania.vercel.app
+GitHub Pages yayını aynı kaynak için ayrı kabul edilir. Alt klasör yolları,
+manifest ve çevrimdışı önbellek uyarlanmıştır. İki adres ayrı köken olduğundan
+ilerleme kayıtları kendiliğinden eşitlenmez; kişisel yedek kullanılabilir.
+Doğrulama ve kaynak sınırları FORGE.md, docs/QA.md ve docs/SOURCE_REVIEW.md'dedir.
 
 Assets bölümünden cihazına uygun dosyayı seç:
 Windows Setup.exe kurulum, Portable.exe doğrudan çalıştırma içindir; ikisi de
 x64 ve Authenticode imzasızdır. Linux AppImage'e çalıştırma izni ver; DEB
-Debian/Ubuntu içindir. Android APK debug imzalı test paketidir; minimum API24
+Debian/Ubuntu içindir. Android APK debug imzalı test paketidir; minimum API 24
 ve güncel WebView gerekir. Debug anahtarı derlemeler arasında değişebilir;
 paket geçişinden önce uygulamanın ilerleme yedeğini dışa aktar.
 
 Fiziksel Android, temiz Windows kurulumu/portable taşıma ve iki native paket
 arasında veri koruyan güncelleme ayrıca doğrulanmalıdır. Web ilk çevrimiçi
 hazırlıktan sonra, native arayüz yerel dosyalardan çalışır. Veriler cihaz
-bazındadır. Başarılı paket koşusu ve kaynak SHA'sı verified-run.json,
-dosya hash'leri SHA256SUMS.txt içindedir.
+bazındadır. verified-run.json kaynak koşusunu, SHA256SUMS.txt dosyaları gösterir.

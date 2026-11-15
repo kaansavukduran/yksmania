@@ -1,7 +1,7 @@
 {
-  "version": "0.10.0",
+  "version": "0.11.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Çalışma sırasındaki 59–78. başlıklar için 20 kapsamlı ünite: matematik, fizik, kimya, biyoloji, Türkçe ve tarih. Konuya özel görsel atölyeler, adım adım örnek çözümleri ve açıklamalı özgün sorular. Notların, seçimlerin ve çalışma kayıtların çevrimdışı korunur."
+    "tr": "Çalışma sırasındaki 79–108. başlıklar için 30 kapsamlı ünite: problem türleri, canlı grupları ve hücre bölünmeleri, kimyasal etkileşimler, basınç ve dalgalar, yakın dönem tarih ve zarflar. Etkileşimli modeller, adım adım örnekler ve 300 yeni açıklamalı soru. GitHub Pages desteği eklendi; notlar ve çalışma kayıtları çevrimdışı korunur."
   }
 }

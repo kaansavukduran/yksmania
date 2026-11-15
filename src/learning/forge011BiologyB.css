@@ -1,0 +1,211 @@
+.bio011b-lab {
+  min-width: 0;
+  margin-block: 24px;
+  padding: clamp(8px, 2vw, 24px);
+  border-block: 1px solid var(--border);
+  background: var(--surface-2);
+  overflow-wrap: anywhere;
+}
+.bio011b-lab h3 {
+  margin-top: 0;
+}
+.bio011b-lab h4 {
+  margin-bottom: 16px;
+}
+.bio011b-lab label {
+  display: block;
+  min-width: 0;
+  line-height: 1.65;
+}
+.bio011b-lab select,
+.bio011b-lab textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  margin-block: 8px 16px;
+}
+.bio011b-lab input[type="range"] {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin: 8px 0 16px;
+}
+.bio011b-lab button {
+  max-width: 100%;
+  min-width: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.bio011b-lab .secondary {
+  padding-inline: clamp(10px, 2vw, 20px);
+}
+.bio011b-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 16px;
+  margin-block: 20px;
+}
+.bio011b-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-block: 20px;
+}
+.bio011b-actions button {
+  flex: 1 1 170px;
+}
+.bio011b-lab .bio011b-check {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  margin-block: 16px;
+}
+.bio011b-check input {
+  flex: 0 0 auto;
+  margin: 0;
+}
+.bio011b-drawing {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 720px;
+  margin: 24px auto;
+  color: var(--text);
+}
+.bio011b-fill {
+  fill: var(--mint);
+  fill-opacity: 0.25;
+  stroke: var(--mint);
+  stroke-width: 3;
+}
+.bio011b-card {
+  fill: var(--surface);
+  stroke: var(--border);
+  stroke-width: 2;
+}
+.bio011b-match {
+  stroke: var(--mint);
+  fill: var(--mint);
+  transition: opacity 0.2s ease;
+}
+.bio011b-dim {
+  opacity: 0.28;
+  stroke: var(--muted);
+  fill: var(--muted);
+  transition: opacity 0.2s ease;
+}
+.bio011b-detail {
+  stroke: var(--surface);
+  fill: none;
+  stroke-width: 2;
+}
+.bio011b-body {
+  fill: var(--mint);
+  fill-opacity: 0.16;
+  stroke: var(--mint);
+  stroke-width: 3;
+}
+.bio011b-organ {
+  fill: var(--accent);
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+.bio011b-organ-line {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+.bio011b-air {
+  fill: var(--surface);
+  stroke: var(--accent);
+  stroke-width: 3;
+  stroke-dasharray: 5 4;
+}
+.bio011b-cell {
+  fill: var(--surface);
+  stroke: var(--mint);
+  stroke-width: 3;
+}
+.bio011b-nuclear {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 2;
+  stroke-dasharray: 6 4;
+}
+.bio011b-spindle {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1.5;
+  opacity: 0.5;
+}
+.bio011b-plate {
+  stroke: var(--mint);
+  stroke-width: 7;
+  fill: none;
+}
+.bio011b-cleavage {
+  stroke: var(--mint);
+  stroke-width: 4;
+  fill: none;
+}
+.bio011b-ground {
+  stroke: var(--mint);
+  stroke-width: 3;
+}
+.bio011b-start-line {
+  stroke: var(--border);
+  stroke-width: 2;
+  stroke-dasharray: 6 6;
+}
+.bio011b-result {
+  border-left: 3px solid var(--accent);
+  padding: 16px;
+  margin-block: 20px;
+  background: var(--surface);
+}
+.bio011b-result p:last-child {
+  margin-bottom: 0;
+}
+.bio011b-prediction,
+.bio011b-genetics,
+.bio011b-growth {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+.bio011b-feedback {
+  margin-top: 20px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+.bio011b-sample-list {
+  columns: 2 220px;
+  padding-left: 24px;
+}
+.bio011b-sample-list li {
+  padding-block: 5px;
+  break-inside: avoid;
+}
+.bio011b-products {
+  text-align: center;
+  line-height: 1.8;
+}
+.bio011b-growth summary {
+  cursor: pointer;
+  min-height: 44px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .bio011b-match,
+  .bio011b-dim {
+    transition: none;
+  }
+}
+:root[data-motion="false"] .bio011b-match,
+:root[data-motion="false"] .bio011b-dim {
+  transition: none;
+}

@@ -1,3 +1,10 @@
+import { forge011MathTopics } from "./forge011Math";
+import { forge011PhysicsTopics } from "./forge011Physics";
+import { forge011ChemistryTopics } from "./forge011Chemistry";
+import { forge011BiologyATopics } from "./forge011BiologyA";
+import { forge011BiologyBTopics } from "./forge011BiologyB";
+import { forge011TurkishTopics } from "./forge011Turkish";
+import { forge011HistoryTopics } from "./forge011History";
 import { narrativeById } from "./narratives";
 import { forge093MathTopics } from "./forge093Math";
 import { forge093PhysicsTopics } from "./forge093Physics";
@@ -5,7 +12,7 @@ import { forge093ChemistryTopics } from "./forge093Chemistry";
 import { forge093BiologyTopics } from "./forge093Biology";
 import { forge093TurkishTopics } from "./forge093Turkish";
 import { forge093HistoryTopics } from "./forge093History";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, type ComponentType } from "react";
 import { useApp } from "../store";
 const PeriodicReasoning = lazy(() => import("./PeriodicReasoning"));
 const WorldPower = lazy(() => import("./WorldPowerOttomanLab"));
@@ -19,6 +26,13 @@ const NextChemistry = lazy(() => import("./Forge093ChemistryLab"));
 const NextBiology = lazy(() => import("./Forge093BiologyLab"));
 const NextTurkish = lazy(() => import("./Forge093TurkishLab"));
 const NextHistory = lazy(() => import("./Forge093HistoryLab"));
+const Forge011Math = lazy(() => import("./Forge011MathLab"));
+const Forge011Physics = lazy(() => import("./Forge011PhysicsLab"));
+const Forge011Chemistry = lazy(() => import("./Forge011ChemistryLab"));
+const Forge011BiologyA = lazy(() => import("./Forge011BiologyALab"));
+const Forge011BiologyB = lazy(() => import("./Forge011BiologyBLab"));
+const Forge011Turkish = lazy(() => import("./Forge011TurkishLab"));
+const Forge011History = lazy(() => import("./Forge011HistoryLab"));
 const Cell = lazy(() => import("./CellExplorer"));
 const Periodic = lazy(() => import("./PeriodicExplorer"));
 const Geometry = lazy(() => import("./GeometryExplorer"));
@@ -38,22 +52,29 @@ const Algebra = lazy(() => import("./AlgebraExplorer"));
 const Shells = lazy(() => import("./ElectronShellExplorer"));
 const Language = lazy(() => import("./TurkishLanguageExplorer"));
 const Factorization = lazy(() => import("./FactorizationExplorer"));
+const continuationLabs: {
+  topics: Record<string, string>;
+  Component: ComponentType<{ id: string }>;
+}[] = [
+  { topics: forge011MathTopics, Component: Forge011Math },
+  { topics: forge011PhysicsTopics, Component: Forge011Physics },
+  { topics: forge011ChemistryTopics, Component: Forge011Chemistry },
+  { topics: forge011BiologyATopics, Component: Forge011BiologyA },
+  { topics: forge011BiologyBTopics, Component: Forge011BiologyB },
+  { topics: forge011TurkishTopics, Component: Forge011Turkish },
+  { topics: forge011HistoryTopics, Component: Forge011History },
+  { topics: forge093MathTopics, Component: NextMath },
+  { topics: forge093PhysicsTopics, Component: NextPhysics },
+  { topics: forge093ChemistryTopics, Component: NextChemistry },
+  { topics: forge093BiologyTopics, Component: NextBiology },
+  { topics: forge093TurkishTopics, Component: NextTurkish },
+  { topics: forge093HistoryTopics, Component: NextHistory },
+];
 export function VisualLab({ id }: { id: string }) {
   const { t } = useApp();
-  const ContinuationLab =
-    id in forge093MathTopics
-      ? NextMath
-      : id in forge093PhysicsTopics
-        ? NextPhysics
-        : id in forge093ChemistryTopics
-          ? NextChemistry
-          : id in forge093BiologyTopics
-            ? NextBiology
-            : id in forge093TurkishTopics
-              ? NextTurkish
-              : id in forge093HistoryTopics
-                ? NextHistory
-                : null;
+  const ContinuationLab = continuationLabs.find(({ topics }) =>
+    Object.hasOwn(topics, id),
+  )?.Component;
   return (
     <Suspense fallback={<p role="status">{t("loading")}</p>}>
       {ContinuationLab ? (

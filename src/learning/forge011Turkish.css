@@ -1,0 +1,132 @@
+.adverb011-lab {
+  min-width: 0;
+  max-width: 100%;
+  line-height: 1.75;
+}
+.adverb011-lab h3 {
+  margin-top: 0;
+}
+.adverb011-lab label {
+  display: block;
+  margin-block: 0.6em 0.3em;
+}
+.adverb011-lab select,
+.adverb011-lab textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  font: inherit;
+}
+.adverb011-lab select {
+  min-height: 44px;
+}
+.adverb011-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  margin-block: 1em;
+}
+.adverb011-lab button {
+  min-width: 0;
+  max-width: 100%;
+  min-height: 44px;
+  padding: 0.6em 0.5em;
+  white-space: normal;
+  line-height: 1.5;
+}
+.adverb011-lab button[aria-pressed="true"] {
+  border-color: var(--accent);
+}
+.adverb011-diagram {
+  min-width: 0;
+  margin-block: 1em;
+  padding-block: 0.7em;
+  border-block: 1px solid var(--border);
+}
+.adverb011-sentence {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.4em;
+  min-width: 0;
+}
+.adverb011-sentence > span {
+  max-width: 100%;
+  padding: 0.4em 0.2em;
+  border-bottom: 3px solid transparent;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+.adverb011-sentence .adverb011-target {
+  border-color: var(--accent);
+  font-weight: 650;
+}
+.adverb011-sentence .adverb011-head {
+  border-color: var(--border);
+  background: var(--surface);
+}
+.adverb011-sentence small {
+  display: block;
+  font-size: 0.7em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.adverb011-diagram svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 100px;
+  margin-top: 0.5em;
+  color: var(--text);
+}
+.adverb011-link {
+  display: flex;
+  gap: 0.4em;
+  align-items: flex-start;
+  margin-top: 0.7em;
+  min-width: 0;
+}
+.adverb011-link > svg {
+  width: 1em;
+  height: 1em;
+  flex: 0 0 1em;
+  margin-top: 0.35em;
+}
+.adverb011-link > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.adverb011-result,
+.adverb011-feedback {
+  border-left: 3px solid var(--accent);
+  padding: 0.5em 0.7em;
+  margin-block: 1em;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.adverb011-result p {
+  margin-bottom: 0;
+}
+.adverb011-lab fieldset {
+  min-width: 0;
+  max-width: 100%;
+  margin: 1em 0;
+  padding: clamp(10px, 2vw, 20px);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.adverb011-lab legend {
+  max-width: 100%;
+  line-height: 1.6;
+  padding-inline: 0.2em;
+}
+.adverb011-lab fieldset button {
+  margin-top: 0.8em;
+}
+@media (prefers-reduced-motion: reduce) {
+  .adverb011-sentence > span {
+    transition: none;
+  }
+}

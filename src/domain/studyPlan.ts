@@ -1,3 +1,10 @@
+import { forge011MathTopics } from "../learning/forge011Math";
+import { forge011PhysicsTopics } from "../learning/forge011Physics";
+import { forge011ChemistryTopics } from "../learning/forge011Chemistry";
+import { forge011BiologyATopics } from "../learning/forge011BiologyA";
+import { forge011BiologyBTopics } from "../learning/forge011BiologyB";
+import { forge011TurkishTopics } from "../learning/forge011Turkish";
+import { forge011HistoryTopics } from "../learning/forge011History";
 import { forge093MathTopics } from "../learning/forge093Math";
 import { forge093PhysicsTopics } from "../learning/forge093Physics";
 import { forge093ChemistryTopics } from "../learning/forge093Chemistry";
@@ -28,6 +35,13 @@ export const studyTopicById = (id: string) =>
   studyTopics.find((t) => t.id === id);
 // Only reviewed one-to-one subject/topic associations; no fuzzy learning credit.
 export const lessonTopic: Record<string, string> = {
+  ...forge011MathTopics,
+  ...forge011PhysicsTopics,
+  ...forge011ChemistryTopics,
+  ...forge011BiologyATopics,
+  ...forge011BiologyBTopics,
+  ...forge011TurkishTopics,
+  ...forge011HistoryTopics,
   ...forge093MathTopics,
   ...forge093PhysicsTopics,
   ...forge093ChemistryTopics,

@@ -1,42 +1,51 @@
 # YKSMania
 
-Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.10.0 alpha**.
+Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.11.0 alpha adayı**.
 
-[Uygulamayı aç](https://yksmania.vercel.app) · [Windows/Linux/Android paketleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.10.0-alpha.1)
+[Vercel uygulaması](https://yksmania.vercel.app) · [GitHub deposu](https://github.com/kaansavukduran/yksmania)
 
-**Yayın durumu:** 0.10.0 Vercel’de ve Windows/Linux/Android paketlerinde yayında.
-192 birim testi, temiz CI ve canlı sitede ayrı ayrı 142 tarayıcı testi geçti.
-Paket ve canlı dağıtım kanıtları [FORGE](FORGE.md)’de.
+30 yeni kaynak başlığı işlendi: 274 bölüm, 123 çözümlü örnek, 136 hatırlama ve
+300 açıklamalı soru. Toplam **116 anlatım, 88 ayrıntılı rehber, 116 kopya kağıdı
+ve 800 özgün soru**. Doğrulanmış çalışma sırasındaki ilk **108/479** başlık hazır.
+Tüm kaynak arşivi henüz tamamlanmadı; başlık listesi içerik tamamlanması sayılmaz.
 
-Ders materyali yüklemek gerekmez. **Konu Anlatımı → Kopya Kağıtları → Sorular →
-Sınavlar** ayrı bölümlerdir. Anlatımlar, etkileşimli modeller, adım adım çözümler,
-hatırlama çalışmaları ve sorular uygulamada hazırdır. Eski PDF/katalog yükleme
-arayüzleri kaldırıldı; daha önce saklanmış kişisel dosyalar/veriler silinmez.
+GitHub Pages için proje alt yolu, manifest ve çevrimdışı önbellek desteği eklendi.
+Pages dağıtımı başarılı ana CI koşusundan sonra aynı kaynakla çalışır. İki web
+adresi ayrı kökenler olduğundan kayıtları kendiliğinden eşitlenmez. İlerleme
+aktarımı için Ayarlar’daki kişisel yedeği kullanabilirsin.
+
+Öğrenci PDF veya kaynak yüklemez. Kaynak PDF’leri geliştirici inceler; uygulama
+özgün öğretim, etkileşimli model ve açıklamalı soruları hazır sunar. Yeni
+konular soru ve branş çalışmalarıyla bağlantılıdır. Keşifler puan veya konu
+bitirme kaydı oluşturmaz. Önceki 500 soru kaydı tüm alanlarıyla korunur.
+
+Güncel kabul ve yayın durumu [FORGE](FORGE.md) ve [QA](docs/QA.md)’dedir.
 
 ## İçerik ve öğrenme
 
-0.10.0, kaynak sırasındaki 59–78. başlıkları işler: 5 matematik, 5 fizik,
-2 kimya, 2 biyoloji, 3 Türkçe ve 3 tarih ünitesi. 20 ayrı ayrıntılı rehberde
-189 anlatım bölümü, 91 çözümlü örnek, 92 hatırlama çalışması ve 200 yeni özgün
-soru var. Sayı doğruları, devreler, genleşme ve enerji grafikleri, molekül
-geometrisi/dipoller, zar taşınmaları, akrabalık ağacı, cümle dönüşümleri ve
-tarihsel kanıt modelleri seçimlerini çevrimdışı korur.
+0.11.0 adayı, kaynak sırasındaki 79–108. başlıkları işler: 5 matematik,
+4 fizik, 5 kimya, 10 biyoloji, 1 Türkçe ve 5 tarih ünitesi. Sayı, kesir, yaş,
+yüzde ve kâr-zarar problemleri; basınç, kaldırma kuvveti ve dalgalar; bağlar,
+etkileşimler ve hâl değişimleri; canlı grupları, mitoz, mayoz, eşeysiz üreme;
+zarflar ve Osmanlı'nın değişim dönemleri için etkileşimli modeller vardır.
+Model seçimleri, gerekçeler ve ders notları çevrimdışı korunur.
 
-86 anlatım, bunların 58’inde ayrıntılı rehber; 88 yerleşik kopya kağıdı ve
-500 özgün soru. Kaynak sırasının ilk 78/479 başlığında anlatım hazırdır.
+116 anlatımın 88’inde ayrıntılı rehber; 116 yerleşik kopya kağıdı ve
+800 özgün soru bulunur. Kaynak sırasının ilk 108/479 başlığında anlatım hazırdır.
 341 ana konu ile 479 ayrıntılı başlık farklı düzeylerdir. Bütün MEB/OGM/Drive
 arşivinin dönüşümü tamamlanmış değildir; hazırlanmamış başlıklar hazır gösterilmez
 ve kullanıcıdan eksik materyal sağlaması istenmez.
 
-Yeni rehberler Türkçe ses/yapı, çarpanlara ayırma, geometri, Newton, elektrik alan,
-mol, denge, türev, DNA ve ATP’yi derinleştirir. Osmanlı siyaset, askerî teşkilat
-ve medeniyet anlatımları; sözcük parçalama, cebir parçaları ve tarihsel kanıt
-atölyeleri vardır. Rehberlerde **Adım adım çalış / Tüm anlatım** seçilebilir.
+Önceki rehberlerde Türkçe ses/yapı, çarpanlara ayırma, geometri, Newton,
+elektrik alan, mol, denge, türev, DNA ve ATP gibi başlıklar da vardır.
+Rehberlerde **Adım adım çalış / Tüm anlatım** seçilebilir; çözümlü örnekler,
+sık karıştırılan durumlar ve hatırlama çalışmaları anlatımı destekler.
 Kaynakların gerçekten okunan sayfa sınırları [SOURCE_REVIEW](docs/SOURCE_REVIEW.md)’de.
 
-Sorular kendi metin/verileriyle çözülebilir. Önceki 300 sorunun kimlikleri,
-metinleri, seçenekleri ve açıklamaları korunur; 200 yeni soru eklenir. Doğru/yanlış, ipucu ve gerekçeli çözüm
-ayrıdır. Sekiz doğrulanmış ÖSYM bağlantısı, uygulamada bağımsız öğretim örneği ve
+Sorular kendi metin/verileriyle çözülebilir. Önceki 500 sorunun tüm kayıtları
+korunur; 300 yeni, beş seçenekli ve açıklamalı özgün soru eklenir. Doğru/yanlış,
+ipucu ve gerekçeli çözüm ayrıdır. Sekiz doğrulanmış ÖSYM bağlantısı,
+uygulamada bağımsız öğretim örneği ve
 özgün çözümle desteklenir; bu örnekler resmî soruların birebir aktarımı değildir.
 Son 20 yıllık arşivin tamamı taranmış veya soru bankasına çevrilmiş değildir.
 
@@ -71,6 +80,11 @@ Node 24 gereklidir: `npm ci`, `npm run dev`. Kontroller:
 `npm run check`, `npm test`, `npm run build`, `npm run test:e2e`, `npm run test:desktop`.
 Yerel önizleme yalnız loopback’e bağlanır. Yerel, CI, canlı site ve gerçek paket
 kanıtları [FORGE](FORGE.md) ve [QA](docs/QA.md)’dedir.
+
+0.11.0 adayında yerel tip/biçim kontrolü, derleme, 279 birim testi ve 204 tarayıcı
+testi geçti. GitHub Pages alt yolunda yerel çevrimdışı kabulü ve ayrı profilde
+0.10.0→0.11.0 web güncellemesi de geçti. Uzak CI, yeni canlı yayınlar ve yeni
+kurulum paketlerinin son durumu kabul belgelerinde ayrıca belirtilir.
 
 Web ilk çevrimiçi hazırlıktan sonra, native paketler yerel arayüzle çalışır.
 Veriler cihaz bazındadır. Windows Setup/Portable ve Linux AppImage/DEB x64;

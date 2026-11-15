@@ -239,6 +239,149 @@ try {
     );
   }
 
+  const continuationFamilies = [
+    {
+      id: "sayi-problemleri",
+      title: "Sayı problemleri: cümleden modele",
+      expected: "ikinci düzen 1 fazla",
+      model: "svg.f011m-diagram",
+      async act(lab) {
+        const rows = lab.getByRole("slider", {
+          name: "Toplam sıra sayısı",
+          exact: true,
+        });
+        await rows.press("ArrowRight");
+        await expect(rows).toHaveValue("9");
+      },
+    },
+    {
+      id: "basinc",
+      title: "Basınç: kuvvetten akışkan dengesine",
+      expected: "Basınç: 60.000 Pa",
+      model: "svg",
+      async act(lab) {
+        await lab
+          .getByRole("spinbutton", {
+            name: "Dik kuvvet (N), sayıyla",
+            exact: true,
+          })
+          .fill("120");
+      },
+    },
+    {
+      id: "zayif-etkilesimler",
+      title: "Zayıf etkileşimler",
+      expected: "İyon–dipol",
+      model: "svg",
+      async act(lab) {
+        await lab
+          .getByRole("combobox", { name: "Birinci tanecik", exact: true })
+          .selectOption("sodium");
+        await lab
+          .getByRole("combobox", { name: "İkinci tanecik", exact: true })
+          .selectOption("water");
+      },
+    },
+    {
+      id: "virusler",
+      title: "Virüsler: yapı, konak ve çoğalma",
+      expected: "Çıkış gerçekleşti.",
+      model: "svg",
+      async act(lab) {
+        await lab
+          .getByRole("combobox", { name: "Çoğalma basamağı", exact: true })
+          .selectOption("4");
+        await expect(lab.locator("svg [data-new-virion]")).toHaveCount(3);
+      },
+    },
+    {
+      id: "mitoz",
+      title: "Mitoz: kopyala, ayır ve say",
+      expected: "Sitokinez tamamlandı · 2 ayrı hücre",
+      model: "svg",
+      async act(lab) {
+        await lab
+          .getByRole("combobox", { name: "İncelenen evre", exact: true })
+          .selectOption("6");
+        await expect(lab.locator("[data-model-result]")).toContainText(
+          "4 kromozom, 4 çekirdek DNA molekülü ve 2C DNA miktarı",
+        );
+      },
+    },
+    {
+      id: "zarflar",
+      title: "Zarflar: sözcükten sözcüğe anlam bağlantıları",
+      expected: "Sıfat",
+      model: ".adverb011-diagram",
+      async act(lab) {
+        await lab
+          .getByRole("button", { name: "Cümleyi dönüştür", exact: true })
+          .click();
+        await lab
+          .getByRole("button", { name: "Bağlantıyı göster", exact: true })
+          .click();
+        await expect(lab.locator(".adverb011-sentence")).toContainText("Sakin");
+      },
+    },
+    {
+      id: "devrimler-caginda-devlet-toplum",
+      title: "Devrimler Çağında Değişen Devlet ve Toplum",
+      expected:
+        "1839 Tanzimat: hukuk güvenliği ve düzen ilkeleri; henüz seçimli meclis değildir.",
+      model: "svg[data-history-diagram]",
+      async act(lab) {
+        await lab
+          .getByRole("combobox", { name: "İncelenecek olay", exact: true })
+          .selectOption("1");
+        await lab
+          .getByRole("button", { name: "Sonraki bağlantı", exact: true })
+          .click();
+        await lab
+          .getByRole("button", { name: "Sonraki bağlantı", exact: true })
+          .click();
+      },
+    },
+  ];
+  expect(continuationFamilies).toHaveLength(7);
+  for (const unit of continuationFamilies) {
+    // The context is already offline: this is the first visit to every new lazy family.
+    await navigate("Konu Anlatımı");
+    await page.getByRole("button", { name: "TYT", exact: true }).click();
+    await page
+      .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
+      .fill(unit.title);
+    await page.locator(".ready-topic").filter({ hasText: unit.title }).click();
+    const lab = page.locator(`[data-forge011="${unit.id}"]`);
+    await expect(lab).toBeVisible();
+    await expect(lab.locator(unit.model).first()).toBeVisible();
+    const modelBefore = await lab
+      .locator(unit.model)
+      .evaluateAll((elements) =>
+        elements.map((element) => element.outerHTML).join(""),
+      );
+    await unit.act(lab);
+    await expect(lab.locator("[data-model-result]")).toContainText(
+      unit.expected,
+    );
+    await expect
+      .poll(() =>
+        lab
+          .locator(unit.model)
+          .evaluateAll((elements) =>
+            elements.map((element) => element.outerHTML).join(""),
+          ),
+      )
+      .not.toBe(modelBefore);
+    await expect(page.locator(".save-status")).toContainText(
+      "Bu cihazda kaydedildi",
+    );
+    await page.reload();
+    await expect(lab.locator("[data-model-result]")).toContainText(
+      unit.expected,
+    );
+    await expect(lab.locator(unit.model).first()).toBeVisible();
+  }
+
   const mathematics = [
     /Temel kavramlar: sayı, değer/,
     /Tek–çift ve işaret:/,
@@ -618,6 +761,7 @@ try {
       detailedGuidesAndOfficialReferences: "PASS",
       sourceNarrativeModelOfflineReload: "PASS",
       sixNewSourceFamiliesOfflineReload: "PASS",
+      sevenContinuationFamiliesOfflineReload: "PASS",
       orderedPlanAndRestart: "PASS",
       ogmChemistryVisuals: "PASS",
       mathematicsVisualsAndRestart: "PASS",

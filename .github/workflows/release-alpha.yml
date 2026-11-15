@@ -15,6 +15,8 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       GH_REPO: kaansavukduran/yksmania
       BUILD_RUN: ${{ inputs.build_run }}
+      RELEASE_VERSION: "0.11.0"
+      ANDROID_VERSION_CODE: "19"
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -25,28 +27,60 @@ jobs:
           [[ "$BUILD_RUN" =~ ^[0-9]+$ ]]
           gh run view "$BUILD_RUN" --json status,conclusion,headSha,headBranch,name > verified-run.json
           python3 - <<'PY'
-          import json, os
+          import json, os, re
           r = json.load(open('verified-run.json'))
           assert r['status'] == 'completed' and r['conclusion'] == 'success', r
           assert r['headBranch'] == 'main' and r['name'] == 'Verify and build packages', r
+          assert re.fullmatch(r'[0-9a-f]{40}', r['headSha']), 'Invalid verified commit SHA'
           with open(os.environ['GITHUB_ENV'], 'a') as f:
               f.write('VERIFIED_SHA=' + r['headSha'] + '\n')
+          PY
+      - name: Require release versions at the verified commit
+        shell: bash
+        run: |
+          gh api --method GET "repos/$GH_REPO/contents/package.json?ref=$VERIFIED_SHA" > verified-package-content.json
+          gh api --method GET "repos/$GH_REPO/contents/android/app/build.gradle?ref=$VERIFIED_SHA" > verified-android-content.json
+          python3 - <<'PY'
+          import base64, json, os, re
+          def source(filename, path):
+              item = json.load(open(filename))
+              assert item['type'] == 'file' and item['path'] == path and item['encoding'] == 'base64', 'Unexpected source response'
+              return base64.b64decode(''.join(item['content'].splitlines()), validate=True).decode('utf-8')
+          version = os.environ['RELEASE_VERSION']
+          code = os.environ['ANDROID_VERSION_CODE']
+          package = json.loads(source('verified-package-content.json', 'package.json'))
+          assert package['version'] == version, 'Verified commit has a different package version'
+          android = source('verified-android-content.json', 'android/app/build.gradle')
+          assert re.findall(r'^\s*versionName\s+"([^"]+)"\s*$', android, re.MULTILINE) == [version], 'Verified commit has a different Android versionName'
+          assert re.findall(r'^\s*versionCode\s+(\d+)\s*$', android, re.MULTILINE) == [code], 'Verified commit has a different Android versionCode'
           PY
       - name: Collect packages without rebuilding
         run: |
           gh run download "$BUILD_RUN" --dir packages
           python3 - <<'PY'
           from pathlib import Path
-          import shutil, hashlib
+          import shutil, hashlib, os, re
+          version = os.environ['RELEASE_VERSION']
+          code = os.environ['ANDROID_VERSION_CODE']
           files = [p for p in Path('packages').rglob('*') if p.suffix in ('.exe', '.AppImage', '.deb', '.apk')]
-          assert len(files) == 5, files
+          expected = [
+              f'YKSMania-{version}-Windows-x64-Setup.exe',
+              f'YKSMania-{version}-Windows-x64-Portable.exe',
+              f'YKSMania-{version}-Linux-x86_64.AppImage',
+              f'YKSMania-{version}-Linux-amd64.deb',
+              'app-debug.apk',
+          ]
+          assert sorted(p.name for p in files) == sorted(expected), 'Release artifact names or versions do not match'
+          evidence = list(Path('packages').rglob('verification.txt'))
+          assert len(evidence) == 1, 'Expected one Android verification record'
+          android = evidence[0].read_text()
+          package = re.findall(r"^package: name='([^']+)' versionCode='(\d+)' versionName='([^']+)'", android, re.MULTILINE)
+          assert package == [('com.fragaria.yksmania', code, version)], 'Android artifact package/version metadata does not match'
           out = Path('release-files')
           out.mkdir()
           for p in files:
-              name = 'YKSMania-0.10.0-Android-debug.apk' if p.suffix == '.apk' else p.name
+              name = f'YKSMania-{version}-Android-debug.apk' if p.suffix == '.apk' else p.name
               shutil.copyfile(p, out / name)
-          evidence = list(Path('packages').rglob('verification.txt'))
-          assert len(evidence) == 1, evidence
           shutil.copyfile(evidence[0], out / 'Android-verification.txt')
           shutil.copyfile('verified-run.json', out / 'verified-run.json')
           with (out / 'SHA256SUMS.txt').open('w') as f:
@@ -56,6 +90,7 @@ jobs:
           PY
       - name: Publish complete prerelease
         run: |
-          gh release create v0.10.0-alpha.1 --target "$VERIFIED_SHA" --title "YKSMania 0.10.0 alpha 1" --draft --prerelease --notes-file docs/RELEASE_ALPHA.md
-          gh release upload v0.10.0-alpha.1 release-files/*
-          gh release edit v0.10.0-alpha.1 --draft=false --prerelease=true --latest=false
+          release_tag="v${RELEASE_VERSION}-alpha.1"
+          gh release create "$release_tag" --target "$VERIFIED_SHA" --title "YKSMania ${RELEASE_VERSION} alpha 1" --draft --prerelease --notes-file docs/RELEASE_ALPHA.md
+          gh release upload "$release_tag" release-files/*
+          gh release edit "$release_tag" --draft=false --prerelease=true --latest=false
