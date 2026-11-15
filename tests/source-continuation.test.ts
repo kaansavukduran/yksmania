@@ -1,3 +1,5 @@
+import { publishedQuestion } from "./helpers/publishedQuestion";
+import retainedCatalogue from "./fixtures/retained-exam-catalogue-016.json";
 import accepted014Questions from "./fixtures/0.14.0-questions.json";
 import { expect, it } from "vitest";
 import acceptedQuestions from "./fixtures/0.13.0-questions.json";
@@ -24,7 +26,7 @@ it("retains all 1260 published question payloads while adding 280 distinct sourc
   expect(acceptedQuestions).toHaveLength(1260);
   expect(all.length).toBeGreaterThanOrEqual(1540);
   expect(byId.size).toBe(all.length);
-  for (const q of acceptedQuestions) expect(byId.get(q.id), q.id).toEqual(q);
+  for (const q of acceptedQuestions) expect(byId.get(q.id), q.id).toEqual(publishedQuestion(q));
   const oldIds = new Set(acceptedQuestions.map((q) => q.id));
   const retained014Ids = new Set(accepted014Questions.map((q) => q.id));
   const added = all.filter(
@@ -100,7 +102,10 @@ it("teaches the next thirty headings with twenty-eight new deep lessons and two 
 it("adds real geography practice while preserving a complete earlier 105-item exam snapshot", () => {
   const catalogue = examCatalogue(),
     tyt = catalogue.find((e) => e.id === "mixed-tyt")!;
-  expect(catalogue).toHaveLength(14);
+  expect(catalogue.map((e) => e.id)).toEqual(
+    expect.arrayContaining(retainedCatalogue),
+  );
+  expect(catalogue.length).toBeGreaterThanOrEqual(14);
   expect(tyt.items).toHaveLength(110);
   expect(tyt.fullLength).toBe(false);
   expect(tyt.missingSubjects).toEqual(["Felsefe", "Din Kültürü"]);

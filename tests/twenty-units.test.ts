@@ -1,5 +1,6 @@
 import { expect, it } from "vitest";
 import previousQuestions from "./fixtures/0.9.2-questions.json";
+import { publishedQuestion } from "./helpers/publishedQuestion";
 import { lessons } from "../src/domain/content";
 import { studyTopics, topicLessons } from "../src/domain/studyPlan";
 import { lessonGuides } from "../src/learning/guides";
@@ -12,7 +13,9 @@ it("preserves all 300 published questions including their passages, choices, hin
     lessons.flatMap((l) => l.questions).map((q) => [q.id, q]),
   );
   for (const previous of previousQuestions)
-    expect(byId.get(previous.id), previous.id).toEqual(previous);
+    expect(byId.get(previous.id), previous.id).toEqual(
+      publishedQuestion(previous),
+    );
   expect(byId.size).toBe(lessons.flatMap((l) => l.questions).length);
 });
 

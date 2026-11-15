@@ -503,7 +503,7 @@ export default function Forge018MathLab({ lessonId }: { lessonId: string }) {
       ["no", "Yok"],
     ];
     prompt =
-      "Bu üç nokta sıfır olmayan alanlı bir üçgen oluşturur mu? Koordinat ortalaması hesaplanması, tek başına üçgen oluştuğunu kanıtlar mı?";
+      "Bu üç nokta alanı sıfırdan büyük bir üçgen kurar mı? Üç noktanın ortasını bulmak tek başına üçgeni kanıtlar mı?";
     evidence = `Alan ${fmt(center.area)} birim kare. ${center.triangle ? `G${coord(center.centroid)} üçgenin ağırlık merkezi; AG:GM=2:1.` : `Noktalar doğrusal veya çakışık; G${coord(center.centroid)} yalnız koordinat ortalaması, iç üçgen merkezi değil.`}`;
     title = "Üç ortalama, üç kenarortay, bir koşul";
   } else if (mode === "midpoint") {
@@ -948,7 +948,7 @@ export default function Forge018MathLab({ lessonId }: { lessonId: string }) {
       </div>
       <p className="m018-caption">
         Keşif seçimleri bu cihazda saklanır. Şekli açmak, süre geçirmek veya
-        tahmin karşılaştırmak XP, doğru soru ya da konu tamamlama kaydı
+        tahmin sınamak XP, doğru soru ya da konu tamamlama kaydı
         oluşturmaz.
       </p>
     </section>

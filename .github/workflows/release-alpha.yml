@@ -88,6 +88,8 @@ jobs:
                   if p.name != 'SHA256SUMS.txt':
                       f.write(hashlib.file_digest(p.open('rb'), 'sha256').hexdigest() + '  ' + p.name + '\n')
           PY
+      - name: Require the pinned Android certificate
+        run: node scripts/prepare-android-signing.mjs --verify release-files/Android-verification.txt
       - name: Publish complete prerelease
         run: |
           release_tag="v${RELEASE_VERSION}-alpha.1"

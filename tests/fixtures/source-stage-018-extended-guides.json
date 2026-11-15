@@ -1,0 +1,540 @@
+{
+  "paragraf": {
+    "id": "paragraf",
+    "minutes": 40,
+    "objectives": [
+      "Konu, ana düşünce, yardımcı düşünce ve başlığı ayrı sorularla belirle.",
+      "Cümleler arasındaki karşıtlık, gerekçe, örnek ve sonuç ilişkisini izle.",
+      "Seçeneğin kapsamını, kesinliğini ve metindeki dayanağını kontrol et; dış bilgiyi metne ekleme."
+    ],
+    "sections": [
+      {
+        "title": "Konu ne anlatıldığını, ana düşünce ne savunulduğunu söyler",
+        "paragraphs": [
+          "Konu için ‘Bu metin ne hakkında?’ diye sorulur; yanıt çoğu zaman bir kavram veya durumdur. Ana düşünce için ‘Yazar bunun hakkında hangi asıl yargıyı benimsetmek istiyor?’ diye sorulur; yanıt bir yargı cümlesidir. Kitap okuma konudur; okumanın değerinin yalnız kitap bitirmekle ölçülemeyeceği ana düşünce olabilir. Aynı konu hakkında karşıt görüşlü iki paragraf yazılabilir.",
+          "Başlık, metnin odağını kısa biçimde temsil eder; yalnız bir ayrıntıyı değil genel kapsamı karşılamalıdır. Yardımcı düşünceler ise ana yargıyı açıklar, örnekler veya gerekçelendirir. Metinde doğru olan bir ayrıntı, sırf doğru diye ana düşünce olmaz. Ana düşüncenin yeri her zaman son cümle değildir; girişte, gelişmede açıkça söylenebilir veya bütün metinden çıkarılabilir."
+        ]
+      },
+      {
+        "title": "Metni oku; cümlelerin görevini bul",
+        "paragraphs": [
+          "Bir kitabı bitirmek, onu anlamakla aynı şey değildir. Okur bazen bir sayfada durup kendi sorularını kurduğunda metinle daha güçlü bir ilişki kurar. Okumanın değeri, yalnız çevrilen sayfalarda değil, kurulan düşüncelerde de aranmalıdır.",
+          "Bu özgün metinde ilk cümle bitirmek ile anlamak arasında ayrım kurar. İkinci cümle okurun durup soru sormasını örnekleyerek ilişkiyi açıklar. Son cümle ‘yalnız … değil’ yapısıyla ölçütü genişletir. ‘Bazen’ sözcüğü bütün kitapların mutlaka yavaş okunması gerektiğini söylemez. Aşağıdaki modelde her cümleyi seçip görevini karşılaştır."
+        ]
+      },
+      {
+        "title": "Bağlaçlar düşüncenin yönünü gösterir",
+        "paragraphs": [
+          "‘Ama’, ‘oysa’, ‘ne var ki’ çoğunlukla bir karşıtlığı veya beklentinin değişmesini bildirir. ‘Çünkü’ gerekçe, ‘bu nedenle’ sonuç, ‘örneğin’ somutlaştırma, ‘yani’ açıklama veya yeniden ifade ilişkisi kurabilir. Sözcüğe bakıp bütün paragrafı atlama; bağlacın hangi iki düşünceyi birbirine bağladığını göster.",
+          "Bir örneğin konusu ile paragrafın temel savı aynı olmak zorunda değildir. Yazar teknoloji üzerine yargısını anlatmak için pusula örneği veriyorsa ana konu pusula tarihi olmayabilir. Örneği zihninde çıkarıp ana yargının hâlâ hangi düşünce olduğunu sormak, ayrıntıya takılmayı azaltır. Örneğin metindeki kanıt görevini kaybetmeden genelleme düzeyini bul."
+        ]
+      },
+      {
+        "title": "Kapsamı daraltma, kesinliği büyütme",
+        "paragraphs": [
+          "Seçeneği metinle üç yönden karşılaştır: kim/ne hakkında, hangi koşulda ve ne kadar kesin? ‘Bazı okurlar’ ifadesini ‘bütün okurlar’, ‘etkileyebilir’ ifadesini ‘mutlaka belirler’, ‘önemli bir neden’ ifadesini ‘tek neden’ yapan seçenek metnin kapsamını değiştirir. Kesin sözcükler otomatik yanlış değildir; metin gerçekten o kesinliği taşıyorsa doğru olabilir.",
+          "Metinden daha dar bir seçenek yalnız örneği tekrar edebilir; daha geniş bir seçenek hiç ele alınmamış insanları veya durumları ekleyebilir. Metindeki görüşe katılıp katılmaman çözüm ölçütü değildir. Gerçek dünyada doğru olan bir bilgi, bu parçada savunulmadığı için doğru seçenek olmayabilir. Kanıtı metnin içinde aramak dış bilgiyle boşluk doldurmaktan farklıdır."
+        ]
+      },
+      {
+        "title": "Olumsuz soru kökünde seçme görevini tersine çevir",
+        "paragraphs": [
+          "‘Çıkarılamaz’, ‘değinilmemiştir’, ‘söylenemez’ ve ‘yakınılan değildir’ aynı olumlu görev değildir. Önce kökün senden ne istediğini kendi cümlenle söyle. Yardımcı düşünce sorusunda dört seçeneğin metindeki dayanağını bulup dayanağı olmayanı seçmek kullanılabilir; fakat işaretleyeceğin seçeneğin görevi unutulmamalıdır.",
+          "Bir seçeneğin metinde kelimesi kelimesine geçmesi gerekmez; anlamı aynı başka sözlerle ifade edilebilir. Buna karşılık metindeki sözcükleri kullanıp ilişkiyi ters çeviren seçenek yanlış olabilir. ‘Düzenli tekrar hatırlamayı destekler’ cümlesinden ‘hatırlayan herkes düzenli tekrar yapmıştır’ zorunlu sonucu çıkmaz. Koşulun yönünü ve özneyi koru."
+        ]
+      },
+      {
+        "title": "Yapı sorusunda cümlelerin bağını denetle",
+        "paragraphs": [
+          "Paragrafın giriş cümlesi, kendinden önceki belirsiz bir düşünceye açıklamasız bağımlı olmamalıdır. ‘Bu nedenle’ ile başlayan bir cümle çoğunlukla önce bir neden gerektirir; ancak yalnız bağlaç ezberiyle karar verilmez, verilen bütün bağlam okunur. Cümle sıralamada zamirlerin neye gönderme yaptığını ve olay/düşünce sırasını izle.",
+          "Akışı bozan cümle aynı sözcüğü içerdiği hâlde farklı bir alt konuya geçebilir. Parçayı ikiye bölmede ikinci paragrafın yeni odağı aranır. Tamamlama sorusunda eklenen cümle önceki yargıyı açıklamalı veya uygun biçimde sonuçlandırmalı; metinde hazırlanmamış yeni bir konu açmamalıdır. Her soru türünün görevini ayrı tanı; tek bir hız tekniğini hepsine zorla uygulama."
+        ]
+      },
+      {
+        "title": "Uygulanabilir bir çözüm yolu ve geri kontrol",
+        "paragraphs": [
+          "Soru kökünü tanı, paragrafı anlam ilişkileriyle oku, kısa bir ana yargı kur, seçenekleri kapsam ve kanıt bakımından karşılaştır. Uzun metinde her cümlenin altını çizmek yerine kilit karşıtlığı, neden-sonuç bağını veya sınırlandıran sözcüğü belirlemek daha kullanışlı olabilir. Okuma hızını artırmak uğruna olumsuz kökü veya ‘bazı’ koşulunu atlama.",
+          "İki seçenek kalırsa ‘hangisi daha hoş?’ yerine ‘hangi metin parçası bu seçeneği zorunlu kılıyor?’ diye sor. Hatalı cevaptan sonra yalnız doğru harfi ezberleme: kök mü kaçtı, kapsam mı büyüdü, örnek ana yargı mı sanıldı, dış bilgi mi eklendi? Nedeni kendi notuna bir cümleyle yazıp sonraki bağımsız soruda aynı ayrımı yeniden dene."
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "title": "Konu ile yargıyı ayır",
+        "prompt": "Metin: ‘Bir şehri tanımak, yalnız tarihî yapılarını gezmek değildir. Pazarındaki konuşmalar ve günlük ulaşım alışkanlıkları da o şehrin yaşamını anlatır.’ Bu metnin konusu ve ana düşüncesi nedir?",
+        "strategy": "‘Ne hakkında?’ ve ‘Ne savunuyor?’ sorularına ayrı cevap ver.",
+        "steps": [
+          {
+            "label": "Konu",
+            "explanation": "Şehri tanıma yolları anlatılıyor; bu bir kavram grubudur."
+          },
+          {
+            "label": "Ana yargı",
+            "explanation": "Şehri anlamak için tarihî yapılarla birlikte gündelik yaşama da bakmak gerekir."
+          }
+        ],
+        "answer": "Konu: şehri tanıma; ana düşünce: tanımayı gündelik yaşamı da kapsayacak biçimde genişletmek.",
+        "check": "Yazar tarihî yapıların gereksiz olduğunu söylemiyor.",
+        "pitfall": "‘Yalnız … değildir’ yapısını ilk öğeyi bütünüyle reddetmek gibi okuma."
+      },
+      {
+        "title": "Bazen sözcüğünü koru",
+        "prompt": "Metin: ‘Bir kitabı bitirmek, onu anlamakla aynı şey değildir. Okur bazen bir sayfada durup kendi sorularını kurduğunda metinle daha güçlü bir ilişki kurar. Okumanın değeri, yalnız çevrilen sayfalarda değil, kurulan düşüncelerde de aranmalıdır.’ ‘Bütün kitaplar mutlaka çok yavaş okunmalıdır’ sonucu çıkar mı?",
+        "strategy": "Sonuçtaki bütünlük ve zorunluluğu metindeki koşullarla karşılaştır.",
+        "steps": [
+          {
+            "label": "Dayanak",
+            "explanation": "Metin ‘bazen’ durup soru kurmaktan ve değeri yalnız sayfa sayısına bağlamamaktan söz eder."
+          },
+          {
+            "label": "Aşırı genelleme",
+            "explanation": "‘Bütün’, ‘mutlaka’ ve ‘çok yavaş’ koşulları metinde bu kapsamda kurulmamıştır."
+          }
+        ],
+        "answer": "Hayır; bu sonuç metnin kapsamını ve kesinliğini büyütür.",
+        "check": "Okumanın düşünsel etkileşimine önem verilmesi her kitabın aynı hızda okunmasını gerektirmez.",
+        "pitfall": "Doğru bir öneriyi metnin söylemediği zorunlu kurala dönüştürme."
+      },
+      {
+        "title": "Olumsuz kökte kanıtı olmayanı seç",
+        "prompt": "Metin: ‘Mahalle bahçesi atıl alanı değerlendirdi. Birlikte çalışan komşular tanıştı; yetiştirilen ürünler ortak sofralarda paylaşıldı.’ Hangisi çıkarılamaz: A) Bir alan kullanıma açılmıştır. B) Sosyal ilişkilere katkı olmuştur. C) Mahalledeki bütün ekonomik sorunlar çözülmüştür.",
+        "strategy": "Her seçeneği metindeki belirli bir ifadeyle eşleştir.",
+        "steps": [
+          {
+            "label": "Kanıtlı seçenekler",
+            "explanation": "‘Atıl alanı değerlendirdi’ A’yı, komşuların tanışması B’yi destekler."
+          },
+          {
+            "label": "Kanıtsız kapsam",
+            "explanation": "Ürün paylaşılması bütün ekonomik sorunların çözüldüğünü söylemez."
+          }
+        ],
+        "answer": "C çıkarılamaz.",
+        "check": "‘Çıkarılamaz’ istendiği için dayanağı bulunan A veya B işaretlenmez.",
+        "pitfall": "Genel olarak olumlu bir sonucu bütün sorunların çözümü sanma."
+      },
+      {
+        "title": "Başlık ayrıntıyı değil bütünü kapsar",
+        "prompt": "Metin: ‘Müzede bir eşyanın adını okumak başlangıçtır. O eşyanın kimler tarafından hangi ihtiyaçla kullanıldığını düşünmek, geçmişteki yaşamı anlamayı sağlar.’ ‘Eşyanın Ötesindeki Yaşam’ başlığı neden ‘Eşya Adları Listesi’nden uygundur?",
+        "strategy": "Başlığın metnin asıl yönelişini kapsamasını denetle.",
+        "steps": [
+          {
+            "label": "Ayrıntı",
+            "explanation": "Eşyanın adı yalnız başlangıç bilgisi olarak veriliyor."
+          },
+          {
+            "label": "Bütünün odağı",
+            "explanation": "Yazar eşyanın kullanımından insanların yaşamına geçmeyi önemsiyor."
+          }
+        ],
+        "answer": "İlk başlık nesneyi yaşam bağlamıyla birlikte kapsar; ikincisi başlangıç ayrıntısına daralır.",
+        "check": "Metin eşya adlarının hiç işe yaramadığını söylemiyor.",
+        "pitfall": "Parçada geçen en somut sözcüğü otomatik başlık seçme."
+      }
+    ],
+    "recall": [
+      {
+        "prompt": "Konu ile ana düşünceyi hangi iki soruyla ayırırsın?",
+        "answer": "Ne hakkında? / Bunun hakkında hangi asıl yargı savunuluyor?"
+      },
+      {
+        "prompt": "Kesin sözcükler her zaman yanlış seçenek mi yapar?",
+        "answer": "Hayır. Yanlışlık, metnin taşımadığı kesinliği eklemekten doğar; metin gerçekten genelliyorsa korunur."
+      },
+      {
+        "prompt": "Bir seçenek neden metinde aynı kelimelerle geçmese de doğru olabilir?",
+        "answer": "Anlam ve ilişki aynı kalacak biçimde yeniden ifade edilmiş olabilir; kelime eşleştirmek tek başına ölçüt değildir."
+      }
+    ],
+    "source": "OGM 12. Sınıf Paragrafta Anlam I ders notunun konu, başlık, ana düşünce ve yardımcı düşünce bölümleriyle karşılaştırılmış özgün öğretim anlatımı. Buradaki bütün örnek metin ve çözümler uygulama için yazılmıştır; resmî sınav sorusu değildir."
+  },
+  "elektrik-alan": {
+    "id": "elektrik-alan",
+    "minutes": 45,
+    "objectives": [
+      "Kaynak yükün oluşturduğu alanı, test yüküne etkiyen kuvvetten ayır.",
+      "Noktasal yük alanını SI birimleri, uzaklığın karesi ve vektörel toplama ile hesapla.",
+      "Düzgün alanda elektriksel kuvveti ve diğer kuvvetlerle bileşkesini koşullarıyla yorumla."
+    ],
+    "sections": [
+      {
+        "title": "Alan bir noktaya, kuvvet bir taneciğe aittir",
+        "paragraphs": [
+          "Elektrik alanı, belirli noktadaki elektriksel etkiyi test yükünden bağımsız olarak tanımlar. Çok küçük pozitif q0 deneme yüküne etki eden elektriksel kuvvet kullanılarak E=Felektrik/q0 düşünülür. Felektrik yalnız elektriksel etkileşimi gösterir; ağırlık gibi diğer kuvvetler net kuvvet hesabında ayrıca toplanır. Alanın SI birimi N/C’dir; V/m de eşdeğer birimdir. Noktayı incelerken önce alanı oluşturan kaynak yükleri ve gözlem noktasını seç.",
+          "Test yükü, alanı araştırırken kaynak düzenini anlamlı biçimde bozmayacak kadar küçük kabul edilir. Kaynak düzeni sabitken test yükünün işaretini değiştirmek alanı ters çevirmez; o taneciğe etkiyen kuvveti ters çevirir. Burada elektrostatik, sabit kaynak ve boşluk modeli kullanılır; kaynakların hareketi veya test yükünün geri etkisi bu basit modelin kapsamı değildir."
+        ]
+      },
+      {
+        "title": "Noktasal kaynakta büyüklük ve yönü ayrı bul",
+        "paragraphs": [
+          "Tek noktasal Q kaynağından r>0 uzaklıktaki alan büyüklüğü |E|=k|Q|/r²’dir. Boşlukta k≈9×10⁹ N·m²/C² alınır. Hesaba yükü coulomb, uzaklığı metre olarak koy: 1 μC=10⁻⁶ C, 1 cm=10⁻² m. Formülde r’nin karesi bulunduğu için santimetreyi yalnız bir kez çevirmek yeterli değildir.",
+          "Alan yönü pozitif kaynaktan dışarı, negatif kaynağa doğrudur. Pozitif kaynağın sağındaki noktada alan sağa, solundaki noktada sola olur; ‘pozitif yükün alanı daima sağa’ diye ezberlenmez. Formüldeki mutlak değer büyüklüğü verir; işareti ve geometrik yönü daha sonra vektöre yerleştir. r=0’da bu noktasal kaynak modeli sonlu bir alan değeri vermez."
+        ]
+      },
+      {
+        "title": "Uzaklığın karesi: oran kur, sınırını söyle",
+        "paragraphs": [
+          "Q sabitken r iki katına çıkarsa alan dörtte bire, üç katına çıkarsa dokuzda bire iner. r sabitken |Q| iki katına çıkarsa alan iki kat olur. Birden fazla değişken aynı anda değiştiğinde oran E2/E1=(|Q2|/|Q1|)×(r1/r2)² ile izlenebilir; kaynağın işareti değişmişse yön ayrıca yeniden değerlendirilir.",
+          "Etkileşimli model, kaynağın sağındaki noktayı gösterir. Önce yalnız r’yi değiştirip alanı karşılaştır; sonra test yükü q’yu değiştirip alanla kuvvetin hangisinin değiştiğini incele. Okların uzunluğu burada ortak bir büyüklük ölçeği değildir; sayısal sonuç satırını kullan. Tek kaynakta gözlenen ters kare ilişkisini bütün çok-kaynak düzenlerinin tek bir toplam uzaklığına uygulama."
+        ]
+      },
+      {
+        "title": "Birden çok kaynak: alanları vektörel topla",
+        "paragraphs": [
+          "Bir noktada her kaynak için alanı, diğerleri yokmuş gibi hesaplayıp yönlü olarak toplarsın: Enet=E1+E2+…. Aynı doğrultuda aynı yönlü alanlar toplanır, zıt yönlü alanların büyüklükleri çıkarılır. Bir kaynak pozitif öteki negatif diye alanları otomatik çıkarma; incelenen noktanın konumu, iki okun hangi yönde olduğunu belirler.",
+          "İki eşit pozitif yükün tam orta noktasında alanlar eşit ve zıt olduğundan net alan sıfırdır. Eşit büyüklükte zıt işaretli iki yükün arasındaki orta noktada ise alanlar aynı yönlüdür. Birbirine dik E1 ve E2 için net büyüklük √(E1²+E2²) ile bulunabilir; yalnız diklik koşulunda bu kısa yolu kullan. Bu dersteki tek-kaynak etkileşimi çoklu yükleri çizmez; aşağıdaki açıklamalı örnek ayrı bir düzeni tanımlar."
+        ]
+      },
+      {
+        "title": "Alan çizgileri bir haritadır; taneciğin yolu değildir",
+        "paragraphs": [
+          "Alan çizgisinin bir noktadaki teğeti, o noktadaki alan vektörünün yönünü verir. Çizgiler pozitif yükten dışarı, negatif yüke doğru çizilir; birbirlerini kesmezler. Kesilseler aynı noktada tek alan vektörü için iki farklı yön verilmiş olurdu. Daha sık çizgiler, aynı çizim kuralı içinde daha güçlü alanı temsil eder.",
+          "Elektrostatik dengedeki iletkenin yüzeyindeki alanın yönü yüzeye diktir; bu ifade her rastgele geometrik yüzeye genellenmez. Alan çizgileri gerçek ipler veya yüklü taneciğin zorunlu hareket yolu değildir. Negatif taneciğe kuvvet çizgi yönünün tersinedir; ayrıca başlangıç hızı varsa hareketi kuvvet yönüyle aynı doğru üzerinde olmak zorunda değildir."
+        ]
+      },
+      {
+        "title": "Kuvvetin büyüklüğü, yönü ve ivme",
+        "paragraphs": [
+          "Elektriksel kuvvet vektörel olarak Felektrik=qE’dir. q>0 ise kuvvet alanla aynı, q<0 ise ters yönlüdür; büyüklükte |F|=|q||E| kullanılır. q=0 elektriksel kuvveti sıfır yapar, kaynağın o noktadaki alanını değil. Alan sabitken test yükünün büyüklüğü iki kat olursa elektriksel kuvvet de iki kat olur.",
+          "Yalnız elektriksel kuvvet varsa sabit kütleli taneciğin ivmesi a=qE/m olur. Ağırlık veya başka kuvvetler ihmal edilmiyorsa önce bütün gerçek kuvvetlerin bileşkesini bul. İvmenin yönü net kuvvetle ilişkilidir; taneciğin o andaki hızını yalnız kuvvet okundan belirleyemezsin. Özellikle negatif yük ve aşağı yönlü ağırlık aynı soruda verildiğinde her okun yönünü ayrı çiz."
+        ]
+      },
+      {
+        "title": "Düzgün alanı noktasal kaynakla karıştırma",
+        "paragraphs": [
+          "Uygun paralel levha modelinde, kenar etkileri ihmal edilen bölgede alan yaklaşık düzgün kabul edilir ve büyüklük E=V/d bağıntısıyla bulunabilir. V levhalar arası potansiyel farkı, d levhalar arası uzaklıktır; bu bağıntı rastgele tek noktasal kaynağa doğrudan uygulanmaz. Alanın yönü pozitif levhadan negatif levhaya doğrudur.",
+          "Düşey düzgün alanda elektriksel kuvvetle ağırlık aynı yöndeyse büyüklükler toplanır; zıt yöndeyse karşılaştırılır. Eşit ve zıt olduklarında net kuvvet ve ivme sıfırdır, fakat tanecik başlangıçta hareketliyse sabit hızla hareket edebilir. Alanla dik doğrultuda başlangıç hızı verilen taneciğin yolu, yatay/düşey hareket bileşenlerinin birlikte değerlendirilmesini gerektirir; çizginin üstünde gitmesi gerektiğini varsayma."
+        ]
+      },
+      {
+        "title": "Çözümü geri denetle ve koşul değişimini düşün",
+        "paragraphs": [
+          "Önce kaynaklar ve nokta, sonra alan büyüklükleri ve yönleri, sonra gerekiyorsa test yüküne kuvvet sırasını izle. SI birimini, r²’yi ve negatif q’nun yön değişimini ayrı kontrol et. Sonucun N/C mi N mi istendiğini oku; bir alan sorusuna kuvvet, bir kuvvet sorusuna alan değeri yazma.",
+          "Q değişmeden yalnız q değişirse E sabit; q sabitken r iki katına çıkarsa tek kaynakta hem E hem elektriksel kuvvet dörtte bir olur. Net alanın sıfır olduğu noktada verilen test yüküne elektriksel kuvvet de sıfırdır; başka kuvvetler ayrıca bulunabilir. Tek örnekteki dengeyi ‘bütün tanecikler durur’ kuralına dönüştürme. Her sonucu, kullandığın kaynak ve ihmal koşullarına geri bağla."
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "title": "Mikrocoulombdan SI’ye, alandan kuvvete",
+        "prompt": "Boşlukta sabit +2 μC kaynağın sağında 3 m uzakta bir nokta var. k=9×10⁹ N·m²/C². Bu noktadaki alan ve oradaki −4 μC test yüküne elektriksel kuvvet nedir? Kaynağın geri etkisi ihmal ediliyor.",
+        "strategy": "Önce kaynağın alanını, sonra test yükünün kuvvetini bul.",
+        "steps": [
+          {
+            "label": "Alan büyüklüğü",
+            "expression": "E=(9×10⁹)(2×10⁻⁶)/3²=2000 N/C",
+            "explanation": "Yük coulomba çevrildi, uzaklık metre olarak karesiyle kullanıldı."
+          },
+          {
+            "label": "Alan yönü",
+            "explanation": "Pozitif kaynağın sağındaki noktada alan sağadır."
+          },
+          {
+            "label": "Test yüküne kuvvet",
+            "expression": "|F|=(4×10⁻⁶)×2000=0,008 N",
+            "explanation": "Negatif test yükü nedeniyle kuvvet sola yönelir."
+          }
+        ],
+        "answer": "E=2000 N/C sağa; elektriksel kuvvet 0,008 N sola.",
+        "check": "F/q yönlü bölümü tekrar alanı verir; q’nun işareti kaynak alanını değiştirmez.",
+        "pitfall": "−4 μC’yi alanı oluşturan kaynak yerine koymak veya μ önekini unutmak."
+      },
+      {
+        "title": "İki değişkeni tek oranla izle",
+        "prompt": "Tek noktasal kaynağın yük büyüklüğü iki katına, gözlem uzaklığı üç katına çıkarılıyor. Kaynağın işareti ve geometrik taraf aynı. Alan büyüklüğü ilk değerin kaç katı olur?",
+        "strategy": "Yük ile uzaklığın etkilerini ayrı çarpanlar olarak yaz.",
+        "steps": [
+          {
+            "label": "Bağımlılık",
+            "expression": "E∝|Q|/r²",
+            "explanation": "Yük doğrusal, uzaklık ters kare etkisi yapar."
+          },
+          {
+            "label": "Oran",
+            "expression": "Eson/Eilk=2/3²=2/9",
+            "explanation": "Üç kat uzaklığın etkisi dokuz kat azalmadır; yükteki iki kat artışla birleşir."
+          }
+        ],
+        "answer": "İlk alanın 2/9’u.",
+        "check": "Yalnız uzaklık değişse 1/9 olurdu; yükü iki kat yapmak bunu 2/9’a çıkarır.",
+        "pitfall": "Uzaklık çarpanını 3 alıp 2/3 yazmak."
+      },
+      {
+        "title": "Yükün işareti yerine alan oklarını topla",
+        "prompt": "Bir doğrunun A noktasında +Q, B noktasında −Q var; A solda, B sağda. Orta M noktası iki yüke d uzaklıkta. Her kaynağın M’deki alan büyüklüğü E0. Net alan hangi yönde, kaç E0’dır?",
+        "strategy": "M için her kaynağın alan okunu ayrı çiz.",
+        "steps": [
+          {
+            "label": "Pozitif kaynak",
+            "explanation": "A’dan dışarı yön: M’de sağa E0."
+          },
+          {
+            "label": "Negatif kaynak",
+            "explanation": "B’ye doğru yön: M’de yine sağa E0."
+          },
+          {
+            "label": "Vektörel toplam",
+            "expression": "Enet=E0+E0=2E0",
+            "explanation": "Zıt işaretler burada zıt alan yönü üretmedi."
+          }
+        ],
+        "answer": "Sağa 2E0.",
+        "check": "İki yük de pozitif olsaydı orta noktadaki eşit-zıt alanlar birbirini götürürdü.",
+        "pitfall": "Kaynakların işaretleri zıt diye alanları otomatik çıkarmak."
+      },
+      {
+        "title": "Elektriksel denge sabit hızla da mümkündür",
+        "prompt": "Kenarlardan uzak paralel levhalar arasında 300 V potansiyel farkı ve 0,03 m uzaklık var. Alan yukarı yönlü. +2 μC yüklü, 0,002 kg tanecik alanda; g=10 m/s², başka kuvvet yok. Net kuvvet ve ivme nedir?",
+        "strategy": "Düzgün alanı hesapla, elektriksel kuvvet ile ağırlığın yönlerini karşılaştır.",
+        "steps": [
+          {
+            "label": "Alan",
+            "expression": "E=300/0,03=10000 N/C",
+            "explanation": "Levhalar için düzgün alan ve ihmal edilen kenar etkisi koşulu verildi."
+          },
+          {
+            "label": "Kuvvetler",
+            "expression": "Felektrik=2×10⁻⁶×10000=0,02 N; mg=0,02 N",
+            "explanation": "Elektriksel kuvvet yukarı, ağırlık aşağı yönlü."
+          },
+          {
+            "label": "Bileşke",
+            "expression": "Fnet=0; a=0",
+            "explanation": "Eşit-zıt kuvvetler aynı taneciğe etki eder; bu bir denge durumudur."
+          }
+        ],
+        "answer": "Net kuvvet 0 N, ivme 0 m/s².",
+        "check": "Tanecik durgun bırakıldıysa durur; başlangıç hızı verilmiş olsaydı aynı bölgede sabit hız da mümkün olurdu.",
+        "pitfall": "İvme sıfırdan her durumda hızın da sıfır olduğu sonucunu çıkarmak."
+      }
+    ],
+    "recall": [
+      {
+        "prompt": "Negatif test yükü seçmek kaynak alanını ters çevirir mi?",
+        "answer": "Hayır. Sabit kaynak düzeninde E değişmez; F=qE nedeniyle test yüküne kuvvet ters yönlü olur."
+      },
+      {
+        "prompt": "Bir noktada alanları toplarken neden yalnız yük işaretlerine bakılmaz?",
+        "answer": "Her kaynağın noktayla geometrik konumu alan yönünü belirler; toplam vektöreldir."
+      },
+      {
+        "prompt": "E=V/d ile E=k|Q|/r² hangi ayrımla kullanılır?",
+        "answer": "İlki uygun düzgün paralel-levha bölgesi için, ikincisi tek noktasal kaynağın r>0 uzaklıktaki alanı için kullanılır."
+      }
+    ],
+    "source": "MEBİ AYT Fizik Konu Özetleri, PDF s.105–106 ve113 (basılı103–104 ve111) doğrudan yeniden okundu. Kaynak/test yükü ayrımı, vektörel bileşke, alan çizgileri ve düzgün alanda kuvvet koşullarıyla karşılaştırılmış özgün anlatım ve çözümler. Mevcut tek-kaynak modeli çoklu kaynak veya levha düzenini canlandırıyor sayılmaz; resmî soru aktarılmadı."
+  },
+  "kimyasal-denge": {
+    "id": "kimyasal-denge",
+    "minutes": 55,
+    "objectives": [
+      "Dengede eşit hız ile sabit derişimi birbirinden ayır.",
+      "Net denklem ve faz bilgileriyle Kc/Kp bağıntısını yaz; Q ile yön tahmin et.",
+      "Derişim, hacim/basınç, sıcaklık, inert gaz ve katalizör etkilerini koşullarıyla açıkla.",
+      "Ani grafik değişimini yeni dengeye yaklaşmadan ayır; denklemi değiştirince K’nin nasıl dönüştüğünü göster."
+    ],
+    "sections": [
+      {
+        "title": "Denge, olayların durması değildir",
+        "paragraphs": [
+          "Kapalı ve koşulları sabit tutulan tersinir bir sistemde ileri ve geri dönüşümler birlikte sürebilir. Dengeye gelindiğinde iki yönün hızları eşitlenir; gözlenen makroskopik miktarlar sabit kalır. Bu, moleküler dönüşümlerin durduğu statik bir durum değildir. Kapalı kaptaki sıvı-buhar dengesi fiziksel, bağların dönüşmesiyle kurulan tersinir tepkime dengesi kimyasal örnektir.",
+          "Dengede [A] ve [B] sabittir fakat eşit olmak zorunda değildir. Uygulamanın A ⇌ B modelinde kileri=0,6 ve kgeri=0,3 seçilmiştir: vileri=0,6[A], vgeri=0,3[B]. Eşit hız koşulu [B]/[A]=2 verir. Bu iki doğrusal hız yasası modelin açık varsayımıdır; her toplam tepkimede hız üslerinin katsayılara eşit olduğu genellenmez."
+        ]
+      },
+      {
+        "title": "Net denklemden Kc bağıntısını yaz",
+        "paragraphs": [
+          "Lise düzeyindeki ideal derişim yaklaşımında aA+bB ⇌ cC+dD için Kc=[C]ᶜ[D]ᵈ/([A]ᵃ[B]ᵇ) yazılır; uygun gaz veya sulu çözeltideki türler ve denkleştirilmiş net denklem kullanılır. Örneğin N₂(g)+3H₂(g) ⇌ 2NH₃(g) için Kc=[NH₃]²/([N₂][H₂]³). Üsler türlerin molar kütlesi veya o anki mol miktarı değildir; dengeli net tepkimenin katsayılarıdır.",
+          "Çok basamaklı bir mekanizmada denge bağıntısını yalnız yavaş basamağa göre yazma. Hız yasasının deneysel bulunması ile denge bağıntısının net denklemden kurulması ayrı işlerdir. Aynı zamanda belirli sıcaklık için tanımlanan K, tepkimenin yazılış biçimine bağlıdır. Daha genel termodinamik ifade etkinliklerle kurulsa da bu rehber verilen ideal derişim/kısmi basınç sorularının çerçevesinde kalır."
+        ]
+      },
+      {
+        "title": "Saf katı ve sıvıyı bağıntıda sabit say",
+        "paragraphs": [
+          "Saf katı ve saf sıvı fazları, etkinlikleri sabit kabul edildiği için bu lise bağıntısında açık derişim terimi olarak yazılmaz. CaCO₃(k) ⇌ CaO(k)+CO₂(g) için Kc=[CO₂] olur. CaCO₃ veya CaO yazılmaması onların tepkimeye katılmadığı veya miktarlarının hiç değişmediği anlamına gelmez; yalnız denge bağıntısındaki rolleri sabittir.",
+          "İlgili saf fazlar varlığını korurken yalnız katı miktarı eklemek denge bağıntısını değiştirmez. Ancak bir faz tamamen tükenirse aynı denge modelinin koşulları artık sağlanmayabilir. ‘Katı hiçbir koşulda etkisizdir’ diye genelleme yapma. Homojen denge aynı fazdaki, heterojen denge farklı fazlardaki türleri içerir; hacim etkisi için gaz türlerinin bulunması yeterli olabilir."
+        ]
+      },
+      {
+        "title": "K ile Q aynı bağıntının farklı zamanlardaki değeridir",
+        "paragraphs": [
+          "K denge koşulundaki oranı, Q ise aynı biçimde hesaplanan herhangi bir anlık oranı belirtir. Q<K ise ürünlere doğru net dönüşüm, Q>K ise girenlere doğru net dönüşüm beklenir; Q=K denge koşuludur. K büyük olduğunda denge ürünler bakımından daha elverişli olabilir, fakat bu tepkimenin hızlı olduğunu veya tam verimle bittiğini söylemez. Hız ve denge farklı sorulardır.",
+          "Karşılaştırmadan önce Q ve K’nin aynı sıcaklıkta, aynı tepkime yönü ve aynı bağıntı için verildiğini kontrol et. Ters tepkimenin K’sini ileri tepkimenin Q’siyle doğrudan karşılaştıramazsın. Net yön bilindikten sonra son miktarları bulmak için ayrıca stokiyometri, toplam miktar veya hacim bilgisi gerekir. Yön tahmini tek başına bütün yeni derişimleri vermez."
+        ]
+      },
+      {
+        "title": "Başlangıç–değişim–denge tablosu kur",
+        "paragraphs": [
+          "Denge hesabında başlangıç değerlerini yaz, bir türdeki değişimi x ile seç ve diğer değişimleri tepkime katsayılarıyla ilişkilendir. A ⇌ B için A azalırken B aynı miktarda artabilir; 2A ⇌ B için aynı değişim oranı kullanılamaz. Elde edilen denge değerleri negatif olamaz ve verilen toplam/madde dengesiyle uyumlu olmalıdır.",
+          "Uygulama modelinde toplam [A]+[B]=3 mol/L korunur ve Kc=2’dir. [B]=2[A] ile 3[A]=3, dolayısıyla [A]=1, [B]=2 mol/L bulunur. Sonucu iki ayrı koşulla denetle: toplam 3 mü ve oran 2 mi? Birini sağlamak ötekini otomatik sağlamaz. Gerçek tepkimelerde toplam mol sayısı her zaman korunmadığından bu modelin toplamını bütün denge sorularına aktarma."
+        ]
+      },
+      {
+        "title": "Derişim grafiğinde önce etki anını bul",
+        "paragraphs": [
+          "Sabit sıcaklık ve hacimde tek bir tür eklenirse o türün derişimi etki anında aniden artar. Sonraki eğri, sistemin yeni dengeye net dönüşümle yaklaşmasıdır. Öteki türlerin derişimleri sırf tek madde eklendi diye aynı anda dikey sıçramaz; tepkime ilerledikçe değişir. Bir türün ortamdan çekilmesinde o türün ani düşüşü ile daha sonraki toparlanma ayrılır.",
+          "Sıcaklık sabitse bu tür derişim müdahalesi K’yi değiştirmez; Q anlık değişir ve sistem aynı K’ye uyan yeni miktarlara yönelir. ‘Etkiyi azaltmak’, başlangıç değerinin her koşulda aynen geri gelmesi değildir. Maddelerin toplamı veya hacim de değişmiş olabilir. Grafik sorusunda dikey sıçrama, kademeli yaklaşma ve yeni yatay denge çizgisini ayrı işaretlemek yanlış eşitlikleri önler."
+        ]
+      },
+      {
+        "title": "Gaz basıncında toplam basınç ile kısmi basıncı ayır",
+        "paragraphs": [
+          "Sabit sıcaklıkta hacim küçültülürse gazların derişimleri/kısmi basınçları etki anında artar. Denge, gaz katsayıları toplamı daha az olan tarafa yönelebilir. N₂+3H₂ ⇌ 2NH₃ örneğinde 4 mol gazdan 2 mol gaza giden ürün yönü desteklenir. İki taraftaki gaz katsayıları toplamı eşitse ideal yaklaşımda yalnız hacim değişiminin denge bileşimi üzerinde böyle bir kaydırıcı etkisi yoktur. Saf katı ve sıvı katsayıları gaz mol toplamına eklenmez.",
+          "İnert gaz tepkimeye katılmaz, fakat kabın koşulu önemlidir. Sabit T ve V’de inert gaz eklemek toplam basıncı artırırken tepkime gazlarının kısmi basınçlarını değiştirmez; denge kaymaz. Sabit T ve toplam P’de pistonlu kaba eklenirse hacim artar, tepkime gazlarının kısmi basınçları azalır; uygun tepkimede daha çok gaz molü olan taraf desteklenir. ‘Basınç arttı’ sözü tek başına yeterli değildir: hangi basınç, hangi yolla ve hangi kapta?"
+        ]
+      },
+      {
+        "title": "Sıcaklık hem dengeyi hem K’yi değiştirebilir",
+        "paragraphs": [
+          "İleri yön endotermikse ısı alan, ekzotermikse ısı veren yöndür. Sıcaklık artırıldığında denge ısı alan yönü destekler: ileri yön endotermikse ürünler, ekzotermikse girenler lehine değişim beklenir. Aynı net tepkime için sıcaklık artarken K artıyorsa ileri yön endotermik; K azalıyorsa ileri yön ekzotermik olarak yorumlanır.",
+          "Isı kavramını yön bulmak için giren veya ürün tarafında düşünmek yardımcıdır; fakat denge bağıntısına [ısı] diye bir derişim terimi yazılmaz. Sabit bir sıcaklıkta derişim, hacim veya katalizör K’yi değiştirmezken sıcaklık bu ayrı koşulu değiştirir. Enerjiyi azaltma ve düzensizliği artırma eğilimleri dengeyi açıklarken kullanılabilir; yalnız tanecik sayısını saymak evrensel tersinmezlik kanıtı değildir. Fazlar ve nicel termodinamik koşullar da önemlidir."
+        ]
+      },
+      {
+        "title": "Katalizör hızı değiştirir, denge oranını değil",
+        "paragraphs": [
+          "Uygun katalizör ileri ve geri süreçlerin daha hızlı gerçekleşebileceği alternatif yol sağlar. Aynı sıcaklıkta denge sabiti ve denge bileşimini değiştirmez; dengeye ulaşmayı hızlandırır. Dengede de iki yönün hızı artabilir, fakat hızlar yine birbirine eşittir. Katalizörü yalnız ürün oluşturan yöne çalıştıran bir ‘denge kaydırıcı’ gibi kullanma.",
+          "Uygulamanın basit modelinde iki hız sabiti aynı çarpanla artırılır; Kc=2 oranı ve son derişimler korunurken yaklaşma eğrisi hızlanır. Bu oran değiştirmeme, seçili modelin güvenli gözlemidir. Grafikte derişimlerin sonlu zamanlı ve yuvarlanmış değerleri tam matematiksel dengeyle karıştırılmaz. Ürüne daha çabuk ulaşmak ile denge veriminin artması farklı ifadelerdir."
+        ]
+      },
+      {
+        "title": "Tepkimeyi değiştirirsen K’yi de dönüştür",
+        "paragraphs": [
+          "Denklem ters çevrilirse yeni K=1/Keski olur. Bütün katsayılar r ile çarpılırsa yeni K=(K_eski)^r; iki tepkime toplanarak net denklem elde edilirse uygun yön ve katsayı dönüşümleri yapıldıktan sonra denge sabitleri çarpılır. Örneğin A ⇌ B için K=4, B ⇌ C için K=3 ise A ⇌ C için K=12’dir.",
+          "Bir denklemin katsayılarını değiştirmek aynı kimyasal sistemin bağıntısını farklı yazmaktır; sıcaklığı değiştirmekle aynı işlem değildir. Ara türler toplamada sadeleşmelidir. Çarpmadan önce her denklem hedef yönde mi ve katsayıları istenen kadar mı, kontrol et. K’yi tepkime katsayısıyla çarpmak yerine üs almak gerektiğini unutma."
+        ]
+      },
+      {
+        "title": "Kp ile Kc arasındaki gaz köprüsü",
+        "paragraphs": [
+          "İdeal gaz yaklaşımında Kp=Kc(RT)^Δn kullanılır. Δn, ürünlerdeki gaz katsayıları toplamı eksi girenlerdeki gaz katsayıları toplamıdır; o andaki rastgele mol miktarları değildir. T mutlak sıcaklık yani Kelvin olmalı, R kullanılan basınç/hacim birimleriyle uyumlu seçilmelidir. Örneğin N₂(g)+3H₂(g) ⇌ 2NH₃(g) için Δn=2−4=−2, dolayısıyla Kp=Kc/(RT)² olur.",
+          "Gaz katsayıları toplamları eşitse Δn=0 ve bu modelde Kp=Kc olur. Ancak Kp yalnız gaz türlerinin kısmi basınçlarını kullanırken Kc uygun gaz/çözünmüş tür derişimlerini kullanır. Denklemde bir katı bulundu diye Δn hesabına onun katsayısını katma. İşaretin ters seçilmesi RT çarpanını pay ve payda arasında yanlış taşır; son kontrolün denklemde gazları tek tek saymak olsun."
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "title": "Derişimler eşit olmadan denge",
+        "prompt": "Sabit hacimde A ⇌ B modeli için Kc=2 ve dengede [A]+[B]=3 mol/L. Denge derişimleri nedir?",
+        "strategy": "Oran ve toplamı iki ayrı denklem olarak kullan.",
+        "steps": [
+          {
+            "label": "Oran",
+            "expression": "[B]/[A]=2 → [B]=2[A]",
+            "explanation": "K bu 1:1 denklem için yazılmıştır."
+          },
+          {
+            "label": "Toplam",
+            "expression": "[A]+2[A]=3 → [A]=1 mol/L",
+            "explanation": "Toplamın korunduğu soruda ayrıca verilmiştir."
+          },
+          {
+            "label": "İkinci tür",
+            "expression": "[B]=2 mol/L",
+            "explanation": "Sabit fakat farklı derişimler dengeyle uyumludur."
+          }
+        ],
+        "answer": "[A]=1, [B]=2 mol/L.",
+        "check": "Toplam 3; oran 2. Eşit olan derişimler değil ileri/geri hızlardır.",
+        "pitfall": "Toplamı ikiye bölüp [A]=[B]=1,5 yazma."
+      },
+      {
+        "title": "Q’dan yön bul, son miktarı uydurma",
+        "prompt": "N₂(g)+3H₂(g) ⇌ 2NH₃(g) için belirli sıcaklıkta Kc=2. Anlık [N₂]=1, [H₂]=2, [NH₃]=2 mol/L. Sistem hangi net yöne ilerler?",
+        "strategy": "Net denklemden aynı biçimde Q hesapla ve K ile karşılaştır.",
+        "steps": [
+          {
+            "label": "Denge kesri",
+            "expression": "Q=[NH₃]²/([N₂][H₂]³)=4/8=0,5",
+            "explanation": "H₂’nin katsayısı 3 olduğundan derişimi üçüncü kuvvetle alınır."
+          },
+          {
+            "label": "Karşılaştır",
+            "expression": "Q=0,5 < K=2",
+            "explanation": "Oran ürünlere net dönüşümle K’ye yaklaşır."
+          }
+        ],
+        "answer": "Ürünler yani NH₃ oluşumu yönüne net ilerleme.",
+        "check": "Son [NH₃] miktarı yalnız yön bilgisinden çıkarılamaz; ayrıca değişim hesabı gerekir.",
+        "pitfall": "K>Q’yu ‘K büyür’ diye okuma; sabit sıcaklıkta değişen anlık Q’dur."
+      },
+      {
+        "title": "Saf katıyı dışarıda bırakırken koşulu koru",
+        "prompt": "CaCO₃(k) ⇌ CaO(k)+CO₂(g) dengesinde iki katı faz da mevcut. Sabit sıcaklık ve hacimde yalnız CaCO₃ katısı ekleniyor. Kc bağıntısı ve beklenen denge etkisi nedir?",
+        "strategy": "Fazları belirle, saf katıları bağıntıya katma, faz varlığı koşulunu kontrol et.",
+        "steps": [
+          {
+            "label": "Bağıntı",
+            "expression": "Kc=[CO₂]",
+            "explanation": "Saf katı fazların etkinlikleri bu yaklaşımda sabit kabul edilir."
+          },
+          {
+            "label": "Müdahale",
+            "explanation": "Katı fazlar varken yalnız saf katı eklemek Q’yu ve sıcaklığı değiştirmez; yeni denge kayması beklenmez."
+          }
+        ],
+        "answer": "Kc=[CO₂]; verilen koşulda yalnız katı eklenmesi dengeyi kaydırmaz.",
+        "check": "Katı tamamen tükenmiş olsaydı aynı faz varlığı koşulu sağlanmayabilirdi.",
+        "pitfall": "Bağıntıda katı yazılmamasını ‘katı tepkimeye girmez’ diye yorumlama."
+      },
+      {
+        "title": "Üs mü, çarpım mı, ters mi?",
+        "prompt": "A ⇌ B için K₁=4 ve B ⇌ C için K₂=3, aynı sıcaklıkta veriliyor. 2C ⇌ 2A tepkimesinin denge sabiti nedir?",
+        "strategy": "Önce topla, sonra ters çevir, sonra katsayıları ikiyle çarp.",
+        "steps": [
+          {
+            "label": "Topla",
+            "expression": "A ⇌ C; K=4×3=12",
+            "explanation": "Ara tür B sadeleşir."
+          },
+          {
+            "label": "Ters çevir",
+            "expression": "C ⇌ A; K=1/12",
+            "explanation": "Hedef yön C’den A’ya doğrudur."
+          },
+          {
+            "label": "Katsayıları çarp",
+            "expression": "2C ⇌ 2A; K=(1/12)²=1/144",
+            "explanation": "Katsayı çarpanı K’ye üs olur."
+          }
+        ],
+        "answer": "1/144.",
+        "check": "Ters yöndeki 2A ⇌ 2C için K=144 olmalı; çarpımları 1’dir.",
+        "pitfall": "K’yi 2 ile çarpma; bütün katsayılar 2 ile çarpıldığında K’nin karesi alınır."
+      },
+      {
+        "title": "Aynı gaz, farklı kap koşulu",
+        "prompt": "X(g) ⇌ 2Y(g) dengesi sabit sıcaklıkta. Tepkimeye girmeyen inert gaz, bir kapta sabit hacimde; başka bir kapta sabit toplam basınç altında ekleniyor. Hangi durumda kayma beklenir?",
+        "strategy": "Toplam basıncı değil, tepkime gazlarının kısmi basınçlarını izle.",
+        "steps": [
+          {
+            "label": "Sabit hacim",
+            "explanation": "X ve Y’nin kısmi basınçları değişmez; denge kayması beklenmez."
+          },
+          {
+            "label": "Sabit toplam basınç",
+            "explanation": "Piston hareketiyle hacim artar, X ve Y kısmi basınçları azalır. Daha çok gaz molü olan ürün yönü desteklenir."
+          }
+        ],
+        "answer": "Sabit V’de kayma yok; sabit toplam P’de hacim artışıyla ürün yönü desteklenir.",
+        "check": "Sıcaklık aynı olduğundan iki durumda da bu net denklem için K değişmez.",
+        "pitfall": "İnert gaz her kapta aynı etkiyi yapar veya her basınç artışı dengeyi kaydırır genellemelerini kullanma."
+      }
+    ],
+    "recall": [
+      {
+        "prompt": "Dengede hangi iki hız eşittir; hangi derişimler eşit olmak zorunda değildir?",
+        "answer": "İleri ve geri tepkime hızları eşittir. Farklı türlerin denge derişimleri sabittir fakat birbirine eşit olmak zorunda değildir."
+      },
+      {
+        "prompt": "Katalizör, sıcaklık ve hacimden hangisi aynı net tepkimenin K değerini değiştirebilir?",
+        "answer": "Sıcaklık. Katalizör yaklaşma hızını, hacim sabit sıcaklıkta Q ve bileşimi etkileyebilir; K’yi değiştirmez."
+      },
+      {
+        "prompt": "Saf katı neden K’de yazılmaz ve hangi sınır unutulmamalıdır?",
+        "answer": "Saf fazın etkinliği sabit kabul edilir; tepkimeye katılmadığı anlamına gelmez ve ilgili fazların varlığını koruduğu koşulu kontrol edilir."
+      }
+    ],
+    "source": "MEBİ AYT Kimya Konu Özetleri Kimyasal Denge PDF s.70–75 / basılı s.68–73 doğrudan okumasına dayalı özgün rehber. Net denklem/hız yasası, saf faz varlığı, inert gazın kap koşulu ve ideal derişim sınırları açıklanmıştır. Kaynak kavramları evrensel tersinmezlik veya bütün mekanizmalarda katsayı=hız üssü gibi aşırı genellemelere dönüştürülmez; örnekler resmî sınav sorusu değildir."
+  }
+}

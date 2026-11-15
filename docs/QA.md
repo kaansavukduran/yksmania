@@ -1,3 +1,19 @@
+# 0.17 adayı — kaynak ve çalışma alanı kabulü
+
+Henüz yeni yayın yoktur.766/766 birim,TypeScript/modül yolu kontrolü ve üretim derlemesi geçti. PWA doğrulayıcısı173 zorunlu çalışma varlığının tamamını önbellekte bulur;5MiB tek dosya sınırı korunur.675 E2E toplanır; tam çalıştırma ve native/Pages49-aile kabulü bekler.
+
+P0 ortak yardım:20 tam kimlikli rehber/40 adım/60 ayrı şık gerekçesi bağımsız okunup635 denetimle kabul edildi. İlk n4 sıfır kuvvet karşı örneği korunur; yeni köke F≠0 koşulu eklenmiştir. Geçmiş soru fixture'ları ve deneme anlık görüntüleri korunur. Mevcut kısa ipucunu sahte dört aşamaya çoğaltma yoktur.
+
+Gerçek normal menü testleri: kademeli yardımın çevrimdışı reload'u,notu ve doğru yardım seviyesi; iki deneme modu; yardım aç/kapat sonrası bütün cevap/bayrak/deadline aynılığı;gerçek kaydetme hatasında çözümün açılmaması ve yeniden deneme; eski paragraf metinleri,deneme bitişi ve net akışları geçti. İlk birleşik koşu11 PASS/1 test seçicisi FAIL; dar mobil seçici düzeltmesiyle ayrı vaka PASS. Yeni yardımda gerçek metin taşması ve listelerin daralması onarıldı;320px/UI200/yazı150/azaltılmış hareket/açık tema/gerçek System+Lexend yükleme,tam çözümde sözcük bölünmesi0,44px kontroller veaxe kabulü geçti. Bu tek mobil vaka iki fontu içerir; iki bağımsız E2E diye sayılmaz.
+
+İlk tüm birim koşusu yeni soru sayısı/katalog ve görünen sürüm sorunlarını gösterdi; düzeltmelerden sonra758 PASS oldu. Yeni8 yardım testi gerçekten Vitest kapsamına alındı. Eski n4 kökünü bekleyen iki ilave golden kontrolü, yalnız adlandırılmış öncül düzeltmesini kabul ederek onarıldı; son766 PASS. İlk loglar özel QA çalışma alanında korunur. Rehber konumu için3,sentetik imza sözleşmesi için3 ve sürüm tutarlılığı için1 regresyon vardır. Gerçek APK/iki native sürüm arası yükseltme/fiziksel cihaz kontrolü yapılmadı.
+
+Android imza ayarı kullanıcı tarafından ertelendi. Eksikse koşullu iş SKIPPED ve APK NOT BUILT'tir; genel web CI başarısı Android paketi var demek değildir. Tam release kapısı Android dosyası+metadata+sabit sertifikayı zorunlu tutar. Anahtar,parola ve ham özel Drive belgeleri depo dışında tutulur.
+
+---
+
+## Önceki yayımlanmış kabul
+
 # 0.16.0 — nihai C7 ürün ve yayın kabulü geçti
 
 60 yeni ünite, 678 bölüm, 1.356 paragraf, 248 çözümlü örnek ve 600 özgün soru: toplam 264 anlatım/236 rehber/264 özet/2.440 soru; ilk 258/479 başlık hazır. Check/610 birim/normal ve prefix derleme PASS. C7 kaynağında özellik dalı ve main CI ayrı ayrı548/548 tarayıcı ve dört paket işi PASS; yayımlanmış kabul548/548 (547 HTTPS+1 yerel Vite), Pages üç iş PASS. Gerçek paketli Windows/Linux yeniden açılış ve 0.15→C7 web güncellemesi geçti.

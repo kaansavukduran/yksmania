@@ -1,3 +1,9 @@
+import { forge019BiologyTopics } from "./forge019Biology";
+import { forge019ChemistryTopics } from "./forge019Chemistry";
+import { forge019PhysicsTopics } from "./forge019Physics";
+import { forge019GeographyTopics } from "./forge019Geography";
+import { forge019TurkishTopics } from "./forge019Turkish";
+import { forge019MathTopics } from "./forge019Math";
 import { forge018BiologyTopics } from "./forge018Biology";
 import { forge018ChemistryTopics } from "./forge018Chemistry";
 import { forge018PhysicsTopics } from "./forge018Physics";
@@ -118,6 +124,28 @@ const Forge018Physics = lazy(() => import("./Forge018PhysicsLab"));
 const Forge018Geography = lazy(() => import("./Forge018GeographyLab"));
 const Forge018Turkish = lazy(() => import("./Forge018TurkishLab"));
 const Forge018Math = lazy(() => import("./Forge018MathLab"));
+const Forge019Biology = lazy(() => import("./Forge019BiologyLab"));
+const Forge019Chemistry = lazy(() => import("./Forge019ChemistryLab"));
+const Forge019Physics = lazy(() => import("./Forge019PhysicsLab"));
+const Forge019Geography = lazy(() => import("./Forge019GeographyLab"));
+const Forge019Turkish = lazy(() => import("./Forge019TurkishLab"));
+const Forge019Math = lazy(() => import("./Forge019MathLab"));
+const questionOnly019 = new Set([
+  "paragraf-ana-dusunce-ileri",
+  "elektrik-alan-ileri",
+  "kimyasal-denge-ileri",
+]);
+const source019Labs: {
+  topics: Record<string, string>;
+  Component: ComponentType<{ lessonId: string }>;
+}[] = [
+  { topics: forge019BiologyTopics, Component: Forge019Biology },
+  { topics: forge019ChemistryTopics, Component: Forge019Chemistry },
+  { topics: forge019PhysicsTopics, Component: Forge019Physics },
+  { topics: forge019GeographyTopics, Component: Forge019Geography },
+  { topics: forge019TurkishTopics, Component: Forge019Turkish },
+  { topics: forge019MathTopics, Component: Forge019Math },
+];
 const source018Labs: {
   topics: Record<string, string>;
   Component: ComponentType<{ lessonId: string }>;
@@ -205,6 +233,10 @@ const continuationLabs: {
 ];
 export function VisualLab({ id }: { id: string }) {
   const { t } = useApp();
+  if (questionOnly019.has(id)) return null;
+  const Source019Lab = source019Labs.find(({ topics }) =>
+    Object.hasOwn(topics, id),
+  )?.Component;
   const Source018Lab = source018Labs.find(({ topics }) =>
     Object.hasOwn(topics, id),
   )?.Component;
@@ -225,7 +257,9 @@ export function VisualLab({ id }: { id: string }) {
   )?.Component;
   return (
     <Suspense fallback={<p role="status">{t("loading")}</p>}>
-      {Source018Lab ? (
+      {Source019Lab ? (
+        <Source019Lab key={id} lessonId={id} />
+      ) : Source018Lab ? (
         <Source018Lab key={id} lessonId={id} />
       ) : Source017Lab ? (
         <Source017Lab key={id} lessonId={id} />

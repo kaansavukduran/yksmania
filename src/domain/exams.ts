@@ -1,6 +1,7 @@
 import { lessons, subjects } from "./content";
 import type { AppState, Lesson } from "./model";
 import type { ExamDraft, ExamItem, ExamSession } from "./examModel";
+import { helpPanels, resolvedGuidance } from "../learning/questionHelp";
 export type ExamSpec = {
   id: string;
   title: string;
@@ -24,18 +25,33 @@ export function scaledExamSeconds(exam: "TYT" | "AYT", count: number) {
 }
 function snapshot(lesson: Lesson): ExamItem[] {
   const subject = subjects.find((s) => s.id === lesson.subjectId)!;
-  return lesson.questions.map((q) => ({
-    id: q.id,
-    lessonId: lesson.id,
-    subjectId: subject.id,
-    subjectName: subject.name.tr,
-    lessonTitle: lesson.title.tr,
-    prompt: q.prompt.tr,
-    ...(q.passage ? { passage: q.passage.tr } : {}),
-    options: q.options.map((o) => o.tr),
-    answer: q.answer,
-    explanation: q.explanation.tr,
-  }));
+  return lesson.questions.map((q) => {
+    const helpQuestion = {
+      id: q.id,
+      prompt: q.prompt.tr,
+      passage: q.passage?.tr,
+      options: q.options.map((o) => o.tr),
+      answer: q.answer,
+      explanation: q.explanation.tr,
+      hint: q.hint.tr,
+      guidance: q.guidance,
+    };
+    const guidance = resolvedGuidance(helpQuestion);
+    return {
+      id: q.id,
+      lessonId: lesson.id,
+      subjectId: subject.id,
+      subjectName: subject.name.tr,
+      lessonTitle: lesson.title.tr,
+      prompt: q.prompt.tr,
+      ...(q.passage ? { passage: q.passage.tr } : {}),
+      options: q.options.map((o) => o.tr),
+      answer: q.answer,
+      explanation: q.explanation.tr,
+      hint: q.hint.tr,
+      ...(guidance ? { guidance: structuredClone(guidance) } : {}),
+    };
+  });
 }
 // Interleave lesson questions, so a short section samples several taught skills.
 function subjectItems(ids: string[], limit: number, random?: () => number) {
@@ -141,10 +157,7 @@ function seededRandom(seed: string): () => number {
     return ((n ^ (n >>> 14)) >>> 0) / 4294967296;
   };
 }
-const copyItem = (item: ExamItem): ExamItem => ({
-  ...item,
-  options: [...item.options],
-});
+const copyItem = (item: ExamItem): ExamItem => structuredClone(item);
 
 export function selectExamVariant(
   spec: ExamSpec,
@@ -192,6 +205,7 @@ export function beginExam(
   state: AppState,
   spec: ExamSpec,
   now: number,
+  mode: "simulation" | "learning" = "simulation",
 ): AppState {
   if (state.examDraft) throw Error("EXAM_IN_PROGRESS");
   if (!spec.items.length) throw Error("EXAM_EMPTY");
@@ -218,6 +232,7 @@ export function beginExam(
     startedAt: now,
     deadline: now + spec.durationSeconds * 1000,
     durationSeconds: spec.durationSeconds,
+    mode,
   };
   return { ...state, examDraft: draft };
 }
@@ -227,7 +242,9 @@ export function changeExam(
   action:
     | { type: "answer"; index: number; value: number | null }
     | { type: "index"; index: number }
-    | { type: "flag"; index: number },
+    | { type: "flag"; index: number }
+    | { type: "help-enabled"; index: number; value: boolean }
+    | { type: "help"; index: number; level: number },
   now: number,
 ): AppState {
   const draft = state.examDraft;
@@ -241,6 +258,26 @@ export function changeExam(
     throw Error("EXAM_INDEX");
   if (action.type === "index")
     return { ...state, examDraft: { ...draft, index: action.index } };
+  if (action.type === "help-enabled")
+    return { ...state, examDraft: { ...draft, helpEnabled: action.value } };
+  if (action.type === "help") {
+    if (draft.mode !== "learning" && !draft.helpEnabled)
+      throw Error("EXAM_HELP_DISABLED");
+    const limit = helpPanels(draft.items[action.index]).length + 1;
+    if (
+      !Number.isInteger(action.level) ||
+      action.level < 1 ||
+      action.level > limit
+    )
+      throw Error("EXAM_HELP_LEVEL");
+    const helpLevels = draft.items.map((_, i) =>
+      Math.max(
+        draft.helpLevels?.[i] ?? 0,
+        i === action.index ? action.level : 0,
+      ),
+    );
+    return { ...state, examDraft: { ...draft, helpLevels } };
+  }
   if (action.type === "flag")
     return {
       ...state,
@@ -322,4 +359,21 @@ export function examScore(session: Pick<ExamDraft, "items" | "answers">) {
     subjects: [...result.entries()].map(([id, row]) => ({ id, ...row })),
     ...totals,
   };
+}
+
+export function examAssistance(
+  session: Pick<ExamDraft, "items" | "answers" | "helpLevels">,
+) {
+  let helped = 0,
+    assistedCorrect = 0,
+    independentCorrect = 0;
+  session.items.forEach((q, i) => {
+    const assisted = (session.helpLevels?.[i] ?? 0) > 0;
+    if (assisted) helped++;
+    if (session.answers[i] === q.answer) {
+      if (assisted) assistedCorrect++;
+      else independentCorrect++;
+    }
+  });
+  return { helped, assistedCorrect, independentCorrect };
 }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowLeft, ArrowRight, CheckCircle2, Lightbulb } from "lucide-react";
+import { ArrowLeft, ArrowRight, CheckCircle2 } from "lucide-react";
 import { useApp } from "../store";
 import { lessonById, subjectById } from "../domain/content";
 import {
@@ -14,6 +14,7 @@ import { Aion } from "../components/Aion";
 import { PastExamQuestions } from "../components/PastExamQuestions";
 import { lessonTopic } from "../domain/studyPlan";
 import { StudyTimer } from "../components/StudyTimer";
+import { QuestionHelp } from "../components/QuestionHelp";
 export function Study({ navigate }: { navigate: (s: string) => void }) {
   const { state, t, l, update, commit, toast } = useApp();
   const [busy, setBusy] = useState(false);
@@ -38,13 +39,14 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
     })).catch(() => {});
   };
   const check = () => {
-    if (draft.selected === null || draft.checked) return;
+    if (draft.selected === null || draft.checked || busy) return;
     const response = {
       questionId: question.id,
       selected: draft.selected,
       correct: draft.selected === question.answer,
       assisted: draft.hint,
       confidence: draft.confidence,
+      ...(draft.hint ? { helpLevel: draft.helpLevel ?? 1 } : {}),
     };
     patch({ checked: true, responses: [...draft.responses, response] });
   };
@@ -56,6 +58,7 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
         selected: null,
         checked: false,
         hint: false,
+        helpLevel: 0,
         confidence: "medium",
       });
       return;
@@ -104,6 +107,36 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
       setBusy(false);
     }
   };
+  async function openHelp(level: number) {
+    if (busy || !draft || !lesson) return;
+    setBusy(true);
+    try {
+      await commit((s) => {
+        const current = s.draft;
+        if (
+          !current ||
+          current.lessonId !== lesson.id ||
+          current.index !== draft.index
+        )
+          throw Error("QUESTION_CHANGED");
+        return {
+          ...s,
+          draft: {
+            ...current,
+            helpLevel: Math.max(
+              current.helpLevel ?? (current.hint ? 1 : 0),
+              level,
+            ),
+            hint: current.hint || !current.checked,
+          },
+        };
+      });
+    } catch {
+      toast("İpucu açılamadı. Kaydın korundu; yeniden dene.");
+    } finally {
+      setBusy(false);
+    }
+  }
   return (
     <>
       <button
@@ -151,7 +184,7 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
               <button
                 key={i}
                 className={`answer ${draft.selected === i ? "chosen" : ""} ${draft.checked && i === question.answer ? "answer-correct" : ""} ${draft.checked && draft.selected === i && i !== question.answer ? "answer-wrong" : ""}`}
-                disabled={draft.checked}
+                disabled={draft.checked || busy}
                 aria-pressed={draft.selected === i}
                 onClick={() => patch({ selected: i })}
               >
@@ -182,13 +215,22 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
               </div>
             </fieldset>
           )}
-          {draft.hint && (
-            <aside className="hint-box">
-              <Lightbulb size={18} />
-              <p>{l(question.hint)}</p>
-              <span className="small">{t("assisted")}</span>
-            </aside>
-          )}
+          <QuestionHelp
+            question={{
+              id: question.id,
+              prompt: l(question.prompt),
+              passage: question.passage ? l(question.passage) : undefined,
+              options: question.options.map(l),
+              answer: question.answer,
+              hint: l(question.hint),
+              explanation: l(question.explanation),
+              guidance: question.guidance,
+            }}
+            level={draft.helpLevel ?? (draft.hint ? 1 : 0)}
+            onLevel={(level) => void openHelp(level)}
+            disabled={busy}
+            reviewed={draft.checked}
+          />
           {draft.checked && (
             <div
               className={
@@ -210,16 +252,8 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
             {!draft.checked ? (
               <>
                 <button
-                  className="text-button"
-                  disabled={draft.hint}
-                  onClick={() => patch({ hint: true })}
-                >
-                  <Lightbulb size={18} />
-                  {t("hint")}
-                </button>
-                <button
                   className="primary"
-                  disabled={draft.selected === null}
+                  disabled={draft.selected === null || busy}
                   onClick={check}
                 >
                   {t("check")}

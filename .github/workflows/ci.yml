@@ -71,8 +71,27 @@ jobs:
           path: |
             release/*.AppImage
             release/*.deb
+  android_signing:
+    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    outputs:
+      ready: ${{ steps.availability.outputs.ready }}
+    steps:
+      - name: Check optional Android signing configuration
+        id: availability
+        shell: bash
+        env:
+          YKSMANIA_ANDROID_SIGNING: ${{ secrets.YKSMANIA_ANDROID_SIGNING }}
+        run: |
+          if [ -n "$YKSMANIA_ANDROID_SIGNING" ]; then
+            echo 'ready=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'ready=false' >> "$GITHUB_OUTPUT"
+            echo '::notice::Android package skipped: persistent signing is not configured. Web and desktop verification continue.'
+          fi
   android:
-    needs: verify
+    needs: [verify, android_signing]
+    if: needs.android_signing.outputs.ready == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
@@ -86,6 +105,10 @@ jobs:
         with:
           distribution: temurin
           java-version: "21"
+      - name: Prepare persistent Android signing
+        run: node scripts/prepare-android-signing.mjs
+        env:
+          YKSMANIA_ANDROID_SIGNING: ${{ secrets.YKSMANIA_ANDROID_SIGNING }}
       - run: npm ci && npm run android:sync
       - run: chmod +x gradlew && ./gradlew assembleDebug --no-daemon
         working-directory: android
@@ -96,6 +119,7 @@ jobs:
           test -n "$signing_tool"
           "$signing_tool" verify --verbose --print-certs android/app/build/outputs/apk/debug/app-debug.apk > android/app/build/outputs/apk/debug/verification.txt
           "$(dirname "$signing_tool")/aapt" dump badging android/app/build/outputs/apk/debug/app-debug.apk >> android/app/build/outputs/apk/debug/verification.txt
+          node scripts/prepare-android-signing.mjs --verify android/app/build/outputs/apk/debug/verification.txt
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: YKSMania-Android-debug

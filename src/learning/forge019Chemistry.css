@@ -1,0 +1,234 @@
+.forge019-chemistry {
+  margin: 24px 0;
+  padding: 24px;
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface-2);
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+.forge019-chemistry h3 {
+  margin: 0 0 18px;
+  line-height: 1.5;
+}
+.forge019-chemistry p,
+.forge019-chemistry figcaption {
+  line-height: 1.75;
+}
+.c019-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 24px;
+  margin: 24px 0;
+}
+.c019-field {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+  min-width: 0;
+}
+.c019-field output {
+  font-variant-numeric: tabular-nums;
+}
+.forge019-chemistry input[type="range"] {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  margin: 0;
+  accent-color: var(--accent);
+}
+.c019-choices {
+  min-width: 0;
+  padding: 0;
+  margin: 24px 0;
+  border: 0;
+}
+.c019-choices legend {
+  padding: 0;
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+.c019-choices > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  min-width: 0;
+}
+.forge019-chemistry button {
+  min-width: 44px;
+  min-height: 44px;
+  max-width: 100%;
+  padding: 12px 16px;
+  font: inherit;
+  line-height: 1.65;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.c019-choices button {
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  border-radius: 10px;
+}
+.c019-choices button[aria-pressed="true"] {
+  border-color: var(--accent);
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.forge019-chemistry button:focus-visible,
+.forge019-chemistry input:focus-visible,
+.forge019-chemistry textarea:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+.forge019-chemistry figure {
+  margin: 26px 0;
+  min-width: 0;
+}
+.c019-svg {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  margin: 24px auto;
+  overflow: visible;
+}
+.c019-svg text {
+  fill: var(--text);
+  font-family: inherit;
+  font-size: 24px;
+}
+.c019-axis {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.c019-grid {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1;
+  stroke-dasharray: 3 5;
+}
+.c019-accent {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 1;
+}
+.c019-mint {
+  fill: var(--mint);
+  stroke: var(--text);
+  stroke-width: 1;
+}
+.c019-muted-bar {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 2;
+  stroke-dasharray: 4 3;
+}
+.c019-curve {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 3;
+}
+.c019-dot {
+  fill: var(--text);
+  stroke: var(--bg);
+  stroke-width: 2;
+}
+.c019-series {
+  fill: none;
+  stroke-width: 3;
+}
+.c019-series-point {
+  fill: var(--bg);
+  stroke-width: 2;
+}
+.c019-series-0 {
+  stroke: var(--accent);
+}
+.c019-series-1 {
+  stroke: var(--mint);
+  stroke-dasharray: 10 5;
+}
+.c019-series-2 {
+  stroke: var(--text);
+  stroke-dasharray: 2 5;
+}
+.c019-equation,
+.c019-result {
+  padding: 16px 0;
+  border-block: 1px solid var(--border);
+}
+.c019-result p {
+  margin: 12px 0;
+}
+.c019-prediction {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+  min-width: 0;
+  margin-top: 24px;
+}
+.c019-prediction .c019-choices {
+  margin: 0;
+}
+.forge019-chemistry textarea {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 80px;
+  font: inherit;
+  line-height: 1.7;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  background: var(--bg);
+}
+.c019-feedback {
+  border-left: 3px solid var(--accent);
+  padding: 12px 16px;
+  background: var(--bg);
+  min-width: 0;
+}
+.c019-note {
+  margin: 24px 0 0;
+}
+@media (max-width: 600px) {
+  .forge019-chemistry {
+    margin-inline: -11px;
+    padding: 16px 6px;
+  }
+  .c019-controls {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+  .c019-choices > div {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+  .forge019-chemistry button {
+    width: 100%;
+    padding-inline: 6px;
+  }
+  .forge019-chemistry textarea {
+    padding-inline: 6px;
+  }
+  .c019-feedback {
+    padding: 12px 6px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .forge019-chemistry *,
+  .forge019-chemistry *::before,
+  .forge019-chemistry *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+:root[data-motion="off"] .forge019-chemistry * {
+  animation: none !important;
+  transition: none !important;
+}
