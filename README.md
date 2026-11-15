@@ -1,6 +1,6 @@
 # YKSMania
 
-Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.13.0 alpha adayı**. Bu sürümün yayın ve paket kabulü henüz tamamlanmadı.
+Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.13.0 alpha**. Web, Pages ve platform paketlerinin yayın kabulü tamamlandı.
 
 [Vercel uygulaması](https://yksmania.vercel.app) · [GitHub Pages](https://kaansavukduran.github.io/yksmania/) · [GitHub deposu](https://github.com/kaansavukduran/yksmania)
 
@@ -75,18 +75,15 @@ Sıfırlama notları, ayarları ve önceki kişisel dosyaları korur.
 Node 24 gereklidir: `npm ci`, `npm run dev`. Kontroller:
 `npm run check`, `npm test`, `npm run build`, `npm run test:e2e`, `npm run test:desktop`.
 
-0.13 kaynağında tip kontrolü, ayrı web/Pages derlemeleri ve 355/355 birim testi
-geçti. Önceki 1.130 soru ve 147 ders kaydının soru dışındaki bütün alanları
-korunur; bu kayıtların 146’sı konu anlatımıdır. Son tam yerel browser koşusu
-302/303 geçti; tek hata yeni cebir sorularını hâlâ sorusuz sayan eski test
-beklentisiydi. Düzeltilen arama kabulü ve dört onay vakası birlikte 5/5 geçti;
-yerel tam 303/303 koşusu yapılmış iddiası yoktur.
-
-Son geliştirme Electron’da aynı profilde taslak değişimini iptal etme, bütün
-kaydın aynılığı, açık onayla değiştirme ve çevrimdışı yeniden açma geçti.
-Pages alt yolunun son derlemesi ve gerçek 0.12→0.13 web güncellemesi eski
-kayıtları korudu. Uzak CI, canlı web/Pages ve paket yayını ayrı kabul edilir;
-0.13 için bu sonuçlar henüz tamamlanmış sayılmaz.
+Kaynak `ba8f553` üzerinde CI dört iş PASS: 355 birim ve 303/303 tarayıcı,
+Windows/Linux paketli çevrimdışı/yeniden açılış/onay kabulü, Android sürüm kodu 21 ve v2 imza.
+Canlı Vercel 303/303; Pages derleme/dağıtım/canlı kabulü üç iş PASS.
+[0.13.0 alpha paketleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.13.0-alpha.1) yayımlandı.
+Yerel tam 302/303 sonucu ve düzeltilen eski beklentinin 5/5 odaklı kabulü,
+son uzak tam 303/303 sonuçlarından ayrı tutulur. Eski 1.130 soru ve 147 dersin
+soru dışındaki bütün alanları korunur; bunların 146’sı anlatımdır. Son web
+service worker yükseltmesi bütün eski kayıtları korudu. Ayrıntılı kanıt ve
+fiziksel cihaz sınırları FORGE ve QA’da bulunur.
 
 Web ilk çevrimiçi hazırlıktan sonra, native arayüz yerel dosyalardan çalışır.
 Vercel ve GitHub Pages ayrı kökenlerde ayrı ilerleme saklar; kişisel yedekle

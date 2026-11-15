@@ -1,12 +1,13 @@
-# Güncel yön ve kalan çalışma — 0.13.0 adayı
+# Güncel yön ve kalan çalışma — 0.13.0
 
-0.13 adayı 146 anlatım, 118 ayrıntılı rehber, 146 kopya kağıdı ve 1.260 özgün
+0.13 sürümü 146 anlatım, 118 ayrıntılı rehber, 146 kopya kağıdı ve 1.260 özgün
 soru içerir. Daha önceki 13 anlatımın soru açığı 130 soruyla kapandı; bu ekleme
 yeni konu anlatımı sayılmaz. Hazır 146 anlatımın tamamında ve doğrulanmış
 sıranın ilk 138/479 başlığında hem öğretim hem soru çalışması vardır.
 0.13’te üç sistem onayı, Electron’da kanıtlanan taslak değiştirme kapanmasının
-ardından erişilebilir HTML onayına taşındı. Son tam tarayıcı, paket ve yayın kabulü sürer; kaynak kontrolü veya test
-listeleme, çalışan sürüm kabulü değildir. Sonuçlar FORGE ve QA’da ayrı tutulur.
+ardından erişilebilir HTML onayına taşındı. Tam uzak tarayıcı, paket ve yayın
+kabulü geçti; kaynak kontrolü veya test listeleme tek başına çalışan sürüm
+kabulü sayılmaz. Sonuçlar FORGE ve QA’da ayrı tutulur.
 
 Öncelik çalışma sırasındaki 139. başlık **Su, Hayat ve Çevre Kimyası /
 detail-167** ile devam etmektir. Her başlıkta gerçekten okunan MEBİ/OGM/Aurelia

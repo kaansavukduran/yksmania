@@ -1,4 +1,48 @@
-# 0.13.0 yerel kabulü — uzak yayın doğrulaması bekleniyor
+# 0.13.0 yayını doğrulandı
+
+Kaynak `ba8f553cbf8dff2dae985921096378ccd5908503`. CI [43715126173](https://github.com/kaansavukduran/yksmania/actions/runs/43715126173)
+dört iş PASS: 355 birim, 303/303 tarayıcı; gerçek Windows/Linux paketleriyle
+çevrimdışı/yeniden açılış/onay kabulü; Android 0.13.0 (sürüm kodu 21), v2 imza doğrulaması.
+Canlı Vercel [43715186079](https://github.com/kaansavukduran/yksmania/actions/runs/43715186079)
+303/303 PASS. Pages [43715151603](https://github.com/kaansavukduran/yksmania/actions/runs/43715151603)
+derleme/dağıtım/canlı kabulü üç iş PASS; 13 korunan model ailesi ve iki yeni
+soru rotası ilk kez çevrimdışı açıldı, gerçek model/yanıt/açıklama/reload korundu;
+renderer 0. Her iki HTTPS kökeninde index/sw/version normal TLS ile yerel
+karşılıklarına byte eşit. Kökenler ayrı ilerleme saklar.
+
+Release [43716979510](https://github.com/kaansavukduran/yksmania/actions/runs/43716979510)
+PASS; [v0.13.0-alpha.1](https://github.com/kaansavukduran/yksmania/releases/tag/v0.13.0-alpha.1) sekiz dosyayla yayımlandı, taslak değil.
+Tag ve verified-run kaynak SHA’sı yukarıdaki commit’tir. SHA256SUMS.txt yedi dosya
+listeler; indirilen verified-run/Android-verification dosyalarının iki hash’i
+eşleşir. Android paket kimliği com.fragaria.yksmania, sürüm 0.13.0 (sürüm kodu 21),
+v2 imza PASS. Beş büyük paket dosyası ayrıca yerelde indirilip hash’lenmedi.
+
+Bu sürüm yeni anlatım ünitesi eklemez: 13 mevcut anlatıma 130 özgün soru;
+toplam 146 anlatım/118 rehber/146 kağıt/1.260 soru, ilk 138/479 hem anlatım hem
+soru hazır. Hazır 146 anlatımın tamamı bağımsız soruludur. Eski 1.130 sorunun tam
+kayıtları ve 147 dersin soru dışındaki bütün alanları korunur. Bütün arşiv veya
+479 başlığın tamamlandığı iddiası yoktur.
+
+Yerel tam koşu 302/303, eski sorusuz cebir arama beklentisinden FAIL idi;
+onarım ve dört onay kabulü birlikte 5/5 PASS. Son uzak 303/303 sonuçları aynı
+onarılmış kaynakta PASS; yerel tam 303 koşusu yapılmış sayılmaz. İlk Pages uzak
+FAIL ve yeniden üretilemeyen eski yerel PASS kaydı aşağıda korunur. Düzeltilmiş
+HTML onay betiği kaynak tekrar derlenmiş prefix’te ve canlı Pages’te geçti.
+
+Son gerçek 0.12→0.13 web güncellemesi bütün eski state/doküman/kataloğu,
+5/5 oturumu, üç özgün tekrarı, kontrol edilmiş yanlış taslağı, notları ve 870 bayt
+sentetik PDF’yi korudu; XP 25→25. Altı KORUNAN 0.12 model ilk kez offline açılıp
+reload kaldı; bunlar yeni 0.13 üniteleri değildir. Aynı süreç/profil geliştirme
+Electron’da iptal→tam kayıt aynılığı→açık onay→yeni soru→offline/reload PASS.
+
+Fiziksel Android, temiz Windows kurulumu, portable taşıma ve iki native sürüm
+arasında veri koruyan yükseltme NOT TESTED. Windows dosyaları Authenticode
+imzasız, Android paket debug imzalı alpha’dır. Önceki kişisel dosyalar görünmeden
+korunur; öğrenci hiçbir ders PDF’si veya kaynak yüklemez.
+
+---
+
+# 0.13.0 tarihsel yerel kabul kaydı
 
 130 özgün soru, anlatımı önceden hazır 13 başlığa bağlandı. Yeni toplam 1.260
 sorudur. Hazır 146 anlatımın tamamı ve ilk 138 sıralı başlık bağımsız sorulara

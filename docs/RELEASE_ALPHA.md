@@ -1,52 +1,40 @@
-YKSMania 0.13.0 alpha adayı
+YKSMania 0.13.0 alpha 1
 
-Bu belge yayın hazırlığıdır. 0.13.0 için uzak CI, canlı uygulama ve kurulum
-paketi kabulü henüz tamamlanmış sayılmaz; güncel durum FORGE.md ve docs/QA.md’dedir.
+Önceden anlatımı hazır 13 başlığa 130 açıklamalı özgün soru eklendi: sayı
+basamakları, bölme/bölünebilme, EBOB–EKOK, denklemler, eşitsizlikler, katman
+elektron dizilimi ve tarihin ilk yedi başlığı. Yeni anlatım veya model eklenmedi.
+Toplam 146 anlatım, 118 rehber, 146 kopya kağıdı ve 1.260 soru. Hazır 146 anlatımın
+tamamı ve sıralı ilk 138/479 başlık anlatım+soru içerir; bütün arşiv tamamlanmadı.
+Önceki 1.130 soru, ders gövdeleri ve kişisel kayıtlar korunur. Öğrenci kaynak yüklemez.
 
-Anlatımı önceden hazır 13 başlığa 130 açıklamalı özgün soru eklendi:
-sayı basamakları, bölme/bölünebilme, EBOB–EKOK, birinci dereceden denklemler,
-basit eşitsizlikler, katman elektron dizilimi ve tarihin ilk yedi başlığı.
-Yeni anlatım veya model eklenmedi; mevcut öğretim ve kimlikler korundu.
+Yarım çalışmayı değiştirme, ilerleme yedeği geri yükleme ve oturum geri alma
+uygulama içi açık onay kullanır. Vazgeç/Escape kayıtları korur; çift tıklama
+kilidi ve kalıcı kayıt öncesi onay vardır. Aynı profil masaüstü/offline/reload
+ve gerçek 0.12→0.13 web yükseltmesi eski kayıtları, notları ve XP 25’i korudu.
 
-Toplam 146 anlatım, 118 ayrıntılı rehber, 146 kopya kağıdı ve 1.260 soru vardır.
-Hazır 146 anlatımın tamamında, sıradaki ilk 138/479 başlıkta hem anlatım hem
-soru çalışması bulunur. Önceki 1.130 sorunun tam kayıtları korunur. Öğrenci
-PDF veya kaynak yüklemez; gerekli pasaj kartta kökten önce sunulur.
+Kaynak ba8f553cbf8dff2dae985921096378ccd5908503; CI 43715126173 dört iş PASS: 355 birim/303 tarayıcı,
+Windows/Linux gerçek paketli kabulü, Android 0.13.0 (sürüm kodu 21), v2 imza.
+Canlı Vercel 43715186079: 303/303 PASS; Pages 43715151603: üç iş PASS.
+Release 43716979510: sekiz dosya; tag/verified-run aynı kaynağa bağlı.
+SHA256SUMS.txt yedi dosya listeler; iki indirilen kanıt dosyasının hash’i eşleşir.
+Beş büyük paket dosyası ayrıca yerelde indirilip hash’lenmedi. Yerel 302/303 ve eski
+arama beklentisinin 5/5 onarımı, son uzak 303/303 sonuçlarından ayrı kayıttır.
 
-TYT karma 105 / AYT karma 25 ve 11 branş kısa pratik setleridir; tam 120/80 resmî
-dağılım değildir. Yeni denemede mevcut havuzdan seçim çeşitlenir; devam eden
-ve tamamlanan deneme tam soru/seçenek/cevap kaydıyla sabit kalır. Küçük havuzda
-sorular tekrar gelebilir. Bütün 479 başlık veya bütün kaynak arşivi tamamlanmadı.
-
-130 yeni soru bağımsız içerik incelemesinden geçti.
-C2 ile birleştirilmiş kaynakta tip kontrolü, derleme ve 355 birim testi geçti.
-Önceki adayda 32 temel soru tarayıcı vakası ve Pages/Electron ilk soru rotaları
-geçti. Aynı profil taslak değişiminde saptanan native onay kapanması (YKS-067)
-son kaynakta ortak HTML onayıyla giderildi. Dört yeni ve dört eski ilgili
-browser vakası 8/8 PASS; varsayılan iptal odağı, Escape, kayıt koruma ve büyük
-yazı denetlendi. Yerel tam browser koşusu 302/303 geçti; tek eski arama beklentisi yeni cebir
-sorularına göre onarıldı ve onay vakalarıyla birlikte 5/5 geçti. Yerel tam
-303/303 iddiası yoktur. Son Pages ve aynı profil Electron iptal/onay/offline
-reload kabulü PASS. Son derlemeyle 0.12→0.13 gerçek web güncellemesi bütün
-eski kayıtları ve XP25’i korudu; korunan altı 0.12 model ilk kez offline açıldı.
-Uzak CI ve yeni paket/yayın sonuçları ayrıca kaydedilecektir.
-Kaynak sayfa sınırları docs/SOURCE_REVIEW.md’dedir.
+TYT karma 105, AYT karma 25 ve 11 branş kısa pratik setidir; tam 120/80 resmî
+dağılım değildir. Yeni deneme seçimi mevcut havuzdan çeşitlenir; başlamış ve
+bitmiş denemenin tam soruları sabitlenir. Küçük havuzda sorular tekrar gelebilir.
 
 Web: https://yksmania.vercel.app
-GitHub Pages: https://kaansavukduran.github.io/yksmania/
-İki adres ayrı kökenlerde ayrı ilerleme saklar; Ayarlar’daki kişisel ilerleme
-yedeğiyle aktarım yapılabilir. Web ilk çevrimiçi hazırlıktan sonra, native
-arayüz yerel dosyalardan çalışır.
+Pages: https://kaansavukduran.github.io/yksmania/
+İki adres ayrı ilerleme saklar; kişisel JSON yedeğiyle aktarım yapılabilir.
+Web ilk çevrimiçi hazırlıktan sonra, native arayüz yerel dosyalardan çalışır.
 
-Paketler yayımlandığında cihazına uygun dosyayı seç:
 Windows Setup.exe kurulum, Portable.exe doğrudan çalıştırma içindir; x64 ve
 Authenticode imzasızdır. Linux AppImage’e çalıştırma izni ver; DEB Debian/Ubuntu
-içindir. Android APK debug imzalı alpha test paketidir; kaynak sürümü 0.13.0,
-versionCode 21, minimum API 24 ve güncel WebView gerekir. Debug anahtarı derlemeler
-arasında değişebilir; geçişten önce kişisel ilerleme yedeğini dışa aktar.
+içindir. Android APK debug imzalı alpha test paketidir: 0.13.0/code 21, minimum
+API 24 ve güncel WebView. Debug anahtarı sürümler arasında değişebilir;
+geçişten önce kişisel ilerleme yedeğini dışa aktar.
 
 Fiziksel Android, temiz Windows kurulumu, portable taşıma ve iki native sürüm
-arasında veri koruyan yükseltme ayrıca doğrulanmalıdır. verified-run.json
-kaynak koşusunu, SHA256SUMS.txt yayımlanan dosyaların bütünlüğünü gösterir;
-bu kanıtlar yeni 0.13 yayını için henüz üretilmiş sayılmaz. Önceki sürümlerin
-başarıları bu adayın kabulü yerine geçmez.
+arasında veri koruyan yükseltme NOT TESTED. Kaynak okuma sınırları
+SOURCE_REVIEW’da; bütün kabul, ilk başarısız koşular ve kalan sınırlar FORGE/QA’da.
