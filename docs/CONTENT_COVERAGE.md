@@ -1,8 +1,8 @@
-# İçerik kapsamı — 0.16.0 adayı
+# İçerik kapsamı — yayımlanmış 0.16.0
 
-Çalışma sırasının 199–258. başlıkları için iki kaynak paketi tek 60 ünitelik güncellemede birleştirildi. Son kaynak kontrolü, 610 birim ve derleme geçti. Tam ürün, çevrimdışı yükseltme ve uzak yayın kapıları henüz tamamlanmadı; aşağıdaki sayılar adayın gerçek içerik sayımıdır.
+Çalışma sırasının 199–258. başlıkları için iki kaynak paketi tek 60 ünitelik güncellemede birleştirildi. 610 birim, 548 tarayıcı, paketli Windows/Linux ve Pages kabulüyle yayımlandı. Aşağıdaki sayılar yayımlanmış C7 kaynak sayımıdır; bütün arşivin tamamlandığı iddiası değildir.
 
-| Ölçüm                                              | Adaydaki gerçek sayı                                  |
+| Ölçüm                                              | Yayındaki gerçek sayı                                  |
 | -------------------------------------------------- | ----------------------------------------------------- |
 | Ayrıntılı çalışma sırası                           | 479 başlık; ilk 258 anlatım ve bağımsız soruyla hazır |
 | Anlatım / ayrıntılı rehber / yerleşik kopya kağıdı | 264 /236 /264                                         |
