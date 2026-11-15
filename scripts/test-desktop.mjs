@@ -957,86 +957,140 @@ try {
     theoryReviewCompletions: state.theoryReviewCompletions,
     unlocked: state.unlocked,
   });
-  const learningBeforeFoundation = foundationLearning(await foundationState());
-  for (const item of [
-    {
-      id: "sayi-basamaklari",
-      title: "Sayı basamakları: rakamdan koşullu denkleme",
-      prompt:
-        "Onluk sayı sisteminde 64027 sayısındaki 4 rakamının basamak değeri kaçtır?",
-      correct: "4000",
-      answer: 0,
-    },
-    {
-      id: "tarih-zaman",
-      title: "Tarih ve zaman: kanıtı sıraya koy",
-      prompt:
-        "İkinci ekibin çalışmasını doğrudan tarih araştırması yapan özellik hangisidir?",
-      correct:
-        "Doğa olayının insan toplulukları üzerindeki etkisini kaynaklarla incelemesi.",
-      answer: 0,
-      passage:
-        "Bir araştırma ekibi bir depremin dalga hızını ölçüyor. Başka bir ekip aynı depremden sonra kasabanın boşalmasını, vergi kayıtlarını ve yeniden yerleşme kararlarını inceliyor.",
-    },
-  ]) {
+  const beforeFoundation = await foundationState();
+  expect(beforeFoundation.draft).toBeNull();
+  const learningBeforeFoundation = foundationLearning(beforeFoundation);
+  const openFoundation = async (title) => {
     await navigate("Sorular");
     await page.getByRole("button", { name: "TYT", exact: true }).click();
     await page
       .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
-      .fill(item.title);
-    const entry = page.locator(".ready-topic").filter({ hasText: item.title });
+      .fill(title);
+    const entry = page.locator(".ready-topic").filter({ hasText: title });
     await expect(entry).toHaveCount(1);
-    // Replacing a partial question draft is an explicit user-visible decision.
-    if ((await foundationState()).draft)
-      page.once("dialog", (dialog) => dialog.accept());
     await entry.click();
-    await expect(page.locator(".question-panel")).toBeVisible();
-    await expect(page.locator(".question-panel h2")).toHaveText(item.prompt);
-    await expect(page.locator(".question-meta")).toContainText("Soru 1 / 10");
-    await expect(page.locator(".answer")).toHaveCount(5);
-    await expect(page.locator(".answer").nth(item.answer)).toContainText(
-      item.correct,
-    );
-    if (item.passage) {
-      await expect(page.locator(".question-passage")).toHaveText(item.passage);
-      expect(
-        await page.locator(".question-panel").evaluate((element) => {
-          const passage = element.querySelector(".question-passage");
-          const stem = element.querySelector("h2");
-          return !!(
-            passage.compareDocumentPosition(stem) &
-            Node.DOCUMENT_POSITION_FOLLOWING
-          );
-        }),
-      ).toBe(true);
-    }
-    await page.locator(".answer").nth(item.answer).click();
-    await page
-      .getByRole("button", { name: "Cevabı kontrol et", exact: true })
-      .click();
-    await expect(page.locator(".feedback.correct strong")).toHaveText("Doğru");
-    const feedback = await page.locator(".feedback p").innerText();
-    await expect(page.locator(".save-status")).toContainText(
-      "Bu cihazda kaydedildi",
-    );
-    await expect
-      .poll(async () => (await foundationState()).draft?.checked)
-      .toBe(true);
-    const beforeReload = await foundationState();
-    expect(beforeReload.draft.lessonId).toBe(item.id);
-    expect(beforeReload.draft.responses).toHaveLength(1);
-    expect(beforeReload.draft.responses[0].questionId).toMatch(/^f013-/);
-    expect(beforeReload.draft.responses[0].correct).toBe(true);
-    expect(foundationLearning(beforeReload)).toEqual(learningBeforeFoundation);
-    await page.reload();
-    await expect(page.locator(".feedback.correct strong")).toHaveText("Doğru");
-    await expect(page.locator(".feedback p")).toHaveText(feedback);
-    await expect(page.locator(".answer").nth(item.answer)).toBeDisabled();
-    const afterReload = await foundationState();
-    expect(afterReload.draft).toEqual(beforeReload.draft);
-    expect(foundationLearning(afterReload)).toEqual(learningBeforeFoundation);
-    foundationRouteCases.push(item.id);
-  }
+  };
+  // Keep the same real Electron process/profile for both new banks and all old
+  // flows. Cancellation and confirmation use the application dialog, without a
+  // native dialog stub or an IDB seed.
+  await openFoundation("Sayı basamakları: rakamdan koşullu denkleme");
+  await expect(page.locator(".question-panel h2")).toHaveText(
+    "Onluk sayı sisteminde 64027 sayısındaki 4 rakamının basamak değeri kaçtır?",
+  );
+  await expect(page.locator(".answer")).toHaveCount(5);
+  await expect(page.locator(".answer").first()).toContainText("4000");
+  await page
+    .getByRole("textbox", { name: "Notun", exact: true })
+    .fill("Masaüstü notum: rakamın sayı değeri ile basamak değerini ayırırım.");
+  await page.locator(".answer").nth(1).click();
+  await page
+    .getByRole("button", { name: "Cevabı kontrol et", exact: true })
+    .click();
+  await expect(page.locator(".feedback.repair")).toBeVisible();
+  const mathFeedback = await page.locator(".feedback p").innerText();
+  await expect
+    .poll(async () => (await foundationState()).draft?.checked)
+    .toBe(true);
+  const beforeMathReload = await foundationState();
+  expect(beforeMathReload.draft.lessonId).toBe("sayi-basamaklari");
+  expect(beforeMathReload.draft.responses).toHaveLength(1);
+  expect(beforeMathReload.draft.responses[0].correct).toBe(false);
+  expect(foundationLearning(beforeMathReload)).toEqual(
+    learningBeforeFoundation,
+  );
+  await page.reload();
+  await expect(page.locator(".feedback p")).toHaveText(mathFeedback);
+  await expect(page.locator(".answer").nth(1)).toBeDisabled();
+  expect(await foundationState()).toEqual(beforeMathReload);
+  foundationRouteCases.push("sayi-basamaklari");
+  const historyTitle = "Tarih ve zaman: kanıtı sıraya koy";
+  await openFoundation(historyTitle);
+  const replacement = page.getByRole("dialog", {
+    name: "Yarım kalan çalışmayı değiştirelim mi?",
+    exact: true,
+  });
+  await expect(replacement).toBeVisible();
+  await expect(
+    replacement.getByRole("button", { name: "Vazgeç", exact: true }),
+  ).toBeFocused();
+  expect(await foundationState()).toEqual(beforeMathReload);
+  await page.screenshot({
+    path: path.join(profile, "foundation-draft-cancel-dialog.png"),
+  });
+  await replacement
+    .getByRole("button", { name: "Vazgeç", exact: true })
+    .click();
+  await expect(replacement).not.toBeVisible();
+  expect(await foundationState()).toEqual(beforeMathReload);
+  await navigate("Bugün");
+  await page
+    .getByRole("button", { name: "Kaldığın yerden devam et", exact: true })
+    .click();
+  await expect(page.locator(".feedback p")).toHaveText(mathFeedback);
+  await expect(page.locator(".answer").nth(1)).toBeDisabled();
+  await expect(
+    page.getByRole("textbox", { name: "Notun", exact: true }),
+  ).toHaveValue(beforeMathReload.draft.note);
+  await openFoundation(historyTitle);
+  await expect(replacement).toBeVisible();
+  await page.keyboard.press("Escape");
+  await expect(replacement).not.toBeVisible();
+  expect(await foundationState()).toEqual(beforeMathReload);
+  await openFoundation(historyTitle);
+  await expect(replacement).toBeVisible();
+  await replacement
+    .getByRole("button", { name: "Yeni çalışmayı aç", exact: true })
+    .click();
+  await expect(page.locator(".question-panel h2")).toHaveText(
+    "İkinci ekibin çalışmasını doğrudan tarih araştırması yapan özellik hangisidir?",
+  );
+  const foundationPassage =
+    "Bir araştırma ekibi bir depremin dalga hızını ölçüyor. Başka bir ekip aynı depremden sonra kasabanın boşalmasını, vergi kayıtlarını ve yeniden yerleşme kararlarını inceliyor.";
+  await expect(page.locator(".question-passage")).toHaveText(foundationPassage);
+  expect(
+    await page.locator(".question-panel").evaluate((element) => {
+      const text = element.querySelector(".question-passage");
+      return !!(
+        text.compareDocumentPosition(element.querySelector("h2")) &
+        Node.DOCUMENT_POSITION_FOLLOWING
+      );
+    }),
+  ).toBe(true);
+  await expect
+    .poll(async () => (await foundationState()).draft?.lessonId)
+    .toBe("tarih-zaman");
+  const replaced = await foundationState();
+  const { draft: oldDraft, ...oldRest } = beforeMathReload;
+  const { draft: newDraft, ...newRest } = replaced;
+  expect(newRest).toEqual(oldRest);
+  expect(newDraft).toMatchObject({
+    lessonId: "tarih-zaman",
+    index: 0,
+    selected: null,
+    checked: false,
+    responses: [],
+  });
+  await page.locator(".answer").first().click();
+  await page
+    .getByRole("button", { name: "Cevabı kontrol et", exact: true })
+    .click();
+  await expect(page.locator(".feedback.correct strong")).toHaveText("Doğru");
+  await expect
+    .poll(async () => (await foundationState()).draft?.checked)
+    .toBe(true);
+  const savedHistory = await foundationState();
+  expect(savedHistory.draft.responses[0].questionId).toMatch(/^f013-/);
+  expect(foundationLearning(savedHistory)).toEqual(learningBeforeFoundation);
+  const historyFeedback = await page.locator(".feedback p").innerText();
+  await page.reload();
+  await expect(page.locator(".question-passage")).toHaveText(foundationPassage);
+  await expect(page.locator(".feedback p")).toHaveText(historyFeedback);
+  await expect(page.locator(".answer").first()).toBeDisabled();
+  expect(await foundationState()).toEqual(savedHistory);
+  await page.screenshot({
+    path: path.join(profile, "foundation-draft-replaced-offline.png"),
+  });
+  foundationRouteCases.push("tarih-zaman");
 
   expect(errors).toEqual([]);
   console.log(
@@ -1063,6 +1117,7 @@ try {
       dailyCompletionAndScore: "PASS",
       paragraphPassageOfflineAndRestart: "PASS",
       foundationQuestionRoutesOfflineReload: foundationRouteCases,
+      draftReplacementCancelConfirmOffline: "PASS",
       rendererErrors: errors.length,
     }),
   );
