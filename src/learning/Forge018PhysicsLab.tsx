@@ -562,7 +562,7 @@ function ImpulseLab() {
   return (
     <Frame
       id={id}
-      title="Alanı momentumla birleştir"
+      title="İtme ve çarpışma"
       intro="Kuvvetler net kuvvettir; kütle sabit, gözlemci eylemsizdir. İkinci görünüm aynı doğru üzerinde yaklaşan iki cismin anlık çarpışma bilançosudur."
     >
       <Select
@@ -1405,7 +1405,7 @@ function CentreLab() {
       >
         <p>
           {a.centre
-            ? `Kalan x merkezi ${fmt(a.centre.x)} m; her hücre 1 kg ile ağırlıklandırıldı.`
+            ? `Kalan x merkezi ${fmt(a.centre.x)} m; her hücre 1 kg alındı.`
             : "Toplam kütle sıfır; merkez oranı tanımlanamaz."}
         </p>
       </Compare>

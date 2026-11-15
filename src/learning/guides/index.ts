@@ -1,3 +1,12 @@
+import { forge019ChemistryGuideExtensions } from "../forge019Chemistry";
+import { forge019PhysicsGuideExtensions } from "../forge019Physics";
+import { forge019TurkishGuideExtensions } from "../forge019Turkish";
+import { forge019BiologyGuides } from "../forge019Biology";
+import { forge019ChemistryGuides } from "../forge019Chemistry";
+import { forge019PhysicsGuides } from "../forge019Physics";
+import { forge019GeographyGuides } from "../forge019Geography";
+import { forge019TurkishGuides } from "../forge019Turkish";
+import { forge019MathGuides } from "../forge019Math";
 import { forge018BiologyGuides } from "../forge018Biology";
 import { forge018ChemistryGuides } from "../forge018Chemistry";
 import { forge018PhysicsGuides } from "../forge018Physics";
@@ -75,6 +84,12 @@ import { shellsGuide } from "./shells";
 import { paragraphGuide } from "./paragraph";
 export const lessonGuides = new Map(
   [
+    ...forge019BiologyGuides,
+    ...forge019ChemistryGuides,
+    ...forge019PhysicsGuides,
+    ...forge019GeographyGuides,
+    ...forge019TurkishGuides,
+    ...forge019MathGuides,
     ...forge018BiologyGuides,
     ...forge018ChemistryGuides,
     ...forge018PhysicsGuides,
@@ -159,3 +174,20 @@ export const lessonGuides = new Map(
     paragraphGuide,
   ].map((guide) => [guide.id, guide]),
 );
+
+// Extend existing lessons without replacing their teaching or saved question IDs.
+for (const extension of [
+  ...forge019ChemistryGuideExtensions,
+  ...forge019PhysicsGuideExtensions,
+  ...forge019TurkishGuideExtensions,
+]) {
+  const original = lessonGuides.get(extension.id);
+  if (!original) throw Error("Missing guide for extension: " + extension.id);
+  lessonGuides.set(extension.id, {
+    ...original,
+    sections: [...original.sections, ...extension.sections],
+    examples: [...original.examples, ...extension.examples],
+    recall: [...original.recall, ...extension.recall],
+    source: original.source + "\n" + extension.source,
+  });
+}

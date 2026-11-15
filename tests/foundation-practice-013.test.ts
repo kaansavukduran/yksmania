@@ -1,5 +1,7 @@
+import retainedCatalogue from "./fixtures/retained-exam-catalogue-016.json";
 import { expect, it } from "vitest";
 import acceptedQuestions from "./fixtures/0.12.0-questions.json";
+import { publishedQuestion } from "./helpers/publishedQuestion";
 import { lessons, lessonById } from "../src/domain/content";
 import { studyTopics, topicLessons } from "../src/domain/studyPlan";
 import { createHash } from "node:crypto";
@@ -18,7 +20,7 @@ it("preserves every field of all 1130 accepted questions while retaining the 130
   expect(all.length).toBeGreaterThanOrEqual(1260);
   expect(byId.size).toBe(all.length);
   for (const old of acceptedQuestions)
-    expect(byId.get(old.id), old.id).toEqual(old);
+    expect(byId.get(old.id), old.id).toEqual(publishedQuestion(old));
   const newQuestions = foundation013QuestionSets.flatMap((p) => p.questions);
   expect(newQuestions).toHaveLength(130);
   expect(new Set(newQuestions.map((q) => q.id)).size).toBe(130);
@@ -103,7 +105,10 @@ it("makes every prepared theory and the first 138 ordered topics independently p
   }
   // Retain foundation coverage; geography now contributes a branch and five TYT items.
   const catalogue = examCatalogue();
-  expect(catalogue).toHaveLength(14);
+  expect(catalogue.map((e) => e.id)).toEqual(
+    expect.arrayContaining(retainedCatalogue),
+  );
+  expect(catalogue.length).toBeGreaterThanOrEqual(14);
   expect(catalogue.find((e) => e.id === "mixed-tyt")!.items).toHaveLength(110);
   expect(
     catalogue.find((e) => e.id === "mixed-ayt")!.items.length,

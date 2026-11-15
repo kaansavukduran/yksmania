@@ -1,3 +1,4 @@
+import { publishedQuestion } from "./helpers/publishedQuestion";
 import { expect, it } from "vitest";
 import oldQuestions from "./fixtures/0.11.0-questions.json";
 import { lessons } from "../src/domain/content";
@@ -13,7 +14,7 @@ it("preserves all 800 published question records while adding new unit and found
   expect(oldQuestions).toHaveLength(800);
   expect(current.length).toBeGreaterThanOrEqual(1130);
   expect(byId.size).toBe(current.length);
-  for (const q of oldQuestions) expect(byId.get(q.id), q.id).toEqual(q);
+  for (const q of oldQuestions) expect(byId.get(q.id), q.id).toEqual(publishedQuestion(q));
   for (const q of current) expect(questionContentIssues(q), q.id).toEqual([]);
 });
 

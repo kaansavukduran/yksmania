@@ -1,3 +1,4 @@
+import { publishedQuestion } from "./helpers/publishedQuestion";
 import { expect, it } from "vitest";
 import oldQuestions from "./fixtures/0.10.0-questions.json";
 import { lessons } from "../src/domain/content";
@@ -13,7 +14,7 @@ it("preserves all 500 earlier question records and the next 300 authored questio
   expect(oldQuestions).toHaveLength(500);
   expect(current.length).toBeGreaterThanOrEqual(800);
   expect(byId.size).toBe(current.length);
-  for (const q of oldQuestions) expect(byId.get(q.id), q.id).toEqual(q);
+  for (const q of oldQuestions) expect(byId.get(q.id), q.id).toEqual(publishedQuestion(q));
   for (const q of current) expect(questionContentIssues(q), q.id).toEqual([]);
 });
 

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { APP_VERSION } from "./version";
 import {
   BookOpen,
   Files,
@@ -294,7 +295,7 @@ export default function App() {
             <Settings2 size={20} />
             {t("settings")}
           </button>
-          <span className="sidebar-version">0.16.0 alpha</span>
+          <span className="sidebar-version">{APP_VERSION} alpha</span>
         </div>
       </aside>
       {menu && (
