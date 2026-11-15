@@ -1,3 +1,9 @@
+import { forge014MathTopics } from "./forge014Math";
+import { forge014PhysicsTopics } from "./forge014Physics";
+import { forge014ChemistryTopics } from "./forge014Chemistry";
+import { forge014BiologyTopics } from "./forge014Biology";
+import { forge014GeographyTopics } from "./forge014Geography";
+import { forge014TurkishTopics } from "./forge014Turkish";
 import { forge012MathTopics } from "./forge012Math";
 import { forge012PhysicsTopics } from "./forge012Physics";
 import { forge012ChemistryTopics } from "./forge012Chemistry";
@@ -64,6 +70,20 @@ const Algebra = lazy(() => import("./AlgebraExplorer"));
 const Shells = lazy(() => import("./ElectronShellExplorer"));
 const Language = lazy(() => import("./TurkishLanguageExplorer"));
 const Factorization = lazy(() => import("./FactorizationExplorer"));
+const Forge014Math = lazy(() => import("./Forge014MathLab"));
+const Forge014Physics = lazy(() => import("./Forge014PhysicsLab"));
+const Forge014Chemistry = lazy(() => import("./Forge014ChemistryLab"));
+const Forge014Biology = lazy(() => import("./Forge014BiologyLab"));
+const Forge014Geography = lazy(() => import("./Forge014GeographyLab"));
+const Forge014Turkish = lazy(() => import("./Forge014TurkishLab"));
+const source014Labs: { topics: Record<string,string>; Component: ComponentType<{lessonId:string}> }[] = [
+  { topics: forge014MathTopics, Component: Forge014Math },
+  { topics: forge014PhysicsTopics, Component: Forge014Physics },
+  { topics: forge014ChemistryTopics, Component: Forge014Chemistry },
+  { topics: forge014BiologyTopics, Component: Forge014Biology },
+  { topics: forge014GeographyTopics, Component: Forge014Geography },
+  { topics: forge014TurkishTopics, Component: Forge014Turkish },
+];
 const continuationLabs: {
   topics: Record<string, string>;
   Component: ComponentType<{ id: string }>;
@@ -90,12 +110,15 @@ const continuationLabs: {
 ];
 export function VisualLab({ id }: { id: string }) {
   const { t } = useApp();
+  const Source014Lab = source014Labs.find(({topics}) => Object.hasOwn(topics,id))?.Component;
   const ContinuationLab = continuationLabs.find(({ topics }) =>
     Object.hasOwn(topics, id),
   )?.Component;
   return (
     <Suspense fallback={<p role="status">{t("loading")}</p>}>
-      {ContinuationLab ? (
+      {Source014Lab ? (
+        <Source014Lab key={id} lessonId={id} />
+      ) : ContinuationLab ? (
         <ContinuationLab key={id} id={id} />
       ) : id === "dunya-gucu-osmanli" ? (
         <WorldPower />
