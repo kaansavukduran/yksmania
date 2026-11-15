@@ -1,0 +1,174 @@
+.bio012 {
+  margin-block: 1.5rem;
+  padding: clamp(0.8rem, 2vw, 1.5rem);
+  background: var(--surface);
+  border-block: 1px solid var(--border);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.bio012 h3 {
+  margin-block: 0 1rem;
+}
+.bio012 p {
+  line-height: 1.7;
+}
+.bio012-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1rem;
+  margin-block: 1.2rem;
+}
+.bio012-controls label,
+.bio012-prediction {
+  display: grid;
+  gap: 0.6rem;
+  min-width: 0;
+}
+.bio012-current-choice {
+  display: block;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  line-height: 1.6;
+  color: var(--text);
+}
+.bio012 select,
+.bio012 textarea {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.bio012 input[type="range"] {
+  width: 100%;
+  min-width: 0;
+  margin-inline: 0;
+}
+.bio012 output {
+  font-variant-numeric: tabular-nums;
+}
+.bio012-check {
+  display: flex;
+  gap: 0.65rem;
+  align-items: flex-start;
+  margin-block: 0.8rem;
+}
+.bio012-check input {
+  flex: 0 0 auto;
+  margin-top: 0.35rem;
+}
+.bio012-drawing {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin-block: 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: visible;
+}
+.bio012-drawing text {
+  fill: var(--text);
+  font:
+    22px system-ui,
+    sans-serif;
+}
+.bio012-drawing .bio012-phenotype {
+  font-size: 18px;
+}
+.bio012-cell {
+  fill: var(--surface);
+  stroke: var(--border);
+  stroke-width: 3;
+}
+.bio012-maternal {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 7;
+  stroke-linecap: round;
+}
+.bio012-paternal {
+  fill: none;
+  stroke: var(--mint);
+  stroke-width: 7;
+  stroke-linecap: round;
+}
+.bio012-connection {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 3;
+}
+.bio012-bar-parent {
+  fill: var(--accent);
+}
+.bio012-bar-recombinant {
+  fill: var(--mint);
+}
+.bio012-affected {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 3;
+}
+.bio012-clear {
+  fill: var(--bg);
+  stroke: var(--text);
+  stroke-width: 3;
+}
+.bio012-result,
+.bio012-feedback {
+  padding: 1rem;
+  border-inline-start: 3px solid var(--mint);
+  background: var(--bg);
+  margin-block: 1rem;
+  min-width: 0;
+}
+.bio012-result ul {
+  padding-inline-start: 1.3rem;
+}
+.bio012-result li {
+  margin-block: 0.6rem;
+}
+.bio012-prediction {
+  padding-block: 1rem;
+  border-top: 1px solid var(--border);
+}
+.bio012-prediction button {
+  justify-self: start;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  min-height: 44px;
+}
+.bio012-pedigree-actions {
+  display: grid;
+  gap: 0.4rem;
+}
+.bio012-evidence {
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+@media (max-width: 440px) {
+  .bio012 {
+    /* The lesson already supplies the outer gutter. Preserve room for the
+       selected 45px text instead of nesting another font-scaled gutter. */
+    padding: 0.75rem 6px;
+  }
+  .bio012-controls {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .bio012-result,
+  .bio012-feedback {
+    padding: 0.75rem 6px;
+  }
+  .bio012-prediction button {
+    width: 100%;
+    padding-inline: 6px;
+    gap: 6px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bio012 * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

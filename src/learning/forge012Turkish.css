@@ -1,0 +1,177 @@
+.grammar012-lab {
+  min-width: 0;
+  max-width: 100%;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+.grammar012-lab h3 {
+  margin-top: 0;
+}
+.grammar012-lab label {
+  display: block;
+  margin-block: 0.7em 0.3em;
+}
+.grammar012-lab select,
+.grammar012-lab textarea {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  font: inherit;
+}
+.grammar012-lab select {
+  min-height: 44px;
+}
+.grammar012-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7em;
+  margin-block: 1em;
+}
+.grammar012-lab button {
+  min-width: 0;
+  max-width: 100%;
+  min-height: 44px;
+  white-space: normal;
+  line-height: 1.5;
+  padding: 0.6em 0.7em;
+}
+.grammar012-lab button[aria-pressed="true"] {
+  border-color: var(--accent);
+}
+.grammar012-model {
+  min-width: 0;
+  margin-block: 1.2em;
+  padding-block: 1em;
+  border-block: 1px solid var(--border);
+}
+.grammar012-sentence {
+  font-size: 1.1em;
+  font-weight: 650;
+  margin-block: 0 1em;
+}
+.grammar012-parts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 8em), 1fr));
+  gap: 0.6em;
+  min-width: 0;
+}
+.grammar012-parts > div {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 0.4em;
+  padding: 0.65em;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+.grammar012-parts strong {
+  color: var(--accent);
+}
+.grammar012-parts span {
+  font-size: 0.9em;
+}
+.grammar012-model svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  min-width: 0;
+  color: var(--text);
+  margin-block: 0.6em;
+}
+.grammar012-timeline {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.4em;
+  min-width: 0;
+  margin-block: 0.5em;
+}
+.grammar012-timeline > span {
+  min-width: 0;
+  border-top: 3px solid var(--border);
+  padding: 0.6em 0.2em;
+  font-size: 0.85em;
+  text-align: center;
+}
+.grammar012-timeline > span[data-active="true"] {
+  border-color: var(--accent);
+  background: var(--surface);
+}
+.grammar012-timeline strong {
+  display: block;
+  font-size: 0.85em;
+}
+.grammar012-evidence {
+  padding-left: 1.2em;
+  margin-bottom: 0;
+}
+.grammar012-result {
+  min-width: 0;
+  border-left: 3px solid var(--accent);
+  padding: 0.6em 0.8em;
+  margin-block: 1em;
+  background: var(--surface);
+}
+.grammar012-result p {
+  margin-bottom: 0.2em;
+}
+.grammar012-lab fieldset {
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.75em;
+  margin-block: 1.2em;
+}
+.grammar012-lab legend {
+  max-width: 100%;
+  padding-inline: 0.3em;
+  overflow-wrap: anywhere;
+}
+.grammar012-feedback {
+  min-width: 0;
+  margin-block: 1em;
+  padding: 0.65em;
+  border: 1px solid var(--mint);
+  border-radius: 8px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .grammar012-model circle {
+    transition:
+      r 0.18s ease,
+      stroke 0.18s ease;
+  }
+  .grammar012-timeline > span {
+    transition: border-color 0.18s ease;
+  }
+}
+@media (max-width: 460px) {
+  .grammar012-timeline {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  /* The lesson already supplies its outer gutter. Avoid narrowing 45px text
+     through another pair of nested, font-relative horizontal paddings. */
+  .grammar012-lab fieldset {
+    margin-inline: 0;
+    padding: 0.6em 0;
+    border-inline: 0;
+    border-radius: 0;
+  }
+  .grammar012-feedback {
+    padding-inline: 6px;
+    border-inline: 0;
+    border-radius: 0;
+  }
+  .grammar012-lab button {
+    padding-inline: 6px;
+    gap: 6px;
+  }
+  .grammar012-lab fieldset > button {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .grammar012-parts {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

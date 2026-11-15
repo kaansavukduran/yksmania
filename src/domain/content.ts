@@ -1,3 +1,10 @@
+import { foundationQuestionsByLesson } from "../learning/forge012FoundationQuestions";
+import { forge012MathLessons } from "../learning/forge012Math";
+import { forge012PhysicsLessons } from "../learning/forge012Physics";
+import { forge012ChemistryLessons } from "../learning/forge012Chemistry";
+import { forge012BiologyLessons } from "../learning/forge012Biology";
+import { forge012TurkishLessons } from "../learning/forge012Turkish";
+import { forge012HistoryLessons } from "../learning/forge012History";
 import { forge011MathLessons } from "../learning/forge011Math";
 import { forge011PhysicsLessons } from "../learning/forge011Physics";
 import { forge011ChemistryLessons } from "../learning/forge011Chemistry";
@@ -840,6 +847,12 @@ const baseLessons: Lesson[] = [
   chemicalSpeciesLesson,
   heatTemperatureLesson,
   ...ionicLessons,
+  ...forge012MathLessons,
+  ...forge012PhysicsLessons,
+  ...forge012ChemistryLessons,
+  ...forge012BiologyLessons,
+  ...forge012TurkishLessons,
+  ...forge012HistoryLessons,
   ...forge011MathLessons,
   ...forge011PhysicsLessons,
   ...forge011ChemistryLessons,
@@ -864,6 +877,7 @@ export const lessons: Lesson[] = baseLessons.map((lesson) => {
         lesson);
   return {
     ...expanded,
+    questions: foundationQuestionsByLesson[expanded.id] ?? expanded.questions,
     minutes: lessonGuides.get(expanded.id)?.minutes ?? expanded.minutes,
   };
 });

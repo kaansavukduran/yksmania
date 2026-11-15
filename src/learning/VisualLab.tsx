@@ -1,3 +1,9 @@
+import { forge012MathTopics } from "./forge012Math";
+import { forge012PhysicsTopics } from "./forge012Physics";
+import { forge012ChemistryTopics } from "./forge012Chemistry";
+import { forge012BiologyTopics } from "./forge012Biology";
+import { forge012TurkishTopics } from "./forge012Turkish";
+import { forge012HistoryTopics } from "./forge012History";
 import { forge011MathTopics } from "./forge011Math";
 import { forge011PhysicsTopics } from "./forge011Physics";
 import { forge011ChemistryTopics } from "./forge011Chemistry";
@@ -26,6 +32,12 @@ const NextChemistry = lazy(() => import("./Forge093ChemistryLab"));
 const NextBiology = lazy(() => import("./Forge093BiologyLab"));
 const NextTurkish = lazy(() => import("./Forge093TurkishLab"));
 const NextHistory = lazy(() => import("./Forge093HistoryLab"));
+const Forge012Math = lazy(() => import("./Forge012MathLab"));
+const Forge012Physics = lazy(() => import("./Forge012PhysicsLab"));
+const Forge012Chemistry = lazy(() => import("./Forge012ChemistryLab"));
+const Forge012Biology = lazy(() => import("./Forge012BiologyLab"));
+const Forge012Turkish = lazy(() => import("./Forge012TurkishLab"));
+const Forge012History = lazy(() => import("./Forge012HistoryLab"));
 const Forge011Math = lazy(() => import("./Forge011MathLab"));
 const Forge011Physics = lazy(() => import("./Forge011PhysicsLab"));
 const Forge011Chemistry = lazy(() => import("./Forge011ChemistryLab"));
@@ -56,6 +68,12 @@ const continuationLabs: {
   topics: Record<string, string>;
   Component: ComponentType<{ id: string }>;
 }[] = [
+  { topics: forge012MathTopics, Component: Forge012Math },
+  { topics: forge012PhysicsTopics, Component: Forge012Physics },
+  { topics: forge012ChemistryTopics, Component: Forge012Chemistry },
+  { topics: forge012BiologyTopics, Component: Forge012Biology },
+  { topics: forge012TurkishTopics, Component: Forge012Turkish },
+  { topics: forge012HistoryTopics, Component: Forge012History },
   { topics: forge011MathTopics, Component: Forge011Math },
   { topics: forge011PhysicsTopics, Component: Forge011Physics },
   { topics: forge011ChemistryTopics, Component: Forge011Chemistry },

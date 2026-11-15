@@ -1,39 +1,45 @@
-# Content coverage, 0.11.0 alpha
+# İçerik kapsamı — 0.12.0 alpha adayı
 
-Current decision: all prepared educational content is built in. No learner PDF,
-source catalogue or booklet import. Separate Theory/Cheatsheets/Questions/Exams.
-116 theory lessons,88 detailed guides,116 native sheets,800 original questions;
-first108/479 ordered headings ready. One additional question-only factorization
-pack does not count as extra theory.120/80full-distribution mocks and entire
-MEB/OGM/private archive conversion are not complete. Current practice is105TYT,
-25numericalAYT and11branches, scaled165/120 or180/80minutes perquestion.
-All500 previously published questions are preserved in full;300 original items added.
-Eight verified official references have eight original native teaching variants;
-no new official question body or twenty-year completeness claim is made.
-Prior imported files remain in storage but source UI is removed. Personal progress
-backup is optional and never needed to supply a lesson. Historical sections below
-are superseded where they describe source imports or inline sheets. Current
-source-page boundaries are in SOURCE_REVIEW.md; test/release evidence inFORGE.md.
+Hazır eğitim içeriği uygulamaya gömülüdür. Konu Anlatımı, Kopya Kağıtları,
+Sorular ve Sınavlar ayrı bölümlerdir. Öğrenci PDF, kaynak kataloğu veya kitapçık
+yüklemez. Önceki kişisel dosyalar depoda korunur; içerik sağlama işi kullanıcıya
+bırakılmaz. Kişisel ilerleme yedeği ders kaynağından ayrı ve isteğe bağlıdır.
 
-These are different measurements. None measures a learner's mastery.
-
-| Layer | Verified content |
+| Düzey | Güncel içerik |
 | --- | --- |
-| Main topic reference | 341 source rows: TYT 201, numerical AYT 140; stable topic IDs retained |
-| Detailed cheat-sheet outline | 479 headings; finer granularity and overlap with the main outline |
-| Interactive teaching | 116 lessons with authored interactions; 88 detailed guides; first 108 ordered headings have theory |
-| Native revision sheets | 116 built-in sheets; reviewed pressure, buoyancy and current sheets supplemented rather than overwritten |
-| Interactive question bank | 800 original Turkish exercises; all 500 previous full question records preserved; no official-item claim |
-| Timed practice | 2 mixed sets and 11 branches; TYT 105 / numerical AYT 25 questions; proportionate times, incomplete official distribution |
-| Private archive inventory | 8,584 PDF file records in 246 folders; about 23.6 GB, before content-hash deduplication |
-| Locally prepared private packs | 143 PDFs / 4,989 pages: 126 cheat sheets, 14 MEBİ-named PDFs and 3 OGM past-question books |
+| Ana konu referansı | 341 kaynak satırı: TYT 201, AYT Sayısal 140; kimlikler korunur |
+| Ayrıntılı çalışma sırası | 479 başlık; kaynak çalışma kitabındaki sıra korunur |
+| Konu anlatımı | 146 anlatım, 118 ayrıntılı rehber; sıradaki ilk 138/479 başlık hazır |
+| Yerleşik kopya kağıdı | 146 kağıt; yeni 30 başlığın bütün anlatım paragrafları ve örnekleri dahil |
+| Soru bankası | 1.130 özgün Türkçe soru; önceki 800 tam kayıt korunur, 300 yeni soru |
+| Zamanlı pratik | 2 karma ve 11 branş; TYT 105 / AYT Sayısal 25, sayıya orantılı süre; tam 120/80 dağılım değil |
+| Önceki arşiv envanteri | 246 klasörde 8.584 PDF kaydı, yaklaşık 23,6 GB; içerik hash’leriyle tekilleştirilmiş sayım değil |
+| Önceki yerel hazırlık paketleri | 143 PDF / 4.989 sayfa: 126 kopya kağıdı, 14 MEBİ adlı PDF, 3 OGM geçmiş soru kitabı; bütün güncel okuma sayfası sayımı değil |
 
-The archive scan followed provider pagination for folders above 100 results. A
-metadata entry is not proof that its pages, individual items, answers, rights,
-syllabus alignment or topic boundaries have been checked. The 341/479 outlines
-were extracted from the relevant workbooks, not invented from memory. Personal
-learning dates, schedules, notes, source Drive IDs and private links are excluded
-from the public topic data. Workbook progress is not imported as learner progress.
+0.12 adayı 109–138. başlıklara 263 bölüm, 123 çözümlü örnek, 128 hatırlama ve
+300 soru ekler. 5 matematik, 5 fizik, 5 kimya, 7 biyoloji, 3 Türkçe, 5 tarih.
+Sonraki 139. başlık Su, Hayat ve Çevre Kimyası/detail-167’dir. 341 ana konu,
+479 ayrıntılı başlık ve hazır anlatım sayısı farklı ölçümlerdir; hiçbiri bir
+öğrencinin ustalığını veya tüm arşivin işlendiğini göstermez. Bir ek soru paketi
+anlatımı yokken fazladan konu anlatımı sayılmaz.
+
+Yeni deneme başlatırken ilgili havuzdan dersler arasında seçim çeşitlendirilir.
+Katalogdaki sayı, kota ve süre korunur. Başlamış veya tamamlanmış deneme tam
+soru/seçenek/anahtar/pasaj/açıklama kopyasıyla sabittir; yeniden açıldığında
+yeniden karıştırılmaz. Küçük havuz aynı soruları yeniden içerebilir. Yeni
+seçim özelliği sınırsız bankayı veya tam resmî dağılımı sağlamış sayılmaz.
+
+Sekiz doğrulanmış resmî referansın özgün uygulama içi öğretim örnekleri
+korunur. Yeni resmî soru gövdesi aktarımı ve son 20 yıllık bütün ÖSYM sınavları
+tamamlandı iddiası yoktur. Kaynakça başlığı veya dosya indirme, bütün sayfaların
+ve anahtarların incelendiği kanıtı değildir. Sayfa sınırları SOURCE_REVIEW’da,
+çalışan sürümün kabul ve yayın durumu FORGE ve QA’dadır.
+
+Kişisel planlar, çalışma kitabındaki tamamlanma işaretleri, özel Drive kimlikleri
+ve ham kaynak metni ürün verisine alınmaz. Öğrenme günü 1, tekrarlar 3/7/21;
+keşif, süre veya kağıdı açma öğrenme puanı oluşturmaz. Aşağıdaki tarihsel
+bölümler eski sürümlerin davranışını açıklar; kaynak yüklemeyi veya eski sayaçları
+anlatan kısımlarda bu güncel kararlar geçerlidir.
 
 ## What the app actually does
 

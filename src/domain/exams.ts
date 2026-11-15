@@ -38,40 +38,48 @@ function snapshot(lesson: Lesson): ExamItem[] {
   }));
 }
 // Interleave lesson questions, so a short section samples several taught skills.
-function subjectItems(ids: string[], limit: number) {
+function subjectItems(ids: string[], limit: number, random?: () => number) {
   const rows = lessons
       .filter((l) => ids.includes(l.subjectId) && l.questions.length)
       .map(snapshot),
+    selectedRows = random
+      ? shuffle(
+          rows.map((row) => shuffle(row, random)),
+          random,
+        )
+      : rows,
     result: ExamItem[] = [];
   for (
     let index = 0;
-    result.length < limit && rows.some((r) => index < r.length);
+    result.length < limit && selectedRows.some((r) => index < r.length);
     index++
   )
-    for (const row of rows)
+    for (const row of selectedRows)
       if (row[index] && result.length < limit) result.push(row[index]);
   return result;
 }
+function groupTargets(exam: "TYT" | "AYT"): [string[], number][] {
+  return exam === "TYT"
+    ? [
+        [["tyt-turkce"], 40],
+        [["tyt-matematik", "tyt-geometri"], 40],
+        [["tyt-tarih"], 5],
+        [["tyt-cografya"], 5],
+        [["tyt-felsefe"], 5],
+        [["tyt-din"], 5],
+        [["tyt-fizik"], 7],
+        [["tyt-kimya"], 7],
+        [["tyt-biyoloji"], 6],
+      ]
+    : [
+        [["ayt-matematik", "ayt-geometri"], 40],
+        [["ayt-fizik"], 14],
+        [["ayt-kimya"], 13],
+        [["ayt-biyoloji"], 13],
+      ];
+}
 function mixed(exam: "TYT" | "AYT"): ExamSpec {
-  const groups: [string[], number][] =
-    exam === "TYT"
-      ? [
-          [["tyt-turkce"], 40],
-          [["tyt-matematik", "tyt-geometri"], 40],
-          [["tyt-tarih"], 5],
-          [["tyt-cografya"], 5],
-          [["tyt-felsefe"], 5],
-          [["tyt-din"], 5],
-          [["tyt-fizik"], 7],
-          [["tyt-kimya"], 7],
-          [["tyt-biyoloji"], 6],
-        ]
-      : [
-          [["ayt-matematik", "ayt-geometri"], 40],
-          [["ayt-fizik"], 14],
-          [["ayt-kimya"], 13],
-          [["ayt-biyoloji"], 13],
-        ];
+  const groups = groupTargets(exam);
   const items = groups.flatMap(([ids, count]) => subjectItems(ids, count));
   const missingSubjects = groups
     .filter(([ids, count]) => subjectItems(ids, count).length < count)
@@ -112,6 +120,74 @@ export function examCatalogue(): ExamSpec[] {
     }),
   ];
 }
+// A variant is generated once, at start. Drafts and past sessions always use
+// their complete stored question snapshots; no shuffle runs during resume.
+function shuffle<T>(items: readonly T[], random: () => number): T[] {
+  const copy = [...items];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+function seededRandom(seed: string): () => number {
+  let value = 2166136261;
+  for (let i = 0; i < seed.length; i++)
+    value = Math.imul(value ^ seed.charCodeAt(i), 16777619);
+  return () => {
+    let n = (value += 0x6d2b79f5);
+    n = Math.imul(n ^ (n >>> 15), n | 1);
+    n ^= n + Math.imul(n ^ (n >>> 7), n | 61);
+    return ((n ^ (n >>> 14)) >>> 0) / 4294967296;
+  };
+}
+const copyItem = (item: ExamItem): ExamItem => ({
+  ...item,
+  options: [...item.options],
+});
+
+export function selectExamVariant(
+  spec: ExamSpec,
+  seed: string,
+  previousIds: readonly string[] = [],
+): ExamItem[] {
+  // Unknown or deliberately customized specs keep the supplied paper. This
+  // protects callers that construct a smaller practice from catalogue metadata.
+  const known = examCatalogue().find(
+    (candidate) =>
+      candidate.id === spec.id &&
+      candidate.title === spec.title &&
+      candidate.exam === spec.exam &&
+      candidate.kind === spec.kind &&
+      candidate.durationSeconds === spec.durationSeconds &&
+      candidate.fullLength === spec.fullLength &&
+      candidate.missingSubjects.join("\n") ===
+        spec.missingSubjects.join("\n") &&
+      candidate.items.length === spec.items.length &&
+      candidate.items.every(
+        (item, i) => JSON.stringify(item) === JSON.stringify(spec.items[i]),
+      ),
+  );
+  if (!known) return spec.items.map(copyItem);
+  const random = seededRandom(seed),
+    groups: [string[], number][] =
+      known.kind === "mixed"
+        ? groupTargets(known.exam)
+        : [[[known.id.slice("branch-".length)], 40]],
+    selected = groups.map(([ids, count]) => subjectItems(ids, count, random));
+  const ids = selected.flatMap((group) => group.map((item) => item.id));
+  // A small bank may repeat the same questions. If it repeats the entire last
+  // order too, rotate inside one subject block without changing the quotas.
+  if (
+    ids.length === previousIds.length &&
+    ids.every((id, i) => id === previousIds[i])
+  ) {
+    const group = selected.find((items) => items.length > 1);
+    if (group) group.push(group.shift()!);
+  }
+  return selected.flat().map(copyItem);
+}
+
 export function beginExam(
   state: AppState,
   spec: ExamSpec,
@@ -119,13 +195,24 @@ export function beginExam(
 ): AppState {
   if (state.examDraft) throw Error("EXAM_IN_PROGRESS");
   if (!spec.items.length) throw Error("EXAM_EMPTY");
+  const previous = state.examSessions.findLast(
+    (session) =>
+      session.title === spec.title &&
+      session.exam === spec.exam &&
+      session.kind === spec.kind,
+  );
+  const items = selectExamVariant(
+    spec,
+    `${spec.id}:${now}:${state.examSessions.length}`,
+    previous?.items.map((item) => item.id),
+  );
   const draft: ExamDraft = {
     id: `exam:${now}:${spec.id}`,
     title: spec.title,
     exam: spec.exam,
     kind: spec.kind,
-    items: spec.items,
-    answers: spec.items.map(() => null),
+    items,
+    answers: items.map(() => null),
     flagged: [],
     index: 0,
     startedAt: now,

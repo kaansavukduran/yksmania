@@ -1,3 +1,72 @@
+## 0.12 önceki temel biyoloji soru onarımı
+
+Karbohidratlar, lipitler ve vitaminlerin mevcut anlatım/model kimlikleri korundu;
+her birine 10 açıklamalı özgün soru eklendi. MEBİ TYT Biyoloji PDF23–29 ve38–39,
+Aurelia005/006 öğretimi ile009p2–3’teki emilim/depo/işlevler karşılaştırıldı.
+Glikoz–galaktoz için kaynakta aşırı geniş kullanılan yapısal izomer ifadesi
+stereo ayrımıyla düzeltildi; B12 depo istisnası korundu. Yeni30 soru ikinci
+okuyucudan geçti; derlenen kartlarda anahtar/seçenek/metin dönüşümü de denetlendi.
+Bunlar resmî soru kopyası değildir. Üçüncü setin tüm verisi kökte bulunur;
+gösterilmeyen bir tabloya başvurulmaz. Yeni soru toplamı330, uygulama toplamı1130.
+
+# 0.12.0: çalışma sırasındaki 109–138. başlıklar
+
+30 yeni ünite: 5 matematik, 5 fizik, 5 kimya, 7 biyoloji, 3 Türkçe ve 5 tarih.
+263 bölüm, 123 çözümlü örnek, 128 hatırlama, 300 özgün beş seçenekli soru.
+PDF’ler öğretimin kapsamını belirlemek için incelendi; ham metinler, orijinal
+şekiller, özel kaynak kimlikleri veya kurum soruları Git’e konulmadı.
+
+| Alan | Doğrudan okunan öğretim sınırı |
+| --- | --- |
+| Matematik | Aurelia 022–023 PDF s.1–6,024 s.1–9,025–026 s.1–8. MEBİ TYT Matematik PDF52/basılı50 işçi,55/53 karışım,56/54 hareket. Beş Aurelia şekli gerçek görüntü olarak incelendi. MEBİ’de ayrı faiz bölümü bulunmuş sayılmadı. |
+| Fizik | MEBİ TYT Fizik PDF158–179/basılı156–177: su, ses/deprem, ışık, gölge ve düzlem ayna. PDF159,163,170,173,178 şekilleri ayrıca görüntülendi. Aurelia016–020 orijinalleri bulunmadığından okunmuş gibi kaynak gösterilmedi. |
+| Kimya | MEBİ TYT Kimya PDF48–60/basılı46–58; Aurelia025–027 öğretim ve örnek PDF s.1–4. MEBİ PDF48,50,51,53,56 görsel incelemesi. Ayrı024/028 Aurelia kağıtları bulunmadı; ilgili öğretim MEBİ’den yazıldı. |
+| Biyoloji | MEBİ TYT Biyoloji PDF123–144/basılı121–142; Aurelia024–026 PDF s.1–7. AB0/Rh PDF135 ve soy ağacı PDF144 şekilleri görüntülendi. Ayrı027–030 Aurelia kağıtları bulunmadı; bu dört başlık gerçek MEBİ sayfalarına dayanır. |
+| Türkçe | Aurelia007 PDF s.1–8 ve008 s.1–10; doğrudan OGM Fiiller notu PDF2–25,27–29 ve31–42; OGM İsim Soylu Sözcükler PDF32–39. OGM34 fiil çatısı ve36 edat şekilleri görüntülendi. Resmî soru atıfları yeni bağımsız kitapçık/anahtar okuması sayılmadı. |
+| Tarih | Aurelia020–021 öğretim PDF s.1–4. OGM Dersler Cepte İnkılap12 sayı3 PDF10–21, sayı4 PDF10–22, sayı5 PDF10–21. OGM124 dış politika,125 ölüm/seçim,126 uluslararası düzen/kriz ve127 II. Dünya Savaşı notlarının ilgili öğretim slaytları metin olarak okundu; örnek harita/tablo ve sekiz kaynak sayfası ayrıca görüntülendi. Bütün slaytların veya arşiv sorularının tek tek incelendiği iddiası yok. |
+
+Matematikte faiz birimi ve yeniden yatırma kuralı, karışımda homojenlik ve ayrı
+kütle hesabı, işçide sabit-bağımsız hız, havuzda fiziksel 0–kapasite sınırı ve
+harekette yön/ortalama ayrımı açık tutulur. Model gerçek banka ürünü veya
+kapalı kaptaki gerçek akışkanlar için evrensel garanti değildir.
+
+Fizikte ses şiddeti güç/alan (W/m²), dB ise şiddet düzeyidir; kaynakta ikisi
+karıştırıldığı için düzeltilmiştir. Richter büyüklüğü 1–9’a kapatılmaz.
+Crookes radyometresi saf ışık basıncı ölçeri diye sunulmaz. Su dalgası hızı
+derinlik ilişkisi sınırlı model koşullarıyla, kırılma açıları ışın-normal ile
+verilir. Ayna ışınları ve iki kaynaklı gölge gerçek geometriyle hesaplanır.
+
+Kimyada denge buhar basıncının sıvı varlığı koşulu ile tam sınırda yalnız gazın
+doygunluğu ayrılır. Yüzey alanı hız ile, sıcaklık denge basıncıyla ayrı
+ilişkilendirilir. Hava ısınınca su miktarı kendiliğinden artmaz; lav yalnız
+sıcak diye plazma olmaz. Arıtma adımı doğrudan içilebilirlik onayı değildir.
+
+Biyolojide alel genin sürümüdür; gamet tek lokusta iki alelli sayılmaz.
+Bağlı genlerde eşit gamet oranları varsayılmaz. AB0/Rh modeli klinik nakil
+uygunluğu veya kimlik kanıtı değildir; ilk gebelik koşulsuz zararsız diye
+öğretilmez. X/Y modeli bütün gelişim çeşitliliğini açıklayan teşhis değildir.
+Soy ağacında birden fazla uyumlu model varsa tek kesin sonuç üretilmez.
+
+Türkçede “yalnız/ancak” sınırlama kullanımının kaynaklar arasındaki adlandırma
+farkı açıklanır; tartışmalı etiket tek doğru cevap yapılmaz. Fiil tabanı,
+çekimli fiil ve -mış ekinin bağlamı ayrılır. Çatı yalnız ek listesine bakılarak
+verilmez; yapan, etkilenen ve nesne ilişkisi cümlenin içinde gösterilir.
+
+Tarihte kaynaklardaki 19 Mart 1919 Ankara çağrısı, 3 Ekim 1921 Mudanya görüşmesi
+ve 1932 üniversite reformu hataları taşınmadı; sırasıyla 1920, 1922 ve 1933
+kronolojisi korunur. 247. ayrıntılı başlık Türkiye’nin iç siyaseti/diplomasisi,
+248 uluslararası sistem/1929/ideolojiler olarak ayrılır; aynı konu iki kez
+hazır sayılmaz. İkinci Dünya Savaşı sonrası içerik ilk 1945–1946 geçişini kapsar,
+bütün sonraki Soğuk Savaş ve yakın dönem tamamlandı iddiası yoktur.
+
+Yeni 300 anahtar ve 123 örnek bağımsız ikinci okumadan geçti. Önceki 800 soru
+metin/pasaj/seçenek/ipucu/açıklama/anahtar kayıtları korunur. Kaynak içindeki
+ÖSYM atıfları yeniden bağımsız resmî kitapçık/anahtar doğrulaması sayılmaz.
+Tüm MEB/OGM/Drive arşivi veya son 20 yıl ÖSYM sınavları tamamlanmış değildir.
+Hazırlanmamış başlıklar hazır gösterilmez ve öğrenciye yükleme işi bırakılmaz.
+
+---
+
 # 0.11.0: sıradaki 30 başlık için kaynak incelemesi
 
 79–108. başlıklar: 5 matematik, 4 fizik, 5 kimya, 10 biyoloji, 5 tarih ve 1 Türkçe.

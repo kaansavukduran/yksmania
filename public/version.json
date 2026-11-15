@@ -1,7 +1,7 @@
 {
-  "version": "0.11.0",
+  "version": "0.12.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Çalışma sırasındaki 79–108. başlıklar için 30 kapsamlı ünite: problem türleri, canlı grupları ve hücre bölünmeleri, kimyasal etkileşimler, basınç ve dalgalar, yakın dönem tarih ve zarflar. Etkileşimli modeller, adım adım örnekler ve 300 yeni açıklamalı soru. GitHub Pages desteği eklendi; notlar ve çalışma kayıtları çevrimdışı korunur."
+    "tr": "30 yeni kapsamlı ünite ve 330 açıklamalı özgün soru. Faiz, karışım, işçi-havuz ve hız; kalıtım; sıvılar/gazlar; optik; fiiller; yakın tarih. Üç temel biyoloji konusunun soru çalışmaları tamamlandı. Denemeler yeni başlangıçta mevcut havuzdan çeşitlenir; devam eden deneme ve eski kayıtlar korunur. GitHub Pages ve çevrimdışı kullanım sürer."
   }
 }

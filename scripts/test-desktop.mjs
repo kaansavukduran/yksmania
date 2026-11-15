@@ -342,8 +342,172 @@ try {
       },
     },
   ];
+  const additionalFamilies = [
+    {
+      id: "faiz-problemleri",
+      selector: '[data-forge012="faiz-problemleri"]',
+      title: "Faiz problemleri: parayı, oranı ve zamanı ayır",
+      expected: "son tutar 6.050 TL",
+      model: "svg",
+      storedKey: "forge012-math-interest",
+      persisted: { compound: true },
+      async act(lab) {
+        await lab
+          .getByRole("combobox", { name: "Faiz kuralı", exact: true })
+          .selectOption("compound");
+        await expect(lab.locator("[data-interest-point]")).toHaveCount(1);
+      },
+    },
+    {
+      id: "su-dalgalari",
+      selector: '[data-forge012="su-dalgalari"]',
+      title: "Su dalgaları: dalga cephesinden kırılmaya",
+      expected: "Birinci λ: 10 cm · İkinci λ: 15 cm",
+      model: "svg",
+      storedKey: "forge012-physics-su-dalgalari",
+      persisted: { speed2: 45 },
+      async act(lab) {
+        const speed = lab.getByRole("slider", {
+          name: "İkinci bölge sürati (cm/s)",
+          exact: true,
+        });
+        await speed.press("End");
+        for (let i = 0; i < 15; i++) await speed.press("ArrowLeft");
+        await expect(speed).toHaveValue("45");
+        await expect(
+          lab.locator('[data-water-ray="transmitted"]'),
+        ).toHaveAttribute("d", /^M300 170L393\.75 /);
+      },
+    },
+    {
+      id: "katilar-viskozite",
+      selector: '[data-forge012="katilar-viskozite"]',
+      title: "Katılar ve viskozite: yapıdan akışa",
+      expected: "20 mL aktı",
+      model: "svg",
+      storedKey: "forge012:chemistry:katilar-viskozite",
+      persisted: { solid: "graphite", temperature: 40, elapsed: 45 },
+      async act(lab) {
+        await lab
+          .getByRole("combobox", { name: "Katı örneği", exact: true })
+          .selectOption("graphite");
+        await lab
+          .getByRole("combobox", { name: "Deney sıcaklığı", exact: true })
+          .selectOption("40");
+        const time = lab.getByRole("slider", {
+          name: "Geçen süre (s)",
+          exact: true,
+        });
+        await time.press("Home");
+        for (let i = 0; i < 9; i++) await time.press("ArrowRight");
+        await expect(time).toHaveValue("45");
+        await expect(lab.locator("[data-model-result]")).toContainText(
+          "Grafit · Kovalent ağ",
+        );
+        await expect(lab.locator("[data-flow-volume]")).toHaveAttribute(
+          "height",
+          "85",
+        );
+      },
+    },
+    {
+      id: "eseyli-ureme",
+      selector: '[data-forge012="eseyli-ureme"]',
+      title: "Eşeyli üreme: gametten zigota, zigottan gelişmeye",
+      expected: "1 hücre; her hücrede 12 kromozom",
+      model: "svg",
+      storedKey: "forge012-bio-eseyli-ureme",
+      persisted: { diploid: 12, stage: 2 },
+      async act(lab) {
+        const chromosomes = lab.getByRole("slider", {
+          name: "Başlangıç kromozom sayısı (2n)",
+          exact: true,
+        });
+        await chromosomes.press("Home");
+        for (let i = 0; i < 4; i++) await chromosomes.press("ArrowRight");
+        await expect(chromosomes).toHaveValue("12");
+        await lab
+          .getByRole("combobox", { name: "İzlenen olay", exact: true })
+          .selectOption("2");
+        await expect(lab.locator("[data-sexual-cell]")).toHaveCount(1);
+        await expect(lab.locator("[data-chromosome]")).toHaveCount(12);
+      },
+    },
+    {
+      id: "edat-baglac-unlem",
+      selector: '[data-forge012="edat-baglac-unlem"]',
+      title: "Edat, bağlaç ve ünlem: cümlede görev ve anlam",
+      expected: "Edat",
+      model: ".grammar012-model",
+      storedKey: "forge012-turkish:edat-baglac-unlem",
+      persisted: { altered: true, show: true },
+      async act(lab) {
+        await lab
+          .getByRole("button", { name: "Cümleyi dönüştür", exact: true })
+          .click();
+        await lab
+          .getByRole("button", { name: "Kanıtı göster", exact: true })
+          .click();
+        await expect(lab.locator(".grammar012-sentence")).toHaveText(
+          "Ada pense ile kabloyu kesti.",
+        );
+        await expect(lab.locator(".grammar012-evidence")).toContainText(
+          "Neyle kesti? Pense ile.",
+        );
+      },
+    },
+    {
+      id: "milli-mucadele",
+      selector: '[data-forge012="milli-mucadele"]',
+      title: "Millî Mücadele: yerel direnişten bağımsız devlete",
+      expected: "Ortak yönetim millî hareketin bütününe yayılır.",
+      model: "svg",
+      storedKey: "forge012-history:milli-mucadele",
+      persisted: { event: 1, step: 2 },
+      async act(lab) {
+        await lab
+          .getByRole("combobox", { name: "İncelenecek olay", exact: true })
+          .selectOption("1");
+        for (let i = 0; i < 2; i++)
+          await lab
+            .getByRole("button", { name: "Sonraki kanıt", exact: true })
+            .click();
+        await expect(
+          lab.locator('[data-history012-selected="Sivas Kongresi"]'),
+        ).toHaveCount(1);
+        await expect(lab.locator("[data-history012-stage]")).toHaveCount(3);
+        await expect(lab.locator("[data-history012-link]")).toHaveCount(2);
+      },
+    },
+  ];
+
+  const storedExploration = (key) =>
+    page.evaluate(
+      (key) =>
+        new Promise((resolve, reject) => {
+          const request = indexedDB.open("yksmania");
+          request.onsuccess = () => {
+            const db = request.result;
+            const read = db
+              .transaction("state")
+              .objectStore("state")
+              .get("current");
+            read.onsuccess = () => {
+              resolve(read.result?.explorations?.[key] ?? null);
+              db.close();
+            };
+            read.onerror = () => {
+              db.close();
+              reject(read.error);
+            };
+          };
+          request.onerror = () => reject(request.error);
+        }),
+      key,
+    );
   expect(continuationFamilies).toHaveLength(7);
-  for (const unit of continuationFamilies) {
+  expect(additionalFamilies).toHaveLength(6);
+  for (const unit of [...continuationFamilies, ...additionalFamilies]) {
     // The context is already offline: this is the first visit to every new lazy family.
     await navigate("Konu Anlatımı");
     await page.getByRole("button", { name: "TYT", exact: true }).click();
@@ -351,7 +515,7 @@ try {
       .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
       .fill(unit.title);
     await page.locator(".ready-topic").filter({ hasText: unit.title }).click();
-    const lab = page.locator(`[data-forge011="${unit.id}"]`);
+    const lab = page.locator(unit.selector || `[data-forge011="${unit.id}"]`);
     await expect(lab).toBeVisible();
     await expect(lab.locator(unit.model).first()).toBeVisible();
     const modelBefore = await lab
@@ -375,11 +539,19 @@ try {
     await expect(page.locator(".save-status")).toContainText(
       "Bu cihazda kaydedildi",
     );
+    if (unit.storedKey)
+      await expect
+        .poll(() => storedExploration(unit.storedKey))
+        .toMatchObject(unit.persisted);
     await page.reload();
     await expect(lab.locator("[data-model-result]")).toContainText(
       unit.expected,
     );
     await expect(lab.locator(unit.model).first()).toBeVisible();
+    if (unit.storedKey)
+      expect(await storedExploration(unit.storedKey)).toMatchObject(
+        unit.persisted,
+      );
   }
 
   const mathematics = [
@@ -762,6 +934,7 @@ try {
       sourceNarrativeModelOfflineReload: "PASS",
       sixNewSourceFamiliesOfflineReload: "PASS",
       sevenContinuationFamiliesOfflineReload: "PASS",
+      sixAdditionalSourceFamiliesOfflineReload: "PASS",
       orderedPlanAndRestart: "PASS",
       ogmChemistryVisuals: "PASS",
       mathematicsVisualsAndRestart: "PASS",

@@ -1,3 +1,53 @@
+# 0.12 son yerel ek kabul
+
+351 birim testi, check ve build PASS. Geliştirme Electron’da bütün eski akışlar
+ve altı ek kaynak ailesi PASS. Pages yerel alt yolunda 13 ailenin ilk çevrimdışı
+açılışı, gerçek model değişimi, kayıt ve yeniden yüklemesi PASS; renderer0.
+Gerçek 0.11→0.12 yerel SW güncellemesi eski verileri, notları, taslağı, üç tekrarı
+ve sentetik 870 bayt belgeyi korudu. Altı yeni model ilk kez çevrimdışı açılıp
+kalıcı kaldı; XP25→25. Son 88 görünüm ölçümü ve 30 ünitede büyük yazıdaki
+sözcükler PASS. Seçilmiş son çizimler ayrıca görüntülerden incelendi.
+Üç temel konunun altı tarayıcı testi 4+2 PASS ile gerçek 9/10 sonucu ve
+3/7/21 tekrarlarını korudu. Tam 272 tarayıcı ve uzak 0.12 kabulü henüz sürüyor.
+
+
+# 0.12.0 aday kabulü — son tarayıcı ve yayın doğrulaması sürüyor
+
+Kaynak sırasındaki 109–138. başlıklar eklendi: 30 ünite, 263 bölüm,
+123 çözümlü örnek, 128 hatırlama ve 300 özgün soru. Toplam 146 anlatım,
+118 ayrıntılı rehber, 146 kopya kağıdı, 1.130 soru; ilk 138/479 hazır.
+Önceki 800 soru kayıtları ve öğrenme verilerinin kimlikleri korunur.
+
+Yerel `npm run check`, `npm run build` ve 351/351 birim testi PASS.
+İlk birleşik koşu 342/343 PASS: eski keyfî açıklama uzunluğu beklentisi geçerli
+58 karakterlik metni reddetti. Gerçek açıklamanın aynılığı, boş olmaması ve
+cevap metninden farklı olması kabulüyle düzeltildi; metin yapayca uzatılmadı.
+Hedefli 66 ve tam 272 tarayıcı testinin, manuel ekranların, geliştirme Electron,
+Pages alt yol/canlı adres, gerçek web güncellemesi, uzak CI ve yeni native
+paketlerin sonuçları henüz bu aday kaydında doğrulanmış değildir.
+
+300 yeni soru anahtarı ve 123 adım adım örnek bağımsız ikinci içerik okumasından
+geçti. Yazarlar arasında fizik→biyoloji, biyoloji→tarih, kimya→Türkçe,
+Türkçe→matematik, matematik→fizik/kimya denetimleri yapıldı. Gerçek kaynak
+sayfası ve model koşulu sınırları SOURCE_REVIEW’da, başarısız ilk denemeler ve
+YKS-052–056 onarımları FORGE’de tutulur. İçerik incelemesi çalışan arayüz veya
+fiziksel cihaz testi değildir.
+
+Yeni deneme seçimi yalnız başlangıçta yapılır ve taslağa tam soru kopyasıyla
+sabitlenir. Birim kabulü aynı başlangıç verisinde tekrarlanabilir seçim,
+farklı başlangıçlarda yeterli havuzdan çeşitlenme, benzersiz kimlikler,
+13 sette aynı sayı/süre/kota, tam seçenek/anahtar/pasaj/açıklama taşınması,
+eski sonucun korunması ve yeniden yüklemede aynı taslağı denetler. Öğrenme
+puanı veya ustalık seçime katılmaz. TYT 105/AYT 25 ve 11 branş hâlâ eksik
+resmî dağılımlı kısa pratik setleridir; sınırsız yeni soru garantisi yoktur.
+
+Fiziksel Android, temiz Windows kurulumu, portable taşıma, marka/tarayıcı
+kombinasyonlarının tamamı ve iki native sürümle veri koruyan yükseltme ayrıca
+sınanmalıdır. Aşağıdaki 0.11 yayın kanıtları geçmiş sürüme aittir; yeni 0.12
+kabulünün yerine sayılmaz.
+
+---
+
 # 0.11.0 doğrulanmış web ve paket yayını
 
 Kaynak 3cd370beb1f7dd96cd9866508c58c96444e5bce5. CI43699042962 dört iş

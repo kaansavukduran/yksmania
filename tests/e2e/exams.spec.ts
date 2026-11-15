@@ -70,18 +70,34 @@ test("built-in branch exam keeps full passages, flags and answers offline, then 
   await branch(page);
   const initial = await stored(page),
     items = initial.examDraft.items;
-  const firstIndex = items.findIndex((q: { id: string }) => q.id === "p1"),
-    secondIndex = items.findIndex((q: { id: string }) => q.id === "p2");
+  const firstIndex = items.findIndex((q: { passage?: string }) =>
+      q.passage?.includes("Bir kitabı bitirmek"),
+    ),
+    secondIndex = firstIndex === 0 ? 1 : 0;
   expect(firstIndex).toBeGreaterThanOrEqual(0);
-  expect(secondIndex).toBeGreaterThanOrEqual(0);
+  const correctChoice = items[firstIndex].answer,
+    wrongChoice =
+      (items[secondIndex].answer + 1) % items[secondIndex].options.length;
   await page
     .getByRole("button", { name: `Soru ${firstIndex + 1}, boş`, exact: true })
     .click();
-  await expect(page.locator(".exam-question .question-passage")).toContainText(
-    "Bir kitabı bitirmek",
+  await expect(page.locator(".exam-question .question-passage")).toHaveText(
+    items[firstIndex].passage,
   );
-  await page.locator(".exam-answer").first().tap();
-  await expect(page.locator(".exam-answer").first()).toHaveAttribute(
+  await expect(page.locator(".exam-question h2")).toHaveText(
+    items[firstIndex].prompt,
+  );
+  expect(
+    await page.locator(".exam-question").evaluate((element) => {
+      const passage = element.querySelector(".question-passage")!,
+        stem = element.querySelector("h2")!;
+      return !!(
+        passage.compareDocumentPosition(stem) & Node.DOCUMENT_POSITION_FOLLOWING
+      );
+    }),
+  ).toBe(true);
+  await page.locator(".exam-answer").nth(correctChoice).tap();
+  await expect(page.locator(".exam-answer").nth(correctChoice)).toHaveAttribute(
     "aria-pressed",
     "true",
   );
@@ -92,7 +108,7 @@ test("built-in branch exam keeps full passages, flags and answers offline, then 
   await page
     .getByRole("button", { name: "Sonra bakmak için işaretle", exact: true })
     .click();
-  await page.locator(".exam-answer").first().click();
+  await page.locator(".exam-answer").nth(wrongChoice).click();
   await expect(
     page.getByRole("button", {
       name: `Soru ${secondIndex + 1}, yanıtlandı, işaretli`,
@@ -105,10 +121,11 @@ test("built-in branch exam keeps full passages, flags and answers offline, then 
   });
   await context.setOffline(true);
   await page.reload();
-  await expect(page.locator(".exam-answer").first()).toHaveAttribute(
+  await expect(page.locator(".exam-answer").nth(wrongChoice)).toHaveAttribute(
     "aria-pressed",
     "true",
   );
+  expect((await stored(page)).examDraft).toEqual(before.examDraft);
   expect((await stored(page)).examDraft.deadline).toBe(
     before.examDraft.deadline,
   );
@@ -143,8 +160,8 @@ test("built-in branch exam keeps full passages, flags and answers offline, then 
   await expect(solution.locator(".question-passage")).toContainText(
     "Bir kitabı bitirmek",
   );
-  await expect(solution.locator(".exam-explanation")).toContainText(
-    "düşünsel etkileşimi",
+  await expect(solution.locator(".exam-explanation p")).toHaveText(
+    items[firstIndex].explanation,
   );
   await page.reload();
   await expect(page.locator(".exam-score-summary")).toContainText("0,75");
@@ -313,4 +330,48 @@ test("background expiry preserves the draft on storage failure and retries once 
   await page.clock.fastForward(60000);
   expect((await stored(page)).examSessions).toHaveLength(1);
   expect((await stored(page)).sessions).toEqual([]);
+});
+
+test("a new branch attempt varies available questions while both old results and the resumed new paper stay fixed offline", async ({
+  page,
+  context,
+}) => {
+  await page.goto("/");
+  await branch(page);
+  const first = structuredClone((await stored(page)).examDraft);
+  await page
+    .getByRole("button", { name: "Denemeyi bitir", exact: true })
+    .click();
+  await page
+    .getByRole("dialog")
+    .getByRole("button", { name: "Bitir ve sonucu gör", exact: true })
+    .click();
+  await expect(page.locator(".exam-results")).toBeVisible();
+  const finished = structuredClone((await stored(page)).examSessions[0]);
+  await branch(page);
+  const second = structuredClone((await stored(page)).examDraft);
+  expect(second.items.map((item: { id: string }) => item.id)).not.toEqual(
+    first.items.map((item: { id: string }) => item.id),
+  );
+  expect(second.items).toHaveLength(first.items.length);
+  expect(
+    new Set(second.items.map((item: { id: string }) => item.id)).size,
+  ).toBe(second.items.length);
+  expect(second.durationSeconds).toBe(first.durationSeconds);
+  expect(second.answers.every((answer: number | null) => answer === null)).toBe(
+    true,
+  );
+  expect((await stored(page)).examSessions[0]).toEqual(finished);
+  await page.evaluate(async () => {
+    await navigator.serviceWorker.ready;
+  });
+  await context.setOffline(true);
+  await page.reload();
+  await expect(page.locator(".exam-runner")).toBeVisible();
+  const after = await stored(page);
+  expect(after.examDraft).toEqual(second);
+  expect(after.examSessions[0]).toEqual(finished);
+  expect(after.sessions).toEqual([]);
+  expect(after.reviews).toEqual([]);
+  expect(after.topicProgress).toEqual({});
 });

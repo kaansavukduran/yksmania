@@ -13,7 +13,7 @@ import { DateInput } from "../components/DateInput";
 import { parseBackup } from "../domain/storage";
 import { ResetProgress } from "../components/ResetProgress";
 import type { Settings as SettingsType } from "../domain/model";
-const VERSION = "0.11.0";
+const VERSION = "0.12.0";
 function NumericControl({
   label,
   value,

@@ -1,0 +1,170 @@
+.c012-lab {
+  display: grid;
+  gap: 1.1rem;
+  min-width: 0;
+  padding: clamp(1rem, 2vw, 1.6rem) 0;
+  border-block: 1px solid var(--border);
+}
+.c012-lab h3,
+.c012-lab p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.c012-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1rem;
+}
+.c012-controls label,
+.c012-mode,
+.c012-prediction {
+  display: grid;
+  gap: 0.65rem;
+  min-width: 0;
+  align-content: start;
+}
+.c012-lab input:not([type="checkbox"]),
+.c012-lab select,
+.c012-lab textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  font: inherit;
+  accent-color: var(--accent);
+}
+.c012-lab input[type="range"] {
+  margin: 0;
+  min-height: 44px;
+}
+.c012-lab input[type="number"],
+.c012-lab select {
+  min-height: 44px;
+}
+.c012-lab button {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+  min-height: 44px;
+}
+.c012-lab input[type="checkbox"] {
+  width: 1.2rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+}
+.c012-controls .c012-check {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 44px;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+.c012-drawing {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  color: var(--text);
+}
+.c012-drawing text {
+  fill: currentColor;
+  font:
+    16px system-ui,
+    sans-serif;
+}
+.c012-primary {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 1.5;
+}
+.c012-secondary {
+  fill: var(--mint);
+  stroke: var(--text);
+  stroke-width: 1.5;
+}
+.c012-line,
+.c012-curve {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 3;
+}
+.c012-curve {
+  stroke: var(--accent);
+}
+.c012-water {
+  fill: var(--mint);
+  fill-opacity: 0.55;
+  stroke: var(--mint);
+  stroke-width: 2;
+}
+.c012-empty {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 2;
+}
+.c012-bubble {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 3;
+}
+.c012-electron {
+  fill: var(--mint);
+  stroke: var(--text);
+  stroke-width: 1;
+}
+.c012-result,
+.c012-feedback {
+  display: grid;
+  gap: 0.65rem;
+  padding: clamp(0.85rem, 2vw, 1.35rem);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.c012-result ul {
+  margin: 0;
+  padding-left: 1.4em;
+}
+.c012-result li + li {
+  margin-top: 0.5rem;
+}
+.c012-prediction {
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+.c012-prediction textarea {
+  min-height: 6rem;
+  resize: vertical;
+}
+.c012-feedback {
+  border-left: 3px solid var(--accent);
+}
+.c012-evidence {
+  padding-top: 0.5rem;
+}
+@media (max-width: 450px) {
+  .c012-controls {
+    grid-template-columns: 1fr;
+  }
+  .c012-lab {
+    gap: 1rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .c012-lab * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+:root[data-motion="off"] .c012-lab * {
+  animation: none !important;
+  transition: none !important;
+}

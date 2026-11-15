@@ -1,0 +1,324 @@
+.physics012-lab {
+  min-width: 0;
+  color: var(--text);
+}
+.physics012-lab > h3 {
+  margin: 0 0 0.7rem;
+}
+.physics012-lab > p {
+  margin: 0.75rem 0 1.1rem;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+.physics012-lab > label {
+  display: block;
+  margin: 1rem 0 0.5rem;
+}
+.physics012-lab > select {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  white-space: normal;
+}
+.physics012-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  align-items: start;
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+.physics012-controls .model-control {
+  min-width: 0;
+}
+.physics012-controls input[type="range"] {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  margin-inline: 0;
+}
+.physics012-controls input[type="number"] {
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 0;
+}
+.physics012-lab .physics012-check {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  min-height: 48px;
+}
+.physics012-check input {
+  flex: 0 0 auto;
+}
+.physics012-lab svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 32rem;
+  margin: 1.5rem auto;
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  background: var(--surface);
+  overflow: visible;
+}
+.physics012-lab svg text {
+  fill: var(--text);
+  font-family: inherit;
+  font-size: 15px;
+}
+.physics012-object {
+  fill: var(--accent);
+  fill-opacity: 0.65;
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+.physics012-ground,
+.physics012-piston {
+  stroke: var(--text);
+  stroke-width: 7;
+}
+.physics012-vessel {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 3;
+}
+.physics012-water {
+  fill: #70b4db;
+  fill-opacity: 0.22;
+}
+.physics012-wet {
+  fill: #549fc9;
+  fill-opacity: 0.4;
+}
+.physics012-u-water {
+  fill: none;
+  stroke: #74b9d9;
+  stroke-width: 24;
+}
+.physics012-surface {
+  stroke: #63a9d2;
+  stroke-width: 3;
+}
+.physics012-dimension {
+  stroke: var(--muted);
+  stroke-width: 2;
+  stroke-dasharray: 5 5;
+}
+.physics012-axis {
+  stroke: var(--muted);
+  stroke-width: 2;
+}
+.physics012-heavy {
+  stroke: var(--muted);
+  stroke-width: 6;
+}
+.physics012-marker {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.physics012-wave,
+.physics012-transmitted {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 4;
+  stroke-linejoin: round;
+}
+.physics012-transmitted {
+  stroke: #75b8d8;
+}
+.physics012-wall {
+  stroke: var(--text);
+  stroke-width: 8;
+}
+.physics012-free-end {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 3;
+}
+.physics012-result {
+  padding: 1.25rem;
+  margin: 1.25rem 0;
+  border: 1px solid var(--border);
+  border-inline-start: 3px solid var(--accent);
+  border-radius: 0.5rem;
+  background: var(--surface);
+  overflow-wrap: anywhere;
+}
+.physics012-result p {
+  margin: 0.75rem 0 0;
+  line-height: 1.8;
+}
+.physics012-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 1.25rem 0;
+}
+.physics012-actions button {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  min-height: 48px;
+}
+.physics012-comparison {
+  min-width: 0;
+  margin: 1.75rem 0;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+}
+.physics012-comparison legend {
+  max-width: 100%;
+  padding: 0 0.4rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.physics012-guesses {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0.5rem 0 1rem;
+}
+.physics012-guesses label {
+  display: flex;
+  align-items: start;
+  gap: 0.7rem;
+  min-height: 44px;
+  padding: 0.6rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
+  overflow-wrap: anywhere;
+}
+.physics012-guesses input {
+  flex: 0 0 auto;
+  margin-top: 0.25rem;
+}
+.physics012-comparison > label {
+  display: block;
+  margin: 1rem 0 0.5rem;
+}
+.physics012-comparison textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  resize: vertical;
+}
+.physics012-comparison button {
+  margin-top: 0.8rem;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+  min-height: 48px;
+}
+.physics012-feedback {
+  margin-top: 1.2rem;
+  padding: 1rem;
+  border-inline-start: 3px solid var(--accent);
+  background: var(--surface);
+  overflow-wrap: anywhere;
+}
+.physics012-feedback p {
+  line-height: 1.8;
+  margin: 0.8rem 0 0;
+}
+@media (max-width: 480px) {
+  .physics012-result {
+    padding: 0.9rem;
+  }
+  /* The lesson supplies its outer gutter. Keep 45px words readable by
+     removing another pair of scaled horizontal paddings in predictions. */
+  .physics012-comparison {
+    margin-inline: 0;
+    padding: 0.9rem 0;
+    border-inline: 0;
+    border-radius: 0;
+  }
+  .physics012-comparison button {
+    box-sizing: border-box;
+    width: 100%;
+    padding-inline: 6px;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .physics012-comparison textarea,
+  .physics012-feedback {
+    padding-inline: 6px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .physics012-lab * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+.physics012-front {
+  stroke: var(--accent);
+  stroke-width: 2;
+  opacity: 0.7;
+}
+.physics012-front-second {
+  stroke: var(--mint);
+}
+.physics012-origin {
+  fill: var(--muted);
+}
+.physics012-light-ray {
+  stroke: var(--accent);
+  stroke-width: 2;
+  fill: none;
+  opacity: 0.6;
+}
+.physics012-plate {
+  stroke: var(--text);
+  stroke-width: 8;
+}
+.physics012-normal {
+  stroke: var(--mint);
+  stroke-width: 3;
+  stroke-dasharray: 6 5;
+}
+.physics012-screen {
+  stroke: var(--muted);
+  stroke-width: 14;
+}
+.physics012-boundary {
+  stroke: var(--accent);
+  stroke-width: 2;
+  fill: none;
+}
+.physics012-boundary-second {
+  stroke: var(--mint);
+}
+.physics012-shadow-full {
+  fill: var(--text);
+}
+.physics012-shadow-partial {
+  fill: var(--accent);
+  fill-opacity: 0.65;
+  stroke: var(--text);
+  stroke-width: 1;
+}
+.physics012-shadow-lit {
+  fill: var(--surface);
+  stroke: var(--border);
+  stroke-width: 1;
+}
+.physics012-mirror {
+  stroke: var(--mint);
+  stroke-width: 5;
+}
+.physics012-virtual {
+  stroke: var(--accent);
+  stroke-width: 3;
+  fill: none;
+  stroke-dasharray: 7 5;
+}
+.physics012-lab .physics012-result ul {
+  padding-inline-start: 1.3rem;
+  overflow-wrap: anywhere;
+}

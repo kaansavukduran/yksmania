@@ -1,3 +1,108 @@
+# 0.12.0 yayın adayı: sıradaki 30 ünite ve deneme çeşitliliği
+
+Çalışma ağacı `/workspace/yksmania-next`; canlı 0.11.0 sürümü aşağıdaki kanıt
+kaydıyla korunur. Kullanıcının tüm konuları işleme hedefi sürüyor. Bu aday
+109–138. başlıkları ekler; bütün 479 başlık bitmiş değildir. Sonraki başlık
+139: Su, Hayat ve Çevre Kimyası / detail-167.
+
+Yeni 30 ünite: 263 açıklama bölümü, 123 çözümlü örnek, 128 hatırlama çalışması
+ve 300 açıklamalı, beş seçenekli özgün soru. Toplam 146 anlatım, 118 ayrıntılı
+rehber, 146 yerleşik kopya kağıdı ve 1.130 soru; ilk 138/479 başlığın anlatımı hazır.
+Yeni kağıtların tamamı anlatım paragrafları ve örneklerini içerir; Türkçenin
+üç kağıdı da tam öğretim/örnek/uyarı/hatırlama içeriğiyle sunulur. Önceki 800
+soru tam kayıtlarıyla korunur. Kaynak sayfa sınırları SOURCE_REVIEW’dedir.
+Öğrenci PDF veya katalog yüklemez; hazırlanmamış başlık hazır gösterilmez.
+
+Önceki Karbohidratlar, Lipitler ve Vitaminler anlatımları vardı; bağımsız
+soru kümeleri yoktu. Gerçek kaynak ve ikinci okuyucu denetimiyle 30 özgün
+soru eklenerek normal Sorular/Theory girişine bağlandı. Yeni sorular toplamı
+330’dur: 300 yeni ünite sorusu + 30 eski kapsam onarımı. Önceki 800 kayıt
+değişmez. İlk 138 anlatım içinde henüz bağımsız sorusu olmayan on matematik/
+tarih başlığı da açıkça saptandı; bunlar tamamlanmış soru çalışması sayılmaz.
+
+Denemede yeni başlangıç için bütün ilgili bankadan dersler arası, başlangıca
+özgü seçilim eklendi. Seçim yalnız yeni taslak oluşturulurken yapılır; devam
+eden taslak ve eski sonuçlar tam soru/seçenek/anahtar/pasaj/açıklama kopyasıyla
+sabit kalır. Soru sayısı, ders kotaları ve orantılı süreler korunur. 13 set:
+TYT karma 105, AYT Sayısal karma 25 ve 11 branş; henüz 120/80 soruluk tam
+resmî dağılım değildir. Küçük havuzda aynı soruların yeniden gelmesi mümkündür.
+
+300 anahtar ve 123 örnek yazar dışındaki ikinci okuyucularca denetlendi:
+fizik→biyoloji 70/28, biyoloji→tarih 50/20, kimya→Türkçe 30/15,
+Türkçe→matematik 50/20, matematik→fizik 50/20 ve kimya 50/20.
+Bu içerik denetimi tarayıcı, paket veya fiziksel cihaz kabulü yerine geçmez.
+
+Yerel `check`, `build` ve 351/351 birim testi PASS. İlk birleşik birim koşusunda
+342/343 PASS vardı: önceki testin keyfî >70 karakter açıklama koşulu, geçerli
+58 karakterlik açıklamayı reddetti. Öğretim metni sırf sayı için uzatılmadı;
+gerçek yazılmış geri bildirimin aynılığı, boş olmaması ve cevap metninden
+farklı olması denetlenir. Sonuç veya kullanıcı davranışı kabulü gevşetilmedi.
+Hedefli 66 ve tam 272 tarayıcı kabulü ile manuel görüntü, Electron, Pages,
+gerçek web yükseltmesi ve uzak 0.12 yayın/paket kabulü bu aday kaydında henüz
+sonuçlanmadı. Önceki 0.11 başarıları yeni adaya otomatik aktarılmaz.
+
+Bu aday hazırlanırken kanıtlanan ve düzeltilen somut kusurlar:
+
+| Kimlik | Önem | Belirti ve onarım |
+| --- | --- | --- |
+| YKS-052 | Orta | Kalıtım modelinin varsayılan AaBBcc genotipi doğrulayıcı tarafından reddediliyordu. Küçük harfli homozigot lokusları kabul eden çift denetimi ve varsayılan gamet regresyonu eklendi. |
+| YKS-053 | Orta | Geniş boşluk biçimlendiricisi biyoloji API değerini ve import yollarını değiştirmişti. Kanonik değer/yollar geri alındı; 75 bağımsız model durumu denetlendi. Ürün metni düzeltmesi kimliklerden ayrıldı. |
+| YKS-054 | Orta | Bütün su tam doygunluk sınırında gaz olduğunda model “doygunluk altı” diyordu. Sıvı varlığı ile doygunluk ayrı hesaplandı; eşik metni ve regresyon eklendi. |
+| YKS-055 | Orta | Düzlem aynanın gerçek yansıyan SVG ışını seçili açıya uymuyordu. Geometri trigonometrik ilişkiyle onarıldı; saf hesap ve gerçek DOM kabulü eklendi. |
+| YKS-056 | Orta | Fiiller 7. sorusunda yalnız -mış eki için sorulan kapsam iki yoruma açıktı. Bütün cümlenin ek bağlam olmadan kesinleştirilemeyen yargısını soran kökle netleştirildi; anahtar korundu. |
+
+Gerçek görsel incelemede ek bulgular ve dar onarımlar:
+
+| Kimlik | Önem | Belirti ve onarım |
+| --- | --- | --- |
+| YKS-057 | Orta | Matematik grafikleri görünür eksen/birim, önce-sonra ve A/B açıklamaları olmadan kalıyordu; görünür ölçek, işaret ve açıklamalar eklendi. |
+| YKS-058 | Orta | Grafit/elmas çizimleri iki element gibi farklı renkteydi; tek karbon rengi ve C etiketleri kullanıldı, iyonik ayrım korundu. |
+| YKS-059 | Orta | Tek gametin üç aleli üç ayrı hücreyi andırıyordu; ortak haploit hücre sınırı ve tek gamet metni eklendi. |
+| YKS-060 | Orta | Dar ekranda biyoloji tahmin seçeneği kesiliyordu; tam seçili metin satır sararak gösterilir. |
+| YKS-061 | Orta | 320px/UI200/text150’de iç içe dolgular 45px sözcükleri bölüyordu; yazı boyutu korunarak dört ailede dolgu onarıldı. 30 üniteye gerçek sözcük aralığı regresyonu eklendi. Koordinasyon sözcüğü fiziksel olarak sığmayınca anlamı koruyan “Ortak yönetim” kullanıldı. |
+| YKS-062 | Düşük | Tek zigot ve plazma çizimleri boş alanın soluna yığılmıştı; sayısal model değişmeden merkezlendi. |
+| YKS-063 | Orta | Yeni köprü sorusu glikoz–galaktoza yapısal izomer diyordu; stereo ayrımını koruyan genel izomerlik ifadesiyle düzeltildi. |
+| YKS-064 | Orta | Vitamin çıkarım sorusunun kapsamı birden çok yoruma açıktı; kökteki bilgi ile kişi belirtisi birlikte ve açık sınırla ele alındı. |
+| YKS-065 | Orta | Üç eski biyoloji başlığında bağımsız soru rotası kullanılamıyordu; 30 kaynaklı özgün soru bağlandı. On diğer önceki soru açığı sonraki işte açıktır. |
+
+İlk hedefli 66 browser PASS (4,5dk); iki 120 durumluk ölçüm/snapshot koşusu
+renderer0 ile PASS. Bu sayılar bütün görüntülerin görsel bakımdan kusursuz
+olduğu iddiası değildir: yukarıdaki kusurlar gerçek görüntülerde saptandı.
+Son dört aile dolgu onarımından sonra tam 272 browser ve etkilenen 88 görünüm
+tekrar kabulü sürüyor. Uzun node ekran görüntülerindeki skip-link örtüşmesi
+aynı gerçek viewport/aktif eleman/sınır ölçümüyle Chromium capture artefaktı
+olarak doğrulandı; erişilebilirlik bağlantısı gizlenmedi veya silinmedi.
+30 yeni temel sorunun ilk kontrolünde 347/351 PASS: Vitamin 10’un tabloya
+atıf sözcüğü ortam korumasını tetikledi. Bütün verilen bilgi soru kökünde
+korunarak ders notu diye yazıldı; koruma gevşetilmedi, 351/351 PASS.
+
+AIONIA canlı standardı bu 0.12 aşamasında yeniden okundu: v1.7, kaynak değişim
+zamanı 2026-11-13T00:29:34.975Z; bölüm 22 AIO-UI-001–005 ve AIO-QA-001–003.
+Türkçe ürün, Windows/Linux/Android/web kapsamı, onaylı ders simgeleri ve Aion
+varlıkları korunur. Özel PDF, ham çıkarım, kişisel plan, Drive kimliği ve özel
+bağlantı Git’e eklenmez. Kayıt/tekrar/taslak korunumu son kabulde ayrıca sınanır.
+
+Son dondurulan kaynağın check/build ve 351/351 unit kabulü PASS. 30 ünitenin
+45px ortak sözcük denetiminde bölünme 0; son etkilenen 22×4 görünüm ölçümü
+88/88 PASS, renderer0. Masaüstü geliştirme Electron’da altı ek model ailesi
+ve eski akışlar PASS; Pages alt yolunda 13 aile ilk çevrimdışı açılış/gerçek
+model değişimi/kayıt/reload ve soru açıklaması PASS, renderer0. Gerçek yerel
+0.11→0.12 SW güncellemesi, eski state/not/taslak/üç tekrar ve sentetik870bayt
+legacyPDF koruması, altı yeni aile ilk offline açılış/reload ile PASS; XP25→25.
+99 runtime dosyası yükseltme test kopyasıyla byte eşittir.
+Üç temel konu gerçek Sorular/anlatım girişi, offline9/10 sonucunu ve3/7/21
+tekrarlarını korudu: altı test4+2PASS. İlk iki lipid testinin kaynak arşivi
+başlığıyla UI başlığını eşleştirmesi bekledi; benzersiz gerçek Lipitler girişi
+kullanıldı. Yeni E2E’nin uygulama JSON importu Node’da test yüklenmesini
+engellemişti; doğrudan özgün soru seti ve gerçek UI kullanıldı. Davranış,
+süre ve erişilebilirlik sınırları aynı. Tam272 tarayıcı koşusu halen sürüyor.
+
+Bu sürüm adayı henüz yayımlanmadı. Fiziksel Android, temiz Windows kurulumu,
+portable taşıma ve iki native sürüm arasında veri koruyan yükseltme ayrıca
+doğrulanmalıdır.
+
+---
+
 # 0.11.0 yayımlandı: 30 yeni ünite ve GitHub Pages
 
 Paket/test kaynağı `3cd370beb1f7dd96cd9866508c58c96444e5bce5`; uygulama

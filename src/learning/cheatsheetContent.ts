@@ -1,3 +1,10 @@
+import { forge012MathTopics } from "./forge012Math";
+import { forge012PhysicsTopics } from "./forge012Physics";
+import { forge012ChemistryTopics } from "./forge012Chemistry";
+import { forge012BiologyTopics } from "./forge012Biology";
+import { forge012TurkishTopics } from "./forge012Turkish";
+import { forge012HistoryTopics } from "./forge012History";
+import { forge012TurkishCheatSheets } from "./forge012Turkish";
 import { lessonById, lessons } from "../domain/content";
 import { lessonTopic, studyTopicById } from "../domain/studyPlan";
 import { lessonGuides } from "./guides";
@@ -28,6 +35,15 @@ export interface CheatSheet {
   source: string;
 }
 
+const completeSourceSheets = new Set([
+  ...Object.keys(forge012MathTopics),
+  ...Object.keys(forge012PhysicsTopics),
+  ...Object.keys(forge012ChemistryTopics),
+  ...Object.keys(forge012BiologyTopics),
+  ...Object.keys(forge012TurkishTopics),
+  ...Object.keys(forge012HistoryTopics),
+]);
+
 // These are original application teaching texts, never unreviewed extracted book
 // pages. A sheet is created only for an actually authored lesson or reviewed pack.
 // New reviewed lessons join automatically; an outline row alone creates no content.
@@ -43,10 +59,11 @@ function lessonSheet(id: string): CheatSheet | undefined {
     narrative = narrativeById.get(id),
     reviewed = physicsCheatSheets.find((sheet) => sheet.topicId === topic.id);
   const firstQuestion = lesson.questions[0];
+  const complete = completeSourceSheets.has(id);
   const sections = guide
     ? guide.sections.map((section) => ({
         title: section.title,
-        text: section.paragraphs.slice(0, 1),
+        text: complete ? section.paragraphs : section.paragraphs.slice(0, 1),
         table: section.table,
       }))
     : lesson.body.map((section) => ({
@@ -54,16 +71,18 @@ function lessonSheet(id: string): CheatSheet | undefined {
         text: [section.text.tr],
       }));
   const examples: CheatExample[] = guide
-    ? guide.examples.slice(0, 2).map((example) => ({
-        title: example.title,
-        prompt: example.prompt,
-        steps: example.steps.map((step) =>
-          [step.label, step.expression, step.explanation]
-            .filter(Boolean)
-            .join(" · "),
-        ),
-        answer: example.answer + " " + example.check,
-      }))
+    ? (complete ? guide.examples : guide.examples.slice(0, 2)).map(
+        (example) => ({
+          title: example.title,
+          prompt: example.prompt,
+          steps: example.steps.map((step) =>
+            [step.label, step.expression, step.explanation]
+              .filter(Boolean)
+              .join(" · "),
+          ),
+          answer: example.answer + " " + example.check,
+        }),
+      )
     : narrative
       ? narrative.cases.slice(0, 1).map((example) => ({
           title: example.name,
@@ -136,5 +155,6 @@ export const builtInCheatSheets = new Map<string, CheatSheet>(
       .filter((lesson) => !lesson.tags.includes("soru-seti"))
       .map((lesson) => lessonSheet(lesson.id))
       .filter((sheet): sheet is CheatSheet => !!sheet),
+    ...forge012TurkishCheatSheets,
   ].map((sheet) => [sheet.topicId, sheet]),
 );

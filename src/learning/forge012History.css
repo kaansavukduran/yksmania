@@ -1,0 +1,186 @@
+.forge012-history-lab {
+  min-width: 0;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+.forge012-history-lab h3 {
+  margin: 0 0 12px;
+}
+.forge012-history-lab h4 {
+  margin: 0 0 8px;
+}
+.h012-select,
+.h012-reason {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  margin: 24px 0;
+}
+.h012-select select,
+.h012-reason textarea {
+  font: inherit;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+.h012-select select {
+  white-space: normal;
+}
+.h012-evidence,
+.h012-result,
+.h012-feedback {
+  padding: 20px;
+  margin: 24px 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  min-width: 0;
+}
+.h012-evidence p,
+.h012-result p,
+.h012-feedback p {
+  margin: 10px 0 0;
+}
+.h012-evidence .h012-meta {
+  margin: 0 0 8px;
+  color: var(--muted);
+}
+.h012-figure {
+  margin: 24px 0;
+  min-width: 0;
+}
+.h012-figure svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+}
+.h012-figure figcaption {
+  color: var(--muted);
+  margin-top: 12px;
+}
+.h012-track {
+  stroke: var(--border);
+  stroke-width: 4;
+  fill: none;
+}
+.h012-date-node {
+  fill: var(--surface);
+  stroke: var(--muted);
+  stroke-width: 3;
+}
+.h012-year,
+.h012-stage-label {
+  fill: var(--text);
+  font:
+    18px system-ui,
+    sans-serif;
+}
+.h012-current {
+  fill: var(--accent);
+  stroke: var(--surface);
+  stroke-width: 4;
+}
+.h012-card {
+  fill: var(--surface);
+  stroke: var(--border);
+  stroke-width: 2;
+}
+.h012-revealed {
+  fill: var(--accent);
+  opacity: 0.18;
+}
+.h012-symbol {
+  stroke: var(--accent);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+.h012-unopened {
+  stroke: var(--border);
+  stroke-width: 3;
+  fill: none;
+  stroke-dasharray: 3 5;
+}
+.h012-link {
+  stroke: var(--accent);
+  stroke-width: 4;
+  fill: none;
+  stroke-linejoin: round;
+}
+.h012-chain {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 16px;
+  padding: 0;
+  margin: 24px 0;
+}
+.h012-chain li {
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  min-width: 0;
+}
+.h012-chain p {
+  margin: 0;
+}
+.h012-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0;
+}
+.h012-actions button {
+  max-width: 100%;
+  white-space: normal;
+  min-height: 44px;
+  font: inherit;
+}
+.h012-prediction {
+  min-width: 0;
+  padding: 18px;
+  margin: 24px 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+.h012-prediction legend {
+  max-width: 100%;
+  padding: 0 8px;
+}
+.h012-prediction label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0;
+  min-width: 0;
+  min-height: 44px;
+}
+.h012-prediction input {
+  flex: 0 0 auto;
+  margin-top: 9px;
+  accent-color: var(--accent);
+}
+.h012-prediction span {
+  min-width: 0;
+}
+@media (max-width: 440px) {
+  .h012-evidence,
+  .h012-result,
+  .h012-feedback,
+  .h012-prediction,
+  .h012-chain li {
+    /* The lesson provides the outer gutter; keep room for enlarged words. */
+    padding: 0.75rem 6px;
+  }
+  .h012-actions button {
+    padding-inline: 6px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .forge012-history-lab * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

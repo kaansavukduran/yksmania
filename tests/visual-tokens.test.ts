@@ -14,7 +14,7 @@ it("defines every theme token used by the new diagrams so chromosomes and marker
     [...css.matchAll(/(--[\w-]+)\s*:/g)].map((m) => m[1]),
   );
   const files = readdirSync(learning).filter((f) =>
-    /^(?:Forge011.*\.tsx|forge011.*\.css)$/.test(f),
+    /^(?:Forge01[12].*\.tsx|forge01[12].*\.css)$/.test(f),
   );
   for (const file of files) {
     const refs = [
