@@ -1,5 +1,6 @@
 import { createHash } from "node:crypto";
 import { expect, it } from "vitest";
+import releasedQuestions from "./fixtures/0.15.0-questions.json";
 import oldQuestions from "./fixtures/0.14.0-questions.json";
 import oldTeaching from "./fixtures/0.14.0-lesson-fingerprints.json";
 import oldExams from "./fixtures/0.14.0-mixed-exams.json";
@@ -33,8 +34,8 @@ it("retains every published question and teaching field while adding 300 distinc
   const all = lessons.flatMap((l) => l.questions),
     byId = new Map(all.map((q) => [q.id, q]));
   expect(oldQuestions).toHaveLength(1540);
-  expect(all).toHaveLength(1840);
-  expect(byId.size).toBe(1840);
+  expect(all.length).toBeGreaterThanOrEqual(1840);
+  expect(byId.size).toBe(all.length);
   for (const question of oldQuestions)
     expect(byId.get(question.id), question.id).toEqual(question);
   expect(Object.keys(oldTeaching)).toHaveLength(175);
@@ -50,7 +51,9 @@ it("retains every published question and teaching field while adding 300 distinc
     ).toBe(hash);
   }
   const oldIds = new Set(oldQuestions.map((q) => q.id));
-  const added = all.filter((q) => !oldIds.has(q.id));
+  const added = releasedQuestions
+    .filter((q) => !oldIds.has(q.id))
+    .map((q) => byId.get(q.id)!);
   expect(added).toHaveLength(300);
   for (const question of added) {
     expect(question.options, question.id).toHaveLength(5);
@@ -67,12 +70,12 @@ it("retains every published question and teaching field while adding 300 distinc
 });
 
 it("teaches all thirty next headings in verified order with deep guides, complete sheets and independent practice", () => {
-  expect(lessons).toHaveLength(205);
-  expect(lessons.filter((l) => !l.tags.includes("soru-seti"))).toHaveLength(
-    204,
-  );
-  expect(lessonGuides.size).toBe(176);
-  expect(builtInCheatSheets.size).toBe(204);
+  expect(lessons.length).toBeGreaterThanOrEqual(205);
+  expect(
+    lessons.filter((l) => !l.tags.includes("soru-seti")).length,
+  ).toBeGreaterThanOrEqual(204);
+  expect(lessonGuides.size).toBeGreaterThanOrEqual(176);
+  expect(builtInCheatSheets.size).toBeGreaterThanOrEqual(204);
   const next = studyTopics.slice(168, 198),
     ids: string[] = [];
   expect(next).toHaveLength(30);

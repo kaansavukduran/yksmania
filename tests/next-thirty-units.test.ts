@@ -4,7 +4,7 @@ import { lessons } from "../src/domain/content";
 import { studyTopics, topicLessons } from "../src/domain/studyPlan";
 import { lessonGuides } from "../src/learning/guides";
 import { builtInCheatSheets } from "../src/learning/cheatsheetContent";
-import { examCatalogue } from "../src/domain/exams";
+import { examCatalogue, selectExamVariant } from "../src/domain/exams";
 import { questionContentIssues } from "../src/domain/questionContent";
 
 it("preserves all 800 published question records while adding new unit and foundation practice questions", () => {
@@ -18,6 +18,27 @@ it("preserves all 800 published question records while adding new unit and found
 });
 
 it("makes workbook headings 109 through 138 reachable as independent theory, visual, summary and practice content", () => {
+  // A bounded 40-question preview cannot contain every lesson in a growing pool.
+  // Verify the real seeded attempts, retaining the branch length and uniqueness checks.
+  const branchLessons = new Map(
+    examCatalogue()
+      .filter((exam) => exam.kind === "branch")
+      .map((exam) => {
+        const variants = Array.from({ length: 8 }, (_, i) =>
+          selectExamVariant(exam, `coverage-${i}`),
+        );
+        for (const variant of variants) {
+          expect(variant.length).toBeLessThanOrEqual(40);
+          expect(
+            new Set(variant.map((question) => question.id)).size,
+          ).toBe(variant.length);
+        }
+        return [
+          exam.id,
+          new Set(variants.flat().map((question) => question.lessonId)),
+        ];
+      }),
+  );
   const next = studyTopics.slice(108, 138),
     ids = new Set<string>();
   expect(next).toHaveLength(30);
@@ -56,9 +77,8 @@ it("makes workbook headings 109 through 138 reachable as independent theory, vis
           paragraph,
         );
     expect(
-      examCatalogue()
-        .find((e) => e.id === `branch-${lesson.subjectId}`)!
-        .items.some((q) => q.lessonId === lesson.id),
+      branchLessons.get(`branch-${lesson.subjectId}`)!.has(lesson.id),
+      lesson.id,
     ).toBe(true);
   }
   expect(ids.size).toBe(30);

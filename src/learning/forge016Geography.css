@@ -1,0 +1,245 @@
+.forge016-geography-lab {
+  min-width: 0;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+.forge016-geography-lab h3,
+.forge016-geography-lab h4 {
+  margin: 0 0 12px;
+}
+.forge016-geography-lab p {
+  margin: 14px 0;
+}
+.g016-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 24px;
+  margin: 24px 0;
+}
+.g016-control {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  margin: 20px 0;
+}
+.g016-control label,
+.g016-prediction > label {
+  display: block;
+  min-width: 0;
+}
+.g016-control input,
+.g016-control select,
+.g016-prediction textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+.g016-control input[type="range"] {
+  min-height: 44px;
+  margin-inline: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.g016-control input[type="number"],
+.g016-control select {
+  min-height: 44px;
+}
+.g016-selected {
+  display: block;
+  min-width: 0;
+  color: var(--muted);
+}
+.g016-result,
+.g016-feedback {
+  margin: 24px 0;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  min-width: 0;
+}
+.g016-result > strong {
+  display: block;
+}
+.g016-prediction {
+  min-width: 0;
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+.g016-prediction textarea {
+  resize: vertical;
+}
+.g016-prediction button {
+  max-width: 100%;
+  min-height: 44px;
+  font: inherit;
+  white-space: normal;
+  margin-top: 16px;
+}
+.g016-help,
+.forge016-geography-lab figcaption {
+  color: var(--muted);
+}
+.forge016-geography-lab figure {
+  margin: 24px 0;
+  min-width: 0;
+}
+.forge016-geography-lab figcaption {
+  margin-top: 14px;
+}
+.forge016-geography-lab details {
+  margin: 20px 0;
+  min-width: 0;
+}
+.forge016-geography-lab summary {
+  min-height: 44px;
+  padding: 12px 0;
+  cursor: pointer;
+  font: inherit;
+}
+.g016-data {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
+  gap: 12px;
+}
+.g016-data > div {
+  min-width: 0;
+  border-top: 1px solid var(--border);
+  padding: 12px 0;
+}
+.g016-data dt {
+  font-weight: 600;
+}
+.g016-data dd {
+  margin: 6px 0 0;
+}
+.g016-diagram {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 560px;
+}
+.g016-line,
+.g016-dashed {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 2;
+}
+.g016-dashed {
+  stroke-dasharray: 6 5;
+}
+.g016-gridline {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 1.5;
+}
+.g016-highlight,
+.g016-water,
+.g016-flow {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.g016-flow {
+  marker-end: var(--g016-arrow);
+}
+.g016-flow-head {
+  fill: var(--accent);
+}
+.g016-tick {
+  fill: var(--text);
+  font:
+    18px system-ui,
+    sans-serif;
+}
+.g016-on-accent {
+  fill: var(--accent-text);
+}
+.g016-node,
+.g016-land {
+  fill: var(--surface);
+  stroke: var(--muted);
+  stroke-width: 2;
+}
+.g016-node-selected,
+.g016-magma {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 1.5;
+}
+.g016-cave {
+  fill: var(--bg);
+  stroke: var(--muted);
+  stroke-width: 2;
+}
+.g016-bar {
+  fill: var(--muted);
+  fill-opacity: 0.4;
+  stroke: var(--text);
+  stroke-width: 1;
+}
+.g016-water-fill {
+  fill: var(--accent);
+  fill-opacity: 0.2;
+  stroke: var(--muted);
+  stroke-width: 2;
+}
+.g016-river {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 24;
+  stroke-linecap: round;
+}
+.g016-dot {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 1.5;
+}
+.g016-grain {
+  fill: var(--text);
+}
+.g016-deposit {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 14;
+  stroke-linecap: round;
+}
+@media (max-width: 700px) {
+  .g016-result > strong {
+    font-weight: 400;
+  }
+  .g016-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .g016-result,
+  .g016-feedback {
+    padding: 6px;
+  }
+  .g016-control input[type="number"],
+  .g016-control select,
+  .g016-prediction textarea {
+    padding-inline: 6px;
+  }
+  .g016-prediction button {
+    padding-inline: 8px;
+  }
+  .g016-data {
+    grid-template-columns: 1fr;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .forge016-geography-lab * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+html[data-motion="off"] .forge016-geography-lab * {
+  animation: none !important;
+  transition: none !important;
+}

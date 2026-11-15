@@ -1,0 +1,185 @@
+.bio016a {
+  margin-block: 1.5rem;
+  padding: clamp(0.8rem, 2vw, 1.5rem);
+  background: var(--surface);
+  border-block: 1px solid var(--border);
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+.bio016a h3 {
+  margin-block: 0 1rem;
+}
+.bio016a p {
+  line-height: 1.7;
+}
+.bio016a-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 1.2rem;
+  margin-block: 1.2rem;
+  min-width: 0;
+}
+.bio016a-field,
+.bio016a-prediction {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.6rem;
+  min-width: 0;
+}
+.bio016a-field > *,
+.bio016a-prediction > * {
+  min-width: 0;
+}
+.bio016a select,
+.bio016a textarea,
+.bio016a input[type="range"] {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-inline: 0;
+  min-height: 44px;
+}
+.bio016a-check {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.65rem;
+  align-items: flex-start;
+  min-height: 44px;
+}
+.bio016a-check input {
+  margin-top: 0.35rem;
+}
+.bio016a-check > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.bio016a output {
+  display: block;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+  white-space: normal;
+  overflow-wrap: break-word;
+  line-height: 1.7;
+}
+.bio016a-drawing {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 540px;
+  margin: 1rem auto;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg);
+  overflow: visible;
+}
+.bio016a-drawing text {
+  fill: var(--text);
+  font:
+    26px system-ui,
+    sans-serif;
+}
+.bio016a-drawing .bio016a-small {
+  font-size: 23px;
+}
+.bio016a-path {
+  color: var(--text);
+}
+.bio016a-path > path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 3;
+}
+.bio016a-inactive {
+  color: var(--muted);
+}
+.bio016a-inactive > path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 3;
+  stroke-dasharray: 5 5;
+}
+.bio016a-cell {
+  fill: var(--bg);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio016a-organ {
+  fill: var(--surface-2);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio016a-selected {
+  fill: var(--surface-2);
+  stroke: var(--accent);
+  stroke-width: 5;
+}
+.bio016a-bar {
+  fill: var(--surface-2);
+  stroke: var(--mint);
+  stroke-width: 3;
+}
+.bio016a-feedback-line {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2.5;
+}
+.bio016a-gridline {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 1;
+}
+.bio016a-night {
+  fill: none;
+  stroke: var(--mint);
+  stroke-width: 13;
+}
+.bio016a-dot {
+  fill: var(--text);
+}
+.bio016a-result,
+.bio016a-feedback {
+  min-width: 0;
+  padding: 1rem;
+  border-inline-start: 3px solid var(--mint);
+  background: var(--bg);
+  margin-block: 1rem;
+}
+.bio016a-prediction {
+  padding-block: 1rem;
+  border-top: 1px solid var(--border);
+}
+.bio016a-prediction button {
+  justify-self: start;
+  max-width: 100%;
+  min-height: 44px;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+@media (max-width: 440px) {
+  .bio016a {
+    padding: 0.75rem 6px;
+  }
+  .bio016a-controls {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .bio016a-result,
+  .bio016a-feedback {
+    padding: 0.75rem 6px;
+  }
+  .bio016a-prediction button {
+    width: 100%;
+    padding-inline: 6px;
+    gap: 6px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bio016a * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+[data-motion="off"] .bio016a * {
+  animation: none !important;
+  transition: none !important;
+}

@@ -93,7 +93,11 @@ export function Today({
             <ArrowRight size={18} />
           </button>
           <p className="hero-foot small">
-            {lessons.length} {t("readyLessonCount")} ·{" "}
+            {
+              lessons.filter((lesson) => !lesson.tags.includes("soru-seti"))
+                .length
+            }{" "}
+            {t("readyLessonCount")} ·{" "}
             {lessons.reduce(
               (total, lesson) => total + lesson.questions.length,
               0,

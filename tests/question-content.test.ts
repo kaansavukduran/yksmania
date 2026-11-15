@@ -43,6 +43,41 @@ it("detects the reported missing paragraph and rejects unrenderable figure refer
     }),
   ).toContain("Atıf yapılan şekil/grafik/tablo için soru ortamı tanımlı değil");
 });
+it("rejects references to absent photos, illustrations and maps even when the answer describes them", () => {
+  const base = lessonById("paragraf")!.questions[0];
+  for (const prompt of [
+    "Fotoğraftaki kıyı şekli hangisidir?",
+    "Fotoğrafta görülen kayaç nasıl oluşur?",
+    "Görseldeki vadi hangi dış kuvvetin eseridir?",
+    "Görselde gösterilen hücre hangi tiptir?",
+    "Haritadaki akarsu hangi denize dökülür?",
+  ])
+    expect(
+      questionContentIssues({
+        ...base,
+        passage: undefined,
+        prompt: txt(prompt),
+        hint: txt("Verileri karşılaştır."),
+        explanation: txt(
+          "Tanım cevabı açıklayabilir; eksik görüntüyü sağlamaz.",
+        ),
+      }),
+      prompt,
+    ).toContain(
+      "Atıf yapılan şekil/grafik/tablo için soru ortamı tanımlı değil",
+    );
+  expect(
+    questionContentIssues({
+      ...base,
+      passage: undefined,
+      prompt: txt(
+        "Akarsu eğimi, birim yatay uzaklıktaki yükselti değişimi olarak tanımlanıyor. 100 km'de 200 m alçalan akarsuyun ortalama eğimi yüzde kaçtır?",
+      ),
+      hint: txt("Yükselti ve uzaklık birimlerini eşitle."),
+    }),
+  ).toEqual([]);
+});
+
 it("all five reading items share the exact original passage and exploration, including the quoted qualifier", () => {
   const lesson = lessonById("paragraf")!;
   expect(lesson.questions).toHaveLength(5);

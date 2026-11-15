@@ -2,7 +2,7 @@ import type { Question } from "./model";
 const passageReference =
   /(?:^|[^\p{L}])(?:metnin|metni|metne|metinde|metinden|(?:bu|verilen|yukarıdaki|aşağıdaki) parça(?:nın|da|dan|ya))(?:[^\p{L}]|$)/u;
 const absentMediaReference =
-  /(?:^|[^\p{L}])(?:şekildeki|grafikteki|tablodaki|yukarıdaki şekil|aşağıdaki şekil|yukarıdaki grafik|aşağıdaki grafik|yukarıdaki tablo|aşağıdaki tablo)(?:[^\p{L}]|$)/u;
+  /(?:^|[^\p{L}])(?:şekildeki|grafikteki|tablodaki|fotoğraftaki|fotoğrafta|görseldeki|görselde|haritadaki|yukarıdaki şekil|aşağıdaki şekil|yukarıdaki grafik|aşağıdaki grafik|yukarıdaki tablo|aşağıdaki tablo)(?:[^\p{L}]|$)/u;
 const suppliedEquationReference = /verilen (?:toplam )?denkleme göre/u;
 const equationRelation = /[^\s]+\s*(?:→|⇌|⟶|->|=)\s*[^\s]+/u;
 // Current question cards support a passage and a self-contained stem/options.
