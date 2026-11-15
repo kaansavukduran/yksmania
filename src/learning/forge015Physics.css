@@ -67,7 +67,7 @@
 .physics015-lab svg text {
   fill: var(--text);
   font-family: inherit;
-  font-size: 15px;
+  font-size: var(--physics015-label-size, 15px);
 }
 .physics015-comparison {
   min-width: 0;

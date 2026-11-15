@@ -129,7 +129,8 @@
 }
 @media (max-width: 600px) {
   .forge015-chemistry {
-    padding: 14px 10px;
+    margin-inline: -11px;
+    padding: 14px 6px;
   }
   .c015-controls {
     grid-template-columns: minmax(0, 1fr);

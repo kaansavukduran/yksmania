@@ -17,6 +17,34 @@ async function feedback(l: Locator) {
   await expect(l.locator(".physics015-feedback")).toContainText(
     "Tahminin verilen koşullarla uyumlu.",
   );
+  const labels = await l.locator("svg[data-plot] text").evaluateAll((texts) =>
+    texts.map((text) => {
+      const element = text as SVGTextElement,
+        matrix = element.getScreenCTM(),
+        box = element.getBBox(),
+        frame = element.ownerSVGElement!.viewBox.baseVal;
+      return {
+        label: text.textContent,
+        insideFrame:
+          box.x >= frame.x - 0.01 &&
+          box.y >= frame.y - 0.01 &&
+          box.x + box.width <= frame.x + frame.width + 0.01 &&
+          box.y + box.height <= frame.y + frame.height + 0.01,
+        physicalFont: matrix
+          ? Math.hypot(matrix.a, matrix.b) *
+            parseFloat(getComputedStyle(text).fontSize)
+          : 0,
+      };
+    }),
+  );
+  expect(labels.length).toBeGreaterThan(0);
+  for (const label of labels) {
+    expect(
+      label.physicalFont,
+      `SVG etiketi: ${label.label}`,
+    ).toBeGreaterThanOrEqual(16);
+    expect(label.insideFrame, `SVG içinde: ${label.label}`).toBe(true);
+  }
 }
 export const physics015Cases = [
   forge015Case(

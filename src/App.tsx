@@ -52,12 +52,17 @@ function WebUpdates({
     needRefresh: [ready],
     updateServiceWorker,
   } = useRegisterSW();
+  // The development PWA hook can return a fresh updater each render. Keep
+  // its latest implementation without turning an App state notification into
+  // an effect/setApply/render loop. Production still invokes the latest worker.
+  const workerUpdater = useRef(updateServiceWorker);
+  workerUpdater.current = updateServiceWorker;
   useEffect(
     () =>
       onReady(ready, () => {
-        void updateServiceWorker(true);
+        void workerUpdater.current(true);
       }),
-    [ready, updateServiceWorker, onReady],
+    [ready, onReady],
   );
   return null;
 }

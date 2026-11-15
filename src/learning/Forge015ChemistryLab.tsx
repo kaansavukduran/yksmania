@@ -618,7 +618,7 @@ export default function Forge015ChemistryLab({
           slider("İlk N₂ kütlesi (g)", "nGrams", 0, 84, 7),
           slider("İlk H₂ kütlesi (g)", "hGrams", 0, 18, 1),
           slider("İlk NH₃ kütlesi (g)", "firstProduct", 0, 34, 8.5),
-          slider("Kapasitenin gerçekleşmesi (%)", "progress", 0, 100, 10),
+          slider("İlerleme (%)", "progress", 0, 100, 10),
         )}
         <Bars
           title="Son envanterin kütlesi"

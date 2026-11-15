@@ -106,6 +106,8 @@ export const chemistry015Cases = [
     async (_, l) => {
       await setRange(l, "İlk H₂ kütlesi (g)", 12);
       await setRange(l, "İlk NH₃ kütlesi (g)", 17);
+      await setRange(l, "İlerleme (%)", 50);
+      await setRange(l, "İlerleme (%)", 100);
       await compare(l, "N₂1 mol sınırlar; yeni34 g ile ilk17 g toplam51 g.");
     },
     async (_, l) => {
