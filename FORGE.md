@@ -1,10 +1,16 @@
-# 0.16.0 — 60 konuluk genişletmenin ürün kabulü
+# 0.16.0 — web ve alpha paket yayını doğrulandı
 
-Kaynak paketleri 016 ve 017 tek uygulama 0.16.0 güncellemesinde birleşti. Çalışma sırası 199–258: 60 farklı interaktif ünite, 678 bölüm/1.356 paragraf, 248 tam çözüm, 248 hatırlama ve 600 beş seçenekli özgün soru. Toplam 264 anlatım/236 rehber/264 yerleşik özet/2.440 soru; ilk 258/479 sıra hazır. Öğrenci PDF yüklemez. AYT havuzu 45/6075 s; eski devam eden 37 soruluk tam kopya korunur.
+Çalışma sırasının 199–258. başlıkları: 60 yeni etkileşimli ünite, 678 bölüm/1.356 paragraf, 248 tam çözüm, 248 hatırlama ve 600 özgün soru. Toplam 264 anlatım/236 rehber/264 yerleşik özet/2.440 soru; ilk 258/479 hazır. Öğrenci PDF yüklemez. Eski 1.840 soru ve 205 öğretim kaydı korunur. AYT kataloğu 45/6075 s; eski 37 soruluk devam eden taslak bütün soruları ve süresiyle korunur.
 
-Son check, 610 birim ve derleme geçti; 548 ürün tarayıcı vakası toplandı. Kaynak aileleri ayrı yazar ve bilimsel okuyucuyla denetlendi. Normal uygulama, aynı profil native, Pages 37 aile ve gerçek 0.15→0.16 web güncellemesi kabulü sürüyor. Uzak yayın kapıları tamamlanmadı; kaynak/dal adları yayın kanıtı sayılmaz.
+Kaynak/tag `bb60dfa4c6463d511085e58fe3124f803b5651c5`. [CI](https://github.com/kaansavukduran/yksmania/actions/runs/43756497076), [canlı kabul](https://github.com/kaansavukduran/yksmania/actions/runs/43756612914), [Pages](https://github.com/kaansavukduran/yksmania/actions/runs/43758617864) ve [paket yayını](https://github.com/kaansavukduran/yksmania/actions/runs/43760024382) aynı kaynakta başarılıdır. CI 610 birim/548 tarayıcı ve dört iş PASS; aynı kaynak önce özellik dalında da dört iş ile geçti. Canlı iş akışının 548 vakası **547 yayımlanmış HTTPS + bir gerçek yerel Vite geliştirme regresyonudur**. Pages üç iş PASS; normal/prefix 37 model ailesi ve iki eski soru rotası, ilk çevrimdışı kullanım, gerçek etkileşim, kayıt ve reload ile denetlendi. Gerçek Windows/Linux paketli süreç yeniden açılışı PASS; renderer hatası 0.
 
-Bugün sayacı, nötrleşme yuvarlaması, yakın göz ışınları, yanal fay okları, küçük Türkçe şema metni ve fizik karşılaştırma/eksen/yol kusurları kanıtla onarıldı. Önceki yayın ve ilk başarısız kayıtlar aşağıda korunur. Sonucun gerçek sınırları QA'dadır; bütün 479/bütün Drive/20 yıllık ÖSYM tamamlandı denmez.
+Gerçek 0.15→C7 web güncellemesinde bütün eski durum/belge/katalog, 5/5 oturum, tekrar tarihleri, kontrol edilmiş yanlış taslak/notlar, 37 soruluk AYT taslağı ve 870 bayt sentetik eski PDF korunur; XP 25→25. On iki yeni model bu profilde ilk kez çevrimdışı açılıp yenilendi. Bu iki native sürüm arası kurulum testi değildir.
+
+[0.16 alpha](https://github.com/kaansavukduran/yksmania/releases/tag/v0.16.0-alpha.1) aynı CI çıktılarından sekiz dosyadır. Tag/verified-run aynı kaynak ve main dalını doğrular; yedi checksum, sekiz GitHub digest ve indirilen iki kanıt dosyasının SHA256'sı eşleşir. Beş büyük binary yerelde ayrıca indirilip hashlenmedi. Android paket adı com.fragaria.yksmania, sürüm0.16.0/kod24/v2 imza. Vercel/Pages index, version ve sw dosyaları normal TLS ile ilgili dondurulmuş C7 çıktılarıyla aynıdır.
+
+Android alpha APK debug imzalıdır. Doğrulama dosyalarında 0.14, 0.15 ve 0.16 sertifikalarının farklı olduğu doğrulandı; bu APK önceki debug kurulumunun üzerine güncellenemez. Eski kurulumu kaldırmadan önce uygulamadaki kişisel ilerleme yedeğini dışa aktar. Kalıcı imza ve sürümler arasında kurulum kabulü sonraki geliştirme işidir.
+
+İlk başarısız yerel kayıtlar QA'da korunur; tam C7 yerel 548 PASS denmez. Tam C7 kabulü uzak CI ve yayımlanmış webde geçti. Fiziksel Android, temiz Windows kurulumu, portable taşıma ve native-to-native yükseltme test edilmedi. Bütün479, bütün Drive/YKS ve20 yıllık tüm ÖSYM tamamlanmadı. Sonraki içerik dalları özel hazırlıktır; yayın sayılmaz.
 
 ---
 

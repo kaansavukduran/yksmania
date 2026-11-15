@@ -1,4 +1,4 @@
-# 0.16: 199–258 sırasındaki 60 ünitenin kaynak yakın okuması
+# Yayımlanmış 0.16: 199–258 sırasındaki 60 ünitenin kaynak yakın okuması
 
 Canlı Aurelia/YKS klasörleri ve gerçek PDF baytları kullanıldı. Eski envanterde görünmeyen dosya yok sayılmadı; ilgili klasörler yeniden listelendi. Aşağıdaki sınırlar gerçek metin ve kritik sayfa görüntüsü okumalarıdır; bütün kitap veya bütün arşiv okunduğu anlamına gelmez. Ham PDF, özel dosya kimlikleri ve bağlantıları ürüne konulmadı.
 

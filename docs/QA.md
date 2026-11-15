@@ -1,8 +1,16 @@
-# 0.16.0 — kaynak kabulü geçti, ürün kabulü sürüyor
+# 0.16.0 — nihai C7 ürün ve yayın kabulü geçti
 
-60 yeni ünite, 678 bölüm, 1.356 paragraf, 248 çözümlü örnek ve 600 özgün soru: toplam 264 anlatım/236 rehber/264 özet/2.440 soru; ilk 258/479 başlık hazır. Check, 610/610 birim ve normal derleme PASS; 548 tarayıcı vaka toplandı. Tam tarayıcı/native/Pages/web güncellemesi ve uzak yayın henüz tamamlanmadı.
+60 yeni ünite, 678 bölüm, 1.356 paragraf, 248 çözümlü örnek ve 600 özgün soru: toplam 264 anlatım/236 rehber/264 özet/2.440 soru; ilk 258/479 başlık hazır. Check/610 birim/normal ve prefix derleme PASS. C7 kaynağında özellik dalı ve main CI ayrı ayrı548/548 tarayıcı ve dört paket işi PASS; yayımlanmış kabul548/548 (547 HTTPS+1 yerel Vite), Pages üç iş PASS. Gerçek paketli Windows/Linux yeniden açılış ve 0.15→C7 web güncellemesi geçti.
 
 Önceki yayımlanmış 0.15'in bütün 1.840 sorusu ve 205 ders kaydının soru dışı alanları golden karşılaştırmayla korunur. Özel kaynak 016 ara kontrolündeki 2.140 soru ve 235 kayıt da ayrıca korunur; bu özel ara kayıt ayrı yayımlanmış sürüm değildir. Zaman/keşif/sayfa öğrenme puanı üretmez.
+
+## Nihai yayın kanıtı
+
+Kaynak/tag `bb60dfa4c6463d511085e58fe3124f803b5651c5`. [CI](https://github.com/kaansavukduran/yksmania/actions/runs/43756497076), [canlı kabul](https://github.com/kaansavukduran/yksmania/actions/runs/43756612914), [Pages](https://github.com/kaansavukduran/yksmania/actions/runs/43758617864) ve [paket yayını](https://github.com/kaansavukduran/yksmania/actions/runs/43760024382) aynı kaynakta başarılıdır. Sekiz dosyalı release; Android 0.16.0 / kod 24 / v2. Yedi checksum ve sekiz GitHub asset digest eşleşir; iki küçük kanıt dosyası normal TLS ile indirilip hashlenir. Beş büyük binary yerelde ayrıca indirilmedi. Vercel/Pages üç çalışma dosyasının baytları dondurulmuş C7 ile aynı.
+
+Son C7 kimya değiştiricisi yedi model×iki görünümde14 vaka ve gerçek eski profilden12 yeni model ilk-offline yükseltme ile yerelde geçti; önceki tam yerel C5 koşusu494PASS/1FAIL/2kesilen/51çalışmayan olarak korunur. Tam C7 yerel 548 sonucu iddia edilmez; tam 548 uzak iki worker CI ve canlı akışta geçti. Yerel native/Pages37 aile kanıtı C5 kapsamındadır; C7'nin gerçek paket ve yayımlanmış Pages kapsamı yukarıdaki uzak işlerdir.
+
+Android alpha APK debug imzalıdır. Doğrulama dosyalarında 0.14, 0.15 ve 0.16 sertifikalarının farklı olduğu doğrulandı; bu APK önceki debug kurulumunun üzerine güncellenemez. Eski kurulumu kaldırmadan önce uygulamadaki kişisel ilerleme yedeğini dışa aktar. Kalıcı imza ve sürümler arasında kurulum kabulü sonraki geliştirme işidir. Fiziksel Android/temiz Windows/portable taşıma ve native sürümden native sürüme veri koruyan kurulum NOT TESTED.
 
 ## Kanıtlanan onarımlar
 
@@ -21,11 +29,11 @@ Kaynak bileşen QA'sı normal uygulama veya fiziksel cihaz kabulü diye sayılma
 
 ---
 
-Geliştirme testinin ilk tam koşusunda ortak Vite bağımlılık önbelleği iki gerçek HTTP504/Outdated Optimize Dep yanıtı verdi. Teste yalnız kendisine ait cacheDir eklendi; assertion ve süreler korunur. İlk Ctrl-C tool kabuğunu kapatsa da alt npm süreçleri çalıştığı için ikinci koşu dört browser worker ile çakıştı. PID ile sınırlandırılmış süreç temizliği sonrasında sıfır canlı test tarayıcısı doğrulandı; aynı eski AYT vakası değişmeyen C5 ile17,6s, sonraki iki-worker koşusunda19,8s PASS oldu. İki ilk eksik koşu ayrı korunur (138 PASS/1 FAIL ve79 PASS/1 FAIL; tam kabul değildir).
+Geliştirme testinin ilk tam koşusunda ortak Vite bağımlılık önbelleği iki gerçek HTTP504/Outdated Optimize Dep yanıtı verdi. Teste yalnız kendisine ait cacheDir eklendi; assertion ve süreler korunur. İlk Ctrl-C tool kabuğunu kapatsa da alt npm süreçleri çalıştığı için ikinci koşu dört browser worker ile çakıştı. PID ile sınırlandırılmış süreç temizliği sonrasında sıfır canlı test tarayıcısı doğrulandı; aynı eski AYT vakası değişmeyen C5 ile17,6s, sonraki iki worker koşusunda19,8s PASS oldu. İki ilk eksik koşu ayrı korunur (138 PASS/1 FAIL ve79 PASS/1 FAIL; tam kabul değildir).
 
 Gerçek ayrılmış C5 tam koşusu494 PASS/1 FAIL/2kesilen/51çalışmayan olarak bilinçli durduruldu. Atom yarıçapı etkinliğinin45px başlığı “karşılaştırma” sözcüğünü bölüyordu. İlk dar etiket onarımı tek başına yetmedi; son C7'de başlık “Önce kıyas koşulu”, erişilebilir ve görünür seçim etiketi “Örnek türü” oldu. Font, geometri,70soru/74bölüm ve model kayıtları değişmedi. Aynı katı RangeRect beklentili telefon regresyonu5,7s PASS; ortak KimyaB modülünün bütün yedi modeli son derlemeyle14/14 ayrı normal/telefon vakasında geçti. C5durdurulmuş koşusu tam PASS diye sunulmaz. Tam548 kabulü yeni adayda GitHub geliştirme dalında yapılacak; ana yayın öncesi kapıdır.
 
-Son C7 derlemesi ve tam TypeScript kontrolü PASS. Gerçek0.15→C7 web güncellemesi tekrar taze profilde12 yeni modelin ilk çevrimdışı kullanımını, tam eski state/belge/katalog aynılığını,37soruluk eski AYT taslağı ve45soruluk yeni kataloğu,5/5oturumu/üçtekrar/notları/870bayt eski sentetikPDF'yi korudu;XP25→25. PrefixC7 derlemesi ve son özel-veri/bağımlılık taraması PASS. C5native/Pages37aile kanıtları önceki C5 artefaktına aittir; son C7'nin tam548 ve gerçek paket kabulü ayrı GitHub geliştirme dalı kapısında doğrulanacaktır.
+Son C7 derlemesi ve tam TypeScript kontrolü PASS. Gerçek0.15→C7 web güncellemesi tekrar taze profilde12 yeni modelin ilk çevrimdışı kullanımını, tam eski state/belge/katalog aynılığını,37soruluk eski AYT taslağı ve45soruluk yeni kataloğu,5/5oturumu/üçtekrar/notları/870bayt eski sentetikPDF'yi korudu;XP 25→25. PrefixC7 derlemesi ve son özel-veri/bağımlılık taraması PASS. C5native/Pages37 aile kanıtları önceki C5 artefaktına aittir; son C7'nin tam 548 ve gerçek paket kabulü ayrı GitHub geliştirme dalı kapısında doğrulanacaktır.
 
 ## Tarihsel doğrulanmış 0.15 kaydı
 
