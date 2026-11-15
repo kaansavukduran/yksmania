@@ -43,6 +43,20 @@ async function readableWords(lab: Locator) {
         }
         throw Error("Sözcük bulunamadı: " + word);
       }),
+      allWords: [...root.querySelectorAll("button, p, label, legend, li, h3")].flatMap((element) => {
+        const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
+        const words: { value: string; rects: number }[] = [];
+        let node: Node | null;
+        while ((node = walker.nextNode())) {
+          for (const match of (node.textContent || "").matchAll(/\S+/g)) {
+            const range = document.createRange();
+            range.setStart(node, match.index!);
+            range.setEnd(node, match.index! + match[0].length);
+            words.push({ value: match[0], rects: [...range.getClientRects()].filter((rect) => rect.width > 0).length });
+          }
+        }
+        return words;
+      }),
       controls: [...root.querySelectorAll("button, select, textarea")].map(
         (element) => ({
           name: element.getAttribute("aria-label") || element.textContent,
@@ -55,6 +69,8 @@ async function readableWords(lab: Locator) {
     expect(word.font).toBe(evidence.font);
     expect(word.rects, word.word).toBe(1);
   }
+  for (const word of evidence.allWords)
+    expect(word.rects, word.value).toBe(1);
   for (const control of evidence.controls)
     expect(control.height, control.name || "control").toBeGreaterThanOrEqual(
       44,

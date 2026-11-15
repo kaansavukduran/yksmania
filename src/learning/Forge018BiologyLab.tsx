@@ -28,6 +28,8 @@ import {
 import "./forge018Biology.css";
 const n = (x: number) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 2 }).format(x);
+const evidence018 = (text: string) =>
+  text.replaceAll("gösterilmez", "yer almaz");
 const bound = (x: number, a: number, b: number) =>
   Number.isFinite(x) ? Math.max(a, Math.min(b, x)) : a;
 function Drawing({
@@ -308,9 +310,9 @@ function IntestineLab() {
       <p>
         Şema tek bir emici epitel hücresinin kesitidir. Üst lümen, alt iç
         ortamdır; bir villusun tamamı değildir. Seçilen yolun diğer koşulları
-        sağlam kabul edilir; sayısal emilim hızı hesaplanmaz. Na düğmesi yalnız
-        glikoz kartındaki özel koşulu değiştirir; tüm aminoasit taşıyıcılarını
-        temsil etmez.
+        sağlam kabul edilir; sayısal emilim hızı hesabı yapılmaz. Na düğmesi
+        yalnız glikoz kartındaki özel koşulu değiştirir; tüm aminoasit
+        taşıyıcılarını temsil etmez.
       </p>
       <div className="bio018-controls">
         <Choice
@@ -400,14 +402,14 @@ function IntestineLab() {
         </text>
       </Drawing>
       <p>
-        Üstteki kısa çizgiler mikrovillusları temsil eder. Alt sol ok kılcal
-        kan/portal yolu; alt sağ ok şilomikronun lakteal yolunu gösterir. Kesik
-        ok, bu kartta engelli basamaktır.
+        Üstteki kısa çizgiler mikrovillus denen çıkıntıları temsil eder. Alt sol
+        ok kılcal kan/portal yolu; alt sağ ok şilomikron paketinin lakteal
+        yolunu gösterir. Kesik ok, bu kartta engelli basamaktır.
       </p>
       <Result>
         <strong>İlk çıkış: {m.exit ? m.route : "Bu yol engelli"}</strong>
         <p>
-          {intestinalCargo018[cargo]}: {m.evidence}
+          {intestinalCargo018[cargo]}: {evidence018(m.evidence)}
         </p>
       </Result>
       <Prediction
@@ -419,7 +421,7 @@ function IntestineLab() {
           ["blocked", "Bu yol engelli"],
         ]}
         expected={!m.exit ? "blocked" : m.lymph ? "lymph" : "blood"}
-        explanation={m.evidence}
+        explanation={evidence018(m.evidence)}
       />
     </section>
   );
@@ -444,7 +446,7 @@ function EnzymesLab() {
       <p>
         Üst ağ başlıca sinyali, alt ağ seçici proteaz başlangıcını gösterir.
         Diğer enzim koşulları sağlamdır. Kesim sayısı ayrı verilen hidroliz
-        verisidir; hormon düğmesinden otomatik hız çıkarılmaz.
+        verisidir; hormon seçiminden otomatik hız çıkarılmaz.
       </p>
       <div className="bio018-controls">
         <Choice
@@ -544,7 +546,7 @@ function EnzymesLab() {
       </Drawing>
       <Result>
         <strong>
-          {m.hormone}: {m.target}
+          {m.hormone}: <span className="bio018-target">{m.target}</span>
         </strong>
         <p>
           Tripsin: {m.trypsin ? "Bu başlangıç açık" : "Bu başlangıç engelli"}.
@@ -563,7 +565,7 @@ function EnzymesLab() {
           ["blocked", "Proteaz başlangıcı engelli"],
         ]}
         expected={m.trypsin ? "active" : "blocked"}
-        explanation="Enteropeptidaz ve tripsinojen bu modelde birlikte gerekir. Bu özel ağın engeli amilazın da yokluğunu göstermez; kesim sayısı ayrıca verilmiş bağımsız veridir."
+        explanation="Bağırsak başlatıcı enzimi ve tripsinojen bu modelde birlikte gerekir. Bu özel ağın engeli amilazın da yokluğunu göstermez; kesim sayısı ayrıca verilmiş bağımsız veridir."
       />
     </section>
   );
@@ -585,9 +587,9 @@ function LiverLab() {
     <section className="bio018" data-forge018={id}>
       <h3>Bir kanalı kapat, diğer ağı izle</h3>
       <p>
-        Öğretim şeması karaciğerden ortak yola doğrudan bağlantı varsayar. Kan
-        damarları bu seçici kanal deneyinde sağlamdır. Kese yokluğu ile safra
-        üretiminin yokluğu aynı koşul değildir.
+        Öğretim şeması karaciğer kaynaklı ortak yola doğrudan bağlantı varsayar.
+        Kan damarları bu seçici kanal deneyinde sağlamdır. Kese yokluğu ile
+        safra üretiminin yokluğu aynı koşul değildir.
       </p>
       <div className="bio018-controls">
         <Choice
@@ -715,7 +717,7 @@ function LiverLab() {
           ["blocked", "Doğrudan yol engelli"],
         ]}
         expected={m.direct ? "open" : "blocked"}
-        explanation="Sistik yol keseye aittir. Bu şemada karaciğerin doğrudan çıkışını ortak safra yolu engeli keser; kese yokluğu üretimi tek başına durdurmaz."
+        explanation="Sistik yol keseye aittir. Bu şemada karaciğer organının doğrudan çıkışını ortak safra yolu engeli keser; kese yokluğu üretimi tek başına durdurmaz."
       />
     </section>
   );
@@ -836,7 +838,7 @@ function PancreasLab() {
           ["equal", "Artık yok"],
         ]}
         expected={m.acidLeft > 0 ? "acid" : m.baseLeft > 0 ? "base" : "equal"}
-        explanation={`Teslim ${n(m.delivered)}, asit ${n(m.acidUnits)}: küçük miktar kadar bire bir nötralizasyon. Üretilmiş olup ulaşmayan baz lümen hesabından çıkar; pH bulunmaz.`}
+        explanation={`Teslim ${n(m.delivered)}, asit ${n(m.acidUnits)}: küçük miktar kadar bire bir asit ve baz tepkimesi. Üretilmiş olup ulaşmayan baz lümen hesabına girmez; pH bulunmaz.`}
       />
     </section>
   );
@@ -862,7 +864,7 @@ function HeartLab() {
         Karşıdan bakışta bedenin sağı şeklin solundadır. Bu dört odacıklı akış
         şeması anatomik ölçekli kesit değildir. Daireler kapakları, düz ok açık
         geçişi, kesik ok kapalı geçişi gösterir; duvar ve çıkış yönünün gerçek
-        biçimi sadeleştirilmiştir.
+        biçimi sade çizilir.
       </p>
       <div className="bio018-controls">
         <Choice
@@ -1015,7 +1017,7 @@ function HeartLab() {
               ? "Bütün kapaklar kapalı; bu kısa evrede ventrikül hacmi yaklaşık sabittir."
               : phase === "eject"
                 ? "Ventrikül basıncı çıkış arterini aşar, fırlatma yolu açılır."
-                : "Ventrikül basıncı atriyumdan düşük; dolum yolu açıktır."}
+                : "Karıncık içi basınç kulakçık içi basınçtan düşük; dolum yolu açık."}
         </p>
       </Result>
       <Prediction
@@ -1027,7 +1029,7 @@ function HeartLab() {
           ["closed", "Tümü kapalı"],
         ]}
         expected={m.av ? "av" : m.semilunar ? "semi" : "closed"}
-        explanation="Kapaklar basınç farkıyla açılır. Hacim sabit kasılma ve gevşemede iki kapak grubu da kapalıdır; kasılma her an dışa akış demek değildir."
+        explanation="Kapaklar basınç farkıyla açılır. Hacim sabit kasılma ve gevşeme evresinde iki kapak grubu da kapalıdır; kasılma her an dışa akış demek değildir."
       />
     </section>
   );
@@ -1236,8 +1238,8 @@ function BloodLab() {
     <section className="bio018" data-forge018={id}>
       <h3>Hacim payını ve pıhtı ağını ayrı incele</h3>
       <p>
-        Sol tüp antikoagülanlı kanın ayrılmış hacim modelidir; ince
-        akyuvar-trombosit katı burada ölçeklenmemiştir. Sağ çizim seçici
+        Sol tüp pıhtı önleyici ekli kanın ayrılmış hacim modelidir; ince
+        akyuvar-trombosit katı burada ölçekli çizilmez. Sağ çizim seçici
         hemostaz kartıdır; iki deney aynı anda santrifüj tüpünde pıhtı
         oluştuğunu söylemez.
       </p>
@@ -1334,7 +1336,8 @@ function BloodLab() {
         </text>
       </Drawing>
       <Result>
-        <strong>Hematokrit: %{n(m.hematocrit)}.</strong>
+        <strong>Hct: %{n(m.hematocrit)}.</strong>
+        <p>Hct, alyuvar hacminin toplam kan hacmine oranıdır.</p>
         <p>
           {n(m.packed)}/{n(m.total)} ×100. Diğer hacim {n(m.rest)} mL; bu oran
           eritrosit sayısını tek başına vermez.
@@ -1365,7 +1368,7 @@ function BloodLab() {
                 ? "fibrin"
                 : "none"
         }
-        explanation="Bu seçici deneyde trombosit tıkacı ve faktörlerin fibrin yolu ayrı değişir. Gerçek hemostaz etkileşimlidir; ABO aglütinasyonu bu protein ağıyla aynı mekanizma değildir."
+        explanation="Bu seçici deneyde trombosit tıkacı ve faktörlerin fibrin yolu ayrı değişir. Gerçek hemostaz bir bütündür; bu yollar birlikte işler; ABO’da alyuvarın bir araya gelmesi bu protein ağıyla aynı yol değildir."
       />
     </section>
   );
@@ -1400,9 +1403,8 @@ function LymphLab() {
       <h3>İki eşit yarı yerine iki farklı havza</h3>
       <p>
         Önden bakış: bedenin sağı şeklin soludur. Seçilen bölgenin büyük kanalı
-        gösterilir; ince dalların anatomik biçimi sadeleştirilmiştir. Sıvı
-        hesabında verilen giriş, doğrudan kan dönüşü düşülmüş net doku
-        girişidir.
+        gösterilir; ince dalların anatomik biçimi sade çizilir. Sıvı hesabında
+        verilen giriş, doğrudan kan dönüşü düşülmüş net doku girişidir.
       </p>
       <div className="bio018-controls">
         <Choice
@@ -1502,7 +1504,7 @@ function LymphLab() {
         <p>
           {m.blocked
             ? "Seçili yol kapalı: bu modelde çıkış sıfır. Kan dolaşımı otomatik kapanmaz."
-            : "Çıkış kapasiteyle sınırlı; mevcut sıvıdan fazlası taşınmaz."}
+            : "Çıkış kapasite ile sınırlı; mevcut sıvıdan fazlası taşınmaz."}
         </p>
       </Result>
       <Prediction
@@ -1519,7 +1521,7 @@ function LymphLab() {
           ["thoracic", "Göğüs kanalı / sol köşe"],
         ]}
         expected={m.right ? "right" : "thoracic"}
-        explanation="Sağ üst bölgenin seçili örnekleri sağ kanala gider. Sağ bacak da dahil alt bölgeler ve sol üst bölüm göğüs kanalına katılır; tüm sağ beden tek kanala bağlanmaz."
+        explanation="Sağ üst bölgenin seçili örnekleri sağ kanala gider. Sağ bacak da dahil alt bölgeler ve sol üst bölüm göğüs kanalına katılır; tüm sağ beden tek kanala katılmaz."
       />
     </section>
   );

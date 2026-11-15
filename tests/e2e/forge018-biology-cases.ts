@@ -203,7 +203,7 @@ export const biology018Cases = [
     },
     async (_page, lab) => {
       await expect(lab.locator("[data-model-result]")).toContainText(
-        "Hematokrit: %30",
+        "Hct: %30",
       );
       await expect(lab.locator("[data-model-result]")).toContainText(
         "Trombosit tıkacı yok, fibrin yolu sağlam",

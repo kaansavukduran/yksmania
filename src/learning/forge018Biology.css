@@ -281,3 +281,13 @@
   animation: none !important;
   transition: none !important;
 }
+
+@media (max-width: 440px) {
+  .bio018-check {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 6px;
+  }
+  .bio018-target {
+    font-weight: 400;
+  }
+}
