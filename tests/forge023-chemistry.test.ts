@@ -25,13 +25,50 @@ import {
 } from "../src/learning/forge023Chemistry";
 const fixtures = vi.hoisted(() => ({
   values: {} as Record<string, Record<string, string | number | boolean>>,
+  nodes: [] as { type: unknown; props: Record<string, unknown> }[],
+  writes: vi.fn(),
 }));
-vi.mock("../src/learning/useExploration", () => ({
-  useExploration: (id: string, defaults: object) => [
-    { ...defaults, ...fixtures.values[id] },
-    vi.fn(),
-  ],
+vi.mock("../src/store", () => ({
+  useApp: () => ({
+    state: { explorations: fixtures.values },
+    update: (
+      fn: (s: { explorations: typeof fixtures.values }) => {
+        explorations: typeof fixtures.values;
+      },
+    ) => {
+      const next = fn({ explorations: fixtures.values });
+      fixtures.values = next.explorations;
+      fixtures.writes(next);
+      return Promise.resolve();
+    },
+  }),
 }));
+vi.mock("react/jsx-runtime", async (original) => {
+  const actual = await original<typeof import("react/jsx-runtime")>();
+  const capture =
+    (fn: typeof actual.jsx) =>
+    (...args: Parameters<typeof actual.jsx>) => {
+      const node = fn(...args);
+      fixtures.nodes.push(
+        node as { type: unknown; props: Record<string, unknown> },
+      );
+      return node;
+    };
+  return { ...actual, jsx: capture(actual.jsx), jsxs: capture(actual.jsxs) };
+});
+vi.mock("react/jsx-dev-runtime", async (original) => {
+  const actual = await original<typeof import("react/jsx-dev-runtime")>();
+  return {
+    ...actual,
+    jsxDEV: (...args: Parameters<typeof actual.jsxDEV>) => {
+      const node = actual.jsxDEV(...args);
+      fixtures.nodes.push(
+        node as { type: unknown; props: Record<string, unknown> },
+      );
+      return node;
+    },
+  };
+});
 import Lab from "../src/learning/Forge023ChemistryLab";
 
 describe("five source-backed hydrocarbon and functional-group units", () => {
@@ -499,3 +536,308 @@ describe("five source-backed hydrocarbon and functional-group units", () => {
     fixtures.values = {};
   });
 });
+
+const restoreCases023: [
+  string,
+  Record<string, string | number | boolean>,
+  string,
+  string,
+][] = [
+  [
+    "ayt-sikloalkanlar",
+    {
+      first: "cyclopentane",
+      second: "pent1",
+      focus: 2,
+      prediction: "isomer",
+      reason: "C5H10",
+      checked: true,
+    },
+    "focus",
+    "2",
+  ],
+  [
+    "ayt-alkenler",
+    {
+      kind: "propene",
+      reaction: "water",
+      stage: 2,
+      trans: false,
+      focus: 3,
+      view: "reaction",
+      polymer: "ethene",
+      units: 3,
+      prediction: "no",
+      reason: "Pi0",
+      checked: true,
+    },
+    "stage",
+    "2",
+  ],
+  [
+    "ayt-alkinler",
+    {
+      kind: "propyne",
+      reaction: "water",
+      stage: 2,
+      focus: 0,
+      prediction: "yes",
+      reason: "C≡CH",
+      checked: true,
+    },
+    "stage",
+    "2",
+  ],
+  [
+    "ayt-arenler",
+    {
+      kind: "xylene",
+      position: 2,
+      depiction: "b",
+      focus: 0,
+      prediction: "yes",
+      reason: "C/H",
+      checked: true,
+    },
+    "position",
+    "2",
+  ],
+  [
+    "ayt-alkoller",
+    {
+      kind: "lactic",
+      group: 1,
+      focus: 1,
+      prediction: "yes",
+      reason: "OH",
+      checked: true,
+    },
+    "group",
+    "1",
+  ],
+];
+function restoreRender023(id: string) {
+  fixtures.nodes = [];
+  return renderToStaticMarkup(createElement(Lab, { lessonId: id }));
+}
+function native023(
+  type: string,
+  predicate: (p: Record<string, unknown>) => boolean = () => true,
+) {
+  return fixtures.nodes.find((n) => n.type === type && predicate(n.props))!
+    .props;
+}
+function input023(
+  type: string,
+  predicate: (p: Record<string, unknown>) => boolean,
+  value: string,
+) {
+  const props = native023(type, predicate);
+  (props.onChange as (e: { target: { value: string } }) => void)({
+    target: { value },
+  });
+}
+function select023(label: string, value: string) {
+  const props = native023("label", (p) => p.children === label);
+  input023("select", (p) => p.id === props.htmlFor, value);
+}
+function button023(text: string) {
+  return native023("button", (p) => p.children === text);
+}
+
+describe("023 chemistry raw saved selection boundary", () => {
+  it("closes the five actual typeof-filter stale-feedback counterexamples and repairs on the first reason callback", () => {
+    for (const [id, state, field, bad] of restoreCases023) {
+      const key = "forge023:chemistry:" + id;
+      fixtures.values = { [key]: { ...state, [field]: bad } };
+      let html = restoreRender023(id);
+      expect(html, id).not.toContain('class="c023-feedback"');
+      expect(button023("Kıyasla").disabled, id).toBe(true);
+      input023("textarea", () => true, "C");
+      expect(typeof fixtures.values[key][field], id).toBe("number");
+      expect(fixtures.values[key]).toMatchObject({
+        reason: "C",
+        checked: false,
+      });
+      html = restoreRender023(id);
+      expect(html).not.toContain('class="c023-feedback"');
+      expect(button023("Kıyasla").disabled).toBe(false);
+      (button023("Kıyasla").onClick as () => void)();
+      expect(restoreRender023(id)).toContain('class="c023-feedback"');
+    }
+    fixtures.values = {};
+    fixtures.writes.mockClear();
+  });
+  it("rejects active enum,range and boolean corruption but ignores inactive fields and persists a complete canonical record", () => {
+    const active: [
+      string,
+      Record<string, string | number | boolean>,
+      Record<string, string | number | boolean>,
+    ][] = [
+      [
+        "ayt-sikloalkanlar",
+        restoreCases023[0][1],
+        { first: "constructor", second: "__proto__", focus: 99 },
+      ],
+      [
+        "ayt-alkenler",
+        { ...restoreCases023[1][1], kind: "but2" },
+        {
+          kind: "constructor",
+          reaction: "constructor",
+          stage: 1.5,
+          trans: "true",
+          focus: 99,
+          view: "constructor",
+        },
+      ],
+      [
+        "ayt-alkinler",
+        restoreCases023[2][1],
+        { kind: "constructor", reaction: "__proto__", stage: 99, focus: -1 },
+      ],
+      [
+        "ayt-arenler",
+        restoreCases023[3][1],
+        {
+          kind: "constructor",
+          depiction: "constructor",
+          position: 99,
+          focus: NaN,
+        },
+      ],
+      [
+        "ayt-alkoller",
+        restoreCases023[4][1],
+        { kind: "constructor", group: 99, focus: Infinity },
+      ],
+    ];
+    const warn = vi.spyOn(console, "error").mockImplementation(() => {});
+    for (const [id, state, bads] of active)
+      for (const [field, bad] of Object.entries(bads)) {
+        const key = "forge023:chemistry:" + id;
+        fixtures.values = { [key]: { ...state, [field]: bad } };
+        expect(restoreRender023(id), `${id}:${field}`).not.toContain(
+          'class="c023-feedback"',
+        );
+        expect(button023("Kıyasla").disabled).toBe(true);
+        input023("textarea", () => true, "0");
+        restoreRender023(id);
+        expect(button023("Kıyasla").disabled).toBe(false);
+        (button023("Kıyasla").onClick as () => void)();
+        expect(restoreRender023(id)).toContain('class="c023-feedback"');
+      }
+    for (const [id, state, hidden] of [
+      [
+        "ayt-alkenler",
+        restoreCases023[1][1],
+        { polymer: "constructor", units: 99, trans: "true" },
+      ],
+      [
+        "ayt-arenler",
+        { ...restoreCases023[3][1], kind: "benzene" },
+        { position: "3" },
+      ],
+      [
+        "ayt-arenler",
+        { ...restoreCases023[3][1], kind: "cyclohexane" },
+        { position: 99, depiction: "constructor" },
+      ],
+    ] as const) {
+      const key = "forge023:chemistry:" + id;
+      fixtures.values = { [key]: { ...state, ...hidden } };
+      expect(restoreRender023(id)).toContain('class="c023-feedback"');
+      input023("textarea", () => true, "O");
+      expect(restoreRender023(id)).not.toContain('class="c023-feedback"');
+      expect(button023("Kıyasla").disabled).toBe(false);
+      if (id === "ayt-alkenler")
+        expect(fixtures.values[key]).toMatchObject({
+          polymer: "ethene",
+          units: 4,
+          trans: false,
+        });
+      else
+        expect(fixtures.values[key].position).toBe(
+          typeof hidden.position === "string" ? 1 : 3,
+        );
+    }
+    expect(warn).not.toHaveBeenCalled();
+    warn.mockRestore();
+    fixtures.values = {};
+    fixtures.writes.mockClear();
+  });
+  it("canonicalizes focus,group,step,view and polymer callbacks without reopening old feedback", () => {
+    for (const [id, state, field, bad] of restoreCases023) {
+      const key = "forge023:chemistry:" + id;
+      fixtures.values = { [key]: { ...state, [field]: bad } };
+      restoreRender023(id);
+      select023("Atomu seç", "0");
+      expect(typeof fixtures.values[key][field]).toBe("number");
+      expect(fixtures.values[key].checked).toBe(false);
+      expect(restoreRender023(id)).not.toContain('class="c023-feedback"');
+    }
+    const id = "ayt-alkenler",
+      key = "forge023:chemistry:" + id;
+    fixtures.values = {
+      [key]: {
+        ...restoreCases023[1][1],
+        stage: "2",
+        polymer: "constructor",
+        units: 99,
+      },
+    };
+    restoreRender023(id);
+    (button023("Zincir kur").onClick as () => void)();
+    expect(fixtures.values[key]).toMatchObject({
+      stage: 0,
+      polymer: "ethene",
+      units: 4,
+      view: "polymer",
+      checked: false,
+    });
+    restoreRender023(id);
+    select023("Monomer", "vinyl");
+    restoreRender023(id);
+    select023("Tekrar sayısı", "2");
+    expect(fixtures.values[key]).toMatchObject({ polymer: "vinyl", units: 2 });
+    expect(restoreRender023(id)).toContain("PVC");
+    (button023("Katılma").onClick as () => void)();
+    restoreRender023(id);
+    (button023("Ürün").onClick as () => void)();
+    expect(fixtures.values[key].stage).toBe(2);
+    const fid = "ayt-alkoller",
+      fk = "forge023:chemistry:" + fid;
+    fixtures.values = { [fk]: { ...restoreCases023[4][1], group: "1" } };
+    restoreRender023(fid);
+    const group = fixtures.nodes.find(
+      (n) =>
+        n.type === "button" &&
+        Array.isArray(n.props.children) &&
+        (n.props.children as unknown[]).includes("İkincil –OH"),
+    )!.props;
+    (group.onClick as () => void)();
+    expect(fixtures.values[fk]).toMatchObject({ group: 1, checked: false });
+    fixtures.values = {};
+    fixtures.writes.mockClear();
+  });
+  it("keeps blank reasons closed and preserves the120-character input contract", () => {
+    const [id, state] = restoreCases023[0],
+      key = "forge023:chemistry:" + id;
+    for (const reason of ["", " ", "\n\t"]) {
+      fixtures.values = { [key]: { ...state, reason } };
+      expect(restoreRender023(id)).not.toContain('class="c023-feedback"');
+      expect(button023("Kıyasla").disabled).toBe(true);
+    }
+    fixtures.values = { [key]: { ...state, focus: "2" } };
+    restoreRender023(id);
+    input023("textarea", () => true, "A".repeat(140));
+    expect(fixtures.values[key].reason).toHaveLength(120);
+    expect(native023AfterRender(id).maxLength).toBe(120);
+    fixtures.values = {};
+    fixtures.writes.mockClear();
+  });
+});
+function native023AfterRender(id: string) {
+  restoreRender023(id);
+  return native023("textarea");
+}

@@ -1,4 +1,21 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
+import { createElement } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
+const restore023 = vi.hoisted(() => ({
+  state: { explorations: {} as Record<string, Record<string, unknown>> },
+  writes: 0,
+}));
+vi.mock("../src/store", () => ({
+  useApp: () => ({
+    state: restore023.state,
+    update: (fn: (s: typeof restore023.state) => typeof restore023.state) => {
+      restore023.state = fn(restore023.state);
+      restore023.writes++;
+      return Promise.resolve();
+    },
+  }),
+}));
+import Forge023BiologyLab from "../src/learning/Forge023BiologyLab";
 import { questionContentIssues } from "../src/domain/questionContent";
 import { questionGuidanceSchema } from "../src/domain/questionHelpModel";
 import {
@@ -186,5 +203,83 @@ describe("cover tissue and root anatomy with explicit compartment and barrier co
     expect(() =>
       rootPath023("apoplast", true, "water", 1 as never, 12, 3),
     ).toThrow(RangeError);
+  });
+});
+
+describe("older biology raw restore boundary", () => {
+  it("uses the actual exploration hook while rejecting wrong types, enums and off-grid active records", () => {
+    const cases: [string, string, Record<string, unknown>[]][] = [
+      [
+        "bitki-ortu-doku",
+        "in",
+        [
+          { solute: "-12" },
+          { pressure: "4" },
+          { outside: "-3" },
+          { solute: 1 },
+          { pressure: 16 },
+          { outside: -31 },
+          { pressure: 0.5 },
+        ],
+      ],
+      [
+        "bitki-kok-anatomisi",
+        "blocked",
+        [
+          { route: 7 },
+          { cargo: false },
+          { bandIntact: "true" },
+          { count: "12" },
+          { stage: "0" },
+          { route: "constructor" },
+          { cargo: "gone" },
+          { count: 25 },
+          { stage: -1 },
+          { stage: 0.5 },
+          { cargo: "ion", ionEntry: "false" },
+        ],
+      ],
+    ];
+    for (const [lessonId, prediction, invalid] of cases) {
+      const key = "forge023:biology:" + lessonId;
+      const base = { prediction, reason: "ψd>ψh", checked: true };
+      for (const patch of invalid) {
+        restore023.state = { explorations: { [key]: { ...base, ...patch } } };
+        restore023.writes = 0;
+        const html = renderToStaticMarkup(
+          createElement(Forge023BiologyLab, { lessonId }),
+        );
+        expect(html).not.toContain("bio023-feedback");
+        expect(html).toMatch(
+          /<button[^>]*disabled=""[^>]*>Kanıtı karşılaştır<\/button>/,
+        );
+        expect(restore023.writes).toBe(0);
+      }
+    }
+  });
+  it("keeps unrelated anatomy fields independent and accepts short scientific reasons", () => {
+    for (const [lessonId, patch, prediction] of [
+      ["bitki-ortu-doku", { surface: 9 }, "in"],
+      [
+        "bitki-kok-anatomisi",
+        { view: 9, kind: 9, zone: 9, ionEntry: "bad" },
+        "blocked",
+      ],
+    ] as const) {
+      restore023.state = {
+        explorations: {
+          ["forge023:biology:" + lessonId]: {
+            ...patch,
+            prediction,
+            reason: "ψd>ψh",
+            checked: true,
+          },
+        },
+      };
+      expect(
+        renderToStaticMarkup(createElement(Forge023BiologyLab, { lessonId })),
+      ).toContain("bio023-feedback");
+    }
+    restore023.state = { explorations: {} };
   });
 });

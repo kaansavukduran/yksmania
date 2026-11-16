@@ -1,6 +1,7 @@
 // Earlier releases stored the worked-example/recall tabs as ordinal positions.
 // Adding teaching before those tabs must keep the learner on the same activity.
 const legacySectionCounts: Readonly<Record<string, number>> = {
+  "turev-teget": 11,
   paragraf: 7,
   "elektrik-alan": 8,
   "kimyasal-denge": 11,

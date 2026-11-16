@@ -1,4 +1,5 @@
 import { useId } from "react";
+import { useApp } from "../store";
 import { useExploration } from "./useExploration";
 import {
   allocation023A,
@@ -207,10 +208,9 @@ export default function Forge023HumanitiesALab({
   lessonId: string;
 }) {
   const uid = useId(),
-    [saved, set] = useExploration(
-      `forge023-humanities-a:${lessonId}`,
-      humanitiesADefaults023,
-    );
+    explorationKey = `forge023-humanities-a:${lessonId}`,
+    { state } = useApp(),
+    [saved, persist] = useExploration(explorationKey, humanitiesADefaults023);
   const pick = (
     key: keyof typeof saved,
     allowed: string[],
@@ -276,6 +276,52 @@ export default function Forge023HumanitiesALab({
             : lessonId === "gonul-cografyamiz"
               ? "heritage"
               : "life";
+  const canonical = {
+    concept: pick("concept", Object.keys(conceptCases023A), "fitra"),
+    term: pick("term", Object.keys(beliefTerms023A), "destiny"),
+    action: pick("action", Object.keys(worshipActions023A), "prayer"),
+    intent: pick("intent", ["devotion", "unknown", "display"], "unknown"),
+    conditions: typeof saved.conditions === "boolean" ? saved.conditions : true,
+    done: typeof saved.done === "boolean" ? saved.done : false,
+    needA: num("needA", 0, 12, 2),
+    needB: num("needB", 0, 12, 6),
+    resource: num("resource", 0, 24, 8),
+    method: pick("method", ["need", "equal"], "equal"),
+    talk: pick("talk", ["quiet", "social"], "quiet"),
+    task: pick("task", ["kept", "missed", "unknown"], "kept"),
+    place: pick("place", Object.keys(heritagePlaces023A), "medina"),
+    route: pick("route", ["east", "west", "mixed"], "mixed"),
+    art: pick("art", Object.keys(arts023A), "illumination"),
+    stage: num("stage", 0, 2, 0),
+    needed: num("needed", 0, 60, 40),
+    waste: num("waste", 0, 40, 20),
+    recovery: num("recovery", 0, 100, 0),
+    selected: 0,
+  };
+  const activeFields: (keyof typeof canonical)[] = {
+    concept: ["concept", "term"],
+    worship: ["action", "intent", "conditions", "done"],
+    allocation: ["needA", "needB", "resource", "method"],
+    youth: ["talk", "task"],
+    heritage: ["place", "route"],
+    life: ["art", "stage", "needed", "waste", "recovery"],
+  }[mode] as (keyof typeof canonical)[];
+  const raw = state.explorations[explorationKey] ?? {};
+  const selectionValid = activeFields.every(
+    (key) =>
+      (!Object.hasOwn(raw, key) ||
+        typeof raw[key] === typeof humanitiesADefaults023[key]) &&
+      saved[key] === canonical[key],
+  );
+  const set = (patch: Parameters<typeof persist>[0]) =>
+    persist({
+      ...canonical,
+      reason: selectionValid ? saved.reason.slice(0, 120) : "",
+      guess,
+      show: selectionValid && saved.show,
+      compared: selectionValid && saved.compared,
+      ...patch,
+    });
   const change = (patch: Parameters<typeof set>[0]) =>
     set({ ...patch, guess: "", reason: "", show: false, compared: false });
   const select = (key: keyof typeof saved, label: string, options: Pair[]) => (
@@ -410,10 +456,12 @@ export default function Forge023HumanitiesALab({
                   "Kaybın bir bölümü geri alınıyor",
                   "Kaybın tamamı geri alınıyor",
                 ];
-  const guess = options.includes(saved.guess) ? saved.guess : "",
-    reason = saved.reason.slice(0, 120),
-    compared = saved.compared && Boolean(guess && reason.trim()),
-    revealed = saved.show || compared;
+  const guess =
+      selectionValid && options.includes(saved.guess) ? saved.guess : "",
+    reason = selectionValid ? saved.reason.slice(0, 120) : "",
+    compared =
+      selectionValid && saved.compared && Boolean(guess && reason.trim()),
+    revealed = selectionValid && (saved.show || compared);
   const scale = Math.max(
       1,
       allocation.resource,

@@ -1,3 +1,21 @@
+# 0.18 kaynak adayı — ilk 468/479 sıralı başlık
+
+Güncel kaynak 469 anlatım, 441 ayrıntılı rehber, 469 yerleşik kopya kağıdı ve 5088 özgün soru içerir. Son paket, 29 yeni anlatım ve mevcut türev rehberine kayıpsız genişletme ekler: 577 bölüm, 1154 paragraf, 177 çözümlü örnek/537 adım ve 171 hatırlama etkinliği. Yeni 564 kartın tamamı beş seçeneklidir; 1661 çözüm adımı ve seçeneklere bağlı 2820 gerekçe sunar. Ayrıntılı yardım toplam 1508/5088 karttadır; 3580 eski kartta bütün kademeler hâlâ tamamlanacaktır.
+
+Önceki 4524 sorunun bütün alanları, 445 öğretim kaydı ve kayıtlı 120/80 deneme kâğıtları korunur. Eski türev rehberinin 11 bölümü, 8 örneği ve 4 hatırlama sorusu aynen durur; yeni rehber 19/12/8 kapsamındadır. Eski türev etkinliği yeni modelin yanında çalışır. İlk açılışta eski örnek konumu korunur; ancak açıkça Sonraki bölüm seçilince yeni bölüm sayısına kayıt yapılır. Bu yerel IDB regresyonu, gerçek sürümler arası yükseltme denemesi diye sunulmaz.
+
+1238/1238 birim, 316 modül adı/TypeScript ve normal/prefix üretim derlemesi geçti. PWA 245 gerekli varlığı kapsar; tek dosya 5 MiB sınırının altındadır. Gerçek yerel Electron 81 aile çevrimdışı/reload/aynı profilde süreç yeniden açılışını, /yksmania/ prefix kabulü 81 aile çevrimdışı/reload akışını geçti; renderer hatası 0. Yeni 124 UI vakasının kabulü son koşuların birleşimidir: 121 vakada 104 PASS/17 FAIL, ilgili son 24/27 koşuda eski 17 kusur ve ek normal regresyonlar PASS, kalan üç yeni yer imi/yer adı vakası son koşuda 3/3 PASS. Tek son 124 koşusu iddiası yoktur. Bir önceki 023 CI'da 921/924 tarayıcı geçti; üç test eski boş içerik ve aynı adlı ders seçimi varsayımına takıldı. Bunlar burada düzeltilip hedefli yeniden geçirildi. Bütün 1048 tarayıcı ve gerçek paketli Windows/Linux kapısı son birleşik kaynakta ayrıca aranır.
+
+Gerçek kayıt kusuru da onarıldı: bozuk türde bir model alanı varsayılana dönünce eski karşılaştırma açıklaması yeni sonuca aitmiş gibi gösterilebiliyordu. 023'ün 30 ve 024'ün 30 modeli için gerçek IDB bozma/yeniden açma/ilk yeni eylem regresyonları vardır. Daha eski bütün modellerin bozuk kayıt sınıfları denetlendi denmez. Büyük yazıda model kontrolleri dar ekrana uyar; seçilen yazı boyutu korunur. Ders girişi sabit kimlikle seçilir; Alkanlar ile Sikloalkanlar karışmaz. Sulucakarahöyük adı görünür isteğe bağlı hece bölümü ve tam erişilebilir adıyla korunur; ölçümde Chromium'un önceki yumuşak tireyi sonraki sözcük aralığına katması ayrı doğrulandı.
+
+TYT 120 soru/165 dakika ve AYT Sayısal 80 soru/180 dakika doğru ders kotalarıyla sunulur. Öğrenciye PDF veya kaynak yükleme işi bırakılmaz. Kaynak okumaları ve bağımsız içerik denetimi özel kayıtlarda tutulur; ham kitaplar, Drive kimlikleri ve özel bağlantılar Git'e alınmaz. 9175 özel kimlik ve 9460 bağlantıyla taranan 349 metin yolunda eşleşme yoktur; yalnız önceki yazı tipi bağımlılığı bulunur.
+
+Canlı sürüm 0.17'dir: [Vercel](https://yksmania.vercel.app), [Pages](https://kaansavukduran.github.io/yksmania/) ve [Windows/Linux indirmeleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.17.0-alpha.1). Bu 0.18 adayı henüz yayımlanmadı. Android imzası ertelendi; yeni APK yoktur. Kalan 11 sıralı başlık ve 28 eski kısa anlatım üzerinde çalışma sürer. Bütün Drive/MEB alt kazanımları, her eski sorunun ayrıntılı yardımı ve son 20 yılın resmî ÖSYM arşivi tamamlandı sayılmaz. Fiziksel cihaz, temiz kurulum, portable taşıma ve native sürümler arası yükseltme bu kabulün kapsamında değildir.
+
+---
+
+## Önceki kaynak ve kabul kayıtları
+
 # 0.18 kaynak adayı — ilk 438/479 sıralı başlık
 
 409–438. başlıklar için 30 yeni anlatım eklendi: 593 bölüm, 1186 paragraf, 163 farklı çözümlü örnek/489 adım ve 155 hatırlama etkinliği. Toplam 440 anlatım, 412 ayrıntılı rehber, 440 yerleşik özet ve 4524 özgün soru vardır. Yeni 484 kartın tamamı beş seçenek ve özgül kademeli yardım taşır: 1286 gerçek çözüm adımı, 2420 eşlenmiş seçenek gerekçesi. Önceki 4040 sorunun bütün alanları ve 415 öğretim kaydı hash ile korunur.

@@ -7,6 +7,7 @@ import {
 } from "react";
 import { ModelNumber } from "./ModelNumber";
 import { useExploration } from "./useExploration";
+import { useApp } from "../store";
 import {
   optics023,
   soundDoppler023,
@@ -28,7 +29,12 @@ const sci = (n: number) =>
   }).format(n);
 const bounded = (x: number, min: number, max: number, fallback: number) =>
   Math.round(Number.isFinite(x) && x >= min && x <= max ? x : fallback);
-type Guess = { guess: string; reason: string; checked: boolean };
+type Guess = {
+  guess: string;
+  reason: string;
+  checked: boolean;
+  rawValid?: boolean;
+};
 const defaults = { guess: "", reason: "", checked: false };
 function Compare({
   question,
@@ -75,6 +81,7 @@ function Compare({
         className="secondary"
         type="button"
         disabled={
+          values.rawValid === false ||
           !["Artar", "Azalır", "Aynı"].includes(values.guess) ||
           !values.reason.trim()
         }
@@ -82,7 +89,8 @@ function Compare({
       >
         Kanıtla kıyasla
       </button>
-      {values.checked &&
+      {values.rawValid !== false &&
+        values.checked &&
         values.reason.trim() &&
         ["Artar", "Azalır", "Aynı"].includes(values.guess) && (
           <div className="physics023-feedback" role="status">
@@ -209,9 +217,106 @@ function Plot({
     </svg>
   );
 }
+const numericRule023 = (min: number, max: number) => (value: unknown) =>
+  typeof value === "number" &&
+  Number.isInteger(value) &&
+  value >= min &&
+  value <= max;
+const enumRule023 = (choices: readonly string[]) => (value: unknown) =>
+  typeof value === "string" && choices.includes(value);
+const restoredRules023: Record<string, (value: unknown) => boolean> = {
+  guess: enumRule023(["", "Artar", "Azalır", "Aynı"]),
+  mode: enumRule023(["double", "single"]),
+  lambda: numericRule023(350, 750),
+  index: numericRule023(100, 200),
+  distance: numericRule023(10, 30),
+  aperture: numericRule023(100, 1000),
+  delay: numericRule023(0, 1200),
+  probe: numericRule023(-120, 120),
+  kind: enumRule023(["sound", "light"]),
+  frequency: numericRule023(200, 1000),
+  source: numericRule023(-200, 200),
+  receiver: numericRule023(-200, 200),
+  beta: numericRule023(-80, 80),
+  wavelength: numericRule023(400, 700),
+  band: enumRule023([
+    "radio",
+    "micro",
+    "infrared",
+    "visible",
+    "uv",
+    "xray",
+    "gamma",
+  ]),
+  amplitude: numericRule023(10, 200),
+  phase: numericRule023(0, 360),
+  angle: numericRule023(0, 180),
+  direction: enumRule023(["1", "-1"]),
+  tab: enumRule023(["levels", "excite", "history"]),
+  z: numericRule023(1, 3),
+  initial: numericRule023(1, 6),
+  final: numericRule023(1, 6),
+  particle: enumRule023(["photon", "electron"]),
+  incident: numericRule023(0, 600),
+  model: enumRule023(["dalton", "thomson", "rutherford", "bohr", "modern"]),
+};
+function usePhysicsExploration023<
+  T extends Record<string, string | number | boolean>,
+>(id: string, initial: T) {
+  const [values, set] = useExploration(id, initial),
+    raw = useApp().state.explorations[id];
+  const accepts = (key: string, value: unknown) =>
+    typeof value === typeof initial[key] &&
+    (!Object.hasOwn(restoredRules023, key) || restoredRules023[key](value));
+  const canonical = {
+    ...(Object.fromEntries(
+      Object.entries(values).map(([key, value]) => [
+        key,
+        accepts(key, value) ? value : initial[key],
+      ]),
+    ) as typeof values),
+    reason: String(values.reason).slice(0, 120),
+  };
+  const inactive = id.endsWith("isik-teorileri")
+    ? canonical.mode === "single"
+      ? ["delay"]
+      : []
+    : id.endsWith("doppler-etkisi")
+      ? canonical.kind === "light"
+        ? ["frequency", "source", "receiver"]
+        : ["beta", "wavelength"]
+      : id.endsWith("atom-modelleri-fizik")
+        ? canonical.tab === "history"
+          ? ["z", "initial", "final", "particle", "incident"]
+          : canonical.tab === "excite"
+            ? ["initial", "final", "model"]
+            : ["particle", "incident", "model"]
+        : [];
+  const valid =
+    !raw ||
+    Object.keys(initial).every(
+      (key) =>
+        inactive.includes(key) ||
+        !Object.hasOwn(raw, key) ||
+        accepts(key, raw[key]),
+    );
+  const safe = {
+    ...canonical,
+    checked: valid && canonical.checked === true,
+    rawValid: valid,
+  };
+  const commit = (patch: Partial<typeof values>) =>
+    set({
+      ...canonical,
+      checked: safe.checked,
+      ...patch,
+      reason: String(patch.reason ?? canonical.reason).slice(0, 120),
+    });
+  return [safe, commit] as const;
+}
 function Optics() {
   const id = "isik-teorileri",
-    [s, set] = useExploration("forge023-physics-" + id, {
+    [s, set] = usePhysicsExploration023("forge023-physics-" + id, {
       ...defaults,
       mode: "double",
       lambda: 600,
@@ -398,7 +503,7 @@ function Optics() {
 }
 function Doppler() {
   const id = "doppler-etkisi",
-    [s, set] = useExploration("forge023-physics-" + id, {
+    [s, set] = usePhysicsExploration023("forge023-physics-" + id, {
       ...defaults,
       kind: "sound",
       frequency: 500,
@@ -676,7 +781,7 @@ const spectrum: [string, string, number][] = [
 ];
 function Electromagnetic() {
   const id = "elektromanyetik-dalgalar",
-    [s, set] = useExploration("forge023-physics-" + id, {
+    [s, set] = usePhysicsExploration023("forge023-physics-" + id, {
       ...defaults,
       band: "visible",
       amplitude: 120,
@@ -898,7 +1003,7 @@ const history = [
 ];
 function Atom() {
   const id = "atom-modelleri-fizik",
-    [s, set] = useExploration("forge023-physics-" + id, {
+    [s, set] = usePhysicsExploration023("forge023-physics-" + id, {
       ...defaults,
       tab: "levels",
       z: 1,

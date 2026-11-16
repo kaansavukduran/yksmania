@@ -1,0 +1,174 @@
+.humanities024-lab {
+  margin-block: 1.5rem;
+  padding: 6px 4px;
+  border-block: 1px solid var(--border, #43515d);
+  background: var(--surface-2, #202931);
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+.humanities024-lab h3,
+.humanities024-lab h4 {
+  margin: 0 0 0.8rem;
+  line-height: 1.35;
+}
+.humanities024-lab p {
+  margin: 0.7rem 0 1rem;
+}
+.humanities024-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 1rem;
+  margin-block: 1.4rem;
+}
+.humanities024-control {
+  display: grid;
+  gap: 0.5rem;
+  font-weight: 600;
+  min-width: 0;
+}
+.humanities024-control select,
+.humanities024-control textarea {
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  padding: 0.8rem 6px;
+  border: 1px solid var(--border, #53616e);
+  border-radius: 9px;
+  box-sizing: border-box;
+  color: inherit;
+  background: var(--bg, #141b22);
+  font: inherit;
+  font-weight: 400;
+}
+.humanities024-control textarea {
+  min-height: 7rem;
+  resize: vertical;
+}
+.humanities024-toggle {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 48px;
+  align-self: end;
+}
+.humanities024-toggle input {
+  width: 1.35rem;
+  height: 1.35rem;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  accent-color: var(--accent, #ffac92);
+  flex-shrink: 0;
+}
+.humanities024-context {
+  padding: 1rem 0;
+  border: 0;
+  background: var(--surface, #1b242c);
+}
+.humanities024-context p {
+  margin-bottom: 0;
+}
+.humanities024-diagram {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 20rem;
+  max-height: none;
+  margin: 1.2rem auto;
+  color: var(--accent, #ffac92);
+}
+.humanities024-diagram rect {
+  fill: var(--surface, #1b242c);
+  stroke: var(--border, #677580);
+  stroke-width: 2;
+}
+.humanities024-diagram text {
+  fill: var(--text, #f2f0ec);
+  font-family: inherit;
+  font-size: 20px;
+}
+.humanities024-link {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 3;
+}
+.humanities024-link.is-missing {
+  stroke: var(--muted, #b0bac6);
+  stroke-dasharray: 8 7;
+}
+.humanities024-evidence {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1rem;
+  margin-block: 1rem 1.4rem;
+}
+.humanities024-evidence > div {
+  min-width: 0;
+  border: 0;
+  border-radius: 0;
+  padding: 1rem 0;
+}
+.humanities024-evidence dt {
+  font-weight: 700;
+}
+.humanities024-evidence dd {
+  margin: 0.5rem 0 0;
+}
+.humanities024-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-block: 1rem;
+}
+.humanities024-actions button {
+  min-height: 48px;
+  padding: 0.8rem 0;
+  border: 1px solid var(--border, #53616e);
+  border-radius: 9px;
+  background: var(--surface, #27323d);
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+.humanities024-actions button:first-child:not(:disabled) {
+  background: var(--accent, #ffac92);
+  color: var(--accent-text, #251b17);
+}
+.humanities024-actions button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+.humanities024-result {
+  padding: 1.1rem 0;
+  border: 0;
+  border-radius: 0;
+  background: var(--surface, #1b242c);
+}
+.humanities024-result :is(ul, ol) {
+  padding-inline-start: 0;
+  list-style-position: inside;
+}
+.humanities024-result li + li {
+  margin-top: 0.8rem;
+}
+.humanities024-note {
+  color: var(--muted, #b9c3ce);
+  font-size: 0.95rem;
+}
+.humanities024-lab :is(button, select, textarea, input):focus-visible {
+  outline: 3px solid var(--accent, #ffac92);
+  outline-offset: 4px;
+}
+@media (max-width: 520px) {
+  .humanities024-controls,
+  .humanities024-evidence {
+    grid-template-columns: 1fr;
+  }
+  .humanities024-actions button {
+    flex: 1 1 14rem;
+  }
+  .humanities024-lab {
+    padding: 6px 4px;
+  }
+}

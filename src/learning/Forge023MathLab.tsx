@@ -1,5 +1,6 @@
 import { useId, type ReactNode } from "react";
 import { useExploration } from "./useExploration";
+import { useApp } from "../store";
 import {
   angleIdentity023,
   waveRoots023,
@@ -163,10 +164,19 @@ const defaults = {
 };
 
 export default function Forge023MathLab({ lessonId }: { lessonId: string }) {
-  const [saved, set] = useExploration(`forge023-math:${lessonId}`, defaults);
+  const explorationId = `forge023-math:${lessonId}`,
+    [saved, set] = useExploration(explorationId, defaults),
+    raw = useApp().state.explorations[explorationId];
   if (!ids.includes(lessonId)) return null;
   const s = {
     ...saved,
+    base: ["0.5", "2", "3", "10", "e"].includes(saved.base) ? saved.base : "2",
+    sequence: ["arithmetic", "geometric", "recurrence", "triangular"].includes(
+      saved.sequence,
+    )
+      ? saved.sequence
+      : "arithmetic",
+    mode: saved.mode === "hole" ? "hole" : "piecewise",
     a: bounded(saved.a, -180, 180),
     b: bounded(saved.b, -180, 180),
     A: bounded(saved.A, -6, 6, 0.5),
@@ -189,8 +199,41 @@ export default function Forge023MathLab({ lessonId }: { lessonId: string }) {
     approach: bounded(saved.approach, 1, 5),
     reason: saved.reason.slice(0, 120),
   };
+  const persist = (delta: Partial<typeof saved>) => set({ ...s, ...delta });
   const change = (delta: Partial<typeof saved>) =>
-    set({ ...delta, checked: false });
+    persist({ ...delta, checked: false });
+  const active: (keyof typeof defaults)[] =
+    lessonId === ids[0]
+      ? ["a", "b", "subtract"]
+      : lessonId === ids[1]
+        ? ["A", "B", "C", "frequency", "phase", "closed"]
+        : lessonId === ids[2]
+          ? ["base", "x", "horizontal", "vertical"]
+          : lessonId === ids[3]
+            ? [
+                "sequence",
+                "count",
+                ...(s.sequence === "triangular"
+                  ? []
+                  : (["first", "parameter"] as const)),
+              ]
+            : [
+                "mode",
+                "origin",
+                "defined",
+                "approach",
+                ...(s.defined ? (["value"] as const) : []),
+                ...(s.mode === "hole"
+                  ? []
+                  : (["left", "right", "leftSlope", "rightSlope"] as const)),
+              ];
+  const validSelection = active.every(
+    (key) =>
+      saved[key] === s[key] &&
+      (!raw ||
+        !Object.hasOwn(raw, key) ||
+        typeof raw[key] === typeof defaults[key]),
+  );
   let title = "",
     intro = "",
     controls: ReactNode,
@@ -945,13 +988,16 @@ export default function Forge023MathLab({ lessonId }: { lessonId: string }) {
         <button
           className="secondary"
           disabled={
-            !options.some(([value]) => value === s.guess) || !s.reason.trim()
+            !validSelection ||
+            !options.some(([value]) => value === s.guess) ||
+            !s.reason.trim()
           }
-          onClick={() => set({ checked: true })}
+          onClick={() => persist({ checked: true })}
         >
           Kanıtı gör
         </button>
         {s.checked &&
+          validSelection &&
           s.reason.trim() &&
           options.some(([value]) => value === s.guess) && (
             <p className="math023-feedback" role="status">

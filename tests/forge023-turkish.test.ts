@@ -24,8 +24,23 @@ vi.mock("../src/learning/useExploration", () => ({
     defaults: Record<string, string | number | boolean>,
   ) => {
     harness.key = key;
-    return [{ ...defaults, ...harness.saved }, () => {}];
+    return [
+      Object.fromEntries(
+        Object.entries(defaults).map(([key, value]) => [
+          key,
+          typeof harness.saved[key] === typeof value
+            ? harness.saved[key]
+            : value,
+        ]),
+      ),
+      () => {},
+    ];
   },
+}));
+vi.mock("../src/store", () => ({
+  useApp: () => ({
+    state: { explorations: new Proxy({}, { get: () => harness.saved }) },
+  }),
 }));
 import Lab from "../src/learning/Forge023TurkishLab";
 const ids = ["paragrafta-soru-cevap", "paragrafta-roportaj"];
@@ -302,6 +317,60 @@ describe("023: sorudan kanıta ve iki sesli görüşmeye", () => {
       expect(html).toContain("data-forge023");
       expect(html).not.toContain('role="status"');
       expect(html).toContain("Önce kendi kararını kur");
+    }
+    harness.saved = {};
+  });
+  it("suppresses old feedback when hook type defaults conceal an invalid active raw selection", () => {
+    for (const [k, fields] of [
+      [0, ["caseId", "choice", "selected"]],
+      [1, ["caseId", "choice", "turn"]],
+    ] as const)
+      for (const field of fields) {
+        harness.saved = {
+          caseId: k === 0 ? "archive" : "repair",
+          turn: 1,
+          [field]: field === "caseId" ? false : "1",
+          guess: k === 0 ? "Yanıt var" : "Verilen bilgi",
+          reason: "Eski farklı seçim için yazılmış gerekçe.",
+          compared: true,
+          show: true,
+        };
+        const html = renderToStaticMarkup(
+          createElement(Lab, { lessonId: ids[k] }),
+        );
+        expect(html).not.toContain('class="turkish023-feedback"');
+        expect(html).not.toContain("Eski farklı seçim");
+        expect(html).toContain("Önce kendi kararını kur");
+      }
+    harness.saved = {};
+  });
+  it("blocks stale valid-type case and range fallbacks but leaves unrelated fields alone", () => {
+    for (const k of [0, 1]) {
+      const base = {
+        caseId: k === 0 ? "archive" : "repair",
+        turn: 1,
+        guess: k === 0 ? "Yanıt var" : "Verilen bilgi",
+        reason: "4³=64",
+        compared: true,
+        show: true,
+      };
+      const malformed: Record<string, string | number | boolean>[] = [
+        { caseId: "gone" },
+        { choice: 99 },
+      ];
+      for (const bad of malformed) {
+        harness.saved = { ...base, ...bad };
+        expect(
+          renderToStaticMarkup(createElement(Lab, { lessonId: ids[k] })),
+        ).not.toContain('class="turkish023-feedback"');
+      }
+      harness.saved = {
+        ...base,
+        ...(k === 0 ? { turn: "bad" } : { selected: "bad" }),
+      };
+      expect(
+        renderToStaticMarkup(createElement(Lab, { lessonId: ids[k] })),
+      ).toContain('class="turkish023-feedback"');
     }
     harness.saved = {};
   });

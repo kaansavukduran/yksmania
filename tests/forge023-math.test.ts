@@ -1,4 +1,12 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
+import {
+  Children,
+  createElement,
+  isValidElement,
+  type ReactElement,
+  type ReactNode,
+} from "react";
+import { renderToStaticMarkup } from "react-dom/server";
 import {
   angleIdentity023,
   waveRoots023,
@@ -10,6 +18,25 @@ import {
   forge023MathLessons,
   forge023MathTopics,
 } from "../src/learning/forge023Math";
+type Saved023 = Record<string, string | number | boolean>;
+const restore023 = vi.hoisted(() => ({
+  explorations: {} as Record<string, Saved023>,
+}));
+vi.mock("../src/store", () => ({
+  useApp: () => ({
+    state: { explorations: restore023.explorations },
+    update: async (
+      change: (state: { explorations: Record<string, Saved023> }) => {
+        explorations: Record<string, Saved023>;
+      },
+    ) => {
+      restore023.explorations = change({
+        explorations: restore023.explorations,
+      }).explorations;
+    },
+  }),
+}));
+import Forge023MathLab from "../src/learning/Forge023MathLab";
 describe("AYT matematik 023: koşul, hesap ve öğretim bütünlüğü", () => {
   it("şık yerleri değişse de bağımsız çözülen anlamsal cevapları ve gerekçe bağını korur", () => {
     const expected = [
@@ -334,5 +361,243 @@ describe("AYT matematik 023: koşul, hesap ve öğretim bütünlüğü", () => {
       expect(q.guidance!.check).toBeTruthy();
       expect(q.guidance!.commonError).toBeTruthy();
     }
+  });
+});
+
+describe("023 eski kayıt: gerçek hook ve ayrı ham kayıt", () => {
+  type Props = {
+    children?: ReactNode;
+    disabled?: boolean;
+    onClick?: () => void;
+    onChange?: (event: {
+      target: { value: string };
+      currentTarget: { value: string };
+    }) => void;
+    "aria-label"?: string;
+  };
+  const nodes = (tree: ReactNode): ReactElement<Props>[] => {
+    const result: ReactElement<Props>[] = [];
+    Children.forEach(tree, (child) => {
+      if (isValidElement<Props>(child))
+        result.push(child, ...nodes(child.props.children));
+    });
+    return result;
+  };
+  const key = (id: string) => "forge023-math:" + id;
+  const render = (id: string) =>
+    renderToStaticMarkup(createElement(Forge023MathLab, { lessonId: id }));
+  const families: [string, Saved023, string, string[], string][] = [
+    [
+      "ayt-toplam-fark-yarim-aci",
+      { a: 30, b: 60 },
+      "positive",
+      ["a", "b", "subtract"],
+      "x",
+    ],
+    [
+      "ayt-trigonometrik-denklemler",
+      {},
+      "2",
+      ["A", "B", "C", "frequency", "phase", "closed"],
+      "a",
+    ],
+    [
+      "ayt-logaritma",
+      {},
+      "defined",
+      ["base", "x", "horizontal", "vertical"],
+      "a",
+    ],
+    [
+      "ayt-diziler",
+      {},
+      "up",
+      ["sequence", "first", "parameter", "count"],
+      "base",
+    ],
+    [
+      "ayt-diziler",
+      { sequence: "triangular" },
+      "up",
+      ["sequence", "count"],
+      "parameter",
+    ],
+    [
+      "ayt-limit-sureklilik",
+      {},
+      "continuous",
+      [
+        "mode",
+        "origin",
+        "defined",
+        "approach",
+        "value",
+        "left",
+        "right",
+        "leftSlope",
+        "rightSlope",
+      ],
+      "a",
+    ],
+    [
+      "ayt-limit-sureklilik",
+      { mode: "hole", value: 0 },
+      "continuous",
+      ["origin", "defined", "approach", "value"],
+      "left",
+    ],
+    [
+      "ayt-limit-sureklilik",
+      { defined: false },
+      "limit",
+      [
+        "mode",
+        "origin",
+        "approach",
+        "left",
+        "right",
+        "leftSlope",
+        "rightSlope",
+      ],
+      "value",
+    ],
+  ];
+  it("gerçek browser bulgusundaki b='60' onarımını75° modelinde eski90° gerekçesini kapatarak yapar", () => {
+    const id = families[0][0];
+    restore023.explorations[key(id)] = {
+      a: 30,
+      b: "60",
+      guess: "positive",
+      reason: "30°+60°=90°",
+      checked: true,
+    };
+    const html = render(id);
+    expect(html).toContain('data-angle-result="true">75°');
+    expect(html).not.toContain('role="status"');
+    expect(
+      nodes(Forge023MathLab({ lessonId: id })).find((n) => n.type === "button")!
+        .props.disabled,
+    ).toBe(true);
+    restore023.explorations = {};
+  });
+  it("aktif yanlış ham türü reddeder; ilk yeni gerekçe gerçek hook setter ile tam kanonik kayıt yazar", () => {
+    for (const [id, seed, guess, fields, inactive] of families) {
+      for (const field of fields) {
+        const stringField = ["base", "sequence", "mode"].includes(field),
+          booleanField = ["subtract", "closed", "defined"].includes(field),
+          bad = stringField ? 1 : "1";
+        restore023.explorations[key(id)] = {
+          ...seed,
+          [field]: bad,
+          guess,
+          reason: "Eski gerekçe",
+          checked: true,
+        };
+        expect(render(id), id + "/" + field).not.toContain('role="status"');
+        const list = nodes(Forge023MathLab({ lessonId: id }));
+        expect(list.find((n) => n.type === "button")!.props.disabled).toBe(
+          true,
+        );
+        const reason = list.find((n) => n.type === "textarea")!;
+        reason.props.onChange!({
+          target: { value: "x" },
+          currentTarget: { value: "x" },
+        });
+        const saved = restore023.explorations[key(id)];
+        expect(typeof saved[field]).toBe(
+          stringField ? "string" : booleanField ? "boolean" : "number",
+        );
+        expect(saved.reason).toBe("x");
+        expect(saved.checked).toBe(false);
+        const compare = nodes(Forge023MathLab({ lessonId: id })).find(
+          (n) => n.type === "button",
+        )!;
+        expect(compare.props.disabled).toBe(false);
+        compare.props.onClick!();
+        expect(render(id)).toContain('role="status"');
+      }
+      restore023.explorations[key(id)] = {
+        ...seed,
+        [inactive]: true,
+        guess,
+        reason: "x",
+        checked: true,
+      };
+      expect(render(id), "inactive/" + inactive).toContain('role="status"');
+    }
+    restore023.explorations = {};
+  });
+  it("aynı tür bozuk enum,adım ve sınır eski kıyası açmaz; ilk gerekçe görünen değerleri kalıcı düzeltir", () => {
+    const cases: [string, Saved023, string, string, string | number][] = [
+      [families[0][0], { b: 999 }, "positive", "b", 180],
+      [families[1][0], { C: 0.25 }, "2", "C", 0.5],
+      [families[2][0], { base: "constructor" }, "defined", "base", "2"],
+      [
+        families[3][0],
+        { sequence: "constructor" },
+        "up",
+        "sequence",
+        "arithmetic",
+      ],
+      [families[3][0], { count: 99 }, "up", "count", 12],
+      [
+        families[5][0],
+        { mode: "constructor" },
+        "continuous",
+        "mode",
+        "piecewise",
+      ],
+      [families[5][0], { approach: NaN }, "continuous", "approach", 1],
+    ];
+    for (const [id, seed, guess, field, normalized] of cases) {
+      restore023.explorations[key(id)] = {
+        ...seed,
+        guess,
+        reason: "Eski gerekçe",
+        checked: true,
+      };
+      expect(render(id)).not.toContain('role="status"');
+      nodes(Forge023MathLab({ lessonId: id })).find(
+        (n) => n.type === "textarea",
+      )!.props.onChange!({
+        target: { value: "x" },
+        currentTarget: { value: "x" },
+      });
+      expect(restore023.explorations[key(id)][field]).toBe(normalized);
+      expect(
+        nodes(Forge023MathLab({ lessonId: id })).find(
+          (n) => n.type === "button",
+        )!.props.disabled,
+      ).toBe(false);
+    }
+    restore023.explorations = {};
+  });
+  it("boşu reddeder,tek karakteri kabul eder ve setter120üst sınırını korur", () => {
+    for (const [id, seed, guess] of families.slice(0, 5)) {
+      for (const reason of ["", "   "]) {
+        restore023.explorations[key(id)] = {
+          ...seed,
+          guess,
+          reason,
+          checked: true,
+        };
+        expect(render(id)).not.toContain('role="status"');
+      }
+      restore023.explorations[key(id)] = {
+        ...seed,
+        guess,
+        reason: "x",
+        checked: true,
+      };
+      expect(render(id)).toContain('role="status"');
+      nodes(Forge023MathLab({ lessonId: id })).find(
+        (n) => n.type === "textarea",
+      )!.props.onChange!({
+        target: { value: "a".repeat(200) },
+        currentTarget: { value: "a".repeat(200) },
+      });
+      expect(restore023.explorations[key(id)].reason).toHaveLength(120);
+    }
+    restore023.explorations = {};
   });
 });

@@ -7,11 +7,18 @@ import { questionGuidanceSchema } from "../src/domain/questionHelpModel";
 const mock = vi.hoisted(() => ({
   values: {} as Record<string, Record<string, string | number | boolean>>,
 }));
-vi.mock("../src/learning/useExploration", () => ({
-  useExploration: (
-    id: string,
-    defaults: Record<string, string | number | boolean>,
-  ) => [{ ...defaults, ...mock.values[id] }, () => {}],
+vi.mock("../src/store", () => ({
+  useApp: () => ({
+    state: { explorations: mock.values },
+    update: (
+      fn: (state: { explorations: typeof mock.values }) => {
+        explorations: typeof mock.values;
+      },
+    ) => {
+      mock.values = fn({ explorations: mock.values }).explorations;
+      return Promise.resolve();
+    },
+  }),
 }));
 import Lab from "../src/learning/Forge023HumanitiesALab";
 import {
@@ -27,12 +34,51 @@ import {
   forge023HumanitiesATopics as topics,
   heritage023A,
   heritagePlaces023A,
+  humanitiesADefaults023,
   water023A,
   worship023A,
   worshipActions023A,
   youth023A,
 } from "../src/learning/forge023HumanitiesA";
 describe("023A Din öğretimi, kanıt sınırları ve hesap modelleri", () => {
+  it("suppresses stale evidence for wrong active types, enums and ranges with the real exploration hook", () => {
+    const cases: [string, string, string | number | boolean][] = [
+      ["din-ve-islam", "concept", 2],
+      ["din-ve-islam", "term", "obsolete"],
+      ["islam-ve-ibadet", "conditions", "false"],
+      ["ahlaki-tutum-ve-davranislar", "needA", "2"],
+      ["ahlaki-tutum-ve-davranislar", "resource", 25],
+      ["genclik-ve-degerler", "task", "obsolete"],
+      ["gonul-cografyamiz", "place", false],
+      ["din-ve-hayat", "stage", 3],
+    ];
+    for (const [lessonId, field, bad] of cases) {
+      const key = `forge023-humanities-a:${lessonId}`;
+      mock.values = {
+        [key]: {
+          ...humanitiesADefaults023,
+          [field]: bad,
+          reason: "Önceki seçimin gerekçesi.",
+          show: true,
+        },
+      };
+      const html = renderToStaticMarkup(createElement(Lab, { lessonId }));
+      expect(html).toContain('aria-expanded="false"');
+      expect(html).not.toContain("Önceki seçimin gerekçesi.");
+      expect(html).toMatch(/<textarea[^>]*><\/textarea>/);
+    }
+    mock.values = {
+      "forge023-humanities-a:din-ve-islam": {
+        art: "obsolete",
+        reason: "Bu modelin geçerli gerekçesi.",
+        show: true,
+      },
+    };
+    expect(
+      renderToStaticMarkup(createElement(Lab, { lessonId: "din-ve-islam" })),
+    ).toContain('aria-expanded="true"');
+    mock.values = {};
+  });
   it("covers the six owned workbook headings without replacing earlier content", () => {
     expect(Object.values(topics)).toEqual([
       "detail-78",

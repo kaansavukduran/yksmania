@@ -1,3 +1,17 @@
+# Kaynak 024 — ayrıntılı öğretim, model ve bağımsız okuma
+
+Son sıralı otuz başlık, yedi ailede kaynak okuması ve bağımsız içerik/model denetiminden geçti: türev kuralları ve teğet; fotoelektrik, modern fizik ve teknoloji; bitki gövdesi/dokusu, hormon, hareket ve yaşam döngüleri; oksijenli organik bileşikler; din kültürü ve çoklu paragraf soruları. Türevdeki önceki öğretim arşivi korunup genişletildi. Toplam 577 bölüm, 177 çözümlü örnek ve 564 yeni özgün soru uygulama içindedir. Ham PDF veya sayfa indirme, yakın okuma ve şekil açma yerine sayılmaz; yazar ve bağımsız okuyucu kayıtları ayrı tutulur.
+
+Sorularda model varsayımları ve gereken metin kartın içinde verilir. Çözümlü örneklerin aynı verisi bağımsız ölçme sorusu olarak yeniden kullanılmaz; bilgi, yöntem, ilerleyen adım ve seçenek gerekçeleri ayrı anlam taşır. Yeni 564 kartın beş seçenek açıklaması, seçenekler dağıtıldıktan sonra gerçek seçenekle eşleşir. Dengeli cevap yerleşimi kısa bir harf dizisiyle döndürülmez. Özgün öğretim kartları resmî ÖSYM sorusu diye etiketlenmez.
+
+Bilimsel sınırlar açık tutulur: sıfır eğrilik, fotoelektrik eşik ve potansiyel koşulları, bitki hücresinin işlev ve doku bağlamı, organik ürünün tepkime ortamı ile kanıtlanandan daha geniş bir tarihsel/dinî sonuç çıkarılmaması ayrı kontrol edildi. Dar ekran onarımlarında kanonik veri, bankalar ve kaynak rehberi korunur; uzun özel ad, küçük yazı veya kısaltılmış kimlikle değiştirilmez. Konu modeliyle keşif yapmak bağımsız öğrenme puanı değildir.
+
+Kaynak dosyaları ve özel kimlikler Git dışında kalır. Bütün 479 başlığın hazırlanması bile Drive/YKS'deki her alt kazanım, şekil, soru ve doğrulanmış resmî arşivin bittiği anlamına gelmez. Güncel ürün kabulü ve açık işler [QA](QA.md) ile [Forge](../FORGE.md) kaydındadır.
+
+---
+
+## Önceki kaynak incelemeleri
+
 # Kaynak 023 — kapsamlı öğretim ve bağımsız kontrol
 
 Otuz yeni konu, yedi ayrı kaynak ailesinde gerçek MEBİ/OGM/Aurelia okumasıyla özgün öğretime dönüştürüldü. Matematikte toplam 67 hedef metin sayfası ve 10 kaynak görüntüsü; fizikte 47 metin sayfası ve 8 kritik kaynak görüntüsü incelendi. Bunlar ilgili aralıklardır, bütün kitapların veya bütün Drive’ın okunduğu anlamına gelmez. Diğer ailelerin özel okuma kayıtları yazar ve bağımsız okuyucu için ayrı tutulur; dosya indirme veya metin çıkarımı, sayfa okuma ya da görsel açma sayılmaz.

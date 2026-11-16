@@ -1,3 +1,11 @@
+import { forge024MathGuideExtensions } from "../forge024Math";
+import { forge024MathGuides } from "../forge024Math";
+import { forge024PhysicsGuides } from "../forge024Physics";
+import { forge024BiologyAGuides } from "../forge024BiologyA";
+import { forge024BiologyBGuides } from "../forge024BiologyB";
+import { forge024ChemistryGuides } from "../forge024Chemistry";
+import { forge024HumanitiesGuides } from "../forge024Humanities";
+import { forge024TurkishGuides } from "../forge024Turkish";
 import { forge023MathGuides } from "../forge023Math";
 import { forge023PhysicsGuides } from "../forge023Physics";
 import { forge023BiologyGuides } from "../forge023Biology";
@@ -110,6 +118,13 @@ import { shellsGuide } from "./shells";
 import { paragraphGuide } from "./paragraph";
 export const lessonGuides = new Map(
   [
+    ...forge024MathGuides,
+    ...forge024PhysicsGuides,
+    ...forge024BiologyAGuides,
+    ...forge024BiologyBGuides,
+    ...forge024ChemistryGuides,
+    ...forge024HumanitiesGuides,
+    ...forge024TurkishGuides,
     ...forge023MathGuides,
     ...forge023PhysicsGuides,
     ...forge023BiologyGuides,
@@ -228,6 +243,7 @@ export const lessonGuides = new Map(
 
 // Extend existing lessons without replacing their teaching or saved question IDs.
 for (const extension of [
+  ...forge024MathGuideExtensions,
   ...forge019ChemistryGuideExtensions,
   ...forge019PhysicsGuideExtensions,
   ...forge019TurkishGuideExtensions,
@@ -244,8 +260,14 @@ for (const extension of [
 }
 
 // Preserve all original DNA teaching, examples and saved question identities.
-for(const extension of forge020BiologyGuideExtensions){
- const original=lessonGuides.get(extension.id);
- if(!original)throw Error("Missing original DNA guide: "+extension.id);
- lessonGuides.set(extension.id,{...original,sections:[...original.sections,...extension.sections],examples:[...original.examples,...extension.examples],recall:[...original.recall,...extension.recall],source:original.source+"\n"+extension.source});
+for (const extension of forge020BiologyGuideExtensions) {
+  const original = lessonGuides.get(extension.id);
+  if (!original) throw Error("Missing original DNA guide: " + extension.id);
+  lessonGuides.set(extension.id, {
+    ...original,
+    sections: [...original.sections, ...extension.sections],
+    examples: [...original.examples, ...extension.examples],
+    recall: [...original.recall, ...extension.recall],
+    source: original.source + "\n" + extension.source,
+  });
 }

@@ -2,6 +2,6 @@
   "version": "0.18.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Geliştirme adayı: çalışma sırasının ilk 438/479 başlığı anlatım ve soruyla hazır. Toplam 440 anlatım, 412 ayrıntılı rehber, 440 yerleşik özet ve 4524 özgün soru. Son 30 konu 484 yeni beş seçenekli kart ekler; hepsinde özgül kademeli yardım vardır. TYT 120 soru/165 dakika, AYT Sayısal 80 soru/180 dakika ve doğru ders kotalarıyla sunulur. Eski deneme kâğıtları ve ilerleme kayıtları korunur. Bütün Drive/MEB/ÖSYM arşivi tamamlandı demek değildir. Android imza ayarı ertelendi; yeni APK yoktur."
+    "tr": "Geliştirme adayı: çalışma sırasının ilk 468/479 başlığı anlatım ve soruyla hazır. Toplam 469 anlatım, 441 ayrıntılı rehber, 469 yerleşik özet ve 5088 özgün soru. Son grupta 29 yeni anlatım, türev rehberine kayıpsız ek ve 564 yeni beş seçenekli, kademeli açıklamalı soru var. TYT 120 soru/165 dakika; AYT Sayısal 80 soru/180 dakika. Eski deneme kâğıtları, notlar, tekrar tarihleri ve ilerleme korunur. Bütün kaynak arşivi tamamlandı demek değildir. Android imzası ertelendi; yeni APK yoktur."
   }
 }

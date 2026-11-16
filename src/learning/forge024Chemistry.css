@@ -1,0 +1,166 @@
+.c024-lab {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+}
+.c024-lab h3,
+.c024-lab h4,
+.c024-lab p {
+  margin: 0;
+}
+.c024-lab h4 {
+  font-size: 1.12em;
+}
+.c024-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 0.9rem;
+  align-items: end;
+}
+.c024-field {
+  display: grid;
+  gap: 0.4rem;
+  min-width: 0;
+}
+.c024-field span {
+  font-weight: 650;
+}
+.c024-field select,
+.c024-field input {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 0.65rem;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+}
+.c024-lab button {
+  min-height: 44px;
+  padding: 0.6rem 0.9rem;
+  white-space: normal;
+}
+.c024-stages {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.c024-stages button[aria-pressed="true"] {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.c024-lab [data-model-result] {
+  display: grid;
+  gap: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  padding: 1rem;
+  min-width: 0;
+}
+.c024-equation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  align-items: baseline;
+  overflow-wrap: anywhere;
+  line-height: 1.7;
+}
+.c024-equation span {
+  max-width: 100%;
+}
+.c024-scope,
+.c024-atom-evidence,
+.c024-proof {
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+.c024-molecule {
+  margin: 0;
+  display: grid;
+  gap: 0.5rem;
+  min-width: 0;
+}
+.c024-molecule figcaption {
+  font-weight: 650;
+  line-height: 1.5;
+}
+.c024-molecule svg {
+  display: block;
+  width: 100%;
+  max-width: 32rem;
+  max-height: 23rem;
+  overflow: visible;
+  justify-self: center;
+}
+.c024-molecule svg line {
+  stroke: var(--text);
+  stroke-width: 2.6;
+}
+.c024-molecule svg circle {
+  fill: var(--surface);
+  stroke: var(--border);
+  stroke-width: 1.3;
+}
+.c024-molecule svg text {
+  fill: var(--text);
+  font-size: 22px;
+  font-weight: 650;
+}
+.c024-molecule svg .c024-selected circle {
+  stroke: var(--accent);
+  stroke-width: 3.5;
+}
+.c024-molecule p {
+  font-size: 0.95em;
+  color: var(--muted);
+}
+.c024-prediction {
+  display: grid;
+  gap: 0.8rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+.c024-feedback {
+  padding: 0.8rem;
+  border-left: 3px solid var(--accent);
+  line-height: 1.6;
+}
+.c024-field select:focus-visible,
+.c024-field input:focus-visible,
+.c024-lab button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+@media (max-width: 420px) {
+  .c024-lab [data-model-result] {
+    padding: 0.75rem;
+  }
+  .c024-controls {
+    grid-template-columns: 1fr;
+  }
+  .c024-stages button {
+    flex: 1 1 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .c024-lab [data-model-result],
+  .c024-feedback {
+    padding: 6px;
+  }
+  .c024-field select,
+  .c024-field input,
+  .c024-lab button {
+    padding: 6px;
+  }
+  .c024-stages button {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+  .c024-lab table th,
+  .c024-lab table td {
+    padding: 4px 6px;
+  }
+}

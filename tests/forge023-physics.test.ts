@@ -1,4 +1,29 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, vi } from "vitest";
+import { createElement } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
+import Forge023PhysicsLab from "../src/learning/Forge023PhysicsLab";
+const restored023 = vi.hoisted(() => ({
+  saved: {} as Record<string, unknown>,
+}));
+vi.mock("../src/store", () => ({
+  useApp: () => {
+    const explorations = new Proxy(
+      {} as Record<string, Record<string, unknown>>,
+      { get: () => restored023.saved },
+    );
+    return {
+      state: { explorations },
+      update: async (
+        fn: (state: { explorations: typeof explorations }) => {
+          explorations: typeof explorations;
+        },
+      ) => {
+        const next = fn({ explorations });
+        restored023.saved = Object.values(next.explorations)[0] ?? {};
+      },
+    };
+  },
+}));
 import {
   optics023,
   soundDoppler023,
@@ -261,5 +286,222 @@ describe("Bohr: one electron, selected-state energy and independent collision ch
       () => excitation023(1, 1, "electron", -1),
     ])
       expect(call).toThrow(RangeError);
+  });
+});
+
+// The production useExploration primitive-type filter is intentionally not mocked.
+const restoredVariants023 = [
+  {
+    id: "isik-teorileri",
+    state: { mode: "double" },
+    active: {
+      mode: "single",
+      lambda: 500,
+      index: 150,
+      distance: 25,
+      aperture: 400,
+      delay: 600,
+      probe: 20,
+    },
+    hidden: {},
+  },
+  {
+    id: "isik-teorileri",
+    state: { mode: "single" },
+    active: {
+      mode: "double",
+      lambda: 500,
+      index: 150,
+      distance: 25,
+      aperture: 400,
+      probe: 20,
+    },
+    hidden: { delay: "bad" },
+  },
+  {
+    id: "doppler-etkisi",
+    state: { kind: "sound" },
+    active: { kind: "light", frequency: 450, source: 34, receiver: -34 },
+    hidden: { beta: "bad", wavelength: "bad" },
+  },
+  {
+    id: "doppler-etkisi",
+    state: { kind: "light" },
+    active: { kind: "sound", beta: 60, wavelength: 500 },
+    hidden: { frequency: "bad", source: "bad", receiver: "bad" },
+  },
+  {
+    id: "elektromanyetik-dalgalar",
+    state: {},
+    active: {
+      band: "uv",
+      amplitude: 180,
+      phase: 90,
+      angle: 45,
+      direction: "-1",
+    },
+    hidden: {},
+  },
+  {
+    id: "atom-modelleri-fizik",
+    state: { tab: "levels" },
+    active: { tab: "excite", z: 2, initial: 4, final: 1 },
+    hidden: { particle: "bad", incident: "bad", model: "bad" },
+  },
+  {
+    id: "atom-modelleri-fizik",
+    state: { tab: "excite" },
+    active: { tab: "levels", z: 3, particle: "electron", incident: 102 },
+    hidden: { initial: "bad", final: "bad", model: "bad" },
+  },
+  {
+    id: "atom-modelleri-fizik",
+    state: { tab: "history" },
+    active: { tab: "levels", model: "modern" },
+    hidden: {
+      z: "bad",
+      initial: "bad",
+      final: "bad",
+      particle: "bad",
+      incident: "bad",
+    },
+  },
+] as const;
+const restoredHtml023 = (id: string) =>
+  renderToStaticMarkup(createElement(Forge023PhysicsLab, { lessonId: id }));
+const previousChecked023 = {
+  guess: "Artar",
+  reason: "Önceki kayıt: ölçüm ve koşul birlikte.",
+  checked: true,
+};
+describe("023 restored exploration: actual hook type filtering plus independent raw record", () => {
+  it("blocks all active wrong primitive types while retaining the original saved reason and no automatic writes", () => {
+    for (const v of restoredVariants023) {
+      for (const [field, example] of Object.entries({
+        ...v.active,
+        ...previousChecked023,
+      })) {
+        const invalid =
+          typeof example === "number"
+            ? String(example)
+            : typeof example === "boolean"
+              ? "true"
+              : false;
+        restored023.saved = {
+          ...v.state,
+          ...previousChecked023,
+          [field]: invalid,
+        };
+        const before = JSON.stringify(restored023.saved),
+          html = restoredHtml023(v.id);
+        expect(html, `${v.id}/${field}`).not.toContain('role="status"');
+        expect(html).toMatch(/<button[^>]*disabled[^>]*>Kanıtla kıyasla/);
+        expect(JSON.stringify(restored023.saved)).toBe(before);
+        if (field !== "reason")
+          expect(html).toContain(previousChecked023.reason);
+      }
+    }
+    restored023.saved = {};
+  });
+  it("rejects active enum/range corruption but allows every irrelevant hidden record to coexist", () => {
+    for (const v of restoredVariants023) {
+      for (const [field, example] of Object.entries(v.active)) {
+        for (const invalid of typeof example === "number"
+          ? [1e9, -1e9, NaN, Infinity, 0.125]
+          : ["constructor", ""]) {
+          restored023.saved = {
+            ...v.state,
+            ...previousChecked023,
+            [field]: invalid,
+          };
+          expect(
+            restoredHtml023(v.id),
+            `${v.id}/${field}/${invalid}`,
+          ).not.toContain('role="status"');
+        }
+      }
+      restored023.saved = {
+        ...v.state,
+        ...v.hidden,
+        ...previousChecked023,
+        unrelated: false,
+      };
+      const html = restoredHtml023(v.id);
+      expect(html, v.id).toContain('role="status"');
+      expect(html).not.toMatch(/<button[^>]*disabled[^>]*>Kanıtla kıyasla/);
+    }
+    restored023.saved = {};
+  });
+  it("uses the first explicit comparison callback to persist a full canonical record and clears old checked state", () => {
+    type Node = {
+      type?: unknown;
+      props?: {
+        children?: unknown;
+        values?: unknown;
+        onChange?: (patch: Record<string, unknown>) => void;
+      };
+    };
+    const nodes = (x: unknown): Node[] =>
+      Array.isArray(x)
+        ? x.flatMap(nodes)
+        : x && typeof x === "object" && "props" in x
+          ? [x as Node, ...nodes((x as Node).props?.children)]
+          : [];
+    const comparison = (id: string) => {
+      const outer = Forge023PhysicsLab({ lessonId: id }) as unknown as Node;
+      return nodes(
+        (outer.type as (props: unknown) => unknown)(outer.props),
+      ).find((n) => n.props?.values && n.props.onChange)!;
+    };
+    for (const v of restoredVariants023) {
+      for (const [field, example] of Object.entries(v.active)) {
+        restored023.saved = {
+          ...v.state,
+          ...v.hidden,
+          ...previousChecked023,
+          [field]: typeof example === "number" ? "2" : "constructor",
+        };
+        expect(restoredHtml023(v.id)).not.toContain('role="status"');
+        comparison(v.id).props!.onChange!({ reason: "4³=64", checked: false });
+        expect(typeof restored023.saved[field]).toBe(typeof example);
+        expect(restored023.saved[field]).not.toBe("constructor");
+        expect(restored023.saved.checked).toBe(false);
+        expect(restored023.saved.reason).toBe("4³=64");
+        expect(restoredHtml023(v.id)).not.toMatch(
+          /<button[^>]*disabled[^>]*>Kanıtla kıyasla/,
+        );
+        comparison(v.id).props!.onChange!({ checked: true });
+        expect(restoredHtml023(v.id)).toContain('role="status"');
+        for (const key of Object.keys(v.hidden)) {
+          expect(typeof restored023.saved[key]).not.toBe("undefined");
+          expect(restored023.saved[key]).not.toBe("bad");
+        }
+        comparison(v.id).props!.onChange!({
+          reason: "x".repeat(130),
+          checked: false,
+        });
+        expect(restored023.saved.reason).toBe("x".repeat(120));
+      }
+    }
+    restored023.saved = {};
+  });
+  it("keeps missing records, 120character reasons and empty reason checks consistent", () => {
+    for (const id of new Set(restoredVariants023.map((v) => v.id))) {
+      restored023.saved = {};
+      expect(restoredHtml023(id)).not.toContain('role="status"');
+      for (const reason of ["", "   "]) {
+        restored023.saved = { ...previousChecked023, reason };
+        expect(restoredHtml023(id)).not.toContain('role="status"');
+        expect(restoredHtml023(id)).toMatch(
+          /<button[^>]*disabled[^>]*>Kanıtla kıyasla/,
+        );
+      }
+      restored023.saved = { ...previousChecked023, reason: "γ↑" };
+      expect(restoredHtml023(id)).toContain('role="status"');
+      restored023.saved = { ...previousChecked023, reason: "x".repeat(130) };
+      expect(restoredHtml023(id)).toContain("x".repeat(120));
+      expect(restoredHtml023(id)).not.toContain("x".repeat(121));
+    }
+    restored023.saved = {};
   });
 });

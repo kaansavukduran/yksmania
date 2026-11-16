@@ -1,0 +1,148 @@
+.turkish024-lab {
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 6px;
+  line-height: 1.65;
+}
+.turkish024-lab h3 {
+  margin-block: 0 1rem;
+}
+.turkish024-lab p {
+  margin-block: 8px;
+  padding: 0;
+}
+.turkish024-controls,
+.turkish024-response {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+}
+.turkish024-lab label {
+  display: grid;
+  gap: 0.45rem;
+  min-width: 0;
+}
+.turkish024-lab select,
+.turkish024-lab textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  font: inherit;
+  box-sizing: border-box;
+}
+.turkish024-lab textarea {
+  resize: vertical;
+}
+.turkish024-lab button {
+  min-height: 44px;
+  min-width: 44px;
+  font: inherit;
+  white-space: normal;
+  text-align: start;
+}
+.turkish024-text {
+  min-width: 0;
+  margin: 0;
+  padding: 6px 0;
+  border: 0;
+}
+.turkish024-text legend {
+  padding: 0;
+  font-weight: 650;
+}
+.turkish024-text ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+}
+.turkish024-text li {
+  min-width: 0;
+}
+.turkish024-text button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4px 2px;
+  line-height: 1.65;
+}
+.turkish024-text button[aria-pressed="true"] {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+.turkish024-lab svg {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  display: block;
+  margin: 1.25rem auto;
+  overflow: visible;
+}
+.turkish024-lab svg text {
+  fill: var(--text);
+  font-family: inherit;
+  font-size: 24px;
+}
+.turkish024-focus,
+.turkish024-evidence,
+.turkish024-result {
+  border-inline-start: 3px solid var(--accent);
+  padding-inline-start: 4px;
+  min-width: 0;
+}
+.turkish024-result :is(ul, ol),
+.turkish024-evidence :is(ul, ol) {
+  padding-inline-start: 16px;
+  margin-block: 8px;
+}
+.turkish024-records {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1rem;
+}
+.turkish024-records article {
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 6px;
+}
+.turkish024-records h4 {
+  margin: 0 0 0.75rem;
+  font: inherit;
+  font-weight: 700;
+}
+.turkish024-records dl {
+  margin: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+.turkish024-records dl div {
+  min-width: 0;
+}
+.turkish024-records dt {
+  color: var(--muted);
+}
+.turkish024-records dd {
+  margin: 0;
+  font-weight: 650;
+}
+.turkish024-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.turkish024-actions button {
+  flex: 1 1 12rem;
+  padding: 4px;
+  text-align: center;
+}
+@media (prefers-reduced-motion: reduce) {
+  .turkish024-lab *,
+  .turkish024-lab *::before,
+  .turkish024-lab *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

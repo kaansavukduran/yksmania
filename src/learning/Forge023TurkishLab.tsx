@@ -1,4 +1,5 @@
 import { useId } from "react";
+import { useApp } from "../store";
 import { useExploration } from "./useExploration";
 import {
   answerContexts023,
@@ -16,7 +17,10 @@ export default function Forge023TurkishLab({ lessonId }: { lessonId: string }) {
     throw new RangeError("Bu konu için atölye yok.");
   const isAnswer = lessonId === "paragrafta-soru-cevap",
     contexts = isAnswer ? answerContexts023() : interviewContexts023();
-  const [saved, set] = useExploration(`forge023-turkish:${lessonId}`, {
+  const storageKey = `forge023-turkish:${lessonId}`;
+  const { state } = useApp();
+  const raw = state.explorations[storageKey] ?? {};
+  const [saved, save] = useExploration(storageKey, {
     ...turkishDefaults023,
     caseId: contexts[0].id,
   });
@@ -42,11 +46,40 @@ export default function Forge023TurkishLab({ lessonId }: { lessonId: string }) {
   const answer = isAnswer ? answerScene023(caseId, choice, selected) : null;
   const interview = !isAnswer ? interviewScene023(caseId, choice, turn) : null;
   const scene = answer ?? interview!;
+  const rawFields: readonly (keyof typeof turkishDefaults023)[] = isAnswer
+    ? ["caseId", "choice", "selected"]
+    : ["caseId", "choice", "turn"];
+  const selectionValid =
+    rawFields.every(
+      (key) =>
+        !Object.hasOwn(raw, key) ||
+        typeof raw[key] === typeof turkishDefaults023[key],
+    ) &&
+    saved.caseId === caseId &&
+    saved.choice === choice &&
+    (isAnswer ? saved.selected === selected : saved.turn === turn);
   const guess = scene.options.includes(saved.guess) ? saved.guess : "",
-    reason = saved.reason.slice(0, 120);
+    reason = selectionValid ? saved.reason.slice(0, 120) : "";
   const canRead = isAnswer || turn >= 1,
-    compared = canRead && saved.compared && Boolean(guess && reason.trim()),
-    revealed = canRead && (saved.show || compared);
+    compared =
+      canRead &&
+      selectionValid &&
+      saved.compared === true &&
+      Boolean(guess && reason.trim()),
+    revealed = canRead && selectionValid && (saved.show === true || compared);
+  const set = (patch: Parameters<typeof save>[0]) =>
+    save({
+      caseId,
+      choice,
+      selected,
+      turn,
+      guess,
+      compared: selectionValid && saved.compared === true,
+      show: selectionValid && saved.show === true,
+      ...patch,
+      reason:
+        typeof patch.reason === "string" ? patch.reason.slice(0, 120) : reason,
+    });
   const change = (patch: Parameters<typeof set>[0]) =>
     set({
       ...patch,

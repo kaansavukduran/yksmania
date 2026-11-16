@@ -3,6 +3,7 @@ import { resolveGuideStep } from "../src/learning/guides/position";
 
 it("keeps legacy worked-example and recall activities after new teaching is appended", () => {
   for (const [id, oldCount, count] of [
+    ["turev-teget", 11, 19],
     ["paragraf", 7, 17],
     ["elektrik-alan", 8, 16],
     ["kimyasal-denge", 11, 20],

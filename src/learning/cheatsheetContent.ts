@@ -1,3 +1,10 @@
+import { forge024MathTopics } from "./forge024Math";
+import { forge024PhysicsTopics } from "./forge024Physics";
+import { forge024BiologyATopics } from "./forge024BiologyA";
+import { forge024BiologyBTopics } from "./forge024BiologyB";
+import { forge024ChemistryTopics } from "./forge024Chemistry";
+import { forge024HumanitiesTopics } from "./forge024Humanities";
+import { forge024TurkishTopics } from "./forge024Turkish";
 import { forge023MathTopics } from "./forge023Math";
 import { forge023PhysicsTopics } from "./forge023Physics";
 import { forge023BiologyTopics } from "./forge023Biology";
@@ -97,12 +104,20 @@ export interface CheatSheet {
 }
 
 const completeSourceSheets = new Set([
+  "turev-teget",
   "mol",
   "carpanlara-ayirma",
   "paragraf",
   "elektrik-alan",
   "kimyasal-denge",
   "dna-eslenmesi",
+  ...Object.keys(forge024MathTopics),
+  ...Object.keys(forge024PhysicsTopics),
+  ...Object.keys(forge024BiologyATopics),
+  ...Object.keys(forge024BiologyBTopics),
+  ...Object.keys(forge024ChemistryTopics),
+  ...Object.keys(forge024HumanitiesTopics),
+  ...Object.keys(forge024TurkishTopics),
   ...Object.keys(forge023MathTopics),
   ...Object.keys(forge023PhysicsTopics),
   ...Object.keys(forge023BiologyTopics),

@@ -129,6 +129,7 @@ export function Courses({
                       {ready.map((lesson) => (
                         <button
                           className="ready-topic"
+                          data-lesson-id={lesson.id}
                           key={lesson.id}
                           onClick={() => start(lesson)}
                         >

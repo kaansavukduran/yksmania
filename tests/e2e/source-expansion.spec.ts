@@ -8,12 +8,12 @@ async function nav(page: Page, name: string) {
     .getByRole("button", { name, exact: true })
     .click();
 }
-async function open(page: Page, title: string) {
+async function open(page: Page, id: string, title: string) {
   await nav(page, "Konu Anlatımı");
   await page
     .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
     .fill(title);
-  await page.locator(".ready-topic").filter({ hasText: title }).click();
+  await page.locator(`.ready-topic[data-lesson-id="${id}"]`).click();
   await expect(page.locator(".study-title h1")).toContainText(title);
 }
 test("reviewed Seljuk, shell distribution and paragraph lessons explain evidence with independent interactive models and worked steps", async ({
@@ -21,14 +21,14 @@ test("reviewed Seljuk, shell distribution and paragraph lessons explain evidence
   context,
 }) => {
   await page.goto("/");
-  await open(page, "Selçuklu Türkiyesi");
+  await open(page, "selcuklu-yerlesme-devletlesme", "Selçuklu Türkiyesi");
   await expect(page.locator(".lesson-article")).toContainText("1071 Malazgirt");
   await expect(page.locator(".lesson-article")).toContainText("1243 Kösedağ");
   await page
     .getByRole("button", { name: "1243 ile 1308’i ayır", exact: true })
     .click();
   await expect(page.locator(".narrative-lab")).toContainText("1243");
-  await open(page, "Katman elektron dizilimi");
+  await open(page, "katman-elektron-dizilimi", "Katman elektron dizilimi");
   await page
     .locator(".shell-lab")
     .getByRole("button", { name: "Ca", exact: true })
@@ -58,7 +58,7 @@ test("reviewed Seljuk, shell distribution and paragraph lessons explain evidence
   await context.setOffline(true);
   await page.reload();
   await expect(page.locator(".shell-result")).toContainText("18 elektron");
-  await open(page, "Paragrafta ana düşünce");
+  await open(page, "paragraf", "Paragrafta ana düşünce");
   expect(await page.locator(".guide-section").count()).toBeGreaterThanOrEqual(
     7,
   );
@@ -94,13 +94,17 @@ test("reviewed Seljuk, shell distribution and paragraph lessons explain evidence
   }
   await page.goto("/#/topic?id=detail-450&mode=theory");
   await expect(page.locator(".study-title h1")).toHaveText(
-    "Sikloalkanlar ve izomerlik",
+    "Sikloalkanlar ve izomerlik: bağı say, yapıyı karşılaştır",
   );
-  await expect(page.locator(".topic-study")).toBeVisible();
+  await expect(page.locator(".lesson-article")).toBeVisible();
+  await expect(
+    page.locator('[data-forge023="ayt-sikloalkanlar"]'),
+  ).toBeVisible();
+  expect(await page.locator(".guide-section").count()).toBeGreaterThan(0);
   await expect(
     page.getByRole("button", { name: /PDF.*ekle|Kaynak dosyalarını yönet/ }),
   ).toHaveCount(0);
-  const padding = await page.locator(".topic-study").evaluate((panel) => {
+  const padding = await page.locator(".lesson-article").evaluate((panel) => {
     const box = panel.getBoundingClientRect(),
       heading = panel.querySelector("h2")!.getBoundingClientRect();
     return { x: heading.x - box.x, y: heading.y - box.y };

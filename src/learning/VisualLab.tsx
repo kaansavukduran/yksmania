@@ -1,3 +1,10 @@
+import { forge024MathTopics } from "./forge024Math";
+import { forge024PhysicsTopics } from "./forge024Physics";
+import { forge024BiologyATopics } from "./forge024BiologyA";
+import { forge024BiologyBTopics } from "./forge024BiologyB";
+import { forge024ChemistryTopics } from "./forge024Chemistry";
+import { forge024HumanitiesTopics } from "./forge024Humanities";
+import { forge024TurkishTopics } from "./forge024Turkish";
 import { forge023MathTopics } from "./forge023Math";
 import { forge023PhysicsTopics } from "./forge023Physics";
 import { forge023BiologyTopics } from "./forge023Biology";
@@ -160,63 +167,94 @@ const questionOnly019 = new Set([
   "elektrik-alan-ileri",
   "kimyasal-denge-ileri",
 ]);
-const Forge020Biology=lazy(()=>import("./Forge020BiologyLab"));
-const Forge020Chemistry=lazy(()=>import("./Forge020ChemistryLab"));
-const Forge020Physics=lazy(()=>import("./Forge020PhysicsLab"));
-const Forge020Geography=lazy(()=>import("./Forge020GeographyLab"));
-const Forge020Humanities=lazy(()=>import("./Forge020HumanitiesLab"));
-const Forge021Geometry=lazy(()=>import("./Forge021GeometryLab"));
-const Forge021Physics=lazy(()=>import("./Forge021PhysicsLab"));
-const Forge021BiologyA=lazy(()=>import("./Forge021BiologyALab"));
-const Forge021BiologyB=lazy(()=>import("./Forge021BiologyBLab"));
-const Forge021Chemistry=lazy(()=>import("./Forge021ChemistryLab"));
-const Forge021Humanities=lazy(()=>import("./Forge021HumanitiesLab"));
-const Forge021Turkish=lazy(()=>import("./Forge021TurkishLab"));
-const Forge022Math=lazy(()=>import("./Forge022MathLab"));
-const Forge022Physics=lazy(()=>import("./Forge022PhysicsLab"));
-const Forge022Biology=lazy(()=>import("./Forge022BiologyLab"));
-const Forge022ChemistryA=lazy(()=>import("./Forge022ChemistryALab"));
-const Forge022ChemistryB=lazy(()=>import("./Forge022ChemistryBLab"));
-const Forge022Humanities=lazy(()=>import("./Forge022HumanitiesLab"));
-const Forge023Math=lazy(()=>import("./Forge023MathLab"));
-const Forge023Physics=lazy(()=>import("./Forge023PhysicsLab"));
-const Forge023Biology=lazy(()=>import("./Forge023BiologyLab"));
-const Forge023Chemistry=lazy(()=>import("./Forge023ChemistryLab"));
-const Forge023HumanitiesA=lazy(()=>import("./Forge023HumanitiesALab"));
-const Forge023HumanitiesB=lazy(()=>import("./Forge023HumanitiesBLab"));
-const Forge023Turkish=lazy(()=>import("./Forge023TurkishLab"));
-const source023Labs:{topics:Record<string,string>;Component:ComponentType<{lessonId:string}>}[]=[
- {topics:forge023MathTopics,Component:Forge023Math},
- {topics:forge023PhysicsTopics,Component:Forge023Physics},
- {topics:forge023BiologyTopics,Component:Forge023Biology},
- {topics:forge023ChemistryTopics,Component:Forge023Chemistry},
- {topics:forge023HumanitiesATopics,Component:Forge023HumanitiesA},
- {topics:forge023HumanitiesBTopics,Component:Forge023HumanitiesB},
- {topics:forge023TurkishTopics,Component:Forge023Turkish},
+const Forge020Biology = lazy(() => import("./Forge020BiologyLab"));
+const Forge020Chemistry = lazy(() => import("./Forge020ChemistryLab"));
+const Forge020Physics = lazy(() => import("./Forge020PhysicsLab"));
+const Forge020Geography = lazy(() => import("./Forge020GeographyLab"));
+const Forge020Humanities = lazy(() => import("./Forge020HumanitiesLab"));
+const Forge021Geometry = lazy(() => import("./Forge021GeometryLab"));
+const Forge021Physics = lazy(() => import("./Forge021PhysicsLab"));
+const Forge021BiologyA = lazy(() => import("./Forge021BiologyALab"));
+const Forge021BiologyB = lazy(() => import("./Forge021BiologyBLab"));
+const Forge021Chemistry = lazy(() => import("./Forge021ChemistryLab"));
+const Forge021Humanities = lazy(() => import("./Forge021HumanitiesLab"));
+const Forge021Turkish = lazy(() => import("./Forge021TurkishLab"));
+const Forge022Math = lazy(() => import("./Forge022MathLab"));
+const Forge022Physics = lazy(() => import("./Forge022PhysicsLab"));
+const Forge022Biology = lazy(() => import("./Forge022BiologyLab"));
+const Forge022ChemistryA = lazy(() => import("./Forge022ChemistryALab"));
+const Forge022ChemistryB = lazy(() => import("./Forge022ChemistryBLab"));
+const Forge022Humanities = lazy(() => import("./Forge022HumanitiesLab"));
+const Forge023Math = lazy(() => import("./Forge023MathLab"));
+const Forge023Physics = lazy(() => import("./Forge023PhysicsLab"));
+const Forge023Biology = lazy(() => import("./Forge023BiologyLab"));
+const Forge023Chemistry = lazy(() => import("./Forge023ChemistryLab"));
+const Forge023HumanitiesA = lazy(() => import("./Forge023HumanitiesALab"));
+const Forge023HumanitiesB = lazy(() => import("./Forge023HumanitiesBLab"));
+const Forge023Turkish = lazy(() => import("./Forge023TurkishLab"));
+const Forge024Math = lazy(() => import("./Forge024MathLab"));
+const Forge024Physics = lazy(() => import("./Forge024PhysicsLab"));
+const Forge024BiologyA = lazy(() => import("./Forge024BiologyALab"));
+const Forge024BiologyB = lazy(() => import("./Forge024BiologyBLab"));
+const Forge024Chemistry = lazy(() => import("./Forge024ChemistryLab"));
+const Forge024Humanities = lazy(() => import("./Forge024HumanitiesLab"));
+const Forge024Turkish = lazy(() => import("./Forge024TurkishLab"));
+const source024Labs: {
+  topics: Record<string, string>;
+  Component: ComponentType<{ lessonId: string }>;
+}[] = [
+  { topics: forge024MathTopics, Component: Forge024Math },
+  { topics: forge024PhysicsTopics, Component: Forge024Physics },
+  { topics: forge024BiologyATopics, Component: Forge024BiologyA },
+  { topics: forge024BiologyBTopics, Component: Forge024BiologyB },
+  { topics: forge024ChemistryTopics, Component: Forge024Chemistry },
+  { topics: forge024HumanitiesTopics, Component: Forge024Humanities },
+  { topics: forge024TurkishTopics, Component: Forge024Turkish },
 ];
-const source022Labs:{topics:Record<string,string>;Component:ComponentType<{lessonId:string}>}[]=[
- {topics:forge022MathTopics,Component:Forge022Math},
- {topics:forge022PhysicsTopics,Component:Forge022Physics},
- {topics:forge022BiologyTopics,Component:Forge022Biology},
- {topics:forge022ChemistryATopics,Component:Forge022ChemistryA},
- {topics:forge022ChemistryBTopics,Component:Forge022ChemistryB},
- {topics:forge022HumanitiesTopics,Component:Forge022Humanities},
+const source023Labs: {
+  topics: Record<string, string>;
+  Component: ComponentType<{ lessonId: string }>;
+}[] = [
+  { topics: forge023MathTopics, Component: Forge023Math },
+  { topics: forge023PhysicsTopics, Component: Forge023Physics },
+  { topics: forge023BiologyTopics, Component: Forge023Biology },
+  { topics: forge023ChemistryTopics, Component: Forge023Chemistry },
+  { topics: forge023HumanitiesATopics, Component: Forge023HumanitiesA },
+  { topics: forge023HumanitiesBTopics, Component: Forge023HumanitiesB },
+  { topics: forge023TurkishTopics, Component: Forge023Turkish },
 ];
-const source021Labs:{topics:Record<string,string>;Component:ComponentType<{lessonId:string}>}[]=[
- {topics:forge021GeometryTopics,Component:Forge021Geometry},
- {topics:forge021PhysicsTopics,Component:Forge021Physics},
- {topics:forge021BiologyATopics,Component:Forge021BiologyA},
- {topics:forge021BiologyBTopics,Component:Forge021BiologyB},
- {topics:forge021ChemistryTopics,Component:Forge021Chemistry},
- {topics:forge021HumanitiesTopics,Component:Forge021Humanities},
- {topics:forge021TurkishTopics,Component:Forge021Turkish},
+const source022Labs: {
+  topics: Record<string, string>;
+  Component: ComponentType<{ lessonId: string }>;
+}[] = [
+  { topics: forge022MathTopics, Component: Forge022Math },
+  { topics: forge022PhysicsTopics, Component: Forge022Physics },
+  { topics: forge022BiologyTopics, Component: Forge022Biology },
+  { topics: forge022ChemistryATopics, Component: Forge022ChemistryA },
+  { topics: forge022ChemistryBTopics, Component: Forge022ChemistryB },
+  { topics: forge022HumanitiesTopics, Component: Forge022Humanities },
 ];
-const source020Labs:{topics:Record<string,string>;Component:ComponentType<{lessonId:string}>}[]=[
- {topics:forge020BiologyTopics,Component:Forge020Biology},
- {topics:forge020ChemistryTopics,Component:Forge020Chemistry},
- {topics:forge020PhysicsTopics,Component:Forge020Physics},
- {topics:forge020GeographyTopics,Component:Forge020Geography},
- {topics:forge020HumanitiesTopics,Component:Forge020Humanities},
+const source021Labs: {
+  topics: Record<string, string>;
+  Component: ComponentType<{ lessonId: string }>;
+}[] = [
+  { topics: forge021GeometryTopics, Component: Forge021Geometry },
+  { topics: forge021PhysicsTopics, Component: Forge021Physics },
+  { topics: forge021BiologyATopics, Component: Forge021BiologyA },
+  { topics: forge021BiologyBTopics, Component: Forge021BiologyB },
+  { topics: forge021ChemistryTopics, Component: Forge021Chemistry },
+  { topics: forge021HumanitiesTopics, Component: Forge021Humanities },
+  { topics: forge021TurkishTopics, Component: Forge021Turkish },
+];
+const source020Labs: {
+  topics: Record<string, string>;
+  Component: ComponentType<{ lessonId: string }>;
+}[] = [
+  { topics: forge020BiologyTopics, Component: Forge020Biology },
+  { topics: forge020ChemistryTopics, Component: Forge020Chemistry },
+  { topics: forge020PhysicsTopics, Component: Forge020Physics },
+  { topics: forge020GeographyTopics, Component: Forge020Geography },
+  { topics: forge020HumanitiesTopics, Component: Forge020Humanities },
 ];
 const source019Labs: {
   topics: Record<string, string>;
@@ -316,11 +354,22 @@ const continuationLabs: {
 ];
 export function VisualLab({ id }: { id: string }) {
   const { t } = useApp();
-  if (questionOnly019.has(id)||id==="dna-replikasyonu-ileri") return null;
-  const Source023Lab=source023Labs.find(({topics})=>Object.hasOwn(topics,id))?.Component;
-  const Source022Lab=source022Labs.find(({topics})=>Object.hasOwn(topics,id))?.Component;
-  const Source021Lab=source021Labs.find(({topics})=>Object.hasOwn(topics,id))?.Component;
-  const Source020Lab=source020Labs.find(({topics})=>Object.hasOwn(topics,id))?.Component;
+  if (questionOnly019.has(id) || id === "dna-replikasyonu-ileri") return null;
+  const Source024Lab = source024Labs.find(({ topics }) =>
+    Object.hasOwn(topics, id),
+  )?.Component;
+  const Source023Lab = source023Labs.find(({ topics }) =>
+    Object.hasOwn(topics, id),
+  )?.Component;
+  const Source022Lab = source022Labs.find(({ topics }) =>
+    Object.hasOwn(topics, id),
+  )?.Component;
+  const Source021Lab = source021Labs.find(({ topics }) =>
+    Object.hasOwn(topics, id),
+  )?.Component;
+  const Source020Lab = source020Labs.find(({ topics }) =>
+    Object.hasOwn(topics, id),
+  )?.Component;
   const Source019Lab = source019Labs.find(({ topics }) =>
     Object.hasOwn(topics, id),
   )?.Component;
@@ -344,7 +393,17 @@ export function VisualLab({ id }: { id: string }) {
   )?.Component;
   return (
     <Suspense fallback={<p role="status">{t("loading")}</p>}>
-      {Source023Lab ? (<Source023Lab key={id} lessonId={id}/>) : Source022Lab ? (<Source022Lab key={id} lessonId={id}/>) : Source021Lab ? (<Source021Lab key={id} lessonId={id}/>) : Source020Lab ? (<Source020Lab key={id} lessonId={id}/>) : Source019Lab ? (
+      {Source024Lab ? (
+        <Source024Lab key={id} lessonId={id} />
+      ) : Source023Lab ? (
+        <Source023Lab key={id} lessonId={id} />
+      ) : Source022Lab ? (
+        <Source022Lab key={id} lessonId={id} />
+      ) : Source021Lab ? (
+        <Source021Lab key={id} lessonId={id} />
+      ) : Source020Lab ? (
+        <Source020Lab key={id} lessonId={id} />
+      ) : Source019Lab ? (
         <Source019Lab key={id} lessonId={id} />
       ) : Source018Lab ? (
         <Source018Lab key={id} lessonId={id} />
@@ -411,7 +470,10 @@ export function VisualLab({ id }: { id: string }) {
       ) : id === "alan-donusumleri" ? (
         <Geometry />
       ) : id === "turev-teget" ? (
-        <Derivative />
+        <>
+          <Derivative />
+          <Forge024Math key={id} lessonId={id} />
+        </>
       ) : id === "elektrik-alan" ? (
         <Field />
       ) : id === "kimyasal-denge" ? (

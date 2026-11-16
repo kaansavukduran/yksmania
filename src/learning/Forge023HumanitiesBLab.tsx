@@ -1,4 +1,5 @@
 import { useId } from "react";
+import { useApp } from "../store";
 import { useExploration } from "./useExploration";
 import {
   humanitiesBDefaults023,
@@ -125,8 +126,10 @@ export default function Forge023HumanitiesBLab({
   const uid = useId();
   if (!Object.hasOwn(forge023HumanitiesBTopics, lessonId))
     throw new RangeError("Bu konu için atölye yok.");
-  const [saved, set] = useExploration(
-    `forge023-humanities-b:${lessonId}`,
+  const explorationKey = `forge023-humanities-b:${lessonId}`;
+  const { state } = useApp();
+  const [saved, persist] = useExploration(
+    explorationKey,
     humanitiesBDefaults023,
   );
   const kind = Object.keys(forge023HumanitiesBTopics).indexOf(lessonId);
@@ -144,6 +147,44 @@ export default function Forge023HumanitiesBLab({
     done = typeof saved.done === "boolean" ? saved.done : true,
     claim = safe(saved.claim, 9),
     extra = safe(saved.extra, 3);
+  const canonical = {
+    person,
+    lens,
+    name,
+    event,
+    school,
+    field,
+    case: caseIndex,
+    stage,
+    context,
+    motive,
+    quality,
+    done,
+    claim,
+    extra,
+  };
+  const activeFields: (keyof typeof canonical)[] = [
+    ["person", "lens"],
+    ["name", "event"],
+    ["school", "field"],
+    ["case", "stage"],
+    ["context", "motive", "quality", "done"],
+    ["claim", "extra"],
+  ][kind] as (keyof typeof canonical)[];
+  const raw = state.explorations[explorationKey] ?? {};
+  const selectionValid = activeFields.every(
+    (key) =>
+      (!Object.hasOwn(raw, key) ||
+        typeof raw[key] === typeof humanitiesBDefaults023[key]) &&
+      saved[key] === canonical[key],
+  );
+  const set = (patch: Parameters<typeof persist>[0]) =>
+    persist({
+      ...canonical,
+      reason: selectionValid ? saved.reason.slice(0, 128) : "",
+      show: selectionValid && saved.show,
+      ...patch,
+    });
   const scene =
     kind === 0
       ? youthSceneB023(person, lens)
@@ -157,8 +198,10 @@ export default function Forge023HumanitiesBLab({
               ? conceptSceneB023(context, motive, quality, done)
               : beliefSceneB023(claim, extra);
   const reason =
-      typeof saved.reason === "string" ? saved.reason.slice(0, 128) : "",
-    show = saved.show === true && reason.trim().length > 0;
+      selectionValid && typeof saved.reason === "string"
+        ? saved.reason.slice(0, 128)
+        : "",
+    show = selectionValid && saved.show === true && reason.trim().length > 0;
   const change = (patch: Parameters<typeof set>[0]) =>
     set({ ...patch, show: false, reason: "" });
   const select = (

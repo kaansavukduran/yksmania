@@ -1,5 +1,6 @@
 import { useId, type ReactNode } from "react";
 import { useExploration } from "./useExploration";
+import { useApp } from "../store";
 import {
   alkene023,
   alkeneChoices023,
@@ -27,6 +28,40 @@ const clamp = (value: number, min: number, max: number) =>
     : min;
 const choice = (options: Options, saved: string, fallback: string) =>
   Object.hasOwn(options, saved) ? saved : fallback;
+function useCanonical023<
+  T extends typeof common & Record<string, string | number | boolean>,
+>(
+  id: string,
+  defaults: T,
+  normalize: (value: T) => T,
+  active: (value: T) => (keyof T)[],
+  predictions: Options,
+) {
+  const [filtered, write] = useExploration(id, defaults),
+    explorations = useApp().state.explorations,
+    raw = Object.hasOwn(explorations, id) ? explorations[id] : undefined;
+  const canonical = (input: T): T => ({
+    ...normalize(input),
+    prediction: choice(predictions, input.prediction, ""),
+    reason: input.reason.slice(0, 120),
+    checked: input.checked === true,
+  });
+  const value = canonical(filtered as T),
+    validSelection = active(value).every(
+      (key) =>
+        filtered[key] === value[key] &&
+        (raw == null ||
+          !Object.hasOwn(raw, key) ||
+          typeof raw[key as string] === typeof defaults[key]),
+    );
+  const persist = (patch: Partial<T>) => {
+    const next = canonical({ ...value, ...patch });
+    write({ ...next, checked: validSelection && next.checked } as Parameters<
+      typeof write
+    >[0]);
+  };
+  return [value, persist, validSelection] as const;
+}
 const sub = (n: number) =>
   String(n).replace(/\d/g, (c) => "₀₁₂₃₄₅₆₇₈₉"[Number(c)]);
 const entries = (o: Options) => Object.entries(o);
@@ -316,6 +351,7 @@ function Feedback({
   question,
   options,
   evidence,
+  validSelection,
 }: {
   state: typeof common;
   set: (v: Partial<typeof common>) => void;
@@ -323,6 +359,7 @@ function Feedback({
   question: string;
   options: Options;
   evidence: string;
+  validSelection: boolean;
 }) {
   const id = useId();
   return (
@@ -346,13 +383,16 @@ function Feedback({
       <button
         className="secondary"
         disabled={
-          !Object.hasOwn(options, state.prediction) || !state.reason.trim()
+          !validSelection ||
+          !Object.hasOwn(options, state.prediction) ||
+          !state.reason.trim()
         }
         onClick={() => set({ checked: true })}
       >
         Kıyasla
       </button>
-      {state.checked &&
+      {validSelection &&
+        state.checked &&
         Object.hasOwn(options, state.prediction) &&
         state.reason.trim() && (
           <div className="c023-feedback" role="status">
@@ -403,12 +443,29 @@ function Panel({
   );
 }
 function IsomerLab() {
-  const [saved, set] = useExploration("forge023:chemistry:ayt-sikloalkanlar", {
+  const defaults = {
     ...common,
     first: "cyclobutane",
     second: "but1",
     focus: 0,
-  });
+  };
+  const [saved, set, validSelection] = useCanonical023(
+    "forge023:chemistry:ayt-sikloalkanlar",
+    defaults,
+    (state) => {
+      const first = choice(isomerChoices023, state.first, "cyclobutane"),
+        second = choice(isomerChoices023, state.second, "but1"),
+        data = compareIsomers023(first, second);
+      return {
+        ...state,
+        first,
+        second,
+        focus: clamp(state.focus, 0, data.first.atoms.length - 1),
+      };
+    },
+    () => ["first", "second", "focus"],
+    { same: "", isomer: "", different: "" },
+  );
   const first = choice(isomerChoices023, saved.first, "cyclobutane"),
     second = choice(isomerChoices023, saved.second, "but1"),
     data = compareIsomers023(first, second),
@@ -490,6 +547,7 @@ function IsomerLab() {
       <AtomEvidence data={data.first} focus={focus} />
       <Feedback
         state={saved}
+        validSelection={validSelection}
         set={set}
         expected={expected}
         question="Bu iki yapı nasıl ilişkili?"
@@ -633,7 +691,7 @@ function Polymer({
   );
 }
 function AlkeneLab() {
-  const [saved, set] = useExploration("forge023:chemistry:ayt-alkenler", {
+  const defaults = {
     ...common,
     kind: "propene",
     reaction: "none",
@@ -643,7 +701,45 @@ function AlkeneLab() {
     view: "reaction",
     polymer: "ethene",
     units: 3,
-  });
+  };
+  const [saved, set, validSelection] = useCanonical023(
+    "forge023:chemistry:ayt-alkenler",
+    defaults,
+    (state) => {
+      const kind = choice(alkeneChoices023, state.kind, "propene"),
+        reaction = choice(alkeneReactions023, state.reaction, "none"),
+        stage = clamp(state.stage, 0, 2),
+        trans = state.trans === true,
+        data = alkene023(kind, reaction, stage, trans);
+      return {
+        ...state,
+        kind,
+        reaction,
+        stage,
+        trans,
+        focus: clamp(state.focus, 0, data.atoms.length - 1),
+        view: state.view === "polymer" ? "polymer" : "reaction",
+        polymer: choice(
+          { ethene: "", vinyl: "", teflon: "" },
+          state.polymer,
+          "ethene",
+        ),
+        units: clamp(state.units, 1, 4),
+      };
+    },
+    (state) =>
+      state.view === "polymer"
+        ? ["view", "polymer", "units"]
+        : [
+            "view",
+            "kind",
+            "reaction",
+            "stage",
+            "focus",
+            ...(state.kind === "but2" ? (["trans"] as const) : []),
+          ],
+    { yes: "", no: "" },
+  );
   const kind = choice(alkeneChoices023, saved.kind, "propene"),
     rx = choice(alkeneReactions023, saved.reaction, "none"),
     stage = clamp(saved.stage, 0, 2),
@@ -745,6 +841,7 @@ function AlkeneLab() {
           <AtomEvidence data={data} focus={focus} />
           <Feedback
             state={saved}
+            validSelection={validSelection}
             set={set}
             expected={data.pi ? "yes" : "no"}
             question="Son yapıda pi kaldı mı?"
@@ -757,13 +854,32 @@ function AlkeneLab() {
   );
 }
 function AlkyneLab() {
-  const [saved, set] = useExploration("forge023:chemistry:ayt-alkinler", {
+  const defaults = {
     ...common,
     kind: "ethyne",
     reaction: "hydrogen",
     stage: 0,
     focus: 0,
-  });
+  };
+  const [saved, set, validSelection] = useCanonical023(
+    "forge023:chemistry:ayt-alkinler",
+    defaults,
+    (state) => {
+      const kind = choice(alkyneChoices023, state.kind, "ethyne"),
+        reaction = choice(alkyneReactions023, state.reaction, "hydrogen"),
+        stage = clamp(state.stage, 0, 2),
+        data = alkyne023(kind, reaction, stage);
+      return {
+        ...state,
+        kind,
+        reaction,
+        stage,
+        focus: clamp(state.focus, 0, data.atoms.length - 1),
+      };
+    },
+    () => ["kind", "reaction", "stage", "focus"],
+    { yes: "", no: "" },
+  );
   const kind = choice(alkyneChoices023, saved.kind, "ethyne"),
     rx = choice(alkyneReactions023, saved.reaction, "hydrogen"),
     stage = clamp(saved.stage, 0, 2),
@@ -839,6 +955,7 @@ function AlkyneLab() {
       <AtomEvidence data={data} focus={focus} />
       <Feedback
         state={saved}
+        validSelection={validSelection}
         set={set}
         expected={data.terminal ? "yes" : "no"}
         question="İlk tür uç alkin mi?"
@@ -849,13 +966,41 @@ function AlkyneLab() {
   );
 }
 function AreneLab() {
-  const [saved, set] = useExploration("forge023:chemistry:ayt-arenler", {
+  const defaults = {
     ...common,
     kind: "benzene",
     depiction: "hybrid",
     position: 1,
     focus: 0,
-  });
+  };
+  const [saved, set, validSelection] = useCanonical023(
+    "forge023:chemistry:ayt-arenler",
+    defaults,
+    (state) => {
+      const kind = choice(areneChoices023, state.kind, "benzene"),
+        depiction = choice(
+          { hybrid: "", a: "", b: "" },
+          state.depiction,
+          "hybrid",
+        ),
+        position = clamp(state.position, 1, 3),
+        data = arene023(kind, depiction as "hybrid" | "a" | "b", position);
+      return {
+        ...state,
+        kind,
+        depiction,
+        position,
+        focus: clamp(state.focus, 0, data.atoms.length - 1),
+      };
+    },
+    (state) => [
+      "kind",
+      "focus",
+      ...(state.kind !== "cyclohexane" ? (["depiction"] as const) : []),
+      ...(state.kind === "xylene" ? (["position"] as const) : []),
+    ],
+    { yes: "", no: "" },
+  );
   const kind = choice(areneChoices023, saved.kind, "benzene"),
     depiction = choice(
       { hybrid: "", a: "", b: "" },
@@ -938,6 +1083,7 @@ function AreneLab() {
       <AtomEvidence data={data} focus={focus} />
       <Feedback
         state={saved}
+        validSelection={validSelection}
         set={set}
         expected={data.hydrocarbon ? "yes" : "no"}
         question="Yalnız C ve H mi?"
@@ -952,12 +1098,28 @@ function AreneLab() {
   );
 }
 function FunctionalLab() {
-  const [saved, set] = useExploration("forge023:chemistry:ayt-alkoller", {
+  const defaults = {
     ...common,
     kind: "ethanol",
     group: 0,
     focus: 0,
-  });
+  };
+  const [saved, set, validSelection] = useCanonical023(
+    "forge023:chemistry:ayt-alkoller",
+    defaults,
+    (state) => {
+      const kind = choice(functionalChoices023, state.kind, "ethanol"),
+        data = functional023(kind);
+      return {
+        ...state,
+        kind,
+        group: clamp(state.group, 0, data.groups.length - 1),
+        focus: clamp(state.focus, 0, data.atoms.length - 1),
+      };
+    },
+    () => ["kind", "group", "focus"],
+    { yes: "", no: "" },
+  );
   const kind = choice(functionalChoices023, saved.kind, "ethanol"),
     data = functional023(kind),
     group = clamp(saved.group, 0, data.groups.length - 1),
@@ -1044,6 +1206,7 @@ function FunctionalLab() {
       <AtomEvidence data={data} focus={focus} />
       <Feedback
         state={saved}
+        validSelection={validSelection}
         set={set}
         expected={data.alcoholCount > 0 ? "yes" : "no"}
         question="Alkol grubu bulunuyor mu?"

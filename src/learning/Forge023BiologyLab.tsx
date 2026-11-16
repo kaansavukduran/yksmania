@@ -1,4 +1,5 @@
 import { useId } from "react";
+import { useApp } from "../store";
 import {
   guardWater023,
   rootPath023,
@@ -16,6 +17,20 @@ import {
 import { useExploration } from "./useExploration";
 import "./forge023Biology.css";
 
+const rawTypes023 = (
+  raw: unknown,
+  defaults: Record<string, string | number | boolean>,
+  keys: string[],
+) => {
+  if (raw === undefined) return true;
+  if (!raw || typeof raw !== "object" || Array.isArray(raw)) return false;
+  const record = raw as Record<string, unknown>;
+  return [...keys, "prediction", "reason", "checked"].every(
+    (key) =>
+      !Object.hasOwn(record, key) ||
+      typeof record[key] === typeof defaults[key],
+  );
+};
 const fmt = (n: number) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 1 }).format(n);
 const bounded = (n: number, min: number, max: number) =>
@@ -95,6 +110,7 @@ function Compare({
   proof,
   change,
   compare,
+  validSelection,
 }: {
   value: Prediction;
   options: Record<string, string>;
@@ -102,6 +118,7 @@ function Compare({
   proof: string;
   change: (patch: Partial<Prediction>) => void;
   compare: () => void;
+  validSelection: boolean;
 }) {
   const id = useId();
   const valid = Object.hasOwn(options, value.prediction);
@@ -127,12 +144,12 @@ function Compare({
       <button
         type="button"
         className="secondary"
-        disabled={!valid || !value.reason.trim()}
+        disabled={!validSelection || !valid || !value.reason.trim()}
         onClick={compare}
       >
         Kanıtı karşılaştır
       </button>
-      {value.checked && valid && value.reason.trim() && (
+      {value.checked && validSelection && valid && value.reason.trim() && (
         <div className="bio023-feedback" role="status">
           <strong>
             {value.prediction === expected
@@ -325,7 +342,7 @@ function SurfaceFigure({ kind }: { kind: Surface023 }) {
   );
 }
 function CoverLab() {
-  const [saved, set] = useExploration("forge023:biology:bitki-ortu-doku", {
+  const defaults = {
     surface: "stoma",
     solute: -12,
     pressure: 4,
@@ -333,7 +350,10 @@ function CoverLab() {
     prediction: "",
     reason: "",
     checked: false,
-  });
+  };
+  const key = "forge023:biology:bitki-ortu-doku";
+  const raw = useApp().state.explorations[key];
+  const [saved, write] = useExploration(key, defaults);
   const surface = validKey(
     surfaceNames023,
     saved.surface,
@@ -344,6 +364,21 @@ function CoverLab() {
     outside = bounded(saved.outside, -30, 0),
     m = guardWater023(solute, pressure, outside),
     facts = surfaceFacts023[surface];
+  const validSelection =
+    rawTypes023(raw, defaults, ["solute", "pressure", "outside"]) &&
+    saved.solute === solute &&
+    saved.pressure === pressure &&
+    saved.outside === outside;
+  const set = (patch: Partial<typeof saved>) =>
+    write({
+      ...saved,
+      surface,
+      solute,
+      pressure,
+      outside,
+      checked: validSelection ? saved.checked : false,
+      ...patch,
+    });
   const change = (patch: Partial<typeof saved>) =>
     set({ ...patch, checked: false });
   const waterId = useId();
@@ -513,6 +548,7 @@ function CoverLab() {
         expected={m.direction}
         proof={proof}
         change={change}
+        validSelection={validSelection}
         compare={() => set({ checked: true })}
       />
     </section>
@@ -674,7 +710,7 @@ function RootAnatomy({
   );
 }
 function RootLab() {
-  const [saved, set] = useExploration("forge023:biology:bitki-kok-anatomisi", {
+  const defaults = {
     view: "long",
     zone: "maturation",
     kind: "dicot",
@@ -687,7 +723,10 @@ function RootLab() {
     prediction: "",
     reason: "",
     checked: false,
-  });
+  };
+  const key = "forge023:biology:bitki-kok-anatomisi";
+  const raw = useApp().state.explorations[key];
+  const [saved, write] = useExploration(key, defaults);
   const route = validKey(
       rootRoutes023,
       saved.route,
@@ -707,6 +746,32 @@ function RootLab() {
       count,
       stage,
     );
+  const validSelection =
+    rawTypes023(raw, defaults, [
+      "route",
+      "cargo",
+      "bandIntact",
+      "count",
+      "stage",
+      ...(cargo === "ion" ? ["ionEntry"] : []),
+    ]) &&
+    saved.route === route &&
+    saved.cargo === cargo &&
+    saved.count === count &&
+    saved.stage === stage;
+  const set = (patch: Partial<typeof saved>) =>
+    write({
+      ...saved,
+      route,
+      cargo,
+      zone,
+      view,
+      kind,
+      count,
+      stage,
+      checked: validSelection ? saved.checked : false,
+      ...patch,
+    });
   const change = (patch: Partial<typeof saved>) =>
     set({ ...patch, checked: false });
   const id = useId();
@@ -955,6 +1020,7 @@ function RootLab() {
         expected={m.canPass ? "passes" : "blocked"}
         proof={m.evidence}
         change={change}
+        validSelection={validSelection}
         compare={() => set({ checked: true })}
       />
     </section>

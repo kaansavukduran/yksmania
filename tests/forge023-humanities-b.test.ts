@@ -20,17 +20,65 @@ const harness = vi.hoisted(() => ({
   saved: {} as Record<string, string | number | boolean>,
   key: "",
 }));
-vi.mock("../src/learning/useExploration", () => ({
-  useExploration: (
-    key: string,
-    defaults: Record<string, string | number | boolean>,
-  ) => {
-    harness.key = key;
-    return [{ ...defaults, ...harness.saved }, () => {}];
+vi.mock("../src/store", () => ({
+  useApp: () => {
+    const explorations = new Proxy(
+      {},
+      {
+        get: (_target, key: string) => {
+          harness.key = key;
+          return harness.saved;
+        },
+      },
+    );
+    return {
+      state: { explorations },
+      update: (
+        fn: (state: { explorations: Record<string, typeof harness.saved> }) => {
+          explorations: Record<string, typeof harness.saved>;
+        },
+      ) => {
+        harness.saved = fn({ explorations }).explorations[harness.key];
+        return Promise.resolve();
+      },
+    };
   },
 }));
 import Lab from "../src/learning/Forge023HumanitiesBLab";
 describe("023: altı Din ünitesinde kaynak,kavram ve bağımsız kanıt", () => {
+  it("closes stale result and old reason after real-hook type fallback or an invalid active range", () => {
+    const cases: [string, string, string | number][] = [
+      [lessons[0].id, "person", "2"],
+      [lessons[1].id, "event", 8],
+      [lessons[2].id, "field", "1"],
+      [lessons[3].id, "stage", -1],
+      [lessons[4].id, "done", "false"],
+      [lessons[5].id, "claim", 0.5],
+    ];
+    for (const [lessonId, field, bad] of cases) {
+      harness.saved = {
+        ...humanitiesBDefaults023,
+        [field]: bad,
+        reason: "Önceki seçimin gerekçesi.",
+        show: true,
+      };
+      const html = renderToStaticMarkup(createElement(Lab, { lessonId }));
+      expect(html).toContain("Önce açıklamanı");
+      expect(html).not.toContain("Önceki seçimin gerekçesi.");
+      expect(html).not.toContain("otomatik doğru saymaz");
+      expect(html).toMatch(/<textarea[^>]*><\/textarea>/);
+    }
+    harness.saved = {
+      ...humanitiesBDefaults023,
+      school: "wrong type",
+      reason: "Bu modelin geçerli gerekçesi.",
+      show: true,
+    };
+    expect(
+      renderToStaticMarkup(createElement(Lab, { lessonId: lessons[0].id })),
+    ).toContain("otomatik doğru saymaz");
+    harness.saved = {};
+  });
   it("maps exact six headings and deep positive source coverage", () => {
     expect(Object.values(topics)).toEqual([
       "detail-84",

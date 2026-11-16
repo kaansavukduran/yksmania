@@ -1,0 +1,365 @@
+.forge024-biology-b {
+  margin: 24px 0;
+  padding: 24px;
+  min-width: 0;
+  background: var(--surface-2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow-wrap: anywhere;
+}
+.forge024-biology-b h3,
+.forge024-biology-b h4 {
+  margin: 0 0 16px;
+  line-height: 1.5;
+}
+.forge024-biology-b p,
+.forge024-biology-b figcaption,
+.forge024-biology-b li,
+.forge024-biology-b dd {
+  line-height: 1.75;
+}
+.bio024b-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  gap: 24px;
+  margin: 24px 0;
+  min-width: 0;
+}
+.bio024b-field {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+}
+.bio024b-field output {
+  font-variant-numeric: tabular-nums;
+}
+.forge024-biology-b input[type="range"] {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  margin: 0;
+  accent-color: var(--accent);
+}
+.forge024-biology-b select,
+.forge024-biology-b textarea {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 44px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.forge024-biology-b button {
+  min-height: 44px;
+  min-width: 44px;
+  max-width: 100%;
+  padding: 12px 16px;
+  font: inherit;
+  white-space: normal;
+  line-height: 1.6;
+}
+.forge024-biology-b :is(button, input, select, textarea):focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+.forge024-biology-b figure {
+  min-width: 0;
+  margin: 24px 0;
+}
+.bio024b-svg {
+  display: block;
+  width: 100%;
+  max-width: 430px;
+  height: auto;
+  margin: 24px auto;
+  overflow: visible;
+}
+.bio024b-culture {
+  max-width: 360px;
+}
+.bio024b-cell,
+.bio024b-receptor {
+  fill: var(--bg);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio024b-leaf {
+  fill: var(--mint);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio024b-line {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio024b-wall {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 5;
+}
+.bio024b-grid {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 2;
+  stroke-dasharray: 5 4;
+}
+.bio024b-path-active {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 5;
+}
+.bio024b-path-pending {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+  stroke-dasharray: 4 6;
+}
+.bio024b-node {
+  fill: var(--bg);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio024b-selected-node {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 3;
+}
+.bio024b-label {
+  fill: var(--text);
+  font-size: 24px;
+  font-family: inherit;
+}
+.bio024b-dish {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio024b-bud {
+  fill: var(--mint);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio024b-right-edge {
+  fill: none;
+  stroke: #82609b;
+  stroke-width: 5;
+  stroke-dasharray: 7 3;
+}
+.bio024b-opaque {
+  fill: var(--text);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio024b-transparent {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+  stroke-dasharray: 4 4;
+}
+.bio024b-cut {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 4;
+  stroke-dasharray: 3 3;
+}
+.bio024b-gel {
+  fill: #8bc8de;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio024b-agar {
+  fill: #bda4d1;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio024b-signal {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 1;
+}
+.bio024b-light-ray {
+  fill: #f4ca71;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio024b-day {
+  fill: #f4ca71;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio024b-night {
+  fill: #747aa4;
+  stroke: var(--text);
+  stroke-width: 2;
+  stroke-dasharray: 4 3;
+}
+.bio024b-pulse-effective {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 5;
+}
+.bio024b-pulse-reversed {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 3;
+  stroke-dasharray: 4 3;
+}
+.bio024b-petal {
+  fill: #ddadd0;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio024b-foreign-petal {
+  fill: #f4ca71;
+  stroke: var(--text);
+  stroke-width: 2;
+  stroke-dasharray: 4 3;
+}
+.bio024b-anther {
+  fill: #f4ca71;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio024b-ovule {
+  fill: var(--bg);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio024b-nucleus {
+  fill: var(--text);
+}
+.bio024b-stop {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 4;
+}
+.bio024b-tube {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 6;
+  stroke-dasharray: 7 3;
+}
+.bio024b-result {
+  padding: 18px 0;
+  border-block: 1px solid var(--border);
+  margin: 24px 0;
+}
+.bio024b-result p:last-child {
+  margin-bottom: 0;
+}
+.bio024b-divider {
+  margin-top: 32px;
+  padding-top: 26px;
+  border-top: 1px solid var(--border);
+}
+.bio024b-prediction {
+  display: grid;
+  gap: 18px;
+  margin-top: 28px;
+  min-width: 0;
+}
+.bio024b-prediction h4,
+.bio024b-prediction p {
+  margin: 0;
+}
+.bio024b-feedback {
+  display: grid;
+  gap: 14px;
+  padding: 18px 0;
+  border-block: 1px solid var(--border);
+}
+.bio024b-checks {
+  display: grid;
+  gap: 16px;
+  margin: 24px 0;
+}
+.bio024b-check {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 44px;
+  min-width: 0;
+  line-height: 1.7;
+  margin: 12px 0;
+}
+.bio024b-check input {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  accent-color: var(--accent);
+}
+.bio024b-route {
+  display: grid;
+  gap: 14px;
+  padding-left: 28px;
+  margin: 24px 0;
+}
+.bio024b-route li {
+  padding: 6px 0;
+}
+.bio024b-route li[data-reached="true"] {
+  font-weight: 650;
+}
+.bio024b-route li[data-reached="false"] {
+  border-left: 2px dashed var(--border);
+  padding-left: 10px;
+}
+.bio024b-facts > div {
+  padding: 14px 0;
+  border-top: 1px solid var(--border);
+}
+.bio024b-facts dt {
+  font-weight: 650;
+  margin-bottom: 8px;
+}
+.bio024b-facts dd {
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .forge024-biology-b {
+    padding: 16px 4px;
+  }
+  .bio024b-controls {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .forge024-biology-b select {
+    padding-inline: 4px;
+  }
+  .forge024-biology-b button {
+    padding-inline: 6px;
+  }
+  .forge024-biology-b :is(ol, ul) {
+    padding-inline-start: 4px;
+    list-style-position: inside;
+  }
+  .bio024b-route {
+    padding-inline-start: 0;
+  }
+  .bio024b-route li[data-reached="false"] {
+    padding-inline-start: 4px;
+  }
+  .bio024b-check {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 4px;
+  }
+  .bio024b-check input {
+    width: 44px;
+    min-width: 44px;
+    height: 44px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .forge024-biology-b * {
+    scroll-behavior: auto;
+    animation: none;
+    transition: none;
+  }
+}
