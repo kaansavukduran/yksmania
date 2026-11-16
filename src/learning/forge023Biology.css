@@ -1,0 +1,287 @@
+.forge023-biology {
+  margin: 24px 0;
+  padding: 24px;
+  min-width: 0;
+  background: var(--surface-2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow-wrap: anywhere;
+}
+.forge023-biology h3,
+.forge023-biology h4 {
+  margin: 0 0 16px;
+  line-height: 1.5;
+}
+.forge023-biology p,
+.forge023-biology figcaption,
+.forge023-biology dd {
+  line-height: 1.75;
+}
+.bio023-field {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+}
+.bio023-field output {
+  font-variant-numeric: tabular-nums;
+}
+.bio023-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  gap: 24px;
+  margin: 24px 0;
+  min-width: 0;
+}
+.forge023-biology input[type="range"] {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  margin: 0;
+  accent-color: var(--accent);
+}
+.forge023-biology select,
+.forge023-biology textarea {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 44px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.forge023-biology select {
+  padding-inline: 8px;
+}
+.forge023-biology button {
+  min-height: 44px;
+  min-width: 44px;
+  max-width: 100%;
+  padding: 12px 16px;
+  font: inherit;
+  white-space: normal;
+  line-height: 1.6;
+}
+.forge023-biology button:focus-visible,
+.forge023-biology input:focus-visible,
+.forge023-biology select:focus-visible,
+.forge023-biology textarea:focus-visible,
+.bio023-zone:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+.forge023-biology figure {
+  min-width: 0;
+  margin: 24px 0;
+}
+.bio023-svg {
+  display: block;
+  width: 100%;
+  max-width: 430px;
+  height: auto;
+  margin: 24px auto;
+  overflow: visible;
+}
+.bio023-svg text {
+  fill: var(--text);
+  font-family: inherit;
+  font-size: 20px;
+}
+.bio023-cell {
+  fill: var(--bg);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio023-cortex {
+  fill: var(--surface-2);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio023-leaf {
+  fill: var(--mint);
+  stroke: var(--text);
+  stroke-width: 1.5;
+}
+.bio023-accent {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 1.5;
+}
+.bio023-nucleus {
+  fill: var(--text);
+}
+.bio023-line {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio023-wall {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 5;
+}
+.bio023-xylem {
+  fill: #8bc8de;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio023-phloem {
+  fill: #bda4d1;
+  stroke: var(--text);
+  stroke-width: 2;
+  stroke-dasharray: 3 2;
+}
+.bio023-drop {
+  fill: #8bc8de;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio023-cork {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.bio023-gap {
+  fill: var(--surface-2);
+  stroke: var(--text);
+  stroke-width: 2;
+  stroke-dasharray: 5 3;
+}
+.bio023-arrow,
+.bio023-route-line {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 4;
+}
+.bio023-arrow-head {
+  fill: var(--accent);
+}
+.bio023-stop {
+  stroke: var(--text);
+  stroke-width: 4;
+}
+.bio023-tracer {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 1;
+}
+.bio023-band {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 5;
+  stroke-dasharray: 7 3;
+}
+.bio023-band-line {
+  stroke: var(--text);
+  stroke-width: 7;
+}
+.bio023-band-broken {
+  stroke: var(--text);
+  stroke-width: 4;
+  stroke-dasharray: 10 35;
+}
+.bio023-zone {
+  cursor: pointer;
+}
+.bio023-zone-hit {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 3;
+}
+.bio023-zone-selected {
+  fill: var(--surface-2);
+  fill-opacity: 0.8;
+  stroke: var(--accent);
+  stroke-width: 3;
+  stroke-dasharray: 8 3;
+}
+.bio023-label {
+  paint-order: stroke;
+  stroke: var(--surface-2);
+  stroke-width: 7;
+  stroke-linejoin: round;
+}
+.bio023-facts {
+  margin: 24px 0;
+}
+.bio023-facts > div {
+  padding: 14px 0;
+  border-top: 1px solid var(--border);
+}
+.bio023-facts dt {
+  font-weight: 650;
+  margin-bottom: 8px;
+}
+.bio023-facts dd {
+  margin: 0;
+}
+.bio023-result {
+  padding: 18px 0;
+  border-block: 1px solid var(--border);
+  margin: 24px 0;
+}
+.bio023-result p:last-child {
+  margin-bottom: 0;
+}
+.bio023-divider {
+  margin-top: 32px;
+  padding-top: 26px;
+  border-top: 1px solid var(--border);
+}
+.bio023-prediction {
+  display: grid;
+  gap: 18px;
+  margin-top: 28px;
+  min-width: 0;
+}
+.bio023-prediction h4,
+.bio023-prediction p {
+  margin: 0;
+}
+.bio023-feedback {
+  display: grid;
+  gap: 14px;
+  padding: 18px 0;
+  border-block: 1px solid var(--border);
+}
+.bio023-checks {
+  display: grid;
+  gap: 16px;
+  margin: 24px 0;
+}
+.bio023-checks label {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 44px;
+  min-width: 0;
+  line-height: 1.7;
+}
+.bio023-checks input[type="checkbox"] {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  accent-color: var(--accent);
+}
+@media (max-width: 600px) {
+  .forge023-biology {
+    padding: 16px 4px;
+  }
+  .bio023-controls {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .forge023-biology select {
+    padding-inline: 4px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .forge023-biology * {
+    scroll-behavior: auto;
+    animation: none;
+    transition: none;
+  }
+}

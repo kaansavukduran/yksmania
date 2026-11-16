@@ -1,0 +1,153 @@
+.turkish023-lab {
+  min-width: 0;
+  max-width: 100%;
+  color: var(--text);
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+.turkish023-lab *,
+.turkish023-lab *::before,
+.turkish023-lab *::after {
+  box-sizing: border-box;
+}
+.turkish023-lab h3 {
+  margin-top: 0;
+}
+.turkish023-lab p {
+  margin-block: 0.7em;
+}
+.turkish023-lab label {
+  display: block;
+  margin-block: 0.7em 0.25em;
+}
+.turkish023-lab :is(select, textarea) {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 44px;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--muted);
+  font: inherit;
+  line-height: inherit;
+  padding: 0.45em;
+}
+.turkish023-lab textarea {
+  resize: vertical;
+}
+.turkish023-lab button {
+  min-width: 0;
+  max-width: 100%;
+  min-height: 44px;
+  font: inherit;
+  line-height: 1.5;
+  padding: 0.55em 0.65em;
+  border-color: var(--muted);
+  white-space: normal;
+  overflow-wrap: normal;
+}
+.turkish023-lab :is(button, select, textarea):focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+.turkish023-model {
+  min-width: 0;
+  border-block: 1px solid var(--border);
+  margin-block: 1em;
+  padding-block: 0.5em;
+}
+.turkish023-model svg {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  margin: 1em auto;
+  font:
+    20px system-ui,
+    sans-serif;
+  fill: var(--text);
+}
+.turkish023-passage,
+.turkish023-question,
+.turkish023-goal {
+  border-left: 3px solid var(--accent);
+  padding: 0.35em 0.65em;
+}
+.turkish023-lab fieldset {
+  min-width: 0;
+  border: 0;
+  margin: 1em 0;
+  padding: 0;
+}
+.turkish023-lab legend {
+  max-width: 100%;
+  padding: 0;
+}
+.turkish023-sentences,
+.turkish023-dialogue {
+  display: grid;
+  gap: 0.65em;
+  min-width: 0;
+}
+.turkish023-sentences > button {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+.turkish023-sentences > button > span {
+  display: block;
+}
+.turkish023-sentences > button[aria-pressed="true"] {
+  border: 2px solid var(--accent);
+  background: var(--surface);
+}
+.turkish023-dialogue > div {
+  min-width: 0;
+  padding: 0.3em 0.6em;
+  border-left: 3px solid var(--muted);
+}
+.turkish023-dialogue > div[data-speaker="Görüşülen kişi"] {
+  border-left-color: var(--accent);
+}
+.turkish023-dialogue p {
+  margin-top: 0.25em;
+}
+.turkish023-turns,
+.turkish023-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65em;
+  margin-block: 0.9em;
+}
+.turkish023-feedback,
+.turkish023-result {
+  min-width: 0;
+  border-block: 1px solid var(--border);
+  margin-block: 1em;
+  padding-block: 0.65em;
+}
+@media (prefers-reduced-motion: no-preference) {
+  :root[data-motion="on"] .turkish023-model :is(path, circle) {
+    transition:
+      stroke 160ms ease,
+      opacity 160ms ease;
+  }
+}
+@media (max-width: 460px) {
+  .turkish023-lab button,
+  .turkish023-lab :is(select, textarea) {
+    padding-inline: 6px;
+  }
+  .turkish023-passage,
+  .turkish023-question,
+  .turkish023-goal,
+  .turkish023-dialogue > div {
+    padding-inline: 6px;
+  }
+  .turkish023-turns,
+  .turkish023-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

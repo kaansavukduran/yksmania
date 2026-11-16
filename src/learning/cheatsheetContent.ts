@@ -1,3 +1,10 @@
+import { forge023MathTopics } from "./forge023Math";
+import { forge023PhysicsTopics } from "./forge023Physics";
+import { forge023BiologyTopics } from "./forge023Biology";
+import { forge023ChemistryTopics } from "./forge023Chemistry";
+import { forge023HumanitiesATopics } from "./forge023HumanitiesA";
+import { forge023HumanitiesBTopics } from "./forge023HumanitiesB";
+import { forge023TurkishTopics } from "./forge023Turkish";
 import { forge022MathTopics } from "./forge022Math";
 import { forge022PhysicsTopics } from "./forge022Physics";
 import { forge022BiologyTopics } from "./forge022Biology";
@@ -96,6 +103,13 @@ const completeSourceSheets = new Set([
   "elektrik-alan",
   "kimyasal-denge",
   "dna-eslenmesi",
+  ...Object.keys(forge023MathTopics),
+  ...Object.keys(forge023PhysicsTopics),
+  ...Object.keys(forge023BiologyTopics),
+  ...Object.keys(forge023ChemistryTopics),
+  ...Object.keys(forge023HumanitiesATopics),
+  ...Object.keys(forge023HumanitiesBTopics),
+  ...Object.keys(forge023TurkishTopics),
   ...Object.keys(forge022MathTopics),
   ...Object.keys(forge022PhysicsTopics),
   ...Object.keys(forge022BiologyTopics),

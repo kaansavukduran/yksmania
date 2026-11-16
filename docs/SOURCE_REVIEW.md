@@ -1,3 +1,19 @@
+# Kaynak 023 — kapsamlı öğretim ve bağımsız kontrol
+
+Otuz yeni konu, yedi ayrı kaynak ailesinde gerçek MEBİ/OGM/Aurelia okumasıyla özgün öğretime dönüştürüldü. Matematikte toplam 67 hedef metin sayfası ve 10 kaynak görüntüsü; fizikte 47 metin sayfası ve 8 kritik kaynak görüntüsü incelendi. Bunlar ilgili aralıklardır, bütün kitapların veya bütün Drive’ın okunduğu anlamına gelmez. Diğer ailelerin özel okuma kayıtları yazar ve bağımsız okuyucu için ayrı tutulur; dosya indirme veya metin çıkarımı, sayfa okuma ya da görsel açma sayılmaz.
+
+Toplam 593 bölüm/1186 paragraf, 163 çözümlü örnek ve 484 özgün kart üretildi. Örnekler ile ölçme bankası arasında aynı çözülmüş verinin yeniden sorulması bağımsız incelemede ayıklandı. Yeni kartların bilgi, yöntem ve adımları birbirinin kopyası değildir; beş seçenek gerekçesi seçeneklerle birlikte taşınır. Dengeli cevap konumları kısa bir harf döngüsüyle dağıtılmaz. Kör anahtar çözümü ile anahtarı önceden görmüş inceleme kanıtları ayrı kaydedilir.
+
+Kaynak hataları aynen taşınmaz: kosinüs toplama işareti, e sabitinin türü, EM bileşeninde çok küçük pozitif açı, atom uyarılma/iyonlaşma eşiği ve sınırlı model varsayımları ayrıca doğrulandı. İbadet etkinliğinde niyet, fiil ve koşul bağımsız veri olarak gösterilir; birinden öteki otomatik çıkarılmaz. Kişisel inanca uygulama puanı verilmez. Matematikte sayı çizgisi ve biyolojide hücre/bitki varsayımları açık anlatılır.
+
+B6 ailesinin 116 kartı, altı anlatımı ve 137 rehber bölümü son 31 kısa model metni düzeltmesinde byte/canonical karşılaştırmayla korunur. Düzeltmeler dar telefondaki sözcük bölünmelerini giderir; sayısal model, kavram ilişkisi ve soru anahtarı değişmez. Ham özel PDF, kimlik ve bağlantı yayımlanmaz. Özgün öğretim soruları resmî ÖSYM sorusu değildir.
+
+Canlı sürüm 0.17’dir: [Vercel](https://yksmania.vercel.app), [Pages](https://kaansavukduran.github.io/yksmania/) ve [Windows/Linux indirmeleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.17.0-alpha.1). 0.18 henüz yayımlanmadı. Android imzası kullanıcı tarafından ertelendi; yeni APK yoktur. Tam 479 başlık, kaynakların bütün alt kazanımları ve 20 yıllık resmî arşiv için ayrı kapsam denetimi sürer.
+
+---
+
+## Önceki kaynak checkpoint kayıtları
+
 # Kaynak 022 — gerçek okuma ve bağımsız içerik sınırları
 
 Yeni 30 konu özgün öğretime dönüştürüldü;ham PDF, Drive kimliği ve kaynak URL’si Git’e alınmadı. Yazar ve bağımsız okuyucunun sayfa sayıları birbirinin yerine kullanılmaz.

@@ -1,3 +1,21 @@
+# 0.18 kaynak adayı — ilk 438/479 sıralı başlık
+
+409–438. başlıklar için 30 yeni anlatım eklendi: 593 bölüm, 1186 paragraf, 163 farklı çözümlü örnek/489 adım ve 155 hatırlama etkinliği. Toplam 440 anlatım, 412 ayrıntılı rehber, 440 yerleşik özet ve 4524 özgün soru vardır. Yeni 484 kartın tamamı beş seçenek ve özgül kademeli yardım taşır: 1286 gerçek çözüm adımı, 2420 eşlenmiş seçenek gerekçesi. Önceki 4040 sorunun bütün alanları ve 415 öğretim kaydı hash ile korunur.
+
+TYT 120 soru/165 dakika ve AYT Sayısal 80 soru/180 dakika doğru ders kotalarıyla sunulur. Kaydedilmiş eski kısa ve tam denemelerin soru kâğıdı, cevap, işaret ve süreleri yeniden yazılmaz. Ayrıntılı yardım toplam 944/4524 karttadır; kalan 3580 kartın bütün çözüm adımları henüz tamamlanmadı. 28 eski kısa anlatım da ayrıca derinleştirilecektir. Başlık sayısı bütün Drive/MEB/ÖSYM arşivi veya bütün alt beceriler tamamlandı demek değildir.
+
+1111/1111 birim ve normal/prefix üretim derlemesi geçti. PWA 230 gerekli varlığı kapsar; tek dosya 5 MiB sınırı korunur. Yerel Electron ve /yksmania/ prefix kabulünde 74 aile çevrimdışı model/HTML değişimi ve kalıcı kayıt/reload kontrolünden geçti; Electron aynı profilde süreç yeniden açılışını da geçti. Bu iki artifact son iki anlam eşdeğeri model metni düzeltmesinden öncedir. Yeni 65 UI vakasının son bütün koşusu 59 PASS/6 FAIL verdi; altı sorunlu telefon vakası son düzeltmede 6/6 geçti. Böylece 65 vaka bu kabul birleşiminde kapsanır; tek son 65 koşusu denmez. Tam 924 tarayıcı ve gerçek paketli Windows/Linux kapısı bu aday üzerinde ayrıca aranır.
+
+Gerçek kayıt kusuru düzeltildi: 600 karakter kabul eden etkinlik alanı, 128 karakterlik kalıcı kayıt sınırıyla uyuşmuyordu. Alan, görünür açıklama ve kayıt aynı 128 sınırını kullanır; 156 karakterlik girişin 128 olarak kaydı/reload kontrol edildi. Matematik/fizik/biyoloji/kimyada boş gerekçeli eski “kontrol edildi” durumu açıklamayı açamaz; dört regresyon eski kodda başarısız, düzeltmede başarılıdır. Geçerli kısa gerekçe kabul edilir; keşif ve süre XP üretmez. Telefon metinleri yazı küçültmeden düzenlendi; açık temada düğme kontrastı tema değişkenine bağlandı.
+
+Canlı sürüm 0.17’dir: [Vercel](https://yksmania.vercel.app), [Pages](https://kaansavukduran.github.io/yksmania/) ve [Windows/Linux indirmeleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.17.0-alpha.1). 0.18 henüz yayımlanmadı. Android imzası kullanıcı tarafından ertelendi; yeni APK yoktur.
+
+Fiziksel cihaz, temiz kurulum, portable taşıma ve native sürümler arası yükseltme bu kabulün kapsamında değildir. Kaynaklar, özel kimlikler ve imza anahtarları Git dışında tutulur; öğrenciye PDF yükleme işi bırakılmaz.
+
+---
+
+## Önceki checkpoint kayıtları
+
 # 0.18 kaynak adayı — ilk 408/479 başlık
 
 | Ölçüm | Aday |

@@ -1,6 +1,23 @@
-import { forge022SmokeCases, runForge022SmokeCase, assertForge022ProcessRestart } from "./forge022-smoke-cases.mjs";
-import { forge021SmokeCases, runForge021SmokeCase, assertForge021ProcessRestart } from "./forge021-smoke-cases.mjs";
-import {forge020SmokeCases,runForge020SmokeCase,assertForge020ProcessRestart} from "./forge020-smoke-cases.mjs";
+import {
+  forge023SmokeCases,
+  runForge023SmokeCase,
+  assertForge023ProcessRestart,
+} from "./forge023-smoke-cases.mjs";
+import {
+  forge022SmokeCases,
+  runForge022SmokeCase,
+  assertForge022ProcessRestart,
+} from "./forge022-smoke-cases.mjs";
+import {
+  forge021SmokeCases,
+  runForge021SmokeCase,
+  assertForge021ProcessRestart,
+} from "./forge021-smoke-cases.mjs";
+import {
+  forge020SmokeCases,
+  runForge020SmokeCase,
+  assertForge020ProcessRestart,
+} from "./forge020-smoke-cases.mjs";
 import {
   forge019SmokeCases,
   runForge019SmokeCase,
@@ -619,14 +636,21 @@ try {
     forge019Snapshots.push(await runForge019SmokeCase(page, navigate, unit));
   }
   expect(forge020SmokeCases).toHaveLength(5);
-  const forge020Snapshots=[];
-  for(const unit of forge020SmokeCases)forge020Snapshots.push(await runForge020SmokeCase(page,navigate,unit));
+  const forge020Snapshots = [];
+  for (const unit of forge020SmokeCases)
+    forge020Snapshots.push(await runForge020SmokeCase(page, navigate, unit));
   expect(forge021SmokeCases).toHaveLength(7);
-  const forge021Snapshots=[];
-  for(const unit of forge021SmokeCases)forge021Snapshots.push(await runForge021SmokeCase(page,navigate,unit));
+  const forge021Snapshots = [];
+  for (const unit of forge021SmokeCases)
+    forge021Snapshots.push(await runForge021SmokeCase(page, navigate, unit));
   expect(forge022SmokeCases).toHaveLength(6);
-  const forge022Snapshots=[];
-  for(const unit of forge022SmokeCases)forge022Snapshots.push(await runForge022SmokeCase(page,navigate,unit));
+  const forge022Snapshots = [];
+  for (const unit of forge022SmokeCases)
+    forge022Snapshots.push(await runForge022SmokeCase(page, navigate, unit));
+  expect(forge023SmokeCases).toHaveLength(7);
+  const forge023Snapshots = [];
+  for (const unit of forge023SmokeCases)
+    forge023Snapshots.push(await runForge023SmokeCase(page, navigate, unit));
 
   const mathematics = [
     /Temel kavramlar: sayı, değer/,
@@ -747,9 +771,10 @@ try {
   await assertForge017ProcessRestart(page, navigate, forge017Snapshots);
   await assertForge018ProcessRestart(page, navigate, forge018Snapshots);
   await assertForge019ProcessRestart(page, navigate, forge019Snapshots);
-  await assertForge020ProcessRestart(page,navigate,forge020Snapshots);
-  await assertForge021ProcessRestart(page,navigate,forge021Snapshots);
-  await assertForge022ProcessRestart(page,navigate,forge022Snapshots);
+  await assertForge020ProcessRestart(page, navigate, forge020Snapshots);
+  await assertForge021ProcessRestart(page, navigate, forge021Snapshots);
+  await assertForge022ProcessRestart(page, navigate, forge022Snapshots);
+  await assertForge023ProcessRestart(page, navigate, forge023Snapshots);
   await navigate("Bugün");
   await expect(page.locator(".stat-number").first()).toHaveText("1");
   const dailyTheory = page
@@ -1209,15 +1234,26 @@ try {
         (item) => item.id,
       ),
       forge018SameProfileProcessRestart: "PASS",
-      forge021FamiliesOfflineHtmlStateAndReload: forge021Snapshots.map(item=>item.id),
+      forge021FamiliesOfflineHtmlStateAndReload: forge021Snapshots.map(
+        (item) => item.id,
+      ),
       forge021SameProfileProcessRestart: "PASS",
-      forge022FamiliesOfflineHtmlStateAndReload: forge022Snapshots.map(item=>item.id),
+      forge022FamiliesOfflineHtmlStateAndReload: forge022Snapshots.map(
+        (item) => item.id,
+      ),
       forge022SameProfileProcessRestart: "PASS",
+      forge023FamiliesOfflineHtmlStateAndReload: forge023Snapshots.map(
+        (item) => item.id,
+      ),
+      forge023SameProfileProcessRestart: "PASS",
+      forge023ExplorationWithoutLearningCredit: "PASS",
       forge022ExplorationWithoutLearningCredit: "PASS",
       forge021ExplorationWithoutLearningCredit: "PASS",
-      forge020FamiliesOfflineHtmlStateAndReload: forge020Snapshots.map(item=>item.id),
-    forge020ExplorationWithoutLearningCredit: "PASS",
-    forge019FamiliesOfflineHtmlStateAndReload: forge019Snapshots.map(
+      forge020FamiliesOfflineHtmlStateAndReload: forge020Snapshots.map(
+        (item) => item.id,
+      ),
+      forge020ExplorationWithoutLearningCredit: "PASS",
+      forge019FamiliesOfflineHtmlStateAndReload: forge019Snapshots.map(
         (item) => item.id,
       ),
       forge020SameProfileProcessRestart: "PASS",

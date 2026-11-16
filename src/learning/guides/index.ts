@@ -1,3 +1,10 @@
+import { forge023MathGuides } from "../forge023Math";
+import { forge023PhysicsGuides } from "../forge023Physics";
+import { forge023BiologyGuides } from "../forge023Biology";
+import { forge023ChemistryGuides } from "../forge023Chemistry";
+import { forge023HumanitiesAGuides } from "../forge023HumanitiesA";
+import { forge023HumanitiesBGuides } from "../forge023HumanitiesB";
+import { forge023TurkishGuides } from "../forge023Turkish";
 import { forge022MathGuides } from "../forge022Math";
 import { forge022PhysicsGuides } from "../forge022Physics";
 import { forge022BiologyGuides } from "../forge022Biology";
@@ -103,6 +110,13 @@ import { shellsGuide } from "./shells";
 import { paragraphGuide } from "./paragraph";
 export const lessonGuides = new Map(
   [
+    ...forge023MathGuides,
+    ...forge023PhysicsGuides,
+    ...forge023BiologyGuides,
+    ...forge023ChemistryGuides,
+    ...forge023HumanitiesAGuides,
+    ...forge023HumanitiesBGuides,
+    ...forge023TurkishGuides,
     ...forge022MathGuides,
     ...forge022PhysicsGuides,
     ...forge022BiologyGuides,

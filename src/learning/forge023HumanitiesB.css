@@ -1,0 +1,206 @@
+.humanitiesB023-lab {
+  margin-block: 1.6rem;
+  padding: clamp(1rem, 3vw, 2rem);
+  border-block: 1px solid var(--border, #35424d);
+  background: var(--surface-2);
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+.humanitiesB023-lab h3,
+.humanitiesB023-lab h4 {
+  margin: 0 0 0.8rem;
+  line-height: 1.35;
+}
+.humanitiesB023-lab p {
+  margin: 0.6rem 0 1rem;
+}
+.humanitiesB023-intro,
+.humanitiesB023-note {
+  color: var(--muted, #b9c3ce);
+}
+.humanitiesB023-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 1rem;
+  margin-block: 1.4rem;
+}
+.humanitiesB023-control {
+  display: grid;
+  gap: 0.5rem;
+  font-weight: 600;
+  min-width: 0;
+}
+.humanitiesB023-control select,
+.humanitiesB023-control textarea {
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--border, #43515d);
+  border-radius: 10px;
+  color: inherit;
+  background: var(--bg, #141b22);
+  font: inherit;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+.humanitiesB023-control textarea {
+  min-height: 7rem;
+  resize: vertical;
+}
+.humanitiesB023-control select:disabled {
+  opacity: 0.6;
+}
+.humanitiesB023-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-height: 48px;
+  align-self: end;
+}
+.humanitiesB023-checkbox input {
+  width: 1.3rem;
+  height: 1.3rem;
+  accent-color: var(--accent, #ffac92);
+}
+.humanitiesB023-context {
+  padding: 1rem 1.2rem;
+  border-inline-start: 3px solid var(--accent, #ffac92);
+  background: var(--surface, #1b242c);
+}
+.humanitiesB023-diagram {
+  width: 100%;
+  height: auto;
+  max-width: 20rem;
+  max-height: none;
+  display: block;
+  margin: 1rem auto;
+  color: var(--accent, #ffac92);
+}
+.humanitiesB023-diagram rect {
+  fill: var(--surface, #1b242c);
+  stroke: var(--border, #596575);
+  stroke-width: 2;
+}
+.humanitiesB023-diagram text {
+  fill: var(--text, #f2f0ec);
+  font-size: 20px;
+  font-family: inherit;
+}
+.humanitiesB023-link {
+  fill: none;
+  stroke: var(--accent, #ffac92);
+  stroke-width: 3;
+}
+.humanitiesB023-link.is-unmatched {
+  stroke: var(--muted, #b0bac6);
+  stroke-dasharray: 9 7;
+}
+.humanitiesB023-node-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1rem;
+  margin-block: 1rem 1.4rem;
+}
+.humanitiesB023-node-list > div {
+  padding: 1rem;
+  border: 1px solid var(--border, #35424d);
+  border-radius: 10px;
+  min-width: 0;
+}
+.humanitiesB023-node-list p {
+  margin: 0.5rem 0 0;
+}
+.humanitiesB023-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-block: 1rem;
+}
+.humanitiesB023-actions button {
+  min-height: 48px;
+  padding: 0.8rem 1.1rem;
+  border: 1px solid var(--border, #536270);
+  border-radius: 10px;
+  background: var(--surface, #27323d);
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+.humanitiesB023-actions button:first-child:not(:disabled) {
+  background: var(--accent, #ffac92);
+  color: var(--accent-text);
+}
+.humanitiesB023-actions button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+.humanitiesB023-result {
+  padding: 1.2rem;
+  border: 1px solid var(--border, #455463);
+  border-radius: 12px;
+  background: var(--surface, #1b242c);
+}
+.humanitiesB023-result p:last-child {
+  margin-bottom: 0;
+}
+.humanitiesB023-result ul {
+  padding-inline-start: 1.4rem;
+}
+.humanitiesB023-result li + li {
+  margin-top: 0.8rem;
+}
+.humanitiesB023-note {
+  font-size: 0.9rem;
+  margin-top: 1rem !important;
+}
+.humanitiesB023-lab :is(button, select, textarea, input):focus-visible {
+  outline: 3px solid var(--accent, #ffac92);
+  outline-offset: 4px;
+}
+@media (max-width: 520px) {
+  .humanitiesB023-lab {
+    padding: 16px 6px;
+  }
+  .humanitiesB023-node-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .humanitiesB023-context,
+  .humanitiesB023-node-list > div,
+  .humanitiesB023-result {
+    padding-inline: 0;
+    border-inline: 0;
+    border-radius: 0;
+  }
+  .humanitiesB023-control :is(select, textarea) {
+    padding-inline: 6px;
+  }
+  .humanitiesB023-checkbox {
+    gap: 8px;
+  }
+  .humanitiesB023-actions button {
+    flex: 1 1 100%;
+    min-width: 44px;
+    max-width: 100%;
+    padding-inline: 4px;
+  }
+  .humanitiesB023-result ul {
+    padding-inline: 0;
+    list-style: none;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  :root[data-motion="on"] .humanitiesB023-link {
+    animation: humanitiesB023-trace 0.45s ease-out;
+  }
+  @keyframes humanitiesB023-trace {
+    from {
+      stroke-dashoffset: 30;
+      opacity: 0.35;
+    }
+    to {
+      stroke-dashoffset: 0;
+      opacity: 1;
+    }
+  }
+}
