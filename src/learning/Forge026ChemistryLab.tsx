@@ -535,7 +535,12 @@ export default function Forge026ChemistryLab({
         <p className="c026-equation">
           {v.copies} × {c.formula}
         </p>
-        <div className="c026-table-wrap">
+        <div
+          className="c026-table-wrap"
+          role="region"
+          aria-label="Bir taneciğin çekirdek katkıları"
+          tabIndex={0}
+        >
           <table>
             <caption>Bir taneciğin çekirdek katkıları</caption>
             <thead>
@@ -624,7 +629,12 @@ export default function Forge026ChemistryLab({
         }
       >
         <PairPlot r={r} />
-        <div className="c026-table-wrap">
+        <div
+          className="c026-table-wrap"
+          role="region"
+          aria-label="Türlerin tanecik sayıları"
+          tabIndex={0}
+        >
           <table>
             <caption>
               U: {p.labels[0]} · V: {p.labels[1]}
@@ -734,7 +744,7 @@ export default function Forge026ChemistryLab({
       </div>
     );
     scope =
-      "Bu, yalnız seçilmiş iki izotoptan hazırlanmış varsayımsal örnektir; elementin doğal bütün izotoplarını veya doğal bolluklarını temsil etmez. Kütleler burada üç ondalık u değerleri olarak verilmiştir. Yüzde atom sayısına göredir; kütle yüzdesi değildir. %0 ve %100 uçlarında tek izotop kalır.";
+      "Bu, yalnız seçilen iki izotopla kurulan bir modeldir; elementin doğal bütün izotoplarını veya doğal bolluklarını temsil etmez. Kütleler burada üç ondalık u değerleri olarak verilmiştir. Yüzde atom sayısına göredir; kütle yüzdesi değildir. %0 ve %100 uçlarında tek izotop kalır.";
   }
   const validGuess =
       v.mode === "pair"
@@ -831,7 +841,7 @@ export default function Forge026ChemistryLab({
             {v.mode === "pair"
               ? nuclearNames[expected]
               : expected.replace(".", ",")}
-            . Yazılı gerekçenin bilimsel doğruluğu otomatik puanlanmaz.
+            . Yazılı gerekçeni çözümle kıyasla; doğruluğu otomatik sınanmaz.
           </p>
         )}
         {v.show && <p className="c026-proof">{evidence}</p>}

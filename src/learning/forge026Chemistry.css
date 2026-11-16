@@ -249,7 +249,12 @@
 }
 @media (max-width: 480px) {
   .c026-lab {
-    padding: 6px;
+    padding: 4px;
+  }
+  .c026-scope,
+  .c026-proof,
+  .c026-feedback {
+    padding-inline: 4px;
   }
   .c026-table-wrap th,
   .c026-table-wrap td {
@@ -258,4 +263,9 @@
   .c026-two {
     grid-template-columns: 1fr;
   }
+}
+
+.c026-table-wrap:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
 }
