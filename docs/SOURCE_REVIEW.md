@@ -6,7 +6,7 @@ Her yeni yardım pozitif ön bilgi, bireysel yöntem, üç ilerleyen adım, beş
 
 Zar sorusunda eşit hacmin tek başına birim derişim değişimini vermediği 2 L karşı örneğiyle gösterildi. Görünür soru 1 L/1 mol koşulunu açık verir. Bağlı eski çözümlü örnekte birim hacim ve miktar ayrılır; 2 L için derişim toplamı 10 iken miktar toplamı 20 olabilir. Örneğin bütün özgün alanları eşleşmeden altı düzeltmenin hiçbiri uygulanmaz. İsim tamlamasında iki ilgi ekli tamlayan koşulu açıklaştırıldı. Azak karşılaştırmasında 1700 XVII., 1711 XVIII. yüzyıldadır; aynı yüzyıl iddiası kaldırılıp farklı tarihler karşılaştırılır. Ham kaynaklar ve anahtarlar değişmez.
 
-Saklanan öğrenci yanıtlarına dokunmadan 31 paketin eski yazılı hatırlaması son rehber aşamasına geri bağlandı. Bu yeni bağımsız doğru veya puan oluşturmaz. Kaynak/pedagoji kabulü, tarayıcı, paket ve yayın kabulüyle aynı şey değildir; güncel teknik sonuçlar QA kaydındadır. Sonraki 300 kartın kaynak hazırlığı bu 200 kartın tamamlanma sayısına dahil edilmez.
+Saklanan öğrenci yanıtlarına dokunmadan 31 paketin eski yazılı hatırlaması son rehber aşamasına geri bağlandı. Bu yeni bağımsız doğru veya puan oluşturmaz. Kaynak/pedagoji kabulü, tarayıcı, paket ve yayın kabulüyle aynı şey değildir; güncel teknik sonuçlar QA kaydındadır. 0.18.1 tam CI, gerçek Windows/Linux ve yayımlanmış Pages kapılarından geçti. Sonraki 300 kartın kaynak hazırlığı bu 200 kartın tamamlanma sayısına dahil edilmez.
 
 ---
 

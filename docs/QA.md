@@ -1,3 +1,17 @@
+# 0.18.1 doğrulanmış yayın — 16 Kasım 2026
+
+Kaynak `1da8b22c63f8bbd611ef919d9e50f7129a9f746d`. [Tam CI](https://github.com/kaansavukduran/yksmania/actions/runs/43877471841) 1.663/1.663 birim ve ilk tam koşuda 1.225/1.225 tarayıcı testiyle geçti. Gerçek paketli Windows/Linux çevrimdışı kullanım, yeniden yükleme ve aynı profilde süreç yeniden açılışı kontrolleri geçti; renderer hatası 0. Android imzası ertelendi ve Android işi açık kapsam gereği atlandı.
+
+[Vercel](https://yksmania.vercel.app) ve [GitHub Pages](https://kaansavukduran.github.io/yksmania/) 0.18.1 sunar. [Pages hattı](https://github.com/kaansavukduran/yksmania/actions/runs/43885930433) prefix derlemesini ve yayımlanmış kökeni ayrı ayrı denetledi. Normal TLS ile her iki kökenin 25 çalışma dosyası yerel sabit derlemeyle aynıdır. Vercel’de 38 hedef HTTPS akışı ayrıca geçti; bu 1.225 vakanın tamamının üretimde tekrar koşulduğu iddiası değildir. İlk yerel HTTPS denemesi Chromium’un ortam proxy sertifikasını tanımadığı için uygulama açılmadan durdu; gerçek 38 akış yalnız sağlanan ortam CA anahtarı tanıtılarak çalıştırıldı. OS TLS dosya karşılaştırmaları doğrulamayı atlamaz.
+
+[Dört Windows/Linux indirmesi](https://github.com/kaansavukduran/yksmania/releases/tag/v0.18.1-alpha.1) başarılı CI işinin aynı dosyalarından, yeniden derlenmeden yayımlandı. `verified-run.json` kaynak SHA’sını; `SHA256SUMS.txt` beş dosyayı bağlar. GitHub’ın hesapladığı beş varlık özeti manifest ile aynıdır; altıncı varlık manifestin kendisidir. Yeni APK yayımlanmadı. Fiziksel cihaz, temiz kurulum, portable taşıma ve native sürümler arasında veri koruyan kurulum bu kabulün kapsamı değildir.
+
+Önceki 0.18 koşusunun 16 yerel ve 13 üretim hatası tarihsel kayıtta korunur. Yazılı hatırlama erişimi, dolu katman ifadesi ve dar telefondaki uzun sözcük için doğrulanmış onarımlar vardır. Aralıklı boş web başlangıcının kesin nedeni kanıtlanmadı: son tam koşu, 38 üretim akışı ve gözlemci eklenmeyen 20 özgün çevrimdışı akış geçti; bunlar tek başına bir kök neden onarımı iddiası değildir. Yeni bir başarısızlıkta yükleyici/cache/durable-state sınırını yakalayan pasif kanıt kaydı vardır.
+
+---
+
+## Önceki kaynak ve kabul kayıtları
+
 # 0.18.1 adayının kabul kaydı
 
 1.663/1.663 birim testi ve TypeScript geçti. Üretim derlemeleri normal/prefix için 271 gerekli çevrimdışı varlık içerir: 25.963.266 / 25.963.107 byte; en büyük dosya 2.865.964 byte, 5 MiB sınırının altındadır.

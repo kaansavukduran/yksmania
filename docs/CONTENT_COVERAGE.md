@@ -1,4 +1,4 @@
-# 0.18.1 adayının ölçülen kapsamı
+# 0.18.1 yayınının ölçülen kapsamı
 
 | Ölçüm | Gerçek kaynak |
 | --- | --- |
@@ -14,7 +14,7 @@
 
 200 kart matematik 50, fizik 50, kimya 20, biyoloji 20, Türkçe 30 ve tarih 30 olarak işlenmiştir. Yeni soru veya seçenek üretilmedi; eski beş şık ve anahtarlar korunur. Eski 2.743 yardım metni ve panel sırası gerçek önceki kaynakla karşılaştırılır. Ham 5.883 soru, 514 öğretim/soru-seti metadata kaydı ve 480 rehber değişmez.
 
-Bu kapsam kaynak ve yerel kabul ölçümüdür; son tam CI/paket/yayın kabulü değildir. Sıradaki 300 kart ayrı hazırlıktır. Konu başlığı eşleşmesi, her Drive/MEB alt kazanımının veya bütün resmî sınav arşivinin tamamlandığını göstermez. Öğrenci ders kaynağı veya PDF yüklemez.
+Bu kapsam, başarılı 1.663 birim / 1.225 tarayıcı, paketli Windows/Linux ve yayımlanmış Pages kontrolleriyle 0.18.1 olarak doğrulandı. Teknik kanıt ve sınırlar [QA](QA.md) kaydındadır. Sıradaki 300 kart ayrı hazırlıktır. Konu başlığı eşleşmesi, her Drive/MEB alt kazanımının veya bütün resmî sınav arşivinin tamamlandığını göstermez. Öğrenci ders kaynağı veya PDF yüklemez.
 
 ---
 

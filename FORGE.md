@@ -1,3 +1,15 @@
+# 0.18.1 doğrulanmış yayın — 16 Kasım 2026
+
+Kaynak `1da8b22c63f8bbd611ef919d9e50f7129a9f746d`. [Tam CI](https://github.com/kaansavukduran/yksmania/actions/runs/43877471841) 1.663/1.663 birim ve ilk tam koşuda 1.225/1.225 tarayıcı testiyle geçti. Gerçek paketli Windows/Linux çevrimdışı kullanım, yeniden yükleme ve aynı profilde süreç yeniden açılışı kontrolleri geçti; renderer hatası 0. Android imzası ertelendi ve Android işi açık kapsam gereği atlandı.
+
+[Vercel](https://yksmania.vercel.app) ve [GitHub Pages](https://kaansavukduran.github.io/yksmania/) 0.18.1 sunar. [Pages hattı](https://github.com/kaansavukduran/yksmania/actions/runs/43885930433) prefix derlemesini ve yayımlanmış kökeni ayrı ayrı denetledi. Normal TLS ile her iki kökenin 25 çalışma dosyası yerel sabit derlemeyle aynıdır. Vercel’de 38 hedef HTTPS akışı ayrıca geçti; bu 1.225 vakanın tamamının üretimde tekrar koşulduğu iddiası değildir. İlk yerel HTTPS denemesi Chromium’un ortam proxy sertifikasını tanımadığı için uygulama açılmadan durdu; gerçek 38 akış yalnız sağlanan ortam CA anahtarı tanıtılarak çalıştırıldı. OS TLS dosya karşılaştırmaları doğrulamayı atlamaz.
+
+[Dört Windows/Linux indirmesi](https://github.com/kaansavukduran/yksmania/releases/tag/v0.18.1-alpha.1) başarılı CI işinin aynı dosyalarından, yeniden derlenmeden yayımlandı. `verified-run.json` kaynak SHA’sını; `SHA256SUMS.txt` beş dosyayı bağlar. GitHub’ın hesapladığı beş varlık özeti manifest ile aynıdır; altıncı varlık manifestin kendisidir. Yeni APK yayımlanmadı. Fiziksel cihaz, temiz kurulum, portable taşıma ve native sürümler arasında veri koruyan kurulum bu kabulün kapsamı değildir.
+
+---
+
+## Önceki kaynak ve kabul kayıtları
+
 # 0.18.1 kaynak adayı — kademeli çözümler ve yazılı hatırlama
 
 20 konudaki 200 eski soruya gerekli bilgi, ayrı yöntem, 600 ilerleyen çözüm adımı ve 1000 şık gerekçesi eklendi. Altı paketin tüm yardım metinleri bağımsız, anahtarı görünen kaynak incelemesinden geçti. Güncel gerçek çözümleyici 2.943 ayrıntılı ve 2.940 kısmi yardım verir; soru sayısı 5.883 olarak korunur. 480 ayrıntılı anlatım, 480 yerleşik özet ve 479 başlığın çalışma sırası değişmedi.

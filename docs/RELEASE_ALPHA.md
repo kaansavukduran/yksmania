@@ -11,3 +11,5 @@ Bilinen sorularda yön/enerji, denge/adlandırma, katman/orbital, kök–taban, 
 İndirme kapsamı Windows x64 Setup/Portable ve Linux x64 AppImage/DEB’dir. Dört paket yeniden derlenmeden başarılı main işinden alınır; verified-run.json ve SHA256SUMS.txt aynı kaynak ve dosyalara bağlanır. Gerçek tarayıcı, paket ve yayın sonuçları repo QA kaydında kaynak SHA’sıyla birlikte gösterilir.
 
 Android imzası ertelendi; bu yayında yeni APK yoktur. Fiziksel cihaz, temiz kurulum, portable taşıma ve native sürümler arası veri koruyan kurulum ayrı kabul gerektirir. 479 başlığın eşleşmesi, bütün Drive/MEB alt kazanımlarının ve son 20 yılın bütün resmî ÖSYM arşivinin tamamlandığı anlamına gelmez.
+
+Doğrulanmış kaynak: `1da8b22c63f8bbd611ef919d9e50f7129a9f746d`; [CI](https://github.com/kaansavukduran/yksmania/actions/runs/43877471841), [Pages](https://github.com/kaansavukduran/yksmania/actions/runs/43885930433), [altı yayın varlığı](https://github.com/kaansavukduran/yksmania/releases/tag/v0.18.1-alpha.1). 1.663 birim / 1.225 tarayıcı testi ve gerçek paketli Windows/Linux kontrolleri geçti.
