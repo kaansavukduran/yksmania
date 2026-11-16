@@ -168,6 +168,61 @@ describe("Noktanın analitiği: geometric conditions and independent checks", ()
       centroid: p(1, 1),
     });
   });
+  it("keeps an exactly cancelling centroid on its axis for every vertex order", () => {
+    const points = [p(-4, 1), p(5, 4), p(2, -5)];
+    for (const [i, j, k] of [
+      [0, 1, 2],
+      [0, 2, 1],
+      [1, 0, 2],
+      [1, 2, 0],
+      [2, 0, 1],
+      [2, 1, 0],
+    ]) {
+      const center = centroid018(points[i], points[j], points[k]).centroid;
+      expect(center).toEqual(p(1, 0));
+      expect(region018(center)).toBe("x");
+    }
+  });
+  it("does not turn a genuinely tiny centroid into an axis point", () => {
+    for (const y of [Number.MIN_VALUE, -Number.MIN_VALUE, 1e-300, -1e-300]) {
+      const center = centroid018(p(1, y), p(1, y), p(1, y)).centroid;
+      expect(center).toEqual(p(1, y));
+      expect(region018(center)).toBe(y > 0 ? "I" : "IV");
+    }
+  });
+  it("retains a tiny nonzero residual after cancellation of large coordinates", () => {
+    const values = [1e150, 3e-300, -1e150];
+    for (const [i, j, k] of [
+      [0, 1, 2],
+      [0, 2, 1],
+      [1, 0, 2],
+      [1, 2, 0],
+      [2, 0, 1],
+      [2, 1, 0],
+    ]) {
+      const center = centroid018(
+        p(values[i], 0),
+        p(values[j], 0),
+        p(values[k], 0),
+      ).centroid;
+      expect(center.x).toBe(1e-300);
+      expect(center.y).toBe(0);
+      expect(region018(center)).toBe("x");
+    }
+  });
+  it("keeps a representable large centroid finite even when the coordinate sum overflows", () => {
+    for (const sign of [-1, 1]) {
+      const max = sign * Number.MAX_VALUE;
+      expect(centroid018(p(max, 0), p(max, 0), p(max, 0)).centroid).toEqual(
+        p(max, 0),
+      );
+      const half = max / 2;
+      const center = centroid018(p(max, 0), p(half, 0), p(half, 0)).centroid;
+      expect(Number.isFinite(center.x)).toBe(true);
+      expect(center.x / max).toBeCloseTo(2 / 3, 15);
+      expect(center.y).toBe(0);
+    }
+  });
   it("preserves distances and section points under the same translation of both endpoints", () => {
     const a = p(-3, 4),
       b = p(5, -2),

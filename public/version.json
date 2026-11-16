@@ -1,7 +1,7 @@
 {
-  "version": "0.17.0",
+  "version": "0.18.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Geliştirme adayı: çalışma sırasının 259–318. başlıkları için 57 yeni etkileşimli anlatım ve mevcut paragraf, elektrik alanı, kimyasal denge derslerine kapsamlı ekler hazırlanıyor. 600 yeni özgün soru; toplam 321 anlatım, 293 ayrıntılı rehber, 321 yerleşik özet ve 3040 soru hedefi. Kaynak ve bağımsız bilimsel incelemeler tamamlandı; bütünleşik arayüz, çevrimdışı ve yayın kontrolleri sürüyor. Bütün 479 başlık ve bütün Drive/YKS arşivi tamamlandı olarak sunulmaz."
+    "tr": "Geliştirme adayı: 349–378. çalışma başlıkları için 30 yeni etkileşimli anlatım ve 310 özgün beş seçenekli soru. Toplam 380 anlatım,352 ayrıntılı rehber,380 yerleşik özet ve3650 soru; ilk378/479 başlık eşleşir. Yeni80 soruluk AYT karma kotası40 matematik/geometri,14 fizik,13 kimya,13 biyoloji ve180dakikadır; bütün tam deneme çeşitleri beş seçenekli kartlardan seçilir. Eski kısa pratikler ve kaydedilmiş denemeler korunur. Bu not aday kapsamını belirtir; bütün Drive/MEB/ÖSYM tamamlandı anlamına gelmez. Android imza ayarı ertelenmiştir; yeniAPK iddiası yoktur."
   }
 }

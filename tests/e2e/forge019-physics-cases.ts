@@ -112,7 +112,7 @@ export const physics019Cases = [
       await compare(
         lab,
         "V sıfır, alan var",
-        "Potansiyeller +9000 ve −9000 V; iki alan aynı sağ yönde toplanır.",
+        "V değerleri +9000 ve −9000 V; iki alan aynı sağ yönde toplanır.",
       );
     },
     async (_page, lab) => {

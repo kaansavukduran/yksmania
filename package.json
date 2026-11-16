@@ -1,6 +1,6 @@
 {
   "name": "yksmania",
-  "version": "0.17.0",
+  "version": "0.18.0",
   "description": "Offline-first YKS learning with spaced retrieval and AIONIA companions",
   "main": "desktop/main.cjs",
   "scripts": {
@@ -36,6 +36,7 @@
     "@capacitor/core": "^8.6.2",
     "@capacitor/filesystem": "^8.1.5",
     "@capacitor/share": "^8.0.3",
+    "@fontsource-variable/bricolage-grotesque": "5.3.0",
     "@fontsource/lexend": "^5.3.0",
     "@noble/hashes": "^2.4.0",
     "idb": "^8.0.4",

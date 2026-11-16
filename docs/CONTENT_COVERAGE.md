@@ -1,12 +1,39 @@
-# 0.17 kaynak checkpoint'i — yayın kapsamından ayrı
+# 0.18.0 kaynak adayı — 349–378. başlıklar
 
-Gerçek kaynak sayımı:325 kayıt içinde321 anlatım ve4 yalnız-soru seti;293 derin rehber,321 yerleşik özet,3.040 özgün soru. Çalışma sırasının ilk318/479 başlığında anlatım+soru eşleşir. Bu sayım bütün alt becerilerin ya da bütün kaynak arşivinin tamamlandığı anlamına gelmez; canlı sürüm halen aşağıdaki0.16 kaydıdır.
+Güncel kaynakta 380 anlatım,352 ayrıntılı rehber,380 yerleşik özet ve 3650 özgün soru var; ilk 378/479 başlık anlatım+soruyla eşleşir. Bu paket 30 yeni anlatım ve 310 yeni beş seçenekli soru ekler. Kaynak/ikinci okuyucu kabulü ile ürün/yayın kabulü ayrıdır. Henüz 0.18 üretim yayını yoktur.
 
-Yeni259–318 paketi57 anlatım+üç eski rehbere derin ekler ve600 soru içerir. İleri paragraf/elektrik alanı/denge setleri ayrı soru kayıtlarıdır. Deneme kataloğu15 set:TYT110/9075s,AYT55/7425s ve13 branş;tam120/80 dağılım değildir. Kaydedilmiş45 soruluk eski AYT, kendi soruları ve6075s süresiyle kalır.
+Yeni AYT karma 80 soru/180 dakika;40 matematik-geometri,14 fizik,13 kimya,13 biyoloji. Tam dağılım ancak her kota beş seçenekli kartlarla doluyorsa sunulur; sekiz ayrı başlangıç tohumu bunu doğrular. TYT 115 soruluk kısa pratik, Din kotası eksikliğiyle açıkça kalır. Eski 115/55 soruluk deneme kâğıtları, cevapları, işaretleri ve süreleri aynen korunur. Branş pratikleri ve eski kısa öğretim kartları kaldırılmaz.
 
-Ayrıntılı kademeli yardım20/3040 soruda yazıldı:40 gerçek adım,60 şık gerekçesi. Kalan3020 mevcut kısa ipucu+anlamlı açıklamaya sahiptir; ayrıntılı rehber eksikleri görünmez varsayılmaz. Yardımlı/bağımsız performans ayrı; net hesabı değişmez. n4'ün F≠0 öncül düzeltmesi yeni soru köküne işlenir,eski deneme snapshot'ı korunur.
+Yeni 310 sorunun 50’si ayrıntılı kademeli rehber taşır; önceki 20 özgün rehberle toplam 70/3650 olur. Diğer sorular mevcut ipucu/açıklamasını kullanır; hepsinde tam rehber var denmez. Bu 50 kartta bilgi/yöntem ve gerçek 150 çözüm adımı arasında normalize metin tekrarı 0; bu mekanik tarama pedagojik etki kanıtı değildir.
 
-319–348 ve sonraki kaynak aileleri ayrı üretim/bağımsız inceleme aşamasındadır; bu kaynak sayımına veya canlıya eklenmiş sayılmaz. Doğrulanmış resmî kitapçık ve izin kaydı olmayan özgün sorulara ÖSYM etiketi verilmez.
+926/926 birim, TypeScript/modül yolu ve normal/prefix derleme geçti. İlk 61 yeni tarayıcı vakası 37 PASS/24 FAIL; gerçek uzun sözcük/dokunma sorunları ve üç test seçici/işaret/ölçek beklentisi onarıldı. İkinci 61 koşusu 59 PASS/2 eski metin beklentisi FAIL; bu iki fotosentez vakası sayısal beklentiler korunarak doğru yeni ifadeyle ayrıca PASS. Bütün 61 vaka bu kabul birleşiminde kapsanır; tek son 61 koşusu denmez.798 tam tarayıcı vakası toplanır; tam uzak koşu henüz yapılmadı.
+
+61 ailelik yerel Electron çevrimdışı etkileşim, kayıt/reload, aynı profilde süreç yeniden açılışı ve Pages prefix ilk-offline kabulü geçti; renderer hatası 0. Sonradan 0.17’nin sekiz eski model metni ve kalıcı onay kutusu test onarımı bu dala alındı; son kaynak/paket kabulü ayrıca aranır. Bu, fiziksel cihaz veya native sürümler arasında yükseltme değildir. PWA 202 gerekli varlığı kapsar;5 MiB sınırı korunur.
+
+Sonraki 379–408 kaynak paketinde 390 soru hazırlanmıştı; gerçek tarama 280’inde ayrıntılı rehber,110’unda eksik rehber gösterdi. Matematik 80 ve Fizik 30 rehberi bu bilinen açık için geliştiriliyor.409–438 paketinde örnek–banka kopyası, tekrar eden yardım adımı ve cevap konumu örüntüsü ayrıca onarılıyor.439 sonrası kaynak üretimi sürer. Sayı başlık tamamlanması, tüm alt beceriler veya tüm Drive/MEB/20 yıl ÖSYM arşivi demek değildir.
+
+Android imza ayarı kullanıcı tarafından ertelendi; yeni APK hazırlanmış sayılmaz. Web ve masaüstü çalışması sürer. Özel PDF/kimlik/anahtar depoya konulmaz; öğrenci kaynak yüklemez.
+
+---
+
+## Önceki0.17 aday checkpoint'i
+
+# 0.17 adayı: ölçülen içerik ve sınırlar
+
+| Ölçüm | Güncel aday |
+| --- | --- |
+| Anlatım / ayrıntılı rehber / yerleşik özet | 350 / 322 / 350 |
+| Özgün soru / yalnız soru seti | 3.340 / 5 |
+| Ayrıntılı çalışma sırası | İlk 348/479 başlık anlatım + soruyla eşleşir |
+| Önceki 0.16’ya ek | 86 yeni anlatım, dört eski rehber genişletmesi, 900 soru |
+| Pratik kataloğu | 16 set: TYT 115/9488 sn, AYT 55/7425 sn, 14 branş |
+| Ortak ayrıntılı kademeli soru rehberi | 20/3340; kalanlar mevcut ipucu ve açıklama |
+
+Bu sayım üretime yayımlanmış kabulü veya bütün alt becerilerin tamamlanmasını ifade etmez. Gerçek kaynak okuma sınırları SOURCE_REVIEW’de ayrıdır. Eski 2.440 yayımlanmış soru ve ara kaynak denetimlerindeki 3.040 kabul edilmiş soru ayrı golden korumayla denetlenir. Önceki paragraf/elektrik alanı/denge/DNA rehberleri kayıpsız genişletilir; eski örnek/hatırlama konumu korunur.
+
+Katalog tam 120/80 resmî dağılım değildir. TYT Din ve AYT Matematik/Geometri kotaları eksiktir; kaydedilmiş eski 45/6075 sn AYT kendi anlık görüntüsüyle devam eder. Özgün sorular resmî ÖSYM sorusu sayılmaz; bütün 20 yıllık arşiv veya bütün Drive/MEB tamamlandı denmez.
+
+349–408 kaynak paketleri ayrı sahipli dosyalardadır; henüz bu içerik sayımına veya yayına eklenmez. Sonraki aşama kalan başlıklar, eski kısa rehberlerin derinleştirilmesi, bütün sorular için ayrıntılı çözüm, gerçek kota/düzey denemeleri, kaynaklı videolar ve tüm arşiv için alt beceri matrisi olacaktır.
 
 ---
 

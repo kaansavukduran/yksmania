@@ -1,0 +1,38 @@
+.turkish021-lab { min-width: 0; max-width: 100%; color: var(--text); line-height: 1.65; overflow-wrap: anywhere; }
+.turkish021-lab *, .turkish021-lab *::before, .turkish021-lab *::after { box-sizing: border-box; }
+.turkish021-lab h3 { margin-top: 0; }
+.turkish021-lab p { margin-block: .7em; }
+.turkish021-lab label { display: block; margin-block: .7em .25em; }
+.turkish021-lab :is(select, textarea) { display: block; width: 100%; min-width: 0; max-width: 100%; min-height: 44px; color: var(--text); background: var(--surface); border: 1px solid var(--muted); font: inherit; line-height: inherit; }
+.turkish021-lab textarea { resize: vertical; }
+.turkish021-lab button { min-width: 0; max-width: 100%; min-height: 44px; font: inherit; line-height: 1.5; padding: .55em .65em; border-color: var(--muted); white-space: normal; overflow-wrap: normal; }
+.turkish021-lab :is(button, select, textarea):focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.turkish021-model { min-width: 0; border-block: 1px solid var(--border); margin-block: 1em; padding-block: .5em; }
+.turkish021-complete { font-weight: 650; }
+.turkish021-sentences, .turkish021-candidates { display: grid; gap: .7em; min-width: 0; }
+.turkish021-sentences > div { min-width: 0; border: 1px solid var(--muted); border-radius: 9px; padding: .35em .5em; }
+.turkish021-sentences > div[data-selected="true"] { border: 2px solid var(--accent); }
+.turkish021-lab .turkish021-node { width: 100%; text-align: left; }
+.turkish021-lab .turkish021-node[aria-pressed="true"], .turkish021-candidates button[aria-pressed="true"] { border: 2px solid var(--accent); background: var(--surface); }
+.turkish021-move { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5em; }
+.turkish021-candidates button { display: block; width: 100%; text-align: left; }
+.turkish021-candidates button span { display: block; margin-top: .4em; }
+.turkish021-drawing { width: 100%; min-width: 0; }
+.turkish021-drawing svg { display: block; width: 100%; max-width: 640px; height: auto; color: var(--text); margin: 1em auto; }
+.turkish021-lab fieldset { min-width: 0; border: 1px solid var(--border); border-radius: 9px; margin: 1em 0; padding: .65em; }
+.turkish021-lab legend { max-width: 100%; padding-inline: .2em; }
+.turkish021-compare { width: 100%; margin-top: .8em; }
+.turkish021-feedback, .turkish021-result { min-width: 0; margin-block: 1em; padding: .65em; background: var(--surface); border-left: 3px solid var(--accent); }
+.turkish021-lab ul { padding-left: 1.2em; }
+@media (prefers-reduced-motion: no-preference) { :root[data-motion="on"] .turkish021-model :is(rect, [data-relation]) { transition: stroke 160ms ease, stroke-width 160ms ease; } }
+@media (max-width: 460px) {
+ .turkish021-lab button { padding-inline: 6px; }
+ .turkish021-sentences > div, .turkish021-feedback, .turkish021-result { padding-inline: 6px; }
+ .turkish021-lab fieldset { padding-inline: 0; border-inline: 0; border-radius: 0; }
+ .turkish021-feedback, .turkish021-result { border-inline: 0; }
+ .turkish021-lab :is(select, textarea) { padding-inline: 6px; }
+ .turkish021-lab legend { padding-inline: 0; }
+ .turkish021-lab ul { list-style: none; padding-inline: 0; }
+ .turkish021-lab li { margin-block: .75em; }
+ .turkish021-move { grid-template-columns: minmax(0, 1fr); }
+}

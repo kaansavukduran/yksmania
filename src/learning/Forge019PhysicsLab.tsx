@@ -1179,7 +1179,7 @@ function MagneticLab() {
     <Frame
       id={id}
       title="Akımı çevir, alanın yönünü kur"
-      intro="Hava/vakum modeli ile akımın verdiği alan. Alan çizgileri taneciğin gerçek yolu değildir. Tel, halka ve uzun bobinin formülleri kendi biçimi için kullanılır."
+      intro="Hava veya vakum modeli ile akımın verdiği alan. Alan çizgileri taneciğin gerçek yolu değildir. Tel, halka ve uzun bobinin formülleri kendi biçimi için kullanılır."
     >
       <Select
         label="Akım geometrisi"

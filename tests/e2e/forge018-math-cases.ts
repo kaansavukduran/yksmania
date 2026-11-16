@@ -204,6 +204,13 @@ export const math018Cases = [
     async (_page, lab) => {
       await expect(lab).toHaveAttribute("data-current-mode", "centroid");
       await point(lab, "G", 1, 0);
+      await expect(lab.locator('[data-geometry-point="G"]')).toHaveAttribute(
+        "data-y",
+        "0",
+      );
+      await expect(lab.locator(".m018-point-list")).toContainText(
+        "G (1; 0) — x ekseninde",
+      );
       await point(lab, "M", 3.5, -0.5);
       await expect(lab.locator('[data-real-triangle="true"]')).toHaveCount(1);
       await expect(lab.locator('[data-geometry-line^="median-"]')).toHaveCount(

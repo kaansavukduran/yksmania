@@ -1,5 +1,5 @@
 import { lessons, subjects } from "./content";
-import type { AppState, Lesson } from "./model";
+import type { AppState, Lesson, Subject } from "./model";
 import type { ExamDraft, ExamItem, ExamSession } from "./examModel";
 import { helpPanels, resolvedGuidance } from "../learning/questionHelp";
 export type ExamSpec = {
@@ -54,10 +54,17 @@ function snapshot(lesson: Lesson): ExamItem[] {
   });
 }
 // Interleave lesson questions, so a short section samples several taught skills.
-function subjectItems(ids: string[], limit: number, random?: () => number) {
+function subjectItems(
+  ids: string[],
+  limit: number,
+  random?: () => number,
+  fiveOptionsOnly = false,
+) {
   const rows = lessons
       .filter((l) => ids.includes(l.subjectId) && l.questions.length)
-      .map(snapshot),
+      .map((lesson) =>
+        snapshot(lesson).filter((item) => !fiveOptionsOnly || item.options.length === 5),
+      ),
     selectedRows = random
       ? shuffle(
           rows.map((row) => shuffle(row, random)),
@@ -96,13 +103,23 @@ function groupTargets(exam: "TYT" | "AYT"): [string[], number][] {
 }
 function mixed(exam: "TYT" | "AYT"): ExamSpec {
   const groups = groupTargets(exam);
-  const items = groups.flatMap(([ids, count]) => subjectItems(ids, count));
+  // A full mock needs both the subject quotas and five-choice questions.
+  // Short teaching practices retain the older cards; saved papers are snapshots.
+  const fiveOptionsOnly = groups.every(([ids, count]) =>
+    lessons.reduce((total, lesson) => total + (
+      ids.includes(lesson.subjectId)
+        ? lesson.questions.filter((question) => question.options.length === 5).length
+        : 0
+    ), 0) >= count,
+  );
+  const selected = groups.map(([ids, count]) => subjectItems(ids, count, undefined, fiveOptionsOnly));
+  const items = selected.flat();
   const missingSubjects = groups
-    .filter(([ids, count]) => subjectItems(ids, count).length < count)
+    .filter(([, count], index) => selected[index].length < count)
     .map(([ids]) =>
       ids.map((id) => subjects.find((s) => s.id === id)!.name.tr).join(" / "),
     );
-  const fullLength = missingSubjects.length === 0;
+  const fullLength = fiveOptionsOnly && missingSubjects.length === 0;
   return {
     id: `mixed-${exam.toLowerCase()}`,
     title: exam === "TYT" ? "TYT karma denemesi" : "AYT Sayısal karma denemesi",
@@ -114,25 +131,33 @@ function mixed(exam: "TYT" | "AYT"): ExamSpec {
     missingSubjects,
   };
 }
+function branchSpec(subject: Subject): ExamSpec | undefined {
+  const items = subjectItems([subject.id], 40);
+  if (!items.length) return undefined;
+  return {
+    id: `branch-${subject.id}`,
+    title: `${subject.exam} ${subject.name.tr} branş denemesi`,
+    exam: subject.exam,
+    kind: "branch",
+    items,
+    durationSeconds: scaledExamSeconds(subject.exam, items.length),
+    fullLength: false,
+    missingSubjects: [],
+  };
+}
+function previewForId(id: string): ExamSpec | undefined {
+  if (id === "mixed-tyt") return mixed("TYT");
+  if (id === "mixed-ayt") return mixed("AYT");
+  const subject = subjects.find((s) => `branch-${s.id}` === id);
+  return subject ? branchSpec(subject) : undefined;
+}
 export function examCatalogue(): ExamSpec[] {
   return [
-    ...["TYT", "AYT"].map((e) => mixed(e as "TYT" | "AYT")),
+    mixed("TYT"),
+    mixed("AYT"),
     ...subjects.flatMap((subject) => {
-      const items = subjectItems([subject.id], 40);
-      return items.length
-        ? [
-            {
-              id: `branch-${subject.id}`,
-              title: `${subject.exam} ${subject.name.tr} branş denemesi`,
-              exam: subject.exam,
-              kind: "branch" as const,
-              items,
-              durationSeconds: scaledExamSeconds(subject.exam, items.length),
-              fullLength: false,
-              missingSubjects: [],
-            },
-          ]
-        : [];
+      const branch = branchSpec(subject);
+      return branch ? [branch] : [];
     }),
   ];
 }
@@ -166,8 +191,11 @@ export function selectExamVariant(
 ): ExamItem[] {
   // Unknown or deliberately customized specs keep the supplied paper. This
   // protects callers that construct a smaller practice from catalogue metadata.
-  const known = examCatalogue().find(
-    (candidate) =>
+  // Only the requested preview is needed to recognize a catalogue paper.
+  // Rebuilding every subject here copied unrelated guidance for each start.
+  const candidate = previewForId(spec.id);
+  const known =
+    candidate &&
       candidate.id === spec.id &&
       candidate.title === spec.title &&
       candidate.exam === spec.exam &&
@@ -179,15 +207,18 @@ export function selectExamVariant(
       candidate.items.length === spec.items.length &&
       candidate.items.every(
         (item, i) => JSON.stringify(item) === JSON.stringify(spec.items[i]),
-      ),
-  );
+      )
+      ? candidate
+      : undefined;
   if (!known) return spec.items.map(copyItem);
   const random = seededRandom(seed),
     groups: [string[], number][] =
       known.kind === "mixed"
         ? groupTargets(known.exam)
         : [[[known.id.slice("branch-".length)], 40]],
-    selected = groups.map(([ids, count]) => subjectItems(ids, count, random));
+    selected = groups.map(([ids, count]) =>
+      subjectItems(ids, count, random, known.kind === "mixed" && known.fullLength),
+    );
   const ids = selected.flatMap((group) => group.map((item) => item.id));
   // A small bank may repeat the same questions. If it repeats the entire last
   // order too, rotate inside one subject block without changing the quotas.

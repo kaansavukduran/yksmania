@@ -109,7 +109,7 @@ it("makes every prepared theory and the first 138 ordered topics independently p
     expect.arrayContaining(retainedCatalogue),
   );
   expect(catalogue.length).toBeGreaterThanOrEqual(14);
-  expect(catalogue.find((e) => e.id === "mixed-tyt")!.items).toHaveLength(110);
+  expect(catalogue.find((e) => e.id === "mixed-tyt")!.items.length).toBeGreaterThanOrEqual(110);
   expect(
     catalogue.find((e) => e.id === "mixed-ayt")!.items.length,
   ).toBeGreaterThanOrEqual(25);

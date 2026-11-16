@@ -1,10 +1,28 @@
-# 0.16 sonrası çalışma sırası
+# Sonraki kabul sırası
 
-Yayımlanmış 0.16: 264 anlatım, 236 ayrıntılı rehber, 264 özet, 2.440 soru; ilk 258/479 başlık hazır. 60 yeni başlık, 610 birim/548 tarayıcı testi, paketli Windows/Linux ve Pages kabulü geçti.
+0.17 kaynağında ikinci özellik dalı CI 43784303695 sürüyor; önceki 737 koşusunda 728 PASS/9 FAIL ve yerel dar onarımlar kaydedildi. Geçmeden main/yayın yapılmaz.
 
-Özel sonraki dallar 259–318 için 57 yeni anlatım ve mevcut paragraf, elektrik alanı ve denge rehberlerine ekler hazırlıyor. İlk yeni 30 ünitenin 61 bütünleşik vakası geçti. Bütün görünür sözcükleri ve çizim sınırlarını kapsayan daha sıkı telefon denetimi yeni onarımlar buldu; onarımlar ve tekrar kontrolleri sürüyor. 319 sonrası kaynak ve öğretim hazırlığı da devam ediyor. Bu hazırlık yayımlanmış içerik sayılmaz.
+0.18 kaynak adayı ilk 378 başlıkta 380 anlatım/3650 soru,926 birim ve yeni 61 model ailesi normal/mobil kabul birleşimi ile 61-aile yerel native/Pages geçti. Son kaynaktaki bütün 798 tarayıcı ve paket doğrulaması ayrı kapıdır.
 
-479 sıra sonuna dek kaynak kapsamı, ayrıntılı anlatım, özgün etkileşim, tam yerleşik özet, bağımsız soru/çözüm, ikinci okuyucu ve ürün/yayın kabulü sürer. Sonra bütün Drive materyali ve doğrulanmış resmî arşiv için ayrı açık matrisi tamamlanır. 120/80 denemeler gerçek kotalar dolduğunda sunulur; eksik kısa pratik tam deneme sayılmaz. Android için kalıcı imza ve veri koruyan kurulum ayrıca çözülmelidir; debug sertifikaları sürümler arasında farklıdır.
+379–408 paketi 390 soru:110 yeni ayrıntılı rehber açığı kapanınca bütünleştir.409–438 için 30 başlıkta kaynak/model/öğretim incelemesi sürüyor.439–468 ve 469–479 ayrı sahipli kaynak paketleridir; türevin eski rehberi/soruları kayıpsız genişletilecek. Sonra eski 28 kısa rehber, bütün soru rehberleri, örnek–test bağımsızlığı, kaynak alt beceri matrisi, video ve resmî arşiv açıkları kapatılır.
+
+Yeni öğretim örneği bankanın aynı pasaj/veri/şıklı çözülmüş sorusu olmayacak. Yardım adımı önceki bilgi/yöntemi kopyalayarak sayı doldurmayacak. Yeni cevap konumları sabit döngülü olmayacak; seçenek/gerekçe/anahtar anlamsal eşleşmesi bağımsız denetlenecek. Eski kayıt ve soru kâğıtları yeniden yazılmaz.
+
+Android imza ayarı ertelendi; temiz/taşınan/native sürümler arası fiziksel kabul ayrıca bekler. Bütün 479 veya bütün kaynak arşivi bitmiş gibi sunulmaz.
+
+---
+
+## Önceki çalışma kaydı
+
+# 0.17 adayı ve kalan çalışma
+
+Önce son 0.17 adayının 350 anlatım/322 ayrıntılı rehber/350 özet/3340 soru kapsamını gerçek tarayıcı, paketli Windows/Linux, Pages ve yayın kapılarıyla kapat. İlk 348/479 başlık eşleşir; bütün arşiv tamamlandı sayılmaz. 832 birim ve ilk yerel 54 aile native/Pages/web-yükseltme kabulü geçti; gerçek son gözlemde bulunan merkez noktası bölge hatası dar hesap onarımıyla düzeltildi. Tam 737 tarayıcı koşusu ayrı kapıdır.
+
+349–408 kaynak dosyaları ve bağımsız bilimsel incelemeleri hazırdır; bunları sırayla bütünleştir, normal menü, mobil okunabilirlik, gerçek etkileşim, kalıcı kayıt/reload ve ilk çevrimdışı kullanım kabulünü çalıştır. 409–438 kaynak öğretimi ayrı sahip dosyalarda sürer. Başlık sayısı, gerçek konu derinliği ve bütün kaynak bilgisinin karşılanması ayrı ölçülür.
+
+479 sonunda eski 28 kısa rehber, soru başına gerçek çözüm/hata/şık gerekçesi, bağımsız geri çağırma/transfer, tam özet niteliği ve kaynak alt beceri açıkları ayrıca kapatılır. Soru sayısına10 sınırı koyulmaz. İzin ve asıl anahtarı doğrulanmamış sorular ÖSYM diye yayımlanmaz. Doğrulanmış video ve son 20yıl resmî arşiv kapsamı ayrıca geliştirilir.
+
+Tam120/80 dağılım ve beş seçenekli sınav soruları kotalar dolunca sunulur; eski kısa pratik ve devam eden denemeler korunur. Android kalıcı imza kullanıcı tarafından ertelendi; web/masaüstü işleri buna bağlı durmaz. Marka/karakter ve gerçek animasyon kalitesi, tüm temalar/erişilebilirlik, fiziksel cihaz ve veri koruyan native yükseltme açık kapılardır. Arka planda çalışma veya bitmemiş kapsamın tamamlandığı iddiası yoktur.
 
 ---
 

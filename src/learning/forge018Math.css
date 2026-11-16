@@ -182,7 +182,8 @@
   overflow-wrap: anywhere;
 }
 .m018-point-list {
-  padding-inline-start: 1.25em;
+  padding-inline-start: 0;
+  list-style: none;
   margin-block: 0.75rem 1rem;
   line-height: 1.7;
 }

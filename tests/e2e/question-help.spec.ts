@@ -186,7 +186,13 @@ for (const learning of [false, true])
       await expect(
         page.getByRole("button", { name: "İpucu al", exact: true }),
       ).toHaveCount(0);
-      await page.getByRole("checkbox", { name: /Çözüm desteğini aç/ }).check();
+      const gate = page.getByRole("checkbox", { name: /Çözüm desteğini aç/ });
+      // The controlled checkbox reflects the durable IndexedDB commit.
+      // A native check() verifies too early when that write is still pending.
+      await gate.click();
+      await expect(gate).toBeChecked();
+      await expect.poll(async () => (await stored(page)).examDraft.helpEnabled).toBe(true);
+      await saved(page);
       expect((await stored(page)).examDraft.helpLevels).toBeUndefined();
     }
     await page.getByRole("button", { name: "İpucu al", exact: true }).click();
@@ -214,9 +220,11 @@ for (const learning of [false, true])
     );
     expect((await stored(page)).examDraft).toEqual(helped);
     if (!learning) {
-      await page
-        .getByRole("checkbox", { name: /Çözüm desteğini aç/ })
-        .uncheck();
+      const gate = page.getByRole("checkbox", { name: /Çözüm desteğini aç/ });
+      await gate.click();
+      await expect(gate).not.toBeChecked();
+      await expect.poll(async () => (await stored(page)).examDraft.helpEnabled).toBe(false);
+      await saved(page);
       await expect(page.locator(".help-full-solution")).toHaveCount(0);
       expect((await stored(page)).examDraft.helpLevels[index]).toBe(5);
     }

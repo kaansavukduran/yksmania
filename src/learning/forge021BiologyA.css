@@ -1,0 +1,274 @@
+.forge021-biology-a {
+  margin: 24px 0;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface-2);
+  color: var(--text);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.forge021-biology-a h3 {
+  margin: 0 0 18px;
+  line-height: 1.5;
+}
+.forge021-biology-a p,
+.forge021-biology-a figcaption {
+  line-height: 1.75;
+}
+.ba021-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 24px;
+  margin: 24px 0;
+}
+.ba021-field {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+  min-width: 0;
+}
+.ba021-field output {
+  font-variant-numeric: tabular-nums;
+}
+.forge021-biology-a input[type="range"] {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  margin: 0;
+  accent-color: var(--accent);
+}
+.ba021-choice {
+  min-width: 0;
+  margin: 24px 0;
+  padding: 0;
+  border: 0;
+}
+.ba021-choice legend {
+  margin-bottom: 12px;
+  padding: 0;
+  line-height: 1.7;
+}
+.ba021-choice > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  min-width: 0;
+}
+.forge021-biology-a button {
+  min-width: 44px;
+  min-height: 44px;
+  max-width: 100%;
+  padding: 12px 16px;
+  font: inherit;
+  line-height: 1.65;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.ba021-choice button {
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  border-radius: 10px;
+}
+.ba021-choice button[aria-pressed="true"] {
+  border-color: var(--accent);
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.forge021-biology-a button:focus-visible,
+.forge021-biology-a input:focus-visible,
+.forge021-biology-a textarea:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+.forge021-biology-a figure {
+  margin: 26px 0;
+  min-width: 0;
+}
+.ba021-svg {
+  display: block;
+  width: 100%;
+  max-width: 460px;
+  height: auto;
+  margin: 24px auto;
+  overflow: visible;
+}
+.ba021-svg text {
+  fill: var(--text);
+  font-family: inherit;
+  font-size: 22px;
+}
+.ba021-line,
+.ba021-arrow {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.ba021-reference {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 2;
+  stroke-dasharray: 6 5;
+}
+.ba021-mint,
+.ba021-oxygen {
+  fill: var(--mint);
+}
+.ba021-coral,
+.ba021-hydrogen,
+.ba021-marker {
+  fill: var(--accent);
+}
+.ba021-marker {
+  stroke: var(--text);
+  stroke-width: 1;
+}
+.ba021-point {
+  fill: var(--text);
+}
+.ba021-cell {
+  fill: var(--bg);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.ba021-result {
+  padding: 16px 0;
+  border-block: 1px solid var(--border);
+}
+.ba021-result p {
+  margin: 12px 0;
+}
+.ba021-prediction {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+  min-width: 0;
+  margin-top: 24px;
+}
+.ba021-prediction .ba021-choice {
+  margin: 0;
+}
+.forge021-biology-a textarea {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 80px;
+  font: inherit;
+  line-height: 1.7;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  background: var(--bg);
+}
+.ba021-feedback {
+  border-left: 3px solid var(--accent);
+  padding: 12px 16px;
+  background: var(--bg);
+  min-width: 0;
+}
+.ba021-note {
+  margin: 24px 0 0;
+}
+@media (max-width: 600px) {
+  .forge021-biology-a {
+    margin-inline: -11px;
+    padding: 16px 6px;
+  }
+  .ba021-controls {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+  .ba021-choice > div {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+  .forge021-biology-a button {
+    width: 100%;
+    padding-inline: 6px;
+  }
+  .forge021-biology-a textarea {
+    padding-inline: 6px;
+  }
+  .ba021-feedback {
+    padding: 12px 6px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .forge021-biology-a *,
+  .forge021-biology-a *::before,
+  .forge021-biology-a *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+:root[data-motion="off"] .forge021-biology-a * {
+  animation: none !important;
+  transition: none !important;
+}
+
+.ba021-swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 16px 0;
+}
+.ba021-swatches span {
+  min-width: 0;
+}
+.ba021-soft {
+  fill: var(--surface-2);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.ba021-path {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 3;
+}
+.ba021-accent-path {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 4;
+}
+.ba021-empty {
+  fill: var(--bg);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.ba021-faint-line {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 2;
+  stroke-dasharray: 5 4;
+}
+.ba021-svg .ba021-on-fill {
+  fill: var(--bg);
+  font-weight: 600;
+}
+.ba021-curve-marker {
+  fill: var(--bg);
+  stroke: var(--text);
+  stroke-width: 3;
+}
+
+.ba021-base {
+  fill: var(--bg);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.ba021-mark {
+  fill: var(--bg);
+  stroke: var(--accent);
+  stroke-width: 4;
+}
+.ba021-node-text {
+  fill: var(--text);
+}
+.ba021-chain {
+  stroke: var(--text);
+  stroke-width: 3;
+  fill: none;
+}

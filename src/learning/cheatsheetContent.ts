@@ -1,3 +1,15 @@
+import { forge021GeometryTopics } from "./forge021Geometry";
+import { forge021PhysicsTopics } from "./forge021Physics";
+import { forge021BiologyATopics } from "./forge021BiologyA";
+import { forge021BiologyBTopics } from "./forge021BiologyB";
+import { forge021ChemistryTopics } from "./forge021Chemistry";
+import { forge021HumanitiesTopics } from "./forge021Humanities";
+import { forge021TurkishTopics } from "./forge021Turkish";
+import { forge020BiologyTopics } from "./forge020Biology";
+import { forge020ChemistryTopics } from "./forge020Chemistry";
+import { forge020PhysicsTopics } from "./forge020Physics";
+import { forge020GeographyTopics } from "./forge020Geography";
+import { forge020HumanitiesTopics } from "./forge020Humanities";
 import { forge019BiologyTopics } from "./forge019Biology";
 import { forge019ChemistryTopics } from "./forge019Chemistry";
 import { forge019PhysicsTopics } from "./forge019Physics";
@@ -77,6 +89,19 @@ const completeSourceSheets = new Set([
   "paragraf",
   "elektrik-alan",
   "kimyasal-denge",
+  "dna-eslenmesi",
+  ...Object.keys(forge021GeometryTopics),
+  ...Object.keys(forge021PhysicsTopics),
+  ...Object.keys(forge021BiologyATopics),
+  ...Object.keys(forge021BiologyBTopics),
+  ...Object.keys(forge021ChemistryTopics),
+  ...Object.keys(forge021HumanitiesTopics),
+  ...Object.keys(forge021TurkishTopics),
+  ...Object.keys(forge020BiologyTopics),
+  ...Object.keys(forge020ChemistryTopics),
+  ...Object.keys(forge020PhysicsTopics),
+  ...Object.keys(forge020GeographyTopics),
+  ...Object.keys(forge020HumanitiesTopics),
   ...Object.keys(forge019BiologyTopics),
   ...Object.keys(forge019ChemistryTopics),
   ...Object.keys(forge019PhysicsTopics),

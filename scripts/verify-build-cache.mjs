@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-const root = path.resolve("dist");
+const root = path.resolve(process.argv[2] || "dist");
 const sw = await fs.readFile(path.join(root, "sw.js"), "utf8");
 const cached = new Map();
 for (const match of sw.matchAll(/\{url:"([^"]+)",revision:(null|"[^"]+")\}/g)) {

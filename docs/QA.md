@@ -1,14 +1,41 @@
-# 0.17 adayı — kaynak ve çalışma alanı kabulü
+# 0.18.0 kaynak adayı — 349–378. başlıklar
 
-Henüz yeni yayın yoktur.766/766 birim,TypeScript/modül yolu kontrolü ve üretim derlemesi geçti. PWA doğrulayıcısı173 zorunlu çalışma varlığının tamamını önbellekte bulur;5MiB tek dosya sınırı korunur.675 E2E toplanır; tam çalıştırma ve native/Pages49-aile kabulü bekler.
+Güncel kaynakta 380 anlatım,352 ayrıntılı rehber,380 yerleşik özet ve 3650 özgün soru var; ilk 378/479 başlık anlatım+soruyla eşleşir. Bu paket 30 yeni anlatım ve 310 yeni beş seçenekli soru ekler. Kaynak/ikinci okuyucu kabulü ile ürün/yayın kabulü ayrıdır. Henüz 0.18 üretim yayını yoktur.
 
-P0 ortak yardım:20 tam kimlikli rehber/40 adım/60 ayrı şık gerekçesi bağımsız okunup635 denetimle kabul edildi. İlk n4 sıfır kuvvet karşı örneği korunur; yeni köke F≠0 koşulu eklenmiştir. Geçmiş soru fixture'ları ve deneme anlık görüntüleri korunur. Mevcut kısa ipucunu sahte dört aşamaya çoğaltma yoktur.
+Yeni AYT karma 80 soru/180 dakika;40 matematik-geometri,14 fizik,13 kimya,13 biyoloji. Tam dağılım ancak her kota beş seçenekli kartlarla doluyorsa sunulur; sekiz ayrı başlangıç tohumu bunu doğrular. TYT 115 soruluk kısa pratik, Din kotası eksikliğiyle açıkça kalır. Eski 115/55 soruluk deneme kâğıtları, cevapları, işaretleri ve süreleri aynen korunur. Branş pratikleri ve eski kısa öğretim kartları kaldırılmaz.
 
-Gerçek normal menü testleri: kademeli yardımın çevrimdışı reload'u,notu ve doğru yardım seviyesi; iki deneme modu; yardım aç/kapat sonrası bütün cevap/bayrak/deadline aynılığı;gerçek kaydetme hatasında çözümün açılmaması ve yeniden deneme; eski paragraf metinleri,deneme bitişi ve net akışları geçti. İlk birleşik koşu11 PASS/1 test seçicisi FAIL; dar mobil seçici düzeltmesiyle ayrı vaka PASS. Yeni yardımda gerçek metin taşması ve listelerin daralması onarıldı;320px/UI200/yazı150/azaltılmış hareket/açık tema/gerçek System+Lexend yükleme,tam çözümde sözcük bölünmesi0,44px kontroller veaxe kabulü geçti. Bu tek mobil vaka iki fontu içerir; iki bağımsız E2E diye sayılmaz.
+Yeni 310 sorunun 50’si ayrıntılı kademeli rehber taşır; önceki 20 özgün rehberle toplam 70/3650 olur. Diğer sorular mevcut ipucu/açıklamasını kullanır; hepsinde tam rehber var denmez. Bu 50 kartta bilgi/yöntem ve gerçek 150 çözüm adımı arasında normalize metin tekrarı 0; bu mekanik tarama pedagojik etki kanıtı değildir.
 
-İlk tüm birim koşusu yeni soru sayısı/katalog ve görünen sürüm sorunlarını gösterdi; düzeltmelerden sonra758 PASS oldu. Yeni8 yardım testi gerçekten Vitest kapsamına alındı. Eski n4 kökünü bekleyen iki ilave golden kontrolü, yalnız adlandırılmış öncül düzeltmesini kabul ederek onarıldı; son766 PASS. İlk loglar özel QA çalışma alanında korunur. Rehber konumu için3,sentetik imza sözleşmesi için3 ve sürüm tutarlılığı için1 regresyon vardır. Gerçek APK/iki native sürüm arası yükseltme/fiziksel cihaz kontrolü yapılmadı.
+926/926 birim, TypeScript/modül yolu ve normal/prefix derleme geçti. İlk 61 yeni tarayıcı vakası 37 PASS/24 FAIL; gerçek uzun sözcük/dokunma sorunları ve üç test seçici/işaret/ölçek beklentisi onarıldı. İkinci 61 koşusu 59 PASS/2 eski metin beklentisi FAIL; bu iki fotosentez vakası sayısal beklentiler korunarak doğru yeni ifadeyle ayrıca PASS. Bütün 61 vaka bu kabul birleşiminde kapsanır; tek son 61 koşusu denmez.798 tam tarayıcı vakası toplanır; tam uzak koşu henüz yapılmadı.
 
-Android imza ayarı kullanıcı tarafından ertelendi. Eksikse koşullu iş SKIPPED ve APK NOT BUILT'tir; genel web CI başarısı Android paketi var demek değildir. Tam release kapısı Android dosyası+metadata+sabit sertifikayı zorunlu tutar. Anahtar,parola ve ham özel Drive belgeleri depo dışında tutulur.
+61 ailelik yerel Electron çevrimdışı etkileşim, kayıt/reload, aynı profilde süreç yeniden açılışı ve Pages prefix ilk-offline kabulü geçti; renderer hatası 0. Sonradan 0.17’nin sekiz eski model metni ve kalıcı onay kutusu test onarımı bu dala alındı; son kaynak/paket kabulü ayrıca aranır. Bu, fiziksel cihaz veya native sürümler arasında yükseltme değildir. PWA 202 gerekli varlığı kapsar;5 MiB sınırı korunur.
+
+Sonraki 379–408 kaynak paketinde 390 soru hazırlanmıştı; gerçek tarama 280’inde ayrıntılı rehber,110’unda eksik rehber gösterdi. Matematik 80 ve Fizik 30 rehberi bu bilinen açık için geliştiriliyor.409–438 paketinde örnek–banka kopyası, tekrar eden yardım adımı ve cevap konumu örüntüsü ayrıca onarılıyor.439 sonrası kaynak üretimi sürer. Sayı başlık tamamlanması, tüm alt beceriler veya tüm Drive/MEB/20 yıl ÖSYM arşivi demek değildir.
+
+Android imza ayarı kullanıcı tarafından ertelendi; yeni APK hazırlanmış sayılmaz. Web ve masaüstü çalışması sürer. Özel PDF/kimlik/anahtar depoya konulmaz; öğrenci kaynak yüklemez.
+
+---
+
+## Önceki0.17 aday checkpoint'i
+
+# 0.17.0 adayı — kabul kapıları ayrı tutulur
+
+Henüz yeni üretim yayını yoktur. Son bütünleşik birim koşusu 832/832 (106 dosya) PASS; TypeScript/modül yolu ve normal/prefix üretim derlemeleri PASS. PWA’nın 187 zorunlu varlığı önbellekte, 5 MiB tek varlık sınırı korunur. 737 E2E toplanır; tam uzak koşu ve gerçek paketli Windows/Linux kabulü bekler.
+
+İlk 62 yeni ünite/uzantı/font vakasında 54 PASS/8 FAIL çıktı. Beş mobil biyoloji taşması, bir hidroliz formül bölünmesi ve SVG float32 uç ölçümü için iki yanlış test beklentisi dar onarıldı. Başarısız ilk kayıtlar saklıdır. Biyoloji beş sorunlu telefon vakası, kimya iki normal/telefon vakası ve indüksiyon iki vaka düzeltmelerle geçti; ayrı kaynak-matris testleri tam ürün kabulü diye sayılmaz. Son menstrual başlık/tick aralığı gerçek görüntülerde ayrıca onarıldı. Bütün 62’nin tek son koşuda geçtiği iddia edilmez.
+
+54 ailelik gerçek yerel Electron çevrimdışı açılış, HTML/SVG değişimi, not/keşif kaydı, reload ve aynı profilde süreç kapat-aç kabulü PASS. /yksmania/ prefix altında 54 aile ilk kez çevrimdışı açılıp yenilendi; manifest/scope ve iki eski soru rotası PASS. Bunlar fiziksel cihaz, temiz Windows kurulum veya portable taşıma değildir.
+
+Gerçek eski 0.16 arayüzünden 0.17 service-worker güncellemesi PASS: eski yayımlanmış üç çalışma dosyası hash eşleşmesi, tarayıcı süreç yeniden açılışı, bütün state alanları, gerçek 5/5 oturum ve özgün tekrar tarihleri, kontrol edilmiş yanlış taslak/not, 45 soru/6075 sn AYT cevap/bayrak/deadline, sentetik eski 870 bayt PDF ve kataloğu korunur. On yedi yeni model eski profilde ilk kez çevrimdışı açılır; XP 25→25. Eski paragraf örnek sekmesi yeni 17 bölümlük rehberde aynı etkinliği gösterir; açık Sonraki bölüm eylemiyle yeni hatırlama konumu yazılır. Native sürümden native sürüme yükseltme olarak sunulmaz.
+
+Gerçek sonuçların son incelemesinde G=(1,0) için IV. bölge etiketi görüldü. Koordinatların ayrı ayrı bölünmesinden kalan yuvarlama hatası, telafili toplama ve en son bölmeyle onarıldı. Dört regresyon eski kodda4 FAIL verdi; son18/18 hedef test ve808 bağımsız tam-rasyonel oracle karşılaştırması geçti. Gerçek tiny koordinatlar sıfıra yuvarlanmaz. Eski10 soru/18 bölüm/6 örnek tam aynı kaldı. Normal uygulamada G’nin tam0 ordinatı ve xekseni HTML’si geçti. Mobil Lexend kontrolü ayrıca bir uzun giriş sözcüğü buldu; anlamı korunarak “Noktanın yerini değiştir” yapıldı. Son mobil kabulü de geçti: System ve gerçek Lexend,320px/UI200/yazı150, tam0 ordinat/xekseni HTML, bütün sözcükler,44px hedefler, çevrimdışı reload veaxe. Açık nokta adlarının bulunduğu listenin büyük yazıda iç boşluğu daralıyordu; liste girintisi kaldırıldı, bilgi ve yazı boyutu korunur. Sayısal onarımla54 aile native ve54 aile Pages tekrar geçti; bu iki artifact son üç kısa metin/liste girintisi değişiminden öncedir. Gerçek paket ve tam737 kabulü son commit üzerinde ayrıca aranır.
+
+P0 yardım: 20 tam kimlikli rehber/40 adım/60 şık gerekçesi bağımsız okundu. Gerçek kalıcı kaydetme hatasında çözümün açılmaması, sonradan yardım açmanın bağımsız çözümü değiştirmemesi, deneme yardımının cevap/bayrak/deadline koruması ve büyük yazılı mobil System+gerçek Lexend/axe kontrolleri geçti. Yalnız 20 soruda ayrıntılı rehber vardır. Diğer soruların kısa ipucu sahte dört adıma çoğaltılmaz.
+
+Android imza ayarı ertelendi: iş SKIPPED ise APK NOT BUILT. Masaüstü kapsamlı yayın dört paket + verified-run + SHA256SUMS içerebilir; açık APK kapsamı seçilirse metadata ve sabit sertifika da zorunlu. Collector yedi sentetik fixture kabul/ret denetimini geçti; bu gerçek APK üretim/imza kabulü değildir. Fiziksel Android, temiz kurulum ve native sürümler arasında veri koruması NOT TESTED.
+
+
+Son özellik dalı denetimi [43778995950](https://github.com/kaansavukduran/yksmania/actions/runs/43778995950):832 birim geçti;737 tarayıcı vakasının728’i geçti,9’u başarısız oldu. Sekizinde büyük Lexend yazıda bölünen model metni, birinde kalıcı kayıttan önce kontrol edilen onay kutusu test zamanlaması bulundu. Sayısal modeller, soru/rehber içerikleri ve kullanıcı yazısı değişmeden kısa anlam eşdeğerleri ve kaydın bitişini bekleyen kontrol onarıldı. Son yerel832/832 birim, sekiz sorunlu telefon ve iki deneme yardım akışı PASS. Tam737 ve paket işleri son commit üzerinde yeniden çalıştırılmadan yayına geçilmez; önceki başarısız koşu saklanır.
 
 ---
 

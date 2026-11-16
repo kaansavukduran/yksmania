@@ -1,3 +1,15 @@
+import { forge021GeometryTopics } from "./forge021Geometry";
+import { forge021PhysicsTopics } from "./forge021Physics";
+import { forge021BiologyATopics } from "./forge021BiologyA";
+import { forge021BiologyBTopics } from "./forge021BiologyB";
+import { forge021ChemistryTopics } from "./forge021Chemistry";
+import { forge021HumanitiesTopics } from "./forge021Humanities";
+import { forge021TurkishTopics } from "./forge021Turkish";
+import { forge020BiologyTopics } from "./forge020Biology";
+import { forge020ChemistryTopics } from "./forge020Chemistry";
+import { forge020PhysicsTopics } from "./forge020Physics";
+import { forge020GeographyTopics } from "./forge020Geography";
+import { forge020HumanitiesTopics } from "./forge020Humanities";
 import { forge019BiologyTopics } from "./forge019Biology";
 import { forge019ChemistryTopics } from "./forge019Chemistry";
 import { forge019PhysicsTopics } from "./forge019Physics";
@@ -135,6 +147,34 @@ const questionOnly019 = new Set([
   "elektrik-alan-ileri",
   "kimyasal-denge-ileri",
 ]);
+const Forge020Biology=lazy(()=>import("./Forge020BiologyLab"));
+const Forge020Chemistry=lazy(()=>import("./Forge020ChemistryLab"));
+const Forge020Physics=lazy(()=>import("./Forge020PhysicsLab"));
+const Forge020Geography=lazy(()=>import("./Forge020GeographyLab"));
+const Forge020Humanities=lazy(()=>import("./Forge020HumanitiesLab"));
+const Forge021Geometry=lazy(()=>import("./Forge021GeometryLab"));
+const Forge021Physics=lazy(()=>import("./Forge021PhysicsLab"));
+const Forge021BiologyA=lazy(()=>import("./Forge021BiologyALab"));
+const Forge021BiologyB=lazy(()=>import("./Forge021BiologyBLab"));
+const Forge021Chemistry=lazy(()=>import("./Forge021ChemistryLab"));
+const Forge021Humanities=lazy(()=>import("./Forge021HumanitiesLab"));
+const Forge021Turkish=lazy(()=>import("./Forge021TurkishLab"));
+const source021Labs:{topics:Record<string,string>;Component:ComponentType<{lessonId:string}>}[]=[
+ {topics:forge021GeometryTopics,Component:Forge021Geometry},
+ {topics:forge021PhysicsTopics,Component:Forge021Physics},
+ {topics:forge021BiologyATopics,Component:Forge021BiologyA},
+ {topics:forge021BiologyBTopics,Component:Forge021BiologyB},
+ {topics:forge021ChemistryTopics,Component:Forge021Chemistry},
+ {topics:forge021HumanitiesTopics,Component:Forge021Humanities},
+ {topics:forge021TurkishTopics,Component:Forge021Turkish},
+];
+const source020Labs:{topics:Record<string,string>;Component:ComponentType<{lessonId:string}>}[]=[
+ {topics:forge020BiologyTopics,Component:Forge020Biology},
+ {topics:forge020ChemistryTopics,Component:Forge020Chemistry},
+ {topics:forge020PhysicsTopics,Component:Forge020Physics},
+ {topics:forge020GeographyTopics,Component:Forge020Geography},
+ {topics:forge020HumanitiesTopics,Component:Forge020Humanities},
+];
 const source019Labs: {
   topics: Record<string, string>;
   Component: ComponentType<{ lessonId: string }>;
@@ -233,7 +273,9 @@ const continuationLabs: {
 ];
 export function VisualLab({ id }: { id: string }) {
   const { t } = useApp();
-  if (questionOnly019.has(id)) return null;
+  if (questionOnly019.has(id)||id==="dna-replikasyonu-ileri") return null;
+  const Source021Lab=source021Labs.find(({topics})=>Object.hasOwn(topics,id))?.Component;
+  const Source020Lab=source020Labs.find(({topics})=>Object.hasOwn(topics,id))?.Component;
   const Source019Lab = source019Labs.find(({ topics }) =>
     Object.hasOwn(topics, id),
   )?.Component;
@@ -257,7 +299,7 @@ export function VisualLab({ id }: { id: string }) {
   )?.Component;
   return (
     <Suspense fallback={<p role="status">{t("loading")}</p>}>
-      {Source019Lab ? (
+      {Source021Lab ? (<Source021Lab key={id} lessonId={id}/>) : Source020Lab ? (<Source020Lab key={id} lessonId={id}/>) : Source019Lab ? (
         <Source019Lab key={id} lessonId={id} />
       ) : Source018Lab ? (
         <Source018Lab key={id} lessonId={id} />

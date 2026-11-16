@@ -1,16 +1,43 @@
-# 0.17.0 geliştirme checkpoint'i — henüz yayımlanmadı
+# 0.18.0 kaynak adayı — 349–378. başlıklar
 
-Güncel kaynakta 321 anlatım,293 ayrıntılı rehber,321 yerleşik özet ve3.040 özgün soru vardır;479 başlığın ilk318'i anlatım ve soruyla eşleşir. 259–318 aralığında57 yeni anlatım ve mevcut paragraf/elektrik alanı/kimyasal denge rehberlerine ekler bulunur. Üç ileri soru seti ayrı tutulur; eski anlatım kimlikleri ve özgün soru sıraları korunur. Bu checkpoint canlı0.16'nın yerine yayımlanmış sayılmaz.
+Güncel kaynakta 380 anlatım,352 ayrıntılı rehber,380 yerleşik özet ve 3650 özgün soru var; ilk 378/479 başlık anlatım+soruyla eşleşir. Bu paket 30 yeni anlatım ve 310 yeni beş seçenekli soru ekler. Kaynak/ikinci okuyucu kabulü ile ürün/yayın kabulü ayrıdır. Henüz 0.18 üretim yayını yoktur.
 
-Yeni ortak çözüm rehberi20 özgün soruda bilgi→yöntem→tek tek adım→açık tam çözüm sunar:40 adım ve60 ayrı şık gerekçesi. Diğer3.020 soru kendi mevcut ipucunu ve açıklamasını kullanır; hepsinde ayrıntılı rehber tamamlandı denmez. Denemelerde öğrenme/simülasyon seçimi, açık yardım kapısı, kalıcı soru bazlı yardım seviyesi ve ayrı bağımsız/yardımlı doğru sayıları vardır. Net değişmez; yardım süreyi, şıkları, cevapları veya işaretleri sıfırlamaz. Kök/pasaj/şık sırası/anahtar/açıklama kimlik eşleşmesi, eski denemeye değişmiş soru rehberinin bağlanmasını engeller.
+Yeni AYT karma 80 soru/180 dakika;40 matematik-geometri,14 fizik,13 kimya,13 biyoloji. Tam dağılım ancak her kota beş seçenekli kartlarla doluyorsa sunulur; sekiz ayrı başlangıç tohumu bunu doğrular. TYT 115 soruluk kısa pratik, Din kotası eksikliğiyle açıkça kalır. Eski 115/55 soruluk deneme kâğıtları, cevapları, işaretleri ve süreleri aynen korunur. Branş pratikleri ve eski kısa öğretim kartları kaldırılmaz.
 
-Bağımsız okumada Newton n4'te sıfır kuvvetin de kapsandığı gerçek öncül kusuru bulundu. Yeni soruda sıfırdan farklı net kuvvet koşulu açıklandı; kimlik/anahtar/şıklar korunur. Tarihsel golden fixture'lar değiştirilmedi; yalnız bu kök düzeltmesi adlandırılmış dar bir istisnayla denetlenir. Kaydedilmiş eski deneme anlık görüntüsü yeniden yazılmaz. Eski rehberde örnek/hatırlama adımını kaydırmadan yeni bölümler eklemek için okuma konumu koruması eklendi. Görünen sürüm tek package kaynağından gelir.
+Yeni 310 sorunun 50’si ayrıntılı kademeli rehber taşır; önceki 20 özgün rehberle toplam 70/3650 olur. Diğer sorular mevcut ipucu/açıklamasını kullanır; hepsinde tam rehber var denmez. Bu 50 kartta bilgi/yöntem ve gerçek 150 çözüm adımı arasında normalize metin tekrarı 0; bu mekanik tarama pedagojik etki kanıtı değildir.
 
-Check,derleme ve766/766 birim testi geçti. P0+eski soru/deneme tarayıcı koşusunda11 PASS/1 yanlış switch seçicisi FAIL; seçici düzeltildikten sonra büyük yazılı mobil kontrol de geçti. Ayrıca gerçek taşma ve şık listesi girintisi onarıldı;320px/UI200/yazı150,iki gerçekten yüklenen yazı tipi,bütün çözüm sözcükleri,dokunma veaxe kabulü geçti. İlk başarısız kayıtlar korunur.675 tarayıcı vakası toplanır; tamamı bu checkpoint'te henüz koşulmadı.49 model ailesi native/Pages betikleri yazıldı; bu iki yeni aile grubunun kabulü bekliyor. Bilimsel ikinci okuyucu ve kaynak okuma kanıtları, kullanıcı arayüzü/yayın kabulü yerine sayılmaz.
+926/926 birim, TypeScript/modül yolu ve normal/prefix derleme geçti. İlk 61 yeni tarayıcı vakası 37 PASS/24 FAIL; gerçek uzun sözcük/dokunma sorunları ve üç test seçici/işaret/ölçek beklentisi onarıldı. İkinci 61 koşusu 59 PASS/2 eski metin beklentisi FAIL; bu iki fotosentez vakası sayısal beklentiler korunarak doğru yeni ifadeyle ayrıca PASS. Bütün 61 vaka bu kabul birleşiminde kapsanır; tek son 61 koşusu denmez.798 tam tarayıcı vakası toplanır; tam uzak koşu henüz yapılmadı.
 
-Android kalıcı imza altyapısı ve sertifika kontrolü hazırdır; kullanıcı secret kurulumunu açıkça erteledi. Yapılandırma yoksa Android işi SKIPPED olur; web ve masaüstü doğrulaması sürer. APK veya bütün platformlu release tamamlandı denmez. Tam release işi APK'yı ve sabit sertifikayı ayrıca zorunlu tutar. Özel imza anahtarı Git'e eklenmez.0.16 debug APK'larının imza değişimi hakkındaki tarihsel uyarı geçerlidir.
+61 ailelik yerel Electron çevrimdışı etkileşim, kayıt/reload, aynı profilde süreç yeniden açılışı ve Pages prefix ilk-offline kabulü geçti; renderer hatası 0. Sonradan 0.17’nin sekiz eski model metni ve kalıcı onay kutusu test onarımı bu dala alındı; son kaynak/paket kabulü ayrıca aranır. Bu, fiziksel cihaz veya native sürümler arasında yükseltme değildir. PWA 202 gerekli varlığı kapsar;5 MiB sınırı korunur.
 
-Sıradaki somut iş:319–348 kaynak paketini kaydetmek, DNA rehberine eski7 bölümü/5 soruyu koruyarak eklemek; sonra bütünleşik tarayıcı,ilk çevrimdışı kullanım,0.16→0.17 veri koruma,Pages ve masaüstü kabulünü kapatmak. Bricolage/marka, yeni konuların kademeli rehberleri ve bütün479 başlığın derinlik denetimi devam eden kapsamdadır. Arka plan otomasyonu veya tam arşiv tamamlanması iddiası yoktur.
+Sonraki 379–408 kaynak paketinde 390 soru hazırlanmıştı; gerçek tarama 280’inde ayrıntılı rehber,110’unda eksik rehber gösterdi. Matematik 80 ve Fizik 30 rehberi bu bilinen açık için geliştiriliyor.409–438 paketinde örnek–banka kopyası, tekrar eden yardım adımı ve cevap konumu örüntüsü ayrıca onarılıyor.439 sonrası kaynak üretimi sürer. Sayı başlık tamamlanması, tüm alt beceriler veya tüm Drive/MEB/20 yıl ÖSYM arşivi demek değildir.
+
+Android imza ayarı kullanıcı tarafından ertelendi; yeni APK hazırlanmış sayılmaz. Web ve masaüstü çalışması sürer. Özel PDF/kimlik/anahtar depoya konulmaz; öğrenci kaynak yüklemez.
+
+---
+
+## Önceki0.17 aday checkpoint'i
+
+# 0.17.0 adayı — 259–348. çalışma başlıkları
+
+Henüz üretime yayımlanmadı; canlı sürüm 0.16.0’dır. Güncel adayda 350 anlatım, 322 ayrıntılı rehber, 350 yerleşik özet ve 3.340 özgün soru bulunur. Çalışma sırasının ilk 348/479 başlığı anlatım ve soruyla eşleşir. Önceki sürüme göre 86 yeni anlatım, dört eski rehbere kayıpsız ek ve 900 yeni soru vardır. Bu sayılar bütün kaynak arşivinin ya da bütün alt becerilerin tamamlandığı anlamına gelmez.
+
+Paragraf, elektrik alanı, kimyasal denge ve DNA rehberlerinin eski bölümleri, örnekleri ve soruları korunur; ileri soru setleri ayrı tutulur. Eski örnek/hatırlama sekmesinde kalan okuyucunun konumu, yeni öğretim bölümleri eklendiğinde aynı etkinlikte açılır. Yeni konum yalnız açık kullanıcı eylemiyle kaydedilir.
+
+Ortak ayrıntılı yardım 20 soruda bilgi → yöntem → tek tek adım → tam çözüm sunar: 40 adım ve 60 ayrı şık gerekçesi. Diğer 3.320 soru mevcut ipucu ve açıklamasını kullanır; bütün bankanın ayrıntılı rehberi tamamlandı denmez. Denemelerde öğrenme/simülasyon seçimi, açık yardım kapısı ve kalıcı soru bazlı yardım seviyesi vardır. Bağımsız ve yardımlı doğru ayrı gösterilir; net hesabı, cevaplar, işaretler ve süre korunur. Tam soru kimliği eşleşmeden eski denemeye yeni rehber bağlanmaz. Newton n4’ün eksik F≠0 öncülü dar bir düzeltmeyle giderildi; eski deneme anlık görüntüleri yeniden yazılmaz.
+
+Başlıklar cihazda önbelleklenen Bricolage Grotesque kullanır; gövde ve matematik yazısı korunur. Açık Lexend tercihi başlıklarda da geçerlidir. Telefonlarda gerçek sözcük bölünmesi, formül ve slider taşması onarıldı. Deneme başlangıcında yalnız seçilen katalog hesaplanır; eski soru kâğıtlarının bütün alanları ve çeşitlendirme sonuçları karşılaştırmayla korunur.
+
+Yerel ilk bütünleşik test 823 PASS/5 FAIL verdi; üç güncel katalog beklentisi ve iki deneme başlatma performans sorunu düzeltildikten sonra 828/828 test geçti. Sonraki gerçek güncelleme kontrolünde merkez noktası G=(1,0) yanlış bölgeyle etiketleniyordu. Toplama sırası düzeltildi; bölgeye sıfır eşiği eklenmedi. Dört yeni regresyon eski kodda başarısız, son hedefte18/18 başarılı; 808 bağımsız tam-rasyonel oracle sonucu eşleşir. Son bütünleşik832/832 test geçti. Son telefon kontrolünde kısa anlam eşdeğerleri ve nokta listesi girintisi onarıldı; System+gerçek Lexend,0 kırık sözcük,44px hedefler veaxe PASS. 737 tarayıcı vakası toplanır; henüz tam koşu başarısı iddia edilmez. Normal ve /yksmania/ derlemelerinin 187 zorunlu varlığı önbellektedir, tek dosya 5 MiB sınırı korunur.
+
+İlk 54 ailelik masaüstü çevrimdışı/process-restart ve Pages prefix kabulü geçti. Gerçek 0.16→0.17 web güncellemesinde bütün eski durum, 5/5 oturum, özgün tekrar tarihleri, kontrol edilmiş yanlış taslak, notlar, eski 45 soruluk AYT/6075 sn taslağı ve 870 bayt sentetik eski belge/katalog korundu; XP 25→25. On yedi yeni model eski profilde ilk kez çevrimdışı açılıp yenilendi. Eski rehber örnek konumu da aynı etkinlikte kaldı. Bu test paketli Windows kurulumu veya native sürümler arasında yükseltme değildir.
+
+Android imza kurulumu kullanıcı tarafından ertelendi. Eksik yapılandırma Android işini SKIPPED bırakır; yeni APK üretilmiş sayılmaz. Yayın işi açık Android kapsamı seçimiyle dört doğrulanmış masaüstü paketini yayımlayabilir; APK seçilirse paket metadata’sı ve sabit sertifika ayrıca zorunludur. Özel anahtar, parola ve ham Drive kaynakları Git dışında kalır.
+
+Sonraki kaynak paketleri 349–408 için bağımsız içerik/model okumasından geçti; normal uygulama, çevrimdışı ve yayın kabulüne henüz eklenmedi. 409 sonrası öğretim çalışması ayrı dosyalarda sürer. Tam 479, bütün Drive/MEB ve 20 yıllık bütün ÖSYM tamamlanmadı; marka, eski kısa rehberler, tüm soruların ayrıntılı yardımı, doğrulanmış video ve resmî arşiv kapsamı açık işlerdir.
+
+
+Son özellik dalı denetimi [43778995950](https://github.com/kaansavukduran/yksmania/actions/runs/43778995950):832 birim geçti;737 tarayıcı vakasının728’i geçti,9’u başarısız oldu. Sekizinde büyük Lexend yazıda bölünen model metni, birinde kalıcı kayıttan önce kontrol edilen onay kutusu test zamanlaması bulundu. Sayısal modeller, soru/rehber içerikleri ve kullanıcı yazısı değişmeden kısa anlam eşdeğerleri ve kaydın bitişini bekleyen kontrol onarıldı. Son yerel832/832 birim, sekiz sorunlu telefon ve iki deneme yardım akışı PASS. Tam737 ve paket işleri son commit üzerinde yeniden çalıştırılmadan yayına geçilmez; önceki başarısız koşu saklanır.
 
 ---
 

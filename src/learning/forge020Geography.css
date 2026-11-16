@@ -1,0 +1,340 @@
+.forge020-geography-lab {
+  min-width: 0;
+  line-height: 1.75;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+.forge020-geography-lab
+  :is(p, h3, h4, label, output, summary, strong, span, dt, dd, figcaption) {
+  word-break: normal;
+  overflow-wrap: normal;
+}
+.forge020-geography-lab :is(h3, h4) {
+  margin: 0 0 14px;
+}
+.forge020-geography-lab p {
+  margin: 16px 0;
+}
+.g020-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  gap: 24px;
+  margin: 24px 0;
+}
+.g020-control {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  margin: 22px 0;
+}
+.g020-control label,
+.g020-prediction > label {
+  display: block;
+  min-width: 0;
+}
+.g020-control :is(input, select),
+.g020-prediction textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+.g020-control input[type="range"] {
+  min-height: 44px;
+  margin-inline: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.g020-control input[type="number"],
+.g020-control select {
+  min-height: 44px;
+}
+.g020-selected {
+  display: block;
+  min-width: 0;
+  color: var(--muted);
+}
+.g020-check {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 12px;
+  min-height: 44px;
+  margin: 22px 0;
+  cursor: pointer;
+}
+.g020-check input {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  margin: 0;
+}
+.g020-check span {
+  flex: 1 1 14ch;
+  min-inline-size: min(100%, 14ch);
+}
+.g020-result,
+.g020-feedback {
+  min-width: 0;
+  margin: 24px 0;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.g020-result > strong,
+.g020-feedback > strong {
+  display: block;
+}
+.g020-prediction {
+  min-width: 0;
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+.g020-prediction textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.g020-prediction button {
+  max-width: 100%;
+  min-height: 44px;
+  font: inherit;
+  white-space: normal;
+  margin-top: 16px;
+}
+.g020-help,
+.forge020-geography-lab figcaption {
+  color: var(--muted);
+}
+.forge020-geography-lab figure {
+  margin: 24px 0;
+  min-width: 0;
+}
+.forge020-geography-lab figcaption {
+  margin-top: 14px;
+}
+.forge020-geography-lab details {
+  margin: 22px 0;
+  min-width: 0;
+}
+.forge020-geography-lab summary {
+  min-height: 44px;
+  padding: 12px 0;
+  cursor: pointer;
+  font: inherit;
+  list-style-position: inside;
+}
+.g020-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+  gap: 14px;
+  margin: 24px 0;
+}
+.g020-facts > div {
+  min-width: 0;
+  border-top: 1px solid var(--border);
+  padding: 14px 0;
+}
+.g020-facts dt {
+  font-weight: 600;
+}
+.g020-facts dd {
+  margin: 8px 0 0;
+}
+.g020-diagram {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  max-height: 780px;
+  overflow: visible;
+}
+.g020-diagram text {
+  fill: var(--text);
+  font:
+    20px system-ui,
+    sans-serif;
+  text-anchor: middle;
+}
+.g020-axis-text {
+  text-anchor: end !important;
+}
+.g020-grid {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 1;
+}
+.g020-axis {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1.5;
+}
+.g020-ground {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 1.5;
+}
+.g020-rod,
+.g020-post {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 4;
+}
+.g020-shadow {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 5;
+}
+.g020-sun {
+  fill: var(--surface);
+  stroke: var(--accent);
+  stroke-width: 3;
+}
+.g020-ray {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2;
+  stroke-dasharray: 5 3;
+}
+.g020-night {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 1.5;
+}
+.g020-day {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 1.5;
+}
+.g020-cell {
+  fill: var(--surface);
+  stroke: var(--muted);
+  stroke-width: 1.5;
+}
+.g020-equator {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.g020-prime {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+  stroke-dasharray: 4 3;
+}
+.g020-selected-line {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+.g020-node,
+.g020-anti-node {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.g020-anti-node {
+  stroke-dasharray: 3 2;
+}
+.g020-anti {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+  stroke-dasharray: 3 4;
+}
+.g020-sea {
+  fill: var(--surface);
+  stroke: var(--muted);
+  stroke-width: 2;
+}
+.g020-air {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 3;
+  stroke-dasharray: 8 4;
+}
+.g020-original-paper {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 2;
+  stroke-dasharray: 5 3;
+}
+.g020-paper {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.g020-contour {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1.2;
+}
+.g020-section-line {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 3;
+}
+.g020-scale-line {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 3;
+}
+.g020-profile {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 3;
+}
+.g020-contour-point {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 1;
+}
+.g020-data-list {
+  padding-left: 1.3em;
+}
+.g020-data-list li {
+  padding: 12px 0;
+}
+@media (max-width: 700px) {
+  .g020-controls {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .g020-result,
+  .g020-feedback {
+    padding: 6px;
+  }
+  .g020-result > strong,
+  .g020-feedback > strong,
+  .g020-facts dt,
+  .forge020-geography-lab :is(h3, h4),
+  .g020-control strong {
+    font-weight: 400;
+  }
+  .g020-control input[type="number"],
+  .g020-control select,
+  .g020-prediction textarea {
+    padding-inline: 4px;
+  }
+  .g020-prediction button {
+    padding-inline: 4px;
+  }
+  .g020-data-list {
+    padding-left: 18px;
+  }
+  .g020-facts {
+    grid-template-columns: 1fr;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .forge020-geography-lab * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+html[data-motion="off"] .forge020-geography-lab * {
+  animation: none !important;
+  transition: none !important;
+}

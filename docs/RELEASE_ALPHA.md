@@ -1,15 +1,15 @@
-YKSMania 0.16.0 alpha 1 — doğrulanmış yayın
+YKSMania 0.17.0 alpha 1 — web ve masaüstü kapsamı
 
-199–258. çalışma başlıklarında 60 yeni etkileşimli ünite: hormonlar ve duyu, destek/hareket ve sindirim; kayaç, su, toprak, bitki ve nüfus; asit/baz, günlük kimya, modern atom ve gazlar; Newton, ivmeli hareket, atış ve enerji; yazım, noktalama, anlatım ve anlam.
+259–348. çalışma başlıkları için 86 yeni anlatım ve dört eski rehbere kayıpsız genişletme; 900 yeni özgün soru. Toplam 350 anlatım, 322 ayrıntılı rehber, 350 yerleşik kopya kağıdı ve 3.340 soru. İlk 348/479 başlık anlatım ve soruyla eşleşir. Öğrenci kaynak dosyası yüklemez; öğretim uygulama içindedir.
 
-Toplam 264 anlatım, 236 ayrıntılı rehber, 264 yerleşik kopya kağıdı ve 2.440 özgün soru; ilk 258/479 başlık hazır. 678 yeni bölüm, 248 adım adım örnek, 248 hatırlama ve 600 soru. Önceki 1.840 soru ve öğrenci kayıtları korunur; öğrenci PDF yüklemez.
+Yeni konular sindirim, dolaşım, solunum, boşaltım, üreme ve nükleik asitler; nüfus, yerleşme, çevre, afet ve harita; çözelti, enerji, hız ve denge; momentum, kuvvet, tork, elektrik, manyetizma ve çembersel hareket; analitik geometri, paragraf ve felsefedir. Başlık yazısı çevrimdışı Bricolage Grotesque; açık Lexend tercihi korunur.
 
-14 kısa pratik: TYT 110 soru / 151 dk 15 sn, AYT 45 soru / 101 dk 15 sn ve 12 branş. Eksik kotalar belirtilir. Eski 37 soruluk AYT taslağı yeniden oluşturulmaz veya sürelenmez. Varsayılan hedef 18 Haziran 2027; anlatım 28 Şubat 2027; ilk öğrenme gün 1, tekrar gün 3/7/21.
+Ortak ayrıntılı yardım 20 soruda bilgi, yöntem, adımlar ve şık gerekçeleri sunar. Deneme öğrenme/simülasyon modları, soru bazlı yardım kaydı ve bağımsız/yardımlı doğru ayrımı vardır; net formülü değişmez. Diğer 3320 soru mevcut ipucu/açıklamasını kullanır; bütün bankanın ayrıntılı çözümü tamamlandı sayılmaz.
 
-Kaynak/tag: `bb60dfa4c6463d511085e58fe3124f803b5651c5`. [CI](https://github.com/kaansavukduran/yksmania/actions/runs/43756497076), [canlı kabul](https://github.com/kaansavukduran/yksmania/actions/runs/43756612914), [Pages](https://github.com/kaansavukduran/yksmania/actions/runs/43758617864) ve [paket yayını](https://github.com/kaansavukduran/yksmania/actions/runs/43760024382) başarılıdır. 610 birim ve 548 tam tarayıcı vakası geçti; canlı akış 547 HTTPS + bir yerel Vite regresyonudur.
+16 pratik kataloğu: TYT 115/9488 sn, AYT 55/7425 sn ve 14 branş. Tam120/80 resmî dağılım değildir; eksik kotalar görünürdür. Devam eden eski denemelerin tam soru kâğıdı, cevap, işaret ve süreleri korunur. Varsayılan sınav 18 Haziran 2027, anlatım hedefi 28 Şubat 2027; öğrenme günü 1, tekrar günleri 3/7/21.
 
-Windows Setup/Portable ve Linux AppImage/DEB x64; Android 0.16.0 / kod 24 / v2 imza. Sekiz dosyanın checksum ve kanıtları release içindedir. Beş büyük binary yerelde ayrıca hashlenmedi. Fiziksel Android, temiz Windows kurulumu, portable taşıma ve native sürümler arasında kurulum test edilmedi.
+Bu yayının indirme kapsamı Windows x64 Setup/Portable ve Linux x64 AppImage/DEB’dir. Dört paket yeniden derlenmeden başarılı main işinden alınır; verified-run.json ve SHA256SUMS.txt aynı dosyalara bağlanır. Sonuçlar yayına alınan gerçek kaynak SHA’sı ve GitHub Actions kanıtlarıyla değerlendirilir.
 
-Android alpha APK debug imzalıdır. 0.14, 0.15 ve 0.16 sertifikaları farklıdır; bu APK önceki debug kurulumunun üzerine güncellenemez. Eski kurulumu kaldırmadan önce kişisel ilerleme yedeğini dışa aktar. Kalıcı imza ve sürümler arasında kurulum kabulü sonraki geliştirme işidir.
+Android imza kurulumu ertelendi; bu 0.17 masaüstü kapsamında yeni APK yoktur. Önceki 0.14/0.15/0.16 debug APK sertifikaları farklıdır; eski kurulumu kaldırmadan kişisel ilerleme yedeğini dışa aktar. Fiziksel Android, temiz Windows kurulumu, portable taşıma ve native sürümler arası veri koruyan kurulum test edilmiş sayılmaz.
 
-Bütün 479 başlık, bütün Drive/YKS ve 20 yıllık tüm ÖSYM henüz tamamlanmadı. Yeni içerik ve kalıcı Android imzası üzerinde çalışma sürüyor.
+Bütün479 başlık, tümDrive/MEB, her sorunun ayrıntılı rehberi ve son 20yılın tümÖSYM arşivi henüz tamamlanmadı. Kaynak yakın okuması, ürün kabulü ve yayın kanıtı repo belgelerinde ayrı tutulur.
