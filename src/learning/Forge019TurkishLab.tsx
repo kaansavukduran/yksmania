@@ -263,7 +263,7 @@ export default function Forge019TurkishLab({ lessonId }: { lessonId: string }) {
         </ul>
         <p>
           Kesik ok, seçili iddiada kanıtın yetmediğini veya seçili işlemde bir
-          bağın bozulduğunu gösterir. Ayrıntıyı kanıtta oku.
+          bağın geçerli olmadığını gösterir. Ayrıntıyı kanıtta oku.
         </p>
       </div>
       <fieldset>

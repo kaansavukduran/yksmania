@@ -14,6 +14,9 @@ P0 yardım: 20 tam kimlikli rehber/40 adım/60 şık gerekçesi bağımsız okun
 
 Android imza ayarı ertelendi: iş SKIPPED ise APK NOT BUILT. Masaüstü kapsamlı yayın dört paket + verified-run + SHA256SUMS içerebilir; açık APK kapsamı seçilirse metadata ve sabit sertifika da zorunlu. Collector yedi sentetik fixture kabul/ret denetimini geçti; bu gerçek APK üretim/imza kabulü değildir. Fiziksel Android, temiz kurulum ve native sürümler arasında veri koruması NOT TESTED.
 
+
+Son özellik dalı denetimi [43778995950](https://github.com/kaansavukduran/yksmania/actions/runs/43778995950):832 birim geçti;737 tarayıcı vakasının728’i geçti,9’u başarısız oldu. Sekizinde büyük Lexend yazıda bölünen model metni, birinde kalıcı kayıttan önce kontrol edilen onay kutusu test zamanlaması bulundu. Sayısal modeller, soru/rehber içerikleri ve kullanıcı yazısı değişmeden kısa anlam eşdeğerleri ve kaydın bitişini bekleyen kontrol onarıldı. Son yerel832/832 birim, sekiz sorunlu telefon ve iki deneme yardım akışı PASS. Tam737 ve paket işleri son commit üzerinde yeniden çalıştırılmadan yayına geçilmez; önceki başarısız koşu saklanır.
+
 ---
 
 ## Önceki yayımlanmış kabul

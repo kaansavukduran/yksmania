@@ -563,7 +563,7 @@ function ImpulseLab() {
     <Frame
       id={id}
       title="İtme ve çarpışma"
-      intro="Kuvvetler net kuvvettir; kütle sabit, gözlemci eylemsizdir. İkinci görünüm aynı doğru üzerinde yaklaşan iki cismin anlık çarpışma bilançosudur."
+      intro="Kuvvetler net kuvvettir; kütle sabit, gözlemci eylemsizdir. İkinci görünüm aynı doğru üzerinde yaklaşan iki cismin anlık çarpışma hesabıdır."
     >
       <Select
         label="İnceleme"
@@ -1318,7 +1318,7 @@ function CentreLab() {
     <Frame
       id={id}
       title="Parçayı çıkar, merkezi tahmin et"
-      intro="16 eş kare hücre aynı malzeme ve kalınlıktadır; her biri 1 kg. Koordinat başlangıcı sol-alt köşe. Hücreler çıkarılabilir; negatif kütle oluşturulmaz."
+      intro="16 eş kare hücre aynı malzeme ve kalınlıktadır; her biri 1 kg. Koordinat başlangıcı sol-alt köşe. Hücreler çıkarılabilir; negatif kütle yoktur."
     >
       <p>
         Bir numaraya dokunarak hücreyi çıkar veya ekle. Basılı düğme: hücre var.
@@ -1970,7 +1970,7 @@ function CoulombLab() {
     <Frame
       id={id}
       title="Hedefteki kuvvetleri vektörlerle topla"
-      intro="İki kaynak sabitlenmiştir; hareket simülasyonu değildir. Noktasal yükler, elektrostatik durum ve homojen doğrusal dielektrik kabul edilir. +x sağa, +y yukarı."
+      intro="İki kaynak sabittir; hareket modeli değildir. Noktasal yükler, durgun elektrik hâli ve homojen doğrusal dielektrik kabul edilir. +x sağa, +y yukarı."
     >
       <div className="physics018-controls">
         <Num
@@ -2057,7 +2057,7 @@ function CoulombLab() {
           </p>
         )}
         <p>
-          Karşılıklı etki–tepki ayrı cisimlerdedir; burada yalnız C üzerindeki
+          Etki ve tepki ayrı cisimlere etkir; burada yalnız C üzerindeki
           iki katkı toplanır.
         </p>
       </Result>
