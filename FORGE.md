@@ -16,6 +16,9 @@ Android imza kurulumu kullanıcı tarafından ertelendi. Eksik yapılandırma An
 
 Sonraki kaynak paketleri 349–408 için bağımsız içerik/model okumasından geçti; normal uygulama, çevrimdışı ve yayın kabulüne henüz eklenmedi. 409 sonrası öğretim çalışması ayrı dosyalarda sürer. Tam 479, bütün Drive/MEB ve 20 yıllık bütün ÖSYM tamamlanmadı; marka, eski kısa rehberler, tüm soruların ayrıntılı yardımı, doğrulanmış video ve resmî arşiv kapsamı açık işlerdir.
 
+
+Son özellik dalı denetimi [43778995950](https://github.com/kaansavukduran/yksmania/actions/runs/43778995950):832 birim geçti;737 tarayıcı vakasının728’i geçti,9’u başarısız oldu. Sekizinde büyük Lexend yazıda bölünen model metni, birinde kalıcı kayıttan önce kontrol edilen onay kutusu test zamanlaması bulundu. Sayısal modeller, soru/rehber içerikleri ve kullanıcı yazısı değişmeden kısa anlam eşdeğerleri ve kaydın bitişini bekleyen kontrol onarıldı. Son yerel832/832 birim, sekiz sorunlu telefon ve iki deneme yardım akışı PASS. Tam737 ve paket işleri son commit üzerinde yeniden çalıştırılmadan yayına geçilmez; önceki başarısız koşu saklanır.
+
 ---
 
 ## Önceki yayımlanmış kayıt
