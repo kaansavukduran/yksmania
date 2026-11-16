@@ -6,6 +6,10 @@ Altı paketin 300 kartı bağımsız tam içerik incelemesinden geçti; gerçek 
 
 TypeScript geçti. Sabit normal/prefix derlemeleri 271 gerekli çevrimdışı varlık içerir: 26.760.629 / 26.760.478 byte. En büyük dosya 2.865.964 byte, 5 MiB altındadır. İlk derlemede 17/17 gerçek UI ve native/prefix 93 aile geçti. Görsel okumada bulunan son MathQ7D düzeltmesi ve eksik favicon tanımı sonrası her iki derleme yenilendi; son derlemede native ve prefix 93 aile ile iki hedef UI kontrolü geçti. Son iki UI vakasında 701 yanıtın tamamı HTTP200, page exception/console warning/console error ve axe ihlali 0; düzeltilen formül gerçek telefon PNG’sinde okundu. Son prefix turunda eksik ağ isteği yoktur. Yerel UI kabulü iki koşunun birleşimidir: ilk derlemede 17, son derlemede iki hedef vaka. Son derlemede 17 vakanın tek turda yeniden koşulduğu iddia edilmez. Native ve prefix ise son derlemede tam tekrarlandı. CI/paket/yayın kapıları henüz başlamadı; bu yerel kabul onların yerine geçmez. Native uyarı sayısı runner tarafından ölçülmedi; renderer hatası 0. Yeni Android veya fiziksel cihaz kabulü yoktur.
 
+Vercel’de son 0.18.2 runtime’ın 25 dosyası normal TLS ile yerel son derlemeyle eşleşti ve ilk public 17/17 akış geçti. Yerel 0.18.1→0.18.2 güncellemesi üç ham IDB store’unu, belge baytlarını, notları, tekrar tarihlerini ve eski kâğıtları korudu; aktivasyonda otomatik state yazımı olmadı. İlk güncelleme denemesinde iki eşleşen güncelleme düğmesi nedeniyle test seçicisi durdu; Settings main kapsamına daraltılan seçiciyle yeni profilde bütün akış geçti.
+
+Eski thirty-unit-cases test metadatasının bitkiler ilk sorusunda eski ham metni beklediği ayrıca gerçek koşuda doğrulandı. Beklenti, onaylı soru görünümüne bağlandı; test gövdesi, süreleri, model/cevap/not ve çevrimdışı kayıt kontrolleri aynıdır. Eski beklentiyle bir FAIL, düzeltilmiş beklentiyle aynı vaka PASS kaydı korunur. Bu nedenle henüz tamamlanmamış 43896971064 CI turu iptal edildi; test metadata düzeltmesini içeren yeni kaynakta tam CI yeniden aranır. Uygulama ve iki son derlemenin baytları bu test düzeltmesinden etkilenmez.
+
 ---
 
 ## Önceki kaynak ve kabul kayıtları

@@ -1,3 +1,4 @@
+import { localizedQuestionView } from "../../src/domain/questionPresentation";
 import { forge011HistoryLessons } from "../../src/learning/forge011History";
 import { forge011BiologyBLessons } from "../../src/learning/forge011BiologyB";
 import { forge011ChemistryLessons } from "../../src/learning/forge011Chemistry";
@@ -19,15 +20,17 @@ export function nextUnit(
   return {
     id,
     title,
-    firstQuestion: [
-      ...forge011MathLessons,
-      ...forge011PhysicsLessons,
-      ...forge011ChemistryLessons,
-      ...forge011BiologyALessons,
-      ...forge011BiologyBLessons,
-      ...forge011HistoryLessons,
-      ...forge011TurkishLessons,
-    ].find((l) => l.id === id)!.questions[0].prompt.tr,
+    firstQuestion: localizedQuestionView(
+      [
+        ...forge011MathLessons,
+        ...forge011PhysicsLessons,
+        ...forge011ChemistryLessons,
+        ...forge011BiologyALessons,
+        ...forge011BiologyBLessons,
+        ...forge011HistoryLessons,
+        ...forge011TurkishLessons,
+      ].find((l) => l.id === id)!.questions[0],
+    ).prompt.tr,
     exploration,
     lab: `[data-forge011="${id}"]`,
     result: "[data-model-result]",
