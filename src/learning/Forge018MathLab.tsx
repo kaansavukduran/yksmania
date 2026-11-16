@@ -646,7 +646,7 @@ export default function Forge018MathLab({ lessonId }: { lessonId: string }) {
           onChange={(e) => change({ reason: e.target.value.slice(0, 120) })}
         />
         <p className="m018-caption">
-          {state.reason.length}/120 karakter. Kısa gerekçeni yaz; karşılaştırma
+          {state.reason.length}/120 karakter. Kısa gerekçeni yaz; kıyas
           sonucu gerekçenin otomatik doğruluk notu değildir.
         </p>
         <button
@@ -919,7 +919,7 @@ export default function Forge018MathLab({ lessonId }: { lessonId: string }) {
             <p>M, BC’nin orta noktası: {coord(center.oppositeA)}.</p>
             <p>
               {center.triangle
-                ? `|AG|=${fmt(distance018(a, center.centroid).distance)}, |GM|=${fmt(distance018(center.centroid, center.oppositeA).distance)} birim. Üç çizgi kenarortaydır.`
+                ? `|AG|=${fmt(distance018(a, center.centroid).distance)}, |GM|=${fmt(distance018(center.centroid, center.oppositeA).distance)} birim. Üç çizgi de birer kenarortay.`
                 : "Alan sıfır; çizgiler gerçek bir üçgenin kenarortay ağı olarak yorumlanmaz."}
             </p>
           </>
