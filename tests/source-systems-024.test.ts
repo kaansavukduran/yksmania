@@ -1,3 +1,4 @@
+import accepted024Questions from "./fixtures/source-stage-024-question-fingerprints.json";
 import tangentBefore from "./fixtures/source-stage-023-tangent-guide.json";
 import { createHash } from "node:crypto";
 import { expect, it } from "vitest";
@@ -34,7 +35,7 @@ it("retains4524 accepted questions and445 teaching records while adding564 compl
   const all = lessons.flatMap((l) => l.questions),
     byId = new Map(all.map((q) => [q.id, q]));
   expect(Object.keys(beforeQuestionFingerprints)).toHaveLength(4524);
-  expect(all).toHaveLength(5088);
+  expect(all.length).toBeGreaterThanOrEqual(5088);
   expect(byId.size).toBe(all.length);
   for (const [id, hash] of Object.entries(beforeQuestionFingerprints)) {
     expect(byId.has(id), id).toBe(true);
@@ -56,7 +57,9 @@ it("retains4524 accepted questions and445 teaching records while adding564 compl
     ).toBe(hash);
   }
   const prior = new Set(Object.keys(beforeQuestionFingerprints)),
-    fresh = all.filter((q) => !prior.has(q.id));
+    fresh = all.filter(
+      (q) => Object.hasOwn(accepted024Questions, q.id) && !prior.has(q.id),
+    );
   expect(fresh).toHaveLength(564);
   for (const q of fresh) {
     expect(q.options, q.id).toHaveLength(5);
@@ -96,12 +99,12 @@ it("retains4524 accepted questions and445 teaching records while adding564 compl
 });
 
 it("offers29 new guides and one preserved derivative guide extension and full built-in sheets for the first468 ordered headings", () => {
-  expect(lessons).toHaveLength(475);
-  expect(lessons.filter((l) => !l.tags.includes("soru-seti"))).toHaveLength(
-    469,
-  );
-  expect(lessonGuides.size).toBe(441);
-  expect(builtInCheatSheets.size).toBe(469);
+  expect(lessons.length).toBeGreaterThanOrEqual(475);
+  expect(
+    lessons.filter((l) => !l.tags.includes("soru-seti")).length,
+  ).toBeGreaterThanOrEqual(469);
+  expect(lessonGuides.size).toBeGreaterThanOrEqual(441);
+  expect(builtInCheatSheets.size).toBeGreaterThanOrEqual(469);
   const ids = new Set<string>();
   for (const topic of studyTopics.slice(438, 468)) {
     const lesson = topicLessons(topic.id).find(

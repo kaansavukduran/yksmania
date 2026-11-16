@@ -1,3 +1,17 @@
+# Kaynak 025 — son 11 sıralı başlığın öğretimi
+
+Belirsiz integral, belirli integral ve alan/Riemann; enerji, sürdürülebilirlik ve nanoteknoloji; tasavvufî yorumlar, güncel dinî meseleler, Hint/Çin dinleri; bitkilerde döllenme/çimlenme ve canlı–çevre ilişkileri gerçek kaynak okumalarıyla özgün öğretime dönüştürüldü. Yazar ve bağımsız okuyucuların metin sayfaları, kaynak şekilleri, anahtarsız soru çözümleri ve bilimsel/model sınırları ayrı özel kayıtlardadır. İndirme ve metin çıkarımı yakın okuma sayılmaz.
+
+249 bölüm/498 paragraf, 70 farklı çözümlü örnek ve 234 özgün soru vardır. Yeni kartların beş seçenek gerekçesi dağıtılan seçenekle eşleşir; bilgi, yöntem ve çözüm adımları ayrı öğretim görevleri taşır. Her soruda kendi verileri ve gerekli varsayımlar bulunur. Örneklerin çözülmüş verileri ölçme bankasında aynen tekrar edilmez.
+
+İşaretli integral ile geometrik alan, Riemann toplamında hata, çevrimde enerji kaybı ve yaşam döngüsü sınırı, geri kazanımın aşama girdisi, nanoboyutun tek başına özellik garantilememesi, çimlenmenin koşulları ve mutasyon–seçilim ayrımı açık tutulur. Din kültürü etkinliklerinde olay kaydı ve metnin kanıtı, verilenden daha geniş kişisel veya tarihsel sonuç yerine kullanılır. İbadet/inanç puanlanmaz. Deneysel veya sayısal modelin sınırlı oluşu anlatımdaki bilgiyle birlikte açıklanır.
+
+Son telefon metni onarımlarında bilimsel veri/banka/rehber ve sayısal model aynı kalır; kaynak kopyasının tersine alınmasıyla eşdeğerlik ayrı doğrulandı. Kanonik özel adlar ve özgün kullanıcı metni korunur. Ham PDF, Drive kimliği ve özel bağlantı yayımlanmaz. 479 başlık eşleşmesiyle bütün kaynak arşivinin bittiği iddia edilmez; güncel ürün/yayın ayrımı [QA](QA.md) kaydındadır.
+
+---
+
+## Önceki kaynak incelemeleri
+
 # Kaynak 024 — ayrıntılı öğretim, model ve bağımsız okuma
 
 Son sıralı otuz başlık, yedi ailede kaynak okuması ve bağımsız içerik/model denetiminden geçti: türev kuralları ve teğet; fotoelektrik, modern fizik ve teknoloji; bitki gövdesi/dokusu, hormon, hareket ve yaşam döngüleri; oksijenli organik bileşikler; din kültürü ve çoklu paragraf soruları. Türevdeki önceki öğretim arşivi korunup genişletildi. Toplam 577 bölüm, 177 çözümlü örnek ve 564 yeni özgün soru uygulama içindedir. Ham PDF veya sayfa indirme, yakın okuma ve şekil açma yerine sayılmaz; yazar ve bağımsız okuyucu kayıtları ayrı tutulur.

@@ -1,3 +1,19 @@
+# 0.18 kaynak adayı — 479 sıralı başlığın tamamı
+
+Doğrulanmış çalışma sırasındaki 479 başlığın tamamı uygulama içi anlatım ve bağımsız soruyla eşleşir. Güncel toplam 480 anlatım, 452 ayrıntılı rehber, 480 yerleşik kopya kağıdı ve 5322 özgün sorudur. Son 11 konuda 249 bölüm/498 paragraf, 70 çözümlü örnek/210 adım ve 64 hatırlama etkinliği vardır. Yeni 234 beş seçenekli kartın tümünde kademeli yardım bulunur: 654 gerçek adım ve seçeneklerine bağlı 1170 gerekçe. Ayrıntılı yardım toplam 1742/5322; 3580 eski kartta bütün yardım kademeleri henüz tamamlanacaktır. 28 eski kısa anlatım da derinleştirilmektedir.
+
+Önceki 5088 sorunun tüm alanları ve 475 öğretim kaydı hash ile korunur; kaydedilmiş 120/80 deneme kâğıtları, cevaplar, işaretler ve son zamanlar değişmez. TYT 120 soru/165 dakika, AYT Sayısal 80 soru/180 dakika doğru ders kotaları ve beş seçenekle sunulur. Başlık eşleşmesi her kaynağın bütün alt kazanımları, bütün eski soru yardımları ve 20 yıllık resmî ÖSYM arşivinin tamamlandığı anlamına gelmez.
+
+1307/1307 birim, TypeScript ve normal/prefix üretim derlemesi geçti; son mobil metin onarımları ayrıca dört ailenin toplam 66 hedef birim kontrolünden geçti. PWA 254 gerekli varlığı kapsar, tek dosya 5 MiB altındadır. Gerçek yerel Electron 85 ailede çevrimdışı kullanım/reload/aynı profilde süreç yeniden açılışını, /yksmania/ prefix 85 ailede çevrimdışı kullanım/reload akışını geçti; renderer hatası 0. Yeni 34 UI vakası son kabul birleşiminde kapsanır: önce 23 PASS/11 telefon FAIL, düzeltmede 32 PASS/2 FAIL; son iki telefon ve iki normal refakat vakası 4/4 PASS. Tek son 34 koşusu denmez. Tüm 1082 tarayıcı ve gerçek paketli Windows/Linux kapısı sonraki birleşik kaynakta ayrıca aranır; bu yerel kabul yayın kabulü değildir.
+
+Telefon onarımları seçilen yazı boyutunu korur. İç boşluklar ve listeler dar ekrana uyar; uzun model ifadeleri anlamı korunarak sadeleşir. Bilimsel veri, rehberler, bankalar, sayısal model, SVG anlamı ve kullanıcı gerekçeleri kopya değişikliklerinden etkilenmez. Kanonik özel adlarda kontrollü yumuşak tire ve tam erişilebilir ad korunur. Bozuk türde model kaydının eski cevabı tekrar açmaması için 11 gerçek IDB bozma/yeniden açma/ilk geçerli giriş kontrolü geçti.
+
+Öğrenci PDF veya kaynak yüklemez; öğretim, özetler, sorular ve denemeler uygulamadadır. Özel kaynaklar Git dışında tutulur. 9175 özel kimlik ve 9468 bağlantı ile taranan 378 metin yolunda eşleşme yoktur. Canlı sürüm hâlâ 0.17'dir: [Vercel](https://yksmania.vercel.app), [Pages](https://kaansavukduran.github.io/yksmania/) ve [Windows/Linux indirmeleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.17.0-alpha.1). Bu aday henüz yayımlanmadı. Android imzası ertelendi; yeni APK yayımlanmadı. Fiziksel cihaz, temiz kurulum, portable taşıma ve native sürümler arası yükseltme bu kabulün kapsamında değildir.
+
+---
+
+## Önceki kaynak ve kabul kayıtları
+
 # 0.18 kaynak adayı — ilk 468/479 sıralı başlık
 
 Güncel kaynak 469 anlatım, 441 ayrıntılı rehber, 469 yerleşik kopya kağıdı ve 5088 özgün soru içerir. Son paket, 29 yeni anlatım ve mevcut türev rehberine kayıpsız genişletme ekler: 577 bölüm, 1154 paragraf, 177 çözümlü örnek/537 adım ve 171 hatırlama etkinliği. Yeni 564 kartın tamamı beş seçeneklidir; 1661 çözüm adımı ve seçeneklere bağlı 2820 gerekçe sunar. Ayrıntılı yardım toplam 1508/5088 karttadır; 3580 eski kartta bütün kademeler hâlâ tamamlanacaktır.

@@ -1,3 +1,7 @@
+import { forge025MathTopics } from "./forge025Math";
+import { forge025ChemistryTopics } from "./forge025Chemistry";
+import { forge025HumanitiesTopics } from "./forge025Humanities";
+import { forge025BiologyTopics } from "./forge025Biology";
 import { forge024MathTopics } from "./forge024Math";
 import { forge024PhysicsTopics } from "./forge024Physics";
 import { forge024BiologyATopics } from "./forge024BiologyA";
@@ -199,6 +203,19 @@ const Forge024BiologyB = lazy(() => import("./Forge024BiologyBLab"));
 const Forge024Chemistry = lazy(() => import("./Forge024ChemistryLab"));
 const Forge024Humanities = lazy(() => import("./Forge024HumanitiesLab"));
 const Forge024Turkish = lazy(() => import("./Forge024TurkishLab"));
+const Forge025Math = lazy(() => import("./Forge025MathLab"));
+const Forge025Chemistry = lazy(() => import("./Forge025ChemistryLab"));
+const Forge025Humanities = lazy(() => import("./Forge025HumanitiesLab"));
+const Forge025Biology = lazy(() => import("./Forge025BiologyLab"));
+const source025Labs: {
+  topics: Record<string, string>;
+  Component: ComponentType<{ lessonId: string }>;
+}[] = [
+  { topics: forge025MathTopics, Component: Forge025Math },
+  { topics: forge025ChemistryTopics, Component: Forge025Chemistry },
+  { topics: forge025HumanitiesTopics, Component: Forge025Humanities },
+  { topics: forge025BiologyTopics, Component: Forge025Biology },
+];
 const source024Labs: {
   topics: Record<string, string>;
   Component: ComponentType<{ lessonId: string }>;
@@ -355,6 +372,9 @@ const continuationLabs: {
 export function VisualLab({ id }: { id: string }) {
   const { t } = useApp();
   if (questionOnly019.has(id) || id === "dna-replikasyonu-ileri") return null;
+  const Source025Lab = source025Labs.find(({ topics }) =>
+    Object.hasOwn(topics, id),
+  )?.Component;
   const Source024Lab = source024Labs.find(({ topics }) =>
     Object.hasOwn(topics, id),
   )?.Component;
@@ -393,7 +413,9 @@ export function VisualLab({ id }: { id: string }) {
   )?.Component;
   return (
     <Suspense fallback={<p role="status">{t("loading")}</p>}>
-      {Source024Lab ? (
+      {Source025Lab ? (
+        <Source025Lab key={id} lessonId={id} />
+      ) : Source024Lab ? (
         <Source024Lab key={id} lessonId={id} />
       ) : Source023Lab ? (
         <Source023Lab key={id} lessonId={id} />

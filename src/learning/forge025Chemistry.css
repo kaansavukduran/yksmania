@@ -1,0 +1,234 @@
+.c025-lab {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.c025-lab h3,
+.c025-lab h4,
+.c025-lab p {
+  margin: 0;
+}
+.c025-lab h4 {
+  font-size: 1.12em;
+}
+.c025-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1rem;
+  align-items: end;
+}
+.c025-field {
+  display: grid;
+  gap: 0.4rem;
+  min-width: 0;
+}
+.c025-field label,
+.c025-field > span {
+  font-weight: 650;
+}
+.c025-field select,
+.c025-field input:not([type="range"]) {
+  font: inherit;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 44px;
+  padding: 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  background: var(--surface);
+  color: var(--text);
+}
+.c025-field input[type="range"] {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  accent-color: var(--accent);
+  margin: 0;
+}
+.c025-field output {
+  font-variant-numeric: tabular-nums;
+}
+.c025-lab [data-model-result] {
+  display: grid;
+  gap: 0.8rem;
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+.c025-values {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0;
+  min-width: 0;
+}
+.c025-values > div {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 0.7rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--border);
+}
+.c025-values dt {
+  color: var(--muted);
+}
+.c025-values dd {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+.c025-figure {
+  margin: 0;
+  display: grid;
+  gap: 0.6rem;
+  min-width: 0;
+}
+.c025-figure figcaption {
+  line-height: 1.6;
+}
+.c025-figure svg {
+  display: block;
+  width: 100%;
+  max-width: 30rem;
+  max-height: 29rem;
+  justify-self: center;
+  overflow: visible;
+}
+.c025-figure svg text {
+  fill: var(--text);
+  font-size: 20px;
+}
+.c025-figure svg line {
+  stroke: var(--text);
+  stroke-width: 1.8;
+}
+.c025-outline {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 1.5;
+}
+.c025-fill {
+  fill: var(--accent);
+}
+.c025-stream {
+  stroke: var(--bg);
+  stroke-width: 1;
+}
+.c025-avoided {
+  fill: #82b6a0;
+  background: #82b6a0;
+}
+.c025-reused {
+  fill: #7da8cb;
+  background: #7da8cb;
+}
+.c025-recovered {
+  fill: var(--accent);
+  background: var(--accent);
+}
+.c025-disposed {
+  fill: #9e8aaa;
+  background: #9e8aaa;
+}
+.c025-legend {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.4rem;
+}
+.c025-legend li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+.c025-legend i {
+  display: inline-block;
+  width: 0.85rem;
+  height: 0.85rem;
+  flex-shrink: 0;
+  border: 1px solid var(--text);
+}
+.c025-cube {
+  fill: var(--surface-2);
+  stroke: var(--text);
+  stroke-width: 1.5;
+}
+.c025-small-cube {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 1;
+}
+.c025-boundary {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 1;
+}
+.c025-interior {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 1.5;
+}
+.c025-scope,
+.c025-proof,
+.c025-feedback {
+  line-height: 1.7;
+}
+.c025-prediction {
+  display: grid;
+  gap: 0.8rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+.c025-lab button {
+  min-height: 44px;
+  white-space: normal;
+  padding: 0.65rem 0.9rem;
+}
+.c025-feedback {
+  padding: 0.8rem;
+  border-left: 3px solid var(--accent);
+}
+.c025-lab select:focus-visible,
+.c025-lab input:focus-visible,
+.c025-lab button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+@media (max-width: 420px) {
+  .c025-controls {
+    grid-template-columns: 1fr;
+  }
+  .c025-lab [data-model-result] {
+    padding: 0.75rem;
+  }
+  .c025-values > div {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.25rem;
+  }
+  .c025-figure svg text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 520px) {
+  .c025-lab [data-model-result] {
+    padding-inline: 6px;
+  }
+  .c025-feedback {
+    padding-inline: 6px;
+  }
+  .c025-field select,
+  .c025-field input:not([type="range"]),
+  .c025-lab button {
+    padding-inline: 6px;
+  }
+  .c025-legend li {
+    display: block;
+  }
+  .c025-legend i {
+    margin-inline-end: 6px;
+  }
+}

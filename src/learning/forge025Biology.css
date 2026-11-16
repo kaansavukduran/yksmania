@@ -1,0 +1,248 @@
+.b025-lab {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+}
+.b025-lab p,
+.b025-lab h3,
+.b025-lab h4 {
+  margin: 0;
+}
+.b025-lab p,
+.b025-lab li {
+  line-height: 1.65;
+}
+.b025-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1rem;
+  align-items: end;
+}
+.b025-field {
+  display: grid;
+  gap: 0.4rem;
+  min-width: 0;
+}
+.b025-field > label,
+.b025-field > span:first-child {
+  font-weight: 650;
+}
+.b025-field select,
+.b025-field input {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+}
+.b025-choice {
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  color: var(--muted);
+}
+.b025-toggle {
+  min-width: 44px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 44px;
+}
+.b025-toggle input {
+  width: 22px;
+  height: 22px;
+  flex: 0 0 auto;
+}
+.b025-lab button {
+  min-height: 44px;
+  padding: 0.65rem;
+  white-space: normal;
+  font: inherit;
+}
+.b025-lab [data-model-result] {
+  display: grid;
+  gap: 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 0.7rem;
+  padding: 1rem;
+  min-width: 0;
+}
+.b025-evidence,
+.b025-ledger {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+.b025-ledger {
+  display: grid;
+  gap: 0.4rem;
+}
+.b025-scope,
+.b025-proof {
+  overflow-wrap: anywhere;
+  line-height: 1.65;
+}
+.b025-plot {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0;
+  min-width: 0;
+}
+.b025-plot figcaption {
+  font-weight: 650;
+}
+.b025-plot svg {
+  display: block;
+  width: 100%;
+  max-width: 25rem;
+  height: auto;
+  justify-self: center;
+  overflow: visible;
+}
+.b025-plot text {
+  font:
+    20px system-ui,
+    sans-serif;
+  fill: var(--text);
+}
+.b025-line {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.b025-coat {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 3;
+}
+.b025-maternal {
+  fill: var(--surface);
+  stroke: var(--accent);
+  stroke-width: 3;
+}
+.b025-paternal {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 2;
+  stroke-dasharray: 3 2;
+}
+.b025-embryo {
+  fill: var(--surface);
+  stroke: var(--accent);
+  stroke-width: 4;
+}
+.b025-endo {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 4;
+  stroke-dasharray: 6 3;
+}
+.b025-soil {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 2;
+  stroke-dasharray: 4 4;
+}
+.b025-root {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 4;
+}
+.b025-shoot {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 5;
+}
+.b025-leaf {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.b025-A {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 3;
+}
+.b025-B {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 3;
+  stroke-dasharray: 6 4;
+}
+.b025-dotA {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 1.5;
+}
+.b025-dotB {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.b025-empty {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.b025-risk,
+.b025-yield {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 1;
+}
+.b025-drought {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 2;
+  stroke-dasharray: 3 2;
+}
+.b025-compare {
+  display: grid;
+  gap: 0.8rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+.b025-feedback {
+  border-left: 3px solid var(--accent);
+  padding: 0.75rem;
+}
+.b025-field select:focus-visible,
+.b025-field input:focus-visible,
+.b025-toggle input:focus-visible,
+.b025-lab button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+@media (max-width: 420px) {
+  .b025-lab [data-model-result] {
+    padding: 0.7rem;
+  }
+  .b025-controls {
+    grid-template-columns: 1fr;
+  }
+  .b025-evidence,
+  .b025-ledger {
+    padding-left: 0;
+    list-style-position: inside;
+  }
+}
+
+@media (max-width: 600px) {
+  .b025-lab [data-model-result],
+  .b025-feedback {
+    padding-inline: 4px;
+  }
+  .b025-lab button,
+  .b025-field select,
+  .b025-field input {
+    padding-inline: 6px;
+  }
+  .b025-evidence,
+  .b025-ledger {
+    padding-inline-start: 4px;
+    list-style-position: inside;
+  }
+}

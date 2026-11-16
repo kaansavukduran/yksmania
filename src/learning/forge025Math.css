@@ -1,0 +1,178 @@
+.math025-lab {
+  padding: clamp(16px, 3vw, 28px);
+  margin-block: 24px;
+  border-block: 1px solid var(--border);
+  background: var(--surface);
+  min-width: 0;
+}
+.math025-lab h3 {
+  margin-block: 0 16px;
+}
+.math025-lab p {
+  line-height: 1.75;
+}
+.math025-controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-block: 24px;
+}
+.math025-controls label,
+.math025-prediction label {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+}
+.math025-range input[type="range"] {
+  width: 100%;
+  margin: 0;
+  min-height: 44px;
+  accent-color: var(--accent);
+}
+.math025-lab select,
+.math025-lab textarea {
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  box-sizing: border-box;
+  font: inherit;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+}
+.math025-lab svg {
+  display: block;
+  width: min(100%, 540px);
+  height: auto;
+  margin: 24px auto;
+  overflow: visible;
+  color: var(--text);
+}
+.math025-lab svg text {
+  fill: currentColor;
+  font-size: 19px;
+  font-family: inherit;
+}
+.math025-axis {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+}
+.math025-window {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 1;
+}
+.math025-curve {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2.5;
+  vector-effect: non-scaling-stroke;
+}
+.math025-point {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 1.5;
+}
+.math025-open {
+  fill: var(--surface);
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+.math025-result {
+  padding-block: 12px;
+  border-block: 1px solid var(--border);
+}
+.math025-result p {
+  margin-block: 14px;
+}
+.math025-prediction {
+  display: grid;
+  gap: 20px;
+  padding-block: 24px;
+}
+.math025-prediction button {
+  justify-self: start;
+  min-height: 48px;
+}
+.math025-feedback {
+  border-inline-start: 3px solid var(--accent);
+  padding-inline: 16px;
+  margin: 0;
+}
+.math025-lab :is(input, select, textarea, button):focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+@media (max-width: 700px) {
+  .math025-controls {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .math025-lab {
+    padding-inline: 4px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .math025-lab * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.math025-condition {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+  stroke-dasharray: 8 5;
+  vector-effect: non-scaling-stroke;
+}
+.math025-area {
+  fill: var(--accent);
+  opacity: 0.14;
+}
+.math025-rectangle {
+  fill: var(--accent);
+  fill-opacity: 0.18;
+  stroke: var(--text);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+.math025-negative {
+  stroke-dasharray: 4 3;
+  fill-opacity: 0.08;
+}
+.math025-probe {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+  stroke-dasharray: 7 4;
+  vector-effect: non-scaling-stroke;
+}
+
+.math025-plot {
+  width: min(100%, 540px);
+}
+.math025-pieces,
+.math025-details ol {
+  padding-inline-start: 1.4em;
+}
+.math025-pieces li,
+.math025-details li {
+  margin-block: 12px;
+  line-height: 1.7;
+}
+.math025-details summary {
+  cursor: pointer;
+  min-height: 44px;
+  padding-block: 12px;
+}
+
+@media (max-width: 700px) {
+  .math025-pieces, .math025-details ol {
+    padding-inline-start: 0;
+    list-style-position: inside;
+  }
+}
