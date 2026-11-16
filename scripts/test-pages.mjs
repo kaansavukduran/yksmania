@@ -1,3 +1,4 @@
+import { forge021SmokeCases, runForge021SmokeCase } from "./forge021-smoke-cases.mjs";
 import {forge020SmokeCases,runForge020SmokeCase} from "./forge020-smoke-cases.mjs";
 import {
   forge019SmokeCases,
@@ -444,8 +445,11 @@ try {
   expect(forge020SmokeCases).toHaveLength(5);
   const forge020Snapshots=[];
   for(const unit of forge020SmokeCases){forge020Snapshots.push(await runForge020SmokeCase(page,nav,unit));cases.push(unit.id);}
+  expect(forge021SmokeCases).toHaveLength(7);
+  const forge021Snapshots=[];
+  for(const unit of forge021SmokeCases){forge021Snapshots.push(await runForge021SmokeCase(page,nav,unit));cases.push(unit.id);}
 
-  expect(cases).toHaveLength(54);
+  expect(cases).toHaveLength(61);
   await page.getByRole("button", { name: "Sorulara geç", exact: true }).click();
   await expect(page.locator(".answer")).toHaveCount(5);
   await page.locator(".answer").first().click();
@@ -661,6 +665,8 @@ try {
     forge018FamiliesOfflineHtmlStateAndReload: forge018Snapshots.map(
       (item) => item.id,
     ),
+    forge021FamiliesOfflineHtmlStateAndReload: forge021Snapshots.map(item=>item.id),
+    forge021ExplorationWithoutLearningCredit: "PASS",
     forge020FamiliesOfflineHtmlStateAndReload: forge020Snapshots.map(item=>item.id),
     forge020ExplorationWithoutLearningCredit: "PASS",
     forge019FamiliesOfflineHtmlStateAndReload: forge019Snapshots.map(

@@ -1,3 +1,23 @@
+# 0.18.0 kaynak adayı — 349–378. başlıklar
+
+Güncel kaynakta 380 anlatım,352 ayrıntılı rehber,380 yerleşik özet ve 3650 özgün soru var; ilk 378/479 başlık anlatım+soruyla eşleşir. Bu paket 30 yeni anlatım ve 310 yeni beş seçenekli soru ekler. Kaynak/ikinci okuyucu kabulü ile ürün/yayın kabulü ayrıdır. Henüz 0.18 üretim yayını yoktur.
+
+Yeni AYT karma 80 soru/180 dakika;40 matematik-geometri,14 fizik,13 kimya,13 biyoloji. Tam dağılım ancak her kota beş seçenekli kartlarla doluyorsa sunulur; sekiz ayrı başlangıç tohumu bunu doğrular. TYT 115 soruluk kısa pratik, Din kotası eksikliğiyle açıkça kalır. Eski 115/55 soruluk deneme kâğıtları, cevapları, işaretleri ve süreleri aynen korunur. Branş pratikleri ve eski kısa öğretim kartları kaldırılmaz.
+
+Yeni 310 sorunun 50’si ayrıntılı kademeli rehber taşır; önceki 20 özgün rehberle toplam 70/3650 olur. Diğer sorular mevcut ipucu/açıklamasını kullanır; hepsinde tam rehber var denmez. Bu 50 kartta bilgi/yöntem ve gerçek 150 çözüm adımı arasında normalize metin tekrarı 0; bu mekanik tarama pedagojik etki kanıtı değildir.
+
+926/926 birim, TypeScript/modül yolu ve normal/prefix derleme geçti. İlk 61 yeni tarayıcı vakası 37 PASS/24 FAIL; gerçek uzun sözcük/dokunma sorunları ve üç test seçici/işaret/ölçek beklentisi onarıldı. İkinci 61 koşusu 59 PASS/2 eski metin beklentisi FAIL; bu iki fotosentez vakası sayısal beklentiler korunarak doğru yeni ifadeyle ayrıca PASS. Bütün 61 vaka bu kabul birleşiminde kapsanır; tek son 61 koşusu denmez.798 tam tarayıcı vakası toplanır; tam uzak koşu henüz yapılmadı.
+
+61 ailelik yerel Electron çevrimdışı etkileşim, kayıt/reload, aynı profilde süreç yeniden açılışı ve Pages prefix ilk-offline kabulü geçti; renderer hatası 0. Sonradan 0.17’nin sekiz eski model metni ve kalıcı onay kutusu test onarımı bu dala alındı; son kaynak/paket kabulü ayrıca aranır. Bu, fiziksel cihaz veya native sürümler arasında yükseltme değildir. PWA 202 gerekli varlığı kapsar;5 MiB sınırı korunur.
+
+Sonraki 379–408 kaynak paketinde 390 soru hazırlanmıştı; gerçek tarama 280’inde ayrıntılı rehber,110’unda eksik rehber gösterdi. Matematik 80 ve Fizik 30 rehberi bu bilinen açık için geliştiriliyor.409–438 paketinde örnek–banka kopyası, tekrar eden yardım adımı ve cevap konumu örüntüsü ayrıca onarılıyor.439 sonrası kaynak üretimi sürer. Sayı başlık tamamlanması, tüm alt beceriler veya tüm Drive/MEB/20 yıl ÖSYM arşivi demek değildir.
+
+Android imza ayarı kullanıcı tarafından ertelendi; yeni APK hazırlanmış sayılmaz. Web ve masaüstü çalışması sürer. Özel PDF/kimlik/anahtar depoya konulmaz; öğrenci kaynak yüklemez.
+
+---
+
+## Önceki0.17 aday checkpoint'i
+
 # 0.17.0 adayı — kabul kapıları ayrı tutulur
 
 Henüz yeni üretim yayını yoktur. Son bütünleşik birim koşusu 832/832 (106 dosya) PASS; TypeScript/modül yolu ve normal/prefix üretim derlemeleri PASS. PWA’nın 187 zorunlu varlığı önbellekte, 5 MiB tek varlık sınırı korunur. 737 E2E toplanır; tam uzak koşu ve gerçek paketli Windows/Linux kabulü bekler.

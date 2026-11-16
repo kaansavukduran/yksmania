@@ -1,3 +1,19 @@
+# Sonraki kabul sırası
+
+0.17 kaynağında ikinci özellik dalı CI 43784303695 sürüyor; önceki 737 koşusunda 728 PASS/9 FAIL ve yerel dar onarımlar kaydedildi. Geçmeden main/yayın yapılmaz.
+
+0.18 kaynak adayı ilk 378 başlıkta 380 anlatım/3650 soru,926 birim ve yeni 61 model ailesi normal/mobil kabul birleşimi ile 61-aile yerel native/Pages geçti. Son kaynaktaki bütün 798 tarayıcı ve paket doğrulaması ayrı kapıdır.
+
+379–408 paketi 390 soru:110 yeni ayrıntılı rehber açığı kapanınca bütünleştir.409–438 için 30 başlıkta kaynak/model/öğretim incelemesi sürüyor.439–468 ve 469–479 ayrı sahipli kaynak paketleridir; türevin eski rehberi/soruları kayıpsız genişletilecek. Sonra eski 28 kısa rehber, bütün soru rehberleri, örnek–test bağımsızlığı, kaynak alt beceri matrisi, video ve resmî arşiv açıkları kapatılır.
+
+Yeni öğretim örneği bankanın aynı pasaj/veri/şıklı çözülmüş sorusu olmayacak. Yardım adımı önceki bilgi/yöntemi kopyalayarak sayı doldurmayacak. Yeni cevap konumları sabit döngülü olmayacak; seçenek/gerekçe/anahtar anlamsal eşleşmesi bağımsız denetlenecek. Eski kayıt ve soru kâğıtları yeniden yazılmaz.
+
+Android imza ayarı ertelendi; temiz/taşınan/native sürümler arası fiziksel kabul ayrıca bekler. Bütün 479 veya bütün kaynak arşivi bitmiş gibi sunulmaz.
+
+---
+
+## Önceki çalışma kaydı
+
 # 0.17 adayı ve kalan çalışma
 
 Önce son 0.17 adayının 350 anlatım/322 ayrıntılı rehber/350 özet/3340 soru kapsamını gerçek tarayıcı, paketli Windows/Linux, Pages ve yayın kapılarıyla kapat. İlk 348/479 başlık eşleşir; bütün arşiv tamamlandı sayılmaz. 832 birim ve ilk yerel 54 aile native/Pages/web-yükseltme kabulü geçti; gerçek son gözlemde bulunan merkez noktası bölge hatası dar hesap onarımıyla düzeltildi. Tam 737 tarayıcı koşusu ayrı kapıdır.

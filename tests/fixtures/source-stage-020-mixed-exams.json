@@ -1,0 +1,3167 @@
+[
+  {
+    "id": "mixed-tyt",
+    "title": "TYT karma denemesi",
+    "exam": "TYT",
+    "kind": "mixed",
+    "items": [
+      {
+        "id": "p1",
+        "lessonId": "paragraf",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Paragrafta ana düşünce",
+        "prompt": "Metnin ana düşüncesi nedir?",
+        "passage": "Bir kitabı bitirmek, onu anlamakla aynı şey değildir. Okur bazen bir sayfada durup kendi sorularını kurduğunda metinle daha güçlü bir ilişki kurar. Okumanın değeri, yalnız çevrilen sayfalarda değil, kurulan düşüncelerde de aranmalıdır.",
+        "options": [
+          "Okumanın değeri düşünsel etkileşimde de bulunur.",
+          "Bütün kitaplar yavaş okunmalıdır.",
+          "Kitap bitirmek gereksizdir."
+        ],
+        "answer": 0,
+        "explanation": "Metin sayfa sayısına ek olarak düşünsel etkileşimi vurgular; bitirmeyi gereksiz saymaz.",
+        "hint": "Metnin son cümlesi hangi ilişkiyi kuruyor?",
+        "guidance": {
+          "knowledge": [
+            "Ana düşünce, yazarın metnin bütünüyle savunduğu temel yargıdır. Bir ayrıntı, bütün metnin savı yerine geçirilmemelidir."
+          ],
+          "strategy": "İlk cümledeki bitirmek–anlamak ayrımını, son cümledeki yalnız değil…de yapısıyla birleştir.",
+          "steps": [
+            "İlk cümle bir kitabı bitirmek ile anlamanın aynı şey olmadığını söyler; bitirmeyi tümden reddetmez.",
+            "Son cümlede değerin düşünsel etkileşimde de aranması istenir. Seçenek bu ek boyutu kapsamalıdır."
+          ],
+          "optionReasons": [
+            "Düşünsel etkileşimde de bulunur ifadesi son cümledeki ek vurguyu korur; doğrudur.",
+            "Bütün kitaplar ve yavaş okunmalıdır genellemeleri metinde savunulmaz.",
+            "Kitap bitirmek gereksizdir yargısı metnin kapsamını aşar; bitirmek ile anlamak yalnızca ayırt edilir."
+          ],
+          "commonError": "Yalnız…de ifadesini okuyup bir unsuru tümden gereksiz ilan etme.",
+          "check": "Seçtiğin yargı hem ilk cümledeki ayrımı hem soru kurmaya ilişkin orta cümleyi hem de son cümledeki vurguyu açıklayabilmelidir."
+        }
+      },
+      {
+        "id": "yardimci-dusunce-019-1",
+        "lessonId": "yardimci-dusunce",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Yardımcı düşünce: her yargıya kanıt bul",
+        "prompt": "Bu parçadan hangisi kesin olarak çıkarılabilir?",
+        "passage": "Mahalle kütüphanesi 1990’da açıldı. Yenileme giderlerinin yalnız yarısını mahalle sakinleri, kalanını belediye karşıladı. Yenilemeden sonra çocuklar için haftalık okuma buluşmaları başladı.",
+        "options": [
+          "Kütüphane daha önce hiç yenilenmemiştir.",
+          "Çocuklara yönelik düzenli bir etkinlik başlatılmıştır.",
+          "Kütüphane kentin en eski kütüphanesidir.",
+          "Yenilemenin bütün giderlerini mahalle sakinleri karşılamıştır.",
+          "Buluşmalara bütün çocuklar katılmıştır."
+        ],
+        "answer": 1,
+        "explanation": "Haftalık buluşmalar, tekrar eden bir etkinliğin başladığını açıkça gösterir. Kuruluş yılı kentin en eskisi olmayı, buluşma düzeni de bütün çocukların katıldığını kanıtlamaz. Giderlerin yalnız yarısı mahalleliye aittir; önceki yenilemeler hakkında bilgi verilmemiştir.",
+        "hint": "Haftalık sözünün hangi tür düzeni bildirdiğine bak."
+      },
+      {
+        "id": "ikiye-bolme-019-1",
+        "lessonId": "ikiye-bolme",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Paragrafı ikiye bölme: yeni yönü bul",
+        "prompt": "Bu parça iki paragrafa ayrılsa ikinci paragraf hangi cümleyle başlar?",
+        "passage": "(I) Kâğıt belgeler nemden korunmalıdır. (II) Bu amaçla dolaplarda nem izlenir. (III) Ölçümler yıpranma riskini erken gösterir. (IV) Dijital kataloglar belgeye erişimi kolaylaştırır. (V) Yıl etiketleri aramayı hızlandırır.",
+        "options": [
+          "II.",
+          "III.",
+          "V.",
+          "I.",
+          "IV."
+        ],
+        "answer": 4,
+        "explanation": "I–III fiziksel koruma ve ölçümü, IV–V belgeye erişimi anlatır. Erişim yönü IV ile başlar; bu nedenle ilk yeni cümle IV’tür. III son eski cümledir. V’den başlamak ise erişimi tanıtan IV’ü eski blokta bırakır.",
+        "hint": "Fiziksel korumadan belgeyi bulmaya geçilen ilk cümleyi ara."
+      },
+      {
+        "id": "akisi-bozan-cumle-019-1",
+        "lessonId": "akisi-bozan-cumle",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Akışı bozan cümle: çıkar ve bağı denetle",
+        "prompt": "Bu parçanın akışını hangi cümle bozmaktadır?",
+        "passage": "(I) Bahçede yağmur suyu biriktiriliyor. (II) Su kapalı bir kapta tutuluyor. (III) Okul sergisi cuma günü açılacak. (IV) Bu kap haftada bir temizleniyor. (V) Biriken su çiçekleri sulamakta kullanılıyor.",
+        "options": [
+          "IV.",
+          "V.",
+          "III.",
+          "I.",
+          "II."
+        ],
+        "answer": 2,
+        "explanation": "III serginin açılışını bildirir; suyu toplama, temiz tutma ve kullanma açıklamasına katkı yapmaz. Çıkarıldığında II’deki kap IV’teki bu kap sözüne bağlanır, V kullanımı tamamlar. II’yi silmekse öncülü kaybettirir ve sergi sapmasını da bırakır.",
+        "hint": "Suyu toplama ve kullanma çizgisine katkı vermeyen cümleyi ara."
+      },
+      {
+        "id": "paragraf-ana-dusunce-ileri-019-1",
+        "lessonId": "paragraf-ana-dusunce-ileri",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Ana düşünce: ileri kanıt uygulamaları",
+        "prompt": "Bu parçanın ana düşüncesi hangisidir?",
+        "passage": "Arşivde belgeyi yalnız saklamak yetmez. Açık yıl etiketleri aramayı hızlandırır; kataloglar farklı yerlerden taramayı sağlar. Belgeyi koruma işi, ona düzenli erişim sunulduğunda işlevini tamamlar.",
+        "options": [
+          "Arşivlerde belgeyi korumak, ona düzenli erişim sağlamakla tamamlanmalıdır.",
+          "Bütün arşiv belgeleri aynı yılda üretilmiştir.",
+          "Yıl etiketleri katalogların yerini tamamen almalıdır.",
+          "Arşivlerde yalnız dijital belgeler tutulmalıdır.",
+          "Belge sayısı arttıkça araştırma her koşulda kolaylaşır."
+        ],
+        "answer": 0,
+        "explanation": "Metin yalnız saklamayı yetersiz görür; etiket ve katalog örnekleri erişim imkânını somutlaştırır. Ana düşünce koruma ile erişimin birlikte düşünülmesidir. Aynı yıl, yalnız dijital belge, katalogları kaldırma ve her koşulda kolaylaşma iddiaları metinde yoktur.",
+        "hint": "Etiket ve katalog örneklerinin hizmet ettiği ortak yargıyı bul."
+      },
+      {
+        "id": "deyimler-ve-atasozleri-018-1",
+        "lessonId": "deyimler-ve-atasozleri",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Deyimler ve atasözleri: sözü olaya bağla",
+        "prompt": "Bu bağlamdaki “göz kulak olmak” sözü hangi anlama gelir?",
+        "passage": "Aile bir haftalığına şehir dışına çıktı. Komşuları saksıları suladı, toprağı denetledi ve çiçeklere göz kulak oldu.",
+        "options": [
+          "Bir fırsatı son anda kaçırmak.",
+          "Gözetmek ve ilgilenmek.",
+          "Bir şeyi fark etmeden geçmek.",
+          "Birinin değerini yitirmesi.",
+          "Görme ve işitme organı yapmak."
+        ],
+        "answer": 1,
+        "explanation": "Komşu bitkileri sulayıp gözetmiştir; göz kulak olmak burada ilgilenmek anlamında bütünüyle kullanılır. Fark edilmeme gözden kaçmak, değer yitirme gözden düşmekle ilişkilidir; organ sözcükleri tek tek toplanmaz.",
+        "hint": "Komşunun bitkilere ne yaptığını ve verilen bakım ayrıntılarını birlikte oku."
+      },
+      {
+        "id": "cumlede-anlam-018-1",
+        "lessonId": "cumlede-anlam",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Cümlede anlam: ilişkiyi ve kapsamı izle",
+        "prompt": "Bu cümlede dosyayı açma ile kaydı bulma arasındaki ilişki için hangisi kesin söylenebilir?",
+        "passage": "Ece eski kaydı bulmak için arşiv dosyasını açtı.",
+        "options": [
+          "Kaydın bulunduğu kesin olarak söylenmiştir.",
+          "Kaydın hiçbir zaman bulunamayacağı kanıtlanmıştır.",
+          "Kaydı bulmak, daha önce gerçekleşmiş açma nedenidir.",
+          "Hiçbir amaç veya hedef belirtilmemiştir.",
+          "Dosya hedefi gerçekleştirmek amacıyla açılmıştır; kaydın bulunduğu ayrıca bildirilmemiştir."
+        ],
+        "answer": 4,
+        "explanation": "Kaydı bulmak için ifadesi hedefi, dosyayı açmak yapılan eylemi verir. Cümle aramayı başlatmayı bildirir; bulunma veya bulunamama sonucu ayrıca söylenmez. Amaçtan başarı da zorunlu başarısızlık da çıkarılmamalıdır.",
+        "hint": "Amaç ile amaca ulaşmanın sonucunu ayrı yaz."
+      },
+      {
+        "id": "paragrafa-giris-018-1",
+        "lessonId": "paragrafa-giris",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Paragrafa giriş: cümleleri bir bütüne bağla",
+        "prompt": "Bu metnin başına, konuyu ve anlatıcıyı en uygun biçimde açan cümle hangisidir?",
+        "passage": "İçeride bekleyenler ellerindeki eski fotoğrafları birbirine gösteriyordu. Ben de dedemin fotoğrafını çantamdan çıkardım.",
+        "options": [
+          "O da aynı şeyi tekrar yaptı.",
+          "Sonuç olarak bu görüş yanlıştır.",
+          "Sabah arşiv kapısında sıraya girdim.",
+          "Böylece onu bir daha görmedim.",
+          "Bu yüzden hepsini kabul etmedik."
+        ],
+        "answer": 2,
+        "explanation": "Arşiv kapısında sıraya girme, devamındaki bekleyenleri, fotoğrafları ve ben de sözünü hazırlayan bağımsız sahnedir. Diğer seçeneklerde bu, o veya böylece için açıklanmamış öncül bulunur ve verilen sahneye uygun konu açılmaz.",
+        "hint": "Devamın yerini, kişilerini ve anlatıcısını hazırlayan bağımsız sahneyi ara."
+      },
+      {
+        "id": "f017-anlatim-bozukluklari-1",
+        "lessonId": "anlatim-bozukluklari",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Anlatım bozuklukları: amacı koruyarak onar",
+        "prompt": "Verilen kayıtta hangi işlem, amaçlanan tekrar bilgisini koruyarak gereksiz yinelemeyi giderir?",
+        "passage": "Yazar, yalnız kitabı bir kez daha okuduğunu anlatan kısa ve nötr bir kayıt yazacaktır: “Kitabı yeniden tekrar okudum.” Burada sanatsal vurgu veya iki ayrı tekrar aşaması amaçlanmıyor.",
+        "options": [
+          "Okudum sözcüğünü çıkarmak.",
+          "Kitabı sözcüğünü çıkarmak.",
+          "Yeniden sözcüğünü çıkarmak.",
+          "Okudum yerine okuyacağım yazmak.",
+          "Kitabı yerine kitaba yazmak."
+        ],
+        "answer": 2,
+        "explanation": "Yeniden çıkarıldığında Kitabı tekrar okudum cümlesi bir kez daha okumayı anlatmaya devam eder. Tekrar da başka bir düzeltmede çıkarılabilirdi; fakat bu seçenekler arasında yalnız yeniden çıkarma işlemi amaçlanan bilgiyi korur. Bağlam özellikle nötr bildirimdir; bütün tekrarlar veya vurgular evrensel olarak hata sayılmaz.",
+        "hint": "İki zarfın aynı bir kez daha bilgisini taşıdığı koşulunu kullan."
+      },
+      {
+        "id": "f017-sozcukte-anlam-1",
+        "lessonId": "sozcukte-anlam",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Sözcükte anlam: bağlamı ve ilişkiyi gör",
+        "prompt": "Bu parçada soğuk sözcüğünün iki kullanımı için hangi açıklama doğrudur?",
+        "passage": "Ece soğuk suyu bir bardağa doldurdu. Konuğu kapıda karşılayan görevlinin soğuk tavrı ise onu şaşırttı; görevli ilgisiz ve mesafeliydi.",
+        "options": [
+          "İki kullanım arasında mutlaka sesteşlik vardır; hiçbir anlam bağı yoktur.",
+          "İki kullanımda da yalnız fiziksel sıcaklık ölçülür.",
+          "İlkinde mecaz, ikincide sıcaklıkla ilgili gerçek kullanım vardır.",
+          "İlkinde fiziksel sıcaklıkla ilgili gerçek, ikincide mesafeli tavır bildiren mecaz anlam vardır.",
+          "İkisinde de bir bilim dalına özgü özel kavramı anlatan terim vardır."
+        ],
+        "answer": 3,
+        "explanation": "Soğuk su fiziksel sıcaklığı belirtir ve gerçek anlamdadır. Soğuk tavırda sıcaklık ölçülmez; mesafeli ve ilgisiz davranış mecaz yoluyla anlatılır. Aynı sözcüğün ilgi kurularak genişleyen bu kullanımları, anlam bağı olmayan iki sesteş sözcükle eşitlenmez.",
+        "hint": "Birinde suyun sıcaklığını, diğerinde kişinin ilgisiz tavrını anlatan bağlam verilmiştir."
+      },
+      {
+        "id": "f016-yazim-kurallari-1",
+        "lessonId": "yazim-kurallari",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Yazım kuralları: anlamdan doğru biçime",
+        "prompt": "“Çocuklar bahçede oynuyor; öğretmen de onları izliyor.” cümlesindeki bahçede ve öğretmen de biçimleri için hangisi doğrudur?",
+        "options": [
+          "İlk de bulunma durum ekidir ve bitişik; ikinci de ekleme bildiren bağlaçtır ve ayrı yazılır.",
+          "İki de de bağlaçtır ve ayrı yazılmalıdır.",
+          "İlk de bağlaçtır, ikinci de bulunma ekidir.",
+          "İkinci de öğretmen sözünün özel ad olmasına bağlı olarak ayrılır.",
+          "İlk de her durumda bahçe de biçiminde yazılmalıdır."
+        ],
+        "answer": 0,
+        "explanation": "Oynama eyleminin yeri bahçedir: bahçe-de tek sözcüktür. Öğretmen de sözünde de, öğretmeni eklenen kişi olarak bağlar; ayrı yazılan bağlaçtır. Sözcüğü silme denemesi yerine iki tam cümlede kurulan işlevi karşılaştır.",
+        "hint": "Bahçede nerede sorusunu; öğretmen de eklenen kişiyi karşılıyor."
+      },
+      {
+        "id": "f016-noktalama-isaretleri-1",
+        "lessonId": "noktalama-isaretleri",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Noktalama işaretleri: anlamı ve bağı görünür kıl",
+        "prompt": "“Yaralı, adama seslendi.” cümlesinde yaralı olan kişi seslenen öznedir. “Yaralı adama seslendi.” cümlesinde ise söylenmeyen bir kişi yaralı olan adama seslenmiştir. Virgül bu iki cümlede hangi farkı görünür kılar?",
+        "options": [
+          "Yaralı sözünün bağımsız özne olmasıyla adama sözünü nitelemesini ayırır.",
+          "Seslenme fiilinin zamanını geçmişten geleceğe çevirir.",
+          "Adama sözünü iki cümlede de özne yapar.",
+          "Seslendi yüklemini her iki cümlede de isim cümlesine dönüştürür.",
+          "Yaralı sözünü her durumda özel ad yapar."
+        ],
+        "answer": 0,
+        "explanation": "Virgüllü biçimde yaralı, yaralı kişi anlamıyla adlaşmış sıfat ve öznedir; adama ayrı bir yer tamlayıcısıdır. Virgülsüz biçimde yaralı adama bir sıfat tamlaması olarak dolaylı tümleci kurar; özne gizlidir. İşaret burada anlam ve öbek sınırını ayırır; yalnız nefes durağı değildir.",
+        "hint": "Kim seslendi ve hangi adama seslendi sorularını iki bağlamda ayrı sor."
+      },
+      {
+        "id": "f015-fiilimsiler-1",
+        "lessonId": "fiilimsiler",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Fiilimsiler: eki, kökü ve görevi birlikte oku",
+        "prompt": "“Okumayı seviyorum.” cümlesindeki okumayı sözcüğünün türü ve çekim ilişkisi hangi seçenekte doğru açıklanmıştır?",
+        "options": [
+          "İsim-fiil eki üzerine belirtme durumu eki gelmiştir.",
+          "İkinci tekil kişide olumsuz emir çekimidir.",
+          "Kitap adını niteleyen sıfat-fiildir.",
+          "Temel fiile zaman bildiren zarf-fiildir.",
+          "Hiçbir eylem ilişkisi taşımayan yiyecek adıdır."
+        ],
+        "answer": 0,
+        "explanation": "Oku-ma-y-ı biçiminde -ma isim-fiil, -ı belirtme durumudur. Okumayı, seviyorum yükleminin nesnesidir. Nesne olması sözcük türünü çekimli fiile dönüştürmez.",
+        "hint": "Okunan bir varlığın adı ile okuma etkinliğinin adını ayır."
+      },
+      {
+        "id": "f015-cumlenin-ogeleri-1",
+        "lessonId": "cumlenin-ogeleri",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Cümlenin ögeleri: yüklem çevresindeki ilişkiler",
+        "prompt": "“Yeni gelen görevli dün raporu müdüre teslim etti.” cümlesinin tam yüklemi hangisidir?",
+        "options": [
+          "Teslim etti",
+          "Etti",
+          "Müdüre teslim",
+          "Yeni gelen",
+          "Raporu müdüre"
+        ],
+        "answer": 0,
+        "explanation": "Teslim etmek birleşik fiilidir; çekimli yüklem teslim etti bütünüdür. Yeni gelen görevli özne, dün zarf tümleci, raporu belirtili nesne, müdüre yer tamlayıcısıdır. Etti tek başına alınarak birleşik yüklem parçalanmaz.",
+        "hint": "Birleşik fiilin iki parçasını birlikte tut."
+      },
+      {
+        "id": "f015-cumle-turleri-1",
+        "lessonId": "cumle-turleri",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Cümle türleri: dört ölçütte ayrı kanıt",
+        "prompt": "MEBİ/OGM sınıflamasına göre “Dosyayı getirmedi Ece.” cümlesinin sırasıyla yüklem türü, yüklem yeri, anlamı ve yapısı hangisidir?",
+        "options": [
+          "Fiil / devrik / olumsuz / basit",
+          "İsim / kurallı / olumlu / bağlı",
+          "Fiil / kurallı / olumlu / sıralı",
+          "İsim / devrik / olumsuz / girişik birleşik",
+          "Fiil / eksiltili / olumlu / şartlı birleşik"
+        ],
+        "answer": 0,
+        "explanation": "Getirmedi çekimli fiildir; Ece ondan sonra geldiğinden yüklem sonda değildir ve cümle devriktir. -me olumsuzluk bildirir. Tek temel yargı ve yan yapı bulunmadığından cümle basittir. Dört ölçüt birbirinden ayrı denetlenmiştir.",
+        "hint": "Getirmedi yükleminin türünü ve ardından gelen özneyi gör."
+      },
+      {
+        "id": "f014-ek-fiil-1",
+        "lessonId": "ek-fiil",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Ek fiil: tabandan yargıya, kipten birleşik çekime",
+        "prompt": "“Geçen yıl bu okulda öğrenciydim.” cümlesinin öğrenciydim yüklemi için doğru çözümleme hangisidir?",
+        "options": [
+          "Öğrenci ad soylu tabanına idi ek fiili ve birinci tekil kişi bağlanmıştır.",
+          "Öğrenci- bir fiil köküdür ve yalnız şimdiki zamanla çekimlenmiştir.",
+          "-ydi yeni bir fiil türeten yapım ekidir.",
+          "Yüklem ikinci çoğul kişiyle çekimlenmiştir.",
+          "Sözcük yalnız bir iyelik tamlamasıdır; cümlede yargı kurmaz."
+        ],
+        "answer": 0,
+        "explanation": "Öğrenci bir addır. Öğrenci + idi + m → öğrenciydim biçiminde ek fiilin geçmişi ve ben kişisi vardır. -y- ünlüler arasındaki ses bağlantısında görülür. Öğrenci fiile türetilmemiş, ad soylu yüklem kurulmuştur.",
+        "hint": "Önce öğrenci sözünün türünü, sonra ben öznesine uyan son sesi düşün."
+      },
+      {
+        "id": "f012-edat-baglac-unlem-1",
+        "lessonId": "edat-baglac-unlem",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Edat, bağlaç ve ünlem: cümlede görev ve anlam",
+        "prompt": "‘Ece ile Mert raporu hazırladı.’ cümlesinde ile sözcüğünün görevi nedir?",
+        "options": [
+          "Eş görevli iki özne parçasını bağlayan bağlaç",
+          "Raporun niteliğini bildiren sıfat",
+          "Hazırlama aracını gösteren edat",
+          "Yer belirten durum eki",
+          "Anlık sevinç bildiren ünlem"
+        ],
+        "answer": 0,
+        "explanation": "Ece ve Mert, hazırlama eyleminin eş görevli özne parçalarıdır; ile burada bağlaçtır. Araç öbeği, raporu niteleme, durum eki veya duygu sözü yoktur. ‘Ece fırça ile boyadı.’ deseydik ile araç edatı olurdu.",
+        "hint": "İle yerine ve getirdiğinde iki kişinin ortak özne olması korunuyor mu?"
+      },
+      {
+        "id": "f012-fiiller-1",
+        "lessonId": "fiiller",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Fiiller: kip, kişi, zaman ve yapı",
+        "prompt": "‘Çocuk resmi çizdi. Bebek uyudu. Meyve olgunlaştı.’ cümlelerindeki fiiller anlamlarına göre sırasıyla nasıl sınıflanır?",
+        "options": [
+          "Kılış / durum / oluş",
+          "Durum / oluş / kılış",
+          "Oluş / kılış / durum",
+          "Üçü de oluş",
+          "Üçü de kılış"
+        ],
+        "answer": 0,
+        "explanation": "Çizdi, resmi nesnesi üzerinde iş bildirir; kılıştır. Uyudu, öznenin içinde bulunduğu durumu anlatır ve bu anlamda nesne almaz. Olgunlaştı, meyvede zamanla gerçekleşen değişimdir; oluştur. Son ikisinde nesne olmayışı onları aynı sınıf yapmaz.",
+        "hint": "Nesneye yönelen iş ile kendiliğinden değişimi ayır."
+      },
+      {
+        "id": "f012-fiilde-cati-1",
+        "lessonId": "fiilde-cati",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Fiilde çatı: yapan, etkilenen ve nesne",
+        "prompt": "‘Yapılan araştırma çok yararlıydı.’ cümlesinin yükleminde fiilde çatı aranır mı?",
+        "options": [
+          "Aranmaz; yararlıydı ad soylu yüklemdir.",
+          "Aranır; yapılan sözcüğü yüklemdir.",
+          "Aranır; her isim yüklemi edilgendir.",
+          "Aranır; -dı her zaman çatı ekidir.",
+          "Aranmaz; çünkü bütün geçmiş zamanlar çatısızdır."
+        ],
+        "answer": 0,
+        "explanation": "Yüklem yararlıydı, yararlı + idi ile kurulmuş ad soylu yüklemdir; okul düzeyinde fiilde çatı bu yüklemde aranmaz. Yapılan araştırmayı niteleyen fiilimsidir, cümlenin asıl yüklemi değildir. Geçmiş zamanın kendisi çatıya engel oluşturmaz.",
+        "hint": "Cümlenin asıl yargısını hangi sözcük kuruyor?"
+      },
+      {
+        "id": "f011-adverb-1",
+        "lessonId": "zarflar",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Zarflar: sözcükten sözcüğe anlam bağlantıları",
+        "prompt": "‘Çocuk sakin konuştu.’ cümlesinde sakin sözcüğünün görevi nedir?",
+        "options": [
+          "Konuşmanın biçimini bildiren durum zarfı",
+          "Çocuk adını belirten işaret sıfatı",
+          "Konuşan kişinin yerini tutan zamir",
+          "Zaman bildiren isim tamlaması",
+          "İki yargıyı bağlayan bağlaç"
+        ],
+        "answer": 0,
+        "explanation": "Sakin → konuştu ilişkisi, konuşmanın nasıl gerçekleştiğini bildirir; durum zarfıdır. ‘Sakin çocuk’ olsaydı sıfat olurdu. Burada adın yerini tutma, zaman ilişkisi veya iki yargıyı bağlama yoktur.",
+        "hint": "Sakin, kişinin adını mı yoksa konuşma biçimini mi doğrudan etkiliyor?"
+      },
+      {
+        "id": "f093-noun-1",
+        "lessonId": "isimler-isim-tamlamasi",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "İsimler ve isim tamlaması: adları ilişkilendir",
+        "prompt": "‘Aralarındaki sevgi, arkadaşları birbirine yaklaştırdı.’ cümlesindeki sevgi sözcüğü varlığa veriliş, algılanış ve sayı bakımından nasıl sınıflandırılır?",
+        "options": [
+          "Cins, soyut, tekil",
+          "Özel, somut, çoğul",
+          "Cins, somut, topluluk",
+          "Özel, soyut, tekil",
+          "Cins, soyut, çoğul"
+        ],
+        "answer": 0,
+        "explanation": "Sevgi bu cümlede kişi adı değil duygu kavramıdır: cins ve soyuttur. Çoğul eki veya bireylerden oluşan bir bütün anlamı taşımadığı için tekildir. Aralarındaki sözü ve cümle ortasında küçük harfle yazımı burada duygu kavramı anlamını açıklaştırır; kişi adı olarak yorumlanmaz.",
+        "hint": "Üç ayrı ölçütü ayrı ayrı uygula; aralarındaki sözü burada bir duygu ilişkisini tanımlıyor."
+      },
+      {
+        "id": "f093-adj-1",
+        "lessonId": "sifatlar",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Sıfatlar: adın özelliğini ve sınırını bul",
+        "prompt": "‘Mavi uçurtma yükselirken çocuk gülümsedi.’ cümlesindeki mavi sözcüğünün görevi nedir?",
+        "options": [
+          "Yükselme fiilinin miktarını bildirir.",
+          "Uçurtma adının rengini bildiren niteleme sıfatıdır.",
+          "Çocuk adının yerini tutan kişi zamiridir.",
+          "İki yargıyı bağlayan bağlaçtır.",
+          "Uçurtma adının ilgi ekidir."
+        ],
+        "answer": 1,
+        "explanation": "Mavi, uçurtma adını renk bakımından niteler; niteleme sıfatıdır. Fiilin nasıl yapıldığını değil varlığın niteliğini bildirir. Zamir olmadığı için bir adın yerine geçmez; açık uçurtma adına bağlanır.",
+        "hint": "Mavi hangi sözcüğün özelliğini bildiriyor?"
+      },
+      {
+        "id": "f093-pron-1",
+        "lessonId": "zamirler",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Zamirler: adı tekrarlamadan anlamı koru",
+        "prompt": "‘Bana bu mektubu sen getirdin.’ cümlesindeki bana sözcüğü nasıl açıklanır?",
+        "options": [
+          "Bu sözcüğünün çoğul biçimi",
+          "Ben kişi zamirinin bulunma durumu",
+          "Ben kişi zamirinin yönelme durumu",
+          "Mektup adının iyelik eki",
+          "Sen zamirinin ayrılma durumu"
+        ],
+        "answer": 2,
+        "explanation": "Bana, ben kişi zamirinin yönelme durumudur; ben + e biçiminde bene değil bana olur. Bu biçim değişimi zamiri başka bir türde sözcüğe dönüştürmez. Bulunma bende, ayrılma benden biçimindedir.",
+        "hint": "Kime getirdin sorusunu ve ben/sen yönelme biçimlerini düşün."
+      },
+      {
+        "id": "snd-1",
+        "lessonId": "ses-bilgisi",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Ses bilgisi: sesi karşılaştır, olayı kanıtla",
+        "prompt": "‘Omzu ağrıyan çocuk dinlendi.’ cümlesindeki omzu sözcüğünde görülen ses olayı ve başlangıç biçimi hangisidir?",
+        "options": [
+          "Ünlü daralması; oma",
+          "Ünlü düşmesi; omuz",
+          "Ünsüz yumuşaması; omut",
+          "Ünsüz türemesi; omz",
+          "Ünlü türemesi; omz"
+        ],
+        "answer": 1,
+        "explanation": "Omuz + u → omzu. Kökün ikinci u’su düşmüştür; sondaki u ektir. Daralma için önceki a/e’nin dar ünlüye dönüşmesi gerekirdi; burada bir ses eksilir. Omz biçiminde uydurulmuş kök kurulmaz.",
+        "hint": "Organ adını geri bul; kaybolan ses ile sona eklenen sesi ayrı say."
+      },
+      {
+        "id": "wrd-1",
+        "lessonId": "sozcukte-yapi",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Sözcükte yapı: kökten anlama, adım adım",
+        "prompt": "‘Balıklar yüzüyordu.’ cümlesindeki balıklar sözcüğünün kökü ve yapısı hangi seçenekte doğrudur?",
+        "options": [
+          "Bal; türemiş",
+          "Balı; birleşik",
+          "Balık; basit",
+          "Balık; birleşik",
+          "Bal; basit"
+        ],
+        "answer": 2,
+        "explanation": "Kök balık’tır; bal ile anlam ilişkisi bu çözümlemeyi kurmaz. -lar çokluk çekimidir, yeni taban türetmez; sözcük basittir. Her anlamlı görünen ilk harf dizisi kök değildir.",
+        "hint": "Kök seçiminin anlam ilişkisini ve -lar ekinin görevini denetle."
+      },
+      {
+        "id": "p2",
+        "lessonId": "paragraf",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Paragrafta ana düşünce",
+        "prompt": "Hangi sonuç metinden çıkarılamaz?",
+        "passage": "Bir kitabı bitirmek, onu anlamakla aynı şey değildir. Okur bazen bir sayfada durup kendi sorularını kurduğunda metinle daha güçlü bir ilişki kurar. Okumanın değeri, yalnız çevrilen sayfalarda değil, kurulan düşüncelerde de aranmalıdır.",
+        "options": [
+          "Soru sormak anlamaya katkı sağlayabilir.",
+          "Çok sayfa okumak anlamayı tek başına göstermez.",
+          "Hızlı okuyan hiç kimse anlayamaz."
+        ],
+        "answer": 2,
+        "explanation": "Metin tüm hızlı okurlar hakkında kesin bir yargı vermiyor.",
+        "hint": "Kesin ve kapsayıcı genellemeleri kontrol et.",
+        "guidance": {
+          "knowledge": [
+            "Çıkarılamaz sorusu, metnin desteklemediği yargıyı arar. Olasılık bildiren bir anlatımdan herkes için kesin hüküm çıkarılamaz."
+          ],
+          "strategy": "Her seçenekteki kesinlik derecesini metindeki bazen, yalnız değil ve de ifadeleriyle karşılaştır.",
+          "steps": [
+            "Soru kurmanın ilişkiyi güçlendirmesi ve bitirmenin anlamayla aynı olmaması metinde desteklenir.",
+            "Hızlı okuyanların hiçbirinin anlayamayacağı, bütün bir gruba ilişkin kesin bir yargıdır; metin bunu söylemez."
+          ],
+          "optionReasons": [
+            "Soru sormanın katkı sağlayabilmesi orta cümleyle uyumludur; metinden çıkarılabilir.",
+            "Sayfa sayısının tek başına anlama kanıtı olmaması ilk ve son cümleyle uyumludur.",
+            "Hızlı okuyan hiç kimse anlayamaz sonucu çıkarılamaz; metin böyle bir kesin genelleme yapmaz."
+          ],
+          "commonError": "Metinde bir okuma biçiminin eleştirilmesini, o biçimdeki herkes hakkında mutlak yargı sanma.",
+          "check": "Metinde hızlı okuyan bütün kişileri kapsayan bir ifade ara; böyle bir dayanak yoktur."
+        }
+      },
+      {
+        "id": "yardimci-dusunce-019-2",
+        "lessonId": "yardimci-dusunce",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Yardımcı düşünce: her yargıya kanıt bul",
+        "prompt": "Bu parçada hangisine değinilmemiştir?",
+        "passage": "Bir okulun arşivinde defterler yıllarına göre ayrıldı. Her dolaba içerdiği yılları belirten bir etiket eklendi. Araştırmacılar artık aradıkları yılı hangi dolapta bulacaklarını kolayca görebiliyor.",
+        "options": [
+          "Defterlerin hangi ölçüte göre ayrıldığına.",
+          "Dolapların nasıl tanıtıldığına.",
+          "Etiketlerin hangi bilgiyi taşıdığına.",
+          "Araştırmacıların düzenlemeden nasıl yararlandığına.",
+          "Düzenleme çalışmasının parasal giderine."
+        ],
+        "answer": 4,
+        "explanation": "Ayırma ölçütü yıl, tanıtım aracı etiket, etiketteki bilgi dolabın kapsadığı yıllardır. Son cümle araştırmacıların yararını verir. Çalışmanın kaç paraya mal olduğu veya kimin ödediği söylenmemiştir; bu bilgi dışarıdan eklenemez.",
+        "hint": "Her seçenek için karşılık gelen açık bilgiyi ara."
+      },
+      {
+        "id": "ikiye-bolme-019-2",
+        "lessonId": "ikiye-bolme",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Paragrafı ikiye bölme: yeni yönü bul",
+        "prompt": "İkinci paragrafın başlangıcı hangisidir?",
+        "passage": "(I) Açık etiketler aramayı kolaylaştırır. (II) Örneğin okul arşivinde yıl etiketi kullanılır. (III) Bu etiketler eski defterleri bulmayı hızlandırır. (IV) Belgeleri korumak için nem de izlenmelidir. (V) Bu ölçümler yıpranma riskini gösterir.",
+        "options": [
+          "V.",
+          "IV.",
+          "I.",
+          "II.",
+          "III."
+        ],
+        "answer": 1,
+        "explanation": "II ve III etiketleme savının örneği ile sonucudur; erişim yönünü sürdürür. IV fiziksel koruma için nem izlemeyi başlatır ve V onu açıklar. Özel okul adı II’yi otomatik yeni paragraf yapmaz. Uygun ayrım I–III ve IV–V’dir.",
+        "hint": "Örneği önceki genel savdan koparmadan yeni amacı bul."
+      },
+      {
+        "id": "akisi-bozan-cumle-019-2",
+        "lessonId": "akisi-bozan-cumle",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Akışı bozan cümle: çıkar ve bağı denetle",
+        "prompt": "Düşüncenin akışını bozan cümle hangisidir?",
+        "passage": "(I) Kentin eski sineması yenilendi. (II) Atölyede atık kâğıtlar ayrı toplanıyor. (III) Bu kâğıtlar küçük parçalara ayrılıyor. (IV) Parçalar yeniden kullanılacak hamura katılıyor. (V) Böylece kâğıt atığı azaltılıyor.",
+        "options": [
+          "I.",
+          "II.",
+          "III.",
+          "IV.",
+          "V."
+        ],
+        "answer": 0,
+        "explanation": "II–V kâğıt atığının yeniden kullanılması sürecini tanıtır ve sürdürür. I sinemanın yenilenmesiyle başka bir olayı bildirir. I çıkarılınca II anlaşılır bir başlangıç oluşturur; bu kâğıtlar, parçalar ve böylece bağları da korunur.",
+        "hint": "Sonraki dört cümlenin hangi ortak işlemi anlattığına bak."
+      },
+      {
+        "id": "paragraf-ana-dusunce-ileri-019-2",
+        "lessonId": "paragraf-ana-dusunce-ileri",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Ana düşünce: ileri kanıt uygulamaları",
+        "prompt": "Yazarın asıl savunduğu düşünce hangisidir?",
+        "passage": "“Hızlı bitiren iyi okurdur.” diyenler var. Oysa okur bazen tek sayfada durup sorular sorduğunda metni daha derinden kavrar. Okumanın değeri sayfa sayısından önce anlamayla ilişkilidir.",
+        "options": [
+          "Bütün kitaplar aynı sürede okunmalıdır.",
+          "Kitap okumak yerine yalnız soru sormak yeterlidir.",
+          "Bir kitabı bitirmek her durumda gereksizdir.",
+          "Okumanın değeri yalnız hızla değil, metni anlamayla değerlendirilmelidir.",
+          "En iyi okur her kitabı en hızlı bitirendir."
+        ],
+        "answer": 3,
+        "explanation": "İlk cümlede başkalarının hız ölçütü aktarılır; oysa ile başlayan bölüm yazarın anlamayı öne çıkardığını gösterir. Yazar bütün kitaplar için sabit hız veya kitabı bitirmeme kuralı koymaz. Ana sav hızın tek ölçüt olmamasıdır; sorular anlamaya katkı örneğidir.",
+        "hint": "Aktarılan ilk görüş ile yazarın itirazını ayrı oku."
+      },
+      {
+        "id": "deyimler-ve-atasozleri-018-2",
+        "lessonId": "deyimler-ve-atasozleri",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Deyimler ve atasözleri: sözü olaya bağla",
+        "prompt": "“Raporu birkaç kez okuduk ama son satırdaki tarih yanlışı gözden kaçtı.” cümlesinde deyimin anlamı hangisidir?",
+        "options": [
+          "Saygınlığını yitirdi.",
+          "Dikkatle gözetildi.",
+          "Telaşla konuşamadı.",
+          "Önceden ayrıntılı planlandı.",
+          "Fark edilmedi."
+        ],
+        "answer": 4,
+        "explanation": "Gözden kaçan şey bir tarih yanlışıdır ve okumalara rağmen fark edilmemiştir. Kişinin değer yitirmesi anlatılmadığından gözden düşmek açıklaması uygun değildir. Deyimi ortak göz sözcüğüne göre değil olayın sonucuna göre çöz.",
+        "hint": "Etkilenenin bir kişinin itibarı mı, görülmeyen bir ayrıntı mı olduğunu sor."
+      },
+      {
+        "id": "cumlede-anlam-018-2",
+        "lessonId": "cumlede-anlam",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Cümlede anlam: ilişkiyi ve kapsamı izle",
+        "prompt": "“Otobüs arızalandığı için yolcular bekledi.” cümlesinde neden → sonuç yönü hangisidir?",
+        "options": [
+          "Bilet bulunması → yolun kapanması.",
+          "Otobüsün arızalanması → yolcuların beklemesi.",
+          "Yolcuların beklemesi → otobüsün arızalanması.",
+          "Yolcuların beklemesi → bilet almayı amaçlaması.",
+          "Otobüsün arızalanması → yolcuların kesin gelmemesi."
+        ],
+        "answer": 1,
+        "explanation": "Arızalanma, beklemenin gerçekleşmiş nedeni olarak verilir. Bu nedenle ok arızadan beklemeye gider. İki yargıyı ters çevirmek aynı ilişkiyi korumaz; kökte bilet veya yolun kapanmasıyla ilgili ek bilgi bulunmaz.",
+        "hint": "Hangi durumun diğerinin gerçekleşmesini açıkladığını sor."
+      },
+      {
+        "id": "paragrafa-giris-018-2",
+        "lessonId": "paragrafa-giris",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Paragrafa giriş: cümleleri bir bütüne bağla",
+        "prompt": "Verilen tanıtım ve sonuç bağına göre uygun cümle sırası hangisidir?",
+        "passage": "A: “Bu etiketler aramayı hızlandırdı.” B: “Arşiv görevlisi her deftere yıl etiketi ekledi.” C: “Böylece aradığımız yılı birkaç dakikada bulduk.”",
+        "options": [
+          "B → A → C.",
+          "A → B → C.",
+          "C → A → B.",
+          "A → C → B.",
+          "C → B → A."
+        ],
+        "answer": 0,
+        "explanation": "B etiketleri ve ekleme işlemini tanıtır; A’daki bu etiketler buna gider. C, aramanın hızlanmasını birkaç dakikada bulma sonucuyla bağlar. B–A–C iki komşu bağı birlikte kurar; öteki seçeneklerde gönderme tanıtımdan önce kalır veya sonuç zinciri bozulur.",
+        "hint": "Bu etiketlerin tanıtımını ve böylecenin bağlandığı sonucu bul."
+      },
+      {
+        "id": "f017-anlatim-bozukluklari-2",
+        "lessonId": "anlatim-bozukluklari",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Anlatım bozuklukları: amacı koruyarak onar",
+        "prompt": "Konuşan, aynı komşusunu önce gördüğünü, sonra ona güvendiğini anlatmak istiyor. “Komşumu gördüm ve güvendim.” sözünde iki yüklemin gerektirdiği hâl ilişkisini açıkça tamamlayan biçim hangisidir?",
+        "options": [
+          "Komşumu gördüm ve ona güvendim.",
+          "Komşuma gördüm ve güvendim.",
+          "Komşumu gördüm ve onu güvendim.",
+          "Komşumdan gördüm ve komşumu güvendim.",
+          "Komşumla gördüm ve komşumu güvendim."
+        ],
+        "answer": 0,
+        "explanation": "Gördüm belirtme durumundaki komşumu nesnesini; güvendim ise yönelme durumundaki ona tamlayıcısını ister. Aynı kişiye gönderim yapılması iki hâl biçimini eşitlemez. Komşumu gördüm ve ona güvendim, amaçlanan kişiyi her fiilin istediği ekle açıkça verir.",
+        "hint": "Görmek kimi, güvenmek kime sorusunu karşılar."
+      },
+      {
+        "id": "f017-sozcukte-anlam-2",
+        "lessonId": "sozcukte-anlam",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Sözcükte anlam: bağlamı ve ilişkiyi gör",
+        "prompt": "Bir geometri dersinde “Üçgenin bu kenarı taban olarak seçildi.” deniyor. Taban sözcüğünü bu cümlede terim yapan özellik hangisidir?",
+        "options": [
+          "Somut bir varlığı anlatan bütün sözcüklerin terim sayılması.",
+          "Geometri alanındaki özel ve belirli bir kavramı karşılaması.",
+          "Sözcüğün gerçek anlamdan uzaklaşıp bir duyguya aktarılması.",
+          "Bilim metninde geçen bütün sözcüklerin otomatik terim olması.",
+          "Aynı sözcüğün başka bağlamda da kullanılmasının tek başına yeterli olması."
+        ],
+        "answer": 1,
+        "explanation": "Taban burada bir geometri kavramını karşılar; terimlik bu özel kullanımdan gelir. Aynı sözcük ayakkabının tabanı gibi başka bir bağlamda farklı görevde olabilir. Ders metnindeki her günlük sözcük terim sayılmaz; alanla ilgili özel kavramı karşılayan kullanım aranır.",
+        "hint": "Terim oluşunu özel kavram ve alan ilişkisiyle kanıtla."
+      },
+      {
+        "id": "f016-yazim-kurallari-2",
+        "lessonId": "yazim-kurallari",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Yazım kuralları: anlamdan doğru biçime",
+        "prompt": "“Masadaki dosya kapalı. Biliyorum ki dosyanın bir kopyası var.” cümlelerinde masadaki sözündeki ki ile biliyorum ki sözündeki ki nasıl ayrılır?",
+        "options": [
+          "İkisi de ayrı yazılması gereken bağlaçtır.",
+          "İlki dosya adını belirleyen ektir ve bitişiktir; ikincisi cümleleri ilişkilendiren bağlaçtır ve ayrıdır.",
+          "İlki bağlaç, ikincisi ilgi zamiridir.",
+          "Her ikisi yalnız ünlü uyumu nedeniyle bitişik yazılır.",
+          "İkincisi bir kişi eki olduğu için biliyorumki yazılır."
+        ],
+        "answer": 1,
+        "explanation": "Masa-da-ki, masada bulunan dosyayı belirler; ki ek olduğu için sözcüğe bitişir. Biliyorum ki sözündeki ki bağlaçtır ve ayrı yazılır. Belki, çünkü gibi kalıplaşmış sözler bu cümledeki biliyorum ki bağlacının yazımını değiştirmez.",
+        "hint": "İlk ki hangi dosya sorusuna hizmet eder; ikinci ki yeni yargıyla bağlantı kurar."
+      },
+      {
+        "id": "f016-noktalama-isaretleri-2",
+        "lessonId": "noktalama-isaretleri",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Noktalama işaretleri: anlamı ve bağı görünür kıl",
+        "prompt": "“Takımlar şöyle: Ece, Can; Ada, Deniz.” yazısında noktalı virgül iki takımı ayırmaktadır. Aynı kişiler “Takımlar şöyle: Ece; Can, Ada, Deniz.” biçiminde yazılırsa hangi kişinin takım grubu değişir?",
+        "options": [
+          "Ece",
+          "Can",
+          "Ada",
+          "Deniz",
+          "Dört kişi de aynı grupta kalır."
+        ],
+        "answer": 1,
+        "explanation": "İlk yazımda birinci takım Ece ile Can, ikinci takım Ada ile Deniz’dir. İkincide birinci takım yalnız Ece; ikinci takım Can, Ada ve Deniz olur. Yalnız Can sınırı geçmiştir. Virgül aynı takımın üyelerini, noktalı virgül takımları ayırır.",
+        "hint": "Noktalı virgülün solundaki ve sağındaki ad kümelerini iki yazımda karşılaştır."
+      },
+      {
+        "id": "f015-fiilimsiler-2",
+        "lessonId": "fiilimsiler",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Fiilimsiler: eki, kökü ve görevi birlikte oku",
+        "prompt": "A: “Bu iş yarın bitecek.” B: “Bitecek işi bugün paylaştık.” Bitecek biçimlerinin görevleri hangi seçenekte doğru sıralanmıştır?",
+        "options": [
+          "İkisi de kalıcı addır.",
+          "A çekimli fiil; B sıfat-fiildir.",
+          "A isim-fiil; B zarf-fiildir.",
+          "A sıfat-fiil; B çekimli fiildir.",
+          "İkisi de zarf-fiildir."
+        ],
+        "answer": 1,
+        "explanation": "A’da bitecek gelecek zamanlı yüklemdir. B’de bitecek, iş adını niteleyen sıfat-fiildir; ana yüklem paylaştıktır. Ekin görünümü aynı, cümledeki işlevi farklıdır.",
+        "hint": "Hangi cümlede bitecek, iş adını niteliyor?"
+      },
+      {
+        "id": "f015-cumlenin-ogeleri-2",
+        "lessonId": "cumlenin-ogeleri",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Cümlenin ögeleri: yüklem çevresindeki ilişkiler",
+        "prompt": "“Ece roman okudu.” cümlesindeki roman sözcüğü hangi ögedir?",
+        "options": [
+          "Gerçek özne",
+          "Belirtisiz nesne",
+          "Yer tamlayıcısı",
+          "Zarf tümleci",
+          "Yüklem"
+        ],
+        "answer": 1,
+        "explanation": "Kim okudu? Ece öznedir. Ece ne okudu? Roman, belirtme durumu almamış belirtisiz nesnedir. Özne belirlenmeden sorulan ne sorusu iki görevi karıştırabilir.",
+        "hint": "Önce kim okudu, sonra ne okudu sorusunu sor."
+      },
+      {
+        "id": "f015-cumle-turleri-2",
+        "lessonId": "cumle-turleri",
+        "subjectId": "tyt-turkce",
+        "subjectName": "Türkçe",
+        "lessonTitle": "Cümle türleri: dört ölçütte ayrı kanıt",
+        "prompt": "“Hava serindi.” ve “Hava serinledi.” cümlelerinin yüklem türleri hangi seçenekte doğru karşılaştırılır?",
+        "options": [
+          "İkisi de yalnız isim cümlesidir.",
+          "İlki isim, ikincisi fiil cümlesidir.",
+          "İlki fiil, ikincisi isim cümlesidir.",
+          "İkisi de yüklemsiz eksiltili ifadedir.",
+          "İlki bağlı, ikincisi sıralı olduğu için yüklem türü belirlenemez."
+        ],
+        "answer": 1,
+        "explanation": "Serin-di, ad soylu serin tabanının ek fiille geçmiş yargı kurmasıdır; isim cümlesidir. Serinle-di, serinle- fiilinin çekimidir; fiil cümlesidir. İkisinde de geçmişlik bulunması bu ayrımı silmez.",
+        "hint": "Serin ad soylu taban ile serinle- türemiş fiilini ayır."
+      },
+      {
+        "id": "r1",
+        "lessonId": "rasyonel-sayilar",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Rasyonel sayılar",
+        "prompt": "Hangisi daha büyüktür?",
+        "options": [
+          "1/8",
+          "1/6",
+          "Eşitler"
+        ],
+        "answer": 1,
+        "explanation": "Birim kesirde daha küçük payda daha büyük parça verir: 1/6 > 1/8.",
+        "hint": "Eşit bir bütünü kaç parçaya ayırıyorsun?",
+        "guidance": {
+          "knowledge": [
+            "Birim kesirde pay 1’dir. Eşit büyüklükteki bütünlerde daha çok eş parça, daha küçük tek parça demektir."
+          ],
+          "strategy": "İki kesrin payı aynı ve pozitiftir; bu nedenle paydalar üzerinden karşılaştır.",
+          "steps": [
+            "Aynı büyüklükte iki bütünü birinde 8, diğerinde 6 eş parçaya ayırdığını düşün.",
+            "6 parçalı bütünün tek parçası daha büyüktür; bu parça 1/6’dır."
+          ],
+          "optionReasons": [
+            "1/8, bütünü daha çok parçaya ayırdığı için 1/6’dan küçüktür.",
+            "1/6 doğrudur: eşit pozitif paylarda küçük payda büyük kesir verir.",
+            "Paydalar farklı olduğundan bu iki birim kesir eşit değildir."
+          ],
+          "commonError": "Paydanın büyümesini kesrin büyümesi sanma; burada paylar eşittir ve kesirler pozitiftir.",
+          "check": "Ortak payda ile 1/8=3/24 ve 1/6=4/24. 4/24 daha büyüktür."
+        }
+      },
+      {
+        "id": "c1",
+        "lessonId": "carpanlara-ayirma",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Çarpanlara ayırma",
+        "prompt": "6x + 9 ifadesinin ortak çarpanlı biçimi nedir?",
+        "options": [
+          "3(2x+3)",
+          "6(x+9)",
+          "9(x+6)"
+        ],
+        "answer": 0,
+        "explanation": "3 ortak çarpandır: 3×2x + 3×3 = 3(2x+3).",
+        "hint": "6 ve 9’un ortak bölenini bul.",
+        "guidance": {
+          "knowledge": [
+            "Dağılma özelliği a(b+c)=ab+ac’dir. Ortak çarpana alma, bu özelliğin ters yönde kullanılmasıdır."
+          ],
+          "strategy": "6x ve 9 terimlerinin ikisini de bölen bir sayıyı dışarı al; kalanları parantez içine yaz.",
+          "steps": [
+            "6 ve 9’un en büyük ortak pozitif böleni 3’tür.",
+            "6x/3=2x ve 9/3=3; dışarı aldığın 3’ü bu toplamla çarp."
+          ],
+          "optionReasons": [
+            "3(2x+3) doğrudur; açıldığında 6x+9 verir.",
+            "6(x+9)=6x+54 olur; sabit terim 9 kalmaz.",
+            "9(x+6)=9x+54 olur; hem x’in katsayısı hem sabit terim değişir."
+          ],
+          "commonError": "Bir terimi dışarıdaki çarpana bölüp diğerini bölmeden bırakma.",
+          "check": "3×2x+3×3=6x+9. Çarpanlı biçimi açarak ilk ifadeye dön."
+        }
+      },
+      {
+        "id": "area-1",
+        "lessonId": "alan-donusumleri",
+        "subjectId": "tyt-geometri",
+        "subjectName": "Geometri",
+        "lessonTitle": "Üçgen ve paralelkenarda alan",
+        "prompt": "Tabanı 8, bu tabana dik yüksekliği 5 birim olan üçgenin alanı kaçtır?",
+        "options": [
+          "40 birim²",
+          "13 birim²",
+          "20 birim²"
+        ],
+        "answer": 2,
+        "explanation": "A = 8 × 5 / 2 = 20 birim².",
+        "hint": "İki eş üçgenin birlikte oluşturduğu alanı düşün."
+      },
+      {
+        "id": "bas-1",
+        "lessonId": "temel-kavramlar",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Temel kavramlar: sayı, değer ve tanım koşulu",
+        "prompt": "√49 sayısı için doğru sınıflama hangisidir?",
+        "options": [
+          "Yalnız irrasyoneldir.",
+          "Doğal, tam, rasyonel ve gerçektir.",
+          "Rasyoneldir ama tam sayı değildir."
+        ],
+        "answer": 1,
+        "explanation": "√49 = 7. Bu anlatımda 7; ℕ, ℤ, ℚ ve ℝ kümelerinin hepsindedir.",
+        "hint": "Kökü hesaplamadan kümeye karar verme."
+      },
+      {
+        "id": "par-1",
+        "lessonId": "tek-cift-isaret",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Tek–çift ve işaret: iki ayrı özellik",
+        "prompt": "−8’in işareti ve tek–çift özelliği nedir?",
+        "options": [
+          "Negatif ve çift",
+          "Pozitif ve çift",
+          "Negatif ve tek"
+        ],
+        "answer": 0,
+        "explanation": "−8 = 2(−4) çifttir ve sıfırdan küçük olduğu için negatiftir.",
+        "hint": "−8’i 2k biçiminde yaz."
+      },
+      {
+        "id": "seq-1",
+        "lessonId": "ardisik-sayilar",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Ardışık sayılar: adım, terim ve toplam",
+        "prompt": "−5, −3, −1, 1 biçiminde başlayan ardışık tek sayı listesinin sonraki terimi nedir?",
+        "options": [
+          "2",
+          "3",
+          "5"
+        ],
+        "answer": 1,
+        "explanation": "1’den sonra 2 eklenir ve 3 gelir. Negatif başlangıç, tek sayılardaki 2 artışını değiştirmez.",
+        "hint": "Her adım 2 artıyor."
+      },
+      {
+        "id": "pri-1",
+        "lessonId": "asal-sayilar",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Asal sayılar: bölen, kanıt ve çarpan",
+        "prompt": "1 sayısı nasıl sınıflandırılır?",
+        "options": [
+          "Asaldır.",
+          "Ne asal ne bileşiktir.",
+          "Bileşiktir."
+        ],
+        "answer": 1,
+        "explanation": "1’in yalnız bir pozitif böleni vardır. Asal ve bileşik tanımları 1’den büyük tam sayılar içindir.",
+        "hint": "Asal tanımındaki 1’den büyük ve iki farklı bölen koşullarını denetle."
+      },
+      {
+        "id": "fac-1",
+        "lessonId": "faktoriyel",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Faktöriyel: azalan seçimler ve ortak çarpım",
+        "prompt": "Üç farklı kitap, üç numaralı rafa birer kez ve ek kısıt olmadan kaç farklı düzende yerleşir?",
+        "options": [
+          "3",
+          "6",
+          "9"
+        ],
+        "answer": 1,
+        "explanation": "3 × 2 × 1 = 3! = 6. Farklı kitaplar ve numaralı raflar sıralamayı belirler.",
+        "hint": "Her yerleştirmede bir seçenek eksilir."
+      },
+      {
+        "id": "f013-foundation-birinci-dereceden-denklemler-1",
+        "lessonId": "birinci-dereceden-denklemler",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Birinci dereceden denklemler: eşitliği koru, çözümü doğrula",
+        "prompt": "x gerçek sayı olmak üzere 5−2(x−3)=3x+1 denkleminin kökü kaçtır?",
+        "options": [
+          "2",
+          "−2",
+          "1",
+          "3",
+          "10"
+        ],
+        "answer": 0,
+        "explanation": "Sol taraf 5−2x+6=11−2x olur. 11−2x=3x+1 eşitliğinde iki tarafa 2x ekleyip 1 çıkarırsak 10=5x, dolayısıyla x=2 bulunur. İlk denklemde sol taraf 5−2(2−3)=7, sağ taraf 3·2+1=7’dir. Eksi işareti parantezin tamamını etkiler.",
+        "hint": "−2’yi parantezin iki terimine de dağıt; sonra x’li terimleri bir araya getir."
+      },
+      {
+        "id": "f013-foundation-basit-esitsizlikler-1",
+        "lessonId": "basit-esitsizlikler",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Basit eşitsizlikler: yön, sınır ve çözüm aralığı",
+        "prompt": "x gerçek sayı olmak üzere −4x+7≤19 eşitsizliğinin çözüm kümesi hangisidir?",
+        "options": [
+          "[−3,∞)",
+          "(−∞,−3]",
+          "(−3,∞)",
+          "(−∞,3]",
+          "[3,∞)"
+        ],
+        "answer": 0,
+        "explanation": "İki taraftan 7 çıkarınca −4x≤12 olur. Negatif −4’e bölme yönü değiştirdiğinden x≥−3, yani [−3,∞) elde edilir. Uç x=−3 için eşitlik sağlanır; x=0 içeridedir, x=−4 ise 23≤19 yanlış olduğu için dışarıda kalır.",
+        "hint": "Önce 7 çıkar; sonra negatif −4’e bölerken eşitsizlik yönünü ters çevir."
+      },
+      {
+        "id": "f018-math-noktanin-analitigi-1",
+        "lessonId": "noktanin-analitigi",
+        "subjectId": "tyt-geometri",
+        "subjectName": "Geometri",
+        "lessonTitle": "Noktanın analitiği: konumdan geometrik ilişkiye",
+        "prompt": "Dik koordinat düzleminde P(k−1; 4−k) noktası I. bölgenin içindedir. k için gerekli ve yeterli koşul hangisidir?",
+        "options": [
+          "1≤k≤4",
+          "k<1",
+          "k>4",
+          "−1<k<4",
+          "1<k<4"
+        ],
+        "answer": 4,
+        "explanation": "k−1>0 ve 4−k>0 birlikte k>1 ve k<4 verir. Bu nedenle 1<k<4. Uç değerlerde bir koordinat sıfır olur; nokta eksendedir, bölgenin içinde değildir.",
+        "hint": "I. bölgede iki koordinat da kesin pozitiftir."
+      },
+      {
+        "id": "veri-analizi-015-1",
+        "lessonId": "veri-analizi",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Veri analizi: gözlemden ölçüye, ölçüden yoruma",
+        "prompt": "9,1,4,4,7,8 gözlemlerinin ortancası kaçtır?",
+        "options": [
+          "8",
+          "5,5",
+          "4",
+          "6",
+          "7"
+        ],
+        "answer": 1,
+        "explanation": "Sıralı liste 1,4,4,7,8,9 olur. Altı gözlemin üçüncü değeri 4, dördüncüsü 7; ortanca (4+7)/2=5,5’tir. Ortanca listede bulunan bir değer olmak zorunda değildir.",
+        "hint": "Önce altı gözlemi sırala, üçüncü ve dördüncüyü ortala."
+      },
+      {
+        "id": "grafik-problemleri-014-1",
+        "lessonId": "grafik-problemleri",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Grafik problemleri: veriyi oku, temsili sorgula",
+        "prompt": "Birbirinden ayrık üç kulüpte sırasıyla 20,30,50 kişi vardır. Bu 100 kişinin daire grafiğinde ikinci kulübün merkez açısı kaç derecedir?",
+        "options": [
+          "108",
+          "30",
+          "72",
+          "120",
+          "180"
+        ],
+        "answer": 0,
+        "explanation": "Toplam 100 kişidir. İkinci kulübün payı 30/100=3/10 olduğundan merkez açısı 360·3/10=108° olur. Kişi sayısı veya yüzde ile derece aynı nicelik değildir.",
+        "hint": "Önce ikinci grubun bütüne oranını bul; 360° ile çarp."
+      },
+      {
+        "id": "kumeler-014-1",
+        "lessonId": "kumeler",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Kümeler: elemandan Venn hesabına",
+        "prompt": "A={1,1,2,3} kümesinin eleman sayısı kaçtır?",
+        "options": [
+          "3",
+          "1",
+          "2",
+          "4",
+          "6"
+        ],
+        "answer": 0,
+        "explanation": "Listede 1 iki kez yazılsa da tek elemandır. Farklı elemanlar 1,2,3 olduğundan s(A)=3’tür. Liste uzunluğu ile farklı eleman sayısı aynı kavram değildir.",
+        "hint": "Kümelerde aynı nesnenin tekrarı yeni eleman yaratmaz."
+      },
+      {
+        "id": "kartezyen-carpim-014-1",
+        "lessonId": "kartezyen-carpim",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Kartezyen çarpım: sırayı ve bütün çiftleri koru",
+        "prompt": "A={1,2},B={3,4,5}. A×B’nin eleman sayısı kaçtır?",
+        "options": [
+          "6",
+          "2",
+          "3",
+          "5",
+          "9"
+        ],
+        "answer": 0,
+        "explanation": "İlk bileşen için 2, ikinci için 3 bağımsız seçim vardır; 2·3=6 çift elde edilir. Her A elemanını yalnız bir B elemanıyla eşleştirmek çarpımın bütününü vermez.",
+        "hint": "Her A elemanını B’nin üç elemanıyla eşleştir."
+      },
+      {
+        "id": "mantik-onerme-014-1",
+        "lessonId": "mantik-onerme",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Mantık: bağlaçtan karşı örneğe",
+        "prompt": "Hangi ifade, doğruluk değeri belirlenebilen bir önermedir?",
+        "options": [
+          "9 sayısı 3’ün katıdır.",
+          "Kapıyı kapat.",
+          "Yarın buluşalım mı?",
+          "Keşke hava güzel olsa.",
+          "En lezzetli meyve budur."
+        ],
+        "answer": 0,
+        "explanation": "9=3·3 olduğundan verilen ifade kesin doğru bir yargıdır ve önermedir. Diğer seçenekler emir, soru, dilek veya ölçütü belirtilmemiş beğeni içerir; bu anlamda önerme sayılmaz.",
+        "hint": "Kesin doğru/yanlış yargısını soru, emir ve öznel beğeniden ayır."
+      },
+      {
+        "id": "faiz-problemleri-012-1",
+        "lessonId": "faiz-problemleri",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Faiz problemleri: parayı, oranı ve zamanı ayır",
+        "prompt": "6000 TL yıllık %12 basit faizle 5 ay yatırılıyor. Faiz kaç TL’dir?",
+        "options": [
+          "300",
+          "250",
+          "360",
+          "600",
+          "720"
+        ],
+        "answer": 0,
+        "explanation": "Yıllık getiri 6000·0,12=720 TL; beş ay 12 ayın 5/12’sidir. F=720·5/12=300 TL. 720 TL bir yıllığın tamamı, 6300 TL ise faiz değil son tutar olur.",
+        "hint": "Önce 5 ayı yıl cinsine çevir."
+      },
+      {
+        "id": "karisim-problemleri-012-1",
+        "lessonId": "karisim-problemleri",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Karışım problemleri: iki ayrı kütle hesabı",
+        "prompt": "50 g %10 tuzlu su ile 150 g %30 tuzlu su birleştiriliyor. Tuz yüzdesi kaçtır?",
+        "options": [
+          "25",
+          "15",
+          "20",
+          "30",
+          "40"
+        ],
+        "answer": 0,
+        "explanation": "İlk kap 5 g, ikinci 45 g tuz taşır. Toplam 50 g tuz 200 g içinde %25 yapar. %20 düz ortalama olurdu; kütleler eşit olmadığı için o yöntem bu soruda geçersizdir.",
+        "hint": "Önce iki kaptaki tuz gramlarını topla."
+      },
+      {
+        "id": "isci-problemleri-012-1",
+        "lessonId": "isci-problemleri",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "İşçi problemleri: süreyi hıza, işi evrelere çevir",
+        "prompt": "Bir çalışan işi 24 saatte bitiriyor. Sabit hızla 9 saatte işin kaçta kaçı biter?",
+        "options": [
+          "3/8",
+          "1/3",
+          "3/4",
+          "5/8",
+          "8/3"
+        ],
+        "answer": 0,
+        "explanation": "Hız 1/24 iş/saat; 9 saatte 9/24=3/8 iş yapılır. Kalan 5/8’dir, fakat soru biten kısmı istemektedir. Saatleri iş payı olarak doğrudan toplamak veya ters çevirmek birimleri bozar.",
+        "hint": "Yapılan pay 9/24’tür."
+      },
+      {
+        "id": "havuz-problemleri-012-1",
+        "lessonId": "havuz-problemleri",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "İşçi ve havuz problemleri: net akışı ve sınırları izle",
+        "prompt": "Tank %30 dolu. Sabit giriş dakikada tankın 1/20’sini getiriyor. Tam dolma süresi kaç dakikadır?",
+        "options": [
+          "14",
+          "6",
+          "10",
+          "20",
+          "26"
+        ],
+        "answer": 0,
+        "explanation": "Gereken pay 1−0,30=0,70. Süre 0,70÷(1/20)=14 dk. Yerine koyunca 0,30+14/20=1. 20 dakika boş tank için olurdu; 6 dakika başlangıç payını hesaplar.",
+        "hint": "Eksik pay 0,70’tir; tam tank değildir."
+      },
+      {
+        "id": "hiz-problemleri-012-1",
+        "lessonId": "hiz-problemleri",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Hız problemleri: yolu, konumu ve geçen süreyi ayır",
+        "prompt": "150 km yol sabit 60 km/sa ile kaç saatte alınır?",
+        "options": [
+          "2,5",
+          "1,5",
+          "2",
+          "3",
+          "3,5"
+        ],
+        "answer": 0,
+        "explanation": "t=150/60=2,5 saat, yani 2 saat 30 dakikadır. Kontrol 60·2,5=150 km. Ondalık 0,5 saat 50 dakika değil 30 dakikadır; birim dönüşümünü son yanıtta koru.",
+        "hint": "Süre=yol/sürat; saat birimleri uyumlu."
+      },
+      {
+        "id": "sayi-problemleri-011-1",
+        "lessonId": "sayi-problemleri",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Sayı problemleri: cümleden modele, modelden kontrole",
+        "prompt": "Bir sayının 4 katının 9 fazlası 61'dir. Sayı kaçtır?",
+        "options": [
+          "13",
+          "11",
+          "15",
+          "17",
+          "20"
+        ],
+        "answer": 0,
+        "explanation": "4x=52 olduğundan x=13. Yerine koyunca 52+9=61 olur. 61'den 4 çıkarmak veya 9'u çarpmadan önce sayıya eklemek cümlenin işlem sırasını değiştirir.",
+        "hint": "Önce 4x+9=61 yaz."
+      },
+      {
+        "id": "kesir-problemleri-011-1",
+        "lessonId": "kesir-problemleri",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Kesir problemleri: bütünü seç, kalanı izle",
+        "prompt": "240 sayfalık bir kitabın 7/12'si okunmuştur. Kaç sayfa okunmuştur?",
+        "options": [
+          "140",
+          "100",
+          "120",
+          "160",
+          "180"
+        ],
+        "answer": 0,
+        "explanation": "Bir parça 240/12=20, yedi parça 140 sayfadır. 100 sayfa kalır, fakat soru okunanı soruyor; payda tek başına okunmuş oranı değil parçalama sayısını belirtir.",
+        "hint": "Önce 240'ı 12 eş parçaya ayır."
+      },
+      {
+        "id": "yas-problemleri-011-1",
+        "lessonId": "yas-problemleri",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Yaş problemleri: aynı tarihi aynı sütunda tut",
+        "prompt": "Bugün 24 yaşında olan biri 7 yıl önce kaç yaşındaydı?",
+        "options": [
+          "17",
+          "7",
+          "16",
+          "24",
+          "31"
+        ],
+        "answer": 0,
+        "explanation": "24−7=17. Yedi yılı eklemek gelecek yaşı olan 31'i verir. Aynı kişinin geçmişteki yaşı bugünkünden küçük olmalı; 17+7=24 kontrolü doğru sütunu doğrular.",
+        "hint": "Geçmiş için zaman kayması negatiftir."
+      },
+      {
+        "id": "yuzde-problemleri-011-1",
+        "lessonId": "yuzde-problemleri",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Yüzde problemleri: tabanı izle, değişimi çarpanla kur",
+        "prompt": "280'in %15'i kaçtır?",
+        "options": [
+          "42",
+          "28",
+          "35",
+          "48",
+          "56"
+        ],
+        "answer": 0,
+        "explanation": "280·15/100=42. %10'u 28, %5'i 14; toplam 42 kontrolü yapılabilir. 280'i 15'e bölmek ya da 15 ile çarpıp yüze bölmemek farklı işlemlerdir.",
+        "hint": "%15'i 15/100 olarak kullan."
+      },
+      {
+        "id": "kar-zarar-problemleri-011-1",
+        "lessonId": "kar-zarar-problemleri",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Kâr zarar problemleri: maliyeti, etiketi ve geliri ayır",
+        "prompt": "160 TL maliyetli bir ürün 200 TL'ye satılıyor. Maliyete göre kâr yüzdesi nedir?",
+        "options": [
+          "%25",
+          "%20",
+          "%30",
+          "%40",
+          "%80"
+        ],
+        "answer": 0,
+        "explanation": "Kâr 40 TL; 40/160·100=%25. 40/200=%20 satışa göre marjdır. 160·1,25=200 doğrulaması, yüzde tabanının maliyet olduğunu gösterir.",
+        "hint": "Kârı maliyete böl."
+      },
+      {
+        "id": "mutlak-deger-093-1",
+        "lessonId": "mutlak-deger",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Mutlak değer: uzaklıktan çözüm kümesine",
+        "prompt": "|−7|−|−2| işleminin sonucu kaçtır?",
+        "options": [
+          "5",
+          "−5",
+          "9",
+          "−9",
+          "14"
+        ],
+        "answer": 0,
+        "explanation": "İşlem 7−2=5'tir. Dikkat: Mutlak değeri dışarıdaki çıkarma üzerine de uygulamak veya tüm farkı tek mutlak değere toplamak farklı işlem olur.",
+        "hint": "İki mutlak değeri ayrı hesapla; dışarıdaki çıkarma kalır."
+      },
+      {
+        "id": "uslu-sayilar-093-1",
+        "lessonId": "uslu-sayilar",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Üslü sayılar: işaret, işlem ve büyüklük",
+        "prompt": "−2⁴+(−2)⁴ işleminin sonucu kaçtır? Üs önceliği standarttır.",
+        "options": [
+          "0",
+          "32",
+          "−32",
+          "16",
+          "−16"
+        ],
+        "answer": 0,
+        "explanation": "−2⁴=−16, (−2)⁴=16; toplam 0'dır. Dikkat: İki ifadenin taban kapsamını aynı okumak işaret hatası yaratır.",
+        "hint": "İlk eksi parantez içinde değildir."
+      },
+      {
+        "id": "bilimsel-gosterim-katsayi-093-1",
+        "lessonId": "bilimsel-gosterim-katsayi",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Bilimsel gösterim ve katsayı: aynı değeri farklı ölçekte oku",
+        "prompt": "0,000072 sayısının standart bilimsel gösterimi hangisidir?",
+        "options": [
+          "7,2×10⁻⁵",
+          "7,2×10⁵",
+          "0,72×10⁻⁴",
+          "72×10⁻⁶",
+          "7,2×10⁻⁶"
+        ],
+        "answer": 0,
+        "explanation": "Virgül beş basamak sağa taşınır; sayı 7,2×10⁻⁵'tir. Katsayı 7,2 koşulu sağlar. Dikkat: 0,72 veya 72 katsayıları sayısal eşitlik verebilir ama standart katsayı koşulunu sağlamaz.",
+        "hint": "7,2'ye ulaşmak için virgül kaç basamak sağa gider?"
+      },
+      {
+        "id": "koklu-sayilar-093-1",
+        "lessonId": "koklu-sayilar",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Köklü sayılar: esas değer, alan ve güvenli dönüşüm",
+        "prompt": "√49 ifadesinin esas gerçek değeri kaçtır?",
+        "options": [
+          "7",
+          "−7",
+          "±7",
+          "49",
+          "14"
+        ],
+        "answer": 0,
+        "explanation": "7²=49 ve 7≥0; √49=7'dir. Dikkat: ±7, x²=49 denkleminin iki çözümünü ifade eder; √49'un tek değeri değildir.",
+        "hint": "Kök işareti negatif olmayan tek değeri seçer."
+      },
+      {
+        "id": "oran-oranti-093-1",
+        "lessonId": "oran-oranti",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Oran orantı: sabit olanı bul, modeli doğrula",
+        "prompt": "Bir kutuda 15 kırmızı ve 25 mavi boncuk vardır. Kırmızı boncuk sayısının bütün boncuk sayısına oranı kaçtır?",
+        "options": [
+          "3/8",
+          "3/5",
+          "5/3",
+          "5/8",
+          "2/5"
+        ],
+        "answer": 0,
+        "explanation": "İstenen 15/(15+25)=15/40=3/8'dir. Dikkat: 3/5 kırmızının maviye oranıdır; soruda istenen parça/bütün farklıdır.",
+        "hint": "Bütün boncuk sayısı 40'tır."
+      },
+      {
+        "id": "factr-1",
+        "lessonId": "carpanlara-ayirma-ileri",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Çarpanlara ayırma: ileri alıştırmalar",
+        "prompt": "6x²+15x ifadesinin çarpanlarına ayrılmış biçimi hangisidir?",
+        "options": [
+          "3x(2x+5)",
+          "3(2x²+5)",
+          "3x(2x+15)",
+          "x(6x²+15)",
+          "(6x+3)(x+5)"
+        ],
+        "answer": 0,
+        "explanation": "6x²=3x·2x ve 15x=3x·5. Bu yüzden 3x(2x+5); açılım iki terimi de geri verir. 3x dışarı alındığında parantez içinde 15 değil 5 kalır.",
+        "hint": "Her iki terimde ortak olan sayı ve x’i birlikte ara."
+      },
+      {
+        "id": "f013-foundation-sayi-basamaklari-1",
+        "lessonId": "sayi-basamaklari",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Sayı basamakları: rakamdan koşullu denkleme",
+        "prompt": "Onluk sayı sisteminde 64027 sayısındaki 4 rakamının basamak değeri kaçtır?",
+        "options": [
+          "4000",
+          "4",
+          "40",
+          "400",
+          "40000"
+        ],
+        "answer": 0,
+        "explanation": "64027=6·10000+4·1000+0·100+2·10+7’dir. 4 binler basamağında olduğundan katkısı 4·1000=4000 olur. Rakamın sayı değeri 4’tür; basamak değeri konumuna göre büyür.",
+        "hint": "Rakamın bulunduğu konumu sağdan sola belirle."
+      },
+      {
+        "id": "f013-foundation-bolme-bolunebilme-1",
+        "lessonId": "bolme-bolunebilme",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Bölme ve bölünebilme: gruplar, kalanlar ve koşullar",
+        "prompt": "157 doğal sayısı 12’ye bölündüğünde tam sayı bölüm ve kalan sırasıyla kaçtır?",
+        "options": [
+          "13 ve 1",
+          "12 ve 13",
+          "13 ve 0",
+          "12 ve 1",
+          "14 ve 11"
+        ],
+        "answer": 0,
+        "explanation": "12·13=156 ve 157−156=1 olduğundan bölüm 13, kalan 1’dir. 157=12·13+1 ve 1<12 birlikte sağlanır. Bölüm 12 seçilirse artan 13 olur; 13 böleni aştığı için bir grup daha çıkarmak gerekir.",
+        "hint": "157=12 q+r ve 0≤r<12 koşullarını birlikte sağla."
+      },
+      {
+        "id": "f013-foundation-ebob-ekok-1",
+        "lessonId": "ebob-ekok",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "EBOB ve EKOK: ortak parça mı, ortak tekrar mı?",
+        "prompt": "96 ve 144 pozitif tam sayılarının en büyük ortak böleni kaçtır?",
+        "options": [
+          "48",
+          "12",
+          "24",
+          "36",
+          "72"
+        ],
+        "answer": 0,
+        "explanation": "96=2⁵·3,144=2⁴·3². Ortak bölen için 2’nin küçük üssü 4,3’ün küçük üssü 1 alınır:16·3=48. Kontrol 96/48=2 ve 144/48=3 tam sayıdır; 72 ise 96’yı tam bölmez.",
+        "hint": "Ortak asal çarpanlarda küçük kuvveti seç veya Öklid yöntemi kullan."
+      },
+      {
+        "id": "r2",
+        "lessonId": "rasyonel-sayilar",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Rasyonel sayılar",
+        "prompt": "1/2 + 1/3 kaçtır?",
+        "options": [
+          "2/5",
+          "1/6",
+          "5/6"
+        ],
+        "answer": 2,
+        "explanation": "3/6 + 2/6 = 5/6. Paydalar doğrudan toplanmaz.",
+        "hint": "6 ortak paydasını kullan.",
+        "guidance": {
+          "knowledge": [
+            "Payda eş parçanın büyüklüğünü, pay bu parçalardan kaç tane alındığını belirtir. Toplamadan önce parça büyüklüklerini eşitle."
+          ],
+          "strategy": "2 ve 3’ün ortak katı olan 6’yı payda yap; genişletirken payı ve paydayı aynı sayı ile çarp.",
+          "steps": [
+            "1/2=(1×3)/(2×3)=3/6; 1/3=(1×2)/(3×2)=2/6.",
+            "Artık aynı büyüklükteki parçaları sayabilirsin: 3/6+2/6=(3+2)/6."
+          ],
+          "optionReasons": [
+            "2/5, pay ve paydayı ayrı ayrı toplama hatasıdır; ortak parça büyüklüğü kurulmamıştır.",
+            "1/6, 1/2 ile 1/3’ün çarpımıdır; soruda toplama istenir.",
+            "5/6 doğrudur: 3 tane altıda bir ile 2 tane altıda bir toplam 5 tane altıda birdir."
+          ],
+          "commonError": "Kesir toplamında paydaları toplama; ortak payda aynı kalır.",
+          "check": "Sonuç 1/2’den büyük, 1’den küçük olmalı. 5/6 bu aralıktadır; 5/6−1/3=1/2."
+        }
+      },
+      {
+        "id": "c2",
+        "lessonId": "carpanlara-ayirma",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Çarpanlara ayırma",
+        "prompt": "x(x−2)=0 denkleminde x’e bölmek hangi kökü kaybettirir?",
+        "options": [
+          "0",
+          "2",
+          "Hiçbiri"
+        ],
+        "answer": 0,
+        "explanation": "x=0 bir çözümdür. Sıfıra bölme yapılamaz; bu olasılık ayrıca korunmalıdır.",
+        "hint": "Bölme adımında bölen sıfır olabilir mi?",
+        "guidance": {
+          "knowledge": [
+            "Gerçek sayılarda bir çarpım sıfırsa çarpanlardan en az biri sıfırdır. Sıfır olabilecek ifadeye bölmek eşdeğerliği bozabilir."
+          ],
+          "strategy": "Bölmek yerine x=0 ve x−2=0 olasılıklarını ayrı ayrı koru.",
+          "steps": [
+            "İlk çarpan x=0 olduğunda çarpım sıfırdır.",
+            "x’e bölmek, işlemi yalnız x≠0 koşulunda geçerli kılar; x=0 çözümü bu sırada dışlanır."
+          ],
+          "optionReasons": [
+            "0 kökü kaybolur; x=0 için bölme işlemi tanımlı değildir.",
+            "2 kökü kaybolmaz; x=2 sıfırdan farklı olduğundan bölme adımını sağlar.",
+            "Hiçbiri yanlıştır; x’e bölmek 0 çözümünü dışarıda bırakır."
+          ],
+          "commonError": "Denklemde bilinmeyene bölmeden önce o bilinmeyenin sıfır olup olamayacağını denetle.",
+          "check": "0×(0−2)=0 ve 2×(2−2)=0. Başlangıç denkleminde iki kök vardır."
+        }
+      },
+      {
+        "id": "area-2",
+        "lessonId": "alan-donusumleri",
+        "subjectId": "tyt-geometri",
+        "subjectName": "Geometri",
+        "lessonTitle": "Üçgen ve paralelkenarda alan",
+        "prompt": "Tabanı 8, dik yüksekliği 5 birim olan paralelkenarın alanı kaçtır?",
+        "options": [
+          "40 birim²",
+          "20 birim²",
+          "26 birim²"
+        ],
+        "answer": 0,
+        "explanation": "A = b × h = 8 × 5 = 40 birim².",
+        "hint": "Dikdörtgene dönüşünce taban ve yüksekliği koru."
+      },
+      {
+        "id": "bas-2",
+        "lessonId": "temel-kavramlar",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Temel kavramlar: sayı, değer ve tanım koşulu",
+        "prompt": "a ve b farklı rakamlar, a ≠ 0. İki basamaklı 10a + b en çok kaç olabilir?",
+        "options": [
+          "99",
+          "89",
+          "98"
+        ],
+        "answer": 2,
+        "explanation": "a = 9 seçilir. b farklı olduğundan en çok 8’dir; sayı 98 olur. 99 farklı rakam koşulunu bozar.",
+        "hint": "Onlar basamağını büyüt, sonra farklılık koşulunu koru."
+      },
+      {
+        "id": "par-2",
+        "lessonId": "tek-cift-isaret",
+        "subjectId": "tyt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Tek–çift ve işaret: iki ayrı özellik",
+        "prompt": "−3² ve (−3)² sırasıyla kaçtır?",
+        "options": [
+          "9 ve 9",
+          "−9 ve 9",
+          "−9 ve −9"
+        ],
+        "answer": 1,
+        "explanation": "−3² = −(3²) = −9. (−3)² = (−3)(−3) = 9.",
+        "hint": "Üs hangi tabanı kapsıyor?"
+      },
+      {
+        "id": "dgo-1",
+        "lessonId": "dunya-gucu-osmanli",
+        "subjectId": "tyt-tarih",
+        "subjectName": "Tarih",
+        "lessonTitle": "Dünya Gücü Osmanlı",
+        "prompt": "Bu gelişmelerin hazırlık–olay–siyasi sonuç sırası hangi seçenekte doğru verilmiştir?",
+        "passage": "II. Mehmet İstanbul kuşatması öncesinde Rumeli Hisarı’nı yaptırdı. 29 Mayıs 1453’te İstanbul alındı. Fetih sonrasında kullandığı Kayser-i Rum unvanı Roma siyasi mirasına sahip çıkma iddiasını yansıttı.",
+        "options": [
+          "Kayser-i Rum unvanı – Rumeli Hisarı – İstanbul’un alınması",
+          "İstanbul’un alınması – Kayser-i Rum unvanı – Rumeli Hisarı",
+          "Rumeli Hisarı – İstanbul’un alınması – Kayser-i Rum unvanı",
+          "Rumeli Hisarı – Kayser-i Rum unvanı – İstanbul’un alınması",
+          "İstanbul’un alınması – Rumeli Hisarı – Kayser-i Rum unvanı"
+        ],
+        "answer": 2,
+        "explanation": "Rumeli Hisarı kuşatma öncesi hazırlıktır. Şehrin alınması olaydır. Kayser-i Rum unvanı ise Roma başkentinin fethinden sonraki siyasi miras iddiasını gösterir.",
+        "hint": "Fetihten önce ne yapıldığını ve Roma mirası iddiasının hangi olaydan sonra anlam kazandığını düşün."
+      },
+      {
+        "id": "f12h-milli-mucadele-01",
+        "lessonId": "milli-mucadele",
+        "subjectId": "tyt-tarih",
+        "subjectName": "Tarih",
+        "lessonTitle": "Millî Mücadele: yerel direnişten bağımsız devlete",
+        "prompt": "Belge ve işlevi hangi seçenekte birlikte doğrudur?",
+        "passage": "Bir belge milletin bağımsızlığını yine milletin azim ve kararının kurtaracağını bildiriyor ve Sivas’ta kongre toplanmasını istiyor.",
+        "options": [
+          "Amasya Genelgesi: millî iradeye dayalı örgütlenme çağrısı",
+          "Lozan: kesin barışın imzalanması",
+          "Mudanya: ateşkes hükümlerinin uygulanması",
+          "Montrö: Boğazlar Komisyonunun kaldırılması",
+          "Medeni Kanun: miras düzenlemesi"
+        ],
+        "answer": 0,
+        "explanation": "Amasya Genelgesi tehlike, millet iradesi ve örgütlenme yöntemini birleştirir. Lozan, Mudanya ve Montrö farklı tarihlerde devletler arası belgelerdir; miras düzenlemesi ise bu çağrının konusu değildir.",
+        "hint": "Kongre çağrısı ile egemenlik kaynağını birlikte kullan."
+      },
+      {
+        "id": "f12h-ataturkculuk-inkilap-01",
+        "lessonId": "ataturkculuk-inkilap",
+        "subjectId": "tyt-tarih",
+        "subjectName": "Tarih",
+        "lessonTitle": "Atatürkçülük ve inkılaplar: amaçtan kurumlara",
+        "prompt": "En doğrudan ilgili ilke hangisidir?",
+        "passage": "Bir düzenleme karar yetkisinin hanedandan değil milletten gelmesini ve yönetimin temsil esasına dayanmasını vurguluyor.",
+        "options": [
+          "Cumhuriyetçilik",
+          "Yalnız dış ticaret korumacılığı",
+          "Hanedan üstünlüğü",
+          "Merkantilizm",
+          "Sömürgecilik"
+        ],
+        "answer": 0,
+        "explanation": "Millî egemenlik ve temsil cumhuriyetçiliğin ayırt edici yönüdür. Verilen kanıt ekonomik korumacılık veya hanedan üstünlüğünü desteklemez. İlke seçimi yalnız bir tarih etiketine değil düzenlemenin açık amacına dayanır.",
+        "hint": "Yetkinin kime ait olduğunu belirle."
+      },
+      {
+        "id": "f12h-iki-savas-arasi-turkiye-dunya-01",
+        "lessonId": "iki-savas-arasi-turkiye-dunya",
+        "subjectId": "tyt-tarih",
+        "subjectName": "Tarih",
+        "lessonTitle": "İki savaş arasında Türkiye: iç siyaset ve diplomasi",
+        "prompt": "Hangi belge ve sorun söz konusudur?",
+        "passage": "1926’da Türkiye, İngiltere ve Irak arasındaki sınır düzenleniyor; Musul Irak’ta kalıyor.",
+        "options": [
+          "1926 Ankara Antlaşması: Musul",
+          "1921 Ankara Antlaşması: Fransa cephesi",
+          "1936 Montrö: okul denetimi",
+          "1934 Balkan Antantı: Medeni Kanun",
+          "1928 alfabe kanunu: mübadele"
+        ],
+        "answer": 0,
+        "explanation": "Türkiye-İngiltere-Irak ve 1926 kanıtları Musul meselesindeki Ankara Antlaşmasını gösterir.1921’de Fransa’yla aynı şehir adıyla anılan belge farklıdır. Şehir adının ortaklığı antlaşmanın taraf ve konusunu değiştirmez.",
+        "hint": "Tarafları ve yılı birlikte kullan."
+      },
+      {
+        "id": "f12h-kuresel-savaslar-arasinda-turkiye-dunya-01",
+        "lessonId": "kuresel-savaslar-arasinda-turkiye-dunya",
+        "subjectId": "tyt-tarih",
+        "subjectName": "Tarih",
+        "lessonTitle": "Küresel savaşlar arasında: barış arayışı, kriz ve rejimler",
+        "prompt": "Örgütün adı nedir?",
+        "passage": "1920’de merkezi Cenevre olan uluslararası örgüt barışı korumak için faaliyete başlıyor; fikri destekleyen ABD örgüte katılmıyor.",
+        "options": [
+          "Milletler Cemiyeti",
+          "1945 Birleşmiş Milletler",
+          "1934 Balkan Antantı",
+          "1937 Sadabat Paktı",
+          "1923 Türkiye Büyük Millet Meclisi"
+        ],
+        "answer": 0,
+        "explanation": "1920 ve Cenevre Milletler Cemiyetini gösterir. Birleşmiş Milletler 1945’te kuruldu; Balkan ve Sadabat bölgesel girişimlerdir. Bir fikri desteklemek hukuki üyelikle aynı olmadığı için ABD’nin durumu ayrıca belirtilmiştir.",
+        "hint": "Kuruluş yılı, merkez ve ABD’nin durumunu birlikte kullan."
+      },
+      {
+        "id": "f020-geo-dunya-sekli-hareket-1",
+        "lessonId": "dunya-sekli-hareket",
+        "subjectId": "tyt-cografya",
+        "subjectName": "Coğrafya",
+        "lessonTitle": "Dünya’nın şekli ve hareketleri: ışın, gün ve mevsim",
+        "prompt": "İdeal yerel öğlede enlem +35°, Güneş deklinasyonu −23,5° olarak verilmiştir. Yükseklik 90°−|enlem−deklinasyon| ise sonuç nedir?",
+        "options": [
+          "78,5°",
+          "31,5°",
+          "55°",
+          "58,5°",
+          "113,5°"
+        ],
+        "answer": 1,
+        "explanation": "|35−(−23,5)| =58,5°;90−58,5 =31,5°. Yönleri atıp yalnız 35−23,5 yapmak farklı tarihin sonucunu üretir.",
+        "hint": "İki farklı işaret arasındaki açısal farkı doğru al."
+      },
+      {
+        "id": "f020-geo-cografi-konum-1",
+        "lessonId": "cografi-konum",
+        "subjectId": "tyt-cografya",
+        "subjectName": "Coğrafya",
+        "lessonTitle": "Coğrafi konum: koordinat, zaman ve çevre",
+        "prompt": "Aynı meridyendeki A 12° kuzey, B 8° güney enleminde. 1° enlem yayı 111 km alınırsa aralık kaç km’dir?",
+        "options": [
+          "444",
+          "2220",
+          "1110",
+          "1332",
+          "888"
+        ],
+        "answer": 1,
+        "explanation": "İşaretli fark |12−(−8)| =20°;20×111 =2220 km meridyen yayı yaklaşımıdır. Bu sayı arazi yolu mesafesi değildir.",
+        "hint": "Ekvator’un iki tarafındaki açısal aralıkları topla."
+      },
+      {
+        "id": "f020-geo-harita-bilgisi-1",
+        "lessonId": "harita-bilgisi",
+        "subjectId": "tyt-cografya",
+        "subjectName": "Coğrafya",
+        "lessonTitle": "Harita bilgisi: ölçekten arazi profiline",
+        "prompt": "1:125.000 haritada iki nokta arası 2,4 cm. Gerçek yatay uzaklık kaç km?",
+        "options": [
+          "30",
+          "3",
+          "300",
+          "0,3",
+          "125"
+        ],
+        "answer": 1,
+        "explanation": "2,4×125.000 =300.000 cm=3 km. Ölçek oranı birimsizdir; cm sonucunu doğrudan km diye okuyamayız.",
+        "hint": "Önce santimetre sonucunu bul, sonra 100.000’e böl."
+      },
+      {
+        "id": "f019-geo-bolge-turleri-1",
+        "lessonId": "bolge-turleri",
+        "subjectId": "tyt-cografya",
+        "subjectName": "Coğrafya",
+        "lessonTitle": "Bölge ve bölge türleri: ölçüt, sınır ve ağ",
+        "prompt": "X haritasında yalnız aynı buğday ürününü yetiştiren köyler boyanmıştır; ortak bir merkezle bağlantı koşulu yoktur. Bölge türü nedir?",
+        "options": [
+          "Doğal şekilsel",
+          "Beşerî şekilsel",
+          "Hastane hizmet bölgesi",
+          "Mutlaka işlevsel ulaşım bölgesi",
+          "Yalnız su toplama havzası"
+        ],
+        "answer": 1,
+        "explanation": "Buğday üretimi insanın ekonomik faaliyeti olup ortak özellik ölçütüdür. Merkez veya akış verilmediği için işlevsel bağı zorunlu sayamayız.",
+        "hint": "Köyleri seçen ortak özelliği bul."
+      },
+      {
+        "id": "f019-geo-ulasim-aglari-1",
+        "lessonId": "ulasim-aglari",
+        "subjectId": "tyt-cografya",
+        "subjectName": "Coğrafya",
+        "lessonTitle": "Ulaşım: ağlar, su yolları ve rota kararı",
+        "prompt": "X–Y dolaşma rotası 1000 km, kanal 700 km’dir. Ortak hız 20 km/saat, kanal beklemesi 18 saattir; başka süre yok. Hangi sonuç doğrudur?",
+        "options": [
+          "Dolaşma 35, kanal 50 saat sürer.",
+          "Dolaşma 50, kanal 53 saat sürer.",
+          "Kanal kesin 15 saat sürer.",
+          "İki rota da 18 saat sürer.",
+          "Kanal daha kısa olduğu için her zaman daha hızlıdır."
+        ],
+        "answer": 1,
+        "explanation": "1000/20 =50; 700/20 +18 =53 saattir. Kanal 300 km daha kısa olsa da toplam süre 3 saat uzundur.",
+        "hint": "Hareket süresine beklemeyi ekle."
+      },
+      {
+        "id": "felsefeyi-tanima-020-1",
+        "lessonId": "felsefeyi-tanima",
+        "subjectId": "tyt-felsefe",
+        "subjectName": "Felsefe",
+        "lessonTitle": "Felsefeyi tanıma: sorudan gerekçeye",
+        "prompt": "İkinci araştırmanın felsefi yönünü en iyi belirten açıklama hangisidir?",
+        "passage": "Bir öğrenci bir resim için önce hangi yılda yapıldığını araştırıyor. Ardından hangi niteliğin bir resmi güzel saymak için yeterli olacağını tartışıyor.",
+        "options": [
+          "Kendi beğenisini gerekçe istemeden herkese zorunlu kılması",
+          "Resmin maddi varlığını bir laboratuvar deneyiyle ölçmesi",
+          "Güzelliğin ölçütünü kavramsal ve gerekçeli biçimde soruşturması",
+          "Yalnız resmin tarihini daha kesin ölçmesi",
+          "Her güzel resmin aynı yılda yapıldığını varsayması"
+        ],
+        "answer": 2,
+        "explanation": "İlk soru olgusal tarih bilgisi ister. İkinci soru güzellik kavramını ve onu değerlendirme ölçütünü açar. Belirleyici olan soru eki değil gerekçe ve kavram araştırmasıdır.",
+        "hint": "İstenen bilgi bir olayın tarihi mi, bir değerlendirme ölçütü mü?"
+      },
+      {
+        "id": "felsefe-ile-dusunme-020-1",
+        "lessonId": "felsefe-ile-dusunme",
+        "subjectId": "tyt-felsefe",
+        "subjectName": "Felsefe",
+        "lessonTitle": "Felsefe ile düşünme: öncül, sonuç ve karşı örnek",
+        "prompt": "Aşağıdakilerden hangisi bu ifadenin önerme olmasının dayanağıdır?",
+        "passage": "“Bu salondaki bütün pencereler kapalıdır.” ifadesi belirli bir durum hakkında doğru ya da yanlış olabilen bir yargı ileri sürüyor.",
+        "options": [
+          "Emir kipinde yazılmış olması",
+          "Yalnız tek sözcükten oluşması",
+          "Söyleyenin duygusunu hiçbir iddia olmadan açığa vurması",
+          "Doğruluk değeri taşıyan bir yargı bildirmesi",
+          "Her koşulda mutlaka doğru olması"
+        ],
+        "answer": 3,
+        "explanation": "Önerme, belirli anlam ve bağlamda doğruluk değeri taşıyan yargıdır. Bütün pencereler kapalıdır sözü yanlış da olabilir; yanlış olma ihtimali önerme niteliğini kaldırmaz.",
+        "hint": "Bir önermenin yanlış olabilmesi onun önerme olmasını engeller mi?"
+      },
+      {
+        "id": "varlik-felsefesi-020-1",
+        "lessonId": "varlik-felsefesi",
+        "subjectId": "tyt-felsefe",
+        "subjectName": "Felsefe",
+        "lessonTitle": "Varlık felsefesi: ne var, neye dayanıyor?",
+        "prompt": "Bu görüşün nicelik ve nitelik bakımından nitelemesi hangisidir?",
+        "passage": "Bir kişi taş, su ve insan bedenini aynı maddi temelin farklı düzenlenişleri sayıyor; birbirine indirgenemeyen ayrı bir zihinsel töz kabul etmiyor.",
+        "options": [
+          "İki bağımsız töz kabul eden düalizm",
+          "Nesne sayısı üç olduğu için zorunlu üççülük",
+          "Bütün maddi varlığı reddeden salt öznel idealizm",
+          "Yalnız ahlaki ölçütleri araştıran görüş",
+          "Tek temel kabul eden materyalist monizm"
+        ],
+        "answer": 4,
+        "explanation": "Çeşitli nesneler aynı tek maddi temelle açıklanıyor. Tek temel nicelik bakımından monizm, temelin madde oluşu nitelik bakımından materyalizmdir. Nesne çeşitliliği töz çoğulluğu değildir.",
+        "hint": "Açıklanan nesneleri değil bağımsız temel ilkeleri say."
+      },
+      {
+        "id": "bilgi-felsefesi-020-1",
+        "lessonId": "bilgi-felsefesi",
+        "subjectId": "tyt-felsefe",
+        "subjectName": "Felsefe",
+        "lessonTitle": "Bilgi felsefesi: kaynak, ölçüt ve sınır",
+        "prompt": "Burada doğrudan hangi problem incelenmektedir?",
+        "passage": "Ece kapıya bakarak “Kapı açık.” yargısına ulaşıyor. Soru, bu yargının hangi yolla elde edildiğini araştırıyor; olguyla uygunluğunu sormuyor.",
+        "options": [
+          "Yalnız yargıların sayısal yazı uzunluğu",
+          "Bilginin kaynağı",
+          "Varlığın kaç temel tözden oluştuğu",
+          "Eylemin ahlaki yükümlülüğü",
+          "Güzelin evrensel ölçütü"
+        ],
+        "answer": 1,
+        "explanation": "Ece’nin bakarak öğrenmesi bilginin ediniliş yoluna ilişkindir. Bu kaynak sorusudur. Aynı örnek başka bir soruda uygunluk için kullanılabilirdi; burada o odak özellikle dışarıda bırakılmıştır.",
+        "hint": "Nasıl elde edildiği ile neye göre doğru sayıldığı ayrımını koru."
+      },
+      {
+        "id": "bilim-felsefesi-020-1",
+        "lessonId": "bilim-felsefesi",
+        "subjectId": "tyt-felsefe",
+        "subjectName": "Felsefe",
+        "lessonTitle": "Bilim felsefesi: veri, açıklama ve sınama",
+        "prompt": "Filozofun sorusunu ayıran yön hangisidir?",
+        "passage": "Bir biyolog fidelerin büyümesini ölçüyor. Bir filozof ise bir açıklamanın bilimsel sayılması için hangi sınama koşullarını taşıması gerektiğini soruyor.",
+        "options": [
+          "Bilimin yöntem ve sınama ölçütlerini incelemesi",
+          "Fidelerin boyunu yalnız daha küçük birimle ölçmesi",
+          "Aynı bitki sayısını daha yüksek sesle tekrar etmesi",
+          "Bilimsel verinin hiçbir zaman gerekmediğini ilan etmesi",
+          "Her deney sonucunun yalnız kişisel beğeni olduğunu savunması"
+        ],
+        "answer": 0,
+        "explanation": "İlk araştırma olguyu ölçer; ikinci soru bilimsel açıklamanın yöntemsel niteliğini inceler. Bu bilim felsefesinin doğrudan sorusudur. Bilimden söz etmek veriyi gereksiz saymak anlamına gelmez.",
+        "hint": "Sorunun nesnesi fide mi, bilimin kendisi mi?"
+      },
+      {
+        "id": "n1",
+        "lessonId": "newton",
+        "subjectId": "tyt-fizik",
+        "subjectName": "Fizik",
+        "lessonTitle": "Kuvvet ve Newton yasaları",
+        "prompt": "2 kg cisme sağa 10 N, sola 4 N uygulanıyor. İvme?",
+        "options": [
+          "Sağa 3 m/s²",
+          "Sağa 7 m/s²",
+          "Sola 3 m/s²"
+        ],
+        "answer": 0,
+        "explanation": "Fnet=10−4=6 N sağa; a=6/2=3 m/s² sağa.",
+        "hint": "Önce net kuvveti bul, sonra kütleye böl.",
+        "guidance": {
+          "knowledge": [
+            "Sabit kütleli cisim için net kuvvet F=m a’dır. F newton, m kilogram, a m/s² birimindedir. Kuvvetler yönleriyle toplanır."
+          ],
+          "strategy": "Sağı pozitif seç. Önce yatay net kuvveti hesapla, sonra kütleye böl.",
+          "steps": [
+            "Sağ yönlü 10 N ile sol yönlü 4 N’nin bileşkesi +10−4=+6 N’dir.",
+            "a=F/m=6/2=3 m/s². Pozitif işaret sağ yönü gösterir."
+          ],
+          "optionReasons": [
+            "Sağa 3 m/s² doğrudur; net kuvvet 6 N ve kütle 2 kg’dır.",
+            "Sağa 7 m/s², zıt kuvvetlerin büyüklüklerini 10+4 olarak toplama hatasıdır.",
+            "Büyüklük 3 olsa da sol yön yanlıştır; daha büyük kuvvet sağa etkir."
+          ],
+          "commonError": "Zıt yönlü kuvvetleri aynı işaretle toplama; kuvveti doğrudan ivme diye yazma.",
+          "check": "m a=2×3=6 N sağa; bu sonuç kuvvetlerin bileşkesiyle aynıdır."
+        }
+      },
+      {
+        "id": "isi-ve-sicaklik-q1",
+        "lessonId": "isi-ve-sicaklik",
+        "subjectId": "tyt-fizik",
+        "subjectName": "Fizik",
+        "lessonTitle": "Isı ve sıcaklık",
+        "prompt": "Bir metal parça, daha soğuk bir sıvıya temas ederek ona 600 J enerji aktarıyor. Bu 600 J ve parçanın taneciklerinin mikroskobik kinetik–potansiyel enerji toplamı sırasıyla hangi kavramlardır?",
+        "options": [
+          "Sıcaklık — ısı",
+          "Isı — iç enerji",
+          "İç enerji — sıcaklık",
+          "Isı — sıcaklık",
+          "Sıcaklık — iç enerji"
+        ],
+        "answer": 1,
+        "explanation": "Sıcaklık farkı nedeniyle aktarılan 600 J ısıdır (Q). Parçanın taneciklerinin mikroskobik kinetik ve potansiyel enerji toplamı iç enerjidir (U). İkisinin birimi J olsa da biri aktarımı, diğeri sistemin enerji durumunu anlatır. Sıcaklığın birimi kelvindir; aktarılan enerji sıcaklık değildir.",
+        "hint": "Aktarımın nedeni sıcaklık farkıdır; toplam mikroskobik enerji ise sistemin bir özelliğidir."
+      },
+      {
+        "id": "kuresel-aynalar-q1",
+        "lessonId": "kuresel-aynalar",
+        "subjectId": "tyt-fizik",
+        "subjectName": "Fizik",
+        "lessonTitle": "Küresel aynalar: odaktan görüntüye ışın kur",
+        "prompt": "Çukur aynada f=10 cm, u=30 cm. Paraksiyal 1/f=1/u+1/v kuralıyla v?",
+        "options": [
+          "5 cm arkada",
+          "15 cm önde",
+          "15 cm arkada",
+          "30 cm önde",
+          "10 cm önde"
+        ],
+        "answer": 1,
+        "explanation": "v=10·30/20=15 cm>0; görüntü aynanın önünde ve f ile 2f arasındadır.",
+        "hint": "v=fu/(u−f) ve f pozitiftir."
+      },
+      {
+        "id": "isigin-kirilmasi-q1",
+        "lessonId": "isigin-kirilmasi",
+        "subjectId": "tyt-fizik",
+        "subjectName": "Fizik",
+        "lessonTitle": "Işığın kırılması: normal, indis ve sınır açısı",
+        "prompt": "n₁=1, n₂=1,5, i=30° ve sin 30°=1/2. Snell yasasıyla sin r?",
+        "options": [
+          "1",
+          "1/3",
+          "3/4",
+          "2/3",
+          "1/2"
+        ],
+        "answer": 1,
+        "explanation": "sin r=(1·1/2)/1,5=1/3; daha büyük indise girişte açı küçülür.",
+        "hint": "n₁sin i=n₂sin r çarpımını kur."
+      },
+      {
+        "id": "mercekler-q1",
+        "lessonId": "mercekler",
+        "subjectId": "tyt-fizik",
+        "subjectName": "Fizik",
+        "lessonTitle": "Mercekler: ışını izle, ortamı değiştir",
+        "prompt": "Yakınsak ince mercekte f=10 cm, u=30 cm. v? Gerçek görüntü çıkış tarafında pozitif alınıyor.",
+        "options": [
+          "Sonlu görüntü yok",
+          "15 cm çıkış tarafında",
+          "15 cm giriş tarafında",
+          "30 cm çıkış tarafında",
+          "5 cm giriş tarafında"
+        ],
+        "answer": 1,
+        "explanation": "v=300/20=15 cm>0. Çıkışta f ile 2f arasında gerçek görüntü vardır.",
+        "hint": "v=fu/(u−f) ve u>2f."
+      },
+      {
+        "id": "prizmalar-renkler-q1",
+        "lessonId": "prizmalar-renkler",
+        "subjectId": "tyt-fizik",
+        "subjectName": "Fizik",
+        "lessonTitle": "Prizmalar ve renkler: ışığı ayır, süz, yansıt",
+        "prompt": "İdeal RGB modelinde kırmızı ve yeşil ışık eş uygun katkıyla aynı noktada birleşiyor. Görünüm?",
+        "options": [
+          "Karanlık",
+          "Sarı",
+          "Mavi",
+          "Macenta",
+          "Camgöbeği"
+        ],
+        "answer": 1,
+        "explanation": "Kırmızı[1,0,0]+yeşil[0,1,0]→[1,1,0] sarı görünüm verir. Seri filtre veya boya karışımı yapılmıyor.",
+        "hint": "Bu işlem iki bağımsız ışık kanalının toplamıdır."
+      },
+      {
+        "id": "su-dalgalari-q1",
+        "lessonId": "su-dalgalari",
+        "subjectId": "tyt-fizik",
+        "subjectName": "Fizik",
+        "lessonTitle": "Su dalgaları: dalga cephesinden kırılmaya",
+        "prompt": "Aynı kaynağın 4 Hz su dalgası bir bölgede 24 cm/s ilerliyor. Dalga boyu kaç cm?",
+        "options": [
+          "12",
+          "6",
+          "96",
+          "4",
+          "0,167"
+        ],
+        "answer": 1,
+        "explanation": "λ=24/4=6 cm. 96, süratle frekansı çarpar; doğru boyut uzunluk değildir.",
+        "hint": "v=λf kullan."
+      },
+      {
+        "id": "m1",
+        "lessonId": "mol",
+        "subjectId": "tyt-kimya",
+        "subjectName": "Kimya",
+        "lessonTitle": "Mol kavramı",
+        "prompt": "Molar kütlesi 18 g/mol olan suyun 36 gramı kaç moldür?",
+        "options": [
+          "1",
+          "2",
+          "18"
+        ],
+        "answer": 1,
+        "explanation": "36/18=2 mol.",
+        "hint": "n=m/M"
+      },
+      {
+        "id": "periodic-1",
+        "lessonId": "periyodik-sistem",
+        "subjectId": "tyt-kimya",
+        "subjectName": "Kimya",
+        "lessonTitle": "Periyodik sistem ve iyonlar",
+        "prompt": "Na atomu bir elektron verip Na⁺ oluyor. Hangisi değişmez?",
+        "options": [
+          "Elektron sayısı",
+          "Proton sayısı ve tablo konumu",
+          "Net yük"
+        ],
+        "answer": 1,
+        "explanation": "Elektron değişir; çekirdekteki 11 proton değişmez. Na yine 3. periyot, 1. gruptadır.",
+        "hint": "Tablo yerini hangi tanecik belirler?"
+      },
+      {
+        "id": "sim-1",
+        "lessonId": "simyadan-kimyaya",
+        "subjectId": "tyt-kimya",
+        "subjectName": "Kimya",
+        "lessonTitle": "Simyadan kimyaya: amaç, yöntem ve kanıt",
+        "prompt": "Hangi amaç tarihsel simya uğraşlarına özgü tipik bir örnektir?",
+        "options": [
+          "Bir hız yasasını kontrollü deneyle sınamak",
+          "Değersiz metali altına dönüştürmek",
+          "Ölçüm belirsizliğini hesaplamak"
+        ],
+        "answer": 1,
+        "explanation": "Altına dönüştürme, simyanın tarihsel amaçlarından biridir; bilimsel yöntem uygulandığını tek başına göstermez.",
+        "hint": "Simyadaki arayışı bilimsel yöntemin aşamalarından ayır."
+      },
+      {
+        "id": "dis-1",
+        "lessonId": "kimya-disiplinleri",
+        "subjectId": "tyt-kimya",
+        "subjectName": "Kimya",
+        "lessonTitle": "Kimya disiplinleri: maddeye hangi soruyu soruyoruz?",
+        "prompt": "Bir içme suyu örneğindeki magnezyum iyonu miktarı ölçülüyor. Araştırmanın baskın odağı hangisidir?",
+        "options": [
+          "Analitik kimya",
+          "Polimer kimyası",
+          "Endüstriyel kimya"
+        ],
+        "answer": 0,
+        "explanation": "Örnekteki madde miktarının belirlenmesi nicel analizdir; analitik kimyanın kapsamındadır.",
+        "hint": "Ne kadar bulunduğunu belirlemek analizdir."
+      },
+      {
+        "id": "sym-1",
+        "lessonId": "sembolik-dil",
+        "subjectId": "tyt-kimya",
+        "subjectName": "Kimya",
+        "lessonTitle": "Kimyanın sembolik dili: harf, alt indis ve katsayı",
+        "prompt": "Co ve CO yazımları için hangisi doğrudur?",
+        "options": [
+          "Co kobalt sembolü; CO karbon ve oksijen içeren formüldür.",
+          "İkisi de yalnız kobaltı gösterir.",
+          "Harf büyüklüğü kimyasal yazımda önemsizdir."
+        ],
+        "answer": 0,
+        "explanation": "Co tek element sembolüdür. CO, ayrı C ve O sembollerinden oluşur.",
+        "hint": "Küçük o ile büyük O aynı sembolün parçası değildir."
+      },
+      {
+        "id": "safe-1",
+        "lessonId": "kimya-guvenlik",
+        "subjectId": "tyt-kimya",
+        "subjectName": "Kimya",
+        "lessonTitle": "Kimyada güvenlik: etiketten doğru davranışa",
+        "prompt": "Alev simgesinin altında halka bulunan işaret hangi riski bildirir?",
+        "options": [
+          "Sadece basınçlı gaz",
+          "Oksitleyici özellik",
+          "Radyoaktivite"
+        ],
+        "answer": 1,
+        "explanation": "Üzerinde alev bulunan halka oksitleyici uyarısına aittir; yalın alevden ayrılır.",
+        "hint": "Halka, oksijeni ve yanmayı destekleme özelliğini çağrıştırır."
+      },
+      {
+        "id": "atom-1",
+        "lessonId": "atom-modelleri",
+        "subjectId": "tyt-kimya",
+        "subjectName": "Kimya",
+        "lessonTitle": "Atom modelleri: yeni kanıt modeli değiştirir",
+        "prompt": "Elektronların yayılmış pozitif yük içinde bulunduğu model hangisidir?",
+        "options": [
+          "Dalton",
+          "Thomson",
+          "Bohr"
+        ],
+        "answer": 1,
+        "explanation": "Thomson, elektronları pozitif yükün yayıldığı hacim içine yerleştirmiştir; küçük çekirdek fikri bu modelin özelliği değildir.",
+        "hint": "Üzümlü kek benzetmesindeki yük dağılımını hatırla."
+      },
+      {
+        "id": "cell-1",
+        "lessonId": "hucre-organelleri",
+        "subjectId": "tyt-biyoloji",
+        "subjectName": "Biyoloji",
+        "lessonTitle": "Hücre organelleri: yapı ve görev",
+        "prompt": "Zarlı organelleri olmayan bir hücre protein sentezliyor. Bu işi hangi yapı yapar?",
+        "options": [
+          "Golgi aygıtı",
+          "Ribozom",
+          "Kloroplast"
+        ],
+        "answer": 1,
+        "explanation": "Ribozom zarsızdır ve protein sentezler. Prokaryotlarda da bulunur.",
+        "hint": "Zarsız olan yapıyı düşün."
+      },
+      {
+        "id": "f014-bio-ekoloji-giris-1",
+        "lessonId": "ekoloji-giris",
+        "subjectId": "tyt-biyoloji",
+        "subjectName": "Biyoloji",
+        "lessonTitle": "Ekolojiye giriş: canlıyı ilişkileriyle tanı",
+        "prompt": "Aynı gölette aynı ay içinde yaşayan aynı türe ait 30 kurbağa hangi ekolojik birimi oluşturur?",
+        "options": [
+          "Popülasyon",
+          "Biyom",
+          "Biyosfer",
+          "Otuz ayrı tür",
+          "Su ve mineral içeren ekosistemin tamamı"
+        ],
+        "answer": 0,
+        "explanation": "Aynı türün belirli yer ve zamandaki bireyleri popülasyondur. Sayının otuz olması tür sayısını otuz yapmaz; cansız bileşenler verilmediği için bütün ekosistem tanımlanmış değildir.",
+        "hint": "Tür, yer ve zaman koşullarını birlikte ara."
+      },
+      {
+        "id": "f014-bio-besin-piramidi-1",
+        "lessonId": "besin-piramidi",
+        "subjectId": "tyt-biyoloji",
+        "subjectName": "Biyoloji",
+        "lessonTitle": "Besin piramitleri: enerji, sayı ve biyokütleyi ayır",
+        "prompt": "Bir alandaki yıllık üretici enerji üretimi 10.000 J/m²/yıl, iki ardışık aktarımın her birinde verim yüzde 10’dur. İkincil tüketicinin üretimi kaç J/m²/yıldır?",
+        "options": [
+          "100",
+          "10",
+          "1.000",
+          "2.000",
+          "9.000"
+        ],
+        "answer": 0,
+        "explanation": "10.000×0,10×0,10=100 bulunur. İki aktarımın yüzdeleri toplanmaz; son düzey başlangıç üretiminin yüzde 1’idir.",
+        "hint": "Üreticiden ikincil tüketiciye iki kez geçilir."
+      },
+      {
+        "id": "f014-bio-besin-zinciri-agi-1",
+        "lessonId": "besin-zinciri-agi",
+        "subjectId": "tyt-biyoloji",
+        "subjectName": "Biyoloji",
+        "lessonTitle": "Besin zinciri ve ağı: enerjinin yollarını izle",
+        "prompt": "Oklar besinden tüketiciye tanımlıdır: ot→çekirge→kurbağa→şahin. Kurbağanın doğrudan besini hangisidir?",
+        "options": [
+          "Çekirge",
+          "Ot",
+          "Şahin",
+          "Güneş",
+          "Kurbağanın kendisi"
+        ],
+        "answer": 0,
+        "explanation": "Çekirgeden kurbağaya ok geldiği için doğrudan besin çekirgedir. Ot dolaylı enerji kaynağıdır; şahin ise kurbağayı tüketir.",
+        "hint": "Kurbağaya gelen oku izle."
+      },
+      {
+        "id": "f014-bio-madde-donguleri-1",
+        "lessonId": "madde-donguleri",
+        "subjectId": "tyt-biyoloji",
+        "subjectName": "Biyoloji",
+        "lessonTitle": "Madde döngüleri: depoları ve dönüşümleri izle",
+        "prompt": "Azot döngüsünde NH₄⁺→NO₂⁻→NO₃⁻ dönüşümünün adı nedir?",
+        "options": [
+          "Nitrifikasyon",
+          "Fotosentez",
+          "Denitrifikasyon",
+          "Biyolojik N₂ fiksasyonunun tek doğrudan ürünü",
+          "Buharlaşma"
+        ],
+        "answer": 0,
+        "explanation": "Amonyumun nitrit ve nitrata oksidasyonu nitrifikasyondur. Atmosfer N₂’sini amonyak/amonyuma bağlayan fiksasyonla veya nitratı gaz azotuna döndüren denitrifikasyonla karıştırılmaz.",
+        "hint": "Başlangıç amonyum, son ürün nitrat."
+      },
+      {
+        "id": "f014-bio-guncel-cevre-sorunlari-1",
+        "lessonId": "guncel-cevre-sorunlari",
+        "subjectId": "tyt-biyoloji",
+        "subjectName": "Biyoloji",
+        "lessonTitle": "Çevre sorunları: kaynaktan ekosistem etkisine",
+        "prompt": "Göle azot ve fosfor girişi artıyor; algler çoğalıyor, sonra ölü organik madde ve aerobik ayrıştırıcı solunumu artıyor. Oksijen azalmasına doğrudan katkı veren basamak hangisidir?",
+        "options": [
+          "Artan aerobik ayrıştırıcı solunumu",
+          "Dış ortam ışığının her durumda tamamen yok olması",
+          "Işığın suya hiç ulaşmaması her durumda zorunluluğu",
+          "Bütün suyun anında buharlaşması",
+          "Organik maddenin oksijen yaratmadan yok olması"
+        ],
+        "answer": 0,
+        "explanation": "Ayrıştırıcılar organik yükü kullanırken çözünmüş oksijen tüketebilir. Besleyici girişinden oksijen azalmasına alg/kalıntı/solunum gibi ara basamaklar vardır; gerçek hız koşullara bağlıdır.",
+        "hint": "Aerobik solunumun hangi maddeyi tükettiğini düşün."
+      }
+    ],
+    "durationSeconds": 9488,
+    "fullLength": false,
+    "missingSubjects": [
+      "Din Kültürü"
+    ]
+  },
+  {
+    "id": "mixed-ayt",
+    "title": "AYT Sayısal karma denemesi",
+    "exam": "AYT",
+    "kind": "mixed",
+    "items": [
+      {
+        "id": "dt-1",
+        "lessonId": "turev-teget",
+        "subjectId": "ayt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Türev: kirişten teğete",
+        "prompt": "f(x)=x² eğrisi üzerindeki A(2; 4) ve B(2,5; 6,25) noktalarından geçen kirişin eğimi kaçtır?",
+        "options": [
+          "4",
+          "4,5",
+          "5"
+        ],
+        "answer": 1,
+        "explanation": "(2,5²−2²)/0,5 = (6,25−4)/0,5 = 4,5. Bu, iki nokta arasındaki ortalama değişim oranıdır.",
+        "hint": "İki noktanın y değerleri farkını x değerleri farkına böl."
+      },
+      {
+        "id": "f019-math-dogrunun-analitigi-1",
+        "lessonId": "dogrunun-analitigi",
+        "subjectId": "ayt-geometri",
+        "subjectName": "Geometri",
+        "lessonTitle": "Doğrunun analitiği: denklem, yön ve dik uzaklık",
+        "prompt": "Dik koordinat düzleminde A(−1; 2) ve B(5; −1) farklı noktalarından geçen doğrunun eğimi kaçtır?",
+        "options": [
+          "1/2",
+          "−2",
+          "2",
+          "Tanımsız",
+          "−1/2"
+        ],
+        "answer": 4,
+        "explanation": "Δy=−1−2=−3, Δx=5−(−1)=6. m=−3/6=−1/2. İki farkın yalnız birinde uç sırasını değiştirmek yanlış işaret verir; apsisler farklı olduğundan eğim tanımlıdır.",
+        "hint": "İki farkı aynı uç sırasıyla yaz; Δx=6 olur."
+      },
+      {
+        "id": "dt-2",
+        "lessonId": "turev-teget",
+        "subjectId": "ayt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Türev: kirişten teğete",
+        "prompt": "f(x)=x² için a=2 sabitken h, sıfıra iki yönden yaklaşıyor. Teğet eğimi hangi değere yaklaşır?",
+        "options": [
+          "0",
+          "2",
+          "4"
+        ],
+        "answer": 2,
+        "explanation": "f′(2)=2·2=4. Kiriş eğimi sağdan ve soldan 4’e yaklaşır.",
+        "hint": "2a+h ifadesinde h → 0 limitini düşün."
+      },
+      {
+        "id": "f019-math-dogrunun-analitigi-2",
+        "lessonId": "dogrunun-analitigi",
+        "subjectId": "ayt-geometri",
+        "subjectName": "Geometri",
+        "lessonTitle": "Doğrunun analitiği: denklem, yön ve dik uzaklık",
+        "prompt": "P(2; −3) noktasından geçen ve eğimi 2 olan doğrunun denklemi hangisidir?",
+        "options": [
+          "x=2",
+          "y=−3",
+          "2x−y−7=0",
+          "2x−y+7=0",
+          "x−2y−8=0"
+        ],
+        "answer": 2,
+        "explanation": "y+3=2x−4, buradan 2x−y−7=0 çıkar. P yerine konunca 4+3−7=0; y=2x−7 biçiminde eğim de 2'dir. Yalnız P'den geçmek yetmez, eğim koşulu da gerekir.",
+        "hint": "y−(−3)=2(x−2) yazıp düzenle."
+      },
+      {
+        "id": "dt-3",
+        "lessonId": "turev-teget",
+        "subjectId": "ayt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Türev: kirişten teğete",
+        "prompt": "f(x)=x² eğrisinin x=−1 noktasındaki teğet eğimi kaçtır?",
+        "options": [
+          "−2",
+          "1",
+          "2"
+        ],
+        "answer": 0,
+        "explanation": "f′(a)=2a olduğundan f′(−1)=−2. Eğrinin bu noktadaki teğeti sağa doğru azalır.",
+        "hint": "Türevde a’nın işaretini koru."
+      },
+      {
+        "id": "f019-math-dogrunun-analitigi-3",
+        "lessonId": "dogrunun-analitigi",
+        "subjectId": "ayt-geometri",
+        "subjectName": "Geometri",
+        "lessonTitle": "Doğrunun analitiği: denklem, yön ve dik uzaklık",
+        "prompt": "Dik koordinat sisteminde ax+by+c=0 eşitliği için hangi ifade doğrudur?",
+        "options": [
+          "b≠0 ise eğim −a/b; a≠0 ve b=0 ise doğru dikeydir.",
+          "Eğim her a,b için −b/a'dır.",
+          "a=b=0, c=1 bir doğru tanımlar.",
+          "a=b=c=0 yalnız orijini tanımlar.",
+          "b=0 olan her denklem yatay bir doğrudur."
+        ],
+        "answer": 0,
+        "explanation": "b≠0 iken y=(−a/b)x−c/b; eğim −a/b'dir. b=0,a≠0 iken x=−c/a dikeyi çıkar. a=b=0,c=1 boş küme; a=b=c=0 tüm düzlemdir. Bunlar tek bir doğru olarak kullanılamaz.",
+        "hint": "y'yi yalnız bırakmadan önce böleceğin katsayıyı kontrol et."
+      },
+      {
+        "id": "dt-4",
+        "lessonId": "turev-teget",
+        "subjectId": "ayt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Türev: kirişten teğete",
+        "prompt": "f(x)=|x| için x=0’da soldan eğim −1, sağdan eğim +1 bulunuyor. Hangisi doğrudur?",
+        "options": [
+          "Ortalama alınır ve türev 0 olur.",
+          "Fonksiyon sürekli olsa da bu noktada türev yoktur.",
+          "İki eğimin büyüklüğü eşit olduğu için türev vardır."
+        ],
+        "answer": 1,
+        "explanation": "−1 ile +1 farklıdır. Büyüklüklerin eşit olması veya grafiğin sürekli olması türev için yeterli değildir.",
+        "hint": "Türev için sağ ve sol limitin kendileri eşit olmalıdır."
+      },
+      {
+        "id": "f019-math-dogrunun-analitigi-4",
+        "lessonId": "dogrunun-analitigi",
+        "subjectId": "ayt-geometri",
+        "subjectName": "Geometri",
+        "lessonTitle": "Doğrunun analitiği: denklem, yön ve dik uzaklık",
+        "prompt": "A(3; −2) noktasından geçen ve y eksenine paralel olan doğrunun denklemi hangisidir?",
+        "options": [
+          "y=3",
+          "x=−2",
+          "2x+3y=0",
+          "x=3",
+          "y=−2"
+        ],
+        "answer": 3,
+        "explanation": "Düşey doğrunun bütün noktalarında apsis 3'tür; denklem x=3. Ordinat serbesttir ve eğim tanımsızdır. y=−2, A'dan geçen yatay doğrudur; istenen yönü sağlamaz.",
+        "hint": "Düşey doğru boyunca hangi koordinat değişmez?"
+      },
+      {
+        "id": "dt-5",
+        "lessonId": "turev-teget",
+        "subjectId": "ayt-matematik",
+        "subjectName": "Matematik",
+        "lessonTitle": "Türev: kirişten teğete",
+        "prompt": "Türev tanımındaki [f(a+h)−f(a)]/h oranı incelenirken hangisi doğrudur?",
+        "options": [
+          "h doğrudan 0 yazılır; oran her zaman 0 çıkar.",
+          "Yalnız sağdan yaklaşmak her fonksiyonda yeterlidir.",
+          "h ≠ 0 değerleriyle yaklaşılır; iki yönün ortak limiti kontrol edilir."
+        ],
+        "answer": 2,
+        "explanation": "h paydada olduğu için oran h ≠ 0 iken kurulur. İki taraflı türev için sağ ve sol yaklaşımların ortak bir sonlu değere ulaşması gerekir.",
+        "hint": "Oranın tanımlı olması ile limitin varlığını ayır."
+      },
+      {
+        "id": "f019-math-dogrunun-analitigi-5",
+        "lessonId": "dogrunun-analitigi",
+        "subjectId": "ayt-geometri",
+        "subjectName": "Geometri",
+        "lessonTitle": "Doğrunun analitiği: denklem, yön ve dik uzaklık",
+        "prompt": "d: 2x+4y−6=0 ve e: x+2y−5=0 denklemleriyle verilen iki doğrunun birbirine göre durumu nedir?",
+        "options": [
+          "İki denklem de hiçbir nokta içermez.",
+          "Farklı ve paraleldir.",
+          "Çakışıktır.",
+          "Tek noktada dik kesişirler.",
+          "Tek noktada dik olmayan açıyla kesişirler."
+        ],
+        "answer": 1,
+        "explanation": "d, x+2y−3=0 olur. e ile aynı normal katsayılarına fakat farklı sabitlere sahiptir. Bu yüzden farklı paralel doğrulardır, ortak noktaları yoktur. Eğimin eşit olması tek başına çakışıklık vermez.",
+        "hint": "İlk denklemi 2'ye böl; normal katsayılarla sabiti ayrı karşılaştır."
+      },
+      {
+        "id": "f019-math-dogrunun-analitigi-6",
+        "lessonId": "dogrunun-analitigi",
+        "subjectId": "ayt-geometri",
+        "subjectName": "Geometri",
+        "lessonTitle": "Doğrunun analitiği: denklem, yön ve dik uzaklık",
+        "prompt": "d: x+2y−5=0 ve e: 2x−y=0 doğrularının kesim noktası hangisidir?",
+        "options": [
+          "(2; 1)",
+          "(0; 5/2)",
+          "(5; 0)",
+          "Doğrular kesişmez.",
+          "(1; 2)"
+        ],
+        "answer": 4,
+        "explanation": "x+2(2x)=5, yani 5x=5 ve x=1. y=2 olur. Nokta her iki denklemi de sağlar: 1+4−5=0, 2−2=0. Sadece birinciyi sağlayan noktalar ortak çözüm sayılmaz.",
+        "hint": "İkinci denklemden y=2x bulup birinciye koy."
+      },
+      {
+        "id": "f019-math-dogrunun-analitigi-7",
+        "lessonId": "dogrunun-analitigi",
+        "subjectId": "ayt-geometri",
+        "subjectName": "Geometri",
+        "lessonTitle": "Doğrunun analitiği: denklem, yön ve dik uzaklık",
+        "prompt": "d: x−4=0 doğrusuna dik ve P(−1; 3) noktasından geçen e doğrusunun denklemi nedir?",
+        "options": [
+          "x=4",
+          "3x+y=0",
+          "y=3",
+          "x=−1",
+          "y=−3"
+        ],
+        "answer": 2,
+        "explanation": "Düşey x=4'e dik doğru yataydır. P'nin ordinatı 3 olduğu için e: y=3. d'nin eğimi tanımsız olduğundan burada m₁m₂=−1 biçiminde iki sonlu sayı çarpımı kurmak gerekmez.",
+        "hint": "d düşeydir; dik e yatay olmalıdır."
+      },
+      {
+        "id": "f019-math-dogrunun-analitigi-8",
+        "lessonId": "dogrunun-analitigi",
+        "subjectId": "ayt-geometri",
+        "subjectName": "Geometri",
+        "lessonTitle": "Doğrunun analitiği: denklem, yön ve dik uzaklık",
+        "prompt": "P(1; 3) noktasının d: 3x+4y−5=0 doğrusuna dik uzaklığı kaç birimdir?",
+        "options": [
+          "2",
+          "10",
+          "5",
+          "14",
+          "√10"
+        ],
+        "answer": 0,
+        "explanation": "Pay |3×1+4×3−5|=10, payda √25=5. Uzaklık 10/5=2 birimdir. 10 yalnız paydır; aynı doğrunun katsayılarını ölçeklemek payı değiştirse de gerçek uzaklığı değiştirmemelidir.",
+        "hint": "Payın mutlak değerini normalin √(3²+4²) normuna böl."
+      },
+      {
+        "id": "f019-math-dogrunun-analitigi-9",
+        "lessonId": "dogrunun-analitigi",
+        "subjectId": "ayt-geometri",
+        "subjectName": "Geometri",
+        "lessonTitle": "Doğrunun analitiği: denklem, yön ve dik uzaklık",
+        "prompt": "d: 3x+4y−5=0 ile e: 6x+8y−30=0 paralel doğruları arasındaki uzaklık kaç birimdir?",
+        "options": [
+          "7",
+          "1",
+          "0",
+          "2",
+          "5"
+        ],
+        "answer": 3,
+        "explanation": "e: 3x+4y−15=0 olur. Aynı normal katsayılarıyla uzaklık |−5−(−15)|/√25=10/5=2 birimdir. Ham sabit terimleri farklı ölçeklerde doğrudan çıkarmak yanlış olur.",
+        "hint": "İkinci denklemin tüm katsayılarını 2'ye böl."
+      },
+      {
+        "id": "f019-math-dogrunun-analitigi-10",
+        "lessonId": "dogrunun-analitigi",
+        "subjectId": "ayt-geometri",
+        "subjectName": "Geometri",
+        "lessonTitle": "Doğrunun analitiği: denklem, yön ve dik uzaklık",
+        "prompt": "2x+3y−12=0 doğrusu ile iki koordinat ekseni arasında oluşan kapalı üçgenin alanı kaç birim karedir?",
+        "options": [
+          "18",
+          "12",
+          "24",
+          "6",
+          "8"
+        ],
+        "answer": 1,
+        "explanation": "y=0 için x=6, x=0 için y=4. Eksenler birbirine dik olduğundan alan 6×4/2=12 birim karedir. Çarpımı ikiye bölmemek dikdörtgen alanını verir; burada üçgen isteniyor.",
+        "hint": "Eksenleri kestiği iki farklı noktayı bul."
+      },
+      {
+        "id": "ef-1",
+        "lessonId": "elektrik-alan",
+        "subjectId": "ayt-fizik",
+        "subjectName": "Fizik",
+        "lessonTitle": "Elektrik alan ve test yükü",
+        "prompt": "Pozitif bir kaynak yükün sağındaki noktada negatif bir test yükü var. Alanın ve test yüküne kuvvetin yönleri nasıldır?",
+        "options": [
+          "Alan sola, kuvvet sağa.",
+          "Alan sağa, kuvvet sola.",
+          "İkisi de sağa."
+        ],
+        "answer": 1,
+        "explanation": "Pozitif kaynağın sağındaki alan sağadır. F=qE olduğundan negatif test yüküne kuvvet sola yönelir.",
+        "hint": "Önce pozitif kaynağın alan yönünü, sonra negatif q’nun etkisini bul."
+      },
+      {
+        "id": "f020-manyetik-kuvvet-1",
+        "lessonId": "manyetik-kuvvet",
+        "subjectId": "ayt-fizik",
+        "subjectName": "Fizik",
+        "lessonTitle": "Manyetik kuvvet: yön, yörünge ve enerji",
+        "prompt": "Düz telin alan içindeki boyu 0,40 m, akım 3 A ve düzgün B = 0,50 T. Tel alana dik. Manyetik kuvvet büyüklüğü?",
+        "options": [
+          "0,15 N",
+          "1,50 N",
+          "0,60 N",
+          "6 N",
+          "0 N"
+        ],
+        "answer": 2,
+        "explanation": "F = B I L = 0,50 × 3 × 0,40 = 0,60 N. Alan dışındaki tel parçası hesaba katılmadı.",
+        "hint": "Dik durumda sin α = 1."
+      },
+      {
+        "id": "f020-elektromanyetik-induksiyon-1",
+        "lessonId": "elektromanyetik-induksiyon",
+        "subjectId": "ayt-fizik",
+        "subjectName": "Fizik",
+        "lessonTitle": "Elektromanyetik indüksiyon: değişen akıdan akıma",
+        "prompt": "Düzgün B = 0,40 T ve A = 0,50 m² yüzeyde, alan normali ile B açısı 60°. cos 60° = 0,5. İşaretli manyetik akı?",
+        "options": [
+          "+0,20 Wb",
+          "+0,10 Wb",
+          "+0,40 Wb",
+          "−0,10 Wb",
+          "0 Wb"
+        ],
+        "answer": 1,
+        "explanation": "0,40 × 0,50 × 0,5 = 0,10 Wb. Açı normalden ölçülmüştür; sinüs kullanmak bu öncüle uymaz.",
+        "hint": "Φ = B A cos θ."
+      },
+      {
+        "id": "f020-alternatif-akim-1",
+        "lessonId": "alternatif-akim",
+        "subjectId": "ayt-fizik",
+        "subjectName": "Fizik",
+        "lessonTitle": "Alternatif akım: dalga, faz ve gerçek güç",
+        "prompt": "Sinüzoidal gerilim v(t) = 120√2 sin(ωt) V. Kaynağın etkin gerilimi kaç volttur?",
+        "options": [
+          "120√2 V",
+          "60 V",
+          "240 V",
+          "0 V",
+          "120 V"
+        ],
+        "answer": 4,
+        "explanation": "Tepe katsayısı 120√2 olduğundan etkin değer 120 V olur. İmzalı bir periyot ortalaması sıfırdır; sorulan RMS farklıdır.",
+        "hint": "Sinüste RMS = tepe/√2."
+      },
+      {
+        "id": "f020-transformatorler-1",
+        "lessonId": "transformatorler",
+        "subjectId": "ayt-fizik",
+        "subjectName": "Fizik",
+        "lessonTitle": "Transformatör: sarım oranından güç bilançosuna",
+        "prompt": "İdeal AC trafoda NP = 500, NS = 100 ve VP = 200 V etkin. Sekonder etkin gerilimi?",
+        "options": [
+          "40 V",
+          "1.000 V",
+          "100 V",
+          "400 V",
+          "0 V"
+        ],
+        "answer": 0,
+        "explanation": "VS = 200 × 100/500 = 40 V. Sekonder sarımı daha az olduğu için gerilim alçalır.",
+        "hint": "VS/VP = NS/NP."
+      },
+      {
+        "id": "f020-cembersel-hareket-1",
+        "lessonId": "cembersel-hareket",
+        "subjectId": "ayt-fizik",
+        "subjectName": "Fizik",
+        "lessonTitle": "Çembersel hareket: teğet hız, içe ivme ve kuvvet sınırı",
+        "prompt": "Düzgün çembersel hareketin frekansı 2 Hz. Bir tam turun süresi?",
+        "options": [
+          "2 s",
+          "4 s",
+          "0,25 s",
+          "0,50 s",
+          "1 s"
+        ],
+        "answer": 3,
+        "explanation": "T = 1/2 = 0,50 s. Frekans saniyedeki tur sayısıdır; süreyle aynı sayı değildir.",
+        "hint": "T f = 1."
+      },
+      {
+        "id": "f019-elektriksel-potansiyel-enerji-1",
+        "lessonId": "elektriksel-potansiyel-enerji",
+        "subjectId": "ayt-fizik",
+        "subjectName": "Fizik",
+        "lessonTitle": "Elektriksel potansiyel enerji: yükleri yerleştirmenin bedeli",
+        "prompt": "Vakumda +2 μC ve +3 μC noktasal yükler 0,30 m uzakta. Sonsuz ayrımda U=0,k=9×10⁹. Sistemin potansiyel enerjisi?",
+        "options": [
+          "−0,18 J",
+          "+0,18 J",
+          "+0,60 J",
+          "+0,018 J",
+          "0 J"
+        ],
+        "answer": 1,
+        "explanation": "9×10⁹·6×10⁻¹²/0,30=0,18 J. Aynı işaretli çarpım pozitiftir; kuvvetteki r² ile karıştırılmaz.",
+        "hint": "U=kq1q2/r."
+      },
+      {
+        "id": "f019-elektriksel-potansiyel-1",
+        "lessonId": "elektriksel-potansiyel",
+        "subjectId": "ayt-fizik",
+        "subjectName": "Fizik",
+        "lessonTitle": "Elektriksel potansiyel: aynı noktada farklı yükler",
+        "prompt": "Sabit −2 μC noktasal kaynaktan 0,50 m uzakta V kaçtır? Sonsuzda V = 0,k=9×10⁹.",
+        "options": [
+          "+36000 V",
+          "−18000 V",
+          "−0,108 V",
+          "0 V",
+          "−36000 V"
+        ],
+        "answer": 4,
+        "explanation": "(9×10⁹)(−2×10⁻⁶)/0,50=−36000 V. Test yükü verilmesi kaynak potansiyeli hesabı için gerekmez.",
+        "hint": "V=kQ/r."
+      },
+      {
+        "id": "f019-duzgun-alan-paralel-levhalar-1",
+        "lessonId": "duzgun-alan-paralel-levhalar",
+        "subjectId": "ayt-fizik",
+        "subjectName": "Fizik",
+        "lessonTitle": "Düzgün elektrik alan: levhadan yörüngeye",
+        "prompt": "Kenar etkileri ihmal edilen paralel levhada 600 V gerilim ve 0,030 m aralık var. Alan büyüklüğü?",
+        "options": [
+          "20 N/C",
+          "18000 N/C",
+          "20000 N/C",
+          "600 N/C",
+          "2000 N/C"
+        ],
+        "answer": 2,
+        "explanation": "600/0,030=20000 V/m=N/C. Metreye çevrilmiş aralık paydada kullanılır.",
+        "hint": "E=V/d."
+      },
+      {
+        "id": "f019-sigaclar-kondansatorler-1",
+        "lessonId": "sigaclar-kondansatorler",
+        "subjectId": "ayt-fizik",
+        "subjectName": "Fizik",
+        "lessonTitle": "Sığaçlar: yükü ayır, enerjiyi sakla",
+        "prompt": "İdeal 2 μF sığaç 10 V gerilimde. Her levhadaki yük büyüklüğü?",
+        "options": [
+          "20 μC",
+          "5 μC",
+          "20 C",
+          "0,2 μC",
+          "10 μC"
+        ],
+        "answer": 0,
+        "explanation": "2 μF·10 V=20 μC. Levhalar +Q ve −Q olduğundan toplam net 0 olması yük büyüklüğünü 0 yapmaz.",
+        "hint": "Q=CV."
+      },
+      {
+        "id": "f019-manyetik-alan-ayt-1",
+        "lessonId": "manyetik-alan-ayt",
+        "subjectId": "ayt-fizik",
+        "subjectName": "Fizik",
+        "lessonTitle": "Manyetik alan: akımın çevresindeki yön haritası",
+        "prompt": "Sonsuz uzun tel yaklaşımında vakumda I=5 A, r=0,10 m, K=10⁻⁷ T·m/A. B büyüklüğü?",
+        "options": [
+          "5 μT",
+          "100 μT",
+          "1 μT",
+          "10 μT",
+          "0,1 μT"
+        ],
+        "answer": 3,
+        "explanation": "2×10⁻⁷·5/0,10=10⁻⁵ T=10 μT. r tele dik uzaklıktır.",
+        "hint": "B=2KI/r."
+      },
+      {
+        "id": "f019-elektrik-alan-ileri-1",
+        "lessonId": "elektrik-alan-ileri",
+        "subjectId": "ayt-fizik",
+        "subjectName": "Fizik",
+        "lessonTitle": "Elektrik alan: ileri soru seti",
+        "prompt": "Gözlem O=(0; 0) m. Kaynak+2 μC(−1; 0),+1 μC(0; −1) m’de; k=9×10⁹. Net E bileşenleri?",
+        "options": [
+          "(9000; 18000) N/C",
+          "(18000; 9000) N/C",
+          "(−18000; −9000) N/C",
+          "(27000; 0) N/C",
+          "(0; 27000) N/C"
+        ],
+        "answer": 1,
+        "explanation": "Büyüklükler 18000 ve 9000 N/C; doğrultular dik. Bileşenler (18000; 9000), net büyüklük 9000√5 N/C olur.",
+        "hint": "Soldaki kaynak sağa, alttaki yukarı alan verir."
+      },
+      {
+        "id": "f018-itme-momentum-1",
+        "lessonId": "itme-momentum",
+        "subjectId": "ayt-fizik",
+        "subjectName": "Fizik",
+        "lessonTitle": "İtme ve momentum: kuvvetin zaman içindeki izi",
+        "prompt": "2 kg cisim +3 m/s’den −2 m/s’ye geçiyor. Net itme kaç N·s?",
+        "options": [
+          "+10",
+          "−2",
+          "−10",
+          "+2",
+          "+6"
+        ],
+        "answer": 2,
+        "explanation": "2(−2−3)=−10 N·s. Yön değişimi için süratlerin farkı değil işaretli hızların farkı gerekir.",
+        "hint": "Δp=m(v_son−v_ilk)."
+      },
+      {
+        "id": "f018-kesisen-kuvvetler-dengesi-1",
+        "lessonId": "kesisen-kuvvetler-dengesi",
+        "subjectId": "ayt-fizik",
+        "subjectName": "Fizik",
+        "lessonTitle": "Kesişen kuvvetlerin dengesi: düğümden serbest cisme",
+        "prompt": "60 N yük iki simetrik ideal iple duruyor. Her ip yatayla 30°, sin 30°=0,5. Her ipte gerilme?",
+        "options": [
+          "30 N",
+          "120 N",
+          "15 N",
+          "60 N",
+          "90 N"
+        ],
+        "answer": 3,
+        "explanation": "2T·0,5=60 → T=60 N. İki ipin büyüklükleri değil düşey bileşenleri yükü dengeler.",
+        "hint": "2T sin 30°=W."
+      },
+      {
+        "id": "eq-1",
+        "lessonId": "kimyasal-denge",
+        "subjectId": "ayt-kimya",
+        "subjectName": "Kimya",
+        "lessonTitle": "Denge: derişim ve tepkime hızı",
+        "prompt": "Kimyasal dengede derişimlerin sabit olması neyi gösterir?",
+        "options": [
+          "Tepkimelerin tamamen durduğunu.",
+          "İleri ve geri tepkime hızlarının eşit olduğunu.",
+          "Giren ve ürün derişimlerinin mutlaka eşit olduğunu."
+        ],
+        "answer": 1,
+        "explanation": "Denge dinamiktir: iki yön sürer, hızları eşit olduğundan net derişim değişimi olmaz. Derişimler eşit olmak zorunda değildir.",
+        "hint": "Mikroskobik dönüşüm ile net değişimi ayır."
+      },
+      {
+        "id": "f020-chem-ayt-denge-basinc-hacim-1",
+        "lessonId": "ayt-denge-basinc-hacim",
+        "subjectId": "ayt-kimya",
+        "subjectName": "Kimya",
+        "lessonTitle": "Dengeye basınç ve hacim etkisi",
+        "prompt": "İdeal AB(g) ⇌ A(g)+B(g) karışımı dengede. Sıcaklık sabitken hacim yarıya indiriliyor, hiçbir tür eklenmiyor. Net yön ve Kp için doğru ifade?",
+        "options": [
+          "A ve B oluşumu yönü; Kp iki kat",
+          "Net yön yok; Kp sıfır",
+          "AB oluşumu yönü; Kp aynı",
+          "Her tür bütünüyle yok olur",
+          "Yön yalnız toplam katı kütlesinden bulunur"
+        ],
+        "answer": 2,
+        "explanation": "Kısmi basınçlar ilk anda iki kat olur; Qp=pA·pB/pAB iki katına çıkar. Qp>Kp olduğundan geri yön AB oluşturur. T sabit olduğu için verilen aynı denklem Kp'si değişmez.",
+        "hint": "Bütün gaz basınçlarına aynı çarpanı uygula."
+      },
+      {
+        "id": "f020-chem-ayt-sulu-asit-baz-denge-1",
+        "lessonId": "ayt-sulu-asit-baz-denge",
+        "subjectId": "ayt-kimya",
+        "subjectName": "Kimya",
+        "lessonTitle": "Sulu çözeltilerde su ve asit-baz dengesi",
+        "prompt": "25 °C'de ideal derişim yaklaşımında [H₃O⁺]=1,0×10⁻⁴ M ve Kw=1,0×10⁻¹⁴. [OH⁻] ve pH hangisidir?",
+        "options": [
+          "10⁻⁴ M ve 10",
+          "10⁻⁷ M ve 7",
+          "10⁻¹⁴ M ve 14",
+          "10⁻¹⁰ M ve 4",
+          "0 M ve 0"
+        ],
+        "answer": 3,
+        "explanation": "OH⁻=10⁻¹⁴/10⁻⁴=10⁻¹⁰ M. pH=−log10⁻⁴=4; pOH 10 olup toplam 14'tür. Asidik çözeltide OH⁻ yok olmaz.",
+        "hint": "Karşı iyon çarpımını ve negatif logaritmayı ayrı bul."
+      },
+      {
+        "id": "f020-chem-ayt-zayif-asit-baz-tampon-1",
+        "lessonId": "ayt-zayif-asit-baz-tampon",
+        "subjectId": "ayt-kimya",
+        "subjectName": "Kimya",
+        "lessonTitle": "Zayıf asit-baz ve tampon çözeltiler",
+        "prompt": "HA+H₂O ⇌ H₃O⁺+A⁻ dengesinde HA(aq) gösterimi hangisini anlatır?",
+        "options": [
+          "Yalnız kabın dibindeki katıyı",
+          "Gaz hâlindeki asidi",
+          "Bütün HA'nın kesin iyonlaştığını",
+          "Yalnız OH⁻ iyonlarını",
+          "Çözünmüş, iyonlaşmamış asit moleküllerini"
+        ],
+        "answer": 4,
+        "explanation": "(aq) sulu fazı belirtir. HA molekülleri çözünmüş olabilirken yalnız bir bölümü A⁻ ve H₃O⁺ oluşturur; çözünme ile iyonlaşma farklıdır.",
+        "hint": "Faz gösterimini proton aktarımından ayır."
+      },
+      {
+        "id": "f020-chem-ayt-hidroliz-1",
+        "lessonId": "ayt-hidroliz",
+        "subjectId": "ayt-kimya",
+        "subjectName": "Kimya",
+        "lessonTitle": "Tuzlarda hidroliz ve pH",
+        "prompt": "NaCH₃COO suda çözündükten sonra bazik hidrolizi anlatan net tepkime hangisi?",
+        "options": [
+          "CH₃COO⁻+H₂O ⇌ CH₃COOH+OH⁻",
+          "Na⁺+H₂O→NaOH+H⁺",
+          "CH₃COOH→Na⁺+Cl⁻",
+          "CH₃COO⁻→yalnız katı",
+          "Na⁺+Cl⁻→NH₃"
+        ],
+        "answer": 0,
+        "explanation": "Asetat sudan proton alırken su OH⁻ bırakır. Na⁺ bu ideal modelde proton aktarımında seyirci kalır; çözünme tepkimesi ile hidroliz ayrı basamaklardır.",
+        "hint": "Asetatın proton almasını izle."
+      },
+      {
+        "id": "f020-chem-ayt-notrallesme-1",
+        "lessonId": "ayt-notrallesme",
+        "subjectId": "ayt-kimya",
+        "subjectName": "Kimya",
+        "lessonTitle": "Nötralleşmede miktar, yük ve son pH",
+        "prompt": "Tam çözünmüş 0,010 mol Ba(OH)₂, güçlü baz modelinde kaç mol OH⁻ eşdeğeri sağlar?",
+        "options": [
+          "0,010 mol",
+          "0,020 mol",
+          "0,005 mol",
+          "0,030 mol",
+          "0 mol"
+        ],
+        "answer": 1,
+        "explanation": "Ba(OH)₂ başına iki OH⁻ vardır; 2×0,010=0,020 mol OH⁻ eşdeğeri. Ba²⁺ yükünün iki olması da aynı iyonlaşma hesabıyla uyumludur.",
+        "hint": "Formüldeki OH sayısını kullan."
+      },
+      {
+        "id": "f020-chem-ayt-titrasyon-1",
+        "lessonId": "ayt-titrasyon",
+        "subjectId": "ayt-kimya",
+        "subjectName": "Kimya",
+        "lessonTitle": "Titrasyon eğrisi ve eşdeğerlik",
+        "prompt": "Büret ilk 2,30 mL, son 22,80 mL okunuyor. Harcanan titrant hacmi kaç mL?",
+        "options": [
+          "22,80",
+          "25,10",
+          "20,50",
+          "2,30",
+          "10,25"
+        ],
+        "answer": 2,
+        "explanation": "Harcanan hacim 22,80−2,30=20,50 mL. Başlangıç okuması sıfır olmak zorunda değildir; yalnız son değeri kullanmak fazladan titrant sayar.",
+        "hint": "Son ile ilk arasındaki farkı bul."
+      },
+      {
+        "id": "f020-chem-ayt-cozunurluk-dengesi-1",
+        "lessonId": "ayt-cozunurluk-dengesi",
+        "subjectId": "ayt-kimya",
+        "subjectName": "Kimya",
+        "lessonTitle": "Çözünürlük dengesi, Kç ve sonlu katı",
+        "prompt": "CaF₂(k) ⇌ Ca²⁺+2F⁻ için ideal çözünürlük çarpımı ifadesi?",
+        "options": [
+          "[Ca²⁺]²[F⁻]",
+          "[CaF₂]",
+          "[Ca²⁺]+2[F⁻]",
+          "[Ca²⁺][F⁻]²",
+          "[F⁻]/[Ca²⁺]"
+        ],
+        "answer": 3,
+        "explanation": "Çözünme katsayıları Ca²⁺ için 1 ve F⁻ için 2'dir; saf katının etkinliği sabite alınır. İyonun elektrik yükünü doğrudan üs olarak kullanmayız.",
+        "hint": "Üsler denklem katsayılarıdır."
+      },
+      {
+        "id": "f019-chem-ayt-molalite-koligatif-1",
+        "lessonId": "ayt-molalite-koligatif",
+        "subjectId": "ayt-kimya",
+        "subjectName": "Kimya",
+        "lessonTitle": "Molalite ve koligatif özellikler",
+        "prompt": "36 g glikoz (180 g/mol), 400 g suda tamamen çözünüyor. Molalite kaç mol/kg?",
+        "options": [
+          "0,50",
+          "0,20",
+          "0,45",
+          "2,0",
+          "5,0"
+        ],
+        "answer": 0,
+        "explanation": "n=36/180=0,20 mol; m=0,20/0,400=0,50 mol/kg. Payda çözeltinin toplam kütlesi değildir.",
+        "hint": "Önce mol ve kilogram çözücü."
+      },
+      {
+        "id": "f019-chem-ayt-cozunurluk-1",
+        "lessonId": "ayt-cozunurluk",
+        "subjectId": "ayt-kimya",
+        "subjectName": "Kimya",
+        "lessonTitle": "Çözünürlük: sınır, stok ve kristal",
+        "prompt": "20 °C'de S=20 g/100 g su. 250 g suya 70 g tepkimesiz X eklenip denge kuruluyor. Ayrı katı kütlesi?",
+        "options": [
+          "0 g",
+          "50 g",
+          "20 g",
+          "70 g",
+          "250 g"
+        ],
+        "answer": 2,
+        "explanation": "Kapasite 250×20/100=50 g. Toplam 70 g'ın 50 g'ı çözünür ve 20 g ayrı katı kalır; sıvı faz doymuştur.",
+        "hint": "Önce suya göre kapasite."
+      },
+      {
+        "id": "f019-chem-ayt-tepkimelerde-enerji-1",
+        "lessonId": "ayt-tepkimelerde-enerji",
+        "subjectId": "ayt-kimya",
+        "subjectName": "Kimya",
+        "lessonTitle": "Tepkimelerde enerji: sistem ve çevre",
+        "prompt": "Seçili tepkime sistemi çevreden 800 J ısı alıyor. Uygun sabit basınç ve yalnız PV işi koşulunda yorum?",
+        "options": [
+          "ΔH=−800 J; ekzotermik",
+          "Sistemde enerji kesin yok olur",
+          "Sıcaklık zorunlu 800 °C olur",
+          "Her iki yönde tepkime hızı zorunlu eşittir",
+          "ΔH=+800 J; endotermik"
+        ],
+        "answer": 4,
+        "explanation": "Isı sisteme girdiği için qP pozitiftir; belirtilen koşulda ΔH=+800 J. Bu bilgi hız veya sıcaklığın sayısal değerini tek başına vermez.",
+        "hint": "Enerjinin sistem sınırına girişini izle."
+      },
+      {
+        "id": "f019-chem-ayt-entalpi-bag-hess-1",
+        "lessonId": "ayt-entalpi-bag-hess",
+        "subjectId": "ayt-kimya",
+        "subjectName": "Kimya",
+        "lessonTitle": "Entalpi, bağ enerjileri ve Hess yasası",
+        "prompt": "CO₂(gaz) için standart molar oluşumu tanımlayan denklem hangisidir? Referans karbon grafittir.",
+        "options": [
+          "CO(gaz)+½O₂(gaz)→CO₂(gaz)",
+          "C(grafit)+O₂(gaz)→CO₂(gaz)",
+          "2C(grafit)+2O₂(gaz)→2CO₂(gaz)",
+          "CO₂(gaz)→C(grafit)+O₂(gaz)",
+          "C(elmas)+O₂(gaz)→CO₂(gaz); elmasın referans olduğu verilmedi"
+        ],
+        "answer": 1,
+        "explanation": "Doğru denklem referans elementlerinden bir mol CO₂ oluşturur. CO bileşiktir; iki mol oluşum molar tanımın ölçeği değildir; ters denklem ayrışmadır.",
+        "hint": "Referans elementler ve bir mol ürün."
+      },
+      {
+        "id": "f019-chem-ayt-tepkime-hizi-1",
+        "lessonId": "ayt-tepkime-hizi",
+        "subjectId": "ayt-kimya",
+        "subjectName": "Kimya",
+        "lessonTitle": "Tepkime hızı: ölçümden hız yasasına",
+        "prompt": "Sabit hacimde N₂+3H₂→2NH₃ için N₂ harcanma hızı 0,020 M/s. NH₃ oluşma hızı?",
+        "options": [
+          "0,010 M/s",
+          "0,020 M/s",
+          "0,060 M/s",
+          "0,040 M/s",
+          "0,120 M/s"
+        ],
+        "answer": 3,
+        "explanation": "Bir azot dönüşümüne iki amonyak oluşur: 2×0,020=0,040 M/s. Ortak r ile türe ait oluşma hızı aynı kavram değildir.",
+        "hint": "Ürün katsayısı 2."
+      },
+      {
+        "id": "a1",
+        "lessonId": "atp-metabolizma",
+        "subjectId": "ayt-biyoloji",
+        "subjectName": "Biyoloji",
+        "lessonTitle": "ATP ve metabolizma",
+        "prompt": "ATP’nin yapısında hangi şeker bulunur?",
+        "options": [
+          "Deoksiriboz",
+          "Riboz",
+          "Glikoz"
+        ],
+        "answer": 1,
+        "explanation": "ATP’de adenin bazı, riboz ve üç fosfat vardır.",
+        "hint": "ATP, bir ribonükleotittir."
+      },
+      {
+        "id": "dna-1",
+        "lessonId": "dna-eslenmesi",
+        "subjectId": "ayt-biyoloji",
+        "subjectName": "Biyoloji",
+        "lessonTitle": "DNA eşlenmesi: eski ve yeni zincirler",
+        "prompt": "Bir DNA molekülü bir kez yarı korunumlu eşleniyor. Oluşan her DNA için hangisi doğrudur?",
+        "options": [
+          "İki zinciri de tamamen eskidir.",
+          "Bir eski ve bir yeni zincir içerir.",
+          "İki zinciri de tamamen yenidir."
+        ],
+        "answer": 1,
+        "explanation": "Her atasal zincirin karşısında yeni bir tamamlayıcı zincir oluşur. İki yavru DNA’nın her birinde bir eski, bir yeni zincir vardır.",
+        "hint": "İki atasal zincirin her biri ayrı kalıp olur."
+      },
+      {
+        "id": "f020-bio-ureme-kadin-organlar-1",
+        "lessonId": "ureme-kadin-organlar",
+        "subjectId": "ayt-biyoloji",
+        "subjectName": "Biyoloji",
+        "lessonTitle": "Kadın üreme organları: yapı, yol ve görev",
+        "prompt": "Normal insan üremesinde sperm ile ikincil oositin karşılaşıp döllenmenin çoğunlukla gerçekleştiği yapı hangisidir?",
+        "options": [
+          "Yumurta kanalı",
+          "Mesane",
+          "Vajina duvarı",
+          "Rahmin kas tabakasının bütünü",
+          "Üretra"
+        ],
+        "answer": 0,
+        "explanation": "Döllenme çoğunlukla yumurta kanalındadır. Sonraki yerleşme rahmin endometriyumunda gerçekleşir; mesane ve üretra idrar yollarıdır.",
+        "hint": "Taşıma yolu ile yerleşme yüzeyini ayır."
+      },
+      {
+        "id": "f020-bio-ureme-gametogenez-1",
+        "lessonId": "ureme-gametogenez",
+        "subjectId": "ayt-biyoloji",
+        "subjectName": "Biyoloji",
+        "lessonTitle": "Gametogenez: hücreden gamete, sayıdan işleve",
+        "prompt": "S evresini tamamlamış normal insan birincil oositinde kromozom ve kromatit sayıları hangi ikilidir?",
+        "options": [
+          "46 kromozom, 92 kromatit",
+          "92 kromozom, 46 kromatit",
+          "23 kromozom, 23 kromatit",
+          "46 kromozom, 23 kromatit",
+          "23 kromozom, 92 kromatit"
+        ],
+        "answer": 0,
+        "explanation": "Birincil oosit diploittir:46 kromozom. S evresi sonrası her biri iki kardeş kromatit taşır; toplam 92 kromatit vardır. Kromatit ile kromozom aynı sayaç değildir.",
+        "hint": "Eşlenme kromozom sayısını değil kopya sayısını artırır."
+      },
+      {
+        "id": "f020-bio-ureme-menstrual-dongu-1",
+        "lessonId": "ureme-menstrual-dongu",
+        "subjectId": "ayt-biyoloji",
+        "subjectName": "Biyoloji",
+        "lessonTitle": "Menstrual döngü: aynı takvimde iki değişim",
+        "prompt": "Bir okul modelinde kanama 1–5. gün, ovulasyon 14. gün olarak veriliyor. 3. günde hangi ikili aynı anda bulunabilir?",
+        "options": [
+          "Rahimde kanama ve yumurtalıkta folikül evresi",
+          "Rahimde implantasyon ve yumurtalıkta kesin menopoz",
+          "Rahimde bütün kasların dökülmesi ve yeni zigot mayozu",
+          "Rahimde sperm üretimi ve tüpte korpus luteum oluşumu",
+          "Yumurtalıkta fetüs gelişimi ve mesanede folikül olgunlaşması"
+        ],
+        "answer": 0,
+        "explanation": "Verilen 3. gün kanama aralığındadır. Ovulasyon öncesinde yumurtalıkta folikül evresi sürer; kanama yeni folikül gelişiminin durmasını gerektirmez.",
+        "hint": "İki organın evreleri aynı takvimde paraleldir."
+      },
+      {
+        "id": "f020-bio-ureme-embriyonik-gelisim-1",
+        "lessonId": "ureme-embriyonik-gelisim",
+        "subjectId": "ayt-biyoloji",
+        "subjectName": "Biyoloji",
+        "lessonTitle": "Döllenmeden doğuma: embriyonik gelişim",
+        "prompt": "Normal insan üremesinde döllenme ve implantasyonun tipik yerleri hangi seçenekte doğru sıradadır?",
+        "options": [
+          "Yumurta kanalı; rahim endometriyumu",
+          "Vajina; yumurtalık folikülü",
+          "Rahim kası; üretra",
+          "Plasenta; mesane",
+          "Serviks; epididimis"
+        ],
+        "answer": 0,
+        "explanation": "Döllenme çoğunlukla yumurta kanalında olur. Embriyo daha sonra rahme taşınır ve endometriyuma yerleşir; ikisi aynı olay değildir.",
+        "hint": "Hücre birleşmesi ile yerleşmeyi ayır."
+      },
+      {
+        "id": "f020-bio-ekoloji-komunite-1",
+        "lessonId": "ekoloji-komunite",
+        "subjectId": "ayt-biyoloji",
+        "subjectName": "Biyoloji",
+        "lessonTitle": "Komünite ekolojisi: çeşitlilik, ilişkiler ve değişim",
+        "prompt": "Aynı gölde ve aynı ayda yaşayan farklı balık, alg, bitki ve mikroorganizma popülasyonlarının birlikte ele alınması hangi düzeydir?",
+        "options": [
+          "Komünite",
+          "Tek bir birey",
+          "Yalnız tek tür popülasyonu",
+          "Bir nükleotit",
+          "Yalnız cansız çevre"
+        ],
+        "answer": 0,
+        "explanation": "Komünite belirli alan ve zamanda farklı tür popülasyonlarının topluluğudur. Cansız çevreyle bütün etkileşimleri birlikte kapsayan üst çerçeve ekosistemdir.",
+        "hint": "Farklı türlerin popülasyonlarını birlikte düşün."
+      },
+      {
+        "id": "f020-bio-ekoloji-populasyon-1",
+        "lessonId": "ekoloji-populasyon",
+        "subjectId": "ayt-biyoloji",
+        "subjectName": "Biyoloji",
+        "lessonTitle": "Popülasyon ekolojisi: sayım, büyüme ve sınırlar",
+        "prompt": "Bir popülasyonda 90 birey 3 km² alana dağılmıştır. Ortalama alan yoğunluğu nedir?",
+        "options": [
+          "30 birey/km²",
+          "270 birey/km²",
+          "3 birey/km²",
+          "90 km²/birey",
+          "0 birey/km²"
+        ],
+        "answer": 0,
+        "explanation": "90/3 = 30 birey/km². Bu alanın ortalamasıdır; her küçük parçada tam 30 birey olduğu sonucunu vermez.",
+        "hint": "Birey sayısını alana böl."
+      },
+      {
+        "id": "f020-bio-nukleik-asitler-yapi-1",
+        "lessonId": "nukleik-asitler-yapi",
+        "subjectId": "ayt-biyoloji",
+        "subjectName": "Biyoloji",
+        "lessonTitle": "Nükleik asitler: yapı, yön, bağ ve görev",
+        "prompt": "Bir molekülde azotlu baz ile riboz var, fosfat yok. Bu yapının uygun adı nedir?",
+        "options": [
+          "Nükleozit",
+          "Tam nükleotit",
+          "Çift zincirli kromozom",
+          "Fosfodiester polimeri",
+          "Yalnız amino asit"
+        ],
+        "answer": 0,
+        "explanation": "Nükleozit baz ve şekerden oluşur. Nükleotit tanımı fosfatı da içerir; verilen yapı fosfatsız olduğundan nükleotit değildir.",
+        "hint": "Baz+şeker ile fosfatlı bütünü ayır."
+      },
+      {
+        "id": "f020-bio-kalitim-molekulu-kesfi-1",
+        "lessonId": "kalitim-molekulu-kesfi",
+        "subjectId": "ayt-biyoloji",
+        "subjectName": "Biyoloji",
+        "lessonTitle": "Kalıtım molekülünün keşfi: deneyden kanıta",
+        "prompt": "Miescher’in çekirdekten fosforca zengin nükleik madde ayırması tek başına hangi sonucu vermez?",
+        "options": [
+          "Bu maddenin kalıtsal işlevinin bütün ayrıntılarıyla kanıtlandığını",
+          "Çekirdekle ilişkili bir madde incelendiğini",
+          "Kimyasal bir ayırma yapıldığını",
+          "Fosfor bakımından dikkat çeken bileşim bulunduğunu",
+          "Sonraki araştırmalar için bir başlangıç verisi sağlandığını"
+        ],
+        "answer": 0,
+        "explanation": "Kimyasal ayırma yapı ve bileşim hakkında bilgi verir. Kalıtsal işlev için özellik aktarımı ve gereken bileşenin sınanması gibi ek deneyler gerekir.",
+        "hint": "Maddenin bulunmasını işlev deneyinden ayır."
+      },
+      {
+        "id": "f020-bio-dna-replikasyonu-ileri-1",
+        "lessonId": "dna-replikasyonu-ileri",
+        "subjectId": "ayt-biyoloji",
+        "subjectName": "Biyoloji",
+        "lessonTitle": "DNA eşlenmesi: ileri kanıt ve mekanizma soruları",
+        "prompt": "DNA polimerazın yeni zinciri uzatması için primazın temel katkısı nedir?",
+        "options": [
+          "Uzatılabilir 3′ ucu olan kısa başlangıç RNA’sı oluşturmak",
+          "Bütün eski DNA’yı amino aside çevirmek",
+          "Her durumda bütün fosfodiesterleri kalıcı koparmak",
+          "Kardeş kromozomları mayoz II’de ayırmak",
+          "Yeni DNA’nın bütün bazlarını tek tipe dönüştürmek"
+        ],
+        "answer": 0,
+        "explanation": "Primaz RNA primeri üretir; DNA polimeraz uygun 3′ uca ekleme yapar. Primer daha sonra işlenir; bu rol ligazın son omurga bağlantısından ayrıdır.",
+        "hint": "Başlatma ile mevcut ucu uzatmayı ayır."
+      },
+      {
+        "id": "f019-bio-solunum-organlar-1",
+        "lessonId": "solunum-organlar",
+        "subjectId": "ayt-biyoloji",
+        "subjectName": "Biyoloji",
+        "lessonTitle": "Solunum organları: hava yolundan alveol sınırına",
+        "prompt": "Havanın içeri girip çıkması ile hücrede ATP elde edilmesi için doğru ayrım hangisidir?",
+        "options": [
+          "Ventilasyon hava hareketi, hücresel solunum hücre içi enerji dönüşümüdür",
+          "İkisi her zaman aynı tek tepkimedir",
+          "Alveol yalnız bir mitokondrinin adıdır",
+          "Bütün ATP yolları mutlaka oksijen gerektirir",
+          "Hava normalde bütünüyle kılcal kanın içine dolar"
+        ],
+        "answer": 0,
+        "explanation": "Ventilasyon, gaz difüzyonu ve hücresel enerji yolları ayrı olaylardır. İnsan dolaşımı bu basamakları birbirine bağlar; aynı sistemle ilişkili olmaları aynı tepkime oldukları anlamına gelmez.",
+        "hint": "Olayların ölçeğini ve bulunduğu bölmeyi ayır."
+      },
+      {
+        "id": "f019-bio-soluk-alisverisi-1",
+        "lessonId": "soluk-alisverisi",
+        "subjectId": "ayt-biyoloji",
+        "subjectName": "Biyoloji",
+        "lessonTitle": "Soluk alışverişi: kas, hacim, basınç ve akış",
+        "prompt": "Sakin inspirasyonda temel doğru sıra hangisidir?",
+        "options": [
+          "Diyafram kasılması → göğüs hacmi artışı → alveol basıncının atmosfere göre düşmesi → içe akış",
+          "Diyaframın yukarı kubbeleşmesi → hacim artışı",
+          "Hacim artışı → havanın zorunlu kana doğrudan dolması",
+          "Akciğerin iskelet kası gibi kendi başına kasılması",
+          "Her evrede aynı basınç ve kesintisiz tek yön akış"
+        ],
+        "answer": 0,
+        "explanation": "Diyafram kasılıp aşağı iner; göğüs ve akciğer hacmi artar. Alveol basıncı atmosferin altına düşünce açık hava yolunda içe akış oluşur.",
+        "hint": "Kas-hacim-basınç-akış sırasını izle."
+      }
+    ],
+    "durationSeconds": 7425,
+    "fullLength": false,
+    "missingSubjects": [
+      "Matematik / Geometri"
+    ]
+  }
+]

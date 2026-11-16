@@ -1,7 +1,7 @@
 {
-  "version": "0.17.0",
+  "version": "0.18.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Geliştirme adayı: çalışma sırasının 259–348. başlıklarında 86 yeni etkileşimli anlatım, mevcut paragraf/elektrik alanı/denge/DNA rehberlerine kapsamlı ekler ve 900 yeni özgün soru. Gerçek kaynak toplamı 350 anlatım, 322 ayrıntılı rehber, 350 yerleşik özet ve 3340 sorudur. Kademeli çözüm desteği 20 soruda ayrıntılı hazırlanmıştır; diğer sorular kendi ipucunu ve açıklamasını kullanır. Denemelerde öğrenme/simülasyon biçimleri ve ayrı yardım kaydı; çevrimdışı Bricolage başlıklar, kullanıcı tercihini koruyan Lexend vardır. İlk 348/479 başlık anlatım-soru eşleşir; bütün alt beceriler ve bütün arşiv tamamlandı sayılmaz. Bütünleşik tarayıcı, eski sürüm veri koruma ve yayın kabulü sürüyor; Android imza kurulumu ertelendi."
+    "tr": "Geliştirme adayı: 349–378. çalışma başlıkları için 30 yeni etkileşimli anlatım ve 310 özgün beş seçenekli soru. Toplam 380 anlatım,352 ayrıntılı rehber,380 yerleşik özet ve3650 soru; ilk378/479 başlık eşleşir. Yeni80 soruluk AYT karma kotası40 matematik/geometri,14 fizik,13 kimya,13 biyoloji ve180dakikadır; bütün tam deneme çeşitleri beş seçenekli kartlardan seçilir. Eski kısa pratikler ve kaydedilmiş denemeler korunur. Bu not aday kapsamını belirtir; bütün Drive/MEB/ÖSYM tamamlandı anlamına gelmez. Android imza ayarı ertelenmiştir; yeniAPK iddiası yoktur."
   }
 }

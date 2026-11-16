@@ -136,8 +136,10 @@ it("expands AYT practice to 37 items while keeping existing 25-item AYT and 110-
   expect(ayt.items.filter((q) => q.subjectId === "ayt-biyoloji")).toHaveLength(
     13,
   );
-  expect(ayt.fullLength).toBe(false);
-  expect(ayt.missingSubjects).toContain("Matematik / Geometri");
+  if (ayt.items.length < 80) {
+    expect(ayt.fullLength).toBe(false);
+    expect(ayt.missingSubjects).toContain("Matematik / Geometri");
+  }
   expect(ayt.durationSeconds).toBe(scaledExamSeconds("AYT", ayt.items.length));
   expect(ayt.durationSeconds).toBeGreaterThanOrEqual(4995);
   expect(tyt.durationSeconds).toBe(scaledExamSeconds("TYT", tyt.items.length));
