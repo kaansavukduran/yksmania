@@ -1,0 +1,1252 @@
+[
+  {
+    "id": "f011-chem-kovalent-adlandirma-metalik-bag-1",
+    "identity": "[\"f011-chem-kovalent-adlandirma-metalik-bag-1\",\"İki elementli moleküler N₂O₅ bileşiğinin sayı ön ekleriyle sistematik adı hangisidir?\",\"\",[\"Diazot pentaoksit\",\"Azot pentoksijen\",\"Monoazot dioksit\",\"Diazot trioksit\",\"Azot(V) klorür\"],0,\"Di iki azotu, penta beş oksijeni belirtir; ikinci element oksit biçiminde okunur. Molekülün adı diazot pentaoksittir. Azot ile oksijen sayılarını yer değiştirmek veya ikinci elemente farklı sayı bağlamak formülü değiştirir; klor içermeyen bir formüle klorür denemez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sayı ön ekleri bir moleküldeki atom adetlerini bildirir: mono 1, di 2, tri 3, tetra 4, penta 5’tir. Ön ek, hemen ardından gelen element adına bağlı okunur; atom numarası veya iyon yükü değildir.",
+        "İki elementli moleküler adlandırmada formüldeki element sırası ve gerçek alt indisler korunur. İkinci element oksijense uygun son ad oksittir; ilk elementin tek atomu için mono genellikle söylenmez."
+      ],
+      "strategy": "N ve O alt indislerini ayrı kaydet; her sayıyı kendi elementinin ön ekiyle eşleştirip ikinci elementin ad biçimini denetle. Sonra seçeneğin yeniden yazdırdığı formülü kontrol et.",
+      "steps": [
+        "N₂O₅’te ilk element N, ikinci element O’dur. Tek molekülde iki azot ve beş oksijen atomu bulunur; formülün başında başka bir katsayı yoktur.",
+        "İki azot için di + azot, beş oksijen için penta + oksit birleştirilir. Böylece adı oluşturan iki parça diazot ve pentaoksit olur.",
+        "İki parçayı aynı sırayla birleştir: diazot pentaoksit. Diğer adları geri okurken N/O sayısını, oksit son adını ve formülde hiç bulunmayan bir element eklenip eklenmediğini karşılaştır."
+      ],
+      "optionReasons": [
+        "Doğru. Diazot iki N, pentaoksit beş O gösterir; sıra ve sayılar N₂O₅’i geri verir.",
+        "Yanlış. İlk azotun iki atomu di ön ekiyle belirtilmemiştir; ayrıca ikinci bileşen oksijen diye bırakılmıştır. Bu şemada ikinci O için pentaoksit gerekir.",
+        "Yanlış. Monoazot dioksit bir N ve iki O sayar. Verilen molekülün iki N ve beş O atomunu karşılamaz.",
+        "Yanlış. Diazot kısmı iki N ile uyumludur ama trioksit yalnız üç O verir; molekülde beş O vardır.",
+        "Yanlış. Klorür adı Cl içeren bir bileşen gerektirir; N₂O₅’te Cl yoktur. Roma rakamı V de oksijenin beş atomunu sayan penta ön ekinin yerine geçmez."
+      ],
+      "commonError": "Ön eki yanlış elemente bağlamak veya ikinci elementin oksit adını kullanmadan yalnız oksijen sözcüğüyle formülün sayımını tamamladığını sanmak.",
+      "check": "Bulduğun adı tekrar N ve O sayısına çevir. N sütununda 2, O sütununda 5 kalmalı; Cl gibi üçüncü bir element çıkmamalı."
+    }
+  },
+  {
+    "id": "f011-chem-kovalent-adlandirma-metalik-bag-2",
+    "identity": "[\"f011-chem-kovalent-adlandirma-metalik-bag-2\",\"Bir diklor heptaoksit molekülü toplam kaç atom içerir? Cl klor, O oksijen simgesidir.\",\"\",[\"2\",\"9\",\"5\",\"7\",\"14\"],1,\"Di iki Cl, hepta yedi O anlamındadır: Cl₂O₇. Bir moleküldeki toplam 2+7=9 atomdur. 14 çarpım sonucu olur; yalnız bir elementin sayısını almak toplamı eksik bırakır. Adın bir moleküle ait olduğu özellikle belirtilmiştir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir molekülün adı içindeki di ve hepta ön ekleri sırasıyla 2 ve 7 atomu gösterir. Bu sayılar farklı element türlerine aittir; iki ayrı molekül adedi anlamına gelmez.",
+        "Toplam atom adedi, moleküldeki her elementin atom sayılarının toplamıdır. Türlerden yalnız birinin sayısını almak ile bütün molekülün toplamını bulmak farklı isteklerdir."
+      ],
+      "strategy": "Adı element ve adet sütunlarına ayır; istenenin tek bir element değil bütün molekül olduğunu işaretle. Her sütundaki atomları bir envanterde birleştir.",
+      "steps": [
+        "Diklor bölümünden 2 Cl, heptaoksit bölümünden 7 O bulunur. Sırayı koruyan molekül formülü Cl₂O₇’dir.",
+        "Tek molekülde iki klor atomuna yedi oksijen atomu eklenir: 2 + 7 = 9 atom. Sayıları çarpmak bu envanteri saymaz.",
+        "Toplam 9 olan seçenek uygundur. 2 ve 7 yalnız birer elementin sayısıdır; 7 − 2 = 5 farkı, 2 × 7 = 14 ise çarpımı verir ve sorulan toplam değildir."
+      ],
+      "optionReasons": [
+        "Yanlış. 2 yalnız klor atomlarını sayar; aynı moleküldeki yedi O’yu toplamın dışında bırakır.",
+        "Doğru. Cl₂O₇’deki iki Cl ile yedi O birlikte 2 + 7 = 9 atom eder.",
+        "Yanlış. 5, 7 − 2 işlemiyle bulunan atom sayıları farkıdır. Molekülün toplamında iki tür birbirinden çıkarılmaz.",
+        "Yanlış. 7 yalnız oksijen atomlarının adedidir; iki klor atomu da molekülün parçasıdır.",
+        "Yanlış. 14, 2 × 7 çarpımıdır. Ön ekler aynı molekülde ayrı atom kümeleri verdiği için toplamları alınır."
+      ],
+      "commonError": "Di ve hepta sayılarını çarpmak ya da yalnız oksijeni sayıp bütün molekülün atom adedini bulduğunu düşünmek.",
+      "check": "İki Cl işareti ve yedi O işareti çizip hepsini bir kez say. Dokuz işaret kalıyorsa toplamı, yedi O kalıyorsa yalnız bir elementin sayısını yazmışsındır."
+    }
+  },
+  {
+    "id": "f011-chem-kovalent-adlandirma-metalik-bag-3",
+    "identity": "[\"f011-chem-kovalent-adlandirma-metalik-bag-3\",\"Moleküler OF₂ için O oksijen, F flor olduğuna göre uygun ad hangisidir?\",\"\",[\"Diflor monoksit\",\"Oksijen florür diiyon\",\"Oksijen diflorür\",\"Dioksijen florür\",\"Oksit flor\"],2,\"İlk sıradaki O oksijen olarak kalır; tek atom için ilk mono yazılmaz. İkinci F’nin alt indisi 2 olduğundan diflorür olur. Oksijenin bulunması her formülde oksit son adını gerektirmez; oksit biçimi bu basit şemada oksijen ikinci bileşen olduğunda kullanılır.\"]",
+    "guidance": {
+      "knowledge": [
+        "İki elementli moleküler formülde yazılmayan alt indis 1’dir. İlk elementin bir atomu için mono genellikle atlanır; ikinci elementteki atom adedi uygun sayı ön ekiyle gösterilir.",
+        "İkinci bileşenin adı elemente göre değişir: flor için florür, oksijen için oksit kullanılır. Oksijenin formülde bulunması, hangi sırada yazıldığına bakmadan her adı oksitle bitirmeyi gerektirmez."
+      ],
+      "strategy": "Önce formüldeki birinci ve ikinci elementi ayır; ikinci elementin son adını seçtikten sonra alt indisini o ada bağla. Yazım sırasını değiştirerek seçenek üretme.",
+      "steps": [
+        "OF₂’de O ilk bileşendir ve alt indisi yazılmadığı için bir atomdur. F ikinci bileşendir; 2 alt indisi iki flor atomunu bildirir.",
+        "İlk bölüm oksijen olarak okunur. İkinci F için florür son adı ve di ön eki birleşerek diflorür olur.",
+        "Böylece ad oksijen diflorürdür. Oksidi ikinci bileşen gibi yazan, O sayısını iki yapan veya molekülü iki iyon diye sunan seçenekleri ayrı gerekçelerle ele."
+      ],
+      "optionReasons": [
+        "Yanlış. Diflor monoksit adı, verilen şemada F’yi ilk ve O’yu ikinci bileşen yapar. OF₂’nin adında ilk oksijen, ikinci florür olarak korunur.",
+        "Yanlış. Moleküler OF₂’nin iki flor atomu vardır; bu sayı iki iyon oluştuğu anlamına gelmez. İkinci bileşen için di ön eki florür adına bağlanmalıdır.",
+        "Doğru. Bir O için ilk mono atlanır; iki F ikinci bileşende diflorür olur: oksijen diflorür.",
+        "Yanlış. Dioksijen iki O bildirir. OF₂’de bir O ve iki F bulunduğundan atom adetleri ters yorumlanmıştır.",
+        "Yanlış. Oksit flor ifadesi ilk O’yu uygun biçimde adlandırmaz ve ikinci F’nin iki atomunu gösteren di ön ekini içermez."
+      ],
+      "commonError": "O harfini görür görmez oksit son adını seçmek; florun ikinci bileşen ve iki atomlu olduğunu gözden kaçırmak.",
+      "check": "Adı geri yazarken ilk bileşenden bir O, ikinci bileşenden iki F gelmeli. O₂F veya F₂O sırasını kuruyorsan verilen formülün sıra–adet denetimini yeniden yap."
+    }
+  },
+  {
+    "id": "f011-chem-kovalent-adlandirma-metalik-bag-4",
+    "identity": "[\"f011-chem-kovalent-adlandirma-metalik-bag-4\",\"CO ve Co yazıları için hangi yorum doğrudur? C karbon, O oksijen, Co kobalt simgesidir.\",\"\",[\"İkisi de kobaltın eşdeğer yazımıdır.\",\"CO tek karbon atomudur; Co iki oksijendir.\",\"Küçük harf yalnız atom sayısını değiştirir.\",\"CO iki elementli bileşik formülü, Co tek element sembolüdür.\",\"Co karbonun +1 iyonudur.\"],3,\"CO’da C ve O ayrı büyük harflerle iki elementi gösterir; karbon monoksit formülüdür. Co bir büyük ve bir küçük harfle tek kobalt sembolüdür. Küçük harf alt indis ya da iyon yükü değildir; yazım farkı maddenin kimliğini değiştirebilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Element sembolü bir büyük harfle başlar; ikinci harfi varsa küçük yazılır ve aynı sembole aittir. Yeni bir büyük harf ise formül içinde başka bir element sembolünü başlatabilir.",
+        "Atom adedi alt indisle, net elektrik yükü üst yük işaretiyle gösterilir. Sembolün küçük harfi bu iki görevin yerine geçmez; kimyasal yazımda harf büyüklüğü anlamın parçasıdır."
+      ],
+      "strategy": "İki yazıyı büyük harfle başlayan sembollere böl; küçük harfi ayrı atom veya yük diye sayma. Önce kaç element sembolü okuduğunu, sonra bunların neyi adlandırdığını karşılaştır.",
+      "steps": [
+        "CO’da C ve O ayrı büyük harflerdir. Kökün verdiği sembol bilgisiyle bunlar karbon ve oksijen olmak üzere iki elementi gösterir.",
+        "Co’da yalnız C büyük, o küçüktür; iki harf birlikte kökte belirtilen tek kobalt sembolünü oluşturur. Burada alt indis veya yük işareti yoktur.",
+        "Bu nedenle CO iki elementli bileşik formülü, Co tek element sembolüdür. İkisini eşdeğer kobalt yazımı sayan ya da küçük harften atom sayısı/yük çıkaran yorumlar elenir."
+      ],
+      "optionReasons": [
+        "Yanlış. Kobalt sembolü Co’dur. CO’daki büyük O bağımsız oksijen sembolü olduğundan iki yazı eşdeğer değildir.",
+        "Yanlış. CO’da C’ye ek olarak O da vardır. Co ise iki oksijen değil, kökte açıkça verilen kobalt sembolüdür.",
+        "Yanlış. Atom sayısını gösteren alt indis farklı bir gösterimdir; Co’daki küçük o, sembolün bir parçasıdır ve yalnız sayıyı değiştirmez.",
+        "Doğru. CO karbon ve oksijeni içeren formüldür; Co bir büyük ve bir küçük harfle tek kobalt elementini gösterir.",
+        "Yanlış. Karbonun +1 yükü C⁺ gibi bir yük gösterimi gerektirir. Küçük o böyle bir yük işareti değildir; Co kobalttır."
+      ],
+      "commonError": "Büyük–küçük harf farkını görsel ayrıntı sayıp iki harfli element sembolünü formül veya iyon yükü gibi okumak.",
+      "check": "Her yazıda büyük harfleri işaretle: CO’da iki, Co’da bir sembol başlangıcı bulunur. Sonra kökte verilen C/O/Co adlarını bu bölmelere geri yerleştir."
+    }
+  },
+  {
+    "id": "f011-chem-kovalent-adlandirma-metalik-bag-5",
+    "identity": "[\"f011-chem-kovalent-adlandirma-metalik-bag-5\",\"Bir öğrenci N₂O₄ molekül formülünü NO₂’ye sadeleştiriyor. Molekül kimliği açısından doğru değerlendirme hangisidir?\",\"\",[\"Molekül formülleri her zaman sadeleştirilmelidir.\",\"Her iki formül de altı atomlu tek molekülü gösterir.\",\"N₂O₄ yalnız iyonik birim hücre olabilir.\",\"Sadeleştirme yalnız oksijenin atom numarasını değiştirir.\",\"Aynı en basit oranı verse de molekül başına atom sayısı değişir.\"],4,\"N₂O₄ bir molekülde 2 N ve 4 O, yani 6 atom; NO₂ ise 1 N ve 2 O, yani 3 atom gösterir. Oran 1:2 olsa da molekül formülü gerçek sayıları korur. Sadeleştirme kuralını molekülün adına ve formülüne taşımak farklı bir tanecik yazmaktır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Molekül formülü bir molekülün gerçek atom envanterini verir. En basit formül ise element adetlerinin sadeleşmiş oranını bildirir; iki gösterim aynı soruya cevap vermez.",
+        "Alt indis, elementin moleküldeki atom adedidir. Elementin atom numarası ise proton sayısıyla ilgilidir; bir formülü cebirsel olarak sadeleştirmek atom numarasını değiştiren bir işlem değildir."
+      ],
+      "strategy": "Önce iki yazıyı birer tek molekül gibi ayrı say; ardından oranlarını karşılaştır. Oran eşitliğinin atom envanteri eşitliği sağlayıp sağlamadığını sınayarak karar ver.",
+      "steps": [
+        "N₂O₄ tek molekülde 2 N ve 4 O içerir; toplamı 6 atomdur. NO₂ tek molekülde 1 N ve 2 O içerir; toplamı 3 atomdur.",
+        "İki formülde N:O oranı 1:2’ye indirgenebilir; ancak molekül başına gerçek sayılar aynı değildir. Sadeleşen şey oran, korunan bir molekül envanteri değildir.",
+        "Dolayısıyla aynı en basit oranı vermelerine rağmen molekül başına atom adedi değişir. Molekül formülünü her zaman sadeleştirme veya ikisini de altı atomlu sayma seçenekleri bu karşılaştırmaya uymaz."
+      ],
+      "optionReasons": [
+        "Yanlış. Her zaman sadeleştirme kuralı molekül formülüne uygulanmaz; bu işlem N₂O₄’ün tek moleküldeki 2 N/4 O bilgisini kaybettirir.",
+        "Yanlış. N₂O₄ altı, NO₂ üç atomlu molekül gösterir. Aynı oranı vermeleri ikisini de altı atomlu yapmaz.",
+        "Yanlış. Kökte N₂O₄ molekül formülü olarak verilmiştir. Onu yalnız iyonik birim hücreye özgü saymak hem bu öncülü hem molekül–kristal ayrımını bozar.",
+        "Yanlış. O’nun alt indisi 4’ten 2’ye değişir; bu oksijenin atom numarasının değişmesi değildir. Aynı sadeleştirmede N sayısı da 2’den 1’e iner.",
+        "Doğru. Her ikisinde en basit N:O oranı 1:2’dir, fakat tek molekülün gerçek sayımları 6 ve 3 atomdur."
+      ],
+      "commonError": "Aynı atom oranını aynı molekül sanmak ve oran sadeleştirmesini molekülün gerçek alt indislerini koruyan bir işlem gibi kullanmak.",
+      "check": "İki ayrı kutuya N₂O₄ ve NO₂ atomlarını yerleştir. Bir kutuda 6, ötekinde 3 atom sayarken oranlarının yine 1:2 kaldığını birlikte gösterebilmelisin."
+    }
+  },
+  {
+    "id": "f011-chem-kovalent-adlandirma-metalik-bag-6",
+    "identity": "[\"f011-chem-kovalent-adlandirma-metalik-bag-6\",\"Üç fosfor triklorür molekülü (PCl₃) toplam kaç Cl atomu içerir?\",\"\",[\"9\",\"3\",\"4\",\"6\",\"12\"],0,\"Triklorür tek molekülde üç Cl bulunduğunu söyler. Üç molekül 3PCl₃ olduğundan Cl sayısı 3×3=9’dur. Her molekül dört toplam atom içerdiği için 12 tüm atomların sayısıdır; yalnız Cl isteniyorken P atomlarını toplama.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir molekülün alt indisi o molekülde ilgili elementten kaç atom bulunduğunu gösterir. Soldaki katsayı molekül adedidir ve formüldeki bütün atom türlerinin sayısını çoğaltır.",
+        "Yalnız belirli bir elementin toplamı sorulduğunda diğer elementler envantere eklenmez. Molekül başına bütün atomları toplamak, seçilen elementin toplamından farklı bir hesap verir."
+      ],
+      "strategy": "İstenen atom türü Cl’yi işaretle; tek moleküldeki Cl sayısına molekül adedini uygula. P dahil bütün atomları sayan bir ara sonucu son yanıt diye kullanma.",
+      "steps": [
+        "PCl₃’te bir molekül 1 P ve 3 Cl içerir. Üç fosfor triklorür molekülü, aynı 3 Cl’lik grubun üç kez bulunmasıdır.",
+        "Yalnız Cl atomlarını say: 3 molekül × 3 Cl/molekül = 9 Cl atomu. P atomlarını bu istenene eklemiyoruz.",
+        "9 seçeneği hedefi karşılar. Kontrol için P toplamı 3, bütün atomların toplamı 12’dir; 12’yi yazmak Cl yerine tüm atomları cevaplamak olur."
+      ],
+      "optionReasons": [
+        "Doğru. Tek moleküldeki üç Cl, üç molekülde 3 × 3 = 9 Cl atomu verir.",
+        "Yanlış. 3 yalnız bir PCl₃ molekülünün Cl sayısıdır; sorudaki üç molekülü çoğaltmamıştır.",
+        "Yanlış. 4, tek moleküldeki 1 P + 3 Cl toplamıdır. Ne yalnız Cl’yi ne de üç molekülün bütününü sayar.",
+        "Yanlış. 6, iki molekül için 2 × 3 Cl sayımına karşılık gelir. Verilen molekül adedi iki değil üçtür.",
+        "Yanlış. 12, üç moleküldeki bütün atomların sayısıdır: 3 × (1 + 3). Bunun üçü P olduğundan yalnız Cl istenen yanıt değildir."
+      ],
+      "commonError": "Katsayıyı atlayıp tek molekülü saymak veya Cl sorulurken P atomlarını da ekleyerek bütün atom toplamını vermek.",
+      "check": "Üç PCl₃ kutusunda Cl sayıları 3+3+3, P sayıları 1+1+1 olmalı. İkisini toplarsan 12, yalnız Cl kutularını toplarsan 9 bulursun."
+    }
+  },
+  {
+    "id": "f011-chem-kovalent-adlandirma-metalik-bag-7",
+    "identity": "[\"f011-chem-kovalent-adlandirma-metalik-bag-7\",\"Na₂O, Na⁺ ve O²⁻ iyonlarının oluşturduğu iyonik katıdır. TYT katyon–anyon adlandırma kuralına göre bu bileşiğin uygun adı hangisidir?\",\"\",[\"Disodyum monoksit\",\"Sodyum oksit\",\"Sodyum dioksit\",\"Sodyum peroksit\",\"Sodyum metal molekülü\"],1,\"İyonik adlandırmada katyon sodyum ve anyon oksit adı kullanılır. İki Na⁺ bir O²⁻ yükünü dengeler; bu oran bağımsız bir Na₂O molekülü için sayı ön ekleri kurmamızı gerektirmez. Peroksit farklı iyon yapısıdır; verilen O²⁻ ile aynı değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Soruda seçilen TYT katyon–anyon adlandırmasında önce katyonun, sonra anyonun adı okunur. Formüldeki alt indisler iyonların yüklerini dengeleyen oranı gösterir; moleküler sayı ön ekleri bu yöntemin yerine geçmez.",
+        "İyonik katı çok sayıda iyonun oluşturduğu örgüdür. Formül birimi oranını ayrı bir küçük molekül sayımıyla karıştırmadan, verilen net yüklerden toplam yükün sıfırlandığını denetleyebilirsin."
+      ],
+      "strategy": "Kökte açıkça istenen adlandırma usulünü kullan: katyonu ve anyonu ayrı adlandır, sonra yük oranını kontrol et. Seçenekleri başka bir adlandırma usulünün mümkünlüğüyle karıştırmadan bu isteğe göre değerlendir.",
+      "steps": [
+        "Verilen katyon Na⁺, anyon O²⁻’dir. İki Na⁺ toplam +2 yük verir; bir O²⁻ bununla yükçe dengelenir ve Na₂O oranı elde edilir.",
+        "Bu yöntemde Na⁺ katyonunun adı sodyum, O²⁻ anyonunun adı oksittir. Sıralama katyon + anyon biçimindedir.",
+        "Böylece istenen ad sodyum oksittir. Di ön ekini kullanarak atom oranı sayan ad, burada istenen TYT katyon–anyon usulü değildir; peroksit ise verilen O²⁻ iyonundan farklı bir iyonu gerektirir."
+      ],
+      "optionReasons": [
+        "Yanlış. Disodyum monoksit seçeneği oranı sayı ön ekleriyle adlandırmaya yönelir. Kökte istenen TYT katyon–anyon usulünde sodyum + oksit adı seçilir; bu neden başka bütün adlandırma gelenekleri için bir imkânsızlık iddiası değildir.",
+        "Doğru. Na⁺ sodyum, O²⁻ oksit iyonudur; seçilmiş katyon–anyon kuralı sodyum oksit adını verir.",
+        "Yanlış. Dioksit iki oksijen atomu bildiren bir ad parçasıdır. Kökteki Na⁺ ve O²⁻ yük dengesi Na₂O oranını, seçilen yöntem ise oksit anyon adını gerektirir.",
+        "Yanlış. Peroksit anyonu O₂²⁻ yapısındadır; kökte ise O²⁻ oksit iyonu verilmiştir. Bu ikisi aynı iyon değildir.",
+        "Yanlış. Verilen yapı saf sodyum metali veya metal molekülü değildir; Na⁺ ve O²⁻ iyonlarından oluşan bir iyonik örgüdür."
+      ],
+      "commonError": "Kökte belirtilen katyon–anyon usulünü atlayıp moleküler ön ek şemasını kullanmak ya da oksit O²⁻ ile peroksit O₂²⁻ iyonunu aynı saymak.",
+      "check": "Adı tekrar verilen iyonlara çevir ve yükleri dengele: 2 × (+1) + (−2) = 0. Anyonu O₂²⁻ yazdıysan kökteki iyonu değiştirmişsindir."
+    }
+  },
+  {
+    "id": "f011-chem-kovalent-adlandirma-metalik-bag-8",
+    "identity": "[\"f011-chem-kovalent-adlandirma-metalik-bag-8\",\"Katı bakır telin elektrik iletiminde temel hareketli yük taşıyıcısı hangisidir? Metalik örgü modeli kullanılacaktır.\",\"\",[\"Tel boyunca ilerleyen pozitif metal merkezleri\",\"Yeni oluşan su molekülleri\",\"Yayılmış elektronlar\",\"Bakıra dönüşen protonlar\",\"Çekirdekten ayrılan nötronlar\"],2,\"Metalde yayılmış değerlik elektronları elektrik alanında yönlü akıma katkı verebilir. Pozitif merkezler örgüdeki yerlerinin çevresinde kalır; telin başından sonuna taşınmaları gerekmez. Bu olay proton/nötron dönüşümü veya yeni su türü üretimi değildir; elektrik iletimi kimyasal çekirdek dönüşümü gerektirmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Elektrik akımı, yük taşıyan taneciklerin yönlü hareketiyle ilişkilidir. Metalik örgü modeli, pozitif metal merkezleri ile birden çok merkez üzerinde yayılmış değerlik elektronlarını ayrı bileşenler olarak gösterir.",
+        "Bir katı örgüdeki merkezler denge konumları çevresinde titreşebilir. Hangi bileşenin uzun mesafeli yük taşıyabildiği, maddenin fazı ve bağlanma modeliyle birlikte değerlendirilir; çekirdek dönüşümü ayrı bir süreçtir."
+      ],
+      "strategy": "Bakırın katı metal olduğu bilgisini sabit tut; model bileşenlerini hareket serbestilerine göre ayır. Olağan akım taşıması için yeni molekül veya yeni çekirdek üretmeyi gerektiren yorumları ayrıca sına.",
+      "steps": [
+        "Kök, katı bakır ve metalik örgü modelini seçmiştir. Pozitif merkezler örgünün bileşenidir; telin bir ucundan diğerine topluca taşınmaları bu modelin akım açıklaması değildir.",
+        "Yayılmış elektronlar elektrik alanında yönlü harekete katkı verebilir. Modelde temel hareketli yük taşıyıcısı olarak bu bileşen kullanılır.",
+        "Bu nedenle yayılmış elektronlar seçeneği uygundur. Su oluşumu ile proton/nötron dönüşümleri verilen iletim olayına ait değildir; nötron ayrıca yüksüzdür."
+      ],
+      "optionReasons": [
+        "Yanlış. Katı telde pozitif metal merkezlerinin tel boyunca göç etmesi gerekmez; örgü konumları çevresindeki hareketleri akımı açıklayan uzun mesafeli taşıma değildir.",
+        "Yanlış. Modelde su üretimi verilmemiştir. Yeni su molekülleri oluşturmak katı bakırın elektrik iletiminin temel yük taşıyıcısı açıklaması değildir.",
+        "Doğru. Metalin yayılmış değerlik elektronları elektrik alanına yönlü hareketle karşılık vererek akıma katkı verir.",
+        "Yanlış. Protonların bakıra dönüşmesi bir elektrik iletimi mekanizması değildir. Olağan tel akımı çekirdek veya element türü değişimini gerektirmez.",
+        "Yanlış. Nötron elektrikçe yüksüzdür; bu yüzden aranan yük taşıyıcısı değildir. Çekirdekten nötron ayrılması da verilen metalik örgü modelinin dışında bir olaydır."
+      ],
+      "commonError": "Katı merkezlerin titreşimini tel boyunca yük göçüyle karıştırmak veya elektrik iletimini çekirdek taneciklerinin dönüşümüyle açıklamak.",
+      "check": "Akım sürerken bakırın hâlâ aynı elementten oluşan katı tel olarak kalabildiğini kontrol et. Açıklaman su üretimi, yeni element veya nötron kopması istiyorsa kökün modelini değiştirmişsindir."
+    }
+  },
+  {
+    "id": "f011-chem-kovalent-adlandirma-metalik-bag-9",
+    "identity": "[\"f011-chem-kovalent-adlandirma-metalik-bag-9\",\"Bir metal levha uygun koşullarda bükülürken parçalanmadan şekil alıyor. Elektron denizi modeli hangi açıklamayı destekler?\",\"\",[\"Her kovalent bağ aynı yönü sonsuza dek korur.\",\"Pozitif merkezler nötronlara dönüşür.\",\"Metalik çekim bükülmenin ilk anında tamamen yok olur.\",\"Katmanlar kayarken yayılmış elektron yoğunluğu yeni düzene uyum sağlayabilir.\",\"Bütün elektronlar levhayı terk edip bir daha dönmez.\"],3,\"Metalik bağlanmada yayılmış elektron yoğunluğu çok sayıda merkezle çekim hâlindedir. Katmanların göreli kayması sırasında bu yoğunluğun uyumu bağlanmanın sürmesini ve şekil almayı açıklar. Tamamen elektron kaybı veya çekirdek dönüşümü beklenmez; model bütün metallerin her koşulda aynı yumuşaklıkta olduğunu da iddia etmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Metalik bağın bu modelinde elektron yoğunluğu çok sayıda pozitif merkezle ilişkilidir; yalnız sabit iki atom arasındaki tek bir yönlü çizgiye indirgenmez. Merkezlerin elektriksel çekimle bir arada tutulması örgüye ait ortak bir özelliktir.",
+        "Bükülme, uygun koşullarda merkezlerin göreli konumlarını değiştiren mekanik bir etkidir. Bir malzemenin şekil alması, element kimliğinin veya bütün çekirdeklerinin değişmesi anlamına gelmez; gerçek esneklik ve kırılma davranışı koşullara bağlıdır."
+      ],
+      "strategy": "Şekil değişimini merkezlerin göreli konumu açısından izle; ardından çok merkezli bağlanma modelinin hangi açıklamaya izin verdiğini değerlendir. Çekirdeği değiştiren veya tüm çekimi anında yok sayan ek kabulleri ayır.",
+      "steps": [
+        "Metal levhanın bükülmesi, merkez katmanlarının birbirine göre kayabilmesiyle ilişkilendirilebilir. Kök uygun koşullarda parçalanmadan şekil aldığını özellikle veriyor.",
+        "Yayılmış elektron yoğunluğu değişen merkez düzenine uyum sağlayabilir; merkezlerle çekim bir çiftin eski doğrultusuna bağlı olmak zorunda değildir.",
+        "Bu nedenle katman kayması sırasında elektron yoğunluğunun uyumunu belirten seçenek modelle uyuşur. Bütün elektronların kaçması veya metal merkezlerinin nötrona dönüşmesi bu mekanik gözlemden çıkarılmaz."
+      ],
+      "optionReasons": [
+        "Yanlış. Seçilen model yerelleşmiş kovalent bağların tek doğrultusunu sonsuza dek korumasına dayanmaz. Merkezlerin göreli kayması ve yayılmış bağlanma birlikte değerlendirilir.",
+        "Yanlış. Pozitif merkezlerin nötrona dönüşmesi çekirdek/tanecik kimliğini değiştiren ayrı bir iddiadır; metal levhanın bükülmesini açıklamaz.",
+        "Yanlış. Çekimin ilk anda bütünüyle yok olması, verilen parçalanmadan şekil alma gözleminin model açıklaması değildir. Bağlanmayı sürdüren elektron yoğunluğu hesaba katılmalıdır.",
+        "Doğru. Çok merkeze yayılmış elektron yoğunluğu göreli katman kaymasına uyum sağlayabilir; elektriksel çekim sürerken metal şekil alabilir.",
+        "Yanlış. Bütün elektronların levhayı kalıcı olarak terk etmesi, örneğin bağlanma ve yük durumunu kökten değiştirir. Bu, modelin yeniden dağılan elektron yoğunluğu açıklaması değildir."
+      ],
+      "commonError": "Levhanın şekil değiştirmesini bütün bağlanmanın yok olması sanmak veya mekanik kayma yerine çekirdek dönüşümü varsaymak.",
+      "check": "Bükülmeden önce ve sonra aynı metal merkezleri ile aynı örnek içinde kalan elektronları düşün. Modelin yalnız göreli konum ve dağılımı değiştirmesi gözlemi açıklamaya yetiyor mu, bunu denetle."
+    }
+  },
+  {
+    "id": "f011-chem-kovalent-adlandirma-metalik-bag-10",
+    "identity": "[\"f011-chem-kovalent-adlandirma-metalik-bag-10\",\"Bir katının elektrik ilettiği gözleniyor. Başka bileşim ve yapı verisi yok. Hangi sonuç en güvenlidir?\",\"\",[\"Kesinlikle saf metaldir.\",\"Kesinlikle iyonik katıdır.\",\"Hiç elektron içermez.\",\"Bütün bağları mutlaka hidrojen bağıdır.\",\"İletkenlik tek başına metalik yapı için kesin kanıt değildir.\"],4,\"Metaller elektronlarla iletebilir; grafit de tabakalı kovalent yapısındaki yayılmış elektronlarla iletebilir. Başka malzemelerde de farklı taşıyıcılar mümkündür. Bu nedenle tek gözlem metalik yapıyı kesin seçtirmez; bileşim, faz, örgü ve taşıyıcı bilgisi gerekir. İletkenlik atom veya elektron yokluğu değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "İletkenlik, hareketli yük taşıyıcılarının bulunmasına ilişkin bir gözlemdir. Bileşim, örgü türü ve taşıyıcı kimliği ise ayrıca araştırılabilen yapısal bilgilerdir; bu bilgiler aynı ölçüm değildir.",
+        "Bir 'kesinlikle' çıkarımını sınarken verilen gözlemi sağlayan farklı yapı örnekleri aranabilir. Bir örnekte işleyen mekanizmanın başka maddelerde tek olasılık olması kendiliğinden gerekmez."
+      ],
+      "strategy": "İletkenlik öncülünü sağlayan yapı örneklerini araştır; her birinde örgü ve taşıyıcı kimliğini ayrıca kaydet. Bu karşılaştırmayı seçeneklerdeki kesinlik iddialarını sınamak için kullan.",
+      "steps": [
+        "Verilen tek ölçüm, katının elektrik iletmesidir. Element bileşimi, kristal örgüsü veya saf olup olmadığı hakkında ek veri yoktur.",
+        "Metaller iletebilir; tabakalı kovalent yapıdaki grafit de yayılmış elektronlarla iletir. Böylece gözlemle uyuşan tek yapı metalik örgü değildir.",
+        "İletkenliğin tek başına metalik yapı için kesin kanıt olmadığını belirten sınırlı sonuç uygundur. Saf metal, zorunlu iyonik katı veya bütün bağların hidrojen bağı olduğu ek iddiaları bu tek ölçüm sağlamaz."
+      ],
+      "optionReasons": [
+        "Yanlış. İletken grafit, saf metal olmayan bir karşı örnektir. Bu nedenle yalnız iletkenlikten kesin saf metal sonucu çıkarılamaz.",
+        "Yanlış. Metaller ve grafit gibi farklı katılar da iletebilir. Verilen tek gözlem iyonik örgüyü zorunlu seçtirmez.",
+        "Yanlış. İletkenlikten elektron yokluğu sonucu çıkmaz; birçok iletken katıda yük taşıyıcıları zaten elektronlardır. Gözlem elektronların bulunmadığını ölçmez.",
+        "Yanlış. Elektrik iletimi bütün bağların hidrojen bağı olduğunu göstermez. Hidrojen-bağı vericisi/alıcı yapısı hakkında kökte hiçbir veri yoktur.",
+        "Doğru. Aynı iletkenlik gözlemi metal ve grafit gibi farklı yapılarla bağdaşır; metalik örgü için ek bileşim ve yapı kanıtı gerekir."
+      ],
+      "commonError": "Bir maddede metalik yapıyla açıklanan iletkenliği, bütün iletkenlerin zorunlu metal olması şeklinde tersine çevirmek.",
+      "check": "Bakır ve grafit için gözlemi ayrı yaz: ikisi de iletebilir, yapıları aynı değildir. Bu karşı örnek dururken yalnız iletkenlikten tek bir örgüyü kesin seçemediğini kontrol et."
+    }
+  },
+  {
+    "id": "f011-chem-zayif-etkilesimler-1",
+    "identity": "[\"f011-chem-zayif-etkilesimler-1\",\"Saf Ar örneğinde iki yüksüz Ar atomu arasında, TYT’nin temel sınıflamasına göre hangi çekim bulunur? Ar soy gazdır ve kalıcı dipol taşımaz.\",\"\",[\"London\",\"İyon–dipol\",\"Kovalent Ar–Ar bağı zorunluluğu\",\"Hidrojen bağı\",\"İyon–iyon\"],0,\"Ar atomlarındaki ilişkili anlık elektron dağılımı değişimleri London çekimine katkı verir. Soy gaz olmak hiç etkileşim olmadığı anlamına gelmez. Net iyon yükü ve N/O/F’ye bağlı H vericisi bulunmadığından iyon–dipol veya hidrojen bağı etiketleri bu çifte uygun değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yüksüz bir taneciğin elektron bulutu anlık olarak asimetrikleşebilir. Komşu taneciğin dağılımıyla ilişkili bu dalgalanmalar çekime katkı verebilir; bunun için taneciğin kalıcı bir dipol taşıması gerekmez.",
+        "Net iyon yükü ile molekül ya da atom üzerindeki geçici kutuplanma ayrı özelliklerdir. Bir etkileşimi sınıflandırırken seçilen iki tanecikte net yük, kalıcı kutup ve uygun H vericisi bulunup bulunmadığını ayrı ayrı inceleriz."
+      ],
+      "strategy": "İki Ar atomunu net yük ve kalıcı kutup bakımından sınıflandır; ardından elektron bulutlarının hangi değişime açık olduğunu kullanarak temel çekim adını seç. Seçeneklerin gerektirdiği fazladan tanecikleri de kontrol et.",
+      "steps": [
+        "Seçilen çift Ar–Ar’dır; iki atom da yüksüzdür ve kalıcı dipol taşımaz. Kökte iyon, polar molekül veya H içeren bir verici verilmemiştir.",
+        "Elektron dağılımları anlık ve ilişkili kutuplanmalar oluşturabilir. Bu çift için TYT’nin temel sınıflamasındaki çekim London etkileşimidir.",
+        "London seçeneği bu verilerle uyumludur. İyon–dipol ve iyon–iyon için net yük, hidrojen bağı için uygun H vericisi gerekir; Ar–Ar kovalent bağı oluştuğu da zorunlu değildir."
+      ],
+      "optionReasons": [
+        "Doğru. Kalıcı dipolü olmayan iki yüksüz Ar atomunun ilişkili anlık kutuplanmalarından London çekimi doğabilir.",
+        "Yanlış. Seçilen çiftte net yüklü iyon ve kalıcı dipollü molekül yoktur; iyon–dipol adının iki bileşeni de sağlanmaz.",
+        "Yanlış. İki Ar’ın birbirini çekmesi, aralarında mutlaka kovalent Ar–Ar bağı ve yeni bir molekül oluştuğu anlamına gelmez.",
+        "Yanlış. Ar atomlarında H bulunmaz; dolayısıyla bu çiftte klasik TYT hidrojen-bağı vericisi kurulamaz.",
+        "Yanlış. Her iki Ar atomu da yüksüzdür. İyon–iyon sınıflaması için iki net yüklü iyon gerekir."
+      ],
+      "commonError": "Soy gazın kalıcı dipol taşımamasını hiçbir çekime sahip olmaması sanmak veya geçici kutuplanmayı net iyon yüküne çevirmek.",
+      "check": "İki Ar’ı birbirinden uzaklaştırdığında da formülleri Ar ve yükleri sıfır kalır. Açıklaman bir Ar iyonu ya da H atomu ekliyorsa verilen çiftin dışına çıkmışsındır."
+    }
+  },
+  {
+    "id": "f011-chem-zayif-etkilesimler-2",
+    "identity": "[\"f011-chem-zayif-etkilesimler-2\",\"HCl polar moleküldür. Saf HCl’nin iki komşu molekülü için hangi ifade doğrudur?\",\"\",[\"Polar olduğu için London yoktur.\",\"Dipol–dipol katkısına ek olarak London da vardır.\",\"H içerdiği için TYT’de mutlaka hidrojen bağı yapar.\",\"HCl molekülü net +1 yüklüdür.\",\"Yalnız metalik bağ vardır.\"],1,\"Polar HCl’de kalıcı dipoller arasındaki etkileşim bulunur; nötr moleküllerin London katkısı da devam eder. H–Cl bağlantısı bu ünitenin N/O/F verici koşuluna girmez. HCl’nin kısmi kutupları net iyon yükü değildir; metalik örgü de söz konusu değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kalıcı elektron dağılımı asimetrisi ile anlık elektron dağılımı dalgalanmaları farklı katkılardır. Bir molekülün kalıcı kutbu bulunması, elektron bulutunun zamanla değişemeyeceği anlamına gelmez.",
+        "δ+ ve δ− kısmi kutupları net iyon yükünden ayırmak gerekir. Klasik TYT hidrojen-bağı vericisi için H’nin doğrudan F/O/N’ye bağlı olması aranır; yalnız H harfinin bulunması bu yapısal koşulu vermez."
+      ],
+      "strategy": "HCl’nin kalıcı kutbunu ve anlık elektron dağılımını iki ayrı başlıkta tut. Seçeneklerdeki 'yoktur', 'mutlaka' ve 'yalnız' ifadelerini bu iki katkının birlikte bulunabilmesi açısından denetle.",
+      "steps": [
+        "Saf örnekte seçilen çift iki HCl molekülüdür. Kök HCl’nin polar olduğunu verir; dolayısıyla kalıcı molekül kutupları arasındaki dipol–dipol katkısı dikkate alınır.",
+        "HCl’nin elektron bulutları anlık olarak da kutuplanabilir; London katkısı kaybolmaz. H–Cl, seçeneklerde söylenen TYT F/O/N verici koşulunu karşılamaz.",
+        "Böylece dipol–dipole ek London bulunduğunu belirten seçenek uygundur. HCl’nin kısmi kutuplarını net +1 yüke dönüştüren veya saf moleküler örneğe metalik örgü ekleyen iddialar elenir."
+      ],
+      "optionReasons": [
+        "Yanlış. Polar olmak anlık elektron dağılımı dalgalanmalarını durdurmaz; HCl komşularında London katkısı da bulunur.",
+        "Doğru. Verilen polar yapı kalıcı dipol katkısını, elektron dağılımı dalgalanmaları ise ek London katkısını mümkün kılar.",
+        "Yanlış. H’nin doğrudan komşusu Cl’dir. Seçeneğin özellikle belirttiği klasik TYT verici kuralı F/O/N olduğundan yalnız H içermek yeterli değildir.",
+        "Yanlış. HCl’nin H ve Cl uçlarında kısmi kutuplanma bulunması molekülün net +1 yük taşıdığını göstermez; verilen tür HCl’dir, HCl⁺ değildir.",
+        "Yanlış. Saf HCl komşuları moleküler çifttir. Elektron denizli metal merkezlerinden oluşan bir metalik örgü verilmemiştir."
+      ],
+      "commonError": "Polar molekülde yalnız kalıcı dipol katkısı olabileceğini düşünüp London’ı silmek veya kısmi artı ucu bütün molekülün net +1 yükü sanmak.",
+      "check": "HCl için 'kalıcı kutup var mı?' ve 'anlık elektron dağılımı değişebilir mi?' sorularını ayrı cevapla. Birine evet demek diğerine hayır demeni gerektirmemeli."
+    }
+  },
+  {
+    "id": "f011-chem-zayif-etkilesimler-3",
+    "identity": "[\"f011-chem-zayif-etkilesimler-3\",\"Polar H₂O ile apolar O₂ molekülü arasındaki karakteristik eşleşme hangisidir? Sorulan çift su–oksijendir.\",\"\",[\"İyon–dipol\",\"İyon–iyon\",\"Dipol–indüklenmiş dipol\",\"Kovalent O–H bağı oluşması zorunluluğu\",\"Metalik bağ\"],2,\"Suyun kalıcı dipolü O₂’nin elektron dağılımında geçici kutuplanma indükleyebilir. O₂ net yüklü iyon değildir, bu yüzden iyon–dipol denmez. Bu etkileşim yeni kovalent ürün oluştuğunu zorunlu kılmaz; nötr çiftin London katkısı da bulunabilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kalıcı bir elektrik alanı, komşu taneciğin elektron bulutunu biçim değişikliğine uğratabilir. Komşunun bu etkiyle kutuplanmasına indüklenme denir; tanecik başlangıçta kalıcı dipol taşımayabilir.",
+        "Nötr polar molekülde toplam yük sıfır olsa da yük yoğunluğu iki uca eşit dağılmaz. İyonda ise taneciğin net yükü vardır; bu ayrım kutuplanmayı başlatan kaynağın adlandırılmasında önemlidir."
+      ],
+      "strategy": "Su–oksijen çiftinde kalıcı alanı sağlayan taneciği ve bu alana yanıt veren taneciği belirle. Kaynağın net iyon mu molekül kutbu mu olduğuna göre eşleşme adının iki parçasını kur.",
+      "steps": [
+        "Kök H₂O’yu polar, O₂’yi apolar molekül olarak tanımlar. Sorulan çift su–oksijendir; su–su veya iyon–su çiftini seçmiyoruz.",
+        "Suyun kalıcı dipolü O₂’nin elektron dağılımını indükleyebilir. Kaynak dipol, O₂ tarafındaki yanıt indüklenmiş dipoldür.",
+        "Karakteristik eşleşme dipol–indüklenmiş dipoldür. Bu ad yeni O–H kovalent ürünü oluştuğunu söylemez; iki nötr komşunun London katkısı da ayrıca bulunabilir."
+      ],
+      "optionReasons": [
+        "Yanlış. O₂ ve H₂O burada net yüklü iyon olarak verilmemiştir. İyon–dipol için gereken iyon bu seçilmiş çiftte yoktur.",
+        "Yanlış. İki net iyon yerine iki nötr molekül seçilmiştir; iyon–iyon etiketi tanecik kimlikleriyle uyuşmaz.",
+        "Doğru. H₂O’nun kalıcı dipolü apolar O₂’yi kutuplaştırabilir; iki taraf dipol ve indüklenmiş dipol olarak adlandırılır.",
+        "Yanlış. Komşu elektron bulutunun kutuplanması zorunlu yeni kovalent O–H bağı oluşumu değildir; kök böyle bir kimyasal ürün vermiyor.",
+        "Yanlış. Verilen su–oksijen çifti, pozitif metal merkezleri ile yayılmış elektronlardan oluşan metalik örgü değildir."
+      ],
+      "commonError": "Apolar O₂’nin kutuplanmasını O₂’nin iyon olmasıyla eşitlemek veya ortamda su bulunduğu için sorulan her çifti su–su olarak okumak.",
+      "check": "O₂’yi uzaklaştırdığında kendi kalıcı dipolü olmadığı öncülüne geri dönmelisin. Modelinde O₂’ye kalıcı net yük eklediysen indüklenme ile iyonlaşmayı karıştırmışsındır."
+    }
+  },
+  {
+    "id": "f011-chem-zayif-etkilesimler-4",
+    "identity": "[\"f011-chem-zayif-etkilesimler-4\",\"Sulu çözeltide Na⁺ iyonu ile H₂O molekülü arasındaki karakteristik etkileşim hangisidir?\",\"\",[\"Dipol–dipol\",\"Yalnız London\",\"Metalik örgü\",\"İyon–dipol\",\"Apolar kovalent bağ\"],3,\"Na⁺ bir iyon, H₂O polar moleküldür; eşleşme iyon–dipoldür. Suyun O ucu katyona yönelme eğilimindedir. Bu çifti kristaldeki Na⁺–Cl⁻ çiftiyle karıştırma; çözeltideki hidratlaşma metalik veya yeni apolar kovalent bağ adıyla sınıflanmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "İyonun üstündeki yük işareti taneciğin net elektrik yükünü gösterir. Polar molekül ise toplamda yüksüz olabildiği hâlde farklı uçlarında kısmi yük yoğunluğu taşır.",
+        "Bir çözeltide farklı komşu çiftleri farklı biçimde sınıflanabilir. Kristaldeki iyon komşuluğu, çözeltide aynı iyonun çözücü molekülüyle komşuluğunun yerine kullanılamaz."
+      ],
+      "strategy": "Na⁺ ile tek H₂O’yu bir çift olarak ayır; her tarafın net yük ve kalıcı kutup bilgisini yaz. Çözücünün kimliğini, kristaldeki karşı iyonla değiştirmeden adlandır.",
+      "steps": [
+        "Na⁺ net +1 yüklü iyondur. H₂O ise kutuplu moleküldür; iki taraf aynı türden nötr molekül değildir.",
+        "Bir taraf iyon, öteki kalıcı dipol olduğundan karakteristik ad iyon–dipoldür. Suyun kısmi negatif O ucu katyona daha uygun yönlenebilir.",
+        "İyon–dipol seçeneği bu çifti karşılar. Yalnız London ifadesi net yük–kutup katkısını yok sayar; metalik örgü ve apolar kovalent bağ seçenekleri verilmemiş başka yapılar getirir."
+      ],
+      "optionReasons": [
+        "Yanlış. Na⁺ nötr kalıcı dipollü molekül değildir; net yüklü iyon olduğu için çift yalnız iki molekül dipolü olarak adlandırılmaz.",
+        "Yanlış. Yalnız London demek Na⁺ net yüküyle suyun kalıcı kutbu arasındaki belirgin katkıyı dışlar.",
+        "Yanlış. Çözücü içindeki Na⁺–H₂O komşuluğu, saf sodyum metalinin elektron denizli örgüsü değildir.",
+        "Doğru. Net yüklü Na⁺ ile kalıcı dipollü H₂O’nun karakteristik eşleşmesi iyon–dipoldür.",
+        "Yanlış. Hidratlaşma çiftini zorunlu yeni apolar kovalent bağ diye adlandıramayız; su zaten polar, sodyum ise iyon olarak verilmiştir."
+      ],
+      "commonError": "Formülde Na gördüğünde metalik bağ seçmek veya Na⁺’ın çözücüyle komşuluğunu kristaldeki Na⁺–Cl⁻ çifti sanmak.",
+      "check": "Çiftin sağ tarafında gerçekten H₂O kaldığını kontrol et. Cl⁻ yazdıysan çözelti sorusunu kristal komşuluğuna çevirmişsindir; Na yazıp yükü sildiysen taneciği değiştirmişsindir."
+    }
+  },
+  {
+    "id": "f011-chem-zayif-etkilesimler-5",
+    "identity": "[\"f011-chem-zayif-etkilesimler-5\",\"Bir Na⁺ iyonunun apolar Ar atomunu kutuplaştırması hangi eşleşmeye örnektir?\",\"\",[\"Dipol–dipol\",\"Hidrojen bağı\",\"İyon–kalıcı dipol\",\"Kovalent Ar–H\",\"İyon–indüklenmiş dipol\"],4,\"Na⁺’ın alanı Ar’ın elektron dağılımını indükler; bu nedenle iyon–indüklenmiş dipol adı kullanılır. Ar’da başlangıçta kalıcı dipol yoktur, H vericisi de bulunmaz. Böyle bir çiftin mümkün olması bir tuzun apolar çözücüde yüksek çözünürlüğünü tek başına göstermez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir iyonun elektrik alanı, yüksüz komşunun elektron dağılımını kaydırarak o komşuda kısmi kutuplar oluşturabilir. Elektron bulutunun bu biçim değişikliği, tek başına elektron aktarımı veya yeni net yük kazanımı değildir.",
+        "Kalıcı dipol taneciğin başlangıç yapısına ait kutupluluğu, indüklenmiş dipol ise komşu etkiye bağlı kutuplanmayı anlatır. Adlandırmada hem alanın kaynağı hem komşudaki kutbun nasıl oluştuğu önemlidir."
+      ],
+      "strategy": "Eşleşmenin ilk tarafını kaynak yükün niteliğiyle, ikinci tarafını Ar’daki kutbun oluşma biçimiyle tanımla. İndüklenmiş bir kutbu başlangıçtan beri varmış gibi adlandırma.",
+      "steps": [
+        "Na⁺ net yüklü bir iyondur. Ar ise kökte apolar atom olarak verilmiştir; başlangıçta kalıcı molekül dipolü taşımaz.",
+        "Na⁺’ın alanı Ar’ın elektron dağılımını kutuplaştırır. Ar tarafındaki kutup komşu iyon etkisiyle indüklenmiştir.",
+        "İki bilgiyi birleştirince iyon–indüklenmiş dipol adı elde edilir. İyon–kalıcı dipol Ar’ın başlangıç koşulunu, kovalent Ar–H ise hiç verilmeyen H atomunu ekler."
+      ],
+      "optionReasons": [
+        "Yanlış. Na⁺ net yüklü iyon, Ar başlangıçta apolar atomdur; çift iki kalıcı molekül dipolünden oluşmaz.",
+        "Yanlış. Seçilen Na⁺–Ar çiftinde H vericisi yoktur; hidrojen bağı için gereken yapı verilmemiştir.",
+        "Yanlış. Ar’da başlangıçtan gelen kalıcı dipol yoktur. Kutup, Na⁺’ın alanıyla indüklendiği için kalıcı dipol adı uygun değildir.",
+        "Yanlış. Çiftte H atomu bulunmaz ve kutuplanma yeni kovalent Ar–H ürünü oluşturulduğu anlamına gelmez.",
+        "Doğru. Kutuplaştıran kaynak iyon olan Na⁺, kutuplanan komşu ise indüklenmiş dipol taşıyan Ar’dır."
+      ],
+      "commonError": "İyonun oluşturduğu geçici Ar kutbunu kalıcı dipol saymak veya kutuplanmayı yeni bir Ar–H kimyasal bağıyla açıklamak.",
+      "check": "Ar’ı dış alanın etkisinden ayırdığında kökteki apolar atom tanımına dönmelisin. Ayrıca çizimde H eklemeden Na⁺ ve Ar’ın ikisini de koruduğunu denetle."
+    }
+  },
+  {
+    "id": "f011-chem-zayif-etkilesimler-6",
+    "identity": "[\"f011-chem-zayif-etkilesimler-6\",\"NaCl kristalindeki Na⁺ ile komşu Cl⁻ arasındaki elektrostatik çekim hangi türdedir? Burada su molekülü seçilmemiştir.\",\"\",[\"İyon–iyon\",\"İyon–dipol\",\"Yalnız London\",\"Dipol–indüklenmiş dipol\",\"Hidrojen bağı\"],0,\"Seçilen iki tanecik zıt yüklü iyonlardır; kristal örgüsünün çekimi iyon–iyondur. İyon–dipol için bir net iyon ile bir polar molekül gerekir. Cl⁻’daki eksi işareti nötr molekülün δ− kutbu değildir. Çiftin açık seçimi karışık ortam etiketini önler.\"]",
+    "guidance": {
+      "knowledge": [
+        "Elektriksel sınıflamada tam net yük taşıyan iyon ile yalnız kısmi kutupları olan nötr molekül ayrı türlerdir. + ve − net yük işaretleri, δ+ ve δ− gösterimleriyle eş anlamlı değildir.",
+        "Etkileşim sorusunda hangi iki taneciğin seçildiği belirleyicidir. Bir madde suda da bulunabilse bile kök kristaldeki komşuları seçiyorsa çözücü molekülünü kendiliğinden çifte eklemeyiz."
+      ],
+      "strategy": "Kristalde işaret edilen iki komşunun yüklerini doğrudan oku; ardından seçeneklerin iki tarafta hangi tanecik türünü gerektirdiğini karşılaştır. Suya ait bir kutbu bu seçime taşıma.",
+      "steps": [
+        "Seçilen tanecikler Na⁺ ve Cl⁻’dir. İkisinin de net yükü vardır ve yük işaretleri zıttır.",
+        "Zıt net iyonların kristal komşuluğundaki çekimi iyon–iyon olarak adlandırılır. Buradaki Cl⁻, nötr bir molekülün kısmi eksi ucu değildir.",
+        "İyon–iyon seçeneği bu iki taneciği aynen korur. İyon–dipol için gerekli polar molekül ve hidrojen bağı için gerekli verici bu seçilmiş çiftte yoktur; yalnız London demek de net yük çekimini siler."
+      ],
+      "optionReasons": [
+        "Doğru. Na⁺ ve Cl⁻ iki zıt yüklü iyondur; aralarındaki kristal çekimi iyon–iyondur.",
+        "Yanlış. Dipol tarafı olacak polar molekül seçilmemiştir. Cl⁻ net yüklü iyon olduğundan suyun bir kutbu gibi okunamaz.",
+        "Yanlış. Yalnız London ifadesi, seçilmiş iki net zıt yük arasındaki iyonik çekimi yok sayar.",
+        "Yanlış. Çiftte kalıcı polar molekül ve apolar komşu bulunmuyor; iki tarafta da iyon vardır.",
+        "Yanlış. Na⁺ ve Cl⁻ çiftinde F/O/N’ye kovalent bağlı H vericisi bulunmaz; kristal çekimi hidrojen bağı değildir."
+      ],
+      "commonError": "Cl⁻ işaretini suyun δ− kutbuyla aynı sayıp kristaldeki iyon çiftini iyon–dipol diye etiketlemek.",
+      "check": "İki sütuna yalnız Na⁺ ve Cl⁻ yaz. İyon–dipol cevabını savunmak için sütunlardan birini H₂O’ya çevirmek zorunda kalıyorsan verilen çifti değiştirmişsindir."
+    }
+  },
+  {
+    "id": "f011-chem-zayif-etkilesimler-7",
+    "identity": "[\"f011-chem-zayif-etkilesimler-7\",\"Cl⁻ iyonunun etrafındaki su molekülleri uygun yönlenirken hangi uç iyona daha yakın olma eğilimindedir? H₂O’da O ucu δ−, H uçları δ+’dır.\",\"\",[\"O ucu\",\"H uçları\",\"İki uç her koşulda özdeştir\",\"Suyun olmayan Na ucu\",\"Yalnız nötronlar\"],1,\"Cl⁻ net negatif olduğu için suyun kısmi pozitif H uçları ona yönelme eğilimindedir. Na⁺ katyonunda ise O ucu uygundur. Su molekülünün bütününü yükse benzeyen bir iyon sanma; bu yönlenme iyon–dipol etkileşimidir, zorunlu O–H kopması değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Uygun yakınlık ve yönlenmede zıt işaretli yük bölgeleri çekime katkı verir. Bir iyonun net yükü ile polar molekülün kısmi yük bölgeleri bu yönlenme hesabında ayrı roller taşır.",
+        "δ işaretleri bütün elektronların bir uca aktarılması demek değildir. Su molekülünün iki ucunu karşılaştırırken molekülün toplamını iyonlaştırmadan, kökte verilen kısmi işaretleri kullanmak gerekir."
+      ],
+      "strategy": "Önce Cl⁻’ın net işaretini belirle; suyun kökte verilen iki kısmi işaretini buna karşılaştır. Yakın yüz seçimini bütün suyu yüklü bir iyona çevirmeden yap.",
+      "steps": [
+        "Cl⁻ net negatif yüklüdür. Verilen H₂O bilgisinde O ucu δ−, H uçları δ+ taşır.",
+        "Negatif Cl⁻ için karşı işaretli bölge suyun δ+ H uçlarıdır. Bu uçların iyona daha yakın yönelmesi çekimle uyumludur.",
+        "H uçlarını belirten seçenek uygundur. O ucunu seçmek aynı işaretli bölgeleri karşılaştırır; iki ucu özdeş saymak da kökün açık kısmi yük ayrımını yok sayar."
+      ],
+      "optionReasons": [
+        "Yanlış. O ucu δ−, Cl⁻ de negatiftir. Verilen işaretlerle katyona uygun olan O yönünü anyona aynen taşıyamayız.",
+        "Doğru. δ+ H uçları net negatif Cl⁻’a karşı işaret taşır ve daha yakın yönlenmeye uygundur.",
+        "Yanlış. Kök iki ucu δ− ve δ+ olarak açıkça ayırmıştır. Her koşulda özdeş olduklarını söylemek bu veriye aykırıdır.",
+        "Yanlış. Su H₂O’dur ve Na ucu içermez. Na⁺ başka bir iyon örneğidir, su molekülünün parçası değildir.",
+        "Yanlış. Nötronlar yüksüz çekirdek tanecikleridir; soruda yönlenen su ucu yerine bağımsız yük kutbu olarak kullanılmazlar."
+      ],
+      "commonError": "Na⁺ çevresindeki su yönünü Cl⁻ için değiştirmeden kullanmak veya negatif iyona suyun kısmi negatif O ucunu yaklaştırmak.",
+      "check": "Cl⁻ yerine varsayımsal Na⁺ koysaydın uygun uç O tarafına dönerdi. İşaret ters çevrilince seçimin de ters yönde değişebiliyorsa yük denetimini doğru uygulamışsındır."
+    }
+  },
+  {
+    "id": "f011-chem-zayif-etkilesimler-8",
+    "identity": "[\"f011-chem-zayif-etkilesimler-8\",\"CO₂ doğrusal ve iki C=O bağ dipolü eşit-zıt yönlüdür. Saf CO₂ komşuları için doğru temel yorum hangisidir?\",\"\",[\"Polar bağlar nedeniyle molekül mutlaka polardır.\",\"Hiçbir moleküller arası çekim olamaz.\",\"Molekül apolardır; London katkısı bulunur.\",\"CO₂ iyonik örgüdür.\",\"C atomu H bağı vericisidir.\"],2,\"Eş ve zıt dipol vektörleri doğrusal CO₂’de net kalıcı dipolü sıfırlar. Bu, molekül içi C=O bağlarını apolar yapmaz; yalnız toplam molekül apolar olur. Anlık elektron değişimlerinden London çekimi sürer. Formülde H bulunmadığından klasik H-bağı vericisi de yoktur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Molekülün net kalıcı dipolü bağ dipollerinin yönlü toplamıyla değerlendirilir. Tek bir bağın polaritesi ile bütün molekülün polaritesi ayrı ölçeklerdeki bilgilerdir.",
+        "Elektron bulutlarının anlık kutuplanması, molekülün kalıcı dipolünden farklı bir etkidir. Kalıcı dipol toplamının sıfır olması elektronların ve komşular arasındaki bütün fiziksel katkıların yokluğu anlamına gelmez."
+      ],
+      "strategy": "Önce eşit-zıt bağ dipollerini vektörel olarak topla; sonra bu toplamın molekülün kalıcı kutbuna ne söylediğini belirle. En son, kalıcı kutup ile anlık elektron etkilerini ayrı kontrol et.",
+      "steps": [
+        "CO₂’nin doğrusal olduğu ve iki C=O dipolünün eşit-zıt yönlü bulunduğu verilmiştir. Bu vektörlerin toplamı sıfırdır.",
+        "Dolayısıyla molekülün bütünü apolardır; C=O bağlarının ayrı ayrı polar olması korunur. Elektron dağılımı dalgalanmalarından London katkısı yine mümkündür.",
+        "Apolar molekül ve London katkısını birlikte belirten seçenek uygundur. Bütün çekimleri yok saymak veya molekül içi polar bağlardan doğrudan net kutup çıkarmak iki ayrı yanlıştır."
+      ],
+      "optionReasons": [
+        "Yanlış. Eşit-zıt C=O dipolleri doğrusal geometride birbirini götürür. Polar bağlar molekülün mutlaka polar olmasını gerektirmez.",
+        "Yanlış. Net kalıcı dipolün sıfır olması anlık elektron dağılımı kaynaklı London katkısını ortadan kaldırmaz.",
+        "Doğru. Verilen vektör toplamı sıfır olduğu için molekül apolardır; komşular arasında London katkısı bulunur.",
+        "Yanlış. Kök ayrı CO₂ molekülleri ve onların komşuluğunu verir. Net iyonlardan oluşan bir CO₂ iyonik örgüsü verilmemiştir.",
+        "Yanlış. CO₂’de H atomu bulunmaz. C’nin H-bağı vericisi olabilmesi için gereken bağlı H bu formülde yoktur."
+      ],
+      "commonError": "Bağ polaritesini doğrudan molekülün toplam polaritesi saymak veya net dipol sıfırsa hiçbir moleküller arası çekim kalmadığını düşünmek.",
+      "check": "İki eş oku aynı doğrultuda ters yöne çizip topla: sıfır elde etmelisin. Ardından bu işlemin C=O bağlarını veya molekülün elektronlarını silmediğini ayrı cümleyle belirt."
+    }
+  },
+  {
+    "id": "f011-chem-zayif-etkilesimler-9",
+    "identity": "[\"f011-chem-zayif-etkilesimler-9\",\"Aynı dış basınçta benzer biçimli apolar Cl₂, Br₂ ve I₂ karşılaştırılıyor. Elektron bulutu kutuplanabilirliği bu seride Cl₂’den I₂’ye artıyor. Beklenen kaynama eğilimi hangisidir?\",\"\",[\"Cl₂ > Br₂ > I₂\",\"Üçünün kaynaması zorunlu eşittir\",\"Br₂ > I₂ > Cl₂ zorunludur\",\"I₂ > Br₂ > Cl₂\",\"Hidrojen bağı sayısıyla belirlenir\"],3,\"Daha kolay kutuplanan benzer moleküllerde toplam London katkısının artması, aynı dış basınçta daha yüksek kaynama sıcaklığı eğilimiyle ilişkilidir. Verilen seri I₂>Br₂>Cl₂ sonucunu destekler. H içermeyen bu moleküllere hidrojen bağı eklenmez; bu eğilim bütün farklı yapılar için evrensel tek değişken yasası değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kutuplanabilirlik, elektron bulutunun dış etkiye ne kadar kolay biçim değiştirdiğiyle ilgilidir. Benzer yapılı apolar bir seride bunun artması toplam London katkısının artmasıyla ilişkilendirilebilir.",
+        "Kaynama sıcaklığı sıvı–gaz dengesi ve dış basınç koşuluyla değerlendirilir. Aynı basınç ve benzer yapı karşılaştırması sağlandığında tanecikleri ayırmayı güçleştiren çekim artışı daha yüksek kaynama eğilimini destekler; bu, bütün farklı moleküller için tek değişkenli bir yasa değildir."
+      ],
+      "strategy": "Kökte verilen kutuplanabilirlik yönünü bir okla yaz; şekil ve basınç eşitliği koşullarını sabit tutarak bu oku kaynama eğilimine taşı. Farklı bir etkileşim türü ekleyerek sıralamayı değiştirme.",
+      "steps": [
+        "Üç molekül de benzer biçimli ve apolardır; karşılaştırılan dış basınç aynıdır. Verilen kutuplanabilirlik Cl₂’den Br₂’ye ve I₂’ye doğru artar.",
+        "Bu sınırlı seride artan kutuplanabilirlik, artan London katkısı ve daha yüksek kaynama sıcaklığı eğilimiyle uyumludur.",
+        "Büyükten küçüğe sıra I₂ > Br₂ > Cl₂ olur. H içermeyen bu formüllere hidrojen bağı sayısı eklenmez; sırayı bütün farklı geometriler için evrensel diye genişletme."
+      ],
+      "optionReasons": [
+        "Yanlış. Cl₂ > Br₂ > I₂ sırası, kökteki artan kutuplanabilirlik ve bunun desteklediği London eğilimini tersine çevirir.",
+        "Yanlış. Aynı basınç ve benzer şekil, kutuplanabilirliklerin eşit olduğu anlamına gelmez; kök bu özelliğin arttığını açıkça verir.",
+        "Yanlış. Br₂’yi I₂’den yüksek almak, verilen Cl₂’den I₂’ye artan seride ortadaki üyeyi son üyenin önüne geçirir.",
+        "Doğru. Verilen benzer-seri ve aynı-basınç koşulunda artan London katkısı I₂ > Br₂ > Cl₂ kaynama eğilimini destekler.",
+        "Yanlış. Cl₂, Br₂ ve I₂ H içermez; klasik hidrojen-bağı sayısıyla bu seriyi sıralayamayız."
+      ],
+      "commonError": "Verilen kutuplanabilirlik yönünü ters okumak veya apolar halojen moleküllerine hidrojen bağı ekleyerek kaynama sırası kurmak.",
+      "check": "Sıralamayı büyükten küçüğe yazarken I₂’nin artan kutuplanabilirlik okunun sonunda kaldığını kontrol et. Basınç veya şekli değiştirirsen bu sınırlı gerekçeyi aynen kullanamayacağını da belirt."
+    }
+  },
+  {
+    "id": "f011-chem-zayif-etkilesimler-10",
+    "identity": "[\"f011-chem-zayif-etkilesimler-10\",\"H₂O(s)→H₂O(g) için verilen 44 kJ/mol enerji, tek başına hangi sonucu destekler?\",\"\",[\"40’tan büyük her olay kimyasaldır.\",\"Su molekülleri mutlaka H ve O atomlarına ayrılır.\",\"H₂O formülü değişmiştir.\",\"Süreç enerji alamaz.\",\"Enerji büyüklüğü tek başına kimyasal değişim kanıtı değildir.\"],4,\"İki tarafta da H₂O vardır; olay buharlaşmadır. Enerji molekülleri birbirinden ayırmaya katkı verir; O–H bağlarının kopması gerekmez. 40 kJ/mol kaba sınıflama ipucu olabilir ama her süreç için kesin eşik değildir. Verilen 44 sayısı yeni kimyasal türü kanıtlamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "kJ/mol, tanımlanan bir mol olay başına enerji ölçeğidir. Sayıyı yorumlamak için olayın hangi tanecikleri hangi son duruma götürdüğü ayrıca okunur.",
+        "Bu kartın Türkçe hâl gösteriminde (s) sıvı, (g) gazı belirtir. Faz etiketi, molekülün atom bileşimini veren formülden farklı bir bilgidir; başlangıç ve sonuç türleri bu iki bilgiyi ayırarak karşılaştırılır."
+      ],
+      "strategy": "Enerji sayısını sınıflandırma etiketi yapmadan önce okun iki tarafındaki tür ve faz bilgilerini ayır. Sonra enerji büyüklüğünün tek başına yeni kimlik oluştuğunu kanıtlayıp kanıtlamadığını bu olay üzerinde sına.",
+      "steps": [
+        "Okun iki tarafında da H₂O formülü vardır; Türkçe hâl etiketleri sıvıdan gaza geçişi gösterir. H₂ veya O₂ gibi yeni ürünler yazılmamıştır.",
+        "Bu olağan buharlaşmada moleküllerin birbirinden ayrılması için enerji alınabilir; H₂O içindeki O–H bağlarını koparmak zorunlu değildir.",
+        "Dolayısıyla 44’ün kaba 40 kJ/mol sayısını aşması tek başına kimyasal değişim kanıtı olmaz. Doğru seçenek enerji büyüklüğünü tek başına kimlik testi saymayan sınırlı değerlendirmedir."
+      ],
+      "optionReasons": [
+        "Yanlış. Verilen olayda H₂O sıvıdan gaza geçerken tür kimliği korunur; 44 > 40 karşılaştırmasını kesin kimyasal eşik saymak bu örnekle çelişir.",
+        "Yanlış. H₂O(g) hâlâ su molekülüdür. Denklem H ve O atomlarına ayrışma yazmadığı için bu parçalanma zorunlu çıkarılamaz.",
+        "Yanlış. İki taraftaki formül H₂O’dur; değişen (s)/(g) faz etiketidir, atom bileşimi değildir.",
+        "Yanlış. Buharlaşma enerji alabilir; verilen enerji molekülleri yoğun fazdan ayırma süreciyle ilişkilidir. Enerji alamaz hükmü bu olağan geçişe uymaz.",
+        "Doğru. Olayın kimliği ayrıca okunmalıdır; verilen 44 kJ/mol tek başına yeni kimyasal tür oluştuğunu göstermez."
+      ],
+      "commonError": "40 kJ/mol sayısını her olay için kesin kimyasal değişim sınırı sanmak veya hâl etiketindeki değişimi formülün değişmesiyle karıştırmak.",
+      "check": "Faz etiketlerini geçici kapatıp H₂O→H₂O yaz. Sonra onları geri ekle: tür aynı kalırken hâl ve enerji değişebiliyor; 44 sayısı bu kimlik denetiminin yerini almamalı."
+    }
+  },
+  {
+    "id": "f011-chem-hidrojen-bagi-1",
+    "identity": "[\"f011-chem-hidrojen-bagi-1\",\"Dimetil eter CH₃–O–CH₃ molekülleri saf sıvıda kendi aralarında neden klasik TYT hidrojen bağı kurmaz?\",\"\",[\"N/O/F’ye doğrudan bağlı H vericisi bulunmaz.\",\"O atomunda hiç elektron yoktur.\",\"Molekülde hiç H atomu yoktur.\",\"Bütün C–H bağları iyoniktir.\",\"Saf sıvıların hiçbirinde H bağı olmaz.\"],0,\"Eterin O’su uygun alıcı olabilir; fakat bütün H atomları C’ye bağlıdır ve aynı tür ikinci eterde de gerekli verici yoktur. H bulunması veya O bulunması ayrı ayrı yetmez. Saf su ve alkoller karşı örnek olduğu için bütün saf sıvılara yokluk genellenmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Klasik TYT hidrojen-bağı vericisi için H’nin doğrudan F, O veya N’ye kovalent bağlı olduğu grup aranır. Alıcı tarafta ise uygun ve erişilebilir ortaklanmamış elektron çifti bulunmalıdır; verici ve alıcı iki ayrı roldür.",
+        "Saf sıvının kendi molekülleri arasındaki etkileşimini incelerken iki komşuyu da aynı yapıdan seçeriz. Bir molekülde alıcı bulunması, aynı tür ikinci molekülde gerekli vericiyi otomatik oluşturmaz."
+      ],
+      "strategy": "Verilen açık yapıdan iki eter komşusu çiz; her birinde H’nin doğrudan komşusunu ve alıcı olabilecek bölgeyi ayrı işaretle. İki rolün aynı çiftte tamamlanıp tamamlanmadığını denetle.",
+      "steps": [
+        "CH₃–O–CH₃ yapısında O iki C’ye bağlıdır. H atomlarının tamamı CH₃ gruplarında, yani doğrudan C’ye bağlıdır.",
+        "O üzerindeki uygun elektron çifti alıcılık sağlayabilir; ancak seçilmiş iki eterin hiçbirinde F/O/N’ye doğrudan bağlı H vericisi yoktur.",
+        "Saf eter–eter çiftinin eksik koşulu vericidir. Bu yüzden ilk seçenek uygundur; sonuç O’da elektron veya molekülde H bulunmamasından kaynaklanmaz ve bütün saf sıvılara genellenmez."
+      ],
+      "optionReasons": [
+        "Doğru. Verilen yapıda bütün H’ler C’ye bağlıdır; eter–eter çiftinde gerekli klasik TYT vericisi bulunmaz.",
+        "Yanlış. O atomu elektron içerir; eterde uygun ortaklanmamış çift alıcı rolü bile sağlayabilir. Eksik olan bütün elektronlar değildir.",
+        "Yanlış. İki CH₃ grubunda toplam altı H vardır. Sorun H yokluğu değil, H’lerin doğrudan hangi atoma bağlı olduğudur.",
+        "Yanlış. Eterin C–H bağlarını iyonik saymak verilen moleküler yapıyla uyuşmaz. Verici koşulu bağ komşuluğundan denetlenir.",
+        "Yanlış. Saf su ve uygun alkoller kendi molekülleri arasında hidrojen bağı kurabilir. Bu eter çiftinin verici eksikliği bütün saf sıvıları kapsamaz."
+      ],
+      "commonError": "O alıcısı bulunduğu için vericiyi kontrol etmeden H bağı var demek veya H bulunmasını F/O/N’ye bağlı H bulunmasıyla aynı saymak.",
+      "check": "İki eterin her H’sinden başlayan ilk kovalent çizgiyi takip et: C’ye varmalısın. H bağı çizmek için yapıda olmayan bir O–H eklemen gerekiyorsa verici şartını değiştirmişsindir."
+    }
+  },
+  {
+    "id": "f011-chem-hidrojen-bagi-2",
+    "identity": "[\"f011-chem-hidrojen-bagi-2\",\"Su ile dimetil eter arasında uygun bir O–H···O teması kuruluyor. Verici ve alıcı doğru olarak hangisidir?\",\"\",[\"Eter C–H verici, su proton çekirdeği alıcıdır.\",\"Su O–H verici, eter O’su alıcıdır.\",\"İki molekülün de vericisi yoktur.\",\"Eter mutlaka suya dönüşür.\",\"Su O–H bağı tamamen kopup yok olur.\"],1,\"Su, O’ya kovalent bağlı kısmi pozitif H’yi verici konumunda sunabilir. Eter O’sunun elektron çifti alıcı olur. Bu moleküller arası temas yeni su üretimi veya suyun kovalent O–H bağının kopması değildir. Saf eterde verici yokluğu, farklı su komşusuyla teması engellemez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Verici grup, F/O/N’ye kovalent bağlı H’yi uygun komşuya sunan taraftır. Alıcı, bu H ile etkileşebilen uygun ortaklanmamış elektron çiftinin bulunduğu taraftır.",
+        "Hidrojen-bağı teması kurulması, vericideki kovalent bağın tamamen kopmasıyla aynı işlem değildir. Verici ve alıcıyı bulurken H’nin mevcut kovalent komşusunu ve temas ettiği diğer bölgeyi ayrı izleriz."
+      ],
+      "strategy": "Verilen O–H···O temasında H’nin ilk kovalent komşusunu bul; bu grubu taşıyan molekülü verici taraf olarak belirle. Noktalı temasın öteki ucundaki elektron çiftini de kendi molekülüne bağla.",
+      "steps": [
+        "Su molekülü O–H bağlantısı taşır; dimetil eterde H’ler C’ye bağlı, O ise iki C arasındadır. Temastaki O–H grubu su tarafındadır.",
+        "Suyun O–H grubu verici, karşıdaki eter O’sunun uygun elektron çifti alıcıdır. Burada bir eter C–H’sini yeni verici gibi seçmiyoruz.",
+        "Su O–H verici / eter O alıcı eşleşmesi uygundur. Bu temas suyun O–H bağının tamamen kaybolmasını veya eterin suya dönüşmesini gerektirmez."
+      ],
+      "optionReasons": [
+        "Yanlış. Bu klasik temasta verici eterin C–H grubu değildir. Alıcı da suyun çıplak proton çekirdeği değil, karşı moleküldeki uygun elektron çiftidir.",
+        "Doğru. Kovalent O–H bağlantısı suya aittir; eter O’sunun elektron çifti bu H için alıcı olabilir.",
+        "Yanlış. Su O–H vericisini taşır. Eterin kendi başına verici taşımaması, farklı su komşusunun verici olmasını engellemez.",
+        "Yanlış. Moleküller arası uygun temas kurulması eterin kimyasal kimliğini suya dönüştürmez; iki molekül ayrı kalabilir.",
+        "Yanlış. H bağı için suyun kovalent O–H bağını tamamen koparıp yok etmek gerekmez; çizimdeki düz bağ ile noktalı temas farklıdır."
+      ],
+      "commonError": "Eterin saf sıvısındaki verici eksikliğini suyla kurulan çifte taşımak veya hidrojen-bağı vericiliğini H atomunun tamamen kopması sanmak.",
+      "check": "Temastan sonra da suyun O–H düz çizgisini koru ve eter O’sunu iki C’ye bağlı göster. Molekülleri değiştirmeden verici ve alıcıyı işaretleyebiliyorsan rol ayrımı tutarlıdır."
+    }
+  },
+  {
+    "id": "f011-chem-hidrojen-bagi-3",
+    "identity": "[\"f011-chem-hidrojen-bagi-3\",\"Etanol CH₃CH₂OH ile dimetil eter CH₃OCH₃ aynı C₂H₆O kapalı formülüne sahiptir. Saf sıvıları için hangi sonuç doğrudur?\",\"\",[\"Kapalı formül aynıysa bütün bağlanmalar aynıdır.\",\"Eterin her H’si O’ya bağlıdır.\",\"Etanolün O–H vericisi vardır; eterde bu verici yoktur.\",\"Etanol hiçbir zaman alıcı olamaz.\",\"Her ikisi de iyonik katıdır.\"],2,\"Etanolün uç OH grubu verici ve O elektron çiftleri alıcı rolüne uygundur. Eterde O iki karbona bağlı, H’ler C’ye bağlıdır. İzomerlerin atom sayıları aynı olsa da saf moleküller arası H-bağı olanakları farklıdır. Kapalı formül tek başına yapının yerine geçmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kapalı formül atom türü ve adetlerini bildirir; açık yapı bu atomların hangi komşulara bağlandığını gösterir. Aynı kapalı formül farklı bağlantı düzenlerini saklayabilir.",
+        "Hidrojen-bağı vericiliğinde H’nin doğrudan F/O/N’ye bağlı olması önemlidir; alıcılık ise uygun elektron çiftine ilişkindir. Bağlantı düzeni bilinmeden yalnız H ve O sayılarını görmek bu rolleri belirlemeye yetmez."
+      ],
+      "strategy": "İki açık yapıda O çevresindeki komşuları karşılaştır; özellikle her H’nin ilk bağlandığı atomu izle. Kapalı formül eşitliğini rol eşitliği yerine kullanmadan saf komşu çiftlerini değerlendir.",
+      "steps": [
+        "Etanolün açık yapısında CH₃CH₂–O–H, dimetil eterde CH₃–O–CH₃ bulunur. Atom envanterleri C₂H₆O olsa da O’nun bağ komşuları aynı değildir.",
+        "Etanolün O–H grubu verici koşuluna uygundur. Eterde ise bütün H’ler C’ye bağlıdır; bu verici bulunmaz. Uygun O elektron çiftleri alıcılık açısından ayrıca değerlendirilir.",
+        "Doğru seçenek etanolde O–H vericisi bulunduğunu, eterde bulunmadığını söyler. Bu yapısal farkı, aynı kapalı formül bütün bağlanmaları eşitler veya etanol hiç alıcı olamaz iddiaları silemez."
+      ],
+      "optionReasons": [
+        "Yanlış. İki açık yapıda O–H ile C–O–C bağlantıları farklıdır. C₂H₆O eşitliği bütün bağlanmaların aynı olduğunu göstermez.",
+        "Yanlış. Eterdeki H’ler CH₃ gruplarında C’ye bağlıdır; O’ya bağlı H yoktur.",
+        "Doğru. Etanol açık O–H bağlantısıyla verici taşır; verilen eter yapısında bu bağlantı bulunmaz.",
+        "Yanlış. Etanolün O’sunda uygun alıcı elektron çiftleri bulunabilir. Verici olması alıcılığı otomatik ortadan kaldırmaz.",
+        "Yanlış. Kökte iki moleküler yapının saf sıvıları karşılaştırılıyor; bunları iyonik katı olarak değiştirecek bir veri yoktur."
+      ],
+      "commonError": "Kapalı formül aynı olduğu için atomların bağ komşularını da aynı saymak ve verici/alıcı davranışını yalnız atom envanterinden çıkarmak.",
+      "check": "İki yapıdaki O çevresini yaz: etanolde C ve H, eterde C ve C. Bu farkı çizimden silemeden aynı verici düzenini ileri süremediğini kontrol et."
+    }
+  },
+  {
+    "id": "f011-chem-hidrojen-bagi-4",
+    "identity": "[\"f011-chem-hidrojen-bagi-4\",\"H₂O, NH₃, HF ve HCl örneklerinden hangisi TYT’nin N/O/F’ye doğrudan bağlı H vericisi koşulunu karşılamaz? Seçeneklerde tek madde isteniyor.\",\"\",[\"H₂O\",\"NH₃\",\"HF\",\"HCl\",\"H₂O ve NH₃’ün ikisi\"],3,\"HCl’de H klora bağlıdır; bu ünitenin yaygın TYT hidrojen-bağı verici koşulu F/O/N’dir. Su, amonyak ve HF bu bağlantıları taşır. Kök tek madde istediği için iki uygun maddeyi birlikte veren seçenek de doğru değildir. H bulunması tek başına yeterli koşul değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bu soruda verilen klasik TYT verici kuralı, H’nin doğrudan F, O veya N atomuna bağlı olmasını arar. H içeren her kovalent bağ bu giriş kuralının vericisi değildir.",
+        "Birden çok örneği karşılaştırırken her formülde H’nin hangi atoma bağlı olduğu ayrı okunur. Seçeneğin tek madde mi madde çifti mi verdiği de kökün istediği yanıt birimine uymalıdır."
+      ],
+      "strategy": "Dört maddeyi H’nin doğrudan komşusuna göre tek tek işaretle; aranan olumsuz koşulu sağlayanı ayır. Son kontrolde kökün tek madde istediğini ve ikili seçeneklerin içerdiği örnekleri birlikte denetle.",
+      "steps": [
+        "Su O–H, amonyak N–H, HF ise H–F bağlantıları içerir. Bu üç örnekte H’nin doğrudan komşusu verilen F/O/N grubundadır.",
+        "HCl’de doğrudan komşu Cl’dir; bu sorunun klasik TYT verici kuralındaki üç atomdan biri değildir.",
+        "Koşulu karşılamayan tek madde HCl’dir. H₂O ve NH₃’ü birlikte veren seçenek hem tek madde istemine uymaz hem de koşulu karşılayan iki örneği içerir."
+      ],
+      "optionReasons": [
+        "Yanlış. H₂O’da H doğrudan O’ya bağlıdır; dolayısıyla sorunun verici koşulunu karşılar.",
+        "Yanlış. NH₃’te N–H bağlantısı vardır ve N, kökteki F/O/N grubundadır.",
+        "Yanlış. HF’de H doğrudan F’ye bağlıdır; aranan olumsuz örnek değildir.",
+        "Doğru. HCl’nin H’si Cl’ye bağlıdır; bu ünitenin özellikle seçilmiş TYT verici kuralını karşılamaz.",
+        "Yanlış. H₂O ve NH₃’ün ikisi de verilen koşulu karşılar. Ayrıca kök iki maddeyi birden değil tek maddeyi istemektedir."
+      ],
+      "commonError": "H içeren bütün örnekleri otomatik uygun saymak veya olumsuz isteneni unutup koşulu karşılayan maddeyi seçmek.",
+      "check": "Her örneğin yanına yalnız H’nin komşusunu yaz: O, N, F, Cl. Arananın bu kurala uymayan tek örnek olduğunu son kez oku."
+    }
+  },
+  {
+    "id": "f011-chem-hidrojen-bagi-5",
+    "identity": "[\"f011-chem-hidrojen-bagi-5\",\"O–H···O gösteriminde düz O–H çizgisi ile noktalı H···O çizgisi sırasıyla neyi temsil eder?\",\"\",[\"İki eşdeğer iyonik bağ\",\"İki metalik bağ\",\"Noktalı çizgi çekirdeğin parçalanması\",\"Düz çizgi yalnız London, noktalar atom numarası\",\"Molekül içi kovalent bağ ve uygun komşuya hidrojen bağı\"],4,\"Düz O–H aynı molekülde atomları bağlayan kovalent bağdır. Noktalı temas uygun H vericisi ile komşu O alıcısının hidrojen bağıdır. İki gösterim aynı bağ mertebesi veya aynı elektron paylaşımı anlamına gelmez; H iki O’ya eşdeğer iki sıradan kovalent bağ kurmuş sayılmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kovalent bağ atomları belirli bir kimyasal yapı içinde tutar. Hidrojen bağı ise uygun verici ve alıcı bölgeler arasında incelenir; bu bölgeler ayrı moleküllerde veya aynı molekülün farklı konumlarında bulunabilir. Ayrımı açık yapıdan denetlemek gerekir.",
+        "H-bağı vericisinde H kendi F/O/N kovalent komşusunu korurken başka uygun alıcı bölgeyle etkileşebilir. Bir şemayı okurken önce her molekülün sınırını ve H’nin mevcut bağ komşusunu belirlemek yararlıdır."
+      ],
+      "strategy": "O–H···O şemasında H’nin doğrudan kovalent komşusunu ve noktalı temasın alıcı ucunu ayrı ayrı izle. Açık yapı verilmeden iki bölgenin ayrı moleküllerde olduğunu varsayma; çizgileri bağlanma rolleri bakımından karşılaştır.",
+      "steps": [
+        "Düz O–H çizgisi, H’yi kendi molekülündeki O’ya bağlar. Bu çizgi aynı kimyasal yapı içindeki kovalent bağı temsil eder.",
+        "H’den öteki O’ya uzanan noktalı bölüm, uygun verici ile komşu alıcı arasındaki hidrojen-bağı temasını gösterir.",
+        "Bu sıra molekül içi kovalent bağ / komşuya hidrojen bağıdır. Noktalı çizgiyi ikinci eşdeğer kovalent bağ ya da çekirdek parçalanması sayan yorumlar şemadaki iki ölçeği karıştırır."
+      ],
+      "optionReasons": [
+        "Yanlış. Düz O–H kovalent bağdır; noktalı temas uygun H bağıdır. İki eşdeğer net iyon bağı olarak verilmemiştir.",
+        "Yanlış. Şemada metal merkezleri ve elektron denizi yoktur; iki bağlantı metalik bağ değildir.",
+        "Yanlış. Noktalı temas uygun H vericisi ile O alıcısı arasındadır; bu bölgeler aynı veya ayrı molekülde olabilir. Bir çekirdeğin parçalanmasını veya yeni element oluşumunu göstermez.",
+        "Yanlış. Düz çizgi molekül içi O–H bağını gösterir; yalnız London değildir. Noktalar da atom numarası sayacı değil komşuya H-bağı gösterimidir.",
+        "Doğru. Verilen sırada düz çizgi molekül içi kovalent bağı, noktalı çizgi uygun komşu O’ya hidrojen bağını temsil eder."
+      ],
+      "commonError": "H iki O arasında gösterildiği için iki çizgiyi eşdeğer kovalent bağ saymak veya yalnız bu kısa gösterimden verici ile alıcının kesin ayrı moleküllere ait olduğunu varsaymak.",
+      "check": "Noktalı kısmı geçici kaldırınca H kendi molekülündeki O’ya bağlı kalmalı. Düz çizgiyi kaldırmak ise molekülün iç yapısını değiştiren farklı bir işlem olur."
+    }
+  },
+  {
+    "id": "f011-chem-hidrojen-bagi-6",
+    "identity": "[\"f011-chem-hidrojen-bagi-6\",\"Kapalı ideal bir ağda 6 su molekülünün her biri 4 komşu temasa katılıyor. Her farklı temas iki molekülün katılımında ortak sayılıyor. Farklı temas sayısı kaçtır?\",\"\",[\"12\",\"6\",\"10\",\"24\",\"48\"],0,\"Altı molekül dörder katılımla 24 uç kaydı verir. Her farklı temasın iki ucu sayıldığı için 24/2=12 farklı temas vardır. Bu hesap açıkça verilen ideal kapalı ağ içindir; gerçek sıvıda bütün su moleküllerinin her an dört bağ yaptığını göstermez. 24 cevabı aynı teması iki kez sayar.\"]",
+    "guidance": {
+      "knowledge": [
+        "İki molekül arasındaki ortak temas, yerel katılım listesinde her iki molekülün hanesine birer kez yazılır. Bu yüzden yerel uç sayısı ile farklı temas sayısı aynı envanter değildir.",
+        "Kapalı bir ağda her temasın iki ucu da sayımın içindeyse uç toplamı farklı temasların iki katıdır. Gerçek sıvının anlık bağ sayısını bu tür ideal ağ varsayımıyla özdeşleştirmemek gerekir."
+      ],
+      "strategy": "Önce bütün moleküllerin yerel katılım toplamını oluştur; sonra tek bir temasın bu toplamda kaç kez göründüğünü izle. Kapalı ağ koşulunu kullanarak çift saymayı gider.",
+      "steps": [
+        "Altı molekülün her biri dört katılım verir: 6 × 4 = 24 uç kaydı. Bunlar henüz birbirinden farklı temasların sayısı değildir.",
+        "Her temas iki molekülde ortak sayıldığı için iki uç kaydına karşılık gelir. Farklı temas sayısı 24 / 2 = 12’dir.",
+        "12 seçeneği uygundur; ters kontrol 12 × 2 = 24 katılımdır. Bu sonuç yalnız verilen ideal kapalı ağın sayımıdır, gerçek sıvının her anki bütün moleküllerine uygulanmış bir ölçüm değildir."
+      ],
+      "optionReasons": [
+        "Doğru. Altı molekülün 24 uç kaydı, her temas iki kez sayıldığı için 24 / 2 = 12 farklı temas verir.",
+        "Yanlış. 6 = 6 × 2 / 2 hesabı her moleküle iki katılım ayırır. Kök her molekül için iki değil dört komşu temas vermiştir.",
+        "Yanlış. 10 = (6 − 1) × 4 / 2 hesabı, kendi kendine komşuluk saymama düşüncesiyle toplam molekül adedini beşe indirir. Oysa verilen altı molekülün her biri dört katılım sağlamaktadır.",
+        "Yanlış. 24 yerel uç kaydıdır; her farklı temas iki uçta bulunduğu için bu sayı aynı temasları iki kez sayar.",
+        "Yanlış. 48, 24 uç kaydını ikiyle çarpmaktan doğar. Ortak sayımı düzeltmek için çarpmak değil iki ucu tek temas olarak birleştirmek gerekir."
+      ],
+      "commonError": "Yerel dört katılımı dört bağımsız tek-uçlu temas gibi saymak; aynı ortak teması iki molekülün listesinden iki kez toplamak.",
+      "check": "Bulduğun farklı temas sayısını ikiyle çarp. Yeniden 24 uç kaydına ve altı molekül başına ortalama dört katılıma dönüyorsa ortak-uç hesabı tutarlıdır."
+    }
+  },
+  {
+    "id": "f011-chem-hidrojen-bagi-7",
+    "identity": "[\"f011-chem-hidrojen-bagi-7\",\"90 g buz 100 mL, aynı kütlede sıvı su 90 mL yer kaplıyor. Verilen koşullarda doğru sonuç hangisidir?\",\"\",[\"Buzun yoğunluğu 1,11 g/mL’dir.\",\"Buzun yoğunluğu 0,90 g/mL’dir ve sıvıdan küçüktür.\",\"İki yoğunluk zorunlu eşittir.\",\"Buzun kütlesi yoktur.\",\"Buzun yoğunluğu büyük olduğundan yüzer.\"],1,\"Buz için 90/100=0,90 g/mL, sıvı için 90/90=1,00 g/mL bulunur. Daha düşük yoğunluk buzun sıvı suda yüzmesiyle uyumludur. Kütlelerin eşit olması yoğunluğu eşitlemez; açık ağın hacim farkı önem taşır. Yüzmeyi daha büyük yoğunlukla açıklamak yönü ters çevirir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yoğunluk, kütlenin hacme oranıdır: ρ = m/V. g ve mL kullanılırsa yoğunluk birimi g/mL olur; aynı kütlenin farklı hacimlere yayılması farklı yoğunluk verir.",
+        "Uygun sıvıda bir cismin yüzmesi, ortalama yoğunluğunun o sıvının yoğunluğundan küçük olmasıyla uyumludur. Bir fazın katı olması, bütün maddeler için sıvısından daha yoğun olmasını gerektirmez."
+      ],
+      "strategy": "Eşit kütleyi her fazın kendi hacmine ayrı ayrı böl; iki sonucu aynı birimle karşılaştır. Yüzme yorumunu yoğunluk farkının yönünden kur, katı–sıvı etiketinden ezbere çıkarma.",
+      "steps": [
+        "Buzda m = 90 g ve V = 100 mL olduğundan ρ_buz = 90/100 = 0,90 g/mL bulunur.",
+        "Sıvıda aynı 90 g kütle 90 mL kaplar: ρ_sıvı = 90/90 = 1,00 g/mL. Böylece buzun yoğunluğu daha küçüktür.",
+        "0,90 g/mL ve sıvıdan küçük sonucunu birlikte veren seçenek uygundur. 100/90 ters oranı yoğunluk değildir; buzun yüzmesini daha büyük yoğunlukla açıklama."
+      ],
+      "optionReasons": [
+        "Yanlış. 1,11 yaklaşık olarak 100/90 ters oranıdır; bu hacim/kütle hesabıdır. İstenen yoğunluk 90 g / 100 mL olmalıdır.",
+        "Doğru. Buzun yoğunluğu 0,90 g/mL, sıvınınki 1,00 g/mL’dir; buzun daha düşük yoğunluğu verilen hacimlerle uyumludur.",
+        "Yanlış. Kütleler eşit fakat hacimler 100 ve 90 mL’dir. ρ=m/V olduğundan yoğunluklar zorunlu eşit değildir.",
+        "Yanlış. Kök buz için açıkça 90 g kütle verir. Büyük hacim kaplaması kütlesiz olduğu anlamına gelmez.",
+        "Yanlış. Hesap buzun yoğunluğunun büyük değil küçük olduğunu gösterir. Sıvı suda yüzmeyle uyumlu olan yön de bu düşük yoğunluktur."
+      ],
+      "commonError": "Yoğunlukta m/V yerine V/m kullanmak veya eşit kütle gördüğünde hacmi hesaba katmadan yoğunlukları eşitlemek.",
+      "check": "0,90 g/mL × 100 mL ve 1,00 g/mL × 90 mL işlemlerinin ikisi de 90 g’a dönmeli. Sonra 0,90 < 1,00 yönünü yüzme yorumunla karşılaştır."
+    }
+  },
+  {
+    "id": "f011-chem-hidrojen-bagi-8",
+    "identity": "[\"f011-chem-hidrojen-bagi-8\",\"İki molekül uygun verici ve alıcı gruplar taşıyor fakat seçilmiş H ile alıcı birbirinden çok uzak. En doğru yorum hangisidir?\",\"\",[\"Harfler yeterlidir; uzaklık hiç önemli değildir.\",\"Bütün kovalent bağlar kendiliğinden iyonik olur.\",\"Yapısal uygunluk, bu uzak geometride gerçekleşmiş temasın tek başına kanıtı değildir.\",\"Alıcı elektron çifti artık kesin yoktur.\",\"Moleküller mutlaka yeni elemente dönüşür.\"],2,\"Verici ve alıcıların varlığı bir etkileşim olanağı sağlar; gerçekleşen hidrojen bağı uygun yakınlık ve yönlenme de gerektirir. Çok uzak seçilmiş çiftte çizgi çizmek fiziksel kanıt olmaz. Bu durum yapının elektronlarını yok etmez ve kimyasal element dönüşümünü gerektirmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Verici ve alıcı grupların varlığı moleküllerin yapısal özellikleridir. Uygun fiziksel temas ise seçilen grupların uzaydaki yakınlığı ve yönlenmesiyle birlikte incelenir.",
+        "Elektron çiftinin hangi atoma ait olduğu molekülün iç elektron yapısına ilişkin bilgidir. Moleküllerin birbirlerine göre konumları ve açıları ise ayrıca betimlenen uzaysal verilerdir; yapı şeması ve konum şeması bu yüzden ayrı okunur."
+      ],
+      "strategy": "Önce yapıda verici ve alıcı rollerini, sonra seçilmiş çiftin uzaysal koşulunu kontrol et. Birinci denetimin olumlu olmasıyla ikinci denetimin de otomatik tamamlandığını varsayma.",
+      "steps": [
+        "Kök iki molekülde uygun verici ve alıcı gruplar olduğunu verir. Bu, yapısal etkileşim olanağını sağlayan bilgidir.",
+        "Ancak seçilen H ve alıcı birbirinden çok uzaktır. Uygun yakınlık ve yönlenme sağlanmadan o seçilmiş çiftte gerçekleşmiş H-bağı teması kanıtlanmış sayılmaz.",
+        "Yapısal uygunluğun bu uzak geometride tek başına temas kanıtı olmadığını söyleyen seçenek uygundur. Bundan elektron çiftinin yokluğu veya yeni element oluşumu sonucu çıkarılmaz."
+      ],
+      "optionReasons": [
+        "Yanlış. Formüldeki harfler uzaysal uzaklığı ortadan kaldırmaz; seçilmiş H–alıcı çiftinin yakınlık koşulu ayrıca gerekir.",
+        "Yanlış. İki grubun uzak kalması bütün kovalent bağların iyonik bağa dönüşmesine yol açan bir veri değildir.",
+        "Doğru. Verici/alıcı yapı etkileşim olanağı sağlar; çok uzak seçilmiş geometri, gerçekleşmiş bir teması tek başına doğrulamaz.",
+        "Yanlış. Uzaklık nedeniyle temas kurulamaması alıcının elektron çiftinin kesin yok olduğunu göstermez; yapısal özellik ile geometri karıştırılmıştır.",
+        "Yanlış. Yakınlık koşulu sağlanmaması çekirdekleri veya element kimliğini değiştirmez; yeni element oluşumu bu veriden çıkmaz."
+      ],
+      "commonError": "Yapıda doğru gruplar var diye aralarındaki uzaklığı ve yönlenmeyi atlamak; bir çizgi eklemeyi fiziksel temas kanıtı sanmak.",
+      "check": "Moleküllerin bağlarını değiştirmeden yalnız uzaklığı artırdığını düşün. Elektron çiftleri hâlâ bulunurken seçilmiş teması çizemiyorsan yapı ile geometriyi doğru ayırmışsındır."
+    }
+  },
+  {
+    "id": "f011-chem-hidrojen-bagi-9",
+    "identity": "[\"f011-chem-hidrojen-bagi-9\",\"Bir tabloda HF’nin tek hidrojen-bağı temas enerjisi sudakinden daha büyük verilmiş. Bundan yalnızca hangi çıkarım yapılabilir?\",\"\",[\"HF her basınçta mutlaka daha yüksek sıcaklıkta kaynar.\",\"Su hiç H bağı yapamaz.\",\"Su ile HF aynı moleküldür.\",\"Tek temas verisi, toplam kaynama sırasını tek başına belirlemez.\",\"Daha güçlü tek temas, daha çok ağ teması olduğunu kesin kanıtlar.\"],3,\"Kaynama molekül başına erişilebilir temaslara, ağ yapısına, diğer çekimlere ve basınca bağlıdır. Tek bir temasın enerjisi bu bütünün tamamını ölçmez. Bu nedenle verilen enerjiyle kesin kaynama sırası kurulamaz; suyun H-bağı yapmadığı sonucu da çıkmaz. Ağ temas sayısı ayrı yapısal bilgidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tek temas enerjisi belirli bir komşu çiftinin etkileşimine ait niceliktir. Kaynama ise sıvı ve gaz fazlarının dengesiyle ilgili, örneğin toplam davranışından ölçülen bir özelliktir.",
+        "Erişilebilir verici/alıcılar, temasın geometrisi, ağdaki komşuluklar, diğer çekimler ve dış basınç toplu faz davranışına katkı verir. Bir temasın enerjisi, molekül başına kaç uygun temas bulunduğuyla aynı bilgi değildir."
+      ],
+      "strategy": "Verilen enerjiyi tek temas sütununa yaz; seçeneklerin ileri sürdüğü makro özellikleri ve temas adedini ayrı sütunlarda listele. Her iddianın tablodaki aynı nicelikten mi yoksa ayrıca gereken bir veriden mi beslendiğini işaretle.",
+      "steps": [
+        "Verilen tek karşılaştırma HF’de seçilmiş bir H-bağı temasının enerji büyüklüğüdür. Su ve HF’nin ağdaki temas sayıları veya bütün faz etkileşimleri bu tek sütundan okunmaz.",
+        "Kaynama için toplam komşuluk düzeni ve diğer etkiler de gerekir. Daha güçlü bir tek temas, otomatik olarak daha çok ağ teması veya her basınçta daha yüksek kaynama demek değildir.",
+        "Bu nedenle tek temas verisinin toplam kaynama sırasını tek başına belirlemediği sınırlı çıkarım uygundur. Suyun H bağı yapamadığı veya iki maddenin aynı olduğu ek iddiaları verilmemiştir."
+      ],
+      "optionReasons": [
+        "Yanlış. Tek temas enerjisi, ağdaki katkıları ve dış basıncı tek başına belirlemez. Özellikle her basınçta mutlaka daha yüksek kaynama iddiası verinin kapsamını aşar.",
+        "Yanlış. Sudaki temas enerjisinin daha küçük verilmesi, suyun H bağı yapamadığı anlamına gelmez; karşılaştırma zaten bu temasları içerir.",
+        "Yanlış. HF ile H₂O farklı atom bileşimine sahip moleküllerdir. Bir etkileşim enerjisini karşılaştırmak kimliklerini aynı yapmaz.",
+        "Doğru. Tek bir temasın enerjisi bütün ağın ve fazın etkisini ölçmez; yalnız bu veriyle kesin kaynama sırası kurulamaz.",
+        "Yanlış. Temasın enerji büyüklüğü ile kaç temas kurulabildiği farklı niceliklerdir; biri diğerinin sayısal artışını zorunlu kanıtlamaz."
+      ],
+      "commonError": "Tek bir güçlü bağı bütün sıvının ayrılma enerjisi ve kaynama sıcaklığıyla eşitlemek veya enerji büyüklüğünden temas adedi türetmek.",
+      "check": "Tek temas enerjisini değiştirmeden erişilebilir komşu sayısının farklı olabildiği iki ağ düşün. Böyle bir fark mümkünse tek sütundan toplam kaynama sonucunu zorunlu çıkaramadığını görürsün."
+    }
+  },
+  {
+    "id": "f011-chem-hidrojen-bagi-10",
+    "identity": "[\"f011-chem-hidrojen-bagi-10\",\"Saf su 1 atm’de buharlaştırılıyor. Bu olağan faz değişiminde hangi ifade doğrudur?\",\"\",[\"Her H₂O mutlaka H₂ ve O₂ olur.\",\"Bütün O–H bağları hidrojen bağıdır.\",\"Yeni proton türleri oluşur.\",\"Moleküller arası uzaklık hiçbir zaman değişmez.\",\"H₂O kimliği ve molekül içindeki O–H bağları korunur.\"],4,\"Buharlaşmada su molekülleri gaz fazına geçer; moleküler kimlik H₂O olarak kalır. Moleküller arası hidrojen-bağı ağı yeniden düzenlenir ve yoğun fazdan ayrılma gerçekleşir. Su içindeki O–H kovalent bağlarını koparmak H₂/O₂ oluşumuyla aynı olağan faz olayı değildir; o ayrı kimyasal süreçtir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Molekül içi kovalent bağlar atomların kimyasal bir yapı içindeki bağlantılarını verir. Moleküller arası komşuluklar ise farklı moleküllerin birbirine göre düzeni ve çekimleriyle ilgilidir.",
+        "Bir faz değişiminin ilerlemesi enerji ve komşuluk düzenini değiştirebilir. Molekülleri birbirinden ayırma ile bir molekülün atom bağlantılarını başka ürünler oluşturacak biçimde değiştirme ayrı süreçler olarak incelenmelidir."
+      ],
+      "strategy": "Suyun molekül içi bağlantılarını ve farklı su molekülleri arasındaki ağı iki ayrı çizim katmanında tut. Verilen olağan faz değişiminde hangi katmanın değiştiğini başlangıç–sonuç kimliğiyle denetle.",
+      "steps": [
+        "Kök saf suyun olağan buharlaşmasını, 1 atm koşulunda verir. İncelenen madde su, gaz fazına geçen tür de H₂O’dur.",
+        "Yoğun fazdaki moleküller arası H-bağı ağı yeniden düzenlenirken suyun molekül içi O–H kovalent bağlantıları bu faz modeli içinde korunur. H₂/O₂ üretimi ayrı kimyasal süreç olurdu.",
+        "Bu nedenle H₂O kimliği ve molekül içi O–H bağlarının korunmasını belirten seçenek uygundur. Moleküller arası uzaklıkların hiç değişmediğini veya bütün O–H çizgilerinin H bağı olduğunu söylemek iki ölçeği karıştırır."
+      ],
+      "optionReasons": [
+        "Yanlış. Olağan buharlaşma H₂O’yu H₂ ve O₂ ürünlerine ayrıştırmak değildir; bu başka bir kimyasal işlem olurdu.",
+        "Yanlış. Su molekülü içindeki O–H bağları kovalenttir. Hidrojen bağı, uygun komşuyla kurulan farklı temas türüdür.",
+        "Yanlış. Fiziksel faz değişimi yeni proton türleri üretmez; element ve çekirdek kimliği böyle değiştirilmez.",
+        "Yanlış. Gaz fazına geçişte moleküllerin komşulukları ve aralıkları değişebilir. Hiçbir zaman değişmez ifadesi faz geçişinin tanecik modeliyle uyuşmaz.",
+        "Doğru. Bu olağan buharlaşma modelinde gazlaşan tür H₂O olarak kalır; molekül içindeki O–H kovalent bağları korunur."
+      ],
+      "commonError": "Su moleküllerinin birbirinden ayrılmasını molekül içindeki O–H bağlarının kopması sanmak ve buharlaşmayı elektroliz ürünleriyle karıştırmak.",
+      "check": "Önce ve sonra her su molekülünü bir O ve iki kovalent bağlı H ile göster. Yalnız moleküller arasındaki düzeni değiştirerek buharlaşmayı çizebiliyorsan yeni H₂/O₂ ürünü eklemene gerek yoktur."
+    }
+  },
+  {
+    "id": "f011-chem-fiziksel-kimyasal-degisimler-1",
+    "identity": "[\"f011-chem-fiziksel-kimyasal-degisimler-1\",\"I₂(k)→I₂(g) olayı için doğru sınıflama hangisidir? I₂’nin iki tarafta da aynı moleküler kimliği koruduğu verilmiştir.\",\"\",[\"Fiziksel süblimleşme\",\"Kimyasal elektroliz\",\"Yeni element oluşumu\",\"İyonik parçalanma zorunluluğu\",\"Çekirdek tepkimesi\"],0,\"Katı iyot gaz fazına geçerken I₂ molekül kimliği korunur. Katıdan gaza geçiş süblimleşmedir ve verilen olağan koşullarda fiziksel değişimdir. I₂’nin I atomlarına ayrılması veya başka elemente dönüşmesi bu denklemde yoktur; faz etiketi tek başına tür değişimi değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Türkçe kimya gösteriminde (k) katı, (s) sıvı, (g) gaz hâlini belirtir. Bu parantezler, molekülün atom bileşimini gösteren formülün kendisi değildir.",
+        "Fiziksel sınıflamada madde kimliği korunurken hâl, boyut veya dağılım değişebilir. Katıdan doğrudan gaza geçiş süblimleşme; ters yöndeki gazdan katıya geçiş kırağılaşma olarak adlandırılır."
+      ],
+      "strategy": "Okun iki yanını önce formül, sonra hâl etiketi olarak iki satırda karşılaştır. Değişen hâl çiftinin adını bulduktan sonra verilen korunmuş kimliğe uygun sınıfı seç.",
+      "steps": [
+        "İki tarafta da I₂ yazılıdır ve kök bu moleküler kimliğin korunduğunu açıkça verir. Ayrı I atomları, iyon veya başka element yazılmamıştır.",
+        "Hâl etiketleri katıdan gaza geçiştir: (k)→(g). Bu geçişin adı süblimleşmedir.",
+        "Kimliği korunmuş bu olağan faz geçişi fiziksel süblimleşme olarak seçilir. Elektroliz, iyonik parçalanma veya çekirdek tepkimesi seçenekleri verilmemiş başka süreçleri ekler."
+      ],
+      "optionReasons": [
+        "Doğru. I₂ kimliği korunurken katıdan doğrudan gaza geçiş süblimleşmedir ve verilen olay fiziksel sınıflanır.",
+        "Yanlış. Elektrolizle yeni kimyasal ürünler elde edildiği verilmemiştir; yalnız aynı I₂’nin hâl etiketi değişmektedir.",
+        "Yanlış. İki tarafta da iyot molekülü vardır. Başka element veya proton sayısı değişimi bu gösterimde yoktur.",
+        "Yanlış. I₂’nin iyonlara ayrıldığı belirtilmemiş, tersine moleküler kimliğinin korunduğu verilmiştir.",
+        "Yanlış. Katı–gaz geçişi çekirdeğin dönüşmesi demek değildir; aynı iyot türü korunmaktadır."
+      ],
+      "commonError": "Parantez içindeki hâl etiketini kimyasal formülün parçası sanıp yalnız (k)/(g) değişiminden yeni tür veya element çıkarmak.",
+      "check": "Hâl etiketlerini kapattığında I₂→I₂ kalmalı. Geri ekleyince yalnız katı→gaz değişimini görüyorsan kimlik ile fazı ayırmışsındır."
+    }
+  },
+  {
+    "id": "f011-chem-fiziksel-kimyasal-degisimler-2",
+    "identity": "[\"f011-chem-fiziksel-kimyasal-degisimler-2\",\"2H₂O→2H₂+O₂ denkleminde iki tarafta H ve O atom sayıları sırasıyla kaçtır?\",\"\",[\"2 H ve 1 O\",\"4 H ve 2 O\",\"4 H ve 4 O\",\"2 H ve 2 O\",\"6 H ve 3 O\"],1,\"Solda 2×2=4 H ve 2×1=2 O vardır. Sağda 2H₂ dört H, O₂ iki O verir. Atomlar korunur; H₂O yerine farklı moleküller oluşması kimyasal değişimdir. Bir moleküldeki sayıyı bütün denklemdeki toplamla karıştırma.\"]",
+    "guidance": {
+      "knowledge": [
+        "Denklemde formülün başındaki katsayı, o türün bütün atomlarına uygulanır. Yazılmamış alt indis ve katsayı 1 olarak okunur; katsayı ile molekül içi alt indis farklı görevlerdedir.",
+        "Atom korunumunda her elementin sayımı iki tarafta ayrı tutulur. Farklı elementleri tek toplamda birleştirmek yerine H için bir, O için bir envanter kurmak dengeyi doğrudan gösterir."
+      ],
+      "strategy": "Her iki tarafta katsayı × ilgili elementin alt indisi hesabını ayrı yap; H ve O sonuçlarını kendi sütunlarında topla. Molekül adedini atom envanterinin yerine koyma.",
+      "steps": [
+        "Solda 2H₂O vardır: H sayısı 2 × 2 = 4, O sayısı 2 × 1 = 2’dir.",
+        "Sağdaki 2H₂ dört H verir; O₂’nin yazılmayan katsayısı 1 olduğundan iki O vardır. Sağda da 4 H ve 2 O bulunur.",
+        "İki tarafın element sütunları eşleşir: 4 H / 2 O. Toplam altı atom olması, altı H veya üç O olduğu anlamına gelmez; türleri ayrı sayan seçenek seçilir."
+      ],
+      "optionReasons": [
+        "Yanlış. 2 H ve 1 O yalnız tek H₂O molekülünü sayar; baştaki 2 katsayısı uygulanmamıştır.",
+        "Doğru. Solda 2×2 H ve 2×1 O, sağda 2H₂ ve O₂’den yine 4 H ve 2 O bulunur.",
+        "Yanlış. O için de H’nin 2 alt indisini kullanırsan 2×2=4 O yazarsın. H₂O’daki O’nun alt indisi 1’dir; O toplamı 2 olmalıdır.",
+        "Yanlış. 2 H yazmak H₂O’daki H’nin 2 alt indisini atlar. İki su molekülü toplam dört H taşır.",
+        "Yanlış. 6 H ve 3 O, solda iki yerine üç H₂O sayılmasına karşılık gelir. Denklemdeki su katsayısı 3 değil 2’dir."
+      ],
+      "commonError": "Katsayıyı yalnız ilk elemente uygulamak, yazılmayan O alt indisini 2 sanmak veya tek molekülün atomlarını bütün denklem toplamı yerine kullanmak.",
+      "check": "H ve O için iki satırlık önce–sonra tablosu kur: H: 4→4, O: 2→2. Her iki satır korunurken molekül türlerinin değişebildiğini ayrıca kontrol et."
+    }
+  },
+  {
+    "id": "f011-chem-fiziksel-kimyasal-degisimler-3",
+    "identity": "[\"f011-chem-fiziksel-kimyasal-degisimler-3\",\"2H₂O→2H₂+O₂ tanecik modelinde başlangıçta ve sonuçta yazılan molekül adedi sırasıyla kaçtır?\",\"\",[\"2 ve 2\",\"3 ve 2\",\"2 ve 3\",\"4 ve 2\",\"6 ve 6\"],2,\"Başlangıçta iki H₂O molekülü, sonuçta iki H₂ ve bir O₂, yani üç molekül bulunur. Molekül sayısının değişmesi atom korunumunu bozmaz: iki tarafta dört H ve iki O vardır. Bu, kimyasal tepkimelerde molekül adedinin zorunlu korunmadığını gösterir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir tanecik modelindeki molekül adedi katsayılardan sayılır; molekül içindeki alt indisler ayrı molekül değil atom adedidir. Bir ürünün katsayısı yazılmamışsa 1 molekül birimi alınır.",
+        "Atom adedi, molekül adedi ve kimyasal tür çeşidi farklı sayımlardır. Aynı türden iki molekül iki molekül sayılır ama tek bir tür çeşidi oluşturur."
+      ],
+      "strategy": "Molekülleri içlerini açmadan birer kutu olarak say; önce sol, sonra sağ katsayı toplamını kur. Sonrasında atom ve tür çeşidi sayımlarını yalnız karışıklığı kontrol etmek için ayrı yaz.",
+      "steps": [
+        "Başlangıçtaki 2H₂O, iki ayrı su molekülü birimi gösterir. Soldaki molekül adedi 2’dir.",
+        "Sonuçta iki H₂ ve katsayısı 1 olan bir O₂ vardır. Sağdaki molekül adedi 2+1=3 olur; ürün türü çeşidi ise H₂ ve O₂ olmak üzere 2’dir.",
+        "İstenen sıra başlangıç/sonuç olduğundan 2 ve 3 seçilir. İki tarafta da toplam altı atom bulunması, molekül adedinin de 6 olduğu veya korunması gerektiği anlamına gelmez."
+      ],
+      "optionReasons": [
+        "Yanlış. Sağda 2H₂’ye ek bir O₂ molekülü vardır. 2 ve 2 sonucu bu yazılmayan 1 katsayılı O₂’yi sayımın dışında bırakır.",
+        "Yanlış. 3 ve 2 doğru iki molekül adedini ters sırada yazar; kök önce başlangıcı, sonra sonucu sorar.",
+        "Doğru. Başlangıçta 2 su molekülü, sonuçta 2H₂+1O₂ olmak üzere 3 molekül birimi vardır.",
+        "Yanlış. Soldaki 4, H atomlarının sayısıdır; sağdaki 2 ise ürün türü çeşidiyle karışabilir. Bunlar başlangıç/sonuç molekül adetleri değildir.",
+        "Yanlış. 6 ve 6 iki taraftaki toplam atom adedidir. Bir molekülün içindeki atomları ayrı moleküller gibi sayamazsın."
+      ],
+      "commonError": "Atom toplamını veya ürün çeşidi sayısını molekül adedi yerine yazmak; kimyasal tepkimede molekül adedinin de atomlar gibi korunacağını sanmak.",
+      "check": "İki H₂O kutusunu açıp atomları yeniden grupla: iki H₂ kutusu ve bir O₂ kutusu elde edilir. Altı atomu korurken kutu adedinin 2’den 3’e çıkabildiğini göster."
+    }
+  },
+  {
+    "id": "f011-chem-fiziksel-kimyasal-degisimler-4",
+    "identity": "[\"f011-chem-fiziksel-kimyasal-degisimler-4\",\"Zn + 2H⁺ → Zn²⁺ + H₂ denkleminde sol ve sağ toplam elektrik yükü nedir? Zn ve H₂ yüksüzdür.\",\"\",[\"0 ve +2\",\"+1 ve +1\",\"+2 ve 0\",\"+2 ve +2\",\"−2 ve +2\"],3,\"Solda Zn 0, iki H⁺ toplam +2 verir. Sağda Zn²⁺ +2, H₂ 0 yük taşır. Yük korunur; Zn’nin yüksüz atomdan iyona dönüşmesi kimyasal değişimle uyumludur. Yük korunumunu tek tek her taneciğin yükünün hiç değişmemesi sanma.\"]",
+    "guidance": {
+      "knowledge": [
+        "Toplam elektrik yükü, her türün net yükü ile katsayısının çarpımlarının işaretli toplamıdır. Yüksüz bir tür toplamda 0 katkı verir; bir türün yanındaki 2 katsayısı ile 2+ yükü aynı gösterim değildir.",
+        "Bir tepkimede tek bir atomun veya iyonun yükü değişebilirken bütün denklemin toplam yükü korunur. Yük korunumunu denetlemek, her taneciğin önceki yükünü aynen koruduğunu varsaymak değildir."
+      ],
+      "strategy": "Sol ve sağ için ayrı yük cetveli kur; her türün katsayısını ve üst yükünü iki sütunda tutup çarp. Sonunda iki işaretli toplamı karşılaştır.",
+      "steps": [
+        "Soldaki Zn yüksüzdür: 0. İki H⁺ ise 2×(+1)=+2 yük verir; sol toplam +2’dir.",
+        "Sağdaki Zn²⁺ bir adet +2 iyon, H₂ ise yüksüz moleküldür. Sağ toplam (+2)+0=+2’dir.",
+        "Sol/sağ sırası +2 ve +2 olur. Zn’nin yükü değişmiş olsa da bütün denklemde yük dengededir; bu nedenle aynı toplamı veren seçenek seçilir."
+      ],
+      "optionReasons": [
+        "Yanlış. Solu 0 almak yalnız yüksüz Zn’ye bakıp iki H⁺’ın toplam +2 yükünü atlar. Sağ toplamın +2 olması tek başına bu sol hesabı düzeltmez.",
+        "Yanlış. Solda iki H⁺ yerine birini saymak +1, sağda Zn²⁺ yükünü +1 gibi okumak yine +1 verir. Hem katsayı hem üst yük 2 bilgisi atlanmıştır.",
+        "Yanlış. Sol +2 doğrudur fakat sağ 0 değildir; H₂ yüksüz olsa da Zn²⁺ toplam +2 katkı verir.",
+        "Doğru. Sol 2×(+1)=+2, sağ 1×(+2)=+2’dir; yüksüz Zn ve H₂ toplamı değiştirmez.",
+        "Yanlış. Soldaki iyon H⁺’tır, H⁻ değildir. İki pozitif yükü −2 diye toplamak yük işaretini tersine çevirir."
+      ],
+      "commonError": "Katsayıyı yükten ayırmamak, H₂’nin yüksüzlüğünü bütün ürünlere yaymak veya H⁺ işaretini eksi okumak.",
+      "check": "Yüksüz türleri cetvelde 0 olarak bırakıp yalnız iyon katkılarını yeniden topla. Sol(+1)+(+1), sağ(+2) kalmalı; işaretler korunmalıdır."
+    }
+  },
+  {
+    "id": "f011-chem-fiziksel-kimyasal-degisimler-5",
+    "identity": "[\"f011-chem-fiziksel-kimyasal-degisimler-5\",\"A kabında NaCl’nin mevcut Na⁺/Cl⁻ iyonları suda dağılıyor. B kabında Zn asitle tepkimeye girip Zn²⁺ ve H₂ oluşturuyor. TYT sınıflamasında hangi sonuç doğrudur?\",\"\",[\"İkisi de yalnız fiziksel çünkü katılar kayboluyor.\",\"İkisi de kimyasal çünkü çözeltiler iletir.\",\"A çekirdek dönüşümü, B fiziksel faz değişimidir.\",\"A kesin metalik bağ oluşumudur.\",\"A fiziksel, B kimyasaldır.\"],4,\"A’da kristalde önceden bulunan iyonlar çözeltide hareketli olur; olağan NaCl çözünmesi fiziksel sınıflanır. B’de Zn’nin yükü ve tür listesi değişir; H₂ yeni üründür. İletkenlik veya katının gözden kaybolması tek başına iki mekanizmayı eşitlemez.\"]",
+    "guidance": {
+      "knowledge": [
+        "İyonik kristaldeki iyonların çözücüyle çevrelenip dağılması ile yüksüz metal atomunun yeni iyon ve ürünlere dönüşmesi aynı tanecik olayı değildir. Başlangıçta hangi türlerin zaten var olduğunu bilmek bu ayrımı sağlar.",
+        "Bir katının gözden kaybolması veya çözeltinin iletken olması gözlem bilgisidir. Tür kimliğini değerlendirmek için başlangıç ve son yük/bağlanma düzeni ayrıca izlenir; hareketli mevcut iyonlar da akım taşıyabilir."
+      ],
+      "strategy": "A ve B için başlangıçta var olan türleri ve sonuçta görülen türleri iki ayrı listede eşleştir. İletkenlik veya görünmezlik gibi ortak gözlemlerden değil, bu listelerdeki değişimden sınıflamaya git.",
+      "steps": [
+        "A’da Na⁺ ve Cl⁻ kristalde zaten bulunur; suda ayrılıp dağılır ve çözücüyle çevrelenir. Kökün olağan TYT sınıflamasında bu NaCl çözünmesi fiziksel alınır.",
+        "B’de yüksüz Zn’den Zn²⁺ ve yeni H₂ ürünü oluşur. Metalin yük durumu ve kimyasal tür listesi değiştiğinden bu olay kimyasaldır.",
+        "A fiziksel / B kimyasal eşleşmesi uygundur. İki katının da kaybolması veya ortamların iletmesi, birbirinden farklı tanecik değişimlerini aynı sınıfa zorlamaz."
+      ],
+      "optionReasons": [
+        "Yanlış. B’de Zn²⁺ ve H₂ oluşması verilmiştir. Katının kayboluşu bu yeni tür bilgisini silerek B’yi yalnız fiziksel yapmaz.",
+        "Yanlış. A’nın önceden mevcut iyonları çözeltide hareketli hâle gelebilir. İletkenlik, A’da ayrıca yeni kimyasal tür oluştuğunun tek başına kanıtı değildir.",
+        "Yanlış. A’da çekirdek dönüşümü verilmemiştir; B’de ise yalnız faz değil yük ve ürün türü değişmektedir.",
+        "Yanlış. NaCl’nin Na⁺/Cl⁻ iyonlarının suda dağılması saf metalin elektron-denizli örgüsünü oluşturmak değildir.",
+        "Doğru. Verilen olağan NaCl çözünmesi fiziksel, Zn’nin asitte Zn²⁺ ve H₂ oluşturması kimyasal süreçtir."
+      ],
+      "commonError": "Gözden kaybolan iki katıyı aynı mekanizma sanmak veya hareketli iyonların iletkenliğini her durumda yeni kimyasal ürün kanıtı saymak.",
+      "check": "A listesinde başlangıçtan gelen Na⁺/Cl⁻ iyonlarını, B listesinde sonradan oluşan Zn²⁺/H₂ türlerini işaretle. Kararın aynı dış görünüşe değil bu listelere dayanmalı."
+    }
+  },
+  {
+    "id": "f011-chem-fiziksel-kimyasal-degisimler-6",
+    "identity": "[\"f011-chem-fiziksel-kimyasal-degisimler-6\",\"Kimliği belirlenmeyen bir gazın kabarcıkları gözleniyor. Başka başlangıç/ürün verisi yok. Hangi değerlendirme doğrudur?\",\"\",[\"Fiziksel veya kimyasal ayrımı için gaz kimliği gibi ek kanıt gerekir.\",\"Kabarcık varsa kesin kimyasal değişimdir.\",\"Kabarcık varsa kesin fiziksel değişimdir.\",\"Gaz oluştuysa bütün atomlar yok olmuştur.\",\"Kabarcık yalnız metalik bağda görülebilir.\"],0,\"Kabarcık su buharı gibi aynı kimliğin gaz fazı olabilir; H₂ gibi yeni kimyasal ürün de olabilir. Bu yüzden yalnız gaz gözlemi ayrımı bitirmez. Ürün analizi, süreç koşulları ve kontrollü ölçüm gerekir. Atomların yok olduğu veya tek bağ türünün zorunlu olduğu sonucu çıkarılmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Gaz, maddenin bir fiziksel hâlidir; gazın kimyasal kimliği ise bileşimi ve türüyle ilgilidir. Bir gözlemin gaz fazını göstermesi ile gazın türünü belirleyen analiz farklı bilgi sağlar.",
+        "Olağan faz geçişinde aynı tür gaz hâline geçebilir; bir tepkimede ise başlangıçta bulunmayan gaz ürünleri oluşabilir. Başlangıç–sonuç tür listesi bu iki süreci karşılaştırmakta kullanılır."
+      ],
+      "strategy": "Kabarcık gözlemiyle uyumlu iki olası süreç tasarla; sonra yalnız verilen gözlemin bunları ayırt edip etmediğini kontrol et. Hangi ek ölçümün tür bilgisini sağlayacağını belirt.",
+      "steps": [
+        "Kökte yalnız kimliği belirlenmemiş gaz kabarcıkları vardır. Gazın H₂O buharı mı, başka ürün mü olduğu verilmemiştir.",
+        "Kaynama aynı H₂O’nun gaz fazını, suyun elektrolizi ise H₂/O₂ gibi yeni türleri verebilir. İki farklı süreç de kabarcık gözlemiyle bağdaşabilir.",
+        "Dolayısıyla fiziksel/kimyasal ayrımı için gaz kimliği gibi ek kanıt gerektiğini belirten seçenek uygundur. Kabarcığı tek başına iki sınıftan birine kesin yerleştirmek kapsamı aşar."
+      ],
+      "optionReasons": [
+        "Doğru. Verilen gözlem farklı kimlik süreçleriyle uyumlu olabilir; gazın türü ve başlangıç/ürün bilgisi ayrımı güçlendirir.",
+        "Yanlış. Kaynamada aynı türün buharı da kabarcık oluşturabilir; bu, kesin kimyasal genellemesine karşı örnektir.",
+        "Yanlış. Elektroliz veya uygun bir tepkimede yeni gaz ürünleri de kabarcık yapabilir; kesin fiziksel genellemesi bu olasılığı yok sayar.",
+        "Yanlış. Gaz görülmesi atomların yok olması değildir. Faz değişiminde de olağan kimyasal tepkimede de atom envanteri korunabilir.",
+        "Yanlış. Su kaynaması gibi metalik bağ modeli gerektirmeyen olaylarda da kabarcık görülür; gözlem tek bağ türüne özgü değildir."
+      ],
+      "commonError": "Gözlenen kabarcığı gazın kimliği ölçülmüş gibi yorumlamak ve tek görsel bulguyla kesin fiziksel veya kesin kimyasal kararı vermek.",
+      "check": "Aynı 'kabarcık var' notunu hem kaynama hem elektroliz için yazabiliyorsan bu not iki süreci ayırt etmiyor demektir. Kararı gaz türünü doğrulayan ek bilgiyle yeniden denetle."
+    }
+  },
+  {
+    "id": "f011-chem-fiziksel-kimyasal-degisimler-7",
+    "identity": "[\"f011-chem-fiziksel-kimyasal-degisimler-7\",\"Hg(s)→Hg(g) için 59 kJ/mol enerji alındığı verilmiştir. Hg iki tarafta da cıva elementidir. En doğru sonuç hangisidir?\",\"\",[\"59>40 olduğundan kesin yeni element oluşur.\",\"Element kimliği korunan fiziksel buharlaşmadır.\",\"Hg mutlaka H₂ ve O₂’ye dönüşür.\",\"Enerji aldığı için kimyasal olmak zorundadır.\",\"Gaz hâlindeki her madde kimyasal üründür.\"],1,\"Sıvı cıva gaz cıvaya geçer; element kimliği Hg olarak kalır. Enerjinin 40 kJ/mol’den büyük olması fiziksel–kimyasal ayrımında kesin eşik olmadığını gösterir. Metalik yoğun fazın bağlanmasının değişmesi, yeni element üretimiyle aynı değildir. Hg’nin su ürünlerine dönüşmesi denklemde yer almaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Element kimliği çekirdeğin proton sayısıyla ilişkilidir. Bir elementin farklı fazlara geçmesi ile başka elemente dönüşmesi farklı ölçeklerdeki olaylardır.",
+        "Metalik yoğun fazın çok merkezli bağlanma düzeni, gaz fazındaki tanecik düzeniyle aynı olmak zorunda değildir. Bu nedenle bağlanma düzeninin değişimini değerlendirirken tür kimliği, faz ve verilen mol başına enerji ayrı kaydedilir."
+      ],
+      "strategy": "Cıvayı iki durumda da kimlik sembolüyle etiketle; yoğun fazın bağlanma düzenini element kimliği ölçütünden ayır. Enerji eşiğine dayanan iddiaları bu iki kayıt üzerinden denetle.",
+      "steps": [
+        "Hg(s) ve Hg(g) iki tarafta da cıva elementidir; Türkçe gösterimde (s) sıvı, (g) gazdır. Verilen süreç sıvı cıvanın buharlaşmasıdır.",
+        "Yoğun fazdaki metalik bağlanma düzeni değişebilse de bu gösterimde yeni element veya H/O ürünü oluşmaz. 59 kJ/mol alınması, korunmuş Hg kimliğinin yerine geçmez.",
+        "Bu nedenle element kimliği korunan fiziksel buharlaşma seçilir. 59>40 hesabını kesin yeni tür/element testi yapmak veya enerji alan her olayı kimyasal saymak uygun değildir."
+      ],
+      "optionReasons": [
+        "Yanlış. 59’un 40’tan büyük olması proton sayısının ya da element kimliğinin değiştiğini göstermez. Verilen iki tür de Hg’dir.",
+        "Doğru. Sıvı Hg gaz Hg’ye geçerken element kimliği korunur; buharlaşma fiziksel sınıflanır ve enerji alabilir.",
+        "Yanlış. Gösterimde H veya O atomu ve H₂/O₂ ürünü yoktur. Hg’nin su ürünlerine dönüştüğünü söylemek tamamen başka bir tür listesi ekler.",
+        "Yanlış. Enerji alma yalnız kimyasal olaylara özgü değildir; verilen Hg buharlaşması element kimliğini koruyan enerji alan faz örneğidir.",
+        "Yanlış. Gaz fazında aynı madde bulunabilir. Hg(g) yazılması, Hg’nin başlangıçtan farklı kimyasal ürün olduğunu tek başına göstermez."
+      ],
+      "commonError": "40 kJ/mol sayısını kesin kimlik sınırı yapmak veya metalik bağlanma düzeni değişebildiği için element çekirdeğinin de değiştiğini varsaymak.",
+      "check": "Enerji ve faz etiketlerini ayrı kâğıda alıp kimlik satırını tekrar oku: Hg→Hg. Sonra 59 kJ/mol’ü geri ekle; bu sayı kimlik satırına yeni bir element eklememeli."
+    }
+  },
+  {
+    "id": "f011-chem-fiziksel-kimyasal-degisimler-8",
+    "identity": "[\"f011-chem-fiziksel-kimyasal-degisimler-8\",\"1) Etanol–su damıtması, 2) suyun H₂/O₂’ye elektrolizi, 3) H₂’nin tepkimesiz uygun koşullarda sıvılaştırılması yapılıyor. Yalnız hangi basamak kimyasaldır?\",\"\",[\"1\",\"3\",\"2\",\"1 ve 3\",\"1, 2 ve 3\"],2,\"Damıtma mevcut bileşenleri faz değişimleriyle ayırır. Elektrolizde H₂O kimliği H₂ ve O₂ ürünlerine dönüşür. Son sıvılaştırma H₂(g)→H₂(s) olarak aynı molekülü korur. Bu nedenle yalnız ikinci basamak kimyasaldır; bütün sürece tek başlık vermek basamak ayrımını kaybettirir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Çok basamaklı bir süreçte her ok için başlangıç ve sonuç türleri ayrı karşılaştırılır. Bir basamağın değişim sınıfı, aynı düzende daha önce veya sonra yapılan başka işlemin adından çıkmaz.",
+        "Damıtma bileşenlerin faz davranışını kullanarak ayırma yapar. Elektroliz elektrik enerjisiyle tür dönüşümüne, sıvılaştırma ise verilen maddenin gaz–sıvı faz karşılaştırmasına ilişkin bir işlemdir; gerçek sınıflama tür listesiyle doğrulanır."
+      ],
+      "strategy": "Üç numara için ayrı önce–sonra satırı aç; her satıra aynı türün farklı hâli mi yoksa farklı ürün türleri mi geldiğini yaz. Yalnız sorulan kimyasal basamağı bu tablodan seç.",
+      "steps": [
+        "1. basamakta etanol ve su damıtmayla ayrılır; verilen modelde bu bileşenlerin kimlikleri korunur.",
+        "2. basamakta H₂O’dan H₂ ve O₂ elde edilir; tür listesi değişir. 3. basamakta ise tepkimesiz H₂ gazı uygun koşullarda sıvı H₂ olur, kimliği aynıdır.",
+        "Kimyasal olan yalnız 2. basamaktır. 1 ve 3’ü eklemek, fiziksel ayırma ve tepkimesiz faz değişimini yeni kimyasal ürün oluşumuyla aynı saymak olur."
+      ],
+      "optionReasons": [
+        "Yanlış. 1. basamak mevcut etanol ve suyu damıtmayla ayırır; kökte yeni kimyasal ürün verilmemiştir.",
+        "Yanlış. 3. basamak özellikle tepkimesiz H₂ sıvılaştırılmasıdır; H₂ kimliği korunur.",
+        "Doğru. 2. basamak su kimliğini H₂ ve O₂ ürünlerine dönüştürür; diğer iki basamakta verilen türler korunur.",
+        "Yanlış. 1 ve 3 fiziksel ayırma/faz basamaklarıdır; kimyasal tür dönüşümü verilen 2. basamak dışarıda bırakılmıştır.",
+        "Yanlış. Aynı çok aşamalı düzende bulunmaları üç basamağı da kimyasal yapmaz. 1 ve 3’te tür kimliği korunmaktadır."
+      ],
+      "commonError": "Bir düzenekte elektroliz bulunduğu için bütün alt basamakları kimyasal saymak veya gaz elde etmeyi tür değişimiyle eşitlemek.",
+      "check": "Numaraları tek tek kapatıp diğerlerinden bağımsız çöz: 1 ayırma, 2 yeni ürün, 3 aynı H₂’nin fazı. Seçtiğin numara yalnız yeni ürün satırına karşılık gelmeli."
+    }
+  },
+  {
+    "id": "f011-chem-fiziksel-kimyasal-degisimler-9",
+    "identity": "[\"f011-chem-fiziksel-kimyasal-degisimler-9\",\"Bir olayın geri döndürülebildiği bilgisi tek başına fiziksel değişim olduğunu kanıtlar mı?\",\"\",[\"Evet; bütün kimyasal olaylar sonsuza dek geri dönmez.\",\"Evet; kırılma her zaman kimyasaldır.\",\"Hayır; fiziksel olaylarda enerji hiçbir zaman aktarılmaz.\",\"Hayır; tersinir kimyasal tepkimeler de vardır.\",\"Yalnız gaz içermiyorsa kanıtlar.\"],3,\"Geri döndürülebilirlik mekanizmayı tek başına belirlemez. Tersinir kimyasal tepkimeler vardır; cam kırılması gibi fiziksel olayları eski biçime döndürmek ise zor olabilir. Enerji alışverişi iki sınıfta da görülebilir. Başlangıç–ürün kimliği ve bağlanma/yük düzeni gerekir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Fiziksel/kimyasal sınıflama, olayın başlangıç ve sonucundaki tür ve yapı bilgisine dayanır. Geri dönme bilgisi ise izlenebilen yolun yönü ve deney koşullarıyla ilgili ayrı bir kayıttır.",
+        "Bir 'her zaman' iddiasını sınamak için onun öncülünü sağlayan bir karşı örnek aranır. Eski şekle dönmenin kolaylığı, enerji alışverişi ve kimyasal kimlik aynı ölçüm değildir."
+      ],
+      "strategy": "Geri dönüş bilgisini kimlik karşılaştırmasından ayrı yaz; ardından aynı geri-dönüş öncülüne uyabilecek farklı tür listelerini düşün. Evrensel çıkarımın koşullarını karşı örnekle denetle.",
+      "steps": [
+        "Verilen tek bilgi olayın geri döndürülebilmesidir. Bu bilgi tek başına başlangıç ve ürün türlerinin aynı olduğunu söylemez.",
+        "H₂+I₂⇌2HI gibi tersinir bir kimyasal modelde ileri ve geri yollar mümkündür; yine de H₂/I₂ ile HI farklı türlerdir. Tersinirlik kimyasal tür değişimiyle bağdaşabilir.",
+        "Bu nedenle tersinir kimyasal tepkimelerin de bulunduğunu söyleyen seçenek uygundur. Fiziksel olaylarda enerji olmaz veya gaz yoksa kesinlik sağlanır gibi ek kurallar verilen ölçütten çıkmaz."
+      ],
+      "optionReasons": [
+        "Yanlış. Tersinir kimyasal tepkimeler vardır; bütün kimyasal olaylar sonsuza dek geri dönmez iddiası bu örneklerle çürür.",
+        "Yanlış. Kırılma bir maddenin boyut ve biçimini değiştirirken kimliğini koruyabilir. Her zaman kimyasal diye sınıflamak doğru değildir; seçenek ayrıca geri dönüşten bu sonucu kuramaz.",
+        "Yanlış. Fiziksel erime/buharlaşma gibi olaylarda da enerji aktarılır. Yanıtın hayır olması, gerekçedeki enerji hiçbir zaman aktarılmaz iddiasını doğru yapmaz.",
+        "Doğru. Tersinir kimyasal tepkimelerde tür dönüşümü ve geri yol birlikte bulunabilir; geri dönebilme tek başına fiziksel olmayı kanıtlamaz.",
+        "Yanlış. Gaz fazı içermeyen bir sulu çözeltide CH₃COOH + H₂O ⇌ CH₃COO⁻ + H₃O⁺ dengesi hem tersinir hem kimyasaldır. Böylece gaz yokluğu, geri dönebilmenin kesin fiziksel kanıt olmasını sağlamaz."
+      ],
+      "commonError": "Geri döndürülebilirliği doğrudan fiziksel etiketiyle eşitlemek veya doğru bir hayır yanıtına bilimsel olarak yanlış bir gerekçe eklemek.",
+      "check": "Bir tersinir tepkimenin iki yönünde tür listesini yaz. Yol geri çevrilebildiği hâlde başlangıç ve ürün adları farklı kalıyorsa geri dönüşün tek başına sınıfı belirlemediğini görürsün."
+    }
+  },
+  {
+    "id": "f011-chem-fiziksel-kimyasal-degisimler-10",
+    "identity": "[\"f011-chem-fiziksel-kimyasal-degisimler-10\",\"Bir mumda katı mum önce eriyor, sonra buharlaşan yakıt oksijenle CO₂ ve H₂O oluşturuyor. Doğru basamak yorumu hangisidir?\",\"\",[\"İki basamak da yalnız fiziksel.\",\"Erime kimyasal, yanma fiziksel.\",\"Mum eriyince atom numaraları değişir.\",\"Yanma sırasında atom korunumuna gerek yoktur.\",\"Erime fiziksel, yeni ürün veren yanma kimyasaldır.\"],4,\"Erime mumun fiziksel fazını değiştirir. Yanma ise yakıt ve O₂’den yeni CO₂/H₂O türleri oluşturur; kimyasaldır. İki süreç aynı mumda birlikte görülse de aynı mekanizma değildir. Sıradan yanmada atom tür ve sayıları uygun dengelenmiş denklemle korunur; çekirdekler değişmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir örnekte mekanik, faz ve tepkime olayları art arda bulunabilir. Her olayın sınıflaması o basamağın kendi başlangıç ve sonuç kimlikleriyle yapılır.",
+        "Olağan kimyasal yanmada yeni türler oluşurken uygun dengelenmiş denklemde atom tür ve sayıları korunur. Faz değişiminde ise madde kimliği korunarak fiziksel düzen değişebilir; iki durumda da atom numarasının değişmesi gerekmez."
+      ],
+      "strategy": "Mumun erimesini ve yakıtın oksijenle ürün vermesini iki ayrı okta göster; her okun öncesindeki ve sonrasındaki kimlik bilgisini karşılaştır. Aynı nesnede gerçekleşmelerini tek mekanizma gibi yorumlama.",
+      "steps": [
+        "İlk basamak katı mumun erimesidir. Verilen olayda yeni bir kimyasal ürün listesi yoktur; faz değişimi fiziksel olarak sınıflanır.",
+        "Yanma basamağında yakıt ve O₂’den CO₂ ile H₂O oluşur. Yeni ürün türleri verildiğinden bu basamak kimyasaldır.",
+        "Erime fiziksel / yeni ürün veren yanma kimyasal eşleşmesi uygundur. Yanma sırasında atomlar uygun denklemle korunur; erimeyi atom numarası değişimi diye okumayız."
+      ],
+      "optionReasons": [
+        "Yanlış. Yanma basamağında CO₂ ve H₂O yeni ürünleri açıkça verilmiştir; iki basamağı da yalnız fiziksel sayamazsın.",
+        "Yanlış. Etiketler ters çevrilmiştir: erime faz değişimi, yeni ürünlü yanma kimyasal dönüşümdür.",
+        "Yanlış. Erime atom numarasını, yani çekirdeğin proton sayısını değiştirmez; fiziksel düzen değişimini çekirdek dönüşümüyle karıştırır.",
+        "Yanlış. Kimyasal yanmada da dengelenmiş denklemde atom tür ve sayıları korunmalıdır. Yeni moleküller oluşması atomların yok olması demek değildir.",
+        "Doğru. Aynı mumdaki erime kimliği koruyan faz olayı, CO₂/H₂O veren yanma ise yeni ürünlü kimyasal olaydır."
+      ],
+      "commonError": "Aynı mumda birlikte görüldükleri için erime ve yanmayı aynı sınıfa sokmak veya kimyasal değişimde atom korunumunun geçersiz olduğunu düşünmek.",
+      "check": "İki ok çizip ilkine yalnız faz değişimini, ikincisine CO₂/H₂O ürün listesini yaz. Her iki okun sonunda atom numaralarını değiştirmeden farklı sınıflara ulaşabildiğini kontrol et."
+    }
+  },
+  {
+    "id": "f011-chem-maddenin-halleri-1",
+    "identity": "[\"f011-chem-maddenin-halleri-1\",\"1 g, 0 °C buz 1 atm’de kayıpsız 167 J alıyor. Erime gizli ısısı 334 J/g. Son durumda hangisi doğrudur?\",\"\",[\"%50 buz, %50 sıvı; sıcaklık 0 °C\",\"Tamamı 167 °C gaz\",\"Tamamı 100 °C sıvı\",\"Tamamı buz, enerji alınmadı\",\"%25 buz, %75 gaz\"],0,\"Tam erime 1×334=334 J gerektirir. 167 J bunun yarısı olduğundan 0,5 g erir ve 0,5 g buz kalır. Saf madde sabit basınçta iki faz hâlindeyken bu modelde sıcaklık 0 °C’dir. Sıcaklığın değişmemesi enerji alınmadığı anlamına gelmez; faz payı değişmiştir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Erime eşiğindeki bir kütlenin erimesi için gereken enerji Q=mLₑ ile bulunur. J/g birimindeki Lₑ ile gramı çarpmak joule verir; bu işlem bir sıcaklık artışı hesabı değildir.",
+        "Bu sabit basınçlı saf su modelinde buz ve sıvı birlikte bulunduğu erime platosunda sıcaklık 0 °C kalır. Alınan enerji eriyen kütleyi artırabilir; sıcaklığın sabitliği enerji aktarımının durması demek değildir."
+      ],
+      "strategy": "Önce verilen buzun tamamını eritme bütçesini hesapla. Alınan enerjinin bu bütçenin ne kadarını karşıladığını bulup eriyen ve kalan kütleleri ayrı kaydet; son sıcaklığı bulunduğun bölgeden oku.",
+      "steps": [
+        "Bir gram buzun tam erime bütçesi 1 g × 334 J/g = 334 J’dir. Alınan 167 J bu bütçeden küçüktür; erime tamamlanmamıştır.",
+        "Eriyen kütle 167/334 = 0,5 g, kalan buz 1−0,5 = 0,5 g olur. Toplam kütle hâlâ 1 g’dır.",
+        "Kütlenin yarısı buz, yarısı sıvıdır. İki faz birlikte erime platosunda kaldığından sıcaklık 0 °C olur; gaz oluşumuna geçilmemiştir."
+      ],
+      "optionReasons": [
+        "Doğru. 167/334 = 0,5 g buz erir; kalan 0,5 g ile kütle payları %50–%50 ve plato sıcaklığı 0 °C’dir.",
+        "Yanlış. 167 J bir enerji, 167 °C ise sıcaklıktır; sayıyı doğrudan sıcaklığa taşıyamazsın. Üstelik enerji henüz 334 J’lik erime bütçesini bile tamamlamaz.",
+        "Yanlış. Bütününün 100 °C sıvı olması önce tam erimeyi gerektirir. Verilen 167 J, yalnız erime için gereken 334 J’den bile azdır.",
+        "Yanlış. Sıcaklık değişmese de 167 J alınmıştır ve 0,5 g buz erimiştir. Plato sıcaklığını enerji alınmamasıyla karıştırır.",
+        "Yanlış. %75 gaz iddiası erime tamamlanmadan gaz payı oluşturur; verilen enerji yalnız başlangıç kütlesinin yarısını eritmeye yeter."
+      ],
+      "commonError": "J cinsinden enerjiyi °C cinsinden sıcaklık sanmak veya plato boyunca enerji alınmadığını düşünüp bütün kütleyi buz bırakmak.",
+      "check": "Eriyen kütleyi Lₑ ile geri çarp: 0,5 × 334 = 167 J. Kalan 0,5 g buzla kütle toplamı 1 g ve iki faz sıcaklığı 0 °C olmalıdır."
+    }
+  },
+  {
+    "id": "f011-chem-maddenin-halleri-2",
+    "identity": "[\"f011-chem-maddenin-halleri-2\",\"1 atm basınçta, erime eşiğindeki 1 g, 0 °C saf su buzu tamamen eritilip 100 °C sıvı su yapılacak. Lₑ=334 J/g, sıvı c=4,18 J/(g·°C), ısı kaybı yok. Gerekli toplam enerji kaç J?\",\"\",[\"334\",\"752\",\"418\",\"2256\",\"3008\"],1,\"Erime için 334 J, 0→100 °C sıvı ısınması için 1×4,18×100=418 J gerekir. Toplam 752 J’dir. 2256 J buharlaşma gizli ısısı, 3008 J ise bu örnekte tümünü 100 °C buhara çevirme toplamıdır. Soru yalnız 100 °C sıvı istediğinden son plato eklenmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir ısıtma yolu farklı bölümler içerirse her bölümün enerjisi ayrı hesaplanıp toplanır. Erime sırasında Q=mLₑ, yalnız sıvının sıcaklığı değişirken Q=mcΔT kullanılır.",
+        "Erime eşiğinde başlamak, erime öncesi bir buz ısıtma aralığı eklenmeyeceğini belirtir. Hedefin sıvı ya da gaz olarak tanımlanması da ısıtma yolunun hangi noktada biteceğini belirler."
+      ],
+      "strategy": "Başlangıç, erime sonu ve istenen son hâl için üç noktalı bir yol çiz. Aradaki her parçaya uygun enerji bağıntısını yaz; yalnız bu iki nokta arasındaki enerji kalemlerini bütçeye al.",
+      "steps": [
+        "Başlangıç 1 atm’de erime eşiğindeki 1 g saf buzdur. Önce 1 × 334 = 334 J ile buzun tamamını 0 °C sıvıya dönüştür.",
+        "Sıvı için ΔT=100−0=100 °C olur. Bu bölümün enerjisi 1 × 4,18 × 100 = 418 J’dir.",
+        "İstenen 100 °C sıvıya ulaşma bütçesi 334+418 = 752 J’dir. Hedef gaz olmadığı için buharlaşma platosuna ait bir kalem eklenmez."
+      ],
+      "optionReasons": [
+        "Yanlış. 334 J yalnız buzun erimesidir; oluşan 0 °C sıvının 100 °C’ye ısıtılması için gereken 418 J’yi atlar.",
+        "Doğru. Erime için 334 J ile sıvının ısınması için 418 J toplanır; hedefe ulaşma enerjisi 752 J’dir.",
+        "Yanlış. 418 J yalnız 0→100 °C sıvı ısınmasını karşılar. Başlangıç buz olduğundan erimeye ayrılan 334 J eksiktir.",
+        "Yanlış. 2256 J bu yolun mLₑ veya mcΔT hesabı değildir. Buharlaşmaya ait bu enerji, sorunun istediği sıvı son hâle eklenmez.",
+        "Yanlış. 3008 = 752+2256 J, buharlaşma için 2256 J daha ekleyerek tümünü buhar yapma bütçesidir; istenen 100 °C sıvı aşamasını geçer."
+      ],
+      "commonError": "Başlangıç buzken yalnız mcΔT kullanmak veya son hâl sıvı olmasına rağmen buharlaşma enerjisini de toplamak.",
+      "check": "İki enerji kaleminin birimlerini ayrı doğrula: g × J/g ve g × J/(g·°C) × °C ikisi de J verir. Son noktaya sıvı yazdığında buharlaşma kalemi dışarıda kalmalıdır."
+    }
+  },
+  {
+    "id": "f011-chem-maddenin-halleri-3",
+    "identity": "[\"f011-chem-maddenin-halleri-3\",\"1 g 0 °C buzdan başlayan modelde 752 J, 100 °C sıvıya ulaşma toplamıdır; tam buharlaşma ek 2256 J ister. Toplam 1880 J verildiğinde gaz kütle payı nedir? Kayıp yok, 1 atm.\",\"\",[\"%0\",\"%25\",\"%50\",\"%75\",\"%100\"],2,\"1880−752=1128 J kaynama platosuna ayrılmıştır. 1128/2256=1/2 olduğundan kütlenin yarısı gaz, yarısı sıvıdır; sıcaklık 100 °C kalır. Başlangıçtaki erime ve ısınma enerjilerini de buharlaşmış miktara katmak payı gereğinden büyük verir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir fazın kütle payı, o fazdaki kütlenin toplam kütleye oranıdır. Faz değişimine ayrılan enerjiyi başlangıçtan beri verilen toplam enerjiden ayırmak, gizli ısı hesabının doğru başlangıç noktasını kurar.",
+        "Aynı madde ve koşullarda buharlaşmaya ayrılan enerjinin tam buharlaşma enerjisine oranı buharlaşan kütle payını verir. Bu oran iki faz birlikteyken 0 ile 1 arasındadır."
+      ],
+      "strategy": "Toplam enerji ekseninde sıvıya ulaşma eşiğini işaretle. Bu eşiğin üzerinde kalan bütçeyi tam buharlaşma bütçesiyle oranla; seçeneklerdeki yüzdeleri aynı enerji ölçeğine geri çevirerek denetle.",
+      "steps": [
+        "Verilen 1880 J’nin ilk 752 J’si buzdan 100 °C sıvıya ulaşmaya ayrılır. Buharlaşmaya kalan enerji 1880−752 = 1128 J’dir.",
+        "Bir gramın tamamını buharlaştırmak için ek 2256 J gerekir. Gaz kütle payı 1128/2256 = 1/2 olur.",
+        "Gaz payı %50, kalan sıvı payı %50’dir. Verilen enerji tam buharlaşma toplamı 752+2256 = 3008 J’den küçük olduğu için gaz payı %100 değildir."
+      ],
+      "optionReasons": [
+        "Yanlış. %0 gaz, buharlaşmaya hiç enerji ayrılmadığını varsayar; oysa 1880−752 = 1128 J bu eşikten sonra buharlaşmaya ayrılmıştır.",
+        "Yanlış. %25 gaz için 2256/4 = 564 J buharlaşma ve toplam 752+564 = 1316 J gerekirdi; verilen toplam 1880 J’dir.",
+        "Doğru. Buharlaşma bütçesi 1128 J ve tam dönüşüm bütçesi 2256 J olduğundan gaz payı 1/2, yani %50’dir.",
+        "Yanlış. %75 gaz için 0,75 × 2256 = 1692 J buharlaşma enerjisi ve toplam 2444 J gerekirdi; burada toplam yalnız 1880 J’dir.",
+        "Yanlış. %100 gaz için başlangıçtan itibaren 752+2256 = 3008 J gerekir. Verilen 1880 J tam buharlaşmaya yetmez."
+      ],
+      "commonError": "Erime ve sıvı ısınmasına harcanan 752 J’yi de buharlaşma payına katıp toplam enerjiyi doğrudan 2256 J’ye bölmek.",
+      "check": "Bulduğun gaz payını 2256 J ile çarpıp 752 J ekle; başlangıçtan verilen 1880 J’ye geri dönmelisin. Böylece ön ısıtma ile buharlaşmayı iki kez saymadığını kontrol et."
+    }
+  },
+  {
+    "id": "f011-chem-maddenin-halleri-4",
+    "identity": "[\"f011-chem-maddenin-halleri-4\",\"Bir kristal katı olağan koşullarda iletmiyor, saf eriyiği hareketli iyonlarla iletiyor. Verilen üç adaydan en uygun yapı hangisidir?\",\"\",[\"Standart metalik kristal\",\"Yalnız nötr moleküllü kristal\",\"Elektronsuz madde\",\"İyonik kristal\",\"Plazma olmak zorundadır\"],3,\"İyonik kristalde iyonlar örgüde yerlerine bağlıyken eriyikte uzun mesafede yük taşıyabilir. Standart metaller katıda da hareketli elektronlarla iletir; nötr moleküler adayın bu iyon taşıyıcı verisi yoktur. Gözlem bileşim bilgisiyle birlikte kullanılmalıdır; verilen adaylar içinde iyonik yapı en uygundur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Elektrik iletimi için yük taşıyıcılarının bulunmasının yanında örnek içinde uzun mesafede hareket edebilmesi gerekir. Örgüde yerlerine bağlı iyonlar ile hareket edebilen iyonlar bu bakımdan ayrılır.",
+        "Kristal türlerini karşılaştırırken taşıyıcının iyon mu elektron mu olduğu ve hangi fazda hareket edebildiği birlikte okunur. Saf eriyik, su eklenmiş çözelti demek değildir."
+      ],
+      "strategy": "Katı ve saf eriyik için iki satır aç; her satıra iletim bilgisini ve verilen taşıyıcıyı yaz. Adayları bu iki koşulu aynı anda karşılayıp karşılamadıklarına göre ele.",
+      "steps": [
+        "Verilen katı olağan koşullarda iletmez. Bu gözlem, katıda hareketli elektronlarla ileten standart metalik adayla uyuşmaz.",
+        "Eriyik için taşıyıcı açıkça hareketli iyonlardır. İyonik kristalde yerlerine bağlı iyonların eriyikte yer değiştirebilmesi iki gözlemi birlikte açıklar.",
+        "Verilen adaylar içinde iyonik kristali seç. Yalnız nötr moleküllü aday iyon taşıyıcısı bilgisini karşılamaz; elektronların yokluğu veya plazma zorunluluğu da gözlemlerden çıkmaz."
+      ],
+      "optionReasons": [
+        "Yanlış. Standart metalik kristal katıda da hareketli elektronlarla iletir; verilen katı iletmez ve eriyik taşıyıcıları açıkça iyonlardır.",
+        "Yanlış. Yalnız nötr moleküllerle kurulan bu aday, saf eriyikte hareketli iyonlar bulunduğu verisini açıklamaz.",
+        "Yanlış. İletmeyen katı elektronsuz değildir. Elektronların atomlarda bulunması ile örnek boyunca serbestçe akım taşıması ayrı durumlardır.",
+        "Doğru. İyonik kristalin iyonları katı örgüde yerlerine bağlıyken eriyikte hareket ederek akım taşıyabilir; iki faz verisi birlikte açıklanır.",
+        "Yanlış. Saf iyonik eriyikte iyonlarla iletim görülebilir; bunu açıklamak için serbest elektron–iyon plazması olduğunu varsaymak gerekmez."
+      ],
+      "commonError": "Yük taşıyıcısının varlığını hareket serbestliğiyle eş tutmak veya iyonla ileten her sıvıyı plazma sanmak.",
+      "check": "Seçtiğin yapının hem katıda iletmeme hem saf eriyikte iyonlarla iletme koşulunu karşılayıp karşılamadığını ayrı işaretle. Yalnız tek satıra uyan bir aday yeterli değildir."
+    }
+  },
+  {
+    "id": "f011-chem-maddenin-halleri-5",
+    "identity": "[\"f011-chem-maddenin-halleri-5\",\"Aynı saf sıvı 25 °C’de iki kapta sıvı–buhar dengesindedir, her ikisinde de sıvı kalmıştır. Birinin yüzeyi daha geniştir. Denge buhar basınçları için ne söylenir?\",\"\",[\"Geniş yüzeyde kesin iki kattır.\",\"Dar yüzeyde her zaman sıfırdır.\",\"Sıvı miktarı çok olanda zorunlu büyüktür.\",\"Yalnız kabın rengine bağlıdır.\",\"Eşittir.\"],4,\"Saf sıvı türü, sıcaklık ve iki fazın varlığı aynıdır; bu koşullarda denge buhar basınçları eşittir. Yüzey alanı dengeye ulaşma hızını etkileyebilir fakat son denge basıncını tek başına değiştirmez. Tüm sıvının buharlaştığı bir kap olsaydı doygunluk varsayımı yeniden kontrol edilirdi.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sıvı–buhar dengesi dinamiktir: buharlaşma ve yoğuşma mikroskobik olarak sürerken karşıt geçiş hızları dengelenir. Son denge basıncı ile bu dengeye ulaşma süresi farklı niceliklerdir.",
+        "Denge değerlendirmesinde saf madde türü, sıcaklık ve iki fazın birlikte varlığı belirtilir. Yüzeyde birim zamanda gerçekleşen geçiş sayısı ise alan ve dengeye ulaşma süreciyle ilişkilidir."
+      ],
+      "strategy": "İki kabı madde türü, sıcaklık, faz varlığı ve yüzey alanı sütunlarında karşılaştır. Değişen sütunun geçiş hızına mı yoksa verilen son denge koşuluna mı ait olduğunu ayırarak basınç iddialarını sınayabilirsin.",
+      "steps": [
+        "İki kapta aynı saf sıvı, aynı 25 °C sıcaklığı ve sıvı–buhar dengesi verilmiştir. İkisinde de sıvı kaldığından tümü buharlaşmış bir örnek söz konusu değildir.",
+        "Farklı yüzey alanı buharlaşma ve yoğuşmanın toplam hızlarını, dolayısıyla dengeye ulaşma süresini etkileyebilir. Aynı tür ve sıcaklıktaki iki fazlı son dengenin buhar basıncını tek başına değiştirmez.",
+        "Bu koşullarda denge buhar basınçları eşittir. Alanı iki kat basınca, sıvı miktarını zorunlu daha büyük basınca veya kap rengini tek belirleyiciye dönüştüren iddialar seçilmez."
+      ],
+      "optionReasons": [
+        "Yanlış. Daha geniş yüzeyden birim zamanda daha çok molekül geçebilmesi, son denge basıncının kesin iki kat olması demek değildir; alan oranı da kökte sayısal verilmemiştir.",
+        "Yanlış. Dar yüzeyli kapta da sıvı ve buhar dengededir; yüzeyin dar olması buhar basıncını her zaman sıfır yapmaz.",
+        "Yanlış. İki kapta da sıvı kaldığı ve tür ile sıcaklık aynı olduğu için sıvı miktarının fazla olması denge buhar basıncını zorunlu artırmaz.",
+        "Yanlış. Kökte sıcaklık 25 °C olarak sabittir; kap rengi bu koşullarda saf sıvının denge buhar basıncının tek belirleyicisi değildir.",
+        "Doğru. Aynı saf tür, aynı sıcaklık ve her iki fazın varlığı koşullarında denge buhar basınçları eşittir; alan farkı son değeri belirlemez."
+      ],
+      "commonError": "Buharlaşma hızındaki değişikliği denge buhar basıncındaki aynı oranlı değişiklik sanmak; sıvı kalması koşulunu denetlemeden miktar karşılaştırmak.",
+      "check": "İki kabın sıcaklığını ve iki fazın varlığını tekrar kontrol et. Biri tamamen buharlaşsaydı bu iki fazlı doygunluk karşılaştırmasının koşulu kaybolurdu; kök bu olasılığı dışlamıştır."
+    }
+  },
+  {
+    "id": "f011-chem-maddenin-halleri-6",
+    "identity": "[\"f011-chem-maddenin-halleri-6\",\"Sızdırmaz ideal gaz 300 K’de 2 L hacimdedir. Basınç sabit tutularak 450 K’ye çıkarılıyor; faz değişmiyor. Yeni hacim kaç L?\",\"\",[\"3\",\"1\",\"1,5\",\"2\",\"4,5\"],0,\"V₂=V₁×T₂/T₁=2×450/300=3 L bulunur. Kelvin sıcaklığı yüzde 50 arttığı için sabit basınçta hacim de yüzde 50 artar. n sabitliği ve faz değişmeme koşulu verilmiştir; basıncı ters orantı koşulundaki gibi değiştirmemelisin.\"]",
+    "guidance": {
+      "knowledge": [
+        "İdeal gaz için PV=nRT bağıntısında sabit tutulan değişkenler orantıyı belirler. Sızdırmazlık madde miktarını korur; basınç da sabitse V/T oranı korunur.",
+        "Gaz bağıntılarındaki sıcaklık mutlak sıcaklıktır ve Kelvin ile kullanılır. Orantı katsayısı birimsizdir; bu katsayı ile hacim büyüklüğünü birbirinden ayırmak gerekir."
+      ],
+      "strategy": "Kökte sabit tutulan nicelikleri işaretleyip gaz bağıntısını iki durum için oranla. Yeni ve eski Kelvin sıcaklıklarının oranını önce birimsiz bul; ardından başlangıç hacmine uygula.",
+      "steps": [
+        "Gaz kaçmadığı için n, kökte açıkça sabit tutulan P ile birlikte korunur. Bu yüzden V₂/V₁=T₂/T₁ yazılır.",
+        "Sıcaklık oranı 450/300 = 1,5’tir. Son hacim 2 L × 1,5 = 3 L olur.",
+        "Hacim artışı 1 L, son hacim 3 L’dir. Sıcaklık %50 arttığında sabit basınçlı bu modelde hacmin de %50 arttığını kontrol ederek 3 L seçeneğini seç."
+      ],
+      "optionReasons": [
+        "Doğru. V₂=2 × 450/300 = 3 L’dir; n ve P sabitken Kelvin sıcaklığıyla hacim aynı oranda değişir.",
+        "Yanlış. 1 L, 2 × (450−300)/300 hesabıyla bulunan hacim artışıdır. Soru artışı değil son hacmi sorar; başlangıçtaki 2 L de eklenmelidir.",
+        "Yanlış. 1,5 sıcaklıkların birimsiz oranıdır; doğrudan litre olarak yazılamaz. Bu oran başlangıç hacmi 2 L ile çarpılır.",
+        "Yanlış. 2 L başlangıç hacmidir. T artarken n ve P sabitse V/T’yi korumak için hacim de değişmelidir.",
+        "Yanlış. 4,5 L, başlangıca göre 4,5/2 = 2,25 kat hacimdir; verilen Kelvin sıcaklık oranı ise yalnız 1,5’tir."
+      ],
+      "commonError": "Birimsiz 450/300 oranını hacim sanmak veya hesaplanan 1 L artışı son hacim yerine yazmak; sabit basıncı ters orantı sorusu gibi ele almak.",
+      "check": "Başlangıçta V/T=2/300, sonuçta 3/450 olur; ikisi de 1/150 L/K’dir. Farklı bir hacim seçtiysen bu iki oranı eşitleyip hatayı bul."
+    }
+  },
+  {
+    "id": "f011-chem-maddenin-halleri-7",
+    "identity": "[\"f011-chem-maddenin-halleri-7\",\"Havada su buharı kısmi basıncı 1,2 kPa, aynı sıcaklıktaki doygunluk basıncı 2,4 kPa’dır. Bağıl nem kaçtır?\",\"\",[\"%2\",\"%50\",\"%20\",\"%100\",\"%200\"],1,\"Bağıl nem=1,2/2,4×100=%50’dir. Payda aynı sıcaklığın doygunluk basıncıdır; oranı ters çevirmek %200 hatası verir. Toplam hava basıncı veya yüzey alanı bu verilen tanımdaki paydanın yerine geçmez. Miktar ile yüzde doygunluğu ayrı niceliklerdir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bağıl nem, mevcut su buharı kısmi basıncının aynı sıcaklıktaki doygunluk basıncına oranının yüzde biçimidir: RH=100 × p/p_doy. İki basıncın birimleri aynı olmalıdır.",
+        "Doygunluk basıncı oran için referans değerdir; toplam hava basıncıyla aynı nicelik değildir. Oranı yüzdeye çevirirken birimsiz kesir 100 ile çarpılır."
+      ],
+      "strategy": "Basınçları mevcut ve doygunluk başlıklarının altına yerleştir; mevcut/referans oranını kur. Kesri yüzdeye çevirip aday yüzdelerin hangi mevcut basınca karşılık geldiğiyle ters kontrol yap.",
+      "steps": [
+        "Mevcut su buharı basıncı paya 1,2 kPa, aynı sıcaklığın doygunluk basıncı paydaya 2,4 kPa yazılır. Aynı birimler bölmede sadeleşir.",
+        "1,2/2,4 = 0,5 olur. Yüzdeye çevirmek için 100 ile çarp: RH=%50.",
+        "Doygunluk değerinin yarısı kadar mevcut basınç bulunduğundan yarı doygunluk sonucuyla tutarlıdır. Ters oran %200 verir; mevcut ve referans yerlerini değiştirme."
+      ],
+      "optionReasons": [
+        "Yanlış. %2 olsaydı mevcut basınç 0,02 × 2,4 = 0,048 kPa olurdu; verilen 1,2 kPa değildir. 2,4/1,2=2 ters oranını da yüzde sayısı diye yazamazsın.",
+        "Doğru. 100 × 1,2/2,4 = %50’dir; mevcut basınç doygunluk basıncının yarısıdır.",
+        "Yanlış. %20 için mevcut basıncın 0,20 × 2,4 = 0,48 kPa olması gerekirdi. Kökte 0,48 değil 1,2 kPa verilmiştir.",
+        "Yanlış. %100, mevcut ve doygunluk basınçlarının eşit olmasını gerektirir; 1,2 kPa ile 2,4 kPa eşit değildir.",
+        "Yanlış. %200, 100 × 2,4/1,2 hesabıdır. Mevcut basınç ile doygunluk basıncını ters yerleştirerek referansın mevcut değerin iki katı olmasını yanlış yorumlar."
+      ],
+      "commonError": "Doygunluk basıncını paya koyup oranı ters çevirmek veya birimsiz kesri yüzdeye dönüştürmeden son sayı sanmak.",
+      "check": "Bulduğun yüzdeyi 100’e bölüp 2,4 kPa ile çarp. Mevcut 1,2 kPa’ya dönüyorsa pay–payda sırası ve yüzde dönüşümü birlikte doğrudur."
+    }
+  },
+  {
+    "id": "f011-chem-maddenin-halleri-8",
+    "identity": "[\"f011-chem-maddenin-halleri-8\",\"Plazma için hangi yorum bilimsel olarak uygundur?\",\"\",[\"Her sıcak sıvı plazmadır.\",\"Plazmada hiçbir elektrik yükü bulunmaz.\",\"Sıcak lav olmak tek başına serbest elektron–iyon plazması olmayı kanıtlamaz.\",\"Magma her koşulda yalnız elektronlardan oluşur.\",\"Plazma kesinlikle akışkan olamaz.\"],2,\"Plazma tanımında iyonlaşmış ortamın serbest elektron ve iyonlarının toplu etkisi önemlidir. Lav sıcak kayaç eriyiğidir; yüksek sıcaklık tek başına bu koşulu sağlamaz. Plazma yaklaşık toplam nötr olabilse de yük taşıyıcıları vardır. Bütün plazmaların ağır taneciklerini aynı sıcaklıkta varsaymak da gerekmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Plazma, serbest elektron ve iyonların kolektif elektriksel etkilerinin önemli olduğu iyonlaşmış ortamdır. Yaklaşık toplam yüksüzlük, ayrı yüklü taşıyıcıların bulunmadığı anlamına gelmez.",
+        "Bir örneğin sıcaklığı, akışkanlığı, kimyasal bileşimi ve iyonlaşma durumu farklı bilgilerdir. Faz ve yük taşıyıcıları hakkında karar verirken yalnız sıcaklık sıfatı yerine ilgili tanecik kanıtları aranır."
+      ],
+      "strategy": "Seçeneklerdeki sıcaklık, bileşim, yük varlığı ve akışkanlık iddialarını ayrı başlıklara ayır. Her birini plazma tanımının gerektirdiği tanecik özellikleriyle karşılaştır; bir gözlemin hangi ek kanıtı sağlamadığını saptayarak ilerle.",
+      "steps": [
+        "Plazma tanımında serbest elektronlar, iyonlar ve bunların toplu etkisi aranır. Bütün ortamın yaklaşık nötr olması tek tek yüklerin yokluğu demek değildir.",
+        "Lav sıcak kayaç eriyiğidir. Sıcaklık ve sıvı olma bilgisi, kendi başına bu serbest elektron–iyon ortamının sağlandığını göstermez.",
+        "Bu nedenle sıcak lav olmanın tek başına plazma kanıtı sayılmadığı yorum seçilir. Her sıcak sıvıyı plazma ilan etmek, yükleri yok saymak veya akışkanlığı yasaklamak tanımla uyuşmaz."
+      ],
+      "optionReasons": [
+        "Yanlış. Her sıcak sıvı için gerekli iyonlaşma ve kolektif elektron–iyon davranışı verilmiş değildir. Sıcaklık sıfatı bütün sıvıları plazma yapmaz.",
+        "Yanlış. Plazmada elektrik yüklü elektronlar ve iyonlar bulunur. Yaklaşık toplam nötrlük bu taşıyıcıların tek tek yüksüz olması demek değildir.",
+        "Doğru. Lavın sıcak kayaç eriyiği olması, serbest elektron–iyon plazması koşullarını tek başına kanıtlamaz; iyonlaşma ve toplu davranışa ilişkin bilgi gerekir.",
+        "Yanlış. Magma yalnız elektronlardan oluşmaz; kayaç bileşenleri içeren bir eriyik olabilir. ‘Her koşulda yalnız elektron’ iddiası ne magmayı ne plazmayı tanımlar.",
+        "Yanlış. Plazma akışkan davranış gösterebilir; plazma tanımında akışkanlık yasağı yoktur. Ayırt edici özellik iyonlaşmış yük taşıyıcılarının kolektif etkisidir."
+      ],
+      "commonError": "Yüksek sıcaklık veya akışkan görünümü tek başına plazma tanımı saymak; toplam nötrlüğü ortamda hiç yük taşıyıcısı bulunmamasıyla karıştırmak.",
+      "check": "Örneğe ait bilgileri iki sütuna ayır: sıcaklık/faz gözlemleri ve serbest elektron–iyon davranışı kanıtları. İlk sütundaki bir bilginin ikinci sütunu kendiliğinden doldurmadığını kontrol et."
+    }
+  },
+  {
+    "id": "f011-chem-maddenin-halleri-9",
+    "identity": "[\"f011-chem-maddenin-halleri-9\",\"1 atm’de saf su 100 °C’ye yeni ulaşmış ve henüz buharlaşma gizli ısısı verilmemiştir. Doğru yorum hangisidir?\",\"\",[\"100 °C görülen her su örneği mutlaka tamamen gazdır.\",\"Sıvı su 100 °C’de hiçbir basınçta bulunamaz.\",\"Isınma için alınan enerji otomatik bütününü buharlaştırır.\",\"100 °C sıvı kaynama başlangıcında olabilir; tamamı gaz sonucu zorunlu değildir.\",\"Suyun kimliği H₂ ve O₂ olmuştur.\"],3,\"Kaynama sıcaklığına ulaşmakla tüm kütlenin buharlaşması aynı enerji adımı değildir. Verilen 1 atm koşulunda su 100 °C sıvı olarak kaynamaya başlayabilir; buharlaşma için ek gizli ısı gerekir. Faz miktarını yalnız termometreden kesin belirleyemeyiz; su kimliği yine H₂O’dur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sabit basınçta ısıtma eğrisinin eğimli bölümünde sıcaklık, faz platosunda ise faz payı değişir. Bir faz eşiğine ulaşmak ile o platodaki dönüşüm bütçesini tamamlamak iki ayrı enerji aşamasıdır.",
+        "Bir faz geçişinde saf suyun moleküler kimliği H₂O olarak korunur. Faz payını değerlendirmek için sıcaklığın yanında aktarılmış enerji ve basınç bilgisi de kullanılır."
+      ],
+      "strategy": "Verilen son noktayı bir enerji eksenine yerleştir; sıcaklık artışıyla gelen yolu ve varsa sonraki faz dönüşümü bütçesini ayrı etiketle. Seçeneklerin sıcaklık, faz payı ve kimlik iddialarını bu üç bilgi üzerinden sınayabilirsin.",
+      "steps": [
+        "Kökteki 1 atm, saf su için 100 °C kaynama eşiğini belirler. Su bu sıcaklığa yeni ulaşmıştır; buharlaşma gizli ısısının henüz verilmediği de açıktır.",
+        "Bu yüzden tüm kütleyi gaza dönüştüren ek enerji adımı tamamlanmış sayılamaz. Örnek 100 °C sıvı olarak kaynama başlangıcında bulunabilir.",
+        "Zorunlu tümü gaz sonucunu reddeden kaynama başlangıcı yorumunu seç. Sıcaklığa ulaşma, tam buharlaşma ve H₂/O₂ oluşturma birbirinin yerine geçmez; burada H₂O kimliği korunur."
+      ],
+      "optionReasons": [
+        "Yanlış. 100 °C okumak tüm suyun gaz olduğunu belirlemez; verilen 1 atm’de sıvı kaynama başlangıcında da bu sıcaklıkta olabilir.",
+        "Yanlış. Kökte verilen 1 atm koşulu zaten 100 °C sıvının kaynamaya başlayabileceği bir durumdur. ‘Hiçbir basınçta bulunamaz’ iddiasını bu durum çürütür.",
+        "Yanlış. Sıcaklığı eşiğe çıkaran enerji ile bütün kütleyi buharlaştıran gizli ısı ayrı kalemlerdir; kök ikinci kalemin verilmediğini açıkça söyler.",
+        "Doğru. 1 atm’de 100 °C’ye yeni ulaşmış sıvı kaynama başlangıcında olabilir; ek buharlaşma bütçesi tamamlanmadan tümü gaz sonucu zorunlu değildir.",
+        "Yanlış. Kaynama suyu H₂ ve O₂’ye ayırmaz. Bu ürünler başka bir kimyasal dönüşümü ifade eder; verilen ısıtma yolunda H₂O korunur."
+      ],
+      "commonError": "Kaynama sıcaklığına ulaşmayı tam buharlaşmanın tamamlanması sanmak veya su buharını H₂ ve O₂ ürünleriyle karıştırmak.",
+      "check": "Enerji yolunun sonuna ‘100 °C’ye ulaşma’ mı, ‘buharlaşma platosunu tamamlama’ mı yazdığını kontrol et. Kök yalnız ilkine kadar gelir ve ikinci kalemin henüz verilmediğini söyler."
+    }
+  },
+  {
+    "id": "f011-chem-maddenin-halleri-10",
+    "identity": "[\"f011-chem-maddenin-halleri-10\",\"Kayıpsız sabit güçlü ısıtıcıyla bir faz platosunun süresi t=mL/P’dir. İki deneyin kütlesi ve net gücü farklıysa yalnız uzun plato hangi sonucu kesin verir?\",\"\",[\"Mutlaka daha büyük L vardır.\",\"Mutlaka daha küçük kütle vardır.\",\"Plato boyunca enerji sıfırdır.\",\"Basınç bilgisi hiçbir geçişte gerekmez.\",\"Tek başına daha büyük L değerini kesin vermez.\"],4,\"Plato süresi yalnız L’ye değil kütleye ve net güce de bağlıdır. Daha uzun süre daha çok kütleden veya daha küçük güçten kaynaklanabilir. L sıralaması için diğer koşulları eşitlemek ya da m/P etkisini hesaplamak gerekir. Plato sıcaklığının sabit kalması enerji aktarımının sıfır olduğu anlamına gelmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kayıpsız, net gücü sabit bir ısıtıcı t sürede Q=Pt enerji aktarır. Saf maddenin faz dönüşümünde Q=mL olduğundan bu iki ifade eşitlenerek t=mL/P elde edilir.",
+        "Bu bağıntıda kütle ve gizli ısı süreyle aynı yönde, net güç ters yönde etkilidir. Gizli ısı madde ve geçiş koşullarına bağlıdır; basınç da faz eşiği ve geçiş koşulları değerlendirilirken dikkate alınır."
+      ],
+      "strategy": "İki deney için t, m, L ve P sütunları kur. Süre karşılaştırmasını yorumlamadan önce diğer değişen çarpanların aynı süre farkını oluşturup oluşturamayacağını bir kontrol deneyiyle araştır.",
+      "steps": [
+        "t=mL/P bağıntısı süreyi üç etkene bağlar. Kök iki deneyin hem kütlesinin hem net gücünün farklı olduğunu verir; bu etkiler eşitlenmemiştir.",
+        "Örneğin aynı L için bir deneyde kütleyi iki katına, gücü yarısına almak süreyi dört katına çıkarır. Daha uzun plato, L değişmeden de oluşabilir.",
+        "Bu karşı örnek, yalnız uzun süreden daha büyük L’nin kesin çıkarılamayacağını gösterir. L kıyası için m/P etkisini ayırmak veya diğer koşulları eşitlemek gerekir."
+      ],
+      "optionReasons": [
+        "Yanlış. Aynı L korunurken m iki kat ve P yarı olursa t dört kat olur. Böylece uzun plato daha büyük L gerektirmeden de elde edilir.",
+        "Yanlış. Sabit L ve P altında daha büyük kütle süreyi uzatır; bu kökte P de değişmektedir. Uzun süreden zorunlu daha küçük kütle çıkmaz.",
+        "Yanlış. Pozitif net güçle pozitif süre boyunca Q=Pt enerji aktarılır. Plato sıcaklığının sabit olması bu enerjiyi sıfırlamaz.",
+        "Yanlış. Basınç faz geçişinin koşullarını etkileyebilir. Süre verisi, bütün geçişlerde basınç bilgisini gereksiz ilan etmek için bir gerekçe değildir.",
+        "Doğru. t=mL/P içinde m ve P de farklı olduğundan yalnız uzun süreden L sırası kesin belirlenemez; önce bu iki etki denetlenmelidir."
+      ],
+      "commonError": "Süre bağıntısındaki m/P çarpanını yok sayıp her uzun platoyu daha büyük gizli ısıya bağlamak; sabit sıcaklığı sıfır enerjiyle eş tutmak.",
+      "check": "L=Pt/m biçiminde yeniden düzenle. İki deneyde P ve m verilmeden veya eşitlenmeden yalnız t sırasının bu hesabı tamamlamaya yetip yetmediğini kontrol et."
+    }
+  }
+]

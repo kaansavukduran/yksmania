@@ -138,23 +138,24 @@ describe("029 gerçek katalog bütünleşmesi ve eski çözüm koruması", () =>
     expect(steps).toBe(600);
   });
 
-  it("2943 hazır ve 2940 kısmi çözümü sayar; eski ham soru bankası 5883 olarak kalır", () => {
+  it("029 kabulündeki 2943 çözümü ve o sürümdeki 2940 beşli kalan soruyu korur", () => {
     expect(all).toHaveLength(5883);
-    const full = all.filter((q) =>
-      resolvedGuidance(flat(localizedQuestionView(q))),
-    );
-    const partial = all.filter(
-      (q) => !resolvedGuidance(flat(localizedQuestionView(q))),
-    );
-    expect(full).toHaveLength(2943);
-    expect(partial).toHaveLength(2940);
-    for (const question of partial) {
-      expect(question.options, question.id).toHaveLength(5);
+    const acceptedIds = new Set([
+      ...previous.map((row) => row.id),
+      ...rows.map((row) => row.id),
+    ]);
+    const accepted = all.filter((q) => acceptedIds.has(q.id));
+    const remainingAt029 = all.filter((q) => !acceptedIds.has(q.id));
+    expect(accepted).toHaveLength(2943);
+    expect(remainingAt029).toHaveLength(2940);
+    for (const q of accepted)
       expect(
-        helpPanels(flat(question)).length,
-        question.id,
-      ).toBeLessThanOrEqual(1);
-    }
+        resolvedGuidance(flat(localizedQuestionView(q))),
+        q.id,
+      ).toBeDefined();
+    for (const q of remainingAt029) expect(q.options, q.id).toHaveLength(5);
+    //030 adds guidance to a disjoint subset. Its exact current census is gated
+    // independently, without invalidating the previously accepted029 cohort.
   });
 
   it("1200 değişmiş kimliği reddeder; tarihî inline çözümü ve eski full2 kaydını korur", () => {

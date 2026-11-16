@@ -1,0 +1,52 @@
+{
+  "before": {
+    "title": "Genom var, kapsid yok",
+    "prompt": "Uygun hücrede viral genom kopyalanıyor. Viral protein sentezi seçici olarak engelleniyor. Dışarıdan hazır kapsid verilmediği bu deneyde tam yeni virion üretimi beklenir mi?",
+    "strategy": "Tam parçacığı kuran iki bileşeni listele.",
+    "steps": [
+      {
+        "label": "Genom",
+        "explanation": "Genom kopyaları oluşur; bu sadece kalıtsal bileşeni sağlar.",
+        "expression": "Genom +"
+      },
+      {
+        "label": "Kapsid",
+        "explanation": "Protein üretimi engellendiğinden yeni kapsid bileşeni sağlanmaz.",
+        "expression": "Kapsid −"
+      },
+      {
+        "label": "Birleştirme",
+        "explanation": "Genomun kapsidle birleşmesi için iki bileşen de gerekir.",
+        "expression": "Tam virion −"
+      }
+    ],
+    "answer": "Beklenmez; genom artışı tam virion artışı değildir.",
+    "check": "Başlangıç parçacıklarının ortamda kalması yeni üretim diye sayılmaz.",
+    "pitfall": "Ölçülen genom sayısını bulaştırıcı parçacık sayısıyla özdeşleştirme."
+  },
+  "after": {
+    "title": "Genom var, kapsid yok",
+    "prompt": "Uygun hücrede viral genom kopyalanıyor. Başlangıçta kullanılabilir kapsid proteini veya hazır kapsid stoku bulunmuyor. Viral protein sentezi seçici olarak ve tamamen engelleniyor; dışarıdan da kapsid proteini veya hazır kapsid sağlanmıyor. Bu deneyde tam yeni virion üretimi beklenir mi?",
+    "strategy": "Tam parçacığı kuran iki bileşeni listele.",
+    "steps": [
+      {
+        "label": "Genom",
+        "explanation": "Genom kopyaları oluşur; bu sadece kalıtsal bileşeni sağlar.",
+        "expression": "Genom +"
+      },
+      {
+        "label": "Kapsid",
+        "explanation": "Başlangıçta kullanılabilir kapsid proteini veya hazır kapsid yoktur; yeni sentez ve dışarıdan sağlama da yoktur. Böylece yeni virion için kapsid bileşeni sağlanamaz.",
+        "expression": "Kapsid −"
+      },
+      {
+        "label": "Birleştirme",
+        "explanation": "Genomun kapsidle birleşmesi için iki bileşen de gerekir.",
+        "expression": "Tam virion −"
+      }
+    ],
+    "answer": "Beklenmez; genom artışı tam virion artışı değildir.",
+    "check": "Başlangıç parçacıklarının ortamda kalması yeni üretim diye sayılmaz.",
+    "pitfall": "Ölçülen genom sayısını bulaştırıcı parçacık sayısıyla özdeşleştirme."
+  }
+}

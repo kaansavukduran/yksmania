@@ -1,0 +1,1252 @@
+[
+  {
+    "id": "f011-viruses-1",
+    "identity": "[\"f011-viruses-1\",\"Protein kapsid ve RNA genomu taşıyan bir parçacığın sitoplazma ve ribozomu yoktur. Parçacık yalnız uygun canlı hücrede yeni parçacıklar oluşturuyor. Hangi yorum yapısal verilerle uyumludur?\",\"\",[\"Hücresel olmayan bir virüs örneği olabilir\",\"Kesinlikle tek hücreli bakteridir\",\"Kendi ribozomuyla protein sentezler\",\"Mutlaka lipit zarf taşır\",\"RNA taşıdığı için kalıtsal bilgi taşıyamaz\"],0,\"Kapsid, genom ve konak bağımlı üretim virüsle uyumludur. Ribozom ve sitoplazma yokluğu bakteriyel hücre düzenini desteklemez; bağımsız protein sentezi çıkarılamaz. Lipit zarf yalnız bazı virüslerde bulunur. RNA da kalıtsal bilgi taşıyabilir; DNA yokluğu kalıtsızlık değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hücresel örgütlenme, yalnız bir kalıtsal molekülden ibaret değildir: sitoplazma, zar ve protein üretim düzeni birlikte değerlendirilir. Ribozom, amino asitlerin kalıtsal bilgiye göre proteine bağlanmasında görev alır.",
+        "Kapsid protein yapılı bir kılıftır; lipit zarf başka bir yapısal katmandır. Kalıtsal bilgi nükleik asidin dizisinde bulunur; DNA ve RNA farklı biyolojik sistemlerde bu bilgiyi taşıyabilir."
+      ],
+      "strategy": "Hücre düzeni için gereken kanıtları, parçacığın dış katmanları ve kalıtsal molekülüyle ayrı başlıklarda karşılaştır; verinin desteklediği olasılık düzeyini koru.",
+      "steps": [
+        "Parçacıkta protein kapsid ve RNA saptanmıştır; bunlar kılıf ve genom kanıtıdır. Sitoplazma ile ribozomun bulunmadığı ayrıca belirtilmiştir; genom varlığını hücre varlığıyla eşitleme.",
+        "Bakteri bir hücredir ve ribozom taşır. Verilen yapısal eksiklikler ve yalnız uygun canlı hücrede üretim gözlemi, bakteriden çok hücresel olmayan bir virüs örneğiyle uyumludur.",
+        "Zarf hakkında veri verilmediği için zorunlu zarf ekleme. Ribozom yokken kendi ribozomuyla sentez ileri sürülemez; RNA da genom olabildiğinden kalıtsızlık sonucu çıkarılamaz. Bu sınırları koruyan A kalır."
+      ],
+      "optionReasons": [
+        "Doğru. Kapsid ve RNA genomuyla birlikte sitoplazma/ribozom yokluğu ve konak bağımlı üretim, hücresel olmayan bir virüs örneği olasılığına uyar.",
+        "Yanlış. Bakteri hücresel düzendedir; ribozom taşır. Sorudaki parçacığın ribozom ve sitoplazmadan yoksun olması kesin bakteri hükmünü desteklemez.",
+        "Yanlış. Kendi ribozomuyla protein sentezi iddiası, parçacıkta ribozom bulunmadığı öncülüyle doğrudan çelişir.",
+        "Yanlış. Protein kapsid saptanması lipit zarf saptanması değildir. Bazı virüslerin zarfsız olması da zorunlu zarf genellemesini geçersiz kılar.",
+        "Yanlış. RNA da dizisinde kalıtsal bilgi taşıyabilir. DNA yerine RNA genomu bulunması, genomun bilgi içermediği anlamına gelmez."
+      ],
+      "commonError": "Kalıtsal madde taşıyan her yapıyı hücre saymak veya protein kapsidi lipit zarfla aynı yapı sanmak.",
+      "check": "Üç ayrı soruyu yanıtla: genom var mı, ribozomlu hücre düzeni var mı, lipit zarf gösterilmiş mi? İlkine evet demen diğer ikisine otomatik evet üretmemeli."
+    }
+  },
+  {
+    "id": "f011-viruses-2",
+    "identity": "[\"f011-viruses-2\",\"V virüsü A ve B canlı hücrelerine bağlanabiliyor. Yalnız B’de yeni virionlar oluşuyor. İki hücre için başka moleküler veri verilmemiştir. Hangi çıkarım en sınırlıdır?\",\"\",[\"A’da uygun yüzey etkileşimi kesin yoktur\",\"Bağlanma tek başına başarılı üretim için yeterli değildir\",\"B’de virüs ikiye bölünerek çoğalmıştır\",\"A’da virüsün genomu kesin değişmiştir\",\"A ve B’nin bütün proteinleri aynıdır\"],1,\"Bağlanma her iki hücrede ölçülürken üretim yalnız B’de vardır; bu nedenle bağlanma yeterli koşul değildir. A’nın engeli giriş sonrası bir basamakta olabilir fakat kesin molekülü verilmemiştir. Virüs ikiye bölünen hücre değildir. Genom değişimi ve tüm protein eşitliği de bu deneyde ölçülmemiştir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hücre yüzeyine bağlanma, viral çoğalma yolundaki bir etkileşimdir. Genomun uygun yere ulaşması, bileşenlerin üretilmesi ve bir araya gelmesi ayrıca incelenen basamaklardır.",
+        "Gerekli koşul, bir sürecin önünü açabilir; yeterli koşul ise sürecin tamamlanmasını sağlamalıdır. Aynı başlangıç olayından sonra farklı sonuçlar görülmesi, aradaki süreçlere ilişkin yeni ölçüm gerektirir."
+      ],
+      "strategy": "A ve B için bağlanma ve yeni üretimi iki sütunda eşleştir; sonuçların ayrışmasını belirli bir ölçülmemiş moleküle bağlamadan yeterlilik iddialarını sına.",
+      "steps": [
+        "Bağlanma A ve B’de pozitiftir; yeni virion oluşumu yalnız B’de pozitiftir. Bu iki gözlemi tek bir “enfeksiyon var” etiketi altında birleştirme.",
+        "A, bağlanma gerçekleştiği hâlde yeni üretim görülmeyen karşı örnektir. Dolayısıyla bağlanma, başarılı üretimi tek başına sağlamamıştır; B’de yolun sonraki gereklilikleri de karşılanabilmiştir.",
+        "A’daki engelin girişte mi, sentezde mi, birleşmede mi olduğu ölçülmemiştir. Genom mutasyonu veya bütün proteinlerin eşitliği de verilmemiştir. Bu ek iddiaları istemeyen B en sınırlı sonuçtur."
+      ],
+      "optionReasons": [
+        "Yanlış. A’ya bağlanma doğrudan gözlenmiştir; uygun yüzey etkileşiminin kesinlikle bulunmadığını söylemek bu gözlemi reddeder.",
+        "Doğru. A’da bağlanma var, yeni üretim yoktur. Bu karşılaştırma bağlanmanın tek başına başarılı üretime yeterli olmadığını gösterir.",
+        "Yanlış. Yeni virionlar, bileşenlerin sentezlenip birleştirilmesiyle oluşur; B’deki artış ikiye bölünen hücreler gözlendiği anlamına gelmez.",
+        "Yanlış. A’da genom değişimi ölçülmemiştir. Üretim yokluğunu zorunlu mutasyonla açıklamak, gözlenmeyen belirli bir nedeni ekler.",
+        "Yanlış. Bağlanma sonucunun aynı olması A ve B’nin bütün proteinlerinin aynı olduğu anlamına gelmez; yüzey gözlemi bütün proteomu karşılaştırmaz."
+      ],
+      "commonError": "Bağlanmayı, genomun hücreye girişi ve üretimin tamamlanmasıyla aynı olay sayıp A’daki eksik basamağı tahminle doldurmak.",
+      "check": "A’da yalnız bağlanma ölçümünü yeniden düşün: bu ölçüm genomun içeri girdiğini gösteriyor mu? Hayır; bu yüzden giriş sonrasındaki belirli engeli kesin ilan etme."
+    }
+  },
+  {
+    "id": "f011-viruses-3",
+    "identity": "[\"f011-viruses-3\",\"Seçilmiş virüs deneyinde yeni genom kopyaları oluşuyor. Başlangıçta kullanılabilir kapsid proteini veya hazır kapsid stoku bulunmuyor. Viral kapsid proteinlerinin üretimi tamamen durduruluyor; dışarıdan da kapsid proteini veya hazır kapsid sağlanmıyor. Hangi sonuç beklenir?\",\"\",[\"Genom kopyası yok olur\",\"Virüs ribozom kurar\",\"Tam yeni virionların birleşmesi engellenir\",\"Kapsid lipide dönüşür\",\"Virüs bakteriye dönüşür\"],2,\"Yeni virionun birleşmesi için genom yanında uygun kapsid bileşenleri de gerekir. Protein üretiminin engellenmesi bu bileşeni eksiltir; genom artışı tam virion artışı değildir. Genomun zorunlu yok olması, ribozom kurulması, kapsidin lipide veya virüsün bakteriye dönüşmesi veriden çıkmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yeni bir virionun kurulması için genom ile uygun yapısal proteinlerin aynı üretim yolunda buluşması gerekir. Genom kopyalanması ve kılıfın kurulması farklı işlemlerdir; birinin ölçümü diğerinin ölçümü yerine geçmez.",
+        "Bir bileşenin kullanılabilirliği başlangıç stoku, yeni sentez ve dışarıdan sağlama yollarıyla değerlendirilir. Sentezi durdurmak, başlangıçta hazır bulunan bileşeni kendiliğinden yok etmez; deneyin stok koşulu bu nedenle önemlidir."
+      ],
+      "strategy": "Kapsid bileşeninin başlangıç, sentez ve dışarıdan sağlama yollarını ayrı ayrı denetleyen bir tedarik bilançosu kur; sonra genom ölçümünü tam parçacıkla karşılaştır.",
+      "steps": [
+        "Yeni genom kopyalarının oluştuğu verilmiştir; genom sağlanması bu deneyde sürmektedir. Genomların zorunlu yok oluşunu gerektiren bir işlem tanımlanmamıştır.",
+        "Başlangıçta kullanılabilir kapsid proteini/hazır kapsid stoku yoktur. Yeni kapsid proteini üretimi tamamen durmuş, dışarıdan protein veya kapsid sağlanması da dışlanmıştır; kapsid bileşeni bu üç yolun hiçbiriyle sağlanamaz.",
+        "Genom bulunsa da uygun kapsid bileşeni olmadan tam yeni virion birleşmesi tamamlanamaz; C bu sonucu anlatır. Ribozom kurma, lipide dönüşme veya bakteri olma bu eksik bileşenin yerini tutmaz."
+      ],
+      "optionReasons": [
+        "Yanlış. Kapsid tedarikinin kesilmesi genomun zorunlu yok oluşu değildir; yeni genom kopyalarının oluştuğu açıkça verilmiştir.",
+        "Yanlış. Deney ribozom oluşumuna ilişkin bir mekanizma vermez. Kapsid eksikliği virüsü kendi çeviri sistemini kuran hücreye dönüştürmez.",
+        "Doğru. Başlangıç stoku, yeni sentez ve dışarıdan sağlama birlikte dışlandığından genomu paketleyecek uygun kapsid bileşeni yoktur; tam yeni virion birleşmesi engellenir.",
+        "Yanlış. Kapsid proteindir; protein sentezinin durması protein kılıfı lipit tabakasına dönüştüren bir kimyasal süreç değildir.",
+        "Yanlış. Yapısal bileşen eksikliği yeni bir hücresel soy oluşturmaz; virüsün bakteriye dönüşmesi deneyde tanımlanmamıştır."
+      ],
+      "commonError": "Yalnız yeni protein sentezini kapatmanın her durumda hazır kapsid stokunu da yok ettiğini sanmak; stok koşulunu okumadan sonuca gitmek.",
+      "check": "Başlangıçta yeterli kullanılabilir kapsid stoku bulunsaydı aynı engel hemen zorunlu olur muydu? Olmazdı; buradaki kesin sonucun stok yokluğu dâhil üç tedarik yolunun kapalı olmasına dayandığını doğrula."
+    }
+  },
+  {
+    "id": "f011-viruses-4",
+    "identity": "[\"f011-viruses-4\",\"Eşit 50 virion üç kaba konuyor. Birinci kap canlı uygun hücre, ikinci öldürülmüş hücre, üçüncü hücresiz besiyeri içeriyor. Eşit süre sonunda sayılar sırasıyla 650, 50 ve 50. Hangi yorum desteklenir?\",\"\",[\"Besiyeri her virüsü yok etmiştir\",\"Bütün canlı hücreler bu virüse uygundur\",\"Öldürülmüş hücrede bağımsız protein sentezi başlamıştır\",\"Bu koşulda yeni üretim canlı uygun hücresel sisteme bağlıdır\",\"Virüsün kalıtsal materyali yoktur\"],3,\"Yalnız canlı uygun hücre kabında 600 parçacıklık artış vardır. Öldürülmüş hücre ve besiyeri bu koşulda yeterli olmamıştır. Sonuç bütün canlı hücrelerin uygun olduğunu göstermez. Hücresiz kapta sayı sıfırlanmadığından tüm virüslerin yok olması da çıkarılamaz; genom yokluğu ve bağımsız sentez için kanıt yoktur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kontrollü kap karşılaştırmasında başlangıç miktarı, süre ve ölçülen değişken aynı anlamda tutulmalıdır. Son sayıdan başlangıcı çıkarmak net değişimi verir; ölçülmeyen üretim ve kayıpları ayrı ayrı saymış olmaz.",
+        "Canlı uygun hücre, öldürülmüş hücre ve hücresiz besiyeri farklı biyolojik olanaklar sunar. Bir deneyde yalnız seçilmiş uygun hücreyle sonuç almak, olası bütün hücre türlerini sınamak değildir."
+      ],
+      "strategy": "Her kap için son−başlangıç farkını hesaplayıp değişen hücresel koşulla yan yana koy; yerel deney sonucuyla evrensel konak iddiasını birbirinden ayır.",
+      "steps": [
+        "Üç kapta başlangıç eşit 50 viriondur. Canlı uygun hücrede net değişim 650 − 50 = +600; diğer iki kapta 50 − 50 = 0’dır.",
+        "Net artış yalnız canlı uygun hücre bulunan kapla birliktedir. Öldürülmüş hücre ve hücresiz besiyeri, verilen süre ve koşullarda bu artışı sağlamamıştır.",
+        "Böylece bu koşulda yeni üretimin canlı uygun hücresel sisteme bağlı olduğu desteklenir. Diğer bütün hücrelerin uygunluğu, bağımsız protein sentezi veya genom yokluğu ölçülmediğinden D dışındaki genellemeler kurulamaz."
+      ],
+      "optionReasons": [
+        "Yanlış. Hücresiz kaptaki son sayı 50’dir; sıfır değildir. Bu ölçüm besiyerinin bütün virüsleri yok ettiğini göstermez.",
+        "Yanlış. Yalnız seçilmiş uygun canlı hücre denenmiştir. Bu hücrede artış olması, bütün canlı hücrelerin bu virüse uygun olduğunu kanıtlamaz.",
+        "Yanlış. Öldürülmüş hücre kabında net artış yoktur ve protein sentezi ölçülmemiştir; bağımsız sentezin başladığı iddiası dayanaksızdır.",
+        "Doğru. Eşit başlangıç ve sürede +600 net artış yalnız canlı uygun hücre kabındadır; sonuç, açıkça bu deney koşullarıyla sınırlı hücresel bağımlılığı destekler.",
+        "Yanlış. Parçacık sayısındaki kap farkı kalıtsal materyalin bulunmadığını göstermez. Virion genomu bu karşılaştırmada ortadan kaldırılmamıştır."
+      ],
+      "commonError": "650 son sayısını 650 yeni üretim saymak veya bir uygun hücre örneğini bütün canlı hücrelere yaymak.",
+      "check": "650 − 50 = 600 net artıştır. Aynı sürede parçacık kaybı da olsaydı toplam üretilen sayı bundan farklı olabilirdi; ölçümün net sayıyı verdiğini koru."
+    }
+  },
+  {
+    "id": "f011-viruses-5",
+    "identity": "[\"f011-viruses-5\",\"Bir antibakteriyel madde yalnız peptidoglikan sentez basamağını engelliyor. İncelenen virüste genom, protein kapsid ve lipit zarf var. Maddenin virüse doğrudan aynı hedef üzerinden etki etmemesinin gerekçesi hangisi?\",\"\",[\"Virüs çok büyük olduğu için\",\"Lipit zarf her maddeyi kesin dışladığı için\",\"RNA hiçbir molekülle etkileşmediği için\",\"Virüs hiçbir koşulda protein kullanmadığı için\",\"Virüste peptidoglikan hücre duvarı bulunmadığı için\"],4,\"Seçilmiş hedef peptidoglikan yapımıdır; viral kapsid veya lipit zarf bu bakteriyel duvar değildir. Boyut, bütün maddeleri dışlayan zarf ya da RNA’nın etkileşmemesi gerekçe olamaz. Virüs protein kullanır; kapsid zaten proteindir. Bu soru belirli hedefin yokluğunu anlatır, tüm maddelere etki yasası kurmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Seçici bir engelleyicinin doğrudan etkisi, hedef aldığı yapı veya basamağın biyolojik sistemde bulunmasına bağlıdır. Farklı yapısal maddeler aynı “dış örtü” adı altında birbirinin yerine kullanılamaz.",
+        "Peptidoglikan, protein ve lipit farklı moleküler yapılardır. Protein kapsid ile lipit zarfın görev ve bileşimini ayırmak, yalnız peptidoglikan sentezini hedefleyen bir mekanizmayı değerlendirmenin ön koşuludur."
+      ],
+      "strategy": "Maddenin adından genel etki tahmin etmek yerine tanımlanan tek hedefi moleküler olarak eşleştir; boyut, geçirgenlik ve genom türü iddialarını ayrıca sorgula.",
+      "steps": [
+        "Madde yalnız peptidoglikan sentezini engeller. Sorulan, her olası dolaylı etki değil, aynı hedef üzerinden doğrudan etkidir; bu sınırı koru.",
+        "İncelenen viral yapı listesi genom, protein kapsid ve lipit zarftır. Kapsid protein olduğu için, zarf da lipit olduğu için bunlar peptidoglikan hücre duvarı değildir.",
+        "Virüste bu hedef duvarın bulunmaması aynı mekanizmanın çalışmamasını açıklar; E seçilir. Zarfın her maddeyi dışlaması, RNA’nın hiç etkileşmemesi veya virüsün protein kullanmaması gerekmez ve doğru değildir."
+      ],
+      "optionReasons": [
+        "Yanlış. Virionun boyutu verilmemiştir; ayrıca seçici etkiyi belirleyen burada boyut değil peptidoglikan sentezi hedefidir.",
+        "Yanlış. Lipit zarf bütün maddeleri kesin engelleyen evrensel bir bariyer değildir. Hedefin yokluğunu açıklamak için böyle bir geçirgenlik varsayımına gerek yoktur.",
+        "Yanlış. RNA moleküllerle etkileşebilir; ayrıca soruda genomun RNA olduğu da söylenmemiştir. İki ayrı ölçülmemiş iddia eklenir.",
+        "Yanlış. Kapsidin protein olduğu verilmiştir; virüsün hiçbir koşulda protein kullanmadığı iddiası doğrudan bu yapısal bilgiyle çelişir.",
+        "Doğru. Virüste peptidoglikan hücre duvarı yoktur. Protein kapsid ve lipit zarf bu hedefin karşılığı olmadığından aynı sentez basamağı üzerinden doğrudan etki kurulamaz."
+      ],
+      "commonError": "Kapsid, lipit zarf ve bakteriyel hücre duvarını tek dış kılıf sayıp birinin hedefini diğerine taşımak.",
+      "check": "Hedef “viral protein sentezinin bir basamağı” olarak değiştirilse aynı gerekçeyi aynen kullanabilir miydin? Hayır; hedef değiştiğinde eşleştirmeyi yeniden yapmak gerekir."
+    }
+  },
+  {
+    "id": "f011-viruses-6",
+    "identity": "[\"f011-viruses-6\",\"Seçilmiş litik bakteriyofaj yolunda bağlanma, genomun hücreye ulaşması, viral bileşenlerin sentezi, birleşme ve çıkış gözleniyor. Hangi sıralama geçerlidir?\",\"\",[\"Bağlanma → genomun ulaşması → sentez → birleşme → çıkış\",\"Çıkış → birleşme → bağlanma → sentez → genomun ulaşması\",\"Birleşme → çıkış → bağlanma → genomun ulaşması → sentez\",\"Sentez → bağlanma → çıkış → genomun ulaşması → birleşme\",\"Bağlanma → çıkış → birleşme → sentez → genomun ulaşması\"],0,\"Tanımlanan modelde önce uygun hücreye bağlanma, ardından genomun ulaşması ve bileşen sentezi gerçekleşir; yeni parçacıklar birleşip çıkar. Diğer sıralamalar çıkışı üretimden veya birleşmeyi bileşen sentezinden önceye koyar. Bu temel litik model bütün virüslerin ayrıntılı giriş ve çıkış yollarının aynı olduğunu söylemez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir üretim yolunda bazı olaylar diğerlerinin malzemesini veya başlangıç koşulunu sağlar. Bu bağımlılıklar oklarla gösterildiğinde sıralama, isim ezberinden çok neden–sonuç denetimine dönüşür.",
+        "Litik bakteriyofaj modeli, uygun hücreyle etkileşim ve genomun hücreye ulaşmasından sonra viral bileşen üretimini inceler. Modelin basamakları, tüm virüslerin her giriş veya çıkış ayrıntısının aynı olduğu iddiası değildir."
+      ],
+      "strategy": "Beş olayı hazır liste gibi ezberlemek yerine “bu olay için ne önceden hazır olmalı?” sorusuyla öncelik okları kur; seçenekleri ilk bozulan oka göre ele.",
+      "steps": [
+        "Tanımlanan litik yolda bağlanma, genomun hücreye ulaşmasına önce gelir. Genomun ulaşması da hücrede viral bileşen sentezinden önce yer alır: bağlanma → genom → sentez.",
+        "Birleşme için üretilmiş bileşenler gerekir; yeni tamamlanmış parçacıkların çıkışı ise birleşmeden sonra olur. Böylece kalan oklar sentez → birleşme → çıkıştır.",
+        "Dört öncelik okunu birlikte koruyan A’dır. B ve C çıkış/birleşmeyi yeni bileşenlerden önce, D sentezi bağlanmadan önce, E ise çıkışı sentez ve birleşmeden önce koyar."
+      ],
+      "optionReasons": [
+        "Doğru. Bağlanma ve genomun ulaşmasını bileşen sentezi, birleşme ve çıkış izler; tanımlanan yolun bütün öncelik ilişkileri korunur.",
+        "Yanlış. Çıkış ve birleşme başlangıca alınmıştır. Henüz genom ulaşmadan ve bileşenler sentezlenmeden yeni parçacık çıkışı kurulamaz.",
+        "Yanlış. Birleşme ilk sıradadır; yeni parçacığı kuracak sentezlenmiş bileşenler henüz yoktur. Çıkışın da bağlanmadan önce olması aynı bağımlılığı bozar.",
+        "Yanlış. Sentez, bağlanma ve genomun ulaşmasından önceye yerleştirilmiştir. Ayrıca çıkış da birleşmeden önce gelir; iki öncelik ilişkisi bozulur.",
+        "Yanlış. Bağlanmadan hemen sonra çıkış yazılmıştır. Genomun ulaşması, bileşen sentezi ve birleşme henüz gerçekleşmeden yeni virion çıkışı öne çekilmiştir."
+      ],
+      "commonError": "Seçenekte tanıdık beş sözcük bulunmasını yeterli sayıp sentezden önce birleşme veya birleşmeden önce çıkış yerleştirmek.",
+      "check": "Seçtiğin sırada birleşmenin solunda sentez, çıkışın solunda birleşme bulunuyor mu? İkisi de sağlanmadan sırayı doğru kabul etme."
+    }
+  },
+  {
+    "id": "f011-viruses-7",
+    "identity": "[\"f011-viruses-7\",\"Bir virionda genomun kopyalanmasında görevli bir polimeraz enzimi saptanıyor. Kendi ribozomu ve bağımsız ATP üretim sistemi yok. Hangi ifade doğrudur?\",\"\",[\"Enzim taşıdığı için kesin bakteridir\",\"Enzim taşıması bağımsız hücresel metabolizma kurduğu anlamına gelmez\",\"Kendi proteinlerini mutlaka bağımsız sentezler\",\"Bütün virüsler aynı polimerazı taşır\",\"Kalıtsal bilgi taşıması mümkün değildir\"],1,\"Bazı virionlar enzim taşıyabilir; bu, ribozom ve bağımsız enerji metabolizması sağlamaz. Enzim saptanması bakteriye dönüşme veya bütün virüslerde aynı enzimin varlığı kanıtı değildir. Verilen parçacık genom taşır; kalıtsızlık sonucu yanlıştır. Protein sentezi için konak hücrenin sistemi önemini korur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Enzim, belirli bir kimyasal tepkimeyi katalizleyen moleküldür. Bir enzimin parçacıkta bulunması, o enzimin nerede üretildiğini veya bütün proteinlerin hangi düzenekle yapıldığını tek başına göstermez.",
+        "Protein üretimi ribozomal çeviri düzeni; sürekli biyolojik işleyiş ise enerji ve başka hücresel bileşenler gerektirir. Bir işlevde görevli tek bileşen ile bu bileşenleri üreten bütün sistem farklı ölçeklerdir."
+      ],
+      "strategy": "Polimerazın yaptığı dar işi, protein üretimi ve ATP sağlama gerekliliklerinden ayıran bir işlev tablosu kur; var olan tek parçadan bütün sistemi türetme.",
+      "steps": [
+        "Virionda genom kopyalanmasında görevli polimeraz saptanmıştır; bu, belirli bir enzimin varlığına kanıttır. Genomun ve enzimin aynı parçacıkta bulunması hücre örgütlenmesi göstermez.",
+        "Kendi ribozomu ve bağımsız ATP üretim sistemi yoktur. Polimerazın bulunması bu eksik düzenekleri sağlamaz; bağımsız protein üretimi veya metabolizma sonucu çıkarılamaz.",
+        "Bu iki ölçeği ayıran B doğrudur. Tek parçacıkta enzim görülmesi bakteriye dönüşmeyi veya bütün virüslerde aynı enzimin varlığını kanıtlamaz; genom bulunduğundan kalıtsal bilgi yokluğu da söylenemez."
+      ],
+      "optionReasons": [
+        "Yanlış. Enzim yalnız bakterilere özgü değildir. Polimeraz taşıyan parçacığın hücresel bakteri olduğunu gösterecek ribozomlu hücre düzeni verilmemiştir.",
+        "Doğru. Bir polimerazın varlığı belirli bir kataliz işlevini gösterir; ribozom ve bağımsız ATP sistemi bulunmadığından bütün hücresel metabolizmanın kurulduğu anlamına gelmez.",
+        "Yanlış. Kendi ribozomu yoktur. Taşınan polimeraz, amino asitleri proteine bağlayan ribozomal düzenin yerine geçmez.",
+        "Yanlış. Tek virionun polimerazı ölçülmüştür; bu gözlem farklı genom ve çoğalma yolları taşıyan bütün virüsleri aynı enzime sahip yapmaz.",
+        "Yanlış. Soruda genom bulunduğu açıkça söylenir. Polimeraz saptanması genomun kalıtsal bilgi taşımasını engellemez."
+      ],
+      "commonError": "Bir katalizör bulunca onu üreten ribozom, enerji üretimi ve bağımsız hücre düzeninin de bulunduğunu sanmak.",
+      "check": "“Enzim var” satırını silmeden “kendi ribozomu yok” satırını okuyabiliyor musun? Bu iki bilgi birlikte doğru olabilir; birini ötekinin yerine kullanma."
+    }
+  },
+  {
+    "id": "f011-viruses-8",
+    "identity": "[\"f011-viruses-8\",\"Bir virüs popülasyonunda çoğalma sırasında bazı kalıtsal değişiklikler oluşuyor; belirli çevrede bunların bir bölümü daha fazla yayılıyor. Hangisi bu veriyi aşar?\",\"\",[\"Popülasyonda genetik çeşitlilik bulunabilir\",\"Çevresel koşullar varyantların yayılımını etkileyebilir\",\"Her mutasyon virüsü mutlaka yeni bir konak türüne geçirir\",\"Virüsün kalıtsal materyali değişebilir\",\"Yeni varyantlar aynı başarıyla yayılmak zorunda değildir\"],2,\"Her mutasyonun yeni konak türü sağladığı genellemesi geçersizdir; etkiler nötr, zararlı veya koşula göre yararlı olabilir. Diğer seçenekler gözlenen kalıtsal çeşitlilik ve farklı yayılım ile uyumludur. Bu deney bir mutasyon hızı veya bütün viral gruplar için değişmez konak sonucu vermemektedir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Mutasyon kalıtsal materyaldeki bir değişimdir; değişimin oluşması ile belirli ortamda yayılması farklı süreçlerdir. Bir varyantın başarısı çevreyle ilişkili olarak değişebilir.",
+        "Bir önermede “bazı” ile “her” farklı kanıt yükleri taşır. Sınırlı sayıda değişim ve belirli koşulda yayılma gözlemi, tüm değişimlerin aynı biyolojik sonucu verdiği bir kurala dönüştürülemez."
+      ],
+      "strategy": "Gözlenen kalıtsal değişim ve farklı yayılımı iki kanıt sınırı olarak kullan; her seçenekte niceleyiciyi ve eklenen yeni biyolojik sonucu işaretle.",
+      "steps": [
+        "Çoğalma sırasında bazı kalıtsal değişiklikler oluşmuştur; popülasyonda farklı kalıtsal varyantlar bulunması bu gözlemle uyumludur.",
+        "Belirli çevrede varyantların yalnız bir bölümü daha fazla yayılır. Bu, başarıların aynı olmak zorunda olmadığını ve çevrenin yayılımla ilişkisini destekler; konak türü değişimi ölçülmemiştir.",
+        "C, “her mutasyon” ve “mutlaka yeni konak” diyerek hem tüm değişimlere hem ölçülmeyen bir sonuca sıçrar. Nötr veya aynı konaktaki başarıyı etkileyen değişimler mümkün olduğundan bu genelleme veriyi aşar."
+      ],
+      "optionReasons": [
+        "Yanlış. Soru kalıtsal değişimler ve farklı varyantlar tanımlar; popülasyonda genetik çeşitlilik bulunabileceği bu veriyle uyumludur, aşan önerme değildir.",
+        "Yanlış. Yayılım farkı belirli çevre koşulunda gözlenir; çevrenin varyant başarısıyla ilişkili olabileceği, verilen sınırı korur.",
+        "Doğru. Her değişimin konak türünü zorunlu değiştirdiği gösterilmemiştir. Bazı mutasyonlar nötr, zararlı veya aynı konakta koşula bağlı yararlı olabilir; yeni konak evrensel sonuç değildir.",
+        "Yanlış. Çoğalmada kalıtsal değişim gözlenmesi viral kalıtsal materyalin değişebileceğiyle uyumludur; bu, verinin dışına çıkmaz.",
+        "Yanlış. Varyantların bir bölümünün daha fazla yayılması zaten eşit başarı zorunluluğunu reddeder; farklı başarı olasılığı gözleme uygundur."
+      ],
+      "commonError": "Mutasyonu gereksinime göre oluşan ve her seferinde yeni konağa geçiş sağlayan yönlendirilmiş bir çözüm sanmak.",
+      "check": "Aynı konakta hiçbir ölçülebilir etki yapmayan bir değişim düşün. Bu olasılık kökte yasaklanmadığı hâlde seçeneğin “her” hükmünü bozuyorsa hüküm fazla geniştir."
+    }
+  },
+  {
+    "id": "f011-viruses-9",
+    "identity": "[\"f011-viruses-9\",\"X virüsünde lipit zarf var; Y virüsünde lipit zarf yok. Her ikisinde protein kapsid ve genom saptanıyor. Hangi sonuç geçerlidir?\",\"\",[\"Y kesin hücredir\",\"X’te kapsid bulunamaz\",\"Y’nin genom taşıması imkânsızdır\",\"Lipit zarf bütün virüsler için zorunlu yapı değildir\",\"Her ikisinde ribozom bulunması zorunludur\"],3,\"Y örneği genom ve kapsidli fakat zarfsızdır; bu, zarfın bütün virüslere zorunlu olmadığını doğrudan gösterir. Zarf kapsidi ortadan kaldırmaz. Virüsün ribozomu bulunmaz ve zarfsızlık hücresellik anlamına gelmez. Genomun varlığı da zarf koşuluna bağlanamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Protein kapsid ve lipit zarf, hem moleküler bileşimleri hem de konumları bakımından farklı yapılardır. İki katmanın aynı örnekte bulunması, bunlardan birinin diğerini yok ettiği anlamına gelmez.",
+        "Bir özelliğin evrensel sayılabilmesi için o gruptaki geçerli örneklerde zorunlu bulunması gerekir. Karşılaştırmada ortak yapılar ile değişken yapılar ayrı sütunlara yazılarak bu iddia sınanabilir."
+      ],
+      "strategy": "X ve Y’nin kapsid, genom ve zarf durumlarını üç sütunlu karşılaştır; bir yapının yokluğunu hücre olma veya genom kaybı gibi başka özelliklere taşımadan ortaklık iddiasını değerlendir.",
+      "steps": [
+        "X ve Y’de kapsid ile genom pozitiftir. Zarf yalnız X’te pozitiftir; Y’nin zarfı yoktur ama onun viral örnek olduğu verilmiştir.",
+        "Y, “her virüste lipit zarf bulunur” iddiasını karşılamayan geçerli örnektir. Bu yüzden zarf bütün virüsler için zorunlu değildir; D bu karşılaştırmayı doğru ifade eder.",
+        "Zarf yokluğu Y’yi hücre yapmaz veya genomunu geçersiz kılmaz. X’te kapsid zaten saptanmıştır; iki örnekte de ribozom bulunması ise verilmemiş ve viral yapı için zorunlu değildir."
+      ],
+      "optionReasons": [
+        "Yanlış. Y’nin zarfsız olması hücresel örgütlenme kanıtı değildir; Y, kapsid ve genom taşıyan bir virüs olarak tanımlanmıştır.",
+        "Yanlış. X’te protein kapsid doğrudan saptanmıştır. Lipit zarf, kapsidin ayrıca bulunmasını engellemez.",
+        "Yanlış. Y’de genomun saptandığı verilmiştir; zarf yokluğu bu ölçümü ortadan kaldırmaz.",
+        "Doğru. Y geçerli bir zarfsız virüs örneğidir. Tek bir böyle örnek bile zarfın bütün virüslere zorunlu olduğu hükmünü çürütür.",
+        "Yanlış. Kapsid ve genom bulunması kendi ribozomunu gerektirmez; virüsler protein üretiminde konak çeviri düzeninden yararlanır."
+      ],
+      "commonError": "Lipit zarf yoksa kapsid veya genom da yoktur sanmak; birbirinden farklı üç yapıyı tek bir var/yok özelliğine indirmek.",
+      "check": "Tablonda Y için kapsid +, genom +, zarf − birlikte durabiliyor mu? Bir eksi işaretini diğer iki sütuna taşıdıysan gözlenen yapıları silmişsindir."
+    }
+  },
+  {
+    "id": "f011-viruses-10",
+    "identity": "[\"f011-viruses-10\",\"K deneyinde viral genom sayısı, L deneyinde hücre dışına çıkmış tam virion sayısı ölçülüyor. K artarken L sabit kalıyor; başka ölçüm yok. Hangi yorum verinin sınırına uygundur?\",\"\",[\"Tam yeni virion artışı kesin ölçülmüştür\",\"İki ölçüm zorunlu aynı değişkendir\",\"Her genom kopyası otomatik yeni viriondur\",\"Virüsün enerji üretimi bağımsızlaşmıştır\",\"Genom kopyalanması artmış olabilir; birleşme veya çıkış ayrıca incelenmelidir\"],4,\"Genom sayımı tam ve dışarı çıkmış parçacık sayımıyla aynı değildir. Kopyalar artarken kapsid üretimi, birleşme veya çıkış sınırlı olabilir; hangisinin engellendiği ayrıca ölçülmelidir. Diğer seçenekler ölçülmeyen üretimi, iki değişkenin eşitliğini veya bağımsız metabolizmayı kanıtsız kabul eder.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ölçümün hedefi çıkarımın kapsamını belirler: genom kopyası, hücre içindeki birleşmiş parçacık ve hücre dışındaki tam virion aynı birim değildir. Birimlerin değişmesi, üretim yolundaki farklı basamakları izlemiş olabilir.",
+        "Bir havuzun sayısı, ona girenlerle ondan çıkanların net sonucudur. Sabit dış parçacık sayısı tek başına içeride hiçbir işlem olmadığını veya belirli tek bir basamağın durduğunu göstermez."
+      ],
+      "strategy": "K ve L’yi ölçtükleri havuz ve üretim basamağıyla etiketle; iki farklı ölçümü eşitlemeden hangi ek basamağın ayrıca gözlenmesi gerektiğini belirle.",
+      "steps": [
+        "K’da genom kopyaları artmıştır; bu, genom çoğalmasıyla uyumludur. K, doğrudan tam ve hücre dışına çıkmış virionları sayan bir ölçüm değildir.",
+        "L hücre dışındaki tam virionları izler ve sabit kalmıştır. Bu sabitlik, K’daki artışın dışarıdaki tam parçacık artışına otomatik çevrilmediğini gösterir; birleşme ve çıkış ayrı incelenmelidir.",
+        "E, replikasyon artışı olasılığını korurken tam parçacık ve çıkış için ek ölçüm ister. Tek bir zorunlu engel adı, bağımsız enerji üretimi veya genomla virionun bire bir özdeşliği bu verilerle kurulamaz."
+      ],
+      "optionReasons": [
+        "Yanlış. Genom kopyası artışı, her kopyanın tam ve hücre dışına çıkmış viriona dönüştüğünü göstermez; kapsid birleşmesi ve çıkış arada ayrıca incelenir.",
+        "Yanlış. K genom kopyalarını, L hücre dışındaki tam virionları ölçer; iki havuz ve iki birim farklıdır. Zorunlu aynı değişken oldukları iddiası ölçüm tanımlarını siler.",
+        "Yanlış. Bir genom kopyasının kapsid bileşenleriyle birleşmesi ve oluşan parçacığın çıkması ayrıca gerekir; kopya oluşumu bu basamakları otomatik tamamlamaz.",
+        "Yanlış. İki ölçüm bağımsız ATP üretimini sınamamıştır. Genom artışından virüsün kendi enerji metabolizmasını kurduğu sonucu çıkmaz.",
+        "Doğru. K’nın artışı replikasyonla uyumludur; L’nin sabitliği tam parçacık oluşumu ve çıkışın ayrıca incelenmesini gerektirir. Ölçülen iki birim karıştırılmaz."
+      ],
+      "commonError": "Genom kopyalarını doğrudan hücre dışındaki tam virion sayısına çevirmek veya sabit dış sayıyı tüm hücre içi etkinliğin yokluğu saymak.",
+      "check": "K’nın birimini “genom kopyası”, L’ninkini “hücre dışı tam virion” diye yaz. Birimler farklıyken araya hangi ölçülmemiş basamakları koyduğunu açıklayabiliyor olmalısın."
+    }
+  },
+  {
+    "id": "f011-prokaryotes-1",
+    "identity": "[\"f011-prokaryotes-1\",\"Bir hücrede DNA, ribozom, sitoplazma ve hücre zarı bulunuyor; zarla çevrili çekirdek yok. Başka veri verilmemiş. En sınırlı sonuç nedir?\",\"\",[\"Prokaryot düzenle uyumludur; bakteri–arke ayrımı için ek kanıt gerekir\",\"Kesin arke değildir\",\"Kesin mantardır\",\"Protein sentezleyemez\",\"DNA taşımadığı kanıtlanmıştır\"],0,\"Verilen ortak yapılar prokaryot hücre düzeniyle uyumludur. Bakteri ve arke ayrımı için duvar, zar veya moleküler veriler gerekir. Mantar ökaryottur; ribozom protein sentezini mümkün kılar ve DNA zaten gözlenmiştir. Çekirdek yokluğu kalıtsal materyal yokluğu değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Çekirdek, kalıtsal materyalin zarla çevrili bir bölmede düzenlenmesidir; DNA ile çekirdek aynı kavram değildir. Hücrelerde genetik bilginin bulunması, mutlaka çekirdek zarı bulunmasını gerektirmez.",
+        "Bakteri ve arke hücreleri temel bazı yapıları paylaşır. İki grubu ayırmak için duvar bileşimi, zar lipitleri veya moleküler özellikler gibi ek kanıtlar kullanılabilir; ortak bir özellik tek başına alt grubu seçmez."
+      ],
+      "strategy": "Yapı listesini önce hücresel düzen açısından oku; ardından bu kanıtın bakteri ve arkeyi birbirinden ayırıp ayırmadığını ayrı bir sınıflama sorusu olarak sına.",
+      "steps": [
+        "DNA, ribozom, sitoplazma ve hücre zarı pozitif; zarla çevrili çekirdek negatiftir. Çekirdek yokluğunu DNA veya protein sentezi yokluğu diye çevirmeden bu listeyi koru.",
+        "Verilen birliktelik prokaryot hücre düzeniyle uyumludur. Hem bakteri hem arke bu temel düzeni taşıyabildiğinden yalnız bu yapılar ikisi arasında ayırıcı değildir.",
+        "Bu nedenle A’nın sınırlı yorumu seçilir. Kesin arke dışlaması ve mantar tanısı için kanıt yoktur; ribozom protein senteziyle, DNA da kalıtsal bilgiyle ilgili verilen pozitif yapıdır."
+      ],
+      "optionReasons": [
+        "Doğru. Zarla çevrili çekirdek yokken DNA, ribozom, sitoplazma ve zarın birlikte bulunması prokaryot düzenle uyumludur; bakteri–arke ayrımı için ek kanıt gereğini korur.",
+        "Yanlış. Arkeler de çekirdeksiz hücresel düzen taşıyabilir. Verilen temel yapılar arke olasılığını kesin dışlayan bir özellik değildir.",
+        "Yanlış. Mantarlar ökaryottur; çekirdeksiz temel liste kesin mantar tanısı vermez. Mantar lehine kitin ve beslenme gibi ek kanıtlar da yoktur.",
+        "Yanlış. Ribozom saptanmıştır; bu yapı protein senteziyle ilişkilidir. Çekirdek zarı yokluğu çeviriyi olanaksız kılmaz.",
+        "Yanlış. DNA’nın bulunduğu doğrudan söylenir. Çekirdek zarı yokluğunu DNA yokluğu diye okumak iki ayrı yapıyı karıştırır."
+      ],
+      "commonError": "Çekirdeği olmayan hücrede DNA ve protein sentezi de olamayacağını sanmak veya ortak prokaryot yapıyı kesin bakteri adıyla eşitlemek.",
+      "check": "Bakteri ve arke için aynı temel yapı listesini kurabiliyorsan bu liste ayırıcı değildir. Seçtiğin yanıtın ölçülmeyen duvar ya da zar bileşimi eklemediğini denetle."
+    }
+  },
+  {
+    "id": "f011-prokaryotes-2",
+    "identity": "[\"f011-prokaryotes-2\",\"X prokaryotunun duvarında peptidoglikan var. Y’de peptidoglikan saptanmıyor; Y için başka yapı bilgisi yok. Hangi sonuç güvenilirdir?\",\"\",[\"Y kesin arke olduğu için ek veri gereksizdir\",\"X bakteriyi destekler; Y’nin arke olduğu tek başına kesinleşmez\",\"X kesin ökaryottur\",\"Y’de DNA bulunamaz\",\"İki örnek mutlaka aynı türdür\"],1,\"Peptidoglikan X’i bakterilerle eşleştirir. Y’de yokluğu arkeye uyabilir fakat duvarsız bakteri olasılığını tek başına elemez; ek moleküler kanıt gerekir. DNA yokluğu, ökaryotluk ve aynı tür sonucu bu ölçümden çıkmaz. Pozitif ayırıcı veriyle yetersiz olumsuz veriyi ayırmak gerekir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Peptidoglikan, birçok bakterinin hücre duvarındaki ayırt edici bileşendir; arke duvarında bulunmaz. Ancak bütün bakterilerin aynı duvarı taşıması gerekmez; duvarsız bakteriler de vardır.",
+        "Bir belirtecin saptanması ile saptanmamasının kanıt gücü farklı olabilir. Yokluk sonucunu yorumlarken belirteç taşımayan başka adayların bulunup bulunmadığı ve hücre tipi için hangi ek verilerin verildiği incelenir."
+      ],
+      "strategy": "Pozitif peptidoglikan bulgusunu ve negatif bulguyu ayrı kanıtlar olarak değerlendir; özellikle Y için aynı negatif sonucu verebilecek alternatifleri açık bırak.",
+      "steps": [
+        "X’in prokaryot olduğu ve duvarında peptidoglikan bulunduğu verilmiştir. Bu birliktelik bakteri grubunu destekler; ökaryot sonucu üretmez.",
+        "Y’de yalnız peptidoglikanın saptanmadığı söylenmiştir; başka hücresel yapı bilgisi yoktur. Arkelerde bu madde bulunmaz ama duvarsız bakteriler de peptidoglikan taşımaz; negatif sonuç tek başına arkeyi seçmez.",
+        "B hem X için pozitif kanıtı hem Y için belirsizliği korur. Y’nin DNA’sı, iki örneğin tür eşitliği veya Y’nin kesin hücre tipi için yeni ölçüm gerekir; bunları yokluk bulgusuna ekleme."
+      ],
+      "optionReasons": [
+        "Yanlış. Peptidoglikan yokluğu arke dışında duvarsız bakteri gibi alternatiflerle de uyumludur; Y için ek yapı bilgisi olmadığından kesin arke hükmü verilemez.",
+        "Doğru. X’in prokaryot ve peptidoglikanlı oluşu bakteriyi destekler. Y’nin tek negatif bulgusu ise başka olasılıkları elemediğinden arke tanısını kesinleştirmez.",
+        "Yanlış. X açıkça prokaryot olarak verilmiştir; peptidoglikanlı duvar bunu kesin ökaryota dönüştürmez.",
+        "Yanlış. Peptidoglikan bir duvar bileşenidir, DNA ise kalıtsal moleküldür. İlkinin saptanmaması ikincisinin bulunamayacağı anlamına gelmez.",
+        "Yanlış. Bir duvar bileşeninin farklı bulunması tür eşitliğini kanıtlamaz. İki örneğin mutlaka aynı tür olduğu sonucunu verecek tür belirleyici karşılaştırma yoktur."
+      ],
+      "commonError": "“Arkelerde peptidoglikan yoktur” önermesinin tersini de doğru sanıp her peptidoglikansız örneği kesin arke ilan etmek.",
+      "check": "Duvarsız bir bakteri Y’nin negatif testini sağlayabilir mi? Evetse kesin arke sonucu ek veri olmadan kurulamaz; X’in pozitif bulgusu bundan bağımsız değerlendirilir."
+    }
+  },
+  {
+    "id": "f011-prokaryotes-3",
+    "identity": "[\"f011-prokaryotes-3\",\"İncelenen 4 bakterinin her biri bir kez ikiye bölünüyor. Ölüm ve başka olay yok. Son birey sayısı kaçtır?\",\"\",[\"2\",\"4\",\"8\",\"12\",\"16\"],2,\"Bir kuşakta 4 başlangıç hücresi 4×2=8 hücre oluşturur. Dörtte kalmak sayı artışını yok sayar; 16 iki kuşak bölünmeye, 12 ise verilen tek bölünmeyle uyuşmayan bir artışa karşılık gelir. Soru yalnız bir kuşağı tanımlar; genel süre veya sınırsız kültür büyümesi varsayılmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "İkiye bölünmede bir ana hücreden iki yavru hücre oluşur; ana hücre, yavruların yanında üçüncü bağımsız hücre olarak kalmaz. Birey sayımı bölünme sonundaki etkin hücreleri izler.",
+        "Bir bölünme turu ile iki tur farklıdır. Ölüm, bölünmeyen hücre veya ek çoğalma olayı yoksa her başlangıç hücresinin sonuca katkısı aynı çoğaltma katsayısıyla hesaplanabilir."
+      ],
+      "strategy": "Dört başlangıç hücresini ayrı soylar gibi izle ve her birinin yalnız bir bölünme hakkını kullan; sonunda ana hücreyi yeniden eklemeden yavruları topla.",
+      "steps": [
+        "Başlangıçta dört bakteri vardır ve her biri yalnız bir kez bölünür. Her başlangıç hücresi bu turun sonunda iki yavruyla temsil edilir.",
+        "Dört soyun katkısı 2 + 2 + 2 + 2 = 4 × 2 = 8 hücredir. Ölüm veya başka olay olmadığı için ek çıkarma ya da ikinci çarpma yapılmaz.",
+        "8’i veren C seçilir. 12, dört anayı sekiz yavrunun yanına tekrar ekler; 16 ikinci bölünme turunu ekler. 4 bölünmeyi yok sayar, 2 ise bölünmeyle toplamı yarılar."
+      ],
+      "optionReasons": [
+        "Yanlış. 2 sonucu 4’ü ikiye böler. İkiye bölünme toplam hücreleri yarıya indirmez; her ana hücre iki yavru verir.",
+        "Yanlış. 4 başlangıç sayısını aynen bırakır; dört hücrenin de bir kez bölündüğü olayı hesaba katmaz.",
+        "Doğru. Dört başlangıç hücresinin her biri iki yavru verir: 4 × 2 = 8. Ek bölünme ve ölüm bulunmadığından son sayı budur.",
+        "Yanlış. 12, 4 ana hücreyi 8 yavruya ekleme hatasıdır. Ana hücreler bölünme sonunda ayrıca sayılacak dört birey olarak kalmaz.",
+        "Yanlış. 16, 4 × 2 × 2 hesabıyla iki tur bölünme gerektirir; soruda her hücre için yalnız bir tur verilmiştir."
+      ],
+      "commonError": "Ana hücreleri yavruların yanında hâlâ bağımsız birey saymak veya “bir kez” koşuluna ikinci bölünmeyi eklemek.",
+      "check": "Bir başlangıç hücresinin son katkısını çiz: 1 → 2. Dört böyle çizimin toplamı seçtiğin sayı olmalı; 4 ana hücreyi çizimin dışında tekrar sayma."
+    }
+  },
+  {
+    "id": "f011-prokaryotes-4",
+    "identity": "[\"f011-prokaryotes-4\",\"İki bakteriden verici olanı alıcıya plazmit DNA aktarıyor. Bu sırada hücre bölünmesi ve ölüm yok. Hangi sonuç beklenir?\",\"\",[\"Hücre sayısı dört olur\",\"Alıcı kesin mitokondri kazanır\",\"Verici kesin çekirdek oluşturur\",\"Hücre sayısı iki kalabilir; alıcının kalıtsal içeriği değişebilir\",\"Plazmit DNA olamayacağı için deney imkânsızdır\"],3,\"Konjugasyonla DNA aktarımı alıcının kalıtsal içeriğini değiştirebilir; bölünme olmadığından birey sayısının artması gerekmez. Plazmit DNA içerebilir fakat çekirdek veya mitokondri oluşturmaz. Dört hücre sonucu gen aktarımını yeni birey oluşumuyla karıştırır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Plazmit, ana kromozomdan ayrı bulunabilen DNA molekülüdür ve aktarılabilir kalıtsal özellikler taşıyabilir. Bir hücrenin yeni DNA alması, çekirdek veya mitokondri gibi bir organel aldığı anlamına gelmez.",
+        "Birey sayısı ile hücrelerin kalıtsal içeriği farklı değişkenlerdir. DNA alışverişi, bölünme ve ölüm olayları ayrı izlenirse sayıdaki değişim ile genetik değişim birbirine karıştırılmaz."
+      ],
+      "strategy": "İki hücreye sabit kimlik verip önce kimlik sayısını, sonra her kimliğin DNA içeriğini izle; organel kazanımı iddialarını aktarılan maddenin gerçek türüyle denetle.",
+      "steps": [
+        "Başlangıçta verici ve alıcı olmak üzere iki hücre vardır. Bölünme ve ölümün bulunmaması, aktarım sırasında yeni hücre eklenmediği ve bir hücre çıkarılmadığı anlamına gelir.",
+        "Alıcıya aktarılan madde plazmit DNA’dır. Bu aktarım alıcının kalıtsal içeriğini değiştirebilir; hücre sayısının değişmemesi genetik sonucun yokluğu değildir.",
+        "D iki ayrı sonucu birlikte korur: sayı iki kalabilir, alıcının kalıtsal içeriği değişebilir. Dört hücre, çekirdek veya mitokondri oluşumu bu süreçte verilmemiştir; plazmidin DNA olması da deneyle uyumludur."
+      ],
+      "optionReasons": [
+        "Yanlış. Dört hücreye ulaşmak bölünme veya yeni hücre eklenmesi gerektirir; ikisi de tanımlanmamıştır. DNA aktarımı kendi başına iki hücreyi dörde çıkarmaz.",
+        "Yanlış. Aktarılan plazmit DNA’dır, mitokondri değildir. Kalıtsal molekül alımı organel kazanımını göstermez.",
+        "Yanlış. Bakteriyel DNA aktarımı çekirdek zarı kurulması değildir; vericide çekirdek oluştuğuna ilişkin hiçbir işlem veya ölçüm yoktur.",
+        "Doğru. Bölünme ve ölüm yokken iki hücre korunabilir; alıcıya yeni plazmit DNA geçmesi onun kalıtsal içeriğini değiştirebilir. Sayı ve içerik ayrı izlenir.",
+        "Yanlış. Plazmit zaten DNA molekülüdür; DNA olamayacağı iddiası kavramın yapısıyla çelişir. Bu nedenle deney olanaksız sayılmaz."
+      ],
+      "commonError": "Genetik değişiklik olan her olayı çoğalma sanıp hücre sayısını otomatik iki katına çıkarmak.",
+      "check": "Verici ve alıcı için iki daire çiz; aktarımı üçüncü daire eklemeden gösterebiliyor musun? Bu çizim hem sayı korunmasını hem içerik değişimini açıklamalı."
+    }
+  },
+  {
+    "id": "f011-prokaryotes-5",
+    "identity": "[\"f011-prokaryotes-5\",\"Bir bakteri tek endospor oluşturuyor. Uygun koşullar geri geldiğinde bu endospordan tek etkin hücre gelişiyor; başka bölünme yok. Hangi yorum doğrudur?\",\"\",[\"Endospor iki yeni birey oluşturmuştur\",\"Olay kesin eşeyli üremedir\",\"DNA ortadan kalkmıştır\",\"Bu yapı mantarın çok sayıda üreme sporuyla aynı sayı sonucunu verir\",\"Dayanıklılık durumu sağlanmıştır; bu hat üzerinde birey sayısı artmamıştır\"],4,\"Bir hücre→bir endospor→bir etkin hücre hattı sayıyı artırmaz; dayanıklılık ve yeniden etkinleşme anlatır. Endosporu ana hücreye ek bir yavru saymak yanlış olur. Bu olay eşeyli üreme veya DNA yokluğu değildir; mantarın üreme sporunun oluşturduğu yeni bireylerle aynı şekilde sayılmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bakteriyel endospor, bazı bakterilerin elverişsiz koşullarda oluşturduğu dayanıklı durumdur. Etkin metabolizma ile uzun süre dayanabilen yapı aynı çalışma düzeyi değildir; koşullar düzelince yeniden etkin hücre gelişebilir.",
+        "“Spor” adı farklı gruplarda aynı sayı sonucunu garanti etmez. Bir bireyin durum değiştirmesi ile çok sayıda yeni bireyin başlangıcını oluşturan üreme yapıları, soy sayısı izlenerek ayrılır."
+      ],
+      "strategy": "Aynı bakteriyel soyun etkin hücre–dayanıklı yapı–etkin hücre geçişini takip et; aynı anda yeni ve bağımsız bireyler oluşup oluşmadığını ayrıca say.",
+      "steps": [
+        "Başlangıçta tek bakteri, ardından onun oluşturduğu tek endospor vardır. Ana hücre ve ondan kalan endosporu iki ayrı yeni yavru diye toplama; izlenen tek bir hattır.",
+        "Uygun koşulda tek endospordan tek etkin hücre gelişir. Başka bölünme olmadığı için sayı hattı 1 → 1 → 1’dir; doğrudan birey artışı yoktur.",
+        "E bu hattın dayanıklılık sonucunu doğru belirtir. Yeni yavru sayısı, eşeyli üreme veya DNA’nın kaybı verilmez; mantarın çok sayıda üreme sporuyla aynı sayısal sonuç da kurulamaz."
+      ],
+      "optionReasons": [
+        "Yanlış. İki yeni birey gözlenmemiştir; tek endospordan tek etkin hücre gelişir. Ana hücreyle endosporu iki yavru saymak aynı hattı çift sayar.",
+        "Yanlış. Eşeysel kalıtsal birleşme veya gamet süreci verilmez; tek hücrenin dayanıklı duruma geçmesi kesin eşeyli üreme değildir.",
+        "Yanlış. Etkin hücreye yeniden gelişim kalıtsal bilginin korunmasıyla uyumludur; DNA’nın ortadan kalktığı deneyde söylenmemiştir.",
+        "Yanlış. Mantarın çok sayıda üreme sporu yeni bireylere katkı sağlayabilir; buradaki tek hattın 1 → 1 sonucu aynı sayı artışı değildir.",
+        "Doğru. Tek bakteri tek dayanıklı endospor üzerinden tek etkin hücreye dönmüştür. Elverişsiz koşula dayanma sağlanırken bu hatta birey sayısı artmamıştır."
+      ],
+      "commonError": "Bir yapı için “spor” adını duyunca onu bütün gruplarda çok sayıda yavru üreten aynı mekanizma sanmak.",
+      "check": "Şemada aynı anda bağımsız iki yavru var mı? Verilen 1 → 1 → 1 hattına başka bölünme eklemeden üreme artışı çizilemiyorsa sayı artışı iddiasını kaldır."
+    }
+  },
+  {
+    "id": "f011-prokaryotes-6",
+    "identity": "[\"f011-prokaryotes-6\",\"Oksijen tüketerek ATP üreten bir bakteride mitokondri yok; elektron taşıma elemanları hücre zarında saptanıyor. Hangi yorum uygundur?\",\"\",[\"Prokaryotta oksijenli solunum mitokondri olmadan da gerçekleşebilir\",\"Oksijen tüketimi mutlaka kloroplast gerektirir\",\"Veriler bakterinin mantar olduğunu kanıtlar\",\"Hücre zarı ATP üretim süreçleriyle ilişkili olamaz\",\"Bütün bakteriler aynı solunumu yapmak zorundadır\"],0,\"Prokaryotlarda oksijenli solunumun zarla ilişkili basamakları mitokondri olmadan yürüyebilir. Kloroplast oksijen tüketimi için zorunlu değildir. Tek örneğin metabolizması tüm bakterilere genellenemez. Verilen bulgu hücreyi mantar yapmaz ve zarın enerji süreçlerine katılmasını dışlamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Oksijenli solunumda elektron taşıma süreçleri ve zar boyunca kurulan iyon farkı ATP üretimiyle ilişkilidir. Bu işlevlerin hücrede hangi zarda yer aldığı, hücrenin yapısal düzeniyle birlikte değerlendirilir.",
+        "Mitokondri ökaryot hücrelerin bir organelidir; prokaryot hücre zarında da solunumla ilişkili elemanlar bulunabilir. Bir işlevin görülmesi her hücre tipinde aynı organelin bulunduğunu göstermez."
+      ],
+      "strategy": "Solunum işlevi ile taşıyıcı elemanların konumunu birbirinden bağımsız kanıtlar olarak birleştir; organel yokluğunu işlev yokluğuna çevirmeden seçenekleri denetle.",
+      "steps": [
+        "Bakterinin oksijen tüketerek ATP ürettiği, mitokondri taşımadığı açıkça verilmiştir. Bu iki ölçümü birbirini çürüten sonuçlar sayma.",
+        "Elektron taşıma elemanları hücre zarında saptanmıştır. Böylece solunumla ilişkili zar düzeneği için mitokondri dışında somut bir yer gösterilmiştir.",
+        "A, prokaryotta oksijenli solunumun mitokondri olmadan da gerçekleşebileceğini doğru anlatır. Kloroplast veya mantar hücresi eklemek gerekmez; seçilmiş bakterideki sonucu bütün bakterilerin zorunlu solunumu yapma kuralına çevirme."
+      ],
+      "optionReasons": [
+        "Doğru. Verilen bakteride mitokondri olmadan oksijen tüketimi ve ATP üretimi vardır; hücre zarındaki elektron taşıma elemanları bu işlevin konumunu destekler.",
+        "Yanlış. Kloroplast fotosentetik süreçlerle ilişkilidir; oksijenli solunumda oksijen tüketimi kloroplast bulunmasını zorunlu kılmaz.",
+        "Yanlış. İşlevin görülmesi hücreyi mantar yapmaz. Örnek bakteri olarak verilmiş, elektron taşıma elemanlarının hücre zarındaki konumu gösterilmiştir.",
+        "Yanlış. Hücre zarında elektron taşıma elemanlarının saptanması, zarın ATP üretimiyle ilişkili olamayacağı hükmünü doğrudan bozar.",
+        "Yanlış. Bir bakteride oksijenli solunum görülmesi bütün bakterilere aynı metabolik yolu zorunlu kılmaz; farklı solunum ve fermantasyon örnekleri bulunabilir."
+      ],
+      "commonError": "“Oksijenli solunum varsa mitokondri şarttır” diyerek ökaryottaki konumu bütün hücrelere evrenselleştirmek.",
+      "check": "Aynı işlevin farklı hücresel konumda yürüyebileceğini açıklayabiliyor musun? Yanıtında ETS’nin soruda saptandığı yeri hücre zarı olarak koru."
+    }
+  },
+  {
+    "id": "f011-prokaryotes-7",
+    "identity": "[\"f011-prokaryotes-7\",\"Bir arke örneği normal tuzlulukta ve ılımlı sıcaklıkta yaşamını sürdürüyor. Bu gözlem hangi genellemeyi doğrudan çürütür?\",\"\",[\"Arkeler prokaryot düzenindedir\",\"Bütün arkeler yalnız aşırı koşullarda yaşayabilir\",\"Bazı arkeler yüksek sıcaklığa uyumludur\",\"Arke ve bakteride DNA bulunabilir\",\"Metanojen arke örnekleri vardır\"],1,\"Ilımlı koşulda yaşayan geçerli arke örneği, bütün arkelerin yalnız aşırı ortamlarda yaşayabileceği önermesini çürütür. Bazı türlerin sıcaklığa uyumu veya metanojen örneklerin varlığı bununla çelişmez. Prokaryot düzen ve DNA varlığı da sıcaklık koşulundan dolayı ortadan kalkmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yaşam ortamı, hücrenin yapısal sınıflamasıyla aynı ölçüt değildir. Sıcaklık ve tuzluluk gibi çevresel etmenler enzim işleyişi ile su dengesini etkiler; bir ortamın aşırı sayılması hangi etmenin hangi düzeyde olduğuyla değerlendirilir.",
+        "“Bütün örnekler yalnız şu koşulda yaşayabilir” önermesi iki güçlü sınır koyar. Bu sınırın dışında yaşamını sürdüren geçerli bir grup üyesi, evrensel iddiayı sınamak için yeterli karşı örnek olabilir."
+      ],
+      "strategy": "Gözlemin arke kimliğini değil yaşam ortamı kısıtını sınadığını belirle; her seçenek için bu gözlemin gerçekten karşı örnek olup olmadığını kontrol et.",
+      "steps": [
+        "Örnek arke olarak tanımlanmıştır ve normal tuzlulukta, ılımlı sıcaklıkta yaşamını sürdürür. Yalnız yüzeyde bulunma değil, bu koşulda yaşamını sürdürme ölçülmüştür.",
+        "B’nin “bütün arkeler yalnız aşırı koşullarda” hükmü, bu arke örneğini dışarıda bırakır. Grup üyesinin ılımlı koşulda yaşaması bu evrensel sınırlamayı doğrudan çürütür.",
+        "Gözlem prokaryotluğu, DNA bulunmasını, bazı arkelerin sıcağa uyumunu veya metanojen örneklerin varlığını dışlamaz. Tek ılımlı örnekten bütün arkelerin aşırı koşullarda yaşayamayacağı sonucunu da çıkarma."
+      ],
+      "optionReasons": [
+        "Yanlış. Ilımlı ortamda yaşamak çekirdeksiz hücre düzeniyle çelişmez; gözlem arkenin prokaryot yapısını çürüten bir hücresel kanıt sunmaz.",
+        "Doğru. Yaşayan arke örneği aşırı sıcak veya tuz gerektirmemektedir; bu, bütün arkelerin yalnız aşırı koşullarda yaşayabileceği kuralına doğrudan karşı örnektir.",
+        "Yanlış. Bir arkenin ılımlı ortamda yaşaması başka bazı arkelerin yüksek sıcaklığa uyumlu olmasını engellemez; “bazı” hükmü çürütülmez.",
+        "Yanlış. Çevre koşulu DNA molekülünün bulunmadığını göstermez. Arke ve bakterilerde DNA bulunabilmesiyle bir çelişki yoktur.",
+        "Yanlış. Örneğin ortamı metan üretimi ölçümü değildir; metanojen arke örneklerinin varlığını reddetmez."
+      ],
+      "commonError": "Aşırı koşula uyumlu arke örneklerini bütün grubun tek yaşam zorunluluğu sanmak; sonra tek ılımlı örnekten ters yönde yeni bir “hiçbiri” genellemesi kurmak.",
+      "check": "“Bazı arkeler aşırı ortamda yaşayabilir” ile “bütün arkeler yalnız orada yaşayabilir” cümlelerini ayrı yaz. Gözlem yalnız ikinciyi zorunlu olarak bozar."
+    }
+  },
+  {
+    "id": "f011-prokaryotes-8",
+    "identity": "[\"f011-prokaryotes-8\",\"Seçilmiş bir bakteri karanlıkta belirli inorganik maddeleri oksitleyerek elde ettiği enerjiyle CO₂’den organik madde üretiyor. En uygun beslenme yorumu hangisi?\",\"\",[\"Işık zorunlu fotoototrofluk\",\"Yalnız dışarıdan organik karbon alma\",\"Kemoototrofluk\",\"Kesin fagositoz\",\"Bağımsız virion üretimi\"],2,\"Enerji kimyasal oksidasyondan, organik maddenin karbonu CO₂’den geliyor; bu kemoototroflukla uyumludur. Fotoototrofluk ışığı enerji kaynağı ister. Dış organik karbon, fagositoz veya viral üretim verilmemiştir. Karanlıkta üretim görülmesi fotosentez sürdüğü anlamına gelmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Beslenme sınıflamasında enerji kaynağı ile karbon kaynağı ayrı eksenlerdir. Foto/kemo ayrımı enerji elde etme yolunu; ototrof/heterotrof ayrımı organik madde yapımında kullanılan karbon kaynağını anlatır.",
+        "CO₂ inorganik karbon kaynağıdır. Uygun inorganik maddelerin oksitlenmesi kimyasal enerji sağlayabilir; organik ürün oluşması, ürünün dışarıdan hazır organik besin olarak alındığı anlamına gelmez."
+      ],
+      "strategy": "Deneyi iki soruya böl: enerji hangi olaydan, organik maddenin karbonu hangi kaynaktan geliyor? Sonra iki sınıflama ekseninin adlarını tek beslenme teriminde birleştir.",
+      "steps": [
+        "Deney karanlıktadır ve enerji belirli inorganik maddelerin oksitlenmesinden sağlanır. Bu enerji yolu ışık zorunlu foto düzeni değil kimyasal enerji kullanan kemo düzenidir.",
+        "Organik madde CO₂’den üretilmektedir. İnorganik karbondan organik madde yapımı, karbon ekseninde ototroflukla eşleşir; hazır organik karbon alımı verilmez.",
+        "Kemo + ototrof birleşimi kemoototrofluktur; C seçilir. Fagositoz ve virion üretimi iki eksenin sonucu değildir; bakteri hücresi burada kimyasal enerji ve CO₂ kullanmaktadır."
+      ],
+      "optionReasons": [
+        "Yanlış. Işık zorunlu fotoototrofluk, karanlıkta inorganik oksidasyondan enerji sağlandığı öncülüne uymaz.",
+        "Yanlış. Organik maddenin karbonu CO₂’den alınmaktadır; yalnız hazır organik karbon alma ifadesi karbon kaynağını değiştirir.",
+        "Doğru. Enerji inorganik maddelerin kimyasal oksidasyonundan, karbon CO₂’den gelir. Kemo enerji yolu ile ototrof karbon kullanımı birlikte kemootrofluğu tanımlar.",
+        "Yanlış. Fagositoz büyük parçacığın zar kesesine alınmasıdır. Soruda parçacık yutma değil oksidasyon enerjisiyle CO₂’den organik madde üretme verilmiştir.",
+        "Yanlış. Örnek bir bakteri hücresidir ve organik madde üretimi izlenir. Viral genom, kapsid veya virion birleşmesi bu deneyde tanımlanmamıştır."
+      ],
+      "commonError": "Ototrofluğu yalnız ışığa bağlamak veya karbon kaynağı ile enerji kaynağını tek maddeymiş gibi değerlendirmek.",
+      "check": "Cevabında iki parçanın da dayanağı olmalı: “kemo” için oksidasyon, “ototrof” için CO₂. Yalnız karanlık sözcüğü karbon eksenini tek başına belirlemez."
+    }
+  },
+  {
+    "id": "f011-prokaryotes-9",
+    "identity": "[\"f011-prokaryotes-9\",\"Başlangıçta 5 bakterilik kültürde her hücre 40 dakikada bir bölünüyor. İlk 80 dakikada ölüm ve sınırlandırıcı etki olmadığı verilmiş. Son sayı kaçtır?\",\"\",[\"10\",\"15\",\"16\",\"20\",\"40\"],3,\"80/40=2 kuşak vardır. Sayı 5→10→20 biçiminde iki kez iki katına çıkar: 5·2²=20. On tek kuşak, kırk üç kuşak sonucudur; diğer sayılar verilen modelle uyuşmaz. Bu hesap yalnız sorunun koşulları açıkça koruduğu dönem için geçerlidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Düzenli ikiye bölünmede sonraki tur yalnız başlangıçtaki hücreleri değil önceki turun bütün yavrularını kapsar. Bu nedenle sınırlama yokken sayı sabit miktar eklenerek değil her tur aynı katsayıyla çarpılarak ilerler.",
+        "Geçen süreyi bölünme süresine bölmek tamamlanan tur sayısını verir. Bu model ölüm, gecikme veya kaynak sınırlaması dışlandığında kullanılır; gerçek kültürlerin her sürede sınırsız büyüme yasası değildir."
+      ],
+      "strategy": "Önce 80 dakikaya kaç 40 dakikalık tur sığdığını belirle; ardından beş hücreyi her tamamlanmış turda iki katına çıkaran zaman çizelgesiyle seçenekleri sınayarak hesapla.",
+      "steps": [
+        "Tamamlanan tur sayısı 80 / 40 = 2’dir. İlk 40 dakikada başlangıçtaki beş hücre bölünerek 5 × 2 = 10 hücre olur.",
+        "İkinci 40 dakikada bu on hücrenin her biri bölünür: 10 × 2 = 20. Ölüm ve sınırlandırıcı etki dışlandığından son sayıdan çıkarma yapılmaz.",
+        "D’deki 20, 5 × 2² hesabıyla da doğrulanır. 10 tek tur, 40 üç tur; 15 sabit beşer ekleme, 16 ise başlangıçtaki beş hücreyi korumayan hatalı bir hesap olur."
+      ],
+      "optionReasons": [
+        "Yanlış. 10 yalnız ilk 40 dakikanın sonudur; 80 dakikada tamamlanan ikinci bölünme turunu hesaba katmaz.",
+        "Yanlış. 15, 5 + 5 + 5 gibi sabit artışla bulunabilir. İkinci turda yalnız beş değil ilk turun on hücresinin tamamı bölünür.",
+        "Yanlış. İki tur sonunda 16 hücre için başlangıç 16 / 2² = 4 hücre olmalıydı; soruda başlangıç 5 hücredir. Verilen iki turda bu beş hücre 5 × 2² = 20 hücreye ulaşır.",
+        "Doğru. 80 dakikada iki tur tamamlanır; 5 → 10 → 20 ya da 5 × 2² = 20, verilen kayıpsız modelin sonucudur.",
+        "Yanlış. 40, 5 × 2³ ile üç tur gerektirir; 40 dakikalık üç tur 120 dakika sürer, 80 dakika değildir."
+      ],
+      "commonError": "Her tur yalnız ilk beş hücre bölünüyormuş gibi sabit beş eklemek veya dakika sayısını doğrudan üs olarak kullanmak.",
+      "check": "Zaman çizelgesini 0, 40, 80 dakika diye üç noktada yaz ve sayıları 5, 10, 20 olarak yerleştir. 40 hücreye varıyorsan fazladan bir zaman aralığı eklemişsindir."
+    }
+  },
+  {
+    "id": "f011-prokaryotes-10",
+    "identity": "[\"f011-prokaryotes-10\",\"Bir araştırmacı bakteride ortak yapı arıyor. Seçeneklerde ribozom, kamçı, kapsül, endospor ve plazmit var. Hangisi temel hücresel protein senteziyle ilişkili ortak yapıdır?\",\"\",[\"Kamçı\",\"Kapsül\",\"Endospor\",\"Plazmit\",\"Ribozom\"],4,\"Ribozom hücresel protein sentezini yapar ve temel ortak yapıdır. Kamçı, kapsül, endospor ve plazmit bazı tür veya koşullarda bulunabilir; hepsine zorunlu değildir. Sorunun ortaklık ölçütü ile bir çizimde gösterilen zengin yapı listesini karıştırmamak gerekir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hücresel protein üretiminde mRNA bilgisi kullanılır, tRNA’lar amino asitleri taşır ve amino asitler polipeptit hâlinde bağlanır. Hareket, dış yüzey korunması ve kalıtsal ek moleküller farklı işlev başlıklarıdır.",
+        "Bir türde görülebilen ek yapı ile temel hücresel işlevi yerine getiren ortak yapı aynı değildir. Kamçı, kapsül, endospor ve plazmit farklı bakterilerde bulunabilir; bu yapıların her biri bütün bakterilerde zorunlu değildir."
+      ],
+      "strategy": "Seçenekleri hareket, korunma, dayanıklılık, ek DNA ve protein üretimi işlevleriyle eşleştir; hem sorulan işlevi hem ortaklık koşulunu aynı anda sağlayan yapıyı ara.",
+      "steps": [
+        "Sorulan işlev hücresel protein sentezidir; dışarıda hareket etme veya dayanıklı kalma değildir. Bu ayrım seçeneklerdeki görev karışmasını önler.",
+        "Kamçı hareket, kapsül yüzeyle ilişkili korunma/tutunma, endospor dayanıklılık, plazmit ek kalıtsal DNA ile ilişkilidir. Bu dört yapı hem koşulludur hem doğrudan çeviri düzeneğinin adı değildir.",
+        "mRNA’ya göre amino asitlerin birleştirildiği yapı ribozomdur. Bakterilerin temel hücresel protein sentezinde ortak olduğundan iki koşulu birlikte karşılayan E seçilir."
+      ],
+      "optionReasons": [
+        "Yanlış. Kamçı hareketle ilişkilidir; bütün bakterilerde bulunmaz ve amino asitlerden polipeptit oluşturan düzenek değildir.",
+        "Yanlış. Kapsül yüzey korunması ve tutunmaya katkı sağlayabilir; koşullu bir dış yapıdır, protein sentezinin ortak yapısı değildir.",
+        "Yanlış. Endospor bazı bakterilerin dayanıklı durumudur. Bütün bakterilerde zorunlu olmadığı gibi çeviri yapan yapı da değildir.",
+        "Yanlış. Plazmit ek DNA molekülüdür. Proteinle ilgili gen taşıyabilmesi, amino asitleri birleştiren yapının kendisi olduğu anlamına gelmez; tüm bakterilerde bulunması da zorunlu değildir.",
+        "Doğru. Ribozom mRNA bilgisine göre polipeptit üretiminin gerçekleştiği temel hücresel yapıdır; bakteride ortak protein sentezi işlevini karşılar."
+      ],
+      "commonError": "Bir yapının proteinlerle ilişkili bir gen taşımasını, o yapının protein sentezleyen düzenek olmasıyla karıştırmak; koşullu yapıyı ortak saymak.",
+      "check": "Seçtiğin yapı hem bütün bakterilerin temel çeviri işleviyle ilişkili olmalı hem hareket/korunma gibi başka bir görevin adı olmamalı. İki koşulu ayrı ayrı doğrula."
+    }
+  },
+  {
+    "id": "f011-protists-1",
+    "identity": "[\"f011-protists-1\",\"Amip, paramesyum, öglena ve çok hücreli bir alg okulun Protista başlığı altında karşılaştırılıyor. Hangisi bu dört örneğin hücresel ortaklığıdır?\",\"\",[\"Ökaryot hücre düzeni\",\"Yalnız tek hücrelilik\",\"Hepsinde kamçı\",\"Hepsinde fotosentez\",\"Hepsinde parazit beslenme\"],0,\"Dört örnekte ökaryot hücre düzeni vardır. Çok hücreli alg tek hücrelilik genellemesini bozar; amip ve paramesyum fotosentez yapmaz. Kamçı ve parazitlik de tüm örneklere ortak değildir. Okulun Protista başlığını tek bir beslenme veya hareket tipine indirgememek gerekir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hücre tipi, hücre sayısı, hareket ve beslenme birbirinden farklı karşılaştırma eksenleridir. Tek hücreli olmak, çekirdeksiz olmak demek değildir; bir hücre de çekirdek ve zarla çevrili organeller içerebilir.",
+        "Okulun Protista başlığı çeşitli örnekleri karşılaştırır; bütün örneklerin aynı hareket veya beslenme biçimini taşıması gerekmez. Ortaklık sorusunda her aday özellik listedeki bütün örneklerde sınanmalıdır."
+      ],
+      "strategy": "Dört örneği dört satırda düşün; hücre tipi, sayı, hareket ve beslenme özelliklerini ayrı sütunlarda kesiştirerek tek örnekten yapılan genellemeleri ele.",
+      "steps": [
+        "Amip, paramesyum ve öglena tek hücreli olabilir; ancak karşılaştırmadaki alg açıkça çok hücrelidir. Bu nedenle yalnız tek hücrelilik dördüne ortak olamaz.",
+        "Amip yalancı ayak, paramesyum sil, öglena kamçı örneğidir; kamçı hepsinde ortak değildir. Amip ve paramesyum fotosentez yapmaz; örneklerin hepsi parazit de değildir.",
+        "Dört örneğin hücrelerinde çekirdekli, ökaryot düzen bulunur. Hücre sayısı ve işlev çeşitliliğini koruyarak hepsine uyan A seçilir; okul başlığı tek bir doğal soy çizgisi olduğu sonucunu gerektirmez."
+      ],
+      "optionReasons": [
+        "Doğru. Dört öğretici örneğin hücresel ortaklığı çekirdekli, ökaryot düzendir; tek ya da çok hücreli olmaları bu hücre tipini değiştirmez.",
+        "Yanlış. Kökte çok hücreli bir alg özellikle verilmiştir. Tek hücrelilik bu örneği dışladığından dördünün ortaklığı değildir.",
+        "Yanlış. Öglena kamçılı örnek olsa da amip yalancı ayak, paramesyum sil taşır; aynı hareket yapısı bütün gruba yayılamaz.",
+        "Yanlış. Amip ve paramesyum heterotrof örneklerdir. Öglena veya algde fotosentez görülmesi dördünde de fotosentez olduğu anlamına gelmez.",
+        "Yanlış. Verilen dört örneğin hepsi parazit olarak tanımlanmamıştır; serbest yaşayan beslenme biçimleri de vardır. Parazitlik ortak hücresel özellik değildir."
+      ],
+      "commonError": "İyi bilinen öglena veya amip örneğini bütün listenin yerine koyup çoğunluk özelliğini “hepsinde” diye okumak.",
+      "check": "Seçtiğin özelliği çok hücreli alge ve fotosentez yapmayan amibe ayrı ayrı uygula. İkisinden birinde bozuluyorsa ortak değildir."
+    }
+  },
+  {
+    "id": "f011-protists-2",
+    "identity": "[\"f011-protists-2\",\"Seçilmiş bir amip, geçici sitoplazmik uzantıyla büyük bir besin parçacığını sarıp zar kesesi içinde hücreye alıyor. Hangi yapı–işlem eşleştirmesi uygundur?\",\"\",[\"Sil–fotosentez\",\"Yalancı ayak–fagositoz\",\"Kamçı–protein sentezi\",\"Hücre duvarı–ATP sentezi\",\"Kontraktil koful–polen üretimi\"],1,\"Yalancı ayak amipsi hareket ve parçacığı sarmaya katılır; büyük parçanın zarla alınması fagositozdur. Siller veya kamçı burada tanımlanan yapı değildir. Protein sentezi, polen ve fotosentez de verilen gözlemin karşılığı değildir. Yapıyı yalnız hareketle sınırlamadan besin alma işleviyle ilişkilendir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hücre yüzeyi bazı ökaryotlarda biçim değiştirerek büyük parçacıkların çevresini sarabilir. Büyük parçacığın zarla çevrili bir keseyle içeri alınması, küçük molekülün zardan tek tek geçmesinden farklı bir besin alma yoludur.",
+        "Hareket yapıları biçim ve süreklilik bakımından ayrılır: kısa çok sayıda sil, uzun kamçı ve geçici sitoplazmik uzantı aynı yapı değildir. Bir yapının adını ve gözlenen işlemi ayrı kanıtlardan eşleştirmek gerekir."
+      ],
+      "strategy": "Yüzey uzantısını kalıcılık ve biçimine, besin alma olayını yükün büyüklüğü ve zar kesesi oluşumuna göre iki kez tanımla; sonra uygun ikiliyi birleştir.",
+      "steps": [
+        "Amibin uzantısı geçicidir ve sitoplazmik yapıdadır. Bu tanım sil veya kamçıdan çok yalancı ayağa karşılık gelir; sabit bir hücre duvarı değildir.",
+        "Alınan yük büyük bir besin parçacığıdır ve hücre zarı tarafından sarılıp kese içinde içeri girer. Bu olay fagositozdur; fotosentez veya ribozomal protein sentezi değildir.",
+        "Yapı için yalancı ayak ve işlem için fagositoz birlikte B’de bulunur. Koful–polen veya duvar–ATP eşleştirmeleri ne gözlenen uzantıyı ne de kese ile alımı karşılar."
+      ],
+      "optionReasons": [
+        "Yanlış. Geçici sitoplazmik uzantı sil değildir; ayrıca büyük parçacığın keseye alınması ışıkla organik madde üretimi olan fotosentez değildir.",
+        "Doğru. Geçici uzantı yalancı ayaktır; büyük parçacığın zarla sarılarak keseyle içeri alınması fagositozdur. İki gözlem aynı seçenekte doğru eşleşir.",
+        "Yanlış. Kamçı kalıcı hareket yapısıdır; protein sentezi ribozomal düzenle ilişkilidir. İkisi de verilen geçici uzantı ve parçacık yutma olayını adlandırmaz.",
+        "Yanlış. Hücre duvarı, geçici sitoplazmik uzantı gibi besini sarmaz. Deney ATP sentezini değil besin parçacığının içeri alınmasını göstermektedir.",
+        "Yanlış. Kontraktil koful su düzenlemesiyle ilişkilidir; polen bitkisel üreme yapısıdır. Amibin parçacık alması bu eşleştirmeye uymaz."
+      ],
+      "commonError": "Bütün yüzey uzantılarına kamçı demek veya zar kesesiyle büyük parçacık alımını fotosentez gibi bir üretim olayı sanmak.",
+      "check": "Yanıtın iki parçasını iki gözleme bağla: geçici sitoplazmik uzantı hangi yapı, büyük parçacık ve zar kesesi hangi işlem? Yalnız bir parçanın doğru olması yetmez."
+    }
+  },
+  {
+    "id": "f011-protists-3",
+    "identity": "[\"f011-protists-3\",\"Tatlı suda yaşayan seçilmiş paramesyum sürekli ozmozla su alıyor. Kontraktil kofulun işlevi hangisidir?\",\"\",[\"Genomu kapsidle sarmak\",\"Hücre dışında nişasta sindirmek\",\"Fazla suyu uzaklaştırarak hacim dengesine katkı sağlamak\",\"Polen üretmek\",\"Fotosentezle bütün suyu yok etmek\"],2,\"Kontraktil koful fazla suyu uzaklaştırarak tatlı su hücresinin ozmotik dengesine katkı verir. Sindirim, viral kapsid veya polen görevleri farklı yapılara aittir. Bu işlem bütün protistlerin aynı kofulu taşıdığını göstermez; verilen tatlı su ve sürekli giriş koşulları önemlidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ozmoz, suyun seçici geçirgen sınır boyunca net hareketidir. Hücreye sürekli su girmesi, hacmin dengede kalması için su bilançosunun başka yollarla düzenlenmesini gerektirir.",
+        "Hücresel kofullar farklı görevler üstlenebilir; besin içeren sindirim kesesi ile su düzenleme düzeneği aynı değildir. Bir yapının görevini soruda değişen maddeye ve ölçülen hücresel soruna göre değerlendirmek gerekir."
+      ],
+      "strategy": "Sürekli su girişini bir giriş–çıkış bilançosunda göster; hacim dengesini doğrudan etkileyen görevi, genom paketleme ve besin üretimi gibi başka süreçlerden ayır.",
+      "steps": [
+        "Tatlı su örneğine su sürekli ozmozla girmektedir. Alınan maddenin su olması ve girişin sürmesi, öncelikle hücresel hacim yükünü ilgilendirir.",
+        "Kontraktil koful fazla suyu toplayıp hücre dışına uzaklaştırır. Bu çıkış, devam eden girişin hacmi sürekli artırma eğilimine karşı su dengesine katkı verir.",
+        "Bu görevi anlatan C seçilir. Polen ve viral kapsid başka biyolojik sistemlere aittir; dışarıda nişasta sindirimi su yükünü doğrudan düzenlemez. Fotosentezin bütün suyu yok etmesi gibi bir süreç de yoktur."
+      ],
+      "optionReasons": [
+        "Yanlış. Genomu protein kapsidle paketlemek viral parçacık kurulmasıdır; paramesyumun su düzenleyen kofulunun görevi değildir.",
+        "Yanlış. Hücre dışında nişasta parçalamak dış sindirim örneğidir. Burada problem besin polimeri değil hücreye sürekli giren suyun hacim yüküdür.",
+        "Doğru. Kontraktil koful fazla suyu dışarı atarak sürekli ozmotik girişe karşı hacim dengesine katkı sağlar; tatlı su koşuluyla doğrudan ilişkili görev budur.",
+        "Yanlış. Polen kapalı veya açık tohumlu bitkilerin üreme düzeniyle ilişkilidir; paramesyumun kofulu polen üretmez.",
+        "Yanlış. Fotosentez bütün hücresel suyu ortadan kaldıran bir işlem değildir; seçilmiş paramesyumun su yükünü düzenleyen görev kontraktil koful çıkışıdır."
+      ],
+      "commonError": "Besin kofulu ile kontraktil kofulu aynı görevli saymak veya su girişinin kendisini enerji harcayan aktif pompalama diye adlandırmak.",
+      "check": "Kofulun çıkışı durup giriş aynı sürse ilk bilanço ne olur? Su birikimi beklentisi seçtiğin görevi destekler; buradan kesin patlama süresi hesaplama."
+    }
+  },
+  {
+    "id": "f011-protists-4",
+    "identity": "[\"f011-protists-4\",\"Seçilmiş öglena örneği uygun ışıkta fotosentez yapıyor; karanlıkta uygun dış organik maddeden yararlanabiliyor. Bu iki gözlemin birlikte yorumu nedir?\",\"\",[\"Bütün hücreleri prokaryottur\",\"Yalnız zorunlu parazittir\",\"Karanlıkta da ışık enerjisi üretir\",\"Miksotrof beslenme gösterebilir\",\"Her kamçılı protist aynı özelliktedir\"],3,\"Uygun ışıkta üretim ve uygun organik besinden yararlanma, seçilmiş örnek için miksotrofiyle uyumludur. Karanlıkta fotosentez olduğu söylenmemiştir. Sonuç bütün kamçılılara genellenemez ve ökaryot örneği prokaryot yapmaz. Parazitlik de dış organik madde kullanmanın zorunlu tek biçimi değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Fotoototrof kullanımda ışık enerjisiyle inorganik karbondan organik madde sentezlenir. Heterotrof kullanımda dışarıdaki uygun organik maddeden yararlanılır; bu iki işlevin koşulları ayrı ölçülebilir.",
+        "Bir canlı için iki farklı koşulda gözlenen beslenme yeteneği, tek koşulun etiketine sığmayabilir. Seçilmiş türün yeteneği aynı hareket yapısını taşıyan bütün canlıların zorunlu özelliği sayılmaz."
+      ],
+      "strategy": "Işıklı ve karanlık ortamı iki ayrı deney satırı yap; enerji ve organik madde kullanımını birlikte açıklayabilen beslenme kapsamını, tüm kamçılılara genellemeden değerlendir.",
+      "steps": [
+        "Uygun ışıkta fotosentez gözlenir; bu satır fotoototrof yoldan organik madde üretimiyle uyumludur. Bu bilgi tek başına karanlıktaki beslenmeyi belirlemez.",
+        "Karanlıkta uygun dış organik maddeden yararlanma ayrıca ölçülmüştür. Bu satır heterotrof yeteneği destekler; karanlıkta ışık enerjisi üretildiğini veya konak zorunluluğunu söylemez.",
+        "İki yeteneği aynı seçilmiş örnekte birleştiren yorum miksotrofi gösterebilmesidir; D seçilir. Öglena ökaryottur ve bu deney bütün kamçılı protistleri aynı yeteneğe sahip yapmaz."
+      ],
+      "optionReasons": [
+        "Yanlış. Beslenme koşulları hücreyi prokaryot yapmaz; öglena örneği çekirdekli ökaryot düzendedir.",
+        "Yanlış. Uygun dış organik maddeden yararlanmak mutlaka canlı konak içinde zorunlu parazit olmak değildir; böyle bir konak bağımlılığı verilmemiştir.",
+        "Yanlış. Karanlıkta kullanılan kaynak uygun dış organik maddedir. Işık bulunmayan koşulda ışık enerjisi üretildiği sonucu gözleme uymaz.",
+        "Doğru. Seçilmiş örnek ışıkta fotosentez, karanlıkta uygun organik madde kullanımı gösterebilir. İki beslenme yeteneği birlikte miksotrof yorumu destekler.",
+        "Yanlış. Deney yalnız seçilmiş öglena örneğine aittir; kamçı taşımak bütün protistlerin aynı kloroplast ve beslenme yeteneğine sahip olmasını gerektirmez."
+      ],
+      "commonError": "Işıkta fotosentez gördüğü için karanlıktaki organik madde kullanımını yok saymak veya örneğin yeteneğini bütün kamçılılara yaymak.",
+      "check": "Karanlıkta organik madde kullanımı satırını çıkarsaydın aynı geniş beslenme sonucunu kesin kurabilir miydin? Hayır; ikinci gözlemin yanıta ne kattığını açıkla."
+    }
+  },
+  {
+    "id": "f011-protists-5",
+    "identity": "[\"f011-protists-5\",\"İki paramesyum arasında konjugasyon görülüyor. Bölünme ve ölüm yok; olay sonunda iki hücre kalıyor. Hangi ifade doğrudur?\",\"\",[\"Sayı artmadığından kalıtsal değişim imkânsızdır\",\"İki hücre mutlaka dört olmalıdır\",\"Olay hücre duvarı sentezidir\",\"Konjugasyon kesin fotosentezdir\",\"Kalıtsal değişim olabilir; konjugasyon doğrudan birey sayısını artırmak zorunda değildir\"],4,\"Konjugasyon kalıtsal bilgi alışverişiyle çeşitliliğe katkı sağlayabilir fakat olayın kendisi yeni hücre oluşturmayabilir. İki hücrenin iki kalması çelişki değildir. Bölünme olmadığı için dört hücre beklemek yanlıştır; fotosentez veya duvar sentezi sonucu da verilmemiştir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Paramesyum konjugasyonunda eşleşen hücreler arasında eşeysel çekirdek süreçleri ve kalıtsal değişim görülebilir. Bu mekanizma, bakteriyel tek yönlü plazmit aktarımının bütün ayrıntılarıyla aynısı değildir.",
+        "Genetik kombinasyonların değişimi ile bireylerin çoğalması iki ayrı sonuçtur. Sayı artışı için yeni bağımsız hücre oluşumu izlenir; kalıtsal düzen için hücrelerin içerikleri karşılaştırılır."
+      ],
+      "strategy": "Olayın genetik etkisini ve nüfus bilançosunu iki bağımsız soruyla değerlendir; sayı gözleminin hangi iddiayı destekleyip hangisini tek başına sınayamadığını ayır.",
+      "steps": [
+        "İki hücreyle başlanmış ve iki hücreyle bitirilmiştir; bölünme ile ölüm dışlanmıştır. Dolayısıyla olay sırasında doğrudan birey artışı gösterilmemiştir.",
+        "Konjugasyon kalıtsal bilgi değişimi sağlayabilir. Aynı iki hücrenin bulunması, bu hücrelerin genetik kombinasyonlarının değişemeyeceği anlamına gelmez.",
+        "E, olası kalıtsal değişimi ve doğrudan sayı artışının zorunlu olmayışını birlikte anlatır. Dört hücre zorunluluğu, duvar sentezi veya fotosentez tanımı bu gözlemden çıkmaz."
+      ],
+      "optionReasons": [
+        "Yanlış. Aynı iki hücrenin korunması DNA düzeninin değişmesini engellemez; sayı değişkenini kalıtsal içerikle eşitlemek hatadır.",
+        "Yanlış. Dört hücre oluşması için yeni hücre üretimi gerekir; soruda bölünme yoktur ve son sayı açıkça ikidir.",
+        "Yanlış. Konjugasyon kalıtsal süreçtir; hücre duvarının senteziyle aynı olay değildir. Duvar üretimi bu deneyin tanımı değildir.",
+        "Yanlış. Kalıtsal eşleşme ışık enerjisiyle organik madde üretimi değildir; fotosentezle ilgili bir ölçüm verilmemiştir.",
+        "Doğru. Konjugasyon genetik değişim sağlayabilirken doğrudan yeni birey sayısını artırmak zorunda değildir; son sayının iki kalmasıyla çelişmez."
+      ],
+      "commonError": "Sayı değişmediği için bütün hücresel sonuçların da değişmediğini sanmak veya konjugasyonu mutlaka bölünme izlemiş gibi sayı eklemek.",
+      "check": "İki hücreyi aynı iki kimlikle etiketle ve yalnız içlerindeki kalıtsal düzeni değiştir. Üçüncü hücre eklemeden genetik değişimi gösterebiliyorsan iki sonucu ayırmışsındır."
+    }
+  },
+  {
+    "id": "f011-protists-6",
+    "identity": "[\"f011-protists-6\",\"X tek hücreli ve sucul; başka veri yok. Y tek hücreli, çekirdekli ve büyük parçacığı fagositozla alıyor. Hangisi kanıtın sınırını korur?\",\"\",[\"X’in Protista olduğu kesin değildir; Y ökaryot düzeni destekler\",\"X kesin bakteridir\",\"Y kesin virüstür\",\"Tek hücrelilik her iki hücreyi prokaryot yapar\",\"Fagositoz ribozomun görevidir\"],0,\"Tek hücreli sucul canlı bakteri veya protist gibi farklı gruplara uyabilir; X için kesin sınıflama yapılamaz. Y’de çekirdek ve fagositoz ökaryot hücresel düzeni destekler. Virüs hücre değildir; tek hücrelilik prokaryotlukla özdeş değildir. Fagositoz ribozomun protein sentezi göreviyle karıştırılmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sucul ortam ve tek hücrelilik farklı hücre gruplarında görülebilir; bunlar tek başlarına çekirdek varlığını göstermez. Çekirdek gözlemi ise zarla çevrili kalıtsal bölmeye ilişkin doğrudan hücresel kanıttır.",
+        "Fagositozda büyük bir parçacık hücre zarıyla çevrilip keseyle içeri alınır. Bu besin alma işlemini gerçekleştiren zar düzeni ile protein sentezleyen ribozom farklı görevler taşır."
+      ],
+      "strategy": "X ve Y’nin kanıt yoğunluğunu eşitleme: X’in iki genel özelliğinden kalan alternatifleri, Y’nin doğrudan çekirdek ve zar işlemi kanıtından ayrı değerlendir.",
+      "steps": [
+        "X için yalnız tek hücreli ve suda yaşayan bilgisi vardır. Tek hücreli sucul bakteriler de bu iki özelliği sağlayabildiğinden X’in Protista olması kesinleşmez; kesin bakteri tanısı da kurulmaz.",
+        "Y’de çekirdek doğrudan verilmiştir; büyük parçacığı fagositozla alması da ökaryotik hücresel işleyişle uyumludur. Y’nin tek hücreli oluşu bu çekirdek kanıtını geçersiz kılmaz.",
+        "A iki örneğin farklı kanıt sınırlarını korur. Y’yi virüs veya her ikisini prokaryot saymak çekirdek ve hücresellik bilgisini siler; fagositoz da ribozom görevi değildir."
+      ],
+      "optionReasons": [
+        "Doğru. X’in genel iki özelliği kesin Protista tanısı vermez; Y’deki çekirdek ve fagositoz ise ökaryot düzeni destekler. İki kanıt düzeyi doğru ayrılır.",
+        "Yanlış. Tek hücrelilik ve sucul yaşam yalnız bakterilere özgü değildir; aynı genel özellikleri taşıyan protistler de bulunduğundan X kesin bakteri sayılamaz.",
+        "Yanlış. Y çekirdekli, büyük parçacığı fagositozla alan bir hücredir; hücresel olmayan virion tanımına uymaz.",
+        "Yanlış. Tek hücrelilik, çekirdeksizlik demek değildir. Y’nin çekirdeği doğrudan verildiği için onu prokaryot saymak bu kanıtı reddeder.",
+        "Yanlış. Ribozom protein sentezinde görev alır. Büyük parçacığın zar kesesiyle içeri alınması olan fagositoz, ribozomun yaptığı işlem değildir."
+      ],
+      "commonError": "Tek hücreli bütün canlıları bakteri saymak veya su ortamını tek bir âlemin ayırıcı özelliği olarak kullanmak.",
+      "check": "X’e henüz söylenmeyen bir çekirdek eklemeden karar verebiliyor musun? X için “bilinmiyor” demek, Y’de açıkça verilen çekirdeği de bilinmiyor saymanı gerektirmez."
+    }
+  },
+  {
+    "id": "f011-protists-7",
+    "identity": "[\"f011-protists-7\",\"Bir cıvık mantar örneğinin belirli evresinde amipsi hareket ve parçacıkları yutarak beslenme gözleniyor. İsminde ‘mantar’ geçmesine dayanarak ne söylenebilir?\",\"\",[\"Kesin gerçek Mantarlar âlemindedir\",\"Ortak isim yeterli değildir; hücresel ve beslenme kanıtlarıyla sınıflama gerekir\",\"Kesin kloroplast taşır\",\"Bütün yaşam evreleri aynı görünüştedir\",\"Hiçbir kalıtsal materyali yoktur\"],1,\"Cıvık mantarlar okul karşılaştırmasında protist örneklerdir; ortak isim gerçek mantar âlemini kanıtlamaz. Yaşam döngüsü evreleri değişebilir. Gözlenen beslenme kloroplast, kalıtsızlık veya bütün evrelerin aynı biçimde olması sonucunu vermez. İsim yerine gerçek yapısal kanıt kullanılmalıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ortak adlar biçim veya görünüş benzerliğini yansıtabilir; bilimsel sınıflandırma hücresel özellikler ve yaşam biçimiyle birlikte değerlendirilir. Benzer ad taşımak, aynı hücre duvarına veya besin alma mekanizmasına sahip olmak değildir.",
+        "Yaşam döngüsünde belirli evrede görülen yapı, bütün evreler boyunca aynı biçimin korunduğunu göstermeyebilir. Amipsi hareket ve büyük parçacık yutma somut hücresel gözlemlerdir; hangi evrede ölçüldükleri korunmalıdır."
+      ],
+      "strategy": "İsme dayalı iddiayı gözlenmiş evre ve beslenme biçimiyle karşılaştır; verilen kanıtla ölçülmeyen kloroplast, kalıtım ve diğer evre iddialarını birbirinden ayır.",
+      "steps": [
+        "Verilen kanıt, belirli evrede amipsi hareket ve parçacık yutmadır. “Mantar” sözcüğü bu gözlemlerin yerine geçen bağımsız bir âlem kanıtı değildir.",
+        "Gerçek mantarlar tipik olarak dış sindirim ürünlerini emerek beslenir; cıvık mantar örneğinin fagositozlu evresi ayrı incelenir. Okul sınıflamasında bu ortak ad gerçek Mantarlar âlemiyle otomatik eşitlenmez.",
+        "Bu yüzden B, adı tek başına yeterli saymayıp hücresel ve beslenme kanıtı ister. Bir evreden bütün evrelerin görünüşü, kesin kloroplast varlığı veya kalıtsal madde yokluğu çıkarılamaz."
+      ],
+      "optionReasons": [
+        "Yanlış. Adında “mantar” geçmesi gerçek Mantarlar âlemine ait olduğunu kesinleştirmez; beslenme ve hücresel kanıtlar ad benzerliğinden bağımsız incelenmelidir.",
+        "Doğru. Ortak ad yeterli bir sınıflama ölçütü değildir. Verilen amipsi hareket ve parçacık yutma kanıtlarıyla hücresel düzenin değerlendirilmesini ister.",
+        "Yanlış. Amipsi hareket ve parçacık yutma kloroplast ölçümü değildir; adı da fotosentez organeli bulunduğunu göstermez.",
+        "Yanlış. Gözlem yalnız belirli evreye aittir. Bu evrenin görünüşünü bütün yaşam döngüsüne yaymak ölçülmeyen evreleri aynı sayar.",
+        "Yanlış. Ortak ad veya beslenme biçimi kalıtsal materyalin bulunmadığı anlamına gelmez; örnek kalıtsal bilgisi olan hücresel canlıdır."
+      ],
+      "commonError": "Ortak ismi bilimsel sınıflandırmanın yerine koymak ve tek gözlenen evreyi değişmez yaşam boyu biçim sanmak.",
+      "check": "İsim etiketini kapatsan elinde hangi gözlemler kalıyor? Sınıflama gerekçen amipsi hareket, hücre düzeni ve besin alma gibi gözlemlere dayanabilmeli."
+    }
+  },
+  {
+    "id": "f011-protists-8",
+    "identity": "[\"f011-protists-8\",\"Seçilmiş tatlı su protisti izotonik dış ortama aktarılıyor. Zar bütünlüğü ve diğer koşullar korunuyor. Başlangıçtaki sürekli fazla su girişine göre hangi beklenti daha uygundur?\",\"\",[\"Su moleküllerinin tüm hareketi biter\",\"Bütün kofullar hücreden atılır\",\"Sürekli net su girişinin yükü azalabilir\",\"Hücre otomatik bakteriye dönüşür\",\"Fotosentez zorunlu başlar\"],2,\"İzotonik ortamda sürekli net su girişinin yükü azalabilir; iki yöndeki su hareketi tamamen durmaz. Bu koşul kofulların atılması, bakteriye dönüşme veya fotosentezin zorunlu başlamasını gerektirmez. Sonucu yalnız ozmotik farkın azalması ve verilen korunmuş koşullar düzeyinde tutmak gerekir.\"]",
+    "guidance": {
+      "knowledge": [
+        "İzotonik koşul, hücre ile dış ortam arasında tonisiteye bağlı sürekli net su akışı beklentisinin dengelenmesini anlatır. Su molekülleri yine iki yönde hareket edebilir; net akış ile moleküler hareket farklıdır.",
+        "Hücrenin su düzenleme yükü, ortamın su hareketine etkisiyle değişebilir. Ortam değişimi hücrenin soyunu, bütün organellerini veya ışıkla üretim yeteneğini kendiliğinden değiştiren bir işlem değildir."
+      ],
+      "strategy": "Önceki tatlı su koşuluyla yeni izotonik koşulu aynı zar için karşılaştır; yalnız net su bilançosuna bağlı beklentiyi değiştir ve diğer hücresel iddiaları ayrı bırak.",
+      "steps": [
+        "Başlangıçtaki tatlı su koşulunda hücre sürekli fazla su alma yükü taşımaktadır. Aktarımda değişen temel değişken dış ortamın hücreye göre tonisitesidir; zar bütünlüğü korunur.",
+        "Yeni izotonik ortamda önceki sürekli net içe su girişini oluşturan tonisite farkı azalır. Bu nedenle su düzenleme düzeneğinin sürekli giriş yükü azalabilir; C bu ölçülü beklentiyi verir.",
+        "Net yükün azalması bütün su moleküllerinin durması değildir. Kofulların atılması, bakteriye dönüşme veya fotosentezin başlaması için de bu aktarım tek başına gerekçe sağlamaz."
+      ],
+      "optionReasons": [
+        "Yanlış. İzotonik koşulda karşılıklı su hareketi sürebilir; azalan veya dengelenen net akıştır. Bütün moleküler hareketin bitmesi sonucu yanlıştır.",
+        "Yanlış. Ortam aktarımı bütün kofulların hücreden atıldığı bir işlem değildir; zarın ve diğer koşulların korunduğu söylenmiştir.",
+        "Doğru. Önceki hipotonik su yükü yeni izotonik koşulda azalabilir; bu, sürekli net su girişinin değişmesine dayanan sınırlı beklentidir.",
+        "Yanlış. Ortamın tonisitesini değiştirmek çekirdekli hücreyi otomatik prokaryot bakteri soyuna dönüştürmez.",
+        "Yanlış. Işık, pigment ve fotosentez kapasitesiyle ilgili yeni koşul verilmez; izotonik ortam tek başına fotosentezi zorunlu başlatmaz."
+      ],
+      "commonError": "Dengeyi moleküllerin hareketsiz kalması sanmak veya tonisite değişikliğine ilgisiz organel ve sınıflama sonuçları eklemek.",
+      "check": "İki yönde eşit su geçişi çizsen net ok sıfır olabilir ama moleküller hareket eder. Yanıtın bu iki düzeyi birbirinden ayırmalı; koful hızının kesin sıfırını uydurma."
+    }
+  },
+  {
+    "id": "f011-protists-9",
+    "identity": "[\"f011-protists-9\",\"Çok hücreli bir algde fotosentez ve pigmentler görülüyor; gerçek kök, gövde, yaprak veya iletim dokusu kanıtı verilmemiş. Hangi çıkarım geçersizdir?\",\"\",[\"Ökaryotik alg örneği olabilir\",\"Fotosentetik üretime katılabilir\",\"Pigmentleri farklı renkler sağlayabilir\",\"Fotosentez yapması tek başına damarlı kara bitkisi olduğunu kanıtlar\",\"Çok hücrelilik tek hücrelilik genellemesini sınırlar\"],3,\"Fotosentez alglerde de bulunabilir; tek başına damarlı kara bitkisi veya gerçek kök–gövde–yaprak kanıtı değildir. Diğer seçenekler verilen alg ve pigment gözlemleriyle uyumludur. Hücresel organizasyon ve taşıma dokuları ayrıca incelenmeden tek işlevden bütün sınıflama çıkarılamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Fotosentez bir işlev, pigment ise ışığı soğuran moleküler özelliktir. Aynı işlev farklı hücresel ve organizasyon gruplarında görülebildiğinden tek bir işlevden bütün organ düzeni türetilemez.",
+        "Gerçek kök, gövde, yaprak ve iletim dokusu birbirinden ayrı yapısal kanıtlardır. Bir özelliğe ilişkin veri verilmemesi kesin yokluğu kanıtlamaz; fakat ölçülmemiş yapıyı kesin var saymak için de yeterli değildir."
+      ],
+      "strategy": "Beş yorumu doğrudan gözlem, işlev ve yapısal sınıflama başlıklarına yerleştir; her iddianın gerektirdiği kanıtı soruda verilen ölçümlerle eşleştirerek kesinlik düzeyini denetle.",
+      "steps": [
+        "Örnek çok hücreli algdir; fotosentez ve pigmentler gözlenmiştir. Bu, ökaryotik alg örneği olabilmesi ve fotosentetik üretime katılmasıyla uyumludur.",
+        "Pigmentler renk farklılıklarına katkı sağlayabilir; çok hücreli alg de “bütün protistler tek hücreli” genellemesini sınırlar. Bu yorumlar verilen özelliklerin kapsamını korur.",
+        "D ise fotosentezi tek başına damarlı kara bitkisi kanıtı yapar. Kök, gövde, yaprak ve iletim dokusu ölçülmediğinden bu zorunlu sonuç kurulamaz; onların kesin yokluğunu da ayrıca iddia etme."
+      ],
+      "optionReasons": [
+        "Yanlış. Alg örneğinin ökaryot olması ve çok hücreli düzen göstermesi mümkündür; bu olasılık verilen özelliklerle çelişmez, geçersiz çıkarım değildir.",
+        "Yanlış. Fotosentez gözlendiği için fotosentetik üretime katılabilmesi veriye uygundur; yeni bir organ düzeni varsaymaz.",
+        "Yanlış. Farklı pigmentlerin soğurma özellikleri farklı renklerle ilişkili olabilir. Pigmentlerden böyle bir olasılık çıkarmak damarlı bitki tanısı koymak değildir.",
+        "Doğru. Fotosentez birçok algde de bulunur; tek başına iletim dokusunu veya gerçek kara bitkisi organlarını göstermez. Ölçülmemiş yapıları kesin var saydığı için çıkarım geçersizdir.",
+        "Yanlış. Verilen çok hücreli örnek, bütün örneklerin tek hücreli olduğu iddiasına karşı örnektir; bu sınırlandırma doğrudan kökle uyumludur."
+      ],
+      "commonError": "Yeşil veya fotosentetik her örneği damarlı bitki saymak; tersine, damar kanıtı verilmediği için kesin damar yok hükmü kurmak.",
+      "check": "Geçersiz seçeneği reddederken “damar kesin yok” demeye ihtiyaç var mı? Yok; yalnız fotosentezin damar varlığını kanıtlamadığını göstermek yeterlidir."
+    }
+  },
+  {
+    "id": "f011-protists-10",
+    "identity": "[\"f011-protists-10\",\"Plasmodium örneği konak hücreleriyle ilişkili parazit bir ökaryottur. Hangi yorum verileri aşar?\",\"\",[\"Protistler içinde parazit örnekler bulunur\",\"Hücre içi yaşam tek başına virüs olmayı göstermez\",\"Ökaryot düzeni prokaryot hücreden ayrılır\",\"Bir protist konaktan yararlanabilir\",\"Bütün protistler parazittir ve aynı hastalığı yapar\"],4,\"Plasmodium’un parazitliği bütün protistlerin parazit veya aynı hastalığın etkeni olduğu sonucunu vermez. Amip, alg ve diğer örneklerde farklı yaşam biçimleri vardır. Ökaryot hücresellik virüsten önemli ayrımdır; konak hücre içinde bulunmak tek başına virüs sınıflaması kurmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Parazit, canlı konaktan kaynak sağlayıp ona maliyet oluşturabilen bir yaşam biçimini anlatır; tek başına hücre tipi adı değildir. Konak içinde yaşama, çekirdek ve hücresellik gibi yapısal özelliklerden ayrı değerlendirilir.",
+        "Ökaryot hücrede kalıtsal bölme çekirdek zarıyla çevrilidir. Bir cins veya örnekten bütün geniş grubun aynı beslenmeye ve aynı hastalığa sahip olduğu sonucu için ayrıca tüm grubu kapsayan kanıt gerekir."
+      ],
+      "strategy": "Plasmodium için açıkça verilen yapı ve konak ilişkisini önce yerel önermelere dönüştür; sonra tek örneğin bütün Protista’ya yayılıp yayılmadığını denetle.",
+      "steps": [
+        "Plasmodium parazit bir ökaryot olarak verilmiştir. Bu, protistler arasında parazit örnek bulunduğunu ve bir protistin konaktan yararlanabileceğini destekler.",
+        "Ökaryot düzen onu prokaryot hücreden ayırır. Hücre içi konak ilişkisi bu hücresel kanıtı silmez; yalnız hücre içinde yaşamak virüs olmak için yeterli değildir.",
+        "E’de tek örnek bütün protistlere yayılır ve hepsine aynı hastalık atanır. Böyle bir evrensel beslenme veya hastalık sonucu verilmediğinden E veriyi aşar; diğer seçenekler yerel sınırı korur."
+      ],
+      "optionReasons": [
+        "Yanlış. Verilen Plasmodium örneği, protistler içinde en az bir parazit örnek bulunmasına doğrudan kanıttır; tüm grubu parazit yapmaz.",
+        "Yanlış. Hücre içi ilişki virüslere özgü tek ölçüt değildir. Örneğin ökaryot hücresel yapısı korunur; konumu tek başına virüs olduğunu göstermez.",
+        "Yanlış. Çekirdekli ökaryot düzen ile prokaryot düzen hücresel olarak farklıdır; bu ayrım örneğin parazit olmasıyla ortadan kalkmaz.",
+        "Yanlış. Plasmodium’un konakla ilişkili parazit oluşu, bir protistin konaktan yararlanabileceği olasılığını destekler.",
+        "Doğru. Bir parazit protistten bütün protistlerin parazit ve aynı hastalığın etkeni olduğu sonucu çıkmaz. Serbest yaşayan ve farklı beslenen örnekler bu genellemeyi sınırlar."
+      ],
+      "commonError": "Bir parazit cinsin yaşam biçimini ve hastalığını bütün protistlerin değişmez özelliği sanmak.",
+      "check": "“Bir protist parazittir” ile “bütün protistler aynı parazittir” cümlelerinin kapsamını karşılaştır. Tek örnek ilkini destekler; ikincisi için bütün örneklere ilişkin kanıt gerekir."
+    }
+  },
+  {
+    "id": "f011-plants-1",
+    "identity": "[\"f011-plants-1\",\"Dört öğretici bitki adayı kara yosunu, eğrelti, çam ve elmadır. Bilgiler, bireylerin o andaki görünümünü değil grupların yaşam döngüsü özelliklerini anlatır. X’in grubunda iletim dokusu vardır ve tohum oluşmaz. Hangisi iki kanıtı birlikte sağlar?\",\"\",[\"Eğrelti\",\"Çam\",\"Elma\",\"Kara yosunu\",\"Dördü de\"],0,\"Eğrelti damarlı tohumsuz örnektir. Kara yosunu damar kanıtını, çam ve elma tohum yokluğu kanıtını sağlamaz. İki özelliğin kesişimi tek adayı bırakır; sporla çoğalma ifadesini doğrudan damarsızlık saymak kara yosunuyla eğreltiyi yanlış birleştirir.\"]",
+    "guidance": {
+      "knowledge": [
+        "İletim dokusu bitki organları arasında su, mineral ve organik madde taşınmasına katılır. Tohum ise embriyo ve onu koruyan/besleyen yapılara ilişkin bir üreme özelliğidir; bu iki özellik farklı sınıflama eksenleridir.",
+        "Dört öğretici aday, damarsız tohumsuz, damarlı tohumsuz, açık tohumlu ve kapalı tohumlu grup örnekleridir. Grubun yaşam döngüsünde bir yapı oluşturamaması, genç bir bireyde o yapının henüz görünmemesinden farklı bir bilgidir."
+      ],
+      "strategy": "Adayları önce taşıma dokusu, sonra yaşam döngüsündeki tohum oluşturma yeteneğiyle süz; birinci kanıtı sağlayan örneği ikinci kanıtı denetlemeden seçme.",
+      "steps": [
+        "Kökte bilgiler bireyin anlık görünümü değil grup yaşam döngüsü özellikleridir. İletim dokusu var koşulu damarsız kara yosununu eler; eğrelti, çam ve elma kalır.",
+        "Tohum oluşmaz koşulunu kalanlara uygula: çam ve elma tohumlu gruplardır, eğrelti damarlı tohumsuzdur. Böylece ikinci koşul iki tohumlu adayı eler.",
+        "İki kanıtın kesişiminde yalnız eğrelti bulunur; A seçilir. Çam veya elmanın genç bireyinde henüz tohum görülmemesi bu soruya karşı örnek değildir, çünkü grup yeteneği açıkça belirtilmiştir."
+      ],
+      "optionReasons": [
+        "Doğru. Eğrelti iletim dokusu taşıyan, yaşam döngüsünde tohum oluşturmayan öğretici örnektir; iki koşulu birlikte sağlar.",
+        "Yanlış. Çam damarlıdır ama tohum oluşturur. İletim dokusu koşulunu karşılaması, tohum oluşmaz koşulunu karşıladığı anlamına gelmez.",
+        "Yanlış. Elma damarlı kapalı tohumludur; grup olarak tohum oluşturur. Bireylerin anlık meyve/tohum görünümü değil yaşam döngüsü sorulduğundan elenmelidir.",
+        "Yanlış. Kara yosunu tohumsuzdur ama iletim dokusu taşımaz; yalnız ikinci koşulu sağlaması yeterli değildir.",
+        "Yanlış. Adayların farklı koşullarda elenmesi nedeniyle dördü birlikte iki kanıtı sağlayamaz; kesişim yalnız eğreltiyi içerir."
+      ],
+      "commonError": "Damarı tohumla aynı özellik saymak veya genç bir elmanın o anda tohumsuz görünümünü grubun tohumsuz yaşam döngüsüyle karıştırmak.",
+      "check": "Eğrelti için damar +, tohum −; kara yosunu için damar −, tohum − yaz. Ortak tohum yokluğunun neden tek başına yeterli olmadığını bu iki satırla denetle."
+    }
+  },
+  {
+    "id": "f011-plants-2",
+    "identity": "[\"f011-plants-2\",\"Seçilmiş bitki örneğinde iletim dokusu ve tohum bulunuyor; meyve yok, tohumlar kozalak pullarıyla ilişkili. En uygun grup hangisidir?\",\"\",[\"Damarsız tohumsuz\",\"Açık tohumlu\",\"Damarlı tohumsuz\",\"Yalnız maya mantarı\",\"Zorunlu bütün kapalı tohumlular\"],1,\"Tohum taşıyıp meyve oluşturmayan kozalaklı öğretici örnek açık tohumludur. Damarsız veya damarlı tohumsuz gruplar tohum bilgisini karşılamaz. Kapalı tohumluda yumurtalık ve meyve düzeni bulunur; mantar örneği de bu bitkisel organ düzeniyle uyumsuzdur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tohumlu bitkilerde tohum taslağının ve tohumun yerleşimi sınıflama kanıtıdır. İletim dokusu, tohumun varlığı ve tohumun bir yumurtalık kökenli meyve yapısıyla çevrili olması ayrı özelliklerdir.",
+        "Kozalak, belirli tohumlu bitkilerde üreme yapıları taşır; meyveyle aynı organ adı değildir. Tohum bulunduğunu söylemek tek başına o tohumun meyve içinde olduğunu söylemez."
+      ],
+      "strategy": "Önce tohumun varlığıyla tohumsuz adayları dışla; kalan tohumlu seçenekleri tohumun kozalak pullarıyla ilişkisi ve meyve kanıtıyla karşılaştır.",
+      "steps": [
+        "İletim dokusu ve tohum pozitiftir. Bu veri damarsız tohumsuz ve damarlı tohumsuz adayların üreme özellikleriyle uyuşmaz.",
+        "Tohumlar kozalak pullarıyla ilişkilidir ve meyve yoktur. Bu olumlu yerleşim kanıtı, tohumun kapalı yumurtalık/meyve düzeninde olmadığı açık tohumlu örneğe uyar.",
+        "B seçilir. Kozalağı meyve sanarak kapalı tohumluya gitme; maya mantarı da verilen damar–tohum–kozalak birlikteliğini karşılamaz. Sonuç grubu destekler, kesin tür adını vermez."
+      ],
+      "optionReasons": [
+        "Yanlış. Damarsız tohumsuz grup hem iletim dokusu hem tohum bakımından verilen pozitif kanıtlarla uyuşmaz.",
+        "Doğru. İletim dokusu ve tohumla birlikte kozalak pullarıyla ilişkili, meyve içinde olmayan tohum düzeni açık tohumlu grubu destekler.",
+        "Yanlış. Damarlı tohumsuzda iletim dokusu bulunabilir; fakat soruda tohum doğrudan saptanmıştır. “Tohumsuz” koşulu bu nedenle sağlanmaz.",
+        "Yanlış. Maya tek hücreli mantar örneğidir; bitkisel iletim dokusu, tohum ve kozalak yapılarıyla tanımlanmaz.",
+        "Yanlış. Kapalı tohumluların grup düzeninde tohum taslakları yumurtalık içinde yer alır; kozalak pullarıyla açıkta ilişkili tohum, bütün kapalı tohumlulara zorunlu örnek olamaz."
+      ],
+      "commonError": "Tohum taşıyan her yapıyı meyve sanmak veya yalnız damarlanma kanıtını kullanıp tohum yerleşimini gözden kaçırmak.",
+      "check": "Kozalak ile meyveyi iki ayrı yapı olarak adlandırabiliyor musun? “Tohum var” satırından sonra mutlaka “nerede bulunuyor?” sorusunu da yanıtla."
+    }
+  },
+  {
+    "id": "f011-plants-3",
+    "identity": "[\"f011-plants-3\",\"Tipik döllenme sonrası gelişen bir çiçekte P yumurtalık, Q tohum taslağı olarak tanımlanıyor. Hangi ürün eşleştirmesi doğrudur?\",\"\",[\"P–polen, Q–kök\",\"P–tohum, Q–meyve\",\"P–meyve, Q–tohum\",\"P–ribozom, Q–kapsid\",\"P–gamet, Q–stoma\"],2,\"Tipik gelişimde yumurtalık meyveye, tohum taslağı tohumu oluşturacak yapıya dönüşür. Polen erkek organın başçığıyla ilişkilidir. Diğer eşleştirmeler ürün kökenlerini değiştirir veya ilgisiz hücresel yapılara taşır. Sorunun tipik döllenme sonrası gelişim koşulu korunmalıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir çiçek organı ile o organdan gelişen ürün farklı düzeylerdir. Yumurtalık dişi organın bölümüdür; içinde tohum taslakları bulunur. Erkek organdaki başçık ise başka bir yapı ve ürün ilişkisi taşır.",
+        "Köken eşleştirmesinde çevreleyen yapı ile onun içindeki yapı ayrı izlenir. Soruda tipik döllenme sonrası gelişim denmesi, farklı özel gelişim yollarını değil belirtilen temel modeli kullanmayı gerektirir."
+      ],
+      "strategy": "P ve Q’yu önce iç içe konumlarıyla çiz; ürünün kime ait olduğunu yerleşim benzerliğiyle değil gelişim kökeniyle iki ayrı okta eşleştir.",
+      "steps": [
+        "P yumurtalık, Q onun içindeki tohum taslağı olarak tanımlanmıştır. P ve Q’yu aynı yapı sayma; bir dış organ bölmesi ve içerideki gelişim birimi söz konusudur.",
+        "Tipik döllenme sonrası gelişimde yumurtalık meyvenin temel kökenini, tohum taslağı tohumun kökenini oluşturur: P → meyve, Q → tohum.",
+        "C iki oku doğru korur. Polen başçıkla ilişkilidir; kök, ribozom, kapsid, gamet ve stoma bu iki yapının tipik gelişim ürünleri değildir. P ile Q’yu ters çeviren B de elenir."
+      ],
+      "optionReasons": [
+        "Yanlış. Polen başçıkta oluşur; yumurtalığın gelişim ürünü değildir. Tohum taslağından da bu modelde kök değil tohum gelişir.",
+        "Yanlış. İki köken ters çevrilmiştir: tohum taslağı tohuma, yumurtalık meyveye gelişir; P tohum ve Q meyve değildir.",
+        "Doğru. Verilen tipik döllenme sonrası modelde P yumurtalıktan meyve, Q tohum taslağından tohum gelişir; iki köken doğru eşleşir.",
+        "Yanlış. Ribozom hücresel protein sentezi yapısı, kapsid viral protein kılıfıdır. Yumurtalık ve tohum taslağının gelişim ürünleri değildir.",
+        "Yanlış. Gamet döllenmeye katılan hücre, stoma yaprak gaz alışverişi açıklığıdır; P ve Q’nun tipik döllenme sonrası ürünlerini adlandırmaz."
+      ],
+      "commonError": "Meyve tohumları içinde bulundurduğu için meyvenin tohumdan büyüdüğünü sanıp yumurtalık ile tohum taslağını ters eşleştirmek.",
+      "check": "İki okun başlangıcını ayrı göster: yumurtalık → ?, tohum taslağı → ?. Ürünlerin birinin diğerinin içinde bulunması kökenlerini aynı yapmaz."
+    }
+  },
+  {
+    "id": "f011-plants-4",
+    "identity": "[\"f011-plants-4\",\"Kara yosunu, eğrelti, çam ve elma grupları için yalnız ‘yaşam döngüsünde meyve oluşturmaz’ bilgisi verilmiş. Bu, bir bireyin o andaki meyvesiz görünümü değil grubun üreme özelliğidir. Başka bilgi yoksa hangi sonuç doğrudur?\",\"\",[\"Kesin çamdır\",\"Kesin kara yosunudur\",\"Kesin eğreltidir\",\"İlk üç aday kalır; tek aday için ek kanıt gerekir\",\"Dört adayın hepsi elenir\"],3,\"Kara yosunu, eğrelti ve çam meyvesiz öğretici örneklerdir; yalnız elma elenir. Dolayısıyla damar veya tohum gibi ek kanıt gerekir. Birden fazla aday varken kesin tür adı vermek ölçülmeyen bilgiyi eklemektir. Model tüm bitkiler değil dört tanımlı örnek arasındaki süzmeyi sınar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Olumsuz sınıflama kanıtı birden fazla adayı dışarıda bırakabilir veya birden fazlasıyla uyumlu kalabilir. Bir grupta üreme yapısının yaşam döngüsü boyunca oluşmaması, tek bireyde o an görünmemesiyle karıştırılmamalıdır.",
+        "Meyve ile tohum farklı yapılardır. Tohumsuz gruplar ve meyve oluşturmayan tohumlu gruplar aynı “meyve oluşturmaz” koşulunu farklı üreme düzenleriyle sağlayabilir; ikinci bir ayırıcı özellik gerekebilir."
+      ],
+      "strategy": "Yaşam döngüsünde meyve oluşturma özelliğini dört adayın her birine tek tek uygula ve kalan kümenin büyüklüğünü bul; eksik damar veya tohum bilgisini tahminle tamamlama.",
+      "steps": [
+        "Kök grup üreme özelliğini açıklar; bireyin geçici olarak meyvesiz olması sorulmuyor. Elma grubu yaşam döngüsünde meyve oluşturduğu için verilen koşulla elenir.",
+        "Kara yosunu ve eğrelti tohumsuz, çam ise meyve oluşturmayan açık tohumlu örnektir. Üç grup da yaşam döngüsünde meyve oluşturmaz koşulunu sağlar.",
+        "Geriye ilk üç aday kaldığından D doğrudur. Çamı ayırmak için tohum, kara yosunu ile eğreltiyi ayırmak için iletim dokusu gibi ek kanıt istenir; bu bilgiler verilmemiştir."
+      ],
+      "optionReasons": [
+        "Yanlış. Çam meyve oluşturmaz ama bu tek özelliği sağlayan tek aday değildir; kara yosunu ve eğrelti de meyve oluşturmaz.",
+        "Yanlış. Kara yosunu koşulla uyumludur; ancak eğrelti ve çamı eleyen damar veya tohum bilgisi bulunmadığından kesinleşmez.",
+        "Yanlış. Eğrelti meyve oluşturmaz; aynı negatif özelliği sağlayan diğer iki aday için ayırıcı kanıt verilmemiştir.",
+        "Doğru. Elma yaşam döngüsünde meyve oluşturduğu için elenir; kara yosunu, eğrelti ve çam kalır. Bunları tek adaya indirmek için ek grup özelliği gerekir.",
+        "Yanlış. Meyve oluşturmayan üç grup koşulla uyumludur; bu nedenle bütün adayların elendiği değil yalnız meyveli grubun elendiği söylenir."
+      ],
+      "commonError": "Tek bir olumsuz özellik görünce akla gelen ilk adayı kesin seçmek veya eksik damar/tohum bilgisini kendiliğinden var saymak.",
+      "check": "Kalan aday listesini adlarıyla yaz: kara yosunu, eğrelti, çam. Yanıtında bunlardan yalnız biri kaldıysa hangi verilmiş kanıtın diğer ikisini elediğini göster; gösteremiyorsan kesinliği kaldır."
+    }
+  },
+  {
+    "id": "f011-plants-5",
+    "identity": "[\"f011-plants-5\",\"Bir öğrenci ‘bitkide spor gördüm, bu yüzden yaşam döngüsünün tamamında döllenme olamaz’ diyor. Hangi yanıt doğrudur?\",\"\",[\"Spor her zaman tohumdur\",\"Spor her zaman hayvan gametidir\",\"Spor bulunan bütün canlılar bakteridir\",\"Döllenme varsa bitki olamaz\",\"Sporlu bitki döngüsünde farklı evrelerde gamet oluşumu ve döllenme bulunabilir\"],4,\"Bitki döl almaşında sporofit mayozla spor oluşturabilir; gametofit gamet üretir ve döllenme diploit evreye geçişi sağlayabilir. Sporun bulunması tüm döngüyü eşeysiz yapmaz. Spor tohum veya zorunlu hayvan gameti değildir; bütün sporluları bakteriye veya bitki dışına taşımak hatalıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Spor, gamet ve tohum farklı biyolojik yapılardır. Bitki sporofitinde mayozla haploit sporlar oluşabilir; sporun geliştiği gametofit evresinde gametler üretilir. Tohum ise embriyo içeren daha farklı bir gelişim yapısıdır.",
+        "Bir yaşam döngüsünün belirli bir evresini gözlemek, gözlenmeyen bütün evreleri dışlamak değildir. “Spor görüldü” bilgisi hangi yapı bulunduğunu söyler; bütün döngünün olay sırası ayrıca incelenmelidir."
+      ],
+      "strategy": "Öğrencinin tek yapı gözlemiyle bütün döngü için kurduğu yasa arasına evreleri yerleştir; spor, gamet ve diploit evre arasındaki geçişleri karıştırmadan iddiayı sına.",
+      "steps": [
+        "Gözlenen yapı spordur; bu ne doğrudan embriyolu tohum ne de her zaman gamettir. Bitki sporunun gelişmesi gametofit evreye katkı sağlayabilir.",
+        "Gametofit gametler oluşturabilir ve gametlerin döllenmesiyle yeni diploit sporofit evre başlayabilir. Sporun bulunduğu döngüde bu farklı evrelerin de yer alması mümkündür.",
+        "Bu nedenle yalnız spor gözleminden döllenmenin bütün döngüde olanaksızlığı çıkmaz; E doğrudur. Bitkilerde döllenme olabilir ve spor görülmesi örneği otomatik bakteri veya hayvan yapmaz."
+      ],
+      "optionReasons": [
+        "Yanlış. Spor tohumla aynı yapı değildir; tohum embriyo ve onu destekleyen/koruyan yapıları içerir. İki yayılma birimini eşitlemek döngüyü açıklamaz.",
+        "Yanlış. Bitki sporu her zaman hayvan gameti değildir; farklı köken ve gelişim rollerine sahip hücreler aynı ad altında birleştirilemez.",
+        "Yanlış. Bitkiler ve mantarlar gibi başka gruplar da spor oluşturabilir. Spor gözlemi bütün canlıları bakteri sınıfına yerleştirmez.",
+        "Yanlış. Döllenme bitki yaşam döngülerinde bulunabilir; varlığı bitki olmayı dışlamaz. Öğrencinin genellemesini ters yönde sürdürür.",
+        "Doğru. Spor oluşan evrenin yanında gamet oluşumu ve döllenme evreleri bulunabilir. Tek spor gözlemi bütün döngüyü döllenmesiz ilan etmeye yetmez."
+      ],
+      "commonError": "Sporu gamet veya tohumla aynı yapı saymak ve tek evrede görülen eşeysiz gelişimi bütün yaşam döngüsünün zorunlu özelliği yapmak.",
+      "check": "Spor → gametofit → gamet → döllenme → sporofit akışını kur. Sporu gördüğün noktadan ilerideki döllenme basamağını silmek için soruda ayrıca bir engel verilmiş mi?"
+    }
+  },
+  {
+    "id": "f011-plants-6",
+    "identity": "[\"f011-plants-6\",\"Tipik bir bitkinin fotosentetik yaprak hücresi ve kloroplast taşımayan kök hücresi inceleniyor. Hangi ifade uygundur?\",\"\",[\"Her bitki hücresinin fotosentez yapması gerekmez; kök hücresinde solunum sürebilir\",\"Kök hücresi canlı değildir\",\"Bitkide solunum yalnız gece olur\",\"Kloroplast yoksa DNA da yoktur\",\"Kök hücresi otomatik prokaryottur\"],0,\"Bitkinin bütün hücreleri kloroplastlı fotosentetik hücre değildir. Kök hücresi ökaryot ve canlı olabilir; kullanılabilir enerji için solunum sürer. Solunum yalnız geceye özgü değildir. Kloroplast yokluğu DNA’nın veya çekirdekli hücre düzeninin yokluğu anlamına gelmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Çok hücreli organizmada farklılaşmış hücreler farklı organel ve görev dağılımı gösterebilir. Bir dokunun yapabildiği iş, organizmanın bütün hücrelerinde aynı biçimde yürümek zorunda değildir.",
+        "Fotosentez ışık enerjisiyle organik madde yapımı, hücresel solunum organik maddeden kullanılabilir enerji elde etmeyle ilişkili süreçtir. Kloroplast, çekirdek DNA’sı ve mitokondri birbirinden farklı hücresel yapılardır."
+      ],
+      "strategy": "Yaprak ile kökü aynı organizmanın farklılaşmış iki hücre örneği olarak karşılaştır; fotosentez yeteneğiyle canlılık, kalıtım ve solunumu ayrı ayrı değerlendir.",
+      "steps": [
+        "Yaprak hücresi fotosentetiktir; incelenen kök hücresi kloroplast taşımaz. Bu karşılaştırma bitkide her hücrenin aynı fotosentetik düzene sahip olmadığını gösterir.",
+        "Kloroplast yokluğu solunumun veya canlılığın yokluğu değildir. Kök hücresi organik maddeyi kullanarak solunumu sürdürebilir; bitkide solunum yalnız geceye özgü değildir.",
+        "A bu görev ayrımını korur. DNA’nın yokluğu veya prokaryota dönüşme kloroplastsızlıktan çıkmaz; kök hücresi bitkinin farklılaşmış ökaryot hücresi olarak kalır."
+      ],
+      "optionReasons": [
+        "Doğru. Seçilmiş kök hücresinde kloroplast bulunmaması her bitki hücresinin fotosentez yapmak zorunda olmadığını gösterir; enerji için hücresel solunum sürebilir.",
+        "Yanlış. Fotosentez yapmamak cansız olmak değildir. Kök hücresi su/mineral alımı ve metabolizma gibi canlı işlevleri sürdürebilir.",
+        "Yanlış. Bitki hücreleri solunumu gündüz de sürdürebilir; ışıkta fotosentez olması ATP gerektiren hücresel işleri ve solunumu otomatik durdurmaz.",
+        "Yanlış. Kloroplast bulunmaması çekirdek DNA’sının yokluğu anlamına gelmez; iki yapı ayrı ayrı değerlendirilir.",
+        "Yanlış. Kloroplastsız bir kök hücresi çekirdekli bitki hücresi olmaya devam eder; tek organelin yokluğu onu otomatik prokaryot yapmaz."
+      ],
+      "commonError": "Fotosentezi bitki hücresinin tek canlılık yolu sayıp kloroplastsız hücreyi ölü, kalıtsız veya prokaryot ilan etmek.",
+      "check": "Fotosentez yapmayan kökün kullanacağı organik madde bitkinin başka dokularından gelebilir. Organik besinin nerede üretildiği ile nerede solunumda kullanıldığını ayrı gösterebilmelisin."
+    }
+  },
+  {
+    "id": "f011-plants-7",
+    "identity": "[\"f011-plants-7\",\"İki bitkinin ikisi de spor oluşturuyor. Birinde iletim dokusu saptanmazken diğerinde saptanıyor. Bu veri hangi iki öğretici örneği ayırabilir?\",\"\",[\"Çam ile elma\",\"Kara yosunu ile eğrelti\",\"İki farklı virion\",\"Maya ile bakteri\",\"İki kapalı tohumlu meyve\"],1,\"Kara yosunu damarsız tohumsuz, eğrelti damarlı tohumsuzdur. İkisi de sporlu döngü taşırken iletim dokusu farkıyla ayrılır. Çam ve elma tohumlu örneklerdir; diğer seçenekler bitkisel damar–spor karşılaştırmasının konusu değildir. Spor görünce ikisini aynı alt grupta eşitlemek doğru değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Spor oluşumu ile iletim dokusu bulunması birbirinden bağımsız bitki özellikleridir. Tohumlu bitkilerde de mikrospor ve megaspor evreleri bulunabilir; spor gözlemi tek başına tohumsuz veya damarsız demek değildir.",
+        "İki örneği karşılaştıran soruda ortak özellik ve farklı özellik ayrı kullanılmalıdır. Aynı gruba ait olma veya benzer üreme yapısı taşıma, taşıma dokusunda aynı durumu göstermelerini zorunlu kılmaz."
+      ],
+      "strategy": "Aday ikililerde önce iki bitki olma ve spor oluşturabilme koşulunu koru; belirleyici elemede bir üyenin damarsız, diğerinin damarlı olması gerektiğini denetle.",
+      "steps": [
+        "Spor oluşumu iki bitkide ortaktır; ayırıcı veri değildir. Asıl karşıtlık, birinde iletim dokusu yokken diğerinde bulunmasıdır.",
+        "Kara yosunu damarsız, eğrelti damarlı bitki örneğidir; ikisinde de sporlu döngü vardır. Böylece hem ortak spor koşulu hem damar karşıtlığı birlikte sağlanır.",
+        "B seçilir. Çam ve elma da spor evreleri taşır, fakat ikisi de damarlı olduğundan verilen karşıtlığı kuramaz. Virion veya maya–bakteri ikilisi iki bitki koşulunu, iki meyve de iki farklı damar grubunu karşılamaz."
+      ],
+      "optionReasons": [
+        "Yanlış. Çam ve elma tohumlu oldukları hâlde spor da oluşturabilir; eleme nedeni spor yokluğu değildir. İkisi de iletim dokusu taşıdığı için damarsız–damarlı karşıtlığını sağlayamaz.",
+        "Doğru. Kara yosunu damarsız, eğrelti damarlıdır; iki grubun yaşam döngüsünde de spor oluşur. Verilen ortaklık ve farklılığı birlikte sağlarlar.",
+        "Yanlış. Virionlar bitki değildir; bitkisel iletim dokusu ve sporlu bitki döngüsü taşıyan iki örneği karşılamaz.",
+        "Yanlış. Maya mantar, bakteri prokaryot örneğidir; ikisi iki bitki grubu olarak damar kanıtıyla karşılaştırılamaz.",
+        "Yanlış. İki kapalı tohumlu meyve, bir damarsız bir damarlı bitki grubu ikilisi değildir; kapalı tohumlu bitkiler damarlıdır ve meyveler ayrıca organ düzeyidir."
+      ],
+      "commonError": "Spor oluşturmayı damar yokluğu veya kesin tohum yokluğu sanmak; çam ve elmayı yanlış biçimde spor oluşturamaz diye elemek.",
+      "check": "Yanlış A’yı elerken doğru nedeni söyle: ikisi de damarlıdır. Spor oluşturabildikleri gerçeği korunurken bile A’nın neden elendiğini açıklayabiliyorsan iki ekseni ayırmışsındır."
+    }
+  },
+  {
+    "id": "f011-plants-8",
+    "identity": "[\"f011-plants-8\",\"Bir yaprakta stoma açıklıklarının kapanmasıyla su buharı kaybı azalıyor. Bu gözlemin en doğrudan ilişkili olduğu işlev hangisidir?\",\"\",[\"Kapsid üretimi\",\"DNA’nın tamamen yok olması\",\"Gaz alışverişi ve terleme düzenlenmesi\",\"Meyvenin tohuma dönüşmesi\",\"Bakteriyel endospor oluşumu\"],2,\"Stomalar gaz alışverişi ve terlemeyle ilişkilidir; kapanma su buharı çıkışını azaltabilir. Kapsid, endospor veya DNA yokluğu verilmemiştir. Meyve ve tohumun kökenleri ayrı konudur. Bu deney bütün bitkilerde stomaların yalnız aynı yüzeyde bulunduğu sonucunu da vermez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Terlemede sıvı suyun buharlaşması ve su buharının dış ortama geçmesi söz konusudur. Yaprak yüzeyindeki açıklıkların alanı, gazların geçişine direnç oluşturan etmenlerden biridir.",
+        "Bir yapının açılıp kapanması ile genetik bilginin yok olması veya yeni bir üreme organına dönüşmesi farklı olaylardır. Yapı–işlev yorumu, deneyde doğrudan değişen akışla ilişkilendirilmelidir."
+      ],
+      "strategy": "Müdahaleyi açıklık alanı, gözlemi su buharı kaybı olarak etiketle; ikisini doğrudan bağlayan yaprak işlevini, ilgisiz üreme ve kalıtım süreçlerinden ayır.",
+      "steps": [
+        "Müdahale stoma açıklıklarının kapanmasıdır; ölçülen sonuç su buharı kaybının azalmasıdır. Hücre sayısı veya kalıtsal materyal değil yüzeyden bir madde akışı değişmiştir.",
+        "Stomalar gazların geçişine ve terlemeyle su kaybına katılır. Açıklık kapanınca bu yolun su buharı geçişine katkısının azalması gözlemle uyumludur.",
+        "C bu doğrudan işlevi verir. Viral kapsid, bakteriyel endospor veya meyve–tohum dönüşümü yaprak açıklığıyla aynı süreç değildir; DNA’nın tamamen yok olması da gözlenmemiştir."
+      ],
+      "optionReasons": [
+        "Yanlış. Kapsid viral protein kılıfıdır; yaprak stomasının kapanması viral parçacık üretimi ölçümü değildir.",
+        "Yanlış. Açıklık kapanması hücrelerdeki DNA’nın tamamen yok olduğunu göstermez; gözlem su buharı akışına aittir.",
+        "Doğru. Stoma açıklıkları gaz alışverişi ve terlemeyle ilişkilidir; kapanma sonrası su buharı kaybının azalması bu düzenleyici işleve doğrudan uyar.",
+        "Yanlış. Meyve ve tohum farklı gelişim kökenlerine sahiptir; stoma kapanması meyveyi tohuma çeviren bir gelişim olayı değildir.",
+        "Yanlış. Endosporlaşma bazı bakterilerin dayanıklı durum oluşturmasıdır; bitki yaprağındaki açıklığın kapanması bu hücresel süreç değildir."
+      ],
+      "commonError": "Bir kapanma hareketini yeni organ oluşumu sanmak veya su buharı kaybını kökün su alımıyla aynı yer ve olay olarak okumak.",
+      "check": "İzlediğin maddenin hâlini ve yerini yaz: yapraktan dışarı geçen su buharı. Yanıtın başka bir yapıdaki genom veya tohum sürecine kaymamalı."
+    }
+  },
+  {
+    "id": "f011-plants-9",
+    "identity": "[\"f011-plants-9\",\"Seçilmiş kapalı tohumlu tohumunda bir çenek, yaprakta tipik paralel damarlanma ve saçak kök birlikte görülüyor. Okul karşılaştırmasında hangi grup desteklenir?\",\"\",[\"Damarsız tohumsuz\",\"Açık tohumlu\",\"Mantar\",\"Tek çenekli\",\"Kesin bütün çift çenekliler\"],3,\"Bir çenek bilgisi tek çenekliyi destekler; paralel damar ve saçak kök tipik eşlik eden örneklerdir. Bu bitki zaten kapalı tohumlu tanımlandığından açık tohumlu veya tohumsuz seçenekleri uymaz. Yaprak tek başına bütün türlerde istisnasız teşhis yasası değildir; çoklu kanıt burada önemlidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Çenek, tohum embriyosundaki yaprak benzeri yapıdır; çenek sayısı kapalı tohumlu örneklerin okul karşılaştırmasında kullanılan gelişim kanıtlarından biridir. Damar örüntüsü ve kök biçimi farklı organlara ait ek ölçütlerdir.",
+        "Birden çok tipik özelliğin birlikte bulunması sınıflamayı güçlendirebilir. Ancak tek bir yaprak çizgisini bütün türler için istisnasız kural saymak yerine embriyo ve kök gibi bağımsız veriler de kullanılmalıdır."
+      ],
+      "strategy": "Tohum embriyosundaki doğrudan çenek sayısına öncelik ver; yaprak ve kök kanıtlarını bu kararı destekleyip desteklemedikleri yönünden ayrıca değerlendir.",
+      "steps": [
+        "Örnek kapalı tohumludur ve tohumda bir çenek bulunmuştur. Okul karşılaştırmasında bu doğrudan embriyo kanıtı tek çenekli grubu destekler.",
+        "Tipik paralel damarlanma ve saçak kök, bu seçilmiş örnekte aynı grup yorumuyla uyumlu iki ek özelliktir. Üç kanıt tek bir yaprağın görünüşüne indirgenmez.",
+        "D seçilir. Damarsız tohumsuz, açık tohumlu veya mantar, verilen kapalı tohumlu tohum/embriyo bağlamına uymaz; çift çenekli hükmü de açık bir çenek sayısıyla çelişir. Tipik ilişkileri tüm türler için yeni bir istisnasız yasaya dönüştürme."
+      ],
+      "optionReasons": [
+        "Yanlış. Damarsız tohumsuz grupta tohum bulunmaz; kapalı tohumlu tohumunda çenek incelendiği öncülüne uymaz.",
+        "Yanlış. Örnek kapalı tohumlu olarak verilmiştir; ayrıca tek çenekli–çift çenekli okul ayrımı bu kapsam içindedir. Açık tohumluya taşımak kapsamı değiştirir.",
+        "Yanlış. Mantarlar çenekli bitki embriyosu, yaprak damarlanması ve bitki köküyle tanımlanmaz; üç bitkisel kanıtı karşılamaz.",
+        "Doğru. Bir çenek doğrudan tek çenekli yorumunu destekler; verilen tipik paralel damar ve saçak kök de aynı yorumla uyumludur.",
+        "Yanlış. Bir çenek saptanmışken örneği kesin bütün çift çeneklilere bağlamak çenek sayısına aykırıdır; tek örneği bütün gruba yayma hatası da içerir."
+      ],
+      "commonError": "Yalnız yaprak damarlanmasından bütün bitkiler için kesin sınıf çıkarmak veya açık embriyo çenek sayısını ikinci plana atmak.",
+      "check": "En güçlü doğrudan kanıt hangi organdan geldi? Tohumdaki bir çenek. Diğer iki tipik özelliği destek olarak kullan; onların her türde istisnasız olduğunu söyleme."
+    }
+  },
+  {
+    "id": "f011-plants-10",
+    "identity": "[\"f011-plants-10\",\"Bir bitkinin organik maddesindeki karbonun kaynağı araştırılıyor. Uygun ışıkta CO₂ kullanarak fotosentez yaptığı verilmiş. Temel karbon kaynağı için hangi yanıt uygundur?\",\"\",[\"Yalnız topraktan hazır nişasta\",\"Yalnız kökün yaptığı kapsid\",\"Atmosferdeki azot her zaman tek kaynak\",\"İletim dokusunun hücre dışı sindirimi\",\"Fotosentezde kullanılan CO₂\"],4,\"Fotosentezle yapılan organik maddenin karbonu kullanılan CO₂’den gelir. Kökün su ve mineral alması bitkinin tüm organik besinini topraktan hazır aldığı anlamına gelmez. Diğer seçenekler karbonla azotu karıştırır veya bitki organlarına ilgisiz viral ve sindirim görevleri yükler.\"]",
+    "guidance": {
+      "knowledge": [
+        "Organik maddedeki karbonun kaynağını bulmak, enerji kaynağını veya hücreye alınan su/minerallerin kaynağını bulmakla aynı soru değildir. Bir atomun kaynağı, o atomu içeren başlangıç maddesi izlenerek belirlenir.",
+        "Fotosentezde ışık enerji sağlar; karbon bağlanmasıyla organik moleküllerin karbon iskeletleri oluşur. Topraktan su ve mineral alınması, bitkinin bütün organik karbonu topraktan hazır polimer olarak aldığı anlamına gelmez."
+      ],
+      "strategy": "Kaynakları “enerji”, “karbon içeren girdi” ve “su/mineral” olarak ayır; organik üründeki karbonu soruda kullanılan karbonlu girdiye atom izleyerek bağla.",
+      "steps": [
+        "Sorulan organik maddenin karbonudur; bitkinin ışık enerjisi veya kökten aldığı su miktarı değildir. Kökte CO₂ kullanılarak fotosentez yapıldığı açıkça verilir.",
+        "CO₂ karbon içerir ve fotosentetik karbon bağlanmasına girdi sağlar. Işık enerjidir; mineral ve su alımı karbon atomunun bu verilen kaynağının yerine geçmez.",
+        "E’deki fotosentezde kullanılan CO₂ doğru kaynaktır. Hazır nişasta alımı, kapsid veya iletim dokusunda dış sindirim verilmemiştir; N₂ de karbon içermediğinden organik karbonun kaynağı olamaz."
+      ],
+      "optionReasons": [
+        "Yanlış. Soruda hazır nişastanın topraktan alındığı söylenmez; organik madde CO₂ kullanılarak fotosentezle üretilmektedir. Kökün su/mineral alımı nişasta alımıyla eşitlenemez.",
+        "Yanlış. Kapsid viral protein kılıfıdır; kökün kapsid üretmesi bu deneydeki fotosentetik organik karbon kaynağı değildir.",
+        "Yanlış. Atmosferik N₂ azot içerir, karbon içermez; organik maddedeki karbon atomlarını tek kaynak olarak sağlayamaz.",
+        "Yanlış. İletim dokusu organlar arası taşıma yapar; soruda hücre dışı sindirimle karbon edinme yolu tanımlanmamıştır.",
+        "Doğru. Fotosentezde kullanılan CO₂, organik moleküllerin karbon iskeletine katılan karbonun verilen temel kaynağıdır; ışık ise enerji sağlar."
+      ],
+      "commonError": "Bitki toprağa bağlı olduğu için organik maddenin karbonunun da mutlaka topraktan hazır nişasta olarak geldiğini sanmak; enerjiyi madde kaynağıyla karıştırmak.",
+      "check": "Karbon kaynağı dediğin girdinin formülünde C var mı ve soruda o girdinin kullanıldığı söyleniyor mu? CO₂ iki koşulu sağlar; ışık ve N₂ aynı soruyu yanıtlamaz."
+    }
+  },
+  {
+    "id": "f011-fungi-1",
+    "identity": "[\"f011-fungi-1\",\"Çekirdekli, kloroplastsız, kitin içeren duvarlı bir canlı büyük besinleri dışarı salgıladığı enzimlerle parçalayarak küçük ürünleri emiyor. Hangi grup güçlü biçimde desteklenir?\",\"\",[\"Mantarlar\",\"Bütün virüsler\",\"Kesin siyanobakteri\",\"Damarlı kara bitkisi\",\"Zorunlu metanojen arke\"],0,\"Ökaryotluk, kitinli duvar ve dış sindirim–emilim düzeni mantarı destekler. Virüs hücre değildir; siyanobakteri ve arke prokaryottur. Bitki örneğinde selülozlu duvar ve çoğunlukla fotosentetik dokular beklenir. Tek bir benzerlik yerine üç kanıtın birleşimi kullanılmalıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Âlem karşılaştırmasında hücre tipi, duvar bileşimi ve besin alma yolu farklı kanıtlar sağlar. Çekirdek ökaryot düzeni destekler; yalnız hücre duvarı bulunması ise bir örneği bitki saymaya yetmez.",
+        "Heterotrof beslenmede hazır organik kaynaklardan yararlanılır. Büyük besinleri dış enzimlerle küçük ürünlere ayırmak ve sonra emmek, parçacığı bütün olarak yutmak veya ışıkla inorganik karbondan üretmekten farklı bir mekanizmadır."
+      ],
+      "strategy": "Çekirdek, duvar maddesi ve dış sindirim–emilim yolunu birbirinden bağımsız üç kanıt olarak kesiştir; tek başına kloroplast yokluğuyla bütün sınıflamayı yapma.",
+      "steps": [
+        "Çekirdek bulunması ökaryot hücre düzenini destekler; örneği doğrudan virion, siyanobakteri veya arke gibi çekirdeksiz/hücresel olmayan seçeneklere yerleştirme.",
+        "Kitin içeren duvar, kloroplast yokluğu ve büyük besinlerin dışarıda parçalanıp küçük ürünlerin emilmesi birlikte değerlendirilir. Bu özellikler mantar örneğini güçlü biçimde destekler.",
+        "A seçilir. Damarlı kara bitkisi tanısı için damar ve bitkisel organ kanıtı yoktur; yalnız duvarlı ve hareketsiz olmayı bitki diye okumak, kitin ve beslenme yolunu göz ardı eder."
+      ],
+      "optionReasons": [
+        "Doğru. Ökaryot hücre, kitin içeren duvar, kloroplast yokluğu ve dış sindirim sonrası emilim birlikteliği mantar grubunu güçlü biçimde destekler.",
+        "Yanlış. Virion çekirdekli, duvarlı ve besin emen bir hücre değildir; bütün virüsler yorumu verilen hücresel kanıtlarla uyuşmaz.",
+        "Yanlış. Siyanobakteriler prokaryottur; çekirdek ve kitinli duvarla birlikte verilen dış sindirim yolu kesin siyanobakteri tanısı vermez.",
+        "Yanlış. Hücre duvarı tek başına damarlı kara bitkisi kanıtı değildir. İletim dokusu verilmemiş; duvar bileşimi ve dış sindirim–emilim mantar yorumunu desteklemektedir.",
+        "Yanlış. Arkeler prokaryot düzendedir; çekirdekli hücreyi zorunlu metanojen arke saymak hücre tipiyle çelişir. Metan üretimi de ölçülmemiştir."
+      ],
+      "commonError": "Duvar taşıyan ve hareket etmeyen her canlıyı bitki sanmak veya tek başına heterotrofluğu kesin mantar kanıtı saymak.",
+      "check": "Gerekçende en az üç farklı eksen bulunmalı: çekirdek, kitinli duvar, dış sindirim–emilim. Tek bir sözcüğün doğru çıkması bütün sınıflamayı tek başına taşımaz."
+    }
+  },
+  {
+    "id": "f011-fungi-2",
+    "identity": "[\"f011-fungi-2\",\"Bir mantarın hücre dışında bulunan büyük polimerden yararlanma sırası hangisidir?\",\"\",[\"Büyük polimeri çekirdeğe al → genomu yok et → dışarı enzim üret\",\"Dışarı enzim salgıla → büyük besini küçük ürünlere parçala → küçük ürünleri em\",\"Kapsid oluştur → RNA’yı polene çevir → endospor kur\",\"Önce nişastayı aynı büyüklükte zar içinden geçir → sonra dışarı sindir\",\"Kloroplast kur → polimeri fotosentezle yut → kitini kaldır\"],1,\"Temel mantar beslenmesinde dış enzim büyük besini daha küçük ürünlere parçalar; bu ürünler zar üzerinden alınır. Diğer sıralamalar büyük polimeri doğrudan geçirme, sindirim yerini ters çevirme veya mantara viral ve fotosentetik yapılar yükleme hataları içerir. Enzim salgısı, parçalama ve emilim ayrı basamaklardır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Polimer, küçük yapı birimlerinin bağlanmasıyla oluşan büyük moleküldür. Zar üzerinden uygun küçük ürünlerin alınması, büyük polimerin aynı büyüklükte doğrudan geçirilmesinden farklıdır.",
+        "Enzim, uygun besinin bağlarını parçalama tepkimesini katalizleyebilir; enzimin nerede çalıştığı sindirimin yerini belirler. Dışarıdaki polimerden yararlanmada enzim salgısı, hidroliz ve zar alımı farklı olaylar olarak izlenir."
+      ],
+      "strategy": "Polimerin konumunu ve büyüklüğünü her aşamada takip et; zar alımı için uygun ürünün hangi olaydan sonra hazır olacağını belirleyen bağımlılık sırasını kullan.",
+      "steps": [
+        "Besin büyük polimer hâlinde hücre dışındadır. Mantar bu besini aynı büyüklükte doğrudan çekirdeğe veya zardan içeri almak zorunda değildir; dış sindirim yolu söz konusudur.",
+        "Önce uygun enzim hücre dışına salgılanır ve polimeri küçük ürünlere parçalar. Küçük ürünler oluştuktan sonra uygun zar alımıyla hücreye girebilir.",
+        "B bu sırayı korur. Önce aynı büyüklükte alıp sonra dışarıda sindirmek bağımlılığı ters çevirir; genom yok etme, kapsid/polen oluşturma veya kloroplastla yutma bu beslenme yolunun basamakları değildir."
+      ],
+      "optionReasons": [
+        "Yanlış. Dışarıdaki büyük besini çekirdeğe almak ve genomu yok etmek dış sindirim mekanizması değildir; kalıtsal materyalin ortadan kalkması besinden yararlanmanın koşulu değildir.",
+        "Doğru. Uygun dış enzim sağlanır, polimer küçük ürünlere parçalanır, ardından küçük ürünler emilir. Malzemenin konumu ve zar alımı için gereken büyüklük sırası korunur.",
+        "Yanlış. Viral kapsid, RNA’nın polene dönüşmesi ve bakteriyel endospor bu mantarın polimer beslenme yoluyla ilişkili basamaklar değildir.",
+        "Yanlış. Büyük nişastanın aynı büyüklükte önce zar içinden geçmesi, küçük ürünlerin dış sindirimle hazırlanması gereğini ters çevirir; dış sindirim alımdan önce yürütülür.",
+        "Yanlış. Mantar kloroplast kurarak polimeri fotosentezle yutmaz. Fotosentez parçacık yutma değildir; kitini kaldırmak da bu beslenme yolunun zorunlu basamağı değildir."
+      ],
+      "commonError": "Sindirim ile emilimi aynı olay sayıp büyük besinin önce içeri alınacağını, dış enzimin daha sonra gerekeceğini sanmak.",
+      "check": "Seçtiğin sırada emilimden hemen önce ne var: uygun küçük ürün mü, hâlâ büyük polimer mi? Zar alımını küçük ürün oluşmadan başlatıyorsan sırayı yeniden kur."
+    }
+  },
+  {
+    "id": "f011-fungi-3",
+    "identity": "[\"f011-fungi-3\",\"Kapalı öğretim modelinde her biri üç monomer birimli iki polimer tamamen sindiriliyor. Dört monomer içeri alınırken kayıp ve tüketim yok. Dışarıda kaç monomer kalır?\",\"\",[\"0\",\"1\",\"2\",\"4\",\"6\"],2,\"Başlangıç 2×3=6 monomer birimidir. Sindirim zincirleri ayırır, toplam birimi artırmaz; 4 birim içeri alınınca 6−4=2 dışarıda kalır. İki polimeri iki monomer sanmak veya içeri alınan miktarı toplamdan çıkarmamak yanlış sonuç verir. Kapalı ve tüketimsiz model koşulu önemlidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Polimer molekülü sayısı ile içerdiği monomer yapı birimi sayısı farklı büyüklüklerdir. Tam hidrolizde bağlı birimler ayrılınca molekül sayısı değişebilir; başlangıçtaki yapı birimlerinin kimlikleri izlenmeye devam eder.",
+        "Kapalı sayım modelinde bir birimin dışarıdan içeri taşınması toplam birim sayısını değiştirmez. Bu sayım, hidrolizde suyun katılmasını yok sayan bir kütle iddiası değildir; yalnız soruda belirtilen monomer birimleri sayılır."
+      ],
+      "strategy": "İki polimeri tek tek molekül saymak yerine her birindeki üç yapı birimini aç; içeride ve dışarıda kalan birimleri aynı toplamda denetleyen konum bilançosu kur.",
+      "steps": [
+        "İki polimerin her biri üç monomer birimi içerir: toplam 2 × 3 = 6 yapı birimi vardır. Tam sindirimden sonra bu altı birim küçük ürün hâlindedir.",
+        "Dört monomer hücre içine taşınmıştır; kayıp ve tüketim yoktur. Dışarıdaki sayı toplamdan içeridekini çıkararak bulunur: 6 − 4 = 2.",
+        "C’deki 2 seçilir ve 2 dışarıda + 4 içeride = 6 toplam denetimi yapılır. 6 sindirim sonrası ama alım öncesi, 4 içerideki sayıdır; 0 veya 1 ise ek, verilmemiş kayıp gerektirir."
+      ],
+      "optionReasons": [
+        "Yanlış. Dört monomer alınması altısının tamamının alındığı anlamına gelmez; 6 − 4 hesabı sıfır değil ikidir.",
+        "Yanlış. Altı birimden dört çıkarıldığında bir değil iki kalır. Bir sonucu için fazladan bir birimin alınması veya kaybolması gerekirdi; böyle bir olay yoktur.",
+        "Doğru. Toplam 2 × 3 = 6 monomer biriminden dört içeri alınmıştır; kayıp/tüketim olmadığından dışarıda 2 kalır.",
+        "Yanlış. 4 hücre içine alınan sayıdır; dışarıda kalan sayı değildir. İki konumu ters etiketlemek toplam içindeki yerleri karıştırır.",
+        "Yanlış. 6 alım öncesindeki toplam monomer sayısıdır. Dört birimin içeri taşındığı bilgisi uygulanmadığında dışarıdaki sayı gereğinden büyük kalır."
+      ],
+      "commonError": "İki polimeri iki monomer sanmak veya içerideki dört birimi dışarıda kalmış gibi etiketlemek; yapı birimi sayımını su katılımını dışlayan kütle korunumu iddiasına çevirmek.",
+      "check": "İçeri giren dört birimi çizimde ayrı işaretle; dışarıdakilerle birlikte altı farklı birim sayılmalı. Aynı birimi iki konumda birden sayma ve ek tüketim ekleme."
+    }
+  },
+  {
+    "id": "f011-fungi-4",
+    "identity": "[\"f011-fungi-4\",\"Şapkalı mantarda toprak altında dallanan ipliksi ağ inceleniyor. Tek ipliksi yapıya hif deniyor. Ağın adı ve temel rolü hangisidir?\",\"\",[\"Kapsid; genomu paketleme\",\"Polen; tohum oluşturma\",\"Stoma; terleme\",\"Miselyum; yayılma ve besine erişime katkı\",\"Gerçek kök; yalnız fotosentez\"],3,\"Hiflerin oluşturduğu ağ miselyumdur; substratta yayılma ve besinle etkileşime katkı sağlar. Şapka çoğu zaman üreme gövdesidir; ana ağla aynı ölçek değildir. Kapsid, polen ve stoma başka biyolojik düzenlerdir. Miselyumu bitkinin gerçek kökü veya fotosentetik organı saymak yanlıştır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Çok hücreli mantarın gövde düzeninde tek ipliksi yapı, dallanmış ağ ve görünür üreme gövdesi farklı örgütlenme düzeyleridir. Bitkideki kök veya yaprağın adı, benzer yerde duran mantar yapısına otomatik taşınmaz.",
+        "Dallanan ipliklerin substrata yayılması temas yüzeyini ve çözünmüş besine erişimi artırabilir. Bir ağın beslenmeye katkısını açıklamak için fotosentez veya gerçek bitki kökü varsaymak gerekmez."
+      ],
+      "strategy": "Önce gözlenen yapının tek iplik mi, iplikler ağı mı, üreme organı mı olduğunu ölçek bakımından belirle; sonra adı ve görevi birlikte doğru veren eşleştirmeyi sına.",
+      "steps": [
+        "Soru tek ipliğin adını hif olarak vermiştir; sorulan, çok sayıda dallanmış ipliğin oluşturduğu ağdır. Ağ, tek hif veya görünen şapkanın bütünüyle aynı düzey değildir.",
+        "Hiflerin oluşturduğu ağ miselyumdur. Substratta yayılma ve besine erişim yüzeyine katkı, bu ağın temel işleviyle uyumludur.",
+        "D hem ağın adını hem görevini doğru eşler. Kapsid, polen ve stoma başka biyolojik yapılardır; mantar ağı gerçek bitki kökü olmadığı gibi yalnız fotosentez yapan bir yapı da değildir."
+      ],
+      "optionReasons": [
+        "Yanlış. Kapsid viral genomun protein kılıfıdır; dallanan mantar hifleri ağı değildir. Genom paketleme bu ağın temel rolü değildir.",
+        "Yanlış. Polen tohumlu bitkilerin üreme düzenindedir; toprak altındaki hif ağının adı veya doğrudan tohum oluşturan yapı değildir.",
+        "Yanlış. Stoma yaprak yüzeyindeki gaz alışverişi açıklığıdır; ipliksi mantar ağı ve terleme eşleştirmesi gözlenen ölçeğe uymaz.",
+        "Doğru. Hiflerin dallanmış ağı miselyumdur; yayılma ve besine erişime katkı sağlar. Tek iplikten ağ düzeyine doğru geçiş yapılır.",
+        "Yanlış. Toprak altında bulunmak gerçek bitki kökü olmak değildir. Mantar ağı yalnız fotosentez yapmaz; mantar hücreleri kloroplastlı üretici değildir."
+      ],
+      "commonError": "Toprak altında gördüğü her yapıyı kök sanmak veya bir hifin adıyla bütün ağın adını aynı düzeyde kullanmak.",
+      "check": "Ölçek sırasını yaz: tek iplik hif, iplikler ağı miselyum, görünür şapkalı kısım üreme gövdesi olabilir. Seçimin hangi düzeyi sorduğunu açıkça belirt."
+    }
+  },
+  {
+    "id": "f011-fungi-5",
+    "identity": "[\"f011-fungi-5\",\"Bitki köküyle ilişkili mantar bitkinin fosfat alımını artırıyor; bitki mantara organik karbon sağlıyor. Her iki taraf için yarar gözleniyor. En uygun ad hangisi?\",\"\",[\"Yalnız tek taraflı parazitlik\",\"Virion birleşmesi\",\"Bakteriyel endosporlaşma\",\"Bitkinin mantara dönüşmesi\",\"Mikoriza\"],4,\"Bitki kökü–mantar arasındaki bu karşılıklı yarar örneği mikorizadır. Mantarın mineral alımına katkısı ile bitkinin organik karbon vermesi farklı yönlerdir. Verilen iki yarar tek taraflı parazitlikle uyumlu değildir; diğer seçenekler ilişkiye ilgisiz süreçlerdir. Her kök mantarının yararlı olması ayrıca varsayılmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ekolojik ortaklıkta tarafların kimliği ile kaynak akışlarının yönü ayrı izlenir. Mineral besin ve organik karbon aynı madde değildir; farklı taraflar bu iki kaynaktan farklı biçimde yararlanabilir.",
+        "Karşılıklı yarar, iki taraf için de faydanın gösterilmesini gerektirir. Bir kökte mantar bulunması tek başına yarar kanıtı değildir; alım, büyüme veya kaynak kazanımı gibi etkiler ayrıca incelenir."
+      ],
+      "strategy": "Kök–mantar birlikteliğinde fosfat ve organik karbon oklarını ters yönlerde çiz; her iki kazancı doğruladıktan sonra bu ortaklığın adını diğer süreçlerle karşılaştır.",
+      "steps": [
+        "Bitkinin fosfat alımı artar; mantarla ilişkili bu mineral kazanımı bitki için gösterilmiş yarardır. Soruda yalnız kökte bulunma değil işlevsel sonuç ölçülmüştür.",
+        "Bitkiden mantara organik karbon sağlanır; mantarın kazancı da ayrıca verilmiştir. İki yönlü kaynak katkısı ve iki tarafa yarar, tek taraflı parazitlikten farklıdır.",
+        "Kök ile mantar arasındaki bu ilişki mikorizadır; E seçilir. Hücrelerin birbirine dönüşmesi, viral birleşme veya bakteriyel endosporlaşma ortaklığın tanımı değildir; her kök mantarına otomatik aynı yararı atama."
+      ],
+      "optionReasons": [
+        "Yanlış. Her iki taraf için yarar gözlendiği söylenir; yalnız tek taraflı zarar/yarar biçimindeki parazitlik yorumu bu sonuca uymaz.",
+        "Yanlış. Virion birleşmesi genom ve kapsid bileşenleriyle ilgilidir; kök–mantar arasında mineral ve organik karbon akışı değildir.",
+        "Yanlış. Bakteriyel endosporlaşma bir bakterinin dayanıklı yapıya geçişidir; iki canlı grubunun karşılıklı kaynak alışverişini adlandırmaz.",
+        "Yanlış. Kaynak alışverişi taraflardan birinin diğerine dönüştüğü anlamına gelmez; bitki kökü ve mantar ayrı taraflar olarak kalır.",
+        "Doğru. Bitki köküyle mantar arasındaki, bitkiye mineral alımı ve mantara organik karbon kazancı sağlayan karşılıklı yararlı ilişki mikoriza olarak adlandırılır."
+      ],
+      "commonError": "Mantarın bitkiye organik şeker ürettiğini sanarak madde oklarını ters çevirmek veya her kök mantarını kanıtsız yararlı saymak.",
+      "check": "İki okun maddesini söyle: bitkiye fosfat alım katkısı, mantara bitki kökenli organik karbon. İki tarafa aynı maddeyi yazdıysan kaynağı yeniden izle."
+    }
+  },
+  {
+    "id": "f011-fungi-6",
+    "identity": "[\"f011-fungi-6\",\"Bir likende mantar ve fotosentetik alg hücreleri birlikte gözleniyor. Organik madde üretiminin ışığa bağlı bölümü alg hücrelerinde ölçülüyor. Hangi çıkarım doğrudur?\",\"\",[\"Birliğin fotosentezi mantar hücresinin kloroplastlı olduğunu kanıtlamaz\",\"Her mantar algdir\",\"Mantar kesin prokaryottur\",\"Fotosentez kapsidde gerçekleşir\",\"Liken yalnız bitki köküdür\"],0,\"Fotosentez alg ortak hücrelerinde ölçülmüştür; mantarın kloroplast kazandığı sonucu çıkmaz. Liken bir yaşam birliğidir, yalnız bitki kökü veya tek hücre türü değildir. Mantar ökaryottur; kapsid de hücresel fotosentez organeli değildir. Ortaklık düzeyiyle hücre düzeyini karıştırmamak gerekir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir yaşam birliği farklı hücre tiplerini bir arada barındırabilir. Birliğin toplam işlevi ile her ortağın ayrı hücresel yapısı aynı düzeyde değildir; ölçümün hangi ortağa ait olduğu korunmalıdır.",
+        "Fotosentezin ışığa bağlı üretim yönünü gerçekleştiren hücreler pigment ve ilgili düzenekler taşır. Birlikte yaşamak, bir hücrenin organellerinin diğer ortağın bütün hücrelerine otomatik geçtiğini göstermez."
+      ],
+      "strategy": "Organik üretim ölçümünü alg hücrelerine yerleştir; bütün birliğin özelliğini mantar hücresine taşıyan ya da tarafları tek hücre tipine indiren iddiaları kontrol et.",
+      "steps": [
+        "Liken içinde mantar ve fotosentetik alg hücreleri ayrı gözlenmiştir. Birlik tek bir homojen hücre türü olarak tanımlanmamaktadır.",
+        "Işığa bağlı organik madde üretimi alg hücrelerinde ölçülmüştür. Bu, fotosentetik katkının alg ortağa ait olduğunu gösterir; mantar hücresinde kloroplast ölçümü değildir.",
+        "A bu düzey ayrımını korur: birliğin fotosentezi mantarın kloroplastlı olduğunu kanıtlamaz. Bütün mantarların alg olması, prokaryotluk, kapsidde fotosentez veya yalnız kök olma sonuçları verilen ortaklıkla uyuşmaz."
+      ],
+      "optionReasons": [
+        "Doğru. Üretimin ışığa bağlı kısmı alg hücrelerinde ölçülmüştür. Toplam birliğin fotosentezi mantar hücresinin kloroplast taşıdığını göstermediğinden çıkarım doğrudur.",
+        "Yanlış. Bir likende alg ortağı bulunması bütün mantarların alg olduğu anlamına gelmez; iki ayrı hücresel taraf gözlenmektedir.",
+        "Yanlış. Mantarlar ökaryottur; algle birlikte yaşamak mantarı kesin prokaryot hücreye dönüştürmez.",
+        "Yanlış. Kapsid viral protein kılıfıdır; likende fotosentez ölçülen alg hücresinin yerine geçmez ve fotosentez yeri olarak verilmemiştir.",
+        "Yanlış. Liken mantar–fotosentetik ortak birlikteliğidir. Bitki köküyle mantar ilişkisinin adı mikorizadır; likeni yalnız kök saymak tarafları değiştirir."
+      ],
+      "commonError": "Birliğin yaptığı işin her ortak hücre tarafından ayrı ayrı yapıldığını sanmak ve algin kloroplastını mantarın organeliymiş gibi çizmek.",
+      "check": "Üretim verisinin yanına “alg hücresi” etiketi koy; mantarın yanına ölçülmemiş kloroplast eklemeden birliğin toplam üretimini açıklayabiliyorsan düzeyleri ayırmışsındır."
+    }
+  },
+  {
+    "id": "f011-fungi-7",
+    "identity": "[\"f011-fungi-7\",\"Aynı mantarın zarla küçük şeker alımı korunuyor. Hücre dışı nişasta sindirim enzimi engelleniyor. Biri nişasta, diğeri doğrudan uygun küçük şeker içeren iki ortamdan hangisi bu belirli sindirim engelini atlar?\",\"\",[\"Yalnız nişastalı ortam\",\"Küçük şekerli ortam\",\"İki ortam da kesin aynı engeli taşır\",\"Hiçbir hücre küçük molekül alamaz\",\"Yalnız hücresiz virion ortamı\"],1,\"Küçük şeker doğrudan verildiğinde dış nişasta sindirimi gerekmeyebilir; soruda zar alımı korunmuştur. Nişasta ise büyük besinin parçalanmasına ihtiyaç duyar. Bu sonuç tüm yaşamsal koşullardan bağımsız büyüme garantisi değildir; yalnız belirtilen sindirim engelinin atlanmasını anlatır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir beslenme yolunda dış hidroliz ve zar alımı ardışık ama ayrı süreçlerdir. İlk basamaktaki engelin etkisi, verilen besinin o basamağa gereksinim duyup duymadığına bağlıdır.",
+        "Engellenen basamaktan sonra oluşacak uygun ürünün doğrudan verilmesi, yalnız o engeli aşabilir. Bu karşılaştırma bütün yaşama koşullarının sınırsız büyüme için yeterli olduğunu veya başka engel bulunmadığını göstermez."
+      ],
+      "strategy": "Nişasta ve küçük şekeri aynı yol üzerinde farklı giriş noktalarına koy; enzimin engellediği basamağa hangisinin ihtiyaç duyduğunu ve korunmuş alım yoluna hangisinin doğrudan ulaşabildiğini izle.",
+      "steps": [
+        "Engellenen basamak hücre dışındaki nişasta sindirimidir. Nişastalı ortamın büyük besini uygun küçük ürünlere dönüştürmesi bu basamağa bağlıdır.",
+        "Diğer ortamda uygun küçük şeker hazırdır ve zarla küçük şeker alımı korunmuştur. Bu besin, kapalı dış hidroliz basamağına uğramadan korunmuş alım yolunu kullanabilir.",
+        "B’deki küçük şekerli ortam bu belirli engeli atlar. Bu sonuç sınırsız büyüme garantisi değil basamak karşılaştırmasıdır; nişastayı doğrudan alır saymak veya bütün küçük molekül alımını reddetmek öncüllere uymaz."
+      ],
+      "optionReasons": [
+        "Yanlış. Nişastalı ortam tam da engellenen dış sindirim basamağına ihtiyaç duyar; yalnız onun engeli aşması beklenmez.",
+        "Doğru. Uygun küçük şeker doğrudan hazırdır ve alımı korunmuştur; engellenen nişasta hidrolizine gerek kalmadan bu belirli basamak atlanabilir.",
+        "Yanlış. Küçük şekerli ortam büyük nişastanın dışarıda parçalanmasına gerek duymaz. İki ortamın bu belirli engeli kesin aynı taşıdığı hükmü besin büyüklüğü farkını yok sayar.",
+        "Yanlış. Aynı mantarın küçük şeker alımının korunduğu açıkça verilir; hiçbir hücrenin küçük molekül alamayacağı iddiası hem bu öncüle hem hücresel alıma aykırıdır.",
+        "Yanlış. Hücresiz virion ortamı bu mantarın korunan zar alımını kullanan besin seçeneği değildir; virion mantarın sindirim engelini aşan bağımsız hücreye dönüşmez."
+      ],
+      "commonError": "Enzim engellenince bütün alım yollarının da kapanacağını sanmak veya küçük şeker verilmesinden bütün koşullarda kesin büyüme sonucu çıkarmak.",
+      "check": "Sadece bu enzimi kapatıp zar alım okunu açık bırak. Küçük şekeri içeri taşıyabilirken nişastanın hangi okta takıldığını gösterebilmelisin."
+    }
+  },
+  {
+    "id": "f011-fungi-8",
+    "identity": "[\"f011-fungi-8\",\"Bir bakterinin tek endosporu bir etkin hücreye dönüyor. Başka bir deneyde mantarın çok sayıda üreme sporu uygun ortamda yeni bireyler oluşturuyor. Hangi karşılaştırma uygundur?\",\"\",[\"Her iki olayda zorunlu aynı birey artışı vardır\",\"Her spor kesin tohumdur\",\"Bakteriyel endospor dayanıklılık durumudur; mantar sporu üremeye katılabilir\",\"Endospor DNA taşıyamaz\",\"Mantar sporunun gelişmesi bakteriyi bitkiye çevirir\"],2,\"Bakteriyel endospor bir hücrenin dayanıklı durumunu sürdürür; tek hat üzerinde sayı artışı gerektirmez. Mantar sporları yeni birey gelişimine katılabilir. Sporlar tohumla özdeş değildir. DNA yokluğu veya gruplar arası dönüşüm bu olayların sonucu değildir; süreç ve sayı ayrı incelenmelidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Dayanıklı durum, üreme başlangıcı ve embriyolu tohum farklı biyolojik kavramlardır. Farklı gruplarda “spor” adı kullanıldığında, yapının hangi soy hattına ve hangi sayı değişimine katkı verdiği incelenmelidir.",
+        "Birey artışını saptamak için başlangıç hücreleriyle son bağımsız bireyler karşılaştırılır. Bir hücrenin biçim değiştirmesi ile birden çok yapının yeni bireylere gelişmesi aynı nüfus bilançosu değildir."
+      ],
+      "strategy": "İki deneyin başlangıç–son soy sayısını karşılaştır ve “spor” etiketini değil yeni birey oluşup oluşmadığını karar ölçütü yap; tohum ve kalıtım iddialarını ayrı denetle.",
+      "steps": [
+        "Bakteri deneyinde tek endospor tek etkin hücreye döner; izlenen hat 1 → 1’dir. Bu, dayanıklı durumdan yeniden etkinleşmedir; verilmiş bir birey artışı yoktur.",
+        "Mantar deneyinde çok sayıda üreme sporu uygun ortamda yeni bireyler oluşturur. Burada sporların gelişimi doğrudan üremeye katkı sağlamaktadır; sayı sonucu bakteriyel hatla aynı olmak zorunda değildir.",
+        "C iki mekanizmanın farklı rollerini doğru eşler. Her sporu tohum saymak, endosporu DNA’sız ilan etmek veya mantar sporu gelişimini bakterinin bitkiye dönüşümü gibi yorumlamak bu iki deneyi açıklamaz."
+      ],
+      "optionReasons": [
+        "Yanlış. Bakteriyel tek hat birey sayısını artırmazken mantar sporları yeni bireylere gelişmektedir; zorunlu aynı artış iddiası iki sonucu eşitler.",
+        "Yanlış. Spor ile embriyo ve destek yapıları taşıyan tohum aynı kavram değildir; ortak ad veya yayılma rolü yapısal eşitlik kurmaz.",
+        "Doğru. Bakteriyel endospor tek hücrenin dayanıklı durumudur; verilen mantar sporları uygun ortamda yeni bireylere gelişerek üremeye katılır. Roller doğru ayrılır.",
+        "Yanlış. Endosporun etkin hücreye gelişebilmesi kalıtsal bilginin korunmasıyla uyumludur; DNA taşıyamadığına ilişkin bir öncül yoktur.",
+        "Yanlış. Mantar sporu mantar soyunun gelişimine katılır; başka deneydeki bakteriyi bitkiye çeviren bir dönüşüm değildir."
+      ],
+      "commonError": "İki grupta aynı “spor” kelimesi geçtiği için yapı, kalıtım ve birey artışı sonuçlarının aynı olması gerektiğini sanmak.",
+      "check": "Bakteri için 1 → 1, mantar için çok sayıda spor → yeni bireyler yaz. Bu iki ok aynı sayısal olayı göstermiyorsa yalnız ortak adla eşitleme."
+    }
+  },
+  {
+    "id": "f011-fungi-9",
+    "identity": "[\"f011-fungi-9\",\"Ölü yapraktan beslenen mantar ile canlı bitkiye zarar vererek beslenen mantar karşılaştırılıyor. İlk ve ikinci için doğru sıralama hangisidir?\",\"\",[\"İkisi de mutlaka fotosentetik\",\"Parazit–fotoototrof\",\"Metanojen–virion\",\"Saprotrof–parazit\",\"Liken–damarsız bitki\"],3,\"Ölü organik maddeden yararlanan saprotrof, canlı konağa zarar vererek yararlanan parazittir. İki mantar da heterotrof olabilir fakat etkileşim sonucu farklıdır. Fotosentez, metanojenez ve bitki damar sınıflaması bu gözlemin karşılığı değildir. Bir mantarın özelliğini bütün mantarlara yaymamak gerekir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Heterotrof mantarlar organik kaynak kullanır; kaynağın ölü organik kalıntı mı, yaşayan konak mı olduğu ekolojik rolün yorumunu etkiler. Canlı konakla ilişkinin yarar/zarar sonucu ayrıca gözlenmelidir.",
+        "Fotosentez, metan üretimi ve yaşam ortaklığı farklı mekanizmalardır. Besin kaynağı ve etkileşim sonucu verilmişken yalnız organizmanın adı veya bulunduğu yüzeyden yeni bir üretim yolu eklenmez."
+      ],
+      "strategy": "İlk mantarda kaynağın ölü olmasını, ikincide yaşayan konağa zararı ayrı işaretle; iki ekolojik rolü bu sırayı koruyarak adlandır.",
+      "steps": [
+        "İlk mantar ölü yapraktaki organik maddeden yararlanır. Bu, ölü organik kalıntıyı kullanan saprotrof beslenmeyle eşleşir; canlı konak zorunluluğu verilmez.",
+        "İkinci mantar canlı bitkiden beslenirken ona zarar verir. Konaktan yarar sağlama ve konak zararının birlikte verilmesi parazitlik yorumunu destekler.",
+        "İstenen ilk–ikinci sırasını koruyan D, saprotrof–parazittir. İki mantara fotosentez, metanojenlik, virion veya liken atamak gözlenen kaynak/zarar ilişkilerinin yerine ölçülmemiş başka süreç koyar."
+      ],
+      "optionReasons": [
+        "Yanlış. İki örnek de organik besinden yararlanan mantardır; fotosentez veya kloroplast kanıtı yoktur. İkisinin zorunlu fotosentetik olduğu sonucu kurulamaz.",
+        "Yanlış. İlk kaynak ölü yapraktır; canlı konaktan zarar vererek beslenme diye tanımlanmaz. İkincide de fotoototrofi değil canlı konağa zarar ölçülür; iki etiket yanlıştır.",
+        "Yanlış. Metan üretimi birinci mantarda, viral parçacık yapısı da ikincide verilmemiştir. İki örneği metabolik arke ve virion etiketlerine taşımak gözlemleri değiştirir.",
+        "Doğru. Ölü organik kaynağı kullanan ilk mantar saprotrof, canlı konaktan yararlanıp ona zarar veren ikinci mantar parazittir; sıra korunur.",
+        "Yanlış. Liken için fotosentetik ortak, damarsız bitki için bitkisel grup kanıtı gerekir. Verilen iki mantarın kaynak ve zarar durumları bu etiketleri sağlamaz."
+      ],
+      "commonError": "Her mantarı aynı anda hem parazit hem saprotrof saymak veya doğru iki rolü bulduğu hâlde sorulan sırayı ters çevirmek.",
+      "check": "İlk/ikinci sütunlarına “ölü yaprak” ve “canlı konak + zarar” yaz. Yanıttaki iki etiket aynı sırayı ve aynı etkileşim sonuçlarını korumalı."
+    }
+  },
+  {
+    "id": "f011-fungi-10",
+    "identity": "[\"f011-fungi-10\",\"Temel gıda üretimi örneklerinde yoğurt laktik asit bakterileriyle, ekmek hamurunun kabarması seçilmiş maya mantarıyla ilişkilendiriliyor. Hangi sonuç geçersizdir?\",\"\",[\"Farklı mikroorganizmalar gıda üretimine katılabilir\",\"Maya bir mantar örneğidir\",\"Yoğurdun temel fermantasyon etkenleri bakterilerdir\",\"Ürün adıyla kullanılan organizmayı ayrıca eşleştirmek gerekir\",\"Fermantasyon yapan her canlı zorunlu mantardır\"],4,\"Yoğurt bakterileri fermantasyonun yalnız mantarlara ait olmadığına karşı örnektir. Maya mantardır fakat bütün fermantatif canlıları kapsamaz. Diğer seçenekler verilen ürün–organizma eşleştirmeleriyle uyumludur. Bir işlem adını canlı grubunun kesin teşhisi olarak kullanmak hatalıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Fermantasyon hücrelerin organik maddeyi dönüştürerek enerji metabolizmasını sürdürdüğü yollardan biridir; işlem adı tek başına canlı grubunun adı değildir. Bir üretim ürününe farklı mikrobiyal topluluklar katkı verebilir.",
+        "Ürün–organizma eşleştirmesi, biyoteknolojik görevi hangi canlı örneğinin üstlendiğini açıklar. Bir örneğin bir grupta bulunması, aynı işi yapan bütün örneklerin de o grupta bulunmasını zorunlu kılmaz."
+      ],
+      "strategy": "Yoğurt ve ekmek için verilen organizma etiketlerini kanıt olarak kullan; süreç ortaklığından bütün canlılara tek âlem atayan genellemeyi somut karşı örnekle denetle.",
+      "steps": [
+        "Yoğurdun temel fermantasyon etkenleri laktik asit bakterileridir; ekmek hamurunun kabarması seçilmiş maya mantarıyla ilişkilidir. İki ürün iki farklı hücresel grup örneği verir.",
+        "Mayanın mantar olması ve bakterilerin yoğurda katkısı, farklı mikroorganizmaların gıda üretimine katılabildiğini destekler. Ürünü organizmayla ayrıca eşleştirmek bu ayrımı korur.",
+        "E’deki “fermantasyon yapan her canlı mantardır” hükmü, kökte verilen laktik asit bakterileriyle çürür. Ortak işlem, grubun kimliğini tek başına belirlemediğinden geçersiz sonuç E’dir."
+      ],
+      "optionReasons": [
+        "Yanlış. Yoğurtta bakteri, ekmekte maya mantarı örneği verilir; farklı mikroorganizmaların gıda üretimine katılabilmesi doğrudan desteklenir, geçersiz değildir.",
+        "Yanlış. Seçilmiş maya mantar örneğidir; kökteki sınıflamayla uyumludur. Bütün mantarların maya olduğu gibi ek bir genelleme yapmaz.",
+        "Yanlış. Yoğurdun temel etkenlerinin laktik asit bakterileri olduğu açıkça verilmiştir; bu ifade kökle aynı sınırı korur.",
+        "Yanlış. İki üründe farklı gruplar kullanıldığı için ürün ve organizmayı ayrıca eşleştirmek gerekir; ortak süreç adı kimliği tek başına belirlemez.",
+        "Doğru. Yoğurdun laktik asit bakterileri fermantasyon yapan ama mantar olmayan somut karşı örnektir; “her canlı zorunlu mantardır” genellemesi bu nedenle geçersizdir."
+      ],
+      "commonError": "Fermantasyonu yalnız maya mantarlarının yapabildiğini sanıp yoğurt bakterisini de mantar diye sınıflandırmak.",
+      "check": "Evrensel hükmü sınamak için yeni canlı uydurmana gerek var mı? Hayır; kökte verilen yoğurt bakterisi yeterli karşı örnektir. Bir işlem adıyla âlemi eşitleme."
+    }
+  }
+]

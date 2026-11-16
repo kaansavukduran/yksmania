@@ -258,6 +258,142 @@ export const questionPresentationRevisions: QuestionPresentationRevision[] = [
       "Tek bir yerin kazanımı bütün cepheleri açıklamaz.",
     ],
   },
+  {
+    id: "f011-viruses-3",
+    revision: 1,
+    before: {
+      id: "f011-viruses-3",
+      prompt:
+        "Seçilmiş virüs deneyinde yeni genom kopyaları oluşuyor. Viral kapsid proteinlerinin üretimi tamamen durduruluyor ve dışarıdan hazır kapsid sağlanmıyor. Hangi sonuç beklenir?",
+      options: [
+        "Genom kopyası yok olur",
+        "Virüs ribozom kurar",
+        "Tam yeni virionların birleşmesi engellenir",
+        "Kapsid lipide dönüşür",
+        "Virüs bakteriye dönüşür",
+      ],
+      answer: 2,
+      hint: "Tam parçacık için gereken genom ve kılıfı ayrı düşün.",
+      explanation:
+        "Yeni virionun birleşmesi için genom yanında uygun kapsid bileşenleri de gerekir. Protein üretiminin engellenmesi bu bileşeni eksiltir; genom artışı tam virion artışı değildir. Genomun zorunlu yok olması, ribozom kurulması, kapsidin lipide veya virüsün bakteriye dönüşmesi veriden çıkmaz.",
+    },
+    prompt:
+      "Seçilmiş virüs deneyinde yeni genom kopyaları oluşuyor. Başlangıçta kullanılabilir kapsid proteini veya hazır kapsid stoku bulunmuyor. Viral kapsid proteinlerinin üretimi tamamen durduruluyor; dışarıdan da kapsid proteini veya hazır kapsid sağlanmıyor. Hangi sonuç beklenir?",
+  },
+  {
+    id: "f011-plants-1",
+    revision: 1,
+    before: {
+      id: "f011-plants-1",
+      prompt:
+        "Dört öğretici bitki adayı kara yosunu, eğrelti, çam ve elmadır. X’te iletim dokusu var, tohum yok. Hangisi iki kanıtı birlikte sağlar?",
+      options: ["Eğrelti", "Çam", "Elma", "Kara yosunu", "Dördü de"],
+      answer: 0,
+      hint: "Damar ve tohum bilgisini ayrı ayrı süz.",
+      explanation:
+        "Eğrelti damarlı tohumsuz örnektir. Kara yosunu damar kanıtını, çam ve elma tohum yokluğu kanıtını sağlamaz. İki özelliğin kesişimi tek adayı bırakır; sporla çoğalma ifadesini doğrudan damarsızlık saymak kara yosunuyla eğreltiyi yanlış birleştirir.",
+    },
+    prompt:
+      "Dört öğretici bitki adayı kara yosunu, eğrelti, çam ve elmadır. Bilgiler, bireylerin o andaki görünümünü değil grupların yaşam döngüsü özelliklerini anlatır. X’in grubunda iletim dokusu vardır ve tohum oluşmaz. Hangisi iki kanıtı birlikte sağlar?",
+  },
+  {
+    id: "f011-plants-4",
+    revision: 1,
+    before: {
+      id: "f011-plants-4",
+      prompt:
+        "Kara yosunu, eğrelti, çam ve elma için yalnız ‘meyve yok’ bilgisi verilmiş. Başka gözlem yok. Hangi sonuç doğru?",
+      options: [
+        "Kesin çamdır",
+        "Kesin kara yosunudur",
+        "Kesin eğreltidir",
+        "İlk üç aday kalır; tek aday için ek kanıt gerekir",
+        "Dört adayın hepsi elenir",
+      ],
+      answer: 3,
+      hint: "Olumsuz tek kanıtın kaç örnekte sağlandığını say.",
+      explanation:
+        "Kara yosunu, eğrelti ve çam meyvesiz öğretici örneklerdir; yalnız elma elenir. Dolayısıyla damar veya tohum gibi ek kanıt gerekir. Birden fazla aday varken kesin tür adı vermek ölçülmeyen bilgiyi eklemektir. Model tüm bitkiler değil dört tanımlı örnek arasındaki süzmeyi sınar.",
+    },
+    prompt:
+      "Kara yosunu, eğrelti, çam ve elma grupları için yalnız ‘yaşam döngüsünde meyve oluşturmaz’ bilgisi verilmiş. Bu, bir bireyin o andaki meyvesiz görünümü değil grubun üreme özelliğidir. Başka bilgi yoksa hangi sonuç doğrudur?",
+  },
+  {
+    id: "f011-chem-kovalent-adlandirma-metalik-bag-7",
+    revision: 1,
+    before: {
+      id: "f011-chem-kovalent-adlandirma-metalik-bag-7",
+      prompt:
+        "Na₂O, Na⁺ ve O²⁻ iyonlarının oluşturduğu iyonik katıdır. Bu bileşiğin uygun adı hangisidir?",
+      options: [
+        "Disodyum monoksit",
+        "Sodyum oksit",
+        "Sodyum dioksit",
+        "Sodyum peroksit",
+        "Sodyum metal molekülü",
+      ],
+      answer: 1,
+      hint: "Moleküler ön ek şemasından önce verilen yapı türünü kullan.",
+      explanation:
+        "İyonik adlandırmada katyon sodyum ve anyon oksit adı kullanılır. İki Na⁺ bir O²⁻ yükünü dengeler; bu oran bağımsız bir Na₂O molekülü için sayı ön ekleri kurmamızı gerektirmez. Peroksit farklı iyon yapısıdır; verilen O²⁻ ile aynı değildir.",
+    },
+    prompt:
+      "Na₂O, Na⁺ ve O²⁻ iyonlarının oluşturduğu iyonik katıdır. TYT katyon–anyon adlandırma kuralına göre bu bileşiğin uygun adı hangisidir?",
+  },
+  {
+    id: "f011-chem-maddenin-halleri-2",
+    revision: 1,
+    before: {
+      id: "f011-chem-maddenin-halleri-2",
+      prompt:
+        "1 g, 0 °C buz tamamen eritilip 100 °C sıvı yapılacak. Lₑ=334 J/g, sıvı c=4,18 J/(g·°C), ısı kaybı yok. Gerekli toplam enerji kaç J?",
+      options: ["334", "752", "418", "2256", "3008"],
+      answer: 1,
+      hint: "Önce mL, sonra mcΔT basamaklarını topla.",
+      explanation:
+        "Erime için 334 J, 0→100 °C sıvı ısınması için 1×4,18×100=418 J gerekir. Toplam 752 J’dir. 2256 J buharlaşma gizli ısısı, 3008 J ise bu örnekte tümünü 100 °C buhara çevirme toplamıdır. Soru yalnız 100 °C sıvı istediğinden son plato eklenmez.",
+    },
+    prompt:
+      "1 atm basınçta, erime eşiğindeki 1 g, 0 °C saf su buzu tamamen eritilip 100 °C sıvı su yapılacak. Lₑ=334 J/g, sıvı c=4,18 J/(g·°C), ısı kaybı yok. Gerekli toplam enerji kaç J?",
+  },
+  {
+    id: "dalgalara-giris-q10",
+    revision: 1,
+    before: {
+      id: "dalgalara-giris-q10",
+      prompt:
+        "Bir noktadaki y–t grafiğinde art arda iki maksimum t=0,7 s ve t=1,2 s’de oluşuyor. Bu veriden doğrudan bulunanlar hangisidir?",
+      options: [
+        "λ=0,5 m ve v=2 m/s",
+        "T=1,9 s ve f=0,5 Hz",
+        "A=0,5 m ve λ=2 m",
+        "T=2 s ve f=0,5 Hz",
+        "T=0,5 s ve f=2 Hz",
+      ],
+      answer: 4,
+      hint: "Yatay eksen zaman; maksimumlar arasındaki süreyi çıkar.",
+      explanation:
+        "T=1,2−0,7=0,5 s ve f=1/T=2 Hz. Konum veya dalga sürati verilmediği için λ bulunamaz; genlik için düşey eksen değerleri gerekir. Zaman aralığını metreyle etiketleme.",
+    },
+    prompt:
+      "Sinüzoidal (harmonik) bir dalganın bir noktasına ait y–t grafiğinde art arda iki maksimum t=0,7 s ve t=1,2 s’de oluşuyor. Bu veriden doğrudan bulunanlar hangisidir?",
+  },
+  {
+    id: "dalgalara-giris-q3",
+    revision: 1,
+    before: {
+      id: "dalgalara-giris-q3",
+      prompt:
+        "Anlık y–x grafiğinde ardışık iki dalga tepesi x=0,3 m ve x=1,1 m konumundadır. Dalga boyu kaç m?",
+      options: ["0,8", "1,4", "0,4", "1,1", "0,3"],
+      answer: 0,
+      hint: "Aynı evreli komşu tepelerin konum farkını al.",
+      explanation:
+        "λ=1,1−0,3=0,8 m. Tepe konumlarını toplama veya farkı ikiye bölme. λ/2 olan uzaklık sinüsoidal dalgada tepe ile hemen sonraki çukur arasındadır.",
+    },
+    prompt:
+      "Sinüzoidal (harmonik) bir dalganın anlık y–x grafiğinde ardışık iki dalga tepesi x=0,3 m ve x=1,1 m konumundadır. Dalga boyu kaç m?",
+  },
 ];
 const revisions = new Map(
   questionPresentationRevisions.map((r) => [

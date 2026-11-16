@@ -169,8 +169,8 @@ describe("029 three guarded presentation revisions", () => {
     );
   });
   it("only appends three records and reverses to the exact028 helper including its nine records and core functions", () => {
-    expect(questionPresentationRevisions).toHaveLength(12);
-    expect(questionPresentationRevisions.slice(9).map((r) => r.id)).toEqual(
+    expect(questionPresentationRevisions.slice(9, 12)).toHaveLength(3);
+    expect(questionPresentationRevisions.slice(9, 12).map((r) => r.id)).toEqual(
       targetIds,
     );
     expect(digest(questionPresentationRevisions.slice(0, 9))).toBe(
@@ -187,7 +187,7 @@ describe("029 three guarded presentation revisions", () => {
     expect(sha(text.slice(0, start) + text.slice(end))).toBe(
       "96ce261a498b7158864393674190f9c9e40188722ac736ecce8007d6feb436ca",
     );
-    for (const revision of questionPresentationRevisions.slice(9)) {
+    for (const revision of questionPresentationRevisions.slice(9, 12)) {
       expect(questionIdentity(revision.before)).toBe(
         questionIdentity(flat(source(revision.id))),
       );

@@ -1,3 +1,15 @@
+# 0.18.2 adayının kabul kaydı
+
+Altı paketin 300 kartı bağımsız tam içerik incelemesinden geçti; gerçek küresel çözümleyici 3.243 ayrıntılı / 2.640 kısmi yardım verir. Bağımsız 5.400 gerçek QuestionHelp renderi ve 1.800 buton callback'i eski 2.943 yardımın bütün panellerini korudu. Ham 5.883 soru, 514 öğretim kaydı, 480 rehber ve 479 sıralı başlık aynıdır. On iki `passage: undefined` alanı, nesne alanları ve referans topolojisiyle ayrıca karşılaştırıldı. 19 dar soru görünümü ve bağlı üç rehberin atomik koşulları denetlendi.
+
+İlk tam yerel birim turu 1.741 PASS/1 FAIL: 120 deneme varyantı kuran eski source-integration-092 testi, paralel TypeScript/özel SSR işleri sırasında 5.000 ms bütçesini aştı; koşul veya anahtar farkı bildirmedi. Aynı değiştirilmemiş iki test ayrı koşuda geçti. Diğer işler tamamlandıktan sonraki ikinci tam tur 191 dosyada 1.742/1.742 PASS verdi. İlk sonuç korunur; süre, beklenti veya ürün bu sonuç için değiştirilmedi. Telefon görüntüsünde sonradan yakalanan MathQ7D gerekçesindeki eksik a çarpanı tek metin alanında düzeltildi; farklı kutu ölçekleri için bir regresyon eklendi. Son tam tur 191 dosyada 1.743/1.743 geçti.
+
+TypeScript geçti. Sabit normal/prefix derlemeleri 271 gerekli çevrimdışı varlık içerir: 26.760.629 / 26.760.478 byte. En büyük dosya 2.865.964 byte, 5 MiB altındadır. İlk derlemede 17/17 gerçek UI ve native/prefix 93 aile geçti. Görsel okumada bulunan son MathQ7D düzeltmesi ve eksik favicon tanımı sonrası her iki derleme yenilendi; son derlemede native ve prefix 93 aile ile iki hedef UI kontrolü geçti. Son iki UI vakasında 701 yanıtın tamamı HTTP200, page exception/console warning/console error ve axe ihlali 0; düzeltilen formül gerçek telefon PNG’sinde okundu. Son prefix turunda eksik ağ isteği yoktur. Yerel UI kabulü iki koşunun birleşimidir: ilk derlemede 17, son derlemede iki hedef vaka. Son derlemede 17 vakanın tek turda yeniden koşulduğu iddia edilmez. Native ve prefix ise son derlemede tam tekrarlandı. CI/paket/yayın kapıları henüz başlamadı; bu yerel kabul onların yerine geçmez. Native uyarı sayısı runner tarafından ölçülmedi; renderer hatası 0. Yeni Android veya fiziksel cihaz kabulü yoktur.
+
+---
+
+## Önceki kaynak ve kabul kayıtları
+
 # 0.18.1 doğrulanmış yayın — 16 Kasım 2026
 
 Kaynak `1da8b22c63f8bbd611ef919d9e50f7129a9f746d`. [Tam CI](https://github.com/kaansavukduran/yksmania/actions/runs/43877471841) 1.663/1.663 birim ve ilk tam koşuda 1.225/1.225 tarayıcı testiyle geçti. Gerçek paketli Windows/Linux çevrimdışı kullanım, yeniden yükleme ve aynı profilde süreç yeniden açılışı kontrolleri geçti; renderer hatası 0. Android imzası ertelendi ve Android işi açık kapsam gereği atlandı.

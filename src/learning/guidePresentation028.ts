@@ -98,6 +98,26 @@ const revisions: readonly GuideCopyRevision[] = [
     after:
       "Elektron bulunan orbitallerde en büyük n=4 olduğundan periyot 4’tür; orbitalin tam dolu olması gerekmez.",
   },
+  {
+    id: "dalgalara-giris",
+    kind: "paragraph",
+    outer: 3,
+    inner: 0,
+    before:
+      "Periyodik dalgada ardışık iki tepe veya iki çukur arası dalga boyu λ’dır. Denge çizgisinden geçen iki noktanın her çifti bir λ değildir; aynı titreşim evresinde olup olmadıklarına bakılır. İdeal sinüs için tepe ile hemen sonraki çukur arası λ/2’dir. Dört ardışık tepe arasındaki toplam mesafe üç λ’dır; nokta sayısı ile aralık sayısını karıştırma.",
+    after:
+      "Sinüzoidal (harmonik) dalgada ardışık iki tepe veya iki çukur arası dalga boyu λ’dır. Denge çizgisinden geçen iki noktanın her çifti bir λ değildir; aynı titreşim evresinde olup olmadıklarına bakılır. İdeal sinüs için tepe ile hemen sonraki çukur arası λ/2’dir. Dört ardışık tepe arasındaki toplam mesafe üç λ’dır; nokta sayısı ile aralık sayısını karıştırma.",
+  },
+  {
+    id: "dalgalara-giris",
+    kind: "paragraph",
+    outer: 4,
+    inner: 1,
+    before:
+      "Aynı noktadaki y–t grafiğinde art arda iki maksimum arasındaki süre T’dir. Bu grafikte yatay tepe aralığı λ olamaz çünkü eksen zaman birimindedir. İlk ve son gözlem tepelerini sayarken aradaki tam dönemleri say; t=0’daki ilk tepe ile t=2 s’deki beşinci tepe arası dört T içerir. Hesaptan sonra fT=1 kontrolü birim ve sayma hatasını yakalar.",
+    after:
+      "Sinüzoidal (harmonik) bir dalganın aynı noktadaki y–t grafiğinde art arda iki maksimum arasındaki süre T’dir. Bu grafikte yatay tepe aralığı λ olamaz çünkü eksen zaman birimindedir. İlk ve son gözlem tepelerini sayarken aradaki tam dönemleri say; t=0’daki ilk tepe ile t=2 s’deki beşinci tepe arası dört T içerir. Hesaptan sonra fT=1 kontrolü birim ve sayma hatasını yakalar.",
+  },
 ];
 
 // The complete original worked example gates these six linked corrections.
@@ -181,12 +201,213 @@ function originalMembraneWorked(example: WorkedExample | undefined) {
   );
 }
 
+// This complete worked-example guard also excludes pre-existing capsid stocks.
+// Original guide bytes and partially edited personal snapshots stay intact.
+const virusWorkedBefore: WorkedExample = {
+  title: "Genom var, kapsid yok",
+  prompt:
+    "Uygun hücrede viral genom kopyalanıyor. Viral protein sentezi seçici olarak engelleniyor. Dışarıdan hazır kapsid verilmediği bu deneyde tam yeni virion üretimi beklenir mi?",
+  strategy: "Tam parçacığı kuran iki bileşeni listele.",
+  steps: [
+    {
+      label: "Genom",
+      explanation:
+        "Genom kopyaları oluşur; bu sadece kalıtsal bileşeni sağlar.",
+      expression: "Genom +",
+    },
+    {
+      label: "Kapsid",
+      explanation:
+        "Protein üretimi engellendiğinden yeni kapsid bileşeni sağlanmaz.",
+      expression: "Kapsid −",
+    },
+    {
+      label: "Birleştirme",
+      explanation: "Genomun kapsidle birleşmesi için iki bileşen de gerekir.",
+      expression: "Tam virion −",
+    },
+  ],
+  answer: "Beklenmez; genom artışı tam virion artışı değildir.",
+  check: "Başlangıç parçacıklarının ortamda kalması yeni üretim diye sayılmaz.",
+  pitfall:
+    "Ölçülen genom sayısını bulaştırıcı parçacık sayısıyla özdeşleştirme.",
+};
+const virusWorkedAfter: WorkedExample = {
+  title: "Genom var, kapsid yok",
+  prompt:
+    "Uygun hücrede viral genom kopyalanıyor. Başlangıçta kullanılabilir kapsid proteini veya hazır kapsid stoku bulunmuyor. Viral protein sentezi seçici olarak ve tamamen engelleniyor; dışarıdan da kapsid proteini veya hazır kapsid sağlanmıyor. Bu deneyde tam yeni virion üretimi beklenir mi?",
+  strategy: "Tam parçacığı kuran iki bileşeni listele.",
+  steps: [
+    {
+      label: "Genom",
+      explanation:
+        "Genom kopyaları oluşur; bu sadece kalıtsal bileşeni sağlar.",
+      expression: "Genom +",
+    },
+    {
+      label: "Kapsid",
+      explanation:
+        "Başlangıçta kullanılabilir kapsid proteini veya hazır kapsid yoktur; yeni sentez ve dışarıdan sağlama da yoktur. Böylece yeni virion için kapsid bileşeni sağlanamaz.",
+      expression: "Kapsid −",
+    },
+    {
+      label: "Birleştirme",
+      explanation: "Genomun kapsidle birleşmesi için iki bileşen de gerekir.",
+      expression: "Tam virion −",
+    },
+  ],
+  answer: "Beklenmez; genom artışı tam virion artışı değildir.",
+  check: "Başlangıç parçacıklarının ortamda kalması yeni üretim diye sayılmaz.",
+  pitfall:
+    "Ölçülen genom sayısını bulaştırıcı parçacık sayısıyla özdeşleştirme.",
+};
+function originalWorked(
+  example: WorkedExample | undefined,
+  before: WorkedExample,
+) {
+  return (
+    example?.title === before.title &&
+    example.prompt === before.prompt &&
+    example.strategy === before.strategy &&
+    example.answer === before.answer &&
+    example.check === before.check &&
+    example.pitfall === before.pitfall &&
+    Array.isArray(example.steps) &&
+    example.steps.length === before.steps.length &&
+    before.steps.every((original, i) => {
+      const step = example.steps[i];
+      return (
+        step?.label === original.label &&
+        step.explanation === original.explanation &&
+        step.expression === original.expression
+      );
+    })
+  );
+}
+
+const plantWorkedRevisions: {
+  index: number;
+  before: WorkedExample;
+  prompt: string;
+}[] = [
+  {
+    index: 0,
+    before: {
+      title: "İki kanıtı kesiştir",
+      prompt:
+        "X bitkisinde iletim demeti var, tohum yok. Dört aday kara yosunu, eğrelti, çam ve elma. Hangi aday kalır?",
+      strategy: "Damar ve tohum kanıtlarını sırayla uygula.",
+      steps: [
+        {
+          label: "Damar",
+          explanation: "Kara yosunu elenir; diğer üç örnek damarlıdır.",
+          expression: "3 aday",
+        },
+        {
+          label: "Tohum",
+          explanation: "Çam ve elma tohumlu olduğundan elenir.",
+          expression: "1 aday",
+        },
+        {
+          label: "Denetim",
+          explanation: "Eğrelti damarlı ve tohumsuzdur; her iki veriyi sağlar.",
+          expression: "Eğrelti",
+        },
+      ],
+      answer: "Eğrelti; damarlı tohumsuz örnek.",
+      check: "Sporla üreme damarsızlık için yeterli ölçüt değildir.",
+      pitfall: "Tohum yokluğunu damar yokluğu diye okuma.",
+    },
+    prompt:
+      "Kara yosunu, eğrelti, çam ve elma gruplarının yaşam döngüsü özellikleri karşılaştırılıyor; bireylerin o andaki görünümü sorulmuyor. X’in grubunda iletim demeti vardır ve tohum oluşmaz. Hangi öğretici aday kalır?",
+  },
+  {
+    index: 3,
+    before: {
+      title: "Bir bilinmeyen üç aday bırakır",
+      prompt:
+        "Kara yosunu, eğrelti, çam ve elma arasında yalnız ‘meyve yok’ gözlemi verilmiştir. Türü kesin belirlemek mümkün mü?",
+      strategy: "Olumsuz kanıtın kaç aday bıraktığını say.",
+      steps: [
+        {
+          label: "Eleme",
+          explanation: "Elma meyveli örnek olduğundan elenir.",
+          expression: "4 − 1",
+        },
+        {
+          label: "Kalanlar",
+          explanation: "Diğer üçünde meyve yoktur.",
+          expression: "3 aday",
+        },
+        {
+          label: "Ek veri",
+          explanation: "Tohum ve damar bilgileri kalanları ayırabilir.",
+          expression: "Belirsizlik sürer",
+        },
+      ],
+      answer: "Hayır; üç aday kalır.",
+      check: "Tek kanıtın sonucu her zaman tek aday olmak zorunda değildir.",
+      pitfall: "Eksik bilgiyi tahminle doldurup kesin sonuç kurma.",
+    },
+    prompt:
+      "Kara yosunu, eğrelti, çam ve elma grupları arasında yalnız “yaşam döngüsünde meyve oluşturmaz” bilgisi verilmiştir; bir bireyin o andaki meyvesiz görünümü sorulmuyor. Grubu kesin belirlemek mümkün mü?",
+  },
+];
+
+const waveWorkedRevision: {
+  index: number;
+  before: WorkedExample;
+  prompt: string;
+} = {
+  index: 1,
+  before: {
+    title: "Dört tepe, üç aralık",
+    prompt:
+      "Bir anlık grafikte dört ardışık tepenin ilki x=0,2 m, sonuncusu x=2,0 m. f=5 Hz. λ ve v?",
+    strategy:
+      "Uçlar arasındaki mesafeyi tepe sayısına değil aralık sayısına böl.",
+    steps: [
+      {
+        label: "Aralık",
+        explanation: "Dört tepe üç tam dalga boyu oluşturur.",
+        expression: "3λ=2,0−0,2=1,8 m",
+      },
+      {
+        label: "Dalga boyu",
+        explanation: "Aralık sayısını kullan.",
+        expression: "λ=1,8/3=0,6 m",
+      },
+      {
+        label: "Sürat",
+        explanation: "Frekansla çarp.",
+        expression: "v=0,6·5=3 m/s",
+      },
+    ],
+    answer: "0,6 m ve 3 m/s",
+    check: "T=0,2 s’de desen 0,6 m ilerler.",
+    pitfall: "Dört tepeyi dört dalga boyu saymak eksik bir aralık üretir.",
+  },
+  prompt:
+    "Sinüzoidal (harmonik) bir dalganın anlık y–x grafiğinde dört ardışık tepenin ilki x=0,2 m, sonuncusu x=2,0 m. f=5 Hz. λ ve v?",
+};
+const waveRecallRevision = {
+  index: 1,
+  before: {
+    prompt: "y–t grafiğinde tepe aralığı?",
+    answer:
+      "Periyot; y–x grafiğinde aynı evreli ardışık tepe aralığı dalga boyudur.",
+  },
+  prompt:
+    "Sinüzoidal (harmonik) dalgada y–t ve y–x grafiklerinde ardışık tepe aralıkları hangi niceliklerdir?",
+};
+
 export function clarifiedGuideView<T extends LessonGuide | undefined>(
   raw: T,
 ): T {
   if (!raw) return raw;
   let sections = raw.sections;
   let examples = raw.examples;
+  let recall = raw.recall;
   for (const revision of revisions) {
     if (revision.id !== raw.id) continue;
     if (revision.kind === "paragraph") {
@@ -227,7 +448,48 @@ export function clarifiedGuideView<T extends LessonGuide | undefined>(
       answer: membraneWorkedAfter.answer,
     };
   }
-  return sections === raw.sections && examples === raw.examples
+  if (raw.id === "virusler" && originalWorked(examples[1], virusWorkedBefore)) {
+    examples = [...examples];
+    examples[1] = {
+      ...examples[1],
+      prompt: virusWorkedAfter.prompt,
+      steps: examples[1].steps.map((step, i) =>
+        i === 1
+          ? { ...step, explanation: virusWorkedAfter.steps[i].explanation }
+          : step,
+      ),
+    };
+  }
+  if (raw.id === "bitkiler") {
+    for (const revision of plantWorkedRevisions) {
+      const example = examples[revision.index];
+      if (!originalWorked(example, revision.before)) continue;
+      if (examples === raw.examples) examples = [...examples];
+      examples[revision.index] = { ...example, prompt: revision.prompt };
+    }
+  }
+  if (raw.id === "dalgalara-giris") {
+    const revision = waveWorkedRevision;
+    const example = examples[revision.index];
+    if (originalWorked(example, revision.before)) {
+      if (examples === raw.examples) examples = [...examples];
+      examples[revision.index] = { ...example, prompt: revision.prompt };
+    }
+    const item = recall[waveRecallRevision.index];
+    if (
+      item?.prompt === waveRecallRevision.before.prompt &&
+      item.answer === waveRecallRevision.before.answer
+    ) {
+      recall = [...recall];
+      recall[waveRecallRevision.index] = {
+        ...item,
+        prompt: waveRecallRevision.prompt,
+      };
+    }
+  }
+  return sections === raw.sections &&
+    examples === raw.examples &&
+    recall === raw.recall
     ? raw
-    : ({ ...raw, sections, examples } as T);
+    : ({ ...raw, sections, examples, recall } as T);
 }

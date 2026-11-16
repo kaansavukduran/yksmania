@@ -1,0 +1,1252 @@
+[
+  {
+    "id": "f011-bio-b-invert-1",
+    "identity": "[\"f011-bio-b-invert-1\",\"Bir hayvan çok sayıda porundan su alıyor, gerçek doku ve organ taşımıyor; yakaladığı besini hücre içinde sindiriyor. Hangi okul grubuyla en uyumludur?\",\"\",[\"Süngerler\",\"Sölenterler\",\"Halkalı solucanlar\",\"Eklembacaklılar\",\"Derisidikenliler\"],0,\"Porlu su süzme yapısı ve gerçek doku-organ yokluğu süngeri destekler. Sölenterde doku ve yakıcı hücre; halkalı solucanda organlaşma; eklembacaklıda eklemli üyeler; derisidikenlide su damar sistemi bulunur. Yalnız suda yaşama bu ayrımı yapmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hayvanlarda hücresel iş bölümü ile gerçek doku ve organ oluşumu farklı organizasyon düzeyleridir. Doku, benzer görev için örgütlenmiş hücrelerin birlikte oluşturduğu yapıdır.",
+        "Hücre içi sindirimde besin parçacıkları hücre içine alınır ve enzimlerle parçalanır. Su akımı, hücrelere besin ve oksijen ulaştıran bir taşıma yolu olabilir."
+      ],
+      "strategy": "Verilen özellikleri organizasyon ve besin alma yolu olarak iki sütuna ayır. Her adayın ikisini birlikte karşılayıp karşılamadığını denetle; yalnız sucul yaşamı ölçüt yapma.",
+      "steps": [
+        "Kökte porlardan su alındığını ve gerçek doku-organ bulunmadığını ayrı kaydet. Hücre içi sindirim de bu düşük organizasyon düzeyiyle birlikte değerlendirilmelidir.",
+        "Sölenterlerde gerçek doku; halkalı solucanlarda, eklembacaklılarda ve derisidikenlilerde daha ileri organlaşma bulunur. Bu adayları doku yokluğu koşuluyla karşılaştır.",
+        "Porlu su süzme ile gerçek doku-organ yokluğunu birlikte karşılayan okul grubu süngerlerdir. İlk seçeneği iki bağımsız yapısal kanıtla doğrula."
+      ],
+      "optionReasons": [
+        "Süngerlerde çok sayıdaki por su akımına katılır; gerçek doku ve organ yoktur, besin hücre içinde sindirilebilir. Üç gözlem birlikte bu gruba uyar.",
+        "Sölenterlerde yakıcı hücreler ve gerçek doku organizasyonu vardır. Kökteki gerçek doku yokluğu bu adayla çelişir.",
+        "Halkalı solucanlarda sindirim kanalı ve kapalı dolaşım gibi organ sistemleri vardır; verilen hücresel organizasyon düzeyinde değillerdir.",
+        "Eklembacaklıların kitin dış iskelet ve eklemli üyelere dayanan organlaşmış planı, gerçek doku-organ bulunmamasıyla uyuşmaz.",
+        "Derisidikenlilerde su damar sistemi ve tüp ayaklar gibi özelleşmiş yapılar bulunur. Suyu kullanmaları tek başına porlu, dokusuz plan demek değildir."
+      ],
+      "commonError": "Denizde yaşama veya su kullanmayı tek başına grup tanısı saymak, asıl ayırıcı olan organizasyon düzeyini gözden kaçırır.",
+      "check": "Seçtiğin grupta yalnız su süzme değil, gerçek doku-organ yokluğu da sağlanıyor mu? Sünger seçimi bu iki koşulu birlikte karşılar."
+    }
+  },
+  {
+    "id": "f011-bio-b-invert-2",
+    "identity": "[\"f011-bio-b-invert-2\",\"Bir hidrada yakıcı hücreler ve tek açıklıklı sindirim boşluğu gözleniyor. Hangi yorum doğrudur?\",\"\",[\"Ağız ve anüs zorunlu ayrıdır\",\"Sölenter planıyla uyumludur; aynı açıklık giriş ve çıkışa hizmet eder\",\"Gerçek doku kesinlikle bulunmaz\",\"Her hücresine kapalı dolaşımla kan gider\",\"Bütün yaşamı yalnız eşeysiz üremeyle geçmek zorundadır\"],1,\"Hidra sölenterdir; tek açıklık besin alımı ve artık çıkışında kullanılır. Doku organizasyonu vardır, özel dolaşım sistemi yoktur. Yakıcı hücre ve verilen boşluk iki açıklığı veya yaşam boyu tek üreme yolunu gerektirmez. Bu nedenle yalnız ikinci yorum verilen yapıya uygundur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Besinin vücuda alınması, parçalanması ve sindirilemeyen artıkların uzaklaştırılması birbirinden ayrılabilen işlevlerdir. Sindirim boşluğu ile iki uçlu bir sindirim kanalı aynı yapısal plan değildir.",
+        "Doku organizasyonu, organ sistemlerinin tümünün bulunması anlamına gelmez. Yakıcı hücreler avlanma ve savunmaya katılan özelleşmiş hücrelerdir."
+      ],
+      "strategy": "Sindirim boşluğunu ve gözlenen açıklığı çiz; giriş ile çıkış yollarını bu şekil üzerinde izle. Ardından diğer seçeneklerdeki dolaşım, doku ve yaşam boyu üreme iddialarını ayrı sınamalarla kontrol et.",
+      "steps": [
+        "Şekilde yalnız bir açıklık bulunduğunu göster. İki ayrı uç çizmek, kökün verdiği anatomiyi değiştirmiş olur.",
+        "Besinin alınması ve sindirilemeyen artıkların uzaklaşması aynı açıklık üzerinden yürür. Hidranın doku düzeyi ile özel dolaşım sisteminin bulunmaması da ayrı özelliklerdir.",
+        "Bu yapıyı sölenter planıyla ve ortak giriş-çıkış açıklığıyla ilişkilendiren ikinci yorum uygundur. Yapı gözleminden yaşam boyu tek üreme yolu sonucu çıkarma."
+      ],
+      "optionReasons": [
+        "Ağız ve anüsün zorunlu ayrı olması iki açıklıklı kanal gerektirir. Kökte ise tek açıklıklı boşluk açıkça verilmiştir.",
+        "Hidra sölenter örneğidir; tek açıklıklı sindirim boşluğunda aynı açıklık besin girişine ve artık çıkışına hizmet eder.",
+        "Sölenterlerde gerçek doku organizasyonu bulunur. Doku yokluğu özelliğini hidranın özel dolaşım sistemi taşımamasıyla karıştırma.",
+        "Hidrada özel kapalı dolaşım sistemi yoktur; maddeler suyla ve vücut yüzeyiyle ilişkili yollarla taşınır. Her hücreye kan damarı eklenemez.",
+        "Hidranın tomurcuklanabilmesi veya tek açıklıklı sindirim boşluğu, tüm yaşamının yalnız eşeysiz üremeyle geçmesini zorunlu kılmaz."
+      ],
+      "commonError": "Bir organ sisteminin yokluğunu bütün dokuların yokluğu sanmak ya da sindirim yapısından üreme biçimini zorunlu çıkarmak farklı biyolojik eksenleri karıştırır.",
+      "check": "Çiziminde iki ayrı sindirim ucu oluşmadığını kontrol et. Uygun yorum hem hidranın grubunu hem tek açıklığın iki işlevini doğru vermelidir."
+    }
+  },
+  {
+    "id": "f011-bio-b-invert-3",
+    "identity": "[\"f011-bio-b-invert-3\",\"Toprak solucanı, midye, çekirge ve ahtapot arasında kapalı dolaşım sistemini paylaşan çift hangisidir?\",\"\",[\"Midye ve çekirge\",\"Çekirge ve ahtapot\",\"Toprak solucanı ve ahtapot\",\"Toprak solucanı ve midye\",\"Midye ve ahtapot\"],2,\"Toprak solucanı halkalı solucandır ve kapalı dolaşımlıdır; ahtapot kafadanbacaklı yumuşakça olarak kapalı dolaşım taşır. Midye çoğu yumuşakça gibi açık, çekirge eklembacaklı olarak açık dolaşımlıdır. Omurgasızlık bütün üyelerde açık dolaşım zorunluluğu değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kapalı dolaşımda kan damarların içinde ilerler; açık dolaşımda dolaşım sıvısı damar dışındaki vücut boşluklarına da ulaşır.",
+        "Bir hayvan şubesinin genel özelliği, içindeki bütün alt grupları aynılaştırmayabilir. Bir sistem karşılaştırmasında canlının daha dar grubunu bilmek önemlidir."
+      ],
+      "strategy": "Dört canlının her biri için önce dar hayvan grubunu, sonra dolaşım tipini yaz. Çift seçeneklerini bu dört satırlık tablodan kontrol et; bir doğru üyeyi bulmakla yetinme.",
+      "steps": [
+        "Toprak solucanını halkalı solucan, çekirgeyi eklembacaklı olarak yerleştir. Bu iki örneğin dolaşımları sırasıyla kapalı ve açıktır.",
+        "İki yumuşakçayı ayrı tut: midyede açık dolaşım bulunurken kafadanbacaklı ahtapotta kapalı dolaşım vardır.",
+        "İki üyesi de kapalı satırına düşen çift toprak solucanı ile ahtapottur. Diğer çiftlerin en az bir üyesinde açık dolaşım bulunur."
+      ],
+      "optionReasons": [
+        "Midye de çekirge de açık dolaşım örneğidir. Çiftin iki üyesi de istenen kapalı dolaşımı sağlamaz.",
+        "Ahtapot kapalı dolaşımlıdır; çekirgede ise açık dolaşım vardır. Yalnız bir üyenin uyması çifti doğru yapmaz.",
+        "Toprak solucanı halkalı solucan, ahtapot kafadanbacaklı yumuşakçadır; iki örnekte de kan damarların içinde dolaşır.",
+        "Toprak solucanı kapalı dolaşımlı olsa da midye açık dolaşımlıdır. Bu çift iki koşulu birlikte karşılamaz.",
+        "Ahtapot kapalı, midye açık dolaşımlıdır. Aynı geniş yumuşakça grubunda olmaları dolaşımlarının aynı olmasını gerektirmez."
+      ],
+      "commonError": "Bütün yumuşakçalara çoğunluğun dolaşım tipini yaymak, kafadanbacaklı istisnasını siler.",
+      "check": "Seçilen çiftin iki adını da ayrı ayrı kapalı dolaşım tablosunda doğrula; toprak solucanı ve ahtapot birlikte bu şartı sağlar."
+    }
+  },
+  {
+    "id": "f011-bio-b-invert-4",
+    "identity": "[\"f011-bio-b-invert-4\",\"Kitin dış iskelet, eklemli üyeler ve trake verilen bir hayvanı yalnız böcekler alt grubuna yerleştirmek için hangi ek kanıt en ayırt edicidir?\",\"\",[\"Heterotrof beslenme\",\"Ökaryot hücre\",\"Açık dolaşım\",\"Göğüste üç çift bacak\",\"Omurganın olmaması\"],3,\"Göğüste üç çift bacak böcek vücut planının ayırt edici özelliğidir. Heterotrofluk ve ökaryotluk geniş hayvan ortaklıklarıdır; açık dolaşım eklembacaklılarda yaygındır, omurga yokluğu da çok geniştir. Trake bazı çok ayaklı ve örümceğimsilerde de bulunabildiğinden tek başına böceği seçtirmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sınıflandırmada üst grubun üyeleri bazı yapıları ortak taşır; alt grubu ayırmak için adaylar arasında dağılımı farklı olan ek bir özellik gerekir.",
+        "Bir yapının görevi ile vücuttaki sayısı ve yerleşimi farklı bilgi türleridir. Üyelerin hangi gövde bölümüne bağlandığı, yalnız hareket etmelerinden daha ayrıntılı bir kanıttır."
+      ],
+      "strategy": "Önce kökte zaten kurulan üst grubun ortaklarını çıkar. Kalan ek özellikleri farklı eklembacaklı planları arasında karşılaştır; yeni kanıtın gerçekten alt grup ayrımı yapıp yapmadığına bak.",
+      "steps": [
+        "Kitin dış iskelet ve eklemli üyeler eklembacaklı planını destekler. Trake ise bazı başka eklembacaklılarda da bulunabildiğinden alt grubu tek başına bitirmez.",
+        "Heterotrofluk ve ökaryotluk hayvanlar arasında; açık dolaşım ve omurgasızlık ise burada aranan alt gruptan daha geniş düzeylerde paylaşılır.",
+        "Göğüste üç çift bacak böceklerin tipik planını ayırır. Bu nedenle dördüncü ek kanıt, diğer ortak özelliklerden daha seçicidir."
+      ],
+      "optionReasons": [
+        "Heterotrof beslenme böceklerle birlikte diğer hayvan gruplarında da vardır. Verilen hayvanı böcekler alt grubuna daraltmaz.",
+        "Ökaryot hücre bütün hayvanlarda ortaktır. Üst grubun içindeki böcek ayrımı için yeterli yeni bilgi sağlamaz.",
+        "Açık dolaşım eklembacaklılar içinde böcek dışındaki örneklerde de bulunur. Üst grubun ortak özelliğini tekrarlar.",
+        "Göğüs bölümünde üç çift bacak, böceğin tipik vücut düzenidir. Üyelerin hem sayısını hem yerleşimini vererek alt grubu ayırır.",
+        "Omurga yokluğu eklembacaklılardan da geniş bir hayvan kümesini kapsar. Böceğe özgü ek tanı kanıtı değildir."
+      ],
+      "commonError": "Bir özelliğin böcekte bulunmasını, yalnız böcekte bulunmasıyla eşitlemek üst ve alt grup ayrımını bozar.",
+      "check": "Eklediğin özellik, örümcek veya çok ayaklı gibi başka eklembacaklıları da aynı şekilde bırakıyor mu? Göğüste üç çift bacak bu karşılaştırmada ayrım yapar."
+    }
+  },
+  {
+    "id": "f011-bio-b-invert-5",
+    "identity": "[\"f011-bio-b-invert-5\",\"Bir deniz hayvanında su damar sistemi, tüp ayaklar ve kireçli iç iskelet bulunuyor. Hangi sonuç bu kanıtla uyumludur?\",\"\",[\"İç iskelet taşıdığı için zorunlu omurgalıdır\",\"Denizde yaşadığı için süngerdir\",\"Tüm yaşam evrelerinde kesin iki yanlı simetrilidir\",\"Kitin dış iskeletli bir böcektir\",\"Derisidikenli bir omurgasızla uyumludur\"],4,\"Su damar sistemi ve tüp ayak derisidikenli kanıtıdır; bu grupta kireçli iç iskelet bulunabilir ama omurga yoktur. Denizel yaşam tek başına sünger tanısı yapmaz. Ergin ve larva simetrileri farklı olabilir; kitin dış iskelet ve böcek planı verilen yapılarla aynı değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "İç iskelet, destek yapısının vücut içinde yer almasını anlatır. Omurga ise omurlardan oluşan özel bir eksensel destek yapısıdır; iki terim aynı yapıyı adlandırmaz.",
+        "Bir yaşam alanı birçok hayvan grubunca paylaşılabilir. Birbiriyle bağlantılı organ ve hareket yapıları, yalnız yaşanılan ortamdan daha ayrıntılı sınıflandırma verisi sağlar."
+      ],
+      "strategy": "Su damar sistemiyle tüp ayağı tek işlevsel paket olarak değerlendir. İç destek yapısının malzemesini ve omurga bulunup bulunmadığını ayrı tut; yalnız denizde yaşama üzerinden grup seçme.",
+      "steps": [
+        "Kökte su damar sistemi, tüp ayaklar ve kireçli iç destek birlikte verilmiştir. En özgül ikili su damar sistemi ile tüp ayaktır.",
+        "Bu ikili derisidikenlilerle uyumludur. Kireçli iç iskelet taşımaları, omurlardan oluşan bir omurga taşıdıkları anlamına gelmez.",
+        "Derisidikenli bir omurgasızla uyum bildiren beşinci seçenek bu paketi karşılar. Simetriyi tüm evrelere yayma veya kitin dış iskelet ekleme."
+      ],
+      "optionReasons": [
+        "İç iskelet ile omurga aynı özellik değildir. Derisidikenliler kireçli iç iskeletli olduğu hâlde omurgasızdır.",
+        "Deniz ortamını süngerler dâhil birçok grup paylaşır. Kökteki tüp ayak-su damar sistemi paketi sünger tanısına uymaz.",
+        "Derisidikenlilerde ergin ve larva simetrileri farklı olabilir. Bütün yaşam evreleri için iki yanlı simetri zorunluluğu verilmemiştir.",
+        "Kitin dış iskelet böcek planının parçasıdır; kökte kireçli iç iskelet ve farklı hareket yapıları verilmiştir.",
+        "Su damar sistemi ve tüp ayaklar derisidikenlilerin ayırıcı paketidir; kireçli iç iskeletleri omurgasız olmalarıyla çelişmez."
+      ],
+      "commonError": "İskeletin içeride bulunmasından omurga sonucu çıkarmak veya deniz habitatını tek grup kanıtı yapmak farklı ölçütleri birleştirir.",
+      "check": "Seçim hem tüp ayakları hem kireçli iç desteği açıklamalıdır. Derisidikenli yorumu bunları açıklarken omurga varsayımı eklemez."
+    }
+  },
+  {
+    "id": "f011-bio-b-invert-6",
+    "identity": "[\"f011-bio-b-invert-6\",\"Yassı solucan planarya, parazit tenya ve halkalı toprak solucanı için hangi eşleştirme doğrudur?\",\"\",[\"Planarya: tek açıklıklı sindirim boşluğu; tenya: sindirim sistemi yok; toprak solucanı: ağız ve anüs ayrı\",\"Üçünde de ağız ve anüs ayrıdır\",\"Üçünde de sindirim sistemi yoktur\",\"Tenya: kapalı dolaşım; toprak solucanı: sistemsiz\",\"Planarya omurgalı, diğerleri omurgasızdır\"],0,\"Planaryanın tek açıklıklı boşluğu, tenyadaki sindirim sistemi yokluğu ve toprak solucanının iki açıklıklı kanalı farklı planlardır. Diğer seçenekler bu farklılıkları siler veya yanlış dolaşım ve omurga bilgisi ekler. Özellikle parazit tenyanın besini yüzeyden alması ayrı değerlendirilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sindirimde bir boşluğun bulunması, bunun kaç açıklığa sahip olması ve sindirim sisteminin hiç bulunmaması ayrı anatomik durumlardır.",
+        "Parazit bir hayvan, konakta hazır bulunan besinleri vücut yüzeyinden alabilir. Uzun gövde görünümü tek başına bütün solucanların organ sistemlerini eşitlemez."
+      ],
+      "strategy": "Her canlı için sindirim yapısı ve açıklık düzenini ayrı bir satıra yaz. Ardından seçeneklerdeki dolaşım veya omurga iddialarını, sindirim eşleştirmesinden bağımsız kontrol et.",
+      "steps": [
+        "Planaryada tek açıklıklı sindirim boşluğu bulunur. Parazit tenyaya aynı boşluğu kopyalama; tenyadaki sindirim sistemi yokluğu ayrı bir durumdur.",
+        "Toprak solucanı halkalı solucandır ve ağızla anüsün ayrı olduğu sindirim kanalı taşır. Böylece üç örnek için üç farklı yapısal kayıt oluşur.",
+        "Bu üç kaydı aynı sırayla veren ilk eşleştirme doğrudur. Diğer seçenekler ya farklılıkları siler ya da yanlış bir sistem veya omurga niteliği ekler."
+      ],
+      "optionReasons": [
+        "Planaryanın tek açıklıklı boşluğu, tenyadaki sindirim sistemi yokluğu ve toprak solucanının iki açıklıklı kanalı doğru sırayla eşleştirilmiştir.",
+        "Planaryanın sindirim boşluğu tek açıklıklıdır; tenyadaki sistem de iki açıklıklı kanal değildir. Üçünü aynılaştırmak iki kaydı bozar.",
+        "Planarya sindirim boşluğu, toprak solucanı sindirim kanalı taşır. Sistemsizlik yalnız bu örnekler içindeki tenyaya uyar.",
+        "Tenyada kapalı dolaşım sistemi bulunmaz; toprak solucanı ise kapalı dolaşımlıdır. İki canlıya yazılan sistem bilgileri yanlıştır.",
+        "Planarya da tenya ve toprak solucanı gibi omurgasızdır. Sindirim farkını omurgalı-omurgasız ayrımına çevirmek doğru değildir."
+      ],
+      "commonError": "Tek açıklıklı boşluk ile hiç sindirim sistemi olmamasını aynı durum saymak planarya-tenya ayrımını ortadan kaldırır.",
+      "check": "Üç canlı için aynı sindirim satırını tekrar etmediğini denetle: tek açıklık, sistem yokluğu ve iki açıklıklı kanal ayrı kalmalıdır."
+    }
+  },
+  {
+    "id": "f011-bio-b-invert-7",
+    "identity": "[\"f011-bio-b-invert-7\",\"Bir omurgasızda manto, iç organ kitlesi ve özelleşmiş kaslı ayak planı bulunuyor; belirgin dış kabuk görülmüyor. Hangisi güvenli yorumdur?\",\"\",[\"Kabuk yoksa yumuşakça olamaz\",\"Yumuşakça olabilir; ahtapot gibi dış kabuğu belirgin olmayan örnekler vardır\",\"Mutlaka böcektir\",\"Bütün benzerlerinde açık dolaşım zorunludur\",\"Manto omurgalılara özgü kanıttır\"],1,\"Manto ve özelleşmiş ayak planı yumuşakçayı destekler. Ahtapot belirgin dış kabuk taşımadan bu gruptadır ve kapalı dolaşımlıdır. Bu yüzden kabuk yokluğuyla grubu elemek ve tüm üyeleri açık dolaşımlı saymak yanlıştır. Böcek ve omurgalı çıkarımları verilen ayırıcı yapıyla uyuşmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir hayvanın vücut planını değerlendirirken dokuların kökeni ve görevleri birlikte ele alınır. Manto, iç organ kitlesini örten ve bazı örneklerde kabuk salgılayan bir yapıdır.",
+        "Aynı temel organ planı farklı türlerde farklı görünüşlere özelleşebilir. Bir dış örtünün gözlenmemesiyle bir iç doku planının bulunmaması aynı kanıt değildir."
+      ],
+      "strategy": "Olumlu verilen üç yapıyı, gözlenmeyen dış kabuktan ayrı değerlendir. Aday grupların temel doku planını ve o grup içindeki farklılaşmış örnekleri karşılaştır; yokluk gözleminden evrensel dışlama kurma.",
+      "steps": [
+        "Manto, iç organ kitlesi ve özelleşmiş kaslı ayak yumuşakça vücut planını birlikte destekler. Belirgin dış kabuk yokluğu bu yapıları silmez.",
+        "Ahtapotta ayak kollara özelleşmiştir ve belirgin dış kabuk bulunmaz. Bu örnek, kabuğu bütün grup için zorunlu saymaya karşı kontrol sağlar.",
+        "Yumuşakça olabileceğini kabuksuz örnekle açıklayan ikinci yorum güvenlidir. Buradan bütün üyelerde açık dolaşım sonucu da çıkarılamaz."
+      ],
+      "optionReasons": [
+        "Dış kabuk bütün yumuşakçalar için zorunlu değildir. Ahtapot gibi bir örnek bu dışlama kuralına karşı örnektir.",
+        "Manto ve özelleşmiş ayak planı yumuşakçayla uyumludur; ahtapot belirgin dış kabuk taşımayan bir örnek sağlar.",
+        "Böcek tanısı kitin dış iskelet ve böcek vücut planı gerektirir. Kökte bunların yerine manto-iç organ kitlesi-ayak paketi verilmiştir.",
+        "Çoğu yumuşakçada açık dolaşım bulunması bütün üyelerin açık dolaşımlı olduğu anlamına gelmez; ahtapotta kapalı dolaşım vardır.",
+        "Manto omurgalılara özgü bir tanı yapısı değildir. Verilen omurgasız vücut planını omurgalı özelliğine çevirmek yanlıştır."
+      ],
+      "commonError": "Görünür kabuğu grubun zorunlu tek ölçütü yapmak, yapısal planın farklılaşmış örneklerini dışarıda bırakır.",
+      "check": "Yorumun manto ve ayağı birlikte açıklıyor mu? Yumuşakça olasılığı bu olumlu kanıtlarla korunur; dış kabuk eksikliği tek başına onu elemez."
+    }
+  },
+  {
+    "id": "f011-bio-b-invert-8",
+    "identity": "[\"f011-bio-b-invert-8\",\"Bir planaryanın iki uygun parçasının her birinden bağımsız birey oluşuyor. Başka bir hayvanda yalnız yara kapanıyor ve birey sayısı değişmiyor. Bu iki olayı hangi ifade ayırır?\",\"\",[\"İkisinde de mutlaka döllenme vardır\",\"İkisi de yalnız büyümedir\",\"İlkinde rejenerasyonla üreme, ikincisinde onarım vardır\",\"Yalnız ikincisi eşeysiz üremedir\",\"Hücre çoğalması varsa ikisi de zorunlu yeni birey üretmiştir\"],2,\"Uygun parçaların iki bağımsız birey oluşturması rejenerasyonla üremedir. Yara kapanırken aynı birey onarılıyorsa üreme artışı yoktur. İkisinde hücre çoğalması bulunabilmesi aynı biyolojik sonucu gerektirmez; döllenme de verilen gözlemlerden çıkmaz. Ölçüt yalnız parça kopması değil yeni bireydir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hücre çoğalması çok hücrelilerde büyüme, eksik yapıları tamamlama veya yeni organizma oluşumu gibi farklı sonuçlara katılabilir.",
+        "Bir doku parçası ile bağımsız bir organizma aynı sayım birimi değildir. Organizma düzeyindeki değişimi değerlendirmek için olayın sonundaki yaşamını sürdüren bireyler izlenir."
+      ],
+      "strategy": "Her olay için başlangıç ve son karede bağımsız birey sayısını yaz. Sonra yenilenen yapının yeni bir bütün canlı mı, mevcut canlının eksik bölümü mü olduğuna göre süreçleri karşılaştır.",
+      "steps": [
+        "İlk olayda uygun iki planarya parçasının her biri bağımsız bireye gelişiyor. Burada tek atadan iki bağımsız canlıya geçiş vardır.",
+        "İkinci olayda yalnız yara kapanıyor ve birey sayısı aynı kalıyor. Hücrelerin çoğalabilmesi bu sonucun ilk olayla aynı olduğunu göstermez.",
+        "İlkini rejenerasyonla üreme, ikincisini onarım diye ayıran üçüncü seçenek uygundur. Verilmeyen döllenmeyi iki olaya da ekleme."
+      ],
+      "optionReasons": [
+        "Ne uygun parçalardan gelişme ne de yaranın kapanması gamet birleşmesini zorunlu gösterir. Döllenme kökte verilmemiştir.",
+        "İlk olayda yeni bağımsız bireyler oluşmuştur; yalnız büyüme olarak adlandırmak bu organizma artışını yok sayar.",
+        "İki planarya parçasından bağımsız bireyler oluşması rejenerasyonla üremedir. Birey sayısının değişmediği yara kapanması onarımdır.",
+        "İkinci olayda bağımsız birey sayısı artmıyor. Üremeyi yalnız ikinciye yazmak iki olayın sonuçlarını tersine çevirir.",
+        "Hücre çoğalması ile yeni birey oluşması farklı düzeylerdir. İkinci olay, hücre çoğalması olsa bile yeni canlı üretmediği için bu zorunluluğu çürütür."
+      ],
+      "commonError": "Her yenilenmeyi üreme saymak yerine, hücre sayısı ile bağımsız birey sayısını ayrı izlemek gerekir.",
+      "check": "İki olayın son birey sayılarını karşılaştır: ilkinde artış, ikincisinde mevcut bireyin devamı var. Süreç adların bu farkı korumalıdır."
+    }
+  },
+  {
+    "id": "f011-bio-b-invert-9",
+    "identity": "[\"f011-bio-b-invert-9\",\"Örümcek ile çekirgeyi ayırmada hangi karşılaştırma tipik okul vücut planlarıyla uyumludur?\",\"\",[\"İkisinde de zorunlu iki çift anten\",\"Örümcekte üç çift, çekirgede dört çift bacak\",\"Çekirgede omurga, örümcekte dış iskelet\",\"Örümcekte dört çift yürüme bacağı ve anten yok; çekirgede göğüste üç çift bacak ve bir çift anten\",\"Çekirgede mutlaka kapalı dolaşım\"],3,\"Tipik örümceğimsi örümcekte dört çift yürüme bacağı ve anten yokluğu, böcek çekirgede göğüste üç çift bacak ve bir çift anten bulunur. İkisi eklembacaklıdır; omurga taşımaz ve açık dolaşımlıdır. İki çift anten kabuklu örnekleriyle karşılaştırılır; ilk iki seçenek sayıları karıştırır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Antenler duyu alımına, yürüme bacakları harekete katılan üyelerdir. Bir çift, sağ ve soldaki iki üyeyi birlikte sayar.",
+        "Vücut bölümlerinin birleşmesi ve üyelerin bu bölümlere dağılımı, eklembacaklı alt gruplarını karşılaştırmakta kullanılır. Paylaşılan dış iskelet tek başına alt grubu belirlemez."
+      ],
+      "strategy": "Örümcek ve çekirge için anten ile yürüme bacağını ayrı sütunlarda say. Göğüs vurgusunu koru; ortak eklembacaklı özelliklerini ayırt edici özelliklerin yerine yazma.",
+      "steps": [
+        "Tipik örümcekte dört çift yürüme bacağı ve anten yokluğu kaydedilir. Bu, sekiz bacağın dört çift olarak sayılmasıdır.",
+        "Tipik böcek çekirgede göğüste üç çift yürüme bacağı ve başta bir çift anten bulunur. İki canlıya aynı üye paketini uygulama.",
+        "Bu iki düzeni doğru sırayla veren dördüncü karşılaştırmayı seç. İkisinde de omurga olmadığı ve dolaşımın açık olduğu ortaklıklarını ayrıca doğrula."
+      ],
+      "optionReasons": [
+        "İki çift anten tipik kabuklu planıyla karşılaştırılır. Örümcekte anten bulunmaz, çekirgede bir çift bulunur.",
+        "Bacak çiftleri ters verilmiştir: örümcekte dört, çekirgede göğüste üç çift yürüme bacağı vardır.",
+        "Çekirge de örümcek gibi omurgasız bir eklembacaklıdır. Dış iskelet yalnız örümceğe, omurga ise çekirgeye yazılamaz.",
+        "Örümceğin dört çift bacağı ve antensizliği ile çekirgenin göğüste üç çift bacağı ve bir çift anteni doğru karşılaştırılmıştır.",
+        "Çekirge eklembacaklı olarak açık dolaşım taşır. Kapalı dolaşım bu iki alt grubu ayıran doğru bir çekirge özelliği değildir."
+      ],
+      "commonError": "Bacakları tek tek sayıp sonucu çift sayısı diye yazmak veya iki canlının sütunlarını yer değiştirmek sayısal tanıyı bozar.",
+      "check": "Dört çiftin sekiz, üç çiftin altı bacak ettiğini kontrol et; anten sütunu da örümcekte yok, çekirgede bir çift olmalıdır."
+    }
+  },
+  {
+    "id": "f011-bio-b-invert-10",
+    "identity": "[\"f011-bio-b-invert-10\",\"‘Bütün omurgasızlarda özel dolaşım sistemi vardır ve bu sistem açıktır’ iddiasını hangi gözlem paketi doğrudan çürütür?\",\"\",[\"Çekirgede açık dolaşım görülmesi\",\"Midyenin suda yaşaması\",\"Denizyıldızının heterotrof olması\",\"Kelebeğin kanat taşıması\",\"Süngerde özel dolaşım sistemi yokluğu ve toprak solucanında kapalı dolaşım görülmesi\"],4,\"Süngerde özel dolaşım sistemi olmaması ilk parçayı; toprak solucanında kapalı dolaşım bulunması ikinci parçayı çürütür. Çekirge örneği yalnız açık dolaşımlı bir üyeyi gösterir ve evrenselliği kanıtlamaz. Habitat, heterotrofluk ve kanat bilgileri iddianın sistem türünü doğrudan sınamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bütün üyeler için kurulan bir iddia, o üyelerden tek birinin gerekli koşulu sağlamamasıyla çürütülebilir. İki koşulun birlikte istendiği iddiada koşullar ayrı ayrı sınanır.",
+        "Bir dolaşım sisteminin bulunması ile bulunan sistemin tipi farklı özelliklerdir. Açık ve kapalı dolaşım, dolaşım sıvısının izlediği yolla tanımlanır."
+      ],
+      "strategy": "İddiayı sistemin varlığı ve sistemin tipi olarak iki sütuna böl. Her gözlemin hangi sütunu sınadığını işaretle; iddiayla uyuşan tek örneği evrenselliğin kanıtı sayma.",
+      "steps": [
+        "İddia bütün omurgasızlarda hem özel sistem bulunduğunu hem bunun açık olduğunu söylüyor. Bir gözlemin bu iki önermeden hangisine aykırı olabileceğini ara.",
+        "Süngerde özel dolaşım sistemi yokluğu varlık koşulunu; toprak solucanında kapalı dolaşım ise açık olma koşulunu bozar.",
+        "Bu iki karşı örneği birlikte veren beşinci gözlem paketi iddiayı doğrudan çürütür. Habitat, kanat veya heterotrofluk dolaşım türünü sınayan gözlem değildir."
+      ],
+      "optionReasons": [
+        "Çekirgede açık dolaşım bulunması iddiayla uyumlu bir örnektir. Tek uyumlu örnek, bütün omurgasızlarda aynı sistem bulunduğunu kanıtlamaz veya çürütmez.",
+        "Midyenin suda yaşaması özel dolaşımın bulunup bulunmadığını ya da açık-kapalı oluşunu doğrudan bildirmez.",
+        "Denizyıldızının heterotrof olması beslenme özelliğidir. İddiaya karşı gerekli sistem varlığı veya tipi verisini sağlamaz.",
+        "Kelebeğin kanat taşıması hareket yapısıyla ilgilidir. Dolaşımın varlığına veya açık olma zorunluluğuna karşı örnek oluşturmaz.",
+        "Süngerin özel dolaşım taşımaması ve toprak solucanının kapalı dolaşımı, iddianın iki ayrı zorunluluğunu somut karşı örneklerle bozar."
+      ],
+      "commonError": "İddiayla uyumlu tek üyeyi bütün grubun kanıtı saymak veya konuyla ilgisiz bir özelliği karşı örnek diye kullanmak evrensel önerme sınamasını bozar.",
+      "check": "Karşı örneğinin iddiadaki özelliğe doğrudan temas ettiğini kontrol et: sünger sistem varlığını, toprak solucanı açık olma zorunluluğunu sınar."
+    }
+  },
+  {
+    "id": "f011-bio-b-vert-1",
+    "identity": "[\"f011-bio-b-vert-1\",\"Suda yaşayan bir omurgalı akciğerle soluyor ve yavrusunu sütle besliyor. Hangi okul grubuna yerleştirilir?\",\"\",[\"Memeliler\",\"Balıklar\",\"İki yaşamlılar\",\"Kuşlar\",\"Yumuşakçalar\"],0,\"Süt bezlerinin ürünüyle yavru besleme memeli tanısını destekler; yunus ve balina suda yaşayan örneklerdir. Akciğer tek başına birkaç grupta görülebilir, su habitatı balığı zorunlu kılmaz. Diğer gruplarda bu memeli özelliği bulunmaz; yumuşakça zaten omurgalı değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yaşam alanı, bir canlının hangi ortamı kullandığını; organ yapısı ise o ortamda nasıl iş gördüğünü anlatır. Aynı sucul ortam farklı hayvan grupları tarafından kullanılabilir.",
+        "Yavru besleme davranışıyla birlikte kullanılan salgı yapısı, sınıflandırmada bir yapısal kanıttır. Solunum, örtü ve yavru bakımı verileri aynı canlı için ayrı ayrı kaydedilir."
+      ],
+      "strategy": "Üç veriyi habitat, solunum ve yavru besleme olarak ayır. Aday grupları en dar yapısal kanıttan başlayarak karşılaştır; kalan adayın akciğerle solunumla da uyumunu denetle.",
+      "steps": [
+        "Suda yaşama bilgisini ilk sütuna yaz; bu özellik tek başına balık tanısı vermez. Akciğer verisi de birden fazla omurgalı grubunda bulunabilir.",
+        "Yavrunun süt bezlerinin ürünüyle beslenmesi memeli grubunu ayırır. Yunus ve balina, bu grubun sucul üyeleridir.",
+        "Memeliler seçimi hem sütle beslemeyi hem akciğer solunumunu açıklar. Sucul habitat bu yapısal kanıtlarla çelişmediği için ilk seçenek uygundur."
+      ],
+      "optionReasons": [
+        "Memelilerin yavrularını sütle beslemesi ve akciğerle soluması verilen iki yapısal veriyi karşılar. Yunus gibi sucul üyeler bulunur.",
+        "Suda yaşama balıklarla paylaşılabilir; fakat yavruyu sütle besleme balık planının özelliği değildir. Habitatı bu ayırıcı verinin önüne koyma.",
+        "Ergin iki yaşamlılarda akciğer görülebilir; buna karşılık süt bezleriyle yavru besleme bu grubun planı değildir.",
+        "Kuşlar akciğerle solur, ancak kökteki sütle besleme kuşların ayırıcı yapısı değildir. Tek ortak solunum özelliği grubu belirlemez.",
+        "Yumuşakçalar omurgasızdır; kökte hayvanın omurgalı olduğu açıkça verilmiştir. Ayrıca sütle besleme paketini de karşılamaz."
+      ],
+      "commonError": "Yüzme veya sucul yaşamı solungaç ve balık grubuyla zorunlu eşleştirmek, farklı organ planlarıyla aynı ortamın kullanılabildiğini unutturur.",
+      "check": "Seçimin yalnız ortamı değil iki yapısal veriyi de açıklasın: sütle besleme ve akciğer, sucul bir memelide birlikte bulunabilir."
+    }
+  },
+  {
+    "id": "f011-bio-b-vert-2",
+    "identity": "[\"f011-bio-b-vert-2\",\"Kuru keratinleşmiş örtü, akciğer, ektotermlik ve dört odacıklı kalp verilen bir örnek hangi canlıyla uyumludur?\",\"\",[\"Sazan\",\"Timsah\",\"Kurbağa larvası\",\"Penguen\",\"Yunus\"],1,\"Timsah sürüngen olup dört odacıklı kalp, kuru keratinleşmiş örtü, akciğer ve ektotermlik paketine uyar. Penguen ve yunus dört odacıklı olsa da endotermdir ve örtüleri farklıdır. Sazan solungaçlı iki odacıklı; kurbağa larvası ise verilen sürüngen örtüsünü taşımaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ektotermlik, çevresel ısının vücut sıcaklığı üzerindeki güçlü rolünü anlatır. Hayvanın sucul veya karasal olmasıyla aynı sınıflandırma ölçütü değildir.",
+        "Dört ana kalp odacığı iki kulakçık ve iki karıncık düzenidir. Örtü, solunum organı ve ısı düzenleme, kalp sayımından bağımsız ek karşılaştırma verileri sağlar."
+      ],
+      "strategy": "Adaylar için dört sütun aç: örtü, gaz alışverişi, ısı düzenleme ve kalp odacığı. Her veriyi aynı anda sağlayan örneği ara; yalnız kalp sayısıyla seçimi bitirme.",
+      "steps": [
+        "Sazan tipik olarak solungaçlı ve iki ana odacıklıdır. Kurbağa larvası da verilen kuru keratinleşmiş örtü-akciğer paketini karşılamaz.",
+        "Penguen ile yunus dört odacıklı olsa da tipik endoterm örneklerdir; örtüleri de verilen kuru pullu planla aynı değildir.",
+        "Timsah kuru keratinleşmiş örtü, akciğer, ektotermlik ve dört odacıklı kalbi birlikte taşır. İkinci seçenek dört sütunun tümünde uyumludur."
+      ],
+      "optionReasons": [
+        "Sazan solungaçla gaz alışverişi yapan iki ana kalp odacıklı bir balık örneğidir. Akciğer ve dört odacık koşullarını karşılamaz.",
+        "Timsah sürüngen olmasına rağmen dört odacıklı kalp taşır; kuru örtü, akciğer ve ektotermlik de bu örnekle uyumludur.",
+        "Kurbağa larvasında verilen kuru keratinleşmiş örtü ve akciğerli erişkin planı bulunmaz. Gelişim evresini ergin özellikleriyle değiştirme.",
+        "Penguenin dört odacıklı kalbi ve akciğeri vardır; fakat tüy örtüsü ve endotermliği, kökteki örtü ve ısı koşullarıyla uyuşmaz.",
+        "Yunus akciğerli ve dört odacıklıdır; buna karşılık tipik endoterm memeli planı, kuru pullu ektoterm paketinden farklıdır."
+      ],
+      "commonError": "Dört odacıklı kalbi yalnız kuş ve memeliye özgü sanmak timsahı yanlışlıkla elettirir.",
+      "check": "Kalan örnekte dört koşulu da tek tek doğrula. Timsah, kalp odacığı bakımından sürüngenler içindeki önemli istisnadır."
+    }
+  },
+  {
+    "id": "f011-bio-b-vert-3",
+    "identity": "[\"f011-bio-b-vert-3\",\"Uçamayan bir omurgalıda tüy, gaga ve akciğere bağlı hava keseleri bulunuyor. Hangi yorum doğrudur?\",\"\",[\"Uçamıyorsa kuş olamaz\",\"Kesin memelidir\",\"Kuş planıyla uyumludur; uçuş yeteneği zorunlu değildir\",\"Solungaç solunumu yapması zorunludur\",\"Dört odacıklı kalp taşıyamaz\"],2,\"Tüy ve verilen solunum paketi kuş planını destekler; penguen ve devekuşu uçmadan kuş olabilir. Uçmamak memeli tanısı yapmaz. Kuşlar akciğerle solur ve dört odacıklı kalp taşır; solungaç veya dört odacık yokluğu verilen tanıyla uyumlu değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Vücut örtüleri ve solunum sistemine bağlı yapılar anatomik özelliklerdir; uçabilme ise bu yapılardan farklı olarak bir hareket yeteneğidir.",
+        "Bir grupta yaygın olan hareket uyarlaması, bütün üyelerde aynı ölçüde işlev görmek zorunda değildir. Organların varlığı ile o organın sağladığı hareketin derecesi ayrı değerlendirilir."
+      ],
+      "strategy": "Olumlu gözlenen yapılarla gerçekleşmeyen hareketi ayrı yaz. Yapısal paket için aday grup oluşturduktan sonra uçmayan örneklerle bu grubun içindeki çeşitliliği denetle.",
+      "steps": [
+        "Kökte tüy, gaga ve akciğere bağlı hava keseleri birlikte vardır. Bu olumlu yapısal paket kuş planına uyar.",
+        "Penguen ve devekuşu gibi uçmayan kuşlar bulunduğundan uçuşun yokluğu bu yapısal tanıyı bozmaz.",
+        "Kuş planıyla uyumu koruyup uçuşu zorunlu saymayan üçüncü yorum doğrudur. Solungaç veya dört odacıklı kalbin yokluğu gibi eklemeler yapma."
+      ],
+      "optionReasons": [
+        "Uçmayan kuş örnekleri vardır. Uçuşu bütün kuşlarda zorunlu görmek, kökteki tüy ve solunum yapılarıyla kurulan tanıyı gereksiz yere dışlar.",
+        "Uçamamak memeli kanıtı değildir; ayrıca tüy ve hava keseleri verilen okul karşılaştırmasında kuş planını destekler.",
+        "Tüy, gaga ve hava keseleri kuşlarla uyumludur. Uçuş yeteneğinin bazı üyelerde bulunmaması bu uyumu ortadan kaldırmaz.",
+        "Kökte akciğer ve ona bağlı yapılar verilmiştir. Kuş planında temel gaz alışverişi akciğerdedir; solungaç zorunluluğu eklenemez.",
+        "Kuşlar dört odacıklı kalp taşır. Uçamamak kalbin bu yapısını ortadan kaldıran bir özellik değildir."
+      ],
+      "commonError": "Bir yeteneğin yokluğundan başka bir hayvan grubunu kesinleştirmek yerine olumlu anatomik kanıtların birlikte anlamını koru.",
+      "check": "Penguen karşı örneğiyle kontrol et: uçmaz, fakat kuştur. Son yorumun tüy ve hava kesesi verilerini dışlamamalıdır."
+    }
+  },
+  {
+    "id": "f011-bio-b-vert-4",
+    "identity": "[\"f011-bio-b-vert-4\",\"Kıl, süt bezleri ve yumurtlama gözlenen bir omurgalı için hangisi güvenlidir?\",\"\",[\"Yumurtlama nedeniyle memeli olamaz\",\"Tüy taşımak zorundadır\",\"Balık olması zorunludur\",\"Ornitorenk gibi yumurtlayan memeliyle uyumludur\",\"Döllenme kesin dış ortamda gerçekleşmiştir\"],3,\"Ornitorenk ve ekidne yumurtlayan memelilerdir; kıl ve süt bezi kanıtı yumurtlamayla çelişmez. Yumurtlama kuşa veya balığa özgü değildir ve dış döllenme anlamına gelmez. Bu nedenle yalnız yumurtlama üzerinden memeliyi elemek veya tüy eklemek yanlış genellemedir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Vücut örtüsü, yavrunun beslenmesi ve embriyonun gelişme biçimi farklı özellik kümeleridir. Bir üreme olayı diğer organ verilerini kendiliğinden silmez.",
+        "Kıl keratince zengin bir deri yapısıdır; süt bezleri yavrunun beslenmesinde kullanılan salgıyı üretir. Bu dokuların varlığı, embriyonun geliştiği ortamdan ayrı gözlenebilir."
+      ],
+      "strategy": "Kıl ve salgı bezi verileriyle aday grubu belirle; sonra yumurtlamanın o grup içinde bir karşı örnek gerektirip gerektirmediğini araştır. Yumurtanın bırakılma yerinden gamet birleşme yerini otomatik çıkarma.",
+      "steps": [
+        "Kıl ve süt bezleri memeli planının ayırıcı kanıtlarıdır. Önce bu iki olumlu yapıyı birlikte kullan.",
+        "Ornitorenk ve ekidne yumurtlayan memelilerdir. Dolayısıyla yumurtlama, kıl ve süt beziyle kurulan tanıyı zorunlu olarak bozmaz.",
+        "Yumurtlayan memeliyle uyumu bildiren dördüncü seçenek güvenlidir. Buradan tüy veya dış döllenme sonucu çıkarmak için veri yoktur."
+      ],
+      "optionReasons": [
+        "Memelilerin çoğunun doğurması bütün üyelerin doğurması demek değildir. Ornitorenk, yumurtlamanın memeliyi dışlamadığını gösterir.",
+        "Tüy kuşların okul karşılaştırmasındaki tanı özelliğidir. Kıl ve süt bezi verilen canlıya yumurtlama nedeniyle tüy eklenemez.",
+        "Yumurtlamak balıklara özgü değildir; verilen kıl ve süt bezi planı balık tanısıyla uyuşmaz.",
+        "Ornitorenk gibi yumurtlayan memeliler kıl ve süt bezi kanıtıyla uyumludur. Yumurtlama bu yapısal tanıyı bozmaz.",
+        "Yumurtanın vücut dışına bırakılması, gametlerin dışarıda birleştiğini göstermez. Yumurtlayan memelilerde döllenme içeridedir."
+      ],
+      "commonError": "Doğumu memeliliğin istisnasız şartı kabul etmek veya yumurtlamayı dış döllenme sanmak iki ayrı yanlış genellemedir.",
+      "check": "Ornitorenk örneği kıl-süt bezi-yumurtlama paketini birlikte sağlar. Seçim yalnız yumurta üzerinden değil bu bütünlük üzerinden yapılmalıdır."
+    }
+  },
+  {
+    "id": "f011-bio-b-vert-5",
+    "identity": "[\"f011-bio-b-vert-5\",\"Bir kuşta gametler dişinin içinde birleşiyor; embriyo sonradan dışarı bırakılan kabuklu yumurtada gelişiyor. Doğru adlandırma hangisidir?\",\"\",[\"Dış döllenme ve iç gelişme\",\"Dış döllenme ve dış gelişme\",\"İç döllenme ve zorunlu doğum\",\"Döllenmesiz vejetatif üreme\",\"İç döllenme ve dış gelişme\"],4,\"Gamet birleşmesi içeride olduğundan iç döllenme, embriyonun bırakılan yumurtada dışarıda gelişmesi dış gelişmedir. İç döllenme zorunlu doğum demek değildir. Diğer seçenekler yerleri değiştirir veya döllenme verisini yok sayarak vejetatif üretim gibi farklı mekanizma ekler.\"]",
+    "guidance": {
+      "knowledge": [
+        "Döllenme, gametlerin birleşmesiyle zigotun oluştuğu olaydır. Embriyonik gelişme ise bu başlangıçtan sonraki çok hücreli oluşum ve farklılaşma sürecidir.",
+        "Bir sürecin konumunu adlandırırken hangi olayın yeri ölçülüyorsa ona bakılır. Gamet birleşmesinin gerçekleştiği an ile embriyonun daha sonraki ortamı ayrı kaydedilir."
+      ],
+      "strategy": "Zaman çizgisinde gamet birleşmesini ve yumurtanın bırakılmasından sonraki gelişmeyi iki ayrı işaretle göster. Her terimi yalnız kendi işaretinin konumuna göre adlandır.",
+      "steps": [
+        "Gametlerin dişinin içinde birleştiği açıkça verilmiş. Bu olayın konumu döllenmenin iç olarak adlandırılmasını sağlar.",
+        "Embriyo, dışarı bırakılan kabuklu yumurtada gelişiyor. Bu ikinci konum gelişmenin dış olarak adlandırılmasıyla ilişkilidir.",
+        "İç döllenme ile dış gelişmeyi birlikte veren beşinci seçenek doğrudur. İç döllenmeden zorunlu doğum sonucu çıkarma."
+      ],
+      "optionReasons": [
+        "İki konum da ters yazılmıştır: gamet birleşmesi içeride, sonraki embriyo gelişimi bırakılmış yumurtada dışarıdadır.",
+        "Dış gelişme kısmı uygundur, fakat kökte gametler dişinin içinde birleştiği için dış döllenme kısmı yanlıştır.",
+        "İç döllenme verisi uygundur; zorunlu doğum ise yumurtada dış gelişme bilgisiyle çelişir. İç döllenme doğumla eş anlamlı değildir.",
+        "Kökte gametlerin birleşmesi verilmiştir. Döllenmesiz somatik dokudan bitki üretimi olan vejetatif yol bu olayı açıklamaz.",
+        "Gamet birleşmesi içeride, embriyo gelişimi dışarı bırakılan yumurtadadır. İki ayrı olayın konumları doğru sırayla adlandırılmıştır."
+      ],
+      "commonError": "Birinci olayın yerini ikincisine de kopyalamak, döllenme ile embriyonik gelişmeyi tek süreç gibi ele alır.",
+      "check": "İki sütununu tekrar oku: birleşme yeri iç, embriyonun yumurtadaki gelişme yeri dış. Seçenekte aynı sıra korunmalıdır."
+    }
+  },
+  {
+    "id": "f011-bio-b-vert-6",
+    "identity": "[\"f011-bio-b-vert-6\",\"Sazan, kurbağa, kertenkele, penguen ve yunus örnekleri için hangisi okul düzeyinde ortak omurgalı planıyla uyumludur?\",\"\",[\"Kapalı dolaşım ve böbreklerle boşaltım\",\"Dört odacıklı kalp\",\"Akciğerle solunum\",\"Süt bezleri\",\"Tüy örtüsü\"],0,\"Kapalı dolaşım ve böbrekler verilen omurgalı örneklerinde ortak planın parçalarıdır. Dört odacık sazan ve kurbağada yoktur; sazan temel gaz alışverişini solungaçla yapar. Süt bezi memeliye, tüy kuşa özgü tanı kanıtıdır. Dar grup özelliği geniş ortaklık yerine kullanılamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ortak özellik sorusunda bir seçeneğin listedeki her canlıda bulunması gerekir. Farklı omurgalı gruplarından seçilmiş örnekler, aday bir ortaklığı sınamak için kullanılır.",
+        "Dolaşım maddelerin vücutta taşınmasına, boşaltım metabolik atıkların uzaklaştırılmasına hizmet eder. Bu işlevler, örtü biçimi veya kalp odacığı gibi tek bir ayrıntıyla aynı şey değildir."
+      ],
+      "strategy": "Her seçeneği beş canlıdan oluşan satırlar boyunca denetle. Özellikle diğerlerinden farklı solunum ve kalp planı taşıyan örnekte ilk sınamayı yap; tek uyumlu canlı üzerinden ortaklık kurma.",
+      "steps": [
+        "Sazan solungaçlı ve iki ana odacıklı kalp taşıyan bir örnektir. Bu yüzden dört odacık ve akciğer, listenin tümüne ortak yazılamaz.",
+        "Süt bezi yunusun memeli planına, tüy ise penguenin kuş planına aittir. Bu iki örtü-besleme niteliği de bütün listeyi kapsamaz.",
+        "Listelenen omurgalılarda kapalı dolaşım ve böbreklerle boşaltım ortak okul planıyla uyumludur. İki ortaklığı birlikte veren ilk seçenek kalır."
+      ],
+      "optionReasons": [
+        "Sazan, kurbağa, kertenkele, penguen ve yunusta kapalı dolaşım ve böbrekler okul düzeyindeki ortak omurgalı planına uyar.",
+        "Sazanın iki, kurbağanın üç ana kalp odacığı vardır. Bu örnekler dört odacık özelliğinin bütün listeye yayılmasını engeller.",
+        "Sazan temel gaz alışverişini solungaçla yapar. Bazı üyelerde akciğer bulunması onu bütün listeye ortak yapmaz.",
+        "Süt bezleri listedeki memeli yunusun özelliğidir; sazan, kurbağa, kertenkele ve penguen bu memeli yapısını taşımaz.",
+        "Tüy penguenin kuş planına aittir. Listenin diğer omurgalı gruplarına tüy örtüsü yazılamaz."
+      ],
+      "commonError": "Bir özelliğin en tanıdık örnekte bulunmasını beş canlının tümünde bulunma kanıtı saymak ortaklık koşulunu zayıflatır.",
+      "check": "Aday ortaklığını en az sazan ve yunus gibi farklı iki örnekte, sonra bütün listede doğrula. Kapalı dolaşım ve böbrekler bu sınamayı geçer."
+    }
+  },
+  {
+    "id": "f011-bio-b-vert-7",
+    "identity": "[\"f011-bio-b-vert-7\",\"Bir kurbağanın larvası solungaç, ergini akciğer ve deriyle soluyor. Hangi açıklama uygundur?\",\"\",[\"Ergin olması onu sürüngene dönüştürür\",\"Başkalaşımda yapı ve yaşam biçimi değişir; iki evre aynı iki yaşamlı türünün evreleridir\",\"Larva ve ergin mutlaka farklı türlerdir\",\"Nemli deri solunumla ilişkili olamaz\",\"İki yaşamlılarda tüm yaşam boyunca tek solunum organı zorunludur\"],1,\"Başkalaşım belirgin yapı ve yaşam biçimi değişimidir; larva-ergin solunum farkı tür veya okul grubu değişimi değildir. Nemli deri gaz alışverişine katılabilir. Aynı türün her evresinde zorunlu tek organ varsaymak verilen gözlemi siler; ergin kurbağa sürüngen olmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Larva, bir hayvanın erginlik öncesindeki gelişim evresidir. Gelişim sırasında organların yapısı ve kullanımı değişebilir.",
+        "Gaz alışverişi uygun ince ve nemli yüzeylerde difüzyonla gerçekleşir. Farklı organlar veya vücut yüzeyi, yaşam evresine göre bu göreve farklı ölçülerde katılabilir."
+      ],
+      "strategy": "İki solunum kaydını aynı bireyin zaman çizgisine yerleştir. Yapısal değişimi yeni bir tür veya başka bir hayvan grubu varsaymadan açıklayıp açıklayamadığını sınayarak seçenekleri karşılaştır.",
+      "steps": [
+        "Larvada solungaç, erginde akciğer ve deri kaydedilmiş. Bunlar bir kurbağanın iki gelişim evresine ait gözlemlerdir.",
+        "Bu yapı ve yaşam biçimi değişimi başkalaşımla açıklanır. Nemli derinin gaz alışverişine katılması ergin evrenin solunum paketinin parçasıdır.",
+        "Aynı iki yaşamlı türünün evrelerini koruyarak başkalaşımı açıklayan ikinci seçenek uygundur. Erginleşmeyi sürüngene veya başka türe dönüşme sayma."
+      ],
+      "optionReasons": [
+        "Ergin kurbağa yine iki yaşamlıdır. Erginleşme, canlıyı sürüngenler okul grubuna dönüştüren bir olay değildir.",
+        "Larva ve ergin aynı türün gelişim evreleridir; başkalaşım sırasında solunum yapıları ve yaşam biçimi değişebilir.",
+        "Kökte iki farklı tür değil, aynı kurbağanın larvası ile ergini verilmiştir. Organ farkı tek başına tür farkı değildir.",
+        "Nemli deri uygun gaz alışveriş yüzeyi sağlayabilir; kurbağanın deri solunumu bu ifadeyi doğrudan çürütür.",
+        "Larva ve ergin için zaten farklı solunum yapıları verilmiştir. Yaşam boyu tek organ zorunluluğu gözlemlerle uyuşmaz."
+      ],
+      "commonError": "Gelişim evrelerini ayrı türler gibi değerlendirmek veya yalnız erişkin özelliğini larvaya da uygulamak zaman boyutunu kaybettirir.",
+      "check": "Açıklaman iki evreyi aynı yaşam çizgisi içinde tutuyor mu? Başkalaşım, organ değişimini açıklarken tür ve okul grubunu değiştirmez."
+    }
+  },
+  {
+    "id": "f011-bio-b-vert-8",
+    "identity": "[\"f011-bio-b-vert-8\",\"Bir öğrenci ‘ektoterm canlının kanı her an bir endoterminkinden daha soğuktur’ diyor. Hangisi doğru düzeltmedir?\",\"\",[\"Ektoterm canlılarda metabolizma yoktur\",\"Endoterm canlılar çevreyle ısı alışverişi yapmaz\",\"Terimler ısı kaynağı ve düzenlemeyle ilişkilidir; tek ölçümde sıcaklık sırası zorunlu değildir\",\"Ektoterm bütün hayvanlar omurgasızdır\",\"Endotermlik dört odacık olmayan kalpte zorunlu görülür\"],2,\"Ektotermlik çevresel ısının, endotermlik metabolik ısı üretiminin önemli rolünü anlatır. Bu bir karşılaştırma anında kan sıcaklıkları için değişmez sıra koymaz. İkisinde de metabolizma ve çevreyle ısı alışverişi vardır. Diğer seçenekler grup veya kalp hakkında konuyla ilgisiz ve yanlış zorunluluklar ekler.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sıcaklık bir anda ölçülen fiziksel bir büyüklüktür; ısı ise enerji aktarımıyla ilişkilidir. Canlılar çevreleriyle ışınım, iletim ve başka yollarla ısı alışverişi yapar.",
+        "Metabolik tepkimeler ısı açığa çıkarabilir. Güneşlenme veya gölgeye geçme gibi davranışlar da vücut sıcaklığını etkileyen çevresel enerji alışverişini değiştirir."
+      ],
+      "strategy": "İddiayı aynı anda yapılmış iki sıcaklık ölçümü olarak yaz. Sonra terimlerin hangi mekanizmayı anlattığını incele; çevre koşullarını değiştirerek her durumda aynı sıcaklık sırasının gerekip gerekmediğini sına.",
+      "steps": [
+        "Ektotermlikte çevresel ısı, endotermlikte metabolik ısı üretimi daha belirleyicidir. İki terim de metabolizmanın veya çevreyle ısı alışverişinin yokluğu anlamına gelmez.",
+        "Güneşteki bir ektotermin ölçümü, gölgedeki başka bir canlının ölçümünden yüksek olabilir. Isı kaynağını tek bir ölçümdeki sıcaklık sırasıyla eşitleme.",
+        "Kaynak ve düzenleme mekanizmasını açıklayıp zorunlu anlık sıra kurmayan üçüncü seçenek uygundur. Kalp veya omurga hakkında ilgisiz zorunluluklar ekleme."
+      ],
+      "optionReasons": [
+        "Ektoterm canlılarda da metabolizma vardır. Çevresel ısının güçlü etkisi, kimyasal tepkimelerin yokluğu değildir.",
+        "Endoterm canlılar çevreleriyle yine ısı alışverişi yapar; metabolik ısı üretiminin önemli olması çevreden tamamen yalıtılmak demek değildir.",
+        "Terimler ısının başlıca kaynağı ve düzenlenme biçimiyle ilgilidir. Tek bir anda iki canlının kan sıcaklıklarını değişmez biçimde sıralamaz.",
+        "Balık, kurbağa ve kertenkele gibi ektoterm omurgalılar vardır. Ektotermliği yalnız omurgasızlara ait saymak yanlıştır.",
+        "Kuş ve memeliler dört odacıklı ve tipik endoterm örneklerdir. Endotermliği dört odacık bulunmamasına bağlayan zorunluluk doğru değildir."
+      ],
+      "commonError": "Soğukkanlı sözünü her an daha soğuk kan olarak okumak, enerji kaynağı terimini anlık sıcaklık karşılaştırmasına dönüştürür.",
+      "check": "Çevre koşullarını düşüncede değiştirdiğinde iddianın zorunlu sırası korunuyor mu? Doğru yorum bu sırayı dayatmadan ısı kaynağı farkını açıklar."
+    }
+  },
+  {
+    "id": "f011-bio-b-vert-9",
+    "identity": "[\"f011-bio-b-vert-9\",\"Kuşların hava keseleri için hangi ifade doğrudur?\",\"\",[\"Akciğerin yerine geçen temel gaz değişim yüzeyidir\",\"Süt üretir\",\"Bütün omurgalılarda bulunur\",\"Havalandırmaya yardımcıdır; temel gaz değişimi akciğerde gerçekleşir\",\"Solungaçlarla bağlantılıdır\"],3,\"Hava keseleri kuşlarda havalandırmayı destekler; temel gaz değişimi akciğerdeki yapılarda olur. Akciğerin yerine geçen solungaç değildir, bütün omurgalılara ortak değildir ve süt üretimiyle ilişkisi yoktur. Yapının işlevi belirlenmeden yalnız hava sözcüğünden gaz değişiminin orada olduğu çıkarılamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Havalandırma, havanın solunum sistemi içinde hareket ettirilmesidir. Gaz alışverişi ise oksijen ve karbondioksitin uygun bir yüzey boyunca difüzyonla geçişidir.",
+        "Bir solunum sistemindeki bağlantılı yapılar aynı görevi üstlenmek zorunda değildir. Hava akışını sağlayan bölüm ile kanla gaz değişimine elverişli yüzey ayrı incelenir."
+      ],
+      "strategy": "Seçenekleri önce hava hareketi, gaz değişimi ve ilgisiz salgı işlevleri olarak ayır. Kuştaki bağlı yapıların her birini kendi görevine yerleştir; adında hava geçmesini tek başına işlev kanıtı sayma.",
+      "steps": [
+        "Kuşlarda hava keseleri akciğerlerle bağlantılıdır ve havanın sistem içinde hareketini destekler. Hava taşınması ile kanla gaz değişimi aynı basamak değildir.",
+        "Temel gaz alışverişi akciğerin özelleşmiş yüzeylerinde olur. Hava kesesini akciğerin yerine geçen yüzey olarak adlandırma.",
+        "Havalandırmaya yardım ile akciğerde temel gaz değişimini doğru ayıran dördüncü ifade doğrudur. Süt üretimi, solungaç veya bütün omurgalılara ortaklık eklemeleri uygun değildir."
+      ],
+      "optionReasons": [
+        "Hava keseleri akciğerin yerine geçmez. Kuşta temel gaz değişim yüzeyi akciğerdeki yapılardır; keseler havalandırmayı destekler.",
+        "Süt salgılama süt bezlerinin işlevidir. Hava keselerinin solunumla ilişkili yapısını böyle bir salgı işleviyle açıklamak yanlıştır.",
+        "Kuşlardaki hava kesesi düzeni bütün omurgalılar için ortak bir özellik değildir. Örneğin sazanın solunum planı solungaçlara dayanır.",
+        "Hava keseleri havalandırmaya yardımcı olur; oksijen ve karbondioksitin temel değişimi kuşun akciğerinde gerçekleşir.",
+        "Kuşun hava keseleri akciğerle bağlantılıdır. Solungaç bağlantısı eklemek farklı bir hayvanın solunum planını taşır."
+      ],
+      "commonError": "Bir boşlukta hava bulunmasından o boşluğun temel difüzyon yüzeyi olduğu sonucunu çıkarmak, havalandırma ile gaz değişimini karıştırır.",
+      "check": "Yorumunda iki görevi ayır: keseler hava hareketine, akciğer temel gaz değişimine katılır. Akciğerin yerini alan bir kese varsayılmamalıdır."
+    }
+  },
+  {
+    "id": "f011-bio-b-vert-10",
+    "identity": "[\"f011-bio-b-vert-10\",\"‘İç iskelet taşıyan her hayvan omurgalıdır’ iddiasını hangi örnek çürütür?\",\"\",[\"Yunusun memeli olması\",\"Sazanda kıkırdak veya kemik destek bulunması\",\"Penguenin tüy taşıması\",\"Kurbağada kapalı dolaşım bulunması\",\"Denizyıldızında kireçli iç iskelet olmasına karşın omurga bulunmaması\"],4,\"Derisidikenli denizyıldızı kireçli iç iskelet taşır ama omurga taşımaz; bu doğrudan karşı örnektir. Diğer örnekler zaten omurgalıdır veya başka sistem özelliği verir ve iddiayı çürütmez. İç destek yapısı ile omurga aynı ölçüt değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Omurga, birbirini izleyen omurlardan oluşan bir destek düzenidir. Vücut içindeki mineral destek parçaları ise başka yapılarda da bulunabilen daha geniş bir tanımdır.",
+        "Bir iddia “A özelliğini taşıyan her canlı B özelliğini de taşır” biçimindeyse, A’yı taşıyıp B’yi taşımayan tek örnek iddiayı çürütür."
+      ],
+      "strategy": "İddiayı iç destek var -> omurga var biçiminde yaz. Her örnekte iki özelliği ayrı işaretle; gerçekten ilk koşulu sağlayıp ikinciyi bozan bir örnek aradığından emin ol.",
+      "steps": [
+        "Aranan karşı örnekte iç iskelet bulunmalı, fakat omurga bulunmamalıdır. Zaten omurgalı olan bir örnek bu iddiayı çürütmez.",
+        "Denizyıldızı derisidikenlidir; kireçli iç iskelet taşır ve omurga taşımaz. İki koşul bu örnekte karşı örnek için gereken biçimde ayrılır.",
+        "Denizyıldızını bu iki yapıyla birlikte veren beşinci seçenek iddiayı doğrudan çürütür. Diğer seçeneklerdeki örtü veya dolaşım gözlemleri aynı sınamayı yapmaz."
+      ],
+      "optionReasons": [
+        "Yunus hem iç iskeletli hem omurgalıdır. İddiayla uyumlu bu örnek, iç iskeletli ama omurgasız bir karşı örnek sağlamaz.",
+        "Sazanda iç destek bulunması, onun zaten omurgalı olmasıyla uyumludur. Zorunlu ilişkiyi bozan bir durum değildir.",
+        "Penguenin tüy taşıması örtüyle ilgilidir; iç iskelet bulunup omurga bulunmaması koşulunu göstermez.",
+        "Kurbağanın kapalı dolaşımı başka bir sistem özelliğidir. İç iskelet-omurga iddiasına karşı gerekli ayrımı vermez.",
+        "Denizyıldızı kireçli iç iskelet taşıdığı hâlde omurgasızdır. Böylece iç iskeletin her hayvanda omurga gerektirmediğini somutlaştırır."
+      ],
+      "commonError": "Omurgalı bir hayvanın iç iskeletini göstermek, zorunlu ilişkiye karşı örnek bulmak değildir; iki özelliğin ayrıldığı örnek gerekir.",
+      "check": "Karşı örnekte ilk özellik var, ikinci yok olmalı. Denizyıldızı için iç iskelet var ve omurga yok kayıtları bunu sağlar."
+    }
+  },
+  {
+    "id": "f011-bio-b-mitosis-1",
+    "identity": "[\"f011-bio-b-mitosis-1\",\"Normal bir diploit hücre G₁’de2n=8 kromozom taşıyor. S evresi tamamlandığında çekirdek kromozomu ve DNA molekülü sayıları sırasıyla kaçtır?\",\"\",[\"8 ve16\",\"16 ve16\",\"8 ve8\",\"4 ve8\",\"16 ve8\"],0,\"S sonunda sekiz kromozomun her biri iki kardeş kromatit taşır: sekiz kromozom ve on altı çekirdek DNA molekülü. Takım sayısı2n kalır. On altı kromozom yazmak eşlenmeyi ayrılmayla karıştırır; dört yazmak mayoz azaltımını ekler, diğer DNA sayıları eşlenmeyi göz ardı eder.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir kromatit bir çift sarmallı DNA molekülü içerir. Eşlenmiş kromozomdaki iki kardeş, ayrılıncaya kadar aynı kromozom biriminin parçalarıdır.",
+        "DNA eşlenmesi mevcut kalıtım birimlerinin kopyalanmasıdır. Kopya sayısı ile homolog kromozom takımı sayısı farklı değişkenlerdir."
+      ],
+      "strategy": "Sekiz başlangıç birimini çiz ve her birine eşlenme sonrasındaki DNA kopyalarını yerleştir. Kromozom birimlerini ve onların içindeki DNA moleküllerini iki ayrı toplamla say.",
+      "steps": [
+        "G₁’de sekiz kromozom vardır. S evresinde her bir kromozomun DNA’sı kopyalanır; kardeşler henüz ayrılmaz.",
+        "Bağlı kardeşleri aynı kromozom biriminde tutunca kromozom sayısı sekiz kalır. Her birinde iki DNA molekülü olduğundan toplam 8×2=16 DNA bulunur.",
+        "İstenen sırayı koruyarak 8 kromozom ve 16 DNA molekülü sonucunu veren ilk seçeneği seç. Eşlenmeyi yeni homolog takım kazanımı sayma."
+      ],
+      "optionReasons": [
+        "Sekiz kromozomun her biri iki kardeşli hâle gelir; bağlı birimler sekiz, DNA molekülleri on altıdır. İki sayım doğru sıradadır.",
+        "DNA molekülü sayısı on altıdır, fakat kardeşler ayrılmadığından on altı bağımsız kromozom yoktur.",
+        "Sekiz kromozom korunur; DNA’nın da sekiz kalması tamamlandığı belirtilen eşlenmeyi yok sayar.",
+        "Dört kromozomluk sonuç normal S evresine takım azaltımı ekler. Eşlenme, kromozomları mayoz gibi yarıya indirmez.",
+        "Kromozomu on altıya çıkarmak ayrılma ekler; DNA’yı sekizde tutmak da eşlenmeyi dışlar. İki büyüklük yanlış yönde değiştirilmiştir."
+      ],
+      "commonError": "X biçimindeki iki kardeşi iki bağımsız kromozom saymak, DNA eşlenmesini kardeş ayrılmasıyla karıştırır.",
+      "check": "Çizimde sekiz bağlı kromozom birimi ve her birinde iki DNA var mı? Toplam 8/16 olmalı; takım sayısı 2n kalır."
+    }
+  },
+  {
+    "id": "f011-bio-b-mitosis-2",
+    "identity": "[\"f011-bio-b-mitosis-2\",\"Başlangıcı2n=6 olan hücrenin normal mitoz anafazında, sitoplazma henüz ayrılmamışken bütün hücrede kaç kromozom ve kaç çekirdek DNA molekülü vardır?\",\"\",[\"6 ve12\",\"12 ve12\",\"12 ve24\",\"6 ve6\",\"3 ve6\"],1,\"Altı eşlenmiş kromozomun kardeşleri ayrılınca bütün hücrede on iki bağımsız kromozom sayılır. Aynı on iki DNA molekülü korunur. Tek kutupta altı kromozom ve altı DNA bulunur; bu soruda bütün hücre istenmiştir. Yirmi dört DNA eklemek yeni bir eşlenme varsayımıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kardeş kromatitler birbirinden ayrıldıktan sonra her biri bağımsız kromozom sayılır. Adlandırmadaki bu değişim yeni bir DNA sentezi değildir.",
+        "Bir hücrenin iki kutbu olması, sitoplazmasının iki ayrı hücreye ayrılmış olduğu anlamına gelmez. Sayım alanı hücre zarı ve bölünmenin tamamlanma durumuyla belirlenir."
+      ],
+      "strategy": "Önce metafazdaki eşlenmiş birimleri kur, sonra kardeşlerin ayrılmasını uygula. İki kutbu aynı hücre sınırı içinde tutarak kromozom ve DNA toplamlarını ayrı ayrı topla.",
+      "steps": [
+        "Başlangıçtaki altı kromozom S sonrasında altı iki-kardeşli birim ve on iki DNA molekülü oluşturur.",
+        "Anafazda on iki kardeş birbirinden ayrılıp bağımsız kromozom olur. DNA yeniden kopyalanmadığı için on iki DNA molekülü korunur.",
+        "Sitoplazma henüz ayrılmadığından iki kutbun toplamını say: 12 kromozom ve 12 DNA. İkinci seçenek bütün hücreyi doğru verir."
+      ],
+      "optionReasons": [
+        "On iki DNA molekülü doğrudur; altı kromozom ise metafaz birimlerini veya tek kutbu esas alır. Anafazdaki bütün hücre on iki kromozom taşır.",
+        "Altı eşlenmiş kromozomun kardeşleri ayrılınca bütün hücrede on iki kromozom ve aynı on iki DNA molekülü sayılır.",
+        "On iki kromozom ayrılmayla oluşur; yirmi dört DNA yazmak verilmemiş yeni bir eşlenme ekler.",
+        "Altı kromozom ve altı DNA normal tek kutbun değerleridir. Soruda iki kutbu içeren bütün hücre istenmiştir.",
+        "Üç kromozomluk sonuç bu normal mitoz olayına ek bir takım azaltımı getirir; altı DNA da bütün eşlenmiş hücre toplamı değildir."
+      ],
+      "commonError": "Tek kutuptaki sayıyı henüz bölünmemiş bütün hücreye yazmak veya ayrılmada yeniden DNA üretildiğini varsaymak iki farklı sayım hatasıdır.",
+      "check": "İki kutuptaki 6/6 değerlerini topla: bütün hücre 12/12 olur. Sonucuna yeni DNA sentezi eklenmemelidir."
+    }
+  },
+  {
+    "id": "f011-bio-b-mitosis-3",
+    "identity": "[\"f011-bio-b-mitosis-3\",\"Bir hücrenin G₁ çekirdek DNA miktarı5 pg. Normal mitoz anafazında tek kutba giden DNA miktarı kaçtır?\",\"\",[\"20pg\",\"10pg\",\"5pg\",\"2,5pg\",\"0pg\"],2,\"G₁’de5 pg olan DNA S sonunda10 pg olur. Anafazdaki bütün hücre10 pg taşırken dengeli ayrılmada bir kutup bunun yarısı5 pg alır.10 pg bütün hücreyi kutba yazmak,2,5 pg ise mayozdaki ikinci paylaşımı eklemek olur. Yeni bir DNA kaybı veya ek eşlenme verilmemiştir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Pikogram, DNA kütlesini ifade etmek için kullanılabilen bir ölçü birimidir. DNA miktarı, kromozomların kaç adet olduğu bilgisinden farklıdır.",
+        "Normal dengeli mitoz ayrılmasında eşlenmiş çekirdek DNA’sı iki kutba eşit dağılır. Ayrılma sırasında toplam DNA yeniden kopyalanmaz."
+      ],
+      "strategy": "G₁ miktarını başlangıç referansı yapıp eşlenme sonundaki hücre toplamını bul. Ardından aynı toplamı dengeli iki kutba paylaştır; ara toplamla tek kutup sonucunu karıştırma.",
+      "steps": [
+        "Başlangıçta G₁ çekirdek DNA’sı 5 pg olarak verilmiştir. S evresindeki eşlenme sonunda hücre toplamı 10 pg olur.",
+        "Anafazdaki henüz bölünmemiş bütün hücre aynı 10 pg’ı taşır. Normal iki kutba eşit dağılımda tek kutba 10÷2=5 pg gider.",
+        "Üçüncü seçenekteki 5 pg tek kutup için uygundur. Fazladan eşlenme, ikinci paylaşım veya DNA kaybı ekleme."
+      ],
+      "optionReasons": [
+        "20 pg, başlangıç miktarına iki kez katlanma ekler. Standart mitoz öncesinde yalnız bir DNA eşlenmesi vardır.",
+        "10 pg eşlenmiş bütün hücrenin DNA’sıdır. Soruda bunun tek kutba giden kısmı istenmiştir.",
+        "Eşlenmeyle oluşan 10 pg iki kutba dengeli paylaşılır; tek kutba 5 pg düşer.",
+        "2,5 pg, normal mitoz paylaşımından sonra bir kez daha yarılama yapılmış gibi bir sonuçtur. İkinci bölünme verilmemiştir.",
+        "Normal dengeli ayrılmada bir kutup kalıtım maddesiz kalmaz. Sıfır DNA, verilen mitoz modeline uymaz."
+      ],
+      "commonError": "Hücre toplamını tek kutba aktarmak sonucu iki katına çıkarır; mitozun ardından verilmemiş ikinci azaltım yapmak ise yarıya indirir.",
+      "check": "Kutup miktarını ikiyle çarpınca S sonrasındaki toplamı geri bul: 2×5=10 pg. Bu, G₁’deki 5 pg’ın bir kez eşlenmiş hâlidir."
+    }
+  },
+  {
+    "id": "f011-bio-b-mitosis-4",
+    "identity": "[\"f011-bio-b-mitosis-4\",\"Bir bitki hücresinde iki çekirdek bölgesi görülüyor; ortada oluşan hücre plağı kenarlara doğru büyüyor. Hangi yorum doğrudur?\",\"\",[\"Hayvan tipi dıştan içe boğumlanmadır\",\"DNA’nın ikinci kez eşlendiği S evresidir\",\"Homologların tetrat oluşturduğu zorunlu evredir\",\"Bitki sitokineziyle uyumludur; çekirdek sayısı ile ayrı hücre sayısı ayrılmalıdır\",\"Sentrozom yoksa iğ oluşması mümkün değildir\"],3,\"Hücre plağının merkezden kenarlara büyümesi bitki sitokinezini destekler. İki çekirdek tek sitoplazmada bulunabileceği için ayrı hücre sayısı sitokinez durumuyla belirlenir. Bu S eşlenmesi veya zorunlu tetrat kanıtı değildir; yüksek yapılı bitkiler tipik hayvan sentrozomu olmadan iğ oluşturabilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bitki hücresinin hücre duvarı, hücrenin dış sınırını destekleyen bir yapıdır. Bölünme sırasında yeni komşu hücreler arasında da bir ayırıcı sınır kurulması gerekir.",
+        "Golgiden gelen veziküller zar ve duvar bileşenlerinin taşınmasına katılabilir. İğ mikrotübüllerinin düzenlenmesi de yalnız tipik hayvan sentrozomuna bağımlı bir süreç değildir."
+      ],
+      "strategy": "Görülen yeni sınırın merkezden kenara mı, dıştan içe mi ilerlediğini izle. Çekirdek bölgelerini ve ayrı sitoplazma sınırlarını iki farklı sayım olarak kaydet; olayın eşlenme mi paylaşım mı olduğunu ayır.",
+      "steps": [
+        "Kökte iki çekirdek bölgesi ve ortadan kenarlara büyüyen bir hücre plağı vardır. Bu yön, hayvan hücresindeki dıştan içe boğumdan farklıdır.",
+        "Plak yeni hücre sınırını kurarken çekirdekler aynı sitoplazma içinde bulunabilir. Hücre sayısını yalnız çekirdek sayısından değil, ayrılmanın tamamlanmasından belirle.",
+        "Bitki sitokineziyle uyumu ve çekirdek-hücre sayısı ayrımını koruyan dördüncü yorum doğrudur. Tetrat veya ikinci DNA eşlenmesi ekleme."
+      ],
+      "optionReasons": [
+        "Hayvan boğumlanması dıştan içe ilerler. Kökte ise ortada oluşup kenarlara büyüyen hücre plağı vardır.",
+        "S evresi DNA eşlenmesidir; iki çekirdek bölgesi arasında yeni hücre sınırı kurulmasını ikinci eşlenme diye adlandırmak uygun değildir.",
+        "Homologların tetrat oluşturması mayoz I ile ilişkilidir. Hücre plağı gözlemi zorunlu tetrat kanıtı değildir.",
+        "Merkezden dışa ilerleyen hücre plağı bitki sitokineziyle uyumludur. İki çekirdeğin varlığı ile sitoplazmanın iki hücreye ayrılması ayrı değerlendirilmelidir.",
+        "Yüksek yapılı bitkiler tipik hayvan sentrozomu olmadan mikrotübül düzenleyici yapılarla iğ oluşturabilir. Sentrozom yokluğu iğ yokluğunu gerektirmez."
+      ],
+      "commonError": "İki çekirdek gördüğünde otomatik iki ayrı hücre saymak, henüz tamamlanmamış sitoplazma paylaşımını göz ardı eder.",
+      "check": "Yeni plağın yönü merkezden kenarlara olmalı. Ayrı hücre sayısını belirlerken çekirdek bölgelerinin yanında sitoplazma sınırlarını da kontrol et."
+    }
+  },
+  {
+    "id": "f011-bio-b-mitosis-5",
+    "identity": "[\"f011-bio-b-mitosis-5\",\"Dört hücrenin hepsi bir tam tur ikiye bölünüyor. Sonra yalnız üç hücre birer kez bölünüyor, ardından bir hücre ölüyor. Kalan hücre sayısı kaçtır?\",\"\",[\"7\",\"8\",\"11\",\"15\",\"10\"],4,\"İlk tam tur4×2=8 hücre verir. Sonraki seçili üç bölünme toplamı3 artırır:11. Bir ölümle10 kalır. İkinci adımda tüm popülasyonun bölündüğü verilmediğinden tekrar ikiyle çarpmak yanlış olur.11 ölümün unutulmasıdır;8 seçili aşamanın atlanmasıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir hücre iki yavruya ayrıldığında o olayın popülasyon sayısına net katkısı bir hücredir: eski bir hücrenin yerini iki hücre alır.",
+        "Bütün hücrelerin aynı turda bir kez bölünmesi ortak bir katlanma verir. Seçili bölünmeler ve hücre ölümleri ise gerçekleşen olay sayılarıyla ayrıca hesaba katılır."
+      ],
+      "strategy": "Üç olay için ayrı satırlar aç: ortak tur, yalnız seçili hücrelerin bölünmesi ve ölüm. Her satırın sonucunu sonraki satırın başlangıcı olarak kullan; her aşamayı tam tur sanma.",
+      "steps": [
+        "İlk aşamada dört hücrenin hepsi birer kez bölünür: 4×2=8 hücre olur.",
+        "İkinci aşamada yalnız üç bölünme gerçekleşir. Her biri net bir eklediğinden 8+3=11 hücreye ulaşılır.",
+        "Son aşamadaki bir ölümü çıkar: 11−1=10. Beşinci seçenek bütün olayları verilen sırayla hesaba katar."
+      ],
+      "optionReasons": [
+        "7, ilk turdaki sekizden bir ölümü çıkarmaya uyar; aradaki seçili üç bölünmenin net katkısı bu sayımda yoktur.",
+        "8 yalnız ilk ortak turun sonucudur. Sonraki üç bölünme ve bir ölümden oluşan net artış işlenmemiştir.",
+        "11 seçili bölünmeler sonrasındaki ara toplamdır; son bir hücrenin ölümü henüz çıkarılmamıştır.",
+        "15, ilk sekiz hücrenin tamamını yeniden ikiye katlayıp bir ölüm çıkarmakla elde edilebilir. Oysa ikinci aşamada yalnız üç hücre bölünmüştür.",
+        "Tam turla sekiz, seçili üç bölünmeyle on bir, bir ölümle on hücre kalır. Verilen bütün aşamalar korunmuştur."
+      ],
+      "commonError": "İkinci aşamayı da bütün popülasyonun bölündüğü tam tur kabul etmek, yalnız üç hücre koşulunu siler.",
+      "check": "Kayıt çizelgen 4→8→11→10 olmalı. Son sayıya ulaşırken bölünmelerin net artışını ve ölümü ayrı işledin mi?"
+    }
+  },
+  {
+    "id": "f011-bio-b-mitosis-6",
+    "identity": "[\"f011-bio-b-mitosis-6\",\"DNA eşlenmesi tamamlanmış bir hücrede onarılmamış DNA hasarı saptanıyor. M evresine geçiş öncesi ilgili temel denetim hangisidir?\",\"\",[\"G₂ denetimi\",\"Yalnız hücre dışı sindirim\",\"Döllenme denetimi\",\"Mayoz II kardeş dağılımı\",\"Gamet birleşmesi\"],0,\"Eşlenmiş DNA’nın durumu G₂ denetimiyle ilişkilidir; hasar M’ye geçişi geciktirebilir. DNA miktarının artmış olması hatasızlığı göstermez. Diğer seçenekler bu hücre döngüsü geçişini açıklamaz ve verilmemiş döllenme, sindirim veya mayoz olayı ekler.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hücre döngüsünde DNA’nın kopyalanması ile kopyaların çekirdek bölünmesinde dağıtılması ardışık ve farklı süreçlerdir. Eşlenmiş DNA’nın bulunması, dizide hasar bulunmadığını göstermez.",
+        "Denetim noktaları, bir sonraki olay için gerekli koşulların uygunluğunu değerlendiren protein düzenekleriyle ilişkilidir. Duraklama, hasarın giderilmesine zaman sağlayabilir."
+      ],
+      "strategy": "Kusuru zaman çizgisine yerleştir: DNA kopyalanmış, fakat çekirdek bölünmesine geçilmemiş. Bu geçişi, eşlenmeden önceki hazırlık ve iğ bağlantısı denetimlerinden ayırarak uygun kontrolü seç.",
+      "steps": [
+        "S evresinin tamamlandığı ve DNA’da giderilmemiş hasar bulunduğu verilmiştir. Sorulan geçiş S öncesi değil, M öncesidir.",
+        "Eşlenmiş DNA’nın durumunu M’ye geçmeden önce değerlendiren temel denetim G₂ ile ilişkilidir. Hasar geçişi geciktirebilir.",
+        "İlk seçenekteki G₂ denetimini seç. Sindirim, döllenme ve mayoz II gibi başka süreçleri bu hücre döngüsü olayına ekleme."
+      ],
+      "optionReasons": [
+        "G₂ denetimi eşlenmiş DNA’nın uygunluğu ve hasarıyla ilişkilidir; onarılmamış hasar M’ye geçişi geciktirebilir.",
+        "Hücre dışı sindirim besin parçalanmasıyla ilgilidir. Eşlenmiş DNA’nın M’ye geçiş öncesindeki denetimini açıklamaz.",
+        "Döllenme gamet birleşmesidir; kökte böyle bir olay yoktur. Hücre döngüsü geçişini döllenme kontrolüne çevirmek farklı bir süreç ekler.",
+        "Mayoz II’deki kardeş dağılımı, eşlenme sonrasında M’ye giriş öncesi hasar denetiminin adı değildir.",
+        "Gamet birleşmesi burada gözlenen DNA hasarı ve bekleyen M geçişi için bir denetim noktası oluşturmaz; döllenme verisi de bulunmaz."
+      ],
+      "commonError": "DNA miktarının artmasını hasarsızlık veya bölünmeye otomatik izin verilmesi sanmak, eşlenme ile denetimi birbirine karıştırır.",
+      "check": "Kökün zaman konumunu tekrar belirle: eşlenme bitmiş, M başlamamış. G₂ yanıtı hem bu konuma hem DNA hasarı türüne uymalıdır."
+    }
+  },
+  {
+    "id": "f011-bio-b-mitosis-7",
+    "identity": "[\"f011-bio-b-mitosis-7\",\"Metafazdaki hücrede bir kromozomun kinetokoru iğ ipliğine uygun bağlanmamış. Beklenen temel denetim etkisi hangisidir?\",\"\",[\"DNA miktarı kendiliğinden yarıya iner\",\"M denetimi kardeş ayrılması ve anafazı geciktirebilir\",\"Hücre kesin haploit gamete dönüşür\",\"Yeni bir S evresi zorunlu başlar\",\"Sitoplazma hiç denetimsiz mutlaka ayrılır\"],1,\"İğ bağlantısı denetimi M evresinde anafaza geçişi düzenler; uygun bağlanma yoksa ayrılma gecikebilir. Bu doğrudan DNA’yı yarılamaz, gamet oluşturmaz ve yeni S evresini zorunlu kılmaz. Denetimin amacı normal dağılımı desteklemektir; kesin ve koşulsuz sitokinez çıkarımı verilenden çıkmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kinetokor, kromozomun sentromer bölgesinde iğ mikrotübüllerinin bağlandığı protein kompleksidir. Uygun bağlantılar kromozomların kutuplara dağıtılmasına katılır.",
+        "Kardeşlerin ayrılması ile DNA’nın eşlenmesi farklı olaylardır. Mekanik bir bağlantının durumu, DNA miktarını kendiliğinden kopyalayan veya yok eden bir işlem değildir."
+      ],
+      "strategy": "Gözlenen kusuru DNA sentezi yerine kromozom taşıma bağlantısına yerleştir. Bu bağlantının tamamlanmasından sonra başlayacak olayı bulup ilgili geçişin nasıl etkilenebileceğini değerlendir.",
+      "steps": [
+        "Metafazda bir kinetokorun iğ ipliğine uygun bağlanmadığı verilmiş. Sorun, eşlenmiş kromozomların dağıtım hazırlığındadır.",
+        "M denetimi uygun iğ bağlantılarını sınar. Kusur varsa kardeşlerin ayrılması ve anafaza geçiş gecikebilir.",
+        "Bu gecikmeyi bildiren ikinci seçenek uygundur. DNA’nın yarılanması, yeni S evresi veya gamet oluşumu gibi sonuçlar bu bağlantı kusurundan zorunlu çıkmaz."
+      ],
+      "optionReasons": [
+        "İğ bağlantısındaki kusur DNA’yı kendiliğinden azaltan bir olay değildir. Doğrudan DNA yarılanması sonucu kurulamaz.",
+        "M denetimi iğ bağlantılarının uygunluğuyla ilişkilidir; eksik bağlantı kardeş ayrılması ve anafazı geciktirebilir.",
+        "Metafazdaki bağlantı kusuru hücreyi kendiliğinden haploit gamete dönüştürmez. Takım azaltımı veya gamet farklılaşması verilmemiştir.",
+        "Yeni S evresi DNA eşlenmesi gerektirir. Bağlanmamış kinetokor böyle bir tekrar eşlenmeyi zorunlu kılmaz.",
+        "Denetim koşulu sağlanmamışken sitoplazmanın mutlaka ayrılacağını söylemek, kökte sınanan duraklama mekanizmasını yok sayar."
+      ],
+      "commonError": "Bölünme sorunu gördüğünde her defasında DNA miktarını değiştirmek, yapısal bağlanma denetimiyle kalıtım maddesi üretimini karıştırır.",
+      "check": "Yanıtın gözlenen kusura doğrudan bağlı olmalı: uygun iğ bağlantısı sağlanmadan ayrılmanın gecikebilmesi. Zorunlu DNA veya takım değişimi eklenmemelidir."
+    }
+  },
+  {
+    "id": "f011-bio-b-mitosis-8",
+    "identity": "[\"f011-bio-b-mitosis-8\",\"Normal yeni mutasyon olmayan mitoz geçiren haploit bir ökaryot hücre için hangi sonuç doğrudur?\",\"\",[\"Yalnız diploit hücreler mitoz yapabildiği için olay imkânsızdır\",\"Her yavru zorunlu2n olur\",\"Takım sayısı korunarak n yavrular oluşabilir\",\"Kardeş yerine homolog tetratlar ayrılmak zorundadır\",\"Her yavru ata DNA miktarının dört katını alır\"],2,\"Uygun haploit ökaryot hücre mitoz geçirebilir ve takım sayısını koruyan n yavrular oluşturabilir. DNA’nın önceden eşlenmesi ploidiyi ikiye katlamaz.2n oluşumu için burada verilmemiş takım birleşmesi gerekir; tetrat ve homolog ayrımı normal mitozun ayırıcı olayı değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Haploit n bir kromozom takımı, diploit 2n iki homolog takım taşımayı anlatır. Bir kromozomun kardeş kopyaları, farklı kökenli ikinci bir homolog takımla aynı şey değildir.",
+        "Ökaryotik bölünmelerde eşlenme mevcut DNA’nın kopyalarını hazırlar; döllenmede ise iki gametin taşıdığı takımlar birleşir. Bu olaylar farklı kaynaklardan kalıtım maddesi ekleme bakımından ayrılır."
+      ],
+      "strategy": "Başlangıçtaki takım sayısını ve yeni bir takımın eklenip eklenmediğini izle. DNA kopyalarının dağıtılmasını gamet birleşmesi ya da homolog çift azaltımıyla karıştırmadan yavruların takımını belirle.",
+      "steps": [
+        "Başlangıç hücresi n düzeyindedir ve ökaryottur. Uygun haploit hücrede mitoz gerçekleşmesi mümkündür.",
+        "Eşlenme kardeş kopyaları hazırlar; mitoz bunları dengeli dağıtır. Yeni bir homolog takım eklenmediği için ploidiyi ikiye çıkaran bir olay yoktur.",
+        "Takım sayısının korunarak n yavrular oluşabileceğini söyleyen üçüncü seçenek doğrudur. Normal mitozda tetrat ayrımı veya DNA’nın dört katını her yavruya verme sonucu yoktur."
+      ],
+      "optionReasons": [
+        "Mitoz yalnız diploit hücrelerle sınırlı değildir. Uygun haploit ökaryot hücreler de mitoz geçirebilir.",
+        "DNA’nın kopyalanması yeni homolog takım eklemez. n başlangıçtan zorunlu 2n yavru sonucu çıkarmak döllenmeye benzer bir takım birleşmesi varsayar.",
+        "Normal mitoz başlangıç takımını korur. Bu nedenle verilen haploit hücreden n düzeyinde yavrular oluşabilir.",
+        "Homologların tetrat oluşturup ayrılması mayoz I’in ayırıcı olaylarıdır. Normal mitozda kardeşler ayrılır.",
+        "Normal mitozda DNA bir kez kopyalanıp paylaşılır. Her yavrunun ata DNA miktarının dört katını alması bu dağılımla uyumlu değildir."
+      ],
+      "commonError": "DNA kopyası sayısındaki artışı kromozom takımı artışı saymak, haploit hücrenin S evresini döllenmeyle aynılaştırır.",
+      "check": "Yavruya ikinci bir homolog takım nereden gelmiş olabilir? Kökte böyle bir kaynak yoktur; n başlangıç normal mitozda n olarak korunur."
+    }
+  },
+  {
+    "id": "f011-bio-b-mitosis-9",
+    "identity": "[\"f011-bio-b-mitosis-9\",\"Benzer küp hücre modelinde kenar uzunluğu a iken yüzey6a²,hacim a³. Kenar2 birimden4 birime çıktığında yüzey/hacim oranı nasıl değişir?\",\"\",[\"3’ten6’ya çıkar\",\"Değişmez\",\"1,5’ten3’e çıkar\",\"3’ten1,5’e iner; tek başına kesin bölünme kararı verdirmez\",\"Sıfır olur ve DNA yok olur\"],3,\"Yüzey/hacim6/a olduğundan a=2 için3,a=4 için1,5 ters uzunluk birimidir. Oran yarıya iner. Bu geometrik kısıt madde alışverişiyle ilişkilidir fakat büyüme sinyalleri ve denetimler olmadan tek başına kesin bölünme kararı değildir. DNA kaybı bu geometriden çıkarılamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Benzer küplerde yüzey alanı uzunluğun karesiyle, hacim uzunluğun küpüyle değişir. Yüzey/hacim oranının birimi ters uzunluktur.",
+        "Birim hacim başına düşen yüzey, hücrenin çevresiyle madde alışverişi bakımından anlamlı bir geometrik ölçüttür. Büyüme sinyalleri ve döngü denetimleri ise biyolojik düzenlemenin ayrı bileşenleridir."
+      ],
+      "strategy": "Her kenar uzunluğu için yüzeyi ve hacmi ayrı hesaplayıp oranlarını oluştur. Aynı birimlerle karşılaştırdıktan sonra geometrik bulguyla hücrenin bölünme kararı arasındaki çıkarımın kapsamını sınırla.",
+      "steps": [
+        "Yüzey/hacim oranını 6a²/a³=6/a olarak sadeleştir. Buradaki a uzunluk olduğundan oran ters uzunluk birimindedir.",
+        "a=2 için 6/2=3, a=4 için 6/4=1,5 bulunur. Kenar ikiye katlanınca birim hacim başına yüzey yarıya iner.",
+        "3’ten 1,5’e düşüşü ve bu ölçümün tek başına kesin bölünme kararı vermediğini birlikte söyleyen dördüncü seçenek doğrudur."
+      ],
+      "optionReasons": [
+        "Başlangıç oranı 3’tür, fakat uzunluk arttığında 6/a artmaz. 6’ya yükselme oran bağıntısının yönünü ters kullanır.",
+        "Yüzey ile hacim aynı kuvvetle artmaz. Bu yüzden oran değişmez kalmaz; verilen iki uzunlukta farklı değerler bulunur.",
+        "İki oran doğru sayıları içerir ama başlangıç ve sonuç ters sıralanmıştır. 2 birimde 3, 4 birimde 1,5 olmalıdır.",
+        "Oran 3’ten 1,5’e düşer. Bu geometrik sonuç madde alışverişiyle ilişkili olsa da tek başına bölünmenin kesin gerçekleşeceğini kanıtlamaz.",
+        "Pozitif kenar uzunluklarında 6/a sıfır olmaz. Ayrıca yüzey/hacim hesabı DNA’nın yok oluşuna ilişkin veri içermez."
+      ],
+      "commonError": "Hacmin de yüzey gibi uzunluğun karesiyle arttığını sanmak veya geometrik kısıtı kesin bölünme emrine çevirmek iki ayrı hatadır.",
+      "check": "Oranın birimi ters uzunluk olmalı ve kenar büyüyünce küçülmelidir. Hesabın sonuna DNA kaybı ya da kesin bölünme gibi ölçülmemiş sonuçlar ekleme."
+    }
+  },
+  {
+    "id": "f011-bio-b-mitosis-10",
+    "identity": "[\"f011-bio-b-mitosis-10\",\"Aynı soy hattında hücre başına DNA miktarı G₁’de2C,S sonunda4C ve normal mitoz yavrusunda2C ölçülüyor. Hangi yorum doğrudur?\",\"\",[\"DNA’nın yarısı hücre dışına atılmıştır\",\"S sonunda kromozom takımı kesin4n olmuştur\",\"Bu değerlerden türün kromozom sayısı kesin46’dır\",\"İki yavrunun toplam DNA’sı yalnız2C’dir\",\"İki yavrunun toplamı4C’dir; hücre başına azalma paylaşımı gösterir\"],4,\"Her yavru2C aldığı için iki yavrunun toplamı4C’dir; S sonrası miktar korunarak paylaşılmıştır. Yeni DNA kaybı veya4n takım oluşumu gerekmez. C göreli bir haploit DNA miktarıdır; bu kat örüntüsü türün mutlak kromozom sayısını vermez. Diğer seçenekler alanı veya ölçülen büyüklüğü değiştirir.\"]",
+    "guidance": {
+      "knowledge": [
+        "C, eşlenmemiş haploit takımın çekirdek DNA miktarı için kullanılan göreli birimdir; türün mutlak kromozom adedini belirten bir sayı değildir.",
+        "Hücre başına ölçüm ile bütün hücrelerin toplamı farklı büyüklüklerdir. Birden çok yavrunun toplam DNA’sı, her yavrunun miktarıyla yavru sayısının birlikte değerlendirilmesini gerektirir."
+      ],
+      "strategy": "Grafikte hangi noktanın tek ata, hangi noktanın tek yavru olduğunu işaretle. Son yavru miktarını oluşan yavru sayısıyla birleştirip S sonrası toplamla karşılaştır; C’yi kromozom adedi gibi kullanma.",
+      "steps": [
+        "Kökte G₁’de 2C, S sonunda 4C ve tek mitoz yavrusunda 2C veriliyor. Bunlar hücre başına miktarlardır.",
+        "Normal mitoz iki yavru oluşturur. Her biri 2C taşıdığı için yavruların toplamı 2×2C=4C olur.",
+        "S sonrası toplamın paylaşılmış olduğunu söyleyen beşinci yorum doğrudur. Tek yavrudaki azalma DNA’nın atılması veya yeni bir 4n takım oluşması değildir."
+      ],
+      "optionReasons": [
+        "İki yavrunun toplam DNA’sı S sonrası 4C’yi korur. Tek yavrunun 2C taşıması, DNA’nın yarısının dışarı atıldığını göstermez.",
+        "S evresi DNA kopyalarını artırır; kromozom takımını zorunlu 4n yapmaz. C miktarı ile n takım göstergesi birbirine çevrilemez.",
+        "Aynı göreli DNA deseni farklı kromozom sayılı türlerde görülebilir. 46 sayısı verilen C ölçümlerinden çıkarılamaz.",
+        "2C tek yavrunun miktarıdır. İki yavru bulunduğu için bütün yavruların toplamı bu değerin iki katıdır.",
+        "Her yavru 2C olduğundan iki yavrunun toplamı 4C’dir. Hücre başına miktardaki düşüş, korunmuş DNA’nın paylaşımıyla açıklanır."
+      ],
+      "commonError": "Grafikteki hücre başına değerleri tüm soy hattının toplamı gibi okumak, paylaşımı DNA kaybına dönüştürür.",
+      "check": "İki son yavrunun DNA’sını topladığında S sonrasındaki 4C’yi geri bulmalısın. Göreli C biriminden mutlak kromozom sayısı çıkarılmamalıdır."
+    }
+  },
+  {
+    "id": "f011-bio-b-asexual-1",
+    "identity": "[\"f011-bio-b-asexual-1\",\"Bir bakteriden bir dayanıklı endospor oluşuyor; uygun koşulda bundan tek bakteri geri dönüyor. Bu olayın temel işlevi hangisidir?\",\"\",[\"Dayanıklılığı artırmak; bu1→1→1 dizisi üreme artışı değildir\",\"Birey sayısını her aşamada iki katına çıkarmak\",\"İki gameti birleştirmek\",\"Dört haploit gamet oluşturmak\",\"Her olayda mitotik profaz oluşturmak\"],0,\"Bir hücreden bir yapı ve yeniden bir hücre oluşması sayıyı artırmaz; endospor olumsuz koşulları aşmaya yarar. Bu üreme sporu veya gamet birleşmesi değildir. Bakteri prokaryot olduğundan mitoz evreleri eklenmez; dört gamet sonucu da verilen olaydan çıkmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bakteriler zarla çevrili çekirdek taşımayan prokaryotlardır. Ökaryotik çekirdek bölünmesinin profaz, metafaz gibi evreleri bakterinin yaşam sürecine doğrudan uygulanmaz.",
+        "Bir canlıda ardışık yapı değişimlerini sayarken aynı bireyin farklı hâlleriyle yeni bağımsız bireyleri ayırmak gerekir. Sayım birimi hücrenin adı değil, bağımsız başlangıçların sayısıdır."
+      ],
+      "strategy": "Başlangıç hücresi, oluşan yapı ve uygun koşuldaki son hücreyi ayrı karelere çiz. Her karede bağımsız birey sayısını kaydet; mekanizmayı üreme hücresi adlarına benzeterek seçme.",
+      "steps": [
+        "Bir bakteriden tek endospor ve bundan yeniden tek bakteri oluşuyor. Sayı dizisi 1→1→1 olarak verilmiştir.",
+        "Yeni bağımsız birey artışı olmadığından bu dizinin işlevi çoğalma değildir. Endospor olumsuz koşulları aşmaya yardım eden dayanıklı bir yapıdır.",
+        "Dayanıklılığı artırmayı ve üreme artışı olmadığını birlikte söyleyen ilk seçenek uygundur. Gamet birleşmesi veya mitoz evresi ekleme."
+      ],
+      "optionReasons": [
+        "Endospor olumsuz koşulları aşmaya yardım eder. Verilen 1→1→1 dizisinde bağımsız birey sayısı artmadığı için üreme artışı gösterilmez.",
+        "Her aşamada ikiye katlanma olsaydı sayı artardı. Kökte her basamakta tek hücre veya tek yapı bulunmaktadır.",
+        "Gamet birleşmesi döllenmedir; verilen bakteri-endospor-bakteri dizisinde iki gamet bulunmaz.",
+        "Dört haploit gamet oluşumu bu olayın sonucu değildir. Verilen dizinin sonu yine tek bakteridir.",
+        "Bakteri prokaryottur; endospor oluşumuna her defasında ökaryotik mitotik profaz eklenemez."
+      ],
+      "commonError": "Spor sözcüğünü içeren her yapıyı çoğalma yapısı sanmak, bakterinin bu sayıyı artırmayan yaşam olayını yanlış sınıflandırır.",
+      "check": "Üç karede de sayı bir kalıyor mu? Endosporun işlevini bu sayımı koruyarak değerlendir; çoğalma artışı eklenmemelidir."
+    }
+  },
+  {
+    "id": "f011-bio-b-asexual-2",
+    "identity": "[\"f011-bio-b-asexual-2\",\"Yaşayan bir hidranın gövdesinde çıkıntı büyüyor, sonra ayrılıp bağımsız hidra oluyor. Bu başlangıç dizisini en iyi adlandıran yol hangisidir?\",\"\",[\"Dış döllenme\",\"Tomurcuklanma\",\"Yalnız yara onarımı\",\"Mayozla gamet birleşmesi\",\"Bakteri endosporu\"],1,\"Ata üzerindeki yerel çıkıntının büyüyüp yeni bireye gelişmesi tomurcuklanmadır. Yeni birey bulunduğu için yalnız onarım değildir. Gamet birleşmesi veya bakteri dayanıklılık yapısı verilmemiştir; bunları ekleyen seçenekler olayın gerçek başlangıcını değiştirmektedir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hidra çok hücreli bir hayvandır; hücre çoğalması ve farklılaşma, vücut üzerinde yeni yapılar geliştirebilir.",
+        "Döllenme iki gametin birleşmesidir. Bir gövde bölgesindeki büyüme ile gametlerin birleşmesi, yeni bireye başlangıç bakımından farklı olaylardır."
+      ],
+      "strategy": "Yeni yapının zaman sırasını izle: ilk ortaya çıkışında ataya bağlı mı, önceden kopmuş bir parça mı? Ayrılmadan önceki büyüme basamağını süreci adlandırırken koru.",
+      "steps": [
+        "İlk gözlem yaşayan atanın gövdesinde yeni bir çıkıntının oluşup büyümesidir; başlangıçta ayrılmış bir vücut parçası verilmemiştir.",
+        "Büyüyen çıkıntının bağımsız yeni hidra olması, ata üzerinde başlayan tomurcuklanma dizisine uyar.",
+        "İkinci seçenekteki tomurcuklanmayı seç. Sonunda yeni birey bulunduğu için yalnız yara onarımı değildir; gamet birleşmesi de gözlenmemiştir."
+      ],
+      "optionReasons": [
+        "Dış döllenme dış ortamda gamet birleşmesi gerektirir. Kökte bunun yerine ata üzerinde büyüyen bir çıkıntı verilmiştir.",
+        "Ata üzerinde oluşup büyüyen çıkıntının yeni bireye gelişmesi tomurcuklanmadır; ayrılması bu dizinin son basamağıdır.",
+        "Yalnız yara onarımında aynı bireyin eksik yapısı tamamlanır. Burada bağımsız yeni hidra oluştuğu açıkça belirtilmiştir.",
+        "Mayoz gametleri birleştiren olay değildir; birleşme döllenmedir. Ayrıca kökte ne mayoz ne gamet birleşmesi verilmiştir.",
+        "Bakteri endosporu, bakterinin olumsuz koşulları aşmaya yarayan yapısıdır. Çok hücreli hidrada yeni yavrunun çıkıntıdan gelişmesiyle aynı olay değildir."
+      ],
+      "commonError": "Yeni yavrunun sonunda ayrılmış olmasına odaklanıp başlangıçta atanın üstünde büyüdüğünü atlamak, tomurcuklanmayı kopan parçadan gelişmeyle karıştırır.",
+      "check": "Olay sırası ata üzerinde çıkıntı→büyüme→bağımsız hidra olmalıdır. Tomurcuklanma adlandırması bu başlangıç sırasını korur."
+    }
+  },
+  {
+    "id": "f011-bio-b-asexual-3",
+    "identity": "[\"f011-bio-b-asexual-3\",\"Bir kertenkele kaybettiği kuyruğunu yeniliyor; atılan kuyruk yeni canlı oluşturmuyor. Hangisi doğrudur?\",\"\",[\"Her rejenerasyon zorunlu eşeysiz üremedir\",\"Döllenme gerçekleşmiştir\",\"Aynı birey onarılmıştır; bağımsız birey sayısı artmadığı için üreme kanıtı yoktur\",\"İki kertenkele oluşmuştur\",\"Kuyruk kaybı kromozom takımını yarıya indirmiştir\"],2,\"Kuyruğun yenilenmesi aynı kertenkelenin onarımıdır; yeni birey oluşmadığı için bu örnek üreme değildir. Rejenerasyon ancak uygun parçadan yeni birey gelişirse üremeye de hizmet edebilir. Döllenme, iki birey veya takım azaltımı verilmiş olaylar değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Doku ve organların yenilenmesinde hücre çoğalmasıyla farklılaşma birlikte rol oynayabilir. Aynı hücresel araçlar organizma düzeyinde farklı sonuçlara hizmet edebilir.",
+        "Bir organizmanın kuyruğu o organizmanın bir bölümüdür; ayrı bir kuyruk parçası kendiliğinden yeni bağımsız birey sayılmaz. Birey sayısı, yaşayan bütün organizmalar üzerinden izlenir."
+      ],
+      "strategy": "Ana kertenkelenin ve atılan kuyruğun kaderlerini iki ayrı çizgide takip et. Son durumda bağımsız canlı oluşan çizgileri say; organın yeniden oluşmasını ayrıca not et.",
+      "steps": [
+        "Ana kertenkele yaşamaya devam edip kaybettiği kuyruğunu tamamlıyor. Atılan kuyruktan yeni bir canlı gelişmediği de açıkça verilmiştir.",
+        "Son durumda yalnız aynı kertenkele vardır. Yeni bir bağımsız birey artışı olmadan eksik organın yenilenmesi onarım sonucudur.",
+        "Aynı bireyin onarıldığını ve üreme kanıtı bulunmadığını söyleyen üçüncü yorum doğrudur. Döllenme veya kromozom takımı azaltımı bu gözlemden çıkarılmaz."
+      ],
+      "optionReasons": [
+        "Rejenerasyon bazı uygun parçalardan yeni birey oluşmasına da hizmet edebilir; fakat her yenilenmede bu sonuç oluşmaz. Verilen kuyruk olayında yeni canlı yoktur.",
+        "Döllenme için gamet birleşmesi gerekir. Kuyruk yenilenmesi böyle bir birleşme kanıtı değildir.",
+        "Aynı kertenkele eksik organını tamamlamıştır; atılan kuyruk da yeni birey oluşturmamıştır. Bağımsız birey sayısı artmadığı için olay onarımdır.",
+        "İki kertenkele oluştuğu yorumu, atılan kuyruğun yeni canlı oluşturmadığı açık verisiyle çelişir.",
+        "Bir organın kaybı, hücrelerin kromozom takımını mayoz gibi yarıya indiren olay değildir. Böyle bir takım değişimi ölçülmemiştir."
+      ],
+      "commonError": "Yeni kuyruk ile yeni kertenkeleyi aynı sayım birimi kabul etmek, organ yenilenmesini birey üretimine dönüştürür.",
+      "check": "Son karede ana kertenkele dışında ikinci bir canlı gösterebiliyor musun? Kök bunun oluşmadığını söylediği için sonuç organ onarımıyla sınırlıdır."
+    }
+  },
+  {
+    "id": "f011-bio-b-asexual-4",
+    "identity": "[\"f011-bio-b-asexual-4\",\"Aynı ana bitkiden alınan iki dal çeliği farklı ışık koşullarında yetişiyor ve boyları farklı oluyor. Hangi çıkarım güvenlidir?\",\"\",[\"Boy farkı kesin farklı genotipi gösterir\",\"İkisi de kesin eşeyli üretimdir\",\"Çevre fenotipi etkileyemez\",\"Farklı boy vejetatif üretimle çelişmez; genetik fark tek başına kanıtlanmaz\",\"İki bitkinin türü kesin farklıdır\"],3,\"Dal çeliği vejetatif başlangıçtır. Aynı genotipte çevre etkisiyle farklı fenotip görülebilir; boy farkı tek başına genetik fark, eşeyli üreme veya farklı tür kanıtı değildir. Ayrıca iki gözlem ışığın tek neden olduğunu da kesinleştirmez; başka koşulların denetimi gerekir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Genotip canlının genetik yapısıdır; fenotip boy, renk gibi gözlenebilir özelliklerin ortaya çıkan hâlidir. Bu iki terim aynı tür veriyi adlandırmaz.",
+        "Işık bitkinin enerji kazanımı ve büyüme süreçleriyle ilişkilidir. Bir özelliğin çevresel koşullarla birlikte ölçülmesi, üretimin başlangıç dokusundan ayrı bir inceleme boyutudur."
+      ],
+      "strategy": "Önce yeni bitkilerin hangi dokudan başladığını yaz, sonra ölçülen boyu ve değiştirilen yetiştirme koşulunu kaydet. Gözlenen farkın genetik farkı zorunlu kılıp kılmadığını, bu iki kayıt birbirine dönüştürülmeden değerlendir.",
+      "steps": [
+        "İki bitki de aynı ana bitkiden alınan dal çeliklerinden başlamıştır. Bu somatik başlangıç vejetatif üretime uyar.",
+        "Farklı ışıkta farklı boy oluşması fenotip farkıdır; çevre etkisiyle açıklanabilir. Tek başına farklı genotip veya döllenme kanıtı değildir.",
+        "Boy farkının vejetatif üretimle çelişmediğini ve genetik farkı kanıtlamadığını söyleyen dördüncü yorum güvenlidir. Yalnız bu iki gözlem ışığı tek neden diye de kesinleştirmez."
+      ],
+      "optionReasons": [
+        "Boy fenotipik bir ölçümdür ve çevreden etkilenebilir. Tek başına farklı genotipi kesinleştirmez.",
+        "Başlangıç dal çeliği olarak verilmiştir; gözlenen boy farkı bu üretim geçmişine gamet birleşmesi eklemez.",
+        "Çevre koşulları bitkinin büyümesini ve gözlenen özelliklerini etkileyebilir. Çevrenin fenotipe etkisini dışlamak doğru değildir.",
+        "Dal çeliğinden üretim ve farklı boy birlikte mümkündür. Boy farkı, genetik farkı veya eşeyli başlangıcı tek başına göstermez.",
+        "İki bitkinin boylarının farklı olması türlerinin farklı olduğunu kanıtlamaz. Tür düzeyi bir iddia için bu tek ölçüm yeterli değildir."
+      ],
+      "commonError": "Gözlenen her özellik farkını DNA farkı saymak, fenotiple genotipi ve çevreyle üretim yöntemini birbirine karıştırır.",
+      "check": "Çeliğin başlangıç dokusunu boy ölçümünden ayrı tuttuğundan emin ol. Genetik fark için yalnız boydan daha doğrudan ek veri gerekir."
+    }
+  },
+  {
+    "id": "f011-bio-b-asexual-5",
+    "identity": "[\"f011-bio-b-asexual-5\",\"Standart bal arısı modelinde dişinin vücut hücresi2n=32. Döllenmemiş yumurtadan gelişen erkek ve bu erkeğin spermi kaç kromozom taşır?\",\"\",[\"Erkek32,sperm16\",\"Erkek16,sperm8\",\"Erkek32,sperm32\",\"Erkek8,sperm8\",\"Erkek16,sperm16\"],4,\"Kraliçenin mayoz ürünü yumurta n=16’dır. Döllenme olmadan gelişen erkek n=16 kalır; n düzeyini koruyan mitozla oluşturduğu sperm de16 taşır. Spermi yeniden yarılamak iki kez azaltım ekler; erkeğe32 yazmak verilmemiş döllenme gerektirir. Bu sayı ilişkisi arı modeline özgü tutulur.\"]",
+    "guidance": {
+      "knowledge": [
+        "n bir kromozom takımı, 2n iki kromozom takımı gösterir. Kromozomların DNA eşlenmesiyle kopyalanması, farklı kökenli bir takımın birleşmesiyle aynı işlem değildir.",
+        "Gamet adı, o hücrenin mutlaka her canlıda aynı bölünmeyle üretildiğini göstermez. Bölünme türü için ilgili yaşam döngüsündeki başlangıç takımını izlemek gerekir."
+      ],
+      "strategy": "Dişi vücut hücresi→yumurta→erkek→sperm zinciri kur. Her ok için azaltım, korunma veya takım birleşmesi olup olmadığını belirtilen bal arısı modeliyle işaretle; sayıları ancak bu işlem zincirinden sonra yerleştir.",
+      "steps": [
+        "Dişi 2n=32 olduğundan kraliçenin mayoz ürünü yumurtası bir takım, yani n=16 taşır.",
+        "Bu yumurta döllenmeden erkeğe geliştiği için yeni takım eklenmez; erkek n=16 kalır. Standart arı modelinde erkek spermleri mitozla oluşturur.",
+        "Mitoz erkeğin n düzeyini koruduğundan sperm de 16 kromozom taşır. Erkek 16 ve sperm 16 veren beşinci seçenek uygundur."
+      ],
+      "optionReasons": [
+        "32 kromozomlu erkek yazmak, döllenmemiş n yumurtaya ikinci bir takım ekler. Yalnız sperm için 16 yazılması bu yanlış başlangıcı düzeltmez.",
+        "Erkeğin 16 olması uygundur; spermi 8 yapmak ise haploit erkekte verilmemiş ikinci azaltım uygular. Modelde sperm üretimi n düzeyini korur.",
+        "Erkeğe 32 yazmak döllenme ekler; sperm için 32 yazmak da aynı yanlış diploit başlangıcı sürdürür.",
+        "Yumurta 32’nin bir takımı olan 16’dır. Erkek ve sperme 8 yazmak zincire fazladan bir yarılama ekler.",
+        "Döllenmemiş n=16 yumurta n=16 erkeği oluşturur; erkeğin mitozla ürettiği sperm de n=16 taşır. İki sayı modelin işlem zinciriyle uyumludur."
+      ],
+      "commonError": "Bütün spermleri otomatik mayoz ürünü sayıp haploit arı erkeğinin sayısını bir kez daha yarılamak, belirtilen yaşam döngüsünü değiştirir.",
+      "check": "Erkeğin spermi 16 kromozomlu yumurtayla birleşirse 32 kromozomlu dişi zigotu geri vermeli. Bu arı hesabını bütün partenogenez türlerine yayma."
+    }
+  },
+  {
+    "id": "f011-bio-b-asexual-6",
+    "identity": "[\"f011-bio-b-asexual-6\",\"Üç bakterinin tamamı iki tam tur bölünüyor. Sonra yalnız beş bakteri birer kez daha bölünüyor. Kayıp yok. Son sayı kaçtır?\",\"\",[\"17\",\"24\",\"15\",\"12\",\"20\"],0,\"Üç başlangıç hücresi iki tam turda3×2²=12 olur. Yalnız beşinin bölünmesi beş ek hücre kazandırır:12+5=17.24 tüm hücrelerin üçüncü turda bölündüğünü varsayar;12 ek bölünmeleri unutur. Mekanizma bakteride ikiye bölünmedir, mitoz evreleri değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bakteride ikiye bölünme, bir prokaryot hücrenin DNA kopyalarını ayırıp iki hücre oluşturmasıdır; ökaryotik mitoz evreleri bu mekanizmanın adı değildir.",
+        "Ortak bir turda bütün hücreler birer kez bölünürse sayıları katlanır. Yalnız seçilmiş hücrelerin bölünmesi ise kalan hücreleri çoğaltmadan gerçekleşen olaylar kadar net yeni hücre ekler."
+      ],
+      "strategy": "Önce iki ortak turun sonundaki popülasyonu bir ara küme olarak kur. Bu kümede yalnız belirtilen beş hücreyi işaretleyip her birinin yerine iki yavru koy; işaretlenmeyenleri olduğu gibi bırak.",
+      "steps": [
+        "Üç başlangıç bakterisi ilk tam turda altı, ikinci tam turda on iki olur: 3×2×2=12.",
+        "Bu on ikiden yalnız beş hücre birer kez bölünür. Beş eski hücrenin yerini on yavru alınca net artış beştir: 12−5+10=17.",
+        "Kayıp olmadığı için başka çıkarma yapılmaz. İlk seçenekteki 17, ortak turlarla seçili olayları ayrı hesaplayan sonuçtur."
+      ],
+      "optionReasons": [
+        "İki tam tur 12 bakteri verir; beş seçili bölünme toplamı net beş artırır. Son sayı 17’dir.",
+        "24, on iki bakterinin hepsinin üçüncü bir tam tur geçirdiğini varsayar. Kökte bu turu yalnız beş hücre tamamlamıştır.",
+        "15 iki tam turun sonucuna yalnız üç net hücre eklenmiş gibi kalır. Son aşamada belirtilen beş bölünmenin tamamını karşılamaz.",
+        "12 ikinci ortak turun sonundaki ara sayıdır. Son beş seçili bölünmenin katkısı bu sonuçta yoktur.",
+        "20 verilen ortak tur ve beş net artış zincirinden elde edilmez. On iki bakteriden oluşan ara kümeye beş seçili bölünme eklemek 17 verir."
+      ],
+      "commonError": "Her aşamada bütün popülasyonu ikiyle çarpmak, yalnız beş bakteri koşulunu yok sayar; ikiye bölünen eski hücreleri ayrıca saymaya devam etmek de sayıyı şişirir.",
+      "check": "Son adım için 12−5+2×5 yazıldığında 17 bulunmalı. Bu yazım, beş donör hücrenin yerine on yavru geçtiğini açık tutar."
+    }
+  },
+  {
+    "id": "f011-bio-b-asexual-7",
+    "identity": "[\"f011-bio-b-asexual-7\",\"Çileğin yüzeyde uzanan gövdesinin boğumundan kök ve sürgün oluşuyor. Başka bir bitki daha önce döllenmeyle oluşmuş tohumun embriyosundan gelişiyor. Hangisi doğrudur?\",\"\",[\"İkisi de zorunlu vejetatif yoldur\",\"İlkinde vejetatif üretim, ikincisinde eşeyli üreme geçmişi olan embriyo gelişimi vardır\",\"İlkinde mutlaka gamet birleşmesi olur\",\"Tohumu ekmek önceki döllenmeyi ortadan kaldırır\",\"Gövde boğumu mutlaka gamettir\"],1,\"Çileğin sürünücü gövdesi somatik dokudan yeni bitki oluşturduğu için vejetatif yoldur. İkinci örnekte embriyonun döllenmeyle oluştuğu açıkça verilmiştir; ekim bu geçmişi değiştirmez. Gövde boğumu gamet değildir ve ilk olaya yeni döllenme eklenemez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Somatik doku, gametler dışındaki vücut dokusudur. Gövde boğumu, yaprak veya tomurcuğun gelişebildiği bir gövde bölgesidir.",
+        "Embriyo, yeni bireyin gelişim başlangıcını taşıyan yapıdır. Bir tohumun toprağa ekildiği an ile embriyonun hangi önceki olaydan oluştuğu farklı zaman noktalarıdır."
+      ],
+      "strategy": "İki bitkinin başlangıç yapılarını ve verilen üreme geçmişlerini ayrı kutulara yerleştir. Gövde dokusundan yeni gelişmeyle, önceden oluşmuş embriyonun büyümesini yalnız ekim eylemi üzerinden aynılaştırma.",
+      "steps": [
+        "Çilekte yeni kök ve sürgün, mevcut sürünücü gövdenin boğumundan oluşur. Bu somatik başlangıç vejetatif üretimdir.",
+        "İkinci örnekte embriyonun daha önce döllenmeyle oluştuğu açıkça verilmiştir. Sonraki ekim ve gelişme bu geçmişi ortadan kaldırmaz.",
+        "İlkini vejetatif, ikincisini eşeyli üreme geçmişi taşıyan embriyo gelişimi olarak ayıran ikinci seçenek doğrudur."
+      ],
+      "optionReasons": [
+        "İlk başlangıç somatik dokudur; ikinci örneğin embriyosu ise açıkça döllenmeyle oluşmuştur. İkisini zorunlu aynı üretim yolu saymak ikinci veriyi siler.",
+        "Çileğin gövde boğumu vejetatif başlangıçtır. Tohumdaki embriyonun döllenmeyle oluştuğu verilince onun gelişimi eşeyli geçmişi korur.",
+        "Çileğin gövde boğumundan kök ve sürgün çıkması, ilk olaya gamet birleşmesi eklemeyi gerektirmez.",
+        "Tohumu toprağa koymak daha önceki gamet birleşmesini geri almaz. Üreme geçmişi ekim işlemiyle değişmez.",
+        "Gövde boğumu somatik bir gövde bölgesidir; yumurta veya sperm gibi gamet değildir."
+      ],
+      "commonError": "Toprağa yerleştirilen her bitki parçasını aynı üreme başlangıcı saymak, somatik doku ile döllenmiş embriyonun farkını kaybettirir.",
+      "check": "İki kutunun etiketleri farklı kalmalı: gövde dokusu ve döllenmeyle oluşmuş embriyo. Yalnız ikisinin de sonra büyümesi bu ayrımı silmez."
+    }
+  },
+  {
+    "id": "f011-bio-b-asexual-8",
+    "identity": "[\"f011-bio-b-asexual-8\",\"Bir mantar sporu başka gametle birleşmeden yeni koloni başlatıyor. Yalnız bu bilgiye göre hangi sonuç güvenlidir?\",\"\",[\"Spor kesin mitozla oluşmuştur\",\"Türün bütün yaşamında döllenme yoktur\",\"Bu spordan doğrudan gelişmede döllenme yoktur; sporun üretim bölünmesi için ek bilgi gerekir\",\"Bu yapı bakterinin endosporudur\",\"Yeni birey oluşumu kesin yoktur\"],2,\"Veri spordan doğrudan gelişmenin döllenmesiz olduğunu söyler. Sporun mitozla mı mayozla mı üretildiği veya türün diğer yaşam evrelerinde döllenme bulunup bulunmadığı belirtilmemiştir. Yeni koloni başlangıcı bakteri endosporundaki1→1 dayanıklılık dizisiyle aynı değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir üreme yapısının ana canlıda hazırlanması ile o yapıdan yeni büyümenin başlaması yaşam döngüsünün farklı basamaklarıdır.",
+        "Mantarlar ökaryot canlılardır; yaşam döngülerinde farklı çekirdek ve hücre bölünmeleri bulunabilir. Bir gözlem hangi basamağa aitse çıkarımın kanıtı da o basamakla sınırlı tutulur."
+      ],
+      "strategy": "Zaman çizgisini sporun üretilmesi ve spordan koloni gelişmesi diye ayır. Kökün açıkça anlattığı basamağı işaretleyip seçeneklerdeki iddiaların bu basamağı mı, gözlenmemiş başka bir basamağı mı anlattığına bak.",
+      "steps": [
+        "Açık veri, mevcut sporun başka gametle birleşmeden koloni başlatmasıdır. Sporun daha önce nasıl üretildiği söylenmemiştir.",
+        "Bu gelişme basamağında döllenme bulunmaz. Fakat spor üretiminin mitozla mı mayozla mı olduğu veya türün diğer evreleri için ek bilgi gerekir.",
+        "Bu iki sınırı birlikte koruyan üçüncü seçenek güvenlidir. Bakteri endosporu veya türün bütün yaşamına ilişkin bir zorunluluk ekleme."
+      ],
+      "optionReasons": [
+        "Sporun üretildiği bölünme kökte verilmemiştir. Doğrudan gelişmenin döllenmesiz olması, sporun kesin mitoz ürünü olduğunu göstermez.",
+        "Tek bir sporun gelişme evresi, türün yaşam döngüsündeki bütün diğer evreleri açıklamaz. Başka evrelerde döllenme bulunması bu veriyle dışlanamaz.",
+        "Spordan gözlenen doğrudan gelişmede gamet birleşmesi yoktur. Sporun üretildiği bölünme ise ayrı, eksik bir bilgidir; yorum bu sınırı doğru tutar.",
+        "Kökte mantarın koloni başlatan üreme yapısı verilmiştir. Bakteri endosporu farklı canlı grubunda, sayıyı artırmayan dayanıklılık yapısıdır.",
+        "Spor yeni koloni başlatmaktadır. Yeni birey oluşumunun kesin bulunmadığı iddiası bu gelişme verisiyle uyuşmaz."
+      ],
+      "commonError": "Spordan büyümeye ilişkin tek gözlemi sporun üretim bölünmesine veya türün bütün yaşamına taşımak, kanıtın zaman kapsamını genişletir.",
+      "check": "İki basamak için veri durumunu yaz: doğrudan gelişme döllenmesiz; üretim bölünmesi belirtilmemiş. Cevabın bu ayrımı korumalıdır."
+    }
+  },
+  {
+    "id": "f011-bio-b-asexual-9",
+    "identity": "[\"f011-bio-b-asexual-9\",\"Mitoza dayalı eşeysiz çoğalan bir popülasyon için ‘kalıtsal farklılık hiçbir koşulda oluşamaz’ iddiasına hangi düzeltme uygundur?\",\"\",[\"Mitoz her olayda mutlaka yeni alel üretir\",\"Çevredeki her boy değişikliği DNA dizisi değişimidir\",\"Döllenme yoksa DNA bulunmaz\",\"Yeni mutasyonlar oluşabilir; klon benzerliği mutasyon yok varsayımıyla açıklanır\",\"Bütün yavrular her çevrede kesin aynı başarıyı gösterir\"],3,\"Yeni mutasyon kalıtsal diziyi değiştirebilir; eşeysiz popülasyonda çeşitlilik olasılığı sıfır değildir. Ancak mitoz her defasında zorunlu yeni alel üretmez ve fenotipteki her çevre etkisi DNA değişimi değildir. Döllenmenin olmaması DNA yokluğu veya bütün ortamlarda aynı başarı anlamına gelmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kalıtsal dizideki farklılık, DNA’nın nükleotit sıralarının karşılaştırılmasıyla ilgilidir. Boy gibi bir fenotip ölçümü tek başına aynı tür moleküler veriyi sağlamaz.",
+        "DNA eşlenmesi ve onarım, kalıtım bilgisinin aktarılmasına katılan moleküler süreçlerdir. Klon terimi, ortak köken ve genetik benzerlik beklentisini tanımlamak için kullanılır."
+      ],
+      "strategy": "İddianın hiçbir koşulda bölümünü, kopyalanmanın neyi koruduğu ve bu korumaya hangi varsayımların eşlik ettiği üzerinden sına. DNA dizisi kanıtıyla yalnız görünüş ölçümlerini ayrı tut; seçeneklerin olasılık mı zorunluluk mu kurduğunu karşılaştır.",
+      "steps": [
+        "İddia, mitoza dayalı çoğalmada kalıtsal farklılık olasılığını tamamen sıfırlıyor. Bunu sınamak için DNA dizisinde değişim olasılığını değerlendirmek gerekir.",
+        "Yeni mutasyonlar eşeysiz çoğalma sırasında da oluşabilir. Buna karşılık her mitozda zorunlu yeni alel oluştuğu veya her boy farkının DNA değişimi olduğu söylenemez.",
+        "Mutasyon olasılığını koruyup klon benzerliğinin koşulunu açıklayan dördüncü düzeltme uygundur. Döllenme yokluğu DNA yokluğu değildir."
+      ],
+      "optionReasons": [
+        "Mutasyon mümkün olabilir, fakat her mitozda mutlaka yeni alel oluşmaz. Bir olasılığı zorunluluğa çevirmek başka bir aşırı iddia kurar.",
+        "Çevrenin yol açtığı boy değişimi her durumda DNA dizisini değiştirmez. Fenotip farkını otomatik mutasyon saymak yanlıştır.",
+        "Eşeysiz çoğalan hücrelerde de DNA bulunur ve kopyalanır. Gamet birleşmemesi kalıtım maddesinin yokluğu değildir.",
+        "Yeni mutasyonlar kalıtsal farklılık oluşturabilir. Mitoza dayalı klon benzerliği, yeni genetik değişimin dışlandığı koşulla açıklanır.",
+        "Genetik benzerlik bütün çevrelerde aynı yaşam başarısını garanti etmez. Çevre koşulları benzer bireylerin performansını da etkileyebilir."
+      ],
+      "commonError": "Genetik benzerlik beklentisini mutlak ve değişmez özdeşliğe çevirmek ya da bunun tersine her kopyalanmada zorunlu değişim beklemek olasılık düzeyini bozar.",
+      "check": "Düzeltmen hem mutasyonun mümkün olmasını hem her mitozda zorunlu olmamasını birlikte korumalıdır; klon ifadesine sınırsız değişmezlik yükleme."
+    }
+  },
+  {
+    "id": "f011-bio-b-asexual-10",
+    "identity": "[\"f011-bio-b-asexual-10\",\"Yaşayan bir ana bitkiden dört çelik alınıyor; üçü tutuyor. Bu üç bitkinin ikisinden ikişer çelik daha alınıyor ve dördü de tutuyor. Önceki bitkiler yaşamaya devam ediyor. Ana bitki hariç toplam yavru sayısı kaçtır?\",\"\",[\"3\",\"4\",\"6\",\"8\",\"7\"],4,\"İlk aşamada yalnız üç yeni bitki oluşur. İkinci aşamada2×2=4 yeni bitki eklenir; donör üçü yaşamaya devam eder. Ana bitki hariç3+4=7 yavru vardır.4 yalnız ikinci aşamayı,8 tutmayan ilk çeliği de sayar. Çelik üretimi burada vejetatif yoldur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Çelikle üretimde ana bitkiden alınan uygun bir parça kök ve sürgün geliştirerek yeni bitkiye başlangıç sağlayabilir. Alınan her parçanın mutlaka tutması gerekmez.",
+        "Yeni bitki bir sonraki üretimde donör olduğunda, yaşadığı belirtilmişse önceki birey sayımından çıkarılmaz. Parça sayısı, tutan yeni birey sayısı ve yaşayan donörler ayrı kaydedilir."
+      ],
+      "strategy": "İlk ve ikinci kuşak için yalnız tutan çelikleri ayrı satırlara yaz. Donör olarak kullanılan önceki yavruları yaşama koşuluna göre koru; en sonunda ana bitkiyi hangi toplamın dışında tutacağını denetle.",
+      "steps": [
+        "İlk dört çelikten yalnız üçü tutuyor. Ana bitki dışında ilk aşamada üç yeni bitki vardır; tutmayan parçayı birey sayma.",
+        "Bu üçünün ikisi ikişer yeni çelik veriyor ve dört çeliğin tamamı tutuyor. Önceki üç yavru yaşamaya devam ederken dört yeni bitki eklenir.",
+        "Ana bitki hariç yaşayan yavruların toplamı 3+4=7’dir. Beşinci seçenek iki aşamayı ve önceki bireylerin devamını birlikte hesaba katar."
+      ],
+      "optionReasons": [
+        "3 yalnız ilk aşamada tutan yavruları sayar; ikinci aşamada tutan dört yeni bitkiyi eklemez.",
+        "4 yalnız ikinci aşamada oluşan yeni bitkilerdir. Önceki üç yavrunun yaşadığı bilgisi bu toplamda kaybolur.",
+        "6, ilk üç yavru ile ikinci aşamanın dört yeni bireyini birlikte ve tam saymaz. Verilen başarılı üretimler 3+4’tür.",
+        "8, ana bitkiyi eklemekle veya ilk aşamadaki tutmayan çeliği başarılı saymakla oluşabilecek bir fazlalıktır. İki olasılık da kökün sayım koşulunu bozar.",
+        "İlk aşamadaki üç yavru ve ikinci aşamadaki dört yeni bitki birlikte yaşar. Ana bitki dışarıda tutulduğunda toplam yedidir."
+      ],
+      "commonError": "Başarısız ilk çeliği yeni birey saymak veya yeni çelik veren eski yavruları toplamdan silmek, iki kuşağın hesabını değiştirir.",
+      "check": "İlk kuşakta 3, ikinci kuşakta 4 yaşayan yavru göster; ana bitkiye ayrı işaret koy. Son toplama yalnız 3+4 girmelidir."
+    }
+  },
+  {
+    "id": "f011-bio-b-meiosis-1",
+    "identity": "[\"f011-bio-b-meiosis-1\",\"Normal2n=8 hücrede DNA eşlenmesi tamamlandıktan sonra profaz I’de kaç tetrat ve toplam kaç kromatit bulunur?\",\"\",[\"4 tetrat ve16 kromatit\",\"8 tetrat ve8 kromatit\",\"4 tetrat ve8 kromatit\",\"16 tetrat ve16 kromatit\",\"2 tetrat ve4 kromatit\"],0,\"Sekiz kromozom dört homolog çift oluşturur; her çift bir tetrat olduğundan dört tetrat vardır. Her eşlenmiş kromozom iki kardeşlidir:8×2=16 kromatit. Tetrat adedini kromozom adediyle eşitlemek veya eşlenmeyi yok saymak diğer sonuçları doğurur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tetrat, eşlenmiş iki homolog kromozomun birlikte oluşturduğu dört kromatitli birimdir. Homolog çift sayısı ile tek tek kromozom sayısı farklıdır.",
+        "Her eşlenmiş kromozom iki kardeş kromatit taşır. Kromatitlerin toplamı, kromozomların aynı anda kaç kopyalı olduğuna göre hesaplanır."
+      ],
+      "strategy": "Bir toplamda homologları ikişerli eşleştirerek tetratları, diğer toplamda her eşlenmiş kromozomun kardeşlerini say. İki sayımı ayrı yapıp aynı profaz I çiziminde doğrula.",
+      "steps": [
+        "Başlangıç 2n=8 olduğundan sekiz kromozom dört homolog çift oluşturur. Her homolog çift profaz I’de bir tetrattır.",
+        "DNA eşlenmesi tamamlandığı için her kromozom iki kardeşlidir. Toplam kromatit sayısı 8×2=16 olur.",
+        "İstenen sırayla 4 tetrat ve 16 kromatit veren ilk seçenek doğrudur. Aynı çizimde 4×4=16 kromatit kontrolünü de yap."
+      ],
+      "optionReasons": [
+        "Sekiz kromozom dört homolog çift, dolayısıyla dört tetrat oluşturur; eşlenmiş sekiz kromozomda on altı kromatit bulunur.",
+        "Sekiz kromozomun her biri ayrı tetrat değildir; bir tetratta iki homolog gerekir. Sekiz kromatit de tamamlanmış eşlenmeyi yok sayar.",
+        "Dört tetrat kısmı doğrudur; her tetratta dört kromatit bulunduğundan toplam sekiz değil on altı olmalıdır.",
+        "On altı kromatit sayısı doğrudur; fakat bu sayı tetrat sayısı değildir. Tetratlar homolog çiftler üzerinden sayılır ve dört tanedir.",
+        "İki tetrat, sekiz kromozomun yalnız yarısını eşleştirir. Dört kromatit de verilen eşlenmiş sekiz kromozomun toplamını karşılamaz."
+      ],
+      "commonError": "Tetratı tek kromozomla veya kromatitle aynı birim saymak, homolog çift ve kardeş kopya sayımlarını birbirine karıştırır.",
+      "check": "Tetrat adedini dörtle çarptığında toplam kromatidi geri bulmalısın: 4×4=16. Kromozom toplamı ise sekiz kalır."
+    }
+  },
+  {
+    "id": "f011-bio-b-meiosis-2",
+    "identity": "[\"f011-bio-b-meiosis-2\",\"Normal mayozda anafaz I ile anafaz II’de ayrılan yapılar hangi sırayla verilmiştir?\",\"\",[\"Kardeşler; homologlar\",\"Homolog kromozomlar; kardeş kromatitler\",\"DNA bazları; homolog kromozomlar\",\"Çekirdekçikler; genler\",\"Her ikisinde yalnız tetratlar aynı kalır\"],1,\"Anafaz I’de homologlar ayrılırken her kromozomun kardeşleri birlikte kalır. Anafaz II’de kardeş kromatitler ayrılıp bağımsız kromozom olarak kutuplara gider. İlk seçenek sırayı ters çevirir; baz, gen veya çekirdekçik ayrımı bu sayım olayının adı değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Homolog kromozomlar aynı genleri karşılıklı lokuslarda taşıyan takım eşleridir; farklı alelleri bulunabilir. Kardeş kromatitler ise tek kromozomun DNA eşlenmesiyle oluşan kopyalardır.",
+        "Eşlenmiş kromozomun kardeşleri sentromer bölgesinde birlikte tutulur. Bir bütün kromozomun hareketiyle bu iki kopyanın birbirinden ayrılması aynı olay değildir."
+      ],
+      "strategy": "İki evre için küçük şemalar çizip sentromer bölgesinde hangi kopyaların birlikte kaldığını izle. Sıralamayı ezber söz yerine uzaklaşan birimlerin kimliğiyle kur.",
+      "steps": [
+        "Birinci bölünmede karşı kutuplara giden homologların her biri iki kardeşini birlikte taşır. Anafaz I’de ayrılanlar homolog kromozomlardır.",
+        "İkinci bölünmede her eşlenmiş kromozomun kardeşleri birbirinden ayrılıp bağımsız kromozom olarak kutuplara ilerler.",
+        "Anafaz I için homolog, anafaz II için kardeş kromatit sırasını veren ikinci seçenek doğrudur. Baz, gen ve çekirdekçik adları bu iki ayrılmanın yerine geçmez."
+      ],
+      "optionReasons": [
+        "İki yapı doğru terimlerdir ama evre sırası ters verilmiştir. İlk bölünmede homologlar, ikinci bölünmede kardeşler ayrılır.",
+        "Anafaz I’de homolog kromozomlar kardeşlerini birlikte taşıyarak ayrılır; anafaz II’de kardeş kromatitler birbirinden ayrılır.",
+        "DNA bazları bütün kromozomların kutuplara dağılımındaki sayım birimi değildir; ikinci evrede ayrılanlar da homolog çiftler değil kardeşlerdir.",
+        "Çekirdekçiklerin kaybolup yeniden oluşması ile genlerin dizide bulunması, iki anafazdaki kromozom ayrılmalarının adı değildir.",
+        "Tetrattaki homologlar birinci anafazda birbirinden uzaklaşır. İkinci anafazda da kardeşler ayrıldığı için her iki evrede yapıların aynı kalması doğru değildir."
+      ],
+      "commonError": "X biçimli yapının iki yarısını homolog sanmak, bütün X’lerin uzaklaşmasıyla tek X’in kardeşlerinin ayrılmasını ters eşleştirir.",
+      "check": "İlk şemada birlikte giden iki kardeşin ikinci şemada ayrıldığını göster. Bu kontrol homolog→kardeş sırasını doğrular."
+    }
+  },
+  {
+    "id": "f011-bio-b-meiosis-3",
+    "identity": "[\"f011-bio-b-meiosis-3\",\"Başlangıcı2n=6 olan normal hücrenin sitokinez I’si tamamlandı. İlk ürünlerden birinde kromozom, DNA molekülü ve takım durumu nedir?\",\"\",[\"6 kromozom,12 DNA,2n\",\"3 kromozom,3 DNA,2n\",\"3 kromozom,6 DNA,n\",\"6 kromozom,6 DNA,n\",\"12 kromozom,12 DNA,4n\"],2,\"Mayoz I sonunda her ilk ürün bir homolog takım, yani n=3 kromozom taşır. Her kromozom hâlâ iki kardeşli olduğundan altı DNA molekülü vardır. İki bölünme arasında yeni eşlenme gerçekleşmez.3 DNA son ikinci ürünle,6 kromozom ise bütün ilk hücreyi veya geçici anafaz II sayımını karıştırır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ploidi, hücrede kaç tam kromozom takımı bulunduğunu gösterir; kromozomların kardeş kopyalarını taşıyıp taşımaması ise ayrıca izlenen eşlenme durumudur. Bu iki değişken birbirinden bağımsız kaydedilir.",
+        "Bir kromatitte bir çekirdek DNA molekülü bulunur. Kromozom başına DNA molekülünü belirlerken kardeşlerin hâlâ birlikte olup olmadığına bakılır."
+      ],
+      "strategy": "Başlangıç homolog çiftlerini çizip tamamlanmış ilk bölünmede bir ürünün sınırını belirle. Bu sınırın içindeki kromozom birimlerini, kardeş kopyaları ve takım durumunu üç ayrı sütuna yaz.",
+      "steps": [
+        "2n=6 başlangıçta üç homolog çift vardır. Normal ilk bölünmede her ürüne her çiftten bir homolog gider; ilk ürün üç kromozom alır.",
+        "İlk sitokinez sonunda bu üç kromozomun kardeşleri hâlâ birlikte olduğundan 3×2=6 DNA molekülü bulunur. Ürün yalnız bir homolog takım taşır.",
+        "3 kromozom, 6 DNA ve n takım durumunu birlikte veren üçüncü seçenek doğrudur. Haploit ürünü şimdiden tek-kromatitli kabul etme."
+      ],
+      "optionReasons": [
+        "6 kromozom ve 12 DNA, başlangıçtaki eşlenmiş diploit hücreye uyar. İlk sitokinez tamamlanınca tek ürün bu toplamın tamamını taşımaz.",
+        "Üç kromozom kısmı uygundur; fakat kardeşler henüz ayrılmadığından DNA üç değil altıdır. Ürün ayrıca 2n değil n düzeyindedir.",
+        "İlk ürün bir homolog takımın üç kromozomunu taşır. Her kromozom iki kardeşli olduğu için altı DNA molekülü vardır ve takım n’dir.",
+        "Altı DNA doğru olsa da altı kromozom yazmak bağlı kardeşleri ayrı kromozom sayar. İlk ürünün kromozom birimi üçtür.",
+        "12 kromozom ve 4n takım, ilk bölünmeye azaltım yerine ek takım kazanımı yükler. Böyle bir eşlenme veya birleşme kökte verilmemiştir."
+      ],
+      "commonError": "Haploit sözcüğünü tek kromatitli sözcüğüyle eşitlemek, ilk mayoz ürününde takım ve DNA miktarını yanlış bağlar.",
+      "check": "Bir ürünün üç çift kardeşli kromozomunu çiz: üç bağlı birim ve altı DNA görmelisin. İkinci homologların diğer üründe olduğunu da denetle."
+    }
+  },
+  {
+    "id": "f011-bio-b-meiosis-4",
+    "identity": "[\"f011-bio-b-meiosis-4\",\"Normal2n=10 hücreden gelen bir mayoz I ürününün anafaz II’sinde sitoplazma henüz ayrılmamış. Bu tek hücrenin bütünü ve tek kutbu sırasıyla kaç kromozom taşır?\",\"\",[\"5 ve10\",\"10 ve10\",\"5 ve5\",\"10 ve5\",\"20 ve10\"],3,\"Mayoz I ürünü beş iki-kardeşli kromozom taşır. Anafaz II’de kardeşler ayrılınca henüz tek hücre olan bütün toplam on kromozom sayar; tek kutup beş alır. Bu diploit yavru oluştuğu anlamına gelmez. Yirmi yazmak fazladan bir eşlenme/ayrılma, beş toplam yazmak kutbu hücreyle karıştırmaktır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kardeş kopyalar birbirinden bağımsız hareket etmeye başladığında kromozom sayımında ayrı birimler hâline gelirler. Bu sayısal değişim bir DNA eşlenmesi değildir.",
+        "Sitoplazması ayrılmamış bir hücre, iki kutbu birlikte kapsar. Bir kutbun alacağı takım ile o anda bütün hücre içinde sayılan kopyalar ayrı kapsamlı toplamlar verir."
+      ],
+      "strategy": "Önce mayoz I ürünündeki bağlı kromozomları başlangıç çiftlerinden kur. Sonra kardeş ayrılmasını bu tek hücre sınırında uygula; hücre toplamını ve bir kutup toplamını ayrı yaz.",
+      "steps": [
+        "2n=10 başlangıcın normal mayoz I ürünü beş iki-kardeşli kromozom taşır. Anafaz II’ye yeni bir DNA eşlenmesi olmadan girilir.",
+        "Kardeşler ayrılınca bu tek sitoplazma içinde on bağımsız kromozom sayılır. Dengeli dağılımda bunların beşi bir kutba gider.",
+        "Bütün hücre 10, tek kutup 5 sırasını veren dördüncü seçenek uygundur. Geçici bütün-hücre sayımını diploit yavru oluşumu diye yorumlama."
+      ],
+      "optionReasons": [
+        "İki alan ters sıralanmıştır. Bütün hücre iki kutbu kapsadığı için tek kutuptan daha az kromozom taşıyan bir toplam olamaz.",
+        "On bütün hücre için uygundur; tek kutba da on yazmak aynı toplamı her kutba kopyalar. Her kutup beş alır.",
+        "Beş tek kutbun değeridir. Bütün hücreye de beş yazmak ayrılmış kardeşlerin öteki kutba giden yarısını sayımdan çıkarır.",
+        "Anafaz II’de beş bağlı birimin kardeşleri ayrılınca hücre bütünü on kromozom sayar. Bir kutba beş kromozom gider.",
+        "Yirmi bütün hücre ve on kutup, mayoz I’in takım azaltımını atlamış veya ek bir çoğaltma yapmış gibi bir sonuçtur. Verilen tek ilk ürün için fazla sayımdır."
+      ],
+      "commonError": "Mayoz II’deki iki hücreyi tek hücre gibi toplamak veya tek kutbu bütün hücre sanmak, sorunun açıkça verdiği sayım sınırını değiştirir.",
+      "check": "Bir hücrenin iki kutbunda beşer kromozom göster: 5+5=10. Başka mayoz I ürününün kromozomlarını bu hücre toplamına ekleme."
+    }
+  },
+  {
+    "id": "f011-bio-b-meiosis-5",
+    "identity": "[\"f011-bio-b-meiosis-5\",\"Krossing over için hangi ifade bilimsel olarak doğrudur?\",\"\",[\"Normalde farklı homolog çiftleri arasında olmak zorundadır\",\"Yalnız aynı kromozomun iki kardeşi arasında tanımlanır\",\"Her tek değişime tetrattaki dört kromatit mutlaka katılır\",\"DNA miktarını her seferinde iki katına çıkarır\",\"Homolog çiftin kardeş olmayan kromatitlerinin karşılıklı eş bölgeleri arasında olabilir\"],4,\"Krossing over homolog kromozomların kardeş olmayan kromatitleri arasındaki karşılıklı bölge değişimidir. Aynı kardeş çiftini veya farklı homolog çiftlerini normal tanım diye kullanmak yanlıştır. Tek bir değişim dört kromatidin tümünü zorunlu değiştirmez ve yeni bir DNA eşlenmesi gibi miktarı iki katına çıkarmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Homolog eşler aynı genleri karşılıklı konumlarda taşıyan iki kromozomdur. Kardeşler ise bunlardan tek birinin eşlenmesinden doğan kopyalardır.",
+        "Lokus genin kromozom üzerindeki konumunu, alel aynı genin farklı biçimini belirtir. Yeni alel birleşimleri ile DNA’nın yeniden kopyalanması farklı moleküler sonuçlardır."
+      ],
+      "strategy": "Önerilen değişimde önce hangi iki kromozomun, sonra onların hangi kopyalarının kullanıldığını sorgula. Karşılıklı bölgelerin eşleşmesini, katılan kopya sayısını ve bunun kopyalanma olup olmadığını ayrı kontrol et.",
+      "steps": [
+        "Profaz I’de eşleşen bir homolog çiftin toplam dört kromatidi vardır. Aynı kromozomun iki kardeşiyle iki farklı homologun kopyalarını ayır.",
+        "Krossing over normal olarak homolog çiftin kardeş olmayan kromatitlerinin karşılıklı eş bölgeleri arasında gerçekleşebilir. Tek bir değişim yalnız katılan kopyaları etkileyebilir.",
+        "Bu tanımı veren beşinci seçenek doğrudur. Farklı homolog çiftleri arasında olmayı veya DNA’yı ikiye katlamayı normal tanıma ekleme."
+      ],
+      "optionReasons": [
+        "Normal krossing over aynı homolog çift içindeki eş bölgelere dayanır. Farklı homolog çiftleri arasında olmak zorunda değildir.",
+        "Normal tanım aynı kromozomun iki kardeşini değil, homolog eşlerin kardeş olmayan kromatitlerini kullanır.",
+        "Tek bir karşılıklı değişime iki kardeş olmayan kromatit katılabilir; tetrattaki dört kromatidin hepsinin aynı değişime katılması zorunlu değildir.",
+        "Parça değişimi yeni DNA eşlenmesi değildir. DNA miktarını her defasında iki katına çıkarmak bu olayın zorunlu sonucu olmaz.",
+        "Homolog çiftin kardeş olmayan kromatitlerinin eş bölgeleri arasındaki karşılıklı değişim, bilimsel krossing over tanımıyla uyumludur."
+      ],
+      "commonError": "Homolog olmayan ifadesini kardeş olmayan yerine kullanmak, farklı kromozom çiftleriyle aynı çiftin farklı kopyalarını birbirine karıştırır.",
+      "check": "İki kromatit aynı homolog çiftin farklı üyelerinden gelmeli ve karşılıklı eş bölgeler değişmelidir. Homolog eşler ile aynı kromozomun kardeşlerini ayrı adlandırdığını kontrol et."
+    }
+  },
+  {
+    "id": "f011-bio-b-meiosis-6",
+    "identity": "[\"f011-bio-b-meiosis-6\",\"Bir tetratta homologlarAB,AB veab,ab kromatitlerini taşıyor. A-B arasında iki kardeş olmayan kromatitte tek karşılıklı değişim oluyor. Son dört kromatit işareti hangisidir?\",\"\",[\"AB,Ab,aB,ab\",\"AB,AB,AB,AB\",\"Ab,Ab,Ab,Ab\",\"AB,ab\",\"A,a,B,b\"],0,\"KatılanAB veab kromatitleri iki işaret arasındaki ucu değiştirinceAb veaB olur. Diğer iki kardeşAB veab kalır; toplamAB,Ab,aB,ab bulunur. İki kromatide düşmek sayıyı kaybeder, bütününü tek bileşime dönüştürmek katılmayanları yok sayar. A,a,B,b ise tek kromatitteki iki işareti ayırır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yan yana yazılan iki işaret, aynı kromatitte izlenen iki gen konumunun alel birleşimini gösterir. Büyük ve küçük harfler aynı konumdaki alternatif biçimleri temsil eder.",
+        "Karşılıklı bölge değişiminde katılan her kromatit bir parça verir ve karşılık gelen parçayı alır. Katılmayan kromatitler için ayrıca bir değişim varsayılmaz."
+      ],
+      "strategy": "Başlangıçtaki dört kromatidi ayrı şeritlere yaz. Her homologdan katılan bir şeridi seçip yalnız iki işaret arasındaki uçları karşılıklı değiştir; sonra değişen ve değişmeyen şeritleri birlikte listele.",
+      "steps": [
+        "Başlangıç şeritleri AB, AB, ab, ab’dir. Tek değişime bir AB ile bir ab katılır; öteki iki şerit bu olaya katılmaz.",
+        "A ile B arasındaki uçların karşılıklı değişmesi, katılan iki kromatitte Ab ve aB birleşimlerini oluşturur.",
+        "Katılmayan AB ve ab’yi de koruyunca dört işaret AB, Ab, aB, ab olur. İlk seçenek hem dört kromatidi hem karşılıklı değişimi doğru korur."
+      ],
+      "optionReasons": [
+        "Katılan iki kromatit Ab ve aB olurken katılmayanlar AB ve ab kalır. Dört kromatitin tamamı doğru listelenmiştir.",
+        "Bütün kromatitleri AB yapmak, başlangıçtaki küçük harfli işaretleri ve karşılıklı parça alışverişini yok sayar.",
+        "Tek değişim bütün dört kromatidi Ab yapmaz. Hem katılmayanlar hem karşılıklı oluşan öteki birleşim aB kaybedilmiştir.",
+        "AB ve ab yalnız iki kromatidi gösterir. Tetrattaki dört kromatidin ve değişime katılan iki yeni birleşimin tamamını vermez.",
+        "A, a, B, b tek tek alel adlarıdır. Her kromatitte iki konum birlikte izlenirken bunları ayrı birimler gibi listelemek kromatit birleşimlerini göstermez."
+      ],
+      "commonError": "Bir tek değişime dört kromatidin hepsini katmak veya yalnız değişen iki kromatidi sonuç diye yazmak, tetratın korunmuş dört şeridini kaybettirir.",
+      "check": "Son listende dört şerit ve her şeritte iki işaret bulunmalı. Katılmayan AB ve ab korunurken değişen iki şerit birbirini tamamlayan Ab ve aB olmalıdır."
+    }
+  },
+  {
+    "id": "f011-bio-b-meiosis-7",
+    "identity": "[\"f011-bio-b-meiosis-7\",\"A/a veB/b ayrı homolog çiftlerdedir; parça değişimi yok. Bir mayoz I kutbunaA ve b gidiyor. Normal bu tek mayozun dört son ürünündeki işaretler hangisidir?\",\"\",[\"AB,Ab,aB,ab olmak zorundadır\",\"Ab,Ab,aB,aB\",\"AB,AB,AB,AB\",\"A,A,b,b\",\"Ab,ab,ab,ab\"],1,\"İlk kutupAb alırsa karşı kutup aB alır. Mayoz II’de her takımın kardeş kopyaları ayrıldığındanAb,Ab,aB,aB oluşur. Olası genel bileşim sayısı dört olsa da bu tek olayın dört farklı ürün vermesi gerekmez. Diğer seçenekler homolog paylaşımını veya iki işaretin aynı gamette birlikte oluşunu bozar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir gamet farklı kromozom çiftlerindeki genlerin her birinden bir alel taşıyabilir. Ayrı çiftlerdeki iki genin işaretleri aynı son hücrenin genetik kaydında birlikte yazılır.",
+        "Bir olayda gerçekleşmiş yönelim ile çok sayıda olaydaki olası yönelimlerin kümesi farklıdır. Olası bir birleşimin var olması, her tek olayın bütün birleşimleri üretmesini gerektirmez."
+      ],
+      "strategy": "Verilmiş kutbun iki işaretini aynı kutu içinde tut. Karşı kutbun tamamlayıcı homologlarını kurduktan sonra, parça değişimi olmayan bu tek olayda kardeş kopyaların ayrılmasını izle.",
+      "steps": [
+        "Bir mayoz I kutbuna A ile b birlikte gidiyor; bu kutbun birleşimi Ab’dir. Normal ayrılmada karşı kutup a ile B, yani aB alır.",
+        "Parça değişimi verilmediği için her ilk ürünün kardeş kopyaları bu işaretleri korur. Mayoz II her ilk takımın iki kopyasını iki son ürüne ayırır.",
+        "Dört son ürün Ab, Ab, aB, aB olur. İkinci seçenek gerçekleşmiş tek yönelimi korur; genel dört olasılığı bu tek olaya zorlamaz."
+      ],
+      "optionReasons": [
+        "AB, Ab, aB, ab genel olası birleşimleri gösterebilir. Verilen tek yönelimde ve parça değişimi yokken dört ürünün hepsi farklı olmak zorunda değildir.",
+        "İlk kutup Ab, karşı kutup aB alır. İkinci bölünmede kardeş kopyalar ayrılınca her birleşimden iki ürün oluşur.",
+        "Bütün ürünleri AB yapmak hem verilmiş A ile b birlikteliğini hem karşı kutbun tamamlayıcı homologlarını siler.",
+        "A, A, b, b listesi iki genin aynı ürün içinde birlikte bulunmasını göstermez. Her ürün bu iki gen konumunun da birer alelini taşımalıdır.",
+        "Normal tamamlayıcı iki kutuptan iki Ab ve iki aB beklenir. Üç ab ürün eklemek verilen yönelim ve dengeli kardeş paylaşımıyla uyuşmaz."
+      ],
+      "commonError": "Olası takım sayısını bir mayozdaki kesin farklı ürün sayısı sanmak veya iki genin işaretlerini ayrı hücreler gibi yazmak tek olayın kaydını bozar.",
+      "check": "İlk kutuptaki A ve b birlikteliği son iki üründe korunmalı; karşı iki üründe tamamlayıcı a ve B birlikte bulunmalıdır."
+    }
+  },
+  {
+    "id": "f011-bio-b-meiosis-8",
+    "identity": "[\"f011-bio-b-meiosis-8\",\"Parça değişimi dışlanmış, üç homolog çiftin bağımsız yöneldiği modelde çok sayıdaki mayozda olası homolog takım bileşimi kaçtır?\",\"\",[\"3\",\"6\",\"8\",\"4\",\"12\"],2,\"Üç bağımsız homolog çift için2³=8 olası takım bileşimi vardır. Bu çok sayıdaki olası yönelimin kümesidir; tek mayozda sekiz hücre veya zorunlu sekiz farklı ürün oluştuğunu söylemez. Üçü doğrudan almak veya çiftleri toplamak bağımsız çarpma kuralını uygulamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir homolog çiftte iki farklı kökenli kromozom vardır. Normal son ürün her çiftten bir temsilci alır; farklı çiftler için bu seçimler ayrı yapılır.",
+        "Bağımsız seçimlerin bütün birleşimlerini sayarken her seçimin olası yolları çarpılır. Bir yolun tamamlanması ile farklı yolların toplam olasılık kümesi aynı sayım değildir."
+      ],
+      "strategy": "Üç çift için üç karar basamağı olan bir ağaç kur veya üç haneli ikili kayıtlar yaz. Her yeni çiftin mevcut yolları nasıl dallandırdığını izle; sonucu tek bir mayozun hücre sayısı olarak yorumlama.",
+      "steps": [
+        "Her homolog çift, belirli bir son takıma iki kökenden birini verebilir. Üç çift için üç bağımsız ikili seçim vardır.",
+        "Birinci seçim iki, ikinciyle birlikte dört, üçüncüyle birlikte sekiz farklı takım birleşimi verir: 2×2×2=8.",
+        "Üçüncü seçenekteki 8 olası bileşim doğrudur. Bu, çok sayıdaki yönelimin kümesidir; tek mayozda sekiz hücre oluştuğu anlamına gelmez."
+      ],
+      "optionReasons": [
+        "3 homolog çiftlerin adedidir. Farklı çiftlerdeki ikili seçimlerin birleşimlerini saymadığı için olası takım sayısı değildir.",
+        "6, üç çiftteki iki yolu toplama yaklaşımıyla elde edilir. Bağımsız seçimler birlikte oluştuğundan yollar toplanmaz, çarpılır.",
+        "Üç bağımsız ikili seçim 2³=8 farklı takım birleşimi verir. Parça değişimi dışlandığı için bu sayım yalnız homolog köken seçimlerini kapsar.",
+        "4 iki bağımsız ikili seçimin sonucudur. Üçüncü homolog çiftin yol ayrımı da sayılmalıdır.",
+        "Üç ikili basamağın bütün kayıtları sekizdir. On iki bileşim yazmak bu sonlu yol kümesine karşılığı olmayan ek sonuçlar katar."
+      ],
+      "commonError": "Çift sayısını veya tek olayın dört hücresini doğrudan olası bileşim sayısı almak, bağımsız seçimlerin çarpımını atlar.",
+      "check": "Üç haneli kayıtlarını 000’dan 111’e kadar tekrarsız sayarsan sekiz yol bulmalısın. Bu kayıtlar hücre sayısı değil, olası köken birleşimleridir."
+    }
+  },
+  {
+    "id": "f011-bio-b-meiosis-9",
+    "identity": "[\"f011-bio-b-meiosis-9\",\"Aynı soy hattında hücre başına DNA8→16→8→4 birim değişiyor. ArtışS evresine, iki düşüş iki tamamlanmış normal bölünmeye ait; arada başka eşlenme yok. Hangi yorum uygundur?\",\"\",[\"İki ayrı mitozdan önce iki eşlenme kesin vardır\",\"DNA’nın yarısı zorunlu yok edilmiştir\",\"Mutlak kromozom sayısı kesin8’dir\",\"Standart diploit mayoz örüntüsüyle uyumludur; son ürün DNA’sıG₁’in yarısıdır\",\"Her son ürün diploit olmak zorundadır\"],3,\"Bir eşlenme ve iki paylaşım2→4→2→1 C örüntüsüne uyar; son4 birim başlangıç8’in yarısıdır. Dört son ürünün toplamı16 olup S sonrası miktarı korur. İki mitoz arası yeni eşlenme gerekeceğinden verilen koşula uymaz. DNA biriminden mutlak kromozom adedi veya diploit son takım çıkarılamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "DNA birimleri bir miktar ölçümüdür; kromozomların mutlak sayısına doğrudan çevrilmez. Aynı kat değişimi farklı kromozom sayılı hücrelerde görülebilir.",
+        "Bir soy hattında hücre başına miktarın izlenmesiyle bütün son ürünlerin miktarlarını toplamak ayrı işlemlerdir. Korunum değerlendirmesi ölçüm alanı sabit tutularak yapılır."
+      ],
+      "strategy": "Diziyi ilk ölçüme oranlayıp artış ve düşüşleri verilen olaylarla eşleştir. Sonra son ürün sayısını hesaba katarak toplamı eşlenme sonrası miktarla karşılaştır; miktar etiketini kromozom adedine dönüştürme.",
+      "steps": [
+        "8→16→8→4 dizisi başlangıca göre 1→2→1→1/2 oranlarını verir. Kök bir S artışı ve arada eşlenme olmadan iki normal paylaşım bildirmiştir.",
+        "Bu olay sırası standart diploit mayozun 2C→4C→2C→C deseniyle uyumludur. Son ürünün 4 birimi başlangıç G₁’in 8 biriminin yarısıdır.",
+        "Bu uyumu bildiren dördüncü yorum doğrudur. Bu uyumlu modelin dört son ürününün toplamı 4×4=16 birimdir; tek hücredeki düşüş DNA kaybı veya kesin kromozom adedi anlamına gelmez."
+      ],
+      "optionReasons": [
+        "Kök yalnız bir eşlenme artışı ve arada başka eşlenme olmadığını söylüyor. İki ayrı normal mitoz öncesine iki eşlenme eklemek bu koşulu değiştirir.",
+        "Son hücre başına miktarın azalması paylaşımı gösterir. Standart mayozla açıklamada dört son ürünün toplamı 16 birimle S sonrası toplamı korur; zorunlu DNA yok edilmesi gerekmez.",
+        "8 birim bir DNA miktarı ölçümüdür. Birimin kromozomla eşitlendiği veri olmadığı için mutlak sekiz kromozom sonucu çıkmaz.",
+        "Bir eşlenme ve iki paylaşım standart diploit mayozla uyumludur; son 4 birim başlangıçtaki 8 birimin yarısıdır.",
+        "Standart diploit mayoz ürünleri n düzeyindedir. Hücre başına DNA dizisi bütün son ürünlerin zorunlu diploit olduğu sonucunu desteklemez."
+      ],
+      "commonError": "Hücre başına azalmayı toplam DNA kaybı saymak veya miktar birimini kromozom adedi yerine kullanmak grafiğin neyi ölçtüğünü değiştirir.",
+      "check": "Bu uyumlu modelde son ürün miktarı/G₁ miktarı=4/8=1/2 ve dört ürünün toplamı=16 olmalı. Bu iki kontrol paylaşım desenini birlikte doğrular."
+    }
+  },
+  {
+    "id": "f011-bio-b-meiosis-10",
+    "identity": "[\"f011-bio-b-meiosis-10\",\"Bitkilerde mayoz ve gamet oluşumu için hangi ifade temel yaşam döngüsü bilgisiyle uyumludur?\",\"\",[\"Mayoz bütün canlılarda doğrudan sperm yapar\",\"Haploit evrede mitoz mümkün değildir\",\"Spor her koşulda döllenmeyle oluşur\",\"Mayozdan önce DNA hiçbir zaman eşlenmez\",\"Mayoz haploit sporlar oluşturabilir; haploit evrede gametler mitozla üretilebilir\"],4,\"Bitkilerde mayoz haploit sporları oluşturabilir; bunların başlattığı haploit evrede gametler mitozla oluşabilir. Bu nedenle mayozun her canlıda doğrudan gamet yapması veya haploit hücrenin mitoz geçirememesi genellemeleri yanlıştır. Standart mayoz öncesinde bir DNA eşlenmesi vardır; spor oluşumu zorunlu döllenme değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Spor, uygun koşulda yeni gelişim başlatabilen üreme yapısıdır; gamet ise başka bir gametle birleşerek zigot oluşumuna katılır. İki yapı aynı işlevle tanımlanmaz.",
+        "Bitki yaşam döngülerinde n ve 2n düzeyindeki evreler bulunabilir. Bir hücrenin çoğalmasıyla iki gametin birleşmesi, takım sayısına etkileri bakımından ayrı olaylardır."
+      ],
+      "strategy": "Yaşam döngüsüne takım düzeylerini ve spor, gamet ve zigot yapılarını ayrı düğümler olarak yerleştir. Takım azalması, aynı düzeyde çoğalma ve gamet birleşmesinin hangi okta gerçekleştiğini ayırarak genellemeleri sına.",
+      "steps": [
+        "Bitkilerde diploit evreden mayozla haploit sporlar oluşabilir. Sporun görevi, sonraki haploit gelişim evresine başlangıç sağlamaktır.",
+        "Haploit evrede hücreler mitozla çoğalabilir ve gametler de mitozla üretilebilir. Döllenme iki haploit gameti birleştirerek diploit zigota döndürür.",
+        "Mayozla haploit spor ve haploit evrede mitozla gamet üretimini birlikte koruyan beşinci ifade doğrudur. Hayvanlardaki doğrudan gamet modelini bütün canlılara yayma."
+      ],
+      "optionReasons": [
+        "Mayoz bütün canlılarda doğrudan sperm yapmaz. Bitkilerde spor oluşumu ile sonraki gamet üretimi farklı basamaklar olabilir.",
+        "Haploit ökaryot hücreler mitoz geçirebilir. Takım sayısı n düzeyinde korunarak çoğalma veya gamet üretimi mümkündür.",
+        "Sporun oluşması her durumda döllenme ürünü olmak değildir. Bitki yaşam döngüsünde mayozla haploit spor oluşabilir.",
+        "Standart mayoz öncesinde bir DNA eşlenmesi vardır. Eşlenme bulunmadığını söylemek iki bölünmenin hazırlığını yanlış kurar.",
+        "Bitkilerde mayoz haploit sporları oluşturabilir; bu sporların başlattığı haploit evrede gametler mitozla üretilebilir. İki yapı ve iki basamak doğru ayrılmıştır."
+      ],
+      "commonError": "Mayozu her canlıda doğrudan gamet, gameti de her durumda mayoz ürünü saymak bitkilerin evre değişimini ortadan kaldırır.",
+      "check": "Döngünde mayozun azaltım, mitozun takım koruma, döllenmenin takım birleştirme etkileri ayrı kalmalı. Sporla gameti aynı düğüme yazma."
+    }
+  }
+]

@@ -1,3 +1,23 @@
+# 0.18.2 kaynak adayının ölçülen kapsamı
+
+| Ölçüm | Kapsam |
+| --- | --- |
+| Sıralı çalışma başlığı | 479/479 anlatım ve bağımsız soruyla eşleşir |
+| Ayrıntılı rehber / yerleşik özet | 480 / 480 |
+| Özgün soru | 5.883; önceki ham alanlar korunur |
+| Ayrıntılı / kısmi yardım | 3.243 / 2.640 |
+| Bu pakette genişleyen eski kart | 300; 30 konu, altı paket |
+| Yeni adım / şık gerekçesi | 900 / 1.500 |
+| Yeni ön bilgi / yöntem | 510 / 300 |
+| Korunan eski tam yardım | 2.943; bütün panelleriyle aynı |
+| Mevcut deneme biçimleri | TYT 120/165 dk; AYT Sayısal 80/180 dk; 15 branş |
+
+Başlık eşleşmesi her Drive/MEB alt kazanımının veya bütün resmî sınav arşivinin tamamlandığı anlamına gelmez. Banka özgün sorulardan oluşur; resmî ÖSYM sorusu diye sunulmaz. Öğrenci PDF veya ders kaynağı yüklemez. Yeni 300 kartın kaynak incelemesi, TypeScript, 1.743 birim ve üretim derlemesi geçti; yerel UI ve son native/prefix koşuları da geçti. Tam CI/paket/yayın kapıları QA'da ayrı gösterilir.
+
+---
+
+## Önceki kaynak ve kabul kayıtları
+
 # 0.18.1 yayınının ölçülen kapsamı
 
 | Ölçüm | Gerçek kaynak |

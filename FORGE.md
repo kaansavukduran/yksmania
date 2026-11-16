@@ -1,3 +1,15 @@
+# 0.18.2 kaynak adayı — 300 eski soruda öğretici çözüm
+
+30 konudaki 300 eski karta 510 ön bilgi paragrafı, 300 yöntem, 900 ilerleyen adım, 1.500 şık gerekçesi, 300 sık hata ve 300 sonuç denetimi eklendi. Dağılım: matematik 50, fizik 40, kimya 50, biyoloji 100, Türkçe 10, tarih 50. Gerçek çözümleyicide 3.243 ayrıntılı ve 2.640 kısmi yardım vardır. Ham 5.883 soru, 514 öğretim kaydı, 480 ayrıntılı rehber/480 özet ve 479 sıralı başlık korunur.
+
+Altı paketin bütün yeni metinleri, anahtarı görünen bağımsız kaynak incelemesinden geçti. İki dalga sorusunda harmonik model, üç biyoloji sorusunda yaşam döngüsü/kapsid stoku, iki kimya sorusunda basınç ve iyonik adlandırma yöntemi tam bilinen soru kimliğinde açıklaştırılır. Dalga rehberinde dört, virüs örneğinde iki ve bitki örneklerinde iki görünür alan bağlı koşulları taşır. Ham soru/rehber alanları, anahtarlar ve sıralar yeniden yazılmaz.
+
+Eski 2.943 ayrıntılı yardımın tam panel içeriği, 12 adet kendi `passage: undefined` alanı dahil tüm ham sorular ve bütün rehberler ayrı 0.18.1 kaynağıyla karşılaştırıldı. TypeScript, 1.743 birim testi ve normal/prefix üretim derlemesi geçti. İlk tam birim turundaki tek zaman aşımı QA'da korunur; ikinci tam turda 1.742/1.742 geçti. İlk 17 UI vakası ve son düzeltilmiş derlemede iki hedef vaka geçti; son Electron ve prefix koşularında 93’er model ailesi çevrimdışı yeniden açıldı. Tam CI/paket/yayın kapıları ayrıca aranır. Mevcut doğrulanmış yayın 0.18.1'dir; Android imzası ertelendi.
+
+---
+
+## Önceki kaynak ve kabul kayıtları
+
 # 0.18.1 doğrulanmış yayın — 16 Kasım 2026
 
 Kaynak `1da8b22c63f8bbd611ef919d9e50f7129a9f746d`. [Tam CI](https://github.com/kaansavukduran/yksmania/actions/runs/43877471841) 1.663/1.663 birim ve ilk tam koşuda 1.225/1.225 tarayıcı testiyle geçti. Gerçek paketli Windows/Linux çevrimdışı kullanım, yeniden yükleme ve aynı profilde süreç yeniden açılışı kontrolleri geçti; renderer hatası 0. Android imzası ertelendi ve Android işi açık kapsam gereği atlandı.

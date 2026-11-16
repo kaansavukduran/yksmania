@@ -1,0 +1,57 @@
+{
+  "paragraphs": [
+    {
+      "id": "dalgalara-giris",
+      "kind": "paragraph",
+      "outer": 3,
+      "inner": 0,
+      "before": "Periyodik dalgada ardışık iki tepe veya iki çukur arası dalga boyu λ’dır. Denge çizgisinden geçen iki noktanın her çifti bir λ değildir; aynı titreşim evresinde olup olmadıklarına bakılır. İdeal sinüs için tepe ile hemen sonraki çukur arası λ/2’dir. Dört ardışık tepe arasındaki toplam mesafe üç λ’dır; nokta sayısı ile aralık sayısını karıştırma.",
+      "after": "Sinüzoidal (harmonik) dalgada ardışık iki tepe veya iki çukur arası dalga boyu λ’dır. Denge çizgisinden geçen iki noktanın her çifti bir λ değildir; aynı titreşim evresinde olup olmadıklarına bakılır. İdeal sinüs için tepe ile hemen sonraki çukur arası λ/2’dir. Dört ardışık tepe arasındaki toplam mesafe üç λ’dır; nokta sayısı ile aralık sayısını karıştırma."
+    },
+    {
+      "id": "dalgalara-giris",
+      "kind": "paragraph",
+      "outer": 4,
+      "inner": 1,
+      "before": "Aynı noktadaki y–t grafiğinde art arda iki maksimum arasındaki süre T’dir. Bu grafikte yatay tepe aralığı λ olamaz çünkü eksen zaman birimindedir. İlk ve son gözlem tepelerini sayarken aradaki tam dönemleri say; t=0’daki ilk tepe ile t=2 s’deki beşinci tepe arası dört T içerir. Hesaptan sonra fT=1 kontrolü birim ve sayma hatasını yakalar.",
+      "after": "Sinüzoidal (harmonik) bir dalganın aynı noktadaki y–t grafiğinde art arda iki maksimum arasındaki süre T’dir. Bu grafikte yatay tepe aralığı λ olamaz çünkü eksen zaman birimindedir. İlk ve son gözlem tepelerini sayarken aradaki tam dönemleri say; t=0’daki ilk tepe ile t=2 s’deki beşinci tepe arası dört T içerir. Hesaptan sonra fT=1 kontrolü birim ve sayma hatasını yakalar."
+    }
+  ],
+  "worked": {
+    "index": 1,
+    "before": {
+      "title": "Dört tepe, üç aralık",
+      "prompt": "Bir anlık grafikte dört ardışık tepenin ilki x=0,2 m, sonuncusu x=2,0 m. f=5 Hz. λ ve v?",
+      "strategy": "Uçlar arasındaki mesafeyi tepe sayısına değil aralık sayısına böl.",
+      "steps": [
+        {
+          "label": "Aralık",
+          "explanation": "Dört tepe üç tam dalga boyu oluşturur.",
+          "expression": "3λ=2,0−0,2=1,8 m"
+        },
+        {
+          "label": "Dalga boyu",
+          "explanation": "Aralık sayısını kullan.",
+          "expression": "λ=1,8/3=0,6 m"
+        },
+        {
+          "label": "Sürat",
+          "explanation": "Frekansla çarp.",
+          "expression": "v=0,6·5=3 m/s"
+        }
+      ],
+      "answer": "0,6 m ve 3 m/s",
+      "check": "T=0,2 s’de desen 0,6 m ilerler.",
+      "pitfall": "Dört tepeyi dört dalga boyu saymak eksik bir aralık üretir."
+    },
+    "prompt": "Sinüzoidal (harmonik) bir dalganın anlık y–x grafiğinde dört ardışık tepenin ilki x=0,2 m, sonuncusu x=2,0 m. f=5 Hz. λ ve v?"
+  },
+  "recall": {
+    "index": 1,
+    "before": {
+      "prompt": "y–t grafiğinde tepe aralığı?",
+      "answer": "Periyot; y–x grafiğinde aynı evreli ardışık tepe aralığı dalga boyudur."
+    },
+    "prompt": "Sinüzoidal (harmonik) dalgada y–t ve y–x grafiklerinde ardışık tepe aralıkları hangi niceliklerdir?"
+  }
+}

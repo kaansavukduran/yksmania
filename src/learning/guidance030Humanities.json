@@ -1,0 +1,1452 @@
+[
+  {
+    "id": "f011-adverb-1",
+    "identity": "[\"f011-adverb-1\",\"‘Çocuk sakin konuştu.’ cümlesinde sakin sözcüğünün görevi nedir?\",\"\",[\"Konuşmanın biçimini bildiren durum zarfı\",\"Çocuk adını belirten işaret sıfatı\",\"Konuşan kişinin yerini tutan zamir\",\"Zaman bildiren isim tamlaması\",\"İki yargıyı bağlayan bağlaç\"],0,\"Sakin → konuştu ilişkisi, konuşmanın nasıl gerçekleştiğini bildirir; durum zarfıdır. ‘Sakin çocuk’ olsaydı sıfat olurdu. Burada adın yerini tutma, zaman ilişkisi veya iki yargıyı bağlama yoktur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir sözcüğün türünü, cümlede anlamca bağlandığı birim belirler. Adın niteliğini bildiren sözcük sıfat; eylemin nasıl gerçekleştiğini bildiren sözcük durum zarfı olur. Aynı sözcük farklı cümlelerde farklı görevler üstlenebilir.",
+        "İşaret sıfatı bir adı göstererek belirtir; zamir adın yerini tutar. Bağlaç ise sözcükler veya yargılar arasında bağ kurar. Bu görevler, yalnız sözcüğün sözlük anlamına bakılarak birbirinin yerine kullanılamaz."
+      ],
+      "strategy": "Önce çekimli eylemi bul. Sakin sözcüğünün çocuk adıyla mı, konuşma eylemiyle mi anlam ilişkisi kurduğunu soru yönelterek dene; ardından seçeneklerin görev tanımlarını karşılaştır.",
+      "steps": [
+        "Cümlenin yüklemi konuştu’dur. Çocuk, konuşan kişiyi adlandırır; sorgulanan sözcük kişinin yerine geçmez.",
+        "Nasıl konuştu? sorusuna sakin yanıtı verilir. Sözcük, konuşmanın gerçekleşme biçimini açıklar; çocuk adını işaret etmez.",
+        "Eylemin biçimini belirten bu kullanım durum zarfıdır. Konuşmanın biçimini bildiren seçeneği seç; ad niteleyen sakin çocuk kuruluşuyla karıştırma."
+      ],
+      "optionReasons": [
+        "Sakin, nasıl konuştu sorusunu yanıtlayarak konuşma eyleminin biçimini belirtir; durum zarfı açıklaması ilişkiyi karşılar.",
+        "Çocuk adını gösteren bu veya şu benzeri bir işaret ilişkisi yoktur; sakin doğrudan konuşmanın biçimini açıklar.",
+        "Konuşan kişinin adı çocuk ile zaten verilmiştir; sakin bu adın yerine geçmez.",
+        "Sakin tek sözcüktür; zaman bildiren bir ad tamlaması kurmamıştır.",
+        "Cümlede iki yargıyı birbirine bağlama görevi bulunmaz; sakin bir bağlaç değildir."
+      ],
+      "commonError": "Sözcüğün başka bir cümlede sıfat olabilmesini, verilen cümlede de mutlaka sıfat olması sanmak.",
+      "check": "Sakin sözcüğünü çıkardığında konuşan kişinin adı mı, konuşmanın nasıl gerçekleştiği mi eksiliyor? Kurduğun bağlantıyı bununla denetle."
+    }
+  },
+  {
+    "id": "f011-adverb-2",
+    "identity": "[\"f011-adverb-2\",\"‘Yolcu içeri girdi.’ ile ‘Yolcu içeriye girdi.’ cümlelerindeki içeri / içeriye sözcüklerinin türleri sırasıyla hangisidir?\",\"\",[\"İsim / yer-yön zarfı\",\"Yer-yön zarfı / yönelme ekli isim\",\"İşaret zamiri / soru zamiri\",\"Sıfat / durum zarfı\",\"İki kullanımda da yalın yer-yön zarfı\"],1,\"İçeri yalın biçimde girme yönünü belirten yer-yön zarfıdır. İçeri-y-e ise yönelme durum eki almış isimdir. İkinci cümlede de yön bilgisi bulunması ekin sözcük görevine etkisini ortadan kaldırmaz; işaret veya soru anlamı yoktur.\"]",
+    "guidance": {
+      "knowledge": [
+        "İçeri, dışarı, ileri, geri gibi yön sözcükleri yalın durumda fiile yön bildirdiklerinde yer-yön zarfı olabilir. Sözcüğün hareket yönünü anlatması ile dil bilgisi türü aynı ölçüt değildir; tür için aldığı eke de bakılır.",
+        "Bu sözcükler ad durum eki aldığında isim olarak kullanılır. Ünlüyle biten bir tabana yönelme eki eklenirken araya y yardımcı sesi girebilir. Ekli bir ismin yön bildirmesi, onu yeniden yalın zarf yapmaz."
+      ],
+      "strategy": "İki cümledeki ortak hareketi sabit tutup yalnız sorgulanan biçimleri karşılaştır. İkinci biçimde taban, yardımcı ses ve durum ekini ayır; iki türü verilen sırayla yaz.",
+      "steps": [
+        "İlk cümledeki içeri üzerinde ad durum eki yoktur; girdi eyleminin yönünü yalın olarak bildirir.",
+        "İkinci sözcük içeri-y-e biçiminde ayrılır. Y yardımcı sestir; -e yönelme durum ekidir ve sözcük ek almış isimdir.",
+        "Sıra ilk kullanımda yer-yön zarfı, ikinci kullanımda yönelme ekli isimdir. Yön anlamının ikisinde bulunması tür farkını kaldırmaz."
+      ],
+      "optionReasons": [
+        "İlk ve ikinci sözcüğün türleri ters verilmiştir; durum eki taşıyan biçim ilk değil ikincidir.",
+        "İçeri yalın olarak eylemin yönünü belirtir; içeriye yönelme durum eki almış isimdir. İki kullanımın sırası doğru korunur.",
+        "İçeri ve içeriye bir varlığın adının yerini işaret veya soru yoluyla tutmaz.",
+        "İlk kullanım bir adı nitelememektedir; ikinci kullanımda da biçim değil yönelme eki incelenir.",
+        "İkinci sözcük -e durum eki taşıdığı için iki biçimi birden yalın yer-yön zarfı saymak yanlıştır."
+      ],
+      "commonError": "Yön bildiren her parçaya, üzerindeki ad durum ekini incelemeden yer-yön zarfı demek.",
+      "check": "İkinci biçimde yalnız y’yi değil -e’yi de göster. Tür kararını anlamdaki yön bilgisinden ayrı bir ek denetimiyle doğrula."
+    }
+  },
+  {
+    "id": "f011-adverb-3",
+    "identity": "[\"f011-adverb-3\",\"‘Duru pek yavaş yürüdü.’ cümlesinde pek sözcüğü doğrudan hangi sözcüğü, hangi görevle etkiler?\",\"\",[\"Duru: kişi zamiri\",\"Yürüdü: zaman zarfı\",\"Yavaş sözcüğünü, miktar zarfı göreviyle\",\"Duru: niteleme sıfatı\",\"Yürüdü: yer-yön zarfı\"],2,\"Pek, yavaş zarfının derecesini artırır; miktar zarfıdır. Yavaş yürüdü fiiline biçim bildirir. Dolayısıyla pekin doğrudan hedefi kişi adı veya fiilin zamanı/yönü değildir; iç içe iki bağlantı vardır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir cümlede belirten sözcükler art arda ilişkiler kurabilir. Bir sözcük eylemin biçimini, başka bir sözcük de bu biçimin derecesini belirtebilir. En yakındaki her sözcüğü doğrudan yükleme bağlamak bu katmanları siler.",
+        "Miktar zarfları fiili, fiilimsiyi, sıfatı veya başka bir zarfı derece ve ölçü bakımından belirtebilir. Durum, zaman ve yer-yön ise başka anlam ilişkileridir; dereceyi saptamak için ne kadar sorusu kullanılabilir."
+      ],
+      "strategy": "Pek sözcüğünü çıkarıp kalan yargıyı oku. Hangi özelliğin hâlâ bulunduğunu, hangi derece bilgisinin eksildiğini belirle; doğrudan hedef ile onun bağlandığı yüklemi ayır.",
+      "steps": [
+        "Pek çıkarılınca Duru yavaş yürüdü cümlesi kalır. Yürüme biçimi hâlâ yavaş olarak anlatılır.",
+        "Pek, bu yavaşlığın derecesini artırmaktadır. Ne kadar yavaş? sorusu doğrudan yavaş sözcüğünü hedef gösterir.",
+        "Bağlantı pek → yavaş → yürüdü biçimindedir. Pek’in görevi miktar zarfı, doğrudan hedefi yavaş sözcüğüdür."
+      ],
+      "optionReasons": [
+        "Duru konuşmadaki bir kişi adıdır; pek onun yerini tutmaz ve kişi zamiri görevi üstlenmez.",
+        "Pek, yürümenin hangi zamanda gerçekleştiğini söylemez; doğrudan yavaşlığın derecesini belirtir.",
+        "Pek, yavaş zarfını derece bakımından etkiler. Hedef sözcük ve miktar zarfı görevi birlikte doğru verilmiştir.",
+        "Pek, Duru adının niteliğini bildiren bir sıfat değildir; kişi adıyla böyle bir bağ kurmaz.",
+        "Cümlede pek ile bir hareket yönü bildirilmez; yürüdü’ye yer-yön zarfı olarak bağlanamaz."
+      ],
+      "commonError": "Yüklem cümlenin sonunda olduğu için ondan önceki bütün zarfların doğrudan yüklemi belirttiğini sanmak.",
+      "check": "İki ayrı soru kur: Nasıl yürüdü? ve Ne kadar yavaş? Pek’in hangi sorunun yanıtında yer aldığını kontrol et."
+    }
+  },
+  {
+    "id": "f011-adverb-4",
+    "identity": "[\"f011-adverb-4\",\"Aşağıdaki cümlelerin hangisinde az sözcüğü zarf görevindedir?\",\"\",[\"Az şeker ekledim.\",\"Az zaman kaldı.\",\"Az su yeter.\",\"Bu gece az uyudum.\",\"Az para harcadım.\"],3,\"Az uyudum sözünde az, uyuma eyleminin miktarını belirtir; miktar zarfıdır. Diğer cümlelerde şeker, zaman, su ve para açık adlarının miktarını belirterek sıfat görevi üstlenir. Miktar anlamının bulunması tek başına zarf kanıtı değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Miktar bildiren bir sözcük, açık bir adın miktarını belirtiyorsa sıfat; eylemin ölçüsünü belirtiyorsa zarf görevinde olabilir. Miktar anlamı tek başına türü belirlemez; sözcüğün doğrudan hedefi bulunmalıdır.",
+        "Bir cümlede hem nesne hem yüklem bulunması, miktar sözcüğünü otomatik olarak yükleme bağlamaz. Önce miktarı belirtilen açık ad var mı diye bakılır; sonra anlam ilişkisi eylem üzerinde sınanır."
+      ],
+      "strategy": "Beş cümlede az sözcüğünden sonra gelen açık adları işaretle. Her kullanımda miktarın ada mı, eylemin gerçekleşmesine mi ait olduğunu ayrı ayrı dene.",
+      "steps": [
+        "İlk, ikinci, üçüncü ve beşinci cümlede şeker, zaman, su ve para adları açıkça bulunur; az bu adların miktarını belirtir.",
+        "Bu gece az uyudum cümlesinde azın miktarını belirttiği açık bir ad yoktur. Ne kadar uyudum? sorusunun yanıtıdır.",
+        "Uyuma eyleminin ölçüsünü bildiren kullanım miktar zarfıdır. Bu nedenle dördüncü cümleyi seç; diğerlerini miktar sıfatı olarak ayır."
+      ],
+      "optionReasons": [
+        "Az, şeker adının miktarını belirtir; ekleme eyleminin değil açık adın belirtenidir.",
+        "Az zaman öbeğinde miktarı belirtilen birim zaman adıdır; sözcük sıfat görevindedir.",
+        "Az su öbeği suyun miktarını verir. Su açık ad olduğu için bu kullanım zarf değildir.",
+        "Az, uyudum eyleminin ölçüsünü bildirir ve ne kadar uyudum sorusunu yanıtlar; zarf kullanımı budur.",
+        "Az para öbeğinde miktar para adına aittir; harcadım yükleminin bulunması bu bağı ortadan kaldırmaz."
+      ],
+      "commonError": "Az sözcüğünün her kullanımda azlık anlatmasını, her kullanımda miktar zarfı olmasıyla karıştırmak.",
+      "check": "Seçtiğin cümlede azın doğrudan belirttiği açık bir ad göstermeyi dene. Böyle bir ad değil eylem buluyorsan zarf kararınla uyumludur."
+    }
+  },
+  {
+    "id": "f011-adverb-5",
+    "identity": "[\"f011-adverb-5\",\"Aşağıdaki soruların hangisindeki soru sözcüğü eylemin gerçekleşme biçimini soran bir zarftır?\",\"\",[\"Hangi kitabı seçtin?\",\"Kimi aradın?\",\"Kaç kalem aldın?\",\"Nasıl bir oda istiyorsun?\",\"Dosyayı nasıl düzenledin?\"],4,\"Dosyayı nasıl düzenledin sorusunda nasıl, düzenleme biçimini ister; soru zarfıdır. Hangi, kaç ve nasıl bir oda kullanımları açık adı belirtir. Kimi ise aranan kişinin adının yerine geçer; soru zamiridir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Soru sözcükleri, aradıkları bilginin görevine göre sınıflanır. Açık bir adı belirten soru sözcüğü sıfat, adın yerini tutanı zamir, eylemin zamanını, biçimini, nedenini veya ölçüsünü soranı zarf olabilir.",
+        "Nasıl sözcüğü tek başına tür garantisi değildir. Bir varlığın niteliği ile bir eylemin gerçekleşme biçimi farklı hedeflerdir. Soruya verilen yanıtın hangi birimi tamamladığı, bu ayrımı görünür kılar."
+      ],
+      "strategy": "Her soruda soru sözcüğünün hedefini bul. Açık adın türünü veya miktarını arayanları, kişinin adını arayanı ve eylemin yapılışını arayanı ayır; biçim bildiren bir yanıtla dene.",
+      "steps": [
+        "Hangi kitabı ve kaç kalem sözlerinde soru sözcükleri açık adları belirtir. Nasıl bir oda kuruluşunda da sorulan, odanın niteliğidir.",
+        "Kimi aradın sorusu aranan kişinin adını ister; kimi bir adın yerine geçer. Dosyayı nasıl düzenledin ise düzenleme eylemine yöneliktir.",
+        "Son soruya dikkatlice düzenledim yanıtı verilebilir. Böylece nasıl, eylemin biçimini soran soru zarfıdır; beşinci seçeneği seç."
+      ],
+      "optionReasons": [
+        "Hangi, kitap adının hangisi olduğunu sorar; eylemin yapılış biçimini sormaz.",
+        "Kimi, aranan kişinin adının yerine geçer. Bu soru zamiridir; biçim bildiren zarf değildir.",
+        "Kaç, kalem adının sayısını soran soru sıfatıdır; alma eyleminin biçimini istemez.",
+        "Nasıl bir oda öbeğinde açık adın niteliği sorulur; nasıl burada oda ile kurulan niteleme içindedir.",
+        "Nasıl, düzenleme eyleminin gerçekleşme biçimini ister; dikkatlice gibi bir zarf bu soruyu yanıtlayabilir."
+      ],
+      "commonError": "Nasıl geçen her cümleyi, sözcüğün bağlı olduğu ada veya eyleme bakmadan soru zarfı saymak.",
+      "check": "Yanıtın bir kişinin/nesnenin adı mı, açık adın niteliği mi, eylemin yapılış biçimi mi olduğunu söyle; yalnız son tür istenen koşulu sağlar."
+    }
+  },
+  {
+    "id": "f011-adverb-6",
+    "identity": "[\"f011-adverb-6\",\"‘Akşamın serinliğinde yürüdük.’ cümlesindeki akşamın sözcüğü ile akşamın serinliğinde öbeği için hangi açıklama doğrudur?\",\"\",[\"Akşamın ilgi ekli isimdir; bütün öbek yürümenin zamanını bildirir.\",\"Akşamın yalın yer-yön zarfıdır; öbek yön bildirir.\",\"Öbekteki her sözcük tek başına zaman zarfıdır.\",\"Akşamın, yürüdük yerine geçen kişi zamiridir.\",\"Bütün öbek yalnız çoğul eki aldığı için sıfattır.\"],0,\"Akşam-ın ilgi eki alarak serinlik adıyla tamlama kurar; isimdir. Akşamın serinliğinde bütün olarak yürüme zamanını belirtir. Bütünün zarf tümleci olması içindeki her sözcüğü zarf yapmaz; yön, zamir veya çoğul yapısı söz konusu değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sözcük türü ile sözcük grubunun cümledeki görevi ayrı düzeylerdir. Bir ad tamlaması bütünüyle zaman bildirebilir; bunun için tamlamanın içindeki bütün sözcüklerin zarf türünde olması gerekmez.",
+        "İlgi eki, bir adı tamlamanın tamlayanına bağlar. Tamlanan üzerinde iyelik, bütün grubun sonunda da durum eki bulunabilir. Çözümlemede önce sözcüğün kendi ekleri, sonra grubun yüklemle ilişkisi incelenir."
+      ],
+      "strategy": "Akşamın sözcüğünü ve bütün akşamın serinliğinde grubunu ayrı satırlara yaz. Önce adlar arasındaki ek bağını, sonra grubun yürüdük yüklemine hangi soruyla bağlandığını araştır.",
+      "steps": [
+        "Akşam-ın, serinlik adıyla tamlama kurar; -ın ilgi ekidir. Bu nedenle akşamın sözcüğü ilgi ekli isim olarak incelenir.",
+        "Akşamın serinliğinde grubu tek parça olarak yürüdük yüklemine bağlanır. Ne zaman yürüdük? sorusunun yanıtını verir.",
+        "Tek sözcük isim, bütün öbek zaman bildiren yapı olabilir. Bu iki düzeyi birlikte ve doğru ayıran ilk açıklamayı seç."
+      ],
+      "optionReasons": [
+        "Akşamın, ilgi ekiyle tamlamaya katılan isimdir; bütün öbek yürüyüşün zamanını belirtir. Sözcük ve öbek düzeyleri doğru ayrılır.",
+        "Akşamın üzerinde ilgi eki vardır; yalın yer-yön zarfı değildir. Bütün öbek de bir hareket yönü vermez.",
+        "Bütün grubun zaman bildirmesi, içindeki her sözcüğü tek başına zaman zarfı yapmaz.",
+        "Akşamın bir kişi veya eylem adının yerini tutan zamir değildir; serinlik ile ad tamlaması kurar.",
+        "Öbekte çoğul eki yoktur. Bütüne sıfat denmesi de yürüdük ile kurduğu zaman ilişkisini karşılamaz."
+      ],
+      "commonError": "Zaman bildiren grubun görevini, grubun içindeki tek sözcüğün türüne aynen aktarmak.",
+      "check": "Akşamın için hangi eki aldığını, bütün öbek için hangi yüklem sorusunu yanıtladığını ayrı söyle; iki yanıtın aynı etiket olması gerekmez."
+    }
+  },
+  {
+    "id": "f011-adverb-7",
+    "identity": "[\"f011-adverb-7\",\"‘Çok düzenli çalışan ekip erken ayrıldı.’ cümlesinde düzenli sözcüğü doğrudan hangi sözcüğe bağlanır?\",\"\",[\"Ekip: niteleme sıfatı olarak\",\"Çalışan: çalışma biçimini belirten durum zarfı olarak\",\"Ayrıldı: yer-yön zarfı olarak\",\"Çok: zaman zarfı olarak\",\"Erken: ismin yerini tutan zamir olarak\"],1,\"Düzenli, çalışan fiilimsisinin anlattığı çalışma biçimini belirtir; durum zarfıdır. Çalışan ise ekip adını niteler. Erken ayrılmanın zamanına, çok düzenlinin derecesine bağlanır. Bütün sözcükleri yalnız çekimli yükleme bağlamak bu katmanları siler.\"]",
+    "guidance": {
+      "knowledge": [
+        "Fiilimsiler çekimli yüklem olmadan da eylem anlamı taşıyabilir. Bu nedenle bir zarfın hedefi yalnız cümlenin yüklemi değil, bir fiilimsi de olabilir. Sıfat-fiil grubu ise bir adı niteleyebilir.",
+        "Uzun bir grupta derece, eylemin biçimi ve ad nitelemesi iç içe kurulabilir. Her sözcüğün doğrudan belirttiği birim ayrı bulunmalıdır; grubun sonunda ad bulunması bütün ara sözcükleri o adın sıfatı yapmaz."
+      ],
+      "strategy": "Cümledeki çekimli yüklemi ve fiilimsiyi ayır. Düzenli sözcüğünü çıkarıp geri koyarak hangi eylem anlamının biçiminin değiştiğini araştır; çok ve erken bağlantılarını ayrıca tut.",
+      "steps": [
+        "Ayrıldı çekimli yüklemdir; çalışan ise çalış- eyleminden kurulmuş sıfat-fiildir. Ekip adını niteleyen grupta çalışma anlamı vardır.",
+        "Nasıl çalışan? sorusu düzenli yanıtını alır. Düzenli, doğrudan çalışma biçimini; çok da bu düzenliliğin derecesini belirtir.",
+        "Bağlantı düzenli → çalışan biçimindedir. Çalışan ekip adını nitelerken erken, ayrıldı eyleminin zamanını verir; ikinci seçeneği seç."
+      ],
+      "optionReasons": [
+        "Ekip adını niteleyen bütün grup ile düzenlinin doğrudan hedefi aynı değildir; düzenli burada çalışma biçimini açıklar.",
+        "Düzenli, çalışan fiilimsisinin anlattığı çalışma biçimini belirtir; fiilimsiye bağlanan durum zarfı ilişkisi doğru verilir.",
+        "Düzenli ayrılmanın yönünü anlatmaz; ayrıldı’nın zamanını erken sözcüğü belirtir.",
+        "Bağ ters çevrilmiştir: Çok, düzenlinin derecesini artırır; düzenli çok sözcüğüne zaman bildirmez.",
+        "Düzenli, erken’in veya bir adın yerini tutmaz; bu cümlede zamir görevi yoktur."
+      ],
+      "commonError": "Cümledeki tek eylem anlamını yüklem sanıp fiilimsinin kendi belirtenlerini gözden kaçırmak.",
+      "check": "Çok → düzenli → çalışan → ekip zinciri ile erken → ayrıldı bağını ayrı kur. Sorgulanan sözcüğün hemen sonraki anlam hedefini göster."
+    }
+  },
+  {
+    "id": "f011-adverb-8",
+    "identity": "[\"f011-adverb-8\",\"‘Mina en geniş kutuyu dikkatle açtı.’ cümlesinde en sözcüğünün doğrudan hedefi hangisidir?\",\"\",[\"Mina kişi adı\",\"Kutuyu nesnesinin türü\",\"Geniş sıfatının derecesi\",\"Açtı fiilinin zamanı\",\"Dikkatle zarfının yönü\"],2,\"En → geniş ilişkisi, kutuyu niteleyen sıfatın üst derecesini belirtir; en miktar zarfıdır. Kutunun adını doğrudan belirten yeni bir sıfat veya açma zamanını bildiren zarf değildir. Dikkatle ayrı olarak açma biçimini anlatır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Miktar zarfları yalnız eylemleri değil sıfatların derecesini de belirtebilir. Bir sıfatın nitelediği ad ile o sıfatın derecesini belirten sözcük, birbirine bağlı fakat ayrı basamaklardır.",
+        "Derece sözcüğünü çıkarmak çoğu zaman niteliği tümüyle silmez; niteliğin karşılaştırma veya üstünlük düzeyini değiştirir. Doğrudan hedefi bulmak için silinen bilginin hangi özelliğe ait olduğu incelenir."
+      ],
+      "strategy": "En sözcüğünü çıkarıp cümlede kalan niteliği oku. Kaybolan derece bilgisinin hangi sözcüğe ait olduğunu bul; kutu adı ve açma eylemine kurulan diğer bağlarla karıştırma.",
+      "steps": [
+        "En çıkarılınca Mina geniş kutuyu dikkatle açtı cümlesi kalır. Kutunun geniş niteliği hâlâ belirtilmektedir.",
+        "En, bu genişlik niteliğine üst derece anlamı katar. Doğrudan en → geniş bağı vardır; geniş ise kutuyu niteler.",
+        "Hedef, geniş sıfatının derecesidir. Dikkatle açma biçimini ayrıca bildirir; üçüncü seçeneği seç."
+      ],
+      "optionReasons": [
+        "En, Mina’nın kimliğini veya kişi adının türünü değiştirmez; derece ilişkisi kişi adına kurulmaz.",
+        "Kutunun türünü doğrudan belirten sözcük geniş sıfatıdır; en bu sıfatın derecesini belirtir.",
+        "En sözcüğü geniş sıfatına üst derece katar; doğrudan anlam hedefi doğru gösterilmiştir.",
+        "En, açmanın hangi zamanda olduğunu söylemez; eylem zamanı ile sıfat derecesi karıştırılmıştır.",
+        "Dikkatle açmanın biçimini bildirir; en ona yön anlamı kazandırmaz."
+      ],
+      "commonError": "Bir adın önündeki her sözcüğü doğrudan o adın sıfatı sayıp sıfatı derecelendiren zarfı atlamak.",
+      "check": "Eni kaldırdığında geniş niteliği kalıyor mu? Kalan nitelik ile kaybolan üst dereceyi ayırarak hedefi doğrula."
+    }
+  },
+  {
+    "id": "f011-adverb-9",
+    "identity": "[\"f011-adverb-9\",\"‘Gülerek anlattı.’ ile ‘Neşeyle anlattı.’ cümlelerinde anlatma biçimini bildiren parçalar için hangi yargı doğrudur?\",\"\",[\"İkisi de mutlaka isim kökünden türemiştir.\",\"İkisinde de fiilimsi yoktur.\",\"Neşeyle, neşe-erek biçimindeki zarf-fiildir.\",\"Gülerek fiil kökü ve -erek ile kurulmuş zarf-fiildir; neşeyle isim kökenlidir.\",\"Biçim bildirdikleri için ikisi de niteleme sıfatıdır.\"],3,\"Gül-erek fiil kökünden oluşmuş zarf-fiildir. Neşe-yle ise isim kökenli bir yapıdır; aynı biçim bilgisini vermesi onu fiilden türemiş yapmaz. İki kullanım da anlatma eylemini açıklar; isim niteleyen sıfat olmaları gerekmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir parçanın cümledeki işlevi ile hangi kökten, hangi ekle kurulduğu ayrı sorulardır. Farklı kuruluşlar eylemin gerçekleşme biçimini bildiren aynı işlevi üstlenebilir.",
+        "Zarf-fiil, fiil tabanına belirli fiilimsi ekleri getirilerek kurulur; -arak/-erek bu eklerdendir. İsim tabanının ile veya onun ekleşmiş biçimiyle kullanılması, biçim anlamı verse de kendiliğinden zarf-fiil kuruluşuna dönüşmez."
+      ],
+      "strategy": "İki parçayı kök ve eklerine ayır. Köklerin ad mı fiil mi olduğunu saptadıktan sonra anlatma eylemiyle kurdukları ortak anlam ilişkisini, yapı farkından ayrı değerlendir.",
+      "steps": [
+        "Gülerek sözcüğünün tabanı gül- fiilidir; üzerine -erek zarf-fiil eki gelir. Parça anlatmanın nasıl yapıldığını açıklar.",
+        "Neşeyle, neşe adı ile ekleşmiş -yle biçiminden oluşur. Bu yapıda -erek eki veya fiil tabanı yoktur.",
+        "İşlev benzer, kuruluş farklıdır: Gülerek zarf-fiil; neşeyle isim kökenlidir. Her iki bilgiyi birlikte doğru veren dördüncü seçeneği seç."
+      ],
+      "optionReasons": [
+        "Gül- eylem köküdür; iki parçanın da mutlaka isim kökenli olduğu söylenemez.",
+        "Gül-erek açıkça fiil tabanı ve zarf-fiil eki taşır; iki cümlede de fiilimsi yoktur yargısı yanlıştır.",
+        "Neşeyle, neşe-erek biçiminde kurulmamıştır; -yle ile -erek farklı yapılardır.",
+        "Gülerek fiilden -erek ile, neşeyle ise isim kökenli bir yapıdan oluşur. Ortak biçim anlamı yapı farkını silmez.",
+        "İki parça da bir adı nitelemek yerine anlattı eyleminin biçimini açıklar; bu nedenle otomatik olarak niteleme sıfatı sayılamaz."
+      ],
+      "commonError": "Aynı cümle görevini üstlenen iki parçanın kök ve ek bakımından da aynı kuruluşta olması gerektiğini sanmak.",
+      "check": "Fiilimsi kararını yalnız nasıl sorusuyla verme; kök ve -erek ekini gerçekten gösterebildiğin parçayı belirle."
+    }
+  },
+  {
+    "id": "f011-adverb-10",
+    "identity": "[\"f011-adverb-10\",\"‘Ne bağırıyorsun?’ sorusu bu bağlamda açıkça ‘Niçin bağırıyorsun?’ anlamıyla söylenmiştir. Ne sözcüğünün görevi nedir?\",\"\",[\"Bağırılan nesnenin yerini tutan soru zamiri\",\"Açık bir adı niteleyen soru sıfatı\",\"Yalın yer-yön zarfı\",\"İki cümleyi bağlayan bağlaç\",\"Bağırmanın nedenini soran soru zarfı\"],4,\"Bağlam, ne sözcüğünü niçin anlamıyla sınırlandırmıştır; eylemin nedenini arayan soru zarfıdır. Bir nesnenin adını sormaz ve açık bir adın niteliğini belirtmez. Başka bir cümlede ne zamir veya sıfat olabilir; burada verilen anlamı esas almak gerekir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ne sözcüğü bağlama göre adın yerini tutabilir, açık bir adı belirtebilir veya eyleme yönelen soru kurabilir. Türünü saptarken yalnız sözlüğe değil, cümlede hangi bilgiyi aradığına bakılır.",
+        "Soru kökü bir anlamı açıkça sınırlandırdığında çözüm o anlamla yapılır. Neden bildiren bir yanıt, bir nesnenin adını veren yanıttan farklıdır; eylemin gerekçesini sormak ile eylemin nesnesini sormak ayrılmalıdır."
+      ],
+      "strategy": "Kökte açık verilen eş anlamlı soruyu esas al. O soruya verilebilecek kısa yanıtın nesne, nitelik, yön veya neden bildirmesini sınayıp sözcüğün görevini belirle.",
+      "steps": [
+        "Kök, Ne bağırıyorsun sözünün burada Niçin bağırıyorsun anlamında söylendiğini açıkça verir. Başka bir kullanım varsaymaya gerek yoktur.",
+        "Yanıt, örneğin birini çağırmak için biçiminde bağırmanın gerekçesini bildirebilir; aranan bilgi bir nesnenin adı değildir.",
+        "Eylemin nedenini soru yoluyla belirten ne, bu bağlamda soru zarfıdır. Beşinci seçeneği seç; anlamı niçin ile denetle."
+      ],
+      "optionReasons": [
+        "Kökteki niçin anlamı bir nesne adı aramaz; bu kullanım soru zamiri olarak değerlendirilemez.",
+        "Ne’nin belirttiği açık bir ad yoktur; sorulan bir varlığın niteliği değildir.",
+        "Niçin anlamı hareket yönünü değil bağırmanın gerekçesini sorar; yer-yön zarfı açıklaması uymaz.",
+        "Ne burada iki cümleyi birbirine bağlamaz; bağlaç görevi bulunmaz.",
+        "Kökün açık niçin koşuluyla ne, bağırma eyleminin nedenini sorar; soru zarfı açıklaması doğrudur."
+      ],
+      "commonError": "Ne’nin başka cümlelerde zamir olabildiğini hatırlayıp kökte açıkça verilen niçin anlamını göz ardı etmek.",
+      "check": "Ne yerine niçin yazdığında seçtiğin görev korunuyor mu? Yanıtın bir nesne değil eylemin nedeni olduğunu doğrula."
+    }
+  },
+  {
+    "id": "f11h-c01",
+    "identity": "[\"f11h-c01\",\"Bu kanıtların birlikte en doğrudan işaret ettiği hareket hangisidir?\",\"XV. yüzyılda İtalya'da sanatçılar Antik Yunan-Roma heykellerini inceliyor; resim ve edebiyatta insanın yeteneklerine duyulan ilgi artıyor.\",[\"Rönesans\",\"1848 Devrimleri\",\"Celâli hareketleri\",\"Sanayi Devrimi\",\"Islahat Fermanı\"],0,\"Klasik kültüre yöneliş ve İtalya'daki sanat canlanması Rönesansı tanımlar.1848 siyasal-sosyal taleplerle, Celâli Osmanlı taşrasıyla, Sanayi Devrimi makine ve fabrikayla, Islahat ise 1856 hukuk düzenlemesiyle ilgilidir; aynı değişim çevresinde anılmaları bu kanıtı karşılamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Avrupa’daki değişimler aynı alanda ve aynı zamanda gerçekleşmedi. Klasik Yunan-Roma mirasına ilgi, insanın yeteneklerini öne çıkaran düşünce ve sanat üretimindeki canlanma bir kültür bağlamı kurar. Hareketleri tanırken tarih ve coğrafya, faaliyet alanıyla birlikte kullanılmalıdır; yalnız yenilik sözcüğü yeterli değildir."
+      ],
+      "strategy": "Pasajdaki yüzyılı, başlangıç yerini ve değişen alanı üç ayrı ipucu olarak kaydet. Seçeneklerin din, sanat, üretim veya siyaset bağlamını bunların tümüyle karşılaştır.",
+      "steps": [
+        "Pasaj XV. yüzyıl İtalya’sını ve Yunan-Roma kültürüne artan ilgiyi birlikte verir. Bu, XIX. yüzyılın siyasal hareketlerinden farklı bir zaman ve çevredir.",
+        "İnsan yeteneklerinin ve sanatın canlanmasının vurgulanması, makine üretiminden veya Osmanlı hukuk düzenlemesinden çok kültürel yenilenmeye yöneltir.",
+        "Klasik miras, İtalya ve sanat canlanması birlikte Rönesansı karşılar. Diğer hareketler bu üç ipucunu aynı anda sağlamaz."
+      ],
+      "optionReasons": [
+        "Rönesans, İtalya’daki klasik kültüre yöneliş ve sanat canlanmasıyla örtüşür; yer, zaman ve faaliyet alanı birlikte karşılanır.",
+        "1848 Devrimleri XIX. yüzyılın siyasal ve toplumsal talepleriyle ilgilidir; XV. yüzyıl sanat bağlamını karşılamaz.",
+        "Celâli hareketleri Osmanlı taşrasındaki toplumsal ve siyasal sorunlarla ilgilidir; İtalya’daki klasik sanat canlanması değildir.",
+        "Sanayi Devrimini ayırt eden makineleşme ve fabrika üretimi pasajın temel kanıtları arasında değildir.",
+        "Islahat Fermanı 1856 tarihli Osmanlı hak ve hukuk düzenlemesidir; XV. yüzyıl İtalya’sındaki sanat hareketini adlandırmaz."
+      ],
+      "commonError": "Avrupa’daki bütün değişimleri tek bir ilerleme başlığı altında birleştirip tarih ve alan farklarını silmek.",
+      "check": "Seçtiğin hareket için hem İtalya hem klasik kültür hem sanat ipucunu açıklayabiliyor musun? Tek bir ortak yenilik sözcüğüne dayanma."
+    }
+  },
+  {
+    "id": "f11h-c02",
+    "identity": "[\"f11h-c02\",\"Bu metnin temel konusu hangisidir?\",\"Bir metinde XVI. yüzyıl Batı Avrupa'sında kilise uygulamalarının eleştirilmesi, Luther'in itirazları ve yeni Hristiyan mezheplerinin ortaya çıkması anlatılıyor.\",[\"Merkantilizm\",\"Reform\",\"Malikâne\",\"Tanzimat\",\"Bilimsel gösterim\"],1,\"Dinî otorite eleştirisi ve mezhep ayrışması Reformun belirleyici kanıtıdır. Merkantilizm ekonomi, malikâne vergi hakkı, Tanzimat XIX. yüzyıl Osmanlı hukuk düzeniyle ilgilidir. Bilimsel gösterim matematiksel yazım biçimidir; metindeki dinî dönüşümün adı değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Erken modern Avrupa’da kilisenin dinî yetkileri ve uygulamaları üzerine eleştiriler, mezhep ayrışmaları ve kurumlar arası yeni ilişkiler doğurdu. Bir metnin konusu belirlenirken eleştirilen kurum ve ortaya çıkan değişimin alanı birlikte incelenir. Dinî otoriteyle ilgili dönüşüm, dış ticaret politikası veya vergi toplama usulüyle aynı konu değildir."
+      ],
+      "strategy": "Pasajda eleştirinin yöneldiği kurumu ve değişimin sonucunu bul. Dönem ve kişi bilgisini bunlarla birleştirerek seçeneklerin konu alanlarını ayır.",
+      "steps": [
+        "Pasajda XVI. yüzyıl Batı Avrupa’sında kiliseye yönelik eleştiriler ve Luther adı bulunur. Değişimin merkezi dinî kurumdur.",
+        "Yeni mezheplerin oluşması, eleştirinin yalnız sanat zevki veya vergi tahsilatıyla sınırlı olmadığını gösterir.",
+        "Dinî otoritenin eleştirilmesi ve mezhep ayrışması Reformun konusudur. Metnin temel konusu olarak ikinci seçeneği seç."
+      ],
+      "optionReasons": [
+        "Merkantilizm ticaret ve değerli maden birikimiyle ilgili ekonomi yaklaşımıdır; kilise eleştirisi ve mezhep ayrışmasını adlandırmaz.",
+        "Reform, pasajdaki kilise eleştirileri, Luther ve yeni mezhepler bağlamını birlikte karşılar.",
+        "Malikâne Osmanlı vergi gelirini hayat boyu toplama hakkıyla ilgilidir; metindeki dinî dönüşümün adı değildir.",
+        "Tanzimat XIX. yüzyıl Osmanlı hak ve yönetim düzenlemesidir; XVI. yüzyıl Batı Avrupa’sındaki mezhep ayrışmasıyla karıştırılamaz.",
+        "Bilimsel gösterim sayıları yazma biçimidir; pasajın anlattığı dinî kurum ve mezhep ilişkileriyle ilgili bir hareket adı değildir."
+      ],
+      "commonError": "Değişim sözcüğünü tek başına yeterli sayıp değişen kurumun dinî mi, mali mi, hukuki mi olduğunu incelememek.",
+      "check": "Luther ve mezhep ayrışmasını seçtiğin kavramın alanıyla açıkla; yalnız Avrupa’da gerçekleşmesini gerekçe yapma."
+    }
+  },
+  {
+    "id": "f11h-c03",
+    "identity": "[\"f11h-c03\",\"Bu uygulamalar hangi ekonomi yaklaşımıyla en uyumludur?\",\"Bir devlet ihracatı destekliyor, ithalatı sınırlıyor ve hazinedeki değerli maden miktarını artırmayı amaçlıyor.\",[\"Devletin bütün ticaretten çekilmesi\",\"Bütün vergilerin kaldırılması\",\"Merkantilizm\",\"Tımarın özel mülkiyete dönüşmesi\",\"Genel oy hakkı\"],2,\"Merkantilizm devlet gücünü ticaret fazlası ve değerli maden birikimiyle desteklemeyi amaçlar. Devletin çekilmesi ve bütün vergilerin kaldırılması verilen korumacılıkla uyuşmaz. Tımarın mülkiyeti veya oy hakkı hakkında bu kanıttan sonuç çıkarılamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ekonomi yaklaşımlarını tanımak için devletin ticarete nasıl müdahale ettiği ve hangi sonucu hedeflediği birlikte okunur. İhracatın desteklenmesi dışarıya satışları, ithalatın sınırlandırılması dışarıdan alımları ilgilendirir. Erken modern devletler bu araçları hazine ve değerli maden birikimiyle ilişkilendirebilirdi; ekonomi politikası oy hakkı veya arazi mülkiyeti düzenlemesiyle aynı ölçüt değildir."
+      ],
+      "strategy": "İhracat, ithalat ve değerli maden hedefini birbirine bağla. Önce müdahalenin yönünü saptayıp sonra seçeneklerin aynı ekonomi amacını açıklayıp açıklamadığını sınayarak karar ver.",
+      "steps": [
+        "Pasajda ihracat desteklenirken ithalat sınırlandırılır; devlet ticaretin dışında kalmamakta, akışını yönlendirmektedir.",
+        "Bu araçlar ülkede değerli maden birikimini artırma hedefine bağlanır. Vergilerin tümden kaldırılması veya arazi satışı verilmemiştir.",
+        "Devlet müdahalesi, dış ticaret fazlası ve değerli maden birikimi merkantilist yaklaşımı karşılar. Üçüncü seçeneği seç."
+      ],
+      "optionReasons": [
+        "İhracatı desteklemek ve ithalatı sınırlamak devletin bütün ticaretten çekilmesi değil, ticarete müdahale etmesidir.",
+        "Pasajda bütün vergilerin kaldırıldığı yazmaz; ithalatı sınırlayan politika böyle bir genel sonuç gerektirmez.",
+        "Merkantilizm, devlet gücünü dış ticaret ve değerli maden birikimiyle artırma hedefiyle uyumludur.",
+        "Tımarın özel mülkiyete dönüşmesi arazi ve mülkiyet iddiasıdır; verilen dış ticaret araçlarından çıkarılamaz.",
+        "Genel oy hakkı siyasal katılımla ilgilidir; ihracat, ithalat ve maden birikimi onu kanıtlamaz."
+      ],
+      "commonError": "Bir ekonomi politikasını yalnız zenginleşme hedefiyle tanıyıp hedefe ulaşmak için kullanılan somut araçları atlamak.",
+      "check": "Seçtiğin yaklaşımda ihracat desteği ile ithalat sınırlamasının aynı hazine hedefine nasıl bağlandığını açıkla."
+    }
+  },
+  {
+    "id": "f11h-c04",
+    "identity": "[\"f11h-c04\",\"Diğer koşullar aynıyken doğrudan hangi sonuca ulaşılır?\",\"Bir askerin nominal maaşı değişmemiş, satın aldığı temel malların fiyatları yükselmiştir.\",[\"Askerin satın alma gücü artmıştır.\",\"Bütün vergiler kaldırılmıştır.\",\"Maaşın nominal tutarı azalmıştır.\",\"Aynı maaş daha az temel mal alabilir.\",\"Bütün fiyatlar eski düzeyine dönmüştür.\"],3,\"Fiyatlar yükseldiğinde sabit nominal maaşın alım gücü düşer. Nominal tutarın azaldığı söylenemez; metin değişmediğini açıkça veriyor. Vergiler veya fiyatların sonradan geri dönmesi hakkında veri yoktur. Alım gücü artışı, verilen fiyat yönüyle ters düşer.\"]",
+    "guidance": {
+      "knowledge": [
+        "Nominal ücret, maaşın para birimiyle yazılı tutarıdır; satın alma gücü aynı paranın alabildiği mal ve hizmet miktarıyla ilgilidir. Tek bir mal için alınabilecek miktar ücretin o malın fiyatına bölünmesiyle düşünülür. Ücret ve fiyat değişimleri ayrı izlenmelidir; para tutarını mal miktarıyla aynı gösterge saymak hatalıdır."
+      ],
+      "strategy": "Maaşın para tutarı ile temel malların fiyatını iki ayrı değişken olarak yaz. Kökteki diğer koşullar aynı sınırlamasını koruyup aynı parayla alınabilecek miktarı karşılaştır.",
+      "steps": [
+        "Pasaj maaşın nominal tutarının değişmediğini, temel malların fiyatlarının yükseldiğini verir. Maaş azaldı diye yeni bir veri ekleme.",
+        "Aynı maldan alınabilecek miktarda pay maaş, payda fiyattır. Pay sabitken pozitif fiyatın yükselmesi alınabilecek miktarı azaltır.",
+        "Doğrudan sonuç, aynı maaşın daha az temel mal alabilmesidir. Vergiler veya fiyatların daha sonra eskiye dönmesi için veri yoktur; dördüncü seçeneği seç."
+      ],
+      "optionReasons": [
+        "Temel mal fiyatları yükselirken sabit maaşla daha çok değil, daha az miktar alınabilir; alım gücü artışı ters yöndedir.",
+        "Vergilerin tümünün kaldırıldığına ilişkin bilgi yoktur; fiyat–maaş karşılaştırması bu kararı kanıtlamaz.",
+        "Nominal maaşın azaldığı pasajla çelişir; değişmediği açıkça verilmiştir.",
+        "Maaş aynı, temel mal fiyatları daha yüksek olduğundan aynı parayla alınabilecek miktar azalır; koşullu doğrudan sonuç budur.",
+        "Fiyatların sonradan eski düzeye döndüğü verilmemiştir; yalnız yükselme bilgisi vardır."
+      ],
+      "commonError": "Maaşın parasal sayısı değişmediğinde satın alma gücünün de zorunlu olarak değişmeyeceğini sanmak.",
+      "check": "Sonucunda para tutarı ile alınabilen mal miktarını ayrı adlandır. Maaşın düştüğünü söylemeden alım gücündeki yönü açıklayabilmelisin."
+    }
+  },
+  {
+    "id": "f11h-c05",
+    "identity": "[\"f11h-c05\",\"Anlatılan mali araç hangi seçenekte doğru tanımlanmıştır?\",\"Uzun savaşlarda ücretli asker ve lojistik giderleri artıyor. Hazine belirli vergi gelirini toplama hakkını yıllık bedel karşılığı bir mültezime veriyor.\",[\"Genel oyla vergi miktarını belirleme\",\"Araziyi mültezime sınırsız özel mülk olarak satma\",\"Ordunun bütün nakit giderlerini ortadan kaldırma\",\"Bir mezhep kurma\",\"İltizam yoluyla vergi toplama hakkını devretme\"],4,\"İltizam belirli vergi gelirini toplama hakkının bedel karşılığında verilmesidir. Arazi mülkiyetinin devri değildir. Askerî giderleri ortadan kaldırmaz, bunları finanse etme arayışıdır. Oy hakkı ve mezhep kurulması verilen mali işlemle ilgili değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Osmanlı maliyesinde nakit ihtiyacı, bazı vergi gelirlerini tahsil etme hakkının bir bedel karşılığında kişilere verilmesiyle karşılanabiliyordu. Geliri toplama hakkı ile toprağın mülkiyeti ayrı hukuki konulardır. Bir finansman aracı gideri karşılamaya çalışır; giderin kendisini otomatik olarak ortadan kaldırmaz."
+      ],
+      "strategy": "Hazineye yapılan ödeme, devredilen hak ve hakkı alan kişi arasındaki ilişkiyi kur. Seçeneklerde vergi tahsilatı yerine mülkiyet, siyasal katılım veya din alanına kayanları ayır.",
+      "steps": [
+        "Pasajda artan asker ve lojistik giderleri nakit ihtiyacını açıklar. Hazineye yıllık bedel ödeyen taraf mültezimdir.",
+        "Devredilen şey belirli vergi gelirini toplama hakkıdır. Araziyi sınırsız özel mülk olarak satın alma işlemi anlatılmaz.",
+        "Bu tahsil hakkı devri iltizamdır. Beşinci seçeneği seç; mali aracın ordu giderlerini yok etmediğini, finanse etmeye yönelik olduğunu koru."
+      ],
+      "optionReasons": [
+        "Halkın genel oyla vergi belirlemesi pasajda yoktur; verilen işlem hazine ile tahsil hakkını alan kişi arasındadır.",
+        "Vergi toplama hakkını almak araziyi sınırsız özel mülk olarak satın almak değildir.",
+        "Askerî giderler bu araca duyulan ihtiyacın nedenidir; araç bunların tamamını ortadan kaldırmaz.",
+        "Mezhep kurulması dinî alana aittir; hazineye ödeme ve vergi tahsilatı ilişkisini açıklamaz.",
+        "Hazineye bedel karşılığında vergi toplama hakkının mültezime verilmesi iltizamı tanımlar; devredilen hak doğru belirtilmiştir."
+      ],
+      "commonError": "Vergi gelirini toplama hakkını toprağın mülkiyetiyle eşitlemek veya finansman arayışını giderin yok olması saymak.",
+      "check": "Devletin devrettiği şeyin adını gelir toplama hakkı olarak yaz. Seçtiğin açıklama buna arazi satışı gibi ek bir işlem yüklüyor mu?"
+    }
+  },
+  {
+    "id": "f11h-c06",
+    "identity": "[\"f11h-c06\",\"Bu tanıma en uygun kavram hangisidir?\",\"Bir uygulamada belirli vergi gelirini toplama hakkı, bedel ve yükümlülükler karşılığında kişinin hayatı boyunca veriliyor.\",[\"Malikâne\",\"Reform\",\"Mebusan\",\"Ayan Meclisi\",\"Kura askerliğinin bütünüyle kaldırılması\"],0,\"Hayat boyu vergi toplama hakkı malikâne düzenini ayırt eder. Bu hak toprağın sınırsız özel mülkiyetiyle aynı değildir. Reform dinî dönüşüm; Mebusan ve Ayan anayasal meclislerdir. Askerlik kurası hakkında verilen cümlede hiçbir karar yoktur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Vergi gelirini toplama düzenleri incelenirken yalnız gelirin kaynağına değil, hakkın hangi süreyle verildiğine de bakılır. Sınırlı süreli bir sözleşme ile kişinin yaşamı boyunca süren hak aynı düzenleme değildir. Tahsil hakkının süresi, arazi mülkiyetinin sınırsız devredildiğini veya hakkın kendiliğinden miras kaldığını göstermez."
+      ],
+      "strategy": "Tanımdaki hak ile süreyi ayrı kaydet. Hayat boyu ifadesinin hangi mali düzeni ayırdığını seçeneklerde araştır; meclis, din ve askerlik kavramlarını aynı alana karıştırma.",
+      "steps": [
+        "Verilen tanım bir vergi toplama hakkına ilişkindir; konuyu meclis üyeliği veya mezhep değişimi olarak okumamak gerekir.",
+        "Ayırt edici sınır, hakkın bir kişinin yaşamı boyunca verilmesidir. Bu, yalnız vergi tahsil edildiği bilgisinden daha özgül bir ölçüttür.",
+        "Hayat boyu vergi toplama hakkı malikâne düzenine karşılık gelir. İlk seçeneği seç; sınırsız arazi mülkiyeti sonucunu ekleme."
+      ],
+      "optionReasons": [
+        "Malikâne, vergi toplama hakkının kişinin yaşamı boyunca verilmesi özelliğiyle tanıma uyar.",
+        "Reform Avrupa’daki dinî dönüşümle ilgilidir; vergi toplama hakkının süresini adlandırmaz.",
+        "Mebusan anayasal meclisin seçimle oluşan kanadıdır; mali tahsil hakkı değildir.",
+        "Ayan Meclisi üyelik ve yasama düzeniyle ilgilidir; tanımdaki vergi geliri hakkını karşılamaz.",
+        "Askerlik kurasının bütünüyle kaldırılması hakkında bilgi yoktur; tanım yalnız vergi hakkının süresini verir."
+      ],
+      "commonError": "Mali düzenin ayırıcı hayat boyu sınırını görmeyip meclis veya askerlik kavramlarını yalnız aynı dönemden oldukları için seçmek.",
+      "check": "Yanıtını hem vergi toplama hakkı hem yaşam süresi ifadeleriyle gerekçelendir; yalnız birini karşılayan genel çağrışımla yetinme."
+    }
+  },
+  {
+    "id": "f11h-c07",
+    "identity": "[\"f11h-c07\",\"Bu kanıttan çıkarılabilecek en ölçülü yorum hangisidir?\",\"Taşrada güvenlik bozuluyor; vergiler ve uzun savaşların yükü artıyor. Köylüler üretim alanlarını terk ederek daha güvenli yerlere göç ediyor.\",[\"Göçün tek nedeni mezhep değişimidir.\",\"Güvenlik ve ekonomik baskı üretim ile yerleşimi birlikte etkilemiştir.\",\"Bütün köylüler aynı gün fabrika işçisi olmuştur.\",\"Tarım gelirleri kesin olarak artmıştır.\",\"Savaşın taşraya hiçbir etkisi olmamıştır.\"],1,\"Güvenlik ve mali baskının köylünün yer değiştirmesine, dolayısıyla üretim alanının terkine etkisi doğrudan desteklenir. Tek dinî neden veya herkesin fabrika işçiliğine geçmesi metinde yoktur. Tarım gelirinin kesin artışı ile savaşın etkisizliği verilen zincirle çelişir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Göç, üretim ve güvenlik birbirini etkileyen süreçlerdir. Güvensizlik yerleşimde kalmayı zorlaştırabilir; mali yükler de üreticinin geçimini etkileyebilir. Tarihsel bir çıkarımda pasajın verdiği nedenler birlikte korunur; sınırlı bir gözlemi bütün insanları kapsayan tek nedenli veya ani dönüşüm iddiasına çevirmek için ek kanıt gerekir."
+      ],
+      "strategy": "Önce göçe bağlanan baskıları ayır, sonra yer değiştirenlerin üretimle ilişkisini izle. Seçeneklerin tek neden, herkes veya hiçbir etki gibi kapsam ekleyip eklemediğini denetle.",
+      "steps": [
+        "Pasaj köylünün yaşadığı güvenlik sorunlarını ve vergi yükünü birlikte verir. Bunları yalnız dinî nedene indirmek verilen zinciri daraltır.",
+        "Köylünün yerleşimini terk etmesi üretim alanından da ayrılması anlamına gelir. Böylece baskılar hem yerleşimi hem üretim sürekliliğini etkiler.",
+        "Desteklenen yorum güvenlik ve ekonomik baskının üretim ile yerleşime ortak etkisidir. İkinci seçeneği seç; herkesin aynı yeni mesleğe geçtiğini ekleme."
+      ],
+      "optionReasons": [
+        "Göç için mezhep değişimi verilmez; üstelik pasaj güvenlik ve mali baskı olmak üzere birden fazla etken sunar.",
+        "Güvenlik sorunları ve vergi baskısı köylünün yer değiştirmesine ve üretim alanını terk etmesine bağlanır; yorum kanıtın iki yönünü de korur.",
+        "Bütün köylülerin aynı gün fabrika işçisi olduğu yazmaz; göç bilgisi böyle bir toplu meslek değişimini kanıtlamaz.",
+        "Tarım gelirinin kesin artışı verilmemiştir; üretim alanının terkinden böyle bir sonuç zorunlu olarak çıkmaz.",
+        "Savaş ve güvenlik baskısının taşrayla ilişkisi açıkça verilir; hiçbir etki olmaması bu ilişkiyi reddeder."
+      ],
+      "commonError": "Bir göç olayını tek etkene indirgemek veya yer değiştirmeyi bütün göçmenlerin aynı mesleğe geçtiği bilgisine dönüştürmek.",
+      "check": "Yorumunda hem güvenlik hem mali yük görünür mü? Pasajın söylemediği meslek, tarih veya gelir sonucunu eklemediğini kontrol et."
+    }
+  },
+  {
+    "id": "f11h-c08",
+    "identity": "[\"f11h-c08\",\"Bu belgenin tek başına destekleyebileceği sonuç hangisidir?\",\"Bir Osmanlı yazarı yöneticilere rapor sunarak kurumlarda gördüğü sorunları ve bunların nasıl giderilebileceğini anlatıyor. Uygulamanın sonucuna ilişkin kayıt verilmiyor.\",[\"Bütün öneriler eksiksiz uygulanmıştır.\",\"Toplumdaki bütün anlaşmazlıklar bitmiştir.\",\"Sorun teşhisi ve çözüm arayışı vardır.\",\"Rapor ilk Osmanlı anayasasıdır.\",\"Devlet görevlileri artık rapor yazmamıştır.\"],2,\"Raporun varlığı teşhis ve öneri üretildiğini gösterir. Uygulama ve başarı hakkında ek kayıt olmadığı için ilk iki mutlak sonuç çıkarılamaz. Her rapor anayasa değildir; bu rapordan sonra hiç rapor yazılmadığı da kanıtlanmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Raporlar, yazarının gözlemleri ile çözüm önerilerini gösterebilir. Bir önerinin yazılması, karar alınması, uygulanması ve başarıya ulaşması farklı kanıt düzeyleridir. Uygulama için icra kaydı, sonuç için de ilgili gözlem gerekir; belgenin varlığını bütün bu aşamaların gerçekleştiği kanıtı saymamak gerekir."
+      ],
+      "strategy": "Belgede yazılı olan teşhis ve önerileri, bunların uygulanmasına dair kayıtlarla ayrı değerlendir. Seçeneklerde belgenin türüne veya sonrasına ilişkin kanıtsız eklemeleri bul.",
+      "steps": [
+        "Verilen belge sorunları sıralayıp yapılmasını uygun gördüğü düzenlemeleri önerir. Bunlar raporun doğrudan içeriğidir.",
+        "Kökte önerilerin uygulanıp uygulanmadığını bildiren kayıt bulunmadığı belirtilir. Tam uygulama ve bütün sorunların bitmesi bu yüzden kanıtlanmaz.",
+        "Belgenin tek başına desteklediği sonuç sorun teşhisi ve çözüm arayışının varlığıdır. Üçüncü seçeneği seç; öneriyi gerçekleşmiş başarıya dönüştürme."
+      ],
+      "optionReasons": [
+        "Önerilerin yazılmış olması hepsinin eksiksiz uygulandığını göstermez; uygulama kaydı ayrıca gerekir.",
+        "Bütün anlaşmazlıkların sona ermesi bir sonuç iddiasıdır; raporun önerileri böyle kapsamlı bir başarı kanıtı değildir.",
+        "Rapor sorunları tanımlar ve çözüm önerir; teşhis ile çözüm arayışı doğrudan belge içeriğiyle desteklenir.",
+        "Raporun anayasa olduğu verilmemiştir; her düzenleme önerisi anayasa niteliği taşımaz.",
+        "Bir raporun varlığı, görevlilerin daha sonra hiç rapor yazmadığını kanıtlayamaz."
+      ],
+      "commonError": "Önerildi, uygulandı ve başarılı oldu aşamalarını tek bir olay gibi okuyarak rapora gerçekleşmiş sonuç yüklemek.",
+      "check": "Seçtiğin sonuç için raporun hangi cümlesi yeterli? Yeni bir uygulama veya başarı kaydı gerektiriyorsa belgenin kanıt sınırını aşmışsındır."
+    }
+  },
+  {
+    "id": "f11h-c09",
+    "identity": "[\"f11h-c09\",\"Bu iki bilgiyi birlikte koruyan yorum hangisidir?\",\"1727'de İbrahim Müteferrika ve Said Efendi'nin Türkçe eser basan matbaa girişimi anlatılıyor; Osmanlı ülkesinde daha önce gayrimüslim matbaaları da bulunuyordu.\",[\"1727'den önce ülkede hiçbir basım faaliyeti yoktu.\",\"Müteferrika ilk Osmanlı anayasasını basmıştır.\",\"Bütün el yazması üretimi aynı gün bitmiştir.\",\"Girişimin önemi dil, kurucu çevre ve eser basımı bağlamında açıklanmalıdır.\",\"Matbaa dinî mezhep ayrılığını ortadan kaldırmıştır.\"],3,\"Verilen bilgi 1727 girişiminin özel bağlamını açıklamayı gerektirir; onu ülkedeki her tür basımın ilk örneği yapmak önceki matbaaları siler. Anayasa, el yazmasının bitişi ve mezheplerin birleşmesi hakkında hiçbir kanıt verilmemiştir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tarihsel ilk olma iddiaları coğrafya, dil, kurucu çevre ve faaliyet türü bakımından sınırlandırılmalıdır. Bir ülkedeki belirli dil veya çevrede başlayan basım faaliyeti, o ülkede daha önce başka dil ve topluluklarda basım yapılmadığını göstermez. Yeni bir üretim aracının ortaya çıkması da eski aracın bütün kullanımını aynı anda bitirmez."
+      ],
+      "strategy": "İki bilgideki basım faaliyetlerini dil, kurucu ve tarih bakımından karşılaştır. İkinci bilgiyle çelişen genel ilk iddialarını ayırıp iki kaydı birlikte koruyan yorumu bul.",
+      "steps": [
+        "İlk bilgi 1727’de Müteferrika ve Said Efendi çevresindeki Türkçe basım girişimini verir. Girişimin özgül kapsamı vardır.",
+        "İkinci bilgi daha önceki gayrimüslim matbaalarını hatırlatır. Bu kayıt, 1727’yi ülkedeki her tür basımın ilk örneği saymayı engeller.",
+        "İki bilgiyi koruyan yorum, önemi dil, kurucu çevre ve basılan eserler üzerinden açıklamaktır. Dördüncü seçeneği seç; önceki matbaaları silme."
+      ],
+      "optionReasons": [
+        "Önceki gayrimüslim matbaaları açıkça verildiği için 1727 öncesinde hiçbir basım yapılmadığı söylenemez.",
+        "İlk Osmanlı anayasasının basıldığına ilişkin bilgi yoktur; girişimin tarihi ve eser bağlamından böyle bir sonuç çıkmaz.",
+        "El yazması üretiminin aynı gün bütünüyle bittiği verilmemiştir; iki üretim biçimi bir süre birlikte var olabilir.",
+        "Girişimin dil, kurucu çevre ve eser bağlamını belirtmek hem 1727 kaydını hem daha önceki matbaaları korur.",
+        "Matbaanın mezhep ayrılıklarını ortadan kaldırdığına ilişkin bir kanıt verilmez."
+      ],
+      "commonError": "Belirli bir dil veya çevre için anlamlı başlangıcı, ülkedeki bütün basım türlerinin mutlak başlangıcı sanmak.",
+      "check": "Yorumunu okuduğunda 1727’den önceki matbaalar hâlâ mümkün mü? İki kaydı da korumuyorsa ilk olma kapsamını yeniden daralt."
+    }
+  },
+  {
+    "id": "f11h-c10",
+    "identity": "[\"f11h-c10\",\"Bu tanımdan hangi sonuç çıkarılamaz?\",\"Sekülerleşme, siyasal ve toplumsal karar alanlarının yalnız dinî otoriteye bağlı olmaktan uzaklaşması olarak tanımlanıyor.\",[\"Karar alanları farklılaşabilir.\",\"Dinî otoritenin siyasal konumu değişebilir.\",\"Süreç farklı yerlerde farklı hızlarda yaşanabilir.\",\"Din ile devlet hukukunun ilişkisi tartışılabilir.\",\"Toplumdaki bütün dinî inançlar zorunlu olarak yok olur.\"],4,\"Sekülerleşmenin bu tanımı karar alanlarının ilişkisini anlatır; bütün insanların inançlarının yok olması sonucunu içermez. Diğer seçenekler alanların farklılaşması ve sürecin tarihsel değişkenliğiyle uyumludur.‘Bütün’ ve ‘zorunlu’ sözcükleri kanıtta olmayan bir kesinlik ekler.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sekülerleşme tarihsel incelemede kurumların, hukuk alanlarının ve karar yetkilerinin ilişkilerindeki değişimler üzerinden ele alınabilir. Kurumsal yetki ile bireyin inancı aynı inceleme düzeyi değildir. Bir süreç tanımından sonuç çıkarırken kimleri, hangi alanı ve hangi zorunluluk derecesini kapsadığına bakılır; olabilir ile bütün kişiler için zorunludur aynı iddia değildir."
+      ],
+      "strategy": "Tanımdaki karar ve hukuk alanını belirle. Her seçeneğin öznesini ve kesinlik derecesini karşılaştır; özellikle kurum düzeyindeki ilişkiden bütün bireylere geçiş yapılıp yapılmadığını sınayarak ilerle.",
+      "steps": [
+        "Tanım, dinî ve siyasal karar alanlarının ilişkisini ele alır. Dolayısıyla yetki ve hukuk ilişkilerindeki farklılaşmalarla ilgilidir.",
+        "Bu kurumsal ilişki, her kişinin dinî inancının ne olacağını belirleyen bir zorunluluk içermez. Her yerde aynı hızda ilerleme koşulu da verilmez.",
+        "Bütün dinî inançların zorunlu olarak yok olması tanımın kapsamını aşar. Çıkarılamayan sonucu isteyen kökte beşinci seçeneği seç."
+      ],
+      "optionReasons": [
+        "Karar alanlarının farklılaşabilmesi tanımdaki kurumsal ilişki değişimiyle uyumludur.",
+        "Dinî otoritenin siyasal konumunun değişebilmesi karar yetkilerinin ilişkisi içinde değerlendirilebilir.",
+        "Tanım bütün yerler için tek hız dayatmaz; tarihsel sürecin farklı hızlarda yaşanabilmesiyle çelişmez.",
+        "Din ve devlet hukukunun ilişkisini tartışmak, tanımda belirtilen karar alanlarıyla ilgilidir.",
+        "Kurumsal yetki ilişkisi, bütün insanların dinî inançlarının zorunlu olarak yok olması sonucunu içermez; bu mutlak iddia çıkarılamaz."
+      ],
+      "commonError": "Kurumların yetki ilişkilerindeki değişimi, toplumdaki her bireyin inancı hakkında zorunlu bir sonuca çevirmek.",
+      "check": "Seçeneğin kurumlara mı bütün kişilerin inancına mı hükmettiğini söyle. Olumsuz kökte uyumlu olasılığı değil, tanımı aşan zorunluluğu seçtiğini denetle."
+    }
+  },
+  {
+    "id": "f11h-r01",
+    "identity": "[\"f11h-r01\",\"Belgenin türü ve adı hangi seçenekte doğru verilmiştir?\",\"1808 tarihli bir belgede merkezî yönetim ile bazı ayanların birbirlerine karşı yükümlülükleri düzenleniyor.\",[\"Sened-i İttifak: merkez–ayan uzlaşması\",\"Kanun-ı Esasi: ilk Osmanlı anayasası\",\"Paris Antlaşması: Avrupa garantisi\",\"Islahat Fermanı:1856 düzenlemesi\",\"Tanzimat Fermanı:1839 güvence ilanı\"],0,\"1808'deki merkez–ayan uzlaşması Sened-i İttifaktır. Kanun-ı Esasi 1876 anayasasıdır; Paris ve Islahat 1856, Tanzimat 1839 bağlamındadır. Hak veya yetki konulu olmaları belgeleri aynı hukuki tür veya aynı tarih yapmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Osmanlı yönetiminde ayanlar taşrada yerel güç ve nüfuz sahibi kişilerdi; merkezî yönetimle ilişkileri güvenlik, vergi ve otorite konularını etkileyebilirdi. Belgeleri ayırt ederken tarihi, tarafları ve düzenlediği ilişki birlikte okunur. Taraflar arasında yükümlülük belirleyen bir uzlaşma, bütün devlet kurumlarını düzenleyen anayasa veya devletler arası antlaşmayla aynı tür değildir."
+      ],
+      "strategy": "1808 tarihini, belgenin iki tarafını ve karşılıklı yükümlülük konusunu birlikte kullan. Her seçeneğin türünü ve dönemini bu üç ölçütle sınayarak ilerle.",
+      "steps": [
+        "Belgenin tarafları merkezî yönetim ile bazı ayanlardır; dolayısıyla devletler arası toprak barışı veya Avrupa garantisi anlatılmamaktadır.",
+        "Karşılıklı yükümlülüklerin 1808’de düzenlenmesi, merkez–ayan uzlaşması bağlamını verir. Anayasanın ilanı ve XIX. yüzyılın sonraki fermanlarıyla tarih aynı değildir.",
+        "Bu tarih ve taraflar Sened-i İttifakı tanımlar. Adı ve merkez–ayan uzlaşması türünü birlikte doğru veren ilk seçeneği seç."
+      ],
+      "optionReasons": [
+        "1808’de merkezî yönetim ile ayanların yükümlülüklerini düzenleyen uzlaşma Sened-i İttifaktır; ad ve tür birlikte doğrudur.",
+        "Kanun-ı Esasi 1876 tarihli anayasal çerçevedir; 1808’deki merkez–ayan uzlaşmasının adı değildir.",
+        "Paris Antlaşması 1856’da devletler arası hukuk ve güvence bağlamındadır; tarafları merkez ile ayanlar değildir.",
+        "Islahat Fermanı 1856 hak ve eşitlik düzenlemesidir; verilen tarih ve karşılıklı yerel güç ilişkisiyle uyuşmaz.",
+        "Tanzimat Fermanı 1839’da güvence ve düzen ilkelerini ilan eder; 1808 belgesinin adı değildir."
+      ],
+      "commonError": "Hak ve yetkiyle ilgili her belgeyi aynı anayasal metin sanarak tarih, taraf ve hukuki tür ayrımını atlamak.",
+      "check": "Seçtiğin belgenin iki tarafını söyle ve tarihini denetle. Yalnız reform sözcüğünün ortak olması yeterli değildir."
+    }
+  },
+  {
+    "id": "f11h-r02",
+    "identity": "[\"f11h-r02\",\"Bu metin hangisidir?\",\"1839'da ilan edilen bir metin can, mal ve namus güvenliğini; vergi ve askerlik işlerinin düzenli kurallara bağlanmasını vurguluyor.\",[\"Berlin Antlaşması\",\"Tanzimat Fermanı\",\"Sened-i İttifak\",\"Brest-Litovsk Antlaşması\",\"1841 Londra Boğazlar Sözleşmesi\"],1,\"1839'daki güvence ve düzen ilkeleri Tanzimat Fermanını tanımlar. Sened-i İttifak 1808 merkez–ayan uzlaşması, Berlin 1878 dış siyaset, Brest-Litovsk 1918 savaşın doğu düzeni, Londra 1841 Boğazlar statüsüyle ilgilidir. Ortak devlet konusu, belge farkını ortadan kaldırmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ferman, padişahın ilan ettiği bir düzenleme biçimidir. XIX. yüzyıldaki hak güvenceleri incelenirken metnin hangi güvenlikleri ve kamusal yükümlülükleri düzenlediğine bakılır. Can ve malın korunması, vergi tahsili ile askerlik işlerinin kurala bağlanması iç yönetim alanındadır; bunlar dış sınır veya boğaz geçişi düzenleyen antlaşmalarla aynı konu değildir."
+      ],
+      "strategy": "Tarih ile güvence verilen hakları eşleştir; vergi ve askerlik düzeniyle aynı metinde bulunup bulunmadıklarını denetle. Dış antlaşmaları konu farkıyla ayır.",
+      "steps": [
+        "Pasaj 1839 tarihini ve can, mal, namus güvenliğini birlikte verir. İlk ayırt edici kayıt tarih ile güvence içeriğidir.",
+        "Vergi ve askerlik işlerinin düzenli kurallara bağlanması da iç yönetim düzenlemesini tamamlar; Boğazlar veya dış savaş barışı konusu değildir.",
+        "Bu içerik 1839 Tanzimat Fermanını karşılar. İkinci seçeneği seç; güvence ilanını bütün uygulamaların anında tamamlanmasıyla eşitleme."
+      ],
+      "optionReasons": [
+        "Berlin Antlaşması 1878 dış siyaset ve toprak düzeniyle ilgilidir; 1839 iç güvence metni değildir.",
+        "Tanzimat Fermanı, 1839 tarihi ile can, mal, namus güvencesi ve vergi–askerlik düzeni ipuçlarını birlikte karşılar.",
+        "Sened-i İttifak 1808’de merkez–ayan yükümlülükleriyle ilgilidir; verilen hak güvenceli fermanın adı değildir.",
+        "Brest-Litovsk 1918 savaş ve barış bağlamındadır; 1839’daki Osmanlı iç düzenlemesiyle uyuşmaz.",
+        "1841 Londra Boğazlar Sözleşmesi Boğazlardan geçiş statüsünü düzenler; can ve mal güvenliği fermanı değildir."
+      ],
+      "commonError": "Farklı reform belgelerindeki ortak düzenleme amacını, tarih ve içeriğin de aynı olduğu biçiminde yorumlamak.",
+      "check": "Yanıtını yalnız 1839 sayısıyla değil, metindeki hak güvencesi ve kamusal yükümlülük çiftiyle de doğrula."
+    }
+  },
+  {
+    "id": "f11h-r03",
+    "identity": "[\"f11h-r03\",\"Bu belge hangisidir?\",\"1856 tarihli bir ferman özellikle gayrimüslimlerin eğitim, kamu görevi, ibadet ve hukuk alanlarındaki durumunu eşitlik ilkesiyle düzenlemeye yöneliyor.\",[\"1876 Kanun-ı Esasi\",\"1808 Sened-i İttifak\",\"Islahat Fermanı\",\"1699 Karlofça\",\"1918 Mondros\"],2,\"1856 Islahat Fermanı bu hak ve eşitlik düzenlemesini öne çıkarır. Kanun-ı Esasi anayasal çerçeve, Sened-i İttifak merkez–ayan ilişkisi, Karlofça toprak barışı, Mondros ateşkestir. Eşitlik ilkelerinin bulunması bütün sonuçların aynı gün gerçekleştiği anlamına da gelmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Osmanlı’da hukuk ve toplumsal statü düzenlemeleri, farklı dinî toplulukların eğitim, ibadet ve kamu görevlerine katılma koşullarını konu edinebilirdi. Bir hak düzenlemesini tanırken tarih ile kapsadığı kişiler ve alanlar birlikte incelenir. Eşitlik ilkesinin ilan edilmesi, bütün uygulama sorunlarının aynı gün ortadan kalktığına tek başına kanıt değildir."
+      ],
+      "strategy": "1856 tarihini ve özellikle düzenlenen topluluğu kaydet. Eğitim, kamu görevi, ibadet ve hukuk başlıklarını seçeneklerin belge türleriyle karşılaştır.",
+      "steps": [
+        "Pasajdaki belge bir fermandır ve tarihi 1856’dır. Bu iki bilgi anayasa, barış veya ateşkes türlerinden ayrılmasına yardım eder.",
+        "Gayrimüslimlerin çeşitli alanlardaki durumunun eşitlik ilkesiyle düzenlenmesi metnin ayırt edici kapsamıdır.",
+        "Bu tarih ve kapsam Islahat Fermanını tanımlar. Üçüncü seçeneği seç; belgenin hedefini uygulamanın tüm sonuçlarıyla karıştırma."
+      ],
+      "optionReasons": [
+        "1876 Kanun-ı Esasi anayasal yönetim çerçevesidir; verilen 1856 fermanının tarihi ve türüyle uyuşmaz.",
+        "1808 Sened-i İttifak merkez–ayan ilişkisini düzenler; gayrimüslim haklarına ilişkin 1856 fermanı değildir.",
+        "Islahat Fermanı 1856’da özellikle gayrimüslimlerin hak ve statülerini eşitlik bağlamında düzenler; bütün belirleyici ipuçları örtüşür.",
+        "1699 Karlofça devletler arası barış ve toprak düzenlemesidir; eğitim ve ibadet hakları fermanı değildir.",
+        "1918 Mondros bir ateşkestir; verilen hak ve eşitlik düzenlemesinin tarihiyle ve türüyle uyuşmaz."
+      ],
+      "commonError": "Bir belgenin eşitliği amaçlamasından hareketle bütün topluluklar için bütün sonuçların hemen gerçekleştiğini eklemek.",
+      "check": "Seçtiğin adı tarih, ferman türü ve gayrimüslim hakları kapsamıyla üç kez denetle; yalnız genel yenilik niteliğiyle yetinme."
+    }
+  },
+  {
+    "id": "f11h-r04",
+    "identity": "[\"f11h-r04\",\"Bu bilgilerden hangi yorum çıkarılır?\",\"1876 düzeninde Ayan üyelerini padişah atıyor, Mebusan seçimle oluşuyor. Seçim usulü dolaylı ve katılım koşulları sınırlıdır.\",[\"İki meclisin bütün üyeleri doğrudan genel oyla seçilir.\",\"Hükümdarlık kaldırılmıştır.\",\"Ayan ile Mebusan aynı oluşum yoluna sahiptir.\",\"Atama ve seçimle oluşan temsil unsurları birlikte bulunmaktadır.\",\"Ülkede hiçbir temsil kurumu yoktur.\"],3,\"Verilen yapı atama ile seçim unsurlarını bir arada bulundurur. Genel ve doğrudan oy iddiası açık koşullarla çelişir; hükümdarlığın kaldırıldığı söylenmez. İki oluşum yolu farklıdır ve Mebusanın varlığı temsil kurumunun bulunmadığı iddiasını da geçersiz kılar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir meclisin nasıl oluştuğu, üyelerini kimin ve hangi usulle belirlediğiyle anlaşılır. Atama, dolaylı seçim ve doğrudan seçim farklı yollardır; seçim bulunması tek başına genel oy hakkını göstermez. Bir sistemde hükümdarın, atanmış üyelerin ve seçimle belirlenmiş temsilcilerin konumları birlikte incelenebilir."
+      ],
+      "strategy": "Ayan ve Mebusan için üyeyi belirleyen tarafı ayrı yaz. Seçimin dolaylı ve sınırlı olması koşullarını koruyarak seçeneklerdeki genel oy, aynı usul veya temsil yokluğu iddialarını sınayarak karar ver.",
+      "steps": [
+        "Ayan üyelerini padişah belirlemektedir; bu kanadın oluşum yolu atamadır.",
+        "Mebusan seçimle oluşur; fakat seçim dolaylıdır ve katılım koşulları sınırlıdır. Bu bilgi doğrudan genel oy iddiasını dışlar.",
+        "Yapıda atama ile seçim unsurları birlikte bulunur. Dördüncü seçeneği seç; hükümdarlığın sona erdiğini veya temsilin hiç bulunmadığını ekleme."
+      ],
+      "optionReasons": [
+        "Ayan üyeleri atanır; ayrıca Mebusan seçimi dolaylı ve sınırlıdır. Bütün üyeler için doğrudan genel oy denemez.",
+        "Padişahın atama yetkisi açıkça verilmektedir; hükümdarlığın kaldırıldığı bilgisi yoktur.",
+        "Ayan atamayla, Mebusan seçimle oluşur; oluşum yolları aynı değildir.",
+        "Atanmış Ayan ile seçimle belirlenmiş Mebusan aynı yapıda yer alır; iki unsurun birlikte bulunduğu yorumu doğrudur.",
+        "Mebusanın seçimle oluşması temsil unsurunun varlığına kanıttır; hiçbir temsil kurumu yoktur denemez."
+      ],
+      "commonError": "Seçim sözcüğünü görünce katılım koşullarını incelemeden bütün halkın doğrudan oy kullandığını varsaymak.",
+      "check": "Her kanadın oluşum yolunu tek cümleyle söyle. Seçtiğin yorum hem atama bilgisini hem sınırlı dolaylı seçimi koruyor mu?"
+    }
+  },
+  {
+    "id": "f11h-r05",
+    "identity": "[\"f11h-r05\",\"Bu yönetim biçimi hangi kavramla en doğrudan tanımlanır?\",\"Bir ülkede hükümdar görevini sürdürüyor, anayasa ve meclis onun yetkilerini belirli kurallarla sınırlıyor.\",[\"Mutlak biçimde meclissiz hanedan yönetimi\",\"Her durumda cumhuriyet\",\"İltizam\",\"Fiziksel sömürge yönetimi\",\"Meşrutiyet\"],4,\"Meşrutiyette hükümdarlık sürerken anayasa ve meclis çerçevesi vardır. Bu yüzden doğrudan cumhuriyet değildir; meclissiz mutlak yönetimle de uyuşmaz. İltizam mali araç, sömürge yönetimi farklı siyasi ilişki türüdür; verilen hukuk yapısını tanımlamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yönetim biçimleri hükümdarın varlığı, yetkinin kaynağı ve bu yetkiyi sınırlayan kurumlar üzerinden karşılaştırılır. Hükümdarın görevini sürdürmesi ile sınırsız yetki sahibi olması aynı şey değildir. Anayasa ve meclis, yönetimin hukuki çerçevesini belirleyebilir; vergi tahsil usulleri ise ayrı bir mali konudur."
+      ],
+      "strategy": "Hükümdarın sürmesini ve yetkilerinin anayasa–meclis çerçevesine bağlanmasını iki koşul olarak birlikte tut. Her kavramın ikisini birden karşılayıp karşılamadığına bak.",
+      "steps": [
+        "Kök hükümdarın görevini sürdürdüğünü açıkça verir. Bu yüzden yalnız anayasa veya meclis var diye doğrudan cumhuriyet sonucuna geçilemez.",
+        "Aynı kökte anayasa ve meclis hükümdarın yetkilerini kurallarla sınırlar. Dolayısıyla meclissiz ve mutlak bir yönetim de anlatılmamaktadır.",
+        "Hükümdarlığın anayasa ve meclis çerçevesinde sürdüğü biçim meşrutiyettir. Her iki koşulu birlikte karşılayan beşinci seçeneği seç."
+      ],
+      "optionReasons": [
+        "Meclissiz mutlak hanedan yönetimi, kökte açıkça verilen anayasa ve meclis sınırını karşılamaz.",
+        "Hükümdarın devam ettiği bilgisi korunmalıdır; meclis bulunması her durumda cumhuriyet demek değildir.",
+        "İltizam vergi toplama hakkının devriyle ilgili mali araçtır; yönetim biçimini tanımlamaz.",
+        "Bir dış gücün sömürge hâkimiyetine ilişkin bilgi verilmez; anayasa–hükümdar ilişkisi bu kavramla açıklanmaz.",
+        "Meşrutiyette hükümdarlık sürerken anayasa ve meclis yetkileri çerçeveler; verilen iki koşulu birlikte karşılar."
+      ],
+      "commonError": "Meclisin bulunduğu her rejimi cumhuriyet, hükümdarın bulunduğu her rejimi de sınırsız monarşi saymak.",
+      "check": "Yanıtın hem hükümdarın devamını hem kurumsal sınırı açıklayabilmeli. Bu iki bilgiden birini silerek karar vermediğini kontrol et."
+    }
+  },
+  {
+    "id": "f11h-r06",
+    "identity": "[\"f11h-r06\",\"Bu değişimlerle en doğrudan ilişkili gelişme hangisidir?\",\"Makinelerle çalışan fabrikalar yaygınlaşıyor; üretim ölçeği ve ücret karşılığı çalışan nüfus artıyor.\",[\"Ücretli işçilik ve fabrika çalışma ilişkilerinin yaygınlaşması\",\"Bütün işçilerin üretim araçlarının sahibi olması\",\"Kent nüfusunun her yerde sıfırlanması\",\"Tüm devletlerin askerî kapasitesinin zorunlu olarak yok olması\",\"Bütün monarşilerin aynı gün sona ermesi\"],0,\"Fabrika ve ücret karşılığı çalışma işçi–işveren ilişkisini doğrudan destekler. Üretim aracı sahipliği bütün işçilere geçmez. Kentlerin boşalması, bütün orduların yok olması ve monarşilerin aynı gün bitişi verilen üretim verisinden çıkmaz; mutlak ve ilgisiz sonuçlardır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sanayi üretiminde makine, fabrika, üretim ölçeği ve çalışma ilişkileri birlikte değişebilir. Üretim araçlarının sahibi olmak ile emeğini ücret karşılığında sunmak ayrı konumlardır. Ekonomik bir üretim değişiminden siyasal rejimlerin veya bütün orduların aynı anda sona erdiği sonucuna geçmek, farklı alanlar için ek kanıt gerektirir."
+      ],
+      "strategy": "Üretimin nerede ve hangi araçlarla yapıldığını, çalışanların karşılığı nasıl aldığını ayrı kaydet. Önce bu bilgilerin iş ilişkisini açıklayan karşılığını bul; sonra kapsamı bütün devletlere genişletenleri ele.",
+      "steps": [
+        "Pasaj makineli fabrikaların yaygınlaştığını ve üretim ölçeğinin arttığını verir; üretim örgütlenmesi değişmektedir.",
+        "Çalışan nüfusun ücret karşılığı emek sunduğu da belirtilir. Bu, araç sahibi olma değil ücretli çalışan–işveren ilişkisine doğrudan kanıttır.",
+        "Desteklenen gelişme ücretli işçilik ve fabrika çalışma ilişkilerinin yaygınlaşmasıdır. İlk seçeneği seç; kentler ve bütün rejimler hakkında ek sonuç yükleme."
+      ],
+      "optionReasons": [
+        "Fabrikaların ve ücret karşılığı çalışanların artması, ücretli işçilik ile fabrika ilişkilerinin yaygınlaştığını doğrudan destekler.",
+        "Ücretle çalışan olmak üretim araçlarına sahip olmak değildir; bütün işçiler için mülkiyet devri verilmez.",
+        "Kent nüfusunun her yerde sıfırlanmasıyla ilgili veri yoktur; fabrika üretiminin artışı bunu gerektirmez.",
+        "Tüm devletlerin askerî kapasitesinin yok olması, verilen üretim ve istihdam bilgilerinden çıkarılamaz.",
+        "Bütün monarşilerin aynı gün sona erdiği hakkında siyasal veri verilmemiştir; ekonomik değişim böyle bir zorunluluk kurmaz."
+      ],
+      "commonError": "Ücretli işçilik ile fabrika sahipliğini eşitlemek veya üretim değişimini bütün siyasal kurumların ani sonu saymak.",
+      "check": "Sonucun çalışanların ücret alması ve üretimin fabrikada yapılması verilerinden doğrudan kuruluyor mu? Başka alan için kanıt eklemeye ihtiyaç duyma."
+    }
+  },
+  {
+    "id": "f11h-r07",
+    "identity": "[\"f11h-r07\",\"Bu yeni ordu hangi adla anılır?\",\"1826'da Yeniçeri Ocağı kaldırılıyor ve yerine yeni bir ordu kuruluyor.\",[\"İrad-ı Cedit Hazinesi\",\"Asakir-i Mansure-i Muhammediye\",\"Düyûn-ı Umûmiye\",\"Ayan Meclisi\",\"Memleket Sandıkları\"],1,\"Yeniçeri Ocağı'nın kaldırılmasından sonra kurulan ordu Asakir-i Mansure-i Muhammediyedir. İrad-ı Cedit ayrı bir mali dayanak, Düyûn-ı Umûmiye borç idaresi, Ayan meclis, Memleket Sandıkları tarımsal finansman girişimidir. Aynı reform ortamında bulunmak görevleri eşitlemez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Osmanlı yenileşmesinde ordu, hazine, borç idaresi, meclis ve tarımsal kredi kurumları farklı görevler üstlendi. Kurum adları aynı reform dönemleri içinde geçse de işlevleri birbirinin yerine konamaz. Askerî yeniden yapılanmayı tanırken kaldırılan kurum, tarih ve yerine kurulan teşkilatın görevi birlikte izlenmelidir."
+      ],
+      "strategy": "1826 tarihini ve yeni teşkilatın ordu olması koşulunu birlikte kullan. Seçenekleri önce askerî birlik, mali kurum, meclis ve kredi girişimi olarak işlevlerine ayır.",
+      "steps": [
+        "Verilen olay 1826’da Yeniçeri Ocağının kaldırılmasıdır. Aranan, bu olayın ardından kurulan askerî teşkilatın adıdır.",
+        "Hazine, borç idaresi, meclis ve tarımsal kredi seçenekleri yeni ordunun kendisi olamaz; finansman ile askerî kurum ayrılmalıdır.",
+        "Yeni ordunun adı Asakir-i Mansure-i Muhammediye’dir. İkinci seçeneği seç; önceki dönem askerî mali araçlarıyla karıştırma."
+      ],
+      "optionReasons": [
+        "İrad-ı Cedit bir hazine ve mali dayanak adıdır; 1826’da kurulan ordunun kendisi değildir.",
+        "Asakir-i Mansure-i Muhammediye, Yeniçeri Ocağı kaldırıldıktan sonra oluşturulan yeni ordunun adıdır.",
+        "Düyûn-ı Umûmiye borçların tahsili ve belirli gelirlerin yönetimiyle ilgilidir; askerî birlik değildir.",
+        "Ayan Meclisi anayasal yasama yapısının kanadıdır; ordu teşkilatı değildir.",
+        "Memleket Sandıkları tarımsal kredi girişimidir; asker yetiştiren veya birlik oluşturan teşkilat değildir."
+      ],
+      "commonError": "Reformla ilgili bütün kurum adlarını ortak bir yenileşme listesi olarak ezberleyip kurumların görevlerini ayırmamak.",
+      "check": "Seçtiğin kurumun görevi askerî teşkilat olmak mı? Tarih ve yerine kurulduğu ocak bilgisini de birlikte doğrula."
+    }
+  },
+  {
+    "id": "f11h-r08",
+    "identity": "[\"f11h-r08\",\"İki gelişmenin ilişkisi nasıl açıklanmalıdır?\",\"Bir siyasal düzenleme 1908'de anayasal yönetimi yeniden işletiyor.1909'da ise hükümdarın bazı yetkileri daraltılarak meclisin konumu güçlendiriliyor.\",[\"İlkinde cumhuriyet kurulmuş, ikincide yıkılmıştır.\",\"İkisi de yalnız yeni bir dış borçtur.\",\"Yeniden işlerlik ile anayasa değişikliği farklı aşamalardır.\",\"1909'da bütün meclisler ilk kez icat edilmiştir.\",\"İki tarih arasında hiçbir hukuk değişimi yoktur.\"],2,\"1908 II. Meşrutiyet anayasal işleyişin geri gelişi,1909 ise ayrıca yetki düzenindeki değişikliklerdir. Cumhuriyet veya dış borç yorumu verilere uymaz. Meclis 1876'dan beri anayasal çerçevede bulunduğundan 1909'u ilk icat saymak ve hiç değişim yok demek de yanlıştır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir anayasanın yeniden uygulanmaya başlanması ile maddelerinin değiştirilmesi ayrı hukuki işlemlerdir. İşlerlik, kurumların mevcut çerçevede çalışmasıyla; değişiklik ise yetki ve kuralların içeriğiyle ilgilidir. Bir zaman çizelgesi okunurken her tarihe aynı fiili yüklemek yerine hangi işlemin yapıldığı belirlenmelidir."
+      ],
+      "strategy": "1908 ve 1909 için düzenlemenin yaptığı işi ayrı fiillerle yaz. Sonra hangi kurumun veya yetkinin değiştiğini karşılaştır; yeniden açılmayı ilk kez kurulmakla eşitleme.",
+      "steps": [
+        "1908 kaydı anayasal yönetimin yeniden işletildiğini söyler. Daha önceki çerçevenin tekrar işler olması söz konusudur.",
+        "1909 kaydı hükümdarın bazı yetkilerini daraltıp meclisi güçlendiren değişiklikler verir; bu kez kuralların içeriği ele alınır.",
+        "Yeniden işlerlik ile anayasa değişikliği farklı aşamalardır. Üçüncü seçeneği seç; ikisini cumhuriyet veya dış borç işlemi sayma."
+      ],
+      "optionReasons": [
+        "1908’de cumhuriyet kurulup 1909’da yıkıldığı yazmaz; anayasal hükümdarlık içindeki iki işlem anlatılır.",
+        "Verilen işlemler anayasal yönetim ve yetki düzeniyle ilgilidir; dış borç değildir.",
+        "1908 yeniden işlerliği, 1909 ise ayrıca yetki düzenindeki değişikliği anlatır; iki aşamanın farkı doğru korunur.",
+        "Yeniden işletiliyor ifadesi önceki kurum varlığını gösterir; 1909 bütün meclislerin ilk icadı değildir.",
+        "1909’da yetkilerin daralması ve meclisin güçlenmesi açık bir hukuki değişimdir; hiçbir değişim yoktur denemez."
+      ],
+      "commonError": "Bir kurumun yeniden işlemesini, ilk kez kurulmasını ve yetkilerinin değiştirilmesini tek tarihli tek işlem saymak.",
+      "check": "İki tarih için yazdığın fiiller farklı mı: yeniden işletme ve kural değiştirme? Seçtiğin yorum bu farkı korumalıdır."
+    }
+  },
+  {
+    "id": "f11h-r09",
+    "identity": "[\"f11h-r09\",\"Bu kanıtlardan en ölçülü çıkarım hangisidir?\",\"Bir devlet nüfus kayıtlarını geliştiriyor; vergi, eğitim ve askerlik yükümlülüklerini ortak kurallarla düzenlemeye çalışıyor.\",[\"Yurttaşlık yalnız haklardan oluşur, yükümlülük içermez.\",\"Nüfusun tamamı mutlaka aynı siyasal görüştedir.\",\"Bu işler için hiçbir kamu kurumu gerekmez.\",\"Devlet-toplum ilişkisi kayıt ve ortak yükümlülükler üzerinden yeniden örgütlenmektedir.\",\"Bütün toplumsal sorunlar kesin olarak sona ermiştir.\"],3,\"Nüfusu tanıma ve ortak vergi-eğitim-askerlik kuralları, devlet-toplum ilişkisinin örgütlenmesine kanıttır. Görüş birliği ve sorunların tamamen bitişi sonuçlarını kanıtlamaz. Yurttaşlık yükümlülükleri dışlamaz; kayıt işlerinin kurumsal örgütlenmeyle ilgisiz olduğu da söylenemez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Nüfus kaydı devletin yönettiği toplumu tanıma araçlarından biridir; vergi, eğitim ve askerlik ise bireylerle kamu otoritesi arasında kurallar ve yükümlülükler kurar. Kayıt ve ortak düzenleme, kurumların topluma nasıl ulaştığını incelemeyi sağlar. Bunların varlığı insanların bütün siyasal görüşlerinin aynı olduğunu veya bütün sorunların bittiğini tek başına göstermez."
+      ],
+      "strategy": "Nüfus kaydının neyi görünür kıldığını ve üç yükümlülüğün kimlerle devlet arasında ilişki kurduğunu belirle. Sonucu verilen örgütlenme düzeyinde tutup görüş ve başarı iddialarını ayrıca sınayarak ilerle.",
+      "steps": [
+        "Nüfus kayıtlarının geliştirilmesi, devletin toplumu kayda alma ve sınıflama kapasitesine ilişkin bir düzenlemedir.",
+        "Vergi, eğitim ve askerlik için ortak kurallar konması, kişilerle kamu yönetimi arasındaki yükümlülükleri düzenler.",
+        "Bu iki kanıt devlet–toplum ilişkisinin kayıt ve ortak yükümlülüklerle yeniden örgütlendiğini destekler. Dördüncü seçeneği seç; görüş birliği veya eksiksiz başarı ekleme."
+      ],
+      "optionReasons": [
+        "Kökte vergi ve askerlik gibi yükümlülükler açıkça bulunur; yurttaşlığın yalnız haklardan oluştuğu iddiası bunları dışlar.",
+        "Nüfusun siyasal görüşleri hakkında veri verilmemiştir; ortak kayıt ve kurallar düşünce birliği anlamına gelmez.",
+        "Kayıt tutma ve yükümlülükleri uygulama kamu örgütlenmesi gerektirir; hiçbir kurum gerekmemesi yorumu desteklenmez.",
+        "Nüfus kayıtları ile ortak vergi, eğitim ve askerlik kuralları devlet–toplum ilişkisinin yeniden örgütlenmesine kanıttır.",
+        "Kuralların düzenlenmesi, bütün toplumsal sorunların kesin olarak bittiğini gösteren sonuç verisi değildir."
+      ],
+      "commonError": "Düzenli kayıt ve ortak kurallardan, nüfusun tamamı için görüş birliği veya sorunsuz toplum sonucu çıkarmak.",
+      "check": "Yorumunda kayıt ve ortak yükümlülüklerin ikisi de var mı? Kişilerin görüşleri veya düzenlemenin kusursuz başarısı hakkında yeni iddia eklemediğini denetle."
+    }
+  },
+  {
+    "id": "f11h-r10",
+    "identity": "[\"f11h-r10\",\"Bu bilgilerden hangi sonuca ulaşılamaz?\",\"1789'da özgürlük ve hukuk önünde eşitlik ilkeleri ilan ediliyor. Metin, oy hakkının kimlere verildiğini veya sonraki bütün uygulamaları açıklamıyor.\",[\"Hukuk önünde eşitlik bir siyasal ilke olarak dile getirilmiştir.\",\"Ayrıcalıklar eleştiri konusu olmuştur.\",\"Hak ve egemenlik ilişkisi tartışmaya açılmıştır.\",\"İlan edilen ilkeyle uygulama kapsamı ayrı incelenmelidir.\",\"Bütün kadın ve erkekler aynı gün eşit genel oy hakkı kazanmıştır.\"],4,\"Metin genel oy hakkının kapsamını vermediği için herkesin aynı gün eşit oy hakkı kazandığı çıkarılamaz. Diğer seçenekler ilkelerin dile getirilmesini ve uygulamanın ayrıca araştırılmasını korur. Demokrasiye giden süreçte ilke, hak sahipliği ve kurum aynı gösterge değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hak bildirisinde bir ilkenin ilanı, o hakkı kimlerin hangi kurum ve koşullarla kullanabildiğiyle aynı bilgi değildir. Hukuk önünde eşitlik, ayrıcalıklar ve kamusal yetkinin meşruiyeti tartışmalarıyla ilişkilidir; seçim hakkının kapsamı ise ayrıca araştırılır. Tarihsel incelemede ilan, hak sahipliği ve uygulama sonuçları ayrı kayıtlarla sınanır."
+      ],
+      "strategy": "Önce açıkça ilan edilen ilkeleri ayır. Ardından her seçeneğin yalnız ilkeye mi, oy hakkının kimlere verildiğine mi yoksa bütün uygulamaların zamanına mı hükmettiğini sınıflandır.",
+      "steps": [
+        "Pasaj 1789’da özgürlük ve hukuk önünde eşitliğin ilan edildiğini verir; ilkelerin siyasal düzeyde dile getirildiği açıktır.",
+        "Aynı pasaj oy hakkının kapsamını ve sonraki bütün uygulamaları açıklamadığını söyler. Bu eksik bilgi, herkes için aynı gün eşit seçim hakkı sonucu kurmaya yetmez.",
+        "Ulaşılamayan sonuç bütün kadın ve erkeklerin aynı gün eşit genel oy hakkı kazanmasıdır. Olumsuz kökü koruyarak beşinci seçeneği seç."
+      ],
+      "optionReasons": [
+        "Hukuk önünde eşitliğin siyasal ilke olarak ilan edildiği pasajda açıkça belirtilir.",
+        "Eşitlik ilkesinin ilanı, hukuki ayrıcalıkların eleştiri konusu olmasıyla uyumludur; herkes için oy hakkı sonucu eklemez.",
+        "Özgürlük ve eşitlik ilkeleri kamusal hak ve egemenlik tartışmasının çerçevesindedir; bu yorum evrensel oy uygulaması iddia etmez.",
+        "Metin uygulama kapsamını vermediğinden, ilke ile kimlere nasıl uygulandığını ayrı incelemek gerekir.",
+        "Oy hakkının kimlere verildiği açıklanmaz; bütün kadın ve erkeklerin aynı gün eşit genel oy hakkı kazanması kanıtın ötesindedir."
+      ],
+      "commonError": "Hak bildirgesindeki eşitlik ilkesini, bütün bireylerin bütün siyasal hakları derhâl ve aynı biçimde kullanmasıyla eşitlemek.",
+      "check": "İlan edilen ilke, oy hakkına sahip kişiler ve uygulama tarihi için üç ayrı kanıt iste. Pasajın yalnız ilkini açık verdiğini kontrol et."
+    }
+  },
+  {
+    "id": "f11h-b01",
+    "identity": "[\"f11h-b01\",\"Bu siyasetin temel mantığı hangisidir?\",\"Fransa 1798'de Mısır'ı işgal ediyor. Osmanlı, Fransa'nın bu ilerleyişini kendi çıkarlarına aykırı gören İngiltere ve Rusya'yla yakınlaşıyor.\",[\"Ortak tehdide karşı farklı güçlerin çıkar çatışmasından yararlanmak\",\"Bütün eski savaşların hiç yaşanmadığını kabul etmek\",\"Mısır'ı karşılıksız ve koşulsuz Rusya'ya devretmek\",\"Her devleti sürekli ve değişmez dost saymak\",\"Bütün dış ticareti aynı gün sona erdirmek\"],0,\"Fransız ilerleyişini sınırlama çıkarı geçici ortaklık yaratmıştır; bu denge siyasetinin somut örneğidir. Geçmiş savaşlar silinmez, sürekli dostluk kurulmuş sayılmaz. Mısır'ın Rusya'ya devri veya dış ticaretin bitişi hakkında verilen kanıtta hiçbir hüküm yoktur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Dış politika, belirli bir tarihte tehdit algısı ve devletlerin çıkarları üzerinden incelenir. Bir gücün başka bölgede ilerlemesi, rakiplerinin güvenlik veya ticaret hesaplarını etkileyebilir. Bu ilişkileri anlamak için hangi devletin hangi gelişmeyi tehdit gördüğü ve hangi diplomatik araca başvurduğu belirlenir; geçmiş savaşların kaydı ayrıca korunur."
+      ],
+      "strategy": "Üç devletin Fransa’nın Mısır’daki ilerleyişine bakışını ayrı yaz. Osmanlı’nın yakınlaşma tercihinin hangi somut tehditle bağlantılı olduğunu saptayıp seçeneklerin kapsamını denetle.",
+      "steps": [
+        "Fransa’nın Mısır’ı işgali Osmanlı için toprak ve güvenlik sorunudur. Pasaj İngiltere ve Rusya’nın da bu ilerleyişi çıkarlarına aykırı gördüğünü verir.",
+        "Osmanlı’nın yakınlaşması, bu belirli gelişmeye karşı çıkarların kesişmesinden yararlanır; geçmiş çatışmaların yaşanmadığı anlamına gelmez.",
+        "Temel mantık ortak tehdide karşı farklı güçlerin çıkar ilişkilerinden yararlanmaktır. İlk seçeneği seç; bütün dönemler için değişmez dostluk sonucu ekleme."
+      ],
+      "optionReasons": [
+        "Fransız ilerleyişine karşı çıkarları kesişen güçlerle yakınlaşılması, ortak tehdide karşı denge arayışını açıklar.",
+        "Geçici bir yakınlaşma geçmiş savaşların kaydını ortadan kaldırmaz; pasaj böyle bir tarihsel inkâr içermez.",
+        "Mısır’ın Rusya’ya koşulsuz devredildiği yazmaz; anlatılan işlem Fransa’ya karşı diplomatik yakınlaşmadır.",
+        "Verilen olay belirli bir tehdide ilişkindir; bütün devletlerin sürekli ve değişmez dost olduğu sonucunu desteklemez.",
+        "Dış ticaretin tümünün aynı gün sona erdiğine ilişkin hiçbir bilgi verilmemiştir."
+      ],
+      "commonError": "Dönemsel ortak çıkarı, devletler arasındaki bütün geçmiş ve gelecek ilişkileri belirleyen kalıcı dostluk saymak.",
+      "check": "Yakınlaşmanın nedenini Fransa’nın Mısır’daki ilerleyişiyle açıklayabiliyor musun? Sonucuna koşulsuzluk veya sonsuzluk ekleme."
+    }
+  },
+  {
+    "id": "f11h-b02",
+    "identity": "[\"f11h-b02\",\"Bu örnek hangi yargıya karşı kanıttır?\",\"1833'te Mehmet Ali Paşa kuvvetleri Osmanlı merkezini tehdit ederken yönetim Rus desteğine başvuruyor.\",[\"Bir iç sorun uluslararası boyut kazanabilir.\",\"Aynı devlet her tarihsel koşulda değişmez düşmandır.\",\"Yakın tehdit ittifak tercihini etkileyebilir.\",\"Dış yardım yeni yükümlülükler doğurabilir.\",\"Valilik ile merkez arasında güç mücadelesi yaşanabilir.\"],1,\"Geçmişte savaşılmış Rusya'dan belirli tehdide karşı yardım aranması, değişmez düşman genellemesini bozar. Diğer seçenekler olayla uyumlu olasılık veya ilişkilerdir; bu örneğin çürüttüğü yargılar değildir. Yakın tehdidi bilmek dönemsel seçimi anlamayı sağlar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir genellemeyi sınamak için onun bütün durumları kapsayıp kapsamadığına bakılır. Her koşulda ifadesi, ters yöndeki tek bir tarihsel örnekle çürütülebilecek güçlü bir iddiadır. İç güç mücadelesi ve dış yardım ilişkilerinde, hangi tehdit karşısında hangi aktöre başvurulduğu açıkça izlenmelidir."
+      ],
+      "strategy": "Kökteki yardım aranan devlet ile yakın tehdidi belirle. Seçeneklerden olaya uygun olabilecek ilişkileri değil, olayın ters örnek oluşturduğu evrensel iddiayı ara.",
+      "steps": [
+        "Yakın tehdit Mehmet Ali Paşa kuvvetlerinin merkez üzerine ilerlemesidir; Osmanlı yönetimi buna karşı Rus desteğine başvurur.",
+        "Rusya ile daha önce çatışmalar yaşanmış olması, bu tarihte yardım aranması olgusunu silmez. Aynı devletle ilişkinin her koşulda tek biçimde kalmadığı görülür.",
+        "Örnek, aynı devletin her tarihsel koşulda değişmez düşman olduğu yargısına karşı kanıttır. Karşı kanıt isteyen kökte ikinci seçeneği seç."
+      ],
+      "optionReasons": [
+        "Yerel güç mücadelesine Rus desteğinin katılması, iç sorunun uluslararası boyut kazanabilmesiyle uyumludur; buna karşı örnek değildir.",
+        "Önceden savaşılan Rusya’dan somut tehdide karşı yardım aranması, her koşulda değişmez düşman genellemesini çürütür.",
+        "Mehmet Ali Paşa tehdidi yardım tercihiyle ilişkilidir; olay bu yargıyı çürütmek yerine destekler.",
+        "Dış yardımın yükümlülük doğurabilmesi olayla çelişmez; örnek bunu imkânsız kılan bir kanıt değildir.",
+        "Merkez ile valilik arasındaki güç mücadelesi pasajın açık bağlamıdır; olay bu olasılığı reddetmez."
+      ],
+      "commonError": "Karşı kanıt sorusunu, olayla uyumlu bir neden veya olasılığı seçme sorusu gibi çözmek.",
+      "check": "Seçtiğin yargı doğru olsaydı bu tarihte Rus desteğine başvurulması mümkün olur muydu? Gerçek ters örneği bu soruyla ayır."
+    }
+  },
+  {
+    "id": "f11h-b03",
+    "identity": "[\"f11h-b03\",\"Bu hükümden hangisi çıkarılır?\",\"1841 Londra düzenlemesi, Osmanlı barış hâlindeyken Boğazların yabancı savaş gemilerine kapalı olması ilkesini çok taraflı çerçeveye alıyor.\",[\"Bütün ticaret gemileri her koşulda yasaklanmıştır.\",\"Osmanlı dışındaki bütün devletler yok olmuştur.\",\"Boğazlar konusu çok taraflı diplomatik düzenlemeye bağlanmıştır.\",\"Rusya tek başına bütün Boğazların sahibi olmuştur.\",\"Bütün gelecek savaşlar kesin biçimde önlenmiştir.\"],2,\"Çok taraflı düzenleme Boğazların uluslararası diplomasi konusu olduğunu gösterir. Ticaret gemilerini savaş gemileriyle eşitlemek ve barış koşulunu silmek hükmü aşar. Mülkiyet, devletlerin yok olması veya sonsuz barış garantisi maddede yer almaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir diplomatik hüküm okunurken kapsamındaki gemi türü, geçerli olduğu koşul ve düzenlemeye katılan taraflar ayrı belirlenir. Savaş gemisi ile ticaret gemisi farklı kategorilerdir. Bir geçiş kuralına taraf olmak, bölgenin mülkiyetine sahip olmakla aynı hukuki işlem değildir; hükmün uygulama koşulları silinmemelidir."
+      ],
+      "strategy": "Hükmü gemi türü, barış koşulu ve taraf sayısı olarak üç parçaya ayır. Seçeneklerin bu parçaları koruyup korumadığını ve yeni mülkiyet ya da kesin gelecek sonucu ekleyip eklemediğini denetle.",
+      "steps": [
+        "Kural Osmanlı barış hâlindeyken yabancı savaş gemileri için kapalılık öngörür; bütün gemileri her koşulda kapsayan yasak değildir.",
+        "Pasaj bu ilkenin çok taraflı bir çerçeveye alındığını açıkça verir. Düzenleme tek devletin yalnız kendi kararı olarak anlatılmaz.",
+        "Doğrudan çıkarım Boğazlar konusunun çok taraflı diplomatik düzenlemeye bağlanmasıdır. Üçüncü seçeneği seç; mülkiyet veya sonsuz barış sonucu yükleme."
+      ],
+      "optionReasons": [
+        "Hüküm ticaret gemilerinin tamamını kapsamaz; ayrıca Osmanlı’nın barış hâli koşulu korunmalıdır.",
+        "Antlaşmaya taraf olmak devletlerin yok olması anlamına gelmez; böyle bir olay verilmemiştir.",
+        "Çok taraflı çerçeve, Boğazlar geçişinin diplomatik bir düzenlemeye bağlandığını doğrudan gösterir.",
+        "Rusya’nın tek başına mülkiyet sahibi olduğu yazmaz; bu iddia çok taraflı geçiş düzenlemesinin yerine başka işlem koyar.",
+        "Bir geçiş kuralı bütün gelecek savaşları kesin önleyen garanti değildir; böyle bir kapsam verilmez."
+      ],
+      "commonError": "Savaş gemilerini bütün gemilerle eşitleyip barış hâli koşulunu kaldırarak hükmü sınırsız yasak gibi okumak.",
+      "check": "Sonucunda yabancı savaş gemisi, barış hâli ve çok taraflı çerçevenin üçünü de koru. Bunlardan birini değiştirdiysen hükmü genişletmişsindir."
+    }
+  },
+  {
+    "id": "f11h-b04",
+    "identity": "[\"f11h-b04\",\"En uygun yorum hangisidir?\",\"1856 Paris Antlaşması Osmanlı'nın bağımsızlığını ve toprak bütünlüğünü ortak garantiye bağlıyor; metin orduların veya üretim güçlerinin eşitlendiğini söylemiyor.\",[\"Bütün dış müdahaleler kesin sona ermiştir.\",\"Osmanlı'nın her devletten güçlü olduğu ispatlanmıştır.\",\"Ekonomik bağımlılık hiçbir zaman oluşmamıştır.\",\"Hukuki garanti, fiilî güç eşitliğiyle aynı gösterge değildir.\",\"Antlaşma bir Osmanlı nüfus sayımıdır.\"],3,\"Garanti hukuki-diplomatik statüdür; askerî ve ekonomik kapasite eşitliğini tek başına göstermez. Müdahalelerin bitişi, üstün güç veya ekonomik bağımlılığın hiç yaşanmaması metinden çıkmaz. Belge nüfus sayımı da değildir; uluslararası bir barış düzenlemesidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Uluslararası garantiler, tarafların bir devletin statüsüne ilişkin tanıma ve taahhütlerini düzenler. Askerî kapasite için ordu, donanma ve teçhizat; ekonomik kapasite için üretim, gelir ve finansman gibi göstergeler incelenir. Belgenin neyi taahhüt ettiği ile araştırılan kapasitenin hangi ölçümler gerektirdiği ayrı sorular olarak kurulmalıdır."
+      ],
+      "strategy": "Antlaşmanın açıkça garantiye bağladığı unsurları yaz. Ardından her seçeneğin bunlara mı, ölçülmemiş ordu ve ekonomi gücüne mi veya bütün geleceğe mi hükmettiğini sınıflandır.",
+      "steps": [
+        "Paris Antlaşması burada bağımsızlık ve toprak bütünlüğünün ortak garantisini verir; kayıt hukuki ve diplomatik statüye ilişkindir.",
+        "Pasaj orduların veya üretim güçlerinin eşitlendiğini söylemediğini açıkça belirtir. Kapasite eşitliği için bu konularda ayrıca veri gerekir.",
+        "Hukuki garanti ile fiilî güç eşitliği aynı gösterge değildir. Dördüncü seçeneği seç; güvenceyi sınırsız üstünlük veya müdahalesizlik sonucu yapma."
+      ],
+      "optionReasons": [
+        "Garanti verilmesi bütün sonraki dış müdahalelerin kesin bittiğini göstermez; gerçekleşen uygulamalar ayrıca incelenir.",
+        "Osmanlı’nın her devletten güçlü olduğuna ilişkin askerî veya ekonomik ölçüm verilmemiştir.",
+        "Antlaşmadaki statü kaydı, ekonomik bağımlılığın hiçbir zaman oluşmadığını kanıtlayamaz.",
+        "Garanti hukuki-diplomatik statüdür; kapasite eşitliği için ordu ve üretim göstergeleri ayrıca gerekir. Ayrım doğru kurulmuştur.",
+        "Verilen belge bağımsızlık ve toprak bütünlüğü hakkında antlaşmadır; nüfus sayımı değildir."
+      ],
+      "commonError": "Devletin hukuken tanınan statüsünü, bütün askerî ve ekonomik göstergelerde eşitlik veya üstünlük saymak.",
+      "check": "Seçtiğin yorum için hangi kanıtın hukuki belge, hangisinin kapasite ölçümü olacağını söyle. Pasajda bulunmayan ölçümü var sayma."
+    }
+  },
+  {
+    "id": "f11h-b05",
+    "identity": "[\"f11h-b05\",\"Bu kronoloji hangi çıkarımı destekler?\",\"Sırplar için 1812'de ayrıcalıklar,1829'da özerklik,1878'de bağımsızlık aşamaları veriliyor.\",[\"Üç kavram aynı hukuki statüyü anlatır.\",\"Bağımsızlık 1812'de kesin olarak tamamlanmıştır.\",\"1878'de ilk kez herhangi bir ayrıcalık verilmiştir.\",\"Sırpların statüsü hiçbir zaman değişmemiştir.\",\"Ayrıcalık, özerklik ve bağımsızlık farklı aşamalardır.\"],4,\"Verilen sıralama bağımsızlığın daha sonraki aşama olduğunu ve üç statünün özdeş olmadığını gösterir.1812'yi tamamlanmış bağımsızlık,1878'i ilk ayrıcalık saymak sırayı ters yorumlar. Hiç değişim olmadığı iddiası da üç farklı aşamayla açıkça çelişir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ayrıcalık belirli hak veya muafiyetleri; özerklik daha geniş bir devlet çerçevesi içinde iç yönetim yetkilerini; bağımsızlık ise ayrı siyasal egemenlik statüsünü konu edinir. Bir kronolojide tarihleri sıralamak kadar her tarihe bağlanan hukuki fiili okumak da önemlidir. Son tarihteki durumu önceki tarihlere otomatik taşımamak gerekir."
+      ],
+      "strategy": "Her tarihi yanına verilen statüyle eşleştir. Sonra seçeneklerde ilk aşamanın son aşamayla veya bütün sürecin değişmezlikle karıştırılıp karıştırılmadığını denetle.",
+      "steps": [
+        "1812 kaydı ayrıcalıklara ilişkindir; bu tarihe bağımsızlık sonucu yüklenmemiştir.",
+        "1829’da özerklik, 1878’de bağımsızlık verilir. Her tarihteki terim ve yetki kapsamı aynı değildir.",
+        "Kronoloji ayrıcalık, özerklik ve bağımsızlığın farklı aşamalar olduğunu destekler. Beşinci seçeneği seç; sonraki sonucu başlangıca taşıma."
+      ],
+      "optionReasons": [
+        "Üç kavram aynı hukuki statüyü anlatmaz; pasaj bunları farklı tarihlere ve aşamalara bağlar.",
+        "1812 için verilen statü ayrıcalıktır; tamamlanmış bağımsızlığı bu tarihe taşımak kronolojiyi değiştirir.",
+        "İlk ayrıcalık kaydı 1812’dedir; 1878 ise bağımsızlık aşaması olarak verilmiştir.",
+        "Üç farklı statünün sıralanması, hiçbir zaman değişim olmadığı iddiasıyla çelişir.",
+        "Verilen tarihlerde ayrıcalık, özerklik ve bağımsızlık birbirini izleyen farklı aşamalardır; sıra ve hukuki ayrım korunur."
+      ],
+      "commonError": "Bağımsızlıkla sonuçlanan bir sürecin ilk ayrıcalık tarihini de bağımsızlık tarihi saymak.",
+      "check": "Üç tarih–statü çiftini metne geri yerleştir. Seçtiğin yorum bir terimi başka tarihe taşıyor veya üçünü eşitliyor mu?"
+    }
+  },
+  {
+    "id": "f11h-b06",
+    "identity": "[\"f11h-b06\",\"Hangi yorum iki bilgiyi de doğru kullanır?\",\"1878 Berlin düzenlemesi Bosna-Hersek'in yönetimini Avusturya'ya bırakıyor; Avusturya-Macaristan'ın ilhakı 1908'de gerçekleşiyor.\",[\"Yönetim yetkisinin devri ile sonraki ilhak farklı gelişmelerdir.\",\"Bosna-Hersek 1908'de ilk kez haritada ortaya çıkmıştır.\",\"Berlin 1908'de imzalanmıştır.\",\"İlhak 1878 maddesiyle aynı gün gerçekleşmiştir.\",\"İki tarihte de hiçbir statü değişikliği olmamıştır.\"],0,\"1878 yönetim düzeni ile 1908 ilhakı farklı tarihlerdeki farklı işlemlerdir. İlhakı 1878'e taşımak veya Berlin'i 1908'e tarihlemek yanlıştır. Bölgenin varlığı ile yönetim statüsü de aynı şey değildir; hiçbir değişim olmadığı iddiası verilen iki olaya uymaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yönetim yetkisi, bir bölgenin idaresini yürütmeyi; ilhak ise bölgeyi kendi egemenliğine kattığını ilan etmeyi konu edinir. Tarihsel bir bölgenin varlığı ile onun kim tarafından hangi statüde yönetildiği ayrı konulardır. İki kayıt karşılaştırılırken olayın adı, tarihi ve hukuki kapsamı birlikte korunmalıdır."
+      ],
+      "strategy": "1878 ve 1908 kayıtlarını ayrı satırlara koyup her birindeki işlemi yaz. Seçeneklerde tarih, işlem veya bölgenin varlığı arasında yer değiştirme yapılıp yapılmadığını denetle.",
+      "steps": [
+        "1878 Berlin düzenlemesi Bosna-Hersek’in yönetimini Avusturya’ya bırakır; bu tarihte verilen işlem yönetim yetkisine ilişkindir.",
+        "1908’de Avusturya-Macaristan’ın ilhakı gerçekleşir. İlhak kaydı, önceki yönetim düzenlemesinden otuz yıl sonradır.",
+        "İki bilgiyi koruyan yorum yönetim devri ile sonraki ilhakın farklı gelişmeler olmasıdır. İlk seçeneği seç; ilhakı 1878’e taşıma."
+      ],
+      "optionReasons": [
+        "1878 yönetim düzenlemesi ile 1908 ilhakı ayrı tarihlerdeki ayrı işlemlerdir; iki kayıt da doğru korunur.",
+        "Bölgenin yönetim veya egemenlik statüsünün değişmesi, 1908’de ilk kez coğrafi varlık kazanması demek değildir.",
+        "Berlin düzenlemesinin tarihi pasajda 1878’dir; 1908 ilhak tarihidir.",
+        "İlhak 1908 olarak verilmiştir; 1878 düzenlemesiyle aynı güne taşınamaz.",
+        "Yönetim devri ve ilhak iki açık değişim kaydıdır; hiçbir statü değişmediği söylenemez."
+      ],
+      "commonError": "Bir bölgenin önce idaresini üstlenmekle daha sonra ilhakını aynı işlem ve aynı tarih saymak.",
+      "check": "Her iki tarih için farklı fiil yazabiliyor musun? Bölgenin varlığı, yönetimi ve egemenliği kavramlarını da birbirine karıştırma."
+    }
+  },
+  {
+    "id": "f11h-b07",
+    "identity": "[\"f11h-b07\",\"Hangi eşleştirme doğrudur?\",\"Kırım 1774'te siyasi bağımsız statüye geçiyor,1783'te Rusya tarafından ilhak ediliyor; Osmanlı 1792 Yaş Antlaşması'yla ilhakı tanıyor.\",[\"1774: Osmanlı ilhakı tanıdı.\",\"1783: Rusya'nın ilhakı gerçekleşti.\",\"1792: Kırım ilk kez bağımsız oldu.\",\"1774: Berlin Antlaşması imzalandı.\",\"1783: Kırım'ın statüsü hiç değişmedi.\"],1,\"1783 Rusya'nın fiilî ilhakıdır;1774 bağımsız statü,1792 Osmanlı'nın tanımasıdır. Diğer seçenekler verilen fiil ve tarihleri karıştırır. Berlin 1878'dir;1774'ün yerine getirilemez. İlhakın yaşandığı yılda statü değişmediğini söylemek de doğrudan çelişkidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir bölgenin siyasal statüsünde bağımsızlaşma, başka bir devlet tarafından ilhak edilme ve ilhakın üçüncü tarafça tanınması ayrı işlemlerdir. Kronolojik sorularda yalnız yılı ezberlemek yerine özne–fiil–tarih üçlüsü kurulur. Sonraki bir antlaşmanın bir durumu tanıması, o durumun ilk kez o tarihte ortaya çıktığı anlamına gelmez."
+      ],
+      "strategy": "Üç yıl için kim, ne yaptı sorularını ayrı yanıtla. Seçeneklerde ilhakın gerçekleşmesi ile tanınmasının yer değiştirip değiştirmediğini ve başka antlaşma tarihinin eklenip eklenmediğini kontrol et.",
+      "steps": [
+        "1774 kaydı Kırım’ın siyasi bağımsız statüye geçişidir; Osmanlı’nın ilhakı tanıması olarak verilmez.",
+        "1783 kaydı Rusya’nın ilhakı, 1792 Yaş Antlaşması ise Osmanlı’nın bu ilhakı tanımasıdır. Gerçekleşme ve tanıma tarihleri ayrılır.",
+        "Doğru çift 1783: Rusya’nın ilhakı gerçekleşti eşleştirmesidir. İkinci seçeneği seç; 1792’ye yeni bağımsızlık yükleme."
+      ],
+      "optionReasons": [
+        "1774 bağımsız statüye geçiştir; Osmanlı’nın ilhakı tanıması pasajda 1792’ye bağlanır.",
+        "1783, Rusya’nın Kırım’ı ilhak ettiği tarih olarak açıkça verilir; eşleştirme doğrudur.",
+        "1792 ilk bağımsızlık değil ilhakın Osmanlı tarafından tanınmasıdır.",
+        "Berlin Antlaşması 1878 tarihindedir; 1774 kaydının yerine konamaz.",
+        "1783’te ilhak gerçekleştiğine göre o yıl statü hiç değişmedi denmesi verilen olayla çelişir."
+      ],
+      "commonError": "Bir durumun ortaya çıkma tarihini, daha sonra bir antlaşmayla tanınma tarihiyle eşitlemek.",
+      "check": "Tarihi kapatıp üç fiili sırala: bağımsız statü, ilhak, tanıma. Sonra yılları yerleştirerek çiftini ters yönden doğrula."
+    }
+  },
+  {
+    "id": "f11h-b08",
+    "identity": "[\"f11h-b08\",\"Bu örnekler birlikte nasıl yorumlanmalıdır?\",\"İngiltere Kırım Savaşı'nda Rusya'ya karşı Osmanlı'yı destekliyor; daha sonra 1878'de Kıbrıs'ın yönetimini alıyor ve 1882'de Mısır'ı işgal ediyor.\",[\"İngiltere'nin bütün dönemlerde tek amacı Osmanlı'yı koşulsuz korumaktır.\",\"Mısır ile Kıbrıs aynı topraktır.\",\"İngiltere'nin tutumu değişen stratejik çıkarlarla birlikte değerlendirilmelidir.\",\"Kırım Savaşı 1882'de başlamıştır.\",\"Dış destek her zaman bedelsizdir.\"],2,\"Desteğin ardından yönetim alma ve işgal gelmesi, İngiltere'nin değişen çıkar ve araçlarını incelemeyi gerektirir. Koşulsuz koruma ve bedelsiz yardım genellemeleri bu verilerle uyuşmaz. Mısır ile Kıbrıs farklı coğrafyalar, Kırım Savaşı da 1853–1856 dönemidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir devletin dış politikası incelenirken belirli bir savaştaki tutumu, sonraki tarihlerdeki diplomatik veya askerî işlemlerle birlikte izlenir. Destek verme, bir bölgenin yönetimini alma ve işgal farklı araçlardır. Aktörün amacı hakkında değerlendirme yapmak için her olayın dönemi, coğrafyası ve karşısındaki güç ilişkileri kaydedilir."
+      ],
+      "strategy": "İngiltere’nin üç tarihte yaptığı işleri ayrı fiillerle sırala. Seçeneklerden bu kayıtları birlikte açıklayanı, hepsini tek ve koşulsuz amaç altında toplayandan ayır.",
+      "steps": [
+        "Kırım Savaşı’nda İngiltere Rusya’ya karşı Osmanlı’yı destekler; bu ilk kayıttaki somut tutumdur.",
+        "1878’de Kıbrıs’ın yönetimini alması ve 1882’de Mısır’ı işgal etmesi, sonraki farklı araç ve alanlara ilişkindir. Önceki destek bu iki olayı silmez.",
+        "Üç kayıt İngiltere’nin tutumunu değişen stratejik çıkarlarla birlikte değerlendirmeyi gerektirir. Üçüncü seçeneği seç; koşulsuz koruma genellemesi yapma."
+      ],
+      "optionReasons": [
+        "Yönetim alma ve işgal kayıtları bütün dönemleri koşulsuz koruma amacıyla açıklamayı desteklemez.",
+        "Mısır ve Kıbrıs farklı coğrafyalardır; iki olayı aynı toprağın adı gibi okumak yanlıştır.",
+        "Savaşta destek, sonra yönetim alma ve işgal farklı tutumlardır; değişen stratejik çıkarlarla birlikte değerlendirilmesi üç kaydı da korur.",
+        "1882 Mısır’ın işgal tarihidir; Kırım Savaşı 1853–1856 dönemindedir.",
+        "Verilen olaylar dış desteğin her zaman bedelsiz olduğunu kanıtlamaz; her zaman genellemesi kapsamı aşar."
+      ],
+      "commonError": "Bir savaşta verilen desteği, sonraki bütün dönemler için koşulsuz koruma vaadi saymak.",
+      "check": "Yorumun yalnız savaş desteğini değil Kıbrıs yönetimini ve Mısır işgalini de açıklıyor mu? Üç farklı fiilden birini dışarıda bırakma."
+    }
+  },
+  {
+    "id": "f11h-b09",
+    "identity": "[\"f11h-b09\",\"Berlin'e geçişin verilen kanıta dayalı nedeni hangisidir?\",\"1878 Ayastefanos düzenlemesi Rusya'nın Balkanlardaki nüfuzunu genişletiyor. Diğer büyük güçlerin itirazı sonrasında Berlin'de yeni düzenleme yapılıyor.\",[\"Osmanlı'nın bütün devletleri askerî olarak yenmesi\",\"Avrupa'da bütün çıkar çatışmalarının bitmesi\",\"Rusya'nın hiçbir kazanç elde etmemesi\",\"Büyük güçlerin Rusya lehine değişen dengeyi yeniden sınırlamak istemesi\",\"Bütün Balkan topluluklarının aynı devlete gönüllü katılması\"],3,\"Ayastefanos'un Rusya'ya sağladığı üstünlük, diğer güçlerin denge kaygısını artırmıştır. Berlin bu rekabetin diplomatik sonucudur; Osmanlı'nın herkese karşı zaferi veya bütün çıkar çatışmalarının bitişi değildir. Rusya'nın kazancı olmadığı ve tek gönüllü birleşme yorumları metne uymaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Büyük güçlerin diplomatik düzenlemelere yaklaşımı, antlaşmanın nüfuz dağılımını nasıl etkilediği üzerinden incelenebilir. Bir devletin kazanımı diğerlerinin stratejik hesaplarını değiştirebilir. Yeni bir konferansa geçişin nedenini ararken önce ilk düzenlemenin etkisi, sonra itiraz eden aktörlerin bu etkiyle ilişkisi kurulmalıdır."
+      ],
+      "strategy": "Ayastefanos’un hangi devletin nüfuzunu artırdığını yaz. Ardından itiraz eden güçlerin kim olduğunu ve yeni düzenlemeyi hangi denge kaygısının açıklayabileceğini seçeneklerle sınayarak ilerle.",
+      "steps": [
+        "Pasaj Ayastefanos’un Rusya’nın Balkanlardaki nüfuzunu genişlettiğini açıkça verir; Rusya’nın hiç kazanç sağlamadığı söylenemez.",
+        "Diğer büyük güçler bu düzenlemeye itiraz eder ve Berlin’de yeni metne geçilir. İtirazın yönü Rusya lehine değişen güç dağılımıyla ilişkilidir.",
+        "Berlin’e geçişin verilen nedeni, büyük güçlerin bu üstünlüğü sınırlama isteğidir. Dördüncü seçeneği seç; süreci bütün rekabetin bitişi olarak okuma."
+      ],
+      "optionReasons": [
+        "Osmanlı’nın bütün devletleri askerî olarak yendiği verilmemiştir; pasaj diplomatik itiraz ve yeni düzenleme zinciri kurar.",
+        "Diğer güçlerin itirazı çıkar çatışmasının sürdüğünü gösterir; bütün çatışmaların bitmesiyle açıklanamaz.",
+        "Rus nüfuzunun genişlediği açıkça verilir; hiçbir kazanç elde etmediği iddiası pasajla çelişir.",
+        "Rusya lehine değişen nüfuz dağılımına itiraz, diğer büyük güçlerin dengeyi yeniden sınırlama isteğini destekler.",
+        "Balkan topluluklarının aynı devlete gönüllü katılması hakkında bilgi yoktur; bu yorum aktör ve süreci değiştirir."
+      ],
+      "commonError": "Yeni antlaşmaya geçilmesini önceki antlaşmanın hiçbir kazanç sağlamadığı veya çıkar çatışmalarının bittiği biçiminde yorumlamak.",
+      "check": "Neden zincirinde önce Rus nüfuzunun artışı, sonra diğer güçlerin itirazı bulunuyor mu? Sonucun bu sırayı tersine çevirmediğini kontrol et."
+    }
+  },
+  {
+    "id": "f11h-b10",
+    "identity": "[\"f11h-b10\",\"Hangi değerlendirme yanlıştır?\",\"1840 Londra düzenlemesi Mısır valiliğini;1841 Londra Sözleşmesi ise Boğazlarda savaş gemisi geçişinin statüsünü ele alıyor.\",[\"Aynı şehir adı iki farklı belgeyi örtebilir.\",\"Konu ve yıl birlikte denetlenmelidir.\",\"Mısır sorunu ile Boğazlar sorunu ilişkilidir ama özdeş değildir.\",\"Bir belgenin taraf ve kapsamı ayrıca incelenmelidir.\",\"İki belge aynı konuyu aynı yılda düzenleyen tek metindir.\"],4,\"1840 ve 1841 farklı tarihler, Mısır valiliği ile Boğazlar da farklı düzenleme konularıdır; tek metin oldukları söylenemez. Diğer dört değerlendirme belgeyi tür, tarih ve kapsamıyla ayırma yöntemini doğru kullanır. Yakınlık özdeşlik değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı kentte farklı yıllarda ve farklı konularda birden fazla diplomatik belge hazırlanabilir. Bir belgenin kimliğini yalnız şehir adı değil, tarih, taraflar, düzenlenen konu ve hükümleri birlikte belirler. Bağlantılı sorunları incelemek yararlıdır; ancak aralarındaki ilişki her kaydı aynı metin olarak okumayı gerektirmez."
+      ],
+      "strategy": "Her Londra kaydı için yılı ve düzenlenen konuyu iki sütuna yaz. Yanlış değerlendirmeyi ararken seçeneklerin bu kayıtlardan hangisini sildiğini veya değiştirdiğini göster.",
+      "steps": [
+        "1840 kaydı Mısır valiliğiyle ilgilidir; 1841 kaydı Boğazlarda savaş gemisi geçişinin statüsünü düzenler.",
+        "Yıllar da konular da ayrıdır. Londra adının ortaklığı bu ayrımları ortadan kaldırmaz; taraf ve kapsam ayrıca incelenebilir.",
+        "İkisini aynı yılda aynı konuyu düzenleyen tek metin saymak yanlıştır. Olumsuz köke göre beşinci seçeneği seç."
+      ],
+      "optionReasons": [
+        "Verilen iki Londra kaydı aynı şehir adının farklı belgelere ait olabileceğini gösterir; değerlendirme doğrudur.",
+        "Yılları ve konuları birlikte denetlemek iki metnin karıştırılmasını önler; bu yöntem verilen kayıtlara uygundur.",
+        "Mısır ve Boğazlar meseleleri aynı diplomasi çevresinde bağlantılı olsa da burada düzenlenen konular özdeş değildir.",
+        "Belgenin taraflarını ve kapsamını ayrıca incelemek, şehir adının tek başına yetmediği durumda doğru bir değerlendirmedir.",
+        "1840–1841 yılları ve Mısır–Boğazlar konuları farklıdır; tek metin, aynı yıl ve aynı konu iddiası açıkça yanlıştır."
+      ],
+      "commonError": "Aynı şehir adını iki farklı yıl ve kapsamın yerine koyup bağlantılı belgeleri tek antlaşma saymak.",
+      "check": "Yanlış dediğin seçeneğin hem yıl hem konu kaydıyla çeliştiğini göster; yalnız iki belgenin birbirine yakın tarihlerde olmasına dayanma."
+    }
+  },
+  {
+    "id": "f11h-s01",
+    "identity": "[\"f11h-s01\",\"Bu ilişkide çalışanların konumu nasıl tanımlanır?\",\"Bir işletmede üretim araçları işverene aittir; çalışanlar belirli işler yapıp ücret almaktadır.\",[\"Ücretli emek\",\"Bütün üretim araçlarının ortak hanedan mülkiyeti\",\"Doğrudan ayan meclisi üyeliği\",\"Dış borç alacaklılığı\",\"Her çalışanın fabrikanın tamamına sahip olması\"],0,\"Çalışanın ücret karşılığı emek sunması ücretli emek ilişkisidir. Fabrika mülkiyetinin her işçiye ait olduğu açıkça söylenmiyor, tersine işverene ait. Ayan üyeliği ve borç alacaklılığı farklı statülerdir; üretim ilişkisi bunları kendiliğinden kazandırmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Üretim ilişkileri incelenirken araçların kime ait olduğu, çalışmayı kimin yaptığı ve karşılığın nasıl ödendiği ayrı belirlenir. Bir işletmede çalışmak tek başına o işletmenin mülkiyetini edinmek anlamına gelmez. Siyasal üyelik, borç alacaklılığı ve emek sunma da ayrı statülerdir; her birinin farklı bir dayanağı gerekir."
+      ],
+      "strategy": "Araç sahibi, işi yapan ve ödemenin yönü için üç kayıt oluştur. Çalışanların konumunu yalnız açık verilen ilişkiyle tanımla; sahiplik veya başka kamu statüsü ekleyen seçenekleri ayır.",
+      "steps": [
+        "Üretim araçları işverene aittir; çalışanlara ait olduğu söylenmemektedir. Mülkiyet bilgisi önce sabitlenmelidir.",
+        "Çalışanlar iş yapıp bunun karşılığında ücret alır. Verilen ilişki, emek sunma ile para karşılığını birleştirir.",
+        "Bu konum ücretli emek olarak adlandırılır. İlk seçeneği seç; çalışmayı fabrika sahipliği, meclis üyeliği veya alacaklılık sayma."
+      ],
+      "optionReasons": [
+        "Çalışanların iş yapıp ücret alması ücretli emek ilişkisini tanımlar; mülkiyet işverende kalmaktadır.",
+        "Üretim araçlarının hanedana ortak mülkiyeti verilmez; kök işverenin sahipliğini açıkça belirtir.",
+        "Bir işletmede ücretle çalışmak kişiye Ayan Meclisi üyeliği kazandırmaz; böyle bir atama bilgisi yoktur.",
+        "Dış borç alacaklılığı, devlete borç veren taraf olmayı gerektirir; çalışanların ücret alması bu ilişki değildir.",
+        "Kök araçların işverene ait olduğunu verir; her çalışanın fabrikanın tamamına sahip olması bununla çelişir."
+      ],
+      "commonError": "İşletmede çalışan kişiyi, ücret aldığı için işletmenin sahibi veya dış borcun alacaklısı saymak.",
+      "check": "Çalışanın verdiği şey ile aldığı karşılığı söyle. Mülkiyetin kimde kaldığını da ayrı denetleyerek statünü doğrula."
+    }
+  },
+  {
+    "id": "f11h-s02",
+    "identity": "[\"f11h-s02\",\"Bu koşullarda hangi sonuç beklenebilir?\",\"1838 ticaret düzenlemesi yabancı tüccara geniş imkân tanıyor; makineyle üretilen mallar yerli atölyelerin bulunduğu pazara daha kolay giriyor.\",[\"Bütün yerli üreticiler kesin olarak vergi muafiyeti kazanır.\",\"Yerli atölyeler üzerinde rekabet baskısı artabilir.\",\"Bütün dış ticaret aynı gün durur.\",\"Düyûn-ı Umûmiye 1838'de kurulmuş olur.\",\"Fiyat ve maliyet hiçbir üreticiyi etkileyemez.\"],1,\"İthal malların kolay girişi ve makine maliyet avantajı yerli atölyelere rekabet baskısı yaratabilir. Bütün atölyelerin kesin kapanması da bu cümleden çıkarılmaz. Yerliye genel muafiyet, ticaretin bitişi ve 1881 borç idaresinin 1838'de kurulması verilenlere aykırı ek iddialardır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Pazar rekabeti değerlendirilirken pazara erişim koşulları, üretim yöntemi ve maliyetler birlikte incelenir. Makineyle üretim bazı mallarda ölçek ve maliyet avantajı sağlayabilir; ticaret kuralları da bu malların alıcıya ulaşmasını etkileyebilir. Olası bir ekonomik etki ile bütün üreticiler için kesin kapanma veya muafiyet kararı farklı iddialardır."
+      ],
+      "strategy": "Önce ticaret düzenlemesinin mal girişini nasıl etkilediğini, sonra bu malların üretim yöntemini kaydet. Yerli atölyelerle aynı pazarda karşılaşmanın olası etkisini, kesin ve toplu sonuçlardan ayır.",
+      "steps": [
+        "1838 düzenlemesi yabancı tüccarın imkânlarını genişletir; dışarıdan gelen mallar yerli atölyelerin pazarına daha kolay ulaşır.",
+        "Makineyle üretilen malların bu pazarda yer alması, yerli atölyelerin satış ve maliyet koşullarını karşılaştırmalı baskıya açabilir.",
+        "Beklenebilecek ölçülü sonuç rekabet baskısının artabilmesidir. İkinci seçeneği seç; bütün atölyelerin kapanması veya genel vergi muafiyeti ekleme."
+      ],
+      "optionReasons": [
+        "Yerli üreticilerin tamamına vergi muafiyeti verildiği belirtilmez; yabancı tüccarın imkânları böyle bir hak doğurmaz.",
+        "İthal malların daha kolay girişi ve makineli üretim, aynı pazardaki yerli atölyeler üzerinde rekabet baskısını artırabilir.",
+        "Pasaj mal girişinin kolaylaşmasını anlatır; bütün dış ticaretin durması bunun tersidir.",
+        "Düyûn-ı Umûmiye 1881 borç idaresidir; 1838 ticaret düzenlemesi onun kuruluşu değildir.",
+        "Fiyat ve maliyetin hiçbir üreticiyi etkileyememesi iddiası üretim ve pazar karşılaşmasının ekonomik etkisini kanıtsız biçimde yok sayar."
+      ],
+      "commonError": "Rekabet baskısı olasılığını bütün yerli işletmelerin kesin kapanmasına veya bütün üreticilere yeni ayrıcalık verilmesine dönüştürmek.",
+      "check": "Yanıtındaki artabilir derecesini koru. Etkiyi hem mal girişinin kolaylaşması hem üretim yöntemiyle açıklayabiliyor musun?"
+    }
+  },
+  {
+    "id": "f11h-s03",
+    "identity": "[\"f11h-s03\",\"Son basamakta anlatılan kurum hangisidir?\",\"Kronoloji:1854 ilk dış borç;1875 ödeme krizi;1881 belirli vergi gelirlerini borç ödemelerine yönelten idare.\",[\"Mekteb-i Mülkiye\",\"İrad-ı Cedit\",\"Düyûn-ı Umûmiye\",\"Ayan Meclisi\",\"Enderun\"],2,\"1881'de alacaklıların temsil edildiği gelir denetimi Düyûn-ı Umûmiyedir. Mülkiye yönetici eğitimi, İrad-ı Cedit farklı bir mali hazine, Ayan anayasal meclis, Enderun saray eğitimiyle ilişkilidir.‘Devlet kurumu’ ortak etiketi görev farkını ortadan kaldırmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Borçlanma, ödeme güçlüğü ve borç hizmeti için gelir ayrılması farklı mali aşamalardır. Bir gelir idaresini tanırken paranın nereden toplandığı, nereye yöneltildiği ve kimin adına yönetildiği izlenir. Aynı devlet içindeki hazine, okul ve meclis kurumları yalnız kamu kurumu olmaları nedeniyle aynı görevi üstlenmez."
+      ],
+      "strategy": "Son basamağın tarihini ve para akışını birlikte belirle. Seçenekleri eğitim, yasama, hazine ve borç hizmeti işlevleri bakımından ayır; yalnız mali bir ad çağrışımıyla karar verme.",
+      "steps": [
+        "Kronoloji 1854 borçlanmasını ve 1875 ödeme krizini verir; soru bunları değil 1881’deki son kurumu istemektedir.",
+        "Son basamakta belirli vergi gelirleri borç ödemelerine yöneltilir. Ayırıcı görev alacaklılar adına borç hizmetine gelir sağlamaktır.",
+        "1881’deki bu idare Düyûn-ı Umûmiye’dir. Üçüncü seçeneği seç; başka bir mali hazineyi veya eğitim kurumunu aynı göreve koyma."
+      ],
+      "optionReasons": [
+        "Mekteb-i Mülkiye sivil idareci eğitimiyle ilgilidir; borç ödemesine vergi geliri yönelten idare değildir.",
+        "İrad-ı Cedit farklı dönemin mali hazinesidir; verilen 1881 borç hizmeti idaresinin adı değildir.",
+        "Düyûn-ı Umûmiye, belirli gelirleri alacaklılar adına borç ödemelerine yönelten 1881 düzenlemesidir.",
+        "Ayan Meclisi yasama yapısının atanmış kanadıdır; borç gelirlerini tahsil eden idare değildir.",
+        "Enderun saray eğitim kurumudur; vergi gelirini dış borç hizmetine ayırma göreviyle tanımlanmaz."
+      ],
+      "commonError": "Sorulan son basamak yerine ilk borç tarihini yanıtlamak veya mali ad taşıyan bütün kurumları aynı görevde görmek.",
+      "check": "1881 tarihini kapatıp kurumun para akışını söyle: vergi geliri nereden nereye gidiyor? Sonra ad ile tarihi birlikte doğrula."
+    }
+  },
+  {
+    "id": "f11h-s04",
+    "identity": "[\"f11h-s04\",\"Bu araçların doğrudan hedefi hangisidir?\",\"Bir politika yerli üreticileri şirketleşmeye yönlendiriyor, sanayi sergileri ve teknik eğitimle üretim becerisini geliştirmeye çalışıyor.\",[\"Bütün dış borçları askerî harekâtla tahsil etmek\",\"Ayan Meclisine üye atamak\",\"Bütün çiftçileri topraktan zorunlu olarak çıkarmak\",\"Yerli üretimin örgütlenmesini ve teknik kapasitesini güçlendirmek\",\"Boğazları savaş gemilerine koşulsuz açmak\"],3,\"Bu araçlar sermaye ve iş gücünü örgütlemeye, ürünleri tanıtmaya ve teknik beceriyi artırmaya yönelir. Borç tahsili, meclis ataması ve Boğazlar düzeni bu araçların işlevi değildir. Çiftçilerin tamamının topraktan çıkarılması da verilen politika kapsamında yer almaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Üretim politikalarının araçları kendi işlevleriyle okunur. Şirketleşme sermaye ve faaliyetin ortak bir yapı içinde toplanmasını, sergi ürünlerin tanıtılmasını, teknik eğitim ise üretimle ilgili bilgi ve beceri edinimini sağlayabilir. Bir aracın hedefini belirlerken onu doğrudan kullanan kesim ve yaptığı iş izlenir; başka alanlarda kendiliğinden sonuç doğurduğu varsayılmaz."
+      ],
+      "strategy": "Şirketleşme, sergi ve teknik eğitim için ne işe yarar sorusunu ayrı yanıtla. Bu üç aracın aynı hedefte nasıl birleştiğini seçeneklerle karşılaştır; askerî, yasama ve geçiş rejimi konularını ayır.",
+      "steps": [
+        "Şirketleşme üreticilerin sermaye ve faaliyetlerini örgütleme aracıdır; sergiler ürünlerin tanıtılmasına yönelir.",
+        "Teknik eğitim üretim becerisi kazandırmayı amaçlar. Üç araç da yerli üreticinin faaliyeti ve üretim yapabilmesi çevresinde birleşir.",
+        "Doğrudan hedef yerli üretimin örgütlenmesini ve teknik kapasitesini güçlendirmektir. Dördüncü seçeneği seç; bu hedefi ölçülmüş kesin başarı sayma."
+      ],
+      "optionReasons": [
+        "Askerî harekâtla dış borç tahsili verilen şirketleşme, sergi ve eğitim araçlarının işlevi değildir.",
+        "Ayan üyeliğine atama ile üreticilerin örgütlenmesi ve teknik eğitimi arasında verilen bir işlem bağı yoktur.",
+        "Çiftçilerin tamamını zorla topraktan çıkarma, bu politika araçları arasında belirtilmemiştir.",
+        "Şirketleşme örgütlenmeye, sergi tanıtıma, teknik eğitim beceriye yönelir; ortak hedef yerli üretim kapasitesini güçlendirmektir.",
+        "Boğazlarda savaş gemisi geçişi diplomatik ve askerî bir statü konusudur; bu üretim araçlarının hedefi değildir."
+      ],
+      "commonError": "Bir politikanın doğrudan araç–hedef bağını kurmadan, aynı döneme ait ilgisiz askerî veya siyasal gelişmeyi seçmek.",
+      "check": "Seçtiğin hedefe üç araç için de ayrı bağlantı gösterebiliyor musun? Yalnız bir araçla açıklanabilen çağrışımla yetinme."
+    }
+  },
+  {
+    "id": "f11h-s05",
+    "identity": "[\"f11h-s05\",\"Bu kanıttan hangi sonuç çıkarılamaz?\",\"Bir liman kentinin nüfusu demiryolu bağlantısı, yeni işler ve savaş göçleriyle artıyor. Konut ve sağlık hizmetleri hakkında başka bilgi yoktur.\",[\"Birden fazla göç nedeni etkili olmuştur.\",\"Ulaşım ağı kentin çekiciliğini etkileyebilir.\",\"Savaş yer değiştirmeye yol açabilir.\",\"Kent hizmetlerine talep artabilir.\",\"Bütün sakinlerin yaşam koşulları kesin olarak iyileşmiştir.\"],4,\"Konut, sağlık ve gelir verisi bulunmadığı için herkesin koşullarının kesin iyileştiği söylenemez. Nüfus artışı hizmet baskısı da yaratabilir. Diğer seçenekler verilen iş, ulaşım ve savaş etkenleriyle veya nüfusun hizmet ihtiyacıyla uyumludur; mutlak refah garantisi eklemez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kent nüfusunun değişimi için ulaşım, iş imkânları ve zorunlu yer değiştirmeler ayrı etkenler olarak incelenir. Yaşam koşullarını değerlendirmek için barınma, sağlık, gelir ve hizmetlere erişim gibi göstergeler gerekir. Nüfus sayısı ile refah göstergeleri farklı soruları yanıtlar; nüfus artışının ihtiyaçlara ve hizmet talebine etkisi ayrıca araştırılabilir."
+      ],
+      "strategy": "Pasajdaki göç ve çekim etkenlerini listele. Sonra seçeneklerin nüfus hareketini mi, hizmet talebi olasılığını mı yoksa her sakinin yaşam sonucunu mu anlattığını ayır; eksik ölçümleri kontrol et.",
+      "steps": [
+        "Pasaj demiryolu bağlantısı, yeni işler ve savaş göçlerini birlikte verir. Dolayısıyla tek nedenli bir nüfus hareketi anlatılmamaktadır.",
+        "Daha çok insan kent hizmetlerine ihtiyaç duyabilir; fakat konut, sağlık ve gelir koşullarının nasıl değiştiği verilmez.",
+        "Bütün sakinlerin yaşam koşullarının kesin iyileştiği sonucu bu verilerle kurulamaz. Çıkarılamayanı isteyen kökte beşinci seçeneği seç."
+      ],
+      "optionReasons": [
+        "Ulaşım, işler ve savaş göçleri ayrı etkenlerdir; birden fazla nedenin etkili olması açık kayıtla desteklenir.",
+        "Demiryolu bağlantısı pasajdaki nüfus artışı etkenleri arasındadır; ulaşımın çekiciliği etkileyebilmesi uygundur.",
+        "Savaş göçlerinin verilmesi, savaşın yer değiştirmeye yol açabileceğini destekler.",
+        "Nüfus artışı hizmet ihtiyacını artırabilir; bu olasılık her sakinin refahının kesin arttığını iddia etmez.",
+        "Konut ve sağlık başta olmak üzere yaşam koşullarının ölçümleri yoktur; herkes için kesin iyileşme çıkarılamaz."
+      ],
+      "commonError": "Kent nüfusunun büyümesini, gelir ve hizmet verisi olmadan bütün sakinlerin refah artışıyla eşitlemek.",
+      "check": "Herkes ve kesin sözlerini hangi ölçüm destekliyor? Nüfus sayısını yaşam kalitesi ölçümü yerine kullanmadığını denetle."
+    }
+  },
+  {
+    "id": "f11h-s06",
+    "identity": "[\"f11h-s06\",\"İki aracın ortak idari etkisi hangi seçenekte doğru ifade edilmiştir?\",\"Demiryolu asker ve malzemeyi taşırken telgraf merkezdeki emri taşraya hızla iletiyor.\",[\"Merkezin uzak bölgelere erişimini ve koordinasyonunu kolaylaştırabilirler.\",\"İkisi de yalnız yazılı mesaj taşır.\",\"İkisi de yalnız fiziksel yük vagonudur.\",\"Bütün yerel yönetimler zorunlu olarak aynı gün ortadan kalkar.\",\"Bütün hatlar sadece devlet bütçesiyle yapılmış olmak zorundadır.\"],0,\"İnsan-yük taşınması ile emir-bilgi iletimi farklı araçlarla koordinasyona katkı verir. İkisinin yalnız mesaj veya yalnız yük taşıdığı doğru değildir. Yerel yönetimlerin bitişi ve finansmanın her yerde tek biçimi hakkında da kanıt yoktur; imtiyaz ve yatırım kaynakları değişebilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ulaşım araçları insan ve fiziksel malzemeyi; haberleşme araçları mesaj ve bilgiyi taşır. İdari işlerin yürütülmesi için hem görevlilerin ve malzemenin hareketi hem emirlerin zamanında iletilmesi incelenebilir. Bir aracın işlevi, bütün hatların finansmanının nasıl yapıldığı veya yerel kurumların hukuken kaldırıldığı sorusundan ayrıdır."
+      ],
+      "strategy": "Demiryolu ile telgrafın taşıdığı şeyi ayrı yaz. Sonra bu iki farklı işlevin bir idari görevin yürütülmesindeki ortak sonucunu araştır; araçları aynı taşıma türüne indirgeme.",
+      "steps": [
+        "Demiryolu asker ve malzemeyi fiziksel olarak taşır; telgraf ise merkezdeki emri bilgi olarak taşraya ulaştırır.",
+        "Fiziksel sevk ve hızlı haberleşme, uzak bir yerdeki işin merkezden planlanıp yürütülmesinin iki farklı gereksinimine katkı verir.",
+        "Ortak idari etki merkezin erişimini ve koordinasyonunu kolaylaştırabilmeleridir. İlk seçeneği seç; finansman veya yerel yönetimlerin kaldırılması hakkında yeni hüküm kurma."
+      ],
+      "optionReasons": [
+        "İnsan ve malzeme sevki ile emir iletimi farklı araçlarla merkezin uzak bölgelere erişim ve koordinasyonunu kolaylaştırabilir.",
+        "Demiryolu yalnız yazılı mesaj taşımaz; asker ve malzeme taşınması açıkça verilmiştir.",
+        "Telgraf fiziksel yük vagonu değildir; emir ve bilgi iletir. İki araç aynı işlevde değildir.",
+        "Erişim ve haberleşmenin artması bütün yerel yönetimlerin aynı gün hukuken kaldırılmasını gerektirmez.",
+        "Pasaj hatların finansman kaynağını vermez; bütün hatların yalnız devlet bütçesinden yapılması zorunluluğu çıkarılamaz."
+      ],
+      "commonError": "İki aracın ortak idari yararını, ikisinin de aynı şeyi aynı yöntemle taşıdığı iddiasıyla karıştırmak.",
+      "check": "Araçların taşıdığı şeyleri ayrı tutarak ortak idari sonucu açıklayabiliyor musun? Ortak etki için özdeş işlev gerektirmediğini kontrol et."
+    }
+  },
+  {
+    "id": "f11h-s07",
+    "identity": "[\"f11h-s07\",\"Bu iki işleve en uygun eşleştirme hangisidir?\",\"Bir kurum çiftçinin kredi ihtiyacına çözüm arıyor; diğer kurum alacaklıları temsil ederek vergi gelirlerini borç ödemelerine ayırıyor.\",[\"Ayan–Mebusan\",\"Ziraat Bankası–Düyûn-ı Umûmiye\",\"Düyûn-ı Umûmiye–Tıbbiye\",\"Mekteb-i Harbiye–Enderun\",\"Şeyhülislam–Nişancı\"],1,\"Ziraat Bankası tarımsal krediyle, Düyûn-ı Umûmiye ise belirli gelirleri borç hizmetine yöneltmeyle ilişkilidir. Diğer çiftler temsil, eğitim veya klasik görev alanlarına aittir. Para sözcüğünün iki işlemde bulunması amaç ve para akışını eşitlemez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Mali kurumları ayırt etmek için paranın kime, hangi amaçla ve hangi yönde aktığı izlenir. Üreticiye kredi sağlamak gelecekte geri ödenmek üzere finansman sunmayı; alacaklı adına gelir ayırmak mevcut borcun ödenmesine kaynak aktarmayı içerir. Her iki işlemde para bulunması, yararlanıcıların ve kurum görevlerinin aynı olduğu anlamına gelmez."
+      ],
+      "strategy": "İlk işlev için kredi alanı, ikinci işlev için gelirden ödeme alanı belirle. Seçeneklerdeki kurum çiftlerini verilen sırayla ve iki ayrı görevle denetle.",
+      "steps": [
+        "İlk kurum çiftçinin finansman ihtiyacına krediyle karşılık arar; para üretimi desteklemek üzere çiftçiye yönelir.",
+        "İkinci kurum alacaklılar adına belirli vergi gelirlerini borç ödemesine ayırır. Buradaki görev kredi verme değil mevcut borç hizmetidir.",
+        "İlk işlev Ziraat Bankası, ikinci işlev Düyûn-ı Umûmiye ile eşleşir. İkinci seçeneği seç; eşleştirme sırasını koru."
+      ],
+      "optionReasons": [
+        "Ayan ve Mebusan meclis kanatlarıdır; çiftçi kredisi ile borç geliri tahsili görevlerini karşılamaz.",
+        "Ziraat Bankası tarımsal krediyle, Düyûn-ı Umûmiye alacaklılar adına borç hizmeti gelirleriyle ilişkilidir; sıra ve iki görev doğrudur.",
+        "Düyûn-ı Umûmiye çiftçiye kredi kurumu olarak verilmez; Tıbbiye de borç tahsilatı değil hekim eğitimiyle ilgilidir.",
+        "Harbiye ve Enderun eğitim kurumlarıdır; iki mali para akışını karşılamaz.",
+        "Şeyhülislam ve nişancı klasik yönetim görevleridir; çiftçi kredisi–borç hizmeti kurum çifti değildir."
+      ],
+      "commonError": "Kredi sağlama ile borç tahsil etme işlevlerini yalnız ikisinde de para geçtiği için aynı kurum faaliyeti saymak.",
+      "check": "Her kurum için paranın kime gittiğini söyle. Çiftçiye kaynak sunma ile alacaklıya ödeme arasındaki yön farkını koru."
+    }
+  },
+  {
+    "id": "f11h-s08",
+    "identity": "[\"f11h-s08\",\"En uygun yorum hangisidir?\",\"Devlet hekim yetiştirmek için Tıbbiye, sivil idareci yetiştirmek için Mülkiye açıyor; eski eğitim kurumlarının bir bölümü de sürüyor.\",[\"İki okul aynı uzmanlığı öğretmektedir.\",\"Bütün eski okullar aynı gün kaldırılmıştır.\",\"Yeni uzmanlık kurumlarıyla eski yapıların birlikte bulunduğu bir dönüşüm vardır.\",\"Tıbbiye borç tahsil idaresidir.\",\"Mülkiye yalnız savaş gemisi üretir.\"],2,\"Hekimlik ile sivil yönetim farklı uzmanlık ihtiyaçlarıdır; eski kurumların sürmesi dönüşümün eşzamanlı ve kademeli olduğunu gösterir. Aynı uzmanlık, bütün eski okulların bitişi, borç tahsili veya gemi üretimi yorumları verilen görevlerle uyuşmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Eğitim kurumları, yetiştirdikleri meslek ve ihtiyaç duyulan uzmanlık üzerinden karşılaştırılabilir. Hekim yetiştirme ile sivil yönetici yetiştirme ayrı müfredat ve görev alanları gerektirir. Bir yeniliğin kapsamını incelerken yalnız açılan kurumların değil, aynı dönemde kapanan veya sürmeye devam eden kurumların kayıtlarına da bakılır."
+      ],
+      "strategy": "İki yeni okulun hedef mesleklerini ayrı yaz. Ardından eski kurumlar hakkında verilen sürme kaydını ekle; seçeneklerin bu üç bilgiyi birlikte koruyup korumadığını denetle.",
+      "steps": [
+        "Tıbbiye hekim, Mülkiye sivil idareci yetiştirir. Yeni kurumların uzmanlık hedefleri birbirinden farklıdır.",
+        "Eski eğitim kurumlarının bir bölümünün sürdüğü açıkça verilir. Bu kayıt, bütün eski okulların aynı gün kaldırılması sonucunu dışlar.",
+        "Yeni uzmanlık kurumlarıyla eski yapıların birlikte bulunduğu bir dönüşüm anlatılır. Üçüncü seçeneği seç; görevleri borç tahsili veya gemi üretimiyle değiştirme."
+      ],
+      "optionReasons": [
+        "Hekimlik ve sivil idarecilik farklı uzmanlıklardır; iki okulun aynı uzmanlığı öğrettiği söylenemez.",
+        "Eski kurumların bir bölümünün sürdüğü açıkça verildiğinden, hepsinin aynı gün kaldırıldığı iddiası yanlıştır.",
+        "Yeni uzmanlık okulları açılırken bazı eski kurumlar sürer; birlikte bulunmayı koruyan dönüşüm yorumu doğrudur.",
+        "Tıbbiye hekim yetiştirir; borç tahsil idaresi olarak tanımlanması görevini değiştirir.",
+        "Mülkiye sivil yönetici yetiştirme amacıyla verilmiştir; yalnız savaş gemisi üretmesi bu işleve uymaz."
+      ],
+      "commonError": "Yeni okul açılışını otomatik olarak bütün eski okulların eşzamanlı kapanışı saymak veya okul adlarını uzmanlıklarından ayırmak.",
+      "check": "Yorumunda iki farklı meslek ile bazı eski kurumların devamı birlikte duruyor mu? Bu üç kayıttan hiçbirini silme."
+    }
+  },
+  {
+    "id": "f11h-s09",
+    "identity": "[\"f11h-s09\",\"Bu kaydı değerlendirirken hangi sınıra dikkat edilmelidir?\",\"Bir nüfus kaydı özellikle erkek nüfusu sayıyor ve askerlik-vergi planlamasında kullanılıyor.\",[\"Kayıtlar hiçbir idari amaçla kullanılamaz.\",\"Sayılan erkekler toplumun bütün yaş ve cinsiyet gruplarıdır.\",\"Bu kayıt herkesin siyasal görüşünü kesin olarak verir.\",\"Kapsama girmeyen gruplar hesaba katılmadan bütün topluma kesin oranlar genellenmemelidir.\",\"Nüfus kaydı doğrudan fabrika mülkiyet belgesidir.\"],3,\"Erkek nüfusa odaklanan kayıttan bütün yaş ve cinsiyet grupları için doğrudan tam oran üretmek kapsamı aşar. Askerlik-vergi planlaması zaten verilen amaçtır; siyasi görüş ve fabrika mülkiyeti bu kayıtta ölçülmez. Kayıt değerli olabilir ama kapsam sınırı korunmalıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir nüfus kaydının değeri hangi kişileri, hangi değişkenleri ve hangi amaçla kaydettiğine bağlıdır. Kayıtta bulunmayan gruplar için oran üretmek, kapsama ilişkin ek veri gerektirir. İdari bir sayımın kişi sayısı vermesi, kişilerin siyasal görüşü veya mülkiyeti gibi ölçmediği özellikleri de bildirdiği anlamına gelmez."
+      ],
+      "strategy": "Kaydın kapsadığı nüfusu ve kullanım amacını ayrı belirle. Bütün topluma yönelik bir yorum için hangi grupların dışarıda kalabileceğini sor; seçenekleri bu kapsama göre sınayarak ilerle.",
+      "steps": [
+        "Kayıt özellikle erkek nüfusa odaklanmaktadır; verilen veri bütün yaş ve cinsiyet gruplarını kapsayan tam kayıt olarak sunulmaz.",
+        "Askerlik ve vergi planlaması amaçları açıkça verilir. Ancak kayda girmeyen grupların sayısı ve dağılımı hakkında ek bilgi yoktur.",
+        "Bu gruplar hesaba katılmadan bütün topluma kesin oran genellenmemelidir. Dördüncü seçeneği seç; kaydı değersiz veya her şeyi ölçen belge sayma."
+      ],
+      "optionReasons": [
+        "Askerlik ve vergi planlaması idari kullanım olarak açıkça verilmiştir; hiçbir idari amaçla kullanılamaz denemez.",
+        "Erkek nüfus kaydı, kadınlar dâhil bütün yaş ve cinsiyet gruplarını otomatik olarak kapsamaz.",
+        "Kayıtta siyasal görüş ölçüldüğü belirtilmez; herkesin görüşünü kesin verme iddiası kapsamı aşar.",
+        "Kapsam dışındaki gruplar için ek veri olmadan bütün topluma kesin oran genellemek uygun değildir; sınır doğru belirtilmiştir.",
+        "Nüfus sayımı kişileri kaydeder; doğrudan fabrika mülkiyet belgesi olduğu bilgisi yoktur."
+      ],
+      "commonError": "Kayıt altındaki bir grubun özelliklerini eksik grupları hesaba katmadan bütün topluma kesin biçimde yaymak.",
+      "check": "Hangi kişiler sayılmış, hangi özellik ölçülmüş? Yanıtın sayılmayan kişileri veya ölçülmeyen görüşleri kayıtta var sayıyor mu?"
+    }
+  },
+  {
+    "id": "f11h-s10",
+    "identity": "[\"f11h-s10\",\"Bu metinden hangi yargıya ulaşılamaz?\",\"Bir politika yerli girişimi ve sermaye birikimini desteklemek için teşvikler getiriyor. Metin gerçekleşen üretim miktarı veya başarı oranı vermiyor.\",[\"Yerli girişimi güçlendirme hedefi vardır.\",\"Politika araçları arasında teşvik bulunmaktadır.\",\"Sonucu ölçmek için ek veriye ihtiyaç vardır.\",\"Amaç ile gerçekleşmiş sonuç ayrı değerlendirilmelidir.\",\"Ekonomik bağımlılık kesin olarak ve tamamen ortadan kalkmıştır.\"],4,\"Teşvik hedefi verilmiş ama sonuç ölçülmemiştir; bağımlılığın tamamen bittiği söylenemez. Diğer dört seçenek bu bilgi sınırını korur. Üretim, finansman, gelir ve uygulama verileri olmadan bir politikanın ilanını kesin başarıyla eşitlemek tarihsel çıkarım hatasıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir politikanın amacı, kullandığı araçlar ve ölçülen sonuçları ayrı incelenir. Teşvik, hedeflenen davranışı desteklemek için sunulan bir araçtır; başarısını değerlendirmede üretim, gelir, finansman veya uygulama kapsamı gibi göstergeler kullanılır. Bir metinde hedefin yazılı olması ile bu göstergelere ait gerçekleşme verilerinin bulunması aynı bilgi değildir."
+      ],
+      "strategy": "Metni amaç, araç ve sonuç verisi olarak üç sütuna ayır. Her seçeneğin hangi sütuna dayandığını göster; ölçüm bulunmadan tam başarı ilan eden yargıyı özellikle sınayarak ilerle.",
+      "steps": [
+        "Yerli girişim ve sermaye birikimini desteklemek politikanın açık hedefidir. Teşvikler de bu hedef için kullanılan araçlardır.",
+        "Gerçekleşen üretim miktarı veya başarı oranı verilmemiştir. Dolayısıyla etkinin boyutu ve bağımlılık üzerindeki sonucu için ek veri gerekir.",
+        "Ekonomik bağımlılığın kesin ve tamamen ortadan kalktığı sonucuna ulaşılamaz. Olumsuz kökü koruyarak beşinci seçeneği seç."
+      ],
+      "optionReasons": [
+        "Yerli girişimi güçlendirme hedefi kökte açıkça vardır; bu yorum amaç bilgisine dayanır.",
+        "Teşvikler politika aracı olarak belirtilmiştir; seçenek doğrudan verilen bilgiyi korur.",
+        "Sonuç ölçümleri verilmediği için etkiyi değerlendirmek üzere ek veriye ihtiyaç vardır.",
+        "Hedef ile gerçekleşme verisi ayrı olduğundan amacı sonuçtan ayrı değerlendirmek uygun yöntemdir.",
+        "Üretim veya başarı ölçümü yokken ekonomik bağımlılığın kesin ve tamamen bittiği söylenemez; bu sonuç kanıtı aşar."
+      ],
+      "commonError": "Teşvikin ilanını ölçülmüş sonuç sayıp yerli girişimi destekleme hedefinden tam ekonomik bağımsızlık sonucu çıkarmak.",
+      "check": "Seçtiğin yargı için sonuç ölçümü gerekiyor mu? Metindeki hedefi, bulunmayan başarı oranının yerine koymadığını denetle."
+    }
+  },
+  {
+    "id": "f11h-w01",
+    "identity": "[\"f11h-w01\",\"Anlatılan gelişme hangisidir?\",\"1908'de Kanun-ı Esasi yeniden işler hâle geliyor ve meclis açılıyor; hükümdarlık sürüyor.\",[\"II. Meşrutiyet\",\"Cumhuriyetin ilanı\",\"Sened-i İttifak\",\"Karlofça Antlaşması\",\"Düyûn-ı Umûmiye'nin kuruluşu\"],0,\"1908'de anayasal işleyişin yeniden başlaması II. Meşrutiyettir. Hükümdarlığın sürdüğü açıkken cumhuriyet sonucu çıkarılamaz. Sened-i İttifak 1808, Karlofça 1699, Düyûn-ı Umûmiye 1881 bağlamındadır; ortak Osmanlı konusu kronoloji farkını silmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Anayasal yönetim tarihinde bir metnin ilk ilanı, işleyişinin kesintiye uğraması, yeniden uygulanması ve maddelerinin değiştirilmesi ayrı olaylar olabilir. Olayı adlandırırken hangi işlemin gerçekleştiği ve hükümdarlığın devam edip etmediği incelenir. Meclisin çalışması tek başına cumhuriyet ilanı, mali bir kurumun kurulması da anayasal yönetimin başlaması değildir."
+      ],
+      "strategy": "Tarih, yeniden işlerlik ve hükümdarlığın sürmesi koşullarını birlikte kullan. Seçeneklerde ilk anayasa, cumhuriyet, mali kurum ve önceki uzlaşma bağlamlarını ayır.",
+      "steps": [
+        "Kök 1908’de Kanun-ı Esasi’nin yeniden işler olduğunu ve meclisin açıldığını verir; ilk defa bir anayasa yazılması anlatılmaz.",
+        "Hükümdarlık sürmektedir. Bu kayıt, yeniden anayasal işleyişi doğrudan cumhuriyet ilanı saymayı engeller.",
+        "1908’deki gelişme II. Meşrutiyettir. İlk seçeneği seç; diğer seçeneklerin farklı tarih ve kurum türlerini bu olayla birleştirme."
+      ],
+      "optionReasons": [
+        "1908’de anayasal işleyişin yeniden başlaması ve hükümdarlığın sürmesi II. Meşrutiyeti tanımlar.",
+        "Kök hükümdarlığın sürdüğünü açıkça verir; cumhuriyet ilanı değildir.",
+        "Sened-i İttifak 1808 merkez–ayan uzlaşmasıdır; 1908’deki yeniden anayasal işleyişin adı değildir.",
+        "Karlofça 1699 tarihli barış antlaşmasıdır; meclisin 1908’de yeniden açılmasını tanımlamaz.",
+        "Düyûn-ı Umûmiye 1881’de borç hizmeti için kurulan idaredir; anayasal yönetimin yeniden başlaması değildir."
+      ],
+      "commonError": "Yeniden anayasal işleyişi ilk anayasanın yazılması veya cumhuriyet ilanıyla eşitlemek.",
+      "check": "Yanıtın yeniden sözcüğünü ve hükümdarlığın devamını birlikte koruyor mu? Tarih ile hukuki işlemi ayrı doğrula."
+    }
+  },
+  {
+    "id": "f11h-w02",
+    "identity": "[\"f11h-w02\",\"Bu görüşün temel dayanağı hangi fikir akımıyla en uyumludur?\",\"Bir görüş, din ve etnik köken ayrımı yapmadan ortak Osmanlı vatandaşlığı ve hukuk eşitliğiyle devleti bir arada tutmayı savunuyor.\",[\"Yalnız Türk dili çevresinde birlik\",\"Osmanlıcılık\",\"Yalnız halifelik çevresinde Müslüman dayanışması\",\"Merkantilizm\",\"Her durumda tek bir askerî ittifak\"],1,\"Ortak Osmanlı vatandaşlığı ve hukuk eşitliği Osmanlıcılığın ayırt edici dayanağıdır. Türk dili-kültürü Türkçülük, halifelik çevresi İslamcılık vurgusudur. Merkantilizm ekonomi yaklaşımı, askerî ittifak ise dış politika aracıdır; verilen vatandaşlık tanımını karşılamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Osmanlı’nın son dönem fikirlerini ayırt etmek için birliği hangi bağ üzerinden kurduklarına bakılır: ortak siyasal aidiyet, dil ve kültür, dinî dayanışma veya Batı kurumlarının örnek alınması farklı vurgulardır. Bir ekonomik politika veya askerî ittifak ise topluluğun üyeliğini tanımlayan düşünceyle aynı tür kavram değildir."
+      ],
+      "strategy": "Birliğe kimlerin hangi koşulla dâhil edildiğini belirle. Din ve etnik köken sınırı konup konmadığını seçeneklerle karşılaştır; devletin birliğini kuran düşünceyi dış politika aracından ayır.",
+      "steps": [
+        "Pasaj din ve etnik köken ayrımı yapmadan ortak vatandaşlığı esas alır; yalnız belirli dil veya din çevresine üyelik şartı koymaz.",
+        "Hukuk eşitliği bu ortak siyasal aidiyeti destekler. Aranan bağ yalnız askerî ortaklık veya dış ticaret politikası değildir.",
+        "Bu yaklaşım Osmanlıcılıkla uyumludur. İkinci seçeneği seç; yalnız dil veya yalnız halifelik merkezli birliği aynı kapsamda sayma."
+      ],
+      "optionReasons": [
+        "Yalnız Türk dili çevresinde birlik, pasajın din ve etnik köken ayrımı yapmayan geniş vatandaşlık kapsamını daraltır.",
+        "Ortak Osmanlı vatandaşlığı ve hukuk eşitliği Osmanlıcılığın ayırt edici dayanağıdır; verilen kapsamla örtüşür.",
+        "Yalnız Müslüman dayanışması, gayrimüslimleri de kapsayan ortak vatandaşlık anlayışını karşılamaz.",
+        "Merkantilizm dış ticaret ve hazineye ilişkin ekonomi yaklaşımıdır; vatandaşlık birliğinin adı değildir.",
+        "Tek askerî ittifak bir dış politika aracıdır; hukuk eşitliğiyle ortak vatandaşlık kuran fikir akımını tanımlamaz."
+      ],
+      "commonError": "Ortak devlet birliği amacını görüp bu birliğe kimlerin hangi bağla dâhil edildiğini incelememek.",
+      "check": "Kapsama gayrimüslimler ve farklı etnik kökenler de girebiliyor mu? Seçtiğin fikir bu açık koşulu korumalıdır."
+    }
+  },
+  {
+    "id": "f11h-w03",
+    "identity": "[\"f11h-w03\",\"Doğru sıra hangisidir?\",\"Bir öğrenci 1911'de başlayan Trablusgarp Savaşı'nı,1912'de başlayan I. Balkan Savaşı'nı ve 1914 Karadeniz harekâtını zaman sırasına koyuyor.\",[\"Karadeniz harekâtı → Trablusgarp → I. Balkan Savaşı\",\"I. Balkan Savaşı → Karadeniz harekâtı → Trablusgarp\",\"Trablusgarp → I. Balkan Savaşı → Karadeniz harekâtı\",\"I. Balkan Savaşı → Trablusgarp → Karadeniz harekâtı\",\"Trablusgarp → Karadeniz harekâtı → I. Balkan Savaşı\"],2,\"1911,1912 ve 1914 sırası Trablusgarp, I. Balkan Savaşı ve Karadeniz harekâtıdır. Diğer seçeneklerin her biri en az iki olayın sırasını ters çevirir. Savaşların birbirine etkisini anlamak için hem başlangıç yılı hem de sonuç aşaması korunmalıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kronolojik sıralamada önce olayın hangi aşamasının tarihinin verildiği belirlenir: başlangıç, bitiş ve antlaşma tarihleri birbirinin yerine kullanılamaz. Aynı takvimde verilen yıllar küçükten büyüğe sıralanır; olay adıyla tarih arasındaki bağ korunur. Bir savaşın daha uzun sürmesi, başlangıcını başka bir olaydan sonraya taşımaz."
+      ],
+      "strategy": "Üç olayı verilen başlangıç veya olay yılıyla eşleştir. Önce yılları sırala, sonra olay adlarını bu sıraya geri yerleştir; seçeneklerdeki her komşu çifti denetle.",
+      "steps": [
+        "Verilen çiftler Trablusgarp–1911, I. Balkan Savaşı–1912 ve Karadeniz harekâtı–1914’tür. Soruda farklı bitiş tarihleri aranmamaktadır.",
+        "Yıllar 1911 < 1912 < 1914 biçiminde artar. En erken kayda Trablusgarp, en geç kayda Karadeniz harekâtı bağlıdır.",
+        "Adları artan yıllara yerleştirince Trablusgarp → I. Balkan Savaşı → Karadeniz harekâtı elde edilir. Üçüncü seçeneği seç."
+      ],
+      "optionReasons": [
+        "1914 Karadeniz harekâtını 1911 ve 1912 olaylarından önceye koyar; başlangıç sırasını ters çevirir.",
+        "1912 ve 1914 olaylarını 1911 Trablusgarp’tan önceye alır; en erken olay sona taşınmıştır.",
+        "1911, 1912 ve 1914 artan sırasına karşılık gelen olay dizisi budur; bütün tarih–olay bağları korunur.",
+        "1912 I. Balkan Savaşı’nı 1911 Trablusgarp’tan önce gösterir; ilk iki olayın sırası yanlıştır.",
+        "1914 Karadeniz harekâtını 1912 I. Balkan Savaşı’ndan önce koyar; son iki olayın sırası yanlıştır."
+      ],
+      "commonError": "Savaşların bitiş veya antlaşma tarihlerini dışarıdan getirerek kökte açık verilen başlangıç yıllarının yerine koymak.",
+      "check": "Seçtiğin sırada her komşu yıl soldan sağa artıyor mu? Olay adı ile yılı ayırmadan iki komşu çifti de denetle."
+    }
+  },
+  {
+    "id": "f11h-w04",
+    "identity": "[\"f11h-w04\",\"Bu olayın en yakın siyasal-askerî sonucu hangisidir?\",\"1914'te Osmanlı donanmasındaki Yavuz ve Midilli, Rusya'nın Karadeniz limanlarına yönelik harekâtta yer alıyor.\",[\"1808'de merkez–ayan uzlaşmasının yapılması\",\"1908'de ilk kez bir anayasa yazılması\",\"1923 Lozan'ın aynı gün imzalanması\",\"Osmanlı'nın I. Dünya Savaşı'na fiilen girişinin tetiklenmesi\",\"Kırım Savaşı'nın başlaması\"],3,\"29 Ekim 1914 Karadeniz harekâtı Rusya'yla çatışmayı ve ardından savaş ilanlarını tetiklemiştir.1808 ve 1908 gelişmeleri önceki,1923 Lozan sonraki dönemdir; Kırım Savaşı 1853'te başlamıştır. Bir deniz harekâtının adı farklı savaşlara otomatik aktarılmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir devletin savaş sürecindeki diplomatik yakınlığı, deniz harekâtı, savaş ilanı ve fiilî çatışması farklı aşamalar olabilir. En yakın sonuç sorusunda olaydan sonra gelişen doğrudan siyasal-askerî bağ aranır. Daha önce gerçekleşmiş bir olay sonuç olamaz; çok sonraki bir barış da aradaki süreç atlanarak aynı gün yaşanmış sayılamaz."
+      ],
+      "strategy": "Önce 1914, Karadeniz ve Rus limanları ipuçlarını bir araya getir. Seçeneklerin zamanını ve olayla kurabildiği doğrudan çatışma bağını kontrol et.",
+      "steps": [
+        "Harekât 1914’te Rusya’nın Karadeniz limanlarına yöneliktir. Bu, Rusya’yla doğrudan askerî çatışma bağını kurar.",
+        "Karadeniz harekâtı Rusya ve ardından diğer İtilaf güçleriyle savaş ilanlarına uzanan süreci tetikler. İncelenen savaş 1914’te başlayan Dünya Savaşıdır.",
+        "En yakın sonuç Osmanlı’nın I. Dünya Savaşı’na fiilen girişinin tetiklenmesidir. Dördüncü seçeneği seç; önceki yüzyıl olaylarını veya 1923 barışını bu tarihe taşıma."
+      ],
+      "optionReasons": [
+        "1808 merkez–ayan uzlaşması olaydan yüz yılı aşkın süre öncedir; 1914 harekâtının sonucu olamaz.",
+        "1908’de anayasal işleyiş yeniden başlar; ilk anayasa 1876’dadır. Ayrıca önceki olay 1914 harekâtının sonucu değildir.",
+        "Lozan 1923’tedir; 1914 harekâtıyla aynı gün imzalanmadığı gibi en yakın çatışma sonucu da değildir.",
+        "Rus limanlarına harekât Rusya’yla çatışmayı ve savaş ilanlarını tetikleyerek Osmanlı’nın I. Dünya Savaşı’na fiilî girişine bağlanır.",
+        "Kırım Savaşı 1853’te başlamıştır; 1914 deniz harekâtı onun başlangıcı olamaz."
+      ],
+      "commonError": "Karadeniz veya donanma ortak sözcüklerinden hareketle farklı yüzyıllardaki savaşları aynı olayın sonucu saymak.",
+      "check": "Sonuç seçeneği 1914’ten önce mi sonra mı? Sonra olması yeterli değil; Rusya’yla doğrudan çatışma bağını da gösterebilmelisin."
+    }
+  },
+  {
+    "id": "f11h-w05",
+    "identity": "[\"f11h-w05\",\"Hangi değerlendirme yanlıştır?\",\"İtalya savaş öncesi Üçlü İttifak üyesidir;1914'te tarafsız kalır,1915'te İtilaf yanında savaşa girer.\",[\"Savaş öncesi üyelik ile fiilî savaş katılımı ayrı bilgilerdir.\",\"İtalya'nın durumu yıl belirtilerek anlatılmalıdır.\",\"Blokların fiilen savaşan üye listesi zamanla değişmiştir.\",\"1915'te İtalya İtilaf yanında yer almıştır.\",\"İtalya 1914'te Almanya yanında fiilen savaşmıştır.\"],4,\"1914'te tarafsızlık verildiği için Almanya yanında fiilen savaştığı yargısı yanlıştır. Diğer seçenekler tarih ve statü ayrımını doğru korur. İtalya'nın 1915'teki kararı, bütün savaşın başından beri aynı tarafta çatıştığını kanıtlamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Savaş öncesi bir ittifaka üyelik, belirli bir yılda fiilen savaşa katılma ve savaş sırasında taraf seçme ayrı statülerdir. Bir devletin durumunu incelerken her yıla katılma, tarafsız kalma veya çekilme gibi açık bir fiil bağlanır. Blok listeleri tarih verilmeden sabit bir fotoğraf gibi kullanılmamalıdır."
+      ],
+      "strategy": "İtalya için savaş öncesi, 1914 ve 1915 kayıtlarını ayrı yaz. Yanlış değerlendirmeyi bulmak için her seçenekte üyelikle fiilî katılımın ve yılın doğru eşleştirilip eşleştirilmediğini kontrol et.",
+      "steps": [
+        "Savaş öncesinde İtalya Üçlü İttifak üyesidir; bu kayıt savaş öncesi diplomatik üyeliği gösterir.",
+        "1914’te tarafsız kaldığı, 1915’te İtilaf yanında savaşa girdiği ayrıca verilir. Önceki üyelik 1914’te fiilî savaş katılımı yerine konamaz.",
+        "İtalya’nın 1914’te Almanya yanında fiilen savaştığı iddiası yanlıştır. Olumsuz köke göre beşinci seçeneği seç."
+      ],
+      "optionReasons": [
+        "Üyelik ile savaş katılımını ayırmak verilen üç aşamayı korur; değerlendirme doğrudur.",
+        "İtalya’nın durumu yıllar arasında değiştiği için yıl belirtilerek anlatılması gerekir.",
+        "1915’te yeni fiilî katılımın verilmesi, savaşan blok listelerinin zamanla değişmesini destekler.",
+        "1915’te İtilaf yanında savaşa girdiği kökte açıkça belirtilir; değerlendirme doğrudur.",
+        "Kök 1914’te tarafsız kaldığını verir; o yıl Almanya yanında fiilen savaştığı iddiası bununla çelişir."
+      ],
+      "commonError": "Savaş öncesi ittifak listesini, savaşın her yılında fiilen savaşanların değişmez listesi olarak kullanmak.",
+      "check": "Üç kayıt için üç ayrı fiil kullan: üye, tarafsız, katıldı. Yanlış seçeneğin bu fiillerden hangisini hangi yılda değiştirdiğini göster."
+    }
+  },
+  {
+    "id": "f11h-w06",
+    "identity": "[\"f11h-w06\",\"Bu cephe hangisidir?\",\"Bir cephede İtilaf kuvvetleri Boğazları geçip Osmanlı başkentini baskı altına almayı hedefliyor; Osmanlı kuvvetleri deniz ve kara savunması yapıyor.\",[\"Çanakkale\",\"Galiçya\",\"Kanal\",\"Kafkas\",\"Makedonya yardım cephesi\"],0,\"İtilaf'ın Boğazları geçme girişimine karşı Osmanlı deniz-kara savunması Çanakkale Cephesidir. Kanal Süveyş yönündeki Osmanlı harekâtı, Kafkas Rusya'ya karşı doğu, Galiçya ve Makedonya müttefike destek bağlamındadır. Yalnız ‘cephe’ ortak sözcüğü amaç ve coğrafyayı eşitlemez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Cepheleri tanırken saldıran tarafın hedefi, coğrafi geçit ve savunmanın niteliği birlikte kullanılır. Deniz ve kara harekâtlarının aynı bölgede bulunması, bir geçidin hem denizden hem kıyıdan savunulmasını gerektirebilir. Yardım cepheleri, doğu sınırındaki çatışmalar ve başka su yollarına yönelik harekâtlar ayrı coğrafya ve amaçlarla incelenir."
+      ],
+      "strategy": "Boğazları geçme hedefini, Osmanlı başkentine ulaşma amacını ve deniz–kara savunmasını üçlü kanıt olarak kullan. Seçeneklerin coğrafyasını bu hedefle birlikte karşılaştır.",
+      "steps": [
+        "İtilaf kuvvetlerinin hedefi Boğazları geçip başkenti baskı altına almaktır. Bu, yalnız herhangi bir sınırda savaşılması bilgisinden daha özgüldür.",
+        "Osmanlı’nın deniz ve kara savunması aynı geçidi koruma bağlamında verilir; Süveyş yönünde Osmanlı taarruzu veya doğu sınırı çatışması anlatılmaz.",
+        "Bu amaç ve coğrafya Çanakkale Cephesine karşılık gelir. İlk seçeneği seç; yalnız cephe sözcüğünün ortaklığına dayanma."
+      ],
+      "optionReasons": [
+        "Boğazları aşarak başkente ulaşma girişimine karşı Osmanlı deniz ve kara savunması Çanakkale Cephesinin bağlamıdır.",
+        "Galiçya müttefiklere destek verilen cephelerdendir; Boğazlar üzerinden Osmanlı başkentine yönelen harekât değildir.",
+        "Kanal Cephesi Süveyş yönündeki Osmanlı harekâtıyla ilgilidir; burada saldıran taraf ve coğrafi hedef farklıdır.",
+        "Kafkas Cephesi Rusya’ya karşı doğu bölgesindedir; Boğazları geçme hedefini karşılamaz.",
+        "Makedonya yardım cephesi müttefike destek bağlamındadır; başkenti Boğazlardan savunma cephesi değildir."
+      ],
+      "commonError": "Cephe adlarını yalnız savaşılan ülkeye göre seçip saldırının coğrafyasını ve yönünü gözden kaçırmak.",
+      "check": "Seçtiğin cephe hem Boğazlar hem başkent hedefi hem deniz–kara savunmasını açıklıyor mu? Üç ipucunu birlikte doğrula."
+    }
+  },
+  {
+    "id": "f11h-w07",
+    "identity": "[\"f11h-w07\",\"Bu cephelerin verilen ortak niteliği hangisidir?\",\"Osmanlı birlikleri Galiçya, Romanya ve Makedonya'da müttefik devletlere askerî destek veriyor.\",[\"Hepsi yalnız İstanbul Boğazı'nı savunmak için açılmıştır.\",\"Müttefiklere ana sınırların dışında yardım edilmiştir.\",\"Hepsi Kırım Savaşı'nın cepheleridir.\",\"Hepsinde aynı gün aynı sonuç yaşanmıştır.\",\"Bu cepheler Osmanlı'nın savaşa hiç katılmadığını gösterir.\"],1,\"Üç örneğin ortak yönü müttefiklere Osmanlı ana sınırları dışında yardım etmektir. Boğaz savunması başka cephedir, savaş 1914–1918 bağlamındadır. Aynı gün ve sonuç iddiası verilmez; asker gönderilmesi savaşa katılmama yorumunu da geçersiz kılar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Birlik gönderilen cepheler, Osmanlı birliklerinin görevi ve harekâtın yürüdüğü coğrafya üzerinden sınıflanabilir. Müttefike destek, başkenti savunma ve kendi hedefi için taarruz farklı görev tanımlarıdır. Birden fazla cephede ortak nitelik aranırken tarihlerinin ve sonuçlarının da aynı olduğu ayrıca verilmedikçe varsayılmaz."
+      ],
+      "strategy": "Üç cephe için birliklerin kime destek verdiğini ve nerede görev yaptığını ortak ölçütlerle incele. Yalnız bir cepheye ait amaçları veya verilmemiş eşzamanlı sonuçları ortak özellik sayma.",
+      "steps": [
+        "Pasaj üçünde de Osmanlı birliklerinin müttefiklere askerî destek verdiğini açıkça belirtir; ortak görev destek sağlamaktır.",
+        "Galiçya, Romanya ve Makedonya’daki bu görevler savaş dönemindeki Osmanlı ana sınırlarının dışındaki yardım harekâtlarıdır.",
+        "Ortak nitelik müttefiklere ana sınırların dışında yardım edilmesidir. İkinci seçeneği seç; aynı gün ve aynı sonuç şartı ekleme."
+      ],
+      "optionReasons": [
+        "Bu üç yardım cephesi yalnız İstanbul Boğazı’nı savunma amacıyla tanımlanmamıştır; görev ve coğrafya değiştirilmiştir.",
+        "Osmanlı birliklerinin müttefiklere ana sınırlar dışında askerî yardım vermesi üç örneğin ortak niteliğidir.",
+        "Bu cepheler I. Dünya Savaşı bağlamındadır; Kırım Savaşı cepheleri olarak gösterilemez.",
+        "Aynı gün ve aynı sonucun yaşandığı verilmez; ortak destek görevi eşzamanlı özdeş sonuç demek değildir.",
+        "Askerî birlik gönderilmesi savaşa fiilî katkıdır; Osmanlı’nın hiç katılmadığı sonucunu göstermez."
+      ],
+      "commonError": "Ortak görev bilgisini ortak tarih ve aynı sonuç iddiasına genişletmek ya da yardım cephesini başkent savunmasıyla eşitlemek.",
+      "check": "Ortak özelliği kime yardım ve hangi coğrafya sorularıyla kur. Pasajda bulunmayan aynı gün koşulunu eklemediğini denetle."
+    }
+  },
+  {
+    "id": "f11h-w08",
+    "identity": "[\"f11h-w08\",\"Hangi yorum en uygundur?\",\"1917'de Rusya'da yönetim değişikliği barış arayışına yol açıyor; ABD İtilaf yanında savaşa giriyor. Rusya'nın resmî çekilişi 1918 Brest-Litovsk'la düzenleniyor.\",[\"İki gelişme de İtilaf'ın insan ve üretim gücünü zorunlu olarak azaltır.\",\"Rusya'nın resmî çekiliş belgesi 1856 Paris'tir.\",\"Doğuda İttifak üzerindeki baskının azalması ile İtilaf'a yeni kaynak katılması farklı etkiler yaratır.\",\"ABD 1917'de savaştan çekilmiştir.\",\"Bütün savaş 1917'de kesin olarak bitmiştir.\"],2,\"Rusya'nın barışa yönelmesi doğudaki baskıyı azaltırken ABD'nin katılımı İtilaf kapasitesini artırır. Etkiler farklı taraf ve zaman ölçeklerine aittir. Paris 1856 başka savaştır; ABD'nin yönü ters çevrilemez ve Dünya Savaşı 1918'e kadar sürmüştür.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir savaşın gidişatına etki eden olaylar için aktör, blok, zaman ve kaynak yönü ayrı izlenir. Bir devletin barış arayışı, resmî çekiliş belgesi ve başka bir devletin savaşa katılması aynı işlem değildir. Etkiyi değerlendirmek için hangi tarafın hangi cephedeki yükünün veya insan–üretim kaynaklarının değiştiği sorulur."
+      ],
+      "strategy": "Rusya ve ABD için tarih, yapılan işlem ve etkilenen taraf sütunları oluştur. Etkileri tek yönde bir toplam sanmadan ayrı değerlendir; 1917 girişimleriyle 1918 resmî belgeyi karıştırma.",
+      "steps": [
+        "Rusya 1917’de yönetim değişikliği sonrasında barış arayışına yönelir; resmî çekiliş 1918 Brest-Litovsk ile düzenlenir. Bu süreç İttifakın doğudaki baskısını azaltır.",
+        "ABD ise 1917’de İtilaf yanında savaşa girer. Katılım, bu tarafa yeni insan ve üretim kaynakları katılması yönündedir.",
+        "İki olay farklı taraflara ve ölçeklere etki eder: Doğuda İttifak üzerindeki baskı azalırken İtilaf yeni kaynak kazanır. Üçüncü seçeneği seç."
+      ],
+      "optionReasons": [
+        "ABD’nin katılımı İtilaf’a kaynak ekler; iki olayın da zorunlu olarak insan ve üretim gücünü azaltması doğru değildir.",
+        "Rusya’nın resmî çekilişi 1918 Brest-Litovsk ile verilir; 1856 Paris farklı savaşın antlaşmasıdır.",
+        "Rusya’nın barış süreci doğuda İttifakın baskısını azaltırken ABD’nin katılımı İtilaf’a kaynak ekler; farklı etkiler doğru ayrılır.",
+        "ABD 1917’de çekilmez, İtilaf yanında savaşa girer; işlemin yönü ters çevrilmiştir.",
+        "1917 olayları bütün savaşın kesin bitişi değildir; Rusya’nın resmî çekilişi bile 1918 olarak ayrıca verilir."
+      ],
+      "commonError": "Aynı yılda yaşanan iki gelişmenin aynı tarafı aynı yönde etkilediğini sanmak ve barış arayışını resmî çekilişle eşitlemek.",
+      "check": "Her olay için kime, ne yönde etki sorusunu ayrı yanıtla. Rusya’nın süreç başlangıcı ile resmî belgesini farklı tarihlerde tut."
+    }
+  },
+  {
+    "id": "f11h-w09",
+    "identity": "[\"f11h-w09\",\"Bu iki hüküm nasıl eşleştirilir?\",\"Mondros'un bir hükmü güvenlik tehdidinde stratejik yerlerin işgaline geniş yorum alanı tanıyor; başka hüküm altı doğu vilayetinde karışıklık çıkmasına özgüdür.\",[\"İlk24, ikinci7. madde\",\"İkisi de yalnız borç taksitlerini düzenler.\",\"İkisi de bütün savaş gemilerini yasaklayan 1841 belgesidir.\",\"İlk7, ikinci24. madde\",\"İkisi de yalnız askerî okul giriş şartıdır.\"],3,\"7. madde güvenlik gerekçesiyle stratejik noktalar için geniş yetki,24. madde altı doğu vilayetinde karışıklık koşuluyla özel hükümdür. İlk seçenek numaraları ters çevirir. Borç,1841 Boğazlar düzeni ve okul şartları Mondros'ta verilen bu iki hükmün konusu değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Antlaşma hükümleri, yetki verilen taraf, işlemin konusu, coğrafi kapsam ve uygulama koşulu üzerinden karşılaştırılır. Genel stratejik nokta ifadesiyle belirli vilayetleri sayan hüküm aynı kapsamı kurmaz. Bir maddeyi tanımak için yalnız işgal sözcüğü değil, hangi olay gerçekleşirse hangi yerde uygulanacağı da korunmalıdır."
+      ],
+      "strategy": "İlk ve ikinci hüküm için koşul ile coğrafi alanı ayrı yaz. Sonra madde numaralarını bu içeriklerle eşleştir; iki hükümde ortak geçen işgal sözcüğüne tek başına dayanma.",
+      "steps": [
+        "İlk hüküm güvenlik tehdidini ve stratejik noktaları esas alır; uygulama alanı belirli altı vilayetle sınırlandırılmamıştır.",
+        "İkinci hüküm altı doğu vilayetinde karışıklık çıkması koşuluna bağlıdır. Bu özel coğrafya ve koşul ilk hükümden ayrılır.",
+        "Mondros’ta geniş güvenlik hükmü 7, altı doğu vilayetine ilişkin hüküm 24. maddedir. İlk 7–ikinci 24 eşleştirmesini veren dördüncü seçeneği seç."
+      ],
+      "optionReasons": [
+        "İki numara ters yerleştirilmiştir; geniş stratejik nokta hükmü 7, altı doğu vilayeti hükmü 24. maddedir.",
+        "Verilen hükümler güvenlik gerekçesiyle işgal koşullarıyla ilgilidir; yalnız borç taksitlerini düzenlemez.",
+        "1841 Boğazlar Sözleşmesi başka belgedir; Mondros’taki bu koşullu işgal hükümleri onunla özdeş değildir.",
+        "İlk hükmün geniş güvenlik ve stratejik nokta kapsamı 7’ye, ikincinin altı doğu vilayeti ve karışıklık koşulu 24’e karşılık gelir.",
+        "Askerî okula giriş şartı anlatılmamıştır; hükümler işgal yetkisi ve uygulama koşullarıyla ilgilidir."
+      ],
+      "commonError": "İki maddede işgal geçtiği için koşul ve coğrafyayı ayırmadan numaraları ters eşleştirmek.",
+      "check": "Numaraları kapatarak önce geniş güvenlik alanını ve altı vilayet koşulunu ayır. Sonra numarayı eklediğinde her hükmün koşulu korunmalı."
+    }
+  },
+  {
+    "id": "f11h-w10",
+    "identity": "[\"f11h-w10\",\"Belgenin adı ve türü hangi seçenekte doğrudur?\",\"Bir belge30 Ekim 1918'de Osmanlı'nın çatışmayı durdurmasını, ordunun terhisini ve bazı askerî araçların teslimini düzenliyor.\",[\"Tanzimat:anayasa\",\"Versailles:Osmanlı'nın ilk nüfus sayımı\",\"Kanun-ı Esasi:ateşkes\",\"Uşi:1923 kesin barışı\",\"Mondros:ateşkes anlaşması\"],4,\"30 Ekim 1918 Mondros bir ateşkestir; kesin barış veya bütün sınırların aynı gün nihai paylaşımı değildir. Tanzimat ferman, Kanun-ı Esasi anayasa, Uşi 1912 İtalya ile barış bağlamındadır; Versailles Almanya'yla ilgilidir, Osmanlı nüfus sayımı değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ateşkes, savaşta çatışmaların durdurulmasına ilişkin hükümler koyar; terhis ve askerî araçların teslimi gibi koşullar içerebilir. Kesin barışta ise savaş sonrasındaki daha kapsamlı hukuki düzen incelenir. Bir belgeyi tanırken tarih, taraf ve düzenlenen işlem birlikte kullanılmalıdır; anayasa, ferman ve nüfus kaydı farklı belge türleridir."
+      ],
+      "strategy": "30 Ekim 1918 tarihini, Osmanlı tarafını ve durdurma–terhis–teslim fiillerini birlikte değerlendir. Önce belge türünü, ardından ad ve tarih eşleşmesini seçeneklerde denetle.",
+      "steps": [
+        "Belge Osmanlı’nın çatışmayı durdurmasını ve ordunun terhisini düzenler; bu içerik bir anayasa veya nüfus sayımı değildir.",
+        "30 Ekim 1918 tarihi ve askerî teslim koşulları Mondros belgesiyle eşleşir. Hükümler çatışmanın durdurulması aşamasına ilişkindir.",
+        "Adı Mondros, türü ateşkes anlaşmasıdır. Beşinci seçeneği seç; bunu bütün sınırları aynı gün kesinleştiren nihai barış diye genişletme."
+      ],
+      "optionReasons": [
+        "Tanzimat bir fermandır; anayasa türü ve 30 Ekim 1918 tarihiyle eşleşmez.",
+        "Versailles Almanya ile barış bağlamındadır; Osmanlı’nın ilk nüfus sayımı olarak tanımlanamaz.",
+        "Kanun-ı Esasi anayasadır; çatışmayı durdurma ve terhis düzenleyen ateşkes değildir.",
+        "Uşi 1912’de İtalya ile barıştır; 1923 kesin barışı veya verilen 1918 belgesi değildir.",
+        "30 Ekim 1918 Mondros belgesi çatışmanın durması ve askerî koşulları düzenleyen ateşkestir; ad ve tür birlikte doğrudur."
+      ],
+      "commonError": "Ateşkesi kesin barışla eşitlemek veya belge adını doğru hatırlayıp türünü yanlış vermek.",
+      "check": "Ad ve türü ayrı ayrı doğrula: Tarih hangi belgeyi, durdurma–terhis koşulları hangi hukuki aşamayı gösteriyor? İkisi de doğru olmalı."
+    }
+  }
+]

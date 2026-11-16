@@ -1,7 +1,7 @@
 {
-  "version": "0.18.1",
+  "version": "0.18.2",
   "channel": "alpha",
   "notes": {
-    "tr": "Matematik, fizik, kimya, biyoloji, Türkçe ve tarihte 200 eski sorunun çözümü genişletildi: gerekli bilgi, yöntem, 600 çözüm adımı, 1000 seçenek gerekçesi, sık hata ve kontrol. Ayrıntılı yardım 2943 soruda hazır. Madde miktarı–derişim hesabındaki hacim koşulu, ortak tamlanan sorusundaki ek bağlamı ve Azak sorusundaki tarih karşılaştırması açıklaştırıldı. Bağlı çözümlü örnekte birimler ayrıldı. Toplam 480 ayrıntılı anlatım, 480 yerleşik özet ve 5883 özgün soru korunur. Notlar, eski yanıtlar, başlanmış denemeler ve 3/7/21 tekrar tarihleri değişmez. Kaynakların bütün alt kazanımları ve resmî sınav arşivi üzerindeki çalışma sürüyor."
+    "tr": "30 konudaki 300 eski sorunun çözümleri genişletildi: gerekli bilgi, yöntem, 900 ayrı çözüm adımı, 1500 seçenek gerekçesi, sık hata ve sonuç kontrolü. Ayrıntılı yardım 3243 soruda hazır; 2640 kartın bütün yardım aşamaları hazırlanıyor. Bitkilerin yaşam döngüsü özellikleri, virüslerde kapsid stoku, iyonik adlandırma yöntemi, hâl değişiminde basınç ve harmonik dalga koşulları soru ve bağlı örneklerde netleştirildi. Toplam 480 ayrıntılı anlatım, 480 yerleşik özet ve 5883 özgün soru korunur. Eski yanıtlar, notlar, başlanmış denemeler ve 3/7/21 tekrar tarihleri değişmez. Kaynakların bütün alt kazanımları ve resmî sınav arşivi üzerindeki çalışma sürüyor."
   }
 }

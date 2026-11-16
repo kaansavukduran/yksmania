@@ -1,0 +1,1252 @@
+[
+  {
+    "id": "sayi-problemleri-011-1",
+    "identity": "[\"sayi-problemleri-011-1\",\"Bir sayının 4 katının 9 fazlası 61'dir. Sayı kaçtır?\",\"\",[\"13\",\"11\",\"15\",\"17\",\"20\"],0,\"4x=52 olduğundan x=13. Yerine koyunca 52+9=61 olur. 61'den 4 çıkarmak veya 9'u çarpmadan önce sayıya eklemek cümlenin işlem sırasını değiştirir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir sayının katı çarpma, bu katın fazlası ise çarpmadan sonra toplama ile yazılır.",
+        "Denklem çözerken eşitliğin iki tarafına aynı işlemi uygulamak eşitliği korur."
+      ],
+      "strategy": "Sayıyı bir kutu gibi düşün: önce kutunun dört kopyasını, sonra eklenen sabit miktarı ayır; işlemleri ters sırayla geri al.",
+      "steps": [
+        "Aranan sayıya x de. Dört katına dokuz eklenmesi 4 x+9 olduğundan 4 x+9=61 kur.",
+        "Eklenen dokuzu iki taraftan çıkar: 4 x=61−9=52. Böylece sayının yalnız dört katı kalır.",
+        "İki tarafı dörde böl: x=52/4=13. İstenen dört kat değil, sayının kendisidir."
+      ],
+      "optionReasons": [
+        "Doğru. 13 için 4·13+9=61; cümlenin iki işlemi de sağlanır.",
+        "11 için 4·11+9=53 olur; verilen 61 toplamına ulaşmaz.",
+        "15 için 4·15+9=69 çıkar; sayı dokuz eklenmeden önce fazla büyümüştür.",
+        "17 için 4·17+9=77 olur; eşitliğin sağ tarafı 61 kalmalıdır.",
+        "20 seçilirse 4·20+9=89 elde edilir; verilen ilişki bozulur."
+      ],
+      "commonError": "4(x+9) yazmak dokuzu da dörtle çarpar; metin dokuzu dört katına sonradan ekliyor.",
+      "check": "Ters zincirle doğrula: 13 → dört katı 52 → dokuz fazlası 61. Son iki işlem başlangıç cümlesini aynen üretir."
+    }
+  },
+  {
+    "id": "sayi-problemleri-011-2",
+    "identity": "[\"sayi-problemleri-011-2\",\"Bir sayının 6 eksiğinin 3 katı 42'dir. Sayı kaçtır?\",\"\",[\"12\",\"20\",\"16\",\"18\",\"24\"],1,\"3(x−6)=42 ⇒ x−6=14 ⇒ x=20. Kontrol 3·14=42. 3x−6 yazımı 6 eksiğinin üç katını değil, üç katının altı eksiğini anlatır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir ifadenin tamamının katı alınacaksa ifade paranteze yazılır.",
+        "Bir denklemde sıfır dışı bir çarpanı geri almak için iki tarafı o çarpana bölersin."
+      ],
+      "strategy": "Önce “altı eksiği”ni tek bir ara miktar kabul et; bu miktarı üç katından bulduktan sonra ilk sayıya geri dön.",
+      "steps": [
+        "Sayının altı eksiği x−6, bunun üç katı 3(x−6) olduğundan 3(x−6)=42 yaz.",
+        "İki tarafı üçe böl: x−6=14. Bu değer ilk sayı değil, onun altı eksiğidir.",
+        "Her iki tarafa altı ekle: x=20. Sayı ile ara miktarı birbirinden ayır."
+      ],
+      "optionReasons": [
+        "12 seçilirse 3(12−6)=18 olur; 42 koşulunu sağlamaz.",
+        "Doğru. 20 sayısının altı eksiği 14, onun üç katı 42 olduğundan uygundur.",
+        "16, yanlış 3 x−6=42 modelinin çözümüdür; özgün 3(16−6)=30 verir.",
+        "18 için önce 12, sonra 36 bulunur; 42 elde edilmez.",
+        "24 için altı eksiği 18 ve üç katı 54 olur; istenen 42 değildir."
+      ],
+      "commonError": "3 x−6 yazmak üç katın altı eksiğini anlatır; “altı eksiğinin üç katı” için çıkarma önce yapılmalıdır.",
+      "check": "Dağıtarak ikinci yoldan denetle: 3·20−18=60−18=42. Altı, parantez açılınca 18 olarak çıkarılır."
+    }
+  },
+  {
+    "id": "sayi-problemleri-011-3",
+    "identity": "[\"sayi-problemleri-011-3\",\"Ardışık üç tek sayının toplamı 93'tür. Bu sayıların en büyüğü kaçtır?\",\"\",[\"29\",\"30\",\"33\",\"31\",\"35\"],2,\"Toplam 3x=93 ⇒ x=31. Sayılar 29,31,33; istenen ortadaki değil en büyük olan 33'tür. Ortak fark 1 seçilirse tek sayılık koşulu bozulur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ardışık tek sayılar arasında iki fark vardır.",
+        "Eşit aralıklı üç sayının toplamı ortadakinin üç katıdır; ortadaki ile en büyük farklı niceliklerdir."
+      ],
+      "strategy": "Toplamı simetrik yazmak için orta tek sayıyı seç; denklemden sonra sorunun hangi terimi istediğine dön.",
+      "steps": [
+        "Ortadaki sayıya x de; üç ardışık tek sayı x−2, x, x+2 biçimindedir.",
+        "Toplamda −2 ve+2 gider: 3 x=93, buradan x=31 bulunur.",
+        "İstenen en büyük terim x+2=33 olur; üçlü 29,31,33 olarak tamamlanır."
+      ],
+      "optionReasons": [
+        "29 doğru üçlünün en küçük sayısıdır; sorulan en büyük değildir.",
+        "30 çift sayıdır; ayrıca 30 en büyük seçilirse 26+28+30=84 olur.",
+        "Doğru. 33 en büyük olduğunda 29+31+33=93 ve bütün terimler tektir.",
+        "31 ortadaki sayıdır; burada durmak sorulan terime geçişi atlar.",
+        "35 en büyük olsaydı 31+33+35=99 olurdu; toplam 93 değildir."
+      ],
+      "commonError": "Tek sayıların ardışıklığını birer artışla kurmak çift terimler üretir; ortalamayı bulmak da tek başına cevabı bitirmez.",
+      "check": "En büyükten geriye git: 33,31,29. Hem komşu farklar 2 hem toplam 93; sıra ve tür koşulları birlikte doğrulanır."
+    }
+  },
+  {
+    "id": "sayi-problemleri-011-4",
+    "identity": "[\"sayi-problemleri-011-4\",\"Bir sınıfta ikişerli oturulduğunda 2 kişi ayakta; üçerli oturulduğunda 4 sıra tamamen boş, diğer sıralar tam doludur. Toplam kaç öğrenci vardır?\",\"\",[\"14\",\"26\",\"28\",\"30\",\"32\"],3,\"2s+2=3(s−4) ⇒ s=14. Öğrenci sayısı 2·14+2=30; ikinci düzende 10·3=30. Sıra sayısı 14 doğrudur ama sorulan nicelik öğrenci toplamıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı sınıfın iki oturma düzeninde öğrenci sayısı değişmez.",
+        "Tamamen boş dört sıra, üçerli düzende toplam oturma kapasitesinden on iki kişilik yer çıkarır."
+      ],
+      "strategy": "Sıra sayısını ortak bilinmeyen seç; ayakta kalanları ilk toplama, boş sıraları ikinci düzenin dolu sıra sayısına yansıt.",
+      "steps": [
+        "Sıra sayısı s ise ilk düzende bütün sıralarda 2 s kişi, ayrıca ayakta 2 kişi vardır: N=2 s+2.",
+        "İkinci düzende dolu sıra sayısı s−4 ve N=3(s−4). Eşitle: 2 s+2=3 s−12; s=14.",
+        "Öğrenci sayısına geri dön: N=2·14+2=30. On dört sıra bulunması ara sonuçtur."
+      ],
+      "optionReasons": [
+        "14 doğru sıra sayısıdır; bu seçenek öğrenci sayısına dönüşü atlar.",
+        "26 öğrenci olsaydı ilk düzen s=12 gerektirirdi; ikinci düzen 3·8=24 öğrenci sayar ve eşitlik bozulur.",
+        "28,14 sıradaki oturanları sayar fakat ayakta duran 2 kişiyi unutur.",
+        "Doğru. 30, ilk düzende 28+2 ve ikinci düzende 10·3 olarak aynı toplamı verir.",
+        "32 öğrenci ilk düzende 15 sıra gerektirir; ikinci düzende 11·3=33 çıkar ve aynı sınıf olmaz."
+      ],
+      "commonError": "3 s−4 yazmak dört boş sırayı dört kişi sanır; üçerli düzende her boş sıra üç kişilik yer eksiltir.",
+      "check": "Sıraları ayrı denetle: 14 sıranın 4'ü boşsa 10'u dolu; 10·3=30. İkişerli oturan 28 kişiye 2 ayakta kişi eklenince yine 30 olur."
+    }
+  },
+  {
+    "id": "sayi-problemleri-011-5",
+    "identity": "[\"sayi-problemleri-011-5\",\"Bir otoparkta yalnız 2 tekerlekli bisikletler ve 4 tekerlekli otomobiller vardır. Toplam 16 araç ve 52 tekerlek olduğuna göre otomobil sayısı kaçtır?\",\"\",[\"6\",\"8\",\"9\",\"12\",\"10\"],4,\"16 bisiklet 32 tekerlek verir. Fazladan 20 tekerlek, her bisikletin otomobile dönüşümünde eklenen 2'şer tekerlektir: 20/2=10. Kontrol 10·4+6·2=52; bisiklet sayısı olan 6 sorulmuyor.\"]",
+    "guidance": {
+      "knowledge": [
+        "İki tür aracın sayıları toplamı araç toplamını, sayılarının kendi tekerlekleriyle çarpımı tekerlek toplamını verir.",
+        "Bir bisikletin yerine otomobil konması araç sayısını değiştirmez, tekerlek sayısını iki artırır."
+      ],
+      "strategy": "Tüm araçları iki tekerlekli kabul ederek bir başlangıç toplamı oluştur; gerçek toplamla farkı tür değişiminin etkisine böl.",
+      "steps": [
+        "On altı aracın hepsi bisiklet olsaydı 16·2=32 tekerlek bulunurdu.",
+        "Gerçekte 52−32=20 fazladan tekerlek vardır. Her otomobil iki fazla eklediği için otomobil sayısı 20/2=10'dur.",
+        "Geri kalan 16−10=6 araç bisiklettir; istenen türün otomobil olduğunu koru."
+      ],
+      "optionReasons": [
+        "6 otomobil sayısı değil, doğru çözümdeki bisiklet sayısıdır; 6 otomobil ile 10 bisiklet 44 tekerlek verir.",
+        "8 otomobil ve 8 bisiklet 32+16=48 tekerlek verir; dört eksiktir.",
+        "9 otomobil ve 7 bisiklet 36+14=50 tekerlek verir; verilen 52 değildir.",
+        "12 otomobil ve 4 bisiklet 48+8=56 tekerlek üretir; toplamı aşar.",
+        "Doğru. 10 otomobil ve 6 bisiklet 40+12=52 tekerlek ve 16 araç koşullarını birlikte sağlar."
+      ],
+      "commonError": "Fazladan 20 tekerleği dörde bölmek doğru değildir; başlangıç sayımında her aracın iki tekerleği zaten sayılmıştır.",
+      "check": "Denklemle kontrol et: 4 x+2(16−x)=52 ⇒2 x=20. x=10, iki bağımsız toplamla da uyumludur."
+    }
+  },
+  {
+    "id": "sayi-problemleri-011-6",
+    "identity": "[\"sayi-problemleri-011-6\",\"Yetişkin bileti 100 TL, öğrenci bileti 60 TL olan bir etkinlikte toplam 15 biletle 1180 TL gelir elde edilmiştir. Kaç öğrenci bileti satılmıştır?\",\"\",[\"8\",\"5\",\"6\",\"7\",\"9\"],0,\"60x+100(15−x)=1180 ⇒ 40x=320 ⇒ x=8. Gelir 8·60+7·100=1180 ve toplam 15'tir. Türlere ait fiyatları aynı adetle çarpmak toplam bilet koşulunu yok sayar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Toplam bilet sayısı ile toplam gelir farklı birimlerdedir.",
+        "Her öğrenci bileti, yetişkin biletine göre 40 TL daha az gelir getirir."
+      ],
+      "strategy": "Gelirin tamamını yetişkin biletlerinden gelmiş gibi hesapla; gerçek gelirdeki azalmayı bir öğrencinin oluşturduğu farkla karşılaştır.",
+      "steps": [
+        "Hepsi yetişkin olsaydı 15·100=1500 TL elde edilirdi.",
+        "Gerçek gelirden fark 1500−1180=320 TL'dir. Her öğrenci bileti 100−60=40 TL eksilttiği için öğrenci sayısı 320/40=8 olur.",
+        "Yetişkin sayısı 15−8=7'dir; 8 öğrenci bileti sorunun istediği niceliktir."
+      ],
+      "optionReasons": [
+        "Doğru. 8 öğrenci ve 7 yetişkin 480+700=1180 TL gelir verir; toplam 15 bilet korunur.",
+        "5 öğrenci ve 10 yetişkin 300+1000=1300 TL verir; geliri fazla bırakır.",
+        "6 öğrenci ve 9 yetişkin 360+900=1260 TL verir; 1180 olmaz.",
+        "7 doğru çözümdeki yetişkin sayısıdır; 7 öğrenci seçilirse 420+800=1220 TL elde edilir.",
+        "9 öğrenci ve 6 yetişkin 540+600=1140 TL verir; gelir 40 TL eksik olur."
+      ],
+      "commonError": "Öğrenci sayısını bulduktan sonra 15'ten çıkarmak yetişkin sayısını verir; seçenekler arasında istenen türü karıştırma.",
+      "check": "Fiyatları doğrudan geri yerleştir: 8·60+7·100=1180 ve 8+7=15; hem TL hem adet hesabı sağlanır."
+    }
+  },
+  {
+    "id": "sayi-problemleri-011-7",
+    "identity": "[\"sayi-problemleri-011-7\",\"Aynı rafı 14 küçük ve 6 büyük kutu veya 8 küçük ve 8 büyük kutu tam dolduruyor. Aynı tür kutular özdeştir; boşluk farkı yoktur. Raf yalnız küçük kutularla doldurulursa kaç kutu alır?\",\"\",[\"20\",\"32\",\"26\",\"28\",\"36\"],1,\"14a+6b=8a+8b ⇒ 6a=2b ⇒ b=3a. Raf kapasitesi 14a+18a=32a, yani 32 küçük kutudur. 14+6 yalnız karışık kutu sayısıdır; türlerin kapladığı yer aynı değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı dolu rafın kapasitesi her iki kutu düzeninde aynıdır.",
+        "Aynı türlerin özdeşliği ve boşluk farkının olmaması, kaplanan yerlerin toplanıp karşılaştırılmasını sağlar."
+      ],
+      "strategy": "Bir düzenden ötekine geçerken çıkarılan küçükleri eklenen büyüklerle karşılaştır; sonra kapasiteyi yalnız küçük kutu birimiyle ifade et.",
+      "steps": [
+        "Küçük kutu yeri a, büyük kutu yeri b olsun. 14a+6 b=8a+8 b yaz.",
+        "İki taraftan 8a ve 6 b çıkar: 6a=2 b; böylece b=3a olur.",
+        "İlk düzeni küçük birimiyle yaz: 14a+6·3a=32a. Raf 32 küçük kutu alır."
+      ],
+      "optionReasons": [
+        "20, ilk düzende 14+6 ile kutu adetlerini toplar; büyüklerin üç küçük yer kapladığını hesaba katmaz.",
+        "Doğru. 32 küçük birimlik kapasite hem 14+6·3 hem 8+8·3 ile bulunur.",
+        "26, örneğin büyükleri iki küçük sayınca 14+6·2 ile çıkar; oysa iki düzenin farkı b=3a gerektirir.",
+        "28 seçimi b=(28a−14a)/6=7a/3 gerektirir; ikinci düzenin kapasitesi 80a/3 olur ve 28a ile eşit olmaz.",
+        "36 için ilk düzen b=11a/3 gerektirirken ikinci düzen 112a/3 verir; kapasite eşitliğini bozar."
+      ],
+      "commonError": "Küçük ve büyük kutuları eşit yer kaplıyormuş gibi adetleri toplama; eşit olan rafın dolu hacmi veya yeridir.",
+      "check": "Bir büyük yerine üç küçük koyarak ikinci düzeni de dönüştür: 8+24=32. İki farklı başlangıç aynı tek tür kapasitesini doğrular."
+    }
+  },
+  {
+    "id": "sayi-problemleri-011-8",
+    "identity": "[\"sayi-problemleri-011-8\",\"Bir ürün 17 TL'dir. Başka ücret yoktur. 150 TL ile en çok kaç tane alınabilir?\",\"\",[\"7\",\"9\",\"8\",\"10\",\"17\"],2,\"150/17 yaklaşık 8,82'dir. 8 ürün 136 TL, 9 ürün 153 TL tutar. Bütçeyi aşmadan en büyük tam sayı 8'dir; normal yuvarlama ile 9 seçilemez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Satın alınan ürün adedi doğal sayıdır.",
+        "Bütçeyi aşmamak toplam fiyatın bütçeden küçük veya eşit olmasıdır; en çok için en büyük uygun adet aranır."
+      ],
+      "strategy": "Bütçe koşulunu eşitsizlikle yaz; bölme sonucunu normal yuvarlamak yerine komşu iki tam adedin fiyatını sınayarak sınırı seç.",
+      "steps": [
+        "Adet n için başka ücret olmadığından 17 n≤150 yaz.",
+        "150=17·8+14 olduğundan 8 ürün alınabilir ve 14 TL kalır.",
+        "Bir sonraki adet 9,17·9=153 TL tutar ve bütçeyi aşar; en büyük uygun adet 8'dir."
+      ],
+      "optionReasons": [
+        "7 ürün 119 TL tutar fakat bir ürün daha alınabildiği için en çok değildir.",
+        "9 ürün 153 TL tutar; 150 TL bütçeyi 3 TL aşar.",
+        "Doğru. 8 ürün 136 TL tutar ve 9 uncu ürün alınamaz; uygun en büyük tam sayıdır.",
+        "10 ürün 170 TL’ye mal olur; bütçenin 20 TL üzerindedir.",
+        "17, birim fiyatın sayısal değeridir; 17 adet 289 TL tutar ve adet sorusuna fiyatı taşır."
+      ],
+      "commonError": "8,82'yi 9'a normal yuvarlamak bütçe eşitsizliğini bozar; “en çok” tam adet aşağıdaki uygun sınırı ister.",
+      "check": "Kalan 14 TL, bir sonraki ürünün 17 TL fiyatından azdır; bu hem 8'in uygunluğunu hem daha fazlasının alınamayacağını gösterir."
+    }
+  },
+  {
+    "id": "sayi-problemleri-011-9",
+    "identity": "[\"sayi-problemleri-011-9\",\"Doğal sayı x, 'üç katı 20'den büyüktür' koşulunu sağlıyor. x'in alabileceği en küçük değer kaçtır?\",\"\",[\"5\",\"6\",\"8\",\"7\",\"20\"],3,\"x>20/3=6 tam 2/3 olur. İlk doğal sayı 7'dir; 3·6=18 sağlamaz, 3·7=21 sağlar. Sınırı 6'ya yuvarlamak büyüklük koşulunu ihlal eder.\"]",
+    "guidance": {
+      "knowledge": [
+        "“Büyüktür” kesin eşitsizliktir; eşitlik sınırı dahil değildir.",
+        "Doğal sayılı en küçük çözüm için gerçek sayı sınırının üstündeki ilk uygun doğal sayı seçilir."
+      ],
+      "strategy": "Üç kat koşulunu önce sayı doğrusu üzerinde bir alt sınır yap; sınırın hemen iki yanındaki doğal sayıları özgün cümlede dene.",
+      "steps": [
+        "Cümleyi 3 x>20 olarak yaz; üç pozitif olduğu için bölerken eşitsizlik yönü değişmez.",
+        "x>20/3=6+2/3 bulunur. Bu sınırın üstündeki ilk doğal sayı 7'dir.",
+        "Komşuları karşılaştır: 3·6=18 koşulu sağlamaz, 3·7=21 sağlar; en küçük değer 7 olur."
+      ],
+      "optionReasons": [
+        "5 için üç kat 15'tir; 20'den büyük değildir.",
+        "6 için üç kat 18'dir; kesirli sınırı aşağı yuvarlamak koşulu bozar.",
+        "8 koşulu sağlar çünkü 24>20; ancak 7 de sağladığından en küçük değildir.",
+        "Doğru. 7 için 21>20 ve bir önceki doğal sayı 6 için 18≤20 olduğundan ilk uygun değerdir.",
+        "20'nin üç katı 60 koşulu sağlar fakat daha küçük uygun değerler vardır; verilen sınırı sayının kendisi sanır."
+      ],
+      "commonError": "3 x>20'yi 3 x=20 olarak bitirmek doğal sayı çözümü vermez; eşitlik yalnız geçiş sınırını bulmaya yarar.",
+      "check": "Üç kat değerleri doğal sayılarda üçer artar: 18 koşulun altında, 21 üstündedir. Böylece arada daha küçük uygun doğal sayı kalmaz."
+    }
+  },
+  {
+    "id": "sayi-problemleri-011-10",
+    "identity": "[\"sayi-problemleri-011-10\",\"Bir sınıfta 18 öğrenci olduğu ve her öğrencinin tam 2 kalemi bulunduğu söyleniyor. Aynı sınıfın toplam kalem sayısının 37 olduğu da belirtiliyor. Bu üç bilgi birlikte nasıl değerlendirilir?\",\"\",[\"Toplam 36 öğrenci vardır.\",\"Bir öğrenci mutlaka 3 kalem taşır.\",\"Sınıfta 19 öğrenci vardır.\",\"Toplam kalem sayısı 38'dir.\",\"Bilgiler birbiriyle çelişir.\"],4,\"Tam 18 öğrencinin her birinde tam 2 kalem varsa toplam zorunlu olarak 36'dır; 37 koşuluyla aynı anda sağlanmaz. Bir kişinin 3 kalemi olduğunu varsaymak verilmiş 'her biri tam 2' koşulunu değiştirir; doğru teşhis tutarsızlıktır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tam öğrenci sayısı ile kişi başına tam kalem sayısının çarpımı toplam kalemi belirler.",
+        "Koşullar birlikte sağlanmıyorsa yeni bir koşul uydurmak yerine tutarsızlık belirtilir."
+      ],
+      "strategy": "Önce iki sayım koşulunun zorunlu toplamını hesapla; sonra üçüncü bilginin bu toplamla aynı anda doğru olup olamayacağını denetle.",
+      "steps": [
+        "On sekiz öğrencinin her birine tam iki kalem eşleştir: zorunlu toplam 18·2=36 kalemdir.",
+        "Aynı sınıf için verilen 37 kalem ile zorunlu 36 kalem birbirinden farklıdır.",
+        "“Her biri tam 2” ve “18 öğrenci” korunursa 37 mümkün değildir; üç bilgi birlikte çelişir."
+      ],
+      "optionReasons": [
+        "36 öğrenciyi değil, 18·2 ile çıkan kalem toplamını gösterir; birimi ve açık öğrenci sayısını değiştirir.",
+        "Bir öğrencide 3 kalem varsaymak 37'yi açıklayabilir fakat herkesin tam 2 kalemi olduğu koşulunu bozar.",
+        "19 öğrenci varsaymak 18 öğrenci bilgisini değiştirir; ayrıca her birinde 2 kalemle 38 olur.",
+        "38,19·2 hesabıdır; 18 öğrenciye ve belirtilen 37 toplamına uymaz.",
+        "Doğru. İlk iki bilgi 36'yı zorunlu kılar, üçüncü 37 der; tutarsızlık sonucu bütün koşulları değiştirmeden teşhis eder."
+      ],
+      "commonError": "Toplamı düzeltmek için bir öğrencinin kalemini artırmak verilen koşulu onarmak değil, başka bir problem kurmaktır.",
+      "check": "On sekiz ikili kalem grubunun toplamı çifttir; 37 tektir. Parite de koşulların birlikte gerçekleşemeyeceğini bağımsız olarak gösterir."
+    }
+  },
+  {
+    "id": "kesir-problemleri-011-1",
+    "identity": "[\"kesir-problemleri-011-1\",\"240 sayfalık bir kitabın 7/12'si okunmuştur. Kaç sayfa okunmuştur?\",\"\",[\"140\",\"100\",\"120\",\"160\",\"180\"],0,\"Bir parça 240/12=20, yedi parça 140 sayfadır. 100 sayfa kalır, fakat soru okunanı soruyor; payda tek başına okunmuş oranı değil parçalama sayısını belirtir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir bütünün 7/12'si, bütünün on iki eş parçasından yedisidir.",
+        "Parça sayısı ile okunmayan sayfa sayısı aynı değildir; soru hangi kısmı istiyorsa o kısmın kesri kullanılır."
+      ],
+      "strategy": "Önce kitabı paydanın gösterdiği eş parçalara böl; sonra okunan parça sayısı kadar birleştir.",
+      "steps": [
+        "Kitabın tamamı 240 sayfa ve on iki eş parçaya ayrılıyor; bir parça 240/12=20 sayfadır.",
+        "Okunan yedi parça 7·20=140 sayfadır.",
+        "Okunmayan beş parça 5·20=100 sayfa kalır; istenen okunan miktar 140'tır."
+      ],
+      "optionReasons": [
+        "Doğru. 140/240=7/12 olduğu için okunan kısmın tam karşılığıdır.",
+        "100 kitabın kalan 5/12 sidir; okunan ile kalanı değiştirir.",
+        "120 kitabın yarısıdır, yani 6/12; yedi parçadan birini eksik sayar.",
+        "160, sekiz eş parça veya 2/3 kitap eder; 7/12 oranını aşar.",
+        "180, kitabın 3/4'ü veya 9/12 sidir; verilen yedi parça koşulunu bozmuştur."
+      ],
+      "commonError": "7/12 okunmuşsa 12−7=5 parçanın kaldığını bulmak yararlıdır; ancak kalan miktarı okunan miktar diye cevaplama.",
+      "check": "Okunan 140 ve kalan 100 toplam 240 yapar; 140: 100=7: 5 oranı da on iki parçanın yedisinin okunduğunu doğrular."
+    }
+  },
+  {
+    "id": "kesir-problemleri-011-2",
+    "identity": "[\"kesir-problemleri-011-2\",\"Bir miktarın 5/9'u 40'tır. Miktarın tamamı kaçtır?\",\"\",[\"45\",\"72\",\"56\",\"64\",\"81\"],1,\"N=40·9/5=72. Sağlama 72·5/9=40 olur. 40'ı 5/9 ile yeniden çarpmak verilen parçanın başka bir parçasını bulur, başlangıç bütününü bulmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir miktarın kesri biliniyorsa parça=bütün×kesir ilişkisi kurulur.",
+        "Verilmiş parçadan bütüne gitmek, kesirle yeniden çarpmak yerine kesrin tersine geçmeyi gerektirir."
+      ],
+      "strategy": "Verilen kırkın dokuz parçanın beşine ait olduğunu etiketle; önce tek parçaya, oradan dokuz parçanın tamamına ulaş.",
+      "steps": [
+        "Bütün N için(5/9)N=40 kur; 40 bütün değil beş eş parçadır.",
+        "Bir parça 40/5=8 olur.",
+        "Dokuz parça 9·8=72'dir; bütün 72 bulunur."
+      ],
+      "optionReasons": [
+        "45'in 5/9'u 25'tir; verilen 40'lık parçayı üretmez.",
+        "Doğru. 72'nin 5/9'u 40'tır; dokuz eş parçanın her biri 8'dir.",
+        "56'nın 5/9'u 280/9'dur; 40 değildir.",
+        "64'ün 5/9'u 320/9'dur; verilmiş parça koşulunu sağlamaz.",
+        "81'in 5/9'u 45'tir; parça verilen 40'tan büyük çıkar."
+      ],
+      "commonError": "40'ı 5/9 ile çarpmak kırkın bir kısmını bulur; burada kırkın hangi büyük miktarın parçası olduğunu arıyorsun.",
+      "check": "Bütünden parçaya yeniden git: 72/9=8 ve 8·5=40. Ters çözümün ileri işlemi verilen değere dönüyor."
+    }
+  },
+  {
+    "id": "kesir-problemleri-011-3",
+    "identity": "[\"kesir-problemleri-011-3\",\"Bir paranın önce 1/5'i, sonra kalanının 3/8'i harcanıyor. 250 TL kaldığına göre başlangıç parası kaç TL'dir?\",\"\",[\"400\",\"450\",\"500\",\"600\",\"625\"],2,\"Son kalan N·4/5·5/8=N/2=250 ⇒ N=500. İlk harcama 100, ikinci harcama 150, kalan 250'dir. 1/5 ile 3/8'i doğrudan toplamak ikinci kesrin tabanını değiştirir.\"]",
+    "guidance": {
+      "knowledge": [
+        "“Kalanının” sözcüğü ikinci kesrin tabanının ilk harcamadan sonra değiştiğini belirtir.",
+        "Bir aşamada kullanılan r oranıysa o aşamanın sonunda 1−r oranı kalır."
+      ],
+      "strategy": "İki harcamayı aynı başlangıçtan çıkarmak yerine her aşamanın kalan oranını izle; son miktardan önceki aşamalara ters dön.",
+      "steps": [
+        "Başlangıç N ise ilk harcamadan sonra 4 N/5 kalır; ikinci aşamada bunun 5/8'i elde kalır.",
+        "Son kalan(4/5)(5/8)N=N/2'dir. N/2=250 ilişkisi başlangıcın 500 TL olduğunu verir.",
+        "İleri akışı tamamla: 100 TL ilk harcama, 400 TL ara kalan, 150 TL ikinci harcama ve 250 TL son kalandır."
+      ],
+      "optionReasons": [
+        "400 TLden sonra 320 TL, ikinci işlem sonunda 200 TL kalır; 250 koşulunu sağlamaz.",
+        "450 TL'nin son kalanı yarısı 225 TL'dir; istenen 250 değildir.",
+        "Doğru. 500 TL, iki kalan çarpanıyla 250 TLye iner; iki harcama da doğru tabandadır.",
+        "600 TL başlangıç son durumda 300 TL bırakır; verilen miktarı aşar.",
+        "625 TL son durumda 312,5 TL bırakır; son kalan 250 olmaz."
+      ],
+      "commonError": "1/5+3/8'i aynı bütünden çıkarmak ikinci harcamayı başlangıca taşır; metin ara kalanın 3/8 ini söylüyor.",
+      "check": "Sondan geriye hesapla: 250/(5/8)=400,400/(4/5)=500. Ters aşamalar başlangıcı doğrular; 100+150+250=500 de toplamı korur."
+    }
+  },
+  {
+    "id": "kesir-problemleri-011-4",
+    "identity": "[\"kesir-problemleri-011-4\",\"Bir bütçenin başlangıçtaki 1/3'ü ve yine başlangıçtaki 1/4'ü iki ayrı gider için kullanılıyor. 1000 TL kalıyor. Bütçe kaç TL'dir?\",\"\",[\"1800\",\"2000\",\"2500\",\"2400\",\"3000\"],3,\"Harcanan 1/3+1/4=7/12, kalan 5/12'dir. (5/12)N=1000 ⇒ N=2400. 800+600+1000=2400; kalan çarpanlarını çarpmak bu cümlenin referansını değiştirir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı başlangıç miktarının ayrı giderleri doğrudan toplanabilir.",
+        "Kalan kesri birden toplam gider kesri çıkarılarak bulunur; paydalar ortaklaştırılmalıdır."
+      ],
+      "strategy": "Her iki giderin altına “ilk bütçe” yaz; ortak paydada toplam gideri bulup verilen kalanla bütünü ilişkilendir.",
+      "steps": [
+        "İki gider de N üzerinden: N/3+N/4=(4/12+3/12)N=7 N/12'dir.",
+        "Kalan 5 N/12=1000 TL olur; bir on ikilik pay 1000/5=200 TL'dir.",
+        "Bütün on iki paydan oluşur: N=12·200=2400 TL. Giderler 800 ve 600 TL'dir."
+      ],
+      "optionReasons": [
+        "1800 TL'nin 5/12'si 750 TL'dir; 1000 TL kalmaz.",
+        "2000 TL'nin 5/12'si 2500/3 TL'dir; verilen 1000 değildir.",
+        "2500 TL'nin 5/12'si 3125/3 TL olur; 1000 koşulunu aşar.",
+        "Doğru. 2400 TLden 800 ve 600 TL çıkarılınca 1000 TL kalır; iki gider de başlangıçtan alınmıştır.",
+        "3000 TL'nin 5/12'si 1250 TL'dir; başlangıcı gereğinden büyük seçer."
+      ],
+      "commonError": "(2/3)(3/4) kullanmak ikinci gideri ilk harcama sonrası kalan üzerinden alır; “yine başlangıçtaki” ifadesini değiştirir.",
+      "check": "1000 TL'nin bütçeye oranı 1000/2400=5/12 ve giderler 800+600=1400 TL'dir; 1400+1000=2400 tüm bütçeyi verir."
+    }
+  },
+  {
+    "id": "kesir-problemleri-011-5",
+    "identity": "[\"kesir-problemleri-011-5\",\"Pozitif bir sayının 3/4'ü ile 2/5'i arasındaki fark 42'dir. Sayı kaçtır?\",\"\",[\"84\",\"105\",\"140\",\"168\",\"120\"],4,\"(3/4−2/5)N=(7/20)N=42 ⇒ N=120. Parçalar 90 ve 48'dir; fark 42. Kesirleri ayrı ayrı tersine uygulamak, aynı sayıya ait oldukları ilişkisini korumaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı pozitif miktarın iki kesirli parçasının farkı, kesirlerin farkı ile o miktarın çarpımıdır.",
+        "3/4 ile 2/5'i karşılaştırırken ortak payda 20, parçaları 15/20 ve 8/20 olarak gösterir."
+      ],
+      "strategy": "İki parçanın ortak bütününü koruyarak yalnız katsayılarını çıkar; bilinen farktan bütüne ters işlem uygula.",
+      "steps": [
+        "Pozitif N için büyük parça 3 N/4, küçük 2 N/5'tir. Fark(15/20−8/20)N=7 N/20 olur.",
+        "7 N/20=42 olduğundan bir yirmilik pay 42/7=6'dır.",
+        "Yirmi payN=20·6=120 verir. İki parça 90 ve 48'dir."
+      ],
+      "optionReasons": [
+        "84 için iki parça 63 ve 33,6'dır; fark 29,4 olur, 42 değildir.",
+        "105 için fark(7/20)·105=36,75'tir; verilen 42'den azdır.",
+        "140 için fark 49 olur; 42 koşulunu aşar.",
+        "168 için fark 58,8'dir; parçaların aynı sayıya ait olması koşuluyla 42 üretmez.",
+        "Doğru. 120 için 90−48=42'dir; pozitiflik ve iki kesirli parça koşulu birlikte sağlanır."
+      ],
+      "commonError": "Payları ve paydaları ayrı çıkartıp(3−2)/(4−5) yazamazsın; aynı bütünün parçalarını ortak ölçekte çıkarmalısın.",
+      "check": "Bulunan bütüne parçaları tek tek uygula: 120/4·3=90 ve 120/5·2=48. Fark 42, büyük parçanın yönü ve pozitiflik doğrulanır."
+    }
+  },
+  {
+    "id": "kesir-problemleri-011-6",
+    "identity": "[\"kesir-problemleri-011-6\",\"Bir değer 360'tan başlayıp önce 1/3 oranında artıyor, sonra yeni değerin 1/4'ü kadar azalıyor. Son değer kaçtır?\",\"\",[\"360\",\"270\",\"330\",\"390\",\"480\"],0,\"360·4/3=480, sonra 480·3/4=360. Çarpanlar birbirinin tersidir. +1/3−1/4 işlemi, ikinci azalmanın değişen tabanını görmez ve bu süreci modellemez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir miktarın 1/3 oranında artması onun 4/3 katına çıkmasıdır.",
+        "Yeni miktarın 1/4'ü azaldığında o yeni miktarın 3/4'ü kalır; taban ilk değer değildir."
+      ],
+      "strategy": "Artış ve azalışı iki ayrı çarpana dönüştür; ikinci işlemi ilk aşamanın sonucuna uygula.",
+      "steps": [
+        "İlk aşamada 360'ın 1/3'ü 120 eklenir; 360+120=480 olur.",
+        "İkinci aşama 480'in 1/4'ü olan 120'yi çıkarır; 480−120=360 elde edilir.",
+        "Çarpanların çarpımı(4/3)(3/4)=1'dir; son değer 360'tır. Bu iki farklı oran bu örnekte ters çarpan üretmiştir."
+      ],
+      "optionReasons": [
+        "Doğru. 360, önce 480'e çıkıp sonra 120 azalma sonucudur; iki taban da doğrudur.",
+        "270,360'ın doğrudan 3/4 üdür; ilk artış aşamasını atlar.",
+        "330,1/3−1/4=1/12 farkını başlangıçtan azalma sanıp 360−30 yapınca çıkar; iki tabanı ve yönleri bozar.",
+        "390,360(1+1/3−1/4) hesabıdır; ikinci kesri yanlışlıkla ilk tabana uygular.",
+        "480 yalnız ilk artıştan sonraki miktardır; son azalma henüz yapılmamıştır."
+      ],
+      "commonError": "Oranları toplamak yerine çarpanları çarp; geri dönüş eşit yüzdelerden değil 4/3 ile 3/4'ün tersliğinden doğuyor.",
+      "check": "Başlangıç ve son farkı 0'dır; gerçek miktar artışı 120 ile gerçek miktar azalışı 120'nin eşitliği bunu ayrıca doğrular."
+    }
+  },
+  {
+    "id": "kesir-problemleri-011-7",
+    "identity": "[\"kesir-problemleri-011-7\",\"Bir telin yalnız sol ucundan uzunluğunun 1/5'i kesiliyor. Kalan telin orta noktası 9 cm kayıyor. İlk tel kaç cm'dir?\",\"\",[\"45\",\"90\",\"60\",\"75\",\"180\"],1,\"Kesim L/5, orta nokta kayması L/10'dur. L/10=9 ⇒ L=90 cm. Kesilen 18 cm ve yarısı 9 cm'dir. Kaymayı kesimin tamamı sanmak yanlışlıkla 45 sonucunu verir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir parçanın orta noktası iki uç koordinatının ortalamasıdır.",
+        "Tek uçtan kesilen telin kalan orta noktası kesilen parçanın yarısı kadar kayar."
+      ],
+      "strategy": "Telin eski ve yeni uçlarını aynı sayı doğrusuna koy; orta nokta konumlarının farkını verilen kaymayla eşitle.",
+      "steps": [
+        "Eski telin uçları 0 ve L olsun; eski orta nokta L/2'dir. Soldan L/5 kesilince uçlar L/5 ve L olur.",
+        "Yeni orta nokta(L/5+L)/2=3 L/5'tir. Kayma 3 L/5−L/2=L/10'dur.",
+        "L/10=9 olduğundan L=90 cm bulunur; kesilen parça 18 cm'dir."
+      ],
+      "optionReasons": [
+        "45 cm için kesilen 9 cm, kayma 4,5 cm olur; kesimi kaymayla eşitlemek bu yanlış değeri verir.",
+        "Doğru. 90 cm için yeni uç 18, son uç 90; orta 54, eski orta 45 ve fark 9 cm'dir.",
+        "60 cm'nin orta nokta kayması 6 cm'dir; verilen 9'a ulaşmaz.",
+        "75 cm'nin kayması 7,5 cm'dir; 9 koşulunu sağlamaz.",
+        "180 cm için kayma 18 cm olur; istenen kaymayı iki katına çıkarır."
+      ],
+      "commonError": "Kesilen L/5 uzunluğunu doğrudan 9'a eşitlemek orta nokta ile tel ucunun hareketini karıştırır.",
+      "check": "Kalan 72 cm tel 18 ile 90 arasındadır; yarısı 36 cm olduğundan orta 18+36=54 tedir. Eski 45 ile fark 9 cm bulunur."
+    }
+  },
+  {
+    "id": "kesir-problemleri-011-8",
+    "identity": "[\"kesir-problemleri-011-8\",\"150 soruluk bir setin 2/5'i günde 15 soru, kalan kısmı günde 10 soru çözülerek bitiriliyor. Her gün belirtilen miktar çözülüyor. Toplam kaç gün sürer?\",\"\",[\"10\",\"11\",\"13\",\"12\",\"15\"],2,\"İlk 60 soru 60/15=4 gün, kalan 90 soru 90/10=9 gün sürer. Toplam 13 gün. 15 ile 10'un ortalamasını almak iki bölümün farklı büyüklüklerini hesaba katmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Süre, iş miktarının birim zamanda yapılan miktara bölümüdür.",
+        "Farklı büyüklükte iki parça farklı günlük hızlarla bitiriliyorsa süreleri ayrı hesaplanıp toplanır."
+      ],
+      "strategy": "Soru setini verilen kesre göre iki parçaya ayır; her parçayı kendi günlük miktarına bölerek günleri birleştir.",
+      "steps": [
+        "İlk bölüm 150·2/5=60 sorudur; kalan 150−60=90 sorudur.",
+        "Altmış soru günde 15'ten 60/15=4 gün; doksan soru günde 10'dan 90/10=9 gün sürer.",
+        "Parçalar sırayla tamamlandığı için toplam 4+9=13 gündür; iki bölümün son gününde de günlük miktar tamdır."
+      ],
+      "optionReasons": [
+        "10 gün, 150 sorunun tümünü günde 15 hızla sayar; kalan bölümün daha düşük hızını atlar.",
+        "11 gün, ilk 4 günden sonra kalan 90 soruyu 7 günde bitirmeyi gerektirir; günde 10 ile ancak 70 soru çözülür.",
+        "Doğru. 13 günde ilk 4 günde 60, sonraki 9 günde 90 soru tamamlanır; toplam 150'dir.",
+        "12 gün, 15 ve 10'un ortalaması 12,5 ile 150'yi bölünce çıkar; farklı süre ve parçalar için bu hız ortalaması geçerli değildir.",
+        "15 gün, bütün 150 soruyu günde 10 üzerinden sayar; ilk bölümdeki günde 15 koşulunu kullanmaz."
+      ],
+      "commonError": "Günlük 15 ile 10'un düz ortalamasını almak iki hızda eşit süre geçirildiğini varsayar; burada süreler hesaplanmalıdır.",
+      "check": "Takvimden yeniden say: 4·15+9·10=60+90=150 ve ilk 60/150=2/5'tir; hem toplam iş hem kesir dağılımı korunur."
+    }
+  },
+  {
+    "id": "kesir-problemleri-011-9",
+    "identity": "[\"kesir-problemleri-011-9\",\"Başlangıç parasının 3/4'ü, ardından yine başlangıç parasının 2/3'ü harcanmak isteniyor. Başlangıç para pozitif ve ek para ya da borç yok. Bu plan için ne doğrudur?\",\"\",[\"Başlangıcın 1/12'si kalır.\",\"Başlangıcın 1/4'ü kalır.\",\"Başlangıcın 1/3'ü kalır.\",\"İstenen toplam harcama başlangıç parasını aşar.\",\"Plan her pozitif başlangıç için uygulanabilir.\"],3,\"3/4+2/3=17/12>1 olduğundan istenen iki harcama bütünden büyüktür. Negatif kalan gerçek bir uygulanabilir para değildir. İkinci kesir kalanın olsaydı sonuç değişirdi, fakat metinde bu yazmıyor.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı başlangıç parasından yapılacak ayrı harcamaların toplamı o parayı aşamaz; ek kaynak yoksa toplam pay en çok 1'dir.",
+        "İkinci harcama açıkça başlangıç parasına aitse önceki kalan üzerinden hesaplanmaz."
+      ],
+      "strategy": "Başlangıcı bir tam bütüne ölçekle; istenen iki harcama payını ortak paydada toplayıp mevcut tek bütünle karşılaştır.",
+      "steps": [
+        "Pozitif başlangıç N olsun. İki istenen harcama 3 N/4 ve 2 N/3'tür.",
+        "Ortak paydayla toplam 9 N/12+8 N/12=17 N/12 çıkar.",
+        "17 N/12, Nden 5 N/12 fazla olduğundan borç veya ek para olmadan plan uygulanamaz."
+      ],
+      "optionReasons": [
+        "1/12 kalması toplam 11/12 harcama gerektirir; verilen iki payın toplamı 17/12'dir.",
+        "1/4 kalması ilk 3/4 harcama sonrasıdır; ikinci harcamanın yapılmasını hesaba katmaz.",
+        "1/3 kalması yalnız 2/3 harcama sonrası olur; ilk 3/4'lük gideri atlar.",
+        "Doğru. İstenen toplam 17/12, Nnin tamamından büyüktür; bu seçenek ek kaynak bulunmamasıyla birlikte doğru teşhistir.",
+        "N pozitif olduğu için 5 N/12'lik eksik her başlangıçta pozitiftir; başlangıcı büyütmek oran açığını gidermez."
+      ],
+      "commonError": "İkinci 2/3'ü kalana uygularsan uygulanabilir başka bir plan kurarsın; metindeki “yine başlangıç” koşulunu korumalısın.",
+      "check": "On iki birimlik örnek bütçe seç: ilk 9, ikinci 8 birim istenir, toplam 17'dir. Elindeki 12 birim bu iki harcamayı karşılamaz."
+    }
+  },
+  {
+    "id": "kesir-problemleri-011-10",
+    "identity": "[\"kesir-problemleri-011-10\",\"Bir miktarın önce 1/4'ü, sonra kalanının 2/3'ü kullanılıyor. Başlangıç miktarının kaçta kaçı toplam kullanılmıştır?\",\"\",[\"1/4\",\"1/2\",\"2/3\",\"11/12\",\"3/4\"],4,\"Son kalan (3/4)(1/3)=1/4, kullanılan 1−1/4=3/4'tür. İkinci kullanım başlangıcın (2/3)(3/4)=1/2'sidir; 1/4+1/2=3/4. 11/12 iki kesri yanlış tabanda toplar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kalanın kesri kullanılırken ikinci parçanın başlangıca oranı iki kesrin çarpımıdır.",
+        "Toplam kullanılan pay, bir eksi son kalan payına eşittir."
+      ],
+      "strategy": "Başlangıcın hangi kısmının her aşamada kaldığını izle; sonda kullanılan toplamı bütüne tamamlama ile bul.",
+      "steps": [
+        "İlk kullanım N/4'tür; başlangıcın 3 N/4'ü kalır.",
+        "İkinci kullanım bu kalanın 2/3'ü yani(2/3)(3 N/4)=N/2'dir; son kalan N/4 olur.",
+        "Toplam kullanım N/4+N/2=3 N/4'tür; başlangıca oranı 3/4 bulunur."
+      ],
+      "optionReasons": [
+        "1/4, ilk kullanılan paya ve tesadüfen son kalan paya eşittir; toplam kullanılan değildir.",
+        "1/2 yalnız ikinci aşamada kullanılan miktarın başlangıca oranıdır; ilk 1/4'ü atlar.",
+        "2/3 ikinci aşamanın ara kalana oranıdır; toplamın başlangıca oranı değildir.",
+        "11/12,1/4+2/3 toplamıdır; iki kesri farklı tabanlı oldukları halde aynı bütünden sayar.",
+        "Doğru. 3/4, ilk 1/4 ile ikinci 1/2'nin toplamıdır; son kalan 1/4 ile bir bütünü tamamlar."
+      ],
+      "commonError": "İkinci kullanımın 2/3'lük paydasını başlangıç gibi görmek tabanı değiştirir; ara kalan 3/4'ü çarpımın içinde tut.",
+      "check": "Başlangıcı 12 birim seç: ilk 3 kullanılır, 9 kalır; sonra 6 kullanılır, 3 kalır. Toplam 9/12=3/4 kullanılmıştır."
+    }
+  },
+  {
+    "id": "yas-problemleri-011-1",
+    "identity": "[\"yas-problemleri-011-1\",\"Bugün 24 yaşında olan biri 7 yıl önce kaç yaşındaydı?\",\"\",[\"17\",\"7\",\"16\",\"24\",\"31\"],0,\"24−7=17. Yedi yılı eklemek gelecek yaşı olan 31'i verir. Aynı kişinin geçmişteki yaşı bugünkünden küçük olmalı; 17+7=24 kontrolü doğru sütunu doğrular.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı kişinin yaşı geçen her yılda bir artar; geçmişe giderken aynı süre çıkarılır.",
+        "Bugünkü yaş ile geçmişteki yaş farklı zaman sütunlarında tutulmalıdır."
+      ],
+      "strategy": "Bugünü başlangıç kabul edip yedi yıl önceye doğru bir zaman oku çiz; yaşı bu okla aynı yönde kaydır.",
+      "steps": [
+        "Bugünkü yaş 24, istenen tarih bugünden 7 yıl öncedir; zaman kayması−7'dir.",
+        "O tarihteki yaş 24+(−7)=17 olur.",
+        "Bu yaş pozitiftir ve 17'nin üstüne geçen 7 yılı ekleyince bugünkü 24'e dönülür."
+      ],
+      "optionReasons": [
+        "Doğru. 17, bugünkü 24'ten 7 yıl geriye taşınmış yaştır; geçmiş ve bugün ilişkisini sağlar.",
+        "7, geçen süredir; kişinin yedi yıl önceki yaşı olarak seçilirse bugün 14 olurdu.",
+        "16 seçimi bugüne dönüldüğünde 16+7=23 verir; 24 koşulundan bir yıl eksik kalır.",
+        "24 bugünkü yaşı tekrarlar; aradan yedi yıl geçtiği bilgisini kullanmaz.",
+        "31,24+7 ile bulunan gelecek yaşıdır; geçmişe gitmek yerine ileri gider."
+      ],
+      "commonError": "“Önce” için yaşı artırma; yaşın artışı zamanın ileri yönüne karşılık gelir.",
+      "check": "Doğru adayın bugüne geri taşınması gerekir: 17+7=24. Hem yön hem zaman aralığı bu ters işlemle denetlenir."
+    }
+  },
+  {
+    "id": "yas-problemleri-011-2",
+    "identity": "[\"yas-problemleri-011-2\",\"Yaşları bugün 17 ve 29 olan iki kişinin 8 yıl sonraki yaş farkı kaçtır?\",\"\",[\"4\",\"12\",\"8\",\"20\",\"28\"],1,\"Gelecek yaşlar 25 ve 37; fark 37−25=12. Bugün 29−17 de 12'dir. Toplama eklenen süreler farkta birbirini yok eder; farkı 8 artırmak yalnız bir kişinin yaşlandığını varsayar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı süre iki kişinin yaşına da eklenir.",
+        "İki sayıya aynı miktar eklenince fark değişmez; yaşların toplamı ise değişir."
+      ],
+      "strategy": "Her iki kişinin aynı gelecek tarihindeki yaşını ayrı yaz; farkta ortak zaman eklerinin birbirini nasıl götürdüğünü göster.",
+      "steps": [
+        "Sekiz yıl sonra yaşlar 17+8=25 ve 29+8=37 olur.",
+        "Gelecekteki fark 37−25=12'dir.",
+        "Bugünkü fark 29−17=12 ile karşılaştır; iki tarih için fark aynı kalmıştır."
+      ],
+      "optionReasons": [
+        "4, bugünkü 12 farktan 8'i çıkarmaktır; iki kişinin aynı süre yaşlanmasını fark azalması sanır.",
+        "Doğru. 12, hem 37−25 hem 29−17 işleminin sonucudur; zaman farkı değiştirmez.",
+        "8, geçen yıldır; kişiler arasındaki yaş aralığını değil gözlem süresini söyler.",
+        "20, bugünkü 12 farka 8 ekler; yalnız büyük kişi yaşlanmış gibi davranır.",
+        "28,12'ye iki kez 8 ekler; toplam artışını yaş farkına taşır."
+      ],
+      "commonError": "Toplam yaşlar 16 artar ama yaş farkına 16 eklenmez; aynı artış çıkarma işleminde yok olur.",
+      "check": "Cebirle doğrula: (29+8)−(17+8)=29−17+(8−8)=12. İki kişiye aynı kayma uygulanmıştır."
+    }
+  },
+  {
+    "id": "yas-problemleri-011-3",
+    "identity": "[\"yas-problemleri-011-3\",\"Aynı üç kişinin bugünkü yaş toplamı 54'tür. Beş yıl sonraki yaş toplamı kaçtır?\",\"\",[\"59\",\"64\",\"69\",\"72\",\"81\"],2,\"54+3·5=69. Ortalama bugün 18, gelecekte 23'tür; 23·3=69. Yalnız 54+5 yapmak toplamla kişi başı ortalamayı karıştırır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sabit n kişilik bir grubun yaş toplamı t yılda n·t artar.",
+        "Yaş ortalaması kişi başına değerdir; sabit grupta yalnız t kadar artar."
+      ],
+      "strategy": "Önce grupta kaç ayrı yaşın değiştiğini say; beş yıllık artışı her kişiye paylaştırıp toplamın üzerine ekle.",
+      "steps": [
+        "Grup aynı üç kişiden oluşuyor; her biri beş yıl yaşlanır.",
+        "Toplam artış 3·5=15 yıldır; gelecek toplam 54+15=69 olur.",
+        "Ortalama üzerinden de düşün: bugün 54/3=18, beş yıl sonra 23; 23·3=69'dur."
+      ],
+      "optionReasons": [
+        "59,54'e yalnız bir kişinin 5 yıllık artışını ekler; öteki iki kişiyi atlar.",
+        "64,54'e 10 ekler; üç kişi yerine iki kişinin yaşlanmasını sayar.",
+        "Doğru. 69, her üç kişinin beşer yıllık toplam 15 artışını içerir.",
+        "72 için toplam artış 18 olur; bu üç kişiye altışar yıl eklemektir, beş yıl değil.",
+        "81,54'e 27 ekler; beş yılda aynı üç kişinin toplam artışı 15 olmalıdır."
+      ],
+      "commonError": "Toplamı ortalama gibi yalnız 5 artırmak, üç ayrı kişinin aynı süre yaşlandığını unutturur.",
+      "check": "Yeni toplamı üçe böl: 69/3=23; eski 54/3=18'den tam 5 fazla. Bu kişi başına kontrol toplamı doğrular."
+    }
+  },
+  {
+    "id": "yas-problemleri-011-4",
+    "identity": "[\"yas-problemleri-011-4\",\"Aynı dört kişinin iki yıl önceki yaş ortalaması 16'dır. Bugünkü yaş toplamı kaçtır?\",\"\",[\"64\",\"66\",\"68\",\"72\",\"80\"],3,\"Bugünkü ortalama 18, toplam 4·18=72. Alternatif: eski toplam 4·16=64'e 4·2=8 eklenir. 16+8 ortalamaya yanlış kişi sayısı çarpanını ekler.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ortalama=yaş toplamı/kişi sayısıdır.",
+        "Aynı grubun her üyesi iki yıl yaşlanınca ortalama da iki artar; toplam ise kişi sayısı kadar bu artışı içerir."
+      ],
+      "strategy": "Verilen geçmiş ortalamayı önce bugünkü tarihe getir; ardından dört kişiyle çarparak sorulan toplamı elde et.",
+      "steps": [
+        "İki yıl önce ortalama 16 ydı; aynı dört kişinin bugünkü ortalaması 16+2=18'dir.",
+        "Toplamı bulmak için ortalamayı dörtle çarp: 4·18=72.",
+        "Alternatif olarak eski toplam 64'e dört kişinin toplam 8 yıllık artışını ekle: 64+8=72."
+      ],
+      "optionReasons": [
+        "64, iki yıl önceki 4·16 toplamıdır; bugüne taşıma yapılmamıştır.",
+        "66, geçmiş toplam 64'e yalnız 2 ekler; dört kişinin değil tek kişinin artışını sayar.",
+        "68,64'e 4 ekler; iki yıl yerine bir yıllık grup artışını içerir.",
+        "Doğru. 72, bugünkü 18 ortalamanın dört kişiyle çarpımıdır ve geçmişe dönünce 64 verir.",
+        "80,16 ortalamayı 20'ye taşır; istenen iki yıl yerine dört yıllık artış olur."
+      ],
+      "commonError": "Ortalamaya kişi sayısı kadar süre ekleme; herkes iki yaş büyüdüğü için kişi başına ortalama da iki artar.",
+      "check": "72'den toplam yaş artışı 4·2=8'i çıkarınca 64,64/4=16 bulunur; verilen geçmiş ortalamaya aynen dönülür."
+    }
+  },
+  {
+    "id": "yas-problemleri-011-5",
+    "identity": "[\"yas-problemleri-011-5\",\"Bir çocuğun bugünkü yaşı x'tir. Bugün sabit tutulduğunda çocuk 3 yıl daha erken doğmuş olsaydı bugünkü yaşı hangi ifade olurdu?\",\"\",[\"x−3\",\"3x\",\"x/3\",\"3−x\",\"x+3\"],4,\"Aynı bugüne daha erken bir doğumdan ulaşmak 3 yıl daha uzun yaşamış olmak demektir; yaş x+3 olur. x−3, üç yıl daha geç doğma koşulunun karşılığıdır; bugünün tarihi değiştirilmemiştir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı bakılan tarihte yaş, doğumdan o tarihe kadar geçen süredir.",
+        "Bugün sabitken doğumun erkene alınması daha uzun yaşamış olmayı, geçe alınması daha kısa yaşamış olmayı anlatır."
+      ],
+      "strategy": "Bugünü hareket ettirmeden yalnız doğum noktasını üç yıl sola kaydır; doğum ile bugün arasındaki aralığın nasıl değiştiğini yaz.",
+      "steps": [
+        "Bugünü T, doğum tarihini D ile gösterirsen bugünkü yaş x=T−Ddir.",
+        "Üç yıl erken doğum D−3 olur; bugünkü yeni yaş T−(D−3)tür.",
+        "Parantezi aç: T−D+3=x+3. İleri alınan bugün değil, geriye alınan doğum tarihidir."
+      ],
+      "optionReasons": [
+        "x−3, üç yıl daha geç doğmanın karşılığıdır; erken doğma yönünü ters çevirir.",
+        "3 x, geçen süreyi üç katına çıkartır; sabit üç yıllık doğum kayması değildir.",
+        "x/3, yaşın üçte birini alır; doğum tarihini üç yıl değiştirmez.",
+        "3−x, yaş çıkarma yönünü ve referansı bozar; örneğin x=10'da negatif yaş verir.",
+        "Doğru. x+3, bakılan gün aynı kalırken yaşam süresini üç yıl uzatır; verilen koşulu ifade eder."
+      ],
+      "commonError": "Doğum tarihinin üç azalması ile yaşın üç azalmasını aynı sanma; yaşta doğum tarihi çıkarılan niceliktir.",
+      "check": "Örnekle denetle: bugün 10 yaşındaki biri aynı güne üç yıl önce doğarak ulaşsaydı 13 yaşında olurdu; x+3 bunu üretir."
+    }
+  },
+  {
+    "id": "yas-problemleri-011-6",
+    "identity": "[\"yas-problemleri-011-6\",\"İki kardeşin bugünkü yaşları 3:5 oranındadır. Dört yıl sonra yaşları 2:3 oranında olacaktır. Küçük kardeş bugün kaç yaşındadır?\",\"\",[\"12\",\"8\",\"10\",\"15\",\"20\"],0,\"(3k+4)/(5k+4)=2/3 ⇒ 9k+12=10k+8 ⇒ k=4. Küçük yaş 12'dir. Büyük 20, dört yıl sonra 16:24=2:3 olur; k=4 yaşın kendisi değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı andaki 3: 5 yaş oranı 3 k ve 5 k ile gösterilir.",
+        "Gelecekteki oran için iki gerçek yaşın her birine aynı geçen süre eklenir; oran katsayılarına süre eklenmez."
+      ],
+      "strategy": "Bugünkü iki yaşı ortak katsayıyla temsil et; gelecek sütununda ikisine de dört ekledikten sonra yeni oranı çapraz çarpımla bağla.",
+      "steps": [
+        "Bugün küçük 3 k, büyük 5 k; dört yıl sonra küçük 3 k+4, büyük 5 k+4 olur.",
+        "Yeni oran(3 k+4)/(5 k+4)=2/3; çapraz çarp: 9 k+12=10 k+8, buradan k=4.",
+        "Bugünkü küçük yaş 3·4=12'dir; k tek başına yaş değildir. Bugünkü büyük 5·4=20'dir."
+      ],
+      "optionReasons": [
+        "Doğru. 12 küçük ve 20 büyük için başlangıç oranı 3: 5, gelecek 16: 24=2: 3 olur; iki koşul sağlanır.",
+        "8 küçük kabul edilirse büyük 40/3 olur; gelecek oran 12/(52/3)=9/13'tür, 2/3 değildir.",
+        "10 küçük kabul edilirse büyük 50/3 olur; gelecek 14/(62/3)=21/31 olur, 2/3 değil.",
+        "15 küçük olursa büyük 25'tir; dört yıl sonra 19/29 olur ve 2/3'ten farklıdır.",
+        "20 doğru çözümde büyük kardeşin yaşıdır; istenen küçük yaştır. 20 küçük seçilseydi büyük 100/3 olurdu."
+      ],
+      "commonError": "k=4'ü doğrudan cevaplama; k yaşların ortak çarpanıdır. Küçük yaş 3 k ile ayrıca hesaplanır.",
+      "check": "Fark bugün 20−12=8, gelecekte 24−16=8 kalır; gelecek küçük/büyük=16/24=2/3 olduğundan hem fark hem oran uygundur."
+    }
+  },
+  {
+    "id": "yas-problemleri-011-7",
+    "identity": "[\"yas-problemleri-011-7\",\"Ada bugün 30, Bora 18 yaşındadır. Ada, Bora'nın bugünkü yaşındayken Bora kaç yaşındaydı?\",\"\",[\"12\",\"6\",\"18\",\"24\",\"42\"],1,\"12 yıl geriye gidilir. O tarihte Bora 18−12=6 yaşındadır; Ada 18'dir. Bora'nın bugünkü yaşı hedef olarak sabittir; onu da hedefle birlikte kaydırmak çapraz zaman ifadesini değiştirir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Birinin ötekinin bugünkü yaşında olduğu tarih, sabit hedef yaştan bulunur.",
+        "Aynı geçmiş tarihe giderken her iki kişiden de aynı süre çıkarılır; hedef olarak seçilen bugünkü değer değişmez."
+      ],
+      "strategy": "Bora'nın bugünkü yaşını sabit hedef olarak işaretle; Ada'nın o yaşa ulaşmak için kaç yıl geriye gitmesi gerektiğini bulup aynı süreyi Bora'dan çıkar.",
+      "steps": [
+        "Ada bugün 30, Bora 18'dir; Ada'nın hedefi Bora'nın bugünkü 18 yaşıdır.",
+        "Ada 30'dan 18'e 12 yıl geriye giderek ulaşır; aradığımız tarih bugünden 12 yıl öncedir.",
+        "Bora o tarihte 18−12=6 yaşındadır; Ada 18'dir. O tarihe gelindiğinde ikisi de doğmuş durumdadır."
+      ],
+      "optionReasons": [
+        "12, iki kişi arasındaki yaş farkı ve geriye gidilen süredir; Bora'nın o tarihteki yaşı değildir.",
+        "Doğru. 6, o tarihteki Bora yaşıdır; Ada 18 ile fark 12'yi korur.",
+        "18, Bora'nın bugünkü ve Ada'nın hedef geçmiş yaşıdır; Bora'nın geçmişini hesaplamaz.",
+        "24, Bora'nın geçmiş yaşı olamaz; 18'den geriye gidilirken artmış olur.",
+        "42, Ada'nın 12 yıl sonraki yaşıdır; hem yanlış kişiyi hem gelecek tarihi seçer."
+      ],
+      "commonError": "“Bugünkü yaşındayken” ifadesinde hedef 18 sabittir; Ada'nın hedefini de geriye kaydırmak cümleyi değiştirir.",
+      "check": "Geçmişten bugüne dön: Ada 18+12=30, Bora 6+12=18. Her ikisi için aynı on iki yıl geçmiştir."
+    }
+  },
+  {
+    "id": "yas-problemleri-011-8",
+    "identity": "[\"yas-problemleri-011-8\",\"Dört yıl önce iki kardeşin yaş toplamı 28'di. Bugün büyük olan diğerinden 6 yaş büyüktür. Büyük kardeş bugün kaç yaşındadır?\",\"\",[\"15\",\"17\",\"21\",\"18\",\"24\"],2,\"Bugünkü toplam 28+2·4=36, fark 6'dır. Büyük yaş (36+6)/2=21, küçük 15. Dört yıl önce 17 ve 11 toplam 28'dir. Geçmiş toplamla bugünkü tek yaşı doğrudan karıştırma.\"]",
+    "guidance": {
+      "knowledge": [
+        "İki kişinin yaş toplamı dört yılda sekiz artar; yaş farkı sabit kalır.",
+        "Aynı tarihte toplam S, fark d ise büyük yaş(S+d)/2'dir; bu iki eşitliğin toplanmasından gelir."
+      ],
+      "strategy": "Geçmiş toplamı önce bugünkü sütuna taşı; sonra bugünkü toplam ve farktan büyük kişiyi ayır.",
+      "steps": [
+        "Dört yılda iki kişi toplam 2·4=8 yaş büyür; bugünkü toplam 28+8=36'dır.",
+        "Küçük b, büyük b+6 olsun; b+(b+6)=36'dan 2 b=30, b=15 çıkar.",
+        "Büyük bugün 15+6=21 yaşındadır; geçmişte büyük 17, küçük 11 olur."
+      ],
+      "optionReasons": [
+        "15 bugünkü küçük kardeşin yaşıdır; istenen büyük kişi değildir.",
+        "17, büyük kardeşin dört yıl önceki yaşıdır; bugünkü tarihe dönülmemiştir.",
+        "Doğru. 21 büyük ve 15 küçük için bugünkü fark 6, geçmiş 17+11=28 olur; iki koşul doğrudur.",
+        "18, bugünkü 36 toplamının yarısıdır; iki kişiyi eşit yaşta sayarak altı yıllık farkı unutur.",
+        "24 büyükse küçük 18 olur; dört yıl önce 20+14=34 çıkar ve verilen 28'i sağlamaz."
+      ],
+      "commonError": "Geçmiş 28 toplamıyla bugünkü büyük yaşı doğrudan çözme; önce her iki yaşın dört yıllık artışını toplama ekle.",
+      "check": "21 ve 15'i ayrı ayrı dört yıl geri taşı: 17 ve 11. Toplam 28 ve fark 6 değişmeden elde edilir."
+    }
+  },
+  {
+    "id": "yas-problemleri-011-9",
+    "identity": "[\"yas-problemleri-011-9\",\"Bugün yaşları 8 ve 14 olan iki kişi için 10 yıl önceki yaşlar aynı iki kişinin doğumdan sonraki yaşları olarak alınabilir mi?\",\"\",[\"Evet; yaşlar 2 ve 4'tür.\",\"Evet; yaş farkı o tarihte sıfırdır.\",\"Evet; küçük kişinin yaşı −2 olarak kabul edilir.\",\"Hayır; küçük kişi o tarihte henüz doğmamıştır.\",\"Hayır; büyük kişinin yaşı 24 olur.\"],3,\"Cebir 8−10=−2 ve 14−10=4 verir. −2, doğumdan sonraki bir yaş değildir; küçük kişi o tarihte doğmamıştır. Farkın cebirsel korunması o kişinin geçmiş grubun üyesi olduğunu kanıtlamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir kişinin doğumdan sonraki yaşı negatif olamaz.",
+        "Cebirsel zaman kayması negatif sonuç verirse o kişi henüz doğmamıştır; bu sonuç gerçek negatif yaş diye kabul edilmez."
+      ],
+      "strategy": "İki kişi için aynı on yıllık geri kaymayı ayrı hesapla; sonra her sonucun doğumdan sonraki yaş koşuluna uyup uymadığını denetle.",
+      "steps": [
+        "Bugün küçük 8, büyük 14; on yıl önceki cebirsel değerler 8−10=−2 ve 14−10=4'tür.",
+        "Büyük kişinin 4 yaşı mümkündür; fakat küçük için−2, doğumundan iki yıl önceki tarihi işaret eder.",
+        "İkisini aynı tarihte doğumdan sonraki yaşlarıyla bir grup sayamayız; küçük kişi o tarihte henüz doğmamıştır."
+      ],
+      "optionReasons": [
+        "Küçük için 2 yazmak−2'nin işaretini siler; ikisine aynı geri kaymayı uygulamaz.",
+        "Yaş farkı cebirsel olarak 14−8=6'dır; sıfır olmaz. Ayrıca küçük kişi henüz doğmamıştır.",
+        "−2 cebirsel bir koordinat olabilir ama doğumdan sonraki yaş değildir; evet sonucu bu sınırı ihlal eder.",
+        "Doğru. Küçük kişi o tarihten iki yıl sonra doğacaktır; bu yüzden iki doğmuş kişinin yaşları olarak alınamaz.",
+        "24, büyük kişinin on yıl sonraki yaşıdır; on yıl önceki değer 4'tür. Bu gerekçeyle hayır denmez."
+      ],
+      "commonError": "Denklemde−2 yazabilmek, insanın doğumdan önce negatif yaşta yaşamış olduğunu göstermez; modelin tanım alanını denetle.",
+      "check": "Zaman çizgisini küçük kişinin doğumundan başlat: bugün 8 yıl sonrası, on yıl öncesi ise doğumdan 2 yıl öncedir. Bu çizgi mümkünlük sonucunu doğrular."
+    }
+  },
+  {
+    "id": "yas-problemleri-011-10",
+    "identity": "[\"yas-problemleri-011-10\",\"Yaş toplamı bugün 31 olan aynı üç kişinin yaş ortalaması kaç tam yıl sonra ilk kez en az 15 olur?\",\"\",[\"3\",\"4\",\"6\",\"7\",\"5\"],4,\"31+3t≥45 ⇒ t≥14/3. İlk uygun tam sayı 5'tir; dört yıl sonra 43/3<15, beş yıl sonra 46/3≥15. En az koşulu eşitliği içerir ama 14/3'ü aşağı yuvarlatmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı üç kişinin toplamı t yılda 3 t artar; ortalama toplamın üçe bölümüdür.",
+        "“En az” eşitlik sınırını içerir; “tam yıl sonra” ise süreyi tam sayı adaylarla sınamayı gerektirir."
+      ],
+      "strategy": "Önce ortalamanın ulaşması gereken toplamı bul; eksik toplamı grubun yıllık artışıyla karşılaştırıp komşu tam yılları test et.",
+      "steps": [
+        "Ortalama en az 15 için toplam en az 3·15=45 olmalıdır; bugünkü toplam 31'dir.",
+        "Toplam artışı 3 t olduğundan 31+3 t≥45; buradan t≥14/3 çıkar.",
+        "14/3, dört ile beş arasındadır; ilk uygun tam yıl 5'tir. Dört yılda 43, beş yılda 46 toplam elde edilir."
+      ],
+      "optionReasons": [
+        "3 yılda toplam 40, ortalama 40/3<15 olur; hedefe ulaşmaz.",
+        "4 yılda 43/3<15'tir; 14/3'ü aşağı yuvarlamak en az koşulunu sağlamaz.",
+        "6 yılda 49/3≥15 olur; ancak 5 de sağladığı için ilk yıl değildir.",
+        "7 yılda 52/3≥15'tir; uygun olmak en erken olmakla aynı değildir.",
+        "Doğru. 5 yılda 46/3≥15, dört yılda 43/3<15 olduğundan ilk uygun tam yıldır."
+      ],
+      "commonError": "Her kişinin yılda bir büyümesini toplamda yalnız t sayma; ayrıca 14/3 sınırını normal yuvarlamayla dört yapma.",
+      "check": "Ortalama bugün 31/3'tür ve her yıl 1 artar; hedefe süre 15−31/3=14/3 olur. Aynı sınır bağımsız ortalama yolundan bulunur."
+    }
+  },
+  {
+    "id": "yuzde-problemleri-011-1",
+    "identity": "[\"yuzde-problemleri-011-1\",\"280'in %15'i kaçtır?\",\"\",[\"42\",\"28\",\"35\",\"48\",\"56\"],0,\"280·15/100=42. %10'u 28, %5'i 14; toplam 42 kontrolü yapılabilir. 280'i 15'e bölmek ya da 15 ile çarpıp yüze bölmemek farklı işlemlerdir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yüzde 15, bütünün 15/100'ü veya 0,15 katıdır.",
+        "Aynı bütüne ait yüzde parçaları toplanabilir; %15, %10 ile%5'in toplamıdır."
+      ],
+      "strategy": "Yüzdeyi bir oran olarak yaz; istenen parçayı doğrudan çarpımla bulup aynı tabana ait iki kolay parçayla doğrula.",
+      "steps": [
+        "Bütün 280, istenen oran 15/100'dür; parça 280·15/100 olur.",
+        "280/100=2,8 ve 2,8·15=42 bulunur.",
+        "Ayrı hesapla: %10'u 28, %5'i 14; aynı bütünün bu iki parçası 28+14=42 eder."
+      ],
+      "optionReasons": [
+        "Doğru. 42/280=0,15 olduğundan istenen%15'lik parçadır.",
+        "28, bütünün%10 udur; %15 için gereken%5'lik 14 eklenmemiştir.",
+        "35/280=0,125, yani%12,5'tir; istenen%15 değildir.",
+        "48/280=6/35 oranı%15'ten büyüktür; %15'lik doğru parçadan 6 fazladır.",
+        "56,280'in%20 sidir; yüzde oranını 15 yerine 20 alır."
+      ],
+      "commonError": "15'i doğrudan 280'le çarpıp yüze bölmeyi atlamak yüzdeyi yüz kat büyük uygular.",
+      "check": "42'yi 280'e bölerek oranı geri al: 42/280=3/20=15/100. Bütün ile parça doğru yönde kullanılmıştır."
+    }
+  },
+  {
+    "id": "yuzde-problemleri-011-2",
+    "identity": "[\"yuzde-problemleri-011-2\",\"Bir sayının %24'ü 72'dir. Sayı kaçtır?\",\"\",[\"172,8\",\"300\",\"240\",\"360\",\"400\"],1,\"B=72/0,24=300. 300'ün %24'ü 72'dir. 72'ye %24 eklemek eksik tabanı geri kurmaz; verilen 72 bütün değil bütüne ait bir parçadır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Verilen yüzde parçası bütünün tamamı değildir.",
+        "Parça=B·p/100 ilişkisinde sıfır dışı p biliniyorsa bütünü bulmak için orana bölünür."
+      ],
+      "strategy": "Yetmiş ikiyi yüzde yirmi dörtlük parça olarak etiketle; bir yüzdelik payı bulup yüz paya genişlet.",
+      "steps": [
+        "Bütün B olsun; B·24/100=72 yaz.",
+        "Yirmi dört yüzdelik pay 72 ise tek yüzdelik pay 72/24=3'tür.",
+        "Tam yüz pay 100·3=300'dür. Bulunan bütün 300 olur."
+      ],
+      "optionReasons": [
+        "172,8'in%24'ü 41,472'dir; 72'yi üretmez. Bu değer 72·2,4 işlemiyle yanlış ölçek kullanınca çıkabilir.",
+        "Doğru. 300'ün%24'ü 72'dir; verilen parça ile yüzde aynı anda sağlanır.",
+        "240'ın%24'ü 57,6'dır; 72'den az parça verir.",
+        "360'ın%24'ü 86,4'tür; istenen parçayı aşar.",
+        "400'ün%24'ü 96'dır; verilen 72 koşuluna uymaz."
+      ],
+      "commonError": "72'ye%24 eklemek ya da 72'yi 0,24'le çarpmak bütünü geri getirmez; 72 zaten bütüne ait bir parçadır.",
+      "check": "300'ün%20'si 60, %4'ü 12'dir; aynı tabanın%24'ü 60+12=72 olur. Bütünden parçaya bu ikinci hesap da doğrular."
+    }
+  },
+  {
+    "id": "yuzde-problemleri-011-3",
+    "identity": "[\"yuzde-problemleri-011-3\",\"80 TL'den 100 TL'ye çıkan bir fiyat yüzde kaç artmıştır?\",\"\",[\"%20\",\"%10\",\"%25\",\"%30\",\"%80\"],2,\"Fark 20 TL, artış oranı 20/80=1/4=%25'tir. 20/100=%20, ters yöndeki 100'den 80'e azalışın büyüklüğüdür; taban eski fiyattır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir artışın yüzdesi artış miktarının eski değere oranıdır.",
+        "Aynı fiyat farkının eski ve yeni fiyata bölünmesi farklı yüzdeler verir; referans açıkça seçilmelidir."
+      ],
+      "strategy": "Önce TL cinsinden değişimi ayır; artış oranının paydasına değişimden önceki fiyatı koy.",
+      "steps": [
+        "Artış 100−80=20 TL'dir; istenen bu tutar değil bunun eski fiyata oranıdır.",
+        "Artışı eski fiyata böl: 20/80=1/4'tür. Bu, artışın başlangıç fiyatının dörtte biri olduğunu gösterir.",
+        "Yüzdeye çevir: (1/4)·100=%25 artış bulunur."
+      ],
+      "optionReasons": [
+        "%20,20 farkını yeni 100'e bölünce çıkar; bu ters yöndeki azalışın oranıdır.",
+        "%10,80 TL'nin 8 TLlik artışını anlatır; 80'den 88'e götürür, 100'e değil.",
+        "Doğru. %25,80'in 20 TLlik parçasıdır; 80·1,25=100 koşulunu sağlar.",
+        "%30 artış 80·1,30=104 TL yapar; son fiyat 100 olmaz.",
+        "%80 artış 80·1,80=144 TL üretir; ilk fiyatın sayısını oran sanır."
+      ],
+      "commonError": "20 TL artışı doğrudan%20 diye yazma; farkın TL birimi vardır, oran için 80 TLye bölmek gerekir.",
+      "check": "Son/ilk fiyat oranı 100/80=1,25'tir; bu başlangıcın tamamı 1'in üstünde 0,25 ek pay, yani%25 demektir."
+    }
+  },
+  {
+    "id": "yuzde-problemleri-011-4",
+    "identity": "[\"yuzde-problemleri-011-4\",\"Bir fiyat önce %20 artıyor, sonra yeni fiyatından %20 azalıyor. Başlangıca göre sonuç nedir?\",\"\",[\"Değişmez.\",\"%4 artar.\",\"%20 azalır.\",\"%4 azalır.\",\"%40 azalır.\"],3,\"1,20·0,80=0,96; başlangıcın %96'sı kalır, net %4 azalıştır. 100→120→96 kontrolü yapılabilir. Yüzdeleri toplamak yeni tabana uygulanan ikinci değişimi yok sayar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Artış ve azalış yüzdelerinin tabanı her aşamada o andaki fiyattır.",
+        "%20 artış 1,20 ile, %20 azalış 0,80 ile çarpmaktır; art arda işlemlerde bu çarpanlar birleşir."
+      ],
+      "strategy": "Başlangıç fiyatını simgesel tut; iki aşamayı kendi tabanlarında çarpan olarak yazıp son değeri ilk fiyatla karşılaştır.",
+      "steps": [
+        "İlk fiyat E ise artıştan sonra 1,20 E olur.",
+        "İkinci işlem bunun%20 sini azaltır; 0,80·1,20 E=0,96 E kalır.",
+        "Son değer ilk fiyatın%96 sıdır; eksilen pay%4 olduğundan net%4 azalış vardır."
+      ],
+      "optionReasons": [
+        "Değişmez sonucu, +20−20 yaparak iki farklı tabanı aynı sanır; 100→120→96 örneği bunu çürütür.",
+        "%4 artış yönü ters çevirir; 0,96 çarpanı 1'den küçük olduğu için azalıştır.",
+        "%20 azalış yalnız ikinci işlemi sayar; ilk artıştan gelen 1,20 çarpanını atlar.",
+        "Doğru. %4 azalış, son 0,96 E ile ilk E arasındaki 0,04 E farkına dayanır.",
+        "%40 azalış iki yüzdeyi azalma gibi toplar; gerçekte ilk işlem artıştır ve ikinci taban değişmiştir."
+      ],
+      "commonError": "Aynı yüzde sayısı aynı TL tutarı değildir; ikinci%20, büyümüş 1,20 E üzerinden 0,24 E çıkarır.",
+      "check": "Fark yoluyla doğrula: ilk eklenen 0,20 E, sonra çıkarılan 0,24 E; net−0,04 E, yani%4 azalıştır."
+    }
+  },
+  {
+    "id": "yuzde-problemleri-011-5",
+    "identity": "[\"yuzde-problemleri-011-5\",\"%25 indirimden sonra 180 TL olan bir ürünün indirim öncesi fiyatı kaç TL'dir?\",\"\",[\"225\",\"230\",\"250\",\"270\",\"240\"],4,\"0,75E=180 ⇒ E=240. İndirim 60 TL ve 60/240=%25'tir. 180'e %25 eklemek 225 verir; indirimi yeni taban üzerinden geri almaya çalıştığı için yanlıştır.\"]",
+    "guidance": {
+      "knowledge": [
+        "%25 indirim başlangıç fiyatının%75 ini bırakır.",
+        "Son fiyattan ilk fiyata gitmek kalan oranla bölmektir; aynı yüzdeyi sona eklemek farklı taban kullanır."
+      ],
+      "strategy": "İndirimli tutarı üç eş çeyreğin toplamı olarak gör; eksik ilk çeyreği de bulup başlangıcın tamamına geri dön.",
+      "steps": [
+        "İlk fiyat E için(3/4)E=180 yaz; 180 üç çeyreğin toplamıdır.",
+        "Bir çeyrek 180/3=60 TL'dir.",
+        "Dört çeyrek 4·60=240 TL olur; indirim öncesi fiyat 240'tır."
+      ],
+      "optionReasons": [
+        "225,180'e%25 eklemekten çıkar; 225'e%25 indirim uygulanınca 168,75 kalır, 180 değil.",
+        "230 TL'nin%75'i 172,5 TL'dir; verilen 180'i sağlamaz.",
+        "250 TL'nin%75'i 187,5 TL'dir; son fiyat 180'den büyük çıkar.",
+        "270 TL'nin%75'i 202,5 TL'dir; indirim sonrası koşulu bozar.",
+        "Doğru. 240 TLden%25'lik 60 TL indirilince 180 kalır; tam ters işlem budur."
+      ],
+      "commonError": "İndirimin tabanı bilinmeyen eski fiyattır; 180'e 45 eklemek indirimi 180 üzerinden hesaplar ve tabanı değiştirir.",
+      "check": "İlk-son farkı 240−180=60; 60/240=1/4=%25'tir. Farkı doğru eski fiyata bölünce verilen indirim geri elde edilir."
+    }
+  },
+  {
+    "id": "yuzde-problemleri-011-6",
+    "identity": "[\"yuzde-problemleri-011-6\",\"Bir katılım oranı %20'den %35'e çıkmıştır. Artış kaç yüzde puandır?\",\"\",[\"15\",\"1,75\",\"20\",\"35\",\"75\"],0,\"35−20=15 yüzde puan. Göreli artış 15/20·100=%75'tir, fakat istenen bu değildir. 15 ile 75'in farkı işlem hatası değil iki farklı niceliğin seçilmesidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yüzde puan, iki yüzde değerinin sayısal farkıdır.",
+        "Göreli yüzde artışında bu fark ayrıca eski oranla karşılaştırılır; yüzde puanla aynı nicelik değildir."
+      ],
+      "strategy": "Sorulan birimi önce yaz: iki katılım oranı arasındaki puan mesafesi aranıyor; eski orana bölme işlemini bu hesaba katma.",
+      "steps": [
+        "Başlangıç oranı%20, son oran%35'tir; aynı yüzde ölçeğinde karşılaştırılırlar.",
+        "Puan farkını 35−20=15 olarak hesapla.",
+        "Sonucu 15 yüzde puan diye adlandır; 15/20·100=75 ise ayrı bir göreli artış sorusunun cevabı olur."
+      ],
+      "optionReasons": [
+        "Doğru. 15,35 ile 20 arasındaki farktır; birimi yüzde puandır.",
+        "1,75,35/20 çarpanıdır; iki yüzde değeri arasındaki fark değildir.",
+        "20, başlangıç oranının sayısıdır; artış miktarını hesaplamaz.",
+        "35, son katılım oranıdır; başlangıcı çıkarmadan artışı göstermez.",
+        "75, göreli artış yüzdesidir; fark 15'i eski 20'ye bölüp 100'le çarpar, fakat istenen yüzde puandır."
+      ],
+      "commonError": "35−20'yi bulduktan sonra 20'ye bölmek sorulan ölçüyü değiştirir; puan mesafesini göreli yüzdeye dönüştürme.",
+      "check": "Yüzde ölçeğinde%20'nin üzerine 15 puan eklendiğinde%35'e ulaşılır; çıkarma sonucunun geri toplaması verilen son oranı verir."
+    }
+  },
+  {
+    "id": "yuzde-problemleri-011-7",
+    "identity": "[\"yuzde-problemleri-011-7\",\"Ayrı iki gruptan 10 kişilik grubun %20'si, 30 kişilik grubun %60'ı katılıyor. Birleşik katılım yüzdesi nedir?\",\"\",[\"%20\",\"%50\",\"%40\",\"%60\",\"%80\"],1,\"İlk grupta 2, ikinci grupta 18 kişi; toplam 20/40=%50. (%20+%60)/2=%40 farklı büyüklükteki grupları eşit ağırlıkla sayar ve yanlıştır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Birleşik katılım oranı toplam katılan sayısının toplam kişi sayısına oranıdır.",
+        "Grupların büyüklükleri eşit değilse yüzdeleri aritmetik ortalamak onları yanlışlıkla eşit ağırlıklandırır."
+      ],
+      "strategy": "Her grubun yüzdesini önce kişi adedine çevir; ayrı grupların katılanlarını ve bütün üyelerini toplayıp tek oran kur.",
+      "steps": [
+        "İlk grupta 10·0,20=2, ikinci grupta 30·0,60=18 kişi katılır.",
+        "Ayrı gruplarda toplam 20 katılan ve 10+30=40 kişi vardır.",
+        "Birleşik oran 20/40=1/2=%50'dir."
+      ],
+      "optionReasons": [
+        "%20, yalnız ilk grubun oranıdır; kırk kişiye uygulanırsa 8 katılan der, gerçek 20'yi vermez.",
+        "Doğru. %50, kırk kişiden yirmisinin katılmasıdır; iki grubun adet toplamını sağlar.",
+        "%40, (20+60)/2 hesabıdır; on kişilik grupla otuz kişilik grubu eşit ağırlıkta sayar.",
+        "%60, yalnız ikinci grubun oranıdır; ilk gruptaki daha düşük katılımı yok sayar.",
+        "%80, iki ayrı grubun yüzdelerini toplar; kırk kişide 32 katılımcı gerektirir, verilen 20 değildir."
+      ],
+      "commonError": "Yüzdeler farklı bütünlere aitken doğrudan toplanmaz; önce gerçek kişi adetlerine dönmek ortak bütünü kurar.",
+      "check": "Katılmayanlar ilk grupta 8, ikinci grupta 12 olmak üzere 20 kişidir. Kırkın yarısı katılmadıysa diğer yarısı katılmıştır; %50 doğrulanır."
+    }
+  },
+  {
+    "id": "yuzde-problemleri-011-8",
+    "identity": "[\"yuzde-problemleri-011-8\",\"Bir karenin kenarı %20 büyüyor. Alanı yüzde kaç büyür?\",\"\",[\"%20\",\"%24\",\"%44\",\"%40\",\"%80\"],2,\"Alan çarpanı 1,20²=1,44; artış %44'tür. 10×10 alanı 100, 12×12 alanı 144 kontrolü verir. Alan uzunluk değil iki uzunluğun çarpımıdır; yüzdeyi yalnız ikiyle çarpmak ara çarpım etkisini atlar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Karenin alanı kenar uzunluğunun karesidir.",
+        "Bir kenar uzunluğu bir çarpanla değişirse alan aynı çarpanın karesiyle değişir; uzunluk ve alan yüzdeleri farklıdır."
+      ],
+      "strategy": "İlk kenara bir sembol ver; artmış kenarı alan formülüne yerleştirip ilk alanla oranla.",
+      "steps": [
+        "İlk kenar s ise alan s²dir; %20 büyümüş kenar 1,20 s olur.",
+        "Yeni alan(1,20 s)²=1,44 s²dir; alan çarpanı 1,44'tür.",
+        "İlk alanın tamamı 1 çıkarılır: 1,44−1=0,44, yani%44 artış vardır."
+      ],
+      "optionReasons": [
+        "%20, kenardaki artıştır; alanı tek uzunluk gibi ele alır.",
+        "%24,1,20·0,20 ile bulunan ek bir şeridin oranıdır; diğer%20'lik alan artışını atlar.",
+        "Doğru. %44,1,20²−1=0,44 sonucudur; iki kenar etkisi ve ortak köşe parçası birlikte vardır.",
+        "%40, iki%20'yi yalnız toplar; eklenen iki şeridin köşedeki%4'lük çarpım alanını atlar.",
+        "%80, alan çarpanı 1,80 gerektirir; kenar 1,20 olduğunda alan çarpanı 1,44'tür."
+      ],
+      "commonError": "Alan artışını iki kat kenar artışı saymak çapraz çarpımı kaybeder; (1+r)²=1+2 r+r²de son terim de vardır.",
+      "check": "Kenar 10'dan 12'ye çıksın: alan 100'den 144'e çıkar. Artan 44/100=%44; bu somut çizim hesaplanan alan oranını doğrular."
+    }
+  },
+  {
+    "id": "yuzde-problemleri-011-9",
+    "identity": "[\"yuzde-problemleri-011-9\",\"%80 dolu bir kaptaki mevcut sıvının %25'i tüketiliyor. Başlangıçtaki kap kapasitesi değişmiyor. Son doluluk yüzde kaçtır?\",\"\",[\"%55\",\"%65\",\"%75\",\"%60\",\"%80\"],3,\"Kapasite C ise içerik 0,80C. Bunun %75'i kalır: 0,80·0,75C=0,60C. 80−25=55 işlemi tüketimi yanlış biçimde kapasite tabanından çıkarır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Doluluk oranının tabanı kabın kapasitesidir; tüketilen sıvı yüzdesinin tabanı ise mevcut içeriktir.",
+        "Bir miktarın%25'i tüketilince onun%75'i kalır; kapasitenin değişmemesi doluluk oranının ortak paydasını korur."
+      ],
+      "strategy": "Kapasite ve içeriği ayrı niceliklerle yaz; tüketimi içerik üzerinden uygula, sonda kapasiteye göre doluluğa dön.",
+      "steps": [
+        "Kapasite C ise başlangıçtaki sıvı 0,80 Cdir.",
+        "Bu sıvının%25'i 0,25·0,80 C=0,20 Cdir; bu miktar tüketilir.",
+        "Kalan 0,80 C−0,20 C=0,60 C olur; kapasiteye göre doluluk%60'tır."
+      ],
+      "optionReasons": [
+        "%55,80−25 hesabıdır; tüketilen%25'i içeriğin değil tüm kapasitenin yüzdesi gibi çıkarır.",
+        "%65, başlangıç doluluğundan 15 puan çıkarmaktır; oysa içerikten tüketilen miktar kapasitenin 20 puanıdır.",
+        "%75, tüketim sonrası eski içeriğin kalan oranıdır; kapasiteye göre doluluk değildir.",
+        "Doğru. %60, kapasitenin%80 inin%75 inin kalmasıdır; 0,80·0,75=0,60 sağlar.",
+        "%80, başlangıç doluluğunu tekrarlar; %25 içerik tüketimini hiç uygulamaz."
+      ],
+      "commonError": "İçeriğin%25 ini kabın%25'i sanma; hangi bütünün parçası olduğunu her yüzdeye ayrı yaz.",
+      "check": "Kapasite 100 L seçilirse 80 L sıvıdan 20 L tüketilir, 60 L kalır; 60/100=%60. Doluluk aynı kapasiteyle hesaplanmıştır."
+    }
+  },
+  {
+    "id": "yuzde-problemleri-011-10",
+    "identity": "[\"yuzde-problemleri-011-10\",\"500 gramı 200 TL olan bir ürünün yeni paketi 400 gram ve 192 TL'dir. Gram fiyatı nasıl değişmiştir?\",\"\",[\"%4 azalmıştır.\",\"%4 artmıştır.\",\"%20 azalmıştır.\",\"Değişmemiştir.\",\"%20 artmıştır.\"],4,\"Eski 200/500=0,40 TL/g, yeni 192/400=0,48 TL/g. Artış 0,08/0,40=%20. Paket fiyatı %4 azalmış olsa da miktar daha fazla azalmıştır; sorulan nicelik birim fiyattır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Birim fiyat, toplam fiyatın alınan miktara bölümüdür.",
+        "Gram fiyatının yüzde değişiminde eski ve yeni değerlerin ikisi de TL/g olmalı; payda eski birim fiyattır."
+      ],
+      "strategy": "Paket etiketini tek başına karşılaştırma; her iki dönemi bir gramlık aynı miktara indirip bu iki fiyatın değişimini hesapla.",
+      "steps": [
+        "Eski gram fiyatı 200/500=0,40 TL/gdir; yenisi 192/400=0,48 TL/gdir.",
+        "Birimdeki artış 0,48−0,40=0,08 TL/g olur.",
+        "Eski birim fiyata oran 0,08/0,40=0,20'dir; gram fiyatı%20 artmıştır."
+      ],
+      "optionReasons": [
+        "%4 azalış, paket etiketinin 200'den 192'ye değişimidir; paket miktarının 500'den 400'e indiğini hesaba katmaz.",
+        "%4 artış, paket fiyatındaki%4'ün yönünü ters alır; gram başına fiyat hesabını yapmaz.",
+        "%20 azalış, gramajdaki 500'den 400'e değişimdir; istenen TL/g niceliği değildir ve yönü de artışa aykırıdır.",
+        "Değişmemesi için 400 gramın 160 TL olması gerekirdi; 192 TL aynı gram fiyatını korumaz.",
+        "Doğru. %20 artış, 0,40'tan 0,48'e geçiştir; fark 0,08'in eski 0,40'a oranıyla doğrulanır."
+      ],
+      "commonError": "Paket fiyatının azalması gram fiyatının da azalmasını gerektirmez; miktar daha hızlı azalırsa birim fiyat artabilir.",
+      "check": "Bir kilogram için eski 400 TL, yeni 480 TL hesapla; 80/400=%20 artış çıkar. Gram yerine kilogramda da aynı oran bulunur."
+    }
+  },
+  {
+    "id": "kar-zarar-problemleri-011-1",
+    "identity": "[\"kar-zarar-problemleri-011-1\",\"160 TL maliyetli bir ürün 200 TL'ye satılıyor. Maliyete göre kâr yüzdesi nedir?\",\"\",[\"%25\",\"%20\",\"%30\",\"%40\",\"%80\"],0,\"Kâr 40 TL; 40/160·100=%25. 40/200=%20 satışa göre marjdır. 160·1,25=200 doğrulaması, yüzde tabanının maliyet olduğunu gösterir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kâr, satış gelirinden maliyet çıkarılarak bulunur.",
+        "Maliyete göre kâr yüzdesinde payda maliyettir; satışa bölmek satış marjı denen farklı oranı verir."
+      ],
+      "strategy": "Önce TL cinsinden kârı ayır; sonra sorunun açıkça istediği maliyet tabanına oranla.",
+      "steps": [
+        "Maliyet 160 TL, satış 200 TL'dir; kâr 200−160=40 TL olur.",
+        "Maliyete göre oran 40/160=1/4'tür.",
+        "Yüzdeye çevir: (1/4)·100=%25 kâr bulunur."
+      ],
+      "optionReasons": [
+        "Doğru. %25, maliyet 160'ın 40 TLlik payıdır; 160·1,25=200 koşulunu sağlar.",
+        "%20,40'ı satış 200'e bölünce çıkar; satış marjıdır, istenen maliyet oranı değildir.",
+        "%30, maliyet 160'a 48 TL kâr ekleyip 208 TL satış gerektirir; verilen 200 değildir.",
+        "%40, maliyete 64 TL kâr ekler; 40 TL tutarı doğrudan yüzde sanırsa yanlış taban kurulur.",
+        "%80, maliyete 128 TL kâr gerektirir; verilen fark 40 TL'dir."
+      ],
+      "commonError": "Kâr tutarı 40 TL ile yüzde 40'ı aynı sayma; birini diğerine çevirmek için istenen tabana bölmek gerekir.",
+      "check": "Satış/maliyet=200/160=1,25'tir; bu maliyetin tamamı 1 ile kâr payı 0,25'in toplamıdır. Yüzde 25 yeniden elde edilir."
+    }
+  },
+  {
+    "id": "kar-zarar-problemleri-011-2",
+    "identity": "[\"kar-zarar-problemleri-011-2\",\"%20 zararla 280 TL'ye satılan ürünün maliyeti kaç TL'dir?\",\"\",[\"224\",\"350\",\"300\",\"336\",\"400\"],1,\"0,80M=280 ⇒ M=350. Zarar 70 TL ve 70/350=%20. 280'e %20 eklemek 336 verir; satış tutarını yanlış yüzde tabanı yaptığı için maliyeti geri getirmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "%20 zarar, satışın maliyetin%80'i olması demektir.",
+        "Maliyeti geri bulurken satıştaki kalan paya bölünür; zarar yüzdesinin tabanı satış değildir."
+      ],
+      "strategy": "Satışın maliyetin hangi payı kaldığını belirle; verilen satıştan tam maliyete oranı ters çevirerek dön.",
+      "steps": [
+        "Maliyet M olsun; 0,80 M=280 kur.",
+        "İki tarafı 0,80'e böl: M=280/0,80=350 TL'dir.",
+        "Zarar 350−280=70 TL olur; 70/350=%20 koşulunu sağlar."
+      ],
+      "optionReasons": [
+        "224,280·0,80 hesabıdır; zaten indirilmiş satışa bir kez daha zarar uygular.",
+        "Doğru. 350'nin%80'i 280'dir; zarar 70 TL ve 70/350=%20'dir.",
+        "300 TL maliyette zarar 20 TL'dir; 20/300=%6⅔ olur, %20 değil.",
+        "336,280'e%20 eklemekten çıkar; zarar 56 TL'nin maliyet 336'ya oranı 1/6'dır, %20 değildir.",
+        "400 maliyetle 280 satış 120 TL zarar verir; 120/400=%30'dur."
+      ],
+      "commonError": "Satışa%20 eklemek maliyete göre%20'lik kaybı geri kurmaz; 280 yeni ve daha küçük tabandır.",
+      "check": "Maliyetin beşte biri 350/5=70 TL'dir; beşte dördü 280 TL kalır. Kesir yolu da satışın doğru%80 payı olduğunu doğrular."
+    }
+  },
+  {
+    "id": "kar-zarar-problemleri-011-3",
+    "identity": "[\"kar-zarar-problemleri-011-3\",\"Maliyeti 400 TL olan ürün %50 kâr hedefiyle etiketlenip etiketten %20 indirimle satılıyor. Gerçek kâr yüzdesi kaçtır?\",\"\",[\"%10\",\"%25\",\"%20\",\"%30\",\"%50\"],2,\"Etiket 600, satış 480 TL; kâr 80/400=%20. Kısa kontrol 1,50·0,80=1,20'dir. 50−20=%30, maliyet ve etiket gibi iki farklı tabanı karıştırır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Etiket kârı maliyet üzerinden, etiket indirimi etiket üzerinden hesaplanır.",
+        "Gerçek kâr, indirim sonrası satışın ilk maliyetle karşılaştırılmasından çıkar."
+      ],
+      "strategy": "Maliyet→etiket→gerçek satış zincirini iki ayrı çarpanla kur; son satışın maliyete göre oranını okuyarak kâra dön.",
+      "steps": [
+        "Maliyet 400 TLye%50 eklenir: etiket 400·1,50=600 TL'dir.",
+        "Etikete%20 indirimle satış 600·0,80=480 TL olur.",
+        "Gerçek kâr 480−400=80 TL; 80/400=%20'dir."
+      ],
+      "optionReasons": [
+        "%10 kâr 400'den 440 TL satış gerektirir; etiket indirimi sonrası 480 TLyi karşılamaz.",
+        "%25 kâr 500 TL satış gerektirir; gerçek satış 480'dir.",
+        "Doğru. %20 kâr, 400 TL maliyet üzerindeki 80 TL fazlalıktır; iki aşamayı birlikte sağlar.",
+        "%30,50−20 hesabından gelir; iki yüzde farklı tabanlarda olduğundan bu çıkarma geçerli değildir.",
+        "%50, indirimden önceki hedef kârdır; etiketten düşülen 120 TLyi yok sayar."
+      ],
+      "commonError": "50−20 yaparak kâr bulma; etiketten yapılan%20'lik indirim, maliyetin%20 siyle aynı tutar değildir.",
+      "check": "Çarpanları birleştir: 1,50·0,80=1,20. Satış, maliyetin%120'si olduğundan üstündeki%20 gerçek kârdır."
+    }
+  },
+  {
+    "id": "kar-zarar-problemleri-011-4",
+    "identity": "[\"kar-zarar-problemleri-011-4\",\"500 TL maliyetli ürün 625 TL'ye etiketlenmiştir. Zarar etmeden etikete en fazla yüzde kaç indirim yapılabilir?\",\"\",[\"%15\",\"%25\",\"%30\",\"%20\",\"%40\"],3,\"625(1−d/100)≥500 ⇒ 1−d/100≥0,80 ⇒ d≤20. %20 indirim satışını 500 TL yapar, başabaştır. %25 indirim 468,75 TL verir ve zarar doğurur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Zarar etmeme, satışın maliyetten küçük olmaması koşuludur; başabaşa izin verir.",
+        "İndirim yüzdesinin tabanı etiket fiyatıdır; izin verilen TL düşüşü bu etikete bölünür."
+      ],
+      "strategy": "Önce etiket ile maliyet arasındaki indirilebilir TL payını bul; bu payı etikete oranlayarak üst sınırı seç.",
+      "steps": [
+        "Etiket 625 TL, maliyet 500 TL olduğundan zarar etmeden en fazla 625−500=125 TL düşülebilir.",
+        "125/625=1/5=%20 indirim oranıdır.",
+        "Bu sınırda satış 500 TL ile maliyete eşittir; daha yüksek indirim satışını 500'ün altına indirir."
+      ],
+      "optionReasons": [
+        "%15 indirim satışını 531,25 TL yapar; zarar yoktur fakat daha fazla indirim yapılabildiğinden en fazla değildir.",
+        "%25 indirim 468,75 TL satış verir; 500 TL maliyetin altına iner.",
+        "%30 indirim 437,5 TL satış yapar; 62,5 TL zarar doğurur.",
+        "Doğru. %20 indirim 125 TL düşürür; 500 TL satışla başabaş sınırını tam yakalar.",
+        "%40 indirim 375 TL satış verir; 125 TL zarar doğurur ve sınırı aşar."
+      ],
+      "commonError": "125'i 500'e bölerek%25 bulmak etiket indiriminin tabanını maliyet yapar; indirim etikete uygulanır.",
+      "check": "625·0,80=500 ile sınırı doğrula; etiketten bundan fazla her indirim daha küçük satış verir, bu yüzden başabaş üst sınırdır."
+    }
+  },
+  {
+    "id": "kar-zarar-problemleri-011-5",
+    "identity": "[\"kar-zarar-problemleri-011-5\",\"İki ürünün her biri 240 TL'ye satılıyor. Birinde %20 kâr, diğerinde %20 zarar vardır. Toplam sonuç nedir?\",\"\",[\"Başabaş.\",\"%4 kâr.\",\"%20 zarar.\",\"%40 zarar.\",\"%4 zarar.\"],4,\"Maliyetler 240/1,20=200 ve 240/0,80=300; toplam maliyet 500, gelir 480'dir. 20/500=%4 zarar. Zıt oranların birbirini götürmesi eşit maliyet koşulunda mümkündür, eşit satışta değil.\"]",
+    "guidance": {
+      "knowledge": [
+        "Eşit satış fiyatı eşit maliyet demek değildir; kâr ve zarar çarpanları farklıysa maliyetler ayrı bulunur.",
+        "Toplam sonuç, toplam gelir ile toplam maliyetin farkıdır; yüzde tabanı toplam maliyettir."
+      ],
+      "strategy": "Her iki 240 TL satıştan kendi maliyetine geri dön; iki ürünü ancak tutarlar elde edildikten sonra aynı toplamda birleştir.",
+      "steps": [
+        "Kârlı ürünün maliyeti 240/1,20=200 TL, zararlı ürünün maliyeti 240/0,80=300 TL'dir.",
+        "Toplam maliyet 500 TL, toplam satış 480 TL olur; 20 TL zarar vardır.",
+        "Zarar yüzdesi 20/500·100=%4'tür; eşit olan satışlar maliyetleri eşitlemez."
+      ],
+      "optionReasons": [
+        "Başabaş sonucu, +%20 ile−%20'yi toplar; maliyetler 200 ve 300 olduğu için tutarlar 40 ile 60'tır ve birbirini götürmez.",
+        "%4 kâr, büyüklüğü doğru fakat yönü ters seçer; gelir 480, maliyet 500'den küçüktür.",
+        "%20 zarar, yalnız zarar eden ürünün oranını tümüne taşır; kârlı ürünün 40 TL katkısını atlar.",
+        "%40 zarar, yüzde büyüklüklerini zarar gibi toplar; hesaplanan 20 TL zarar 500 TL'nin%4 üdür.",
+        "Doğru. %4 zarar, 500 TL toplam maliyet ile 480 TL gelir farkının doğru tabana oranıdır."
+      ],
+      "commonError": "Eşit satışta iki yüzdeyi ortalama; aynı TL satışın biri maliyetinin%120'si, öteki%80 idir ve maliyetler farklıdır.",
+      "check": "Tutar farklarından kontrol et: ilk ürün 40 TL kâr, ikinci 60 TL zarar; net 20 TL zarar 500 TL maliyette%4 eder."
+    }
+  },
+  {
+    "id": "kar-zarar-problemleri-011-6",
+    "identity": "[\"kar-zarar-problemleri-011-6\",\"İki ürünün her birinin maliyeti 200 TL'dir. Biri %20 kârla, diğeri %20 zararla satılıyor. Toplam sonuç nedir?\",\"\",[\"Başabaş.\",\"%4 zarar.\",\"%4 kâr.\",\"%20 zarar.\",\"%20 kâr.\"],0,\"Satışlar 240 ve 160, toplam 400 TL'dir; toplam maliyet de 400 TL. Eşit maliyette aynı büyüklükteki kâr/zarar tutarları 40'ar TL olup birbirini götürür. Eşit satış kısayolu bu koşula taşınamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Eşit maliyetlerde aynı büyüklükteki kâr ve zarar yüzdeleri aynı TL tutarını verir.",
+        "Toplam kâr veya zarar için gelirler ve maliyetler aynı kapsamda toplanır."
+      ],
+      "strategy": "Burada eşit verilenin satış değil maliyet olduğunu işaretle; her ürünün satış tutarını ayrı bulup toplam farkı hesapla.",
+      "steps": [
+        "İlk ürün 200·1,20=240 TLye, ikinci 200·0,80=160 TLye satılır.",
+        "Toplam gelir 240+160=400 TL, toplam maliyet 200+200=400 TL'dir.",
+        "İki toplam eşit olduğundan net kâr ve zarar 0'dır; sonuç başabaştır."
+      ],
+      "optionReasons": [
+        "Doğru. Başabaş doğrudur; eşit 200 TL tabanlarında 40 TL kâr ile 40 TL zarar birbirini götürür.",
+        "%4 zarar, eşit satış koşuluna ait kısa yolun buraya taşınmasıdır; bu kartta satışlar 240 ile 160 olarak farklıdır.",
+        "%4 kâr, toplam 400 TL gelirde 16 TL fazlalık gerektirir; gerçek fark 0'dır.",
+        "%20 zarar, yalnız 160 TLye satılan ürünü dikkate alır; diğerinin 40 TL kârını atlar.",
+        "%20 kâr, yalnız 240 TLye satılan ürünü dikkate alır; diğerinin 40 TL zararını atlar."
+      ],
+      "commonError": "Bir önceki veya benzer sorudaki eşit satış sonucunu ezberle taşıma; bu kart açıkça eşit maliyet veriyor.",
+      "check": "Doğrudan değişimleri topla: 200·0,20−200·0,20=0. Her iki yüzde aynı 200 TL tabanında olduğu için net sıfırdır."
+    }
+  },
+  {
+    "id": "kar-zarar-problemleri-011-7",
+    "identity": "[\"kar-zarar-problemleri-011-7\",\"100 kg ürün kilogramı 30 TL'den alınıyor. Ek gider yok. %20'si satılamıyor; kalan kilogramı 45 TL'den satılıyor. Toplam kâr yüzdesi nedir?\",\"\",[\"%10\",\"%20\",\"%25\",\"%30\",\"%50\"],1,\"Maliyet 3000, gelir 80·45=3600 TL; kâr 600/3000=%20. Fire alış maliyetini 2400 TL'ye düşürmez; satılamayan miktarın bedeli de ödenmiştir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Fire, satılabilir miktarı azaltır; başlangıçta ödenen ürün bedelini kendiliğinden silmez.",
+        "Toplam gelir satılan miktar×birim satış, toplam maliyet alınan miktar×birim alış hesabıdır."
+      ],
+      "strategy": "Ödenen yüz kilogram ile gelir getiren kalan kilogramı iki ayrı satırda tut; son farkı tüm başlangıç maliyetine oranla.",
+      "steps": [
+        "Alış maliyeti 100·30=3000 TL'dir; ek gider belirtilmemiştir.",
+        "Satılabilen 100·0,80=80 kg olur; gelir 80·45=3600 TL'dir.",
+        "Kâr 3600−3000=600 TL; 600/3000=%20'dir."
+      ],
+      "optionReasons": [
+        "%10 kâr 3300 TL gelir gerektirir; gerçek 80·45=3600 TL'dir.",
+        "Doğru. %20 kâr, ödenmiş 3000 TL maliyet üstündeki 600 TL farktır.",
+        "%25 kâr için 3000·1,25=3750 TL gelir gerekirdi; verilen 80 kg ile 45 TL/kg yalnız 3600 TL getirir.",
+        "%30 kâr 3900 TL satış gerektirir; seksen kilogram 45 TLden 3600 TL sağlar.",
+        "%50, birim 45 TL satış ile ilk 30 TL alışın oranıdır; aynı zamanda fireyle maliyeti 2400'e düşürürsen çıkar, iki durumda da satılamayan 20 kg'nin gideri atlanır."
+      ],
+      "commonError": "Maliyeti 80·30 sayma; satılamayan 20 kg de satın alınmış ve bedeli ödenmiştir.",
+      "check": "Toplam maliyeti satılabilir miktara böl: 3000/80=37,5 TL/kg başabaş bedelidir. 45−37,5=7,5 ve 7,5/37,5=%20; aynı kâr oranı bulunur."
+    }
+  },
+  {
+    "id": "kar-zarar-problemleri-011-8",
+    "identity": "[\"kar-zarar-problemleri-011-8\",\"Sabit gider 600 TL, birim maliyet 20 TL ve birim satış 35 TL'dir. Üretilenlerin tümü satılıyor. Kesin kâr için en az kaç ürün gerekir?\",\"\",[\"39\",\"40\",\"41\",\"42\",\"60\"],2,\"15n>600 ⇒ n>40. İlk tam sayı 41'dir. 40'ta gelir ve maliyet 1400 TL olup kâr sıfırdır; 41'de kâr 15 TL olur. En az kâr adedi başabaşla aynı değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Satış başına 35−20 TL, sabit gideri karşılamaya katkı yapar.",
+        "Kesin kâr için gelir maliyetten büyük olmalı; başabaş eşitliği kâr sayılmaz ve adet tam sayıdır."
+      ],
+      "strategy": "Birim satıştan birim gideri çıkararak katkıyı bul; bu katkıların sabit gideri aşması için gereken tam adet sınırını test et.",
+      "steps": [
+        "Üretilip satılan n adet için gelir 35 n, maliyet 600+20 ndir; kâr 15 n−600'dür.",
+        "Kesin kâr 15 n−600>0 koşuludur; buradan n>40 çıkar.",
+        "İlk uygun tam sayı 41'dir; 40'ta kâr 0,41'de 15 TL'dir."
+      ],
+      "optionReasons": [
+        "39 adette 15·39−600=−15 TL çıkar; hâlâ zarar vardır.",
+        "40 başabaş adedidir; gelir ve maliyet 1400 TL eşit, kâr sıfırdır.",
+        "Doğru. 41 adette 15 TL kâr oluşur ve bir önceki 40 kâr sağlamaz; ilk uygun tam sayıdır.",
+        "42 adette 30 TL kâr vardır, fakat 41'de de kâr edildiği için en az değildir.",
+        "60 adette 300 TL kâr vardır; daha küçük 41 de sağladığından en az olamaz."
+      ],
+      "commonError": "Eşitliği çözerek bulduğun 40'ı kesin kâr diye seçme; bu değer yalnız zararla kâr arasındaki başabaş sınırıdır.",
+      "check": "41 üründe gelir 1435, maliyet 600+820=1420 TL'dir; fark 15 TL. 40 üründe iki tutar 1400 eşittir; komşu aday kontrolü minimumu kanıtlar."
+    }
+  },
+  {
+    "id": "kar-zarar-problemleri-011-9",
+    "identity": "[\"kar-zarar-problemleri-011-9\",\"Bir ürünün etiket fiyatı 750 TL'dir. Maliyeti etiketten %20 düşük, satış fiyatı etiketten %12 yüksektir. Maliyete göre kâr yüzdesi nedir?\",\"\",[\"%20\",\"%28\",\"%32\",\"%40\",\"%52\"],3,\"M=750·0,80=600, S=750·1,12=840 TL. Kâr 240/600=%40. %20 ile %12'nin toplamı %32 etiket tabanlı iki farkı toplar; istenen maliyet tabanlı oran değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Maliyet ve satışın etikete göre yüzdeleri, ikisinin de önce aynı etiket tabanından hesaplanmasını sağlar.",
+        "Kâr yüzdesi sorulunca son farkın tabanı maliyettir; etiket üzerinden bulunan fark yüzdesiyle aynı değildir."
+      ],
+      "strategy": "Etiketi ortak başlangıç kabul ederek maliyet ile satışı iki ayrı dala ayır; sonra bu dalların farkını maliyet tabanına taşı.",
+      "steps": [
+        "Etiket 750 TL; maliyet 750·0,80=600 TL'dir.",
+        "Satış 750·1,12=840 TL olur; kâr 840−600=240 TL'dir.",
+        "Maliyete göre kâr 240/600·100=%40'tır."
+      ],
+      "optionReasons": [
+        "%20, maliyetin etiketten düşük oluş oranıdır; kâr için 840 TL satışını kullanmaz.",
+        "%28 kâr 600·1,28=768 TL satış gerektirir; verilen 840 değildir.",
+        "%32, (840−600)/750 oranıdır; kârı maliyet yerine etikete böler.",
+        "Doğru. %40,240 TL kârın 600 TL maliyete oranıdır; doğru tabanı kullanır.",
+        "%52 kâr 600·1,52=912 TL satış gerektirir; fark 240 yerine 312 TL olur."
+      ],
+      "commonError": "20+12=%32, etikete göre iki farkın toplamıdır; istenen oran için bu 32'lik etiket payını 80'lik maliyet payına bölmelisin.",
+      "check": "Fiyatları bilmeden oranla denetle: S/M=1,12/0,80=1,40; bu maliyetin üstünde%40 kâr demektir."
+    }
+  },
+  {
+    "id": "kar-zarar-problemleri-011-10",
+    "identity": "[\"kar-zarar-problemleri-011-10\",\"Bir satıcı 8 ürünü tanesi 50 TL maliyetle, 2 ürünü tanesi 100 TL maliyetle alıyor. İlk grubu %50 kârla, ikinci grubu %25 zararla tamamen satıyor. Toplam kâr yüzdesi nedir?\",\"\",[\"%12,5\",\"%20\",\"%30\",\"%50\",\"%25\"],4,\"Maliyet 8·50+2·100=600 TL. Gelir 8·75+2·75=750 TL; kâr 150/600=%25. Oranların düz ortalaması %12,5, iki grubun farklı toplam maliyet ağırlığını hesaba katmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Her grubun toplam maliyeti adet×birim maliyetle bulunur.",
+        "Farklı toplam maliyetli grupların kâr oranları düz ortalanmaz; net TL kârı toplam maliyete bölünür."
+      ],
+      "strategy": "İki grubu adetleriyle ayrı maliyet ve satış satırlarına dönüştür; oranları değil tutarları toplayarak bütün partinin sonucunu bul.",
+      "steps": [
+        "İlk grubun maliyeti 8·50=400 TL, ikincinin 2·100=200 TL'dir; toplam 600 TL'dir.",
+        "İlk birim satış 50·1,50=75 TL, ikinci 100·0,75=75 TL; gelir 8·75+2·75=750 TL olur.",
+        "Net kâr 750−600=150 TL; 150/600·100=%25'tir."
+      ],
+      "optionReasons": [
+        "%12,5, (50−25)/2 hesabından çıkar; 400 ve 200 TLlik grup maliyetlerini eşit ağırlıklandırır.",
+        "%20,150'yi satış 750'ye bölünce çıkan satış marjıdır; istenen maliyet tabanlı kâr değildir.",
+        "%30,600 TL maliyette 180 TL kâr gerektirir; hesaplanan 150 TLden fazladır.",
+        "%50, yalnız ilk grubun oranıdır; ikinci grubun 50 TL zararını hesaba katmaz.",
+        "Doğru. %25, ilk gruptaki 200 TL kârdan ikinci gruptaki 50 TL zararı çıkarıp 150'yi toplam 600'e bölerek bulunur."
+      ],
+      "commonError": "Grup başına bir oran var diye her gruba eşit ağırlık verme; sekiz ucuz ürünün toplam maliyeti iki pahalı ürünün iki katıdır.",
+      "check": "Maliyet ağırlıkları 2: 1'dir; oranları bu ağırlıklarla denetle: (2·50−25)/3=%25. TL hesabındaki 150/600 sonucu ile aynıdır."
+    }
+  }
+]

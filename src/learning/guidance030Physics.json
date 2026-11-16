@@ -1,0 +1,962 @@
+[
+  {
+    "id": "basinc-q1",
+    "identity": "[\"basinc-q1\",\"Durgun 50 N yükün temas alanı 0,025 m²’dir. Yük düzgün dağılıyorsa ortalama basınç kaç Pa’dır?\",\"\",[\"20000\",\"2000\",\"2\",\"1250\",\"20\"],1,\"50/0,025=2000 Pa. 1250 kuvvet/alan hesabını sağlamaz; 2 sonucu kPa olarak yazılabilse de kök Pa ister. Kuvveti ve basıncı aynı sayma.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ortalama basınç, bir yüzeye dağılan dik kuvvetin alan başına payıdır. Birimi Pa=N/m² olduğundan kuvvet newton, temas alanı metrekare ile kullanılmalıdır."
+      ],
+      "strategy": "Verilen yükü temas alanına bölerek bir metrekareye düşen kuvveti bul; alan zaten SI biriminde olduğu için ek alan dönüşümü yapma.",
+      "steps": [
+        "Yüzeye dağılan kuvvet 50 N, kullanılan alan 0,025 m²’dir. Kütle verilmediği için bu kuvvete yeniden g çarpanı eklenmez.",
+        "Bir metrekareye ölçeklemek için P=50/0,025 işlemini kur. Küçük alanla bölmenin sayısal değeri büyüteceğini öngör.",
+        "50/0,025=2000 bulunur. N/m² birimiyle sonuç 2000 Pa’dır."
+      ],
+      "optionReasons": [
+        "20000 Pa için aynı alana 20000×0,025=500 N gerekirdi; bu, verilen yükün on katıdır.",
+        "2000 Pa’nın 0,025 m² üzerindeki kuvveti 2000×0,025=50 N olur; verilen yükü karşılar.",
+        "Sayısal olarak 2 kPa doğru bir eşdeğerdir; seçenek ise Pa sorusuna 2 Pa karşılığını verir. Kilo çarpanı atlanamaz.",
+        "1250 Pa seçilirse bu alandaki kuvvet 31,25 N çıkar; 50 N’luk yükü temsil etmez.",
+        "20 Pa bu yüzeyde yalnız 0,5 N oluşturur. Ondalık alanla bölme sonucunu küçültmek, alan başına etkiyi ters yorumlar."
+      ],
+      "commonError": "0,025 ile bölmek yerine çarpmak ya da Pa ile kPa’nın yalnız sayılarını karşılaştırmak basıncı yanlış ölçekler.",
+      "check": "Ters işlemde P×A=2000×0,025=50 N elde edilir; böylece hem verilen kuvvet hem birim geri kazanılır."
+    }
+  },
+  {
+    "id": "basinc-q2",
+    "identity": "[\"basinc-q2\",\"Yatay zemindeki 10 kg blok yukarıdan 40 N’luk iple destekleniyor ve durgun. Temas alanı 0,03 m², g=10 m/s². Zemine uyguladığı basınç kaç Pa?\",\"\",[\"4666,7\",\"400\",\"60\",\"2000\",\"3333,3\"],3,\"G=100 N, N=100−40=60 N; P=60/0,03=2000 Pa. İpin yukarı desteği zemine aktarılan yükü azaltır; mg/A bütün yükü zemine yükler, 60 ise yalnız kuvvettir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Durgun bir cismin düşey kuvvetlerinin toplamı sıfırdır. Yukarı çeken ip ve zemin tepkisi ağırlığı birlikte taşır; zemindeki basınç, bu tepkinin temas alanına bölünmesiyle bulunur."
+      ],
+      "strategy": "Blok için aşağı ağırlık, yukarı ip ve zemin oklarını çiz. Önce zeminin taşıdığı payı ayır, sonra yalnız o kuvveti 0,03 m²’ye dağıt.",
+      "steps": [
+        "10 kg kütleyi verilen g ile kuvvete çevir: G=10×10=100 N aşağıdır. İp 40 N yukarı çeker.",
+        "Denge N+40=100 olduğundan zeminin tepkisi N=60 N’dur. İpin desteği, zemine aktarılan kuvveti azaltır.",
+        "P=N/A=60/0,03=2000 Pa bulunur. Alanla bölme, kuvveti basınca dönüştüren son işlemdir."
+      ],
+      "optionReasons": [
+        "Bu yaklaşık değer (100+40)/0,03 işleminden gelir; yukarı çeken ipi aşağı bastıran kuvvet gibi ekler.",
+        "400 Pa bu alanda 12 N tepki gerektirir. Oysa 12+40=52 N, 100 N ağırlığı dengelemez.",
+        "60 N, zeminin taşıdığı kuvvettir. Basınç için bu değeri temas alanına bölmek gerekir.",
+        "60 N’luk zemin payını 0,03 m²’ye bölmek 2000 Pa verir; ip ve zemin birlikte 100 N taşır.",
+        "Yaklaşık 100/0,03 değeridir; ağırlığın tamamını zemine yükleyerek 40 N ip desteğini yok sayar."
+      ],
+      "commonError": "Durgunluk N=mg demek değildir; yalnız ağırlık ile zemin kuvveti varsa bu özel eşitlik kurulabilir.",
+      "check": "Bulunan basınçtan N=2000×0,03=60 N geri gelir. Bu kuvvete ipteki 40 N eklenince 100 N ağırlık dengelenir."
+    }
+  },
+  {
+    "id": "basinc-q3",
+    "identity": "[\"basinc-q3\",\"Açık kapta yoğunluğu 800 kg/m³ olan durgun sıvının yüzeyinden 0,5 m derindeki sıvı kaynaklı basınç kaç Pa? g=10 m/s²; atmosfer basıncı 100000 Pa.\",\"\",[\"4000\",\"104000\",\"400\",\"8000\",\"50000\"],0,\"ΔP=800·10·0,5=4000 Pa. 104000 Pa mutlak basınç olur; kökte yüzey basıncı dahil istenmedi. ρ, g ve düşey h’yi birlikte kullan.\"]",
+    "guidance": {
+      "knowledge": [
+        "Durgun homojen sıvının yüzeye göre oluşturduğu basınç artışı ρgh’dir. Mutlak basınç ise buna yüzey basıncının eklenmesidir; sorunun istediği bu iki nicelikten hangisiyse o hesaplanır."
+      ],
+      "strategy": "“Sıvı kaynaklı” ifadesini işaretle; atmosfer verisini ayrı tutarak yoğunluk, g ve yüzeyden düşey derinliğin çarpımını kur.",
+      "steps": [
+        "Aranan yüzeye göre sıvı katkısıdır; 100000 Pa atmosfer basıncı bu katkının içine alınmaz.",
+        "Yoğunluk 800 kg/m³, derinlik 0,5 m ve g=10 m/s² ile ΔP=800×10×0,5 yaz.",
+        "Çarpım 4000 Pa’dır. Atmosfer ayrıca eklenseydi başka bir nicelik olan 104000 Pa mutlak basınç bulunurdu."
+      ],
+      "optionReasons": [
+        "800×10×0,5=4000 Pa yalnız sıvı sütununun katkısıdır; istenen tanıma uyar.",
+        "4000 Pa sıvı katkısına atmosferi de ekler; bu toplam mutlak basınçtır.",
+        "800×0,5 değeridir; g çarpanı eksiktir ve bu çarpımın birimi basınç değildir.",
+        "800×10 ile derinliği 1 m kabul eder; verilen yarım metrelik sütun kullanılmamıştır.",
+        "100000×0,5 sayısı atmosfer basıncını bir uzunlukla çarpar; ρgh hesabı değildir ve birimi Pa·m olur."
+      ],
+      "commonError": "Verilmiş her sayıyı aynı formüle katmak yerine istenen basıncın yüzeye göre artış mı, mutlak değer mi olduğunu ayır.",
+      "check": "Bu sıvıda basınç artışının derinliğe oranı ρg=8000 Pa/m’dir. Yarım metre için bu artışın yarısı, 4000 Pa beklenir."
+    }
+  },
+  {
+    "id": "basinc-q4",
+    "identity": "[\"basinc-q4\",\"İki ayrı açık kapta aynı sıcaklıktaki su var. Atmosfer basınçları eşit; K ve L noktaları kendi yüzeylerinden 0,4 m derinde. Kapların şekilleri ve toplam su miktarları farklı. PK/PL nedir?\",\"\",[\"4\",\"Yalnız su miktarıyla bulunur\",\"1\",\"2\",\"1/2\"],2,\"Her iki noktada P=P₀+ρg·0,4 olduğundan oran 1’dir. Farklı su miktarı aynı düşey derinlikte farklı basınç zorunluluğu doğurmaz; taban kuvvetlerinin eşitliği ayrıca alan gerektirir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Açık kaptaki bir noktanın mutlak basıncı yüzey basıncı ile üzerindeki sıvı sütununun katkısının toplamıdır. Kap biçimi farklı olsa da aynı P₀, yoğunluk ve derinlik aynı nokta basıncını verir."
+      ],
+      "strategy": "K ve L için ayrı birer P₀+ρgh ifadesi yaz; önce her terimin soruda eşitlenip eşitlenmediğini karşılaştır, sonra oranı sadeleştir.",
+      "steps": [
+        "İki sıvı da aynı sıcaklıkta sudur; aynı yoğunluk kullanılabilir. Atmosfer basınçları da eşit verilmiştir.",
+        "Her noktanın kendi yüzeyinden derinliği 0,4 m olduğundan PK=P₀+ρg·0,4 ve PL=P₀+ρg·0,4 yazılır.",
+        "Pay ve payda aynı basınçtır; PK/PL=1 çıkar. Toplam su miktarı bu nokta karşılaştırmasında yeni bir terim oluşturmaz."
+      ],
+      "optionReasons": [
+        "Dört kat oran için K’nın basıncı L’nin dört katı olmalıydı. Aynı yüzey ve sütun terimleri böyle bir fark oluşturmaz.",
+        "Nokta basıncı için düşey derinlik ve yoğunluk verilmiştir. Toplam su miktarı yerine bu ortak sütun verileri kullanılır.",
+        "İki noktada yüzey basıncı ve ρgh katkısı eşit olduğu için basınçların oranı birdir.",
+        "Kapların iki ayrı kap olması basınca iki çarpanı getirmez; K için fazladan bir sütun veya yüzey basıncı yoktur.",
+        "L’nin K’dan iki kat basınçlı olmasını gerektirir. L için daha büyük derinlik, yoğunluk veya yüzey basıncı verilmemiştir."
+      ],
+      "commonError": "Kap çiziminin genişliği veya içerdiği toplam su kütlesini, noktanın üzerindeki düşey sıvı yüksekliği yerine kullanma.",
+      "check": "K ve L yer değiştirilse de bütün belirleyici veriler aynı kalır. Ters oran da aynı olmalıdır; pozitif eşit basınçlarda bu ancak 1 ile sağlanır."
+    }
+  },
+  {
+    "id": "basinc-q5",
+    "identity": "[\"basinc-q5\",\"Aynı seviyedeki sürtünmesiz, ağırlıksız ideal pistonlarda alanlar 3 ve 12 cm²’dir. Küçük pistona 45 N uygulanıyor. Büyük pistonda dengelenen kuvvet kaç N?\",\"\",[\"45\",\"11,25\",\"540\",\"4\",\"180\"],4,\"F₂=45·12/3=180 N. Alan oranı 4’tür; 45 N kuvveti aynen iletmek ve 4 N yazmak basınç ile kuvveti karıştırır. İş kazanımı yoktur, büyük piston daha az yol alır.\"]",
+    "guidance": {
+      "knowledge": [
+        "İdeal pistonlarda aynı seviyedeki sıvı dengesi basınçları eşitler. Piston kuvveti basınçla alanın çarpımıdır; alanların eşit olmaması kuvvetlerin de farklı olabilmesini sağlar."
+      ],
+      "strategy": "İki piston için F/A oranlarını eşitle. Alanları aynı birimde oranlayıp küçük pistondaki 45 N’un büyük alana karşılık gelen değerini hesapla.",
+      "steps": [
+        "Küçük alan 3 cm², büyük alan 12 cm²’dir; büyük alan küçüğün 12/3 katıdır. Oran kurulduğu için cm² birimleri sadeleşir.",
+        "Aynı seviyedeki ideal denge 45/3=F₂/12 eşitliğini verir. Basınç eşitliği kuvvetleri doğrudan eşitlemek değildir.",
+        "F₂=45×12/3=180 N olur. Büyük pistonun daha büyük kuvvet taşıması, iki tarafta aynı basınç bulunmasıyla uyumludur."
+      ],
+      "optionReasons": [
+        "Basınç ile kuvveti aynı nicelik sayarak küçük pistondaki kuvveti aynen taşır; alanların farklılığı hesaba katılmaz.",
+        "45×3/12 işlemidir. Büyük piston için alan oranını ters kullanır ve aynı basınçta büyük alana daha küçük kuvvet verir.",
+        "45×12 değeridir; küçük pistonun 3 cm² alanına bölme eksiktir.",
+        "12/3 alan oranıdır ve boyutsuzdur; 45 N ile çarpılmadan piston kuvveti olamaz.",
+        "45/3=180/12 olduğundan iki pistondaki kuvvet/alan oranları eşittir."
+      ],
+      "commonError": "Pascal ilkesini “kuvvetler eşit iletilir” diye kullanmak yerine uygulanan basınç artışını karşılaştır.",
+      "check": "Küçük tarafta 45/3=15 N/cm², büyük tarafta 180/12=15 N/cm² bulunur; birimler aynı seçildiğinde basınç eşitliği doğrudan kontrol edilir."
+    }
+  },
+  {
+    "id": "basinc-q6",
+    "identity": "[\"basinc-q6\",\"Sabit miktarda ideal gaz rijit kapta 300 K’den 450 K’ye ısıtılıyor. İlk basıncı 80 kPa ise son basıncı kaç kPa?\",\"\",[\"200\",\"120\",\"80\",\"53,3\",\"160\"],1,\"P₂=80·450/300=120 kPa. 80 kPa sabit yüklü hareketli piston durumuna ait olabilir; burada kap rijittir. Sıcaklıklar zaten kelvindir; ayrıca 273 ekleme.\"]",
+    "guidance": {
+      "knowledge": [
+        "İdeal gazda madde miktarı ve hacim sabit tutulursa basınç, mutlak sıcaklıkla orantılıdır. Rijit kap hacmi sabitler; oran kurulurken kelvin sıcaklıkları kullanılır."
+      ],
+      "strategy": "Kaptaki gaz miktarı ile hacmin değişmediğini belirle. Son/ilk sıcaklık oranını bulup ilk basınca uygula; verilen kelvin değerlerini Celsius gibi dönüştürme.",
+      "steps": [
+        "Kap rijit ve gaz miktarı sabittir; iki hâl için n ve V aynı olduğundan P₁/T₁=P₂/T₂ kullanılabilir.",
+        "Son sıcaklığın ilk sıcaklığa oranı 450/300=1,5’tir. Basınç da bu oranda değişmelidir.",
+        "P₂=80×1,5=120 kPa bulunur. Sıcaklıklar zaten kelvin olduğu için ayrıca 273 eklenmez."
+      ],
+      "optionReasons": [
+        "200/80=2,5 oranı çıkar; verilen kelvin sıcaklıklarının oranı 1,5’tir, bu artış gaz bağıntısını sağlamaz.",
+        "120/80 ile 450/300 aynı oranı verir; sabit n ve V koşuluna uygundur.",
+        "Basıncı sabit tutar. Burada hareketli sabit yüklü piston değil, hacmi değişmeyen rijit kap vardır.",
+        "Yaklaşık 80×300/450 sonucudur; ısınma oranını ters çevirip sabit hacimde basıncı azaltır.",
+        "Basıncı iki katına çıkarır; oysa mutlak sıcaklık iki katına değil, bir buçuk katına çıkmıştır."
+      ],
+      "commonError": "Kapalı olmayı tek başına sabit basınç sayma; bu soruda belirleyici ek bilgi kabın rijit olmasıdır.",
+      "check": "Son basıncı ilk sıcaklığa geri ölçekle: 120×300/450=80 kPa. Başlangıç basıncının geri elde edilmesi oran yönünü denetler."
+    }
+  },
+  {
+    "id": "basinc-q7",
+    "identity": "[\"basinc-q7\",\"Açık uçlu su manometresinde gaz kolundaki sıvı yüzeyi açık koldan 0,2 m alçaktır. P₀=100000 Pa, ρ=1000 kg/m³, g=10. Pgaz kaç Pa?\",\"\",[\"2000\",\"100200\",\"120000\",\"102000\",\"98000\"],3,\"Fark ρgΔh=2000 Pa; Pgaz=P₀+2000=102000 Pa. 98000 ters seviye durumudur, 2000 yalnız basınç farkıdır. 0,2 m ile 20 cm’yi karıştırma.\"]",
+    "guidance": {
+      "knowledge": [
+        "Durgun manometre sıvısında aşağı inildikçe basınç ρgΔh kadar artar. Aynı yatay seviyedeki bağlı sıvı basınçları eşitlenerek gaz ile atmosfer arasındaki farkın işareti belirlenir."
+      ],
+      "strategy": "Gaz kolundaki daha alçak yüzeyin seviyesine açık koldan aşağı in. Bu inişte eklenen sütun basıncını atmosfer basıncına bağla.",
+      "steps": [
+        "Açık koldaki yüzeyde P₀ vardır. Oradan gaz yüzeyiyle aynı seviyeye 0,2 m aşağı inilir; basınç bu yönde artar.",
+        "Sıvı sütununun basınç farkını hesapla: ρgΔh=1000×10×0,2=2000 Pa.",
+        "Aynı seviyedeki gaz basıncı Pgaz=100000+2000=102000 Pa’dır; gaz kolunun daha alçak oluşuna uygun olarak atmosferden büyüktür."
+      ],
+      "optionReasons": [
+        "Yalnız iki tarafın basınç farkıdır; gazın mutlak basıncı için 100000 Pa yüzey basıncı da gerekir.",
+        "200 Pa fark kullanır; bu sıvıda 200 Pa yalnız 0,02 m yükseklik farkına karşılık gelir, 0,2 m’ye değil.",
+        "20000 Pa fark kullanarak yüksekliği 2 m gibi alır; verilen düşey farkın on katıdır.",
+        "Atmosferden gaz yüzeyi seviyesine inerken eklenen 2000 Pa ile aynı seviyedeki dengeyi sağlar.",
+        "Farkı atmosferden çıkarır; bu işaret gaz kolundaki sıvı yüzeyinin daha yüksek olduğu ters düzenek içindir."
+      ],
+      "commonError": "İşareti gaz kolunun solda veya sağda çizilmesine göre değil, açık yüzeyden aynı seviyeye inerken basıncın nasıl değiştiğine göre seç.",
+      "check": "Hesaplanan farktan yüksekliği geri bul: (102000−100000)/(1000×10)=0,2 m. Ayrıca gaz basıncının atmosferden büyük olması verilen seviye düzenini doğrular."
+    }
+  },
+  {
+    "id": "basinc-q8",
+    "identity": "[\"basinc-q8\",\"Üstü yaklaşık vakum olan ideal sıvılı barometrede dış basınç ve g sabit tutuluyor. Kullanılan sıvının yoğunluğu yarıya inerse dengedeki düşey sütun yüksekliği nasıl değişir?\",\"\",[\"İki katına çıkar\",\"Yarıya iner\",\"Aynı kalır\",\"Dört katına çıkar\",\"Sıfır olur\"],0,\"h=P₀/(ρg) olduğundan yoğunluk yarıya inerse yükseklik iki katına çıkar. Bu sonuç yeterince uzun boru ve ihmal edilebilir buhar/kılcallık koşulundadır; boru boyunca eğik uzunlukla değil düşey yükseklikle ilgilidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Üst yüzeyi yaklaşık vakum olan ideal barometrede dış basınç, sıvı sütununun ρgh basıncıyla dengelenir. Sütunun boyunu belirleyen uzunluk, boru boyunca yol değil düşey yüksekliktir."
+      ],
+      "strategy": "İlk ve son denge denklemlerinde aynı P₀ ve g’yi sadeleştir. Yoğunluktaki değişimi telafi eden yükseklik oranını, ρh çarpımını sabit tutarak belirle.",
+      "steps": [
+        "Başlangıç için P₀=ρgh, yeni sıvı için P₀=ρ′gh′ yaz. Dış basınç ve g iki durumda da korunur.",
+        "Yoğunluk ρ′=ρ/2 olduğundan ρh=(ρ/2)h′ bağıntısı elde edilir.",
+        "Bu eşitlik h′=2h verir. Daha az yoğun sıvının aynı dış basıncı dengelemesi için daha yüksek sütun gerekir."
+      ],
+      "optionReasons": [
+        "(ρ/2)×(2h)=ρh olur; sıvı sütununun dengelediği basınç korunur.",
+        "Yoğunluk ve yüksekliği birlikte yarıya indirir; ρh çarpımı ilk değerin dörtte birine düşer.",
+        "Yüksekliği korursa yarıya inen yoğunluk yüzünden sütun basıncı da yarıya iner; aynı P₀ dengelenemez.",
+        "Yeni çarpım (ρ/2)×4h=2ρh olur; sabit dış basıncın iki katını dengeleyen sütun üretir.",
+        "Sıfır yükseklik sıvı sütunu katkısını sıfırlar; başlangıçtaki dış basınç hâlâ vardır."
+      ],
+      "commonError": "Yoğunluk azalınca her büyüklüğün azalacağını varsayma; burada sabit tutulması gereken yoğunluk ile yüksekliğin çarpımıdır.",
+      "check": "Yeni sütun için (ρ/2)g(2h)=ρgh=P₀ bulunur. Böylece sonuç ilk basıncı aynen geri verir."
+    }
+  },
+  {
+    "id": "basinc-q9",
+    "identity": "[\"basinc-q9\",\"Düz taban alanı 0,02 m² olan kapta tabanın her noktasındaki sıvı kaynaklı basınç 3000 Pa. Sıvının tabana uyguladığı bu basınç kuvveti kaç N?\",\"\",[\"0,06\",\"3000\",\"60\",\"150000\",\"6000\"],2,\"F=3000·0,02=60 N. Pa·m²=N olur. Tüm kap şekli verilmediği için bu kuvvetten sıvının bütün ağırlığının 60 N olduğu koşulsuz çıkarılamaz; eğik yan duvarlar düşey kuvvet taşır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Düz bir yüzey boyunca basınç düzgünse toplam dik kuvvet basıncın alanla çarpımıdır. Pa, alan başına kuvvet birimi olduğundan m² ile çarpıldığında newton elde edilir."
+      ],
+      "strategy": "Sorudaki düzgün taban basıncını tabanın tamamına yay. Burada basınçtan kuvvete gidildiği için alanla çarp; basınç hesabındaki bölmeyi tekrarlama.",
+      "steps": [
+        "İstenen sıvının tabana uyguladığı kuvvettir; verilen 3000 Pa bir kuvvet değil, birim alana düşen etkidir.",
+        "Tabanın her noktasında bu basınç bulunduğu için F=P×A=3000×0,02 işlemini kur.",
+        "Sonuç 60 N’dur. Bu taban kuvveti, kap biçimi bilinmeden sıvının bütün ağırlığıyla özdeşleştirilemez."
+      ],
+      "optionReasons": [
+        "0,06 kN, 60 N’a eşittir; seçeneklerdeki sayı N olarak sorulduğundan 0,06 N bin kat küçük kalır.",
+        "Basıncın sayısını kuvvet diye taşır; 3000 Pa’nın 0,02 m²’lik alana etkisi ayrıca çarpılarak bulunmalıdır.",
+        "3000 Pa×0,02 m²=60 N olur; düzgün basınç için toplam taban kuvvetini verir.",
+        "3000/0,02 işlemidir. Basıncı yeniden alana bölmek Pa/m² üretir, newton üretmez.",
+        "3000×2 işlemiyle 0,02 m²’yi 2 m² gibi kullanır; alan yüz kat büyütülmüştür."
+      ],
+      "commonError": "P=F/A bağıntısını ezberden bölme işlemi olarak değil, aranan değişken için düzenleyerek kullan.",
+      "check": "Bulunan kuvveti alana böl: 60/0,02=3000 Pa. Hem başlangıç basıncı hem N/m² birimi geri gelir."
+    }
+  },
+  {
+    "id": "basinc-q10",
+    "identity": "[\"basinc-q10\",\"Aynı yükseklikte kararlı, sıkıştırılamaz, kayıpsız akış olan yatay boru daralıyor. Debi sabit; pompa yok. Dar bölümde geniş bölüme göre hangisi beklenir?\",\"\",[\"Hız ve statik basınç birlikte artar\",\"Hız azalır, statik basınç artar\",\"Hız ve basınç mutlaka eşit kalır\",\"Basınç her durumda sıfır olur\",\"Hız artar, statik basınç azalır\"],4,\"Kesit küçülürken Av sabitliği v’yi artırır; aynı yükseklikte P+ρv²/2 sabit olduğundan statik P azalır. Sonuç verilen kararlı/kayıpsız koşullar içindir, bütün rüzgâr olayları için koşulsuz bir yasa cümlesi değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sıkıştırılamaz kararlı akışta aynı borudan geçen hacim debisi A·v ile ifade edilir. Aynı yükseklikteki kayıpsız ve pompasız akışta statik basınç ile ρv²/2 teriminin toplamı korunur."
+      ],
+      "strategy": "Dar ve geniş kesitte önce A·v eşitliğini kullan. Bulduğun sürat karşılaştırmasını aynı yükseklikteki Bernoulli toplamına yerleştirerek statik basıncı karşılaştır.",
+      "steps": [
+        "Debi aynıyken kesit alanı küçülürse A·v çarpımını korumak için dar kesitte v büyümelidir.",
+        "Yükseklikler eşit ve kayıp/pompa yoktur; P+ρv²/2 iki kesitte aynıdır. Artan sürat, bu toplamın hız terimini büyütür.",
+        "Toplam sabit kalacağından statik P azalır. Birlikte beklenen sonuç hızın artması ve statik basıncın azalmasıdır."
+      ],
+      "optionReasons": [
+        "Sürat ve statik basıncı birlikte artırmak P+ρv²/2 toplamını artırır; verilen kayıpsız, pompasız aynı seviye koşuluna uymaz.",
+        "Dar kesitte hızın azalması sabit hacim debisi A·v koşulunu bozar; bu eğilim genişleyen kesit için düşünülebilir.",
+        "Alan değişirken hız da eşit kalırsa hacim debileri farklı olur. Hız değişiminin basınç karşılığı da yok sayılmıştır.",
+        "Bernoulli burada basınç farkını belirler; mutlak basıncın sıfır olması için veri veya zorunluluk vermez.",
+        "Daralmada süreklilik hız artışını, aynı seviyedeki Bernoulli toplamı da statik basınç azalışını gerektirir."
+      ],
+      "commonError": "“Hızlı akış her durumda düşük basınçtır” genellemesi yerine sorudaki yükseklik, kayıp ve pompa koşullarını denetle.",
+      "check": "Dar kesitte hız teriminin artışı kadar statik basınç terimi azalır; böylece hem A·v hem P+ρv²/2 sabitliği birlikte sağlanır."
+    }
+  },
+  {
+    "id": "sivilarin-kaldirma-kuvveti-q1",
+    "identity": "[\"sivilarin-kaldirma-kuvveti-q1\",\"Hacmi 3 L olan rijit cisim yoğunluğu 800 kg/m³ sıvıda tamamen batık tutuluyor. g=10 m/s². Kaldırma kaç N?\",\"\",[\"80\",\"24\",\"30\",\"24000\",\"2,4\"],1,\"Fk=800·10·0,003=24 N. Cisim kütlesi bu hesap için gerekli değildir. 24000 litreyi m³ sayma, 30 ise yanlışlıkla suyun 1000 yoğunluğunu kullanma sonucudur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Arşimet bağıntısında kullanılan yoğunluk sıvıya, hacim ise sıvının yerini alan batık bölgeye aittir. Rijit cisim tamamen batıksa bu hacim cismin toplam hacmidir; kuvvet için cismin kütlesini bilmek gerekmez."
+      ],
+      "strategy": "Tam batıklık sayesinde verilen hacmin tamamını kullan. Litreyi metreküpe çevirip sıvı yoğunluğu ve g ile çarparak yer değiştiren sıvının ağırlığını bul.",
+      "steps": [
+        "Tam batık cisim 3 L sıvının yerini alır. SI hesabı için bu hacim 3×10⁻³=0,003 m³ olarak yazılır.",
+        "Yer değiştiren sıvının kütlesi 800×0,003=2,4 kg’dır. Burada 800 kg/m³ cisim yoğunluğu değil, çevredeki sıvının yoğunluğudur.",
+        "Bu sıvı kütlesinin ağırlığı 2,4×10=24 N olur; kaldırma kuvvetinin büyüklüğü de 24 N’dur."
+      ],
+      "optionReasons": [
+        "80 N kaldırma, bu sıvıda 80/(800×10)=0,01 m³ yani 10 L batık hacim gerektirir; verilen 3 L’ye uymaz.",
+        "0,003 m³ sıvının kütlesi 2,4 kg, ağırlığı 24 N’dur; tam batık cismin kaldırması bu ağırlıktır.",
+        "1000×10×0,003 hesabıyla su yoğunluğunu kullanır; sorudaki sıvının yoğunluğu 800 kg/m³’tür.",
+        "3 L’yi 3 m³ gibi çarpmaktan gelir; litre–metreküp dönüşümündeki 10⁻³ çarpanı eksiktir.",
+        "Yer değiştiren sıvının kilogram cinsinden kütlesidir. Newton cinsinden kuvvet için g ile çarpılmalıdır."
+      ],
+      "commonError": "Tam batık tutulmayı serbest yüzme sanıp Fk=G yazma; burada kaldırma, bilinen sıvı yoğunluğu ve batık hacimle belirlenir.",
+      "check": "Birimleri izle: kg/m³×m³=kg, ardından kg×m/s²=N. Ayrıca 24/(800×10)=0,003 m³ ile batık hacim geri bulunur."
+    }
+  },
+  {
+    "id": "sivilarin-kaldirma-kuvveti-q2",
+    "identity": "[\"sivilarin-kaldirma-kuvveti-q2\",\"Kütlesi 0,8 kg, toplam hacmi 2 L olan blok suda serbest yüzüyor. ρsu=1000 kg/m³, g=10. Batık hacim kaç L?\",\"\",[\"1,2\",\"8\",\"0,4\",\"0,8\",\"2\"],3,\"Vb=0,8/1000=0,0008 m³=0,8 L. Toplam hacmin 0,4’ü batmıştır; 0,4 hacim oranıdır ve litre cinsinden hacim değildir. 2 L’nin tümünü batık kabul etmek yüzme durumuna uymaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Serbest ve durgun yüzmede sıvının yukarı kuvveti cismin ağırlığını dengeler. Bu yüzden yer değiştiren suyun kütlesi cismin kütlesine eşittir; toplam cisim hacmi yalnız batık hacmin üst sınırıdır."
+      ],
+      "strategy": "Ağırlık ile kaldırmayı eşitleyerek ortak g’yi sadeleştir. Sonra kütleyi su yoğunluğuna böl; bulunan batık hacmi litreye çevir ve toplam 2 L ile karşılaştır.",
+      "steps": [
+        "Serbest yüzme için ρsu·g·Vb=m·g kurulur. Her iki tarafta bulunan g sadeleşir ve ρsu·Vb=m kalır.",
+        "Vb=0,8/1000=0,0008 m³ hesaplanır; bu 0,8 L su hacmidir.",
+        "0,8 L, toplam 2 L’nin 0,4’üdür. Batık hacim olarak 0,8 L yazılır; 0,4 ise boyutsuz batma oranıdır."
+      ],
+      "optionReasons": [
+        "2−0,8=1,2 L cismin su dışında kalan hacmidir; istenen batık hacimle karıştırılmıştır.",
+        "0,8×10=8 N cismin ağırlığı ve denge kaldırmasıdır; bu sayı litre cinsinden hacim değildir.",
+        "Vb/V=0,8/2=0,4 batma oranıdır. Litre istenince bu boyutsuz oran toplam hacimle ilişkilendirilmelidir.",
+        "0,8 L suyun kütlesi 0,8 kg’dır; bu suyun ağırlığı, yüzmekte olan cismin ağırlığını dengeler.",
+        "Toplam cisim hacmidir. Tümü batık alınırsa 2 kg su yer değiştirir ve 0,8 kg cisim için denge kuvveti aşılır."
+      ],
+      "commonError": "Kütle, batık hacim ve batık hacim oranı bu verilerde farklı niceliklerdir; 0,4 oranını litre diye etiketleme.",
+      "check": "0,8 L=0,0008 m³ suyun ağırlığı 1000×10×0,0008=8 N’dur. Cismin 0,8×10=8 N ağırlığıyla eşleşir."
+    }
+  },
+  {
+    "id": "sivilarin-kaldirma-kuvveti-q3",
+    "identity": "[\"sivilarin-kaldirma-kuvveti-q3\",\"Aynı rijit cisim su ve daha yoğun tuzlu suda ayrı ayrı dış desteksiz, serbest ve durgun yüzüyor. g aynı. Hangisi doğrudur?\",\"\",[\"Kaldırma aynı, tuzlu suda batık hacim daha küçük\",\"Tuzlu suda kaldırma daha büyük ve batık hacim aynı\",\"Kaldırma ve ağırlık sıfır\",\"Her iki sıvıda bütün hacim mutlaka batık\",\"Tuzlu suda cismin kütlesi azalır\"],0,\"Cismin m ve g’si aynı olduğundan iki denge kaldırması aynı ağırlıktır. ρs artınca Vb=m/ρs azalır. Sıvı yoğunluğu tek başına Fk’yi büyütür sonucu ancak Vb sabit tutulursa geçerlidir; serbest yüzmede o değişir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yüzme dengesi bir kuvvet dengesi, Arşimet bağıntısı ise sıvı yoğunluğu ile batık hacmin ilişkisidir. Aynı cisim farklı sıvılara geçtiğinde kütle korunur; serbest konum değişebildiği için batık hacmi otomatik sabit alınmaz."
+      ],
+      "strategy": "Önce her iki yüzme durumunda cismin ağırlığını hangi kuvvetin dengelediğini yaz. Ardından aynı ağırlığı taşımak için ρs·Vb çarpımının nasıl korunacağını karşılaştır.",
+      "steps": [
+        "Cismin kütlesi ve g iki deneyde aynıdır; aşağıdaki G=mg kuvveti değişmez.",
+        "İki durumda da dış destek olmadan durgun yüzme vardır. Dolayısıyla her sıvıda kaldırma aynı G’yi dengelemelidir.",
+        "ρs·Vb=m eşitliğinde tuzlu suyun yoğunluğu daha büyük olduğundan batık hacim daha küçük olur; denge kaldırması ise aynı kalır."
+      ],
+      "optionReasons": [
+        "İki dengede aynı ağırlık taşınır; yoğunluk artışı gereken yer değiştirme hacmini azaltır.",
+        "Yoğunluk artarken hacmi de sabit tutar; serbest yüzen cismin yeni konum ve hacim ayarlamasını yok sayar.",
+        "Denge, kuvvetlerin ayrı ayrı sıfır olmasını değil toplamlarının sıfır olmasını gerektirir; cismin kütlesi kaybolmaz.",
+        "Serbest yüzme, cismin bütün hacminin sıvı altında olduğunu söylemez. Yoğun sıvıda gereken hacim daha da küçülebilir.",
+        "Değiştirilen sıvıdır; aynı rijit cismin kütlesinin azaldığına ilişkin bir süreç verilmemiştir."
+      ],
+      "commonError": "ρ artınca Fk mutlaka artar demek, ancak batık hacim sabit tutulursa geçerli bir karşılaştırmadır; bu soruda cisim serbesttir.",
+      "check": "İki durumun ρs·Vb çarpımı aynı m değerini vermelidir. Tuzlu suda daha küçük hacimle bu çarpım korunurken kaldırma mg olarak kalır."
+    }
+  },
+  {
+    "id": "sivilarin-kaldirma-kuvveti-q4",
+    "identity": "[\"sivilarin-kaldirma-kuvveti-q4\",\"Havada ağırlığı 28 N olan cisim sıvıda tamamen batık ve yukarıdaki dinamometreyle dengede 16 N gösteriyor. Havanın kaldırması ihmal. Sıvının kaldırması kaç N?\",\"\",[\"44\",\"1,75\",\"12\",\"16\",\"28\"],2,\"Fk=G−T=28−16=12 N. 16 N gerilme, 28 N gerçek ağırlıktır. Toplamak yerine çıkarma yapılır çünkü kaldırma ve ip ağırlığı birlikte dengeler; kütle azalmamıştır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yukarıdan asılmış bir cisim sıvı içinde dengedeyken ip gerilmesi ve kaldırma kuvveti ağırlığı birlikte taşır. Dinamometrenin okuduğu değer bu ip gerilmesidir; cismin gerçek ağırlığının yeni değeri değildir."
+      ],
+      "strategy": "İki yukarı kuvveti aynı tarafta yaz: dinamometre payı ile sıvının payı, havada ölçülen ağırlığı tamamlamalıdır. Eksik yukarı kuvveti çıkararak bul.",
+      "steps": [
+        "Aşağı yönlü ağırlık 28 N’dur. Sıvı içindeki dinamometre, yukarı yönlü T=16 N gerilmesini gösterir.",
+        "Durgunluk denklemi T+Fk=G olduğundan 16+Fk=28 yazılır.",
+        "Fk=28−16=12 N bulunur. Ölçümün azalması kütle kaybını değil, ağırlığın bir bölümünü sıvının taşımasını gösterir."
+      ],
+      "optionReasons": [
+        "28+16 toplamıdır; kaldırma ile gerilmenin ağırlığı paylaştığı dengede eksik payı toplamak yerine çıkarmak gerekir.",
+        "28/16 oranıdır; iki kuvvetin oranı boyutsuzdur ve newton cinsinden kaldırma vermez.",
+        "16 N gerilme ile birlikte 28 N ağırlığı dengeleyen kalan yukarı kuvvettir.",
+        "Dinamometrenin ölçtüğü ip gerilmesidir; sıvının uyguladığı kuvvetle aynı olmak zorunda değildir.",
+        "Cismin gerçek ağırlığıdır. Kaldırma da 28 N olsaydı verilen 16 N yukarı gerilmeyle denge sağlanamazdı."
+      ],
+      "commonError": "Sıvı içindeki dinamometre okumasını doğrudan kaldırma diye adlandırma; ip yönünü ve bütün kuvvetleri çiz.",
+      "check": "Düşey toplam 16+12−28=0 N’dur. Yukarı ve aşağı kuvvetlerin bu eşitliği, hesaplanan kaldırmayı bağımsız olarak denetler."
+    }
+  },
+  {
+    "id": "sivilarin-kaldirma-kuvveti-q5",
+    "identity": "[\"sivilarin-kaldirma-kuvveti-q5\",\"Ağırlığı 3 N olan 1 L blok, suya tamamen batırılıp tabana bağlı bir iple tutuluyor. ρsu=1000 kg/m³, g=10. İp blok üzerinde hangi kuvveti uygular?\",\"\",[\"7 N yukarı\",\"13 N yukarı\",\"3 N aşağı\",\"10 N aşağı\",\"7 N aşağı\"],4,\"Fk=1000·10·0,001=10 N yukarıdır. G=3 N aşağı olduğundan ek 7 N aşağı ip kuvveti gerekir. İp kesilirse başlangıçta yukarı net kuvvet vardır; burada serbest yüzme dengesi çizilmemiştir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tabana bağlanan ip cismi aşağı çekebilir. Tam batık cismin kaldırması önce batık hacimden bulunur; sonra ağırlıkla birlikte yönlü denge kurularak ipin taşıması gereken fark belirlenir."
+      ],
+      "strategy": "Tam hacmin yer değiştirdiği suyun ağırlığını hesapla. Yukarı kaldırmayı ve aşağı cismin ağırlığını ayrı oklara koy; tabana giden ipin hangi yönde eksik denge kuvvetini sağlayacağını belirle.",
+      "steps": [
+        "1 L=0,001 m³ tamamen batık olduğundan kaldırma Fk=1000×10×0,001=10 N yukarıdır.",
+        "Ağırlık 3 N aşağıdır. İp olmadan bu konumda yukarı kuvvet 10 N, aşağı kuvvet yalnız 3 N kalır.",
+        "Taban ipi aşağı T kuvveti uygular: 10=3+T, buradan T=7 N aşağı bulunur."
+      ],
+      "optionReasons": [
+        "Büyüklük farkı 7 N olsa da yukarı yön seçilirse 10 N kaldırmaya eklenir; ağırlığı dengelemek yerine yukarı toplamı büyütür.",
+        "Kaldırma ve ağırlığın büyüklüklerini toplayıp ayrıca yönü yukarı alır; ne fark hesabını ne düşey dengeyi sağlar.",
+        "Ağırlıkla ip toplamı 6 N’da kalır; 10 N yukarı kaldırmayı dengeleyemez.",
+        "İpi kaldırmaya eşit alıp cismin 3 N ağırlığını da ayrıca aşağı bırakır; toplam aşağı kuvvet fazla olur.",
+        "Ağırlıkla birlikte 3+7=10 N aşağı kuvvet oluşturur ve tam batık durumun kaldırmasını dengeler."
+      ],
+      "commonError": "Her ipi yukarı destek kabul edip G−Fk’den negatif gerilme üretme; tabana bağlanan ipin çekiş yönü farklıdır.",
+      "check": "Bulunan ipin kuvvetiyle net kuvvet 10−3−7=0 N olur. İp kesilirse kalan 10−3=7 N yukarıdır; bu da ipin aşağı yönünü doğrular."
+    }
+  },
+  {
+    "id": "sivilarin-kaldirma-kuvveti-q6",
+    "identity": "[\"sivilarin-kaldirma-kuvveti-q6\",\"Sabit hacimli tam batık blok homojen, sıkıştırılamaz sıvıda yüzeye değmeden 0,5 m daha aşağı indiriliyor. g ve yoğunluk değişmiyor. Kaldırma nasıl değişir?\",\"\",[\"Yalnız cismin rengine bağlıdır\",\"Aynı kalır\",\"İki katına çıkar\",\"Sıfır olur\",\"Mutlaka azalır\"],1,\"Hiçbir çarpan değişmediği için kaldırma aynı kalır. Alt ve üst yüzey basınçları birlikte artar; fark değişmez. Sıkıştırılabilir balon gibi hacmi değişen başka bir duruma bu sonucu koşulsuz taşıma.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tam batık cismin kaldırması, yer değiştiren sıvının ağırlığıdır. Homojen sıvıda derinlik arttığında mutlak basınçlar değişebilir; net kuvvet için alt ve üst yüzey etkilerinin farkı önemlidir."
+      ],
+      "strategy": "İlk ve son durumda ρs, g ve batık hacmi ayrı birer sütuna yaz. Derinliği değiştiren işlemin bu çarpanlardan herhangi birini değiştirip değiştirmediğini kontrol et.",
+      "steps": [
+        "Blok sabit hacimli ve iki durumda da tam batıktır; yer değiştirdiği hacim aynı kalır.",
+        "Sıvı homojen ve sıkıştırılamazdır; yoğunluk ile g’nin de değişmediği açıkça verilmiştir. Bu nedenle ρs·g·Vb çarpanları korunur.",
+        "Fk′/Fk=1 çıkar; kaldırma aynı kalır. Derinleşmeyle artan alt ve üst basınçların ortak artışı, net kaldırmaya yeni bir fark eklemez."
+      ],
+      "optionReasons": [
+        "Arşimet bağıntısının belirleyicileri sıvı yoğunluğu, g ve batık hacimdir; renkteki bir özellik bu çarpıma girmez.",
+        "ρs, g ve Vb’nin üçü de değişmediğinden yer değiştiren sıvının ağırlığı korunur.",
+        "Yalnız daha derinde bulunmayı kaldırmayı ikiye katlayan bir çarpan sayar; basınç farkı ve batık hacim ikiye katlanmamıştır.",
+        "Cisim hâlâ sıvı içinde sonlu hacim yer değiştirir; net sıvı kuvvetini ortadan kaldıracak bir değişim verilmemiştir.",
+        "Hacim küçülen balon veya yoğunluğu değişen tabaka gibi başka koşullar gerektirir; bu soruda hacim ve yoğunluk korunur."
+      ],
+      "commonError": "Bir yüzeydeki mutlak basıncın artışını bütün cismin net kaldırma kuvvetinin artışı sayma.",
+      "check": "İkinci durumda Fk değişseydi, aynı ρs ve g altında Fk/(ρs·g) oranı da değişirdi. Bu oran batık hacimdir; verilen sabit hacim ve tam batıklık böyle bir değişimi dışlar."
+    }
+  },
+  {
+    "id": "sivilarin-kaldirma-kuvveti-q7",
+    "identity": "[\"sivilarin-kaldirma-kuvveti-q7\",\"Ağzına kadar su dolu kaba dış desteksiz bırakılan 0,5 kg cisim durgun serbest yüzüyor. Taşan suyun ağırlığı kaç N? g=10 m/s²; yüzey gerilimi ihmal.\",\"\",[\"10\",\"0\",\"Cismin toplam hacmi olmadan bulunamaz\",\"5\",\"0,5\"],3,\"Fk=0,5·10=5 N ve taşan sıvının ağırlığı da 5 N’dir. Tam toplam hacim verilmesi gerekmez; denge yeterlidir. Kabın başlangıçta taşma seviyesinde olması bu eşit taşma sonucunun önemli koşuludur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Taşma seviyesindeki kaptan çıkan suyun hacmi, cismin su içinde yer değiştirdiği hacimdir. Bu suyun ağırlığı kaldırmaya eşittir; dış desteksiz durgun yüzmede kaldırma da cismin ağırlığını dengeler."
+      ],
+      "strategy": "Taşan suyu doğrudan cisim kütlesiyle değil, yüzme dengesi üzerinden kuvvetle ilişkilendir. Cismin ağırlığını hesaplayıp taşan suyun ağırlığına bağla.",
+      "steps": [
+        "Kap başta ağzına kadar doludur; cisim yer değiştirdiği suyu dışarı taşırır. Böylece taşan su ağırlığı Fk ile ilişkilidir.",
+        "Cisim dış desteksiz ve durgun yüzdüğü için Fk=mg=0,5×10 bağıntısı kurulabilir.",
+        "Ağırlık 5 N’dur; kaldırma ve taşan suyun ağırlığı da 5 N olur. Toplam cisim hacmine bu denge hesabında ihtiyaç yoktur."
+      ],
+      "optionReasons": [
+        "1 kg ağırlığına karşılık gelir; sorudaki 0,5 kg kütleyi iki kat alır.",
+        "Serbest yüzen cisim ağırlığını taşıyacak kadar su yer değiştirir; başta taşma seviyesindeki kapta bu su dışarı çıkar.",
+        "Tam hacim yerine yüzme dengesi yeterlidir; taşan suyun ağırlığı doğrudan mg’ye bağlanır.",
+        "0,5 kg cismin 5 N ağırlığı serbest yüzmede kaldırmaya, bu da taşan suyun ağırlığına eşittir.",
+        "Cismin kilogram cinsinden kütlesini kuvvetin sayısı gibi kullanır; newton için g çarpanı gerekir."
+      ],
+      "commonError": "Başlangıç taşma seviyesi ile serbest yüzme koşullarını atlama; bu iki bilgi olmadan her taşırma sorusunda taşan suyu cismin ağırlığına eşitleyemezsin.",
+      "check": "Taşan suyun ağırlığını g’ye bölmek 5/10=0,5 kg verir. Yüzen cismin kütlesine eşit bu su kütlesini bulmak için suyun yoğunluğunu varsaymaya gerek yoktur."
+    }
+  },
+  {
+    "id": "sivilarin-kaldirma-kuvveti-q8",
+    "identity": "[\"sivilarin-kaldirma-kuvveti-q8\",\"Suda tamamen batık rijit cismin yoğunluğu 2000 kg/m³, hacmi 0,002 m³. Sıvı cismin altına erişiyor; tabanda dengede. ρsu=1000 kg/m³, g=10. Tabanın destek kuvveti kaç N?\",\"\",[\"20\",\"40\",\"0\",\"60\",\"2\"],0,\"G=2000·0,002·10=40 N, Fk=20 N; N=20 N. Dibe oturdu diye kaldırma sıfır değildir; sıvının alt yüzeye erişimi açıkça verilmiştir. Sızdırmaz taban teması farklı koşuldur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Dibe oturmuş cismin dengesi yalnız zemin kuvvetiyle kurulmaz: sıvı altına erişiyorsa kaldırma da yukarı kuvvettir. Cismin ağırlığında cisim yoğunluğu, kaldırmada sıvı yoğunluğu kullanılır."
+      ],
+      "strategy": "Aynı tam hacim için önce cismin ve yer değiştiren suyun ağırlıklarını ayrı hesapla. Tabanın taşıması gereken kuvveti bu iki ağırlığın farkından bul.",
+      "steps": [
+        "Cismin kütlesi ρcV=2000×0,002=4 kg’dır; ağırlığı G=40 N aşağıdır.",
+        "Sıvı alt yüzeye eriştiği için Fk=1000×0,002×10=20 N yukarı kaldırma uygulanır.",
+        "Tabandaki denge N+20=40 verir. Taban tepkisi N=20 N yukarıdır."
+      ],
+      "optionReasons": [
+        "40 N ağırlığın 20 N’unu sıvı taşıdığı için taban kalan 20 N’u dengeler.",
+        "Ağırlığın tamamını tabana yükler; soruda açıkça sağlanan sıvı erişimi ve 20 N kaldırma ihmal edilir.",
+        "Taban desteğine gerek olmayan askıda kalmayı varsayar. Cisim yoğunluğu sıvının iki katı olduğundan tam batık kaldırma ağırlıktan küçüktür.",
+        "40+20 toplamıdır. Kaldırma, ağırlığa ek aşağı yük değil, tabanın taşıdığı payı azaltan yukarı kuvvettir.",
+        "Yer değiştiren suyun kütlesi 1000×0,002=2 kg’dır; bu sayı taban tepkisi birimi olan newton değildir."
+      ],
+      "commonError": "Tabana temasın varlığından Fk=0 çıkarma; standart kaldırmanın uygulanabilirliği için verilen sıvı erişimini dikkate al.",
+      "check": "N=(ρc−ρsu)Vg=(2000−1000)×0,002×10=20 N, iki ayrı ağırlık hesabının farkını aynı formülle geri verir."
+    }
+  },
+  {
+    "id": "sivilarin-kaldirma-kuvveti-q9",
+    "identity": "[\"sivilarin-kaldirma-kuvveti-q9\",\"Aynı homojen sıvıda, aynı g altında iki cisme eşit kaldırma kuvveti etki ediyor. Cisimler dışarıdan tutulabilir ve aynı kütlede olmayabilir. Kesin eşit olan nedir?\",\"\",[\"Yoğunlukları\",\"Bütün yüzey basınçları\",\"Batık hacimleri\",\"Toplam hacimleri\",\"Kütleleri\"],2,\"Batık hacimler eşittir. Toplam hacim ancak ikisinin de tümü batık olmasıyla ilişkilendirilebilir; eşit kütle ise ikisinin de dış desteksiz dengede olmasını gerektirir. Verilmeyen koşulları cümleye ekleme.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı sıvı ve aynı g altında Arşimet bağıntısındaki ortak katsayı ρs·g’dir. Kaldırma eşitliğinin hangi hacmi belirlediği, formüldeki Vb’nin toplam hacim değil batık hacim olduğuna dikkat edilerek çıkarılır."
+      ],
+      "strategy": "İki cisim için Fk=ρs·g·Vb yazıp eşit kuvvetlerde ortak katsayıları sadeleştir. Sonra verilenlerin hangi başka cisim özelliklerini hiç bağlamadığını ayır.",
+      "steps": [
+        "Birinci ve ikinci cisim için F₁=ρs·g·Vb₁ ve F₂=ρs·g·Vb₂ yazılır; sıvı yoğunluğu ve g ortaktır.",
+        "F₁=F₂ olduğundan ortak ρs·g sadeleşir ve Vb₁=Vb₂ elde edilir.",
+        "Kesin eşitlik batık hacimlerdedir. Dışarıdan tutulabilmeleri nedeniyle Fk=mg zorunlu değildir; toplam hacim ve kütle için eşitlik çıkmaz."
+      ],
+      "optionReasons": [
+        "Aynı batık hacimde farklı kütleli veya farklı toplam hacimli cisimler dış kuvvetle tutulabilir; cisim yoğunluğu Fk bağıntısında yoktur.",
+        "Basınç her yüzeyin derinliğine de bağlıdır. Eşit net kaldırma, bütün karşılıklı yüzeylerin aynı derinlikte olduğunu göstermez.",
+        "Ortak sıvı yoğunluğu ve g altında eşit Fk, doğrudan eşit Vb gerektirir.",
+        "Batık hacmi eşit olan iki kısmen batmış cismin su dışındaki hacimleri farklı olabilir; tam batıklık verilmemiştir.",
+        "Eşit kaldırmayı eşit ağırlıkla bağlamak için serbest denge gerekir. Dış kuvvetle tutulabilme bilgisi bu kestirmeyi engeller."
+      ],
+      "commonError": "Her kaldırma sorusuna serbest yüzme dengesi ekleme; dış kuvvet olasılığı açıkken eşit Fk’den eşit kütle çıkarılamaz.",
+      "check": "Bir cisme su üstünde fazladan hacim eklemek batık hacmini değiştirmeyebilir; dış destekle kütlesi de farklı tutulabilir. Bu karşı örnekler yalnız batık hacim eşitliğinin zorunlu kaldığını gösterir."
+    }
+  },
+  {
+    "id": "sivilarin-kaldirma-kuvveti-q10",
+    "identity": "[\"sivilarin-kaldirma-kuvveti-q10\",\"İçinde 2 kg, 0,25 L metal bulunan tekne suda serbest yüzüyor. Metal suya bırakılıp batıyor; tekne su almıyor ve kap taşmıyor. ρsu=1000 kg/m³. Toplam yer değiştiren su hacmindeki değişim?\",\"\",[\"1,75 L artar\",\"0,25 L artar\",\"Aynı kalır\",\"2,25 L azalır\",\"1,75 L azalır\"],4,\"Teknedeyken 2 kg yük için 2 L ek yer değiştirme gerekir. Batan metal yalnız kendi 0,25 L hacmini yer değiştirir; 0,25−2=−1,75 L. Cismin ağırlığıyla hacmini birimsiz doğrudan karşılaştırma.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yüzen teknedeki yük, teknenin daha fazla su yer değiştirmesini gerektirir; böylece artan kaldırma kuvveti yükün ağırlığını da dengeler. Ek yer değiştirme hacmi, yükün kütlesinin su yoğunluğuna bölümüdür. Aynı yük batık metal olunca kendi dış hacmi kadar su yer değiştirir."
+      ],
+      "strategy": "Metalin teknedeyken eklettiği su hacmini ve suya battıktan sonraki yer değiştirmesini iki ayrı durum olarak hesapla. Son eksi ilk farkını aynı hacim biriminde al.",
+      "steps": [
+        "Metal teknedeyken ek yer değiştirme 2/1000=0,002 m³=2 L’dir; tekne, metalin ağırlığını da suya taşıtır.",
+        "Metal suya bırakılıp battığında kendi hacmi olan 0,25 L suyun yerini alır. Tekne su almadığından kendi kütlesi değişmez.",
+        "Değişim 0,25−2=−1,75 L’dir. Toplam yer değiştiren hacim 1,75 L azalır."
+      ],
+      "optionReasons": [
+        "Farkın yönünü ters alır; son durumda 0,25 L, ilk ek hacim olan 2 L’den küçüktür.",
+        "Yalnız metalin son yer değiştirmesini ekler; tekneden alınmasıyla ortadan kalkan 2 L’lik katkıyı çıkarmaz.",
+        "Yükün suda da serbest yüzmesi hâlinde ağırlık üzerinden aynı katkı düşünülebilirdi; burada metalin battığı verilmiştir.",
+        "2 ve 0,25 hacimlerinin büyüklüklerini toplar; son hacim sıfır olmadığı için değişim toplam değil son eksi ilk olmalıdır.",
+        "Teknede 2 L, batınca 0,25 L yer değiştirme vardır; son durumun katkısı 1,75 L daha küçüktür."
+      ],
+      "commonError": "2 kg ile 0,25 L’yi doğrudan çıkarma; ilk kütleyi su yoğunluğuyla hacme dönüştürmeden iki durum karşılaştırılamaz.",
+      "check": "Metalin yoğunluğu 2/0,00025=8000 kg/m³’tür; sudan yoğun olup batmasıyla tutarlıdır. Kendi 0,25 L hacminin, aynı ağırlığı yüzerken taşıyan 2 L sudan küçük olması azalma yönünü doğrular."
+    }
+  },
+  {
+    "id": "dalgalara-giris-q1",
+    "identity": "[\"dalgalara-giris-q1\",\"Bir kaynak 8 saniyede 24 tam titreşim yapıyor. Frekans kaç Hz?\",\"\",[\"192\",\"3\",\"1/3\",\"24\",\"8\"],1,\"f=24/8=3 Hz. 1/3 saniye periyottur; frekans olarak yazılamaz. 24 toplam tekrar, 8 toplam süre; çarpımları fiziksel frekans vermez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Frekans bir saniyeye düşen tam titreşim sayısıdır ve Hz=s⁻¹ ile ölçülür. Toplam titreşim sayısı ile toplam süre verildiğinde, sayıyı zamana bölmek bu birim-zaman bilgisini üretir."
+      ],
+      "strategy": "Sekiz saniyelik toplam tekrar sayısını eşit birer saniyelik paylara ayır. İşlemin sonucunu tekrar sayısı veya saniye değil, saniye başına tekrar olarak adlandır.",
+      "steps": [
+        "Verilen 24 sayısı tam titreşimlerin toplamıdır; bu titreşimler 8 saniyeye yayılmıştır.",
+        "Bir saniyedeki sayıyı bulmak için f=24/8 işlemini kur. Ters oran ise bir titreşimin süresi olur.",
+        "Her saniyeye 3 tam titreşim düşer; frekans 3 Hz’dir."
+      ],
+      "optionReasons": [
+        "24×8 çarpımıdır; titreşim sayısını süreyle çarpmak saniye başına tekrar vermez.",
+        "24 tam titreşimin 8 saniyeye bölünmesi saniyede 3 titreşim, yani 3 Hz verir.",
+        "8/24 saniye bir titreşimin süresidir. Periyot olan bu sayı frekansın tersidir.",
+        "Toplam tekrar sayısıdır; bu kadar titreşimin bir saniyede değil, 8 saniyede yapıldığı verilmiştir.",
+        "Toplam sürenin sayısını frekans olarak kullanır; birimi saniyedir, Hz değildir."
+      ],
+      "commonError": "Sayı/süre oranını süre/sayı oranıyla karıştırma; biri frekans, diğeri periyottur.",
+      "check": "3 Hz×8 s=24 tam titreşim olur. Toplam sayının geri elde edilmesi, saniyeye indirgeme hesabını denetler."
+    }
+  },
+  {
+    "id": "dalgalara-giris-q2",
+    "identity": "[\"dalgalara-giris-q2\",\"Periyodu 0,4 s olan periyodik kaynağın frekansı kaç Hz?\",\"\",[\"4\",\"40\",\"0,25\",\"2,5\",\"0,4\"],3,\"f=1/0,4=2,5 Hz. T ile f aynı sayı değildir. 0,25 sonucu ondalık virgülü yanlış okumaktan doğar; 2,5·0,4=1 kontrolü doğru sonucu gösterir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Periyot bir tam titreşime ayrılan süredir; frekans ise bir saniyede tamamlanan titreşim sayısıdır. İki büyüklük fT=1 bağıntısını sağlar; saniye ile hertz birbirinin ters birimleridir."
+      ],
+      "strategy": "0,4 saniyelik titreşim aralıklarından bir saniyeye kaç tane sığdığını hesapla. Seçilen frekansın periyotla çarpımını da birle karşılaştır.",
+      "steps": [
+        "Bir tam titreşim 0,4 s sürdüğünden aranan, 1 saniyenin bu süreye bölümüdür.",
+        "f=1/0,4 yaz; ondalık bölmeyi 10/4 biçiminde düzenleyebilirsin.",
+        "10/4=2,5 olduğundan f=2,5 Hz bulunur. Bu değerle 0,4 saniyede bir tam titreşim tamamlanır."
+      ],
+      "optionReasons": [
+        "4 Hz için periyot 1/4=0,25 s olurdu; verilen 0,4 s değildir.",
+        "40×0,4=16 çıkar; bir periyotta 16 titreşim sonucu doğurur ve fT=1 koşulunu bozmuştur.",
+        "Bu frekansın periyodu 4 s olurdu. 0,4 s’yi 4 s gibi okumak ondalık basamağı değiştirir.",
+        "2,5×0,4=1 olduğundan bir tam titreşimlik süre ile saniyedeki tekrar sayısı uyumludur.",
+        "Periyot sayısını aynen hertz diye taşır; 0,4×0,4=0,16 ile terslik bağıntısını sağlayamaz."
+      ],
+      "commonError": "0,4’ün tersini alırken virgülü kaydırmadan yalnız rakamın tersini düşünmek yanlış bir sayı üretir.",
+      "check": "İki saniyede 2/0,4=5 tam titreşim yapılır; bu da saniyede 5/2=2,5 titreşim sonucunu bağımsız biçimde verir."
+    }
+  },
+  {
+    "id": "dalgalara-giris-q3",
+    "identity": "[\"dalgalara-giris-q3\",\"Sinüzoidal (harmonik) bir dalganın anlık y–x grafiğinde ardışık iki dalga tepesi x=0,3 m ve x=1,1 m konumundadır. Dalga boyu kaç m?\",\"\",[\"0,8\",\"1,4\",\"0,4\",\"1,1\",\"0,3\"],0,\"λ=1,1−0,3=0,8 m. Tepe konumlarını toplama veya farkı ikiye bölme. λ/2 olan uzaklık sinüsoidal dalgada tepe ile hemen sonraki çukur arasındadır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Anlık y–x grafiği bir anda uzayda bulunan dalga biçimini gösterir. Ardışık iki tepe aynı evrede komşu noktalardır; aralarındaki mesafe, seçilen konum başlangıcından bağımsız bir uzunluktur."
+      ],
+      "strategy": "İki tepenin x koordinatlarını konum olarak işaretle. Dalga boyunu mutlak konumlardan biriyle değil, sağ ve sol koordinatın farkıyla ölç.",
+      "steps": [
+        "İlk tepe x=0,3 m’de, hemen sonraki tepe x=1,1 m’dedir. Arada bir tam uzaysal tekrar vardır.",
+        "Koordinat farkını λ=xsağ−xsol=1,1−0,3 olarak kur.",
+        "Fark 0,8 m’dir. Ardışık tepeler arası zaten bir dalga boyu olduğundan ayrıca ikiye bölünmez."
+      ],
+      "optionReasons": [
+        "Sağ konumdan sol konum çıkarıldığında komşu tepelerin 0,8 m uzaklığı bulunur.",
+        "1,1+0,3 toplamıdır. İki koordinatın toplamı aralarındaki mesafe değildir ve başlangıç noktasına bağlıdır.",
+        "0,8 m’lik tepe–tepe aralığını ikiye böler; yarım dalga boyu olan tepe–çukur aralığıyla karıştırır.",
+        "İkinci tepenin mutlak x koordinatıdır. İlk tepenin sıfırda olmadığı bilgisini atlar.",
+        "İlk tepenin koordinatıdır; iki tepe arasındaki uzaklığı tek bir noktanın konumu belirlemez."
+      ],
+      "commonError": "Dalga boyunu eksen başlangıcından bir tepeye uzaklık sanma; önce aynı evreli iki komşu noktayı seç.",
+      "check": "Eksen başlangıcı ilk tepeye taşınırsa tepelerin koordinatları 0 ve 0,8 m olur. Başlangıç değişse de bulunan dalga boyu değişmemiştir."
+    }
+  },
+  {
+    "id": "dalgalara-giris-q4",
+    "identity": "[\"dalgalara-giris-q4\",\"İdeal sinüzoidal dalgada denge y=0, maksimum y=+5 cm ve minimum y=−5 cm. Genlik kaç cm?\",\"\",[\"0\",\"25\",\"5\",\"10\",\"−5\"],2,\"A=5 cm; tepe-çukur farkı 10 cm’dir ve genlik değildir. Genlik büyüklük olarak negatif olmaz; −5 cm bir anlık aşağı uzanım değeridir. Grafikte yatay uzunluk hakkında veri yoktur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Uzanım denge çizgisine göre işaretli konumdur; genlik ise bu konumun ulaşabildiği en büyük büyüklüktür. Tepe ile çukur arasındaki toplam düşey aralık, denge çizgisi iki uç arasında olduğunda ayrıca ayırt edilir."
+      ],
+      "strategy": "Önce y=0 denge çizgisini belirle. Tepeden ve çukurdan dengeye olan uzaklıkları ayrı ölç; aranan büyüklüğün bütün tepe–çukur farkı olmadığını denetle.",
+      "steps": [
+        "Tepe dengeye göre +5 cm, çukur −5 cm konumundadır; denge çizgisi her ikisine 5 cm uzaklıktadır.",
+        "Genlik A=max|y| ile bulunur. İki işaretli uç değerin mutlak büyüklükleri karşılaştırılır.",
+        "En büyük uzaklık 5 cm olduğundan A=5 cm’dir. Tepe–çukur arasındaki 10 cm ise toplam salınım aralığıdır."
+      ],
+      "optionReasons": [
+        "Denge konumunun uzanımıdır; dalga +5 ve −5 cm’ye ulaştığından en büyük uzaklaşma sıfır değildir.",
+        "5’in karesidir ve uzunluk karesine karşılık gelir; genlik uzunluk olarak ölçülür.",
+        "Denge çizgisinden en uzak noktanın uzaklığı 5 cm’dir; genliğin büyüklük tanımını sağlar.",
+        "(+5)−(−5)=10 cm tepe–çukur farkıdır; dengeye uzaklığın iki katını kullanır.",
+        "Çukurun işaretli uzanımıdır. Genlik bir uzaklık büyüklüğü olduğundan bu negatif işaretle verilmez."
+      ],
+      "commonError": "Genlik yerine iki uç arasındaki bütün düşey farkı veya o andaki negatif uzanımı yazma.",
+      "check": "Simetrik uçlar için tepe–çukur farkının yarısı [5−(−5)]/2=5 cm çıkar; dengeye uzaklık tanımıyla aynı sonucu verir."
+    }
+  },
+  {
+    "id": "dalgalara-giris-q5",
+    "identity": "[\"dalgalara-giris-q5\",\"Dalga boyu 0,6 m, frekansı 5 Hz olan periyodik dalganın yayılma sürati kaç m/s?\",\"\",[\"0,12\",\"8,33\",\"30\",\"5,6\",\"3\"],4,\"v=0,6·5=3 m/s. 0,12 m·s bölme hatasıdır; 8,33 ters oranı kullanır. Bir periyotta 0,6 m ilerler, T=0,2 s olduğundan 0,6/0,2=3 ile doğrulanır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Periyodik bir dalga deseni bir titreşim süresinde bir dalga boyu ilerler. Bu ilişki v=λ/T=λf biçiminde yazılır; metre ile hertz çarpımı metre/saniye verir."
+      ],
+      "strategy": "Bir saniyede geçen dalga boyu sayısını frekanstan al. Her tekrarın 0,6 m uzunluğunu bu sayıyla çarparak bir saniyedeki ilerlemeyi bul.",
+      "steps": [
+        "Bir dalga boyu 0,6 m’dir; kaynak saniyede 5 tam tekrar oluşturur.",
+        "Saniyelik ilerleme için v=λf=0,6×5 işlemini kur. Dalga boyuyla frekansı toplamak anlamlı bir birim oluşturmaz.",
+        "v=3 m/s elde edilir. Bu, dalga deseninin bir saniyede üç metre ilerlemesidir."
+      ],
+      "optionReasons": [
+        "0,6/5 işlemidir; dalga boyunu frekansa bölmek m·s birimi verir, sürat vermez.",
+        "Yaklaşık 5/0,6 oranıdır; f/λ’nin birimi 1/(m·s)’dir, m/s değildir.",
+        "0,6 m yerine 6 m kullanılmış gibi on kat büyük ilerleme verir; dalga boyunun ondalık basamağı korunmalıdır.",
+        "0,6+5 toplamıdır. Metre ile hertz farklı nicelikler olduğu için bu toplama sürat anlamı verilemez.",
+        "Saniyede beş adet 0,6 m’lik tekrar ilerlediğinde toplam yol 3 m olur."
+      ],
+      "commonError": "v=λf bağıntısında çarpma yerine bölme yapma; seçilen işlemin m/s birimini üretip üretmediğine bak.",
+      "check": "T=1/5=0,2 s’dir. Bir dalga boyunun bu sürede ilerlemesi 0,6/0,2=3 m/s verir; çarpma hesabıyla örtüşür."
+    }
+  },
+  {
+    "id": "dalgalara-giris-q6",
+    "identity": "[\"dalgalara-giris-q6\",\"Aynı ideal dağılımsız ortamın özellikleri değişmeden kaynak frekansı iki katına çıkarılıyor. Hangisi doğrudur?\",\"\",[\"Dalga artık mekanik olamaz\",\"Sürat aynı, dalga boyu yarı olur\",\"Sürat iki kat, dalga boyu aynı olur\",\"Sürat ve dalga boyu birlikte iki kat olur\",\"Periyot iki kat olur\"],1,\"Verilen modelde v aynı, λ=v/f yarı ve T=1/f yarı olur. Sürati frekansla zorunlu artırmak dalga boyunun değişmesini yok sayar. Dalga sınıfı sırf frekans değişti diye mekanikten elektromanyetiğe dönüşmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Dağılımsız ideal ortamda sürati ortam özellikleri belirler; kaynak ise periyodik tekrar ritmini belirler. v=λf bağıntısında hangi değişkenin sabit kalacağını, değiştirilen düzenek parçası seçtirir."
+      ],
+      "strategy": "Sorudaki müdahaleyi kaynak ve ortam olarak ayır. Ortamın sabit tuttuğu niceliği koruyup frekansın iki hâlini aynı v=λf denkleminde karşılaştır.",
+      "steps": [
+        "Ortam özellikleri değişmemiştir ve dağılımsız ideal model verilmiştir; v₂=v₁ alınır.",
+        "Kaynak için f₂=2f₁’dir. Aynı süratte λ₁f₁=λ₂·2f₁ yazılır.",
+        "λ₂=λ₁/2 ve T₂=T₁/2 olur. Uygun seçenek süratin aynı kalıp dalga boyunun yarıya indiğini belirtir."
+      ],
+      "optionReasons": [
+        "Kaynak ritminin değişmesi maddesel ortam gereksinimini kaldırmaz; dalganın sınıflandırmasını bu işlem tek başına değiştirmez.",
+        "v korunurken f iki katına çıktığı için λf çarpımını aynı tutan değişim dalga boyunun yarıya inmesidir.",
+        "Frekans değişiminde λ’yı sabit varsayar; verilen değişmeyen dağılımsız ortamın süratini de değiştirmiş olur.",
+        "Frekans da iki katken dalga boyunu iki kat yapmak λf’yi dört katına çıkarır; sürat için söylenen iki katla da kendi içinde uyuşmaz.",
+        "fT=1 gereği frekans artarken periyot azalmalıdır; ikisini birlikte artırır."
+      ],
+      "commonError": "Bir eşitlikte f’nin artmasını görünce diğer bütün nicelikleri sabit tutma; önce deneyde hangi fiziksel özelliklerin korunduğunu belirle.",
+      "check": "Yeni çarpım (λ₁/2)·(2f₁)=λ₁f₁ eski sürati verir. Aynı zamanda yeni periyotla yeni frekansın çarpımı yine 1’dir."
+    }
+  },
+  {
+    "id": "dalgalara-giris-q7",
+    "identity": "[\"dalgalara-giris-q7\",\"4 Hz sabit kaynakla üretilen dalga, sürati 10 m/s olan ortamdan 16 m/s olan başka ortama sabit sınırdan geçiyor. İkinci ortamda dalga boyu kaç m?\",\"\",[\"6,4\",\"40\",\"64\",\"4\",\"2,5\"],3,\"λ₂=16/4=4 m. 2,5 m ilk ortamın dalga boyudur; 6,4 kaynak frekansını hız oranıyla yanlış değiştirmekten doğabilir. Aynı kaynağın T=0,25 s değeri iki ortamda da aynıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Durgun iki ortam arasındaki sabit sınırda periyodik dalganın tekrar ritmi aynı kaynak tarafından belirlenir. Ortamın sürati değişebilse de bir periyotta alınan yol, o ortamın dalga boyunu verir."
+      ],
+      "strategy": "İkinci ortamın süratini ilk ortamınkiyle karıştırmadan seç. Sabit kaynak ve sınır nedeniyle korunan ritmi kullanıp ikinci ortamda bir periyotta alınan yolu hesapla.",
+      "steps": [
+        "Kaynak 4 Hz olarak sabittir; sınırın ikinci tarafında da saniyede dört tekrar vardır. İlk ortamın 10 m/s sürati bu yeni dalga boyunun payına yazılmaz.",
+        "İkinci ortam için λ₂=v₂/f=16/4 bağıntısı kurulur.",
+        "λ₂=4 m bulunur. Ortam daha hızlı olduğu için aynı kaynak ritminde uzaysal tekrar aralığı ilk ortamdakinden büyüktür."
+      ],
+      "optionReasons": [
+        "4×(16/10)=6,4 hesabı kaynak frekansını hız oranıyla değiştirir; bu bir frekans sayısını metre diye kullanmak olur. Kaynak 4 Hz kalır.",
+        "10×4 çarpımıdır; ilk ortamın süratiyle frekansı çarpmak ikinci ortamın dalga boyunu vermez.",
+        "16×4 çarpımıdır. Dalga boyu için v/f gerekir; v·f işleminin birimi m/s²’dir.",
+        "İkinci ortamda 16 m/s süratle saniyede dört tekrar, her tekrara 4 m uzunluk düşmesini sağlar.",
+        "10/4 ile ilk ortamın dalga boyudur; ikinci ortamın 16 m/s sürati kullanılmamıştır."
+      ],
+      "commonError": "Sınırdan geçişte hızın değişmesini kaynak frekansının da değişmesi sanma; bu soruda sınır ve kaynak ritmi sabittir.",
+      "check": "Kaynak periyodu 1/4=0,25 s’dir. İkinci ortamda bu sürede alınan 16×0,25=4 m yol, bulunan dalga boyunu doğrular."
+    }
+  },
+  {
+    "id": "dalgalara-giris-q8",
+    "identity": "[\"dalgalara-giris-q8\",\"Aşağıdakilerden hangisi boşlukta yayılabilen elektromanyetik dalgadır?\",\"\",[\"Radyo dalgası\",\"Havadaki ses\",\"İpteki atma\",\"Sismik P dalgası\",\"Durgun su yüzeyindeki dalga\"],0,\"Radyo dalgası elektromanyetiktir ve boşlukta yayılabilir. Ses, ip, deprem P ve su dalgaları maddesel etkileşimlere dayanan mekanik dalgalardır. Mekanik olmak, enine veya boyuna olmayı tek başına belirlemez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Mekanik dalgalar, maddesel ortam parçalarının birbirine etkisiyle yayılır. Elektromanyetik dalgada ise yayılan bozunum elektrik ve manyetik alanlarla ilişkilidir; yayılma için maddesel taşıyıcı zorunlu değildir."
+      ],
+      "strategy": "Her seçenekte yayılan bozunumun taşıyıcısını belirle: madde taneciklerinin titreşimi mi, elektromanyetik alanlar mı? Boşlukta maddesel taşıyıcının bulunmadığını ölçüt olarak kullan.",
+      "steps": [
+        "Ses, ip atması, yer sarsıntısı ve su yüzeyi olaylarında titreşen madde taneciklerini belirle; bunlar mekanik etkileşimlere dayanır.",
+        "Radyo dalgası, ışıkla aynı elektromanyetik aileye aittir; salınan alanların yayılması için ip, su veya hava gerekmez.",
+        "Boşlukta yayılabilen elektromanyetik örnek radyo dalgasıdır. Diğer dört seçeneğin belirtilen dalga biçimleri maddesel ortam gerektirir."
+      ],
+      "optionReasons": [
+        "Elektromanyetik alanların yayılmasıdır ve boşlukta da ilerleyebilir; sorudaki iki ölçütü birlikte sağlar.",
+        "Havanın basınç ve yoğunluk titreşimleriyle taşınır; hava kaldırılırsa bu ses dalgasının taşıyıcısı kalmaz.",
+        "İpin komşu parçalarının gerilme etkileşimiyle yayılır; ip yokken aynı mekanik atma boşlukta ilerleyemez.",
+        "Maddesel ortamın sıkışma ve genişleme bozunumudur; elektromanyetik değil mekaniktir.",
+        "Su yüzeyindeki maddesel hareketlere dayanır; suyun bulunmadığı boşlukta bu yüzey dalgası tanımlanamaz."
+      ],
+      "commonError": "Bir olayın enerji taşımasını elektromanyetik olma ölçütü sanma; mekanik dalgalar da enerji taşır.",
+      "check": "Ölçütü “titreşecek madde kaldırılırsa bu dalga yine yayılabilir mi?” diye uygula. Radyo için alan yayılımı sürerken diğer seçeneklerde tanımlanan maddesel taşıyıcı ortadan kalkar."
+    }
+  },
+  {
+    "id": "dalgalara-giris-q9",
+    "identity": "[\"dalgalara-giris-q9\",\"Yatay doğrultuda sağa yayılan ip dalgasında işaretli nokta düşey doğrultuda titreşiyor. Bu dalga verilen düzende nasıl sınıflanır?\",\"\",[\"Elektromanyetik ve boyuna\",\"Maddesel ortam gerektirmeyen ses\",\"Mekanik ve enine\",\"Mekanik ve boyuna\",\"Elektromanyetik ve enine\"],2,\"İp maddesel ortam olduğundan mekanik; titreşim düşey, yayılma yatay olduğu için eninedir. Dalganın sağa ilerlemesi parçacığın sağa sürüklendiği anlamına gelmez. Ses veya elektromanyetik sınıfına dönüşmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Dalga sınıflandırmasında iki bağımsız soru sorulur: yayılma maddesel ortama dayanıyor mu ve titreşim yönü yayılma yönüne göre nasıl? Enine/boyuna ayrımı, dalganın sağa veya sola gitmesinden tek başına çıkarılmaz."
+      ],
+      "strategy": "Önce taşıyıcı olarak ipin varlığını değerlendir. Sonra sağa yatay yayılma oku ile düşey titreşim okunu aynı şemaya çizip aralarındaki doğrultu ilişkisini belirle.",
+      "steps": [
+        "Bozunum gerilmiş ipteki parçaların etkileşimiyle taşındığı için mekanik dalga sınıfındadır.",
+        "Yayılma yatay, işaretli noktanın titreşimi düşeydir. Bu iki doğrultu birbirine diktir.",
+        "Titreşimi yayılmaya dik olan dalga eninedir; verilen düzen mekanik ve enine dalgadır."
+      ],
+      "optionReasons": [
+        "Hem ipin mekanik taşıyıcısını yok sayar hem de birbirine dik doğrultuları paralel gibi sınıflar.",
+        "Verilen olay ses değil ip dalgasıdır; ayrıca sesin de yayılmak için maddesel ortama ihtiyacı vardır.",
+        "İp maddesel taşıyıcıdır; düşey titreşim yatay yayılmaya dik olduğundan iki sınıflandırma da sağlanır.",
+        "Mekanik sınıfı doğrudur; boyuna olabilmesi için noktanın yatay yayılma doğrultusunda titreşmesi gerekirdi.",
+        "Yönlerin dikliğini doğru yakalar, fakat ipin maddesel etkileşimleriyle taşınan dalgayı elektromanyetik sayar."
+      ],
+      "commonError": "“Yay sağa gidiyor” bilgisini ipin işaretli noktasının da sağa taşındığı biçiminde yorumlama; iki ok farklı hareketleri anlatır.",
+      "check": "Yatay yayılma oku ile düşey titreşim oku 90° yapar. Ayrıca ip kaldırıldığında bu bozunumun mekanik taşıyıcısı kalmaz; iki sınıflandırma ayrı kontrollerle doğrulanır."
+    }
+  },
+  {
+    "id": "dalgalara-giris-q10",
+    "identity": "[\"dalgalara-giris-q10\",\"Sinüzoidal (harmonik) bir dalganın bir noktasına ait y–t grafiğinde art arda iki maksimum t=0,7 s ve t=1,2 s’de oluşuyor. Bu veriden doğrudan bulunanlar hangisidir?\",\"\",[\"λ=0,5 m ve v=2 m/s\",\"T=1,9 s ve f=0,5 Hz\",\"A=0,5 m ve λ=2 m\",\"T=2 s ve f=0,5 Hz\",\"T=0,5 s ve f=2 Hz\"],4,\"T=1,2−0,7=0,5 s ve f=1/T=2 Hz. Konum veya dalga sürati verilmediği için λ bulunamaz; genlik için düşey eksen değerleri gerekir. Zaman aralığını metreyle etiketleme.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sinüzoidal bir harekette ardışık iki maksimum, aynı titreşim evresinin bir tam tekrarını sınırlar. y–t grafiğinde bu tekrarın yatay aralığı bir süredir; uzaysal dalga boyu değildir. Genlik için de uzanım eksenindeki değerler gerekir."
+      ],
+      "strategy": "Ardışık iki maksimumun zamanları arasındaki aralığı çıkar. Bu aralığın tersinden saniyedeki tekrar sayısını bul; konum verisi gerektiren iddiaları ayrı tut.",
+      "steps": [
+        "Maksimumlar 0,7 s ve 1,2 s’de art arda oluşur; aralarında bir tam titreşim süresi vardır.",
+        "Periyot T=1,2−0,7=0,5 s’dir. İlk maksimumun başlangıç zamanı periyoda ayrıca eklenmez.",
+        "Frekans f=1/0,5=2 Hz bulunur. Bu zaman verilerinden doğrudan T ve f çıkar; λ, v veya A için ek veri gerekir."
+      ],
+      "optionReasons": [
+        "Zaman farkını metreye ve tersini m/s’ye etiketler; grafikte konumsal uzaklık veya yayılma sürati verilmemiştir.",
+        "Maksimum zamanlarını toplamak 1,9 s verir, aralığı vermez; yazılan frekans da bu periyodun tersi değildir.",
+        "Genlik için düşey konum değerleri, dalga boyu için uzaysal tekrar bilgisi gerekir; iki zaman sayısı bunları belirlemez.",
+        "Bu ikili kendi içinde terslik sağlar fakat maksimumların verilen 0,5 s aralığına uymaz; süre ile saniyedeki tekrar sayısı yer değiştirmiştir.",
+        "Ardışık maksimumların farkı 0,5 s, bunun tersi 2 Hz’dir; ikisi de doğrudan verilen zamanlardan bulunur."
+      ],
+      "commonError": "y–t ile y–x grafiklerinin yatay eksenlerini aynı okumak, süreyi uzunluk gibi kullanmaya yol açar.",
+      "check": "Bir sonraki maksimum 1,2+0,5=1,7 s’de beklenir. Böylece 0,7–1,2 ve 1,2–1,7 aralıkları eşit olur; ayrıca 0,5×2=1 sağlanır."
+    }
+  },
+  {
+    "id": "yay-dalgalari-q1",
+    "identity": "[\"yay-dalgalari-q1\",\"Boyca kütlesi μ=0,25 kg/m olan ideal ip 25 N geriliyor. Küçük enine dalga sürati kaç m/s?\",\"\",[\"0,1\",\"10\",\"100\",\"5\",\"6,25\"],1,\"F/μ=25/0,25=100 m²/s²; karekök 10 m/s. 100 kök alınmamış değerdir, 6,25 çarpma hatasıdır. μ kg/m olduğundan hacimsel yoğunluk gibi davranılmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Gergin ideal ipte küçük enine dalganın sürati v=√(F/μ) bağıntısıyla belirlenir. Boyca kütle μ, ipin birim uzunluk başına kütlesidir; kuvveti bununla bölmek süratin karesini verir."
+      ],
+      "strategy": "Verilen gerilimi boyca kütleye bölüp kökün içini hesapla. Sonucun sürat değil süratin karesi olduğunu belirleyerek karekök işlemini ayrıca tamamla.",
+      "steps": [
+        "F=25 N ve μ=0,25 kg/m aynı ideal ipin parametreleridir; burada hacimsel yoğunluk kullanılmaz.",
+        "F/μ=25/0,25=100 m²/s² bulunur. Bu değer v²’ye karşılık gelir.",
+        "Pozitif karekök alınır: v=√100=10 m/s. Sürat büyüklüğü için negatif kök seçilmez."
+      ],
+      "optionReasons": [
+        "Bulunan süratin tersidir; 1/v birimi s/m olur ve sorudaki m/s ile uyuşmaz.",
+        "10²=25/0,25 eşitliğini sağlar; hem karekök hem m/s birimi doğrudur.",
+        "Kökün içindeki v² değeridir; karekök alınmadığı için sürat yerine süratin karesi yazılmıştır.",
+        "5²=25 olduğundan F/μ bölümünü yalnız F sayısı gibi alır; 0,25 kg/m’ye bölme hesaba katılmaz.",
+        "25×0,25 çarpımıdır. Gerekli F/μ oranını ve ardından karekökü uygulamaz."
+      ],
+      "commonError": "Formüldeki karekökü yalnız gerilime veya yalnız μ’ye uygulama; bütün F/μ bölümünün pozitif kökü alınır.",
+      "check": "Sürati yerine koyarak F=μv²=0,25×10²=25 N elde edilir. Başlangıç gerilimi bu ters hesapla doğrulanır."
+    }
+  },
+  {
+    "id": "yay-dalgalari-q2",
+    "identity": "[\"yay-dalgalari-q2\",\"Aynı ideal ipte boyca kütle sabitken gerilim 9 katına çıkarılıyor. Dalga sürati kaç katına çıkar?\",\"\",[\"81\",\"1/3\",\"1\",\"3\",\"9\"],3,\"v₂/v₁=√(F₂/F₁)=√9=3. Frekans verilmesi gerekmez; bu sürat ortam gerilimi ve μ ile belirlenir. 9 kat sonucu kökü atlamak olur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Boyca kütlesi sabit bir ideal ipte süratin karesi gerilimle orantılıdır. Bu nedenle gerilimlerin oranı doğrudan süratlerin değil, süratlerin karelerinin oranını belirler."
+      ],
+      "strategy": "İlk ve son sürat bağıntılarını oranla; aynı μ’yu sadeleştir. Gerilimdeki katı, sürat oranına dönüştürmek için karekökten geçir.",
+      "steps": [
+        "İki durumda μ aynı olduğundan v₁²=F₁/μ ve v₂²=F₂/μ yazılır.",
+        "Bölüm alındığında (v₂/v₁)²=F₂/F₁=9 olur.",
+        "Pozitif sürat oranı √9=3’tür. Dalga sürati üç katına çıkar."
+      ],
+      "optionReasons": [
+        "Gerilim oranını yeniden karesini alarak büyütür; oysa sürat oranı için karekök gerekir.",
+        "Gerilimin artışıyla sürati azaltır. Ters oran değil, pozitif √(F₂/F₁) kullanılmalıdır.",
+        "İpin maddesi aynı diye gerilim değişimini yok sayar; F, sürati belirleyen ortam parametrelerinden biridir.",
+        "Üç kat süratin karesi dokuz kat olur; verilen gerilim oranını sağlar.",
+        "Gerilimle sürati doğrusal orantılı sayar ve v=√(F/μ) içindeki karekökü atlar."
+      ],
+      "commonError": "F arttığında ip aynı kaldı diye sürati sabit sayma; μ sabit olsa da sürat bağıntısındaki F değişmiştir.",
+      "check": "Sonucun karesiyle geriye git: (3v₁)²/v₁²=9. Böylece gerilimde verilen dokuz kat artış geri elde edilir."
+    }
+  },
+  {
+    "id": "yay-dalgalari-q3",
+    "identity": "[\"yay-dalgalari-q3\",\"İdeal ipte 4 m/s ile ilerleyen tek atma 0,3 s süren kaynak hareketiyle üretiliyor. Atmanın genişliği kaç m?\",\"\",[\"1,2\",\"13,33\",\"0,075\",\"4,3\",\"3,7\"],0,\"w=4·0,3=1,2 m. Tek atmanın üretim süresi kullanılır; düzenli tekrar bilgisi olmadığı için buna zorunlu periyot veya frekans atanmıyor. m/s ile saniye çarpımı metre verir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tek atmanın genişliği, kaynağın darbe oluşturduğu sürede bozunumun ip boyunca ilerlediği mesafedir. Bu üretim süresi düzenli tekrar bilgisi olmadıkça periyot diye adlandırılmaz."
+      ],
+      "strategy": "Kaynağın 0,3 saniyelik hareketini bir zaman penceresi gibi düşün. Bu pencerenin ilk ve son bozunumları arasındaki mesafeyi, aynı ip süratiyle yol hesabından bul.",
+      "steps": [
+        "Atmanın ilk bölümü, son bölüm oluşuncaya kadar 0,3 s ilerlemiştir. İp üzerindeki yayılma sürati 4 m/s’dir.",
+        "Genişlik için w=vΔt=4×0,3 bağıntısı kurulur; işlem m/s ile saniyeyi çarpar.",
+        "Atmanın genişliği 1,2 m bulunur. Genlik veya kaynağın düzenli tekrar frekansı bu verilerden ayrıca çıkarılmaz."
+      ],
+      "optionReasons": [
+        "4 m/s süratle 0,3 s boyunca alınan yoldur; atmanın başlangıcı ile sonu arasındaki mesafeyi verir.",
+        "Yaklaşık 4/0,3 oranıdır; sürati zamana bölmek m/s² verir, bir atma genişliği vermez.",
+        "0,3/4 işlemidir. Zaman/sürat oranının birimi s²/m’dir ve uzunluk değildir.",
+        "4+0,3 toplamıdır; sürat ile zaman farklı nicelikler olduğu için toplanarak mesafe bulunamaz.",
+        "4−0,3 işlemidir; süratten bir süre çıkarmak da metre birimi veya genişlik üretmez."
+      ],
+      "commonError": "Darbe süresinin tersini alıp periyodik frekans üretmeye çalışma; tek atmanın genişliği üretim süresinden doğrudan bulunabilir.",
+      "check": "1,2 m genişliğin 4 m/s ile oluşması 1,2/4=0,3 s sürer; kaynağın verilen hareket süresi geri elde edilir."
+    }
+  },
+  {
+    "id": "yay-dalgalari-q4",
+    "identity": "[\"yay-dalgalari-q4\",\"İdeal kayıpsız sabit uca sağa doğru gelen +6 cm tepe atması yansıyor. Ayrılmış yansıyan atma hangisidir?\",\"\",[\"Sağa giden −6 cm çukur\",\"Sıfır genlikli ve enerjisiz\",\"Sola giden −6 cm çukur\",\"Sağa giden +6 cm tepe\",\"Sola giden +12 cm tepe\"],2,\"Yansıyan sola gider ve çukurdur; ideal sabit uçta genlik büyüklüğü 6 cm kalır. − işareti enerjiye değil uzanıma aittir. 12 cm serbest uçtaki geçici toplam uzanımla karıştırılmamalıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sabit uç, ipin sınır noktasının yer değiştirememesidir; gelen ve yansıyan uzanımlar bu noktada toplamda sıfır olmalıdır. Atmanın ilerleme yönü ile uzanımının işareti birbirinden ayrı bilgiler taşır."
+      ],
+      "strategy": "Önce sabit uçta gelen tepenin hangi işaretli katkıyla sıfırlanacağını düşün. Sonra geri dönen ayrılmış atmanın yatay yönünü ve kayıpsız uçta korunan büyüklüğünü ayrı belirle.",
+      "steps": [
+        "Gelen atmanın uzanımı +6 cm’dir. Sabit uçta toplamın sıfır kalması için yansıyan bileşenin uzanım işareti ters olmalıdır.",
+        "Gelen sağa ilerlediğine göre geri dönen atma sola yayılır. Ters uzanım, ilerleme okunun tek başına ters çevrilmesi değildir.",
+        "İdeal kayıpsız yansımada ayrılmış atmanın büyüklüğü 6 cm kalır. Sonuç sola giden −6 cm çukur atmasıdır."
+      ],
+      "optionReasons": [
+        "Uzanımı ters çevirir fakat yansıyanın geri dönmesi gerektiğini atlar; sağa yön hâlâ gelenin yönüdür.",
+        "Sınır noktasının sıfır uzanımını bütün ayrılmış atmaya taşır; ideal yansıma atmanın enerjisini yok etmez.",
+        "Hem sabit ucun ters uzanım koşulunu hem gelenin tersine geri yayılmayı sağlar; büyüklük kayıpsız durumda korunur.",
+        "Gelen atmanın aynısıdır; ne ilerleme yönü geri dönmüş ne sabit uçta uzanım işareti tersleşmiştir.",
+        "Dönüş yönünü seçse de sabit uç için gerekli ters işareti sağlamaz; 12 cm de ayrılmış yansıyan atmanın genliği değildir."
+      ],
+      "commonError": "“Ters dönme” sözünü yalnız sola hareket etmek sayma; sabit uçta hem uzanımın işareti hem geri yayılma yönü denetlenir.",
+      "check": "Sınırdaki gelen ve yansıyan bileşenler +6+(−6)=0 sağlar. Ayrıldıktan sonra yansıyan aynı ipte sola gider; sıfır olan yalnız sabit uçtaki toplam uzanımdır."
+    }
+  },
+  {
+    "id": "yay-dalgalari-q5",
+    "identity": "[\"yay-dalgalari-q5\",\"İdeal serbest uca sağa gelen tepe atması tamamen yansıyıp ayrıldığında hangi değişim olur?\",\"\",[\"Çukur olarak sola döner; sürat iki kat olur\",\"Tepe olarak sağa gitmeye devam eder\",\"Genliği kalıcı olarak mutlaka iki kat olur\",\"Enerjisi tamamen sıfırlanır\",\"Tepe olarak sola döner; sürat büyüklüğü aynı kalır\"],4,\"Serbest uçta işaret korunur ve yön sola döner; aynı ipte sürat büyüklüğü aynı kalır. Sınırda gelen/yansıyan üst üste binince iki kat anlık uzanım olabilir; ayrılmış atmanın kalıcı genliği iki kat değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Serbest uç yer değiştirebildiği için sabit uçtaki sıfır uzanım koşuluyla aynı değildir. Yansıyan atma ilk ortama geri döner; ayrılmış atmanın biçimi, sınırda iki atmanın üst üste geldiği toplam görüntüden ayrılmalıdır."
+      ],
+      "strategy": "Serbest ucun gelen bozunuma nasıl eşlik edebildiğini düşünerek yansıyanın biçimini belirle. Ardından geri yayılma yönünü ve aynı ipin süratini ayrı sütunlarda kontrol et.",
+      "steps": [
+        "İdeal serbest uçtan yansıma uzanım işaretini ters çevirmediği için gelen tepe, yansıyan bileşende de tepedir.",
+        "Yansıyan atma sınırdan geri döner; gelen sağa olduğundan ayrılmış yansıyan sola gider.",
+        "Geri dönen atma aynı ideal iptedir; sürat büyüklüğü değişmez. Seçenek tepe olarak sola dönmeyi ve aynı sürati birlikte söylemelidir."
+      ],
+      "optionReasons": [
+        "Sabit uçtaki ters biçimi serbest uca taşır; ayrıca aynı ipin gerilim ve boyca kütlesi değişmeden sürati iki kat yapar.",
+        "İşareti korusa da yansımayı geri dönüş yerine aynı yönde iletim gibi anlatır.",
+        "Sınırda gelen ve yansıyanın geçici toplam uzanımıyla ayrılmış atmayı karıştırır; iki katlık kalıcı yansıyan genliği sonucu değildir.",
+        "İdeal tam yansıma enerjinin geri taşınmasına karşılık gelir; serbest uçta bütün enerjinin yok olduğu söylenemez.",
+        "Serbest uçta işaret korunur, yansıma yönü geri döner ve aynı ortamın sürati değişmez."
+      ],
+      "commonError": "Serbest uçta iki tepenin anlık örtüşmesini, sonradan ayrılan tek atmanın sürekli iki kat genlikli olacağı biçiminde yorumlama.",
+      "check": "Geri dönen atma ilk ipin F ve μ değerlerinde yayılır; v=√(F/μ) aynı kalmalıdır. Tam yansıma sonrası atmanın bulunması, “enerji tamamen sıfır” iddiasını da dışlar."
+    }
+  },
+  {
+    "id": "yay-dalgalari-q6",
+    "identity": "[\"yay-dalgalari-q6\",\"Aynı gerilim altında μ₂=4μ₁ olan ikinci ipe, ilk hafif ipten bir tepe geliyor. Hangisi doğrudur?\",\"\",[\"İletilen çukur ve dört kat süratli olur\",\"Yansıyan ters; iletilenin sürati ilk ortamın yarısı\",\"Yansıyan düz; iletilenin sürati iki kat\",\"Yansıyan ilk ortamda yarı süratle gider\",\"Hiçbir iletim olmaz\"],1,\"v₂/v₁=√(μ₁/μ₂)=1/2. Yansıyan hafif ipte ters çukur, iletilen ağır ipte düz tepedir. Yansıyan ilk ortamda kaldığı için sürat büyüklüğü v₁’dir; arayüz tam sabit uç değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "İki ideal ipin ortak gerilimle bağlanmasında yansıyan atma ilk ortamda, iletilen atma ikinci ortamda yayılır. Sürat karşılaştırması v=√(F/μ) ile yapılır; bağlantı tam sabit uç gibi iletimi bütünüyle engellemez."
+      ],
+      "strategy": "Gelen ve yansıyanı ilk ipte, iletileni ikinci ipte işaretle. Önce ikinci ipin boyca kütlesini sürat oranına çevir, sonra hafif–ağır sınırındaki yansıma biçimini belirle.",
+      "steps": [
+        "μ₂=4μ₁ ve F ortak olduğundan v₂/v₁=√(μ₁/μ₂)=√(1/4) yazılır.",
+        "İletilen sürat v₂=v₁/2 olur. Yansıyan ise ilk ipte kaldığı için sürat büyüklüğü v₁’dir.",
+        "Hafif ipten ağır ipe gelen tepe ters biçimde yansır. Doğru birleşim, yansıyanın ters olması ve iletilenin yarı süratle ilerlemesidir."
+      ],
+      "optionReasons": [
+        "Bu bağlantıda iletilen tepe yönünü korur; ayrıca dört kat μ sürati dört kat artırmaz, karekök oranıyla azaltır.",
+        "Hafif–ağır sınırındaki işaret değişimini ve √(1/4)=1/2 sürat oranını birlikte sağlar.",
+        "Hafiften ağıra geçişte gereken ters yansımayı ve daha büyük μ’deki daha küçük sürati iki yönden de ters yorumlar.",
+        "İkinci ipin süratini yansıyana uygular; yansıyan atma ilk ipin değişmeyen ortam özelliklerinde kalır.",
+        "Birbirine bağlı iki ipi tamamen sabit uç sanır; ikinci ip bozunumu alıp bir iletilen atma oluşturabilir."
+      ],
+      "commonError": "Yansıma ve iletim süratlerini aynı ortamda hesaplama; hangi atmanın hangi ipte bulunduğunu mutlaka adlandır.",
+      "check": "İki süratin karesi oranı (1/2)²=1/4 olup μ₁/μ₂’ye eşittir. Geri giden atmanın ilk ipte aynı süratle kalması ayrı bir ortam kontrolüdür."
+    }
+  },
+  {
+    "id": "yay-dalgalari-q7",
+    "identity": "[\"yay-dalgalari-q7\",\"Aynı gerilimli ağır ipten daha hafif ipe gelen tepe atması için, ideal doğrusal bağlantıda yansıyan atmanın işareti ve iletilenin sürati nasıldır?\",\"\",[\"Yansıyan çukur; iletilen aynı hızlı\",\"Yansıyan tepe; iletilen mutlaka durur\",\"İletilenin frekansı zorunlu sıfır\",\"Yansıyan tepe; iletilen daha hızlı\",\"Yansıyan çukur; iletilen daha yavaş\"],3,\"Yansıyan işareti korur, tepe olur. İletilen daha küçük boyca kütleli ipte √(F/μ) nedeniyle daha hızlıdır. Tek atmada frekans atamak gerekmez; periyodik kaynak varsa sabit sınırda frekans korunur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ortak gerilimde daha küçük boyca kütle, ideal ipin daha büyük dalga süratine karşılık gelir. Bir sınırdan geri dönen atmanın uzanım işareti ile diğer ortama geçenin sürati iki ayrı kararla belirlenir."
+      ],
+      "strategy": "Başlangıç ve ikinci ipteki μ değerlerini büyüklük olarak karşılaştır. Ağırdan hafife bağlantı kuralıyla yansıyan biçimi seç, iletilen sürati ise ortak F’li karekök oranından denetle.",
+      "steps": [
+        "İkinci ip daha hafif olduğundan μ₂<μ₁’dir; ortak gerilimde F/μ₂ daha büyüktür.",
+        "Bu nedenle iletilen atmanın v₂=√(F/μ₂) sürati ilk ortamdakinden büyüktür.",
+        "Ağırdan hafife ideal bağlantıda gelen tepe düz biçimde yansır; yansıyan yine tepe olur ve iletilen daha hızlı ilerler."
+      ],
+      "optionReasons": [
+        "Yansıma işareti yanlış olduğu gibi farklı μ değerlerinin ortak F altında oluşturduğu sürat farkını da yok sayar.",
+        "Yansıma biçimi uygun olsa da sonlu gerilimli hafif ipte iletilen dalganın durması gerekmez; bu ipte sürat daha büyüktür.",
+        "Tek atmaya zorunlu bir frekans atamak doğru değildir. Periyodik kaynak söz konusu olsaydı sabit sınır frekansı sıfırlamazdı.",
+        "Ağır–hafif sınırında düz yansımayı ve daha küçük μ’nin daha büyük süratini birlikte doğru belirtir.",
+        "Hafiften ağıra geçişin sonucunu ters yöndeki bu bağlantıya uygular; iki özellik de ters seçilmiştir."
+      ],
+      "commonError": "“İnce ip” sözcüğünü düşük süratle eşleştirme; eşit gerilimde boyca kütle azaldıkça F/μ büyür.",
+      "check": "v₂/v₁=√(μ₁/μ₂)>1 eşitsizliği, sayı verilmeden sürat artışını doğrular. Yansıyanın ilk ağır ipte geri kalması, iletilenle süratlerini karıştırmayı önler."
+    }
+  },
+  {
+    "id": "yay-dalgalari-q8",
+    "identity": "[\"yay-dalgalari-q8\",\"Aynı ideal doğrusal ipte iki atma bir noktada tam örtüşüyor. O noktadaki ayrı uzanımlar +5 cm ve −8 cm. Toplam uzanım kaç cm?\",\"\",[\"−3\",\"13\",\"3\",\"−13\",\"0\"],0,\"ytoplam=+5+(−8)=−3 cm; aşağı uzanımdır. 13 iki büyüklüğü işaretsiz toplamaktır. Bu anlık toplam atmaların daha sonra tek −3 cm atmaya dönüştüğü anlamına gelmez; ideal modelde yollarına devam ederler.\"]",
+    "guidance": {
+      "knowledge": [
+        "Doğrusal süperpozisyonda aynı noktadaki ve aynı andaki uzanımlar işaretleriyle toplanır. Yukarı ve aşağı uzanımlar birbirinin karşı işaretidir; sonuç uzaklık büyüklüğü değil işaretli yer değiştirme olabilir."
+      ],
+      "strategy": "İki atmanın aynı noktadaki katkılarını yukarı pozitif, aşağı negatif eksende göster. Önce zıt katkıların ortak bölümünü götür, sonra kalan yönü ve büyüklüğü birlikte yaz.",
+      "steps": [
+        "Birinci katkı +5 cm yukarı, ikinci katkı −8 cm aşağıdır. Aynı nokta ve zaman verildiğinden doğrudan toplanabilirler.",
+        "Toplam y=5+(−8) işlemidir; yukarı 5 cm, aşağı katkının 5 cm’sini götürür.",
+        "Aşağı yönde 3 cm kalır: y=−3 cm. Bu, yalnız o andaki toplam uzanımdır."
+      ],
+      "optionReasons": [
+        "İşaretli toplam 5−8=−3 cm’dir; daha büyük aşağı katkının yönü sonuçta korunur.",
+        "5+8 büyüklüklerini işaretsiz toplar; karşı yönlü uzanımları aynı yönlü saymıştır.",
+        "Toplamın büyüklüğünü verir fakat istenen işaretli uzanımın aşağı yönünü kaybeder.",
+        "Her iki katkıyı da aşağı yönlü gibi toplar; +5 cm’nin yukarı yönünü değiştirir.",
+        "Tam sıfırlanma için zıt uzanımların büyüklükleri eşit olmalıydı; burada 5 ve 8 cm eşit değildir."
+      ],
+      "commonError": "“Genlikleri çıkar” kuralını yalnız pozitif fark yazmak gibi kullanma; uzanımda işaret, düşey yönü taşır.",
+      "check": "Toplamdan bir katkıyı çıkararak ötekini geri bul: −3−5=−8 cm. Verilen ikinci uzanımın geri elde edilmesi hem toplamı hem işareti denetler."
+    }
+  },
+  {
+    "id": "yay-dalgalari-q9",
+    "identity": "[\"yay-dalgalari-q9\",\"İdeal kayıpsız doğrusal ipte eşit biçimli +4 cm ve −4 cm atmalar tam örtüşünce ip o anda düz görünüyor. Hangisi doğrudur?\",\"\",[\"Atmalar kalıcı olarak yok olur\",\"Ortamın dalga sürati sıfır olur\",\"Anlık uzanım sıfır olabilir; atmalar sonra ilerlemeyi sürdürür\",\"İki atmanın bütün enerjisi kesin sıfırdır\",\"İp artık hiçbir noktada hareket edemez\"],2,\"Süperpozisyon toplam uzanımı o anda sıfırlar; parçacıkların hızı sıfır olmak zorunda değildir. İdeal modelde atmalar ayrılıp devam eder. Enerji kaybı verilmediği için kalıcı yok olma çıkarılamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir ipin o anda denge çizgisinde bulunması konum bilgisidir; noktalarının o andaki hızlarını tek başına belirlemez. Doğrusal dalgaların örtüşme görüntüsü ile karşılaşmadan sonraki yayılmaları ayrı zamanlarda incelenir."
+      ],
+      "strategy": "Önce yalnız örtüşme anındaki y toplamını hesapla. Sonra kayıpsız doğrusal modelin karşılaşma sonrası atmalar için ne söylediğini kullan; sıfır konumdan enerji veya ortam sürati sonucu üretme.",
+      "steps": [
+        "Eş biçimli atmaların her karşılık gelen noktasında yukarı ve aşağı uzanımlar zıttır; tam örtüşmede +4+(−4)=0 olur.",
+        "Bu toplama o andaki konumu belirler. Noktaların hızları veya kinetik enerji, yalnız y=0 bilgisiyle sıfır kabul edilemez.",
+        "İdeal doğrusal modelde atmalar karşılaşmadan sonra yayılmalarını sürdürür. Geçici sıfır uzanım kalıcı yok olma değildir."
+      ],
+      "optionReasons": [
+        "Geçici girişim görüntüsünü karşılaşma sonrasına taşır; kayıpsız doğrusal modelde atmaların bağımsız ilerlemesi korunur.",
+        "Örtüşme ipin gerilimini veya boyca kütlesini sıfırlamaz; dalga sürati konumların anlık toplamından belirlenmez.",
+        "Örtüşme anındaki işaretli toplamı ve ideal modelin karşılaşma sonrasını doğru biçimde ayırır.",
+        "Sıfır uzanımda parçacıklar hareket ediyor olabilir; tek konum görüntüsü bütün enerjiyi sıfır göstermez.",
+        "Bir anda y=0 olması, o andan sonra y’nin değişemeyeceği anlamına gelmez; konum ile hız karıştırılmıştır."
+      ],
+      "commonError": "Görüntüde dalga yüksekliği sıfır diye enerji kaybı veya bütün hareketin kalıcı durması sonucuna geçme.",
+      "check": "Denge konumundan geçen bir titreşim noktasının hızı sıfır olmak zorunda değildir. Aynı ayrım, düz görünen ipin ardından yeniden atmaların ayrılabilmesiyle uyumludur."
+    }
+  },
+  {
+    "id": "yay-dalgalari-q10",
+    "identity": "[\"yay-dalgalari-q10\",\"Aynı gerilim ve boyca kütle korunan ideal ipte kaynak frekansı 2 Hz’den 4 Hz’ye çıkarılıyor. İlk dalga boyu 3 m ise yeni dalga boyu kaç m?\",\"\",[\"3\",\"6\",\"12\",\"0,75\",\"1,5\"],4,\"İlk v=3·2=6 m/s, yeni λ=6/4=1,5 m. f artınca aynı ipte hızın da artması zorunlu değildir; ortam F ve μ değişmediği için sürat sabittir. Genlik bilgisi bu hesabı değiştirmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "İdeal ipte yayılma sürati gerilim ve boyca kütleyle belirlenir. Bu ikisi korunuyorsa farklı frekanslı periyodik dalgalarda dalga boyu ile frekansın çarpımı aynı sürati vermelidir."
+      ],
+      "strategy": "Başlangıç dalga boyu ve frekanstan ipin süratini çıkar. Aynı sürati yeni kaynak frekansına bölerek yeni uzaysal tekrar uzunluğunu bul.",
+      "steps": [
+        "Gerilim ve boyca kütle sabittir; frekans değişimi sırasında v=√(F/μ) aynı kalır.",
+        "İlk durumda sürat v=λ₁f₁=3×2=6 m/s’dir.",
+        "Yeni durumda λ₂=v/f₂=6/4=1,5 m bulunur. Frekans iki katına çıkarken dalga boyu yarıya inmiştir."
+      ],
+      "optionReasons": [
+        "Dalga boyunu sabit bırakırsa 3×4=12 m/s gerekir; aynı F ve μ’lü ipin sürati iki kat yapılmış olur.",
+        "Frekansla dalga boyunu birlikte iki kat yapar; yeni çarpım 6×4=24 m/s olur ve ortam sürati korunmaz.",
+        "3×4 çarpımının sayısıdır; başlangıç dalga boyunu yeni frekansla çarpmak yeni dalga boyunu değil varsayılan bir sürati verir.",
+        "3 m’yi dörde böler; yeni frekansı ilkine oranlamak yerine 4 sayısını doğrudan kat sayar. Gerçek frekans oranı 4/2’dir.",
+        "1,5×4=6 m/s, başlangıçtaki 3×2 süratini korur."
+      ],
+      "commonError": "Frekansın yeni sayısını doğrudan bölme katsayısı alma; değişimi ilk frekansa göre oranla veya aynı sürati kullan.",
+      "check": "Dalga boyu oranı λ₂/λ₁=1,5/3=1/2, ters frekans oranı f₁/f₂=2/4 ile aynıdır. Bu bağımsız oran kontrolü süratin korunduğunu doğrular."
+    }
+  }
+]

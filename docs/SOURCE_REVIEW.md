@@ -1,3 +1,17 @@
+# Kaynak 030 — 300 eski kartın tam öğretici yardım incelemesi
+
+Her kartın kökü, beş seçeneği, anahtarı, ipucu, açıklaması ve ilgili eski rehber bağlamı okundu. Altı yazar ve altı bağımsız inceleme, seçili gerçek Aurelia/MEBİ/OGM metinleri ile şekillerden yararlandı. Kendi fazında yeniden okunan sayfalar ayrı kaydedildi; aktarılan eski okuma yeni okuma sayılmadı. İncelemeler anahtarı görünen incelemelerdir; kör çözüm iddiası yoktur. Ham kitaplar, özel kaynak bağlantıları ve Drive kimlikleri depoya eklenmedi.
+
+Yeni yardımda gerekli–yeterli koşul yönü, ploidinin takım sayısı, yükle yer değiştiren su ilişkisi, molekül içi/dışı hidrojen bağı, gazsız tersinir kimyasal değişim karşı örneği, erken cevap işaretleme ve matematiksel gösterim düzeltildi. Her onarımın diğer yeni metinler ve ham soru kimlikleri üzerindeki etkisi denetlendi.
+
+Yedi bilinen soru ve bağlı üç rehber yalnız gösterimde netleşir: sıfır kapsid stoku; bitki grubunun yaşam döngüsü özelliği; TYT katyon–anyon adlandırması; 1 atm erime/ısınma modeli; zamansal ve uzaysal dalga tepelerinde harmonik koşul. Çok tepecikli periyodik bir eğri, tek başına ardışık tepe aralığının temel periyot veya dalga boyu olduğunu garanti etmez. Karşı örnek, yeni köklerdeki model koşulunun neden gerekli olduğunu açıklar.
+
+Ham 480 rehber ve önceki 477 görünüm aynıdır; değişen üç rehberin sekiz görünür alanı dar koşullarla denetlenir. Bu kayıt bütün arşivin yeniden bilimsel olarak okunduğu veya bütün alt kazanımların tamamlandığı iddiası değildir. Son gerçek tarayıcı, paket ve yayın kabulü QA kaydındadır.
+
+---
+
+## Önceki kaynak ve kabul kayıtları
+
 # Kaynak 029 — 200 eski soruda tam öğretici yardım
 
 Matematik, fizik, kimya, biyoloji, Türkçe ve tarih paketlerinde her kartın kökü, beş seçeneği, anahtarı, ipucu, açıklaması ve ilgili rehberi okundu. Yazarlar ve bağımsız okuyucular seçili gerçek MEBİ/OGM/Aurelia metin sayfalarını ve kaynak şekillerini yeniden okudu; eski okuma sayıları yeni okuma sayılmadı. İncelemeler anahtarı görünen tam incelemelerdir; kör çözüm iddiası yoktur. Ham kitaplar, özel bağlantılar ve Drive kimlikleri depoya eklenmez.

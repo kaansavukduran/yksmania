@@ -1,0 +1,108 @@
+[
+  {
+    "index": 0,
+    "before": {
+      "title": "İki kanıtı kesiştir",
+      "prompt": "X bitkisinde iletim demeti var, tohum yok. Dört aday kara yosunu, eğrelti, çam ve elma. Hangi aday kalır?",
+      "strategy": "Damar ve tohum kanıtlarını sırayla uygula.",
+      "steps": [
+        {
+          "label": "Damar",
+          "explanation": "Kara yosunu elenir; diğer üç örnek damarlıdır.",
+          "expression": "3 aday"
+        },
+        {
+          "label": "Tohum",
+          "explanation": "Çam ve elma tohumlu olduğundan elenir.",
+          "expression": "1 aday"
+        },
+        {
+          "label": "Denetim",
+          "explanation": "Eğrelti damarlı ve tohumsuzdur; her iki veriyi sağlar.",
+          "expression": "Eğrelti"
+        }
+      ],
+      "answer": "Eğrelti; damarlı tohumsuz örnek.",
+      "check": "Sporla üreme damarsızlık için yeterli ölçüt değildir.",
+      "pitfall": "Tohum yokluğunu damar yokluğu diye okuma."
+    },
+    "after": {
+      "title": "İki kanıtı kesiştir",
+      "prompt": "Kara yosunu, eğrelti, çam ve elma gruplarının yaşam döngüsü özellikleri karşılaştırılıyor; bireylerin o andaki görünümü sorulmuyor. X’in grubunda iletim demeti vardır ve tohum oluşmaz. Hangi öğretici aday kalır?",
+      "strategy": "Damar ve tohum kanıtlarını sırayla uygula.",
+      "steps": [
+        {
+          "label": "Damar",
+          "explanation": "Kara yosunu elenir; diğer üç örnek damarlıdır.",
+          "expression": "3 aday"
+        },
+        {
+          "label": "Tohum",
+          "explanation": "Çam ve elma tohumlu olduğundan elenir.",
+          "expression": "1 aday"
+        },
+        {
+          "label": "Denetim",
+          "explanation": "Eğrelti damarlı ve tohumsuzdur; her iki veriyi sağlar.",
+          "expression": "Eğrelti"
+        }
+      ],
+      "answer": "Eğrelti; damarlı tohumsuz örnek.",
+      "check": "Sporla üreme damarsızlık için yeterli ölçüt değildir.",
+      "pitfall": "Tohum yokluğunu damar yokluğu diye okuma."
+    }
+  },
+  {
+    "index": 3,
+    "before": {
+      "title": "Bir bilinmeyen üç aday bırakır",
+      "prompt": "Kara yosunu, eğrelti, çam ve elma arasında yalnız ‘meyve yok’ gözlemi verilmiştir. Türü kesin belirlemek mümkün mü?",
+      "strategy": "Olumsuz kanıtın kaç aday bıraktığını say.",
+      "steps": [
+        {
+          "label": "Eleme",
+          "explanation": "Elma meyveli örnek olduğundan elenir.",
+          "expression": "4 − 1"
+        },
+        {
+          "label": "Kalanlar",
+          "explanation": "Diğer üçünde meyve yoktur.",
+          "expression": "3 aday"
+        },
+        {
+          "label": "Ek veri",
+          "explanation": "Tohum ve damar bilgileri kalanları ayırabilir.",
+          "expression": "Belirsizlik sürer"
+        }
+      ],
+      "answer": "Hayır; üç aday kalır.",
+      "check": "Tek kanıtın sonucu her zaman tek aday olmak zorunda değildir.",
+      "pitfall": "Eksik bilgiyi tahminle doldurup kesin sonuç kurma."
+    },
+    "after": {
+      "title": "Bir bilinmeyen üç aday bırakır",
+      "prompt": "Kara yosunu, eğrelti, çam ve elma grupları arasında yalnız “yaşam döngüsünde meyve oluşturmaz” bilgisi verilmiştir; bir bireyin o andaki meyvesiz görünümü sorulmuyor. Grubu kesin belirlemek mümkün mü?",
+      "strategy": "Olumsuz kanıtın kaç aday bıraktığını say.",
+      "steps": [
+        {
+          "label": "Eleme",
+          "explanation": "Elma meyveli örnek olduğundan elenir.",
+          "expression": "4 − 1"
+        },
+        {
+          "label": "Kalanlar",
+          "explanation": "Diğer üçünde meyve yoktur.",
+          "expression": "3 aday"
+        },
+        {
+          "label": "Ek veri",
+          "explanation": "Tohum ve damar bilgileri kalanları ayırabilir.",
+          "expression": "Belirsizlik sürer"
+        }
+      ],
+      "answer": "Hayır; üç aday kalır.",
+      "check": "Tek kanıtın sonucu her zaman tek aday olmak zorunda değildir.",
+      "pitfall": "Eksik bilgiyi tahminle doldurup kesin sonuç kurma."
+    }
+  }
+]
