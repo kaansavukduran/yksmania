@@ -1,25 +1,27 @@
-# 0.19.0 kaynak adayı — 17 Kasım 2026
+# 0.19.0 doğrulanmış yayın — 17 Kasım 2026
 
-Altı geometri temeli, gerçek şekil modelleri, konuya bağlı videolar ve Matrix teması eklendi. Önceki 479 çalışma kimliği/sırası ve kayıtlar korunur; yeni altı konu bağımsız izlenir. Kaynak kapsamı ve teknik kabul ayrı tutulur.
+Altı geometri temeli gerçek şekil modelleri, konuya bağlı videolar ve Matrix temasıyla yayımlandı. Önceki 479 çalışma kimliği/sırası ve kayıtlar korunur; yeni altı konu bağımsız izlenir. Kaynak kapsamı ile teknik yayın kabulü [QA](docs/QA.md) ve [PDF kaydında](docs/PDF_SOURCE_PROGRESS.md) ayrı açıklanır.
 
 | Alan | Bu turun sonucu |
 | --- | --- |
-| 1. Kod | Altı geometri ders/rehber/özet/soru kaydı ve SVG modelleri bağlandı. Yeni videolar gecikmeli yüklenir; hesap veya PDF yükleme gerektirmez. |
-| 2. Konular | 6 yeni TYT geometri ünitesi: 48 bölüm, 20 çözümlü örnek, 26 hatırlama. Toplam 486 rehber; 485 plan başlığı. 341 katalog başlığına bölünerek MEB tamamlanma yüzdesi üretilmez. |
-| 3. Kopya kağıtları | 6 yeni kısa özet: 30 formül/koşul bölümü, 12 örnek, 18 hatırlama. Eski 480 özet korunur; toplam 486. |
-| 4. Sorular | 60 yeni özgün beş seçenekli, gerekçeli soru. Toplam 5.943 soru: 3.303 tam, 2.640 kısmi yardım. Eski sorular ve anahtarları aynı kalır. |
-| 5. Denemeler | TYT 120/165 dakika, AYT Sayısal 80/180 dakika ve 15 branş pratiği korunur. Yeni soru havuzu mevcut deneme üretimine katılır; başlanmış kâğıtlar yeniden oluşturulmaz. |
-| 6. İnteraktif modeller | Açı ilişkileri, taşınabilir köşe/açı toplamı, çizilebilir üçgen sınırı, Pisagor/Öklid, benzerlik alanı ve dört merkez için 6 yeni model. Görsel ve sayı aynı hesap modelinden gelir. |
-| 7. Pedagoji | Kaynak/örnek/anahtarlar bağımsız incelendi; sekiz yanlış seçenek geri bildirimi netleştirildi. Video ve keşif puan oluşturmaz. İlk çalışma gününden 3/7/21 tekrarlar korunur. |
-| 8. Tasarım | Matrix, mevcut temanın yanındadır. Yeni profillerin kişisel hedefi 28/02/2027; kayıtlı farklı tarihler korunur. Dar görünümde tarih ve tema düğmeleri yeniden düzenlendi. Hover kontrastı ve turuncu açı/tema renk ilişkisi düzeltildi. |
-| 9. Testler | Tam 1.786 birim testi/197 dosya PASS. C2’de 22 ayar/plan/video/atom senaryosu, C3’te 4 geometri senaryosu ve kaynak Electron’da 99 model/reload/süreç açılışı PASS. Son C4 klasör yolu, web güncelleme ve tam tarayıcı kabulü sürüyor; önceki sonuçlar otomatik son yayın kabulü sayılmaz. |
-| 10. GitHub | Dal forge/visual-learning-031, taban 6623f6a. Üretim kaynağı ve final CI kaydı kabulden sonra bağlanacak. |
-| 11. Yayın | Vercel/Pages’in yeni 0.19.0 kaynağına geçtiği henüz bu kayıtla iddia edilmez. Son gerçek durum QA dosyasına yazılır. Android imzası ertelendi; yeni APK yok. |
-| 12. Sonraki iş | Çokgenler/özel dörtgenler, sentetik çember/daire, katı cisimler; kalan 2.640 yardım ve diğer kaynak alt becerileri. Bütün PDF/MEB/ÖSYM arşivi bitmedi. |
+| 1. Kod | Altı geometri ders/rehber/özet/soru kaydı ve hesaplara bağlı SVG modelleri. Video kataloğu gerektiğinde yüklenir; öğrenci PDF/kaynak yüklemez. |
+| 2. Konular | 6 yeni TYT geometri ünitesi: 48 bölüm, 20 çözümlü örnek, 26 hatırlama. Toplam 486 rehber/485 plan başlığı. 341 katalog başlığına bölünerek MEB tamamlanma yüzdesi üretilmez. |
+| 3. Kopya kağıtları | 6 yeni kısa özet: 30 formül/koşul bölümü, 12 örnek, 18 hatırlama; eski 480 korunur, toplam 486. |
+| 4. Sorular | 60 yeni özgün beş seçenekli, gerekçeli soru; kör bağımsız çözüm 60/60 anahtarla eşleşti. Toplam 5.943 soru: 3.303 tam, 2.640 kısmi yardım. Eski sorular ve anahtarları aynı kalır. |
+| 5. Denemeler | TYT 120/165 dakika, AYT Sayısal 80/180 dakika ve 15 branş pratiği korunur. Başlanmış kâğıtlar yeniden oluşturulmaz. |
+| 6. İnteraktif modeller | Açı ilişkileri, sürüklenebilir köşe/açı toplamı, üçgen sınırı, Pisagor/Öklid, benzerlik alanı ve dört merkez. Şekil ve sayılar aynı modelden gelir. |
+| 7. Pedagoji | Bilgi → yöntem → tek tek adım → gerekçeli çözüm. Gerçek öğrenme yolunda 9/10 sonuç ve ilk gün 1 sayılan 3/7/21 tekrarları sınandı. Keşif/video puan oluşturmaz. |
+| 8. Tasarım | Matrix mevcut temanın yanındadır. Yeni profillerin kişisel hedefi 28/02/2027; kayıtlı farklı tarihler korunur. Dar tarih/tema düzeni, kontrast ve bilimsel açı rengi onarıldı. |
+| 9. Testler | [Tam CI](https://github.com/kaansavukduran/yksmania/actions/runs/43972235774): 1.786 birim ve 1.257 tarayıcı PASS. Gerçek paketli Windows/Linux 99’ar model akışı; Pages prefix/yayın 99’ar akış ve gerçek Pages öğrenme yolu PASS. Vercel HTTP402 nedeniyle engelli. Yerel gerçek web sürüm yükseltmesi veriyi korudu. İlk harness sorunları ve sınırlar QA’da. |
+| 10. GitHub | Yayın kaynağı [1dd13c2f](https://github.com/kaansavukduran/yksmania/commit/1dd13c2f8e0b0c4f2b110075bb0f166d902d74c9), dal forge/visual-learning-031; main üzerinde doğrulandı. Son teslim belgesi uygulama girdilerini değiştirmez. |
+| 11. Yayın | [Pages](https://kaansavukduran.github.io/yksmania/) 0.19.0; Vercel dağıtımı ve genel adresi HTTP402 ile engelli. [Dört Windows/Linux indirmesi](https://github.com/kaansavukduran/yksmania/releases/tag/v0.19.0-alpha.1) başarılı CI’nin aynı çıktılarıdır; beş manifest kaydı varlık hash’leriyle eşleşti. Android imzası ertelendi; yeni APK yok. |
+| 12. Sonraki iş | Çokgenler/özel dörtgenler, sentetik çember/daire, katı cisimler; 2.640 kısmi yardım, diğer kaynak alt becerileri ve fiziksel kurulum/yükseltme kabulleri. Bütün PDF/MEB/ÖSYM arşivi bitmedi. |
 
-[PDF işleme kaydı](docs/PDF_SOURCE_PROGRESS.md): üç kaynaktan seçili 31 sayfa metin/22 sayfa şekil; 34 PDF’nin açık uygulama kullanımı kanıtlanabilen alt sınır. Bu 34, bitmiş PDF sayısı değildir. Kanonik özel defterde yalnız 3 satır eklemeli güncellendi; bütün PDF kapanış statüleri korunur. 135 atıf, 6 ders/60 farklı soruya bağlıdır.
+Üç kaynağın seçili 31 metin/22 görsel sayfası işlendi. 34 PDF’nin açık uygulama kullanımı kanıtlanabilir; bu bitmiş PDF sayısı değildir. Kanonik özel defterde yalnız üç satır eklemeli güncellendi; bütün PDF kapanış statüleri korunur. 135 atıf, altı ders/60 farklı soruya bağlıdır.
 
-Videolar 15 dersin 485 anlatımla eşleşti: 489 kaynak alt konu grubu ve 2.033 farklı URL. Güncel oynatma ve bütün video içeriği doğrulanmadı. Kişisel görev/takvim, özel belge adresi veya ham kitap depoya eklenmedi. [Konu CSV’si](docs/CONTENT_INVENTORY.csv) gerçek kayıt koleksiyonundan yeniden üretilir.
+15 derste 485 anlatıma eşleşen videolar 489 kaynak alt konu grubu ve 2.033 farklı URL içerir. Güncel oynatma ve bütün video içeriği doğrulanmadı. Kişisel görev/takvim, özel belge adresi ve ham kitap depoya eklenmedi. [Konu CSV’si](docs/CONTENT_INVENTORY.csv) gerçek kayıt koleksiyonundan üretilir.
+
+[Pages hattı](https://github.com/kaansavukduran/yksmania/actions/runs/43980946367) ve [release](https://github.com/kaansavukduran/yksmania/actions/runs/43981108027) kaynak 1dd13c2f üzerindedir. Normal TLS ile Pages’in 285 dosyası sabit prefix derlemesiyle eşleşti. Vercel yeni dağıtımı `resource_creation_blocked`, genel adresi `DEPLOYMENT_DISABLED` verdi; ikisi de HTTP402, hesap kullanım sınırı kaynaklıdır. Yayımlanan 145.757.638 byte AppImage ayrıca indirilip SHA-256 ile doğrulandı ve bu VM’de extract-and-run yoluyla özgün 99 akışı geçti; renderer hatası 0. Fiziksel cihaz, temiz OS kurulumu, Windows portable taşıma ve native iki sürüm yükseltmesi bu kabul değildir.
 
 ---
 
