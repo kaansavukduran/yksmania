@@ -2,7 +2,7 @@
 
 Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.17.0 yayımlandı.**
 
-[Vercel](https://yksmania.vercel.app) · [GitHub Pages](https://kaansavukduran.github.io/yksmania/) · [Windows ve Linux indirmeleri](https://github.com/kaansavukduran/yksmania/releases/tag/v 0.17.0-alpha.1)
+[Vercel](https://yksmania.vercel.app) · [GitHub Pages](https://kaansavukduran.github.io/yksmania/) · [Windows ve Linux indirmeleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.17.0-alpha.1)
 
 **350 anlatım, 322 ayrıntılı rehber, 350 yerleşik kopya kağıdı ve 3.340 özgün soru.** Doğrulanmış çalışma sırasının ilk 348/479 başlığı anlatım ve bağımsız soruyla hazırdır. Modelin koşullarını değiştirip sonucunu incele, öngörünü gerekçesiyle karşılaştır, sonra bağımsız sorulara geç. Öğrenci PDF veya ders kaynağı yüklemez. Konu Anlatımı, Kopya Kağıtları, Sorular ve Sınavlar ayrı bölümlerdir.
 
