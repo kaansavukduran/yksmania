@@ -558,7 +558,7 @@ export default function Forge018MathLab({ lessonId }: { lessonId: string }) {
     >
       <h3>Noktayı yerleştir, ilişkisini keşfet</h3>
       <p>
-        Koordinatları değiştir; önce ne olacağını düşün, sonra aynı ölçekli
+        Noktanın yerini değiştir; önce ne olacağını düşün, sonra aynı ölçekli
         şekil ve hesapla denetle. Bütün uzunluklar aynı birimdedir.
       </p>
       <Choice018

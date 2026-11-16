@@ -128,7 +128,9 @@ it("expands AYT practice to 37 items while keeping existing 25-item AYT and 110-
     expect.arrayContaining(retainedCatalogue),
   );
   expect(catalogue.length).toBeGreaterThanOrEqual(14);
-  expect(tyt.items).toHaveLength(110);
+  expect(tyt.items).toHaveLength(115);
+  expect(tyt.items.filter((q) => q.subjectId === "tyt-felsefe")).toHaveLength(5);
+  expect(tyt.items.filter((q) => q.subjectId === "tyt-din")).toHaveLength(0);
   expect(ayt.items.length).toBeGreaterThanOrEqual(37);
   expect(ayt.items.filter((q) => q.subjectId === "ayt-fizik")).toHaveLength(14);
   expect(ayt.items.filter((q) => q.subjectId === "ayt-biyoloji")).toHaveLength(
@@ -138,7 +140,7 @@ it("expands AYT practice to 37 items while keeping existing 25-item AYT and 110-
   expect(ayt.missingSubjects).toContain("Matematik / Geometri");
   expect(ayt.durationSeconds).toBe(scaledExamSeconds("AYT", ayt.items.length));
   expect(ayt.durationSeconds).toBeGreaterThanOrEqual(4995);
-  expect(tyt.durationSeconds).toBe(9075);
+  expect(tyt.durationSeconds).toBe(scaledExamSeconds("TYT", tyt.items.length));
   expect(oldExams.map((e) => e.items.length)).toEqual([110, 25]);
   for (const old of oldExams as ExamSpec[]) {
     let state = beginExam(initialState(), old, 1000);

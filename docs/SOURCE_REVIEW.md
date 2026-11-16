@@ -1,3 +1,30 @@
+# 0.17 adayı — 259–348 kaynak yakın okuması
+
+Gerçek Aurelia/YKS belgeleri, ilgili MEBİ ve OGM kaynakları öğretime dönüştürüldü. Canlı klasör listesi, indirme, metin çıkarımı, fiziksel sayfa ve açılmış görsel farklı kanıtlardır. Aşağıdaki sınırlı okuma bütün kitap veya bütün Drive iddiası değildir. Ham PDF, özel dosya kimliği ve özel Drive bağlantısı halka açık depoya konulmaz.
+
+| Öğretim alanı | Gerçek okuma sınırı ve aktarım |
+| --- | --- |
+| Sindirim, dolaşım, bağışıklık | MEBİ AYT Biyoloji bölüm1 PDF70–99; Cepte sindirim12–16 ve dolaşım10–19; dört gerçek sunu sayfası. Ana okuma45 PDF sayfası, 15 gerçek görüntü. Enzim kökeni, emülsiyon/hidroliz, lenf ve özgül yanıt ayrı öğretilir. |
+| Solunum, boşaltım ve erkek üremesi | 35 ana PDF ve iki ayrıca görsel sunu sayfası; 15 kritik görüntü. Basınç/akış, gaz taşıma, tamponlama, idrar üretim/çıkış ve hormon–geri bildirim olumlu mekanizmaları açıklanır. |
+| Kadın üreme, gelişme, ekoloji ve nükleik asit | MEBİ bölüm2 PDF3–40, ilgili OGM025–036/002 ve Aurelia TYT010’un dokuz sayfası. Üç Cepte kaynağında aktarım hatası nedeniyle yalnız gerçek okunabilir çıkarım kullanıldı; ham PDF görülmüş sayılmaz. Eski DNA rehberi kayıpsız genişletilir. |
+| Nüfus, yerleşme, göç ve ekonomi | 66 Drive PDF sayfası, bir birincil antlaşma sayfası ve 10 gerçek şekil. Sayı/oran/stok/akış ve verilen özgün yerleşim verisi ayrı tutulur. |
+| Bölge, ulaşım, çevre ve afet | 86 Drive PDF sayfası ve Paris Antlaşması2–3 maddelerinin bir sayfası; 10 gerçek kaynak şekli. Erozyon yönü, metan/ozon, deniz/kara buzu ve risk–tehlike ayrımları düzeltilerek aktarılır. |
+| Dünya, coğrafi konum ve harita | 74 gerçek metin sayfası ve 11 açılmış şekil. İdeal kutup sınırı, yerel öğle, tarih çizgisi, doğrusal ölçek–alan ve profil eksenleri açık koşullarla modellenir. |
+| Çözelti, enerji, hız ve denge | İlgili MEBİ/OGM/Cepte öğretim sayfaları ve kâğıtlar kaynak matrisinde konu bazlı okunur. Molalite–molarite, Hess, hız, ICE ve derişim/sıcaklık ayrı hesap modelleridir; fiziksel öncül ve fazlar görünürdür. |
+| Dengeye basınç, pH ve çözünürlük | Dokuz PDF içinde111 farklı metin sayfası, 13 açılmış görüntü; ikisi boş başlık sayfası olarak ayrıca işaretlenir. Yük dengesi, zayıf asit/baz, hidroliz ve çökelme açıklanır; çok küçük pozitif derişimler sahte sıfıra indirilmez. |
+| Momentum, denge, tork ve kuvvet | İlgili gerçek MEBİ/Cepte/OGM sayfaları ve şekilleri. İtme alanı, iki boyutlu kuvvet, moment kolu, kütle merkezi, ideal makara/rampa ve Coulomb modelleri açık varsayımlıdır. |
+| Elektrik alanı, enerji, potansiyel ve sığa | Bağımsız okuyucu ayrıca MEBİ17, Cepte3 ve sığa sunusu25 metin sayfasını, 11 gerçek görüntüyü karşılaştırdı. Potansiyel/enerji/kuvvet birbirine karıştırılmaz; eski alan rehberi ve modeli korunur. |
+| Manyetik kuvvet, indüksiyon, AC, trafo ve çember | MEBİ122–155:34 ve Cepte15 metin sayfası; yazar dokuz, ikinci okuyucu on gerçek görüntü açtı. Bozuk kodlamalı kâğıtlar gerçek şekilden okundu; RMS/faz/akı/açı ve sınır koşulları açıklanır. |
+| Noktanın ve doğrunun analitiği | Nokta: MEBİ101–104/111/112/114, yedi sayfalık kâğıt, Cepte9–12 ve ilgili OGM sunuları; 17 gerçek kaynak şekli. Doğru: MEBİ105–110, Cepte13–22, altı sunuda98 metin sayfası ve 15 gerçek görüntü. Kesişim, izdüşüm, alan ve geometrik sınırlar ayrı hesaplanır. |
+| Deyim, paragraf anlamı ve düzeni | İlgili gerçek kâğıt, MEBİ ve OGM pasajları yakın okundu; kapsam özel konu matrisindedir. Özgün sorunun bütün gerekli pasajı kendi kartında görünür; ipucu gerekli verinin yerine kullanılmaz. |
+| Felsefenin altı temel alanı | Altı Aurelia kâğıdı42 ve dört OGM ortak video notu114 fiziksel sayfa:156 sayfa, 12 gerçek PNG. MEBİ’nin gerçek okunabilir çıkarımında hedef satırlar150–1242 kullanıldı;50MB ham PDF indirilmiş/görülmüş sayılmaz. Video notu okuma, videonun izlenmesi değildir. |
+
+Her yeni soru ve çözüm ikinci okuyucuyla denetlendi; model matrisleri içerik doğruluğuna kanıt olur, normal ürün/tarayıcı/yayın kabulü yerine geçmez. Kaynak hatası körlemesine kopyalanmaz: yanlış teoriden yasaya merdiveni, eksik fiziksel öncül, koşulsuz biyolojik genelleme, çift anlamlı paragraf ve yanlış anahtar karantinaya alınır. Özgün sorular resmî ÖSYM sorusu olarak etiketlenmez. Son 20 yılın bütün sınav kitapçıkları ve izin kapsamı henüz tamamlanmadı.
+
+---
+
+## Önceki yayımlanmış kaynak kaydı
+
 # Yayımlanmış 0.16: 199–258 sırasındaki 60 ünitenin kaynak yakın okuması
 
 Canlı Aurelia/YKS klasörleri ve gerçek PDF baytları kullanıldı. Eski envanterde görünmeyen dosya yok sayılmadı; ilgili klasörler yeniden listelendi. Aşağıdaki sınırlar gerçek metin ve kritik sayfa görüntüsü okumalarıdır; bütün kitap veya bütün arşiv okunduğu anlamına gelmez. Ham PDF, özel dosya kimlikleri ve bağlantıları ürüne konulmadı.

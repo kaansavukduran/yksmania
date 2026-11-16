@@ -155,6 +155,23 @@ export function ratioCheck018(a: Point018, b: Point018, p: Point018) {
     pb = distance018(p, b).distance;
   return { collinear, ratio: pb === 0 ? null : ap / pb, ap, pb };
 }
+function meanThree018(a: number, b: number, c: number) {
+  const [low, middle, high] = [a, b, c].sort((x, y) => x - y);
+  const outer = low + high;
+  // Same-sign extremes can overflow although their mean is representable.
+  if (!Number.isFinite(outer))
+    return middle + (low - middle + (high - middle)) / 3;
+  const outerError =
+    Math.abs(low) >= Math.abs(high) ? low - outer + high : high - outer + low;
+  const total = outer + middle;
+  if (!Number.isFinite(total)) return outer / 3 + middle / 3 + outerError / 3;
+  const totalError =
+    Math.abs(outer) >= Math.abs(middle)
+      ? outer - total + middle
+      : middle - total + outer;
+  // Preserve cancellation before division, including genuine tiny residuals.
+  return total / 3 + (outerError + totalError) / 3;
+}
 export function centroid018(a: Point018, b: Point018, c: Point018) {
   points018(a, b, c);
   const u = point018(b.x - a.x, b.y - a.y),
@@ -163,8 +180,8 @@ export function centroid018(a: Point018, b: Point018, c: Point018) {
   if (!Number.isFinite(determinant))
     throw new RangeError("CENTROID018_OVERFLOW");
   const centroid = point018(
-    a.x / 3 + b.x / 3 + c.x / 3,
-    a.y / 3 + b.y / 3 + c.y / 3,
+    meanThree018(a.x, b.x, c.x),
+    meanThree018(a.y, b.y, c.y),
   );
   return {
     centroid,
