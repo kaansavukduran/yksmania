@@ -1,10 +1,13 @@
 # Sonraki Forge girişi
 
-Önce 0.18.1 adayının 200 eski yardım, üç soru görünümü, bağlı zar örneği, 62 yazılı hatırlama ve telefon metni onarımlarını son tam CI, masaüstü, Pages ve yayın kapılarıyla kapat. Hedef kontroller ve 1.663 birim geçti; önceki 0.18 CI'daki aralıklı boş başlangıcın nedeni açık olduğundan pasif tanı kanıtını koru.
+0.18.2’nin 300 mevcut soru çözümü, 1.743 birim/1.242 tarayıcı, gerçek Windows/Linux, yayımlanan AppImage, Vercel ve Pages kabulleri kapandı. Mevcut kapsam 480 rehber/480 kağıt/5.883 soru; ayrıntılı yardım 3.243, kısmi yardım 2.640.
 
-Sonraki tutarlı eski kaynak bandı 300 kart/30 konudur: matematik 50, fizik 40, kimya 50, biyoloji A 50, biyoloji B 50 ve Türkçe+tarih 60. Gerçek çözümleyici bu kartları henüz kısmi sayar. Her paket kendi kaynak okuması, tam yardım, bağımsız anahtarı görünen inceleme, gerçek kayıt/çevrimdışı/telefon/paket kabulüyle ilerler. Özel taslak veya okuma, hazır uygulama içeriği sayılmaz.
+İlk öncelik [geometri öğretim açıkları](GEOMETRY_SCOPE.md): temel açılar ve üçgen mantığı; eşlik/benzerlik ve yardımcı elemanlar; çokgen/dörtgen; sentetik çember/daire; katı cisimler. Mevcut matematik/analitik öğretimi korunarak kaynak–alt beceri matrisi kurulsun. Yeni içerik ancak gerçek kaynak okuması, bilimsel inceleme, çalışan etkileşim ve eski veriyi koruyan testlerle hazır sayılır. 479 workbook başlığı bütün 341 katalog/MEB alt becerileriyle birebir aynı değildir.
 
-Ardından kalan kısmi çözümler, kaynak–alt beceri açıkları, doğrulanmış video ve resmî sınav arşivi; özgün marka/karakter kalitesi ve fiziksel cihaz/kurulum/yükseltme kontrolleri sürdürülür. 479 başlık tamamlığı bütün kaynak bilgisinin doğrulandığı anlamına gelmez. Android kalıcı imzası kullanıcı tarafından ertelendi; bunu yeniden isteme. Kullanıcıya PDF veya kaynak yükleme görevi bırakma.
+Kalan 2.640 kısmi yardımın ilk tutarlı 300 kartlık envanteri ayrıca hazırdır: matematik 50, fizik 50, kimya 50, biyoloji 70, Türkçe 30 ve tarih 50. Bu yeni yardımlar henüz yazılmadı; özel envanter hazır uygulama içeriği sayılmaz. Soru yardımını bitirmek, temsil edilmeyen konu öğretimini tek başına tamamlamaz.
+
+Diğer kaynak–alt beceri açıkları, doğrulanmış video ve resmî sınav arşivi; marka/karakter niteliği ve fiziksel cihaz/temiz kurulum/portable taşıma/native yükseltme kabulleri ayrıca açık. Eski aralıklı boş başlangıcın kesin nedeni kanıtlanmadı; pasif tanı ve tarihsel başarısız kayıt korunsun. Android imzası kullanıcı tarafından ertelendi; bunu yeniden isteme. Kullanıcıya PDF veya kaynak yükleme işi bırakma.
+
 
 ---
 

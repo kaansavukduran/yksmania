@@ -1,0 +1,481 @@
+﻿Sınav;Ders;Konu;Öğrenme Sırası (479 Konu);Bölüm Sayısı;Çözümlü Örnek Sayısı;Hatırlama Sayısı;Tahmini Dakika;Bağlı Soru Sayısı;Ayrıntılı Yardım;Kısmi Yardım
+TYT;Kimya;Simyadan kimyaya: amaç, yöntem ve kanıt;1;9;4;4;40;5;5;0
+TYT;Kimya;Kimya disiplinleri: maddeye hangi soruyu soruyoruz?;2;6;3;3;35;5;5;0
+TYT;Kimya;Kimyanın sembolik dili: harf, alt indis ve katsayı;3;8;4;4;40;5;5;0
+TYT;Kimya;Kimyada güvenlik: etiketten doğru davranışa;4;6;3;3;40;5;5;0
+TYT;Kimya;Atom modelleri: yeni kanıt modeli değiştirir;5;7;3;3;40;5;5;0
+TYT;Matematik;Temel kavramlar: sayı, değer ve tanım koşulu;6;7;4;4;45;5;5;0
+TYT;Matematik;Tek–çift ve işaret: iki ayrı özellik;7;6;4;3;40;5;5;0
+TYT;Matematik;Ardışık sayılar: adım, terim ve toplam;8;6;4;3;40;5;5;0
+TYT;Matematik;Asal sayılar: bölen, kanıt ve çarpan;9;6;4;3;45;5;5;0
+TYT;Matematik;Faktöriyel: azalan seçimler ve ortak çarpım;10;6;5;3;45;5;5;0
+TYT;Biyoloji;Canlıların ortak özellikleri: tek belirtiyle karar verme;11;20;6;6;65;27;27;0
+TYT;Biyoloji;Bilimsel yöntem: sorudan kontrollü karşılaştırmaya;12;22;6;6;70;27;27;0
+TYT;Biyoloji;Mineraller: yapı, iyon dengesi ve kofaktör;13;22;6;6;70;27;27;0
+TYT;Matematik;Sayı basamakları: rakamdan koşullu denkleme;14;18;6;6;90;30;30;0
+TYT;Tarih;Tarih ve zaman: kanıtı sıraya koy;15;15;4;6;125;25;25;0
+TYT;Tarih;İnsanlığın ilk dönemleri: yerleşimden yazıya;16;20;6;8;190;30;30;0
+TYT;Fizik;Fizik bilimine giriş: ölç, modelle, sınırını bil;17;22;8;8;120;29;29;0
+TYT;Fizik;Madde ve özellikleri: kütleden yoğunluğa;18;24;8;8;120;29;29;0
+TYT;Fizik;Doğrusal hareket: yol, yön ve grafik;19;24;8;8;120;29;29;0
+TYT;Tarih;Orta Çağ’da dünya: toprak, ticaret ve güç;20;22;6;6;110;30;30;0
+TYT;Tarih;İlk ve Orta Çağlarda Türk dünyası: coğrafyadan kuruma;21;20;6;6;120;30;30;0
+TYT;Biyoloji;Su, asit–baz ve tuz: etkileşimden iç dengeye;22;22;6;6;75;29;29;0
+TYT;Biyoloji;Karbohidratlar: birim, bağ ve görev;23;18;6;6;40;30;30;0
+TYT;Biyoloji;Lipitler: depo, zar ve düzenleyici yapı;24;18;6;6;40;30;30;0
+TYT;Tarih;İslam medeniyetinin doğuşu: olay, kurum ve kültür;25;20;6;6;125;30;30;0
+TYT;Tarih;Türklerin İslamiyeti kabulü: temas, tercih ve değişim;26;20;6;6;115;30;30;0
+TYT;Biyoloji;Proteinler: dizilişten üç boyutlu işleve;27;20;6;6;75;25;25;0
+TYT;Kimya;Atomun temel tanecikleri: kimlik, kütle ve yük;28;20;6;6;50;30;30;0
+TYT;Kimya;İzotop, izoton, izobar: hangi sayı aynı?;29;20;6;6;55;30;30;0
+TYT;Kimya;Periyodik sistem ve iyonlar;30;7;4;4;50;5;5;0
+TYT;Fizik;Kuvvet ve Newton yasaları;31;8;4;3;45;5;5;0
+TYT;Fizik;Enerji ve hareket: dönüşümü hesapla, sistemi seç;32;24;8;8;120;29;29;0
+TYT;Matematik;Bölme ve bölünebilme: gruplar, kalanlar ve koşullar;33;18;6;6;95;30;30;0
+TYT;Matematik;EBOB ve EKOK: ortak parça mı, ortak tekrar mı?;34;18;6;6;100;30;30;0
+TYT;Matematik;Rasyonel sayılar;35;10;6;4;45;5;5;0
+TYT;Türkçe;Ses bilgisi: sesi karşılaştır, olayı kanıtla;36;11;12;4;60;10;10;0
+TYT;Türkçe;Sözcükte yapı: kökten anlama, adım adım;37;12;12;4;65;10;10;0
+TYT;Biyoloji;Enzimler: enerji engeli, özgüllük ve koşullar;38;20;6;6;75;25;25;0
+TYT;Biyoloji;Vitaminler: çözünürlük, düzenleme ve sınırlar;39;20;6;6;75;30;30;0
+TYT;Matematik;Birinci dereceden denklemler: eşitliği koru, çözümü doğrula;40;6;5;3;45;10;10;0
+TYT;Matematik;Basit eşitsizlikler: yön, sınır ve çözüm aralığı;41;7;5;4;45;10;10;0
+TYT;Tarih;Selçuklu Türkiyesi: yerleşme, kurum ve dönüm noktaları;42;20;6;6;130;30;30;0
+TYT;Kimya;Katman elektron dizilimi: say, dağıt ve kontrol et;43;6;3;3;40;10;10;0
+TYT;Tarih;Beylikten devlete Osmanlı siyaseti: kuruluş, fetih ve kalıcılık;44;15;4;6;135;15;15;0
+TYT;Tarih;Osmanlı askerî teşkilatı: savaşçıdan düzenli orduya;45;15;4;6;135;15;15;0
+TYT;Kimya;Elementlerin sınıflandırılması;46;6;3;3;40;5;5;0
+TYT;Kimya;Atom çapı karşılaştırma;47;6;3;3;40;5;5;0
+TYT;Kimya;İyonlaşma enerjisi;48;6;3;3;40;5;5;0
+TYT;Kimya;Elektron ilgisi, elektronegatiflik ve metalik özellik;49;6;3;3;40;5;5;0
+TYT;Tarih;Osmanlı medeniyeti: kurum, insan, kültür ve şehir;50;16;4;6;145;15;15;0
+TYT;Tarih;Dünya Gücü Osmanlı;51;13;5;5;65;10;10;0
+TYT;Kimya;Kimyasal türler ve Lewis yapısı;52;12;6;6;65;10;10;0
+TYT;Fizik;Isı ve sıcaklık;53;10;6;5;48;10;10;0
+TYT;Biyoloji;Nükleik asitler: DNA ve RNA’yı kur ve karşılaştır;54;11;6;5;65;10;10;0
+AYT;Biyoloji;ATP ve metabolizma;55;7;4;4;50;5;5;0
+TYT;Biyoloji;Hücre organelleri: yapı ve görev;56;8;4;4;55;5;5;0
+TYT;Kimya;Güçlü etkileşimler ve iyonik bağ;57;8;4;4;45;10;10;0
+TYT;Kimya;İyonik bileşiklerin sistematik adlandırılması;58;8;4;4;45;10;10;0
+TYT;Kimya;Kovalent bağ: ortaklaşma ve bağ kutupluluğu;59;10;5;5;55;10;10;0
+TYT;Kimya;Moleküllerde polarlık: geometri ve dipol dengesi;60;10;5;5;60;10;10;0
+TYT;Fizik;Genleşme;61;8;4;4;48;10;10;0
+TYT;Fizik;Hâl değişimi;62;8;5;4;55;10;10;0
+TYT;Matematik;Mutlak değer: uzaklıktan çözüm kümesine;63;8;5;5;60;10;10;0
+TYT;Matematik;Üslü sayılar: işaret, işlem ve büyüklük;64;9;4;5;65;10;10;0
+TYT;Biyoloji;Hücre zarında madde alışverişleri;65;10;4;5;75;10;10;0
+TYT;Biyoloji;Canlıların sınıflandırılması;66;10;4;5;70;10;10;0
+TYT;Fizik;Durgun elektrik;67;8;4;4;60;10;10;0
+TYT;Fizik;Elektrik akımı;68;10;5;4;65;10;10;0
+TYT;Türkçe;İsimler ve isim tamlaması: adları ilişkilendir;69;11;5;5;75;10;10;0
+TYT;Türkçe;Sıfatlar: adın özelliğini ve sınırını bul;70;11;5;5;75;10;10;0
+TYT;Türkçe;Zamirler: adı tekrarlamadan anlamı koru;71;10;5;5;75;10;10;0
+TYT;Matematik;Bilimsel gösterim ve katsayı: aynı değeri farklı ölçekte oku;72;8;5;5;55;10;10;0
+TYT;Fizik;Mıknatıslar ve manyetik alan;73;8;4;4;52;10;10;0
+TYT;Tarih;Sultan ve Osmanlı Merkez Teşkilatı;74;10;4;4;60;10;10;0
+TYT;Tarih;Klasik Çağda Osmanlı Toplum Düzeni;75;10;4;4;65;10;10;0
+TYT;Tarih;Değişen Dünya Dengeleri Osmanlı;76;11;4;4;70;10;10;0
+TYT;Matematik;Köklü sayılar: esas değer, alan ve güvenli dönüşüm;77;10;5;5;70;10;10;0
+TYT;Matematik;Oran orantı: sabit olanı bul, modeli doğrula;78;9;5;5;65;10;10;0
+TYT;Matematik;Sayı problemleri: cümleden modele, modelden kontrole;79;8;4;4;65;10;10;0
+TYT;Biyoloji;Virüsler: yapı, konak ve çoğalma;80;8;4;5;65;10;10;0
+TYT;Biyoloji;Bakteri ve arke: ortak hücre, farklı kanıtlar;81;8;4;5;75;10;10;0
+TYT;Biyoloji;Protista: çeşitlilik ve koşula bağlı yaşam;82;8;4;5;65;10;10;0
+TYT;Biyoloji;Bitkiler: damardan tohuma, kanıttan gruba;83;8;4;5;70;10;10;0
+TYT;Biyoloji;Mantarlar: dış sindirimden yaşam ortaklığına;84;8;4;5;65;10;10;0
+TYT;Biyoloji;Omurgasızlar: yapısal kanıttan gruba;85;10;4;5;85;10;10;0
+TYT;Biyoloji;Omurgalılar: sistemleri karşılaştır;86;10;4;5;85;10;10;0
+TYT;Matematik;Kesir problemleri: bütünü seç, kalanı izle;87;8;4;4;65;10;10;0
+TYT;Tarih;Değişim Çağında Avrupa ve Osmanlı;88;10;4;4;65;10;10;0
+TYT;Tarih;Devrimler Çağında Değişen Devlet ve Toplum;89;10;4;4;75;10;10;0
+TYT;Tarih;Uluslararası İlişkilerde Denge Stratejisi;90;10;4;4;70;10;10;0
+TYT;Tarih;XIX ve XX. Yüzyılda Değişen Sosyoekonomik Hayat;91;10;4;4;70;10;10;0
+TYT;Kimya;Kovalent adlandırma ve metalik bağ;92;8;4;4;65;10;10;0
+TYT;Türkçe;Zarflar: sözcükten sözcüğe anlam bağlantıları;93;10;5;5;65;10;10;0
+TYT;Biyoloji;Mitoz: kopyala, ayır ve say;94;10;4;5;90;10;10;0
+TYT;Biyoloji;Eşeysiz üreme: yeni bireyin izini sür;95;10;4;5;80;10;10;0
+TYT;Biyoloji;Mayoz: homologdan kardeşe iki bölünme;96;10;4;5;95;10;10;0
+TYT;Kimya;Zayıf etkileşimler: doğru tanecik çiftini seç;97;8;4;4;65;10;10;0
+TYT;Kimya;Hidrojen bağı: verici, alıcı ve ağ;98;8;4;4;60;10;10;0
+TYT;Tarih;20. Yüzyıl Başlarında Osmanlı ve Dünya;99;12;4;4;85;10;10;0
+TYT;Fizik;Basınç: kuvvetten akışkan dengesine;100;10;4;5;65;10;10;0
+TYT;Fizik;Sıvılarda kaldırma kuvveti: yer değiştiren hacmi izle;101;10;4;5;55;10;10;0
+TYT;Fizik;Dalgalara giriş: kaynak, ortam ve titreşim;102;10;4;5;50;10;10;0
+TYT;Fizik;Yay dalgaları: atmayı üret, yansımayı çöz;103;10;4;5;55;10;10;0
+TYT;Kimya;Fiziksel ve kimyasal değişimler;104;8;4;4;60;10;10;0
+TYT;Kimya;Maddenin hâlleri: tanecikten enerji grafiğine;105;10;5;5;75;10;10;0
+TYT;Matematik;Yaş problemleri: aynı tarihi aynı sütunda tut;106;8;4;4;60;10;10;0
+TYT;Matematik;Yüzde problemleri: tabanı izle, değişimi çarpanla kur;107;8;4;4;65;10;10;0
+TYT;Matematik;Kâr zarar problemleri: maliyeti, etiketi ve geliri ayır;108;8;5;4;70;10;10;0
+TYT;Matematik;Faiz problemleri: parayı, oranı ve zamanı ayır;109;8;4;4;65;10;0;10
+TYT;Matematik;Karışım problemleri: iki ayrı kütle hesabı;110;8;4;4;65;10;0;10
+TYT;Tarih;Millî Mücadele: yerel direnişten bağımsız devlete;111;10;4;4;75;10;0;10
+TYT;Kimya;Katılar ve viskozite: yapıdan akışa;112;9;4;4;65;10;0;10
+TYT;Kimya;Buharlaşma ve buhar basıncı: hız ile dengeyi ayır;113;8;4;4;65;10;0;10
+TYT;Kimya;Kaynama ve bağıl nem: basınçları doğru eşleştir;114;9;4;4;65;10;0;10
+TYT;Tarih;Atatürkçülük ve inkılaplar: amaçtan kurumlara;115;10;4;4;75;10;0;10
+TYT;Kimya;Gazlar, hâl değişim grafikleri ve plazma;116;9;4;4;65;10;0;10
+TYT;Türkçe;Edat, bağlaç ve ünlem: cümlede görev ve anlam;117;10;5;5;65;10;0;10
+TYT;Biyoloji;Eşeyli üreme: gametten zigota, zigottan gelişmeye;118;8;4;4;32;10;0;10
+TYT;Biyoloji;Kalıtıma giriş: alelden fenotipe, gametten olasılığa;119;8;4;4;32;10;0;10
+TYT;Biyoloji;Mendel genetiği: olası yavruyu gerekçesiyle hesapla;120;8;4;4;32;10;0;10
+TYT;Matematik;İşçi problemleri: süreyi hıza, işi evrelere çevir;121;8;4;4;65;10;0;10
+TYT;Matematik;İşçi ve havuz problemleri: net akışı ve sınırları izle;122;8;4;4;65;10;0;10
+TYT;Matematik;Hız problemleri: yolu, konumu ve geçen süreyi ayır;123;8;4;4;75;10;0;10
+TYT;Türkçe;Fiiller: kip, kişi, zaman ve yapı;124;10;5;5;80;10;0;10
+TYT;Kimya;Doğa ve kimya: su, hava ve kirlilik yolları;125;9;4;4;65;10;0;10
+TYT;Türkçe;Fiilde çatı: yapan, etkilenen ve nesne;126;10;5;5;80;10;0;10
+TYT;Fizik;Su dalgaları: dalga cephesinden kırılmaya;127;10;4;5;65;10;0;10
+TYT;Fizik;Ses ve deprem dalgaları: titreşimi ölç, kanıtı yorumla;128;10;4;5;75;10;0;10
+TYT;Fizik;Işık bilgisi: ışından aydınlanmaya;129;8;4;5;60;10;0;10
+TYT;Fizik;Gölge ve yarı gölge: hangi kaynaktan ışık geliyor?;130;8;4;5;60;10;0;10
+TYT;Fizik;Düzlem ayna: simetri, ışınlar ve görüş alanı;131;8;4;5;70;10;0;10
+TYT;Tarih;İki savaş arasında Türkiye: iç siyaset ve diplomasi;132;10;4;4;75;10;0;10
+TYT;Tarih;Küresel savaşlar arasında: barış arayışı, kriz ve rejimler;133;9;4;4;75;10;0;10
+TYT;Biyoloji;Mendel’den sapmalar: baskınlık biçimi ve bağlılık;134;8;4;4;32;10;0;10
+TYT;Biyoloji;Kan grupları: alel, antijen ve olasılığı ayır;135;8;4;4;32;10;0;10
+TYT;Biyoloji;Eşey kromozomları: XX/XY modeli ve alelin yolu;136;8;4;4;32;10;0;10
+TYT;Biyoloji;Soy ağaçları: kanıttan olası genotiplere;137;8;4;4;32;10;0;10
+TYT;Tarih;II. Dünya Savaşı: küresel çatışmadan yeni düzene;138;10;4;4;75;10;0;10
+TYT;Kimya;Su ve hayat: bütçe, kalite ve kullanım amacı;139;9;4;4;45;10;0;10
+TYT;Kimya;Kütlenin korunumu ve sabit oranlar;140;9;4;4;45;10;0;10
+TYT;Kimya;Sınırlayıcı madde ve artan madde;141;9;4;4;45;10;0;10
+TYT;Kimya;Katlı oranlar: eşitle, karşılaştır, yorumla;142;9;4;4;45;10;0;10
+TYT;Kimya;Mol kavramı;143;8;5;3;45;5;5;0
+TYT;Kimya;Mol ve tanecik: molekül, formül birimi, atom, iyon;144;9;4;4;45;10;0;10
+TYT;Coğrafya;Doğa, insan ve coğrafya: aynı vadiye farklı sorular;145;8;4;4;55;10;0;10
+TYT;Coğrafya;Coğrafyanın gelişimi: gözlemden mekânsal analize;146;8;8;8;55;10;0;10
+TYT;Coğrafya;Yerel saat: boylamdan dakikaya, dakikadan güne;147;8;6;6;55;10;0;10
+TYT;Matematik;Grafik problemleri: veriyi oku, temsili sorgula;148;8;4;4;65;10;0;10
+TYT;Matematik;Çarpanlara ayırma;149;13;10;5;65;15;15;0
+TYT;Matematik;Kümeler: elemandan Venn hesabına;150;8;4;4;65;10;0;10
+TYT;Kimya;Mol ve kütle: birimlerden çok adımlı hesaba;151;9;4;4;45;10;0;10
+TYT;Biyoloji;Ekolojiye giriş: canlıyı ilişkileriyle tanı;152;8;4;4;40;10;0;10
+TYT;Biyoloji;Besin piramitleri: enerji, sayı ve biyokütleyi ayır;153;8;4;4;40;10;0;10
+TYT;Biyoloji;Besin zinciri ve ağı: enerjinin yollarını izle;154;8;4;4;40;10;0;10
+TYT;Biyoloji;Madde döngüleri: depoları ve dönüşümleri izle;155;10;4;4;40;10;0;10
+TYT;Biyoloji;Çevre sorunları: kaynaktan ekosistem etkisine;156;9;4;4;40;10;0;10
+TYT;Biyoloji;Doğal kaynaklar ve sürdürülebilirlik: bugünü gelecekle dengele;157;9;4;4;40;10;0;10
+TYT;Coğrafya;Atmosfer: karışımdan katmanlara, havadan iklime;158;8;4;4;55;10;0;10
+TYT;Coğrafya;Sıcaklık: etkileri ayır, yükseltiyi kontrollü karşılaştır;159;8;6;6;55;10;0;10
+TYT;Fizik;Küresel aynalar: odaktan görüntüye ışın kur;160;8;4;4;70;10;0;10
+TYT;Coğrafya;Basınç ve rüzgârlar: farkı, yönü ve ölçeği izle;161;8;5;5;55;10;0;10
+TYT;Coğrafya;Nem ve yağış: miktardan doyuma, yükselmeden yağışa;162;8;4;4;55;10;0;10
+TYT;Matematik;Kartezyen çarpım: sırayı ve bütün çiftleri koru;163;8;4;4;55;10;0;10
+TYT;Matematik;Mantık: bağlaçtan karşı örneğe;164;10;4;4;75;10;0;10
+TYT;Fizik;Işığın kırılması: normal, indis ve sınır açısı;165;8;4;4;70;10;0;10
+TYT;Fizik;Mercekler: ışını izle, ortamı değiştir;166;8;4;4;75;10;0;10
+TYT;Fizik;Prizmalar ve renkler: ışığı ayır, süz, yansıt;167;8;4;4;75;10;0;10
+TYT;Türkçe;Ek fiil: tabandan yargıya, kipten birleşik çekime;168;8;4;4;55;10;0;10
+TYT;Türkçe;Fiilimsiler: eki, kökü ve görevi birlikte oku;169;8;4;4;75;10;0;10
+AYT;Biyoloji;Genetik çeşitlilik: yeni alel mi, yeni birleşim mi?;170;8;4;4;44;10;0;10
+AYT;Biyoloji;Nöron ve glialar: yapıyı, görevi ve yeri birlikte oku;171;8;4;4;44;10;0;10
+AYT;Biyoloji;Aksiyon potansiyeli: gerilimi, iyonu ve zamanı birlikte izle;172;8;4;4;44;10;0;10
+AYT;Biyoloji;Ön beyin: algı, davranış ve iç denge ağları;173;8;4;4;44;10;0;10
+AYT;Fizik;Vektörler: yönü koru, bileşenlerle düşün;174;8;4;4;75;10;0;10
+TYT;Kimya;Gerçek kütle, atomik kütle birimi ve koşullu gaz hacmi;175;8;4;4;50;10;0;10
+TYT;Kimya;Kimyasal tepkimeler ve denkleştirme atölyesi;176;8;4;4;50;10;0;10
+TYT;Kimya;Tepkime türleri: aynı olaya farklı ölçütlerle bak;177;8;4;4;50;10;0;10
+TYT;Kimya;Denklemli miktar geçişi: birimler arasında çok adımlı yol;178;8;4;4;50;10;0;10
+TYT;Kimya;Sınırlayıcı bileşen: denklem, başlangıç ürünü ve ters kontrol;179;8;4;4;50;10;0;10
+TYT;Kimya;Katı kütlesi değişimi: oksijen alma ve uzaklaştırma;180;8;4;4;50;10;0;10
+TYT;Coğrafya;Büyük iklim tipleri: on iki ayın izini birlikte oku;181;8;4;4;75;10;0;10
+TYT;Coğrafya;Türkiye iklimi: kıyıdan dağın ardına değişen koşullar;182;8;4;4;75;10;0;10
+TYT;Coğrafya;Dünya'nın tektonik oluşumu: katmandan levha sınırına;183;9;4;4;80;10;0;10
+TYT;Türkçe;Cümlenin ögeleri: yüklem çevresindeki ilişkiler;184;8;4;4;75;10;0;10
+TYT;Türkçe;Cümle türleri: dört ölçütte ayrı kanıt;185;8;4;4;75;10;0;10
+AYT;Biyoloji;Orta ve arka beyin: yönelme, koordinasyon ve yaşamsal düzenleme;186;8;4;4;44;10;0;10
+AYT;Biyoloji;Omurilik: kökleri, yolları ve refleks devrelerini izle;187;8;4;4;44;10;0;10
+AYT;Biyoloji;Çevresel sinir sistemi ve hastalık mekanizmaları;188;8;4;4;44;10;0;10
+TYT;Kimya;Yüzde verim: kuramsal üst sınırdan ölçülen ürüne;189;8;4;4;50;10;0;10
+TYT;Kimya;Saflık: numuneden etkin reaktife ve geriye;190;8;4;4;50;10;0;10
+AYT;Fizik;Bağıl hareket: kimin gözünden baktığını seç;191;8;4;4;75;10;0;10
+TYT;Kimya;Atom kütlesi: izotop, bolluk ve bilinmeyen mol kütlesi;192;8;4;4;50;10;0;10
+TYT;Kimya;Tepkimeli karışımlar: katkıları ayır, bağımsız denklemi kur;193;8;4;4;50;10;0;10
+TYT;Kimya;Karışımlar ve çözünme: fazdan tanecik düzeyine;194;8;4;4;50;10;0;10
+TYT;Kimya;Çözelti derişimi: doğru payda, seyreltme ve birim dönüşümü;195;8;4;4;50;10;0;10
+AYT;Fizik;Nehir problemleri: suya göre yön, kıyıya göre yol;196;8;4;4;80;10;0;10
+TYT;Matematik;Veri analizi: gözlemden ölçüye, ölçüden yoruma;197;12;6;6;85;10;0;10
+TYT;Coğrafya;İç kuvvetler: kıvrımdan odağa, süreçten kanıta;198;8;4;4;80;10;0;10
+TYT;Coğrafya;Kayaçlar: bir taşın geçmişini süreçlerden kur;199;8;4;4;70;10;0;10
+TYT;Coğrafya;Türkiye’de iç kuvvetler: faydan dağ kuşağına kanıt oku;200;8;4;4;75;10;0;10
+TYT;Coğrafya;Akarsular: kesitten debiye, virajdan deltaya;201;8;4;4;85;10;0;10
+AYT;Biyoloji;Hipotalamus: sinirden hormona uzanan düzenleme;202;10;4;4;32;10;0;10
+AYT;Biyoloji;Hipofiz: hormonun kaynağı, hedefi ve etkisi;203;9;4;4;32;10;0;10
+AYT;Biyoloji;Tiroit: iyot, metabolizma ve geri bildirim;204;10;4;4;32;10;0;10
+TYT;Coğrafya;Karstik şekiller: çözünmeden mağara sütununa;205;8;4;4;70;10;0;10
+TYT;Coğrafya;Rüzgâr ve buzul: taşıyıcının izini malzemeden bul;206;8;4;4;80;10;0;10
+TYT;Coğrafya;Kıyılar: dalga işini ve sular altında kalan vadinin izini ayır;207;8;4;4;85;10;0;10
+TYT;Kimya;Koligatif özellikler / karışımların ayrılması;208;15;4;4;42;10;0;10
+TYT;Kimya;Asit baz ve tuzlar genel özellikler;209;12;4;4;42;10;0;10
+TYT;Kimya;Asit baz tepkimeleri;210;12;4;4;42;10;0;10
+AYT;Fizik;Newton yasaları: eğik düzlemden bağlı sistemlere;211;10;4;4;90;10;0;10
+AYT;Fizik;Sabit ivmeli hareket: işaret, dönme ve gerçek yol;212;9;4;4;85;10;0;10
+AYT;Biyoloji;Paratiroit: kalsiyum ve fosfatın ayrı yolları;213;9;4;4;32;10;0;10
+AYT;Biyoloji;Böbreküstü bezi: korteks, medulla ve üç denetim yolu;214;10;4;4;32;10;0;10
+AYT;Biyoloji;Pankreas: öğün, açlık ve glikozun izlediği yollar;215;9;4;4;32;10;0;10
+AYT;Biyoloji;Epifiz: ışık, karanlık ve biyolojik saatin ritmi;216;9;4;4;32;10;0;10
+AYT;Biyoloji;Deri: katmanlardan duyusal bilgiye;217;10;4;4;42;10;0;10
+AYT;Biyoloji;Dil ve burun: temel tatlardan lezzete;218;9;4;4;38;10;0;10
+AYT;Biyoloji;Göz: ışığın odağından görme alanına;219;12;4;4;52;10;0;10
+TYT;Türkçe;Yazım kuralları: anlamdan doğru biçime;220;20;6;6;100;10;0;10
+TYT;Türkçe;Noktalama işaretleri: anlamı ve bağı görünür kıl;221;18;6;6;100;10;0;10
+TYT;Coğrafya;Türkiye’de dış kuvvetler: yeri ezberlemekten süreci görmeye;222;8;4;4;85;10;0;10
+TYT;Coğrafya;Türkiye’nin yer şekilleri: göreli yükseklikten ulaşım koridoruna;223;8;4;4;80;10;0;10
+TYT;Coğrafya;Dünyada sular: depo, akış ve kullanılabilir suyu birlikte izle;224;8;4;4;90;10;0;10
+AYT;Fizik;Hareket grafikleri: eğimi ve alanı birlikte oku;225;9;4;4;90;10;0;10
+AYT;Biyoloji;Kulak: titreşimden işitmeye, hareketten dengeye;226;10;4;4;48;10;0;10
+AYT;Biyoloji;Kemik: canlı kompozitten iskelet düzenine;227;12;4;4;50;10;0;10
+AYT;Biyoloji;Kıkırdak ve eklem: destekten kontrollü harekete;228;10;4;4;44;10;0;10
+TYT;Kimya;Asit ve bazların metallerle tepkimeleri;229;12;4;4;42;10;0;10
+TYT;Kimya;Hayatımızdaki asit ve bazlar;230;13;4;4;39;10;0;10
+TYT;Kimya;Sabun, Deterjan ve Temizlik Maddeleri;231;13;4;4;43;10;0;10
+TYT;Türkçe;Anlatım bozuklukları: amacı koruyarak onar;232;18;6;6;100;10;0;10
+AYT;Fizik;Serbest düşme ve limit hız: aynı ağırlık, değişen direnç;233;10;4;4;100;10;0;10
+AYT;Fizik;Düşey atış: tepe, dönüş ve ilk yer teması;234;10;4;4;100;10;0;10
+TYT;Coğrafya;Türkiye’de sular: havzadan kullanıma;235;13;4;4;65;10;0;10
+TYT;Coğrafya;Dünya’da topraklar: katlar, süreç ve kanıt;236;12;4;4;65;10;0;10
+AYT;Fizik;Yatay atış: iki eksen, tek ortak zaman;237;10;4;4;100;10;0;10
+AYT;Fizik;Eğik atış: gerçek teğet, tepe ve menzil koşulları;238;10;4;4;110;10;0;10
+TYT;Kimya;Polimerler, Kozmetik Ürünler ve İlaçlar;239;12;4;4;45;10;0;10
+TYT;Kimya;Polimer - hazır gıda - ilaç - yağ;240;12;4;4;46;10;0;10
+AYT;Biyoloji;Kas doku: filamentten hareketin denetimine;241;15;4;4;48;10;0;10
+AYT;Fizik;Enerji ve hareket: işaretli işten yaylı sistemlere;242;15;4;4;125;10;0;10
+AYT;Kimya;Modern atom: orbitallerden iyon dizilimine;243;10;4;4;54;10;0;10
+AYT;Kimya;Kuantum sayıları: izinli durumları kur;244;10;4;4;50;10;0;10
+AYT;Kimya;Periyodik sistem: konumdan yarıçapın koşullarına;245;10;4;4;48;10;0;10
+TYT;Coğrafya;Türkiye’de topraklar: aynı bölgede farklı profiller;246;13;4;4;65;10;0;10
+TYT;Coğrafya;Dünya’da bitkiler: su, sıcaklık ve büyüme zamanı;247;12;4;4;65;10;0;10
+TYT;Coğrafya;Türkiye’de bitkiler: yamaç, yükselti ve geçmiş;248;13;4;4;65;10;0;10
+TYT;Coğrafya;Dünya’da yerleşmeler: doku, süre ve işlev;249;12;4;4;65;10;0;10
+TYT;Coğrafya;Türkiye’de yerleşmeler: kent ağı ve kırın takvimi;250;13;4;4;65;10;0;10
+TYT;Coğrafya;Nüfusun önemi ve özellikleri: payda, dönem ve kanıt;251;15;4;4;65;10;0;10
+AYT;Kimya;Elektron ve enerji: koparma, alma, bağda çekme;252;10;4;4;56;10;0;10
+AYT;Kimya;Elementleri tanı: karakterden yükseltgenme hesabına;253;12;4;4;62;10;0;10
+AYT;Kimya;Gazları betimle: tanecikten ölçülen basınca;254;10;4;4;48;10;0;10
+AYT;Kimya;Gaz yasaları: sabitleri seç, grafiği açıkla;255;12;4;4;58;10;0;10
+AYT;Biyoloji;Ağızdan mideye: sindirim ve güvenli taşıma yolu;256;12;4;4;48;10;0;10
+AYT;Biyoloji;Mide: karıştırma, salgı ve kontrollü sindirim;257;12;4;4;48;10;0;10
+TYT;Türkçe;Sözcükte anlam: bağlamı ve ilişkiyi gör;258;21;6;6;100;10;0;10
+AYT;Biyoloji;Bağırsaklar: yüzeyden kana ve lenfe;259;10;4;4;48;10;0;10
+AYT;Biyoloji;Sindirim enzimleri ve hormonal denetim: kaynaktan hedefe;260;10;4;4;48;10;0;10
+AYT;Biyoloji;Karaciğer ve safra kesesi: kan yolu ile safra yolunu ayır;261;11;4;4;48;10;0;10
+TYT;Türkçe;Deyimler ve atasözleri: sözü olaya bağla;262;12;4;4;75;10;0;10
+TYT;Türkçe;Cümlede anlam: ilişkiyi ve kapsamı izle;263;21;4;4;105;10;0;10
+AYT;Fizik;İtme ve momentum: kuvvetin zaman içindeki izi;264;10;4;4;120;10;0;10
+AYT;Fizik;Kesişen kuvvetlerin dengesi: düğümden serbest cisme;265;10;4;4;100;10;0;10
+AYT;Biyoloji;Pankreas: enzim kanalı, bikarbonat ve ayrı hormon yolu;266;10;4;4;48;10;0;10
+AYT;Biyoloji;Kalp: odacık, kapak, basınç ve ritim;267;10;4;4;48;10;0;10
+AYT;Biyoloji;Damarlar ve Starling: yön, alan, basınç ve doku sıvısı;268;10;4;4;48;10;0;10
+AYT;Fizik;Tork ve denge: kuvvetin doğrusu neden önemli?;269;10;4;4;120;10;0;10
+AYT;Kimya;Kinetik teori: hız, enerji ve gaz yoğunluğu;270;12;4;4;58;10;0;10
+AYT;Kimya;Kısmi basınç: gaz karışımı ve su dengesi;271;12;4;4;62;10;0;10
+AYT;Kimya;Gerçek gazlar: sapma, faz ve kritik nokta;272;12;4;4;64;10;0;10
+TYT;Coğrafya;Dünya’da nüfusun dağılışı: haritadan nedene;273;13;4;4;75;10;0;10
+TYT;Coğrafya;Nüfus piramitleri: kuşakları ve ölçeği oku;274;10;4;4;75;10;0;10
+TYT;Coğrafya;Türkiye’de nüfus: tarih, dağılış ve kayıt sınırı;275;13;4;4;75;10;0;10
+AYT;Fizik;Kütle ve ağırlık merkezi: parçaları bir bütünde dengele;276;10;4;4;115;10;0;10
+AYT;Kimya;Çözünme: etkileşim, enerji ve derişim dili;277;11;4;4;60;10;0;10
+AYT;Kimya;Molarite: son hacimden çok adımlı hesaba;278;10;4;4;56;10;0;10
+AYT;Kimya;İyon derişimi: katsayı, karışım ve yük dengesi;279;12;4;4;62;10;0;10
+TYT;Coğrafya;Dünya ve Türkiye’de göçler: sınır, süre ve akış;280;15;4;4;75;10;0;10
+TYT;Coğrafya;Ekonomik faaliyetler: üründen işlev ve değere;281;12;4;4;75;10;0;10
+TYT;Geometri;Noktanın analitiği: konumdan geometrik ilişkiye;282;18;6;6;80;10;0;10
+TYT;Türkçe;Paragrafa giriş: cümleleri bir bütüne bağla;283;16;4;4;85;10;0;10
+AYT;Fizik;Basit makineler: kuvvet, yol ve enerji birlikte;284;12;4;4;130;10;0;10
+AYT;Fizik;Elektriksel kuvvet: işaretli yüklerden vektör toplamına;285;12;4;4;120;10;0;10
+AYT;Biyoloji;Kan doku: taşıma, hücreler ve hemostaz;286;11;4;4;48;10;0;10
+AYT;Biyoloji;Lenf sistemi: dokudan tek yönlü dönüş ve savunma;287;10;4;4;48;10;0;10
+AYT;Biyoloji;Bağışıklık: engelden özgül belleğe;288;13;4;4;48;10;0;10
+TYT;Türkçe;Paragrafta ana düşünce;289;17;8;7;40;15;5;10
+TYT;Türkçe;Yardımcı düşünce: her yargıya kanıt bul;290;15;4;4;70;10;0;10
+AYT;Geometri;Doğrunun analitiği: denklem, yön ve dik uzaklık;291;20;8;8;110;10;0;10
+AYT;Biyoloji;Solunum organları: hava yolundan alveol sınırına;292;13;4;4;48;10;0;10
+AYT;Biyoloji;Soluk alışverişi: kas, hacim, basınç ve akış;293;12;4;4;48;10;0;10
+TYT;Coğrafya;Bölge ve bölge türleri: ölçüt, sınır ve ağ;294;12;4;4;85;10;0;10
+TYT;Coğrafya;Ulaşım: ağlar, su yolları ve rota kararı;295;14;4;4;95;10;0;10
+AYT;Kimya;Molalite ve koligatif özellikler;296;10;4;4;58;10;0;10
+AYT;Kimya;Çözünürlük: sınır, stok ve kristal;297;10;4;4;58;10;0;10
+AYT;Kimya;Tepkimelerde enerji: sistem ve çevre;298;10;4;4;56;10;0;10
+TYT;Coğrafya;Çevre ve toplum: etkileşim, yük ve çözüm;299;21;4;4;120;10;0;10
+TYT;Coğrafya;Afetler: süreç, maruziyet ve hazırlık;300;23;4;4;130;10;0;10
+AYT;Fizik;Elektrik alan ve test yükü;301;16;8;7;45;15;5;10
+AYT;Fizik;Elektriksel potansiyel enerji: yükleri yerleştirmenin bedeli;302;10;4;4;115;10;0;10
+AYT;Kimya;Entalpi, bağ enerjileri ve Hess yasası;303;11;4;4;64;10;0;10
+AYT;Kimya;Tepkime hızı: ölçümden hız yasasına;304;12;4;4;66;10;0;10
+AYT;Biyoloji;Gazların taşınması: hemoglobin, plazma ve tersinir dönüşüm;305;12;4;4;48;10;0;10
+AYT;Biyoloji;Üriner organlar: iki böbrekten dış ortama yol;306;13;4;4;48;10;0;10
+AYT;Biyoloji;Nefronun işleyişi: süzülme, geri emilim ve salgılama;307;15;4;4;48;10;0;10
+AYT;Biyoloji;Erkek üreme sistemi: üretim, olgunlaşma, kanallar ve hormonlar;308;14;4;4;48;10;0;10
+AYT;Kimya;Denge: derişim ve tepkime hızı;309;20;9;7;55;15;5;10
+AYT;Kimya;Denge hesabı: tablodan fiziksel köke;310;11;4;4;64;10;0;10
+AYT;Kimya;Derişim etkisi: önce, ani değişim, yeni denge;311;10;4;4;62;10;0;10
+AYT;Kimya;Sıcaklık, K ve denge kesri;312;11;4;4;60;10;0;10
+AYT;Fizik;Elektriksel potansiyel: aynı noktada farklı yükler;313;10;4;4;110;10;0;10
+AYT;Fizik;Düzgün elektrik alan: levhadan yörüngeye;314;12;4;4;125;10;0;10
+AYT;Fizik;Sığaçlar: yükü ayır, enerjiyi sakla;315;12;4;4;125;10;0;10
+TYT;Türkçe;Paragrafı ikiye bölme: yeni yönü bul;316;15;4;4;65;10;0;10
+TYT;Türkçe;Akışı bozan cümle: çıkar ve bağı denetle;317;15;4;4;65;10;0;10
+AYT;Fizik;Manyetik alan: akımın çevresindeki yön haritası;318;12;4;4;130;10;0;10
+AYT;Biyoloji;Kadın üreme organları: yapı, yol ve görev;319;11;4;4;65;10;0;10
+AYT;Biyoloji;Gametogenez: hücreden gamete, sayıdan işleve;320;12;4;4;72;10;0;10
+AYT;Biyoloji;Menstrual döngü: aynı takvimde iki değişim;321;12;4;4;72;10;0;10
+TYT;Coğrafya;Dünya’nın şekli ve hareketleri: ışın, gün ve mevsim;322;19;4;4;110;10;0;10
+TYT;Coğrafya;Coğrafi konum: koordinat, zaman ve çevre;323;15;4;4;105;10;0;10
+TYT;Coğrafya;Harita bilgisi: ölçekten arazi profiline;324;20;4;4;130;10;0;10
+AYT;Kimya;Dengeye basınç ve hacim etkisi;325;12;4;4;62;10;0;10
+AYT;Kimya;Sulu çözeltilerde su ve asit-baz dengesi;326;12;4;4;62;10;0;10
+TYT;Felsefe;Felsefeyi tanıma: sorudan gerekçeye;327;20;4;4;85;10;0;10
+TYT;Felsefe;Felsefe ile düşünme: öncül, sonuç ve karşı örnek;328;16;4;4;95;10;0;10
+TYT;Felsefe;Varlık felsefesi: ne var, neye dayanıyor?;329;19;4;4;105;10;0;10
+AYT;Biyoloji;Döllenmeden doğuma: embriyonik gelişim;330;16;4;4;90;10;0;10
+AYT;Biyoloji;Komünite ekolojisi: çeşitlilik, ilişkiler ve değişim;331;19;4;4;95;10;0;10
+AYT;Fizik;Manyetik kuvvet: yön, yörünge ve enerji;332;12;4;4;120;10;0;10
+AYT;Fizik;Elektromanyetik indüksiyon: değişen akıdan akıma;333;14;4;4;125;10;0;10
+AYT;Fizik;Alternatif akım: dalga, faz ve gerçek güç;334;14;4;4;130;10;0;10
+AYT;Fizik;Transformatör: sarım oranından güç bilançosuna;335;12;4;4;105;10;0;10
+AYT;Fizik;Çembersel hareket: teğet hız, içe ivme ve kuvvet sınırı;336;16;4;4;140;10;0;10
+AYT;Kimya;Zayıf asit-baz ve tampon çözeltiler;337;12;4;4;65;10;0;10
+AYT;Kimya;Tuzlarda hidroliz ve pH;338;12;4;4;65;10;0;10
+AYT;Kimya;Nötralleşmede miktar, yük ve son pH;339;12;4;4;65;10;0;10
+AYT;Biyoloji;Popülasyon ekolojisi: sayım, büyüme ve sınırlar;340;14;4;4;90;10;0;10
+AYT;Biyoloji;Nükleik asitler: yapı, yön, bağ ve görev;341;16;4;4;95;10;0;10
+AYT;Biyoloji;Kalıtım molekülünün keşfi: deneyden kanıta;342;11;4;4;85;10;0;10
+AYT;Biyoloji;DNA eşlenmesi: eski ve yeni zincirler;343;17;8;7;50;15;5;10
+TYT;Felsefe;Bilgi felsefesi: kaynak, ölçüt ve sınır;344;21;4;4;105;10;0;10
+TYT;Felsefe;Bilim felsefesi: veri, açıklama ve sınama;345;20;4;4;100;10;0;10
+TYT;Felsefe;Ahlak felsefesi: eylem, gerekçe ve sorumluluk;346;23;4;4;105;10;0;10
+AYT;Kimya;Titrasyon eğrisi ve eşdeğerlik;347;12;4;4;65;10;0;10
+AYT;Kimya;Çözünürlük dengesi, Kç ve sonlu katı;348;12;4;4;65;10;0;10
+AYT;Fizik;Dönerek öteleme hareketi;349;13;4;4;40;10;0;10
+AYT;Geometri;Öteleme ve dönme: hareketin sırasını keşfet;350;12;4;5;100;10;0;10
+AYT;Geometri;Yansıma ve simetri: aynayı eş uzaklıkla kur;351;12;4;5;105;10;0;10
+AYT;Geometri;Çemberin analitiği: merkezden kesişime;352;14;4;5;115;10;0;10
+AYT;Matematik;AYT fonksiyonlar: kural, küme ve işlem sırası;353;20;4;5;130;10;0;10
+TYT;Felsefe;Din felsefesi: kavram, inanç ve gerekçe;354;18;4;4;100;10;0;10
+TYT;Felsefe;Siyaset felsefesi: güç, hak ve ortak düzen;355;22;4;4;110;10;0;10
+TYT;Felsefe;Sanat felsefesi: eser, yorum ve estetik deneyim;356;20;4;4;90;10;0;10
+AYT;Kimya;Çözünürlük dengesi: sıcaklık ve ortak iyon;357;14;4;4;95;10;0;10
+AYT;Kimya;Redoks: elektron, atom ve yük dengesi;358;16;4;5;110;10;0;10
+TYT;Türkçe;Paragrafta sıralama: cümlelerden düşünce yoluna;359;14;4;4;80;10;0;10
+TYT;Türkçe;Paragrafta cümle ekleme: iki yana köprü kur;360;14;4;4;80;10;0;10
+TYT;Türkçe;Paragrafta boşluk doldurma: eksik düşünceyi tamamla;361;14;4;4;80;10;0;10
+AYT;Biyoloji;Kodon ve antikodon: bilgiyi yönüyle oku;362;12;4;4;65;10;0;10
+AYT;Biyoloji;Protein sentezini adım adım izle;363;12;4;4;65;10;0;10
+AYT;Biyoloji;Biyoteknoloji: araç, ürün ve kanıt;364;18;4;4;65;10;0;10
+AYT;Biyoloji;Fotosentezin genel yapısı ve madde akışı;365;12;4;4;65;10;0;10
+AYT;Fizik;Açısal momentum;366;12;4;4;40;10;0;10
+AYT;Fizik;Newton genel çekim yasası;367;14;4;4;40;10;0;10
+AYT;Fizik;Kepler yasaları;368;13;4;4;40;10;0;10
+AYT;Matematik;AYT polinomlar: katsayıdan bölme kanıtına;369;14;4;6;125;10;0;10
+AYT;Biyoloji;Fotosentez tepkimeleri: ışık ve Calvin bütçesi;370;14;4;4;65;10;0;10
+AYT;Biyoloji;Fotosentezin hızını belirleyen çevre ve genetik faktörler;371;15;6;4;85;12;12;0
+TYT;Felsefe;Felsefi okuma ve yazma: savdan gerekçeli metne;372;12;4;4;90;10;0;10
+TYT;Felsefe;İlk Çağ felsefesi: doğa, bilgi ve iyi yaşam;373;21;4;4;110;10;0;10
+TYT;Felsefe;Orta Çağ felsefesi: inanç, akıl ve tümeller;374;21;4;4;110;10;0;10
+AYT;Biyoloji;Kemosentez: elektronlardan organik maddeye;375;14;6;4;90;12;12;0
+AYT;Biyoloji;Oksijenli solunum: karbon, elektron ve ATP yolculuğu;376;18;6;4;110;14;14;0
+AYT;Biyoloji;Oksijensiz solunum: son alıcı ve elektron hesabı;377;14;6;4;90;12;12;0
+AYT;Kimya;Aktiflik: metal, iyon ve tepkimenin yönü;378;16;4;5;100;10;0;10
+AYT;Matematik;İkinci dereceden denklemler: kökten katsayıya;379;18;7;6;100;14;14;0
+AYT;Matematik;Karmaşık sayılar: cebir ve düzlem birlikte;380;16;6;6;90;12;12;0
+AYT;Kimya;Elektrokimyasal piller: elektronun ve iyonun yolu;381;17;4;4;110;10;10;0
+AYT;Kimya;Pil gerilimi ve derişim pilleri: oran değişince yön değişir;382;15;4;4;115;10;10;0
+AYT;Kimya;Elektroliz: dış enerji, doğru ürün ve doğru elektrot;383;15;4;4;115;10;10;0
+AYT;Fizik;Basit harmonik hareket;384;18;6;4;65;10;10;0
+TYT;Türkçe;Paragrafta anlatım biçimleri;385;18;4;4;100;15;15;0
+TYT;Felsefe;Rönesans felsefesi;386;16;4;4;100;10;10;0
+TYT;Felsefe;15–17. yüzyıl: insan, yöntem, kesinlik ve hukuk;387;28;6;6;120;15;15;0
+TYT;Felsefe;Aydınlanma felsefesi;388;18;4;4;120;10;10;0
+TYT;Felsefe;18–19. yüzyıl: akıl, deney, birey ve devlet;389;29;6;6;130;15;15;0
+AYT;Kimya;Faraday yasaları: yükten maddeye, koşulları koruyarak;390;15;4;4;115;10;10;0
+AYT;Kimya;Korozyon ve katodik koruma: yüzeydeki redoksu yönet;391;15;4;4;110;10;10;0
+AYT;Kimya;Karbon kimyasına giriş;392;21;6;4;70;12;12;0
+AYT;Kimya;Basit ve molekül formülü;393;18;9;4;70;16;16;0
+AYT;Kimya;Hibritleşme;394;18;6;4;75;12;12;0
+AYT;Kimya;Molekül geometrisi;395;21;7;4;90;12;12;0
+TYT;Felsefe;Çağdaş felsefe: yöntem, insan, bilim ve değer;396;35;8;8;160;20;20;0
+AYT;Matematik;Eşitsizlikler: işaret, aralık ve ortak koşul;397;16;7;6;100;14;14;0
+AYT;Matematik;Parabol: denklemden şekle, şekilden probleme;398;20;9;8;125;16;16;0
+AYT;Fizik;Su dalgalarında kırınım;399;13;4;4;42;10;10;0
+AYT;Fizik;Su dalgalarında girişim;400;15;5;4;55;10;10;0
+AYT;Matematik;Trigonometri: çember, dalga ve denklem;401;35;14;8;210;24;24;0
+AYT;Kimya;Alkanlar;402;28;10;4;110;18;18;0
+AYT;Biyoloji;Fermantasyon: karbon, ATP ve NAD⁺ döngüsü;403;12;4;4;48;12;12;0
+AYT;Biyoloji;Fotosentez ve solunum: iki akı, bir madde bütçesi;404;13;4;4;50;12;12;0
+AYT;Biyoloji;Meristem: bölünme, uzama ve kalınlaşma;405;13;4;4;55;12;12;0
+AYT;Biyoloji;Temel doku: üretim, depo ve destek;406;13;4;4;52;12;12;0
+AYT;Biyoloji;İletim doku: su yolu ve kaynak–havuz akışı;407;13;4;4;58;12;12;0
+TYT;Din Kültürü;Bilgi ve inanç;408;22;4;4;130;15;15;0
+TYT;Din Kültürü;Din ve İslam: kaynaktan inanç ve davranışa;409;20;4;4;95;14;14;0
+TYT;Din Kültürü;İslam ve ibadet: niyet, yükümlülük ve ahlak;410;22;4;4;115;18;18;0
+TYT;Din Kültürü;Ahlak ve değerler: ilkeden somut davranışa;411;24;4;6;105;16;16;0
+AYT;Kimya;Sikloalkanlar ve izomerlik: bağı say, yapıyı karşılaştır;412;18;5;5;55;15;15;0
+AYT;Kimya;Alkenler: çift bağdan ürüne, yapıdan izomere;413;18;5;5;65;15;15;0
+TYT;Din Kültürü;Gençlik ve değerler: kişilik, erdem ve kültür;414;16;4;4;100;14;14;0
+TYT;Din Kültürü;Gönül coğrafyamız: şehirler, eserler ve bilgi yolları;415;23;4;4;120;18;18;0
+AYT;Matematik;Toplam, fark ve yarım açı: bir dönüşümü parçalara ayır;416;14;6;4;100;14;14;0
+AYT;Fizik;Işık teorileri: kanıttan girişim ve kırınıma;417;19;6;6;85;15;15;0
+AYT;Fizik;Doppler etkisi: dalga cephelerinden gözlenen frekansa;418;14;6;6;60;12;12;0
+AYT;Fizik;Elektromanyetik dalgalar: alan, tayf ve enerji;419;16;6;6;75;12;12;0
+AYT;Fizik;Atom modelleri: deneyden enerji düzeylerine;420;22;6;6;100;18;18;0
+AYT;Matematik;Trigonometrik denklemler: bütün kökleri koru;421;16;6;4;110;16;16;0
+TYT;Türkçe;Paragrafta soru–cevap: yanıtın odağından doğru soruya;422;18;6;6;110;15;15;0
+TYT;Türkçe;Paragrafta röportaj: iki sesi ve takip sorusunu izle;423;20;6;6;120;15;15;0
+AYT;Biyoloji;Bitkisel örtü doku: koruyan yüzey, denetlenen geçit;424;18;6;6;48;18;18;0
+AYT;Kimya;Alkinler: üçlü bağı adım adım dönüştür;425;19;5;5;65;15;15;0
+AYT;Kimya;Arenler: benzen halkasının gerçek bağ yapısı;426;17;5;5;55;15;15;0
+AYT;Kimya;Fonksiyonel gruplar ve alkoller: çevreyi oku, özelliği açıkla;427;25;5;5;85;15;15;0
+AYT;Matematik;Logaritma: üssü ara, koşulu koru;428;18;6;4;125;12;12;0
+TYT;Din Kültürü;Din ve hayat: aile, sanat, çevre ve haklar;429;25;4;4;125;20;20;0
+TYT;Din Kültürü;Hz. Muhammed ve gençler: kişi, görev ve örnekliğin anlamı;430;22;6;6;105;18;18;0
+TYT;Din Kültürü;Allah ve insan ilişkisi: inanç, sorumluluk ve anlam;431;23;6;6;110;18;18;0
+TYT;Din Kültürü;İslam düşüncesinde mezhepler: neden, alan ve yöntem;432;23;6;6;130;20;20;0
+TYT;Din Kültürü;Kur’an’a göre Hz. Muhammed: şahsiyet, görev ve örneklik;433;20;6;6;110;18;18;0
+AYT;Biyoloji;Bitkisel kök: büyüme bölgeleri ve seçici giriş yolu;434;20;6;6;54;20;20;0
+AYT;Matematik;Diziler: kuraldan terime, terimden toplama;435;16;6;4;115;12;12;0
+AYT;Matematik;Limit ve süreklilik: yaklaşımı değerden ayır;436;18;6;4;140;14;14;0
+TYT;Din Kültürü;Kur’an’da bazı kavramlar: niyet, eylem ve istikamet;437;24;6;6;120;20;20;0
+TYT;Din Kültürü;İnançla ilgili meseleler: iddia, bilgi ve gerekçe;438;25;6;6;135;22;22;0
+TYT;Din Kültürü;Dünya ve ahiret: anlam, evreler ve uğurlama;439;20;6;6;110;20;20;0
+TYT;Türkçe;Aynı parçaya bağlı çoklu sorular: her köke ayrı kanıt;440;18;6;6;120;20;20;0
+TYT;Türkçe;Paragrafta konu: ortak odağı ve kapsamı bul;441;18;6;6;110;20;20;0
+AYT;Biyoloji;Bitki gövdesi: düğümden iletim halkasına;442;18;6;6;100;18;18;0
+AYT;Biyoloji;Yaprak: dokular arasında ışık, gaz ve su yolu;443;19;6;6;95;18;18;0
+AYT;Biyoloji;Bitkilerde taşıma: zardan su sütununa, kaynaktan havuza;444;22;6;6;125;22;22;0
+AYT;Biyoloji;Stoma, nodül ve mikoriza: denetlenen geçit ve kök ortakları;445;18;6;6;105;20;20;0
+AYT;Fizik;Bigbang teorisi ve atomaltı parçacıklar;446;20;6;6;115;18;18;0
+AYT;Fizik;Radyoaktivite;447;18;6;6;110;18;18;0
+AYT;Matematik;Türev alma kuralları: yapıyı gör, katkıyı kur;448;18;10;4;105;18;18;0
+AYT;Matematik;Türev: kirişten teğete;449;19;12;8;75;19;19;0
+AYT;Fizik;Modern fizik izafiyet teorisi;450;18;6;6;105;16;16;0
+AYT;Fizik;Siyah cisim ışıması ve foton;451;16;6;6;95;16;16;0
+AYT;Fizik;Fotoelektrik olay;452;18;6;6;115;18;18;0
+AYT;Biyoloji;Bitkisel hormonlar: doz, hedef doku ve ortak yanıt;453;18;6;6;100;18;18;0
+AYT;Biyoloji;Bitkilerde hareket: algılama, sinyal ve farklı uzama;454;18;6;6;105;18;18;0
+AYT;Biyoloji;Fotoperiyodizm: kesintisiz geceyi zaman çizgisinde oku;455;16;6;6;95;16;16;0
+AYT;Biyoloji;Çiçeğin yapısı: organ takımları ve üreme hücrelerinin kökeni;456;20;6;6;115;20;20;0
+AYT;Biyoloji;Tozlaşma: polenin kaynağı, taşıyıcı ve uyumluluk kapıları;457;18;6;6;100;18;18;0
+TYT;Din Kültürü;Yahudilik ve Hristiyanlık: tarih, metin ve ritüel;458;26;6;6;125;20;20;0
+TYT;Din Kültürü;İslam ve bilim: bilgi, kurum ve katkı;459;25;6;6;145;20;20;0
+TYT;Din Kültürü;Anadolu’da İslam: süreç, şahsiyet ve kurum;460;24;6;6;130;20;20;0
+AYT;Kimya;Alkollerin eldesi ve kimyasal tepkimeleri;461;20;5;5;85;20;20;0
+AYT;Kimya;Eterler;462;18;5;5;70;15;15;0
+AYT;Kimya;Aldehit ve ketonlar;463;22;5;5;95;20;20;0
+AYT;Kimya;Karboksilik asitler;464;22;5;5;95;20;20;0
+AYT;Kimya;Esterler;465;20;5;5;90;20;20;0
+AYT;Fizik;Compton Saçılması ve De Broglie Dalga Boyu;466;18;6;6;105;18;18;0
+AYT;Fizik;Modern fiziğin teknolojideki uygulamaları;467;25;6;6;130;25;25;0
+TYT;Türkçe;Metin, tablo ve görsel: veriyi kapsamıyla yorumla;468;18;6;6;130;20;20;0
+AYT;Matematik;Belirsiz integral: değişimden fonksiyon ailesine;469;14;6;4;95;16;16;0
+AYT;Matematik;Belirli integral: yönlü birikim ve uç farkı;470;14;6;4;95;16;16;0
+AYT;Matematik;Alan ve Riemann: şerit, sınır ve geometrik büyüklük;471;15;6;4;105;16;16;0
+AYT;Kimya;Enerji Kaynakları ve Bilimsel Gelişmeler;472;24;6;6;100;25;25;0
+TYT;Din Kültürü;İslam düşüncesinde tasavvufi yorumlar;473;29;6;6;140;20;20;0
+TYT;Din Kültürü;Güncel dinî meseleler;474;31;6;6;150;20;20;0
+TYT;Din Kültürü;Hint ve Çin dinleri;475;34;6;6;150;20;20;0
+AYT;Kimya;Sürdürülebilirlik ve Geri Dönüşüm;476;22;6;6;95;20;20;0
+AYT;Kimya;Nanoteknoloji ve Bilimsel Gelişmeler;477;18;6;6;85;20;20;0
+AYT;Biyoloji;Bitkilerde Döllenme ve Çimlenme;478;24;8;8;100;30;30;0
+AYT;Biyoloji;Canlılar ve Çevre;479;24;8;8;100;31;31;0
+TYT;Geometri;Üçgen ve paralelkenarda alan;;10;6;4;50;5;5;0

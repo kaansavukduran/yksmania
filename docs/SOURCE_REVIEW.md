@@ -8,6 +8,9 @@ Yedi bilinen soru ve bağlı üç rehber yalnız gösterimde netleşir: sıfır 
 
 Ham 480 rehber ve önceki 477 görünüm aynıdır; değişen üç rehberin sekiz görünür alanı dar koşullarla denetlenir. Bu kayıt bütün arşivin yeniden bilimsel olarak okunduğu veya bütün alt kazanımların tamamlandığı iddiası değildir. Son gerçek tarayıcı, paket ve yayın kabulü QA kaydındadır.
 
+
+Bu kaynağın teknik yayın kapıları [1.743 birim/1.242 tarayıcı CI](https://github.com/kaansavukduran/yksmania/actions/runs/43901085247), gerçek Windows/Linux, AppImage ve yayımlanmış Pages ile kapandı. [Geometri kapsam incelemesi](GEOMETRY_SCOPE.md), kaynak–alt beceri tamlığının hâlâ açık olduğunu gösterir; bu yeni PDF okuması değildir.
+
 ---
 
 ## Önceki kaynak ve kabul kayıtları

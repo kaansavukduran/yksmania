@@ -1,0 +1,13 @@
+﻿YKSMania 0.18.2 — Sayısal konu kapsamı
+
+CSV, uygulamadaki 480 rehberi gösterir. Planın 479 konu başlığı öğrenme sırasıyla listelenir. Ek “Üçgen ve paralelkenarda alan” rehberi planın dışındadır; öğrenme sırası hücresi boş bırakılmıştır.
+
+34 ek soru seti, uygulamadaki doğrulanmış aynı konu bağıyla ilgili rehberin sayısına eklenmiştir. Her soru yalnız bir kez sayılır. Toplam 5883 soru vardır: 3243’ünde ayrıntılı, 2640’ında kısmi yardım bulunur.
+
+“Ayrıntılı Yardım”, uygulamanın tam çözüm rehberini bulabildiği soruları; “Kısmi Yardım”, daha sınırlı ipucu ve açıklamayla kalan soruları sayar. Bu sayılar öğrenci başarısı veya içerik kalitesi ölçüsü değildir. Bölüm, çözümlü örnek ve hatırlama sayıları rehberlerin yapısal sayımlarıdır.
+
+Tahmini dakika, planlama tahminidir; okunmuşluk veya öğrenme kaydı değildir. Dosya MEB alt kazanımlarının tümünün tamamlandığını ya da bütün dış kaynakların işlendiğini göstermez.
+
+Bu dışa aktarım, mevcut uygulama içeriğinin sayım dökümüdür. Dışa aktarım sırasında yeni içerik yazılmadı ve yeni kaynak okuması yapılmadı.
+
+Kodlama: UTF-8 BOM. Ayırıcı: noktalı virgül (;). Başlık satırından sonra 480 veri satırı vardır. Sayı hücreleri tam sayıdır. Hesap tablosunda formül gibi yorumlanabilecek metinler gerekirse apostrofla korunur.

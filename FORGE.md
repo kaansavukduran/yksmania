@@ -1,3 +1,30 @@
+# 0.18.2 doğrulanmış yayın — 16 Kasım 2026
+
+30 konudaki 300 mevcut sorunun öğretici çözümü genişletildi. 510 ön bilgi paragrafı, 300 yöntem, 900 çözüm adımı, 1.500 seçenek gerekçesi, 300 sık hata ve 300 sonuç denetimi eklendi. Yeni soru veya yeni model eklenmedi. Matematikte ölçek; dalgada harmonik koşul; bitkilerde yaşam döngüsü; virüslerde kapsid stoku açıklaştırıldı.
+
+| Alan | Bu turun gerçek sonucu |
+| --- | --- |
+| 1. Kod | Altı 030 yardım kataloğu, [çözümleyici](src/learning/questionHelp.ts), [soru görünümleri](src/domain/questionPresentation.ts) ve [rehber görünümleri](src/learning/guidePresentation028.ts) geliştirildi. Eski kimlikler, anahtarlar, seçenekler ve ham içerik korunur. |
+| 2. Konular | 480 yerleşik rehber; 479 sıralı çalışma başlığının tamamında anlatım ve soru bağlantısı var. Bu, 341 katalog başlığının veya bütün MEB alt becerilerinin tamamlandığı anlamına gelmez. [Geometri açıkları](docs/GEOMETRY_SCOPE.md) ayrıca denetlendi. |
+| 3. Kopya kağıtları | 480 yerleşik kağıt korunur; bu tur yeni kağıt eklenmedi. Öğrenci PDF veya kaynak yüklemez. |
+| 4. Sorular | Yeni soru: 0. Mevcut 300 kartın bütün yeni çözüm metinleri bağımsız kaynak incelemesinden geçti. Toplam 5.883 özgün soru: 3.243 ayrıntılı, 2.640 kısmi yardım. Bütün eski anahtarların bu tur yeniden bilimsel olarak çözüldüğü iddia edilmez. |
+| 5. Denemeler | TYT 120 soru/165 dakika, AYT Sayısal 80 soru/180 dakika ve 15 branş pratiği korunur. Öğrenme yardımı mevcut kâğıdın kendi içeriğine bağlıdır; eski yanıt, işaret ve süre değişmez. Bütün resmî ÖSYM arşivi tamamlanmadı. |
+| 6. İnteraktif modeller | Yeni model: 0. Mevcut 93 aile/akışın çevrimdışı ve yeniden açılış kabulleri tamamlandı; mevcut görsel modeller korunur. |
+| 7. Pedagoji | Gerekli bilgi → yöntem → tek tek adım → gerekçeli çözüm ayrı açılır. Her seçenek özgül açıklanır; hata ve sonuç kontrolü ayrıca sunulur. Yardım açmak, süre veya keşif bağımsız doğru/ustalık/XP sayılmaz. |
+| 8. Tasarım | 320 px, arayüz yüzde 200/yazı yüzde 150, gerçek Lexend, dokunma ve azaltılmış hareket kontrolleri geçti. Matematik formülündeki eksik ölçek çarpanı düzeltildi; favicon var olan simgeye bağlandı. Yeni tema veya karakter eklenmedi. |
+| 9. Testler | [Tam CI](https://github.com/kaansavukduran/yksmania/actions/runs/43901085247): 1.743 birim ve 1.242 tarayıcı PASS; gerçek paketli Windows/Linux PASS. Vercel’de aynı runtime üzerinde 17 hedef akış; Pages prefix ve gerçek yayın üzerinde 93’er akış; yayımlanan AppImage üzerinde özgün 93 akış geçti. İlk hatalar ve kabul sınırları [QA](docs/QA.md) içinde korunur. |
+| 10. GitHub | Yayın kaynağı [19590e2](https://github.com/kaansavukduran/yksmania/commit/19590e28b23e091a00610526f7cd8201d278765a), dal forge/guidance-030; main üzerinde doğrulandı. Son teslim kaydı yalnız belge değişikliğidir. |
+| 11. Yayın | [Vercel](https://yksmania.vercel.app) ve [Pages](https://kaansavukduran.github.io/yksmania/) 0.18.2; iki kökenin 25’er çalışma dosyası normal TLS ile sabit derlemeyle eşleşti. [Dört masaüstü indirmesi](https://github.com/kaansavukduran/yksmania/releases/tag/v0.18.2-alpha.1), başarılı CI çıktılarından yeniden derlenmeden yayımlandı. |
+| 12. Sonraki iş | Önce [temel geometri anlatımı ve alt beceri açıkları](docs/GEOMETRY_SCOPE.md); ardından kalan 2.640 kısmi yardım, diğer kaynak–alt beceri eşlemesi, doğrulanmış video/resmî arşiv ve fiziksel kurulum/yükseltme kabulleri. Sonraki 300 kart yalnız envanterdir. |
+
+[Konu bazlı CSV](docs/CONTENT_INVENTORY.csv) 480 rehberin bölüm, örnek, hatırlama ve bağlı soru/yardım sayılarını verir; [açıklaması](docs/CONTENT_INVENTORY.txt) sınırlarını belirtir. Sayı, öğrenci başarısı veya öğretim kalitesi ölçüsü değildir.
+
+[Pages hattı](https://github.com/kaansavukduran/yksmania/actions/runs/43911524726) ve [yayın işi](https://github.com/kaansavukduran/yksmania/actions/runs/43911558114) başarılıdır. Altı yayın varlığı vardır; manifest beş dosyayı bağlar ve beş GitHub varlık özeti eşleşir. Gerçek AppImage ayrıca indirilip hashlenerek bu VM’de extract-and-run ile çalıştırıldı; paketli sürüm, arayüz ve çevrimdışı yeniden açılış doğrulandı. Bu, temiz OS kurulumu, Windows portable taşıma veya native sürümler arası yükseltme deneyi değildir. Android imzası kullanıcı isteğiyle ertelendi; yeni APK yayımlanmadı.
+
+---
+
+## Önceki kaynak ve kabul kayıtları
+
 # 0.18.2 kaynak adayı — 300 eski soruda öğretici çözüm
 
 30 konudaki 300 eski karta 510 ön bilgi paragrafı, 300 yöntem, 900 ilerleyen adım, 1.500 şık gerekçesi, 300 sık hata ve 300 sonuç denetimi eklendi. Dağılım: matematik 50, fizik 40, kimya 50, biyoloji 100, Türkçe 10, tarih 50. Gerçek çözümleyicide 3.243 ayrıntılı ve 2.640 kısmi yardım vardır. Ham 5.883 soru, 514 öğretim kaydı, 480 ayrıntılı rehber/480 özet ve 479 sıralı başlık korunur.

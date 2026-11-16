@@ -1,4 +1,4 @@
-# 0.18.2 kaynak adayının ölçülen kapsamı
+# 0.18.2 yayınının ölçülen kapsamı
 
 | Ölçüm | Kapsam |
 | --- | --- |
@@ -13,6 +13,9 @@
 | Mevcut deneme biçimleri | TYT 120/165 dk; AYT Sayısal 80/180 dk; 15 branş |
 
 Başlık eşleşmesi her Drive/MEB alt kazanımının veya bütün resmî sınav arşivinin tamamlandığı anlamına gelmez. Banka özgün sorulardan oluşur; resmî ÖSYM sorusu diye sunulmaz. Öğrenci PDF veya ders kaynağı yüklemez. Yeni 300 kartın kaynak incelemesi, TypeScript, 1.743 birim ve üretim derlemesi geçti; yerel UI ve son native/prefix koşuları da geçti. Tam CI/paket/yayın kapıları QA'da ayrı gösterilir.
+
+
+[Son tam CI](https://github.com/kaansavukduran/yksmania/actions/runs/43901085247), [Pages](https://github.com/kaansavukduran/yksmania/actions/runs/43911524726) ve [masaüstü yayını](https://github.com/kaansavukduran/yksmania/releases/tag/v0.18.2-alpha.1) doğrulandı. [CSV envanteri](CONTENT_INVENTORY.csv) 480 rehberin sayısal dökümüdür; [açıklama](CONTENT_INVENTORY.txt) sınırlarını belirtir. Bu sayım bütün MEB kazanımlarının tamamlandığını göstermez. [Geometri incelemesi](GEOMETRY_SCOPE.md), konu öğretiminde öncelikli kalan somut açıkları kaydeder.
 
 ---
 

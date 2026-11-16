@@ -1,3 +1,23 @@
+# 0.18.2 son yayın kabulü — 16 Kasım 2026
+
+Yayın kaynağı [19590e28](https://github.com/kaansavukduran/yksmania/commit/19590e28b23e091a00610526f7cd8201d278765a). [CI 43901085247](https://github.com/kaansavukduran/yksmania/actions/runs/43901085247) tamamlandı: 191 dosyada 1.743/1.743 birim, ilk tamamlanan tam koşuda 1.242/1.242 tarayıcı (46,2 dakika). Gerçek paketli Windows ve Linux’ta özgün masaüstü runner’ı geçti; iki platformda renderer hatası 0. Android işi açık kapsam gereği atlandı. CI araçlarının deprecation uyarıları uygulamanın console ölçümüyle karıştırılmaz.
+
+Yerel UI kabulü ilk 17 ve son düzeltilmiş derlemedeki iki hedef vakanın birleşimidir; tek son yerel 17 koşusu denmez. Son yerel Electron ve prefix koşuları ayrıca 93’er aileyi geçti. Vercel’de gerçek 17/17 HTTPS koşusu 0a670a57 kaynağında yapıldı; 19590e28 yalnız eski bitki testi beklentisi ve belge düzeltmesidir, 348 runtime girdisi ve iki sabit derleme byte eşittir. 19590 kaynağının 25 üretim dosyası normal TLS ile son yerel derlemeyle eşleşti. Public 17’de page exception ve uygulama console hata/uyarı 0; ölçülen dokuz axe raporunda bütün seviyelerde ihlal 0. Chromium’a yalnız ortamın verilen CA anahtarı tanıtıldı; genel sertifika doğrulaması kapatılmadı. Bu, bütün 1.242 testin Vercel’de tekrarlandığı veya tam WCAG sertifikası olduğu iddiası değildir.
+
+[Otomatik Pages 43911524726](https://github.com/kaansavukduran/yksmania/actions/runs/43911524726) kaynak 19590e28 üzerinde build/deploy/verify-published PASS verdi. Prefix derlemesi ve yayımlanmış köken ayrı ayrı 93 benzersiz çevrimdışı/reload akışını geçti; worker ve manifest /yksmania/ altındadır, rendererErrors ve missing boş. Yayındaki 25 dosya normal TLS ile sabit prefix derlemesiyle eşleşti. Normal/prefix derlemeler 271 gerekli cache varlığı içerir; toplam dosya sayısı 281’dir. Gerekli byte toplamları normal 26.760.629, prefix 26.760.478; hiçbir tek dosya 5 MiB’ı aşmaz.
+
+[Release 43911558114](https://github.com/kaansavukduran/yksmania/actions/runs/43911558114) dört masaüstü dosyası ve iki kanıt varlığı yayımladı; gerçek etiket, verified-run.json ve successful main SHA aynıdır. Beş manifest kaydı GitHub varlık SHA-256 değerleriyle eşleşti; manifest kendisini hashlemez. Yayımlanan 145.659.081 byte AppImage ayrıca indirildi; çalıştırmadan önce/sonra SHA-256 569aab3b2b5824cce26d664d499266b06ba6625be29f8a4e05a11f726a58b5f7 aynıydı. Özgün native 93 akış ilk koşuda PASS, renderer hatası 0. Ayrı kısa readonly profilde gerçek sidebar/version.json/app.getVersion 0.18.2 ve app.isPackaged ölçüldü; korunmuş veri ve reload ayrıca doğrulandı. Test edilen AppImage, bu VM’de extract-and-run yoluyla çalıştırıldı. Temiz işletim sistemi kurulumu, Windows portable dosyasının taşınması, fiziksel Android ve native iki-sürüm kurulum/yükseltmesi bu kabul değildir.
+
+Gerçek yerel aynı-köken 0.18.1→0.18.2 web güncellemesi üç ham IDB store’unu, belge/PDF baytlarını, notları, tekrar tarihlerini, yarım çalışmalar ve eski kâğıtları korudu. Aktivasyonda otomatik state yazımı 0. İlk harness denemesi iki güncelleme düğmesiyle eşleştiğinden aktivasyondan önce durdu; gerçek Settings main seçicisiyle taze profilde bütün akış geçti. Bu public CDN, fiziksel veya native yükseltme deneyi değildir.
+
+İlk yerel tam birim turundaki 1.741 PASS/1 timeout kaydı, izole PASS, ikinci tam 1.742 PASS ve ölçek regresyonu eklenmiş son 1.743 PASS kayıtları korunur; süre artırılmadı. Tamamlanmamış eski CI 43896971064, bitkiler testinin eski raw kökü beklediği kanıtlandığı için iptal edildi. Beklenti onaylı gösterime bağlandı; aynı test eski beklentiyle FAIL, yeni beklentiyle PASS verdi; test gövdesi ve süreleri değişmedi. Tam yayın kanıtı yeni 43901085247’dir. Önceki aralıklı boş web başlangıcının kesin nedeni hâlâ kanıtlanmadı; son başarılar kök neden onarımı diye sunulmaz.
+
+300 yeni yardımın bağımsız kaynak incelemesi, 3.243/2.640 çözüm sayımı ve ham 5.883 sorunun korunumu teknik kabule ek olarak denetlendi. Bu tur bütün 480 rehber veya bütün Drive/MEB arşivi baştan bilimsel olarak okunmadı. [Geometri kapsam incelemesi](GEOMETRY_SCOPE.md) içerik tamlığının açık kaldığını somutlaştırır. Android imzası ertelendi; yeniden kullanıcı adımı istenmedi.
+
+---
+
+## Önceki kaynak ve kabul kayıtları
+
 # 0.18.2 adayının kabul kaydı
 
 Altı paketin 300 kartı bağımsız tam içerik incelemesinden geçti; gerçek küresel çözümleyici 3.243 ayrıntılı / 2.640 kısmi yardım verir. Bağımsız 5.400 gerçek QuestionHelp renderi ve 1.800 buton callback'i eski 2.943 yardımın bütün panellerini korudu. Ham 5.883 soru, 514 öğretim kaydı, 480 rehber ve 479 sıralı başlık aynıdır. On iki `passage: undefined` alanı, nesne alanları ve referans topolojisiyle ayrıca karşılaştırıldı. 19 dar soru görünümü ve bağlı üç rehberin atomik koşulları denetlendi.
