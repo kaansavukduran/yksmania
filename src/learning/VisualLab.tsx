@@ -1,4 +1,5 @@
 import { legacy026Packs, legacy026QuestionIds } from "./legacy026";
+import { geometryFoundation031Ids } from "../data/supplementalTopics031";
 import { forge025MathTopics } from "./forge025Math";
 import { forge025ChemistryTopics } from "./forge025Chemistry";
 import { forge025HumanitiesTopics } from "./forge025Humanities";
@@ -92,6 +93,7 @@ import { forge093BiologyTopics } from "./forge093Biology";
 import { forge093TurkishTopics } from "./forge093Turkish";
 import { forge093HistoryTopics } from "./forge093History";
 import { lazy, Suspense, type ComponentType } from "react";
+const GeometryFoundation031 = lazy(() => import("./GeometryFoundation031Lab"));
 import { useApp } from "../store";
 const PeriodicReasoning = lazy(() => import("./PeriodicReasoning"));
 const WorldPower = lazy(() => import("./WorldPowerOttomanLab"));
@@ -444,7 +446,9 @@ export function VisualLab({ id }: { id: string }) {
   return (
     <Suspense fallback={<p role="status">{t("loading")}</p>}>
       <>
-        {Source025Lab ? (
+        {(geometryFoundation031Ids as readonly string[]).includes(id) ? (
+          <GeometryFoundation031 key={id} id={id} />
+        ) : Source025Lab ? (
           <Source025Lab key={id} lessonId={id} />
         ) : Source024Lab ? (
           <Source024Lab key={id} lessonId={id} />

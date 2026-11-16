@@ -1,3 +1,4 @@
+import { setThemePreference } from "./helpers/theme";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 test.use({ hasTouch: true, locale: "tr-TR" });
@@ -66,7 +67,7 @@ test("YKS-016 full-width theory and separate ready cheatsheets retain notes offl
   await nav(page, "Bugün");
   await expect(
     page.getByRole("region", { name: "Konu planı", exact: true }),
-  ).toContainText("0/479");
+  ).toContainText("0/485");
   await expect(page.locator(".stat-number").first()).toHaveText("0");
 });
 test("YKS-016 guides explain steps and keep topic/question cards padded; completed practice offers verified OSYM references without material imports", async ({
@@ -156,7 +157,7 @@ test("YKS-016 native sheets and long explanations reflow at 320px, 200% UI and 1
 }) => {
   await page.goto("/");
   await nav(page, "Ayarlar");
-  await page.getByLabel("Tema", { exact: true }).selectOption("light");
+  await setThemePreference(page, "light");
   await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
   await page.getByLabel("Yalnızca yazı boyutu %", { exact: true }).fill("150");
   await page.getByRole("switch", { name: /Aion animasyonu/ }).uncheck();
@@ -255,5 +256,5 @@ test("guided study advances meaningful sections, keeps its place and notes offli
   await expect(page.locator(".stat-number").first()).toHaveText("0");
   await expect(
     page.getByRole("region", { name: "Konu planı", exact: true }),
-  ).toContainText("0/479");
+  ).toContainText("0/485");
 });

@@ -1,4 +1,4 @@
-﻿Sınav;Ders;Konu;Öğrenme Sırası (479 Konu);Bölüm Sayısı;Çözümlü Örnek Sayısı;Hatırlama Sayısı;Tahmini Dakika;Bağlı Soru Sayısı;Ayrıntılı Yardım;Kısmi Yardım
+﻿Sınav;Ders;Konu;Öğrenme Sırası (485 Konu);Bölüm Sayısı;Çözümlü Örnek Sayısı;Hatırlama Sayısı;Tahmini Dakika;Bağlı Soru Sayısı;Ayrıntılı Yardım;Kısmi Yardım
 TYT;Kimya;Simyadan kimyaya: amaç, yöntem ve kanıt;1;9;4;4;40;5;5;0
 TYT;Kimya;Kimya disiplinleri: maddeye hangi soruyu soruyoruz?;2;6;3;3;35;5;5;0
 TYT;Kimya;Kimyanın sembolik dili: harf, alt indis ve katsayı;3;8;4;4;40;5;5;0
@@ -478,4 +478,10 @@ AYT;Kimya;Sürdürülebilirlik ve Geri Dönüşüm;476;22;6;6;95;20;20;0
 AYT;Kimya;Nanoteknoloji ve Bilimsel Gelişmeler;477;18;6;6;85;20;20;0
 AYT;Biyoloji;Bitkilerde Döllenme ve Çimlenme;478;24;8;8;100;30;30;0
 AYT;Biyoloji;Canlılar ve Çevre;479;24;8;8;100;31;31;0
+TYT;Geometri;Geometrinin dili: temel açılar ve paralellik;480;7;3;4;36;10;10;0
+TYT;Geometri;Üçgende açılar: iç açıdan yardımcı çizgiye;481;7;3;4;38;10;10;0
+TYT;Geometri;Üçgen eşitsizliği ve açı–kenar ilişkileri;482;7;3;4;40;10;10;0
+TYT;Geometri;Dik üçgen: Pisagor, özel açılar ve Öklid bağıntıları;483;8;4;4;46;10;10;0
+TYT;Geometri;Üçgenlerde eşlik ve benzerlik: eşleme, ölçek ve paralellik;484;8;3;4;47;10;10;0
+TYT;Geometri;Üçgende yardımcı elemanlar: açıortay, kenarortay ve merkezler;485;11;4;6;55;10;10;0
 TYT;Geometri;Üçgen ve paralelkenarda alan;;10;6;4;50;5;5;0

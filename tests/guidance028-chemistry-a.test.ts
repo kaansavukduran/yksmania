@@ -5,6 +5,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import rows from "../src/learning/guidance028ChemistryA.json";
 import { lessons } from "../src/domain/content";
+import { beforeFoundation031Registration } from "./helpers/accepted-content-031";
 import { clarifiedQuestionView } from "../src/domain/questionPresentation";
 import {
   questionGuidanceSchema,
@@ -181,10 +182,17 @@ describe("028 Chemistry A: immutable fifty original cards", () => {
       "src/learning/periodicDepth.ts":
         "ebfaf163bdb546607a4051544beb7de3fbdf9f2b2879f399b38fb991ba06be2d",
     };
-    for (const [file, hash] of Object.entries(files))
-      expect(sha(readFileSync(new URL(`../${file}`, import.meta.url)))).toBe(
-        hash,
-      );
+    for (const [file, hash] of Object.entries(files)) {
+      const source = readFileSync(new URL(`../${file}`, import.meta.url));
+      expect(
+        sha(
+          file === "src/domain/content.ts"
+            ? beforeFoundation031Registration(source.toString("utf8"))
+            : source,
+        ),
+        file,
+      ).toBe(hash);
+    }
   });
 
   it("binds the approved occupied-shell correction only to its exact known original", () => {

@@ -15,8 +15,10 @@ Follow docs/AIONIA_STANDARD.md, docs/ART_BIBLE.md and docs/QA.md.
 Run npm run check, npm test, npm run build and npm run test:e2e before delivery.
 Keep Forge handoff current. Distinguish web, native package and physical-device checks.
 
-Current product decisions: default editable exam date 2027-06-18, fixed theory
-planning deadline 2027-02-28. The 479 detailed headings follow the verified workbook
+Current product decisions: default editable personal preparation target 2027-02-28
+for new/unset profiles, fixed theory planning deadline 2027-02-28. Preserve every
+consciously saved target, including 2027-06-18; never present the personal target
+as an official examination date. The 479 detailed headings follow the verified workbook
 first-study order; personal workbook progress is not application progress. Keep
 manual theory/question records independent and do not award XP for checkmarks.
 The user's latest Aion art direction is reference-faithful pixel art with richer

@@ -94,6 +94,10 @@ import { periodicDepthTopics } from "../learning/periodicDepth";
 import { narrativeTopics } from "../learning/narratives";
 import details from "../data/detail-topics.json";
 import order from "../data/study-order.json";
+import {
+  geometryFoundation031TopicMap,
+  supplementalTopics031,
+} from "../data/supplementalTopics031";
 import { lessons } from "./content";
 import {
   THEORY_DEADLINE,
@@ -106,14 +110,22 @@ import { addDays, isBlocked, localDate } from "./scheduler";
 export type StudyMode = "theory" | "questions";
 const byId = new Map(details.map((t) => [t.id, t]));
 const lessonIndex = new Map(lessons.map((lesson) => [lesson.id, lesson]));
-export const studyTopics = order.map((id, i) => ({
+export const workbookStudyTopics = order.map((id, i) => ({
   ...byId.get(id)!,
   order: i + 1,
 }));
+export const studyTopics = [
+  ...workbookStudyTopics,
+  ...supplementalTopics031.map((topic, i) => ({
+    ...topic,
+    order: workbookStudyTopics.length + i + 1,
+  })),
+];
 export const studyTopicById = (id: string) =>
   studyTopics.find((t) => t.id === id);
 // Only reviewed one-to-one subject/topic associations; no fuzzy learning credit.
 export const lessonTopic: Record<string, string> = {
+  ...geometryFoundation031TopicMap,
   ...legacy026Topics,
   ...forge025MathTopics,
   ...forge025ChemistryTopics,

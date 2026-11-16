@@ -1,3 +1,4 @@
+import { setThemePreference } from "./helpers/theme";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 test.use({ locale: "tr-TR", hasTouch: true });
@@ -78,7 +79,7 @@ test("factorization pieces preserve area, signed factors preserve coefficients a
   ).toHaveAttribute("aria-pressed", "true");
   await expect(lab.getByRole("status")).toContainText("2. adım");
   await nav(page, "Ayarlar");
-  await page.getByLabel("Tema", { exact: true }).selectOption("light");
+  await setThemePreference(page, "light");
   await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
   await page.getByLabel("Yalnızca yazı boyutu %", { exact: true }).fill("150");
   await page.getByRole("switch", { name: /Aion animasyonu/ }).uncheck();

@@ -5,6 +5,17 @@ import { ArrowRight, RotateCcw } from "lucide-react";
 import { VisualLab } from "./VisualLab";
 import type { LessonGuide, WorkedExample } from "./guides/types";
 import { resolveGuideStep } from "./guides/position";
+import { geometryFoundation031Ids } from "../data/supplementalTopics031";
+
+const geometryVisualFirst = new Set<string>([
+  ...geometryFoundation031Ids,
+  "alan-donusumleri",
+  "noktanin-analitigi",
+  "dogrunun-analitigi",
+  "donusum-oteleme-donme",
+  "donusum-yansima-simetri",
+  "cemberin-analitigi",
+]);
 
 function moveToSection(id: string) {
   const heading = document.getElementById(id)?.querySelector("h2");
@@ -94,6 +105,10 @@ export function GuidedReading({
     guide.sections.length,
   );
   const guided = journey.guided;
+  // Geometry starts with the manipulable figure, so the first guided step
+  // explains the shape the learner is looking at. Saved section numbers do not
+  // change; the figure is positioned within the existing first section.
+  const visualSection = geometryVisualFirst.has(guide.id) ? 0 : 1;
   function setJourney(changes: Partial<typeof journey>) {
     persistJourney({
       ...changes,
@@ -254,7 +269,7 @@ export function GuidedReading({
                   </table>
                 </div>
               )}
-              {i === 1 && <VisualLab id={guide.id} />}
+              {i === visualSection && <VisualLab id={guide.id} />}
             </section>
           ),
       )}

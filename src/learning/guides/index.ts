@@ -1,4 +1,5 @@
 import { legacy026Guides } from "../legacy026";
+import { geometryFoundation031Guides } from "../geometryFoundation031";
 import { forge025MathGuides } from "../forge025Math";
 import { forge025ChemistryGuides } from "../forge025Chemistry";
 import { forge025HumanitiesGuides } from "../forge025Humanities";
@@ -123,6 +124,7 @@ import { shellsGuide } from "./shells";
 import { paragraphGuide } from "./paragraph";
 export const lessonGuides = new Map(
   [
+    ...geometryFoundation031Guides,
     ...legacy026Guides,
     ...forge025MathGuides,
     ...forge025ChemistryGuides,

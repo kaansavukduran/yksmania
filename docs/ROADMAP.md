@@ -1,3 +1,13 @@
+# 0.19.0 sonrası öncelikler
+
+Altı temel geometri ünitesi işlendi; bütün geometri kapsamı kapanmadı. Sıradaki kaynak paketi çokgenler/özel dörtgenler, ardından sentetik çember/daire ve katı cisimlerdir. Mevcut altı ünitede karışık iç–dış açıortay, katlama, 15°–75°–90° yükseklik ve bazı orta taban varyantlarının ayrı soru/etkileşimleri de tamamlanacaktır.
+
+Kalan 2.640 soru yardımının geliştirilmesi, kaynak alt becerisi eşlemesi, resmî soru arşivi ve fiziksel kurulum/sürüm yükseltme kabulü açık iş olarak sürer. Video belgelerindeki henüz bağlanmamış 25 birleşik TYT/AYT başlığı, uygun anlatım hazırlandıktan sonra eşleştirilecektir. Her yeni aktarım aynı özel kaynak defterine eklenir; okunmuş sayfa, tamamlanmış PDF sayılmaz.
+
+---
+
+## Önceki yol haritası
+
 # Sonraki Forge girişi
 
 0.18.2’nin 300 mevcut soru çözümü, 1.743 birim/1.242 tarayıcı, gerçek Windows/Linux, yayımlanan AppImage, Vercel ve Pages kabulleri kapandı. Mevcut kapsam 480 rehber/480 kağıt/5.883 soru; ayrıntılı yardım 3.243, kısmi yardım 2.640.

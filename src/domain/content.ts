@@ -2,6 +2,7 @@ import {
   legacy026QuestionLessons,
   legacy026TheoryIds,
 } from "../learning/legacy026";
+import { geometryFoundation031Lessons } from "../learning/geometryFoundation031";
 import { forge025MathLessons } from "../learning/forge025Math";
 import { forge025ChemistryLessons } from "../learning/forge025Chemistry";
 import { forge025HumanitiesLessons } from "../learning/forge025Humanities";
@@ -914,6 +915,7 @@ const baseLessons: Lesson[] = [
     ].map((question) => ({ ...question, passage: t(paragraphPassage) })),
   },
   ...visualLessons,
+  ...geometryFoundation031Lessons,
   ...aytLessons,
   ...introLessons,
   ...mathLessons,

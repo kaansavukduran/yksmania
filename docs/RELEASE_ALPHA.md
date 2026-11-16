@@ -1,13 +1,15 @@
-YKSMania 0.18.2 alpha 1 — Türkçe ve çevrimdışı YKS öğrenimi
+YKSMania 0.19.0 alpha 1 — görsel geometri ve konuya bağlı videolar
 
-480 ayrıntılı anlatım, 480 yerleşik kopya kağıdı ve 5.883 özgün soru bulunur. Çalışma sırasındaki 479 başlık anlatım ve bağımsız soruyla eşleşir. Öğrenci PDF veya ders kaynağı yüklemez.
+Altı yeni TYT geometri ünitesi 48 anlatım bölümü, 20 çözümlü örnek, 26 hatırlama ve 60 özgün beş seçenekli soru içerir. Açıları ve üçgen köşelerini değiştir; üçgenin oluşma koşullarını, Pisagor/Öklid’i, benzerlikte alanı ve dört merkezi şekil üzerinde incele. Sürükleme ve klavye sürgüleri vardır. Bilgi, yöntem, tek tek çözüm adımları, bütün seçeneklerin gerekçeleri ve sonuç denetimi ayrı açılır.
 
-30 konudaki 300 eski soruya 510 ön bilgi paragrafı, 300 yöntem, 900 çözüm adımı ve 1.500 seçenek gerekçesi eklendi. Ayrıntılı yardım 3.243 kartta hazır; 2.640 kartın bütün aşamaları hazırlanıyor. Bilgi, yöntem, tek tek adımlar, şık nedenleri, sık hata ve sonuç denetimi ayrı açılır. Matematikte ölçek, dalgalarda harmonik model, bitkilerde yaşam döngüsü ve virüslerde kapsid stoku açık koşullarla anlatılır. Önceki 2.943 ayrıntılı yardımın bütün panelleri korunur.
+Toplam 486 ayrıntılı anlatım, 486 yerleşik kopya kağıdı ve 5.943 özgün soru bulunur. 3.303 soruda tam yardım hazır; 2.640 kartın bütün yardım aşamaları hazırlanıyor. Yeni altı kopya kağıdı ders metninden ayrı kısa formül, koşul ve püf noktası özetleridir. Öğrenci PDF ya da kaynak yüklemez.
 
-TYT 120 soru/165 dakika, AYT Sayısal 80 soru/180 dakika ve 15 branş pratiği vardır. Öğrenme ve simülasyon ayrıdır; net=doğru−yanlış/4. Eski kâğıtlar, seçenek sıraları, anahtarlar, yanıtlar, notlar ve 3/7/21 tekrar tarihleri korunur. Yardım açmak veya süre geçirmek bağımsız öğrenme puanı oluşturmaz.
+485 dersin altında kaynaktan eşleştirilmiş önerilen ve alternatif videolar bulunur: 2.033 farklı URL. Bağlantıların güncel oynatılması bütün katalog için doğrulanmadı. Videolar internet gerektirir; uygulamadaki anlatım, şekiller, sorular ve kayıtlar çevrimdışı çalışır. Video açmak ve şekil değiştirmek öğrenme puanı oluşturmaz.
 
-Windows Setup/Portable ve Linux AppImage/DEB dosyaları başarılı main işinin test edilmiş çıktılarından yeniden derlenmeden yayımlanır. Ekteki verified-run.json kaynağı ve denetim işini, SHA256SUMS.txt dosyaları bağlar. Kaynak ve teknik kabul ayrıntıları repo QA kaydındadır.
+Yeni profillerin kişisel hazırlık hedefi 28 Şubat 2027’dir; eski kayıtlı tarihler korunur. Bu resmî YKS tarihi değildir. Mevcut temanın yanına Matrix eklendi. Eski 479 konu kimliği ve sırası, yanıtlar, seçenekler, notlar, yarım çalışmalar, başlanmış denemeler ve 3/7/21 tekrar tarihleri korunur. Altı yeni geometri başlığı ayrı ilerleme kaydı kullanır.
 
-Android imzası ertelendi; yeni APK bu yayının kapsamı değildir. Fiziksel cihaz, temiz kurulum, portable taşıma ve native sürümler arası veri koruyan kurulum ayrıca sınanacaktır. Başlık eşleşmesi, her Drive/MEB alt kazanımının ve bütün resmî ÖSYM soru arşivinin tamamlandığı anlamına gelmez.
+TYT 120 soru/165 dakika, AYT Sayısal 80 soru/180 dakika ve 15 branş pratiği vardır. Seçili üç PDF’nin 31 fiziksel sayfasında metin, 22 sayfasında görsel incelendi. Bu, bütün PDF arşivinin veya bütün MEB/ÖSYM kapsamının tamamlandığı anlamına gelmez. Ayrıntılı kaynak ilerlemesi docs/PDF_SOURCE_PROGRESS.md içindedir.
 
-Doğrulanmış kaynak: [19590e28](https://github.com/kaansavukduran/yksmania/commit/19590e28b23e091a00610526f7cd8201d278765a); [CI](https://github.com/kaansavukduran/yksmania/actions/runs/43901085247), [Pages](https://github.com/kaansavukduran/yksmania/actions/runs/43911524726), [yayın işi](https://github.com/kaansavukduran/yksmania/actions/runs/43911558114). 1.743 birim/1.242 tarayıcı ve gerçek paketli Windows/Linux kontrolleri geçti. Yayımlanan AppImage ayrıca indirilip SHA-256 ile doğrulanarak bu VM’de extract-and-run ile çalıştırıldı. [Konu envanteri](https://github.com/kaansavukduran/yksmania/blob/main/docs/CONTENT_INVENTORY.csv) ve [öncelikli geometri açıkları](https://github.com/kaansavukduran/yksmania/blob/main/docs/GEOMETRY_SCOPE.md) hazırdır.
+Windows Setup/Portable ve Linux AppImage/DEB dosyaları başarılı main işinin test edilmiş çıktılarından yeniden derlenmeden yayımlanır. verified-run.json kaynağı ve denetim işini, SHA256SUMS.txt dosyaları bağlar. Güncel teknik kabul ve yayın sonuçları repo QA kaydındadır.
+
+Android imzası ertelendi; yeni APK bu yayının kapsamında değildir. Fiziksel cihaz, temiz kurulum, portable taşıma ve native iki sürüm kurulumu ayrıca sınanacaktır.

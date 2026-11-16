@@ -1,3 +1,4 @@
+import { setThemePreference } from "./helpers/theme";
 import { units as olderUnits } from "./forge023-unit-cases";
 import { restoredCases } from "./forge024-restored-case-meta";
 import { test, expect, type Page, type Locator } from "@playwright/test";
@@ -369,7 +370,7 @@ for (const lesson of units) {
     });
     await page.goto("/");
     await nav(page, "Ayarlar");
-    await page.getByLabel("Tema", { exact: true }).selectOption("light");
+    await setThemePreference(page, "light");
     await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
     await page
       .getByLabel("Yalnızca yazı boyutu %", { exact: true })
@@ -635,7 +636,7 @@ test("anadoluda-islam: canonical long place name uses visible discretionary hyph
 }) => {
   await page.goto("/");
   await nav(page, "Ayarlar");
-  await page.getByLabel("Tema", { exact: true }).selectOption("light");
+  await setThemePreference(page, "light");
   await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
   await page.getByLabel("Yalnızca yazı boyutu %", { exact: true }).fill("150");
   await page.getByLabel("Yazı tipi", { exact: true }).selectOption("lexend");

@@ -277,22 +277,38 @@ export function Settings({
         </section>
         <section className="panel settings-panel appearance-panel">
           <h2>{t("appearance")}</h2>
-          <label className="field">
-            {t("theme")}
-            <select
-              aria-label={t("theme")}
-              value={state.settings.theme}
-              onChange={(e) =>
-                set("theme", e.target.value as SettingsType["theme"])
-              }
-            >
-              {(["dark", "light", "system", "contrast"] as const).map((v) => (
-                <option key={v} value={v}>
-                  {t(v)}
-                </option>
-              ))}
-            </select>
-          </label>
+          <div className="field">
+            <span>{t("theme")}</span>
+            <div className="theme-options" role="group" aria-label={t("theme")}>
+              <button
+                type="button"
+                className="theme-choice"
+                aria-pressed={state.settings.theme === "dark"}
+                onClick={() => set("theme", "dark")}
+              >
+                <span
+                  className="theme-swatch theme-swatch-current"
+                  aria-hidden="true"
+                />
+                {t("currentTheme")}
+              </button>
+              <button
+                type="button"
+                className="theme-choice"
+                aria-pressed={state.settings.theme === "matrix"}
+                onClick={() => set("theme", "matrix")}
+              >
+                <span
+                  className="theme-swatch theme-swatch-matrix"
+                  aria-hidden="true"
+                />
+                {t("matrixTheme")}
+              </button>
+            </div>
+            {!["dark", "matrix"].includes(state.settings.theme) && (
+              <small className="muted">{t("legacyThemeHelp")}</small>
+            )}
+          </div>
           <NumericControl
             label={t("uiScale")}
             value={state.settings.scale}

@@ -1,4 +1,9 @@
 import {
+  forge031SmokeCases,
+  runForge031SmokeCase,
+  assertForge031ProcessRestart,
+} from "./forge031-smoke-cases.mjs";
+import {
   forge026SmokeCases,
   runForge026SmokeCase,
   assertForge026ProcessRestart,
@@ -131,7 +136,7 @@ try {
   await navigate("Ayarlar");
   await expect(
     page.getByRole("textbox", { name: "Hedef sınav tarihi", exact: true }),
-  ).toHaveValue("18/06/2027");
+  ).toHaveValue("28/02/2027");
   await navigate("Bugün");
   await expect(
     page.getByRole("region", { name: "Konu planı", exact: true }),
@@ -676,10 +681,40 @@ try {
   for (const unit of forge025SmokeCases)
     forge025Snapshots.push(await runForge025SmokeCase(page, navigate, unit));
 
+  expect(forge031SmokeCases).toHaveLength(6);
+  const forge031Snapshots = [];
+  for (const unit of forge031SmokeCases)
+    forge031Snapshots.push(await runForge031SmokeCase(page, navigate, unit));
+
   expect(forge026SmokeCases).toHaveLength(8);
   const forge026Snapshots = [];
   for (const unit of forge026SmokeCases)
     forge026Snapshots.push(await runForge026SmokeCase(page, navigate, unit));
+
+  // The same common model families as Pages, recorded only after each flow
+  // completes. Desktop-only chemistry/math/question checks remain separate.
+  const commonModelFlowIds = [
+    ...continuationFamilies.map((unit) => unit.id),
+    ...additionalFamilies.map((unit) => unit.id),
+    ...[
+      forge014Snapshots,
+      forge015Snapshots,
+      forge016Snapshots,
+      forge017Snapshots,
+      forge018Snapshots,
+      forge019Snapshots,
+      forge020Snapshots,
+      forge021Snapshots,
+      forge022Snapshots,
+      forge023Snapshots,
+      forge024Snapshots,
+      forge025Snapshots,
+      forge026Snapshots,
+      forge031Snapshots,
+    ].flatMap((snapshots) => snapshots.map((item) => item.id)),
+  ];
+  expect(commonModelFlowIds).toHaveLength(99);
+  expect(new Set(commonModelFlowIds).size).toBe(99);
 
   const mathematics = [
     /Temel kavramlar: sayı, değer/,
@@ -807,6 +842,7 @@ try {
   await assertForge024ProcessRestart(page, navigate, forge024Snapshots);
   await assertForge025ProcessRestart(page, navigate, forge025Snapshots);
   await assertForge026ProcessRestart(page, navigate, forge026Snapshots);
+  await assertForge031ProcessRestart(page, navigate, forge031Snapshots);
   await navigate("Bugün");
   await expect(page.locator(".stat-number").first()).toHaveText("1");
   const dailyTheory = page
@@ -828,7 +864,7 @@ try {
   await navigate("Dünyam");
   await expect(
     page.getByRole("img", { name: /Genel konu çalışma ilerlemesi/ }),
-  ).toHaveAttribute("aria-label", /1\/479 konu/);
+  ).toHaveAttribute("aria-label", /1\/485 konu/);
   await expect(
     page.getByRole("region", { name: "TYT konu ağacı", exact: true }),
   ).toBeVisible();
@@ -1054,7 +1090,7 @@ try {
   await expect(page.locator(".stat-number").first()).toHaveText("0");
   await expect(
     page.getByRole("region", { name: "Konu planı", exact: true }),
-  ).toContainText("0/479");
+  ).toContainText("0/485");
   await openSheet("Hücre Organelleri");
   await expect(
     page.getByRole("textbox", { name: "Notun", exact: true }),
@@ -1295,6 +1331,13 @@ try {
       ),
       forge026SameProfileProcessRestart: "PASS",
       forge026ExplorationWithoutLearningCredit: "PASS",
+      forge031FamiliesOfflineHtmlStateAndReload: forge031Snapshots.map(
+        (item) => item.id,
+      ),
+      forge031SameProfileProcessRestart: "PASS",
+      forge031ExplorationWithoutLearningCredit: "PASS",
+      sharedOfflineModelFlowCount: commonModelFlowIds.length,
+      sharedOfflineModelFlowIds: commonModelFlowIds,
       forge025ExplorationWithoutLearningCredit: "PASS",
       forge024ExplorationWithoutLearningCredit: "PASS",
       forge022ExplorationWithoutLearningCredit: "PASS",

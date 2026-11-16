@@ -1,3 +1,4 @@
+import { setThemePreference } from "./helpers/theme";
 import { test, expect, type Page, type Locator } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import type { AppState } from "../../src/domain/model";
@@ -641,7 +642,7 @@ for (const lesson of lessons) {
       page.getByRole("heading", { name: "Bugün", exact: true }),
     ).toBeVisible();
     await nav(page, "Ayarlar");
-    await page.getByLabel("Tema", { exact: true }).selectOption("light");
+    await setThemePreference(page, "light");
     await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
     await page
       .getByLabel("Yalnızca yazı boyutu %", { exact: true })

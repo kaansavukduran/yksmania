@@ -1,3 +1,4 @@
+import { setThemePreference } from "./helpers/theme";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 test.use({ locale: "tr-TR" });
@@ -248,7 +249,7 @@ test("all five math models first open offline at 320px, keep large controls and 
   await nav(page, "Ayarlar");
   await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
   await page.getByLabel("Yalnızca yazı boyutu %", { exact: true }).fill("150");
-  await page.getByLabel("Tema", { exact: true }).selectOption("light");
+  await setThemePreference(page, "light");
   await expect(page.locator(".save-status")).toContainText(
     "Bu cihazda kaydedildi",
   );

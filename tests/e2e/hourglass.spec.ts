@@ -1,3 +1,4 @@
+import { setThemePreference } from "./helpers/theme";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { initialState } from "../../src/domain/model";
@@ -145,7 +146,7 @@ test("hourglass settings remain usable with touch, large text and reduced motion
 }) => {
   await page.goto("/");
   await nav(page, "Ayarlar");
-  await page.getByLabel("Tema", { exact: true }).selectOption("light");
+  await setThemePreference(page, "light");
   await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
   await page.getByLabel("Yalnızca yazı boyutu %", { exact: true }).fill("150");
   await page.getByRole("switch", { name: /Aion animasyonu/ }).uncheck();
@@ -360,7 +361,7 @@ test("progress reset is cancellable and atomic, preserves legacy files and nativ
   await nav(page, "Bugün");
   await expect(
     page.getByRole("region", { name: "Konu planı", exact: true }),
-  ).toContainText("0/479");
+  ).toContainText("0/485");
   await expect(page.locator(".stat-number").first()).toHaveText("0");
   await nav(page, "Kopya Kağıtları");
   await page
@@ -405,7 +406,7 @@ test("reset confirmation keeps large-text copy and both actions inside the dialo
   await nav(page, "Ayarlar");
   await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
   await page.getByLabel("Yalnızca yazı boyutu %", { exact: true }).fill("150");
-  await page.getByLabel("Tema", { exact: true }).selectOption("light");
+  await setThemePreference(page, "light");
   await saved(page);
   const before = await stored(page);
   for (const size of [

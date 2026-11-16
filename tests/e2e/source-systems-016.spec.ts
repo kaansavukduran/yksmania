@@ -1,3 +1,4 @@
+import { setThemePreference } from "./helpers/theme";
 import { test, expect, type Page, type Locator } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { units } from "./forge016-unit-cases";
@@ -342,7 +343,7 @@ for (const lesson of units) {
   }) => {
     await page.goto("/");
     await nav(page, "Ayarlar");
-    await page.getByLabel("Tema", { exact: true }).selectOption("light");
+    await setThemePreference(page, "light");
     await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
     await page
       .getByLabel("Yalnızca yazı boyutu %", { exact: true })

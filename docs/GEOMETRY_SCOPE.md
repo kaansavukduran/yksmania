@@ -1,6 +1,18 @@
-# Geometri kapsamı ve öncelikli öğretim açıkları
+# Geometri kapsamı — 17 Kasım 2026
 
-Uygulamanın 341 başlıklı konu kataloğunda 16 TYT ve 9 AYT geometri başlığı vardır. 480 yerleşik rehberin 6’sı geometri dersindedir: iki TYT, dört AYT. Bu iki sayıdan 19 eksik konu sonucu çıkarılamaz; başlıklar örtüşür ve bazı beceriler matematikte öğretilir.
+0.19.0 kaynağına altı temel TYT geometri ünitesi eklendi: temel açılar ve paraleller; üçgende açılar; üçgen eşitsizliği ve açı–kenar ilişkisi; dik üçgen/Pisagor/Öklid; eşlik–benzerlik; yardımcı elemanlar ve merkezler. Bu yeni paket 48 bölüm, 20 çözümlü örnek, 26 hatırlama ve 60 özgün, gerekçeli soru içerir. Her ünitede kavramın geometrisini değiştiren SVG modeli bulunur. Video önerileri ilgili alt konu adlarını korur.
+
+Toplam 486 ayrıntılı rehberin 12’si doğrudan geometri dersindedir: sekiz TYT, dört AYT. Katalog yine 16 TYT/9 AYT geometri başlığıdır; bu iki sayı birbirine bölünerek tamamlanma yüzdesi çıkarılmaz. Matematikteki örtüşen öğretim korunur. Önceki 479 çalışma kimliği ve sıra aynıdır; yeni altı temel, bağımsız kayıtlarla bu listenin sonuna eklenir. Ders ekranında temel üniteler kendi ön bilgi sırasıyla önce görünür.
+
+Üç özel arşiv PDF’sinden seçili 31 fiziksel sayfanın metni ve 22 sayfanın şekilleri incelendi. Metin ve görsel sayıları toplanarak 53 farklı sayfa iddia edilmez. Bunlar bütün PDF’lerin veya bütün geometri öğretiminin eksiksiz aktarıldığı anlamına gelmez. Ayrıntılı kaynak–madde–uygulama kaydı özel işleme defterinde tutulur.
+
+Sıradaki öğretim açıkları: çokgenler ve özel dörtgenlerin sistematik gerekçeleri; sentetik çemberde açı/uzunluk bağıntıları ve daire alanı; katı cisimlerde kesit, açınım, yüzey ve hacim. Bu alanlardaki dağınık uygulamalar tam ünite kabul edilmez. Yeni temellerdeki her kaynak alt becerisinin ve bütün resmî soruların kapandığı iddiası yoktur.
+
+---
+
+## Önceki kapsam incelemesi
+
+0.18.2 uygulamasının 341 başlıklı konu kataloğunda 16 TYT ve 9 AYT geometri başlığı vardı. O sürümdeki 480 yerleşik rehberin 6’sı geometri dersindeydi: iki TYT, dört AYT. Bu iki sayıdan 19 eksik konu sonucu çıkarılamaz; başlıklar örtüşür ve bazı beceriler matematikte öğretilir.
 
 | Mevcut geometri anlatımı | Ders |
 | --- | --- |

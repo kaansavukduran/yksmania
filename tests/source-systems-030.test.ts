@@ -3,6 +3,7 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it, vi } from "vitest";
 import { lessons } from "../src/domain/content";
+import { acceptedQuestion031 } from "./helpers/accepted-content-031";
 import type { Question } from "../src/domain/model";
 import { QuestionHelp } from "../src/components/QuestionHelp";
 import { localizedQuestionView } from "../src/domain/questionPresentation";
@@ -27,7 +28,9 @@ import humanities from "../src/learning/guidance030Humanities.json";
 
 const cohorts = [math, physics, chemistry, biologyA, biologyB, humanities];
 const rows = cohorts.flat();
-const all = lessons.flatMap((lesson) => lesson.questions);
+const all = lessons
+  .flatMap((lesson) => lesson.questions)
+  .filter(acceptedQuestion031);
 const byId = new Map(all.map((q) => [q.id, q]));
 const raw = (id: string) => {
   const question = byId.get(id);

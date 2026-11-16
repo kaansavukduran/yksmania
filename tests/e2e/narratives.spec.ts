@@ -1,3 +1,4 @@
+import { setThemePreference } from "./helpers/theme";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { narrativePacks } from "../../src/learning/narratives";
@@ -459,7 +460,7 @@ test("new models keep controls usable at 320px with 200% UI and 150% text; notes
   await nav(page, "Ayarlar");
   await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
   await page.getByLabel("Yalnızca yazı boyutu %", { exact: true }).fill("150");
-  await page.getByLabel("Tema", { exact: true }).selectOption("light");
+  await setThemePreference(page, "light");
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.evaluate(async () => {
     await navigator.serviceWorker.ready;

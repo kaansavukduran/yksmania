@@ -33,11 +33,13 @@ test("YKS-069 development update bridge settles while the menu, theme and scale 
       .locator(".sidebar")
       .getByRole("button", { name: "Ayarlar", exact: true })
       .click();
-    const theme = page.getByLabel("Tema", { exact: true });
-    await theme.selectOption("light");
+    const theme = page.getByRole("group", { name: "Tema", exact: true });
+    await theme.getByRole("button", { name: "Matrix", exact: true }).click();
     await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("115");
-    await theme.selectOption("contrast");
-    await theme.selectOption("dark");
+    await theme
+      .getByRole("button", { name: "Mevcut tema", exact: true })
+      .click();
+    await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
     await page
       .locator(".sidebar")
       .getByRole("button", { name: "Konu Anlatımı", exact: true })

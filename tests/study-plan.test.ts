@@ -4,6 +4,7 @@ import {
   availableDayCount,
   studyPlan,
   studyTopics,
+  workbookStudyTopics,
   setTopicCompletion,
   completionDate,
   topicResults,
@@ -28,8 +29,9 @@ describe("ordered YKS deadlines and independent study records", () => {
     expect(validateState(old).settings.examDate).toBe("2027-05-25");
   });
   it("preserves exactly 479 unique workbook topics in the checked Todoist first-study order", () => {
-    expect(studyTopics).toHaveLength(479);
-    expect(new Set(studyTopics.map((t) => t.id))).toEqual(
+    expect(workbookStudyTopics).toHaveLength(479);
+    expect(studyTopics.slice(0, 479)).toEqual(workbookStudyTopics);
+    expect(new Set(workbookStudyTopics.map((t) => t.id))).toEqual(
       new Set(details.map((t) => t.id)),
     );
     expect(studyTopics.slice(0, 6).map((t) => t.id)).toEqual([
@@ -40,7 +42,8 @@ describe("ordered YKS deadlines and independent study records", () => {
       "detail-143",
       "detail-194",
     ]);
-    expect(studyTopics.at(-1)?.order).toBe(479);
+    expect(workbookStudyTopics.at(-1)?.order).toBe(479);
+    expect(studyTopics).toHaveLength(485);
   });
   it("counts inclusive eligible days once across weekday and one-off overlaps", () => {
     const s = initialState().settings;
@@ -55,12 +58,15 @@ describe("ordered YKS deadlines and independent study records", () => {
   });
   it("scales theory to February and question topics to the editable exam date without assigning a closed day", () => {
     const s = initialState();
+    // The default personal target is now February. Keep testing independent
+    // deadlines by explicitly choosing the later target for question practice.
+    s.settings.examDate = "2027-06-18";
     const p = studyPlan(s, "theory", today),
       q = studyPlan(s, "questions", today);
     expect(p.target).toBe(5);
     expect(p.items.map((v) => v.topic.order)).toEqual([1, 2, 3, 4, 5]);
     expect(q.target).toBe(3);
-    expect(p.scheduled).toHaveLength(479);
+    expect(p.scheduled).toHaveLength(485);
     expect(
       p.scheduled.every(
         (v) => v.day! >= "2026-11-14" && v.day! <= "2027-02-28",
@@ -89,7 +95,7 @@ describe("ordered YKS deadlines and independent study records", () => {
     expect(p.items[0].topic.order).toBe(2);
     expect(xp(s)).toBe(0);
     expect(s.sessions).toHaveLength(0);
-    expect(studyPlan(s, "questions", today).remaining).toBe(479);
+    expect(studyPlan(s, "questions", today).remaining).toBe(485);
     s = setTopicCompletion(s, first, "theory", false, today);
     p = studyPlan(s, "theory", today);
     expect(p.items).toHaveLength(5);

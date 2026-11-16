@@ -7,6 +7,7 @@ import curriculum from "../data/curriculum.json";
 import { Empty, SubjectMark } from "../components/Shared";
 import type { Lesson } from "../domain/model";
 import { StudyTimer } from "../components/StudyTimer";
+import { geometryFoundation031Ids } from "../data/supplementalTopics031";
 export function Courses({
   start,
   mode = "theory",
@@ -79,16 +80,25 @@ export function Courses({
       </div>
       <div className="subject-grid">
         {filtered.map((subject) => {
-          const ready = lessons.filter(
-            (v) =>
-              v.subjectId === subject.id &&
-              (mode === "theory"
-                ? !v.tags.includes("soru-seti")
-                : v.questions.length > 0) &&
-              (!query ||
-                l(subject.name).toLocaleLowerCase("tr-TR").includes(query) ||
-                l(v.title).toLocaleLowerCase("tr-TR").includes(query)),
-          );
+          const ready = lessons
+            .filter(
+              (v) =>
+                v.subjectId === subject.id &&
+                (mode === "theory"
+                  ? !v.tags.includes("soru-seti")
+                  : v.questions.length > 0) &&
+                (!query ||
+                  l(subject.name).toLocaleLowerCase("tr-TR").includes(query) ||
+                  l(v.title).toLocaleLowerCase("tr-TR").includes(query)),
+            )
+            .sort((a, b) => {
+              const ids = geometryFoundation031Ids as readonly string[];
+              const rank = (id: string) => {
+                const index = ids.indexOf(id);
+                return index < 0 ? ids.length : index;
+              };
+              return rank(a.id) - rank(b.id);
+            });
           const expanded = open === subject.id || !!query;
           const topics = curriculum.filter(
             (v) =>

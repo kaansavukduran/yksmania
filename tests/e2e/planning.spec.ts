@@ -1,3 +1,4 @@
+import { setThemePreference } from "./helpers/theme";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
@@ -71,14 +72,14 @@ async function finish(page: Page, answers: number[]) {
 test("YKS-009 two deadlines use eligible days, editable day-first dates and the verified first-study order", async ({
   page,
 }) => {
-  await expect(plan(page)).toContainText("479 kalan konu ÷ 107 uygun gün");
+  await expect(plan(page)).toContainText("485 kalan konu ÷ 107 uygun gün");
   await expect(plan(page, "Soru planı")).toContainText(
-    "479 kalan konu ÷ 217 uygun gün",
+    "485 kalan konu ÷ 107 uygun gün",
   );
   await expect(plan(page).locator(".planned-topics li")).toHaveCount(5);
   await expect(
     plan(page, "Soru planı").locator(".planned-topics li"),
-  ).toHaveCount(3);
+  ).toHaveCount(5);
   await expect(plan(page).locator(".planned-topics li").first()).toContainText(
     "1. konu · TYT Kimya",
   );
@@ -90,12 +91,12 @@ test("YKS-009 two deadlines use eligible days, editable day-first dates and the 
     name: "Hedef sınav tarihi",
     exact: true,
   });
-  await expect(date).toHaveValue("18/06/2027");
-  await page.getByLabel("Tema", { exact: true }).selectOption("light");
+  await expect(date).toHaveValue("28/02/2027");
+  await setThemePreference(page, "light");
   await saveStatus(page);
   await date.fill("06/18/2027");
   await expect(date).toHaveAttribute("aria-invalid", "true");
-  expect((await stored(page)).settings.examDate).toBe("2027-06-18");
+  expect((await stored(page)).settings.examDate).toBe("2027-02-28");
   await date.fill("25/05/2027");
   await saveStatus(page);
   await page.reload();
@@ -110,13 +111,13 @@ test("YKS-009 two deadlines use eligible days, editable day-first dates and the 
   await page.getByRole("button", { name: "Ekle", exact: true }).click();
   await saveStatus(page);
   await nav(page, "Bugün");
-  await expect(plan(page)).toContainText("479 kalan konu ÷ 90 uygun gün");
+  await expect(plan(page)).toContainText("485 kalan konu ÷ 90 uygun gün");
   await expect(plan(page)).toContainText("Bugün müsait değil");
   await expect(plan(page, "Soru planı")).toContainText("Hedef: 25/05/2027");
   await plan(page)
-    .getByText("Tüm çalışma sırası ve tarihler (479)", { exact: true })
+    .getByText("Tüm çalışma sırası ve tarihler (485)", { exact: true })
     .click();
-  await expect(plan(page).locator(".plan-full-order li")).toHaveCount(479);
+  await expect(plan(page).locator(".plan-full-order li")).toHaveCount(485);
   const rows = await plan(page)
     .locator(".plan-full-order li")
     .allTextContents();
@@ -174,7 +175,7 @@ test("YKS-009 daily completion is durable, undoable, independent of questions an
     page.getByRole("button", { name: "Çalışma kaydını geri al", exact: true }),
   ).toBeVisible();
   await nav(page, "Bugün");
-  await expect(plan(page)).toContainText("478 kalan konu ÷ 107 uygun gün");
+  await expect(plan(page)).toContainText("484 kalan konu ÷ 107 uygun gün");
   await expect(plan(page)).toContainText(
     "Bugünün hedefi: 5 konu · 1 tamamlandı",
   );
@@ -189,7 +190,7 @@ test("YKS-009 daily completion is durable, undoable, independent of questions an
   await expect(
     plan(page).locator(".planned-topic:not(.is-complete)").first(),
   ).toContainText("2. konu");
-  await expect(plan(page, "Soru planı")).toContainText("479 kalan konu");
+  await expect(plan(page, "Soru planı")).toContainText("485 kalan konu");
   const s = await stored(page);
   expect(s.sessions).toEqual([]);
   expect(s.reviews).toEqual([]);
@@ -206,7 +207,7 @@ test("YKS-009 daily completion is durable, undoable, independent of questions an
     .getByRole("button", { name: "Çalışma kaydını geri al", exact: true })
     .click();
   await nav(page, "Bugün");
-  await expect(plan(page)).toContainText("479 kalan konu");
+  await expect(plan(page)).toContainText("485 kalan konu");
   await expect(plan(page).locator(".planned-topics li")).toHaveCount(5);
 });
 test("YKS-010 one subject-colored progress chart and separate TYT/AYT trees link real topic and question branches", async ({
@@ -229,7 +230,7 @@ test("YKS-010 one subject-colored progress chart and separate TYT/AYT trees link
     name: /Genel konu çalışma ilerlemesi/,
   });
   await expect(chart).toHaveCount(1);
-  await expect(chart).toHaveAttribute("aria-label", /1\/479 konu/);
+  await expect(chart).toHaveAttribute("aria-label", /1\/485 konu/);
   await expect(page.locator(".subject-progress-table tbody tr")).toHaveCount(
     15,
   );
@@ -295,7 +296,7 @@ test("YKS-010 one subject-colored progress chart and separate TYT/AYT trees link
   await expect(left.locator(".skill-question").first()).toHaveClass(
     /is-complete/,
   );
-  await expect(chart).toHaveAttribute("aria-label", /1\/479 konu/);
+  await expect(chart).toHaveAttribute("aria-label", /1\/485 konu/);
   const issues = await new AxeBuilder({ page })
     .include(".main-content")
     .analyze();
@@ -312,7 +313,7 @@ test("YKS-009 an open offline app replans across midnight and refreshes when ret
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.clock.install({ time: new Date("2026-11-14T23:59:30Z") });
   await page.reload();
-  await expect(plan(page)).toContainText("479 kalan konu ÷ 107 uygun gün");
+  await expect(plan(page)).toContainText("485 kalan konu ÷ 107 uygun gün");
   await page.locator(".hero .primary").click();
   await page
     .getByRole("button", { name: "Konuyu çalıştım", exact: true })
@@ -326,14 +327,14 @@ test("YKS-009 an open offline app replans across midnight and refreshes when ret
   });
   await context.setOffline(true);
   await page.clock.runFor(61000);
-  await expect(plan(page)).toContainText("478 kalan konu ÷ 106 uygun gün");
+  await expect(plan(page)).toContainText("484 kalan konu ÷ 106 uygun gün");
   await expect(plan(page)).toContainText(
     "Bugünün hedefi: 5 konu · 0 tamamlandı",
   );
   await expect(plan(page).locator(".planned-topics li")).toHaveCount(5);
   await page.clock.setSystemTime(new Date("2026-11-16T12:00:00Z"));
   await page.evaluate(() => window.dispatchEvent(new Event("focus")));
-  await expect(plan(page)).toContainText("478 kalan konu ÷ 105 uygun gün");
+  await expect(plan(page)).toContainText("484 kalan konu ÷ 105 uygun gün");
   expect((await stored(page)).topicProgress["detail-139"].theory).toBe(
     "2026-11-14",
   );
@@ -350,7 +351,7 @@ test("new plan, trees and dates stay usable at 320px and 200% UI / 150% text off
   await nav(page, "Ayarlar");
   await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
   await page.getByLabel("Yalnızca yazı boyutu %", { exact: true }).fill("150");
-  await page.getByLabel("Tema", { exact: true }).selectOption("light");
+  await setThemePreference(page, "light");
   await saveStatus(page);
   await page.evaluate(async () => {
     await navigator.serviceWorker.ready;
@@ -366,7 +367,7 @@ test("new plan, trees and dates stay usable at 320px and 200% UI / 150% text off
   }
   await expect(
     page.getByRole("textbox", { name: "Hedef sınav tarihi", exact: true }),
-  ).toHaveValue("18/06/2027");
+  ).toHaveValue("28/02/2027");
   await nav(page, "Dünyam");
   await page
     .getByRole("combobox", { name: "AYT ders seçimi" })

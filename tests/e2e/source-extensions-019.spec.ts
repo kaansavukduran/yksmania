@@ -1,3 +1,4 @@
+import { setThemePreference } from "./helpers/theme";
 import { test, expect, type Page } from "@playwright/test";
 import type { AppState } from "../../src/domain/model";
 import oldGuides from "../fixtures/source-stage-018-extended-guides.json" with { type: "json" };
@@ -107,7 +108,7 @@ for (const extension of extensions)
       ).toBeVisible();
       if (phone) {
         await nav(page, "Ayarlar");
-        await page.getByLabel("Tema", { exact: true }).selectOption("light");
+        await setThemePreference(page, "light");
         await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
         await page
           .getByLabel("Yalnızca yazı boyutu %", { exact: true })

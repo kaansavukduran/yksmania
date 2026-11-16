@@ -1,3 +1,4 @@
+import { setThemePreference } from "./helpers/theme";
 import { test, expect, type Page, type Locator } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { units } from "./next-thirty-unit-cases";
@@ -305,7 +306,7 @@ for (const lesson of units) {
   }) => {
     await page.goto("/");
     await nav(page, "Ayarlar");
-    await page.getByLabel("Tema", { exact: true }).selectOption("light");
+    await setThemePreference(page, "light");
     await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
     await page
       .getByLabel("Yalnızca yazı boyutu %", { exact: true })
@@ -330,15 +331,15 @@ for (const lesson of units) {
   });
 }
 
-test("solid atom labels remain readable on their actual filled particles in all three themes", async ({
+test("solid atom labels remain readable on their actual filled particles in current, Matrix and legacy themes", async ({
   page,
 }) => {
   const { solidSymbolContrast } = await import("./forge012-chemistry-cases");
   await page.goto("/");
   const lesson = units.find((unit) => unit.id === "katilar-viskozite")!;
-  for (const theme of ["dark", "light", "contrast"]) {
+  for (const theme of ["dark", "matrix", "light", "contrast"] as const) {
     await nav(page, "Ayarlar");
-    await page.getByLabel("Tema", { exact: true }).selectOption(theme);
+    await setThemePreference(page, theme);
     await openFromCourses(page, lesson);
     const lab = page.locator(lesson.lab);
     for (const specimen of ["salt", "graphite", "diamond"]) {

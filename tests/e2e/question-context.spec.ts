@@ -1,3 +1,4 @@
+import { setThemePreference } from "./helpers/theme";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 test.use({ locale: "tr-TR", timezoneId: "Europe/Istanbul", hasTouch: true });
@@ -100,7 +101,7 @@ test("YKS-015 full passage wraps at 320px with large type, survives wrong answer
   await nav(page, "Ayarlar");
   await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
   await page.getByLabel("Yalnızca yazı boyutu %", { exact: true }).fill("150");
-  await page.getByLabel("Tema", { exact: true }).selectOption("light");
+  await setThemePreference(page, "light");
   await paragraph(page);
   await expect(textRegion(page)).toHaveText(passage);
   expect(

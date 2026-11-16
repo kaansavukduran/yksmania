@@ -1,0 +1,132 @@
+import { describe, expect, it } from "vitest";
+import { lessons, lessonById } from "../src/domain/content";
+import { initialState } from "../src/domain/model";
+import { validateState } from "../src/domain/storage";
+import {
+  completionDates,
+  lessonTopic,
+  setTopicCompletion,
+  studyPlan,
+  studyTopics,
+  topicLessons,
+  workbookStudyTopics,
+} from "../src/domain/studyPlan";
+import { learningReviewPlan } from "../src/domain/learningReviews";
+import { xp } from "../src/domain/scheduler";
+import {
+  geometryFoundation031Ids,
+  supplementalTopics031,
+} from "../src/data/supplementalTopics031";
+import { lessonGuides } from "../src/learning/guides";
+import { builtInCheatSheets } from "../src/learning/cheatsheetContent";
+import workbookBaseline from "./fixtures/source-stage-025-topic-associations.json";
+
+describe("031 additive geometry learning path", () => {
+  it("keeps the exact479 workbook entries and gives each new foundation independent credit", () => {
+    expect(workbookStudyTopics).toEqual(workbookBaseline.studyTopics);
+    expect(studyTopics.slice(0, 479)).toEqual(workbookBaseline.studyTopics);
+    expect(studyTopics.slice(479).map(({ order, ...topic }) => topic)).toEqual(
+      supplementalTopics031,
+    );
+    expect(new Set(studyTopics.map((topic) => topic.id)).size).toBe(485);
+    const state = initialState();
+    for (const topic of workbookStudyTopics)
+      state.topicProgress[topic.id] = { theory: "2026-11-16" };
+    state.notes = { "lesson:rasyonel-sayilar": "Önceki not korunur." };
+    const restored = validateState(state);
+    const plan = studyPlan(restored, "theory", "2026-11-17");
+    expect(plan).toMatchObject({ done: 479, remaining: 6, total: 485 });
+    expect(plan.scheduled.map(({ topic }) => topic.id)).toEqual(
+      supplementalTopics031.map((topic) => topic.id),
+    );
+    expect(restored.topicProgress).toEqual(state.topicProgress);
+    expect(restored.notes).toEqual(state.notes);
+    for (const id of geometryFoundation031Ids) {
+      const topicId = lessonTopic[id];
+      expect(topicId).toBe(`topic-${id}`);
+      expect(topicLessons(topicId).map((lesson) => lesson.id)).toEqual([id]);
+      expect(completionDates(restored, "theory").has(topicId)).toBe(false);
+    }
+  });
+
+  it("registers a full explanation, separate summary and reasoned question set for every new foundation", () => {
+    expect(lessons).toHaveLength(520);
+    expect(lessons.flatMap((lesson) => lesson.questions)).toHaveLength(5943);
+    expect(lessonGuides.size).toBe(486);
+    expect(builtInCheatSheets.size).toBe(486);
+    const allQuestions = lessons.flatMap((lesson) => lesson.questions);
+    expect(new Set(allQuestions.map((question) => question.id)).size).toBe(
+      allQuestions.length,
+    );
+    for (const id of geometryFoundation031Ids) {
+      const lesson = lessonById(id)!;
+      expect(lesson.subjectId).toBe("tyt-geometri");
+      expect(lesson.tags).not.toContain("soru-seti");
+      expect(lesson.questions).toHaveLength(10);
+      const guide = lessonGuides.get(id)!;
+      expect(guide.sections.length).toBeGreaterThanOrEqual(6);
+      expect(guide.examples.length).toBeGreaterThanOrEqual(3);
+      expect(guide.recall.length).toBeGreaterThanOrEqual(3);
+      const sheet = builtInCheatSheets.get(lessonTopic[id])!;
+      expect(sheet.lessonId).toBe(id);
+      expect(sheet.sections.length).toBeGreaterThanOrEqual(3);
+    }
+  });
+
+  it("records a manual geometry study without XP and schedules days3,7,21 from day1", () => {
+    const id = geometryFoundation031Ids[0];
+    const topicId = lessonTopic[id];
+    const state = initialState();
+    const studied = setTopicCompletion(
+      state,
+      topicId,
+      "theory",
+      true,
+      "2026-11-17",
+    );
+    expect(validateState(studied)).toEqual(studied);
+    expect(xp(studied)).toBe(0);
+    expect(studied.sessions).toEqual([]);
+    expect(completionDates(studied, "questions").has(topicId)).toBe(false);
+    const reviews = learningReviewPlan(studied, "2026-11-17");
+    expect(reviews.map((review) => [review.stage, review.targetDate])).toEqual([
+      [3, "2026-11-19"],
+      [7, "2026-11-23"],
+      [21, "2026-12-07"],
+    ]);
+    expect(state.topicProgress).toEqual({});
+  });
+
+  it("a complete geometry question attempt never silently completes its explanation", () => {
+    const lesson = lessonById(geometryFoundation031Ids[1])!;
+    const state = initialState();
+    state.sessions = [
+      {
+        id: "geometry031-independent",
+        lessonId: lesson.id,
+        date: "2026-11-17",
+        finishedAt: "2026-11-17T10:00:00Z",
+        responses: lesson.questions.map((question) => ({
+          questionId: question.id,
+          selected: question.answer,
+          correct: true,
+          assisted: false,
+          confidence: "high" as const,
+        })),
+        kind: "learn",
+        includesTheory: false,
+        minutes: 12,
+        note: "",
+      },
+    ];
+    const saved = validateState(state);
+    expect(completionDates(saved, "theory").has(lessonTopic[lesson.id])).toBe(
+      false,
+    );
+    expect(
+      completionDates(saved, "questions").get(lessonTopic[lesson.id]),
+    ).toBe("2026-11-17");
+    for (const old of workbookStudyTopics)
+      expect(completionDates(saved, "questions").has(old.id)).toBe(false);
+  });
+});

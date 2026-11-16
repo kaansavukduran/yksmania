@@ -1,3 +1,4 @@
+import { setThemePreference } from "./helpers/theme";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { allFoundationPracticeSets } from "../../src/learning/forge013FoundationQuestions";
@@ -179,7 +180,7 @@ for (const pack of allFoundationPracticeSets) {
   }) => {
     await page.goto("/");
     await nav(page, "Ayarlar");
-    await page.getByLabel("Tema", { exact: true }).selectOption("light");
+    await setThemePreference(page, "light");
     await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
     await page
       .getByLabel("Yalnızca yazı boyutu %", { exact: true })

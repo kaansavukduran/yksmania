@@ -1,3 +1,19 @@
+# Kaynak 031 — görsel geometri ve konuya bağlı videolar
+
+17 Kasım 2026. Üç özel arşiv PDF’sinin seçili 31 fiziksel sayfasında metin, bunların 22’sinde şekiller incelendi. MEBİ TYT Matematik özetinin üçgen bölümü, geometri formül özeti ve OGM Geometrinin Dili/Doğruda Açılar materyali karşılaştırıldı. Basılı alt bilgiyle fiziksel PDF sayfası ayrı kaydedilir. 31+22 toplanarak farklı sayfa sayısı üretilmez. Ham kitaplar, özel belge adresleri ve arşiv kimlikleri yayımlanmaz.
+
+Altı yeni TYT geometri ünitesi; 48 açıklama bölümü, 20 adımlı çözümlü örnek, 26 hatırlama kartı ve 60 özgün beş seçenekli soru içerir. Sorular resmî sınav sorusu diye sunulmaz. Yeni soru kimlikleri, eski 5.883 sorunun kimlikleri veya yanıtları üzerine yazılmaz. İki içerik incelemesinde örnek varsayımları, açık eşitsizlik uçları, açıortay/kenarortay ayrımı, Öklid izdüşümü, alan oranının karesi ve yanlış seçenek gerekçeleri denetlendi. Soruların anahtarları ve her seçeneğin gerekçesi birlikte sınandı; bu kör çözüm deneyi değildir.
+
+Şekil ve sayı aynı koordinat modelinden üretilir. Çizilemeyen kenarlarda sahte üçgen gösterilmez; doğrusal sınır ayrıca açıklanır. Tepe sürükleme, açı taşıma, karelerle Pisagor, izdüşümlerle Öklid, benzerlikte uzunluk/alan oranı, kenarortay/açıortay, iç çember, diklik ve çevrel merkez ayrı etkileşimlerdir. Geniş üçgende dışarı çıkan merkez içeriye zorla taşınmaz. Klavye sürgüleri sürüklemeye alternatif sunar.
+
+İki gerçek video belgesinin gömülü bağlantıları okundu. Önerilen/alternatif ayrımı temel belgeden korunarak 479 mevcut ders ve altı yeni geometri dersiyle eşleştirildi. 489 kaynak alt konu grubu, 2.244 bağlantı kaydı ve 2.033 farklı URL vardır; bu sayı benzersiz video oynatma kimliği veya izlenmiş video sayısı değildir. Aynı videonun farklı başlangıç zamanları korunur. Anlatımla güvenle eşleşmeyen 25 birleşik TYT/AYT kaynak başlığı zorla atanmadı. Genel kaynak belgesi okundu; uygun ek açıklama bulunmayan alana bilgi uydurulmadı. Videoların bütün güncel erişilebilirliği ve sesli/görsel içeriği doğrulanmadı.
+
+PDF kullanımının izi, bir kaynağın okunması ve bütün bir PDF’nin eksiksiz aktarılması ayrı ölçülerdir. Bu üç PDF’nin bütünü tamamlandı denmez; kalan sayfa/öğrenme öğeleri özel defterde açık tutulur. Yeni altı ünite de bütün MEB geometri kapsamının kapandığı anlamına gelmez. Güncel yapısal sayım [CSV](CONTENT_INVENTORY.csv) ve [açıklamasında](CONTENT_INVENTORY.txt); kalan geometri alanları [kapsam incelemesinde](GEOMETRY_SCOPE.md) bulunur. Teknik ve yayın kabulü ayrıca [QA](QA.md) içinde kaydedilir.
+
+---
+
+## Önceki kaynak ve kabul kayıtları
+
 # Kaynak 030 — 300 eski kartın tam öğretici yardım incelemesi
 
 Her kartın kökü, beş seçeneği, anahtarı, ipucu, açıklaması ve ilgili eski rehber bağlamı okundu. Altı yazar ve altı bağımsız inceleme, seçili gerçek Aurelia/MEBİ/OGM metinleri ile şekillerden yararlandı. Kendi fazında yeniden okunan sayfalar ayrı kaydedildi; aktarılan eski okuma yeni okuma sayılmadı. İncelemeler anahtarı görünen incelemelerdir; kör çözüm iddiası yoktur. Ham kitaplar, özel kaynak bağlantıları ve Drive kimlikleri depoya eklenmedi.

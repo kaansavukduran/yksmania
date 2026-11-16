@@ -8,7 +8,16 @@ import oldGuides from "./fixtures/source-stage-027-guide-fingerprints.json";
 import workbookBaseline from "./fixtures/source-stage-025-topic-associations.json";
 import { lessons } from "../src/domain/content";
 import type { Question } from "../src/domain/model";
-import { lessonTopic, studyTopics } from "../src/domain/studyPlan";
+import {
+  lessonTopic,
+  studyTopics,
+  workbookStudyTopics,
+} from "../src/domain/studyPlan";
+import {
+  acceptedQuestion031,
+  acceptedLesson031,
+  acceptedGuide031,
+} from "./helpers/accepted-content-031";
 import {
   clarifiedQuestionView,
   localizedQuestionView,
@@ -58,7 +67,9 @@ const previousRows = [
   ...oldHistoryA,
   ...oldHistoryB,
 ];
-const all = lessons.flatMap((lesson) => lesson.questions);
+const all = lessons
+  .flatMap((lesson) => lesson.questions)
+  .filter(acceptedQuestion031);
 const byId = new Map(all.map((q) => [q.id, q]));
 const original = (id: string): Question => {
   const q = byId.get(id);
@@ -137,17 +148,25 @@ describe("028 gerçek küresel yardım kayıtları ve eski kaynak koruması", ()
 
   it("026'nın yerleşik 479 çalışma sırasını ve teori/rehber/özet sayılarını korur", () => {
     // This is the same immutable sequence baseline already used by026.
-    expect(studyTopics).toEqual(workbookBaseline.studyTopics);
-    expect(studyTopics).toHaveLength(479);
-    expect(new Set(studyTopics.map((topic) => topic.id)).size).toBe(479);
+    expect(workbookStudyTopics).toEqual(workbookBaseline.studyTopics);
+    expect(studyTopics.slice(0, 479)).toEqual(workbookBaseline.studyTopics);
+    expect(new Set(workbookStudyTopics.map((topic) => topic.id)).size).toBe(
+      479,
+    );
     for (const [id, topic] of Object.entries(workbookBaseline.lessonTopic))
       expect(lessonTopic[id], id).toBe(topic);
-    expect(lessons).toHaveLength(514);
+    expect(lessons.filter(acceptedLesson031)).toHaveLength(514);
     expect(
-      lessons.filter((lesson) => !lesson.tags.includes("soru-seti")),
+      lessons
+        .filter(acceptedLesson031)
+        .filter((lesson) => !lesson.tags.includes("soru-seti")),
     ).toHaveLength(480);
-    expect(lessonGuides.size).toBe(480);
-    expect(builtInCheatSheets.size).toBe(480);
+    expect([...lessonGuides].filter(acceptedGuide031)).toHaveLength(480);
+    expect(
+      [...builtInCheatSheets.values()].filter(
+        (sheet) => sheet.lessonId && acceptedLesson031({ id: sheet.lessonId }),
+      ),
+    ).toHaveLength(480);
   });
 
   it("altı kohorttaki 235 yardımı gerçek gösterilen kimliklere ve legacy1'e bağlar", () => {

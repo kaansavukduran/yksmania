@@ -1,3 +1,4 @@
+import { setThemePreference } from "./helpers/theme";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { registerOfflineBootDiagnostics } from "./helpers/offlineBootDiagnostics";
@@ -73,7 +74,7 @@ test("native sheets stay readable with large Turkish text, touch and light theme
 }) => {
   await page.goto("/");
   await nav(page, "Ayarlar");
-  await page.getByLabel("Tema", { exact: true }).selectOption("light");
+  await setThemePreference(page, "light");
   await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
   await page.getByLabel("Yalnızca yazı boyutu %", { exact: true }).fill("150");
   await page.setViewportSize({ width: 320, height: 844 });

@@ -101,7 +101,7 @@ export function World({ navigate }: { navigate: (r: string) => void }) {
           </p>
           <table className="subject-progress-table">
             <caption className="sr-only">
-              Excel çalışma listesindeki konu ve soru ilerlemesi
+              Çalışma listesindeki konu ve soru ilerlemesi
             </caption>
             <thead>
               <tr>
@@ -133,9 +133,10 @@ export function World({ navigate }: { navigate: (r: string) => void }) {
         </div>
       </section>
       <p className="small muted">
-        Ağaçlardaki dallar Excel’in çalışma sırasını gösterir. Konudan anlatıma,
-        yan dalından sorulara geçebilirsin. Yüzdeler listedeki 479 başlığa
-        göredir.
+        Ağaçlardaki dallar çalışma sırasını gösterir. Konudan anlatıma, yan
+        dalından sorulara geçebilirsin. Yüzdeler {studyTopics.length} başlığa
+        göredir: Excel’deki 479 başlık ve eklenen 6 geometri temeli. Yeni
+        başlıklar önceki tamamlanma kayıtlarını değiştirmez.
       </p>
       <div className="study-trees">
         <StudyTree

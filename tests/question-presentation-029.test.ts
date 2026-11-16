@@ -5,6 +5,10 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import type { AppState, Lesson, Question } from "../src/domain/model";
 import type { HelpQuestion } from "../src/domain/questionHelpModel";
+import {
+  acceptedLesson031,
+  acceptedGuide031,
+} from "./helpers/accepted-content-031";
 
 const fixtures = vi.hoisted(() => ({
   allLessons: [] as Lesson[],
@@ -153,7 +157,7 @@ afterEach(() => {
 
 describe("029 three guarded presentation revisions", () => {
   it("retains all raw5883 questions,514 lesson metadata records and480 guides from separate028", () => {
-    const all = fixtures.allLessons;
+    const all = fixtures.allLessons.filter(acceptedLesson031);
     expect(all).toHaveLength(514);
     const questions = all.flatMap((l) => l.questions);
     expect(questions).toHaveLength(5883);
@@ -163,8 +167,8 @@ describe("029 three guarded presentation revisions", () => {
     expect(
       digest(all.map(({ questions: _questions, ...metadata }) => metadata)),
     ).toBe("0df1fcf0d49654fd897e0ede9d5b27540c884004225c8cde09984ca96459db6e");
-    expect(lessonGuides.size).toBe(480);
-    expect(digest([...lessonGuides])).toBe(
+    expect([...lessonGuides].filter(acceptedGuide031)).toHaveLength(480);
+    expect(digest([...lessonGuides].filter(acceptedGuide031))).toBe(
       "36a48d07e782b9f4769698d01f94860251aaeb8502f44454489cd43fe9e085f5",
     );
   });

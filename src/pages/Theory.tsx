@@ -18,6 +18,11 @@ const NarrativeRecall = lazy(() =>
     default: module.NarrativeRecall,
   })),
 );
+const VideoRecommendations031 = lazy(() =>
+  import("../learning/VideoRecommendations031").then((module) => ({
+    default: module.VideoRecommendations031,
+  })),
+);
 export function Theory({
   id,
   practice,
@@ -101,6 +106,9 @@ export function Theory({
               <NarrativeRecall id={lesson.id} />
             </Suspense>
           )}
+          <Suspense fallback={<p role="status">Video önerileri açılıyor…</p>}>
+            <VideoRecommendations031 lessonId={lesson.id} />
+          </Suspense>
           <div className="source-box">
             <strong>{t("sourceInfo")}</strong>
             <p>{guide?.source ?? l(lesson.source)}</p>

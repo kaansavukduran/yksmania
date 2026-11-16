@@ -1,7 +1,7 @@
 {
-  "version": "0.18.2",
+  "version": "0.19.0",
   "channel": "alpha",
   "notes": {
-    "tr": "30 konudaki 300 eski sorunun çözümleri genişletildi: gerekli bilgi, yöntem, 900 ayrı çözüm adımı, 1500 seçenek gerekçesi, sık hata ve sonuç kontrolü. Ayrıntılı yardım 3243 soruda hazır; 2640 kartın bütün yardım aşamaları hazırlanıyor. Bitkilerin yaşam döngüsü özellikleri, virüslerde kapsid stoku, iyonik adlandırma yöntemi, hâl değişiminde basınç ve harmonik dalga koşulları soru ve bağlı örneklerde netleştirildi. Toplam 480 ayrıntılı anlatım, 480 yerleşik özet ve 5883 özgün soru korunur. Eski yanıtlar, notlar, başlanmış denemeler ve 3/7/21 tekrar tarihleri değişmez. Kaynakların bütün alt kazanımları ve resmî sınav arşivi üzerindeki çalışma sürüyor."
+    "tr": "Geometri temellerine şekillerle çalışan altı ayrıntılı anlatım, altı özet ve 60 gerekçeli özgün soru eklendi. Açılar, üçgen eşitsizliği, dik üçgen, benzerlik ve yardımcı elemanları değiştirerek inceleyebilirsin. Konuların altında kaynaktan eşleştirilmiş önerilen ve alternatif videolar bulunur; videolar internet gerektirir. Ayarlara Matrix teması eklendi. Yeni profillerin kişisel hazırlık hedefi 28 Şubat 2027’dir; kayıtlı özel tarihler korunur. Önceki 479 başlığın sırası ve ilerlemesi korunur, altı yeni geometri başlığı ayrıca izlenir. Eski yanıtlar, notlar, başlanmış denemeler ve 3/7/21 tekrar tarihleri değişmez. Bütün kaynak PDF’lerinin eksiksiz aktarımı üzerindeki çalışma sürüyor."
   }
 }

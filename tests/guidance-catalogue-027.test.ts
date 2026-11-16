@@ -3,6 +3,7 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it, vi } from "vitest";
 import { lessons } from "../src/domain/content";
+import { acceptedQuestion031 } from "./helpers/accepted-content-031";
 import type { Question } from "../src/domain/model";
 import {
   clarifiedQuestionView,
@@ -43,7 +44,9 @@ const groups = [
   ["HistoryB", historyB],
 ] as const;
 const rows = groups.flatMap(([, cohort]) => cohort);
-const all = lessons.flatMap((lesson) => lesson.questions);
+const all = lessons
+  .flatMap((lesson) => lesson.questions)
+  .filter(acceptedQuestion031);
 const rawById = new Map(all.map((question) => [question.id, question]));
 const raw = (id: string): Question => {
   const question = rawById.get(id);

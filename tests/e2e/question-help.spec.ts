@@ -1,3 +1,4 @@
+import { setThemePreference } from "./helpers/theme";
 import { expect, test, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 test.use({ locale: "tr-TR", timezoneId: "Europe/Istanbul", hasTouch: true });
@@ -295,7 +296,7 @@ test("full guidance remains usable at 320px with large type, touch, keyboard, re
   await nav(page, "Ayarlar");
   await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
   await page.getByLabel("Yalnızca yazı boyutu %", { exact: true }).fill("150");
-  await page.getByLabel("Tema", { exact: true }).selectOption("light");
+  await setThemePreference(page, "light");
   await page.getByRole("switch", { name: /Aion animasyonu/ }).uncheck();
   await rational(page);
   await page.getByRole("button", { name: "İpucu al", exact: true }).click();

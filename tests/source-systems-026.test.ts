@@ -1,6 +1,11 @@
 import { createHash } from "node:crypto";
 import { expect, it } from "vitest";
 import oldQuestions from "./fixtures/source-stage-025-question-fingerprints.json";
+import {
+  acceptedQuestion031,
+  acceptedLesson031,
+  acceptedGuide031,
+} from "./helpers/accepted-content-031";
 import oldTeaching from "./fixtures/source-stage-025-lesson-fingerprints.json";
 import oldGuides from "./fixtures/source-stage-025-guide-fingerprints.json";
 import oldTopics from "./fixtures/source-stage-025-topic-associations.json";
@@ -45,7 +50,7 @@ const norm = (s: string) =>
     .replace(/[.;:!?]+$/, "");
 
 it("keeps all5322 accepted cards,486 teaching records,452 full guides and every old workbook association intact", () => {
-  const all = lessons.flatMap((l) => l.questions),
+  const all = lessons.flatMap((l) => l.questions).filter(acceptedQuestion031),
     byId = new Map(all.map((q) => [q.id, q]));
   expect(all).toHaveLength(5883);
   expect(byId.size).toBe(5883);
@@ -60,18 +65,24 @@ it("keeps all5322 accepted cards,486 teaching records,452 full guides and every 
   expect(Object.keys(oldGuides)).toHaveLength(452);
   for (const [id, hash] of Object.entries(oldGuides))
     expect(fingerprint(lessonGuides.get(id)), id).toBe(hash);
-  expect(studyTopics).toEqual(oldTopics.studyTopics);
+  expect(studyTopics.slice(0, 479)).toEqual(oldTopics.studyTopics);
   for (const [id, topic] of Object.entries(oldTopics.lessonTopic))
     expect(lessonTopic[id], id).toBe(topic);
 });
 
 it("deepens the28 existing theory records and exposes the28 additions exclusively as independent advanced question sets", () => {
-  expect(lessons).toHaveLength(514);
-  expect(lessons.filter((l) => !l.tags.includes("soru-seti"))).toHaveLength(
-    480,
-  );
-  expect(lessonGuides.size).toBe(480);
-  expect(builtInCheatSheets.size).toBe(480);
+  expect(lessons.filter(acceptedLesson031)).toHaveLength(514);
+  expect(
+    lessons
+      .filter(acceptedLesson031)
+      .filter((l) => !l.tags.includes("soru-seti")),
+  ).toHaveLength(480);
+  expect([...lessonGuides].filter(acceptedGuide031)).toHaveLength(480);
+  expect(
+    [...builtInCheatSheets.values()].filter(
+      (sheet) => sheet.lessonId && acceptedLesson031({ id: sheet.lessonId }),
+    ),
+  ).toHaveLength(480);
   expect(legacy026Packs).toHaveLength(8);
   expect(legacy026TheoryIds.size).toBe(28);
   expect(legacy026QuestionLessons).toHaveLength(28);
@@ -113,6 +124,7 @@ it("deepens the28 existing theory records and exposes the28 additions exclusivel
 it("gives every one of the561 new cards a self-contained five-choice question and distinct progressive guidance", () => {
   const fresh = lessons
     .flatMap((l) => l.questions)
+    .filter(acceptedQuestion031)
     .filter((q) => !Object.hasOwn(oldQuestions, q.id));
   expect(fresh).toHaveLength(561);
   for (const q of fresh) {

@@ -5,6 +5,10 @@ import { describe, expect, it, vi } from "vitest";
 import { clarifiedGuideView } from "../src/learning/guidePresentation028";
 import { lessonGuides } from "../src/learning/guides";
 import { lessons } from "../src/domain/content";
+import {
+  acceptedLesson031,
+  acceptedGuide031,
+} from "./helpers/accepted-content-031";
 import { builtInCheatSheets } from "../src/learning/cheatsheetContent";
 import { resolveGuideStep } from "../src/learning/guides/position";
 import { membraneTransport } from "../src/learning/forge093Biology";
@@ -227,17 +231,19 @@ describe("029 atomic membrane worked display clarification", () => {
     );
   });
   it("preserves all480 raw guides,514 lessons,5883 questions and the earlier nine display corrections", () => {
-    expect(lessonGuides.size).toBe(480);
-    expect(digest([...lessonGuides])).toBe(
+    const previousGuides = [...lessonGuides].filter(acceptedGuide031);
+    const previousLessons = lessons.filter(acceptedLesson031);
+    expect(previousGuides).toHaveLength(480);
+    expect(digest(previousGuides)).toBe(
       "9ee7770f36a8114f042cf08b73cc6a7d3ee417ab0dea459829b6d9ef7119d666",
     );
-    expect(digest(lessons)).toBe(
+    expect(digest(previousLessons)).toBe(
       "da9ab891182c546e8f11004407f0d9bb51112b71f9abd1c931d2b25b7d3e20f8",
     );
-    expect(digest(lessons.flatMap((l) => l.questions))).toBe(
+    expect(digest(previousLessons.flatMap((l) => l.questions))).toBe(
       "e445d7ad64aa47c776af1fa59123853f05718da840f6103b597b713c153b3b0d",
     );
-    const others = [...lessonGuides]
+    const others = previousGuides
       .filter(([key]) => key !== id)
       .map(([key, guide]) => [
         key,

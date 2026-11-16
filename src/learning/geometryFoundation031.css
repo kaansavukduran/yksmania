@@ -1,0 +1,289 @@
+.g031-lab {
+  /* The explanation calls this angle orange. UI themes must not turn its
+     scientific color key green or yellow. */
+  --g031-first: #ffad94;
+  --g031-second: var(--mint);
+  --g031-third: color-mix(in srgb, var(--text) 75%, #7dacf0 25%);
+  padding: clamp(1rem, 3vw, 1.7rem);
+  border: 1px solid var(--border);
+  border-radius: 0.9rem;
+  overflow-wrap: anywhere;
+}
+:root[data-theme="light"] .g031-lab {
+  --g031-first: #a94327;
+}
+@media (prefers-color-scheme: light) {
+  :root[data-theme="system"] .g031-lab {
+    --g031-first: #a94327;
+  }
+}
+.g031-lab .lab-heading h2 {
+  margin-top: 0;
+}
+.g031-lab .lab-heading p {
+  max-width: 72ch;
+}
+.g031-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1.1rem 1.7rem;
+  align-items: center;
+  margin: 1.4rem 0;
+}
+.g031-range {
+  display: grid;
+  gap: 0.6rem;
+  min-width: 0;
+}
+.g031-range > span {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.2rem 1rem;
+}
+.g031-range output {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+.g031-range input {
+  width: 100%;
+  min-height: 2.75rem;
+  margin: 0;
+  accent-color: var(--accent);
+}
+.g031-check {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-height: 2.75rem;
+}
+.g031-check input {
+  width: 1.15rem;
+  height: 1.15rem;
+  accent-color: var(--accent);
+  flex-shrink: 0;
+}
+.g031-figure {
+  display: block;
+  width: 100%;
+  max-width: 52rem;
+  height: auto;
+  margin: 1rem auto;
+  overflow: visible;
+  color: var(--text);
+  background: var(--bg);
+  border-radius: 0.65rem;
+}
+.g031-figure text {
+  font-size: var(--g031-svg-font, 23px);
+  fill: var(--text);
+  font-family: inherit;
+  paint-order: stroke;
+  stroke: var(--bg);
+  stroke-width: 5px;
+  stroke-linejoin: round;
+}
+.g031-line {
+  stroke: var(--text);
+  stroke-width: 2.7;
+  fill: none;
+}
+.g031-triangle {
+  stroke: var(--text);
+  stroke-width: 2.7;
+  fill: var(--mint);
+  fill-opacity: 0.13;
+  stroke-linejoin: round;
+}
+.g031-dot circle {
+  fill: var(--text);
+}
+.g031-sector {
+  stroke-width: 1.6;
+  fill-opacity: 0.38;
+}
+.g031-first {
+  fill: var(--g031-first);
+  stroke: var(--g031-first);
+}
+.g031-second {
+  fill: var(--g031-second);
+  stroke: var(--g031-second);
+}
+.g031-third {
+  fill: var(--g031-third);
+  stroke: var(--g031-third);
+}
+.g031-first-line {
+  stroke: var(--g031-first);
+  stroke-width: 4;
+}
+.g031-second-line {
+  stroke: var(--g031-second);
+  stroke-width: 4;
+}
+.g031-helper {
+  stroke: var(--muted);
+  stroke-dasharray: 7 5;
+  stroke-width: 2.5;
+}
+.g031-right-mark {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2.5;
+}
+.g031-label-line {
+  stroke: var(--accent);
+  stroke-width: 1.5;
+}
+.g031-drag-handle {
+  r: var(--g031-hit-radius, 25px);
+  fill: transparent;
+  stroke: none;
+  cursor: grab;
+  touch-action: none;
+}
+.g031-drag-handle:active {
+  cursor: grabbing;
+}
+.g031-drag-ring {
+  fill: var(--accent);
+  fill-opacity: 0.13;
+  stroke: var(--accent);
+  stroke-width: 2;
+  pointer-events: none;
+}
+.g031-angle-a circle,
+.g031-angle-a text {
+  fill: var(--g031-first);
+}
+.g031-angle-b circle,
+.g031-angle-b text {
+  fill: var(--g031-second);
+}
+.g031-angle-c circle,
+.g031-angle-c text {
+  fill: var(--g031-third);
+}
+.g031-square {
+  fill-opacity: 0.14;
+  stroke-width: 2;
+}
+.g031-similar-piece {
+  fill: var(--accent);
+  fill-opacity: 0.25;
+  stroke: var(--accent);
+  stroke-width: 3;
+}
+.g031-faint {
+  fill-opacity: 0.04;
+}
+.g031-center {
+  fill: var(--accent);
+  stroke: var(--bg);
+  stroke-width: 2;
+}
+.g031-incircle {
+  fill: var(--accent);
+  fill-opacity: 0.09;
+  stroke: var(--accent);
+  stroke-width: 2.5;
+}
+.g031-circumcircle {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2.5;
+}
+.g031-evidence {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+  gap: 0.8rem;
+  margin: 1.2rem 0;
+}
+.g031-evidence > div {
+  padding: 0.85rem 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  min-width: 0;
+}
+.g031-evidence dt {
+  color: var(--muted);
+  font-size: 0.9em;
+}
+.g031-evidence dd {
+  margin: 0.3rem 0 0;
+  color: var(--text);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.g031-insight {
+  border-inline-start: 3px solid var(--mint);
+  padding: 0.8rem 1rem;
+  margin: 1.2rem 0;
+  background: var(--bg);
+}
+.g031-caution {
+  border-color: var(--guidance);
+}
+.g031-steps {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+}
+.g031-steps > p {
+  margin: 0 0 0.9rem;
+}
+.g031-steps > div,
+.g031-presets,
+.g031-modes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+.g031-lab button {
+  min-height: 2.75rem;
+  white-space: normal;
+}
+.g031-modes {
+  margin: 1rem 0;
+}
+.g031-modes button[aria-pressed="true"] {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+.g031-footnote {
+  color: var(--muted);
+  font-size: 0.85em;
+  margin: 1.5rem 0 0;
+}
+.g031-reveal {
+  animation: g031-reveal 300ms ease-out;
+}
+@keyframes g031-reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 560px) {
+  .g031-lab {
+    padding: clamp(10px, 2.5vw, 14px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .g031-lab *,
+  .g031-lab *::before,
+  .g031-lab *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+:root[data-motion="off"] .g031-lab * {
+  animation: none !important;
+  transition: none !important;
+}

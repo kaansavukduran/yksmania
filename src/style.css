@@ -12,6 +12,8 @@
   --accent-text: #24201d;
   --mint: #c0dfc8;
   --danger: #ffaaa8;
+  --repair: var(--accent);
+  --guidance: var(--accent);
   --text-scale: 1;
   --font-display:
     "Bricolage Grotesque Variable", -apple-system, BlinkMacSystemFont,
@@ -46,6 +48,24 @@
   --danger: #ffb5b5;
   color-scheme: dark;
 }
+/* Matrix changes the reading surfaces and interface accents. Scientific
+   diagrams retain their subject colors, and errors remain visibly red. */
+:root[data-theme="matrix"] {
+  --bg: #080d0b;
+  --surface: #101a15;
+  --surface-2: #19271f;
+  --text: #e5efe7;
+  --muted: #a7baac;
+  --border: #64816d;
+  --hover-bg: #1c2b21;
+  --accent: #88e8a2;
+  --accent-text: #0b2011;
+  --mint: #b9ebc7;
+  --danger: #ffaaa8;
+  --repair: #ffaaa8;
+  --guidance: #f0cf89;
+  color-scheme: dark;
+}
 @media (prefers-color-scheme: light) {
   :root[data-theme="system"] {
     --bg: #f5f3ee;
@@ -64,6 +84,44 @@
 :root[data-font="lexend"] {
   font-family: Lexend, sans-serif;
   --font-display: Lexend, sans-serif;
+}
+.theme-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr));
+  gap: 0.65rem;
+}
+.theme-choice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  min-width: 0;
+  min-height: 3.25rem;
+  padding: 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  background: var(--bg);
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+.theme-choice[aria-pressed="true"] {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+  background: var(--surface-2);
+}
+.theme-swatch {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  flex: 0 0 auto;
+}
+.theme-swatch-current {
+  background: #ffad94;
+  border: 3px solid #343d48;
+}
+.theme-swatch-matrix {
+  background: #88e8a2;
+  border: 3px solid #526d5a;
 }
 * {
   box-sizing: border-box;
@@ -233,7 +291,7 @@ small,
 }
 .secondary:hover,
 .icon-button:hover {
-  background: var(--border);
+  background: var(--hover-bg, var(--border));
 }
 .icon-button {
   width: 2.75rem;
@@ -1375,13 +1433,13 @@ progress::-moz-progress-bar {
   color: var(--mint);
 }
 .feedback.repair {
-  border-color: var(--accent);
+  border-color: var(--repair);
 }
 .feedback.repair strong {
-  color: var(--accent);
+  color: var(--repair);
 }
 .hint-box {
-  border-color: var(--accent);
+  border-color: var(--guidance);
   display: flex;
   align-items: flex-start;
   gap: 0.7rem;
@@ -1393,11 +1451,11 @@ progress::-moz-progress-bar {
   flex: 1;
 }
 .hint-box svg {
-  color: var(--accent);
+  color: var(--guidance);
   flex-shrink: 0;
 }
 .hint-box > .small {
-  color: var(--accent);
+  color: var(--guidance);
 }
 .practice-note textarea {
   min-height: 6rem;
@@ -2314,7 +2372,7 @@ progress::-moz-progress-bar {
     font-size: 1.9rem;
   }
   .settings-panel {
-    padding: 1.2rem;
+    padding: clamp(12px, 3vw, 1.2rem);
   }
   .import-panel {
     padding: 1.2rem;
@@ -3085,6 +3143,22 @@ progress::-moz-progress-bar {
   display: block;
   margin-top: 0.4rem;
   overflow-wrap: anywhere;
+}
+.settings-panel .date-control-row {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.settings-panel .date-control-row > input[type="text"] {
+  /* Reserve enough room for the entire day-first date before the calendar
+     button joins its row. At large text sizes the button moves below it. */
+  flex-basis: min(100%, 13ch);
+  padding-inline: min(0.8rem, 12px);
+}
+.settings-panel .toggle-row {
+  flex-wrap: wrap;
+}
+.settings-panel .toggle-row > span {
+  flex-basis: min(100%, 16ch);
 }
 .date-add > .date-control {
   flex: 1;

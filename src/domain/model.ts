@@ -5,7 +5,9 @@ import { helpLevelSchema, type QuestionGuidance } from "./questionHelpModel";
 export type Locale = "tr";
 export type Text = { tr: string };
 export const txt = (tr: string): Text => ({ tr });
-export const DEFAULT_EXAM_DATE = "2027-06-18";
+// Personal preparation target; this is not an official YKS exam date.
+// Only new/unset preferences use it. Previously saved dates remain unchanged.
+export const DEFAULT_EXAM_DATE = "2027-02-28";
 export const THEORY_DEADLINE = "2027-02-28";
 const date = z
   .string()
@@ -22,7 +24,9 @@ const id = z.string().min(1).max(160);
 export const settingsSchema = z.object({
   // Read earlier English preferences/backups without losing the rest of the state.
   locale: z.enum(["tr", "en"]).transform(() => "tr" as const),
-  theme: z.enum(["dark", "light", "system", "contrast"]),
+  // Earlier explicit preferences still load, including backups. The interface
+  // offers the current dark theme and Matrix without rewriting an old choice.
+  theme: z.enum(["dark", "light", "system", "contrast", "matrix"]),
   scale: z
     .number()
     .int()

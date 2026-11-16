@@ -1,3 +1,23 @@
+# 0.19.0 kaynak kabulü — 17 Kasım 2026
+
+Tam Vitest koleksiyonu iki worker ile 197 dosya/1.786 test PASS oldu; test atlanmadı. Yeni geometri modelleri, kaynak soruları, yeni başlıkların bağımsız ilerlemesi, önceki 479 sıra ve bütün tarihî soru/rehber hash’leri denetlenir. Geçmiş global adet beklentileri tarihî kohortlara daraltılırken eski hash ve kimlikler değiştirilmedi; büyüyen koleksiyonun 520 ders/486 rehber/5.943 soru/485 plan başlığı ayrı gerçek birleşim testindedir.
+
+C2 üretim derlemesinde 22 senaryo geçti: planlama 10, ayarlar 7, video 4, atom renkleri 1. 320px, yüzde 200 arayüz/yüzde 150 yazı, özel tarih, eski tema tercihi, not ve çevrimdışı soğuk açılış denetlendi. Gerçek ekran görüntüsü, ilk sürümde tema yazısının harf harf bölünmesini ve tarihin kırpılmasını yakaladı; sütun/padding/tarih alanı düzeltildi ve gerçek metin satırı/genişliği ölçüldü. Son küçük tipografi sınırı, en yüksek ölçekte uzun erişilebilirlik başlığının son harfinin ayrı satıra düşebilmesidir; içerik kırpılmaz.
+
+C2 geometri kontrolünde Matrix hover kontrastı 3,63:1 bulundu; metin ve kenarlık için ayrı koyu hover zeminiyle düzeltildi. İlk sürükleme testi, hiç yazılmamış yeni profilin IDB kaydını var sanıyordu; test gerçek tercih eylemiyle kayıt oluşturur, ürün sırf test için otomatik kayıt yazmaz. C3’te dört geometri senaryosu geçti: tüm 6 modelde gerçek sayılar/SVG, klavye/dokunma, sürükleme, çevrimdışı reload,320px ve en yüksek ölçek. Son C4 bilimsel renk düzeltmesi, Matrix’in 'turuncu açı' bölgesini yeşile çevirmesini engeller; bu yeni CSS assertion ile ayrıca denetlenir.
+
+Kaynak Electron C3’te önceki 93 ve yeni 6 modelden ortak 99 akış, reload ve aynı profilde süreç yeniden açılışı PASS; renderer hatası 0. Tarih, not, taslak, deneme, sıfırlama ve eski kontroller korundu. Bu, paketli Windows/Linux veya fiziksel cihaz kurulumu değildir; gerçek paket kabulü CI ile ayrıca tamamlanacaktır.
+
+Gerçek yerel 0.18.2→C4/0.19.0 web güncellemesi geçti. Eski UI’den 5/5 paragraf, gerçek 3/7/21 tarihleri, yarım rasyonel çalışma, yanıtlı/işaretli 40 soruluk Türkçe branş denemesi, özel 25/05/2027 tarihi, Light/Lexend ve notlar oluşturuldu. Documents/catalogue depolarına yalnız zararsız sentetik sentinel kondu. Gerçek güncelleme aktivasyonunda üç ham store bütünü korundu; otomatik state yazımı 0. Yeni açı/benzerlik modelleri ilk kez çevrimdışı açıldı, değişen değerler reload ve tarayıcı süreci yeniden açılışında korundu; eski öğrenme/XP değişmedi. Bu yerel aynı-köken web deneyidir; public CDN veya native sürüm yükseltmesi iddiası değildir.
+
+İlk tarayıcı çağrısı eski 0.11.0 önizleme portuna yönelmişti; bu koşu kabul dışı bırakıldı. Playwright varsayılan sunucusu artık strictPort kullanır ve rastgele açık bir sunucuyu yeniden kullanmaz. Haricî mevcut sunucu için BASE_URL açıkça verilir; sürüm/CSS baytları test öncesinde doğrulanır.
+
+C4 klasör yolu 99 akışı, tam tarayıcı koleksiyonu, paketli CI, Vercel/Pages yayın ve release kabulü henüz bu bölümde tamamlandı diye sunulmaz; gözlenen sonuçlar sonraki kayıtta güncellenecek. Android imzası kullanıcı tarafından ertelendi; yeni APK, fiziksel kurulum, portable taşıma veya native iki sürüm yükseltmesi iddia edilmez. Video URL eşlemesi ile gerçek YouTube oynatılması farklıdır; tüm videoların güncel erişilebilirliği doğrulanmadı.
+
+---
+
+## Önceki kabul kayıtları
+
 # 0.18.2 son yayın kabulü — 16 Kasım 2026
 
 Yayın kaynağı [19590e28](https://github.com/kaansavukduran/yksmania/commit/19590e28b23e091a00610526f7cd8201d278765a). [CI 43901085247](https://github.com/kaansavukduran/yksmania/actions/runs/43901085247) tamamlandı: 191 dosyada 1.743/1.743 birim, ilk tamamlanan tam koşuda 1.242/1.242 tarayıcı (46,2 dakika). Gerçek paketli Windows ve Linux’ta özgün masaüstü runner’ı geçti; iki platformda renderer hatası 0. Android işi açık kapsam gereği atlandı. CI araçlarının deprecation uyarıları uygulamanın console ölçümüyle karıştırılmaz.

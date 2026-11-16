@@ -1,3 +1,30 @@
+# 0.19.0 kaynak adayı — 17 Kasım 2026
+
+Altı geometri temeli, gerçek şekil modelleri, konuya bağlı videolar ve Matrix teması eklendi. Önceki 479 çalışma kimliği/sırası ve kayıtlar korunur; yeni altı konu bağımsız izlenir. Kaynak kapsamı ve teknik kabul ayrı tutulur.
+
+| Alan | Bu turun sonucu |
+| --- | --- |
+| 1. Kod | Altı geometri ders/rehber/özet/soru kaydı ve SVG modelleri bağlandı. Yeni videolar gecikmeli yüklenir; hesap veya PDF yükleme gerektirmez. |
+| 2. Konular | 6 yeni TYT geometri ünitesi: 48 bölüm, 20 çözümlü örnek, 26 hatırlama. Toplam 486 rehber; 485 plan başlığı. 341 katalog başlığına bölünerek MEB tamamlanma yüzdesi üretilmez. |
+| 3. Kopya kağıtları | 6 yeni kısa özet: 30 formül/koşul bölümü, 12 örnek, 18 hatırlama. Eski 480 özet korunur; toplam 486. |
+| 4. Sorular | 60 yeni özgün beş seçenekli, gerekçeli soru. Toplam 5.943 soru: 3.303 tam, 2.640 kısmi yardım. Eski sorular ve anahtarları aynı kalır. |
+| 5. Denemeler | TYT 120/165 dakika, AYT Sayısal 80/180 dakika ve 15 branş pratiği korunur. Yeni soru havuzu mevcut deneme üretimine katılır; başlanmış kâğıtlar yeniden oluşturulmaz. |
+| 6. İnteraktif modeller | Açı ilişkileri, taşınabilir köşe/açı toplamı, çizilebilir üçgen sınırı, Pisagor/Öklid, benzerlik alanı ve dört merkez için 6 yeni model. Görsel ve sayı aynı hesap modelinden gelir. |
+| 7. Pedagoji | Kaynak/örnek/anahtarlar bağımsız incelendi; sekiz yanlış seçenek geri bildirimi netleştirildi. Video ve keşif puan oluşturmaz. İlk çalışma gününden 3/7/21 tekrarlar korunur. |
+| 8. Tasarım | Matrix, mevcut temanın yanındadır. Yeni profillerin kişisel hedefi 28/02/2027; kayıtlı farklı tarihler korunur. Dar görünümde tarih ve tema düğmeleri yeniden düzenlendi. Hover kontrastı ve turuncu açı/tema renk ilişkisi düzeltildi. |
+| 9. Testler | Tam 1.786 birim testi/197 dosya PASS. C2’de 22 ayar/plan/video/atom senaryosu, C3’te 4 geometri senaryosu ve kaynak Electron’da 99 model/reload/süreç açılışı PASS. Son C4 klasör yolu, web güncelleme ve tam tarayıcı kabulü sürüyor; önceki sonuçlar otomatik son yayın kabulü sayılmaz. |
+| 10. GitHub | Dal forge/visual-learning-031, taban 6623f6a. Üretim kaynağı ve final CI kaydı kabulden sonra bağlanacak. |
+| 11. Yayın | Vercel/Pages’in yeni 0.19.0 kaynağına geçtiği henüz bu kayıtla iddia edilmez. Son gerçek durum QA dosyasına yazılır. Android imzası ertelendi; yeni APK yok. |
+| 12. Sonraki iş | Çokgenler/özel dörtgenler, sentetik çember/daire, katı cisimler; kalan 2.640 yardım ve diğer kaynak alt becerileri. Bütün PDF/MEB/ÖSYM arşivi bitmedi. |
+
+[PDF işleme kaydı](docs/PDF_SOURCE_PROGRESS.md): üç kaynaktan seçili 31 sayfa metin/22 sayfa şekil; 34 PDF’nin açık uygulama kullanımı kanıtlanabilen alt sınır. Bu 34, bitmiş PDF sayısı değildir. Kanonik özel defterde yalnız 3 satır eklemeli güncellendi; bütün PDF kapanış statüleri korunur. 135 atıf, 6 ders/60 farklı soruya bağlıdır.
+
+Videolar 15 dersin 485 anlatımla eşleşti: 489 kaynak alt konu grubu ve 2.033 farklı URL. Güncel oynatma ve bütün video içeriği doğrulanmadı. Kişisel görev/takvim, özel belge adresi veya ham kitap depoya eklenmedi. [Konu CSV’si](docs/CONTENT_INVENTORY.csv) gerçek kayıt koleksiyonundan yeniden üretilir.
+
+---
+
+## Önceki kaynak ve kabul kayıtları
+
 # 0.18.2 doğrulanmış yayın — 16 Kasım 2026
 
 30 konudaki 300 mevcut sorunun öğretici çözümü genişletildi. 510 ön bilgi paragrafı, 300 yöntem, 900 çözüm adımı, 1.500 seçenek gerekçesi, 300 sık hata ve 300 sonuç denetimi eklendi. Yeni soru veya yeni model eklenmedi. Matematikte ölçek; dalgada harmonik koşul; bitkilerde yaşam döngüsü; virüslerde kapsid stoku açıklaştırıldı.

@@ -1,4 +1,5 @@
 import { legacy026TheoryIds } from "./legacy026";
+import { geometryFoundation031Sheets } from "./geometryFoundation031";
 import { forge025MathTopics } from "./forge025Math";
 import { forge025ChemistryTopics } from "./forge025Chemistry";
 import { forge025HumanitiesTopics } from "./forge025Humanities";
@@ -310,5 +311,6 @@ export const builtInCheatSheets = new Map<string, CheatSheet>(
       .map((lesson) => lessonSheet(lesson.id))
       .filter((sheet): sheet is CheatSheet => !!sheet),
     ...forge012TurkishCheatSheets,
+    ...geometryFoundation031Sheets,
   ].map((sheet) => [sheet.topicId, sheet]),
 );

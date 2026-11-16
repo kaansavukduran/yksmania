@@ -13,9 +13,11 @@ export default defineConfig({
   webServer: process.env.BASE_URL
     ? undefined
     : {
-        command: "npm run preview -- --port 4173",
+        command: "npm run preview -- --port 4173 --strictPort",
         url: "http://127.0.0.1:4173",
-        reuseExistingServer: !process.env.CI,
+        // An unrelated old preview must never count as this build's QA.
+        // Use BASE_URL explicitly when testing an already running server.
+        reuseExistingServer: false,
       },
   reporter: [["list"], ["html", { open: "never" }]],
 });

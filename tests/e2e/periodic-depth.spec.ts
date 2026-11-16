@@ -1,3 +1,4 @@
+import { setThemePreference } from "./helpers/theme";
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 const ids = [
@@ -63,7 +64,7 @@ test("new comparison stays accessible with large text on a touch phone", async (
   page,
 }) => {
   await page.goto("/#/settings");
-  await page.getByLabel("Tema", { exact: true }).selectOption("light");
+  await setThemePreference(page, "light");
   await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
   await page.getByLabel("Yalnızca yazı boyutu %", { exact: true }).fill("150");
   await page.setViewportSize({ width: 320, height: 844 });

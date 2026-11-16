@@ -161,6 +161,10 @@ const messages: Record<string, string> = {
   general: "Genel",
   appearance: "Görünüm ve erişilebilirlik",
   theme: "Tema",
+  currentTheme: "Mevcut tema",
+  matrixTheme: "Matrix",
+  legacyThemeHelp:
+    "Önceden kaydettiğin tema korunuyor. Aşağıdan yeni bir tema seçebilirsin.",
   dark: "Koyu",
   light: "Açık",
   system: "Sistem",
@@ -200,7 +204,7 @@ const messages: Record<string, string> = {
   releasePage: "Sürüm sayfasını aç",
   examDate: "Hedef sınav tarihi",
   examHelp:
-    "Planlama için varsayılan 18 Haziran 2027. İstersen değiştirebilirsin.",
+    "Kişisel hazırlık hedefi için varsayılan 28 Şubat 2027. İstersen değiştirebilirsin; bu resmî YKS tarihi değildir.",
   scaleError: "80–200 arasında, 5’in katı bir değer yaz.",
   restartPending: "Kaydedilmemiş değişiklikler var. Önce kaydı yeniden dene.",
   closeSession: "Çalışmayı bırakmadan çık",

@@ -1,3 +1,4 @@
+import { setThemePreference } from "./helpers/theme";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { initialState } from "../../src/domain/model";
@@ -103,7 +104,7 @@ test("YKS-013 completed daily topics retain the actual four-of-five score offlin
   await expect(page.locator(".result-stats")).toContainText("4/5");
   await page.getByRole("button", { name: "Bugüne dön", exact: true }).click();
   await card(page)
-    .getByText("Tüm çalışma sırası ve tarihler (479)", { exact: true })
+    .getByText("Tüm çalışma sırası ve tarihler (485)", { exact: true })
     .click();
   const full = card(page)
     .locator(".plan-full-order li")
@@ -126,7 +127,7 @@ test("YKS-013 existing question-only records show their score and allow explicit
   await expect(row(page)).toContainText(
     "3 bağımsız doğru · 1 soruda ipucu kullanıldı",
   );
-  await expect(card(page)).toContainText("479 kalan konu");
+  await expect(card(page)).toContainText("485 kalan konu");
   await page.evaluate(() => {
     const put = IDBObjectStore.prototype.put;
     IDBObjectStore.prototype.put = function (
@@ -150,10 +151,10 @@ test("YKS-013 existing question-only records show their score and allow explicit
     .getByRole("button", { name: "Konuyu çalıştım", exact: true })
     .click();
   await expect(row(page)).toContainText("Konu tamamlandı");
-  await expect(card(page)).toContainText("478 kalan konu");
-  await expect(card(page, "Soru planı")).toContainText("478 kalan konu");
+  await expect(card(page)).toContainText("484 kalan konu");
+  await expect(card(page, "Soru planı")).toContainText("484 kalan konu");
   await nav(page, "Ayarlar");
-  await page.getByLabel("Tema", { exact: true }).selectOption("light");
+  await setThemePreference(page, "light");
   await page
     .getByRole("slider", { name: "Arayüz ölçeği", exact: true })
     .fill("200");
@@ -292,5 +293,5 @@ test("YKS-013 external question work has no invented score and stays visible on 
     "soru sonucu kaydedilmedi",
   );
   await expect(row(page, "Soru planı")).not.toContainText("Son sonuç");
-  await expect(card(page)).toContainText("479 kalan konu");
+  await expect(card(page)).toContainText("485 kalan konu");
 });
