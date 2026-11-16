@@ -1,3 +1,19 @@
+# 0.18.1 adayının kabul kaydı
+
+1.663/1.663 birim testi ve TypeScript geçti. Üretim derlemeleri normal/prefix için 271 gerekli çevrimdışı varlık içerir: 25.963.266 / 25.963.107 byte; en büyük dosya 2.865.964 byte, 5 MiB sınırının altındadır.
+
+Gerçek yeni 11 E2E ilk koşuda 11/11 geçti: altı dersin kademeli yardım/sonuç/yanlışlar akışı, üç düzeltilmiş sorunun normal UI akışı ve iki anlatım/özet profili. İki okuyucu profili gerçek Lexend 15/45 px ile çalıştı; 320 px görünümde belge taşmadı, dört axe raporunda bütün önem düzeyleri sıfırdı. Yeni 11 koşu uygulama konsol sayacı ölçmedi; uygulama uyarısı sıfır iddiası kurulmaz.
+
+Dokuz eski narrative ve bir temel soru seti 10/10 ilk koşuda geçti. Eski ikinci soru, yazılan yanıt, gerekçe ve offline reload beklentileri korundu. Ek normal/telefon iki refakat testi 2/2 geçti; telefon sözcükleri gerçek 45 px Lexend’de tek satırlı parçalardır. Bu 23 hedef kontrol, bütün 1.225 E2E koşusu değildir.
+
+0.18 önceki tam CI: 1.198 PASS/16 FAIL. Aynı kaynakla yayımlanmış Vercel turu 1.201 PASS/13 FAIL verdi; üç ek feedback ve bir sonuç reload’unda benzer başlangıç belirtisi, iki özet akışında ilk service worker hazırlığı süresi görüldü. Bu nedenle boş başlangıç yalnız yerel preview’ye atfedilmez. Katman açıklamasının onaylı görünümüyle eski beklenen metin uyuşmazlığı ve 31 pakette gizlenmiş yazılı hatırlama onarıldı; telefon sınırındaki sözcük sadeleştirildi. Dokuz offline reload başarısızlığının ilk yerel tekrarında yeni belgenin kökü boştu; üç JS isteği iptal edilmişti. Kesin iptal nedeni ve o ilk belgenin ham IDB zaman çizgisi yakalanmadı. Sonraki geçişler ilk başarısızlığı geçersiz kılmaz; pasif loader/cache/IDB tanısı eklenir. Süre artırma veya assertion kaldırmayla geçiş üretilmedi.
+
+Gerçek yerel Electron 93 ailede çevrimdışı kullanım/reload ve aynı profilde süreç yeniden açılışını geçti; renderer hatası 0. Prefix 93 ailede ilk çevrimdışı kullanım/reload geçti, renderer hatası 0; eksik tek zararsız favicon.ico isteği ayrı kaydedildi. Son tam CI/paket/yayın kapısı devam eder. Android imzası ertelendi; fiziksel cihaz, temiz kurulum, portable taşıma ve native sürümler arası yükseltme bu kabulün kapsamı sayılmaz. Önceki gerçek 0.17→0.18 web güncelleme kanıtı aşağıda korunur.
+
+---
+
+## Önceki kaynak ve kabul kayıtları
+
 # Güncel 0.18 kaynak adayı
 
 Doğrulanmış çalışma sırasındaki 479 başlığın tamamı anlatım ve bağımsız soruyla eşleşir. Kaynakta 480 ayrıntılı rehber, 480 yerleşik kopya kağıdı ve 5.883 özgün soru vardır. 0.17 üzerine 130 yeni anlatım eklenmiş; kısa kalan 28 eski anlatım 553 bölüm, 168 çözümlü örnek ve 178 hatırlama etkinliğiyle derinleştirilmiştir. İleri sorular 28 ayrı setten açılır.

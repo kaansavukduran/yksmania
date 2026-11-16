@@ -1,0 +1,502 @@
+[
+  {
+    "id": "f093-membrane-1",
+    "identity": "[\"f093-membrane-1\",\"O₂ derişimi hücre dışında 8, içinde 2 birimdir. Zar O₂’yi geçiriyor; sıcaklık sabit ve elektriksel etki ihmal ediliyor. Protein veya ATP kullanımı olmayan ilk net O₂ geçişi hangisidir?\",\"\",[\"Dıştan içe basit difüzyon\",\"İçten dışa aktif taşıma\",\"Dıştan içe fagositoz\",\"İçten dışa ozmoz\",\"Derişim farkına rağmen hiçbir koşulda geçiş olmaz\"],0,\"O₂ için 8’den 2’ye, dıştan içe basit difüzyon beklenir. Aktif taşıma için enerji ve uygun pompa kanıtı yoktur. Fagositoz büyük parçacık/vezikül yoludur. Ozmoz suyun geçişidir. Zarın O₂’yi geçirdiği verildiğinden son seçenek de yanlıştır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Difüzyonda taneciklerin rastgele hareketi iki yönde de sürebilir; net geçiş, karşılıklı geçişler arasındaki farktır. Geçirgen bir zarda yüksüz madde için derişim farkı, pasif net yönü belirlemeye yardım eder.",
+        "Basit difüzyon fosfolipit tabakadan, kolaylaştırılmış difüzyon uygun zar proteini üzerinden gerçekleşir. Ozmozda izlenen madde sudur; büyük bir parçacığın zar kesesine alınması ise farklı bir taşıma yoludur."
+      ],
+      "strategy": "O₂ için önce derişim okunu kur; ardından sorudaki protein, enerji ve taşınan madde kanıtlarını aynı okla birlikte değerlendir.",
+      "steps": [
+        "Dış ve iç derişimleri aynı madde için karşılaştır: dışta 8, içte 2 birim O₂ vardır. Başlangıç farkı 8 − 2 = 6 birimdir; zarın bu maddeyi geçirdiği açıkça verilmiştir.",
+        "Pasif ilk net yön yüksek O₂ derişiminden düşük olana, yani dıştan içedir. Tek tek O₂ moleküllerinin ters yönde hareket edebilmesi bu net yönle çelişmez.",
+        "Protein kullanılmaması bu geçişi basit difüzyonla eşleştirir. Su taşınmadığından ozmoz, büyük parçacık kesesi oluşmadığından fagositoz; enerjiyle ters yönde pompalama verilmediğinden aktif taşıma seçilmez."
+      ],
+      "optionReasons": [
+        "Doğru. O₂ geçebiliyor ve 8’den 2’ye ilk net hareket dıştan içedir; protein olmadan fosfolipit tabakadan geçiş basit difüzyona uyar.",
+        "Yanlış. İçten dışa yön, verilen O₂ farkının tersidir. Üstelik ATP veya pompa kullanılmadığı belirtilmiştir; aktif taşıma kanıtı yoktur.",
+        "Yanlış. Fagositoz büyük bir parçacığın zarla çevrili keseye alınmasıdır; küçük O₂ moleküllerinin verilen geçişinde böyle bir kese bulunmaz.",
+        "Yanlış. Ozmoz suyun seçici geçirgen zardan geçişidir. Burada taşınan madde O₂ olduğundan olayı ozmoz diye adlandırmak maddeyi değiştirir.",
+        "Yanlış. Zarın O₂’yi geçirdiği ve başlangıç farkının bulunduğu veriliyor; bu koşullarda her türlü geçişi reddetmek geçirgenlik öncülüne aykırıdır."
+      ],
+      "commonError": "“Hücreye giren her madde aktif taşınır” sanmak; hücreye göre yönü, derişim farkına göre yönün yerine kullanmak.",
+      "check": "8 ve 2 sayılarını yer değiştirsen ilk net okun da ters dönmesi gerekir. Aynı dıştan içe yanıtını koruyorsan hücre yönünü ezberlemiş, gradyanı izlememişsindir."
+    }
+  },
+  {
+    "id": "f093-membrane-2",
+    "identity": "[\"f093-membrane-2\",\"Glikoz dışta 6, içte 2 birimken uygun taşıyıcı üzerinden hücreye net geçiyor. Doğrudan ATP tüketilmiyor ve deney boyunca başlangıç gradyanı korunuyor. Bu gözlemin doğru yorumu hangisidir?\",\"\",[\"Protein varsa mutlaka aktif taşımadır\",\"Kolaylaştırılmış difüzyonla uyumludur\",\"Büyük parçacığın fagositozudur\",\"Su aktif olarak pompalanmıştır\",\"Net yön azdan çoğadır\"],1,\"Glikozun 6’dan 2’ye uygun proteinle ve doğrudan ATP olmadan geçişi kolaylaştırılmış difüzyonla uyumludur. Protein tek başına aktif taşıma kanıtı değildir. Glikoz için vezikül veya su taşıması verilmemiştir. Net yön çoktan azadır; azdan çoğa değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Zar proteinleri hem pasif hem enerjiyle eşlenmiş taşıma yollarında görev alabilir. Bu nedenle bir taşıyıcı görmek, taşımanın enerji kaynağını tek başına belirlemez.",
+        "Kolaylaştırılmış difüzyonda uygun protein üzerinden madde kendi gradyanı yönünde net geçebilir. Doğrudan ATP tüketilmemesi, başka bir gradyana eşlenmiş bütün taşıma olasılıklarını tek başına dışlamaz; “uyumlu” yorumunu kesin mekanizma kanıtından ayırmak gerekir."
+      ],
+      "strategy": "Gözlemi madde–protein–net yön–doğrudan enerji başlıklarında topla; seçeneğin olasılık mı, zorunluluk mu ileri sürdüğünü ayrıca sınayarak karar ver.",
+      "steps": [
+        "Glikozun hücreye girişi dıştaki 6 birimden içteki 2 birime doğrudur. Deney boyunca korunan bu fark, net geçişin çoktan aza olduğunu gösterir.",
+        "Uygun taşıyıcı vardır ve doğrudan ATP tüketilmemektedir. Gradyan yönündeki bu protein aracılı geçiş, kolaylaştırılmış difüzyonun koşullarıyla uyumludur.",
+        "“Mutlaka aktif” yargısı yalnız proteinden çıkarılamaz. Diğer seçeneklerdeki fagositoz, su pompalama ve azdan çoğa yön de gözlemle uyuşmaz; yalnız uyumluluk bildiren yorum kalır."
+      ],
+      "optionReasons": [
+        "Yanlış. Taşıyıcı protein kolaylaştırılmış difüzyonda da bulunabilir; protein varlığından “mutlaka aktif” sonucu çıkmaz.",
+        "Doğru. Glikozun 6’dan 2’ye, uygun taşıyıcıyla ve doğrudan ATP tüketmeden geçişi kolaylaştırılmış difüzyonla uyumludur; seçenek bundan daha güçlü bir kesinlik istemez.",
+        "Yanlış. Glikoz küçük çözünmüş bir moleküldür ve uygun taşıyıcıdan geçmektedir. Büyük parçacığı keseyle alma olayı verilmemiştir.",
+        "Yanlış. Deney glikozun net geçişini izliyor; aktif su pompalaması bildirmiyor. Taşınan maddeyi suyla değiştirmek gözlemi açıklamaz.",
+        "Yanlış. Dıştaki 6’dan içteki 2’ye hareket çoktan azadır. “Azdan çoğa” demek soruda korunduğu belirtilen başlangıç gradyanını ters okumaktır."
+      ],
+      "commonError": "Proteini ATP harcamasının eş anlamlısı sanmak veya doğrudan ATP kullanılmamasından bütün olası dolaylı enerji ilişkilerinin yokluğunu kesinleştirmek.",
+      "check": "İddiayı “bu gözlem kolaylaştırılmış difüzyonla çelişiyor mu?” diye yeniden sor. Yön ve protein koşulları çelişmiyor; fakat gözlenmeyen bir enerji eşlenmesi hakkında kesin hüküm eklememelisin."
+    }
+  },
+  {
+    "id": "f093-membrane-3",
+    "identity": "[\"f093-membrane-3\",\"Na⁺ için zar potansiyeli sıfır kabul ediliyor. Hücre içinde 2, dışında 8 birim Na⁺ varken iyon uygun pompayla içten dışa taşınıyor. ATP kesilince bu pompa duruyor. Hangisi doğrudur?\",\"\",[\"Yön hücre dışına olduğu için mutlaka pasiftir\",\"Na⁺ büyük protein olduğu için ekzositozdur\",\"ATP kullanan, derişim gradyanına karşı taşıma vardır\",\"Bu geçiş yalnız su hareketidir\",\"ATP’nin varlığı pompa proteini olmasa da yeterlidir\"],2,\"Verilen sıfır potansiyel koşulunda 2’den 8’e çıkış derişim gradyanına karşıdır; ATP bağımlı uygun pompa aktif taşımayı destekler. Hücre dışı yön pasiflik ölçütü değildir. Na⁺ küçük iyondur, vezikül kanıtı yoktur. Ozmoz su içindir. ATP tek başına seçici protein yolu oluşturmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "İyonlarda pasif yön, hem derişim hem elektriksel etkiyi kapsayan elektrokimyasal gradyanla ilgilidir. Zar potansiyeli sıfır kabul edildiğinde sorudaki karşılaştırma derişim bileşenine indirgenebilir.",
+        "Birincil aktif taşımada uygun pompa, ATP’den sağlanan enerjiyi madde taşınmasına bağlar. ATP enerji kaynağıdır; seçici geçiş yolunun yerini tutmaz. İyon ile büyük protein veya vezikül yükü aynı yapı değildir."
+      ],
+      "strategy": "Sıfır potansiyel koşulunu kullanarak pompanın okunu kendiliğinden geçiş yönüyle karşılaştır; ATP kesilmesi deneyini ikinci kanıt olarak ekle.",
+      "steps": [
+        "Na⁺ içte 2, dışta 8 birimdir. Elektriksel etki sıfırlandığı için derişim yönündeki pasif eğilim 8’den 2’ye, dıştan içe olur.",
+        "Gözlenen pompa bunun tersine, 2’den 8’e içten dışa taşıyor. Bu ok, verilen koşullarda derişim gradyanına karşıdır.",
+        "ATP kesilince aynı pompanın durması enerji bağımlılığını destekler. Gradyana karşı yön ile uygun pompanın ATP bağımlılığı birlikte aktif taşıma yorumunu verir; yalnız dışarı yönü bir ölçüt değildir."
+      ],
+      "optionReasons": [
+        "Yanlış. Hücre dışına hareket etmek pasiflik ölçütü değildir. Burada 2’den 8’e çıkış, sıfır potansiyelde derişim gradyanına karşıdır.",
+        "Yanlış. Na⁺ küçük bir iyondur, büyük protein değildir. Zar pompası üzerinden iyon taşınması, salgı vezikülünün ekzositozu olarak adlandırılmaz.",
+        "Doğru. Pompa 2’den 8’e derişim farkına karşı taşır ve ATP kesilince durur; yön ile enerji deneyinin ortak sonucu aktif taşımadır.",
+        "Yanlış. İzlenen yük Na⁺ iyonudur. Yalnız su hareketi olan ozmoz, sorudaki iyon pompalamasını açıklamaz.",
+        "Yanlış. ATP enerji sağlar ama Na⁺ için seçici pompa proteini oluşturmaz. Sorudaki uygun pompa koşulunu kaldırarak aynı taşımayı garanti edemezsin."
+      ],
+      "commonError": "Hücreden dışarı olan her okun pasif olduğunu sanmak veya iyonun elektriksel koşulunu okumadan yalnız derişim kuralını bütün gerçek zarlara yaymak.",
+      "check": "Pompa durduğunda geriye kalan derişim eğilimini çiz: dıştan içe olmalıdır. Enerjiyle çalışan pompa bunun tersini yapıyorsa yön karşılaştırman tutarlıdır; gerçek 3 Na⁺/2 K⁺ çevrimi bu sorudan çıkarılmaz."
+    }
+  },
+  {
+    "id": "f093-membrane-4",
+    "identity": "[\"f093-membrane-4\",\"Her biri 1 L sabit hacimli iki bölmede X maddesinin başlangıç derişimi dışta 8 mol/L, içte 2 mol/L’dir. Kapalı sistemde tek bir adımda dıştan içe 1 mol X aktarılıyor; üretim ve tüketim yoktur. Yeni dış/iç derişimleri mol/L olarak hangisidir?\",\"\",[\"8 ve3\",\"9 ve1\",\"7 ve2\",\"7 ve3\",\"6 ve6\"],3,\"Her bölmede derişim değişiminin büyüklüğü Δn/V=1 mol/1 L=1 mol/L’dir. Dış derişim 8−1=7 mol/L, iç derişim 2+1=3 mol/L olur. Toplam X miktarı 7×1+3×1=10 mol olarak korunur. 8/3 madde yaratır; 9/1 aktarım yönünü ters okur; 7/2 madde kaybettirir. 6/6 toplam 12 mol verdiği için korunumla çelişir. Sayısal derişim değişimi, yalnız eşit hacimden değil açıkça verilen 1 L hacim ve 1 mol aktarımdan hesaplanır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Derişim c = n/V, madde miktarının hacme oranıdır; n mol, V litre ise c mol/L olur. V sabitken miktar değişimi Δn, derişimi Δc = Δn/V kadar değiştirir. Eşit hacimler iki taraftaki değişimin büyüklüğünü eşit yapar; bu büyüklüğün sayısal değeri için hacim de kullanılmalıdır.",
+        "Kapalı ve üretim–tüketim olmayan bir sistemde X miktarı korunur: bir bölmeden çıkan mol sayısı diğerine girer. Her bölmenin miktarı c×V ile bulunur; farklı hacimlerde yalnız derişimleri toplamak toplam madde miktarını vermez."
+      ],
+      "strategy": "Önce aktarılan molü her bölmenin litre hacmine bölerek derişim değişimini bul; kaynak ve alıcıya zıt işaretlerle uygula. Aday çifti hem mol korunumu hem aktarım yönüyle denetle.",
+      "steps": [
+        "X dıştan içe aktarılıyor: dış bölme kaynak, iç bölme alıcıdır. Her bölme 1 L ve aktarım 1 mol olduğundan derişim değişiminin büyüklüğü Δc = 1 mol/1 L = 1 mol/L’dir.",
+        "Dış derişimden 1 mol/L çıkar: 8 − 1 = 7 mol/L. İç derişime aynı büyüklüğü ekle: 2 + 1 = 3 mol/L. İstenen dış/iç sırasındaki çift 7 ve 3’tür.",
+        "Son miktarlar 7 mol/L×1 L = 7 mol ve 3 mol/L×1 L = 3 mol, toplam 10 moldür; başlangıçtaki 8 + 2 = 10 mol korunur. 9/1 çifti molü korusa da yönü ters; 8/3, 7/2 ve 6/6 çiftleri ise toplam miktarı bozar."
+      ],
+      "optionReasons": [
+        "Yanlış. 1 L dış bölmede derişimi 8 mol/L bırakıp içi 3 mol/L yapmak toplamı 10’dan 11 mole çıkarır; aktarımı kaynakta eksiltmemiş olursun.",
+        "Yanlış. 9 ve 1 mol/L toplam 10 molü korur ama içten dışa 1 mol aktarımına karşılık gelir; sorudaki dıştan içe yönün tersidir.",
+        "Yanlış. Dışı 7 mol/L yapıp içi 2 mol/L bırakmak toplamı 9 mole indirir. Kaynağın 1 mol kaybını alıcıya eklemediğin için madde kaybolur.",
+        "Doğru. 1 mol/1 L = 1 mol/L değişim dışta azalma, içte artma yapar: 7 ve 3 mol/L. Hem dıştan içe yön hem toplam 10 mol korunur.",
+        "Yanlış. Her hacim 1 L olduğundan 6 ve 6 mol/L toplam 12 mol verir. Ayrıca tek adımda 1 mol aktarımı, dengeye kadar beklemek değildir."
+      ],
+      "commonError": "Eşit hacim denmesini, miktardaki 1 mol değişimin her hacimde derişimi 1 mol/L değiştireceği sanmak; Δc = Δn/V hesabında açık 1 L hacmi atlamak.",
+      "check": "Son miktarları hacimle geri kurup aktarımı tersine çevir: içteki 3 molden 1 molü dıştaki 7 mole geri taşı. 8 mol ve 2 mole, dolayısıyla 1 L hacimlerde başlangıçtaki 8 ve 2 mol/L’ye dönmelisin."
+    }
+  },
+  {
+    "id": "f093-membrane-5",
+    "identity": "[\"f093-membrane-5\",\"Bir hayvan hücresinin geçemeyen çözünen derişimi 3, dış ortamınki 1 model birimidir. Zar suyu geçiriyor; sıcaklık ve başlangıç basıncı eşittir. İlk net su yönü ve aşırı su alımında olası sonuç hangisidir?\",\"\",[\"Su dışarı; turgor\",\"Su dışarı; bitki plazmolizi\",\"Net su yok; bütün moleküller durur\",\"Çözünen içeri; fagositoz\",\"Su içeri; şişme ve lizis riski\"],4,\"Bu koşullarda su düşük geçemeyen çözünen derişiminden yükseğe, hücre içine net geçer. Hayvan hücresi şişebilir; aşırı alımda lizis mümkündür. Turgor/bitki plazmolizi çeperli hücre bağlamında ayrılır. Net sıfır ve hareketin durması söylenemez. Ozmozda izlenen şey çözünen değil sudur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tonisite, hücreye göre suyun kalıcı hacim etkisiyle ilgilidir; bu yorumda zarı geçemeyen çözünenler önem taşır. Eşit sıcaklık ve başlangıç basıncında, suya açık zarın iki tarafındaki bu çözünen farkı ilk net su eğilimini belirler.",
+        "Hayvan hücresinde bitkideki gibi sert hücre çeperi bulunmaz. Fazla su alımı zarda gerilme ve lizis riski yaratabilir; lizisin alyuvara özgü adı hemolizdir, her hayvan hücresine bu özel ad verilmez."
+      ],
+      "strategy": "İç ve dışın bağıl tonisitesini geçemeyen çözünen üzerinden belirle; su okunu çizdikten sonra sonucu çeper bulunup bulunmamasına göre yorumla.",
+      "steps": [
+        "Dışta 1, içte 3 birim geçemeyen çözünen vardır. Dış ortam hücre içine göre daha seyreltik, yani hipotoniktir.",
+        "Sıcaklık ve ilk basınç eşit, zar suya açıktır. Başlangıçta net su dıştan hücre içine gider; çözünenin zarı geçtiği söylenemez.",
+        "İçeri su alan çepersiz hayvan hücresi şişebilir; aşırı alımda lizis riski doğar. Bu nedenle içeri su ve şişme/lizis ifadesi seçilir; bitki turgoru veya plazmolizi bu hücreye taşınmaz."
+      ],
+      "optionReasons": [
+        "Yanlış. Dıştaki geçemeyen çözünen daha az olduğundan ilk su eğilimi dışarı değildir. Ayrıca çeperli bitki hücresinin turgor yorumunu bu hayvan hücresine uygulayamazsın.",
+        "Yanlış. Su kaybı beklenmiyor; dış ortam hipotoniktir. Bitki plazmolizi de çeperden uzaklaşan protoplastı tanımlar, sorudaki hayvan hücresinin olayını değil.",
+        "Yanlış. Başlangıçtaki 3/1 farkı ve eşit basınç net su eğilimi oluşturur. Net sıfır olsaydı bile moleküllerin bütün hareketlerinin durması gerekmezdi.",
+        "Yanlış. Çözünenin geçemediği açıkça verilmiştir. Ozmozda suyu izleriz; büyük parçacığın keseye alınması olan fagositoz için de hiçbir bulgu yoktur.",
+        "Doğru. Verilen koşullarda net su içeri yönelir. Çeperi olmayan hayvan hücresinin şişmesi ve aşırı su alımında lizis riski bu yönle tutarlıdır."
+      ],
+      "commonError": "Çözünenin yüksek olduğu tarafı suyun da yüksek olduğu taraf sanmak veya bütün hipotonik ortamların her hücreyi kesin patlattığını düşünmek.",
+      "check": "İlk hacim değişimini su okuyla karşılaştır: içeri su alımı hücre hacmini artırma yönündedir. “Risk” ifadesini koru; soruda hücre dayanımı ve son süre verilmediği için kesin patlama veya son hacim hesaplama."
+    }
+  },
+  {
+    "id": "f093-membrane-6",
+    "identity": "[\"f093-membrane-6\",\"Sağlam çeperli bir bitki hücresi kendisine göre hipertonik ortama bırakılıyor. Zar suyu geçiriyor; başka etki ihmal ediliyor. Plazmolizle uyumlu görünüm hangisidir?\",\"\",[\"Çeperin bütünü küçülür, zar çepere daha çok dayanır\",\"Protoplast su kaybeder; zar çeperden uzaklaşır\",\"Su girer ve alyuvar hemolizi gerçekleşir\",\"Geçemeyen çözünen zarın içinden hızla dışarı çıkar\",\"ATP olmadan hiçbir su hareketi gerçekleşmez\"],1,\"Hipertonik ortamda su kaybı protoplastı küçültebilir ve zar çeperden uzaklaşır. Çeperin dış sınırının aynı şekilde küçülmesi plazmolizin açıklaması değildir. İçeri su ve hemoliz bu bitki örneğine uymaz. Geçemeyen çözünen için yol varsayılamaz. Ozmoz doğrudan ATP gerektirmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bitki hücresinde sert çeper ile onun içindeki hücre zarı farklı sınırlardır. Protoplast, çeper hariç hücre zarıyla çevrili canlı hücre bütünüdür; su kaybında bu iç bölümün hacmi azalabilir.",
+        "Hipertonik ortam, hücreye göre etkin çözünen derişimi daha yüksek olan ortamdır; bu bağıl bir karşılaştırmadır. Tonisiteyi yorumlarken çözünenin zarı geçip geçemediği ve suya geçirgenlik önemlidir; yalnız bir çözeltinin toplam derişimi bütün hücreler için aynı etkiyi garanti etmez."
+      ],
+      "strategy": "Dıştaki sert çeperi sabit referans kabul ederek su kaybının içteki protoplast sınırını nasıl değiştireceğini çiz; olay adını bu iki sınırın ilişkisiyle eşleştir.",
+      "steps": [
+        "Ortam hücreye göre hipertonik ve zar suya geçirgendir. Başka etki ihmal edildiği için başlangıçtaki net su eğilimi hücre dışınadır.",
+        "Su kaybı protoplast hacmini azaltır. Sağlam çeper dış biçimini korurken içteki zar/protoplast sınırı geri çekilir; çeperle arasındaki açıklık artabilir.",
+        "Bu görünüm plazmolizdir. Çepere daha çok dayanma su alımı/turgor yönüne aittir; hemoliz alyuvarla, ATP zorunluluğu ise ozmoz dışındaki enerji bağımlı süreçlerle karıştırılmıştır."
+      ],
+      "optionReasons": [
+        "Yanlış. Plazmolizde sağlam çeperin bütünü protoplast gibi küçülmez. Zarın çepere daha çok dayanması, su kaybıyla içeri çekilmenin tersidir.",
+        "Doğru. Hipertonik ortamda su kaybeden protoplast küçülür ve zar çeperden uzaklaşabilir; bu iki sınırın ayrılması plazmolizin belirleyici görünümüdür.",
+        "Yanlış. Verilen hücre bitkidir ve ilk eğilim su kaybıdır. İçeri su alımı ile alyuvar hemolizi bu hücre türü ve ortamla uyuşmaz.",
+        "Yanlış. Geçemeyen çözünenin hızlı dış geçişi, geçirgenlik koşuluna aykırıdır. Su kaybını açıklamak için böyle bir madde yolu uydurulmaz.",
+        "Yanlış. Ozmoz doğrudan ATP tüketmeden gerçekleşebilir. ATP yokluğunu bütün su hareketlerinin durmasıyla eşitlemek yanlıştır."
+      ],
+      "commonError": "Çeper ile hücre zarını tek esnek çizgi sanıp su kaybında ikisini birlikte büzüştürmek; hayvan hücresi büzülmesini bitki plazmoliziyle özdeşleştirmek.",
+      "check": "Çiziminde dıştaki çeperi işaretle ve iç zarla arasındaki boşluğu karşılaştır. Plazmoliz yorumu için boşluk artışı beklenir; yalnız “hücre küçüldü” demek iki sınırı ayırmaya yetmez."
+    }
+  },
+  {
+    "id": "f093-membrane-7",
+    "identity": "[\"f093-membrane-7\",\"İdeal bir su modelinde iç çözünen 3, dış çözünen 1, iç karşı basınç 2 ortak öğretim birimidir. Suya geçirgen zarda içe sürücü etki ‘iç−dış−basınç’ olarak tanımlanıyor. Model ne öngörür?\",\"\",[\"Sürücü etki 6; zorunlu içe akış\",\"Sürücü etki 4; zorunlu dışa akış\",\"Su her koşulda yalnız çözüneni çok tarafa gider\",\"Sürücü etki 0; bu koşulda net su akışı dengelenir\",\"Suyun moleküler hareketi tamamen yok olur\"],3,\"3−1−2=0; karşı basınç ozmotik eğilimi dengeler. İlk iki seçenek yanlış işlemdir. Üçüncü seçenek basıncı yok sayan bir genellemedir. Net sıfır, su moleküllerinin tamamen hareketsiz olduğu anlamına gelmez. Verilen model birimleri gerçek basınç ölçümü değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Su geçişinde çözünen farkının etkisine karşı hidrostatik basınç etki edebilir. Bu yüzden yalnız çözünen karşılaştırması, karşı basıncın açıkça verildiği her durumda net yönü belirlemez.",
+        "Bir modelde pozitif ve negatif sürücü etkilerin toplamı sıfır olabilir. Bu makroskopik net denge, su moleküllerinin rastgele hareketlerinin ortadan kalkması anlamına gelmez; öğretim birimi de kendiliğinden gerçek basınç birimi olmaz."
+      ],
+      "strategy": "Tanımlanan içe sürücü ifadedeki her terimin işaretini koru; hesabın işaretini net yön olarak yorumla ve net sıfırı moleküler durgunluktan ayır.",
+      "steps": [
+        "İçe sürücü etki iç − dış − basınçtır. İç çözünen 3, dış çözünen 1 olduğundan basınç uygulanmadan önceki fark 3 − 1 = 2 birimdir.",
+        "Karşı basınç bu içe eğilimden çıkarılır: 2 − 2 = 0. Terimleri toplamak veya dış çözüneni yok saymak modelin tanımını değiştirir.",
+        "Sürücü etki sıfır olduğundan model bu koşulda net su akışının dengelenmesini öngörür. İki yönlü moleküler geçiş sürebilir; “her koşulda içeri” ve “bütün hareket durur” sonuçları eklenmez."
+      ],
+      "optionReasons": [
+        "Yanlış. 6 sayısı 3 + 1 + 2 toplamından gelir; oysa dış çözünen ve karşı basınç içe sürücü ifadeden çıkarılmalıdır.",
+        "Yanlış. 4 = 3 − 1 + 2 işlemi karşı basıncı çıkarmak yerine ekleme hatasıdır. Ayrıca tanımlanan içe sürücü etki pozitif olsaydı yön dışa değil içe olurdu; seçenekte hem işlem hem yön yorumu yanlıştır.",
+        "Yanlış. Bu genelleme soruda açıkça verilen karşı basıncı yok sayar. Basınç çözünen farkının içe etkisini dengeleyebilir.",
+        "Doğru. 3 − 1 − 2 = 0’dır. Sorunun ortak öğretim birimleriyle tanımladığı sürücü sıfırlandığında net su akışı dengelenir.",
+        "Yanlış. Net akışın sıfırlanması iki yöndeki geçişlerin dengelenmesi olabilir; su moleküllerinin bütün hareketleri yok olmaz."
+      ],
+      "commonError": "Karşı basıncı çözünen farkına eklemek veya hesap sıfır çıktığında zarı suya kapalı ve molekülleri hareketsiz sanmak.",
+      "check": "Karşı basıncı denklemden bir an çıkar: içe etki 2 olmalıdır. Verilen 2 birim karşı etki bunu tam götürüyor; sonuçta ne artan içe ne artan dışa net etki kalır."
+    }
+  },
+  {
+    "id": "f093-membrane-8",
+    "identity": "[\"f093-membrane-8\",\"Bir akyuvar büyük bir bakteriyi zarla çevrili keseye alıyor. Başka bir ökaryot salgı hücresinde protein içeren vezikül hücre zarıyla birleşip içeriğini dışarı veriyor. Bu iki olay sırasıyla hangileridir?\",\"\",[\"Fagositoz ve ekzositoz\",\"Basit difüzyon ve ozmoz\",\"Aktif iyon pompası ve basit difüzyon\",\"Ekzositoz ve fagositoz\",\"Ozmoz ve pinositoz\"],0,\"Bakterinin büyük katı yük olarak keseye alınması fagositoz; salgı vezikülünün zarla birleşmesi ekzositozdur. Basit difüzyon/ozmoz bu vezikül hareketlerini açıklamaz. İyon pompası küçük madde yoludur. Ters sıra yönleri ters okur. Pinositoz sıvı ve beraberindeki yükün içeri alınması bağlamındadır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Veziküler taşımada zar eğilip bir kese oluşturabilir veya mevcut bir kese hücre zarıyla kaynaşabilir. Bu olaylar, tek tek küçük moleküllerin kanal ya da fosfolipit tabakadan geçişinden yapısal olarak farklıdır.",
+        "Fagositoz büyük katı parçacığın, pinositoz ise dış sıvı ve beraberindeki yükün içeri alınmasıdır. Ekzositozda içerideki vezikül hücre zarıyla birleşerek yükünü dış ortama açar; adlandırmada yük ve yön birlikte kullanılır."
+      ],
+      "strategy": "İki olayı ayrı çizimlerde yükün büyüklüğü ve kesenin içeri/dışarı yönüyle kodla; sonra sıralı seçeneklerin her iki yarısını aynı anda doğrula.",
+      "steps": [
+        "İlk olayda akyuvar, büyük bakteriyi kendi zarıyla çevrili keseye alır. Katı yükün bu içe alınışı fagositoz olarak adlandırılır.",
+        "İkinci olayda protein taşıyan iç vezikül zarla birleşip dışarı açılır. Bu mekanizma ekzositozdur; proteinin küçük bir kanaldan tek tek çıkması değildir.",
+        "Soru “sırasıyla” dediği için eşleşme fagositoz → ekzositoz olmalıdır. Ters sıra, küçük iyon pompası ve su/sıvı alma seçenekleri iki olayın yük veya yön koşulunu bozar."
+      ],
+      "optionReasons": [
+        "Doğru. Büyük bakterinin keseye içeri alınması fagositoz, protein vezikülünün zarla birleşip dışarı açılması ekzositozdur; sıra da gözlemle aynıdır.",
+        "Yanlış. Basit difüzyon ve ozmoz bu büyük yükleri zar keseleriyle taşımaz. Özellikle ozmoz yalnız su geçişini izler.",
+        "Yanlış. İyon pompası küçük iyonları seçici protein üzerinden taşır; bakteriyi keseleyemez. İkinci olayda da basit difüzyon değil vezikül birleşmesi görülür.",
+        "Yanlış. İki doğru olay adı ters sıradadır. İlk hücre dışarı salgı yapmıyor, bakteriyi içeri alıyor; ikinci hücre ise dışarı salgılıyor.",
+        "Yanlış. İlk olay su geçişi değildir. İkinci olay dış sıvıyı içeri alan pinositoz değil, içerideki protein yükünün dışarı verilmesidir."
+      ],
+      "commonError": "Büyük yük içeren her olayı yalnız “aktif taşıma” diye adlandırıp pompa ile vezikülü karıştırmak veya sıralı soruda iki doğru adı ters yerleştirmek.",
+      "check": "Zar hareketinin yönünü izle: ilk olayda çevrelenen yük hücre içine, ikinci olayda vezikül içeriği dış ortama ulaşır. Aynı yük-yön eşleşmesi iki seçenek yarısında da korunmalıdır."
+    }
+  },
+  {
+    "id": "f093-membrane-9",
+    "identity": "[\"f093-membrane-9\",\"Diyaliz zarından üre geçebiliyor, kan hücreleri geçemiyor. Başlangıçta üre kanda 6, diyaliz sıvısında 1 birimken, bir süre sonra sıvıda 5 birime çıkıyor; kan değeri bu karşılaştırmada 6’da tutuluyor. Net üre geçişinin azalmasını hangisi açıklar?\",\"\",[\"Kan hücreleri de zardan geçmeye başlamıştır\",\"Üre artık su molekülüne dönüşmüştür\",\"Bütün difüzyonlar ATP azalınca durur\",\"Diyaliz zarı her maddeyi aynı ölçüde geçirir\",\"Üre için derişim farkı 5’ten 1’e küçülmüştür\"],4,\"İlk fark 6−1=5, sonraki fark 6−5=1’dir. Diğer koşullar aynıysa daha küçük itici fark net difüzyonu azaltır. Kan hücresinin geçmesi verilmemiş ve zarın tutma koşuluna aykırıdır. Üre suya dönüşmez. Pasif üre geçişini ATP kesilmesine bağlayan kanıt yoktur. Seçicilik bütün maddelerin aynı geçmesini gerektirmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Diyalizde seçici zar bazı küçük çözünmüş maddelerin geçişine izin verirken kan hücreleri gibi büyük yapıları tutabilir. Bir maddeye geçirgenlik, bütün maddelere aynı geçirgenlik anlamına gelmez.",
+        "Geçebilen aynı madde için derişim farkının küçülmesi net difüzyonun itici farkını azaltır. Akışın kesin sayısal hızı için geçirgenlik, yüzey ve yol gibi ek bilgiler gerekir; derişim farkını hesaplamak bunların ölçümü değildir."
+      ],
+      "strategy": "Kan değeri sabitken diyaliz sıvısının iki değeriyle ayrı farklar kur; olası açıklamayı bu farkın değişimi üzerinden seç, ölçülmemiş hız oranı üretme.",
+      "steps": [
+        "Başlangıçta üre farkı kandan sıvıya 6 − 1 = 5 birimdir. Ürenin zarı geçebildiği, kan hücrelerinin ise tutulduğu belirtilmiştir.",
+        "Sıvıdaki üre 5’e çıktığında kan 6’da tutulur; yeni fark 6 − 5 = 1 birimdir. Yön hâlâ kandan sıvıya olsa da itici fark küçülmüştür.",
+        "Bu azalma, net üre geçişinin azalmasını açıklayan seçenektir. Kan hücresinin geçmesi, ürenin suya dönüşmesi veya bütün maddelerin aynı geçirgenliği bu hesapla ve öncüllerle uyuşmaz."
+      ],
+      "optionReasons": [
+        "Yanlış. Kan hücrelerinin geçemediği açıkça verilmiştir. Üre farkının küçülmesi, hücrelerin birden zarı geçmeye başladığını göstermez.",
+        "Yanlış. Çözeltide üre derişiminin değişmesi ürenin kimyasal olarak suya dönüşmesi değildir; iki maddeyi aynılaştıran bir tepkime verilmemiştir.",
+        "Yanlış. Difüzyon doğrudan ATP kullanan bir pompa değildir. Soruda ATP değişimi de verilmediğinden azalmayı bütün difüzyonların enerjiyle durmasına bağlayamazsın.",
+        "Yanlış. Zar üreyi geçirirken kan hücrelerini tutmaktadır; sorunun kendi örneği tüm maddelerin aynı ölçüde geçmediğini gösterir.",
+        "Doğru. Kan 6’da sabitken fark önce 6 − 1 = 5, sonra 6 − 5 = 1 olur. Daha küçük derişim farkı azalan net geçişi açıklayan uygun etkendir."
+      ],
+      "commonError": "Sıvıdaki ürenin artmasını dışarı geçişin mutlaka hızlanması sanmak; bir taraftaki değeri okumak ama iki taraf arasındaki farkı karşılaştırmamak.",
+      "check": "Yeni durumda kan hâlâ 6, sıvı 5 olduğundan farkın işareti değişmemiştir: yön tersine dönmez, fark azalır. Soruda hız katsayıları ölçülmediği için “hız kesin beşte bire indi” sonucunu ekleme."
+    }
+  },
+  {
+    "id": "f093-membrane-10",
+    "identity": "[\"f093-membrane-10\",\"Bir zar küçük X molekülünü başlangıçta geçirmiyor. X’in dış derişimi 10, iç derişimi 1 birim; sıcaklık sabittir. X’e uygun yeni bir pasif protein yolu açılıyor ve ATP kullanılmıyor. Diğer koşullar değişmezse doğru beklenti hangisidir?\",\"\",[\"Kapalı yol varken fark mutlaka X’i geçirirdi\",\"Yeni yol X’i 1’den 10’a enerji olmadan biriktirir\",\"Uygun yol açılınca X’in ilk net geçişi dıştan içe olabilir\",\"Protein eklenmesi her durumda endositozdur\",\"Protein eklenince tüm büyük proteinler de geçer\"],2,\"Yeni uygun pasif yol,10’dan 1’e dıştan içe net geçişi mümkün kılar. Kapalı yol farkla otomatik açılmaz. Enerji olmadan gradyana karşı biriktirme bu koşuldan çıkmaz. Kanal/taşıyıcı ile vezikül farklıdır. X’e seçicilik tüm büyük moleküllere geçirgenlik anlamına gelmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir derişim gradyanı geçişe eğilim oluşturabilir; fiilî geçiş için zarın maddeye uygun bir yol sunması da gerekir. Geçirgen olmayan bir engeli yalnız büyük derişim farkı otomatik olarak geçirgen yapmaz.",
+        "Pasif bir kanal veya taşıyıcı, seçtiği maddeyi gradyan yönünde geçirebilir. Protein yolunun seçiciliği, bütün küçük ya da bütün büyük moleküllere aynı geçişin açılması anlamına gelmez."
+      ],
+      "strategy": "Kapalı ve açık yol koşullarını aynı derişim çifti üzerinde karşılaştır; değişen tek etkenin X’e uygun pasif yol oluşu üzerinden ilk net yönü sınayarak beklenti kur.",
+      "steps": [
+        "Başlangıçta X dışta 10, içte 1 birimdir ama zar X’i geçirmemektedir. Bu yüzden farkın varlığı başlangıçtaki kapalı yolu aşmaya yetmez.",
+        "Yeni protein X’e uygun ve pasiftir. Diğer koşullar aynıyken açılan yol, ilk net geçişin 10’dan 1’e, dıştan içe olmasına olanak verir.",
+        "Bu durum X’i 1’den 10’a enerji olmadan biriktirmez. Protein yolu endositoz kesesi de değildir; yalnız X’e uygunluk verildiğinden diğer büyük proteinlerin geçişi genellenemez."
+      ],
+      "optionReasons": [
+        "Yanlış. Zarın başlangıçta X’i geçirmediği veriliyor. Derişim farkı, kapalı veya uygun olmayan yolun kendiliğinden açıldığını kanıtlamaz.",
+        "Yanlış. 1’den 10’a net biriktirme verilen gradyana karşıdır. Açılan yol pasif olduğundan bu tür enerji gerektiren biriktirmeyi açıklamaz.",
+        "Doğru. X’e uygun pasif yol açılınca yüksek dış derişimden düşük iç derişime ilk net geçiş mümkün olur; “olabilir” ifadesi gözlenen koşullarla uyumludur.",
+        "Yanlış. Kanal veya taşıyıcı proteini bir geçiş yoludur. Endositozda ise hücre zarı yükü keseyle içeri alır; protein eklenmesi tek başına bu olayı göstermez.",
+        "Yanlış. X’e seçici bir yolun açılması bütün büyük proteinlere geçirgenlik sağlamaz. Başka maddeler için uygunluk bilgisi verilmemiştir."
+      ],
+      "commonError": "Gradyanın varlığını geçirgenliğin yerine koymak veya bir madde için açılan seçici yolun bütün molekülleri geçireceğini sanmak.",
+      "check": "Deneyde değişen unsur X’in miktarı değil zardaki uygun yoldur. Açık yol için çizdiğin ilk pasif ok 10’dan 1’e gitmeli; kesin geçiş hızı veya son derişim bu verilerle belirlenmez."
+    }
+  },
+  {
+    "id": "f093-classification-1",
+    "identity": "[\"f093-classification-1\",\"K ve L’nin aynı cinse ait farklı türler olduğu veriliyor. Yalnız bu bilgiye dayanarak hangisi kesinlikle ortaktır?\",\"\",[\"Yaşadıkları bütün ortamlar\",\"Kromozom sayıları\",\"Cinsin bağlı olduğu familya\",\"Bütün DNA dizileri\",\"Tamamlayıcı adları\"],2,\"Aynı cins aynı familya ve üst taksonları kapsar. Yaşam ortamı, kromozom sayısı ve DNA’nın bütünü yalnız cins ortaklığıyla eşitlenmez. Farklı türlerin tamamlayıcı adları da aynı olmak zorunda değildir. Kapsama kuralı bir takson ilişkisi verir, bütün biyolojik özelliklerin aynılığını vermez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Taksonomik hiyerarşi iç içe gruplardan oluşur: bir alt grubun üyeleri o grubun bağlı olduğu üst grupların da içindedir. Ters yönde aynı çıkarım zorunlu değildir; geniş grup birden fazla alt grup içerebilir.",
+        "Taksonomik kapsama ilişkisi ile tek tek ölçülen özelliklerin eşitliği farklı iddialardır. Yaşam alanı, kromozom sayısı ve bütün DNA dizileri için bir sınıflandırma adından bağımsız kanıt gerekebilir."
+      ],
+      "strategy": "K ve L’yi ortak oldukları basamakta tek bir kutuya yerleştir; yukarıdaki zorunlu kapsama sonuçlarını ölçülmemiş özelliklerden ayır.",
+      "steps": [
+        "K ve L aynı cinsteki farklı türlerdir. Bu iki öncülü birlikte tut: ortaklık cins düzeyindedir, tür düzeyinde aynılık verilmemiştir.",
+        "Cinsin bir üst basamağı familyadır. Aynı cins kutusundaki iki tür, o cinsin bağlı olduğu aynı familya kutusunun içinde kalır.",
+        "Diğer adaylar kapsama basamağı değildir: tüm ortamların, kromozomların ve bütün DNA’nın eşitliği verilmemiştir. Tamamlayıcı adların ortaklığı da farklı tür bilgisiyle zorunlu olmaz; kesin ortaklık familyadır."
+      ],
+      "optionReasons": [
+        "Yanlış. Aynı cinsin farklı türleri farklı habitatlara veya yayılışlara sahip olabilir. Verilen takson ortaklığı bütün yaşadıkları ortamları eşitlemez.",
+        "Yanlış. Kromozom sayısı bir ölçüm bilgisidir. Aynı cins içinde farklı türler bulunması bu sayının zorunlu eşitliğini vermez.",
+        "Doğru. Cins, bağlı olduğu familyanın alt grubudur. K ve L aynı cinsteyse bu cinsin familyasını da zorunlu olarak paylaşırlar.",
+        "Yanlış. Cins ortaklığı bütün DNA dizilerinin özdeşliği değildir. Soruda farklı türlerden söz edildiği gibi birey düzeyinde de genetik çeşitlilik olabilir.",
+        "Yanlış. Tamamlayıcı ad, cins adıyla birlikte tür adını oluşturur. Aynı cinse ait farklı türlerin tamamlayıcı adlarının aynı olması zorunlu değildir."
+      ],
+      "commonError": "Aynı cins olmayı bütün özelliklerin eşitliği gibi okumak; hiyerarşik ortaklıkla sayısal veya ekolojik aynılığı birbirine çevirmek.",
+      "check": "Cins kutusunu bir familya kutusu içine çiz. İki türün cins içinde kalıp farklı yaşam alanı veya kromozom değeri taşıması kapsama çizimini bozmaz; bu değişkenler bu yüzden zorunlu ortaklık değildir."
+    }
+  },
+  {
+    "id": "f093-classification-2",
+    "identity": "[\"f093-classification-2\",\"Panthera leo aslanı, Panthera tigris kaplanı adlandırıyor. Bu iki bilimsel adın doğru karşılaştırması hangisidir?\",\"\",[\"Aynı cins, farklı tür adlarıdır\",\"Farklı cins, aynı tür adlarıdır\",\"İkinci sözcükler tek başına cins adıdır\",\"İkisi de yalnız familya adıdır\",\"Aynı cins olmaları bütün kromozom sayılarını zorunlu eşit yapar\"],0,\"Panthera iki adda ortak cinstir; leo ve tigris tamamlayıcı adları farklı ikili tür adları oluşturur. Cins ilk sözcüktür; familya adı burada verilmemiştir. Kromozom sayısı eşitliği cins ortaklığının zorunlu sonucu değildir. Farklı tür adı, bu bağlamda aynı tür adıdır diye okunamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "İkili bilimsel adın ilk sözcüğü cinsi, ikinci sözcüğü tamamlayıcı adı belirtir; tür adı iki sözcüğün bütünüdür. Cins adı büyük harfle, tamamlayıcı ad küçük harfle başlar ve bilimsel yazımda italik gösterilir.",
+        "Bir adın sözcüklerini çözümlemek taksonomik adlandırmayı karşılaştırır; kromozom sayısı gibi ölçülmüş nicelikleri vermez. Aynı ilk sözcük, bütün ikinci sözcüklerin de aynı olması gerektiği anlamına gelmez."
+      ],
+      "strategy": "Adları “cins | tamamlayıcı ad” sütunlarına ayır; ortak sözcükle iki sözcüklü bütünün ortaklığını ayrı değerlendir.",
+      "steps": [
+        "Panthera leo ve Panthera tigris adlarında ilk sütuna iki kez Panthera yazılır. Bu sözcük cins adıdır; ikinci sütunda leo ve tigris yer alır.",
+        "İlk sütun aynıdır, iki sözcüklü adların bütünü ise farklıdır. Bu nedenle iki ad aynı cins altında farklı türleri gösterir.",
+        "leo ve tigris’i cins, adların bütününü familya sayan seçenekler adlandırma düzeyini değiştirir. Ortak cins bilgisinden kromozom sayısı eşitliği de eklenemez."
+      ],
+      "optionReasons": [
+        "Doğru. Panthera ortak cins adıdır; leo ve tigris farklı tamamlayıcı adlarla farklı ikili tür adları oluşturur.",
+        "Yanlış. İlk sözcükler farklı değil, ikisinde de Panthera’dır. İki sözcüklü tür adları ise aynı değildir; seçenek her iki karşılaştırmayı ters kurar.",
+        "Yanlış. leo ve tigris ikinci sözcüklerdir ve bu adlarda tamamlayıcı ad görevi görür. Cins adı ilk sözcük olan Panthera’dır.",
+        "Yanlış. Bu iki sözcüklü ifadeler tür adıdır. Familya basamağının adı soruda bu ifadelerin yerine verilmemiştir.",
+        "Yanlış. Adlar cins ortaklığını gösterir ama kromozom ölçümü içermez. Cins ortaklığını bütün kromozom sayılarının zorunlu eşitliğine dönüştüremezsin."
+      ],
+      "commonError": "İkinci sözcüğü tek başına tam tür adı saymak veya aynı cinsi gördüğünde ölçülmemiş kromozom sayılarını da eşitlemek.",
+      "check": "İlk sözcüklerin üstünü kapatırsan yalnız iki tamamlayıcı ad kalır; türün tam kimliği kaybolur. İlk sözcükleri yeniden açtığında cins ortaklığı ile iki farklı ikili ad birlikte görünmelidir."
+    }
+  },
+  {
+    "id": "f093-classification-3",
+    "identity": "[\"f093-classification-3\",\"Passer domesticus bayağı serçenin, Acheta domesticus ev cırcır böceğinin bilimsel adıdır. ‘domesticus’ sözcüğünün ortak olması için hangi yorum geçerlidir?\",\"\",[\"Aynı cins olduklarını kanıtlar\",\"Aynı tür olduklarını kanıtlar\",\"Aynı kromozom sayısını zorunlu kılar\",\"Bütün genlerinin aynı olduğunu gösterir\",\"Tamamlayıcı ad farklı cinslerde tekrarlanabilir; tek başına türü belirlemez\"],4,\"Passer ile Acheta farklı cinslerdir; domesticus farklı cinslerde kullanılabilen tamamlayıcı addır. Tür adı iki sözcüğün bütünüdür. Ortak ikinci sözcük aynı cins, aynı tür, aynı kromozom veya bütün genlerin aynılığı sonucunu vermez. Burada bilinen iki farklı hayvan örneği karşılaştırılır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bilimsel ikili adın ilk sözcüğü cins adıdır; ikinci sözcüğü tamamlayıcı addır. Bir karşılaştırmada önce bu iki parçayı ayırıp sonra iki sözcüklü adların bütününü birlikte okumak gerekir.",
+        "Adlandırmada aynı bir sözcüğün kullanılması, canlıların bütün genlerinin veya kromozom sayılarının eşitliğini belirleyen bir ölçüm değildir. Sözcük düzeyindeki benzerlikle biyolojik özdeşlik ayrılmalıdır."
+      ],
+      "strategy": "Ortak ikinci sözcüğü geçici olarak kapatıp ilk sözcükleri karşılaştır; sonra ikili adları yeniden bütünleştirerek hangi kimliğin gerçekten ortak olduğunu denetle.",
+      "steps": [
+        "İlk sözcükler Passer ve Acheta’dır; bunlar farklı cins adlarıdır. Ortak domesticus sözcüğü cins sütununda yer almaz.",
+        "İkili adların bütünü Passer domesticus ve Acheta domesticus biçiminde farklıdır. İkinci sözcüğün tekrar kullanılması bu iki bütünü aynı tür adı yapmaz.",
+        "Böylece domesticus’un farklı cinslerde tekrarlanabilen tamamlayıcı ad olduğu yorumu kalır. Aynı cins, tür, kromozom sayısı ve bütün genlerin aynılığı iddiaları verilen ortak sözcükten çıkmaz."
+      ],
+      "optionReasons": [
+        "Yanlış. Cinsi ilk sözcük belirler: Passer ile Acheta farklıdır. İkinci sözcüğün aynı olması bu cinsleri eşitlemez.",
+        "Yanlış. Tür adı iki sözcüklüdür. Passer domesticus ile Acheta domesticus farklı bütünler olduğundan domesticus tek başına aynı türü kanıtlamaz.",
+        "Yanlış. Bir tamamlayıcı adın tekrarı kromozom sayısı ölçümü değildir. Bu nicelik için soruda herhangi bir eşitlik verilmiyor.",
+        "Yanlış. Adlandırma sözcüğünün ortaklığı DNA dizilerinin veya bütün genlerin özdeşliğini göstermez; genetik karşılaştırma verisi sunulmamıştır.",
+        "Doğru. domesticus ikinci sözcük olarak iki farklı cinste kullanılmaktadır. Tam tür adını belirlemek için bu sözcüğü ilgili cinsle birlikte okumak gerekir."
+      ],
+      "commonError": "Tamamlayıcı adı dünya üzerindeki bütün türler için tekil bir etiket sanmak; cins adını okumadan aynı ikinci sözcükten aynı tür sonucu çıkarmak.",
+      "check": "İki ad için “cins + domesticus” toplamını ayrı ayrı yaz: değişen ilk parça, bütün adın da değişmesine yeter. Bu sözcük denetimi için kromozom veya melezleme verisi uydurmana gerek yoktur."
+    }
+  },
+  {
+    "id": "f093-classification-4",
+    "identity": "[\"f093-classification-4\",\"Üst âlemden türe doğru gidilen sınıflandırma basamaklarında, genel kapsama eğilimi için hangisi uygundur?\",\"\",[\"Kapsanan çeşitlilik artar, ortak özellik azalır\",\"Kapsanan çeşitlilik azalır, ortak özellik genellikle artar\",\"Her basamak tam olarak 10 tür içerir\",\"Kromozom sayısı her basamakta yarıya iner\",\"Son basamakta bütün bireylerin DNA’sı zorunlu aynıdır\"],1,\"Daha dar grup daha sınırlı çeşitliliği ve daha fazla ortak özelliği kapsar. Ters yön ilk seçeneği geçersiz kılar. Sabit tür kotası veya kromozomun yarılanması gibi bir kural yoktur. Aynı türde de bireysel genetik çeşitlilik bulunabilir; bütün DNA’nın aynılığı çıkmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Üst âlemden türe uzanan hiyerarşide geniş bir grup içinden giderek daha sınırlı alt gruplar seçilir. Kapsanan çeşitlilik, o grubun içerdiği farklı canlı gruplarıyla ilgilidir; ortak özellik ise üyelerin paylaştığı karakterleri anlatır.",
+        "Basamakların kapsamı için verilen genel eğilim, her taksonun sabit üye sayısı olduğunu göstermez. Taksonomik derece değişmesi kromozomları aritmetik olarak bölmez; aynı tür içindeki bireysel çeşitliliği de silmez."
+      ],
+      "strategy": "Sorudaki ilerleme yönünü geniş ve dar kutularla göster; çeşitlilik ile ortak özellik sütunlarını ayrı tutarak aday eğilimleri karşılaştır.",
+      "steps": [
+        "Yön üst âlemden türe doğrudur; yani geniş kapsamdaki tüm üyeleri değil, onların içinden daha dar grupları izliyoruz.",
+        "Daha dar gruba geçerken kapsanan çeşitlilik azalır; seçilmiş üyeler arasındaki ortak özellikler genel olarak artar. Bu iki değişim zıt yönlüdür.",
+        "Bu eğilimi sabit 10 tür kotası, her basamakta kromozom yarılanması veya bütün bireylerin DNA özdeşliği biçiminde okumak gerekmez. Kapsam azalması ve ortaklık artışıyla sınırlı seçenek uygundur."
+      ],
+      "optionReasons": [
+        "Yanlış. Bu yön, türden üst gruplara çıkarken beklenen genişlemeyi anlatır. Soruda üst âlemden türe inildiği için çeşitlilik artışı ve ortaklık azalması ters kalır.",
+        "Doğru. Genişten dar alt gruplara gidildikçe kapsanan çeşitlilik azalır; üyelerin paylaştığı özellikler genel olarak artar. Seçenekteki “genellikle” sınırı da uygundur.",
+        "Yanlış. Bir basamaktaki her taksonun tam 10 tür içermesi gibi bir kota yoktur. Hiyerarşi üyelerin kapsanma düzenini verir, eşit tür sayısı vermez.",
+        "Yanlış. Kromozom sayısını her sınıflandırma basamağında yarıya indiren bir işlem yoktur. Taksonomik daralma bir hücre bölünmesi değildir.",
+        "Yanlış. Aynı türde bireyler arasında genetik çeşitlilik bulunabilir. Tür basamağına ulaşmak bütün DNA dizilerini zorunlu özdeş yapmaz."
+      ],
+      "commonError": "Genişten dara yönü ters okumak veya genel benzerlik artışını bütün özelliklerin ve DNA’nın eksiksiz aynılığı sanmak.",
+      "check": "Yönü türden üst âleme çevirerek düşün: alt kümeye yeni gruplar eklediğinde çeşitlilik daralmak yerine genişler. İki yönde aynı eğilimi yazdıysan kutuların kapsama ilişkisini yeniden çiz."
+    }
+  },
+  {
+    "id": "f093-classification-5",
+    "identity": "[\"f093-classification-5\",\"Kuş ile böceğin kanadı uçuşta kullanılıyor; verilen anatomik ve gelişimsel inceleme kanatların farklı kökenlerden oluştuğunu gösteriyor. Yalnız uçuş yapıları düzeyinde doğru sınıflama hangisidir?\",\"\",[\"Aynı görev gördükleri için zorunlu homolog\",\"Aynı tür olmaları zorunlu\",\"Aynı cins olmaları zorunlu\",\"Analog işlevsel yapılar; görev benzerliği tek başına yakın akrabalık kanıtı değildir\",\"Farklı kökeni bilmek bütün ortak ataları reddetmeyi gerektirir\"],3,\"Verilen farklı köken ve ortak uçuş görevi analoji örneğidir. Görev aynılığı homolojiyi, aynı türü veya aynı cinsi zorunlu yapmaz. Belirli bir uçuş yapısının bağımsız gelişmesi, canlıların daha eski hiçbir ortak atası olmadığı anlamına da gelmez; iddianın düzeyini koru.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yapısal köken ile güncel işlev ayrı kanıt türleridir. Benzer bir çevresel görev, farklı soyların farklı yapılardan benzer çözümler geliştirmesine yol açabilir.",
+        "Homoloji ortak kökene, analoji ise karşılaştırılan düzeyde farklı kökenli yapıların benzer işlevine ilişkindir. Belirli bir karakterin bağımsız gelişmesi, karşılaştırılan canlıların bütün geçmişlerinde ortak ata bulunmadığını göstermez."
+      ],
+      "strategy": "Karşılaştırmanın uçuş yapıları düzeyinde tutulduğunu işaretle; verilen gelişimsel köken bilgisini görev benzerliğinden ayrı tart ve iddianın kapsamını aşma.",
+      "steps": [
+        "İki kanat da uçuşta kullanılır; dolayısıyla işlev benzerdir. Fakat anatomik ve gelişimsel inceleme bu uçuş yapılarının kökenlerini farklı bulmuştur.",
+        "Benzer işlev ve farklı yapısal köken birlikte bu düzeyde analojiye uyar. Aynı görevi yapmaları, verilen farklı köken kanıtını homolojiye çeviremez.",
+        "Bu sonuç uçuş yapılarının karşılaştırmasıyla sınırlıdır: aynı tür veya cins sonucunu vermez, bütün eski ortak ataları da reddetmez. Bu sınırı koruyan analog yapı seçeneği uygundur."
+      ],
+      "optionReasons": [
+        "Yanlış. Görev eşitliği tek başına homolog köken göstermez. Soruda kanatların farklı kökenlerden oluştuğu ayrıca verildiğinden zorunlu homoloji iddiası uygun değildir.",
+        "Yanlış. Uçuş işlevini paylaşmak aynı tür olmak için yeterli değildir; soruda kuş ve böcek farklı kökenli uçuş yapılarıyla karşılaştırılıyor.",
+        "Yanlış. Benzer görevden aynı cins sonucu çıkmaz. Cins ortaklığına ilişkin bir adlandırma veya hiyerarşi verisi bulunmuyor.",
+        "Doğru. Uçuş yapıları düzeyinde benzer işlev ve farklı köken analojiye uyar. Görev benzerliği bu canlıların yakın akrabalığını tek başına kanıtlamaz.",
+        "Yanlış. Belirli kanat yapılarının bağımsız gelişmesi, canlıların daha eski bütün ortak atalarını yok saymayı gerektirmez; iddia sorulan karakterin sınırını aşar."
+      ],
+      "commonError": "Aynı görevi yapan her yapıyı homolog sanmak veya tek bir analog karakterden canlıların hiçbir ortak atası olamayacağını çıkarmak.",
+      "check": "Yargının başına “uçuş yapıları bakımından” ifadesini koy. Cümlen hâlâ tüm organlara, bütün genlere veya bütün ortak atalara yayılıyorsa karşılaştırmanın düzeyini aşmışsındır."
+    }
+  },
+  {
+    "id": "f093-classification-6",
+    "identity": "[\"f093-classification-6\",\"İnsan kolu ile yarasanın ön üyesinin temel kemik planının ortak kökenden geldiği veriliyor. Birinin tutmaya, diğerinin uçmaya uyumlanması hangi sonucu değiştirir?\",\"\",[\"Görevler farklı olsa da ön üye planı bakımından homolog olabilirler\",\"Farklı görev ortak kökeni imkânsız yapar\",\"Her homolog yapı aynı görevi yapmak zorundadır\",\"Kemik planı bilgisi yalnız yaşam ortamını verir\",\"Bu iki canlı aynı tür olmak zorundadır\"],0,\"Ortak kökene dayalı ön üye planı homolojiyi destekler; görevler farklılaşabilir. İkinci ve üçüncü seçenek homolojiyi işlevle karıştırır. Kemik planı köken/anatomi kanıtıdır; yalnız habitat bilgisi değildir. Homolog bir yapı paylaşmak aynı tür olmayı gerektirmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ortak kökenden gelen bir temel yapı, farklı soylarda farklı işlevlere uyarlanabilir. Bu yüzden homolojinin değerlendirilmesinde köken ve yapısal plan, yalnız güncel kullanımdan ayrılır.",
+        "Bir yapıdaki ortaklık, iki canlının bütün taksonomik düzeylerde veya bütün özelliklerinde aynı olması anlamına gelmez. Ön üye planı gibi belirli bir karakterin kanıtı, o karakter düzeyinde yorumlanmalıdır."
+      ],
+      "strategy": "Sorudaki köken ve kemik planı kanıtını sabit tut; görev değişimini bunun üzerine ekleyerek hangi iddianın gerçekten değişmesi gerektiğini sınayarak ilerle.",
+      "steps": [
+        "İnsan kolu ile yarasa ön üyesinin temel kemik planının ortak kökenden geldiği öncülü açıkça verilmiştir. Bu bilgi yalnız habitat veya dış görünüş değildir.",
+        "Tutma ile uçma güncel görevlerdir. Görevlerin farklılaşması, verilmiş ortak kökenli ön üye planını ortadan kaldırmaz; yapı bu düzeyde homolog olarak yorumlanabilir.",
+        "Bu nedenle görev farkıyla homolojinin sürebileceğini belirten seçenek uygundur. “Homologsa görevi aynı olmalı” ve “aynı tür olmalı” ek zorunlulukları köken kanıtından çıkmaz."
+      ],
+      "optionReasons": [
+        "Doğru. Ön üye planının ortak kökeni verilmiştir. Tutma ve uçma gibi farklı görevler bu yapısal homolojiye engel değildir.",
+        "Yanlış. Görev farklılığı ortak kökeni imkânsız yapmaz. Verilen temel plan, farklı işlevlere uyarlanmış bir ortak yapıyı gösterebilir.",
+        "Yanlış. Homolog yapılar farklı işlevler üstlenebilir. Aynı görevi zorunlu tutmak homolojiyi işlev benzerliğiyle karıştırır.",
+        "Yanlış. Kemik planı anatomik ve kökenle ilgili kanıttır. Onu yalnız yaşam ortamına indirgemek sorudaki açık ortak köken bilgisini yok sayar.",
+        "Yanlış. Ortak kökenli bir karakter farklı türler arasında da paylaşılabilir. Ön üye homolojisi insan ile yarasayı aynı tür yapmaz."
+      ],
+      "commonError": "Homolojiyi “aynı işi yapmak” diye tanımlayıp verilen ortak kökeni görev farklılığı nedeniyle iptal etmek.",
+      "check": "Kemik planı ile görev için iki ayrı satır yaz: plan ortak kökenli, görevler farklıdır. Bu iki satır birlikte doğru kalabiliyorsa homoloji ile işlev farkını çelişki sanmıyorsun demektir."
+    }
+  },
+  {
+    "id": "f093-classification-7",
+    "identity": "[\"f093-classification-7\",\"Sazan, kurbağa, kedi, kertenkele ve güvercin için yalnız ‘hepsi ökaryottur’ verisi sunuluyor. Bu tek veriden hangi sonuç çıkar?\",\"\",[\"Kertenkeleyle güvercinin en yakın çift olduğu kesinleşir\",\"Beşinin aynı tür olduğu kesinleşir\",\"Ortak geniş hücre özelliği vardır; iç akrabalık sırası tek başına çözülmez\",\"Kedinin bütün diğerlerinin atası olduğu anlaşılır\",\"DNA dizilerinin aynı olduğu kanıtlanır\"],2,\"Ökaryotluk ortak geniş bir özellik verir fakat bu beş örneğin iç dallanmalarını tek başına çözmez. Yakın çift, aynı tür, bir güncel canlının diğerlerine ata olması ve bütün DNA’nın aynılığı ek kanıt olmadan söylenemez. Veri yetersizliği gerçek ilişkilerin eşit olduğunu da kanıtlamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ökaryot hücre düzeni, zarla çevrili çekirdek ve zarlı organeller gibi geniş bir örgütlenme çerçevesini ifade eder. Çok sayıda farklı soy bu çerçeveyi paylaşabilir.",
+        "Bir karakter bütün incelenen örneklerde aynıysa, yalnız o karakter bu örnekler arasında daha dar bir çift seçtirmeyebilir. Kanıtın yetersizliği gerçek ilişkilerin eşit olduğu anlamına gelmez; yalnız verilen verinin ayrım yapamadığını gösterir."
+      ],
+      "strategy": "Beş canlı için yalnız verilen hücre tipi sütununu doldur; her dar akrabalık iddiasının bu sütunda ayırt edici bir karşılığı olup olmadığını sınayarak karar ver.",
+      "steps": [
+        "Sazan, kurbağa, kedi, kertenkele ve güvercinin hücre tipi sütununa aynı değer, “ökaryot” yazılır. Bu veri hepsine ait geniş bir ortaklığı gösterir.",
+        "Bu sütun kertenkele–güvercin çiftini diğer çiftlerden ayırmaz. Yalnız bu veriye dayanarak iç dallanma sırası veya en yakın çift belirlenemez.",
+        "Aynı tür, güncel kedinin diğerlerine ata oluşu ve bütün DNA’nın aynılığı da hücre tipi verisinden çıkmaz. Ortak geniş özellik ile çözülemeyen iç akrabalığı birlikte belirten sınırlı yorum seçilir."
+      ],
+      "optionReasons": [
+        "Yanlış. Bu çift için başka filogenetik kanıtlar tartışılabilir; ancak yalnız bütün örneklerde ortak olan ökaryotluk verisi bu çifti en yakın olarak seçtirmez.",
+        "Yanlış. Ökaryotluk çok geniş bir hücre örgütlenmesidir. Bu ortaklık beş ayrı hayvanın aynı tür olduğunu göstermez.",
+        "Doğru. Hepsi ortak geniş hücre özelliğini taşır; fakat özellik hepsinde aynı olduğundan daha dar akrabalık sırasını tek başına ayırt edemez.",
+        "Yanlış. Günümüzdeki kedinin diğer örneklerin atası olduğuna ilişkin bir veri yoktur. Ortak hücre tipi böyle bir yönlü soy ilişkisi kurmaz.",
+        "Yanlış. Aynı hücre düzeni aynı DNA dizisi demek değildir. Diziler karşılaştırılmadığından bütün genomların aynılığı kanıtlanamaz."
+      ],
+      "commonError": "Kendi bildiğin gerçek soy ağacını sorunun “yalnız bu veri” sınırının yerine koymak veya veri yetersizliğini bütün ilişkiler gerçekte eşittir diye okumak.",
+      "check": "Canlı adlarının sırasını değiştirip hepsinin yanına yine “ökaryot” yaz. Veride hiçbir şey değişmediği hâlde bir çifti ayrı seçiyorsan seçimini sunulmayan ek bilgiye dayandırmışsındır."
+    }
+  },
+  {
+    "id": "f093-classification-8",
+    "identity": "[\"f093-classification-8\",\"Tamamı karşılaştırma için oluşturulmuş ve uygun hizalandığı verilen 6 konumluk diziler K:GGCCGA, G:GGCCGG, M:GGCCTT’dir. Yalnız farklı baz konumları sayılırsa doğru hesap ve sınırlı yorum hangisidir?\",\"\",[\"K-G farkı 6’dır; bütün genomlar aynıdır\",\"K-M farkı 0’dır; aynı türdürler\",\"G-M farkı 1’dir; yaşları kesin hesaplanır\",\"Bütün çiftler aynı farktadır; veri ayırt etmez\",\"K-G farkı 1, K-M ve G-M farkı 2’dir; bu öğretim paketinde K-G yakınlığını destekler\"],4,\"K ile G yalnız son konumda farklıdır:1. K-M ve G-M beşinci ve altıncı konumlarda farklıdır:2. Bu yapılandırılmış örnekte K-G yakınlığını destekleyen ayırt edici veri vardır. Diğer sayımlar yanlıştır; kısa oluşturulmuş diziden aynı tür, genom aynılığı veya kesin ayrılma tarihi çıkarılamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Uygun hizalanmış iki diziyi karşılaştırırken her sütunda aynı konumdaki bazlar eşleştirilir. Fark sayısı, eşit olmayan konumların sayısıdır; bir konumdaki fark toplam altı konumun hepsini farklı yapmaz.",
+        "Kısa ve öğretim amacıyla oluşturulmuş bir dizi parçası, yalnız o veri paketi içinde sınırlı benzerlik kanıtı sağlar. Tür kimliği, bütün genom özdeşliği veya ayrılma zamanı için daha kapsamlı bilgi ve uygun yöntem gerekir."
+      ],
+      "strategy": "Üç çifti altı sütunluk tek tabloda bağımsız say; önce sayısal uyumu, ardından seçeneğin bu kısa veriden ne kadar güçlü sonuç çıkardığını denetle.",
+      "steps": [
+        "Dizileri aynı altı konuma hizala: K = GGCCGA, G = GGCCGG, M = GGCCTT. İlk dört konum her üçünde de aynıdır; ayırt edici kısım beşinci ve altıncı sütunlardır.",
+        "K–G yalnız altıncı sütunda A/G ile farklıdır: 1. K–M beşinci G/T ve altıncı A/T’de; G–M beşinci G/T ve altıncı G/T’de farklıdır: her ikisi 2.",
+        "En az fark K–G çiftindedir; bu oluşturulmuş paket onların yakınlığını destekler. Diğer sayımlar yanlıştır; doğru sayımı tüm genom, aynı tür veya kesin tarih iddiasına genişletmeyen seçenek seçilir."
+      ],
+      "optionReasons": [
+        "Yanlış. K ve G ilk beş konumda aynıdır, yalnız son baz farklıdır; fark 6 değil 1’dir. Ayrıca bu kısa parçalar bütün genomların aynılığını göstermez.",
+        "Yanlış. K ve M beşinci ve altıncı konumlarda farklıdır; fark 0 değildir. Kısa bir parçanın eşitliği bile tek başına aynı tür kanıtı olmazdı.",
+        "Yanlış. G ve M iki konumda, beşinci ve altıncı bazlarda farklıdır. Bu sayım kesin ayrılma yaşı da vermez; zaman veya değişim hızı bilgisi sunulmamıştır.",
+        "Yanlış. Çiftlerin farkları aynı değildir: K–G 1, diğer iki çift 2 fark taşır. Bu öğretim verisi sınırlı da olsa çiftleri ayırt eder.",
+        "Doğru. Sütun sayımı 1, 2 ve 2 fark verir. Daha az fark K–G yakınlığını bu oluşturulmuş veri içinde destekler; seçenek sonucu bu sınırlı kapsamda tutar."
+      ],
+      "commonError": "Bazların toplam sayısını farklı konum sayısı sanmak veya en küçük kısa-dizi farkını bütün genom, aynı tür ve kesin ayrılma tarihiyle eşitlemek.",
+      "check": "Farklı sütunları tek tek işaretle: K–G için yalnız {6}, K–M ve G–M için {5, 6} kalmalı. Dizileri karşılaştırma sırasında ters sırayla yazsan fark sayıları değişmemelidir."
+    }
+  },
+  {
+    "id": "f093-classification-9",
+    "identity": "[\"f093-classification-9\",\"Bacteria, Archaea ve Eukarya üst âlemleri kullanılıyor. X ve Y’nin ikisi de zarla çevrili çekirdek taşımayan prokaryot düzenindedir; başka veri verilmemiştir. Hangi çıkarım bilimsel olarak sınırlıdır?\",\"\",[\"İkisi de zorunlu aynı üst âlemdedir\",\"Prokaryotluk tek başına Bacteria ile Archaea ayrımını çözmez\",\"İkisi de kesin Eukarya’dır\",\"Prokaryotların DNA’sı yoktur\",\"Tek hücreli bütün canlılar bu iki örnekle aynı gruptadır\"],1,\"Bacteria ve Archaea prokaryot düzenini paylaşırken moleküler/biyokimyasal özelliklerle ayrılır. Yalnız çekirdeksizlik aynı üst âlemi kanıtlamaz; Eukarya sonucu da çıkmaz. Prokaryotlarda DNA bulunur. Tek hücreli ökaryotlar olduğundan bütün tek hücreliler bu gruba sokulamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Üç üst âlem çerçevesi Bacteria, Archaea ve Eukarya adlarını kullanır. Bakteriler ile arkeler prokaryot hücre düzenini paylaşır; aralarındaki ayrımda moleküler ve biyokimyasal özellikler önemlidir.",
+        "Prokaryot hücrede zarla çevrili çekirdek bulunmaz ama DNA bulunur. Hücre sayısı ile hücre örgütlenmesi de ayrı değişkenlerdir: tek hücreli ökaryotlar vardır."
+      ],
+      "strategy": "Verilen çekirdek bilgisini hangi üst âlemlerin paylaşabildiğini listele; tek bir ortak özelliğin seçenekler arasında kesin atama yapmaya yetip yetmediğini değerlendir.",
+      "steps": [
+        "X ve Y’nin ikisi de prokaryot olarak tanımlanıyor. Bu, zarla çevrili çekirdek taşımadıklarını gösterir; DNA taşımadıklarını göstermez.",
+        "Bacteria ve Archaea bu hücre düzenini paylaşır. Veriler hem ikisinin aynı prokaryot üst âlemde bulunmasıyla hem farklı prokaryot üst âlemlerde bulunmasıyla uyumlu olabilir.",
+        "Bu yüzden yalnız prokaryotluk Bacteria–Archaea ayrımını çözmez. Zorunlu aynı üst âlem, kesin Eukarya veya bütün tek hücrelileri aynılaştıran seçenekler verinin izin verdiğinden ileri gider."
+      ],
+      "optionReasons": [
+        "Yanlış. X ve Y’nin prokaryot olması ikisini de Bacteria’ya veya ikisini de Archaea’ya zorunlu yerleştirmez; her biri için ayırt edici ek veri gerekir.",
+        "Doğru. Bacteria ve Archaea aynı prokaryot düzeni paylaşabildiğinden çekirdeksizlik bilgisi tek başına bu iki üst âlemi ayırt etmez.",
+        "Yanlış. Örneklerin prokaryot olduğu açıkça verilmiştir. Bu bilgiyi kullanarak ikisini kesin Eukarya’ya yerleştirmek hücre düzeni öncülüyle çelişir.",
+        "Yanlış. Prokaryotlarda zarla çevrili çekirdek yoktur ama genetik materyal olan DNA vardır; çekirdeksizlik DNA yokluğu değildir.",
+        "Yanlış. Tek hücreli ökaryotlar da vardır. Bu nedenle bütün tek hücrelileri X ve Y ile aynı prokaryot gruba koymak yanlıştır."
+      ],
+      "commonError": "Çekirdek yokluğunu DNA yokluğu sanmak veya ortak prokaryot hücre tipini zorunlu ortak üst âlem olarak yorumlamak.",
+      "check": "İki olası yerleşim dene: X ve Y ikisi de Bacteria olabilir; X Bacteria, Y Archaea da olabilir. İkisi de verilen prokaryotlukla uyumluysa yalnız bu özellik kesin ortak üst âlem seçtiremez."
+    }
+  },
+  {
+    "id": "f093-classification-10",
+    "identity": "[\"f093-classification-10\",\"Aynı takımda sınıflandırılan iki farklı hayvan için yalnız hiyerarşik kapsama kuralıyla hangisi zorunlu çıkar?\",\"\",[\"Aynı türdedirler\",\"Aynı cinstedirler\",\"Aynı familyadadırlar\",\"Aynı sınıfta ve takımın diğer üst taksonlarındadırlar\",\"Doğal koşullarda mutlaka verimli döl verirler\"],3,\"Takım bir sınıfın altındadır; aynı takım ortak sınıf ve onun üst taksonlarını gerektirir. Aynı familya, cins ve tür gibi daha dar basamaklar zorunlu değildir. Verimli döl oluşturma da yalnız takım ortaklığından çıkmaz. Bu soru yeni bir soy ağacı veya üreme deneyi varsaymadan kapsama ilişkisini kullanır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hayvanların taksonomik sırası genişten dara üst âlem, âlem, şube, sınıf, takım, familya, cins ve tür biçiminde izlenebilir. Bir grubun üyeliği üst gruplara taşınırken, içindeki daha dar gruplardan hangisine ait olunduğunu tek başına belirlemez.",
+        "Doğal koşullarda verimli döl verebilme biyolojik tür yaklaşımıyla ilişkilidir; geniş bir taksonu paylaşmakla eş anlamlı değildir. Hiyerarşik kapsama sorusu, sunulmayan bir çiftleşme deneyini varsaymayı gerektirmez."
+      ],
+      "strategy": "Ortak takım kutusunu basamak dizisinde bul; zorunlu üst grupları ve farklı olabilen alt grupları iki yöne ayırarak seçenekleri ele.",
+      "steps": [
+        "Takımın bir üst basamağı sınıf, alt basamağı familyadır. İki hayvanın aynı takımda bulunması, ortak takımın bağlı olduğu üst kutuda kalmalarını gerektirir.",
+        "Bu nedenle sınıf, şube, âlem ve üst âlem ortaktır. Takımın içindeki familyalar, onların içindeki cinsler ve türler farklı olabilir.",
+        "Aynı tür/cins/familya zorunluluğu ile verimli döl iddiası bu geniş ortaklıktan çıkmaz. Sınıfı ve diğer üst taksonları ortak sayan seçenek, yalnız kapsama kuralıyla desteklenir."
+      ],
+      "optionReasons": [
+        "Yanlış. Bir takım çok sayıda farklı tür içerebilir. Aynı takım bilgisi iki hayvanın aynı tür olduğunu zorunlu kılmaz.",
+        "Yanlış. Aynı takım içinde farklı familyalar ve cinsler bulunabilir; ortak cins, verilen ortak takımdan daha dar bir iddiadır.",
+        "Yanlış. Familya takımın alt basamağıdır. İki hayvan aynı takımın farklı familyalarında bulunabileceğinden familya ortaklığı zorunlu değildir.",
+        "Doğru. Her takım belirli bir sınıfın içindedir. Aynı takım üyeleri bu sınıfı ve sınıfın bağlı olduğu diğer üst taksonları paylaşır.",
+        "Yanlış. Geniş takım ortaklığı doğal koşullarda verimli dölü garanti etmez. Böyle bir üreme sonucu için tür ve üreme ilişkilerine ait ek kanıt gerekir."
+      ],
+      "commonError": "“Aynı takson” sözünü gördüğünde yukarı ve aşağı bütün basamakları eşitlemek; ortak geniş gruptan ortak dar grup çıkarmak.",
+      "check": "Aynı takım kutusunun içine iki ayrı familya çiz. İki hayvanı farklı familyalara yerleştirdiğinde takım ve sınıf ortaklığı korunuyorsa familya, cins ve tür ortaklığının zorunlu olmadığını görürsün."
+    }
+  }
+]

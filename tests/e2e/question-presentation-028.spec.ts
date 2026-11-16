@@ -5,6 +5,7 @@ import {
   type Page,
   type TestInfo,
 } from "@playwright/test";
+import { registerOfflineBootDiagnostics } from "./helpers/offlineBootDiagnostics";
 import { fileURLToPath } from "node:url";
 import { createServer } from "vite";
 import {
@@ -18,6 +19,8 @@ import type {
   HelpQuestion,
   QuestionGuidance,
 } from "../../src/domain/questionHelpModel";
+
+registerOfflineBootDiagnostics();
 
 // Approved copy is deliberately literal: expected views are never obtained by
 // calling the presentation function under test. Unchanged fields use real raw Qs.
@@ -147,10 +150,7 @@ test.beforeAll(async ({}, testInfo) => {
     validateState = storage.validateState;
     expect(
       presentation.questionPresentationRevisions
-        .filter(
-          (row: { id: string }) =>
-            !["ns-motion-4", "ns-energy-4"].includes(row.id),
-        )
+        .filter((row: { id: string }) => ids.includes(row.id))
         .map((row: { id: string }) => row.id)
         .sort(),
     ).toEqual([...ids].sort());

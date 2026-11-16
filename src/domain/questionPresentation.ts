@@ -192,6 +192,72 @@ export const questionPresentationRevisions: QuestionPresentationRevision[] = [
     explanation:
       "Ne için e=10; Na⁺ için e=11−1=10; Mg²⁺ için e=12−2=10 bulunur. Proton sayıları 10,11,12 olarak farklı kaldığından aynı elemente dönüşmüş sayılmazlar. Temel hâlde ele alınırlarsa üçünün de katman dağılımı 2,8 olur; bu koşulda elektron sayıları ve dizilimleri aynı olduğundan izoelektroniktirler. Kökte temel hâl verildiği varsayılmaz.",
   },
+  {
+    id: "f093-membrane-4",
+    revision: 1,
+    before: {
+      id: "f093-membrane-4",
+      prompt:
+        "Eşit sabit hacimli iki bölmede geçen X maddesi başlangıçta dışta 8, içte 2 derişim birimindedir. Kapalı sistemde tek bir adımda dıştan içe 1 birim X aktarılıyor; üretim ve tüketim yoktur. Yeni dış/iç değerleri hangisidir?",
+      options: ["8 ve3", "9 ve1", "7 ve2", "7 ve3", "6 ve6"],
+      answer: 3,
+      hint: "Bir bölmenin kaybı diğerinin kazancı olmalı.",
+      explanation:
+        "Dış 8−1=7, iç 2+1=3 olur; toplam 10 korunur.8/3 madde yaratır;9/1 ters yönde aktarımı gösterir;7/2 madde kaybettirir.6/6 toplam 12 olduğu için korunumla çelişir. Verilen eşit sabit hacim koşulu, bu sayısal güncellemeyi geçerli kılar.",
+    },
+    prompt:
+      "Her biri 1 L sabit hacimli iki bölmede X maddesinin başlangıç derişimi dışta 8 mol/L, içte 2 mol/L’dir. Kapalı sistemde tek bir adımda dıştan içe 1 mol X aktarılıyor; üretim ve tüketim yoktur. Yeni dış/iç derişimleri mol/L olarak hangisidir?",
+    explanation:
+      "Her bölmede derişim değişiminin büyüklüğü Δn/V=1 mol/1 L=1 mol/L’dir. Dış derişim 8−1=7 mol/L, iç derişim 2+1=3 mol/L olur. Toplam X miktarı 7×1+3×1=10 mol olarak korunur. 8/3 madde yaratır; 9/1 aktarım yönünü ters okur; 7/2 madde kaybettirir. 6/6 toplam 12 mol verdiği için korunumla çelişir. Sayısal derişim değişimi, yalnız eşit hacimden değil açıkça verilen 1 L hacim ve 1 mol aktarımdan hesaplanır.",
+  },
+  {
+    id: "f093-noun-10",
+    revision: 1,
+    before: {
+      id: "f093-noun-10",
+      prompt:
+        "‘Öğretmenin ve öğrencinin çantası kapıda duruyor.’ cümlesindeki öğretmenin ve öğrencinin çantası grubunda ortak kullanılan unsur hangisidir?",
+      options: [
+        "İlgi eki taşımayan okul adı",
+        "İki ayrı sıfat-fiil",
+        "Tamlanan olan çantası",
+        "Tamlayan olan kapıda",
+        "Ayrılma eki olan ve",
+      ],
+      answer: 2,
+      hint: "İki ilgi ekli unsurun ortak olarak hangi asıl varlık adına bağlandığını bul.",
+      explanation:
+        "Öğretmenin ve öğrencinin iki tamlayandır; çantası ikisine bağlanan ortak tamlanandır. Ve bağlaçtır, bir durum eki değildir. Bu soru grubun dil bilgisel bağlantısını sorar; çantanın gerçek hayattaki paylaşımını ayrıca belirlemez.",
+    },
+    prompt:
+      "‘Öğretmenin ve öğrencinin çantası kapıda duruyor.’ cümlesinde öğretmenin ve öğrencinin sözcükleri ilgi eki almış iki tamlayan olarak kullanılmıştır. Bu tamlama grubunda ortak kullanılan unsur hangisidir?",
+  },
+  {
+    id: "f93h-b7",
+    revision: 1,
+    before: {
+      id: "f93h-b7",
+      prompt: "1711 Prut’ta Azak’ın geri alınmasından hangi sonuç çıkarılamaz?",
+      options: [
+        "Rusya’yla ilişkide bir kazanım elde edilmiştir.",
+        "1700’deki Azak kaybı bakımından değişim olmuştur.",
+        "Aynı yüzyılda farklı yönlü sonuçlar yaşanabilir.",
+        "Karlofça’da kaybedilen bütün bölgeler geri alınmıştır.",
+        "Tek bir yerin kazanımı bütün cepheleri açıklamaz.",
+      ],
+      answer: 3,
+      hint: "Bir kalenin geri alınmasını bütün antlaşma kayıplarının giderilmesine genişletme.",
+      explanation:
+        "Azak’ın geri alınması Rusya cephesindeki somut kazanımdır. Karlofça’da başka taraflara bırakılan bütün yerlerin aynı işlemle geri alındığı söylenmez; ilk üç ve son seçenek bu sınırı korur.",
+    },
+    options: [
+      "Rusya’yla ilişkide bir kazanım elde edilmiştir.",
+      "1700’deki Azak kaybı bakımından değişim olmuştur.",
+      "Farklı tarihlerde farklı yönlü sonuçlar yaşanabilir.",
+      "Karlofça’da kaybedilen bütün bölgeler geri alınmıştır.",
+      "Tek bir yerin kazanımı bütün cepheleri açıklamaz.",
+    ],
+  },
 ];
 const revisions = new Map(
   questionPresentationRevisions.map((r) => [

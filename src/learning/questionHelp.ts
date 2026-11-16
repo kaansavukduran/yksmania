@@ -1,5 +1,11 @@
 import { clarifiedQuestionView } from "../domain/questionPresentation";
 import curated from "./questionHelpCatalogue.json";
+import guidance029Math from "./guidance029Math.json";
+import guidance029Physics from "./guidance029Physics.json";
+import guidance029Chemistry from "./guidance029Chemistry.json";
+import guidance029Biology from "./guidance029Biology.json";
+import guidance029Turkish from "./guidance029Turkish.json";
+import guidance029History from "./guidance029History.json";
 import guidance028Math from "./guidance028Math.json";
 import guidance028ChemistryA from "./guidance028ChemistryA.json";
 import guidance028ChemistryB from "./guidance028ChemistryB.json";
@@ -32,6 +38,12 @@ type CatalogueRow = {
 // These accepted cards previously exposed one hint and then the full solution.
 // Keep that old numbering only for snapshots without their own inline guide.
 const expandedLegacyRows: CatalogueRow[] = [
+  ...guidance029Math,
+  ...guidance029Physics,
+  ...guidance029Chemistry,
+  ...guidance029Biology,
+  ...guidance029Turkish,
+  ...guidance029History,
   ...guidance028Math,
   ...guidance028ChemistryA,
   ...guidance028ChemistryB,

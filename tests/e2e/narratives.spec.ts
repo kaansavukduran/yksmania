@@ -155,7 +155,14 @@ for (const subject of [
           await recall.locator("summary").click();
           await expect(recall.locator("p")).not.toBeEmpty();
         }
-        await expect(page.locator(".narrative-recall")).toHaveCount(0);
+        await expect(page.locator(".narrative-recall")).toHaveCount(1);
+        for (const name of ["Hatırlama 1", "Hatırlama 2"]) {
+          await expect(
+            page
+              .locator(".narrative-recall")
+              .getByRole("button", { name, exact: true }),
+          ).toBeVisible();
+        }
         const ownNote = page
           .locator(".study-notes")
           .getByRole("textbox", { name: "Notun", exact: true });
@@ -203,7 +210,14 @@ for (const subject of [
           await recall.locator("summary").click();
           await expect(recall.locator("p")).not.toBeEmpty();
         }
-        await expect(page.locator(".narrative-recall")).toHaveCount(0);
+        await expect(page.locator(".narrative-recall")).toHaveCount(1);
+        for (const name of ["Hatırlama 1", "Hatırlama 2"]) {
+          await expect(
+            page
+              .locator(".narrative-recall")
+              .getByRole("button", { name, exact: true }),
+          ).toBeVisible();
+        }
         const ownNote = page
           .locator(".study-notes")
           .getByRole("textbox", { name: "Notun", exact: true });

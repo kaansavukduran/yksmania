@@ -1,3 +1,21 @@
+# 0.18.1 kaynak adayı — kademeli çözümler ve yazılı hatırlama
+
+20 konudaki 200 eski soruya gerekli bilgi, ayrı yöntem, 600 ilerleyen çözüm adımı ve 1000 şık gerekçesi eklendi. Altı paketin tüm yardım metinleri bağımsız, anahtarı görünen kaynak incelemesinden geçti. Güncel gerçek çözümleyici 2.943 ayrıntılı ve 2.940 kısmi yardım verir; soru sayısı 5.883 olarak korunur. 480 ayrıntılı anlatım, 480 yerleşik özet ve 479 başlığın çalışma sırası değişmedi.
+
+Üç bilinen soruda hacim/miktar koşulu, ilgi–iyelik eki bağlamı ve 1700/1711 tarih karşılaştırması yalnız tanınan tam soru kimliğinde açıklığa kavuşturuldu. Bağlı zar örneğinin altı metin alanı, tam özgün örnek eşleşmesiyle birlikte düzeltilir. Ham sorular, rehberler, seçenek sıraları, anahtarlar ve eski kayıtlar yeniden yazılmaz. Önceki 2.743 yardımın metni ve yardım paneli sırası ayrı 0.18 kaynağıyla aynıdır.
+
+Yeni rehberlerin gizlediği yazılı hatırlama tekrar erişilebilir: 31 eski paketin 62 sorusu, 96 püf noktası ve önceki yazılı yanıtları, mevcut 191 rehber hatırlamasına ek olarak son çalışma aşamasında gösterilir. İlk aşamada görünmez; açmak, yazmak veya gerekçeyi okumak bağımsız puan kazandırmaz. Telefonda sınırda kalan bir sözcük anlamı korunarak iki kısa sözcükle gösterilir.
+
+1.663 birim testi, TypeScript ve üretim derlemesi geçti. Yeni 11 gerçek tarayıcı akışı, aynı eski hatırlama sorularını kullanan dokuz akış, bir temel soru seti ve iki telefon/normal refakat kontrolü ilk koşularında geçti. Normal/prefix derlemelerde 271 gerekli çevrimdışı varlık vardır; tek dosya 5 MiB altındadır. Gerçek yerel Electron 93 ailede çevrimdışı kullanım, reload ve aynı profilde süreç yeniden açılışını; /yksmania/ prefix 93 ailede çevrimdışı kullanım/reload akışını geçti. Renderer hatası sıfırdı. Son tam CI ve yayın kabulü ayrıca tamamlanacaktır.
+
+Önceki 0.18 tam CI turu 1.198 PASS/16 FAIL verdi. Bir eski metin beklentisi, gizlenmiş yazılı hatırlama ve telefon sözcük bölünmesi onarıldı. Aralıklı boş açılışın kesin nedeni henüz kanıtlanmadı; başarısız kayıt korunur ve pasif tanı eklenir. Bu kayıt bütün 1.225 tarayıcı kontrolünün geçtiği anlamına gelmez. 0.18.1 paket/yayın kapısı henüz kapanmadı; Android imzası ertelendi ve yeni APK bu kapsama alınmadı.
+
+Sıradaki 300 sorunun envanteri ayrıdır; henüz uygulamanın hazır çözüm sayısına eklenmez. Bütün Drive/MEB alt kazanımlarının ve son 20 yıllık resmî ÖSYM arşivinin tamamlandığı iddia edilmez.
+
+---
+
+## Önceki kaynak ve kabul kayıtları
+
 # Güncel 0.18 kaynak adayı
 
 Doğrulanmış çalışma sırasındaki 479 başlığın tamamı anlatım ve bağımsız soruyla eşleşir. Kaynakta 480 ayrıntılı rehber, 480 yerleşik kopya kağıdı ve 5.883 özgün soru vardır. 0.17 üzerine 130 yeni anlatım eklenmiş; kısa kalan 28 eski anlatım 553 bölüm, 168 çözümlü örnek ve 178 hatırlama etkinliğiyle derinleştirilmiştir. İleri sorular 28 ayrı setten açılır.

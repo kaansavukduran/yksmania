@@ -1,0 +1,1252 @@
+[
+  {
+    "id": "mutlak-deger-093-1",
+    "identity": "[\"mutlak-deger-093-1\",\"|−7|−|−2| işleminin sonucu kaçtır?\",\"\",[\"5\",\"−5\",\"9\",\"−9\",\"14\"],0,\"İşlem 7−2=5'tir. Dikkat: Mutlak değeri dışarıdaki çıkarma üzerine de uygulamak veya tüm farkı tek mutlak değere toplamak farklı işlem olur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Mutlak değer, sayının sıfıra uzaklığıdır; negatif olmayan bir sayı verir. İçerideki negatif işaret uzaklığın yönünü belirtmez.",
+        "İki ayrı mutlak değer arasındaki çıkarma, uzaklıklar hesaplandıktan sonra yapılır. Dışarıdaki işlem kendi işaretini korur."
+      ],
+      "strategy": "Çizgilerle sınırlanan iki sayının uzaklıklarını ayrı kutulara yaz; ardından kutular arasındaki işlemi uygula.",
+      "steps": [
+        "İlk terim |−7|=7 olur; sayı doğrusunda −7 ile 0 arasında yedi birim vardır.",
+        "İkinci terim |−2|=2 olur; ilk hesapla birleştirmeden dışarıda kalan eksi işaretini koru.",
+        "Bu iki uzaklığı verilen sırayla çıkar: 7−2=5."
+      ],
+      "optionReasons": [
+        "Doğru. İki uzaklığın verilen sıradaki farkı 7−2=5’tir.",
+        "−5, 2−7 işleminin sonucudur; çıkarılanla kendisinden çıkarılanı yer değiştirir.",
+        "9, uzaklıkları 7+2 biçiminde toplar; aradaki çıkarma işaretini değiştirmiş olur.",
+        "−9, −7−2 toplamını verir; iki negatif sayının mutlak değerlerini hesaplamaz.",
+        "14, 7·2 çarpımıdır; soruda uzaklıklar arasında çarpma yoktur."
+      ],
+      "commonError": "Mutlak değer çizgilerini kaldırırken dışarıdaki çıkarma işaretini de silmek veya toplama yapmak.",
+      "check": "Sonuç ile çıkarılan uzaklığı topla: 5+2=7 ilk uzaklığı geri verir. Ayrıca ilk uzaklık daha büyük olduğundan farkın pozitif olması beklenir."
+    }
+  },
+  {
+    "id": "mutlak-deger-093-2",
+    "identity": "[\"mutlak-deger-093-2\",\"Gerçek x için |3x−2|=7 denkleminin çözüm kümesi hangisidir?\",\"\",[\"{3}\",\"{−3,3}\",\"{−5,3}\",\"{−5/3,3}\",\"∅\"],3,\"3x−2=7 kolundan 3; 3x−2=−7 kolundan −5/3 gelir. İkisi de ilk eşitliği sağlar. Dikkat: Tek kolu çözmek bir kökü; 3'e bölmeyi unutmak doğru konumu kaybettirir.\"]",
+    "guidance": {
+      "knowledge": [
+        "|A|=r ve r>0 olduğunda A=r veya A=−r olur; iki yön aynı uzaklığı verebilir.",
+        "Doğrusal bir denklemin iki tarafına aynı işlemi uygulamak eşitliği korur. Bir katsayıya bölerken o katsayının sıfırdan farklı olması gerekir."
+      ],
+      "strategy": "İçteki doğrusal ifadeyi iki farklı işaretli uzaklık değeriyle eşleştir; her dalın kökünü bir kümede birleştir.",
+      "steps": [
+        "Sağ taraf 7 pozitiftir; 3x−2=7 ve 3x−2=−7 olmak üzere iki dal kur.",
+        "İlk dalda 3x=9 ile x=3; ikinci dalda 3x=−5 ile x=−5/3 elde edilir.",
+        "İki farklı adayı birlikte yaz: {−5/3,3}. İkisi de özgün eşitlikte 7 uzaklığını verir."
+      ],
+      "optionReasons": [
+        "{3}, pozitif iç değer dalını bulur fakat 3x−2=−7 dalındaki kökü eksik bırakır.",
+        "{−3,3}, köklerin sıfıra göre simetrik olduğunu varsayar; oysa içteki −2 ötelemesi vardır. x=−3 için uzaklık 11’dir.",
+        "{−5,3}, ikinci dalda 3x=−5 bulduktan sonra 3’e bölmeyi unutur; x=−5 için uzaklık 17’dir.",
+        "Doğru. −5/3 ve 3 için iç ifade sırasıyla −7 ve 7 olur.",
+        "Boş küme olamaz; örneğin x=3 açıkça |9−2|=7 eşitliğini sağlar."
+      ],
+      "commonError": "İçte doğrusal öteleme varken x köklerini doğrudan ± bir sayı sanmak.",
+      "check": "İki kökün orta noktası 2/3’tür; bu, iç ifadeyi sıfır yapan 3x−2=0 noktasına eşittir. Her kök ayrıca ilk denklemde doğrulanır."
+    }
+  },
+  {
+    "id": "mutlak-deger-093-3",
+    "identity": "[\"mutlak-deger-093-3\",\"Gerçek x için |2x+1|≤5 eşitsizliğinin çözümü hangisidir?\",\"\",[\"(−3,2)\",\"[−2,3]\",\"[−3,2]\",\"x≤−3 veya x≥2\",\"[−5,5]\"],2,\"Üç taraftan 1 çıkarıp pozitif 2'ye bölünce −3≤x≤2 bulunur. Uçlarda uzaklık 5 olduğu için dâhildir. Dikkat: Küçüklükte dış bölgeleri almak veya eşitlik varken uçları açmak farklı kümeler verir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Pozitif r için |A|≤r, −r≤A≤r çift eşitsizliğidir. Eşitlik uç değerleri de kapsar.",
+        "Çift eşitsizliğin üç tarafına aynı sayı eklenir veya çıkarılır. Pozitif bir sayıya bölme sıralamanın yönünü korur."
+      ],
+      "strategy": "Önce iç ifadenin alt ve üst sınırını birlikte yaz; öteleme ile ölçek değişimini üç tarafta aynı anda yap.",
+      "steps": [
+        "Mutlak değer sınırını −5≤2x+1≤5 biçiminde aç.",
+        "Üç taraftan 1 çıkar: −6≤2x≤4; sonra pozitif 2’ye böl: −3≤x≤2.",
+        "Eşitlik işareti korunduğundan iki uç da alınır; çözüm [−3,2]’dir."
+      ],
+      "optionReasons": [
+        "(−3,2), iç noktaları seçer fakat eşitliğin izin verdiği x=−3 ve x=2 uçlarını dışlar.",
+        "[−2,3], doğru aralığı sağa bir birim kaydırır; x=3 için |7|≤5 yanlıştır, x=−3 ise geçerlidir.",
+        "Doğru. Çift eşitsizlik −3≤x≤2 verir ve iki uçta uzaklık 5 olur.",
+        "İki dış bölge, uzaklığın büyük olduğu yerleri içerir; örneğin x=10’u kabul eder ama uzaklık 21’dir.",
+        "[−5,5], 2x+1’in sınırını doğrudan x’in sınırı sanır; x=5 için uzaklık 11’dir."
+      ],
+      "commonError": "İçteki +1 ve çarpan 2’yi dönüştürmeden mutlak değerin sınırlarını x’e aktarmak.",
+      "check": "Uçlarda |2(−3)+1|=5 ve |2·2+1|=5; içeride x=0 için 1≤5 doğrudur. Uçların hemen dışında uzaklık 5’i aşar."
+    }
+  },
+  {
+    "id": "mutlak-deger-093-4",
+    "identity": "[\"mutlak-deger-093-4\",\"Gerçek x için |x−4|>2 eşitsizliği hangi değerleri seçer?\",\"\",[\"2<x<6\",\"[2,6]\",\"x≤2 veya x≥6\",\"x>6\",\"x<2 veya x>6\"],4,\"Açık dış bölgeler x<4−2=2 ve x>4+2=6'dır. 2 ve 6'da uzaklık tam 2 olduğundan alınmaz. Dikkat: İki dış bölge veya ile bağlanır; biri sağda biri solda olduğu için ikisini aynı anda istemek çözümü yok eder.\"]",
+    "guidance": {
+      "knowledge": [
+        "|x−a|, x’in a merkezine uzaklığıdır. Pozitif bir uzaklıktan büyük olma, merkezin iki yanında kalan dış bölgeleri seçer.",
+        "Sıkı > işareti, uzaklığın tam sınır değerine eşit olduğu noktaları dışarıda bırakır. İki ayrı dış bölge “veya” ile birleştirilir."
+      ],
+      "strategy": "Sayı doğrusunda merkezi ve iki eşik noktasını işaretle; eşiklerin dışındaki noktaları, uçların durumuyla birlikte değerlendir.",
+      "steps": [
+        "Merkez 4’tür; iki eşik 4−2=2 ve 4+2=6 olur.",
+        "Uzaklığı 2’den büyük noktalar 2’nin solunda veya 6’nın sağındadır.",
+        "Eşiklerde uzaklık yalnız 2 olduğu için uçları çıkar: x<2 veya x>6."
+      ],
+      "optionReasons": [
+        "2<x<6, merkeze iki birimden yakın noktaları seçer; örneğin x=4 için uzaklık 0’dır.",
+        "[2,6], hem iç bölgeyi hem sınırları alır; oysa merkez ve iki eşik verilen > koşulunu sağlamaz.",
+        "x≤2 veya x≥6, dış yönleri doğru seçer fakat eşiklerdeki eşitliği de kabul eder.",
+        "x>6, sağ dış bölgeyi içerir ama x=0 gibi sol dış bölgedeki geçerli değerleri kaybeder.",
+        "Doğru. İki açık dış bölge x<2 veya x>6’dır."
+      ],
+      "commonError": "“Uzak” koşulunu merkez çevresindeki iç aralık olarak okumak veya iki dış bölgeyi “ve” ile bağlamak.",
+      "check": "x=1 ve x=7 için uzaklık 3 olduğundan ikisi de alınır. x=2 ve x=6 için uzaklık 2 olduğundan ikisi de alınmaz."
+    }
+  },
+  {
+    "id": "mutlak-deger-093-5",
+    "identity": "[\"mutlak-deger-093-5\",\"Gerçek x için |x−2|=2x+1 denkleminin tek çözümü kaçtır?\",\"\",[\"−3\",\"1/3\",\"3\",\"−1/3\",\"2\"],1,\"İki kol x=−3 ve x=1/3 adaylarını verir. −3 için sağ taraf −5 olduğu için aday elenir; 1/3 için iki taraf 5/3 olur. Dikkat: |A|=B'den iki aday çıkması ikisinin de geçerli olduğunu garanti etmez; özgün eşitlik denetlenir.\"]",
+    "guidance": {
+      "knowledge": [
+        "|A(x)|=B(x) eşitliğinde sağ taraf negatif olamaz. İki işaret dalından çıkan sayılar önce adaydır.",
+        "Denklem dönüşümlerinden sonra adayları özgün eşitlikte denemek, işaret koşulunu kaybeden sonuçları ayırır."
+      ],
+      "strategy": "Önce sağ tarafın izin verdiği x değerlerini belirle; sonra iki doğrusal aday denklemini çözerek bu koşulla süz.",
+      "steps": [
+        "2x+1≥0 zorunludur; buradan x≥−1/2 elde edilir.",
+        "x−2=2x+1 dalı x=−3; x−2=−(2x+1) dalı 3x=1 ve x=1/3 verir.",
+        "−3 sağ tarafı negatif yaptığı için elenir; 1/3 için iki taraf da 5/3’tür. Tek çözüm 1/3’tür."
+      ],
+      "optionReasons": [
+        "−3, ilk doğrusal dalın adayıdır fakat sağ taraf −5 olur; pozitif uzaklığa eşit olamaz.",
+        "Doğru. x=1/3 için |−5/3|=5/3 ve 2x+1=5/3’tür.",
+        "x=3 için sol taraf 1, sağ taraf 7’dir; eşitlik oluşmaz.",
+        "x=−1/3 için sol taraf 7/3, sağ taraf 1/3’tür; 3x=1 denklemindeki işareti ters almak geçerli kök üretmez.",
+        "x=2, yalnız mutlak değerin içini sıfırlar; sağ taraf 5 olduğu için ilk eşitliği sağlamaz."
+      ],
+      "commonError": "İki doğrusal dalın her sonucunu otomatik olarak mutlak değer denkleminin kökü kabul etmek.",
+      "check": "Geçerli kök x<2 bölgesindedir; bu bölgede denklem 2−x=2x+1 olur. x=1/3 yerine konunca her iki taraf 5/3 çıkar."
+    }
+  },
+  {
+    "id": "mutlak-deger-093-6",
+    "identity": "[\"mutlak-deger-093-6\",\"x<3 olan gerçek x için √((x−3)²) ifadesi hangisine eşittir? √ işareti esas karekökü gösterir.\",\"\",[\"x−3\",\"3+x\",\"−x−3\",\"3−x\",\"±(x−3)\"],3,\"√((x−3)²)=|x−3|. x<3 iken iç ifade negatif olduğundan−(x−3)=3−x olur. Dikkat: Kare ile kökü koşulsuz silmek negatif bir esas karekök üretir;± denklem köklerinde kullanılır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Gerçek A için √(A²)=|A|’dır. Esas karekök negatif olmayan değeri seçer; kareyi ve kökü silmek her işarette A’yı vermez.",
+        "Bir ifade negatifse mutlak değeri onun ters işaretlisidir. Parantezin önüne gelen eksi içerideki her terimi etkiler."
+      ],
+      "strategy": "x<3 bilgisini kökün içindeki x−3 ifadesinin işaretine çevir; esas kökü mutlak değer üzerinden parantezi açarak yaz.",
+      "steps": [
+        "Köklü ifade √((x−3)²)=|x−3| biçimine dönüşür.",
+        "x<3 verildiğinden x−3<0 olur; bu nedenle |x−3|=−(x−3) yazılır.",
+        "Eksiyi iki terime dağıt: −x+3=3−x. Bu ifade belirtilen bölgede pozitiftir."
+      ],
+      "optionReasons": [
+        "x−3, verilen x<3 bölgesinde negatiftir; esas karekökün işaretine uymaz.",
+        "3+x, −(x−3) açılımı değildir. Örneğin x=1 için 4 verir, asıl kök 2’dir.",
+        "−x−3, parantezi açarken sabit terimin işaretini yanlış tutar; x=1 için −4 olur.",
+        "Doğru. x−3 negatif olduğu için |x−3|=3−x’tir.",
+        "±(x−3), iki denklem kökünü çağrıştırır; burada esas karekök tek bir değerli ifadedir."
+      ],
+      "commonError": "√(A²)=A eşitliğini A’nın işaretini incelemeden uygulamak.",
+      "check": "x=1 için √4=2 ve 3−1=2 bulunur. Genel olarak 3−x>0 ve (3−x)²=(x−3)² olduğundan esas kökün iki özelliği de sağlanır."
+    }
+  },
+  {
+    "id": "mutlak-deger-093-7",
+    "identity": "[\"mutlak-deger-093-7\",\"Gerçek x için |x+2|+|x−4| ifadesinin alabileceği en küçük değer kaçtır?\",\"\",[\"6\",\"0\",\"2\",\"3\",\"8\"],0,\"İki noktaya uzaklık toplamı en az noktalar arası 6'dır; −2≤x≤4 boyunca(x+2)+(4−x)=6 olur. Dikkat: Her iki terimi ayrı sıfır yapmaya çalışmak mümkün değildir; x aynı anda −2 ve 4 olamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "İki sabit noktaya olan uzaklıkların toplamı, bu noktalar arasındaki uzaklıktan küçük olamaz. Aradaki noktalar bu alt sınıra ulaşır.",
+        "|x−a|+|x−b| yapısında iki terim aynı x’e bağlıdır; birini en küçük yapan nokta diğerini de sıfırlamak zorunda değildir."
+      ],
+      "strategy": "Her mutlak değerin anlattığı sabit noktayı bul; aralarındaki mesafeyi alt sınır olarak kurup arada bir x ile erişildiğini göster.",
+      "steps": [
+        "|x+2| ve |x−4|, x’in −2 ile 4’e uzaklıklarıdır; noktalar arası mesafe 4−(−2)=6’dır.",
+        "−2≤x≤4 iken toplam (x+2)+(4−x)=6 olur; alt sınıra bu aralıkta erişilir.",
+        "Aralığın dışına çıkınca fazladan uzaklık eklenir. Bu nedenle en küçük değer 6’dır."
+      ],
+      "optionReasons": [
+        "Doğru. İki nokta arasındaki 6 birim, toplam uzaklığın alt sınırıdır ve arada alınır.",
+        "0 için iki uzaklığın da aynı anda sıfır olması gerekir; x hem −2 hem 4 olamaz.",
+        "2, sabit noktaların mutlak değerleri farkına bakmakla elde edilebilir; noktalar arasındaki mesafe değildir. x=0’da bile toplam 6’dır.",
+        "3, iki noktanın arasının yarısıdır; orta noktada her uzaklık 3 olsa da istenen toplam 3+3’tür.",
+        "8, örneğin x=5’te alınan toplamdır; x=0 toplamı 6’ya indirdiğinden minimum olamaz."
+      ],
+      "commonError": "Toplamın minimumunu her terimin minimumunu bağımsız seçerek bulmaya çalışmak.",
+      "check": "x=1 için 3+3=6, x=−2 için 0+6=6 bulunur. Üçgen eşitsizliği |(x+2)−(x−4)|≤|x+2|+|x−4| de alt sınırın 6 olduğunu doğrular."
+    }
+  },
+  {
+    "id": "mutlak-deger-093-8",
+    "identity": "[\"mutlak-deger-093-8\",\"Gerçek sayılarda |x−1|<−2 eşitsizliğinin çözüm kümesi hangisidir?\",\"\",[\"(−1,3)\",\"ℝ\",\"∅\",\"{1}\",\"x<−1 veya x>3\"],2,\"Mutlak değer her zaman ≥0'dır. Sıfırdan küçük bir değerden de küçük olamaz; hiçbir x eşitsizliği sağlamaz. Dikkat: Pozitif sağ taraf için kullanılan iç aralık kalıbını negatif sayıya uygulamak geçersizdir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Her gerçek sayının mutlak değeri sıfırdan büyük veya sıfıra eşittir. Bu, iç ifadenin biçiminden bağımsız bir değer sınırıdır.",
+        "Bir eşitsizliğin mümkünlüğü, iki tarafın alabileceği değer aralıkları karşılaştırılarak denklem çözmeden de incelenebilir."
+      ],
+      "strategy": "Sağdaki negatif sınırı sol tarafın en küçük mümkün değeriyle karşılaştır; aralık açma kalıbından önce mümkünlük denetimi yap.",
+      "steps": [
+        "Her gerçek x için |x−1|≥0’dır.",
+        "İstenen |x−1|<−2 koşulu, negatif olmayan bir değerin negatif bir sayıdan da küçük olmasını ister; bu mümkün değildir.",
+        "Koşulu sağlayan hiçbir gerçek x yoktur; çözüm kümesi ∅’dir."
+      ],
+      "optionReasons": [
+        "(−1,3), sağ taraf +2 olsaydı elde edilecek iç aralıktır; verilen −2’yi +2 yapmak eşitsizliği değiştirir.",
+        "ℝ olamaz; örneğin x=1 için 0<−2 yanlıştır. Aynı işaret engeli tüm x’ler için vardır.",
+        "Doğru. Sol tarafın alt sınırı 0, istenen üst sınır ise −2 olduğundan çözüm yoktur.",
+        "{1}, yalnız uzaklığı en küçük yapan noktadır; minimum değer 0 bile −2’den küçük değildir.",
+        "İki dış bölge de uzaklığı negatif yapmaz; örneğin x=4’te 3<−2 yanlıştır."
+      ],
+      "commonError": "Pozitif uzaklık sınırı için öğrenilen aralık formülünü sağ tarafın işaretini denetlemeden kullanmak.",
+      "check": "Varsayılan bir çözüm olsaydı 0≤|x−1|<−2 zinciri gerekirdi; buradan 0<−2 çelişkisi çıkar."
+    }
+  },
+  {
+    "id": "mutlak-deger-093-9",
+    "identity": "[\"mutlak-deger-093-9\",\"Gerçek x için ||x−1|−3|=2 denkleminin kaç farklı çözümü vardır?\",\"\",[\"2\",\"4\",\"1\",\"3\",\"0\"],1,\"İlk uzaklık x=−4,6; ikinci x=0,2 verir. Dört aday farklıdır ve hepsi özgün eşitliği sağlar. Dikkat: Bir dış kolu unutmak veya her katmandaki eksi işaretini tek seferde kaldırmak kök kaybettirir.\"]",
+    "guidance": {
+      "knowledge": [
+        "İç içe mutlak değerde en dış işaret, kendi içindeki ifadenin uzaklığını anlatır. Dış dal açıldıktan sonra iç mutlak değerin sağ tarafı yeniden değerlendirilir.",
+        "Bir çözüm kümesinin eleman sayısı, geçerli ve farklı köklerin sayısıdır; aynı kök iki daldan gelse de bir kez sayılır."
+      ],
+      "strategy": "En dış katmanı iki doğrusal dal olarak ayır; her dalı iç uzaklık denklemine dönüştürüp ortaya çıkan noktaları birleştir.",
+      "steps": [
+        "Dış işaretten |x−1|−3=2 veya |x−1|−3=−2 denklemlerini kur.",
+        "Bunlar |x−1|=5 ve |x−1|=1 verir; ilkinden x=−4,6, ikinciden x=0,2 çıkar.",
+        "Dört aday da farklıdır ve geçerlidir. Dolayısıyla farklı çözüm sayısı 4’tür."
+      ],
+      "optionReasons": [
+        "2, dıştaki iki dalın sayısıdır; her dalın iç mutlak değerden iki ayrı kök verdiğini hesaba katmaz.",
+        "Doğru. {−4,0,2,6} kümesinde dört farklı geçerli kök vardır.",
+        "1, merkez etrafındaki tek bir noktayı sayar; örneğin hem x=0 hem x=2 koşulu sağlar.",
+        "3, dört farklı noktadan birini eksiltir; −4,0,2,6 arasında yinelenen kök yoktur.",
+        "0 olamaz; örneğin x=0 için ||−1|−3|=2’dir."
+      ],
+      "commonError": "Dıştaki iki işaret dalını son kök sayısı sanıp içte kalan uzaklık denklemlerini çözmemek.",
+      "check": "İç uzaklık 1 olan iki noktada |1−3|=2, iç uzaklık 5 olan iki noktada |5−3|=2 olur; iki çiftin ortak noktası yoktur."
+    }
+  },
+  {
+    "id": "mutlak-deger-093-10",
+    "identity": "[\"mutlak-deger-093-10\",\"y=|x+2|−3 grafiğinin tepe noktası hangisidir?\",\"\",[\"(2,3)\",\"(2,−3)\",\"(−2,3)\",\"(0,−1)\",\"(−2,−3)\"],4,\"x+2=0 için x=−2; bu x'te y=0−3=−3. Grafik bu noktadan iki doğrusal kola ayrılır. Dikkat: İçteki+2'yi doğrudan sağa 2 birim diye okumak ötelemenin yönünü ters çevirir.\"]",
+    "guidance": {
+      "knowledge": [
+        "y=|x−a|+b grafiğinde mutlak değer en küçük değerini iç ifade sıfırken alır. Dışarıdaki sabit, bu minimumun düşey konumunu belirler.",
+        "Bir nokta (x,y) yazılır; içteki yatay öteleme ile dıştaki düşey öteleme farklı koordinatları etkiler."
+      ],
+      "strategy": "Tepeyi iç ifadeyi sıfırlayan x’ten kur; aynı x’i bütün fonksiyona koyarak y koordinatını ayrı hesapla.",
+      "steps": [
+        "İç ifadeyi sıfırla: x+2=0 olduğundan x=−2.",
+        "Bu noktada y=|0|−3=−3 olur; tepe adayı (−2,−3)’tür.",
+        "x=−2’nin iki yanında mutlak değer artar. Bu nokta iki doğrusal kolun birleştiği tepedir."
+      ],
+      "optionReasons": [
+        "(2,3), hem içteki ötelemenin yönünü hem dıştaki −3’ün işaretini ters okur. x=2’de fonksiyon 1 verir.",
+        "(2,−3), düşey koordinatı tutar ama tepenin x değerini ters alır; x+2 burada sıfır değildir.",
+        "(−2,3), iç ifadeyi doğru sıfırlar fakat dışarıdaki −3’ü +3 yapar.",
+        "(0,−1), grafiğin y eksenini kestiği gerçek bir noktadır; iki kolun birleştiği tepe değildir.",
+        "Doğru. x=−2’de iç ifade sıfır ve y=−3’tür."
+      ],
+      "commonError": "İçteki +2’yi, tepe x koordinatının da +2 olması biçiminde okumak.",
+      "check": "Tepeye birer birim uzaklıkta x=−3 ve x=−1 için y=−2 olur. Bu simetri ve tepedeki −3 minimumu (−2,−3) noktasını doğrular."
+    }
+  },
+  {
+    "id": "uslu-sayilar-093-1",
+    "identity": "[\"uslu-sayilar-093-1\",\"−2⁴+(−2)⁴ işleminin sonucu kaçtır? Üs önceliği standarttır.\",\"\",[\"0\",\"32\",\"−32\",\"16\",\"−16\"],0,\"−2⁴=−16, (−2)⁴=16; toplam 0'dır. Dikkat: İki ifadenin taban kapsamını aynı okumak işaret hatası yaratır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Üs, parantezle belirtilen tabanın tamamına uygulanır. Parantezsiz baştaki eksi ise kuvvet hesaplandıktan sonra uygulanır.",
+        "Negatif bir sayının pozitif çift tam kuvveti pozitiftir; bu kural, baştaki eksi tabana dâhil olduğunda kullanılır."
+      ],
+      "strategy": "Her terimin taban sınırını parantezle görünür yap; işaretleri belirledikten sonra aynı büyüklükteki terimleri topla.",
+      "steps": [
+        "İlk terimi −(2⁴) olarak oku: değeri −16’dır.",
+        "İkinci terimde taban −2’dir; (−2)⁴=16 olur.",
+        "İki terimi topla: −16+16=0."
+      ],
+      "optionReasons": [
+        "Doğru. Eşit büyüklükte ve zıt işaretli iki terim birbirini götürür.",
+        "32, ilk terimi de (−2)⁴ sanıp 16+16 hesaplar; parantezin kapsamını genişletir.",
+        "−32, ikinci terimi de −(2⁴) sayıp −16−16 hesaplar; negatif tabanın çift kuvvetini yanlış işler.",
+        "16, yalnız ikinci terimin değeridir; ilk terimdeki −16 katkısını atlar.",
+        "−16, yalnız ilk terimin değeridir; ikinci terimdeki +16 katkısını atlar."
+      ],
+      "commonError": "İki terimde de “eksi iki üzeri dört” sözünü kullanıp parantezlerin farklı kapsamını görmemek.",
+      "check": "Çarpanları aç: ikinci terimde dört negatif çarpan +16 verir; ilkinde dört pozitif 2’nin çarpımına sonradan eksi uygulanır. Toplam yine sıfırdır."
+    }
+  },
+  {
+    "id": "uslu-sayilar-093-2",
+    "identity": "[\"uslu-sayilar-093-2\",\"2⁻³ sayısı hangisine eşittir?\",\"\",[\"−8\",\"−1/8\",\"8\",\"1/8\",\"1/6\"],3,\"2⁻³=1/2³=1/8. Pozitif tabanlı bir kuvvetin üssünün negatif olması sonucu negatif yapmaz. Dikkat: Eksi üssü sonuç önüne taşımak ters alma işlemi değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sıfırdan farklı a ve pozitif tam n için a⁻ⁿ=1/aⁿ’dir. Negatif üs, çarpmanın tersini almayı belirtir.",
+        "Pozitif tabanın tam sayı kuvveti pozitiftir; üste gelen eksi, sayının önündeki eksi işaretiyle aynı görevde değildir."
+      ],
+      "strategy": "İfadeyi çarpma işlemine göre ters biçiminde yeniden yaz; paydadaki pozitif kuvveti hesapla ve kesri işaret açısından denetle.",
+      "steps": [
+        "Negatif üs kuralıyla 2⁻³=1/2³ yaz.",
+        "Paydada 2³=2·2·2=8 bulunur.",
+        "Sonuç 1/8’dir; pozitif tabandan geldiği için işareti pozitiftir."
+      ],
+      "optionReasons": [
+        "−8, negatif üssü baştaki eksi gibi kullanır; ters alma yapmaz.",
+        "−1/8, ters alma büyüklüğünü bulur ama pozitif tabana gereksiz negatif işaret ekler.",
+        "8, 2³ değeridir; negatif üs için gereken ters alma işlemini atlar.",
+        "Doğru. 1/8 ile 2³’ün çarpımı 1’dir.",
+        "1/6, paydada 2³ yerine 2·3 kullanır; üs çarpan sayısıdır, tabanın üs ile çarpımı değildir."
+      ],
+      "commonError": "Negatif üssü tabanın veya sonucun önüne taşınan bir eksi sanmak.",
+      "check": "Bulunan kesri 2³ ile çarp: (1/8)·8=1. Çarpımsal ters koşulu sağlanır; sayı ayrıca 0 ile 1 arasındadır."
+    }
+  },
+  {
+    "id": "uslu-sayilar-093-3",
+    "identity": "[\"uslu-sayilar-093-3\",\"Aşağıdaki ifadelerden hangisi bu dersin elementer gerçek sayı hesabında tanımsızdır?\",\"\",[\"(−5)⁰\",\"0⁵\",\"0⁻²\",\"1⁻⁸\",\"(−1)³\"],2,\"0⁻²=1/0²=1/0 gerektirir ve tanımsızdır. Diğerleri sırasıyla 1,0,1 ve −1'dir. Dikkat: a⁰=1 kuralının sıfırdan farklı taban koşulunu unutma; burada tanımsız olan negatif sıfır kuvvetidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sıfırdan farklı tabanın sıfırıncı kuvveti 1’dir. Sıfır tabanın pozitif tam kuvveti ise 0’dır; bunlar ayrı durumlardır.",
+        "Negatif tam kuvvet için tabanın çarpımsal tersi gerekir. Bir tabanın tersinin varlığı, paydanın sıfır olmamasıyla denetlenir."
+      ],
+      "strategy": "Seçenekleri sıfır üs, pozitif üs ve negatif üs sınıflarına ayır; her ifadenin tanım koşulunu kendi tabanında denetle.",
+      "steps": [
+        "(−5)⁰=1 ve 0⁵=0 olduğundan ilk iki ifade tanımlıdır.",
+        "0⁻², 1/0² yani 1/0 gerektirir; bu bölüm gerçek sayı hesabında tanımlı değildir.",
+        "Kalanlar 1⁻⁸=1 ve (−1)³=−1’dir. Yalnız 0⁻² tanımsız kalır."
+      ],
+      "optionReasons": [
+        "(−5)⁰ tanımlıdır ve 1’dir; sıfır olan taban değil üstür.",
+        "0⁵=0 tanımlıdır; sıfır tabanın pozitif tam kuvveti serbesttir.",
+        "Doğru. 0⁻² ifadesi sıfıra bölme gerektirir.",
+        "1⁻⁸=1/1⁸=1’dir; payda sıfır değildir.",
+        "(−1)³=−1’dir; negatif tabanın tek tam kuvveti gerçek ve tanımlıdır."
+      ],
+      "commonError": "Sıfır üs ile sıfır tabanı aynı durum saymak veya her negatif kuvveti tanımsız görmek.",
+      "check": "Tanımsız seçenek için bir gerçek değer v olsaydı ters alma özelliği 0²·v=1 isteyecekti. Sol taraf her gerçek v için 0 olduğundan böyle bir değer yoktur."
+    }
+  },
+  {
+    "id": "uslu-sayilar-093-4",
+    "identity": "[\"uslu-sayilar-093-4\",\"(3²·3⁵)/3³ işleminin değeri kaçtır?\",\"\",[\"9\",\"27\",\"243\",\"729\",\"81\"],4,\"Aynı ve sıfırdan farklı taban için 3^(2+5−3)=3⁴=81 bulunur. Dikkat: Çarpma ve bölmede üsleri çarpmak üssün üssü kuralıyla karışıklık yaratır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı ve sıfırdan farklı tabanın kuvvetleri çarpılırken üsler toplanır; bölünürken paydanın üssü çıkarılır.",
+        "Üssün üssünde çarpma yapılır. Birkaç ayrı kuvvetin çarpımı ile bir kuvvetin yeniden kuvvetini almak farklı yapılardır."
+      ],
+      "strategy": "Pay ve paydayı ortak tabanlı tek kuvvete indir; önce üssü belirleyip sonra kuvvetin sayısal değerini hesapla.",
+      "steps": [
+        "Paydaki iki kuvvetin üssü 2+5=7 olur: 3²·3⁵=3⁷.",
+        "Paydadaki 3³’e bölünce 3^(7−3)=3⁴ kalır.",
+        "3⁴=3·3·3·3=81 bulunur."
+      ],
+      "optionReasons": [
+        "9=3², gereken dört yerine iki çarpan bırakır; örneğin üslerde 5−3 yapıp paydaki 2’yi atlamak bu sonuca götürür.",
+        "27=3³, net üssü 3 alır; oysa toplam yedi çarpandan üçü sadeleşince dört kalır.",
+        "243=3⁵, başlangıçtaki üslerden birini sonuç gibi tutar; bölümün kalan çarpan sayısı beş değildir.",
+        "729=3⁶, altı 3 çarpanıdır; pay ve paydanın sadeleşmesi yalnız dört çarpan bırakır.",
+        "Doğru. Net üs 2+5−3=4 ve 3⁴=81’dir."
+      ],
+      "commonError": "Çarpımda üsleri çarpmak veya bölmede paydanın üssünü toplamaya devam etmek.",
+      "check": "Doğrudan sayılarla doğrula: 9·243/27=9·9=81. Sonucu 27 ile çarpmak da başlangıçtaki 2187 payını geri verir."
+    }
+  },
+  {
+    "id": "uslu-sayilar-093-5",
+    "identity": "[\"uslu-sayilar-093-5\",\"2³+2⁵ işleminin sonucu kaçtır?\",\"\",[\"256\",\"40\",\"64\",\"32\",\"16\"],1,\"2³(1+2²)=8·5=40'tır; doğrudan 8+32 de aynı sonucu verir. Dikkat: Toplamda üsleri toplayıp 2⁸ yapmak geçersizdir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Toplamdaki iki kuvvetin üsleri çarpım kuralıyla birleştirilmez. Terimler ayrı hesaplanabilir veya ortak çarpan dışarı alınabilir.",
+        "Ortak çarpan alırken her terim dışarı alınan ifadeye bölünür; bir terimin kendisine bölümü 1’dir."
+      ],
+      "strategy": "Toplam yapısını koruyarak daha küçük kuvveti ortak çarpan seç; parantezde kalan katsayıları bulup en son dış çarpanla birleştir.",
+      "steps": [
+        "2⁵=2³·2² olduğundan toplamı 2³(1+2²) yaz.",
+        "Parantez içi 1+4=5, dış çarpan 2³=8’dir.",
+        "8·5=40 elde edilir; iki terimi ayrı hesaplamak da 8+32=40 verir."
+      ],
+      "optionReasons": [
+        "256=2⁸, toplamı çarpım gibi değerlendirip 3+5 üslerini toplar.",
+        "Doğru. Ortak çarpanla 8(1+4)=40 bulunur.",
+        "64=2⁶, verilen iki terimin toplamı değildir; ayrı değerler 8 ve 32’dir.",
+        "32, yalnız büyük terim 2⁵’tir; ortak parantezdeki 1’i unutmak küçük terimi eksiltir.",
+        "16=2⁴, iki farklı üssün ortasındaki kuvvettir; kuvvetlerin toplamı ortadaki kuvveti vermez."
+      ],
+      "commonError": "aᵐ·aⁿ kuralını aᵐ+aⁿ toplamına uygulamak.",
+      "check": "İki toplanan da 8’in katıdır: 8+4·8=5·8. Ayrıca toplam 32’den büyük ve 64’ten küçük olmalıdır; 40 bu büyüklük denetimine uyar."
+    }
+  },
+  {
+    "id": "uslu-sayilar-093-6",
+    "identity": "[\"uslu-sayilar-093-6\",\"(1/2)ˣ<(1/2)³ eşitsizliği gerçek sayılarda hangi koşula eşdeğerdir?\",\"\",[\"x<3\",\"x≤3\",\"x=3\",\"x>3\",\"x≥3\"],3,\"Taban 1/2 için üs büyüdükçe değer küçülür; sıkı eşitsizlik x>3 verir. Dikkat: Tabanı 1'den büyük gibi kabul etmek eşitsizlik yönünü ters sonuca götürür.\"]",
+    "guidance": {
+      "knowledge": [
+        "0<a<1 için aˣ fonksiyonu gerçek x değerlerinde kesin azalandır. Üs büyüdükçe pozitif kuvvet küçülür.",
+        "Kesin azalan bir fonksiyonda görüntülerin sıkı sırası, girdilerin ters sıkı sırasına karşılık gelir. Eşit görüntüler burada yalnız eşit üslerde oluşur."
+      ],
+      "strategy": "Tabanın 1’in hangi yanında olduğunu belirle; fonksiyonun yönünü kullanarak kuvvetlerin sırasını üslerin sırasına çevir.",
+      "steps": [
+        "Ortak taban 1/2’dir ve 0 ile 1 arasında olduğundan kuvvet fonksiyonu azalandır.",
+        "Soldaki kuvvetin sağdakinden küçük olması, soldaki x üssünün 3’ten büyük olmasını gerektirir.",
+        "Verilen < sıkı olduğundan x=3 alınmaz; koşul x>3’tür."
+      ],
+      "optionReasons": [
+        "x<3, 1’den büyük tabandaki artanlık yönünü kullanır; örneğin x=2’de 1/4, 1/8’den küçük değildir.",
+        "x≤3, hem ters yönü seçer hem eşitlik noktasını alır; x=3’te iki kuvvet eşittir.",
+        "x=3, küçük olma yerine eşitlik verir.",
+        "Doğru. Taban 1/2 için daha büyük üs, daha küçük kuvvettir ve eşitlik alınmaz.",
+        "x≥3, doğru yönün yanına x=3’ü ekler; sıkı eşitsizlik bu sınırı dışlar."
+      ],
+      "commonError": "Ortak tabanı görmekle yetinip tabanın 0 ile 1 arasında oluşunu gözden kaçırmak.",
+      "check": "x=4 için 1/16<1/8 sağlanır; x=3’te eşitlik, x=2’de ters sıra çıkar. Azalanlık bu örneklerin bütün gerçek x’e genellenmesini sağlar."
+    }
+  },
+  {
+    "id": "uslu-sayilar-093-7",
+    "identity": "[\"uslu-sayilar-093-7\",\"Gerçek x için 4^(x+1)=8^(x−1) ise x kaçtır?\",\"\",[\"5\",\"−5\",\"1\",\"3\",\"2\"],0,\"2^(2x+2)=2^(3x−3); ortak taban pozitif ve 1'den farklı olduğundan 2x+2=3x−3, x=5 olur. Dikkat: Üssün içindeki+1 ve −1'e katsayıyı dağıtmamak yanlış denklem kurar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Pozitif ve 1’den farklı a için aᵘ=aᵛ ancak u=v iken doğrudur. Ortak tabana dönüştürme, bu bire birliği kullanmaya yarar.",
+        "Bir kuvvetin kuvvetinde üsteki katsayı, parantezin içindeki bütün terimlere dağılır: (aᵐ)ᵘ=aᵐᵘ."
+      ],
+      "strategy": "4 ve 8’i aynı asal tabanın kuvveti olarak yaz; üs parantezlerini eksiksiz açıp oluşan doğrusal eşitliği çöz.",
+      "steps": [
+        "4=2² ve 8=2³ ile 2^(2(x+1))=2^(3(x−1)) elde edilir.",
+        "Ortak taban 2 pozitif ve 1’den farklıdır; 2x+2=3x−3 yazılabilir.",
+        "Değişkenleri ve sabitleri toplayınca x=5 bulunur."
+      ],
+      "optionReasons": [
+        "Doğru. x=5 için iki taraftaki 2 tabanlı üsler 12 olur.",
+        "−5, doğrusal eşitlikte sabitleri yanlış yönde taşımaktan doğabilir; x=−5’te üsler −8 ve −18’dir.",
+        "x=1 için sol taraf 4²=16, sağ taraf 8⁰=1’dir; eşitlik oluşmaz.",
+        "x=3 için 4⁴=256 ve 8²=64’tür; ortak tabandaki üsler 8 ve 6’dır.",
+        "x=2 için 4³=64 ve 8¹=8’dir; üsler 6 ve 3 olarak ayrılır."
+      ],
+      "commonError": "2(x+1) ve 3(x−1) açılımlarında sabit terimleri katsayıyla çarpmamak.",
+      "check": "Bulunan x’i ilk denkleme koy: 4⁶=(2²)⁶=2¹² ve 8⁴=(2³)⁴=2¹². İki taraf 4096’dır."
+    }
+  },
+  {
+    "id": "uslu-sayilar-093-8",
+    "identity": "[\"uslu-sayilar-093-8\",\"a=8⁴ ve b=4⁵ pozitif sayıları için hangi karşılaştırma doğrudur?\",\"\",[\"a=b\",\"a<b\",\"a>b\",\"a=2b\",\"b=4a\"],2,\"a=2¹², b=2¹⁰. Ortak taban 2>1 olduğundan 12>10 ile a>b bulunur; ayrıca a=4b'dir. Dikkat: Yalnız taban 8>4'e veya yalnız üs 4<5'e bakarak karar verme.\"]",
+    "guidance": {
+      "knowledge": [
+        "Farklı taban ve üs taşıyan pozitif kuvvetler ortak tabana çevrilerek karşılaştırılabilir. Ortak taban 1’den büyükse büyük üs büyük değer verir.",
+        "İki pozitif sayının oranı, büyüklük karşılaştırmasına ek olarak kaç kat ilişkisi taşıdıklarını gösterir."
+      ],
+      "strategy": "Her iki sayıyı 2’nin kuvveti olarak ifade et; üslere göre sıralamayı, ardından bölümle kat ilişkisini denetle.",
+      "steps": [
+        "a=(2³)⁴=2¹² ve b=(2²)⁵=2¹⁰ yazılır.",
+        "2>1 ve 12>10 olduğundan a>b olur.",
+        "Bölüm a/b=2^(12−10)=4’tür. Seçeneklerdeki ek kat iddialarını da bu oranla karşılaştır."
+      ],
+      "optionReasons": [
+        "a=b olsaydı 2¹²=2¹⁰ gerekirdi; oysa a/b=4’tür.",
+        "a<b, yalnız 4<5 üslerine bakar; farklı tabanlar ortaklaştırılınca sıra tersine çıkar.",
+        "Doğru. Ortak taban 2’de 12>10 olduğundan a>b’dir.",
+        "a=2b, oranı 2 sayar; gerçek oran 2²=4’tür.",
+        "b=4a, doğru kat ilişkisinin yönünü çevirir; dört kat olan b değil a’dır."
+      ],
+      "commonError": "Yalnız tabanları veya yalnız ilk yazımdaki üsleri karşılaştırarak farklı kuvvetleri sıralamak.",
+      "check": "a=4096 ve b=1024 hesaplanabilir; 4096/1024=4 doğrulaması hem sıralamayı hem yanlış kat seçeneklerini ayırır."
+    }
+  },
+  {
+    "id": "uslu-sayilar-093-9",
+    "identity": "[\"uslu-sayilar-093-9\",\"8^(2/3) sayısının pozitif gerçek değeri kaçtır?\",\"\",[\"2\",\"4\",\"8/3\",\"16\",\"64\"],1,\"8 pozitif olduğundan 8^(2/3)=(∛8)²=2²=4'tür. Dikkat: Üssü 2/3 ile çarpmak veya kökün derecesini 2 sanmak farklı işlemler verir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Pozitif a için a^(m/n)=(ⁿ√a)ᵐ yazılır; burada n pozitif tam sayıdır. Payda kökün derecesini, pay kuvveti belirler.",
+        "Kuvvet gösterimi çarpma işareti değildir; a^(m/n), a·m/n işlemiyle aynı anlama gelmez."
+      ],
+      "strategy": "Kesirli üssün paydasını kök derecesi olarak kullan; önce tabanın uygun tam kökünü, sonra payın belirttiği kuvveti hesapla.",
+      "steps": [
+        "Taban 8 pozitiftir; 8^(2/3)=(∛8)² dönüşümü geçerlidir.",
+        "∛8=2’dir, çünkü 2³=8.",
+        "Kalan kuvveti uygula: 2²=4."
+      ],
+      "optionReasons": [
+        "2, yalnız küpkök aşamasının değeridir; üssün payındaki 2 kuvvetini uygulamaz.",
+        "Doğru. Küpkök 2’nin karesi 4’tür.",
+        "8/3, üssün paydasını tabanı bölme emri gibi kullanır; kuvvetin tanımı değildir.",
+        "16, 8·2 işlemini verir; kök derecesi ve kuvvet aşamalarını birlikte uygulamaz.",
+        "64=8², paydaki kuvveti alır fakat paydadaki küpkökü atlar."
+      ],
+      "commonError": "Kesirli üste sıradan kesir çarpımı gibi işlem yapmak veya kök derecesini üssün payıyla karıştırmak.",
+      "check": "Sonucun küpü 4³=64 ve tabanın karesi 8²=64’tür. Pozitif sayılarda bu eşitlik, 2/3 kuvvetiyle uyumludur."
+    }
+  },
+  {
+    "id": "uslu-sayilar-093-10",
+    "identity": "[\"uslu-sayilar-093-10\",\"Başlangıçta 3 hücreli bir kültürde her adım sonunda hücre sayısı tam iki katına çıkıyor. Ölüm ve başka değişim olmadığı varsayılıyor. 4 adım sonra kaç hücre vardır?\",\"\",[\"11\",\"24\",\"96\",\"12\",\"48\"],4,\"Dört katlanma sonunda 3·2⁴=3·16=48 olur. Ara sıra 6,12,24,48'dir. Dikkat: Başlangıcı ilk katlanma saymak veya her adımda 2 eklemek modelin koşulunu değiştirir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sabit bir r çarpanıyla her adımda değişen başlangıç B, n adım sonunda B·rⁿ olur. Başlangıç anı sıfırıncı adımdır.",
+        "“İki katına çıkmak” mevcut miktarı 2 ile çarpmaktır. Sabit miktar eklemekle aynı model değildir."
+      ],
+      "strategy": "Başlangıcı adım 0 olarak bir satıra yerleştir; dört geçişin her birine aynı çarpanı uygulayıp adım sayısını açık tut.",
+      "steps": [
+        "Adım 0’da 3 hücre vardır; ilk geçişte 3·2=6 olur.",
+        "İkinci ve üçüncü adımlar sırasıyla 12 ve 24 hücre verir.",
+        "Dördüncü geçiş 24·2=48 yapar; model 3·2⁴=48’dir."
+      ],
+      "optionReasons": [
+        "11, 3+4·2 hesabıdır; iki katına çıkma yerine her adımda 2 ekler.",
+        "24, üçüncü adımın hücre sayısıdır; başlangıcı adım 1 saymak bir katlanmayı eksiltir.",
+        "96, beşinci adımın değeridir; verilen dört yerine beş katlanma yapar.",
+        "12, 3·4 hesabıdır veya ikinci adımın değeridir; dört çarpı 2 uygulamasını temsil etmez.",
+        "Doğru. Başlangıçtan sonra dört katlanma 3·16=48 hücre verir."
+      ],
+      "commonError": "Başlangıçtaki sayımı birinci katlanma sanarak adım sayısını bir eksik almak.",
+      "check": "Dördüncü adımdan dört kez yarıya dön: 48→24→12→6→3. Başlangıçtaki 3’e ulaşılması geçiş sayısını doğrular."
+    }
+  },
+  {
+    "id": "bilimsel-gosterim-katsayi-093-1",
+    "identity": "[\"bilimsel-gosterim-katsayi-093-1\",\"0,000072 sayısının standart bilimsel gösterimi hangisidir?\",\"\",[\"7,2×10⁻⁵\",\"7,2×10⁵\",\"0,72×10⁻⁴\",\"72×10⁻⁶\",\"7,2×10⁻⁶\"],0,\"Virgül beş basamak sağa taşınır; sayı 7,2×10⁻⁵'tir. Katsayı 7,2 koşulu sağlar. Dikkat: 0,72 veya 72 katsayıları sayısal eşitlik verebilir ama standart katsayı koşulunu sağlamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sıfırdan farklı bir sayının standart bilimsel gösteriminde katsayının mutlak değeri en az 1, 10’dan küçüktür; 10’un üssü tam sayıdır.",
+        "Katsayıyı büyütürken toplam değeri korumak için ölçek küçültülür. Küçük bir pozitif sayıyı birler düzeyindeki katsayıyla yazarken 10’un negatif kuvveti gerekir."
+      ],
+      "strategy": "İlk sıfır olmayan rakamdan sonra virgül bırak; eski ve yeni virgül konumları arasındaki adımları sayarak dengeleyen 10 kuvvetini belirle.",
+      "steps": [
+        "İlk sıfır olmayan rakam 7’dir; uygun katsayı 7,2 seçilir.",
+        "0,000072’den 7,2’ye geçerken virgül beş basamak sağa gider; bunu dengeleyen çarpan 10⁻⁵’tir.",
+        "Standart gösterim 7,2×10⁻⁵ olur; katsayı 1≤7,2<10 koşulunu sağlar."
+      ],
+      "optionReasons": [
+        "Doğru. 7,2·0,00001=0,000072 ve katsayı aralıktadır.",
+        "7,2×10⁵=720000, küçük sayı yerine çok büyük bir sayı verir; üssün işareti ters alınmıştır.",
+        "0,72×10⁻⁴ aynı sayıya eşittir fakat 0,72 katsayısı 1’den küçüktür; standart değildir.",
+        "72×10⁻⁶ aynı sayıyı verir fakat 72 katsayısı 10’dan büyüktür; standart değildir.",
+        "7,2×10⁻⁶=0,0000072, verilenin onda biridir; bir basamak fazla küçültür."
+      ],
+      "commonError": "Sayısal eşitliği tek başına yeterli sanıp sorulan standart katsayı koşulunu atlamak.",
+      "check": "7,2×10⁻⁵’i olağan yazıma geri aç. Ayrıca 10⁻⁵≤0,000072<10⁻⁴ büyüklük aralığı, −5 üssünü bağımsız doğrular."
+    }
+  },
+  {
+    "id": "bilimsel-gosterim-katsayi-093-2",
+    "identity": "[\"bilimsel-gosterim-katsayi-093-2\",\"48×10⁶ ifadesinin standart bilimsel gösterimi hangisidir?\",\"\",[\"4,8×10⁵\",\"4,8×10⁶\",\"48×10⁶\",\"4,8×10⁷\",\"0,48×10⁸\"],3,\"48=4,8×10 olduğundan 48×10⁶=4,8×10⁷ olur. Dikkat: Katsayı ve üssü aynı yönde azaltmak değeri korumaz; 0,48 standart değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Katsayıyı 10’a bölmek ve 10 kuvvetini 10 ile çarpmak toplam değeri değiştirmez. Üs bu dengelemede bir artar.",
+        "Standart bilimsel biçim için yalnız değeri korumak yetmez; katsayının 1≤|a|<10 aralığına da getirilmesi gerekir."
+      ],
+      "strategy": "48 katsayısını standart aralığa taşırken hangi çarpanın dışarı çıktığını yaz; bu çarpanı mevcut 10 kuvvetiyle birleştir.",
+      "steps": [
+        "48 katsayısı standart aralıkta değildir; 48=4,8×10 olarak ayrılır.",
+        "İfade 4,8×10¹×10⁶ olur ve 10 kuvvetleri çarpımda birleşir.",
+        "1+6=7 olduğundan sonuç 4,8×10⁷’dir."
+      ],
+      "optionReasons": [
+        "4,8×10⁵, katsayıyı 10’a bölerken ölçeği de 10’a böler; değer 100 kat küçülür.",
+        "4,8×10⁶, yalnız katsayıyı 10’a böler; başlangıç değerinin onda biridir.",
+        "48×10⁶, değeri korur fakat katsayı 48 kaldığı için istenen standart dönüşümü yapmaz.",
+        "Doğru. Katsayı 10’a bölünürken üs 1 artar ve 4,8×10⁷ elde edilir.",
+        "0,48×10⁸ sayısal olarak eşittir; fakat 0,48 katsayısı 1’in altında kaldığından standart değildir."
+      ],
+      "commonError": "Normalleştirirken katsayı ve ölçeği aynı yönde değiştirerek toplam değeri bozmak.",
+      "check": "Özgün ifade 48 milyon, sonuç da 4,8·10000000=48000000’dur. Aynı sayıyı vermeleri ve 4,8’in aralıkta olması iki ayrı koşulu doğrular."
+    }
+  },
+  {
+    "id": "bilimsel-gosterim-katsayi-093-3",
+    "identity": "[\"bilimsel-gosterim-katsayi-093-3\",\"Standart bilimsel gösterim a×10ⁿ için 1≤|a|<10 ve n tam sayı koşulları kullanılıyor. Hangisi bu koşulları sağlar?\",\"\",[\"0,5×10⁴\",\"10×10³\",\"−1×10⁴\",\"0×10⁸\",\"−12×10²\"],2,\"−1 katsayısının mutlak değeri 1'dir ve sınırdadır; üs 4 tam sayıdır. Diğer katsayılar aralık dışındadır. Dikkat: Negatif katsayıyı otomatik geçersiz saymak veya 10 sınırını dâhil etmek yanlıştır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Standart bilimsel gösterimde 1≤|a|<10 koşulu katsayının işaretine değil mutlak değerine uygulanır.",
+        "Alt sınır 1 dâhil, üst sınır 10 hariçtir. Sıfırdan farklı katsayı ve tam sayı üs birlikte gereklidir."
+      ],
+      "strategy": "Her seçenek için katsayı ve üssü ayrı belirle; önce katsayının mutlak değerini iki sınırla, ardından üssü tam sayılık koşuluyla karşılaştır.",
+      "steps": [
+        "0,5 ve 0 katsayıları alt sınır 1’in altında; 10 ve −12 katsayılarının mutlak değerleri üst sınırın dışındadır.",
+        "−1 için |−1|=1’dir; alt sınıra eşitlik izinlidir.",
+        "Bu seçenekte üs 4 de tam sayıdır. Dolayısıyla −1×10⁴ verilen koşulları sağlar."
+      ],
+      "optionReasons": [
+        "0,5×10⁴’te |a|=0,5<1’dir; üs tam sayı olsa da katsayı koşulu sağlanmaz.",
+        "10×10³’te katsayı üst sınırın kendisidir; koşul ≤10 değil <10’dur.",
+        "Doğru. |−1|=1 alt sınıra dâhildir ve üs 4 tam sayıdır.",
+        "0×10⁸’te katsayının mutlak değeri 0’dır; en az 1 koşuluna uymaz.",
+        "−12×10²’de |a|=12’dir; negatiflik değil, büyüklüğün 10’u aşması sorun oluşturur."
+      ],
+      "commonError": "Negatif katsayıyı otomatik elemek veya üst sınır 10’u aralığa katmak.",
+      "check": "Geçerli ifadede sayının kendisi −10000’dir; bunu −1×10000 diye açmak işareti korur. Katsayı için |−1|=1 ve 1<10 iki sınırı da sağlar."
+    }
+  },
+  {
+    "id": "bilimsel-gosterim-katsayi-093-4",
+    "identity": "[\"bilimsel-gosterim-katsayi-093-4\",\"(6×10⁻³)(4×10⁵) işleminin standart bilimsel gösterimi hangisidir?\",\"\",[\"24×10²\",\"2,4×10²\",\"2,4×10⁻¹⁵\",\"1×10²\",\"2,4×10³\"],4,\"Katsayı 6·4=24, üs −3+5=2; 24×10²=2,4×10³. Dikkat: 24×10² aynı sayıdır fakat sorulan standart biçim değildir; üsler çarpılmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bilimsel gösterimde çarpım yapılırken katsayılar çarpılır, 10’un kuvvetlerinin üsleri toplanır.",
+        "İşlemden çıkan katsayı standart aralıkta değilse değer korunarak yeniden ölçeklenir; ara sonucun eşdeğer olması ile standart olması ayrı özelliklerdir."
+      ],
+      "strategy": "Katsayı çarpımını ve üs toplamını iki ayrı satırda bul; elde edilen ara sayıyı standart katsayı koşuluna göre son kez düzenle.",
+      "steps": [
+        "Katsayıların çarpımı 6·4=24’tür.",
+        "Ölçek çarpımı 10⁻³·10⁵=10² olduğundan ara sonuç 24×10² olur.",
+        "24=2,4×10 ile bir kuvvet daha eklenir: 2,4×10³."
+      ],
+      "optionReasons": [
+        "24×10² doğru sayısal ara sonuçtur; katsayı 24 olduğu için sorulan standart biçim değildir.",
+        "2,4×10², 24 katsayısını 10’a bölerken üssü artırmaz; gerçek sonucun onda biridir.",
+        "2,4×10⁻¹⁵, üsleri yanlışlıkla −3·5=−15 alır. Ayrıca 24 katsayısı 2,4’e indirilirken üs artırılmaz; bu ikinci hata bir on çarpanını kaybettirir. Çarpımda üsler toplanmalıdır.",
+        "1×10² yalnız 100’dür; katsayıların 6·4=24 çarpımını yansıtmaz. Özgün işlemin ara değeri 24×10²’dir.",
+        "Doğru. 24×10² normalleştirilince 2,4×10³ olur."
+      ],
+      "commonError": "10 kuvvetlerini çarparken üsleri çarpmak veya katsayı normalleştirmesini ölçek değişimi olmadan yapmak.",
+      "check": "Olağan sayılarda 0,006·400000=2400 bulunur; 2,4×10³ de 2400’dür. Çarpımın birimi verilmediğinden yeni bir fiziksel birim eklenmez."
+    }
+  },
+  {
+    "id": "bilimsel-gosterim-katsayi-093-5",
+    "identity": "[\"bilimsel-gosterim-katsayi-093-5\",\"3,2×10⁵+7×10⁴ işleminin sonucu hangisidir?\",\"\",[\"10,2×10⁹\",\"3,9×10⁵\",\"1,02×10⁶\",\"3,27×10⁵\",\"3,9×10⁴\"],1,\"Aynı ölçekle(3,2+0,7)×10⁵=3,9×10⁵; olağan değer 390000'dir. Dikkat: Toplamda üs toplamak veya eşitlenmemiş katsayıları birleştirmek farklı sayı üretir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Toplanacak bilimsel gösterimler aynı 10 kuvvetine getirildiğinde katsayıları toplanabilir. Farklı ölçeklerin katsayıları doğrudan birleştirilmez.",
+        "Toplamada üs toplama kuralı yoktur; üs toplama, 10 kuvvetlerinin çarpımına aittir."
+      ],
+      "strategy": "İki terim için ortak bir 10 kuvveti seç; küçük ölçekli terimin katsayısını bu yeni ölçekte yazıp katsayı toplamını hesapla.",
+      "steps": [
+        "İkinci terimi 10⁵ ölçeğine taşı: 7×10⁴=0,7×10⁵.",
+        "Ortak ölçekle toplam (3,2+0,7)×10⁵ olur.",
+        "Katsayı 3,9 bulunduğundan sonuç 3,9×10⁵’tir; ek normalleştirme gerekmez."
+      ],
+      "optionReasons": [
+        "10,2×10⁹, hem eşitlenmemiş 3,2 ve 7 katsayılarını hem 5 ve 4 üslerini toplar; toplamı çarpım yapısına dönüştürür.",
+        "Doğru. 0,7 ile 3,2 aynı 10⁵ ölçeğinde toplanınca 3,9×10⁵ oluşur.",
+        "1,02×10⁶=1020000, 3,2+7=10,2 katsayılarını ölçek eşitlemeden toplama hatasının normalleştirilmiş biçimidir.",
+        "3,27×10⁵, ikinci terimi 0,07×10⁵ sanır; 70000 yerine 7000 ekler.",
+        "3,9×10⁴, doğru katsayı toplamını daha küçük ölçekle yazar; 39000, ilk terim 320000’den bile küçüktür."
+      ],
+      "commonError": "Ortak ölçeği kurmadan katsayı toplamak veya toplamda üsleri de toplamak.",
+      "check": "Olağan sayılarla 320000+70000=390000 bulunur. Sonuç her iki pozitif terimden de büyüktür ve 3,9×100000 aynı sayıyı verir."
+    }
+  },
+  {
+    "id": "bilimsel-gosterim-katsayi-093-6",
+    "identity": "[\"bilimsel-gosterim-katsayi-093-6\",\"(8,4×10⁷)/(2,1×10³) işleminin sonucu hangisidir?\",\"\",[\"4×10¹⁰\",\"4×10³\",\"0,4×10⁴\",\"4×10⁴\",\"6,3×10⁴\"],3,\"8,4/2,1=4; 7−3=4. Sonuç 4×10⁴'tür ve standarttır. Dikkat: Bölmede üsleri toplamak çarpım kuralını yanlış kullanmaktır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bilimsel gösterimlerin bölümünde sıfırdan farklı payda katsayısına bölünür; 10’un üslerinde paydanın üssü çıkarılır.",
+        "Bir bölümün doğruluğu, sonuç ile bölenin çarpımının bölüneni geri vermesiyle denetlenebilir."
+      ],
+      "strategy": "Katsayı bölümünü 10 kuvvetlerinin bölümünden ayır; her ikisini hesapladıktan sonra standart katsayı koşulunu kontrol et.",
+      "steps": [
+        "Katsayı bölümü 8,4/2,1=4’tür.",
+        "Ölçek bölümü 10⁷/10³=10^(7−3)=10⁴’tür.",
+        "İki katkıyı birleştir: 4×10⁴; 4 katsayısı zaten standart aralıktadır."
+      ],
+      "optionReasons": [
+        "4×10¹⁰, bölümde 7−3 yerine 7+3 kullanır; çarpım kuralını taşır.",
+        "4×10³, katsayı doğruyken ölçeği bir basamak eksik alır; sonuç 10 kat küçülür.",
+        "0,4×10⁴=4000, doğru değerin onda biridir; ayrıca katsayı 1’den küçüktür.",
+        "Doğru. Katsayı 4 ve üs farkı 4 olduğundan 4×10⁴ bulunur.",
+        "6,3×10⁴, katsayılarda 8,4−2,1=6,3 yapar; sorudaki işlem bölmedir."
+      ],
+      "commonError": "Paydadaki bilimsel gösterimi çıkarılacak sayı sanmak veya bölümde üsleri toplamak.",
+      "check": "(4×10⁴)(2,1×10³)=8,4×10⁷; bölenle yeniden çarpma başlangıçtaki payı tam verir."
+    }
+  },
+  {
+    "id": "bilimsel-gosterim-katsayi-093-7",
+    "identity": "[\"bilimsel-gosterim-katsayi-093-7\",\"a=9×10⁻⁸ ve b=2×10⁻⁹ pozitif sayıları için hangi karşılaştırma doğrudur?\",\"\",[\"a>b\",\"a<b\",\"a=b\",\"a=9b\",\"b=2a\"],0,\"a=90×10⁻⁹, b=2×10⁻⁹ olduğundan a>b; a/b=45'tir. Dikkat: Negatif üsleri karşılaştırırken −8'in −9'dan büyük olduğunu unutma.\"]",
+    "guidance": {
+      "knowledge": [
+        "Pozitif sayılar aynı 10 kuvvetiyle yazıldığında katsayılarına bakılarak sıralanabilir.",
+        "İki pozitif sayının oranı 1’den büyükse birincisi daha büyüktür; tam kat iddiaları da aynı oranla denetlenir."
+      ],
+      "strategy": "İki sayıyı daha küçük ortak 10 kuvvetinde yaz; katsayı karşılaştırmasını bölümle destekleyerek hem sıra hem kat seçeneklerini incele.",
+      "steps": [
+        "a=9×10⁻⁸=90×10⁻⁹, b=2×10⁻⁹ biçiminde ortak ölçek kur.",
+        "Pozitif 10⁻⁹ çarpanı aynı olduğundan 90>2 ile a>b bulunur.",
+        "Ayrıca a/b=90/2=45’tir; diğer kat seçenekleri bu oranı sağlamaz."
+      ],
+      "optionReasons": [
+        "Doğru. Ortak ölçekte 90>2 ve a/b=45 olduğundan a>b’dir.",
+        "a<b, negatif üslerden −8’i −9’dan küçük sanabilir; oysa −8>−9’dur ve ortak ölçekte a daha büyüktür.",
+        "a=b, ortak ölçekteki 90 ve 2 katsayılarının farklılığını yok sayar.",
+        "a=9b, yalnız a’nın ilk katsayısını kat sayısı sanır; 10 kuvvetleriyle b’nin katsayısı da hesaba katılınca oran 45’tir.",
+        "b=2a olsaydı b/a=2 gerekirdi; gerçek bölüm 1/45’tir."
+      ],
+      "commonError": "Negatif üssü negatif sayı sanmak veya yalnız ilk yazımdaki katsayılardan kat ilişkisi kurmak.",
+      "check": "İki sayıyı 10⁹ ile çarpınca a için 90, b için 2 elde edilir. Pozitif çarpan sıralamayı korur; bu karşılaştırma ondalık sıfırları saymadan doğrulanır."
+    }
+  },
+  {
+    "id": "bilimsel-gosterim-katsayi-093-8",
+    "identity": "[\"bilimsel-gosterim-katsayi-093-8\",\"1 m=10³ mm olduğuna göre 3,2×10⁶ mm kaç metredir?\",\"\",[\"3,2×10⁹\",\"3,2×10⁶\",\"3,2×10³\",\"3,2×10⁻³\",\"3,2×10²\"],2,\"3,2×10⁶/10³=3,2×10³ m olur; aynı uzunluk 3200 metredir. Dikkat: Birim büyürken sayısal değeri de büyütmek dönüşümün yönünü ters çevirir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir uzunluk daha büyük bir birimle ölçülünce sayısal değeri küçülür; ölçülen uzunluk aynı kalır.",
+        "1 m=10³ mm olduğundan milimetre değerinin her 1000 birimi bir metreye karşılık gelir. Birim kesriyle çarpmak bu yönü açık tutar."
+      ],
+      "strategy": "Milimetreyi götüren metre/milimetre dönüşüm kesrini kur; katsayıyı koruyup 10 kuvvetlerindeki bölümü uygula.",
+      "steps": [
+        "3,2×10⁶ mm ifadesini 1 m/(10³ mm) ile çarp; mm birimleri sadeleşir.",
+        "Sayısal işlem 3,2×10⁶/10³=3,2×10^(6−3) olur.",
+        "Sonuç 3,2×10³ metredir."
+      ],
+      "optionReasons": [
+        "3,2×10⁹, 1000’e bölmek yerine 1000 ile çarpar; birim büyürken sayısal değeri de büyütür.",
+        "3,2×10⁶, milimetre sayısını birim dönüşümü yapmadan metre diye etiketler.",
+        "Doğru. 10³ mm bir metre olduğundan üs 6−3=3 olur.",
+        "3,2×10⁻³, dönüşümde 10⁹’a bölmüş gibi sonuç verir; verilen dönüşüm çarpanı 10³’tür.",
+        "3,2×10², 1000 yerine 10000’e bölmeye karşılık gelir; değeri bir basamak fazla küçültür."
+      ],
+      "commonError": "Birim etiketini değiştirip sayısal değeri aynı bırakmak.",
+      "check": "Sonuç 3200 m’dir. Yeniden milimetreye çevir: 3200·1000=3200000 mm, yani başlangıçtaki 3,2×10⁶ mm."
+    }
+  },
+  {
+    "id": "bilimsel-gosterim-katsayi-093-9",
+    "identity": "[\"bilimsel-gosterim-katsayi-093-9\",\"a=−8×10⁴ ve b=−2×10³ için hangi ifade doğrudur?\",\"\",[\"a>b\",\"a<b\",\"a=b\",\"a=4b\",\"a ve b pozitiftir\"],1,\"a=−80000, b=−2000. Sıfırın daha solundaki −80000 daha küçüktür. Dikkat: Pozitif standart gösterimlerdeki büyük üs kuralını işaret denetlemeden negatif sayılara taşımak yanlış yön verir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Negatif gerçek sayılarda sıfırdan daha uzakta olan sayı daha küçüktür. Mutlak büyüklük karşılaştırması, sayının işaretiyle birlikte yorumlanır.",
+        "10’un her tam sayı kuvveti pozitiftir; bilimsel gösterimde sayının negatifliği katsayının işaretinden gelir."
+      ],
+      "strategy": "İki negatif sayının olağan değerini veya aynı ölçekli katsayısını yaz; sayı doğrusundaki yönü ve varsa kat ilişkisini ayrı denetle.",
+      "steps": [
+        "a=−8×10000=−80000 ve b=−2×1000=−2000 bulunur.",
+        "−80000, sayı doğrusunda −2000’in solundadır; bu nedenle a<b’dir.",
+        "Kat ilişkisi için a/b=40’tır; işaretleri aynı olsa da verilen a=4b ifadesi sağlanmaz."
+      ],
+      "optionReasons": [
+        "a>b, mutlak değeri büyük olan negatif sayıyı daha büyük sanır; negatiflerde sıralama tersidir.",
+        "Doğru. −80000<−2000 olduğundan a<b’dir.",
+        "a=b değildir; mutlak büyüklükleri 80000 ve 2000 olarak farklıdır.",
+        "a=4b olsaydı −8000 bulunurdu; gerçek a, b’nin 40 katıdır.",
+        "İki katsayı da negatif ve 10 kuvvetleri pozitiftir; dolayısıyla a ve b’nin ikisi de negatiftir."
+      ],
+      "commonError": "Pozitif standart sayılardaki büyük üs karşılaştırmasını işaret denetimi yapmadan negatif sayılara uygulamak.",
+      "check": "Her iki tarafı −1 ile çarpınca 80000>2000 çıkar; negatifle çarpıldığı için eşitsizlik yönü dönerek a<b sonucunu verir."
+    }
+  },
+  {
+    "id": "bilimsel-gosterim-katsayi-093-10",
+    "identity": "[\"bilimsel-gosterim-katsayi-093-10\",\"6,4×10⁻⁷ sayısının olağan ondalık yazımı hangisidir?\",\"\",[\"64000000\",\"0,0000064\",\"0,000064\",\"0,000000064\",\"0,00000064\"],4,\"10⁻⁷=0,0000001; 6,4 katı 0,00000064'tür. Dikkat: Virgül basamak sayısını ilk sıfır olmayan rakamdan önceki sıfırların sayısıyla aynı saymak bir basamak kaydırabilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "10’un negatif tam kuvveti bir kesir ölçeğidir; 10⁻ⁿ=1/10ⁿ olur. Birler düzeyindeki pozitif katsayıyı 10⁻ⁿ ile çarpmak virgülü n basamak sola taşır.",
+        "Olağan ondalık yazıma dönüşüm tam bir eşitliktir; katsayıdaki rakamlar bu işlemde yuvarlanmaz."
+      ],
+      "strategy": "Ölçek çarpanını ondalık birim olarak yaz; katsayının bu birimden kaç tane içerdiğini belirleyip son yazımı geri çarpma ile denetle.",
+      "steps": [
+        "10⁻⁷=0,0000001’dir.",
+        "Bunun 6,4 katı, virgül 6,4’ten yedi basamak sola taşınarak 0,00000064 olur.",
+        "Rakamlar 6 ve 4 sırasını korur; sonuç yuvarlanmadan 0,00000064’tür."
+      ],
+      "optionReasons": [
+        "64000000, negatif yerine pozitif 10⁷ ölçeği kullanır.",
+        "0,0000064=6,4×10⁻⁶’dır; verilenden 10 kat büyüktür.",
+        "0,000064=6,4×10⁻⁵’tir; verilenden 100 kat büyüktür.",
+        "0,000000064=6,4×10⁻⁸’dir; verilenin onda biridir.",
+        "Doğru. 0,00000064 sayısını 10⁷ ile çarpmak 6,4’ü geri verir."
+      ],
+      "commonError": "Virgülün hareket sayısını, ilk anlamlı rakamın önündeki sıfır sayısıyla aynı sanıp bir basamak kaydırmak.",
+      "check": "Önerilen ondalık sayı için 0,00000064·10000000=6,4 olur. Bu ters işlem, yedi basamaklık ölçeği doğrular."
+    }
+  },
+  {
+    "id": "koklu-sayilar-093-1",
+    "identity": "[\"koklu-sayilar-093-1\",\"√49 ifadesinin esas gerçek değeri kaçtır?\",\"\",[\"7\",\"−7\",\"±7\",\"49\",\"14\"],0,\"7²=49 ve 7≥0; √49=7'dir. Dikkat: ±7, x²=49 denkleminin iki çözümünü ifade eder; √49'un tek değeri değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "a≥0 için √a, karesi a olan sayılardan negatif olmayanını gösterir. Karekök sembolü tek bir esas değere karşılık gelir.",
+        "x²=a denkleminin çözümlerini istemek farklıdır: a>0 iken iki işaretli çözüm bulunabilir. Bir sayının esas kökü ile denklem kökleri ayrılmalıdır."
+      ],
+      "strategy": "Önce sorunun bir köklü ifadenin değeri mi yoksa bir denklemin tüm çözümleri mi olduğunu ayır; kareyi geri veren negatif olmayan sayıyı seç.",
+      "steps": [
+        "İstenen √49’un esas değeridir; bir x²=49 çözüm kümesi sorulmuyor.",
+        "7²=49 ve (−7)²=49 olsa da bu iki sayıdan yalnız 7 negatif değildir.",
+        "Esas karekök koşuluyla √49=7 olur."
+      ],
+      "optionReasons": [
+        "Doğru. 7 negatif değildir ve karesi 49’dur.",
+        "−7’nin karesi 49 olsa da esas kökün negatif olmama koşuluna uymaz.",
+        "±7, x²=49 denkleminin iki çözümünü temsil eder; √49 tek değerli bir sayıdır.",
+        "49, kök içindeki sayıyı olduğu gibi bırakır; 49²=2401 olduğundan kök olamaz.",
+        "14, 7’yi iki kez toplar; kök işareti iki kökün toplamını istemez ve 14²=196’dır."
+      ],
+      "commonError": "Karekök işaretine, denklem çözüyormuş gibi kendiliğinden ± eklemek.",
+      "check": "Karekök sonucunun iki koşulunu birlikte doğrula: 7≥0 ve 7²=49. Bu ikisini aynı anda sağlayan tek gerçek sayı 7’dir."
+    }
+  },
+  {
+    "id": "koklu-sayilar-093-2",
+    "identity": "[\"koklu-sayilar-093-2\",\"x<2 için √((x−2)²) ifadesi hangisine eşittir? x gerçektir,√ esas kareköktür.\",\"\",[\"x−2\",\"x+2\",\"−x−2\",\"2−x\",\"±(x−2)\"],3,\"Kareden köke geçiş |x−2| verir; x<2 olduğundan−(x−2)=2−x olur. Dikkat: Kök ile kareyi koşulsuz silmek negatif sonuç oluşturur.\"]",
+    "guidance": {
+      "knowledge": [
+        "√(A²)=|A| eşitliği, gerçek A’nın negatif olmayan büyüklüğünü verir. Kök ile kareyi kaldırmak için işaret koşulu kullanılmalıdır.",
+        "A<0 ise |A|=−A’dır; eksi paranteze uygulanırken içteki tüm işaretleri etkiler."
+      ],
+      "strategy": "x<2 koşulunu x−2’nin işaretine dönüştür; mutlak değer dalını seçtikten sonra parantezi aç.",
+      "steps": [
+        "Kökten √((x−2)²)=|x−2| elde edilir.",
+        "x<2 olduğundan x−2 negatiftir; dolayısıyla |x−2|=−(x−2) yazılır.",
+        "Parantez açılınca 2−x bulunur; bu değer verilen bölgede pozitiftir."
+      ],
+      "optionReasons": [
+        "x−2, x<2 iken negatiftir; esas karekök bu işareti alamaz.",
+        "x+2, parantezin önündeki eksiyi x’e uygulamaz; x=1 için 3 verir, asıl kök 1’dir.",
+        "−x−2, sabit terimin işaretini yanlış tutar; x=1 için −3 verir.",
+        "Doğru. Negatif x−2 ifadesinin uzaklığı −(x−2)=2−x’tir.",
+        "±(x−2), tek esas kök yerine iki işaretli denklem adayı sunar."
+      ],
+      "commonError": "Kare ve karekökü işaret koşulunu kullanmadan birbirini götüren semboller gibi görmek.",
+      "check": "2−x>0’dır ve (2−x)²=(x−2)² olur. x=0 örneğinde de √4=2 ile 2−0 aynı değeri verir."
+    }
+  },
+  {
+    "id": "koklu-sayilar-093-3",
+    "identity": "[\"koklu-sayilar-093-3\",\"√72'nin en sade köklü biçimi hangisidir?\",\"\",[\"36√2\",\"3√8\",\"6√2\",\"2√18\",\"8√3\"],2,\"√72=√(36·2)=6√2. 3√8 ve 2√18 sayısal olarak eşit olsa da hâlâ sadeleşir. Dikkat: Sorulan en sade biçimdir; eşdeğer ama sadeleşmemiş seçenek son cevap değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Pozitif bir sayının karekökünde tam kare çarpan kök dışına kendi pozitif kareköküyle çıkar.",
+        "En sade köklü biçimde kök içinde 1’den büyük tam kare çarpan kalmaz. Eşdeğer bir yazım henüz en sade biçim olmayabilir."
+      ],
+      "strategy": "72’nin içindeki en büyük tam kare çarpanı ayır; kök dışına çıkan katsayıyı ve içeride kalan çarpanı ayrı denetle.",
+      "steps": [
+        "72=36·2 yazılabilir; 36 tam karedir.",
+        "√72=√36·√2=6√2 elde edilir.",
+        "Kök içinde kalan 2’de tam kare çarpan yoktur; dolayısıyla 6√2 en sade biçimdir."
+      ],
+      "optionReasons": [
+        "36√2, 36’yı karekökünü almadan dışarı çıkarır; karesi 2592 olur, 72 değildir.",
+        "3√8, √72’ye eşittir fakat √8=2√2 hâlâ sadeleşir; en sade biçim değildir.",
+        "Doğru. 36 kök dışına 6 olarak çıkar ve 2 içinde yeni tam kare kalmaz.",
+        "2√18, √72’ye eşittir ama √18=3√2 olarak sadeleşir; işlem tamamlanmamıştır.",
+        "8√3’ün karesi 64·3=192’dir; başlangıçtaki 72’yi vermez."
+      ],
+      "commonError": "Sayısal eşdeğerlikle “en sade biçim” koşulunu aynı sanmak veya tam kareyi kökünü almadan dışarı çıkarmak.",
+      "check": "(6√2)²=36·2=72 ve 6√2 pozitiftir. Ayrıca 8²<72<9² olduğundan kök 8 ile 9 arasında olmalıdır; 6√2≈8,49 bu aralıktadır."
+    }
+  },
+  {
+    "id": "koklu-sayilar-093-4",
+    "identity": "[\"koklu-sayilar-093-4\",\"√12+√27 işleminin en sade sonucu hangisidir?\",\"\",[\"√39\",\"5√6\",\"3√3\",\"6√3\",\"5√3\"],4,\"√12=2√3 ve √27=3√3; toplam 5√3 olur. Dikkat: Karekök toplama üzerine dağılmaz; kök içlerini 39 yaparak toplamak geçersizdir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı kök yapısına sahip terimler, kök korunup dış katsayıları toplanarak birleştirilir.",
+        "Köklerin içleri başlangıçta farklı görünse bile tam kare çarpanları dışarı çıkarmak onları benzer köklü terimlere dönüştürebilir."
+      ],
+      "strategy": "Her kökü kendi tam kare çarpanıyla sadeleştir; ortak kök oluştuktan sonra yalnız dış katsayıları topla.",
+      "steps": [
+        "12=4·3 olduğundan √12=2√3 olur.",
+        "27=9·3 olduğundan √27=3√3 olur.",
+        "Ortak √3’ün katsayıları toplanır: (2+3)√3=5√3."
+      ],
+      "optionReasons": [
+        "√39, karekökü toplama üzerine dağıtarak 12+27 yapar; oysa (√12+√27)² içinde çapraz terim de vardır.",
+        "5√6, dış katsayı toplamını bulsa bile ortak kök içi 3’ü 6 yapar; benzer terim toplamında kök içi değişmez.",
+        "3√3, yalnız √27’nin değeridir; ilk terim 2√3’ü toplama katmaz.",
+        "6√3, katsayıları 2·3 biçiminde çarpar; verilen işlem toplama olduğundan 2+3 gerekir.",
+        "Doğru. 2√3+3√3=5√3’tür."
+      ],
+      "commonError": "Kök içlerini doğrudan toplamak veya benzer terimlerin katsayılarını toplamak yerine çarpmak.",
+      "check": "Toplamın karesini aç: 12+27+2√324=39+36=75. Bulunan (5√3)² de 75’tir ve iki ifade de pozitiftir."
+    }
+  },
+  {
+    "id": "koklu-sayilar-093-5",
+    "identity": "[\"koklu-sayilar-093-5\",\"√(x−1)/√(5−x) ifadesinin gerçek sayılarda tanım kümesi hangisidir?\",\"\",[\"[1,5]\",\"[1,5)\",\"(1,5)\",\"(−∞,5)\",\"[5,∞)\"],1,\"x−1≥0 ile 5−x>0 koşullarının kesişimi 1≤x<5'tir. Dikkat: Payın sıfır olması serbesttir; paydanın sıfır olması yasaktır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Gerçek karekökün kök içi negatif olamaz. Köklü ifade paydada ise tanımlı olmasına ek olarak sıfırdan farklı olması gerekir.",
+        "Bir bölümdeki tüm tanım koşulları aynı anda sağlanmalıdır; bu, koşulların birleşimi değil kesişimidir."
+      ],
+      "strategy": "Payın karekökü ile paydanın karekökü için iki ayrı koşul yaz; paydadaki sıfır yasağını ekleyip ortak x aralığını bul.",
+      "steps": [
+        "Pay için x−1≥0 gerekir; dolayısıyla x≥1.",
+        "Paydada √(5−x) hem gerçek hem sıfırdan farklı olmalıdır; 5−x>0 ile x<5 bulunur.",
+        "Ortak koşul 1≤x<5’tir; tanım kümesi [1,5) olur."
+      ],
+      "optionReasons": [
+        "[1,5], x=5’i de alır; bu noktada payda √0=0 olduğundan bölüm tanımsızdır.",
+        "Doğru. Payın izin verdiği x≥1 ve paydanın istediği x<5 birlikte [1,5) verir.",
+        "(1,5), x=1’i gereksiz dışlar; bu noktada pay 0 ve payda 2 olduğundan bölüm tanımlıdır.",
+        "(−∞,5), x<1 değerlerinde payın kök içinin negatif olduğunu gözden kaçırır.",
+        "[5,∞), x=5’te sıfır paydayı ve x>5’te negatif payda kök içini kabul eder."
+      ],
+      "commonError": "Paydadaki karekök için yalnız ≥0 yazıp sıfır paydaya izin vermek.",
+      "check": "x=1 için 0/2 tanımlıdır, x=3 için √2/√2=1 tanımlıdır, x=5’te sıfıra bölme oluşur. Bu üç nokta iki ucun farklı durumunu doğrular."
+    }
+  },
+  {
+    "id": "koklu-sayilar-093-6",
+    "identity": "[\"koklu-sayilar-093-6\",\"3/(√7−2) ifadesinin paydası rasyonelleştirilmiş eşdeğeri hangisidir?\",\"\",[\"√7−2\",\"3√7+2\",\"(√7+2)/3\",\"√7+2\",\"7+2\"],3,\"Payda 7−4=3; pay 3(√7+2) olduğundan ortak 3 sadeleşir ve √7+2 kalır. Dikkat: Eşleniği yalnız paydaya uygulamak veya paydaki 3'ü unutmak değeri değiştirir.\"]",
+    "guidance": {
+      "knowledge": [
+        "İki terimli köklü ifadeyi eşleniğiyle çarpmak, farkların çarpımı özdeşliği sayesinde paydada kareler farkı oluşturur.",
+        "Bir kesrin değeri, pay ve paydayı aynı sıfırdan farklı ifadeyle çarparak korunur. Sadeleştirme ancak ortak çarpanlar arasında yapılır."
+      ],
+      "strategy": "Paydanın işaret değiştirilmiş eşleniğini seç; aynı ifadeyi paya da uygula ve oluşan kareler farkından sonra ortak çarpanı sadeleştir.",
+      "steps": [
+        "√7−2’nin eşleniği √7+2’dir; bu pozitif ve sıfırdan farklı sayıyla pay ile paydayı çarp.",
+        "Payda (√7−2)(√7+2)=7−4=3; pay ise 3(√7+2) olur.",
+        "Pay ve paydadaki ortak 3 sadeleşince sonuç √7+2’dir."
+      ],
+      "optionReasons": [
+        "√7−2, başlangıç paydasını sonuç gibi bırakır; özgün paydayla çarpılınca 3 yerine (√7−2)² elde edilir.",
+        "3√7+2, paydaki 3’ü eşleniğin yalnız ilk terimine dağıtır; ortak payda 3 ile sadeleştirmeyi de tamamlamaz.",
+        "(√7+2)/3, paydaki başlangıç 3’ü kaybettikten sonra paydadaki 3’e böler; sonuç gerçek değerin üçte biridir.",
+        "Doğru. Ortak 3 sadeleşince √7+2 kalır; payda rasyoneldir.",
+        "7+2=9, √7 terimini 7’ye dönüştürür; eşlenikle çarpma kökü bu şekilde silmez."
+      ],
+      "commonError": "Eşleniği yalnız paydaya uygulamak veya paydaki 3’ü tüm paranteze dağıtmamak.",
+      "check": "Sonucu özgün paydayla çarp: (√7+2)(√7−2)=7−4=3. Başlangıç payını geri verdiği için bölüm eşdeğerdir."
+    }
+  },
+  {
+    "id": "koklu-sayilar-093-7",
+    "identity": "[\"koklu-sayilar-093-7\",\"Gerçek x için √(2x+3)=x denkleminin çözüm kümesi hangisidir?\",\"\",[\"{3}\",\"{−1,3}\",\"{−1}\",\"{1,3}\",\"∅\"],0,\"Kare alma(x−3)(x+1)=0 verir. −1 için ilk eşitlik 1=−1 yanlıştır; 3 için √9=3 doğrudur. Dikkat: Karelenmiş denklemin bütün kökleri ilk denklemin kökü olmayabilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Esas karekök negatif olamaz. Bir köklü denklemin iki tarafını karelemek, işaret bilgisini kaybedip aday sayısını artırabilir.",
+        "Karelenmiş denklemi sağlayan her sayı, ilk köklü denklemi sağlamak zorunda değildir; son kontrol ilk eşitlikte yapılır."
+      ],
+      "strategy": "Önce sağ tarafın işaretinden gerekli koşulu yaz; kare alma sonrasında bulunan adayları bu koşul ve özgün denklemle süz.",
+      "steps": [
+        "Sol taraf negatif olamayacağından x≥0 gerekir. Bu bölgede 2x+3 de pozitiftir.",
+        "Kare al: 2x+3=x²; (x−3)(x+1)=0 ile adaylar 3 ve −1 çıkar.",
+        "−1 işaret koşuluna uymaz; 3 için √9=3 sağlanır. Çözüm kümesi {3}’tür."
+      ],
+      "optionReasons": [
+        "Doğru. x=3 tanım ve işaret koşullarını sağlar; ilk denklemde √9=3 olur.",
+        "{−1,3}, karelenmiş denklemin iki adayını da kabul eder; −1 için ilk eşitlik 1=−1 olur ve yanlıştır.",
+        "{−1}, yalnız sahte adayı tutar; negatif x, esas karekökün değerine eşit olamaz.",
+        "{1,3}, x=1’i gereksiz ekler; √5≠1’dir.",
+        "Boş küme olamaz; x=3 doğrudan geçerli bir çözümdür."
+      ],
+      "commonError": "Adayları ilk denklem yerine yalnız karelenmiş ikinci dereceden denklemde doğrulamak.",
+      "check": "İki aday için ilk tarafları ayrı hesapla: x=−1’de √1=1, sağ taraf −1; x=3’te √9=3, sağ taraf 3. Yalnız ikincisi eşleşir."
+    }
+  },
+  {
+    "id": "koklu-sayilar-093-8",
+    "identity": "[\"koklu-sayilar-093-8\",\"a=3√2 ve b=2√5 pozitif sayıları için hangi karşılaştırma doğrudur?\",\"\",[\"a=b\",\"a>b\",\"a<b\",\"a=2b\",\"b=3a\"],2,\"a²=18,b²=20; pozitif kareköklerde sıra korunduğundan a<b. Dikkat: Yalnız dış katsayı 3>2'ye bakmak kök içlerinin etkisini yok sayar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Negatif olmayan sayılarda kare alma artan bir işlemdir; iki pozitif sayının sırası karelerinin sırasıyla aynıdır.",
+        "a√m gibi bir pozitif ifadenin karesi a²m’dir. Kök dışı katsayı ile kök içi birlikte değerlendirilir."
+      ],
+      "strategy": "Pozitifliği önce doğrula; sonra iki ifadenin karesini hesaplayıp tam sayılar üzerinden karşılaştır ve kat iddialarını ayrıca denetle.",
+      "steps": [
+        "a=3√2 ve b=2√5 pozitiftir. Kareleri a²=9·2=18 ve b²=4·5=20 olur.",
+        "18<20 olduğundan pozitif köklerde a<b sonucu çıkar.",
+        "Eşitlik ve kat seçenekleri de kareleri üzerinden sınanır; örneğin a=2b olsaydı 18=4·20 gerekirdi."
+      ],
+      "optionReasons": [
+        "a=b olsaydı kareleri de eşit olurdu; 18 ve 20 farklıdır.",
+        "a>b, yalnız dıştaki 3>2 katsayılarına bakar; kök içleri de hesaba katılınca kareler 18<20’dir.",
+        "Doğru. İki sayı pozitif ve a²<b² olduğu için a<b’dir.",
+        "a=2b, a²=4b² yani 18=80 gerektirir; sağlanmaz.",
+        "b=3a, b²=9a² yani 20=162 gerektirir; sağlanmaz."
+      ],
+      "commonError": "Katsayısı büyük olan köklü sayıyı, kök içini incelemeden daha büyük kabul etmek.",
+      "check": "Yaklaşık a≈4,243 ve b≈4,472 bulunur. İkisi de pozitifken tam kare karşılaştırması ile bu yaklaşık sıralama aynı sonucu verir."
+    }
+  },
+  {
+    "id": "koklu-sayilar-093-9",
+    "identity": "[\"koklu-sayilar-093-9\",\"Alanı 72 birim² olan karenin çevresi kaç birimdir?\",\"\",[\"12√2\",\"24√2\",\"36\",\"288\",\"72√2\"],1,\"Kenar √72=6√2; dört kenarın toplamı 24√2'dir. Kenarın karesi 72 alanını geri verir. Dikkat: Alanı doğrudan 4 ile çarpmak uzunlukla alanı karıştırır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Karenin alanı kenar uzunluğunun karesidir. Pozitif alan verildiğinde kenar, alanın negatif olmayan kareköküdür.",
+        "Çevre dört kenarın toplamıdır ve uzunluk birimiyle yazılır. Alanın birimi ise uzunluk biriminin karesidir."
+      ],
+      "strategy": "Alan bilgisinden önce tek kenarı bul; kökü sadeleştirdikten sonra dört kenarın toplamına geç.",
+      "steps": [
+        "Alan 72 birim² olduğundan kenar a=√72 birimdir.",
+        "72=36·2 ile a=6√2 birim olarak sadeleşir.",
+        "Çevre 4a=4·6√2=24√2 birim bulunur."
+      ],
+      "optionReasons": [
+        "12√2, iki kenarın toplamıdır; karenin çevresi dört kenardır.",
+        "Doğru. Tek kenar 6√2 ve dört kenar toplamı 24√2’dir.",
+        "36, alan 72’yi ikiye bölmekle bulunur; ne karekök ilişkisini ne dört kenar toplamını sağlar.",
+        "288, alanı doğrudan 4 ile çarpar; alan ile uzunluğu karıştırır.",
+        "72√2, kenar 6√2’yi 12 ile çarpmaya karşılık gelir; dört kenarlı çevre bağıntısına uymaz."
+      ],
+      "commonError": "Çevre için gerekli kenarı hesaplamadan verilen alanı doğrudan dörtle çarpmak.",
+      "check": "Çevreyi 4’e bölünce kenar 6√2 geri gelir; bu kenarın karesi 72’dir. Böylece hem çevre hem alan bağıntısı aynı uzunlukta doğrulanır."
+    }
+  },
+  {
+    "id": "koklu-sayilar-093-10",
+    "identity": "[\"koklu-sayilar-093-10\",\"∛(−8)+√16 işleminin gerçek değeri kaçtır?\",\"\",[\"6\",\"−6\",\"−2\",\"Gerçek sayı değildir\",\"2\"],4,\"∛(−8)=−2,√16=4; toplam 2'dir. Dikkat: Her negatif kök içini tanımsız saymak, tek ve çift kök ayrımını kaybettirir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tek dereceli gerçek kök negatif sayılarda tanımlıdır ve işareti korur. Çift dereceli esas kök ise tanımlı olduğunda negatif olmayan değeri verir.",
+        "Toplamda her kök kendi derecesine göre hesaplanır; aynı sembol ailesinde olmaları işaret kurallarını aynı yapmaz."
+      ],
+      "strategy": "Küpkök ve karekökü ayrı değerlendir; her birini kendi kuvvetiyle doğruladıktan sonra işaretli iki değeri topla.",
+      "steps": [
+        "(−2)³=−8 olduğundan ∛(−8)=−2’dir.",
+        "√16=4’tür; karekök esas değer olduğu için −4 seçilmez.",
+        "İşaretli toplam −2+4=2 olur."
+      ],
+      "optionReasons": [
+        "6, küpkökü +2 alır; oysa 2³=8’dir ve negatif kök içini vermez.",
+        "−6, −2 ile birlikte karekökü de −4 seçer; √16’nın esas değeri +4’tür.",
+        "−2, yalnız küpkök terimidir; +√16 katkısını atlar.",
+        "“Gerçek sayı değildir” yorumu negatif kök içini her derecede yasak sanır; küpkök tek derecelidir ve tanımlıdır.",
+        "Doğru. Tek kök −2, esas karekök 4 ve toplam 2’dir."
+      ],
+      "commonError": "Negatif kök içini çift ve tek derece ayrımı yapmadan tanımsız saymak.",
+      "check": "İki ara değerin geri kuvvetlerini denetle: (−2)³=−8 ve 4²=16. Toplamdan 4 çıkarınca küpkök değeri −2 geri elde edilir."
+    }
+  },
+  {
+    "id": "oran-oranti-093-1",
+    "identity": "[\"oran-oranti-093-1\",\"Bir kutuda 15 kırmızı ve 25 mavi boncuk vardır. Kırmızı boncuk sayısının bütün boncuk sayısına oranı kaçtır?\",\"\",[\"3/8\",\"3/5\",\"5/3\",\"5/8\",\"2/5\"],0,\"İstenen 15/(15+25)=15/40=3/8'dir. Dikkat: 3/5 kırmızının maviye oranıdır; soruda istenen parça/bütün farklıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir parçanın bütüne oranında pay parçanın miktarı, payda tüm parçaların toplamıdır. Parçanın diğer parçaya oranı farklı bir karşılaştırmadır.",
+        "Kesrin pay ve paydasını aynı sıfırdan farklı sayıya bölmek oranı korur. Orandaki iki çokluğun sırası anlamı belirler."
+      ],
+      "strategy": "Önce “kırmızı / bütün” etiketlerini kesre yerleştir; bütünün sayısını toplayarak bulduktan sonra ortak çarpanla sadeleştir.",
+      "steps": [
+        "Bütün boncuk sayısı 15+25=40’tır.",
+        "Kırmızının bütüne oranı 15/40 olarak kurulur; payda yalnız maviler değildir.",
+        "Pay ve paydayı 5’e böl: 15/40=3/8."
+      ],
+      "optionReasons": [
+        "Doğru. 15/(15+25)=15/40=3/8’dir.",
+        "3/5, kırmızının maviye oranı 15/25’tir; istenen bütünün yerine öteki parçayı koyar.",
+        "5/3, mavinin kırmızıya oranı 25/15’tir; hem karşılaştırılan çokluğu hem sıralamayı değiştirir.",
+        "5/8, mavilerin bütüne oranı 25/40’tır; kırmızı yerine mavi sayısını paya koyar.",
+        "2/5=16/40, toplamı 40 iken 16 kırmızı varmış gibi bir pay verir; verilen kırmızı sayısı 15’tir."
+      ],
+      "commonError": "Parça/bütün sorusunda paydaya bütün yerine diğer parçayı yazmak.",
+      "check": "Kırmızı ve mavinin bütüne oranlarını topla: 3/8+5/8=1. Ayrıca (3/8)·40=15 kırmızı boncuğu geri verir."
+    }
+  },
+  {
+    "id": "oran-oranti-093-2",
+    "identity": "[\"oran-oranti-093-2\",\"Pozitif A ve B miktarları için A:B=3:5 ve A+B=64 ise A kaçtır?\",\"\",[\"3\",\"8\",\"40\",\"24\",\"32\"],3,\"8t=64 ile t=8; A=3·8=24. Diğer miktar 40'tır ve oran 3/5'i verir. Dikkat: Oran tek başına gerçek miktarı vermez; 3 sayısını doğrudan A kabul etmek toplamı sağlamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "A:B=m:n oranı, miktarların ortak bir t ölçeğiyle A=mt ve B=nt yazılabilmesini sağlar. Oran katsayıları gerçek miktarlar olmak zorunda değildir.",
+        "Toplam verildiğinde ortak ölçek, bütün oran parçalarının toplamıyla belirlenir. Pozitif miktarlarda bu ölçek pozitiftir."
+      ],
+      "strategy": "İki miktarı ortak bir ölçeğin farklı katları olarak göster; verilen toplamdan bir ölçek parçasını bulup yalnız istenen miktara dön.",
+      "steps": [
+        "A=3t, B=5t yaz; toplam (3+5)t=8t olur.",
+        "8t=64 ile t=8 bulunur.",
+        "İstenen A, üç parça olduğundan A=3·8=24’tür."
+      ],
+      "optionReasons": [
+        "3, A’nın oran katsayısıdır; miktarın kendisi değildir. A=3 ve B=5 seçilse toplam 8 olurdu.",
+        "8, ortak ölçek t’nin değeridir; A üç ölçek parçasıdır.",
+        "40, beş parçalı B miktarıdır; soruda A istenir.",
+        "Doğru. Ortak ölçek 8 ve A=3·8=24’tür.",
+        "32, toplamı eşit ikiye böler; bu durumda oran 1:1 olur, 3:5 olmaz."
+      ],
+      "commonError": "Oran katsayısını, ortak ölçeği ve gerçek miktarı aynı sayı sanmak.",
+      "check": "A=24 için B=64−24=40’tır. 24/40=3/5 ve 24+40=64 koşulları birlikte sağlanır."
+    }
+  },
+  {
+    "id": "oran-oranti-093-3",
+    "identity": "[\"oran-oranti-093-3\",\"x/36=7/9 eşitliğini sağlayan gerçek x kaçtır?\",\"\",[\"4\",\"21\",\"28\",\"35\",\"252\"],2,\"Oranı korumak için pay da 4 katına çıkar: x=7·4=28; çapraz çarpım 9x=252 de aynı sonucu verir. Dikkat: Pay ve paydaya aynı sayıyı eklemek oranı korumaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Eşdeğer kesirlerde pay ve payda aynı katsayıyla genişletilir. Paydalardaki ölçek değişimi paya da uygulanır.",
+        "Paydalar sıfırdan farklı olduğunda a/b=c/d eşitliği ad=bc çapraz çarpımıyla da denetlenebilir."
+      ],
+      "strategy": "9 ile 36 arasındaki çarpan ilişkisini belirle; aynı ilişkiyi 7 ile bilinmeyen paya taşı ve çapraz çarpımla doğrula.",
+      "steps": [
+        "36, 9’un 4 katıdır; ikinci kesrin paydası dört kat büyütülmüştür.",
+        "Oranı korumak için pay da dört katına çıkar: x=7·4.",
+        "x=28 bulunur; böylece 28/36 sadeleşerek 7/9 olur."
+      ],
+      "optionReasons": [
+        "4, paydaların genişletme çarpanıdır; bilinmeyen payın kendisi değildir.",
+        "21, 7’yi üçle çarpar; payda ise 9’dan 36’ya dört kat büyümüştür.",
+        "Doğru. 7/9 kesrini 4 ile genişletmek 28/36 verir.",
+        "35, 7’yi beşle çarpar; bu durumda eşdeğer payda 45 olmalıydı, 36 değil.",
+        "252, 7·36 çapraz çarpımıdır; 9x=252 denkleminde son 9’a bölmeyi yapmaz."
+      ],
+      "commonError": "Oranı korumak için gerekli çarpanı bulup bunu bilinmeyen miktarın kendisi olarak vermek.",
+      "check": "Çapraz çarpımlar 9·28=252 ve 36·7=252’dir. Paydalar 36 ve 9 sıfırdan farklı olduğundan bu kontrol geçerlidir."
+    }
+  },
+  {
+    "id": "oran-oranti-093-4",
+    "identity": "[\"oran-oranti-093-4\",\"Birim fiyatı sabit ve ek ücret yokken 4 defter 60 TL'dir. Aynı defterlerden 7 tane kaç TL'dir?\",\"\",[\"67\",\"90\",\"100\",\"420\",\"105\"],4,\"60/4=15 TL/defter; 7·15=105 TL. Ücret/adet oranı 15 olarak sabittir. Dikkat: Ek ücret veya değişen indirim olmadığı koşulu saf doğru orantıyı mümkün kılar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Birim fiyat sabit ve ek ücret yoksa toplam ücret, adet ile doğru orantılıdır: ücret/adet aynı kalır.",
+        "Önce bir nesnenin ücretini bulmak, farklı adetler arasındaki ortak ölçeği somutlaştırır. Sonucun birimi TL olmalıdır."
+      ],
+      "strategy": "Dört defterlik toplamı bir deftere indir; aynı birim fiyatı yedi deftere uygula ve adet başına fiyatın değişmediğini denetle.",
+      "steps": [
+        "Bir defterin fiyatı 60/4=15 TL/defterdir.",
+        "Yedi defter için ücret 7·15 TL olur.",
+        "Toplam 105 TL’dir; sabit fiyat ve ek ücret olmaması bu doğru orantıyı sağlar."
+      ],
+      "optionReasons": [
+        "67, 60 TL’ye 7 sayısını ekler; farklı birimli adet ile ücreti toplar ve birim fiyatı kullanmaz.",
+        "90, altı defterin 6·15 TL ücretidir; yedi defter için bir birim fiyat daha gerekir.",
+        "100, yedi adet için 100/7 TL birim fiyat verir; bu başlangıçtaki 15 TL/defterle aynı değildir.",
+        "420=60·7, dört defterin toplamını tek defter fiyatı sanır; sonuç dört kat fazla olur.",
+        "Doğru. Birim fiyat 15 TL ve yedi defterin bedeli 105 TL’dir."
+      ],
+      "commonError": "Verilen dört defterlik toplam fiyatı bir defterin fiyatı gibi kullanmak.",
+      "check": "105/7=15 ve 60/4=15 TL/defterdir. Alternatif olarak ek üç defterin ücreti 3·15=45 TL, toplam 60+45=105 TL olur."
+    }
+  },
+  {
+    "id": "oran-oranti-093-5",
+    "identity": "[\"oran-oranti-093-5\",\"Aynı işi 6 eş verimli işçi 10 günde bitiriyor. Günlük saatler ve verim aynı kalırsa 15 işçi kaç günde bitirir?\",\"\",[\"25\",\"4\",\"6\",\"15\",\"40\"],1,\"6·10=15t; t=60/15=4 gün. Dikkat: İşçi artarken aynı işin süresini de artırmak ters orantının yönünü yanlış okumaktır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı iş, aynı kişi başı verim ve aynı günlük saatler altında işçi sayısı ile gün sayısının çarpımı sabittir.",
+        "Ters orantıda işçi sayısının artış katsayısı, sürenin azalış katsayısına karşılık gelir. İş miktarı değişirse bu sabit doğrudan kullanılamaz."
+      ],
+      "strategy": "İlk ekibin toplam işçi-gün emeğini bul; yeni ekibin bilinmeyen gün sayısıyla aynı emeği sağlayan denklemi kur.",
+      "steps": [
+        "İlk iş 6·10=60 işçi-gün emek gerektirir.",
+        "Yeni ekip için 15t=60 yazılır; t=60/15’tir.",
+        "Süre 4 gündür; daha kalabalık ekip aynı işi daha kısa sürede bitirir."
+      ],
+      "optionReasons": [
+        "25, 10 günü 15/6 ile çarpar; işçi ve süreyi aynı yönde doğru orantılı alır.",
+        "Doğru. 15·4=60 işçi-gün, ilk işin gerektirdiği emektir.",
+        "6 gün, 15·6=90 işçi-gün verir; sabit iş için gerekenden fazladır.",
+        "15, yeni işçi sayısını gün sayısı yerine kullanır; 15·15=225 işçi-gün eder.",
+        "40 gün, 15·40=600 işçi-gün gerektirir; başlangıç emeğinin on katıdır."
+      ],
+      "commonError": "İşçi sayısı artınca gün sayısını da aynı katsayıyla artırmak.",
+      "check": "İşçi sayısı 15/6=2,5 kat olmuştur; süre 10/4=2,5 kat azalmıştır. Her iki durumda çarpım 60 işçi-gün olarak kalır."
+    }
+  },
+  {
+    "id": "oran-oranti-093-6",
+    "identity": "[\"oran-oranti-093-6\",\"x>0 için y=x+3 ilişkisi veriliyor. y ile x'in doğru orantılı olup olmadığına ilişkin hangi yorum doğrudur?\",\"\",[\"İkisi de arttığı için doğru orantılıdır\",\"y−x sabit olduğu için doğru orantılıdır\",\"xy=3 olduğu için ters orantılıdır\",\"y/x=1+3/x sabit olmadığı için doğru orantılı değildir\",\"Bütün x değerlerinde y/x=3'tür\"],3,\"y/x=(x+3)/x=1+3/x, x'e bağlı değişir. Grafik orijinden geçmez; ilişki artan olsa da doğru orantı değildir. Dikkat: Her artan ilişkinin doğru orantı olduğunu söylemek koşulu zayıflatır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Doğru orantıda x≠0 için y/x oranı, incelenen bütün x değerlerinde tek bir sabit olmalıdır. Birlikte artış tek başına yeterli değildir.",
+        "Sabit fark, y=x+b biçimindeki bir ilişkiyi gösterebilir; sabit bölümle aynı koşul değildir. Ters orantı ise sabit xy çarpımı ister."
+      ],
+      "strategy": "Verilen bağıntıdan y/x’i cebirle çıkar; iki pozitif x seçerek bu bölümün sabit olup olmadığını sınarken fark ve çarpım iddialarını da ayır.",
+      "steps": [
+        "x>0 olduğundan x’e bölünebilir: y/x=(x+3)/x=1+3/x.",
+        "x=1 için y/x=4, x=3 için y/x=2 olur; aynı sabit elde edilmez.",
+        "Dolayısıyla y ile x doğru orantılı değildir. Artan bir ilişki olması bu sonucu değiştirmez."
+      ],
+      "optionReasons": [
+        "Birlikte artmaları doğrudur ama doğru orantı kanıtı değildir; x=1 ve x=3 için oranlar farklıdır.",
+        "y−x=3 sabittir; fakat doğru orantıda sabit olması gereken fark değil y/x bölümüdür.",
+        "xy=x(x+3)’tür, 3 sabiti değildir; x=1 için çarpım 4 olur.",
+        "Doğru. y/x=1+3/x, x’e göre değiştiğinden doğru orantı yoktur.",
+        "y/x her zaman 3 değildir; örneğin x=1 için 4, x=3 için 2’dir."
+      ],
+      "commonError": "“Aynı yönde artıyor” ya da “fark sabit” gözlemini sabit oran yerine koymak.",
+      "check": "x’i 1’den 2’ye çıkarınca y, 4’ten 5’e çıkar; x iki kat olurken y iki kat olmaz. Bu doğrudan karşı örnek, sabit bölüm sonucunu destekler."
+    }
+  },
+  {
+    "id": "oran-oranti-093-7",
+    "identity": "[\"oran-oranti-093-7\",\"Pozitif A,B,C miktarları için A:B=4:7 ve B:C=14:15. A:B:C oranı hangisidir?\",\"\",[\"8:14:15\",\"4:7:15\",\"4:14:15\",\"8:7:15\",\"4:7:30\"],0,\"İlk oranı 2 ile çarpınca A:B=8:14; ikinciyle ortak B=14 olur. Birleşik oran 8:14:15'tir. Dikkat: Ortak B'nin farklı ölçeklerini doğrudan birleştirmek aynı miktarı iki farklı değer sanır.\"]",
+    "guidance": {
+      "knowledge": [
+        "İki oranda ortak görünen miktar aynı nesneyi temsil eder; oranları birleştirmek için bu miktarın sayısal ölçeği eşitlenmelidir.",
+        "Bir oranın bütün terimlerini aynı pozitif sayıyla çarpmak oranı korur. Üçlü oran, verilen her ikili orana ayrı ayrı uymalıdır."
+      ],
+      "strategy": "İki bağlantının ortak B miktarını aynı katsayıya getir; sonra A ve C’yi bu ortak satırdan okuyup iki oranı yeniden kur.",
+      "steps": [
+        "A:B=4:7 oranını 2 ile genişlet: A:B=8:14.",
+        "İkinci oran B:C=14:15, aynı B=14 ölçeğini kullanır.",
+        "Ortak satır A:B:C=8:14:15 olur."
+      ],
+      "optionReasons": [
+        "Doğru. 8:14=4:7 ve 14:15 ikinci oranı verir.",
+        "4:7:15, ilk oranı korur ama B:C=7:15 olur; verilen 14:15’i sağlamaz.",
+        "4:14:15, ikinci oranı korur ama A:B=2:7 olur; 4:7’den farklıdır.",
+        "8:7:15, B’yi büyütmeden A’yı büyütür; A:B=8:7 ile ilk koşulu bozar.",
+        "4:7:30, ilk koşulu korusa da B:C=7:30 olur; 14:15’ten farklıdır."
+      ],
+      "commonError": "İki farklı ölçekte yazılan B katsayılarını eşitlemeden ilk oranın A’sı ile ikinci oranın C’sini yan yana koymak.",
+      "check": "Üçlü oranda A=8t, B=14t, C=15t al. Pozitif t sadeleşince A/B=4/7 ve B/C=14/15 ayrı ayrı geri elde edilir."
+    }
+  },
+  {
+    "id": "oran-oranti-093-8",
+    "identity": "[\"oran-oranti-093-8\",\"216 jeton 3, 4 ve 6 sayılarıyla ters orantılı paylaştırılıyor. En küçük pay kaç jetondur?\",\"\",[\"24\",\"36\",\"48\",\"72\",\"96\"],2,\"Toplam 9 parça 216 ise bir parça 24; en küçük pay 2·24=48'dir. 6 ile 48'in çarpımı 288, diğer payların karşı sayılarıyla çarpımlarına eşittir. Dikkat: Doğru orantılı 3:4:6 paylaşımı ters orantı koşulunu sağlamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ters orantılı paylaştırmada paylar, verilen sayıların tersleriyle doğru orantılıdır. Her pay ile karşısındaki sayının çarpımı aynıdır.",
+        "En büyük karşı sayı, pozitif toplamın en küçük payını alır. Tam sayı ağırlıklara geçmek toplam parça sayısını görünür kılar."
+      ],
+      "strategy": "Üç ters ağırlığı ortak paydada birleştir; tam sayı oranındaki en küçük ağırlığın toplamın kaç parçası olduğunu kullan.",
+      "steps": [
+        "Pay oranı 1/3:1/4:1/6’dır; ortak 12 ile çarpınca 4:3:2 olur.",
+        "Toplam 4+3+2=9 parçadır; her parça 216/9=24 jeton eder.",
+        "En küçük pay iki parçadır: 2·24=48 jeton."
+      ],
+      "optionReasons": [
+        "24, tek oran parçasının değeridir; en küçük pay iki parçadan oluşur.",
+        "36, bu paylaşımın en küçük payı değildir; örneğin 6 ile çarpımı 216 olurken gereken ortak çarpım 288’dir.",
+        "Doğru. İki parçalı en küçük pay 48 jetondur ve 6 sayısına karşılık gelir.",
+        "72, üç parçalı orta paydır; 4 sayısıyla eşleşir, en küçük değildir.",
+        "96, dört parçalı en büyük paydır; 3 sayısıyla eşleşir."
+      ],
+      "commonError": "Verilen 3, 4 ve 6 sayılarını ters çevirmeden doğrudan pay ağırlıkları olarak kullanmak.",
+      "check": "Diğer paylar 96 ve 72’dir; toplam 96+72+48=216. Çarpımlar da 3·96=4·72=6·48=288 olarak eşittir."
+    }
+  },
+  {
+    "id": "oran-oranti-093-9",
+    "identity": "[\"oran-oranti-093-9\",\"1:25000 ölçekli haritada 7,2 cm olan uzunluk gerçekte kaç km'dir? 1 km=100000 cm.\",\"\",[\"18\",\"1,8\",\"180\",\"0,18\",\"180000\"],1,\"7,2·25000=180000 cm; 100000'e bölünce 1,8 km olur. Dikkat: Ölçek çarpımı santimetre verir; birim değiştirmeden kilometre etiketi konmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "1:s uzunluk ölçeğinde çizimdeki bir uzunluk birimi gerçekte s aynı uzunluk birimine karşılık gelir.",
+        "Ölçek çarpımı birimi kendiliğinden değiştirmez. Santimetreyle bulunan gerçek uzunluğu kilometreye çevirmek için verilen cm/km bağıntısı ayrıca kullanılır."
+      ],
+      "strategy": "Ölçek genişletmesini santimetre olarak tamamla; sonucu kilometreye dönüştüren birim kesrini ikinci ayrı işlem olarak uygula.",
+      "steps": [
+        "Gerçek uzunluk 7,2·25000=180000 cm’dir.",
+        "Verilen 1 km=100000 cm bağıntısıyla 180000/100000 km hesaplanır.",
+        "Gerçek uzunluk 1,8 km bulunur."
+      ],
+      "optionReasons": [
+        "18 km, 180000 cm’yi 10000’e bölmeye karşılık gelir; verilen kilometre dönüşümünden 10 kat büyüktür.",
+        "Doğru. Ölçek 180000 cm verir; 100000’e bölünce 1,8 km olur.",
+        "180 km, santimetreden kilometreye yalnız 1000’e bölerek geçer; sonuç 100 kat büyür.",
+        "0,18 km, bir basamak fazla küçültür; 180000 yerine 18000 cm’ye eşittir.",
+        "180000, gerçek uzunluğun santimetre cinsinden sayısal değeridir; aynı sayı kilometre etiketiyle kullanılamaz."
+      ],
+      "commonError": "Ölçekle çarpılan santimetre değerinin zaten kilometre olduğunu sanmak.",
+      "check": "1,8 km=180000 cm’dir. Bu uzunluğu 25000’e bölünce haritadaki 7,2 cm geri gelir; hem ölçek hem birim dönüşümü doğrulanır."
+    }
+  },
+  {
+    "id": "oran-oranti-093-10",
+    "identity": "[\"oran-oranti-093-10\",\"y pozitif x'in karesiyle doğru orantılıdır. x=2 iken y=12. x=3 iken y kaçtır?\",\"\",[\"18\",\"24\",\"36\",\"12\",\"27\"],4,\"y=kx²; 12=4k ile k=3. x=3 için y=3·9=27. Dikkat: x'i3/2 ile çarparken y'yi de 3/2 ile çarpmak, kareyle orantıyı x ile orantı sanmaktır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir nicelik x’in karesiyle doğru orantılıysa y=kx² yazılır. Sabit kalan oran y/x²’dir; y/x değildir.",
+        "x, r katına çıktığında x², r² katına çıkar. Değişimin hangi nicelikle orantılı olduğu üssüyle birlikte okunmalıdır."
+      ],
+      "strategy": "Verilen ilk x,y çiftinden kareye bağlı orantı sabitini çıkar; yeni x’in karesine aynı sabiti uygula.",
+      "steps": [
+        "Model y=kx²’dir; x=2 ve y=12 için 12=4k yazılır.",
+        "Buradan k=3 bulunur; ikinci durumda x²=3²=9’dur.",
+        "y=3·9=27 elde edilir."
+      ],
+      "optionReasons": [
+        "18, 12’yi 3/2 ile çarpar; y’yi x’in karesi yerine x ile doğru orantılı alır.",
+        "24, başlangıç y değerini iki katına çıkarır; x’in değişim katsayısı 3/2 ve gerekli karesel katsayı 9/4’tür.",
+        "36, 12’yi doğrudan yeni x=3 ile çarpar; başlangıç ölçeğinden orantı sabitini çıkarmaz.",
+        "12, x değişirken y’yi sabit tutar; pozitif k ile kareye doğru orantı değişim gerektirir.",
+        "Doğru. y/x²=3 sabitiyle yeni değer 3·9=27’dir."
+      ],
+      "commonError": "“x’in karesiyle” ifadesini yalnız x ile orantı gibi okuyup değişim katsayısının karesini almamak.",
+      "check": "Başlangıç oranı 12/2²=3, son oran 27/3²=3’tür. Ayrıca 27/12=9/4=(3/2)², karesel ölçek değişimini doğrular."
+    }
+  }
+]

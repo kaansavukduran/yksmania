@@ -2,6 +2,9 @@ import { test, expect, type Page, type Locator } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { units } from "./next-thirty-unit-cases";
 import type { AppState } from "../../src/domain/model";
+import { registerOfflineBootDiagnostics } from "./helpers/offlineBootDiagnostics";
+
+registerOfflineBootDiagnostics();
 
 test.use({ locale: "tr-TR", timezoneId: "Europe/Istanbul", hasTouch: true });
 

@@ -61,6 +61,7 @@ const displayCopy025 = [
   ["tekrarlanması", "tekrarı"],
   ["bulunmadığı", "yer almadığı"],
   ["aranan türü tamamlamaz", "aranan tür için yetmez"],
+  ["farklı dosyalara ait olduğundan", "farklı dosyalara ait olduğu için"],
 ] as const;
 function visibleText025(value: string) {
   let text = value;

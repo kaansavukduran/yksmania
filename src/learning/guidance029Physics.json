@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "genlesme-q1",
+    "identity": "[\"genlesme-q1\",\"Serbest 2 m çubuk 20 °C’den 70 °C’ye ısınıyor. α=20×10⁻⁶ °C⁻¹ sabit. Uzama kaç mm?\",\"\",[\"2000\",\"0,2\",\"1\",\"2\",\"20\"],3,\"ΔT=50 °C. ΔL=20×10⁻⁶·2·50=0,002 m=2 mm. Son sıcaklığın kendisi değil farkı kullanılır. 0,002 değerini mm sanmak veya metreyi binle çarpmayı unutmak yanlış ölçek verir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Boyca genleşmede başlangıç uzunluğu, sıcaklık değişimi ve malzemenin doğrusal katsayısı birlikte kullanılır: ΔL=αL₀ΔT. Katsayı °C⁻¹ ise sıcaklık farkı °C seçilebilir; uzunluk hangi birimde girerse değişim o birimde çıkar."
+      ],
+      "strategy": "Önce iki sıcaklığın farkını ayır; ilk boyu bu fark ve katsayıyla çarp. İstenen milimetreye yalnız hesap sonunda geç.",
+      "steps": [
+        "Isıtma aralığı 70−20=50 °C’dir; son sıcaklık 70 °C tek başına ΔT değildir.",
+        "ΔL=(20×10⁻⁶)×2×50=0,002 m bul. Bu, son boy değil ilk boya eklenecek değişimdir.",
+        "1 m=1000 mm olduğundan 0,002×1000=2 mm. Seçenekleri bu birimle karşılaştır."
+      ],
+      "optionReasons": [
+        "2000 mm, ilk 2 m boyun milimetre karşılığıdır; uzama yerine başlangıç boyunu verir.",
+        "0,2 mm, hesaplanan 0,002 m’yi milimetreye çevirirken bir ondalık basamak kaybettirir.",
+        "1 mm, formüldeki 2 m ilk boy çarpanını atlayınca elde edilir.",
+        "2 mm; sıcaklık farkı, ilk boy ve katsayının çarpımının doğru birim dönüşümüdür.",
+        "20 mm, doğru uzamayı on kat büyütür; verilen katsayıyla bağıl uzama bu kadar değildir."
+      ],
+      "commonError": "Uzama ile son boyu karıştırmak: ΔL değişimdir, Lson=L₀+ΔL ayrı bir büyüklüktür.",
+      "check": "Bağıl uzama αΔT=0,001’dir. 2000 mm’nin binde biri 2 mm olduğundan ölçek bağımsız olarak doğrulanır."
+    }
+  },
+  {
+    "id": "genlesme-q2",
+    "identity": "[\"genlesme-q2\",\"Homojen izotrop bir metal levha, hiçbir yerinden kısıtlanmadan düzgün ısıtılıyor. Levhadaki dairesel deliğin çapı nasıl değişir? Pozitif α ve küçük değişim kabul ediliyor.\",\"\",[\"Her koşulda sabit kalır\",\"Yalnız dış çap artar, iç çap sabittir\",\"Delik zorunlu olarak kapanır\",\"Azalır\",\"Artar\"],4,\"Serbest izotrop genleşmede hayalî dolgu da levhayla aynı oranda genişler; dolgunun sınırı deliğin sınırıdır. Bu yüzden iç çap büyür. Malzemenin deliğe doğru birikmesi düşüncesi serbest ve düzgün ısınma koşuluna uymaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "İzotrop, homojen bir levhanın serbest ve düzgün ısınmasında geometrik benzerlik korunur. Bir uzunluk d için dson=dilk(1+αΔT) yazılır; iç sınır da dış sınır gibi bu ölçekle yer değiştirir."
+      ],
+      "strategy": "Deliğin sınırını levhanın ölçülebilen bir uzunluğu olarak düşün; ısıtma ve pozitif katsayının ölçek çarpanına etkisini belirle.",
+      "steps": [
+        "Deliği aynı metalden hayalî bir diskle doldur; disk ile levhanın aynı sıcaklık değişimini yaşadığını düşün.",
+        "Isıtmada ΔT>0 ve α>0 olduğundan 1+αΔT>1 olur. Hayalî diskin çapı bu çarpanla ölçeklenir.",
+        "Disk çıkarıldığında sınırın hareketi değişmez; deliğin son çapı ilk çapından büyüktür."
+      ],
+      "optionReasons": [
+        "Her koşulda sabitlik, serbest levhanın bütün doğrusal ölçülerinin ölçeklenmesini dışlar.",
+        "İç çapı sabit tutmak için ek bir kısıtlama gerekir; soruda böyle bir bağlantı yoktur.",
+        "Kapanma, sınırın merkeze doğru gitmesini gerektirir; pozitif ölçek artışı ters yönü verir.",
+        "Çapın azalması ısıtma ve pozitif α ile bulunan dson/dilk>1 ilişkisine uymaz.",
+        "Artış; iç çapın da levhayla aynı doğrusal ölçek çarpanını izlemesinin sonucudur."
+      ],
+      "commonError": "Metalin taneciklerini deliğe doğru şişen parçalar gibi düşünmek, serbest genleşmenin bütün şekli ölçeklemesini kaçırır.",
+      "check": "Çap oranı dson/dilk=1+αΔT birden büyüktür. Çap bir uzunluk olduğundan burada alan katsayısı 2α kullanılmaz."
+    }
+  },
+  {
+    "id": "genlesme-q3",
+    "identity": "[\"genlesme-q3\",\"İzotrop katıda küçük değişimler için α=10×10⁻⁶ °C⁻¹ veriliyor. A0=2 m² ve ΔT=100 °C. Alan artışı yaklaşık kaç m²’dir?\",\"\",[\"0,001\",\"0,002\",\"0,004\",\"0,006\",\"0,2\"],2,\"ΔA≈2αA0ΔT=2·10×10⁻⁶·2·100=0,004 m². Bir uzunluk için kullanılan α, alan için doğrudan yeterli değildir. 3α hacimsel yaklaşım olur; 0,006 sonucunu bu soruya taşımak boyutları karıştırır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Alan iki bağımsız doğrusal boyutun çarpımıdır. İzotrop küçük genleşmede her boyutun 1+αΔT ile değişmesi, yüksek dereceli terim ihmal edildiğinde ΔA≈2αA₀ΔT bağıntısını verir."
+      ],
+      "strategy": "Verilen katsayının doğrusal olduğunu fark et; önce alana ait katsayıyı oluştur, sonra ilk alan ve sıcaklık farkını yerleştir.",
+      "steps": [
+        "α=10×10⁻⁶ °C⁻¹ olduğundan yüzeysel katsayı yaklaşık β=20×10⁻⁶ °C⁻¹’dir.",
+        "ΔA≈(20×10⁻⁶)×2×100=4000×10⁻⁶ m² yaz.",
+        "Sonuç 0,004 m²’dir; istenen toplam son alan değil alanın artışıdır."
+      ],
+      "optionReasons": [
+        "0,001 m², hem iki boyut etkisi hem 2 m² ilk alan varken artışı dörtte birine indirir.",
+        "0,002 m², ΔA hesabında doğrusal α’yı doğrudan kullanıp ikinci boyutun katkısını atlar.",
+        "0,004 m², küçük değişim için 2αA₀ΔT hesabıyla uyumludur.",
+        "0,006 m², alan yerine hacme ait 3α çarpanını kullanma sonucudur.",
+        "0,2 m², ilk alana göre %10 artıştır; verilen αΔT=0,001 ölçeğinden çok büyüktür."
+      ],
+      "commonError": "α, β ve γ’yı aynı katsayı sanmak; boy, alan ve hacim için sırasıyla bir, iki ve üç boyut etkisini ayır.",
+      "check": "Bağıl alan artışı 0,004/2=0,002=2αΔT’dir. Tam ölçekleme 2(1,001²−1)=0,004002 m² verir; küçük terim ihmaline uygundur."
+    }
+  },
+  {
+    "id": "genlesme-q4",
+    "identity": "[\"genlesme-q4\",\"Kütlesi sabit bir katının hacmi 100 cm³’ten 102 cm³’e çıkıyor. Son yoğunluğun ilk yoğunluğa oranı nedir?\",\"\",[\"1\",\"0\",\"102/100\",\"100/102\",\"2\"],3,\"ρson/ρilk=(m/102)/(m/100)=100/102. Hacim arttığı için yoğunluk azalmalıdır; oran 1’den küçüktür. Kütle değişmediğinden genleşmeyi madde miktarında artış sanmak ve 102/100 almak yanlıştır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yoğunluk birim hacimdeki kütledir: ρ=m/V. Aynı kütlenin iki yoğunluğunun oranında m sadeleşir; hacim ile yoğunluk birbirinin ters yönünde değişir."
+      ],
+      "strategy": "İlk ve son durum için ayrı yoğunluk kesirleri kur. Sonu ilke bölerken hacim oranının hangi yönde döndüğünü izle.",
+      "steps": [
+        "İlk yoğunluk m/100, son yoğunluk m/102 biçimindedir; iki hacim de cm³ olduğundan ayrıca dönüşüm gerekmez.",
+        "ρson/ρilk=(m/102)÷(m/100) yaz; bölmeyi ters kesirle çarpıma çevir.",
+        "Aynı m sadeleşince oran 100/102 çıkar; hacim büyüdüğü için bu sayı birden küçüktür."
+      ],
+      "optionReasons": [
+        "1, yoğunluğun değişmediğini söyler; sabit kütlenin hacmi değişmiştir.",
+        "0, son yoğunluğun sıfır olmasını gerektirir; son hacim sonlu, kütle değişmemiştir.",
+        "102/100, yoğunluk yerine son/ilk hacim oranıdır ve ters orantıyı ters çevirir.",
+        "100/102, aynı kütle altında ilk hacmin son hacme bölünmesidir.",
+        "2, hacim farkının sayısal değeridir; boyutsuz yoğunluk oranı değildir."
+      ],
+      "commonError": "Hacimdeki 2 cm³ artışı yoğunluk oranı sanmak veya yoğunluk da hacim gibi artar demek.",
+      "check": "Kütle korunumu ρson×102=ρilk×100 ister. Seçilen oran bu eşitliği sağlar ve yaklaşık 0,9804’tür."
+    }
+  },
+  {
+    "id": "genlesme-q5",
+    "identity": "[\"genlesme-q5\",\"Tam dolu 500 cm³ kap ve sıvı 50 °C ısınıyor. γsıvı=8×10⁻⁴ ve γkap=2×10⁻⁵ °C⁻¹. Buharlaşma yok, küçük değişim yaklaşımı geçerli. Taşma yaklaşık kaç cm³?\",\"\",[\"19,5\",\"20\",\"20,5\",\"195\",\"0,5\"],0,\"Sıvı 20 cm³, kap 0,5 cm³ genişler. Net görünen artış (γsıvı−γkap)V0ΔT=19,5 cm³’tür. 20 kap etkisini atlar; 20,5 kap etkisini yanlış yönde ekler. Kap başlangıçta tam dolu olduğu için pozitif fark taşar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tam dolu kapta sıvının hacim artışının bir bölümü, kabın artan iç hacmini doldurur. Küçük değişim yaklaşımında görünen artış, aynı ilk hacim için iki hacim artışının farkıdır."
+      ],
+      "strategy": "Sıvı ve kap için ayrı artış hesapla. Kabın açtığı ek hacmi sıvının artışından düşür; kalan pozitif fark taşmayı verir.",
+      "steps": [
+        "Sıvının artışı ΔVs=500×8×10⁻⁴×50=20 cm³’tür.",
+        "Kabın iç hacim artışı ΔVk=500×2×10⁻⁵×50=0,5 cm³’tür; bu bölüm taşmadan kapta kalabilir.",
+        "Başlangıçta boşluk bulunmadığından taşan hacim 20−0,5=19,5 cm³ olur."
+      ],
+      "optionReasons": [
+        "19,5 cm³, sıvı artışından kabın yeni kapasitesi çıkarıldığında kalır.",
+        "20 cm³, sıvının serbest artışını verir; kabın da genişlediğini yok sayar.",
+        "20,5 cm³, kap artışını taşmayı azaltmak yerine yanlışlıkla artıracak yönde toplar.",
+        "195 cm³, doğru katsayı farkıyla hesaplanan değerden on kat büyüktür.",
+        "0,5 cm³, yalnız kabın artan kapasitesidir; sıvının fazlası değildir."
+      ],
+      "commonError": "Katsayılar zaten hacimsel γ olarak verildiği hâlde bunları yeniden üçle çarpmak.",
+      "check": "Son kap hacmi 500,5 cm³, sıvının serbestçe ulaşacağı hacim 520 cm³ olur. Aralarındaki 19,5 cm³ fark aynı taşmayı verir."
+    }
+  },
+  {
+    "id": "genlesme-q6",
+    "identity": "[\"genlesme-q6\",\"Normal basınçta 2 °C’deki sıvı su, kütle ve basınç değişmeden 4 °C’ye ısıtılıyor. Hacmi ve yoğunluğu nasıl değişir?\",\"\",[\"İkisi de zorunlu sabittir\",\"İkisi de artar\",\"İkisi de azalır\",\"Hacim azalır, yoğunluk artar\",\"Hacim artar, yoğunluk azalır\"],3,\"Su 0–4 °C arasında olağan genleşme kuralının tersine davranır: ısınırken hacmi küçülür. Kütle sabitken m/V artar; yaklaşık 4 °C’de yoğunluk en büyüktür. Her ısınma hacim artışı demek değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Suyun yoğunluk–sıcaklık ilişkisi bütün sıcaklık aralıklarında tek bir olağan genleşme kuralıyla açıklanmaz. Normal basınçta yaklaşık 4 °C yoğunluğun en büyük olduğu noktadır; sabit kütlede ρV sabittir."
+      ],
+      "strategy": "Başlangıç ve son sıcaklığı suyun özel aralığında yerleştir. Önce yoğunluğun değişimini, ardından sabit kütleyle hacmi belirle.",
+      "steps": [
+        "2→4 °C geçişi suyun 0–4 °C özel aralığının içindedir; yaklaşık 4 °C yoğunluk maksimumuna yaklaşılır.",
+        "Bu aralıkta ısınırken suyun yoğunluğu artar. Kütle aynı kaldığı için m=ρV bağıntısı kullanılabilir.",
+        "ρ artarken sabit m için V azalmalıdır; hacim azalması ile yoğunluk artışını birlikte seç."
+      ],
+      "optionReasons": [
+        "İkisinin sabit kalması, sıcaklıkla değişen su yoğunluğunu hesaba katmaz.",
+        "İkisinin artması ρV=m sabitliğini bozar; aynı kütlede bu ikisi birlikte artamaz.",
+        "İkisinin azalması da sabit kütleye uymaz; hacim azalması yoğunluğu artırır.",
+        "Hacim azalır, yoğunluk artar; verilen özel aralıkta hem su verisi hem kütle korunumu sağlanır.",
+        "Hacim artar, yoğunluk azalır ifadesi olağan genleşme yönüdür; 2→4 °C su aralığına uymaz."
+      ],
+      "commonError": "Isıtılan her sıvının her aralıkta hacmi büyür genellemesini suyun özel aralığına uygulamak.",
+      "check": "4 °C’de aynı kütlenin hacmi minimuma yaklaşır. Bu noktayla 2 °C’yi karşılaştırmak yönleri doğrular; su donmamaktadır."
+    }
+  },
+  {
+    "id": "genlesme-q7",
+    "identity": "[\"genlesme-q7\",\"Birbirine sıkıca bağlı A ve B metal şeritleri aynı ilk boyda; αA>αB. Düzgün ısıtılıp serbestçe bükülebiliyorlar. Hangi yorum doğrudur?\",\"\",[\"Şerit B tarafına eğilir, A dış yayda kalır\",\"Şerit asla eğilmez\",\"Isıtma mutlaka her iki metali kısaltır\",\"A içte kısa yayda kalır\",\"B dışta uzun yayda kalır\"],0,\"A’nın serbest uzama isteği daha büyüktür. Bağlı şeritte A dış, uzun yayda; B iç, kısa yayda kalır ve şerit B tarafına eğilir. Bu sonuç serbest bükülme için geçerlidir; B’yi dışa koymak genleşme farkını ters yorumlar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bağlı iki metalin boy değişimi istekleri farklıysa şerit bükülerek ortak biçim alır. Bir eğrinin dış yayı iç yayından uzundur; hangi metalin daha uzun kalacağı serbest boy değişimlerinin karşılaştırılmasından anlaşılır."
+      ],
+      "strategy": "İlk boylar ve sıcaklık değişimi aynı olduğundan katsayıları karşılaştır. Daha büyük son boy isteyen tarafı uzun yaya yerleştir, eğilme tarafını bundan çıkar.",
+      "steps": [
+        "Serbest değişimlerin farkı ΔLA−ΔLB=(αA−αB)L₀ΔT’dir; ısıtmada bu fark pozitiftir.",
+        "A’nın ulaşmak istediği son boy B’ninkinden büyüktür; bağlı düzende A daha uzun dış yayı oluşturur.",
+        "B kısa iç yayda kaldığından şerit B tarafına kıvrılır; dış tarafı A olarak etiketle."
+      ],
+      "optionReasons": [
+        "B’ye eğilme ve A’nın dış yayda kalması, iki metalin boy farkını aynı anda karşılar.",
+        "Hiç eğilmemesi, farklı serbest boy değişimlerine rağmen bağlı şeritte uyumsuzluk oluşmadığını varsayar.",
+        "Her ikisinin mutlaka kısalması verilen katsayı sıralamasından çıkmaz; ısıtma tek başına böyle bir zorunluluk vermez.",
+        "A’nın kısa iç yayda olması, αA>αB ile bulduğumuz son boy sıralamasını ters çevirir.",
+        "B’nin uzun dış yayda olması daha çok boy değişimi isteyen tarafı yanlış seçer."
+      ],
+      "commonError": "Büyük katsayılı metale doğru bükülür demek; büyük katsayılı tarafın uzun dış yayda kalması gerektiğini önce çiz.",
+      "check": "A ve B aynı merkez açıya sahip yaylardır. LA>LB için A’nın yarıçapı daha büyük olmalıdır; dış–iç yerleşimi bu geometriden de doğrulanır."
+    }
+  },
+  {
+    "id": "genlesme-q8",
+    "identity": "[\"genlesme-q8\",\"L0=3 m ve α=10×10⁻⁶ °C⁻¹ olan serbest çubuk 80 °C’den 30 °C’ye soğuyor. İşaretli ΔL kaç mm?\",\"\",[\"+1,5\",\"−1,5\",\"−15\",\"+15\",\"0\"],1,\"ΔT=30−80=−50 °C. ΔL=3·10×10⁻⁶·(−50)=−0,0015 m=−1,5 mm. Eksi işaret büzülmedir, negatif son uzunluk değildir. Büyüklüğü 1,5 mm olan kısalma, toplam ilk boydan çıkarılır.\"]",
+    "guidance": {
+      "knowledge": [
+        "İşaretli boy değişimi ΔL=Lson−Lilk olarak tanımlanır. Doğrusal katsayı pozitifken soğuma negatif ΔT ve negatif ΔL üretir; negatif değişim son uzunluğun negatif olduğu anlamına gelmez."
+      ],
+      "strategy": "Sıcaklık farkını işlem sırasıyla yaz ve işaretini hesap boyunca koru. Değişimi milimetreye çevirirken işareti değiştirme.",
+      "steps": [
+        "ΔT=30−80=−50 °C; soğuma olduğu için fark negatiftir.",
+        "ΔL=3×10×10⁻⁶×(−50)=−0,0015 m hesaplanır.",
+        "Metreden milimetreye 1000 ile çarpınca ΔL=−1,5 mm olur; kısalma büyüklüğü ise 1,5 mm’dir."
+      ],
+      "optionReasons": [
+        "+1,5 mm doğru büyüklükte fakat uzama işaretindedir; verilen olay soğumadır.",
+        "−1,5 mm hem doğrusal hesabı hem son eksi ilk işaret tanımını karşılar.",
+        "−15 mm işareti korur fakat katsayı veya birim dönüşümünde on kat büyütür.",
+        "+15 mm hem soğuma işaretini ters alır hem büyüklüğü on kat artırır.",
+        "0, sıcaklık farkı veya katsayı sıfır olsaydı çıkabilirdi; ikisi de sıfır değildir."
+      ],
+      "commonError": "İstenen işaretli değişimken yalnız kısalmanın pozitif büyüklüğünü yazmak.",
+      "check": "Son boy 3000−1,5=2998,5 mm’dir. Son eksi ilk 2998,5−3000=−1,5 mm verir; son boy pozitif kalır."
+    }
+  },
+  {
+    "id": "genlesme-q9",
+    "identity": "[\"genlesme-q9\",\"Bir ucu sabit 10 m çubuğun serbest ucu ile sabit duvar arasında 6 mm boşluk var. α=12×10⁻⁶ °C⁻¹ ve ΔT=40 °C. Başka hareket/kısıt yok. Kalan boşluk kaç mm?\",\"\",[\"6\",\"10,8\",\"0\",\"1,2\",\"4,8\"],3,\"Çubuk 0,0048 m=4,8 mm uzar. Tek serbest uç bu kadar ilerlediği için 6−4,8=1,2 mm kalır; temas gerçekleşmez. 4,8 uzamadır, kalan boşluk değildir. 10,8, kapanan boşluğa yanlışlıkla uzama ekler.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir ucu sabit, diğer ucu serbest çubukta serbest uç toplam boy değişimi kadar ilerler. Sabit duvara kalan aralık, temas öncesinde ilk aralıktan bu ilerleme çıkarılarak bulunur."
+      ],
+      "strategy": "Önce çubuğun serbest uzamasını hesapla ve boşlukla aynı birime getir. Temas olup olmadığını kıyasladıktan sonra kalan aralığı yaz.",
+      "steps": [
+        "ΔL=10×12×10⁻⁶×40=0,0048 m; serbest uç bu kadar duvara yaklaşır.",
+        "0,0048 m=4,8 mm. Bu ilerleme başlangıçtaki 6 mm’den küçüktür; çubuk duvara ulaşmaz.",
+        "Kalan boşluk g=6−4,8=1,2 mm’dir; uzama ile kalan aralık farklı niceliklerdir."
+      ],
+      "optionReasons": [
+        "6 mm, hiç genleşme olmamış gibi başlangıç boşluğunu aynen bırakır.",
+        "10,8 mm, duvara doğru ilerlemeyi boşluğu büyütecek yönde ekler.",
+        "0, temas olduğunu varsayar; hesaplanan ilerleme 6 mm’ye ulaşmamıştır.",
+        "1,2 mm, serbest ucun ilerlemesinden sonra duvara kalan aralıktır.",
+        "4,8 mm, çubuğun uzamasıdır; başlangıç boşluğundan çıkarılması gerekir."
+      ],
+      "commonError": "Bir ucu sabit çubuğun uzamasını iki uca paylaştırıp serbest ucun hareketini yarıya indirmek.",
+      "check": "Kalan aralık ile ilerlemenin toplamı 1,2+4,8=6 mm’dir. Temas sonrası gerilme hesabına gerek kalmadan geometrik bütçe kapanır."
+    }
+  },
+  {
+    "id": "genlesme-q10",
+    "identity": "[\"genlesme-q10\",\"Sabit madde miktarlı ideal gazın basıncı sabit tutuluyor. 300 K’de hacmi 10 L. Sıcaklık 330 K olunca hacmi kaç L olur?\",\"\",[\"10\",\"11\",\"20\",\"110\",\"9\"],1,\"Vson/Vilk=Tson/Tilk=330/300=1,1; son hacim 11 L. Kelvin oranı gerekir. Katı çubuk için verilen α formülünü doğrudan kullanmak veya Celsius sıcaklıklarını oranlamak bu ideal gaz koşulunun yerine geçmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "İdeal gaz için pV=nRT geçerlidir. Basınç ve madde miktarı sabit tutulduğunda V/T sabit kalır; bu orandaki sıcaklık mutlak sıcaklık olan kelvin cinsindendir."
+      ],
+      "strategy": "Gazın değişmeyen niceliklerini belirleyip ilk ve son V/T oranlarını eşitle. Son hacmi bulmak için ilk hacmi sıcaklık oranıyla ölçekle.",
+      "steps": [
+        "p ve n sabit olduğundan Vson/Vilk=Tson/Tilk bağıntısı kurulabilir; her iki sıcaklık zaten kelvindir.",
+        "Sıcaklık oranı 330/300=1,1’dir; artış %10’dur, iki katına çıkma değildir.",
+        "Vson=10×1,1=11 L bulunur. İstenen artış 1 L değil son hacimdir."
+      ],
+      "optionReasons": [
+        "10 L, sabit basınçlı gazın sıcaklık artışına rağmen hacmi değişmez der.",
+        "11 L, ilk hacmin mutlak sıcaklık oranıyla çarpımını verir.",
+        "20 L, sıcaklık iki katına çıkmış gibi hesaplar; 330/300 yalnız 1,1’dir.",
+        "110 L, 1,1 çarpanını 11 alarak ondalık basamak hatası yapar.",
+        "9 L, ısıtma altında verilen sabit basınç koşulunun tersine hacmi küçültür."
+      ],
+      "commonError": "Santigrat sıcaklıkları oranlamak veya sabit hacimli kap modelini sabit basınç sorusuna taşımak.",
+      "check": "İlk oran 10/300=1/30 L/K’dir; 11/330 da 1/30 çıkar. Aynı oran korunur."
+    }
+  },
+  {
+    "id": "hal-degisimi-q1",
+    "identity": "[\"hal-degisimi-q1\",\"Su buharı, arada sıvı damla oluşturmadan doğrudan buz kristaline dönüşüyor. Bu geçişin adı ve örneğin enerji yönü nedir?\",\"\",[\"Donma, enerji alır\",\"Yoğuşma, enerji alır\",\"Kırağılaşma, enerji verir\",\"Süblimleşme, enerji verir\",\"Erime, enerji alır\"],2,\"Gazdan doğrudan katıya geçiş kırağılaşmadır ve örnek çevreye enerji verir. Süblimleşme bunun tersi olan katıdan gaza geçiştir; yoğuşmanın son hâli sıvıdır. Donma da sıvıdan katıya geçiş olduğundan verilen başlangıç hâline uymaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hâl geçişinin adı, başlangıç ve son hâl birlikte belirtilerek seçilir. Birbirinin tersi iki geçişte enerji aktarım yönleri de terstir; örnekten çıkan enerji çevreye aktarılır."
+      ],
+      "strategy": "Önce gaz, sıvı ve katı kutularıyla geçiş yolunu çiz. Arada sıvı bulunmadığını koruyarak adı ve enerji yönünü ayrı belirle.",
+      "steps": [
+        "Başlangıç su buharı gaz, son buz kristali katıdır; ok doğrudan gaz→katı olmalıdır.",
+        "Katı→gaz süblimleşmenin ters oku gaz→katı olduğundan bu olay kırağılaşmadır.",
+        "Gazdan doğrudan katıya geçişte örnek enerji verir. Geçiş adıyla enerji yönünün ikisini de karşılayan seçeneği bul."
+      ],
+      "optionReasons": [
+        "Donma sıvı→katıdır; ayrıca donan örnek enerji almaz, verir.",
+        "Yoğuşma gaz→sıvıdır; son hâl buz ve arada damla yok koşulu buna uymaz, enerji yönü de terstir.",
+        "Kırağılaşma ve enerji verme, doğrudan gaz→katı geçişinin iki doğru özelliğidir.",
+        "Süblimleşme katı→gaz yönüdür ve enerji alır; verilen okun tersidir.",
+        "Erime katı→sıvı geçişidir; verilen başlangıç ve son hâlin ikisiyle de uyuşmaz."
+      ],
+      "commonError": "Buz oluşan her olaya donma demek; donmada başlangıç sıvıdır, burada gazdır.",
+      "check": "Tersini düşün: buzun doğrudan buhara dönüşmesi enerji alan süblimleşmedir. Ters olayın kırağılaşma ve enerji verme olması tutarlıdır."
+    }
+  },
+  {
+    "id": "hal-degisimi-q2",
+    "identity": "[\"hal-degisimi-q2\",\"Erime sıcaklığındaki 30 g saf katıyı aynı sıcaklıkta tamamen eritmek için L=200 J/g veriliyor. Basınç sabit, kayıp yok. Gereken enerji kaç J?\",\"\",[\"6000\",\"60000\",\"0\",\"150\",\"600\"],0,\"Q=mL=30·200=6000 J. Gram ile J/g sadeleşir. ΔT=0 olduğu için mcΔT’den sıfır çıkarmak erime modelini yanlış seçmektir; sıcaklık sabitken de hâl değişimine enerji aktarılır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hâl değiştirme ısısı L, geçiş sıcaklığında birim kütlenin hâlini değiştirmek için gereken enerjidir. Sabit basınçta erime basamağı Q=meriyenL ile hesaplanır; sıcaklığın sabitliği enerji aktarımını sıfırlamaz."
+      ],
+      "strategy": "Katının zaten erime sıcaklığında olduğunu kullan; ön ısıtma basamağı eklemeden bütün eriyen kütleyi L ile çarp.",
+      "steps": [
+        "Başlangıç erime sıcaklığındadır ve son yine aynı sıcaklıktadır; burada yalnız erime enerjisi gerekir.",
+        "Tamamı eriyen kütle 30 g olduğundan Q=30 g×200 J/g yaz; gram birimleri sadeleşir.",
+        "30×200=6000 J. Bu enerji sıcaklığı yükseltmeden katıyı sıvıya dönüştürür."
+      ],
+      "optionReasons": [
+        "6000 J, 30 gramın her biri için gereken 200 J’ün toplamıdır.",
+        "60000 J, mL çarpımında bir fazladan on çarpanı kullanır.",
+        "0 J, ΔT=0 bilgisini hâl değişiminde de enerji yokmuş gibi yorumlar.",
+        "150 J/30 g=5 J/g olur; her gram için gereken 200 J yerine yalnız 5 J ayırır.",
+        "600 J, doğru çarpımı onda birine indirir; 30 gram yerine 3 gram eritmeye yeter."
+      ],
+      "commonError": "Q=mcΔT bağıntısını geçiş basamağına uygulayıp erime enerjisini yok saymak.",
+      "check": "6000 J/30 g=200 J/g geri hesabı, verilen birim kütle başına geçiş enerjisini aynen verir."
+    }
+  },
+  {
+    "id": "hal-degisimi-q3",
+    "identity": "[\"hal-degisimi-q3\",\"20 g buz −10 °C’den 10 °C suya dönüştürülüyor. Normal basınç, kayıp yok; cbuz=2,1 J/(g·°C), Lf=334 J/g, csu=4,2 J/(g·°C). Toplam enerji kaç J?\",\"\",[\"6680\",\"7100\",\"7520\",\"7940\",\"8360\"],3,\"Buzu 0 °C’ye ısıtma 420 J, erime 6680 J, suyu 10 °C’ye ısıtma 840 J gerekir. Toplam 420+6680+840=7940 J. Yalnız erime enerjisi 6680 J başlangıç ve son sıcaklık farklarını atlar; her basamağın c veya L’si farklı görevdedir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir örnek hem sıcaklık hem hâl değiştiriyorsa süreç ayrı enerji basamaklarına ayrılır. Tek hâlde mcΔT, geçiş sıcaklığında mL kullanılır; bütün süreçte aynı kütle izlenir fakat öz ısı faza göre değişir."
+      ],
+      "strategy": "−10 °C buzdan 10 °C suya giden yolu 0 °C’de iki kez ayır: buzu ısıtma, erime ve oluşan suyu ısıtma enerjilerini topla.",
+      "steps": [
+        "Buz önce −10’dan 0 °C’ye gelir: Q₁=20×2,1×10=420 J.",
+        "0 °C’de erime için Q₂=20×334=6680 J; oluşan suyun 0→10 °C ısınması Q₃=20×4,2×10=840 J’dir.",
+        "Her basamak enerji aldığı için Qtoplam=420+6680+840=7940 J hesapla."
+      ],
+      "optionReasons": [
+        "6680 J yalnız erime enerjisidir; başlangıç buzunun ve son suyun ısınmasını atlar.",
+        "7100 J, 420+6680 toplamıdır; eriyen suyu 10 °C’ye ısıtma eksiktir.",
+        "7520 J, 6680+840 toplamıdır; eksi sıcaklıktaki buzu önce 0 °C’ye getirme eksiktir.",
+        "7940 J, üç gerekli basamağın doğru toplamıdır.",
+        "8360 J, 6680+840+840 hesabıdır; buzun ısınmasında da suyun 4,2 öz ısısını kullanır."
+      ],
+      "commonError": "Buz ve su için aynı c değerini kullanmak veya −10→10 aralığını tek fazmış gibi almak.",
+      "check": "Geçiş dışındaki enerji 420+840=1260 J’dir. Toplamdan erimeyi çıkarınca 7940−6680=1260 J kalması iki ısınma basamağını doğrular."
+    }
+  },
+  {
+    "id": "hal-degisimi-q4",
+    "identity": "[\"hal-degisimi-q4\",\"Normal basınçta 100 g su 10 °C ile 25 g buz 0 °C yalıtılmış kapta karışıyor. csu=4,2 J/(g·°C), Lf=336 J/g; kap ihmal. Dengede ne olur?\",\"\",[\"Son sıcaklık−10 °C olur\",\"Bütün su buharlaşır\",\"Tüm buz erir,20 °C su olur\",\"12,5 g buz kalır, sıcaklık 0 °C olur\",\"25 g buz kalır, su 10 °C’de kalır\"],3,\"Su4200 J verir; bütün buz için 25·336=8400 J gerekir. Yalnız 4200/336=12,5 g buz erir;12,5 g kalır. Buz ve su birlikteyken normal basınçta denge 0 °C’dir. Tüm buz erir varsayımı enerji yetersizliği nedeniyle yanlıştır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yalıtılmış buz–su karışımında önce son hâlin enerji açısından mümkün olup olmadığı sınanır. 0 °C’deki buzun tamamını eritme ihtiyacı mLf’dir; normal basınçta buz ve su birlikte dengede kalırsa sıcaklık 0 °C’dir."
+      ],
+      "strategy": "Suyun 0 °C’ye soğurken verebildiği enerjiyi bütün buzun erime ihtiyacıyla karşılaştır. Yeterli değilse yalnız eriyen kütleyi hesapla.",
+      "steps": [
+        "100 g suyun 10→0 °C soğuması Qsu=100×4,2×10=4200 J sağlayabilir.",
+        "25 g buzun tamamı için 25×336=8400 J gerekir; 4200 J buna yetmez. Buzun hepsi erir varsayımını bırak.",
+        "Eriyen buz 4200/336=12,5 g, kalan buz 25−12,5=12,5 g’dır. Buz–su dengesi 0 °C’de oluşur."
+      ],
+      "optionReasons": [
+        "−10 °C, başlangıçta 0 °C buz ve daha sıcak su bulunan bu yalıtılmış düzenin enerji yönüne uymaz.",
+        "Bütün suyu buharlaştıracak enerji yoktur; sıcak suyun sınırlı enerjisi buzun tamamını bile eritemez.",
+        "Tüm buzu eritmek ve suyu 20 °C yapmak, mevcut 4200 J’ün çok üzerinde enerji gerektirir.",
+        "12,5 g kalan buz ve 0 °C; verilen enerji yalnız buzun yarısını eritir.",
+        "Hiç buz erimemesi ve suyun 10 °C’de kalması, başlangıç sıcaklık farkına rağmen enerji aktarımını durdurur."
+      ],
+      "commonError": "İki sıcaklığın aritmetik ortalamasını almak; erime enerjisi ve farklı kütleler bu ortalamada kaybolur.",
+      "check": "Buzun aldığı 12,5×336=4200 J, suyun verdiğine eşittir. Son kütleler 112,5 g sıvı ve 12,5 g buz olup toplam 125 g’dır."
+    }
+  },
+  {
+    "id": "hal-degisimi-q5",
+    "identity": "[\"hal-degisimi-q5\",\"Normal basınçta 100 g su 40 °C ile 25 g buz 0 °C yalıtılmış kapta karışıyor. csu=4,2 J/(g·°C), Lf=336 J/g; kap ihmal. Son sıcaklık kaç °C?\",\"\",[\"8\",\"16\",\"20\",\"32\",\"0\"],1,\"Suyun 0 °C’ye kadar verebildiği 16800 J,8400 J erime ihtiyacından büyüktür. Kalan 8400 J toplam 125 g sıvıyı ısıtır:Td=8400/(125·4,2)=16 °C. Yalnız ilk 100 g’a bölmek yeni oluşan suyun ısınmasını atlar.\"]",
+    "guidance": {
+      "knowledge": [
+        "0 °C buz tamamen eridikten sonra yeni oluşan su da son sıcaklığa kadar ısınır. Bu yüzden erime sonrasında kullanılacak ısıl kapasite, başlangıçtaki su ile eriyen buzun toplam kütlesine aittir."
+      ],
+      "strategy": "Önce tam erimeyi enerjiyle doğrula. Erime için ayrılan enerjiyi çıkarıp kalanı bütün son sıvının ısıl kapasitesine böl.",
+      "steps": [
+        "Suyun 0 °C’ye kadar verebildiği 100×4,2×40=16800 J, buzu eritmek için gereken 25×336=8400 J’den büyüktür.",
+        "Tüm buz erir; 16800−8400=8400 J artar. Artık 100+25=125 g sıvı su vardır.",
+        "Td=8400/(125×4,2)=16 °C. Bu pozitif sonuç, tam erime sınır testiyle de uyumludur."
+      ],
+      "optionReasons": [
+        "8 °C’de sıcak su 13440 J verirken buzun erimesi ve yeni suyun ısınması 9240 J alır; 4200 J açıklanmadan kaybolur.",
+        "16 °C, tam erime sonrası kalan enerjinin 125 g suyu ısıtmasıyla bulunur.",
+        "20 °C, kalan 8400 J’ü yalnız ilk 100 g suya bölerek eriyen 25 g suyun ısınmasını atlar.",
+        "32 °C, erimeye giden 8400 J’ü çıkarmadan 16800 J’ü toplam kütleye böler.",
+        "0 °C, erimeye yeten enerjiden sonra artan 8400 J’ü yok sayar."
+      ],
+      "commonError": "Buzun erimesini sonuç sayıp eriyen suyun da 0 °C’den son sıcaklığa ısındığını unutmak.",
+      "check": "16 °C için sıcak su 100×4,2×24=10080 J verir. Buz 8400 J erime ve 25×4,2×16=1680 J ısınma alır; toplam yine 10080 J’dir."
+    }
+  },
+  {
+    "id": "hal-degisimi-q6",
+    "identity": "[\"hal-degisimi-q6\",\"Aynı saf sıvı, açık bir kapta daha düşük dış basınç altında kaynatılıyor. Diğer uygun koşullarda hangisi beklenir?\",\"\",[\"Sıvı hiç enerji almaz\",\"Kaynama sıcaklığı yükselir\",\"Kaynama sıcaklığı düşer\",\"Kaynama sıcaklığı her yerde 100 °C’dir\",\"Buharlaşma yalnız kaynama anında olur\"],2,\"Dış basınç azalınca aynı sıvının buhar basıncı dış basınca daha düşük sıcaklıkta ulaşabilir. Bu nedenle kaynama sıcaklığı düşer.100 °C su için belirli basınca ait yaklaşık bir değerdir; buharlaşma ise kaynama dışında da yüzeyden olabilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kaynama, sıvı içinde oluşan buharın basıncının dış basıncı karşılayabildiği koşullarla ilişkilidir. Aynı saf sıvının buhar basıncı sıcaklığa bağlıdır; kaynama sıcaklığı için dış basınç da belirtilmelidir."
+      ],
+      "strategy": "Eski ve yeni dış basıncı, aynı sıvının değişmeyen buhar basıncı–sıcaklık eğrisi üzerinde iki hedef düzey olarak düşün.",
+      "steps": [
+        "Basınç azalınca kaynama için ulaşılması gereken dış basınç düzeyi daha aşağıdadır.",
+        "Aynı sıvı daha düşük buhar basıncına daha düşük sıcaklıkta ulaşabilir; yeni eşitlenme sıcaklığı aşağı kayar.",
+        "Beklenen değişim kaynama sıcaklığının düşmesidir; bu durum enerji ihtiyacının ortadan kalktığı anlamına gelmez."
+      ],
+      "optionReasons": [
+        "Basınç düşmesi sıvının buharlaşma enerjisi gereksinimini sıfırlamaz.",
+        "Kaynama sıcaklığının yükselmesi, aynı sıvıda dış basınç artışı yönüne uygun olurdu.",
+        "Düşme, daha düşük dış basıncı karşılamak için gereken sıcaklığın azalmasıdır.",
+        "100 °C bütün sıvılara ve basınçlara ait evrensel kaynama sıcaklığı değildir.",
+        "Buharlaşma kaynama dışında da yüzeyden olabilir; yalnız kaynama anına sınırlanamaz."
+      ],
+      "commonError": "Bir sıcaklık değerini basınç koşulundan koparıp su her yerde 100 °C’de kaynar biçiminde ezberlemek.",
+      "check": "Buhar basıncı eğrisini sabit tutup dış basınç çizgisini aşağı indir: kesişim daha düşük sıcaklığa gider. Bağımsız grafik kontrolü aynı yönü verir."
+    }
+  },
+  {
+    "id": "hal-degisimi-q7",
+    "identity": "[\"hal-degisimi-q7\",\"Aynı basınçta eriyen aynı saf maddenin X ve Y örneklerinde mX=2mY. İkisi de erime sıcaklığından başlayıp tamamen eriyor. QX/QY nedir?\",\"\",[\"1\",\"2\",\"4\",\"1/4\",\"1/2\"],1,\"Q=mL olduğundan QX/QY=mX/mY=2. İki örneğin sıcaklığının geçişte sabit kalması enerjiyi sıfırlamaz. Yalnız L’nin madde özelliği olması toplam enerjinin kütleden bağımsız olduğu anlamına gelmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hâl değiştirme ısısı L birim kütleye ait büyüklüktür. Aynı saf madde, aynı basınç ve aynı geçiş için L ortak olsa da toplam geçiş enerjisi eriyen kütleye bağlıdır."
+      ],
+      "strategy": "Her örnek için mL yazıp oranla. İki örneğin başlangıçta zaten erime sıcaklığında olmasını kullanarak ek ısınma terimi ekleme.",
+      "steps": [
+        "X ve Y aynı koşulda tamamen eridiğinden QX=mXL, QY=mYL yazılır.",
+        "QX/QY=(mXL)/(mYL) ifadesinde ortak L sadeleşir.",
+        "mX=2mY olduğundan oran 2mY/mY=2 olur; iki kat kütle iki kat geçiş enerjisi gerektirir."
+      ],
+      "optionReasons": [
+        "1, aynı L’yi aynı toplam enerji sanır; kütleler eşit değildir.",
+        "2, Q=mL bağıntısındaki doğrusal kütle etkisini verir.",
+        "4, kütleyi karesiyle etkili sayar; mL’de kütle birinci kuvvettedir.",
+        "1/4, hem oranı ters çevirir hem kütleyi karesiyle kullanır.",
+        "1/2, istenen X/Y yerine Y/X enerji oranını verir."
+      ],
+      "commonError": "Sıcaklıklar sabit diye iki erime enerjisini de sıfır almak; geçiş sırasında sıcaklık değişmeden enerji aktarılır.",
+      "check": "Her gram başına QX/mX ve QY/mY aynı L’yi vermelidir. Oran 2 olduğunda iki örneğin birim kütle enerjileri eşit kalır."
+    }
+  },
+  {
+    "id": "hal-degisimi-q8",
+    "identity": "[\"hal-degisimi-q8\",\"Bir hâl değişimi için gereken enerji aynı kalıyor. Sabit net ısıtıcı gücü P’den 2P’ye çıkarılıyor, kayıp değişmiyor ve net güç veriliyor. Geçiş süresi nasıl değişir?\",\"\",[\"Dört katına çıkar\",\"İki katına çıkar\",\"Aynı kalır\",\"Yarısına iner\",\"Dörtte birine iner\"],3,\"Gereken Q aynı olduğundan t=Q/Pnet’tir; net güç iki katına çıkınca süre yarıya iner. Burada nominal değil net güç verilmiştir. Gücü artırmayı enerji ihtiyacının artmasıyla karıştırmak veya süreyi güçle doğru orantılı almak yanlıştır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Güç, birim zamanda aktarılan enerjidir. Sabit net güçte Q=Pnet·t olur. Buradaki net güç, maddeye gerçekten aktarılan kısmı belirttiğinden ayrıca belirsiz bir verim çarpanı eklenmez."
+      ],
+      "strategy": "İhtiyaç enerjisinin değişmediğini eşitliğin iki tarafında koru; eski ve yeni süreleri net güçlere bölerek oranla.",
+      "steps": [
+        "İlk süre t₁=Q/P, yeni süre t₂=Q/(2P) biçimindedir; aynı Q kullanılır.",
+        "Oran t₂/t₁=[Q/(2P)]/[Q/P] kurulduğunda Q ve P sadeleşir.",
+        "Yeni/eski süre oranı 1/2’dir; enerji aynı miktarda, iki kat hızlı aktarılır."
+      ],
+      "optionReasons": [
+        "Dört kat süre, hem gücün etkisini ters alır hem iki yerine dört çarpanı ekler.",
+        "İki kat süre, sabit enerjide güç ile zamanı doğru orantılı kabul eder.",
+        "Aynı süre, gücün iki katına çıkmasını yok sayar; o sürede iki kat enerji aktarılırdı.",
+        "Yarı süre, iki kat net gücün aynı Q’yu tamamlaması için gereken orandır.",
+        "Dörtte bir süre, gücün iki katını dört katmış gibi kullanır."
+      ],
+      "commonError": "Net güç verildiği hâlde tekrar kayıp çıkarmak veya daha büyük gücün aynı geçişin enerji ihtiyacını artırdığını düşünmek.",
+      "check": "Yeni aktarım 2P×(t₁/2)=P×t₁’dir; her iki süreçte de toplam enerji Q olarak kalır."
+    }
+  },
+  {
+    "id": "hal-degisimi-q9",
+    "identity": "[\"hal-degisimi-q9\",\"Bir sıvı yüzeyden buharlaşırken dışarıdan yeterli enerji almıyor ve soğuyor. En uygun açıklama hangisidir?\",\"\",[\"Buharlaşma katıya geçiştir\",\"Buharlaşan örnek mutlaka çevreye yoğuşma ısısı verir\",\"Buharlaşma yalnız 100 °C’de olur\",\"Ayrılan tanecikler enerji taşıyabilir; kalan sıvının ortalama enerjisi azalabilir\",\"Bütün tanecikler aynı anda yok olur\"],3,\"Buharlaşma için gereken enerji yeterince dışarıdan karşılanmazsa kalan sıvının enerjisi azalabilir ve sıvı soğur. Bu yüzey olayı farklı sıcaklıklarda olur. Yoğuşma ters geçiştir; maddenin yok olması veya katıya geçmesi söz konusu değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sıvı taneciklerinin enerjileri birbirinin aynı değildir. Yüzeyden ayrılan tanecikler enerji taşır; kalan örneğin sıcaklığı, enerji çıkışı ile dışarıdan enerji gelişi arasındaki bilançoya bağlıdır."
+      ],
+      "strategy": "Sistem olarak kalan sıvıyı seç. Ayrılan taneciklerle çıkan enerji ile dışarıdan gelen enerjiyi karşılaştırıp ortalama enerjiye etkisini açıkla.",
+      "steps": [
+        "Buharlaşan tanecikler sıvı yüzeyini terk ederken enerji de taşır; madde yok olmaz, gaz hâline geçer.",
+        "Soruda dışarıdan yeterli enerji alınmadığı belirtilmiştir; çıkan enerjinin tamamı çevreden yerine konmaz.",
+        "Kalan sıvının ortalama enerjisi azalabilir ve sıcaklığı düşer. Enerji taşıyan tanecik açıklamasını seç."
+      ],
+      "optionReasons": [
+        "Katıya geçiş sıvının donmasıdır; yüzeyden buharlaşmada son hâl gazdır.",
+        "Yoğuşma ısısını çevreye verme gaz→sıvı yönüne aittir; burada ters geçiş vardır.",
+        "Buharlaşma yalnız 100 °C’ye özgü değildir; farklı sıcaklıklarda yüzeyden gerçekleşebilir.",
+        "Ayrılan taneciklerin enerji taşıması ve kalan sıvının ortalama enerjisinin azalabilmesi verilen soğumayı açıklar.",
+        "Tanecikler yok olmaz ve hepsi aynı anda ayrılmak zorunda değildir; kütle başka hâle taşınır."
+      ],
+      "commonError": "Buharlaşmayı kaynamayla özdeşleştirip yalnız sabit bir sıcaklıkta ve bütün sıvıda gerçekleştiğini sanmak.",
+      "check": "Dışarıdan enerji akışı buharlaşmayla taşınanı tamamen karşılasa soğuma zorunlu olmazdı. Sorunun özellikle yetersiz enerji girişini vermesi açıklamayı destekler."
+    }
+  },
+  {
+    "id": "hal-degisimi-q10",
+    "identity": "[\"hal-degisimi-q10\",\"Yoğuşma sıcaklığındaki 10 g saf buhar aynı sıcaklıkta tamamen sıvıya dönüşüyor. L=2250 J/g; basınç sabit. Örneğin verdiği enerjinin büyüklüğü nedir?\",\"\",[\"2250 J\",\"22500 J\",\"225000 J\",\"0 J\",\"225 J\"],1,\"Enerji büyüklüğü mL=10·2250=22500 J’dir. Gazdan sıvıya geçerken örnek bu enerjiyi çevreye verir. İşaretli Q alınan için pozitif seçilirse−22500 J olur; soru büyüklük istediği için pozitif 22500 J kullanılır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yoğuşma, gazdan sıvıya geçiştir ve örneğin çevreye enerji vermesini içerir. Geçiş enerjisinin büyüklüğü mL’dir; büyüklük ile alınan enerji için tanımlanmış işaretli Q ayrı tutulur."
+      ],
+      "strategy": "Yoğuşan kütleyi L ile çarp; sıcaklık değişimi terimi ekleme. En sonda sorunun enerji büyüklüğünü mü işaretli enerjiyi mi istediğini kontrol et.",
+      "steps": [
+        "Buhar aynı yoğuşma sıcaklığında tamamen sıvı oluyor; ayrı bir soğuma aralığı verilmemiştir.",
+        "|Q|=10 g×2250 J/g=22500 J bulunur; gramlar sadeleşir.",
+        "Örnek enerji verdiğinden alınan enerji için Q negatiftir; fakat istenen büyüklük pozitif 22500 J’dür."
+      ],
+      "optionReasons": [
+        "2250 J, yalnız 1 gramın yoğuşma enerjisidir; 10 gram çarpanı eksiktir.",
+        "22500 J, verilen kütle ile L’nin doğru çarpımının pozitif büyüklüğüdür.",
+        "225000 J, mL hesabına fazladan on çarpanı ekler.",
+        "0 J, aynı sıcaklıkta hâl değişiminin de enerji gerektirdiğini atlar.",
+        "225 J, verilen 10 gramla çarpmak yerine L’yi 10’a böler."
+      ],
+      "commonError": "Enerji verme işaretini enerji büyüklüğüne taşımak ya da ΔT sıfır diye yoğuşmayı enerjisiz saymak.",
+      "check": "Ters yönde aynı koşullarda 10 g sıvıyı buharlaştırmak 22500 J almayı gerektirir. Ters geçişlerin enerji büyüklükleri eşit, yönleri zıttır."
+    }
+  },
+  {
+    "id": "durgun-elektrik-q1",
+    "identity": "[\"durgun-elektrik-q1\",\"Başlangıçta nötr katı cisim 5 elektron kazanıyor. e temel yük büyüklüğü. Olağan elektriklenme için son net yükü nedir?\",\"\",[\"−e/5\",\"+5e\",\"−5e\",\"0\",\"+e/5\"],2,\"Beş elektron eksi yük getirir; q=−5e olur. Nötr başlangıç, pozitif ve negatif yüklerin başlangıçta dengeli olmasıdır. Elektron kazanmayı pozitif yüklenme sanmak işareti ters çevirir; temel yükün kesirli katları da bu serbest cisim modeline uymaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Nötr cisim, pozitif ve negatif yükleri dengeli olan cisimdir; yüksüz parçacıklardan oluşması gerekmez. Olağan katı elektriklenmesinde net yük değişimi, aktarılan elektronların sayısı ile her elektronun −e yükünün çarpımından bulunur."
+      ],
+      "strategy": "Başlangıç net yükünü ve eklenen taşıyıcının işaretini ayrı yaz. Gelen elektronların toplam yükünü başlangıca ekle.",
+      "steps": [
+        "Başlangıç nötr olduğundan qilk=0’dır; elektron kazanımı proton sayısını artırmaz.",
+        "Her elektron −e taşır. Beş elektronun getirdiği toplam yük 5×(−e)’dir.",
+        "qson=0−5e=−5e bul; e burada pozitif temel yük büyüklüğüdür."
+      ],
+      "optionReasons": [
+        "−e/5, elektron sayısıyla çarpmak yerine bölerek temel yükün kesirli katını verir.",
+        "+5e, beş elektronun getirdiği negatif yükün işaretini ters alır.",
+        "−5e, nötr başlangıca beş negatif temel yük eklenmesidir.",
+        "0, elektron kazanımına rağmen yük dengesinin değişmediğini varsayar.",
+        "+e/5 hem aktarılan yükün işaretini ters alır hem beş elektron yerine kesirli yük üretir."
+      ],
+      "commonError": "Elektron kazanmayı yükün sayısı arttığı için pozitifleşmek sanmak; işaret sayıya değil taşıyıcının yüküne bağlıdır.",
+      "check": "Net yükteki değişim −5e, dışarıdan gelen beş elektronun yüküne eşittir. Cisimde elektron sayısı proton sayısını beş aşar."
+    }
+  },
+  {
+    "id": "durgun-elektrik-q2",
+    "identity": "[\"durgun-elektrik-q2\",\"Nötr A ve B cisimlerinden oluşan sistem dışarıyla yük alışverişi yapmıyor.4 elektron A’dan B’ye aktarılıyor. Son yükler sırasıyla?\",\"\",[\"+4e,+4e\",\"0,−4e\",\"−4e,0\",\"−4e,+4e\",\"+4e,−4e\"],4,\"A dört negatif yük kaybettiği için+4e, B dört elektron kazandığı için−4e kalır. Toplam yük 0 korunur. İki son yükü aynı işaret almak yalıtılmış sistemde sıfırdan net yük üretmek olur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Elektriksel olarak yalıtılmış sistemin işaretli toplam yükü korunur. Bir cisimden ayrılan elektronların negatif yükü diğerine geçer; tek cisimlerin yükleri değişse de bütün sistemin yükü aynı kalır."
+      ],
+      "strategy": "A için ayrılan, B için gelen elektronları işaretli yük değişimi olarak kaydet. İki son yükü yazdıktan sonra toplamlarını başlangıçla karşılaştır.",
+      "steps": [
+        "İki cisim başlangıçta nötrdür: qA=qB=0 ve toplam yük sıfırdır.",
+        "A dört elektron kaybedince ΔqA=+4e; B dört elektron kazanınca ΔqB=−4e olur.",
+        "Son yükler sırayla +4e ve −4e’dir; toplam +4e−4e=0 kalır."
+      ],
+      "optionReasons": [
+        "+4e,+4e toplam +8e üretir; dışarıyla yük alışverişi olmayan nötr başlangıca aykırıdır.",
+        "0,−4e, B’nin kazanımını sayarken A’nın aynı elektronları kaybetmesini atlar.",
+        "−4e,0, A’ya kazanmadığı elektronları ekler ve B’ye aktarımı yok sayar.",
+        "−4e,+4e toplamı korur fakat A’dan B’ye elektron hareketinin işaretlerini ters verir.",
+        "+4e,−4e hem aktarım yönünü hem toplam yükün korunmasını karşılar."
+      ],
+      "commonError": "Yalnız toplamın sıfır olmasına bakıp iki cismin işaretlerini ters seçmek; aktarım yönü ikinci bağımsız koşuldur.",
+      "check": "İki yük değişimi eşit büyüklükte ve zıt işaretlidir. A’nın elektron eksiği B’nin elektron fazlalığıyla aynı dört taneciktir."
+    }
+  },
+  {
+    "id": "durgun-elektrik-q3",
+    "identity": "[\"durgun-elektrik-q3\",\"Dış etkilerin uzakta olduğu uygun simetrik düzende özdeş iletken iki kürenin yükleri+8 μC ve−2 μC. Temas edip ayrılıyorlar. Her birinin son yükü?\",\"\",[\"−5 μC\",\"+2 μC\",\"+3 μC\",\"+5 μC\",\"+6 μC\"],2,\"Toplam+6 μC korunur; özdeş ve uygun simetrik iki kürede her biri+3 μC olur.8 ve 2’nin büyüklüklerini toplamak+5 sonucunu verir fakat negatif işareti atlar. Toplam+6’yı her küreye vermek yükü iki katına çıkarır.\"]",
+    "guidance": {
+      "knowledge": [
+        "İletkenler temasta elektriksel dengeye yaklaşırken toplam yük korunur. Özdeş küreler ve verilen uygun simetri koşulu, son yüklerin eşit olmasını sağlar; eşitlik toplam yük yerine her bir son yük için uygulanır."
+      ],
+      "strategy": "İlk yükleri işaretleriyle topla, ardından korunmuş toplamı iki eşit son yüke paylaştır.",
+      "steps": [
+        "İşaretli toplam +8+(−2)=+6 μC’dir; negatif yükün büyüklüğünü artı olarak ekleme.",
+        "Özdeş iki kürede qson+qson=6 μC eşitliği kurulur.",
+        "Her küre qson=+3 μC olur; iki kürenin birlikte son yükü yine +6 μC’dir."
+      ],
+      "optionReasons": [
+        "−5 μC, iki küre için −10 μC toplam verir; başlangıçtaki +6 μC korunmaz.",
+        "+2 μC, iki küre toplamını +4 μC yapar; 2 μC yük eksik kalır.",
+        "+3 μC, +6 μC toplamın iki özdeş küreye eşit paylaşımıdır.",
+        "+5 μC, (8+2)/2 hesabıdır; başlangıçtaki −2 μC’nin eksi işaretini atlar.",
+        "+6 μC korunmuş toplamdır; bunu her küreye vermek toplamı +12 μC’ye çıkarır."
+      ],
+      "commonError": "İki yükün mutlak büyüklüklerini toplamak veya toplamı bulunca her küreye bölmeden yazmak.",
+      "check": "İki son yükü topla: 3+3=6 μC. Bir kürenin değişimi 3−8=−5 μC, diğerininki 3−(−2)=+5 μC; değişimler birbirini dengeler."
+    }
+  },
+  {
+    "id": "durgun-elektrik-q4",
+    "identity": "[\"durgun-elektrik-q4\",\"Pozitif yüklü bir çubuk, yalıtkan ayaktaki nötr metal küreye dokunmadan yaklaştırılıyor; toprak bağlantısı yok. Hangisi doğrudur?\",\"\",[\"Küre içindeki bütün yükler yok olur\",\"Kürenin her bölgesinde alan daima dışarıdakiyle aynıdır\",\"Kürenin toplam yükü mutlaka pozitif olur\",\"Elektronlar çubuğa yakın bölgeye kayabilir, toplam küre yükü 0 kalır\",\"Protonlar metalden çubuğa atlar\"],3,\"Pozitif çubuk metalin elektronlarını yakın tarafa çeker; uzak bölgede elektron eksikliği olur. Dışarıyla alışveriş olmadığı için toplam net yük 0 kalır. Katı protonların aktarılması veya yüklerin yok olması gerekmez; elektrostatik dengede iletken malzemenin iç alanı sıfır olur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Metalde elektronlar yeniden dağılabilir; bu dağılım değişikliği net yük aktarımıyla aynı şey değildir. Yalıtkan destek ve temas/toprak hattının bulunmaması, kürenin dışarıyla yük alışverişini engeller."
+      ],
+      "strategy": "Çubuğun elektronlara uyguladığı etkiyi, kürenin bütünündeki yük korunumu hesabından ayır. Yakın ve uzak bölgeleri ayrı düşün.",
+      "steps": [
+        "Pozitif çubuk, metal içindeki negatif elektronları kendisine yakın tarafa çeker.",
+        "Uzak tarafta elektron eksikliği oluşur; yakın taraftaki fazlalıkla birlikte toplam elektron sayısı değişmez.",
+        "Bu nedenle kürede yük ayrışması olurken toplam yük 0 kalır; yakın bölgeye elektron kaymasıyla birlikte bu sonucu seç."
+      ],
+      "optionReasons": [
+        "Yükler yok olmaz; pozitif ve negatif yüklerin yerleşimi değişir.",
+        "Dış alanın her bölgede aynen kalması, iletkende yeniden dağılan yüklerin alan katkısını yok sayar; dengede metal içindeki net alan sıfırdır.",
+        "Kürenin toplam pozitifleşmesi elektron kaybı ister; soruda dışarıya aktarım yolu yoktur.",
+        "Elektronların yakın bölgeye kayması ve toplamın sıfır kalması etki altında ayrışmanın birlikte sonuçlarıdır.",
+        "Olağan metal elektriklenmesinde protonlar çekirdeklerden çubuğa atlamaz; temas da verilmemiştir."
+      ],
+      "commonError": "Kürenin bir bölgesinin pozitif olmasını, bütün kürenin net pozitif yüklendiği şeklinde okumak.",
+      "check": "Küreyi çevreleyen sistem sınırından hiç yük geçmez. Bölgesel artı ve eksilerin işaretli toplamının sıfır kalması bu kapalı bütçeyi doğrular."
+    }
+  },
+  {
+    "id": "durgun-elektrik-q5",
+    "identity": "[\"durgun-elektrik-q5\",\"Pozitif çubuk nötr iletkene yaklaştırılıyor; iletken topraklanıyor. Çubuk dururken toprak bağlantısı kesiliyor, sonra çubuk uzaklaştırılıyor. İdeal etkiyle elektriklenmede iletkenin son işareti?\",\"\",[\"Negatif\",\"Her zaman 0\",\"Hem+hem−olduğu için işareti tanımsız\",\"Proton eksiği nedeniyle negatif\",\"Pozitif\"],0,\"Pozitif çubuğun etkisiyle topraktan elektronlar gelebilir. Önce toprak kesildiği için bu fazla elektronlar iletkende kalır; çubuk uzaklaşınca iletken negatif yüklü kalır. Sonuç proton eksiğinden değil elektron fazlalığındandır. Toprak bağlıyken çubuğu önce uzaklaştırmak aynı protokol değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Etkiyle kalıcı elektriklenmede dış yük, toprak bağlantısı ve bunların kaldırılma sırası birlikte önemlidir. Toprak hattı elektron alışverişine izin verir; hat kesilince iletken yeniden dışarıdan yalıtılmış olur."
+      ],
+      "strategy": "Dört işlemi sırayla listele. Önce dış çubuğun hangi elektron hareketini desteklediğini, sonra hat kesildiğinde hangi net yükün içeride kalacağını belirle.",
+      "steps": [
+        "Pozitif çubuk yakındayken iletken topraklanır; Dünya’dan iletkene elektron gelebilir.",
+        "Çubuk hâlâ yerindeyken toprak bağlantısı kesilir. Gelen fazla elektronlar artık aynı hat üzerinden geri dönemez.",
+        "Çubuk uzaklaşınca yükler iletkende yeniden dağılır, fakat elektron fazlası kalır; son net yük negatiftir."
+      ],
+      "optionReasons": [
+        "Negatif son yük, topraklama sırasında kazanılan elektron fazlasının korunmasıdır.",
+        "Her zaman nötrlük, çubuk dururken toprağın önce kesilmesiyle kalan net yükü atlar.",
+        "Bölgesel artı/eksi bulunması net yükün işaretini tanımsız yapmaz; işaretli toplam elektron fazlasıyla belirlenir.",
+        "Proton eksiği negatiflik üretmez; burada proton sayısı değişmez, negatiflik elektron fazlasındandır.",
+        "Pozitif son yük, pozitif çubukla yapılan bu etki–topraklama protokolündeki elektron hareketinin tersini gerektirir."
+      ],
+      "commonError": "Çubuğu önce uzaklaştırıp toprağı sonra kesmekle verilen sırayı aynı sonuçlu sanmak.",
+      "check": "Elektronlar Dünya’dan geldiyse iletken negatif, Dünya’daki değişim pozitif olur. İletken+Dünya toplamında yük üretilmez."
+    }
+  },
+  {
+    "id": "durgun-elektrik-q6",
+    "identity": "[\"durgun-elektrik-q6\",\"Başlangıçta nötr elektroskoba yüklü bir cisim dokundurulmadan yaklaştırılınca yapraklar açılıyor. Yalnız bu gözlem neyi kesin belirleyemez?\",\"\",[\"Elektroskobun başlangıçta nötr olduğunu\",\"Cismin net yük işaretini\",\"Elektroskopta yüklerin yeniden dağılabileceğini\",\"Yapraklar arasındaki elektriksel itmenin mümkün olduğunu\",\"Etki ile elektriklenmenin rol oynayabildiğini\"],1,\"Pozitif cisimde elektronlar topuza, negatif cisimde yapraklara kayabilir; iki durumda da yapraklar aynı işaretle yüklenip açılabilir. Bu nedenle tek açılma gözlemi dış cismin+veya−olduğunu belirlemez. İşareti karşılaştırmak için yükü bilinen elektroskop ve kontrollü protokol gerekir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Elektroskop yaprakları birbirleriyle aynı işarette yüklenirse itişerek açılır. Yüklerin yeniden dağılımında topuz ile yaprakların işaretleri farklı olabilir; açılma, yaprakların hangi ortak işareti taşıdığını tek başına söylemez."
+      ],
+      "strategy": "Gözlemi hem pozitif hem negatif dış cisim için ayrı düşün. İki ayrı işaret aynı gözlemi veriyorsa bu gözlemden hangisinin ayırt edilemeyeceğini bul.",
+      "steps": [
+        "Pozitif dış cisim elektronları topuza çekerse yapraklarda elektron eksikliği ve aynı işaretli yüklenme oluşabilir.",
+        "Negatif dış cisim elektronları yapraklara iterse yapraklar bu kez negatif olabilir; yine birbirlerini iterler.",
+        "İki dış yük işareti de açılmayı sağlayabildiğinden yalnız bu gözlem cismin net yük işaretini kesin belirlemez."
+      ],
+      "optionReasons": [
+        "Başlangıçta nötr olma zaten soruda açık veridir; gözlemden çıkarılması gereken belirsiz bilgi değildir.",
+        "Net yük işareti kesin belirlenemez; hem + hem − dış cisim aynı açılma gözlemini üretebilir.",
+        "Yüklerin yeniden dağılabilmesi, temas olmadan açılmanın etkiyle açıklanmasına uygundur.",
+        "Yapraklar arasında itmenin mümkün oluşu açılma ile uyumludur; bunu dışlayan bir gözlem yoktur.",
+        "Etkiyle elektriklenmenin rol oynayabilmesi, dokunmadan yaklaştırma ve yük ayrışmasıyla uyumludur."
+      ],
+      "commonError": "Açılan yaprakların mutlaka pozitif olduğunu varsayıp dış cismin işaretini tek deneyle etiketlemek.",
+      "check": "Bilinen pozitif ve bilinen negatif çubuğun nötr elektroskoba ayrı ayrı yaklaşmasını düşün: her ikisinde açılma mümkündür. Bu karşı örnek işaret çıkarımını reddeder."
+    }
+  },
+  {
+    "id": "durgun-elektrik-q7",
+    "identity": "[\"durgun-elektrik-q7\",\"Noktasal iki yükün arası r’den 2r’ye çıkarılıyor. Yükler ve ortam değişmiyor. Coulomb kuvvet büyüklüğünün yeni/eski oranı?\",\"\",[\"1\",\"1/2\",\"1/4\",\"4\",\"2\"],2,\"F=k|q1q2|/r²;2r için payda 4r² olur. Dolayısıyla Fyeni/Feski=1/4. Yarıya düşme ters uzaklık bağıntısına ait olurdu. İşaretler değişmediği için çekme/itme türü bu uzaklık değişimiyle tersine dönmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Noktasal yüklerin Coulomb kuvvetinin büyüklüğü F=k|q₁q₂|/r²’dir. Yükler ve ortam sabitse yalnız uzaklık çarpanı değişir; kuvvetin türü ise yüklerin işaretleriyle belirlenir."
+      ],
+      "strategy": "Yeni ve eski kuvvetleri bir oran içinde yaz; ortak k ve yük çarpanını sadeleştirip uzaklığın karesini dikkatle uygula.",
+      "steps": [
+        "İlk büyüklük F₁=k|q₁q₂|/r², yeni büyüklük F₂=k|q₁q₂|/(2r)² olur.",
+        "(2r)²=4r² olduğundan F₂’nin paydası ilk paydanın dört katıdır.",
+        "F₂/F₁=r²/(4r²)=1/4. Uzaklaşınca kuvvetin küçüldüğünü de kontrol et."
+      ],
+      "optionReasons": [
+        "1, uzaklık değişimini tamamen yok sayar.",
+        "1/2, Coulomb kuvvetini yanlışlıkla 1/r ile değişiyormuş gibi alır.",
+        "1/4, iki kat uzaklığın kare nedeniyle dört kat payda üretmesidir.",
+        "4, paydanın dört kat artmasını kuvvetin dört kat artışı sanır.",
+        "2, hem ters orantıyı hem uzaklığın karesini kaçırır."
+      ],
+      "commonError": "Uzaklığı iki katına çıkarmanın kuvveti ikiye böleceğini söylemek; bu geometride ters kare ilişkisi vardır.",
+      "check": "F₁r² ile F₂(2r)² aynı k|q₁q₂| değerini vermelidir. F₂=F₁/4 bu sabit çarpımı korur."
+    }
+  },
+  {
+    "id": "durgun-elektrik-q8",
+    "identity": "[\"durgun-elektrik-q8\",\"Havada+1 μC ve−2 μC noktasal yüklerin arası 0,30 m. k=9×10⁹ N·m²/C². Kuvvet büyüklüğü ve türü?\",\"\",[\"0,2 N çekme\",\"0,2 N itme\",\"2 N çekme\",\"20 N itme\",\"0 N\"],0,\"F=9×10⁹·2×10⁻¹²/0,09=0,2 N. Zıt işaretler nedeniyle çekmedir. Her iki cisme etki eden kuvvetler eşit büyüklükte ve zıt yöndedir; büyük yüklü cisim diğerine daha büyük kuvvet uygulamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Coulomb hesabında yükler coulomb, uzaklık metre olmalıdır. Kuvvet büyüklüğünde yüklerin mutlak çarpımı alınır; çekme veya itme kararı ayrı olarak işaretlerden verilir."
+      ],
+      "strategy": "İki mikro dönüşümünü birlikte yaz, uzaklığın karesine böl. Sayısal büyüklük tamamlanınca iki yük işaretinin etkileşimini ekle.",
+      "steps": [
+        "|q₁q₂|=(1×10⁻⁶)(2×10⁻⁶)=2×10⁻¹² C² ve r²=0,30²=0,09 m²’dir.",
+        "F=(9×10⁹)(2×10⁻¹²)/0,09=0,018/0,09=0,2 N bul.",
+        "Yükler + ve − olduğundan birbirine doğru kuvvet uygular; büyüklük 0,2 N, tür çekmedir."
+      ],
+      "optionReasons": [
+        "0,2 N çekme hem SI birimli hesabı hem zıt işaretlerin etkileşimini karşılar.",
+        "0,2 N itme sayısal büyüklüğü doğru tutar fakat zıt yüklerin yönünü ters yorumlar.",
+        "2 N çekme yönü doğru tutar, fakat kuvveti bir ondalık basamak büyük hesaplar.",
+        "20 N itme hem büyüklüğü yüz kat artırır hem etkileşim yönünü ters verir.",
+        "0 N, iki sıfırdan farklı yükü zıt işaretli oldukları için birbirini kuvvetsiz bırakıyor sanır."
+      ],
+      "commonError": "Kuvvet büyüklüğüne eksi işaret koymak veya iki farklı cisme uygulanan zıt kuvvetleri aynı cisimde birbirini götürüyor sanmak.",
+      "check": "0,2×0,09=0,018 N·m², k|q₁q₂| çarpımını geri verir. Yüklerin farklı büyüklükte olması etki–tepki kuvvetlerinin eşitliğini bozmaz."
+    }
+  },
+  {
+    "id": "durgun-elektrik-q9",
+    "identity": "[\"durgun-elektrik-q9\",\"Bir noktada kaynakların oluşturduğu elektrik alan sağa yönlüdür. O noktaya konan küçük negatif deneme yüküne elektriksel kuvvet hangi yöndedir?\",\"\",[\"Daima aşağı\",\"Yük ne olursa olsun 0\",\"Sağa\",\"Sola\",\"Daima yukarı\"],3,\"Negatif q için F, E’ye ters yöndedir; bu nedenle sola olur. Alanın sağa olması pozitif deneme yüküne göre tanımlanmıştır. Negatif deneme yükü alan yönünü değiştirmez; yalnız ona etki eden kuvvetin yönü ters olur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Elektrik alanın yönü pozitif deneme yüküyle tanımlanır. Herhangi bir deneme yükünün kuvveti F=qE ile bulunur; skaler q’nun işareti vektörü aynı yönde bırakır veya ters çevirir."
+      ],
+      "strategy": "Alan okunu kaynakların özelliği olarak sabit tut. Deneme yükünün işaretini yalnız F=qE ile kuvvet okunu oluştururken kullan.",
+      "steps": [
+        "Verilen E oku sağadır; bu, pozitif küçük deneme yükünün kuvvet yönünü tanımlar.",
+        "Sorudaki deneme yükü negatiftir: q=−|q| yazılınca F=−|q|E olur.",
+        "Negatif çarpan sağa yönlü vektörü tersine çevirir; elektriksel kuvvet sola yönelir."
+      ],
+      "optionReasons": [
+        "Daima aşağı sonucu, sağa verilen alanla kuvveti açıklayacak bir qE yönü sağlamaz.",
+        "Yük ne olursa olsun sıfır değildir; sıfırdan farklı yük ve alan elektriksel kuvvet oluşturur.",
+        "Sağa, pozitif deneme yükü için uygun olurdu; negatif q’nun etkisini atlar.",
+        "Sola, sağa alanın negatif yükle çarpılmasının verdiği ters yöndür.",
+        "Daima yukarı, kuvveti alan doğrultusuna dik seçer; skaler yükle çarpım böyle bir dönüş vermez."
+      ],
+      "commonError": "Negatif yük kullanıldı diye kaynakların elektrik alan yönünü değiştirmek; değişen, bu deneme yüküne etkiyen kuvvetin yönüdür.",
+      "check": "Sağı pozitif x seç: Ex>0 ve q<0 için Fx=qEx<0 olur. Bileşen işareti de sola sonucunu verir."
+    }
+  },
+  {
+    "id": "durgun-elektrik-q10",
+    "identity": "[\"durgun-elektrik-q10\",\"Dış etkileyen yük bulunmayan, negatif yüklü izole metal küre Dünya’ya iletken telle bağlanıyor. Basit topraklama modelinde nötrleşirken hangi aktarım olur?\",\"\",[\"Elektronlar küreden Dünya’ya gider\",\"Elektronlar Dünya’dan küreye gelir\",\"Nötronlar pozitife dönüşür\",\"Toplam yük küre+Dünya için yok olur\",\"Protonlar küreden Dünya’ya gider\"],0,\"Kürenin fazla elektronları Dünya’ya aktarılabilir ve küre nötrleşir. Toplam yük küre+Dünya birlikte ele alındığında korunur. Pozitif protonların metal içinde yer değiştirmesi gerekmez. Dış etkileyen yük varken her topraklanan cismin net yükü 0 olacak genellemesi yapılmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Negatif net yük olağan metalde elektron fazlasını gösterir. Toprak bağlantısı metal ile Dünya arasında elektron geçiş yolu oluşturur; korunum hesabı bu ikisini birlikte kapsayınca sürer."
+      ],
+      "strategy": "Önce küredeki dengesizliğin hangi taşıyıcı fazlası olduğunu belirle. Nötrleşme için bu fazlanın artması mı azalması mı gerektiğini düşün.",
+      "steps": [
+        "Küre negatif olduğundan elektron sayısı nötr duruma göre fazladır; protonlar çekirdeklerde kalır.",
+        "Nötrleşme, bu elektron fazlasının azalmasını gerektirir. Bağlanan Dünya elektronların aktarılabileceği büyük bir ortamdır.",
+        "Elektronlar küreden Dünya’ya gider; kürenin yükü sıfıra yaklaşırken bütün küre+Dünya yükü korunur."
+      ],
+      "optionReasons": [
+        "Elektronların küreden Dünya’ya gitmesi, negatif kürenin elektron fazlasını azaltır.",
+        "Dünya’dan küreye elektron gelmesi, negatif fazlayı azaltmak yerine büyütürdü.",
+        "Nötronun pozitife dönüşmesi olağan topraklama mekanizması değildir; çekirdekte dönüşüm gerekmez.",
+        "Küre+Dünya toplam yükü yok olmaz; elektronların iki sistem arasındaki yeri değişir.",
+        "Protonlar metal içindeki olağan iletimde toprak teli boyunca taşınan taşıyıcı değildir."
+      ],
+      "commonError": "Topraklamayı yükün yok edilmesi diye yorumlamak veya yakında etkileyen yük bulunan başka protokollere de mutlaka nötrlük sonucu dayatmak.",
+      "check": "Kürenin yükü negatiften sıfıra giderken değişimi pozitiftir; Dünya aynı miktarda negatif yük kazanır. İki değişimin toplamı sıfırdır."
+    }
+  },
+  {
+    "id": "elektrik-akimi-q1",
+    "identity": "[\"elektrik-akimi-q1\",\"Bir kesitten 8 saniyede 24 C yönlü yük geçiyor. Ortalama akım kaç A?\",\"\",[\"192\",\"1/3\",\"2\",\"3\",\"8\"],3,\"I=q/t=24/8=3 A. Akım yükün zamana oranıdır; q·t değildir. C/s amper birimi verir. Bu24 C’nin devrede tüketildiği anlamına gelmez; seçilen kesitten geçen yük miktarıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ortalama akım, seçilen kesitten geçen yönlü yük miktarının geçen süreye oranıdır: Iort=Δq/Δt. Coulomb yük birimi, amper ise coulomb/saniyedir; kesitten geçen yük, tüketilen enerjiyle aynı nicelik değildir."
+      ],
+      "strategy": "Verilen yükün bütün zaman aralığına ait olduğunu işaretle. Bu miktarı bir saniyeye düşecek paya bölüştür.",
+      "steps": [
+        "Kesitten geçen toplam yük 24 C, buna karşılık gelen zaman aralığı 8 s’dir.",
+        "Iort=24 C/8 s yaz; C/s birimi amperi verir.",
+        "24/8=3 olduğundan ortalama akım 3 A’dır. Yükü süreyle çarpma değil süreye bölme işlemi gerekir."
+      ],
+      "optionReasons": [
+        "192, 24×8 çarpımıdır; birimi C·s olur, akım değildir.",
+        "1/3, süre/yük oranı 8/24’tür; saniye/coulomb amperin tersidir.",
+        "2 A olsaydı 8 saniyede yalnız 16 C geçerdi; verilen 24 C’ye yetmez.",
+        "3 A, her saniyeye ortalama 3 C düşmesiyle 8 saniyede 24 C geçmesini sağlar.",
+        "8, sürenin sayısal değerini akım yerine yazar; yük bilgisi kullanılmaz."
+      ],
+      "commonError": "24 C’yi her saniye geçen yükmüş gibi görmek; soru bu yükü toplam 8 saniyeye ait veriyor.",
+      "check": "Ortalama akımı süreyle geri çarp: 3 A×8 s=24 C. Bu denetim yük miktarını tam olarak geri verir."
+    }
+  },
+  {
+    "id": "elektrik-akimi-q2",
+    "identity": "[\"elektrik-akimi-q2\",\"Basit pilin kapalı dış metal devresinde konvansiyonel akımın+uçtan−uca olduğu veriliyor. Elektron sürüklenmesi hangi yöndedir?\",\"\",[\"Her zaman akıma diktir\",\"Elektronlar hiç hareket etmez\",\"Protonlar akımla birlikte teli dolaşır\",\"+uçtan−uca\",\"−uçtan+uca\"],4,\"Elektronlar negatif taşıyıcıdır; sürüklenme yönleri konvansiyonel akıma terstir, dış devrede−uçtan+uca giderler. Katı çekirdek protonlarının devreyi dolaştığı varsayılmaz. Düzensiz ısıl hareket ise yönlü sürüklenmeden ayrıca vardır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Konvansiyonel akım yönü pozitif yüklerin hareket yönüne göre tanımlanır. Metalde yönlü sürüklenmeyi taşıyan elektronlar negatif yüklüdür; rastgele ısıl hareketleri bu net sürüklenmeye eklenir."
+      ],
+      "strategy": "Sorunun dış metal devreyi tarif ettiğini koru. Akım okunu çizdikten sonra negatif taşıyıcının sürüklenme okunu ondan çıkar.",
+      "steps": [
+        "Konvansiyonel akım soruda dış devre için + uçtan − uca verilmiştir.",
+        "Elektron negatif olduğundan sürüklenmesi aynı akım katkısını ters hareket yönüyle oluşturur.",
+        "Elektron oku − uçtan + uca gider; bu, devredeki düzensiz ısıl hareketin yok olduğu anlamına gelmez."
+      ],
+      "optionReasons": [
+        "Her zaman dik hareket, negatif yük taşıyıcısıyla akım arasındaki işaret ilişkisi değildir.",
+        "Elektronların hiç hareket etmemesi metalde verilen yönlü yük aktarımını açıklayamaz.",
+        "Katı telde çekirdek protonları devre boyunca dolaşan serbest taşıyıcılar değildir.",
+        "+ uçtan − uca, verilen konvansiyonel akımın yönüdür; metal elektronlarının sürüklenmesini ters almamıştır.",
+        "− uçtan + uca, negatif taşıyıcıların dış metal devrede konvansiyonel akıma ters sürüklenmesidir."
+      ],
+      "commonError": "Akım okunu doğrudan elektron oku kabul etmek veya aynı kuralı bütün iyonik ortamlara taşıyıcıları ayırmadan uygulamak.",
+      "check": "Bir kesitten elektron −→+ yönünde geçerse aynı akım işareti, pozitif yükün +→− geçmesiyle oluşur. Tanımdaki yön eşdeğerliği sağlanır."
+    }
+  },
+  {
+    "id": "elektrik-akimi-q3",
+    "identity": "[\"elektrik-akimi-q3\",\"Sıcaklığı sabit ohmik 4 Ω direnç ideal 12 V kaynağa bağlanıyor. Dirençten geçen akım?\",\"\",[\"1/3 A\",\"2 A\",\"3 A\",\"4 A\",\"48 A\"],2,\"I=V/R=12/4=3 A.12·4 işlemi akım vermez; V/Ω amperdir. Direncin sabit olması bu soruda sıcaklık ve ohmik koşulla açıkça sağlanmıştır; gerçek ısınan her ampule aynı sabit R varsayımı yüklenmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ohmik bir elemanda sıcaklık ve fiziksel koşullar sabitken gerilim ile akım V=IR bağıntısını izler. Ohm birimi volt/amper olduğundan V/R işleminin birimi amperdir."
+      ],
+      "strategy": "Kaynağın direnç uçlarına uyguladığı gerilimi belirleyip Ohm bağıntısını akım için düzenle; çarpma ve bölmenin birimlerini karşılaştır.",
+      "steps": [
+        "İdeal kaynak direnç uçlarında 12 V sağlar; direnç 4 Ω ve sabittir.",
+        "V=IR eşitliğini I=V/R olarak çöz: I=12/4 A.",
+        "Akım 3 A’dır. 4 Ω×3 A=12 V eşitliğiyle verilen gerilime geri dön."
+      ],
+      "optionReasons": [
+        "1/3 A, R/V=4/12 ters oranının sayısal değeridir; akım bağıntısı V/R olmalıdır.",
+        "2 A, 4 Ω üzerinde yalnız 8 V gerektirir; kaynak gerilimi 12 V’tur.",
+        "3 A, 12 V/4 Ω oranı ve Ohm yasasının geri çarpımıyla uyumludur.",
+        "4 A, direnç değerini akım yerine koyar; bu akım 16 V gerektirirdi.",
+        "48 A, 12×4 çarpımıdır; V·Ω birimi akım vermez."
+      ],
+      "commonError": "Ohmik ve sabit sıcaklık koşulunu unutup gerilim arttığı için bu soruda R de artar diye yeni bir değişken eklemek.",
+      "check": "Güç de tutarlı olmalı: VI=12×3=36 W ile I²R=9×4=36 W aynı enerji dönüşüm hızını verir."
+    }
+  },
+  {
+    "id": "elektrik-akimi-q4",
+    "identity": "[\"elektrik-akimi-q4\",\"Düşey V, yatay I grafiği orijinden geçen doğru. V=10 V iken I=2 A ölçülüyor; koşullar sabit ve eleman ohmik. Direnç kaç Ω?\",\"\",[\"10\",\"20\",\"0,2\",\"2\",\"5\"],4,\"R=V/I=10/2=5 Ω. Grafiğin doğrusal ve koşulların sabit olduğu verildiğinden eğim sabit direnci gösterir.0,2, eksenler I–V olsaydı elde edilen iletkenlik eğimidir; direnç diye kullanılamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir grafiğin eğimi düşey değişimin yatay değişime oranıdır. Ohmik elemanda orijinden geçen V–I doğrusunda ΔV/ΔI direnç, eksenler ters çevrilirse ΔI/ΔV iletkenlik verir."
+      ],
+      "strategy": "Önce eksen adlarını yaz. Orijin ve verilen noktadan düşey farkı yatay farka bölerek eğimin birimini belirle.",
+      "steps": [
+        "Düşey eksen V, yatay eksen I olduğundan eğim (10−0)/(2−0) V/A’dır.",
+        "V/A=Ω ve doğru orijinden geçtiğinden bu eğim R=V/I’ye eşittir.",
+        "R=10/2=5 Ω. Verilen ohmik koşul bu değerin doğru boyunca sabit kalmasını sağlar."
+      ],
+      "optionReasons": [
+        "10, tek başına gerilim değeridir; 2 A’ya bölme yapılmamıştır.",
+        "20, V ile I’nin çarpımıdır ve bu noktada güç verir; direnç değildir.",
+        "0,2, I/V=2/10 iletkenlik değeridir; verilen V–I eksenlerinin eğimi değildir.",
+        "2, akım koordinatını direnç sanır; birimi amperdir.",
+        "5 Ω, orijin ve ölçüm noktası arasında ΔV/ΔI eğimidir."
+      ],
+      "commonError": "Grafiğin ismini alışkanlıkla okuyup yatay ve düşey eksenleri kontrol etmeden eğimi ters almak.",
+      "check": "5 Ω değeriyle 2 A için V=IR=10 V geri bulunur. Eğim değişmediğinden aynı doğru üzerindeki 1 A noktası 5 V olurdu."
+    }
+  },
+  {
+    "id": "elektrik-akimi-q5",
+    "identity": "[\"elektrik-akimi-q5\",\"Aynı malzemeden dairesel kesitli iki telin boyları ve sıcaklıkları aynı. Y’nin çapı X’in iki katı. RY/RX nedir?\",\"\",[\"2\",\"1\",\"1/2\",\"1/4\",\"4\"],3,\"Çap 2 kat olduğunda A4 kat olur. R=ρL/A bağıntısında ρ ve L aynı olduğundan RY/RX=1/4. Kesit alanını çapla aynı değişen nicelik sayıp 1/2 almak kare ilişkiyi kaçırır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Homojen telde R=ρL/A’dır. Dairesel kesitte A=πd²/4 olduğundan çap oranı önce karesini alarak alan oranına dönüştürülür; aynı malzeme ve sıcaklık özdirenci ortak yapar."
+      ],
+      "strategy": "ρ ve L’nin aynı kaldığını sadeleştir. Önce kesit alanlarını oranla, sonra direnç oranında alanların ters sıraya geçtiğini göster.",
+      "steps": [
+        "dY=2dX ise AY/AX=(dY/dX)²=4 olur; alan çapla doğrusal değişmez.",
+        "RY/RX=(ρL/AY)/(ρL/AX)=AX/AY yaz.",
+        "Alan oranının tersi alınınca RY/RX=1/4 çıkar; kalın tel daha küçük dirençlidir."
+      ],
+      "optionReasons": [
+        "2, çap oranını direnç oranı sanır ve geniş kesitin direnç azaltmasını ters yönde verir.",
+        "1, kesit alanındaki değişimin dirence etkisini tamamen yok sayar.",
+        "1/2, çapı iki kat alınca alanı da iki kat sanarak kareyi atlar.",
+        "1/4, dört kat kesit alanının aynı ρ ve L için direnci dörtte bire indirmesidir.",
+        "4, alanın dört katına çıktığını bulsa da R’nin alanla ters orantısını ters çevirir."
+      ],
+      "commonError": "R bağıntısındaki A’yı çap gibi kullanmak; A alan olduğu için uzunluk oranının karesi gerekir.",
+      "check": "R×A=ρL iki telde aynıdır. AY=4AX iken RY=RX/4 seçilirse çarpımlar eşit kalır."
+    }
+  },
+  {
+    "id": "elektrik-akimi-q6",
+    "identity": "[\"elektrik-akimi-q6\",\"İdeal 18 V kaynağa 3 Ω ve 6 Ω ohmik direnç seri bağlanıyor. Akım ve 3 Ω üzerindeki gerilim sırasıyla?\",\"\",[\"1 A ve 3 V\",\"2 A ve 6 V\",\"2 A ve 9 V\",\"3 A ve 9 V\",\"6 A ve 18 V\"],1,\"Reş=3+6=9 Ω ve I=18/9=2 A.3 Ω üzerindeki gerilim V=2·3=6 V; öteki dirençte 12 V vardır ve toplam 18 V olur. Eşit gerilim paylaşımı yalnız eşit seri dirençlerde geçerli olurdu.\"]",
+    "guidance": {
+      "knowledge": [
+        "Seri dirençler dallanmasız tek akım yolunu paylaşır. Bu yüzden akımları eşit, gerilim düşüşleri Vi=IRi ve toplam dirençleri dirençler toplamıdır; kaynak gerilimi bütün düşüşlerin toplamıdır."
+      ],
+      "strategy": "Önce kaynağın gördüğü toplam direnci bul. Tek ortak akımdan sonra yalnız sorulan 3 Ω direnç üzerindeki gerilimi hesapla.",
+      "steps": [
+        "Seri eşdeğer 3+6=9 Ω’dur; 18 V bütün bu eşdeğere uygulanır.",
+        "Ortak akım I=18/9=2 A olur; 3 Ω üzerinden de aynı akım geçer.",
+        "3 Ω gerilimi V₃=2×3=6 V’tur. Akım–gerilim çifti 2 A ve 6 V seçilir."
+      ],
+      "optionReasons": [
+        "1 A ve 3 V kendi içinde V₃=IR₃ koşulunu sağlar ama seri toplamda yalnız 9 V düşürür; kaynak 18 V’tur.",
+        "2 A ve 6 V hem toplam direnç hesabını hem 3 Ω üzerindeki Ohm yasasını sağlar.",
+        "2 A ve 9 V, farklı seri dirençlere gerilimi eşit paylaştırır; 2 A×3 Ω yalnız 6 V’tur.",
+        "3 A ve 9 V, 3 Ω için tutarlı olsa da toplamda 27 V gerektirir; verilen kaynakla uyuşmaz.",
+        "6 A ve 18 V, 3 Ω’u kaynakta tek başına varmış gibi kullanır; seri 6 Ω’u atlar."
+      ],
+      "commonError": "İki direnç bulunmasını eşit gerilim paylaşımı için yeterli sanmak; eşit gerilim ancak bu seri dirençler eşitse olur.",
+      "check": "Öteki dirençte 2×6=12 V düşer. İki düşüşün toplamı 6+12=18 V olduğundan çevrim enerji bütçesi kapanır."
+    }
+  },
+  {
+    "id": "elektrik-akimi-q7",
+    "identity": "[\"elektrik-akimi-q7\",\"İdeal 12 V kaynağa 6 Ω ve 3 Ω direnç paralel bağlanıyor. Ana kol akımı kaç A?\",\"\",[\"3\",\"4\",\"6\",\"1\",\"2\"],2,\"6 Ω koldan 2 A,3 Ω koldan 4 A geçer. Düğümde toplam akım 6 A’dır.2 veya 4 yalnız bir kolun akımıdır. Reş=2 Ω ve 12/2=6 A kontrolü de aynı sonucu verir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Paralel kolların uçları aynı iki düğüme bağlıdır; her biri aynı kaynak gerilimini görür. Ana koldaki akım, düğümde bütün kol akımlarının toplamıdır; eşit gerilim eşit akım zorunluluğu getirmez."
+      ],
+      "strategy": "İki kola ayrı Ohm hesabı yap ve bulduğun akımları yalnız ana kol için topla. Direnç değerleri farklı olduğundan otomatik eşit paylaştırma yapma.",
+      "steps": [
+        "6 Ω kolun akımı I₆=12/6=2 A’dır; kaynak gerilimi bu kolda da 12 V’tur.",
+        "3 Ω kolun akımı I₃=12/3=4 A’dır; daha küçük direnç daha büyük akım taşır.",
+        "Ana kol akımı Iana=2+4=6 A olur. Düğümde giren yük aktarım hızı iki kola ayrılır."
+      ],
+      "optionReasons": [
+        "3 A, iki kol akımının ortalamasıdır; ana akım için ortalama değil toplam gerekir.",
+        "4 A yalnız 3 Ω kolunun akımıdır; 6 Ω koluna giden 2 A eksiktir.",
+        "6 A, paralel kollardaki 2 A ve 4 A’nın toplamıdır.",
+        "1 A, bu gerilimde iki pozitif kolun her birinden bile küçüktür; toplam akım olamaz.",
+        "2 A yalnız 6 Ω kolunun akımıdır; diğer kolu dışarıda bırakır."
+      ],
+      "commonError": "Paralel dirençleri seri gibi toplayıp 12/9 almak veya kaynak akımını iki kola eşit bölmek.",
+      "check": "1/Reş=1/6+1/3=1/2 olduğundan Reş=2 Ω ve 12/2=6 A’dır. Eşdeğerin en küçük kol direncinden küçük olması da uygundur."
+    }
+  },
+  {
+    "id": "elektrik-akimi-q8",
+    "identity": "[\"elektrik-akimi-q8\",\"İdeal ölçü aletleriyle bir direncin akımı ve uç gerilimi ölçülecek. Doğru bağlantı hangisi?\",\"\",[\"Ampermetre paralel, voltmetre seri\",\"İkisi seri\",\"İkisi paralel\",\"Ampermetre seri, voltmetre paralel\",\"İkisi kaynak yerine çıkarılır\"],3,\"Ampermetre seri bağlanır ve ideal direnci 0’dır; voltmetre iki uca paralel bağlanır ve ideal direnci sonsuzdur. Ampermetreyi paralel bağlamak kısa devre, voltmetreyi tek seri yola koymak devreyi açma etkisi yaratabilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Akım bir koldan geçen yük akışını, uç gerilimi iki nokta arasındaki yük başına enerji farkını ölçer. Ölçü aletinin ideal direnci, ölçülen devreyi mümkün olduğunca değiştirmeyecek biçimde seçilir."
+      ],
+      "strategy": "Akımın hangi yoldan geçeceğini ve gerilimin hangi iki nokta arasında okunacağını ayrı çiz. Aletin ideal direncini bu bağlantı üzerinde sınayarak seç.",
+      "steps": [
+        "Direncin akımının aynısını ölçmek için ampermetreyi o akım yoluna yerleştir; seri bağlanan ideal ampermetrenin direnci 0’dır.",
+        "Gerilim için direncin iki ucunu voltmetrenin iki ucuna bağla; bu paralel bağlantıdır, ideal voltmetre akım çekmez.",
+        "Doğru ikili ampermetre seri, voltmetre paraleldir; hem akım yolu hem iki uç koşulu birlikte sağlanır."
+      ],
+      "optionReasons": [
+        "Ampermetreyi paralel bağlamak kısa devre yolu açabilir; voltmetreyi seri koymak akım yolunu keser.",
+        "İkisinin seri olması voltmetrenin sonsuz ideal direncini tek akım yoluna sokar; devrenin akımı kesilir.",
+        "İkisinin paralel olması ideal ampermetrenin sıfır dirençli ek yoluyla elemanı kısa devre edebilir.",
+        "Ampermetre seri, voltmetre paralel; ölçülen akımı ve iki nokta farkını doğru konumlarda örnekler.",
+        "Kaynağı çıkarıp aletleri onun yerine koymak, özgün çalışma devresindeki akım ve gerilimi ölçmez."
+      ],
+      "commonError": "Aletleri yalnız şekil üzerindeki yakınlıklarına göre yerleştirmek; akımın geçtiği kol ve gerilimin iki düğümü belirleyicidir.",
+      "check": "Doğru bağlantıda ideal ampermetreye ek gerilim düşmez, ideal voltmetreden ek akım çekilmez. Böylece asıl direncin çalışma koşulu korunur."
+    }
+  },
+  {
+    "id": "elektrik-akimi-q9",
+    "identity": "[\"elektrik-akimi-q9\",\"Sabit güçle çalışan 2 kW ideal bir araç 3 saat kullanılıyor. Dönüştürdüğü enerji kaç kWh?\",\"\",[\"6\",\"6000\",\"2/3\",\"1,5\",\"5\"],0,\"E=Pt=2·3=6 kWh. kWh enerji, kW güçtür.6000 Wh aynı enerjidir ama soru kWh istediği için 6000 doğru bir kWh değeri olmaz. Gücü süreye bölmek enerji hesabı değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Güç enerji dönüşüm hızıdır; sabit güçte enerji E=Pt ile bulunur. kW ile saat çarpılırsa kWh enerji birimi oluşur; ön ek dönüşümleri aynı enerjiyi farklı sayıyla ifade eder."
+      ],
+      "strategy": "Güç ve süre birimlerini sorunun istediği kWh ile uyumlu tut. Sonra sabit gücü bütün çalışma süresiyle çarp.",
+      "steps": [
+        "Güç 2 kW, süre 3 h olduğundan doğrudan kW×h kullanılabilir; saniyeye geçmek zorunlu değildir.",
+        "E=2×3=6 kWh hesaplanır; güç her saat boyunca aynı kabul edilmiştir.",
+        "6 kWh=6000 Wh eşdeğerliğini ayır: soru kWh istediğinden seçeneklerdeki sayıyı bu birimle değerlendir."
+      ],
+      "optionReasons": [
+        "6, sabit 2 kW gücün 3 saatte dönüştürdüğü enerjinin kWh değeridir.",
+        "6000 sayısı Wh biriminde doğrudur; 6000 kWh yazılırsa enerji bin kat büyük olur.",
+        "2/3, gücü süreye bölme işlemidir; kW/h enerji birimi değildir.",
+        "1,5, 3/2 zaman/güç oranıdır; gereken Pt çarpımını vermez.",
+        "5, 2 ile 3’ün toplamıdır; farklı niceliklerin sayısal değerleri enerji için toplanmaz."
+      ],
+      "commonError": "kWh’yi güç birimi sanmak veya kW değerini watt’a çevirip sonucu yeniden kWh diye etiketlemek.",
+      "check": "6 kWh=21,6 MJ. SI hesabında 2000 W×10800 s=21,6×10⁶ J bulunması aynı enerjiyi doğrular."
+    }
+  },
+  {
+    "id": "elektrik-akimi-q10",
+    "identity": "[\"elektrik-akimi-q10\",\"Gerilimi sabit kabul edilen 4000 mAh kapasiteli kaynak, ideal koşullarda sürekli 1000 mA veriyor. Yaklaşık çalışma süresi ve mAh’nin nicelik türü?\",\"\",[\"4 saat, güç\",\"0,25 saat, enerji\",\"4000 saat, gerilim\",\"4 saniye, direnç\",\"4 saat, yük\"],4,\"t=4000 mAh/1000 mA=4 saat. mAh yük kapasitesi birimidir, doğrudan enerji veya güç değildir. Enerji için uygun gerilimle yükü ilişkilendirmek gerekir. Gerçek kaynak ömrü çalışma koşullarından etkilense de bu soru ideal süreyi sorar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Akım×zaman boyutundaki Ah veya mAh elektrik yükünü ifade eder. İdeal sabit akımda süre kapasite/akım oranıdır; enerji için ayrıca gerilimle yük arasındaki E=Vq ilişkisi gerekir."
+      ],
+      "strategy": "Kapasite ve akımda aynı mA ön ekini kullanarak süreyi bul. Sonra mAh’nin birimlerini açıp nicelik türünü bağımsız denetle.",
+      "steps": [
+        "Kaynak ideal olarak 4000 mAh yük sağlayabilir ve her saat 1000 mAh yük aktaracak sabit akım verir.",
+        "t=4000 mAh/1000 mA=4 h; mA sadeleşir, saat kalır.",
+        "mAh akım×zaman olduğu için yük kapasitesidir. Süre ve nicelik çifti 4 saat, yük olmalıdır."
+      ],
+      "optionReasons": [
+        "4 saat doğrudur fakat mAh güç değildir; güç için zaman başına enerji ve W birimi gerekir.",
+        "0,25 saat, kapasite/akım oranını ters alır; ayrıca mAh doğrudan enerji değildir.",
+        "4000 saat, 1000 mA çekişini hesaba katmaz; mAh gerilim birimi de değildir.",
+        "4 saniye, kalan saat birimini yanlış değiştirir; mAh ayrıca direnç değildir.",
+        "4 saat, yük hem ideal çalışma süresini hem akım×zamanın nicelik türünü karşılar."
+      ],
+      "commonError": "Aynı mAh değerinin farklı gerilimlerde aynı enerji anlamına geldiğini sanmak; bu soruda gerilim sabit varsayılmış olsa da birimin türü yük olarak kalır.",
+      "check": "4000 mAh=4 Ah=14400 C, 1000 mA=1 A’dır. 14400 C/(1 C/s)=14400 s=4 h geri hesabı birimi doğrular."
+    }
+  },
+  {
+    "id": "miknatislar-ve-manyetik-alan-q1",
+    "identity": "[\"miknatislar-ve-manyetik-alan-q1\",\"İki çubuk mıknatısın birbirine bakan N ve N uçları için etkileşim nedir? Başka kuvvetler sonucu değiştirmiyor.\",\"\",[\"Zorunlu sıfır kuvvet\",\"Çekim\",\"İtme\",\"Elektriksel nötrleşme\",\"Kutupların yok olması\"],2,\"Aynı cins manyetik kutuplar birbirini iter. N–S karşılaşması çekim olurdu. Bu etkileşim kutupları yok etmez; iki mıknatısa eşit büyüklükte zıt yönlü kuvvetler uygulanır, hareketleri diğer mekanik koşullara bağlıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Çubuk mıknatısın iki ucu N ve S kutup etiketleriyle gösterilir. İki mıknatıs arasındaki etkileşim için karşı karşıya gelen uçların aynı mı zıt mı olduğu okunur; kutup adları elektrik yükü işaretleri değildir."
+      ],
+      "strategy": "Birbirine bakan iki ucu diğer uçlardan ayır. Kutup eşitliğine göre kuvvetin yönünü belirleyip elektriksel yük değişimi önermeleriyle karıştırma.",
+      "steps": [
+        "Soruda karşı karşıya bulunan uçlar N ve N’dir; iki etiket aynı cinsi gösterir.",
+        "Aynı manyetik kutuplar birbirini iter; her mıknatıs ötekinden uzaklaşma yönünde kuvvet görür.",
+        "Bu etkileşimin adı itmedir. Kutuplar etkileşme sırasında yok olmaz veya elektriksel olarak nötrleşmez."
+      ],
+      "optionReasons": [
+        "Zorunlu sıfır kuvvet, karşı karşıya aynı manyetik kutupların etkileşimini yok sayar.",
+        "Çekim, temel kutup kuralında zıt N–S karşılaşmasına aittir; burada N–N vardır.",
+        "İtme, aynı cins N–N uçlarının temel etkileşimidir.",
+        "Elektriksel nötrleşme yük alışverişiyle ilgili başka bir süreçtir; verilen manyetik kutup etkileşimini tanımlamaz.",
+        "Kutupların yok olması kuvvet etkileşiminin sonucu değildir; mıknatısların kutupları kalır."
+      ],
+      "commonError": "N etiketini artı elektrik yükü gibi yorumlamak veya iki aynı etiketi çekimle eşleştirmek.",
+      "check": "İki mıknatıstaki kuvvetler farklı cisimlerde eşit büyüklükte ve zıt yönlüdür. Her birindeki uzaklaşma eğilimi itme sonucuyla tutarlıdır."
+    }
+  },
+  {
+    "id": "miknatislar-ve-manyetik-alan-q2",
+    "identity": "[\"miknatislar-ve-manyetik-alan-q2\",\"Bir çubuk mıknatıs manyetik özelliği korunacak şekilde iki parçaya ayrılıyor. Temel modelde her parça ne taşır?\",\"\",[\"İkisi de yalnız N\",\"Yalnız elektrik yükü\",\"Hiç manyetik kutup kalmaz\",\"Biri yalnız N, diğeri yalnız S\",\"Her biri N ve S\"],4,\"Her parça daha küçük birer iki kutuplu mıknatıs olur; her birinde N ve S vardır. Sadece geometrik olarak kesmek tek manyetik kutup üretmez. Bu yüzden iki parçayı yalnız N ve yalnız S olarak etiketlemek temel mıknatıs modeline uymaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Manyetik kutup, mıknatısın yönlü etkileşim gösteren N veya S bölgesini adlandırır. Elektrik yükü biriktirmek ile malzemenin mıknatıslılık düzeni farklı olaylardır. Kesme sorularında manyetik özelliğin korunup korunmadığı, kullanılacak modelin önemli koşuludur."
+      ],
+      "strategy": "Kesimden sonra kalan her parçayı yeni bir küçük mıknatıs olarak ele al. Eski dış uçlarla birlikte yeni kesim yüzeylerinin kutup düzenini tamamla.",
+      "steps": [
+        "İlk çubuk N–S biçiminde iki kutupludur; soruda keserken manyetik özelliğinin korunduğu belirtilir.",
+        "Kesim yüzeylerinde de kutup düzeni oluşur; yalnız eski dış uçları saymak yeterli değildir.",
+        "İki parça da N ve S taşır. Birini yalnız N, diğerini yalnız S olarak bırakamazsın."
+      ],
+      "optionReasons": [
+        "İkisinin yalnız N taşıması her parçanın iki kutupluluğunu ortadan kaldırır ve S uçlarını gerekçesiz siler.",
+        "Yalnız elektrik yükü, korunduğu verilen manyetik özelliğin yerine başka bir nicelik koyar.",
+        "Hiç kutup kalmaması, sorunun manyetik özelliği koruma koşulunu ihlal eder.",
+        "Biri yalnız N, öteki yalnız S yorumu kesmeyi tek kutup üretimi sanır.",
+        "Her birinin N ve S taşıması, kesilen mıknatısların temel iki kutuplu modeline uygundur."
+      ],
+      "commonError": "Çubuğun ortasını kutuplar arasında sınır sanıp kesince kutupların birbirinden ayrıldığını düşünmek.",
+      "check": "Parçalardan biri tekrar kesilse aynı model yeniden iki kutuplu küçük parçalar verir. Sonucun kesme işlemini tekrarlayınca tutarlı kalması kontrol sağlar."
+    }
+  },
+  {
+    "id": "miknatislar-ve-manyetik-alan-q3",
+    "identity": "[\"miknatislar-ve-manyetik-alan-q3\",\"Mıknatısın iki kutbundan da çekilebilen, başlangıçta kalıcı mıknatıs olduğu bilinmeyen bir cisim gözleniyor. Hangisi zorunlu değildir?\",\"\",[\"Cismin kalıcı mıknatıs olması\",\"Manyetik madde olabilmesi\",\"Demir olabilmesi\",\"Dış alanla mıknatıslanabilmesi\",\"Çekimin tek başına kutup adını belirlememesi\"],0,\"Çekim cismin önceden kalıcı mıknatıs olduğunu kanıtlamaz; demir gibi bir madde alanla mıknatıslanıp çekilebilir. Kutupları kesin ayırmak için örneğin bilinen kutuptan itme gibi ek bilgi gerekir. Her çekilen nesneyi kalıcı mıknatıs saymak hatadır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Manyetik bir maddenin dış alan etkisiyle mıknatıslanması ile önceden kalıcı mıknatıs olması farklı durumlardır. Bir gözlemin neyi zorunlu kıldığını sınamak için aynı gözlemi üreten başka bir fiziksel örnek aranabilir."
+      ],
+      "strategy": "Kalıcı mıknatıs olduğu varsayımını hemen yapma. Önceden mıknatıslanmamış uygun bir maddeyle de iki kutuptan çekim gözlenip gözlenemeyeceğini karşılaştır.",
+      "steps": [
+        "Demir gibi uygun bir parça, dış mıknatısın alanı altında mıknatıslanabilir; yakın tarafta çekime uygun düzen oluşur.",
+        "Bu parça önceden kalıcı mıknatıs olmadan da N’den ve S’den çekilebilir; sorudaki gözlemi üretir.",
+        "O hâlde gözlem cismin kalıcı mıknatıs olmasını zorunlu kılmaz. Olasılık bildiren diğer yorumlarla bu zorunluluk iddiasını ayır."
+      ],
+      "optionReasons": [
+        "Kalıcı mıknatıs olması zorunlu değildir; dış alanla mıknatıslanan bir parça aynı çekimi gösterebilir.",
+        "Manyetik madde olabilmesi gözlemle uyumludur; bu seçenek kalıcı mıknatıslığı zorunlu kılmaz.",
+        "Demir olabilmesi geçerli bir olasılıktır; demir iki kutuptan da alanla mıknatıslanarak çekilebilir.",
+        "Dış alanla mıknatıslanabilmesi, kalıcı mıknatıs varsaymadan çekimi açıklayan fiziksel olasılıktır.",
+        "Çekimin tek başına kutup adını belirlememesi bu belirsizlikle uyumludur; her çekim karşı kutuplu kalıcı mıknatıs kanıtı değildir."
+      ],
+      "commonError": "Olabilmesi ile kesin olması ifadelerini aynı güçte okumak; seçeneklerde olasılık ve zorunluluk ayrımını koru.",
+      "check": "Önceden mıknatıslanmamış demir karşı örneği, kalıcı mıknatıs zorunluluğunu tek başına çürütür. Kutupları bilinen itme deneyi daha ayırt edici ek kanıt sağlayabilirdi."
+    }
+  },
+  {
+    "id": "miknatislar-ve-manyetik-alan-q4",
+    "identity": "[\"miknatislar-ve-manyetik-alan-q4\",\"Bir çubuk mıknatısın alan çizgilerinin yönü dışarıda ve mıknatıs içinde sırasıyla nasıldır?\",\"\",[\"Her ikisi S→N\",\"Çizgiler yalnız dışında vardır ve açıktır\",\"N→S ve S→N\",\"S→N ve N→S\",\"Her ikisi N→S\"],2,\"Dış alan N’den S’ye, mıknatıs içindeki dönüş S’den N’ye yönelir. Böylece kapalı çizgiler oluşur. Manyetik çizgileri elektrik yüklerinden çıkıp giren açık çizgilerle aynı biçimde düşünmek bu kapanmayı kaçırır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Manyetik alan çizgisi yerel B yönüne teğet çizilir ve kapalı bir dolaşım olarak izlenir. Çubuğun dışındaki bölüm ile içinden geri dönen bölümün yönleri birlikte okunmalıdır."
+      ],
+      "strategy": "Dışarıdaki ok yönünü belirledikten sonra aynı çizgiyi mıknatısın içinden başlangıcına geri bağla. İki bölge için aynı yön etiketini otomatik tekrarlama.",
+      "steps": [
+        "Temel çubuk mıknatıs modelinde dış alan çizgisini N ucundan S ucuna doğru izle.",
+        "Çizgi S’ye geldiğinde bitmez; mıknatısın içinde S’den N’ye dönerek kapanır.",
+        "İstenen dış/iç sırası N→S ve S→N’dir. Bu ikili kapalı alan çizgisi yapısını korur."
+      ],
+      "optionReasons": [
+        "Her ikisi S→N, içerideki dönüşü doğru tutsa da dış çizgi yönünü ters verir.",
+        "Yalnız dışarıda ve açık çizgiler, manyetik alanın kapalı çizgi modelini eksik bırakır.",
+        "N→S ve S→N, dış yönü ve iç dönüşü doğru sırada birleştirir.",
+        "S→N ve N→S, iki bölgenin doğru yönlerini yer değiştirir.",
+        "Her ikisi N→S, dış bölümü doğru gösterir fakat iç dönüşü ters alarak çizgiyi kapatamaz."
+      ],
+      "commonError": "Elektrik alan çizgilerinin yüklerde başlayıp bitebilmesini manyetik kutuplara aynı biçimde uygulamak.",
+      "check": "Bir oku dışarı N’den S’ye, ikinciyi içeride S’den N’ye çiz. Kalemi kaldırmadan başlangıca dönülebiliyorsa yönler kapanma koşulunu sağlar."
+    }
+  },
+  {
+    "id": "miknatislar-ve-manyetik-alan-q5",
+    "identity": "[\"miknatislar-ve-manyetik-alan-q5\",\"Bir P noktasında toplam B vektörü sağa yönlü ve sıfırdan farklı. Serbest küçük pusulanın N ucu dengeye geldiğinde hangi yönü gösterir?\",\"\",[\"Sağa\",\"Daima mıknatısın geometrik merkezine\",\"Daima yukarı\",\"Yönü alanla ilgisizdir\",\"Sola\"],0,\"Pusula toplam alan doğrultusuna yönelir ve N ucu B yönünü, burada sağı gösterir. Bir kaynağın merkezine düz çizgi çizmek her konumda doğru yön vermez. Sıfır alan olsaydı belirlenmiş tek manyetik yön olmayabilirdi; burada sıfır olmadığı verilmiştir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Küçük pusula yerel toplam manyetik alanı örnekler. İğnenin denge yönü bulunduğu noktadaki B ile ilişkilidir; alanın kaynağının geometrik merkezine bakmakla genel olarak belirlenmez."
+      ],
+      "strategy": "Sorunun toplam alanı zaten verdiğini fark et; tek tek kaynaklara yeni bir yön hesabı yapma. Pusulanın N ucunu bu yerel vektörün tanımına göre yerleştir.",
+      "steps": [
+        "P noktasında toplam B sağa ve sıfırdan farklıdır; burada belirlenmiş bir alan doğrultusu vardır.",
+        "Serbest pusula dengeye yönelirken N ucu yerel B vektörüyle aynı yönü gösterir.",
+        "Verilen vektör sağa olduğundan N ucu sağa bakar; S ucu karşı tarafta kalır."
+      ],
+      "optionReasons": [
+        "Sağa, sıfırdan farklı toplam B’nin verilen yönüyle pusulanın N ucunu eşleştirir.",
+        "Geometrik merkez, yerel alan yönünün genel tanımı değildir; farklı konumlarda teğet merkez doğrultusunda olmayabilir.",
+        "Daima yukarı, verilen sağa alanı ve pusulanın yerel yönelmesini göz ardı eder.",
+        "Alanla ilgisiz yön, pusulanın manyetik alanı örnekleme mekanizmasına aykırıdır.",
+        "Sola, aynı iğnenin S ucunun yönü olur; soru N ucunu ister."
+      ],
+      "commonError": "N ucunu, alan vektörünün tersini gösteren uç sanmak veya yakındaki mıknatısın merkezine otomatik yöneltmek.",
+      "check": "Pusulayı B ile paralel çizip N ucunun sağda olduğunu kontrol et. B sıfır olmadığı için burada sıfır alanın yön belirsizliği bulunmaz."
+    }
+  },
+  {
+    "id": "miknatislar-ve-manyetik-alan-q6",
+    "identity": "[\"miknatislar-ve-manyetik-alan-q6\",\"Uzun düz tel sayfadan dışarı doğru konvansiyonel akım taşıyor. Dünya alanı ihmal. Telin sağındaki noktada B yönü nedir?\",\"\",[\"Sayfa dışına\",\"Sağa\",\"Sola\",\"Yukarı\",\"Aşağı\"],3,\"Dışarı akım için sağ el kuralı saat yönünün tersinde dolaşım verir. Çemberin sağ tarafında teğet yukarıdır. B tele radyal veya tel boyunca değildir; tel çevresindeki çembere teğettir. Elektron yönünü akım yerine kullanmak aşağı sonucuna götürür.\"]",
+    "guidance": {
+      "knowledge": [
+        "Uzun düz tel çevresinde manyetik alan çizgileri, tele dik düzlemde tel merkezli çemberlerdir. Sağ el kuralında başparmak konvansiyonel akımı, kıvrılan parmaklar alanın dolaşımını gösterir."
+      ],
+      "strategy": "Önce akımın sayfaya göre yönünü elinle sabitle. Daha sonra telin sağındaki noktada çember teğetini oku; radyal yönle karıştırma.",
+      "steps": [
+        "Başparmağını sayfadan kendine doğru, yani dışarı akım yönüne çevir.",
+        "Sağ elin parmakları sayfaya bakan kişi için saat yönünün tersinde kıvrılır.",
+        "Bu dolaşımın çemberin sağ kenarındaki teğeti yukarıdır; o noktadaki B oku yukarı seçilir."
+      ],
+      "optionReasons": [
+        "Sayfa dışı akımın yönüdür; telin manyetik alanı tel doğrultusunda değildir.",
+        "Sağa, telden uzaklaşan radyal yöndür; çembersel alanın teğeti değildir.",
+        "Sola da radyal doğrultudadır; sağdaki noktada alan çembere teğet olmalıdır.",
+        "Yukarı, dışarı akımın saat yönü tersindeki dolaşımının sağ noktadaki teğetidir.",
+        "Aşağı, akım sayfa içine olsaydı sağdaki noktada oluşacak teğet yönüdür."
+      ],
+      "commonError": "Sağ elin başparmağını elektron sürüklenmesine çevirmek; kural konvansiyonel akım yönünü ister.",
+      "check": "Koordinatla sağ yönü x, yukarıyı y, sayfa dışını z seç: z doğrultusundaki akım ile x doğrultusundaki radyal vektör, sağ el yönünde +y teğetini verir."
+    }
+  },
+  {
+    "id": "miknatislar-ve-manyetik-alan-q7",
+    "identity": "[\"miknatislar-ve-manyetik-alan-q7\",\"Hava/vakumda uzun düz tel 6 A taşıyor. Tel ekseninden 3 cm uzakta B kaç μT? μ0=4π×10⁻⁷ T·m/A.\",\"\",[\"20\",\"40\",\"400\",\"4\",\"10\"],1,\"B=2×10⁻⁷·6/0,03=4×10⁻⁵ T=40 μT. Santimetreyi metreye dönüştürmek gerekir. Uzaklık bu geometride birinci kuvvettedir; noktasal elektrik alanın ters kare kuralı bu sorunun bağıntısı değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hava/vakumda uç etkileri ihmal edilen uzun düz tel için B=μ₀I/(2πr) kullanılır. r tel eksenine dik uzaklıktır; SI hesabında metre, sonuçta tesla kullanılır. 1 μT=10⁻⁶ T’dir."
+      ],
+      "strategy": "Uzaklığı metreye dönüştürüp μ₀ içindeki π ile paydadakini sadeleştir. Alanı önce tesla bul, ardından mikroteslaya çevir.",
+      "steps": [
+        "3 cm=0,03 m ve μ₀/(2π)=2×10⁻⁷ T·m/A’dır.",
+        "B=(2×10⁻⁷)×6/0,03=4×10⁻⁵ T hesapla.",
+        "4×10⁻⁵ T=40×10⁻⁶ T=40 μT. Ters uzaklık bağıntısını kullandığını denetle."
+      ],
+      "optionReasons": [
+        "20 μT, aynı uzaklıkta 3 A için çıkardı; verilen 6 A akımın yarısını kullanır.",
+        "40 μT, SI birimli uzun tel hesabı ve mikrotesla dönüşümünün sonucudur.",
+        "400 μT, doğru alanı on kat büyüten uzaklık veya ön ek hatasıdır.",
+        "4 μT, 4×10⁻⁵ T’yi mikroteslaya çevirirken on çarpanını kaybeder.",
+        "10 μT, aynı akım için 12 cm uzaklıkta elde edilirdi; verilen uzaklık 3 cm’dir."
+      ],
+      "commonError": "3 cm’yi 3 m gibi kullanmak veya 1/r² bağıntısını uzun tel alanına taşımak.",
+      "check": "B×r/I=(40×10⁻⁶×0,03)/6=2×10⁻⁷ T·m/A çıkar. Bu, verilen μ₀/(2π) değerini geri üretir."
+    }
+  },
+  {
+    "id": "miknatislar-ve-manyetik-alan-q8",
+    "identity": "[\"miknatislar-ve-manyetik-alan-q8\",\"Aynı ortamda uzun düz telin akımı iki katına çıkarılıyor; gözlem noktasının tele dik uzaklığı yarıya indiriliyor. B yeni/eski oranı?\",\"\",[\"1/4\",\"1/2\",\"1\",\"2\",\"4\"],4,\"Byeni/Beski=(2I/I)·(r/(r/2))=2·2=4. Yalnız akımı sayıp 2 almak uzaklığın etkisini atlar. Uzaklığı kareye almaksa uzun tel yerine başka kaynak geometrisi kullanmak olur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Uzun düz telde ve aynı ortamda alan büyüklüğü I/r ile orantılıdır. Birden fazla değişken değiştiğinde etkileri ayrı oranlar hâlinde çarpılır; tek başına akım veya uzaklık değişimi yeterli değildir."
+      ],
+      "strategy": "Yeni/eski oranını I oranı ve uzaklığın ters oranı olarak iki çarpana ayır. İki etkinin alanı aynı yönde değiştirip değiştirmediğini kontrol et.",
+      "steps": [
+        "Akım oranı Iyeni/Ieski=2’dir; tek başına bu değişim alanı iki kat artırır.",
+        "Uzaklık yarıya indiği için reski/ryeni=r/(r/2)=2’dir; yaklaşma da alanı iki kat artırır.",
+        "Birleşik alan oranı 2×2=4 olur. Hem akım artışı hem yaklaşma alanı güçlendirmiştir."
+      ],
+      "optionReasons": [
+        "1/4, iki artış etkisinin ikisini de ters yönde uygular.",
+        "1/2, değişkenlerden birini ters alırken diğer artış etkisini de eksik bırakır.",
+        "1, iki etki birbirini götürür sanır; burada ikisi de alanı artırır.",
+        "2, yalnız akımın iki katına çıkmasını sayar; uzaklığın yarıya inmesi eksiktir.",
+        "4, iki kat akım ile iki kat ters uzaklık etkisinin çarpımıdır."
+      ],
+      "commonError": "Uzaklık yarıya indi diye alanı yarıya indirmek veya uzaklığın karesini kullanıp bu geometri için gereksiz ek çarpan oluşturmak.",
+      "check": "Örnek bir karşılaştırma kur: I/r yerine (2I)/(r/2)=4I/r yazmak aynı oranı tek kesirde doğrular; ortam çarpanı sadeleşir."
+    }
+  },
+  {
+    "id": "miknatislar-ve-manyetik-alan-q9",
+    "identity": "[\"miknatislar-ve-manyetik-alan-q9\",\"Uzun ideal bobinde ortam ve akım aynı kalıyor; toplam sarım N ile bobin boyuℓ ikisi de iki katına çıkarılıyor. B≈μ(N/ℓ)I modeline göre alan ne olur?\",\"\",[\"Yarıya iner\",\"Sıfır olur\",\"Dört katına çıkar\",\"İki katına çıkar\",\"Aynı kalır\"],4,\"Yeni sarım yoğunluğu 2N/(2ℓ)=N/ℓ; I veμ da değişmediğinden B aynıdır. Daha çok sarım tek başına yeterli değildir, sarımların hangi uzunluğa yayıldığı da önemlidir. Bu sonuç uzun ideal bobin yaklaşımı içindir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Uzun ideal bobinin iç alanında toplam sarım sayısından çok birim uzunluk başına sarım sayısı n=N/ℓ önemlidir. B≈μnI bağıntısında ortam, sarım yoğunluğu ve akım ayrı çarpanlardır."
+      ],
+      "strategy": "Yeni N ve yeni ℓ değerlerini önce tek bir sarım yoğunluğu oranında birleştir. Akım ve ortamın sabit kalmasını bundan sonra kullan.",
+      "steps": [
+        "Yeni sarım yoğunluğu nyeni=(2N)/(2ℓ) biçimindedir; pay ve payda birlikte değişmiştir.",
+        "İki çarpanı sadeleştirince nyeni=N/ℓ=neski olur. Akım I ve geçirgenlik μ da değişmemiştir.",
+        "B≈μnI’nin bütün çarpanları aynı kaldığından alanın büyüklüğü aynı kalır; yeni/eski oranı 1’dir."
+      ],
+      "optionReasons": [
+        "Yarıya inme, yalnız bobin boyunun iki katına çıkmasını sayıp sarım artışını atlar.",
+        "Sıfır, sonlu sarım yoğunluğu ve aynı akım varken alanı gerekçesiz yok eder.",
+        "Dört kat artış, boy artışını alanı artıran çarpan gibi kullanır; boy paydadadır.",
+        "İki kat artış, yalnız toplam N’nin artışını sayar ve aynı oranda uzayan bobini yok sayar.",
+        "Aynı kalma, 2N/(2ℓ)=N/ℓ nedeniyle sarım yoğunluğunun değişmemesidir."
+      ],
+      "commonError": "Daha çok sarımın her geometride kesin daha büyük alan demek olduğunu sanmak; sarımların yayıldığı uzunluk da gereklidir.",
+      "check": "Eşit uzunlukta küçük bir bobin parçası başına düşen sarım sayısı değişmez. Aynı akımda bu yerel yoğunluk karşılaştırması ideal iç alanın aynı kalmasını destekler."
+    }
+  },
+  {
+    "id": "miknatislar-ve-manyetik-alan-q10",
+    "identity": "[\"miknatislar-ve-manyetik-alan-q10\",\"Pusulanın N ucu, dış etkiler ihmal edildiğinde Dünya’nın coğrafi kuzey yakınına yöneliyor. Bu bölgenin çekim bakımından manyetik niteliği için uygun yorum?\",\"\",[\"Kesin N’dir ve eksenler her yerde aynıdır\",\"Dünya’nın alanı yoktur\",\"Pusula yalnız elektrik alanını ölçer\",\"Dünya bütün ışınımları manyetik alanla durdurur\",\"Nitelik olarak S gibi davranır; coğrafi ve manyetik eksenler tam aynı olmak zorunda değildir\"],4,\"Pusulanın N ucu çekildiği için coğrafi kuzey yakınındaki bölge manyetik S niteliğinde davranır. Coğrafi ve manyetik eksenler tam çakışmaz; yerel sapma olabilir. Bu gözlem bütün ışınımların engellendiğini veya pusulanın elektrik alanı ölçtüğünü göstermez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Coğrafi kuzey adı Dünya’nın dönme eksenine göre konumu belirtir; manyetik kutup niteliği ise bir mıknatıs ucuyla etkileşime göre yorumlanır. Pusula, yerel toplam manyetik alana yönelir; iki eksenin aynı olması zorunlu değildir."
+      ],
+      "strategy": "Pusulanın N ucunun hangi bölgeye çekildiğini belirle. Manyetik kutup etkileşimini kullanıp bundan ayrı olarak coğrafi ve manyetik eksenlerin ilişkisini değerlendir.",
+      "steps": [
+        "Verilen gözlemde N uç, coğrafi kuzey yakınındaki bölgeye çekilecek biçimde yöneliyor.",
+        "Manyetik N uçla çekici etkileşim yapan kutup niteliği S’dir; coğrafi adın kuzey olması bunu N yapmaz.",
+        "Bu bölge S gibi davranır. Coğrafi ve manyetik eksenler tam aynı olmak zorunda değildir; iki koşulu birlikte ifade eden yorumu seç."
+      ],
+      "optionReasons": [
+        "Kesin N ve her yerde aynı eksen yorumu hem N ucun çekim ilişkisini hem eksenlerin ayrılabilmesini ihlal eder.",
+        "Dünya alanının yokluğu, dış etkiler ihmal edildiğinde verilen manyetik yönelmeyi açıklamaz.",
+        "Pusula iğnesinin yönelmesi manyetik alanla ilgilidir; yalnız elektrik alan ölçümü değildir.",
+        "Bütün ışınımların durdurulması bu pusula gözleminden çıkmaz; manyetik alan her tür ışınımı engelleyen bir perde değildir.",
+        "S gibi davranma çekim ilişkisine, eksenlerin tam çakışmaması ise coğrafi/manyetik ad ayrımına uygundur."
+      ],
+      "commonError": "Coğrafi kuzey ile çekim bakımından manyetik N adını otomatik eşitlemek; pusulanın gösterdiği coğrafi ad ile kutup niteliğini ayır.",
+      "check": "Coğrafi kuzey yakınındaki bölge N gibi davransaydı pusulanın N ucuyla itici ilişki beklenirdi. Gözlenen yönelme çekici S niteliğiyle tutarlıdır."
+    }
+  }
+]

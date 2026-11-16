@@ -1,7 +1,7 @@
 {
-  "version": "0.18.0",
+  "version": "0.18.1",
   "channel": "alpha",
   "notes": {
-    "tr": "Doğrulanmış çalışma sırasındaki 479 başlığın tamamı anlatım ve soruyla eşleşir. 480 ayrıntılı anlatım, 480 yerleşik özet ve 5883 özgün soru bulunur. 28 eski anlatım 553 bölüm, 168 çözümlü örnek ve 178 hatırlama etkinliğiyle genişletildi; ileri soru setleri ayrı açılır. 440 eski soruya bilgi, yöntem, üç çözüm adımı ve her şık için açıklama eklendi. Ayrıntılı yardım 2743 soruda hazır. Eksik soru koşulları ve katman/elektron terimleri açıklığa kavuşturuldu. Eski tam çözümler, yanıtlar, notlar ve başlamış denemeler korunur. TYT 120 soru/165 dakika; AYT Sayısal 80 soru/180 dakika. Kaynakların bütün alt kazanımları ve resmî sınav arşivi üzerindeki çalışma sürüyor."
+    "tr": "Matematik, fizik, kimya, biyoloji, Türkçe ve tarihte 200 eski sorunun çözümü genişletildi: gerekli bilgi, yöntem, 600 çözüm adımı, 1000 seçenek gerekçesi, sık hata ve kontrol. Ayrıntılı yardım 2943 soruda hazır. Madde miktarı–derişim hesabındaki hacim koşulu, ortak tamlanan sorusundaki ek bağlamı ve Azak sorusundaki tarih karşılaştırması açıklaştırıldı. Bağlı çözümlü örnekte birimler ayrıldı. Toplam 480 ayrıntılı anlatım, 480 yerleşik özet ve 5883 özgün soru korunur. Notlar, eski yanıtlar, başlanmış denemeler ve 3/7/21 tekrar tarihleri değişmez. Kaynakların bütün alt kazanımları ve resmî sınav arşivi üzerindeki çalışma sürüyor."
   }
 }

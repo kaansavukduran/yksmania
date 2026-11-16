@@ -1,0 +1,752 @@
+[
+  {
+    "id": "f093-noun-1",
+    "identity": "[\"f093-noun-1\",\"‘Aralarındaki sevgi, arkadaşları birbirine yaklaştırdı.’ cümlesindeki sevgi sözcüğü varlığa veriliş, algılanış ve sayı bakımından nasıl sınıflandırılır?\",\"\",[\"Cins, soyut, tekil\",\"Özel, somut, çoğul\",\"Cins, somut, topluluk\",\"Özel, soyut, tekil\",\"Cins, soyut, çoğul\"],0,\"Sevgi bu cümlede kişi adı değil duygu kavramıdır: cins ve soyuttur. Çoğul eki veya bireylerden oluşan bir bütün anlamı taşımadığı için tekildir. Aralarındaki sözü ve cümle ortasında küçük harfle yazımı burada duygu kavramı anlamını açıklaştırır; kişi adı olarak yorumlanmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "İsimleri farklı ölçütlerle aynı anda sınıflandırabiliriz. Varlığa verilişinde özel ad tek bir varlığı ayırt eder; cins ad bir türü veya kavramı adlandırır. Algılanışında somut ad duyusal varlığı, soyut ad düşünce ve duygu gibi kavramları karşılar.",
+        "Sayı sınıfında tekil, çoğul ve topluluk ayrı incelenir. Bir cümlede birden çok insan bulunması, o cümledeki her adı çoğul yapmaz. Sözcüğün hangi anlamda kullanıldığı ve kendi sayı yapısı belirleyicidir; cümle başındaki büyük harf de tek başına özel ad kanıtı değildir."
+      ],
+      "strategy": "Sevgi’nin cümlede kişi mi duygu mu adlandırdığını bağlamdan belirle. Ardından veriliş, algılanış ve sayı için üç ayrı karar yaz; bir ölçütün yanıtını diğerine otomatik taşıma.",
+      "steps": [
+        "“Aralarındaki sevgi” sözü arkadaşlar arasında kurulan bir duyguyu anlatır. Burada Sevgi adlı bir kişiden söz edildiği yorumu cümledeki ilişkiyle uyuşmaz.",
+        "Adlandırılan duygu genel bir kavramdır; bu nedenle cins addır. Duygunun kendisi duyularla algılanan bir nesne olmadığı için soyut sınıfına girer.",
+        "Sevgi sözcüğünde çoğul eki veya birçok bireyi tek bütün yapan topluluk adı kuruluşu yoktur. Üçlü sınıflandırma cins–soyut–tekil olur."
+      ],
+      "optionReasons": [
+        "Sevgi duygu kavramını genel olarak adlandırır, soyuttur ve bu kullanımda çoğul/topluluk biçiminde değildir; üç sınıf da doğru eşleştirilir.",
+        "Kişiye özgü ad, duyusal nesne ve çoğul biçim iddialarının hiçbiri “aralarındaki sevgi” kullanımını karşılamaz.",
+        "Cins ad bilgisi uygundur; ancak duygu burada somut nesne değildir ve bireylerden oluşan bir topluluğu adlandırmaz.",
+        "Soyut ve tekil değerlendirmeleri uygundur; özel ad denilmesi ise burada duygu bildiren sözcüğü kişi adı sayar.",
+        "Cins ve soyut değerlendirmeleri uygundur; sözcükte çokluk eki ya da bu kullanımda çoğul ad değeri bulunmadığından son sınıf yanlıştır."
+      ],
+      "commonError": "Arkadaşların birden çok olmasını sevgi adının da çoğul olduğu sanısına çevirmek veya bağlamdaki duyguyu kişi adı olarak okumak.",
+      "check": "Her etiket için ayrı dayanak söyle: neyi adlandırıyor, duyusal nesne mi kavram mı, sözcüğün kendi sayı kuruluşu ne? Arkadaşlar adının çokluğunu sevgi’ye aktarmadığını denetle."
+    }
+  },
+  {
+    "id": "f093-noun-2",
+    "identity": "[\"f093-noun-2\",\"‘Sürü yamaçta otluyordu.’ cümlesindeki sürü adı sayı bakımından hangi özelliği taşır?\",\"\",[\"Mutlaka -ler çoğul eki taşır.\",\"Her durumda tek hayvanı adlandırır.\",\"İki ayrı basit adın birleşimidir.\",\"Çoğul eki olmadan birçok bireyi bütün olarak adlandırır.\",\"Yalnız bir hayvanın özel adıdır.\"],3,\"Sürü, çoğul eki almadan çok sayıda hayvandan oluşan bir bütünü karşılayan topluluk adıdır. Bu özellik onu -lar/-ler taşıyan hayvanlar biçimiyle aynı yapmaz. Sürüler denirse birden fazla sürü anlatılır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Topluluk adı, çok sayıda bireyi tek bir bütün olarak adlandırır. Takım sözcüğü oyunculardan oluşan bütünü karşılayabilir; üzerinde çoğul eki bulunması bu anlam için şart değildir.",
+        "Çoğul eki ile topluluk anlamı iki ayrı bilgidir. Birden çok takım denildiğinde takımlar biçimi kullanılabilir: çoğul eki, bütünün içindeki üyeleri değil birden fazla takımın varlığını gösterir. Sayı incelemesi hem biçime hem adlandırılan bütüne dayanır."
+      ],
+      "strategy": "Sürü sözcüğünün üzerinde ek olup olmadığını yazdıktan sonra neyi adlandırdığını açıkla. Birçok üyeden oluşan tek bütünü, tek bireyden ve çoğul ekli biçimden ayır.",
+      "steps": [
+        "Verilen biçim sürü’dür; sonunda -lar/-ler çoğul eki bulunmaz. Ek yokluğunu önce sözcüğün biçimine ilişkin bir gözlem olarak kaydet.",
+        "Otlama bağlamında sürü, tek hayvanın özel adı değil hayvanların oluşturduğu bütündür. Anlamdaki üyelik çokluğu ek varlığıyla aynı ölçüt değildir.",
+        "Çoğul eki taşımadan birçok bireyi bütün olarak adlandırma özelliği topluluk adını açıklar. Sürüler verilseydi birden fazla böyle bütünden söz edilirdi."
+      ],
+      "optionReasons": [
+        "Sürü biçiminde -ler eki yoktur. Topluluk anlamının oluşması için sözcüğe zorunlu olarak çoğul eki eklenmez.",
+        "Otlama bağlamındaki sürü hayvanlar bütününü karşılar; her durumda tek hayvanı adlandırdığı söylenemez.",
+        "Soruda iki adın birleşmesi veya yapı sınıfı değil, sayı bakımından topluluk değeri incelenmektedir; verilen sözcük böyle bir iki köklü kuruluş göstermez.",
+        "Sözcük çoğul eki olmadan hayvanların oluşturduğu bütünü karşılar; topluluk adının sayı özelliği doğru açıklanır.",
+        "Sürü bu cümlede belli bir hayvana verilmiş özel ad değildir; birden çok bireyin oluşturduğu genel topluluğu adlandırır."
+      ],
+      "commonError": "Anlamda birden çok hayvan var diye sözcüğün üzerinde de çoğul eki bulunduğunu söylemek.",
+      "check": "Sürü ile sürüler biçimlerini karşılaştır. İkincisinin birden fazla sürü anlatabilmesi, ilk biçimdeki topluluk anlamıyla çoğul ekinin ayrı katmanlar olduğunu gösterir."
+    }
+  },
+  {
+    "id": "f093-noun-3",
+    "identity": "[\"f093-noun-3\",\"‘Kitaplarımızdan birini seçtik.’ cümlesindeki kitaplarımızdan sözcüğü yapı bakımından nasıl açıklanır?\",\"\",[\"Her çokluk eki yapım eki olduğu için türemiştir.\",\"Yalnız çekim ekleri taşıyan basit isimdir.\",\"En az iki kök içerdiği için birleşiktir.\",\"Yönelme ekiyle yeni sözcük kurulmuştur.\",\"İyelik eki sözcüğün kökünü fiile çevirmiştir.\"],1,\"Kitap kökü basittir; -lar çoğul, -ımız iyelik, -dan ayrılma durumudur. Bunlar çekim ekleridir. Çok ek almak tek başına türeme veya birleşme değildir; örneğin kitaplık biçimindeki -lık yapım ekiyle durum değişirdi.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yapım eki yeni bir sözlük tabanı oluşturur; çekim eki ise sözcüğün sayısını, aitliğini veya cümledeki ilişkisini kurar. Basit bir ad çok sayıda çekim eki alabildiği için uzunluk tek başına türemişlik ölçütü değildir.",
+        "Birleşik sözcüğün kuruluşunda birden fazla sözlük tabanı bulunur. Kökün art arda ek alması ile başka bir tabanla birleşmesi farklı oluşumlardır; bu nedenle ek sayısını kök sayısı yerine kullanmamalısın."
+      ],
+      "strategy": "Kitaplarımızdan’ı kökten sona doğru anlamlı parçalara ayır. Her ekin yeni varlık adı mı, sayı–sahip–ayrılma ilişkisi mi kurduğunu belirleyip yapı kararını bu görevlerden çıkar.",
+      "steps": [
+        "Kitap-lar-ımız-dan zincirini yaz. Başlangıç kitap’tır; birden fazla bağımsız kökü bir araya getiren birleşme bulunmaz.",
+        "-lar çokluk, -ımız birinci çoğul iyelik, -dan ayrılma ilişkisidir. Üçü de verilen kitap tabanını çekime sokar; yeni sözlük tabanı türetmez.",
+        "Yalnız çekim ekleri aldığı için kitaplarımızdan çekimli basit isimdir. Ayrılma ekini yönelme saymak veya kökü fiile dönüşmüş kabul etmek bu kuruluşu karşılamaz."
+      ],
+      "optionReasons": [
+        "-lar burada çokluk çekimidir; her çokluk ekini yapım saymak kitap adının sayı kullanımını yeni sözcük oluşumuyla karıştırır.",
+        "Kitap köküne yalnız çoğul, iyelik ve ayrılma çekimleri eklenmiştir; basit isim kuruluşu doğru belirtilir.",
+        "Kitap-lar-ımız-dan zincirinde ikinci bir kök yoktur. Birden fazla ek, birden fazla kök veya birleşik sözcük demek değildir.",
+        "Sondaki ek yönelme -a/-e değil ayrılma -dan’dır. Bu kullanım yeni sözcük de türetmez.",
+        "-ımız kitap adının kime ait olduğunu bildirir; tabanı eyleme dönüştüren bir yapım eki değildir. Sözcük ad olarak kalır."
+      ],
+      "commonError": "Üç ek gördüğünde hepsini yapım sanmak veya ayrılma ekini sesine bakmadan yönelme diye adlandırmak.",
+      "check": "Sözcükten ekleri geri çıkarıp kitap tabanına dön. Sonra her eki yeniden ekleyerek yalnız sayı, aitlik ve ayrılma bilgisinin geldiğini; yeni sözlük adı oluşmadığını denetle."
+    }
+  },
+  {
+    "id": "f093-noun-4",
+    "identity": "[\"f093-noun-4\",\"‘Onun defterini dikkatle inceledim.’ cümlesinde defter-i-n-i biçimindeki ilk ve son -i eklerinin görevleri sırasıyla nedir?\",\"\",[\"İlgi ve çoğul\",\"Belirtme ve iyelik\",\"Yapım ve yönelme\",\"Kişi ve bulunma\",\"İyelik ve belirtme durumu\"],4,\"Onun defteri grubunda ilk -i üçüncü tekil iyelik ekidir. Defteri fiilin belirli nesnesi yapmak için son -i belirtme durumu gelir; n bağlantıyı sağlar. İki ek aynı sesle görünse de farklı ilişkiler kurar.\"]",
+    "guidance": {
+      "knowledge": [
+        "İyelik eki bir adın sahip/aitlik ilişkisini kurar; belirtme durumu eki ise adın yüklem karşısındaki belirli nesne görevini işaretler. Benzer sesle görünen bu iki ek aynı sözcükte birlikte bulunabilir.",
+        "İlgi eki tamlayan üzerinde, iyelik eki tamlanan üzerinde yer alır. Üçüncü kişi iyeliğinden sonra durum eki gelirken yardımcı n görülebilir; bu ses yeni sahiplik veya yeni bir yapım basamağı değildir. Görevler cümledeki bağlara göre ayrılır."
+      ],
+      "strategy": "Önce defterin kime bağlandığını, ardından inceledim yükleminin hangi nesneyi aldığını göster. Bu iki ilişkiyi verilen defter-i-n-i zincirindeki iki i’ye sırayla yerleştir.",
+      "steps": [
+        "Onun defteri grubunu ayır: defter-i, üçüncü kişinin defteri anlamıyla aitlik taşır. Zincirdeki ilk -i bu ilişkiyi kurar.",
+        "“Neyi inceledim?” sorusunun yanıtı onun defterini’dir. Son -i bu iyelikli adı belirli nesne yapar; aradaki n bağlantı sesidir.",
+        "İstenen sıra ilk -i için iyelik, son -i için belirtme durumudur. Tamlayandaki onun ekiyle defter üzerinde sorulan iki eki karıştırma."
+      ],
+      "optionReasons": [
+        "İlk -i tamlayanın ilgi eki değildir; son -i de çokluk bildirmez. İki ek aitlik ve belirli nesne görevlerini taşır.",
+        "Görevler ters çevrilmiştir: aitlik önce onun defteri grubunda, belirtme ise yükleme bağlanan son ekte kurulur.",
+        "Defterden yeni sözcük türeten yapım veya -a/-e biçimli yönelme bu iki yerde yoktur; cümlede sahiplikli belirli nesne vardır.",
+        "Defter adındaki bu ekler yüklem kişi eki veya bulunma -da/-de eki değildir. İnceleme öznesiyle yer ilişkisi burada sorulmuyor.",
+        "İlk -i onun defteri aitliğinin iyelik eki, son -i ise inceledim eyleminin belirli nesnesini kuran belirtme ekidir; sıra doğrudur."
+      ],
+      "commonError": "Aynı yazılan iki i’ye tek görev vermek ya da aradaki n’yi ilgi eki sanarak zincire üçüncü ilişki eklemek.",
+      "check": "Önce yalnız onun defteri sözünü, sonra onun defterini inceledim sözünü kur. İkinci kuruluşun eklediği nesne görevi son -i ile açıkça gösterilebilmeli."
+    }
+  },
+  {
+    "id": "f093-noun-5",
+    "identity": "[\"f093-noun-5\",\"‘Mahallenin geniş parkı yenilendi.’ cümlesindeki mahallenin geniş parkı grubunda temel isim tamlaması hangisidir?\",\"\",[\"Geniş parkı: belirtisiz isim tamlaması\",\"Mahallenin geniş: zincirleme isim tamlaması\",\"Mahallenin parkı: belirtili isim tamlaması\",\"Geniş park: zincirleme isim tamlaması\",\"Mahalle park: iki unsuru da eksiz belirtili tamlama\"],2,\"Mahalle-nin tamlayan, park-ı tamlanandır; ilgi ve iyelik ekleri belirtili isim tamlamasını kurar. Geniş, parkı niteleyen sıfattır ve araya girebilir. Üç sözcük görülmesi tek başına zincirleme yapıyı kanıtlamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Belirtili isim tamlaması iki adın ilgi–iyelik bağıyla kurulur. Tamlayan -(n)ın/-(n)in gibi ilgi eki, tamlanan üçüncü kişi iyeliği taşır. Niteleyen bir sıfat bu iki ana unsurun arasında yer alabilir.",
+        "Sıfat tamlamasında bir nitelik veya belirleme doğrudan ada bağlanır. Zincirleme isim tamlamasında ise en az bir unsur kendi içinde ikinci bir isim tamlamasıdır. Yalnız üç sözcük görmek bu iç içe ad ilişkisini kanıtlamaz."
+      ],
+      "strategy": "Geniş sözünün hangi ada nitelik kattığını belirleyip onu ana ad ilişkisinden ayır. Sonra kalan iki adın eklerini birlikte göster; tamlama türünü bu iki uç üzerinden seç.",
+      "steps": [
+        "Grubun adları mahalle ve park’tır. Geniş, parkın niteliğini bildirir; bu görev onu ikinci bir ad unsuru yapmaz.",
+        "Mahalle-nin üzerinde ilgi, park-ı üzerinde iyelik bulunur. Geniş kaldırıldığında mahallenin parkı ilişkisi eksiksiz kalır.",
+        "Temel isim tamlaması mahallenin parkı’dır ve belirtilidir. Geniş parkı niteleyen sıfatın araya girmesi bu temel ilişkiyi değiştirmez."
+      ],
+      "optionReasons": [
+        "Geniş bir nitelik bildirir; parkla iki ad arasında belirtisiz tamlama kurmaz. Bu ikili sıfat ilişkisi taşır.",
+        "Geniş burada ad değildir ve kendi içinde bir isim tamlaması oluşturmaz. Mahallenin geniş biçimi de istenen ana tamlamanın iki adını vermez.",
+        "Mahalle-nin ilgi, park-ı iyelik eki taşır. Aradaki geniş dışarıda tutulduğunda belirtili isim tamlamasının iki temel unsuru doğru gösterilir.",
+        "Geniş park, sıfat ve addan oluşur; iç içe iki isim tamlaması göstermez. Ayrıca mahalleyle kurulan ana ad ilişkisini dışarıda bırakır.",
+        "Kaynak grupta hem mahalle-nin hem park-ı ek almıştır; ekleri silerek eksiz iki unsurun belirtili tamlama kurduğunu söylemek uygun değildir."
+      ],
+      "commonError": "Üç sözcük bulunduğu için grubu doğrudan zincirleme saymak veya araya giren sıfatı tamlayan sanmak.",
+      "check": "Sıfatı çıkarıp mahallenin parkı sözünü oku; sonra geri ekle. İlgi ve iyelik ekleri ile adlar arası bağ iki durumda da aynı kalıyorsa temel tamlamayı doğru bulmuşsundur."
+    }
+  },
+  {
+    "id": "f093-noun-6",
+    "identity": "[\"f093-noun-6\",\"Aşağıdaki söz gruplarından hangisi belirtisiz isim tamlamasıdır?\",\"\",[\"Tren istasyonu\",\"Trenin istasyonu\",\"Sessiz istasyon\",\"Çok sessiz\",\"İstasyonda bekledi\"],0,\"Tren + istasyon-u iki ad arasında, tamlayanı ilgi eki almayan belirtisiz tamlamadır. Trenin istasyonu belirtilidir; sessiz istasyon sıfat tamlamasıdır. Çok sessiz adlar arası tamlama kurmaz; istasyonda bekledi ise fiilli bir yapıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Belirtisiz isim tamlamasında ilk ad ilgi eki taşımaz, ikinci ad iyelik ekiyle ilişki kurar. İki unsurun da ad olması ve aralarında bir adlandırma ilişkisi bulunması gerekir; eksiz ilk unsur tek başına yeterli değildir.",
+        "Belirtili tamlamada ilk ad da ilgi eki alır. Niteleme sıfatıyla adın birleşmesi sıfat tamlaması, bir fiille kurulan söz ise farklı yapıdır. Tamlama ararken sözcük türüyle ek düzeni birlikte kontrol edilir."
+      ],
+      "strategy": "Her seçeneğin iki unsurunun görevini belirle. İki ad içeren adaylarda ilk adın ilgi eki ve ikinci adın iyelik eki durumunu karşılaştır; sıfat ve fiil içerenleri ayrı tut.",
+      "steps": [
+        "Tren ile istasyon iki addır. Tren istasyonu grubunda tren ilgi eki almaz, istasyon-u ise iyelik eki taşır.",
+        "Trenin istasyonu’nda tamlayana ilgi eki de gelmiştir. Sessiz istasyon’da ilk unsur nitelik bildiren sıfattır; çok sessiz ve istasyonda bekledi yapıları da iki ad ilişkisi değildir.",
+        "İlk adın ilgi eki almadığı, ikinci adın iyelik taşıdığı iki ad grubu tren istasyonu’dur; belirtisiz isim tamlaması koşullarını birlikte karşılar."
+      ],
+      "optionReasons": [
+        "Tren + istasyon-u iki addır; ilk unsur ilgi eki almadan, ikinci unsur iyelik ekiyle bağlanır. Belirtisiz isim tamlamasıdır.",
+        "Tren-in de ilgi eki aldığı için tamlama belirtilidir. İkinci adın iyelik taşıması ilk ad üzerindeki bu farkı ortadan kaldırmaz.",
+        "Sessiz, istasyonu niteleyen sıfattır. Sıfatla ad arasındaki ilişki isim tamlamasının iki ad koşulunu karşılamaz.",
+        "Çok, sessiz niteliğinin derecesini belirler; bu grupta birbirine bağlanan iki ad bulunmaz.",
+        "İstasyonda bulunma durumundaki ad, bekledi fiiline bağlanır. Bir yüklem içeren bu yapı belirtisiz isim tamlaması değildir."
+      ],
+      "commonError": "İlk sözcüğün eksiz görünmesini yeterli sayıp ikinci unsurun türünü veya iyelik ekini denetlememek.",
+      "check": "Seçtiğin iki adın arasına değil, tamlayana ilgi eki ekleyerek karşılaştır: tren istasyonu→trenin istasyonu. İkinci adın eki korunurken türün değişmesi ilk ek düzenini doğrular."
+    }
+  },
+  {
+    "id": "f093-noun-7",
+    "identity": "[\"f093-noun-7\",\"‘Okulun bahçe kapısı boyandı.’ cümlesindeki okulun bahçe kapısı grubunun zincirleme olduğuna hangi kanıt yeterlidir?\",\"\",[\"İçindeki her sözcüğün çoğul eki alması\",\"Bütün eklerin yapım eki olması\",\"Arada mutlaka niteleme sıfatı bulunması\",\"Bahçe kapısı grubunun kendi içinde isim tamlaması olması\",\"Tamlanan sözcüğün cümlede yer almaması\"],3,\"Bahçe + kapı-sı belirtisiz isim tamlamasıdır; bu bütün okulun unsuruyla daha geniş ilişki kurar. Böylece içte bir tamlama, dışta ona bağlanan ilişki vardır. Zincirlemeyi kanıtlayan yalnız sözcük sayısı değil bu iç yapıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Zincirleme isim tamlamasında bir adlar arası ilişki başka bir ad ilişkisinin içinde unsur olur. İçteki grup tek bir bütün gibi dış tamlayana veya dış tamlanana bağlanabilir; çözüm içten dışa ilerletilir.",
+        "Bir niteleme sıfatı eklenmesi kendi başına yeni isim tamlaması oluşturmaz. Zincirleme yapı için sözcük sayısından öte, kendi içinde tamlayan–tamlanan ilişkisi taşıyan bir iç grup gösterilir."
+      ],
+      "strategy": "Önce kapısı sözcüğünün hemen önceki adla kurduğu iç ilişkiyi ayır; sonra bu bütüne okulun unsurunun nasıl bağlandığını göster. Kanıtı kelime sayısına değil iki katmanlı ilişkiye dayandır.",
+      "steps": [
+        "Bahçe + kapı-sı içinde iki ad, ikinci addaki iyelik ekiyle belirtisiz isim tamlaması kurar. Önce [bahçe kapısı] grubunu tek bütün olarak işaretle.",
+        "Okulun unsuru bu iç gruba dışarıdan bağlanır: okulun [bahçe kapısı]. Böylece dış ilişkinin bir unsuru kendi içinde isim tamlaması taşımaktadır.",
+        "Zincirleme oluşu kanıtlayan, bahçe kapısı’nın kendi içinde isim tamlaması olmasıdır. Çoğul ekleri veya arada sıfat bulunması bu kanıt için gerekli değildir."
+      ],
+      "optionReasons": [
+        "Okulun, bahçe ve kapısı sözcüklerinin hepsi çoğul eki taşımaz. Zincirlemeyi çoğul ekleri değil iç içe ad ilişkileri belirler.",
+        "İlgi ve iyelik bu kuruluşta çekim görevindedir. Bütün eklerin yapım olması hem veriye aykırıdır hem zincirleme tanımı değildir.",
+        "Grubun içinde zorunlu bir niteleme sıfatı yoktur; olsa bile bir sıfat tek başına ikinci isim tamlaması kurmaz.",
+        "Bahçe kapısı kendi içinde belirtisiz tamlamadır ve okulun unsuruyla dış ilişkiye girer. İç unsurun tamlama olması zincirleme için gereken kanıttır.",
+        "Kapısı tamlanan olarak açıkça verilmiştir. Tamlananın yokluğu burada doğru bir gözlem değildir ve zincirleme oluşun koşulu da değildir."
+      ],
+      "commonError": "Okulun bahçe kapısı ile okulun büyük kapısı gruplarını yalnız üçer sözcük olmalarından aynı yapıda saymak.",
+      "check": "İç köşeli ayracı kaldırmadan dış ilişkiyi kur: okulun [bahçe kapısı]. Ayracın içinde iki ad ve kendi tamlama bağı bulunuyorsa katman kanıtı gerçekten vardır."
+    }
+  },
+  {
+    "id": "f093-noun-8",
+    "identity": "[\"f093-noun-8\",\"‘Komşunun eski evi satıldı.’ cümlesindeki eski sözcüğü isim tamlamasını nasıl etkiler?\",\"\",[\"Ev üzerindeki iyelik ekini kaldırır.\",\"Evi niteler; komşunun evi belirtili tamlaması sürer.\",\"Komşu sözcüğünü kişi zamirine çevirir.\",\"İki adı da sıfata çevirip tamlamayı yok eder.\",\"Tek başına ikinci bir isim tamlaması kurar.\"],1,\"Eski, ev adının niteliğini bildirir. Komşu-nun ve ev-i üzerindeki ilgi/iyelik ilişkisi korunur; belirtili tamlamada araya sıfat girebilir. Eski bir ad olmadığı için yeni bir iç isim tamlaması oluşturmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Belirtili isim tamlamasında bir adın ilgi ekiyle diğer adın iyelik eki arasındaki bağ korunurken tamlanan ayrıca nitelenebilir. Aradaki sıfat, bu adın hangi özellikte olduğunu açıklaştırır.",
+        "Bir nitelik sözcüğü, iki adı kendiliğinden başka sözcük türlerine dönüştürmez veya adların taşıdığı ekleri silmez. İnceleme sırasında sıfatın bağlantısı ile adlar arasındaki tamlama bağlantısı iki ayrı çizgiyle gösterilebilir."
+      ],
+      "strategy": "Eski sözcüğünü geçici olarak çıkarıp grubun iki adını ve eklerini kaydet. Sözcüğü geri koyduğunda hangi birime anlam kattığını ve iki ana adın eklerinde değişiklik olup olmadığını ayrı ilişkilerle sınayarak karar ver.",
+      "steps": [
+        "Komşu-nun tamlayan, ev-i tamlanandır. Bu iki ekin kurduğu komşunun evi bağı belirtili isim tamlamasıdır.",
+        "Eski sözcüğü “nasıl ev?” sorusunu karşılar; ev adının niteliğini belirtir. Komşunun veya evi sözcüklerinin ilgi/iyelik ekleri bu yüzden ortadan kalkmaz.",
+        "Eski evi niteler ve komşunun evi tamlaması sürer. Sıfatın varlığı tek başına ikinci bir isim tamlaması ya da zamir dönüşümü oluşturmaz."
+      ],
+      "optionReasons": [
+        "Evi sözcüğünün iyelik eki yazıda ve ilişkide durmaktadır. Sıfat eklemek bu eki kaldırmamıştır.",
+        "Eski, evin niteliğini bildirirken komşu-nun / ev-i ilgi–iyelik bağı korunur; belirtili tamlama devam eder.",
+        "Komşunun hâlâ ilgi eki almış ad unsurudur. Eski sözcüğünün eklenmesi onu kişi zamirine dönüştürmez.",
+        "İki ana ad, sahiplik/aitlik ilişkisi kurmayı sürdürür; niteleyici eklenmesi bu adları sıfat yapmaz ve tamlamayı yok etmez.",
+        "Eski bu kullanımda sıfattır; ikinci bir adla bağımsız isim tamlaması kurmaz. Dolayısıyla tek başına yeni bir iç isim tamlaması eklenmiş değildir."
+      ],
+      "commonError": "İsim tamlamasıyla sıfat ilişkisinin aynı grupta birlikte bulunamayacağını sanmak.",
+      "check": "Eski’yi kaldırınca komşunun evi kalır; geri ekleyince evin niteliği yeniden belirtilir. İki ana adın ekleri ve bağlantısı değişmiyorsa çözümün tutarlıdır."
+    }
+  },
+  {
+    "id": "f093-noun-9",
+    "identity": "[\"f093-noun-9\",\"‘Çantam kayboldu.’ cümlesindeki çantam sözcüğünün aitlik ilişkisi hangi açık grupla gösterilebilir?\",\"\",[\"Onun çantası\",\"Senin çantan\",\"Bizim çantamız\",\"Onların çantaları\",\"Benim çantam\"],4,\"Çanta-m birinci tekil iyelik taşır; benim çantam biçiminde açılır. Söylenmeyen benim tamlayanı ek sayesinde anlaşılır. Bu ek yüklemdeki kişi eki değil, çantanın kime ait olduğunu bildiren iyelik ekidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "İyelik ekleri adın kime ait olduğunu bildirir. Tekil kişilerde adın ardından gelen -(ı)m/-(i)m, -(ı)n/-(i)n ve -(s)ı/-(s)i farklı sahip kişileri gösterebilir; ekin ünlüsü tabanın son seslerine göre değişir.",
+        "Tamlayan zamir söylenmese de iyelik eki sahibin kişisini taşır. Tekil benim ile çoğul bizim aynı sahip sayısı değildir: sözüm ve sözümüz bunu ayırır; sizin sözünüz, onların sözleri başka kişilerdir. Açık tamlayan eklemek aitliği görünür kılar; adın sahiplik eki ile yüklemdeki kişi eki farklı görevlerdir."
+      ],
+      "strategy": "Çantam’ın sonundaki eki tabandan ayır ve hangi sahip kişisine ait olduğunu belirle. Sonra seçeneklerdeki açık tamlayan ile tamlanan ekinin aynı kişi bilgisini birlikte taşımasını ara.",
+      "steps": [
+        "Çantam, çanta + m biçimindedir. Ek adın aitliğini bildirir; kayboldu yükleminde eylemi yapan kişi eki olarak kullanılmaz.",
+        "-m birinci tekil sahibin, yani konuşanın aitliğini kurar. Açık tamlayan getirildiğinde bu kişi benim biçimiyle gösterilir.",
+        "Aynı ilişkiyi eksiksiz açan grup benim çantam’dır. Başka kişi zamiri ekleyip çantanın iyelik ekini değiştirmek özgün sahiplik bilgisini değiştirir."
+      ],
+      "optionReasons": [
+        "Onun çantası üçüncü tekil sahibin grubudur; özgün çantam’daki birinci tekil kişi bilgisiyle aynı değildir.",
+        "Senin çantan ikinci tekil kişiye aittir. Çanta-m yerine çanta-n kullanılması sahibi değiştirmiştir.",
+        "Bizim çantamız birinci çoğul aitliktir; çantam ise tek konuşana aitliği bildirir. Kişinin sayısı korunmamıştır.",
+        "Onların çantaları üçüncü çoğul sahiplik kurar; özgün sözcüğün birinci tekil iyeliğiyle uyuşmaz.",
+        "Benim tamlayanı ve çanta-m eki aynı birinci tekil sahipliği bildirir; düşen tamlayan doğru biçimde açılmıştır."
+      ],
+      "commonError": "Konuşanı gösteren tekil -m ile birinci çoğul -mız’ı veya üçüncü kişi iyeliğini birbirinin yerine kullanmak.",
+      "check": "Açık gruptan benim’i yeniden çıkar. Kalan çantam, başlangıçtaki sözcükle hem biçim hem sahip kişi bakımından aynı olmalıdır."
+    }
+  },
+  {
+    "id": "f093-noun-10",
+    "identity": "[\"f093-noun-10\",\"‘Öğretmenin ve öğrencinin çantası kapıda duruyor.’ cümlesinde öğretmenin ve öğrencinin sözcükleri ilgi eki almış iki tamlayan olarak kullanılmıştır. Bu tamlama grubunda ortak kullanılan unsur hangisidir?\",\"\",[\"İlgi eki taşımayan okul adı\",\"İki ayrı sıfat-fiil\",\"Tamlanan olan çantası\",\"Tamlayan olan kapıda\",\"Ayrılma eki olan ve\"],2,\"Öğretmenin ve öğrencinin iki tamlayandır; çantası ikisine bağlanan ortak tamlanandır. Ve bağlaçtır, bir durum eki değildir. Bu soru grubun dil bilgisel bağlantısını sorar; çantanın gerçek hayattaki paylaşımını ayrıca belirlemez.\"]",
+    "guidance": {
+      "knowledge": [
+        "İsim tamlamasında tamlayan ilişkiyi kuran, tamlanan ise ilişkilendirilen asıl adı taşıyan unsurdur. Bir tamlanan, bağlaçla sıralanmış birden çok tamlayanla ortak kullanılabilir.",
+        "Kök, bağlaçla sıralanan iki sözün ilgi eki almış tamlayan olduğunu açıkça verir. Dil bilgisel ortaklık, aynı unsurun iki tamlama bağını tamamlamasıdır; bu bağlantı tek başına gerçek dünyadaki eşya sayısını veya paylaşımını kesinleştirmez. Bağlaç da iki unsuru bağlayan ayrı sözcüktür, durum eki değildir."
+      ],
+      "strategy": "Kökte verilen iki ilgi ekli tamlayanı ve ve bağlacını ayır. Bu tamlayanları gruptaki aynı asıl ada ayrı çizgilerle bağlayarak ortak öğenin görevini bul; eşyaların gerçek sayısı hakkında ek koşul kurma.",
+      "steps": [
+        "Kök, öğretmenin ve öğrencinin sözcüklerini açıkça ilgi eki almış iki tamlayan olarak tanımlar. Öğretmen-in ve öğrenci-nin bağını bu verilmiş koşulla kur; ve bu iki tamlayanı birleştirir.",
+        "Her iki tamlayan çanta-sı sözcüğüne bağlanır: öğretmenin çantası ve öğrencinin çantası ilişkilerinde söylenen ortak öğe aynıdır.",
+        "Ortak kullanılan unsur tamlanan olan çantası’dır. Kapıda cümlenin yer bilgisidir; sorulan tamlama grubunun ortak tamlayanı değildir."
+      ],
+      "optionReasons": [
+        "Soru grubunda okul adı bulunmaz; verilen iki tamlayan ilgi eki taşıyan öğretmenin ve öğrencinin’dir.",
+        "Öğretmenin ve öğrencinin bu grupta ilgi ekli adlardır; iki sıfat-fiil olarak kurulmamışlardır. Ortak unsur da bunlar değil bağlandıkları addır.",
+        "Çantası, iki tamlayanın bağlandığı ortak tamlanandır. Dil bilgisel unsur doğru adlandırılır; gerçek çanta sayısı hakkında ek hüküm kurulmaz.",
+        "Kapıda bulunma durumundaki yer unsurudur; öğretmenin ve öğrencinin ile kurulan grubun tamlayanı değildir.",
+        "Ve ayrı bir bağlaçtır; -dan/-den ayrılma eki değildir. İki tamlayanı bağlar, ortak tamlananın yerini tutmaz."
+      ],
+      "commonError": "İki tamlayanı görünce gerçek dünyada zorunlu tek çanta veya iki çanta bulunduğunu çıkarmak ya da ve’yi ek saymak.",
+      "check": "Ortak kelimeyi her tamlayandan sonra tekrar ederek öğretmenin çantası ve öğrencinin çantası açılımını kur. Aynı kelimenin iki bağlantıda tamlanan olması çözümü denetler; eşya sayısı seçmek gerekmez."
+    }
+  },
+  {
+    "id": "f093-adj-1",
+    "identity": "[\"f093-adj-1\",\"‘Mavi uçurtma yükselirken çocuk gülümsedi.’ cümlesindeki mavi sözcüğünün görevi nedir?\",\"\",[\"Yükselme fiilinin miktarını bildirir.\",\"Uçurtma adının rengini bildiren niteleme sıfatıdır.\",\"Çocuk adının yerini tutan kişi zamiridir.\",\"İki yargıyı bağlayan bağlaçtır.\",\"Uçurtma adının ilgi ekidir.\"],1,\"Mavi, uçurtma adını renk bakımından niteler; niteleme sıfatıdır. Fiilin nasıl yapıldığını değil varlığın niteliğini bildirir. Zamir olmadığı için bir adın yerine geçmez; açık uçurtma adına bağlanır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Niteleme sıfatı bir varlığın renk, biçim, durum veya başka bir özelliğini bildirir. Tür kararının dayanağı, özellik sözünün hangi ada bağlandığıdır; aynı sözcük başka cümlede eylemi etkileyen bir zarf görevi de taşıyabilir.",
+        "Zamir adın yerini tutar; bağlaç sözcükleri veya yargıları bağlar. Sıfat ise açık adla niteleme ya da belirtme ilişkisi kurar. Bir sözcüğü bu görevlerden birine yerleştirirken cümlede değiştirdiği anlamı gösteririz."
+      ],
+      "strategy": "Cümledeki varlık adlarını belirleyip mavi’nin hangisine renk bilgisi kattığını ara. Bağlantıyı bulunca adın özelliğiyle yükselme eyleminin miktarını ayrı değerlendir.",
+      "steps": [
+        "Uçurtma ile çocuk cümlede açık adlardır. Mavi, uçurtmanın hangi renk olduğunu bildirir; çocuğun yerine kullanılan bir sözcük değildir.",
+        "“Nasıl bir uçurtma?” sorusuna mavi uçurtma grubu yanıt verir. Mavi’den kurulan anlam bağı yükselme fiiline değil bu ada gider.",
+        "Açık uçurtma adının renk niteliğini bildirdiği için mavi niteleme sıfatıdır. Bağlaç veya ad üzerinde çekim eki olarak açıklanamaz."
+      ],
+      "optionReasons": [
+        "Mavi yükselmenin ne kadar olduğunu anlatmaz; uçurtmanın rengini bildirir. Fiil miktarı ile ad niteliği karıştırılmıştır.",
+        "Mavi uçurtma adını renk yönünden niteler; açık adla kurulan bu bağ niteleme sıfatı değerlendirmesini doğrular.",
+        "Çocuk adı cümlede durmaktadır; mavi onun yerine geçmez. Zamir yorumu hem gönderimi hem açık uçurtmayla bağlantıyı kaçırır.",
+        "Mavi iki yargıyı birbirine bağlamaz; bir adın renk niteliğini taşır. Bağlaç görevi için gereken bir bağlama işlevi yoktur.",
+        "Mavi bağımsız bir sözcüktür; uçurtma adının üzerine bağlanan ilgi eki değildir. Nitelik bağıyla ek ilişkisi farklıdır."
+      ],
+      "commonError": "Sözcüğü rengin adı olduğu için her cümlede isim saymak veya cümlenin fiiline bağlayıp miktar zarfı demek.",
+      "check": "Mavi’yi çıkardığında hangi bilgi kayboluyor: yükselmenin miktarı mı, uçurtmanın rengi mi? Kaybolan ad niteliği, kurduğun sıfat bağlantısını denetler."
+    }
+  },
+  {
+    "id": "f093-adj-2",
+    "identity": "[\"f093-adj-2\",\"‘Bu kitabı seçtim; bunu akşam okuyacağım.’ cümlesinde bu ve bunu biçimlerinin görevleri sırasıyla hangisidir?\",\"\",[\"Kişi zamiri / niteleme sıfatı\",\"Belgisiz sıfat / kişi zamiri\",\"Soru sıfatı / soru zamiri\",\"Zarf / bağlaç\",\"İşaret sıfatı / işaret zamiri\"],4,\"Bu, açık kitap adını göstererek belirttiğinden işaret sıfatıdır. Bunu ikinci bölümde kitabı tekrar söylemeden karşılar; işaret zamiridir ve belirtme durum eki alır. Aynı kökün görevi cümle yapısıyla değişmiştir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bu, şu, o gibi işaret sözleri açık bir adı göstererek belirtebilir; adın söylenmediği kullanımda ise onun yerini tutabilir. Sıfat ile zamir ayrımı aynı sözcüğün cümledeki bağlantısına dayanır.",
+        "Durum eki almış bir ad hâlâ açık ad olabilir. Öte yandan bir işaret sözünün durum eki alarak nesne yerini doldurması, adın yerini tutan kullanımına eşlik edebilir. Sadece ekin varlığını değil hangi adın açıkça söylendiğini kontrol ederiz."
+      ],
+      "strategy": "Cümleyi seçtim ve okuyacağım bölümlerine ayır. Her bölümde işaret sözcüğünün bir adın yanında mı, yoksa önce söylenen adın yerinde mi kullanıldığını ayrı tespit et.",
+      "steps": [
+        "İlk bölümde bu, açık kitabı adını gösterir: bu kitabı seçtim. Kitap adının belirtme eki taşıması onun cümlede açıkça bulunmasını değiştirmez.",
+        "İkinci bölümde bunu, kitabı tekrar söylemeden okuyacağım eyleminin nesnesini karşılar. İlk bölümdeki nesneye işaretle gönderir.",
+        "İlk görev işaret sıfatı, ikinci görev işaret zamiridir. Aynı işaret kökü, açık ada bağlanma ile adın yerini tutma arasında görev değiştirmiştir."
+      ],
+      "optionReasons": [
+        "İlk bu bir insan adının yerine geçmez; kitabı belirtir. İkinci bunu da bir adı nitelemek yerine onun yerini tutar; iki etiket de uygun değildir.",
+        "İlk kullanımda belirsiz miktar değil işaretle belirleme vardır. İkinci kullanım da insana değil kitaba gönderdiğinden kişi zamiri eşleştirmesi yanlıştır.",
+        "İki bölümde de soru yoluyla aranan bir varlık yoktur; gösterilen kitap üzerinden işaret ilişkisi kurulmuştur.",
+        "Bu, fiilin derecesini belirten zarf değildir; bunu da iki yargıyı bağlamaz. Sözcüklerin adla ve nesneyle bağlantıları göz ardı edilmiştir.",
+        "Bu açık kitabı belirttiği için işaret sıfatıdır; bunu aynı adı tekrar etmeden karşıladığı için işaret zamiridir. İki bölüm doğru sırayla sınıflandırılır."
+      ],
+      "commonError": "Bu kökünün görevini değişmez saymak veya kitabı’nın çekim ekinden dolayı açık ad sayılmadığını düşünmek.",
+      "check": "İkinci bölümde bunu yerine kitabı koy: kitabı akşam okuyacağım. İlk bölümde ise bu’yu çıkarınca kitap adı hâlâ durur; iki görev böyle ayrı doğrulanır."
+    }
+  },
+  {
+    "id": "f093-adj-3",
+    "identity": "[\"f093-adj-3\",\"‘İkinci masaya ikişer tabak ve yarım ekmek bıraktık.’ cümlesindeki ikinci, ikişer ve yarım sözcükleri sırasıyla hangi sayı sıfatlarıdır?\",\"\",[\"Sıra / üleştirme / kesir\",\"Asıl / sıra / üleştirme\",\"Kesir / asıl / sıra\",\"Üleştirme / kesir / asıl\",\"Sıra / asıl / belgisiz\"],0,\"İkinci masanın sırasını; ikişer paylaştırılan tabak miktarını; yarım ekmeğin bir parçasını bildirir. Bu nedenle sıra, üleştirme ve kesir sayı sıfatlarıdır. Üçü de açık adları belirtir, adların yerine geçmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sayı sıfatlarının işi yalnız kesin adet bildirmek değildir. Asıl sayı miktarı, sıra sayı dizideki yeri, üleştirme paylaştırmayı, kesir sayı ise bir bütünün parçasını belirtir.",
+        "Türü belirlerken sayı kökünü değil adla kurulan anlamı inceleriz. Paylaştırma ekinin bulunması veya yarım gibi bir sözün kullanılması farklı ilişkilere işaret eder; her kullanımda hangi adın belirtildiği gösterilmelidir."
+      ],
+      "strategy": "İkinci, ikişer ve yarım için bağlandıkları adları eşleştir. Ardından sıralama, paylaştırma ve bütünün parçası anlamlarını bu üç bağ üzerinde sırayla denetle.",
+      "steps": [
+        "İkinci, masaya bağlanır ve hangi sıradaki masa olduğunu söyler. Burada masa adedi değil masanın sırası belirtilir.",
+        "İkişer, tabakların paylaştırılan miktarını; yarım ise ekmeğin bütününün bir bölümünü bildirir. Bu iki anlamı doğrudan adet saymayla birleştirme.",
+        "İstenen sırayla ikinci sıra, ikişer üleştirme, yarım kesir sayı sıfatıdır. Üç sözcük de açık adları belirtmektedir."
+      ],
+      "optionReasons": [
+        "İkinci masanın sırasını, ikişer tabakların dağıtımını, yarım ekmeğin parçasını belirtir. Sıra–üleştirme–kesir dizisi uygundur.",
+        "İkinci kesin adet değil sıra; ikişer sıra değil paylaşım; yarım da paylaşım değil bütünün parçasını verir. Üç ilişki yer değiştirmiştir.",
+        "İlk kullanım bir kesri bildirmez; son kullanım sıra bildirmez. Sayı anlamları sözcüklerin adlarla gerçek bağına göre ayrılmamıştır.",
+        "İkinci paylaştırma, ikişer kesir, yarım kesin adet işlevinde değildir. Ek ve anlam kanıtları bu diziyi karşılamaz.",
+        "İlk sıra değerlendirmesi uygundur; ikişer sıradan adet değil üleştirme, yarım belgisiz miktar değil kesir bilgisidir."
+      ],
+      "commonError": "Sözcüklerde sayı anlamı gördüğünde hepsini asıl sayı saymak veya doğru üç etiketi yanlış sıraya koymak.",
+      "check": "Üç ifadenin altına hangi sırada, her birine ne kadar, bütünün ne kadarı sorularını sırayla yaz. Her soru kendi ad grubundaki anlamla uyuşmalı."
+    }
+  },
+  {
+    "id": "f093-adj-4",
+    "identity": "[\"f093-adj-4\",\"‘İki bilet değil, yalnız bir bilet aldım.’ cümlesinde bir sözcüğü hangi görevde kullanılmıştır?\",\"\",[\"Belgisiz zamir\",\"Soru sıfatı\",\"İlgi zamiri\",\"Asıl sayı sıfatı\",\"Fiilin niteliğini bildiren zarf\"],3,\"İki ile karşılaştırma ve yalnız vurgusu, bir sözcüğünün kesin tek adedi bildirdiğini açıklaştırır. Bilet adını belirten asıl sayı sıfatıdır. Herhangi bir zaman/varlık anlamındaki belgisiz bir kullanım burada amaçlanmamıştır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir sözcüğü kesin tek adet anlamıyla bir adı belirttiğinde asıl sayı sıfatı olabilir. Herhangi bir varlığı veya kesinleştirilmemiş zamanı bildiren bir kullanımında ise belgisiz sıfat görevi bulunabilir.",
+        "Kesin miktar yorumu bağlamdaki karşılaştırma ve vurguya dayanır. Sayı sıfatı açık adı belirtirken zamir adın yerini tutar; tek bir sözcüğün görünüşü bu iki ilişkiyi kendiliğinden belirlemez."
+      ],
+      "strategy": "Bir’in hangi ada bağlandığını belirle; sonra iki ile yapılan karşılaştırmayı ve yalnız vurgusunu oku. Bu bağlamın kesin adet mi, herhangi bir varlık mı seçtirdiğini kanıtla.",
+      "steps": [
+        "Bir sözcüğü açık bilet adına bağlanmıştır. Biletin yerini tek başına tutmadığından burada zamir çözümü kurma.",
+        "“İki bilet değil” karşılaştırması ve “yalnız” vurgusu alınan biletin kesin tek adet olduğunu açıklaştırır; belirsiz bir gün gibi kullanım değildir.",
+        "Kesin miktarla bilet adını belirleyen bu kullanım asıl sayı sıfatıdır. Soru sormadığı ve fiilin niteliğine bağlanmadığı için diğer görevler uygun değildir."
+      ],
+      "optionReasons": [
+        "Bir burada bilet adının yerine geçmez; açık adı kesin miktarla belirtir. Belgisiz zamir değerlendirmesi hem bağlantıyı hem tek adet vurgusunu kaçırır.",
+        "Cümle biletin hangisi veya kaç tane olduğunu soru yoluyla aramıyor; verilen karşılaştırmada kesin bir miktar bildiriyor.",
+        "Tamlanan bir adın yerine geçen -ki eki bulunmaz. Bir bağımsız sayı sözcüğüdür ve bilet adını belirtir.",
+        "İkiyle karşılaştırma ve yalnız vurgusu bir’in kesin tek adet anlamını verir; açık bilet adına bağlanan asıl sayı sıfatıdır.",
+        "Bir burada alma eyleminin nasıl gerçekleştiğini nitelemez; alınan biletin miktarını belirtir. Zarf bağlantısı kurulamaz."
+      ],
+      "commonError": "Bir’i her yerde belgisiz saymak veya açık tek adet karşılaştırmasını görmeden yalnız sözcük listesine göre karar vermek.",
+      "check": "Bir yerine tek sözcüğünü getirerek yalnız tek bilet anlamını denetle. Cümledeki ikiye karşıtlık korunuyorsa miktar yorumunun bağlam dayanağını bulmuşsundur."
+    }
+  },
+  {
+    "id": "f093-adj-5",
+    "identity": "[\"f093-adj-5\",\"‘Bazı öğrenciler kütüphanede bekliyor.’ cümlesindeki bazı sözcüğü için doğru açıklama hangisidir?\",\"\",[\"Öğrenci adının yerini tutan belgisiz zamirdir.\",\"Beklemek fiilinin nasıl yapıldığını bildirir.\",\"Açık öğrenciler adını belirsiz miktarla belirten sıfattır.\",\"Kesin iki öğrenci bildiren sayı sıfatıdır.\",\"Öğrenci adını çoğul yapan çekim ekidir.\"],2,\"Bazı, açık öğrenciler adının belirsiz bölümünü/miktarını belirtir; belgisiz sıfattır. Bazıları bekliyor biçiminde adın yerini tutsaydı zamir olurdu. Bekleme eyleminin biçimini açıklamadığından zarf da değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Belgisiz sıfat, açık bir adın miktarını veya kapsamını kesin bir rakama bağlamadan belirtir. Birkaç, birtakım, her gibi sözcükler bu yolla adları sınırlayabilir; her kullanımın bağlantısı cümlede aranır.",
+        "Belgisiz zamir adın tekrar edilmediği yerde onun yerini tutar; belgisiz sıfat ise adla birlikte bulunur. Eylemin nasıl veya ne kadar yapıldığını bildiren zarf bağlantısı bunlardan ayrı bir görevdir."
+      ],
+      "strategy": "Bazı’dan etkilenen sözcüğü bulup adın açıkça bulunup bulunmadığını denetle. Ardından verilen kapsamı kesin adet veya eylem biçimi sanmadan sınıflandır.",
+      "steps": [
+        "Bazı sözcüğünden sonra öğrenciler adı açıkça verilmiştir. Bazı bu adı ortadan kaldırıp onun yerine geçmez.",
+        "Söz, öğrenci kümesinin kesin rakamı belirtilmemiş bir bölümünü anlatır. Bekleme eyleminin nasıl yapıldığını değil hangi miktardaki öğrencilerden söz edildiğini sınırlar.",
+        "Açık öğrenciler adını belirsiz miktarla belirten bazı bir sıfattır. Bazıları bekliyor biçimine geçilseydi adın yerini tutan zamir kullanımı oluşurdu."
+      ],
+      "optionReasons": [
+        "Öğrenciler adı cümlede açıkça durmaktadır. Bazı onun yerine geçmediği için bu kullanım belgisiz zamir değildir.",
+        "Bazı beklemenin sessizce veya hızlı yapılması gibi eylem biçimini bildirmez; öğrenci kümesinin kapsamını belirtir.",
+        "Açık öğrenciler adının miktarı kesin rakam verilmeden sınırlandırılır. Belgisiz sıfat görevini karşılayan açıklama budur.",
+        "Bazı kesin iki öğrenci demek değildir. Cümlede bir adet bilgisi verilmediğinden asıl sayı sıfatı yorumu kurulamaz.",
+        "Öğrenciler adını çoğul yapan unsur -ler ekidir; bazı ise bağımsız belirtici sözcüktür. Sözcükle çekim eki farklı birimlerdir."
+      ],
+      "commonError": "Belirsiz miktar bildiren her sözcüğü zamir saymak veya bazı’nın yerine soruda verilmeyen kesin bir sayı koymak.",
+      "check": "Öğrenciler adını çıkarıp bazıları bekliyor sözünü kur; bu değişimin zamir görevini oluşturduğunu fark et. Özgün cümlede açık adın korunması sıfat kararını denetler."
+    }
+  },
+  {
+    "id": "f093-adj-6",
+    "identity": "[\"f093-adj-6\",\"‘Hangi sokağa döneceğiz?’ cümlesinde hangi sözcüğünün görevi nedir?\",\"\",[\"Dönme fiilinin süresini belirleyen zarf\",\"Açık sokak adını soru yoluyla belirten sıfat\",\"Sokak adının yerine geçen işaret zamiri\",\"Aitlik bildiren iyelik eki\",\"Yargıları bağlayan bağlaç\"],1,\"Hangi, açık sokağa adını soru yoluyla belirtir; soru sıfatıdır. Sokağın yönelme eki taşıması adı ortadan kaldırmaz. Hangisine döneceğiz biçiminde açık ad düşseydi soru zamiri kullanımı oluşurdu.\"]",
+    "guidance": {
+      "knowledge": [
+        "Soru sıfatı, açık bir adı soru yoluyla belirtir; yanıt seçilen adın hangi varlık olduğunu veya niteliğini tamamlar. Soru zamiri ise adın kendi yerinde bulunur ve yanıtında o ad geri gelir.",
+        "Bir adın durum eki alması onu açık ad olmaktan çıkarmaz. Adla soru sözcüğü arasındaki bağ incelenirken sözcüğün yalın sözlük biçimiyle cümledeki çekimli biçimi birlikte görülebilir."
+      ],
+      "strategy": "Hangi’nin bağlı olduğu birimin sokak adı mı yoksa dönme eylemi mi olduğunu belirle. Yönelme ekini ayırıp adın hâlâ cümlede açık bulunduğunu denetledikten sonra görevini seç.",
+      "steps": [
+        "Sokağa biçimi sokak adının yönelme durumudur; ad cümlede söylenmiştir. Sadece ek aldı diye düşmüş kabul edilmez.",
+        "Hangi, bu açık sokak adını soru yoluyla belirler. Örneğin yanıt bir sokağı seçerek ad grubunu tamamlar; dönmenin süresini belirtmez.",
+        "Açık adı soru yoluyla belirttiği için hangi soru sıfatıdır. Hangisine denilseydi açık sokak adı söylenmeden onun yerini tutan farklı yapı kurulurdu."
+      ],
+      "optionReasons": [
+        "Hangi, dönmenin ne kadar sürdüğünü sormaz; seçilecek sokağı belirtir. Fiil süresi zarfı açıklaması bağlantıyı yanlış yere kurar.",
+        "Sokağa açık ad olarak durur ve hangi onu soru yoluyla belirtir; soru sıfatı değerlendirmesi doğrudur.",
+        "Hangi sokak adının yerini tutmaz ve işaretle gösterme görevi de taşımaz. Açık adın önündeki soru ilişkisi gözden kaçırılmıştır.",
+        "Hangi sahiplik bildiren bir ek değildir; bağımsız soru sözcüğüdür. Sokağa biçimindeki ek de yönelmedir, iyelik değildir.",
+        "Hangi iki yargıyı bağlamaz; cümlede bir adı sorarak belirtir. Soru işlevi bağlaç göreviyle açıklanamaz."
+      ],
+      "commonError": "Sokağa’nın ekli olmasını açık adın düşmesi sanmak veya soru işaretini bütün soru sözcükleri için aynı türün kanıtı saymak.",
+      "check": "Soruya şu sokağa diye bir ad grubu yanıtı ver. Hangi’nin yeri dolarken sokağa adının korunması, sorulanın açık adın seçimi olduğunu gösterir."
+    }
+  },
+  {
+    "id": "f093-adj-7",
+    "identity": "[\"f093-adj-7\",\"‘Yaşlı komşular bankta oturdu.’ cümlesi ‘Yaşlılar bankta oturdu.’ biçiminde yeniden kuruluyor. İkinci cümlede yaşlılar nasıl açıklanır?\",\"\",[\"Bank sözcüğünü niteleyen sıfat\",\"Oturma fiilini niteleyen durum zarfı\",\"Mutlaka kişi zamiri\",\"Çoğul ekiyle fiile dönüşmüş yüklem\",\"Düşen komşular adını karşılayan adlaşmış sıfat\"],4,\"Yaşlı niteliği korunmuş, komşular adı düşmüştür. Yaşlılar bu kişileri adlandıracak biçimde kullanıldığı için adlaşmış sıfattır. Ad görevine geçmesi onu otomatik kişi zamiri yapmaz; niteliği taşıyan yapı sürer.\"]",
+    "guidance": {
+      "knowledge": [
+        "Niteleme sıfatının bağlı olduğu ad düşer ve nitelik sözcüğü o varlıkları adlandırırsa adlaşmış sıfat oluşur. Nitelik anlamı sürerken sözcük ad görevinde çoğul ve durum ekleri alabilir.",
+        "Ad görevine geçme, sözcüğün her durumda kişi zamiri olduğu anlamına gelmez. Adlaşmış sıfatta varlığı nitelendiren anlam korunur; incelemede önceki cümle düşen adı açıkça sağlıyorsa o ad geri getirilebilir."
+      ],
+      "strategy": "İlk cümlede yaşlı ile komşular arasındaki bağı bul; ikinci cümlede hangi adın artık söylenmediğini karşılaştır. Geriye kalan sözcüğün nitelik anlamını koruyup korumadığına göre görevini açıkla.",
+      "steps": [
+        "İlk cümlede yaşlı, komşular adını niteler. Bankta ise oturma yeri bilgisidir ve yaşlı’nın nitelediği ad değildir.",
+        "İkinci cümlede komşular adı söylenmez; yaşlılar o kişileri adlandıracak biçimde kullanılır. Yaşlı olma niteliği bu dönüşümde korunmuştur.",
+        "Yaşlılar, düşen komşular adını karşılayan adlaşmış sıfattır. Çoğul eki alması onu fiil yapmaz; kişileri karşılaması da tek başına kişi zamiri saydırmaz."
+      ],
+      "optionReasons": [
+        "Yaşlılar bank adının niteliğini bildirmez. Verilen dönüşümde komşuları adlandıran unsur olmuştur.",
+        "Sözcük oturmanın nasıl gerçekleştiğini anlatmaz; oturan kişileri karşılar. Durum zarfı açıklaması özneyle eylem niteliğini karıştırır.",
+        "Kişileri adlandırması tek başına kişi zamiri olduğunu göstermez. Yaşlı niteliği ve önceki niteleme kuruluşu korunmaktadır.",
+        "-lar burada çoğuldur; sözcüğü fiile dönüştüren yapım eki değildir. Yüklem oturdu biçiminde ayrı verilmiştir.",
+        "Komşular adı düşerken onun niteliğini taşıyan yaşlı sözcüğü bu kişileri adlandırır; adlaşmış sıfat tanımı doğru uygulanır."
+      ],
+      "commonError": "Adlaşmış sıfatı yalnız kişi gösterdiği için kişi zamiri saymak veya çoğul eki gördüğünde sözcük türünün fiile dönüştüğünü düşünmek.",
+      "check": "İkinci cümleye komşular adını geri getirerek yaşlı komşular bağlantısını kur. Nitelik değişmeden adın yeniden görünmesi adlaşmanın hangi eksiltmeden doğduğunu doğrular."
+    }
+  },
+  {
+    "id": "f093-adj-8",
+    "identity": "[\"f093-adj-8\",\"‘Daha geniş bir oda arıyoruz.’ cümlesinde daha ve geniş sözcüklerinin görevleri sırasıyla hangisidir?\",\"\",[\"Geniş sıfatını derecelendiren zarf / odayı niteleyen sıfat\",\"İşaret zamiri / kişi zamiri\",\"İki ayrı isim tamlaması\",\"Sayı sıfatı / belgisiz zamir\",\"İlgi eki / iyelik eki\"],0,\"Geniş oda adının niteliğidir, niteleme sıfatıdır. Daha ise bu niteliğin karşılaştırmalı derecesini belirler, zarftır. Bir adın önündeki bütün sözcüklerin sıfat olduğu varsayımı bu ayrımı kaçırır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Zarf yalnız fiile bağlanmaz; bir sıfatın veya başka bir zarfın derecesini de belirleyebilir. Oldukça serin hava grubunda oldukça serinliğin derecesini, serin ise hava adının niteliğini verir.",
+        "Derecelendirme sözünün hangi birime bağlandığı önemlidir. Bir adın önünde sıfatla yan yana durmak, o grubun bütün sözcüklerini sıfat yapmaz; adla nitelik ve nitelikle derece arasında iki farklı bağlantı bulunabilir."
+      ],
+      "strategy": "Oda adına ulaşan niteleme okunu ve o niteliğin derecesine ulaşan oku ayrı çiz. Daha ile geniş’in birbirinden farklı hangi birimleri etkilediğini gösterip görevleri istenen sırayla yaz.",
+      "steps": [
+        "Geniş, açık oda adının özelliğini bildirir: nasıl bir oda? Geniş oda. Bu bağlantı niteleme sıfatı görevini verir.",
+        "Daha, doğrudan oda adının yerini tutmaz; geniş niteliğinin karşılaştırmalı derecesini belirtir. Bağlandığı birim bir sıfattır.",
+        "İstenen sırayla daha derecelendiren zarf, geniş ise odayı niteleyen sıfattır. İki ayrı ad tamlaması veya kişi gönderimi kurulmamıştır."
+      ],
+      "optionReasons": [
+        "Daha geniş niteliğinin derecesini belirleyen zarftır; geniş ise oda adını niteler. İki bağlantı ve sıra doğru açıklanır.",
+        "Bu iki sözcük hiçbir adın yerine kişi veya nesne olarak geçmez. İşaret ve kişi zamiri türleri kurulamaz.",
+        "Grupta iki ayrı adlar arası tamlama yoktur; bir ad nitelenmekte, o nitelik de derecelendirilmektedir.",
+        "Daha kesin adet bildirmez; geniş de adın yerinde kullanılan belgisiz zamir değildir. Görevler ad ve nitelikle ilişkilendirilmemiştir.",
+        "İki unsur da bağımsız sözcüktür; ilgi veya iyelik eki değildir. Derece ve nitelik ilişkileri ek adlarıyla açıklanamaz."
+      ],
+      "commonError": "Adın önünde görünen her sözcüğü sıfat sayarak daha’nın geniş’e bağlandığını kaçırmak.",
+      "check": "Önce daha’yı çıkar: geniş oda niteliği kalır. Sonra geniş’i kaldırdığında daha oda aynı anlam bağını kurmaz; daha’nın doğrudan ada değil niteliğe bağlı olduğunu böyle denetle."
+    }
+  },
+  {
+    "id": "f093-adj-9",
+    "identity": "[\"f093-adj-9\",\"‘Mavi gözlü çocuk kapıyı açtı.’ cümlesindeki mavi gözlü grubu için doğru açıklama hangisidir?\",\"\",[\"Göz adını düşürmüş kişi zamiridir.\",\"Çocuğun nasıl açtığını bildiren tek sözcüklü zarftır.\",\"İki yargıyı birbirine bağlar.\",\"Birlikte çocuk adını niteleyen kurallı birleşik sıfattır.\",\"Hiçbir ada bağlanmayan sayı sıfatıdır.\"],3,\"Mavi gözlü grubu bütün olarak çocuk adını niteler. Sıfat tamlamasının -lü ile genişlemesi kurallı birleşik sıfat oluşturur. Açma eyleminin biçimini anlatmadığından zarf, adın yerine geçmediğinden zamir değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir söz grubu bütün olarak bir adı niteleyebilir. Kurallı birleşik sıfatın bu türünde sıfat tamlaması -lı/-li/-lu/-lü ekiyle genişler ve başka bir varlığın özelliğini anlatır; kısa kollu gömlek bu kuruluşu gösterir.",
+        "Grubun içindeki ilişkiyle dışarıdaki niteleme ilişkisi ayrı incelenir. İçte özellik bir ada bağlanırken genişlemiş bütün, dıştaki adı niteler. Sözcük sayısı tek başına grubun fiile bağlandığını veya iki yargı kurduğunu göstermez."
+      ],
+      "strategy": "Mavi göz iç grubunu ve -lü ile oluşan mavi gözlü bütününü ayrı işaretle. Sonra bu bütünün cümlede hangi adı nitelediğini belirle; açma eylemine bağlamadan yapı görevini seç.",
+      "steps": [
+        "İçte mavi, göz adının renk niteliğidir. Göz sözcüğü düşmemiş; -lü alarak mavi gözlü grubunun içinde kalmıştır.",
+        "Mavi gözlü bütün olarak çocuk adını niteler: mavi gözleri olan çocuk anlamı kurulur. Açma eyleminin nasıl yapıldığı anlatılmaz.",
+        "Bu kuruluş, sıfat tamlamasının -lü ile genişleyip adı nitelemesiyle oluşan kurallı birleşik sıfattır. Doğru açıklama grubu bütün olarak çocuk adına bağlar."
+      ],
+      "optionReasons": [
+        "Göz adı gözlü içinde korunmaktadır ve grup çocuk adının yerine kişi zamiri olarak geçmez; çocuğu nitelemektedir.",
+        "Mavi gözlü iki sözcüklü niteleme grubudur; kapıyı açmanın biçimini bildiren tek sözcüklü zarf değildir.",
+        "Grup içinde iki yargı yoktur; çocuk adını niteleyen tek bir özellik ilişkisi vardır. Bağlaç görevi kurulamaz.",
+        "Mavi göz grubu -lü ile genişleyerek çocuk adını birlikte niteler; bu kurallı birleşik sıfat kuruluşudur.",
+        "Grup bir sayı bildirmez ve adsız değildir; açık çocuk adına bağlanır. Hem sayı türü hem bağlantısızlık iddiası yanlıştır."
+      ],
+      "commonError": "Yalnız mavi’yi inceleyip gözlü ile kurduğu bütünün dışarıda çocuk adına bağlandığını atlamak.",
+      "check": "Grubu mavi gözleri olan biçiminde açarak çocuk adının önüne getir. Aynı nitelik korunuyorsa grubun nitelediği adı ve birleşik kuruluşu doğru eşleştirmişsindir."
+    }
+  },
+  {
+    "id": "f093-adj-10",
+    "identity": "[\"f093-adj-10\",\"‘Okunacak romanları ayrı rafa koydum.’ cümlesindeki okunacak sözcüğünün sıfat-fiil sayılmasının gerekçesi hangisidir?\",\"\",[\"Bütün -acak sesleri mutlaka isim köküdür.\",\"Romanların sayısını kesinleştirir.\",\"Fiil kökünden kurulmuş, eylem anlamını koruyarak roman adını niteler.\",\"Roman adının yerini tutan soru zamiridir.\",\"Yalnız rafın kime ait olduğunu bildirir.\"],2,\"Okunacak, oku- fiilinden kurulmuştur ve romanların okunmasıyla ilgili eylem anlamını sürdürerek adı niteler. Bu kök+görev birlikteliği sıfat-fiil kanıtıdır. Her benzer ek görünüşünü kalıcı isim veya zamir saymak doğru değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sıfat-fiil, fiil kök veya gövdesinden kurulur; eylem anlamını sürdürerek bir adı niteler. Silinmiş kayıt sözünde kayıtla ilgili silinme eylemi, niteleme ilişkisinin içinde korunur.",
+        "Bir ekin sesçe -acak/-ecek gibi görünmesi tek başına yeterli değildir. Fiil tabanı, eylem anlamı ve açık adı niteleme görevi birlikte aranır; çekimli yüklemin zaman kullanımı ve kalıcı adlaşmış sözlük anlamı ayrıca ayrılır."
+      ],
+      "strategy": "Okunacak’ın ek öncesi fiil tabanını geri kur; ardından romanları ile kurduğu anlam bağını açıkla. Sıfat-fiil kanıtını yalnız ek adına değil, fiil anlamıyla adın nitelenmesine birlikte dayandır.",
+      "steps": [
+        "Oku- fiilinden edilgen okun- tabanı kurulur; okunacak bu eylem tabanının -acak biçimli kullanımını taşır. Başlangıç bir varlık adı değildir.",
+        "Okunacak, romanları adını onların okunmasıyla ilgili eylem anlamıyla niteler. Cümlenin çekimli yüklemi ise koydum’dur; okunacak burada bağımsız gelecek zaman yüklemi değildir.",
+        "Fiilden gelme, eylem anlamını koruma ve açık roman adını niteleme özellikleri birlikte sıfat-fiili kanıtlar. Romanların sayısını veya rafın sahibini belirleme görevi aranmaz."
+      ],
+      "optionReasons": [
+        "Ek görünüşü kökün isim olduğunu kanıtlamaz. Burada oku- fiili ve romanları niteleyen eylem anlamı açıkça bulunur; bütün -acak biçimleri için tek tür kurulamaz.",
+        "Okunacak roman adedini kesinleştirmez; romanların okunmasıyla ilgili bir nitelik kurar. Sayı sıfatı açıklaması uygun değildir.",
+        "Fiil tabanı korunur ve okunma eylemiyle ilgili anlam roman adını niteler; sıfat-fiilin hem yapı hem görev kanıtı verilmiştir.",
+        "Romanları adı cümlede açıkça durur; okunacak onun yerini soru yoluyla tutmaz. Soru zamiri görevi yoktur.",
+        "Sözcük rafın kime ait olduğunu söylemez; romanların okunmasıyla ilgili nitelemeyi kurar. Aitlik yorumu yanlış ada ve ilişkiye yönelir."
+      ],
+      "commonError": "Yalnız -acak sesini tanıyıp sözcüğü bağlamdan bağımsız gelecek zaman yüklemi saymak veya fiil anlamını incelemeden kalıcı isim demek.",
+      "check": "Cümlede yüklemi koydum olarak ayır; kalan okunacak romanlar grubunu okunması söz konusu olan romanlar diye aç. Fiil anlamıyla adın niteliği birlikte korunuyorsa sıfat-fiil gerekçesi tamamdır."
+    }
+  },
+  {
+    "id": "f093-pron-1",
+    "identity": "[\"f093-pron-1\",\"‘Bana bu mektubu sen getirdin.’ cümlesindeki bana sözcüğü nasıl açıklanır?\",\"\",[\"Bu sözcüğünün çoğul biçimi\",\"Ben kişi zamirinin bulunma durumu\",\"Ben kişi zamirinin yönelme durumu\",\"Mektup adının iyelik eki\",\"Sen zamirinin ayrılma durumu\"],2,\"Bana, ben kişi zamirinin yönelme durumudur; ben + e biçiminde bene değil bana olur. Bu biçim değişimi zamiri başka bir türde sözcüğe dönüştürmez. Bulunma bende, ayrılma benden biçimindedir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kişi zamirleri konuşanı, dinleyeni veya sözü edilen kişiyi adını tekrar etmeden karşılar. Bu zamirler adlar gibi durum ekleriyle yükleme bağlanabilir; durum görevi zamirin kök kişi bilgisinden ayrı incelenir.",
+        "Bir kişi zamiri çekimlenirken sesçe değişse de gönderildiği kişi aynı kalabilir; görünüşteki değişim tek başına yeni sözcük veya çoğul oluşturmaz. Durum ilişkisi, zamirin bağlandığı yükleme kime, kimde veya kimden sorularından hangisinin uygun düştüğüyle denetlenir."
+      ],
+      "strategy": "Getirdin yüklemine bana sözcüğünün hangi ilişkiyle bağlandığını sor. Sonra bu çekimli biçimi kişiyi koruyarak yalın zamire geri götür; kişi ve durum bilgisini birlikte seç.",
+      "steps": [
+        "“Kime getirdin?” sorusuna bana yanıtı gelir. Bu, mektubun yöneldiği alıcıyı gösteren yönelme ilişkisidir; nerede bulunma veya nereden ayrılma değildir.",
+        "Bana’nın yalın biçimi ben’dir. Ben + e çekiminin yerleşmiş sonucu bana olur; biçimdeki değişim konuşan kişi bilgisini değiştirmez.",
+        "Sonuç ben kişi zamirinin yönelme durumudur. Ben’in bulunması bende, ayrılması benden olur; bunları bana biçimiyle karıştırma."
+      ],
+      "optionReasons": [
+        "Bu’nun çoğul biçimi bunlar’dır. Bana ise ben zamirinin yönelme çekimidir; başka bir işaret kökünün çoğulu değildir.",
+        "Ben kişi bilgisi doğrudur; ancak bulunma biçimi bende’dir. Bana, kime sorusunun yönelme ilişkisini taşır.",
+        "Bana, ben kişi zamirinin yönelme biçimidir. Hem yalın zamir hem cümledeki alıcı ilişkisi doğru belirlenmiştir.",
+        "Bana, mektup adına bitişen bir iyelik eki değildir; ayrı ve çekimli bir kişi zamiridir. Mektubun kime ait olduğu bu sözcükle söylenmez.",
+        "Sen’in ayrılma biçimi senden’dir. Verilen bana ne o kişiyi ne ayrılma ilişkisini taşır."
+      ],
+      "commonError": "Ben’in sesçe değişmiş yönelmesini yeni kök sanmak veya bana ile bende/benden biçimlerini birbirinin yerine kullanmak.",
+      "check": "Aynı kişinin bulunma biçimi bende, ayrılma biçimi benden olur; bunları yönelme bana ile karşılaştır. Getirme eyleminde alıcıyı soran kime sorusunun hangi biçimi gerektirdiğini yeniden denetle."
+    }
+  },
+  {
+    "id": "f093-pron-2",
+    "identity": "[\"f093-pron-2\",\"‘Deniz toplantıya katıldı. O, önerisini açıkladı.’ sözünde ikinci cümledeki O, verilen bağlama göre hangi türdedir?\",\"\",[\"Deniz adının yerini tutan kişi zamiri\",\"Öneri adını niteleyen sıfat\",\"İki yargıyı bağlayan bağlaç\",\"Konuşmanın nasıl yapıldığını bildiren zarf\",\"Deniz adının ilgi eki\"],0,\"O yerine Deniz koyunca anlam korunur: Deniz önerisini açıkladı. İnsan adının yerine geçen o kişi zamiridir. Açık bir adı nitelemediğinden sıfat değildir; bu sonuç bağlamdaki belirli gönderime dayanır.\"]",
+    "guidance": {
+      "knowledge": [
+        "O, bir kişi adını tekrar etmeden karşıladığında kişi zamiri olabilir. Açık bir adın önünde onu göstererek belirtmesi ise farklı bir görevdir; bu iki kullanımda adın yeriyle adın yanında olma ayrılır.",
+        "Gönderim, zamirle bağlamda karşılanan varlık arasındaki ilişkidir. Tür kararına ulaşırken önce hangi varlığın karşılandığını buluruz. Bir sözcüğün yalnız büyük harfle başlaması, gönderildiği varlığın kişi olduğunu tek başına kanıtlamaz."
+      ],
+      "strategy": "İkinci cümlede O’nun yerini önceki cümlede verilen adla doldur. Kurulan anlamın hangi varlığa gönderdiğini ve zamirin yanında ayrıca nitelediği açık bir ad bulunup bulunmadığını denetle.",
+      "steps": [
+        "Önceki cümle toplantıya katılan Deniz adlı kişiyi verir. İkinci cümlenin O öznesini bu adla açınca “Deniz, önerisini açıkladı” anlamı kurulur.",
+        "O, öneri adının önünde onu niteleyen unsur değildir; ikinci cümlede Deniz adının yerini tutar. Gönderim insan adına yapılmıştır.",
+        "Verilen bağlama göre O, Deniz adını karşılayan kişi zamiridir. Bu sonuç bağlamdaki gönderime dayanır; o sözcüğünün her kullanımında aynı alt tür olacağı iddia edilmez."
+      ],
+      "optionReasons": [
+        "O yerine Deniz konduğunda anlam korunur; insan adının yerini tutan kişi zamiri değerlendirmesi bağlamla uyumludur.",
+        "O, öneri adını niteleyen bir söz değildir; açıklayan kişiyi karşılayan özne konumundadır. Açık ada sıfat bağlantısı kurulmaz.",
+        "O ikinci cümlenin öznesidir; iki yargıyı birbirine bağlayan unsur değildir. Zamir görevi bağlaçla karıştırılmıştır.",
+        "O konuşmanın nasıl yapıldığını bildirmez; açıklayan kişiyi adlandırmadan karşılar. Eylem biçimini belirleyen zarf değildir.",
+        "O, Deniz adına eklenmiş bir ilgi eki değil ayrı sözcüktür. İkinci cümlede adın yerini tutma görevi vardır."
+      ],
+      "commonError": "O sözcüğünün türünü yalnız şekline göre sabitlemek veya adın yerinde durmasıyla adın önünde bulunmasını aynı ilişki saymak.",
+      "check": "İki cümleyi Deniz toplantıya katıldı; Deniz önerisini açıkladı biçiminde aç. İkinci ad yerine O kullanılması anlamı koruyorsa kişi gönderimini doğrudan göstermiş olursun."
+    }
+  },
+  {
+    "id": "f093-pron-3",
+    "identity": "[\"f093-pron-3\",\"‘Kalemi buldum; onu masaya bıraktım.’ cümlesinde onu sözcüğü verilen gönderime göre nedir?\",\"\",[\"Kalem adını niteleyen işaret sıfatı\",\"Belirtme durum eki almamış kişi zamiri\",\"Yalnız bir soru zamiri\",\"Kalem adının yerini tutan işaret zamiri\",\"Bırakma fiilinin miktar zarfı\"],3,\"Onu, kalemi biçiminde açılır; insan dışındaki nesnenin adını göstererek karşılar. Bu nedenle işaret zamiridir ve belirtme durum eki taşır. Açık kalem adının önünde bulunmadığından işaret sıfatı değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "İşaret zamirleri bir varlığın adını göstererek karşılayabilir ve durum eki alabilir. Açık bir adı belirten işaret sıfatından farkı, cümlede adın kendi yerini doldurmasıdır.",
+        "O kökünün kişi veya işaret zamiri olarak değerlendirilmesinde gönderildiği varlık önemlidir. İnsan dışındaki nesneye gönderim, o nesnenin cümledeki ekli ad biçimi geri konularak gösterilebilir; durum eki bu gönderimi ortadan kaldırmaz."
+      ],
+      "strategy": "Onu’nun hangi önceki nesneye gönderdiğini bul ve bırakma yükleminin yanına o adı uygun çekimiyle geri getir. Açık adı niteleme ile adın yerini tutma arasındaki farkı bu açılımla kanıtla.",
+      "steps": [
+        "İlk bölüm kalemi adlandırır. İkinci bölümde onu yerine kalemi konursa “Kalemi masaya bıraktım” anlamı korunur.",
+        "Onu, açık kalem adının önünde durmaz; bu adı tekrar etmeden onun nesne yerini doldurur. Verilen gönderim insan dışındaki kaleme yapılmıştır.",
+        "Bu nedenle onu işaret zamiridir ve belirtme durumu taşır. Nesneye gönderdiği için kişi zamiri, soru kurulmadığı için soru zamiri değildir."
+      ],
+      "optionReasons": [
+        "Kalem adı ikinci bölümde onu’nun yanında açıkça bulunmaz; onu bu adın yerini tutmaktadır. İşaret sıfatı açıklaması adın yanında olmayı gerektirirdi.",
+        "Verilen gönderim kalem nesnesinedir; ayrıca onu belirtme durumunu taşır. Hem kişi türü hem ek yokluğu iddiası uygun değildir.",
+        "Burada hangi kişi veya nesne diye sorulan bir ad alanı yoktur; önceden verilen kalem işaretle karşılanmaktadır.",
+        "Onu, kalemi biçiminde açılır ve nesne adının yerini göstererek tutar. İşaret zamiri açıklaması verilen gönderimle uyumludur.",
+        "Onu bırakmanın ne kadar yapıldığını bildirmez; bırakılan nesneyi karşılar. Miktar zarfı ilişkisi kurulamaz."
+      ],
+      "commonError": "O kökünü her zaman kişi zamiri saymak veya belirtme eki aldığı için zamirliğin kaybolduğunu düşünmek.",
+      "check": "Onu yerine kalemi’yi koyup aynı yüklemi koru. Eylemin belirli nesnesi ve gönderilen nesne değişmiyorsa işaret zamiri ile durum çekimini birlikte doğrulamışsındır."
+    }
+  },
+  {
+    "id": "f093-pron-4",
+    "identity": "[\"f093-pron-4\",\"‘Ece aynada kendini gördü.’ cümlesinde kendini hangi türdedir?\",\"\",[\"Belgisiz sıfat\",\"Ece’ye dönen dönüşlülük zamiri\",\"Ayna adının yerine geçen soru zamiri\",\"Ayrı yazılan bağlaç\",\"Görme fiilinin zaman zarfı\"],1,\"Kendini, özne Ece’yi karşılar; eylemin etkisi özneye döner. Kendi sözcüğünün bu kullanımı dönüşlülük zamiridir. Cümlede açık bir adı belirleyen sıfat veya soru yoluyla bir ad arayan zamir yoktur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir olayda eylemi yapan varlık ile eylemden etkilenen varlık aynı da farklı da olabilir. Gönderimi incelemek için özne ile nesne ayrı belirlenir; sonra bu iki ögenin hangi varlığı karşıladığı karşılaştırılır.",
+        "Bir adın yerini tutan sözcüğün görevi, cümlede hangi varlığı karşıladığına bağlıdır. Bir sıfat açık bir adı niteler; soru yoluyla ad arayan kullanım ise cevabı henüz belirtilmemiş bir varlığı sorar. Bu işlevleri yalnız ses benzerliğiyle değil cümledeki ilişkileriyle ayırmalısın."
+      ],
+      "strategy": "Gördü eylemini yapan kişiyi önce belirle; sonra kendini yerine aynı kişinin adını nesne biçiminde koy. Yapanla görülen arasındaki ilişkiyi bu karşılaştırmadan çıkar.",
+      "steps": [
+        "Gördü yükleminin öznesi Ece’dir; görme işini yapan kişi açıkça adlandırılmıştır. Aynada sözü görmenin yerini verir.",
+        "Kendini yerine Ece’yi koyunca Ece’nin aynada yine kendisini gördüğü anlamı kurulur. Görülen kişiyle gören kişi aynıdır.",
+        "Kendini, özne Ece’ye dönen dönüşlülük zamiridir. Ayna adını soru yoluyla karşılamaz veya görmenin zamanını bildirmez."
+      ],
+      "optionReasons": [
+        "Kendini açık bir adı belirsiz miktarla belirtmez; Ece’nin yerini nesne olarak karşılar. Belgisiz sıfat görevi yoktur.",
+        "Gören Ece ile görülen kişi aynıdır; kendini özneye geri gönderir. Dönüşlülük zamiri değerlendirmesi bu ilişkiyi doğru açıklar.",
+        "Gönderim aynaya yapılmaz ve bir soru da sorulmaz. Ayna yer bilgisinde dururken kendini Ece’yi karşılar.",
+        "Kendini yargıları bağlayan bir sözcük değildir; çekimli zamir olarak görülen kişinin yerini tutar.",
+        "Kendini görmenin ne zaman olduğunu bildirmez. Zaman zarfı yerine aynı özneye gönderilen nesne vardır."
+      ],
+      "commonError": "Aynada kelimesini görünce kendini’nin de aynaya gönderdiğini sanmak veya türü yalnız kelimedeki eke bakarak seçmek.",
+      "check": "“Kim gördü?” ve “kimi gördü?” sorularını ayrı yanıtla. İkisinde de Ece kişisine ulaşman, dönüşlülük bağını cümlenin iki görevi üzerinden denetler."
+    }
+  },
+  {
+    "id": "f093-pron-5",
+    "identity": "[\"f093-pron-5\",\"‘Katılımcıların hepsi salona girdi.’ cümlesindeki hepsi için doğru açıklama hangisidir?\",\"\",[\"Salon adını niteleyen sıfat\",\"Girme fiilinin nasıl yapıldığını bildiren zarf\",\"Belirli tek kişinin özel adı\",\"İki yargıyı bağlayan bağlaç\",\"Katılımcıları ayrı ayrı adlandırmadan karşılayan belgisiz zamir\"],4,\"Hepsi, katılımcı adını tekrar etmeden kümenin bütün üyelerini karşılar; belgisiz zamirdir. Belgisiz zamir mutlaka miktarın az veya bilinmez olması demek değildir. Hepsi açık bir adın önünde sıfat olarak kullanılmıyor.\"]",
+    "guidance": {
+      "knowledge": [
+        "Belgisiz zamirler varlıkları tek tek adlarını söylemeden genel veya belirsiz biçimde karşılar. Kimi zamir kümenin bir bölümünü, kimi zamir kümenin tamamını gösterebilir; bütünlük bildirmesi bu sınıfı tek başına ortadan kaldırmaz.",
+        "Belgisiz sıfat açık bir ada bağlıdır; zamir ise adın yerini tutabilir. İsim tamlamasında zamirin tamlanan görevinde kullanılması da mümkündür; sözcük türüyle grup içindeki unsur görevi farklı düzlemlerdir."
+      ],
+      "strategy": "Hepsi’nin açık bir adı mı nitelediğini, yoksa katılımcıları yeniden adlandırmadan mı karşıladığını incele. Tüm kümenin anlatılmasıyla tek tek kişi adı verilmesini aynı şey saymadan görevini belirle.",
+      "steps": [
+        "Katılımcıların, grubun ilgi eki taşıyan tamlayanıdır. Hepsi ise bu kümedeki kişileri karşılayan tamlanan yerindedir; yanında nitelediği açık bir ad bulunmaz.",
+        "Hepsi kümenin bütün üyelerini kapsar; ancak üyelerin adları tek tek verilmez. Bu kapsam, onun belgisiz zamir olarak kullanılmasını engellemez.",
+        "Katılımcıları ayrı ayrı adlandırmadan karşılayan hepsi belgisiz zamirdir. Salon adını nitelemez ve girme eyleminin nasıl yapıldığını bildirmez."
+      ],
+      "optionReasons": [
+        "Salon adı hepsi’nin nitelediği açık ad değildir. Hepsi katılımcıları karşılar; salona ise yönelinen yeri bildirir.",
+        "Hepsi girişin sessizce veya hızlı yapılmasını anlatmaz; giren kişileri karşılayan zamir görevi taşır.",
+        "Sözcük belirli bir kişinin özel adı değildir; grubun bütün üyelerini tek tek adlarını vermeden karşılar.",
+        "Hepsi iki yargıyı birbirine bağlamaz. Katılımcıların hepsi grubunda adın yerini tutan unsurdur.",
+        "Katılımcılar tek tek adlandırılmadan bütün küme karşılanır; hepsi bu kullanımda belgisiz zamirdir. Kapsamın tüm olması bu türü değiştirmez."
+      ],
+      "commonError": "Belgisiz sözcüğünü yalnız “kaç kişi olduğu bilinmiyor” diye tanımlayıp hepsi’nin bütün küme bildirmesini zamir türüne aykırı saymak.",
+      "check": "Hepsi yerine bütün katılımcılar ifadesini koyarak cümlenin kapsadığı grubu denetle. Kapsam korunurken birinde adın zamirle karşılandığını, diğerinde açık ad kullanıldığını görmelisin."
+    }
+  },
+  {
+    "id": "f093-pron-6",
+    "identity": "[\"f093-pron-6\",\"‘Kimi insanlar erken gelir.’ ve ‘Kimi aradın?’ cümlelerindeki kimi sözcüklerinin görevleri sırasıyla hangisidir?\",\"\",[\"Soru zamiri / işaret sıfatı\",\"Kişi zamiri / belgisiz sıfat\",\"Belgisiz sıfat / soru zamiri\",\"İki cümlede de bağlaç\",\"İki cümlede de kişi zamiri\"],2,\"İlk kimi, açık insanlar adını kesin olmayan bir bölümle belirten belgisiz sıfattır. İkinci kimi, aranan kişinin adı yerine sorulduğu için soru zamiridir. Aynı yazılış, aynı sözcük türünü garanti etmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir sözcüğün belirsiz bir bölümü belirtmesiyle soru yoluyla kimliği araması aynı görev değildir. İlkinde kapsam bildirilebilir; ikincide yanıtla doldurulacak bir ad yeri bulunur.",
+        "Sıfatın bağlı olduğu ad cümlede açıkça söylenir; zamir adın kendi yerini doldurur. Kimi gibi aynı yazılı biçimler bu görevlerden birden fazlasını taşıyabildiği için her cümlenin kuruluşu ayrı incelenir."
+      ],
+      "strategy": "İki kimi kullanımını ayrı çöz: ilkinde insanlar adının açık varlığını, ikincide soruya hangi adın yanıt olacağını göster. İlişkiyi bulduktan sonra türleri cümle sırasıyla eşleştir.",
+      "steps": [
+        "“Kimi insanlar” grubunda insanlar adı açıktır. Kimi bu adın kesin olmayan bir bölümünü belirtir; adın yerini tutmaz.",
+        "“Kimi aradın?” sorusunda aranan kişinin adı söylenmemiştir ve yanıt olarak istenir. Kimi bu adın nesne yerinde soru yoluyla durur.",
+        "İlk kimi belgisiz sıfat, ikinci kimi soru zamiridir. Ortak yazılış, iki cümlenin farklı ad bağlantısını ortadan kaldırmaz."
+      ],
+      "optionReasons": [
+        "İlk cümle soru sormaz; ikinci kimi de açık bir adı göstererek belirten sıfat değildir. Her iki etiket cümle görevleriyle uyuşmaz.",
+        "İlk kimi insanlar adının yerinde değildir; ikinci kullanım da bir adı belirsiz miktarla nitelememektedir. Adla ilişkiler ters değerlendirilmiştir.",
+        "İlk kimi açık insanlar adını belirsiz bölümle belirtir; ikinci kimi aranan kişinin adı yerine sorulur. Sıfat–soru zamiri sırası doğrudur.",
+        "Bu iki kullanım sözcük veya yargıları bağlama görevi yapmaz; ilkinde ad belirleme, ikincide adın yerinde soru vardır.",
+        "İlk kullanımda açık adı belirten sıfat, ikincide sorulan adın yerini tutan zamir bulunur; iki kullanımı da kişi zamiri saymak görev farklarını siler."
+      ],
+      "commonError": "Kimi biçimini tek bir türün değişmez işareti sayarak ilk cümledeki açık adı veya ikinci cümledeki soru işlevini atlamak.",
+      "check": "İlk cümlede kimi yerine bazı konduğunda ad bağı korunur. İkinci cümleye bir kişi adıyla yanıt verilebilmesi de soru zamirinin hangi yeri doldurduğunu ayrıca denetler."
+    }
+  },
+  {
+    "id": "f093-pron-7",
+    "identity": "[\"f093-pron-7\",\"‘Benim defterim çizgili, seninki kareli.’ cümlesinde seninki sözcüğündeki -ki nedir?\",\"\",[\"Senin defterin diye açılabilen ilgi zamiri\",\"Ayrı yazılması gereken bağlaç\",\"Açık defter adını niteleyen bulunma eki\",\"Soru zamiri oluşturan her zaman ayrı bir sözcük\",\"Çoğul eki\"],0,\"Seninki, senin defterin biçiminde açılır; -ki tamlanan adın yerini tutan ilgi zamiridir. Evdeki defterdeki gibi açık adı niteleyen yer grubu kurmaz. İki yargıyı bağlayan ayrı ki de değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "İlgi zamiri -ki, isim tamlamasındaki tamlanan adın söylenmediği yerde onu karşılar. Tamlayan üzerindeki aitlik ilişkisi korunur; eksik ad bağlamdan geri getirildiğinde zamirin neyi karşıladığı görünür olur.",
+        "Sıfat yapan -ki açık bir adı niteleyen grup kurabilir; bağlaç ki ise yargılar arasında bağ kuran ayrı sözcüktür. İki ek türü de bitişik yazılabildiğinden yazımın yanında yer tutma ve niteleme görevleri ayrılmalıdır."
+      ],
+      "strategy": "Seninki’yi önceki defter adıyla açarak hangi tamlananı karşıladığını bul. Sonra adın yerini tutma sonucunu açık adı niteleme ve ayrı bağlama görevleriyle karşılaştır.",
+      "steps": [
+        "İlk bölümde benim defterim verilmiştir; ikinci bölümde seninki, senin defterin biçiminde açılır. Karşılanan ad bağlamda açıkça defter’dir.",
+        "Seninki içindeki -ki, ikinci bölümde söylenmeyen defter adını karşılar. Açılımda senin ile defterin arasında aitlik ilişkisi korunur.",
+        "Tamlanan adın yerini tutan bu -ki ilgi zamiridir. Açık bir adı niteleyen bulunma grubu veya ayrı yazılan bağlaç değildir."
+      ],
+      "optionReasons": [
+        "Seninki = senin defterin açılımında -ki tamlanan adın yerini karşılar. İlgi zamiri açıklaması bağlamla uyumludur.",
+        "Bu -ki, iki yargıyı bağlayan ayrı ki değildir; senin ile defterin aitlik ilişkisini ad söylenmeden sürdürür ve bitişik yazılır.",
+        "Seninki’den sonra nitelediği açık defter adı gelmez. Ayrıca burada bulunma -de/-da ekiyle kurulmuş bir yer grubu yoktur.",
+        "Cümle soru yoluyla bir ad aramaz; -ki bir tamlananı karşılayan ektir. Ayrı yazılma iddiası da bu kullanıma uymaz.",
+        "Çoğul -lar/-ler ile gösterilir. Buradaki -ki sayı bildirmek yerine tamlanan adın yerini tutar."
+      ],
+      "commonError": "Her bitişik -ki’yi aynı görevde saymak veya seninki içindeki senin bölümünü görünce son ekin adın yerini tuttuğunu atlamak.",
+      "check": "Seninki yerine senin defterin yazıp kareli yüklemini koru. Açılımın anlamı ve aitlik kişisi aynıysa -ki’nin karşılayabildiği tamlananı doğru bulmuşsundur."
+    }
+  },
+  {
+    "id": "f093-pron-8",
+    "identity": "[\"f093-pron-8\",\"‘Biliyorum ki evdeki dosya seninki değil.’ cümlesinde sırasıyla ki, evdeki içindeki -ki ve seninki içindeki -ki nasıl ayrılır?\",\"\",[\"Üçü de ilgi zamiridir.\",\"Üçü de bağlaçtır.\",\"İlgi zamiri / bağlaç / soru sıfatı\",\"Bağlaç / sıfat yapan -ki / ilgi zamiri\",\"Sıfat yapan -ki / kişi eki / bağlaç\"],3,\"Biliyorum ki yapısındaki ki bağlaçtır. Evdeki dosya grubunda -ki yer ifadesini açık ada bağlayarak sıfat yapar. Seninki ise senin dosyan yerine kullanılır; ilgi zamiridir. Bitişik yazılan iki ekin görevleri farklıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bağlaç ki, yargıları ilişkilendiren ve ayrı yazılan sözcüktür. Ek olan -ki ise bitişik yazılır; fakat bütün bitişik -ki’ler aynı görevde değildir. Görev için ekin hangi söz grubunu kurduğuna bakılır.",
+        "Yer veya zaman grubunu açık bir ada nitelik olarak bağlayan -ki sıfat yapar. İsim tamlamasındaki söylenmeyen tamlananı karşılayan -ki ise ilgi zamiridir. Birinde açık ad nitelenir, diğerinde adın yeri tutulur."
+      ],
+      "strategy": "Cümledeki üç ki’yi ayrı işaretle; her birinde yargı bağlama, açık adı niteleme veya tamlananı karşılama işlerinden hangisinin bulunduğunu göster. Sonucu metindeki sırayla yaz.",
+      "steps": [
+        "“Biliyorum ki ...” bölümündeki ki iki yargıyı bağlar ve ayrı yazılır. Bu ilk kullanım bir adın yerini tutan ek değildir.",
+        "Evdeki dosya grubunda -ki, evde yer bilgisini açık dosya adına niteleyici olarak bağlar. Seninki ise senin dosyan biçiminde açılır ve dosya adının yerini tutar.",
+        "Metin sırasıyla bağlaç ki, sıfat yapan -ki ve ilgi zamiri -ki içerir. Bitişik yazılan son iki ekin farklı görevlerini sıra içinde koru."
+      ],
+      "optionReasons": [
+        "İlk ki yargıları bağlar, ikinci açık dosya adını niteler; yalnız son -ki tamlanan adın yerini tutar. Üçünü ilgi zamiri saymak iki görevi siler.",
+        "Yalnız ilk ki ayrı bağlaçtır. Evdeki ve seninki içindeki ekler yargı bağlayan ayrı sözcükler değildir.",
+        "İlk ki adın yerinde kullanılmaz; evdeki bir bağlaç değildir; seninki de soru yoluyla ad aramaz. Üç etiket de sırayla uyuşmaz.",
+        "Biliyorum ki’de bağlaç, evdeki dosya’da sıfat yapan ek, seninki’de adın yerini tutan ilgi zamiri vardır. Üç işlev ve sıra doğru verilmiştir.",
+        "İlk kullanım sıfat yapan ek değildir; evdeki kişi ekiyle kurulmaz; seninki de ayrı bağlaç değildir. Sözcüklerin görevleri yanlış türlere bağlanmıştır."
+      ],
+      "commonError": "İki ekin bitişik yazıldığını görüp ikisini de ilgi zamiri saymak veya üç doğru türü metindeki sırayı denetlemeden sıralamak.",
+      "check": "Evdeki’yi evde olan diye, seninki’yi senin dosyan diye aç. İlk açılım dosya adını nitelemeyi, ikinci açılım onun yerinin tutulmasını; ayrı ki de yargı bağını doğrular."
+    }
+  },
+  {
+    "id": "f093-pron-9",
+    "identity": "[\"f093-pron-9\",\"‘Evim geniş. Dün buraya geldim.’ sözünde evim ve geldim sözcüklerindeki son -m seslerinin görevleri sırasıyla nedir?\",\"\",[\"İki sözcükte de çoğul eki\",\"Ev adına aitlik bildiren iyelik / yüklemde kişiyi bildiren kişi eki\",\"İki sözcükte de ilgi zamiri\",\"Yüklemde kişi eki / ev adına ayrılma durumu\",\"İki sözcükte de soru edatı\"],1,\"Evim, benim evim diye açılır; -m aitlik bildiren iyelik ekidir. Geldim yükleminde -m eylemi yapanın birinci tekil kişi olduğunu bildirir. Bu yüzden birincisi ek hâlindeki iyelik, ikincisi yüklem kişi ekidir; açık ben zamiriyle de aynı şey değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "İyelik eki bir ada gelerek aitliği bildirir; kişi eki çekimli yüklem üzerinde işi yapan ya da yargının kişisini gösterir. Aynı m sesi ad ve fiil üzerinde bu farklı görevlerin parçası olabilir.",
+        "Açık kişi zamiri bağımsız sözcüktür; bir ekin birinci kişiyi bildirmesi cümlede ayrıca ben sözcüğünün yazıldığı anlamına gelmez. Görev karşılaştırmasında önce tabanın ad mı yüklem mi olduğu, sonra ekin kurduğu ilişki bulunur."
+      ],
+      "strategy": "Evim’i ve geldim’i kendi cümlelerindeki tabanlarıyla ayır. Birinde sahibin, ötekinde yüklemin kişi bilgisinin nasıl açılabildiğini gösterip son m’leri bu iki ilişkiye göre sırala.",
+      "steps": [
+        "Evim, ev + im biçimindedir ve benim evim açılımı kurulur. Sondaki m’yi taşıyan ek ev adının kime ait olduğunu bildirir.",
+        "Geldim, gel-di-m kuruluşunda çekimli yüklemdir. Son -m gelme eylemini yapanın birinci tekil kişi olduğunu bildirir; ben kişi bilgisi yüklemden anlaşılır.",
+        "İstenen sıra ad üzerinde iyelik, yüklem üzerinde kişi ekidir. Bu iki ses benzerliği ne çoğul ne ilgi zamiri görevi oluşturur."
+      ],
+      "optionReasons": [
+        "Çoğul görevi veren -lar/-ler burada sorulan son m sesleri değildir. Evim sahiplik, geldim yüklem kişisi bildirir.",
+        "Evim’de adın aitliği, geldim’de yüklemin birinci tekil kişisi gösterilir. İyelik–kişi eki sırası doğrudur.",
+        "İlgi zamiri -ki bu iki sözcükte bulunmaz. Son m’leri adın yerini tutan -ki ile eşitlemek biçim ve görevi karıştırır.",
+        "Görevlerin yönü ters kurulmuştur; ayrıca evim ayrılma -dan/-den eki taşımaz. İlk söz adın aitliğini, ikinci söz yüklem kişisini bildirir.",
+        "Soru edatı mı/mi bu sözcüklerde kullanılmaz. Son m’ler cümlede soru kurmak yerine iki farklı çekim ilişkisi taşır."
+      ],
+      "commonError": "Birinci kişiye işaret eden her m’yi aynı ek saymak veya yüklemdeki kişi bilgisini açıkça yazılmış ben zamiriyle özdeşleştirmek.",
+      "check": "Evim’in önüne benim, geldim’in önüne ben getir. Birinin adın sahibini, ötekinin yüklemin yapanını açıklaştırması iki ek görevinin bağımsız kontrolüdür."
+    }
+  },
+  {
+    "id": "f093-pron-10",
+    "identity": "[\"f093-pron-10\",\"‘Merve, Selin’e onun notunu verdi.’ cümlesinde onun zamirinin gönderimi hakkında, başka bağlam verilmediğinde hangi yargı doğrudur?\",\"\",[\"Kesinlikle yalnız Selin’i karşılar.\",\"Kesinlikle yalnız Merve’yi karşılar.\",\"Onun burada açık not adını niteleyen sayı sıfatıdır.\",\"Cümlede iyelik ilişkisi kurmak olanaksızdır.\",\"Notun Merve’ye mi Selin’e mi ait olduğunu cümle tek başına kesinleştirmez.\"],4,\"Onun, verilen bağlamda Merve’nin veya Selin’in notuna gönderilebilir. Zamirin son anılan kişiye mutlaka döneceği kuralı yoktur. Kesin sahip isteniyorsa kişi adı açıkça tekrarlanmalı veya ek bağlam verilmelidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Zamir gönderimi, bir zamirin bağlamda hangi varlığı karşıladığını belirleyen ilişkidir. Önceki ve sonraki cümleler, açık kişi adları veya aitlik bilgisi bu ilişkiyi netleştirebilir; yalnız sözcük sırası bütün bağlamların yerine geçmez.",
+        "Bir kişinin bir eşyayı başka birine vermesi, tek başına eşyanın sahibini adlandıran ayrı bir bilgi değildir. Eylemi yapan, alıcı ve sahip farklı ilişkiler olarak incelenir. Kesin gönderim için cümlede gerçekten bulunan kanıt kullanılmalıdır."
+      ],
+      "strategy": "Veren, alan ve notun sahibi yerlerini ayır. Onun yerine verilen kişi adlarını aitlik biçimleriyle ayrı ayrı koyup hangi okumanın metinle elendiğine dair açık kanıt ara.",
+      "steps": [
+        "Cümle veren kişiyi Merve, alıcıyı Selin olarak açıkça belirtir. Onun ise notun sahibine gönderir; veren veya alıcı olmak tek başına bu son ilişkiyi kesinleştirmez.",
+        "Onun yerine Merve’nin koyunca Merve’nin notunu verme, Selin’in koyunca Selin’in notunu verme okumaları kurulabilir. Cümlede bu iki sahiplikten birini eleyen ek bilgi yoktur.",
+        "En az bu iki okuma mümkün kaldığından cümle notun Merve’ye mi Selin’e mi ait olduğunu tek başına kesinleştirmez. Belirsizliği gidermek için amaçlanan kişinin adı açıkça söylenebilir."
+      ],
+      "optionReasons": [
+        "Selin alıcı olarak son anılan kişidir; bu bilgi notun sahibinin kesinlikle yalnız Selin olduğunu göstermez. Merve’nin notu okuması da dışlanmamıştır.",
+        "Merve veren kişidir; bu görev her verilen notun ona ait olmasını zorunlu yapmaz. Selin’in notunu verme okuması da mümkündür.",
+        "Onun burada kesin adet bildiren sayı sıfatı değildir; notun sahibine gönderim kuran zamirdir. Açık not adının bulunması aitlik grubunun parçasıdır.",
+        "Onun notu bir aitlik ilişkisi kurar; belirsiz kalan sahip kişinin kimliğidir. Gönderimin kesin olmaması iyelik ilişkisinin kurulamadığı anlamına gelmez.",
+        "Cümle verenle alıcıyı belirlese de onun için tek bir sahip kişi seçtiren bağlam vermez. Merve ve Selin okumaları arasında kesin karar çıkarılamaz."
+      ],
+      "commonError": "Zamiri otomatik son anılan kişiye bağlamak veya notu verenin zorunlu olarak onun sahibi olduğunu varsaymak.",
+      "check": "İki ayrı cümle kur: Merve, Selin’e Merve’nin notunu verdi; Merve, Selin’e Selin’in notunu verdi. İkisi de özgün cümlenin bir okuması olabildiği için kesin tek sahibi seçmek için ek kanıt gerektiğini doğrula."
+    }
+  }
+]

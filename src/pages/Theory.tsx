@@ -75,7 +75,16 @@ export function Theory({
             ))}
           </ul>
           {guide ? (
-            <GuidedReading guide={guide} />
+            <GuidedReading
+              guide={guide}
+              recallSupplement={
+                narrativeById.has(lesson.id) ? (
+                  <Suspense fallback={<p>Hatırlama alanı açılıyor…</p>}>
+                    <NarrativeRecall id={lesson.id} />
+                  </Suspense>
+                ) : undefined
+              }
+            />
           ) : (
             <>
               <VisualLab id={lesson.id} />

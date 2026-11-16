@@ -1,3 +1,17 @@
+# Kaynak 029 — 200 eski soruda tam öğretici yardım
+
+Matematik, fizik, kimya, biyoloji, Türkçe ve tarih paketlerinde her kartın kökü, beş seçeneği, anahtarı, ipucu, açıklaması ve ilgili rehberi okundu. Yazarlar ve bağımsız okuyucular seçili gerçek MEBİ/OGM/Aurelia metin sayfalarını ve kaynak şekillerini yeniden okudu; eski okuma sayıları yeni okuma sayılmadı. İncelemeler anahtarı görünen tam incelemelerdir; kör çözüm iddiası yoktur. Ham kitaplar, özel bağlantılar ve Drive kimlikleri depoya eklenmez.
+
+Her yeni yardım pozitif ön bilgi, bireysel yöntem, üç ilerleyen adım, beş özgül şık nedeni, sık hata ve ayrı denetim içerir. Bilgiyi doğrudan doğru şıkla eşitleyen erken açıklamalar, bilimsel gösterimde eksik hata zinciri ve tarih yüzyılı gerekçesi bağımsız incelemede onarıldı. Ham 200 kart ve bütün eski banka korunur. Güncel kimlik doğrulaması yapılmadan tarihî veya değiştirilmiş kâğıda yeni yardım bağlanmaz; kâğıdın kendi rehberi önceliklidir.
+
+Zar sorusunda eşit hacmin tek başına birim derişim değişimini vermediği 2 L karşı örneğiyle gösterildi. Görünür soru 1 L/1 mol koşulunu açık verir. Bağlı eski çözümlü örnekte birim hacim ve miktar ayrılır; 2 L için derişim toplamı 10 iken miktar toplamı 20 olabilir. Örneğin bütün özgün alanları eşleşmeden altı düzeltmenin hiçbiri uygulanmaz. İsim tamlamasında iki ilgi ekli tamlayan koşulu açıklaştırıldı. Azak karşılaştırmasında 1700 XVII., 1711 XVIII. yüzyıldadır; aynı yüzyıl iddiası kaldırılıp farklı tarihler karşılaştırılır. Ham kaynaklar ve anahtarlar değişmez.
+
+Saklanan öğrenci yanıtlarına dokunmadan 31 paketin eski yazılı hatırlaması son rehber aşamasına geri bağlandı. Bu yeni bağımsız doğru veya puan oluşturmaz. Kaynak/pedagoji kabulü, tarayıcı, paket ve yayın kabulüyle aynı şey değildir; güncel teknik sonuçlar QA kaydındadır. Sonraki 300 kartın kaynak hazırlığı bu 200 kartın tamamlanma sayısına dahil edilmez.
+
+---
+
+## Önceki kaynak ve kabul kayıtları
+
 # Güncel 0.18 kaynak adayı
 
 Doğrulanmış çalışma sırasındaki 479 başlığın tamamı anlatım ve bağımsız soruyla eşleşir. Kaynakta 480 ayrıntılı rehber, 480 yerleşik kopya kağıdı ve 5.883 özgün soru vardır. 0.17 üzerine 130 yeni anlatım eklenmiş; kısa kalan 28 eski anlatım 553 bölüm, 168 çözümlü örnek ve 178 hatırlama etkinliğiyle derinleştirilmiştir. İleri sorular 28 ayrı setten açılır.

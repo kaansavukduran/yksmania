@@ -1,4 +1,4 @@
-import type { LessonGuide } from "./guides/types";
+import type { LessonGuide, WorkedExample } from "./guides/types";
 
 type GuideCopyRevision = {
   id: string;
@@ -100,6 +100,87 @@ const revisions: readonly GuideCopyRevision[] = [
   },
 ];
 
+// The complete original worked example gates these six linked corrections.
+// A partially changed example must not receive a mixture of old and new units.
+const membraneWorkedBefore: WorkedExample = {
+  title: "İki bölmede maddeyi koru",
+  prompt:
+    "Eşit ve sabit hacimli iki bölmede O₂ derişimleri dışta 8, içte 2 model birimidir. Elektriksel etki yok, uygun yol açık. Bir model adımı dıştan içe 1 birim aktarırsa yeni derişimler ve toplam ne olur?",
+  strategy: "Önce net yönü belirle; verenden çıkarıp alana aynı miktarı ekle.",
+  steps: [
+    {
+      label: "Yön",
+      explanation:
+        "O₂ küçük apolar örnektir; uygun yolda pasif net geçiş 8’den 2’ye olur.",
+      expression: "8 > 2",
+    },
+    {
+      label: "İki tarafı güncelle",
+      explanation:
+        "Dış bölme 1 birim kaybeder; eşit hacimli iç bölme aynı 1 birimi kazanır.",
+      expression: "Dış:8−1=7; iç:2+1=3",
+    },
+    {
+      label: "Korunumu denetle",
+      explanation:
+        "Toplam başlangıçta ve sonda 10’dur. Model gerçek süre veya hücrenin oksijen tüketimini içermez.",
+      expression: "8+2=7+3=10",
+    },
+  ],
+  answer: "Dış7, iç3; toplam10.",
+  check: "Dengeye yaklaşılmıştır; fark 6’dan 4’e indi.",
+  pitfall:
+    "Yalnız içi artırıp dışı sabit bırakmak kapalı iki bölmede madde yaratır.",
+};
+const membraneWorkedAfter: Pick<WorkedExample, "prompt" | "answer"> & {
+  steps: {
+    index: number;
+    explanation: string;
+    expression: string;
+  }[];
+} = {
+  prompt:
+    "Her biri 1 model hacim birimi olan eşit ve sabit hacimli iki bölmede O₂ derişimleri dışta 8, içte 2 model miktar birimi / model hacim birimidir. Derişim, madde miktarının hacme oranıdır. Elektriksel etki yok, uygun yol açık; üretim ve tüketim yoktur. Bir model adımı dıştan içe 1 model miktar birimi aktarırsa yeni derişimler ve toplam madde miktarı ne olur?",
+  steps: [
+    {
+      index: 1,
+      explanation:
+        "Aktarılan miktar 1 model miktar birimidir. Her bölmenin hacmi 1’dir. Bu yüzden her derişim için değişim büyüklüğü Δc = Δn / V = 1 / 1 = 1 olur; dışarıdan çıkar, içeriye ekle.",
+      expression: "Dış: (8 − 1) / 1 = 7; iç: (2 + 1) / 1 = 3",
+    },
+    {
+      index: 2,
+      explanation:
+        "Başlangıç miktarları dışta 8 × 1 = 8, içte 2 × 1 = 2 model miktar birimidir. Son miktarlar 7 ve 3 olup toplam 10 korunur. Her hacim 1’dir; bu ölçekte derişim ve miktarın sayısal değerleri aynıdır. Korunum madde miktarı için kurulur. Model gerçek süre veya hücrenin oksijen tüketimini içermez.",
+      expression: "n toplam = 8 × 1 + 2 × 1 = 7 × 1 + 3 × 1 = 10",
+    },
+  ],
+  answer:
+    "Dış derişim 7, iç derişim 3 model miktar birimi / model hacim birimi; toplam madde miktarı 10 model miktar birimi.",
+};
+
+function originalMembraneWorked(example: WorkedExample | undefined) {
+  const before = membraneWorkedBefore;
+  return (
+    example?.title === before.title &&
+    example.prompt === before.prompt &&
+    example.strategy === before.strategy &&
+    example.answer === before.answer &&
+    example.check === before.check &&
+    example.pitfall === before.pitfall &&
+    Array.isArray(example.steps) &&
+    example.steps.length === before.steps.length &&
+    before.steps.every((original, i) => {
+      const step = example.steps[i];
+      return (
+        step?.label === original.label &&
+        step.explanation === original.explanation &&
+        step.expression === original.expression
+      );
+    })
+  );
+}
+
 export function clarifiedGuideView<T extends LessonGuide | undefined>(
   raw: T,
 ): T {
@@ -124,6 +205,27 @@ export function clarifiedGuideView<T extends LessonGuide | undefined>(
       steps[revision.inner] = { ...step, explanation: revision.after };
       examples[revision.outer] = { ...example, steps };
     }
+  }
+  if (
+    raw.id === "hucre-zarinda-madde-alisverisleri" &&
+    originalMembraneWorked(examples[0])
+  ) {
+    const example = examples[0];
+    const steps = [...example.steps];
+    for (const change of membraneWorkedAfter.steps) {
+      steps[change.index] = {
+        ...steps[change.index],
+        explanation: change.explanation,
+        expression: change.expression,
+      };
+    }
+    examples = [...examples];
+    examples[0] = {
+      ...example,
+      prompt: membraneWorkedAfter.prompt,
+      steps,
+      answer: membraneWorkedAfter.answer,
+    };
   }
   return sections === raw.sections && examples === raw.examples
     ? raw

@@ -1,5 +1,7 @@
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
+import { registerOfflineBootDiagnostics } from "./helpers/offlineBootDiagnostics";
+registerOfflineBootDiagnostics();
 async function open(page: Page) {
   await page.goto("/");
   await expect(
@@ -129,6 +131,8 @@ test("built-in cheatsheet first opens offline with retained notes and no learnin
   page,
   context,
 }) => {
+  // First online cache installation plus offline flow; public SW ready measured 28.6s.
+  test.setTimeout(90_000);
   await open(page);
   await offlineReady(page);
   await context.setOffline(true);

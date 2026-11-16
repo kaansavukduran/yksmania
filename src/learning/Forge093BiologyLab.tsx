@@ -444,10 +444,12 @@ function MembraneLab() {
             </label>
           </div>
           <p className="small muted">
-            Eşit ve sabit hacimli iki bölme, üretim/tüketim yok. Na⁺ için
-            elektriksel potansiyel farkı 0 kabul edilir; gerçek iyon yönünde
-            elektrokimyasal gradyan önemlidir. Geçirgenlik öğretim katsayısıdır;
-            adım gerçek saniye değildir.
+            Her bölmenin sabit hacmi 1 model hacim birimi seçildi. Bu ölçekte
+            derişim = miktar / hacim; aktarılan miktar 1 ise derişim değişimi de
+            1’dir. Üretim ve tüketim yok. Na⁺ için elektriksel potansiyel farkı
+            0 kabul edilir; gerçek iyon yönünde elektrik ve derişim farkı
+            birlikte etkilidir. Seçilen geçiş katsayısı bu model içindir; adım
+            gerçek saniye değildir.
           </p>
           <SoluteDrawing
             uid={uid}

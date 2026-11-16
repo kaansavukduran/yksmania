@@ -1,3 +1,15 @@
+# Sonraki Forge girişi
+
+Önce 0.18.1 adayının 200 eski yardım, üç soru görünümü, bağlı zar örneği, 62 yazılı hatırlama ve telefon metni onarımlarını son tam CI, masaüstü, Pages ve yayın kapılarıyla kapat. Hedef kontroller ve 1.663 birim geçti; önceki 0.18 CI'daki aralıklı boş başlangıcın nedeni açık olduğundan pasif tanı kanıtını koru.
+
+Sonraki tutarlı eski kaynak bandı 300 kart/30 konudur: matematik 50, fizik 40, kimya 50, biyoloji A 50, biyoloji B 50 ve Türkçe+tarih 60. Gerçek çözümleyici bu kartları henüz kısmi sayar. Her paket kendi kaynak okuması, tam yardım, bağımsız anahtarı görünen inceleme, gerçek kayıt/çevrimdışı/telefon/paket kabulüyle ilerler. Özel taslak veya okuma, hazır uygulama içeriği sayılmaz.
+
+Ardından kalan kısmi çözümler, kaynak–alt beceri açıkları, doğrulanmış video ve resmî sınav arşivi; özgün marka/karakter kalitesi ve fiziksel cihaz/kurulum/yükseltme kontrolleri sürdürülür. 479 başlık tamamlığı bütün kaynak bilgisinin doğrulandığı anlamına gelmez. Android kalıcı imzası kullanıcı tarafından ertelendi; bunu yeniden isteme. Kullanıcıya PDF veya kaynak yükleme görevi bırakma.
+
+---
+
+## Önceki kaynak ve kabul kayıtları
+
 # Güncel 0.18 kaynak adayı
 
 Doğrulanmış çalışma sırasındaki 479 başlığın tamamı anlatım ve bağımsız soruyla eşleşir. Kaynakta 480 ayrıntılı rehber, 480 yerleşik kopya kağıdı ve 5.883 özgün soru vardır. 0.17 üzerine 130 yeni anlatım eklenmiş; kısa kalan 28 eski anlatım 553 bölüm, 168 çözümlü örnek ve 178 hatırlama etkinliğiyle derinleştirilmiştir. İleri sorular 28 ayrı setten açılır.

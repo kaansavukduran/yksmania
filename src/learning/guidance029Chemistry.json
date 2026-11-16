@@ -1,0 +1,502 @@
+[
+  {
+    "id": "f093-chem-cov-1",
+    "identity": "[\"f093-chem-cov-1\",\"Kovalent bağ için bu ünitenin H₂, Cl₂ ve HCl molekül örnekleriyle uyumlu temel açıklama hangisidir?\",\"\",[\"Atomların bir veya daha çok elektron çiftini ortaklaşa kullanması\",\"İki çekirdeğin protonlarının birleşmesi\",\"Bağın yalnız farklı elementler arasında kurulması\",\"Her durumda bir atomun tüm elektronlarını ötekine vermesi\",\"Bütün moleküllerde kalıcı net dipolün zorunlu olması\"],0,\"Kovalent bağ ortak elektron çiftiyle açıklanır; aynı atomlar da farklı atomlar da paylaşabilir. Çekirdekler birleşmez. Paylaşım iyonik elektron aktarımıyla aynı süreç değildir; polar bağların dengelenmesiyle apolar molekül de oluşabilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kimyasal bağ, atomların bir arada bulunmasını sağlayan elektron–çekirdek etkileşimleriyle ilişkilidir. Atomun element kimliğini proton sayısı belirler; sıradan kimyasal bağ kurulması çekirdekleri tek çekirdeğe dönüştürmez.",
+        "Değerlik elektronları bağ gösteriminde kullanılan dış elektronlardır. Bir molekülün hangi atomlardan oluştuğu ile bütün molekülün net kutupluluğu ayrı bilgilerdir."
+      ],
+      "strategy": "H₂, Cl₂ ve HCl’deki ortak özelliği ara; bir açıklamanın üçünü de kapsayıp kapsamadığını sınayarak atom türü, çekirdek ve bütün molekül kutupluluğu iddialarını ayrı değerlendir.",
+      "steps": [
+        "H₂ ve Cl₂ aynı elementin iki atomunu içerir; HCl’de iki element vardır. Bu yüzden bağı yalnız farklı elementlerle sınırlayan ifade üç örneği birlikte açıklayamaz.",
+        "Bu molekül örneklerinde atomlar arasında ortak elektron bölgesi bulunur; çekirdekler ayrı kalır. Bütün elektronların zorunlu aktarımı veya protonların birleşmesi bu yapıyı anlatmaz.",
+        "Ortak özellik, bir veya daha çok elektron çiftinin ortaklaşa kullanılmasıdır. H₂ ve Cl₂’nin kalıcı net dipol taşımaması da kovalent bağ tanımına böyle bir zorunluluk eklenemeyeceğini gösterir."
+      ],
+      "optionReasons": [
+        "Doğru. Bir veya daha çok elektron çiftini ortaklaşa kullanma, verilen aynı ve farklı atomlu üç molekül örneğini de kapsar.",
+        "Protonların birleşmesi çekirdek değişimi olurdu. H₂, Cl₂ ve HCl’de kimyasal bağ kurulurken iki çekirdek tek çekirdek hâline gelmez.",
+        "H₂ ve Cl₂ aynı element atomları arasında bağ içerir. Bu iki örnek, bağın yalnız farklı elementler arasında kurulacağı iddiasını çürütür.",
+        "Her atomun bütün elektronlarını ötekine vermesi ortaklaşma değildir. Verilen moleküllerdeki bağ, böyle bir zorunlu tam aktarım tanımıyla açıklanmaz.",
+        "H₂ ve Cl₂’de eş atomlar kalıcı net dipol oluşturmaz. Buna rağmen kovalent bağ vardır; bütün moleküllerin kalıcı dipollü olması gerekmez."
+      ],
+      "commonError": "Kovalent bağın tanımına, yalnız farklı elementler veya zorunlu polar molekül gibi örneklerin desteklemediği bir ek koşul koymak.",
+      "check": "Seçtiğin açıklamayı üç formüle tek tek uygula: aynı atomlu iki örneği de farklı atomlu örneği de açıklamalı ve proton sayılarını değiştirmemelidir."
+    }
+  },
+  {
+    "id": "f093-chem-cov-2",
+    "identity": "[\"f093-chem-cov-2\",\"Saf Cl₂ ve HCl gazları ile katı LiCl veriliyor. HCl’de ortak çift Cl’ye daha çok çekiliyor; LiCl iyon örgüsüdür. İncelenen bağlar sırasıyla hangisidir?\",\"\",[\"İyonik; apolar kovalent; polar kovalent\",\"Polar kovalent; iyonik; apolar kovalent\",\"Apolar kovalent; polar kovalent; iyonik\",\"Apolar kovalent; iyonik; polar kovalent\",\"Üçü de iyonik\"],2,\"Cl₂’nin eş uçları apolar kovalent; HCl’nin eşitsiz paylaşımı polar kovalent bağ verir. Katı LiCl’de Li⁺/Cl⁻ çekimi iyoniktir. Ortak Cl atomu üç bağ türünü özdeş yapmaz; gaz ve kristal koşulları korunmalıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı atomların ortak elektronları çekme eğilimi bu basit modelde eşittir; eşitsiz çekim bağda kısmi uçlar oluşturabilir. Bu ayrım ortaklaşmalı bağın kutupluluğunu anlatır.",
+        "İyonik örgüde incelenen parçalar tam yüklü iyonlardır. Ayrı molekül içindeki kısmi yük ile bir kristaldeki iyon yükü aynı tanecik tanımı değildir."
+      ],
+      "strategy": "Örnekleri önce molekül ve iyon örgüsü olarak ayır; moleküllerde ortak çiftin eşit çekilip çekilmediğini denetle. Üç etiketi kökteki sırayı bozmadan birleştir.",
+      "steps": [
+        "İlk örnek Cl₂’de iki uç da Cl’dir; aynı atomların ortak çifti eşit çekmesi apolar kovalent bağla uyumludur.",
+        "HCl için ortak çiftin Cl’ye daha çok çekildiği açıkça verilmiştir. Saf gaz molekülündeki bu eşitsiz paylaşım polar kovalent bağdır; sulu ortam varsayma.",
+        "Katı LiCl iyon örgüsüdür; Li⁺ ile Cl⁻ arasındaki ilişki iyoniktir. Böylece istenen sıra apolar kovalent, polar kovalent, iyonik olur."
+      ],
+      "optionReasons": [
+        "İlk Cl₂’yi iyonik, HCl’yi apolar ve LiCl’yi polar kovalent yapar. Eş Cl uçları, verilen eşitsiz HCl paylaşımı ve iyon örgüsü bilgileriyle üçü de uyuşmaz.",
+        "Cl₂’de eş atomları polar sayar; HCl’de ortaklaşmayı iyonik, LiCl örgüsünü apolar kovalent yapar. Ortak Cl içermek bağ türlerini bu sıraya dönüştürmez.",
+        "Doğru. Cl₂ eş uçlu apolar kovalent, HCl eşitsiz paylaşımlı polar kovalent, katı LiCl ise zıt yüklü iyon örgüsüdür.",
+        "Cl₂ için ilk etiket doğrudur. Fakat saf HCl gazını iyonik, verilen LiCl örgüsünü polar kovalent sayarak ikinci ve üçüncü ilişkileri ters sınıflandırır.",
+        "Üçü de iyonik değildir. Cl₂ ve saf HCl ayrı moleküllerde ortak elektron çifti içerir; iyon örgüsü olarak verilen örnek LiCl’dir."
+      ],
+      "commonError": "Üç örnekte de Cl bulunmasından aynı bağ türünü çıkarmak veya saf gaz HCl’ye sulu çözeltideki iyonlaşmayı taşımak.",
+      "check": "Her etiketin kanıtını ayrı yaz: eş Cl uçları, Cl’ye daha çok çekilen ortak çift ve zıt yüklü iyon örgüsü. Sıralaman bu üç farklı kanıtla eşleşmeli."
+    }
+  },
+  {
+    "id": "f093-chem-cov-3",
+    "identity": "[\"f093-chem-cov-3\",\"N₂’nin basit Lewis yapısı N≡N, N’nin değerlik elektron sayısı 5 olarak verilmiştir. Molekülün ortak bağ elektronları kaçtır?\",\"\",[\"2\",\"3\",\"4\",\"10\",\"6\"],4,\"Üçlü bağ üç ortak çift içerir:3×2=6 elektron. Toplam bütçe 10’dur; kalan 4 elektron iki yalnız çifttir. Üç çizgiyi üç elektron veya bütün bütçeyi ortak bölge sanmak sayım hatasıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Lewis gösteriminde iki atom arasındaki bir çizgi bir ortak elektron çiftidir; bir çift iki elektron içerir. Bağ mertebesi arttığında aynı atom çifti arasında birden çok ortak çift gösterilir.",
+        "Toplam değerlik elektron bütçesi ile yalnız bağda kullanılan elektronlar farklı sayımlardır. Ortak elektronlar bütün molekülün bütçesinde bir kez sayılır."
+      ],
+      "strategy": "N≡N’deki bağ mertebesini önce çift sayısına, sonra elektron sayısına çevir. Toplam dış elektron bütçesini ayrı tutup kalan kısmı denetle.",
+      "steps": [
+        "≡ işareti aynı iki N arasında üç ortak çift olduğunu gösterir; üç farklı komşu atom veya üç tek elektron değildir.",
+        "Üç çiftin her biri iki elektron içerir: ortak elektron sayısı 3×2 işlemiyle bulunur.",
+        "3×2=6 ortak elektron vardır. Verilen 2×5=10 elektron bütçesinden 4 bağ dışı elektron kalması, ortak sayımın bütün bütçeyi aşmadığını doğrular."
+      ],
+      "optionReasons": [
+        "2 elektron yalnız bir ortak çifte karşılık gelir; N≡N’deki üçlü bağın diğer iki çifti sayılmamıştır.",
+        "3, ortak çift sayısıdır. Soru elektron sayısını istediğinden her çiftin iki elektronu hesaba katılmalıdır.",
+        "4, toplam 10 elektrondan 6 ortak elektron çıkarılınca kalan bağ dışı kısımdır; bağdaki ortak elektron sayısı değildir.",
+        "10, iki N’nin toplam değerlik elektron bütçesidir. Bunun tamamı bağda kullanılmaz; iki N üzerinde toplam 4 elektron bağ dışında kalır.",
+        "Doğru. N≡N üç ortak çift, dolayısıyla 3×2=6 ortak elektron gösterir."
+      ],
+      "commonError": "Lewis çizgisi veya ortak çift adedini doğrudan elektron adedi sanmak; bütün değerlik elektronlarını bağda saymak.",
+      "check": "Her N’nin basit Lewis çevresinde 6 ortak ve kendisine ait 2 bağ dışı elektronla oktet oluşur. Molekül bütçesinde ise 6 ortak+4 bağ dışı=10 sayılır; ortak 6 iki kez toplanmaz."
+    }
+  },
+  {
+    "id": "f093-chem-cov-4",
+    "identity": "[\"f093-chem-cov-4\",\"O atomu 6 değerlik elektronu getiriyor. O=O yapılı nötr O₂ molekülünde toplam bağ dışı elektron sayısı kaçtır?\",\"\",[\"4\",\"8\",\"6\",\"12\",\"16\"],1,\"Toplam 2×6=12 elektrondur. Çift bağ iki ortak çift,4 elektron kullanır. Bağ dışı 12−4=8 elektron, yani toplam 4 yalnız çift kalır. Her O üzerindeki 4 yalnız elektronla molekülün toplamını karıştırma.\"]",
+    "guidance": {
+      "knowledge": [
+        "Nötr bir molekülün değerlik elektron bütçesi, atomların getirdiği değerlik elektronlarının toplamıdır. Bağ çizgilerinde kullanılanlar çıkarıldığında bu Lewis gösteriminin bağ dışı elektronları kalır.",
+        "Bir çift bağ iki ortak çift, yani dört ortak elektron gösterir. “Bağ dışı” sayımı, ileri orbital kuramındaki eşleşmemiş elektron sayısıyla aynı soru değildir."
+      ],
+      "strategy": "Önce iki atomun toplam elektron bütçesini kur; O=O’nun kullandığı ortak elektronları ayrı hesapla. Kalanı bütün molekül için sayıp tek atomdaki değerle karıştırma.",
+      "steps": [
+        "İki O atomu toplam 2×6=12 değerlik elektronu getirir; başlangıç bütçesi tek O’nun 6 elektronu değildir.",
+        "O=O çift bağı iki ortak çift kullanır. Bu, molekül bütçesinden 2×2=4 elektronun ortak bölgeye ayrılmasıdır.",
+        "Bağ dışı toplam 12−4=8 elektrondur. Eş O uçlarına dörder dağıtıldığında her O üzerinde iki yalnız çift gösterilir."
+      ],
+      "optionReasons": [
+        "4, tek bir O üzerindeki bağ dışı elektron miktarıdır; iki atomlu molekülün toplamını vermez. Aynı sayı ortak bağ elektronlarını da belirtir, aranan toplam ise farklıdır.",
+        "Doğru. Bütçe 12, çift bağda kullanılan 4 olduğundan bütün O₂ için 8 bağ dışı elektron kalır.",
+        "6, bir O atomunun getirdiği toplam değerlik elektron sayısıdır. Ne iki atomun bütçesi ne de bağ kurulduktan sonraki molekül toplamı bağ dışı sayımdır.",
+        "12, bütün değerlik elektron bütçesidir. Çift bağda kullanılan 4 elektron çıkarılmadan hepsi bağ dışı kabul edilmiştir.",
+        "16, iki yerel okteti 8+8 diye toplamaktır. Bu işlem ortak 4 elektronu iki kez sayar; molekülün gerçek değerlik bütçesi 12’dir ve bağ dışı kısmı 8’dir."
+      ],
+      "commonError": "Tek atomun yalnız elektronlarıyla molekülün toplamını karıştırmak veya iki okteti bağımsız bütçelermiş gibi toplamak.",
+      "check": "Her O çevresinde 4 ortak+4 bağ dışı=8 elektron vardır. Bütün molekülü yeniden sayınca ortak 4 yalnız bir kez alınır: 4+4+4=12; iki atomun getirdiği bütçe korunur."
+    }
+  },
+  {
+    "id": "f093-chem-cov-5",
+    "identity": "[\"f093-chem-cov-5\",\"Saf HCl gazında elektronegatiflik H için 2,20, Cl için 3,16 veriliyor. H–Cl bağı ve kısmi yükler için hangisi doğrudur?\",\"\",[\"İyonik; H tam+1 yüklü bağımsız iyondur\",\"Apolar; farklı değerler paylaşımı etkilemez\",\"Polar; H δ− ve Cl δ+\",\"Polar kovalent; H δ+ ve Cl δ−, molekül toplamda nötr\",\"Molekülün toplam yükü−1’dir\"],3,\"Cl daha elektronegatiftir; ortak yoğunluk Cl’ye kayar. δ kısmi yük gösterir; H δ+, Cl δ− olur ve nötr HCl’de toplam iyon yükü yoktur. Saf gaz molekülünü sulu çözeltinin iyonlaşmasıyla karıştırma.\"]",
+    "guidance": {
+      "knowledge": [
+        "Elektronegatiflik, bağlı atomun ortak elektronları kendine çekme eğilimidir. Daha çok çekilen uç kısmi negatif, diğer uç kısmi pozitif olarak gösterilir.",
+        "δ işareti kısmi yükü, iyonun üst indisindeki tam sayı ise net yükü anlatır. Bir molekülde kısmi uçların oluşması, o moleküle kendiliğinden elektron eklenmesi veya ondan elektron kopması değildir."
+      ],
+      "strategy": "Verilen iki elektronegatifliği karşılaştırarak ortak yoğunluğun kaydığı ucu belirle; δ işaretlerini buna göre yerleştir. Ardından saf gaz molekülünün toplam yükünü ayrı bir kontrolle ele al.",
+      "steps": [
+        "Verilen Cl=3,16 değeri H=2,20’den büyüktür. Dolayısıyla ortak elektron yoğunluğu Cl tarafına daha fazla kayar.",
+        "Cl tarafı δ−, H tarafı δ+ olur. Elektronlar hâlâ ortak bölgededir; bu uçlar iki bağımsız tam iyon olarak verilmemiştir.",
+        "HCl formülü net iyon yükü taşımayan saf gaz molekülünü gösterir. Sonuç polar kovalent bağ, H δ+, Cl δ− ve toplam nötrlük olarak birleştirilir."
+      ],
+      "optionReasons": [
+        "Tam +1 yüklü bağımsız H⁺ ve iyonik bağ iddiası, δ kısmi yükünü tam iyon yüküne dönüştürür. Sorudaki saf HCl gazı için böyle bir iyonlaşma verilmemiştir.",
+        "2,20 ile 3,16 farklı çekim eğilimleridir. Bu farkı etkisiz sayıp bağı apolar yapmak verilen eşitsiz çekimi göz ardı eder.",
+        "Polar nitelemesi uygundur ama işaretler terstir. Daha çok çeken Cl kısmi negatif, H kısmi pozitif olmalıdır.",
+        "Doğru. Cl daha çok çeker; H δ+, Cl δ− olur. Paylaşım eşitsizdir fakat HCl molekülü toplamda nötr kalır.",
+        "Cl ucundaki δ− bütün molekülün −1 iyon yükü değildir. Negatif bir net yük için toplam elektron bütçesinde buna karşılık gelen fazlalık gerekirdi; böyle bir değişim verilmemiştir."
+      ],
+      "commonError": "Kısmi negatif ucu bütün molekülün anyon yükü sanmak veya elektronegatifliği büyük uca δ+ yazmak.",
+      "check": "Diatomik nötr türde iki ucun kısmi yük katkıları toplamı sıfır olmalıdır. Ayrıca negatif uç, verilen tabloda ortak elektronları daha çok çeken uçla aynı olmalı; bu iki kontrol birbirinden ayrıdır."
+    }
+  },
+  {
+    "id": "f093-chem-cov-6",
+    "identity": "[\"f093-chem-cov-6\",\"Yaklaşık elektronegatiflikler H 2,20; F 3,98; Cl 3,16; Br 2,96 veriliyor. H–F, H–Cl, H–Br bağlarından hangisinde bu verilere göre elektronegatiflik farkı en büyüktür?\",\"\",[\"H–F; fark 1,78\",\"H–Cl; fark 5,36\",\"H–Br; fark 5,16\",\"Hepsinde fark eşittir\",\"Bağ enerjisi verilmeden fark hesaplanamaz\"],0,\"Farklar HF için 1,78; HCl için 0,96; HBr için 0,76’dır. En büyük HF’dir. Toplama yapmak farkı vermez. Elektronegatiflik farkı için bağ enerjisi gerekmez; bu sonuç tek başına ölçülmüş dipol veya bağ koparma enerjisi değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "İki bağlı atomun elektronegatiflik farkı, aynı ölçekteki değerlerin mutlak farkıdır: ΔEN=|EN₁−EN₂|. Değerleri toplamak farkı vermez.",
+        "Elektronegatiflik farkı ile bağ koparma enerjisi farklı niceliklerdir. Birincisi ortak elektronları çekme eğilimlerinin karşılaştırmasıdır; bu veriden tek başına ölçülmüş dipol momenti veya bağ enerjisi üretilmez."
+      ],
+      "strategy": "Her bağda ortak olan H değerini sabit tutup üç halojen için ayrı çıkarma satırı kur; çıkan farkları aynı ölçekte karşılaştır. Sonucu sorulandan başka bir enerji sıralamasına çevirmeden seç.",
+      "steps": [
+        "H–F için |3,98−2,20|, H–Cl için |3,16−2,20| ve H–Br için |2,96−2,20| işlemlerini ayrı yaz.",
+        "İşlemler sırasıyla 1,78; 0,96 ve 0,76 verir. 5,36 ile 5,16 değerleri ise iki uç değerini toplamaktan gelir.",
+        "1,78 en büyük farktır ve H–F’ye aittir. Bu karar için bağ enerjisi verisi gerekmez; yalnız verilen elektronegatiflikler kullanılmıştır."
+      ],
+      "optionReasons": [
+        "Doğru. H–F için 3,98−2,20=1,78; bu fark H–Cl’nin 0,96 ve H–Br’nin 0,76 değerlerinden büyüktür.",
+        "5,36=3,16+2,20 toplamıdır. H–Cl farkı 3,16−2,20=0,96’dır; hem işlem hem en büyük bağ seçimi yanlıştır.",
+        "5,16=2,96+2,20 toplamıdır. H–Br farkı 0,76’dır ve üçü içindeki en küçük farktır.",
+        "Farklar eşit değildir: ortak H değeri aynı olsa da halojenlerin 3,98; 3,16; 2,96 değerleri farklıdır; farklar da 1,78; 0,96; 0,76 olur.",
+        "Bağ enerjisi bu çıkarma için gerekli değildir. Aynı ölçekte dört elektronegatiflik değeri verilmiş olduğundan üç fark doğrudan hesaplanabilir."
+      ],
+      "commonError": "Elektronegatiflikleri çıkarmak yerine toplamak veya fark hesabını bağ koparma enerjisine bağımlı sanmak.",
+      "check": "H sabit ve üç halojenin de elektronegatifliği H’den büyük olduğundan farkların sırası halojen değerlerinin sırasıyla aynı olmalı. En büyük halojen değeriyle en büyük farkın aynı bağa ait olduğunu kontrol et."
+    }
+  },
+  {
+    "id": "f093-chem-cov-7",
+    "identity": "[\"f093-chem-cov-7\",\"H–C≡C–H nötr iskeletinde H 1, C 4 değerlik elektronu getiriyor. Toplam ortak çift sayısı ve bağ dışı elektron sayısı sırasıyla kaçtır?\",\"\",[\"3 ve 4\",\"4 ve 2\",\"5 ve 0\",\"5 ve 5\",\"10 ve 0\"],2,\"Bütçe 2×1+2×4=10 elektrondur. Ortak çiftler 1+3+1=5’tir; bu 10 elektronu kullanır ve bağ dışı elektron kalmaz. Beş ortak çift ile on ortak elektron farklı sayılardır. İki komşu bulunması çizgi sayısını iki yapmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir Lewis iskeletinde her tek bağ bir ortak çift, üçlü bağ üç ortak çift gösterir. Çift sayısı ile bu çiftlerde bulunan elektron sayısı iki farklı birimdir.",
+        "Nötr molekülde toplam değerlik bütçesi atomların katkıları toplanarak bulunur; ortak elektronlar bu bütçeden bir kez ayrılır. Kalan varsa bağ dışı elektron olarak gösterilir."
+      ],
+      "strategy": "İskeleti iki uç bağlantısı ve ortadaki çoklu bağlantı olarak parçala; her birinin ortak çift katkısını topla. Sonra elektron bütçesine dönerek kalan kısmı ayrı hesapla.",
+      "steps": [
+        "İki H ile iki C’nin getirdiği bütçe 2×1+2×4=10 elektrondur; nötr türde yük düzeltmesi gerekmez.",
+        "H–C ve C–H tek bağları birer, C≡C üçlü bağı üç ortak çift verir. Toplam çift sayısı 1+3+1 hesabından bulunur.",
+        "5 ortak çift, 2×5=10 ortak elektron kullanır. Bütçenin tamamı kullanıldığından bağ dışı 0 elektron kalır; istenen sıra 5 ve 0’dır."
+      ],
+      "optionReasons": [
+        "3 ve 4, yalnız C≡C’nin üç ortak çiftini sayıp 10−6=4 bırakır. İki C–H tek bağının kullandığı iki çift eksiktir.",
+        "4 ve 2, toplam dört çift sayar ve 10−8=2 bırakır. Bu iskelette ise 1+3+1=5 çift vardır; örneğin üçlü bağı çift bağ gibi saymak bu eksikliği doğurur.",
+        "Doğru. İki tek bağ ve bir üçlü bağ 5 ortak çift oluşturur; bunların 10 elektronu bütün bütçeyi kullandığı için bağ dışı elektron kalmaz.",
+        "5 ortak çift doğrudur; fakat ayrıca 5 bağ dışı elektron eklemek 2×5+5=15 elektron ister. Verilen nötr bütçe yalnız 10’dur.",
+        "10, ortak elektron sayısıdır; ortak çift sayısı değildir. 10 çift olsaydı 20 elektron gerekirdi ve verilen bütçe aşılırdı."
+      ],
+      "commonError": "Çoklu bağı tek bağlantı diye tek çift saymak ya da ortak elektron adedini ortak çift sütununa yazmak.",
+      "check": "Her C, bir C–H çifti ile C≡C’nin üç çiftinden yerel 8 elektron görür; her H tek çiftten duet görür. Yerel kontrollerle birlikte molekülün toplam 10 elektron bütçesi de korunur."
+    }
+  },
+  {
+    "id": "f093-chem-cov-8",
+    "identity": "[\"f093-chem-cov-8\",\"Ayrık gaz atomlarından belirli bir X–X bağı kurulurken aynı koşullarda 120 kJ/mol enerji açığa çıkıyor. Bu bağı aynı atomlara koparmak için gereken enerji hakkında hangisi doğrudur?\",\"\",[\"120 kJ/mol yine açığa çıkar\",\"Enerji gerekmez\",\"Bağın apolar olması enerjiyi sıfırlar\",\"Bilinemez; ters süreçle ilişki yoktur\",\"120 kJ/mol enerji alınır\"],4,\"Bağ kurulurken verilen enerji, aynı bağın ters yönde koparılmasında alınır. 120 kJ/mol gerekir. Apolar bağlar da bağ enerjisine sahiptir; kutuplanmanın sıfır olması bağın yokluğu demek değildir. Farklı koşul veya başka bağ verilse ayrıca veri gerekirdi.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir bağ oluşumu ile aynı koşullarda aynı başlangıç ve son türler arasındaki ters süreç enerji bakımından birlikte değerlendirilir. Kapalı bir gidiş–dönüş çevriminde başlangıç durumuna dönülür.",
+        "Enerji açığa çıkmasıyla enerji alınması aktarım yönünü belirtir. kJ/mol birimi, belirtilen bağ miktarı başına enerji büyüklüğünü verir; apolar olma bu büyüklüğün zorunlu sıfır olması değildir."
+      ],
+      "strategy": "İlk olayın ayrık atomlardan bağlı duruma geçtiğini yaz; koparmada başlangıç ve son durumları yer değiştir. Aynı koşul ve aynı bağ bilgisiyle çevrimin enerji bilançosunu kur.",
+      "steps": [
+        "Verilen oluşumda ayrık gaz atomları X–X bağına geçerken çevreye 120 kJ/mol aktarılıyor. Sistem için bu aktarımı −120 kJ/mol olarak işaretleyebilirsin.",
+        "Sorulan koparma, aynı bağı aynı ayrık atomlara döndürüyor. Aynı koşullardaki gidiş–dönüşte enerji katkılarının toplamı sıfır olmalıdır.",
+        "−120’nin ters katkısı +120 kJ/mol olur: bağı koparmak için 120 kJ/mol enerji alınır. Bağın apolar olması bu enerji gereksinimini ortadan kaldırmaz."
+      ],
+      "optionReasons": [
+        "Koparmada da 120 kJ/mol açığa çıksaydı aynı başlangıca dönen çevrim toplam 240 kJ/mol enerji verirdi. Ters sürecin aktarım yönü aynı kalamaz.",
+        "Enerji gerekmez denirse oluşumda verilen 120 kJ/mol geri karşılanmaz. Aynı bağın aynı koşullardaki ters süreci bu enerji bilançosuna uymalıdır.",
+        "Apolar olmak kalıcı bağ kutuplanmasıyla ilgilidir; bağın enerjisinin sıfır olduğunu söylemez. Verilen X–X oluşumu zaten sıfırdan farklı enerji aktarımı içerir.",
+        "Ters süreçle ilişki vardır; kök özellikle aynı bağ, aynı atomlar ve aynı koşulları veriyor. Başka bir bağ veya koşul için veri eksikliği burada varsayılamaz.",
+        "Doğru. Oluşumda verilen 120 kJ/mol, aynı koşullardaki ters koparma için 120 kJ/mol alınır; yön ters, büyüklük aynıdır."
+      ],
+      "commonError": "Bağ kurulması ve kopmasını aynı yönde enerji veren olaylar sanmak veya apolarlığı bağ enerjisizliğiyle eşitlemek.",
+      "check": "Bağı kurup yeniden koparan bir mol başına çevrimde −120+120=0 olmalı. Seçeneğinin işareti ve kJ/mol birimi bu bilanço ile aynı mı?"
+    }
+  },
+  {
+    "id": "f093-chem-cov-9",
+    "identity": "[\"f093-chem-cov-9\",\"NH₄Cl’de NH₄⁺ iyonunun içinde N–H ortak elektron çiftleri, NH₄⁺ ile Cl⁻ arasında zıt iyon çekimi bulunuyor. İki ilişki sırasıyla nasıl sınıflandırılır?\",\"\",[\"İyonik; kovalent\",\"Kovalent; iyonik\",\"İkisi de hidrojen bağı\",\"İkisi de apolar moleküller arası çekim\",\"İkisi de çekirdek tepkimesi\"],1,\"N–H ortaklaşması kovalent bağdır. Bütün NH₄⁺ grubu ile Cl⁻ arasındaki çekim iyoniktir. Bileşiğe tek etiket verip grubun içini dışıyla karıştırma; NH₄⁺’ın çok atomlu oluşu N–H bağlarını iyonik yapmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Çok atomlu iyon, birden fazla atom içeren ve bütün olarak net yük taşıyan taneciktir. İyonun toplam yükü ile içindeki her atom çifti arasındaki bağın türü ayrı özelliklerdir.",
+        "Bağ sınıflandırmasında incelenen iki parçayı belirlemek gerekir. Ortak elektron çifti atomlar arasındaki ilişkiyi, zıt tam yüklerin çekimi ise iyonlar arasındaki ilişkiyi açıklayabilir."
+      ],
+      "strategy": "NH₄⁺ grubunun içi ile grubun Cl⁻ ile ilişkisi için iki ayrı sınır çiz; her sınırdaki parçaları ve verilen etkileşim kanıtını yaz. İki sonucu kökün istediği sırada birleştir.",
+      "steps": [
+        "İlk ilişki NH₄⁺ grubunun içindeki N ile H atomları arasındadır. İkinci ilişki ise bütün NH₄⁺ iyonu ile ayrı Cl⁻ iyonu arasındadır; ölçekleri karıştırma.",
+        "N–H için ortak elektron çiftleri verildiğinden atomlar arasındaki iç bağ kovalenttir. NH₄⁺ grubunun net yükü bu ortaklaşmayı değiştirmez.",
+        "Grup ile Cl⁻ arasında zıt tam iyon yüklerinin çekimi verilir; bu ilişki iyoniktir. İstenen sıra bu yüzden kovalent, ardından iyoniktir."
+      ],
+      "optionReasons": [
+        "İlişkileri ters sırada adlandırır. İlk N–H ortak çifti iyonik değildir; ikinci NH₄⁺/Cl⁻ çekimi de ortak çift bağı olarak verilmemiştir.",
+        "Doğru. NH₄⁺ içindeki N–H ortaklaşması kovalent, bütün NH₄⁺ ile Cl⁻ arasındaki zıt yük çekimi iyoniktir.",
+        "H içermek iki ilişkiyi de hidrojen bağı yapmaz. Kök ilkinde N–H ortak çiftini, ikincisinde tam yüklü iki iyonun çekimini açıkça tanımlar.",
+        "NH₄⁺ ve Cl⁻ apolar moleküller değildir; net yüklü iyonlardır. Ayrıca ilk ilişki moleküller arası değil grubun içindeki N–H bağıdır.",
+        "Çekirdek tepkimesi proton veya nötron düzeninde değişim gerektirir. Verilen ortak elektron çiftleri ve iyon çekimi böyle bir çekirdek olayı anlatmaz."
+      ],
+      "commonError": "Bileşiğe tek bir bağ etiketi verip çok atomlu iyonun içindeki bağlarla iyonlar arası çekimi aynı saymak.",
+      "check": "NH₄⁺ grubunun etrafına bir çerçeve çiz. N–H ilişkisi çerçevenin içinde, Cl⁻ ile çekim çerçeveler arasında kalmalı; iki gerekçenin doğru sınıra ait olduğunu bu çizimle denetle."
+    }
+  },
+  {
+    "id": "f093-chem-cov-10",
+    "identity": "[\"f093-chem-cov-10\",\"H–C≡N nötr Lewis iskeleti veriliyor; H 1, C 4, N 5 değerlik elektronu getirir. Ortak elektron ve toplam yalnız elektron sayısı sırasıyla hangisidir?\",\"\",[\"4 ve 6\",\"6 ve 4\",\"10 ve 0\",\"8 ve 2\",\"8 ve 8\"],3,\"Toplam 10 elektron, bir tek ve bir üçlü bağdan 4 ortak çift yani 8 ortak elektron vardır. Kalan 2 elektron N üzerinde bir yalnız çifttir. Üçlü bağı tek çizgi sanmak ortak sayımı azaltır; yerel oktetleri toplamak ise ortak elektronları iki kez sayar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Lewis iskeletindeki tek, çift ve üçlü bağ sırasıyla bir, iki ve üç ortak çift gösterir. Ortak çift sayısından ortak elektrona geçerken ikiyle çarpılır.",
+        "Nötr yapının toplam değerlik elektron bütçesinde her elektron bir kez bulunur. Bir atomun oktet çevresi sayılırken görülen ortak elektronlar, bağ dışı bölgeye yeniden eklenmez."
+      ],
+      "strategy": "H–C ve C≡N parçalarının bağ mertebelerini ayrı say; ortak çiftleri elektrona çevir. Nötr bütçeden çıkarılan kalanla atom çevrelerini birlikte denetle.",
+      "steps": [
+        "H, C ve N’nin katkıları 1+4+5=10 değerlik elektronudur; molekülün başlangıç bütçesi budur.",
+        "H–C tek bağı 1, C≡N üçlü bağı 3 ortak çift verir. Toplam 4 çiftin elektron karşılığı 4×2=8’dir.",
+        "Bağ dışında 10−8=2 elektron kalır; basit Lewis yapısında N üzerindeki bir yalnız çifttir. İstenen ortak/yalnız elektron sırası 8 ve 2 olur."
+      ],
+      "optionReasons": [
+        "4 ve 6, dört ortak çifti dört elektron sanarak 10−4=6 bırakır. Her çizgi bir çift olduğundan ortak elektron ikiyle çarpılmalıdır.",
+        "6 ve 4, yalnız C≡N’nin altı ortak elektronunu sayıp H–C tek bağını atlar. Bu tek bağ iki elektron daha kullanır.",
+        "10 ve 0, bütün bütçeyi ortak bölgeye verir. Verilen bir tek ve bir üçlü bağ yalnız 8 ortak elektron kullanır; N’de 2 elektron kalmalıdır.",
+        "Doğru. 1+3=4 ortak çift, 8 ortak elektron eder; 10 elektronluk bütçeden 2 bağ dışı elektron kalır.",
+        "Ortak 8 doğrudur; fakat 8 yalnız elektron eklemek bütçeyi 16’ya çıkarır. N’nin yerel oktetindeki 8 elektronu bütünüyle yalnız saymak, C≡N’nin ortak 6 elektronunu yeniden sayar."
+      ],
+      "commonError": "Çizgi sayısını elektron sayısıyla karıştırmak veya N’nin yerel oktetini bütünüyle bağ dışı elektron diye eklemek.",
+      "check": "N çevresinde üçlü bağdan 6 ve yalnız çiftten 2 elektronla oktet; C çevresinde 2+6=8, H çevresinde 2 elektronla duet oluşur. Molekül bütçesi de ortak 8+yalnız 2=10 olarak kapanır."
+    }
+  },
+  {
+    "id": "f093-chem-mol-1",
+    "identity": "[\"f093-chem-mol-1\",\"CO₂ doğrusal O=C=O yapılıdır; iki C=O bağı eş ve polardır. Molekül için hangi açıklama doğrudur?\",\"\",[\"Polar bağ bulunduğundan kesin polar moleküldür\",\"C=O bağları bu yüzden apolar olmak zorundadır\",\"Eş ve zıt bağ etkileri sıfırlandığından molekül apolardır\",\"Doğrusal yapı bütün elektronların yokluğunu gösterir\",\"İki çift bağ dört geometrik yön oluşturur\"],2,\"İki eş C=O dipolü doğrusal yapıda zıttır ve sıfır bileşke verir. Bağlar polar kalır; apolar molekül sonucunun nedeni yön dengesidir. Dört Lewis çizgisi iki O komşusuna gittiği için merkezde iki bölge vardır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir bağın kutupluluğu o iki atom arasındaki yük dağılımını, molekülün kutupluluğu bütün yapının kalıcı net dipolünü anlatır. Moleküldeki yönlerin toplamı alınırken bağların kendi kutupluluk etiketleri değiştirilmez.",
+        "Vektörler büyüklük ve yön taşır. Birden fazla Lewis çizgisinin aynı komşu atoma gitmesi, o komşuya doğru tek geometrik yön bulunmasıyla uyumludur."
+      ],
+      "strategy": "Doğrusal yapıdaki iki bağ etkisini tek bir eksende göster; eş büyüklük bilgisini yönlerle birlikte kullanarak toplamı incele. Bağ sınıfı ile bütün molekül kararını ayrı cümlelerle koru.",
+      "steps": [
+        "O=C=O’da merkez C’nin iki O komşusu vardır. Çift bağların çizgileri dört olsa da geometrik yönler iki tanedir ve doğrusal yapıda karşılıklıdır.",
+        "Eş C=O etkilerinin birini +d, diğerini −d diye yazabilirsin; burada d aynı bağ etkisinin büyüklüğüdür.",
+        "+d−d=0 olduğundan molekül apolardır. C=O bağlarının polar oluşu korunur; sıfır molekül dipolü, yerel bağların apolar olduğu anlamına gelmez."
+      ],
+      "optionReasons": [
+        "Polar bir bağın bulunması bütün yönlerin toplamının sıfırdan farklı olduğunu kanıtlamaz. Verilen iki eş, zıt C=O etkisi birbirini götürür.",
+        "Molekülün net etkisinin sıfır olması C=O bağlarındaki eşitsiz paylaşımı ortadan kaldırmaz; bu bağlar kökte verildiği gibi polar kalır.",
+        "Doğru. Eş büyüklükteki iki polar bağ etkisi doğrusal yapıda zıttır; toplam sıfır olduğundan CO₂ molekülü apolardır.",
+        "Doğrusal yapı atomların konumunu anlatır, elektronların yokluğunu değil. Çift bağların kendisi ortak elektronları gösterir.",
+        "İki çift bağ dört Lewis çizgisi verir; fakat çizgiler iki O komşusuna gider. Merkezde dört ayrı geometrik yön oluşmaz."
+      ],
+      "commonError": "Bir polar bağ gördüğünde bütün molekülü doğrudan polar saymak veya sıfır bileşkeden bağların da apolar olduğu sonucunu çıkarmak.",
+      "check": "İki eş oku birlikte herhangi bir açı kadar döndür; yine eş ve zıt kalırlar. Toplamın sıfır oluşu ekseni seçişine bağlı olmamalı ve C=O bağlarının sınıfı değişmemelidir."
+    }
+  },
+  {
+    "id": "f093-chem-mol-2",
+    "identity": "[\"f093-chem-mol-2\",\"H₂O açısal yapılı, iki eş O–H bağı polar ve her dipol H’den O’ya yöneliyor. İki bağ neden molekülü apolar yapmaz?\",\"\",[\"Eş bağların yönleri karşıt değildir; O tarafında ortak bileşen kalır\",\"Eş bağlarda hiçbir elektron bulunmaz\",\"İki bağın eş olması onları 180° yapar\",\"O atomu iki ayrı atoma dönüşür\",\"Açısal molekülde bütün bağlar iyonik olur\"],0,\"Açısal düzende iki eş okun yanal payları gider, O yönündeki payları toplanır. Sıfır toplam için yalnız eşlik yeterli değildir. 180° karşıtlık verilmemiştir; geometri bağın kovalent kimliğini değiştirmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "İki vektörün uzunluklarının eşit olması, aralarındaki açıyı belirlemez. Sıfır toplam için büyüklük kadar yön koşulu da değerlendirilir.",
+        "Bir okun bir eksendeki payına bileşen denir. İki okun bir eksendeki payları birbirini götürürken başka bir eksendeki payları birlikte katkı yapabilir."
+      ],
+      "strategy": "Kökte verilen H’den O’ya okları açısal atom düzenine yerleştir; açıortaya paralel ve ona dik payları ayrı izle. Eş bağ bilgisini kendiliğinden karşıt yön bilgisine dönüştürme.",
+      "steps": [
+        "İki O–H bağı eş olsa da atom düzeni açısaldır. H’den O’ya yönelen iki ok aynı doğru üzerinde 180° karşıt değildir.",
+        "Açıortaya dik yan paylar eş ve zıt olduklarından dengelenir. Bu, yalnız yan eksenin toplamının sıfır olmasıdır.",
+        "O tarafındaki açıortay payları aynı yöndedir ve toplanır. Net etki kaldığı için eş iki bağ H₂O’yu apolar yapmaz; doğru gerekçe eşlik ile karşıtlığın farklı olmasıdır."
+      ],
+      "optionReasons": [
+        "Doğru. Eş bağların okları açısal düzende karşıt değildir; yan paylar giderken O tarafındaki ortak bileşen kalır.",
+        "Eş bağ olmak elektron bulunmaması demek değildir. Verilen polar O–H bağları ortak elektron dağılımına sahiptir.",
+        "İki bağın eş büyüklükte olması aralarındaki açıyı 180° yapmaz. Kök zaten açısal yapı vererek bu karşıtlığı dışlar.",
+        "İki bağın O’ya yönelmesi oksijenin iki atoma bölündüğünü göstermez; aynı merkez atom iki H’ye bağlı kalır.",
+        "Açısal geometri, atomların yerleşimiyle ilgilidir. Verilen polar kovalent bağları bu yüzden iyonik bağa dönüştürmez."
+      ],
+      "commonError": "Yanal bileşenlerin dengelenmesini bütün vektörün dengelenmesi saymak veya eş bağları otomatik 180° karşıt çizmek.",
+      "check": "Dengelenen yan ekseni çizimde kapatıp kalan açıortay paylarını tek başına incele. İki okun bu eksendeki payları aynı yöndeyse bütün toplam sıfır olamaz; yalnız eş uzunluk kontrolü yeterli değildir."
+    }
+  },
+  {
+    "id": "f093-chem-mol-3",
+    "identity": "[\"f093-chem-mol-3\",\"BF₃ düzlemsel üçgen ve üç eş dipolü 120° aralıklı; NH₃ üçgen piramit ve üç N–H dipolünün N yönünde pozitif payı var. Doğru sınıflama hangisidir?\",\"\",[\"İkisi de apolar\",\"BF₃ polar, NH₃ apolar\",\"İkisi de polar\",\"BF₃ apolar, NH₃ polar\",\"Üç bağ içerdiğinden kararları her zaman aynıdır\"],3,\"BF₃’te eş üç vektör aynı düzlemde 120° ile dengelenir. NH₃ piramidinde N yönündeki üç pozitif pay sıfır olamaz. Bağ sayısı benzer olsa da yalnız çift ve gerçek geometri farklıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Molekül şekli, bağlı atomların uzaydaki konumunu belirtir. Aynı sayıda bağlı uç, bu uçların aynı düzlemde veya aynı geometrik düzende olduğunu tek başına göstermez.",
+        "Vektör toplamı her eksende ayrı denetlenir. Bir eksende aynı yönde pozitif katkılar varsa, bunların toplamı sıfır olamaz; başka bir düzlemdeki dengeyle aynı işlem yapılmaz."
+      ],
+      "strategy": "İki yapıyı önce düzlemsel düzen ve piramit düzeni olarak ayır; her birinde okların eksen paylarını verilen geometriye göre değerlendir. Sınıfları yalnız üç bağ sayısına göre eşitleme.",
+      "steps": [
+        "BF₃ için üç eş yönün aynı düzlemde 120° aralıklı olduğu verilir; NH₃ içinse üçgen piramit ve N yönünde ortak pozitif pay bilgisi vardır.",
+        "BF₃’ün eş üç düzlemsel etkisi birbirini dengeler; bütün bileşenlerin toplamı sıfır olduğundan bu molekül apolardır.",
+        "NH₃’te N yönündeki üç pozitif pay toplanır ve sıfır olamaz; molekül polardır. Böylece aynı bağ sayısı iki farklı geometri altında aynı sınıfı zorunlu kılmaz."
+      ],
+      "optionReasons": [
+        "BF₃ apolardır ama NH₃ için verilen üç pozitif N yönlü pay sıfırlanmaz. İkisini de apolar saymak piramit bilgisini atlar.",
+        "Sınıflar ters yazılmıştır. BF₃’ün eş 120° düzlemsel yönleri dengelenir; NH₃’ün N yönlü ortak payları ise kalır.",
+        "NH₃ için polar nitelemesi uygundur; BF₃’te ise üç eş düzlemsel yönün toplamı sıfırdır. İkisi birden polar değildir.",
+        "Doğru. Düzlemsel BF₃’te eş yönler sıfırlanır; piramidal NH₃’te verilen N yönlü ortak katkı sıfırdan farklı kalır.",
+        "Üç bağ sayısı geometriyi tek başına vermez. Kökte bir yapının düzlemsel, diğerinin piramit olması, her zaman aynı karar iddiasını geçersiz kılar."
+      ],
+      "commonError": "Üç bağlı atom görünce her yapıyı düzlemde 120° kabul etmek veya verilen pozitif ortak payları göz ardı etmek.",
+      "check": "BF₃’te eş okları birim seçersen düşey paylar 1−1/2−1/2, yan paylar eş ve zıt olabilir; toplam sıfırdır. NH₃ içinse verilen N yönlü paylara c>0 dersen toplam 3c>0 olur. Bu iki kontrol geometri farkını korur."
+    }
+  },
+  {
+    "id": "f093-chem-mol-4",
+    "identity": "[\"f093-chem-mol-4\",\"CH₄ ve CH₃Cl’de merkez C dört yüzlü düzen yapıyor ve yalnız çift taşımıyor. CH₄’ün dört bağı eş; CH₃Cl’de C–Cl etkisi C–H etkilerinden farklıdır. Hangi yargı doğrudur?\",\"\",[\"Yalnız çift yokluğu ikisini de zorunlu apolar yapar\",\"Dört yüzlüde tüm bağlar 180° karşı karşıyadır\",\"CH₄ mutlaka polar, CH₃Cl apolardır\",\"Bağlar kovalentse molekül polarlığı tanımsızdır\",\"CH₄’ün eş yönleri dengelenir; CH₃Cl’de eşdeğer olmayan Cl köşesi net etki bırakır\"],4,\"CH₄’te dört eş bağın uzaydaki toplamı sıfırdır. CH₃Cl’de bir köşe değiştiği için bu eşdeğerlik yoktur ve molekül polardır. Merkezde yalnız çift olmaması yeterli kural değildir; dört yüzlü bir düzlem artısı değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Dört yüzlü düzen üç boyutlu dört köşe içerir; düzlemde bir artı işaretinin karşılıklı kolları gibi okunmaz. Düzenli dört yüzlünün eş yönleri birlikte değerlendirilebilir.",
+        "Yalnız çift sayısı elektron bölgelerinden şekle geçişte kullanılan bilgidir. Molekülün net etkisini incelerken bu şeklin yanında köşelerdeki atomların ve bağ etkilerinin eşdeğerliği de kullanılır."
+      ],
+      "strategy": "Dört yüzlü iskeleti iki molekülde de sabit tut; ardından hangi köşelerin bağ etkileri bakımından eş olduğunu karşılaştır. Şekil adının, bütün bağların eşliğini de verdiğini varsaymadan neti değerlendir.",
+      "steps": [
+        "İki merkez C de dört yüzlüdür ve yalnız çift taşımaz. Bu ortak bilgiler, dört yönün aynı düzlemde karşılıklı iki çift olduğunu söylemez.",
+        "CH₄’te verilen dört eş bağ etkisi düzenli dört yüzlü yönlerde dengelenir; bu molekülün kalıcı net dipolü sıfırdır.",
+        "CH₃Cl’de Cl köşesinin etkisi üç H köşesiyle eş değildir; CH₄’teki dört eş yön iptali korunmaz ve net etki kalır. Doğru yargı iki yapının eşdeğerlik farkını birlikte kullanmalıdır."
+      ],
+      "optionReasons": [
+        "Yalnız çift yokluğu tek başına iki molekülü de apolar yapmaz. CH₃Cl’de Cl köşesi H köşeleriyle eş etkide değildir.",
+        "Dört yüzlü bağlar aynı düzlemde 180° karşılıklı iki çift değildir. Bu yanlış çizim, uzaydaki gerçek dengeyi kontrol etmez.",
+        "İki sonuç ters verilmiştir. CH₄’te eş dört yön sıfırlanır; CH₃Cl’de eşdeğer olmayan Cl köşesi net etki bırakır.",
+        "Kovalent bağlı moleküllerde de kalıcı net dipol incelenir ve polar/apolar sınıflaması yapılabilir; kovalentlik bu soruyu tanımsız yapmaz.",
+        "Doğru. CH₄’ün dört eş yönü dengelenir; CH₃Cl’de farklı Cl köşesi aynı dengeyi sağlayamadığından net etki kalır."
+      ],
+      "commonError": "Merkezde yalnız çift bulunmamasını, köşelerde hangi atomlar bulunduğundan bağımsız bir apolarlık kuralı yapmak.",
+      "check": "CH₄’ün bir H köşesini Cl ile değiştirirken geometrik yön aynı kalsa bile etki değişir. Önceki dört eş katkının toplamından bu tek katkı değişimini ayırınca yeni toplamın neden aynı kalmadığını denetleyebilirsin."
+    }
+  },
+  {
+    "id": "f093-chem-mol-5",
+    "identity": "[\"f093-chem-mol-5\",\"Bir öğretim modelinde yalnız iki dipol vektörü var: sağa 5 birim ve sola 2 birim. Net vektör hangisidir?\",\"\",[\"Sıfır\",\"Sağa 3 birim\",\"Sola 3 birim\",\"Sağa 7 birim\",\"Sola 7 birim\"],1,\"5+(−2)=+3 olduğundan sağa 3 birim kalır. Zıt yönler ancak büyüklükleri eşitse sıfırlanır. 7 sonucu yön işaretini yok sayar; sola 3 ise büyük vektörün yönünü ters çevirmektir. Bu sayılar model birimidir, ölçülmüş molekül dipolü değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tek eksendeki vektörlerde bir yön pozitif seçilebilir; karşıt yöndeki katkılar negatif yazılır. Toplamın işareti yönü, mutlak değeri büyüklüğü gösterir.",
+        "Vektörlerin büyüklüklerini toplamak ile işaretli bileşenlerini toplamak farklı işlemlerdir. Öğretim modelinin birimi, ayrıca verilmedikçe ölçülmüş molekül dipol birimi sayılmaz."
+      ],
+      "strategy": "Sağ yönü referans alarak iki oku işaretli sayıya çevir; cebirsel toplamdan sonra yön ve büyüklüğü yeniden sözcükle yaz. En son verdiğin yanıtın hem işaretini hem birimini denetle.",
+      "steps": [
+        "Sağı pozitif seçince sağa 5 birim +5, sola 2 birim −2 olarak yazılır; iki uzunluk aynı işaretle toplanmaz.",
+        "İşaretli toplam (+5)+(−2)=+3’tür. Sıfır olmaması, zıt okların büyüklüklerinin eşit olmadığını gösterir.",
+        "Pozitif işaret sağ yönü, 3 ise büyüklüğü verir: net sağa 3 model birimidir. Bu değeri 7’ye çevirmek veya sola yazmak ayrı hata olur."
+      ],
+      "optionReasons": [
+        "Sıfır için zıt yönlerin büyüklükleri de eşit olmalıydı. 5 ile 2’nin farkı sıfır değildir.",
+        "Doğru. Sağı pozitif alınca 5−2=+3 bulunur; net sağa 3 birimdir.",
+        "3 büyüklüğü uygundur ama yön yanlıştır. Sağa olan 5, sola olan 2’den büyük olduğundan kalan etki sola değil sağa bakar.",
+        "7=5+2, iki okun yalnız büyüklüklerini toplar. Sola olan katkının negatif işareti kullanılmadığı için net vektör bulunmaz.",
+        "7, büyüklükleri toplama hatasıdır; sola yön de büyük olan sağa 5 katkısıyla uyuşmaz. Hem büyüklük hem yön yanlıştır."
+      ],
+      "commonError": "Zıt okların büyüklüklerini aynı işaretle toplamak veya farkı doğru bulup yönünü küçük oka vermek.",
+      "check": "Sağa 3 birimlik nete, çıkarılmış sola 2’nin tersini geri ekle: sağa 3+sağa 2=sağa 5. Bu geri kurma ilk büyük oku verir ve net yönünün sağ olmasıyla tutarlıdır."
+    }
+  },
+  {
+    "id": "f093-chem-mol-6",
+    "identity": "[\"f093-chem-mol-6\",\"Bir düzlemde 120° aralıklı üç ok var. Yukarı yönelen ok 3 birim; diğer iki okun her biri 2 birim ve her birinin düşey bileşeni aşağı 1 birimdir. Yatay bileşenleri eş ve zıttır. Net vektör nedir?\",\"\",[\"Yukarı 1 birim\",\"Aşağı 1 birim\",\"Sıfır\",\"Yukarı 7 birim\",\"Sağa 1 birim\"],0,\"Yatay toplam sıfırdır; düşey toplam 3−1−1=+1, yani yukarı 1 birim kalır. 120° aralık tek başına sıfır vermez; üç büyüklük eş olmalıdır. 7 sonucu yönleri yok sayar; aşağı 1 işareti ters çevirir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir düzlem vektörünün yatay ve düşey bileşenleri ayrı ayrı toplanır. Bir eksendeki toplamın sıfır olması, diğer eksenin de sıfır olmasını gerektirmez.",
+        "Açı düzeni ve ok büyüklükleri iki ayrı veridir. Eşit açılarla yerleşmek, okların eşit uzunlukta olduğunu göstermez; verilen bileşenler varsa toplam onlardan hesaplanır."
+      ],
+      "strategy": "Önce kökteki eş-zıt yatay payları birlikte ele al; sonra yukarıyı pozitif seçerek yalnız düşey katkıların işaretli toplamını kur. Ok uzunluklarını düşey bileşen yerine kullanma.",
+      "steps": [
+        "İki yan okun yatay bileşenleri eş ve zıttır; yatay toplam 0 olur. Yukarı yönlü okun yatay katkısı da yoktur.",
+        "Düşeyde yukarı +3, iki yan okun her birinden −1 gelir. Bu yüzden düşey toplam 3−1−1 işlemiyle bulunur.",
+        "Toplam +1 düşeydir; yatay toplam 0 kaldığı için net yukarı 1 birimdir. 120° bilgisi, 3 ve 2 birimlik okları eş yapmamıştır."
+      ],
+      "optionReasons": [
+        "Doğru. Yatay paylar sıfırlanır; düşeyde 3−1−1=+1 kalır ve bu yukarı yöndür.",
+        "1 büyüklüğü doğru olsa da yön terstir. Yukarı 3, aşağı toplam 2’den büyük olduğu için net aşağı bakamaz.",
+        "Sıfır sonucu üç oku eş büyüklükteymiş gibi dengelemektir. Verilen üst ok 3, yan oklar 2’şer birimdir; düşey toplam 1 kalır.",
+        "7=3+2+2, ok uzunluklarının toplamıdır. Yan okların düşey payları 2 değil aşağı 1’dir; vektör toplamı böyle hesaplanmaz.",
+        "Net yatay olamaz; kökte yatay payların eş ve zıt olduğu verilmiştir. Kalan 1 birim yatay değil düşey bileşendir."
+      ],
+      "commonError": "120° açıları görünce büyüklükleri de eş varsaymak veya yan okun bütün uzunluğunu düşey katkı diye almak.",
+      "check": "İki yan okun aşağı toplamı 1+1=2’dir. Bulunan yukarı net 1’e bu çıkarılan büyüklüğü geri eklediğinde 1+2=3 üst okun düşey katkısını geri vermelidir; yatay toplam ayrıca 0 kalır."
+    }
+  },
+  {
+    "id": "f093-chem-mol-7",
+    "identity": "[\"f093-chem-mol-7\",\"CO₂ ve HCN doğrusal veriliyor. CO₂’de iki eş C=O dipolü zıt; HCN’de H→C ve C→N dipolleri aynı genel doğrultuyu destekliyor. Hangisi doğrudur?\",\"\",[\"İkisi de doğrusal olduğundan apolardır\",\"HCN apolar, CO₂ polar\",\"İki farklı dış atom her koşulda eş dipol demektir\",\"CO₂ apolar, HCN polar\",\"Bağ mertebesi tek başına net dipolü sıfırlar\"],3,\"CO₂’de eş-zıt etkiler sıfırlanır. HCN’de verilen iki etki N tarafını destekler, sıfır kalıcı dipol yoktur. Doğrusal geometri uçları eşdeğer yapmaz; tek/üçlü bağ sayısı da bu yön hesabının yerine geçmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Doğrusal geometri, atomların aynı doğru üzerindeki konumunu anlatır. Her bağın kutuplanma oku ise o bağın hangi ucuna doğru elektron yoğunluğu kaydığına göre çizilir.",
+        "Aynı genel doğrultuyu destekleyen iki pozitif büyüklük birbirini götürmez. Karşılıklı iptal için yalnız düz bir çizim değil, uygun yön ve büyüklük ilişkisi gerekir."
+      ],
+      "strategy": "CO₂ ve HCN’yi ayrı doğru eksenlerine yerleştir; her bağ için verilen ok başlangıcını ve ucunu işaretle. Eşlik bilgisini yalnız verildiği örnekte kullanarak iki neti karşılaştır.",
+      "steps": [
+        "CO₂’de C’den iki O’ya giden eş etkiler doğrunun iki zıt yönündedir; bu yapıda toplam sıfır olur.",
+        "HCN’de atom sırası H–C–N’dir. Verilen H→C ve C→N oklarının ikisi de aynı genel yönde, N tarafına doğru katkı yapar; birbirini götürmez.",
+        "Böylece CO₂ apolar, HCN polardır. İki yapının doğrusal olması bu farkı silmez; tek ve üçlü bağ çizgileri de verilen yön toplamının yerine geçmez."
+      ],
+      "optionReasons": [
+        "Doğrusal olmak iki etkiyi zorunlu eş ve zıt yapmaz. HCN’de verilen iki ok aynı genel doğrultuyu desteklediği için ikisi birden apolar değildir.",
+        "İki sınıf ters yazılmıştır: CO₂’nin eş-zıt etkileri sıfır verirken HCN’nin aynı doğrultudaki etkileri kalır.",
+        "Farklı dış atomların her koşulda eş dipol oluşturacağı söylenemez. Buradaki HCN için verilen ok yönleri de CO₂’deki eş-zıt dengeyi sağlamaz.",
+        "Doğru. CO₂’de eş ve zıt etkiler sıfırlanır; HCN’de verilen H→C ve C→N katkıları N tarafını desteklediği için net dipol kalır.",
+        "Bağ mertebesi tek başına net dipolü sıfırlamaz. HCN’de bir tek ve bir üçlü bağ bulunması, verilen iki okun aynı yöndeki katkısını yok etmez."
+      ],
+      "commonError": "Doğrusal sözcüğünü her molekül için apolar etiketi gibi kullanmak veya verilen kutuplanma oklarını yalnız bağ çizgisi sayısıyla değiştirmek.",
+      "check": "H, C ve N’yi soldan sağa yazıp verilen iki oku çiz: ikisi de sağa bakar. CO₂’de ise C’den dışarı giden oklar sağ ve soladır. Bu yön kontrolü için ölçülmüş dipol büyüklüğü varsaymak gerekmez."
+    }
+  },
+  {
+    "id": "f093-chem-mol-8",
+    "identity": "[\"f093-chem-mol-8\",\"OF₂’de O merkezde iki F’ye tek bağla bağlı, iki yalnız çift taşıyor; atom geometrisi açısal. F daha elektronegatif ve iki O–F dipolü eş. Molekül hakkında uygun yorum hangisidir?\",\"\",[\"Dış atomlar aynı olduğu için kesin apolardır\",\"Açısal iki F yönünde ortak bileşen kaldığı için polardır\",\"F–O–F yazımı zorunlu 180° gösterir\",\"İki yalnız çift O’yu iyonik kristale dönüştürür\",\"Dipoller O’ya yönelmek zorundadır\"],1,\"Dipoller O’dan F’lere yönelir. Açısal iki eş yön zıt olmadığından F uçları tarafındaki ortak pay kalır; OF₂ polardır. İki yalnız çift geometriyi açıklar; aynı dış atom veya düz yazım 180° karşıtlık sağlamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kimyasal kutuplanma oku bu gösterimde ortak elektronları daha çok çeken, kısmi negatif uca yönelir. Elektronegatiflik karşılaştırması önce bağın uçlarını belirler.",
+        "Atom geometrisi ile düz yazılmış bağlantı formülü farklı bilgiler verir. Merkezdeki yalnız çiftler elektron bölgelerine katılır; şeklin adı ise atomların konumları üzerinden verilir."
+      ],
+      "strategy": "İki O–F okunun uçlarını elektronegatiflik verisiyle yerleştir; ardından kökte verilen açısal düzen üzerinde bileşenlerini karşılaştır. Yalnız dış atomların aynı olmasına bakarak karar verme.",
+      "steps": [
+        "F’nin daha elektronegatif olduğu verildiğinden her O–F kutuplanma oku O’dan F’ye yönelir; H₂O’daki ok yönünü ezberden buraya taşıma.",
+        "O çevresinde iki bağ ve iki yalnız çift vardır; atomların açısal olduğu da açıkça verilmiştir. İki bağ oku bu yapıda 180° karşıt değildir.",
+        "Eş iki okun yan payları dengelenirken F uçları tarafındaki ortak payları kalır. Bu nedenle OF₂ polar moleküldür; bağların eşliği tek başına sıfır toplam sağlamaz."
+      ],
+      "optionReasons": [
+        "Dıştaki iki F aynı olsa da oklar açısal düzende zıt değildir. Eşlik koşulu tek başına apolar molekül sonucunu vermez.",
+        "Doğru. O’dan F’lere giden eş kutuplanma okları açısal düzende ortak bileşen bırakır; molekül polardır.",
+        "F–O–F düz yazımı yalnız bağlantıyı gösterir. Kök atom geometrisinin açısal olduğunu açıkça verdiğinden 180° okunamaz.",
+        "İki yalnız çift merkez O üzerindeki elektron bölgeleridir; bunların varlığı ayrı molekülü iyonik kristale dönüştürmez.",
+        "Dipoller O’ya yönelmez; daha elektronegatif uç F olarak verilmiştir. Bu gösterimde oklar kısmi negatif F uçlarına doğrudur."
+      ],
+      "commonError": "H₂O’daki O’ya doğru okları OF₂’ye aynen kopyalamak veya aynı dış atomları karşıt yerleşimle eşitlemek.",
+      "check": "Her okun ucunun F’de olduğunu ve iki okun açıortayındaki ortak payın F uçları tarafına baktığını birlikte denetle. Molekülü çevirmek bu iç yön ilişkisini ve sıfırdan farklı toplamı değiştirmemelidir."
+    }
+  },
+  {
+    "id": "f093-chem-mol-9",
+    "identity": "[\"f093-chem-mol-9\",\"Nötr bir XY₂ molekülünün iki X–Y bağı eş ve polar olarak veriliyor; bağlantı X merkezde, ama bağ açısı/yalnız çift bilgisi verilmiyor. Yalnız bu verilerle hangi sonuç savunulabilir?\",\"\",[\"Molekül zorunlu apolardır\",\"Molekül zorunlu polardır\",\"Bağlar aslında apolar olmalıdır\",\"XY₂ iyonik kristaldir\",\"Molekül dipolünü kesin belirlemek için geometri bilgisi de gerekir\"],4,\"Eş polar iki bağ doğrusal-zıt olabilir ve sıfır verebilir; açısal olabilir ve net etki bırakabilir. Açı veya geometriye götüren ek bilgi olmadan tek sonuç yoktur. Formül ve bağ eşliği geometriyi her tür için tek başına belirlemez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir molekülün net dipolünü incelemek için bağ etkileri yönlü nicelikler olarak birleştirilir. Bir formül atom sayılarını, bağlantı bilgisi komşulukları gösterir; bunlar açıyla aynı tür bilgi değildir.",
+        "“Kesin” bir sonuç, verilen koşullara uyan bütün olasılıklarda geçerli olmalıdır. Aynı koşulları sağlayan iki farklı yapı kurmak, hangi ek bilginin ayırt edici olacağını sınamaya yarar."
+      ],
+      "strategy": "Verilen X merkezli iki eş polar bağı koruyarak farklı izinli yön düzenleri kur; her düzende neti ayrı incele. Veriler değişmeden sonuç değişiyor mu diye karşılaştırıp desteklenen en güçlü yargıyı seç.",
+      "steps": [
+        "İki eş bağı doğrusal ve zıt yerleştiren bir düzen düşün. Bağların polar ve eş olması koşulları korunur; eş-zıt etkiler sıfır toplam verebilir.",
+        "Aynı iki eş polar bağı açısal bir düzene yerleştir. Bu kez yönler karşıt olmadığı için ortak bileşen kalabilir; yine kökteki bağlantı ve bağ eşliği bozulmaz.",
+        "Verilenler hem sıfır hem sıfırdan farklı nete izin verir. Bu yüzden zorunlu polar veya apolar demek yerine, kesin karar için geometri bilgisinin de gerektiğini seç."
+      ],
+      "optionReasons": [
+        "Doğrusal eş-zıt düzen apolar olabilir, fakat açısal eş bağ düzeni de verilere uyar ve net bırakabilir. Bu nedenle apolarlık zorunlu değildir.",
+        "Açısal düzen polar olabilir, fakat doğrusal eş-zıt düzen de aynı bağ verilerini sağlar ve toplamı sıfırlar. Polarlık da zorunlu değildir.",
+        "Kök bağların eş ve polar olduğunu açıkça verir. Molekülün neti belirsiz diye bu yerel bağ bilgisini apolar olarak değiştiremezsin.",
+        "Verilen tür nötr bir moleküldür; X merkezli kovalent bağlantıdan iyonik örgü sonucu çıkmaz. Geometri eksikliği tanecik türünü değiştirmez.",
+        "Doğru. Eş polar iki bağın yönleri doğrusal-zıt veya açısal olabilir; kesin molekül dipolü için açıya ya da geometriyi belirleyen ek bilgiye ihtiyaç vardır."
+      ],
+      "commonError": "Eksik açı bilgisini formülden kendiliğinden üretmek veya kesinlik yerine yalnız bir mümkün örneğe dayanmak.",
+      "check": "Kurduğun iki düzen için aynı kontrol listesini uygula: merkez X, iki Y, iki eş polar bağ ve toplam nötrlük korunuyor mu? Bunları koruyup farklı netler bulabiliyorsan tek sınıfı zorunlu ilan edemezsin."
+    }
+  },
+  {
+    "id": "f093-chem-mol-10",
+    "identity": "[\"f093-chem-mol-10\",\"CCl₄’ün dört eş C–Cl bağı dört yüzlü düzende dengeleniyor. Bu maddenin molekül ve moleküller arası etkileşimi için hangisi doğrudur?\",\"\",[\"Apolar olduğu için elektron içermez\",\"Kalıcı dipol sıfırsa moleküller birbirini hiçbir yolla çekmez\",\"Molekül apolardır; anlık dipollerle London etkileşimi bulunabilir\",\"C–Cl bağlarının hepsi iyoniktir\",\"Dört yüzlü görünümü döndürmek molekülü polar yapar\"],2,\"Dört eş C–Cl dipolünün dengesi kalıcı net dipolü sıfırlar. Elektron dağılımındaki anlık değişimler London etkileşimine izin verir. Bağlar polar kovalent kalır; molekülü döndürmek sınıfını değiştirmez. Kalıcı dipol yokluğu hiç etkileşim olmadığı anlamına gelmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kalıcı net dipol, molekülün sürekli kutuplanmasını anlatır; elektron dağılımının anlık değişimleri ayrı bir özelliktir. Ortalama netin sıfır olması elektronların yok olduğu anlamına gelmez.",
+        "Elektron bulutundaki anlık dalgalanmalar yakın taneciğin dağılımını etkileyebilir. Molekül içindeki bağ ile ayrı moleküller arasındaki bu etkileşim farklı düzeylerde incelenir."
+      ],
+      "strategy": "Önce verilen dört yüzlü eş yönlerden kalıcı neti değerlendir; sonra elektronların anlık dağılım değişimini ayrı bir etkileşim sorusu olarak ele al. İç bağ etiketini bu iki karardan dolayı değiştirme.",
+      "steps": [
+        "CCl₄’te dört eş C–Cl etkisinin dört yüzlü düzende dengelendiği verilmiştir. Kalıcı net dipol sıfır olduğundan molekül apolardır.",
+        "Bu sonuç CCl₄’ün elektron taşımadığını veya elektron bulutunun her anda değişmez olduğunu söylemez. Anlık dağılım değişimleri komşu molekülün dağılımını etkileyebilir.",
+        "Bu geçici etkiler London etkileşimine olanak verir. Doğru yorum, apolar molekül ile London etkileşiminin birlikte bulunabildiğidir; C–Cl iç bağları polar kovalent kalır."
+      ],
+      "optionReasons": [
+        "Apolar olmak elektron yokluğu değildir. Dört C–Cl kovalent bağının ve atomların elektronları vardır; sıfırlanan yalnız kalıcı net dipoldür.",
+        "Kalıcı dipolün sıfır olması bütün çekimleri kaldırmaz. Anlık elektron dağılımı ve komşu tanecikte oluşturduğu etkiler hâlâ mümkündür.",
+        "Doğru. Eş dört yüzlü etkiler kalıcı neti sıfırlar; elektron dağılımındaki anlık değişimler nedeniyle London etkileşimi bulunabilir.",
+        "C–Cl bağları polar kovalenttir; bu bağların uzayda dengelenmesi onları iyonik yapmaz ve bir iyon örgüsü oluşturmaz.",
+        "Molekülün bütününü döndürmek dört eş yönün göreli düzenini değiştirmez. İzdüşüm farklı görünebilir ama kalıcı netin sıfır olması ve molekül sınıfı korunur."
+      ],
+      "commonError": "Kalıcı dipol yokluğunu elektron veya bütün moleküller arası etkileşimlerin yokluğu sanmak.",
+      "check": "Dört yüzlü yapıyı birlikte döndürdüğünde eş yönlerin dengesi korunur; anlık elektron dağılımı değişimleri ise zamanla ilgili başka bir olaydır. Bu iki kontrol, apolarlık ile etkileşim olasılığını birbirine karıştırmamalıdır."
+    }
+  }
+]

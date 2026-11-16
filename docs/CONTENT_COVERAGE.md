@@ -1,3 +1,25 @@
+# 0.18.1 adayının ölçülen kapsamı
+
+| Ölçüm | Gerçek kaynak |
+| --- | --- |
+| Ayrıntılı anlatım / yerleşik özet | 480 / 480 |
+| Sıralı çalışma başlığı | 479/479 anlatım ve soruyla eşleşir |
+| Özgün soru | 5.883; eski alanlar ve sıralar korunur |
+| Ayrıntılı yardım / kısmi yardım | 2.943 / 2.940 |
+| Bu pakette genişleyen eski kart | 200; altı paket, 20 konu |
+| Yeni çözüm adımı / şık gerekçesi | 600 / 1.000 |
+| Yeniden erişilen yazılı hatırlama | 31 pakette 62 soru ve 96 püf noktası |
+| Korunan rehber hatırlaması | Bu 31 pakette 191; yazılı ek bunları kaldırmaz |
+| Tam deneme / branş | TYT 120/165 dk, AYT Sayısal 80/180 dk ve 15 branş |
+
+200 kart matematik 50, fizik 50, kimya 20, biyoloji 20, Türkçe 30 ve tarih 30 olarak işlenmiştir. Yeni soru veya seçenek üretilmedi; eski beş şık ve anahtarlar korunur. Eski 2.743 yardım metni ve panel sırası gerçek önceki kaynakla karşılaştırılır. Ham 5.883 soru, 514 öğretim/soru-seti metadata kaydı ve 480 rehber değişmez.
+
+Bu kapsam kaynak ve yerel kabul ölçümüdür; son tam CI/paket/yayın kabulü değildir. Sıradaki 300 kart ayrı hazırlıktır. Konu başlığı eşleşmesi, her Drive/MEB alt kazanımının veya bütün resmî sınav arşivinin tamamlandığını göstermez. Öğrenci ders kaynağı veya PDF yüklemez.
+
+---
+
+## Önceki kaynak ve kabul kayıtları
+
 # Güncel 0.18 kaynak adayı
 
 Doğrulanmış çalışma sırasındaki 479 başlığın tamamı anlatım ve bağımsız soruyla eşleşir. Kaynakta 480 ayrıntılı rehber, 480 yerleşik kopya kağıdı ve 5.883 özgün soru vardır. 0.17 üzerine 130 yeni anlatım eklenmiş; kısa kalan 28 eski anlatım 553 bölüm, 168 çözümlü örnek ve 178 hatırlama etkinliğiyle derinleştirilmiştir. İleri sorular 28 ayrı setten açılır.

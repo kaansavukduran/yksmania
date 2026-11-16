@@ -2,6 +2,7 @@ import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { allFoundationPracticeSets } from "../../src/learning/forge013FoundationQuestions";
 import type { Question } from "../../src/domain/model";
+import { localizedQuestionView } from "../../src/domain/questionPresentation";
 const titles = Object.fromEntries(
   allFoundationPracticeSets.map((pack) => [pack.lessonId, pack.lessonTitle]),
 );
@@ -102,7 +103,10 @@ for (const pack of allFoundationPracticeSets) {
     await offlineReady(page);
     await context.setOffline(true);
     await open(page, pack.lessonId, "Sorular");
-    const questions = pack.questions;
+    // Keep the original bank immutable; the approved display view distinguishes
+    // occupied electron shells from fully filled shells in two legacy cards.
+    // Literal correction and full raw-bank retention have separate029/028 gates.
+    const questions = pack.questions.map(localizedQuestionView);
     for (const [i, question] of questions.entries()) {
       await expect(page.locator(".question-meta")).toContainText(
         `Soru ${i + 1} / 10`,

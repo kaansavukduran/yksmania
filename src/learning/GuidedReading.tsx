@@ -1,4 +1,4 @@
-import { useId, useState, useEffect } from "react";
+import { useId, useState, useEffect, type ReactNode } from "react";
 import { useExploration } from "./useExploration";
 import "./guidedJourney.css";
 import { ArrowRight, RotateCcw } from "lucide-react";
@@ -73,7 +73,13 @@ function Example({ example }: { example: WorkedExample }) {
     </details>
   );
 }
-export function GuidedReading({ guide }: { guide: LessonGuide }) {
+export function GuidedReading({
+  guide,
+  recallSupplement,
+}: {
+  guide: LessonGuide;
+  recallSupplement?: ReactNode;
+}) {
   const prefix = useId();
   const [journey, persistJourney] = useExploration(`guide:${guide.id}`, {
     step: 0,
@@ -277,6 +283,7 @@ export function GuidedReading({ guide }: { guide: LessonGuide }) {
               <p>{item.answer}</p>
             </details>
           ))}
+          {recallSupplement}
         </section>
       )}
       {guided && (

@@ -1,0 +1,722 @@
+[
+  {
+    "id": "f93h-c1",
+    "identity": "[\"f93h-c1\",\"Bir fermanın tuğrasını çeken ve arazi tahrir kayıtlarıyla ilgilenen görevli hangisidir?\",\"\",[\"Defterdar\",\"Kazasker\",\"Nişancı\",\"Kaptan-ı derya\",\"Şeyhülislam\"],2,\"Tuğra ve tahrir nişancının iş kümesidir. Defterdar hazine ve gelir–giderle, kazasker hukuk–eğitim kadrolarıyla ilgilidir; donanma ve fetva görevleri de verilen fiillerle uyuşmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tuğra, hükümdarın belgelerdeki ayırt edici işaretidir; tahrir ise arazi ve vergiye ilişkin kayıt düzeniyle bağlantılıdır. Bir belgenin resmî düzenini yürütmek ile hazinenin gelir ve gider hesabını tutmak ayrı uzmanlıklardır."
+      ],
+      "strategy": "İki iş için ayrı not aç: belgenin tuğrası ve arazinin kaydı. Her adayın bu iki işle birlikte ilişkisini ara; yalnız bir defter veya hukuk çağrışımı üzerinden karar verme.",
+      "steps": [
+        "Kartta tuğra çekmek ve arazi tahrir kayıtlarıyla ilgilenmek aynı görevliye bağlanıyor; hazine hesabı veya mahkeme ataması sorulmuyor.",
+        "Klasik görev dağılımında nişancı tuğra ve tahrir işleriyle, defterdar ise hazine gelir–gideriyle ilişkilidir. Belge düzeni ile mali hesabı bu noktada ayır.",
+        "Nişancı her iki ipucunu birlikte karşılar. Donanma komutanlığı, fetva verme ve kadı ataması tuğra–arazi kaydı ikilisini açıklamaz."
+      ],
+      "optionReasons": [
+        "Defterdar hazine, gelir ve gider işlerini yürütür; bir işte kayıt tutulması, onu arazi tahriri ve tuğra görevinin sahibi yapmaz.",
+        "Kazasker hukuk ve eğitim kadrolarıyla, özellikle kadı ve müderris atamalarıyla ilişkilidir; fermanın tuğrası bu atama işinden farklıdır.",
+        "Doğru. Nişancının tuğra çekme ve arazi tahrir kayıtlarıyla ilgilenme görevleri, kökte birlikte verilen iki fiille de örtüşür.",
+        "Kaptan-ı derya donanmayı yönetir; deniz kuvvetlerinin komutası resmî belgenin tuğrasını ve arazi defterlerini yürütmek değildir.",
+        "Şeyhülislam dinî-hukuki fetva verir; görüş bildirme işlevi, tuğra hazırlama ve tahrir kaydı görevlerinin karşılığı değildir."
+      ],
+      "commonError": "“Defter” veya “kayıt” çağrışımından bütün yazı işlerini defterdara vermek, kaydın içeriğini atlar. Aynı görevlinin tuğrayı da tahriri de açıklamasını iste.",
+      "check": "Görevli adını kapatıp seçtiğin kişinin iki işini geri söyle: hükümdarlık işaretini belgeye çekme ve arazi kaydını yürütme. Hazine hesabına geçtiysen ilk ayrımı yeniden kur."
+    }
+  },
+  {
+    "id": "f93h-c2",
+    "identity": "[\"f93h-c2\",\"Hazine gelir ve giderlerini düzenleyen görevlinin, klasik iş bölümü anlatımındaki görevi ve sınıfı hangisidir?\",\"\",[\"Defterdar–kalemiye\",\"Nişancı–seyfiye\",\"Kazasker–kalemiye\",\"Sadrazam–ilmiye\",\"Şeyhülislam–seyfiye\"],0,\"Hazine gelir–gideri maliye işidir; defterdar ve kalemiye eşleşir. Nişancı da klasik sınıflamada kalemiye alanındadır fakat ayırt edici görev mali bütçe değildir. Diğer eşleştirmelerde görev veya sınıf bozulur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Gelir tahsili, giderlerin izlenmesi ve hazine hesabı mali yönetimin parçalarıdır. Klasik görev sınıflamasında unvan, yapılan iş ve bağlı olunan geniş işlev grubu birlikte değerlendirilir; aynı gruptaki görevlilerin işleri ayrıca ayrışabilir."
+      ],
+      "strategy": "Önce kökteki üç mali veriyi tek bir iş alanında birleştir. Sonra seçenekleri iki sütunla denetle: görevli bu işi yapıyor mu, yanındaki sınıf da bu görev alanına uyuyor mu?",
+      "steps": [
+        "Hazine ile gelir ve giderin düzenlenmesi, soru verisini maliye alanına yerleştirir; savaş yönetimi veya eğitim ataması anlatılmıyor.",
+        "Maliye görevlisi defterdardır. Sorunun özellikle belirttiği klasik iş bölümü anlatımında maliye ve kayıt işleri kalemiye alanında ele alınır.",
+        "İki sütun da Defterdar–kalemiye eşleşmesinde birlikte sağlanır; doğru bir unvanı yanlış sınıfla eşleştiren seçenek de kabul edilmez."
+      ],
+      "optionReasons": [
+        "Doğru. Defterdarın gelir–gider ve hazine görevi mali işle örtüşür; kalemiye de sorudaki klasik işlev sınıflamasına uygundur.",
+        "Nişancı tuğra ve tahrirle ilişkilidir, hazine bütçesinin ayırt edici görevlisi değildir; ayrıca klasik sınıflamada onu seyfiyeye yazmak da uygun değildir.",
+        "Kazasker hukuk–eğitim işleri ve kadro atamalarıyla ilgilidir. Kalemiye etiketi bu görevlide doğru değildir; maliye görevi de karşılanmaz.",
+        "Sadrazam geniş yetkili yürütme ve hükümdar vekilliği görevlisidir; ilmiye eşleştirmesi yanlıştır ve kökün ayırt ettiği hazine işi bu unvanla bulunmaz.",
+        "Şeyhülislam fetva işleviyle ilmiye alanındadır. Seyfiye etiketi ve hazine gelir–gideriyle kurulan bağ birlikte uyuşmaz."
+      ],
+      "commonError": "Yalnız eşleşmenin ilk kelimesini kontrol etmek veya bütün kalem işlerini aynı unvana vermek iki aşamalı soruyu eksik çözer. Görev ile sınıf ayrı ayrı doğrulanmalıdır.",
+      "check": "Yanıtı tersinden aç: kalemiye içindeki hangi görevli doğrudan hazine hesabını yürütür? Nişancının tahrir göreviyle farkını da kurabiliyorsan hem sınıfı hem unvanı korumuşsundur."
+    }
+  },
+  {
+    "id": "f93h-c3",
+    "identity": "[\"f93h-c3\",\"Bu düzenlemeden hangi sonuç çıkarılabilir?\",\"Fatih döneminde Divan-ı Hümayuna başkanlık etme görevi sadrazama geçti. Devlet işleri kurulda görüşülüyor, kararlar padişahın onayıyla uygulamaya konuluyordu.\",[\"Padişahlık makamı ortadan kalkmıştır.\",\"Divan modern bir seçilmiş parlamento olmuştur.\",\"Sadrazam bütün hanedan üyelerinin üstünde yeni hükümdardır.\",\"Başkanlık devredilirken hükümdarın son onay yetkisi sürmüştür.\",\"Divanın mali konuları görüşmesi yasaklanmıştır.\"],3,\"Sadrazam vekil olarak başkanlık eder; onay hükümdarla ilişkilidir. Bu iki bilgi yetki kullanımındaki iş bölümünü gösterir. Hükümdarlığın ortadan kalkması, parlamento veya maliye yasağı hakkında kanıt yoktur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir kurulun toplantısını yönetmek, kurulda konuları görüşmek ve kararın yürürlüğe girişini onaylamak birbirinden ayrılabilen yetkilerdir. Vekâlet ilişkisinde bir görevi temsilci aracılığıyla yürütmek, yönetim makamının ortadan kalkmasıyla aynı işlem değildir."
+      ],
+      "strategy": "Pasajı iki satıra ayır: toplantıyı kim yönetiyor, karar hangi işlemle uygulanıyor? Seçeneklerden her iki satıra dayanak gösterebileceğin yorumu bul; günümüz kurumlarının özelliklerini metne ekleme.",
+      "steps": [
+        "Fatih döneminde değişen görev Divan başkanlığıdır ve bu görev sadrazama geçmiştir; önce değişimin sınırını belirle.",
+        "Pasaj kararların padişahın onayıyla uygulandığını da söylüyor. Böylece toplantıyı yönetme ile son onay iki ayrı aktörle ilişkileniyor.",
+        "Başkanlığın devri ve hükümdar onayının sürmesi birlikte desteklenir. Metin sultanlığı kaldırmaz, seçimle parlamento kurmaz ve mali görüşmelere yasak getirmez."
+      ],
+      "optionReasons": [
+        "Padişahlığın kalkması, onay veren padişahın pasajda hâlâ görev yapmasıyla çelişir; başkanlık değişimi makamın yok oluşu değildir.",
+        "Seçim, temsil sistemi veya yasama yetkisinin modern parlamentoya dönüşmesi hakkında veri yoktur; Divanın başkanının değişmesi bu özellikleri kurmaz.",
+        "Sadrazam pasajda hükümdar olarak değil başkanlık görevini alan yönetici olarak yer alır. Padişahın son onayı, yeni hükümdarlık iddiasını desteklemez.",
+        "Doğru. Sadrazam başkanlığı üstlenirken kararların padişah onayıyla uygulanması sürer; yorum pasajdaki iki ayrı yetki bilgisini birlikte korur.",
+        "Pasaj mali konulara ilişkin bir yasak bildirmez. Toplantı başkanlığının kimde olduğundan görüşülebilecek konuların daraltıldığı çıkarılamaz."
+      ],
+      "commonError": "Başkanlık fiilini egemenliğin bütünü gibi okumak, metindeki onay cümlesini görünmez kılar. İki yetkiyi tek kişide toplama zorunluluğu ekleme.",
+      "check": "Seçeneği pasajın iki cümlesine geri dağıt: ilk bölüm başkanlığı, ikinci bölüm onayı açıklamalı. Yorumun doğruluğu için seçim veya makamın kaldırılması gibi üçüncü bir bilgi gerekmemelidir."
+    }
+  },
+  {
+    "id": "f93h-c4",
+    "identity": "[\"f93h-c4\",\"Yönetici yetiştirme, dış saray hizmetleri ve hanedan ailesinin yaşam/eğitimi işlevleri sırasıyla hangi alanlarla eşleşir?\",\"\",[\"Harem–Enderun–Birun\",\"Divan–Harem–Enderun\",\"Enderun–Harem–Birun\",\"Birun–Divan–Enderun\",\"Enderun–Birun–Harem\"],4,\"Yönetici yetiştirme Enderun, dış/resmî hizmet Birun, hanedan yaşamı ve eğitimi Harem’le ilişkilidir. Seçeneklerde yerlerin değiştirilmesi veya Divanın saray eğitim bölümü sayılması işlev sırasını bozar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Topkapı Sarayı yönetim, hizmet, eğitim ve hanedan yaşamını aynı yapı içinde barındırır. Sarayın bir bölümüyle devlet işlerini görüşen kurul farklı tür yapılardır; bir alanın birden çok işlevi bulunabilse de sorudaki belirleyici işlev esas alınır."
+      ],
+      "strategy": "Kökteki üç işlevi sıralı üç kutuya yaz. Seçenekte yalnız ilk eşleşmeyle yetinme; ikinci ve üçüncü kutuyu da aynı sırayla tamamlayıp kurul adıyla saray bölümünü karıştırıp karıştırmadığını denetle.",
+      "steps": [
+        "İlk kutu yönetici yetiştirme, ikincisi dış saray hizmetleri, üçüncüsü hanedan ailesinin yaşamı ve eğitimidir; soru bu sırayı korumayı ister.",
+        "Yönetici yetiştirme Enderun’la, dış ve resmî hizmetler Birun’la, hanedan yaşamı ile eğitimi Harem’le eşleşir.",
+        "Enderun–Birun–Harem sırası üç işlevi de doğru yerinde karşılar. Divan ise bu üç saray bölümünden biri değil devlet işlerinin görüşüldüğü kuruldur."
+      ],
+      "optionReasons": [
+        "Harem’i yönetici yetiştirme kutusuna, Enderun’u dış hizmet kutusuna, Birun’u aile yaşamı kutusuna koyarak üç işlevin yerini değiştirir.",
+        "Divan bir eğitim bölümü değil merkezî kuruldur; Harem dış hizmetlerin, Enderun da hanedan ailesinin yaşam alanının karşılığı olarak kullanılamaz.",
+        "Enderun ilk işlevi karşılar; fakat dış hizmetler Birun’a, hanedan yaşamı Harem’e aitken son iki alan ters sıralanmıştır.",
+        "Birun dış hizmetlerle ilişkilidir, ilk eğitim kutusuna uymaz; Divan da ikinci kutudaki dış saray bölümü değildir. Üçüncü eşleşme de bozulur.",
+        "Doğru. Yönetici eğitimi Enderun, dış hizmet Birun, hanedan ailesinin yaşamı ve eğitimi Harem sırasıyla verilmiştir."
+      ],
+      "commonError": "İlk kelime Enderun olduğu için seçenek tamamını okumadan işaretlemek, son iki işlevin ters çevrildiği yakın yanlışa götürür. Üç konumu da ayrı doğrula.",
+      "check": "Sırayı sondan başa oku: hanedan yaşamı hangi alan, dış hizmet hangi alan, kadro eğitimi hangi alan? Ters yönde de aynı üçlü çıkıyorsa sıralamayı ezber çağrışımıyla değil işlevle kurmuşsundur."
+    }
+  },
+  {
+    "id": "f93h-c5",
+    "identity": "[\"f93h-c5\",\"Kadı ve müderrislerin atanmasıyla ilgilenmek ile dinî-hukuki fetva vermek sırasıyla hangi görevlileri ayırt eder?\",\"\",[\"Defterdar–nişancı\",\"Kazasker–şeyhülislam\",\"Şeyhülislam–kazasker\",\"Sadrazam–kaptan-ı derya\",\"Nişancı–defterdar\"],1,\"Kadı/müderris ataması kazasker; fetva şeyhülislamla ilişkilidir. Ters sıra görevleri karıştırır. Maliye, tuğra, askerî yönetim veya donanma verilen iki fiilin karşılığı değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Klasik hukuk ve eğitim düzeninde bir göreve atama yapmak, mahkemede hüküm vermek ve dinî-hukuki görüş bildirmek ayrı işlemlerdir. Geniş bir meslek grubuna bağlı olmak bütün bu fiillerin aynı görevliye ait olmasını gerektirmez."
+      ],
+      "strategy": "İki fiilin altını ayrı çiz: göreve atamak ve fetva vermek. İlgili unvanları bu fiillerle eşleştirip seçenekteki sırayı denetle; yalnız din veya hukuk kelimesinin ortaklığına dayanma.",
+      "steps": [
+        "Birinci işlem kadı ve müderrislerle ilgili atamadır; ikinci işlem dinî-hukuki fetva, yani görüş bildirmedir.",
+        "Klasik görev ayrımında kadı ve müderris atamaları kazaskerle, fetva verme şeyhülislamla ilişkilidir; ortak ilmiye alanı bu ayrımı kaldırmaz.",
+        "Kökteki sıra atama→fetva olduğundan Kazasker–şeyhülislam eşleşmesi gerekir. Aynı adları ters veren seçenek iki doğru bilgiyi yanlış konumlara yerleştirir."
+      ],
+      "optionReasons": [
+        "Defterdar mali hesapla, nişancı tuğra ve kayıt düzeniyle ilişkilidir; ne kadro ataması ne de fetva fiili bu ikiliyle karşılanır.",
+        "Doğru. Kadı ve müderris ataması kazaskerin, dinî-hukuki fetva şeyhülislamın ayırt edici işlevi olarak istenen sıradadır.",
+        "İki unvan ilgili hukuk–din alanındadır; fakat fetva görevlisini atama, atama görevlisini fetva yerine koyduğu için sıralama ters olmuştur.",
+        "Sadrazam geniş yetkili yönetici ve hükümdar vekili, kaptan-ı derya donanma komutanıdır; bu ikili sorudaki atama–fetva ayrımını karşılamaz.",
+        "Nişancı belge ve arazi kaydıyla, defterdar maliyeyle ilişkilidir. Sıraları değişse de iki fiilin hukuk–eğitim ve fetva karşılığı oluşmaz."
+      ],
+      "commonError": "Fetva ile kadının bir davada verdiği hükmü ya da kadının atanmasını aynı iş sanmak, birbirine yakın üç hukuki işlemi birleştirir. Seçenek sırası da anlamın parçasıdır.",
+      "check": "Unvanları kullanmadan yanıtındaki birinci kişiye “atama”, ikinciye “görüş” fiilini yükle. İkisinin yerini değiştirince görev hatası oluştuğunu açıklayabiliyorsan ayrım kurulmuştur."
+    }
+  },
+  {
+    "id": "f93h-c6",
+    "identity": "[\"f93h-c6\",\"Bu bilgi hangi yargıyı destekler?\",\"XVII. yüzyılda hanedanın yaşça büyük ve uygun görülen üyesine öncelik veren ekber ve erşed anlayışı güçlendi. Amaç tahtın geçişini daha belirli kılmak ve mücadeleleri azaltmaktı.\",[\"Yaşça büyük her üye her alanda en yeteneklidir.\",\"Bütün taht anlaşmazlıklarının kesin olarak bittiği kanıtlanmıştır.\",\"Verasette yaş ve uygunluğu öne çıkaran bir öncelik benimsenmiştir.\",\"Sultanlık artık hanedan dışından seçimle belirlenmektedir.\",\"Uygulama Orhan Bey döneminden beri aynı ayrıntıyla işlemektedir.\"],2,\"Verilen bilgi ekber ve erşed anlayışındaki yaş/uygunluk önceliğini gösterir. Her kişinin en yetenekli olduğu, çatışmaların tamamen bittiği veya hanedan dışı seçim yapıldığı söylenmez; dönem XVII. yüzyıldır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Veraset, hükümdarlığın kimlere ve hangi öncelikle geçeceğini düzenler. Bir kuralın kapsamı, uygulanma dönemi ve hedeflenen etkisi farklı bilgilerdir; düzenlemenin varlığı sonuçların her olayda aynı başarıyla gerçekleştiği anlamına gelmez."
+      ],
+      "strategy": "Pasajdaki zamanı, adayların hangi topluluktan geldiğini ve öncelik ölçütlerini ayrı işaretle. Her seçeneği bu üç veriyle karşılaştır; azaltma amacıyla bütün sonuçların kesinleşmesini aynı ifade gibi okuma.",
+      "steps": [
+        "Zaman XVII. yüzyıl, aday çevresi hanedan, öncelik ölçütleri yaşça büyüklük ve uygun görülmedir; bunlar doğrudan verilen bilgilerdir.",
+        "Ekber ve erşed anlayışı bu ölçütlere dayalı bir veraset önceliğini anlatır. Taht geçişini belirginleştirme ve mücadeleyi azaltma ise amaç olarak belirtilmiştir.",
+        "Yaş ve uygunluğu öne çıkaran öncelik yargısı desteklenir. Her adayın üstün yeteneği, bütün çatışmaların bitişi, hanedan dışı seçim veya Orhan dönemi sürekliliği verilmemiştir."
+      ],
+      "optionReasons": [
+        "Yaşça büyük olma, her alanda üstün yeteneğin ölçülmüş kanıtı değildir; pasaj ayrıca uygun görülme ölçütünü verir, mutlak yetenek sıralaması kurmaz.",
+        "Mücadeleleri azaltmak hedef olarak verilmiştir. Bütün anlaşmazlıkların kesin biçimde bittiğine ilişkin bir sonuç verisi bulunmaz.",
+        "Doğru. Hanedan içindeki yaşça büyük ve uygun üyenin önceliği, verasette yaş ve uygunluk ölçütlerinin öne çıkması demektir.",
+        "Adaylar açıkça hanedan üyeleridir; hanedan dışından seçim getirildiğini söylemek pasajın aday çevresini değiştirmektir.",
+        "Pasaj uygulamanın güçlenmesini XVII. yüzyıla yerleştirir. Orhan Bey döneminden beri aynı ayrıntıyla işlediği iddiası bu zaman verisinden çıkarılamaz."
+      ],
+      "commonError": "“Azaltmak amaçlandı” cümlesini “tamamen bitti” diye sonuçlaştırmak ya da yaş ölçütünü her alandaki yeteneğin garantisi saymak, pasajın kesinlik derecesini yükseltir.",
+      "check": "Yorumunda adayların hanedan içinden gelmesi ve dönemin XVII. yüzyıl olması korunuyor mu? Öncelik tanımı doğru kalırken kusursuz sonuç garantisi eklenmemesi gerekir."
+    }
+  },
+  {
+    "id": "f93h-c7",
+    "identity": "[\"f93h-c7\",\"Bir şehzadenin yanında lala bulunarak sancakta yönetim görevine hazırlanması en doğrudan hangi amaca yöneliktir?\",\"\",[\"Uygulamalı yönetim deneyimi kazandırmak\",\"Her şehzadeyi ömür boyu bağımsız hükümdar yapmak\",\"Merkezle bütün bağları koparmak\",\"Tahrir defterlerini özel mülke çevirmek\",\"Divanın bütün mali görevlerini kaldırmak\"],0,\"Lala ve sancak uygulaması şehzadenin yönetim tecrübesi kazanmasıyla ilişkilidir. Bu eğitimden bağımsız egemenlik, merkezden kopma veya mali kurumların kaldırılması sonucu çıkmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sancak, Osmanlı taşra yönetiminin bir birimidir. Lala şehzadenin yetişmesiyle ilgilenen tecrübeli görevliydi; saraydaki bilgi edinimi ile taşrada sorumluluk üstlenmek aynı eğitim sürecinin farklı ortamlarında gerçekleşebilirdi."
+      ],
+      "strategy": "Senaryodaki kişiyi, eşlik eden görevliyi ve yapılan işi bir araya getir. “Hazırlanma” fiilinin doğrudan neye hizmet ettiğini seç; eğitimin amacına arazi mülkiyeti veya bağımsızlık gibi yeni bir sonuç ekleme.",
+      "steps": [
+        "Kişi bir şehzade, rehberi lala, hazırlık ortamı sancaktır. Kökte yönetim görevine hazırlanma açıkça belirtilmiştir.",
+        "Sancakta yerel yönetim işleriyle karşılaşmak ve tecrübeli bir görevlinin rehberliğini almak, öğrenilenleri görev içinde uygulamaya bağlar.",
+        "En doğrudan amaç uygulamalı yönetim deneyimi kazandırmaktır. Bağımsız hükümdarlık, merkezden kopma ve mali kurumları kaldırma bu eğitim ilişkisinde verilmez."
+      ],
+      "optionReasons": [
+        "Doğru. Sancaktaki görev hazırlığı ve lalanın rehberliği şehzadenin yönetimi uygulama içinde öğrenmesine yöneliktir.",
+        "Şehzadenin yetiştirilmesi, her şehzadenin ömür boyu bağımsız hükümdar yapılması değildir; eğitim görevi yeni bir egemenlik statüsü kurmaz.",
+        "Sancak Osmanlı taşra düzeni içindedir. Şehzadenin orada hazırlanması, merkezle bütün bağların kopması anlamına gelmez.",
+        "Tahrir kayıtlarının özel mülke dönüştürülmesi arazi haklarıyla ilgili bambaşka bir işlemdir; kökte böyle bir mülkiyet değişikliği yoktur.",
+        "Divanın mali görevlerinin kaldırılması merkezî kurumların yetkisini değiştirirdi. Lala eşliğindeki eğitim senaryosu bu değişikliği söylemez."
+      ],
+      "commonError": "Sancağa gönderilmeyi merkezden ayrılmış yeni bir devlet kurmak gibi okumak, idarî bir görev ortamıyla bağımsız egemenliği karıştırır. “En doğrudan amaç” kökteki hazırlığa bağlı kalmalıdır.",
+      "check": "Yanıtındaki amaç hem lalanın tecrübesini hem sancaktaki görev ortamını açıklıyor mu? Bu iki unsurun eğitimdeki rolü kurulabiliyorsa başka kurumlara ait değişiklik eklemeye gerek yoktur."
+    }
+  },
+  {
+    "id": "f93h-c8",
+    "identity": "[\"f93h-c8\",\"Aşağıdaki görevli–işlev eşleştirmelerinden hangisi yanlıştır?\",\"\",[\"Kaptan-ı derya–donanma komutanlığı\",\"Reisülküttap–Divan kâtiplerinin başı\",\"Sadrazam–padişahın geniş yetkili vekili\",\"Defterdar–hanedanın tahta çıkış sırasını tek başına belirleme\",\"Nişancı–tuğra ve arazi kayıtları\"],3,\"Defterdarın ayırt edici işi maliyedir; hanedan veraset sırasını tek başına belirlemek bu görevin tanımı değildir. Diğer seçenekler temel işlevlerle uyumludur; olumsuz kök yanlış eşleştirmeyi ister.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir unvanın yetkisi belirli bir görev alanıyla tanımlanır. Donanma komutası, kâtiplerin yönetimi, hükümdarın temsil edilmesi ve hanedan veraseti ayrı süreçlerdir; merkez teşkilatındaki bir memur bütün süreçlere tek başına karar veren kişi değildir."
+      ],
+      "strategy": "Önce olumsuz kökü işaretle. Her unvanı yanındaki fiille sınayıp özellikle maliye, kayıt, askerî yürütme ve hanedan düzenine ait işleri birbirine geçirip geçirmediğini kontrol et.",
+      "steps": [
+        "Soru doğru eşleşmeyi değil yanlış olanı ister; bu yüzden temel göreviyle uyuşan bir eşleşme yanıt olarak alınmamalıdır.",
+        "Kaptan-ı derya donanma, reisülküttap Divan kâtipleri, sadrazam hükümdar vekilliği, nişancı tuğra ve arazi kaydıyla uyumludur. Defterdarın alanı ise maliyedir.",
+        "Defterdara hanedanın tahta çıkış sırasını tek başına belirleme işi verilmesi görev sınırını bozar; olumsuz kökün yanıtı bu eşleşmedir."
+      ],
+      "optionReasons": [
+        "Donanma komutanlığı kaptan-ı deryanın temel görevidir. Eşleşme doğru olduğu için yanlış eşleştirmeyi arayan kökün yanıtı değildir.",
+        "Reisülküttap Divan kâtiplerinin başıdır; kâtipler ve yazışma alanı unvanla uyumludur. Burada bir görev sapması bulunmaz.",
+        "Sadrazamın padişahın geniş yetkili vekili olması temel yönetim ilişkisidir; bu eşleşme olumsuz kökte elenecek doğru bilgilerdendir.",
+        "Doğru. Yanlış eşleştirme budur: defterdar maliyeyle ilgilidir; hanedan veraset sırasını tek başına belirlemek bu görevin yetkisi değildir.",
+        "Tuğra ve arazi kayıtları nişancının görev kümesine uygundur. Soru yanlış eşleşmeyi istediğinden bu doğru bilgi seçilmez."
+      ],
+      "commonError": "Olumsuz kökü unutarak tanıdık ve doğru bir eşleşmeyi işaretlemek çözümü tersine çevirir. Ayrıca geniş bir devlet görevini hanedan verasetini tek başına belirleme yetkisine dönüştürme.",
+      "check": "Seçtiğin eşleşmedeki unvanı gerçek alanına geri yerleştir: defterdar için hazine hesabı yazılınca neden düzeldiğini açıkla. Böylece yanlışlığın yalnız yabancı kelimeden değil görev ilişkisinden geldiğini sınarsın."
+    }
+  },
+  {
+    "id": "f93h-c9",
+    "identity": "[\"f93h-c9\",\"Bu sınıflandırmadan hangisine ulaşılamaz?\",\"Klasik görev dağılımında seyfiye yönetim–askerlik; ilmiye hukuk–eğitim–dinî bilgi; kalemiye maliye–kayıt–yazışma alanlarıyla ilişkilendirilir. Bu alanlar içinde farklı görevliler bulunur.\",[\"Görev alanları arasında uzmanlaşma vardır.\",\"Eğitim ve hukuk aynı geniş sınıf içinde ele alınabilir.\",\"Maliye ve yazışma yönetimin kayıt boyutuyla ilişkilidir.\",\"Yönetim ve askerlik seyfiye alanında ele alınır.\",\"Aynı sınıftaki bütün görevliler tamamen aynı işi yapar.\"],4,\"Geniş sınıf ortak alanı gösterir; nişancı ve defterdarın veya kazasker ve müderrisin işleri özdeş değildir. İlk dört yargı verilen sınıflamayla uyumludur; sonuncu uzmanlaşmayı yok sayar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yönetim tarihindeki görev sınıfları, işlev alanlarını düzenli biçimde incelemeye yarar. Bir görevlinin yetiştiği yer, personel kökeni ve yaptığı iş farklı bilgiler olabilir; klasik görev sınıfı sorularında işin niteliği esas alınır."
+      ],
+      "strategy": "Pasajdaki üç sınıf için birer iş alanı satırı oluştur. Her seçeneği bu satırlarla eşleştir; iddianın doğrulanması için hangi görev bilgilerini gerektirdiğini ve bu bilgilerin pasajda gerçekten verilip verilmediğini denetle.",
+      "steps": [
+        "Seyfiye yönetim–askerlik, ilmiye hukuk–eğitim–dinî bilgi, kalemiye maliye–kayıt–yazışma alanlarına bağlanıyor.",
+        "Pasaj her alan içinde farklı görevliler bulunduğunu da belirtir. Aynı başlık altında bulunmak, görev fiillerinin veya yetkilerin birebir eşitliğini söylemez.",
+        "Aynı sınıftaki bütün görevlilerin tamamen aynı işi yaptığı sonucuna ulaşılamaz. Diğer yorumlar sınıfların açık alanlarını veya iş bölümü fikrini korur."
+      ],
+      "optionReasons": [
+        "Ayrı alanların ayrı sınıflarla ilişkilendirilmesi görev bakımından uzmanlaşmayı destekler; bu yorum verilen ayrımın kapsamındadır.",
+        "Hukuk ve eğitim ilmiye başlığında birlikte verilmiştir; aynı geniş sınıf içinde ele alınabilmeleri pasajda açıkça desteklenir.",
+        "Maliye, kayıt ve yazışmanın kalemiye içinde bulunması yönetimin hesap ve belge boyutuna bağlanabilir; alanlar doğru eşleştirilmiştir.",
+        "Yönetim ve askerlik doğrudan seyfiye ile ilişkilendirilmiştir; seçenekte pasajda olmayan yeni bir görev sınıfı eklenmez.",
+        "Doğru. Ulaşılamayan yargı budur: ortak sınıf bütün alt görevleri özdeşleştirmez; örneğin mali hesap tutma ile tuğra çekme farklı işlerdir."
+      ],
+      "commonError": "Sınıf üyeliğini tam görev eşitliği saymak “ortak özellik” ile “her özelliği aynı olma” arasındaki mantıksal farkı siler. Pasajın farklı görevliler bilgisini de kullan.",
+      "check": "Aynı sınıfta iki farklı iş örneği kur: defterdarın mali hesabı ile nişancının tuğrası. Tek bir karşılaştırma bile “bütün görevliler aynı işi yapar” genellemesini sınamaya yeter."
+    }
+  },
+  {
+    "id": "f93h-c10",
+    "identity": "[\"f93h-c10\",\"Bir öğrenci ‘Divan-ı Hümayun, Enderun ve sadrazam aynı tür kurumdur’ diyor. Doğru düzeltme hangisidir?\",\"\",[\"Üçü de yalnız askerî birliktir.\",\"Divan kurul, Enderun eğitim kurumu, sadrazam görevlidir.\",\"Divan kişi, Enderun vergi, sadrazam saray bölümüdür.\",\"Üçü de taşradaki tarım birimidir.\",\"Enderun yalnız bir antlaşmanın adıdır.\"],1,\"Divan devlet işlerini görüşen kurul; Enderun sarayda eğitim/hizmet kurumu; sadrazam yönetici görevlidir. Aralarında ilişki bulunması aynı tür yapı olmalarını gerektirmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kurum türü sorularında bir kişinin makamı, birden çok kişinin oluşturduğu karar kurulu ve eğitim veren yapı farklı kategorilerdir. Bir kurulda görevli kişinin eğitim kurumuyla bağlantısı bulunabilir; bu bağlantı kategorilerin aynı olduğunu göstermez."
+      ],
+      "strategy": "Üç adı yan yana yazıp her biri için “kimlerden oluşur veya ne yapar?” sorusunu cevapla. Seçeneklerin tanımladığı türleri bu cevaplarla eşleştir; ortak saray bağlamını ortak tür yerine koyma.",
+      "steps": [
+        "Karşılaştırılan adlar Divan-ı Hümayun, Enderun ve sadrazamdır. Soru aralarındaki ilişkiyi değil aynı tür oldukları iddiasının düzeltilmesini ister.",
+        "Divanda devlet işleri bir kurulda görüşülür; Enderun eğitim ve saray hizmetiyle yönetici yetiştirir; sadrazam ise bir kişinin üstlendiği yönetim makamıdır.",
+        "Kurul–eğitim kurumu–görevli ayrımı doğru düzeltmedir. Askerî birlik, tarım birimi, vergi veya antlaşma kategorileri bu üç adın işlevlerini karşılamaz."
+      ],
+      "optionReasons": [
+        "Divan, Enderun ve sadrazamın hepsini askerî birlik saymak kurul, okul ve görevli ayrımını kaldırır; yönetimle ilişkili olmak birlik olmak değildir.",
+        "Doğru. Divan görüşme kurulu, Enderun eğitim kurumu, sadrazam yönetici görevlidir; aynı yönetim düzenindeki farklı türler doğru ayrılmıştır.",
+        "Divan tek kişi, Enderun vergi ve sadrazam saray bölümü değildir; bu seçenek üç adın türlerini de gerçek işlevlerinden koparır.",
+        "Üç ad da taşrada aynı tarım biriminin adı değildir. Merkezdeki kurul ve eğitim yapısıyla yöneticiyi tarımsal üretim kategorisine taşır.",
+        "Enderun sarayda eğitim ve hizmet kurumudur; bir antlaşmanın adı olarak açıklanması hem işlevini hem sorudaki tür ayrımını bozar."
+      ],
+      "commonError": "Saray veya merkez yönetimiyle ortak ilişkiyi aynı tür kurum olmanın kanıtı saymak sınıflandırmayı bozar. İlişkili yapıların farklı kategorilerde olabileceğini koru.",
+      "check": "Üçünün yerine sırasıyla “toplanır”, “yetiştirir”, “görev yapar” fiillerini getir. Her fiilin gösterdiği kurul, eğitim yapısı ve kişi makamı seçenekte doğru yerde bulunmalıdır."
+    }
+  },
+  {
+    "id": "f93h-s1",
+    "identity": "[\"f93h-s1\",\"İki kişi hakkında hangi değerlendirme doğrudur?\",\"Bir şehirde Müslüman bir terzi ile gayrimüslim bir terzi aynı meslek örgütünde çalışmaktadır. İkisi de üretim yapıp vergi verir; yönetim görevlisi değildir.\",[\"Dinleri farklıysa meslekleri mutlaka farklıdır.\",\"İkisi de askerî sınıfa mensuptur, çünkü şehirde yaşarlar.\",\"Aynı mesleği yapabilir ve aynı reaya statüsünde bulunabilirler.\",\"Gayrimüslim olan kişi şehirli esnaf olamaz.\",\"İkisi de vergi verdiği için dinî aidiyetleri aynıdır.\"],2,\"Senaryoda iki kişi de terzi, üretici ve vergi veren yönetilendir. Bu nedenle meslek ve reaya statüsü ortak olabilir; dinî aidiyetleri farklıdır. Şehirde yaşamak askerî görev kazandırmaz, vergi de dinin aynı olmasını gerektirmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir kişinin toplumsal konumu birden fazla eksende tanımlanabilir: dinî aidiyet, meslek, yaşadığı yer ve görev–vergi statüsü. Yönetilen üreticilerden oluşan reaya kapsamında şehirli esnaf da bulunabilir; askerî sınıf ise idarî ve kamusal görevlerle ilişkilidir."
+      ],
+      "strategy": "İki kişi için aynı dört başlığı aç ve yalnız pasajda verilen özellikleri yerleştir. Hangi sütunun değiştiğini, hangilerinin ortak kaldığını belirleyerek her seçenekteki zorunluluk iddiasını sınamaya çalış.",
+      "steps": [
+        "İki kişi de şehirde terzilik yapıyor, üretiyor ve vergi veriyor; ikisinin de yönetim görevlisi olmadığı açıkça belirtiliyor.",
+        "Meslek ve üretici–yönetilen statüsü ortak, dinî aidiyet farklıdır. Aynı anda bir ortaklık ve bir farklılık bulunması mantıksal olarak mümkündür.",
+        "Aynı meslekte ve aynı reaya statüsünde bulunabilmeleri pasajla uyuşur. Şehirde yaşama tek başına askerî görev veya aynı dine mensup olma sonucu vermez."
+      ],
+      "optionReasons": [
+        "Pasaj her iki kişiyi terzi olarak tanımlar; farklı dinî aidiyetten zorunlu meslek farkı üretmek doğrudan verilen ortaklığı yok sayar.",
+        "Şehirde yaşamak bir yerleşim bilgisidir; idarî görev statüsü değildir. Pasaj ayrıca iki kişinin yönetim görevlisi olmadığını açıkça söyler.",
+        "Doğru. İkisi aynı işi yapan üretici ve vergi veren yönetilendir; dinleri farklı olsa da meslek ve reaya statüsü ortak olabilir.",
+        "Gayrimüslim kişi pasajda zaten şehirli bir terzidir. Bu kişinin şehirli esnaf olamayacağı iddiası senaryodaki örnekle çelişir.",
+        "Vergi vermek görev–mali statüyle ilgilidir; dinî aidiyetin aynı olduğunu göstermez. Pasaj iki kişinin inanç bakımından farklı olduğunu belirtir."
+      ],
+      "commonError": "Dinî aidiyet sütunundaki farklılığı meslek veya görev statüsüne otomatik taşımak, kişinin çoklu toplumsal konumlarını tek eksene indirger.",
+      "check": "İki satırlı bir karşılaştırma yap: terzi/terzi ve yönetilen/yönetilen aynı, Müslüman/gayrimüslim farklı olmalı. Seçeneğin bu üç karşılaştırmayı birlikte korumasını iste."
+    }
+  },
+  {
+    "id": "f93h-s2",
+    "identity": "[\"f93h-s2\",\"Klasik Osmanlı bağlamında millet kavramı en uygun nasıl açıklanır?\",\"\",[\"Bugünkü etnik ulus-devletin tam karşılığıdır.\",\"Din ve mezhep aidiyetine göre tanınan topluluklarla ilişkilidir.\",\"Yalnız aynı meslekteki ustaları kapsar.\",\"Sadece aynı tarlayı işleyen haneyi belirtir.\",\"Her topluluğun sınırsız bağımsız devlet olduğu anlamına gelir.\"],1,\"Klasik kullanımda millet dinî/mezhebî toplulukla ilişkilidir. Modern ulus, meslek örgütü ve üretici hane farklı eksenlerdir. Bazı cemaat işlerinin yürütülmesi sınırsız siyasi bağımsızlık değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tarihsel bir kavramın anlamı kullanıldığı dönemin kurumları içinde belirlenir. Osmanlı topluluk düzeninde aidiyet, tanınan cemaat kurumları ve bunların devletle ilişkisi birlikte incelenir; bugünkü vatandaşlık ve egemen devlet kavramları ayrı tarihsel bağlamlara aittir."
+      ],
+      "strategy": "Seçenekleri dayandıkları aidiyet ölçütüne göre ayır: etnik-siyasi topluluk, inanç topluluğu, meslek veya üretici hane. Klasik dönemdeki kavramın hangi ilişkiler için kullanıldığını bul; topluluk tanınmasını sınırsız egemenlik diye genişletme.",
+      "steps": [
+        "Soru “millet” kelimesinin klasik Osmanlı kullanımını soruyor; bugünkü ulus-devlet anlamını otomatik almak doğru başlangıç değildir.",
+        "Bu kullanım din ve mezhep bağlarıyla tanınan cemaatlerle ilişkilidir. Meslek örgütü ve tarımsal hane farklı tür aidiyetlerdir.",
+        "Dinî ve mezhebî topluluk yorumu uygun bağlamı verir. Belirli cemaat işlerinin yürütülmesi, her topluluğun ayrı ve sınırsız bağımsız devlet olması demek değildir."
+      ],
+      "optionReasons": [
+        "Modern etnik ulus-devlet kavramını klasik Osmanlı milletinin tam karşılığı saymak farklı dönemlerin siyasi aidiyetlerini özdeşleştirir.",
+        "Doğru. Klasik bağlamda millet, din ve mezhep aidiyetine göre tanınan topluluklarla ilişkilidir; seçenek dönemin temel sınıflandırma eksenini korur.",
+        "Aynı meslekteki ustaların örgütü meslek eksenindedir ve loncayla ilişkilidir; milletin dinî cemaat anlamını karşılamaz.",
+        "Aynı tarlayı işleyen hane tarımsal üretim birimidir. Bu ekonomik ilişki, farklı yerlerde yaşayabilen bir dinî topluluğun tanımı değildir.",
+        "Cemaat kurumlarına belirli işlerde rol tanınması sınırsız egemenlik verildiği anlamına gelmez; devletin mali ve kamusal yetkileri de sürer."
+      ],
+      "commonError": "Kelimenin günümüzdeki yaygın anlamını geçmişe aynen taşımak anakronizm yaratır. Ayrıca cemaatin bazı yetkileriyle bağımsız devletin egemenliğini aynı statü sayma.",
+      "check": "Tanımını bir meslek adı veya bir devlet sınırı yerine topluluğun inanç bağıyla kurabiliyor musun? Ardından bu topluluğun devlet içindeki konumunu, ayrı devlet kurmadan açıklayabilmelisin."
+    }
+  },
+  {
+    "id": "f93h-s3",
+    "identity": "[\"f93h-s3\",\"Mülkiyet–kullanım–hizmete bağlı vergi geliri sırası hangisinde doğrudur?\",\"Mirî bir araziyi köylü hane işlemektedir. Bu arazinin belirli vergi geliri, atlı asker yetiştirme hizmeti karşılığında sipahiye tahsis edilmiştir.\",[\"Sipahi–devlet–köylü\",\"Köylü–sipahi–devlet\",\"Devlet–sipahi–köylü\",\"Devlet–köylü–sipahi\",\"Köylü–devlet–sipahi\"],3,\"Mirî arazinin çıplak mülkiyeti devlette; koşullu kullanım üretici köylüde; belirli vergi geliri hizmet karşılığında sipahidedir. Diğer sıralar bu ayrı ilişkileri karıştırır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Arazi üzerindeki mülkiyet, toprağı işleyerek kullanma hakkı ve belirli vergi gelirinden yararlanma farklı hukuki ilişkilerdir. Kullanım veya gelir hakkının verilmesi, toprağı serbest özel mülk olarak devretmekle aynı işlem değildir."
+      ],
+      "strategy": "İstenen üç başlığı kökteki sırayla yaz. Her başlığı pasajdaki ayrı ilişkiye bağla: arazinin hukuki niteliği, üretim yapan kişi ve hizmet karşılığı gelir alan kişi. Sonra üçlü sırayı seçeneklerde ara.",
+      "steps": [
+        "Pasaj araziyi mirî diye niteliyor, köylü hanenin işlediğini ve belirli vergi gelirinin asker yetiştiren sipahiye tahsis edildiğini söylüyor.",
+        "Mirî arazinin çıplak mülkiyeti devlettedir; kullanım köylüye, belirtilen hizmete bağlı vergi geliri sipahiye aittir. Aynı arazide üç farklı bağ kurulmuştur.",
+        "Mülkiyet–kullanım–hizmete bağlı vergi geliri sırası Devlet–köylü–sipahi olur. Köylünün üretmesi veya sipahinin gelir alması bu rolleri yer değiştirmez."
+      ],
+      "optionReasons": [
+        "Sipahiyi malik, devleti kullanıcı, köylüyü hizmet karşılığı gelir alan olarak yazar; pasajın üç ilişkisinin tamamı yanlış role yerleştirilmiştir.",
+        "Köylünün kullanımını mülkiyet sanır, sipahiyi kullanıcı ve devleti tahsis edilmiş gelir sahibi yapar; mirî arazi ve hizmet bağı korunmaz.",
+        "Devletin mülkiyeti doğru başlar; ancak üretim yapan köylü yerine sipahi kullanıcı, sipahi yerine köylü gelir sahibi yapılmıştır.",
+        "Doğru. Devlet mirî mülkiyeti korur, köylü araziyi kullanıp üretir, sipahi belirtilen hizmet karşılığında tahsis edilmiş vergi gelirinden yararlanır.",
+        "Köylüyü malik ve devleti kullanıcı göstermek ilk iki ilişkiyi ters çevirir. Son sırada sipahinin bulunması bu iki hatayı düzeltmez."
+      ],
+      "commonError": "“Geliri alıyorsa toprağın sahibidir” veya “ekip biçiyorsa mülk onundur” düşüncesi, ayrı hakları tek mülkiyet ilişkisine indirger. Soru bu hakların sırasını da denetler.",
+      "check": "Yanıtındaki üç aktör için ayrı bir fiil kur: malik olmak, işlemek, hizmet karşılığı vergi geliri almak. Her fiilin pasajdaki tek karşılığını göstermek, sıralamayı tersinden doğrular."
+    }
+  },
+  {
+    "id": "f93h-s4",
+    "identity": "[\"f93h-s4\",\"Çift-hane düzeninin üretim birimi hangisiyle en doğru açıklanır?\",\"\",[\"Aile emeği, bir çift öküz ve işlenen arazi\",\"Yalnız donanmadaki top sayısı\",\"Sadece bütün şehrin tek dükkânı\",\"Her bölgede aynı yüzölçümlü özel mülk\",\"Sadece hanedanın saraydaki eğitim kadrosu\"],0,\"Çift-hane tarımsal üretim ve vergi düzeninde hane emeği, öküz çifti ve araziyi bağlar. Her bölgede sabit alan veya tam özel mülkiyet değildir. Denizcilik, dükkân ve saray kadrosu bu üretim biriminin tanımı değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tarım üretimi emek, çekim gücü ve araziyi birlikte gerektirir; bunlar aynı birimde ele alındığında üretim ile vergilendirme ilişkilendirilebilir. Arazinin verimi değiştiğinden bir tarımsal işletmenin tanımı her yerde aynı yüzölçümüne indirgenemez."
+      ],
+      "strategy": "Çift-hane adındaki iki parçanın hangi üretim girdilerine gönderme yaptığını düşün. Seçenekleri üretim birimini tamamlayan unsurlar bakımından denetle; gemi, dükkân ve saray kadrosu gibi başka sektörlere kayan tanımları ayır.",
+      "steps": [
+        "Kökte istenen şey bir saray kurumu veya askerî araç değil, çift-hane düzenindeki tarımsal üretim birimidir.",
+        "Hane aile emeğini, bir çift öküz çekim gücünü, işlenen arazi ise üretimin toprak unsurunu sağlar. Bu unsurlar birlikte üretim ve mali düzenin birimidir.",
+        "Aile emeği, öküz çifti ve işlenen araziyi birlikte veren tanım uygundur. Sabit alan ve özel mülkiyet zorunluluğu bu tanımın yerine geçirilemez."
+      ],
+      "optionReasons": [
+        "Doğru. Ailenin emeği, bir çift öküz ve işlenen arazi birlikte tarımsal üretim ve vergilendirme birimini oluşturur.",
+        "Donanmadaki top sayısı askerî deniz gücüyle ilgilidir; hane emeği ve tarım arazisinin üretim ilişkisini tanımlamaz.",
+        "Tek dükkân şehirde ticaret veya zanaatla ilişkili bir işletmedir; çift-hanenin tarımsal emek–çekim gücü–arazi bütününü vermez.",
+        "Her yerde aynı yüzölçümü doğru değildir; arazi verimi büyüklüğü etkiler. Ayrıca kullanım düzenini zorunlu özel mülkiyet saymak da hukuki ilişkiyi bozar.",
+        "Sarayın eğitim kadrosu yönetici yetiştirmeyle ilgilidir. Köylü hanenin tarımsal üretimini açıklayan birim yerine başka bir kurum alanı konulmuştur."
+      ],
+      "commonError": "“Çiftlik” çağrışımından sabit büyüklükte özel mülk düşünmek, hem verime göre alan değişimini hem kullanım ile mülkiyet farkını atlar.",
+      "check": "Tanımdaki her unsurun üretimdeki görevini söyle: emeği kim sağlar, toprağı hangi güç işler, ürün nerede yetişir? Üçüne cevap veremeyen seçenek üretim birimini tamamlamaz."
+    }
+  },
+  {
+    "id": "f93h-s5",
+    "identity": "[\"f93h-s5\",\"Bu uygulamaların ortak kurumsal çerçevesi hangisidir?\",\"Bir şehirde aynı meslekteki ustalar hammaddeyi üyeler arasında dağıtıyor, çırakları eğitiyor ve ürünlerin standardını denetliyor.\",[\"Divan-ı Hümayun\",\"Veraset düzeni\",\"Kadırga filosu\",\"Sancak şehzadeliği\",\"Lonca teşkilatı\"],4,\"Aynı meslek kolunda eğitim ve üretim standardı loncanın temel işlevleridir. Tek başına fiyat uygulaması olsaydı narh vurgulanabilirdi; burada daha geniş meslek örgütü anlatılır. Merkez yönetimi veya donanma bu kümeyi açıklamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Esnaf örgütlenmesinde üretim öncesi girdi temini, iş sırasında meslek eğitimi ve üretim sonrasında standart denetimi birbirini tamamlar. Bir kurumun tanımını belirlerken tek bir faaliyet yerine bu işlevlerin birlikte hangi alana ait olduğuna bakılır."
+      ],
+      "strategy": "Pasajdaki eylemleri üretim öncesi, yetiştirme ve ürün denetimi olarak sırala. Üçünü aynı meslek kolundaki ustalara bağlayabilen örgütü ara; merkezî yönetim veya tek bir fiyat tedbirini bütün örgütün yerine koyma.",
+      "steps": [
+        "Aktörler aynı meslekteki ustalar; eylemler hammadde dağıtımı, çırak eğitimi ve ürün standardını denetlemektir.",
+        "Bu işlevler şehir esnafının meslek örgütlenmesinde bir araya gelir. Lonca yalnız fiyat belirleme değil, üretim ve eğitim düzeniyle de ilişkilidir.",
+        "Lonca teşkilatı üç eylemi aynı çatı altında açıklar. Diğer seçeneklerin merkezî yönetim, taht geçişi, denizcilik veya şehzade eğitimi işlevleri bu kümeyi karşılamaz."
+      ],
+      "optionReasons": [
+        "Divan-ı Hümayun devlet işlerini görüşen merkezî kuruldur; pasaj ise aynı meslek ustalarının üretim ve çıraklık düzenini anlatır.",
+        "Veraset düzeni hükümdarlığın geçişini ilgilendirir. Hammadde dağıtımı ve meslek standardı, hanedanın taht önceliğini belirleme işleri değildir.",
+        "Kadırga filosu bir deniz kuvveti topluluğudur; aynı meslekteki ustaların çırak yetiştirme ve ürün standardı örgütünü açıklamaz.",
+        "Sancak şehzadeliği yönetici adayının taşrada yetişmesiyle ilişkilidir; şehir esnafının ortak üretim ve meslek eğitimi kurumu değildir.",
+        "Doğru. Lonca, aynı meslek kolunda girdi temini, çırak eğitimi ve standart denetimini birlikte yürüten esnaf örgütlenmesiyle uyuşur."
+      ],
+      "commonError": "Yalnız “denetim” kelimesini görüp her denetimi merkezî Divana bağlamak, denetlenen işin meslek üretimi olduğunu atlar. Üç faaliyetin ortak örgütlenmesini bul.",
+      "check": "Seçtiğin kurum için hammadde→usta/çırak→ürün standardı zincirini kurabiliyor musun? Kurum yalnız bir halkayı açıklıyor, diğer ikisi dışarıda kalıyorsa kapsamı yeniden değerlendir."
+    }
+  },
+  {
+    "id": "f93h-s6",
+    "identity": "[\"f93h-s6\",\"Narh uygulaması hakkında hangi yargı doğrudur?\",\"\",[\"Bütün toplumun gelirini zorunlu olarak eşitler.\",\"Her tür kalite denetimini yasaklar.\",\"Fiyat ve ürün niteliğinin düzenlenmesiyle tüketiciyi koruma amacı taşır.\",\"Sınırsız ve kuralsız fiyat rekabetinin diğer adıdır.\",\"Yalnız hanedanın tahta geçişini düzenler.\"],2,\"Narh fiyat/standart düzeni ve tüketicinin korunmasıyla ilişkilidir. Bundan bütün gelirlerin eşitliği çıkmaz; sınırsız fiyat rekabetiyle aynı değildir. Kalite yasağı ve veraset ilişkisi de yoktur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Piyasaya ilişkin bir tedbirde düzenlenen değişken ile amaçlanan toplumsal etki ayrı okunur. Malın fiyatı, niteliği ve alıcının erişimi üzerinde düzenleme yapılabilir; böyle bir araç tek başına bütün hanelerin gelir düzeyini belirlemez."
+      ],
+      "strategy": "Narh için seçeneklerde düzenlendiği söylenen değişkenleri ayrı bir listede topla. Her iddiada bu değişkenin hangi kişi veya ilişkiyi etkilediğini ve sonucun kapsamının verilen düzenlemeyle kurulup kurulamadığını sırayla sınayarak karar ver.",
+      "steps": [
+        "Narh mal ve hizmetlerin fiyatının kamu gözetiminde düzenlenmesiyle ilişkilidir; bu uygulama malın niteliğiyle birlikte ele alınır.",
+        "Fiyatın ve standardın gözetilmesi, alıcıyı aşırı fiyat ve niteliksiz ürün karşısında koruma amacıyla bağlanır.",
+        "Fiyat ve ürün niteliğinin düzenlenmesiyle tüketiciyi koruma yorumu uygundur. Bundan tüm gelirleri eşitleme, kalite denetimini yasaklama veya kuralsız rekabet sonucu çıkmaz."
+      ],
+      "optionReasons": [
+        "Fiyat düzenlemesi herkesin gelirini aynı düzeye getiren bir gelir dağıtım mekanizması değildir; bu sonuç narhın belirlenen alanını aşar.",
+        "Narh ürün niteliğiyle birlikte uygulanabilen bir düzenlemedir. Kalite denetiminin her türünü yasakladığını söylemek işlevi tersine çevirir.",
+        "Doğru. Narhta fiyat ve ürün niteliği gözetilerek tüketicinin korunması amaçlanır; seçenek araç ile yakın amacı doğru bağlar.",
+        "Sınırsız ve kuralsız fiyat rekabetinde bu tür fiyat gözetimi bulunmaz. Seçenek düzenleme ile düzenlemesizliği aynı kavram yapar.",
+        "Tahta geçiş hanedan verasetiyle ilgilidir; narhın mal, hizmet, fiyat ve standart alanından tamamen farklı bir konudur."
+      ],
+      "commonError": "Tüketiciyi koruma amacını bütün gelirlerin eşitlenmesi gibi kapsamlı bir sonuca büyütmek, fiyat tedbirinin gerçekte neyi düzenlediğini unutturur.",
+      "check": "Yanıttaki amacı araçla açıkla: fiyat ve nitelik gözetimi alıcının hangi sorununu azaltmaya çalışır? Bu açıklama için herkesin gelirinin eşit olduğunu varsaymamalısın."
+    }
+  },
+  {
+    "id": "f93h-s7",
+    "identity": "[\"f93h-s7\",\"Bu düzenlemede belge ve yönetici sırasıyla hangileridir?\",\"Bir kişi dükkânının kira gelirini sürekli okul ve çeşme hizmetine ayırıyor. Yazılı şartlarda malları, harcama amacını ve yönetimden sorumlu kişiyi belirtiyor.\",[\"Lonca–kalfa\",\"Vakfiye–mütevelli\",\"Tımar–sipahi\",\"Gedik–nişancı\",\"Narh–kazasker\"],1,\"Vakıf tahsis kurumudur; şartları yazan belge vakfiye, yönetici mütevellidir. Lonca/kalfa meslek; tımar/sipahi gelir–hizmet ilişkisidir. Diğer eşleştirmeler bu mekanizmayı açıklamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir hizmet tahsisinde gelir getiren mal, tahsisin yazılı şartları, kurucu ve günlük yönetimi yürüten kişi farklı unsurlardır. Belge amacı ve işleyişi tanımlar; yönetici ise o şartlara göre faaliyeti yürütür."
+      ],
+      "strategy": "İstenen iki kategoriyi sabitle: önce belge, sonra yönetici. Pasajdaki kira→hizmet akışını tanıdıktan sonra seçeneklerin bir kurum adını, meslek aşamasını veya mali uygulamayı bu iki kategori yerine koyup koymadığını sınayarak ilerle.",
+      "steps": [
+        "Dükkân geliri okul ve çeşme hizmetine sürekli ayrılmış; yazılı şartlar malı, amacı ve sorumlu kişiyi belirtiyor. Bu, vakıf işleyişidir.",
+        "Vakıf şartlarını belirleyen belge vakfiye, yönetimi yürüten kişi mütevellidir. Malın kendisi ve vakfı kuran kişi bu iki kavramdan ayrıdır.",
+        "Belge–yönetici sırasını Vakfiye–mütevelli karşılar. Vakıf adı tek başına belge sorusunun, hizmet amacı da yönetici unvanının yerine geçmez."
+      ],
+      "optionReasons": [
+        "Lonca meslek örgütü, kalfa meslekte bir yetişme aşamasıdır. Bu ikili vakıf şartnamesi ile vakıf yöneticisi kategorilerini karşılamaz.",
+        "Doğru. Vakfiye mal, amaç ve işletme şartlarını yazan belgedir; mütevelli bu şartlara göre vakfı yöneten kişidir.",
+        "Tımar belirli gelirin hizmet karşılığı tahsisi, sipahi bu hizmet ilişkisi içindeki görevlidir; okul ve çeşme vakfının belge–yönetici ikilisi değildir.",
+        "Gedik meslek icrası yetkisiyle, nişancı tuğra ve kayıt işleriyle ilişkilidir. Bu eşleştirme vakfın şart belgesini ve yöneticisini adlandırmaz.",
+        "Narh fiyat düzenlemesidir; kazasker hukuk–eğitim kadrolarıyla ilgilenir. Vakfın yazılı şartları ile günlük yönetimini bu iki ad açıklamaz."
+      ],
+      "commonError": "“Vakıf” sözcüğünü gelir getiren malın, belgenin ve yöneticinin yerine kullanmak, farklı kategoriler isteyen soruyu tek adla çözmeye çalışmaktır.",
+      "check": "Belgeyi yönetici kişiyle yer değiştirdiğinde cümlelerin neden bozulduğunu dene: şartlar bir belgede yazılır, bu şartlara göre bir kişi yönetir. Yanıtın iki rolü de doğru sırada tutmalıdır."
+    }
+  },
+  {
+    "id": "f93h-s8",
+    "identity": "[\"f93h-s8\",\"Bu durumdan hangisine ulaşılamaz?\",\"Bir cemaatin okul ve ibadet işlerinde kendi kurumları görev yapmaktadır. Devlet vergi ve kamu düzeni denetimini sürdürmektedir.\",[\"Cemaatin bazı iç işlerinde kendi kurumları rol alır.\",\"Merkezi otoritenin yetkileri devam eder.\",\"Topluluk yönetimiyle devlet ilişkisi birlikte vardır.\",\"Cemaat her alanda tam bağımsız bir devlettir.\",\"Farklı yetki alanlarını ayırmak gerekir.\"],3,\"Metin hem cemaat kurumlarını hem devlet yetkilerinin devamını verir. Tam bağımsızlık bu sınırla çelişir. Diğer seçenekler iki alanın birlikte varlığını korur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir topluluğun kendi kurumlarıyla bazı işlerini yürütmesi ile devletin mali ve kamu düzeni yetkileri aynı sistem içinde bulunabilir. Yetkinin kapsamı iş alanına göre belirlenir; tek bir alandaki özerk işleyiş bütün alanlarda ayrı egemenlik anlamına gelmez."
+      ],
+      "strategy": "Cemaat kurumlarının yaptığı işleri bir sütuna, devletin sürdürdüğü işleri diğerine yerleştir. Seçeneklerin yetkileri kimlere atadığını bu tabloyla karşılaştır; olumsuz kök için okul/ibadet ve vergi/denetim bilgilerini birlikte sınamayı sürdür.",
+      "steps": [
+        "Okul ve ibadet işlerinde cemaat kurumlarının görev yapması, topluluk içinde belirli kurumların işlediğini gösterir.",
+        "Vergi ve kamu düzeni denetimi devlette kalmıştır. Bu veri topluluğun kurumsal rolünün kapsamını belirler; devlet yetkisi ortadan kalkmış değildir.",
+        "Her alanda tam bağımsız devlet yargısına ulaşılamaz. Diğer seçenekler bazı iç işler ile devam eden merkezî yetkilerin birlikte varlığını korur."
+      ],
+      "optionReasons": [
+        "Okul ve ibadet işlerinin cemaat kurumlarınca yürütülmesi, bazı iç işlerde bu kurumların rol aldığını doğrudan destekler.",
+        "Vergi ve kamu düzeni denetiminin sürmesi merkezi otoritenin yetkisinin devamına açık kanıttır; bu yorum pasajla uyumludur.",
+        "Pasaj cemaat kurumlarıyla devlet denetimini birlikte anlattığı için topluluk yönetimi ve devlet ilişkilerinin birlikte varlığı desteklenir.",
+        "Doğru. Ulaşılamayan yargı tam bağımsız devlettir: vergi ve kamu düzeni yetkisi devlette sürerken cemaatin her alanda egemen olduğu söylenemez.",
+        "Farklı işlerin cemaat ve devlet arasında ayrılması, yetki alanlarını ayırarak okuma gereğini gösterir. Bu seçenek pasajın iki verisini birlikte kullanır."
+      ],
+      "commonError": "Okul ve ibadet üzerindeki kurumlaşmadan bütün kamu yetkilerinin devredildiğini çıkarmak, sınırlı işlevden sınırsız egemenliğe sıçramaktır. Olumsuz kökte kanıtsız genişletme aranır.",
+      "check": "“Tam bağımsız devlet” yorumunu kabul etseydin, vergi ve kamu düzenini devletin denetlemesini nasıl açıklardın? Seçeneğin açık ikinci cümleyle uyuşmaması sınırı görünür kılar."
+    }
+  },
+  {
+    "id": "f93h-s9",
+    "identity": "[\"f93h-s9\",\"Kurucusunun ölümünden sonra geliri ve hizmeti vakfiye şartlarıyla devam eden bir vakıf hangi niteliği gösterir?\",\"\",[\"Yardımın hukuki düzen ve gelir kaynağıyla süreklileştirilmesini\",\"Bütün harcamaların yalnız merkez hazinesinden çıkmasını\",\"Kurucunun bütün mallarının kendiliğinden sipahiye geçmesini\",\"Loncaların bütün görevlerinin sona ermesini\",\"Her yararlanıcının yönetici sınıfa alınmasını\"],0,\"Vakıf mal–gelir–hizmet ve yazılı şartlarla devam edebilir. Bu süreklilik doğrudan hazine finansmanı, sipahiye devir veya statü değişimi anlamına gelmez; diğer kurumların yok olmasını da gerektirmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Vakıf düzeninde tahsis edilen mal ile ondan elde edilen gelir farklı unsurlardır: mal ekonomik kaynak, gelir hizmet giderlerinin karşılığıdır. Vakfiye bu kaynağın nasıl işletileceğini, hangi amaçla kullanılacağını ve yönetim şartlarını belirleyen belgedir."
+      ],
+      "strategy": "Senaryodaki süreyi ikiye ayır: kurucunun yaşamı ve hizmetin devam ettiği dönem. İkinci dönemde işleyişi taşıyan gelir ve yazılı şartların hangi kurumsal niteliğe dayanak olduğunu bul; başka kurumların kaybolduğu sonucunu ekleme.",
+      "steps": [
+        "Kurucu ölmüş olmasına rağmen gelir ve hizmetin vakfiye şartlarıyla devam ettiği kökte açıkça verilmiştir.",
+        "Mal veya gelirin tahsis edilmesi ve yazılı işleyiş, hizmeti kurucunun o anki kişisel yardımından ayırır; devamlılığı kurumsal bir düzene bağlar.",
+        "Bu durum yardımın hukuk ve gelir kaynağıyla süreklileştirilmesini gösterir. Merkez hazinesinden ödeme, sipahiye devir veya yararlanıcının yönetici olması bilgisi verilmez."
+      ],
+      "optionReasons": [
+        "Doğru. Gelir akışının ve vakfiye şartlarının kurucudan sonra da işlemesi, yardımın kişisel ömrü aşan hukuki ve ekonomik bir düzene bağlandığını gösterir.",
+        "Kökte gelir ve vakfiye şartları belirtilir; bütün harcamaların merkez hazinesinden çıktığı söylenmez. Finansman kaynağı varsayımla değiştirilmiştir.",
+        "Vakfın devamı kurucunun bütün mallarının sipahiye geçmesi demek değildir. Sipahiye hizmet karşılığı gelir tahsisi başka bir hukuki ilişkidir.",
+        "Bir vakfın hizmetini sürdürmesi loncaların meslek eğitimi ve üretim görevlerinin sona erdiğine kanıt olmaz; iki kurumun faaliyetleri birlikte bulunabilir.",
+        "Hizmetten yararlanmak bir ihtiyaç veya yararlanıcı ilişkisi kurar; herkese yönetici sınıf statüsü kazandıran bir atama işlemi değildir."
+      ],
+      "commonError": "Kişinin yaşamıyla kurumun faaliyet süresini aynı sanmak, vakfiyenin ve gelir kaynağının neyi devam ettirdiğini gözden kaçırır. Devamlılıktan ilgisiz statü değişikliği de çıkarma.",
+      "check": "Kurucu artık faaliyete katılmasa da “gelir hangi hizmete, hangi yazılı şartlarla gider?” sorularını cevaplayabiliyor musun? Bu iki bağın devam etmesi kurumsal sürekliliğin dayanağıdır."
+    }
+  },
+  {
+    "id": "f93h-s10",
+    "identity": "[\"f93h-s10\",\"Osmanlı şehir hayatıyla ilgili hangi eşleştirme yanlıştır?\",\"\",[\"Mahalle–günlük dayanışma ve aidiyet\",\"Külliye–birden çok hizmet yapısının bir arada bulunması\",\"Bedesten–ticari saklama ve satış mekânı\",\"Kapan–belirli malların toptan dağıtımı\",\"Kahvehane–yalnız veraset sırasını belirleyen resmî kurul\"],4,\"Kahvehane sosyalleşme, konuşma ve kültürel etkinliklerle ilişkilidir; veraset belirleyen resmî kurul değildir. Diğer mekân–işlev eşleştirmeleri temel anlamlarıyla uyumludur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Şehir mekânları işlevlerine göre farklılaşır: yerel dayanışma, toplu hizmet, ticaret, depolama ve sosyalleşme aynı şey değildir. Birden çok hizmetin aynı yerleşkede bulunmasıyla devletin veraset kararlarını alan resmî bir makam olmak ayrı niteliklerdir."
+      ],
+      "strategy": "Olumsuz kökü koruyarak her mekânın yanındaki temel fiili kaydet. Bu fiili gerçekleştirmek için nasıl bir işlev, kurum veya resmî yetki gerektiğini ayrı ayrı karşılaştır; mekân adına aşinalıkla değil tanımın bütünüyle karar ver.",
+      "steps": [
+        "Mahalle yerel dayanışma ve aidiyetle, külliye birden çok hizmet yapısıyla ilişkilidir; ilk iki eşleşme kendi işlev alanlarında anlamlıdır.",
+        "Bedesten ticari saklama ve satış, kapan belirli malların toptan dağıtımıyla uyuşur. Kahvehane ise sosyalleşme ve konuşma gibi gündelik ilişkilerin mekânıdır.",
+        "Kahvehaneyi yalnız veraset sırasını belirleyen resmî kurul saymak yanlıştır. Olumsuz kök bu işlev sapmasını istemektedir; başka doğru bir mekân eşleşmesi seçilmez."
+      ],
+      "optionReasons": [
+        "Mahalle gündelik dayanışma ve aidiyet ilişkilerinin yaşandığı bir çevredir; eşleşme doğru olduğu için yanlış eşleştirmeyi arayan sorunun yanıtı değildir.",
+        "Külliyede birden çok hizmet yapısı birlikte bulunur. Bu tanım tek işlevli bir bina yerine yerleşkenin çoklu hizmet niteliğini doğru verir.",
+        "Bedesten ticari malların satılması ve saklanmasıyla ilişkilidir; mekân–işlev bağı temel anlamıyla doğru kurulmuştur.",
+        "Kapan belirli malların toptan dağıtıldığı ticari mekânla ilişkilidir. Toptan dağıtım burada hanedan veya eğitim yetkisi yerine geçirilmemiştir.",
+        "Doğru. Yanlış eşleştirme kahvehaneyi resmî veraset kurulu saymaktır; kahvehane sosyalleşme mekânıdır ve bu hanedan yetkisini taşımaz."
+      ],
+      "commonError": "Bir yerde insanların toplanmasını o yeri devlet adına karar alan resmî kurul yapmakla eşitleme. Sorudaki “yanlıştır” sözcüğü, doğru tanıdık eşleşmelere yönelmeyi de engellemelidir.",
+      "check": "Kahvehane için fiili “toplanmak ve sohbet etmek” diye düzeltince hangi görev hatasının kalktığını söyle. Mahalle, külliye, bedesten ve kapanın farklı günlük işlevlerini de yerli yerinde bırak."
+    }
+  },
+  {
+    "id": "f93h-b1",
+    "identity": "[\"f93h-b1\",\"1606 Zitvatorok’ta Habsburg hükümdarının Osmanlı padişahına protokol bakımından denk kabul edilmesi en doğrudan hangi değişimi gösterir?\",\"\",[\"Bütün Osmanlı topraklarının kaybını\",\"Denizcilik teknolojisinin tamamen sona ermesini\",\"Diplomatik statü ve karşılıklılık ilişkisindeki değişimi\",\"Habsburg ülkesinin Osmanlı’ya katılmasını\",\"Avrupa’daki bütün mezheplerin birleşmesini\"],2,\"Protokol eşitliği siyasi/diplomatik statüyle ilgilidir. Toprak devri ayrı kanıt ister; verilen maddeden denizcilik sonu, ilhak veya mezhep birliği sonucu çıkmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir antlaşmada hükümdarlara nasıl hitap edileceği, ödeme yükümlülükleri, sınırlar ve ticaret hakları ayrı maddelerle düzenlenebilir. Bir maddenin anlamını yorumlamak için değişen ilişkinin hangi iki aktör arasında kurulduğu ve hangi fiille açıklandığı birlikte okunur."
+      ],
+      "strategy": "Kökteki aktörleri ve “denk kabul edilme” fiilini ayır. Sonra seçeneklerin anlattığı değişim türlerini karşılaştır; verilen fiilin hangi ilişkiyi düzenlediğine karar verirken toprak veya gemi hakkında yeni bir madde ekleme.",
+      "steps": [
+        "Aktörler Habsburg hükümdarı ile Osmanlı padişahıdır; kökte düzenlenen şey protokol bakımından denk kabul edilmedir.",
+        "Bu eşitlik hükümdarların diplomatik konumuna ve karşılıklı tanınma ilişkisine yöneliktir; bir bölgenin el değiştirdiği belirtilmemiştir.",
+        "En doğrudan değişim diplomatik statü ve karşılıklılık alanındadır. Toprakların tamamı, donanma teknolojisi veya mezhep birliği hakkında sonuç üretmek kökün maddesini aşar."
+      ],
+      "optionReasons": [
+        "Kökte bir hükümdarın protokol konumu değişiyor; bütün Osmanlı topraklarının kaybını gösterecek bir toprak devri veya ülke sınırı bilgisi verilmiyor.",
+        "Denizcilik teknolojisinin sona ermesi gemi ve teknik kapasiteye ilişkin bambaşka bir iddiadır; hükümdarların denk tanınmasından çıkmaz.",
+        "Doğru. Protokolde denk tanınma, iki hükümdar arasındaki diplomatik statü ve karşılıklılık ilişkisinde değişimi gösterir.",
+        "Habsburg ülkesinin Osmanlı’ya katılması ilhak olurdu. Kökte hükümdarların denkliği var; birinin ülkesinin diğerine katıldığı söylenmiyor.",
+        "Mezheplerin birleşmesi dinî toplulukların yapısıyla ilgilidir; iki hükümdarın protokol ilişkisi bütün Avrupa’nın mezheplerini birleştirmez."
+      ],
+      "commonError": "Her antlaşma değişikliğini toprak kazancı veya kaybına çevirmek, hitap ve statü düzenleyen maddeyi farklı bir hukukî işleme dönüştürür.",
+      "check": "Sonucunu “Habsburg hükümdarı artık nasıl tanınıyor?” sorusuyla sınayabilmelisin. Açıklamanda yeni bir sınır, toprak devri veya mezhep maddesi gerekiyorsa doğrudan verilen ilişkinin dışına çıkmışsındır."
+    }
+  },
+  {
+    "id": "f93h-b2",
+    "identity": "[\"f93h-b2\",\"Bu bilgilerden hangisi çıkarılamaz?\",\"Safeviler, Osmanlı’nın Habsburg savaşı ve içerideki isyanlarla uğraştığı sırada sınırdaki bazı bölgeleri geri aldı. Bu anlatımda ortak karar veya iki rakip arasında koordinasyon bilgisi yoktur.\",[\"Osmanlı eş zamanlı sorunlarla uğraşmaktadır.\",\"Safeviler koşulları fırsat olarak değerlendirmiştir.\",\"Farklı cepheler birbirini etkileyebilir.\",\"Safeviler Habsburglarla ortak ordu kurmuştur.\",\"Ek bilgi olmadan ittifak iddiası kurulamaz.\"],3,\"Ortak ordu ve ittifak için koordinasyon kanıtı gerekir; metin yalnız koşullardan yararlanmayı verir. Diğer seçenekler çok cephelilik ve kanıt sınırıyla uyumludur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tarihsel açıklamada bir aktörün eylemi ile başka aktörlerle kurduğu örgütlü ilişki farklı kanıtlar ister. Eş zamanlı gelişmeler bir devletin hareket imkânlarını etkileyebilir; ortak ordu veya ittifak ise tarafların ortak karar ve koordinasyonuna ilişkin bilgiyle değerlendirilir."
+      ],
+      "strategy": "Pasajdaki açık eylemleri aktörlerine bağla. Her seçeneğin dayanağını doğrudan veri, veriye uygun çıkarım veya yeni varsayım olarak ayır; olumsuz kökün istediği kategoriye hangi iddianın girdiğini bu kanıt tablosuyla çöz.",
+      "steps": [
+        "Osmanlı Habsburg savaşı ve iç isyanlarla uğraşırken Safeviler sınırdaki bazı bölgeleri geri alıyor; eş zamanlı birden fazla sorun açıkça verilmiştir.",
+        "Safevilerin bu koşullardan yararlanması fırsat kullanımını destekler. Pasaj ayrıca ortak karar ve koordinasyon bilgisinin bulunmadığını belirtiyor.",
+        "Safevilerle Habsburgların ortak ordu kurduğu sonucu çıkarılamaz. Verilen çok cephelilik ve fırsat kullanımı, kanıtlanmamış bir ittifak ilişkisine dönüştürülemez."
+      ],
+      "optionReasons": [
+        "Habsburg savaşı, iç isyanlar ve Safevi eylemi aynı anlatımda yer aldığından Osmanlı’nın eş zamanlı sorunlarla uğraşması desteklenir.",
+        "Osmanlı başka sorunlarla uğraşırken bazı bölgelerin geri alınması, Safevilerin koşulları fırsat olarak değerlendirmesiyle uyumludur.",
+        "Bir cephedeki meşguliyetin diğer rakibin hareketine fırsat vermesi, farklı cephelerin birbirini etkileyebileceğini gösterir; bu, resmî koordinasyon iddiası değildir.",
+        "Doğru. Çıkarılamayan ortak ordu iddiasıdır: pasaj Safevi–Habsburg ortak kararı veya koordinasyonu vermediğini açıkça belirterek bu ilişkiyi kanıtlamaz.",
+        "İttifak için ek ilişki kanıtı gerektiği, pasajdaki koordinasyon bilgisi yokluğuyla uyumludur; bu seçenek kanıtsız ortaklığı olmuş gibi sunmaz."
+      ],
+      "commonError": "Aynı rakibin zor durumda kalmasından yararlanan iki aktörü otomatik ittifak üyesi yapmak, çıkarların çakışması ile ortak planı karıştırır.",
+      "check": "“Ortak ordu” sonucunu desteklemek için pasajda hangi ortak kararın veya birlikte yapılan harekâtın gösterildiğini sor. Böyle bir veri gösterememek, olayın kesinlikle hiç yaşanmadığını değil bu metinden çıkarılamadığını ortaya koyar."
+    }
+  },
+  {
+    "id": "f93h-b3",
+    "identity": "[\"f93h-b3\",\"1639 Kasr-ı Şirin Antlaşması’nın temel bağlamı hangisidir?\",\"\",[\"Osmanlı–Safevi ilişkilerinde doğu sınırının ana çerçevesi\",\"Osmanlı–Rusya ilişkilerinde Azak’ın 1700’de bırakılması\",\"Otuz Yıl Savaşları’nın Avrupa’da sona ermesi\",\"Kıbrıs’ın Venedik’ten alınması\",\"Bütün Avrupa devletlerinin tek ülkede birleşmesi\"],0,\"Kasr-ı Şirin Osmanlı–Safevi sınır düzenidir; bütün gelecekteki sorunların kesin sonu değildir. Azak/İstanbul, Westphalia ve Kıbrıs başka dönem ve ilişkilerdir; Avrupa birliği sonucu da yoktur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Antlaşmalar tarih, taraflar, coğrafya ve düzenlenen sorun birlikte eşleştirilerek öğrenilir. Aynı yüzyılda farklı cephelerde barış yapılabilmesi, yalnız yakın tarihlere bakarak bütün antlaşmaları aynı ilişkiye yerleştirmeyi geçersiz kılar."
+      ],
+      "strategy": "Seçeneklerin her birine taraf ve cephe etiketi koy. Ardından 1639’daki antlaşmanın hangi devletler arasındaki savaş ve sınır düzeniyle bağlantılı olduğunu hatırla; sonraki Rusya barışıyla Avrupa din savaşlarını aynı çizgiye yığma.",
+      "steps": [
+        "Kökte 1639 ve Kasr-ı Şirin adı birlikte verilmiştir; seçeneklerden bu tarihe ve ilişkiye uygun temel bağlam istenir.",
+        "Kasr-ı Şirin, Osmanlı ile Safeviler arasındaki mücadelelerin ardından doğu sınırının ana çerçevesini düzenleyen antlaşmadır.",
+        "Osmanlı–Safevi doğu sınırı eşleşmesi uygundur. 1700 Azak, 1648 Avrupa barışları ve Kıbrıs’ın fethi farklı olaylardır; sınır çerçevesi sonsuz ve sorunsuz barış anlamına da gelmez."
+      ],
+      "optionReasons": [
+        "Doğru. 1639 Kasr-ı Şirin, Osmanlı–Safevi ilişkilerinde doğu sınırının ana çerçevesiyle bağlantılıdır; taraf ve coğrafya doğru eşleşir.",
+        "Azak’ın 1700’de Rusya’ya bırakılması Osmanlı–Rusya İstanbul Antlaşması’yla ilgilidir; hem taraf hem tarih Kasr-ı Şirin’den farklıdır.",
+        "Otuz Yıl Savaşları’nı sona erdiren 1648 Westphalia barışları Avrupa bağlamındadır; 1639 Osmanlı–Safevi antlaşmasının temel konusu değildir.",
+        "Kıbrıs’ın Venedik’ten alınması Akdeniz ve Venedik cephesindeki farklı bir gelişmedir; Safevilerle doğu sınırını düzenleyen antlaşma yerine konulamaz.",
+        "Kasr-ı Şirin bütün Avrupa devletlerini bir ülkede birleştiren bir düzenleme değildir; iki taraf arasındaki sınır bağlamını kıta ölçeğinde siyasi birliğe genişletir."
+      ],
+      "commonError": "Antlaşmanın tanıdık adını görüp başka cephenin sonucunu ona bağlamak, tarih–taraf–coğrafya eşlemesini bozar. “Sınır çerçevesi”ni gelecekte hiç sorun kalmaması diye de büyütme.",
+      "check": "Yanıtındaki tarafları haritada doğu komşuluğu bakımından, yılı ise 1639 bakımından denetle. Rusya–1700 veya Avrupa–1648 yazıyorsa başka antlaşmanın bilgisini taşımışsındır."
+    }
+  },
+  {
+    "id": "f93h-b4",
+    "identity": "[\"f93h-b4\",\"1648 Westphalia barışlarıyla ilgili hangi değerlendirme doğrudur?\",\"\",[\"Osmanlı’nın Safevilerle yaptığı ilk antlaşmadır.\",\"Avrupa’daki Otuz Yıl Savaşları’nı bitiren ve çok taraflı diplomasi bakımından önemli bir düzenlemedir.\",\"Osmanlı bu barışlarla bütün Balkanları Rusya’ya bırakmıştır.\",\"Dinin bütün ülkelerde aynı gün etkisizleştiğini kanıtlar.\",\"Bütün Avrupa’yı tek hükümdara bağlamıştır.\"],1,\"Westphalia Avrupa’daki 1648 barışlarıdır; Osmanlı imzacı değildir. Çok taraflı diplomasi ve egemenlik bakımından önemlidir, fakat tek günde tam laiklik veya siyasi birlik gibi mutlak sonuçlar doğurduğu söylenemez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir barış düzeninin etkisi, imzacı ilişkileri ve uzun vadeli siyasi değişimlerle birlikte değerlendirilir. Diplomasi tarihindeki dönüm noktası olmak, bütün devletlerin aynı anda aynı yönetim veya din düzenine geçtiği anlamına gelmez; süreçler farklı hızlarda ilerleyebilir."
+      ],
+      "strategy": "1648 tarihini Avrupa’daki savaş bağlamına yerleştir. Seçeneklerde barışın doğrudan savaş ilişkisini açıklayan ifadeyle kıta çapında tek devlet veya bir günde dönüşüm iddialarını ayrı değerlendir.",
+      "steps": [
+        "Westphalia, 1648’de Avrupa’daki Otuz Yıl Savaşları’nı sonlandıran barış düzenlemeleriyle ilişkilidir; Osmanlı–Safevi antlaşması değildir.",
+        "Birçok siyasi aktörün yer aldığı bu barış süreci diplomasi ve egemenlik düzeninin gelişimi bakımından önem taşır; tek bir hükümdarlıkta birleşme hedefini gerçekleştirmez.",
+        "Otuz Yıl Savaşları’nı bitiren ve çok taraflı diplomasi bakımından önemli olan düzenleme yorumu doğrudur. Bütün dinî etkilerin aynı gün bitmesi veya Osmanlı’nın Balkanları bırakması bu barışların sonucu olarak verilemez."
+      ],
+      "optionReasons": [
+        "Osmanlı–Safevi ilişkilerinin barışları başka bir cephededir. Westphalia’yı bu iki devletin ilk antlaşması saymak Avrupa savaş bağlamını değiştirir.",
+        "Doğru. 1648 barışları Otuz Yıl Savaşları’nı sona erdirir ve çok taraflı diplomasi bakımından önemlidir; seçenek kıta çapında tek tip dönüşüm iddiası eklemez.",
+        "Osmanlı bu barışların imzacısı değildir; bütün Balkanları Rusya’ya devretmesi de Westphalia’nın maddesi değildir. Taraf ve toprak sonucu birlikte uydurulmuştur.",
+        "Siyasi ve diplomatik dönüşüm dinin bütün ülkelerde aynı gün etkisizleştiğini kanıtlamaz; seçenek bir dönüm noktasını anlık ve evrensel sonuç yapar.",
+        "Barış düzeni Avrupa’daki bütün siyasi birimleri tek hükümdara bağlamamıştır; farklı aktörler arasındaki diplomasiyle siyasi birleşme özdeş değildir."
+      ],
+      "commonError": "Westphalia’nın önemini abartarak modern devlet, laiklik veya Avrupa birliğinin o gün eksiksiz kurulduğunu söylemek tarihsel süreci tek bir olaya indirger.",
+      "check": "Tercih ettiğin yargı hem 1618–1648 savaş bağlamını hem birden çok aktörün diplomasi ilişkisini açıklamalı. Osmanlı’ya bir imza veya bütün Avrupa’ya ortak hükümdar eklememelidir."
+    }
+  },
+  {
+    "id": "f93h-b5",
+    "identity": "[\"f93h-b5\",\"Bu gelişmeler için doğru değerlendirme hangisidir?\",\"Rusya Kutsal İttifak savaşlarında Osmanlı’ya karşı yer aldı. 1699 Karlofça’dan sonra Osmanlı ile Rusya 1700 İstanbul Antlaşması’nı yaptı; Azak Rusya’ya bırakıldı.\",[\"Rusya 1699 Karlofça’nın bütün maddelerini aynı tarihte imzalamıştır.\",\"Karlofça Safevi sınırını belirleyen 1639 antlaşmasıdır.\",\"İstanbul barışı Venedik’le yalnız Girit için yapılmıştır.\",\"Koalisyona katılan bütün devletler her barışın aynı taraflarıdır.\",\"Savaşta aynı koalisyonda yer almakla aynı antlaşmayı imzalamak farklıdır.\"],4,\"Rusya’yla 1700 İstanbul barışı, 1699 Karlofça’dan ayrıdır. Savaş koalisyonu otomatik olarak aynı barışın imzacı listesi değildir. Diğer seçenekler taraf, tarih veya cepheyi karıştırır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Savaş koalisyonunun üyeleri, müzakerelere katılanlar ve belirli bir nihai barışın tarafları ayrı listelerdir. Aynı savaş ortamında farklı tarihlerde ayrı anlaşmalar yapılabilir; tarih ile tarafı her belge için yeniden eşleştirmek gerekir."
+      ],
+      "strategy": "Üç ayrı satır kur: savaşta yer alma, 1699 Karlofça ve 1700 İstanbul. Her seçeneğin bu satırlardan hangilerini birleştirdiğine bak; bir tarihin veya tarafın başka işleme taşınmadığı yorumu seç.",
+      "steps": [
+        "Pasaj Rusya’yı Kutsal İttifak savaşlarında Osmanlı’nın karşısında gösteriyor; bu ilk bilgi savaş katılımına aittir.",
+        "Ayrı olarak 1699 Karlofça’dan sonra 1700’de Osmanlı–Rusya İstanbul Antlaşması yapıldığı ve Azak’ın Rusya’ya bırakıldığı veriliyor.",
+        "Savaş koalisyonunda bulunmak ile aynı barışı imzalamak bu nedenle farklıdır. Doğru yorum, savaş katılımını 1699’un bütün maddelerinin aynı tarihte imzalanması gibi sunmaz."
+      ],
+      "optionReasons": [
+        "Pasaj Rusya’yla ayrı 1700 İstanbul barışını verir. Rusya’nın 1699 Karlofça’nın bütün maddelerini aynı tarihte imzaladığını ileri sürmek iki işlemi tekleştirir.",
+        "1639’da Safevi sınırıyla ilişkili antlaşma Kasr-ı Şirin’dir. Karlofça’yı bu ad, yıl ve cepheye taşımak üç farklı bilgiyi karıştırır.",
+        "Verilen İstanbul Antlaşması 1700’de Rusya ile yapılmıştır ve Azak’ı konu alır; Venedik ve yalnız Girit ifadesi pasajın tarafını ve konusunu değiştirir.",
+        "Koalisyon ortak savaş ilişkisini belirtir; bütün barış belgelerinde taraf listesinin aynı olmasını zorunlu kılmaz. Pasajdaki ayrı barış zaten bu genellemeyi sınırlar.",
+        "Doğru. Rusya’nın koalisyon savaşlarına katılması ile 1700’de ayrı İstanbul barışı yapması, savaş ortaklığı ve belirli antlaşma taraflığının farklı ilişkiler olduğunu gösterir."
+      ],
+      "commonError": "Bir ittifak listesini her antlaşmanın altına aynen yazmak, müzakere, ateşkes ve nihai barış gibi farklı işlemleri de karıştırabilir. Pasajdaki yıl ve belge ayrımını koru.",
+      "check": "Azak maddesini adıyla ve yılıyla geri eşleştir: 1700 İstanbul ve Rusya. Bunu 1699’a taşımadan açıklayabiliyorsan seçtiğin yorum iki barış işlemini doğru ayırıyordur."
+    }
+  },
+  {
+    "id": "f93h-b6",
+    "identity": "[\"f93h-b6\",\"Açık denizde uzun menzil, rüzgârla hareket ve ağır top kullanımının önem kazandığı koşullarda hangi çıkarım uygundur?\",\"\",[\"Kürekle hareket eden gemiler her görevde otomatik üstün olur.\",\"Rüzgâr ve ikmal koşullarının hiçbir etkisi yoktur.\",\"Kalyonun önemi artabilir; bu her koşulda üstün olduğu anlamına gelmez.\",\"Tek bir gemi türü bütün dönemlerde aynı sonucu sağlar.\",\"Deniz savaşlarında eğitimli personele ihtiyaç kalmaz.\"],2,\"Bu koşullar yelkenli ve top gücü yüksek kalyonun önemini artırır. Dar kıyı suları veya rüzgârsızlık gibi koşullar farklı olabilir; teknik tercih personel ve ikmal ihtiyacını yok etmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Gemi teknolojisi hareket gücü, gövde, top kapasitesi ve görev ortamı birlikte düşünülerek değerlendirilir. Kürek ve yelken farklı hareket düzenleridir; rüzgâr, menzil ve manevra ihtiyacı gibi değişkenler teknik aracın kullanılabilirliğini etkiler."
+      ],
+      "strategy": "Kökteki görev ölçütlerini bir listeye ayır: açık deniz, uzun menzil, rüzgâr ve ağır top. Gemi tercihinin bu ölçütlerle uyumunu ara; aynı tercihi farklı kıyı veya hava koşullarında da otomatik doğru sayan ifadeleri ayrıca denetle.",
+      "steps": [
+        "Soruda açık deniz ve uzun menzil ile rüzgârla hareket ve ağır top kullanımının önem kazanması birlikte verilmiştir.",
+        "Büyük yelkenleri ve top gücüyle kalyon bu koşullarda önem kazanabilir. Kürekli kadırgaların kullanım koşulları ve manevra imkânları ise farklıdır.",
+        "Kalyonun öneminin artabileceği koşullu yorum uygundur. Bu tercih bütün görevlerde üstünlüğü garanti etmez ve personel ya da ikmal ihtiyacını ortadan kaldırmaz."
+      ],
+      "optionReasons": [
+        "Kürekli gemilerin her görevde otomatik üstünlüğü kökteki yelken, menzil ve ağır top koşullarını yok sayar; tek bir hareket düzenine evrensel üstünlük tanır.",
+        "Rüzgâr yelkenli geminin hareketini, ikmal de seferin sürdürülmesini etkiler. Bunların hiçbir etkisi olmadığını söylemek teknik ve lojistik koşulları siler.",
+        "Doğru. Verilen açık deniz, rüzgâr, menzil ve top koşulları kalyonun önemini artırabilir; seçenek bu sonucu her koşul için üstünlük diye genellemez.",
+        "Gemi türünün bütün dönem ve görevlerde aynı sonuç vermesi mümkün bir çıkarım değildir; kök bizzat göreve ve çevreye ilişkin koşullar vermektedir.",
+        "Daha güçlü veya farklı bir gemi, onu kullanacak denizci ve topçu ihtiyacını kaldırmaz. Teknoloji ile eğitimli personel birbirinin yerine geçen unsurlar değildir."
+      ],
+      "commonError": "Yeni tekniği koşulsuz üstünlük etiketiyle öğrenmek, çevre ve görev değiştiğinde karşılaştırmanın da değişebileceğini unutturur. Donanmayı yalnız gemi gövdesinden ibaret de sayma.",
+      "check": "Rüzgârsız ve dar kıyı suları gibi bir koşul değişikliği düşün: aynı üstünlük iddiası yeniden incelenmek zorunda mı? Yanıtının koşullu olması, kökteki özel ortamı koruduğunu gösterir."
+    }
+  },
+  {
+    "id": "f93h-b7",
+    "identity": "[\"f93h-b7\",\"1711 Prut’ta Azak’ın geri alınmasından hangi sonuç çıkarılamaz?\",\"\",[\"Rusya’yla ilişkide bir kazanım elde edilmiştir.\",\"1700’deki Azak kaybı bakımından değişim olmuştur.\",\"Farklı tarihlerde farklı yönlü sonuçlar yaşanabilir.\",\"Karlofça’da kaybedilen bütün bölgeler geri alınmıştır.\",\"Tek bir yerin kazanımı bütün cepheleri açıklamaz.\"],3,\"Azak’ın geri alınması Rusya cephesindeki somut kazanımdır. Karlofça’da başka taraflara bırakılan bütün yerlerin aynı işlemle geri alındığı söylenmez; ilk üç ve son seçenek bu sınırı korur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir yerin statüsü farklı antlaşmalarda değişebilir. Kazanımın kapsamı, hangi bölgenin hangi devletle ilişkide el değiştirdiğiyle belirlenir; farklı cephelerdeki başka bölgeler için ayrıca madde veya kanıt gerekir."
+      ],
+      "strategy": "Kökteki yer adını ve yılı sabitle. Seçenekleri kapsadıkları bölgeler ve taraflar açısından karşılaştır; her yargının gerektirdiği yer bilgisinin kökte bulunup bulunmadığını olumsuz kök bakımından denetle.",
+      "steps": [
+        "Doğrudan verilen sonuç 1711 Prut’ta Azak’ın geri alınmasıdır; bilgi Rusya cephesindeki belirli bir yere ilişkindir.",
+        "Azak 1700’de Rusya’ya bırakılmış olduğundan bu değişim, o kayıp açısından Osmanlı lehine bir kazanımdır. Başka bölgeler bu tek bilgiye eklenmez.",
+        "Karlofça’da kaybedilen bütün bölgelerin geri alındığı sonucu çıkarılamaz. Tek yer ve tek cephe verisi, farklı taraflarla ilişkili bütün kayıpların giderildiğini kanıtlamaz."
+      ],
+      "optionReasons": [
+        "Azak’ın Rusya’dan geri alınması, Rusya’yla ilişkide somut bir kazanımdır; seçenek kökteki yer ve taraf sınırını korur.",
+        "1700’de Rusya’ya bırakılan Azak’ın 1711’de geri alınması önceki kayıp bakımından değişimdir; aynı bölgenin iki tarihli statüsü karşılaştırılmıştır.",
+        "1700’deki Azak kaybı ile 1711’de geri alınışı, farklı tarihlerde farklı yönlü sonuçlar yaşanabildiğini gösterir. 1700 XVII., 1711 XVIII. yüzyıldadır; bu iki olay için aynı yüzyıl iddiası kurulmaz.",
+        "Doğru. Çıkarılamayan yargı bütün Karlofça kayıplarının geri alınmasıdır; Azak verisi diğer devletlere bırakılan bölgeler hakkında böyle bir toplam sonuç vermez.",
+        "Tek yerin geri kazanımının bütün cepheleri açıklamayacağı, kapsamı verilen bölgeyle sınırlı tutar; metinden çıkarılan aşırı bir iddia değildir."
+      ],
+      "commonError": "“Bir yer geri alındı” bilgisindeki kazanımı “kaybedilen her şey geri geldi” diye büyütmek, yer ve taraf listesini kontrol etmeden sonuca atlamaktır.",
+      "check": "İddianı bir yer listesiyle dene: kökte yalnız Azak var. “Bütün bölgeler” diyebilmek için başka hangi bölgelere dair madde gerektiğini göstermek, tek örnek ile toplam sonucu ayırır."
+    }
+  },
+  {
+    "id": "f93h-b8",
+    "identity": "[\"f93h-b8\",\"1739 Belgrad Antlaşmaları’nın Osmanlı bakımından görece elverişli olması hangi genellemeyi sınırlar?\",\"\",[\"XVIII. yüzyıldaki bütün antlaşmalar aynı yönde kayıptır.\",\"Antlaşmalar kendi savaş koşullarında incelenmelidir.\",\"Aynı dönemde farklı sonuçlar bulunabilir.\",\"Diplomatik maddeler taraflarına göre okunmalıdır.\",\"Kazanım bütün sorunların sonsuza dek bitmesi demek değildir.\"],0,\"Elverişli 1739 sonuçları, bütün XVIII. yüzyıl antlaşmalarının kayıp olduğu iddiasına karşı örnektir. Diğer seçenekler bu farklılığı incelemeye izin veren doğru yöntem ifadeleridir.\"]",
+    "guidance": {
+      "knowledge": [
+        "“Bütün” sözcüğü bir grubun her üyesi için aynı iddiayı kurar. Böyle bir genelleme, kapsam içindeki tek bir karşı örnekle sınanabilir; buna karşılık farklı sonuçların bulunabileceğini kabul eden bir değerlendirme aynı biçimde çürütülmez."
+      ],
+      "strategy": "Sorunun doğru tarih yöntemini değil verilen örnekle sınırlanan genellemeyi istediğini belirle. Önce 1739’un hangi yüzyıla girdiğini kontrol et, sonra seçeneklerdeki evrensel iddiayı elverişli sonuç bilgisiyle karşılaştır.",
+      "steps": [
+        "1739 XVIII. yüzyıl içindedir ve kök Belgrad Antlaşmalarının Osmanlı bakımından görece elverişli olduğunu veri olarak kabul ettirir.",
+        "Yüzyıl içindeki bu örnek, bütün antlaşmaların aynı yönde kayıp olduğu önermesine karşı örnektir; elverişlilik kayıpla aynı sonuç yönü değildir.",
+        "Sınırlanan genelleme “XVIII. yüzyıldaki bütün antlaşmalar aynı yönde kayıptır” olur. Diğer seçenekler bağlamı ve farklı sonuçları incelemeye açık yöntem ifadeleridir."
+      ],
+      "optionReasons": [
+        "Doğru. 1739 da XVIII. yüzyıldadır; görece elverişli bu örnek, yüzyılın bütün antlaşmalarını aynı yönde kayıp sayan evrensel iddiayı sınırlar.",
+        "Antlaşmayı kendi savaş koşullarında incelemek Belgrad örneğiyle çürütülmez; tam tersine sonuç farklılıklarını açıklayabilen bir yöntemdir.",
+        "Aynı dönemde farklı sonuçlar bulunabileceği Belgrad’ın elverişliliğiyle uyumludur. Sorunun aradığı, bu örneğin sınırlandırdığı genelleme değildir.",
+        "Diplomatik maddeleri taraflarına göre okumak, farklı sonuçları ayırt etmeye yardım eder. Elverişli bir antlaşma bu yöntemi geçersiz kılmaz.",
+        "Kazanımın bütün sorunları sonsuza dek bitirmediğini söylemek ölçülü bir sınırdır; Belgrad’ın elverişli oluşu bu ifadeyle çelişmez."
+      ],
+      "commonError": "Tarihsel olarak doğru görünen yöntem seçeneklerinden birini işaretlemek, “hangi genellemeyi sınırlar?” sorusunu kaçırır. Karşı örneğin hangi evrensel önermeyi bozduğunu bulmalısın.",
+      "check": "“Bütün” önermesini korumak için 1739 örneğinin de kayıp olması gerekirdi. Kökte elverişli denmesi bu gerekliliği karşılamadığından karşı örnek bağı kurulmuş olur."
+    }
+  },
+  {
+    "id": "f93h-b9",
+    "identity": "[\"f93h-b9\",\"1774 Küçük Kaynarca’da Kırım’a siyasi bağımsızlık tanınması için doğru yorum hangisidir?\",\"\",[\"Kırım aynı maddede doğrudan Rusya’ya ilhak edilmiştir.\",\"Bağımsızlık ile başka devlete ilhak farklı statü değişiklikleridir.\",\"Kırım’ın statüsünde hiçbir değişiklik olmamıştır.\",\"Antlaşma Osmanlı ile Venedik arasında yapılmıştır.\",\"Bu madde bütün Rus savaş gemilerine her koşulda serbest geçiş demektir.\"],1,\"Siyasi bağımsızlık doğrudan başka devlete katılmak değildir; sonraki ilhakla aynı tarihe konulamaz. Antlaşma Rusya’yla yapılmıştır; statü maddesinden sınırsız askerî geçiş sonucu da çıkmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Antlaşmalar bir bölgenin hukuki statüsünü, ticaret haklarını ve askerî imkânları ayrı maddelerle düzenleyebilir. Bir statü maddesini anlamlandırırken kullanılan terim, taraflar ve tarih korunur; daha sonraki olaylar aynı maddenin içeriği yerine geçirilmez."
+      ],
+      "strategy": "Kökte Kırım için verilen statü sözcüğünü aynen not et. Seçenekleri statü, taraf ve deniz geçişi olmak üzere ayır; aynı tarihte hangi değişimin söylendiğini ve hangisinin eklenmiş olduğunu denetle.",
+      "steps": [
+        "Kökte 1774 Küçük Kaynarca ve Kırım’a siyasi bağımsızlık tanınması birlikte veriliyor; değerlendirilecek doğrudan sonuç bu statü değişimidir.",
+        "Siyasi bağımsızlık bir bölgenin başka devlete katılması anlamındaki ilhakla aynı statü değildir. Sonraki Rus ilhakı 1774’ün bu maddesi yerine konulamaz.",
+        "Bağımsızlık ve ilhakın farklı statü değişiklikleri olduğu yorum doğrudur. Buradan sınırsız savaş gemisi geçişi ya da Venedik’le yapılmış barış sonucu da türetilmez."
+      ],
+      "optionReasons": [
+        "Bağımsızlık tanınması doğrudan Rusya’ya ilhak edilme değildir. Daha sonra gerçekleşen ilhakı aynı maddenin sonucu gibi yazmak hem statüyü hem zamanı değiştirir.",
+        "Doğru. Siyasi bağımsızlık ile başka bir devletin ülkesine katılma farklı hukuki statülerdir; 1774’teki terim daha sonraki ilhakla özdeşleştirilemez.",
+        "Kırım’a siyasi bağımsızlık tanınması zaten bir statü değişimidir. Hiçbir değişiklik olmadığını söylemek kökte açıkça verilen düzenlemeyi yok sayar.",
+        "Küçük Kaynarca Osmanlı–Rusya barışıdır; Venedik’i taraf olarak koymak antlaşmanın aktörlerini değiştirir ve Kırım statüsünü açıklamaz.",
+        "Kırım’ın siyasi statüsüne dair bir maddeden bütün Rus savaş gemilerine her koşulda geçiş izni çıkmaz; askerî deniz hakları ayrı madde ve kapsam gerektirir."
+      ],
+      "commonError": "Sonraki ilhakı 1774’e geri taşımak, bağımsızlık ile ülkeye katılmayı aynılaştırır. Ticari gemi haklarını sınırsız savaş gemisi hakkına genişletmek de ayrı bir kapsam hatasıdır.",
+      "check": "Yanıtının tarihini ve fiilini ayrı kontrol et: 1774 için “bağımsızlık tanındı” ifadesi korunmalı. “Rusya’ya katıldı” yazıyorsa sonraki olayı taşımış; gemi izni yazıyorsa başka konuya geçmişsindir."
+    }
+  },
+  {
+    "id": "f93h-b10",
+    "identity": "[\"f93h-b10\",\"Bu açıklamada doğrudan verilen ara mekanizma hangisidir?\",\"Birden fazla cephede savaşan devlet daha çok asker, para ve ikmale ihtiyaç duyabilir. Kaynak baskısı büyüdükçe bazı cephelerde kısa vadeli barış arayışı önem kazanabilir. Bu açıklama, her barışın yalnız tek nedenle yapıldığını ileri sürmez.\",[\"Aynı sıradaki her olayın tek neden olması\",\"Bir zaferle bütün mali baskının kendiliğinden kalkması\",\"Her rakibin zorunlu olarak aynı ittifaka girmesi\",\"Bütün antlaşmaların yalnız toprak devri içermesi\",\"Eş zamanlı cephelerin kaynak ve ikmal ihtiyacını artırması\"],4,\"Çok cephelilik insan, para ve ikmal baskısı üzerinden barış arayışını artırabilir. Bu mekanizma tek neden veya kaçınılmaz sonuç iddiası değildir. Diğer seçenekler metinde olmayan mutlak genellemeler ekler.\"]",
+    "guidance": {
+      "knowledge": [
+        "Nedensel bir açıklama başlangıç koşulu, aradaki işleyiş ve ortaya çıkabilecek sonuçtan oluşabilir. Ara mekanizma, yalnız olayların zaman sırasını değil bir koşulun sonucu nasıl etkileyebildiğini açıklar; “artabilir” ifadesi olasılığı ve kapsam sınırını korur."
+      ],
+      "strategy": "Pasajdaki zincirin başlangıcını ve sonunu kenara yaz, aralarındaki gerekçeyi bul. Seçeneklerde yalnız bu ortadaki işi açıklayan ifadeyi ara; her olayın tek nedenli veya sonucun kaçınılmaz olduğunu ekleyen yargıları ayır.",
+      "steps": [
+        "Başlangıç birden fazla cephede savaşmaktır; açıklanan olası sonuç ise bazı cephelerde kısa vadeli barış arayışının önem kazanmasıdır.",
+        "İkisinin arasına asker, para ve ikmal ihtiyacının artması konulmuştur. Kaynak baskısı başlangıç koşulunun barış arayışını nasıl etkileyebileceğini açıklar.",
+        "Doğrudan verilen ara mekanizma eş zamanlı cephelerin kaynak ve ikmal ihtiyacını artırmasıdır. Bu zincir bütün barışları tek nedene veya zorunlu sonuca bağlamaz."
+      ],
+      "optionReasons": [
+        "Aynı sıradaki her olayın tek neden sayılması bir mekanizma değildir; zaman birlikteliğinden tek nedenlilik çıkarır ve pasajın açık sınırını ihlal eder.",
+        "Tek zaferin bütün mali baskıyı kendiliğinden kaldırdığı söylenmiyor. Pasaj artan ihtiyaç ve kaynak baskısını anlatır; seçenekteki otomatik giderilme verilmemiştir.",
+        "Her rakibin aynı ittifaka zorunlu katılması için bir koordinasyon veya karar bilgisi yoktur; bu iddia asker, para ve ikmal mekanizmasının yerine başka ilişki koyar.",
+        "Antlaşmaların yalnız toprak devri içerdiği söylenmez. Pasaj barış arayışını kaynak baskısına bağlar; antlaşma maddelerinin tamamını sınıflandırmaz.",
+        "Doğru. Çok cephede savaşmak asker, para ve ikmal ihtiyacını artırabilir; bu kaynak baskısı barış arayışına uzanan zincirin açık ara halkasıdır."
+      ],
+      "commonError": "Zincirin sonundaki barış arayışını ara mekanizma sanmak veya “etkileyebilir” ifadesini “tek ve kaçınılmaz neden” yapmak, açıklamanın hem yapısını hem kesinliğini değiştirir.",
+      "check": "“Birden çok cephe → ? → bazı cephelerde barış arayışı” boşluğunu doldur. Koyduğun ifade insan, para ve ikmal ihtiyacını açıklıyor ve “bazı/artabilir” sınırlarını koruyorsa ara bağ doğru kurulmuştur."
+    }
+  }
+]

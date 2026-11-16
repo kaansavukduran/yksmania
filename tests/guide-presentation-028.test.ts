@@ -259,7 +259,14 @@ describe("028 exact and pure guide copy presentation", () => {
       expect(shown.examples.map((e) => e.title)).toEqual(
         source.examples.map((e) => e.title),
       );
-      if (!ids.includes(source.id)) expect(shown).toBe(source);
+      // The subsequent029 membrane worked revision has its own exact-example
+      // guard. All other guides outside the accepted028 trio stay referentially
+      // identical; the original nine chemistry leaf assertions remain above.
+      if (
+        !ids.includes(source.id) &&
+        source.id !== "hucre-zarinda-madde-alisverisleri"
+      )
+        expect(shown).toBe(source);
     }
     for (const raw of guides) {
       const shown = clarifiedGuideView(raw);

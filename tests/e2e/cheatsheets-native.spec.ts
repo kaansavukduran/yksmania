@@ -1,5 +1,7 @@
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
+import { registerOfflineBootDiagnostics } from "./helpers/offlineBootDiagnostics";
+registerOfflineBootDiagnostics();
 test.use({ locale: "tr-TR", hasTouch: true });
 async function nav(page: Page, name: string) {
   await expect(page.locator(".sidebar")).toBeAttached();
@@ -22,6 +24,8 @@ test("built-in sheet opens through subject search, reveals real explanations and
   page,
   context,
 }) => {
+  // First online cache installation plus offline flow; public SW ready measured 28.6s.
+  test.setTimeout(90_000);
   await page.goto("/");
   await sheet(page, "Rasyonel Sayılar");
   await expect(page.locator('.cheat-reader input[type="file"]')).toHaveCount(0);

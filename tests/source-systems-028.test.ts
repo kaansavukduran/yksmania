@@ -180,11 +180,20 @@ describe("028 gerçek küresel yardım kayıtları ve eski kaynak koruması", ()
       );
   });
 
-  it("2743 tam ve 3140 kısmi yardımı, 95 üçlü ve 140 beşli gerçek şıkkı sayar", () => {
+  it("028'in 2743 kabul edilmiş yardımını, 95 üçlü ve 140 beşli gerçek şıkkını korur", () => {
     const full = all.filter((q) => resolvedGuidance(shown(q)) !== undefined);
     const partial = all.filter((q) => resolvedGuidance(shown(q)) === undefined);
-    expect(full).toHaveLength(2743);
-    expect(partial).toHaveLength(3140);
+    const acceptedIds = new Set([
+      ...all.filter((q) => q.guidance).map((q) => q.id),
+      ...[...curated, ...previousRows, ...rows].map((row) => row.id),
+    ]);
+    expect(acceptedIds.size).toBe(2743);
+    for (const id of acceptedIds)
+      expect(resolvedGuidance(shown(original(id))), id).toBeDefined();
+    // Later identity-bound help may extend coverage. Its exact current census
+    // is asserted in source-systems-029; the accepted028 cohort stays fixed.
+    expect(full.length).toBeGreaterThanOrEqual(2743);
+    expect(partial.length).toBeLessThanOrEqual(3140);
     expect(full.length + partial.length).toBe(5883);
     for (const q of partial)
       expect(helpPanels(shown(q)).length, q.id).toBeLessThanOrEqual(1);
@@ -384,7 +393,9 @@ describe("028 gerçek küresel yardım kayıtları ve eski kaynak koruması", ()
       "f013-foundation-katman-elektron-dizilimi-7",
     ];
     expect(
-      questionPresentationRevisions.map((revision) => revision.id),
+      questionPresentationRevisions
+        .filter((revision) => ids.includes(revision.id))
+        .map((revision) => revision.id),
     ).toEqual(ids);
     let renders = 0,
       dispatches = 0;
