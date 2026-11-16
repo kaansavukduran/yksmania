@@ -1,3 +1,19 @@
+# 0.17.0 — yayımlanmış sürüm doğrulandı
+
+16 Kasım 2026: kaynak/tag `3 a 3 a 6 c 5 ab 6949 d 2 a 4 b 14076 f 4 af 4 d 8 aefba 656 a 2`. **350 anlatım, 322 ayrıntılı rehber, 350 yerleşik özet ve 3.340 özgün soru**; ilk 348/479 sıralı başlık hazır. Önceki 0.16 üzerine 86 yeni anlatım, dört kayıpsız rehber genişletmesi ve 900 soru eklendi. Bütün kaynak arşivinin tamamlandığı anlamına gelmez.
+
+[Main CI](https://github.com/kaansavukduran/yksmania/actions/runs/43788209311):832 birim, 737 tam tarayıcı ve gerçek paketli Windows/Linux çevrimdışı/süreç yeniden açılışı PASS; Android SKIPPED. [Vercel kabulü](https://github.com/kaansavukduran/yksmania/actions/runs/43788736262):737 PASS (736 gerçek HTTPS, bir yerel geliştirme regresyonu). [Pages](https://github.com/kaansavukduran/yksmania/actions/runs/43791530727): build/deploy/yayımlanmış 54 aile kabulü PASS. Önceki 728 PASS/9 FAIL koşusu ve onarımları aşağıda tarihsel kanıt olarak tutulur; son 737 koşuları onların yerine geçer.
+
+[Alpha indirmeleri](https://github.com/kaansavukduran/yksmania/releases/tag/v 0.17.0-alpha.1), [yayın işi](https://github.com/kaansavukduran/yksmania/actions/runs/43792983676): Windows x 64 Setup/Portable, Linux AppImage/DEB ve iki küçük kanıt dosyası, toplam altı varlık. Beş checksum ve altı GitHub asset digest eşleşir; iki küçük dosya normal TLS ile indirilip ayrıca hashlenir. Dört büyük binary yerelde yeniden indirilip hashlenmedi. Android imza ayarı ertelenmiştir; bu yayında yeni APK yoktur. Fiziksel cihaz, temiz kurulum, portable taşıma ve native sürümler arasında veri koruyan kurulum NOT TESTED.
+
+Gerçek 0.16→0.17 web güncellemesi eski notları, oturumları, özgün tekrar tarihlerini, yanlış taslağını, 45 soruluk eski AYT kâğıdını/deadline’ını ve eski belge baytlarını korudu;17 yeni model ilk kez çevrimdışı açıldı, XP 25→25. Ayrıntılı kademeli yardım 20 sorudadır; diğer 3.320 soru mevcut ipucu/açıklamasını kullanır. Canlı katalog 16 kısa pratiktir: TYT 115/9488 sn, AYT 55/7425 sn ve 14 branş. Tam 120/80 dağılım yeni geliştirme adayındadır;0.17’de varmış gibi sunulmaz.
+
+349–378 paketi ayrı özellik dalında 926 birim/798 tarayıcı ve 61 aile paketli Windows/Linux kabulünü geçti; canlıya eklenmedi. 379–408 paketi geliştirme alanında 1007 birim ve derlemeyi geçti; gerçek mobil/çevrimdışı kabulü sürüyor. Bu adayın TYT 120/AYT 80 dağılımı canlı 0.17 sayılarıyla karıştırılmaz. Sonraki kaynak üretimi ve eski kısa rehber/ayrıntılı yardım/resmî arşiv/video açıkları sürer.
+
+---
+
+## Aday aşamasının tarihsel denetim kaydı
+
 # 0.17 adayı ve kalan çalışma
 
 Önce son 0.17 adayının 350 anlatım/322 ayrıntılı rehber/350 özet/3340 soru kapsamını gerçek tarayıcı, paketli Windows/Linux, Pages ve yayın kapılarıyla kapat. İlk 348/479 başlık eşleşir; bütün arşiv tamamlandı sayılmaz. 832 birim ve ilk yerel 54 aile native/Pages/web-yükseltme kabulü geçti; gerçek son gözlemde bulunan merkez noktası bölge hatası dar hesap onarımıyla düzeltildi. Tam 737 tarayıcı koşusu ayrı kapıdır.
