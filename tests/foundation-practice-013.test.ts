@@ -109,13 +109,19 @@ it("makes every prepared theory and the first 138 ordered topics independently p
     expect.arrayContaining(retainedCatalogue),
   );
   expect(catalogue.length).toBeGreaterThanOrEqual(14);
-  expect(catalogue.find((e) => e.id === "mixed-tyt")!.items.length).toBeGreaterThanOrEqual(110);
+  expect(
+    catalogue.find((e) => e.id === "mixed-tyt")!.items.length,
+  ).toBeGreaterThanOrEqual(110);
   expect(
     catalogue.find((e) => e.id === "mixed-ayt")!.items.length,
   ).toBeGreaterThanOrEqual(25);
   for (const pack of foundation013QuestionSets) {
     const spec = catalogue.find((s) => s.id === `branch-${pack.subjectId}`)!;
-    const selected = selectExamVariant(spec, "foundation-coverage");
+    // A40-item paper cannot include every topic after the bank grows past40
+    // distinct lessons. Verify each original foundation is still eligible.
+    const selected = Array.from({ length: 20 }, (_, i) =>
+      selectExamVariant(spec, `foundation-coverage-${i}`),
+    ).flat();
     expect(
       selected.some((q) => q.lessonId === pack.lessonId),
       pack.lessonId,

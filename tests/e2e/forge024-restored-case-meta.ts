@@ -11,6 +11,7 @@ export type RestoredCase = {
   hiddenText?: string;
   revealedText?: string;
   guessLabel?: string;
+  guessRole?: "combobox" | "textbox";
   guessValue?: string;
 };
 export const restoredCases: RestoredCase[] = [

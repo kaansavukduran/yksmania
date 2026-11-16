@@ -1,3 +1,17 @@
+# Güncel 0.18 kaynak adayı — bütün sıralı başlıklar ve 28 ayrıntılı genişletme
+
+Doğrulanmış çalışma sırasındaki 479 başlığın tamamı anlatım ve bağımsız soruyla eşleşir. Güncel kaynak 480 ayrıntılı rehber, 480 yerleşik kopya kağıdı ve 5.883 özgün soru içerir. Son 28 eski kısa anlatım 553 bölüm, 1.106 paragraf, 168 çözümlü örnek, 504 çözüm adımı ve 178 hatırlama etkinliğiyle genişletildi. Yeni 561 soru, 28 ayrı ileri soru setinden açılır. Her kart beş seçenek, en az üç gerçek çözüm adımı ve beş seçenek gerekçesi taşır. Ayrıntılı yardım 2.303 karttadır; 3.580 eski kartın bütün yardım aşamaları henüz tamamlanacaktır.
+
+Önceki 5.322 sorunun tüm alanları, 486 öğretim kaydı, 452 ayrıntılı rehber ve 479 başlığın çalışma sırası eşleşmeleri hash ile korunur. İki eski fizik sorusunda tek cevabı belirlemek için eksik hareket yönü ve enerji koşulları sunum katmanında açıklığa kavuşturuldu. Düzeltme yalnız bütünüyle tanınan eski soruya uygulanır. Kaydedilmiş soruların kimlikleri, anahtarları, yanıtları ve deneme kâğıtları yeniden yazılmaz. Eski tam çözüm düzeyi yeni yardım sıralamasında tam çözüm olarak görüntülenir. Yeni kayıtlar yardım paneli sayısını açık kullanıcı eylemiyle saklar.
+
+1.465 birim testi ve üretim derlemesi geçti. Derleme 271 gerekli çevrimdışı varlık ve 24.363.166 byte içerir; tek dosya 5 MiB altındadır. İleri soru setlerinin 29 gerçek tarayıcı akışı geçti. Model, telefon, masaüstü, prefix ve sürüm yükseltme kontrolleri sürmektedir. Yeni modellerin bilimsel kaynak, soru anahtarı, gerçek SVG/HTML ve saklanan bozuk türlerini değerlendiren bağımsız incelemeleri kapalıdır. Kaynak incelemesi yayın kabulü değildir.
+
+Öğrenciye PDF yükleme veya kaynak eşleştirme işi bırakılmaz. Her kaynağın bütün alt kazanımlarının ve son 20 yılın resmî ÖSYM arşivinin işlendiği iddia edilmez. Canlı sürüm henüz 0.17’dir: [Vercel](https://yksmania.vercel.app), [Pages](https://kaansavukduran.github.io/yksmania/) ve [Windows/Linux](https://github.com/kaansavukduran/yksmania/releases/tag/v0.17.0-alpha.1). Android imzası kullanıcı tarafından ertelendi; yeni APK yoktur. Fiziksel cihaz, temiz kurulum, portable taşıma ve native sürümler arası veri koruyan kurulum ayrıca sınanacaktır.
+
+---
+
+## Önceki kaynak ve kabul kayıtları
+
 # Kaynak 025 — son 11 sıralı başlığın öğretimi
 
 Belirsiz integral, belirli integral ve alan/Riemann; enerji, sürdürülebilirlik ve nanoteknoloji; tasavvufî yorumlar, güncel dinî meseleler, Hint/Çin dinleri; bitkilerde döllenme/çimlenme ve canlı–çevre ilişkileri gerçek kaynak okumalarıyla özgün öğretime dönüştürüldü. Yazar ve bağımsız okuyucuların metin sayfaları, kaynak şekilleri, anahtarsız soru çözümleri ve bilimsel/model sınırları ayrı özel kayıtlardadır. İndirme ve metin çıkarımı yakın okuma sayılmaz.

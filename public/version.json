@@ -2,6 +2,6 @@
   "version": "0.18.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Geliştirme adayı: doğrulanmış sıradaki 479 başlığın tamamı anlatım ve bağımsız soruyla eşleşir. Toplam 480 anlatım, 452 ayrıntılı rehber, 480 yerleşik özet ve 5322 özgün soru. Son 11 konuya 234 yeni beş seçenekli, kademeli açıklamalı soru eklendi. 28 eski kısa anlatım derinleştiriliyor. TYT 120 soru/165 dakika; AYT Sayısal 80 soru/180 dakika. Eski deneme kâğıtları, notlar, tekrar tarihleri ve ilerleme korunur. Başlık sayısı bütün Drive/MEB alt kazanımları ve resmî arşiv tamamlandı demek değildir. Android imzası ertelendi; yeni APK yoktur."
+    "tr": "Geliştirme adayı: doğrulanmış 479 sıralı başlığın tamamı anlatım ve soruyla eşleşir. Toplam 480 ayrıntılı anlatım, 480 yerleşik özet ve 5883 özgün soru. Son 28 eski anlatım; 553 bölüm, 168 çözümlü örnek ve 178 hatırlama etkinliğiyle genişletildi. İleri soru setleri ayrı açılır. İki fizik sorusunda eksik koşullar açıklığa kavuşturuldu; eski yanıtlar ve denemeler korunur. TYT 120 soru/165 dakika, AYT Sayısal 80 soru/180 dakika. Başlık eşleşmesi bütün kaynakların her alt kazanımı ve resmî sınav arşivi tamamlandı demek değildir."
   }
 }

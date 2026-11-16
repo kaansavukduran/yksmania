@@ -1,3 +1,4 @@
+import { clarifiedQuestionView } from "../domain/questionPresentation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   ArrowLeft,
@@ -22,6 +23,8 @@ import { formatCountdown } from "../domain/focusTimer";
 import type { ExamDraft, ExamSession } from "../domain/examModel";
 import "../exams.css";
 import { QuestionHelp } from "../components/QuestionHelp";
+import { helpPanels, previousHelpPanelCount } from "../learning/questionHelp";
+import { effectiveHelpLevel } from "../learning/helpProgression";
 
 // Deadline follows the saved exam even while another learning page is open.
 export function ExamDeadlineWatcher() {
@@ -319,7 +322,14 @@ function ExamRunner({
     expired = remaining <= 0;
   const clockParts = formatCountdown(remaining).split(":");
   const answered = draft.answers.filter((value) => value !== null).length;
-  const q = draft.items[draft.index];
+  const q = clarifiedQuestionView(draft.items[draft.index]);
+  const visibleHelpLevel = effectiveHelpLevel(
+    helpPanels(q),
+    draft.helpLevels?.[draft.index],
+    draft.helpPanelCounts?.[String(draft.index)],
+    previousHelpPanelCount(q),
+    q.hint,
+  );
   const questionHeading = useRef<HTMLHeadingElement>(null);
   const previousIndex = useRef(draft.index);
   useEffect(() => {
@@ -528,7 +538,7 @@ function ExamRunner({
             <QuestionHelp
               key={q.id}
               question={q}
-              level={draft.helpLevels?.[draft.index] ?? 0}
+              level={visibleHelpLevel}
               disabled={busy || expired}
               onLevel={(level) =>
                 void change({ type: "help", index: draft.index, level })
@@ -760,7 +770,8 @@ function ExamResults({
           Her soruda kendi yanıtını, doğru yanıtı ve çözüm gerekçesini
           karşılaştır.
         </p>
-        {session.items.map((q, index) => {
+        {session.items.map((storedQuestion, index) => {
+          const q = clarifiedQuestionView(storedQuestion);
           const selected = session.answers[index],
             correct = selected === q.answer;
           return (

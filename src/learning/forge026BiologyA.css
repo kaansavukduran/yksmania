@@ -1,0 +1,187 @@
+.b026-lab {
+  border: 1px solid var(--border, #aac2b2);
+  border-radius: 12px;
+  padding: 12px;
+  min-width: 0;
+  line-height: 1.55;
+  background: var(--surface-2, #eeece5);
+  color: var(--text, #172d26);
+}
+.b026-lab * {
+  box-sizing: border-box;
+  min-width: 0;
+}
+.b026-lab p,
+.b026-lab label,
+.b026-lab output,
+.b026-lab dt,
+.b026-lab dd,
+.b026-lab figcaption {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+.b026-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+  gap: 12px;
+}
+.b026-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 12px 0;
+}
+.b026-field select,
+.b026-lab textarea,
+.b026-lab button {
+  font: inherit;
+  max-width: 100%;
+  border: 1px solid var(--border, #819c8c);
+  border-radius: 6px;
+  background: var(--surface, #fffefa);
+  color: inherit;
+  padding: 8px;
+}
+.b026-field select {
+  width: 100%;
+  min-height: 44px;
+}
+.b026-field input[type="range"] {
+  width: 100%;
+  min-height: 44px;
+  accent-color: var(--mint, #376c4e);
+}
+.b026-selected {
+  font: inherit;
+  line-height: inherit;
+}
+.b026-lab textarea {
+  width: 100%;
+  min-height: 100px;
+  resize: vertical;
+}
+.b026-lab button {
+  display: block;
+  margin: 12px 0;
+  min-height: 44px;
+  white-space: normal;
+  cursor: pointer;
+}
+.b026-lab button:disabled {
+  opacity: 0.65;
+  cursor: default;
+}
+.b026-facts {
+  margin: 12px 0;
+}
+.b026-facts > div {
+  border-bottom: 1px solid var(--border, #c1d2c7);
+  padding: 8px 0;
+}
+.b026-facts dt {
+  font-weight: 700;
+}
+.b026-facts dd {
+  margin: 4px 0 0;
+}
+.b026-figure {
+  margin: 16px 0;
+  padding: 4px;
+}
+.b026-figure svg {
+  display: block;
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+  margin: 10px auto;
+  overflow: visible;
+}
+.b026-figure text {
+  font:
+    18px system-ui,
+    sans-serif;
+  fill: currentColor;
+}
+.b026-axis,
+.b026-bond,
+.b026-reference {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+.b026-reference {
+  stroke: #a53b44;
+  stroke-dasharray: 6 4;
+}
+.b026-outline {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 3;
+}
+.b026-fill,
+.b026-dot {
+  fill: var(--mint, #376c4e);
+  stroke: #154b38;
+  stroke-width: 1;
+}
+.b026-limit {
+  fill: var(--accent, #a94327);
+  stroke: #6d301b;
+  stroke-width: 1;
+}
+.b026-water {
+  fill: #85bbda;
+  stroke: #1d668a;
+  stroke-width: 1;
+}
+.b026-nucleus {
+  fill: #c6a7dd;
+  stroke: #594371;
+  stroke-width: 2;
+}
+.b026-organelle {
+  fill: #efcc72;
+  stroke: #7b632b;
+  stroke-width: 2;
+}
+.b026-oxygen {
+  fill: #b8484d;
+  stroke: #702b2e;
+  stroke-width: 1;
+}
+.b026-hydrogen {
+  fill: #e7edf1;
+  stroke: #405d68;
+  stroke-width: 1;
+}
+.b026-compare {
+  border-top: 2px solid var(--border, #aac2b2);
+  margin-top: 20px;
+  padding-top: 12px;
+}
+.b026-feedback,
+.b026-proof {
+  padding: 8px;
+  border-left: 4px solid var(--mint, #376c4e);
+  background: var(--surface, #fffefa);
+}
+@media (max-width: 600px) {
+  .b026-lab {
+    padding-inline: 4px;
+  }
+  .b026-lab button {
+    padding-inline: 6px;
+  }
+  .b026-proof,
+  .b026-feedback {
+    padding-inline: 4px;
+  }
+  .b026-lab ol,
+  .b026-lab ul {
+    padding-inline-start: 4px;
+    list-style-position: inside;
+  }
+  .b026-figure {
+    padding-inline: 0;
+  }
+}

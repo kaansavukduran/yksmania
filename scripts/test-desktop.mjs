@@ -1,4 +1,9 @@
 import {
+  forge026SmokeCases,
+  runForge026SmokeCase,
+  assertForge026ProcessRestart,
+} from "./forge026-smoke-cases.mjs";
+import {
   forge025SmokeCases,
   runForge025SmokeCase,
   assertForge025ProcessRestart,
@@ -671,6 +676,11 @@ try {
   for (const unit of forge025SmokeCases)
     forge025Snapshots.push(await runForge025SmokeCase(page, navigate, unit));
 
+  expect(forge026SmokeCases).toHaveLength(8);
+  const forge026Snapshots = [];
+  for (const unit of forge026SmokeCases)
+    forge026Snapshots.push(await runForge026SmokeCase(page, navigate, unit));
+
   const mathematics = [
     /Temel kavramlar: sayı, değer/,
     /Tek–çift ve işaret:/,
@@ -759,7 +769,7 @@ try {
   await expect(page.locator(".compact-lab .area-result")).toContainText(
     "1/3 ≈ 0,333",
   );
-  await page.locator(".lesson-article > .primary").click();
+  await page.getByRole("button", { name: "Sorulara geç", exact: true }).click();
   for (const index of [1, 2, 0, 1, 1]) {
     await page.locator(".answer").nth(index).click();
     await page.locator(".question-actions .primary").click();
@@ -796,6 +806,7 @@ try {
   await assertForge023ProcessRestart(page, navigate, forge023Snapshots);
   await assertForge024ProcessRestart(page, navigate, forge024Snapshots);
   await assertForge025ProcessRestart(page, navigate, forge025Snapshots);
+  await assertForge026ProcessRestart(page, navigate, forge026Snapshots);
   await navigate("Bugün");
   await expect(page.locator(".stat-number").first()).toHaveText("1");
   const dailyTheory = page
@@ -1276,6 +1287,11 @@ try {
         (item) => item.id,
       ),
       forge025SameProfileProcessRestart: "PASS",
+      forge026FamiliesOfflineHtmlStateAndReload: forge026Snapshots.map(
+        (item) => item.id,
+      ),
+      forge026SameProfileProcessRestart: "PASS",
+      forge026ExplorationWithoutLearningCredit: "PASS",
       forge025ExplorationWithoutLearningCredit: "PASS",
       forge024ExplorationWithoutLearningCredit: "PASS",
       forge022ExplorationWithoutLearningCredit: "PASS",

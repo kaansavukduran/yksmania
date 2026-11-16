@@ -12,6 +12,7 @@ import {
   selectExamVariant,
 } from "../src/domain/exams";
 import { lessons } from "../src/domain/content";
+import { localizedQuestionView } from "../src/domain/questionPresentation";
 import { resetLearningProgress } from "../src/domain/resetProgress";
 it("uses the normal time per question and labels incomplete exam distributions as short practice", () => {
   expect(scaledExamSeconds("TYT", 120)).toBe(9900);
@@ -182,7 +183,7 @@ it("copies whole original question payloads with unchanged option order and answ
       const original = bank.get(item.id)!;
       expect(item.lessonId).toBe(original.lesson.id);
       expect(item.subjectId).toBe(original.lesson.subjectId);
-      expect(item.prompt).toBe(original.q.prompt.tr);
+      expect(item.prompt).toBe(localizedQuestionView(original.q).prompt.tr);
       expect(item.options).toEqual(original.q.options.map((o) => o.tr));
       expect(item.answer).toBe(original.q.answer);
       expect(item.passage).toBe(original.q.passage?.tr);

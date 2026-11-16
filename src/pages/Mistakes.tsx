@@ -1,3 +1,4 @@
+import { localizedQuestionView } from "../domain/questionPresentation";
 import { useRef, useState } from "react";
 import { RotateCcw, ArrowUpRight } from "lucide-react";
 import { useApp } from "../store";
@@ -44,14 +45,17 @@ export function Mistakes({
     .flatMap((s) =>
       s.responses
         .filter((r) => !r.correct || r.assisted)
-        .map((r) => ({
-          session: s,
-          response: r,
-          lesson: lessonById(s.lessonId),
-          question: lessons
+        .map((r) => {
+          const question = lessons
             .flatMap((x) => x.questions)
-            .find((q) => q.id === r.questionId),
-        })),
+            .find((q) => q.id === r.questionId);
+          return {
+            session: s,
+            response: r,
+            lesson: lessonById(s.lessonId),
+            question: question ? localizedQuestionView(question) : undefined,
+          };
+        }),
     )
     .reverse();
   return (

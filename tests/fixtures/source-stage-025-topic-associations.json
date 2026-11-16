@@ -1,0 +1,3365 @@
+{
+  "lessonTopic": {
+    "ayt-belirsiz-integral": "detail-477",
+    "ayt-belirli-integral": "detail-478",
+    "ayt-alan-riemann": "detail-479",
+    "ayt-enerji-kaynaklari-gelismeler": "detail-460",
+    "ayt-surdurulebilirlik-geri-donusum": "detail-461",
+    "ayt-nanoteknoloji-gelismeler": "detail-462",
+    "islam-dusuncesinde-tasavvufi-yorumlar": "detail-94",
+    "guncel-dini-meseleler": "detail-95",
+    "hint-ve-cin-dinleri": "detail-96",
+    "bitkilerde-dollenme-cimlenme": "detail-356",
+    "canlilar-ve-cevre": "detail-357",
+    "ayt-turev-alma-kurallari": "detail-475",
+    "turev-teget-ileri": "detail-476",
+    "buyuk-patlama-atomalti": "detail-397",
+    "radyoaktivite": "detail-398",
+    "ozel-gorelilik": "detail-399",
+    "siyah-cisim-foton": "detail-400",
+    "fotoelektrik-olay": "detail-401",
+    "compton-debroglie": "detail-402",
+    "modern-fizik-teknoloji": "detail-403",
+    "ayt-govde-yapisi": "detail-347",
+    "ayt-yaprak-yapisi": "detail-348",
+    "bitki-madde-tasinmasi": "detail-349",
+    "stoma-nodul-mikoriza": "detail-350",
+    "bitki-hormonlari": "detail-351",
+    "bitkilerde-hareket": "detail-352",
+    "bitki-fotoperiyodizm": "detail-353",
+    "cicek-yapisi-ureme": "detail-354",
+    "bitki-tozlasma": "detail-355",
+    "ayt-alkol-eldesi-tepkimeleri": "detail-455",
+    "ayt-eterler": "detail-456",
+    "ayt-aldehit-keton": "detail-457",
+    "ayt-karboksilik-asitler": "detail-458",
+    "ayt-esterler": "detail-459",
+    "dunya-ve-ahiret": "detail-90",
+    "yahudilik-ve-hristiyanlik": "detail-91",
+    "islam-ve-bilim": "detail-92",
+    "anadoluda-islam": "detail-93",
+    "paragrafta-coklu-sorular": "detail-280",
+    "paragrafta-konu": "detail-281",
+    "metin-tablo-gorsel-yorumlama": "detail-282",
+    "ayt-toplam-fark-yarim-aci": "detail-470",
+    "ayt-trigonometrik-denklemler": "detail-471",
+    "ayt-logaritma": "detail-472",
+    "ayt-diziler": "detail-473",
+    "ayt-limit-sureklilik": "detail-474",
+    "isik-teorileri": "detail-393",
+    "doppler-etkisi": "detail-394",
+    "elektromanyetik-dalgalar": "detail-395",
+    "atom-modelleri-fizik": "detail-396",
+    "bitki-ortu-doku": "detail-345",
+    "bitki-kok-anatomisi": "detail-346",
+    "ayt-sikloalkanlar": "detail-450",
+    "ayt-alkenler": "detail-451",
+    "ayt-alkinler": "detail-452",
+    "ayt-arenler": "detail-453",
+    "ayt-alkoller": "detail-454",
+    "din-ve-islam": "detail-78",
+    "islam-ve-ibadet": "detail-79",
+    "ahlaki-tutum-ve-davranislar": "detail-80",
+    "genclik-ve-degerler": "detail-81",
+    "gonul-cografyamiz": "detail-82",
+    "din-ve-hayat": "detail-83",
+    "hz-muhammed-ve-gencler": "detail-84",
+    "allah-ve-insan-iliskisi": "detail-85",
+    "islam-dusuncesinde-mezhepler": "detail-86",
+    "kur-ana-gore-hz-muhammed": "detail-87",
+    "kur-anda-gecen-bazi-kavramlar": "detail-88",
+    "inanc-ile-ilgili-meseleler": "detail-89",
+    "paragrafta-soru-cevap": "detail-278",
+    "paragrafta-roportaj": "detail-279",
+    "ayt-ikinci-dereceden-denklemler": "detail-465",
+    "ayt-karmasik-sayilar": "detail-466",
+    "ayt-esitsizlikler": "detail-467",
+    "ayt-parabol": "detail-468",
+    "ayt-trigonometri": "detail-469",
+    "basit-harmonik-hareket": "detail-390",
+    "su-dalgalarinda-kirinim": "detail-391",
+    "su-dalgalarinda-girisim": "detail-392",
+    "ayt-fermantasyon": "detail-340",
+    "ayt-fotosentez-solunum": "detail-341",
+    "ayt-meristem-doku": "detail-342",
+    "ayt-temel-doku": "detail-343",
+    "ayt-iletim-doku": "detail-344",
+    "elektrokimyasal-piller": "detail-440",
+    "pil-gerilimi-derisim-pilleri": "detail-441",
+    "elektroliz": "detail-442",
+    "faraday-yasalari": "detail-443",
+    "korozyon-katodik-koruma": "detail-444",
+    "karbon-kimyasina-giris": "detail-445",
+    "basit-ve-molekul-formul": "detail-446",
+    "hibritlesme": "detail-447",
+    "molekul-geometrisi": "detail-448",
+    "alkanlar": "detail-449",
+    "paragrafta-anlatim-bicimleri": "detail-277",
+    "ronesans-felsefesi": "detail-109",
+    "15-17-yuzyil-felsefesi": "detail-110",
+    "aydinlanma-felsefesi": "detail-111",
+    "18-19-yuzyil-felsefesi": "detail-112",
+    "cagdas-felsefe": "detail-113",
+    "bilgi-ve-inanc": "detail-77",
+    "donusum-oteleme-donme": "detail-405",
+    "donusum-yansima-simetri": "detail-406",
+    "cemberin-analitigi": "detail-407",
+    "ayt-fonksiyonlar": "detail-463",
+    "ayt-polinomlar": "detail-464",
+    "donerek-oteleme-hareketi": "detail-386",
+    "acisal-momentum": "detail-387",
+    "newton-genel-cekim-yasasi": "detail-388",
+    "kepler-yasalari": "detail-389",
+    "ayt-kodon-antikodon": "detail-331",
+    "ayt-protein-sentezi": "detail-332",
+    "ayt-biyoteknoloji": "detail-333",
+    "ayt-fotosentez-genel": "detail-334",
+    "ayt-fotosentez-tepkimeler": "detail-335",
+    "fotosentez-hiz-faktorleri": "detail-336",
+    "kemosentez-enerji-karbon": "detail-337",
+    "solunum-oksijenli-bilanco": "detail-338",
+    "solunum-oksijensiz-alicilar": "detail-339",
+    "cozunurluk-faktorleri": "detail-437",
+    "redoks-denklestirme": "detail-438",
+    "metalik-aktiflik": "detail-439",
+    "din-felsefesi": "detail-103",
+    "siyaset-felsefesi": "detail-104",
+    "sanat-felsefesi": "detail-105",
+    "felsefi-okuma-ve-yazma": "detail-106",
+    "ilk-cag-felsefesi": "detail-107",
+    "orta-cag-felsefesi": "detail-108",
+    "paragrafta-siralama": "detail-274",
+    "paragrafta-cumle-ekleme": "detail-275",
+    "paragrafta-bosluk-doldurma": "detail-276",
+    "ureme-kadin-organlar": "detail-322",
+    "ureme-gametogenez": "detail-323",
+    "ureme-menstrual-dongu": "detail-324",
+    "ureme-embriyonik-gelisim": "detail-325",
+    "ekoloji-komunite": "detail-326",
+    "ekoloji-populasyon": "detail-327",
+    "nukleik-asitler-yapi": "detail-328",
+    "kalitim-molekulu-kesfi": "detail-329",
+    "dna-replikasyonu-ileri": "detail-330",
+    "ayt-denge-basinc-hacim": "detail-430",
+    "ayt-sulu-asit-baz-denge": "detail-431",
+    "ayt-zayif-asit-baz-tampon": "detail-432",
+    "ayt-hidroliz": "detail-433",
+    "ayt-notrallesme": "detail-434",
+    "ayt-titrasyon": "detail-435",
+    "ayt-cozunurluk-dengesi": "detail-436",
+    "manyetik-kuvvet": "detail-381",
+    "elektromanyetik-induksiyon": "detail-382",
+    "alternatif-akim": "detail-383",
+    "transformatorler": "detail-384",
+    "cembersel-hareket": "detail-385",
+    "dunya-sekli-hareket": "detail-74",
+    "cografi-konum": "detail-75",
+    "harita-bilgisi": "detail-76",
+    "felsefeyi-tanima": "detail-97",
+    "felsefe-ile-dusunme": "detail-98",
+    "varlik-felsefesi": "detail-99",
+    "bilgi-felsefesi": "detail-100",
+    "bilim-felsefesi": "detail-101",
+    "ahlak-felsefesi": "detail-102",
+    "solunum-organlar": "detail-316",
+    "soluk-alisverisi": "detail-317",
+    "solunum-gaz-tasinmasi": "detail-318",
+    "uriner-organlar": "detail-319",
+    "nefron-isleyisi": "detail-320",
+    "erkek-ureme-organlari": "detail-321",
+    "ayt-molalite-koligatif": "detail-421",
+    "ayt-cozunurluk": "detail-422",
+    "ayt-tepkimelerde-enerji": "detail-423",
+    "ayt-entalpi-bag-hess": "detail-424",
+    "ayt-tepkime-hizi": "detail-425",
+    "ayt-denge-hesaplari": "detail-427",
+    "ayt-denge-derisim": "detail-428",
+    "ayt-denge-sicaklik-kesir": "detail-429",
+    "kimyasal-denge-ileri": "detail-426",
+    "elektriksel-potansiyel-enerji": "detail-376",
+    "elektriksel-potansiyel": "detail-377",
+    "duzgun-alan-paralel-levhalar": "detail-378",
+    "sigaclar-kondansatorler": "detail-379",
+    "manyetik-alan-ayt": "detail-380",
+    "elektrik-alan-ileri": "detail-375",
+    "bolge-turleri": "detail-70",
+    "ulasim-aglari": "detail-71",
+    "cevre-toplum": "detail-72",
+    "afetler-risk": "detail-73",
+    "yardimci-dusunce": "detail-271",
+    "ikiye-bolme": "detail-272",
+    "akisi-bozan-cumle": "detail-273",
+    "paragraf-ana-dusunce-ileri": "detail-270",
+    "dogrunun-analitigi": "detail-404",
+    "sindirim-bagirsaklar": "detail-307",
+    "sindirim-enzimler-hormonlar": "detail-308",
+    "sindirim-karaciger-safra": "detail-309",
+    "sindirim-pankreas": "detail-310",
+    "dolasim-kalp": "detail-311",
+    "dolasim-damarlar-starling": "detail-312",
+    "dolasim-kan-doku": "detail-313",
+    "lenf-sistemi": "detail-314",
+    "bagisiklik-sistemi": "detail-315",
+    "ayt-kinetik-yogunluk": "detail-415",
+    "ayt-kismi-basinci-suustu": "detail-416",
+    "ayt-gercek-gaz-faz": "detail-417",
+    "ayt-cozucu-cozunen": "detail-418",
+    "ayt-molarite": "detail-419",
+    "ayt-iyon-derisimi": "detail-420",
+    "itme-momentum": "detail-369",
+    "kesisen-kuvvetler-dengesi": "detail-370",
+    "tork-denge": "detail-371",
+    "kutle-agirlik-merkezi": "detail-372",
+    "basit-makineler-ayt": "detail-373",
+    "elektriksel-kuvvet-ayt": "detail-374",
+    "dunya-nufus-dagilisi": "detail-65",
+    "nufus-piramitleri": "detail-66",
+    "turkiye-nufusu": "detail-67",
+    "dunya-turkiye-gocler": "detail-68",
+    "ekonomik-faaliyetler": "detail-69",
+    "deyimler-ve-atasozleri": "detail-267",
+    "cumlede-anlam": "detail-268",
+    "paragrafa-giris": "detail-269",
+    "noktanin-analitigi": "detail-138",
+    "kas-doku": "detail-304",
+    "sindirim-agiz-yutak-yemek-borusu": "detail-305",
+    "sindirim-mide": "detail-306",
+    "asit-baz-metaller": "detail-189",
+    "hayatimizda-asit-baz": "detail-190",
+    "sabun-deterjan-temizlik": "detail-191",
+    "polimer-kozmetik-ilac": "detail-192",
+    "polimer-gida-ilac-yag": "detail-193",
+    "ayt-modern-atom-elektron-dizilimi": "detail-408",
+    "ayt-kuantum-sayilari": "detail-409",
+    "ayt-periyodik-sistem-atom-capi": "detail-410",
+    "ayt-iyonlasma-elektron-ilgisi-en": "detail-411",
+    "ayt-elementler-yukseltgenme": "detail-412",
+    "ayt-gaz-ozellikleri": "detail-413",
+    "ayt-gaz-yasalari": "detail-414",
+    "turkiye-sulari": "detail-57",
+    "dunya-topraklari": "detail-58",
+    "turkiye-topraklari": "detail-59",
+    "dunya-bitkileri": "detail-60",
+    "turkiye-bitkileri": "detail-61",
+    "dunya-yerlesmeleri": "detail-62",
+    "turkiye-yerlesmeleri": "detail-63",
+    "nufus-onemi-ozellikleri": "detail-64",
+    "serbest-dusme-limit-hiz": "detail-364",
+    "dusey-atis": "detail-365",
+    "yatay-atis": "detail-366",
+    "egik-atis": "detail-367",
+    "ayt-enerji-hareket": "detail-368",
+    "anlatim-bozukluklari": "detail-265",
+    "sozcukte-anlam": "detail-266",
+    "endokrin-hipotalamus": "detail-291",
+    "endokrin-hipofiz": "detail-292",
+    "endokrin-tiroit": "detail-293",
+    "endokrin-paratiroit": "detail-294",
+    "endokrin-bobrek-ustu": "detail-295",
+    "endokrin-pankreas": "detail-296",
+    "endokrin-epifiz": "detail-297",
+    "duyu-organlari-deri": "detail-298",
+    "duyu-organlari-dil-burun": "detail-299",
+    "duyu-organlari-goz": "detail-300",
+    "duyu-organlari-kulak": "detail-301",
+    "destek-hareket-kemik": "detail-302",
+    "destek-hareket-kikirdak-eklem": "detail-303",
+    "koligatif-ayirma": "detail-186",
+    "asit-baz-tuz-ozellikleri": "detail-187",
+    "asit-baz-tepkimeleri": "detail-188",
+    "cografya-kayaclar": "detail-48",
+    "turkiye-ic-kuvvetler": "detail-49",
+    "dis-kuvvetler-akarsular": "detail-50",
+    "karstik-sekiller": "detail-51",
+    "ruzgar-ve-buzul": "detail-52",
+    "dalga-akinti-kiyi-tipleri": "detail-53",
+    "turkiye-dis-kuvvetler": "detail-54",
+    "turkiye-yer-sekilleri": "detail-55",
+    "dunyada-sular": "detail-56",
+    "ayt-newton-hareket-yasalari": "detail-361",
+    "bir-boyutta-sabit-ivmeli-hareket": "detail-362",
+    "sabit-ivmeli-hareket-grafikleri": "detail-363",
+    "yazim-kurallari": "detail-263",
+    "noktalama-isaretleri": "detail-264",
+    "veri-analizi": "detail-225",
+    "vektorler": "detail-358",
+    "bagil-hareket": "detail-359",
+    "nehir-problemleri": "detail-360",
+    "gercek-kutle-akb-nk": "detail-174",
+    "tepkimeler-denklemler": "detail-175",
+    "tepkime-turleri": "detail-176",
+    "denklemli-miktar-gecisi": "detail-177",
+    "sinirlayici-bilesen": "detail-178",
+    "kati-kutlesi-degisimi": "detail-179",
+    "yuzde-verim": "detail-180",
+    "safsizlik-problemleri": "detail-181",
+    "atom-kutlesi-hesaplari": "detail-182",
+    "tepkimeli-karisim": "detail-183",
+    "karisim-sinif-cozunme": "detail-184",
+    "cozelti-derisimi": "detail-185",
+    "genetik-cesitlilik": "detail-284",
+    "sinir-sistemi-noron-ve-glialar": "detail-285",
+    "sinir-sistemi-aksiyon-potansiyeli": "detail-286",
+    "sinir-sistemi-on-beyin": "detail-287",
+    "sinir-sistemi-orta-arka-beyin": "detail-288",
+    "sinir-sistemi-omurilik": "detail-289",
+    "sinir-sistemi-css-hastaliklar": "detail-290",
+    "buyuk-iklim-tipleri": "detail-44",
+    "turkiye-iklimi": "detail-45",
+    "dunyanin-tektonik-olusumu": "detail-46",
+    "ic-kuvvetler": "detail-47",
+    "fiilimsiler": "detail-260",
+    "cumlenin-ogeleri": "detail-261",
+    "cumle-turleri": "detail-262",
+    "grafik-problemleri": "detail-220",
+    "kumeler": "detail-222",
+    "kartezyen-carpim": "detail-223",
+    "mantik-onerme": "detail-224",
+    "kuresel-aynalar": "detail-134",
+    "isigin-kirilmasi": "detail-135",
+    "mercekler": "detail-136",
+    "prizmalar-renkler": "detail-137",
+    "su-hayat-cevre": "detail-167",
+    "kutle-korunumu-sabit-oran": "detail-168",
+    "sinirlayici-artan-madde": "detail-169",
+    "katli-oranlar": "detail-170",
+    "mol-tanecik-iliskisi": "detail-172",
+    "mol-kutle-iliskisi": "detail-173",
+    "ekoloji-giris": "detail-31",
+    "besin-piramidi": "detail-32",
+    "besin-zinciri-agi": "detail-33",
+    "madde-donguleri": "detail-34",
+    "guncel-cevre-sorunlari": "detail-35",
+    "dogal-kaynaklar-surdurulebilirlik": "detail-36",
+    "doga-insan-cografya": "detail-37",
+    "cografyanin-tarihi-gelisimi": "detail-38",
+    "yerel-saat": "detail-39",
+    "atmosfer-katmanlari": "detail-40",
+    "cografya-sicaklik": "detail-41",
+    "basinc-ruzgarlar": "detail-42",
+    "nem-yagis": "detail-43",
+    "ek-fiil": "detail-259",
+    "faiz-problemleri": "detail-215",
+    "karisim-problemleri": "detail-216",
+    "isci-problemleri": "detail-217",
+    "havuz-problemleri": "detail-218",
+    "hiz-problemleri": "detail-219",
+    "su-dalgalari": "detail-129",
+    "ses-deprem-dalgalari": "detail-130",
+    "isik-bilgisi": "detail-131",
+    "golge-yari-golge": "detail-132",
+    "duzlem-ayna": "detail-133",
+    "katilar-viskozite": "detail-162",
+    "buharlasma-buhar-basinci": "detail-163",
+    "kaynama-bagil-nem": "detail-164",
+    "gazlar-hal-degisim-plazma": "detail-165",
+    "doga-ve-kimya": "detail-166",
+    "eseyli-ureme": "detail-24",
+    "kalitima-giris": "detail-25",
+    "mendel-genetigi": "detail-26",
+    "mendelden-sapmalar": "detail-27",
+    "kan-gruplari": "detail-28",
+    "eseyin-belirlenmesi": "detail-29",
+    "soy-agaclari": "detail-30",
+    "edat-baglac-unlem": "detail-256",
+    "fiiller": "detail-257",
+    "fiilde-cati": "detail-258",
+    "milli-mucadele": "detail-245",
+    "ataturkculuk-inkilap": "detail-246",
+    "iki-savas-arasi-turkiye-dunya": "detail-247",
+    "kuresel-savaslar-arasinda-turkiye-dunya": "detail-248",
+    "ikinci-dunya-savasi-sonrasi": "detail-249",
+    "sayi-problemleri": "detail-210",
+    "kesir-problemleri": "detail-211",
+    "yas-problemleri": "detail-212",
+    "yuzde-problemleri": "detail-213",
+    "kar-zarar-problemleri": "detail-214",
+    "basinc": "detail-125",
+    "sivilarin-kaldirma-kuvveti": "detail-126",
+    "dalgalara-giris": "detail-127",
+    "yay-dalgalari": "detail-128",
+    "kovalent-adlandirma-metalik-bag": "detail-157",
+    "zayif-etkilesimler": "detail-158",
+    "hidrojen-bagi": "detail-159",
+    "fiziksel-kimyasal-degisimler": "detail-160",
+    "maddenin-halleri": "detail-161",
+    "virusler": "detail-14",
+    "bakteri-ve-arke": "detail-15",
+    "protista": "detail-16",
+    "bitkiler": "detail-17",
+    "mantarlar": "detail-18",
+    "omurgasizlar": "detail-19",
+    "omurgalilar": "detail-20",
+    "mitoz": "detail-21",
+    "eseysiz-ureme": "detail-22",
+    "mayoz": "detail-23",
+    "zarflar": "detail-255",
+    "degisim-caginda-avrupa-osmanli": "detail-240",
+    "devrimler-caginda-devlet-toplum": "detail-241",
+    "denge-stratejisi": "detail-242",
+    "degisen-sosyoekonomik-hayat": "detail-243",
+    "yirminci-yuzyil-baslarinda-osmanli": "detail-244",
+    "mutlak-deger": "detail-205",
+    "uslu-sayilar": "detail-206",
+    "bilimsel-gosterim-katsayi": "detail-207",
+    "koklu-sayilar": "detail-208",
+    "oran-oranti": "detail-209",
+    "genlesme": "detail-120",
+    "hal-degisimi": "detail-121",
+    "durgun-elektrik": "detail-122",
+    "elektrik-akimi": "detail-123",
+    "miknatislar-ve-manyetik-alan": "detail-124",
+    "kovalent-bag-polar-apolar": "detail-155",
+    "molekullerde-polarlik-apolarlik": "detail-156",
+    "hucre-zarinda-madde-alisverisleri": "detail-12",
+    "canlilarin-siniflandirilmasi": "detail-13",
+    "isimler-isim-tamlamasi": "detail-252",
+    "sifatlar": "detail-253",
+    "zamirler": "detail-254",
+    "sultan-osmanli-merkez-teskilati": "detail-237",
+    "klasik-cag-osmanli-toplum-duzeni": "detail-238",
+    "degisen-dunya-dengeleri-osmanli": "detail-239",
+    "osmanli-kurulus-siyaseti": "detail-233",
+    "osmanli-askeri-teskilat": "detail-234",
+    "osmanli-medeniyeti": "detail-235",
+    "canli-ozellikleri": "detail-1",
+    "bilimsel-yontem": "detail-2",
+    "mineraller": "detail-3",
+    "su-asit-baz-tuz": "detail-4",
+    "karbohidratlar": "detail-5",
+    "lipitler": "detail-6",
+    "proteinler": "detail-7",
+    "enzimler": "detail-8",
+    "vitaminler": "detail-9",
+    "nukleik-asitler": "detail-10",
+    "sayi-basamaklari": "detail-199",
+    "tarih-zaman": "detail-226",
+    "insanligin-ilk-donemleri": "detail-227",
+    "ortacag-dunya": "detail-228",
+    "ilk-turk-dunyasi": "detail-229",
+    "fizik-bilimine-giris": "detail-114",
+    "madde-ozkutle": "detail-115",
+    "dogrusal-hareket": "detail-116",
+    "islam-medeniyetinin-dogusu": "detail-230",
+    "turklerin-islamiyeti-kabulu": "detail-231",
+    "atomun-temel-tanecikleri": "detail-144",
+    "izotop-izoton-izobar": "detail-145",
+    "bolme-bolunebilme": "detail-200",
+    "ebob-ekok": "detail-201",
+    "ses-bilgisi": "detail-250",
+    "sozcukte-yapi": "detail-251",
+    "enerji-ve-hareket": "detail-118",
+    "selcuklu-yerlesme-devletlesme": "detail-232",
+    "elementlerin-siniflandirilmasi": "detail-148",
+    "atom-capi-karsilastirma": "detail-149",
+    "iyonlasma-enerjisi": "detail-150",
+    "elektron-ilgisi-elektronegatiflik": "detail-151",
+    "dunya-gucu-osmanli": "detail-236",
+    "kimyasal-turler-lewis": "detail-152",
+    "isi-ve-sicaklik": "detail-119",
+    "iyonik-bag-ve-guclu-etkilesimler": "detail-153",
+    "iyonik-bilesik-adlandirma": "detail-154",
+    "rasyonel-sayilar": "detail-202",
+    "carpanlara-ayirma": "detail-221",
+    "atp-metabolizma": "detail-283",
+    "newton": "detail-117",
+    "mol": "detail-171",
+    "paragraf": "detail-270",
+    "hucre-organelleri": "detail-11",
+    "periyodik-sistem": "detail-146",
+    "turev-teget": "detail-476",
+    "elektrik-alan": "detail-375",
+    "kimyasal-denge": "detail-426",
+    "dna-eslenmesi": "detail-330",
+    "simyadan-kimyaya": "detail-139",
+    "kimya-disiplinleri": "detail-140",
+    "sembolik-dil": "detail-141",
+    "kimya-guvenlik": "detail-142",
+    "atom-modelleri": "detail-143",
+    "temel-kavramlar": "detail-194",
+    "tek-cift-isaret": "detail-195",
+    "ardisik-sayilar": "detail-196",
+    "asal-sayilar": "detail-197",
+    "faktoriyel": "detail-198",
+    "birinci-dereceden-denklemler": "detail-203",
+    "basit-esitsizlikler": "detail-204",
+    "katman-elektron-dizilimi": "detail-147",
+    "carpanlara-ayirma-ileri": "detail-221"
+  },
+  "studyTopics": [
+    {
+      "id": "detail-139",
+      "subjectId": "tyt-kimya",
+      "title": "Simyadan kimyaya",
+      "order": 1
+    },
+    {
+      "id": "detail-140",
+      "subjectId": "tyt-kimya",
+      "title": "Kimya disiplinleri",
+      "order": 2
+    },
+    {
+      "id": "detail-141",
+      "subjectId": "tyt-kimya",
+      "title": "Kimyanın sembolik dili",
+      "order": 3
+    },
+    {
+      "id": "detail-142",
+      "subjectId": "tyt-kimya",
+      "title": "Kimyada iş sağlığı ve güvenliği",
+      "order": 4
+    },
+    {
+      "id": "detail-143",
+      "subjectId": "tyt-kimya",
+      "title": "Atom modelleri",
+      "order": 5
+    },
+    {
+      "id": "detail-194",
+      "subjectId": "tyt-matematik",
+      "title": "Temel Kavramlar",
+      "order": 6
+    },
+    {
+      "id": "detail-195",
+      "subjectId": "tyt-matematik",
+      "title": "Tek Çift Pozitif Negatif Sayılar",
+      "order": 7
+    },
+    {
+      "id": "detail-196",
+      "subjectId": "tyt-matematik",
+      "title": "Ardışık Sayılar",
+      "order": 8
+    },
+    {
+      "id": "detail-197",
+      "subjectId": "tyt-matematik",
+      "title": "Asal Sayılar",
+      "order": 9
+    },
+    {
+      "id": "detail-198",
+      "subjectId": "tyt-matematik",
+      "title": "Faktöriyel Kavramı",
+      "order": 10
+    },
+    {
+      "id": "detail-1",
+      "subjectId": "tyt-biyoloji",
+      "title": "Canlıların Karakteristik Özellikleri",
+      "order": 11
+    },
+    {
+      "id": "detail-2",
+      "subjectId": "tyt-biyoloji",
+      "title": "Bilimsel Yöntem ve Çalışma Basamakları",
+      "order": 12
+    },
+    {
+      "id": "detail-3",
+      "subjectId": "tyt-biyoloji",
+      "title": "Mineraller",
+      "order": 13
+    },
+    {
+      "id": "detail-199",
+      "subjectId": "tyt-matematik",
+      "title": "Sayı Basamakları",
+      "order": 14
+    },
+    {
+      "id": "detail-226",
+      "subjectId": "tyt-tarih",
+      "title": "Tarih ve Zaman",
+      "order": 15
+    },
+    {
+      "id": "detail-227",
+      "subjectId": "tyt-tarih",
+      "title": "İnsanlığın İlk Dönemleri",
+      "order": 16
+    },
+    {
+      "id": "detail-114",
+      "subjectId": "tyt-fizik",
+      "title": "Fizik Bilimine Giriş",
+      "order": 17
+    },
+    {
+      "id": "detail-115",
+      "subjectId": "tyt-fizik",
+      "title": "Madde bilgisi",
+      "order": 18
+    },
+    {
+      "id": "detail-116",
+      "subjectId": "tyt-fizik",
+      "title": "Doğrusal hareket",
+      "order": 19
+    },
+    {
+      "id": "detail-228",
+      "subjectId": "tyt-tarih",
+      "title": "Orta Çağda Dünya",
+      "order": 20
+    },
+    {
+      "id": "detail-229",
+      "subjectId": "tyt-tarih",
+      "title": "İlk ve Orta Çağlarda Türk Dünyası",
+      "order": 21
+    },
+    {
+      "id": "detail-4",
+      "subjectId": "tyt-biyoloji",
+      "title": "Su, Asit-Baz ve Tuz",
+      "order": 22
+    },
+    {
+      "id": "detail-5",
+      "subjectId": "tyt-biyoloji",
+      "title": "Karbohidratlar",
+      "order": 23
+    },
+    {
+      "id": "detail-6",
+      "subjectId": "tyt-biyoloji",
+      "title": "Lipitler - Yağlar",
+      "order": 24
+    },
+    {
+      "id": "detail-230",
+      "subjectId": "tyt-tarih",
+      "title": "İslam Medeniyetinin Doğuşu",
+      "order": 25
+    },
+    {
+      "id": "detail-231",
+      "subjectId": "tyt-tarih",
+      "title": "Türklerin İslamiyeti Kabulü",
+      "order": 26
+    },
+    {
+      "id": "detail-7",
+      "subjectId": "tyt-biyoloji",
+      "title": "Proteinler",
+      "order": 27
+    },
+    {
+      "id": "detail-144",
+      "subjectId": "tyt-kimya",
+      "title": "Atomun temel tanecikleri",
+      "order": 28
+    },
+    {
+      "id": "detail-145",
+      "subjectId": "tyt-kimya",
+      "title": "Atom türleri izotop izoton izobar izoelektronik",
+      "order": 29
+    },
+    {
+      "id": "detail-146",
+      "subjectId": "tyt-kimya",
+      "title": "Periyodik cetvel genel özellikler",
+      "order": 30
+    },
+    {
+      "id": "detail-117",
+      "subjectId": "tyt-fizik",
+      "title": "Newton hareket yasaları",
+      "order": 31
+    },
+    {
+      "id": "detail-118",
+      "subjectId": "tyt-fizik",
+      "title": "Enerji ve hareket",
+      "order": 32
+    },
+    {
+      "id": "detail-200",
+      "subjectId": "tyt-matematik",
+      "title": "Bölme Bölünebilme Kuralları",
+      "order": 33
+    },
+    {
+      "id": "detail-201",
+      "subjectId": "tyt-matematik",
+      "title": "Ebob Ekok",
+      "order": 34
+    },
+    {
+      "id": "detail-202",
+      "subjectId": "tyt-matematik",
+      "title": "Rasyonel Sayılar",
+      "order": 35
+    },
+    {
+      "id": "detail-250",
+      "subjectId": "tyt-turkce",
+      "title": "Ses bilgisi",
+      "order": 36
+    },
+    {
+      "id": "detail-251",
+      "subjectId": "tyt-turkce",
+      "title": "Sözcükte yapı",
+      "order": 37
+    },
+    {
+      "id": "detail-8",
+      "subjectId": "tyt-biyoloji",
+      "title": "Enzimler",
+      "order": 38
+    },
+    {
+      "id": "detail-9",
+      "subjectId": "tyt-biyoloji",
+      "title": "Vitaminler",
+      "order": 39
+    },
+    {
+      "id": "detail-203",
+      "subjectId": "tyt-matematik",
+      "title": "Birinci Dereceden Denklemler",
+      "order": 40
+    },
+    {
+      "id": "detail-204",
+      "subjectId": "tyt-matematik",
+      "title": "Basit Eşitsizlikler",
+      "order": 41
+    },
+    {
+      "id": "detail-232",
+      "subjectId": "tyt-tarih",
+      "title": "Yerleşme ve Devletleşme Sürecinde Selçuklu",
+      "order": 42
+    },
+    {
+      "id": "detail-147",
+      "subjectId": "tyt-kimya",
+      "title": "Katman elektron dizilimi",
+      "order": 43
+    },
+    {
+      "id": "detail-233",
+      "subjectId": "tyt-tarih",
+      "title": "Beylikten Devlete Osmanlı Siyaseti",
+      "order": 44
+    },
+    {
+      "id": "detail-234",
+      "subjectId": "tyt-tarih",
+      "title": "Devletleşme Sürecinde Savaşçılar ve Askerler",
+      "order": 45
+    },
+    {
+      "id": "detail-148",
+      "subjectId": "tyt-kimya",
+      "title": "Elementlerin sınıflandırılması",
+      "order": 46
+    },
+    {
+      "id": "detail-149",
+      "subjectId": "tyt-kimya",
+      "title": "Atom çapı karşılaştırma",
+      "order": 47
+    },
+    {
+      "id": "detail-150",
+      "subjectId": "tyt-kimya",
+      "title": "İyonlaşma enerjisi",
+      "order": 48
+    },
+    {
+      "id": "detail-151",
+      "subjectId": "tyt-kimya",
+      "title": "Elektron ilgisi / elektronegatiflik / metalik ametalik özellik",
+      "order": 49
+    },
+    {
+      "id": "detail-235",
+      "subjectId": "tyt-tarih",
+      "title": "Beylikten Devlete Osmanlı Medeniyeti",
+      "order": 50
+    },
+    {
+      "id": "detail-236",
+      "subjectId": "tyt-tarih",
+      "title": "Dünya Gücü Osmanlı",
+      "order": 51
+    },
+    {
+      "id": "detail-152",
+      "subjectId": "tyt-kimya",
+      "title": "Kimyasal türler / lewis yapısı",
+      "order": 52
+    },
+    {
+      "id": "detail-119",
+      "subjectId": "tyt-fizik",
+      "title": "Isı ve sıcaklık",
+      "order": 53
+    },
+    {
+      "id": "detail-10",
+      "subjectId": "tyt-biyoloji",
+      "title": "Nükleik Asitler DNA ve RNA",
+      "order": 54
+    },
+    {
+      "id": "detail-283",
+      "subjectId": "ayt-biyoloji",
+      "title": "ATP ve Metabolizma",
+      "order": 55
+    },
+    {
+      "id": "detail-11",
+      "subjectId": "tyt-biyoloji",
+      "title": "Hücre Organelleri",
+      "order": 56
+    },
+    {
+      "id": "detail-153",
+      "subjectId": "tyt-kimya",
+      "title": "Güçlü etkileşimler / iyonik bağ",
+      "order": 57
+    },
+    {
+      "id": "detail-154",
+      "subjectId": "tyt-kimya",
+      "title": "İyonik bileşiklerin sistematik adlandırılması",
+      "order": 58
+    },
+    {
+      "id": "detail-155",
+      "subjectId": "tyt-kimya",
+      "title": "Kovalent bağ / polar apolar bağ",
+      "order": 59
+    },
+    {
+      "id": "detail-156",
+      "subjectId": "tyt-kimya",
+      "title": "Moleküllerde polarlık apolarlık",
+      "order": 60
+    },
+    {
+      "id": "detail-120",
+      "subjectId": "tyt-fizik",
+      "title": "Genleşme",
+      "order": 61
+    },
+    {
+      "id": "detail-121",
+      "subjectId": "tyt-fizik",
+      "title": "Isı ve Sıcaklık: Hâl Değişimi",
+      "order": 62
+    },
+    {
+      "id": "detail-205",
+      "subjectId": "tyt-matematik",
+      "title": "Mutlak Değer",
+      "order": 63
+    },
+    {
+      "id": "detail-206",
+      "subjectId": "tyt-matematik",
+      "title": "Üslü Sayılar",
+      "order": 64
+    },
+    {
+      "id": "detail-12",
+      "subjectId": "tyt-biyoloji",
+      "title": "Hücre Zarında Madde Alışverişleri",
+      "order": 65
+    },
+    {
+      "id": "detail-13",
+      "subjectId": "tyt-biyoloji",
+      "title": "Canlıların Sınıflandırılması",
+      "order": 66
+    },
+    {
+      "id": "detail-122",
+      "subjectId": "tyt-fizik",
+      "title": "Durgun elektrik",
+      "order": 67
+    },
+    {
+      "id": "detail-123",
+      "subjectId": "tyt-fizik",
+      "title": "Elektrik akımı",
+      "order": 68
+    },
+    {
+      "id": "detail-252",
+      "subjectId": "tyt-turkce",
+      "title": "İsimler / isim tamlaması",
+      "order": 69
+    },
+    {
+      "id": "detail-253",
+      "subjectId": "tyt-turkce",
+      "title": "Sıfatlar",
+      "order": 70
+    },
+    {
+      "id": "detail-254",
+      "subjectId": "tyt-turkce",
+      "title": "Zamirler",
+      "order": 71
+    },
+    {
+      "id": "detail-207",
+      "subjectId": "tyt-matematik",
+      "title": "Bilimsel Gösterim ve Katsayı",
+      "order": 72
+    },
+    {
+      "id": "detail-124",
+      "subjectId": "tyt-fizik",
+      "title": "Mıknatıslar ve manyetik alan",
+      "order": 73
+    },
+    {
+      "id": "detail-237",
+      "subjectId": "tyt-tarih",
+      "title": "Sultan ve Osmanlı Merkez Teşkilatı",
+      "order": 74
+    },
+    {
+      "id": "detail-238",
+      "subjectId": "tyt-tarih",
+      "title": "Klasik Çağda Osmanlı Toplum Düzeni",
+      "order": 75
+    },
+    {
+      "id": "detail-239",
+      "subjectId": "tyt-tarih",
+      "title": "Değişen Dünya Dengeleri Osmanlı",
+      "order": 76
+    },
+    {
+      "id": "detail-208",
+      "subjectId": "tyt-matematik",
+      "title": "Köklü Sayılar",
+      "order": 77
+    },
+    {
+      "id": "detail-209",
+      "subjectId": "tyt-matematik",
+      "title": "Oran Orantı",
+      "order": 78
+    },
+    {
+      "id": "detail-210",
+      "subjectId": "tyt-matematik",
+      "title": "Sayı Problemleri",
+      "order": 79
+    },
+    {
+      "id": "detail-14",
+      "subjectId": "tyt-biyoloji",
+      "title": "Virüsler",
+      "order": 80
+    },
+    {
+      "id": "detail-15",
+      "subjectId": "tyt-biyoloji",
+      "title": "Bakteri ve Arke",
+      "order": 81
+    },
+    {
+      "id": "detail-16",
+      "subjectId": "tyt-biyoloji",
+      "title": "Protista",
+      "order": 82
+    },
+    {
+      "id": "detail-17",
+      "subjectId": "tyt-biyoloji",
+      "title": "Bitki",
+      "order": 83
+    },
+    {
+      "id": "detail-18",
+      "subjectId": "tyt-biyoloji",
+      "title": "Mantar",
+      "order": 84
+    },
+    {
+      "id": "detail-19",
+      "subjectId": "tyt-biyoloji",
+      "title": "Omurgasızlar",
+      "order": 85
+    },
+    {
+      "id": "detail-20",
+      "subjectId": "tyt-biyoloji",
+      "title": "Omurgalılar",
+      "order": 86
+    },
+    {
+      "id": "detail-211",
+      "subjectId": "tyt-matematik",
+      "title": "Kesir Problemleri",
+      "order": 87
+    },
+    {
+      "id": "detail-240",
+      "subjectId": "tyt-tarih",
+      "title": "Değişim Çağında Avrupa ve Osmanlı",
+      "order": 88
+    },
+    {
+      "id": "detail-241",
+      "subjectId": "tyt-tarih",
+      "title": "Devrimler Çağında Değişen Devlet Toplum",
+      "order": 89
+    },
+    {
+      "id": "detail-242",
+      "subjectId": "tyt-tarih",
+      "title": "Uluslararası İlişkilerde Denge Stratejisi",
+      "order": 90
+    },
+    {
+      "id": "detail-243",
+      "subjectId": "tyt-tarih",
+      "title": "XIX ve XX. Yüzyılda Değişen Sosyoekonomik Hayat",
+      "order": 91
+    },
+    {
+      "id": "detail-157",
+      "subjectId": "tyt-kimya",
+      "title": "Kovalent bileşiklerde isimlendirme / metalik bağ",
+      "order": 92
+    },
+    {
+      "id": "detail-255",
+      "subjectId": "tyt-turkce",
+      "title": "Zarflar",
+      "order": 93
+    },
+    {
+      "id": "detail-21",
+      "subjectId": "tyt-biyoloji",
+      "title": "Hücre Bölünmeleri - Mitoz",
+      "order": 94
+    },
+    {
+      "id": "detail-22",
+      "subjectId": "tyt-biyoloji",
+      "title": "Eşeysiz Üreme",
+      "order": 95
+    },
+    {
+      "id": "detail-23",
+      "subjectId": "tyt-biyoloji",
+      "title": "Hücre Bölünmeleri - Mayoz",
+      "order": 96
+    },
+    {
+      "id": "detail-158",
+      "subjectId": "tyt-kimya",
+      "title": "Zayıf etkileşimler",
+      "order": 97
+    },
+    {
+      "id": "detail-159",
+      "subjectId": "tyt-kimya",
+      "title": "Hidrojen bağı",
+      "order": 98
+    },
+    {
+      "id": "detail-244",
+      "subjectId": "tyt-tarih",
+      "title": "20.Yüzyıl Başlarında Osmanlı ve Dünya",
+      "order": 99
+    },
+    {
+      "id": "detail-125",
+      "subjectId": "tyt-fizik",
+      "title": "Basınç",
+      "order": 100
+    },
+    {
+      "id": "detail-126",
+      "subjectId": "tyt-fizik",
+      "title": "Sıvılarda kaldırma kuvveti",
+      "order": 101
+    },
+    {
+      "id": "detail-127",
+      "subjectId": "tyt-fizik",
+      "title": "Dalgalara giriş",
+      "order": 102
+    },
+    {
+      "id": "detail-128",
+      "subjectId": "tyt-fizik",
+      "title": "Yay dalgaları",
+      "order": 103
+    },
+    {
+      "id": "detail-160",
+      "subjectId": "tyt-kimya",
+      "title": "Fiziksel ve Kimyasal Değişimler",
+      "order": 104
+    },
+    {
+      "id": "detail-161",
+      "subjectId": "tyt-kimya",
+      "title": "Maddenin halleri",
+      "order": 105
+    },
+    {
+      "id": "detail-212",
+      "subjectId": "tyt-matematik",
+      "title": "Yaş Problemleri",
+      "order": 106
+    },
+    {
+      "id": "detail-213",
+      "subjectId": "tyt-matematik",
+      "title": "Yüzde Problemleri",
+      "order": 107
+    },
+    {
+      "id": "detail-214",
+      "subjectId": "tyt-matematik",
+      "title": "Kar Zarar Problemleri",
+      "order": 108
+    },
+    {
+      "id": "detail-215",
+      "subjectId": "tyt-matematik",
+      "title": "Faiz Problemleri",
+      "order": 109
+    },
+    {
+      "id": "detail-216",
+      "subjectId": "tyt-matematik",
+      "title": "Karışım Problemleri",
+      "order": 110
+    },
+    {
+      "id": "detail-245",
+      "subjectId": "tyt-tarih",
+      "title": "Milli Mücadele Dönemi",
+      "order": 111
+    },
+    {
+      "id": "detail-162",
+      "subjectId": "tyt-kimya",
+      "title": "Katılar / viskozite",
+      "order": 112
+    },
+    {
+      "id": "detail-163",
+      "subjectId": "tyt-kimya",
+      "title": "Buharlaşma / buhar basıncı",
+      "order": 113
+    },
+    {
+      "id": "detail-164",
+      "subjectId": "tyt-kimya",
+      "title": "Kaynama , bağıl nem , sıvılar karma test",
+      "order": 114
+    },
+    {
+      "id": "detail-246",
+      "subjectId": "tyt-tarih",
+      "title": "Atatürkçülük ve Türk İnkılabı",
+      "order": 115
+    },
+    {
+      "id": "detail-165",
+      "subjectId": "tyt-kimya",
+      "title": "Gazlar , hal değişim grafiği , plazma",
+      "order": 116
+    },
+    {
+      "id": "detail-256",
+      "subjectId": "tyt-turkce",
+      "title": "Edat / bağlaç / ünlem",
+      "order": 117
+    },
+    {
+      "id": "detail-24",
+      "subjectId": "tyt-biyoloji",
+      "title": "Eşeyli Üreme",
+      "order": 118
+    },
+    {
+      "id": "detail-25",
+      "subjectId": "tyt-biyoloji",
+      "title": "Kalıtıma Giriş",
+      "order": 119
+    },
+    {
+      "id": "detail-26",
+      "subjectId": "tyt-biyoloji",
+      "title": "Mendel Genetiği",
+      "order": 120
+    },
+    {
+      "id": "detail-217",
+      "subjectId": "tyt-matematik",
+      "title": "İşçi Problemleri",
+      "order": 121
+    },
+    {
+      "id": "detail-218",
+      "subjectId": "tyt-matematik",
+      "title": "İşçi - Havuz Problemleri",
+      "order": 122
+    },
+    {
+      "id": "detail-219",
+      "subjectId": "tyt-matematik",
+      "title": "Hız Problemleri",
+      "order": 123
+    },
+    {
+      "id": "detail-257",
+      "subjectId": "tyt-turkce",
+      "title": "Fiiller",
+      "order": 124
+    },
+    {
+      "id": "detail-166",
+      "subjectId": "tyt-kimya",
+      "title": "Doğa ve kimya",
+      "order": 125
+    },
+    {
+      "id": "detail-258",
+      "subjectId": "tyt-turkce",
+      "title": "Fiilde çatı",
+      "order": 126
+    },
+    {
+      "id": "detail-129",
+      "subjectId": "tyt-fizik",
+      "title": "Su dalgaları",
+      "order": 127
+    },
+    {
+      "id": "detail-130",
+      "subjectId": "tyt-fizik",
+      "title": "Ses ve deprem dalgaları",
+      "order": 128
+    },
+    {
+      "id": "detail-131",
+      "subjectId": "tyt-fizik",
+      "title": "Işık bilgisi",
+      "order": 129
+    },
+    {
+      "id": "detail-132",
+      "subjectId": "tyt-fizik",
+      "title": "Gölge ve yarı gölge",
+      "order": 130
+    },
+    {
+      "id": "detail-133",
+      "subjectId": "tyt-fizik",
+      "title": "Düzlem ayna",
+      "order": 131
+    },
+    {
+      "id": "detail-247",
+      "subjectId": "tyt-tarih",
+      "title": "İki Savaş Arasındaki Dönemde Türkiye ve Dünya",
+      "order": 132
+    },
+    {
+      "id": "detail-248",
+      "subjectId": "tyt-tarih",
+      "title": "İki Küresel Savaş Arasında Türkiye ve Dünya",
+      "order": 133
+    },
+    {
+      "id": "detail-27",
+      "subjectId": "tyt-biyoloji",
+      "title": "Mendel'den Sapmalar",
+      "order": 134
+    },
+    {
+      "id": "detail-28",
+      "subjectId": "tyt-biyoloji",
+      "title": "Kan Grupları",
+      "order": 135
+    },
+    {
+      "id": "detail-29",
+      "subjectId": "tyt-biyoloji",
+      "title": "Eşeyin Belirlenmesi X ve Y Kromozomları",
+      "order": 136
+    },
+    {
+      "id": "detail-30",
+      "subjectId": "tyt-biyoloji",
+      "title": "Soy Ağaçları",
+      "order": 137
+    },
+    {
+      "id": "detail-249",
+      "subjectId": "tyt-tarih",
+      "title": "II. Dünya Savaşı Sürecinde ve Sonrasında Türkiye ve Dünya",
+      "order": 138
+    },
+    {
+      "id": "detail-167",
+      "subjectId": "tyt-kimya",
+      "title": "Su, Hayat ve Çevre Kimyası",
+      "order": 139
+    },
+    {
+      "id": "detail-168",
+      "subjectId": "tyt-kimya",
+      "title": "Kütle korunumu ve sabit oranlar kanunu",
+      "order": 140
+    },
+    {
+      "id": "detail-169",
+      "subjectId": "tyt-kimya",
+      "title": "Sabit oranlar kanunu sınırlayıcı ( aşırı ) madde problemleri",
+      "order": 141
+    },
+    {
+      "id": "detail-170",
+      "subjectId": "tyt-kimya",
+      "title": "Katlı oranlar kanunu",
+      "order": 142
+    },
+    {
+      "id": "detail-171",
+      "subjectId": "tyt-kimya",
+      "title": "Mol kavramı mol tanecik ilişkisi",
+      "order": 143
+    },
+    {
+      "id": "detail-172",
+      "subjectId": "tyt-kimya",
+      "title": "Mol tanecik ilişkisi",
+      "order": 144
+    },
+    {
+      "id": "detail-37",
+      "subjectId": "tyt-cografya",
+      "title": "Doğa ve insan - Coğrafyanın Bölümleri",
+      "order": 145
+    },
+    {
+      "id": "detail-38",
+      "subjectId": "tyt-cografya",
+      "title": "Coğrafyanın Tarihi Gelişimi",
+      "order": 146
+    },
+    {
+      "id": "detail-39",
+      "subjectId": "tyt-cografya",
+      "title": "Yerel saat ve hesaplama",
+      "order": 147
+    },
+    {
+      "id": "detail-220",
+      "subjectId": "tyt-matematik",
+      "title": "Grafik Problemleri",
+      "order": 148
+    },
+    {
+      "id": "detail-221",
+      "subjectId": "tyt-matematik",
+      "title": "Çarpanlara Ayırma",
+      "order": 149
+    },
+    {
+      "id": "detail-222",
+      "subjectId": "tyt-matematik",
+      "title": "Kümeler",
+      "order": 150
+    },
+    {
+      "id": "detail-173",
+      "subjectId": "tyt-kimya",
+      "title": "Mol kütle ilişkisi",
+      "order": 151
+    },
+    {
+      "id": "detail-31",
+      "subjectId": "tyt-biyoloji",
+      "title": "Ekoloji Giriş",
+      "order": 152
+    },
+    {
+      "id": "detail-32",
+      "subjectId": "tyt-biyoloji",
+      "title": "Besin Piramidi",
+      "order": 153
+    },
+    {
+      "id": "detail-33",
+      "subjectId": "tyt-biyoloji",
+      "title": "Besin Zinciri ve Ağı",
+      "order": 154
+    },
+    {
+      "id": "detail-34",
+      "subjectId": "tyt-biyoloji",
+      "title": "Madde Döngüleri",
+      "order": 155
+    },
+    {
+      "id": "detail-35",
+      "subjectId": "tyt-biyoloji",
+      "title": "Güncel Çevre Sorunları",
+      "order": 156
+    },
+    {
+      "id": "detail-36",
+      "subjectId": "tyt-biyoloji",
+      "title": "Doğal kaynaklar ve sürdürebilirlik",
+      "order": 157
+    },
+    {
+      "id": "detail-40",
+      "subjectId": "tyt-cografya",
+      "title": "Atmosferin Katmanları ve Özellikleri",
+      "order": 158
+    },
+    {
+      "id": "detail-41",
+      "subjectId": "tyt-cografya",
+      "title": "Sıcaklık",
+      "order": 159
+    },
+    {
+      "id": "detail-134",
+      "subjectId": "tyt-fizik",
+      "title": "Küresel aynalar",
+      "order": 160
+    },
+    {
+      "id": "detail-42",
+      "subjectId": "tyt-cografya",
+      "title": "Basınç ve Rüzgarlar",
+      "order": 161
+    },
+    {
+      "id": "detail-43",
+      "subjectId": "tyt-cografya",
+      "title": "Nem ve Yağış",
+      "order": 162
+    },
+    {
+      "id": "detail-223",
+      "subjectId": "tyt-matematik",
+      "title": "Kümeler: Kartezyen Çarpım",
+      "order": 163
+    },
+    {
+      "id": "detail-224",
+      "subjectId": "tyt-matematik",
+      "title": "Mantık Önerme",
+      "order": 164
+    },
+    {
+      "id": "detail-135",
+      "subjectId": "tyt-fizik",
+      "title": "Işığın kırılması",
+      "order": 165
+    },
+    {
+      "id": "detail-136",
+      "subjectId": "tyt-fizik",
+      "title": "Mercekler",
+      "order": 166
+    },
+    {
+      "id": "detail-137",
+      "subjectId": "tyt-fizik",
+      "title": "Prizmalar ve renkler",
+      "order": 167
+    },
+    {
+      "id": "detail-259",
+      "subjectId": "tyt-turkce",
+      "title": "Ek fiil",
+      "order": 168
+    },
+    {
+      "id": "detail-260",
+      "subjectId": "tyt-turkce",
+      "title": "Fiilimsiler",
+      "order": 169
+    },
+    {
+      "id": "detail-284",
+      "subjectId": "ayt-biyoloji",
+      "title": "Genetik Çeşitlilik",
+      "order": 170
+    },
+    {
+      "id": "detail-285",
+      "subjectId": "ayt-biyoloji",
+      "title": "Sinir Sistemi Nöron ve Glialar",
+      "order": 171
+    },
+    {
+      "id": "detail-286",
+      "subjectId": "ayt-biyoloji",
+      "title": "Sinir Sistemi Aksiyon Potansiyeli",
+      "order": 172
+    },
+    {
+      "id": "detail-287",
+      "subjectId": "ayt-biyoloji",
+      "title": "Sinir Sistemi Ön Beyin",
+      "order": 173
+    },
+    {
+      "id": "detail-358",
+      "subjectId": "ayt-fizik",
+      "title": "Vektörler",
+      "order": 174
+    },
+    {
+      "id": "detail-174",
+      "subjectId": "tyt-kimya",
+      "title": "Gerçek kütle / AKB / normal koşullarda hacim",
+      "order": 175
+    },
+    {
+      "id": "detail-175",
+      "subjectId": "tyt-kimya",
+      "title": "Kimyasal tepkimeler ve denklemler",
+      "order": 176
+    },
+    {
+      "id": "detail-176",
+      "subjectId": "tyt-kimya",
+      "title": "Kimyasal tepkime türleri",
+      "order": 177
+    },
+    {
+      "id": "detail-177",
+      "subjectId": "tyt-kimya",
+      "title": "Denklemli miktar geçiş hesaplamaları",
+      "order": 178
+    },
+    {
+      "id": "detail-178",
+      "subjectId": "tyt-kimya",
+      "title": "Sınırlayıcı bileşen hesaplamaları",
+      "order": 179
+    },
+    {
+      "id": "detail-179",
+      "subjectId": "tyt-kimya",
+      "title": "Kimyasal hesaplamalar katı kütlesi değişim problemleri",
+      "order": 180
+    },
+    {
+      "id": "detail-44",
+      "subjectId": "tyt-cografya",
+      "title": "Büyük İklim Tipleri",
+      "order": 181
+    },
+    {
+      "id": "detail-45",
+      "subjectId": "tyt-cografya",
+      "title": "Türkiye İklimi",
+      "order": 182
+    },
+    {
+      "id": "detail-46",
+      "subjectId": "tyt-cografya",
+      "title": "Dünyanın Tektonik oluşumu",
+      "order": 183
+    },
+    {
+      "id": "detail-261",
+      "subjectId": "tyt-turkce",
+      "title": "Cümlenin öğeleri",
+      "order": 184
+    },
+    {
+      "id": "detail-262",
+      "subjectId": "tyt-turkce",
+      "title": "Cümle türleri",
+      "order": 185
+    },
+    {
+      "id": "detail-288",
+      "subjectId": "ayt-biyoloji",
+      "title": "Sinir Sistemi Orta ve Arka Beyin",
+      "order": 186
+    },
+    {
+      "id": "detail-289",
+      "subjectId": "ayt-biyoloji",
+      "title": "Sinir Sistemi Omurilik",
+      "order": 187
+    },
+    {
+      "id": "detail-290",
+      "subjectId": "ayt-biyoloji",
+      "title": "Sinir Sistemi ÇSS ve Hastalıklar",
+      "order": 188
+    },
+    {
+      "id": "detail-180",
+      "subjectId": "tyt-kimya",
+      "title": "Yüzde verim hesaplama",
+      "order": 189
+    },
+    {
+      "id": "detail-181",
+      "subjectId": "tyt-kimya",
+      "title": "Safsızlık problemleri",
+      "order": 190
+    },
+    {
+      "id": "detail-359",
+      "subjectId": "ayt-fizik",
+      "title": "Bağıl hareket",
+      "order": 191
+    },
+    {
+      "id": "detail-182",
+      "subjectId": "tyt-kimya",
+      "title": "Atom kütlesi hesaplama problemleri",
+      "order": 192
+    },
+    {
+      "id": "detail-183",
+      "subjectId": "tyt-kimya",
+      "title": "Kimyasal hesaplamalar karışım problemleri",
+      "order": 193
+    },
+    {
+      "id": "detail-184",
+      "subjectId": "tyt-kimya",
+      "title": "Karışımların sınıflandırılması / çözünme süreci",
+      "order": 194
+    },
+    {
+      "id": "detail-185",
+      "subjectId": "tyt-kimya",
+      "title": "Çözeltilerde derişim",
+      "order": 195
+    },
+    {
+      "id": "detail-360",
+      "subjectId": "ayt-fizik",
+      "title": "Nehir problemleri",
+      "order": 196
+    },
+    {
+      "id": "detail-225",
+      "subjectId": "tyt-matematik",
+      "title": "Veri Analizi (İstatistik)",
+      "order": 197
+    },
+    {
+      "id": "detail-47",
+      "subjectId": "tyt-cografya",
+      "title": "İç kuvvetler",
+      "order": 198
+    },
+    {
+      "id": "detail-48",
+      "subjectId": "tyt-cografya",
+      "title": "Kayaçlar",
+      "order": 199
+    },
+    {
+      "id": "detail-49",
+      "subjectId": "tyt-cografya",
+      "title": "Türkiye'de iç kuvvetler",
+      "order": 200
+    },
+    {
+      "id": "detail-50",
+      "subjectId": "tyt-cografya",
+      "title": "Dış kuvvetler Akarsular",
+      "order": 201
+    },
+    {
+      "id": "detail-291",
+      "subjectId": "ayt-biyoloji",
+      "title": "Endokrin Sistem Hipotalamus",
+      "order": 202
+    },
+    {
+      "id": "detail-292",
+      "subjectId": "ayt-biyoloji",
+      "title": "Endokrin Sistem Hipofiz",
+      "order": 203
+    },
+    {
+      "id": "detail-293",
+      "subjectId": "ayt-biyoloji",
+      "title": "Endokrin Sistem Tiroit",
+      "order": 204
+    },
+    {
+      "id": "detail-51",
+      "subjectId": "tyt-cografya",
+      "title": "Dış kuvvetler Karstik şekiller",
+      "order": 205
+    },
+    {
+      "id": "detail-52",
+      "subjectId": "tyt-cografya",
+      "title": "Rüzgar ve buzul",
+      "order": 206
+    },
+    {
+      "id": "detail-53",
+      "subjectId": "tyt-cografya",
+      "title": "Dalga ve Akıntılar - Kıyı tipleri",
+      "order": 207
+    },
+    {
+      "id": "detail-186",
+      "subjectId": "tyt-kimya",
+      "title": "Koligatif özellikler / karışımların ayrılması",
+      "order": 208
+    },
+    {
+      "id": "detail-187",
+      "subjectId": "tyt-kimya",
+      "title": "Asit baz ve tuzlar genel özellikler",
+      "order": 209
+    },
+    {
+      "id": "detail-188",
+      "subjectId": "tyt-kimya",
+      "title": "Asit baz tepkimeleri",
+      "order": 210
+    },
+    {
+      "id": "detail-361",
+      "subjectId": "ayt-fizik",
+      "title": "Newton hareket yasaları",
+      "order": 211
+    },
+    {
+      "id": "detail-362",
+      "subjectId": "ayt-fizik",
+      "title": "Bir boyutta sabit ivmeli hareket",
+      "order": 212
+    },
+    {
+      "id": "detail-294",
+      "subjectId": "ayt-biyoloji",
+      "title": "Endokrin Sistem Paratiroit",
+      "order": 213
+    },
+    {
+      "id": "detail-295",
+      "subjectId": "ayt-biyoloji",
+      "title": "Endokrin Sistem Böbrek Üstü Bezi",
+      "order": 214
+    },
+    {
+      "id": "detail-296",
+      "subjectId": "ayt-biyoloji",
+      "title": "Endokrin Sistem Pankreas",
+      "order": 215
+    },
+    {
+      "id": "detail-297",
+      "subjectId": "ayt-biyoloji",
+      "title": "Endokrin Sistem Epifiz",
+      "order": 216
+    },
+    {
+      "id": "detail-298",
+      "subjectId": "ayt-biyoloji",
+      "title": "Duyu Organları Deri",
+      "order": 217
+    },
+    {
+      "id": "detail-299",
+      "subjectId": "ayt-biyoloji",
+      "title": "Duyu Organları Dil Burun",
+      "order": 218
+    },
+    {
+      "id": "detail-300",
+      "subjectId": "ayt-biyoloji",
+      "title": "Duyu Organları Göz",
+      "order": 219
+    },
+    {
+      "id": "detail-263",
+      "subjectId": "tyt-turkce",
+      "title": "Yazım kuralları",
+      "order": 220
+    },
+    {
+      "id": "detail-264",
+      "subjectId": "tyt-turkce",
+      "title": "Noktalama işaretleri",
+      "order": 221
+    },
+    {
+      "id": "detail-54",
+      "subjectId": "tyt-cografya",
+      "title": "Türkiye'de Dış Kuvvetler",
+      "order": 222
+    },
+    {
+      "id": "detail-55",
+      "subjectId": "tyt-cografya",
+      "title": "Türkiye'nin yer şekilleri",
+      "order": 223
+    },
+    {
+      "id": "detail-56",
+      "subjectId": "tyt-cografya",
+      "title": "Dünya'da sular",
+      "order": 224
+    },
+    {
+      "id": "detail-363",
+      "subjectId": "ayt-fizik",
+      "title": "Bir boyutta sabit ivmeli hareket grafikleri",
+      "order": 225
+    },
+    {
+      "id": "detail-301",
+      "subjectId": "ayt-biyoloji",
+      "title": "Duyu Organları Kulak",
+      "order": 226
+    },
+    {
+      "id": "detail-302",
+      "subjectId": "ayt-biyoloji",
+      "title": "Destek Hareket Sistemi Kemik",
+      "order": 227
+    },
+    {
+      "id": "detail-303",
+      "subjectId": "ayt-biyoloji",
+      "title": "Destek Hareket Sistemi Kıkırdak ve Eklem",
+      "order": 228
+    },
+    {
+      "id": "detail-189",
+      "subjectId": "tyt-kimya",
+      "title": "Asit ve bazların metallerle tepkimeleri",
+      "order": 229
+    },
+    {
+      "id": "detail-190",
+      "subjectId": "tyt-kimya",
+      "title": "Hayatımızdaki asit ve bazlar",
+      "order": 230
+    },
+    {
+      "id": "detail-191",
+      "subjectId": "tyt-kimya",
+      "title": "Sabun, Deterjan ve Temizlik Maddeleri",
+      "order": 231
+    },
+    {
+      "id": "detail-265",
+      "subjectId": "tyt-turkce",
+      "title": "Anlatım bozuklukları",
+      "order": 232
+    },
+    {
+      "id": "detail-364",
+      "subjectId": "ayt-fizik",
+      "title": "Atış hareketleri serbest düşme ve limit hız",
+      "order": 233
+    },
+    {
+      "id": "detail-365",
+      "subjectId": "ayt-fizik",
+      "title": "Düşey atış hareketleri",
+      "order": 234
+    },
+    {
+      "id": "detail-57",
+      "subjectId": "tyt-cografya",
+      "title": "Türkiye'de sular",
+      "order": 235
+    },
+    {
+      "id": "detail-58",
+      "subjectId": "tyt-cografya",
+      "title": "Dünya'da topraklar",
+      "order": 236
+    },
+    {
+      "id": "detail-366",
+      "subjectId": "ayt-fizik",
+      "title": "Yatay atış hareketi",
+      "order": 237
+    },
+    {
+      "id": "detail-367",
+      "subjectId": "ayt-fizik",
+      "title": "Eğik atış hareketi",
+      "order": 238
+    },
+    {
+      "id": "detail-192",
+      "subjectId": "tyt-kimya",
+      "title": "Polimerler, Kozmetik Ürünler ve İlaçlar",
+      "order": 239
+    },
+    {
+      "id": "detail-193",
+      "subjectId": "tyt-kimya",
+      "title": "Polimer - hazır gıda - ilaç - yağ",
+      "order": 240
+    },
+    {
+      "id": "detail-304",
+      "subjectId": "ayt-biyoloji",
+      "title": "Destek Hareket Sistemi Kas Doku",
+      "order": 241
+    },
+    {
+      "id": "detail-368",
+      "subjectId": "ayt-fizik",
+      "title": "Enerji ve hareket",
+      "order": 242
+    },
+    {
+      "id": "detail-408",
+      "subjectId": "ayt-kimya",
+      "title": "Modern atom teorisi / elektron dizilimi",
+      "order": 243
+    },
+    {
+      "id": "detail-409",
+      "subjectId": "ayt-kimya",
+      "title": "Kuantum sayıları",
+      "order": 244
+    },
+    {
+      "id": "detail-410",
+      "subjectId": "ayt-kimya",
+      "title": "Periyodik sisteme giriş ve atom çapı",
+      "order": 245
+    },
+    {
+      "id": "detail-59",
+      "subjectId": "tyt-cografya",
+      "title": "Türkiye'de topraklar",
+      "order": 246
+    },
+    {
+      "id": "detail-60",
+      "subjectId": "tyt-cografya",
+      "title": "Dünya'da bitkiler",
+      "order": 247
+    },
+    {
+      "id": "detail-61",
+      "subjectId": "tyt-cografya",
+      "title": "Türkiye'de bitkiler",
+      "order": 248
+    },
+    {
+      "id": "detail-62",
+      "subjectId": "tyt-cografya",
+      "title": "Dünya'da Yerleşmeler",
+      "order": 249
+    },
+    {
+      "id": "detail-63",
+      "subjectId": "tyt-cografya",
+      "title": "Türkiye'de Yerleşmeler",
+      "order": 250
+    },
+    {
+      "id": "detail-64",
+      "subjectId": "tyt-cografya",
+      "title": "Nüfusun önemi ve özellikleri",
+      "order": 251
+    },
+    {
+      "id": "detail-411",
+      "subjectId": "ayt-kimya",
+      "title": "İyonlaşma enerjisi / elektron ilgisi / elektronegatiflik",
+      "order": 252
+    },
+    {
+      "id": "detail-412",
+      "subjectId": "ayt-kimya",
+      "title": "Metalik ametalik özellik, elementleri tanıyalım,yükseltgenme basamağı",
+      "order": 253
+    },
+    {
+      "id": "detail-413",
+      "subjectId": "ayt-kimya",
+      "title": "Gazların özellikleri ve gaz yasaları",
+      "order": 254
+    },
+    {
+      "id": "detail-414",
+      "subjectId": "ayt-kimya",
+      "title": "Gaz yasaları",
+      "order": 255
+    },
+    {
+      "id": "detail-305",
+      "subjectId": "ayt-biyoloji",
+      "title": "Sindirim Sistemi Ağız Yutak Yemek Borusu",
+      "order": 256
+    },
+    {
+      "id": "detail-306",
+      "subjectId": "ayt-biyoloji",
+      "title": "Sindirim Sistemi Mide",
+      "order": 257
+    },
+    {
+      "id": "detail-266",
+      "subjectId": "tyt-turkce",
+      "title": "Sözcükte anlam",
+      "order": 258
+    },
+    {
+      "id": "detail-307",
+      "subjectId": "ayt-biyoloji",
+      "title": "Sindirim Sistemi Bağırsaklar",
+      "order": 259
+    },
+    {
+      "id": "detail-308",
+      "subjectId": "ayt-biyoloji",
+      "title": "Sindirim Sistemi Enzimler ve Hormonal Düzenleme",
+      "order": 260
+    },
+    {
+      "id": "detail-309",
+      "subjectId": "ayt-biyoloji",
+      "title": "Sindirim Sistemi Karaciğer ve Safra Kesesi",
+      "order": 261
+    },
+    {
+      "id": "detail-267",
+      "subjectId": "tyt-turkce",
+      "title": "Deyimler ve Atasözleri",
+      "order": 262
+    },
+    {
+      "id": "detail-268",
+      "subjectId": "tyt-turkce",
+      "title": "Cümlede anlam",
+      "order": 263
+    },
+    {
+      "id": "detail-369",
+      "subjectId": "ayt-fizik",
+      "title": "İtme ve momentum",
+      "order": 264
+    },
+    {
+      "id": "detail-370",
+      "subjectId": "ayt-fizik",
+      "title": "Kesişen kuvvetlerin dengesi",
+      "order": 265
+    },
+    {
+      "id": "detail-310",
+      "subjectId": "ayt-biyoloji",
+      "title": "Sindirim Sistemi Pankreas",
+      "order": 266
+    },
+    {
+      "id": "detail-311",
+      "subjectId": "ayt-biyoloji",
+      "title": "Dolaşım Sistemi Kalp",
+      "order": 267
+    },
+    {
+      "id": "detail-312",
+      "subjectId": "ayt-biyoloji",
+      "title": "Dolaşım Sistemi Damarlar ve Starling",
+      "order": 268
+    },
+    {
+      "id": "detail-371",
+      "subjectId": "ayt-fizik",
+      "title": "Tork ve denge",
+      "order": 269
+    },
+    {
+      "id": "detail-415",
+      "subjectId": "ayt-kimya",
+      "title": "Kinetik teori, ideal gaz denklemi, yoğunluk",
+      "order": 270
+    },
+    {
+      "id": "detail-416",
+      "subjectId": "ayt-kimya",
+      "title": "Kısmi basınç/gaz karışımları/gazların su üstünde toplanması",
+      "order": 271
+    },
+    {
+      "id": "detail-417",
+      "subjectId": "ayt-kimya",
+      "title": "Gerçek gaz / ideal gaz / faz diyagramı / kritik sıcaklık",
+      "order": 272
+    },
+    {
+      "id": "detail-65",
+      "subjectId": "tyt-cografya",
+      "title": "Dünya'da nüfusun dağılışı",
+      "order": 273
+    },
+    {
+      "id": "detail-66",
+      "subjectId": "tyt-cografya",
+      "title": "Nüfus piramitleri",
+      "order": 274
+    },
+    {
+      "id": "detail-67",
+      "subjectId": "tyt-cografya",
+      "title": "Türkiye'de nüfus",
+      "order": 275
+    },
+    {
+      "id": "detail-372",
+      "subjectId": "ayt-fizik",
+      "title": "Kütle ve ağırlık merkezi",
+      "order": 276
+    },
+    {
+      "id": "detail-418",
+      "subjectId": "ayt-kimya",
+      "title": "Çözücü çözünen etkileşimleri ve çözeltilerde derişim",
+      "order": 277
+    },
+    {
+      "id": "detail-419",
+      "subjectId": "ayt-kimya",
+      "title": "Molarite",
+      "order": 278
+    },
+    {
+      "id": "detail-420",
+      "subjectId": "ayt-kimya",
+      "title": "Molarite / iyon derişimi",
+      "order": 279
+    },
+    {
+      "id": "detail-68",
+      "subjectId": "tyt-cografya",
+      "title": "Dünya ve Türkiye'de göçler",
+      "order": 280
+    },
+    {
+      "id": "detail-69",
+      "subjectId": "tyt-cografya",
+      "title": "Ekonomik faaliyetler",
+      "order": 281
+    },
+    {
+      "id": "detail-138",
+      "subjectId": "tyt-geometri",
+      "title": "Noktanın Analitiği",
+      "order": 282
+    },
+    {
+      "id": "detail-269",
+      "subjectId": "tyt-turkce",
+      "title": "Paragrafa Giriş",
+      "order": 283
+    },
+    {
+      "id": "detail-373",
+      "subjectId": "ayt-fizik",
+      "title": "Basit makineler",
+      "order": 284
+    },
+    {
+      "id": "detail-374",
+      "subjectId": "ayt-fizik",
+      "title": "Elektriksel kuvvet",
+      "order": 285
+    },
+    {
+      "id": "detail-313",
+      "subjectId": "ayt-biyoloji",
+      "title": "Dolaşım Sistemi Kan Doku",
+      "order": 286
+    },
+    {
+      "id": "detail-314",
+      "subjectId": "ayt-biyoloji",
+      "title": "Lenf Sistemi",
+      "order": 287
+    },
+    {
+      "id": "detail-315",
+      "subjectId": "ayt-biyoloji",
+      "title": "Bağışıklık Sistemi",
+      "order": 288
+    },
+    {
+      "id": "detail-270",
+      "subjectId": "tyt-turkce",
+      "title": "Paragrafta ana düşünce",
+      "order": 289
+    },
+    {
+      "id": "detail-271",
+      "subjectId": "tyt-turkce",
+      "title": "Paragrafta yardımcı düşünce",
+      "order": 290
+    },
+    {
+      "id": "detail-404",
+      "subjectId": "ayt-geometri",
+      "title": "Doğrunun Analitiği",
+      "order": 291
+    },
+    {
+      "id": "detail-316",
+      "subjectId": "ayt-biyoloji",
+      "title": "Solunum Sistemi Organlar",
+      "order": 292
+    },
+    {
+      "id": "detail-317",
+      "subjectId": "ayt-biyoloji",
+      "title": "Solunum Sistemi Soluk Alışverişi",
+      "order": 293
+    },
+    {
+      "id": "detail-70",
+      "subjectId": "tyt-cografya",
+      "title": "Bölge ve bölge türleri",
+      "order": 294
+    },
+    {
+      "id": "detail-71",
+      "subjectId": "tyt-cografya",
+      "title": "Ulaşım",
+      "order": 295
+    },
+    {
+      "id": "detail-421",
+      "subjectId": "ayt-kimya",
+      "title": "Molalite /koligatif özellikler",
+      "order": 296
+    },
+    {
+      "id": "detail-422",
+      "subjectId": "ayt-kimya",
+      "title": "Çözünürlük",
+      "order": 297
+    },
+    {
+      "id": "detail-423",
+      "subjectId": "ayt-kimya",
+      "title": "Kimyasal tepkimelerde enerji",
+      "order": 298
+    },
+    {
+      "id": "detail-72",
+      "subjectId": "tyt-cografya",
+      "title": "Çevre ve Toplum",
+      "order": 299
+    },
+    {
+      "id": "detail-73",
+      "subjectId": "tyt-cografya",
+      "title": "Afetler",
+      "order": 300
+    },
+    {
+      "id": "detail-375",
+      "subjectId": "ayt-fizik",
+      "title": "Elektriksel alan",
+      "order": 301
+    },
+    {
+      "id": "detail-376",
+      "subjectId": "ayt-fizik",
+      "title": "Elektriksel potansiyel enerji",
+      "order": 302
+    },
+    {
+      "id": "detail-424",
+      "subjectId": "ayt-kimya",
+      "title": "Entalpi / bağ enerjileri/hess yasası",
+      "order": 303
+    },
+    {
+      "id": "detail-425",
+      "subjectId": "ayt-kimya",
+      "title": "Kimyasal tepkimelerde hız",
+      "order": 304
+    },
+    {
+      "id": "detail-318",
+      "subjectId": "ayt-biyoloji",
+      "title": "Solunum Sistemi Gazların Taşınması",
+      "order": 305
+    },
+    {
+      "id": "detail-319",
+      "subjectId": "ayt-biyoloji",
+      "title": "Üriner Sistem Organlar",
+      "order": 306
+    },
+    {
+      "id": "detail-320",
+      "subjectId": "ayt-biyoloji",
+      "title": "Üriner Sistem Nefronun İşleyişi",
+      "order": 307
+    },
+    {
+      "id": "detail-321",
+      "subjectId": "ayt-biyoloji",
+      "title": "Üreme Sistemi Erkek Üreme Organları",
+      "order": 308
+    },
+    {
+      "id": "detail-426",
+      "subjectId": "ayt-kimya",
+      "title": "Kimyasal tepkimelerde denge",
+      "order": 309
+    },
+    {
+      "id": "detail-427",
+      "subjectId": "ayt-kimya",
+      "title": "Denge hesaplamaları",
+      "order": 310
+    },
+    {
+      "id": "detail-428",
+      "subjectId": "ayt-kimya",
+      "title": "Dengeye etki eden faktörler/derişim etkisi",
+      "order": 311
+    },
+    {
+      "id": "detail-429",
+      "subjectId": "ayt-kimya",
+      "title": "Dengeye etki eden faktörler/sıcaklık etkisi/denge kesri",
+      "order": 312
+    },
+    {
+      "id": "detail-377",
+      "subjectId": "ayt-fizik",
+      "title": "Elektriksel potansiyel",
+      "order": 313
+    },
+    {
+      "id": "detail-378",
+      "subjectId": "ayt-fizik",
+      "title": "Düzgün elektrik alan ve paralel levhalar",
+      "order": 314
+    },
+    {
+      "id": "detail-379",
+      "subjectId": "ayt-fizik",
+      "title": "Sığaçlar-kondansatörler",
+      "order": 315
+    },
+    {
+      "id": "detail-272",
+      "subjectId": "tyt-turkce",
+      "title": "Paragrafta ikiye bölme",
+      "order": 316
+    },
+    {
+      "id": "detail-273",
+      "subjectId": "tyt-turkce",
+      "title": "Paragrafta akışı bozan cümleler",
+      "order": 317
+    },
+    {
+      "id": "detail-380",
+      "subjectId": "ayt-fizik",
+      "title": "Manyetik alan",
+      "order": 318
+    },
+    {
+      "id": "detail-322",
+      "subjectId": "ayt-biyoloji",
+      "title": "Üreme Sistemi Kadın Üreme Organları",
+      "order": 319
+    },
+    {
+      "id": "detail-323",
+      "subjectId": "ayt-biyoloji",
+      "title": "Üreme Sistemi Gametogenez",
+      "order": 320
+    },
+    {
+      "id": "detail-324",
+      "subjectId": "ayt-biyoloji",
+      "title": "Üreme Sistemi Menstrual Döngü",
+      "order": 321
+    },
+    {
+      "id": "detail-74",
+      "subjectId": "tyt-cografya",
+      "title": "Dünya'nın şekli ve hareketleri",
+      "order": 322
+    },
+    {
+      "id": "detail-75",
+      "subjectId": "tyt-cografya",
+      "title": "Coğrafi konum",
+      "order": 323
+    },
+    {
+      "id": "detail-76",
+      "subjectId": "tyt-cografya",
+      "title": "Harita bilgisi",
+      "order": 324
+    },
+    {
+      "id": "detail-430",
+      "subjectId": "ayt-kimya",
+      "title": "Dengeye etki eden faktörler/basınç-hacim etkisi",
+      "order": 325
+    },
+    {
+      "id": "detail-431",
+      "subjectId": "ayt-kimya",
+      "title": "Sulu çözeltilerde denge/asit baz dengesi",
+      "order": 326
+    },
+    {
+      "id": "detail-97",
+      "subjectId": "tyt-felsefe",
+      "title": "Felsefeyi Tanıma",
+      "order": 327
+    },
+    {
+      "id": "detail-98",
+      "subjectId": "tyt-felsefe",
+      "title": "Felsefe ile Düşünme",
+      "order": 328
+    },
+    {
+      "id": "detail-99",
+      "subjectId": "tyt-felsefe",
+      "title": "Varlık Felsefesi",
+      "order": 329
+    },
+    {
+      "id": "detail-325",
+      "subjectId": "ayt-biyoloji",
+      "title": "Üreme Sistemi Embriyonik Gelişim",
+      "order": 330
+    },
+    {
+      "id": "detail-326",
+      "subjectId": "ayt-biyoloji",
+      "title": "Komünite Ekolojisi",
+      "order": 331
+    },
+    {
+      "id": "detail-381",
+      "subjectId": "ayt-fizik",
+      "title": "Manyetik kuvvet",
+      "order": 332
+    },
+    {
+      "id": "detail-382",
+      "subjectId": "ayt-fizik",
+      "title": "Elektromanyetik indüksiyon",
+      "order": 333
+    },
+    {
+      "id": "detail-383",
+      "subjectId": "ayt-fizik",
+      "title": "Alternatif akım",
+      "order": 334
+    },
+    {
+      "id": "detail-384",
+      "subjectId": "ayt-fizik",
+      "title": "Transformatör",
+      "order": 335
+    },
+    {
+      "id": "detail-385",
+      "subjectId": "ayt-fizik",
+      "title": "Çembersel hareket",
+      "order": 336
+    },
+    {
+      "id": "detail-432",
+      "subjectId": "ayt-kimya",
+      "title": "Zayıf asit bazlarda denge tampon çözeltiler tuzlarda asitlik bazlık",
+      "order": 337
+    },
+    {
+      "id": "detail-433",
+      "subjectId": "ayt-kimya",
+      "title": "Hidroliz",
+      "order": 338
+    },
+    {
+      "id": "detail-434",
+      "subjectId": "ayt-kimya",
+      "title": "Nötralleşme tepkimeleri",
+      "order": 339
+    },
+    {
+      "id": "detail-327",
+      "subjectId": "ayt-biyoloji",
+      "title": "Popülasyon Ekolojisi",
+      "order": 340
+    },
+    {
+      "id": "detail-328",
+      "subjectId": "ayt-biyoloji",
+      "title": "Nükleik Asitler",
+      "order": 341
+    },
+    {
+      "id": "detail-329",
+      "subjectId": "ayt-biyoloji",
+      "title": "Kalıtım Molekülünün Keşfi",
+      "order": 342
+    },
+    {
+      "id": "detail-330",
+      "subjectId": "ayt-biyoloji",
+      "title": "DNA Replikasyonu",
+      "order": 343
+    },
+    {
+      "id": "detail-100",
+      "subjectId": "tyt-felsefe",
+      "title": "Bilgi Felsefesi",
+      "order": 344
+    },
+    {
+      "id": "detail-101",
+      "subjectId": "tyt-felsefe",
+      "title": "Bilim Felsefesi",
+      "order": 345
+    },
+    {
+      "id": "detail-102",
+      "subjectId": "tyt-felsefe",
+      "title": "Ahlak Felsefesi",
+      "order": 346
+    },
+    {
+      "id": "detail-435",
+      "subjectId": "ayt-kimya",
+      "title": "Titrasyon",
+      "order": 347
+    },
+    {
+      "id": "detail-436",
+      "subjectId": "ayt-kimya",
+      "title": "ÇÖZÜNÜRLÜK DENGESİ / MOLAR ÇÖZÜNÜRLÜK Kç İLİŞKİSİ",
+      "order": 348
+    },
+    {
+      "id": "detail-386",
+      "subjectId": "ayt-fizik",
+      "title": "Dönerek öteleme hareketi",
+      "order": 349
+    },
+    {
+      "id": "detail-405",
+      "subjectId": "ayt-geometri",
+      "title": "Dönüşümler: Öteleme ve Dönme",
+      "order": 350
+    },
+    {
+      "id": "detail-406",
+      "subjectId": "ayt-geometri",
+      "title": "Dönüşümler: Yansıma ve Simetri",
+      "order": 351
+    },
+    {
+      "id": "detail-407",
+      "subjectId": "ayt-geometri",
+      "title": "Çemberin analitiği",
+      "order": 352
+    },
+    {
+      "id": "detail-463",
+      "subjectId": "ayt-matematik",
+      "title": "Fonksiyonlar",
+      "order": 353
+    },
+    {
+      "id": "detail-103",
+      "subjectId": "tyt-felsefe",
+      "title": "Din Felsefesi",
+      "order": 354
+    },
+    {
+      "id": "detail-104",
+      "subjectId": "tyt-felsefe",
+      "title": "Siyaset Felsefesi",
+      "order": 355
+    },
+    {
+      "id": "detail-105",
+      "subjectId": "tyt-felsefe",
+      "title": "Sanat Felsefesi",
+      "order": 356
+    },
+    {
+      "id": "detail-437",
+      "subjectId": "ayt-kimya",
+      "title": "Çözünürlük dengesine etki eden faktörler/sıcaklık ve ortak iyon etkisi",
+      "order": 357
+    },
+    {
+      "id": "detail-438",
+      "subjectId": "ayt-kimya",
+      "title": "Elektrokimya redox denkleştirme",
+      "order": 358
+    },
+    {
+      "id": "detail-274",
+      "subjectId": "tyt-turkce",
+      "title": "Paragrafta sıralama",
+      "order": 359
+    },
+    {
+      "id": "detail-275",
+      "subjectId": "tyt-turkce",
+      "title": "Paragrafta cümle ekleme",
+      "order": 360
+    },
+    {
+      "id": "detail-276",
+      "subjectId": "tyt-turkce",
+      "title": "Paragrafta boşluk doldurma",
+      "order": 361
+    },
+    {
+      "id": "detail-331",
+      "subjectId": "ayt-biyoloji",
+      "title": "Kodon Antikodon İlişkisi",
+      "order": 362
+    },
+    {
+      "id": "detail-332",
+      "subjectId": "ayt-biyoloji",
+      "title": "Protein Sentezi",
+      "order": 363
+    },
+    {
+      "id": "detail-333",
+      "subjectId": "ayt-biyoloji",
+      "title": "Biyoteknoloji",
+      "order": 364
+    },
+    {
+      "id": "detail-334",
+      "subjectId": "ayt-biyoloji",
+      "title": "Fotosentez: Genel Kurallar",
+      "order": 365
+    },
+    {
+      "id": "detail-387",
+      "subjectId": "ayt-fizik",
+      "title": "Açısal momentum",
+      "order": 366
+    },
+    {
+      "id": "detail-388",
+      "subjectId": "ayt-fizik",
+      "title": "Newton genel çekim yasası",
+      "order": 367
+    },
+    {
+      "id": "detail-389",
+      "subjectId": "ayt-fizik",
+      "title": "Kepler yasaları",
+      "order": 368
+    },
+    {
+      "id": "detail-464",
+      "subjectId": "ayt-matematik",
+      "title": "Polinomlar",
+      "order": 369
+    },
+    {
+      "id": "detail-335",
+      "subjectId": "ayt-biyoloji",
+      "title": "Fotosentez: Tepkimeler",
+      "order": 370
+    },
+    {
+      "id": "detail-336",
+      "subjectId": "ayt-biyoloji",
+      "title": "Fotosentez: Çevresel ve Genetik Faktörler",
+      "order": 371
+    },
+    {
+      "id": "detail-106",
+      "subjectId": "tyt-felsefe",
+      "title": "Felsefi Okuma ve Yazma",
+      "order": 372
+    },
+    {
+      "id": "detail-107",
+      "subjectId": "tyt-felsefe",
+      "title": "İlk Çağ Felsefesi",
+      "order": 373
+    },
+    {
+      "id": "detail-108",
+      "subjectId": "tyt-felsefe",
+      "title": "Orta Çağ Felsefesi",
+      "order": 374
+    },
+    {
+      "id": "detail-337",
+      "subjectId": "ayt-biyoloji",
+      "title": "Kemosentez",
+      "order": 375
+    },
+    {
+      "id": "detail-338",
+      "subjectId": "ayt-biyoloji",
+      "title": "Oksijenli Solunum",
+      "order": 376
+    },
+    {
+      "id": "detail-339",
+      "subjectId": "ayt-biyoloji",
+      "title": "Oksijensiz Solunum",
+      "order": 377
+    },
+    {
+      "id": "detail-439",
+      "subjectId": "ayt-kimya",
+      "title": "Elektrokimya aktiflik",
+      "order": 378
+    },
+    {
+      "id": "detail-465",
+      "subjectId": "ayt-matematik",
+      "title": "2.Dereceden Denklemler",
+      "order": 379
+    },
+    {
+      "id": "detail-466",
+      "subjectId": "ayt-matematik",
+      "title": "Karmaşık Sayılar",
+      "order": 380
+    },
+    {
+      "id": "detail-440",
+      "subjectId": "ayt-kimya",
+      "title": "Elektrokimyasal piller",
+      "order": 381
+    },
+    {
+      "id": "detail-441",
+      "subjectId": "ayt-kimya",
+      "title": "Pil gerilimine etki eden faktörler ve derişim pilleri",
+      "order": 382
+    },
+    {
+      "id": "detail-442",
+      "subjectId": "ayt-kimya",
+      "title": "Elektroliz",
+      "order": 383
+    },
+    {
+      "id": "detail-390",
+      "subjectId": "ayt-fizik",
+      "title": "Basit harmonik hareket",
+      "order": 384
+    },
+    {
+      "id": "detail-277",
+      "subjectId": "tyt-turkce",
+      "title": "Paragrafta anlatım biçimleri",
+      "order": 385
+    },
+    {
+      "id": "detail-109",
+      "subjectId": "tyt-felsefe",
+      "title": "Rönesans Felsefesi",
+      "order": 386
+    },
+    {
+      "id": "detail-110",
+      "subjectId": "tyt-felsefe",
+      "title": "15–17. Yüzyıl Felsefesi: Hümanizm, Bilimsel Yöntem, Kartezyen Düşünce ve Hukuk Felsefesi",
+      "order": 387
+    },
+    {
+      "id": "detail-111",
+      "subjectId": "tyt-felsefe",
+      "title": "Aydınlanma Felsefesi",
+      "order": 388
+    },
+    {
+      "id": "detail-112",
+      "subjectId": "tyt-felsefe",
+      "title": "18–19. Yüzyıl Felsefesi: Akıl-Deney ve Birey-Devlet İlişkisi",
+      "order": 389
+    },
+    {
+      "id": "detail-443",
+      "subjectId": "ayt-kimya",
+      "title": "Elektroliz faraday yasaları",
+      "order": 390
+    },
+    {
+      "id": "detail-444",
+      "subjectId": "ayt-kimya",
+      "title": "Korozyon, Katodik Koruma",
+      "order": 391
+    },
+    {
+      "id": "detail-445",
+      "subjectId": "ayt-kimya",
+      "title": "Karbon kimyasına giriş",
+      "order": 392
+    },
+    {
+      "id": "detail-446",
+      "subjectId": "ayt-kimya",
+      "title": "Basit ve Molekül Formül",
+      "order": 393
+    },
+    {
+      "id": "detail-447",
+      "subjectId": "ayt-kimya",
+      "title": "Hibritleşme",
+      "order": 394
+    },
+    {
+      "id": "detail-448",
+      "subjectId": "ayt-kimya",
+      "title": "Molekül geometrisi",
+      "order": 395
+    },
+    {
+      "id": "detail-113",
+      "subjectId": "tyt-felsefe",
+      "title": "Çağdaş Felsefe",
+      "order": 396
+    },
+    {
+      "id": "detail-467",
+      "subjectId": "ayt-matematik",
+      "title": "Eşitsizlikler",
+      "order": 397
+    },
+    {
+      "id": "detail-468",
+      "subjectId": "ayt-matematik",
+      "title": "Parabol",
+      "order": 398
+    },
+    {
+      "id": "detail-391",
+      "subjectId": "ayt-fizik",
+      "title": "Su dalgalarında kırınım",
+      "order": 399
+    },
+    {
+      "id": "detail-392",
+      "subjectId": "ayt-fizik",
+      "title": "Su dalgalarında girişim",
+      "order": 400
+    },
+    {
+      "id": "detail-469",
+      "subjectId": "ayt-matematik",
+      "title": "Trigonometri",
+      "order": 401
+    },
+    {
+      "id": "detail-449",
+      "subjectId": "ayt-kimya",
+      "title": "Alkanlar",
+      "order": 402
+    },
+    {
+      "id": "detail-340",
+      "subjectId": "ayt-biyoloji",
+      "title": "Fermentasyon",
+      "order": 403
+    },
+    {
+      "id": "detail-341",
+      "subjectId": "ayt-biyoloji",
+      "title": "Fotosentez - solunum ilişkisi",
+      "order": 404
+    },
+    {
+      "id": "detail-342",
+      "subjectId": "ayt-biyoloji",
+      "title": "Bitkisel Dokular - Meristem Doku",
+      "order": 405
+    },
+    {
+      "id": "detail-343",
+      "subjectId": "ayt-biyoloji",
+      "title": "Bitkisel Dokular - Temel Doku",
+      "order": 406
+    },
+    {
+      "id": "detail-344",
+      "subjectId": "ayt-biyoloji",
+      "title": "Bitkisel Dokular - İletim Doku",
+      "order": 407
+    },
+    {
+      "id": "detail-77",
+      "subjectId": "tyt-din",
+      "title": "Bilgi ve inanç",
+      "order": 408
+    },
+    {
+      "id": "detail-78",
+      "subjectId": "tyt-din",
+      "title": "Din ve islam",
+      "order": 409
+    },
+    {
+      "id": "detail-79",
+      "subjectId": "tyt-din",
+      "title": "İslam ve ibadet",
+      "order": 410
+    },
+    {
+      "id": "detail-80",
+      "subjectId": "tyt-din",
+      "title": "Ahlak ve değerler - ahlaki tutum ve davranışlar",
+      "order": 411
+    },
+    {
+      "id": "detail-450",
+      "subjectId": "ayt-kimya",
+      "title": "Sikloalkanlar ve izomerlik",
+      "order": 412
+    },
+    {
+      "id": "detail-451",
+      "subjectId": "ayt-kimya",
+      "title": "Alkenler",
+      "order": 413
+    },
+    {
+      "id": "detail-81",
+      "subjectId": "tyt-din",
+      "title": "Gençlik ve Değerler",
+      "order": 414
+    },
+    {
+      "id": "detail-82",
+      "subjectId": "tyt-din",
+      "title": "Gönül coğrafyamız",
+      "order": 415
+    },
+    {
+      "id": "detail-470",
+      "subjectId": "ayt-matematik",
+      "title": "Toplam-Fark ve Yarım Açı Formülleri",
+      "order": 416
+    },
+    {
+      "id": "detail-393",
+      "subjectId": "ayt-fizik",
+      "title": "Işık teorileri",
+      "order": 417
+    },
+    {
+      "id": "detail-394",
+      "subjectId": "ayt-fizik",
+      "title": "Doppler etkisi",
+      "order": 418
+    },
+    {
+      "id": "detail-395",
+      "subjectId": "ayt-fizik",
+      "title": "Elektromanyetik dalgalar",
+      "order": 419
+    },
+    {
+      "id": "detail-396",
+      "subjectId": "ayt-fizik",
+      "title": "Atom modelleri",
+      "order": 420
+    },
+    {
+      "id": "detail-471",
+      "subjectId": "ayt-matematik",
+      "title": "Trigonometrik Denklemler",
+      "order": 421
+    },
+    {
+      "id": "detail-278",
+      "subjectId": "tyt-turkce",
+      "title": "Paragrafta soru cevap",
+      "order": 422
+    },
+    {
+      "id": "detail-279",
+      "subjectId": "tyt-turkce",
+      "title": "Paragrafta röportaj",
+      "order": 423
+    },
+    {
+      "id": "detail-345",
+      "subjectId": "ayt-biyoloji",
+      "title": "Bitkisel Dokular - Örtü Doku",
+      "order": 424
+    },
+    {
+      "id": "detail-452",
+      "subjectId": "ayt-kimya",
+      "title": "Alkinler",
+      "order": 425
+    },
+    {
+      "id": "detail-453",
+      "subjectId": "ayt-kimya",
+      "title": "Aromatik bileşikler /arenler",
+      "order": 426
+    },
+    {
+      "id": "detail-454",
+      "subjectId": "ayt-kimya",
+      "title": "Fonksiyonel gruplar / alkoller",
+      "order": 427
+    },
+    {
+      "id": "detail-472",
+      "subjectId": "ayt-matematik",
+      "title": "Logaritma",
+      "order": 428
+    },
+    {
+      "id": "detail-83",
+      "subjectId": "tyt-din",
+      "title": "Din ve hayat",
+      "order": 429
+    },
+    {
+      "id": "detail-84",
+      "subjectId": "tyt-din",
+      "title": "Hz. muhammed ve gençler",
+      "order": 430
+    },
+    {
+      "id": "detail-85",
+      "subjectId": "tyt-din",
+      "title": "Allah ve insan ilişkisi",
+      "order": 431
+    },
+    {
+      "id": "detail-86",
+      "subjectId": "tyt-din",
+      "title": "İslam düşüncesinde mezhepler",
+      "order": 432
+    },
+    {
+      "id": "detail-87",
+      "subjectId": "tyt-din",
+      "title": "Kur'ana göre hz.muhammed",
+      "order": 433
+    },
+    {
+      "id": "detail-346",
+      "subjectId": "ayt-biyoloji",
+      "title": "Bitkisel Organlar - Kök",
+      "order": 434
+    },
+    {
+      "id": "detail-473",
+      "subjectId": "ayt-matematik",
+      "title": "Diziler",
+      "order": 435
+    },
+    {
+      "id": "detail-474",
+      "subjectId": "ayt-matematik",
+      "title": "Limit ve süreklilik",
+      "order": 436
+    },
+    {
+      "id": "detail-88",
+      "subjectId": "tyt-din",
+      "title": "Kur'anda geçen bazı kavramlar",
+      "order": 437
+    },
+    {
+      "id": "detail-89",
+      "subjectId": "tyt-din",
+      "title": "İnanç ile ilgili meseleler",
+      "order": 438
+    },
+    {
+      "id": "detail-90",
+      "subjectId": "tyt-din",
+      "title": "Dünya ve ahiret",
+      "order": 439
+    },
+    {
+      "id": "detail-280",
+      "subjectId": "tyt-turkce",
+      "title": "Paragrafta çoklu sorular",
+      "order": 440
+    },
+    {
+      "id": "detail-281",
+      "subjectId": "tyt-turkce",
+      "title": "Paragrafta konu",
+      "order": 441
+    },
+    {
+      "id": "detail-347",
+      "subjectId": "ayt-biyoloji",
+      "title": "Bitkisel Organlar - Gövde",
+      "order": 442
+    },
+    {
+      "id": "detail-348",
+      "subjectId": "ayt-biyoloji",
+      "title": "Bitkisel Organlar - Yaprak",
+      "order": 443
+    },
+    {
+      "id": "detail-349",
+      "subjectId": "ayt-biyoloji",
+      "title": "Bitkilerde Madde Taşınması",
+      "order": 444
+    },
+    {
+      "id": "detail-350",
+      "subjectId": "ayt-biyoloji",
+      "title": "Bitkilerde Stoma, Nodül ve Mikoriza",
+      "order": 445
+    },
+    {
+      "id": "detail-397",
+      "subjectId": "ayt-fizik",
+      "title": "Bigbang teorisi ve atomaltı parçacıklar",
+      "order": 446
+    },
+    {
+      "id": "detail-398",
+      "subjectId": "ayt-fizik",
+      "title": "Radyoaktivite",
+      "order": 447
+    },
+    {
+      "id": "detail-475",
+      "subjectId": "ayt-matematik",
+      "title": "Türev Alma Kuralları",
+      "order": 448
+    },
+    {
+      "id": "detail-476",
+      "subjectId": "ayt-matematik",
+      "title": "Türevin Geometrik Yorumu",
+      "order": 449
+    },
+    {
+      "id": "detail-399",
+      "subjectId": "ayt-fizik",
+      "title": "Modern fizik izafiyet teorisi",
+      "order": 450
+    },
+    {
+      "id": "detail-400",
+      "subjectId": "ayt-fizik",
+      "title": "Siyah cisim ışıması ve foton",
+      "order": 451
+    },
+    {
+      "id": "detail-401",
+      "subjectId": "ayt-fizik",
+      "title": "Fotoelektrik olay",
+      "order": 452
+    },
+    {
+      "id": "detail-351",
+      "subjectId": "ayt-biyoloji",
+      "title": "Bitkisel Hormonlar",
+      "order": 453
+    },
+    {
+      "id": "detail-352",
+      "subjectId": "ayt-biyoloji",
+      "title": "Bitkilerde Hareket",
+      "order": 454
+    },
+    {
+      "id": "detail-353",
+      "subjectId": "ayt-biyoloji",
+      "title": "Fotoperiyodizm",
+      "order": 455
+    },
+    {
+      "id": "detail-354",
+      "subjectId": "ayt-biyoloji",
+      "title": "Bitkilerde Üreme Çiçek Yapısı",
+      "order": 456
+    },
+    {
+      "id": "detail-355",
+      "subjectId": "ayt-biyoloji",
+      "title": "Bitkilerde Üreme Tozlaşma",
+      "order": 457
+    },
+    {
+      "id": "detail-91",
+      "subjectId": "tyt-din",
+      "title": "Yahudilik ve hristiyanlık",
+      "order": 458
+    },
+    {
+      "id": "detail-92",
+      "subjectId": "tyt-din",
+      "title": "İslam ve bilim",
+      "order": 459
+    },
+    {
+      "id": "detail-93",
+      "subjectId": "tyt-din",
+      "title": "Anadoluda islam",
+      "order": 460
+    },
+    {
+      "id": "detail-455",
+      "subjectId": "ayt-kimya",
+      "title": "Alkollerin eldesi ve kimyasal tepkimeleri",
+      "order": 461
+    },
+    {
+      "id": "detail-456",
+      "subjectId": "ayt-kimya",
+      "title": "Eterler",
+      "order": 462
+    },
+    {
+      "id": "detail-457",
+      "subjectId": "ayt-kimya",
+      "title": "Aldehit ve ketonlar",
+      "order": 463
+    },
+    {
+      "id": "detail-458",
+      "subjectId": "ayt-kimya",
+      "title": "Karboksilik asitler",
+      "order": 464
+    },
+    {
+      "id": "detail-459",
+      "subjectId": "ayt-kimya",
+      "title": "Esterler",
+      "order": 465
+    },
+    {
+      "id": "detail-402",
+      "subjectId": "ayt-fizik",
+      "title": "Compton Saçılması ve De Broglie Dalga Boyu",
+      "order": 466
+    },
+    {
+      "id": "detail-403",
+      "subjectId": "ayt-fizik",
+      "title": "Modern fiziğin teknolojideki uygulamaları",
+      "order": 467
+    },
+    {
+      "id": "detail-282",
+      "subjectId": "tyt-turkce",
+      "title": "Metin, Tablo ve Görsel Yorumlama",
+      "order": 468
+    },
+    {
+      "id": "detail-477",
+      "subjectId": "ayt-matematik",
+      "title": "Belirsiz İntegral",
+      "order": 469
+    },
+    {
+      "id": "detail-478",
+      "subjectId": "ayt-matematik",
+      "title": "Belirli İntegral",
+      "order": 470
+    },
+    {
+      "id": "detail-479",
+      "subjectId": "ayt-matematik",
+      "title": "Alan ve Riemann",
+      "order": 471
+    },
+    {
+      "id": "detail-460",
+      "subjectId": "ayt-kimya",
+      "title": "Enerji Kaynakları ve Bilimsel Gelişmeler",
+      "order": 472
+    },
+    {
+      "id": "detail-94",
+      "subjectId": "tyt-din",
+      "title": "İslam düşüncesinde tasavvufi yorumlar",
+      "order": 473
+    },
+    {
+      "id": "detail-95",
+      "subjectId": "tyt-din",
+      "title": "Güncel dini meseleler",
+      "order": 474
+    },
+    {
+      "id": "detail-96",
+      "subjectId": "tyt-din",
+      "title": "Hint ve çin dinleri",
+      "order": 475
+    },
+    {
+      "id": "detail-461",
+      "subjectId": "ayt-kimya",
+      "title": "Sürdürülebilirlik ve Geri Dönüşüm",
+      "order": 476
+    },
+    {
+      "id": "detail-462",
+      "subjectId": "ayt-kimya",
+      "title": "Nanoteknoloji ve Bilimsel Gelişmeler",
+      "order": 477
+    },
+    {
+      "id": "detail-356",
+      "subjectId": "ayt-biyoloji",
+      "title": "Bitkilerde Döllenme ve Çimlenme",
+      "order": 478
+    },
+    {
+      "id": "detail-357",
+      "subjectId": "ayt-biyoloji",
+      "title": "Canlılar ve Çevre",
+      "order": 479
+    }
+  ]
+}

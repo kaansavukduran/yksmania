@@ -1,3 +1,4 @@
+import { localizedQuestionView } from "../domain/questionPresentation";
 import { useState } from "react";
 import { ArrowLeft, ArrowRight, CheckCircle2 } from "lucide-react";
 import { useApp } from "../store";
@@ -15,6 +16,8 @@ import { PastExamQuestions } from "../components/PastExamQuestions";
 import { lessonTopic } from "../domain/studyPlan";
 import { StudyTimer } from "../components/StudyTimer";
 import { QuestionHelp } from "../components/QuestionHelp";
+import { helpPanels, previousHelpPanelCount } from "../learning/questionHelp";
+import { effectiveHelpLevel } from "../learning/helpProgression";
 export function Study({ navigate }: { navigate: (s: string) => void }) {
   const { state, t, l, update, commit, toast } = useApp();
   const [busy, setBusy] = useState(false);
@@ -31,12 +34,37 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
       </section>
     );
   const subject = subjectById(lesson.subjectId)!;
-  const question = lesson.questions[draft.index];
+  const question = localizedQuestionView(lesson.questions[draft.index]);
+  const helpQuestion = {
+    id: question.id,
+    prompt: l(question.prompt),
+    passage: question.passage ? l(question.passage) : undefined,
+    options: question.options.map(l),
+    answer: question.answer,
+    hint: l(question.hint),
+    explanation: l(question.explanation),
+    guidance: question.guidance,
+  };
+  const panels = helpPanels(helpQuestion),
+    previousCount = previousHelpPanelCount(helpQuestion),
+    visibleHelpLevel = effectiveHelpLevel(
+      panels,
+      draft.helpLevel ?? (draft.hint ? 1 : 0),
+      draft.helpPanelCount,
+      previousCount,
+      helpQuestion.hint,
+    );
   const patch = (changes: Partial<Draft>) => {
-    void update((s) => ({
-      ...s,
-      draft: s.draft ? { ...s.draft, ...changes } : null,
-    })).catch(() => {});
+    void update((s) => {
+      if (!s.draft) return { ...s, draft: null };
+      const next = { ...s.draft, ...changes };
+      if (
+        Object.hasOwn(changes, "helpPanelCount") &&
+        changes.helpPanelCount === undefined
+      )
+        delete next.helpPanelCount;
+      return { ...s, draft: next };
+    }).catch(() => {});
   };
   const check = () => {
     if (draft.selected === null || draft.checked || busy) return;
@@ -46,9 +74,17 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
       correct: draft.selected === question.answer,
       assisted: draft.hint,
       confidence: draft.confidence,
-      ...(draft.hint ? { helpLevel: draft.helpLevel ?? 1 } : {}),
+      ...(draft.hint
+        ? { helpLevel: visibleHelpLevel, helpPanelCount: panels.length }
+        : {}),
     };
-    patch({ checked: true, responses: [...draft.responses, response] });
+    patch({
+      checked: true,
+      responses: [...draft.responses, response],
+      ...(draft.hint
+        ? { helpLevel: visibleHelpLevel, helpPanelCount: panels.length }
+        : {}),
+    });
   };
   const next = async () => {
     if (!draft.checked || busy) return;
@@ -59,6 +95,7 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
         checked: false,
         hint: false,
         helpLevel: 0,
+        helpPanelCount: undefined,
         confidence: "medium",
       });
       return;
@@ -119,14 +156,23 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
           current.index !== draft.index
         )
           throw Error("QUESTION_CHANGED");
+        if (!Number.isInteger(level) || level < 1 || level > panels.length + 1)
+          throw Error("QUESTION_HELP_LEVEL");
         return {
           ...s,
           draft: {
             ...current,
             helpLevel: Math.max(
-              current.helpLevel ?? (current.hint ? 1 : 0),
+              effectiveHelpLevel(
+                panels,
+                current.helpLevel ?? (current.hint ? 1 : 0),
+                current.helpPanelCount,
+                previousCount,
+                helpQuestion.hint,
+              ),
               level,
             ),
+            helpPanelCount: panels.length,
             hint: current.hint || !current.checked,
           },
         };
@@ -216,17 +262,8 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
             </fieldset>
           )}
           <QuestionHelp
-            question={{
-              id: question.id,
-              prompt: l(question.prompt),
-              passage: question.passage ? l(question.passage) : undefined,
-              options: question.options.map(l),
-              answer: question.answer,
-              hint: l(question.hint),
-              explanation: l(question.explanation),
-              guidance: question.guidance,
-            }}
-            level={draft.helpLevel ?? (draft.hint ? 1 : 0)}
+            question={helpQuestion}
+            level={visibleHelpLevel}
             onLevel={(level) => void openHelp(level)}
             disabled={busy}
             reviewed={draft.checked}

@@ -158,10 +158,11 @@ it("keeps simulation assistance off until explicitly enabled, preserving the ent
   );
   expect(state.examDraft!.helpLevels).toBeUndefined();
   state = changeExam(state, id, { type: "help", index: 0, level: 3 }, 1400);
-  const { helpEnabled, helpLevels, ...rest } = state.examDraft!;
+  const { helpEnabled, helpLevels, helpPanelCounts, ...rest } = state.examDraft!;
   expect(rest).toEqual(before.examDraft);
   expect(helpEnabled).toBe(true);
   expect(helpLevels).toEqual([3]);
+  expect(helpPanelCounts).toEqual({0:4});
   state = changeExam(
     state,
     id,

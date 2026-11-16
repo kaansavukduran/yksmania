@@ -51,6 +51,7 @@ export const responseSchema = z
     assisted: z.boolean(),
     confidence: z.enum(["low", "medium", "high"]),
     helpLevel: helpLevelSchema.optional(),
+    helpPanelCount: helpLevelSchema.optional(),
   })
   .refine(
     (response) => !(response.helpLevel && !response.assisted),
@@ -89,6 +90,7 @@ export const draftSchema = z.object({
   checked: z.boolean(),
   hint: z.boolean(),
   helpLevel: helpLevelSchema.optional(),
+  helpPanelCount: helpLevelSchema.optional(),
   confidence: z.enum(["low", "medium", "high"]),
   note: z.string().max(20000),
   startedAt: z.number(),

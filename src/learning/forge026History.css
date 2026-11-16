@@ -1,0 +1,124 @@
+.history026-lab {
+  padding: 6px 4px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--text);
+  background: var(--surface);
+  min-width: 0;
+}
+.history026-lab * {
+  box-sizing: border-box;
+  min-width: 0;
+}
+.history026-lab h3 {
+  margin: 0.4em 0 0.7em;
+}
+.history026-lab p,
+.history026-lab li,
+.history026-lab label,
+.history026-lab summary {
+  overflow-wrap: anywhere;
+}
+.history026-controls {
+  display: grid;
+  gap: 12px;
+}
+.history026-lab label {
+  display: grid;
+  gap: 6px;
+  margin: 12px 0;
+}
+.history026-lab select,
+.history026-lab input:not([type="checkbox"]),
+.history026-lab textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 44px;
+  padding: 6px;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font: inherit;
+}
+.history026-lab .history026-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  min-width: 44px;
+  min-height: 44px;
+  cursor: pointer;
+}
+.history026-check input {
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  margin: 0;
+}
+.history026-context,
+.history026-feedback,
+.history026-lab details {
+  padding: 10px 0;
+  border: 0;
+}
+.history026-lab ul {
+  list-style: none;
+  margin: 0.6em 0;
+  padding: 0;
+}
+.history026-lab li + li {
+  margin-top: 0.65em;
+}
+.history026-diagram {
+  display: block;
+  width: 270px;
+  max-width: 100%;
+  height: auto;
+  margin: 14px auto;
+  color: var(--text);
+}
+.history026-diagram rect {
+  fill: var(--surface);
+  stroke: currentColor;
+  stroke-width: 2;
+}
+.history026-diagram path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+.history026-diagram text {
+  fill: currentColor;
+  font:
+    20px Lexend,
+    sans-serif;
+}
+.history026-lab button {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 0;
+  font: inherit;
+  white-space: normal;
+  background: var(--accent);
+  color: var(--accent-text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+.history026-lab button:disabled {
+  opacity: 0.65;
+}
+.history026-lab :is(input, select, textarea, button, summary):focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+.history026-limit {
+  color: var(--text);
+}
+.history026-feedback {
+  border-top: 2px solid currentColor;
+}
+@media (min-width: 700px) {
+  .history026-controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

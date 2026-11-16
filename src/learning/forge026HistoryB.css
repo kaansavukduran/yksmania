@@ -1,0 +1,198 @@
+.historyb026-lab {
+  min-width: 0;
+  padding: 1.25rem;
+  margin-block: 1.75rem;
+  border-block: 1px solid var(--border);
+  background: var(--surface);
+}
+.historyb026-lab :is(p, li, label, legend, dt, dd) {
+  line-height: 1.7;
+}
+.historyb026-lab :is(h3, h4) {
+  margin-block: 0.8rem;
+}
+.historyb026-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: 1rem;
+  margin-block: 1.25rem;
+}
+.historyb026-controls > *,
+.historyb026-choice,
+.historyb026-year {
+  min-width: 0;
+}
+.historyb026-choice label,
+.historyb026-year label {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+.historyb026-choice select {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-height: 44px;
+}
+.historyb026-selected {
+  margin-top: 0.45rem;
+}
+.historyb026-year input {
+  max-width: 100%;
+  width: 8rem;
+  min-height: 44px;
+}
+.historyb026-check {
+  display: block;
+  min-height: 44px;
+}
+.historyb026-check input {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 44px;
+  min-height: 44px;
+  margin: 0 0.35rem 0 0;
+}
+.historyb026-lab svg[role="img"] {
+  display: block;
+  width: 100%;
+  margin-block: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--bg);
+  overflow: hidden;
+}
+.historyb026-lab svg text {
+  font-family: inherit;
+  font-size: 16.5px;
+  fill: var(--text);
+}
+.historyb026-axis {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1.4;
+}
+.historyb026-guide {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 1;
+}
+.historyb026-primary {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2.5;
+}
+.historyb026-secondary {
+  fill: none;
+  stroke: var(--plot-blue);
+  stroke-width: 2.5;
+}
+.historyb026-missing {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1.8;
+  stroke-dasharray: 5 4;
+}
+.historyb026-node {
+  fill: var(--surface);
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+.historyb026-arrow,
+.historyb026-selected-dot,
+.historyb026-selected-box,
+.historyb026-event,
+.historyb026-period-point {
+  fill: var(--accent);
+}
+.historyb026-open-dot,
+.historyb026-open-box {
+  fill: var(--bg);
+  stroke: var(--muted);
+  stroke-width: 1.5;
+  stroke-dasharray: 3 3;
+}
+.historyb026-period {
+  fill: var(--plot-blue);
+}
+.historyb026-result {
+  min-width: 0;
+  padding-block: 1rem;
+  margin-block: 1.25rem;
+  border-block: 1px solid var(--border);
+}
+.historyb026-result dl,
+.historyb026-result ul,
+.historyb026-result ol {
+  margin-block: 1rem;
+}
+.historyb026-result dl > div,
+.historyb026-records > li {
+  margin-block: 1rem;
+}
+.historyb026-result dt {
+  font-weight: 600;
+}
+.historyb026-result dd {
+  margin: 0.2rem 0 0;
+}
+.historyb026-records p {
+  margin-block: 0.4rem;
+}
+.historyb026-scope {
+  margin-block: 1rem;
+}
+.historyb026-compare {
+  min-width: 0;
+  margin: 1.5rem 0;
+  padding: 1rem 0;
+  border: 0;
+  border-top: 1px solid var(--border);
+}
+.historyb026-compare legend {
+  max-width: 100%;
+  padding: 0.3rem 0;
+  font-weight: 600;
+}
+.historyb026-compare > label {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+.historyb026-compare textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+.historyb026-lab button {
+  max-width: 100%;
+  min-height: 44px;
+  white-space: normal;
+}
+.historyb026-feedback {
+  margin-top: 1rem;
+  padding-block: 1rem;
+  border-block: 1px solid var(--border);
+}
+.historyb026-feedback > strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.historyb026-lab :is(input, select, textarea, button):focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+@media (max-width: 700px) {
+  .historyb026-lab {
+    padding-inline: 6px;
+  }
+  .historyb026-result :is(ul, ol) {
+    padding-inline-start: 0;
+    list-style-position: inside;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .historyb026-lab * {
+    animation: none;
+    transition: none;
+  }
+}

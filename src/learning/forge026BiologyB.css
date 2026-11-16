@@ -1,0 +1,142 @@
+.bb026-lab {
+  border: 1px solid var(--border, #819c8c);
+  border-radius: 12px;
+  padding: 12px;
+  min-width: 0;
+  line-height: 1.55;
+  background: var(--surface-2, #eeece5);
+  color: var(--text, #252a30);
+}
+.bb026-lab * {
+  box-sizing: border-box;
+  min-width: 0;
+}
+.bb026-lab :is(p, label, dt, dd, li, figcaption, button) {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+.bb026-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+  gap: 12px;
+}
+.bb026-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 12px 0;
+}
+.bb026-field input {
+  width: 100%;
+  min-height: 44px;
+  accent-color: var(--mint, #376c4e);
+}
+.bb026-lab :is(select, textarea, button) {
+  font: inherit;
+  color: inherit;
+  background: var(--surface, #fffefa);
+  border: 1px solid var(--border, #819c8c);
+  border-radius: 6px;
+  padding: 8px;
+  max-width: 100%;
+  min-height: 44px;
+}
+.bb026-lab :is(select, textarea) {
+  display: block;
+  width: 100%;
+  margin: 6px 0 12px;
+}
+.bb026-lab textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+.bb026-lab button {
+  display: block;
+  margin: 12px 0;
+  white-space: normal;
+  cursor: pointer;
+}
+.bb026-lab button:disabled {
+  cursor: default;
+  opacity: 0.65;
+}
+.bb026-facts {
+  margin: 12px 0;
+}
+.bb026-facts > div {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border, #819c8c);
+}
+.bb026-facts dt {
+  font-weight: 700;
+}
+.bb026-facts dd {
+  margin: 4px 0 0;
+}
+.bb026-figure {
+  margin: 16px 0;
+}
+.bb026-figure svg {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  margin: 12px auto;
+}
+.bb026-figure text {
+  font:
+    20px Lexend,
+    sans-serif;
+  fill: currentColor;
+}
+.bb026-node {
+  fill: var(--surface, #fffefa);
+  stroke: currentColor;
+  stroke-width: 2;
+}
+.bb026-bond,
+.bb026-cut,
+.bb026-cross {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 3;
+}
+.bb026-cut {
+  stroke-dasharray: 5 6;
+}
+.bb026-cross {
+  stroke: var(--accent, #a94327);
+}
+.bb026-compare {
+  border-top: 2px solid var(--border, #819c8c);
+  margin-top: 20px;
+  padding-top: 12px;
+}
+.bb026-feedback,
+.bb026-proof {
+  border-left: 4px solid var(--mint, #376c4e);
+  padding: 8px;
+  background: var(--surface, #fffefa);
+}
+@media (max-width: 600px) {
+  .bb026-lab {
+    padding: 6px;
+  }
+  .bb026-lab button {
+    padding-inline: 4px;
+  }
+  .bb026-lab :is(ol, ul) {
+    padding-inline-start: 4px;
+    list-style-position: inside;
+  }
+  .bb026-feedback,
+  .bb026-proof {
+    padding-inline: 4px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bb026-lab * {
+    animation: none;
+    transition: none;
+  }
+}

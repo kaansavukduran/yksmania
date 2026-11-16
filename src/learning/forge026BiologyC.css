@@ -1,0 +1,210 @@
+.bc026-lab {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+  max-width: 100%;
+  padding-block: 1rem;
+  border-block: 1px solid var(--border);
+}
+.bc026-lab :is(h3, p, figure, dl, fieldset) {
+  margin: 0;
+}
+.bc026-lab :is(p, li, dt, dd, legend) {
+  line-height: 1.7;
+}
+.bc026-controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: end;
+}
+.bc026-field {
+  display: grid;
+  gap: 0.4rem;
+  min-width: 0;
+}
+.bc026-field > span {
+  font-weight: 650;
+}
+.bc026-field :is(select, textarea, input[type="number"]) {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: 0.6rem;
+  font: inherit;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+}
+.bc026-field input[type="range"] {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  margin: 0;
+  accent-color: var(--accent);
+}
+.bc026-field output {
+  font-variant-numeric: tabular-nums;
+}
+.bc026-check {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 0.5rem;
+  align-items: center;
+  min-width: 0;
+}
+.bc026-check input {
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  accent-color: var(--accent);
+}
+.bc026-cuts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.4rem;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  min-width: 0;
+}
+.bc026-cuts legend {
+  padding-inline: 0.3rem;
+}
+.bc026-figure,
+.bc026-prediction,
+.bc026-lab [data-model-result] {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+}
+.bc026-figure svg {
+  display: block;
+  width: 100%;
+  max-width: 22rem;
+  height: auto;
+  justify-self: center;
+  overflow: visible;
+}
+.bc026-figure text {
+  font-family: inherit;
+  font-size: 17px;
+  fill: var(--text);
+}
+.bc026-node {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 1.2;
+}
+.bc026-marker {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 0.7;
+}
+.bc026-link,
+.bc026-axis {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 1.6;
+  vector-effect: non-scaling-stroke;
+}
+.bc026-cut {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 1.4;
+  stroke-dasharray: 5 5;
+  vector-effect: non-scaling-stroke;
+}
+.bc026-curve {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2.4;
+  vector-effect: non-scaling-stroke;
+}
+.bc026-dashed {
+  stroke: var(--text);
+  stroke-dasharray: 5 5;
+}
+.bc026-values {
+  display: grid;
+  gap: 0.5rem;
+  min-width: 0;
+}
+.bc026-values > div {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 0.6rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+.bc026-values dt {
+  color: var(--muted);
+}
+.bc026-values dd {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+.bc026-records {
+  padding-inline-start: 1.2rem;
+  min-width: 0;
+}
+.bc026-records li {
+  margin-block: 0.45rem;
+}
+.bc026-records summary {
+  min-height: 44px;
+  cursor: pointer;
+}
+.bc026-scope,
+.bc026-feedback {
+  border-inline-start: 3px solid var(--border);
+  padding-inline-start: 0.7rem;
+}
+.bc026-feedback {
+  border-color: var(--accent);
+}
+.bc026-prediction {
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+.bc026-prediction button {
+  min-height: 44px;
+  padding: 0.6rem;
+  max-width: 100%;
+  font: inherit;
+  white-space: normal;
+}
+.bc026-lab :is(input, select, textarea, button, summary):focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+@media (max-width: 700px) {
+  .bc026-controls,
+  .bc026-values > div,
+  .bc026-cuts {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .bc026-values > div {
+    gap: 0.25rem;
+  }
+  .bc026-cuts,
+  .bc026-field :is(select, textarea),
+  .bc026-prediction button {
+    padding-inline: 6px;
+  }
+  .bc026-records,
+  .bc026-records :is(ul, ol),
+  .bc026-scope,
+  .bc026-feedback {
+    padding-inline-start: 6px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bc026-lab * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,3 +1,4 @@
+import { legacy026Packs, legacy026QuestionIds } from "./legacy026";
 import { forge025MathTopics } from "./forge025Math";
 import { forge025ChemistryTopics } from "./forge025Chemistry";
 import { forge025HumanitiesTopics } from "./forge025Humanities";
@@ -207,6 +208,24 @@ const Forge025Math = lazy(() => import("./Forge025MathLab"));
 const Forge025Chemistry = lazy(() => import("./Forge025ChemistryLab"));
 const Forge025Humanities = lazy(() => import("./Forge025HumanitiesLab"));
 const Forge025Biology = lazy(() => import("./Forge025BiologyLab"));
+const Forge026Math = lazy(() => import("./Forge026MathLab"));
+const Forge026Physics = lazy(() => import("./Forge026PhysicsLab"));
+const Forge026Chemistry = lazy(() => import("./Forge026ChemistryLab"));
+const Forge026BiologyA = lazy(() => import("./Forge026BiologyALab"));
+const Forge026BiologyB = lazy(() => import("./Forge026BiologyBLab"));
+const Forge026BiologyC = lazy(() => import("./Forge026BiologyCLab"));
+const Forge026History = lazy(() => import("./Forge026HistoryLab"));
+const Forge026HistoryB = lazy(() => import("./Forge026HistoryBLab"));
+const source026Models: Record<string, ComponentType<{ lessonId: string }>> = {
+  Math: Forge026Math,
+  Physics: Forge026Physics,
+  Chemistry: Forge026Chemistry,
+  BiologyA: Forge026BiologyA,
+  BiologyB: Forge026BiologyB,
+  BiologyC: Forge026BiologyC,
+  History: Forge026History,
+  HistoryB: Forge026HistoryB,
+};
 const source025Labs: {
   topics: Record<string, string>;
   Component: ComponentType<{ lessonId: string }>;
@@ -371,7 +390,18 @@ const continuationLabs: {
 ];
 export function VisualLab({ id }: { id: string }) {
   const { t } = useApp();
-  if (questionOnly019.has(id) || id === "dna-replikasyonu-ileri") return null;
+  if (
+    legacy026QuestionIds.has(id) ||
+    questionOnly019.has(id) ||
+    id === "dna-replikasyonu-ileri"
+  )
+    return null;
+  const enrichedPack = legacy026Packs.find((p) =>
+    p.guides.some((g) => g.id === id),
+  );
+  const EnrichedModel = enrichedPack
+    ? source026Models[enrichedPack.family]
+    : undefined;
   const Source025Lab = source025Labs.find(({ topics }) =>
     Object.hasOwn(topics, id),
   )?.Component;
@@ -413,98 +443,103 @@ export function VisualLab({ id }: { id: string }) {
   )?.Component;
   return (
     <Suspense fallback={<p role="status">{t("loading")}</p>}>
-      {Source025Lab ? (
-        <Source025Lab key={id} lessonId={id} />
-      ) : Source024Lab ? (
-        <Source024Lab key={id} lessonId={id} />
-      ) : Source023Lab ? (
-        <Source023Lab key={id} lessonId={id} />
-      ) : Source022Lab ? (
-        <Source022Lab key={id} lessonId={id} />
-      ) : Source021Lab ? (
-        <Source021Lab key={id} lessonId={id} />
-      ) : Source020Lab ? (
-        <Source020Lab key={id} lessonId={id} />
-      ) : Source019Lab ? (
-        <Source019Lab key={id} lessonId={id} />
-      ) : Source018Lab ? (
-        <Source018Lab key={id} lessonId={id} />
-      ) : Source017Lab ? (
-        <Source017Lab key={id} lessonId={id} />
-      ) : Source016Lab ? (
-        <Source016Lab key={id} lessonId={id} />
-      ) : Source015Lab ? (
-        <Source015Lab key={id} lessonId={id} />
-      ) : Source014Lab ? (
-        <Source014Lab key={id} lessonId={id} />
-      ) : ContinuationLab ? (
-        <ContinuationLab key={id} id={id} />
-      ) : id === "dunya-gucu-osmanli" ? (
-        <WorldPower />
-      ) : id === "kimyasal-turler-lewis" ? (
-        <Species />
-      ) : id === "isi-ve-sicaklik" ? (
-        <Heat />
-      ) : id === "nukleik-asitler" ? (
-        <Nucleic />
-      ) : id === "iyonik-bag-ve-guclu-etkilesimler" ? (
-        <Ionic />
-      ) : id === "iyonik-bilesik-adlandirma" ? (
-        <Ionic naming />
-      ) : [
-          "elementlerin-siniflandirilmasi",
-          "atom-capi-karsilastirma",
-          "iyonlasma-enerjisi",
-          "elektron-ilgisi-elektronegatiflik",
-        ].includes(id) ? (
-        <PeriodicReasoning key={id} id={id} />
-      ) : id === "ses-bilgisi" || id === "sozcukte-yapi" ? (
-        <Language structure={id === "sozcukte-yapi"} />
-      ) : id === "carpanlara-ayirma" ? (
-        <Factorization />
-      ) : id === "katman-elektron-dizilimi" ? (
-        <Shells />
-      ) : id === "birinci-dereceden-denklemler" ||
-        id === "basit-esitsizlikler" ? (
-        <Algebra key={id} inequality={id === "basit-esitsizlikler"} />
-      ) : narrativeById.has(id) ? (
-        <Narrative key={id} id={id} />
-      ) : [
-          "temel-kavramlar",
-          "tek-cift-isaret",
-          "ardisik-sayilar",
-          "asal-sayilar",
-          "faktoriyel",
-        ].includes(id) ? (
-        <MathFoundations id={id} />
-      ) : [
-          "simyadan-kimyaya",
-          "kimya-disiplinleri",
-          "sembolik-dil",
-          "kimya-guvenlik",
-          "atom-modelleri",
-        ].includes(id) ? (
-        <Foundations id={id} />
-      ) : id === "hucre-organelleri" ? (
-        <Cell />
-      ) : id === "periyodik-sistem" ? (
-        <Periodic />
-      ) : id === "alan-donusumleri" ? (
-        <Geometry />
-      ) : id === "turev-teget" ? (
-        <>
-          <Derivative />
-          <Forge024Math key={id} lessonId={id} />
-        </>
-      ) : id === "elektrik-alan" ? (
-        <Field />
-      ) : id === "kimyasal-denge" ? (
-        <Equilibrium />
-      ) : id === "dna-eslenmesi" ? (
-        <Dna />
-      ) : (
-        <Compact id={id} />
-      )}
+      <>
+        {Source025Lab ? (
+          <Source025Lab key={id} lessonId={id} />
+        ) : Source024Lab ? (
+          <Source024Lab key={id} lessonId={id} />
+        ) : Source023Lab ? (
+          <Source023Lab key={id} lessonId={id} />
+        ) : Source022Lab ? (
+          <Source022Lab key={id} lessonId={id} />
+        ) : Source021Lab ? (
+          <Source021Lab key={id} lessonId={id} />
+        ) : Source020Lab ? (
+          <Source020Lab key={id} lessonId={id} />
+        ) : Source019Lab ? (
+          <Source019Lab key={id} lessonId={id} />
+        ) : Source018Lab ? (
+          <Source018Lab key={id} lessonId={id} />
+        ) : Source017Lab ? (
+          <Source017Lab key={id} lessonId={id} />
+        ) : Source016Lab ? (
+          <Source016Lab key={id} lessonId={id} />
+        ) : Source015Lab ? (
+          <Source015Lab key={id} lessonId={id} />
+        ) : Source014Lab ? (
+          <Source014Lab key={id} lessonId={id} />
+        ) : ContinuationLab ? (
+          <ContinuationLab key={id} id={id} />
+        ) : id === "dunya-gucu-osmanli" ? (
+          <WorldPower />
+        ) : id === "kimyasal-turler-lewis" ? (
+          <Species />
+        ) : id === "isi-ve-sicaklik" ? (
+          <Heat />
+        ) : id === "nukleik-asitler" ? (
+          <Nucleic />
+        ) : id === "iyonik-bag-ve-guclu-etkilesimler" ? (
+          <Ionic />
+        ) : id === "iyonik-bilesik-adlandirma" ? (
+          <Ionic naming />
+        ) : [
+            "elementlerin-siniflandirilmasi",
+            "atom-capi-karsilastirma",
+            "iyonlasma-enerjisi",
+            "elektron-ilgisi-elektronegatiflik",
+          ].includes(id) ? (
+          <PeriodicReasoning key={id} id={id} />
+        ) : id === "ses-bilgisi" || id === "sozcukte-yapi" ? (
+          <Language structure={id === "sozcukte-yapi"} />
+        ) : id === "carpanlara-ayirma" ? (
+          <Factorization />
+        ) : id === "katman-elektron-dizilimi" ? (
+          <Shells />
+        ) : id === "birinci-dereceden-denklemler" ||
+          id === "basit-esitsizlikler" ? (
+          <Algebra key={id} inequality={id === "basit-esitsizlikler"} />
+        ) : narrativeById.has(id) ? (
+          <Narrative key={id} id={id} />
+        ) : [
+            "temel-kavramlar",
+            "tek-cift-isaret",
+            "ardisik-sayilar",
+            "asal-sayilar",
+            "faktoriyel",
+          ].includes(id) ? (
+          <MathFoundations id={id} />
+        ) : [
+            "simyadan-kimyaya",
+            "kimya-disiplinleri",
+            "sembolik-dil",
+            "kimya-guvenlik",
+            "atom-modelleri",
+          ].includes(id) ? (
+          <Foundations id={id} />
+        ) : id === "hucre-organelleri" ? (
+          <Cell />
+        ) : id === "periyodik-sistem" ? (
+          <Periodic />
+        ) : id === "alan-donusumleri" ? (
+          <Geometry />
+        ) : id === "turev-teget" ? (
+          <>
+            <Derivative />
+            <Forge024Math key={id} lessonId={id} />
+          </>
+        ) : id === "elektrik-alan" ? (
+          <Field />
+        ) : id === "kimyasal-denge" ? (
+          <Equilibrium />
+        ) : id === "dna-eslenmesi" ? (
+          <Dna />
+        ) : (
+          <Compact id={id} />
+        )}
+        {EnrichedModel && (
+          <EnrichedModel key={`legacy026:${id}`} lessonId={id} />
+        )}
+      </>
     </Suspense>
   );
 }

@@ -1,0 +1,191 @@
+.m026-lab {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+  max-width: 100%;
+  padding-block: 1rem;
+  border-block: 1px solid var(--border);
+}
+.m026-lab :is(h3, p, figure, dl) {
+  margin: 0;
+}
+.m026-lab p,
+.m026-lab li,
+.m026-lab dd,
+.m026-lab dt {
+  line-height: 1.7;
+}
+.m026-controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: end;
+}
+.m026-field {
+  display: grid;
+  gap: 0.4rem;
+  min-width: 0;
+}
+.m026-field > span {
+  font-weight: 650;
+}
+.m026-field :is(input, select, textarea) {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  min-height: 44px;
+  padding: 0.65rem;
+  font: inherit;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+}
+.m026-check {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  align-items: center;
+  gap: 0.5rem;
+}
+.m026-check input {
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  accent-color: var(--accent);
+}
+.m026-result,
+.m026-figure,
+.m026-prediction {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+}
+.m026-figure svg {
+  width: 100%;
+  max-width: 32rem;
+  height: auto;
+  display: block;
+  justify-self: center;
+  overflow: visible;
+}
+.m026-figure text {
+  font-size: 18px;
+  font-family: inherit;
+  fill: var(--text);
+}
+.m026-box {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 1.2;
+}
+.m026-line {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 1.2;
+  vector-effect: non-scaling-stroke;
+}
+.m026-strong {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 3;
+  vector-effect: non-scaling-stroke;
+}
+.m026-fill {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 0.6;
+}
+.m026-outline {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 1.2;
+}
+.m026-values {
+  display: grid;
+  gap: 0.6rem;
+  min-width: 0;
+}
+.m026-values > div {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 0.7rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+.m026-values dt {
+  color: var(--muted);
+}
+.m026-values dd {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+.m026-records {
+  padding-inline-start: 1.4rem;
+  min-width: 0;
+}
+.m026-records li {
+  margin-block: 0.5rem;
+}
+details.m026-records {
+  padding: 0.5rem 0;
+}
+.m026-records summary {
+  min-height: 44px;
+  cursor: pointer;
+}
+.m026-scope {
+  border-inline-start: 3px solid var(--border);
+  padding-inline-start: 0.7rem;
+}
+.m026-prediction {
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+.m026-question {
+  font-weight: 650;
+}
+.m026-prediction button {
+  min-height: 44px;
+  max-width: 100%;
+  padding: 0.65rem;
+  white-space: normal;
+}
+.m026-feedback {
+  border-inline-start: 3px solid var(--accent);
+  padding-inline-start: 0.7rem;
+}
+.m026-lab :is(input, select, textarea, button, summary):focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+@media (max-width: 700px) {
+  .m026-controls,
+  .m026-values > div {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .m026-values > div {
+    gap: 0.25rem;
+  }
+  .m026-field :is(input, select, textarea),
+  .m026-prediction button {
+    padding-inline: 6px;
+  }
+  .m026-records {
+    padding-inline-start: 6px;
+  }
+  .m026-records :is(ul, ol) {
+    padding-inline-start: 6px;
+  }
+  .m026-scope,
+  .m026-feedback {
+    padding-inline-start: 6px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .m026-lab * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

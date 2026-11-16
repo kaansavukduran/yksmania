@@ -9,6 +9,8 @@ import {
 import { lessonGuides } from "../src/learning/guides";
 import { lessonById, lessons } from "../src/domain/content";
 import { lessonTopic } from "../src/domain/studyPlan";
+import { legacy026TheoryIds } from "../src/learning/legacy026";
+import acceptedTeaching from "./fixtures/source-stage-025-lesson-fingerprints.json";
 
 it("keeps exact rational solutions and separates zero-coefficient identity from contradiction", () => {
   expect(solveEquation(3, 0, 1)).toEqual({
@@ -56,8 +58,15 @@ it("matches each original inequality across signs, zero and all four relations",
   });
 });
 it("preserves guide durations and topic associations while attaching independent algebra practice", () => {
-  for (const guide of lessonGuides.values())
-    expect(lessonById(guide.id)?.minutes, guide.id).toBe(guide.minutes);
+  for (const guide of lessonGuides.values()) {
+    const lesson = lessonById(guide.id)!;
+    // The026 expansion retains the accepted lesson record; its longer guide
+    // supplies the visible reading estimate without rewriting old metadata.
+    if (legacy026TheoryIds.has(guide.id)) {
+      expect(Object.hasOwn(acceptedTeaching, guide.id), guide.id).toBe(true);
+      expect(guide.minutes, guide.id).toBeGreaterThanOrEqual(lesson.minutes);
+    } else expect(lesson.minutes, guide.id).toBe(guide.minutes);
+  }
   expect(lessonTopic["birinci-dereceden-denklemler"]).toBe("detail-203");
   expect(lessonTopic["basit-esitsizlikler"]).toBe("detail-204");
   for (const id of ["birinci-dereceden-denklemler", "basit-esitsizlikler"]) {

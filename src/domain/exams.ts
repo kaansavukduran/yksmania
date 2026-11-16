@@ -1,7 +1,13 @@
+import { clarifiedQuestionView } from "./questionPresentation";
 import { lessons, subjects } from "./content";
 import type { AppState, Lesson, Subject } from "./model";
 import type { ExamDraft, ExamItem, ExamSession } from "./examModel";
-import { helpPanels, resolvedGuidance } from "../learning/questionHelp";
+import {
+  helpPanels,
+  previousHelpPanelCount,
+  resolvedGuidance,
+} from "../learning/questionHelp";
+import { effectiveHelpLevel } from "../learning/helpProgression";
 export type ExamSpec = {
   id: string;
   title: string;
@@ -26,7 +32,7 @@ export function scaledExamSeconds(exam: "TYT" | "AYT", count: number) {
 function snapshot(lesson: Lesson): ExamItem[] {
   const subject = subjects.find((s) => s.id === lesson.subjectId)!;
   return lesson.questions.map((q) => {
-    const helpQuestion = {
+    const helpQuestion = clarifiedQuestionView({
       id: q.id,
       prompt: q.prompt.tr,
       passage: q.passage?.tr,
@@ -35,7 +41,7 @@ function snapshot(lesson: Lesson): ExamItem[] {
       explanation: q.explanation.tr,
       hint: q.hint.tr,
       guidance: q.guidance,
-    };
+    });
     const guidance = resolvedGuidance(helpQuestion);
     return {
       id: q.id,
@@ -43,7 +49,7 @@ function snapshot(lesson: Lesson): ExamItem[] {
       subjectId: subject.id,
       subjectName: subject.name.tr,
       lessonTitle: lesson.title.tr,
-      prompt: q.prompt.tr,
+      prompt: helpQuestion.prompt,
       ...(q.passage ? { passage: q.passage.tr } : {}),
       options: q.options.map((o) => o.tr),
       answer: q.answer,
@@ -63,7 +69,9 @@ function subjectItems(
   const rows = lessons
       .filter((l) => ids.includes(l.subjectId) && l.questions.length)
       .map((lesson) =>
-        snapshot(lesson).filter((item) => !fiveOptionsOnly || item.options.length === 5),
+        snapshot(lesson).filter(
+          (item) => !fiveOptionsOnly || item.options.length === 5,
+        ),
       ),
     selectedRows = random
       ? shuffle(
@@ -105,14 +113,22 @@ function mixed(exam: "TYT" | "AYT"): ExamSpec {
   const groups = groupTargets(exam);
   // A full mock needs both the subject quotas and five-choice questions.
   // Short teaching practices retain the older cards; saved papers are snapshots.
-  const fiveOptionsOnly = groups.every(([ids, count]) =>
-    lessons.reduce((total, lesson) => total + (
-      ids.includes(lesson.subjectId)
-        ? lesson.questions.filter((question) => question.options.length === 5).length
-        : 0
-    ), 0) >= count,
+  const fiveOptionsOnly = groups.every(
+    ([ids, count]) =>
+      lessons.reduce(
+        (total, lesson) =>
+          total +
+          (ids.includes(lesson.subjectId)
+            ? lesson.questions.filter(
+                (question) => question.options.length === 5,
+              ).length
+            : 0),
+        0,
+      ) >= count,
   );
-  const selected = groups.map(([ids, count]) => subjectItems(ids, count, undefined, fiveOptionsOnly));
+  const selected = groups.map(([ids, count]) =>
+    subjectItems(ids, count, undefined, fiveOptionsOnly),
+  );
   const items = selected.flat();
   const missingSubjects = groups
     .filter(([, count], index) => selected[index].length < count)
@@ -196,18 +212,17 @@ export function selectExamVariant(
   const candidate = previewForId(spec.id);
   const known =
     candidate &&
-      candidate.id === spec.id &&
-      candidate.title === spec.title &&
-      candidate.exam === spec.exam &&
-      candidate.kind === spec.kind &&
-      candidate.durationSeconds === spec.durationSeconds &&
-      candidate.fullLength === spec.fullLength &&
-      candidate.missingSubjects.join("\n") ===
-        spec.missingSubjects.join("\n") &&
-      candidate.items.length === spec.items.length &&
-      candidate.items.every(
-        (item, i) => JSON.stringify(item) === JSON.stringify(spec.items[i]),
-      )
+    candidate.id === spec.id &&
+    candidate.title === spec.title &&
+    candidate.exam === spec.exam &&
+    candidate.kind === spec.kind &&
+    candidate.durationSeconds === spec.durationSeconds &&
+    candidate.fullLength === spec.fullLength &&
+    candidate.missingSubjects.join("\n") === spec.missingSubjects.join("\n") &&
+    candidate.items.length === spec.items.length &&
+    candidate.items.every(
+      (item, i) => JSON.stringify(item) === JSON.stringify(spec.items[i]),
+    )
       ? candidate
       : undefined;
   if (!known) return spec.items.map(copyItem);
@@ -217,7 +232,12 @@ export function selectExamVariant(
         ? groupTargets(known.exam)
         : [[[known.id.slice("branch-".length)], 40]],
     selected = groups.map(([ids, count]) =>
-      subjectItems(ids, count, random, known.kind === "mixed" && known.fullLength),
+      subjectItems(
+        ids,
+        count,
+        random,
+        known.kind === "mixed" && known.fullLength,
+      ),
     );
   const ids = selected.flatMap((group) => group.map((item) => item.id));
   // A small bank may repeat the same questions. If it repeats the entire last
@@ -294,7 +314,16 @@ export function changeExam(
   if (action.type === "help") {
     if (draft.mode !== "learning" && !draft.helpEnabled)
       throw Error("EXAM_HELP_DISABLED");
-    const limit = helpPanels(draft.items[action.index]).length + 1;
+    const question = draft.items[action.index],
+      panels = helpPanels(question),
+      limit = panels.length + 1,
+      visibleLevel = effectiveHelpLevel(
+        panels,
+        draft.helpLevels?.[action.index],
+        draft.helpPanelCounts?.[String(action.index)],
+        previousHelpPanelCount(question),
+        question.hint,
+      );
     if (
       !Number.isInteger(action.level) ||
       action.level < 1 ||
@@ -302,12 +331,21 @@ export function changeExam(
     )
       throw Error("EXAM_HELP_LEVEL");
     const helpLevels = draft.items.map((_, i) =>
-      Math.max(
-        draft.helpLevels?.[i] ?? 0,
-        i === action.index ? action.level : 0,
-      ),
+      i === action.index
+        ? Math.max(visibleLevel, action.level)
+        : (draft.helpLevels?.[i] ?? 0),
     );
-    return { ...state, examDraft: { ...draft, helpLevels } };
+    return {
+      ...state,
+      examDraft: {
+        ...draft,
+        helpLevels,
+        helpPanelCounts: {
+          ...draft.helpPanelCounts,
+          [String(action.index)]: panels.length,
+        },
+      },
+    };
   }
   if (action.type === "flag")
     return {

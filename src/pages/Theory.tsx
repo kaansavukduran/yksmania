@@ -11,7 +11,7 @@ import { GuidedReading } from "../learning/GuidedReading";
 import { lessonGuides } from "../learning/guides";
 import { TheoryReviewAction } from "../components/LearningReviews";
 import { TopicCompletion } from "../components/StudyPlanning";
-import { lessonTopic } from "../domain/studyPlan";
+import { lessonTopic, topicLessons } from "../domain/studyPlan";
 const NarrativeRecall = lazy(() =>
   import("../learning/NarrativeExplorer").then((module) => ({
     default: module.NarrativeRecall,
@@ -43,6 +43,10 @@ export function Theory({
   const subject = subjectById(lesson.subjectId)!;
   const noteKey = "lesson:" + lesson.id;
   const guide = lessonGuides.get(lesson.id);
+  const relatedTopic = lessonTopic[lesson.id];
+  const questionSetCount = relatedTopic
+    ? topicLessons(relatedTopic).filter((l) => l.questions.length > 0).length
+    : 0;
   return (
     <>
       <button
@@ -103,10 +107,22 @@ export function Theory({
             )
           )}
           {lesson.questions.length > 0 ? (
-            <button className="primary" onClick={() => practice(lesson)}>
-              {t("startQuestions")}
-              <ArrowRight size={18} />
-            </button>
+            <div className="lesson-question-actions">
+              <button className="primary" onClick={() => practice(lesson)}>
+                {t("startQuestions")}
+                <ArrowRight size={18} />
+              </button>
+              {questionSetCount > 1 && (
+                <button
+                  className="secondary"
+                  onClick={() =>
+                    navigate(`/topic?id=${relatedTopic}&mode=questions`)
+                  }
+                >
+                  Bu konunun soru setleri ({questionSetCount})
+                </button>
+              )}
+            </div>
           ) : (
             <p className="small muted">
               Bu konu şu aşamada anlatım olarak hazır. Soru seti ayrı aşamada

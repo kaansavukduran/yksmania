@@ -1,3 +1,4 @@
+import { clarifiedQuestionView } from "../domain/questionPresentation";
 import curated from "./questionHelpCatalogue.json";
 import {
   questionIdentity,
@@ -7,10 +8,28 @@ import {
 
 // Identity includes the complete stem, passage, options, key and explanation.
 // A saved exam never borrows guidance for a changed version of its question.
-const catalogue = new Map(curated.map((row) => [row.id, row]));
+type CatalogueRow = {
+  id: string;
+  identity: string;
+  hint?: string;
+  guidance: QuestionGuidance;
+  legacyPanelCount?: number;
+};
+const catalogue = new Map<string, CatalogueRow>(
+  curated.map((row) => [row.id, row]),
+);
 function matchingRow(question: HelpQuestion) {
-  const row = catalogue.get(question.id);
-  return row?.identity === questionIdentity(question) ? row : undefined;
+  const view = clarifiedQuestionView(question);
+  const row = catalogue.get(view.id);
+  return row?.identity === questionIdentity(view) ? row : undefined;
+}
+// A saved snapshot with its own guide already has that guide's numbering.
+export function previousHelpPanelCount(
+  question: HelpQuestion,
+): number | undefined {
+  return question.guidance
+    ? undefined
+    : matchingRow(question)?.legacyPanelCount;
 }
 export function resolvedGuidance(
   question: HelpQuestion,
@@ -29,7 +48,12 @@ export function helpPanels(question: HelpQuestion) {
     {
       title: "Bilmen gerekenler",
       paragraphs: [
-        ...(hint && !guidance.knowledge.includes(hint) ? [hint] : []),
+        ...(hint &&
+        !guidance.knowledge.includes(hint) &&
+        guidance.strategy !== hint &&
+        !guidance.steps.includes(hint)
+          ? [hint]
+          : []),
         ...guidance.knowledge,
       ],
     },

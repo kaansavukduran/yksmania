@@ -294,7 +294,7 @@ test("progress reset is cancellable and atomic, preserves legacy files and nativ
     .fill("Kağıt notum korunmalı");
   await saved(page);
   await rational(page);
-  await page.locator(".lesson-article > .primary").click();
+  await page.getByRole("button", { name: "Sorulara geç", exact: true }).click();
   for (const index of [1, 2, 0, 1, 1]) {
     await page.locator(".answer").nth(index).click();
     await page.locator(".question-actions .primary").click();

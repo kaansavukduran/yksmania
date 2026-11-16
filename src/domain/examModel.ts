@@ -29,6 +29,7 @@ const shape = {
   mode: z.enum(["simulation", "learning"]).optional(),
   helpEnabled: z.boolean().optional(),
   helpLevels: z.array(helpLevelSchema).min(1).max(300).optional(),
+  helpPanelCounts: z.record(z.string(), helpLevelSchema).optional(),
 };
 type DraftValue = {
   items: {
@@ -44,6 +45,7 @@ type DraftValue = {
   deadline: number;
   durationSeconds: number;
   helpLevels?: number[];
+  helpPanelCounts?: Record<string, number>;
 };
 function check(value: DraftValue, context: z.RefinementCtx) {
   if (
@@ -61,7 +63,12 @@ function check(value: DraftValue, context: z.RefinementCtx) {
         (value.answers[i] !== null && value.answers[i]! >= q.options.length),
     ) ||
     (value.helpLevels !== undefined &&
-      value.helpLevels.length !== value.items.length)
+      value.helpLevels.length !== value.items.length) ||
+    (value.helpPanelCounts !== undefined &&
+      Object.keys(value.helpPanelCounts).some(
+        (key) =>
+          !/^(0|[1-9]\d*)$/.test(key) || Number(key) >= value.items.length,
+      ))
   ) {
     context.addIssue({ code: "custom", message: "INVALID_EXAM_STATE" });
   }

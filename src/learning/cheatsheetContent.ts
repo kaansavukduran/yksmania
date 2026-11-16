@@ -1,3 +1,4 @@
+import { legacy026TheoryIds } from "./legacy026";
 import { forge025MathTopics } from "./forge025Math";
 import { forge025ChemistryTopics } from "./forge025Chemistry";
 import { forge025HumanitiesTopics } from "./forge025Humanities";
@@ -108,6 +109,7 @@ export interface CheatSheet {
 }
 
 const completeSourceSheets = new Set([
+  ...legacy026TheoryIds,
   "turev-teget",
   "mol",
   "carpanlara-ayirma",

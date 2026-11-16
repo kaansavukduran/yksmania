@@ -1,3 +1,4 @@
+import { legacy026Topics } from "../learning/legacy026";
 import { forge025MathTopics } from "../learning/forge025Math";
 import { forge025ChemistryTopics } from "../learning/forge025Chemistry";
 import { forge025HumanitiesTopics } from "../learning/forge025Humanities";
@@ -113,6 +114,7 @@ export const studyTopicById = (id: string) =>
   studyTopics.find((t) => t.id === id);
 // Only reviewed one-to-one subject/topic associations; no fuzzy learning credit.
 export const lessonTopic: Record<string, string> = {
+  ...legacy026Topics,
   ...forge025MathTopics,
   ...forge025ChemistryTopics,
   ...forge025HumanitiesTopics,

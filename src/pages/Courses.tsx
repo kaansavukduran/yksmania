@@ -1,3 +1,4 @@
+import { lessonGuides } from "../learning/guides";
 import { useMemo, useState } from "react";
 import { Search, ChevronDown, ArrowRight } from "lucide-react";
 import { useApp } from "../store";
@@ -137,7 +138,7 @@ export function Courses({
                             {l(lesson.title)}
                             <small>
                               {mode === "theory"
-                                ? `${lesson.minutes} ${t("minutes")}`
+                                ? `${lessonGuides.get(lesson.id)?.minutes ?? lesson.minutes} ${t("minutes")}`
                                 : `${lesson.questions.length} ${t("originalQuestions")}`}
                             </small>
                           </span>

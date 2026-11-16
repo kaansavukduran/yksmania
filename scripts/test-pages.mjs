@@ -1,4 +1,8 @@
 import {
+  forge026SmokeCases,
+  runForge026SmokeCase,
+} from "./forge026-smoke-cases.mjs";
+import {
   forge025SmokeCases,
   runForge025SmokeCase,
 } from "./forge025-smoke-cases.mjs";
@@ -525,7 +529,13 @@ try {
     forge025Snapshots.push(await runForge025SmokeCase(page, nav, unit));
     cases.push(unit.id);
   }
-  expect(cases).toHaveLength(85);
+  expect(forge026SmokeCases).toHaveLength(8);
+  const forge026Snapshots = [];
+  for (const unit of forge026SmokeCases) {
+    forge026Snapshots.push(await runForge026SmokeCase(page, nav, unit));
+    cases.push(unit.id);
+  }
+  expect(cases).toHaveLength(93);
   await page.getByRole("button", { name: "Sorulara geç", exact: true }).click();
   await expect(page.locator(".answer")).toHaveCount(5);
   await page.locator(".answer").first().click();
@@ -761,6 +771,10 @@ try {
       (item) => item.id,
     ),
     forge025ExplorationWithoutLearningCredit: "PASS",
+    forge026FamiliesOfflineHtmlStateAndReload: forge026Snapshots.map(
+      (item) => item.id,
+    ),
+    forge026ExplorationWithoutLearningCredit: "PASS",
     forge020FamiliesOfflineHtmlStateAndReload: forge020Snapshots.map(
       (item) => item.id,
     ),

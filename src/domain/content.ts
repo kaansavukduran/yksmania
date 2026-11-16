@@ -1,3 +1,7 @@
+import {
+  legacy026QuestionLessons,
+  legacy026TheoryIds,
+} from "../learning/legacy026";
 import { forge025MathLessons } from "../learning/forge025Math";
 import { forge025ChemistryLessons } from "../learning/forge025Chemistry";
 import { forge025HumanitiesLessons } from "../learning/forge025Humanities";
@@ -920,6 +924,7 @@ const baseLessons: Lesson[] = [
   chemicalSpeciesLesson,
   heatTemperatureLesson,
   ...ionicLessons,
+  ...legacy026QuestionLessons,
   ...forge025MathLessons,
   ...forge025ChemistryLessons,
   ...forge025HumanitiesLessons,
@@ -1026,7 +1031,9 @@ export const lessons: Lesson[] = baseLessons.map((lesson) => {
       foundation013QuestionsByLesson[expanded.id] ??
       foundationQuestionsByLesson[expanded.id] ??
       expanded.questions,
-    minutes: lessonGuides.get(expanded.id)?.minutes ?? expanded.minutes,
+    minutes: legacy026TheoryIds.has(expanded.id)
+      ? expanded.minutes
+      : (lessonGuides.get(expanded.id)?.minutes ?? expanded.minutes),
   };
 });
 export const lessonById = (id: string) => lessons.find((l) => l.id === id);

@@ -2,7 +2,7 @@ import { expect, it } from "vitest";
 import previousAnswers from "./fixtures/0.9.1-question-answers.json";
 import { lessons } from "../src/domain/content";
 import { lessonGuides } from "../src/learning/guides";
-import { examCatalogue } from "../src/domain/exams";
+import { examCatalogue, selectExamVariant } from "../src/domain/exams";
 import { topicLessons } from "../src/domain/studyPlan";
 const links = [
   ["dunya-gucu-osmanli", "detail-236"],
@@ -33,7 +33,11 @@ it("connects each source heading, detailed guide and original bank to actual bra
       (e) => e.id === `branch-${lesson.subjectId}`,
     )!;
     expect(
-      branch.items.some((q) => q.lessonId === id),
+      Array.from({ length: 20 }, (_, attempt) =>
+        selectExamVariant(branch, `retained-source-${attempt}`),
+      )
+        .flat()
+        .some((q) => q.lessonId === id),
       id,
     ).toBe(true);
   }
