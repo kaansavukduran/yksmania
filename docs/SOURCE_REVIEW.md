@@ -1,3 +1,26 @@
+# Kaynak 022 — gerçek okuma ve bağımsız içerik sınırları
+
+Yeni 30 konu özgün öğretime dönüştürüldü;ham PDF, Drive kimliği ve kaynak URL’si Git’e alınmadı. Yazar ve bağımsız okuyucunun sayfa sayıları birbirinin yerine kullanılmaz.
+
+| Alan | Kaynakta gerçekten incelenen sınır/öğretim |
+| --- | --- |
+| Matematik 5 |MEBİ AYT 15–27/32–52, TYT 104–108, üç OGM video notu ve geometri kağıdı;14 kaynak şekli. Gerçek diskriminant/Vieta/kompleks/eşitsizlik/parabol/trigonometri koşulları. |
+| Fizik 3 |MEBİ/OGM/Cepte gerçek harmonik, kırınım, girişim sayfaları;koherent kaynak ve eşit katkı koşulları soruda açık. |
+| Biyoloji 5 |Yazar 150 fiziksel metin sayfası ve 40 görüntü sayfası/12 kontakt paftası;fermantasyon/günlük karbon/meristem/alan/floem bütçesi. Bağımsız 8251 geçerli+27 invalid model durumu ayrı kanıt. |
+| Elektrokimya 5 |Yazar 144 fiziksel metin sayfası/18 PNG;77 bölüm 50 kart. SHE referansı, iyon/elektron yolu, stok/Faraday/koruma koşulları açık. |
+| Organik giriş 5 |Gerçek karbon ağları, yanma-formül, hibrit, VSEPR vealkan bağlantıları;70 özgün kart. Kaynak/model peeri gerçek atom/bağ bütçelerini ayrı denetledi. |
+| Türkçe/felsefe/inanç 7 |232 fiziksel metin sayfası, 16 PNG;MEBİ okunabilir çıkarım 1056 satır, Mill’den 4455 karakter ayrı.166 bölüm 100 kart;tam kitap okundu iddiası yok. |
+
+Kaynak hataları otomatik taşınmaz: negatif ikinci derece için a<0, Vieta çarpımı, koşullu kaynak girişimi, hücre alanı paydası, floemde sonlu donör stok, SHE’de standart koşullar/elektrot rolü ve yanlış basılı felsefe cevap anahtarları ayrı kontrol edildi. Yeni 110 soru yardımı sonradan yazılıp bağımsız tüm alan/payload denetiminden geçti.
+
+Soru gövdesi, pasajı ve gerekli varsayım kendi kartındadır.390 yeni kart ve 172 worked, normalUI 61 kabulünü geçti;bu pedagojik etki deneyi veya tüm arşiv tamamlandı kanıtı değildir. Özgün kartlar resmî ÖSYM sorusu diye sunulmaz.
+
+Canlı sürüm0.17’dir: [Vercel](https://yksmania.vercel.app), [Pages](https://kaansavukduran.github.io/yksmania/) ve [Windows/Linux indirmeleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.17.0-alpha.1). Kaynak3a3a6c5ab6949d2a4b14076f4af4d8aefba656a2 üzerinde832 birim/737 tarayıcı,737 yayımlanmış kabul ve54 aile gerçek paketli masaüstü/Pages geçti. Bu0.18 adayının sayıları canlıya eklenmiş sayılmaz. Android imza ayarı ertelendi; yeni APK yoktur. Fiziksel cihaz,temiz kurulum,portable taşıma ve native sürümler arasında veri koruyan kurulum test edilmedi.
+
+---
+
+## Önceki aday checkpoint kayıtları
+
 # 0.17 adayı — 259–348 kaynak yakın okuması
 
 Gerçek Aurelia/YKS belgeleri, ilgili MEBİ ve OGM kaynakları öğretime dönüştürüldü. Canlı klasör listesi, indirme, metin çıkarımı, fiziksel sayfa ve açılmış görsel farklı kanıtlardır. Aşağıdaki sınırlı okuma bütün kitap veya bütün Drive iddiası değildir. Ham PDF, özel dosya kimliği ve özel Drive bağlantısı halka açık depoya konulmaz.

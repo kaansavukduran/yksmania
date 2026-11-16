@@ -1,3 +1,28 @@
+# 0.18.0 — kaynak 022 son ürün kontrolleri
+
+| Kapı | Gerçek sonuç |
+| --- | --- |
+| Modül yolu/TypeScript |288 ad, PASS |
+| Birim |1007/1007, 121 dosya PASS |
+| Yeni normal/telefon UI |61/61 son koşu PASS |
+| Önceki 021 tam CI |926 birim/798 tarayıcı, paketli Windows/Linux PASS |
+| Normal ve prefix derleme |215 gerekli varlık, 218 precache, tek dosya<5 MiB PASS |
+|022 native/Pages |67 aile Electron PASS; Pages koşusu sürüyor |
+| Tam E 2 E |859 vaka;uzak son koşu bekleniyor |
+| Özel veri/bağımlılık |259 metin yolu 16.7 MB, 9175 özel kimlik/9425 URL ile 0 eşleşme;yalnız önceki Bricolage ek bağımlılığı |
+
+61 son vaka gerçek menüden konuya giriş, model değişimi, not, kalıcı keşif, ilk offline/reload ve öğrenme kredisi oluşmamasını denetler. Telefon 320 px/UI 200/yazı 150, gerçekSystem+Lexend, reduced-motion veaxe kontrolündedir. Önceki 41/20 ve 59/2 başarısızlık kayıtları tutulur;ilk yanlış 0.11 önizlemeye giden 60 başarısız vaka yeni ürün sonucu sayılmaz.
+
+Bulunan gerçek kusurlar: biyoloji alan açıklaması yüzde yerine%{fmt022(palisade)} yazıyordu; şablon gerçek%40 olarak düzeldi ve regresyon bunu denetler. Korozyonda 0.65 gZn, 1930 C kapasite ve 2500 C talepte stok 0 olsa da çizim doluydu; kalan paya bağlı dolgu 0, y=252 temas noktası ve 570 C açık birlikte denetlenir. Gerçek büyük yazı bölünmeleri/dar düğmeler düzeldi. Kimya rol seçicisi output’ların örtük status rolünü de yakalıyordu;yalnız açık geri bildirim paragrafı seçilir. Matematik SVG title artık tek stringdir;3 React SSR uyarısı kapanır.
+
+Eski 3650 soru, 385 öğretim kaydı ve 115/80 tam deneme snapshotları strict hash/tamJSON ile korunur. Kendi kaynak/modelSSR kanıtı normalUI, gerçekIDB veya fiziksel kurulum kabulü yerine geçmez.
+
+Canlı sürüm0.17’dir: [Vercel](https://yksmania.vercel.app), [Pages](https://kaansavukduran.github.io/yksmania/) ve [Windows/Linux indirmeleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.17.0-alpha.1). Kaynak3a3a6c5ab6949d2a4b14076f4af4d8aefba656a2 üzerinde832 birim/737 tarayıcı,737 yayımlanmış kabul ve54 aile gerçek paketli masaüstü/Pages geçti. Bu0.18 adayının sayıları canlıya eklenmiş sayılmaz. Android imza ayarı ertelendi; yeni APK yoktur. Fiziksel cihaz,temiz kurulum,portable taşıma ve native sürümler arasında veri koruyan kurulum test edilmedi.
+
+---
+
+## Önceki aday checkpoint kayıtları
+
 # 0.18.0 kaynak adayı — 349–378. başlıklar
 
 Güncel kaynakta 380 anlatım,352 ayrıntılı rehber,380 yerleşik özet ve 3650 özgün soru var; ilk 378/479 başlık anlatım+soruyla eşleşir. Bu paket 30 yeni anlatım ve 310 yeni beş seçenekli soru ekler. Kaynak/ikinci okuyucu kabulü ile ürün/yayın kabulü ayrıdır. Henüz 0.18 üretim yayını yoktur.

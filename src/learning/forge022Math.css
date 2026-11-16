@@ -1,0 +1,235 @@
+.forge022-math-lab {
+  min-width: 0;
+  max-width: 100%;
+  margin-block: 1.5rem;
+  padding: clamp(0.75rem, 2vw, 1.5rem);
+  background: var(--surface-2, var(--surface));
+  border-block: 1px solid var(--border);
+}
+.forge022-math-lab :is(p, h3, label, button, figcaption, strong, output) {
+  overflow-wrap: anywhere;
+  word-break: normal;
+  hyphens: none;
+}
+.forge022-math-lab :is(input, select, textarea, button) {
+  box-sizing: border-box;
+  font: inherit;
+  max-width: 100%;
+  min-width: 0;
+}
+.forge022-math-lab :is(select, textarea, input[type="range"]) {
+  width: 100%;
+}
+.forge022-math-lab
+  :is(button, select, input[type="range"], input[type="checkbox"]) {
+  min-height: 44px;
+}
+.forge022-math-lab :is(button, select) {
+  white-space: normal;
+}
+.forge022-math-lab button {
+  line-height: 1.45;
+  padding: 0.65rem 0.85rem;
+}
+.forge022-math-lab select {
+  padding: 0.65rem 0.35rem;
+  line-height: 1.5;
+}
+.forge022-math-lab textarea {
+  min-height: 5rem;
+  padding: 0.65rem;
+  line-height: 1.5;
+}
+.forge022-math-lab input[type="range"] {
+  margin: 0;
+}
+.m022-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 1.2rem;
+  margin-block: 1.25rem;
+}
+.m022-field {
+  display: grid;
+  align-content: start;
+  gap: 0.5rem;
+  min-width: 0;
+  margin-block: 0.65rem;
+}
+.m022-field p {
+  margin: 0;
+}
+.m022-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  min-height: 44px;
+  margin-block: 0.6rem;
+}
+.m022-toggle input {
+  flex: 0 0 44px;
+  width: 44px;
+  accent-color: var(--accent);
+}
+.m022-toggle span {
+  min-width: 0;
+}
+.m022-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-block: 1rem;
+}
+.m022-actions > * {
+  flex: 1 1 12rem;
+}
+.m022-figure {
+  margin: 1.25rem 0;
+  min-width: 0;
+}
+.m022-figure svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 700px;
+  margin-inline: auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+.m022-figure figcaption {
+  margin-block: 0.75rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+.m022-grid {
+  stroke: var(--muted);
+  stroke-width: 0.65;
+  stroke-dasharray: 3 7;
+  fill: none;
+  opacity: 0.55;
+}
+.m022-axis {
+  stroke: var(--text);
+  stroke-width: 1.8;
+  fill: none;
+}
+.m022-line {
+  stroke: var(--plot-blue, var(--text));
+  stroke-width: 3;
+  fill: none;
+}
+.m022-curve {
+  stroke: var(--accent);
+  stroke-width: 3.5;
+  fill: none;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.m022-dashed {
+  stroke: var(--text);
+  stroke-width: 2;
+  stroke-dasharray: 7 7;
+  fill: none;
+}
+.m022-vector {
+  stroke: var(--text);
+  stroke-width: 2.2;
+  fill: none;
+}
+.m022-vector-alt {
+  stroke: var(--mint);
+  stroke-width: 3;
+  fill: none;
+}
+.m022-point {
+  fill: var(--accent);
+  stroke: var(--surface);
+  stroke-width: 2;
+}
+.m022-point-alt {
+  fill: var(--plot-blue, var(--text));
+  stroke: var(--surface);
+  stroke-width: 2;
+}
+.m022-point-result {
+  fill: var(--text);
+  stroke: var(--surface);
+  stroke-width: 2;
+}
+.m022-open {
+  fill: var(--surface);
+  stroke: var(--text);
+  stroke-width: 3;
+}
+.m022-text {
+  fill: var(--text);
+  stroke: var(--surface);
+  stroke-width: 5;
+  paint-order: stroke;
+  stroke-linejoin: round;
+  font-family: inherit;
+}
+.m022-solution {
+  stroke: var(--mint);
+  stroke-width: 8;
+  fill: none;
+  stroke-linecap: butt;
+}
+.m022-triangle {
+  fill: var(--accent);
+  fill-opacity: 0.13;
+  stroke: var(--accent);
+  stroke-width: 3;
+}
+.m022-guess {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 1.4rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  min-width: 0;
+}
+.m022-guess > p {
+  margin: 0.2rem 0;
+}
+.m022-guess > button {
+  width: 100%;
+}
+.m022-feedback {
+  border-left: 3px solid var(--accent);
+  padding: 0.75rem 0 0.75rem 0.75rem;
+  min-width: 0;
+}
+.m022-note {
+  color: var(--muted);
+  line-height: 1.7;
+}
+.forge022-math-lab [data-model-result] {
+  padding-block: 0.6rem;
+  border-block: 1px solid var(--border);
+  line-height: 1.75;
+  min-width: 0;
+}
+@media (max-width: 650px) {
+  .forge022-math-lab {
+    padding-inline: 0;
+  }
+  .m022-feedback {
+    padding-inline: 0;
+    border-left: 0;
+    border-top: 2px solid var(--accent);
+  }
+  .m022-actions > * {
+    flex-basis: 100%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .forge022-math-lab * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+[data-motion="false"] .forge022-math-lab * {
+  animation: none !important;
+  transition: none !important;
+}

@@ -81,12 +81,12 @@ it("appends DNA content without rewriting its original sections, examples, recal
 
 it("adds philosophy practice and115-question TYT while preserving entire old110/55-item papers and their timing", () => {
   const catalogue = examCatalogue(), tyt = catalogue.find((e) => e.id === "mixed-tyt")!, ayt = catalogue.find((e) => e.id === "mixed-ayt")!;
-  expect(catalogue).toHaveLength(16);
-  expect(tyt.items).toHaveLength(115);
+  expect(catalogue).toHaveLength(17);
+  expect(tyt.items).toHaveLength(120);
   expect(tyt.items.filter((q) => q.subjectId === "tyt-felsefe")).toHaveLength(5);
-  expect(tyt.missingSubjects).toEqual(["Din Kültürü"]);
-  expect(tyt.fullLength).toBe(false);
-  expect(tyt.durationSeconds).toBe(scaledExamSeconds("TYT", 115));
+  expect(tyt.missingSubjects).toEqual([]);
+  expect(tyt.fullLength).toBe(true);
+  expect(tyt.durationSeconds).toBe(scaledExamSeconds("TYT", tyt.items.length));
   expect(ayt.items.length).toBeGreaterThanOrEqual(55);
   expect(ayt.durationSeconds).toBe(scaledExamSeconds("AYT", ayt.items.length));
   expect(beforePapers.map((p) => p.items.length)).toEqual([110, 55]);

@@ -106,11 +106,11 @@ it("adds real geography practice while preserving a complete earlier 105-item ex
     expect.arrayContaining(retainedCatalogue),
   );
   expect(catalogue.length).toBeGreaterThanOrEqual(14);
-  expect(tyt.items).toHaveLength(115);
-  expect(tyt.fullLength).toBe(false);
-  expect(tyt.missingSubjects).toEqual(["Din Kültürü"]);
+  expect(tyt.items).toHaveLength(120);
+  expect(tyt.fullLength).toBe(true);
+  expect(tyt.missingSubjects).toEqual([]);
   expect(tyt.items.filter((q) => q.subjectId === "tyt-felsefe")).toHaveLength(5);
-  expect(tyt.items.filter((q) => q.subjectId === "tyt-din")).toHaveLength(0);
+  expect(tyt.items.filter((q) => q.subjectId === "tyt-din")).toHaveLength(5);
   expect(tyt.items.filter((q) => q.subjectId === "tyt-cografya")).toHaveLength(
     5,
   );

@@ -1,3 +1,19 @@
+# 0.18 için sıradaki uygulanacak kapsam
+
+Önce 379–408 paketinin 67 aile Electron/Pages ve 859 tam tarayıcı kapısını kapat;1007 birim ve 61 yeni normal/telefon vakası geçti. Güncel aday 410 anlatım/382 rehber/410 özet/4040 soru, ilk 408/479 başlık. Canlı 0.17 ayrı tutulur.
+
+Sonra 409–438: yedi bağımsız aile, 30 konu ve 484 soru;tam bilimsel/kaynak peer bitti, normal uygulama henüz bağlı değil.439–468 ve 469–479 sahipli özel dosyalarda yazılıyor;bağımsız peer eksikleri kapandıktan sonra aynı menü/IDB/offline/mobil/native kapıları uygulanır. Mevcut türev-teğete ekleme eski 11 bölüm/örnek konumunu korumalı;gerçek eski profille update testi zorunlu.
+
+479 sonrasında 28 eski kısa rehber, 3580 eski soru için gerçek yardım/şık çözümü, örnek–bankadan bağımsız transfer, kapsam/alt beceri matrisi, doğrulanmış video ve izin/anahtarı kesinleşmiş resmî arşiv açıkları devam eder. Başlık veya soru sayısı bütün MEB bilgisinin öğrenildiğini göstermez.
+
+Android imza sonraya bırakılmıştır;web/masaüstü ona bağlı durmaz. Logo/karakter sanat kalitesi ve gerçek fiziksel kurulum/nativeler arasında veri koruyan yükseltme ayrı açık kapılardır. Devam oturumu olmadan arka planda çalışma iddiası kurulmaz.
+
+Canlı sürüm0.17’dir: [Vercel](https://yksmania.vercel.app), [Pages](https://kaansavukduran.github.io/yksmania/) ve [Windows/Linux indirmeleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.17.0-alpha.1). Kaynak3a3a6c5ab6949d2a4b14076f4af4d8aefba656a2 üzerinde832 birim/737 tarayıcı,737 yayımlanmış kabul ve54 aile gerçek paketli masaüstü/Pages geçti. Bu0.18 adayının sayıları canlıya eklenmiş sayılmaz. Android imza ayarı ertelendi; yeni APK yoktur. Fiziksel cihaz,temiz kurulum,portable taşıma ve native sürümler arasında veri koruyan kurulum test edilmedi.
+
+---
+
+## Önceki aday checkpoint kayıtları
+
 # Sonraki kabul sırası
 
 0.17 kaynağında ikinci özellik dalı CI 43784303695 sürüyor; önceki 737 koşusunda 728 PASS/9 FAIL ve yerel dar onarımlar kaydedildi. Geçmeden main/yayın yapılmaz.

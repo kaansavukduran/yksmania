@@ -1,3 +1,27 @@
+# 0.18 kaynak adayı — ilk 408/479 başlık
+
+| Ölçüm | Aday |
+| --- | --- |
+| Anlatım/ayrıntılı rehber/yerleşik özet |410/382/410 |
+| Özgün soru |4040 |
+| Son 30 konunun kapsamı |564 bölüm, 1128 paragraf, 172 worked, 142 hatırlama, 390 soru |
+| Ayrıntılı kademeli yardım |460/4040;son 390 kartın tamamı |
+| Tam TYT |120 soru/9900 sn, doğru ders dağılımı, 5 seçenek |
+| Tam AYT Sayısal |80 soru/10800 sn, 40/14/13/13, 5 seçenek |
+| Katalog |17 set;15 branş |
+
+Bilgi ve inanç 15 kartı son TYT kotasını doldurur. Kısa branşlar kendi gerçek soru sayısına göre sürelenir;15 soruluk Din 1238 sn. Eski devam eden 115/80, 115/55 ve daha önceki tüm kâğıtlar büyütülmez veya yeniden çeşitlendirilmez.3650 eski soru ve 385 öğretim kaydı aynıdır.
+
+410 anlatım ile 382 ayrıntılı rehber arasındaki 28 eski kısa anlatım hâlâ derinleştirilecek. Son 110 eksik yardım alanı tamamlanmıştır;3580 eski kartta tam adım/şık rehberi açık kalır.409 sonrası içerik bu sayılara dahil değildir. Başlık eşleşmesi tüm MEB/Drive/ÖSYM, alt beceri veya doğrulanmış video kapsamının tamamlandığı anlamına gelmez.
+
+1007 birim ve 61 yeni gerçekUI vakası PASS;67 aile Electron PASS; Pages ve 859 tam tarayıcı kapısı ayrıca aranır.
+
+Canlı sürüm0.17’dir: [Vercel](https://yksmania.vercel.app), [Pages](https://kaansavukduran.github.io/yksmania/) ve [Windows/Linux indirmeleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.17.0-alpha.1). Kaynak3a3a6c5ab6949d2a4b14076f4af4d8aefba656a2 üzerinde832 birim/737 tarayıcı,737 yayımlanmış kabul ve54 aile gerçek paketli masaüstü/Pages geçti. Bu0.18 adayının sayıları canlıya eklenmiş sayılmaz. Android imza ayarı ertelendi; yeni APK yoktur. Fiziksel cihaz,temiz kurulum,portable taşıma ve native sürümler arasında veri koruyan kurulum test edilmedi.
+
+---
+
+## Önceki aday checkpoint kayıtları
+
 # 0.18.0 kaynak adayı — 349–378. başlıklar
 
 Güncel kaynakta 380 anlatım,352 ayrıntılı rehber,380 yerleşik özet ve 3650 özgün soru var; ilk 378/479 başlık anlatım+soruyla eşleşir. Bu paket 30 yeni anlatım ve 310 yeni beş seçenekli soru ekler. Kaynak/ikinci okuyucu kabulü ile ürün/yayın kabulü ayrıdır. Henüz 0.18 üretim yayını yoktur.

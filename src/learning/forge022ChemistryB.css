@@ -1,0 +1,296 @@
+.chemistry-b022-lab {
+  min-width: 0;
+  color: var(--text);
+}
+.chemistry-b022-body {
+  fill: var(--surface-raised, var(--surface));
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.chemistry-b022-ghost {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1.5;
+  stroke-dasharray: 5 5;
+}
+.chemistry-b022-lab > h3 {
+  margin: 0 0 0.75rem;
+}
+.chemistry-b022-lab p {
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+.chemistry-b022-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+  align-items: start;
+}
+.chemistry-b022-controls .model-control {
+  min-width: 0;
+}
+.chemistry-b022-controls input[type="range"] {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  margin-inline: 0;
+}
+.chemistry-b022-controls input[type="number"] {
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 44px;
+}
+.chemistry-b022-select {
+  min-width: 0;
+  margin: 1rem 0;
+}
+.chemistry-b022-select label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.chemistry-b022-select select {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+}
+.chemistry-b022-lab svg {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 1.5rem 0;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: var(--surface);
+  overflow: visible;
+}
+.chemistry-b022-lab svg text {
+  font-family: inherit;
+  font-size: 16.5px;
+  fill: var(--text);
+}
+.chemistry-b022-force,
+.chemistry-b022-curve {
+  fill: none;
+  stroke-width: 3;
+}
+.chemistry-b022-normal {
+  stroke: var(--plot-blue);
+  fill: var(--plot-blue);
+}
+.chemistry-b022-external {
+  stroke: var(--accent);
+  fill: var(--accent);
+}
+.chemistry-b022-force {
+  fill: none;
+}
+.chemistry-b022-axis {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1.6;
+}
+.chemistry-b022-selected {
+  fill: var(--accent);
+  stroke: var(--surface);
+  stroke-width: 1.5;
+}
+.chemistry-b022-curve {
+  stroke: var(--plot-blue);
+}
+.chemistry-b022-figure {
+  margin: 1.25rem 0;
+  min-width: 0;
+}
+.chemistry-b022-figure figcaption {
+  font-weight: 650;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.chemistry-b022-result {
+  border-block: 1px solid var(--border);
+  padding: 1.25rem 0;
+  margin: 1.5rem 0;
+  line-height: 1.8;
+}
+.chemistry-b022-compare {
+  box-sizing: border-box;
+  min-width: 0;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+}
+.chemistry-b022-compare legend {
+  max-width: 100%;
+  padding: 0 0.25rem;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.chemistry-b022-guesses {
+  display: grid;
+  gap: 0.75rem;
+}
+.chemistry-b022-guesses label {
+  box-sizing: border-box;
+  display: flex;
+  align-items: start;
+  gap: 0.6rem;
+  min-width: 0;
+  min-height: 44px;
+  padding: 0.5rem;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.chemistry-b022-guesses input {
+  flex: 0 0 auto;
+  margin-top: 0.3rem;
+}
+.chemistry-b022-compare > label {
+  display: block;
+  margin: 1rem 0 0.5rem;
+}
+.chemistry-b022-compare textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 100px;
+  resize: vertical;
+}
+.chemistry-b022-compare > button {
+  display: block;
+  max-width: 100%;
+  min-height: 44px;
+  margin-top: 1rem;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.chemistry-b022-feedback {
+  margin-top: 1rem;
+  border-left: 3px solid var(--accent);
+  padding: 0.75rem;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 480px) {
+  .chemistry-b022-actions button {
+    width: 100%;
+    padding-inline: 4px;
+  }
+  .chemistry-b022-compare {
+    padding-inline: 0;
+    border-inline: 0;
+  }
+  .chemistry-b022-compare > button {
+    width: 100%;
+    padding-inline: 4px;
+  }
+  .chemistry-b022-compare textarea,
+  .chemistry-b022-feedback {
+    padding-inline: 4px;
+  }
+  .chemistry-b022-guesses label {
+    padding-inline: 4px;
+  }
+  .chemistry-b022-select select {
+    padding-inline: 4px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .chemistry-b022-lab * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+.chemistry-b022-lab polyline {
+  fill: none;
+}
+.chemistry-b022-result strong {
+  font-weight: 700;
+}
+.chemistry-b022-result p:last-child {
+  margin-bottom: 0;
+}
+.chemistry-b022-lab input[type="radio"] {
+  min-width: 20px;
+  min-height: 20px;
+}
+.chemistry-b022-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-block: 1.5rem;
+}
+.chemistry-b022-actions button {
+  min-height: 44px;
+  max-width: 100%;
+  white-space: normal;
+}
+
+.chemistry-b022-bond,
+.chemistry-b022-bond-active {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 2.5;
+}
+.chemistry-b022-bond-active {
+  stroke: var(--accent);
+  stroke-width: 3.5;
+}
+.chemistry-b022-atom,
+.chemistry-b022-atom-selected,
+.chemistry-b022-atom-neighbor {
+  fill: var(--surface-raised, var(--surface));
+  stroke: var(--text);
+  stroke-width: 1.8;
+}
+.chemistry-b022-atom-selected {
+  stroke: var(--accent);
+  stroke-width: 3.5;
+}
+.chemistry-b022-atom-neighbor {
+  stroke: var(--mint);
+  stroke-width: 3;
+}
+.chemistry-b022-pair {
+  fill: var(--surface-raised, var(--surface));
+  stroke: var(--muted);
+  stroke-dasharray: 3 3;
+  stroke-width: 1.5;
+}
+.chemistry-b022-ink {
+  fill: var(--text);
+}
+.chemistry-b022-bar {
+  fill: var(--plot-blue);
+  stroke: var(--text);
+  stroke-width: 1;
+}
+.chemistry-b022-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 44px;
+  line-height: 1.7;
+  margin: 1rem 0;
+}
+.chemistry-b022-toggle input {
+  flex: 0 0 auto;
+  min-width: 44px;
+  min-height: 44px;
+}
+.chemistry-b022-lab button:focus-visible,
+.chemistry-b022-lab input:focus-visible,
+.chemistry-b022-lab textarea:focus-visible,
+.chemistry-b022-lab select:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}

@@ -1,3 +1,4 @@
+import { forge022SmokeCases, runForge022SmokeCase } from "./forge022-smoke-cases.mjs";
 import { forge021SmokeCases, runForge021SmokeCase } from "./forge021-smoke-cases.mjs";
 import {forge020SmokeCases,runForge020SmokeCase} from "./forge020-smoke-cases.mjs";
 import {
@@ -90,6 +91,12 @@ const page = await context.newPage(),
   errors = [],
   cases = [];
 page.on("pageerror", (e) => errors.push(String(e)));
+const pageDiagnostics=[];
+const recordDiagnostic=(kind, data)=>{ pageDiagnostics.push({kind, at:Date.now(), ...data}); if(pageDiagnostics.length>150)pageDiagnostics.shift(); };
+page.on("requestfailed", request=>recordDiagnostic("request-failed",{path:new URL(request.url()).pathname,error:request.failure()?.errorText}));
+page.on("console", message=>{if(message.type()==="error")recordDiagnostic("console-error",{text:message.text().slice(0,1500)});});
+page.on("framenavigated", frame=>{if(frame===page.mainFrame())recordDiagnostic("navigation",{path:new URL(frame.url()).pathname,hash:new URL(frame.url()).hash});});
+
 const nav = async (name) => {
   const menu = page.getByRole("button", { name: "Menüyü aç", exact: true });
   if (await menu.isVisible()) await menu.click();
@@ -448,8 +455,11 @@ try {
   expect(forge021SmokeCases).toHaveLength(7);
   const forge021Snapshots=[];
   for(const unit of forge021SmokeCases){forge021Snapshots.push(await runForge021SmokeCase(page,nav,unit));cases.push(unit.id);}
+  expect(forge022SmokeCases).toHaveLength(6);
+  const forge022Snapshots=[];
+  for(const unit of forge022SmokeCases){forge022Snapshots.push(await runForge022SmokeCase(page,nav,unit));cases.push(unit.id);}
 
-  expect(cases).toHaveLength(61);
+  expect(cases).toHaveLength(67);
   await page.getByRole("button", { name: "Sorulara geç", exact: true }).click();
   await expect(page.locator(".answer")).toHaveCount(5);
   await page.locator(".answer").first().click();
@@ -667,6 +677,8 @@ try {
     ),
     forge021FamiliesOfflineHtmlStateAndReload: forge021Snapshots.map(item=>item.id),
     forge021ExplorationWithoutLearningCredit: "PASS",
+    forge022FamiliesOfflineHtmlStateAndReload: forge022Snapshots.map(item=>item.id),
+    forge022ExplorationWithoutLearningCredit: "PASS",
     forge020FamiliesOfflineHtmlStateAndReload: forge020Snapshots.map(item=>item.id),
     forge020ExplorationWithoutLearningCredit: "PASS",
     forge019FamiliesOfflineHtmlStateAndReload: forge019Snapshots.map(
@@ -693,6 +705,8 @@ try {
     rendererErrors: errors,
     cases,
     missing,
+    diagnostics: pageDiagnostics,
+    document: await page.evaluate(()=>({readyState:document.readyState,bodyHtml:document.body.innerHTML.slice(0,5000),controlled:Boolean(navigator.serviceWorker.controller),scripts:[...document.scripts].map(s=>({type:s.type,path:s.src?new URL(s.src).pathname:"inline"})),resources:performance.getEntriesByType("resource").slice(-20).map(e=>({path:new URL(e.name).pathname,duration:e.duration}))})).catch(()=>null),
   };
   await page
     .screenshot({ path: path.join(evidence, "failure.png"), fullPage: false })

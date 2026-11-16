@@ -1,41 +1,23 @@
 # YKSMania
 
-Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. Son yayımlanan **0.16.0**, webde ve [indirilebilir alpha paketleriyle](https://github.com/kaansavukduran/yksmania/releases/tag/v0.16.0-alpha.1) yayımlandı.
+Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.17.0 yayımlandı.**
 
-[Vercel](https://yksmania.vercel.app) · [GitHub Pages](https://kaansavukduran.github.io/yksmania/) · [GitHub deposu](https://github.com/kaansavukduran/yksmania)
+[Vercel](https://yksmania.vercel.app) · [GitHub Pages](https://kaansavukduran.github.io/yksmania/) · [Windows ve Linux indirmeleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.17.0-alpha.1)
 
-Çalışma sırasının **199–258. başlıkları** için 60 yeni etkileşimli ünite hazırlandı. Uygulamada **264 anlatım, 236 ayrıntılı rehber, 264 yerleşik kopya kağıdı ve 2.440 özgün soru** vardır. Yeni pakette 678 bölüm, 248 adım adım çözüm, 248 hatırlama ve 600 beş seçenekli soru bulunur. İlk 258/479 başlık anlatım ve bağımsız soruyla hazırdır. Önceki 1.840 sorunun bütün alanları ve 205 eski ders kaydı korunur. 610 birim, 548 tam tarayıcı vakası, paketli Windows/Linux çevrimdışı açılış ve GitHub Pages kabulü geçti. Yayın denetiminin 547 vakası gerçek HTTPS’de, bir geliştirme regresyonu yerel Vite’da çalışır.
+**350 anlatım, 322 ayrıntılı rehber, 350 yerleşik kopya kağıdı ve 3.340 özgün soru.** Doğrulanmış çalışma sırasının ilk 348/479 başlığı anlatım ve bağımsız soruyla hazırdır. Modelin koşullarını değiştirip sonucunu incele, öngörünü gerekçesiyle karşılaştır, sonra bağımsız sorulara geç. Öğrenci PDF veya ders kaynağı yüklemez. Konu Anlatımı, Kopya Kağıtları, Sorular ve Sınavlar ayrı bölümlerdir.
 
-## Geliştirilmekte olan 0.17
+0.16 üzerine 86 yeni anlatım, dört eski rehbere kayıpsız ek ve 900 soru eklendi. Ortak kademeli yardım ve denemelerde öğrenme/simülasyon modları vardır. Ayrıntılı yardım 20 sorudadır; bütün bankanın kapsamlı çözüm rehberi tamamlanmadı. Başlıklar çevrimdışı Bricolage kullanır; açık Lexend tercihi korunur.
 
-259–348. çalışma başlıkları için aday: **350 anlatım, 322 ayrıntılı rehber, 350 özet ve 3.340 soru**. Önceki sürüme 86 yeni anlatım, dört kayıpsız rehber genişletmesi ve 900 soru eklenir. Bu aday henüz üretime yayımlanmadı; ayrıntılar [FORGE](FORGE.md), [kapsam](docs/CONTENT_COVERAGE.md) ve [QA](docs/QA.md) belgelerindedir.
+16 kısa deneme pratiği: TYT 115 soru/9488 sn, AYT Sayısal 55/7425 sn ve 14 branş. Eksik kotalar gösterilir;0.17 tam 120/80 dağılım olarak etiketlenmez. Süre gerçek soru sayısına orantılıdır. Devam eden denemenin tam soruları, cevapları, bayrakları ve son zamanı değişmez. Net=doğru−yanlış/4.
 
-Ortak kademeli yardım, deneme öğrenme/simülasyon modları, başlıklar için çevrimdışı Bricolage ve korunmuş Lexend tercihi eklendi. Eski deneme soruları, tekrar tarihleri, notlar ve rehber örnek/hatırlama konumu korunur. Ayrıntılı yardım şimdilik 20 sorudadır; tamamı bitmiş sayılmaz. Yeni katalog 16 kısa pratik sunar; tam 120/80 dağılım değildir.
+Varsayılan değiştirilebilir sınav tarihi **18 Haziran 2027**, anlatım hedefi **28 Şubat 2027**. Uygun günler ve kalan konularla günlük plan hesaplanır. İlk çalışma günü 1; tekrarlar 3/7/21. Bugün, tamamlanan çalışmayı ve gerçek son doğru/yanlış sayısını korur. TYT/AYT ağaçları üstten dallanır; derslerin ayrı renk ve simgeleri vardır.
 
-Android imza ayarı ertelendi. Web ve masaüstü doğrulaması sürer; açık kapsamlı masaüstü yayını yeni APK varmış gibi gösterilmez. Sonraki 349–408 kaynak paketi ve 409 sonrası öğretim ayrı çalışma alanlarında hazırlanır; bu sayılara ve canlıya dahil değildir.
+Ortak 5 dk kum saati 1/5/10/20 dk ve 1–120 dk özel süre, durdurma/devam sunar. Notlar anlatımın altındadır. Ayarlar’da kişisel ilerleme yedeği, geri yükleme ve açık onaylı sıfırlama vardır. Eski notlar, ayarlar ve özel belge baytları korunur. Vercel ve Pages ayrı ilerleme saklar; kişisel yedekle aktarılır. Süre, keşif, kağıt açma veya manuel onay bağımsız öğrenme puanı sayılmaz.
 
-## İçerik ve öğrenme
+**Doğrulama:**832 birim ve 737 tarayıcı testi, gerçek paketli Windows/Linux 54 aile çevrimdışı/süreç yeniden açılışı, Vercel 736 HTTPS+bir yerel regresyon ve yayımlanmış Pages 54 aile kabulü geçti. Yayın altı dosyalıdır: dört masaüstü paketi ve iki kanıt. Android imza ayarı ertelendi; bu sürümde yeni APK yoktur. Fiziksel cihaz, temiz kurulum, portable taşıma ve native sürümler arasında veri koruyan yükseltme test edilmedi.
 
-Konu Anlatımı, Kopya Kağıtları, Sorular ve Sınavlar ayrı bölümlerdir. Öğrenci PDF, kaynak kataloğu veya kitapçık yüklemez; anlatım ve uygulamalar hazırdır. Rehberde **Adım adım çalış / Tüm anlatım** seçilebilir. Yeni konular hormonlar/duyu/destek-hareket/sindirim; kayaçlar/sular/toprak/bitki/nüfus; asit-baz/günlük kimya/modern atom/gazlar; Newton/ivmeli hareket/atış/enerji; yazım/noktalama/anlatım/sözcük anlamıdır.
+**Sonraki aday:** İlk 408/479 sıralı başlık, 410 anlatım / 382 ayrıntılı rehber / 410 yerleşik özet / 4.040 soru. Son 30 konuya 564 bölüm, 172 çözümlü örnek ve 390 soru eklendi; bunların tamamında özgül adım ve seçenek gerekçesi var. Toplam ayrıntılı yardım 460/4040; kalan 3580 kartın rehberi henüz tamamlanmadı. 1007 birim ve 61 yeni normal/telefon vakası geçti; 67 aile Electron PASS; Pages ve 859 tam tarayıcı kapısı sürüyor. Yeni TYT 120/165 dakika ve AYT 80/180 dakika doğru kotalarla beş seçeneklidir. Bu aday henüz canlı 0.17 sayılmaz. Bütün 479, Drive/YKS ve tüm ÖSYM arşivi tamamlandı denmez.
 
-Bir modelin verisini değiştir, sonucunu gör, tahminini gerekçesiyle kanıtla karşılaştır. İşlemler ayrı HTML açıklaması ve konuya uygun SVG ile gösterilir. Süre, keşif, sayfa ilerletme veya kağıdı açma, öğrenme puanı ya da tamamlanma kanıtı değildir. Sorular bütün gerekli metin, veri ve koşulları kendi kartında taşır. Gereken pasaj soru kökünden önce görünür; ipucu ve açıklama ayrı tutulur.
+Node 24: `npm ci`, `npm run dev`. Kapılar: `npm run check`, `npm test`, `npm run build`, `npm run test:e 2 e`, `npm run test:desktop`.
 
-Kaynaklar Aurelia/YKS’deki gerçek belgeler, MEBİ ve OGM öğretim sayfalarından özgün anlatıma dönüştürülür. Okunan sayfa sınırları [SOURCE_REVIEW](docs/SOURCE_REVIEW.md)’dadır. 341 ana referans, 479 ayrıntılı sıra ve hazırlanmış anlatım farklı ölçümlerdir. Bütün 479 başlık, bütün Drive/YKS ve son 20 yıllık tüm ÖSYM arşivi henüz tamamlanmadı. Sekiz doğrulanmış resmî bağlantı korunur; yeni 600 kart resmî soru diye etiketlenmez.
-
-## Denemeler
-
-14 kısa pratik seti: TYT karma 110 soru / 151 dk 15 sn, AYT Sayısal karma 45 / 101 dk 15 sn ve 12 branş. Tam 120/80 resmî dağılım değildir; eksik kotalar kartlarda belirtilir. Süre gerçek soru sayısına orantılıdır. Yeni başlangıç ilgili havuzdan çeşitlenir; devam eden denemenin tam soruları, cevabı, işaretleri ve son zamanı değişmez. Eski 37 soruluk AYT taslağı yeni 45 soruluk katalog nedeniyle büyütülmez. Net = doğru − yanlış/4.
-
-## Kayıt ve plan
-
-Varsayılan düzenlenebilir sınav tarihi **18 Haziran 2027**, anlatım hedefi **28 Şubat 2027**’dir. Uygun günler ve tamamlanan konulara göre günlük plan hesaplanır. İlk öğrenme günü 1; tekrarlar 3/7/21’dir. Bugün, tamamlanan çalışmayı ve gerçek son doğru/yanlış sayısını tutar. TYT/AYT ağaçları üstten dallanır; derslerin ayrı renk ve simgeleri vardır.
-
-Ortak kum saati 5 dk; 1/5/10/20 dk ve 1–120 dk özel süre, ters çevirme, durdurma/devam sunar. Notlar anlatımın altındadır. Ayarlar’da kişisel JSON yedeği, geri yükleme ve açık onaylı ilerleme sıfırlama bulunur. Sıfırlama notları, ayarları ve önceki kişisel dosyaları korur. Vercel ve Pages ayrı ilerleme saklar; kişisel yedekle aktarılır.
-
-## Çalıştırma ve doğrulama
-
-Node 24: `npm ci`, `npm run dev`. Kontroller: `npm run check`, `npm test`, `npm run build`, `npm run test:e2e`, `npm run test:desktop`.
-
-Kaynak kontrolü, 610 birim ve derleme geçti. 548 tarayıcı vakası toplandı; tam tarayıcı, 37-aile Electron/Pages ve gerçek 0.15→0.16 veri koruyan web güncellemesi kabulü sürüyor. Sonuçlar [QA](docs/QA.md) ve [FORGE](FORGE.md)'da ayrı tutulur. Uzak yayın henüz tamamlanmadı.
-
-Web ilk çevrimiçi hazırlıktan sonra, native arayüz yerel dosyalardan çalışır. Windows Setup/Portable ve Linux AppImage/DEB x64; Android debug imzalı alpha. 0.16 hedef Android sürüm kodu 24; yeni APK/imza doğrulaması uzak paket kapısında bekleniyor. Fiziksel Android, temiz Windows kurulumu, portable taşıma ve iki native sürüm arasında veri koruyan yükseltme bu yerel kontrollerle doğrulanmış sayılmaz.
+[Kapsam](docs/CONTENT_COVERAGE.md) · [Kaynak okuması](docs/SOURCE_REVIEW.md) · [QA](docs/QA.md) · [Forge](FORGE.md) · [Çalışma sırası](docs/ROADMAP.md)

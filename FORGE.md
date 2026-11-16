@@ -1,3 +1,23 @@
+# 0.18.0 aday checkpoint — ilk 408 sıralı başlık
+
+379–408. başlıklara 30 bağımsız anlatım:564 bölüm/1128 paragraf, 172 farklı çözümlü örnek/516 adım, 142 hatırlama ve 390 beş seçenekli soru. Toplam 410 anlatım, 382 ayrıntılı rehber, 410 yerleşik özet ve 4040 özgün soru. Önceki 3650 sorunun bütün alanları ve 385 öğretim kaydı hash ile aynı kalır.
+
+Yeni 390 sorunun tamamında gerçek çözüm adımları ve beş özgül seçenek gerekçesi var. Önceki 70 kartla çözümlenen tam yardım 460/4040; diğer 3580 mevcut ipucu/açıklamasındadır. Bu paket için 110 eksik matematik/fizik rehberi tamamlandı; tüm bankanın ayrıntılı çözümü bitti denmez.
+
+1007/1007 birim ve 61/61 son normal/telefon tarayıcı vakası PASS. PWA 215 gerekli varlığı kapsar, 5 MiB tek dosya sınırı korunur.67 aile Electron ve Pages kabulü çalıştırılıyor; tam 859 tarayıcı uzak kapısı henüz çalıştırılmadı. 349–378 ara checkpoint’i 926 birim/798 tarayıcı ve 61 aile paketli Windows/Linux ile ayrı özellik dalında geçti.
+
+Gerçek ürün denetimi biyoloji yüzdesinde eksik şablon işaretini ve korozyon stok tükenmesinin çizime yansımamasını buldu. Yüzde gerçek değeri gösterir; kurban metal dolgusu kalan kütle payını gösterir, tabanı sabittir. Mobil sözcük/dokunma kusurları yazı küçültmeden düzeldi. İlk gerçek koşu 41 PASS/20 FAIL, ikinci 59 PASS/2 FAIL, son 61/61 PASS; yanlış eski önizlemeye giden ilk koşu ürün kabulü sayılmaz.
+
+TYT ilk kez 120 soru/165 dk ile 40 Türkçe, 40 matematik-geometri, 5’er sosyal, 7 fizik, 7 kimya, 6 biyoloji; AYT 80/180 dk 40 matematik-geometri, 14 fizik, 13 kimya, 13 biyoloji. Bütün tam çeşitler beş seçeneklidir. Eski 115/80, 115/55 ve önceki kısa kâğıtların anlık görüntüsü değiştirilmez.
+
+Sonraki 409–438 kaynak paketi bağımsız kaynak/model incelemesini geçti, entegrasyon sırasındadır.439–479 özel üretim ve peer denetimindedir. Bütün kaynak arşivi ve alt beceri kapsamı yalnız başlık sayısıyla tamamlanmış sayılmaz.
+
+Canlı sürüm0.17’dir: [Vercel](https://yksmania.vercel.app), [Pages](https://kaansavukduran.github.io/yksmania/) ve [Windows/Linux indirmeleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.17.0-alpha.1). Kaynak3a3a6c5ab6949d2a4b14076f4af4d8aefba656a2 üzerinde832 birim/737 tarayıcı,737 yayımlanmış kabul ve54 aile gerçek paketli masaüstü/Pages geçti. Bu0.18 adayının sayıları canlıya eklenmiş sayılmaz. Android imza ayarı ertelendi; yeni APK yoktur. Fiziksel cihaz,temiz kurulum,portable taşıma ve native sürümler arasında veri koruyan kurulum test edilmedi.
+
+---
+
+## Önceki aday checkpoint kayıtları
+
 # 0.18.0 kaynak adayı — 349–378. başlıklar
 
 Güncel kaynakta 380 anlatım,352 ayrıntılı rehber,380 yerleşik özet ve 3650 özgün soru var; ilk 378/479 başlık anlatım+soruyla eşleşir. Bu paket 30 yeni anlatım ve 310 yeni beş seçenekli soru ekler. Kaynak/ikinci okuyucu kabulü ile ürün/yayın kabulü ayrıdır. Henüz 0.18 üretim yayını yoktur.

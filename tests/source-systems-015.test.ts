@@ -128,9 +128,9 @@ it("expands AYT practice to 37 items while keeping existing 25-item AYT and 110-
     expect.arrayContaining(retainedCatalogue),
   );
   expect(catalogue.length).toBeGreaterThanOrEqual(14);
-  expect(tyt.items).toHaveLength(115);
+  expect(tyt.items).toHaveLength(120);
   expect(tyt.items.filter((q) => q.subjectId === "tyt-felsefe")).toHaveLength(5);
-  expect(tyt.items.filter((q) => q.subjectId === "tyt-din")).toHaveLength(0);
+  expect(tyt.items.filter((q) => q.subjectId === "tyt-din")).toHaveLength(5);
   expect(ayt.items.length).toBeGreaterThanOrEqual(37);
   expect(ayt.items.filter((q) => q.subjectId === "ayt-fizik")).toHaveLength(14);
   expect(ayt.items.filter((q) => q.subjectId === "ayt-biyoloji")).toHaveLength(

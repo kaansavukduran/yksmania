@@ -1,0 +1,285 @@
+.physics022-lab {
+  min-width: 0;
+  color: var(--text);
+}
+.physics022-body {
+  fill: var(--surface-raised, var(--surface));
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.physics022-ghost {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1.5;
+  stroke-dasharray: 5 5;
+}
+.physics022-lab > h3 {
+  margin: 0 0 0.75rem;
+}
+.physics022-lab p {
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+.physics022-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+  align-items: start;
+}
+.physics022-controls .model-control {
+  min-width: 0;
+}
+.physics022-controls input[type="range"] {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  margin-inline: 0;
+}
+.physics022-controls input[type="number"] {
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 44px;
+}
+.physics022-select {
+  min-width: 0;
+  margin: 1rem 0;
+}
+.physics022-select label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.physics022-select select {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+}
+.physics022-lab svg {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 1.5rem 0;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: var(--surface);
+  overflow: visible;
+}
+.physics022-lab svg text {
+  font-family: inherit;
+  font-size: 16.5px;
+  fill: var(--text);
+}
+.physics022-force,
+.physics022-curve {
+  fill: none;
+  stroke-width: 3;
+}
+.physics022-normal {
+  stroke: var(--plot-blue);
+  fill: var(--plot-blue);
+}
+.physics022-external {
+  stroke: var(--accent);
+  fill: var(--accent);
+}
+.physics022-force {
+  fill: none;
+}
+.physics022-axis {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1.6;
+}
+.physics022-selected {
+  fill: var(--accent);
+  stroke: var(--surface);
+  stroke-width: 1.5;
+}
+.physics022-curve {
+  stroke: var(--plot-blue);
+}
+.physics022-figure {
+  margin: 1.25rem 0;
+  min-width: 0;
+}
+.physics022-figure figcaption {
+  font-weight: 650;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.physics022-result {
+  border-block: 1px solid var(--border);
+  padding: 1.25rem 0;
+  margin: 1.5rem 0;
+  line-height: 1.8;
+}
+.physics022-compare {
+  box-sizing: border-box;
+  min-width: 0;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+}
+.physics022-compare legend {
+  max-width: 100%;
+  padding: 0 0.25rem;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.physics022-guesses {
+  display: grid;
+  gap: 0.75rem;
+}
+.physics022-guesses label {
+  box-sizing: border-box;
+  display: flex;
+  align-items: start;
+  gap: 0.6rem;
+  min-width: 0;
+  min-height: 44px;
+  padding: 0.5rem;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.physics022-guesses input {
+  flex: 0 0 auto;
+  margin-top: 0.3rem;
+}
+.physics022-compare > label {
+  display: block;
+  margin: 1rem 0 0.5rem;
+}
+.physics022-compare textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 100px;
+  resize: vertical;
+}
+.physics022-compare > button {
+  display: block;
+  max-width: 100%;
+  min-height: 44px;
+  margin-top: 1rem;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.physics022-feedback {
+  margin-top: 1rem;
+  border-left: 3px solid var(--accent);
+  padding: 0.75rem;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 480px) {
+  .physics022-actions button {
+    width: 100%;
+    padding-inline: 4px;
+  }
+  .physics022-compare {
+    padding-inline: 0;
+    border-inline: 0;
+  }
+  .physics022-compare > button {
+    width: 100%;
+    padding-inline: 4px;
+  }
+  .physics022-compare textarea,
+  .physics022-feedback {
+    padding-inline: 4px;
+  }
+  .physics022-guesses label {
+    padding-inline: 4px;
+  }
+  .physics022-select select {
+    padding-inline: 4px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .physics022-lab * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+.physics022-lab polyline {
+  fill: none;
+}
+.physics022-result strong {
+  font-weight: 700;
+}
+.physics022-result p:last-child {
+  margin-bottom: 0;
+}
+.physics022-lab input[type="radio"] {
+  min-width: 20px;
+  min-height: 20px;
+}
+.physics022-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-block: 1.5rem;
+}
+.physics022-actions button {
+  min-height: 44px;
+  max-width: 100%;
+  white-space: normal;
+}
+.physics022-wall {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 7;
+}
+.physics022-node {
+  fill: none;
+  stroke: var(--mint);
+  stroke-width: 1.6;
+  stroke-dasharray: 5 5;
+}
+.physics022-antinode {
+  fill: none;
+  stroke: var(--plot-blue);
+  stroke-width: 1.6;
+}
+.physics022-paths {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1.4;
+}
+.physics022-source {
+  fill: var(--text);
+  stroke: var(--surface);
+  stroke-width: 1;
+}
+.physics022-height-0 {
+  fill: none;
+  stroke: var(--plot-blue);
+  stroke-width: 2;
+}
+.physics022-height-1 {
+  fill: none;
+  stroke: var(--mint);
+  stroke-width: 2;
+  stroke-dasharray: 5 5;
+}
+.physics022-height-2 {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 3.5;
+}
+.physics022-lab button:focus-visible,
+.physics022-lab input:focus-visible,
+.physics022-lab textarea:focus-visible,
+.physics022-lab select:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}

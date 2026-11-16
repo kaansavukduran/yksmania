@@ -1,0 +1,223 @@
+.forge022-biology {
+  margin: 24px 0;
+  padding: 24px;
+  min-width: 0;
+  color: var(--text);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow-wrap: anywhere;
+}
+.forge022-biology h3 {
+  margin: 0 0 18px;
+  line-height: 1.5;
+}
+.forge022-biology p,
+.forge022-biology figcaption {
+  line-height: 1.75;
+}
+.b022-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  gap: 24px;
+  margin: 24px 0;
+}
+.b022-field {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  min-width: 0;
+  gap: 10px;
+}
+.b022-field output {
+  font-variant-numeric: tabular-nums;
+}
+.forge022-biology input[type="range"] {
+  margin: 0;
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  accent-color: var(--accent);
+}
+.b022-choice {
+  min-width: 0;
+  margin: 24px 0;
+  padding: 0;
+  border: 0;
+}
+.b022-choice legend {
+  padding: 0;
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+.b022-choice > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  min-width: 0;
+}
+.forge022-biology button {
+  min-width: 44px;
+  min-height: 44px;
+  max-width: 100%;
+  padding: 12px 16px;
+  font: inherit;
+  line-height: 1.65;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.b022-choice button {
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  border-radius: 10px;
+}
+.b022-choice button[aria-pressed="true"] {
+  border-color: var(--accent);
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.forge022-biology button:focus-visible,
+.forge022-biology input:focus-visible,
+.forge022-biology textarea:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+.forge022-biology figure {
+  margin: 26px 0;
+  min-width: 0;
+}
+.b022-svg {
+  display: block;
+  width: 100%;
+  max-width: 430px;
+  height: auto;
+  margin: 24px auto;
+  overflow: visible;
+}
+.b022-svg text {
+  fill: var(--text);
+  font-family: inherit;
+  font-size: 20px;
+}
+.b022-line,
+.b022-arrow {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.b022-reference {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 2;
+  stroke-dasharray: 6 5;
+}
+.b022-cell,
+.b022-air {
+  fill: var(--bg);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.b022-outline {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.b022-carbon,
+.b022-mint,
+.b022-leaf {
+  fill: var(--mint);
+  stroke: var(--text);
+  stroke-width: 1.5;
+}
+.b022-coral {
+  fill: var(--accent);
+  stroke: var(--text);
+  stroke-width: 1.5;
+}
+.b022-gas {
+  fill: var(--bg);
+  stroke: var(--text);
+  stroke-width: 2;
+}
+.b022-label-bg {
+  paint-order: stroke;
+  stroke: var(--surface-2);
+  stroke-width: 10;
+  stroke-linejoin: round;
+}
+.b022-result {
+  padding: 16px 0;
+  border-block: 1px solid var(--border);
+}
+.b022-result p {
+  margin: 12px 0;
+}
+.b022-prediction {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+  min-width: 0;
+  margin-top: 24px;
+}
+.b022-prediction .b022-choice {
+  margin: 0;
+}
+.forge022-biology textarea {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 80px;
+  font: inherit;
+  line-height: 1.7;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  background: var(--bg);
+}
+.b022-feedback {
+  border-left: 3px solid var(--accent);
+  padding: 12px 16px;
+  background: var(--bg);
+  min-width: 0;
+}
+.b022-note {
+  margin: 24px 0 0;
+}
+@media (max-width: 600px) {
+  .forge022-biology {
+    margin-inline: -11px;
+    padding: 16px 6px;
+  }
+  .b022-controls {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+  .b022-choice > div {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+  .forge022-biology button {
+    width: 100%;
+    padding-inline: 6px;
+  }
+  .forge022-biology textarea {
+    padding-inline: 6px;
+  }
+  .b022-feedback {
+    padding: 12px 6px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .forge022-biology *,
+  .forge022-biology *::before,
+  .forge022-biology *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+:root[data-motion="off"] .forge022-biology * {
+  animation: none !important;
+  transition: none !important;
+}
