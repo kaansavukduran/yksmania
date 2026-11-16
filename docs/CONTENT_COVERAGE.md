@@ -1,12 +1,19 @@
-# 0.17 kaynak checkpoint'i — yayın kapsamından ayrı
+# 0.17 adayı: ölçülen içerik ve sınırlar
 
-Gerçek kaynak sayımı:325 kayıt içinde321 anlatım ve4 yalnız-soru seti;293 derin rehber,321 yerleşik özet,3.040 özgün soru. Çalışma sırasının ilk318/479 başlığında anlatım+soru eşleşir. Bu sayım bütün alt becerilerin ya da bütün kaynak arşivinin tamamlandığı anlamına gelmez; canlı sürüm halen aşağıdaki0.16 kaydıdır.
+| Ölçüm | Güncel aday |
+| --- | --- |
+| Anlatım / ayrıntılı rehber / yerleşik özet | 350 / 322 / 350 |
+| Özgün soru / yalnız soru seti | 3.340 / 5 |
+| Ayrıntılı çalışma sırası | İlk 348/479 başlık anlatım + soruyla eşleşir |
+| Önceki 0.16’ya ek | 86 yeni anlatım, dört eski rehber genişletmesi, 900 soru |
+| Pratik kataloğu | 16 set: TYT 115/9488 sn, AYT 55/7425 sn, 14 branş |
+| Ortak ayrıntılı kademeli soru rehberi | 20/3340; kalanlar mevcut ipucu ve açıklama |
 
-Yeni259–318 paketi57 anlatım+üç eski rehbere derin ekler ve600 soru içerir. İleri paragraf/elektrik alanı/denge setleri ayrı soru kayıtlarıdır. Deneme kataloğu15 set:TYT110/9075s,AYT55/7425s ve13 branş;tam120/80 dağılım değildir. Kaydedilmiş45 soruluk eski AYT, kendi soruları ve6075s süresiyle kalır.
+Bu sayım üretime yayımlanmış kabulü veya bütün alt becerilerin tamamlanmasını ifade etmez. Gerçek kaynak okuma sınırları SOURCE_REVIEW’de ayrıdır. Eski 2.440 yayımlanmış soru ve ara kaynak denetimlerindeki 3.040 kabul edilmiş soru ayrı golden korumayla denetlenir. Önceki paragraf/elektrik alanı/denge/DNA rehberleri kayıpsız genişletilir; eski örnek/hatırlama konumu korunur.
 
-Ayrıntılı kademeli yardım20/3040 soruda yazıldı:40 gerçek adım,60 şık gerekçesi. Kalan3020 mevcut kısa ipucu+anlamlı açıklamaya sahiptir; ayrıntılı rehber eksikleri görünmez varsayılmaz. Yardımlı/bağımsız performans ayrı; net hesabı değişmez. n4'ün F≠0 öncül düzeltmesi yeni soru köküne işlenir,eski deneme snapshot'ı korunur.
+Katalog tam 120/80 resmî dağılım değildir. TYT Din ve AYT Matematik/Geometri kotaları eksiktir; kaydedilmiş eski 45/6075 sn AYT kendi anlık görüntüsüyle devam eder. Özgün sorular resmî ÖSYM sorusu sayılmaz; bütün 20 yıllık arşiv veya bütün Drive/MEB tamamlandı denmez.
 
-319–348 ve sonraki kaynak aileleri ayrı üretim/bağımsız inceleme aşamasındadır; bu kaynak sayımına veya canlıya eklenmiş sayılmaz. Doğrulanmış resmî kitapçık ve izin kaydı olmayan özgün sorulara ÖSYM etiketi verilmez.
+349–408 kaynak paketleri ayrı sahipli dosyalardadır; henüz bu içerik sayımına veya yayına eklenmez. Sonraki aşama kalan başlıklar, eski kısa rehberlerin derinleştirilmesi, bütün sorular için ayrıntılı çözüm, gerçek kota/düzey denemeleri, kaynaklı videolar ve tüm arşiv için alt beceri matrisi olacaktır.
 
 ---
 

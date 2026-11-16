@@ -5,6 +5,11 @@ on:
       build_run:
         description: Successful Verify and build packages run ID
         required: true
+      include_android:
+        description: Include the APK verified with the configured persistent signing key
+        type: boolean
+        required: false
+        default: false
 permissions:
   contents: write
   actions: read
@@ -17,6 +22,7 @@ jobs:
       BUILD_RUN: ${{ inputs.build_run }}
       RELEASE_VERSION: "0.17.0"
       ANDROID_VERSION_CODE: "25"
+      INCLUDE_ANDROID: ${{ inputs.include_android }}
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -62,26 +68,31 @@ jobs:
           import shutil, hashlib, os, re
           version = os.environ['RELEASE_VERSION']
           code = os.environ['ANDROID_VERSION_CODE']
+          assert os.environ['INCLUDE_ANDROID'] in ('true', 'false'), 'Explicit Android publication scope required'
+          include_android = os.environ['INCLUDE_ANDROID'] == 'true'
           files = [p for p in Path('packages').rglob('*') if p.suffix in ('.exe', '.AppImage', '.deb', '.apk')]
           expected = [
               f'YKSMania-{version}-Windows-x64-Setup.exe',
               f'YKSMania-{version}-Windows-x64-Portable.exe',
               f'YKSMania-{version}-Linux-x86_64.AppImage',
               f'YKSMania-{version}-Linux-amd64.deb',
-              'app-debug.apk',
           ]
+          if include_android:
+              expected.append('app-debug.apk')
           assert sorted(p.name for p in files) == sorted(expected), 'Release artifact names or versions do not match'
           evidence = list(Path('packages').rglob('verification.txt'))
-          assert len(evidence) == 1, 'Expected one Android verification record'
-          android = evidence[0].read_text()
-          package = re.findall(r"^package: name='([^']+)' versionCode='(\d+)' versionName='([^']+)'", android, re.MULTILINE)
-          assert package == [('com.fragaria.yksmania', code, version)], 'Android artifact package/version metadata does not match'
+          assert len(evidence) == int(include_android), 'Android evidence does not match the explicit publication scope'
+          if include_android:
+              android = evidence[0].read_text()
+              package = re.findall(r"^package: name='([^']+)' versionCode='(\d+)' versionName='([^']+)'", android, re.MULTILINE)
+              assert package == [('com.fragaria.yksmania', code, version)], 'Android artifact package/version metadata does not match'
           out = Path('release-files')
           out.mkdir()
           for p in files:
               name = f'YKSMania-{version}-Android-debug.apk' if p.suffix == '.apk' else p.name
               shutil.copyfile(p, out / name)
-          shutil.copyfile(evidence[0], out / 'Android-verification.txt')
+          if include_android:
+              shutil.copyfile(evidence[0], out / 'Android-verification.txt')
           shutil.copyfile('verified-run.json', out / 'verified-run.json')
           with (out / 'SHA256SUMS.txt').open('w') as f:
               for p in sorted(out.iterdir()):
@@ -89,8 +100,9 @@ jobs:
                       f.write(hashlib.file_digest(p.open('rb'), 'sha256').hexdigest() + '  ' + p.name + '\n')
           PY
       - name: Require the pinned Android certificate
+        if: inputs.include_android
         run: node scripts/prepare-android-signing.mjs --verify release-files/Android-verification.txt
-      - name: Publish complete prerelease
+      - name: Publish verified prerelease
         run: |
           release_tag="v${RELEASE_VERSION}-alpha.1"
           gh release create "$release_tag" --target "$VERIFIED_SHA" --title "YKSMania ${RELEASE_VERSION} alpha 1" --draft --prerelease --notes-file docs/RELEASE_ALPHA.md

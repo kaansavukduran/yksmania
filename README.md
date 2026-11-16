@@ -1,10 +1,18 @@
 # YKSMania
 
-Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.16.0**, webde ve [indirilebilir alpha paketleriyle](https://github.com/kaansavukduran/yksmania/releases/tag/v0.16.0-alpha.1) yayımlandı.
+Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. Son yayımlanan **0.16.0**, webde ve [indirilebilir alpha paketleriyle](https://github.com/kaansavukduran/yksmania/releases/tag/v0.16.0-alpha.1) yayımlandı.
 
 [Vercel](https://yksmania.vercel.app) · [GitHub Pages](https://kaansavukduran.github.io/yksmania/) · [GitHub deposu](https://github.com/kaansavukduran/yksmania)
 
 Çalışma sırasının **199–258. başlıkları** için 60 yeni etkileşimli ünite hazırlandı. Uygulamada **264 anlatım, 236 ayrıntılı rehber, 264 yerleşik kopya kağıdı ve 2.440 özgün soru** vardır. Yeni pakette 678 bölüm, 248 adım adım çözüm, 248 hatırlama ve 600 beş seçenekli soru bulunur. İlk 258/479 başlık anlatım ve bağımsız soruyla hazırdır. Önceki 1.840 sorunun bütün alanları ve 205 eski ders kaydı korunur. 610 birim, 548 tam tarayıcı vakası, paketli Windows/Linux çevrimdışı açılış ve GitHub Pages kabulü geçti. Yayın denetiminin 547 vakası gerçek HTTPS’de, bir geliştirme regresyonu yerel Vite’da çalışır.
+
+## Geliştirilmekte olan 0.17
+
+259–348. çalışma başlıkları için aday: **350 anlatım, 322 ayrıntılı rehber, 350 özet ve 3.340 soru**. Önceki sürüme 86 yeni anlatım, dört kayıpsız rehber genişletmesi ve 900 soru eklenir. Bu aday henüz üretime yayımlanmadı; ayrıntılar [FORGE](FORGE.md), [kapsam](docs/CONTENT_COVERAGE.md) ve [QA](docs/QA.md) belgelerindedir.
+
+Ortak kademeli yardım, deneme öğrenme/simülasyon modları, başlıklar için çevrimdışı Bricolage ve korunmuş Lexend tercihi eklendi. Eski deneme soruları, tekrar tarihleri, notlar ve rehber örnek/hatırlama konumu korunur. Ayrıntılı yardım şimdilik 20 sorudadır; tamamı bitmiş sayılmaz. Yeni katalog 16 kısa pratik sunar; tam 120/80 dağılım değildir.
+
+Android imza ayarı ertelendi. Web ve masaüstü doğrulaması sürer; açık kapsamlı masaüstü yayını yeni APK varmış gibi gösterilmez. Sonraki 349–408 kaynak paketi ve 409 sonrası öğretim ayrı çalışma alanlarında hazırlanır; bu sayılara ve canlıya dahil değildir.
 
 ## İçerik ve öğrenme
 

@@ -2,6 +2,6 @@
   "version": "0.17.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Geliştirme adayı: çalışma sırasının 259–318. başlıkları için 57 yeni etkileşimli anlatım ve mevcut paragraf, elektrik alanı, kimyasal denge derslerine kapsamlı ekler hazırlanıyor. 600 yeni özgün soru; toplam 321 anlatım, 293 ayrıntılı rehber, 321 yerleşik özet ve 3040 soru hedefi. Kaynak ve bağımsız bilimsel incelemeler tamamlandı; bütünleşik arayüz, çevrimdışı ve yayın kontrolleri sürüyor. Bütün 479 başlık ve bütün Drive/YKS arşivi tamamlandı olarak sunulmaz."
+    "tr": "Geliştirme adayı: çalışma sırasının 259–348. başlıklarında 86 yeni etkileşimli anlatım, mevcut paragraf/elektrik alanı/denge/DNA rehberlerine kapsamlı ekler ve 900 yeni özgün soru. Gerçek kaynak toplamı 350 anlatım, 322 ayrıntılı rehber, 350 yerleşik özet ve 3340 sorudur. Kademeli çözüm desteği 20 soruda ayrıntılı hazırlanmıştır; diğer sorular kendi ipucunu ve açıklamasını kullanır. Denemelerde öğrenme/simülasyon biçimleri ve ayrı yardım kaydı; çevrimdışı Bricolage başlıklar, kullanıcı tercihini koruyan Lexend vardır. İlk 348/479 başlık anlatım-soru eşleşir; bütün alt beceriler ve bütün arşiv tamamlandı sayılmaz. Bütünleşik tarayıcı, eski sürüm veri koruma ve yayın kabulü sürüyor; Android imza kurulumu ertelendi."
   }
 }

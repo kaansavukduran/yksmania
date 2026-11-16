@@ -1,5 +1,5 @@
 import { lessons, subjects } from "./content";
-import type { AppState, Lesson } from "./model";
+import type { AppState, Lesson, Subject } from "./model";
 import type { ExamDraft, ExamItem, ExamSession } from "./examModel";
 import { helpPanels, resolvedGuidance } from "../learning/questionHelp";
 export type ExamSpec = {
@@ -114,25 +114,33 @@ function mixed(exam: "TYT" | "AYT"): ExamSpec {
     missingSubjects,
   };
 }
+function branchSpec(subject: Subject): ExamSpec | undefined {
+  const items = subjectItems([subject.id], 40);
+  if (!items.length) return undefined;
+  return {
+    id: `branch-${subject.id}`,
+    title: `${subject.exam} ${subject.name.tr} branş denemesi`,
+    exam: subject.exam,
+    kind: "branch",
+    items,
+    durationSeconds: scaledExamSeconds(subject.exam, items.length),
+    fullLength: false,
+    missingSubjects: [],
+  };
+}
+function previewForId(id: string): ExamSpec | undefined {
+  if (id === "mixed-tyt") return mixed("TYT");
+  if (id === "mixed-ayt") return mixed("AYT");
+  const subject = subjects.find((s) => `branch-${s.id}` === id);
+  return subject ? branchSpec(subject) : undefined;
+}
 export function examCatalogue(): ExamSpec[] {
   return [
-    ...["TYT", "AYT"].map((e) => mixed(e as "TYT" | "AYT")),
+    mixed("TYT"),
+    mixed("AYT"),
     ...subjects.flatMap((subject) => {
-      const items = subjectItems([subject.id], 40);
-      return items.length
-        ? [
-            {
-              id: `branch-${subject.id}`,
-              title: `${subject.exam} ${subject.name.tr} branş denemesi`,
-              exam: subject.exam,
-              kind: "branch" as const,
-              items,
-              durationSeconds: scaledExamSeconds(subject.exam, items.length),
-              fullLength: false,
-              missingSubjects: [],
-            },
-          ]
-        : [];
+      const branch = branchSpec(subject);
+      return branch ? [branch] : [];
     }),
   ];
 }
@@ -166,8 +174,11 @@ export function selectExamVariant(
 ): ExamItem[] {
   // Unknown or deliberately customized specs keep the supplied paper. This
   // protects callers that construct a smaller practice from catalogue metadata.
-  const known = examCatalogue().find(
-    (candidate) =>
+  // Only the requested preview is needed to recognize a catalogue paper.
+  // Rebuilding every subject here copied unrelated guidance for each start.
+  const candidate = previewForId(spec.id);
+  const known =
+    candidate &&
       candidate.id === spec.id &&
       candidate.title === spec.title &&
       candidate.exam === spec.exam &&
@@ -179,8 +190,9 @@ export function selectExamVariant(
       candidate.items.length === spec.items.length &&
       candidate.items.every(
         (item, i) => JSON.stringify(item) === JSON.stringify(spec.items[i]),
-      ),
-  );
+      )
+      ? candidate
+      : undefined;
   if (!known) return spec.items.map(copyItem);
   const random = seededRandom(seed),
     groups: [string[], number][] =

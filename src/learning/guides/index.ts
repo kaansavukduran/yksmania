@@ -1,3 +1,9 @@
+import { forge020BiologyGuideExtensions } from "../forge020Biology";
+import { forge020BiologyGuides } from "../forge020Biology";
+import { forge020ChemistryGuides } from "../forge020Chemistry";
+import { forge020PhysicsGuides } from "../forge020Physics";
+import { forge020GeographyGuides } from "../forge020Geography";
+import { forge020HumanitiesGuides } from "../forge020Humanities";
 import { forge019ChemistryGuideExtensions } from "../forge019Chemistry";
 import { forge019PhysicsGuideExtensions } from "../forge019Physics";
 import { forge019TurkishGuideExtensions } from "../forge019Turkish";
@@ -84,6 +90,11 @@ import { shellsGuide } from "./shells";
 import { paragraphGuide } from "./paragraph";
 export const lessonGuides = new Map(
   [
+    ...forge020BiologyGuides,
+    ...forge020ChemistryGuides,
+    ...forge020PhysicsGuides,
+    ...forge020GeographyGuides,
+    ...forge020HumanitiesGuides,
     ...forge019BiologyGuides,
     ...forge019ChemistryGuides,
     ...forge019PhysicsGuides,
@@ -190,4 +201,11 @@ for (const extension of [
     recall: [...original.recall, ...extension.recall],
     source: original.source + "\n" + extension.source,
   });
+}
+
+// Preserve all original DNA teaching, examples and saved question identities.
+for(const extension of forge020BiologyGuideExtensions){
+ const original=lessonGuides.get(extension.id);
+ if(!original)throw Error("Missing original DNA guide: "+extension.id);
+ lessonGuides.set(extension.id,{...original,sections:[...original.sections,...extension.sections],examples:[...original.examples,...extension.examples],recall:[...original.recall,...extension.recall],source:original.source+"\n"+extension.source});
 }
