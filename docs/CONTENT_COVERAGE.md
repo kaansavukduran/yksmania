@@ -14,7 +14,7 @@ Bilgi ve inanç 15 kartı son TYT kotasını doldurur. Kısa branşlar kendi ger
 
 410 anlatım ile 382 ayrıntılı rehber arasındaki 28 eski kısa anlatım hâlâ derinleştirilecek. Son 110 eksik yardım alanı tamamlanmıştır;3580 eski kartta tam adım/şık rehberi açık kalır.409 sonrası içerik bu sayılara dahil değildir. Başlık eşleşmesi tüm MEB/Drive/ÖSYM, alt beceri veya doğrulanmış video kapsamının tamamlandığı anlamına gelmez.
 
-1007 birim ve 61 yeni gerçekUI vakası PASS;67 aile Electron PASS; Pages ve 859 tam tarayıcı kapısı ayrıca aranır.
+1007 birim ve 61 yeni gerçekUI vakası PASS;67 aile Electron PASS; Pages67 aile de PASS;859 tam tarayıcı kapısı ayrıca aranır.
 
 Canlı sürüm0.17’dir: [Vercel](https://yksmania.vercel.app), [Pages](https://kaansavukduran.github.io/yksmania/) ve [Windows/Linux indirmeleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.17.0-alpha.1). Kaynak3a3a6c5ab6949d2a4b14076f4af4d8aefba656a2 üzerinde832 birim/737 tarayıcı,737 yayımlanmış kabul ve54 aile gerçek paketli masaüstü/Pages geçti. Bu0.18 adayının sayıları canlıya eklenmiş sayılmaz. Android imza ayarı ertelendi; yeni APK yoktur. Fiziksel cihaz,temiz kurulum,portable taşıma ve native sürümler arasında veri koruyan kurulum test edilmedi.
 

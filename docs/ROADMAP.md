@@ -1,6 +1,6 @@
 # 0.18 için sıradaki uygulanacak kapsam
 
-Önce 379–408 paketinin 67 aile Electron/Pages ve 859 tam tarayıcı kapısını kapat;1007 birim ve 61 yeni normal/telefon vakası geçti. Güncel aday 410 anlatım/382 rehber/410 özet/4040 soru, ilk 408/479 başlık. Canlı 0.17 ayrı tutulur.
+Önce 379–408 paketinin 67 aile Electron/Pages PASS sonrasında859 tam tarayıcı kapısını kapat;1007 birim ve 61 yeni normal/telefon vakası geçti. Güncel aday 410 anlatım/382 rehber/410 özet/4040 soru, ilk 408/479 başlık. Canlı 0.17 ayrı tutulur.
 
 Sonra 409–438: yedi bağımsız aile, 30 konu ve 484 soru;tam bilimsel/kaynak peer bitti, normal uygulama henüz bağlı değil.439–468 ve 469–479 sahipli özel dosyalarda yazılıyor;bağımsız peer eksikleri kapandıktan sonra aynı menü/IDB/offline/mobil/native kapıları uygulanır. Mevcut türev-teğete ekleme eski 11 bölüm/örnek konumunu korumalı;gerçek eski profille update testi zorunlu.
 

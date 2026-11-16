@@ -7,7 +7,7 @@
 | Yeni normal/telefon UI |61/61 son koşu PASS |
 | Önceki 021 tam CI |926 birim/798 tarayıcı, paketli Windows/Linux PASS |
 | Normal ve prefix derleme |215 gerekli varlık, 218 precache, tek dosya<5 MiB PASS |
-|022 native/Pages |67 aile Electron PASS; Pages koşusu sürüyor |
+|022 native/Pages |67 aile Electron PASS; Pages67 aile PASS |
 | Tam E 2 E |859 vaka;uzak son koşu bekleniyor |
 | Özel veri/bağımlılık |259 metin yolu 16.7 MB, 9175 özel kimlik/9425 URL ile 0 eşleşme;yalnız önceki Bricolage ek bağımlılığı |
 
@@ -20,6 +20,8 @@ Eski 3650 soru, 385 öğretim kaydı ve 115/80 tam deneme snapshotları strict h
 Canlı sürüm0.17’dir: [Vercel](https://yksmania.vercel.app), [Pages](https://kaansavukduran.github.io/yksmania/) ve [Windows/Linux indirmeleri](https://github.com/kaansavukduran/yksmania/releases/tag/v0.17.0-alpha.1). Kaynak3a3a6c5ab6949d2a4b14076f4af4d8aefba656a2 üzerinde832 birim/737 tarayıcı,737 yayımlanmış kabul ve54 aile gerçek paketli masaüstü/Pages geçti. Bu0.18 adayının sayıları canlıya eklenmiş sayılmaz. Android imza ayarı ertelendi; yeni APK yoktur. Fiziksel cihaz,temiz kurulum,portable taşıma ve native sürümler arasında veri koruyan kurulum test edilmedi.
 
 ---
+
+Prefix ilk koşusu eski nokta analitiği offline reload sonrasında boş kök belgeyle başarısız oldu; renderer hatası ve eksik kaynak isteği görülmedi. İlk kanıt saklandı. Ürün kodu veya timeout değiştirilmeden hata anına ağ/belge teşhisi eklenen tam67 aile tekrarında PASS,0 renderer hatası çıktı. İlk boş belgenin nedeni kesinleştirilmiş veya ürün yamasıyla giderilmiş diye sunulmaz; uzak tam koşu ayrıca izlenir.
 
 ## Önceki aday checkpoint kayıtları
 
