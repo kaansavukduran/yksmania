@@ -1,0 +1,253 @@
+[
+  {
+    "id": "ns-atom-1",
+    "identity": "[\"ns-atom-1\",\"Kütle numarası A=40, atom numarası Z=20 ve yükü +2 olan tek atomlu iyonun proton, nötron ve elektron sayıları sırasıyla kaçtır?\",\"\",[\"18, 20, 20\",\"20, 18, 20\",\"20, 40, 22\",\"20, 20, 18\",\"22, 18, 20\"],3,\"Proton 20; nötron 40−20=20; elektron 20−(+2)=18’dir. Geri kontrolde p+n=40 ve p−e=+2 bulunur; pozitif iyon oluşması yeni proton eklenmesini gerektirmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Atom numarası Z, çekirdekteki proton sayısını gösterir. Kütle numarası A ise proton ile nötron sayılarının toplamıdır.",
+        "Yük sayısı q, temel yük birimiyle p−e farkıdır. Pozitif q, proton sayısına göre elektron eksikliği bulunduğunu gösterir."
+      ],
+      "strategy": "Önce çekirdeği A ve Z ile belirle; ardından iyon yükünü yalnız elektron hesabında kullan. Bulduğun üç sayıyı seçeneklerde verilen p, n, e sırasına yerleştir.",
+      "steps": [
+        "Z=20 doğrudan p=20 verir. A=40, çekirdekteki p+n toplamı olduğundan nötronu bulmak için 40’tan proton sayısını çıkar.",
+        "n=40−20=20 olur. Elektron için q=p−e eşitliğine verilenleri yaz: +2=20−e; buradaki +2, elektron sayısına eklenecek proton değildir.",
+        "e=20−2=18 bulunur. İstenen p, n, e sırasıyla 20, 20, 18’dir; hem 20+20=40 hem de 20−18=+2 koşulu sağlanır."
+      ],
+      "optionReasons": [
+        "18 proton, verilen Z=20 ile çelişir. Bu üçlü ayrıca p+n=18+20=38 ve p−e=18−20=−2 verir; ne A=40 ne de +2 yük sağlanır.",
+        "Proton 20 alınmış olsa da 18 nötronla çekirdekte yalnız 20+18=38 nükleon bulunur. 20 elektron ise p−e=0 yapar; verilen iyon nötr değildir.",
+        "40, nötron sayısı değil p+n toplamıdır. Ayrıca 22 elektron almak 20−22=−2 yük verir; pozitif iyon için elektron sayısı protondan az olmalıdır.",
+        "Doğru. 20 proton Z’yi, 20 nötronla birlikte 40 nükleon A’yı ve 18 elektronla 20−18=+2 farkı iyon yükünü sağlar.",
+        "22 proton, iyon yükünü proton sayısına ekleme hatasıdır; elementin Z=20 kimliğini değiştirir. 22+18=40 ve 22−20=+2 tutsa bile verilen atom numarası sağlanmaz."
+      ],
+      "commonError": "Pozitif iyonu, elektron kaybetmesi yerine proton kazanmasıyla açıklamak veya kütle numarasını doğrudan nötron sayısı almak.",
+      "check": "Seçtiğin üçlüyü üç ayrı koşulda dene: p=20, p+n=40 ve p−e=+2. Yalnız yük ile kütle toplamının tutması yeterli değildir; Z de korunmalıdır."
+    }
+  },
+  {
+    "id": "ns-atom-2",
+    "identity": "[\"ns-atom-2\",\"A=27, Z=13 ve yükü +3 olan tek atomlu tanecikte proton+nötron+elektron toplamı kaçtır?\",\"\",[\"27\",\"37\",\"40\",\"30\",\"10\"],1,\"A=27 zaten proton ve nötron toplamıdır. Elektron sayısı 13−3=10 olduğundan bütün belirtilen taneciklerin toplamı 27+10=37’dir. 27’yi bütün atom altı taneciklerin sayısı sanma.\"]",
+    "guidance": {
+      "knowledge": [
+        "A, çekirdekte bulunan proton ve nötronların toplamıdır; çekirdek dışındaki elektronlar bu sayıya katılmaz.",
+        "Tek atomlu bir iyonun elektron sayısı e=Z−q ile bulunur. Bütün p, n, e sayıları isteniyorsa çekirdek toplamına elektron sayısı ayrıca eklenir."
+      ],
+      "strategy": "İstenen toplamı iki parçaya ayır: çekirdeğin zaten verilmiş tanecik toplamı ve yükten çıkarılacak elektron sayısı. Böylece protonu ikinci kez toplama riskini önle.",
+      "steps": [
+        "A=27 olduğu için p+n=27’yi tek parça olarak kaydet. Ayrı ayrı saymak istersen p=13 ve n=27−13=14 olur; bu ikisinin toplamı yine 27’dir.",
+        "Yük +3 olduğundan 13−e=3 eşitliğini kur. Üç elektron eksildiği için e=13−3=10 elde edilir; +3 doğrudan bir elektron adedi değildir.",
+        "Toplam p+n+e=27+10=37’dir. Ayrı sayım da aynı sonucu verir: 13+14+10=37; çekirdeği A olarak kullandığında 13 protonu yeniden ekleme."
+      ],
+      "optionReasons": [
+        "27 yalnız p+n, yani çekirdekteki nükleon sayısıdır; istenen toplamda ayrıca bulunması gereken 10 elektron dışarıda bırakılmıştır.",
+        "Doğru. Çekirdeğin 27 taneciğine +3 yüklü iyonun 13−3=10 elektronu eklenir: 27+10=37.",
+        "40, 27+13 hesabına karşılık gelir. Bu hesap elektron sayısını nötr atomdaki gibi 13 alır ve +3 yükün gösterdiği üç elektron eksikliğini gözetmez.",
+        "30, 27+3 işlemidir. İyon yükü olan 3’ü elektron sayısı sanır; oysa elektron adedi 13−3 ile belirlenmelidir.",
+        "10 doğru elektron sayısıdır fakat tek başına istenen p+n+e toplamı değildir; 27 çekirdek taneciği daha vardır."
+      ],
+      "commonError": "A’nın zaten protonları içerdiğini unutup çekirdeği iki kez saymak veya +3 yükü üç elektron varmış gibi toplama eklemek.",
+      "check": "Bulduğun elektron sayısını 13−e=+3 ile denetle. Sonra toplamdan A=27’yi çıkar; kalan sayının bu elektron sayısına eşit olması gerekir."
+    }
+  },
+  {
+    "id": "ns-atom-3",
+    "identity": "[\"ns-atom-3\",\"Nötr bir atomun yalnız iki elektron verdiği sıradan kimyasal iyonlaşmada hangi nicelik değişir?\",\"\",[\"Proton sayısı\",\"Nötron sayısı\",\"Atom numarası\",\"Kütle numarası\",\"Net elektrik yükü\"],4,\"İki negatif yüklü elektron verilince net yük +2 olur. Proton ve nötron sayıları, dolayısıyla Z ve A korunur. Bu olay farklı elemente dönüşüm değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sıradan kimyasal iyonlaşma, atom ile çevresi arasında elektron alışverişidir; çekirdekteki proton ve nötronlar bu olayda değişmez.",
+        "Nötr atomda p=e olur. Elektronların her biri negatif bir temel yük taşıdığı için elektron vermek, net yükü pozitif yönde değiştirir."
+      ],
+      "strategy": "İyonlaşma öncesi ve sonrası için p, n, e satırları kur. Seçeneklerdeki Z ve A’yı bu satırlardan türetip her niceliği önceki değeriyle karşılaştır.",
+      "steps": [
+        "Başlangıçtaki nötr atomun proton sayısına p, nötron sayısına n de. Elektron sayısı da p’dir; başlangıç durumunu (p, n, p) olarak yaz.",
+        "Yalnız iki elektron verildiğinde son durum (p, n, p−2) olur. Buradan Z=p ve A=p+n değerlerinin önce ve sonra aynı kaldığını gör.",
+        "Başlangıç yükü p−p=0 iken son yük p−(p−2)=+2 olur. Seçeneklerde p, n, Z ve A korunurken değişen nicelik net elektrik yüküdür."
+      ],
+      "optionReasons": [
+        "Proton çekirdekte kalır; verilen iki tanecik elektrondur. Proton sayısı değişseydi aynı elementin sıradan kimyasal iyonlaşması anlatılmış olmazdı.",
+        "Nötron çekirdekteki yüksüz taneciktir. İki elektronun dışarı verilmesi, çekirdekten nötron ayrıldığı anlamına gelmez.",
+        "Atom numarası Z=p’dir. Proton sayısı aynı kaldığından atom numarası da değişmez; atomun element kimliği korunur.",
+        "Kütle numarası A=p+n’dir. Elektron sayısındaki azalma bu tam sayı nükleon toplamını değiştirmez; A gerçek toplam kütle ile karıştırılmamalıdır.",
+        "Doğru. İki negatif elektron verildiğinde yük 0’dan +2’ye çıkar; p ve n sayıları korunurken p−e farkı değişir."
+      ],
+      "commonError": "Elektron kaybını çekirdekten tanecik kaybı sanıp Z veya A’yı azaltmak; kütle numarasını atomun gerçek kütlesiyle özdeşleştirmek.",
+      "check": "Her iki durum için q=p−e yaz: ilkinde 0, sonuncusunda +2 bulmalısın. Aynı anda p ve n sembollerinin iki satırda da değişmeden kaldığını doğrula."
+    }
+  },
+  {
+    "id": "ns-atom-4",
+    "identity": "[\"ns-atom-4\",\"17 proton ve 18 elektrona sahip tek atomlu bir taneciğin net yükü ve iyon türü hangisidir?\",\"\",[\"−1, anyon\",\"+1, katyon\",\"0, nötr atom\",\"−17, anyon\",\"+18, katyon\"],0,\"Net yük p−e=17−18=−1’dir; negatif yüklü tanecik anyondur. Elektron sayısı protondan bir fazla olduğu için eksi bir temel yük fazlalığı bulunur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Protonun yükü +1, elektronunki −1 temel yük birimidir; toplam yük bu katkıların cebirsel toplamıdır.",
+        "Negatif yüklü iyon anyon, pozitif yüklü iyon katyon olarak adlandırılır. İyon adı, yükün büyüklüğünden önce işaretiyle belirlenir."
+      ],
+      "strategy": "Önce verilen protonların pozitif ve elektronların negatif katkısını ayrı yazıp topla. İyon türünü, tanecik adetlerinden birine bakarak değil bu toplamın işaretinden adlandır.",
+      "steps": [
+        "17 proton toplam +17, 18 elektron toplam −18 temel yük katkısı yapar. Nötron sayısı verilmemiştir ve yüksüz olduğu için bu yük hesabında gerekmez.",
+        "Katkıları birleştir: q=(+17)+(−18)=−1. On yedi protonun yükü on yedi elektronunkiyle dengelenir; bir elektronun negatif yükü fazladır.",
+        "Net yükün işareti negatif olduğundan tanecik anyondur. Yük ile türü birlikte isteyen seçenekte −1 ve anyon eşleşmesini ara."
+      ],
+      "optionReasons": [
+        "Doğru. +17−18=−1 bulunur; bir fazla elektron negatif yük oluşturduğu için iyon anyondur.",
+        "+1 sonucu, farkı e−p=18−17 yönünde almaktan doğar. Elektron fazlası pozitif değil negatif yük verir; katyon adı da bu yüzden uygun değildir.",
+        "Yükün sıfır olabilmesi için proton ve elektron sayıları eşit olmalıydı. Burada 18−17=1 elektron fazlası vardır.",
+        "−17, proton adedini negatif yük gibi kullanır. Protonların katkısı +17’dir ve 18 elektronun katkısıyla birlikte hesaplanmalıdır.",
+        "+18, elektron adedini pozitif yük gibi okur ve proton katkısını da dışarıda bırakır. Elektronlar −18 katkı yapar; bunun +17 ile toplamı alınır."
+      ],
+      "commonError": "Daha büyük olan elektron adedini pozitif yük sanmak veya net yükü iki katkının farkı yerine tek bir tanecik adediyle eşitlemek.",
+      "check": "On yedi proton–elektron çiftini yük bakımından eşleştir. Geriye bir elektron kalması, hem yükün −1 büyüklüğünü hem anyon adını doğrulamalıdır."
+    }
+  },
+  {
+    "id": "ns-atom-5",
+    "identity": "[\"ns-atom-5\",\"Bir elementin periyodik tabloda verilen ortalama atom kütlesi 35,5’tir. Hangi yorum doğrudur?\",\"\",[\"Bu elementin her atomunda 35,5 proton bulunur.\",\"Her çekirdekte kesinlikle 35,5 nükleon vardır.\",\"Ortalama atom kütlesi ile bir izotopun tam sayı nükleon sayısı olan A aynı kavram değildir.\",\"Bu elementin atom numarası mutlaka 35,5’tir.\",\"Elektronların kütlesi tam olarak sıfırdır.\"],2,\"Kütle numarası A proton ve nötron sayılarının tam sayı toplamıdır. Ortalama atom kütlesi izotopların kütleleri ve bolluklarıyla ilişkili başka bir niceliktir; ondalık ortalama, yarım proton veya nükleon anlamına gelmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Proton sayısı Z ve nükleon sayısı A, tek bir tanecikteki tam sayı adetlerdir. A=p+n olur; izotopun gerçek kütlesiyle de aynı kavram değildir.",
+        "Bir elementin ortalama atom kütlesi, izotop kütlelerinin atom bolluklarıyla ağırlıklandırılmasına dayanır; ortalama bir atom topluluğunu temsil eder.",
+        "Elektronun kütlesi sıfır değildir. Bazı temel hesaplarda çekirdekteki taneciklere göre çok küçük olduğu için yaklaşık olarak ihmal edilir."
+      ],
+      "strategy": "Her seçeneğin bir tek atomdaki tanecik adedinden mi, örnek topluluğunun kütle ortalamasından mı söz ettiğini ayır. Ardından yaklaşık ihmal ile tam sıfır iddiasını ayrı değerlendir.",
+      "steps": [
+        "Verilen 35,5 sayısı bir ortalamadır. Bunu tek çekirdeğe p veya p+n adedi diye yazarsan yarım tanecik saymış olursun; proton ve nükleon adetleri böyle ondalık olmaz.",
+        "Bu nedenle 35,5’i Z veya A olarak atayamazsın. İzotop kütleleri ile bolluklar birlikte ortalamayı belirler; tek bir izotopun A’sı ise kendi çekirdeğinin tam sayı p+n toplamıdır.",
+        "Elektron kütlesini tam sıfır sayan ifade de fiziksel olarak yanlıştır. Uygun yorum, verilen ortalama atom kütlesini tek izotopun nükleon sayısı A’dan ayıran seçenektir."
+      ],
+      "optionReasons": [
+        "Her atom için 35,5 proton demek yarım proton saymak olur. Proton adedi tam sayıdır; verilen kütle ortalaması doğrudan proton adedi değildir.",
+        "35,5 nükleon tek bir çekirdekteki p+n adedi olamaz. Ortalama atom kütlesinin ondalıklı olması, çekirdekte kesirli nükleon bulunduğunu göstermez.",
+        "Doğru. Ortalama atom kütlesi izotopların kütle ve bolluklarını birleştirir; A ise belirli bir çekirdeğin tam sayı proton+nötron toplamıdır.",
+        "Atom numarası proton adedi olduğundan Z=35,5 olamaz. Periyodik tablodaki ortalama kütleyi atom numarası sanmak iki ayrı niceliği eşitler.",
+        "Elektron kütlesinin yaklaşık ihmal edilmesi, tam olarak sıfır olması değildir. Verilen 35,5 ortalama değeri de elektron kütlesinin sıfır olduğunu kanıtlamaz."
+      ],
+      "commonError": "Ondalıklı ortalama kütleyi tek atomun proton veya nükleon adedi sanmak; yaklaşık sıfır kabulünü gerçek sıfırla aynı görmek.",
+      "check": "Bir yanda tek çekirdekte sayılabilen Z ve A’yı, diğer yanda izotop bolluklarından çıkan ortalamayı tut. Seçtiğin yorum hem kesirli tanecik iddiasından hem elektron kütlesini sıfırlamaktan kaçınmalıdır."
+    }
+  },
+  {
+    "id": "ns-isotope-1",
+    "identity": "[\"ns-isotope-1\",\"Nötr ¹²₆C ve ¹³₆C atomları için doğru ilişki hangisidir?\",\"\",[\"Aynı elementin, nötron sayıları farklı izotoplarıdır.\",\"Proton sayıları farklıdır.\",\"Nötron sayıları mutlaka aynıdır.\",\"Elektron sayıları sırasıyla 12 ve 13’tür.\",\"Kimyasal iyonlaşmayla birbirlerine dönüşmeleri zorunludur.\"],0,\"Her iki atomda p=6 ve nötrlük nedeniyle e=6’dır. Nötronlar sırasıyla 12−6=6 ve 13−6=7 olduğundan aynı elementin farklı izotoplarıdır. Fark elektron değil nötron sayısındadır.\"]",
+    "guidance": {
+      "knowledge": [
+        "İzotoplar aynı proton sayısına, farklı nötron sayılarına sahip aynı elementin tanecikleridir. Gösterimde alttaki sayı Z, üstteki sayı A’dır.",
+        "Nötr atomda e=Z; nötron sayısı ise n=A−Z olur. Kimyasal elektron alışverişi, nötron sayısını değiştiren bir çekirdek dönüşümü değildir."
+      ],
+      "strategy": "Karbon gösterimlerinin her biri için p, n ve e değerlerini ayrı satıra çıkar. Hangi sütunun ortak, hangisinin farklı olduğunu görerek ilişki adını seç.",
+      "steps": [
+        "Her iki gösterimin alt sayısı 6’dır; bu yüzden ikisinin de p=6 olduğunu yaz. Nötr denildiği için elektron sayıları da e=6’dır; 12 ve 13 elektron sayıları değildir.",
+        "Üstteki A’dan Z’yi çıkar: ilk atomda n=12−6=6, ikinci atomda n=13−6=7 bulunur. Böylece ortak proton sayısının yanında farklı nötron sayılarını belirledin.",
+        "p değerleri aynı, n değerleri farklı olan bu iki karbon atomu izotoptur. Elektron verme veya alma, bulduğun 6 ve 7 nötronu birbirine dönüştürmez."
+      ],
+      "optionReasons": [
+        "Doğru. İkisinde p=6 olduğu için element aynıdır; n=6 ve n=7 farkı aynı elementin iki farklı izotopunu verir.",
+        "Proton sayıları farklı değildir; iki alt indis de Z=6’dır. Değişen üst sayıdan farklı proton sayısı çıkarılamaz.",
+        "Nötronlar 12−6=6 ve 13−6=7’dir. Bu iki fark eşit olmadığından nötron sayılarının aynı olduğu söylenemez.",
+        "12 ve 13 kütle numaralarıdır. Nötr atomda elektron sayısı A’ya değil Z’ye eşit olur; ikisinin de 6 elektronu vardır.",
+        "Kimyasal iyonlaşma elektron alışverişidir; 6 nötronlu çekirdeği 7 nötronlu çekirdeğe çevirmez. Bu yüzden iyonlaşmayla birbirlerine dönüşmeleri zorunlu değildir."
+      ],
+      "commonError": "Üstteki A’yı elektron sayısı sanmak veya izotoplar arasındaki nötron farkını iyon yükü farkıyla açıklamak.",
+      "check": "Her atomda p+n hesabını geri yap: 6+6=12 ve 6+7=13. Element kimliğinin iki satırda da Z=6 ile korunduğunu ayrıca doğrula."
+    }
+  },
+  {
+    "id": "ns-isotope-2",
+    "identity": "[\"ns-isotope-2\",\"Nötr ¹³₆C ve ¹⁴₇N atomlarının nötron sayıları ile aralarındaki ilişki hangisidir?\",\"\",[\"6 ve 7; izobar\",\"13 ve 14; izotop\",\"7 ve 7; aynı element\",\"7 ve 7; izoton\",\"6 ve 6; izoelektronik\"],3,\"Karbon için n=13−6=7; azot için n=14−7=7’dir. Nötron sayıları aynı, proton sayıları farklı olduğundan izotondurlar; farklı elementlerdir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Nötron sayısı n=A−Z ile hesaplanır. Eşit nötron sayısına ve farklı proton sayılarına sahip atomlar izoton olarak adlandırılır.",
+        "Aynı element olmanın ölçütü proton sayısıdır; eşit nötron sayısı tek başına aynı element olmayı sağlamaz. Nötr atomların elektron sayısı Z’ye eşittir."
+      ],
+      "strategy": "Önce iki çekirdeğin nötronlarını üst sayı eksi alt sayı işlemiyle bul. Sonra seçeneklerin sayı çiftini ve ilişki adını ayrı ayrı denetle; yalnız birinin tutması yetmez.",
+      "steps": [
+        "¹³₆C için n=13−6=7, ¹⁴₇N için n=14−7=7 hesapla. Seçeneğin ilk kısmında 7 ve 7 bulunmalıdır; Z veya A değerlerini nötron yerine yazma.",
+        "İki nötron sayısı eşitken protonlar 6 ve 7 ile farklıdır. Bu durum aynı element ya da izotop değil, farklı elementler arasında izoton ilişkisine uyar.",
+        "Her iki koşulu birleştir: 7 ve 7; izoton. Nötrlükten gelen elektronlar 6 ve 7 olduğu için izoelektronik seçeneği de bu atom çiftine uymaz."
+      ],
+      "optionReasons": [
+        "6 ve 7, burada proton sayılarını nötron diye okur. Ayrıca A değerleri 13 ve 14 olduğundan kütle numaraları eşit değildir; izobar adı da yanlıştır.",
+        "13 ve 14, nötron değil kütle numaralarıdır. İzotop olmak için protonların eşit olması gerekirdi; burada Z değerleri 6 ve 7’dir.",
+        "7 ve 7 nötron hesabı doğrudur; ancak aynı element sonucuna götürmez. Proton sayıları 6 ve 7 olduğundan karbon ile azot farklı elementlerdir.",
+        "Doğru. Her iki atomda 7 nötron, fakat farklı proton sayıları vardır; eşit nötron ve farklı Z koşulu izoton ilişkisini verir.",
+        "İki nötron sayısı 6 değildir; ikisi de 7’dir. Ayrıca nötr atomlarda elektronlar 6 ve 7 olduğundan bu çift izoelektronik de değildir."
+      ],
+      "commonError": "Nötron eşitliğini element kimliğiyle karıştırıp sayı çiftini doğru bulduğu hâlde ilişkiye aynı element veya izotop adını vermek.",
+      "check": "Hesaplanan 7 nötronu her çekirdeğe geri ekle: 6+7=13 ve 7+7=14. Sonra Z değerlerinin farklı olduğunu görerek izoton ile aynı element yorumunu ayır."
+    }
+  },
+  {
+    "id": "ns-isotope-3",
+    "identity": "[\"ns-isotope-3\",\"¹⁴₆C ve ¹⁴₇N tanecikleri hangi nedenle izobar olarak adlandırılır?\",\"\",[\"Atom numaraları aynı olduğu için\",\"Kütle numaraları aynı, proton sayıları farklı olduğu için\",\"Nötron sayıları aynı olduğu için\",\"Her ikisi de mutlaka aynı elektron sayısını taşıdığı için\",\"Çekirdekleri tamamen özdeş olduğu için\"],1,\"İki tanecikte A=14 eşitken Z değerleri 6 ve 7’dir. İzobar ilişkisinde aynı nükleon sayısı bulunur; bu, aynı element veya aynı kimyasal davranış demek değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "İzobar taneciklerin kütle numaraları A eşit, proton sayıları Z farklıdır. Eşit A, yalnız toplam nükleon adedinin eşitliğini anlatır.",
+        "Çekirdeğin proton ve nötron bileşimi p=Z ve n=A−Z ile belirlenir. Elektron adedi ise yük bilgisine de bağlıdır; yalnız A eşitliğinden çıkarılmaz."
+      ],
+      "strategy": "İki gösterimin üst ve alt sayılarını karşılıklı eşleştir; ardından nötronları hesaplayıp eşit toplam ile özdeş çekirdeği ayır. Elektronla ilgili kesin ifadeye ayrıca verilmiş veri ara.",
+      "steps": [
+        "Üst sayıları karşılaştır: her ikisinde A=14 bulunur. Alt sayılar ise Z=6 ve Z=7’dir; ortak olan atom numarası değil kütle numarasıdır.",
+        "Çekirdekleri aç: karbon için 6 proton ve 14−6=8 nötron; azot için 7 proton ve 14−7=7 nötron vardır. Toplamlar eşit olsa da bileşimleri farklıdır.",
+        "Eşit A ve farklı Z, izobar adını gerekçelendirir. Gösterimler elektron sayılarının mutlaka eşit olduğunu sağlamaz; nötr alınan bir örnekte bile elektronlar 6 ve 7 olur."
+      ],
+      "optionReasons": [
+        "Atom numaraları aynı değildir: karbonun Z’si 6, azotunki 7’dir. Bu alt indisler eşit olsaydı farklı elementler arasındaki izobar gerekçesi kurulamazdı.",
+        "Doğru. İki çekirdekte de A=14 bulunurken proton sayıları 6 ve 7 ile farklıdır; izobarın belirleyici koşulları bunlardır.",
+        "Nötron sayıları 14−6=8 ve 14−7=7’dir; eşit değildir. Eşit olan p+n toplamıdır, yalnız n değildir.",
+        "A=14 eşitliği elektron adedini zorunlu olarak eşitlemez. İkisi nötr olsa bile e değerleri 6 ve 7 olur; farklı iyon yükleri için de yük bilgisi gerekir.",
+        "Çekirdekler özdeş değildir: biri 6p+8n, diğeri 7p+7n taşır. Aynı 14 nükleon toplamı, proton–nötron dağılımlarının aynı olduğu anlamına gelmez."
+      ],
+      "commonError": "Aynı nükleon toplamını aynı proton ve nötron bileşimi sanmak ya da çekirdek ilişkisinden zorunlu elektron eşitliği çıkarmak.",
+      "check": "İki çekirdek için (Z,n,A) satırlarını (6,8,14) ve (7,7,14) olarak yan yana yaz. Yalnız A sütunu eşit olmalı; bu karşılaştırma için elektron adedini bilmen gerekmez."
+    }
+  },
+  {
+    "id": "ns-isotope-4",
+    "identity": "[\"ns-isotope-4\",\"Temel hâlde Ne atomu 10 proton ve 10 elektron, Na⁺ iyonu 11 proton ve 10 elektron taşıyor. Hangi ifade doğrudur?\",\"\",[\"Aynı elementtirler.\",\"Na⁺ oluşurken çekirdekte bir proton kaybolmuştur.\",\"Proton sayılarının farklı olması elektron sayılarının eşitliğini imkânsız yapar.\",\"Her ikisinin nötron sayısı kesinlikle 10’dur.\",\"Elektron sayıları ve bu örnekte elektron dizilimleri aynı olabilir; element kimlikleri farklıdır.\"],4,\"Bu yaygın temel hâl örneklerinde 10 elektron aynı elektron dizilimini verir ve tanecikler izoelektroniktir. Ancak proton sayıları farklıdır; Na⁺ sodyum, Ne neondur. Nötron sayıları A bilgisi olmadan kesin bulunmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Element kimliğini proton sayısı belirler. Kimyasal iyonlaşma elektron sayısını değiştirirken çekirdekteki proton sayısını korur.",
+        "Elektron sayısı ve elektron dizilimi aynı tanecikler izoelektronik olarak adlandırılır. Elektron dizilimi değerlendirilirken elektron adediyle birlikte temel veya uyarılmış hâl koşulu gözetilir. Nötron hesabı içinse kütle numarası A gerekir."
+      ],
+      "strategy": "Verileri üç ayrı başlıkta incele: protonla belirlenen kimlik, temel hâlde elektron düzeni ve nötron çıkarımı. Seçeneklerin bir başlıktaki eşitliği diğerine taşıyıp taşımadığını denetle.",
+      "steps": [
+        "Ne için p=10, Na⁺ için p=11 verildiğinden element kimlikleri farklıdır. Na⁺ oluşurken eksilen proton değil elektrondur; 11 proton korunur.",
+        "Her ikisinde 10 elektron vardır. Karttaki temel hâl örneklerinin elektron dizilimi 1s² 2s² 2p⁶, katman dağılımı 2,8’dir; bu eşitlik farklı proton sayılarına rağmen mümkündür.",
+        "Nötronları belirleyecek A değerleri verilmemiştir; ikisi için n=10 denemez. Böylece elektron sayısı ve bu örnekte dizilimi ortak olurken element kimliklerinin farklı kalabildiğini seç."
+      ],
+      "optionReasons": [
+        "Aynı element olabilmeleri için proton sayılarının eşit olması gerekirdi. Verilen 10 ve 11 proton, Ne ile Na’nın farklı element kimliklerini koruduğunu gösterir.",
+        "Na⁺ oluşumu bir elektronun verilmesidir; çekirdekteki 11 protondan biri kaybolmaz. Proton kaybı sıradan kimyasal iyonlaşma değildir.",
+        "Veri zaten iki tanecikte de 10 elektron bulunduğunu söylüyor. Ne’nin 10p/10e ile nötr, Na⁺’ın 11p/10e ile +1 olması bu eşitliğin mümkün olduğunu gösterir.",
+        "Nötron sayısını n=A−Z ile bulmak için A gerekir. Kartta iki kütle numarası da verilmediği için her ikisinin n=10 olması kesin değildir.",
+        "Doğru. Verilen temel hâl örneklerinde 10 elektronun düzeni 1s² 2s² 2p⁶ olabilir; protonlar 10 ve 11 olduğu için elementler yine farklıdır."
+      ],
+      "commonError": "Elektron sayısı eşit olan tanecikleri aynı element sanmak veya Na⁺ yükündeki + işaretini bir protonun kaybolmasıyla açıklamak.",
+      "check": "Yükleri verilen sayılardan doğrula: Ne için 10−10=0, Na⁺ için 11−10=+1. Bu iki sonuç, elektron eşitliğinin neden proton eşitliği gerektirmediğini gösterir; n için hâlâ A bilgisi eksiktir."
+    }
+  },
+  {
+    "id": "ns-isotope-5",
+    "identity": "[\"ns-isotope-5\",\"Yaklaşık izotop kütleleri 20 ve 22 birim olan bir elementte bolluklar sırasıyla %60 ve %40’tır. Ağırlıklı ortalama atom kütlesi bu modelde kaç birimdir?\",\"\",[\"21,0\",\"42,0\",\"20,8\",\"20,4\",\"22,6\"],2,\"Ortalama 20×0,60+22×0,40=12+8,8=20,8’dir. Bolluklar eşit olmadığı için 21 olan basit aritmetik ortalama kullanılamaz. Bu, tek atomun 20,8 nükleon taşıdığını söylemez.\"]",
+    "guidance": {
+      "knowledge": [
+        "İzotop bolluğu, atomların sayı payıdır. Ağırlıklı ortalamada her izotopun kütlesi kendi payıyla çarpılır; yüzde payları toplamı 100 olmalıdır.",
+        "İki kütlenin pozitif paylarla ortalaması bu iki kütle arasında kalır. Bolluklar eşit değilse basit aritmetik ortalama genel olarak doğru sonucu vermez."
+      ],
+      "strategy": "Yüzdeleri toplamı bir olan paylara dönüştürüp her kütleyi kendi payıyla eşleştir. Sonucu iki kütle arasındaki konumuyla ve daha bol izotopa yakınlığıyla denetle.",
+      "steps": [
+        "%60 ve %40’ı sırasıyla 0,60 ve 0,40 payları olarak yaz; toplamları 1 eder. 20 birimlik izotopu 0,60, 22 birimlik izotopu 0,40 ile eşleştir.",
+        "İki kütle katkısını ayrı hesapla: 20×0,60=12 ve 22×0,40=8,8. Bu katkılar ayrı izotopların topluluğun ortalamasına ağırlıklı katkılarıdır; tek atomun tanecik sayıları değildir.",
+        "Katkıları topla: 12+8,8=20,8 birim. Sonuç 20 ile 22 arasındadır ve %60 ile daha bol olan 20’ye daha yakındır; 21’i veren eşit bolluk ortalaması burada kullanılmaz."
+      ],
+      "optionReasons": [
+        "21,0=(20+22)/2, iki izotopu %50–%50 varmış gibi eşit ağırlıklandırır. Verilen %60–%40 bolluklarını kullanmaz.",
+        "42,0=20+22 yalnız kütleleri toplar; bolluk paylarıyla ağırlıklandırıp ortalama oluşturmaz. Ortalama ayrıca 22’nin üstüne çıkamaz.",
+        "Doğru. 20×0,60+22×0,40=12+8,8=20,8 olur; hem bolluklara hem 20–22 aralığına uyar.",
+        "20,4 sonucu, 20+0,40 işlemine karşılık gelir. Hafif kütleye eklenecek katkıda 22−20=2 birimlik fark da kullanılmalıdır: 20+2×0,40.",
+        "22,6 en ağır izotopun 22 birimlik kütlesinden bile büyüktür. Pozitif %60 ve %40 paylarla kurulan bu iki izotop ortalaması 20–22 aralığını aşamaz."
+      ],
+      "commonError": "Bollukları yok sayıp (20+22)/2 hesaplamak veya %40 payını kütle farkıyla çarpmadan doğrudan 20’ye eklemek.",
+      "check": "20’den farkı kullanarak bağımsız kontrol yap: ağır izotopun 2 birimlik farkının %40’ı 0,8’dir; 20+0,8=20,8 bulunur. Ortalama hafif izotopa 0,8, ağıra 1,2 uzaklıkta olmalıdır."
+    }
+  }
+]

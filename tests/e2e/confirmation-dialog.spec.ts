@@ -70,7 +70,9 @@ async function entry(page: Page, title: string) {
   await page
     .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
     .fill(title);
-  return page.locator(".ready-topic").filter({ hasText: title });
+  const lesson = [math, history].find((pack) => pack.lessonTitle === title);
+  if (!lesson) throw new Error(`Unknown confirmation fixture title: ${title}`);
+  return page.locator(`.ready-topic[data-lesson-id="${lesson.lessonId}"]`);
 }
 async function checkedMath(page: Page) {
   await (await entry(page, math.lessonTitle)).click();

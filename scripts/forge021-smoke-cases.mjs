@@ -465,7 +465,7 @@ async function open(page, navigate, unit) {
   await page
     .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
     .fill(unit.title);
-  await page.locator(".ready-topic").filter({ hasText: unit.title }).click();
+  await page.locator(`.ready-topic[data-lesson-id="${unit.id}"]`).click();
   const lab = page.locator(`[data-forge021="${unit.id}"]`);
   await expect(lab).toBeVisible();
   await expect(lab.locator("svg").first()).toBeVisible();

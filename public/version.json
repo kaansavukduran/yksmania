@@ -2,6 +2,6 @@
   "version": "0.18.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Geliştirme adayı: doğrulanmış 479 sıralı başlığın tamamı anlatım ve soruyla eşleşir. Toplam 480 ayrıntılı anlatım, 480 yerleşik özet ve 5883 özgün soru. Son 28 eski anlatım; 553 bölüm, 168 çözümlü örnek ve 178 hatırlama etkinliğiyle genişletildi. İleri soru setleri ayrı açılır. İki fizik sorusunda eksik koşullar açıklığa kavuşturuldu; eski yanıtlar ve denemeler korunur. TYT 120 soru/165 dakika, AYT Sayısal 80 soru/180 dakika. Başlık eşleşmesi bütün kaynakların her alt kazanımı ve resmî sınav arşivi tamamlandı demek değildir."
+    "tr": "Doğrulanmış çalışma sırasındaki 479 başlığın tamamı anlatım ve soruyla eşleşir. 480 ayrıntılı anlatım, 480 yerleşik özet ve 5883 özgün soru bulunur. 28 eski anlatım 553 bölüm, 168 çözümlü örnek ve 178 hatırlama etkinliğiyle genişletildi; ileri soru setleri ayrı açılır. 205 eski soruya bilgi, yöntem, üç çözüm adımı ve her şık için açıklama eklendi. Ayrıntılı yardım 2508 soruda hazır. Eski tam çözümler, yanıtlar, notlar ve başlamış denemeler korunur. TYT 120 soru/165 dakika; AYT Sayısal 80 soru/180 dakika. Kaynakların bütün alt kazanımları ve resmî sınav arşivi üzerindeki çalışma sürüyor."
   }
 }

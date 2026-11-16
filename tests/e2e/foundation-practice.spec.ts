@@ -62,7 +62,7 @@ async function open(
   await page
     .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
     .fill(title);
-  const entry = page.locator(".ready-topic").filter({ hasText: title });
+  const entry = page.locator(`.ready-topic[data-lesson-id="${lessonId}"]`);
   await expect(entry).toHaveCount(1);
   await entry.click();
   if (mode === "Konu Anlatımı") {

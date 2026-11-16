@@ -1,0 +1,877 @@
+[
+  {
+    "id": "otp-1",
+    "identity": "[\"otp-1\",\"Bir tarihçi Osmanlı kuruluşunu açıklarken gaza çevresini öne çıkarıyor. Başka bir tarihçi uç toplumu, göç ve kurumların birlikte değerlendirilmesini istiyor. Bu örnek hangi ayrımı gösterir?\",\"\",[\"Aynı olaya ilişkin farklı açıklama yaklaşımları bulunabilir.\",\"Birden fazla görüş varsa tarihsel olaylar hiç yaşanmamıştır.\",\"Bir tarihçinin yorumu olayın kendisiyle aynı tür bilgidir.\",\"Kuruluşun yalnız tek nedeni olduğu kanıtlanmıştır.\",\"Coğrafya bütün toplumsal ilişkileri tek başına açıklar.\"],0,\"Gaza vurgusu ve çok etkenli yaklaşım farklı yorum çerçeveleridir. Görüş farkı olayın yokluğunu veya tek nedenin kesinliğini göstermez; yorum ile olay aynı tür bilgi değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tarihsel olay, belirli koşullarda gerçekleşen gelişmedir; tarihsel açıklama ise kaynaklardan hareketle bu gelişmenin nasıl ve neden oluştuğunu yorumlar. Aynı olaya ilişkin farklı açıklamalar karşılaştırılabilir.",
+        "Kuruluşu açıklayan bir yaklaşım dinî-siyasi gaza çevresine ağırlık verebilir; başka bir yaklaşım göçü, uç toplumunu ve kurumları birlikte inceleyebilir. Etkenlere farklı ağırlık vermek, olayın yaşanmadığı anlamına gelmez; olayın varlığı veya yokluğu hakkındaki iddia ayrıca kanıtla değerlendirilir."
+      ],
+      "strategy": "İki tarihçinin araştırdığı olayı ve öne çıkardığı etkenleri ayrı sütunlara yaz; farkın olayda mı açıklama çerçevesinde mi olduğunu belirle.",
+      "steps": [
+        "Her iki tarihçinin de Osmanlı kuruluşunu açıklamaya çalıştığını saptayarak ortak araştırma konusunu belirle.",
+        "Birincinin gaza çevresini, ikincinin uç toplumu, göç ve kurumların birlikte etkisini öne çıkardığını karşılaştır. Burada değişen, açıklamada seçilen etkenlerin ağırlığıdır.",
+        "Bu farkı koruyan yargıyı ara. Olayın hiç yaşanmadığını, tek nedenin kanıtlandığını veya bütün ilişkileri coğrafyanın açıkladığını söylemek için metinde ayrı kanıt bulunmadığını denetle."
+      ],
+      "optionReasons": [
+        "İki tarihçi aynı kuruluşu farklı etkenleri öne çıkararak açıklıyor; bu, aynı olaya ilişkin farklı açıklama yaklaşımlarının bulunabildiğini gösterir.",
+        "Görüşlerin farklılığı olayların hiç yaşanmadığını göstermez; açıklama uyuşmazlığından olayın yokluğuna geçilmiştir.",
+        "Bir tarihçinin yorumu, olayı açıklayan değerlendirmedir; olayın kendisiyle aynı tür bilgi sayılması sorudaki ayrımı siler.",
+        "Birinci tarihçinin gaza vurgusu, başka etkenlerin bulunmadığını kanıtlamaz. İkinci tarihçi zaten birden çok etkenin birlikte incelenmesini istiyor.",
+        "Coğrafyanın bütün ilişkileri tek başına açıkladığına ilişkin veri yoktur; göç ve kurumlar da anılmıştır."
+      ],
+      "commonError": "İki yorumun farklı olmasını geçmişteki olayın yokluğu sanmak veya bir etkeni vurgulamayı tek nedenin ispatıyla eşitlemek.",
+      "check": "Seçtiğin yargı hem iki yaklaşımın farklılığını hem ortak kuruluş konusunu korumalı; metinde bulunmayan bir kesinlik eklememeli."
+    }
+  },
+  {
+    "id": "otp-2",
+    "identity": "[\"otp-2\",\"Yeni fethedilen bir bölgede aileler belirli yerlere yerleştiriliyor; başka bir uygulamayla mevcut halkın can-mal güvenliği gözetilip yönetime güveni artırılmaya çalışılıyor. Bu iki uygulama sırasıyla hangileridir?\",\"\",[\"Devşirme – pençik\",\"İskân – istimâlet\",\"İstimâlet – satın alma\",\"Tımar – ulufe\",\"Vasiyet – çeyiz\"],1,\"İskân nüfus yerleştirme, istimâlet gönül alma ve yerel halkın güvenini kazanma siyasetiyle ilişkilidir. Aynı kalıcılık amacını destekleseler de araçları farklıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "İskân, nüfusun belirli yerlere yerleştirilmesiyle ilişkilidir. İstimâlet, yerel halkın güvenini kazanmaya ve yönetime bağlılığını artırmaya yönelik uygulamaları anlatır.",
+        "Devşirme ile pençik insan temini; tımar ile ulufe askerî gelir ve ödeme; çeyiz ile satın alma ise toprak kazanımı bağlamında kullanılan farklı kavramlardır. Bir kavramı uygulamanın somut işine göre seçeriz."
+      ],
+      "strategy": "Yerleştirme ile güven kazanmayı iki farklı işlem olarak eşleştir; sonra seçeneklerde bu işlemlerin sorulan sırada bulunup bulunmadığına bak.",
+      "steps": [
+        "İlk uygulamada ailelerin bir yere taşınıp yerleştirildiğini ayır. Bu cümle nüfusun mekâna dağıtılmasıyla ilgilidir.",
+        "İkinci uygulamada mevcut halkın can ve mal güvenliği ile yönetime güveninin gözetildiğini ayır. Burada aileleri başka yere yerleştirme değil, halkla ilişki biçimi anlatılır.",
+        "Nüfus yerleştirme ve yerel halkın güvenini kazanma kavramlarını sırasını değiştirmeden yan yana getir; asker temini veya maaş ödemesi anlatan çiftleri ele."
+      ],
+      "optionReasons": [
+        "Devşirme ve pençik askerî insan kaynağına ilişkin uygulamalardır; verilen iki sivil yerleştirme ve güven politikasıyla eşleşmez.",
+        "İskân aileleri yerleştirmeyle, istimâlet halkın güvenini kazanmayla eşleşir; iki kavram da sorudaki sıraya uygundur.",
+        "İstimâlet ilk işlemdeki nüfus yerleştirmenin adı değildir; ikinci işlemde de bedel ödenerek toprak satın alınması anlatılmıyor.",
+        "Tımar gelir tahsisi, ulufe merkezden ödemedir; metinde ne bu gelir düzeni ne maaş ödemesi verilmiştir.",
+        "Vasiyet ve çeyiz hanedan ilişkileriyle toprak devri bağlamında düşünülebilir; iki somut uygulama bunları anlatmıyor."
+      ],
+      "commonError": "İki uygulama da kalıcılığı desteklediği için adlarını aynı saymak veya istenen sıralamayı ters çevirmek.",
+      "check": "İlk terim ailelerin yerleştirilmesini, ikinci terim mevcut halkın güveninin gözetilmesini açıklıyor mu? Her terimi kendi cümlesiyle eşleştir."
+    }
+  },
+  {
+    "id": "otp-3",
+    "identity": "[\"otp-3\",\"Bu metinden en doğrudan hangisi çıkar?\",\"Karesi topraklarıyla birlikte komutan ve denizcilik deneyimi de Osmanlı hizmetine katıldı.\",[\"Bütün Anadolu’da siyasi birlik aynı gün tamamlanmıştır.\",\"Rumeli’ye geçiş yalnız bir olayın sonucudur.\",\"Osmanlıların denizcilik ve tecrübeli insan gücü imkânı artmıştır.\",\"Bütün Bizans yöneticileri sürekli Osmanlı müttefiki olmuştur.\",\"İstanbul 1345’te fethedilmiştir.\"],2,\"Komutan ve denizcilik deneyiminin aktarılması, insan gücü ve denizcilik imkânının arttığını destekler. Bunun tek neden olması, bütün birliğin tamamlanması veya İstanbul’un fethi metinde yoktur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir siyasi yapıya katılan toprakla birlikte komutanlar, askerler ve teknik deneyim de aktarılabilir. İnsan gücü ile bilgi birikimi, toprak genişlemesinden ayrı incelenebilen imkânlardır.",
+        "Doğrudan çıkarım, metindeki somut aktarımın kapsamını korur. Bir bölgenin katılması bütün Anadolu birliğini, bütün ittifakları veya sonraki bir fethin tarihini kendiliğinden bildirmez."
+      ],
+      "strategy": "Metinde Osmanlı hizmetine geçtiği söylenen unsurları listele; yalnız bu unsurların sağladığı imkânı ifade eden yargıyı seç.",
+      "steps": [
+        "Pasajda toprak dışında iki aktarım verisini işaretle: komutanlar ve denizcilik deneyimi.",
+        "Komutanları tecrübeli insan gücü, denizcilik deneyimini deniz faaliyetleri için bilgi ve beceri artışıyla ilişkilendir.",
+        "Bu iki alanın imkânını artıran yargıyı koru; bütün Anadolu, yalnız tek neden, bütün Bizans yöneticileri veya ayrı bir fetih tarihi ekleyen kapsam genişlemelerini çıkar."
+      ],
+      "optionReasons": [
+        "Karesi topraklarının katılması bütün Anadolu’daki siyasi birliğin aynı gün tamamlandığını göstermez; pasajın bölgesel kapsamı genişletilmiştir.",
+        "Pasaj Rumeli’ye geçişin bütün nedenlerini saymıyor. Denizcilik deneyiminin katkısı, geçişin yalnız tek olaydan doğduğunu kanıtlamaz.",
+        "Komutan ve denizcilik deneyimi aktarımı, tecrübeli insan gücü ile denizcilik imkânının artmasını doğrudan destekler.",
+        "Bizans yöneticilerinin tamamının sürekli müttefik oluşu hakkında hiçbir bilgi verilmemiştir; aktarılan Karesi deneyiminden bu genel ilişki çıkarılamaz.",
+        "Pasaj İstanbul’un fethini veya 1345’te gerçekleşen böyle bir olayı bildirmiyor; deneyim aktarımı ayrı bir fethin tarihi değildir."
+      ],
+      "commonError": "Denizcilik birikiminin katkısını bir sonraki bütün siyasi gelişmelerin tek nedeni sanmak.",
+      "check": "Seçenek için gerekçeni yalnız “komutan” ve “denizcilik deneyimi” verileriyle kurabiliyor musun? Ek fetih, tarih veya evrensel ittifak bilgisi gerekmemeli."
+    }
+  },
+  {
+    "id": "otp-4",
+    "identity": "[\"otp-4\",\"Aşağıdaki sıralamalardan hangisi eskiden yeniye doğrudur?\",\"\",[\"Fetret’in sonu – Ankara Savaşı – Niğbolu\",\"Niğbolu – Ankara Savaşı – Fetret’in sonu\",\"Ankara Savaşı – I. Kosova – Fetret’in sonu\",\"Varna – Niğbolu – Ankara Savaşı\",\"II. Kosova – Varna – I. Kosova\"],1,\"1396 Niğbolu’dan sonra 1402 Ankara ve ardından 1413’te I. Mehmet’in üstünlük kurması gelir. Diğer sıralamalarda bu önce-sonra ilişkilerinden en az biri ters çevrilmiştir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kronolojik sıra için aynı takvimdeki olay tarihleri karşılaştırılır. Kuruluş ve devletleşme döneminde I. Kosova 1389, Niğbolu 1396, Ankara 1402, Fetret’in sonu 1413, Varna 1444 ve II. Kosova 1448 bağlantıları kullanılır.",
+        "Fetret, Ankara yenilgisi sonrasındaki taht mücadelesi dönemidir; sonu 1413’te I. Mehmet’in üstünlük kurmasıyla ilişkilendirilir. Bu nedenle dönemin bitişi, onu başlatan savaştan önceye yerleştirilemez."
+      ],
+      "strategy": "Her seçenekteki olay adlarını tarihlerle değiştir; ardışık her geçişin daha sonraki bir yıla gidip gitmediğini kontrol et.",
+      "steps": [
+        "Önce Niğbolu, Ankara ve Fetret’in sonunu ayrı not et: 1396, 1402 ve 1413. Bu üçü arasındaki önce-sonra ilişkisini kur.",
+        "Diğer seçenekleri sınamak için I. Kosova’nın 1389, Varna’nın 1444 ve II. Kosova’nın 1448 tarihlerini aynı zaman çizgisine yerleştir.",
+        "Her dizide soldan sağa ilerle. Yılın küçüldüğü ilk geçiş o diziyi bozar; bütün geçişleri artan kalan diziyi belirle."
+      ],
+      "optionReasons": [
+        "Fetret’in sonu 1413’ten Ankara 1402’ye ve Niğbolu 1396’ya geri gider; eskiden yeniye değildir.",
+        "Niğbolu 1396 → Ankara 1402 → Fetret’in sonu 1413 sıralamasında her geçiş sonraki yıla ilerler.",
+        "Ankara 1402’den I. Kosova 1389’a geçiş geçmişe döner; sonuna 1413 eklenmesi bu ilk hatayı gidermez.",
+        "Varna 1444’ten Niğbolu 1396’ya geçiş geriye gider; dizinin başı kronolojik sırayı bozar.",
+        "II. Kosova 1448 → Varna 1444 → I. Kosova 1389 dizisi sonraki olaylardan önceki olaylara ilerler."
+      ],
+      "commonError": "Savaşın adındaki I ve II sayılarını bütün olayların kronolojik numarası sanmak veya Fetret’in sonunu Ankara’dan önceye koymak.",
+      "check": "Seçtiğin dizinin iki komşu tarih karşılaştırmasını da ayrı doğrula; tek bir doğru olay çifti bütün diziyi doğru yapmaz."
+    }
+  },
+  {
+    "id": "otp-5",
+    "identity": "[\"otp-5\",\"Bazı Germiyan topraklarının çeyizle, Hamit topraklarının bir bölümünün bedel ödenerek Osmanlılara katılması hangi genellemeyi doğrudan geçersiz kılar?\",\"\",[\"Anadolu’da farklı yönetimler bulunuyordu.\",\"Hanedan ilişkileri siyasi sonuç doğurabilir.\",\"Toprak kazanımında farklı araçlar kullanılmıştır.\",\"Bütün toprak kazanımları yalnız savaşla gerçekleşmiştir.\",\"Bedelle satın alma bir genişleme aracı olabilir.\"],3,\"Çeyiz ve satın alma, ‘bütün kazanımlar yalnız savaşla olur’ genellemesine karşı örnektir. Diğer seçenekler verilen örneklerle uyumludur; siyasi birlik hedeftir, kullanılan araçlar farklılaşabilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir “bütün ... yalnız ...” genellemesi, verdiği sınıfın her örneğine aynı koşulu yükler. Bu koşul dışında gerçekleşmiş bir örnek, böyle bir evrensel genellemeyi sınırlar.",
+        "Hanedan evliliğinde çeyiz olarak toprak devri ile bedel ödeyerek toprak satın alma, askerî fetih dışında siyasi sonuç doğuran araçlardır. Siyasi genişlemenin amacı ile kullanılan araç aynı şey değildir."
+      ],
+      "strategy": "İki örnekte toprak kazanımının nasıl gerçekleştiğini belirle; bu araçlardan birini bile dışlayan kesin genellemeyi ara.",
+      "steps": [
+        "Germiyan örneğinde çeyizi, Hamit örneğinde bedel ödemeyi ayrı genişleme araçları olarak işaretle.",
+        "Bu iki işlemin savaş yapılmasını zorunlu olarak anlatmadığını saptayarak “yalnız savaş” iddiasının kapsamını sınamaya hazırlan.",
+        "Kökte geçersiz kılınan yargının sorulduğunu koru: örneklerle uyumlu mümkün ifadeleri değil, bu iki örneği dışlayan evrensel ifadeyi seç."
+      ],
+      "optionReasons": [
+        "Germiyan ve Hamit örnekleri farklı yönetimlerin bulunduğuyla uyumludur; bu yargıyı geçersiz kılmaz.",
+        "Çeyizle toprak devri, hanedan ilişkilerinin siyasi sonuç doğurabileceğine örnektir; bu ifade çürütülmez.",
+        "Çeyiz ve satın alma iki farklı araçtır; verilen bilgiler bu yargıyı destekler.",
+        "Çeyiz ve bedelle satın alma, bütün toprak kazanımlarının yalnız savaşla gerçekleştiği genellemesinin dışında kalan karşı örneklerdir.",
+        "Hamit toprakları için bedel ödendiği açıkça verildiğinden satın almanın bir genişleme aracı olabileceğiyle çelişki yoktur."
+      ],
+      "commonError": "Olumsuz kökü atlayıp metnin desteklediği bir yargıyı seçmek; “olabilir” ile “bütün kazanımlar yalnız” kapsamlarını eşitlemek.",
+      "check": "Bulduğun genellemeye iki olayı tek tek yerleştir: savaş dışında çeyiz veya ödeme verisi genellemenin zorunlu koşulunu bozuyor mu?"
+    }
+  },
+  {
+    "id": "otm-1",
+    "identity": "[\"otm-1\",\"Orhan Bey döneminde oluşturulan ilk düzenli piyade ve atlı birlikler sırasıyla hangileridir?\",\"\",[\"Yeniçeri – cebeci\",\"Yaya – müsellem\",\"Akıncı – ilmiye\",\"Topçu – müderris\",\"Müsellem – yaya\"],1,\"Orhan Bey döneminde yaya ve müsellem birlikleri kuruldu. Yaya piyade, müsellem atlıdır. Yeniçeri gibi kapıkulu birimleri bu ilk düzenli birliklerle aynı aşama değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Erken Osmanlı askerî düzeninde Orhan Bey döneminin yaya ve müsellem birlikleri birlikte öğrenilir. Yaya piyade görevini, müsellem bu kuruluş bağlamında atlı görevi anlatır.",
+        "Birliğin görevi kadar dönemi de ayırıcıdır. Yeniçeri, cebeci ve topçu gibi merkez ocaklarının adları, ilk düzenli yaya-atlı çiftinin yerine geçirilemez; müderris ise öğretim görevlisidir."
+      ],
+      "strategy": "Önce sorulan dönemi sabitle, sonra piyade ve atlı alanlarını ayırarak seçeneklerdeki iki adı aynı sırada denetle.",
+      "steps": [
+        "Sorunun Orhan Bey dönemindeki ilk düzenli kuvvetleri sorduğunu belirle; sonraki merkez ocaklarını aramadığını not et.",
+        "İki boşluk için ayrı görev yaz: birinci piyade, ikinci atlı. Aynı dönemdeki birlik adlarını bu görevlerle eşleştir.",
+        "İsimleri bulduktan sonra sıralamayı da kontrol et. Doğru iki adı ters veren veya askerî görevle öğretim sınıfını karıştıran çifti ele."
+      ],
+      "optionReasons": [
+        "Yeniçeri ve cebeci sonraki kapıkulu ocakları bağlamındadır; sorulan ilk piyade-atlı çiftini vermez ve ikinci ad atlı karşılığı değildir.",
+        "Yaya piyade, müsellem atlıdır; Orhan Bey dönemindeki çift ve istenen sıra birlikte sağlanır.",
+        "Akıncı ile ilmiye ilk düzenli piyade-atlı çifti değildir; ilmiye bir atlı birlik adı değil, dinî-hukuki ve öğretim görevleri çevresidir.",
+        "Topçu ve müderris aynı türde iki askerî birlik değildir; müderris ders veren kişidir. İstenen dönem ve görev çifti kurulmaz.",
+        "Müsellem ve yaya doğru dönemin iki adını içerir, fakat atlıyı önce, piyadeyi sonra yazarak sorulan sırayı ters çevirir."
+      ],
+      "commonError": "Tanıdık iki birlik adının bulunmasını yeterli görmek; dönem ve piyade-atlı sırasını ayrıca denetlememek.",
+      "check": "Birinci adı “piyade”, ikinci adı “atlı” yerine okuyunca görevler ve Orhan Bey dönemi birlikte uyuşmalı."
+    }
+  },
+  {
+    "id": "otm-2",
+    "identity": "[\"otm-2\",\"Bir asker merkez hazinesinden ulufe almakta ve kapıkulu süvarileri içinde görev yapmaktadır. Hangisi bu profil için yanlıştır?\",\"\",[\"Atlı görev yapabilir.\",\"Merkeze bağlı askerî düzen içindedir.\",\"Geliri tımar bölgesinin vergisinden tahsis edilen dirliktir.\",\"Piyade olmayan bir kapıkulu mensubu olabilir.\",\"Yalnız atlı oluşu tımarlı sipahi olduğunu kanıtlamaz.\"],2,\"Ulufe merkez hazinesinden ödemedir; tımar/dirlik vergi geliri başka düzendir. Kapıkulu süvarileri bulunduğu için atlı olmak tımarlı sipahiyi tek başına göstermez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ulufe merkez hazinesinden yapılan ödemedir. Tımar/dirlik düzeninde ise belirli vergi gelirleri hizmet karşılığında tahsis edilir; bu iki gelir kaynağı aynı değildir.",
+        "Kapıkulu teşkilatında piyade birlikleri yanında süvari birlikleri de bulunur. Bu nedenle yalnız atlı olma özelliği, bir askerin gelirinin mutlaka tımar olduğunu göstermez."
+      ],
+      "strategy": "Gelir kaynağı ile görev türünü ayrı kontrol et; yanlış yargıyı bulurken kökte açık verilen ödeme biçimini değiştiren ifadeye odaklan.",
+      "steps": [
+        "Profilin iki açık niteliğini yaz: merkezden ulufe alıyor ve kapıkulu süvarileri içinde bulunuyor.",
+        "Süvari olmasının atlı görevle, kapıkulu olmasının merkeze bağlı teşkilatla uyumlu olduğunu değerlendir; bu iki özellik birbiriyle çelişmez.",
+        "Gelirini tımar bölgesi vergisi diye yeniden tanımlayan yargıyı ayrı sınayarak verilen ulufe bilgisini koru. Yanlış olan, bu kaynağı değiştiren yargıdır."
+      ],
+      "optionReasons": [
+        "Süvari profili atlı göreviyle uyumludur; bu ifade yanlış olan yargı değildir.",
+        "Kapıkulu içinde bulunması merkeze bağlı askerî düzene katıldığını destekler; kökteki bilgiyle uyumludur.",
+        "Kök geliri merkez hazinesinden ulufe olarak vermiştir. Bunu tımar bölgesinden tahsis edilen dirlik diye değiştirmek iki gelir düzenini karıştırır.",
+        "Kapıkulu süvarileri piyade olmayan kapıkulu mensuplarıdır; bu ihtimal profilin açık görev türüyle uyumludur.",
+        "Kapıkulu süvarisinin varlığı atlı olmanın tek başına tımarlı sipahi kimliği vermediğini gösterir; ifade doğru bir sınırlamadır."
+      ],
+      "commonError": "“Sipahi/atlı” çağrışımıyla gelir kaynağını değiştirmek veya yanlış yargı sorulduğunu unutmak.",
+      "check": "Cevabını “ulufe” sözcüğünün anlamıyla denetle: seçtiğin ifade bu merkez ödeme bilgisini koruyor mu, başka gelir düzenine mi dönüştürüyor?"
+    }
+  },
+  {
+    "id": "otm-3",
+    "identity": "[\"otm-3\",\"Bir görevliye belirli bölgenin vergi gelirleri hizmet karşılığı bırakılmış; görevliden gelirine göre cebelü yetiştirmesi istenmiştir. Bu düzenin verilenden çıkarılamayacak sonucu hangisidir?\",\"\",[\"Askerî hizmet ile vergi geliri arasında bağ vardır.\",\"Taşrada asker yetiştirilmesi desteklenir.\",\"Hizmet karşılığı gelir tahsisi yapılır.\",\"Görevli toprağı dilediği kişiye özel mülk olarak satabilir.\",\"Sipahi ile cebelü hizmeti ilişkilidir.\"],3,\"Tımar belirli gelirlerin hizmet karşılığında tahsisidir; toprağı keyfî özel mülk gibi satma hakkı doğurmaz. Öteki sonuçlar verilen gelir-hizmet-cebelü bağlantısıyla desteklenir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tımar düzeninde belirli vergi gelirlerinin hizmet karşılığında tahsisi ile toprağın özel mülkiyeti farklı haklardır. Gelir toplama yetkisi, toprağı dilediğine satma yetkisini kendiliğinden doğurmaz.",
+        "Cebelü, tımarlı sipahinin gelirine göre yetiştirdiği askerle ilişkilidir. Böylece gelir tahsisi, taşrada asker yetiştirme ve askerî hizmet arasında bir bağ kurulur."
+      ],
+      "strategy": "Verilen gelir-hizmet bağlarını çıkar; her seçeneğin bu bağdan mı geldiğini, yoksa ek bir mülkiyet yetkisi mi eklediğini kontrol et.",
+      "steps": [
+        "Kökteki ilişkiyi üç parçada göster: bölge vergi geliri → görevliye hizmet karşılığı tahsis → gelire göre cebelü yetiştirme.",
+        "Bu zincirin gelir ile askerî hizmeti ve taşrada asker yetiştirmeyi doğrudan bağladığını belirle.",
+        "Toprağı satabilme hakkını zincirde ara. Gelir tahsisi cümlesinde böyle bir özel mülkiyet ve satış yetkisi verilmediğinden onu ekleyen yargıyı ayır."
+      ],
+      "optionReasons": [
+        "Vergi gelirinin hizmet karşılığında bırakılması, askerî hizmet ile vergi geliri arasındaki bağı açıkça kurar.",
+        "Belirli bir bölgenin geliriyle cebelü yetiştirilmesi taşradaki asker kaynağını destekler; bu sonuç verilen düzenle uyumludur.",
+        "Hizmet karşılığı gelir tahsisi, kökte doğrudan yazılan işlemdir; verilenden çıkarılamayan yargı değildir.",
+        "Gelir tahsisi toprağın keyfî biçimde özel mülk olarak satılmasına yetki vermez. Seçenek, gelir üzerindeki hizmet hakkını mülkiyet ve satış hakkına dönüştürür.",
+        "Cebelü yetiştirme yükümlülüğü sipahi ile cebelü hizmetini ilişkilendirir; bu bağ metnin verdiği gelir-hizmet düzenindedir."
+      ],
+      "commonError": "Vergi gelirini toplama hakkından toprağın sınırsız özel mülkiyetine geçmek.",
+      "check": "Seçtiğin sonuç için hangi yetki cümlesinin gerektiğini söyle: vergi gelirinin tahsisi mi, toprağı satma hakkı mı? İkincisi kökte bulunmuyor."
+    }
+  },
+  {
+    "id": "otm-4",
+    "identity": "[\"otm-4\",\"Pençik ile devşirme arasındaki temel kaynak ayrımı hangisinde doğrudur?\",\"\",[\"Pençik bütün köylülerin vergisi; devşirme tımar geliridir.\",\"Pençik askerî okul; devşirme savaş alanındaki birliktir.\",\"Pençik ile devşirme aynı çocukların aynı adla seçilmesidir.\",\"Pençik kapıkulu maaşı; devşirme esnaf dayanışmasıdır.\",\"Pençik savaş esiri temelli; devşirme belirli tebaa ailelerinden kurallı seçim temellidir.\"],4,\"Pençik savaş esirlerinin beşte biri ilkesine dayanan kaynaktır. Devşirme ise belirli Hristiyan tebaa ailelerinden seçimdir. Acemi Ocağı eğitim aşaması, ulufe ise ödeme kavramıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Pençik, savaş esirlerinin beşte biri ilkesiyle ilişkilendirilen insan kaynağıdır. Devşirme ise belirli Hristiyan tebaa ailelerinden kurallı seçim yoluyla insan temin eder.",
+        "İnsanların ilk alındığı kaynak, sonraki eğitim aşaması ve görevdeki ödeme biçimi ayrı alanlardır. Acemi Ocağı eğitimle, ulufe ödemeyle ilişkilidir; bunlar pençik-devşirme kaynak ayrımının yerine geçmez."
+      ],
+      "strategy": "İki uygulama için önce insanın kimlerden alındığını sor; okul, maaş ve görev yeri anlatan seçenekleri kaynak sorusundan ayır.",
+      "steps": [
+        "Sorunun pençik ile devşirmenin ortak eğitim sonucunu değil, başlangıçtaki insan kaynağı farkını istediğini belirle.",
+        "Pençik için savaş esiri temelli kaynağı; devşirme için belirli tebaa ailelerinden seçim yolunu ayrı yaz.",
+        "İki kaynağı da doğru sütunda veren seçeneği ara. Vergi, okul, maaş veya esnaf örgütünü insan kaynağı gibi sunan tanımları ele."
+      ],
+      "optionReasons": [
+        "Pençik bütün köylülerin genel vergisi, devşirme de tımar geliri değildir; iki insan kaynağı mali kavramlara dönüştürülmüştür.",
+        "Pençik bir askerî okul, devşirme de savaş alanındaki birlik değildir; kaynak, eğitim ve görev aşamaları karıştırılmıştır.",
+        "İki uygulama aynı grubun iki adı değildir: savaş esiri temeli ile tebaa ailelerinden seçim kaynağı ayrılır.",
+        "Kapıkulu maaşı ulufeyle ilişkilidir; esnaf dayanışması da devşirmenin insan kaynağını tanımlamaz.",
+        "Pençikte savaş esirleri, devşirmede belirli tebaa ailelerinden kurallı seçim temel alınır; seçenek istenen başlangıç kaynağı ayrımını korur."
+      ],
+      "commonError": "İki yolun daha sonra kapıkulu düzenini beslemesini başlangıçta aynı insan grubundan yararlanmaları sanmak.",
+      "check": "Her tanımda “kimden insan alınıyor?” sorusuna cevap var mı? Okulun veya maaşın adı bu soruya tek başına cevap vermez."
+    }
+  },
+  {
+    "id": "otm-5",
+    "identity": "[\"otm-5\",\"Bir kuşatmada ağır topların taşınması için görevlendirilen ocak, yalnız bu ayırıcı görev dikkate alındığında hangisidir?\",\"\",[\"Top arabacıları\",\"Müderrisler\",\"Nişancılar\",\"Müftüler\",\"Kadı sicil görevlileri\"],0,\"Ağır topların taşınması top arabacılarının ayırıcı işlevidir. Diğer seçenekler öğretim, bürokrasi, hukuki görüş ve kayıtla ilişkilidir; lojistik görevi bunlara dönüşmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Askerî lojistik, araç ve malzemenin gereken yere ulaştırılmasıyla ilgilidir. Ağır topları taşımak, onları ateşlemek veya silahların bakımını yapmakla aynı görev değildir.",
+        "Top arabacıları ağır topların taşınmasıyla; müderris öğretimle, nişancı resmî yazışma ve tuğrayla, müftü dinî-hukuki görüşle, kadı çevresindeki sicil görevlileri mahkeme kaydıyla ilişkilidir."
+      ],
+      "strategy": "Kuşatma sözcüğünden genel bir askerî çağrışım üretmek yerine kökteki ayırıcı fiili bul; seçeneklerde bu fiilin görev karşılığını ara.",
+      "steps": [
+        "Kökte yapılacak işi “ağır topların taşınması” olarak ayır; topu kullanma ya da öğretim görevi sorulmuyor.",
+        "Taşıma işini lojistik olarak sınıflandır. Seçeneklerde öğretim, resmî yazışma, fetva ve mahkeme kaydını anlatan görevleri bu işten ayır.",
+        "Geriye kalan görev adını taşıma fiiliyle eşleştir. Bir silahın adını içermesinden çok, yükü hareket ettirme işlevinin uyuştuğunu kontrol et."
+      ],
+      "optionReasons": [
+        "Top arabacıları ağır topların taşınması için görevlendirilen ocaktır; kökteki ayırıcı lojistik işleve uyar.",
+        "Müderris medresede öğretim görevlisidir; ağır top nakliyle tanımlanan ocak değildir.",
+        "Nişancı resmî yazışma ve tuğra işleriyle ilişkilidir; top taşıma görevi bu bürokratik göreve dönüşmez.",
+        "Müftü dinî-hukuki görüş bildirir; ağır silahların nakli bu görev kapsamında tanımlanmaz.",
+        "Kadı sicil görevlileri mahkeme kayıtlarıyla ilişkilidir; kuşatmada top taşıyan ocak değildir."
+      ],
+      "commonError": "Kuşatma içinde geçen her işi aynı savaşma görevi saymak; ateşleme, bakım ve taşımayı ayırmamak.",
+      "check": "Seçtiğin görevli için “ağır topu gerekli yere götürür” cümlesini kurabiliyor musun? Diğer seçeneklerin işi bu fiile uymamalı."
+    }
+  },
+  {
+    "id": "otc-1",
+    "identity": "[\"otc-1\",\"Osmanlı tarihindeki askerî sınıf kavramı için hangisi doğrudur?\",\"\",[\"Yalnız savaş alanında kılıç kullananları kapsar.\",\"Yalnız bütün köylüleri kapsar.\",\"Seyfiye, kalemiye ve ilmiyeyi içeren yönetenler kesimiyle ilişkilidir.\",\"Yalnız gayrimüslim yönetilenleri ifade eder.\",\"Yalnız esnafın gönüllü dayanışma örgütüdür.\"],2,\"Askerî sınıf Osmanlı kullanımında yönetenler bütünüdür; ilmiye ve kalemiye de bu kapsamdadır. Bu nedenle kadı veya müderrisin işi savaşmak olmasa da sınıf içinde düşünülebilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Osmanlı toplum düzenindeki askerî sınıf, yalnız savaşan askerleri değil yönetenler kesimini anlatan tarihsel bir terimdir. Seyfiye, kalemiye ve ilmiye bu kapsamda ele alınır.",
+        "Seyfiye askerî-idari, kalemiye yazışma ve mali kayıt, ilmiye öğretim ve dinî-hukuki görevlerle ilişkilidir. Üretim ve vergi yükümlülükleri çevresindeki reaya sınıflaması bunlardan ayrı düşünülür."
+      ],
+      "strategy": "Askerî sözcüğünü bugünkü dar meslek anlamıyla değil tarihsel sınıf anlamıyla oku; seçeneğin kapsamını üç görev çevresiyle karşılaştır.",
+      "steps": [
+        "Sorunun tek bir askerî birliği değil, “askerî sınıf” kavramını sorduğunu belirle.",
+        "Tarihsel kapsamı üç görev çevresiyle kur: askerî-idari iş, yazışma-maliye ve öğretim-hukuk. Kadı veya müderris gibi bir görevlinin savaşmasa da bu yapıda bulunabileceğini düşün.",
+        "Bu geniş yönetenler kapsamını koruyan yargıyı seç; yalnız savaşçılar, bütün köylüler veya yalnız tek bir dinî topluluk gibi daraltmaları ele."
+      ],
+      "optionReasons": [
+        "Yalnız kılıç kullanan savaşçılar demek kalemiye ve ilmiyeyi dışarıda bırakır; tarihsel askerî sınıf bu kadar dar değildir.",
+        "Bütün köylüler üretici ve vergi veren nüfus bağlamındadır; askerî sınıfın yönetenler anlamını karşılamaz.",
+        "Seyfiye, kalemiye ve ilmiyeyi içeren yönetenler kesimi tarihsel askerî sınıf kapsamını doğru verir.",
+        "Yalnız gayrimüslim yönetilenler denmesi hem yöneten-yönetilen ayrımını hem sınıfın kapsamını değiştirir.",
+        "Esnafın dayanışma örgütü ekonomik-toplumsal bir örgütlenme örneğidir; yönetenler kesiminin tümünü tanımlamaz."
+      ],
+      "commonError": "Tarihsel “askerî” terimini bugünkü yalnız savaşan asker anlamıyla eşitlemek.",
+      "check": "Tanımına kadı, müderris ve yazışma görevlisi de sığabiliyor mu? Bunları dışlayan yalnız-savaşçı tanımı eksik kalır."
+    }
+  },
+  {
+    "id": "otc-2",
+    "identity": "[\"otc-2\",\"Bir görevli medresede ders veriyor; ikinci görevli uyuşmazlığı hükme bağlayıp mahkeme kaydını tutuyor; üçüncüsü dinî-hukuki görüş bildiriyor. Sıralama hangisidir?\",\"\",[\"Müftü – müderris – kadı\",\"Kadı – müftü – müderris\",\"Defterdar – nişancı – beylerbeyi\",\"Müderris – kadı – müftü\",\"Müderris – müftü – kadı\"],3,\"Medresede öğretim müderris; yargılama ve mahkeme kaydı kadı; fetva/görüş müftüyle ilişkilidir. Üçü aynı ilmiye alanında olsa da yetkileri aynı değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Müderris medresede ders verir. Kadı uyuşmazlıkları hükme bağlar ve mahkeme kayıtlarıyla ilişkilidir. Müftü fetva, yani dinî-hukuki görüş bildirir.",
+        "Bu üç görev ilmiye çevresinde bulunsa da öğretim, yargısal hüküm ve görüş bildirme aynı yetki değildir. Defterdar, nişancı ve beylerbeyi gibi adlar başka mali, bürokratik veya idari işlevleri anlatır."
+      ],
+      "strategy": "Kişilerin sırasını koruyarak üç fiili çıkar; her fiili görev adıyla ayrı eşleştir ve yalnız sonra seçenek dizisini kontrol et.",
+      "steps": [
+        "Birinci kişinin “medresede ders verme”, ikincinin “hüküm ve mahkeme kaydı”, üçüncünün “dinî-hukuki görüş” işini yaptığını sırayla yaz.",
+        "Öğretim, yargılama ve fetva işlerini üç ayrı görev olarak eşleştir; ortak ilmiye alanında olmaları adlarını aynılaştırmaz.",
+        "Eşleştirdiğin üç adı birinci-ikinci-üçüncü sırasıyla seçeneklere uygula. İlk adı doğru olup son ikiyi yer değiştiren diziyi de ele."
+      ],
+      "optionReasons": [
+        "Müftü görüş bildirir; birinci sıradaki ders verme işine konmuştur. Sonraki müderris ve kadı da verilen ikinci-üçüncü görev sırasını karşılamaz.",
+        "Kadı yargılama görevlisidir, birinci sıradaki öğretim görevlisi değildir. Müftü ve müderris de sonraki iki fiille yanlış sırada eşleştirilmiştir.",
+        "Defterdar maliye, nişancı yazışma, beylerbeyi idari görev çevresindedir; medrese öğretimi-yargılama-fetva üçlüsünü vermez.",
+        "Müderris ders verir, kadı hüküm ve mahkeme kaydıyla ilgilidir, müftü dinî-hukuki görüş bildirir; üçü de kökteki sıraya uyar.",
+        "İlk sıradaki müderris uygundur; fakat müftü ile kadı yer değiştirmiştir. İkinci kişi hüküm verirken üçüncü kişi görüş bildirir."
+      ],
+      "commonError": "Üçünün de ilmiye içinde olmasını görev ve yetkilerinin aynı olduğu sanmak; ilk doğru eşleştirmeden sonra kalan sırayı kontrol etmemek.",
+      "check": "Diziyi adlarla değil fiillerle geri oku: ders → hüküm/kayıt → görüş. Üç geçiş de kökteki sırayı vermeli."
+    }
+  },
+  {
+    "id": "otc-3",
+    "identity": "[\"otc-3\",\"Bu vakfiye bilgisinden hangisine ulaşılamaz?\",\"Bir vakfiyede dükkân gelirinin belirli imaret hizmetlerine ayrıldığı, yönetim ve harcama koşullarının yazıldığı belirtilmektedir.\",[\"Gelir ile hizmet amacı arasında ilişki kurulmuştur.\",\"Yönetim ve harcama koşulları önceden belirlenmiştir.\",\"Gelir sağlayan mal, sosyal hizmeti destekleyebilir.\",\"Dükkân geliri belirli bir amaca tahsis edilmiştir.\",\"Kurucunun ölümüyle bütün hizmetler zorunlu olarak sona erer.\"],4,\"Mal, gelir, amaç ve yönetim koşulları açıkça verilmiştir. Kurucunun ölümüyle zorunlu sona erme bu bilgilerden çıkmaz; vakıf süreklilik sağlayabilen bir tahsis düzenidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Vakfiye, vakfın gelirini, hizmet amacını ve yönetim koşullarını belirleyen belgedir. Gelir getiren bir malın kazancı belirli hizmetleri desteklemek üzere tahsis edilebilir.",
+        "Vakıf, hizmete süreklilik sağlayabilen bir düzen kurar. Kurucunun hayatı, gelir kaynağı, yönetim şartları ve hizmetin süresi ayrı bilgilerdir; birinin verilmesi diğerinin zorunlu bitiş tarihini bildirmez."
+      ],
+      "strategy": "Vakfiyede açık verilen gelir, amaç ve yönetim alanlarını listele; seçeneklerden hangisinin bu alanlara belgede bulunmayan bir süre sınırı eklediğini ara.",
+      "steps": [
+        "Pasajdaki gelir kaynağını dükkân geliri, hizmet amacını belirli imaret hizmetleri olarak ayır.",
+        "Yönetim ve harcama koşullarının da belgede yazıldığını ekleyerek açık verilen üç alanı tamamla.",
+        "Kurucunun ölümüyle zorunlu sona erme koşulunu pasajda ara. Belgenin sayılan hükümleri böyle bir bitiş vermediğinden bu süre iddiasını desteklenenlerden ayır."
+      ],
+      "optionReasons": [
+        "Dükkân gelirinin imaret hizmetine ayrılması gelir-hizmet amacı bağını doğrudan verir.",
+        "Pasaj yönetim ve harcama koşullarının yazıldığını açıkça söylediği için bu sonuca ulaşılır.",
+        "Dükkân gelir sağlayan malın kazancının hizmeti desteklemesiyle uyumludur; imaret hizmeti somut örnektir.",
+        "Dükkân gelirinin belirli imaret hizmetlerine ayrılması, belirli amaca tahsisin kendisidir.",
+        "Kurucunun ölümüyle bütün hizmetlerin zorunlu sona erdiği verilmemiştir. Vakfiyede gelir ve yönetim şartı bulunması böyle bir bitiş koşulu anlamına gelmez."
+      ],
+      "commonError": "Kurucunun kişisel hayatının sona ermesini vakfın bütün gelir ve hizmet düzeninin zorunlu sonu sanmak.",
+      "check": "Desteklenen dört yargıyı belgede gelir, amaç veya koşul ifadesiyle gösterebilmelisin; ölümle bitiş için gereken ayrı cümle bulunmamalı."
+    }
+  },
+  {
+    "id": "otc-4",
+    "identity": "[\"otc-4\",\"Bu metindeki bilgiler en doğrudan hangisini destekler?\",\"Bir tekkede yolculara barınma sağlanmakta ve halka tasavvufi sohbetler yapılmaktadır.\",[\"Tekkenin sosyal ve eğitsel işlevleri birlikte bulunabilir.\",\"Tekke bütün medreselerle aynı program ve diplomaya sahiptir.\",\"Konaklayan herkes kalemiye memurudur.\",\"Bütün şehir tek tarihte bu tekkenin çevresinde kurulmuştur.\",\"Tekkenin temel işi merkez ordusuna ulufe ödemektir.\"],0,\"Barınma sosyal hizmete, sohbet tasavvufi/eğitsel işleve kanıttır. Aynı medrese programı, diploma veya bütün şehrin kuruluşu hakkında bilgi yoktur; ulufe askerî ödemedir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir kurumun işlevi, orada yapılan somut faaliyetlerden araştırılabilir. Yolcuya barınma sosyal hizmet, tasavvufi sohbet ise dinî-eğitsel faaliyet bağlamında değerlendirilir.",
+        "Bir tekkenin eğitim işlevi bulunması medreseyle aynı program ve diplomaya sahip olduğunu göstermez. Hizmet alan kişilerin mesleği veya bütün şehrin kuruluş tarihi için ayrı kanıt gerekir."
+      ],
+      "strategy": "Metindeki iki eylemi iki işlevle eşleştir; ortak sonuçlarını korurken program, meslek ve tarih ekleyen seçenekleri ayır.",
+      "steps": [
+        "İlk açık eylemi yolculara barınma sağlanması olarak işaretle ve bunun karşıladığı sosyal ihtiyacı belirle.",
+        "İkinci eylemi tasavvufi sohbet yapılması olarak işaretle; öğrenme ve dinî sohbet işleviyle ilişkilendir.",
+        "İki işlevin birlikte bulunabildiğini ifade eden yargıyı koru. Diplomayı, konaklayanın memuriyetini veya şehrin kuruluşunu bildiren ek bir veri olmadığını kontrol et."
+      ],
+      "optionReasons": [
+        "Barınma ve tasavvufi sohbet, sosyal ve eğitsel işlevlerin aynı kurumda birlikte bulunabildiğini doğrudan destekler.",
+        "Medreselerle aynı program ve diploma hakkında bilgi verilmemiştir; sohbetin bulunması program eşitliğini kanıtlamaz.",
+        "Konaklayanların kalemiye memuru olduğu belirtilmiyor; bir hizmetten yararlanmak belirli meslek kimliğini göstermez.",
+        "Metinde şehrin kuruluş tarihi veya bütün yerleşmenin bu tekke çevresinde oluştuğu yoktur; iki hizmetten bütün kent tarihi çıkarılamaz.",
+        "Ulufe merkez askerlerine ödemedir. Barınma ve sohbet anlatısı tekkenin temel işini ordu maaşı olarak tanımlamaz."
+      ],
+      "commonError": "Bir kurumda eğitim faaliyeti görmeyi diğer bütün eğitim kurumlarıyla aynı program ve belgeye sahip olması sanmak.",
+      "check": "Seçtiğin yargının bir parçasını barınma, diğer parçasını sohbet verisiyle gerekçelendir; metin dışı kimlik veya diploma bilgisine gerek kalmamalı."
+    }
+  },
+  {
+    "id": "otc-5",
+    "identity": "[\"otc-5\",\"Osmanlı yönetiminde resmî yazışma, mali kayıt ve diplomasi işleri en doğrudan hangi görev çevresiyle ilişkilidir?\",\"\",[\"Reayanın tamamı\",\"Kalemiye\",\"Yalnız yeniçeri piyadeleri\",\"Yalnız akıncılar\",\"Yalnız tekke dervişleri\"],1,\"Kalemiye yazışma, kayıt, maliye ve diplomasiyle ilişkilidir; nişancı, defterdar ve reisülküttap gibi görevleri bu çerçevede düşünürüz. Birlik adı veya genel üretici nüfus aynı görevi tanımlamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kalemiye, Osmanlı yönetiminde resmî yazışma, kayıt, maliye ve diplomasiyle ilişkili görev çevresidir. Nişancı, defterdar ve reisülküttap gibi görevler bu bürokratik çerçevede düşünülür.",
+        "Bir askerî birlik, üretici nüfusun tümü veya tasavvufi çevre aynı bürokratik görev sınıflaması değildir. Sınıfı seçerken görevin fiiline ve iş alanına bakılır."
+      ],
+      "strategy": "Üç işin ortak yönünü resmî belge ve kayıt düzeni üzerinden belirle; bu işi yürüten görev çevresini birlik veya genel nüfus adıyla karıştırma.",
+      "steps": [
+        "Kökte sıralanan yazışma, mali kayıt ve diplomasiyi ayrı not et. Üçü de yönetimin belge, hesap ve ilişki işleriyle bağlantılıdır.",
+        "Bu ortak alanı savaşma veya akın yapma fiillerinden ayır; üretici nüfusun tümü de aynı uzmanlaşmış görev çevresi değildir.",
+        "Belge ve kayıt işlerini bir arada karşılayan görev çevresini seç. Yalnız bir birlik veya yalnız bir dinî grup adı vermenin neden bu üç işi tanımlamadığını denetle."
+      ],
+      "optionReasons": [
+        "Reayanın tamamı üretici ve yönetilen nüfusu kapsar; resmî yazışma, mali kayıt ve diplomasi uzmanlığıyla tanımlanan görev çevresi değildir.",
+        "Kalemiye yazışma, mali kayıt ve diplomasi görevlerini bir arada karşılar; sorulan ortak iş alanına uygundur.",
+        "Yeniçeri piyadeleri bir askerî birliktir; yalnız bu birliğin adı bütün yazışma-maliye-diplomasi çevresini tanımlamaz.",
+        "Akıncılar askerî hareket ve akın bağlamındadır; resmî mali kayıt ve diplomasi çevresinin adı değildir.",
+        "Tekke dervişleri tasavvufi çevreyi anlatır; yalnız bu grup yönetimin bütün bürokratik işlerini tanımlamaz."
+      ],
+      "commonError": "Tanınan bir topluluk adını seçip sorunun belge, maliye ve diplomasi fiillerini gözden kaçırmak.",
+      "check": "Seçtiğin kavramın altında hem mali kayıt hem resmî yazışma görevlisini gösterebiliyor musun? Yalnız savaşçı veya genel nüfus adı bu ortak alanı açıklamaz."
+    }
+  },
+  {
+    "id": "f013-foundation-tarih-zaman-1",
+    "identity": "[\"f013-foundation-tarih-zaman-1\",\"İkinci ekibin çalışmasını doğrudan tarih araştırması yapan özellik hangisidir?\",\"Bir araştırma ekibi bir depremin dalga hızını ölçüyor. Başka bir ekip aynı depremden sonra kasabanın boşalmasını, vergi kayıtlarını ve yeniden yerleşme kararlarını inceliyor.\",[\"Doğa olayının insan toplulukları üzerindeki etkisini kaynaklarla incelemesi.\",\"Deprem dalgalarının hızını laboratuvarda yeniden üretmesi.\",\"Sadece yer kabuğundaki fiziksel değişimi ölçmesi.\",\"Geçmişteki her doğa olayını insan etkisinden bağımsız ele alması.\",\"Yalnız olayın gelecekte yinelenme olasılığını hesaplaması.\"],0,\"Tarihsel incelemenin odağı insanların yer, zaman ve koşullar içindeki faaliyetleridir. Göç ve yönetim kararları bu alana girer. Depremin fiziksel mekanizmasını incelemek ise doğa bilimlerinin doğrudan araştırma konusudur; iki çalışma birbirinden yararlanabilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tarih, geçmişteki insan ve toplum faaliyetlerini yer, zaman ve kaynaklarla inceler. Göç, vergi düzeni ve yeniden yerleşme kararları böyle bir araştırmanın konusu olabilir.",
+        "Aynı deprem hem fizik hem tarih araştırmasında ele alınabilir; belirleyici olan araştırma sorusudur. Dalganın fiziksel hızı ile insanların deprem sonrasındaki faaliyetleri farklı inceleme alanlarıdır."
+      ],
+      "strategy": "Depremin adını değil ikinci ekibin hangi veriyi, hangi insan faaliyetini açıklamak için kullandığını belirle.",
+      "steps": [
+        "Birinci ekibin dalga hızını ölçtüğünü ayır. Bu, depremin fiziksel mekanizmasına ilişkin ölçümdür.",
+        "İkinci ekibin kasabanın boşalması, vergi kayıtları ve yeniden yerleşme kararlarını incelediğini işaretle; bunların insan topluluğundaki değişimlerle ilişkisini kur.",
+        "İkinci ekibin odağını ve kaynak kullanmasını birlikte veren seçeneği ara. Onun işini laboratuvar ölçümü veya yalnız gelecek deprem olasılığına dönüştüren ifadeleri ayır."
+      ],
+      "optionReasons": [
+        "İkinci ekip deprem sonrasındaki insan faaliyetlerini vergi ve yerleşme kayıtlarıyla inceliyor; tarihsel araştırma niteliği bu odağa ve kaynak kullanımına dayanır.",
+        "Deprem dalgasını laboratuvarda üretmek ikinci ekibin verilen işi değildir; fiziksel mekanizma araştırmasını insan faaliyetleri araştırmasının yerine koyar.",
+        "Yalnız yer kabuğunun fiziksel değişimini ölçme, ikinci ekibin göç, vergi ve yerleşme kararlarını incelemesini açıklamaz.",
+        "İkinci çalışma doğa olayını insan etkilerinden bağımsız ele almıyor; tam tersine insan topluluğu üzerindeki sonuçlarını inceliyor.",
+        "Gelecekte yinelenme olasılığı hesaplamak, geçmişteki kasaba ve yönetim faaliyetlerini kaynaklarla incelemenin yerine geçmez."
+      ],
+      "commonError": "Doğa olayı geçen bir araştırmayı, sorulan insan faaliyetine bakmadan tarih konusu dışında saymak.",
+      "check": "İkinci ekibin üç verisini insan faaliyetleriyle eşleştir: boşalma, vergi kaydı ve yeniden yerleşme. Seçeneğin bunları aynı anda açıklaması gerekir."
+    }
+  },
+  {
+    "id": "f013-foundation-tarih-zaman-2",
+    "identity": "[\"f013-foundation-tarih-zaman-2\",\"Bu araştırma sorusuna göre kaynakların konumu hangi seçenekte doğru verilmiştir?\",\"Bir öğrenci, 1910 yılındaki bir grevi araştırıyor. Greve katılmış bir işçinin o günlerde tuttuğu defterle, defteri başka belgelerle karşılaştıran 2024 tarihli bir araştırma kitabını kullanıyor.\",[\"Her ikisi de aynı zamanda yazıldığı için doğrudan tanıklıktır.\",\"2024 kitabı daha yeni olduğu için tek birinci el kaynaktır.\",\"İşçi defteri doğrudan tanıklık; 2024 kitabı sonraki araştırma ve yorumdur.\",\"Defter el yazısı olduğu için kaynak kabul edilemez.\",\"Kitap, eski belgeyi yorumladığı için hiçbir kanıt değeri taşımaz.\"],2,\"Greve katılanın olay sırasındaki kaydı birinci el tanıklık niteliğindedir. Daha sonra karşılaştırma yapan kitap bu soru için ikinci el araştırmadır. Bu ayrım otomatik doğruluk sıralaması değildir; defterin amacı ve anlatımının güvenilirliği de incelenir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Birinci el kaynak, araştırılan olayla doğrudan ilişkili tanıklık veya dönem kaydıdır. İkinci el çalışma, bu kaynakları daha sonra bir araya getirip inceleyen araştırma ve yorumdur.",
+        "Kaynağın konumu ile güvenilirliği ayrı sorulardır. Doğrudan tanık yanılabilir; sonraki araştırma kaynakları karşılaştırarak değerli bilgi sağlayabilir. El yazısı veya basılı oluş, tek başına bu konumu belirlemez."
+      ],
+      "strategy": "Her belgenin araştırılan greve zaman ve tanıklık ilişkisini ayrı belirle; biçim veya yenilik üzerinden doğruluk sıralaması kurma.",
+      "steps": [
+        "Araştırılan olayı 1910 grevi olarak sabitle. İşçi defterinin greve katılan biri tarafından o günlerde tutulduğunu işaretle.",
+        "2024 kitabının defteri başka belgelerle karşılaştıran sonraki bir araştırma olduğunu ayır; bu kitabın yaptığı işlem doğrudan olaya katılım değildir.",
+        "İlk belgeyi tanıklık, ikinciyi sonraki araştırma olarak ayıran seçeneği bul. Defteri el yazısı diye dışlayan veya kitabın bütün kanıt değerini silen ifadeleri ayrıca denetle."
+      ],
+      "optionReasons": [
+        "İki kaynak aynı tarihte yazılmamıştır; 1910 olay sırası ile 2024 araştırması farklıdır. İkisini doğrudan tanıklık saymak bu farkı siler.",
+        "Kitabın daha yeni oluşu onu 1910 grevinin doğrudan tanığı yapmaz; yenilik birinci el olma ölçütü değildir.",
+        "İşçi defteri olay sırasındaki doğrudan tanıklık, 2024 kitabı ise belgeleri sonradan inceleyen araştırmadır; bu araştırma sorusuna göre konumlar doğru ayrılmıştır.",
+        "El yazısı defter kaynak olabilir. Yazım biçimi, olaya katılmış kişinin kaydını kaynak olmaktan çıkarmaz.",
+        "Eski belgeyi yorumlayan kitap, karşılaştırma ve araştırma değeri taşıyabilir; ikinci el oluşu hiçbir kanıt değerinin bulunmadığı anlamına gelmez."
+      ],
+      "commonError": "Birinci eli otomatik kusursuz, ikinci eli değersiz saymak veya basılı-yeni kitabı doğrudan tanıklıkla eşitlemek.",
+      "check": "Araştırma olayını değiştirmeden iki belgeye ayrı ayrı “olayı yaşarken mi kaydediyor, sonradan kaynakları mı inceliyor?” sorusunu yönelt."
+    }
+  },
+  {
+    "id": "f013-foundation-tarih-zaman-3",
+    "identity": "[\"f013-foundation-tarih-zaman-3\",\"Birinci el raporla çalışan tarihçi için en uygun işlem hangisidir?\",\"Bir komutan, zaferini anlattığı raporda ordusunun hiç kayıp vermediğini yazıyor. Aynı günlere ait bağımsız hastane ve defin kayıtları ise kayıplar gösteriyor.\",[\"Rapor birinci el olduğu için öteki kayıtları geçersiz saymak.\",\"Çelişki bulunduğunda bütün geçmişin araştırılamayacağını kabul etmek.\",\"Sonradan bulunan her kaydı tarihine bakmadan üstün kabul etmek.\",\"Zafer gerçekleştiği için rapordaki bütün sayıları doğru saymak.\",\"Raporun amacını ve anlatımını bağımsız kayıtlarla karşılaştırmak.\"],4,\"Rapordaki iddia, aynı dönemin bağımsız kayıtlarıyla sınanabilir. Yazarın kendini veya ordusunu yüceltme amacı araştırılır. Birinci el olmak kaynağın konumunu gösterir; içeriğinin her ayrıntısının doğru olduğunu tek başına garanti etmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir kaynağın birinci el oluşu, olayla doğrudan ilişkisini anlatır; içindeki her iddianın doğruluğunu garanti etmez. Yazarın amacı, bilgiye erişimi ve anlatım biçimi de incelenir.",
+        "Bağımsız kayıtları karşılaştırmak, bir iddianın kapsamını sınamaya yarar. Hastane ve defin kayıtlarıyla kayıp bildirmeyen rapor arasında uyuşmazlık varsa tarihçi bu uyuşmazlığı araştırma verisi olarak kullanır."
+      ],
+      "strategy": "Raporun özel iddiasını bağımsız kayıtlardaki veriyle karşılaştır; kaynak türü veya bulunma tarihi üzerinden otomatik üstünlük kurma.",
+      "steps": [
+        "Rapordaki sınanacak iddiayı “hiç kayıp yok” diye açıklaştır. Zafer iddiasıyla kayıp sayısı iddiasını aynı şey sayma.",
+        "Hastane ve defin kayıtlarının aynı günlere ait kayıpları bildirdiğini not et; raporun bu özel iddiasıyla çelişen veriyi belirle.",
+        "Raporun amacı ve anlatımını bu bağımsız kayıtlarla karşılaştırmayı öneren işlemi seç. Ne bütün geçmişi araştırılamaz say ne de raporu türünden dolayı dokunulmaz kabul et."
+      ],
+      "optionReasons": [
+        "Birinci el oluş, hastane ve defin kayıtlarını geçersiz kılmaz; raporun hiç kayıp olmadığı iddiası yine karşılaştırılarak sınanır.",
+        "Kaynakların çelişmesi bütün geçmişin araştırılamadığı anlamına gelmez; çelişkinin nedenini incelemek tarihçinin yapabileceği somut iştir.",
+        "Sonradan bulunmak otomatik üstünlük ölçütü değildir; kaydın dönemi, niteliği ve iddiayla ilişkisi incelenmelidir.",
+        "Zaferin gerçekleşmesi rapordaki bütün sayıların doğru olduğunu göstermez; zafer ile kayıp verisi ayrı iddialardır.",
+        "Raporun amacını ve anlatımını bağımsız hastane ve defin kayıtlarıyla karşılaştırmak, kaynak eleştirisine ve verilen çelişkinin araştırılmasına uygundur."
+      ],
+      "commonError": "Bir belgenin doğrudan tanık ürünü olmasını bütün ayrıntıları doğru saymak için yeterli görmek.",
+      "check": "Seçtiğin işlem iki kayıt kümesini de incelemeye açık tutuyor mu ve özellikle “hiç kayıp yok” iddiasını sınamaya yarıyor mu?"
+    }
+  },
+  {
+    "id": "f013-foundation-tarih-zaman-4",
+    "identity": "[\"f013-foundation-tarih-zaman-4\",\"Bu incelemenin öncelikli amacı hangisidir?\",\"Bir uzman, bir fermanın kâğıdını, mürekkebini, imzasını ve yazı biçimini inceleyerek belgenin iddia edilen döneme ait olup olmadığını araştırıyor.\",[\"Yazarın olayları hangi siyasi amaçla anlattığını çözümlemek.\",\"Belgenin kökenini ve özgünlüğünü sınayan dış tenkit yapmak.\",\"Olayları daha geniş bir tarih anlatısında birleştirmek.\",\"Belgenin anlattığı savaşın kesin nedenini tek başına belirlemek.\",\"Bir nüfusun uzun dönemli kentleşme hızını hesaplamak.\"],1,\"Malzeme, imza, tarih ve yazı biçimi belgenin kökenine ilişkin dış tenkit verileridir. Yazarın taraflılığı ve söylediklerinin başka kanıtlarla uyumu ise iç tenkitte öne çıkar. İki işlem birbirini desteklese de burada hedef açıkça özgünlüktür.\"]",
+    "guidance": {
+      "knowledge": [
+        "Dış tenkit, belgenin kökenini, tarihini ve özgünlüğünü araştırır; kâğıt, mürekkep, imza ve yazı biçimi bu kimlik incelemesine veri sağlayabilir.",
+        "İç tenkit, belgenin anlattığı iddiaların anlamı, amacı, tutarlılığı ve başka kanıtlarla uyumuyla ilgilenir. Özgün bir belgenin her iddiası doğru olmak zorunda olmadığı gibi, bu iki inceleme de birbirinin yerine geçmez."
+      ],
+      "strategy": "İncelenen özellikleri ve uzmanın ulaşmak istediği sonucu ayır; hedefin maddi kimlik mi içerik yorumu mu olduğunu belirle.",
+      "steps": [
+        "Uzmanın kâğıt, mürekkep, imza ve yazı biçimini incelediğini tek listede topla; bunlar belgenin fiziksel ve biçimsel özellikleridir.",
+        "Amaç cümlesini işaretle: belgenin iddia edilen döneme ait olup olmadığını araştırıyor. İçerikte anlatılan savaşın nedenini çözmeye çalışmıyor.",
+        "Maddi köken ve özgünlüğü sınayan işlemin adını bu hedefle eşleştir. İçerik amacı, geniş anlatı veya kentleşme hesabı ekleyen seçenekleri çıkar."
+      ],
+      "optionReasons": [
+        "Yazarın siyasi anlatım amacını çözümlemek içerik eleştirisiyle ilgilidir; burada öne çıkan hedef belgenin dönem ve özgünlük kimliğidir.",
+        "Kâğıt, mürekkep, imza ve yazı biçiminden köken ve özgünlük araştırmak dış tenkittir; verilen işlem ve hedef bu tanıma uyar.",
+        "Olayları geniş bir anlatıda birleştirmek sentez işidir; belgenin iddia edilen döneme aitliğini araştıran bu incelemenin öncelikli amacı değildir.",
+        "Belgenin malzemesi tek başına anlattığı savaşın kesin nedenini belirlemez; inceleme belge kimliğini hedefler.",
+        "Kentleşme hızı için nüfus ve yerleşme değişimine ilişkin veriler gerekir; kâğıt ve imza incelemesi böyle bir ölçüm değildir."
+      ],
+      "commonError": "Belgeye bakılan her işlemi içerik yorumu saymak; özgünlük ile içerikteki iddianın doğruluğunu tek ölçüt hâline getirmek.",
+      "check": "Amaç cümlesindeki “iddia edilen döneme ait olma” ifadesini cevabının tanımına yerleştir; köken incelemesiyle doğrudan uyuşmalı."
+    }
+  },
+  {
+    "id": "f013-foundation-tarih-zaman-5",
+    "identity": "[\"f013-foundation-tarih-zaman-5\",\"Sikkelerin basımı ve dolaşımını konu alan ana çalışma hangi yardımcı bilimle en doğrudan ilişkilidir?\",\"Araştırmacı, bir sikke grubunun hangi hükümdar adına basıldığını ve hangi pazarlarda dolaştığını inceliyor. Eski harflerin okunmasında başka bir uzmandan yardım alıyor.\",[\"Kronoloji.\",\"Heraldik.\",\"Etnografya.\",\"Nümizmatik.\",\"Paleografya.\"],3,\"Nümizmatik paraları ve sikkeleri basım, kimlik ve dolaşım gibi yönleriyle inceler. Paleografya burada harfleri okumaya destek olabilir; fakat sorunun açıkça sorduğu para basımı ve dolaşımının ana alanı değildir. Nesne ile yapılan işi birlikte oku.\"]",
+    "guidance": {
+      "knowledge": [
+        "Nümizmatik para ve sikkeleri basım, kimlik ve dolaşım gibi yönleriyle inceler. Paleografya eski yazıları okumaya, kronoloji olayları zaman sırasına koymaya yardımcı olur.",
+        "Heraldik arma ve simgelerle, etnografya toplulukların kültürel yaşantı ve gelenekleriyle ilişkilidir. Aynı nesne için birden fazla alandan yardım alınabilir; ana alanı araştırmanın hedefi belirler."
+      ],
+      "strategy": "Nesneyi ve o nesneyle ilgili sorulan işlemi birlikte oku; yazı okumak için alınan desteği ana araştırmanın hedefinden ayrı tut.",
+      "steps": [
+        "Ana nesnenin sikke grubu olduğunu ve ana soruların kimin adına basıldığı ile hangi pazarlarda dolaştığı olduğunu belirle.",
+        "Eski harflerin okunmasının bu çalışmaya yardımcı işlem olarak verildiğini ayır; yardım alınan alanın ana hedefin yerine geçmediğini not et.",
+        "Basım ve dolaşım incelemesini karşılayan alanı seç. Yazı okuma, zaman dizimi, arma ve gelenek alanlarını kendi hedefleriyle karşılaştırarak ele."
+      ],
+      "optionReasons": [
+        "Kronoloji zaman sırasını kurar; ana sorudaki para basımı ve pazar dolaşımını konu edinen alanın adı değildir.",
+        "Heraldik arma ve simgelerle ilgilidir; bu çalışmanın açık hedefi hükümdar armasını tek başına çözümlemek değil sikke basımı ve dolaşımıdır.",
+        "Etnografya kültürel yaşantı ve geleneklerle ilişkilidir; burada doğrudan para ve sikke incelemesi soruluyor.",
+        "Nümizmatik sikkelerin basımını, kimliğini ve dolaşımını inceler; ana çalışmanın iki hedefini de karşılar.",
+        "Paleografya eski harfleri okumaya yardımcı olabilir; pasajda bu rol destek olarak verilmiştir. Basım ve dolaşım araştırmasının ana alanı yerine konamaz."
+      ],
+      "commonError": "Pasajdaki eski harf ayrıntısını görünce asıl hedef olan sikke basımı ve dolaşımını bırakıp yardımcı yazı okuma işini seçmek.",
+      "check": "Cevabının tanımı hem “basım” hem “dolaşım” sözcüklerini kapsıyor mu? Yalnız yazıyı okuyabilme bu iki araştırma hedefini karşılamaz."
+    }
+  },
+  {
+    "id": "f013-foundation-tarih-zaman-6",
+    "identity": "[\"f013-foundation-tarih-zaman-6\",\"Bu iki gelişme hangi seçenekte uygun biçimde ayrılmıştır?\",\"Bir antlaşmanın 16 Mayıs günü imzalanması ile bir bölgede birkaç yüzyıla yayılan şehirleşme, iki farklı tarihsel inceleme örneğidir.\",[\"İkisi de yalnız tek bir günü anlattığı için olaydır.\",\"Belirli günkü antlaşma olay; uzun süreli şehirleşme olgudur.\",\"Antlaşma olgu; uzun süreli şehirleşme olaydır.\",\"Yazılı belge içeren her gelişme olgudur.\",\"Yer bilgisi bulunan her gelişme olay, bulunmayan her gelişme olgudur.\"],1,\"Olayın yer ve zamanı daha belirgin bir somut gelişmesi vardır. Şehirleşme ise çok sayıda olayla oluşan uzun süreli değişimi anlatır. Bir olgunun da yeri ve zamanı araştırılabilir; ayrımı yalnız belgenin yazılılığı veya yer adının bulunması belirlemez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Olay, belirli yer ve zamanla ilişkilendirilen somut gelişmedir. Olgu, çok sayıda olayla gelişen daha uzun süreli değişim veya süreçtir; şehirleşme böyle bir süreç olarak incelenebilir.",
+        "Olgunun da yeri ve zamanı araştırılır. Olay-olgu ayrımı yalnız yazılı belge bulunmasına veya bir yer adının söylenmesine göre yapılmaz; gelişmenin yapısına ve ölçeğine bakılır."
+      ],
+      "strategy": "Her örneğin tek bir somut gelişme mi, birçok gelişmeden oluşan süreç mi olduğunu ayrı belirle; belge türünü ayrım ölçütü yapma.",
+      "steps": [
+        "İlk örnekte 16 Mayıs gününde bir antlaşmanın imzalandığını saptayarak tek ve belirgin gelişmeyi ayır.",
+        "İkinci örnekte birkaç yüzyıla yayılan şehirleşmenin çok sayıda yerleşme ve nüfus değişimiyle oluştuğunu düşün; tek bir günün eylemi olarak okuma.",
+        "İlk örneği somut olay, ikinciyi uzun süreç olarak sınıflandıran seçeneği ara. Yer adı veya yazılılık üzerinden yapılan başka ayrımları bu iki gelişmeyle sınayarak çıkar."
+      ],
+      "optionReasons": [
+        "Şehirleşme pasajda birkaç yüzyıla yayılmıştır; iki örneği de tek bir günün olayı saymak ikinci örneğin süre ve süreç niteliğini siler.",
+        "Belirli gündeki imza olaydır; çok sayıda gelişmeyle oluşan uzun süreli şehirleşme olgudur. İki örnek uygun sırada ayrılır.",
+        "Bu seçenek ayrımı ters kurar: tek antlaşma imzası olgu, uzun süreli şehirleşme tek olay olarak gösterilemez.",
+        "Yazılı belge, hem olayı hem olguyu araştırmada kullanılabilir; yazılılık her gelişmeyi olgu yapmaz.",
+        "Yer bilgisi bulunması tek başına olay ölçütü değildir; şehirleşme gibi bir olgunun da belirli bir bölgesi vardır."
+      ],
+      "commonError": "Olguya yer ve zaman verilemez sanmak veya belgenin yazılı oluşunu olay-olgu ayrımının temeli yapmak.",
+      "check": "Birinci örneği aynı günkü somut eylemle, ikinciyi uzun süreli değişimle açıklayabiliyor musun? Ayrımın belge biçimine dayanmamalı."
+    }
+  },
+  {
+    "id": "f013-foundation-tarih-zaman-7",
+    "identity": "[\"f013-foundation-tarih-zaman-7\",\"Eskiden yeniye doğru sıralama hangisidir?\",\"Aynı tarih şeridinde MÖ 480, MÖ 210 ve MS 60 yılları gösterilecektir. MÖ, milattan önceyi; MS, milattan sonrayı ifade eder.\",[\"MS 60 → MÖ 210 → MÖ 480.\",\"MÖ 210 → MÖ 480 → MS 60.\",\"MÖ 480 → MS 60 → MÖ 210.\",\"MÖ 210 → MS 60 → MÖ 480.\",\"MÖ 480 → MÖ 210 → MS 60.\"],4,\"MÖ yıllarda zaman ilerledikçe yıl numarası küçülür; bu nedenle MÖ 480, MÖ 210’dan eskidir. Her iki MÖ yıl da MS 60’tan öncedir. Yıl sayılarını tek başına küçükten büyüğe dizmek iki farklı tarafı karıştırır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Geleneksel MÖ–MS zaman çizgisinde MÖ yıllar MS yıllardan öncedir. MÖ tarafında zaman ilerledikçe yıl numarası küçülür; MS tarafında ise büyür.",
+        "Bu nedenle tarih sıralaması için önce dönem işaretleri ayrılır, sonra aynı taraftaki yıllar kendi yönüne göre dizilir. İşareti bırakıp bütün sayıları küçükten büyüğe sıralamak tarih sırası vermez."
+      ],
+      "strategy": "Önce MÖ ve MS yılları ayır; iki MÖ yılı kendi zaman yönünde sıraladıktan sonra MS yılını çizgideki yerine ekle.",
+      "steps": [
+        "Üç etiketi iki gruba ayır: MÖ tarafında 480 ve 210, MS tarafında 60 bulunuyor. MS 60’ın iki MÖ yıldan da sonra olduğunu yerleştir.",
+        "MÖ tarafında zamanın büyük numaradan küçük numaraya ilerlediğini kullanarak 480 ile 210’un sırasını belirle.",
+        "İki MÖ yılı bu sırada tutup MS 60’ı sona ekle. Şıklarda bir MÖ yılını MS yılının arkasına veya MÖ 210’u MÖ 480’in önüne koyan dizileri ele."
+      ],
+      "optionReasons": [
+        "MS 60 iki MÖ yıldan da sonradır; onu başa koymak eskiden yeniye sıralamayı ters başlatır.",
+        "MÖ 210, MÖ 480’den daha yenidir; iki MÖ yılı yer değiştirdiği için sıra doğru değildir.",
+        "MS 60’tan sonra MÖ 210’a dönülmüş; zaman çizgisinde ileri gidildikten sonra geçmişe dönülüyor.",
+        "İlk iki MÖ yılının kendi sırası bozulmuş, ayrıca MS 60’tan sonra MÖ 480’e dönülmüştür.",
+        "MÖ 480 → MÖ 210 → MS 60 dizisi önce MÖ tarafında ileri gider, sonra MS tarafına geçer; üç tarih eskiden yeniye sıralıdır."
+      ],
+      "commonError": "MÖ/MS işaretini atıp 60, 210, 480 sayıları üzerinden tek bir küçükten-büyüğe sıra kurmak.",
+      "check": "Seçtiğin dizide iki şartı ayrı doğrula: iki MÖ yıl doğru sırada mı ve MS 60 her ikisinden sonra mı?"
+    }
+  },
+  {
+    "id": "f013-foundation-tarih-zaman-8",
+    "identity": "[\"f013-foundation-tarih-zaman-8\",\"MS 1900 ve MS 1901 hangi yüzyıllardadır?\",\"Geleneksel tarihlemede MS 1–100 birinci, MS 101–200 ikinci yüzyıldır. Yüzyıl aralıkları bu düzenle sürer.\",[\"1900: 18. yüzyıl; 1901: 19. yüzyıl.\",\"İkisi de 19. yüzyıldadır.\",\"1900: 19. yüzyıl; 1901: 20. yüzyıl.\",\"İkisi de 20. yüzyıldadır.\",\"1900: 20. yüzyıl; 1901: 21. yüzyıl.\"],2,\"Tam yüzlü yıl önceki yüz yıllık bloğun sonudur. 1900, 1801–1900 aralığında; 1901 ise 1901–2000 aralığındadır. Son iki basamağı atıp koşulsuz bir eklemek, 1900 gibi sınır yıllarında hata üretir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Geleneksel yüzyıl numaralandırmasında ilk yüz yıllık blok MS 1–100, sonraki blok 101–200’dür. Her blok önceki tam yüzlü yıldan bir sonraki yıl başlar ve sonraki tam yüzlü yılda biter.",
+        "Bir yıl tam yüzle bitiyorsa o yüz yıllık bloğun sonundadır. Hemen sonraki yıl yeni bloğa geçer; yüzlük sınırının iki yanındaki yıllar aynı yüzyılda olmak zorunda değildir."
+      ],
+      "strategy": "İki yıl için onları içine alan yüz yıllık aralıkları yaz; özellikle tam yüzlü yıl ile hemen sonraki yıl arasındaki blok sınırını kontrol et.",
+      "steps": [
+        "İlk yüzyılın 1–100 olması düzenini sürdürerek 1801’den başlayan yüz yıllık bloğun nerede biteceğini bul.",
+        "1900’ün bu bloğun son yılı olduğunu, 1901’in ise bir sonraki yüz yıllık bloğun ilk yılı olduğunu ayrı işaretle.",
+        "Blokların sıra numaralarını yılların yanına yazıp seçenekle eşleştir. İki yılı aynı bloğa koyan veya her tam yüzlü yılı koşulsuz sonraki yüzyıla atan yargıları ele."
+      ],
+      "optionReasons": [
+        "18. yüzyıl 1701–1800’dür; 1900 bu aralıkta değildir. 1901 de 19. yüzyılın bitişi olan 1900’den sonradır.",
+        "19. yüzyıl 1801–1900 ile biter; 1901’i de bu yüzyıla katmak yüz yıllık bloğu aşar.",
+        "1900, 1801–1900 bloğunda yani 19. yüzyıldadır; 1901, 1901–2000 bloğunun başlangıcı yani 20. yüzyıldadır.",
+        "20. yüzyıl 1901’de başlar; 1900 bu aralığın içinde değildir.",
+        "1900’ü 20., 1901’i 21. yüzyıla taşımak numaraları gereğinden ileri götürür; 21. yüzyıl 2001’de başlar."
+      ],
+      "commonError": "Yılın son iki basamağını atıp her durumda bir eklemek; 1900 gibi tam yüzlü sınır yılını yeni bloğun başlangıcı sanmak.",
+      "check": "İki aralığın birer yüz yıl içerdiğini ve arada boşluk/örtüşme olmadığını kontrol et: birinin sonu 1900 ise ötekinin başı 1901 olmalı."
+    }
+  },
+  {
+    "id": "f013-foundation-tarih-zaman-9",
+    "identity": "[\"f013-foundation-tarih-zaman-9\",\"Kaç yıllık zaman aralığı geçmiştir?\",\"Bu soruda geleneksel MÖ–MS numaralandırması kullanılıyor ve yıl 0 bulunmuyor. MÖ 2 yılının başlangıcından MS 3 yılının başlangıcına kadar geçen süre isteniyor.\",[\"4 yıl.\",\"2 yıl.\",\"3 yıl.\",\"5 yıl.\",\"6 yıl.\"],0,\"Başlangıçlar MÖ 2 → MÖ 1 → MS 1 → MS 2 → MS 3 biçiminde ilerler. Dört bir yıllık aralık vardır. 2+3 toplamından olmayan yıl 0 için bir çıkarmak gerekir. Beş etiket bulunması, beş yıl geçtiği anlamına gelmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Geleneksel tarih numaralandırmasında MÖ 1’in ardından MS 1 gelir; yıl 0 bulunmaz. Yıl etiketlerinin adedi ile iki yıl başlangıcı arasındaki aralıkların adedi farklıdır.",
+        "Ardışık iki yıl başlangıcı arasında bir yıllık aralık bulunur. Bu soruda yıl başlangıçları verilmiştir; gün ve ayı bilinmeyen olaylar için yaklaşık süre tahmini yapılmıyor."
+      ],
+      "strategy": "Başlangıçtan sona kadar yıl etiketlerini çizgiye yerleştir; etiketlerin kendisini değil komşu başlangıçları birleştiren aralıkları say.",
+      "steps": [
+        "MÖ 2’den başlayıp yıl 0 eklemeden ilerle: MÖ 2 → MÖ 1 → MS 1 → MS 2 → MS 3.",
+        "Çizgide her komşu iki başlangıç arasına bir aralık işareti koy. MÖ 1’den MS 1’e geçişin de tek aralık olduğunu denetle.",
+        "İşaretlediğin aralıkları topla ve seçenekle eşleştir. Saydığın şey beş yıl etiketi değil, ilk başlangıçtan son başlangıca geçerken aştığın boşluklardır."
+      ],
+      "optionReasons": [
+        "Çizgide MÖ 2→MÖ 1, MÖ 1→MS 1, MS 1→MS 2 ve MS 2→MS 3 olmak üzere dört bir yıllık aralık bulunur.",
+        "Yalnız 2 yıl saymak, MS tarafına geçişin veya çizgideki başka aralıkların bir bölümünü dışarıda bırakır.",
+        "3 yıl, çizgideki dört komşu geçişten birini atlar; MÖ ve MS tarafı arasındaki bir yıllık geçiş de sayılmalıdır.",
+        "5 sayısı görülen yıl etiketlerinin adedidir. Beş etiketin ilk ve son başlangıcı arasında dört aralık vardır.",
+        "Çizgide yalnız dört komşu geçiş vardır; 6 yıl demek bu sayıya iki dayanağı olmayan aralık eklemek olur."
+      ],
+      "commonError": "Uç etiketleri geçen yıl sayısına katmak veya MÖ 1 ile MS 1 arasına yıl 0 eklemek.",
+      "check": "Dört oku tek tek izleyerek son başlangıca ulaşıyor musun? Beş etiket için komşu aralık sayısının bir eksik olduğunu ayrıca doğrula."
+    }
+  },
+  {
+    "id": "f013-foundation-tarih-zaman-10",
+    "identity": "[\"f013-foundation-tarih-zaman-10\",\"Bu üç bilgi hangi ayrımı gösterir?\",\"Bir takvim için “Güneş esaslıdır”, “yılı 1 Ocak’ta başlar” ve “dönem numaralandırması İsa’nın doğumu esasına dayanır” bilgileri ayrı ayrı veriliyor.\",[\"Güneş esaslı bütün takvimlerin aynı olayı başlangıç aldığı anlaşılır.\",\"1 Ocak, bütün takvimlerde milat sözcüğünün tanımıdır.\",\"Bir takvim Güneş esaslıysa tarihsel başlangıç olayı bulunamaz.\",\"Takvimin gök hareketi esası, yıl başlangıcı ve dönem başlangıcı farklı özelliklerdir.\",\"Yılın başladığı gün, tek başına takvimin Ay esaslı olduğunu belirler.\"],3,\"Yılın astronomik esası, yıl içindeki başlangıç günü ve yılların sayıldığı dönem başlangıcı ayrı ölçütlerdir. 1 Ocak bilgisinden miladın anlamı türetilemez. Benzer biçimde başlangıcı hicretle ilişkili iki takvim mutlaka aynı gök hareketini esas almaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Takvimin astronomik esası, zaman birimlerinin hangi gök hareketiyle düzenlendiğini anlatır. Yılın başlangıç günü, takvimde yıl içindeki ilk günün adıdır. Dönem başlangıcı ise yılların hangi tarihsel başlangıca göre numaralandırıldığıdır.",
+        "Bu üç özellik farklı sütunlarda tutulabilir. Aynı astronomik esasa dayanan takvimlerin dönem başlangıcı farklı olabileceği gibi, benzer tarihsel başlangıç kullanan takvimler de aynı astronomik düzene dayanmak zorunda değildir."
+      ],
+      "strategy": "Verilen üç ifadeyi cevapladıkları soruya göre sınıflandır: hangi gök hareketi, yıl içinde hangi gün ve hangi dönem başlangıcı?",
+      "steps": [
+        "“Güneş esaslıdır” ifadesini astronomik düzen sütununa koy; bu bilgi tek başına yılın hangi olaydan sayıldığını söylemez.",
+        "“1 Ocak” bilgisini yılın ilk günü, “İsa’nın doğumu esasına dayanan numaralandırma” bilgisini dönem başlangıcı sütununa ayır.",
+        "Üç ayrı özelliği koruyan yargıyı bul. Bir sütundaki bilgiden ötekinin bütün takvimler için zorunlu cevabını çıkaran seçenekleri ele."
+      ],
+      "optionReasons": [
+        "Güneş esaslı olmak bütün takvimlerin aynı tarihsel olayı başlangıç saymasını gerektirmez; astronomik esas dönem başlangıcıyla eşitlenmiştir.",
+        "1 Ocak yılın ilk günüdür; bütün takvimlerde “milat” kelimesinin tanımı veya dönem numaralandırmasının açıklaması değildir.",
+        "Güneş esaslı bir takvim tarihsel bir dönem başlangıcı da kullanabilir; astronomik düzen ile tarihsel başlangıç birbirini dışlamaz.",
+        "Gök hareketi esası, yıl başlangıcı ve dönem başlangıcı verilen üç ifadenin ayrı ayrı anlattığı özelliklerdir.",
+        "Yılın başladığı günün adı tek başına Ay esaslı olmayı belirlemez; astronomik esas ayrıca verilmelidir."
+      ],
+      "commonError": "Yılın ilk gününü dönem numaralandırmasının kökeniyle eşitlemek; bir özelliğin diğer bütün özellikleri zorunlu belirlediğini sanmak.",
+      "check": "Üç ifadeyi üç ayrı soru başlığının altına geri yerleştir. Aynı sütuna zorla taşımadan hepsini açıklayan seçenek kalmalı."
+    }
+  },
+  {
+    "id": "f013-foundation-insanligin-ilk-donemleri-1",
+    "identity": "[\"f013-foundation-insanligin-ilk-donemleri-1\",\"Bu bulguların doğrudan desteklediği en sınırlı yorum hangisidir?\",\"Bir kazıda yabani tahıl kalıntılarıyla birlikte bir öğütme taşı bulunuyor. Henüz ekili tarla, evcilleşmiş bitki veya üretim artığına ilişkin başka veri bulunmamıştır.\",[\"Bitkisel besinlerin işlenmiş olabileceği.\",\"Topluluğun kesinlikle sulamalı tarım yaptığı.\",\"Halkın tamamının sürekli aynı yerde yaşadığı.\",\"Ürün dağıtımını merkezi bir devletin yönettiği.\",\"Tahılın bütün bölgeye para karşılığı satıldığı.\"],0,\"Öğütme taşı ile bitki kalıntıları bitkisel besin işleme yorumunu destekler. Yabani ürünler de işlenebildiğinden tarım, sürekli yerleşim veya devlet örgütü otomatik olarak kanıtlanmaz. Her daha geniş iddia için bağımsız bulgular gerekir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir öğütme taşı bitkisel besinlerin işlenmesinde kullanılabilir. Yabani tahılı toplamak ve işlemek, o tahılı ekerek üretmekten farklı bir faaliyettir.",
+        "Tarım, sürekli yerleşim, devlet yönetimi ve satış ağı ayrı kanıtlarla araştırılır. Bir buluntunun olası işlevi, bütün toplumun yaşam biçimini ve kurumlarını tek başına belirlemez."
+      ],
+      "strategy": "Her seçeneğin gerektirdiği kanıtı buluntularla karşılaştır; verilen iki nesnenin desteklediği en küçük işlev yorumunu koru.",
+      "steps": [
+        "Açık buluntuları yabani tahıl kalıntısı ve öğütme taşı olarak yaz. Ekili tarla veya evcilleşmiş bitki kanıtının henüz verilmediğini ayrı not et.",
+        "İki buluntunun birlikte bitkisel besini öğütüp işleme olasılığına nasıl uyduğunu kur; yabani tahılı işlemenin tarla ekmeyi zorunlu kılmadığını düşün.",
+        "İşlev olasılığını aşmadan kalan yargıyı seç. Sulama, bütün halkın yerleşikliği, merkezî dağıtım veya para karşılığı bölgesel satış için ayrıca hangi kanıtın gerektiğini denetle."
+      ],
+      "optionReasons": [
+        "Öğütme taşı ve tahıl kalıntısı bitkisel besin işleme olasılığını doğrudan destekler; yorum buluntuların kapsamını aşmaz.",
+        "Ekili tarla ve sulama düzeneği verilmemiştir. Yabani tahılı öğütmek sulamalı tarımın kesin kanıtı değildir.",
+        "İki buluntu bütün halkın sürekli aynı yerde yaşadığını göstermez; yerleşiklik ve bütün nüfus için ayrı veriler gerekir.",
+        "Merkezî devletin dağıtımı yönettiğine ilişkin kurum veya kayıt yoktur; besin işleme bulgusundan bu yönetim düzeni çıkarılamaz.",
+        "Para karşılığı satış ve bütün bölgeye dağıtım verisi yoktur; öğütme işlemi böyle bir ticaret ağını kendiliğinden göstermez."
+      ],
+      "commonError": "Besin işleme aletini doğrudan tarla üretimi, yerleşiklik ve devlet örgütünün hepsinin kanıtı saymak.",
+      "check": "Seçtiğin yorum yabani tahıl toplayan bir grup için de mümkün mü? Evetse işleme ile tarımı zorunlu olarak birleştirmemiş olursun."
+    }
+  },
+  {
+    "id": "f013-foundation-insanligin-ilk-donemleri-2",
+    "identity": "[\"f013-foundation-insanligin-ilk-donemleri-2\",\"Yalnız bu bilgiyle hangi sonuç çıkarılabilir?\",\"Bir höyüğün üç tabakasının sonradan karışmadığı ve hiçbir çukurla kesilmediği belirlenmiştir. Aynı yerleşim birikiminde A en altta, B ortada, C en üsttedir.\",[\"A ile B arasında tam olarak yüz yıl geçtiği.\",\"C’de yaşayanların A’dakilerden daha varlıklı olduğu.\",\"A tabakasının oluşumu, B ve C’den görece daha eskidir.\",\"A’nın kesin bir miladi yılının hesaplanabildiği.\",\"B’deki her nesnenin yapım yerinin bilindiği.\"],2,\"Bozulmamış birikimde alttaki tabaka genellikle üsttekinden daha eskidir. Verilen koşullar bu göreli sıralamayı kullanmaya izin verir. Derinlikten kesin yıl, her tabaka için eşit süre veya insanların refah düzeyi çıkarılamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Höyük, yerleşimlerin yıkılıp yeniden kurulması ve birikimlerle oluşabilen yerleşme tepesidir. Birikimin bozulmadığı durumda alttaki tabakanın oluşumu üsttekinden görece daha eskidir.",
+        "Göreli sıra “hangisi önce?” sorusuna cevap verir. Kesin takvim yılı, tabakalar arasındaki süre, insanların refahı veya nesnenin üretildiği yer için başka tarihleme ve bağlam verileri gerekir."
+      ],
+      "strategy": "Önce katman ilişkisinin kullanılmasını sağlayan koşulları doğrula; sonra bu ilişkinin verebildiği göreli sırayı mutlak tarihten ayır.",
+      "steps": [
+        "Pasajın iki güvenceyi açıkça verdiğini belirle: tabakalar karışmamış ve sonradan açılmış çukurla kesilmemiş.",
+        "Kesiti alttan üste A → B → C olarak çiz. Bozulmamış birikim varsayımı altında bu diziyi oluşum bakımından önce-sonra ilişkisine çevir.",
+        "Yalnız bu göreli sırayı söyleyen seçeneği koru. Yıl, yüz yıllık eşit süre, varlık düzeyi veya nesne üretim yeri bildiren ek iddiaları ayrı kanıt istemeleri nedeniyle ele."
+      ],
+      "optionReasons": [
+        "Katman sırası A ile B arasında tam yüz yıl bulunduğunu vermez; birikme hızları ve süreler ayrıca araştırılmalıdır.",
+        "Üstte veya daha yeni olmak daha varlıklı yaşamış olmakla aynı değildir; refah verisi verilmemiştir.",
+        "Bozulmamış aynı birikimde en alttaki A’nın oluşumu, üzerindeki B ve C’den göreli olarak eskidir; verilen koşullarla bu sıra kurulabilir.",
+        "Göreli tabaka sırası A’nın kesin miladi yılını hesaplamaya yetmez; mutlak tarihleme verisi yoktur.",
+        "Bir nesnenin bulunduğu tabaka, onun yapıldığı yeri tek başına bildirmez; üretim yeri için ayrı izler gerekir."
+      ],
+      "commonError": "Tabaka kalınlığını eşit yıl sayısı veya altta bulunmayı kesin takvim tarihi gibi okumak; bozulmama koşulunu atlamak.",
+      "check": "Cevabını bir takvim sayısı kullanmadan “A önce, B ve C sonra” biçiminde kurabiliyor musun? Bu, verilen göreli bilginin sınırıdır."
+    }
+  },
+  {
+    "id": "f013-foundation-insanligin-ilk-donemleri-3",
+    "identity": "[\"f013-foundation-insanligin-ilk-donemleri-3\",\"İki bulgu birlikte en çok hangi ilişkiyi destekler?\",\"Bir yerleşimde yıllık tüketim ve tohum ihtiyacının üzerinde tahıl depolanabiliyor. Bazı kişilerin sürekli çömlek yapımında çalıştığına ilişkin işlik kalıntıları da bulunuyor.\",[\"Depolanan ürünün toplumdaki herkese eşit dağıtıldığını.\",\"Her çömlekçinin aynı zamanda hükümdar olduğunu.\",\"İş bölümünün yazıdan sonra bir anda başladığını.\",\"Depo bulunan her yerde zorunlu olarak imparatorluk kurulduğunu.\",\"Ürün fazlasının tarım dışı uzmanlaşmayı destekleyebilmesi.\"],4,\"Depolanabilen fazla, bazı kişilerin zanaatta daha sürekli çalışmasını mümkün kılabilir. Çömlek işliği bu uzmanlaşmaya ayrı kanıt sağlar. Fakat depo ve işlikten eşit dağıtım veya belirli bir devlet biçimi sonucu çıkarmak kapsamı aşar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Artı ürün, tüketim ve sonraki üretim için gereken pay ayrıldıktan sonra kalan fazladır. Depolanabilen besin, bazı kişilerin besin üretimi dışındaki işlerde daha sürekli çalışmasını destekleyebilir.",
+        "Zanaat işlikleri uzmanlaşma ve iş bölümü için ayrı bulgulardır. Depo ve işlik, ürünün kime ne kadar dağıtıldığını veya hangi yönetim biçiminin bulunduğunu kendiliğinden bildirmez."
+      ],
+      "strategy": "Depodaki fazlanın sağladığı imkân ile sürekli zanaat çalışmasının işaretini ilişkilendir; dağıtım ve yönetim gibi ayrı iddialar ekleme.",
+      "steps": [
+        "Depolanan tahılın yıllık tüketim ve tohum ihtiyacını aştığını işaretle; bunun yalnız herhangi bir depo değil, ihtiyaç üstü besin payı olduğunu belirle.",
+        "Sürekli çömlek yapımını ve işlik kalıntısını ikinci bulgu olarak ayır; bazı kişilerin zanaatta daha düzenli çalışmasına işaret ettiğini kur.",
+        "Besin fazlasının bu uzmanlaşmayı destekleyebilmesi bağlantısını seç. Eşit paylaşım, hükümdarlık veya imparatorluğun zorunluluğu için ayrıca veri bulunmadığını kontrol et."
+      ],
+      "optionReasons": [
+        "Depoda fazla bulunması herkesin aynı miktarda pay aldığına ilişkin dağıtım kaydı değildir; eşitlik sonucu eklenmiştir.",
+        "Çömlek işliği zanaat faaliyetini gösterir; her çömlekçinin hükümdar olduğu sonucuyla ilişkili yönetim kanıtı yoktur.",
+        "İş bölümünün yazıdan sonra bir anda başladığı verilmemiştir; pasaj böyle bir zaman ve zorunlu başlangıç ilişkisi kurmuyor.",
+        "Depo varlığı belirli bir siyasi ölçeği zorunlu kılmaz; her depodan imparatorluk sonucu çıkarmak kapsamı aşar.",
+        "İhtiyaç üstü besin payı, bazı kişilerin tarım dışı zanaatta daha sürekli çalışmasını destekleyebilir; depo ve çömlek işliği birlikte bu ilişkiye uyar."
+      ],
+      "commonError": "Artı ürünün uzmanlaşmayı desteklemesini belirli yönetim veya eşit paylaşımın zorunlu kanıtı sanmak.",
+      "check": "İlişkinin iki ucunu ayrı bulguyla göster: ihtiyaç üstü tahıl beslenme imkânına, sürekli çömlek işliği uzmanlaşmaya veri sağlıyor mu?"
+    }
+  },
+  {
+    "id": "f013-foundation-insanligin-ilk-donemleri-4",
+    "identity": "[\"f013-foundation-insanligin-ilk-donemleri-4\",\"Bu karşılaştırma hangi yorumu destekler?\",\"A bölgesinde metal aletler ve yazılı kayıtlar kullanılırken aynı dönemde B bölgesinde taş aletler ve sözlü aktarım ağırlıktadır.\",[\"Bütün toplumların aynı tarihte aynı teknolojiyi benimsediğini.\",\"Tarih öncesi ve tarihî dönemlerin başlangıçları bölgelere göre değişebilir.\",\"Taş alet kullanan toplumların kültürünün bulunmadığını.\",\"Yazı kullanan toplumlarda sözlü anlatının tamamen bittiğini.\",\"Maden kullanımının görüldüğü her yerde bütün taş aletlerin yok olduğunu.\"],1,\"Yazı ve araç teknolojileri bütün coğrafyalarda eş zamanlı gelişmez. Bu nedenle yerel kanıtla dönemlendirme yapılır. Taş alet kullanımı kültür yokluğu değildir; yeni bir teknoloji de öncekinin bütün kullanımlarını aynı anda sona erdirmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Teknoloji ve yazı bütün bölgelerde aynı anda yaygınlaşmaz. Dönemlendirme, yerel buluntular ve yazı kullanımına ilişkin kanıtlarla yapılır; tek takvim yılı bütün toplumların aynı aşamada olduğunu göstermez.",
+        "Sözlü kültür, yazıdan sonra da sürebilir. Taş alet ve metal araçlar da aynı dönemlerde birlikte kullanılabilir; yeni tekniğin ortaya çıkması önceki bütün kullanımları kendiliğinden bitirmez."
+      ],
+      "strategy": "Karşılaştırmada sabit tutulan zamanı ve bölgeler arasında değişen kanıtı ayır; çıkarımı bu eşzamanlı farklılıkla sınırla.",
+      "steps": [
+        "A ve B’nin aynı dönemde karşılaştırıldığını belirle; farklılığın yalnız iki uzak tarihin karşılaştırılmasından kaynaklanmadığını not et.",
+        "A’da metal ve yazı, B’de taş alet ve sözlü aktarımın ağırlıkta olduğunu iki sütuna yaz; yerel teknik ve kayıt farkını görünür kıl.",
+        "Bu farkın dönem başlangıçlarının bölgelere göre değişebilmesiyle ilişkisini kur. Kültür yokluğu veya eski tekniklerin tamamen bitişi gibi verilmemiş kesinlikleri ele."
+      ],
+      "optionReasons": [
+        "İki bölgenin aynı dönemde farklı araç ve kayıt kullanması, bütün toplumların aynı tarihte aynı teknolojiyi benimsediği iddiasını desteklemez.",
+        "Yerel yazı ve teknoloji farkları, tarih öncesi ve tarihî dönem başlangıçlarının bölgelere göre değişebileceği yorumuna uygundur.",
+        "Taş alet kullanımı kültür bulunmadığını göstermez; sözlü aktarımın kendisi de kültürel faaliyettir.",
+        "Yazı kullanımı sözlü anlatının tamamen bittiği anlamına gelmez; pasaj böyle bir sona erme verisi sunmuyor.",
+        "Metal kullanımı bütün taş aletlerin aynı anda yok olmasını gerektirmez; farklı araçların birlikte kullanılması mümkündür."
+      ],
+      "commonError": "Teknolojik dönemleri bütün toplumların aynı tarihte geçtiği tek çizgi saymak; yeni tekniği öncekinin bütünüyle sonu olarak okumak.",
+      "check": "İki bölgenin aynı takvim döneminde farklı durumda oluşunu cevabın açıklayabiliyor mu? Kültürü var-yok diye puanlayan ek yargıya gerek olmamalı."
+    }
+  },
+  {
+    "id": "f013-foundation-insanligin-ilk-donemleri-5",
+    "identity": "[\"f013-foundation-insanligin-ilk-donemleri-5\",\"Bu bulgunun getirdiği en uygun sonuç hangisidir?\",\"Göbeklitepe’de erken anıtsal ve ortak kullanımlı yapılar bulunması, bütün toplumlarda ancak tam gelişmiş tarım devletlerinden sonra büyük ortak yapılar yapılabileceği görüşünü tartışmaya açmıştır.\",[\"Bütün dünyada önce aynı inancın ortaya çıktığının kanıtlandığı.\",\"Göbeklitepe’de yaşamın her ayrıntısının artık kesin bilindiği.\",\"Tarım ile ortak çalışma arasında hiçbir ilişki bulunamayacağı.\",\"Toplumsal değişim için her yerde zorunlu tek bir sıra kabul edilmemelidir.\",\"Bütün erken yerleşimlerde aynı tarihlerde aynı yapıların yapıldığı.\"],3,\"Bulgu, “her yerde mutlaka önce tarım devleti” iddiasına karşı örnek oluşturabilir. Buradan bütün insanlığın ters sırayı izlediği veya alanın bütün işlevlerinin kesinleştiği çıkmaz. Arkeolojik yorumun kanıt ve belirsizlik sınırı korunmalıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Evrensel bir gelişme sırası, bütün toplumların mutlaka aynı basamakları aynı sırada izlemesini ileri sürer. Bu zorunluluğa uymayan bir bulgu, sıranın her yer için geçerli sayılmasını sınırlar.",
+        "Göbeklitepe’nin erken ortak ve anıtsal yapıları, toplumsal iş birliğiyle yerleşme ve üretim değişimlerinin tek bir katı sıraya indirgenmemesi açısından incelenir. Alanın her işlevinin kesinleştiği veya bütün toplumların ters sırayı izlediği sonucu bundan ayrı iddialardır."
+      ],
+      "strategy": "Önce tartışmaya açılan zorunlu sırayı belirle; bulgunun bu iddiayı ne kadar sınırladığını, neyi kanıtlamadığını ayır.",
+      "steps": [
+        "Eleştirilen görüşü “her toplumda önce tam gelişmiş tarım devleti, ancak sonra büyük ortak yapı” biçiminde açıklaştır.",
+        "Erken ortak anıtsal yapı bulgusunun bu her-yerde-zorunluluk iddiasını tartışmaya açtığını belirle; bütün toplumların yeni bir sırayı izlediğinin verilmediğini koru.",
+        "Tek zorunlu sıra kabulünü sınırlayan yargıyı ara. Bütün inançları, bütün yerleşimleri veya alanın her ayrıntısını kesinleştiren seçenekleri bu bulgunun kapsamıyla karşılaştır."
+      ],
+      "optionReasons": [
+        "Erken ortak yapı bulgusu bütün dünyada tek ve aynı inancın önce ortaya çıktığını kanıtlamaz; inanç birliği hakkında evrensel veri yoktur.",
+        "Bir bulgunun gelişme sırasını tartışmaya açması Göbeklitepe’deki hayatın her ayrıntısının kesin bilindiği anlamına gelmez.",
+        "Katı bir zorunlu sıra eleştirilebilirken tarım ve ortak çalışma arasında hiçbir ilişki bulunamayacağını söylemek ayrı ve aşırı bir genellemedir.",
+        "Bulgu, toplumsal değişimin her yerde tek zorunlu sıra izlediğinin kabul edilmemesi gerektiği sonucuna uygundur; kanıtın sınırladığı iddiayı korur.",
+        "Bütün erken yerleşimlerin aynı tarihte aynı yapıları yaptığı verilmemiştir; tek alan bulgusu bu eşzamanlılığı genelleştirmez."
+      ],
+      "commonError": "Bir zorunlu sıraya karşı örneği bütün toplumlar için yeni bir zorunlu sıra veya bütün ilişkilerin yokluğu olarak sunmak.",
+      "check": "Cevabın “her yerde mutlaka” iddiasını sınırlandırırken yeni bir “bütün dünyada kesinlikle” iddiası ekliyor mu? Eklememesi gerekir."
+    }
+  },
+  {
+    "id": "f013-foundation-insanligin-ilk-donemleri-6",
+    "identity": "[\"f013-foundation-insanligin-ilk-donemleri-6\",\"Bu kayıtların işlevi için hangi açıklama en uygundur?\",\"Bir Sümer yerleşiminde teslim edilen tahıl miktarını, borcu ve ürün paylarını kaydeden tabletler bulunuyor.\",[\"Yazının yalnız şiir yazmak için kullanıldığını göstermesi.\",\"Ekonomik ve idari bilgiyi kişisel hafızanın dışında izlemeyi kolaylaştırması.\",\"Kayıt yapılan toplumda hiçbir anlaşmazlık kalmadığını göstermesi.\",\"Her ürünün herkese aynı miktarda dağıtıldığını kesinleştirmesi.\",\"Bütün komşu toplumların aynı gün yazıya geçtiğini göstermesi.\"],1,\"Miktar ve borç kayıtları, hesapların daha uzun süre saklanmasını ve denetlenmesini kolaylaştırır. Yazı burada ekonomik-idari ihtiyaçlarla bağlantılıdır. Kaydın bulunması işlemin adil olduğunu veya toplumdaki bütün sorunların çözüldüğünü tek başına kanıtlamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yazılı kayıt, miktar, borç ve pay bilgilerini kişisel hafızanın dışında saklamayı ve daha sonra karşılaştırmayı sağlar. Böylece hesap ve yönetim işlemleri daha uzun süre izlenebilir.",
+        "Bir işlemin kaydedilmesi, adil yapıldığı, herkese eşit pay verildiği veya bütün anlaşmazlıkların sona erdiği anlamına gelmez. Kaydın işlevi ile kaydedilen düzenin değerlendirilmesi ayrı sorulardır."
+      ],
+      "strategy": "Tabletlerin hangi somut bilgileri tuttuğunu listele; bu bilgilerin saklanmasının sağladığı işlevi, toplumsal düzen hakkında ek iddialardan ayır.",
+      "steps": [
+        "Tabletlerde tahıl miktarı, borç ve ürün paylarının yazıldığını üç veri olarak belirle.",
+        "Bu verilerin teslim, hesap ve yükümlülüklerin sonradan izlenmesini nasıl kolaylaştırdığını kur; aynı bilgileri yalnız kişinin hatırlamasına bırakmakla karşılaştır.",
+        "Bu ekonomik-idari kayıt işlevini anlatan seçeneği seç. Eşit dağıtım, bütün sorunların çözümü veya komşuların aynı gün yazıya geçişi için ayrıca kanıt bulunmadığını denetle."
+      ],
+      "optionReasons": [
+        "Verilen tabletler tahıl, borç ve pay hesabını içeriyor; yazının yalnız şiir için kullanıldığını söylemek somut kayıtların içeriğiyle uyuşmaz.",
+        "Miktar ve borç bilgilerinin yazılması, ekonomik-idari hesapları kişisel hafızanın dışında izlemeyi kolaylaştırır; kayıtların verilen işlevi budur.",
+        "Kayıt tutulması toplumda hiçbir anlaşmazlık kalmadığını göstermez; kayıtlar anlaşmazlıkların incelenmesinde de kullanılabilir.",
+        "Payların yazılması payların herkes için aynı olduğunu kanıtlamaz; eşit miktar bilgisi verilmemiştir.",
+        "Bir Sümer yerleşimindeki tabletler bütün komşu toplumların yazıya aynı gün geçtiğini göstermez; yer ve zaman kapsamı genişletilmiştir."
+      ],
+      "commonError": "Kayıt bulunmasını işlemin adil, eşit ve sorunsuz oluşunun kanıtı sanmak; burada sorulan kayıt işlevini bırakmak.",
+      "check": "Cevabını tablette yazan üç veriyle gerekçelendir: miktar, borç ve pay. Bu veriler hangi işi izlenebilir kılıyor, hangi dağıtım adaletini ise tek başına bildirmiyor?"
+    }
+  },
+  {
+    "id": "f013-foundation-insanligin-ilk-donemleri-7",
+    "identity": "[\"f013-foundation-insanligin-ilk-donemleri-7\",\"Bu örnek ticaretin hangi ek etkisine kanıt sağlar?\",\"Anadolu’daki bir Asur ticaret yerleşiminde ürün teslimi ve borçla ilgili çivi yazılı tabletler ele geçiyor. Tabletler farklı bölgelerden gelen tüccarların ilişkilerini de gösteriyor.\",[\"Ticaretin başlaması için her zaman madeni para gerektiğine.\",\"Tabletlerin bulunduğu her kentin Asurların başkenti olduğuna.\",\"Anadolu halklarının o tarihte aynı anda tek dile geçtiğine.\",\"Bütün ticari anlaşmaların sözlü yapıldığına.\",\"Yazı ve kayıt uygulamalarının toplumlar arasında taşınabilmesine.\"],4,\"Tüccarların hesap tutma ve sözleşme uygulamaları kültürel aktarımın da aracıdır. Çivi yazılı ticari belgeler, mal ile kayıt tekniğinin bağlantısını gösterir. Ancak bu, herkesin tek dili benimsediği veya tablet bulunan her yerin başkent olduğu anlamına gelmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ticaret, mallarla birlikte hesap tutma, sözleşme ve yazı uygulamalarının da taşınmasına aracılık edebilir. Asur ticaret yerleşimlerindeki çivi yazılı tabletler bu ekonomik ve kültürel ilişkiyi araştırmada kullanılır.",
+        "Bir kayıt tekniğinin aktarılması bütün nüfusun aynı dili benimsediği veya yerleşmenin ticari merkezin başkenti olduğu anlamına gelmez. Mal, teknik, dil ve siyasi merkez farklı inceleme alanlarıdır."
+      ],
+      "strategy": "Mal teslimine eşlik eden kayıt tekniğini belirle; bunun aktarımıyla ilgisiz para, başkent ve tek dil iddialarını ayır.",
+      "steps": [
+        "Pasajdaki somut faaliyeti ürün teslimi ve borç kaydı, kullanılan tekniği çivi yazılı tablet olarak ayır.",
+        "Farklı bölgelerden tüccarların ilişkilerinin aynı tabletlerde görünmesini, mal dolaşımı yanında hesap ve kayıt uygulamalarının taşınmasıyla ilişkilendir.",
+        "Bu teknik-kültürel aktarımı ifade eden yargıyı koru. Madeni parayı zorunlu şart yapan, her kenti başkent sayan veya bütün nüfusu tek dile taşıyan genellemeleri ele."
+      ],
+      "optionReasons": [
+        "Ürün ve borç kaydı ticari ilişkiyi gösterir; ticaretin başlaması için her zaman madeni para gerektiği pasajda yoktur.",
+        "Tablet bulunan ticaret yerleşiminin Asurların başkenti olduğu çıkarılamaz; ticari yerleşim ve siyasi başkent aynı sınıf değildir.",
+        "Kayıt tekniğinin kullanılması bütün Anadolu halklarının aynı anda tek dile geçtiğini göstermez; teknik aktarımı dil birliğine dönüştürülmüştür.",
+        "Çivi yazılı borç ve teslim tabletleri açıkça verildiği için bütün anlaşmaların sözlü olduğu ifadesi somut yazılı kayıtla uyuşmaz.",
+        "Farklı bölgelerden tüccarların çivi yazılı hesap ve borç kayıtları, ticaretle yazı ve kayıt uygulamalarının taşınabilmesini destekler."
+      ],
+      "commonError": "Yazı tekniğinin taşınmasını herkesin tek dili veya tek siyasi merkezi benimsemesiyle eşitlemek.",
+      "check": "Cevabında taşındığını söylediğin şeyi tabletle gösterebiliyor musun? Yazı ve kayıt uygulaması somut veridir; para zorunluluğu veya tek dil ise verilmemiştir."
+    }
+  },
+  {
+    "id": "f013-foundation-insanligin-ilk-donemleri-8",
+    "identity": "[\"f013-foundation-insanligin-ilk-donemleri-8\",\"Kart hangi Anadolu uygarlığıyla ilişkilendirilmelidir?\",\"Bir müze kartında Hattuşa, krallık yıllıkları olan anallar ve Pankuş meclisi birlikte anılıyor.\",[\"Urartular.\",\"Lidyalılar.\",\"Hititler.\",\"Frigler.\",\"İyonlar.\"],2,\"Hattuşa, anallar ve Pankuş birlikte Hitit bağlamını verir. Urartular Tuşpa ve su yapılarıyla, Lidyalılar Sardes ve para kullanımıyla ayırt edilir. Pankuş’un varlığı ise modern anlamda bütün halkın eşit oyla yönetime katıldığını göstermez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hititler Hattuşa merkezi, anallar denen krallık yıllıkları ve Pankuş meclisiyle birlikte öğrenilir. Merkez, kayıt türü ve kurumun bir arada verilmesi tek bir genel özellikten daha ayırıcıdır.",
+        "Urartu için Tuşpa ve su yapıları; Lidya için Sardes ve sikke-ticaret; Frigler için Gordion ve tarım; İyonlar için Ege polisleri ve denizcilik-düşünce ortamı öğretim bağlantılarıdır. Ortak bir faaliyet bütün toplumları aynı aday yapmaz."
+      ],
+      "strategy": "Karttaki merkezi ve iki kurumu tek bir küme olarak eşleştir; yalnız meclis veya yazı gibi genel bir özellik üzerinden karar verme.",
+      "steps": [
+        "Üç açık ipucunu ayrı yaz: Hattuşa, krallık yıllıkları/anallar ve Pankuş.",
+        "Merkez adını kurumlarla birlikte karşılaştır. Tuşpa ve Sardes gibi başka merkezlerin kartta verilmediğini dikkate al.",
+        "Üç ipucunun birlikte uyuştuğu uygarlığı belirle. Meclis bulunduğundan modern genel oy veya bütün uygarlıkların aynı yönetimi gibi ek sonuçlara geçme."
+      ],
+      "optionReasons": [
+        "Urartular Tuşpa ve su yapılarıyla ilişkilidir; Hattuşa-anallar-Pankuş kümesini karşılamaz.",
+        "Lidyalılar Sardes, sikke ve ticaret bağlamıyla ayırt edilir; verilen merkez ve kurum kümesi bu değildir.",
+        "Hattuşa, anallar ve Pankuş birlikte Hitit bağlamını verir; kartın üç ipucu da bu eşleşmeye uyar.",
+        "Friglerin öğretim bağlantıları Gordion ve tarım-hayvancılık çevresindedir; Hattuşa ve Pankuş kümesi Frig eşleştirmesi değildir.",
+        "İyonlar farklı Ege polisleriyle ilişkilidir; verilen Hattuşa ve Hitit kurumları onların tek merkez ve kurum kümesi olarak gösterilemez."
+      ],
+      "commonError": "Meclis veya kayıt gibi ortak görülebilen tek kelimeyi seçip Hattuşa merkezini gözden kaçırmak.",
+      "check": "Seçtiğin uygarlığı üç sütunda denetle: merkez, yıllıklar ve meclis. Üçü de aynı adayla uyuşmalı; meclisten modern eşit oy sonucu eklenmemeli."
+    }
+  },
+  {
+    "id": "f013-foundation-insanligin-ilk-donemleri-9",
+    "identity": "[\"f013-foundation-insanligin-ilk-donemleri-9\",\"K ve L hangi eşleştirmeyle doğru tamamlanır?\",\"K kartında Tuşpa çevresindeki su kanalları ve madencilik, L kartında Sardes çevresindeki para kullanımı ve ticaret anlatılıyor.\",[\"K: Urartular; L: Lidyalılar.\",\"K: Lidyalılar; L: Urartular.\",\"K: İyonlar; L: Hititler.\",\"K: Sümerler; L: Frigler.\",\"K: Frigler; L: Asurlar.\"],0,\"Tuşpa ve gelişmiş su yapıları Urartu, Sardes ve sikke-ticaret ilişkisi Lidya bağlamındadır. Bir toplumla güçlü bağ kuran özellik, o faaliyetin yalnız o toplumda bulunduğu anlamına gelmez. Bu soruda belirleyici olan özelliklerin merkezlerle birlikte verilmesidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tuşpa merkezli Urartu bağlamında su kanalları ve madencilik; Sardes merkezli Lidya bağlamında sikke kullanımı ve ticaret birlikte ele alınır.",
+        "Su yapısı veya ticaret tek başına yalnız bir topluma özgü değildir. Bu soruda siyasi merkez ile faaliyet kümesinin birlikte verilmesi adayları ayırmayı sağlar; K ve L iki ayrı karttır."
+      ],
+      "strategy": "Önce her kartın merkezini kendi faaliyetleriyle eşleştir; sonra iki eşleşmeyi kart adlarını değiştirmeden seçeneklerde kontrol et.",
+      "steps": [
+        "K kartında Tuşpa, su kanalları ve madenciliği; L kartında Sardes, para kullanımı ve ticareti iki ayrı kümeye yaz.",
+        "Tuşpa merkezini Urartu, Sardes merkezini Lidya bağlamıyla ilişkilendir; ortak bir faaliyet olabilen ticareti tek belirleyici sayma.",
+        "K ve L adlarını koruyarak iki uygarlığı aynı sırada seçeneğe yerleştir. Doğru iki adı ters kartlara veren seçeneği de ele."
+      ],
+      "optionReasons": [
+        "K’de Tuşpa ve su yapıları Urartu; L’de Sardes, para ve ticaret Lidya ile uyuşur. İki kart doğru sırada tamamlanır.",
+        "Urartu ve Lidya adları verilmiş olsa da kartlara ters yerleştirilmiştir: Tuşpa Lidya, Sardes Urartu merkezi değildir.",
+        "İyonların Ege polisleri ve Hititlerin Hattuşa bağlamı, K’nin Tuşpa ve L’nin Sardes merkezleriyle uyuşmaz.",
+        "Sümerler Mezopotamya şehirleri, Frigler Gordion bağlamındadır; iki merkez de kartların verdiği Tuşpa-Sardes eşleşmesini karşılamaz.",
+        "Frigler için Gordion, Asurlar için başka Mezopotamya ve ticaret bağlamları düşünülür; K’nin Tuşpa ve L’nin Sardes merkezleri bu eşleşmeye uymaz."
+      ],
+      "commonError": "İki uygarlığın adını hatırlayıp K-L sırasını ters vermek veya ticaret görülen her kartı aynı topluma bağlamak.",
+      "check": "K için merkez ve faaliyet çiftini, L için merkez ve faaliyet çiftini ayrı geri oku; yalnız bir kartın doğru olması bütün seçeneği doğrulamaz."
+    }
+  },
+  {
+    "id": "f013-foundation-insanligin-ilk-donemleri-10",
+    "identity": "[\"f013-foundation-insanligin-ilk-donemleri-10\",\"Bu metin için hangi sonuç doğrudan desteklenir?\",\"Bir eski hukuk derlemesinde aynı yaralama eylemi için mağdurun toplumsal statüsüne göre farklı cezalar yazılıdır.\",[\"Yazılı hukukta toplumsal statünün hiçbir etkisinin olmadığı.\",\"Bütün cezaların yalnız para ödemesinden oluştuğu.\",\"Derlemenin bulunmasının her hükmün her olayda aynı uygulandığını kanıtladığı.\",\"Kuralların yazılı olması, herkesin aynı hukuki konumda olduğunu göstermez.\",\"Toplumda hiçbir yönetim veya yaptırımın bulunmadığı.\"],3,\"Metin açıkça aynı eylem için statüye bağlı farklı ceza öngörüyor. Dolayısıyla yazılılık ile hukuki eşitlik aynı özellik değildir. Ayrıca bir kuralın metinde yer alması, günlük hayattaki bütün uygulamalarını tek başına göstermeye yetmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir hukuk kuralının yazılı olması, onun kaydedilme biçimini anlatır. Hukuki eşitlik ise aynı ilgili koşullarda kişilerin statüye göre farklı muamele görüp görmemesiyle ilgilidir; iki özellik aynı değildir.",
+        "Hukuk derlemesi hangi cezanın öngörüldüğüne veri sağlar. Metinde kural bulunması, her gerçek olayda o hükmün aynen uygulandığını tek başına göstermez; uygulama kayıtları ayrıca incelenir."
+      ],
+      "strategy": "Karşılaştırmada sabit tutulan eylemi ve değişen ceza koşulunu bul; yazılılıkla statüye bağlı muameleyi ayrı değerlendir.",
+      "steps": [
+        "Pasajın aynı yaralama eylemini karşılaştırdığını belirle; burada değişen veri mağdurun toplumsal statüsüdür.",
+        "Statüye göre cezanın farklı yazıldığını işaretle. Böylece metnin yazılı olmasıyla kişilerin aynı hukuki konumda olması arasındaki farkı kur.",
+        "Bu farkı ifade eden yargıyı seç. Para cezası türü, bütün uygulamaların aynılığı veya hiçbir yaptırım bulunmadığı gibi pasajda verilmeyen sonuçları ele."
+      ],
+      "optionReasons": [
+        "Pasaj cezanın toplumsal statüye göre değiştiğini açıkça verir; statünün hiç etkisi olmadığını söylemek bu bilgiyle çelişir.",
+        "Cezaların türünün yalnız para olduğu belirtilmiyor; farklı ceza bilgisinden bütün yaptırımların parasal olduğu çıkarılamaz.",
+        "Derleme kuralın metinde öngörüldüğünü gösterir; her gerçek olayda aynı biçimde uygulandığının kanıtı tek başına değildir.",
+        "Aynı eylem için statüye bağlı farklı cezalar, yazılı kuralların herkese aynı hukuki konumu garanti etmediğini doğrudan gösterir.",
+        "Pasajda cezalar içeren bir hukuk derlemesi bulunduğu için hiçbir yaptırım olmadığı söylenemez; yönetim yokluğu da verilmemiştir."
+      ],
+      "commonError": "Yazılı hukuk bulunmasını otomatik hukuki eşitlik veya her olayda kusursuz aynı uygulama saymak.",
+      "check": "Aynı eylemi sabit tutup statü değişince cezanın da değiştiğini geri kontrol et. Cevabın hem bu farkı hem metin-uygulama ayrımını korumalı."
+    }
+  }
+]

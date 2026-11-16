@@ -79,7 +79,7 @@ async function openFromCourses(page: Page, lesson: LessonCase) {
   await page
     .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
     .fill(lesson.title);
-  await page.locator(".ready-topic").filter({ hasText: lesson.title }).click();
+  await page.locator(`.ready-topic[data-lesson-id="${lesson.id}"]`).click();
   await expect(page.locator(".study-title h1")).toHaveText(lesson.title);
   await expect(page.locator(lesson.lab)).toBeVisible();
   await expect(page.locator(".guide-section")).not.toHaveCount(0);

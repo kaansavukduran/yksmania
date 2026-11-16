@@ -755,7 +755,7 @@ export default function Forge026ChemistryLab({
       <h3>Çekirdeği, elektronu ve örneği ayrı izle</h3>
       <p>
         Bir koşulu değiştir; önce bir sonuç ve kısa gerekçe yaz, sonra sayısal
-        modelle kıyasla. Bu keşif puan veya tamamlanma kaydı üretmez.
+        modelle kıyasla. Bu keşif puan veya konu bitirme kaydı üretmez.
       </p>
       <div className="c026-controls">
         <Select

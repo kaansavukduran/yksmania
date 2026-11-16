@@ -425,7 +425,7 @@ try {
     await page
       .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
       .fill(unit.title);
-    await page.locator(".ready-topic").filter({ hasText: unit.title }).click();
+    await page.locator(`.ready-topic[data-lesson-id="${unit.id}"]`).click();
     const lab = page.locator(unit.selector || `[data-forge011="${unit.id}"]`);
     await expect(lab).toBeVisible();
     const model = lab.locator(unit.model || "svg").first();
@@ -637,7 +637,7 @@ try {
     await page
       .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
       .fill(item.title);
-    const entry = page.locator(".ready-topic").filter({ hasText: item.title });
+    const entry = page.locator(`.ready-topic[data-lesson-id="${item.id}"]`);
     await expect(entry).toHaveCount(1);
     // Use the same in-app confirmation as learners on every platform. Opening
     // it must not alter the durable partial draft before explicit approval.

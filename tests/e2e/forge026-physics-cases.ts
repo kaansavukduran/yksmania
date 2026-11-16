@@ -112,7 +112,7 @@ export const physics026Cases = [
       for (const [label, value] of [
         ["İlk dünya hızı (m/s)", 6],
         ["Gözlemci hızı u (m/s)", 0],
-        ["İlk dünya konumu (m)", 0],
+        ["İlk dünya konumu (m)", 1],
         ["1. evre süresi (s)", 4],
         ["1. evre ivmesi (m/s²)", -2],
         ["2. evre süresi (s)", 2],
@@ -132,14 +132,14 @@ export const physics026Cases = [
       const result = lab.locator("[data-model-result]");
       await expect(result).toHaveAttribute("data-displacement", "4");
       await expect(result).toHaveAttribute("data-total-distance", "14");
-      await expect(result).toHaveAttribute("data-current-x", "9");
+      await expect(result).toHaveAttribute("data-current-x", "10");
       await expect(result).toHaveAttribute("data-current-v", "0");
       expect(
         Number(await result.getAttribute("data-average-speed")),
       ).toBeCloseTo(7 / 3, 12);
       await expect(
         lab.locator('[data-motion-point="position"]'),
-      ).toHaveAttribute("data-value", "9");
+      ).toHaveAttribute("data-value", "10");
       await expect(
         lab.locator('[data-motion-point="position"]'),
       ).toHaveAttribute("data-time", "3");

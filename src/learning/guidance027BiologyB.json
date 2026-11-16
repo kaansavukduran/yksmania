@@ -1,0 +1,482 @@
+[
+  {
+    "id": "f012-foundation-karbohidratlar-1",
+    "identity": "[\"f012-foundation-karbohidratlar-1\",\"İki maltoz ve bir laktoz molekülü tamamen hidroliz ediliyor. Maltoz iki glikozdan; laktoz bir glikoz ve bir galaktozdan oluşur. Sonuç hangi seçenektir?\",\"\",[\"5 glikoz ve 1 galaktoz\",\"4 glikoz ve 2 galaktoz\",\"3 glikoz ve 3 galaktoz\",\"6 glikoz\",\"2 glikoz ve 1 galaktoz\"],0,\"İki maltozdan 2×2=4 glikoz, bir laktozdan 1 glikoz ve 1 galaktoz çıkar; toplam 5 glikoz+1 galaktozdur. Üç disakkaritin her birinde bir bağ hidroliz edildiğinden üç su kullanılır. Birim sayısını molekül türünden ayrı say.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tam hidroliz, disakkaritin glikozit bağını su kullanarak ayırır. Maltoz iki glikoz; laktoz bir glikoz ve bir galaktoz verir. Bir molekülün hangi türlerden yapıldığıyla bu molekülden kaç adet bulunduğu ayrı bilgilerdir."
+      ],
+      "strategy": "Her başlangıç türü için molekül adediyle bir molekülden çıkan ürünleri çarp; ürünleri adlarına göre ayrı sütunlarda topla ve toplam serbest birimi başlangıç birimleriyle karşılaştır.",
+      "steps": [
+        "İki maltozun her biri iki glikoz verdiğinden maltoz sütununa 2×2=4 glikoz yazılır; bu sütundan galaktoz çıkmaz.",
+        "Bir laktozdan 1 glikoz ve 1 galaktoz çıkar. Glikoz toplamı 4+1=5, galaktoz toplamı 1 olur.",
+        "Sonuç 5 glikoz ve 1 galaktozdur. Üç disakkaritte toplam altı şeker birimi bulunduğu için 5+1=6 toplamı başlangıçla uyuşur."
+      ],
+      "optionReasons": [
+        "Doğru. İki maltoz 4 glikoz, bir laktoz ek 1 glikoz ve 1 galaktoz verir; toplam 5 glikoz ve 1 galaktozdur.",
+        "4 glikoz maltozlardan gelir; fakat tek laktoz yalnız 1 galaktoz verir. Bu seçenek laktozun glikozunu eksiltip galaktozu fazlalaştırır.",
+        "3 galaktoz için üç galaktoz birimi gerekirdi; başlangıçtaki tek laktozda yalnız 1 galaktoz vardır. Ürün türleri molekül sayısıyla karıştırılmıştır.",
+        "Toplam altı şeker birimi doğrudur; ancak laktozdaki galaktoz hidrolizle glikoza dönüşmüş sayılmaz. Ürünlerin hepsi glikoz değildir.",
+        "Bu toplam üç birim eder; kartta tek değil üç disakkarit tamamen hidroliz edildiğinden toplam altı serbest şeker birimi çıkmalıdır."
+      ],
+      "commonError": "Disakkarit molekül adedini ürün birimi adediyle eşitlemek veya bütün hidroliz ürünlerini türlerini korumadan glikoz saymak.",
+      "check": "İki maltozda dört, bir laktozda iki birim vardır. Altı ürünün biri galaktoz olduğundan kalan beşin glikoz olması hem tür hem toplam sayımını doğrular."
+    }
+  },
+  {
+    "id": "f012-foundation-karbohidratlar-2",
+    "identity": "[\"f012-foundation-karbohidratlar-2\",\"Toplam 12 monosakkarit, birbirinden ayrı üç halkasız zincir hâlinde bağlanıyor. Çapraz veya halka bağı yok. Toplam glikozit bağı ve TYT dehidrasyon sayımında açığa çıkan su kaçtır?\",\"\",[\"11 bağ ve 11 su\",\"9 bağ ve 9 su\",\"12 bağ ve 12 su\",\"3 bağ ve 3 su\",\"9 bağ ve 12 su\"],1,\"Her ayrı halkasız zincirin bağ sayısı kendi birim sayısından bir eksiktir. Bütün zincirlerde toplam B=N−k=12−3=9 bulunur; bir bağ başına bir su kabul edilen TYT sayımında 9 su açığa çıkar. Tek zincir için 11 kuralı burada geçmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Halkasız bir bağlı zincirde her birim dışındaki bağlantı sayısı bir eksiktir. Toplam N birim k ayrı halkasız zincir oluşturduğunda glikozit bağı N−k olur. Kartta belirtilen net dehidrasyon sayımında her yeni bağ için bir su açığa çıkışı sayılır."
+      ],
+      "strategy": "Tek zincir kuralını bütün örneğe doğrudan uygulama; her ayrı zincirin bir eksik bağ içerdiğini toplam birim ve son zincir adediyle ifade et, sonra bağ–su ilişkisini kullan.",
+      "steps": [
+        "Son durumda tek değil üç ayrı halkasız zincir vardır. Her zincirin bağ sayısı kendi birim sayısından bir eksik olacağından toplamdan üç eksik alınır.",
+        "Toplam glikozit bağı 12−3=9’dur. Çapraz veya halka bağı olmadığı açıkça verildiği için ek bir bağlantı sayılmaz.",
+        "Kartın TYT dehidrasyon modelinde yeni bağ başına bir su çıkar; dolayısıyla 9 bağ ve 9 su bulunur. Zincirlere birimlerin nasıl dağıldığını uydurmak gerekmez."
+      ],
+      "optionReasons": [
+        "11=12−1 tek halkasız zincirin bağ sayısıdır. Burada son yapı üç ayrı zincir olduğundan iki fazladan bağ eklenmiş olur.",
+        "Doğru. Üç ayrı halkasız zincirde toplam bağ 12−3=9, ilan edilen dehidrasyon sayımında çıkan su da 9’dur.",
+        "12 bağı saymak her birime bir bağ atamaktır. Zincir uçları nedeniyle üç ayrı açık yapının bağlantı toplamı birim adedine eşit değildir.",
+        "3, zincir adedidir; bu adet toplam glikozit bağı değildir. Birden fazla birim taşıyan zincirlerin iç bağlarını da saymak gerekir.",
+        "Bağ sayısı 9 doğru bulunmuş olsa da suyu toplam birim sayısı 12’ye eşitlemek yanlıştır; su her birime değil yeni kurulan her bağa göre sayılır."
+      ],
+      "commonError": "Üç ayrı zinciri tek yapıymış gibi n−1 ile saymak veya suyu bağ sayısından bağımsız olarak toplam monosakkarit adedine eşitlemek.",
+      "check": "Örneğin üçer değil dörder birimli üç zincir seçersen her birinde 3 bağ olur; 3+3+3=9. Bu örnek genel 12−3 hesabını doğrular, dağılımın zorunlu olduğunu söylemez."
+    }
+  },
+  {
+    "id": "f012-foundation-karbohidratlar-3",
+    "identity": "[\"f012-foundation-karbohidratlar-3\",\"Nişasta ve selülozun ikisi de glikoz türevli birimlerden oluştuğu hâlde insanın sindirim enzimleri nişastayı parçalayabilir, selülozu parçalayamaz. En uygun açıklama hangisidir?\",\"\",[\"Aynı monomerden oluşan her polimer aynı yapıdadır.\",\"Selülozda hiç kovalent bağ yoktur.\",\"Birimlerin bağlanma düzeni ve enzimin bağa özgüllüğü farklıdır.\",\"Nişasta zorunlu bir proteindir.\",\"Sindirim yalnız polimerin adındaki harflere bağlıdır.\"],2,\"Ortak glikoz birimi bütün polimerlerin bağ düzenini aynı yapmaz. Bağların geometrisi ve enzimin ilgili bağa etkisi sindirilebilirliği belirler. İnsanın kendi enzimleriyle selülozu sindirememesi, selülozun yapısal veya lif işlevlerinin olmadığı anlamına gelmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir polimerin özelliklerini yalnız monomer adı değil, monomerlerin bağlanma düzeni de etkiler. Nişasta ve selüloz glikoz temellidir; bağlarının düzeni farklıdır. Enzimlerin belirli bağlantılara etki etmesi, aynı monomerli iki yapının farklı sindirilebilmesini açıklar."
+      ],
+      "strategy": "Ortak monomer bilgisini sabit tutup değişebilen yapı düzeyini ara; enzimin adından veya polimerin yazılışından değil bağa uygunluğundan sindirim farkını açıklayan seçeneği seç.",
+      "steps": [
+        "Kart iki polimerin de glikoz türevli birimler taşıdığını verir; bu ortaklık tek başına bütün bağların aynı olduğunu söylemez.",
+        "Nişasta ve selülozdaki bağ düzeni farklıdır. İnsanın nişastayı parçalayabilen kendi enzimleri, selülozun ilgili bağlarına aynı biçimde etki edemez.",
+        "Sindirim farkı, birimlerin bağlanma düzeni ve enzim özgüllüğüyle açıklanır. Selülozun sindirilememesi onun bağsız, yararsız veya protein olduğunu göstermez."
+      ],
+      "optionReasons": [
+        "Aynı monomerden farklı bağlantı ve üç boyutlu düzenler oluşturulabilir. Bu nedenle ortak glikoz birimi aynı polimer yapısını zorunlu kılmaz.",
+        "Selülozda şeker birimlerini tutan kovalent glikozit bağları vardır. Enzimin bunları parçalayamaması bağların bulunmadığı anlamına gelmez.",
+        "Doğru. Bağ düzeni ile enzimin uygun bağa etki etmesi birlikte, ortak monomere rağmen farklı sindirim sonucunu açıklar.",
+        "Nişasta bir polisakkarittir; amino asitlerden oluşan protein değildir. Bu sınıf değişikliği verilen ortak şeker birimiyle de çelişir.",
+        "Molekülün adındaki harfler enzimin etki ettiği kimyasal bağ değildir. Belirleyici ilişki moleküler düzen ve enzim özgüllüğüdür."
+      ],
+      "commonError": "Bütün glikoz polimerlerinin bağ düzenini aynı sanmak ve birini parçalayan enzimin diğerini de mutlaka parçalayacağını varsaymak.",
+      "check": "Açıklaman hem “ortak glikoz birimi” hem “farklı sindirim” bilgisini birlikte korumalıdır. Bağ düzeni ve özgüllük bunu sağlar; ortak monomeri reddetmek gerekmez."
+    }
+  },
+  {
+    "id": "f012-foundation-karbohidratlar-4",
+    "identity": "[\"f012-foundation-karbohidratlar-4\",\"DNA, RNA ve ATP için pentoz eşleştirmesi hangi seçenekte doğrudur?\",\"\",[\"DNA ve RNA: deoksiriboz; ATP: glikoz\",\"DNA: riboz; RNA: deoksiriboz; ATP: fruktoz\",\"Üçünde de galaktoz\",\"DNA: deoksiriboz; RNA ve ATP: riboz\",\"DNA: glikoz; RNA ve ATP: laktoz\"],3,\"DNA nükleotitlerinde deoksiriboz, RNA nükleotitleri ve ATP’nin adenosin bölümünde riboz bulunur. Bu şekerler beş karbonludur; glikoz, fruktoz ve galaktoz ise altı karbonlu örneklerdir. Şekerin varlığı bütün yapının yalnız yakıt olduğunu göstermez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Pentoz beş karbonlu şekerdir. DNA nükleotitlerinde deoksiriboz, RNA nükleotitlerinde ve ATP’nin adenosin bölümünde riboz bulunur. Deoksiribozun ribozdan bir oksijen eksiği olması karbon sayısının dört olduğu anlamına gelmez."
+      ],
+      "strategy": "DNA, RNA ve ATP için üç ayrı şeker kutusu aç; önce DNA’daki şeker ayrımını yap, sonra RNA ile ATP’nin ortak pentozunu yerleştirerek seçeneğin her bölümünü doğrula.",
+      "steps": [
+        "DNA’nın şekerini deoksiriboz olarak yaz. Bu bir pentozdur; glikoz veya disakkarit değildir.",
+        "RNA’da riboz bulunur. ATP’nin adenosin bölümünde de riboz yer alır; ATP’nin tamamı serbest bir şeker molekülü değildir.",
+        "Doğru eşleme DNA: deoksiriboz; RNA ve ATP: ribozdur. Şekerin yapıya katılması bu moleküllerin bütün görevlerini birbirine eşitlemez."
+      ],
+      "optionReasons": [
+        "RNA’nın şekeri ribozdur, deoksiriboz değildir. ATP’de de glikoz değil riboz bulunduğundan iki ayrı eşleştirme yanlıştır.",
+        "DNA ve RNA şekerleri ters yazılmış, ATP’ye de fruktoz atanmıştır. Üç yapı için de verilen eşleme yanlıştır.",
+        "Galaktoz altı karbonlu bir monosakkarit örneğidir; DNA, RNA ve ATP’nin burada sorulan pentozu değildir.",
+        "Doğru. DNA deoksiriboz taşır; RNA ile ATP’nin şeker bölümlerinde riboz bulunur.",
+        "Glikoz altı karbonlu tek şeker, laktoz ise iki şekerli bir moleküldür. Sorulan yapıların beş karbonlu şeker karşılıklarını vermezler."
+      ],
+      "commonError": "DNA ile RNA’nın şekerlerini ters eşleştirmek veya ATP enerji aktarımında görevli diye yapısındaki pentozun glikoz olması gerektiğini sanmak.",
+      "check": "Her üç karşılığın da beş karbonlu şeker olup olmadığını denetle; sonra DNA için deoksi ön ekini, RNA ve ATP için ortak riboz adını yeniden kontrol et."
+    }
+  },
+  {
+    "id": "f012-foundation-karbohidratlar-5",
+    "identity": "[\"f012-foundation-karbohidratlar-5\",\"Glikoz, fruktoz ve galaktozun kapalı formülü C₆H₁₂O₆ olarak veriliyor; molekül yapıları ve uzaysal düzenlenişleri farklı. Hangi çıkarım doğrudur?\",\"\",[\"Üç ad kesin aynı molekülü belirtir.\",\"Üçü de beş karbonludur.\",\"Üçünde de iki monosakkarit bağı vardır.\",\"Aynı kapalı formülde tüm biyolojik işlevler zorunlu aynıdır.\",\"Aynı atom sayıları moleküllerin aynı yapı ve enzim etkileşimine sahip olmasını zorunlu kılmaz.\"],4,\"Aynı molekül formülünün farklı molekül yapılarına karşılık gelmesi izomerlik bağlamında incelenir. Glikoz ve galaktozun farklılığı uzaysal düzenleniştedir; hepsini yalnız yapısal izomer sınıfına koymak doğru değildir. Kapalı formül tek başına açık yapı, enzimle etkileşim veya görev eşitliği kurmaz. Verilen formül altı karbon gösterir; üç molekül de bu bağlamda monosakkarit örneğidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kapalı formül bir moleküldeki elementlerin atom sayılarını verir; atomların hangi bağlarla ve hangi uzaysal düzende bulunduğunu bütünüyle göstermez. Aynı formüllü farklı moleküller izomerlik bağlamında incelenir; enzimlerle etkileşimleri aynı olmak zorunda değildir."
+      ],
+      "strategy": "Formülden doğrudan okunabilen atom sayılarıyla açık yapı veya işlev için gereken bilgileri ayır; kartta farklı olduğu belirtilen düzenleri formül eşitliği yüzünden yok sayma.",
+      "steps": [
+        "C₆H₁₂O₆ her molekülde 6 karbon, 12 hidrojen ve 6 oksijen olduğunu verir. Altı karbon, altı ayrı şeker birimi anlamına gelmez.",
+        "Kart molekül yapıları ve uzaysal düzenlerinin farklı olduğunu açıkça belirtir. Aynı atom toplamı bu farklılığı ortadan kaldırmaz.",
+        "Bu nedenle aynı formül aynı yapı ve aynı enzim etkileşimini zorunlu kılmaz. Üçünü aynı molekül veya bütün görevleri aynı yapı olarak görmek desteklenmez."
+      ],
+      "optionReasons": [
+        "Aynı formül, üç adın aynı molekülün eş anlamlı adları olduğunu kanıtlamaz. Kart molekül düzenlerinin farklı olduğunu zaten belirtir.",
+        "Formülde C₆ yazdığı için karbon sayısı altıdır. Beş karbonlu sınıflama, doğrudan verilen atom sayısıyla çelişir.",
+        "Bu üç örnek monosakkarit bağlamındadır. C₆H₁₂O₆ formülü iki monosakkarit arasında bağ kurulmuş olduğunu veya iki ayrı şeker birimini göstermez.",
+        "Biyolojik etkileşimler moleküler düzene de bağlıdır; aynı kapalı formülden bütün işlevlerin zorunlu eşitliği çıkarılamaz.",
+        "Doğru. Atom toplamları eşit olsa da bağlantı ve uzaysal düzen farklı olabilir; bu yüzden yapı ve enzim etkileşimi eşitliği zorunlu değildir."
+      ],
+      "commonError": "Kapalı formülü molekülün bütün bağlarını ve uzaysal yapısını gösteren bir çizim sanmak; atom sayısını şeker birimi sayısıyla karıştırmak.",
+      "check": "Seçtiğin sonuç, eşit atom sayılarıyla farklı yapı bilgisini aynı anda kabul etmeli. Birini korumak için kartın diğer açık bilgisini inkâr etmek gerekmemelidir."
+    }
+  },
+  {
+    "id": "f012-foundation-karbohidratlar-6",
+    "identity": "[\"f012-foundation-karbohidratlar-6\",\"İyot çözeltisinin nişasta varsa mavi renk verdiği biliniyor. Eşit başlangıçlı iki tüpte biri uygun nişasta hidroliz enzimiyle, diğeri enzimsiz tutuluyor. İlk tüpte mavi renk kaybolurken ikincide kalıyor. Hangi sonuç en uygundur?\",\"\",[\"İlk tüpte nişastanın parçalanmasıyla uyumlu veri vardır; bütün organik maddelerin yok olduğu söylenemez.\",\"İlk tüpte hiçbir şeker bulunamaz.\",\"İyot enzimsiz tüpte nişasta üretmiştir.\",\"Her iki tüpte de bütün proteinler yok olmuştur.\",\"Enzim nişastayı kesin selüloza dönüştürmüştür.\"],0,\"Ayıracın neyi gösterdiği kökte belirtilmiştir: mavi renk nişastayla ilişkilidir. Rengin kaybolması nişasta miktarının azalmasıyla uyumludur; daha küçük hidroliz ürünlerinin veya başka organik moleküllerin yokluğunu kanıtlamaz. Kontrol tüpü bu karşılaştırmayı anlamlı kılar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir ayıraç yalnız kendisi için belirtilen madde veya özellik hakkında kanıt verir. Burada mavi renk nişastayla ilişkilidir. Hidroliz büyük şeker yapısını daha küçük ürünlere ayırabilir; nişasta sinyalinin azalması bütün organik maddelerin yok olması değildir."
+      ],
+      "strategy": "Ayıracın neyi gösterdiğini önce sabitle; ardından enzimli tüpü kontrol tüpüyle karşılaştır. Renk değişimini yalnız izlenen madde kapsamında yorumlayıp ölçülmeyen ürün kimliğini ekleme.",
+      "steps": [
+        "Kart mavi rengin nişasta varlığıyla ilişkili olduğunu söyler. Kontrol tüpünde rengin kalması, iki tüpün enzim uygulaması yönünden karşılaştırılmasını destekler.",
+        "Uygun hidroliz enzimi bulunan tüpte mavi rengin kaybolması nişastanın parçalanmasıyla uyumludur; daha küçük ürünlerin ayrıca tanısı verilmemiştir.",
+        "Bu veri bütün organik maddelerin yokluğunu, hiç şeker kalmadığını veya selüloz üretildiğini göstermez. En dar desteklenen yorum nişasta parçalanmasıyla uyumdur."
+      ],
+      "optionReasons": [
+        "Doğru. Enzim uygulamasıyla nişasta göstergesinin kaybolması hidrolizle uyumludur; göstergenin kapsamını bütün organik moleküllere genişletmez.",
+        "Nişastanın hidrolizinden daha küçük şeker ürünleri çıkabilir. Nişasta göstergesinin kaybolması hiçbir şeker bulunmadığını kanıtlamaz.",
+        "Kontrolde mavi rengin bulunması başlangıç nişastasının korunmasıyla uyumludur; iyodun yeni nişasta ürettiğine dair veri yoktur.",
+        "Ayıraç bu kartta proteinleri değil nişastayı gösterir. İki tüpte bütün proteinlerin yok olduğu sonucu ölçümün kapsamı dışındadır.",
+        "Hidroliz enzimiyle nişastanın parçalanması, farklı bağ düzenli selülozun sentezlendiğini göstermez; bu dönüşüm kartta ölçülmemiştir."
+      ],
+      "commonError": "Bir maddeye özgü renk sinyalinin kaybolmasını bütün şekerlerin veya bütün organik maddelerin yok olduğu şeklinde yorumlamak.",
+      "check": "“Ayıraç neyi gösteriyor?” sorusuna yalnız nişasta yanıtını ver. Seçtiğin sonucun nişasta dışındaki ölçülmemiş moleküllere kesin yokluk ya da kimlik atamaması gerekir."
+    }
+  },
+  {
+    "id": "f012-foundation-karbohidratlar-7",
+    "identity": "[\"f012-foundation-karbohidratlar-7\",\"Nişasta içeren besinle beslenen bir insanın sindirim kanalı boşluğunda nişasta bulunuyor. Hangi yorum doğrudur?\",\"\",[\"İnsan hücreleri nişastayı zorunlu depo polisakkariti olarak sentezler.\",\"Besin kökenli nişastanın sindirim kanalında bulunması, insan hücrelerinin nişasta deposu yaptığı anlamına gelmez.\",\"Sindirim kanalı boşluğu ile hücre sitoplazması aynı bölmedir.\",\"Nişasta görülmesi kişinin bitki olduğunu gösterir.\",\"Besinle alınan bütün polimerler değişmeden hücre içine geçer.\"],1,\"Bir besinin bağırsak boşluğunda bulunması onun insan hücresinde sentezlendiği veya depolandığı kanıtı değildir. Hayvanlarda başlıca depo polisakkarit glikojendir; nişasta uygun sindirimle küçük ürünlere ayrılır. Bölme ve molekül kaynağı ayrı okunmalıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Besinin sindirim kanalı boşluğunda bulunması ile o molekülün insan hücresinde sentezlenmesi farklı durumlardır. Nişasta bitkisel depo polisakkariti olarak besinle alınabilir; hayvanlarda yaygın depo polisakkariti glikojendir. Sindirim ve hücre içine alım da aynı aşama değildir."
+      ],
+      "strategy": "Molekülün kaynağını ve bulunduğu bölmeyi iki ayrı bilgi olarak işaretle; besinle gelme gözlemini insan hücresindeki üretim veya depolama iddiasına dönüştürmeden değerlendir.",
+      "steps": [
+        "Nişastanın kaynağı kartta besin olarak verilmiştir. Bulunduğu yer de hücre sitoplazması değil sindirim kanalı boşluğudur.",
+        "Bağırsak boşluğunda görülen madde, insan hücrelerinin aynı molekülü sentezlediğini kanıtlamaz. Uygun sindirimle daha küçük ürünler oluşabilir.",
+        "Doğru yorum besin kökenli nişasta varlığını korur, bundan insanın nişasta deposu yaptığı sonucunu çıkarmaz. İnsan olmakla besinin bitkisel kökeni karıştırılmaz."
+      ],
+      "optionReasons": [
+        "İnsan hücrelerinde yaygın depo polisakkariti glikojendir. Bağırsak boşluğundaki nişasta, hücrelerin zorunlu olarak nişasta sentezlediğini göstermez.",
+        "Doğru. Molekülün besinle gelmesi ve sindirim kanalı boşluğunda bulunması, insan hücrelerinde nişasta depolandığının kanıtı değildir.",
+        "Sindirim kanalı boşluğu hücre zarıyla çevrili sitoplazma bölmesi değildir. Maddenin konumu bu iki ortamı özdeş yapmaz.",
+        "Bir kişinin sindirim kanalında bitkisel besin bulunması kişiyi bitki yapmaz. Besin molekülü kaynağı ile organizmanın sınıfı ayrı bilgilerdir.",
+        "Polimerlerin alınması ile hücreye değişmeden geçmesi aynı değildir. Sindirimle küçük ürünlere ayrılma gerekebilir; bütün polimerlerin değişmeden geçişi bu karttan çıkmaz."
+      ],
+      "commonError": "Bir molekül vücutta herhangi bir yerde bulunduğunda onu insan hücrelerinin ürettiği veya depo ettiği madde sanmak; bağırsak boşluğunu sitoplazmayla eşitlemek.",
+      "check": "Kaynak “besin”, bölme “sindirim kanalı boşluğu” olarak kalmalı. Seçeneğin bunları hücresel nişasta sentezi veya bitki olma iddiasına dönüştürmediğini denetle."
+    }
+  },
+  {
+    "id": "f012-foundation-karbohidratlar-8",
+    "identity": "[\"f012-foundation-karbohidratlar-8\",\"Bir polisakkarit mantar hücre duvarında veya eklembacaklı dış iskeletinde görev alıyor ve azot içeren değiştirilmiş şeker birimleri taşıyor. Hangi molekülle uyumludur?\",\"\",[\"Nişasta\",\"Glikojen\",\"Kitin\",\"Sakkaroz\",\"Deoksiriboz\"],2,\"Kitin yapısal bir polisakkarittir; mantar duvarı ve eklembacaklı dış iskeleti bağlamıyla uyumludur ve azot içerir. Nişasta/glikojen depo örnekleri, sakkaroz disakkarit, deoksiriboz monosakkarittir. “Bütün polisakkaritler yalnız C,H,O taşır” genellemesi burada bozulur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kitin, azot içeren değiştirilmiş şeker birimlerinden oluşan yapısal bir polisakkarittir; mantar hücre duvarı ve eklembacaklı dış iskeletiyle ilişkilidir. Nişasta ve glikojen depo polisakkaritleri, sakkaroz ikili şeker, deoksiriboz ise tek şekerdir."
+      ],
+      "strategy": "Görev ve kimyasal bileşim ipuçlarını birlikte kullan; yalnız “polisakkarit” adını aramak yerine yapısal yerleşim ile azotlu şeker birimini aynı adayda eşleştir.",
+      "steps": [
+        "İlk ipucu depo değil yapı görevidir: mantar hücre duvarı veya eklembacaklı dış iskeleti anlatılıyor.",
+        "İkinci ipucu azot içeren değiştirilmiş şeker birimleridir. Bu iki özellik kitinle birlikte uyumludur.",
+        "Kitin seçilir. Sakkaroz ile deoksiriboz birim sınıfına, nişasta ile glikojen ise bu kartta verilen tipik görev ve bileşim eşleşmesine uymaz."
+      ],
+      "optionReasons": [
+        "Nişasta bitkisel depo polisakkariti örneğidir; azotlu şekerlerle mantar duvarı ve dış iskelet oluşturan yapı eşleşmesini vermez.",
+        "Glikojen depo polisakkaritidir; verilen mantar hücre duvarı veya eklembacaklı dış iskeletindeki azotlu yapı maddesi değildir.",
+        "Doğru. Kitinin azotlu değiştirilmiş şeker birimleri ve bu iki yapısal bağlamı kartın ipuçlarını birlikte karşılar.",
+        "Sakkaroz iki şeker birimli disakkarittir. Çok birimli yapısal polisakkarit ve azotlu şeker ipuçlarına uymaz.",
+        "Deoksiriboz DNA’da bulunan beş karbonlu monosakkarittir; verilen çok birimli yapısal dış iskelet veya duvar maddesi değildir."
+      ],
+      "commonError": "Bütün polisakkaritleri yalnız C, H ve O taşıyan glikoz depoları sanmak veya mantar hücresindeki depo ile duvar maddesini birbirine karıştırmak.",
+      "check": "Adayı üç bilgiyle denetle: polisakkarit olması, yapı görevi görmesi ve azotlu şeker birimleri taşıması. Yalnız bir başlığa uyması yeterli değildir."
+    }
+  },
+  {
+    "id": "f012-foundation-karbohidratlar-9",
+    "identity": "[\"f012-foundation-karbohidratlar-9\",\"Bir mantar hücresinde fazla glikoz başlıca hangi depo polisakkaritine dönüştürülebilir?\",\"\",[\"Selüloz\",\"Nişasta\",\"Laktoz\",\"Glikojen\",\"Riboz\"],3,\"Glikojen hayvan ve mantarlarda yaygın depo polisakkaritidir; bazı prokaryotlarda da bulunur. Selüloz yapısal, nişasta bitki deposu, laktoz iki şekerli ve riboz tek şekerlidir. Mantarın bitki olmaması depo maddesi eşleştirmesinde önemlidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Glikojen hayvan ve mantarlarda yaygın depo polisakkaritidir; bazı mikroorganizmalarda da bulunabilir. Mantarlar bitki değildir. Nişasta bitkisel depo, selüloz ise bitki duvarı bağlamındaki yapısal polisakkarit örneğidir."
+      ],
+      "strategy": "Önce hangi canlı grubunun ve hangi görevin sorulduğunu belirle; hücre duvarı maddesi veya herhangi bir şeker adı yerine o gruptaki depo polisakkaritini eşleştir.",
+      "steps": [
+        "Sorulan canlı mantar, istenen işlev fazla glikozun depolanmasıdır. Yapısal destek maddesi aranmıyor.",
+        "Mantarların yaygın depo polisakkariti glikojendir. Mantarın hücre duvarı olması onu nişasta depolayan bitki yapmaz.",
+        "Bu nedenle glikojen seçilir. Tek şeker riboz veya ikili şeker laktoz, istenen depo polisakkariti sınıfını da karşılamaz."
+      ],
+      "optionReasons": [
+        "Selüloz yapı desteğiyle, özellikle bitki çeperiyle ilişkilidir; mantarda fazla glikozun başlıca depo polisakkariti değildir.",
+        "Nişasta bitkisel depo örneğidir. Mantar ile bitkiyi aynı grup sayarak depo eşleştirmesini taşımak yanlıştır.",
+        "Laktoz bir disakkarittir; çok sayıda glikoz biriminin mantarda depo edildiği polisakkarit değildir.",
+        "Doğru. Mantar hücreleri fazla glikozu yaygın depo polisakkariti olan glikojene dönüştürebilir.",
+        "Riboz tek bir pentoz şekeridir; glikozdan oluşan depo polisakkariti sınıfında değildir."
+      ],
+      "commonError": "Mantarı bitki kabul ederek nişasta seçmek veya depo işleviyle hücre duvarının yapısal görevini aynı maddeye zorunlu olarak yüklemek.",
+      "check": "Yanıtta hem “mantar” hem “depo polisakkariti” koşulları sağlanmalıdır. Glikojen bu ikisini birlikte karşılar; duvar maddesi veya tek şeker seçmek görevi değiştirir."
+    }
+  },
+  {
+    "id": "f012-foundation-karbohidratlar-10",
+    "identity": "[\"f012-foundation-karbohidratlar-10\",\"Üç disakkarit molekülü başlangıçta serbest monosakkarit içermiyor. Her disakkarit iki birimli ve tek glikozit bağlı; hepsi tamamen hidroliz ediliyor. Son serbest monosakkarit sayısı ve tüketilen su kaçtır?\",\"\",[\"3 monosakkarit ve 6 su\",\"6 monosakkarit ve 6 su\",\"9 monosakkarit ve 3 su\",\"3 monosakkarit ve 3 su\",\"6 monosakkarit ve 3 su\"],4,\"Her iki birimli molekülde tek bağ ayrılır; bir su kullanılıp iki monosakkarit çıkar. Üç molekülde toplam 3 su ve 6 birim bulunur. Ürün sayısı ile kırılan bağ sayısı farklıdır; başlangıçta zaten bağlı olan birimlerin her biri için su eklenmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir disakkaritte iki şeker birimini bir glikozit bağı tutar. Tam hidroliz bir su kullanarak bu bağı ayırır ve iki serbest monosakkarit verir. Ürün molekülü adedi ile koparılan bağ ve tüketilen su adedi aynı olmak zorunda değildir."
+      ],
+      "strategy": "Bir disakkarit için ürün ve su sütunlarını ayrı kur; ikisini de başlangıç molekül adediyle çarparken serbest birim sayısını bağ sayısıyla eşitleme.",
+      "steps": [
+        "Bir disakkarit tamamen hidroliz olduğunda iki monosakkarit serbestleşir. Üç disakkaritten 3×2=6 serbest birim çıkar.",
+        "Her disakkaritte tek glikozit bağı vardır. Üç molekülde toplam üç bağ ayrılır ve 3×1=3 su tüketilir.",
+        "Sonuç 6 monosakkarit ve 3 sudur. Başlangıçta serbest monosakkarit olmadığı için ürün toplamına başka başlangıç birimi eklenmez."
+      ],
+      "optionReasons": [
+        "3 ürün saymak her disakkariti tek şeker sanmaktır; 6 su saymak da her ürün için su gerektiğini varsayar. Bir molekül iki ürün ve bir su ilişkisini verir.",
+        "6 monosakkarit doğrudur; fakat suyu ürün sayısına eşitlemek yanlıştır. Üç disakkaritte yalnız üç glikozit bağı ayrılmaktadır.",
+        "Başlangıçtaki üç disakkaritte toplam altı şeker birimi vardır. Hidroliz üç yeni şeker yaratıp toplamı dokuza çıkarmaz.",
+        "3 su doğru sayılmıştır; ancak her iki birimli molekül iki serbest ürün verdiği için monosakkarit toplamı üç değil altıdır.",
+        "Doğru. Üç molekülün her biri iki şeker verir ve bir su tüketir; toplam 6 monosakkarit ile 3 su bulunur."
+      ],
+      "commonError": "Her serbestleşen monosakkarit için bir su tüketildiğini sanmak veya disakkarit molekül sayısını ürün monosakkarit sayısı olarak korumak.",
+      "check": "Üç ayrı ikili çizimde toplam altı birim ve üç bağlantı say. Tam ayrılmada altı birim korunurken yalnız üç bağ için su gerektiği görünür."
+    }
+  },
+  {
+    "id": "f012-foundation-lipitler-1",
+    "identity": "[\"f012-foundation-lipitler-1\",\"Dört trigliserit tamamen hidroliz ediliyor. Her biri bir gliserol ve üç yağ asidinden oluşuyor. Ürünler ve kullanılan su hangisidir?\",\"\",[\"4 gliserol, 12 yağ asidi ve 12 su\",\"12 gliserol, 4 yağ asidi ve 4 su\",\"4 gliserol, 4 yağ asidi ve 12 su\",\"4 gliserol, 12 yağ asidi ve 4 su\",\"16 gliserol ve 16 su\"],0,\"Bir trigliseritte üç ester bağı ayrılırken üç su kullanılır ve bir gliserol ile üç yağ asidi çıkar. Dört molekülün hesabı bu değerlerin dörder katıdır. Yağ asidi, gliserol ve ester bağı sayıları birbirinin yerine kullanılamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir trigliseritte bir gliserol üç yağ asidine ester bağlarıyla bağlıdır. Kartın tam hidroliz modelinde üç ester bağı için üç su kullanılır; bir gliserol ve üç yağ asidi serbestleşir. Hidroliz, suyun ürün değil kullanılan madde olduğu yöndür."
+      ],
+      "strategy": "Bir trigliseritin tam hidroliz katsayılarını gliserol, yağ asidi ve su için ayrı yaz; ardından her sütunu başlangıç molekül sayısıyla aynı katsayıda ölçekle.",
+      "steps": [
+        "Bir trigliserit 1 gliserol ve 3 yağ asidi verir. Dört trigliserit için gliserol 4×1=4, yağ asidi 4×3=12 olur.",
+        "Her moleküldeki üç ester bağı ayrılacağı için su kullanımı 4×3=12’dir. Su sayısı trigliserit adedine değil kopan bağlara bağlıdır.",
+        "Doğru toplam 4 gliserol, 12 yağ asidi ve kullanılan 12 sudur. Ürünler ile başlangıç bileşenlerinin türleri ayrı korunur."
+      ],
+      "optionReasons": [
+        "Doğru. Dört molekül, tek molekülün 1 gliserol/3 yağ asidi/3 su katsayılarının dörder katını verir.",
+        "Gliserol ve yağ asidi katsayıları ters kullanılmıştır. Her trigliseritte üç gliserol değil bir gliserol bulunduğundan bu ürün dağılımı yanlış olur.",
+        "Gliserol ve su doğru olsa da her trigliseritte üç yağ asidi vardır; dört molekülden yalnız dört yağ asidi çıkmaz.",
+        "Ürünler doğru sayılmış, su molekül adediyle eşitlenmiştir. Dört trigliseritte on iki ester bağı ayrılacağı için dört su yetmez.",
+        "Her başlangıç molekülündeki dört bileşeni aynı tür gliserol saymak yanlıştır; üçü yağ asididir. Su da bileşen toplamına değil üç bağa göre sayılır."
+      ],
+      "commonError": "Trigliseridin dört bileşenini aynı tür saymak veya üç ester bağı yerine her trigliserit için yalnız bir su tüketildiğini varsaymak.",
+      "check": "Bulduğun yağ asidi/gliserol oranı 12/4=3 olmalı. Tam hidrolizde tüketilen su sayısı da kopan toplam on iki ester bağıyla eşleşmelidir."
+    }
+  },
+  {
+    "id": "f012-foundation-lipitler-2",
+    "identity": "[\"f012-foundation-lipitler-2\",\"Üç trigliseritte toplam dokuz ester bağı var. Bunlardan yedisi hidroliz ediliyor; her kopan ester bağı bir yağ asidi serbestleştiriyor. Hangi bilgi kesindir?\",\"\",[\"Kesinlikle 3 gliserol serbestleşir.\",\"7 yağ asidi serbestleşir; serbest gliserol sayısı bağların moleküllere dağılımına bağlıdır.\",\"Hiç yağ asidi serbestleşmez.\",\"Kesinlikle 9 ester bağı kalır.\",\"Her molekülde kesin aynı sayıda bağ kopmuştur.\"],1,\"Yedi kopma yedi yağ asidi ve yedi su tüketimi verir. Kalan iki ester bağı tek bir gliserolde veya iki ayrı gliserolde bulunabilir; tamamen serbest gliserol sayısı aynı olmak zorunda değildir. Toplam kopma sayısından moleküller arasındaki dağılım uydurulmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kısmi hidrolizde toplam kopan bağ sayısı bazı ürünleri belirler; bir gliserolün tamamen serbestleşmesi ise ona bağlı üç ester bağının da ayrılmasına bağlıdır. Bu nedenle kopmaların farklı başlangıç moleküllerine nasıl dağıldığı ayrı bir bilgidir."
+      ],
+      "strategy": "Bağ başına kesin verilen ürünü önce say; ardından aynı toplam kopmayla iki farklı molekül dağılımı kurarak serbest gliserol adedinin gerçekten tek olup olmadığını sına.",
+      "steps": [
+        "Her kopan ester bağı bir yağ asidi serbestleştirdiği için yedi kopmadan kesin 7 yağ asidi çıkar; toplam 9−7=2 ester bağı kalır.",
+        "Kopmalar üç moleküle 3,3,1 diye dağılsa iki gliserol; 3,2,2 diye dağılsa yalnız bir gliserol tamamen serbest olur. İki dağılımda da toplam yedi bağ kopmuştur.",
+        "Kesin olan 7 yağ asididir; serbest gliserol sayısı dağılıma bağlıdır. Toplam yedi kopmadan bütün moleküllerin aynı derecede hidroliz olduğu çıkarılamaz."
+      ],
+      "optionReasons": [
+        "Üç gliserolün de serbest olması dokuz bağın tamamının kopmasını gerektirir. Yalnız yedi kopma verildiğinden üç serbest gliserol kesin değildir.",
+        "Doğru. Bağ başına verilen kuralla yedi yağ asidi kesindir; gliserolün tamamen serbestliği kopmaların üç başlangıç molekülüne dağılımını gerektirir.",
+        "Kart her kopan bağın bir yağ asidi serbestleştirdiğini söyler. Yedi kopmaya rağmen hiç yağ asidi çıkmadığı iddiası bu kuralla çelişir.",
+        "Başlangıçtaki dokuz bağın yedisi ayrıldığından iki bağ kalır. Dokuz bağın korunduğunu söylemek hidrolizi hiç yapılmamış sayar.",
+        "Yedi kopma üç moleküle eşit tam sayı olarak dağıtılamaz; ayrıca kart dağılımı vermemiştir. Her molekülde aynı sayıda kopma kesinliği kurulamaz."
+      ],
+      "commonError": "Toplam kopan bağ sayısından her trigliseritte aynı sayıda bağın koptuğunu veya bütün gliserollerin tamamen serbestleştiğini varsaymak.",
+      "check": "3+3+1 ile 3+2+2 toplamlarının ikisi de 7’dir; fakat üç bağının tamamı kopan molekül adedi sırasıyla 2 ve 1’dir. Karşı örnekler gliserol belirsizliğini gösterir."
+    }
+  },
+  {
+    "id": "f012-foundation-lipitler-3",
+    "identity": "[\"f012-foundation-lipitler-3\",\"Nötral yağ için hangi bileşen eşleştirmesi doğrudur?\",\"\",[\"3 gliserol + 1 yağ asidi\",\"1 amino asit + 3 glikoz\",\"1 gliserol + 3 yağ asidi\",\"2 gliserol + 1 nükleotit\",\"1 fosfat + 3 amino asit\"],2,\"Trigliserit bir gliserolün üç yağ asidiyle esterleşmesidir. Bu model bütün lipitlere ait değildir: fosfolipit ve steroidler farklı yapı düzenleri taşır. Molekül adına göre ortak bir “yağ monomeri” varsaymak doğru olmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Nötral yağın bu düzeydeki örneği trigliserittir: bir gliserol, üç yağ asidiyle esterleşir. Yağ asitleri aynı veya farklı olabilir. Bu bileşen şeması bütün lipit sınıflarının ortak yapısı değildir; fosfolipit ve steroidlerin düzenleri farklıdır."
+      ],
+      "strategy": "Molekül adını önce trigliserit olarak aç; bileşenlerin tür ve oranını ayrı denetle, “lipit” ailesindeki her yapının aynı bileşenlerden oluştuğunu varsayma.",
+      "steps": [
+        "Nötral yağ yani trigliserit için merkez bileşen bir gliseroldür. Üç sayısı gliserole değil bağlanmış yağ asitlerine aittir.",
+        "Bir gliserole üç yağ asidi bağlanır; tür–adet eşleştirmesi 1 gliserol + 3 yağ asididir.",
+        "Bu eşleştirme seçilir. Amino asit, glikoz, nükleotit veya fosfat içeren başka seçenekler trigliseridin verilen bileşen şemasını karşılamaz."
+      ],
+      "optionReasons": [
+        "Gliserol ve yağ asidi katsayıları ters çevrilmiştir. Trigliseritte üç gliserol ve bir yağ asidi değil bir gliserol ve üç yağ asidi bulunur.",
+        "Amino asit protein, glikoz karbonhidrat birimi bağlamındadır; bu ikili trigliseridin gliserol–yağ asidi bileşenlerini vermez.",
+        "Doğru. Trigliserit bir gliserolün üç yağ asidiyle esterleşmesinden oluşan nötral yağ modelidir.",
+        "Nükleotit nükleik asit birimi bağlamındadır. İki gliserol ve bir nükleotit verilen nötral yağın bileşenleri değildir.",
+        "Fosfat ve amino asitler bu oranla trigliserit oluşturmaz. Üç amino asidi yağ asitleri yerine koymak bileşen sınıfını değiştirir."
+      ],
+      "commonError": "“Tri” ön ekini gliserol sayısına uygulamak veya bütün lipitleri aynı tekrar eden yağ monomerlerinin polimeri gibi düşünmek.",
+      "check": "Gliserol/yağ asidi adedini 1/3 olarak doğrula. Aynı şemayı fosfolipit veya steroid için otomatik kullanmadığını da kontrol et; kart yalnız nötral yağı sorar."
+    }
+  },
+  {
+    "id": "f012-foundation-lipitler-4",
+    "identity": "[\"f012-foundation-lipitler-4\",\"Yaygın gliserofosfolipit modelinde iki yağ asidi ve fosfat içeren kutuplu baş bulunuyor. Sulu ortamda çift tabakada hangi yerleşim beklenir?\",\"\",[\"Kuyruklar yalnız sulu yüzeylere, başlar birbirine yönelir.\",\"Bütün baş ve kuyruklar tek yönde aynı yüzeye bakar.\",\"Fosfat başı DNA gibi kromozom oluşturur.\",\"Başlar iki sulu yüzeye, kuyruklar birbirine bakan iç bölgeye yönelir.\",\"İki tabaka iki farklı organelin zarı olmak zorundadır.\"],3,\"Kutuplu baş suyla etkileşebilir; apolar kuyrukların sulu yüzeyden uzak iç bölgede bulunması çift tabaka düzenini açıklar. Bu bir zarın temel düzenidir, iki organel zarı demek değildir. Yönelimi görselin üst-alt ezberinden değil sulu bölgeden belirle.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kutuplu başı suyla, apolar kuyrukları ise birbirleriyle bulunmaya uygun olan tipik fosfolipit amfipatik yapıdadır. İki tarafı sulu bir çift tabakada her iki dış yüzeyde başlar, tabakanın ortasında kuyruklar bulunur."
+      ],
+      "strategy": "Çizimin üst–alt yönünü ezberlemek yerine iki sulu ortamı işaretle; her yüzeyde başın suya, kuyruğun tabakanın iç kısmına yönelmesini ayrı ayrı uygula.",
+      "steps": [
+        "Karttaki kutuplu baş suyla etkileşebilen bölgedir. Çift tabakanın hem dış hem iç sulu yüzeyine bu başlar dönmelidir.",
+        "İki tabakanın yağ asidi kuyrukları birbirine dönerek ortada sulu yüzeylerden uzak bir bölge oluşturur. Başları yalnız tek yüzeye yerleştirmek öteki sulu yüzeyi açıklamaz.",
+        "Beklenen düzen başların iki sulu yüzeye, kuyrukların birbirine bakan iç bölgeye yönelmesidir. Buradaki iki tabaka tek zarın iki yaprağıdır."
+      ],
+      "optionReasons": [
+        "Suya yönelik bölge kuyruk değil kutuplu baştır. Bu seçenek baş–kuyruk düzenini ters çevirerek iki sulu yüzeyde apolar kuyrukları bırakır.",
+        "İki tarafı sulu çift tabakada iki yüzeye de başlar yönelir. Bütün molekülleri aynı yöne çevirmek bu iki yüzlü düzeni karşılamaz.",
+        "Bir başta fosfat bulunması fosfolipidi DNA veya kromozom yapmaz. Ortak grup, bütün molekülün kimliğini ve örgütlenmesini eşitlemez.",
+        "Doğru. Başlar iki sulu yüzeyle etkileşir; apolar kuyruklar tabakanın ortasında birbirine yönelir.",
+        "Çift tabaka tek bir zarın temel düzeni olabilir. İki moleküler yaprak bulunması iki ayrı organelin zarı olduğu anlamına gelmez."
+      ],
+      "commonError": "Baş ve kuyruğun suyla ilişkisini ters okumak veya çift tabakanın iki yaprağını iki ayrı organel zarı sanmak.",
+      "check": "Üst ve alt ortamı yer değiştirsen de kural aynı kalmalı: her sulu yüzey başlarla, ortadaki bölge kuyruklarla çevrili olmalıdır. Bu kontrol yön ezberini önler."
+    }
+  },
+  {
+    "id": "f012-foundation-lipitler-5",
+    "identity": "[\"f012-foundation-lipitler-5\",\"Eşit uzunluklu iki yağ asidinden birinde C=C yok, diğerinde bir cis C=C var. Doymuş–doymamış ayrımı için hangisi doğrudur?\",\"\",[\"İlk doymamış, ikincisi doymuştur.\",\"İkisi de zorunlu proteindir.\",\"Doymuşluk gliserol molekülü sayısıdır.\",\"Çift bağın varlığı karbon zincirine ait olamaz.\",\"İlk doymuş, ikincisi doymamıştır.\"],4,\"Doymuş yağ asidinin karbon zincirinde C=C bulunmaz; doymamışta en az bir C=C vardır. Bu yapı paketlenme ve erime eğilimini etkileyebilir, ancak yalnız çift bağ sayısından her karışımın kesin oda sıcaklığı hâli çıkarılmaz. Verilen soru sınıflamayı istemektedir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yağ asitlerinde doymuşluk karbon zincirindeki C=C bağlarıyla tanımlanır. C=C bulunmayan zincir doymuş, en az bir C=C bulunan zincir doymamıştır. Karboksil grubundaki C=O bu ölçüt değildir; cis sözcüğü çift bağ çevresindeki uzaysal düzeni anlatır."
+      ],
+      "strategy": "İki yağ asidinin ortak uzunluğunu sabit bilgi olarak bırak; yalnız karbon–karbon çift bağının varlığını her molekülde ayrı kontrol edip sınıf adlarını aynı sırada yaz.",
+      "steps": [
+        "İlk yağ asidinin karbon zincirinde C=C olmadığı açıkça belirtiliyor; bu doymuş sınıfın ölçütüdür.",
+        "İkincide bir cis C=C vardır. En az bir karbon–karbon çift bağı bulunduğundan bu yağ asidi doymamıştır.",
+        "Sonuç ilk doymuş, ikinci doymamıştır. Soru yalnız sınıflama istediği için bu bilgiden karışımın kesin fiziksel hâli veya bir protein niteliği çıkarılmaz."
+      ],
+      "optionReasons": [
+        "Sıra ters verilmiştir. C=C olmayan ilk yağ asidi doymuş, bir C=C taşıyan ikinci yağ asidi doymamış olarak adlandırılır.",
+        "Yağ asitleri amino asit polimeri olan protein değildir. C=C sayısı iki molekülü zorunlu protein sınıfına dönüştürmez.",
+        "Doymuşluk gliserol adediyle değil yağ asidinin karbon zincirindeki C=C bağlarıyla tanımlanır; kart iki ayrı yağ asidini karşılaştırır.",
+        "C=C gösterimi iki karbon arasındaki çift bağı belirtir ve kart bunun zincirde bulunduğunu söyler. Bu bilginin olamayacağını iddia etmek veriyi reddeder.",
+        "Doğru. İlk zincirde C=C yoktur, ikincide vardır; bu ölçüte göre ilk doymuş ve ikinci doymamıştır."
+      ],
+      "commonError": "Karboksil ucundaki C=O ile zincirdeki C=C’yi aynı doymamışlık ölçütü sanmak veya cis çift bağı olan molekülü doymuş saymak.",
+      "check": "İlk zincirde C=C adedi 0, ikincide 1’dir. Sınıflamayı bu sayımla yeniden kur; gliserol sayısı veya adlandırılmamış bir sıcaklık varsayımı gerekmez."
+    }
+  },
+  {
+    "id": "f012-foundation-lipitler-6",
+    "identity": "[\"f012-foundation-lipitler-6\",\"İnsan tarafından yeterli miktarda sentezlenemediği için besinle alınması gereken temel yağ asitleri bulunuyor. Hangi sonuç uygundur?\",\"\",[\"Bazı yağ asitlerinin dışarıdan gerekliliği, insanın hiçbir lipidi sentezleyemediği anlamına gelmez.\",\"İnsan bütün lipitlerini dışarıdan değişmeden almak zorundadır.\",\"Bütün yağ asitleri aynı görevle birbirinin yerini alır.\",\"Temel yağ asidi sözü protein monomeri demektir.\",\"Temel yağ asidi hiç enerji metabolizmasına katılamaz.\"],0,\"Temel/esansiyel nitelemesi belirli yağ asitlerinin gereksinimini karşılayan sentezin yetersizliğiyle ilişkilidir. Bütün lipit sentezine yasak getirmez; insan başka lipitler sentezleyebilir. Bu kavramsal sonuç kişiye takviye dozu önerisi değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Esansiyel veya temel nitelemesi, insanın gereksinimi karşılayacak miktarda sentezleyemediği belirli yağ asitlerinin besinle alınmasını anlatır. Hazır yağ asitlerini kullanarak bir lipidi oluşturmak ile o yağ asidini baştan sentezlemek farklı süreçlerdir."
+      ],
+      "strategy": "Önermenin kapsadığı madde grubunu sınırlı tut: bazı yağ asitleri için verilen sentez yetersizliğini bütün lipit sentezine yasak koyan ifadelerden ayır.",
+      "steps": [
+        "Kart bazı yağ asitlerinin yeterli miktarda sentezlenemediğini söyler; bütün yağ asitleri veya bütün lipitler için aynı iddiayı kurmaz.",
+        "İnsan başka lipitleri sentezleyebilir; ayrıca dışarıdan gelen belirli yağ asitlerini kendi lipit yapılarına katabilir. Bileşeni edinme ile bütünü kurma aynı bilgi değildir.",
+        "Bu nedenle bazı yağ asitlerinin dışarıdan gerekli olması hiçbir lipit sentezlenemeyeceği anlamına gelmez. Temel olmak onların protein birimi veya işlevsiz olduğu anlamına da gelmez."
+      ],
+      "optionReasons": [
+        "Doğru. Bazı belirli yağ asitleri için sentez yetersizliği, diğer lipitlerin sentezlenmesini veya hazır bileşenlerin yeni lipitlere katılmasını dışlamaz.",
+        "“Bazı yağ asitleri” bilgisini bütün lipitlerin değişmeden alınması zorunluluğuna genişletir. Kart böyle bir bütüncül sentez yasağı vermez.",
+        "Yağ asitlerinin hepsinin aynı görevle birbirinin yerini aldığı sonucu verilmemiştir; belirli yağ asitlerine gereksinim bulunması bu özdeşlik iddiasını desteklemez.",
+        "Protein monomerleri amino asitlerdir. Yağ asitlerinin temel olarak adlandırılması kimyasal sınıflarını amino aside dönüştürmez.",
+        "Esansiyel nitelemesi sentez yeterliliğiyle ilgilidir; enerji metabolizmasına hiçbir koşulda katılamama tanımı değildir."
+      ],
+      "commonError": "Belirli bir bileşenin dışarıdan gerekli oluşunu, insanın o bileşeni kullanarak hiçbir lipit oluşturamayacağı veya bütün lipitlerin aynı olduğu biçiminde genellemek.",
+      "check": "İddiadaki “bazı” ve “hiçbir” kapsamlarını karşılaştır. Sınırlı sentez yetersizliğinden bütün lipit sentezine ilişkin yasak çıkmadığını doğrula."
+    }
+  },
+  {
+    "id": "f012-foundation-lipitler-7",
+    "identity": "[\"f012-foundation-lipitler-7\",\"Kolesterol hayvan hücre zarında bulunuyor ve steroid ürünlerin senteziyle ilişkili. Hangi genelleme bu bilgilerle çelişir?\",\"\",[\"Lipit ailesinde farklı yapı türleri vardır.\",\"Kolesterolün vücutta hiçbir işlevi yoktur.\",\"Bir lipit hücre zarında görev alabilir.\",\"Bütün lipitler trigliserit değildir.\",\"Steroidler halka içeren bir yapıyla incelenebilir.\"],1,\"Verilen zar ve sentez rolleri işlev bulunduğunu doğrudan gösterir. Bu, miktar ve dağılımdan bağımsız olarak her durumda yararlı olacağı anlamına gelmez. İşlev varlığıyla sınırsız alımın uygunluğu farklı sorulardır; koşulsuz yoktur genellemesi yanlıştır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kolesterol bir steroldür; hayvan hücre zarlarında rol alır ve steroid ürünlerin sentez yollarıyla ilişkilidir. Lipit ailesi trigliserit, fosfolipit ve steroid gibi farklı yapı türlerini içerir. Bir işlevin varlığı ile her miktarın yararlı olması farklı iddialardır."
+      ],
+      "strategy": "Soruda doğrudan verilen iki rolü kanıt olarak kullan; seçeneklerde bu rollerle çelişen kesin yokluk iddiasını bul, kartın vermediği miktar veya sağlık sonucunu ekleme.",
+      "steps": [
+        "İlk doğrudan veri kolesterolün hayvan hücre zarında bulunmasıdır; ikinci veri steroid ürünlerin senteziyle ilişkisidir.",
+        "Bu iki rol, kolesterolün vücutta bir işlevi bulunduğunu destekler. “Hiçbir işlevi yoktur” iddiası her iki veriyi de yok sayar.",
+        "Çelişen genelleme işlevin tümden reddidir. Bu reddi elemek, kolesterolün her miktar ve dağılımda yararlı olduğuna ilişkin yeni bir sonuç gerektirmez."
+      ],
+      "optionReasons": [
+        "Lipitlerin farklı yapı türleri barındırması kolesterolün zar ve sentez rolleriyle uyumludur; kart bunu dışlamaz.",
+        "Doğru. Zar ve sentezde rol verildiğine göre “vücutta hiçbir işlevi yoktur” genellemesi bu bilgilerle açıkça çelişir.",
+        "Kolesterolün zardaki varlığı, bir lipidin hücre zarında görev alabilmesiyle uyumludur; bu seçenek verilenle çatışmaz.",
+        "Kolesterolün steroid yapısı ve lipit ailesinin çeşitliliği, bütün lipitlerin trigliserit olmadığı düşüncesiyle uyumludur.",
+        "Steroidlerin halka içeren iskeletlerle incelenmesi, kolesterolün steroid ürünlerle ilişkisiyle çelişmez; halka yapısı trigliserit bileşenleriyle aynı şema değildir."
+      ],
+      "commonError": "Kolesterolün miktarıyla ilgili sağlık bağlamını, vücutta hiçbir biyolojik işlevinin bulunmadığı şeklinde koşulsuz yokluk iddiasına çevirmek.",
+      "check": "Yanlış genellemenin karşısına karttan bir tek somut rol yaz: zar veya steroid ürün sentezi yeterlidir. Bu karşı örnek işlev yokluğunu çürütür; sınırsız alım sonucunu vermez."
+    }
+  },
+  {
+    "id": "f012-foundation-lipitler-8",
+    "identity": "[\"f012-foundation-lipitler-8\",\"Aynı kütledeki yağ ve karbonhidratın oksijenli yıkımı karşılaştırılıyor. Kökte yağ için 9, karbonhidrat için 4 birim enerji/g verilmiş. 2 g yağ ile aynı enerji için kaç g karbonhidrat gerekir?\",\"\",[\"2 g\",\"8 g\",\"4,5 g\",\"9 g\",\"18 g\"],2,\"Önce yağ enerjisi 2×9=18 birim bulunur. Aynı enerji için karbonhidrat miktarı 18/4=4,5 g’dır. Burada katsayılar kökte verilmiştir; gram ile enerji birimi karıştırılmaz. Farklı metabolik koşullarda koşulsuz bir kişisel enerji hesabı yapılmıyor.\"]",
+    "guidance": {
+      "knowledge": [
+        "Birim kütle başına enerji katsayısı, kütleyle çarpıldığında toplam enerji verir. Eşit enerji isteniyorsa farklı besinlerin gram miktarları aynı olmak zorunda değildir. Burada yağ ve karbonhidrat için kullanılacak katsayılar yalnız kartta verilen 9 ve 4 birim/g değerleridir."
+      ],
+      "strategy": "Önce verilen yağ kütlesinin toplam enerjisini bul; bu ortak enerjiyi karbonhidratın gram başına katsayısına bölerek birimleri izleyip iki toplamı yeniden eşitle.",
+      "steps": [
+        "İki gram yağın verilen enerji karşılığı 2 g×9 birim/g=18 birimdir. Bu sonuç bir kütle değil enerjidir.",
+        "Aynı enerjiyi veren karbonhidrat kütlesi m için 4m=18 yazılır; m=18/4=4,5 g bulunur.",
+        "Kontrol: 4,5 g×4 birim/g=18 birim, 2 g yağın enerjisine eşittir. Yağın gram başına katsayısı büyük olduğundan gereken karbonhidrat 2 g’dan fazladır."
+      ],
+      "optionReasons": [
+        "2 g karbonhidrat 2×4=8 birim verir; 2 g yağın 18 birimlik enerjisine eşit değildir. Eşit kütle ile eşit enerji karıştırılmıştır.",
+        "8 g karbonhidrat 8×4=32 birim verir. 8 sayısı iki gram karbonhidratın enerjisinden gelebilir; istenen eşit enerjili kütle değildir.",
+        "Doğru. 2×9=18 birim enerjiyi karbonhidrattan almak için 18/4=4,5 g gerekir.",
+        "9 g karbonhidrat 36 birim verir. Yağın gram başına 9 birim/g katsayısını doğrudan gram cevabı saymak birimleri karıştırır.",
+        "18, yağın toplam enerji değeridir; karbonhidratın gramı değildir. 18 g karbonhidrat 72 birim sağlayarak hedefi aşar."
+      ],
+      "commonError": "Toplam enerji olan 18’i gram yanıtı olarak yazmak veya eşit enerji istendiği hâlde iki besinin gram miktarlarını eşit kabul etmek.",
+      "check": "İki tarafın enerji hesabını tekrar yap: 2×9 ile 4,5×4 aynı 18’i vermeli. Son cevabın birimi enerji/g değil gram olmalıdır."
+    }
+  },
+  {
+    "id": "f012-foundation-lipitler-9",
+    "identity": "[\"f012-foundation-lipitler-9\",\"Bir yağ örneği suda az, kullanılan uygun organik çözücüde daha çok çözünüyor. Bu gözlem tek başına hangisini kanıtlamaz?\",\"\",[\"İki çözücüde davranışın farklı olduğunu\",\"Çözünürlüğün seçilen ortama bağlı olduğunu\",\"Suyla iyi karışmayan bileşenler bulunduğuyla uyumlu olduğunu\",\"Örnekteki bütün moleküllerin trigliserit olduğunu\",\"Çözücü seçiminin ayırmada etkili olabileceğini\"],3,\"Çözünürlük gözlemi lipit benzeri davranışla uyumlu olabilir; fosfolipit, steroid veya karışım olasılıklarını tek başına elemez. Verilen veri bütün moleküllerin aynı bileşene sahip olduğunu göstermez. Molekül kimliği için daha özgül kanıt gerekir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir örneğin farklı çözücülerdeki çözünürlüğü, moleküllerin ortamla etkileşimine ilişkin veri verir. Benzer çözünürlük davranışı farklı lipit türleri veya karışımlarda görülebilir; bu özellik tek başına her molekülün ayrıntılı kimyasal kimliğini belirlemez."
+      ],
+      "strategy": "Gözlenen çözücü davranışını, bütün molekülleri tek bir türe atayan kimlik iddiasından ayır. Hangi seçenek için çözünürlüğün ötesinde bileşen veya yapı kanıtı gerektiğini sorgula.",
+      "steps": [
+        "Aynı örnek suda daha az, seçilen organik çözücüde daha çok çözünüyor. Bu iki ortamda davranışın farklı olduğu doğrudan verilmiştir.",
+        "Bu davranış suyla iyi karışmayan bileşenlerle uyumludur; ancak fosfolipit, steroid veya farklı karışım olasılıklarını tek başına dışlamaz.",
+        "Kanıtlanamayan ifade bütün moleküllerin trigliserit olduğudur. Böyle bir kimlik ve saflık iddiası için daha özgül yapı veya bileşen ölçümü gerekir."
+      ],
+      "optionReasons": [
+        "İki çözücüde az ve çok çözünme karşılaştırması açıkça verildiği için davranışın farklı olması doğrudan gözlemdir.",
+        "Aynı örneğin iki ortamda farklı davranması çözünürlüğün seçilen ortama bağlı olduğu yorumunu destekler.",
+        "Suda az çözünme, suyla iyi karışmayan bileşenler bulunmasıyla uyumludur. Seçenek bütün moleküllere kesin kimlik atamadığı için verilenin kapsamını korur.",
+        "Doğru. Bu çözünürlük özelliği örneğin bütün moleküllerinin trigliserit olduğunu veya tek türden oluştuğunu tek başına kanıtlamaz.",
+        "Çözücü davranışındaki fark, uygun çözücü seçiminin ayırmada etkili olabileceğini düşündürür; seçenek tek başına kesin bir molekül kimliği iddiası kurmaz."
+      ],
+      "commonError": "Bir sınıfla uyumlu tek fiziksel özelliği, örneğin bütün moleküllerinin belirli bir lipit ve örneğin saf olduğuna ilişkin yeterli kanıt sanmak.",
+      "check": "Aynı çözünürlük gözlemi farklı lipitler içeren bir karışımla da bağdaşabiliyorsa “hepsi trigliserit” sonucu zorunlu değildir. Doğru seçenek bu elenmemiş olasılığı korur."
+    }
+  },
+  {
+    "id": "f012-foundation-lipitler-10",
+    "identity": "[\"f012-foundation-lipitler-10\",\"Bir göçmen kuşun depo yağları oksijenli solunumla yıkılıyor. Verilen biyolojik bağlamda hangi sonuç uygundur?\",\"\",[\"Yağ yıkımında hiç oksijen kullanılmaz.\",\"Depo yağın bütün işlevi DNA dizisini doğrudan yazmaktır.\",\"Yağlar mutlaka aynı sayıda peptit bağı taşır.\",\"Metabolik su oluşması kuşun bütün koşullarda suya gereksinimi olmadığını kanıtlar.\",\"Yağlar enerji aktarımına ve metabolik su oluşumuna katkı sağlayabilir.\"],4,\"Depo yağın oksijenli yıkımı enerji ve metabolik su kaynağı olabilir. Bu yarar bütün çevrelerde su gereksiniminin sıfırlanacağı anlamına gelmez; oksijen ve diğer koşullar önemlidir. Peptit bağları protein bağlamıdır ve trigliserit esterleriyle eşitlenmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Depo yağların oksijenli yıkımı, kimyasal enerjinin hücresel enerji aktarımına katılmasını ve metabolik su oluşmasını sağlayabilir. Yağın ester bağlarını hidroliz etmek ise ayrı bir aşamadır ve su kullanır; hidroliz ile oksijenli yıkımın su bilançosu aynı olay değildir."
+      ],
+      "strategy": "Kartın açıkça verdiği oksijenli yıkım bağlamını koru; bu yolla oluşabilen enerji ve su katkılarını, bütün koşullarda oksijensiz veya dışarıdan susuz yaşama iddialarından ayır.",
+      "steps": [
+        "Göçmen kuşun depo yağları oksijenli solunumla yıkılıyor. Bu süreçteki enerji dönüşümü depo yağın işlevlerinden biridir.",
+        "Oksijenli yıkımda metabolik su oluşumuna da katkı sağlanabilir. Bu, trigliserit hidrolizinde suyun üretilmesi demek değildir.",
+        "Desteklenen sonuç enerji aktarımı ve metabolik suya katkıdır. Bu katkı kuşun bütün çevre koşullarında suya hiç gereksinim duymadığını kanıtlamaz."
+      ],
+      "optionReasons": [
+        "Süreç oksijenli solunum olarak açıkça verilmiştir. Yağ yıkımında hiç oksijen kullanılmadığını söylemek kartın biyolojik bağlamını reddeder.",
+        "Depo yağların bu karttaki işlevi enerji ve su dönüşümleriyle ilişkilidir; DNA dizisini doğrudan yazma gibi tek işlev tanımlanmamıştır.",
+        "Peptit bağları amino asit omurgasıyla ilişkilidir. Trigliseritlerin ester bağlarını aynı sayıda peptit bağı olarak adlandırmak kimyasal bağı karıştırır.",
+        "Metabolik su oluşması su bütçesine katkı olabilir; bu katkının bütün sıcaklık, etkinlik ve çevre koşullarında bütün gereksinimi karşıladığı verilmemiştir.",
+        "Doğru. Oksijenli yağ yıkımı, enerji aktarımına ve metabolik su oluşumuna katkı sağlayabilir; ifade bu katkıyı sınırsız susuz yaşama garantisine dönüştürmez."
+      ],
+      "commonError": "Yağdan metabolik su oluşmasını her koşulda dışarıdan su gereksiniminin sıfırlanması sanmak veya bunu su tüketen ester hidroliziyle aynı aşama saymak.",
+      "check": "Yanıt hem “oksijenli” koşulunu hem “katkı” sınırını korumalıdır. Bütün su gereksiniminin karşılandığını söylemeden enerji ve metabolik su oluşumunu birlikte kabul edebilmelidir."
+    }
+  }
+]

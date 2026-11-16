@@ -1,0 +1,482 @@
+[
+  {
+    "id": "ns-life-1",
+    "identity": "[\"ns-life-1\",\"Amip tek hücreden oluşur ve zarla çevrili çekirdeğe sahiptir. Bu iki gözleme göre doğru sınıflama hangisidir?\",\"\",[\"Çok hücreli prokaryot\",\"Tek hücreli ökaryot\",\"Tek hücreli olduğu için kesinlikle bakteri\",\"Çekirdeği bulunduğu için çok hücreli\",\"Hücresiz canlı\"],1,\"Tek hücreli olmak prokaryot olmayı gerektirmez. Zarla çevrili çekirdeği bulunan amip ökaryottur; bütün organizma bir hücreden oluşur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hücre sayısı organizmanın bir veya çok hücreden oluşmasını anlatır. Prokaryot–ökaryot ayrımında ise hücre planı incelenir: zarla çevrili çekirdeği bulunan hücre ökaryottur. Tek bir ökaryot hücre bütün bir organizmayı oluşturabilir."
+      ],
+      "strategy": "İki gözlemi ayrı sütunlara yerleştir: biri bireyin hücre adedini, diğeri çekirdeğin yapısını belirler. Bir ölçütün cevabını ötekinin yerine kullanmadan sınıfları birleştir.",
+      "steps": [
+        "“Tek hücreden oluşur” gözlemi, amibin bütün bireyinin bir hücre olduğunu söyler; çok hücreli seçenekler bu gözlemle uyuşmaz.",
+        "“Zarla çevrili çekirdeğe sahiptir” gözlemi ökaryot hücre planını gösterir. Prokaryotlarda bu biçimde bir çekirdek bulunmaz.",
+        "Birlikte okunduğunda sınıflama tek hücreli ökaryottur. Tek hücreli olmak bakteri olmayı zorunlu kılmadığından bu iki özellik çelişmez."
+      ],
+      "optionReasons": [
+        "Çok hücreli ifadesi ilk gözleme, prokaryot ifadesi zarla çevrili çekirdek gözlemine aykırıdır; iki ölçüt de yanlış kullanılmıştır.",
+        "Doğru. Bir hücre bireyin tamamıdır ve bu hücre zarla çevrili çekirdek taşır; tek hücreli ile ökaryot nitelemeleri birlikte kullanılabilir.",
+        "Bakterilerin tek hücreli olması, bütün tek hücrelilerin bakteri olduğu anlamına gelmez. Verilen çekirdek bilgisi bu çıkarımı ayrıca dışlar.",
+        "Çekirdeğin bulunması hücrenin yapısını gösterir; organizmadaki hücre sayısını artırmaz. İlk gözlem bireyin tek hücreli olduğunu açıkça verir.",
+        "Soruda bir hücrenin ve onun çekirdeğinin varlığı belirtilmiştir; hücresiz nitelemesi doğrudan bu verilerle çelişir."
+      ],
+      "commonError": "Tek hücreli–çok hücreli ayrımıyla prokaryot–ökaryot ayrımını tek bir sınıflama sanıp bütün tek hücrelileri bakteri saymak.",
+      "check": "Önerdiğin sınıflamayı iki gözleme ayrı ayrı geri uygula: hem bir hücreden oluşma hem zarla çevrili çekirdek taşıma koşulunu sağlamalıdır."
+    }
+  },
+  {
+    "id": "ns-life-2",
+    "identity": "[\"ns-life-2\",\"Sağlıklı bir kısır hayvan besleniyor, büyüyor, uyarılara tepki veriyor fakat yavru oluşturamıyor. Hangi yorum uygundur?\",\"\",[\"Yavru oluşturamadığı için canlı değildir.\",\"Metabolizması bulunamaz.\",\"Hücreleri kalıtsal bilgi taşıyamaz.\",\"Birey canlıdır; üreme soyun devamıyla ilişkilidir.\",\"Enerji gereksinimi yoktur.\"],3,\"Üreme türün sürekliliği açısından temel bir süreçtir; her bireyin canlı sayılması için mutlaka üremesi gerekmez. Kısırlık hücresel yapı ve metabolizmayı ortadan kaldırmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Üreme yeni bireyler oluşturarak soyun sürmesine katkı verir. Bir bireyin canlılığını sürdürmesi ise hücresel yapı, madde ve enerji dönüşümleri gibi süreçlere dayanır; her canlı bireyin yavru meydana getirmesi zorunlu değildir."
+      ],
+      "strategy": "Bireyin yaşamını sürdüren gözlemleri ve yeni birey oluşturma yeterliliğini iki ayrı başlıkta değerlendir; bir yeterliliğin yokluğunu bütün yaşamsal süreçlerin yokluğu olarak genelleme.",
+      "steps": [
+        "Beslenme, büyüme ve uyarıya tepki, bu hayvanda sürdüğü doğrudan belirtilen yaşamsal süreçlerdir. Bunları yok sayan seçenekleri ayır.",
+        "Yavru oluşturamama, verilen bağlamda üreme yeterliliğiyle ilgilidir. Bu bilgi beslenmenin, hücrelerin veya metabolizmanın ortadan kalktığını söylemez.",
+        "Birey canlıdır; üreme soyun devamıyla ilişkilidir. Kısır olma, bireyin yaşamını sürdüren süreçlerini geçersiz kılmaz."
+      ],
+      "optionReasons": [
+        "Yavru oluşturamama canlı olmamanın yeterli ölçütü değildir; soruda beslenen, büyüyen ve tepki veren bir hayvan açıkça tanımlanmıştır.",
+        "Büyüme ve beslenmeyle ilişkili yapım–yıkım süreçleri metabolizmanın parçalarıdır; kısırlık bunların bulunamayacağını göstermez.",
+        "Üreme yeterliliği ile hücrelerin kalıtsal bilgi taşıması aynı özellik değildir. Kısır bir hayvanın hücrelerinde kalıtsal bilgi bulunabilir.",
+        "Doğru. Gözlenen yaşamsal süreçler sürer; yavru oluşturma yeterliliğinin olmaması bireyin canlılığını ortadan kaldırmaz.",
+        "Beslenme, büyüme ve uyarıya yanıt enerji dönüşümleriyle ilişkilidir. Yavru oluşturmamak enerji gereksinimini sıfırlamaz."
+      ],
+      "commonError": "Üremeyi türün veya soyun devamındaki rolüyle değil, her bireyin o anda canlı sayılmasının zorunlu koşulu olarak yorumlamak.",
+      "check": "Canlı değil sonucunu seçseydin sorudaki büyüme ve tepki gözlemlerini açıklayamazdın. Doğru yorum bu gözlemleri korurken yalnız üreme yeterliliğini sınırlar."
+    }
+  },
+  {
+    "id": "ns-life-3",
+    "identity": "[\"ns-life-3\",\"Karanlıkta, uygun su ve sıcaklıkta çimlenen bir tohumun ilk günlerde kökü uzuyor. Bu büyümeyi açıklayan en uygun süreç hangisidir?\",\"\",[\"Depo organik maddelerin yıkımıyla ATP sağlanması ve yeni yapıların sentezi\",\"Işık olmadığı hâlde kesintisiz fotosentez yapılması\",\"İnorganik minerallerin organik yakıt gibi yakılması\",\"Enerji kullanılmadan yeni hücre duvarları oluşması\",\"Tohumun süresiz olarak besin kaynağına ihtiyaç duymaması\"],0,\"Tohum depo besinlerini kullanarak enerji aktarımı yapabilir. Elde edilen ATP yapım süreçlerini destekler; o anda fotosentez zorunlu değildir. Sınırlı rezerv, karanlıkta süresiz büyüme anlamına gelmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir tohum başlangıçta organik depo besinleri taşıyabilir. Bu maddelerin yıkımı enerji aktarımına, ATP ise hücresel yapım işlerine katkı verir. Yeni yapılar için hem yapı taşı hem enerji gerekir; o anda ışıkla organik madde üretmek tek olası başlangıç kaynağı değildir."
+      ],
+      "strategy": "Gözlenen kök büyümesi için madde ve enerji kaynağını ayrı izle; ışık yokluğu nedeniyle hangi kaynağın devre dışı olduğunu, tohumda hazır hangi kaynağın bulunabildiğini karşılaştır.",
+      "steps": [
+        "Kartta kökün gerçekten uzadığı ve ortamın karanlık olduğu belirtiliyor. Bu yüzden mevcut büyümeyi kesintisiz fotosentezle açıklamak uygun değildir.",
+        "Tohumun depo organik maddeleri yıkılarak ATP sağlanmasına ve yeni yapı taşlarının kullanılmasına katkı verebilir; büyüme yapım süreçlerini de içerir.",
+        "Depo yıkımıyla ATP sağlanması ve yeni yapıların sentezi birlikte gözlemi açıklar. Rezervin sınırlı olması, karanlıkta süresiz büyüme sonucunu vermez."
+      ],
+      "optionReasons": [
+        "Doğru. Hazır organik rezervler enerji ve madde kaynağı olabilir; ATP destekli sentezler kökün ilk büyümesini açıklayabilir.",
+        "Karanlıkta kesintisiz fotosentez varsayımı ışık gereksinimini yok sayar. Gözlem için tohumun hazır organik rezervleri yeterli açıklama sunar.",
+        "Mineral elementlerin büyümede görevleri olsa da bunları tohumun organik depo yakıtının yerine koymak doğru değildir; organik yakıt gibi yakıldıkları verilmemiştir.",
+        "Yeni hücresel yapıların kurulmasını enerji gerektirmeyen bir olay saymak yanlıştır. ATP aktarımı ile yapım süreçleri arasında ilişki vardır.",
+        "Sınırlı organik depo ilk günleri destekleyebilir; bundan tohumun süresiz olarak yeni madde ve enerji kaynağı istemeyeceği sonucu çıkarılamaz."
+      ],
+      "commonError": "Bütün bitkilerin her büyüme anında fotosentez yaptığını sanmak veya depo besin yıkımıyla yapı sentezini birbirini dışlayan olaylar gibi görmek.",
+      "check": "Açıklaman hem karanlık koşulunu hem gözlenen büyümeyi karşılamalıdır. Depo kullanımı ikisini birleştirir; sınırsız rezerv veya karanlıkta ışık üretimi gerektirmez."
+    }
+  },
+  {
+    "id": "ns-life-4",
+    "identity": "[\"ns-life-4\",\"Egzersizde vücut sıcaklığı artan bir insanda ter salgılanıyor ve terin buharlaşması ısı kaybına katkı veriyor. Bu olay hangi yorumu destekler?\",\"\",[\"İç ortam hiçbir zaman değişmez.\",\"Bütün canlılar aynı vücut sıcaklığını korur.\",\"Terin yalnız yüzeyde bulunması her koşulda aynı soğutmayı yapar.\",\"Terleme tek başına kalıtsal adaptasyonun oluştuğunu gösterir.\",\"Değişime karşı düzenleyici yanıt, iç ortamı uygun aralığa yaklaştırır.\"],4,\"Isınma algılanır ve karşı yönde bir yanıt oluşur. Buharlaşma çevreden enerji alarak soğutmaya katkıda bulunur. Bu dinamik düzenleme, bütün canlıların aynı sıcaklığa sahip olduğunu söylemez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Homeostazi iç ortamı uygun bir aralıkta tutan dinamik düzenlemedir. Sıcaklık sapmasına verilen bir yanıt sapmayı azaltabilir. Suyun sıvıdan gaz hâline geçerken enerji alması, terin buharlaşmasının deri üzerinden ısı uzaklaştırmasına katkı verir."
+      ],
+      "strategy": "Önce iç ortamda hangi yönde bir değişim olduğunu belirle, ardından yanıtın bu değişimi artıran mı azaltan mı yönde olduğunu izle; anlık düzenlemeyi nesillerdeki kalıtsal değişimden ayır.",
+      "steps": [
+        "Egzersiz sırasında vücut sıcaklığı artıyor; yani iç ortamın hiç değişmediği söylenemez. Başlangıçtaki olay bir sıcaklık sapmasıdır.",
+        "Ter salgılanması ve terin buharlaşması ısı kaybına katkı verir. Bu yanıt sıcaklık artışına karşı yönde etki ederek uygun aralığa yaklaşmayı destekler.",
+        "Olay, değişime karşı düzenleyici bir yanıttır. Tek kişideki bu süreç bütün canlılar için aynı sıcaklık veya yeni bir kalıtsal adaptasyon göstermez."
+      ],
+      "optionReasons": [
+        "Sıcaklığın arttığı soruda açıkça belirtilmiştir. Düzenleme olması, iç ortamın başlangıçta veya her an hiç değişmediği anlamına gelmez.",
+        "Kart bir insandaki olayı verir; bütün türlerin aynı vücut sıcaklığını koruduğuna ilişkin karşılaştırma içermez.",
+        "Soğutmaya katkı buharlaşmayla ilişkilidir. Sıvının yalnız cilt üzerinde durması aynı miktarda enerji uzaklaştırılacağını garanti etmez.",
+        "Terleme bireydeki anlık bir fizyolojik yanıttır; bu gözlem tek başına nesillerde kalıtsal özelliklerin seçilmesini veya yeni adaptasyon oluşmasını göstermez.",
+        "Doğru. Isı artışına karşı ısı kaybını artıran yanıt, iç ortamı uygun sınırlara yaklaştıran dinamik düzenlemeyi örnekler."
+      ],
+      "commonError": "Homeostaziyi bütün değerlerin hiç değişmemesi sanmak veya bir bireyin anlık terlemesini yeni bir kalıtsal adaptasyonla eşitlemek.",
+      "check": "Sapma “ısınma”, karşı yanıt “ısı kaybına katkı” biçiminde zıt yönlüdür. Bu yön karşılaştırması düzenleyici yanıt yorumunu destekler; tam sabitlik iddiasını gerektirmez."
+    }
+  },
+  {
+    "id": "ns-life-5",
+    "identity": "[\"ns-life-5\",\"Bir kişinin düzenli egzersizle kaslarının gelişmesi neden tek başına kalıtsal adaptasyon örneği sayılmaz?\",\"\",[\"Canlılar çevre koşullarına yanıt veremez.\",\"Büyüme yalnız hücrelerin su kaybetmesidir.\",\"Bireysel değişim, nesiller boyunca kalıtsal özelliklerin seçilmesiyle aynı süreç değildir.\",\"Kaslar canlı doku değildir.\",\"Egzersiz sırasında metabolizma tamamen durur.\"],2,\"Adaptasyon kalıtsal özelliklerin nesiller boyunca yaşama ve üreme başarısıyla ilişkilidir. Bir bireyin yaşamı sırasında kas geliştirmesi, bu değişimin kalıtsal olarak nesillerce seçildiğini tek başına kanıtlamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir bireyin yaşamı boyunca çevre ve etkinliklerine bağlı olarak değişebilmesi fenotipik esneklikle ilişkilidir. Kalıtsal adaptasyon ise bir çevrede yaşama ve üreme başarısını etkileyen kalıtsal özelliklerin nesillerdeki seçilimiyle ele alınır."
+      ],
+      "strategy": "Olayın gerçekleştiği zaman ve biyolojik ölçeği işaretle; bireydeki değişimi göstermeye yeten kanıtla kalıtsal aktarım ve nesillerde seçilimi göstermeye gereken kanıtı karşılaştır.",
+      "steps": [
+        "Veri, tek bir kişinin düzenli egzersizden sonra kaslarının gelişmesidir. Bu, bireyin yaşamı içinde gerçekleşen bir değişimdir.",
+        "Kartta bu değişimin kalıtsal olarak yavrulara aktarıldığı veya nesiller boyunca seçildiği gösterilmiyor. Bireysel gelişim bu kanıtların yerine geçmez.",
+        "Bu nedenle gözlem tek başına kalıtsal adaptasyon sayılmaz: bireyde değişim ile nesillerde kalıtsal özelliklerin seçilmesi farklı süreçlerdir."
+      ],
+      "optionReasons": [
+        "Canlıların çevreye yanıt veremediği iddiası egzersizle gelişen kas gözlemiyle de çelişir. Adaptasyon kanıtı olmaması, yanıtın hiç oluşmadığı anlamına gelmez.",
+        "Büyümeyi yalnız su kaybına indirgemek doğru değildir; su kaybı kas gelişiminin genel tanımı değildir. Sorulan ayrım birey ve nesil ölçekleridir.",
+        "Doğru. Tek kişinin yaşamındaki değişim, kalıtsal aktarım ve nesiller boyunca seçilimin birlikte gösterildiği bir kanıt değildir.",
+        "Kas canlı hücrelerden oluşan bir dokudur. Dokuya canlı değil demek, kalıtsal adaptasyon ile bireysel gelişim arasındaki farkı açıklamaz.",
+        "Egzersizde enerji aktarımı ve metabolizma sürer. Metabolizmanın tamamen durduğu iddiası hem olayla hem canlı doku işleyişiyle bağdaşmaz."
+      ],
+      "commonError": "Çevreyle ilişkili her yararlı bireysel değişimin kalıtsal olduğunu ve adaptasyonun tek kişinin yaşamında oluştuğunu varsaymak.",
+      "check": "Kartta nesiller, kalıtsal aktarım ve farklı üreme başarısı verisi bulunup bulunmadığını sor. Yalnız egzersiz ve bireysel kas gelişimi bu üç kanıtı sağlamaz."
+    }
+  },
+  {
+    "id": "ns-method-1",
+    "identity": "[\"ns-method-1\",\"Aynı tür ve başlangıç boyundaki bitkilere eşit su veriliyor; yalnız günlük ışık süresi 2, 4 ve 6 saat olarak değiştiriliyor. Bir hafta sonundaki boy uzaması ölçülüyor. Bağımsız ve bağımlı değişken sırasıyla hangisidir?\",\"\",[\"Su miktarı — bitki türü\",\"Başlangıç boyu — ışık süresi\",\"Işık süresi — boy uzaması\",\"Boy uzaması — su miktarı\",\"Bitki türü — deney süresi\"],2,\"Değiştirilen koşul ışık süresi olduğundan bağımsız değişkendir. Ölçülen boy uzaması bağımlı değişkendir. Eşit tutulan su miktarı bağımsız değişken olarak okunmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bağımsız değişken araştırmacının etkisini sınamak için değiştirdiği faktördür. Bağımlı değişken sonuç olarak ölçülen yanıttır. Kontrol edilen değişkenler ise hedef etkiye karışmasın diye aynı tutulan koşullardır; adları her deneyde aynı role sahip değildir."
+      ],
+      "strategy": "Deneyde “değiştirilen”, “ölçülen” ve “eşit tutulan” bilgilerini üç ayrı sütuna dağıt; soru iki rolü belirli sırayla istediği için seçeneğin ilk ve ikinci bölümünü ayrı denetle.",
+      "steps": [
+        "Günlük ışık süresi 2, 4 ve 6 saat olarak araştırmacı tarafından değiştiriliyor. Bu deneyin bağımsız değişkeni bu süredir.",
+        "Bir hafta sonundaki boy uzaması ölçülüyor; ölçülen yanıt bağımlı değişkendir. Su, tür ve başlangıç boyu aynı tutuluyor.",
+        "İstenen sıra bağımsız–bağımlı olduğundan ışık süresi–boy uzaması eşleştirmesi seçilir; ölçüm zamanı olan bir hafta da gruplar arasında değiştirilmiyor."
+      ],
+      "optionReasons": [
+        "Su miktarı eşit tutulmuş, bitki türü de aynı seçilmiştir. Bu ikili değiştirilen faktör ile ölçülen yanıtı vermez.",
+        "Başlangıç boyu kontrol edilen koşuldur; ışık süresi ise bağımlı değil bağımsız değişkendir. Her iki rol yanlış yerleştirilmiştir.",
+        "Doğru. Değiştirilen günlük ışık süresi bağımsız, deney sonunda ölçülen boy uzaması bağımlı değişkendir.",
+        "Boy uzaması araştırmacının doğrudan belirlediği faktör değil ölçülen sonuçtur; su da bu deneyde ölçülen yanıt olarak verilmemiştir.",
+        "Bitki türü ve deney süresi aynı tutulmuştur. Sabit koşulları istenen bağımsız–bağımlı rollerine yerleştirmek doğru değildir."
+      ],
+      "commonError": "Deneyde adı geçen her koşulu bağımsız değişken sanmak veya ölçülen uzamayı onu değiştiren uygulamayla aynı role koymak.",
+      "check": "Seçtiğin ikilide ilk terimin farklı düzeyleri uygulanmış, ikinci terimi ise sonuç olarak ölçülmüş olmalı; sabitler listesi bu ikilinin dışında kalır."
+    }
+  },
+  {
+    "id": "ns-method-2",
+    "identity": "[\"ns-method-2\",\"Bir bitki grubuna hem daha çok ışık hem daha çok su verilen deneyde bu grubun daha fazla uzadığı görülüyor. Hangi sonuç bu tasarımla tek başına kurulamaz?\",\"\",[\"Uzamadaki farkın yalnız ışık süresinden kaynaklandığı\",\"İki grupta en az iki koşulun farklı olduğu\",\"Grupların uzama miktarlarının farklı olduğu\",\"Su miktarının da olası etkiler arasında bulunduğu\",\"Işığın etkisini ayırmak için karşılaştırmanın yeniden düzenlenebileceği\"],0,\"Işık ve su aynı anda değiştirildiği için sonuç farkını yalnız ışığa bağlamak mümkün değildir. Gözlenen fark kaydedilebilir; tek neden iddiası için diğer koşulların kontrol edilmesi gerekir.\"]",
+    "guidance": {
+      "knowledge": [
+        "İki koşul aynı anda değiştiğinde gruplar arası sonuç farkı gözlenebilir; fakat her koşulun payı bu karşılaştırmadan ayrı ayrı çıkarılamayabilir. Tek etkenin etkisini incelemek için diğer ilgili koşulları eşleyen bir karşılaştırma gerekir."
+      ],
+      "strategy": "Gözlenen farkı, bu farka atanan tek neden iddiasından ayır. Hangi iki faktörün birlikte değiştiğini listeleyip seçeneklerin gözlem mi yoksa ayrıştırılmamış neden iddiası mı olduğunu denetle.",
+      "steps": [
+        "Deney grubunda ışık ve su birlikte artırılmıştır. Bu tasarımda iki değişkenin etkisi birbirinden ayrılmamıştır.",
+        "Daha fazla uzama gözlemi kaydedilebilir; suyun etkili olması, ışığın etkili olması veya birlikte etki etmeleri verilenle bağdaşabilir.",
+        "Bu nedenle farkın yalnız ışık süresinden kaynaklandığı sonucu tek başına kurulamaz. Işığı ayırmak için örneğin su miktarı eşlenmiş gruplar gerekir."
+      ],
+      "optionReasons": [
+        "Doğru. “Yalnız ışık” ifadesi suyun veya ortak etkinin payını dışlar; iki faktör birlikte değiştirildiği için bu dışlama desteklenmez.",
+        "Hem daha fazla ışık hem daha fazla su verildiği açık olduğundan en az iki koşulun farklı olduğu doğrudan tasarımdan okunabilir.",
+        "Daha fazla uzama gözlemi soruda verilmiştir. Nedeni tek başına ayıramamak, bu gözlemin kaydedilemeyeceği anlamına gelmez.",
+        "Su da değiştirildiği için olası etkiler arasında tutulmalıdır. Bu, suyun tek neden olduğunun kanıtlandığı iddiası değildir.",
+        "Sabit suyla farklı ışık gibi yeni karşılaştırmalar kurulabilir. Tasarımı yeniden düzenleme gereği, mevcut karşılaştırmanın sınırlılığıyla uyumludur."
+      ],
+      "commonError": "Birlikte değişen ışık ve sudan yalnız birini sonuç farkının kesin ve tek nedeni saymak; gözlem ile nedensel açıklamayı eşitlemek.",
+      "check": "Aynı verinin “su da etkiliydi” açıklamasını dışlayıp dışlamadığını sor. Dışlamıyorsa yalnız ışığa bağlayan seçenek fazla kesinlik içerir."
+    }
+  },
+  {
+    "id": "ns-method-3",
+    "identity": "[\"ns-method-3\",\"Bir araştırmacı, her ölçümde gerçek boydan 2 cm fazla gösteren cetvelle aynı bitkiyi 100 kez ölçüyor. Yalnız ölçüm sayısını artırmak neyi garanti etmez?\",\"\",[\"Ölçümlerin karşılaştırılabilmesini\",\"Ölçüm değerlerinin kaydedilmesini\",\"Rastgele değişimin değerlendirilebilmesini\",\"Aynı aracın tekrar kullanılabilmesini\",\"Cetvelin sistematik hatasının ortadan kalkmasını\"],4,\"Tekrarlar rastgele değişimi değerlendirmeye yardım eder. Fakat kalibrasyon hatası her ölçüme 2 cm ekliyorsa çok sayıda tekrar bu sistematik etkiyi kendiliğinden düzeltmez; aracın ayarı kontrol edilmelidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Rastgele değişim ölçümler arasında saçılma oluşturabilir; tekrar bu saçılmayı değerlendirmeye yardım eder. Sistematik hata ise ölçümleri aynı yönde kaydırır. Her okumaya eklenen sabit miktar, okumaların ortalamasına da aynı miktarda eklenir."
+      ],
+      "strategy": "Cihazın her okumaya yaptığı işlemi sembolle yaz; çok sayıda okumayı ortalarken bu sabit kaymanın kaybolup kaybolmadığını, rastgele saçılmadan ayrı sınayarak ilerle.",
+      "steps": [
+        "Gerçek boy x ise cetvelin gösterdiği değer x+2 cm’dir. Her ölçümde aynı yönde 2 cm fazlalık bulunur.",
+        "Yüz okumanın ortalaması alınsa bile aynı sabit hata her terimde yer alır; ortalamadaki kayma da 2 cm olarak kalır.",
+        "Yalnız tekrar sayısının artması sistematik hatayı ortadan kaldırmayı garanti etmez. Referans uzunlukla kontrol veya kalibrasyon gibi ayrı işlem gerekir."
+      ],
+      "optionReasons": [
+        "Aynı araçla elde edilen değerler karşılaştırılabilir; ortak kaymanın bulunması mutlak doğruluğu bozar ama değerlerin yan yana incelenmesini engellemez.",
+        "Tekrar edilen sayısal değerler kayda alınabilir. Kayıt tutmak cihazın doğru göstermesiyle aynı özellik değildir.",
+        "Tekrarlar arasında rastgele saçılma bulunup bulunmadığı incelenebilir; bu inceleme her okumadaki sabit 2 cm yanlılığı kendiliğinden düzeltmez.",
+        "Aynı cetvelin tekrar kullanılması mümkündür; sorun aracın kullanılabilirliği değil, sabit kalibrasyon hatasının devam etmesidir.",
+        "Doğru. Her okumaya eklenen 2 cm çok sayıda tekrarın ortalamasında da kalır; tekrar sayısı sistematik hatayı otomatik sıfırlamaz."
+      ],
+      "commonError": "Ölçüm sayısı büyüyünce cihazın her değere eklediği sabit hatanın da rastgele sapmalar gibi ortalamada yok olacağını sanmak.",
+      "check": "Yüz kez aynı x+2 okunursa ortalama [100×(x+2)]/100=x+2 olur. Bu basit uç durum bile sistematik kaymanın sürmesini gösterir."
+    }
+  },
+  {
+    "id": "ns-method-4",
+    "identity": "[\"ns-method-4\",\"Diğer koşulları eşit tutulan aynı bitki türünde günlük 2, 4 ve 6 saat ışık için ortalama uzamalar sırasıyla 1, 2 ve 3 cm ölçülüyor. Hangi ifade verinin kapsamını korur?\",\"\",[\"Bütün bitkilerde 24 saat ışık en yüksek uzamayı sağlar.\",\"Bu deneyin incelenen aralığında ışık süresiyle uzama birlikte artmıştır.\",\"Uzama miktarı yalnızca su miktarına bağlıdır.\",\"Işık almayan bütün bitkiler anında ölür.\",\"Aynı sonuç her sıcaklıkta kesinlikle elde edilir.\"],1,\"Veriler yalnız belirtilen tür ve koşullarda, incelenen aralıkta artışı gösterir. 24 saat ışık, başka türler veya başka sıcaklıklar deneyde sınanmadığından bu alanlara kesin sonuç taşınamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir verinin kapsamı incelenen tür, uygulama düzeyleri, süre ve diğer koşullarla sınırlıdır. Ölçülmüş noktalar arasında bir eğilim görmek, sınanmayan düzeylerde aynı eğilimin süreceğini veya bütün canlılarda aynı sonucu vereceğini tek başına göstermez."
+      ],
+      "strategy": "Işık ve uzama değerlerini sıralı çiftler hâlinde eşleştir; yalnız ölçülen çiftlerdeki yönü belirleyip her seçenekte tür, sıcaklık veya aralık kapsamının genişletilip genişletilmediğine bak.",
+      "steps": [
+        "Verilen çiftler 2 saat–1 cm, 4 saat–2 cm ve 6 saat–3 cm’dir. İncelenen noktalarda ışık süresi arttıkça ortalama uzama artmıştır.",
+        "Kart aynı tür ve eşit diğer koşullar için veri verir. 24 saat ışık, sıfır ışık, başka türler veya başka sıcaklıklar ölçülmemiştir.",
+        "Kapsamı koruyan ifade, bu deneyin incelenen aralığında iki niceliğin birlikte arttığıdır. Ölçülmeyen alanlar için kesin sonuç eklenmez."
+      ],
+      "optionReasons": [
+        "24 saat ışık ölçülmemiş ve bütün bitki türleri araştırılmamıştır. Hem aralığı hem tür kapsamını genişleten en yüksek uzama iddiası desteklenmez.",
+        "Doğru. İfade yalnız bu deney ve incelenen aralıkla sınırlıdır; üç veri çiftindeki artış yönünü doğru betimler.",
+        "Su eşit tutulmuştur ve su düzeyleri karşılaştırılmamıştır. Uzamanın yalnız suya bağlı olduğu sonucu bu veriden çıkarılamaz.",
+        "Sıfır saat ışık veya anında ölüm ölçülmemiştir. Karanlıkta kalan bütün bitkilere ilişkin bu kesin iddia verilenin dışındadır.",
+        "Başka sıcaklıklar sınanmamıştır. Bir sıcaklık koşulundaki örüntüyü bütün sıcaklıklara kesin taşımak kapsamı aşar."
+      ],
+      "commonError": "Üç ölçüm noktasındaki artışı sınırsız doğrusal artış sanıp 24 saate, başka türlere veya bütün sıcaklıklara kesin olarak uzatmak.",
+      "check": "Seçtiğin cümlenin her bölümünü tabloda bir karşılığıyla eşleştir. 2–6 saat aralığı ve bu tür bulunur; 24 saat ve bütün sıcaklıklar bulunmaz."
+    }
+  },
+  {
+    "id": "ns-method-5",
+    "identity": "[\"ns-method-5\",\"Bilimsel teori ile bilimsel yasa arasındaki ilişkiyi en doğru açıklayan ifade hangisidir?\",\"\",[\"Her teori zaman geçince mutlaka yasaya dönüşür.\",\"Yasalar hiçbir gözleme dayanmaz.\",\"Teoriler yalnız ölçülmemiş kişisel görüşlerdir.\",\"Teori açıklayıcı çerçeve, yasa ilişkileri betimleyen ifade olabilir; zorunlu bir terfi sırası yoktur.\",\"Bir yasa bulunduğunda o alanda araştırma yapılamaz.\"],3,\"Kanıtları ilişkilendiren bir açıklama olan teori, yeterince bekleyince yasaya dönüşmez. Teori ve yasa farklı işlevler görebilir; ikisi de bilimsel değerlendirme ve yeni bulgularla ele alınır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bilimsel teori, çok sayıda kanıtı ilişkilendiren açıklayıcı bir çerçeve olabilir. Bilimsel yasa ise belirli koşullarda gözlenen düzenlilikleri ve ilişkileri betimleyebilir. Bu farklı işlevler birinin diğerine zamanla terfi ettiği bir güven sırası oluşturmaz."
+      ],
+      "strategy": "Her seçeneğin teoriye ve yasaya yüklediği işlevi ayır; açıklama–betimleme farkını, kanıtla ilişkisi olmayan görüş veya zorunlu terfi iddiasından ayırarak karşılaştır.",
+      "steps": [
+        "Teoriyi günlük dildeki ölçülmemiş kişisel tahmin olarak değil, bilimsel kanıtlarla desteklenen açıklayıcı yapı olarak ele al.",
+        "Yasa belirli ilişkileri betimleyebilir; betimleme ile açıklama aynı işlev değildir. Daha uzun süre geçmesi bir işlevi ötekine dönüştüren koşul değildir.",
+        "Bu nedenle açıklayıcı çerçeve–betimleyici ilişki ayrımını koruyan ve zorunlu terfi sırası kurmayan ifade doğrudur. Yeni bulgular her iki tür bilgiyi de değerlendirmeyi sürdürebilir."
+      ],
+      "optionReasons": [
+        "Teoriler zaman geçtikçe mutlaka yasaya dönüşmez. Açıklayıcı ve betimleyici işlevler aynı merdivenin alt–üst basamağı değildir.",
+        "Bilimsel yasa gözlem ve kanıtlarla ilişkilidir; hiçbir gözleme dayanmadığı ifadesi bilimsel değerlendirme bağlamını ortadan kaldırır.",
+        "Bilimsel teoriyi yalnız ölçülmemiş kişisel görüş saymak, kanıtları ilişkilendiren açıklayıcı çerçeve anlamıyla çelişir.",
+        "Doğru. Teori ile yasa farklı işlevler görebilir; bu ayrım zaman veya doğrulanma sayısıyla zorunlu bir terfi sırası kurulmasını gerektirmez.",
+        "Bir yasa bulunması yeni ölçüm, kapsam sınaması veya açıklama arayışını bitirmez. Bilimsel araştırma o alanda sürdürülebilir."
+      ],
+      "commonError": "Günlük dildeki teori sözcüğünü bilimsel teoriyle eşitleyip teori–yasa ilişkisini az kanıttan kesin bilgiye giden zorunlu sıra sanmak.",
+      "check": "Bir düzenliliği betimleyen ifade ile onu açıklayan çerçevenin birlikte bulunabildiğini düşün. Birinin varlığı ötekinin yasaya dönüşmesini veya araştırmanın bitmesini gerektirmez."
+    }
+  },
+  {
+    "id": "ns-mineral-1",
+    "identity": "[\"ns-mineral-1\",\"Hemoglobinin hem grubu ve klorofilin merkezinde bulunan mineral sırasıyla hangi seçenekte doğru eşleştirilmiştir?\",\"\",[\"Demir — magnezyum\",\"Magnezyum — demir\",\"İyot — sodyum\",\"Kalsiyum — iyot\",\"Potasyum — fosfor\"],0,\"Hemoglobinin hem grubunda demir bulunur; klorofilin merkezinde magnezyum yer alır. İki mineralin biyolojik açıdan önemli olması birbirinin yerini aldıkları anlamına gelmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hemoglobin oksijen taşınmasında görevli bir proteindir; onun hem grubunda demir bulunur. Klorofil ışığı soğuran bir pigmenttir ve merkezindeki mineral magnezyumdur. Yapıya katılan element ile molekülün bütünü ayrı kavramlardır."
+      ],
+      "strategy": "Sorulan iki yapıyı verilen sırayla yaz; her birinin ayırt edici mineralini ayrı eşleştir ve seçeneğin ikinci eşleştirmesini de birinciden bağımsız denetle.",
+      "steps": [
+        "İlk yapı hemoglobinin hem grubudur; bu grupta demir yer alır. İlk sıraya demir yazılmalıdır.",
+        "İkinci yapı klorofilin merkezidir; burada magnezyum bulunur. İkinci sıraya magnezyum yazılmalıdır.",
+        "Sıra demir–magnezyumdur. Elementlerin ikisinin de biyolojik görevli olması, bu yapılarda yerlerinin değişebileceği anlamına gelmez."
+      ],
+      "optionReasons": [
+        "Doğru. Hem grubunun demiri ve klorofil merkezinin magnezyumu sorudaki sırayla eşleştirilmiştir.",
+        "İki mineralin yeri ters çevrilmiştir. Magnezyum klorofil merkeziyle, demir ise hem grubuyla ilişkilidir.",
+        "İyot tiroit hormonlarıyla, sodyum çeşitli iyonik işlevlerle ilişkilidir; bu ikili hem ve klorofil merkezi eşleşmesini vermez.",
+        "Kalsiyumun yapısal ve düzenleyici görevleri vardır, iyot tiroit hormonlarında yer alır; hiçbiri sorulan iki merkezin doğru sıralı karşılığı değildir.",
+        "Potasyumun iyonik ve fosforun fosfatlı yapılardaki rolleri, hemde demir ve klorofilde magnezyum bulunması eşleşmesinin yerine geçmez."
+      ],
+      "commonError": "Hemoglobin ve klorofilin ikisini de önemli molekül sayıp merkez minerallerini ters yazmak veya bütün mineralleri birbirinin yerine geçebilir sanmak.",
+      "check": "Yanıtı iki ayrı cümleye çevir: “Hem grubunda Fe bulunur” ve “klorofil merkezinde Mg bulunur.” İkisinin de doğru olması gerekir."
+    }
+  },
+  {
+    "id": "ns-mineral-2",
+    "identity": "[\"ns-mineral-2\",\"DNA, ATP ve fosfolipitlerde fosfat içeren gruplar bulunması hangi sonucu destekler?\",\"\",[\"Üç molekülün bütün görevleri aynıdır.\",\"Fosfor insan hücresinde organik yakıt gibi yakılır.\",\"Aynı mineral bileşeni farklı görevli yapılara katılabilir.\",\"DNA’nın tek görevi enerji aktarımıdır.\",\"Bütün mineraller DNA’nın aynı bölümünün yerine geçebilir.\"],2,\"Fosfat içeren gruplar DNA’nın bilgi taşıyan yapısında, ATP’de ve zar fosfolipitlerinde bulunabilir. Ortak parça bu molekülleri aynı işlevli yapmaz; fosforun yakıt gibi enerji verdiğini de göstermez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir element veya yapı parçası farklı moleküllerde bulunabilir. Fosfat grupları DNA’nın şeker–fosfat omurgasına, ATP’nin yapısına ve fosfolipitlerin baş bölgesine katılır. Bütün molekülün işlevini yalnız ortak parçası belirlemez."
+      ],
+      "strategy": "Üç molekülün ortak yapı parçasını belirledikten sonra bütün moleküllerin rollerini ayrı tut; ortaklık bilgisinin hangi sınırlı çıkarımı desteklediğini, hangi özdeşlikleri gerektirmediğini karşılaştır.",
+      "steps": [
+        "DNA, ATP ve fosfolipitlerde ortak olarak fosfat içeren gruplar veriliyor. Bu, farklı moleküllerde fosfor içeren yapı parçalarının bulunabildiği gözlemidir.",
+        "DNA bilgiyle, ATP hücresel enerji aktarımıyla, fosfolipitler zar yapısıyla ilişkilidir. Ortak fosfat bulunması bu bütünlerin görevlerini eşitlemez.",
+        "Desteklenen sonuç, aynı mineral bileşenin farklı görevli yapılara katılabilmesidir. Bu bilgi fosforun insan için yakıt olması veya her mineralin aynı işi yapması anlamına gelmez."
+      ],
+      "optionReasons": [
+        "Ortak fosfat grubu bütün molekülleri özdeş kılmaz. DNA, ATP ve zar fosfolipitleri farklı yapı ve görev bağlamlarına sahiptir.",
+        "ATP’de fosfor bulunması fosforun organik yakıt gibi yakıldığı anlamına gelmez. Bir yapıya katılma ile besinsel enerji kaynağı olma farklıdır.",
+        "Doğru. Fosfat içeren grupların üç farklı yapıda bulunması, aynı bileşenin farklı görevli moleküllere katılabildiğini gösterir.",
+        "DNA’nın fosfat içermesi onun yalnız enerji aktarımı yaptığı anlamına gelmez; kalıtsal bilgi rolü ATP’nin rolüyle eşitlenemez.",
+        "Kart yalnız fosfat gruplarını verir. Bütün minerallerin DNA’da birbirinin yerini alabildiği sonucu bu ortaklıktan çıkarılamaz."
+      ],
+      "commonError": "Moleküllerde ortak bir element görünce bütün moleküllerin aynı işlevli olduğunu veya o elementin tek başına yakıt olduğunu sanmak.",
+      "check": "“Ortak parça” ile “aynı molekül” cümlelerini ayır. Fosfat ortaklığı korunurken DNA’nın, ATP’nin ve fosfolipidin farklı görevleriyle çelişmeyen seçenek aranmalıdır."
+    }
+  },
+  {
+    "id": "ns-mineral-3",
+    "identity": "[\"ns-mineral-3\",\"Tiroit hormonlarının yapısına katılan bir elementin görevini soran biyoloji sorusunda hangi mineral seçilmelidir?\",\"\",[\"Kalsiyum\",\"Sodyum\",\"Magnezyum\",\"Demir\",\"İyot\"],4,\"İyot tiroit hormonlarının yapısıyla ilişkilidir. Demiri hemoglobinle, magnezyumu klorofille ilişkilendiren bilgiler iyodun bu görevini değiştirmez; bu eşleştirme tek başına sağlık tanısı veya doz önerisi değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "İyot, tiroit hormonlarının yapısına katılan elementtir. Minerallerin biyolojik görevleri farklıdır: demir hem grubuyla, magnezyum klorofille, kalsiyum sert doku ve bazı hücresel süreçlerle ilişkilidir. Bir görevi öteki elemente taşımamak gerekir."
+      ],
+      "strategy": "Önce kartta adı verilen yapıyı tanı; genel olarak önemli bir mineral seçmek yerine yalnız o yapıya katıldığı bilinen elementi eşleştir ve diğer görevlerle karışmasını önle.",
+      "steps": [
+        "Sorulan yapı tiroit hormonlarıdır. Burada mineralin herhangi bir hücresel önemi değil, belirli hormonların yapısına katılması istenir.",
+        "Tiroit hormonlarının yapısına katılan element iyottur. Demir–hem ve magnezyum–klorofil eşleşmeleri başka moleküllere aittir.",
+        "Kalsiyumu kemik, kas ve pıhtılaşma; sodyumu iyon ve sıvı dengesi rolleriyle karşılaştır. Bu iki aday da sorulan tiroit hormonu yapı elementi eşleşmesini vermez; önceki adımda demir ve magnezyum da ayrıldığından yalnız iyot kalır."
+      ],
+      "optionReasons": [
+        "Kalsiyum kemik, kas işlevi ve pıhtılaşma gibi bağlamlarda önemlidir; bu görevler onu sorulan tiroit hormonu yapı elementi yapmaz.",
+        "Sodyumun sıvı dengesi ve elektriksel işleyişte rolleri bulunur; kartta istenen hormon yapısındaki element iyottur.",
+        "Magnezyumun klorofil ve bazı enzimlerle ilişkisi vardır; bu eşleştirmeyi tiroit hormonlarının yapısına aktarmak doğru değildir.",
+        "Demir hemoglobinin hem kısmıyla ilişkilidir. Oksijen taşıyan proteindeki bu görev, sorulan tiroit hormonu eşleştirmesi değildir.",
+        "Doğru. İyot tiroit hormonlarının yapısına katılan elementtir; seçenekler içinde bu belirli yapı ilişkisini karşılar."
+      ],
+      "commonError": "Biyolojik olarak önemli olduğu için demir veya kalsiyumu her yapı sorusunda seçmek; moleküle özgü element eşleştirmesini gözden kaçırmak.",
+      "check": "Yapı adını hormon olarak, elementi iyot olarak eşleştir. Hemoglobin ve klorofil isimleri kartta sorulsaydı başka elementlerin seçileceğini ayırt edebilmelisin."
+    }
+  },
+  {
+    "id": "ns-mineral-4",
+    "identity": "[\"ns-mineral-4\",\"Bir enzimin çalışması için protein olmayan bir metal iyonuna ihtiyaç duyulduğu belirtiliyor. Bu metal iyonunun rolü için en uygun ifade hangisidir?\",\"\",[\"Her durumda organik koenzimdir.\",\"İnorganik yardımcı, yani kofaktör olabilir.\",\"Enzimin amino asit dizisinin tamamıdır.\",\"Tepkimede yakılan organik yakıttır.\",\"Bütün diğer enzimlerin de aynı metale zorunlu olarak ihtiyaç duyduğunu kanıtlar.\"],1,\"Bazı enzimlerin protein dışı inorganik yardımcıları kofaktör olarak görev alır. Organik koenzimle aynı sınıflama değildir; bir enzimin bu ihtiyacı bütün enzimlere genellenemez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bazı enzimler protein kısmına ek olarak metal iyonu gibi inorganik bir yardımcı gerektirir. Bu iyon kofaktör görevi görebilir. Organik yardımcıya koenzim adı verilir; yardımcının gerekli olması onu substrat, yakıt veya polipeptidin bütünü yapmaz."
+      ],
+      "strategy": "Yardımcının kimyasal türünü ve deneydeki görevini ayrı belirle; metal iyonu olma bilgisini organik yardımcıdan ayır, tek enzimin gereksinimini bütün enzimlere yayma.",
+      "steps": [
+        "Soruda protein olmayan bir metal iyonu gerektiği açıkça belirtiliyor. Metal iyonu, amino asitlerden oluşan protein zinciri değildir.",
+        "Metal iyonu inorganik yardımcı olarak enzimin çalışmasına katkı verebilir; bu rol kofaktör olarak adlandırılabilir. Organik koenzimle aynı kimyasal tür değildir.",
+        "En uygun ifade inorganik yardımcı olabileceğidir. Bu tek örnek, bütün enzimlerin aynı metale veya herhangi bir yardımcıya zorunlu gereksinimini kanıtlamaz."
+      ],
+      "optionReasons": [
+        "Metal iyonu inorganiktir; koenzim terimi organik yardımcı için kullanılır. “Her durumda organik” ifadesi verilen kimyasal türle çelişir.",
+        "Doğru. Verilen metal iyonu, protein dışı inorganik yardımcı yani kofaktör rolünde bulunabilir.",
+        "Amino asit dizisi polipeptit protein kısmını oluşturur. Tek bir metal iyonu bu dizinin tamamı değildir.",
+        "Yardımcı olarak gerekli olmak, maddeden organik yakıt gibi enerji sağlandığı anlamına gelmez; metal iyonu zaten organik bir besin molekülü değildir.",
+        "Kart bir enzimin gereksinimini verir. Bu gereksinimi bütün diğer enzimlerin aynı metali zorunlu kullanması biçiminde genellemek desteklenmez."
+      ],
+      "commonError": "Gerekli her yardımcıyı organik koenzim sanmak veya tek bir metal gereksinimini bütün enzimlerin ortak özelliği saymak.",
+      "check": "Metal–inorganik yardımcı eşleşmesiyle protein–amino asit zinciri eşleşmesini ayrı tut. Doğru seçenek ikisini karıştırmadan yalnız verilen enzimin rolünü açıklar."
+    }
+  },
+  {
+    "id": "ns-mineral-5",
+    "identity": "[\"ns-mineral-5\",\"Kalsiyumun kemik yapısına katıldığı, kas kasılması ve pıhtılaşmayla da ilişkili olduğu bilgileri birlikte nasıl yorumlanır?\",\"\",[\"Yalnız kemikte bulunduğunu gösterir.\",\"Bütün minerallerin görevlerinin aynı olduğunu kanıtlar.\",\"Kalsiyumun organik bir enerji deposu olduğunu gösterir.\",\"Bir mineralin hem yapısal hem düzenleyici işlevleri bulunabilir.\",\"Daha fazla kalsiyum almanın her koşulda daha yararlı olduğunu kanıtlar.\"],3,\"Kalsiyum farklı yapılara katılabilir ve farklı süreçlerde görev alabilir. Yapısal ve düzenleyici roller birbirini dışlamaz. Bu bilgi bütün mineralleri eşdeğer yapmaz ve sınırsız alım önerisi vermez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Mineraller sert dokuların yapısına katılabildiği gibi iyon hâlinde çeşitli süreçlerde de görev alabilir. Kalsiyum kemik mineral yapısı, kas işlevi ve pıhtılaşma süreçleriyle ilişkilidir. Yapısal ve düzenleyici roller aynı elementte birlikte bulunabilir."
+      ],
+      "strategy": "Verilen görevleri “yapıya katılma” ve “sürece katkı” diye sınıflandır; sonra bu iki sınıfı birlikte koruyan ifadeyi seç, tek yerde bulunma veya sınırsız alım sonucunu ekleme.",
+      "steps": [
+        "Kemik yapısına katılma, kalsiyumun yapısal rolüne örnektir. Bu bilgi kalsiyumun yalnız kemikte bulunacağını söylemez.",
+        "Kas kasılması ve pıhtılaşmayla ilişki, farklı süreçlerdeki düzenleyici işlevlere örnek verir. Bunlar kemik rolüyle çelişmez.",
+        "Bir mineralin hem yapısal hem düzenleyici işlevleri bulunabilir. Bu sonuç bütün minerallerin eşdeğerliği veya daha çok alımın daima yararı anlamına gelmez."
+      ],
+      "optionReasons": [
+        "Kas ve pıhtılaşma işlevleri de verildiğinden kalsiyumu yalnız kemikle sınırlamak kartın diğer iki bilgisini dışarıda bırakır.",
+        "Aynı elementin birkaç rolü olması bütün mineral elementlerin görevlerini eşitlemez; genelleme verilen kalsiyum örneğinin dışına taşar.",
+        "Kalsiyum mineral elementtir; organik enerji deposu değildir. Yapısal veya düzenleyici görev görmek onu yakıta dönüştürmez.",
+        "Doğru. Kemik yapısındaki rol ile kas ve pıhtılaşma süreçlerindeki roller aynı mineralde birlikte bulunabilir.",
+        "Görev bilgisi miktar–yarar ilişkisini veya güvenli üst alımı vermez. Bu karttan her koşulda daha fazla alımın daha yararlı olduğu çıkarılamaz."
+      ],
+      "commonError": "Bir mineralin tek bir iyi bilinen görevini onun tek görevi sanmak; çok görevliliği de bütün minerallerin aynı olması veya sınırsız alım yararı diye yorumlamak.",
+      "check": "Önerilen yorum üç örneği de aynı anda kapsamalıdır. Kemik yapısı ile kas/pıhtılaşma süreçlerini birlikte koruyan ifade, kartın kapsamını aşmadan bunu sağlar."
+    }
+  },
+  {
+    "id": "ns-water-1",
+    "identity": "[\"ns-water-1\",\"Su molekülündeki O–H bağı ile iki su molekülü arasında kurulabilen hidrojen bağı sırasıyla nasıl sınıflanır?\",\"\",[\"İkisi de molekül içi iyonik bağdır.\",\"İkisi de aynı O–H bağının farklı adıdır.\",\"Moleküller arası kovalent — molekül içi hidrojen bağı\",\"Molekül içi kovalent bağ — moleküller arası etkileşim\",\"Nükleer bağ — peptit bağı\"],3,\"Oksijen ile hidrojeni aynı su molekülünde bağlayan O–H bağları kovalenttir. Su molekülleri arasında hidrojen bağları kurulabilir; bunlar aynı molekül içindeki O–H bağının başka adı değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir su molekülündeki O–H bağında atomlar elektron paylaşarak kovalent bağ oluşturur. Ayrı su molekülleri arasında hidrojen bağı kurulabilir; bu moleküller arası etkileşim, molekül içindeki O–H bağlantısının başka adı değildir."
+      ],
+      "strategy": "İki bağı önce konumlarına göre ayır: aynı molekül içi ve ayrı moleküller arası. Ardından bağ türlerini bu konumlarla eşleştir; sırası ters kurulmuş seçenekleri ayrıca denetle.",
+      "steps": [
+        "İlk bağlantı, aynı H₂O molekülündeki oksijen ile hidrojen arasındadır. Bu O–H bağlantısı molekül içi kovalent bağdır.",
+        "İkinci bağlantı iki ayrı su molekülü arasında kurulabilen hidrojen bağıdır; moleküller arası etkileşim olarak sınıflanır.",
+        "İstenen sıra molekül içi kovalent–moleküller arası etkileşimdir. Suyun buharlaşmasıyla bütün O–H bağlarının kesilmesi aynı olay değildir."
+      ],
+      "optionReasons": [
+        "O–H bağı bu soruda iyonik değildir; ayrıca iki su molekülü arasındaki etkileşimi de molekül içi saymak konum bilgisini yanlış kullanır.",
+        "Aynı moleküldeki O–H kovalent bağı ve iki molekül arasındaki hidrojen bağı, konum ve bağ niteliği bakımından ayrıdır; aynı bağın iki adı değildir.",
+        "Konumlar ters çevrilmiştir. İlk O–H bağlantısı aynı molekül içindedir; verilen hidrojen bağı ise iki ayrı molekül arasındadır.",
+        "Doğru. İlk bağ H₂O içindeki kovalent bağ, ikinci ise ayrı su molekülleri arasında kurulabilen etkileşimdir.",
+        "Nükleer bağ atom çekirdeği bağlamıdır; peptit bağı amino asit omurgasıyla ilişkilidir. Sorulan iki su bağlantısından hiçbiri bu eşleştirme değildir."
+      ],
+      "commonError": "Adında hidrojen geçen her bağlantıyı aynı sanmak; su molekülünü oluşturan kovalent bağla moleküllerin birbirini çekmesini birbirine karıştırmak.",
+      "check": "İki H₂O çizip her birinin O–H çizgilerini kendi sınırı içinde, hidrojen bağını ise iki molekül arasında göster. Seçtiğin ifade bu iki konumu doğru adlandırmalıdır."
+    }
+  },
+  {
+    "id": "ns-water-2",
+    "identity": "[\"ns-water-2\",\"25 °C’deki iki sulu çözeltinin pH değerleri 4 ve 6’dır. pH 4 olanın H⁺ derişimi, pH 6 olanınkinin kaç katıdır?\",\"\",[\"2\",\"100\",\"10\",\"1/2\",\"1/100\"],1,\"pH farkı 2’dir; 10²=100. Daha düşük pH daha yüksek H⁺ derişimine karşılık geldiği için pH 4 çözeltisindeki H⁺ derişimi 100 kat büyüktür; fark iki kat değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Okul düzeyindeki sulu çözelti yaklaşımında pH, hidrojen iyonu derişiminin onluk logaritmasıyla ters ilişkilidir. pH bir birim düştüğünde H⁺ derişimi yaklaşık on kat artar. pH sayıları oranı ile H⁺ derişimleri oranı aynı işlem değildir."
+      ],
+      "strategy": "Önce hangi çözeltinin H⁺ derişiminin daha büyük olması gerektiğini belirle; ardından pH farkını onluk kuvvete dönüştürerek istenen oranın yönünü kontrol et.",
+      "steps": [
+        "Karşılaştırılan oran [H⁺]pH4/[H⁺]pH6’dır. Düşük pH daha yüksek H⁺ derişimine karşılık geldiğinden bu oran 1’den büyük olmalıdır.",
+        "pH farkı 6−4=2 birimdir. Her basamak on kat olduğundan iki basamak 10×10=10² katsayısı verir.",
+        "İstenen oran 100’dür. 4/6 gibi pH sayılarını bölmek veya yalnız 6−4=2 farkını yanıt saymak logaritmik ilişkiyi kullanmaz."
+      ],
+      "optionReasons": [
+        "2 yalnız pH değerleri arasındaki farktır. İki basamaklık farkın H⁺ derişim oranına çevrilmesi için 10² alınmalıdır.",
+        "Doğru. pH 4 çözeltisinde H⁺ derişimi, pH 6 çözeltisindekinin 10^(6−4)=100 katıdır.",
+        "10 tek bir pH birimi farkının katsayısıdır. Burada fark iki birim olduğu için iki kez on kat artış gerekir.",
+        "1/2, pH farkının tersini oran sanmaktır. Ayrıca düşük pH çözeltisinin H⁺ derişimi daha büyük olması gerekirken bu sayı 1’den küçüktür.",
+        "1/100 ters yöndeki [H⁺]pH6/[H⁺]pH4 oranıdır. Kart pH 4’ün pH 6’ya oranını istemektedir."
+      ],
+      "commonError": "pH farkını doğrusal katsayı sanmak veya doğru onluk kuvveti bulsa bile pay ve payda yönünü ters çevirerek 1/100 seçmek.",
+      "check": "Yaklaşık derişimleri 10⁻⁴ ve 10⁻⁶ mol/L yaz: 10⁻⁴/10⁻⁶=10². Sonucun 1’den büyük olması düşük pH–yüksek H⁺ ilişkisiyle de uyumludur."
+    }
+  },
+  {
+    "id": "ns-water-3",
+    "identity": "[\"ns-water-3\",\"Terleme aynı miktarda sürerken çevre koşulları terin buharlaşmasını güçleştiriyor. Yalnız bu değişim için hangi yorum en uygundur?\",\"\",[\"Terin ciltte birikmesi buharlaşmadan her zaman daha fazla soğutur.\",\"Buharlaşma çevreye enerji verir.\",\"Terleme hiçbir zaman ısı aktarımıyla ilişkili değildir.\",\"Su molekülündeki bütün O–H bağları anında kopar.\",\"Buharlaşmayla yüzeyden uzaklaştırılan ısı azalabilir.\"],4,\"Buharlaşan su çevreden enerji alır. Buharlaşma azaldığında bu yolla uzaklaştırılan ısı da azalabilir; terin yalnız yüzeyde bulunması aynı soğutma etkisini garanti etmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Buharlaşma sıvının gaz hâline geçmesidir ve çevreden enerji alabilir. Deride buharlaşan ter ısı uzaklaştırmaya katkı verir. Salgılanan sıvı miktarıyla gerçekten buharlaşan miktar farklı niceliklerdir; ortam koşulları bu ikincisini değiştirebilir."
+      ],
+      "strategy": "Değişmediği söylenen ter salgısını, güçleşen buharlaşmadan ayır. Isı aktarımını sıvının yalnız varlığına değil hâl değiştirerek uzaklaşan bölümüne bağla.",
+      "steps": [
+        "Kartta terleme miktarı aynı kalırken buharlaşmanın güçleştiği belirtiliyor. Bu iki süreç eşit kabul edilmemelidir.",
+        "Buharlaşan su deriden veya çevresinden enerji alarak gaz fazına geçer. Daha az buharlaşma olduğunda bu yolla taşınan ısı azalabilir.",
+        "Bu yüzden en uygun yorum buharlaşmayla yüzeyden uzaklaştırılan ısının azalabilmesidir. Sıvının ciltte birikmesi aynı soğutmayı garanti etmez."
+      ],
+      "optionReasons": [
+        "Ciltte sıvı birikmesi, o sıvının buharlaşıp enerji aldığı anlamına gelmez. “Her zaman daha fazla” karşılaştırması için destekleyici veri yoktur.",
+        "Buharlaşma enerji alan yöndeki hâl değişimidir; çevreye enerji verme olarak yazılması ısı alışverişinin yönünü ters çevirir.",
+        "Soruda terin buharlaşmasıyla ısı uzaklaşması ilişkisi vardır. Bu ilişkinin hiçbir zaman bulunmadığını söylemek verilen mekanizmayı reddeder.",
+        "Sıvıdan gaz hâline geçiş su moleküllerinin tüm O–H kovalent bağlarının kopmasını gerektirmez; buharlaşma suyun atomlarına ayrılması değildir.",
+        "Doğru. Aynı ter salgısına rağmen buharlaşma azaldığında bu yolun ısı uzaklaştırma katkısı azalabilir."
+      ],
+      "commonError": "Ter salgılanmasını terin tamamının buharlaşması sanmak ve ciltteki sıvı miktarından doğrudan aynı soğutma sonucunu çıkarmak.",
+      "check": "Isı uzaklaştıran yolun adı buharlaşmadır. Değişen koşul bu yolu güçleştiriyorsa yalnız bu yolun katkısının azalabilmesi beklenir; bütün ısı kaybı yolları hakkında ek sonuç gerekmez."
+    }
+  },
+  {
+    "id": "ns-water-4",
+    "identity": "[\"ns-water-4\",\"Bir hücrede metabolik tepkime sonucunda su oluştuğu gözleniyor. Bu gözlem hangi genellemeyi çürütür?\",\"\",[\"İnorganik bir madde hiçbir canlı tarafından oluşturulamaz.\",\"Su molekülü kutupludur.\",\"Bütün maddeler suda çözünmez.\",\"Mineraller bazı hücresel işlevlerde rol alabilir.\",\"Suyun özellikleri canlılık için önemlidir.\"],0,\"Su inorganik bir bileşik olup metabolik tepkimeler sonucunda da oluşabilir. İnorganik maddelerin tümünün canlılarca hiçbir koşulda üretilemeyeceği iddiası bu örnekle çelişir.\"]",
+    "guidance": {
+      "knowledge": [
+        "İnorganik sınıflaması maddenin kimyasal türüyle ilgilidir; canlı içinde oluşup oluşamayacağının tanımı değildir. Su inorganik bir bileşiktir ve metabolik tepkimelerde ürün olarak oluşabilir. Element üretmek ile mevcut atomlardan molekül oluşturmak da farklı olaylardır."
+      ],
+      "strategy": "Evrensel iddiayı ve kartta verilen tek olayı yan yana yaz; gözlemin hangi “hiçbir canlıda olmaz” önermesine doğrudan karşı örnek oluşturduğunu bul, ilgisiz doğru özellikleri reddetme.",
+      "steps": [
+        "Gözlem, bir hücrenin metabolik tepkimesi sonucunda su oluşmasıdır. Su inorganik olarak sınıflandırılır.",
+        "“İnorganik bir madde hiçbir canlı tarafından oluşturulamaz” iddiası bu örneği de yasaklar; oysa kart suyun oluştuğunu açıkça söylüyor.",
+        "Dolayısıyla bu evrensel üretilemezlik iddiası çürütülür. Suyun kutupluluğu, çözücülüğü veya minerallerin işlevi hakkındaki öteki ifadeler bu gözlemle çelişmez."
+      ],
+      "optionReasons": [
+        "Doğru. Su inorganiktir ve canlı hücrede oluştuğu gözlenmiştir; bu tek karşı örnek inorganiklerin hiçbirinin canlıda oluşamayacağı iddiasını bozar.",
+        "Suyun metabolik ürün olması kutuplu molekül yapısıyla çelişmez. Gözlem molekülün elektriksel dağılımını değiştirdiğini söylemez.",
+        "Su oluşması bütün maddelerin suda çözündüğünü göstermez. Çözünürlük çeşitliliğiyle bu üretim gözlemi arasında bir çelişki yoktur.",
+        "Minerallerin hücresel işlevlerde rol alabilmesi, suyun bir tepkimede oluşmasıyla çürütülmez; farklı iki özellik anlatılmaktadır.",
+        "Suyun canlılık için önemli olması, hücre içinde de oluşturulabilmesiyle uyumludur. Bu gözlem suyun önemini reddetmez."
+      ],
+      "commonError": "İnorganik maddeyi “yalnız cansız ortamda oluşabilir” diye tanımlamak veya canlıda su oluşmasını elementlerin yoktan yaratılması sanmak.",
+      "check": "İddiadaki “hiçbir” sözcüğünü su örneğiyle sına: bir inorganik ürünün tek bir canlıda oluşması bile evrensel yasağı geçersiz kılar; diğer su özelliklerini reddetmek gerekmez."
+    }
+  },
+  {
+    "id": "ns-water-5",
+    "identity": "[\"ns-water-5\",\"Su moleküllerinin birbirini çekmesi ve suyun cam yüzeyiyle etkileşmesi sırasıyla hangi kavramlarla ifade edilir?\",\"\",[\"Adhezyon — kohezyon\",\"Hidroliz — denatürasyon\",\"Kohezyon — adhezyon\",\"Peptit bağı — glikozit bağı\",\"Oksidasyon — nötrleşme\"],2,\"Aynı tür moleküllerin birbirini çekmesi kohezyon; farklı maddelerin, burada su ve camın etkileşmesi adhezyondur. Bu iki etki taşıma ve yüzey olaylarında birlikte rol alabilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı tür moleküllerin birbirini çekmesi kohezyon, farklı maddeler arasındaki çekim ise adhezyon olarak adlandırılır. Su–su çekimi ile su–cam çekimi bu iki duruma örnektir. Bunlar bağ hidrolizi veya yeni bir polimer bağı kurulması anlamına gelmez."
+      ],
+      "strategy": "Etkileşen iki tarafı her olay için açıkça yaz; tarafların aynı madde olup olmadığını belirledikten sonra iki kavramı sorudaki sırayı koruyarak eşleştir.",
+      "steps": [
+        "Birinci olayda iki taraf da su molekülüdür; aynı tür tanecikler arasındaki çekim kohezyondur.",
+        "İkinci olay su ile cam yüzeyi arasındadır; farklı maddeler arasındaki bu çekim adhezyondur.",
+        "İstenen sıra kohezyon–adhezyondur. İki çekim aynı sistemde birlikte bulunabilir; adlarının ayrı olması birbirlerini dışladıkları anlamına gelmez."
+      ],
+      "optionReasons": [
+        "Kavramların sırası ters yazılmıştır: su–su kohezyon, su–cam ise adhezyon örneğidir.",
+        "Hidroliz su kullanılarak bağ ayrılması, denatürasyon protein düzeninin bozulması bağlamındadır; verilen iki yüzey çekimini adlandırmaz.",
+        "Doğru. Aynı madde olan su moleküllerinin çekimi kohezyon, su ile farklı bir yüzey olan cam arasındaki çekim adhezyondur.",
+        "Peptit bağı amino asitler, glikozit bağı şeker birimleri arasında kurulan kovalent bağlantılarla ilişkilidir; sorudaki çekim sınıflaması değildir.",
+        "Oksidasyon elektron aktarımıyla, nötrleşme asit–baz tepkimesiyle ilişkilidir. Su–su ve su–cam çekimlerinin adları bunlar değildir."
+      ],
+      "commonError": "Su–su ve su–cam ilişkilerindeki tarafları incelemeden kohezyon ile adhezyonun adlarını ters sırayla ezberden yerleştirmek.",
+      "check": "Birinci olayın taraflarını su/su, ikincininkini su/cam diye tekrar yaz. Aynı/farklı madde ayrımı her iki kavramın doğru sırada olup olmadığını bağımsız denetler."
+    }
+  }
+]

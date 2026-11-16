@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "f013-foundation-ortacag-dunya-1",
+    "identity": "[\"f013-foundation-ortacag-dunya-1\",\"Bu ilişki en uygun nasıl tanımlanır?\",\"Bir Avrupa bölgesinde yerel senyör koruma ve gelir hakkı sağlıyor; ona bağlı soylu savaşçı da sadakat ve askerî hizmet sözü veriyor.\",[\"Karşılıklı yükümlülükler içeren feodal bağlılık ilişkisi.\",\"Bütün yurttaşların eşit oy verdiği seçim sistemi.\",\"Bütün toprağın merkez memurlarınca doğrudan işletilmesi.\",\"Sadece para ile yapılan, siyasi bağ içermeyen alışveriş.\",\"Toprakla ilişkisi bulunmayan bağımsız göç örgütü.\"],0,\"Toprak veya gelir hakkı ile korumanın sadakat ve askerî hizmetle bağlanması feodal ilişkinin örneğidir. Bu, eşit yurttaşlık düzeni veya doğrudan merkez yönetimi değildir. Tarafların hak ve yükümlülükleri bölge ve döneme göre ayrıca incelenir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Feodal bağlılıkta koruma ve gelir hakkı, sadakat ve askerî hizmet gibi yükümlülüklerle ilişkilidir. Senyör ile ona bağlı soylu savaşçı, aynı haklara sahip modern yurttaşlar olarak tanımlanmaz; yerel siyasi ve ekonomik bağın iki tarafıdır."
+      ],
+      "strategy": "İki tarafı ayrı satırlara yerleştir; her birinin sunduğu imkânla beklediği hizmeti eşleştirerek ilişkinin ekonomik ve siyasi öğelerini birlikte kapsayan tanımı ara.",
+      "steps": [
+        "Senyörün sağladığı iki imkân koruma ile gelir hakkıdır; savaşçının sundukları sadakat ve askerî hizmettir.",
+        "Gelir ve koruma tek yönlü bir ödeme olarak kalmıyor; savaşçının bağlılık ve hizmet yükümlülüklerine bağlanıyor.",
+        "Bu karşılıklı bağ, feodal bağlılık tanımına uyar. Metinde genel oy, doğrudan merkez işletmesi veya yalnız para alışverişi anlatılmıyor."
+      ],
+      "optionReasons": [
+        "Doğru. Koruma ve gelir hakkı karşılığında sadakat ile askerî hizmet verilmesi, karşılıklı yükümlülük taşıyan feodal bağlılıktır.",
+        "Parçada oy verme, yurttaş eşitliği veya yönetici seçimi yoktur; senyör ile savaşçının hizmet bağı anlatılır.",
+        "Gelir hakkını sağlayan yerel senyördür. Bütün toprağın merkez memurlarınca işletildiği bilgisi verilmemiştir.",
+        "Sadakat ve askerî hizmet siyasi bir bağlılık da içerir; ayrıca ödeme yalnız para olarak tanımlanmamıştır.",
+        "Verilen gelir hakkı ve yerel senyör bağı, toprakla ilişkisiz bağımsız bir göç örgütü tanımını karşılamaz."
+      ],
+      "commonError": "Koruma ya da gelir sözcüğünü tek başına okuyup sadakat ve askerî hizmet bağını atlamak, ilişkiyi sıradan alışveriş gibi göstermeye yol açar.",
+      "check": "Seçtiğin tanımın hem senyörün koruma ve gelir sağlamasını hem savaşçının bağlılık ve hizmet sunmasını birlikte açıklayıp açıklamadığını denetle."
+    }
+  },
+  {
+    "id": "f013-foundation-ortacag-dunya-2",
+    "identity": "[\"f013-foundation-ortacag-dunya-2\",\"Bu örnek hangi yorumu destekler?\",\"Bir krallıkta hükümdar vardır; fakat yerel beyler gelirleri toplamakta ve sefere katılma şartları için kralla pazarlık yapmaktadır.\",[\"Bütün yerel beylerin aynı anda krallığı ortadan kaldırdığını.\",\"Krallıkta hiçbir askerî kuvvet bulunmadığını.\",\"Kralın varlığı, tek başına güçlü merkezî denetim kanıtı değildir.\",\"Her bölgenin bütün zamanlarda aynı yetkiye sahip olduğunu.\",\"Vergi toplanmasının yalnız merkezi memurlarca yapılabildiğini.\"],2,\"Yerel beylerin mali ve askerî hareket alanı, merkezî gücün sınırlı olabileceğini gösterir. Sadece kral unvanının bulunmasından bütün ülkenin doğrudan denetlendiği çıkarılamaz. Bununla birlikte örnek, krallığın tamamen yok olduğunu da söylemez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Merkezî denetim, yalnız hükümdar unvanıyla değil gelir toplama, emir verme ve uygulamayı denetleme yetkilerinin fiilî dağılımıyla incelenir. Yerel güçlerle pazarlık yapılması, krallık sürerken merkezî hareket alanının sınırlı olabileceğini gösterir."
+      ],
+      "strategy": "Unvan bilgisini yetki kullanımından ayıran bir çizelge kur; mali ve askerî işlerde kararın kimde olduğunu karşılaştırıp iddiası verilen sınırları aşmayan yorumu bul.",
+      "steps": [
+        "Kralın bulunduğu açıkça söyleniyor; buna karşılık gelirleri yerel beyler topluyor.",
+        "Sefere katılma şartları da kralın tek taraflı emri olarak değil yerel beylerle pazarlık konusu olarak veriliyor.",
+        "Bu iki yetki bilgisi, yalnız kralın varlığına bakarak güçlü merkezî denetim sonucuna gidilemeyeceğini gösterir; krallığın yok olduğu sonucu çıkmaz."
+      ],
+      "optionReasons": [
+        "Krallığın ortadan kalkması belirtilmiyor; tersine hükümdarla pazarlık yapıldığı için krallık ilişkisi sürüyor.",
+        "Sefere katılma şartlarının görüşülmesi askerî güçlerle ilgilidir; hiçbir askerî kuvvet bulunmadığı söylenemez.",
+        "Doğru. Yerel beylerin gelir ve sefer koşullarındaki hareket alanı, kral unvanının tek başına doğrudan denetim kanıtı olmadığını gösterir.",
+        "Parça belirli bir krallıktaki ilişkiyi verir; her bölgenin bütün dönemlerde aynı yetkilere sahip olduğu genellemesi kurulamaz.",
+        "Metinde geliri toplayanlar yerel beylerdir. Verginin yalnız merkez memurlarınca toplanabileceği iddiası bu veriye de uymaz."
+      ],
+      "commonError": "Hükümdar adının bulunmasını bütün mali ve askerî kararların doğrudan merkezden verildiği şeklinde okumak, yerel pazarlık bilgisini yok sayar.",
+      "check": "Yanıtın kralın varlığını korurken yerel gelir toplama ve sefer pazarlığını da açıklamalı; merkezî denetim sınırlı olabilir demek krallık hiç yok demek değildir."
+    }
+  },
+  {
+    "id": "f013-foundation-ortacag-dunya-3",
+    "identity": "[\"f013-foundation-ortacag-dunya-3\",\"Bu iki grup için hangi açıklama doğrudur?\",\"Bir malikânede toprağa bağlı köylüler ürün ve çalışma yükümlülükleri taşır. Aynı toplumda senyöre askerî hizmet veren soylu vassallar da vardır.\",[\"Her vassalın tarım yapan serf olduğu.\",\"Her köylünün hükümdarla aynı hukuki yetkiye sahip olduğu.\",\"Serf sözcüğünün her dönemde modern ücretli asker anlamına geldiği.\",\"Askerî hizmetin toprak geliriyle ilişkilendirilemeyeceği.\",\"Serf köylü ile soylu vassalın görev ve statüleri aynı değildir.\"],4,\"Serf, belirli yükümlülüklerle toprağa ve senyöre bağlı köylü bağlamındadır. Soylu vassalın bağlılığı ise başka hak ve hizmet ilişkileri içerir. Grupları tek ad altında toplamak, toplumsal tabakalaşmanın temel farklarını siler.\"]",
+    "guidance": {
+      "knowledge": [
+        "Serf, toprağa ve senyöre belirli üretim ve çalışma yükümlülükleriyle bağlı köylü bağlamındaki terimdir. Soylu vassal ise bağlılık, gelir hakkı ve askerî hizmet ilişkileri içinde ele alınır; iki statü tek bir görev adı değildir."
+      ],
+      "strategy": "Grupları toplumsal konumları ve yerine getirdikleri işler bakımından karşılaştır; ortak bağlılık sözcüğünün farklı hak ve yükümlülükleri silmesine izin vermeden seçenekleri denetle.",
+      "steps": [
+        "İlk grupta toprağa bağlı köylüler ve onların ürün ile çalışma yükümlülükleri veriliyor.",
+        "İkinci grupta soylu vassallar ve senyöre sundukları askerî hizmet bulunuyor; üretici köylüyle aynı iş tanımı verilmemiştir.",
+        "Görev ve statü farkını koruyan ifade seçilir: serf köylü ile soylu vassal aynı toplumsal konum olarak kullanılamaz."
+      ],
+      "optionReasons": [
+        "Vassallar metinde soylu savaşçılardır; her vassalı tarım yapan serf saymak iki ayrı grubu özdeşleştirir.",
+        "Köylülerin ürün ve çalışma yükümlülükleri anlatılıyor; hükümdarla aynı hukuki yetkiye sahip oldukları belirtilmiyor.",
+        "Serf toprağa bağlı köylü bağlamındadır; modern ücretli asker diye tanımlanması hem görevi hem dönemi karıştırır.",
+        "Askerî hizmetin gelir hakkıyla ilişkilendirilmesi feodal bağda mümkündür; böyle bir ilişkinin olamayacağı ileri sürülemez.",
+        "Doğru. İlk grup ürün ve çalışma yükümlülüğü taşıyan köylüler, ikinci grup askerî hizmet sunan soylulardır; statü ve görevleri ayrıdır."
+      ],
+      "commonError": "Bir senyöre bağlı olan herkesi serf saymak, bağlılığın üretim yükümlülüğü ile soylunun askerî hizmeti gibi farklı biçimlerini birbirine karıştırır.",
+      "check": "İki grup için ayrı ayrı “hangi statü, hangi iş?” sorularını yanıtla: köylüde ürün ve çalışma, soylu vassalda askerî hizmet bilgisi korunmalı."
+    }
+  },
+  {
+    "id": "f013-foundation-ortacag-dunya-4",
+    "identity": "[\"f013-foundation-ortacag-dunya-4\",\"İki yükümlülük sırasıyla hangi türdedir?\",\"Bir yönetici vergiyi para yerine tahıl olarak toplatıyor. Ayrıca bazı köylüler yılın belirli günlerinde yol yapımında çalışmakla yükümlüdür.\",[\"Nakdî vergi ve ayni vergi.\",\"Ayni vergi ve emek yükümlülüğü.\",\"Emek yükümlülüğü ve nakdî vergi.\",\"İkisi de yalnız nakdî vergidir.\",\"İkisi de karşılıksız asker maaşıdır.\"],1,\"Tahıl gibi ürünle yapılan ödeme ayni vergidir. Belirli bir işte çalışma zorunluluğu emek yükümlülüğüdür. Nakdî vergi ise para ile ödenir; toplumda para kullanılması, her yükümlülüğün nakdî olduğunu göstermez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ayni ödeme para yerine ürün veya mal verilmesidir; nakdî ödeme parayla yapılır. Emek yükümlülüğünde ise belirli bir işte çalışma sunulur. Yükümlülüğün türü, toplumda para bulunmasına değil o işlemde ne verildiğine göre belirlenir."
+      ],
+      "strategy": "İki işlemin ödeme aracını sırayla kaydet; verilen nesne ile yapılan işi ayrı ölçüt olarak kullanıp terimleri metindeki sıra bozulmadan eşleştir.",
+      "steps": [
+        "İlk işlemde vergi para olarak değil tahıl olarak alınıyor; teslim edilen şey bir üründür.",
+        "İkinci işlemde köylülerin belirli günlerde yol yapımında çalışması isteniyor; burada ürün veya para değil emek sunuluyor.",
+        "Ürünle ödeme ayni vergiye, zorunlu çalışma emek yükümlülüğüne karşılık gelir. İstenen sırayı bu iki işlemle kontrol et."
+      ],
+      "optionReasons": [
+        "İlk işlem nakdî değildir; tahıl verilmiştir. İkinci işlem de ayni ürün teslimi değil yol yapımında çalışmadır.",
+        "Doğru. Tahıl ürün olarak verildiğinden ilk yükümlülük ayni, yol yapımında çalışıldığından ikinci yükümlülük emek türündedir.",
+        "Sıra ve türler uyuşmaz: önce ürün teslimi, sonra çalışma vardır; para ödemesi belirtilmemiştir.",
+        "Nakdî yükümlülük için para ödemesi gerekir. Parçada ne tahıl vergisi ne yol çalışması para olarak sunuluyor.",
+        "Köylülerin yöneticiye sunduğu yükümlülükler anlatılır; askere maaş verilmesi veya karşılıksız ödeme yapılması söz konusu değildir."
+      ],
+      "commonError": "Vergi sözcüğünü her zaman para sanmak veya yol işinde çalışmayı ürün teslimiyle aynı türde görmek, ödeme aracını okumadan adlandırmaya yol açar.",
+      "check": "Tanımları tersine uygula: ayni dediğinde tahıl teslimi, emek dediğinde yol yapımında çalışma karşılığı bulabiliyorsan iki eşleştirme de yerine oturur."
+    }
+  },
+  {
+    "id": "f013-foundation-ortacag-dunya-5",
+    "identity": "[\"f013-foundation-ortacag-dunya-5\",\"İpek Yolu için bu betimlemeden hangi sonuç çıkarılır?\",\"Bir yolun farklı kolları Çin, Orta Asya, İran, Anadolu ve Akdeniz merkezlerini bağlamaktadır. Kolların güvenlik koşullarına göre zamanla değiştiği bilinmektedir.\",[\"Bütün çağlar boyunca tek devletin yönettiği sabit bir çizgi olduğu.\",\"Üzerinde yalnız ipek taşındığı.\",\"Bütün bağlantılarının yalnız denizden geçtiği.\",\"Değişen bağlantılardan oluşan bir ticaret ağı olarak ele alınmalıdır.\",\"Yolun hiçbir siyasi veya kültürel etkisinin bulunmadığı.\"],3,\"Verilen farklı kollar ve dönemsel değişim, İpek Yolu’nun ağ niteliğini gösterir. Ticaret, siyasi denetim ve kültürel karşılaşmalar bu ağ üzerinden birlikte gelişebilir. Tek ürün, tek güzergâh ve sürekli tek egemenlik iddiaları veriden çıkmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "İpek Yolu, Çin ile Orta Asya, İran ve Akdeniz çevreleri arasında farklı kara ve bağlantılı taşıma kolları içeren ticaret ağıdır. Güvenlik ve siyasi koşullar güzergâh kullanımını değiştirebilir; ağ adı tek bir ürün, devlet veya değişmez çizgi anlamına gelmez."
+      ],
+      "strategy": "Haritadaki merkezleri düğümler, kolları bağlantılar olarak düşün; zaman içinde değişebilen unsurları işaretleyerek ağın özellikleriyle seçeneklerdeki mutlak ifadeleri karşılaştır.",
+      "steps": [
+        "Betimlemede Çin, Orta Asya, İran, Anadolu ve Akdeniz gibi birden fazla merkez birbirine bağlanıyor.",
+        "Ayrıca farklı kolların güvenliğe göre zamanla değiştiği belirtiliyor; tek sabit güzergâh varsayımı bu bilgiyle uyuşmuyor.",
+        "Bu nedenle İpek Yolu değişen bağlantılardan oluşan ticaret ağı olarak ele alınır; tek devlet, tek ürün veya yalnız deniz iddiaları eklenmez."
+      ],
+      "optionReasons": [
+        "Kolların zamanla değişmesi sabit çizgi iddiasına uymaz; bütün çağlarda tek devletin denetimi de verilmemiştir.",
+        "İpek adı taşınan bütün malların yalnız ipek olduğunu göstermez; parça böyle bir ürün sınırı koymuyor.",
+        "Orta Asya, İran ve Anadolu bağlantılarını bütün ağı yalnız denize indirerek açıklamak mümkün değildir.",
+        "Doğru. Birden fazla kolun farklı merkezleri bağlaması ve güvenliğe göre değişmesi, tek çizgiden çok ağ yapısını gösterir.",
+        "Ticaret bağlantılarının siyasi veya kültürel etkisinin hiç olamayacağı sonucu bu veriden çıkmaz; farklı merkezler arasında temas vardır."
+      ],
+      "commonError": "Bir yol adını günümüzde çizilmiş tek ve değişmez güzergâh sanmak, kolların ve güvenlik koşullarının zaman içindeki değişimini gözden kaçırır.",
+      "check": "Seçtiğin yorum hem birden çok merkezi ve kolu hem zaman içindeki değişimi karşılamalı; bunlardan birini yok sayan seçenek betimlemeyi daraltır."
+    }
+  },
+  {
+    "id": "f013-foundation-ortacag-dunya-6",
+    "identity": "[\"f013-foundation-ortacag-dunya-6\",\"Bu coğrafya ve ürün grubu hangi ticaret ağıyla en doğrudan ilişkilidir?\",\"Kuzey Avrasya’nın orman ve bozkır bağlantılarında samur, tilki ve başka hayvanların deri ve postları taşınmaktadır.\",[\"Baharat Yolu.\",\"Kürk Yolu.\",\"Kral Yolu.\",\"Sadece Nil iç ulaşımı.\",\"Yalnız Akdeniz tahıl taşımacılığı.\"],1,\"Kürk Yolu kuzey Avrasya bağlantıları ve deri-post ticaretiyle ayırt edilir. Baharat Yolu Hint Okyanusu ve Güney Asya ürünleriyle, Kral Yolu ise Sardes–Sus bağlantısıyla ilişkilidir. Soruda bir ağın bütün ürünlerinin yalnız bunlar olduğu söylenmiyor.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kürk Yolu, Kuzey Avrasya’nın orman ve bozkır bağlantılarındaki deri ve post ticaretiyle öğrenilir. Baharat Yolu Güney Asya ve Hint Okyanusu bağlantılarıyla, Kral Yolu Anadolu-İran arasındaki Sardes–Sus hattıyla ayırt edilir."
+      ],
+      "strategy": "Ürün grubuyla coğrafi kuşağı iki bağımsız ipucu olarak kullan; her ağ adını bu iki bilgiyle birlikte karşılaştırıp yalnız bir sözcük benzerliğine dayanmadan eşleştir.",
+      "steps": [
+        "Samur ve tilki için taşınan ürünler deri ile posttur; bu ipucu hayvan ürünleri ticaretini gösteriyor.",
+        "Coğrafya Kuzey Avrasya’nın orman ve bozkır kuşağıdır; Hint Okyanusu, Nil veya yalnız Akdeniz verilmemiştir.",
+        "Kuzey kuşağı ile deri-post birlikte Kürk Yolu eşleştirmesini destekler; ağın yalnız bu malları taşıdığı gibi ek bir sınır kurulmaz."
+      ],
+      "optionReasons": [
+        "Baharat Yolu Güney Asya ve Hint Okyanusu bağlantılarıyla ilişkilidir; kuzey orman-bozkır kuşağındaki deri-post ipucunu karşılamaz.",
+        "Doğru. Kuzey Avrasya coğrafyası ile samur ve tilki postlarının birlikte verilmesi Kürk Yolu’nu ayırt eder.",
+        "Kral Yolu Sardes–Sus ve Anadolu-İran bağlantısıyla bilinir; buradaki kuzey deri-post coğrafyasıyla aynı güzergâh değildir.",
+        "Nil iç ulaşımı Mısır’daki nehir taşımacılığı bağlamıdır; Kuzey Avrasya orman ve bozkır kuşağını açıklamaz.",
+        "Parçada ne yalnız Akdeniz ne de tahıl ürün grubu vardır; iki belirleyici ipucu da bu seçenekten farklıdır."
+      ],
+      "commonError": "Yalnız ticaret yapıldığını görüp bütün tarihsel yolları aynı adla eşlemek, ürün grubu ile coğrafi kuşak ayrımını ortadan kaldırır.",
+      "check": "Yanıtın “hangi ürün, hangi kuşak?” sorularının ikisini de karşılasın: deri-post ve Kuzey Avrasya birlikte aynı ağ adına yönelmelidir."
+    }
+  },
+  {
+    "id": "f013-foundation-ortacag-dunya-7",
+    "identity": "[\"f013-foundation-ortacag-dunya-7\",\"Bu örnek ticaretin hangi sonucunu en iyi gösterir?\",\"Bir tüccar topluluğunun kullandığı kayıt tekniği, uzak pazardaki yerel tüccarlarca kendi dil ve ihtiyaçlarına uyarlanıyor.\",[\"Bütün toplumların aynı kültüre dönüştüğünü.\",\"Tekniği alan toplumun bütün siyasi bağımsızlığını yitirdiğini.\",\"Yalnız askerî işgal yoluyla kültür aktarılabileceğini.\",\"Yerel uyarlamanın hiçbir zaman yapılamadığını.\",\"Mal değişiminin yanında bilgi ve teknik aktarımına ortam sağlaması.\"],4,\"Ticari ilişkiler insanların teknik ve bilgiyle karşılaşmasını kolaylaştırır. Verilen uyarlama, aktarımın yerel ihtiyaçlara göre dönüşebildiğini de gösterir. Böyle bir temas, bütün kültürün aynılaşması veya siyasi bağımsızlığın kaybı için yeterli kanıt değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ticaret, malların yanı sıra insanlar arasında bilgi ve teknikle karşılaşmaya da ortam sağlayabilir. Bir tekniğin yerel dil ve ihtiyaçlara uyarlanması, aktarımın değişmeden kopyalama olmadığını gösterir; teknik alışveriş siyasi egemenlikle özdeş değildir."
+      ],
+      "strategy": "Aktarılan şeyle onu alan grubun yaptığı değişikliği ayrı belirle; gözlenen teknik uyarlamayı bütün kültürün veya siyasi yönetimin durumuna genişleten seçenekleri eleyerek ilerle.",
+      "steps": [
+        "Bir tüccar grubunun kayıt tekniği uzak pazardaki yerel tüccarlar tarafından öğreniliyor; aktarılan öğe somut bir bilgidir.",
+        "Yerel tüccarlar tekniği kendi dil ve ihtiyaçlarına göre değiştiriyor; böylece yerel uyarlama açıkça görülüyor.",
+        "Örnek ticari temasın bilgi ve teknik aktarımına ortam sağlamasını gösterir; tüm kültürün aynılaşması ya da bağımsızlığın kaybı belirtilmiyor."
+      ],
+      "optionReasons": [
+        "Tek bir kayıt tekniğinin alınması bütün toplumların her kültürel özelliğinin aynılaşması değildir; yerel uyarlama da açıkça vardır.",
+        "Kayıt tekniğinin kullanılması siyasi bağımsızlığın kaybedildiğine dair atama, egemenlik veya denetim verisi sağlamaz.",
+        "Örnekte askerî işgal değil tüccarların pazar ilişkisi ve yerel uyarlaması anlatılıyor; aktarımı yalnız işgale bağlamak yanlıştır.",
+        "Parça tekniğin yerel dil ve ihtiyaçlara uyarlandığını doğrudan söyler; uyarlamanın imkânsızlığı bu açık bilgiye aykırıdır.",
+        "Doğru. Tüccarlar arasındaki temas bir kayıt tekniğinin öğrenilip dönüştürülmesine ortam sağlamış; mal değişimiyle sınırlı kalmamıştır."
+      ],
+      "commonError": "Kültürel aktarımı bütün kültürün değişmeden benimsenmesi veya siyasi bağımlılık sanmak, yalnız kayıt tekniği hakkında verilen kanıtın kapsamını aşar.",
+      "check": "Yanıtında kaynak teknikteki aktarım ile yerel dil ve ihtiyaçlara göre uyarlamayı birlikte koru; parçada bir egemenlik değişimi bulunmadığını da denetle."
+    }
+  },
+  {
+    "id": "f013-foundation-ortacag-dunya-8",
+    "identity": "[\"f013-foundation-ortacag-dunya-8\",\"Bu karşılaştırmada doğrudan incelenen fark hangisidir?\",\"Batı Avrupa’daki soylu savaşçıların hizmeti toprak gelirleriyle; başka bir ordudaki birliklerin hizmeti ise düzenli para ödemesiyle karşılanıyor.\",[\"İki ordunun bütün silahlarının aynı malzemeden yapılması.\",\"Her iki ordunun aynı yüzyılda kurulmuş olması.\",\"Askerî hizmetin finansmanı ve bağlılık biçimi.\",\"Savaşların yalnız atlı birliklerle yürütülmesi.\",\"Dinî inançların iki toplumda bütünüyle aynı olması.\"],2,\"Toprak gelirine bağlı hizmet ile para karşılığı hizmet, askerî örgütlenmenin farklı kaynak ve bağlılık ilişkilerini gösterir. Verilen bilgiler bütün silahları, kuruluş tarihlerini veya inançları karşılaştırmaya yetmez. Aynı “asker” adı kurumların özdeş olduğu anlamına gelmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Askerî hizmetin sürdürülmesi gelir kaynağı gerektirir. Toprak gelirine bağlanan soylu hizmeti ile düzenli para ödenen birlikler, kaynak sağlama ve bağlılık bakımından farklı örgütlenme ilişkileri gösterebilir; bu karşılaştırma silah veya inanç farkını kendiliğinden belirlemez."
+      ],
+      "strategy": "İki ordunun karşılaştırıldığı değişkeni sabit tut; her satırda hizmetin hangi kaynakla karşılandığını kaydedip verilmeyen teknik, tarihsel ve dinî özellikleri değerlendirmeden ayır.",
+      "steps": [
+        "İlk askerî hizmet toprak geliriyle karşılanıyor; bu veri soylunun hizmet ile gelir hakkı arasındaki bağını gösteriyor.",
+        "Diğer birliklere düzenli para ödeniyor; böylece karşılaştırmanın ikinci ayağı ödeme ve kaynak sağlama biçimidir.",
+        "Doğrudan incelenen fark askerî hizmetin finansmanı ve bağlılık biçimidir. Silah malzemesi, kuruluş yılı, bütün birliklerin atlı oluşu veya din bilgisi verilmemiştir."
+      ],
+      "optionReasons": [
+        "Ödeme biçimi silahların hangi malzemeden yapıldığını göstermez; iki ordu için ortak silah verisi yoktur.",
+        "Toprak geliri ve para ödemesi karşılaştırılmıştır; orduların kuruluş tarihleri veya aynı yüzyılda oluşmaları belirtilmiyor.",
+        "Doğru. Hizmetin bir yerde toprak geliriyle, diğerinde düzenli parayla karşılanması kaynak ve bağlılık düzenini karşılaştırır.",
+        "Gelir biçimi bütün birliklerin atlı olduğunu kanıtlamaz; piyade-süvari bileşimi hakkında veri verilmemiştir.",
+        "Askerî finansman karşılaştırmasından iki toplumun dinî inançlarının bütünüyle aynı olduğu sonucu çıkarılamaz."
+      ],
+      "commonError": "İki örneğin de ordu olması nedeniyle silah, tarih, birlik türü ve inanç gibi bütün özellikleri karşılaştırıldığını sanmak, verilen değişkeni genişletir.",
+      "check": "Cevabını iki parçaya geri yerleştir: toprak geliri ve düzenli para hangi ortak soruya yanıt veriyor? Silah veya kuruluş yılı sorusuna değil, hizmetin kaynağına yanıt veriyorlar."
+    }
+  },
+  {
+    "id": "f013-foundation-ortacag-dunya-9",
+    "identity": "[\"f013-foundation-ortacag-dunya-9\",\"Karttaki iki gelişme için hangi ifade doğrudur?\",\"Bir ders kartında Roma’nın Doğu ve Batı olarak ayrılması 395, Batı Roma’nın sona ermesi 476 olarak verilmiştir.\",[\"Bölünme ile Batı Roma’nın sona ermesi ayrı tarihlerdeki farklı gelişmelerdir.\",\"Doğu Roma’nın da 476’da aynı anda sona erdiği.\",\"395 ile 476’nın aynı olay için kullanılan iki takvim gösterimi olduğu.\",\"Her iki tarihin bütün dünyada feodaliteyi aynı gün başlattığı.\",\"476’da Avrupa dışındaki bütün devletlerin sona erdiği.\"],0,\"395 siyasi bölünmeyi, 476 batıdaki imparatorluk otoritesinin sonunu anlatır. Doğu Roma’nın sonraki varlığı bu ayrımı açık kılar. Okul dönem sınırları da bütün coğrafyaların aynı anda aynı toplumsal düzene geçtiği anlamına gelmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Roma’nın 395’te Doğu ve Batı olarak ayrılması siyasi bölünme, 476’da Batı Roma imparatorluk otoritesinin son bulması ise bölümlerden birinin siyasi sonudur. Doğu Roma 476 sonrasında da varlığını sürdürür; bu tarihler bütün dünyanın aynı toplumsal değişim günü değildir."
+      ],
+      "strategy": "Her tarihin yanına olayın fiilini ve etkilenen siyasi alanı yaz; benzer devlet adları yüzünden farklı işlemleri veya coğrafi kapsamları tek olaya dönüştüren yorumları denetle.",
+      "steps": [
+        "395’in yanına “Doğu ve Batı olarak ayrılma”, 476’nın yanına “Batı Roma’nın sona ermesi” bilgisini yerleştir.",
+        "İlk fiil bölünmeyi, ikinci fiil batıdaki imparatorluk otoritesinin sonunu anlatır; tarihler ve etkilenen alanlar aynı değildir.",
+        "İki farklı gelişme ayrı tarihlerdedir. Doğu Roma’nın da aynı anda bittiği veya bütün dünyada aynı düzenin başladığı yorumları kartta bulunmaz."
+      ],
+      "optionReasons": [
+        "Doğru. 395’teki siyasi ayrılma ile 476’da batıdaki imparatorluk otoritesinin sonu hem olay türü hem tarih bakımından ayrıdır.",
+        "476 yalnız Batı Roma’nın sonuyla ilişkilendirilmiştir; Doğu Roma’nın varlığı bu tarihten sonra da sürmüştür.",
+        "Kart iki farklı olay anlatır; aynı olaya ait farklı takvim gösterimleri veya tarih dönüşümü verilmemiştir.",
+        "Roma’daki siyasi tarihler bütün coğrafyalarda feodalitenin aynı gün başladığını göstermez; yerel dönüşümler farklıdır.",
+        "Batı Roma hakkındaki siyasi son bilgisi Avrupa dışındaki bütün devletlerin sonuna genişletilemez."
+      ],
+      "commonError": "Roma adının ortak olmasından ayrılma ile siyasi sonu aynı olay sanmak veya Batı Roma’nın sonunu Doğu Roma’ya ve bütün dünyaya taşımak kapsam hatasıdır.",
+      "check": "Her yanıt için “hangi tarih, hangi siyasi alan, hangi fiil?” üçlüsünü koru: 395 ayrılma; 476 Batı Roma’nın sonudur."
+    }
+  },
+  {
+    "id": "f013-foundation-ortacag-dunya-10",
+    "identity": "[\"f013-foundation-ortacag-dunya-10\",\"Bu ortak özellikten hareketle hangi yöntem doğrudur?\",\"Bir tarihçi, Avrupa’daki feodal toprak ilişkileriyle Hindistan’daki doğum temelli kast ayrımlarını karşılaştırıyor. Her iki örnekte toplumsal eşitsizlik bulunduğunu saptıyor.\",[\"İki kurumun bütün görev ve kökenlerini aynı saymak.\",\"Kastın Avrupa’daki bütün toprak sözleşmelerinin adı olduğunu söylemek.\",\"Feodalitenin dünyanın her yerinde aynı uygulandığını varsaymak.\",\"Eşitsizlik ortaklığını belirtip kurumların farklı hak ve bağlılık düzenlerini ayrıca incelemek.\",\"Ortak bir özellik bulunduğunda karşılaştırmayı gereksiz saymak.\"],3,\"İki yapıda eşitsizlik bulunması geçerli bir karşılaştırma başlangıcıdır. Ancak kastın doğum ve toplumsal sınırlarıyla feodal bağlılığın toprak-hizmet ilişkileri ayrı incelenir. Tek ortak özellikten bütün kurumun aynı olduğu sonucu çıkarılmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir karşılaştırmada ortak özellik bulunması kurumların bütünüyle özdeş olduğunu göstermez. Kast, doğum temelli toplumsal statü ve geçiş sınırlarıyla; feodal bağlılık ise belirli toprak, gelir ve hizmet ilişkileriyle incelenir. Eşitsizlik bu farklı yapıların ortak yönlerinden biri olabilir."
+      ],
+      "strategy": "Karşılaştırmayı ortak ölçüt ve ayırıcı ölçütler olarak iki katmanda kur; benzerliği kabul ederken her kurumun kendi hak, üyelik ve bağlılık düzenini araştırmaya açık bırakan yaklaşımı seç.",
+      "steps": [
+        "Tarihçinin iki örnekte saptadığı ortak ölçüt toplumsal eşitsizliktir; bu benzerlik veri olarak korunur.",
+        "Kast için doğum ve toplumsal geçiş sınırları, feodalite için toprak-hizmet ve bağlılık ilişkileri ayrıca incelenmelidir.",
+        "Ortaklığı belirtip kurumların farklı düzenlerini araştırmak uygun yöntemdir; tek ortak özellik bütün görev ve kökenlerin aynı olduğunu göstermez."
+      ],
+      "optionReasons": [
+        "Toplumsal eşitsizlik ortaklığı, iki kurumun bütün görevlerini ve kökenlerini özdeş saymak için yeterli kanıt değildir.",
+        "Kastın doğum ve toplumsal statü bağlamı, Avrupa’daki bütün toprak sözleşmelerinin adı olarak kullanılamaz.",
+        "Parça Avrupa ile Hindistan’dan belirli yapıları karşılaştırır; feodalitenin dünyanın her yerinde aynı uygulandığını söylemez.",
+        "Doğru. Eşitsizlik ortak ölçüt olarak korunur; kastın ve feodal bağlılığın farklı hak ve yükümlülükleri ayrıca araştırılır.",
+        "Bir ortak özellik karşılaştırmayı gereksiz kılmaz; hem benzerliğin hem farklı mekanizmaların hangi kapsamda bulunduğunu incelemeye imkân sağlar."
+      ],
+      "commonError": "Karşılaştırma sonucunda bulunan tek benzerliği bütün kurumsal özelliklerin aynı olduğu kanıtı saymak, farklı üyelik ve yükümlülük ilişkilerini siler.",
+      "check": "Seçtiğin yaklaşımda iki kurumun eşitsizlik ortaklığı kalmalı; buna rağmen doğum temelli statü ile toprak-hizmet bağının ayrı araştırılabilmesi mümkün olmalı."
+    }
+  },
+  {
+    "id": "f013-foundation-ilk-turk-dunyasi-1",
+    "identity": "[\"f013-foundation-ilk-turk-dunyasi-1\",\"Bu veri hangi açıklamayı destekler?\",\"Bir bozkır topluluğu sürülerini yazın yüksek ve serin otlaklara, kışın daha korunaklı alanlara götürüyor. Güzergâhları ve kullanım zamanları düzenli olarak belirleniyor.\",[\"Konargöçer yaşamın mevsimlik planlama ve kaynak yönetimi içerebildiğini.\",\"Topluluğun hiçbir toplumsal kurala sahip olmadığını.\",\"Her hareketin kalıcı olarak başka ülkeye göç olduğunu.\",\"Toplulukta tarım ve ticaretin hiçbir biçimde görülemeyeceğini.\",\"Her yıl zorunlu olarak yeni bir devlet kurulduğunu.\"],0,\"Verilen düzenli zamanlama, otlak ve sürü yönetiminin planlandığını gösterir. Konargöçerlik kurumsuzluk değildir. Bu mevsimlik hareket, ana yurttan kalıcı ayrılmayla aynı olmadığı gibi ticaret veya bazı tarımsal faaliyetlerin bulunmasını da dışlamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Konargöçerlikte sürüler mevsime uygun otlaklar arasında düzenli hareket ettirilebilir. Yaylak-kışlak zamanlaması, kaynakların kullanımını ve topluluk içi örgütlenmeyi içerir; bu hareket ana yurttan kalıcı ayrılma ile aynı olay değildir."
+      ],
+      "strategy": "Hareketin ne zaman, hangi kaynağa ve hangi düzen içinde yapıldığını sınıflandır; metindeki tekrar eden otlak kullanımını kalıcı yurt değişimi veya devlet kuruluşu gibi ayrı olaylarla karıştıran seçenekleri denetle.",
+      "steps": [
+        "Yazın yüksek-serin otlak, kışın korunmuş alan tercih edilmesi mevsime bağlı kaynak kullanımını gösteriyor.",
+        "Güzergâhların ve zamanların düzenli belirlenmesi planlama bulunduğunu ortaya koyar; rastgele dolaşma anlatılmıyor.",
+        "Bu iki veri konargöçer yaşamda mevsimlik planlama ve kaynak yönetimi olabileceğini destekler; bütün başka ekonomik faaliyetlerin yokluğu sonucunu vermez."
+      ],
+      "optionReasons": [
+        "Doğru. Otlakların mevsime göre seçilmesi ve hareket zamanlarının belirlenmesi, sürü ile kaynak kullanımının planlandığını gösterir.",
+        "Düzenli güzergâh ve zaman belirleme bilgisi, hiçbir toplumsal kural bulunmadığı iddiasını desteklemez.",
+        "Tekrarlanan yaz-kış otlak hareketi her defasında başka ülkeye kalıcı göç anlamına gelmez; kalıcı ayrılma belirtilmiyor.",
+        "Sürü hareketi hakkında verilen bilgi ticaretin veya bazı tarımsal faaliyetlerin hiçbir biçimde bulunamayacağını göstermez.",
+        "Otlak değişimi ile yeni siyasi devlet kurmak farklı olaylardır; parçada yıllık devlet kuruluşuna ilişkin veri yoktur."
+      ],
+      "commonError": "Yer değiştiren her topluluğu rastgele dolaşan veya her mevsimde yeni bir ülkeye kalıcı göç eden grup saymak, hareketin düzenini ve amacını siler.",
+      "check": "Yaz-kış tercihi, otlak kaynağı ve düzenli zamanlama seçtiğin açıklamada birlikte bulunmalı; açıklama metne yeni devlet veya zorunlu kalıcı göç eklememeli."
+    }
+  },
+  {
+    "id": "f013-foundation-ilk-turk-dunyasi-2",
+    "identity": "[\"f013-foundation-ilk-turk-dunyasi-2\",\"Bu iki bilgi birlikte nasıl yorumlanmalıdır?\",\"Bir kağanın yönetme hakkının Tanrı’dan geldiğine inanılıyor. Aynı toplumda kağanın töreye uyması ve halkın güvenliğini sağlaması bekleniyor.\",[\"Kağanın kendisinin Tanrı sayıldığını kesinleştirir.\",\"Hükümdarın istediği her kurala tek başına aykırı davranabileceğini gösterir.\",\"İlahî meşruiyet anlayışı, yönetim sorumluluğunu ve kural bağlılığını ortadan kaldırmaz.\",\"Törenin yalnız halk için geçerli olduğunu gösterir.\",\"Yönetme hakkının bütün halkın genel oyuyla verildiğini gösterir.\"],2,\"Kut, hükümdarlık yetkisinin meşruiyet kaynağına ilişkin inançtır. Töre ve halka karşı görevler bu yetkinin kullanımına ilişkin beklentilerdir. Bu yüzden kut anlayışından kağanın tanrılığı veya sınırsız keyfî yetkisi sonucu çıkarılamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kut anlayışı, hükümdarın yönetme hakkına ilahî dayanak verilmesiyle ilgilidir. Töre ise uyulması gereken hukuk düzenidir; hükümdarın halkın güvenliği gibi görevleri de bulunabilir. Yetkinin meşruiyet kaynağı ile kullanılmasındaki kural ve sorumluluklar ayrı ölçütlerdir."
+      ],
+      "strategy": "Yönetme hakkının neden kabul edildiğini ve bu hakkın nasıl kullanılmasının beklendiğini iki sütuna ayır; iki bilgiyi birlikte koruyan yorumu, birinden diğerinin yokluğunu çıkaran yorumlardan ayırt et.",
+      "steps": [
+        "İlk bilgi yönetme hakkının Tanrı’dan geldiğine inanılmasıdır; bu meşruiyetin dayanağıyla ilgilidir.",
+        "İkinci bilgi kağanın töreye uyma ve halkın güvenliğini sağlama sorumluluğudur; yetkinin kullanımına sınır ve görev getirir.",
+        "İlahî meşruiyetle kural bağlılığı birlikte bulunabilir. Bu nedenle ne kağanın Tanrı olduğu ne de istediği kurala aykırı davranabildiği sonucu çıkarılır."
+      ],
+      "optionReasons": [
+        "Tanrı’dan yönetme hakkı alındığına inanmak, yöneticinin bizzat Tanrı sayılması demek değildir; iki iddia farklıdır.",
+        "Töreye uyması beklendiği açıkça verilirken kağanın istediği her kurala aykırı davranabileceği söylenemez.",
+        "Doğru. Yetkiye ilahî dayanak verilmesi, töreye uyma ve halkın güvenliğini sağlama sorumluluklarını ortadan kaldırmıyor.",
+        "Parçada kağanın da töreye uyması beklendiği belirtilmiştir; töreyi yalnız halka uygulamak verilenle çelişir.",
+        "Yetkinin Tanrı’dan geldiği inancı anlatılır; bütün halkın eşit oy kullandığı bir seçim düzeni belirtilmez."
+      ],
+      "commonError": "Yetkinin kutsal dayanağını sınırsız keyfî kullanım sanmak, aynı parçada verilen töre ve halkın güvenliği yükümlülüklerini gözden kaçırır.",
+      "check": "Yanıtını iki bilgiye ayrı uygula: ilahî meşruiyeti kabul ederken töreye uyma ve güvenlik görevlerini de açıklayabiliyorsa metnin bütününü korur."
+    }
+  },
+  {
+    "id": "f013-foundation-ilk-turk-dunyasi-3",
+    "identity": "[\"f013-foundation-ilk-turk-dunyasi-3\",\"Kurultayın varlığına ilişkin hangi yorum uygundur?\",\"Bir mecliste kağan, hatun ve boy beyleri siyasi ve askerî konuları görüşüyor. Kararların uygulanmasında ayrıca yönetim görevlileri çalışıyor.\",[\"Bütün yetişkinlerin eşit oy kullandığı modern parlamento bulunduğunu kanıtlar.\",\"Mecliste görüşülen her işin yalnız ticaretle ilgili olduğunu gösterir.\",\"Hükümdarlık kurumunun bulunmadığını gösterir.\",\"Boy beylerinin toplumda hiçbir rolünün olmadığını kanıtlar.\",\"Danışma ve siyasi görüşme kurumu bulunduğunu gösterir.\"],4,\"Kurultay siyasi ve askerî meselelerin görüşüldüğü bir kurumdur. Katılanların kimliği verilmiş, bütün halkın eşit oy hakkı verildiği söylenmemiştir. Danışma mekanizması ile modern temsilî demokrasi aynı tarihsel iddia değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kurultay veya toy, kağan, hatun ve boy beyleri gibi aktörlerin siyasi-askerî meseleleri görüştüğü tarihsel kurumdur. Görüşme ve danışmanın bulunması, bütün yetişkinlerin eşit yurttaşlık temelinde oy kullandığı modern parlamento bulunduğunu kendiliğinden göstermez."
+      ],
+      "strategy": "Katılanları, görüşülen konuları ve uygulamayı yapanları ayrı kutulara yerleştir; kurumun doğrudan görülen işlevini belirlerken metinde bulunmayan katılım ve oy hakkı koşullarını ekleme.",
+      "steps": [
+        "Kağan, hatun ve boy beyleri siyasi ve askerî konuları birlikte görüşüyor; belirli aktörlerden oluşan bir meclis vardır.",
+        "Kararların uygulanmasında yönetim görevlileri çalışıyor; görüşme ile yürütme işlerinin farklı kişilerle ilişkisi görülebiliyor.",
+        "Kurultayın varlığı danışma ve siyasi görüşme kurumunu gösterir. Katılımcı listesi bütün yetişkinlerin eşit oyuna ilişkin veri sağlamaz."
+      ],
+      "optionReasons": [
+        "Katılanlar kağan, hatun ve boy beyleri olarak sayılmıştır; bütün yetişkinlerin eşit oy kullandığına ilişkin bir koşul yoktur.",
+        "Görüşülen işler siyasi ve askerî diye açıkça belirtilmiştir; bunları yalnız ticaret olarak sınırlamak metne uymaz.",
+        "Kağanın mecliste bulunması hükümdarlığın yokluğunu değil, hükümdarın bu görüşmelere katıldığını gösterir.",
+        "Boy beyleri görüşmelere katılanlar arasında sayılırken toplumda hiçbir rollerinin bulunmadığı söylenemez.",
+        "Doğru. Belirli yönetici ve beylerin siyasi-askerî konuları görüşmesi danışma ve siyasi görüşme işlevini doğrudan ortaya koyar."
+      ],
+      "commonError": "Meclis sözcüğünü görür görmez modern genel oy ve parlamento kurumlarının bütün özelliklerini geçmişe taşımak, katılanların kimliğiyle ilgili sınırı aşar.",
+      "check": "Seçtiğin tanım yalnız verilen görüşme işlevini açıklamalı; metinde bulunmayan herkesin eşit oy kullanması şartını gerektiriyorsa fazla iddia kuruyordur."
+    }
+  },
+  {
+    "id": "f013-foundation-ilk-turk-dunyasi-4",
+    "identity": "[\"f013-foundation-ilk-turk-dunyasi-4\",\"Bu yapı için hangi açıklama en uygundur?\",\"Geniş bir ülkenin doğusunu kağan, batısını kağana bağlı bir hanedan üyesi yönetmektedir.\",[\"Batı yöneticisinin her durumda merkezden bütünüyle bağımsız olduğu.\",\"İkili yönetim paylaşımı vardır; bu bilgi başlangıçtan iki bağımsız devlet bulunduğunu göstermez.\",\"İki bölgenin mutlaka farklı dil kullandığı.\",\"Kağanın doğuda hiçbir yönetim yetkisinin bulunmadığı.\",\"Yapının bugünkü federal devletlerle her bakımdan aynı olduğu.\"],1,\"Doğu-batı yönetim paylaşımı ikili teşkilatın örneğidir. Batıdaki görevlinin merkeze bağlı olduğu açıkça belirtildiği için iki bağımsız devlet sonucu çıkmaz. Yerel hareket alanı ile siyasi bağımsızlık ayrı düzeylerdir.\"]",
+    "guidance": {
+      "knowledge": [
+        "İkili teşkilat, geniş bir siyasi alanda doğu ve batı yönetiminin paylaşılmasıyla ilişkilidir. Batıdaki hanedan üyesinin kağana bağlılığı sürüyorsa yönetim paylaşımı başlangıçtan iki bağımsız devlet anlamına gelmez; görev alanı ile egemenlik farklıdır."
+      ],
+      "strategy": "Coğrafi görev paylaşımını ve üst makama bağlılık bilgisini aynı şemada göster; yerel yöneticinin varlığına bakarak bağlılık koşulunu kaldıran veya modern kurumları bütünüyle ekleyen yorumları sına.",
+      "steps": [
+        "Doğuyu kağan, batıyı bir hanedan üyesi yönetiyor; iki coğrafi yönetim alanı açıkça verilmiştir.",
+        "Batı yöneticisi için “kağana bağlı” koşulu bulunuyor; bu bilgi ayrı ve bütünüyle bağımsız egemenlik iddiasını sınırlar.",
+        "İkili yönetim paylaşımı yorumu iki veriyi de korur. Dil farkı veya bugünkü federal devletle tam özdeşlik bu paylaşım bilgisinden belirlenmez."
+      ],
+      "optionReasons": [
+        "Batı yöneticisinin kağana bağlı olduğu açıkça söylenirken her durumda bütünüyle bağımsız olduğunu ileri sürmek koşulu siler.",
+        "Doğru. Doğu-batı görev paylaşımı vardır; kağana bağlı yönetici bilgisi iki bağımsız devlet sonucuna gidilmesini engeller.",
+        "Yönetim bölgelerinin farklılığı iki bölgenin mutlaka ayrı dil konuştuğunu göstermez; dil hakkında bilgi verilmemiştir.",
+        "Doğuyu kağanın yönettiği doğrudan belirtilmiştir; doğuda hiçbir yetkisinin bulunmadığı iddiası parçaya aykırıdır.",
+        "Tarihsel yönetim paylaşımının modern federal devletlerin bütün kurumlarıyla aynı olduğu söylenemez; yalnız belirli görev ve bağlılık verisi vardır."
+      ],
+      "commonError": "İki yönetici veya iki bölge görünce bunları iki bağımsız egemen devlet saymak, batıdaki yöneticinin kağana bağlı olduğu bilgisini atlamaya yol açar.",
+      "check": "Şemanda batı yöneticisinden kağana bağlılık oku kalmalı. Bu oku silmeden doğu-batı paylaşımını gösterebiliyorsan yorum iki koşula da uygundur."
+    }
+  },
+  {
+    "id": "f013-foundation-ilk-turk-dunyasi-5",
+    "identity": "[\"f013-foundation-ilk-turk-dunyasi-5\",\"Bu eşleştirmeler hangi sırayı verir?\",\"Bir tarih kartı hazırlayan öğrenci 552’yi Bumin Kağan, 682’yi Kutluk/İlteriş Kağan, 744’ü Uygur Kağanlığı ile ilişkilendiriyor.\",[\"Uygur Kağanlığı → Asya Hun kuruluşu → I. Kök Türk kuruluşu.\",\"II. Kök Türk kuruluşu → Uygur Kağanlığı → Asya Hun kuruluşu.\",\"I. Kök Türk kuruluşu → Avrupa Hun kuruluşu → II. Kök Türk kuruluşu.\",\"I. Kök Türk kuruluşu → II. Kök Türk yeniden kuruluşu → Uygur Kağanlığı.\",\"Asya Hun kuruluşu → I. Kök Türk kuruluşu → Avrupa Hun kuruluşu.\"],3,\"552 Bumin ve I. Kök Türk, 682 Kutluk/İlteriş ve II. Kök Türk, 744 Uygur Kağanlığı ile eşleşir. Bu sırayı tek hanedanın hiç kesintisiz yönetimi gibi görmek yerine kuruluş ve yeniden örgütlenme ayrımlarıyla okumak gerekir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ders kronolojisinde 552 Bumin ve I. Kök Türk kuruluşuyla, 682 Kutluk/İlteriş ve II. Kök Türk yeniden kuruluşuyla, 744 Uygur Kağanlığı’nın oluşumuyla ilişkilidir. Ortak coğrafya, bu siyasi oluşumların kesintisiz tek kuruluş olayı olduğunu göstermez."
+      ],
+      "strategy": "Her yılı kişi ve siyasi oluşumla eşleşen bir tarih kartına dönüştür; seçenekleri yalnız tarih sırasına göre değil üç kartın olay ve kişi bağını aynı anda korumalarına göre kontrol et.",
+      "steps": [
+        "552–Bumin eşleştirmesi ilk kartı I. Kök Türk kuruluşuna yerleştirir.",
+        "682–Kutluk/İlteriş ikinci kartı II. Kök Türk yeniden kuruluşuyla, 744 ise üçüncü kartı Uygur Kağanlığı’yla bağlar.",
+        "Sıra I. Kök Türk, II. Kök Türk yeniden kuruluşu ve Uygur Kağanlığıdır; Asya Hun veya Avrupa Hun kuruluşlarını bu kartların yerine koyan diziler elenir."
+      ],
+      "optionReasons": [
+        "552 Uygur Kağanlığına değil Bumin ve I. Kök Türk kuruluşuna aittir; sonraki Asya Hun eşleştirmesi de verilen kartlarla uyuşmaz.",
+        "İlk yıl 552 I. Kök Türk bağlamındadır; II. Kök Türk, Uygur ve Asya Hun sırası hem ilk hem son kartı değiştirir.",
+        "İlk eşleştirme uygun olsa da 682 Avrupa Hun değil Kutluk/İlteriş ve II. Kök Türk yeniden kuruluşudur; 744 de Uygur bağlamındadır.",
+        "Doğru. Üç yıl sırasıyla Bumin/I. Kök Türk, Kutluk-İlteriş/II. Kök Türk ve Uygur Kağanlığı ile eşleşir.",
+        "552 Asya Hun kuruluşu değildir; ayrıca 682 ve 744 için verilen II. Kök Türk ile Uygur bağları bu dizide korunmaz."
+      ],
+      "commonError": "Bütün Orta Asya siyasi oluşumlarını ortak Türk adı nedeniyle birbirinin yerine kullanmak, kurucu kişi ve yeniden kuruluş ayrımlarını kaybettirir.",
+      "check": "Seçtiğin dizinin her öğesini kendi kartına geri bağla: Bumin–552, Kutluk/İlteriş–682 ve Uygur–744 eşleşmelerinin üçünün de korunması gerekir."
+    }
+  },
+  {
+    "id": "f013-foundation-ilk-turk-dunyasi-6",
+    "identity": "[\"f013-foundation-ilk-turk-dunyasi-6\",\"Bu metinleri kullanan araştırmacının yaklaşımı nasıl olmalıdır?\",\"8. yüzyıldaki Orhun yazıtlarında kağanın yönetimi, halka hitabı ve devletin yaşadığı güçlükler anlatılıyor.\",[\"Taşa yazıldığı için her cümlesini yorum gerektirmeyen mutlak gerçek saymak.\",\"Dönemin doğrudan siyasi kaydı olarak kullanıp yazdıranların amaç ve bağlamını incelemek.\",\"Yönetici anlatısı olduğu için hiçbir tarihsel değeri olmadığını düşünmek.\",\"Yazıtları yalnız 20. yüzyıl olaylarını anlatan kaynak saymak.\",\"Metinde halk adı bulunduğu için bütün çağlarda aynı devletin sürdüğünü kabul etmek.\"],1,\"Orhun yazıtları II. Kök Türk döneminin 8. yüzyıl siyasi dünyası için doğrudan kaynaklardır. Hükümdar hitabı ve amacı, anlatımın değerlendirilmesinde önem taşır. Doğrudan kaynak, eleştiriden bağımsız kaynak demek değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Orhun yazıtları VIII. yüzyıl II. Kök Türk siyasi dünyasıyla ilgili doğrudan dönemsel kaynaklardır. Kaynağı yazdıranların konumu, halka seslenme amacı ve seçtiği olaylar anlatıyı biçimlendirir; birinci el tanıklık, eleştirel incelemeyi gereksiz kılmaz."
+      ],
+      "strategy": "Kaynağın döneme yakınlığını ve anlatıcının amacını ayrı değerlendirme ölçütleri yap; yazıtı kullanma değerini korurken her cümleyi sınamadan kabul etmeyen araştırma yaklaşımını ara.",
+      "steps": [
+        "Yazıtların konusu kağanın yönetimi, halka hitabı ve devletin güçlükleridir; bunlar döneminin siyasi ilişkileri hakkında veri sağlar.",
+        "Halka seslenen yöneticinin kendini ve kararlarını nasıl sunduğu da kaynağın üretim bağlamına dahildir.",
+        "Yazıtlar doğrudan siyasi kayıt olarak kullanılır; amaçları ve bağlamları incelenir, başka kanıtlarla karşılaştırılır. Taş yüzey mutlak doğruluk garantisi vermez."
+      ],
+      "optionReasons": [
+        "Taşa yazılmış olmak anlatının amacı, seçiciliği veya doğruluğu üzerine inceleme gereğini kaldırmaz; malzeme tarafsızlık kanıtı değildir.",
+        "Doğru. Döneme ait siyasi anlatı kullanılabilir; onu yazdıranların amaç ve bağlamının araştırılması kaynak eleştirisini korur.",
+        "Yönetici anlatısı olması kaynağı değersiz kılmaz; yönetim, hitap ve siyasi temsil biçimleri hakkında da bilgi sağlar.",
+        "Parçada VIII. yüzyıl yönetimi ve devlet güçlükleri verilir; yazıtları yalnız XX. yüzyıl olaylarını anlatan kaynak saymak tarihini değiştirir.",
+        "Bir halk adının yazıtta geçmesi bütün yüzyıllarda aynı devletin kesintisiz sürdüğünü kanıtlamaz; devlet ve topluluk sürekliliği farklıdır."
+      ],
+      "commonError": "Birinci el kaynağı ya bütünüyle yanılmaz ya da yönetici sesi olduğu için bütünüyle değersiz saymak, kullanım değeriyle eleştiri gereğini gereksiz yere ayırır.",
+      "check": "Yanıtın hem VIII. yüzyıl siyasi verilerini kullanmaya hem kaynağı yazdıranların amaçlarını sorgulamaya izin vermeli; iki görev birbirini dışlamaz."
+    }
+  },
+  {
+    "id": "f013-foundation-ilk-turk-dunyasi-7",
+    "identity": "[\"f013-foundation-ilk-turk-dunyasi-7\",\"Bu bulguların desteklediği yorum hangisidir?\",\"Bir Uygur yerleşiminde sulama kanalları, konutlar, yazılı belgeler ve ticaret izleri görülüyor.\",[\"Bütün Türk topluluklarının aynı gün yerleşik yaşama geçtiği.\",\"Uygurlardan önce hiçbir Türk topluluğunun tarım yapmadığı.\",\"Bulunan her yazının aynı hükümdar tarafından yazıldığı.\",\"Yerleşik hayatın toplumdaki bütün askerî faaliyetleri bitirdiği.\",\"Yerleşik üretim ve şehirli kültür faaliyetlerinin bu yerleşimde geliştiği.\"],4,\"Kanallar, konutlar, belgeler ve ticaret izleri birlikte yerleşik ve şehirli faaliyetleri destekler. Ancak verinin coğrafi kapsamı sınırlıdır. Bundan önce hiç tarım bulunmadığı veya bütün Türklerin aynı anda aynı yaşam biçimine geçtiği sonucu çıkarılamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sulama kanalları üretim altyapısını, konutlar yerleşimi, yazılı belgeler kayıt faaliyetini ve ticaret izleri alışverişi araştırmaya yardım eder. Bir yerleşimde birlikte bulunan bu kanıtların kapsamı, bütün toplulukların veya önceki bütün dönemlerin hayatını kapsamaz."
+      ],
+      "strategy": "Her buluntuyu desteklediği faaliyetle eşleştiren bir kanıt listesi kur; bu yerel kümenin birlikte gösterdiği durumu ararken kanıtta bulunmayan ilk olma, bütün halk veya askerî son iddialarını ayır.",
+      "steps": [
+        "Kanallar ve konutlar bu yerleşimde düzenli üretim ve yerleşme altyapısıyla ilişkilidir.",
+        "Yazılı belgeler ile ticaret izleri, kayıt ve şehirli alışveriş faaliyetlerini bu buluntu kümesine ekler.",
+        "Birlikte okunduğunda yerleşik üretim ve şehirli kültür faaliyetlerinin burada geliştiği desteklenir; bütün Türkler veya önceki tarım tarihi hakkında evrensel hüküm kurulmaz."
+      ],
+      "optionReasons": [
+        "Tek bir Uygur yerleşiminin bulguları bütün Türk topluluklarının aynı gün yerleşik yaşama geçtiğini göstermez.",
+        "Burada tarım altyapısı bulunması, önceki bütün Türk topluluklarında tarımın hiç yapılmadığını kanıtlamaz; önceki dönem taraması yoktur.",
+        "Belgelerin bulunması hepsinin aynı hükümdar tarafından yazıldığı anlamına gelmez; yazar ve tarihlere ilişkin veri verilmemiştir.",
+        "Yerleşik üretim göstergeleri bütün askerî faaliyetlerin sona erdiğini göstermez; ordu ve savaş hakkında kayıt sunulmuyor.",
+        "Doğru. Sulama, konut, yazılı kayıt ve ticaret izleri bu yerleşimde üretim ile şehirli faaliyetlerin birlikte geliştiğini destekler."
+      ],
+      "commonError": "Belirli yerde bulunan kanal ve belgeleri bütün Türk topluluklarına, bütün önceki çağlara veya tüm askerî hayata aynı hüküm olarak yaymak kanıtın ölçeğini aşar.",
+      "check": "Çözümündeki her faaliyetin yanına dayanağını yaz: sulama–üretim, konut–yerleşim, belge–kayıt, ticaret izi–alışveriş. Sonuçta “bu yerleşimde” sınırı kalmalı."
+    }
+  },
+  {
+    "id": "f013-foundation-ilk-turk-dunyasi-8",
+    "identity": "[\"f013-foundation-ilk-turk-dunyasi-8\",\"İki bilgi birlikte hangi ayrımı gösterir?\",\"Uygur Kağanlığı 840’ta merkezî bozkır hâkimiyetini kaybediyor. Uygur topluluklarının daha sonra Turfan ve Kansu çevresinde kültürel faaliyetleri sürüyor.\",[\"840’tan sonra bütün Uygurların ortadan kalktığını.\",\"Turfan’ın 840’tan önce hiç yerleşim görmediğini.\",\"Bir siyasi hâkimiyetin sona ermesiyle topluluğun ve kültürün sona ermesi aynı şey değildir.\",\"Kültürel faaliyetin ancak tek bir devlet kesintisiz yaşarsa mümkün olduğunu.\",\"Merkezî hâkimiyet kaybının hiç yaşanmadığını.\"],2,\"840 bozkır merkezli siyasi düzen için bir kırılmadır. Sonraki yerleşimlerde süren faaliyetler halkın ve kültürün tek bir devletin son tarihiyle bitmediğini gösterir. Bu süreklilik, siyasi hâkimiyet kaybını da yok saydırmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir devletin merkezî hâkimiyeti, o siyasi yapının belirli coğrafyadaki yönetme gücüdür. Halkın farklı yerlerde sürdürdüğü üretim ve kültür faaliyetleri başka bir süreklilik alanıdır. Uygur bozkır hâkimiyetinin 840’taki kaybıyla Turfan ve Kansu’daki sonraki faaliyetler bu iki düzeyi ayırmaya yardım eder."
+      ],
+      "strategy": "İlk kaydın sona eren özelliğini ve sonraki kaydın süren faaliyetini ayrı zaman çizgilerinde göster; birinin varlığını korumak için diğerini reddetmeyi gerektirmeyen yorumu belirle.",
+      "steps": [
+        "840 kaydı merkezî bozkır hâkimiyetinin kaybını bildirir; anlatılan değişim siyasi denetim alanındadır.",
+        "Daha sonraki Turfan ve Kansu faaliyetleri toplulukların ve kültürel üretimin sürdüğünü gösterir.",
+        "Siyasi hâkimiyetin sonuyla topluluğun ve kültürün sonu aynı değildir. Sonraki devamlılık, 840’taki siyasi kaybın yaşanmadığı anlamına da gelmez."
+      ],
+      "optionReasons": [
+        "Sonraki Turfan ve Kansu kültür faaliyetleri açıkça verildiği için bütün Uygurların ortadan kalktığı söylenemez.",
+        "Sonraki faaliyetlerin anlatılması Turfan’ın 840 öncesinde hiç yerleşim görmediğini göstermez; önceki dönem bilgisi yoktur.",
+        "Doğru. Bir siyasi merkezin hâkimiyet kaybı ile toplulukların farklı merkezlerdeki kültürel devamı iki ayrı tarihsel ölçektir.",
+        "Metin siyasi hâkimiyet kaybından sonra da kültürel faaliyetin sürdüğünü söyler; kesintisiz tek devlet şartı bu örneğe uymaz.",
+        "Kültürün devamı siyasi kaybı iptal etmez; parçada 840’ta merkezî bozkır hâkimiyetinin kaybedildiği doğrudan belirtilir."
+      ],
+      "commonError": "Devletin siyasi son tarihini insanların ve kültürün yok oluş tarihi saymak ya da kültürel devamdan siyasi kaybı inkâr etmek iki veriden birini siler.",
+      "check": "Yorumunda iki cümle birlikte doğru kalmalı: 840’ta merkezî hâkimiyet kayboluyor ve daha sonra Turfan/Kansu’da kültürel faaliyetler sürüyor."
+    }
+  },
+  {
+    "id": "f013-foundation-ilk-turk-dunyasi-9",
+    "identity": "[\"f013-foundation-ilk-turk-dunyasi-9\",\"Bu düzenin doğrudan gösterdiği özellik hangisidir?\",\"Bir orduda birlikler on, yüz, bin ve on bin kişilik kademelerle örgütleniyor; komutanlar arasında belirli görev ilişkileri kuruluyor.\",[\"Askerî teşkilatta sayısal kademelendirme ve komuta düzeni bulunduğu.\",\"Bütün askerlerin yalnız piyade olduğu.\",\"Bütün yurttaşların yöneticiyi eşit oyla seçtiği.\",\"Ordunun her arazi ve savaşta kesin zafer kazanacağı.\",\"Bütün devlet gelirlerinin yalnız tarımdan sağlandığı.\"],0,\"Onlu teşkilat birliklerin kademelendirilmesi ve komuta ilişkileriyle ilgilidir. Bu bilgi tek başına silah türünü, bütün gelir kaynaklarını veya savaştaki başarıyı belirlemez. Teşkilatlanma, askerî kapasitenin unsurlarından biridir; zafer garantisi değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Onlu askerî teşkilat birliklerin 10, 100, 1000 ve 10.000 gibi sayısal kademelerle düzenlenmesiyle ilgilidir. Kademeler arasındaki komuta ilişkileri görev ve denetimi örgütler; bu yapı tek başına askerlerin yaya-atlı bileşimini, gelir kaynaklarını veya savaş sonucunu belirlemez."
+      ],
+      "strategy": "Sayıların neyi saydığını ve komutan bağlarının hangi işi düzenlediğini belirle; bu iki verinin doğrudan ait olduğu örgütlenme alanını, farklı kanıt gerektiren diğer özelliklerden ayır.",
+      "steps": [
+        "On, yüz, bin ve on bin sayıları ordudaki birlik büyüklükleri olarak verilmiştir; sayısal bir kademelendirme vardır.",
+        "Komutanlar arasındaki görev ilişkileri de bu birlikleri bir komuta düzeni içinde birbirine bağlar.",
+        "Doğrudan gösterilen özellik askerî teşkilat ve komuta düzenidir; piyade olma, genel oy, kesin zafer veya yalnız tarım geliri bu veride bulunmaz."
+      ],
+      "optionReasons": [
+        "Doğru. Birliklerin sayısal kademeleri ile komutanlar arasındaki görev ilişkileri, askerî örgütlenme ve komuta düzeninin iki açık göstergesidir.",
+        "Birlik büyüklüğü askerlerin yaya mı atlı mı olduğunu belirlemez; bütün askerlerin piyade olduğu bilgisi verilmemiştir.",
+        "Askerî sayım ve komuta, yurttaşların yönetici seçme usulü değildir; genel oyla ilgili veri yoktur.",
+        "Teşkilatlanma savaş kapasitesine katkı sağlayabilir; fakat arazi, ikmal ve karşı kuvvet gibi koşullar olmadan kesin zafer söylenemez.",
+        "Onlu birlik düzeni devlet gelirlerinin kaynağını açıklamaz; yalnız tarımdan gelir elde edildiği belirtilmemiştir."
+      ],
+      "commonError": "Bir askerî düzenin varlığını bütün ordu özelliklerinin veya zafer sonucunun kanıtı saymak, sayısal örgütlenmeyle farklı değişkenleri birbirine karıştırır.",
+      "check": "Seçtiğin özellik hem on-yüz-bin kademesini hem komutanların görev bağını açıklamalı; bu iki veriden silah, seçim usulü veya gelir türü belirlenemediğini kontrol et."
+    }
+  },
+  {
+    "id": "f013-foundation-ilk-turk-dunyasi-10",
+    "identity": "[\"f013-foundation-ilk-turk-dunyasi-10\",\"Bu örnek hangi açıklamayı destekler?\",\"Bir Türk devletiyle komşu yerleşik topluluk arasında hayvansal ürünler, tahıl ve zanaat ürünleri değiştiriliyor. İki taraf aynı zamanda ticaret güzergâhlarının denetimi için rekabet ediyor.\",[\"Komşularla bütün ilişkilerin yalnız savaştan oluştuğunu.\",\"Ticaret yapan devletlerin hiçbir konuda rekabet edemeyeceğini.\",\"Hayvancılık yapan toplulukların tahıla ihtiyaç duymadığını.\",\"Ekonomik tamamlayıcılık ile siyasi rekabet aynı ilişkide birlikte bulunabilir.\",\"Yol denetiminin hiçbir ekonomik çıkar sağlamadığını.\"],3,\"Ürünlerin birbirini tamamlaması alışverişi desteklerken yol geliri ve stratejik denetim rekabet yaratabilir. İki ilişki biçimi aynı dönemde birlikte bulunabilir. Tarihi yalnız sürekli savaş veya kesintisiz dostluk ikilemine indirgemek veriyi eksiltir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Farklı üretim biçimleri birbirinin ihtiyaçlarını karşılayarak alışverişi destekleyebilir: hayvansal ürünler, tahıl ve zanaat ürünleri ekonomik tamamlayıcılık oluşturabilir. Yol denetimi ve geçiş gelirleri için siyasi rekabetin bulunması bu ticari ilişkiyi zorunlu olarak ortadan kaldırmaz."
+      ],
+      "strategy": "Alışverişi sağlayan ihtiyaç ilişkisini ve güzergâh denetimi üzerindeki çıkar çatışmasını ayrı başlıklarla göster; seçeneklerin iki ilişki biçimine aynı anda yer verip vermediğini denetle.",
+      "steps": [
+        "Hayvansal ürünler, tahıl ve zanaat ürünlerinin değişimi tarafların farklı ürünlerden yararlanmasını gösterir.",
+        "Aynı taraflar yolların denetimi için rekabet ediyor; bu ikinci ilişki siyasi-stratejik çıkar alanındadır.",
+        "Ekonomik tamamlayıcılık ve siyasi rekabet birlikte bulunabilir. Parçayı yalnız savaş ya da rekabetsiz ticaret olarak anlatmak verinin bir bölümünü dışlar."
+      ],
+      "optionReasons": [
+        "Mal değişimi açıkça anlatıldığı için bütün ilişkileri yalnız savaşa indirmek ticaret bilgisini yok sayar.",
+        "Parça ticaret ile güzergâh rekabetini aynı anda verir; ticaret yapanların hiçbir konuda rekabet edemeyeceği iddiasına uymaz.",
+        "Tahılın değişilen mallar arasında bulunması, hayvancılık yapan tarafın tahıla ihtiyaç duymayacağını söylemek için dayanak değildir.",
+        "Doğru. Ürün alışverişi ekonomik tamamlayıcılığı, yol denetimi mücadelesi ise siyasi rekabeti gösterir; ikisi birlikte anlatılmıştır.",
+        "Yol denetimi geçiş, güvenlik ve gelir bağlantıları nedeniyle ekonomik çıkar taşıyabilir; hiçbir çıkar sağlamadığı sonucu verilmez."
+      ],
+      "commonError": "Komşu ilişkilerini yalnız dostluk ya da yalnız düşmanlık diye iki değişmez kutuya ayırmak, aynı dönemdeki alışveriş ve rekabetin birlikte bulunmasını açıklayamaz.",
+      "check": "Yanıtını test etmek için iki fiili birlikte kullan: “ürün değiştiriyorlar” ve “yol denetiminde rekabet ediyorlar.” Doğru yorum bunların birini silmemelidir."
+    }
+  },
+  {
+    "id": "f013-foundation-islam-medeniyetinin-dogusu-1",
+    "identity": "[\"f013-foundation-islam-medeniyetinin-dogusu-1\",\"Hicretin yalnız yer değiştirme olarak görülmemesi neden uygundur?\",\"Mekke’den Medine’ye 622’de hicret ediliyor. Medine’de dayanışma, ortak savunma ve farklı grupların birlikte yaşamını düzenleme girişimleri gelişiyor.\",[\"Yeni siyasi ve toplumsal örgütlenmenin de dönüm noktası olduğu için.\",\"Aynı gün bütün Arabistan’ın tek inancı benimsediği için.\",\"Hicretin 632’deki vefatla aynı olay olduğu için.\",\"Medine’de bütün grupların aynı kökenden geldiğini gösterdiği için.\",\"Hicret sırasında modern genel oy sisteminin kurulduğu için.\"],0,\"Dayanışma ve ortak savunmanın düzenlenmesi, hicretin toplumsal-siyasi boyutunu gösterir. Veriler yalnız mekânsal bir hareketten fazlasını anlatır. Bununla birlikte bütün grupların aynı dini veya kökeni benimsediği sonucu çıkarılamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "622 hicreti Mekke’den Medine’ye göçtür; Medine’de dayanışma, ortak savunma ve farklı grupların ilişkilerinin düzenlenmesi yeni siyasi-toplumsal örgütlenmeyle ilgilidir. Göçün mekânsal boyutu ile sonrasındaki kurum ve ilişki değişimleri birlikte incelenebilir."
+      ],
+      "strategy": "Yer değiştirme bilgisini ve sonrasında kurulan ilişkileri ayrı listele; sorunun neden yalnız mekân değişimiyle yetinmediğini, verilen faaliyetlerin ortak işlevini bularak açıkla.",
+      "steps": [
+        "İlk cümle 622’de Mekke’den Medine’ye yapılan göçü ve yönünü belirliyor.",
+        "Sonraki veriler dayanışma, ortak savunma ve farklı grupların birlikte yaşamını düzenleme girişimleridir; bunlar toplumsal ve siyasi ilişkilerdir.",
+        "Bu nedenle hicret yeni siyasi-toplumsal örgütlenmenin de dönüm noktası olarak ele alınır; bütün Arabistan’ın aynı gün tek inancı benimsemesi veya modern seçim sonucu çıkarılmaz."
+      ],
+      "optionReasons": [
+        "Doğru. Dayanışma ve ortak savunma düzenlemeleri, göçle birlikte yeni siyasi-toplumsal örgütlenme boyutunun bulunduğunu gösterir.",
+        "Medine’deki ilişki düzenlemeleri bütün Arabistan halkının aynı gün aynı dini kabul ettiğini bildirmez; coğrafya ve nüfus kapsamı genişletilmiştir.",
+        "Hicret 622’deki göç, vefat ise 632’deki ayrı olaydır; iki farklı gelişme aynı olay sayılamaz.",
+        "Farklı grupların birlikte yaşamının düzenlenmesi anlatılır; bütün grupların aynı kökenden geldiği belirtilmez.",
+        "Dayanışma ve savunma düzeninden modern genel oy sisteminin bütün koşulları çıkarılamaz; oy hakkına ilişkin bilgi yoktur."
+      ],
+      "commonError": "Hicreti yalnız yolculuk tarihi olarak ezberlemek, parçada özellikle eklenen dayanışma, savunma ve ortak yaşam düzenlemelerinin neyi değiştirdiğini görmeyi engeller.",
+      "check": "Yanıtın göçün yönünü ve tarihini değiştirmeden sonrasındaki üç ilişkiyi açıklamalı: dayanışma, ortak savunma ve farklı gruplarla birlikte yaşam."
+    }
+  },
+  {
+    "id": "f013-foundation-islam-medeniyetinin-dogusu-2",
+    "identity": "[\"f013-foundation-islam-medeniyetinin-dogusu-2\",\"Bu iki grup sırasıyla hangi kavramlarla anılır?\",\"622’de Mekke’den Medine’ye gelen Müslümanlar ile onlara yardım eden Medineli Müslümanlar, dayanışma ilişkisi kuruyor.\",[\"Ensar ve mevali.\",\"Mevali ve muhacir.\",\"Muhacir ve ensar.\",\"Kadı ve halife.\",\"Hadari ve divan.\"],2,\"Muhacir bu bağlamda Mekke’den hicret eden Müslümanları, ensar onlara yardım eden Medineli Müslümanları anlatır. Mevali burada farklı bir toplumsal kavramdır; muhacir veya ensarın eş anlamlısı değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hicret bağlamında muhacir, Mekke’den Medine’ye göç eden Müslümanları; ensar, onlara yardım eden Medineli Müslümanları belirtir. Terimlerin ayırıcı ölçütü bu olay içindeki konum ve yapılan iştir; mevali, kadı veya halife bu iki grubun eş anlamlısı değildir."
+      ],
+      "strategy": "İlk ve ikinci grubu geldikleri yerle ve yaptıkları işle eşleştiren iki satır oluştur; kavram çiftlerini yalnız adlarına göre değil satırların sırasını da koruyarak denetle.",
+      "steps": [
+        "İlk grup Mekke’den Medine’ye gelen Müslümanlardır; bu olay bağlamında göç eden grup muhacir diye adlandırılır.",
+        "İkinci grup gelenlere yardım eden Medineli Müslümanlardır; yardım eden grup ensardır.",
+        "İstenen sıra gelenler, ardından yardım edenlerdir; bu nedenle muhacir–ensar eşleştirmesi iki satırı da doğru karşılar."
+      ],
+      "optionReasons": [
+        "Ensar yardım eden Medineli gruptur; ilk gruba yerleştirilmesi sırayı bozar. Mevali de ikinci grubun özel adı değildir.",
+        "Mevali verilen göç eden grubun adı değildir; ikinci sıradaki muhacir de yardım eden Medineliler yerine göç edenleri anlatır.",
+        "Doğru. Mekke’den gelen Müslümanlar muhacir, onlara yardım eden Medineli Müslümanlar ensardır; sıra korunmuştur.",
+        "Kadı yargı görevlisi, halife siyasi yönetim makamıdır; bunlar göç eden ve yardım eden toplulukların adları değildir.",
+        "Hadari yerleşik yaşamla, divan kayıt ve idari düzenlemeyle ilişkilidir; iki hicret grubunu karşılayan kavramlar değildir."
+      ],
+      "commonError": "Muhacir ile ensarı aynı dayanışma içinde yer aldıkları için birbirinin yerine kullanmak veya ilk ve ikinci gruba göre istenen sırayı ters çevirmek eşleştirmeyi bozar.",
+      "check": "Terimleri birer fiille geri aç: muhacir için Mekke’den göç etme, ensar için Medine’de yardım etme karşılığı bulunmalı; iki grubun sırasını yeniden kontrol et."
+    }
+  },
+  {
+    "id": "f013-foundation-islam-medeniyetinin-dogusu-3",
+    "identity": "[\"f013-foundation-islam-medeniyetinin-dogusu-3\",\"Yalnız bu bilgiye dayanılarak hangi yargıya ulaşılabilir?\",\"Bir sözleşme, Medine’de farklı grupların birlikte yaşaması ve ortak savunması hakkında yükümlülükler belirliyor.\",[\"Bütün grupların aynı dini benimsediğine.\",\"Bütün grupların aynı kabileden geldiğine.\",\"Şehirde ekonomik faaliyetin sona erdiğine.\",\"Sözleşme bulunan yerde bütün anlaşmazlıkların kesin bittiğine.\",\"Farklı gruplar arasında ortak düzen kurmaya yönelik bir girişim bulunduğuna.\"],4,\"Sözleşme farklı grupların ilişkilerini ve ortak savunmayı düzenlemektedir. Bu, ortak siyasi-toplumsal düzen girişimidir. Ancak tarafların inanç veya köken bakımından aynılaşması, metnin varlığından otomatik olarak çıkmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Birlikte yaşama ve ortak savunma yükümlülüklerini belirleyen sözleşme, taraflar arasında siyasi-toplumsal düzen kurma girişimidir. Ortak kurallara bağlanmak tarafların din, soy ve ekonomik faaliyet bakımından aynılaşması veya bütün anlaşmazlıkların sona ermesi demek değildir."
+      ],
+      "strategy": "Sözleşmenin düzenlediği konularla taraflar hakkında verilmeyen özellikleri ayır; metnin varlığından uygulamanın kesin başarısını değil doğrudan gösterdiği düzenleme amacını çıkar.",
+      "steps": [
+        "Sözleşmenin tarafları farklı gruplardır; birlikte yaşama ve savunma konularında yükümlülükler belirleniyor.",
+        "Bu düzenleme ortak ilişki kurma girişimini gösterir; grupların aynı inancı veya aynı kökeni taşıdığı belirtilmiyor.",
+        "Ulaşılabilen sonuç farklı gruplar arasında ortak düzen kurmaya yönelik bir girişim bulunduğudur. Sözleşmenin yazılması bütün anlaşmazlıkların kesin bittiğini kanıtlamaz."
+      ],
+      "optionReasons": [
+        "Bir savunma ve birlikte yaşam sözleşmesi, farklı grupların aynı dini benimsediğini tek başına göstermez.",
+        "Tarafların ortak yükümlülük üstlenmesi aynı kabileden geldiklerinin kanıtı değildir; parça farklı gruplardan söz eder.",
+        "Sözleşmenin konuları savunma ve birlikte yaşamdır; ekonomik faaliyetin şehirde sona erdiği bilgisi bulunmaz.",
+        "Kural metninin varlığı, bütün anlaşmazlıkların fiilen ve kesin olarak bittiğini garanti etmez; uygulama hakkında ayrıca veri gerekir.",
+        "Doğru. Farklı grupların birlikte yaşama ve savunma yükümlülüklerinin belirlenmesi, ortak düzen kurma girişimini doğrudan gösterir."
+      ],
+      "commonError": "Ortak bir sözleşmeyi bütün tarafların din ve kökeninin aynı olmasıyla veya metnin eksiksiz uygulandığının kanıtıyla eşitlemek, düzenleme ile sonuç arasındaki farkı siler.",
+      "check": "Seçtiğin yargı sözleşmenin açık konularını kullanmalı; tarafların inanç ve kökenini değiştirmemeli ve belgede belirtilmeyen kesin uygulama başarısı eklememeli."
+    }
+  },
+  {
+    "id": "f013-foundation-islam-medeniyetinin-dogusu-4",
+    "identity": "[\"f013-foundation-islam-medeniyetinin-dogusu-4\",\"Hudeybiye’nin sonucunu anlatan uygun ifade hangisidir?\",\"628 Hudeybiye bir antlaşmadır. Mekke’nin fethi ise 630’da gerçekleşmiştir. Antlaşma, Müslümanların siyasi muhatap olarak kabul edilmesi ve barış ortamı bakımından önemlidir.\",[\"Mekke aynı antlaşma günü askerî olarak fethedilmiştir.\",\"Şehir fethi olmadan da diplomatik bir kazanım doğurabilmiştir.\",\"Hudeybiye, bütün seferlerin sona erdiği son olaydır.\",\"Antlaşma yapılması iki tarafın aynı yöneticiyi seçtiğini gösterir.\",\"Hudeybiye, hicretin diğer adıdır.\"],1,\"Antlaşmanın diplomatik değeri siyasi muhataplık ve iletişim ortamıyla ilgilidir. Mekke’nin fethi ayrı tarihteki gelişmedir. Bir sonucun önemli olması için mutlaka aynı gün yeni bir şehrin alınması gerekmez; olay türlerini ayırmak kronoloji hatasını önler.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hudeybiye 628’de yapılan bir antlaşma, Mekke’nin fethi ise 630’daki ayrı gelişmedir. Antlaşmalar siyasi muhataplık ve barış ortamı gibi diplomatik sonuçlar doğurabilir; diplomatik kazanım için aynı gün şehir fethi gerçekleşmesi zorunlu değildir."
+      ],
+      "strategy": "Olayları tarih, tür ve sonuç başlıklarıyla iki ayrı satıra yerleştir; toprak kazanımıyla siyasi muhataplığın farklı sonuçlar olduğunu koruyarak seçenekleri bu tabloya göre değerlendir.",
+      "steps": [
+        "628 Hudeybiye satırına antlaşma, 630 Mekke satırına fetih olay türünü yaz.",
+        "Hudeybiye için verilen sonuçlar siyasi muhatap olarak kabul ve barış ortamıdır; bunlar şehir ele geçirilmesiyle aynı işlem değildir.",
+        "Bu nedenle şehir fethi olmadan da diplomatik kazanım oluşabildiği yorumu uygundur; iki tarihi veya olay türünü tek gelişme sayan ifadeler elenir."
+      ],
+      "optionReasons": [
+        "Mekke’nin fethi 630’da, Hudeybiye ise 628’dedir; fetih antlaşmanın yapıldığı güne taşınamaz.",
+        "Doğru. Siyasi muhataplık ve barış ortamı diplomatik kazanımdır; metinde bu kazanımların aynı gün şehir fethi gerektirmediği görülür.",
+        "630’daki fetih zaten daha sonraki ayrı gelişme olarak verilir; Hudeybiye’den bütün seferlerin kesin sona erdiği sonucu çıkmaz.",
+        "Antlaşma tarafların ilişki kurmasıdır; iki tarafın aynı yöneticiyi seçtiğine dair veri sağlamaz.",
+        "Hicret 622’de Mekke’den Medine’ye göç, Hudeybiye 628’de antlaşmadır; olay adları birbirinin yerine kullanılamaz."
+      ],
+      "commonError": "Siyasi bir kazanımı ancak toprak alınmasıyla mümkün sanmak veya Hudeybiye antlaşmasıyla Mekke’nin fethini aynı tarihteki tek olay gibi görmek kronoloji ve tür hatasıdır.",
+      "check": "Yanıtını 628–antlaşma–muhataplık ve 630–fetih eşleşmelerine geri koy; bu iki satır hem tarihleri hem farklı sonuçlarıyla korunmalıdır."
+    }
+  },
+  {
+    "id": "f013-foundation-islam-medeniyetinin-dogusu-5",
+    "identity": "[\"f013-foundation-islam-medeniyetinin-dogusu-5\",\"Bu kartın koruduğu ayrım hangisidir?\",\"Bir bilgi kartında Kur’an’ın derlenmesi Hz. Ebu Bekir dönemiyle, nüshalarının çoğaltılarak merkezlere gönderilmesi Hz. Osman dönemiyle ilişkilendiriliyor.\",[\"İki işlem de yalnız Hz. Ali döneminde yapılmıştır.\",\"Derleme ve çoğaltma farklı devletlerin aynı merkez adıdır.\",\"Çoğaltma bir metnin hiç bulunmadığını gösterir.\",\"Bir metni bir araya getirmek ile nüshalarını üretip dağıtmak farklı işlemlerdir.\",\"Derleme işlemi bütün siyasi kurumların ortadan kaldırılmasıdır.\"],3,\"Derleme metnin bir araya getirilmesi, çoğaltma ise mevcut metnin nüshalarının üretilip dağıtılmasıyla ilgilidir. İki işlemi tek fiil veya tek halife altında toplamak, kaynaklardaki temel dönem ayrımını kaybettirir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Derleme, bir metnin parçalarının bir araya getirilip düzenlenmesi; nüsha çoğaltma ve dağıtma ise mevcut metnin örneklerinin üretilip farklı merkezlere ulaştırılmasıdır. Ders geleneğinde Kur’an’ın derlenmesi Hz. Ebu Bekir, nüshaların çoğaltılıp gönderilmesi Hz. Osman dönemiyle ilişkilendirilir."
+      ],
+      "strategy": "Kişi adlarından önce iki fiilin nesne üzerinde ne yaptığını belirle; bir araya getirme ile örnek üretip gönderme aşamalarını ayırarak dönem ve işlem karışıklığını denetle.",
+      "steps": [
+        "İlk bilgi Hz. Ebu Bekir dönemindeki derlemedir; metni bir araya getirip düzenleme işi anlatılır.",
+        "İkinci bilgi Hz. Osman döneminde nüshaların çoğaltılıp merkezlere gönderilmesidir; mevcut metnin örneklerinin üretilmesi ve dağıtılması söz konusudur.",
+        "Kart aynı eser üzerinde farklı dönemlerdeki iki işlemi ayırır. Bunları tek fiil, tek halife veya devlet merkezi adı gibi okumak uygun değildir."
+      ],
+      "optionReasons": [
+        "Kart işlemleri Hz. Ebu Bekir ve Hz. Osman dönemleriyle ilişkilendirir; ikisini yalnız Hz. Ali dönemine taşımak verilen eşleştirmeleri değiştirir.",
+        "Derleme ve çoğaltma devlet veya merkez adları değil, aynı metin üzerinde yapılan farklı işlerdir.",
+        "Bir metnin nüshalarını çoğaltmak mevcut bir metni esas alır; metnin hiç bulunmadığı sonucunu vermez.",
+        "Doğru. Derleme bir araya getirme, çoğaltıp gönderme ise nüsha üretimi ve dağıtımıdır; kart iki işlemi bu farkla ayırır.",
+        "Metin derlemek siyasi kurumların kaldırılması işlemi değildir; parçada böyle bir devlet düzeni değişikliği anlatılmaz."
+      ],
+      "commonError": "Eserin aynı olmasından yapılan işin de aynı olduğunu düşünmek, derleme ile çoğaltıp dağıtmayı tek işlem veya tek halife döneminde toplama hatasına götürür.",
+      "check": "Her dönem için fiili ve çıktıyı yeniden söyle: Hz. Ebu Bekir–derleme; Hz. Osman–nüsha üretip merkezlere gönderme. Eser ortak olsa da işlemler farklı kalmalıdır."
+    }
+  },
+  {
+    "id": "f013-foundation-islam-medeniyetinin-dogusu-6",
+    "identity": "[\"f013-foundation-islam-medeniyetinin-dogusu-6\",\"Bu iki işlev sırasıyla hangi kavramlarla eşleştirilir?\",\"Genişleyen devletin gelir ve giderlerini izleyen kamu hazinesi ile anlaşmazlıkları yargılayan görevli ayrı kurumlar olarak düzenleniyor.\",[\"Kadı ve beytülmal.\",\"Beytülmal ve kadı.\",\"Ensar ve muhacir.\",\"Gazve ve seriyye.\",\"Mevali ve hadari.\"],1,\"Beytülmal kamu hazinesi ve mali işlerle, kadı ise yargı işleriyle ilişkilidir. Bu kurumlar toprak ve nüfus büyürken artan yönetim ihtiyaçlarını anlamaya yardım eder. Bir kurum adını bütün devlet işlerinin tek karşılığı saymak yanlıştır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Beytülmal kamu hazinesi ve devletin mali kaynaklarıyla, kadı ise anlaşmazlıkların yargılanmasıyla ilişkilidir. Maliye kurumu ile yargı görevlisi farklı yönetim ihtiyaçlarına cevap verir; bir ad bütün devlet işlerinin karşılığı olarak kullanılmaz."
+      ],
+      "strategy": "İlk tanımın kurum mu, ikinci tanımın görevli mi olduğunu ve her birinin yaptığı işi belirle; kavram çiftlerini mali kaynak ve uyuşmazlık çözümü ölçütleriyle aynı sırada eşleştir.",
+      "steps": [
+        "İlk tanım devletin gelir ve giderlerini izleyen kamu hazinesidir; mali kaynak alanını gösterir.",
+        "İkinci tanım anlaşmazlıkları yargılayan görevliye aittir; bu iş yargılama alanındadır.",
+        "Mali hazine beytülmal, yargı görevlisi kadıdır. İstenen sırada beytülmal–kadı çifti iki işlevi de karşılar."
+      ],
+      "optionReasons": [
+        "Kadı yargı görevlisidir ve ikinci tanıma, beytülmal kamu hazinesidir ve ilk tanıma uyar; bu seçenek doğru terimleri ters sıraya koyar.",
+        "Doğru. Gelir ve giderlerle ilgili kamu hazinesi beytülmal, anlaşmazlıkları yargılayan görevli kadıdır; ilk ve ikinci işlev korunur.",
+        "Ensar ile muhacir hicret bağlamındaki topluluk adlarıdır; mali hazine ve yargı görevlisi işlevlerini karşılamaz.",
+        "Gazve ve seriyye katılım koşuluna göre sefer adlarıdır; burada sefer değil maliye ve yargı düzenlenmektedir.",
+        "Mevali belirli bağlamda toplumsal statü, hadari yerleşik yaşamla ilgilidir; kamu hazinesi ve yargıç için verilen adlar değildir."
+      ],
+      "commonError": "Doğru iki kavramı bilse bile sorunun istediği sırayı ters kurmak veya kurum-görevli ayrımını gözetmeden tarihsel terimleri birbirinin yerine yazmak eşleştirmeyi bozar.",
+      "check": "Beytülmal dediğinde kamu hazinesi, kadı dediğinde yargılama karşılığı bulunmalı; bu iki karşılığı parçadaki gelir-gider ve anlaşmazlık sırasına geri yerleştir."
+    }
+  },
+  {
+    "id": "f013-foundation-islam-medeniyetinin-dogusu-7",
+    "identity": "[\"f013-foundation-islam-medeniyetinin-dogusu-7\",\"Uygulama öncelikle hangi değişimle ilişkilidir?\",\"Bir yönetimde hükümdar kendi oğlunu veliaht belirleyerek yönetimin aynı aile içinde sürmesini hedefliyor. Emevi dönemi karşılaştırmasında bu uygulama öne çıkarılıyor.\",[\"Bütün yurttaşların eşit oyla yönetime katılmasıyla.\",\"Şehirlerin bağımsız bilim kurumuna dönüşmesiyle.\",\"Bütün devlet gelirlerinin kaldırılmasıyla.\",\"Dinî metinlerin ilk kez çoğaltılmasıyla.\",\"Yönetimin hanedanlaşmasıyla.\"],4,\"Oğlun veliaht gösterilmesi iktidarın hanedan içinde aktarılmasını hedefler. Bu nedenle uygulamanın doğrudan bağlamı hanedanlaşmadır. Modern genel oyla seçim veya bilimsel kurumlaşma, verilen uygulamanın açıklamadığı farklı konulardır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hanedan, hükümdarın ailesi ve soy çizgisiyle ilgili siyasi kavramdır. Oğlun veliaht belirlenmesi yönetimin aile içinde aktarılmasının planlanmasıyla ilişkilidir; bu işlem yöneticinin kim tarafından ve hangi usulle belirleneceği sorununa aittir."
+      ],
+      "strategy": "Uygulamayı iktidarı devreden kişi, belirlenen kişi ve aralarındaki bağ açısından çözümle; seçeneklerde aynı aktarım mekanizmasını açıklayan değişimle ilgisiz kurum ve faaliyetleri ayır.",
+      "steps": [
+        "Hükümdar kendi oğlunu veliaht gösteriyor; belirlenen kişinin yöneticiyle aile bağı vardır.",
+        "Amaç yönetimin aynı ailede sürmesidir; verilen değişken iktidarın sonraki kişiye aktarılma düzenidir.",
+        "Bu aktarım hanedanlaşma ile ilişkilidir. Genel oy, bilim kurumu, devlet gelirinin kaldırılması veya metin çoğaltılması hakkında bir işlem anlatılmaz."
+      ],
+      "optionReasons": [
+        "Aile içinden oğlun veliaht seçilmesi bütün yurttaşların eşit oyuyla yönetici belirlenmesi değildir; genel oy koşulu verilmemiştir.",
+        "Parça şehirlerin bilim kurumuna dönüşmesini değil yönetimin bir aile içinde aktarılma planını anlatır.",
+        "Veliaht belirleme, devlet gelirlerinin kaldırılması işlemi değildir; vergi ve mali kaynaklar hakkında bilgi yoktur.",
+        "Dinî metinlerin nüshalanması farklı bir faaliyettir; hükümdarın oğlunu veliaht göstermesi bu işlemi açıklamaz.",
+        "Doğru. Yönetimin hükümdardan oğluna ve aynı aile içinde geçmesinin hedeflenmesi hanedanlaşma bağlamına girer."
+      ],
+      "commonError": "Emevi adıyla bilinen bütün gelişmeleri aynı soruya taşımak, burada özellikle sorulan veliahtlık ve iktidarın aile içinde aktarımı değişkenini kaybettirir.",
+      "check": "Seçtiğin değişim adını “kendi oğlunu veliaht belirleyerek aynı ailede sürdürme” ifadesinin yerine koy; aktarım usulünü açıklamıyorsa konu dışına çıkmıştır."
+    }
+  },
+  {
+    "id": "f013-foundation-islam-medeniyetinin-dogusu-8",
+    "identity": "[\"f013-foundation-islam-medeniyetinin-dogusu-8\",\"Bu tanıma uygun olan kişi hangisidir?\",\"Bu ders bağlamında mevali sözcüğü, Emevi yönetimi altındaki Arap olmayan Müslümanlar için kullanılmaktadır.\",[\"Arap kökenli olmayan her gayrimüslim.\",\"Kökeni ne olursa olsun her Medineli yardımcı.\",\"Müslüman olmuş, Arap kökenli olmayan bir kişi.\",\"Yargı işleriyle görevlendirilmiş her kadı.\",\"Mekke’den hicret eden bütün Müslümanların ortak unvanı.\"],2,\"Burada iki koşul birlikte verilmiştir: Arap kökenli olmama ve Müslüman olma. Gayrimüslim, ensar, muhacir veya kadı bunların eş anlamlısı değildir. Tarihsel mevali kavramının her bağlamı bu tek okul tanımına indirgenmemeli; soru kapsamı açık tutulmuştur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bu sorudaki mevali tanımı iki koşulun birlikte sağlanmasını ister: kişinin Arap kökenli olmaması ve Müslüman olması. Köken, inanç, meslek ve hicret içindeki rol farklı ölçütlerdir; tarihsel terimin başka dönem ve bağlamlardaki anlamları bu açık soru tanımının yerine geçirilmez."
+      ],
+      "strategy": "Tanımı iki koşullu bir kontrol listesine çevir; her kişi veya grup ifadesinin köken ve inanç koşullarını ayrı ayrı karşılayıp karşılamadığını denetleyerek eksik ya da aykırı eşleşmeleri ele.",
+      "steps": [
+        "İlk koşul Arap kökenli olmamaktır; yalnız bir görev veya Medine’de yardım etme rolü bu koşulu kendiliğinden bildirmez.",
+        "İkinci koşul Müslüman olmaktır; gayrimüslim olarak tanımlanan kişi bu koşula uymaz.",
+        "Müslüman olmuş ve Arap kökenli olmayan kişi iki şartı birlikte karşılar. Ensar, muhacir ve kadı adları bu iki koşulun eş anlamlısı değildir."
+      ],
+      "optionReasons": [
+        "Arap kökenli olmama koşuluna uysa da gayrimüslim kişi Müslüman olma şartını karşılamaz; iki koşuldan biri ihlal edilmiştir.",
+        "Medineli yardımcı ensar bağlamıdır; kökeni ne olursa olsun ifadesi Arap kökenli olmama koşulunu zorunlu kılmaz.",
+        "Doğru. Kişinin Müslüman olması ve Arap kökenli olmaması, soruda verilen iki tanım şartını birlikte sağlar.",
+        "Kadı bir yargı görevidir; bu görev tek başına kişinin Arap kökenli olmadığını göstermez ve mevaliyle eş anlamlı değildir.",
+        "Mekke’den hicret edenler muhacir bağlamındadır; göç rolü Arap kökenli olmama şartının yerine geçmez."
+      ],
+      "commonError": "Tanımdaki iki koşuldan yalnız birini kontrol etmek veya mevaliyi meslek, yerleşim ve göç rolü bildiren bütün terimlerle aynı sanmak yanlış eşleştirmeye yol açar.",
+      "check": "Yanıtın yanına iki ayrı işaret koy: Arap kökenli değil ve Müslüman. İkisi de açıkça doğrulanmıyorsa sorunun verdiği mevali tanımı tamamlanmış değildir."
+    }
+  },
+  {
+    "id": "f013-foundation-islam-medeniyetinin-dogusu-9",
+    "identity": "[\"f013-foundation-islam-medeniyetinin-dogusu-9\",\"Bu durum hangi yorumu destekler?\",\"Şam merkezli Emevi yönetimi 750’de sona eriyor. Sonraki dönemde Abbasi merkezlerinde ve Endülüs’te bilim, sanat ve öğretim faaliyetleri sürüyor.\",[\"Medeniyet birikimi, tek bir hanedanın siyasi ömründen daha geniş olabilir.\",\"750’de bütün İslam dünyasında kültürel üretimin bittiğini.\",\"Endülüs’teki bütün yapıların Şam’la aynı siyasi tarihe sahip olduğunu.\",\"Bilimsel faaliyetin yalnız savaş zamanında yapılabildiğini.\",\"Hanedan değişiminin her dil ve geleneği aynı anda yok ettiğini.\"],0,\"Farklı siyasi merkezlerde süren faaliyetler, medeniyetin yalnız bir hanedandan ibaret olmadığını gösterir. Şam’daki yönetim değişimi başka bölgelerdeki bütün siyasi ve kültürel yaşamı aynı gün sona erdirmez. Süreklilik ile siyasi değişim birlikte bulunabilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Siyasi hanedanların iktidar süreleri ile bilim, sanat ve öğretim ağlarının süreleri aynı olmak zorunda değildir. Bir merkezde iktidar değişirken başka merkezlerdeki kurum ve insanlar faaliyetlerini sürdürebilir; medeniyet birikimi tek hanedanın siyasi sınır ve ömrüne indirgenmez."
+      ],
+      "strategy": "Sona eren siyasi yapıyla süren kültürel faaliyetleri zaman ve yer bakımından ayrı satırlarda izle; hanedan değişimini başka merkezlerdeki bütün faaliyetlerin sonu saymayan yorumu ara.",
+      "steps": [
+        "750 kaydı Şam merkezli Emevi yönetiminin siyasi sonunu bildiriyor; kapsam belirli bir iktidar merkezidir.",
+        "Abbasi merkezleri ile Endülüs’te bilim, sanat ve öğretimin sürmesi farklı yerlerde kültürel üretimin devam ettiğini gösteriyor.",
+        "Bu birliktelik medeniyet birikiminin tek hanedanın siyasi ömründen geniş olabileceğini destekler; siyasi değişimle kültürel devam birbirini dışlamaz."
+      ],
+      "optionReasons": [
+        "Doğru. Şam’daki siyasi sonun ardından farklı merkezlerde kültürel üretimin sürmesi, medeniyet birikiminin bir hanedanın ömrüyle sınırlı olmadığını gösterir.",
+        "Parça 750 sonrasında da bilim, sanat ve öğretimin sürdüğünü açıkça söyler; bütün kültürel üretimin bittiği iddiası buna aykırıdır.",
+        "Endülüs’te faaliyet bulunması bütün yapıların Şam’la aynı siyasi tarihe sahip olduğunu göstermez; ayrı merkezler ve süreçler korunmalıdır.",
+        "Bilimsel faaliyetin yalnız savaş zamanında mümkün olduğuna ilişkin koşul verilmez; kültürel devam anlatılmaktadır.",
+        "Hanedan değişirken faaliyetlerin sürmesi, her dil ve geleneğin aynı anda yok olduğu genellemesini desteklemez."
+      ],
+      "commonError": "Bir hanedanın siyasi son tarihini bütün medeniyetin veya bütün kültürel merkezlerin bitiş tarihi olarak kullanmak, farklı ölçeklerdeki süreklilikleri aynılaştırır.",
+      "check": "Yorumun hem Şam Emevi yönetiminin 750’de son bulmasına hem Abbasi ve Endülüs merkezlerindeki üretimin devamına aynı anda izin vermeli."
+    }
+  },
+  {
+    "id": "f013-foundation-islam-medeniyetinin-dogusu-10",
+    "identity": "[\"f013-foundation-islam-medeniyetinin-dogusu-10\",\"Ders terminolojisinde bu iki sefer sırasıyla nasıl adlandırılır?\",\"Bir komutanın yönettiği sefere Hz. Muhammed bizzat katılmıyor. Bir başka sefere ise bizzat katılıyor.\",[\"Gazve ve seriyye.\",\"Hicret ve mevali.\",\"Beytülmal ve kadılık.\",\"Seriyye ve gazve.\",\"Ensar ve muhacir.\"],3,\"Hz. Muhammed’in bizzat katılmayıp komutan görevlendirdiği sefer seriyye, bizzat katıldığı sefer gazve bağlamındadır. Sorudaki belirleyici, tarafların etnik kökeni veya seferin kesin zaferle bitmesi değil, verilen katılım koşuludur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ders terminolojisinde Hz. Muhammed’in bizzat katılmadığı ve görevlendirdiği komutanın yönettiği sefer seriyye; bizzat katıldığı sefer gazve olarak adlandırılır. Bu ayrım katılıma dayanır; kesin zafer, köken veya göç gibi başka ölçütler tanımın yerine geçmez."
+      ],
+      "strategy": "Seferleri yöneten komutanın adıyla değil verilen bizzat katılım koşuluyla iki satıra ayır; ad çiftlerini her satırın koşuluyla ve istenen sırayla birlikte karşılaştır.",
+      "steps": [
+        "İlk seferi görevlendirilen bir komutan yönetiyor ve Hz. Muhammed bu sefere bizzat katılmıyor.",
+        "İkinci seferde bizzat katılım var; dolayısıyla iki satırın ayırıcı ölçütü katılmama ve katılma olarak belirlenir.",
+        "Katılmama koşulu seriyyeye, bizzat katılım gazveye karşılık gelir. Sıra seriyye–gazve olmalıdır; ters dizi koşulları yer değiştirir."
+      ],
+      "optionReasons": [
+        "Doğru iki sefer terimi verilse de sıra terstir: ilk seferde bizzat katılım yoktur ve gazve değil seriyye gerekir.",
+        "Hicret göç olayını, mevali belirli toplumsal bağlamı anlatır; bizzat katılımına göre iki sefer türünün adları değildir.",
+        "Beytülmal kamu hazinesi, kadılık yargı görevidir; parçada maliye ve yargı kurumu değil seferlere katılım karşılaştırılır.",
+        "Doğru. İlk seferde bizzat katılım olmadığı için seriyye, ikinci seferde bizzat katılım bulunduğu için gazve eşleştirmesi uygundur.",
+        "Ensar ve muhacir Medine’de yardım edenlerle hicret eden toplulukları belirtir; iki sefer türünü adlandırmaz."
+      ],
+      "commonError": "Gazve-seriyye ayrımını savaşın kazanılması, tarafların kökeni veya yalnız komutan bulunmasına bağlamak yerine soruda verilen bizzat katılım koşuluna dayanmak gerekir.",
+      "check": "Seçtiğin ilk terimi bizzat katılmama, ikinci terimi katılma cümlesine geri yerleştir; bu iki koşulun yer değiştirmediğini denetle."
+    }
+  },
+  {
+    "id": "f013-foundation-turklerin-islamiyeti-kabulu-1",
+    "identity": "[\"f013-foundation-turklerin-islamiyeti-kabulu-1\",\"Bu kanıttan hangi sonuç doğrudan çıkarılabilir?\",\"Bir Türk komutan Abbasi ordusunda görev alıyor. Aynı tarihte mensup olduğu topluluğun bütün bireylerinin inancı hakkında bir kayıt bulunmuyor.\",[\"Belirli bir kişinin askerî-idari ilişkiye katıldığı.\",\"Bütün Türk topluluklarının aynı gün Müslüman olduğu.\",\"Topluluğun resmî dilinin kesinlikle değiştiği.\",\"Komutanın bağımsız bir devlet kurduğu.\",\"Halkın tamamının aynı siyasi tercihi yaptığı.\"],0,\"Kanıt, adı geçen komutanın görevi ve ilişkisiyle sınırlıdır. Bireysel görev, topluluğun bütün inanç ve dil tercihleri için yeterli değildir. İlk temas, hizmet, hükümdarın tercihi ve resmî kabul ayrı kanıt düzeylerinde incelenir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir kişinin bir orduda görev alması belirli bir askerî-idari ilişkiye katılımını gösterir. Kişisel görev kaydı, mensup olduğu topluluğun bütün üyelerinin inancı, dili veya siyasi tercihi hakkında toplu ölçüm değildir; bu alanlar için ayrı kanıt gerekir."
+      ],
+      "strategy": "Kanıtın öznesini, yaptığı işi ve kapsadığı kişi sayısını belirle; seçeneklerin aynı özne ve eylem sınırında kalıp kalmadığını, topluluk veya devlet düzeyine hangi ek varsayımla geçtiğini incele.",
+      "steps": [
+        "Kayıttaki özne belirli bir Türk komutan, eylem ise Abbasi ordusunda görev almaktır.",
+        "Topluluğun bütün bireylerinin inancı hakkında kayıt bulunmadığı açıkça söylenir; kişinin görevini bütün topluluğa taşıyacak veri yoktur.",
+        "Doğrudan çıkarım bu kişinin askerî-idari ilişkiye katıldığıdır. Toplu kabul, dil değişikliği, devlet kurma veya bütün halkın siyasi tercihi ayrıca gösterilmemiştir."
+      ],
+      "optionReasons": [
+        "Doğru. Bir komutanın Abbasi ordusunda görev alması, o belirli kişinin askerî-idari ilişkiye katıldığını doğrudan gösterir.",
+        "Bütün Türk toplulukları hakkında inanç kaydı yoktur; tek kişinin görevinden herkesin aynı gün Müslüman olduğu sonucu çıkarılamaz.",
+        "Orduda görev almak topluluğun resmî dilinin değiştiğini göstermez; bir dil kararı veya uygulama kaydı verilmemiştir.",
+        "Komutanın Abbasi ordusundaki görevi bağımsız devlet kurma eylemi değildir; böyle bir siyasi kuruluş bilgisi yoktur.",
+        "Belirli kişinin hizmeti, bütün halkın tek siyasi tercihini ölçmez; kişinin rolü topluluğun tamamına genişletilmiştir."
+      ],
+      "commonError": "Bir komutanın kurduğu ilişkinin niteliğini bütün topluluğun inanç, dil ve siyasi tercihi olarak okumak, kişi düzeyindeki kanıtı toplu kabul belgesine dönüştürür.",
+      "check": "Sonucun öznesi kayıttaki belirli komutan olarak kalmalı ve yüklemi orduda görev almakla ilişkili olmalı; “bütün halk” ekliyorsan yeni kanıt aramalısın."
+    }
+  },
+  {
+    "id": "f013-foundation-turklerin-islamiyeti-kabulu-2",
+    "identity": "[\"f013-foundation-turklerin-islamiyeti-kabulu-2\",\"Bu kronolojiye uygun eşleştirme hangisidir?\",\"Abbasiler 750’de yönetime geliyor. 751 Talas Savaşı’nda Abbasi ordusu ile Tang kuvvetleri karşılaşıyor; Karluklar Abbasi tarafını destekliyor.\",[\"Talas: Emevi–Bizans karşılaşması ve Hun desteği.\",\"Talas: Karahanlı–Gazneli karşılaşması.\",\"Talas: Abbasi–Tang karşılaşması ve Karluk desteği.\",\"Talas: Türkiye Selçuklu–Moğol karşılaşması.\",\"Talas: Büyük Selçuklu–Bizans karşılaşması.\"],2,\"750’den sonra Abbasi yönetimi başladığı için 751 Talas, Abbasi–Tang bağlamındadır. Karlukların desteği bu karşılaşmadaki rolü ifade eder. Emeviler veya sonraki Selçuklu ve Gazneli savaşlarıyla eşleştirme dönem ve taraf hatasıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Talas 751’de Abbasi ordusu ile Çin’in Tang kuvvetleri arasındaki karşılaşma, Karluklar ise Abbasi tarafına destek veren unsur bağlamındadır. Abbasi iktidarının 750’de başlaması bu savaşı Şam Emevi dönemiyle veya sonraki Selçuklu savaşlarıyla karıştırmayı önleyen kronolojik dayanaktır."
+      ],
+      "strategy": "Yönetim başlangıcını zaman çizgisinde işaretle; ardından savaşın iki tarafını ve destek veren grubu üç ayrı alana yerleştirerek seçeneklerin bütün alanları aynı anda karşılamasını iste.",
+      "steps": [
+        "750’de Abbasi yönetimi başlamış, savaş 751’de gerçekleşmiştir; 751 bu yönetim değişiminden sonradır.",
+        "Karşılaşmanın tarafları Abbasi ordusu ve Tang kuvvetleri, destek veren grup ise Abbasi tarafındaki Karluklardır.",
+        "Uygun eşleştirme Abbasi–Tang karşılaşması ve Karluk desteğidir; başka devletleri veya sonraki savaş çiftlerini bu olayın yerine koyan seçenekler elenir."
+      ],
+      "optionReasons": [
+        "Talas için Emevi–Bizans ve Hun desteği verilmemiştir; hem iki taraf hem destek grubu parçada belirtilenlerden farklıdır.",
+        "Karahanlı–Gazneli çifti 751’deki Abbasi–Tang taraflarını karşılamaz; kart bu devletlerin savaşını anlatmamaktadır.",
+        "Doğru. 751’in Abbasi döneminde olması, Tang karşı kuvveti ve Karluk desteği üçü birlikte korunmuştur.",
+        "Türkiye Selçuklu–Moğol çifti farklı dönem ve siyasi karşılaşmadır; 751’deki Talas taraflarının yerine geçirilemez.",
+        "Büyük Selçuklu–Bizans çifti de başka bir siyasi dönemle ilgilidir; Tang kuvveti ve Karluk desteği bu seçenekte korunmamıştır."
+      ],
+      "commonError": "Türk-Müslüman ilişkileri içindeki bütün savaşları aynı devletlerle eşlemek veya 750 yönetim değişimini atlamak, 751’in taraflarını yanlış döneme taşır.",
+      "check": "Seçtiğin eşleştirmede üç alanı tek tek doğrula: 751’de Abbasi yönetimi, karşıda Tang kuvvetleri, Abbasi tarafında Karluk desteği."
+    }
+  },
+  {
+    "id": "f013-foundation-turklerin-islamiyeti-kabulu-3",
+    "identity": "[\"f013-foundation-turklerin-islamiyeti-kabulu-3\",\"Hangi yorum bu iki bilgiyle bağdaşır?\",\"Talas Savaşı’nın Türklerle Müslümanlar arasındaki yakınlaşmayı desteklediği, farklı Türk topluluklarında İslamiyet’in yayılmasının sonraki yüzyıllarda da sürdüğü belirtiliyor.\",[\"Talas’tan önce Türklerle Müslümanların hiç karşılaşmadığı.\",\"751’de bütün Türklerin tek kararla din değiştirdiği.\",\"Dinî yayılmanın yalnız bir gün içinde tamamlanabildiği.\",\"Savaşın siyasi etkisinin hiçbir zaman bulunmadığı.\",\"Askerî ittifak ve yakınlaşma, bütün toplulukların anlık toplu kabulüyle aynı değildir.\"],4,\"Yakınlaşma bir etkiyi, sonraki yüzyıllarda yayılma ise farklı hızlarda ilerleyen süreci gösterir. Savaşın önemi bütün toplulukların aynı anda karar verdiği anlamına gelmez. Öncesindeki temasların varlığı da ayrıca değerlendirilmelidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir savaşın yakınlaşmayı kolaylaştırması siyasi ve kültürel ilişkilere etkisini anlatır. Farklı topluluklarda sonraki yüzyıllarda süren dinî yayılma ise zamana ve yere göre değişen toplumsal süreçtir. Bir dönüm noktası, bütün bireylerin anlık ortak kararının tarihi değildir."
+      ],
+      "strategy": "Savaşın ilişkilere etkisini ve yayılmanın zaman ölçeğini iki kanıt çizgisi olarak tut; bu çizgilerden birini yok sayan “ilk temas”, “herkes aynı gün” veya “hiç etki yok” yorumlarını sına.",
+      "steps": [
+        "İlk bilgi Talas’ın Türklerle Müslümanlar arasındaki yakınlaşmayı desteklediğidir; savaşın bir etkisi belirtilir.",
+        "İkinci bilgi yayılmanın sonraki yüzyıllarda da sürdüğüdür; süreç 751’de bütün topluluklar için tamamlanmış değildir.",
+        "Askerî ittifak ve yakınlaşmayla bütün toplulukların aynı anda kabulü ayrılır. Bu yorum hem savaşın önemini hem uzun süreli yayılmayı birlikte korur."
+      ],
+      "optionReasons": [
+        "Talas’ın yakınlaşmayı desteklemesi önceki bütün temasların yokluğunu göstermez; VII. yüzyıl ilişkileri ayrı bir tarihsel alandır.",
+        "Sonraki yüzyıllarda da yayılan süreç, 751’de bütün Türklerin tek kararla din değiştirdiği yorumuna uymaz.",
+        "Parça yayılmanın sonraki yüzyıllarda sürdüğünü söyler; yalnız bir gün içinde tamamlanabildiği iddiası verilen zaman ölçeğini bozar.",
+        "Yakınlaşmayı destekleme bilgisi bir etki bulunduğunu anlatır; savaşın siyasi etkisinin hiçbir zaman bulunmadığı söylenemez.",
+        "Doğru. Savaşın yakınlaşmaya katkısı ile farklı toplulukların farklı zamanlardaki kabul süreçleri aynı olay değildir."
+      ],
+      "commonError": "Dönüm noktası olan bir olayı bütün kişilerin ortak başlangıç ve bitiş tarihi saymak, sonraki yüzyıllardaki yayılma bilgisini açıklayamayan bir genelleme kurar.",
+      "check": "Yanıtının içine “yakınlaşmayı destekledi” ve “sonraki yüzyıllarda sürdü” ifadelerini birlikte yerleştir; biri diğerini gereksiz kılmamalı veya ortadan kaldırmamalı."
+    }
+  },
+  {
+    "id": "f013-foundation-turklerin-islamiyeti-kabulu-4",
+    "identity": "[\"f013-foundation-turklerin-islamiyeti-kabulu-4\",\"Ticaretin İslamiyet’in tanınmasını kolaylaştırması hangi mekanizmayla açıklanabilir?\",\"Tüccarlar iki bölge arasında düzenli yolculuk yapıyor. Mal alışverişiyle birlikte dil, inanç ve gündelik uygulamalar hakkında iletişim kuruyorlar.\",[\"Mal satan herkesin zorunlu olarak aynı dini benimsemesiyle.\",\"Tekrarlanan karşılaşma ve güven ilişkilerinin bilgi aktarımına ortam sağlamasıyla.\",\"Alışveriş yapılabilmesi için bütün dillerin kaldırılmasıyla.\",\"Her tüccarın bağımsız bir devlet kurmasıyla.\",\"Ticaretin siyasi ve kültürel temasları tamamen durdurmasıyla.\"],1,\"Düzenli karşılaşmalar yeni inançların tanınmasını ve iletişimi kolaylaştırabilir. Bu, bir kolaylaştırma mekanizmasıdır; bütün tüccarların din değiştirmesini gerektiren bir yasa değildir. Ekonomik, siyasi ve yerel etkenler birlikte değerlendirilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tekrarlanan ticari temas, kişilerin dil, inanç ve gündelik uygulamalar hakkında bilgi edinmesine ortam sağlayabilir. Karşılaşma ve güven ilişkisi bir kolaylaştırıcı mekanizmadır; yeni inancı tanımakla onu benimsemek farklı eylemler olduğu için her tüccarın zorunlu kabulü anlamına gelmez."
+      ],
+      "strategy": "Ekonomik faaliyetten inancı tanımaya uzanan ara bağlantıları kur; seçeneklerde zorunlu sonuç iddiası aramak yerine düzenli temasın iletişimi nasıl mümkün kıldığını açıklayan mekanizmayı değerlendir.",
+      "steps": [
+        "Tüccarlar iki bölge arasında düzenli yolculuk yapıyor; tek rastlantısal karşılaşma değil tekrarlanan temas vardır.",
+        "Mal değişimi sırasında dil, inanç ve gündelik uygulamalar hakkında iletişim kurulduğu açıkça belirtilir.",
+        "Tekrarlanan karşılaşma ve güven ilişkileri bilgi aktarımına ortam sağlayabilir. Bu etki herkesin aynı dini benimsemesini zorunlu kılan bir kural değildir."
+      ],
+      "optionReasons": [
+        "Ticaret yapmak ile din değiştirmek aynı eylem değildir; mal satan herkesin zorunlu aynı dini benimsemesi metinde verilmez.",
+        "Doğru. Düzenli yolculuk ve iletişim, insanlar arasında karşılaşma ve güven ortamıyla yeni inancın tanınmasını kolaylaştırabilir.",
+        "Parçada farklı diller hakkında iletişim bulunduğu söylenir; ticaretin gerçekleşmesi için bütün dillerin kaldırılması gerekmez.",
+        "Bir tüccarın iletişim ve alışverişi bağımsız devlet kuruluşu değildir; her tüccarın devlet kurduğu bilgisi yoktur.",
+        "Dil ve inanç hakkında iletişim açıkça verilirken ticaretin kültürel ve siyasi temasları tamamen durdurduğu ileri sürülemez."
+      ],
+      "commonError": "Kolaylaştırıcı etkiyi zorunlu din değiştirme sonucu sanmak veya yalnız mal değişimini görüp aradaki iletişim mekanizmasını açıklamamak neden sorusunu eksik bırakır.",
+      "check": "Açıklaman ekonomik temas → tekrarlanan iletişim → inancı tanıma imkânı bağını kurmalı; son halkayı bütün kişilerin kesin kabulü diye değiştirmemelidir."
+    }
+  },
+  {
+    "id": "f013-foundation-turklerin-islamiyeti-kabulu-5",
+    "identity": "[\"f013-foundation-turklerin-islamiyeti-kabulu-5\",\"Bu değişim kabul sürecini nasıl etkileyebilir?\",\"Bir karşılaştırmada Arap olmayan Müslümanlara görev verilmesinin kolaylaştığı ve dışlayıcı uygulamaların bazı alanlarda azaldığı belirtiliyor.\",[\"Bütün halkların modern anlamda eksiksiz eşitliğe ulaştığını kanıtlar.\",\"Devletin resmî dilinin otomatik olarak Türkçe olduğunu gösterir.\",\"Bütün insanların aynı gün inanç değiştirdiğini kesinleştirir.\",\"Katılım önündeki bazı siyasi ve toplumsal engelleri azaltabilir.\",\"Ticaret ve öğretimin süreçte hiçbir etkisi kalmadığını gösterir.\"],3,\"Daha kapsayıcı görev ve ilişki olanakları, yakınlaşmanın önündeki bazı engelleri azaltabilir. Verilen karşılaştırma bunu destekler. Ancak buradan eksiksiz modern eşitlik, otomatik dil değişimi veya herkesi kapsayan anlık kabul sonucu çıkarılamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Görevlere erişimin kolaylaşması ve dışlayıcı uygulamaların azalması belirli katılım engellerini hafifletebilir. Bu siyasi-toplumsal koşul, bütün hakların modern anlamda eksiksiz eşitlendiğini veya dil ve inanç tercihlerinin aynı anda değiştiğini gösteren kapsamlı bir ölçüm değildir."
+      ],
+      "strategy": "Önceki ve sonraki koşulu yalnız verilen görev erişimi ölçütünde karşılaştır; değişimin hangi engeli azalttığını belirleyip bunun dışındaki dil, eşitlik ve anlık kabul iddialarını ayrı tut.",
+      "steps": [
+        "Karşılaştırmanın ilk değişkeni Arap olmayan Müslümanlara görev verilmesinin kolaylaşmasıdır.",
+        "İkinci veri dışlayıcı uygulamaların bazı alanlarda azalmasıdır; katılım önündeki belirli engellerin yönü hafifleme biçimindedir.",
+        "Bu değişim bazı siyasi ve toplumsal engelleri azaltabilir. Bütün halkın aynı gün inanç değiştirmesi, eksiksiz modern eşitlik veya otomatik dil değişimi eklenmez."
+      ],
+      "optionReasons": [
+        "Bazı görev ve uygulamalardaki iyileşme bütün halklar için modern hakların tamamının eksiksiz eşitlendiğini kanıtlamaz.",
+        "Göreve katılım ve dışlanma karşılaştırması resmî dil hakkında karar vermez; otomatik Türkçe dil değişimi gösterilmemiştir.",
+        "Engellerin azalması kabulü kolaylaştırabilir; bütün insanların aynı gün inanç değiştirdiğini kesinleştiren nüfus verisi yoktur.",
+        "Doğru. Görev erişiminin açılması ve belirli dışlayıcı uygulamaların azalması, katılım önündeki bazı siyasi-toplumsal engelleri hafifletebilir.",
+        "Siyasi yaklaşımın etkili olması ticaret ve öğretimin katkılarını yok etmez; farklı kolaylaştırıcı etkenler birlikte çalışabilir."
+      ],
+      "commonError": "Belirli bir alandaki kapsayıcılık artışını bütün toplumlarda bütün sonuçların tamamlanması gibi okumak, “bazı alanlarda” sınırını ve kolaylaştırma yönünü kaybettirir.",
+      "check": "Sonucundaki kapsam “bazı katılım engelleri” olarak kalmalı; görev erişiminden resmî dil veya herkesin inancı hakkında ölçülmemiş sonuçlar çıkarılmadığını denetle."
+    }
+  },
+  {
+    "id": "f013-foundation-turklerin-islamiyeti-kabulu-6",
+    "identity": "[\"f013-foundation-turklerin-islamiyeti-kabulu-6\",\"Soru hangi yapıyı hedeflemektedir?\",\"Bir soru açıkça “Orta Asya’daki ilk Müslüman Türk devleti bağlamında ele alınan siyasi yapı”yı soruyor; hükümdar olarak Satuk Buğra Han ipucunu veriyor.\",[\"Tuna Bulgarları.\",\"Karahanlılar.\",\"Türkiye Selçukluları.\",\"Avrupa Hunları.\",\"I. Kök Türkler.\"],1,\"Orta Asya ve Satuk Buğra Han koşulları Karahanlıları belirler. Bu kapsamlı ifade, bölge veya resmî kabul ölçütü belirtilmeyen bütün “ilk” sorularının tek yanıtı sayılmaz. Devletin kuruluşu ile hükümdarın dinî kabulü de ayrı tarihlerdir.\"]",
+    "guidance": {
+      "knowledge": [
+        "“İlk” nitelemesi bölge ve olay ölçütüyle birlikte değerlendirilir. Orta Asya’daki Müslüman Türk devleti ders bağlamı ve Satuk Buğra Han adı Karahanlılarla ilişkilidir; İdil Bulgarlarının resmî kabul bağlamı veya ilk Müslüman birey sorusu aynı kapsam değildir."
+      ],
+      "strategy": "Sorunun bölge, siyasi yapı ve hükümdar koşullarını ayrı kutulara yaz; seçeneklerin üç koşulu birlikte karşılamasını isteyerek yalnız genel bir “ilk” ezberine dayanan eşleştirmelerden kaçın.",
+      "steps": [
+        "İstenen kapsam bütün dünya için ilk kişi değil, Orta Asya’da ele alınan Müslüman Türk devletidir.",
+        "Hükümdar ipucu Satuk Buğra Han’dır; bu kişi Karahanlı yönetim çevresiyle ilişkilidir.",
+        "Orta Asya ve Satuk Buğra Han koşulları birlikte Karahanlıları belirler. Başka bölge veya hükümdar bağlamındaki devletler aynı ölçütleri karşılamaz."
+      ],
+      "optionReasons": [
+        "Tuna Bulgarları farklı coğrafi ve dinî süreç bağlamındadır; Satuk Buğra Han ve Orta Asya koşullarını karşılamaz.",
+        "Doğru. Satuk Buğra Han Karahanlı hükümdarıdır; Orta Asya’daki Müslüman Türk devleti ders çerçevesiyle birlikte eşleşir.",
+        "Türkiye Selçukluları Anadolu ve Kutalmışoğlu Süleyman Şah/1077 bağlamıyla ilişkilidir; Satuk Buğra Han ipucunu karşılamaz.",
+        "Avrupa Hunları farklı bölge ve dönem bağlamıdır; Karahanlı hükümdarı Satuk Buğra Han’la verilen tanım değildir.",
+        "I. Kök Türkler 552 ve Bumin bağlamında incelenir; Satuk Buğra Han ve Müslüman Karahanlı yönetimi eşleştirmesine uymaz."
+      ],
+      "commonError": "İlk sözcüğünün yanındaki Orta Asya ve Satuk Buğra Han koşullarını kaldırmak, farklı kaynakların bölgesel devlet veya resmî kabul ölçütlerini tek cevaba zorlar.",
+      "check": "Seçtiğin siyasi yapıya iki ayrı soru yönelt: verilen Orta Asya ders kapsamına uyuyor mu ve Satuk Buğra Han o yapının hükümdarı mı? İki yanıt da olumlu olmalıdır."
+    }
+  },
+  {
+    "id": "f013-foundation-turklerin-islamiyeti-kabulu-7",
+    "identity": "[\"f013-foundation-turklerin-islamiyeti-kabulu-7\",\"Bu iki bilgi hangi tarihsel ayrımı korur?\",\"Karahanlı Devleti’nin kuruluşu 840 ile, Satuk Buğra Han’ın İslamiyet’i benimsemesi ise daha sonraki bir dönemle ilişkilendiriliyor.\",[\"Devlet kurulunca her bireyin aynı dini benimsemek zorunda olduğunu.\",\"840’ın bütün Türkler için ortak resmî kabul tarihi olduğunu.\",\"Karahanlıların İslamiyet öncesinde hiçbir siyasi varlığı bulunmadığını.\",\"Hükümdarın tercihi ile kuruluş tarihinin her durumda aynı gün olduğunu.\",\"Devletin siyasi kuruluşu ile dinî kabulü aynı olay olmak zorunda değildir.\"],4,\"Kuruluş ve dinî dönüşüm farklı süreçlerdir. Verilen tarihler bu ayrımı doğrudan gösterir. Bir devletin daha sonra Müslüman bir yönetim kimliği kazanması, onun önceki siyasi varlığını yok saymayı gerektirmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Siyasi kuruluş, bir devlet düzeninin oluşumuyla; hükümdarın dinî kabulü ise daha sonra gerçekleşebilen farklı bir tercihle ilgilidir. Karahanlıların kuruluşunun 840 ile verilmesi, Satuk Buğra Han’ın sonraki kabulünü veya bütün bireylerin inancını aynı tarihe yerleştirmez."
+      ],
+      "strategy": "İki tarih bilgisini aynı başlık altında toplamak yerine her birine ait eylemi yaz; siyasi varlığın başlamasıyla dinî kararın alınmasını ayrı olay türleri olarak karşılaştır.",
+      "steps": [
+        "840 bilgisi Karahanlı Devleti’nin siyasi kuruluşuyla ilişkilendirilmiştir; ilk olayın fiili kurulmadır.",
+        "Satuk Buğra Han’ın İslamiyet’i benimsemesi daha sonraki döneme yerleştirilir; ikinci fiil dinî kabuldür.",
+        "Devletin siyasi kuruluşu ile dinî kabulü aynı olay olmak zorunda değildir. Sonraki yönetim kimliği, daha önceki siyasi varlığı yok saydırmaz."
+      ],
+      "optionReasons": [
+        "Devlet kurulması bütün bireylerin aynı dini benimsemesiyle eş anlamlı değildir; kişiler hakkında böyle bir zorunluluk verilmez.",
+        "840 yalnız siyasi kuruluş için verilmiştir; bütün Türkler adına ortak resmî kabul tarihi yapıldığında hem eylem hem nüfus kapsamı değişir.",
+        "Dinî kabulün daha sonra olması, devletin önceki siyasi varlığını ortadan kaldırmaz; parça kuruluşu açıkça daha erken verir.",
+        "Parçada iki olay farklı dönemlerdedir; her durumda aynı gün olduklarını söylemek verilen sıralamaya aykırıdır.",
+        "Doğru. Kuruluş ve dinî benimseme farklı fiillerdir; biri 840’a, diğeri daha sonraki döneme bağlanmıştır."
+      ],
+      "commonError": "Bir devletin sonradan kazandığı Müslüman yönetim kimliğini kuruluş anına otomatik taşımak, siyasi kuruluş ve dinî kabul tarihlerini birbirine karıştırır.",
+      "check": "Cevabını iki etiketle kontrol et: 840–siyasi kuruluş; daha sonraki dönem–hükümdarın dinî tercihi. Etiketlerden birinin tarihini diğerine aktarmamalısın."
+    }
+  },
+  {
+    "id": "f013-foundation-turklerin-islamiyeti-kabulu-8",
+    "identity": "[\"f013-foundation-turklerin-islamiyeti-kabulu-8\",\"Bu kart hangi örnekle ilişkilendirilmelidir?\",\"Bir araştırma kartında Volga/İdil sahası, Almış ve 922’de gelen Abbasi heyeti belirtiliyor.\",[\"Tuna Bulgarlarının 751’deki Talas katılımıyla.\",\"Türkiye Selçuklularının 1077’deki kuruluşuyla.\",\"İdil Bulgarlarının resmî kabul bağlamıyla.\",\"I. Kök Türklerin 552’deki kuruluşuyla.\",\"Gaznelilerin 1040 Dandanakan zaferiyle.\"],2,\"İdil/Volga, Almış ve 922 Abbasi heyeti birlikte İdil Bulgarlarının resmî kabul bağlamını verir. Bu tarih ilk Müslüman bireyin kesin tarihi olarak kullanılmaz. Tuna Bulgarlarıyla veya başka devletlerin kuruluş tarihleriyle karıştırılmamalıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Volga ile İdil aynı ırmağın adlarıdır. Almış ve 922’de gelen Abbasi heyeti, İdil Bulgarlarının resmî kabul bağlamıyla birlikte ele alınır; bu kayıt ilk Müslüman bireyin tarihi veya Tuna Bulgarlarının tarihi olarak kullanılamaz."
+      ],
+      "strategy": "Coğrafi ad, yönetici ve heyet tarihini üç parçalı kimlik kartı olarak kullan; seçenekleri tek bir ortak ad yerine bütün ipuçlarının aynı tarihsel bağlamda buluşmasına göre karşılaştır.",
+      "steps": [
+        "Volga/İdil adı araştırmanın coğrafyasını belirler; Tuna Bulgarlarıyla aynı nehir sahası değildir.",
+        "Almış ve 922’deki Abbasi heyeti bu sahadaki resmî kabul ilişkisini gösteren kişi ve olay ipuçlarıdır.",
+        "Üç ipucu birlikte İdil Bulgarlarının resmî kabul bağlamına uyar. 552, 751, 1040 veya 1077’deki başka siyasi olaylar bu kartın yerine geçmez."
+      ],
+      "optionReasons": [
+        "Tuna Bulgarları İdil/Volga sahasının yerine geçirilemez; ayrıca 751 Talas, 922’deki Almış ve Abbasi heyeti olayı değildir.",
+        "1077 Türkiye Selçuklu kuruluşu Anadolu’daki ayrı siyasi olaydır; İdil coğrafyası, Almış ve 922 heyetini karşılamaz.",
+        "Doğru. Volga/İdil, Almış ve 922 Abbasi heyeti aynı İdil Bulgar resmî kabul bağlamında birleşir.",
+        "552 I. Kök Türk kuruluşu Bumin bağlamındadır; Almış ve 922’deki heyetle aynı siyasi yapı ve olay değildir.",
+        "1040 Dandanakan farklı bir savaştır; üstelik Gazneliler bu savaşta Selçuklulara yenilmiştir. Bu ifade 922 İdil heyetini açıklamaz."
+      ],
+      "commonError": "Bulgar adını görünce Tuna ile İdil kollarını aynı coğrafya saymak veya 922’deki resmî heyeti ilk bireysel kabul tarihi gibi kullanmak kapsam ve olay karışıklığı yaratır.",
+      "check": "Seçtiğin örnekte İdil coğrafyasını, Almış adını ve 922 Abbasi heyetini ayrı ayrı bulabilmelisin; yalnız ortak Türk ya da Bulgar adı yeterli değildir."
+    }
+  },
+  {
+    "id": "f013-foundation-turklerin-islamiyeti-kabulu-9",
+    "identity": "[\"f013-foundation-turklerin-islamiyeti-kabulu-9\",\"Bu iki veri birlikte hangi yorumu destekler?\",\"Karahanlı çevresinde Türkçe eser üretimi sürerken yeni dinî içerikler ve medrese gibi kurumlar yaygınlaşıyor.\",[\"Kültürel süreklilik ile değişim aynı süreçte birlikte bulunabilir.\",\"Din değişiminin bütün önceki dili ve kültürü bir anda sildiğini.\",\"Yeni dinî çerçevenin hiçbir kurumsal etkisi olmadığını.\",\"Türklerin daha önce hiçbir yazılı kültürünün bulunmadığını.\",\"Türkçe kullanımıyla yeni kurumların birbirini zorunlu olarak dışladığını.\"],0,\"Türkçenin sürmesi devamlılığa, yeni içerik ve kurumlar değişime kanıttır. Bir kültürde bu ikisi aynı anda bulunabilir. Verilen örnek ne önceki her şeyin silindiğini ne de hiçbir şeyin değişmediğini destekler.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kültürel süreklilik, önceki bir unsurun kullanılmaya devam etmesidir; değişim ise yeni içerik, işlev veya kurumların ortaya çıkmasıyla incelenir. Karahanlı çevresinde Türkçenin sürmesiyle yeni dinî içerik ve medrese gibi kurumların yayılması aynı süreçte birlikte görülebilir."
+      ],
+      "strategy": "Verilen iki olguyu devam eden unsur ve eklenen unsur başlıklarına ayır; seçeneklerde “her şey silindi” veya “hiçbir şey değişmedi” uçlarının hangi kanıtı dışladığını karşılaştır.",
+      "steps": [
+        "Türkçe eser üretiminin sürmesi dil ve yazılı üretim alanında devamlılığa ilişkin kanıttır.",
+        "Yeni dinî içeriklerin ve medrese gibi kurumların yayılması yeni öğelerin eklenmesine ilişkin ayrı bir kanıttır.",
+        "İki kanıt birlikte kültürel süreklilik ile değişimin aynı süreçte bulunabileceğini gösterir; biri diğerinin yokluğunu gerektirmez."
+      ],
+      "optionReasons": [
+        "Doğru. Türkçenin devamı süreklilik, yeni dinî içerik ve kurumların yayılması değişim için ayrı dayanaklardır; ikisi aynı süreçte görülür.",
+        "Türkçe eser üretiminin sürmesi önceki dil ve kültürün bir anda bütünüyle silindiği iddiasına aykırıdır.",
+        "Yeni dinî içerik ve medrese gibi kurumların yayılması kurumsal etki gösterir; hiçbir değişim yok denemez.",
+        "Türkçe üretimin devam ettiği bilgisi geçmişte hiç yazılı kültür bulunmadığını göstermez; Orhun yazıtları da önceki yazılı kültür örneğidir.",
+        "Parça Türkçe kullanımı ile yeni kurumların birlikte bulunduğunu doğrudan verir; zorunlu dışlama yorumu bu veriye uymaz."
+      ],
+      "commonError": "Dinî değişimi bütün eski kültürün silinmesi, dilin devamını ise hiçbir yeni kurumun doğmaması sanmak, iki bağımsız kanıtı birlikte değerlendirmeyi engeller.",
+      "check": "Sonucunu iki dayanakla doğrula: Türkçenin sürmesi hangi devamlılığı, yeni içerik ve medrese hangi değişimi gösteriyor? Her ikisine de ayrı cevap bulunmalıdır."
+    }
+  },
+  {
+    "id": "f013-foundation-turklerin-islamiyeti-kabulu-10",
+    "identity": "[\"f013-foundation-turklerin-islamiyeti-kabulu-10\",\"Bu karşılaştırma için en uygun ifade hangisidir?\",\"İslamiyet öncesi kut anlayışında hükümdarlık ilahî dayanakla açıklanır. İslamiyet sonrasında bu meşruiyet Allah’ın takdiri çerçevesinde yorumlanırken yeni hukuk ve kurum etkileri de görülür.\",[\"İki inanç sisteminin bütün kurallarının tamamen özdeş olduğu kanıtlanmıştır.\",\"Hükümdarlık fikri din değişimiyle aynı anda ortadan kalkmıştır.\",\"Önceki bütün kurumlar hiçbir iz bırakmadan yok olmuştur.\",\"Önceki bir meşruiyet unsuru yeni inanç çerçevesinde yeniden yorumlanmıştır.\",\"Meşruiyet düşüncesi hiçbir tarihsel değişimden etkilenmemiştir.\"],3,\"İlahî meşruiyet düşüncesinde bir devamlılık vardır; fakat yeni inanç çerçevesi ve kurumlar yorumu değiştirir. Bir benzerlik, iki dinin veya bütün hukuk düzenlerinin özdeş olduğunu göstermez. Süreklilik ve dönüşüm iki ayrı kanıtla kurulmalıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Meşruiyet yönetme hakkının neden kabul edildiğine ilişkin dayanağı anlatır. Kutun ilahî yönetme hakkı düşüncesiyle, İslamiyet sonrasında Allah’ın takdiriyle yorumlanan hükümdarlık arasında belirli bir devamlılık kurulabilir; yeni hukuk ve kurum etkileri ise aynı düşüncenin yeni bağlamda yorumlandığını gösterir."
+      ],
+      "strategy": "Karşılaştırmada devam eden gerekçeyi ve onu çevreleyen yeni inanç-kurum bağlamını iki katmanda incele; tek benzerliği bütün sistemlerin özdeşliği yapan veya bütün devamı reddeden seçenekleri denetle.",
+      "steps": [
+        "Önceki kut anlayışı hükümdarlığı ilahî dayanakla açıklar; ortaklaştırılan unsur yönetme hakkının kutsal gerekçesidir.",
+        "Sonraki açıklamada Allah’ın takdiri ve yeni hukuk-kurum etkileri vardır; yorumun dinî ve kurumsal çerçevesi değişmektedir.",
+        "Bu nedenle önceki meşruiyet unsuru yeni inanç çerçevesinde yeniden yorumlanmıştır. Bütün kuralların özdeşliği, hükümdarlığın yokluğu veya hiçbir değişim bulunmadığı sonucu çıkmaz."
+      ],
+      "optionReasons": [
+        "İlahî meşruiyet benzerliği bütün ibadet ve hukuk kurallarının tamamen aynı olduğunu kanıtlamaz; yeni hukuk ve kurum etkileri ayrıca verilir.",
+        "Hükümdarlığın sonraki çerçevede nasıl yorumlandığı anlatılır; hükümdarlık fikrinin ortadan kalktığı söylenmiyor.",
+        "İlahî meşruiyet unsurundaki devamlılık önceki bütün kurumların izsiz yok oluşu iddiasıyla açıklanamaz; parça yeniden yorumlamayı gösterir.",
+        "Doğru. Önceki ilahî dayanak fikri korunabilen unsur, Allah’ın takdiriyle yorumlanması ve yeni kurumlar ise değişen bağlamdır.",
+        "Yeni inanç ve hukuk-kurum etkileri açıkça bulunduğundan meşruiyet düşüncesinin hiçbir tarihsel değişimden etkilenmediği söylenemez."
+      ],
+      "commonError": "İki anlayışta kutsal dayanak bulunmasını bütün din ve hukuk düzeninin aynı olması sanmak ya da yeni çerçeveyi bütün eski unsurların silinmesi diye okumak iki uç kapsam hatasıdır.",
+      "check": "Yanıtında hem devam eden ilahî meşruiyet düşüncesini hem yeni inanç, hukuk ve kurum bağlamını gösterebilmelisin; tek benzerlikten bütün sistemlerin aynılığını çıkarmamalısın."
+    }
+  },
+  {
+    "id": "f013-foundation-selcuklu-yerlesme-devletlesme-1",
+    "identity": "[\"f013-foundation-selcuklu-yerlesme-devletlesme-1\",\"Bu gelişmelerin işlevlerini doğru ayıran ifade hangisidir?\",\"Bir çizelgede 1071 Malazgirt Zaferi, 1077 Türkiye Selçuklu Devleti’nin kuruluşu ve 1176 Miryokefalon Zaferi gösteriliyor.\",[\"Askerî dönüm noktası, siyasi kuruluş ve kalıcılığı güçlendiren gelişme farklı aşamalardır.\",\"Üçü de aynı savaşın farklı adlarıdır.\",\"1071, Türkiye Selçuklu Devleti’nin resmî son tarihidir.\",\"1077, Moğollara karşı Kösedağ zaferinin tarihidir.\",\"1176, Anadolu’ya ilk insan yerleşiminin tarihidir.\"],0,\"Malazgirt yerleşim sürecini hızlandıran askerî dönüm noktası, 1077 ayrı devlet kuruluşu, Miryokefalon ise Anadolu’daki kalıcılığı güçlendiren gelişmedir. Her tarih aynı siyasi veya askerî işlevin yerine kullanılamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "1071 Malazgirt, Anadolu’daki göç ve yerleşme sürecini hızlandıran askerî dönüm noktası; 1077 Türkiye Selçuklu siyasi kuruluşu; 1176 Miryokefalon ise kalıcılığı güçlendiren askerî gelişme bağlamındadır. Bir kronolojide yan yana bulunmak olayların tür ve işlevlerinin aynı olduğu anlamına gelmez."
+      ],
+      "strategy": "Her tarihi yalnız adıyla değil olay türü ve süreçteki rolüyle etiketle; seçeneklerin üç aşamayı ayrı koruyup korumadığını, kuruluş ile savaş sonuçlarını birbirine taşıyıp taşımadığını denetle.",
+      "steps": [
+        "1071 Malazgirt bir askerî dönüm noktasıdır; yerleşme süreci bakımından önem taşır, devletin siyasi sonu değildir.",
+        "1077 ayrı siyasi kuruluş, 1176 Miryokefalon kalıcılığı güçlendiren farklı askerî gelişmedir.",
+        "Doğru yorum askerî dönüm noktası, siyasi kuruluş ve kalıcılığı güçlendiren gelişmeyi ayırır; üç tarih tek savaş veya insanlığın Anadolu’ya ilk yerleşimi değildir."
+      ],
+      "optionReasons": [
+        "Doğru. Üç tarih farklı rolleriyle korunmuştur: Malazgirt askerî dönüm noktası, 1077 siyasi kuruluş, Miryokefalon kalıcılığı güçlendiren gelişmedir.",
+        "Çizelgede iki farklı savaş ve ayrı bir devlet kuruluşu vardır; üçünü aynı savaşın farklı adları saymak olay türlerini siler.",
+        "1071 Malazgirt tarihidir; Türkiye Selçuklu siyasi sonu için ders kronolojisinde ayrı olarak 1308 kullanılır.",
+        "1077 Türkiye Selçuklu kuruluşuyla ilişkilidir. Kösedağ ise 1243’te Moğollara karşı yenilgidir; tarih, olay türü ve sonuç değiştirilmiştir.",
+        "1176 Miryokefalon’dur; Anadolu’da çok daha önce insan toplulukları bulunduğu için ilk insan yerleşiminin tarihi olamaz."
+      ],
+      "commonError": "1071, 1077 ve 1176’yı aynı Selçuklu başlığı altında tek işlevin farklı tarihleri gibi ezberlemek, askerî sonuç ve siyasi kuruluş ayrımını kaybettirir.",
+      "check": "Seçtiğin ifadeyi üç tarih kartına ayrı ayrı uygula; her kartın askerî dönüm noktası, kuruluş veya kalıcılık rolünden hangisini taşıdığı açık kalmalıdır."
+    }
+  },
+  {
+    "id": "f013-foundation-selcuklu-yerlesme-devletlesme-2",
+    "identity": "[\"f013-foundation-selcuklu-yerlesme-devletlesme-2\",\"Bu bilgiler hangi karışıklığı önler?\",\"1071 Malazgirt’te Alp Arslan ile Bizans İmparatoru Romen Diyojen karşılaşmıştır. Türkiye Selçuklu Devleti ise Kutalmışoğlu Süleyman Şah ve 1077 ile ilişkilendirilir.\",[\"Bizans ile Moğolların farklı siyasi güçler olduğunu düşünmeyi.\",\"Bir savaşla devlet kuruluşunun farklı olabileceğini kabul etmeyi.\",\"Büyük Selçuklu ile Türkiye Selçuklularını tek kuruluş ve tek olay gibi görmeyi.\",\"1071’in 1077’den önce geldiğini fark etmeyi.\",\"Anadolu’nun farklı topluluklara ev sahipliği yaptığını düşünmeyi.\"],2,\"Alp Arslan’ın Malazgirt’i Büyük Selçuklu bağlamındadır. Türkiye Selçuklu kuruluşu ayrı yönetici ve tarihle ilişkilidir. “Selçuklu” ortak adı, bu iki siyasi yapının bütün gelişmelerini tek olay veya tek kuruluş hâline getirmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Alp Arslan’ın 1071 Malazgirt karşılaşması Büyük Selçuklu, Kutalmışoğlu Süleyman Şah ve 1077 kuruluşu ise Türkiye Selçuklu bağlamıdır. Ortak Selçuklu adı, iki siyasi yapının bütün olaylarını veya kuruluşlarını tekleştirmez."
+      ],
+      "strategy": "Kökün “önlenen karışıklığı” istediğini işaretle; iki olayın devlet, yönetici ve tarih alanlarını yan yana koyup hangi seçeneğin bu farklı alanları tek olay gibi birleştiren hatayı anlattığını belirle.",
+      "steps": [
+        "İlk olayda 1071, Alp Arslan ve Bizans İmparatoru Romen Diyojen birliktedir; bu Malazgirt karşılaşmasıdır.",
+        "İkinci olayda 1077 ve Kutalmışoğlu Süleyman Şah vardır; Türkiye Selçuklu Devleti’nin kuruluşu anlatılır.",
+        "Bilgiler Büyük Selçuklu ile Türkiye Selçuklularını tek kuruluş ve tek olay sanma karışıklığını önler. Ayrı savaş ve kuruluş olabileceğini kabul etmek ise önlenecek bir hata değildir."
+      ],
+      "optionReasons": [
+        "Bizans ile Moğolların farklı siyasi güçler olduğunu düşünmek bir karışıklık değildir; ayrıca parçada Moğolların yer aldığı karşılaşma verilmez.",
+        "Bir savaşla siyasi kuruluşun farklı olabileceğini kabul etmek verilen bilgilerin desteklediği doğru ayrımdır; önlenen yanlış düşünce değildir.",
+        "Doğru. Farklı yönetici, tarih ve olay türleri, Büyük Selçuklu ile Türkiye Selçuklularını tek kuruluş olayı sanma hatasını engeller.",
+        "1071’in 1077’den önce geldiğini fark etmek doğru zaman sıralamasıdır; bu bilgiler böyle bir doğru farkındalığı önlemez.",
+        "Anadolu’da farklı toplulukların bulunması önlenecek bir karışıklık değildir; verilen iki kişi-olay eşleştirmesinin hedeflediği yanlış da bu değildir."
+      ],
+      "commonError": "Sorunun önlenen hatayı sorduğunu unutup doğru bir ayrımı anlatan seçeneğe yönelmek, “hangi karışıklık?” ile “hangi bilgi doğru?” köklerini karıştırmaktır.",
+      "check": "Seçtiğin düşünce gerçekten yanlış bir tekleştirme olmalı: iki devlet, iki yönetici ve iki olay aynı kuruluşa indirgeniyorsa verilen bilgiler bu hatayı önler."
+    }
+  },
+  {
+    "id": "f013-foundation-selcuklu-yerlesme-devletlesme-3",
+    "identity": "[\"f013-foundation-selcuklu-yerlesme-devletlesme-3\",\"Bu tabloya uygun eşleştirme hangisidir?\",\"Bir tablo ilk Anadolu beyliklerini merkezleriyle eşleştirecektir. Saltuklular için Erzurum, Çaka Beyliği için İzmir ve denizcilik bilgileri verilmiştir.\",[\"Saltuklular: Konya; Çaka Beyliği: Erzurum ve iç kara savunması.\",\"Saltuklular: İzmir; Çaka Beyliği: Sivas ve medrese.\",\"Saltuklular: Sardes; Çaka Beyliği: Hattuşa ve Pankuş.\",\"Saltuklular: Tuşpa; Çaka Beyliği: Bağdat ve halifelik.\",\"Saltuklular: Erzurum; Çaka Beyliği: İzmir ve denizcilik.\"],4,\"Erzurum Saltuklu, İzmir çevresindeki denizcilik Çaka Beyliği bağlamındadır. İlk beylikler aynı coğrafi dönüşüme katkı sunsa da ayrı siyasi kimliklerdir. Bütün merkezleri Konya’ya veya bütün faaliyetleri Türkiye Selçuklularına atfetmek yanlıştır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Saltuklular Erzurum ve kuzeydoğu Anadolu çevresiyle, Çaka Beyliği İzmir ve denizcilik faaliyetiyle eşleştirilir. Anadolu’daki farklı beylikler ayrı merkez ve faaliyetlere sahip siyasi oluşumlardır; bütün merkezler Konya veya bütün eserler tek devlet adına yazılmaz."
+      ],
+      "strategy": "Her beylik için merkez ve faaliyet hücrelerini ayrı doldur; seçenekleri bir ismin tanıdık gelmesine göre değil iki satırın coğrafi ve işlevsel ipuçlarını birlikte korumalarına göre incele.",
+      "steps": [
+        "Saltuklular için verilen merkez Erzurum’dur; bu ilk satırın sabit eşleştirmesidir.",
+        "Çaka Beyliği için İzmir ve denizcilik birlikte verilmiştir; kıyı merkezi ile faaliyet aynı satırda tutulur.",
+        "Erzurum–Saltuklu ve İzmir/denizcilik–Çaka bağlarını birlikte koruyan seçenek uygundur; başka uygarlıkların merkez ve kurumları buraya taşınmaz."
+      ],
+      "optionReasons": [
+        "Saltukluların verilen merkezi Konya değil Erzurum’dur; Çaka’nın İzmir ve denizcilik bağları da Erzurum-iç kara savunmasıyla değiştirilmiştir.",
+        "İzmir Çaka bağlamındayken Saltuklu satırına taşınmıştır; Sivas ve medrese bilgisi de sorudaki Çaka eşleştirmesini karşılamaz.",
+        "Sardes Lidya, Hattuşa ve Pankuş Hitit bağlamıdır; bunlar verilen iki Anadolu beyliği için merkez-faaliyet eşleştirmeleri değildir.",
+        "Tuşpa Urartu, Bağdat ve halifelik farklı siyasi bağlamlardır; Saltuklu-Erzurum ve Çaka-İzmir verileri korunmamıştır.",
+        "Doğru. Saltuklular Erzurum’la, Çaka Beyliği İzmir ve denizcilikle eşleştirilerek metindeki iki satır da doğru korunur."
+      ],
+      "commonError": "Bütün Anadolu siyasi yapılarını tek merkez veya tek faaliyet altında toplamak, Erzurum ile İzmir’in ve kara çevresi ile denizcilik bağlamının ayırıcı değerini kaybettirir.",
+      "check": "Tabloyu seçeneğe bakmadan iki satırla yeniden yaz: Saltuklu–Erzurum; Çaka–İzmir–denizcilik. Seçtiğin ifade iki satırla da aynı olmalıdır."
+    }
+  },
+  {
+    "id": "f013-foundation-selcuklu-yerlesme-devletlesme-4",
+    "identity": "[\"f013-foundation-selcuklu-yerlesme-devletlesme-4\",\"Bu örneklerden hangi sonuç çıkarılabilir?\",\"Bir sergi kartı Yağıbasan Medresesi’ni Danişmentlilerle, Divriği Ulu Camii ve Darüşşifası’nı Mengüceklilerle ilişkilendiriyor.\",[\"Bütün eserlerin tek bir Türkiye Selçuklu hükümdarınca yaptırıldığı.\",\"İlk Anadolu beyliklerinin farklı öğretim, sağlık ve mimari katkıları vardır.\",\"Medrese ile darüşşifanın bütün işlevlerinin aynı olduğu.\",\"Mimari eser bulunan her yerde bütün nüfusun aynı anda yerleştiği.\",\"Beylikler arasında hiçbir siyasi veya kültürel fark bulunmadığı.\"],1,\"İki farklı beylik ve iki farklı eser kümesi, katkıların tek siyasi yapıya indirgenemeyeceğini gösterir. Medrese öğretim, darüşşifa sağlık bağlamındadır. Mimari kanıt belirli kurumları gösterir; bütün toplumun tek anda aynılaştığını göstermez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Medrese öğretim, darüşşifa sağlık ve tedavi, cami ibadet ve sosyal ilişki işlevleriyle incelenir. Yağıbasan Medresesi Danişmentli, Divriği Ulu Camii ve Darüşşifası Mengücekli bağlamındadır; eserin işlevi ile yaptıran siyasi yapı ayrı ama birlikte kullanılabilen kanıtlardır."
+      ],
+      "strategy": "Her eser için yaptıran siyasi yapı ve öncelikli işlevi iki ayrı sütuna yerleştir; bu somut katkıları bütün beylikleri veya bütün nüfusu aynılaştırmadan bir arada açıklayan yorumu ara.",
+      "steps": [
+        "Yağıbasan Medresesi Danişmentlilerle ilişkilendirilir; medrese öğretim işlevine örnektir.",
+        "Divriği Ulu Camii ve Darüşşifası Mengüceklilerle ilişkilendirilir; mimari, ibadet ve sağlık alanlarını birlikte düşündürür.",
+        "İki ayrı beylik ve eser grubu öğretim, sağlık ve mimari katkıların farklı siyasi merkezlerden gelebileceğini gösterir; tek hükümdar veya tüm işlevlerin aynılığı çıkarılmaz."
+      ],
+      "optionReasons": [
+        "Kart eserleri Danişmentli ve Mengücekli olarak iki farklı siyasi yapıyla ilişkilendirir; hepsini tek Türkiye Selçuklu hükümdarına atfetmek veriyi değiştirir.",
+        "Doğru. Farklı beyliklerin medrese, cami ve darüşşifa örnekleri öğretim, sağlık ve mimari katkı çeşitliliğini gösterir.",
+        "Medrese öğretimle, darüşşifa sağlıkla ilişkilidir; belirli ortak kurumsal yönler bütün işlevlerinin aynı olduğunu göstermez.",
+        "Bir yapının varlığı bütün nüfusun aynı anda yerleştiğine ilişkin sayım veya zaman bilgisi sağlamaz; kurum kanıtı nüfusun tamamı değildir.",
+        "İki farklı beylik ve eser atfının verilmesi, bütün siyasi ve kültürel farkların yokluğunu kanıtlamaz; farklı katkılar korunmalıdır."
+      ],
+      "commonError": "Anadolu’daki her eseri Türkiye Selçuklularına atfetmek veya medreseyle darüşşifayı yalnız bina olmalarından aynı kurum saymak yaptıran ve işlev ayrımını siler.",
+      "check": "Yorumunda hem iki farklı beylik hem farklı hizmet alanları bulunmalı; her eser için “kimin katkısı, hangi işlev?” sorularının cevabını ayrı gösterebilmelisin."
+    }
+  },
+  {
+    "id": "f013-foundation-selcuklu-yerlesme-devletlesme-5",
+    "identity": "[\"f013-foundation-selcuklu-yerlesme-devletlesme-5\",\"Bu yaklaşımın vurgusu hangisidir?\",\"Bir bölgede göçmenlerin üretime katılması, pazarların gelişmesi, köprüler, camiler ve medreselerin kurulması Anadolu’daki kalıcılık süreciyle birlikte inceleniyor.\",[\"Bütün değişimlerin tek bir savaş gününde tamamlandığı.\",\"Yapıların üretim ve insan ilişkilerinden bağımsız olduğu.\",\"Göçlerin her bölgede aynı tarihte ve tek nedenle gerçekleştiği.\",\"Yerleşmenin yalnız askerî zaferle değil, ekonomik ve kurumsal ağlarla da güçlendiği.\",\"Yerel topluluklarla hiç etkileşim kurulmadığı.\"],3,\"Üretim, pazar ve kurumlar yerleşmenin sürmesini sağlayan farklı bağlantıları gösterir. Askerî başarı önemli olabilir; fakat tek başına bütün toplumsal dönüşümü açıklamaz. Kalıcılık, göç ve yerel etkileşimle birlikte uzun süre içinde incelenmelidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yerleşmenin kalıcılığı üretim, pazar, ulaşım, ibadet ve öğretim gibi bağlantılarla güçlenebilir. Askerî başarı hareket alanı sağlayabilse de insanların üretime katılması ve kurumların sürdürülmesi farklı ekonomik-toplumsal süreçlerdir; tek savaş günü bu ağların tamamlandığını göstermez."
+      ],
+      "strategy": "Listedeki her unsurun yerleşik yaşamın hangi ihtiyacını karşıladığını belirle; bu işlevler arasındaki bağlantıyı kurarak kalıcılığı tek bir askerî olaya indirgeyen yorumlarla karşılaştır.",
+      "steps": [
+        "Göçmenlerin üretime katılması ve pazarların gelişmesi geçim ile alışveriş ağlarına ilişkin verilerdir.",
+        "Köprüler ulaşımı, camiler ibadet ve sosyal ilişkileri, medreseler öğretimi destekleyen kurumsal unsurlardır.",
+        "Bu unsurlar yerleşmenin ekonomik ve kurumsal ağlarla da güçlendiğini gösterir; yalnız askerî zafer veya tek günlü tamamlanma açıklaması listeyi karşılamaz."
+      ],
+      "optionReasons": [
+        "Üretim, pazar ve kurumların gelişmesi süreç içinde incelenmektedir; bütün değişimlerin tek savaş gününde tamamlandığı söylenmez.",
+        "Yapılar ulaşım, ibadet ve öğretim ihtiyaçlarıyla ilişkilidir; bunları üretim ve insan ilişkilerinden tamamen bağımsız saymak listedeki bağlantıları siler.",
+        "Göçün her bölgede aynı tarihte ve tek nedenle olduğu bilgisi verilmez; parça kalıcılığı destekleyen farklı unsurları anlatır.",
+        "Doğru. Üretim ve pazarlarla birlikte köprü, cami ve medrese ağları, yerleşmenin askerî zafer dışındaki ekonomik-kurumsal dayanaklarını gösterir.",
+        "Üretime katılım ve pazar ilişkilerinden hiçbir yerel etkileşim kurulmadığı çıkarılamaz; parça böyle mutlak bir yalıtılmışlık vermiyor."
+      ],
+      "commonError": "Kalıcılığı yalnız savaş kazanmak olarak açıklamak, göçmenlerin geçimi, pazar bağlantıları ve öğretim-ulaşım kurumlarının farklı işlevlerini devre dışı bırakır.",
+      "check": "Cevabındaki açıklamaya listedeki bütün unsurları yerleştir: üretim, pazar, köprü, cami ve medrese. Yalnız savaş başlığı bunların hepsini açıklamaya yetmez."
+    }
+  },
+  {
+    "id": "f013-foundation-selcuklu-yerlesme-devletlesme-6",
+    "identity": "[\"f013-foundation-selcuklu-yerlesme-devletlesme-6\",\"Bu gelişmenin doğrudan gösterdiği ilişki hangisidir?\",\"I. Haçlı Seferi sürecinde İznik’in kaybından sonra Türkiye Selçuklularında Konya merkezli dönem önem kazanıyor.\",[\"Konya’nın Bizans’ın başkenti hâline gelmesi.\",\"Askerî-siyasi baskının yönetim merkezinin değişmesiyle bağlantılı olabilmesi.\",\"Bütün Haçlı kuvvetlerinin Moğol ordularıyla aynı siyasi yapı olması.\",\"Türkiye Selçuklu Devleti’nin Malazgirt’ten önce kurulması.\",\"İznik’in kaybedilmesinin Anadolu’daki bütün Türk varlığını aynı gün bitirmesi.\"],1,\"Verilen sıra, askerî ve siyasi koşulların yönetim merkezini etkileyebildiğini gösterir. İznik’in kaybı ile Konya’nın öne çıkması aynı devletin değişen koşullarına aittir. Bu gelişme bütün varlığın aynı gün sona erdiği anlamına gelmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yönetim merkezi, askerî ve siyasi koşullar değiştiğinde yeniden örgütlenebilir. I. Haçlı Seferi sürecindeki İznik kaybı ile Türkiye Selçuklularında Konya’nın öne çıkması aynı devletin değişen koşulları içindedir; bir merkezin kaybı bütün siyasi ve toplumsal varlığın sonuyla aynı değildir."
+      ],
+      "strategy": "Önceki merkezde yaşanan kaybı ve sonraki merkezdeki ağırlık artışını aynı siyasi yapıya ait iki veri olarak göster; aralarındaki baskı-merkez bağlantısını, başka devlet veya bütün nüfus sonuçları eklemeden değerlendir.",
+      "steps": [
+        "İlk veri I. Haçlı Seferi sürecinde İznik’in kaybedilmesidir; askerî-siyasi baskı belirli merkezde sonuç doğuruyor.",
+        "İkinci veri Türkiye Selçuklularında Konya merkezli dönemin önem kazanmasıdır; devletin yönetim ağırlığı başka merkezde sürüyor.",
+        "Bu ilişki askerî-siyasi koşulların yönetim merkezini etkileyebileceğini gösterir; bütün devletin veya Anadolu’daki Türk varlığının aynı gün sona erdiği anlamına gelmez."
+      ],
+      "optionReasons": [
+        "Konya Türkiye Selçuklu merkezi bağlamında verilir; Bizans’ın başkenti hâline geldiği söylenmez.",
+        "Doğru. İznik kaybı ile Konya’nın öne çıkması, askerî-siyasi baskının yönetim merkezinin değişimiyle ilişkili olabileceğini gösterir.",
+        "Haçlı kuvvetleri ile Moğollar farklı aktör ve dönem bağlamlarıdır; İznik-Konya ilişkisinden aynı siyasi yapı oldukları sonucu çıkmaz.",
+        "Parçada kuruluşu Malazgirt öncesine taşıyan veri yoktur; Türkiye Selçuklu kuruluşu 1077, Malazgirt 1071 bağlamındadır.",
+        "Konya merkezli dönemin sürmesi zaten bütün varlığın aynı gün bittiği yorumuna uymaz; bir merkezin kaybı bütün nüfusun yokluğu değildir."
+      ],
+      "commonError": "Bir merkezin kaybedilmesini devletin bütün siyasi varlığının veya bütün toplulukların sonu saymak, Konya’da süren yönetim bilgisini yok sayar.",
+      "check": "Yorumun hem İznik kaybını hem Konya’nın aynı siyasi yapı içinde öne çıkmasını korumalı; ikinci bilgiyi devletin tamamen yokluğu sonucuyla çeliştirmemelidir."
+    }
+  },
+  {
+    "id": "f013-foundation-selcuklu-yerlesme-devletlesme-7",
+    "identity": "[\"f013-foundation-selcuklu-yerlesme-devletlesme-7\",\"Bu eşleştirmelerin sağladığı temel doğruluk hangisidir?\",\"Bir öğrenci 1230 Yassıçemen’i Harzemşahlarla, 1243 Kösedağ’ı Moğollarla mücadele bağlamına yerleştiriyor.\",[\"İki savaşın da Bizans’a karşı aynı gün yapıldığının gösterilmesi.\",\"Her iki savaşın Türkiye Selçuklularının kuruluşundan önce olduğunun gösterilmesi.\",\"Kösedağ’ın bir Haçlı devletinin adı olarak tanınması.\",\"Yassıçemen’in 1308’deki resmî sonla aynı olay sayılması.\",\"Farklı rakiplerle farklı tarihlerdeki mücadelelerin ayrılması.\"],4,\"Yassıçemen Harzemşah, Kösedağ Moğol bağlamındadır; tarihler de farklıdır. Rakipleri yalnız “dış güç” diye tek gruba indirgemek neden ve sonuçları karıştırır. Aynı savaş veya aynı siyasi gelişme olarak kullanılamazlar.\"]",
+    "guidance": {
+      "knowledge": [
+        "1230 Yassıçemen Türkiye Selçuklularının Harzemşahlarla, 1243 Kösedağ ise Moğollarla mücadelesi bağlamındadır. Tarih, olay adı ve karşı güç birlikte denetlenir; farklı rakipleri yalnız dış güç başlığı altında aynı savaş gibi kullanmak doğru değildir."
+      ],
+      "strategy": "İki savaş için yıl, olay adı ve karşı güçten oluşan üç alanlı kartlar hazırla; seçeneklerin iki kartın aynı mı farklı mı olduğunu hangi öğeleri koruyarak anlattığını kontrol et.",
+      "steps": [
+        "Birinci kartta 1230–Yassıçemen–Harzemşahlar üçlüsü bulunur.",
+        "İkinci kartta 1243–Kösedağ–Moğollar üçlüsü vardır; hem tarih hem rakip değişmektedir.",
+        "Eşleştirmeler farklı rakiplerle farklı tarihlerdeki mücadeleleri ayırır. Bizans savaşı, Haçlı devleti, kuruluş öncesi veya 1308 siyasi sonu olarak tekleştirilemezler."
+      ],
+      "optionReasons": [
+        "Verilen karşı güçler Harzemşahlar ve Moğollardır; Bizans değildir. 1230 ile 1243 de aynı günü veya yılı göstermez.",
+        "Türkiye Selçuklu kuruluşu 1077 bağlamındadır; 1230 ve 1243 bu tarihten sonradır, kuruluş öncesine taşınamaz.",
+        "Kösedağ parçada savaş adı ve Moğollarla mücadele bağlamındadır; bir Haçlı devletinin adı olarak verilmez.",
+        "1230 Yassıçemen ile 1308 siyasi sonu farklı tarihler ve farklı olay türleridir; bir savaş devletin sonuyla özdeşleştirilmemelidir.",
+        "Doğru. Yassıçemen-Harzemşah-1230 ve Kösedağ-Moğol-1243 bağları hem rakip hem tarih bakımından iki farklı mücadeleyi korur."
+      ],
+      "commonError": "Savaşları yalnız Türkiye Selçuklularının dış mücadelesi diye tek ad altında toplamak, rakip ve tarih değişkenlerini kaybettirerek neden-sonuçların karışmasına yol açar.",
+      "check": "Seçtiğin ifade iki kartı ayrı tutmalı: 1230’da Harzemşahlar, 1243’te Moğollar. Kartların tarafını veya yılını değiştiriyorsan eşleştirme bozulur."
+    }
+  },
+  {
+    "id": "f013-foundation-selcuklu-yerlesme-devletlesme-8",
+    "identity": "[\"f013-foundation-selcuklu-yerlesme-devletlesme-8\",\"Bu iki tarih nasıl yorumlanmalıdır?\",\"1243 Kösedağ yenilgisi Türkiye Selçuklu merkezî gücünü sarsıyor. Devletin siyasi varlığının sonu için ise 1308 ayrı tarih olarak veriliyor.\",[\"1243 ile 1308 aynı yılın iki farklı yazımıdır.\",\"Devlet 1308’e kadar sürdüğüne göre Kösedağ’ın hiçbir etkisi yoktur.\",\"Zayıflama ve bağlılık süreciyle siyasi son aynı gün gerçekleşmek zorunda değildir.\",\"Kösedağ bir kuruluş zaferidir.\",\"Bütün beylikler ancak 1308’den yüz yıl sonra ortaya çıkabilir.\"],2,\"Kösedağ merkezî otoritenin zayıflaması için dönüm noktasıdır; bu, devletin aynı gün resmen son bulduğu demek değildir. 1308’in ayrı son tarih olması 1243’ün siyasi etkisini de ortadan kaldırmaz. Süreç ve son birbirini tamamlayan farklı bilgilerdir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir askerî yenilgi merkezî otoriteyi zayıflatabilir, dış bağlılığı artırabilir ve uzun bir siyasi süreci etkileyebilir. Bu etki devletin aynı gün siyasi varlığını kaybetmesini zorunlu kılmaz. Kösedağ 1243 ile Türkiye Selçuklu siyasi sonu için verilen 1308 farklı aşamalardır."
+      ],
+      "strategy": "İki tarihi temsil ettikleri değişkenlerle etiketle: ilkinde gücün değişimi, ikincisinde siyasi varlığın sonu; yorumların bu iki değişkeni birbirinin varlığını inkâr etmeden açıklamasını iste.",
+      "steps": [
+        "1243 kaydı Kösedağ yenilgisinin merkezî gücü sarstığını bildirir; ilk gelişme zayıflama alanındadır.",
+        "1308 devletin siyasi varlığının sonu için ayrı tarih olarak verilir; ilk olaydan sonraki süreçte siyasi varlık sürmüştür.",
+        "Zayıflama ve bağlılık süreciyle siyasi son aynı gün olmak zorunda değildir. Devletin daha sonra sona ermesi 1243 yenilgisinin etkisini yok saydırmaz."
+      ],
+      "optionReasons": [
+        "1243 ve 1308 iki ayrı MS yılıdır; aynı yılın farklı yazımı veya takvim dönüşümü olarak sunulmamıştır.",
+        "Devletin siyasi varlığının sürmesi, merkezî gücün 1243’te sarsılmadığı anlamına gelmez; parça bu etkiyi açıkça verir.",
+        "Doğru. Bir yenilgiyle başlayan güç kaybı ve bağlılık süreci, daha sonraki siyasi sonla aynı anda gerçekleşmek zorunda değildir.",
+        "Kösedağ parçada merkezî gücü sarsan yenilgidir; kuruluş zaferi diye adlandırmak hem olayın sonucunu hem işlevini değiştirir.",
+        "İki tarih bütün beyliklerin ancak 1408’den sonra doğabileceğini göstermez; beyliklerin kuruluş zamanları için böyle bir genel kural verilmemiştir."
+      ],
+      "commonError": "Zayıflamayı anında siyasi son saymak veya siyasi varlığın devamını yenilginin hiç etkisi olmadığı kanıtı yapmak, farklı tarihsel değişkenleri tek ölçüte indirger.",
+      "check": "Açıklaman aynı anda iki bilgiyi kabul etmeli: 1243’te merkezî güç sarsılıyor ve siyasi varlık için 1308 ayrı son tarihi veriliyor. Biri diğerini iptal etmez."
+    }
+  },
+  {
+    "id": "f013-foundation-selcuklu-yerlesme-devletlesme-9",
+    "identity": "[\"f013-foundation-selcuklu-yerlesme-devletlesme-9\",\"Bu iki uygulama sırasıyla hangi kavramlarla ilişkilidir?\",\"Bir yönetim bazı kamu gelirlerini hizmet karşılığında tahsis ediyor. Başka bir düzenlemede ise gelirler eğitim ve sağlık kurumlarının sürdürülmesine ayrılıyor.\",[\"İkta ve vakıf.\",\"Vakıf ve atabeylik.\",\"Medrese ve darüşşifa.\",\"Kurultay ve muhacirlik.\",\"Kervansaray ve gazve.\"],0,\"İkta belirli kamu gelirlerinin hizmet karşılığında tahsisi, vakıf ise gelirin belirli dinî-sosyal hizmetlerin devamına ayrılması bağlamındadır. İktayı modern özel toprak mülkiyetinin her bakımdan aynısı saymak veya vakfı yalnız bina adı sanmak doğru değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "İkta belirli kamu gelirlerinin askerî-idari hizmet karşılığında tahsisiyle ilişkilidir. Vakıf ise gelirleri eğitim, sağlık, dinî ve sosyal hizmetlerin sürdürülmesine bağlayabilir. Gelir tahsisi, toprağın bütün mülkiyet haklarının modern anlamda kişiye satılmasıyla veya yalnız bina adıyla eşitlenmez."
+      ],
+      "strategy": "Her gelir düzenlemesini tahsisin karşılığı ve hedeflenen hizmet bakımından sınıflandır; kurum veya yapı adlarını gelir ilişkisinin yerine koymadan iki kavramı metindeki sıra ile eşleştir.",
+      "steps": [
+        "İlk uygulamada kamu gelirleri belirli hizmet karşılığında tahsis ediliyor; hizmet yükümlülüğüyle gelir arasında bağ kuruluyor.",
+        "İkinci uygulamada gelirlerin eğitim ve sağlık kurumlarını sürdürmeye ayrıldığı söyleniyor; amaç sosyal hizmetin devamıdır.",
+        "İlk bağ ikta, ikinci bağ vakıf kavramıyla ilişkilidir. Medrese veya darüşşifa hizmet alanı ve kurum adı olabilir; tahsis düzeninin yerine geçmez."
+      ],
+      "optionReasons": [
+        "Doğru. Hizmet karşılığı kamu geliri tahsisi ikta, eğitim ve sağlık gibi hizmetlerin devamına gelir ayırma vakıf bağlamını karşılar.",
+        "İlk hizmet karşılığı tahsis ikta bağlamındadır; ayrıca atabeylik meliklerin eğitimiyle ilgili görevdir, ikinci sosyal gelir düzeninin adı değildir.",
+        "Medrese öğretim, darüşşifa sağlık kurumudur; seçenek kurumların kendisini adlandırır, sorulan iki gelir düzenini değil.",
+        "Kurultay siyasi görüşme, muhacirlik hicret eden grubun konumuyla ilgilidir; gelir tahsisinin hizmet ve sosyal amaç ilişkilerini karşılamaz.",
+        "Kervansaray yol-konaklama yapısı, gazve sefer terimidir; bu ikili iki farklı gelir tahsis düzeninin adı değildir."
+      ],
+      "commonError": "İkta ile vakfı yalnız toprakla ilişkili oldukları için aynı düzen saymak veya sosyal hizmete gelir ayırmayı sadece bina adıyla yanıtlamak tahsisin amacını gözden kaçırır.",
+      "check": "İlk kavramı hizmet karşılığı gelir, ikinci kavramı eğitim-sağlık hizmetine gelir ayırma cümlesine geri koy. İkisi aynı gelirden söz etse de amaç ve yükümlülük ilişkisi ayrı kalmalı."
+    }
+  },
+  {
+    "id": "f013-foundation-selcuklu-yerlesme-devletlesme-10",
+    "identity": "[\"f013-foundation-selcuklu-yerlesme-devletlesme-10\",\"Hangi kart belirtilen tarih aralığının dışında kalır?\",\"Bir kronoloji etkinliğinin aralığı 1070–1245 olarak belirlenmiştir. Kartlar 1077 kuruluş, 1176 Miryokefalon, 1243 Kösedağ ve 1277 Konya’daki Türkçe kararıdır.\",[\"1077 Türkiye Selçuklu kuruluşu.\",\"1176 Miryokefalon.\",\"1243 Kösedağ.\",\"1277 Konya’daki Türkçe kararı.\",\"1077 ve 1176 kartlarının ikisi.\"],3,\"1277, aralığın üst sınırı olan 1245’ten sonradır. Diğer üç tarih 1070–1245 içindedir. Bu örnekte bir kart tarihsel olarak doğru olsa da etkinliğin dönem koşuluna uymaz; önce tarih aralığı açık bir filtre olarak uygulanmalıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir olayın tarihsel olarak doğru olması ile etkinliğin belirli tarih aralığına girmesi ayrı koşullardır. Buradaki filtrede kartın yılı en az 1070 ve en çok 1245 olmalıdır; aralık dışı sorusu bu koşulu sağlamayan kartı bulmayı ister."
+      ],
+      "strategy": "Alt ve üst sınırı sayı doğrusu üzerinde işaretle; her kartın yılını olayın öneminden bağımsız aynı iki eşitsizlikte denetleyerek koşulu sağlamayan seçeneği belirle.",
+      "steps": [
+        "Aralığı 1070 ≤ yıl ≤ 1245 olarak yaz. 1077 ve 1176 iki sınırın da arasındadır.",
+        "1243 de 1070’ten büyük ve 1245’ten küçüktür; Kösedağ kartı aralık içinde kalır.",
+        "1277 üst sınır 1245’ten büyüktür. Bu nedenle Konya’daki Türkçe kararı kartı dışarıda kalır; tarihsel olayın doğru verilmesi aralık şartını değiştirmez."
+      ],
+      "optionReasons": [
+        "1077 için 1070 ≤ 1077 ≤ 1245 koşulu sağlanır; Türkiye Selçuklu kuruluş kartı aralık içindedir.",
+        "1176 için 1070 ≤ 1176 ≤ 1245 koşulu sağlanır; Miryokefalon kartı etkinliğin dönem aralığındadır.",
+        "1243 üst sınır 1245’ten iki yıl öncedir ve alt sınırdan sonradır; Kösedağ kartı dışarıda değildir.",
+        "Doğru. 1277 > 1245 olduğundan Konya’daki Türkçe kararı kartı verilen aralığın üst sınırını aşar.",
+        "1077 ve 1176 yıllarının ikisi de 1070–1245 içindedir; iki kartı birlikte dışarıda göstermek her iki sınama sonucuna da aykırıdır."
+      ],
+      "commonError": "Önemli veya doğru bir tarihsel olayın mutlaka istenen döneme gireceğini sanmak, sorunun açık aralık filtresini olayın içerik doğruluğuyla karıştırır.",
+      "check": "Dışarıda dediğin kartı iki koşulda sına: alt sınırdan önce mi, üst sınırdan sonra mı? 1277 yalnız üst sınırı aşar; diğer üç yıl iki sınırı da sağlar."
+    }
+  }
+]

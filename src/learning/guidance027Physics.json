@@ -1,0 +1,501 @@
+[
+  {
+    "id": "ns-intro-1",
+    "identity": "[\"ns-intro-1\",\"Sürat, alınan yolun zamana oranıyla tanımlanıyor ve yön bilgisi gerektirmiyor. Sürat hangi iki sınıfa birlikte girer?\",\"\",[\"Temel ve vektörel\",\"Temel ve skaler\",\"Yalnız yönlü birim\",\"Türetilmiş ve vektörel\",\"Türetilmiş ve skaler\"],4,\"Yol ve zamandan tanımlandığı için sürat türetilmiştir. Yön bilgisi olmadan değer ve birimle ifade edildiği için skalerdir. Bu iki sınıflama birbirinin alternatifi değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Temel büyüklükler birim sisteminin başlangıçlarıdır; uzunluk ve zaman bunlara örnektir. Başka büyüklüklerin oranı veya çarpımıyla tanımlanan nicelik türetilmiştir. Bu ayrım, bir araçla ölçülebilir olup olmamakla yapılmaz.",
+        "Skaler nicelik için değer ve birim yeterlidir. Vektörel nicelikte bunlara ek olarak doğrultu ve yön gerekir. Temel–türetilmiş ile skaler–vektörel, iki ayrı sınıflama sorusudur."
+      ],
+      "strategy": "Tanımın hangi niceliklere dayandığını incele; sonra aynı yol ve sürenin farklı yönlerdeki hareketlerde tanımı değiştirip değiştirmediğini düşün. İki ölçütü ayrı değerlendirip aynı seçenekte birleştir.",
+      "steps": [
+        "Soruda sürat, alınan yolun zamana oranı olarak veriliyor. Yolun uzunluk, sürenin zaman birimi vardır; oran m/s biçiminde yazılabilir.",
+        "Metre ile saniyenin birleştirilmesi yeni bir temel büyüklük tanımlamaz. Bu tanımda sürat, uzunluk ve zamandan elde edilen türetilmiş bir niceliktir.",
+        "Aynı yol aynı sürede sağa veya sola alınsa süratin sayısal değeri değişmez; yön bu tanıma girmez. Bu nedenle aranan iki özellik türetilmiş ve skalerdir."
+      ],
+      "optionReasons": [
+        "Temel olma koşulu sağlanmaz: sürat, uzunluk ve zamanın oranından tanımlanmıştır. Ayrıca soruda yön gerektirmediği açıkça verilir.",
+        "Skaler kısmı uygundur; fakat başka niceliklerle tanımlanan sürati temel saymak ilk sınıflamayı yanlış yapar.",
+        "Yönlü birim, temel–türetilmiş ve skaler–vektörel sorularını karşılayan iki sınıf değildir. m/s birimi de kendi başına yön belirtmez.",
+        "Türetilmiş kısmı uygundur; vektörel kısmı ise yön istemeyen sürat tanımına uymaz. Yönlü yer değiştirme/zaman oranı hızla ilgilidir.",
+        "Doğru. Yol/zaman tanımı sürati türetilmiş, yön gerektirmeyen ifade ise skaler yapar. İki özellik aynı anda taşınır."
+      ],
+      "commonError": "Temel–türetilmiş ayrımını yön ayrımıyla tek bir sınıflama sanmak; özellikle sürat ile yönlü hızı aynı nicelik gibi kullanmak.",
+      "check": "Aynı sürede aynı uzunluktaki yolu zıt yönlerde alan iki aracın süratleri eşit olabilir; ayrıca her ikisinin m/s birimi temel uzunluk ve zaman birimleriyle kurulmuştur."
+    }
+  },
+  {
+    "id": "ns-intro-2",
+    "identity": "[\"ns-intro-2\",\"Bir odanın sıcaklığının −5 °C olarak ifade edilmesi hangi yorumu zorunlu kılar?\",\"\",[\"Sıcaklık vektöreldir.\",\"Sıcaklık kuvvet türüdür.\",\"Negatif değer, tek başına yön bilgisi gerektiğini göstermez; sıcaklık skalerdir.\",\"Celsius SI temel sıcaklık biriminin simgesidir.\",\"Sıcaklık ölçülemez.\"],2,\"Sıcaklık skalerdir; eksi Celsius değeri onu vektörel yapmaz. Vektörellik tanımda yön gereksinimiyle ilgilidir. SI termodinamik sıcaklık birimi kelvindir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir işaretin anlamı niceliğin tanımına bağlıdır. Eksi konum bir eksenin tarafını gösterebilir; Celsius sıcaklığındaki eksi ise o ölçeğin sıfırına göre bir değerdir. Vektörellik, sayı işaretinden değil uzaysal yön gereksiniminden anlaşılır.",
+        "Termodinamik sıcaklık skaler bir SI temel büyüklüğüdür. SI birimi kelvin, simgesi K’dir. Celsius derecesi bir sıcaklık birimidir; kelvinin yerine SI temel birim simgesi olarak yazılmaz."
+      ],
+      "strategy": "Eksi işaretinin hangi referans ölçeğine ait olduğunu belirle; sıcaklığı tarif etmek için bir uzay yönü gerekip gerekmediğini ve kullanılan birimin SI temel birimiyle aynı olup olmadığını ayrı denetle.",
+      "steps": [
+        "Verilen −5 sayısı Celsius ölçeğindedir. Bu sayı, odanın sıcaklığının Celsius sıfırının altında olduğunu söyler; kuzey, güney veya sağ gibi bir yön söylemez.",
+        "Verilen sıcaklık değerini tanımlamak için uzayda bir yön seçmek gerekmez; tanıma hareket doğrultusu eklenmez. Dolayısıyla sıcaklığın skaler niteliği eksi işaretiyle değişmez.",
+        "SI temel sıcaklık birimi K’dir. −5 °C, kelvin ölçeğinde 268,15 K ile ifade edilebilir; ölçek değişse de sıcaklık bir vektöre dönüşmez."
+      ],
+      "optionReasons": [
+        "Eksi sayıyı doğrudan uzaysal yön kabul eder. Celsius sıfırının altındaki bir sıcaklık da yön gerektirmeden tanımlanır.",
+        "Sıcaklık ile kuvvet farklı büyüklüklerdir. Kuvvetin SI birimi N ve yönü vardır; odanın −5 °C değeri bir kuvvet verisi değildir.",
+        "Doğru. Eksi Celsius değeri tek başına yön gereksinimi doğurmaz; sıcaklık skaler kalır.",
+        "SI temel sıcaklık birimi kelvin ve simgesi K’dir. Celsius ile °C, bu temel birimin adı ve simgesi değildir.",
+        "Sıcaklık termometreyle ölçülebilir. Sıfırın altında Celsius değeri bulunması ölçümü olanaksız yapmaz."
+      ],
+      "commonError": "Her eksi işaretini vektörün ters yönü sanmak; bir sıcaklık ölçeğinin sıfırıyla uzaydaki referans yönünü karıştırmak.",
+      "check": "−5 °C yerine aynı sıcaklığı 268,15 K yazmak işareti değiştirir, niceliğin skaler niteliğini değiştirmez. Bu, işaretin vektörelliği belirlemediğini gösterir."
+    }
+  },
+  {
+    "id": "ns-intro-3",
+    "identity": "[\"ns-intro-3\",\"Newton birimi N=kg·m/s² biçiminde yazılabiliyor. Bundan hangi sonuç çıkar?\",\"\",[\"Kuvvet temel büyüklüklerden türetilmiş bir büyüklüktür.\",\"Newton ayrı bir SI temel büyüklüğüdür.\",\"Kuvvet yalnız kütleden oluşur.\",\"Kuvvet skaler olmak zorundadır.\",\"Kuvvetin birimi kilogramdır.\"],0,\"Kuvvetin birimi kütle, uzunluk ve zamanın temel birimleriyle ifade edilir; kuvvet türetilmiştir. Özel adı newton olması bunu değiştirmez. Kuvvet ayrıca yönlüdür, yani vektöreldir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Temel birimlerle çarpma, bölme ve kuvvet alma yoluyla kurulan birimler türetilmiş birimlerdir. Özel bir ad verilmesi bu yapıyı değiştirmez; newton kuvvet biriminin özel adıdır.",
+        "Birimin boyut yapısı ile niceliğin yönlü olup olmaması ayrı özelliklerdir. Birim açılımındaki kg, m ve s; kütle, uzunluk ve zaman boyutlarını belirtir."
+      ],
+      "strategy": "Özel birim adını geçici olarak bırakıp sağ taraftaki çarpanları incele. Açılımın hangi temel niceliklere dayandığını bul; bu bilgiden yön hakkında ek bir hüküm üretmeden seçenekleri denetle.",
+      "steps": [
+        "Verilen eşitlikte N, kg·m/s² olarak açılmıştır. Sağ tarafta tek bir yeni temel birim yerine üç temel niceliğin birimleri birlikte kullanılır.",
+        "Kuvvetin birimi kütle × uzunluk / zaman² yapısındadır. Bu bağıntı kuvvetin temel niceliklerden türetildiğini gösterir.",
+        "Newton adının özel olması yeni bir temel büyüklük oluşturmaz. Ayrıca kuvvetin skaler olduğu bu birim açılımından çıkmaz; kuvvet fiziksel tanımında yönlüdür."
+      ],
+      "optionReasons": [
+        "Doğru. kg·m/s² açılımı kuvvetin kütle, uzunluk ve zamandan türetilmiş boyutunu gösterir.",
+        "Newton bir kuvvet birimidir; ayrı bir temel büyüklük değildir. Özel ad, temel nicelik listesine yeni bir nicelik eklemez.",
+        "Açılımda kg yanında m ve s² de vardır. Yalnız kütle kullanılırsa kg elde edilir; N elde edilmez.",
+        "Birim açılımı yön bilgisini ortadan kaldırmaz. Kuvvetin vektörel tanımıyla kg·m/s² birimi birbiriyle uyumludur.",
+        "Kilogram yalnız kütlenin birimidir. Kuvvet için uzunluk/zaman² çarpanı da gerektiğinden kg ile N aynı birim değildir."
+      ],
+      "commonError": "Birimin özel adını temel büyüklük sanmak veya birim açılımından niceliğin skaler olduğu sonucunu çıkarmak.",
+      "check": "F=m·a için birimler kg×(m/s²)=kg·m/s²=N olur. İvme birimi eklenmeden yalnız kg ile kuvvet boyutu kurulamaz."
+    }
+  },
+  {
+    "id": "ns-intro-4",
+    "identity": "[\"ns-intro-4\",\"Bir çalışmada atomun elektron enerji düzeyleri; başka bir çalışmada çekirdek tepkimeleri inceleniyor. Bu iki konu sırasıyla hangi alanlarla en doğrudan ilişkilidir?\",\"\",[\"Optik — mekanik\",\"Termodinamik — optik\",\"Katıhal — yalnız akustik\",\"Atom fiziği — nükleer fizik\",\"Yalnız elektromanyetizma — yalnız termodinamik\"],3,\"Atomun yapısı ve elektron enerji düzeyleri atom fiziğiyle; çekirdek ve çekirdek tepkimeleri nükleer fizikle doğrudan ilişkilidir. Bir teknolojinin birden fazla alanla ilişkisi bulunabilse de verilen mekanizmalar bu ayrımı sağlar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Atom fiziğinde atomun elektron yapısı ve izinli enerji düzeyleri incelenir. Nükleer fizik ise çekirdeğin yapısı, çekirdek etkileşimleri ve çekirdek tepkimeleriyle ilgilenir.",
+        "Bir aygıt birden çok fizik alanını kullanabilir. En doğrudan alanı seçmek için aygıt adına değil, soruda özellikle incelenen yapı ve sürece bakılır; elektron düzeyi ile çekirdek dönüşümü ayrı ölçeklerdir."
+      ],
+      "strategy": "İki çalışmanın nesnesini ayrı yaz: ilkinde atomun hangi kısmı, ikincide hangi yapının tepkimesi araştırılıyor? Her nesneyi doğrudan inceleyen alanı bulup sorudaki sırayı koru.",
+      "steps": [
+        "İlk çalışma elektronların enerji düzeylerini hedefliyor. Işığın yalnız izlediği yol veya bir cismin büyük ölçekli hareketi araştırılmıyor; atomun iç elektron düzeni söz konusu.",
+        "İkinci çalışma çekirdek tepkimelerini hedefliyor. Buradaki dönüşüm çekirdekle ilgilidir; yalnız sıcaklık değişimi veya ses yayılması değildir.",
+        "Elektron enerji düzeyleri atom fiziğine, çekirdek tepkimeleri nükleer fiziğe doğrudan bağlanır. Seçenekte bu iki alan aynı sırada yer almalıdır."
+      ],
+      "optionReasons": [
+        "Optik ışığın yayılması ve ışık olaylarıyla, mekanik hareket ve kuvvetle ilgilidir. Bu eşleşme çekirdek tepkimesini doğrudan karşılayan alanı içermez.",
+        "Sıcaklık ve enerji aktarımını inceleyen termodinamik, elektron düzeylerinin doğrudan alanı değildir; optik de çekirdek tepkimelerinin yerine geçmez.",
+        "Katıhal özellikle katıların ortak yapısal ve fiziksel özelliklerini inceler; soru belirli bir katı sistem vermiyor. Akustik ise sesle ilgilidir, çekirdek tepkimesiyle değil.",
+        "Doğru. Sorudaki ilk hedef elektron enerji düzeyleri için atom fiziği, ikinci hedef çekirdek tepkimeleri için nükleer fiziktir.",
+        "Elektronların yük taşıması, verilen iki hedefi yalnız elektromanyetizma ve yalnız termodinamik diye sınırlamaz. Çekirdek tepkimesi için doğrudan nükleer fizik ayrımı korunmalıdır."
+      ],
+      "commonError": "Atom sözcüğünü gördüğünde bütün atom altı süreçleri aynı alana koymak veya doğru iki alanı bulup verilen sırayı ters çevirmek.",
+      "check": "Çekirdeği değiştirmeyen elektron düzeyi geçişi ile çekirdeğin tepkimeye girmesi farklı hedeflerdir. Seçilen iki alan bu ayrımı aynı sırada açıklayabilmelidir."
+    }
+  },
+  {
+    "id": "ns-intro-5",
+    "identity": "[\"ns-intro-5\",\"Sürtünmenin ihmal edildiği bir model, pürüzlü gerçek yüzeyde yapılan deneyle tam aynı sonucu vermiyor. İlk yapılması gereken değerlendirme hangisidir?\",\"\",[\"Bütün fizik modellerinin yararsız olduğunu ilan etmek\",\"İhmal edilen etkileri ve ölçüm koşullarını modelin kapsamıyla karşılaştırmak\",\"Gerçek deneyin mutlaka yanlış olduğunu kabul etmek\",\"Sürtünmenin doğada hiç bulunmadığını ileri sürmek\",\"Ölçüm birimlerini incelemeye gerek olmadığını söylemek\"],1,\"Model bazı etkileri dışarıda bırakabilir. Farkın nedenini araştırırken sürtünme gibi ihmaller, araçlar, birimler ve deney koşulları değerlendirilir. Fark tek başına bütün modellerin yanlış veya bütün deneylerin hatalı olduğunu kanıtlamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Fiziksel model, belirtilen varsayımlar altında bir sistemin belirli yönlerini temsil eder. Öngörü ile ölçümün karşılaştırılması, bu varsayımların deney aralığına uygunluğunu sınamaya yardım eder.",
+        "Bir fark; ihmal edilen etki, araç ayarı, birim dönüşümü veya deney koşulu gibi birden çok nedenle ilişkili olabilir. Hatanın kaynağını ayırmak için kontrollü karşılaştırma ve ölçüm belirsizliği değerlendirmesi gerekir."
+      ],
+      "strategy": "Modelde dışarıda bırakılan etkiyi deneydeki koşulla eşleştir; sonra ölçüm aracı, birim ve başlangıç koşullarını aynı sırayla kontrol et. Farkın nedenini sınamadan genelleme yapan yorumları ayır.",
+      "steps": [
+        "Model sürtünmeyi ihmal ediyor; deneyin yüzeyi ise pürüzlü. Önce model ile deneyin aynı fiziksel koşulları temsil edip etmediğini karşılaştır.",
+        "Aynı büyüklüklerin aynı birimlerle ölçüldüğünü, araç ayarını ve deney başlangıcını denetle. Böylece ölçüm farkıyla model kapsamı farkını birbirinden ayırmaya çalış.",
+        "Uygun ilk değerlendirme, ihmal edilen etkileri ve ölçüm koşullarını model kapsamıyla birlikte incelemektir. Tek bir uyumsuzluk bütün modelleri ya da bütün deneyleri geçersiz saydırmaz."
+      ],
+      "optionReasons": [
+        "Tek bir model–deney farkından bütün modellerin yararsız olduğu sonucu çıkmaz. Sınanan modelin varsayımları ve geçerli olduğu aralık ayrı incelenmelidir.",
+        "Doğru. İhmal edilen sürtünme ile deneyin yüzeyi karşılaştırılır; araçlar, birimler ve diğer koşullar da kontrol edilerek farkın nedeni araştırılır.",
+        "Deneyin mutlaka yanlış olması gerekmez. Gerçek yüzeyde, modelin dışarıda bıraktığı bir etki bulunması da fark oluşturabilir.",
+        "Bir modelde sürtünmeyi sıfır kabul etmek, doğada sürtünme bulunmadığı iddiası değildir. Bu kabul yalnız o modelin kapsamını belirtir.",
+        "Birim veya ölçüm ölçeği farklılığı da sayısal fark doğurabilir. Bu denetimi baştan gereksiz saymak olası bir nedeni sınamadan dışlar."
+      ],
+      "commonError": "Modelde ihmal edilen bir etkiyi doğada yok sanmak; farkın nedenini aramadan modelin veya deneyin tamamını reddetmek.",
+      "check": "Aynı model daha düşük sürtünmeli bir düzende daha iyi uyabilir. Bu karşılaştırmada diğer koşullar ve birimler sabit tutulursa ihmal edilen etkinin rolü daha açık sınanır; sonuç yine ölçüm belirsizliğiyle birlikte okunur."
+    }
+  },
+  {
+    "id": "ns-density-1",
+    "identity": "[\"ns-density-1\",\"Kütlesi 50 g ve hacmi 20 cm³ olan örneğin özkütlesi kaç g/cm³’tür?\",\"\",[\"0,4\",\"2,5\",\"30\",\"70\",\"1000\"],1,\"ρ=m/V=50/20=2,5 g/cm³. Özkütle kütle veya hacimden tek başına okunmaz; iki niceliğin oranıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Özkütle, bir örneğin birim hacmine düşen kütlesidir: ρ=m/V. Kütle g ve hacim cm³ ile verilirse oran g/cm³ birimini taşır; kütle ile hacim toplanarak özkütle bulunmaz."
+      ],
+      "strategy": "Hangi niceliğin birim hacimde arandığını belirleyip oranı kur. İşlemin birimini sayıyla birlikte izle ve bulduğun oranı hacimle çarparak verilen kütleyi geri üret.",
+      "steps": [
+        "Kütle 50 g, hacim 20 cm³’tür. Bir cm³ başına kütle arandığı için paya kütle, paydaya hacim yazılır.",
+        "ρ=50 g/20 cm³ kurulur. Sayısal bölüm 50/20, birim bölümü g/cm³ olarak ayrı izlenir.",
+        "50/20=2,5 olduğundan özkütle 2,5 g/cm³’tür. Her cm³ için 2,5 g alınırsa 20 cm³ toplam 50 g verir."
+      ],
+      "optionReasons": [
+        "0,4=20/50, hacim/kütle oranıdır ve cm³/g birimi taşır. İstenen birim hacimdeki kütlenin tersini hesaplar.",
+        "Doğru. 50/20=2,5 ve birimi g/cm³’tür; kütle/hacim tanımı sağlanır.",
+        "30=50−20, farklı birimli iki sayıyı çıkarmadır. Gram ile cm³ aynı tür nicelik olmadığı için fark özkütle vermez.",
+        "70=50+20, kütle ile hacmi toplama hatasıdır. Bu toplamın g/cm³ anlamı yoktur.",
+        "1000=50×20, kütle ile hacmi çarpar. Ortaya çıkan g·cm³ birimi özkütlenin g/cm³ birimi değildir."
+      ],
+      "commonError": "Oranın payıyla paydasını ters çevirmek veya farklı birimli kütle ve hacmi yalnız sayıları üzerinden toplayıp çıkarmak.",
+      "check": "2,5 g/cm³×20 cm³=50 g. Hacim birimi sadeleşip başlangıç kütlesi elde edilir; hem sayı hem birim denetlenmiş olur."
+    }
+  },
+  {
+    "id": "ns-density-2",
+    "identity": "[\"ns-density-2\",\"Yoğunlukları 1 g/cm³ ve 4 g/cm³ olan iki sıvıdan eşit 20 g alınıyor. Tepkime olmadığı ve hacimlerin toplandığı kabul edilirse karışım yoğunluğu kaç g/cm³ olur?\",\"\",[\"2,5\",\"4,0\",\"0,625\",\"1,6\",\"5,0\"],3,\"Hacimler 20/1=20 cm³ ve 20/4=5 cm³’tür. Toplam kütle 40 g, son hacim 25 cm³ olduğundan ρ=40/25=1,6 g/cm³. 2,5 olan aritmetik ortalama eşit hacim koşuluna aittir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Karışım özkütlesi toplam kütle/son hacim oranıdır. Hacimler toplanabiliyorsa her bileşen için V=m/ρ bulunup hacimler birleştirilebilir.",
+        "Eşit kütleli iki sıvının özkütleleri farklıysa hacimleri eşit değildir. Aritmetik özkütle ortalaması bu modelde eşit hacim koşuluna aittir; eşit kütleye otomatik uygulanmaz."
+      ],
+      "strategy": "Her sıvının kütlesini kendi özkütlesiyle hacme çevir. Sorudaki hacimlerin toplanması kabulünü kullanarak toplamları kur ve ancak bundan sonra karışımın oranını hesapla.",
+      "steps": [
+        "Birinci sıvı için V₁=20/1=20 cm³; ikinci için V₂=20/4=5 cm³ olur. Eşit 20 g, eşit hacim vermemiştir.",
+        "Toplam kütle 20+20=40 g’dır. Tepkime ve hacim değişimi dışlandığından son hacim 20+5=25 cm³ alınır.",
+        "ρ_karışım=40/25=1,6 g/cm³ bulunur. Sonuç, hacmi daha büyük olan düşük özkütleli sıvının değerine daha yakındır."
+      ],
+      "optionReasons": [
+        "2,5=(1+4)/2 aritmetik ortalamasıdır. Bu yöntem eşit hacimde işe yarar; burada eşit olan kütlelerdir.",
+        "4,0 yalnız ikinci sıvının özkütlesidir. Pozitif miktarda düşük özkütleli sıvı da katıldığından karışım, hacimler toplanırken bu uç değerde kalamaz.",
+        "0,625=25/40, toplam hacmin toplam kütleye oranıdır. Birimi cm³/g olur; karışım özkütlesinin tersini verir.",
+        "Doğru. Toplam 40 g, toplam 25 cm³ hacme dağılır; oran 1,6 g/cm³ olur.",
+        "5,0=1+4, bileşen özkütlelerini toplar. Özkütleler toplanmaz; toplam kütle son hacme bölünür."
+      ],
+      "commonError": "Eşit kütleyi eşit hacim sanıp iki özkütlenin aritmetik ortalamasını almak; ayrıca son hacim kabulünü kullanmadan oran kurmak.",
+      "check": "1,6×25=40 g toplam kütleyi geri verir. İki hacim de pozitif ve toplanabilir olduğundan sonuç 1 ile 4 g/cm³ arasında kalır."
+    }
+  },
+  {
+    "id": "ns-density-3",
+    "identity": "[\"ns-density-3\",\"Bir cismin suda yüzdüğü ve su seviyesindeki artıştan yer değiştiren sıvı hacminin 30 cm³ bulunduğu belirtiliyor. Yalnız bu ölçüm cismin hangi hacmini verir?\",\"\",[\"Suya batan bölümünün hacmini\",\"Cismin toplam hacmini her koşulda\",\"Su üstündeki bölümünün hacmini\",\"Cismin kütlesini gram cinsinden\",\"Cismin içindeki bütün boşlukları ayrı ayrı\"],0,\"Yüzen cisim kısmen su dışında kalabilir. Yer değiştiren su hacmi batan bölümün hacmine karşılık gelir; toplam hacim için su üstünde kalan bölüm hakkında ek bilgi gerekir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sıvı yer değiştirme yöntemi, sıvı içinde yer kaplayan bölümün hacmini izler. Yüzen bir cismin su dışında kalan kısmı bu ölçüme katılmaz; tamamen batma ile kısmen batma farklı ölçüm durumlarıdır.",
+        "Hacim cm³ gibi hacim birimleriyle, kütle g gibi kütle birimleriyle yazılır. Bir ölçümün doğrudan neyi gösterdiğiyle ek bağıntılar kullanılarak nelerin hesaplanabileceği ayrılmalıdır."
+      ],
+      "strategy": "Önce ölçümün hangi bölgeyi gördüğünü belirle: suyun dışında kalan kısım sıvı seviyesine katkı yapıyor mu? Sonra doğrudan ölçülen hacmi, ek veri isteyen toplam hacim ve kütleden ayır.",
+      "steps": [
+        "Cismin yüzdüğü belirtiliyor. Yer değiştiren 30 cm³ su, sıvı içinde cismin kapladığı bölgeyle ilişkilidir; su dışında kalan bölüm bu veride ölçülmemiştir.",
+        "Toplam hacim, suya batan ve su dışında kalan bölümlerin toplamıdır. Yalnız 30 cm³ ölçümü, ikinci bölümün hacmini ayrıca vermez.",
+        "Dolayısıyla doğrudan bulunan hacim suya batan bölümündür. Toplam hacim, kütle veya ayrı iç boşluklar için başka veri ya da ek fiziksel bağıntı gerekir."
+      ],
+      "optionReasons": [
+        "Doğru. Yer değiştiren sıvı, cismin su içinde yer kaplayan bölümünü ölçer; burada bu hacim 30 cm³’tür.",
+        "Yüzen cismin bir bölümü su dışında kalabilir. Ölçüm dışarıdaki hacmi içermediğinden her koşulda toplam hacmi vermez.",
+        "Su üstündeki bölüm sıvının yerini değiştirmez. Bu bölümün hacmi, toplam hacim bilinmeden 30 cm³ ölçümünden çıkarılamaz.",
+        "30 cm³ doğrudan bir hacim değeridir. Kütleye geçmek için sıvı özkütlesi ve uygun yüzme dengesi gibi ek bilgiler kullanılmalıdır; ölçümün kendisi gram vermez.",
+        "Tek bir seviye değişimi iç boşlukları ayrı ayrı ayırt etmez. Ölçüm uzaysal bir iç yapı taraması değildir."
+      ],
+      "commonError": "Yüzen cismi tamamen batmış gibi düşünerek yer değiştiren su hacmini her durumda toplam cisim hacmiyle eşitlemek.",
+      "check": "Toplam hacmi 30 cm³+V_suüstü diye yaz. Su üstündeki bölümün hacmi soruda verilmediğinden farklı toplamlar mümkündür; doğrudan ölçümün batan bölüme ait olduğu korunur."
+    }
+  },
+  {
+    "id": "ns-density-4",
+    "identity": "[\"ns-density-4\",\"Aynı malzemeden benzer biçimde yapılmış iki cisimde bütün doğrusal boyutlar ikinci cisimde 3 katına çıkarılıyor. Kendi ağırlığına göre kullanılan kesit/hacim oranı kaç katına çıkar?\",\"\",[\"3\",\"9\",\"27\",\"1/9\",\"1/3\"],4,\"Kesit 3²=9, hacim 3³=27 katına çıkar. Oran 9/27=1/3 olur. Bu kendi ağırlığına göre benzerlik ölçütüdür; büyük cismin mutlak taşıma kuvvetinin mutlaka daha küçük olduğu anlamına gelmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Geometrik benzerlikte bütün uzunluklar s ile çarpılırsa karşılık gelen alanlar s², hacimler s³ ile çarpılır. Aynı malzeme koşulu bu sorudaki karşılaştırmanın cisim boyutuna odaklanmasını sağlar.",
+        "Kesit/hacim oranı bir uzunluğun tersi boyutundadır. Burada kendi ağırlığına göre kullanılan bu oran soruluyor; mutlak taşıma kuvveti ile aynı nicelik değildir."
+      ],
+      "strategy": "Uzunluk ölçeğini önce alana, sonra hacme ayrı uygula. Son oranı ilk orana bölerek yalnız değişim çarpanını bul; sonucu toplam kesit artışıyla karıştırma.",
+      "steps": [
+        "Bütün doğrusal boyutlar için ölçek s=3’tür. Karşılık gelen kesit A₂=3²A₁=9A₁ olur.",
+        "Hacim V₂=3³V₁=27V₁ olur. Kesit büyüse de hacim daha yüksek bir kuvvetle artmıştır.",
+        "(A₂/V₂)/(A₁/V₁)=9/27=1/3 bulunur. Sorulan kesit/hacim oranı ilk değerinin üçte birine iner."
+      ],
+      "optionReasons": [
+        "3, doğrusal boyutların değişim katsayısıdır. Alan ile hacmin farklı kuvvetlerle değişmesi hesaba katılmamıştır.",
+        "9, yalnız kesit alanının çarpanıdır. Oran için hacmin 27 katına çıkması da paydaya eklenmelidir.",
+        "27, yalnız hacmin çarpanıdır. Kesit/hacim oranının çarpanı iki değişimin bölümüdür.",
+        "1/9, kesit artışının tersidir. Hacmin kübik değişimiyle kesitin karesel değişimini birlikte vermez.",
+        "Doğru. Kesit 9, hacim 27 katına çıktığından kesit/hacim oranı 9/27=1/3 katına gelir."
+      ],
+      "commonError": "Kesitin büyümesinden kendi ağırlığına göre ölçütün de büyüdüğünü sanmak; oran yerine yalnız alanı veya yalnız hacmi karşılaştırmak.",
+      "check": "A/V, uzunluk ölçeğiyle ters orantılı değişir: s²/s³=1/s. s=3 için aynı 1/3 katsayısı elde edilir; mutlak kesitin ise 9 kat arttığı ayrı korunur."
+    }
+  },
+  {
+    "id": "ns-density-5",
+    "identity": "[\"ns-density-5\",\"Aynı sıcaklıktaki su için aynı camdan yapılmış, içi temiz iki kılcal borudan biri daha dardır. Su camı ıslatıyor. Dar boru için hangi karşılaştırma uygundur?\",\"\",[\"Su mutlaka daha az yükselir.\",\"Her sıvı, her boruda aynı miktarda yükselir.\",\"Diğer koşullar aynıyken yükselme farkının büyüklüğü daha fazla olabilir.\",\"Kılcallık yalnız cismin kütlesine bağlıdır.\",\"Daralma suyu başka bir elemente dönüştürür.\"],2,\"Bu koşullarda dar boruda kılcal yükselmenin büyüklüğü daha fazladır. Sonuç her sıvının her yüzeyde yükseldiği anlamına gelmez; örneğin farklı sıvı–yüzey etkileşimi alçalma da oluşturabilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kılcallık, sıvı ile yüzey etkileşiminin ve sıvı yüzeyinin etkisiyle ortaya çıkan seviye farkıdır. Islatan sıvı–cam çifti için ideal kılcal dengede yükselme görülebilir.",
+        "Aynı sıvı, sıcaklık ve yüzey koşullarında ideal denge yüksekliği boru yarıçapıyla ters orantılıdır. Yüzey veya sıvı değişirse ıslanma ve seviye farkının yönü de değişebilir; her çift için yükselme kuralı yoktur."
+      ],
+      "strategy": "İki boruda aynı tutulan sıvı, sıcaklık ve cam yüzeyini işaretle. Değişen boyutu ideal kılcal denge ilişkisine yerleştir; ıslanma koşulunu bütün sıvılara genellemeden karşılaştır.",
+      "steps": [
+        "İki boruda da su, aynı sıcaklık ve temiz cam kullanılıyor; suyun camı ıslattığı belirtiliyor. Karşılaştırmada sıvı–yüzey çifti değiştirilmemiştir.",
+        "Daha dar borunun yarıçapı daha küçüktür. Diğer koşullar aynıyken ideal kılcal denge yüksekliğiyle yarıçap arasındaki ters orantı kullanılır.",
+        "Bu model dar boruda daha büyük yükselme farkına izin verir. Bu koşullu sonuç, her sıvının her yüzeyde aynı miktarda veya mutlaka yukarı çıkması demek değildir."
+      ],
+      "optionReasons": [
+        "Aynı ıslatan sıvı–yüzey koşullarındaki ideal ters orantının yönünü çevirir. Dar boru için daha az yükselme zorunlu sonucu çıkarılamaz.",
+        "Boru yarıçapı ve sıvı–yüzey etkileşimi seviye farkını etkiler. Bütün sıvı ve borular için aynı yükselme iddiası bu etkenleri yok sayar.",
+        "Doğru. Verilen aynı sıvı, sıcaklık ve ıslatan cam koşullarında dar boruda yükselme farkının büyüklüğü daha fazla olabilir.",
+        "Kılcal denge yalnız bir cismin kütlesiyle açıklanmaz. Boru yarıçapı ile sıvı ve yüzey özellikleri bu sorudaki karşılaştırmanın temelidir.",
+        "Boru çapını değiştirmek nükleer bir dönüşüm değildir. Su–cam etkileşimi ve geometrinin değişmesi suyu başka element yapmaz."
+      ],
+      "commonError": "Dar boru sonucunu ıslatma koşulunu unutarak bütün sıvılara yaymak veya aynı koşullardaki ters orantının yönünü çevirmek.",
+      "check": "İdeal bağıntıda yarıçap yarıya indirilip diğer etkenler korunursa denge yüksekliği iki katına gelir. Bu orantı kontrolü yalnız belirtilen ıslatan sıvı–yüzey modeline aittir."
+    }
+  },
+  {
+    "id": "ns-motion-1",
+    "identity": "[\"ns-motion-1\",\"Pozitif yön sağa seçiliyor. Bir cisim önce 15 m sağa, sonra 6 m sola gidiyor; toplam süre 3 s. Ortalama sürati ve ortalama hızı sırasıyla nedir?\",\"\",[\"3 m/s ve +7 m/s\",\"7 m/s ve −3 m/s\",\"7 m/s ve +3 m/s\",\"3 m/s ve +3 m/s\",\"9 m/s ve +21 m/s\"],2,\"Yol 15+6=21 m, yer değiştirme 15−6=+9 m’dir. Ortalama sürat 21/3=7 m/s; ortalama hız +9/3=+3 m/s olur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ortalama sürat toplam yol/toplam süre, ortalama hız işaretli yer değiştirme/toplam süre ile tanımlanır. Aynı aralık kullanılsa da yön değiştiren harekette paylar farklı olabilir.",
+        "Pozitif yön sağ ise sağa ilerleme yer değiştirmeye artı, sola ilerleme eksi katkı verir. Yolun her parçası ise uzunluk olarak pozitif toplanır."
+      ],
+      "strategy": "İki ayrı toplam oluştur: birinde bütün yol uzunluklarını ekle, diğerinde seçilen yönün işaretini koru. Sonra her toplamı aynı toplam süreye bölüp istenen sırayı kontrol et.",
+      "steps": [
+        "Sağa gidilen 15 m ve sola gidilen 6 m yol için 15+6=21 m olarak toplanır. Yer değiştirme ise +15−6=+9 m’dir.",
+        "Her iki ortalama da verilen toplam 3 s aralığına aittir. Yol için 21/3, yer değiştirme için +9/3 oranlarını ayrı kur.",
+        "Ortalama sürat 7 m/s, ortalama hız +3 m/s bulunur. Soruda önce sürat, sonra hız istendiğinden bu sıra korunur."
+      ],
+      "optionReasons": [
+        "3 değeri yer değiştirme/süreye, 7 değeri yol/süreye aittir. Sayılar bulunmuş olsa da sürat ile hızın sırası ters yazılmıştır.",
+        "Yol için 7 m/s uygundur. Ancak toplam yer değiştirme sağa +9 m olduğundan ortalama hızın −3 değil +3 m/s olması gerekir.",
+        "Doğru. Toplam yol 21 m ve yer değiştirme +9 m, aynı 3 s’ye bölününce sırasıyla 7 m/s ve +3 m/s verir.",
+        "Her iki payda doğru süre olsa da süratte +9 m yer değiştirme kullanılmıştır. Sola alınan 6 m de yola eklenmelidir.",
+        "9 m yer değiştirme ve 21 m yol doğrudan hız birimiyle yazılmış; süreye bölme yapılmamış ve istenen nicelikler de ters yerleştirilmiştir."
+      ],
+      "commonError": "Süratte yönlü farkı kullanmak, sola gidilen yolu negatif saymak veya iki ortalamayı farklı zaman aralıklarına göre hesaplamak.",
+      "check": "7×3=21 m yol ve (+3)×3=+9 m yer değiştirme geri elde edilir. Ayrıca 21 m, |+9 m|’den büyüktür; yön değiştirmeyle uyumludur."
+    }
+  },
+  {
+    "id": "ns-motion-2",
+    "identity": "[\"ns-motion-2\",\"Doğrusal harekette başlangıç hızı −3 m/s olan cismin ivmesi 2 s boyunca sabit −2 m/s². Bu aralığın sonunda hızı ve sürati hangisidir?\",\"\",[\"−7 m/s ve 7 m/s\",\"+7 m/s ve −7 m/s\",\"−1 m/s ve 1 m/s\",\"+1 m/s ve 1 m/s\",\"0 m/s ve 0 m/s\"],0,\"Hız −3+(−2)×2=−7 m/s olur; sürat 7 m/s’dir. Hız ve ivme aynı eksi yönde olduğu için cismin sürati artmıştır; negatif ivme tek başına yavaşlama demek değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sabit ivmede hız değişimi Δv=aΔt, son hız v=v₀+Δv ile bulunur. Bir boyutlu hızın işareti yönü; sürat ise hızın mutlak büyüklüğünü belirtir.",
+        "Hız ile ivme aynı yöndeyse sürat artar. Negatif ivme, negatif yönde giden bir cismi hızlandırabilir; tek başına yavaşlama anlamına gelmez."
+      ],
+      "strategy": "İvmeyi süreyle çarpıp önce işaretli hız değişimini bul. Bunu başlangıç hızına cebirsel olarak ekle; sürati ancak son hız belirlendikten sonra mutlak değerle yaz.",
+      "steps": [
+        "Δv=(−2 m/s²)×2 s=−4 m/s olur. İvmenin eksi işareti çarpımda korunur.",
+        "Son hız v=−3+(−4)=−7 m/s’dir. Başlangıç hızı da değişim de eksi yönde olduğundan büyüklük artmıştır.",
+        "Sürat |−7|=7 m/s’dir. Hız ve sürat aynı birimi taşır; burada hız eksi işaretli, sürat ise pozitiftir."
+      ],
+      "optionReasons": [
+        "Doğru. −3+(−2)×2=−7 m/s son hız, bunun büyüklüğü 7 m/s sürattir.",
+        "Hızın yönü artıya çevrilmiş ve sürat negatif yazılmıştır. Sürat, hızın büyüklüğü olduğu için negatif olamaz.",
+        "−1, başlangıçtaki −3 ile ivmenin sayı değeri 2’yi doğrudan toplama sonucuna benzer. İvme süreyle çarpılmamış ve eksi işareti de korunmamıştır.",
+        "+1=−3+4, ivme katkısını yanlışlıkla +4 alır. Verilen ivme −2 olduğundan iki saniyedeki değişim −4’tür.",
+        "Durma için pozitif bir hız değişimi başlangıçtaki eksi hızı sıfıra getirmeliydi. Burada değişim de eksi olduğundan hız sıfıra yaklaşmaz."
+      ],
+      "commonError": "Eksi ivmeyi otomatik yavaşlama sanmak; ivmeyi süreyle çarpmadan hızla toplamak veya sürate eksi işareti koymak.",
+      "check": "(−7)−(−3)=−4 m/s hız değişimidir; 2 s’ye bölününce −2 m/s² geri elde edilir. Süratin 3’ten 7’ye çıkması aynı yönlü hız ve ivmeyle tutarlıdır."
+    }
+  },
+  {
+    "id": "ns-motion-3",
+    "identity": "[\"ns-motion-3\",\"Bir boyutta hareket eden cismin bir anda konumu −4 m, hızı +2 m/s olarak veriliyor. Bu bilgi hangi durumu ifade eder?\",\"\",[\"Cisim mutlaka hareketsizdir.\",\"Negatif konumdayken pozitif hız olamaz.\",\"Cisim kesinlikle eksi yönde hareket etmektedir.\",\"Sürati −2 m/s’dir.\",\"Cisim başlangıcın eksi tarafında bulunurken artı yönde hareket etmektedir.\"],4,\"Konumun negatif olması cismin eksenin eksi tarafında bulunduğunu, hızın pozitif olması artı yönde hareket ettiğini gösterir. Bu iki bilgi birbirini dışlamaz; sürat 2 m/s’dir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Konum, seçilen referans noktasına göre nerede bulunulduğunu belirtir. Hız ise konumun hangi yönde değiştiğini gösterir. Bir cismin bulunduğu taraf, hareket yönünü tek başına belirlemez.",
+        "Bir boyutta x<0 eksenin eksi tarafını, v>0 artı yönde ilerlemeyi anlatır. Sürat |v| olduğundan bir konumun eksi olması sürati negatif yapmaz."
+      ],
+      "strategy": "Verilen iki işareti farklı soruların cevabı olarak oku: konum için nerede, hız için hangi yöne? Ardından bu iki bilgiyi aynı anda koruyan ifadeyi ara.",
+      "steps": [
+        "x=−4 m, cismin seçilen referansın eksi tarafında olduğunu gösterir. Bu bilgi tek başına durduğunu veya daha da eksiye gittiğini söylemez.",
+        "v=+2 m/s, o anda konumun artı yönde değiştiğini gösterir. Eksi taraftaki bir cisim bu yönde hareket edebilir.",
+        "İki bilgi birlikte, eksi tarafta bulunup artı yönde ilerleyen cismi tarif eder. Sürat ayrıca |+2|=2 m/s’dir."
+      ],
+      "optionReasons": [
+        "Hız +2 m/s verilmiştir; hareketsizlikte hız sıfır olmalıydı. Negatif konum durgunluk koşulu değildir.",
+        "Konumun tarafıyla hareket yönü bağımsız bilgilerdir. Başlangıcın solundaki bir cisim sağa doğru ilerleyebilir.",
+        "Hareket yönü konumun değil hızın işaretiyle okunur. Buradaki hız +2 olduğundan eksi yönde hareket sonucu çıkmaz.",
+        "Sürat |v| ile bulunur. +2 m/s’nin büyüklüğü 2 m/s’dir; −2 m/s sürat yazılamaz.",
+        "Doğru. −4 m konum eksi tarafı, +2 m/s hız ise artı yönde hareketi belirtir; aynı anda ikisi de sağlanır."
+      ],
+      "commonError": "x’in işaretini v’nin işareti yerine kullanmak; özellikle eksenin eksi tarafında bulunmayı eksi yönde gitmek sanmak.",
+      "check": "Yalnız anlık kontrol için çok kısa pozitif Δt’de konum değişimi yaklaşık +2Δt olur; x değeri −4’ten daha büyük değerlere yönelir. Bu, cismin başlangıçta hâlâ eksi tarafta olmasıyla çelişmez."
+    }
+  },
+  {
+    "id": "ns-motion-4",
+    "identity": "[\"ns-motion-4\",\"Doğrusal hareket yapan bir cismin hız–zaman ilişkisinin ilk bölümü boyunca hızı sıfır veya pozitif, ikinci bölümü boyunca sıfır veya negatiftir. İlk bölümdeki işaretli alan +12 m, ikinci bölümdeki işaretli alan −5 m’dir. Başka bölüm yoktur. Toplam yer değiştirme ve alınan yol nedir?\",\"\",[\"17 m ve 7 m\",\"+7 m ve 17 m\",\"−7 m ve −17 m\",\"+12 m ve 5 m\",\"+7 m ve 7 m\"],1,\"İşaretli alanların toplamı +12−5=+7 m yer değiştirmedir. Yol 12+5=17 m’dir; eksi alan negatif yol değil eksi yönde hareket katkısıdır. Sayısal alanlar soruda verildiği için ayrı bir grafik gerekmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir boyutta hız–zaman ilişkisinin işaretli alanı yer değiştirmeyi verir. Alınan yol için hızın büyüklüğü zaman boyunca toplanır; hız işaret değiştirmeyen bir bölümde bu yol, bölümün işaretli alanının büyüklüğüne eşittir.",
+        "Soruda ilk bölümde hızın sıfır veya pozitif, ikinci bölümde sıfır veya negatif kaldığı veriliyor. Böylece her bölümün içinde gizli artı–eksi alan iptali bulunmaz; iki alan büyüklüğü yol için ayrı kullanılabilir."
+      ],
+      "strategy": "Önce her bölümün hız işaretini verilen alanla eşleştir. Yer değiştirme için alanları işaretleriyle, yol için işareti değişmeyen her bölümün büyüklüğünü topla; sonuçları sorulan sıraya yerleştir.",
+      "steps": [
+        "İlk bölümün alanı +12 m ve hızı bölüm boyunca negatif değil; bu bölümün yol katkısı 12 m’dir. İkinci bölümün alanı −5 m ve hızı pozitif değil; yol katkısı 5 m’dir.",
+        "Yer değiştirmede yön korunur: +12+(−5)=+7 m. Son konum ilk konumun 7 m artı tarafında kalır.",
+        "Yol için bölüm uzunlukları eklenir: 12+5=17 m. İstenen sıra yer değiştirme, sonra yol olduğundan sonuç +7 m ve 17 m’dir."
+      ],
+      "optionReasons": [
+        "17 m toplam yol, 7 m yer değiştirme büyüklüğüdür. İstenen iki niceliğin sırası ters çevrilmiştir.",
+        "Doğru. +12−5=+7 m yer değiştirme; bölüm içi işaretler korunduğu için 12+5=17 m yoldur.",
+        "Yer değiştirmenin işareti yanlış çevrilmiş, yol da negatif yazılmıştır. Alınan yol iki pozitif uzunluğun toplamıdır ve negatif olamaz.",
+        "+12 m yalnız ilk bölümün yer değiştirmesidir; 5 m de yalnız ikinci bölümün yoludur. Her iki toplamda diğer bölümün katkısı eksik kalır.",
+        "+7 m yer değiştirme doğrudur; fakat 7 m’yi yol saymak, eksi yöndeki bölümün katettiği uzunluğu iptal eder. Yolda iki bölüm birbirini götürmez."
+      ],
+      "commonError": "Hız–zaman alanındaki eksi işaretini negatif yol sanmak veya toplam yol yerine son ve ilk konum arasındaki farkın büyüklüğünü kullanmak.",
+      "check": "Kontrol için ilk konumu 0 seç: ilk bölüm sonunda +12 m, ikinci sonunda +7 m olur. Buna karşılık gidilen uzunluklar 12 ve 5 m’dir; toplam yolun yer değiştirme büyüklüğünü aşması yön değişimiyle tutarlıdır."
+    }
+  },
+  {
+    "id": "ns-motion-5",
+    "identity": "[\"ns-motion-5\",\"Bir koşucu doğrusal yolda 30 s’de 180 m ilerleyip ardından 30 s yerinde bekliyor. Başlangıçtan beklemenin sonuna kadar ortalama sürati nedir?\",\"\",[\"6 m/s\",\"180 m/s\",\"0 m/s\",\"3 m/s\",\"12 m/s\"],3,\"Toplam yol 180 m, toplam süre 30+30=60 s olduğundan ortalama sürat 180/60=3 m/s’dir. Yalnız hareketli bölümün 6 m/s sürati bütün aralığın ortalaması değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ortalama sürat, incelenen aralıktaki toplam yolun aralığın bütün süresine oranıdır. Bekleme yolu artırmaz ama seçilen aralığın süresini artırır.",
+        "Bir bölümün süratiyle bütün aralığın ortalama sürati aynı olmak zorunda değildir. Ortalama alınırken hareketli ve durgun bölümlerin süreleri aynı zaman çizelgesinde tutulur."
+      ],
+      "strategy": "İncelenen aralığı hareket ve bekleme diye ayırıp her bölümün yol ve süresini yaz. Yol katkılarıyla süre katkılarını ayrı topla; ortalamayı bu toplamların oranından bul.",
+      "steps": [
+        "Hareketli bölümde yol 180 m, süre 30 s’dir. Sonraki beklemede yol katkısı 0 m, süre katkısı yine 30 s’dir.",
+        "Başlangıçtan beklemenin sonuna toplam yol 180+0=180 m, toplam süre 30+30=60 s olur.",
+        "Bütün aralığın ortalama sürati 180/60=3 m/s’dir. Yalnız ilk bölüm için bulunan 180/30=6 m/s bu daha uzun aralığın ortalaması değildir."
+      ],
+      "optionReasons": [
+        "6=180/30 yalnız hareketli bölümün süratidir. Beklemenin 30 saniyesi toplam zamana eklenmemiştir.",
+        "180, toplam yolun metre cinsinden sayı değeridir. Süreye bölünmeden m/s olarak yazılamaz.",
+        "Beklemenin sonunda anlık sürat sıfırdır; fakat önceki 180 m yol ortadan kalkmaz. Bütün aralığın ortalaması bu son anlık değer değildir.",
+        "Doğru. Bekleme dahil toplam 60 s’de 180 m yol alınmıştır; ortalama sürat 3 m/s olur.",
+        "12=6×2, zaman aralığı iki katına çıkınca sürati de iki katına çıkarma hatasıdır. Yol sabit kalırken toplam süre büyürse oran küçülür."
+      ],
+      "commonError": "Beklemeyi zaman hesabından çıkarmak veya son andaki durgunluğu bütün aralıkta hiç yol alınmamış gibi yorumlamak.",
+      "check": "3 m/s×60 s=180 m yol geri bulunur. Eşit 30 saniyelik bölümlerin süratleri 6 ve 0 olduğundan bu özel eşit süreli durumda (6+0)/2 de aynı ortalamayı verir."
+    }
+  },
+  {
+    "id": "ns-energy-1",
+    "identity": "[\"ns-energy-1\",\"Kütlesi sabit bir cismin sürati 3 m/s’den 6 m/s’ye çıkarılıyor. Klasik kinetik enerjisi kaç katına çıkar?\",\"\",[\"2\",\"3\",\"6\",\"4\",\"1/2\"],3,\"Sürat iki katına çıkmıştır; kütle sabitken enerji oranı 6²/3²=4 olur. Hız büyüklüğündeki iki kat artışı enerjiye doğrusal uygulama.\"]",
+    "guidance": {
+      "knowledge": [
+        "Klasik öteleme kinetik enerjisi K=mv²/2’dir. Kütle sabitken enerji süratin karesiyle orantılı değişir; enerji oranı bulunurken ortak m/2 çarpanı sadeleşir.",
+        "Kaç kat sorusu son değerin ilk değere oranını ister. Bir sürat artışı, son sürat ve sürat oranı farklı sayılardır; enerji oranı bunlardan uygun bağıntıyla çıkarılır."
+      ],
+      "strategy": "Aynı kütle için iki kinetik enerji ifadesi yazıp son/ilk oranını kur. Ortak çarpanları sadeleştir; sürat oranını enerjiye doğrusal taşımak yerine bağıntıdaki kuvveti uygula.",
+      "steps": [
+        "İlk enerji K₁=m×3²/2, son enerji K₂=m×6²/2 olarak yazılır. Kütleyi sayısal olarak bilmek oran için gerekli değildir.",
+        "K₂/K₁=[(m/2)×36]/[(m/2)×9] kurulur. Sabit ve ortak m/2 çarpanları sadeleşir.",
+        "36/9=4 bulunur; kinetik enerji ilk değerinin dört katıdır. Sürat oranı 6/3=2’nin karesi de aynı sonucu verir."
+      ],
+      "optionReasons": [
+        "2, yalnız süratin 6/3 oranıdır. Kinetik enerji bağıntısında sürat kareli olduğu için bu oran da karesiyle kullanılmalıdır.",
+        "3=6−3, süratteki artışın sayı değeridir. Birimi m/s olan bu fark, enerjinin boyutsuz son/ilk oranı değildir.",
+        "6, son süratin sayı değeridir. Başlangıç değeriyle oran kurulmadığı ve kare bağıntısı uygulanmadığı için enerji katsayısı vermez.",
+        "Doğru. Sabit kütlede K₂/K₁=6²/3²=4 olur.",
+        "1/2, ilk süratin son sürate oranıdır. Hem istenen son/ilk yönü ters çevrilmiş hem enerji için gereken kare uygulanmamıştır."
+      ],
+      "commonError": "Enerjiyi süratle doğrusal orantılı sanmak veya kaç kat sorusunu son sürat ya da iki süratin farkı olarak cevaplamak.",
+      "check": "Başlangıç enerjisine sembolik olarak K₁ dersek son enerji 4K₁ olur. Kütleyi aynı bırakıp sürati yarıya indirmek enerjiyi ilk sonucun dörtte birine indirerek başlangıca döndürür."
+    }
+  },
+  {
+    "id": "ns-energy-2",
+    "identity": "[\"ns-energy-2\",\"Bir cisim 4 m yatay yer değiştirirken ona uygulanan sabit 30 N kuvvet sürekli dikey yöndedir. Bu kuvvetin bu yer değiştirmede yaptığı iş nedir?\",\"\",[\"120 J\",\"0 J\",\"30 J\",\"7,5 J\",\"−120 J\"],1,\"Kuvvet yer değiştirmeye dik olduğundan yatay bileşeni sıfırdır; W=FΔx cos90°=0. Bu, kuvveti uygulayan canlının biyolojik olarak hiç enerji harcamadığı anlamına gelmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Belirli bir sabit kuvvetin öteleme işi W=F·Δr=FΔr cosθ ile bulunur. Burada θ kuvvet ile yer değiştirme arasındaki açıdır; yalnız yer değiştirme doğrultusundaki bileşen işe katkı verir.",
+        "Bir kuvvetin yaptığı iş, bütün kuvvetlerin net işi veya kuvveti uygulayan kişinin biyolojik enerji harcamasıyla aynı kavram değildir. İstenen kuvvet ayrı seçilmelidir."
+      ],
+      "strategy": "Önce yatay yer değiştirmeyle dikey kuvvet arasındaki açıyı belirle. Kuvveti yer değiştirme doğrultusuna izdüşürüp iş bağıntısına bu bileşeni koy; kuvvetin büyüklüğünü tek başına çarpmaktan kaçın.",
+      "steps": [
+        "Yer değiştirme 4 m yatay, seçilen 30 N kuvvet dikeydir. Bu iki yön arasında 90° açı vardır.",
+        "Yatay doğrultudaki kuvvet bileşeni 30 cos90°=0 N olur. İş hesabında 4 m ile çarpılacak bileşen budur.",
+        "Bu kuvvetin yaptığı iş 0×4=0 J’dir. Sonuç yalnız belirtilen kuvvet içindir; başka kuvvetlerin işini veya canlıların bütün enerji harcamasını sıfır saydırmaz."
+      ],
+      "optionReasons": [
+        "120=30×4, kuvvet yer değiştirmeyle aynı yöndeymiş gibi hesaplar. Diklik nedeniyle gerekli cos90° çarpanı hesaba katılmamıştır.",
+        "Doğru. Dikey kuvvetin yatay bileşeni sıfırdır; bu yatay yer değiştirmede yaptığı iş 0 J olur.",
+        "30, kuvvetin newton cinsinden büyüklüğüdür. Kuvveti doğrudan joule diye yazmak işin yön ve yer değiştirme koşullarını kullanmaz.",
+        "7,5=30/4, kuvveti mesafeye böler ve N/m birimi verir. İş ise uygun kuvvet bileşeniyle mesafenin çarpımıdır.",
+        "−120 J, kuvvet yer değiştirmeye tam zıt yönde olsaydı elde edilirdi. Buradaki açı 180° değil 90°’dir."
+      ],
+      "commonError": "Kuvvet ile mesafeyi açıyı incelemeden çarpmak veya seçilen bir kuvvetin sıfır işinden bütün sistemin hiç enerji harcamadığı sonucunu çıkarmak.",
+      "check": "Net yer değiştirmenin dikey bileşeni sıfır olduğundan, sabit dikey kuvvetin skaler çarpımı sıfırdır. Bu geometrik kontrol 0 J sonucuyla uyumludur."
+    }
+  },
+  {
+    "id": "ns-energy-3",
+    "identity": "[\"ns-energy-3\",\"3 kg cisim yerden 12 m yükseklikte durgun bırakılıyor. Hava direnci yok, g=10 m/s² ve yerde U=0. Cisim 4 m yükseklikteyken kinetik enerjisi kaç jouledür?\",\"\",[\"120\",\"360\",\"40\",\"480\",\"240\"],4,\"Başlangıç mekanik enerjisi 3×10×12=360 J’dir. 4 m’de U=3×10×4=120 J; direnç olmadığı için K=360−120=240 J olur. 360=120+240 ile kontrol edilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yere yakın sabit g modelinde çekim potansiyel enerjisi seçilen referansa göre U=mgh’dir. Başlangıçta durgun cismin kinetik enerjisi sıfırdır; serbest düşüşte yalnız çekim etkisi izlenip direnç dışlanınca K+U korunur.",
+        "Düşülen yükseklik, ilk ve son yükseklik farkıdır. Cisim henüz yere ulaşmadıysa kalan çekim potansiyel enerjisi bütçeden çıkarılmalıdır."
+      ],
+      "strategy": "Başlangıçtaki durgunluk bilgisini kullanarak mekanik enerji bütçesini kur. Verilen ara yükseklikte kalan potansiyel enerjiyi hesaplayıp kinetik payı farktan bul; yalnız son yüksekliği düşülen mesafe sanma.",
+      "steps": [
+        "Başlangıçta K₀=0, U₀=3×10×12=360 J olur. Bu düşüş modelinde başlangıç mekanik enerji toplamı 360 J’dir.",
+        "Cisim 4 m yüksekliğe geldiğinde hâlâ U=3×10×4=120 J çekim potansiyel enerjisi taşır. Başlangıçtan 12−4=8 m alçalmıştır.",
+        "Direnç olmadığından K+120=360 yazılır; K=240 J bulunur. Aynı sonuç m g(12−4)=3×10×8 ile de elde edilir."
+      ],
+      "optionReasons": [
+        "120 J, cismin 4 m’de kalan potansiyel enerjisidir. Soru bu enerji payını değil kinetik enerjiyi istiyor.",
+        "360 J, başlangıç mekanik enerji toplamıdır. Bunun tümü ancak seçilen U=0 düzeyinde kinetiğe dönüşür; 4 m’de 120 J potansiyel hâlâ vardır.",
+        "40=10×4, kütleyi dışarıda bırakan g h hesabıdır. Birimi m²/s² olur; 3 kg’lık cismin joule cinsinden kinetik enerjisi değildir.",
+        "480=360+120, başlangıç bütçesine son potansiyeli ekler. Kalan potansiyel bütçeden çıkarılmalı; enerji iki kez sayılmamalıdır.",
+        "Doğru. 360 J toplamın 120 J’ü potansiyel olarak kalır; 240 J’ü kinetiktir."
+      ],
+      "commonError": "Son yüksekliği düşülen yükseklik yerine kullanmak veya cisim yere ulaşmadan başlangıç potansiyelinin tamamını kinetik saymak.",
+      "check": "240+120=360 J enerji bütçesi kapanır. Ayrıca 240 J pozitiftir ve başlangıç toplamından küçüktür; ara yükseklikte hem kinetik hem potansiyel bulunmasıyla uyumludur."
+    }
+  },
+  {
+    "id": "ns-energy-4",
+    "identity": "[\"ns-energy-4\",\"Başlangıçta mekanik enerjisi 200 J olan bir sistemde mekanik enerji yalnız kinetik enerji ile yerçekimi potansiyel enerjisinin toplamıdır. Mekanik enerjinin 40 J kadarı iç enerjiye aktarılır; mekanik enerjiyi değiştiren başka bir aktarım yoktur. Son yerçekimi potansiyel enerjisi 60 J ise son kinetik enerji nedir?\",\"\",[\"200 J\",\"140 J\",\"100 J\",\"60 J\",\"40 J\"],2,\"200=60+K+40 olduğundan K=100 J’dir. Mekanik enerjinin bir bölümünün iç enerjiye aktarılması, enerjinin yok olması demek değildir; doğru sistem sınırında bütün katkılar toplanır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bu modelde mekanik enerji yalnız K+U olarak, yani kinetik ile yerçekimi potansiyelinin toplamı olarak verilmiştir. Mekanik enerjiden iç enerjiye bir aktarım olduğunda mekanik bütçe bu aktarım kadar azalır.",
+        "İç enerjiye aktarılan miktar bir enerji değişimidir; son iç enerjinin bütün değeri olduğu varsayılmaz. Başlangıç mekanik bütçesi ve ondan ayrılan pay biliniyorsa son K+U, başlangıç iç enerjisi bilinmeden bulunabilir."
+      ],
+      "strategy": "Önce başlangıç mekanik bütçesinden başka enerji türüne ayrılan payı çıkar. Kalan mekanik toplamı son potansiyel ve kinetik olarak ayır; iç enerjiye aktarılan payı ikinci kez eksiltmeden bütçeyi kapat.",
+      "steps": [
+        "Başlangıç mekanik enerji 200 J’dir. Bunun 40 J’ü iç enerjiye aktarılmış ve mekanik enerjiyi değiştiren başka aktarım olmadığı açıkça verilmiştir.",
+        "Son mekanik enerji 200−40=160 J olur. Bu toplamın 60 J’ü yerçekimi potansiyeli olduğundan K+60=160 bağıntısı kurulur.",
+        "K=160−60=100 J bulunur. İç enerjiye giden 40 J yok olmamıştır; başlangıç mekanik bütçesinden ayrılan ayrı pay olarak izlenir."
+      ],
+      "optionReasons": [
+        "200 J başlangıç mekanik bütçesidir. Hem iç enerjiye ayrılan 40 J hem son durumda potansiyelde kalan 60 J kinetik paydan ayrılmalıdır.",
+        "140=200−60, yalnız son potansiyeli çıkarır. Mekanik enerjiden iç enerjiye aktarılan 40 J hesaba katılmamıştır.",
+        "Doğru. Son mekanik enerji 160 J, bunun potansiyel payı 60 J olduğundan kinetik pay 100 J’dir.",
+        "60 J son yerçekimi potansiyel enerjisidir. Kinetik ile potansiyel farklı paylardır; bu değeri doğrudan kinetik diye okumak bütçeyi kapatmaz.",
+        "40 J iç enerjiye aktarılan miktardır. Son kinetik enerji bu aktarımın kendisi değil, mekanik bütçeden aktarım ve son potansiyel ayrıldıktan sonra kalan paydır."
+      ],
+      "commonError": "Başlangıç mekanik enerjiyle son kinetik enerjiyi eşitlemek; ayrıca iç enerjiye aktarılan 40 J’ü son iç enerjinin tamamı veya son kinetik pay sanmak.",
+      "check": "Son mekanik toplam 100+60=160 J’dir. Başlangıç mekanik bütçesi 160+40=200 J olarak geri kurulur; 40 J bir aktarım payıdır, başlangıç iç enerjisini sıfır varsaymaya gerek yoktur."
+    }
+  },
+  {
+    "id": "ns-energy-5",
+    "identity": "[\"ns-energy-5\",\"Bir motor 60 saniyede 1800 J yararlı iş yapıyor. Bu aralıktaki ortalama yararlı gücü nedir?\",\"\",[\"30 W\",\"108000 W\",\"1800 W\",\"0,033 W\",\"60 J\"],0,\"P=W/Δt=1800/60=30 W bulunur. Joule iş/enerji, watt güç birimidir. Aynı işi daha kısa sürede yapmak daha büyük ortalama güç gerektirir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ortalama güç, belirli sürede yapılan işin veya aktarılan enerjinin o süreye oranıdır. Birim dönüşümü 1 W=1 J/s’dir; watt enerji değil güç birimidir.",
+        "Yararlı güç soruluyorsa paya yararlı iş yazılır. Verilen yararlı işten giriş gücü veya verim ayrıca bulunamaz; bunun için giriş enerjisi gibi ek veri gerekir."
+      ],
+      "strategy": "Verilen yararlı işi ve bu işin yapıldığı süreyi aynı zaman aralığında eşleştir. İş/süre oranını kur, birimini güce çevir ve sonucu süreyle çarparak iş değerine geri dön.",
+      "steps": [
+        "Motorun yararlı işi 1800 J, bu işin yapıldığı süre 60 s’dir. Aranan nicelik bu aralığın ortalama yararlı gücüdür.",
+        "P_yararlı=W_yararlı/Δt=1800 J/60 s oranını kur. Süre zaten saniye olduğu için ek dakika–saniye dönüşümü yapılmaz.",
+        "1800/60=30 ve J/s=W olduğundan ortalama yararlı güç 30 W’tır. Bu ortalama, anlık gücün her an aynı olduğunun ayrıca verilmesi anlamına gelmez."
+      ],
+      "optionReasons": [
+        "Doğru. 1800 J/60 s=30 J/s=30 W ortalama yararlı güçtür.",
+        "108000=1800×60, enerjiyle süreyi çarpar. Birimi J·s olur; güç için J/s gerektiğinden işlem ters seçilmiştir.",
+        "1800, yapılan yararlı işin joule cinsinden değeridir. Süreye bölünmeden watt birimiyle yazılamaz.",
+        "0,033 yaklaşık 60/1800 oranıdır. Süre/iş, istenen iş/sürenin tersidir ve s/J birimi taşır.",
+        "60, verilen sürenin sayı değeridir. Saniye cinsinden süreyi joule diye etiketlemek ne enerji ne de ortalama güç hesabı verir."
+      ],
+      "commonError": "İşi güç sanmak, iş ile süreyi çarpmak veya ortalama yararlı gücü giriş gücüyle aynı kabul etmek.",
+      "check": "30 W×60 s=1800 J yararlı iş geri bulunur. Aynı 1800 J iş daha kısa sürede yapılsaydı iş/süre oranı büyürdü; güç tanımının yönü de denetlenir."
+    }
+  }
+]

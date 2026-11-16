@@ -113,6 +113,11 @@ function Figure({
 // Model prose is short enough for the large mobile text setting; the guide keeps full terms.
 const modelText = (s: string) =>
   s
+    .replace(
+      "Okuma=gerçek×ölçek çarpanı+sabit kayma+verilen küçük sapma.",
+      "Okuma = gerçek × ölçek çarpanı + sabit kayma + verilen küçük sapma.",
+    )
+    .replace("Q=m_buhar·L", "Q = m_buhar · L")
     .replace("canlılık tartışmasını", "canlı sayma kararını")
     .replace(
       "Olgun memeli alyuvarının çekirdeksizliği organizmanın prokaryot olduğu anlamına gelmez; bu hücre glikolizle ATP sağlayabilir fakat kendi ribozomuyla yeni protein sentezleyemez.",
@@ -625,7 +630,7 @@ export function Forge026BiologyALab({ lessonId }: { lessonId: string }) {
           {number("Alıma uygun P (mg)", "pStock", 0, 120)}
           {number("Alıma uygun Mg (mg)", "mgStock", 0, 120)}
         </div>
-        <Figure title="Mineral kapasitesi. Sütun yüksekliği aynı doğrusal eksende stok/gereksinim oranıdır; ham mg değildir.">
+        <Figure title="Mineral kapasitesi. Sütun yüksekliği aynı doğrusal eksende stok / gereksinim oranıdır; ham mg değildir.">
           <path d="M30 35 V195 H245" className="b026-axis" />
           {r.rows.map((row, i) => (
             <g key={row.id}>

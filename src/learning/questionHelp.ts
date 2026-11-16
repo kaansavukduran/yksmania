@@ -1,5 +1,13 @@
 import { clarifiedQuestionView } from "../domain/questionPresentation";
 import curated from "./questionHelpCatalogue.json";
+import guidance027Math from "./guidance027Math.json";
+import guidance027Physics from "./guidance027Physics.json";
+import guidance027Chemistry from "./guidance027Chemistry.json";
+import guidance027BiologyA from "./guidance027BiologyA.json";
+import guidance027BiologyB from "./guidance027BiologyB.json";
+import guidance027BiologyC from "./guidance027BiologyC.json";
+import guidance027HistoryA from "./guidance027HistoryA.json";
+import guidance027HistoryB from "./guidance027HistoryB.json";
 import {
   questionIdentity,
   type HelpQuestion,
@@ -15,8 +23,20 @@ type CatalogueRow = {
   guidance: QuestionGuidance;
   legacyPanelCount?: number;
 };
+// These accepted cards previously exposed one hint and then the full solution.
+// Keep that old numbering only for snapshots without their own inline guide.
+const expandedLegacyRows: CatalogueRow[] = [
+  ...guidance027Math,
+  ...guidance027Physics,
+  ...guidance027Chemistry,
+  ...guidance027BiologyA,
+  ...guidance027BiologyB,
+  ...guidance027BiologyC,
+  ...guidance027HistoryA,
+  ...guidance027HistoryB,
+].map((row) => ({ ...row, legacyPanelCount: 1 }));
 const catalogue = new Map<string, CatalogueRow>(
-  curated.map((row) => [row.id, row]),
+  [...curated, ...expandedLegacyRows].map((row) => [row.id, row]),
 );
 function matchingRow(question: HelpQuestion) {
   const view = clarifiedQuestionView(question);

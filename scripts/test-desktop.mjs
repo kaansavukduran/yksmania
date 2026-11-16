@@ -288,7 +288,7 @@ try {
     await page
       .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
       .fill(unit.title);
-    await page.locator(".ready-topic").filter({ hasText: unit.title }).click();
+    await page.locator(`.ready-topic[data-lesson-id="${unit.id}"]`).click();
     const lab = page.locator(`[data-forge093="${unit.id}"]`);
     await expect(lab).toBeVisible();
     await unit.act(lab);
@@ -579,7 +579,7 @@ try {
     await page
       .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
       .fill(unit.title);
-    await page.locator(".ready-topic").filter({ hasText: unit.title }).click();
+    await page.locator(`.ready-topic[data-lesson-id="${unit.id}"]`).click();
     const lab = page.locator(unit.selector || `[data-forge011="${unit.id}"]`);
     await expect(lab).toBeVisible();
     await expect(lab.locator(unit.model).first()).toBeVisible();
@@ -1103,20 +1103,23 @@ try {
   const beforeFoundation = await foundationState();
   expect(beforeFoundation.draft).toBeNull();
   const learningBeforeFoundation = foundationLearning(beforeFoundation);
-  const openFoundation = async (title) => {
+  const openFoundation = async (id, title) => {
     await navigate("Sorular");
     await page.getByRole("button", { name: "TYT", exact: true }).click();
     await page
       .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
       .fill(title);
-    const entry = page.locator(".ready-topic").filter({ hasText: title });
+    const entry = page.locator(`.ready-topic[data-lesson-id="${id}"]`);
     await expect(entry).toHaveCount(1);
     await entry.click();
   };
   // Keep the same real Electron process/profile for both new banks and all old
   // flows. Cancellation and confirmation use the application dialog, without a
   // native dialog stub or an IDB seed.
-  await openFoundation("Sayı basamakları: rakamdan koşullu denkleme");
+  await openFoundation(
+    "sayi-basamaklari",
+    "Sayı basamakları: rakamdan koşullu denkleme",
+  );
   await expect(page.locator(".question-panel h2")).toHaveText(
     "Onluk sayı sisteminde 64027 sayısındaki 4 rakamının basamak değeri kaçtır?",
   );
@@ -1147,7 +1150,7 @@ try {
   expect(await foundationState()).toEqual(beforeMathReload);
   foundationRouteCases.push("sayi-basamaklari");
   const historyTitle = "Tarih ve zaman: kanıtı sıraya koy";
-  await openFoundation(historyTitle);
+  await openFoundation("tarih-zaman", historyTitle);
   const replacement = page.getByRole("dialog", {
     name: "Yarım kalan çalışmayı değiştirelim mi?",
     exact: true,
@@ -1174,12 +1177,12 @@ try {
   await expect(
     page.getByRole("textbox", { name: "Notun", exact: true }),
   ).toHaveValue(beforeMathReload.draft.note);
-  await openFoundation(historyTitle);
+  await openFoundation("tarih-zaman", historyTitle);
   await expect(replacement).toBeVisible();
   await page.keyboard.press("Escape");
   await expect(replacement).not.toBeVisible();
   expect(await foundationState()).toEqual(beforeMathReload);
-  await openFoundation(historyTitle);
+  await openFoundation("tarih-zaman", historyTitle);
   await expect(replacement).toBeVisible();
   await replacement
     .getByRole("button", { name: "Yeni çalışmayı aç", exact: true })

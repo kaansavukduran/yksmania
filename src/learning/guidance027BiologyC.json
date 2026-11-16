@@ -1,0 +1,482 @@
+[
+  {
+    "id": "ns-protein-1",
+    "identity": "[\"ns-protein-1\",\"Toplam 12 amino asit, birbirinden ayrı iki halkasız polipeptit zinciri oluşturuyor. Zincirlerin içinde toplam kaç peptit bağı vardır?\",\"\",[\"12\",\"10\",\"11\",\"14\",\"24\"],1,\"Toplam bağ sayısı amino asit sayısından ayrı zincir sayısının çıkarılmasıyla bulunur: 12−2=10. 11 bağı veren n−1 kuralı bu 12 birimin tek zincir oluşturması durumuna aittir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Açık, halkasız bir polipeptitte n amino asit birimi arasında n−1 peptit bağı bulunur. Birden çok ayrı zincirde her zincir kendi bir eksik bağlantısını taşır; toplam N birim ve k ayrı zincir için bağ sayısı N−k olur. Katlanma bir zinciri yeni zincirlere ayırmaz."
+      ],
+      "strategy": "Her ayrı zincirin bir eksik bağ içerdiğini önce kendi uzunluğuyla ifade et; toplam amino asit sayısını ve zincir adedini kullanarak bu eksikleri birlikte say, zincir uzunluklarını eşit varsayma.",
+      "steps": [
+        "İki zincirin uzunluklarına a ve b dersek a+b=12’dir. Zincirlerin ayrı ve halkasız olması her birinde kendi bir eksik bağ kuralını kullanmayı sağlar.",
+        "Bağ toplamı (a−1)+(b−1)=a+b−2 olur. Toplam birim sayısı yerine 12 yazılınca 12−2=10 bulunur.",
+        "Toplam 10 peptit bağı vardır. Zincirlerin altışar birim olması gerekmez; örneğin 5 ve 7 birimli iki zincirde de 4+6=10 bağ çıkar."
+      ],
+      "optionReasons": [
+        "12, toplam amino asit adedidir. Her ayrı açık zincirde uçlar nedeniyle bir eksik bağlantı bulunduğu için bağ adedi bu toplamdan iki azdır.",
+        "Doğru. İki ayrı halkasız zincirde toplam bağ 12−2=10’dur; her zincirin bir eksik bağlantısı hesaba katılmıştır.",
+        "11=12−1 bütün amino asitler tek bir açık zincirde olsaydı doğru olurdu. Kart iki ayrı zincir verdiğinden bir bağlantı fazla sayılmıştır.",
+        "14, zincir sayısını amino asit toplamına eklemektir. Ayrı zincir sayısı arttıkça ek bağ gelmez; aynı toplam birim daha az bağlantıyla tutulur.",
+        "24, birim sayısını ikiyle çarpmaktır. İki zincir bulunması her amino asit için iki ayrı peptit bağı eklemek anlamına gelmez."
+      ],
+      "commonError": "Toplam on iki amino asidi tek zincir kabul edip n−1 uygulamak veya iki zincirin mutlaka eşit uzunlukta olduğunu varsaymak.",
+      "check": "5 ve 7 gibi eşit olmayan iki uzunluk seçip bağları ayrı say: (5−1)+(7−1)=10. Sonuç yalnız toplam birim ve ayrı zincir sayısına bağlıdır."
+    }
+  },
+  {
+    "id": "ns-protein-2",
+    "identity": "[\"ns-protein-2\",\"Isı etkisiyle bir proteinin katlanması ve işlevi bozuluyor; polipeptit ana zincirinin peptit bağlarının tümü hidroliz olmuyor. Olay için hangi yorum uygundur?\",\"\",[\"Bütün amino asitler zorunlu olarak serbestleşmiştir.\",\"Protein artık hiç amino asit içermez.\",\"Olay her durumda DNA’nın değişmesidir.\",\"Protein kesinlikle eski yapısına kendiliğinden döner.\",\"Denatürasyon gerçekleşmiş olabilir; bu, tam hidrolizle aynı değildir.\"],4,\"Denatürasyon katlanma düzenini ve işlevi bozabilir. Proteinin bütün peptit bağları koparak serbest amino asitlere ayrılması farklı bir olay olan hidrolizdir. Geri dönüş de her protein için garanti değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Denatürasyon proteinin doğal katlanma düzenini ve işlevini bozabilir; tam peptit hidrolizi ise omurgadaki bağları su kullanarak ayırıp serbest amino asitler oluşturur. İşlev kaybı, bütün bağların ayrıldığı veya proteinin hiç amino asit içermediği anlamına gelmez."
+      ],
+      "strategy": "Verilenleri katlanma, işlev ve peptit omurgası için ayrı değerlendir; “bütün bağlar ayrılmadı” bilgisini “hiç bağ ayrılmadı” biçiminde güçlendirmeden tam hidroliz iddialarını ele.",
+      "steps": [
+        "Katlanma ve işlevin bozulduğu açıkça belirtilmiştir. Bu gözlemler denatürasyonla uyumlu olabilir.",
+        "Peptit bağlarının tümünün hidroliz olmadığı da veriliyor; dolayısıyla bütün zincirin tam hidrolizle serbest amino asitlere ayrıldığı söylenemez. Kaç bağın ayrıldığı ayrıca verilmemiştir.",
+        "Uygun yorum denatürasyonun gerçekleşmiş olabileceği ve bunun tam hidrolizle aynı olmadığıdır. Geri dönüş, DNA değişimi veya bütün amino asitlerin serbestliği için ek veri yoktur."
+      ],
+      "optionReasons": [
+        "Bütün amino asitlerin serbestleşmesi tam peptit hidrolizi gerektirir. Kart bütün peptit bağlarının hidroliz olmadığını söylediği için bu zorunluluk kurulamaz.",
+        "Katlanmanın bozulması proteini oluşturan amino asitlerin yok olması değildir. Molekül düzeniyle yapı birimlerinin varlığı karıştırılmıştır.",
+        "Isıyla katlanma değişimi her durumda DNA dizisi değişimi anlamına gelmez. Bu kartta genetik madde değişimi ölçülmemiştir.",
+        "Bazı proteinler uygun koşulda yeniden katlanabilir, bazıları eski işlevine dönmeyebilir. Kart kesin ve kendiliğinden geri dönüş verisi içermez.",
+        "Doğru. Katlanma ve işlev bozulması denatürasyonla uyumludur; bütün peptit bağlarını ayıran tam hidrolizden farklı bir olaydır."
+      ],
+      "commonError": "İşlev kaybını bütün peptit bağlarının kopması sanmak veya yalnız bütün bağların kopmadığı bilgisinden hiçbir bağın ayrılmadığı sonucunu uydurmak.",
+      "check": "Yanıtı iki koşula geri uygula: düzen/işlev bozulmalı, fakat tam peptit hidrolizi varsayılmamalıdır. Kesin geri dönüş veya DNA değişimi eklemeyen ifade bu sınırı korur."
+    }
+  },
+  {
+    "id": "ns-protein-3",
+    "identity": "[\"ns-protein-3\",\"İki polipeptidin amino asit sayıları ve içerdikleri amino asit çeşitleri aynıdır; fakat bu amino asitlerin dizilişi farklıdır. Hangi çıkarım doğrudur?\",\"\",[\"İki polipeptidin kimliği kesinlikle aynıdır.\",\"Amino asit sırası protein işlevi üzerinde hiçbir etki yapmaz.\",\"Aynı sayıda ve çeşitte birim olması aynı diziyi ve işlevi garanti etmez.\",\"İkisinde de peptit bağı bulunamaz.\",\"Her ikisi mutlaka aynı enzimdir.\"],2,\"Amino asit dizisi katlanma ve işlevle ilişkilidir. Aynı tür ve sayıda birim farklı sırayla bağlanabildiği için aynı protein veya aynı işlev sonucu yalnız bu bilgilerle kurulamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir polipeptidin birincil yapısı amino asit sırasıdır. Toplam birim sayısı ve içerilen türler aynı olsa bile sıra farklı olabilir. Dizi katlanmayı ve işlevi etkileyebilir; ancak yalnız bir dizi farkından işlevin kesin hangi yönde değişeceği çıkarılamaz."
+      ],
+      "strategy": "Bileşim bilgisini konum bilgisinden ayır; aynı türlerin farklı sırada bulunabildiğini kısa bir dizi karşılaştırmasıyla düşün ve seçeneklerdeki kesin özdeşlik iddialarını sınayarak ilerle.",
+      "steps": [
+        "Kart toplam amino asit sayısı ile içerilen çeşitlerin aynı, dizilişin farklı olduğunu verir. Bu bilgiler birbirine aykırı değildir.",
+        "Örneğin A–A–B ile A–B–A aynı tür ve adetleri içerip farklı sıraya sahip olabilir. Gerçek karttaki ayrım da sıra bilgisinin ayrıca gerekli olduğunu gösterir.",
+        "Aynı sayı ve çeşit, aynı dizi veya işlevi garanti etmez. Bundan işlevin mutlaka bütünüyle farklı olduğu veya hiç peptit bağı bulunmadığı gibi ters kesinlikler de çıkmaz."
+      ],
+      "optionReasons": [
+        "Dizilişlerin farklı olduğu açıkça verilirken kimliğin kesin aynı olduğu söylenemez. Ortak tür ve sayı sıra farkını ortadan kaldırmaz.",
+        "Amino asit sırası katlanma ve işlevi etkileyebilir. Hiç etkisinin olmadığını söylemek yapı–işlev ilişkisini koşulsuz reddeder.",
+        "Doğru. Aynı sayı ve çeşit bilgisi aynı sırayı veya aynı işlevi zorunlu kılmaz; kartın açık sıra farkını koruyan yorum budur.",
+        "Polipeptitlerin amino asitleri peptit bağlarıyla bağlantılıdır. Sıra farkı bu bağların iki yapıda da bulunamayacağını göstermez.",
+        "Proteinlerin bütününün enzim olması gerekmez; ayrıca ortak sayı ve çeşit iki farklı diziyi zorunlu olarak aynı enzim yapmaz."
+      ],
+      "commonError": "Tür listesinin ve toplam sayının aynı olmasını konum sırasının da aynı olması sanmak; bunun tersine her sıra farkından kesin tam işlev kaybı çıkarmak.",
+      "check": "Aynı üç harfi iki farklı sırada yazabildiğini kontrol et. Bu karşılaştırma aynı bileşimin aynı diziyi garanti etmediğini gösterir; hangi gerçek işlevin oluştuğunu tek başına belirlemez."
+    }
+  },
+  {
+    "id": "ns-protein-4",
+    "identity": "[\"ns-protein-4\",\"Aşağıdaki protein–görev eşleştirmelerinden hangisi doğrudur?\",\"\",[\"Hemoglobin — oksijen taşınmasıyla ilişki\",\"Keratin — temel olarak DNA bilgisinin eşlenmesi\",\"Antikor — yalnız kasılmanın mekanik kuvveti\",\"Aktin–miyozin — nişasta deposu\",\"Bütün proteinler — yalnız enerji depolama\"],0,\"Hemoglobin oksijen taşınmasıyla ilişkilidir. Keratin yapısal, antikor savunmayla, aktin–miyozin hareketle ilişkilidir. Proteinler tek bir enerji deposu işlevine indirgenemez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Proteinler farklı görevler alır. Hemoglobin oksijen taşınmasıyla, keratin doku yapısıyla, antikorlar savunmada tanımayla, aktin ve miyozin ise hareketle ilişkilidir. Protein sınıfına ait olmak bütün üyelerin tek işlevli veya aynı görevli olması demek değildir."
+      ],
+      "strategy": "Her protein adını yaptığı iş fiiliyle eşleştir; seçeneklerde proteinlere başka molekül sınıflarının depo veya bilgi görevlerinin aktarılıp aktarılmadığını ayrı ayrı incele.",
+      "steps": [
+        "Hemoglobinin temel okul örneği oksijen taşınmasıyla ilişkili roldür. Bu eşleme verilen seçeneklerdeki taşıma görevini karşılar.",
+        "Keratin yapısal, antikor savunmayla, aktin–miyozin hareketle ilişkilidir; bunlara sırasıyla DNA eşlenmesi, yalnız kasılma veya nişasta deposu atamak uygun değildir.",
+        "Doğru eşleştirme hemoglobin–oksijen taşınmasıdır. Proteinlerin enerji için kullanılabilmesi bütün proteinlerin yalnız enerji deposu olduğunu göstermez."
+      ],
+      "optionReasons": [
+        "Doğru. Hemoglobin oksijen taşınmasında görevli protein örneğidir; ad ve görev doğru ilişkilendirilmiştir.",
+        "Keratin yapısal protein örneğidir; temel görevi DNA bilgisinin eşlenmesi değildir. Protein adı doğru bir görevle eşleştirilmemiştir.",
+        "Antikorlar savunmada belirli molekülleri tanımayla ilişkilidir. Yalnız mekanik kasılma kuvveti aktin–miyozin bağlamıyla karıştırılmıştır.",
+        "Aktin ve miyozin hareket/kasılma proteinleridir. Nişasta ise depo polisakkaritidir; protein göreviyle karbonhidrat deposu karıştırılmıştır.",
+        "Verilen proteinler taşıma, yapı, savunma ve hareket gibi farklı roller taşır. Hepsini yalnız enerji depolamaya indirgemek bu çeşitliliği yok sayar."
+      ],
+      "commonError": "Proteinlerin hepsine aynı görevi vermek veya protein adını doğru hatırlayıp onu DNA, nişasta deposu ya da başka bir proteinin işiyle eşleştirmek.",
+      "check": "Diğer adların doğru rollerini de kısa olarak söyle: keratin–yapı, antikor–savunma, aktin/miyozin–hareket. Bu ağ içinde hemoglobinin taşıma eşleşmesi tutarlı kalmalıdır."
+    }
+  },
+  {
+    "id": "ns-protein-5",
+    "identity": "[\"ns-protein-5\",\"Bir hücrede yapısal proteinler, taşıyıcı proteinler ve protein yapılı enzimler birlikte bulunuyor. Hangi genelleme bu bilgilerle çelişir?\",\"\",[\"Bazı proteinler taşıma yapar.\",\"Bazı proteinler yapıya katılır.\",\"Protein işlevinde katlanma önem taşıyabilir.\",\"Her protein mutlaka enzimdir.\",\"Proteinler farklı görevler üstlenebilir.\"],3,\"Taşıyıcı ve yapısal proteinlerin de bulunması, her proteinin enzim olduğu iddiasını geçersiz kılar. Protein yapılı enzimler proteinlerin bir bölümüdür; bütün proteinler aynı görevde değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Protein, amino asit temelli geniş bir molekül sınıfıdır. Protein yapılı enzimler bu sınıfın kataliz görevi gören bir bölümüdür; yapısal ve taşıyıcı proteinler de bulunur. Katlanma, farklı görevlerde bağlanma veya dayanıklılık gibi özellikleri etkileyebilir."
+      ],
+      "strategy": "Genel sınıf olan proteinle onun kataliz yapan alt grubunu ayır; “bazı” önermelerini verilen rol çeşitliliğiyle, “her” önermesini ise kapsamının bütün proteinlere uzanmasıyla denetle.",
+      "steps": [
+        "Kart bir hücrede yapı, taşıma ve enzim rolleriyle ilişkili proteinler bulunduğunu söylüyor. Protein işlevleri tek bir başlık altında toplanmıyor.",
+        "Enzimlik kataliz işlevidir; protein olmak her molekülün mutlaka bu görevi taşımasını gerektirmez. Yapısal protein örnekleri bu zorunluluğa karşıdır.",
+        "Çelişen genelleme “her protein mutlaka enzimdir” ifadesidir. Bazı proteinlerin taşıma veya yapıya katılması ve farklı roller bulunması bilgileri korunur."
+      ],
+      "optionReasons": [
+        "Taşıyıcı proteinlerin varlığı kartta verilmiştir; bazı proteinlerin taşıma yapması bu veriyle uyumludur.",
+        "Yapısal proteinler açıkça belirtilmiştir. Bazı proteinlerin yapıya katılması çelişen değil doğrudan desteklenen bir ifadedir.",
+        "Katlanmanın protein işlevinde önemli olabilmesi, taşıyıcı veya enzim gibi farklı rollere uyabilir. Kart bu yapı–işlev ilişkisini dışlamaz.",
+        "Doğru. Protein sınıfını yalnız enzimlerden oluşuyormuş gibi daraltır; bütün proteinlerin zorunlu katalizör olduğu genellemesi geçerli değildir.",
+        "Yapı, taşıma ve kataliz rollerinin birlikte verilmesi proteinlerin farklı görevler üstlenebilmesiyle uyumludur."
+      ],
+      "commonError": "“Enzimlerin çoğu protein yapılıdır” bilgisinin yönünü ters çevirip “her protein enzimdir” sonucunu zorunlu sanmak.",
+      "check": "Protein sınıfının içine enzim, taşıyıcı ve yapısal rol başlıklarını yerleştir. Bütün sınıfı tek alt başlıkla özdeşleştiren seçenek, karttaki görev çeşitliliğini daraltır."
+    }
+  },
+  {
+    "id": "ns-enzyme-1",
+    "identity": "[\"ns-enzyme-1\",\"Aynı başlangıç maddeleriyle aynı ürünlerin oluştuğu bir tepkime enzimle ve enzimsiz karşılaştırılıyor. Enzimin doğrudan etkisi için hangisi doğrudur?\",\"\",[\"Ürünlerle başlangıç arasındaki toplam enerji farkını zorunlu olarak sıfırlar.\",\"Enerjiyi yoktan üretir.\",\"Alternatif yol sağlayarak aktivasyon enerjisini düşürür.\",\"Tepkimenin her ürününü enzime dönüştürür.\",\"Denge miktarını yalnız kendisi her durumda artırır.\"],2,\"Enzim uygun koşullarda aktivasyon enerjisini düşüren alternatif yol sağlar. Başlangıç ile ürünlerin enerji farkını değiştirmez; enerjiyi yoktan üretmez ve denge konumunu yalnız kendi varlığıyla kaydırmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aktivasyon enerjisi belirli bir tepkime yolunda aşılması gereken enerji engelidir. Enzim daha düşük engelli alternatif bir yol sağlayabilir. Aynı koşullarda net tepkimenin başlangıç ve ürün enerji düzeylerini değiştirmez; katalizör dengeye ulaşma süresini etkileyebilir."
+      ],
+      "strategy": "Enerji çiziminde başlangıç, tepe ve ürün düzeylerini ayrı düşün; enzimin değiştirdiği yol engelini, uçlar arasındaki net farktan ve denge miktarından ayırarak seçenekleri karşılaştır.",
+      "steps": [
+        "Karşılaştırmada aynı başlangıç maddeleri aynı ürünlere dönüşmektedir. Enzimin yeni bir enerji kaynağı veya farklı bir ürün sınıfı yaratması verilmemiştir.",
+        "Enzim tepkime için daha düşük aktivasyon enerjili alternatif bir yol sağlar. Değişen, yolun aşılması gereken engelidir.",
+        "Doğru etki aktivasyon enerjisinin düşmesidir. Başlangıç–ürün enerji farkını sıfırlamak, yoktan enerji üretmek veya dengeyi tek başına kaydırmak aynı sonuç değildir."
+      ],
+      "optionReasons": [
+        "Başlangıç ile ürün arasındaki net enerji farkı enzim yüzünden zorunlu sıfırlanmaz. Aktivasyon engeliyle tepkimenin net enerji farkı karıştırılmıştır.",
+        "Enzim enerji yaratmaz; mevcut tepkime için daha düşük engelli bir yol sunar. Kataliz enerjinin yoktan üretimi değildir.",
+        "Doğru. Alternatif düşük engelli yol aktivasyon enerjisini azaltır; başlangıç ve ürünlerin net enerji düzeylerini değiştirmek gerekmez.",
+        "Ürünler enzime dönüşmek zorunda değildir. Enzim tepkimeyi kolaylaştıran katalizördür; her ürünü kendi molekülüne çevirme görevi yoktur.",
+        "Aynı koşullarda katalizör dengeye daha hızlı ulaşılmasını sağlayabilir; tek başına denge konumunu her durumda artırmaz."
+      ],
+      "commonError": "Enerji tepesinin alçalmasını başlangıç ve ürün arasındaki farkın da sıfırlanması sanmak veya katalizörü yeni enerji kaynağı kabul etmek.",
+      "check": "Hayalî iki yolda başlangıç ve ürün noktalarını aynı bırakıp yalnız tepeyi alçalt. Seçtiğin ifade bu çizimi açıklamalı; ürün düzeyini veya dengeyi değiştirmeyi gerektirmemelidir."
+    }
+  },
+  {
+    "id": "ns-enzyme-2",
+    "identity": "[\"ns-enzyme-2\",\"Bir enzimin miktarı ve diğer koşullar sabitken substrat artırılıyor. Başlangıç hızı önce artıyor, sonra üst sınıra yaklaşıyor. En uygun açıklama hangisidir?\",\"\",[\"Enzimlerin aktif bölgeleri doygunluğa yaklaşmaktadır.\",\"Daha çok substrat eklendikçe her koşulda doğrusal hız artışı zorunludur.\",\"Ürünler hiçbir zaman oluşmamıştır.\",\"Enzimlerin amino asitleri substrata dönüşmüştür.\",\"Bütün enzimlerin uygun pH’ı aynı olmuştur.\"],0,\"Sabit enzim miktarında substrat fazlası oluşunca aktif bölgeler dolu olabilir. Bu doygunluk, ek substratın aynı oranda yeni hız artışı sağlamamasını açıklar; modelin koşulları değiştirilirse sonuç yeniden incelenir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sabit etkin enzim miktarı belirli bir anda sınırlı sayıda aktif bölge sunar. Düşük substrat düzeylerinde ek substrat başlangıç hızını artırabilir; aktif bölgeler doygunluğa yaklaşınca ek substrat aynı oranda hız artışı sağlamaz. Hız ile toplam ürün miktarı farklı niceliklerdir."
+      ],
+      "strategy": "Grafiğin yatayını substrat, düşeyini başlangıç hızı olarak koru; değişmeyen enzim miktarının kapasitesini, substrat artışının ilk ve sonraki bölgelerdeki farklı etkisiyle ilişkilendir.",
+      "steps": [
+        "Enzim miktarı ve diğer koşullar sabittir; artırılan değişken substrattır. İlk bölgede substrat eklenmesi başlangıç hızını yükseltiyor.",
+        "Üst sınıra yaklaşılması, sınırlı aktif bölgelerin giderek dolu bulunmasıyla açıklanabilir. Bu durumda daha fazla substrat aynı oranda yeni etkin çevrim alanı sağlamaz.",
+        "En uygun açıklama aktif bölgelerin doygunluğa yaklaşmasıdır. Kart enzimlerin substrata dönüşmesini, ürünün hiç oluşmamasını veya ortak bir pH değişimini vermiyor."
+      ],
+      "optionReasons": [
+        "Doğru. Sabit enzim miktarında aktif bölgeler doygunluğa yaklaşınca substrat artışına rağmen başlangıç hızı üst sınıra yaklaşabilir.",
+        "Üst sınıra yaklaşan eğri, her koşulda doğrusal artış iddiasının tersini gösterir. Enzim kapasitesi sınırlı olduğunda ek substratın etkisi azalabilir.",
+        "Başlangıç hızının varlığı ürün oluşumuyla ilişkilidir. Üst sınıra yaklaşmak ürünün hiç oluşmadığı anlamına gelmez.",
+        "Enzimin amino asitleri substrata dönüşmüş olarak verilmemiştir. Doygunluk, katalizörün substrat hâline gelmesi değil aktif bölge kullanımının artmasıdır.",
+        "Kart bir enzimde substrat değişimini verir; pH sabit diğer koşullar kapsamındadır. Bütün enzimlerin uygun pH’larının eşitlendiğine dair veri yoktur."
+      ],
+      "commonError": "Substrat artışını sınırsız ve doğrusal başlangıç hızı artışı sanmak; sabit enzim miktarının aktif bölge kapasitesini hesaba katmamak.",
+      "check": "Seçtiğin açıklama hem ilk hız artışını hem sonraki yataylaşma eğilimini aynı sabit enzim miktarıyla açıklayabilmelidir. Doygunluk bu iki bölgeyi birlikte açıklar."
+    }
+  },
+  {
+    "id": "ns-enzyme-3",
+    "identity": "[\"ns-enzyme-3\",\"Bir protein enzimin düşük sıcaklıkta yavaş çalıştığı, uygun sıcaklığa dönünce etkinliğinin yeniden arttığı gözleniyor. Hangi yorum gereksiz bir kesinlik içerir?\",\"\",[\"Sıcaklık etkinliği etkilemiştir.\",\"Düşük sıcaklıkta tepkime hızı azalmıştır.\",\"Enzim uygun koşullarda yeniden daha hızlı çalışabilir.\",\"Düşük sıcaklık enzimin mutlaka geri dönüşsüz denatürasyonuna neden olmuştur.\",\"Hız azalmasıyla kalıcı yapı bozulması aynı olay sayılmamalıdır.\"],3,\"Düşük sıcaklıkta etkinliğin azalması zorunlu olarak geri dönüşsüz denatürasyon anlamına gelmez. Uygun sıcaklıkta etkinliğin geri gelmesi, bu kesin iddiayı desteklemez; koşula bağlı hız etkisi ayrı değerlendirilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sıcaklık enzimli tepkime hızını etkileyebilir. Düşük sıcaklıktaki yavaşlama, proteinin mutlaka geri dönüşsüz denatüre olduğu anlamına gelmez. Uygun sıcaklığa dönünce etkinliğin artması bu koşul etkisini değerlendirmeye yardım eder; tam eski etkinliğe dönüş ayrıca ölçülmelidir."
+      ],
+      "strategy": "İki sıcaklık aşamasını sırayla karşılaştır; doğrudan gözlenen hız değişimini, bu gözlemden daha güçlü olan kalıcı yapısal hasar iddiasından ayır ve kesinlik bildiren sözcükleri denetle.",
+      "steps": [
+        "Düşük sıcaklıkta yavaş çalışma doğrudan gözlenmiştir; bu, etkinliğin sıcaklıkla değişebildiğini gösterir.",
+        "Uygun sıcaklığa dönüldüğünde etkinlik yeniden artmıştır. Bu gözlemden zorunlu ve geri dönüşsüz denatürasyon sonucu çıkarılamaz.",
+        "Gereksiz kesinlik, düşük sıcaklığın mutlaka geri dönüşsüz denatürasyon yaptığı iddiasıdır. Kart bütün proteinlerde tam geri dönüş veya hiç hasar olmadığı gibi başka kesinlikler de vermez."
+      ],
+      "optionReasons": [
+        "Farklı sıcaklık aşamalarında etkinlik farklı gözlendiği için sıcaklığın etkinliği etkilemesi verilenle uyumludur; gereksiz kalıcı hasar iddiası kurmaz.",
+        "Düşük sıcaklıkta hızın azalması kartın doğrudan gözlemidir. Bunun kaydedilmesi, denatürasyonun zorunlu olduğunu söylemez.",
+        "Uygun koşullarda yeniden daha hızlı çalışma bu örnekte gözlenmiştir. “Çalışabilir” ifadesi geri dönüşü bütün proteinler için garanti etmez.",
+        "Doğru. “Mutlaka geri dönüşsüz” ifadesi hız gözleminden çıkarılamayan bir yapısal kesinlik ekler; uygun sıcaklıkta artış verisi bu yorumu gerektirmez.",
+        "Hız azalması ile kalıcı yapı bozulmasını aynı saymamak, kartın iki sıcaklık aşamasını doğru ayırır; verilen gözleme uygundur."
+      ],
+      "commonError": "Düşük hız gördüğünde hiçbir başka koşulu değerlendirmeden geri dönüşsüz denatürasyon tanısı koymak veya yeniden artışı tam eski yapıya dönüş kanıtı saymak.",
+      "check": "Ölçülen şey hız/etkinliktir. Seçeneğin buna ek olarak “mutlaka kalıcı” yapı sonucu kurup kurmadığını kontrol et; kartta bu kesinliği sağlayan ayrı ölçüm yoktur."
+    }
+  },
+  {
+    "id": "ns-enzyme-4",
+    "identity": "[\"ns-enzyme-4\",\"Protein kısmı tek başına etkin olmayan bir enzim, gerekli organik yardımcıyla birlikte çalışıyor. Organik yardımcı için en uygun ad hangisidir?\",\"\",[\"Substratın tamamı\",\"İnorganik metal iyonu\",\"Polipeptitteki bütün amino asitler\",\"Tepkime ürünlerinin toplamı\",\"Koenzim\"],4,\"Organik yardımcı koenzim olarak adlandırılır. Metal iyonu gibi inorganik yardımcılar bu ayrımda kofaktör örneğidir. Protein kısmı ve gerekli yardımcı birlikte işlevsel bütünü oluşturabilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bazı enzimlerin protein kısmına ek bir yardımcı gerekir. Organik yardımcıya koenzim denir; metal iyonu gibi inorganik yardımcılar da bulunabilir. Yardımcı, enzimin etki ettiği substrat veya reaksiyondan çıkan ürünlerle aynı rolü taşımaz."
+      ],
+      "strategy": "Karttaki yardımcıyı önce kimyasal türüyle, sonra tepkimedeki rolüyle tanımla; organik olma bilgisini koruyarak substrat, protein zinciri ve ürün seçeneklerini ayır.",
+      "steps": [
+        "Protein kısmının tek başına etkin olmadığı, gerekli yardımcıyla çalıştığı verilmiştir. Aranan, protein kısmının değil bu ek bileşenin adıdır.",
+        "Yardımcının organik olduğu açıkça belirtilmiştir. Bu bilgi onu metal iyonu gibi inorganik yardımcı örneğinden ayırır.",
+        "Organik yardımcı için uygun ad koenzimdir. Bu enzimin gereksiniminden bütün enzimlerin aynı yardımcıyı kullanması veya bütün vitaminlerin koenzim olması sonucu çıkarılmaz."
+      ],
+      "optionReasons": [
+        "Substrat enzimin etki ettiği maddedir. Kartın gerekli organik yardımcı olarak adlandırdığı bileşen substratın tamamıyla özdeş değildir.",
+        "Metal iyonu inorganik yardımcı örneğidir; soruda organik yardımcı istendiği için kimyasal türü karşılamaz.",
+        "Amino asit dizisi protein kısmına aittir. Aranan, bu protein kısmına ek olarak gerekli organik bileşendir.",
+        "Ürünler reaksiyonla oluşan maddelerdir; gerekli yardımcı, bu ürünlerin toplamı olarak tanımlanmaz.",
+        "Doğru. Protein kısmıyla birlikte iş gören organik yardımcıya koenzim adı verilir; verilen iki nitelik bu özel adı karşılar."
+      ],
+      "commonError": "Enzimin bütün protein kısmını, substratı veya herhangi bir metal iyonunu organik yardımcıyla aynı bileşen sanmak.",
+      "check": "Yanıt hem “yardımcı” rolünü hem “organik” kimyasal türünü sağlamalıdır. Koenzim bu ikisini birleştirir; metal iyonu yalnız yardımcı rolüne uyabilir."
+    }
+  },
+  {
+    "id": "ns-enzyme-5",
+    "identity": "[\"ns-enzyme-5\",\"Bir enzim substratla etkileşiyor, ürün ayrılıyor ve aynı enzim yeni substratla yeniden çalışabiliyor. Bu gözlem hangi sonucu destekler?\",\"\",[\"Enzim bir kez çalıştıktan sonra mutlaka yok olur.\",\"Enzim bir kataliz çevriminde tüketilmeden yeniden kullanılabilir.\",\"Enzim molekülü hiçbir koşulda hasar göremez.\",\"Substrat ve enzim aynı moleküldür.\",\"Enzimin etkisi yalnız hücre içinde mümkündür.\"],1,\"Enzim kataliz çevriminde yeniden kullanılabilir. Bu özellik enzimin hiçbir zaman denatüre olmayacağı veya yenilenmeyeceği anlamına gelmez; hücreler enzimlerini sentezleyip yeniler.\"]",
+    "guidance": {
+      "knowledge": [
+        "Katalizör bir katalitik çevrimin sonunda tüketilmeden yeniden kullanılabilir. Enzimlerin bu özelliği, aynı molekülün zamanla hiç hasar görmeyeceği veya hiç yenilenmeyeceği anlamına gelmez. Bir çevrim ile molekülün bütün ömrü farklı zaman ölçekleridir."
+      ],
+      "strategy": "Substrat bağlanması, ürün ayrılması ve yeni substratla çalışmayı bir çevrim şeması olarak izle; yalnız bu tekrar kullanılabilirlik gözleminden çıkabilen sonucu seç, sonsuz dayanıklılık ekleme.",
+      "steps": [
+        "İlk substratla etkileşimden sonra ürün ayrılıyor. Enzim sonraki substratla yeniden çalışabildiği için ilk çevrimde zorunlu olarak yok olmamıştır.",
+        "Bu tekrar, enzimin kataliz çevriminde tüketilmeden kullanılabildiğini destekler. Substrat ve enzim aynı rol veya molekül değildir.",
+        "Doğru sonuç yeniden kullanılabilirliktir. Bu gözlem enzimin hiçbir koşulda bozulmayacağını veya yalnız hücre içinde çalışabileceğini göstermez."
+      ],
+      "optionReasons": [
+        "Aynı enzimin yeni substratla çalışabildiği açıkça belirtiliyor; ilk çalışmadan sonra mutlaka yok olduğu iddiası gözlemle çelişir.",
+        "Doğru. Ürün ayrıldıktan sonra yeni substratla yeniden çalışılması, enzimin bir kataliz çevriminde tüketilmeden kullanılabildiğini gösterir.",
+        "Bir çevrim sonunda yeniden kullanılmak, sıcaklık veya başka etkilerle hiçbir zaman hasar görmeme garantisi değildir; gözlemden ömür boyu dayanıklılık çıkarılamaz.",
+        "Substrat etki edilen madde, enzim katalizördür. Birbirleriyle etkileşmeleri aynı molekül olduklarını göstermez.",
+        "Kart çalışma yerini sınırlamıyor. Protein yapılı sindirim enzimleri hücre dışında da iş görebilir; çevrim gözlemi yalnız hücre içi zorunluluğu kurmaz."
+      ],
+      "commonError": "Çevrimde tüketilmeyen enzimin ölümsüz olduğunu sanmak veya enzim–substrat etkileşimini iki adın aynı molekülü göstermesi gibi okumak.",
+      "check": "İlk çevrimden sonra aynı enzimin bulunması yeniden kullanımı açıklar. Kartta aylarca dayanıklılık veya hücre içi yerleşim ölçülmediği için bu ek iddiaları seçmemelisin."
+    }
+  },
+  {
+    "id": "f012-foundation-vitaminler-1",
+    "identity": "[\"f012-foundation-vitaminler-1\",\"Aşağıdaki gruplardan hangisinin bütün üyeleri yağda çözünen vitaminlerdir?\",\"\",[\"A, D, E, K\",\"B1, B2, C, K\",\"A, B12, C, D\",\"B1, B6, B12, C\",\"C, D, E, B12\"],0,\"Temel çözünürlük sınıflamasında A,D,E,K yağda; B grubu ve C suda çözünen vitaminlerdir. Çözünürlük, enerji sağlayan yakıt olmak veya bütün moleküllerin aynı görevde olması anlamına gelmez. B grubu da tek bir molekül değil farklı vitaminler kümesidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Temel vitamin çözünürlük sınıflamasında A, D, E ve K yağda; B grubu üyeleri ve C suda çözünenlerdir. B grubu tek bir molekül değildir. Çözünürlük sınıfı aynı olan vitaminlerin görevleri ve depolanma davranışları bütünüyle aynı olmak zorunda değildir."
+      ],
+      "strategy": "Her seçenekteki üyeleri tek tek yağda/suda olarak etiketle; grubun tüm üyeleri istendiğinden bir tek suda çözünen üye bulunduğunda o seçeneği ele.",
+      "steps": [
+        "Yağda çözünen üyeler A, D, E ve K olarak belirlenir. B1, B2, B6, B12 ve C ise suda çözünen taraftadır.",
+        "Her grubun bütün üyelerini denetle: B veya C taşıyan gruplar yalnız yağda çözünenlerden oluşmaz. Tek bir karşı üye eleme için yeterlidir.",
+        "Yalnız A, D, E, K grubu dört yağda çözünen üye içerir. Bu sınıflama bu dört vitaminin aynı molekül veya aynı görevli olduğunu söylemez."
+      ],
+      "optionReasons": [
+        "Doğru. A, D, E ve K’nın dördü de temel sınıflamada yağda çözünen vitaminlerdir.",
+        "K yağda çözünse de B1, B2 ve C suda çözünenlerdir. Bir üyenin uyması bütün grubun koşulu sağladığını göstermez.",
+        "A ile D yağda, B12 ile C suda çözünür. Grup iki sınıfı karıştırdığı için bütün üyeleri yağda değildir.",
+        "B1, B6, B12 ve C suda çözünen gruptadır. Bu seçenek yağda çözünenlerin değil suda çözünen üyelerin listesidir.",
+        "D ve E yağda çözünür; C ve B12 suda çözünen üyelerdir. İki karşı üye grubun “bütün üyeler” koşulunu bozar."
+      ],
+      "commonError": "Bir grubun tek bir üyesini doğru görünce diğerlerini kontrol etmeden seçmek veya B12’nin depo istisnasını yağda çözünmesiyle karıştırmak.",
+      "check": "Seçtiğin listedeki her adı tek tek ADEK kümesine yerleştir. Listede B grubu üyesi veya C kalmadığını doğrulamak “bütün” koşulunu sınar."
+    }
+  },
+  {
+    "id": "f012-foundation-vitaminler-2",
+    "identity": "[\"f012-foundation-vitaminler-2\",\"B12 suda çözünen bir vitamin olmasına rağmen vücutta anlamlı depoları bulunabilir. Bu bilgi hangi iddiayı çürütür?\",\"\",[\"B12 vitamin sınıfındadır.\",\"Suda çözünen hiçbir vitamin hiçbir koşulda depolanamaz.\",\"Genel kuralın istisnaları olabilir.\",\"Çözünürlük ve depo miktarı farklı özelliklerdir.\",\"A,D,E,K yağda çözünen gruptadır.\"],1,\"B12 açık bir karşı örnektir; hiçbir ve hiçbir koşulda biçimindeki evrensel depo yasağını bozar. Genel emilim/atılım eğilimleri her vitaminin aynı depo davranışını göstereceği anlamına gelmez. Bu örnek belirli bir kişideki depo miktarını hesaplamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Çözünürlük hangi ortamda çözünmeyle, depolanma ise alınan maddenin vücutta tutulmasıyla ilgilidir. Genel depolama eğilimleri bütün üyeleri kapsayan yokluk yasası değildir. B12 suda çözünen bir vitamin olduğu hâlde anlamlı vücut depolarına sahip olabilir."
+      ],
+      "strategy": "Evrensel olumsuz iddiayı B12’nin verilen iki özelliğiyle doğrudan sınayarak ilerle; karşı örneğin hangi sözcükleri bozduğunu bul, öteki vitamin sınıflarına yeni sonuç taşıma.",
+      "steps": [
+        "Kart B12’nin hem suda çözünen hem de depolanabilen bir vitamin olduğunu açıkça veriyor. İki özellik aynı örnekte birlikte bulunuyor.",
+        "“Suda çözünen hiçbir vitamin hiçbir koşulda depolanamaz” iddiası B12 için de depoyu yasaklardı; verilen örnek bu yasağa karşıdır.",
+        "Çürütülen ifade bu evrensel depo yasağıdır. Tek B12 örneği bütün suda çözünen vitaminlerin aynı ölçüde depolandığını göstermez."
+      ],
+      "optionReasons": [
+        "B12’nin vitamin olması depolanabilmesiyle çelişmez. Kart bu sınıf bilgisini çürütmek yerine doğrudan kullanır.",
+        "Doğru. Suda çözünen B12’de depo bulunması, hiçbir suda çözünen vitaminin hiçbir koşulda depolanamayacağı iddiasına karşı örnektir.",
+        "Genel kurallarda istisna bulunabilmesi B12 örneğiyle uyumludur; bu düşünce çürütülen iddia değildir.",
+        "Çözünürlük ve depo miktarının ayrı özellikler olması, B12’de birlikte verilen iki niteliği açıklamaya uygundur.",
+        "A, D, E ve K’nın yağda çözünenler olması B12’nin depo davranışıyla çelişmez; ayrı vitaminler hakkında ayrı sınıflama bilgisidir."
+      ],
+      "commonError": "B12 için depo bilgisini görünce onu yağda çözünür sınıfa geçirmek veya tek istisnadan bütün B vitaminlerinin eşit depolandığını çıkarmak.",
+      "check": "Karşı örnek iki koşulu aynı anda sağlamalıdır: suda çözünme ve depolanabilme. B12 ikisini de taşıdığı için evrensel “hiçbir” yasağı tek başına bozulur."
+    }
+  },
+  {
+    "id": "f012-foundation-vitaminler-3",
+    "identity": "[\"f012-foundation-vitaminler-3\",\"Bir B vitamininden oluşan koenzim enzimli tepkimeye yardımcı oluyor. Vitaminin rolü için hangi ifade uygundur?\",\"\",[\"Her organik molekül zorunlu enerji yakıtıdır.\",\"Koenzim vitaminin inorganik mineral olduğunu kanıtlar.\",\"Tepkimeye yardımcı olması, vitaminin glikoz gibi kalori veren yakıt olduğu anlamına gelmez.\",\"Vitamin enzimin yerine her koşulda tek başına geçer.\",\"Vitaminin az miktarda gerekmesi hiç gerekmediğini gösterir.\"],2,\"Bir yardımcı grubun metabolik tepkimede görev alması ile enerji hammaddesi olarak parçalanması farklı rollerdir. Vitaminler insan beslenmesinde karbonhidrat veya yağ gibi enerji yakıtı kabul edilmez. Vitaminin organik sınıfta olması bu ayrımı ortadan kaldırmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bazı B vitaminleri organik yardımcı moleküllerin öncülü veya parçasıdır; bu yardımcılar metabolik dönüşümlerde görev alır. Bir tepkimeye katılmakla, glikoz veya yağ gibi enerji hammaddesi olarak kullanılıp kalori sağlamak farklı rollerdir."
+      ],
+      "strategy": "Tepkimede enerji hammaddesinin rolüyle yardımcı bileşenin rolünü ayrı etiketle; organik olmayı, gerekli olmayı ve doğrudan yakıt olmayı birbirine eşitlemeden seçenekleri karşılaştır.",
+      "steps": [
+        "Kart vitamin kökenli bir koenzimin tepkimeye yardımcı olduğunu söyler. Bu, kataliz düzeninde yardımcı rolü olduğunu verir.",
+        "Enerji hammaddesi ile bu dönüşümde görevli yardımcı aynı şey değildir. Vitaminin organik olması onu zorunlu olarak glikoz gibi kalorili yakıt yapmaz.",
+        "Bu nedenle tepkimeye yardımcı olmanın yakıt olmak anlamına gelmediği ifade seçilir. Yardımcının gerekliliği ve organik kimliği korunur."
+      ],
+      "optionReasons": [
+        "Bütün organik moleküller insan için enerji yakıtı sayılmaz. Vitaminin organik oluşundan kalori veren besin rolü zorunlu çıkmaz.",
+        "Vitamin ve ondan türeyen koenzim organik bağlamdadır. Yardımcı rol, bileşeni inorganik mineral olarak yeniden sınıflandırmaz.",
+        "Doğru. Metabolik tepkimeye katkı ile glikoz gibi enerji hammaddesi olmak ayrı rollerdir; vitaminin yardımı yakıt olduğunu kanıtlamaz.",
+        "Koenzim gerekli protein kısmını her koşulda tek başına değiştirmez. Bir yardımcıyı enzimin bütün görevlerini bağımsız yapan bileşen saymak yanlıştır.",
+        "Gereksinimin miktarı ile hiç gerekmemesi farklıdır. Az miktarda gerekli bir yardımcı, tepkime işleyişi için yine de önemli olabilir."
+      ],
+      "commonError": "Metabolizmada veya enerji dönüşümünde görevli her organik maddeyi doğrudan kalori veren yakıt saymak; yardımcının rolüyle hammaddenin rolünü karıştırmak.",
+      "check": "Seçtiğin ifade “yardım eder” bilgisini reddetmeden “yakıt olduğu kanıtlanır” sonucunu engellemelidir. Bu ayrım ne enzimi ne vitaminin gerekliliğini yok sayar."
+    }
+  },
+  {
+    "id": "f012-foundation-vitaminler-4",
+    "identity": "[\"f012-foundation-vitaminler-4\",\"Kökte C vitamininin kolajen yapımını desteklediği belirtiliyor. Hangi görevle ilişki kurmak en uygundur?\",\"\",[\"DNA’nın tek fosfat kaynağı olmak\",\"Trigliseritte üçüncü yağ asidinin yerini almak\",\"Kemiklerdeki tüm kalsiyum atomlarını sentezlemek\",\"Bağ dokusunun uygun yapı kazanmasına katkı\",\"Bütün hormonların aynı steroid yapısını oluşturmak\"],3,\"Kolajen bağ dokusunun önemli proteinlerindendir; kökteki yapım desteği bu dokunun uygun yapısına katkıyla ilişkilidir. Bir vitamin elementleri yoktan oluşturmaz, yağ asidi veya fosfatın rastgele yerine geçmez. Bu soru bir kişide tanı koyma amacı taşımaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kolajen bağ dokusunun önemli yapısal proteinlerindendir. C vitamini kolajen oluşumundaki bazı basamakları destekler. Yapısal bir proteinin uygun oluşumuna yardım etmek, vitaminin mineral atomu üretmesi veya yağ asidinin yerine geçmesi demek değildir."
+      ],
+      "strategy": "Soruda verilen vitamin–protein ilişkisini proteinin görev yaptığı dokuya bağla; yardımın hedefiyle vitaminin kendi kimliğini ayrı tutarak ilgisiz yapı ve element iddialarını ele.",
+      "steps": [
+        "Soruda C vitamininin kolajen yapımını desteklediği bilgisi vardır. Önce hedef molekülün kolajen olduğunu belirle.",
+        "Kolajen bağ dokusuyla ilişkili yapısal bir proteindir. Yapımına destek bu dokunun uygun yapı kazanmasına katkı olarak yorumlanabilir.",
+        "En uygun görev bağ dokusunun uygun yapı kazanmasına katkıdır. Bu sonuç C vitaminini fosfat, yağ asidi, kalsiyum elementi veya steroid yapıya dönüştürmez."
+      ],
+      "optionReasons": [
+        "DNA’nın fosfat yapısı ile kolajen yapımına katkı farklı konulardır. C vitamini DNA’nın tek fosfat kaynağı olarak tanımlanmamıştır.",
+        "Trigliseridin yağ asidi bileşeni ile C vitamininin kolajen yapımına katkısı aynı işlev değildir; vitamin yağ asidi yerine yerleşmiş sayılmaz.",
+        "Vitaminler kalsiyum atomlarını yoktan sentezlemez. Kolajen yapımına yardım, bütün kemik kalsiyumunu üretme iddiası vermez.",
+        "Doğru. Kolajen yapısal bağ doku proteini olduğundan onun uygun oluşumuna katkı, bağ dokusunun yapı kazanmasıyla ilişkilidir.",
+        "Bütün hormonlar steroid değildir; ayrıca kolajen protein yapısındadır. C vitamininin verilen rolünü bütün hormonların steroid yapısını kurmaya çevirmek yanlıştır."
+      ],
+      "commonError": "C vitamininin protein yapımına katkısını vitaminin o proteinin kendisi, bir mineral kaynağı veya başka molekülün rastgele yapı bileşeni olduğu şeklinde yorumlamak.",
+      "check": "İlişkiyi “C vitamini → kolajen oluşumuna katkı → bağ dokusu yapısı” diye izle. Her ok verilen görevle bağlantılı olmalı; araya element sentezi veya steroid hormon eklenmemelidir."
+    }
+  },
+  {
+    "id": "f012-foundation-vitaminler-5",
+    "identity": "[\"f012-foundation-vitaminler-5\",\"D vitamininin kalsiyum ve fosforun bağırsaktan emilmesi ve kemik mineralizasyonuyla ilişkisi veriliyor. Hangi çıkarım doğrudur?\",\"\",[\"D vitamini kalsiyumun başka adıdır.\",\"Kalsiyum organik vitamin hâline dönüşür.\",\"D vitamini yalnız enerji depolayan trigliserittir.\",\"Aynı süreçte görev alan tüm maddeler aynı moleküldür.\",\"D vitamini ile kalsiyum farklı bileşenler olarak aynı süreçte rol alabilir.\"],4,\"D vitamini organik düzenleyici, kalsiyum mineral elementtir. Bir süreçte birlikte gerekli olmak kimyasal özdeşlik göstermez. Bu örnek vitamin-mineral ilişkisini kurar; dışarıdan alınacak miktar veya kişisel tedavi önerisi üretmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "D vitamini organik bir düzenleyici bileşen, kalsiyum ise mineral elementtir. Aynı fizyolojik süreçte farklı kimyasal maddeler birlikte rol alabilir. D vitamininin emilim ve mineralizasyonla ilişkisi bu maddeleri kimyasal olarak özdeş yapmaz."
+      ],
+      "strategy": "Kartta birlikte görev alan maddelerin kimliklerini ayrı yaz; aynı sürece katkıyı “aynı molekül” ya da “biri ötekine dönüşür” iddiasından ayırarak sonuçları denetle.",
+      "steps": [
+        "Verilen süreç kalsiyum ve fosforun emilmesiyle kemik mineralizasyonudur. D vitamini bu işleyişle ilişkili bir bileşen olarak belirtiliyor.",
+        "D vitaminiyle kalsiyumun aynı süreçte bulunması, vitaminin kalsiyumun başka adı olması veya kalsiyumun vitamin molekülüne dönüşmesi değildir.",
+        "Farklı bileşenlerin aynı süreçte rol alabilmesi doğru çıkarımdır. Bu bilgi tek başına kişisel gereksinim miktarı veya kullanılacak doz vermez."
+      ],
+      "optionReasons": [
+        "D vitamini organik molekül, kalsiyum mineral elementtir; birbirlerinin başka adları değildir. Aynı işlevsel bağlam kimlik eşitliği kurmaz.",
+        "Kalsiyum emilime katılırken organik vitamin hâline dönüşmüş sayılmaz. Elementin alınmasıyla farklı bir molekülün düzenleyici rolü ayrıdır.",
+        "D vitamini trigliserit enerji deposu olarak sınıflandırılmaz. Verilen rol emilim ve mineralizasyon ilişkisini anlatır.",
+        "Aynı süreçte görev alma bütün maddelerin aynı molekül olduğu anlamına gelmez; farklı kimlikte bileşenler bir işleyişte birlikte gerekli olabilir.",
+        "Doğru. D vitamini ve kalsiyum farklı bileşenlerdir; bu farklılık aynı emilim/mineralizasyon sürecinde rol almalarını engellemez."
+      ],
+      "commonError": "Bir süreçte birlikte anılan vitamin ve minerali tek madde sanmak veya işlev ilişkisinden kimyasal dönüşüm sonucu çıkarmak.",
+      "check": "Yanıtta iki ayrı kimlik korunmalı: organik D vitamini ve mineral kalsiyum. Buna rağmen aynı süreçte katkı sunabilmeleri bir çelişki oluşturmamalıdır."
+    }
+  },
+  {
+    "id": "f012-foundation-vitaminler-6",
+    "identity": "[\"f012-foundation-vitaminler-6\",\"K vitamini kanın pıhtılaşmasında görevli bazı proteinlerin uygun işleviyle ilişkilidir. Hangi eşleştirme doğrudur?\",\"\",[\"K vitamini — pıhtılaşma süreçleri\",\"K vitamini — glikojenin tek monomeri\",\"K vitamini — DNA’nın pentoz şekeri\",\"K vitamini — bütün sinir uyarılarının elektrik yükü\",\"K vitamini — alyuvarın tek demir elementi\"],0,\"K vitamininin pıhtılaşma proteinleriyle ilişkisi temel okul eşleştirmesidir. Glikojenin monomeri glikoz, DNA şekeri deoksiribozdur; vitamin bunların veya demir elementinin yerini almaz. Bir süreçteki rol tüm süreçleri tek başına gerçekleştirmek anlamına gelmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "K vitamini bazı pıhtılaşma proteinlerinin işlev kazanmasına katkı verir; pıhtılaşma kan kaybının sınırlanmasıyla ilişkilidir. Bir vitamin bir sürece yardım eden bileşen olabilir; glikoz, DNA şekeri veya demir gibi farklı maddelerin yerine geçen ad değildir."
+      ],
+      "strategy": "Verilen işlevi pıhtılaşma başlığı altında tut; seçeneklerde vitaminin bir süreçle mi, yoksa ilgisiz bir yapı birimi veya elementle mi özdeşleştirildiğine bak.",
+      "steps": [
+        "Kart K vitaminini bazı pıhtılaşma proteinlerinin uygun işleviyle ilişkilendiriyor. Aranan eşleştirme bu verilen role dayanmalıdır.",
+        "Glikojenin monomeri glikoz, DNA’nın pentozu deoksiribozdur; bunlar K vitamininin başka isimleri değildir. Demir de mineral elementtir.",
+        "K vitamini–pıhtılaşma süreçleri eşleştirmesi seçilir. Bu ilişki K vitamininin bütün pıhtılaşmayı tek başına yaptığı veya her kanamanın tek nedenini belirlediği anlamına gelmez."
+      ],
+      "optionReasons": [
+        "Doğru. Kart K vitamininin pıhtılaşma proteinlerinin uygun işleviyle ilişkisini doğrudan verir; bu eşleştirme o kapsamı korur.",
+        "Glikojenin monomeri glikozdur. Bir vitaminin pıhtılaşmaya yardımı onu depo polisakkaritinin tek şeker birimi yapmaz.",
+        "DNA’nın pentozu deoksiribozdur; K vitamini DNA şekerinin yerine geçen madde veya onun başka adı değildir.",
+        "Sinir uyarılarındaki elektriksel değişimler iyonların ve zar işleyişinin bağlamıdır; K vitamini bütün uyarıların elektrik yükünün kendisi olarak tanımlanmaz.",
+        "Demir bir elementtir ve hemoglobinin hem kısmıyla ilişkilidir. K vitamini alyuvarın demir elementiyle kimyasal olarak özdeş değildir."
+      ],
+      "commonError": "Bir süreçte gerekli vitaminin glikoz, pentoz veya mineral gibi başka bir bileşenin yerini aldığını ya da bütün süreci tek başına yürüttüğünü sanmak.",
+      "check": "K vitamininin karşısına bir molekül bileşeni değil verilen işlev alanını yaz: pıhtılaşma proteinleri. Seçenek bu ilişkiyi koruyup ilgisiz yapı birimlerine dönüşmemelidir."
+    }
+  },
+  {
+    "id": "f012-foundation-vitaminler-7",
+    "identity": "[\"f012-foundation-vitaminler-7\",\"Bir tabloda A vitamininin görme ve epitel, E vitamininin antioksidan savunma ile ilişkili olduğu veriliyor. Hangi sonuç bu kapsamı korur?\",\"\",[\"Bütün vitaminler aynı tek moleküldür.\",\"Vitaminler farklı işlevlerle ilişkilidir; birinin adı diğerinin bütün görevlerini üstlenmez.\",\"A ve E aynı çözünürlükteyse aynı işlevleri zorunlu yapar.\",\"E vitamini her kişide bütün hastalıkları kesin önler.\",\"A vitamini görmeyle ilişkiliyse yalnız gözde bulunabilir.\"],1,\"Tablo iki farklı görev bağlamı verir. Çözünürlük grubunun ortak olması bütün işlevlerin özdeşliği veya hastalık önleme garantisi oluşturmaz. Özellikle E vitaminine ilişkin koşulsuz kanser/Alzheimer önleme iddiası bu veriden çıkarılamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Vitaminlerin görevleri çeşitlidir. A vitamini görme ve epitel dokuyla; E vitamini oksidatif etkilerin sınırlandırılmasına katkı veren antioksidan savunmayla ilişkilidir. Ortak çözünürlük grubunda olmak görevlerin eşitliği veya bütün hastalıkların önlenmesi anlamına gelmez."
+      ],
+      "strategy": "Tablonun iki satırını ayrı işlev kayıtları olarak oku; ortak sınıf veya çözünürlük bilgisini görev özdeşliğine çevirmeden, yalnız belirtilen ilişkiyi koruyan seçeneği ara.",
+      "steps": [
+        "Tabloda A için görme/epitel, E için antioksidan savunma verilir. İki vitaminin görev etiketleri aynı değildir.",
+        "Bu iki satır vitamin adlarının birbirlerinin bütün rollerini otomatik üstlenmediğini gösterir. Aynı sınıfta bulunmak iki molekülü tek molekül yapmaz.",
+        "Kapsamı koruyan sonuç farklı vitaminlerin farklı işlevlerle ilişkili olmasıdır. Her hastalığı kesin önleme veya yalnız tek organda bulunma iddiası eklenmez."
+      ],
+      "optionReasons": [
+        "A ve E gibi farklı vitaminlerin aynı tek molekül olduğu verilmemiştir; ayrı adlar ve farklı görev kayıtları bu özdeşlik iddiasını desteklemez.",
+        "Doğru. Tablodaki iki farklı rol korunur; bir vitaminin adı ötekinin bütün görevlerinin otomatik karşılığı sayılmaz.",
+        "İkisi de yağda çözünen grupta olsa bile ortak çözünürlük farklı işlevleri eşitlemez. Tablonun iki ayrı görev satırı göz ardı edilmiştir.",
+        "Antioksidan işleve katkı, her insanda bütün hastalıkları kesin önleme kanıtı değildir. Tabloda bu geniş klinik iddiayı sınayan veri bulunmaz.",
+        "Bir vitaminin görmeyle ilişkili olması yalnız gözde bulunmasını gerektirmez. Kart A vitamini için epitel ilişkisini de ayrıca verir."
+      ],
+      "commonError": "Yağda çözünürlük gibi ortak sınıf özelliğini bütün görevlerin eşitliği sanmak veya sınırlı işlev ilişkisinden koşulsuz hastalık önleme sonucu çıkarmak.",
+      "check": "Seçtiğin sonuç A ve E’nin farklı görev satırlarını aynı anda korumalıdır. Tabloda araştırılmayan bütün hastalıklar veya tek organla sınırlılık için ek kesinlik içermemelidir."
+    }
+  },
+  {
+    "id": "f012-foundation-vitaminler-8",
+    "identity": "[\"f012-foundation-vitaminler-8\",\"Eşit başlangıçlı sebzeler aynı ısı ve sürede suda pişiriliyor. C vitamini suda çözünüyor. Bir grupta su dökülüp yalnız sebze ölçülüyor; diğerinde ölçüme sebze ve pişirme suyu birlikte alınıyor. Sonuçları karşılaştırırken hangisine dikkat edilmelidir?\",\"\",[\"Suya geçen vitamin kesin yoktan üretilmiştir.\",\"Daha az kalan miktarın tek olası nedeni genetik mutasyondur.\",\"Suda çözünme ile suya geçen miktar, yalnız ısıl parçalanmadan ayrı değerlendirilmelidir.\",\"Ölçülen bölümün değişmesi karşılaştırmayı etkilemez.\",\"C vitamini yağda çözündüğü için suya geçiş imkânsızdır.\"],2,\"Kalan sebze ile sebze+su toplamı aynı ölçüm bölmesi değildir. Suda çözünen vitaminin bir bölümü suya geçebilir; ölçülen azalmayı tek başına tümünün ısıyla kimyasal olarak parçalanması saymak gerekçesizdir. Başlangıç, bölme ve yöntem aynı tutulmalıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Suda çözünen bir vitamin pişirme sırasında besinden suya geçebilir. Ölçülen miktarın azalması dağılım değişimini veya kimyasal etkinlik kaybını içerebilir; bunlar aynı olay değildir. Yalnız katıyı ölçmekle katı ve suyu birlikte ölçmek farklı bölmeleri toplamaktır."
+      ],
+      "strategy": "Her grubun hangi bölmeleri ölçtüğünü önce yaz; suya geçişin ölçüm dışına çıkarılmasını kimyasal parçalanmadan ayırarak karşılaştırmanın paydasını ve kapsamını eşleştir.",
+      "steps": [
+        "İlk grupta pişirme suyu dökülür ve yalnız sebze ölçülür. Suya geçmiş etkin C vitamini varsa bu ölçümün dışında kalır.",
+        "İkinci grupta sebze ve pişirme suyu birlikte ölçülür. Bu ölçüm suya geçmiş fakat etkinliğini koruyan kısmı da içerebilir.",
+        "Sonuçları yorumlarken suya geçiş ile ısıl parçalanma ayrı değerlendirilmelidir. İki farklı ölçüm bölmesindeki farkın tamamını aynı kimyasal kayıp olarak adlandırmak doğru değildir."
+      ],
+      "optionReasons": [
+        "Vitaminin sudaki bölmeye geçmesi mevcut maddenin yer değiştirmesidir; yoktan yeni vitamin üretimi olduğunu kanıtlamaz.",
+        "Bölme ve hazırlama yöntemi zaten farklıdır; daha az ölçülen miktarın tek nedeni genetik mutasyon sayılamaz. Böyle bir genetik veri de verilmemiştir.",
+        "Doğru. Suya taşınan etkin miktar ile kimyasal olarak parçalanmış kısım ayrılmalı; yalnız katı ve katı+su ölçümleri aynı bölüm sayılmamalıdır.",
+        "Ölçüme alınan bölme değişince içerilen vitamin miktarı da değişebilir. Suyun dışarıda bırakılması karşılaştırmanın kapsamını doğrudan etkiler.",
+        "Kart C vitamininin suda çözündüğünü açıkça söyler. Yağda çözünen sayıp suya geçişi imkânsız ilan etmek verilen bilgiye aykırıdır."
+      ],
+      "commonError": "Sebzede ölçülen azalmayı bütün vitaminin ısıyla kimyasal olarak yok olması sanmak; suya geçen etkin miktarın ölçüm dışında kaldığını hesaba katmamak.",
+      "check": "İki ölçümü “katı” ve “katı+su” diye adlandır. Aynı ısı/süre bilgisi bu iki toplamı aynı bölme yapmaz; suyun ayrıca ölçülmesi dağılımı ayırmaya yardım eder."
+    }
+  },
+  {
+    "id": "f012-foundation-vitaminler-9",
+    "identity": "[\"f012-foundation-vitaminler-9\",\"İnsan bazı provitaminleri belirli koşullarda etkin ürünlere dönüştürebiliyor; D vitamini oluşumunda deride başlayan bir yol bulunuyor. Hangi çıkarım güvenlidir?\",\"\",[\"İnsan bütün vitaminleri yeterince sentezler.\",\"Vitaminlerin hiçbirinde dönüşüm basamağı olamaz.\",\"Bütün vitaminler yalnız mineral atomlarına dönüşür.\",\"Bazı dönüşüm yollarının varlığı bütün vitamin gereksiniminin her koşulda karşılandığını göstermez.\",\"Bir dönüşüm varsa çevre ve beslenmenin hiç rolü yoktur.\"],3,\"Belirli bir öncülden ürün oluşması vitaminlerin tümü ve bütün koşullar hakkında sentez yeterliliği kanıtı değildir. Hangi vitaminin, hangi öncül ve koşulla ele alındığı önemlidir. Sentez, öncül dönüşümü ve dışarıdan gereksinim ayrı sorulardır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Provitamin uygun dönüşümlerle vitamin etkinliğine katkı sağlayabilen öncüldür. İnsan bazı öncülleri kullanabilir; D vitamini yolunda deride başlayan ve sonraki organ dönüşümleriyle süren basamaklar bulunur. Belirli yolun varlığı bütün vitaminlerde yeterli sentez demek değildir."
+      ],
+      "strategy": "Öncül dönüşümünün hangi vitamin ve koşul için verildiğini sınırla; “bazı yollar vardır” bilgisinin bütün vitaminler ve bütün gereksinimler için yeterlilik iddiasına dönüşüp dönüşmediğini denetle.",
+      "steps": [
+        "Kart bazı provitamin dönüşümlerini ve D vitamini için deride başlayan bir yolu verir. Bunlar sınırlı vitamin ve koşul örnekleridir.",
+        "Bir öncülü dönüştürebilmek, bütün vitaminleri baştan veya yeterli miktarda sentezlemekle aynı değildir. Öncülün ve uygun koşulların bulunması da ayrı gerekliliklerdir.",
+        "Güvenli çıkarım, bazı yolların varlığının her vitamin gereksiniminin her koşulda karşılandığını göstermemesidir. Dışarıdan edinim ve çevre etkisi tümden dışlanmaz."
+      ],
+      "optionReasons": [
+        "Bazı provitamin dönüşümlerinden bütün vitaminler için yeterli sentez sonucu çıkmaz. “Bazı” örneği “bütün” kapsamına taşınmıştır.",
+        "Kart öncül dönüşümlerinin varlığını açıkça verir. Hiçbir vitaminde dönüşüm olamayacağı iddiası bu örneklerle çelişir.",
+        "Vitaminler organik molekül bağlamındadır; dönüşüm yolunun varlığı hepsinin yalnız mineral atomlarına dönüştüğünü göstermez.",
+        "Doğru. Belirli vitaminler için bazı yolların bulunması, bütün vitaminlerin ve bütün koşullardaki gereksinimin karşılandığı kanıtı değildir.",
+        "Öncülün sağlanması ve uygun çevre koşulları dönüşümde rol oynayabilir. Bir yolun varlığı beslenme ve çevrenin hiç etkisinin olmaması anlamına gelmez."
+      ],
+      "commonError": "Öncül dönüştürme ile bütün vitaminleri yeterince sentezlemeyi aynı görmek veya bir yol bulununca öncül, beslenme ve çevre koşullarının gereksizleştiğini sanmak.",
+      "check": "Sonuçtaki kapsamı tekrar say: kart bazı vitaminleri ve belirli koşulları verir. Yanıt bu sınırı korumalı; bütün vitaminler için her koşulda yeterlilik eklememelidir."
+    }
+  },
+  {
+    "id": "f012-foundation-vitaminler-10",
+    "identity": "[\"f012-foundation-vitaminler-10\",\"Bir ders notunda uzun süreli A vitamini yetersizliğinin gece görme güçlüğüyle ilişkili olabildiği yazıyor. Bir kişi yalnız bu belirtiyi bildiriyor. Verilen bilgi ve tek belirti birlikte değerlendirildiğinde hangisine kesin olarak ulaşılamaz?\",\"\",[\"A vitamininin görmeyle ilişkili olduğu öğretim bilgisini\",\"Ders notundaki örneğin belirli bir vitaminle eşleştirildiğini\",\"Tek belirtinin farklı nedenlerle görülebileceğini değerlendirme gereğini\",\"Kavramsal eşleştirme ile kişisel tıbbi değerlendirmenin farklı olduğunu\",\"Kesin tanı ve alınması gereken takviye dozu\"],4,\"Bu ders notu kavramsal vitamin-görev ilişkisini öğretir; tek kişideki tek belirti tüm alternatif nedenleri elemez. Tanı ve doz için klinik değerlendirme gerekir. Bu sınır, A vitamininin görmedeki biyolojik rolünü reddetmez; çıkarımın kapsamını korur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir eksiklikle belirti arasında ilişki bulunması, o belirtinin yalnız tek nedenden oluşabileceğini göstermez. A vitamininin görmedeki rolü ve yetersizliğin gece görme güçlüğüyle ilişkisi öğretim bilgisidir; tek kişide kesin neden ve doz belirlemek farklı kanıtlar gerektirir."
+      ],
+      "strategy": "Genel biyolojik ilişkiyi tek kişinin nedeni hakkındaki çıkarımdan ayır; belirtiden geriye giderken alternatif nedenlerin gerçekten elenip elenmediğini ve miktar hesabı için veri bulunup bulunmadığını sorgula.",
+      "steps": [
+        "Ders notu A vitamini yetersizliğinin gece görme güçlüğüyle ilişkili olabildiğini söyler. Bu, vitaminin görmeyle ilişkisini destekleyen genel bilgidir.",
+        "Kişi yalnız aynı belirtiyi bildiriyor; diğer olası nedenleri ayıran inceleme veya vitamin durumu ölçümü verilmiyor. Genel ilişki tek başına bu kişinin nedenini kesinleştirmez.",
+        "Bu verilerle kesin tanıya ve gerekli takviye dozuna ulaşılamaz. Bu sınır, A vitamininin görmedeki rolünü veya nottaki kavramsal eşleştirmeyi reddetmez."
+      ],
+      "optionReasons": [
+        "A vitamininin görmeyle ilişkisi ders notunda açıkça verilen öğretim bilgisidir; bu bilgi için kişide kesin tanı konması gerekmez.",
+        "Notun belirli bir eksiklik–belirti ilişkisi kurduğu doğrudan cümleden okunabilir. Tek kişinin tanısının belirsiz olması bu eşleştirmeyi silmez.",
+        "Tek belirti diğer olası nedenleri dışlamadığı için farklı nedenleri değerlendirme gereği vardır; bu gereği fark etmek verilenle uyumludur.",
+        "Kavramsal ilişki ile kişisel değerlendirmeyi ayırmak, genel bilgi ve bireysel kanıt kapsamlarının farklı olduğunu korur.",
+        "Doğru. Tek belirti kesin neden ve alınacak miktar için yeterli değildir; kart ne alternatifleri eleyen değerlendirme ne de doz verisi sunar."
+      ],
+      "commonError": "Bir eksikliğin belirti oluşturabilmesini ters çevirip aynı belirtiyi bildiren her kişide o eksikliğin kesin olduğu ve dozun bilindiği sonucuna atlamak.",
+      "check": "“A yetersizliği bu belirtiyle ilişkili olabilir” ile “bu kişide belirti var, dolayısıyla kesin A yetersizliği var” aynı çıkarım değildir. Doz için ayrıca hiçbir sayısal gereksinim verisi yoktur."
+    }
+  }
+]

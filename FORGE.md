@@ -1,3 +1,19 @@
+# Güncel 0.18 kaynak adayı
+
+Doğrulanmış çalışma sırasındaki 479 başlığın tamamı anlatım ve bağımsız soruyla eşleşir. Güncel kaynak 480 ayrıntılı rehber, 480 yerleşik kopya kağıdı ve 5.883 özgün soru içerir. Son 28 eski kısa anlatım 553 bölüm, 1.106 paragraf, 168 çözümlü örnek, 504 çözüm adımı ve 178 hatırlama etkinliğiyle genişletildi. Eklenen 28 ileri soru setinde 561 yeni beş seçenekli kart ve kademeli çözüm vardır.
+
+205 eski kartın özgün soruları korunarak her birine bilgi, yöntem, üç ayrı çözüm adımı, beş seçenek gerekçesi, sık hata ve sonuç denetimi eklendi. Ayrıntılı yardım 2.508/5.883 karttadır; kalan 3.375 kart üzerindeki çalışma sürüyor. Yeni yardım metinlerinin tamamı ikinci okuyucu tarafından kaynakları ve gerçek render ile denetlendi. İnceleme anahtarı görünen bir incelemedir; körlük iddiası yoktur. Kaynak incelemesi gerçek tarayıcı veya yayın kabulü sayılmaz.
+
+Önceki 5.322 sorunun bütün alanları, 486 öğretim kaydı, 452 tam rehber ve çalışma sırası eşleşmeleri korunur. İki eski fizik kökünde eksik yön ve enerji koşulları yalnız bütünüyle tanınan sorunun sunumunda açıklığa kavuşturulur. Ham kayıt, soru kimliği, seçenek, anahtar, yanıt ve deneme kâğıdı değişmez. Eski yardım düzeyi salt görüntülemede eşlenir: eski tam çözüm yine tam açılır, yeni yöntem düzeyi tam çözüme dönüşmez. İşaretleyici ancak açık yardım veya yanıt eylemiyle kaydedilir.
+
+1.509 birim testi, TypeScript ve normal/prefix üretim derlemesi geçti. Normal derleme 271 gerekli çevrimdışı varlık ve 24.919.389 byte içerir; tek dosya 5 MiB altındadır. İlk 026 tarayıcı kabulünde 79/85 geçti; beş telefon metni ve bir test girdisi düzeltildi. Ayrı 29 ileri set ve üç soru sunumu akışı geçti. Birleşik son 122 vaka, 93 aile masaüstü/prefix, gerçek eski 0.17→yeni 0.18 web yükseltmesi, tam CI ve yayın kapıları henüz sonuçlanmadı. Yerel hazırlık veya kaynak kabulü yayın kanıtı değildir.
+
+TYT 120 soru/165 dakika ve AYT Sayısal 80 soru/180 dakika gerçek ders kotaları ve beş seçenekli sorularla sunulur. Öğrenci PDF yüklemez veya kaynak eşleştirmez. Başlık eşleşmesi, her kaynağın bütün alt kazanımlarının ve son 20 yılın resmî ÖSYM arşivinin tamamlandığı anlamına gelmez. Canlı sürüm henüz 0.17’dir: [Vercel](https://yksmania.vercel.app), [Pages](https://kaansavukduran.github.io/yksmania/) ve [Windows/Linux](https://github.com/kaansavukduran/yksmania/releases/tag/v0.17.0-alpha.1). Android imzası kullanıcı tarafından ertelendi; yeni APK yoktur. Fiziksel cihaz, temiz kurulum, portable taşıma ve native sürümler arası veri koruyan kurulum ayrıca sınanacaktır.
+
+---
+
+## Önceki kaynak ve kabul kayıtları
+
 # 0.18 kaynak adayı — 479 sıralı başlığın tamamı
 
 Doğrulanmış çalışma sırasındaki 479 başlığın tamamı uygulama içi anlatım ve bağımsız soruyla eşleşir. Güncel toplam 480 anlatım, 452 ayrıntılı rehber, 480 yerleşik kopya kağıdı ve 5322 özgün sorudur. Son 11 konuda 249 bölüm/498 paragraf, 70 çözümlü örnek/210 adım ve 64 hatırlama etkinliği vardır. Yeni 234 beş seçenekli kartın tümünde kademeli yardım bulunur: 654 gerçek adım ve seçeneklerine bağlı 1170 gerekçe. Ayrıntılı yardım toplam 1742/5322; 3580 eski kartta bütün yardım kademeleri henüz tamamlanacaktır. 28 eski kısa anlatım da derinleştirilmektedir.
