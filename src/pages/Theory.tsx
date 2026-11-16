@@ -9,6 +9,7 @@ import { Aion } from "../components/Aion";
 import { StudyTimer } from "../components/StudyTimer";
 import { GuidedReading } from "../learning/GuidedReading";
 import { lessonGuides } from "../learning/guides";
+import { clarifiedGuideView } from "../learning/guidePresentation028";
 import { TheoryReviewAction } from "../components/LearningReviews";
 import { TopicCompletion } from "../components/StudyPlanning";
 import { lessonTopic, topicLessons } from "../domain/studyPlan";
@@ -42,7 +43,7 @@ export function Theory({
     );
   const subject = subjectById(lesson.subjectId)!;
   const noteKey = "lesson:" + lesson.id;
-  const guide = lessonGuides.get(lesson.id);
+  const guide = clarifiedGuideView(lessonGuides.get(lesson.id));
   const relatedTopic = lessonTopic[lesson.id];
   const questionSetCount = relatedTopic
     ? topicLessons(relatedTopic).filter((l) => l.questions.length > 0).length

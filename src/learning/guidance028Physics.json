@@ -1,0 +1,352 @@
+[
+  {
+    "id": "ef-1",
+    "identity": "[\"ef-1\",\"Pozitif bir kaynak yükün sağındaki noktada negatif bir test yükü var. Alanın ve test yüküne kuvvetin yönleri nasıldır?\",\"\",[\"Alan sola, kuvvet sağa.\",\"Alan sağa, kuvvet sola.\",\"İkisi de sağa.\"],1,\"Pozitif kaynağın sağındaki alan sağadır. F=qE olduğundan negatif test yüküne kuvvet sola yönelir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Elektrik alanın yönü pozitif bir deneme yüküne etki edecek kuvvetle tanımlanır. Bir başka test yükünün kuvveti ise yönlü F=qE bağıntısıyla bulunur; alanın kaynağı ile kuvveti deneyen yük farklı rollerdedir."
+      ],
+      "strategy": "Kaynağı ve sağındaki gözlem noktasını bir doğruya yerleştir; önce yalnız kaynak için alan okunu çiz, ardından test yükünün işaretini kullanarak ikinci bir kuvvet oku oluştur.",
+      "steps": [
+        "Doğruda kaynak solda, test yükünün bulunduğu nokta sağdadır. Alan okunu belirlerken şimdilik test yükünün eksi işaretini kullanma.",
+        "Kaynak pozitif olduğundan alan kaynaktan dışarı yönelir. Kaynağın sağındaki noktada bu yön sağadır.",
+        "Test yükü negatif olduğu için qE kuvveti alanın ters yönündedir. Böylece alan sağa, test yüküne elektriksel kuvvet sola olur."
+      ],
+      "optionReasons": [
+        "Alan sola denilerek pozitif kaynağın bu noktadaki dışa yönü ters çevrilmiştir. Bu yanlış alanla negatif test yüküne kuvvet sağa çıkarılsa da iki yön gerçek düzene uymaz.",
+        "Doğru. Pozitif kaynağın sağında alan sağadır; negatif test yükünün kuvveti bu alanın tersine, sola yönelir.",
+        "Alanın sağa yönü uygundur; fakat iki okun aynı yönde olması pozitif test yüküne karşılık gelirdi. Verilen test yükü negatiftir."
+      ],
+      "commonError": "Kaynak yükün artı işaretiyle test yükünün eksi işaretini tek bir işaret gibi kullanma; birincisi alan haritasını, ikincisi bu alandaki kuvvet yönünü belirler.",
+      "check": "Kaynak pozitif, test yükü negatif olduğundan elektriksel etkileşim çekicidir. Test yükünün kaynağa, yani sola çekilmesi kuvvet okunu bağımsız olarak doğrular."
+    }
+  },
+  {
+    "id": "ef-2",
+    "identity": "[\"ef-2\",\"Noktasal bir yükün 1 m uzağında alan büyüklüğü 9.000 N/C. Yük ve ortam aynı kalırken 2 m uzakta alan kaç N/C olur?\",\"\",[\"4.500\",\"2.250\",\"18.000\"],1,\"Uzaklık iki katına çıktığı için alan 2²=4’e bölünür: 9.000/4=2.250 N/C.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tek noktasal kaynakta alan büyüklüğü aynı ortam için E=k|Q|/r² bağıntısına uyar. Kaynak ve ortam korunursa E·r² çarpımı sabittir; N/C kuvvet değil, elektrik alan birimidir."
+      ],
+      "strategy": "İlk ve son uzaklıkları oranla; alan oranında bu uzaklık oranının karesini kullan. Bilinmeyen kaynak yükünü ayrıca bulmaya çalışmadan verilen ilk alanı ölçekle.",
+      "steps": [
+        "Kaynak yük ve ortam aynı kalmaktadır. İlk uzaklık 1 m, son uzaklık 2 m olduğundan uzaklık çarpanı 2’dir.",
+        "Ters kare bağıntısına göre Eson/Eilk=(1/2)²=1/4 olur; uzaklık çarpanı alanı doğrusal değil karesiyle etkiler.",
+        "Verilen 9.000 N/C’yi dört eşit parçaya böl: Eson=9.000/4=2.250 N/C."
+      ],
+      "optionReasons": [
+        "4.500 N/C, ilk alanı yalnız ikiye bölmekle elde edilir. Bu işlem 1/r bağımlılığı kullanır; noktasal kaynağın alanı 1/r² ile değişir.",
+        "Doğru. Uzaklık 1 m’den 2 m’ye çıkınca alan dörtte bire iner; 9.000/4=2.250 N/C olur.",
+        "18.000 N/C, alanı uzaklıkla birlikte artırır. Kaynak ve ortam sabitken daha uzaktaki alanın büyümesi verilen ters kare ilişkisiyle uyuşmaz."
+      ],
+      "commonError": "İki kat uzaklığı iki kat azalma diye okumak r²’yi kaybettirir. Ayrıca test yükünün büyüklüğünü bu oran hesabına ekleme; burada kaynağın alanı soruluyor.",
+      "check": "İlk noktada E·r²=9.000·1²=9.000, son noktada 2.250·2²=9.000 çıkar. Korunan bu çarpım uzaklığın karesinin doğru kullanıldığını sınar."
+    }
+  },
+  {
+    "id": "ef-3",
+    "identity": "[\"ef-3\",\"Negatif bir kaynak yükün sağındaki noktada pozitif test yükü bulunuyor. Hangisi doğrudur?\",\"\",[\"Alan sağa, kuvvet sola.\",\"Alan sağa, kuvvet sağa.\",\"Alan sola, kuvvet sola.\"],2,\"Nokta kaynağın sağında olduğundan kaynağa doğru yön soldur. Pozitif test yüküne kuvvet de alanla aynı yöndedir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Negatif kaynağın çevresindeki elektrik alan çizgileri kaynağa yönelir. Pozitif test yükünde F=qE bağıntısı kuvvet ve alan vektörlerini aynı yönde tutar; kaynak işaretiyle test işareti farklı aşamalarda kullanılır."
+      ],
+      "strategy": "Gözlem noktasından negatif kaynağa uzanan yönü belirle; sonra pozitif test yükünün alan okunu koruyup korumadığını denetleyerek iki yönü birlikte karşılaştır.",
+      "steps": [
+        "Nokta negatif kaynağın sağındadır. Bu noktadan kaynağa ulaşmak için sola gidilir.",
+        "Negatif kaynağa yönelen alanın bu noktadaki oku bu nedenle soladır; “eksi yük” sözü tek başına bir sayısal eksi hız anlamına gelmez.",
+        "Test yükü pozitif olduğundan kuvvet alanla aynı yöndedir. İki ok da sola yönelir."
+      ],
+      "optionReasons": [
+        "Kuvvetin sola olması çekimle uyumludur; ancak alan sağa alınmıştır. Pozitif test yükünde alanla kuvvetin zıt yönlü olması F=qE ile çelişir.",
+        "İki okun aynı yönlü olması pozitif test için uygundur; fakat sağ yönü negatif kaynaktan uzaklaşır. Bu noktadaki alan kaynağa doğru, sola olmalıdır.",
+        "Doğru. Sağdaki noktadan negatif kaynağa doğru yön soladır; pozitif test yüküne elektriksel kuvvet de aynı sola yöndedir."
+      ],
+      "commonError": "Negatif kaynak gördüğünde test kuvvetini de otomatik ters çevirme. Önce alanı kaynağın konumuyla kur; kuvveti ters çeviren koşul test yükünün negatif olmasıdır.",
+      "check": "Zıt işaretli kaynak ve test birbirini çeker. Sağdaki pozitif testin soldaki kaynağa çekilmesi sola kuvveti doğrular; pozitif test tanımı gereği alan da o yöndedir."
+    }
+  },
+  {
+    "id": "ef-4",
+    "identity": "[\"ef-4\",\"Kaynak ve konum aynı kalırken test taneciği yüksüz hâle getiriliyor. Ne olur?\",\"\",[\"Kaynağın alanı aynı kalır; bu taneciğe elektriksel kuvvet sıfır olur.\",\"Alan sıfırlanır; kuvvet aynı kalır.\",\"Alan ve kuvvet mutlaka iki katına çıkar.\"],0,\"Kaynağın alanı q’ya bağlı değildir. Taneciğin yükü q=0 olduğunda F=qE=0 olur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bu kartın test-yükü modelinde alanı kaynak düzeni ve gözlem noktası belirler. Test taneciğinin elektriksel kuvveti ayrı bir bağıntı olan F=qE ile hesaplanır; q, kaynağın Q yüküyle aynı değişken değildir."
+      ],
+      "strategy": "Değişen büyüklükleri kaynak, konum ve test yükü olarak üç satıra ayır. Önce alanın belirleyicilerinin değişip değişmediğine bak, ardından yeni test yükünü kuvvet çarpımına yerleştir.",
+      "steps": [
+        "Kaynak ve gözlem konumu korunuyor; değişen yalnız test taneciğinin yüküdür. Bu nedenle kaynak alanını yeniden başka bir değerle kurmayı gerektiren veri yoktur.",
+        "Yüksüz hâle getirilen test için q=0 yaz. Elektriksel kuvvet çarpımı F=0·E biçimine gelir.",
+        "Çarpım sıfırdır; taneciğe bu modelde elektriksel kuvvet etki etmez. Kaynağın aynı noktada oluşturduğu alan ise önceki değerini korur."
+      ],
+      "optionReasons": [
+        "Doğru. Kaynak ve konum değişmediği için alan korunur; yüksüz test taneciğinde q=0 çarpanı elektriksel kuvveti sıfır yapar.",
+        "Test taneciğinin yüksüz olması kaynak yükünü ortadan kaldırmaz; alanın sıfırlanması gerekmez. Eski kuvvetin korunması da genel sonuç değildir: q=0 yeni kuvveti sıfır yapar, eski kuvvetin zaten sıfır olması özel bir durum olabilir.",
+        "Kaynak, uzaklık veya alanı artıran bir değişiklik verilmemiştir. Yüksüz testin q çarpanı sıfırdır; alan ve kuvvet için iki kat artış çıkarılamaz."
+      ],
+      "commonError": "Taneciğe kuvvet etki etmemesini uzayda alan yok diye yorumlama. Sonucu bu kartın noktasal test-yükü bağıntısında tut; kaynak ile testin rollerini değiştirme.",
+      "check": "Alanı test kuvvetinden geri hesaplarken q=0 için F/q bölümü yapılamaz. Alanın kaynaktan belirlenmeye devam etmesi, kuvvetin sıfır olmasının alanı ölçerek sıfırlamadığını gösterir."
+    }
+  },
+  {
+    "id": "ef-5",
+    "identity": "[\"ef-5\",\"Sabit bir elektrik alanında +1 µC taneciğe 0,009 N elektriksel kuvvet etki ediyor. Aynı noktaya +2 µC konursa ne olur?\",\"\",[\"Alan da kuvvet de iki katına çıkar.\",\"Alan aynı kalır; kuvvet 0,018 N olur.\",\"Alan yarıya iner; kuvvet aynı kalır.\"],1,\"Alan aynı kalır. Test yükü iki katına çıktığından kuvvet de iki katına çıkar: 0,018 N.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı noktada sabit elektrik alan için kuvvet büyüklüğü test yükünün büyüklüğüyle doğru orantılıdır. F/q oranı alanı verir; µC, 10⁻⁶ C’dir ve F=qE hesabında yükün birimi coulomb olmalıdır."
+      ],
+      "strategy": "İki taneciğin yüklerini aynı birimde oranla ve bu oranı kuvvetlere uygula. Sonucun alanı değiştirmediğini iki farklı test için F/q oranlarını karşılaştırarak kontrol et.",
+      "steps": [
+        "İlk yük +1 µC, yeni yük +2 µC’dir; her ikisi pozitiftir. Büyüklük oranı qyeni/qilk=2’dir.",
+        "Aynı noktadaki sabit E için Fyeni/Filk=qyeni/qilk yazılır. Bu nedenle yeni kuvvet ilk kuvvetin iki katıdır.",
+        "Fyeni=2·0,009=0,018 N bulunur. Değişen test yükü ve kuvvettir; verilmiş sabit alan aynı kalır."
+      ],
+      "optionReasons": [
+        "Test yükünü artırmak, bu kartta sabit verilen kaynak alanını iki katına çıkarmaz. Alan da iki kat olsaydı F=qE’de iki artış çarpılıp kuvvet dört katına çıkardı.",
+        "Doğru. Alan sabitken +1 µC’den +2 µC’ye geçiş kuvveti iki katına çıkarır; 2·0,009=0,018 N olur.",
+        "Alanı yarıya indirerek kuvveti korumak farklı bir deney koşulu gerektirir. Burada aynı noktadaki alan sabittir; yük artarken kuvvetin aynı kalması beklenmez."
+      ],
+      "commonError": "Test yükünü alanın kaynağı sanıp hem E’yi hem q’yu değiştirme. Soruda sabit tutulan alanı koru ve µC ile C dönüşümünü kuvvet oranından ayrı denetle.",
+      "check": "İlk ölçümde 0,009/(1×10⁻⁶)=9.000 N/C; yeni ölçümde 0,018/(2×10⁻⁶)=9.000 N/C çıkar. Aynı F/q oranı aynı kaynak alanıyla tutarlıdır."
+    }
+  },
+  {
+    "id": "isi-ve-sicaklik-q1",
+    "identity": "[\"isi-ve-sicaklik-q1\",\"Bir metal parça, daha soğuk bir sıvıya temas ederek ona 600 J enerji aktarıyor. Bu 600 J ve parçanın taneciklerinin mikroskobik kinetik–potansiyel enerji toplamı sırasıyla hangi kavramlardır?\",\"\",[\"Sıcaklık — ısı\",\"Isı — iç enerji\",\"İç enerji — sıcaklık\",\"Isı — sıcaklık\",\"Sıcaklık — iç enerji\"],1,\"Sıcaklık farkı nedeniyle aktarılan 600 J ısıdır (Q). Parçanın taneciklerinin mikroskobik kinetik ve potansiyel enerji toplamı iç enerjidir (U). İkisinin birimi J olsa da biri aktarımı, diğeri sistemin enerji durumunu anlatır. Sıcaklığın birimi kelvindir; aktarılan enerji sıcaklık değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Isı, sıcaklık farkı nedeniyle sistemler arasında enerji aktarımını adlandırır. İç enerji sistemdeki mikroskobik kinetik ve potansiyel enerjilerin toplamıdır; sıcaklık ise enerji toplamı değil, termometreyle ölçülen bir durum büyüklüğüdür."
+      ],
+      "strategy": "Cümledeki iki tanımı sırayla ayır: önce sistem sınırını geçen 600 J’yi, sonra parçaya ait tanecik enerjilerinin toplamını sınıflandır. Şıklardaki iki sözcüğün sırasını da koru.",
+      "steps": [
+        "Metal daha soğuk sıvıya enerji aktarıyor. İlk nicelik iki sistem arasındaki sıcaklık farkına bağlı 600 J’lik aktarımdır.",
+        "İkinci nicelik, metal parçanın taneciklerinin mikroskobik kinetik ve potansiyel enerjilerinin toplamıdır; bu aktarım değil, sisteme ait enerji durumudur.",
+        "İlk tanımı ısı, ikinci tanımı iç enerji karşılar. Aranan sıralama “Isı — iç enerji”dir."
+      ],
+      "optionReasons": [
+        "600 J bir enerji aktarımıdır; sıcaklık değildir. İkinci yerde de taneciklerin enerji toplamına aktarımın adı olan ısı denilmiştir.",
+        "Doğru. Sıcaklık farkıyla aktarılan 600 J ısıdır; parçanın mikroskobik kinetik–potansiyel enerji toplamı iç enerjidir.",
+        "İlk nicelik parçanın sahip olduğu bir enerji toplamı değil, sınırdan geçen aktarımdır. İkinci nicelik de sıcaklık yerine toplam iç enerjiyi tanımlar.",
+        "İlk sözcük aktarımı doğru adlandırır; fakat mikroskobik enerjilerin toplamı sıcaklık değildir. Sıcaklık ile toplam enerji aynı nicelik değildir.",
+        "İkinci sözcük uygundur; ilk nicelikteki 600 J ise sıcaklık diye okunamaz. Sıcaklığın SI birimi K, burada verilen enerji aktarımının birimi J’dir."
+      ],
+      "commonError": "İkisinin de joule ile ifade edilmesinden ısı ile iç enerjiyi eş anlamlı sayma. Önce enerjinin aktarılıyor mu yoksa sistemin durumu olarak mı tanımlandığını belirle.",
+      "check": "İlk tanımda “sıvıya aktarıyor”, ikincide “parçanın taneciklerinin toplamı” ifadeleri bulunur. Transfer ile sistem özelliği ayrımı, iki seçilen kavramın yer değiştirmediğini sınar."
+    }
+  },
+  {
+    "id": "isi-ve-sicaklik-q2",
+    "identity": "[\"isi-ve-sicaklik-q2\",\"Aynı odada uzun süre kalan metal ve ahşap yüzeyler 22 °C ölçülüyor. Metal ele daha soğuk geliyor. Bu gözlemlerle uyumlu açıklama hangisidir?\",\"\",[\"Eşit sıcaklık tüm örneklerin iç enerjisinin eşit olduğunu kanıtlar.\",\"Enerji 22 °C’lik yüzeyden daha sıcak ele kendiliğinden akar.\",\"Metal mutlaka 22 °C’den soğuktur.\",\"Ahşabın öz ısısı mutlaka sıfırdır.\",\"Metal elden enerjiyi daha hızlı çekebilir; his, sıcaklığın doğrudan ölçümü değildir.\"],4,\"Termometre iki yüzeyi aynı sıcaklıkta ölçmüştür. Metalin elden enerjiyi daha hızlı iletmesi daha soğuk hissedilmesini açıklayabilir. Bu his farklı sıcaklığı veya eşit iç enerjiyi kanıtlamaz. Daha sıcak elden 22 °C’lik yüzeye net ısı aktarımı beklenir; ters yön kendiliğinden olmaz. Ahşabın öz ısısının sıfır olduğu sonucu da yoktur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Dokunma hissi, ciltle yüzey arasındaki enerji aktarımının hızından etkilenir. Termometre sıcaklığı ölçer; aynı sıcaklık tek başına kütle, madde ve hâle bağlı toplam iç enerjiyi belirlemez."
+      ],
+      "strategy": "Ölçümle sabitlenen 22 °C verisini önce koru; sonra farklı hissin aktarım hızıyla açıklanıp açıklanamayacağını incele. Şıklardaki “mutlaka” ve “kanıtlar” gibi daha güçlü iddiaları bu iki gözlemle ayrı ayrı sına.",
+      "steps": [
+        "İki yüzeyin sıcaklıkları 22 °C ölçülmüştür. Metalin daha soğuk hissedilmesi bu ölçümün yerine yeni bir sıcaklık değeri koymaz.",
+        "El yüzeylerden daha sıcaksa metalin elden daha hızlı enerji çekmesi daha soğuk hissiyle uyumludur. Doğru açıklama bu olasılığı kullanır; kart elin sayısal sıcaklığını vermemiştir.",
+        "Aktarım hızının farklı olabilmesi iki eşit sıcaklık ölçümüyle çelişmez. Bu nedenle “çekebilir; his doğrudan ölçüm değildir” açıklaması gözlemleri birlikte karşılar."
+      ],
+      "optionReasons": [
+        "Sıcaklığın eşitliği tek başına toplam iç enerjiyi eşitlemez; örneklerin kütleleri ve madde özellikleri de gerekir. Verilen iki ölçüm böyle bir kanıt oluşturmaz.",
+        "Şık, elin daha sıcak olduğunu kendisi söylüyor. Dışarıdan iş almayan kendiliğinden net ısı aktarımı daha sıcak elden daha soğuk yüzeye olur; burada önerilen ters yöndür.",
+        "Metalin 22 °C ölçülmesi verilidir. Daha soğuk hissetmek bu sayının altında bir sıcaklığı zorunlu kılmaz; aktarım hızı his üzerinde etkili olabilir.",
+        "Ahşabın öz ısısının sıfır olması bu gözlemlerden çıkmaz. Öz ısı ile dokunmadaki enerji iletim hızını aynı malzeme özelliği gibi kullanmak da uygun değildir.",
+        "Doğru. Metal elden enerjiyi daha hızlı çekebilir; bu, aynı 22 °C’de farklı his oluşmasıyla uyumludur. Olasılık bildiren açıklama ölçülen sıcaklıkları değiştirmez."
+      ],
+      "commonError": "“Daha soğuk hissettim” ifadesinden “termometrede daha düşük değer vardır” sonucu çıkarma. Ayrıca iletkenlik, öz ısı ve toplam iç enerji üç farklı bilgidir.",
+      "check": "Seçtiğin açıklamanın iki termometreyi de 22 °C’de bırakabildiğini denetle. Elin sıcaklığı veya aktarım hızı sayısal verilmediğinden bunlar için yeni bir kesin değer üretmemelisin."
+    }
+  },
+  {
+    "id": "isi-ve-sicaklik-q3",
+    "identity": "[\"isi-ve-sicaklik-q3\",\"Bir örnek 10 °C’den 35 °C’ye ısınıyor. T(K)=t(°C)+273,15 verilirse sıcaklık değişimi kaç K olur?\",\"\",[\"25 K\",\"35 K\",\"283,15 K\",\"308,15 K\",\"248,15 K\"],0,\"İlk sıcaklık 283,15 K, son sıcaklık 308,15 K’dir. Değişim 308,15−283,15=25 K olur. Celsius ve kelvin aralıkları eşittir; 273,15 tek bir sıcaklığın sıfır noktasını dönüştürür, sıcaklık farkına eklenmez. 308,15 K son sıcaklıktır, değişim değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kelvin ve Celsius ölçeklerinde bir aralığın büyüklüğü aynıdır; sıfır noktaları farklıdır. T=t+273,15 doğrusal dönüşümünde iki sıcaklığın farkı alınırken sabit kayma terimleri birbirini götürür."
+      ],
+      "strategy": "İstenen son sıcaklık mı yoksa değişim mi diye ayır. Verilen dönüşümü iki uç sıcaklığa ayrı uygula, ardından son değerden ilk değeri çıkararak sabit eklemenin fark hesabında ne yaptığını göster.",
+      "steps": [
+        "İlk sıcaklık 10 °C, son sıcaklık 35 °C’dir. Aranan tek bir sıcaklık okuması değil, bu iki durum arasındaki artıştır.",
+        "Dönüşümle ilk değer 10+273,15=283,15 K, son değer 35+273,15=308,15 K olur.",
+        "Değişim 308,15−283,15=25 K’dir. Aynı sonuca 35−10 farkından ulaşılır; 273,15 değişime eklenmez."
+      ],
+      "optionReasons": [
+        "Doğru. İki sıcaklığın farkı 35−10=25 °C olduğundan aynı aralık kelvin ölçeğinde 25 K’dir.",
+        "35, son Celsius okumasıdır. Başlangıçtaki 10 °C çıkarılmadığı için sıcaklık değişimi yerine son değer kullanılmıştır.",
+        "283,15 K ilk durumun mutlak sıcaklığıdır; iki durum arasındaki değişim değildir. Son sıcaklıktan bu ilk değerin çıkarılması gerekir.",
+        "308,15 K son durumun mutlak sıcaklığıdır. Soru son sıcaklığı değil, başlangıçtan sona olan artışı istemektedir.",
+        "248,15 K, 273,15−25 işlemine karşılık gelir. Sıfır noktası kaymasını sıcaklık farkından çıkarmak verilen dönüşümün farkına uymaz."
+      ],
+      "commonError": "273,15 sayısını her kelvin sorusuna otomatik ekleme veya çıkarma. Tek sıcaklığın ölçeğini çevirmekle iki sıcaklık arasındaki aralığı çevirmek farklı işlemlerdir.",
+      "check": "Bulduğun 25 K’yi ilk 283,15 K’ye ekle: 308,15 K elde edilir. Bu değer 35 °C’ye dönüyorsa artış hem uç değerler hem birimler bakımından tutarlıdır."
+    }
+  },
+  {
+    "id": "isi-ve-sicaklik-q4",
+    "identity": "[\"isi-ve-sicaklik-q4\",\"200 g’lık bir katı, hâl değiştirmeden 15 °C’den 45 °C’ye ısınıyor. c=600 J/(kg·°C) sabit kabul ediliyor. Katının aldığı enerji kaç J’dir?\",\"\",[\"3600000 J\",\"360 J\",\"1800 J\",\"3600 J\",\"5400 J\"],3,\"Kütle 0,200 kg, sıcaklık değişimi 30 °C’dir. Q=mcΔT=0,200·600·30=3600 J. 600’ün birimindeki kg ile kütlenin kg birimi uyumludur. 45’i ΔT sanmak 5400 J, gramı kg gibi kullanmak 3600000 J verir; ikisi de uygun enerji hesabı değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hâl değişimi olmayan ve öz ısısı sabit örnekte Q=mcΔT bağıntısı kullanılır. Öz ısının paydasındaki kütle birimiyle m aynı olmalı; ΔT mutlak son sıcaklık değil, son ve ilk sıcaklığın farkıdır."
+      ],
+      "strategy": "Verileri birim sütunuyla yaz; kütleyi c’nin kilogram birimine uydurduktan sonra ayrı bir sıcaklık farkı satırı oluştur. Enerji çarpımında birimlerin joule bıraktığını denetle.",
+      "steps": [
+        "c, kilogram başına verildiği için 200 g’ı 0,200 kg olarak yaz. Soruda katının hâl değiştirmediği ve c’nin sabit olduğu belirtilmiştir.",
+        "Sıcaklık artışı ΔT=45−15=30 °C’dir. Örneğin ısı sığası mc=0,200·600=120 J/°C olur.",
+        "Q=CΔT=120·30=3600 J bulunur. Isınan örnek enerji aldığı için sonuç pozitif büyüklüktedir."
+      ],
+      "optionReasons": [
+        "3.600.000 J, 200 gramı 200 kilogram gibi kullanarak doğru hesabı bin kat büyütür. c’nin birimi J/(kg·°C) olduğundan kütle 0,200 kg olmalıdır.",
+        "360 J, 120 J/°C’lik örnekte yalnız 3 °C artışa yeter. Kartta 15 °C’den 45 °C’ye, yani 30 °C artış verilmiştir.",
+        "1800 J, 120 J/°C ile 15 °C değişime karşılık gelir. Buradaki 15 °C başlangıç sıcaklığıdır; gerçek değişim son ile ilk değerin farkıdır.",
+        "Doğru. 0,200 kg·600 J/(kg·°C)·30 °C=3600 J; hem kütle birimi hem sıcaklık farkı doğru kullanılmıştır.",
+        "5400 J, 120 J/°C ile son sıcaklık olan 45’i doğrudan çarpmakla çıkar. Başlangıçtaki 15 °C çıkarılmadığı için enerji fazla bulunmuştur."
+      ],
+      "commonError": "Gramı kg’a çevirmeden sayıları çarpmak bin kat hata doğurur. Birim dönüşümünü yapsan da 45’i sıcaklık değişimi sayarsan başlangıç sıcaklığını silmiş olursun.",
+      "check": "Enerjiyi mc’ye geri böl: 3600/(0,200·600)=30 °C artış bulunur. Başlangıç 15 °C’ye bu artışı eklemek verilen son 45 °C’yi yeniden üretir."
+    }
+  },
+  {
+    "id": "isi-ve-sicaklik-q5",
+    "identity": "[\"isi-ve-sicaklik-q5\",\"Isı alan örnek için Q pozitif seçiliyor. 0,40 kg bir örnek, c=500 J/(kg·°C) sabitken 60 °C’den 20 °C’ye soğuyor; hâl değişimi yok. Örneğin işaretli Q değeri nedir?\",\"\",[\"−4000 J\",\"+4000 J\",\"0 J\",\"+8000 J\",\"−8000 J\"],4,\"ΔT=20−60=−40 °C. Q=0,40·500·(−40)=−8000 J bulunur. Eksi işaret örneğin ısı verdiğini gösterir; verdiği enerjinin büyüklüğü 8000 J’dir. İşaretli Q sorulduğu için +8000 J cevap olmaz. Sıcaklık değiştiğinden Q da bu modelde sıfır değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Alınan ısı pozitif seçildiğinde hâl değiştirmeyen sabit c modelinde Q=mc(Tson−Tilk) işaretli yazılır. Pozitif m ve c, sıcaklık değişiminin işaretini değiştirmez; enerji verme miktarının büyüklüğü ise |Q| ile gösterilir."
+      ],
+      "strategy": "Önce sistem olarak soğuyan örneği seç ve istenenin işaretli Q olduğunu işaretle. Son−ilk sıcaklık farkını koruyarak çarpımı yap; en son işaretin enerji aktarım yönüyle uyumunu sınayarak seçeneği belirle.",
+      "steps": [
+        "Örnek 60 °C’den 20 °C’ye geliyor. ΔT=20−60=−40 °C yazılır; soğuma nedeniyle fark negatiftir.",
+        "Örneğin ısı sığası mc=0,40·500=200 J/°C’dir. Bu pozitif katsayıyı −40 °C ile çarp.",
+        "Q=200·(−40)=−8000 J olur. Bu eksi işaret örneğin enerji verdiğini bildirir; sorulan işaretli değer korunur."
+      ],
+      "optionReasons": [
+        "−4000 J, 200 J/°C’lik örnek için −20 °C değişim verir. Verilen soğuma 60’tan 20’ye olduğu için değişim −40 °C’dir.",
+        "+4000 J hem örneğin enerji aldığını söyler hem yalnız +20 °C artışa karşılık gelir. Karttaki süreç bir soğumadır.",
+        "0 J, bu sabit c ve hâl değişimsiz modelde sıcaklık değişimi sıfır olsaydı uygun olurdu. Burada örnek 40 °C soğumaktadır.",
+        "+8000 J verilen enerji miktarının büyüklüğü olabilir; fakat işaretli Q değildir. Alınan ısı pozitif seçildiği için enerji veren örneğin Q’su negatiftir.",
+        "Doğru. ΔT=−40 °C ve mc=200 J/°C olduğundan Q=−8000 J’dir; işaret enerji çıkışını gösterir."
+      ],
+      "commonError": "Verdiği enerjinin pozitif büyüklüğü ile örneğin işaretli ısı alışverişini karıştırma. Kök açıkça işaretli Q istediği için hesap sonunda eksi işaretini atma.",
+      "check": "Q/C=−8000/200=−40 °C verir. Bunu ilk 60 °C’ye eklediğinde 20 °C bulunması hem büyüklüğü hem enerji çıkışının işaretini denetler."
+    }
+  },
+  {
+    "id": "isi-ve-sicaklik-q6",
+    "identity": "[\"isi-ve-sicaklik-q6\",\"Aynı madde ve aynı hâlden alınan X ve Y örneklerinde mY=3mX, öz ısı c sabittir. Isı sığası C=mc olduğuna göre hangi ilişki doğrudur?\",\"\",[\"cY=3cX; CY=CX\",\"cY=cX; CY=3CX\",\"cY=cX/3; CY=CX\",\"cY=3cX; CY=9CX\",\"cY=cX; CY=CX/3\"],1,\"Aynı madde, hâl ve koşullarda c kütleye bağlı değildir: cY=cX. Isı sığası C=mc olduğundan üç kat kütle üç kat C verir: CY=3CX. Öz ısıyı da üçle çarpmak aynı kütle etkisini iki kez sayar; kapasiteyi azaltmaksa C=mc ile çelişir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Öz ısı c, aynı madde ve hâl için verilen sabit koşullarda birim kütleye ait özelliktir. Isı sığası C ise örneğin tamamına aittir ve C=mc ile hesaplanır; iki niceliğin birimleri de birbirinden farklıdır."
+      ],
+      "strategy": "Önce malzeme ve hâl bilgilerinin c karşılaştırmasına etkisini belirle. Sonra iki C=mc eşitliğini oranlayarak yalnız verilen kütle çarpanının toplam ısı sığasına nasıl geçtiğini izle.",
+      "steps": [
+        "X ile Y aynı madde ve aynı hâldedir; öz ısı c sabit verilmiştir. Bu yüzden cY/cX=1’dir.",
+        "Isı sığalarının oranını CY/CX=(mYcY)/(mXcX) olarak yaz. Aynı öz ısılar birbirini götürür.",
+        "mY=3mX olduğundan CY/CX=3 bulunur. İki ilişki birlikte cY=cX ve CY=3CX şeklindedir."
+      ],
+      "optionReasons": [
+        "Kütlenin üç kat olması birim kütle özelliği c’yi üç kat yapmaz. Üstelik C=mc’de artan kütleye rağmen toplam kapasitenin aynı kalması verilen sabit c ile uyuşmaz.",
+        "Doğru. Aynı sabit c korunur; C=mc’de kütle üç katına çıktığı için Y örneğinin toplam ısı sığası da üç kat olur.",
+        "Öz ısıyı üçte bire düşürmek, kütle artışını c ile telafi ederek C’yi yapay biçimde sabit tutar. Kartta c’nin sabit olduğu açıkça verilmiştir.",
+        "Hem m’yi hem c’yi üç kat sayınca C dokuz kat çıkar; fakat ikinci üç çarpanı geçersizdir. Madde ve hâl aynı, c sabittir.",
+        "c’nin aynı kalması uygundur; ancak kapasitenin üçte bire düşmesi kütleyle ters orantı kurar. C=mc, aynı c için kütleyle doğru orantılıdır."
+      ],
+      "commonError": "Örneğin toplam enerji ihtiyacını anlatan C ile kilogram başına özelliği anlatan c’yi aynı harf gibi kullanma. Kütle çarpanını hem c’ye hem C’ye uygulama.",
+      "check": "İki örneğe aynı küçük sıcaklık artışı verilse QY/QX=CY/CX olur. Y’de üç kat madde varken aynı c ile üç kat enerji gerekmesi, bulunan kapasite oranını doğrular."
+    }
+  },
+  {
+    "id": "isi-ve-sicaklik-q7",
+    "identity": "[\"isi-ve-sicaklik-q7\",\"0,10 kg 80 °C su ile 0,30 kg 20 °C su yalıtılmış düzende ısıl dengeye geliyor. Her ikisi için c aynı ve sabit; kap, iş, hâl değişimi ve kayıp ihmal ediliyor. Denge sıcaklığı kaç °C olur?\",\"\",[\"65\",\"80\",\"25\",\"35\",\"50\"],3,\"Enerji bilançosu 0,10c(Td−80)+0,30c(Td−20)=0’dır. Buradan Td=(0,10·80+0,30·20)/0,40=14/0,40=35 °C çıkar. Soğuk suyun ısı sığası üç kat büyük olduğundan sonuç 20 °C’ye daha yakındır. 50 °C aritmetik ortalama, yalnız ısı sığaları eşitse geçerli olurdu.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yalıtılmış, hâl değişimsiz iki su örneğinde birinin verdiği enerjiyi diğeri alır. Aynı sabit c iki enerji teriminde ortak olduğundan denge hesabında sadeleşebilir; eşit olmayan kütleler yine farklı toplam ısı sığaları oluşturur."
+      ],
+      "strategy": "Sıcak ve soğuk su için tek bir ortak son sıcaklık tanımla. Her örneğin mc(Tson−Tilk) terimini yazıp toplamını sıfıra eşitle; ortak c’yi sadeleştirdikten sonra sıcaklık aralığı ve kütle ağırlığıyla sonucu sınayarak ilerle.",
+      "steps": [
+        "Ortak denge sıcaklığına Td de. Enerji bilançosu 0,10c(Td−80)+0,30c(Td−20)=0 olur; biri enerji verirken diğeri alır.",
+        "c sadeleşince 0,10Td−8+0,30Td−6=0, yani 0,40Td=14 elde edilir. Soğuk örneğin üç kat kütlesi denklemde korunur.",
+        "Td=14/0,40=35 °C bulunur. Sonuç 20 ile 80 arasındadır ve daha büyük kütleli soğuk suyun ilk sıcaklığına daha yakındır."
+      ],
+      "optionReasons": [
+        "65 °C’de sıcak su 0,10c·15=1,5c enerji verirken soğuk su 0,30c·45=13,5c ister. Verilen ve alınan enerji eşit değildir; büyük kütlenin ağırlığı ters kullanılmıştır.",
+        "80 °C’de sıcak su hiç soğumazken soğuk suyu 60 °C ısıtmak gerekir. Dış enerji bulunmayan düzende bu enerji sağlanamaz.",
+        "25 °C’de sıcak su 0,10c·55=5,5c verir; soğuk su yalnız 0,30c·5=1,5c alır. Enerji bilançosunda fazla kalan enerji bu seçeneği dışlar.",
+        "Doğru. 35 °C’de sıcak su 0,10c·45=4,5c verir ve soğuk su 0,30c·15=4,5c alır; yalıtılmış sistemin enerji bilançosu kapanır.",
+        "50 °C, iki başlangıcın aritmetik ortalamasıdır. Ancak bu düzende soğuk suyun kapasitesi üç kat büyüktür; sıcak tarafın 3c kaybı, soğuk tarafın 9c ihtiyacını karşılamaz."
+      ],
+      "commonError": "Aynı madde olmasını eşit ısı sığası var diye okuma. Ortak c sadeleşse bile 0,10 ve 0,30 kg kütle çarpanları denklemden silinmez.",
+      "check": "Denge için sıcak örneğin 45 °C azalışı ile soğuk örneğin 15 °C artışı 3:1 oranındadır. Bu, kapasitelerin ters 1:3 oranıyla çarpıldığında eşit enerji büyüklükleri verir."
+    }
+  },
+  {
+    "id": "isi-ve-sicaklik-q8",
+    "identity": "[\"isi-ve-sicaklik-q8\",\"Yalıtılmış iki örnekten X’in ısı sığası 200 J/°C ve ilk sıcaklığı 80 °C; Y’nin ısı sığası 600 J/°C ve ilk sıcaklığı 20 °C’dir. Kap, iş, tepkime ve hâl değişimi ihmal edilerek ısıl denge sağlanıyor. Denge sıcaklığı kaç °C’dir?\",\"\",[\"35\",\"50\",\"65\",\"80\",\"20\"],0,\"Td=(CXTX+CYTY)/(CX+CY)=(200·80+600·20)/800=28000/800=35 °C. Kontrol: X 200·45=9000 J verir, Y 600·15=9000 J alır. Eşit sıcaklık değişimi beklenmez; kapasitesi üç kat büyük Y’nin değişimi üçte birdir. 65 °C, ağırlıkları yanlış örneğe vermekten doğar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Isı sığası C, bir örneğin tamamının bir derecelik sıcaklık değişimine gereken enerjiyi belirler; Q=CΔT yazılır. C zaten toplam kapasite olduğunda ayrıca kütle veya öz ısı verilmesine ihtiyaç yoktur."
+      ],
+      "strategy": "Kütle aramadan doğrudan verilen iki ısı sığasını kullan. Sıcak X’in kaybettiği CΔT ile soğuk Y’nin kazandığı CΔT’yi eşitle ve ortak son sıcaklığı bu enerji eşitliğinden çöz.",
+      "steps": [
+        "Denge sıcaklığına Td de; X’in verdiği enerji büyüklüğü 200(80−Td), Y’nin aldığı enerji 600(Td−20) jouledür.",
+        "200(80−Td)=600(Td−20) eşitliğini aç: 16000−200Td=600Td−12000; buradan 28000=800Td olur.",
+        "Td=35 °C çıkar. X’in 45 °C soğuması 9000 J, Y’nin 15 °C ısınması da 9000 J verir."
+      ],
+      "optionReasons": [
+        "Doğru. 35 °C için 200·(80−35)=9000 J ve 600·(35−20)=9000 J eşittir; iki örneğin enerji bilançosu sağlanır.",
+        "50 °C, eşit ısı sığaları için ortalama olurdu. Burada X 6000 J verirken Y 18000 J ister; verilen iki kapasite eşit değildir.",
+        "65 °C’de X yalnız 3000 J verirken Y 27000 J almalıdır. Kapasiteleri yanlış başlangıçlarla ağırlıklandırmak böyle bir sıcaklığı üretir; gerçek enerji eşitliği sağlanmaz.",
+        "80 °C’de X’ten enerji çıkmaz; Y’nin 20’den 80’e çıkması için 36000 J gerekir. Yalıtılmış iki örnekte bu seçeneğin enerji kaynağı yoktur.",
+        "20 °C’de Y hiç enerji almazken X’in 80’den 20’ye soğumasıyla 12000 J açığa çıkar. Bu enerji hesaba katılmadığı için denge kurulamaz."
+      ],
+      "commonError": "200 ve 600 J/°C değerlerini öz ısı sanıp yeniden bir kütleyle çarpma. Ayrıca aynı son sıcaklık, iki örnekte eşit sıcaklık değişimi veya eşit iç enerji demek değildir.",
+      "check": "Kapasitesi büyük Y yalnız 15 °C değişirken X 45 °C değişir; oran 3’tür. Bu oran CX/CY=1/3 ile enerji eşitliği üzerinden ters ilişkilidir ve 9000 J’lik iki bilanço terimini doğrular."
+    }
+  },
+  {
+    "id": "isi-ve-sicaklik-q9",
+    "identity": "[\"isi-ve-sicaklik-q9\",\"Hâl değiştirmeyen ve öz ısıları sabit iki örneğin düşey ekseni sıcaklık T, yatay ekseni alınan enerji Q olan doğrusal grafiklerinde eğimler sırasıyla 0,020 °C/J ve 0,010 °C/J’dir. Isı sığaları CX ve CY için CX/CY oranı nedir?\",\"\",[\"4\",\"1/4\",\"1/2\",\"1\",\"2\"],2,\"T–Q grafiğinin eğimi 1/C olduğundan CX=1/0,020=50 J/°C, CY=1/0,010=100 J/°C bulunur. CX/CY=1/2’dir. Eğimi doğrudan C sanıp 2 demek eksenleri ters okumaktır. Kütleler verilmediği için öz ısı oranı değil, yalnız ısı sığası oranı çıkarılabilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir grafiğin eğimi düşey nicelik değişiminin yatay nicelik değişimine oranıdır. Hâl değişimi olmadan sabit ısı sığası için Q=CΔT yazılır; T düşey, Q yatay olduğunda eğimin birimi °C/J olur ve kapasite tersinde yer alır."
+      ],
+      "strategy": "Önce eksen adlarından eğimin hangi oranı gösterdiğini yaz; ardından her örneğin ısı sığasını eğimden türet. İstenen CX/CY oranını, eğimleri doğrudan bölmenin yönünü ayrıca denetleyerek oluştur.",
+      "steps": [
+        "Verilen T–Q grafiğinde eğim s=ΔT/ΔQ’dur. Q=CΔT bağıntısından s=1/C elde edilir.",
+        "X için CX=1/0,020=50 J/°C, Y için CY=1/0,010=100 J/°C hesaplanır; kapasite büyüdükçe bu eksenlerde eğim küçülür.",
+        "İstenen oran CX/CY=50/100=1/2’dir. Aynı sonuç sY/sX=0,010/0,020 ile bulunur."
+      ],
+      "optionReasons": [
+        "4, eğim büyüklükleri oranını karesine yükseltmekle elde edilebilir; ancak Q=CΔT ilişkisinde böyle bir kare bağımlılığı bulunmaz. Kapasiteler eğimlerin yalnız birinci kuvvetten tersidir.",
+        "1/4, doğru ters eğim oranının karesidir. Soruda kapasite–eğim ilişkisi C=1/s olduğundan oranı bir kez ters çevirmek yeterlidir; karesi alınmaz.",
+        "Doğru. T–Q eğimi 1/C olduğundan CX/CY=sY/sX=0,010/0,020=1/2 bulunur.",
+        "1, kapasitelerin eşit olduğunu söylerdi. Sabit c ve hâl değişimsiz bu doğrularda eşit C eşit eğim gerektirir; verilen eğimler farklıdır.",
+        "2, sX/sY oranıdır. Düşey T, yatay Q olduğundan bu oran CY/CX’i verir; istenen CX/CY bunun tersidir."
+      ],
+      "commonError": "“Daha dikse kapasite büyüktür” ezberini eksenlerden bağımsız kullanma. Bu kart T–Q grafiğidir; Q–T grafiği olsaydı eğim C olurdu.",
+      "check": "Her iki örneğe aynı enerji miktarı verilse X’in sıcaklık artışı eğimler oranı gereği Y’nin iki katı olur. Aynı Q’da iki kat ΔT veren örneğin kapasitesinin yarı olması bulunan oranla tutarlıdır."
+    }
+  },
+  {
+    "id": "isi-ve-sicaklik-q10",
+    "identity": "[\"isi-ve-sicaklik-q10\",\"Normal atmosfer basıncında 0 °C’deki 100 g saf buz-su karışımına, buzun bir bölümü hâlâ kalacak kadar enerji veriliyor. Kap ve çevre kaybı ihmal ediliyor. Bu süreçte hangisi doğrudur?\",\"\",[\"Buz ve su birlikteyken sıcaklık zorunlu olarak 100 °C’ye çıkar.\",\"Verilen enerji yalnız suyun kütlesini yok eder.\",\"Q=mcΔT bütün erime enerjisini tek başına verir.\",\"ΔT=0 olduğundan aktarılan enerji sıfırdır.\",\"Sıcaklık artmadan buzun bir kısmı eriyebilir; iç enerji artar.\"],4,\"Saf suyun normal basınçtaki erime geçişinde buz ve su birlikte kaldığı sürece sıcaklık 0 °C kalabilir; verilen enerji eriyen miktarı ve iç enerjiyi artırır. Erime enerjisi Q=meriyenL ile hesaplanır. Q=mcΔT tek hâldeki sıcaklık değişimine aittir, bu sabit sıcaklıktaki erimeyi açıklamaz. Kütle yok olmaz; katıdan sıvıya geçer.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sabit basınçta saf maddenin iki hâli birlikte bulunurken verilen enerji faz oranını değiştirebilir. Bu geçişte iç enerji değişimi yalnız sıcaklık değişiminden ibaret değildir; Q=mcΔT tek hâldeki sıcaklık değişiminin hesabıdır."
+      ],
+      "strategy": "Önce son durumda hâlâ buz bulunması koşulunu kullanarak sürecin hangi basamakta kaldığını belirle. Sıcaklığın davranışıyla enerji aktarımını ayrı değerlendir; erimeyi tek-hâl ısınma bağıntısına zorlamadan seçenekleri karşılaştır.",
+      "steps": [
+        "Başlangıçta saf buz ve su normal basınçta 0 °C’de birlikte bulunuyor; sistem erime geçişindedir.",
+        "Enerji verilmesine rağmen buzun bir bölümü kalmaktadır. İki hâl birlikte sürdüğü için bu erime basamağı boyunca sıcaklık 0 °C’de kalır.",
+        "Verilen enerji buzun bir kısmının sıvıya geçmesine ve iç enerjinin artmasına katkı yapar. Sıcaklık artmadan enerji alınması bu nedenle mümkündür."
+      ],
+      "optionReasons": [
+        "100 °C bu koşullardaki kaynama sınırıdır; buzun kaldığı 0 °C erime basamağının son sıcaklığı değildir. İki hâl birlikte sürerken 100 °C’ye zorunlu çıkış olmaz.",
+        "Faz değişimi suyun kütlesini yok etmez; buzdan sıvıya geçen miktarı değiştirir. Enerjiyi yalnız kütle kaybına bağlamak verilen erimeyi açıklamaz.",
+        "Q=mcΔT, aynı hâldeki sıcaklık değişiminin modelidir. ΔT=0 olan erime enerjisi için faz değiştiren kütleye ait Q=meriyenL terimi gerekir.",
+        "ΔT=0 olması enerji aktarımının sıfır olduğunu göstermez. Kart enerji verildiğini ve erimenin sürdüğünü söylüyor; tek-hâl bağıntısını burada kullanmak yanlış sıfır sonucunu üretir.",
+        "Doğru. Buz ve su birlikte kalırken enerji buzun bir kısmını eritebilir; sıcaklık 0 °C’de kalırken sistemin iç enerjisi artar."
+      ],
+      "commonError": "Sabit sıcaklığı sabit iç enerji veya sıfır ısı aktarımı diye yorumlama. Toplam 100 g’ı eriyen kütle sanmak da yanlıştır; başlangıçtaki buz miktarı ve verilen enerji sayısal belirtilmemiştir.",
+      "check": "Geçiş için eriyen miktar pozitifse Q=meriyenL de pozitiftir; bu, ΔT=0 ile çelişmez. Buzun kaldığı bilgisi basamağın bitmediğini doğrular; sayısal eriyen kütle uydurmaya gerek yoktur."
+    }
+  }
+]

@@ -22,9 +22,16 @@ it("preserves all 300 published questions including their passages, choices, hin
 it("teaches all twenty next workbook headings through distinct lessons, full guides, native sheets and branch practice", () => {
   // A 40-item branch can sample fewer lessons than the growing bank.
   // Verify reachability through actual seeded attempts instead of one preview.
+  const catalogue = examCatalogue();
+  const next = studyTopics.slice(58, 78);
+  const neededSubjects = new Set(next.map((topic) => topic.subjectId));
   const branchLessons = new Map(
-    examCatalogue()
-      .filter((e) => e.kind === "branch")
+    catalogue
+      .filter(
+        (e) =>
+          e.kind === "branch" &&
+          neededSubjects.has(e.id.slice("branch-".length)),
+      )
       .map((e) => [
         e.id,
         new Set(
@@ -36,7 +43,6 @@ it("teaches all twenty next workbook headings through distinct lessons, full gui
         ),
       ]),
   );
-  const next = studyTopics.slice(58, 78);
   expect(next).toHaveLength(20);
   const ids = new Set<string>();
   for (const topic of next) {
@@ -64,7 +70,7 @@ it("teaches all twenty next workbook headings through distinct lessons, full gui
     const sheet = builtInCheatSheets.get(topic.id)!;
     expect(sheet.lessonId).toBe(lesson.id);
     expect(sheet.sections.length).toBeGreaterThanOrEqual(8);
-    const branch = examCatalogue().find(
+    const branch = catalogue.find(
       (e) => e.id === `branch-${lesson.subjectId}`,
     )!;
     expect(branchLessons.get(branch.id)!.has(lesson.id), lesson.id).toBe(true);

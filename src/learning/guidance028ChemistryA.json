@@ -1,0 +1,1182 @@
+[
+  {
+    "id": "m1",
+    "identity": "[\"m1\",\"Molar kütlesi 18 g/mol olan suyun 36 gramı kaç moldür?\",\"\",[\"1\",\"2\",\"18\"],1,\"36/18=2 mol.\"]",
+    "guidance": {
+      "knowledge": [
+        "Mol, madde miktarının birimidir. Molar kütle M, bir mol maddenin kütlesini belirtir; g/mol birimi gram ile mol arasında dönüşüm kurar.",
+        "Bir örneğin kütlesi m ise m=nM ilişkisi geçerlidir. Bölme işleminde g birimi sadeleşerek mol kalmalıdır."
+      ],
+      "strategy": "Verilen kütleyi, bir mollük su paketinin kütlesiyle karşılaştır; kaç eş paket bulunduğunu bulduktan sonra çarparak başlangıç kütlesine dön.",
+      "steps": [
+        "18 g/mol, her 18 g suyun bir mol olduğunu söyler. Sorudaki 36 g için 18 g’lık paketleri sayacağın bir bölme kur.",
+        "36 g ÷ (18 g/mol) işlemini yap: hem 36/18 oranını hesapla hem de sonucun biriminin mol olduğunu göster.",
+        "Bulduğun miktarı 18 g/mol ile çarp. 36 g’a dönen seçenek, molar kütleyi sonuç sanan 18’den ve yalnız bir paket sayan 1’den ayrılır."
+      ],
+      "optionReasons": [
+        "1 mol, verilen molar kütleye göre yalnız 18 g suya karşılık gelir; örnekte bunun iki katı kütle vardır.",
+        "Doğru. 36 g ÷ 18 g/mol=2 mol; geri çarpım 2×18=36 g’dır.",
+        "18, soruda molar kütlenin g/mol cinsinden sayısal değeridir. 18 mol suyun kütlesi 18×18=324 g olur; 36 g değildir."
+      ],
+      "commonError": "Molar kütlenin sayısal değerini, örnekteki mol sayısı olarak yazmak.",
+      "check": "Su miktarı 18 g’lık bir molden büyük, 54 g’lık üç molden küçük olmalı; seçtiğin mol sayısı bu aralığı ve nM=36 g eşitliğini sağlamalı."
+    }
+  },
+  {
+    "id": "m2",
+    "identity": "[\"m2\",\"1 mol H₂O kaç mol H atomu içerir?\",\"\",[\"1\",\"2\",\"3\"],1,\"Molekül başına 2 H olduğundan 2 mol H atomu bulunur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir molekül formülündeki alt indis, o elementin bir moleküldeki atom sayısını gösterir; yazılmayan alt indis 1’dir.",
+        "Molekül miktarı mol ile verildiğinde aynı atom çarpanı atomların mol miktarına da uygulanır. Molekül molü ile atom molünde sayılan varlık farklıdır."
+      ],
+      "strategy": "Önce suyun bir molekülünde yalnız H sembolüne ait alt indisi oku; sonra bu oranı verilen molekül molüne uygula.",
+      "steps": [
+        "H₂O’da 2, H’ye aittir; O’nun yazılmayan alt indisi 1’dir. Arananın bütün atomlar değil yalnız H atomları olduğunu ayır.",
+        "Her 1 su molekülüne 2 H atomu karşılık geldiğinden oranı 2 mol H / 1 mol H₂O olarak yaz.",
+        "Bu oranı 1 mol H₂O ile çarp; H₂O birimini sadeleştir. H ile O’yu toplayarak bulunan 3’ün neden farklı bir soruyu yanıtladığını kontrol et."
+      ],
+      "optionReasons": [
+        "1 mol, verilen su moleküllerinin miktarıdır. Her molekülde iki H bulunduğu için H atomlarının miktarı bununla aynı kalmaz.",
+        "Doğru. 1 mol H₂O × (2 mol H / 1 mol H₂O)=2 mol H atomudur.",
+        "3 mol, 2 mol H ile 1 mol O’nun toplam atom miktarıdır; soru yalnız hidrojen atomlarını ister."
+      ],
+      "commonError": "H₂O’daki bütün atomları toplayıp yalnız hidrojen için istenen miktara yazmak.",
+      "check": "Sonucun yanına 1 mol O atomu eklendiğinde toplam atom miktarı 3 mol olmalı; H/O atom oranı da 2/1 kalmalıdır."
+    }
+  },
+  {
+    "id": "m3",
+    "identity": "[\"m3\",\"0,5 mol CO₂ kaç mol O atomu içerir?\",\"\",[\"0,5\",\"1\",\"2\"],1,\"0,5×2=1 mol O atomu.\"]",
+    "guidance": {
+      "knowledge": [
+        "CO₂ formülünde her molekül bir C ve iki O atomu içerir. Atom miktarı aranırken molekül miktarı ilgili alt indisle çarpılır.",
+        "Alt indis bir sayım oranıdır; örnek yarım mol de olsa molekül başına atom oranı değişmez."
+      ],
+      "strategy": "Oksijen atomu ile CO₂ molekülünü ayrı sayılan varlıklar olarak yaz; molekülden O atomuna geçiş oranını yarım mollük örneğe uygula.",
+      "steps": [
+        "CO₂’nin 2 alt indisinin oksijene ait olduğunu belirle. Böylece 1 mol CO₂ başına kaç mol O atomu geldiğini kurabilirsin.",
+        "0,5 mol CO₂ × (2 mol O / 1 mol CO₂) çarpımını yaz; CO₂ birimi sadeleşir.",
+        "0,5×2 çarpımını hesapladıktan sonra C miktarını da 0,5 mol alıp O/C oranının 2 olduğunu sınayarak seçeneğini doğrula."
+      ],
+      "optionReasons": [
+        "0,5 mol, CO₂ moleküllerinin ve C atomlarının miktarıdır. O’nun alt indisi 2 olduğu için O miktarı aynı olamaz.",
+        "Doğru. 0,5×2=1 mol O atomu bulunur; bunun 0,5 mol C’ye oranı 2’dir.",
+        "2 mol O, 1 mol CO₂ için geçerlidir. Örnek yarım mol olduğundan bu değerin de yarısı alınmalıdır."
+      ],
+      "commonError": "Bir moleküldeki 2 O bilgisini, örneğin 0,5 mol olmasıyla ölçeklemeden doğrudan mol sonucu yazmak.",
+      "check": "Örneğin iki katı olan 1 mol CO₂, 2 mol O içerir; yarım örnek yarım miktar O içermelidir."
+    }
+  },
+  {
+    "id": "m4",
+    "identity": "[\"m4\",\"M=44 g/mol olan CO₂’nin 0,5 molü kaç gramdır?\",\"\",[\"11\",\"22\",\"88\"],1,\"0,5×44=22 g.\"]",
+    "guidance": {
+      "knowledge": [
+        "Molar kütlenin g/mol birimi, madde miktarını mol cinsinden kütleye çevirmeye yarar: m=nM.",
+        "Aynı madde için kütle mol miktarıyla doğru orantılıdır; bir molden az örnek, bir molün kütlesinden daha hafiftir."
+      ],
+      "strategy": "Bir mollük CO₂’nin kütlesini referans al; verilen mol kesrine göre kütleyi ölçekle ve sonucun referansla büyüklük ilişkisini denetle.",
+      "steps": [
+        "44 g/mol, 1 mol CO₂’nin 44 g olmasıdır. Soruda bunun 0,5 molü, yani yarısı isteniyor.",
+        "0,5 mol × 44 g/mol işlemini kur. Mol birimini sadeleştirip 44’ün yarısını hesapla.",
+        "Bulduğun gram değerini 44 g/mol’e böl. 0,5 molü geri veren seçeneği belirle; 11’in çeyrek, 88’in iki mollük örneğe ait olduğunu ayır."
+      ],
+      "optionReasons": [
+        "11 g için n=11/44=0,25 mol olur. Bu, verilen 0,5 molün yarısıdır.",
+        "Doğru. 0,5×44=22 g; 22/44=0,5 mol geri elde edilir.",
+        "88 g, 44/0,5 hesabından çıkabilir; fakat bu kütle 88/44=2 mol CO₂’ye aittir. Kütleye geçerken bölme değil molar kütleyle çarpma gerekir."
+      ],
+      "commonError": "Yarım mol için molar kütleyi 0,5’e bölerek bir molünkinden daha büyük kütle bulmak.",
+      "check": "Sonuç 44 g’ın yarısı olmalıdır; iki aynı 0,5 mollük örneğin kütleleri toplandığında 44 g elde edilmelidir."
+    }
+  },
+  {
+    "id": "m5",
+    "identity": "[\"m5\",\"Aynı mol sayısındaki He atomları ve H₂ molekülleri için hangisi eşittir?\",\"\",[\"Kütleleri\",\"Saydığımız tanecik sayıları\",\"Toplam atom sayıları\"],1,\"Belirtilen taneciklerin sayısı eşittir. Bir H₂ molekülünde iki atom bulunduğu için toplam atom sayısı eşit değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Mol sayısı n olan bir örnekte belirtilen varlıkların sayısı N=nNₐ’dır. Sayılan varlık atom, molekül veya iyon olarak açıkça adlandırılır.",
+        "Toplam atom sayısına geçmek için her sayılan varlıktaki atom sayısı ayrıca kullanılır. Kütle için ise ilgili maddenin molar kütlesi gerekir."
+      ],
+      "strategy": "He için bir sayım biriminin ne olduğunu, H₂ için ne olduğunu ayrı etiketle; varlık sayısı, içlerindeki atom sayısı ve kütleyi üç ayrı karşılaştırma olarak ele al.",
+      "steps": [
+        "He örneğinde sayılan bir varlık bir He atomudur; H₂ örneğinde bir H₂ molekülüdür. Her ikisine aynı n mol değerini yaz.",
+        "Belirtilen varlık sayıları için iki ayrı N=nNₐ ifadesi kur. Aynı n ve aynı Nₐ kullanıldığında bu iki sayının ilişkisini bul.",
+        "Toplam atom sayısında He için 1, H₂ için 2 çarpanı gerekir. Kütlede de molar kütleler farklıdır; böylece eşitliğin hangi sayım düzeyinde kaldığını seç."
+      ],
+      "optionReasons": [
+        "Kütleler nM ile bulunur. He ile H₂’nin molar kütleleri farklı olduğu için eşit mol, bu iki maddenin kütlelerini eşitlemez.",
+        "Doğru. Sayılan varlıklar He atomu ve H₂ molekülüdür; aynı n mol için her ikisinin sayısı nNₐ’dır.",
+        "Bir He varlığında bir atom, bir H₂ molekülünde iki atom vardır. Aynı mol için H₂ örneğinin toplam atom sayısı He’ninkinin iki katıdır."
+      ],
+      "commonError": "Atom ile molekülü aynı varlıkmış gibi sayıp eşit molekül/atom sayısını eşit toplam atom sayısı sanmak.",
+      "check": "Birer tane örnek varlık çiz: He tek atom, H–H iki atom içerir. Bu iki çizimi aynı sayıda çoğaltmak, varlık sayılarını eşit tutarken toplam atomları eşitlemez."
+    }
+  },
+  {
+    "id": "sim-1",
+    "identity": "[\"sim-1\",\"Hangi amaç tarihsel simya uğraşlarına özgü tipik bir örnektir?\",\"\",[\"Bir hız yasasını kontrollü deneyle sınamak\",\"Değersiz metali altına dönüştürmek\",\"Ölçüm belirsizliğini hesaplamak\"],1,\"Altına dönüştürme, simyanın tarihsel amaçlarından biridir; bilimsel yöntem uygulandığını tek başına göstermez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tarihsel simya, maddeyi dönüştürme denemeleri ve çeşitli tekniklerle birlikte ölümsüzlük veya değerli madde arayışları içeriyordu.",
+        "Bir çalışmanın amacını tanımak ile yönteminin ölçüme ve sınamaya dayanıp dayanmadığını değerlendirmek farklı işlerdir."
+      ],
+      "strategy": "Seçenekleri önce tarihsel bir dönüşüm arayışı ile ölçümü sınayan çağdaş bilimsel işlemler olarak karşılaştır; soru teknik değil amaç soruyor.",
+      "steps": [
+        "Hız yasası bir tepkimenin hızını değişkenlerle ilişkilendirir; kontrollü deney bu ilişkinin sınanmasına yöneliktir. Bu seçeneğin hangi tür amaç taşıdığını belirle.",
+        "Ölçüm belirsizliği, ölçülen değerin güvenilirliğini nicel olarak ele alır. Onu da maddeyi değerli başka maddeye dönüştürme arayışından ayır.",
+        "Geriye kalan metal dönüşümü hedefini tarihsel simyanın değerli madde arayışıyla ilişkilendir. Bir hedefin tarihsel olması, gerçekleştiği veya yönteminin bilimsel olduğu anlamına gelmez."
+      ],
+      "optionReasons": [
+        "Hız yasasını kontrollü deneyle sınamak, açıklamanın deney verisiyle test edilmesidir; sorunun istediği tarihsel simya amacı değildir.",
+        "Doğru. Değersiz metali altına dönüştürme arayışı simyanın tipik tarihsel amaçlarındandır; seçenek bu arayışı anlatır.",
+        "Ölçüm belirsizliğini hesaplamak, ölçüm sonucunu nicel değerlendirme işidir; simyanın değerli metal elde etme türündeki tipik amacı değildir."
+      ],
+      "commonError": "Eski dönemlerde deney yapılmış olmasını, bütün simya amaçlarının bilimsel olarak gerçekleşmiş olmasıyla karıştırmak.",
+      "check": "Seçtiğin ifade bir hedef mi, yoksa ölçümü veya yasayı sınama yöntemi mi? Soru tarihsel hedef istediği için bu ayrımı yeniden yap."
+    }
+  },
+  {
+    "id": "sim-2",
+    "identity": "[\"sim-2\",\"Tuzlu sudaki su önce buharlaştırılıyor, sonra soğutulup başka kapta sıvı olarak toplanıyor. Hangi işlem anlatılıyor?\",\"\",[\"Yalnız süzme\",\"Damıtma\",\"Öğütme\"],1,\"Damıtma, buharlaşma ile ardından yoğunlaşma ve toplama aşamalarını birlikte içerir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Buharlaşma sıvının gaz hâline, yoğunlaşma gazın sıvı hâline geçmesidir; bu hâl değişimlerinde suyun kimyasal kimliği korunur.",
+        "Ayırma tekniğini tanımak için başlangıç maddesinden çok ardışık işlemlere ve hangi ürünün hangi kapta toplandığına bakılır."
+      ],
+      "strategy": "Süreçteki suyun izini sür: ilk kapta sıvıdan buhara, ardından başka kapta yeniden sıvıya geçişi tek bir işlem dizisi olarak eşleştir.",
+      "steps": [
+        "İlk aşamada su buharlaşır. Sadece bu aşama anlatılsaydı geride kalan katıyı elde etmeye odaklanan buharlaştırma düşünülebilirdi.",
+        "Sonraki aşamada buhar soğutuluyor ve sıvı su başka kapta toplanıyor. Bu ek bilgi, işlemin yalnız buharlaştırma olmadığını gösterir.",
+        "Buharlaştırma, yoğunlaştırma ve toplama dizisini seçeneklerdeki teknikle eşleştir; süzmenin gözenek, öğütmenin ise mekanik boyut küçültme kullandığını ayır."
+      ],
+      "optionReasons": [
+        "Yalnız süzmede karışım bir gözenekli ortamdan geçirilir. Buradaki buhar oluşturma, soğutma ve başka kapta toplama dizisini açıklamaz.",
+        "Doğru. Damıtma, suyun buharlaştırılıp ardından yoğunlaştırılarak ayrı kapta toplanmasını kapsar.",
+        "Öğütme tanecik boyutunu mekanik olarak küçültür; suyu buharlaştırıp yoğunlaştırarak başka kapta toplamaz."
+      ],
+      "commonError": "Buharlaşma sözcüğünü görünce yoğunlaştırma ve ayrı kapta toplama aşamalarını okumadan işlemi adlandırmak.",
+      "check": "Çıkış ürününe bak: ayrı kapta yeniden sıvı su elde edilmesi, yalnız gözenekten geçirme veya katıyı ufalama ile açıklanabilir mi?"
+    }
+  },
+  {
+    "id": "sim-3",
+    "identity": "[\"sim-3\",\"Çözünmüş sofra tuzu içeren su sıradan süzgeçten geçiriliyor. Hangisi beklenir?\",\"\",[\"Bütün tuz süzgeçte kalır.\",\"Su elementlerine ayrılır.\",\"Çözünmüş tuz suyla birlikte filtrata geçebilir.\"],2,\"Sıradan süzme, suda çözünmüş tuzu sudan ayırmaz; fiziksel ayırma suyu elementlerine de dönüştürmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Çözünmede sofra tuzu, suda çok küçük ölçekte dağılmış iyonlar hâlindedir. Sıradan süzme ise uygun büyüklükteki çözünmemiş katıları gözeneklerde tutmaya yarar.",
+        "Filtrat, süzgeçten geçen sıvı kısmın adıdır. Fiziksel ayırma, bileşiğin atomlarını başka elementlere dönüştürmez."
+      ],
+      "strategy": "Önce tuzun çözünmüş mü yoksa askıda katı mı olduğunu belirle; sonra sıradan süzgecin bu tanecikleri tutup tutamayacağını ve suya kimyasal işlem uygulanıp uygulanmadığını sorgula.",
+      "steps": [
+        "Kökteki “çözünmüş” sözcüğü, tuzun iri kristaller hâlinde askıda olmadığını belirtir. Süzgecin katı tuz kristallerini tutacağı bir düzenek varsayma.",
+        "Sıradan süzgecin gözenekleri çözeltideki iyonları seçerek ayırmaz. Suyun geçtiği filtratta çözünmüş tuzun bulunup bulunamayacağını değerlendir.",
+        "İşlemde suyun bağlarını parçalayan bir kimyasal değişim de verilmemiştir. Hem çözünmüş taneciğin geçişiyle hem suyun kimliğinin korunmasıyla uyuşan seçeneği bul."
+      ],
+      "optionReasons": [
+        "Bütün tuzun süzgeçte kalması, sıradan süzgecin çözünmüş iyonları tamamen tuttuğunu varsayar; bu süzme böyle bir ayırma sağlamaz.",
+        "Süzgeçten geçirme suyu H ve O elementlerine ayrıştıran bir işlem değildir; bu iddia fiziksel süzmeye kimyasal ayrışma yükler.",
+        "Doğru. Çözünmüş tuz iyonları suyla filtrata geçebilir; sıradan süzme çözünmüş sofra tuzunu sudan ayırmaz."
+      ],
+      "commonError": "Suda çözünmüş iyonları, süzgeçte kalabilecek çözünmemiş iri tuz taneleriyle aynı kabul etmek.",
+      "check": "Filtrattan suyu uygun biçimde uzaklaştırmayı düşün: tuz geride kalabiliyorsa tuzun süzgeçten geçtiği anlaşılır; ilk süzme onu yok etmemiştir."
+    }
+  },
+  {
+    "id": "sim-4",
+    "identity": "[\"sim-4\",\"Bir çalışmanın bilimsel niteliğini değerlendirmek için en güçlü ölçüt hangisidir?\",\"\",[\"Kontrollü, tekrarlanabilir ölçümlerle açıklamayı sınaması\",\"Cam kap kullanması\",\"Çok eski bir yöntem kullanması\"],0,\"Kontrollü ve tekrarlanabilir ölçümler, açıklamayı sınanabilir kılar. Cam kap veya tarih tek başına yeterli değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bilimsel bir açıklama gözlem ve deneyle sınanabilir olmalıdır. Kontrollü karşılaştırma, etkisi incelenen değişkeni diğer etkilerden ayırmaya yardım eder.",
+        "Tekrarlanabilir ölçüm, sonucun yalnız bir defalık izlenime dayanmasını önler; kullanılan kabın malzemesi tek başına bu güvenceyi sağlamaz."
+      ],
+      "strategy": "Her seçeneğin iddiayı yanlışlayabilecek veya yeniden sınayabilecek veri üretip üretmediğini sor; araç ve yaş bilgisini yöntem kanıtından ayır.",
+      "steps": [
+        "Cam kabın ne işe yaradığını düşün: maddeyi tutabilir, fakat tek başına değişkenleri kontrol etmez veya açıklamayı test etmez.",
+        "Bir yöntemin eski olması da sonucu kendiliğinden doğrulamaz. Aynı işlem tekrarlandığında karşılaştırılabilir ölçümler üretmesi ayrıca gerekir.",
+        "Diğer seçenekte kontrol, tekrar ve ölçümün birlikte bulunup bulunmadığını denetle. Açıklamayı verilerle sınayan ölçütü bu karşılaştırmadan seç."
+      ],
+      "optionReasons": [
+        "Doğru. Kontrollü, tekrarlanabilir ölçümler açıklamanın sınanmasını sağlar; seçenek doğrudan bilimsel yöntemin kanıt üretme biçimini anlatır.",
+        "Cam kap bilimsel çalışmada da başka uğraşlarda da kullanılabilir; kabın varlığı tek başına kontrollü veya tekrarlanabilir ölçüm göstermez.",
+        "Çok eski olmak yöntemin tarihini bildirir; açıklamanın ölçümlerle sınandığını veya sonucun güvenilir olduğunu göstermez."
+      ],
+      "commonError": "Bilimsel görünüşlü bir aracı veya uzun geçmişi, açıklamanın sınandığının kanıtı saymak.",
+      "check": "Seçtiğin ölçüt karşılanınca başka biri açıklamayı aynı koşullarda yeniden sınayabilir mi? Kabın türü veya yöntemin yaşı bu soruya tek başına yanıt vermez."
+    }
+  },
+  {
+    "id": "sim-5",
+    "identity": "[\"sim-5\",\"Güncel bir laboratuvarda damıtma kullanılması için hangisi söylenebilir?\",\"\",[\"Bu çalışma mutlaka simyadır.\",\"Eski bir teknik çağdaş bilimsel çalışmada da kullanılabilir.\",\"Yöntemin eski olması ölçüm yapılmasını engeller.\"],1,\"Geçmişten gelen bir teknik modern kimyada kullanılabilir; çalışmanın nasıl sınandığı ayrıca değerlendirilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir teknik farklı dönemlerde farklı amaçlar ve denetimlerle kullanılabilir. Tekniğin tarihsel kökeni, güncel çalışmanın kanıt toplama biçimini tek başına belirlemez.",
+        "Damıtma fiziksel özellik farklarından yararlanan bir ayırma tekniğidir; kullanılan tekniğin adı ile çalışmanın bilimsel niteliği ayrı değerlendirilir."
+      ],
+      "strategy": "Damıtmanın geçmişte kullanılmış olması ile bugün nasıl uygulandığını iki ayrı bilgi olarak ele al; “mutlaka” ve “engeller” iddialarının zorunlu olup olmadığını sınayarak ilerle.",
+      "steps": [
+        "Kökte yalnız güncel laboratuvarda damıtma kullanıldığı söyleniyor. Bu bilgi, çalışmada ölçüm yapılıp yapılmadığını veya hangi açıklamanın sınandığını tek başına vermez.",
+        "Eski bir ayırma tekniğiyle sıcaklık ve ürün miktarı ölçülen kontrollü bir güncel deney yapılabileceğini düşün. Bu örnek, ölçümün engellendiği iddiasını test eder.",
+        "Tekniğin eski oluşundan çalışmanın zorunlu olarak simya olduğu sonucuna geçilemeyeceğini belirle; geçmiş teknik ile çağdaş kullanımın birlikte mümkün olduğunu söyleyen seçeneği bul."
+      ],
+      "optionReasons": [
+        "Damıtmanın tarihsel kullanımı, güncel çalışmayı mutlaka simya yapmaz. Çalışmanın amacı ve sınama yöntemi ayrıca bilinmelidir.",
+        "Doğru. Geçmişten gelen bir teknik, ölçümler ve kontrollü sınamalar içeren çağdaş bilimsel çalışmada da kullanılabilir.",
+        "Yöntemin eski olması ölçüm yapılmasını engellemez; damıtmada örneğin sıcaklık ve toplanan sıvı miktarı ölçülebilir."
+      ],
+      "commonError": "Tekniğin tarihini, o tekniği kullanan her çalışmanın zorunlu niteliği gibi görmek.",
+      "check": "Aynı damıtma düzeneğinde termometre ve miktar ölçümü kullanılabiliyorsa “eski yöntem ölçümü engeller” iddiası geçmez; seçeneğin bu karşı örnekle uyumunu kontrol et."
+    }
+  },
+  {
+    "id": "dis-1",
+    "identity": "[\"dis-1\",\"Bir içme suyu örneğindeki magnezyum iyonu miktarı ölçülüyor. Araştırmanın baskın odağı hangisidir?\",\"\",[\"Analitik kimya\",\"Polimer kimyası\",\"Endüstriyel kimya\"],0,\"Örnekteki madde miktarının belirlenmesi nicel analizdir; analitik kimyanın kapsamındadır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kimyanın alt alanları, araştırmada hangi sorunun sorulduğuna göre ayrılır. “Hangi madde var?” nitel, “Ne kadar var?” nicel belirleme sorusudur.",
+        "Aynı örnek farklı disiplinlerde incelenebilir; örneğin suda bir iyonun miktarını ölçmek ile su arıtma tesisini tasarlamak aynı baskın hedef değildir."
+      ],
+      "strategy": "Araştırmanın fiilini ve ölçtüğü çıktıyı işaretle; örneğin su olmasına değil, iyonun miktarını belirleme amacına uyan alanı seç.",
+      "steps": [
+        "Kökte ölçülenin magnezyum iyonu miktarı olduğunu belirle. İstenen, yeni madde üretmek veya büyük molekül tasarlamak değildir.",
+        "Miktarın ölçülmesini nicel analiz olarak sınıflandır; bu işlemi fabrikadaki üretim süreci geliştirmeden ayır.",
+        "Seçeneklerin odağını karşılaştır: polimer alanı büyük molekülleri, endüstri alanı üretim süreçlerini ele alır. Nicel belirlemeyi doğrudan kapsayan alanı bul."
+      ],
+      "optionReasons": [
+        "Doğru. Analitik kimya örnekteki maddelerin türünü ve miktarını belirler; Mg iyonu miktarının ölçümü nicel analizdir.",
+        "Polimer kimyası büyük moleküllerin yapısı ve senteziyle ilgilenir. Burada bir polimer geliştirilmesi değil, sudaki iyon miktarının ölçülmesi verilmiştir.",
+        "Endüstriyel kimya üretim süreçlerini ölçek, verim ve maliyet yönünden ele alır. İçme suyu örneği alınmış olması, bu nicel ölçümün baskın odağını üretim süreci yapmaz."
+      ],
+      "commonError": "Örneğin günlük yaşamda veya bir tesiste kullanılabilmesini, araştırmanın baskın disiplinini belirleyen ölçüt sanmak.",
+      "check": "Araştırma sonunda elde edilen çıktı bir iyon miktarı mı, yeni lif mi, üretim planı mı? Seçtiğin alan ilk çıktıyı doğrudan açıklamalıdır."
+    }
+  },
+  {
+    "id": "dis-2",
+    "identity": "[\"dis-2\",\"Bir enzimin hücredeki metabolik tepkimedeki görevi inceleniyor. Hangi alan doğrudan ilgilidir?\",\"\",[\"Polimer kimyası\",\"Biyokimya\",\"Yalnız endüstriyel kimya\"],1,\"Canlıdaki moleküler yapı ve kimyasal değişimler biyokimyanın odağıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Metabolizma, canlıdaki kimyasal tepkimelerin bütünüdür. Enzimler bu tepkimelerde kataliz görevi üstlenebilir.",
+        "Bir molekülün büyük olması ile o molekülün canlıdaki işlevinin araştırılması farklı odaklardır; disiplin seçiminde sorulan ilişki belirleyicidir."
+      ],
+      "strategy": "“Hücre”, “metabolik tepkime” ve “görev” bilgilerini birlikte kullan; yalnız enzimin molekül büyüklüğünden veya üretilebilmesinden alan seçme.",
+      "steps": [
+        "İncelenen olayın hücre içinde gerçekleşen bir kimyasal tepkime olduğunu belirle; soru bir fabrikanın üretim koşullarını vermiyor.",
+        "Enzimin bu tepkimedeki görevi, canlıdaki moleküllerin kimyasal işleyişine ilişkin bir sorudur. Molekülün yapısından çok işlev ilişkisini izle.",
+        "Polimer seçeneğinin büyük molekül odağıyla “yalnız endüstriyel” seçeneğinin üretim odağını bu görevle karşılaştır; canlı kimyasını doğrudan ele alan alanı ayır."
+      ],
+      "optionReasons": [
+        "Birçok enzim protein yapılı büyük molekül olsa da burada polimer sentezi veya zincir yapısı değil, hücredeki metabolik görevi soruluyor; baskın alan polimer kimyası değildir.",
+        "Doğru. Biyokimya, canlılardaki molekülleri ve kimyasal süreçleri inceler; hücresel metabolizmada enzimin görevi bu odağa doğrudan uyar.",
+        "Enzimler endüstride kullanılabilse de kök üretim süreci vermiyor. “Yalnız endüstriyel” ifadesi hücre ve metabolizma bilgisini açıklamaz."
+      ],
+      "commonError": "Enzimin büyük bir molekül olabilmesini, hücresel görevi sorulan her araştırmanın polimer kimyası olduğu şeklinde yorumlamak.",
+      "check": "Hücre içindeki tepkime ve enzimin işlevi birlikte korununca seçtiğin alan hâlâ doğrudan ilgili mi? Sonucu yalnız fabrikada kullanım olasılığına dayandırma."
+    }
+  },
+  {
+    "id": "dis-3",
+    "identity": "[\"dis-3\",\"Sıcaklık arttığında bir tepkimenin hızının nasıl değiştiği inceleniyor. Baskın disiplin hangisidir?\",\"\",[\"Analitik kimya\",\"Organik kimya\",\"Fizikokimya\"],2,\"Sıcaklık, enerji ve tepkime hızı ilişkileri fizikokimyanın çalışma alanına girer.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tepkime hızı, kimyasal değişimin zamana göre ne kadar hızlı gerçekleştiğini anlatır. Sıcaklık, taneciklerin enerjisini ve tepkimenin hızını etkileyebilen bir koşuldur.",
+        "Bir araştırmada maddenin hangi elementleri içerdiği, miktarının ölçülmesi ve koşulların hız üzerindeki etkisi farklı sorulardır."
+      ],
+      "strategy": "Değiştirilen koşulu ve izlenen büyüklüğü bir değişken çifti olarak yaz; bu koşul–hız ilişkisinin hangi disiplinin odağı olduğunu karşılaştır.",
+      "steps": [
+        "Değiştirilen büyüklük sıcaklık, izlenen büyüklük tepkime hızıdır. Kök belirli bir karbon bileşiğinin yapısını tanımlamıyor.",
+        "Bu incelemede bir numunede ne kadar madde bulunduğu değil, sıcaklık değiştiğinde kimyasal sürecin hızının nasıl değiştiği soruluyor.",
+        "Bu nedenle miktar belirleme ve organik yapı incelemesi seçeneklerini ayır; enerji, koşul ve hız ilişkisini ele alan alanla eşleştir."
+      ],
+      "optionReasons": [
+        "Analitik kimya tür ve miktar belirlemeye odaklanır. Hız ölçümü deneyde kullanılabilse de sorunun baskın amacı sıcaklık–hız ilişkisini açıklamaktır.",
+        "Organik kimya karbon bileşiklerinin yapı ve tepkimelerini inceler. Kökte organik bir madde veya karbon yapısı verilmediğinden yalnız sıcaklık değişiminden bu alan seçilemez.",
+        "Doğru. Fizikokimya sıcaklık, enerji ve tepkime hızı gibi fiziksel koşullarla kimyasal süreçler arasındaki ilişkileri ele alır."
+      ],
+      "commonError": "Bir deneyde ölçüm yapıldığı için araştırmanın amacını incelemeden doğrudan analitik kimya demek.",
+      "check": "Araştırma sorusunu “T değişince hız nasıl değişir?” diye kısalt. Seçtiğin alanın bu iki büyüklük arasındaki bağı açıklaması gerekir; hızın mutlaka aynı oranda artacağını varsayma."
+    }
+  },
+  {
+    "id": "dis-4",
+    "identity": "[\"dis-4\",\"Yeni bir sentetik lifin büyük moleküllü yapısı tasarlanıyor. Hangi disiplin öne çıkar?\",\"\",[\"Yalnız analitik kimya\",\"Polimer kimyası\",\"Yalnız anorganik kimya\"],1,\"Büyük moleküllü polimerlerin yapısı ve sentezi polimer kimyasının odağıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Polimerler, çok sayıda birimin bağlanmasıyla oluşan büyük moleküllerdir; yapı ve sentezleri malzeme özellikleriyle ilişkilidir.",
+        "Sentetik bir lif tasarımında amaç yalnız hazır örneğin miktarını ölçmek değil, molekül yapısını istenen özelliklere göre kurmaktır."
+      ],
+      "strategy": "Kökteki “büyük moleküllü yapı” ve “tasarlama” görevini birlikte değerlendir; malzemenin adından önce bu yapısal ölçeği esas al.",
+      "steps": [
+        "Lif için yeni bir moleküler yapı tasarlandığını belirle. Bu, yalnız lifin bileşiminde ne kadar madde olduğunu ölçme işi değildir.",
+        "Büyük molekülün tekrarlanan birimlerden oluşan zincir yapısıyla ilişkilendirilebildiğini düşün; yapı–özellik ve sentez odağını öne çıkar.",
+        "“Yalnız analitik” seçeneği ölçümü, “yalnız anorganik” seçeneği başka bir kapsamı daraltır. Büyük molekül tasarımını doğrudan adıyla kapsayan alanı seç."
+      ],
+      "optionReasons": [
+        "Yalnız analitik kimya, örnekteki tür ve miktarı belirlemeyi öne çıkarır; yeni bir büyük molekül yapısını tasarlama hedefini tek başına karşılamaz.",
+        "Doğru. Polimer kimyası büyük moleküllerin yapısı ve senteziyle ilgilidir; sentetik lifin molekül tasarımı bu odağa uyar.",
+        "Anorganik kimya farklı element ve bileşik sınıflarını inceleyebilir; ancak kökteki belirleyici büyük molekül tasarımı, “yalnız anorganik” sonucunu gerektirmez."
+      ],
+      "commonError": "Bir malzemenin kimyasal bileşimiyle ilgili olmasını, büyük molekül tasarımı odağını göz ardı etmek için yeterli saymak.",
+      "check": "Tasarımda zincir yapısı veya tekrar eden birimler değiştirilince lifin özellikleri değişebiliyorsa seçtiğin alan bu yapı–özellik bağını ele almalıdır."
+    }
+  },
+  {
+    "id": "dis-5",
+    "identity": "[\"dis-5\",\"Fabrikada aynı kalitedeki ürünü daha yüksek verim ve daha düşük maliyetle üretme süreci geliştiriliyor. Hangisi öne çıkar?\",\"\",[\"Yalnız biyokimya\",\"Yalnız element sembolleri\",\"Endüstriyel kimya\"],2,\"Verim, kalite ve maliyetin üretim ölçeğinde iyileştirilmesi endüstriyel kimyayla ilişkilidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kimyasal üretimde verim, kullanılan girdiden ne kadar ürün elde edildiğiyle; kalite ürünün istenen özellikleri sağlamasıyla ilişkilidir.",
+        "Üretim ölçeğinde süreç geliştirme, kaliteyi korurken kaynak, enerji, süre ve maliyet gibi etkenleri birlikte değerlendirebilir."
+      ],
+      "strategy": "Fabrika bağlamındaki üç hedefi birlikte oku: aynı kalite, daha yüksek verim ve daha düşük maliyet. Bunları tek bir üretim süreci iyileştirmesi olarak sınıflandır.",
+      "steps": [
+        "Kökte yalnız bir maddenin adının veya sembolünün bulunması değil, ürün elde etme sürecinin değiştirilmesi istendiğini saptayarak başla.",
+        "Canlı hücre veya metabolik görev verilmediğinden biyokimya sonucunu gerektirecek özel bir canlılık bağlamı ekleme.",
+        "Kalite–verim–maliyet hedeflerinin birlikte fabrikadaki üretime ait olduğunu kullan; sembol bilgisiyle sınırlı seçeneği de ayırıp süreç geliştirme alanını belirle."
+      ],
+      "optionReasons": [
+        "Yalnız biyokimya, canlıların kimyasal işleyişini gerektiren bir odak olurdu. Kök böyle bir canlı sistemi değil genel fabrika üretimini anlatıyor.",
+        "Element sembolleri maddeleri yazmaya yarar; sembolleri bilmek, verim ve maliyeti birlikte iyileştiren üretim sürecinin disiplini değildir.",
+        "Doğru. Endüstriyel kimya kimyasal üretimin kalite, verim ve maliyet yönünden geliştirilmesiyle ilgilenir."
+      ],
+      "commonError": "Bir kimyasal işlemde kullanılan sembolleri bilmekle, o işlemin üretim ölçeğindeki tasarımını aynı görev sanmak.",
+      "check": "Önerilen alan, kaliteyi sabit tutup girdiden alınan ürünü artırma ve masrafı azaltma hedeflerini birlikte açıklayabiliyor mu?"
+    }
+  },
+  {
+    "id": "sym-1",
+    "identity": "[\"sym-1\",\"Co ve CO yazımları için hangisi doğrudur?\",\"\",[\"Co kobalt sembolü; CO karbon ve oksijen içeren formüldür.\",\"İkisi de yalnız kobaltı gösterir.\",\"Harf büyüklüğü kimyasal yazımda önemsizdir.\"],0,\"Co tek element sembolüdür. CO, ayrı C ve O sembollerinden oluşur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Element sembolünün ilk harfi büyük, varsa ikinci harfi küçüktür. Art arda gelen iki büyük harf ayrı element sembollerini başlatabilir.",
+        "Bir formülde hangi elementlerin bulunduğunu anlamak için harfleri bu yazım kuralına göre birimlere ayırmak gerekir."
+      ],
+      "strategy": "İki yazımı ses benzerliğine göre değil, büyük harfle başlayan sembol sınırlarına göre çözümle; sonra her parçanın element mi formül bileşeni mi olduğunu belirle.",
+      "steps": [
+        "Co yazımında C büyük, o küçüktür; bu iki harfi tek element sembolü olarak birlikte oku.",
+        "CO yazımında O da büyüktür. Böylece C ve O olmak üzere iki ayrı sembol bulunduğunu saptayabilirsin.",
+        "Tek Co sembolünü kobaltla, ayrı C ve O’yu karbon ve oksijenle eşleştir. Harf büyüklüğünü önemsiz sayan seçeneğin bu ayrımı yok ettiğini denetle."
+      ],
+      "optionReasons": [
+        "Doğru. Co kobaltın tek sembolüdür; CO ise C ve O sembollerini, yani karbon ile oksijeni içeren formüldür.",
+        "CO’da O büyük yazıldığı için Co sembolünün ikinci harfi değildir. Bu nedenle iki yazım da yalnız kobaltı göstermez.",
+        "Harf büyüklüğü sembolün nerede bittiğini belirler; Co ile CO’nun farklı anlamları, kimyasal yazımda bunun önemli olduğuna doğrudan örnektir."
+      ],
+      "commonError": "İkinci harfin büyük veya küçük oluşunu görmezden gelip Co ile CO’yu aynı madde gösterimi saymak.",
+      "check": "Her büyük harfin altını çiz: Co’da bir, CO’da iki sembol başlangıcı vardır. Sembol ayrımın bu sayımla tutarlı olmalı."
+    }
+  },
+  {
+    "id": "sym-2",
+    "identity": "[\"sym-2\",\"3H₂O toplam kaç hidrojen atomu içerir?\",\"\",[\"2\",\"3\",\"6\"],2,\"3×2=6 H atomu; ayrıca 3×1=3 O atomu vardır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Formülün başındaki katsayı, formülün gösterdiği varlığın kaç kez alındığını belirtir; formül içindeki bütün atom sayılarını çarpar.",
+        "Alt indis yalnız kendinden önceki element sembolüne aittir. Bir moleküldeki sayı ile bütün örnekteki toplamı ayırmak gerekir."
+      ],
+      "strategy": "Bir su molekülündeki H sayısını önce ayrı bul; sonra aynı molekülden katsayı kadar bulunduğunu kullanarak toplam H sayısına geç.",
+      "steps": [
+        "H₂O’nun H alt indisini oku: bir su molekülündeki hidrojen atomu sayısı 2’dir.",
+        "Baştaki 3, üç su molekülü olduğunu belirtir. H sayımını 2+2+2 biçiminde açarak veya 3×2 çarpımıyla yap.",
+        "Toplamı seçeneklerle eşleştir; 2’nin tek molekülü, 3’ün molekül sayısını temsil ettiğini ayır. O için de 3×1 sayımı yaparak katsayının tüm formüle uygulandığını sınayabilirsin."
+      ],
+      "optionReasons": [
+        "2, yalnız bir H₂O molekülündeki H sayısıdır; baştaki 3 katsayısı uygulanmamıştır.",
+        "3, su moleküllerinin sayısıdır. Her molekülde iki H bulunduğundan toplam H sayısı yalnız katsayıya eşit değildir.",
+        "Doğru. Üç H₂O molekülünde 3×2=6 hidrojen atomu vardır; aynı örnekte 3 oksijen atomu bulunur."
+      ],
+      "commonError": "Baş katsayıyı molekül sayısı yerine yalnız bir atomun alt indisi gibi okumak veya katsayıyı hiç uygulamamak.",
+      "check": "Üç ayrı H–O–H çizimindeki H uçlarını say. Bulduğun sayı, 3×2 hesabını bağımsız olarak doğrulamalı."
+    }
+  },
+  {
+    "id": "sym-3",
+    "identity": "[\"sym-3\",\"Ca(OH)₂ için doğru atom sayıları hangisidir?\",\"\",[\"Ca:2, O:1, H:1\",\"Ca:1, O:2, H:2\",\"Ca:1, O:1, H:2\"],1,\"Ca parantez dışında ve alt indissizdir: 1. OH grubu iki kez alındığı için O:2, H:2.\"]",
+    "guidance": {
+      "knowledge": [
+        "Parantez dışındaki alt indis, parantez içindeki grubun tamamını çoğaltır. Parantez dışında kalan semboller bu çarpanın kapsamında değildir.",
+        "Yazılmayan alt indis 1’dir; atom sayımı yapılırken her element için hangi parantez veya katsayı kapsamında kaldığı belirlenir."
+      ],
+      "strategy": "Ca’yı parantez dışındaki kısım, OH’yi çoğaltılan grup olarak ayır; grubu açık yazarak her elementin toplamını tek tek say.",
+      "steps": [
+        "Ca sembolü parantezin dışındadır ve kendi alt indisi yoktur. Bu nedenle onu OH grubunun 2 çarpanına dahil etme.",
+        "(OH)₂ bölümünü OH+OH biçiminde aç. Bu iki gruptaki O’ları ve H’leri ayrı ayrı say.",
+        "Elde ettiğin üç sayıyı Ca, O, H sırasıyla seçeneklere yerleştir. O ile H’nin ikisinin de aynı grup çarpanını aldığına özellikle bak."
+      ],
+      "optionReasons": [
+        "Ca:2, O:1, H:1 yazımı 2 çarpanını parantez dışındaki Ca’ya uygulayıp parantez içindeki OH’ye uygulamaz; çarpanın kapsamı ters okunmuştur.",
+        "Doğru. Bir Ca vardır; OH grubu iki kez bulunduğu için O:2 ve H:2 olur.",
+        "Ca:1 ve H:2 doğru olsa da O da OH grubunun içindedir; O:1 bırakılamaz, onun sayısı da 2 olmalıdır."
+      ],
+      "commonError": "Parantez dışındaki 2’yi yalnız H’ye uygulamak veya parantez dışındaki Ca’ya taşımak.",
+      "check": "Ca(OH)₂’yi Ca+OH+OH diye açınca toplam bir Ca, iki O ve iki H işareti bulunmalı; hiçbir atom çoğaltma sırasında kaybolmamalı."
+    }
+  },
+  {
+    "id": "sym-4",
+    "identity": "[\"sym-4\",\"2NH₃ için toplam atom sayıları nasıldır?\",\"\",[\"N:2, H:6\",\"N:1, H:6\",\"N:2, H:3\"],0,\"İki NH₃ molekülünde N sayısı 2×1=2; H sayısı 2×3=6 olur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Baş katsayı, bir formülün tamamının kaç kez alındığını gösterir. Alt indis ise bir formül biriminde ilgili elementin sayısını verir.",
+        "NH₃ gibi bir molekülde alt indissiz N de atom sayımına katılır; yazılmayan 1, baş katsayıyla çarpılır."
+      ],
+      "strategy": "İki NH₃ molekülünü yan yana aç; N ve H için iki ayrı toplam kurarak katsayının her iki elemente de etkisini izle.",
+      "steps": [
+        "Tek NH₃ molekülündeki sayıları N:1 ve H:3 olarak belirle.",
+        "İki molekül için N sayısını 1+1, H sayısını 3+3 biçiminde ayrı ayrı topla.",
+        "Toplamları N,H sırasına yerleştir. Sadece H’yi veya sadece N’yi ikiyle çarpan seçenekleri bu iki toplamla karşılaştırarak ayır."
+      ],
+      "optionReasons": [
+        "Doğru. İki NH₃ molekülünde N=2×1=2 ve H=2×3=6 atom bulunur.",
+        "N:1, H:6 yazımı baştaki 2’yi H’ye uygulayıp N’ye uygulamamıştır; oysa iki molekül iki N içerir.",
+        "N:2, H:3 yazımı N’yi ikiyle çarparken H’yi tek moleküldeki değerinde bırakmıştır; ikinci molekülün üç H’si de eklenmelidir."
+      ],
+      "commonError": "Katsayıyı formüldeki yalnız bir elemente uygulayıp diğerini tek moleküldeki sayısıyla bırakmak.",
+      "check": "Sonuçtaki N:H oranı tek NH₃’teki 1:3 oranını korumalı ve toplam atom sayısı iki molekül için 2×4=8 olmalıdır."
+    }
+  },
+  {
+    "id": "sym-5",
+    "identity": "[\"sym-5\",\"O₂ ve H₂O’nun sınıflandırılması nasıldır?\",\"\",[\"İkisi de bileşiktir.\",\"O₂ element, H₂O bileşiktir.\",\"İkisi de tek atom türünden oluşur.\"],1,\"O₂ yalnız oksijen türünü içerir. H₂O iki farklı elementin atomlarını belirli oranda içerir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Element tek tür element atomundan oluşur; atomların birbirine bağlanıp molekül oluşturması onu kendiliğinden bileşik yapmaz.",
+        "Bileşik farklı elementlerin atomlarını belirli oranda içerir. Sınıflandırmada toplam atom sayısından önce farklı element türleri sayılır."
+      ],
+      "strategy": "Her formülde kaç atom bulunduğunu değil, kaç farklı element sembolü bulunduğunu listele; tek tür ile farklı tür atomları bu liste üzerinden ayır.",
+      "steps": [
+        "O₂’deki 2 alt indisi iki atom bulunduğunu söyler; bu iki atomun ikisinin de O türü olduğunu belirle.",
+        "H₂O’da H ve O olmak üzere iki farklı element türü saptayabilirsin; 2 alt indisi yalnız H atomlarının sayısını değiştirir.",
+        "O₂’yi tek tür atom, H₂O’yu farklı tür atomların belirli oranlı birleşimi ölçütüne göre sınıflandır; ikisini yalnız molekül oldukları için aynı sınıfa koyma."
+      ],
+      "optionReasons": [
+        "O₂ molekülünde yalnız O atomları vardır; iki atomlu olması onu bileşik yapmaz. Bu nedenle ikisi de bileşik değildir.",
+        "Doğru. O₂ yalnız oksijen içerdiğinden elementtir; H₂O hidrojen ve oksijen içerdiğinden bileşiktir.",
+        "H₂O’da H ve O olmak üzere iki element türü vardır; yalnız O₂ tek atom türünden oluşur."
+      ],
+      "commonError": "İki veya daha çok atom içeren her molekülü, element türlerini saymadan bileşik kabul etmek.",
+      "check": "Formüldeki farklı büyük harfle başlayan sembolleri say: O₂ için tek tür, H₂O için iki tür çıkmalı; sınıflandırma atom adedinden bağımsız olarak buna uymalı."
+    }
+  },
+  {
+    "id": "safe-1",
+    "identity": "[\"safe-1\",\"Alev simgesinin altında halka bulunan işaret hangi riski bildirir?\",\"\",[\"Sadece basınçlı gaz\",\"Oksitleyici özellik\",\"Radyoaktivite\"],1,\"Üzerinde alev bulunan halka oksitleyici uyarısına aittir; yalın alevden ayrılır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tehlike piktogramı, şeklin bütününe göre okunur; ortak bir alev ayrıntısı bulunan iki işaret farklı tehlikeler bildirebilir.",
+        "Oksitleyici maddeler başka maddelerin yanmasını başlatabilir veya şiddetlendirebilir. Bu özellik, maddenin kendisinin yanıcı olmasıyla aynı değildir."
+      ],
+      "strategy": "Önce işaretteki alevin altında ayrı bir halka bulunduğunu doğrula; bütün şekli gaz tüpü ve radyasyon işaretlerinden ayırarak tehlike sınıfını eşleştir.",
+      "steps": [
+        "Kökte yalnız alev değil, alevin altında halka tarif ediliyor. Halka ayrıntısını silerek yalın alev işareti gibi okuma.",
+        "Basınçlı gaz uyarısında gaz tüpü, radyasyon uyarısında ise kendine özgü üç kanatlı işaret kullanılır; bu iki şekli tarifle karşılaştır.",
+        "Halkalı alevi, başka maddelerin yanmasını destekleyen tehlike özelliğiyle eşleştir. Bir oksitleyicinin mutlaka kendisinin kolay tutuştuğunu varsaymadan seçeneği belirle."
+      ],
+      "optionReasons": [
+        "Basınçlı gaz piktogramı gaz tüpü biçimindedir; alevin altındaki halka bu tehlikeyi yalnız başına bildiren işaret değildir.",
+        "Doğru. Üzerinde alev bulunan halka piktogramı oksitleyici özelliği bildirir; bu maddeler yanmayı başlatabilir veya şiddetlendirebilir.",
+        "Radyoaktiviteyi bildiren işaret radyasyonun üç kanatlı simgesidir; halkalı alevle aynı şekil değildir."
+      ],
+      "commonError": "Halkayı görmezden gelip halkalı alevi yalnız yanıcılık veya başka bir tehlike simgesiyle karıştırmak.",
+      "check": "Piktogramın tamamını yeniden çiz: halka yoksa aynı işareti çizmiş olmazsın. Seçtiğin tehlike sınıfı, halkayı açıklamalıdır."
+    }
+  },
+  {
+    "id": "safe-2",
+    "identity": "[\"safe-2\",\"Pipetle sıvı almak için doğru yaklaşım hangisidir?\",\"\",[\"Uygun pipet doldurucu kullanmak\",\"Ağızla çekmek\",\"Kimyasalın tadına bakmak\"],0,\"Puar veya uygun pipet doldurucu kullanılır; ağızla pipetleme yapılmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Pipet, belirli hacimde sıvıyı almaya ve aktarmaya yarar. Kimyasalın ağızla veya doğrudan vücutla teması önlenmelidir.",
+        "Sıvıyı pipete çekmek için kullanılan araç, sıvı ile ağız arasında doğrudan temas gerektirmeyen ve pipetle uyumlu bir düzenek olmalıdır."
+      ],
+      "strategy": "Her yöntemde kimyasalın ağız veya sindirim yoluna ulaşabileceği bir temas yolu olup olmadığını izle; hacim alma görevini temas kurmadan yapan aracı seç.",
+      "steps": [
+        "Ağızla çekmede kimyasalın yanlışlıkla ağza kaçabileceğini belirle; hacmi dikkatli izlemek bu temas yolunu ortadan kaldırmaz.",
+        "Tadına bakma, sıvıyı pipete almanın yöntemi değildir ve kimyasalı doğrudan vücuda taşır. Bu seçeneği görev ve temas açısından değerlendir.",
+        "Uygun doldurucunun sıvıyı mekanik olarak pipete çektiğini kullan; ağızla teması gerektirmeyen bu yöntemi diğer iki davranıştan ayır."
+      ],
+      "optionReasons": [
+        "Doğru. Uygun pipet doldurucu veya puar, sıvının ağızla çekilmesini gerektirmeden pipete alınmasını sağlar.",
+        "Ağızla çekme sırasında sıvı veya buhar ağızla temas edebilir ve yutma riski oluşur; pipetlemede bu yöntem kullanılmaz.",
+        "Kimyasalın tadına bakmak pipet doldurmaz; bilinmeyen veya zararlı maddeyi doğrudan vücuda alma riski yaratır."
+      ],
+      "commonError": "Pipetteki hacmi görebilmenin, ağızla çekmenin temas riskini ortadan kaldırdığını sanmak.",
+      "check": "Seçtiğin yöntemde sıvıyı hareket ettiren ağız mı, pipete uygun bir araç mı? Doğru araç kullanımı, kimyasalın ağızla temasını gerektirmemelidir."
+    }
+  },
+  {
+    "id": "safe-3",
+    "identity": "[\"safe-3\",\"Deney atığı için en uygun yaklaşım hangisidir?\",\"\",[\"Her atığı lavaboya dökmek\",\"Koklayarak türünü belirlemek\",\"Etiket ve atık kurallarına göre uygun kaba almak\"],2,\"Atıklar laboratuvar kurallarına göre sınıflanıp uygun kaplara alınır; her madde lavaboya dökülemez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Laboratuvar atıkları içeriklerine ve tehlikelerine göre ayrılır. Atık kabının malzemeyle uyumlu olması ve içeriğinin tanımlanması önemlidir.",
+        "Bir atığın kokusu, onun güvenliğini veya hangi atık kabına gireceğini güvenilir biçimde belirlemez; tanımlama etiket ve laboratuvar prosedürüne dayanır."
+      ],
+      "strategy": "Önce atığın kimliğinin hangi güvenilir bilgiden öğrenileceğini, sonra nereye alınacağını ayır; tüm atıklara tek işlem uygulayan veya kokuyla deneme yapan seçeneği bu iki koşulla sınayarak ilerle.",
+      "steps": [
+        "“Her atığı lavaboya” ifadesi, atıkların tehlike ve uyumluluk farklarını yok sayar. Kök tüm atıkların bu yolla uzaklaştırılabileceği bilgisini vermiyor.",
+        "Koklayarak tanıma, güvenilir sınıflandırma yerine doğrudan maruziyet oluşturur. İçeriği öğrenme aşamasında etikete ve kurallara başvurulması gerektiğini belirle.",
+        "Güvenilir tanımlama ile uygun atık kabı seçimini birlikte sağlayan seçeneği bul; tanımlanamayan atığa kendi başına bir sınıf veya karışım atama."
+      ],
+      "optionReasons": [
+        "Her atık lavaboya dökülemez; bu davranış farklı tehlikeleri ve laboratuvarın atık ayırma kurallarını göz ardı eder.",
+        "Koklamak atığın türünü güvenilir biçimde belirlemez ve zararlı buhara maruz bırakabilir; atık seçimi için etiket ve prosedür gerekir.",
+        "Doğru. Etiket bilgisi ve laboratuvar atık kuralları, atığın uygun ve uyumlu kaba alınmasına temel olur."
+      ],
+      "commonError": "Atığın görünüşünü veya kokusunu, içeriğini bilmeden lavaboya ya da rastgele kaba alma gerekçesi yapmak.",
+      "check": "Kararın iki soruya yanıt vermeli: İçerik güvenilir biçimde tanımlı mı, seçilen kap kurallara ve bu içeriğe uygun mu? Tek tip lavaboya boşaltma bunları sağlamaz."
+    }
+  },
+  {
+    "id": "safe-4",
+    "identity": "[\"safe-4\",\"Asit seyreltmesiyle ilgili güvenlik ilkesi hangisidir?\",\"\",[\"Su derişik asidin üzerine hızla dökülür.\",\"Uygun önlemlerle, gözetim altında asit suya yavaşça eklenir.\",\"Gözlük kullanmaya gerek yoktur.\"],1,\"Derişik asit üzerine su dökmek sıçrama riskini artırır. Gözetim ve uygun koruma altında asit suya yavaşça eklenir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Derişik asidin seyrelmesi belirgin ısı açığa çıkarabilir. Isının küçük bir su miktarında yerel olarak birikmesi sıçrama riskini artırır.",
+        "Güvenli uygulama yalnız ekleme sırasına bağlı değildir; uygun koruyucu donanım, gözetim ve kontrollü ekleme de gerekir."
+      ],
+      "strategy": "Seçenekleri ısının hangi sıvı hacmine yayıldığı, ekleme hızının kontrolü ve koruma koşulları bakımından birlikte incele; yalnız bir güvenlik ayrıntısıyla yetinme.",
+      "steps": [
+        "Az miktarda suyun derişik asidin üzerine hızla verilmesinde ısının bu küçük hacimde yoğunlaşabileceğini düşün; ani ısınma ve sıçrama riskini belirle.",
+        "Asidin suya yavaş eklenmesi, açığa çıkan ısının daha büyük su hacmine yayılmasına yardım eder. Bunun yine kontrollü ve gözetimli uygulama gerektirdiğini koru.",
+        "Gözlüğü gereksiz sayan seçeneği sıçrama riskiyle karşılaştır; uygun önlem, gözetim ve yavaş eklemeyi birlikte içeren seçeneği seç."
+      ],
+      "optionReasons": [
+        "Suyu derişik asidin üzerine hızla dökmek, yerel aşırı ısınma ve sıçrama riskini artırır; güvenli seyreltme ilkesi değildir.",
+        "Doğru. Uygun koruma ve gözetim altında asit suya yavaşça eklenir; ekleme sırası ve kontrollü hız birlikte önemlidir.",
+        "Seyreltmede sıçrama riski bulunduğundan gözlük gereksiz değildir. Doğru ekleme sırası da göz korumasının yerine geçmez."
+      ],
+      "commonError": "Doğru ekleme sırasının tek başına yeterli olduğunu sanıp hız, gözetim veya koruyucu donanımı devreden çıkarmak.",
+      "check": "Seçtiğin davranış hem küçük su hacminde ani ısı birikmesini azaltmalı hem sıçramaya karşı korumayı sürdürmelidir."
+    }
+  },
+  {
+    "id": "safe-5",
+    "identity": "[\"safe-5\",\"Koruma gözlüğü kullanılması için hangisi doğrudur?\",\"\",[\"Gözü korur; uygun eldiven ve önlüğün yerine geçmez.\",\"Bütün kimyasal riskleri tek başına kaldırır.\",\"Sadece kimyasalın rengi koyuysa gerekir.\"],0,\"Gözlük göz için korumadır; el, vücut ve diğer riskler ayrıca uygun önlemler gerektirir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kişisel koruyucu donanımlar farklı maruziyet yollarını azaltır: göz, el ve vücut koruması aynı görev değildir.",
+        "Kimyasal tehlike maddenin rengiyle belirlenmez; renksiz maddeler de göze veya cilde zarar verebilir. Koruma seçimi işin tehlikesine göre yapılır."
+      ],
+      "strategy": "Gözlüğün koruduğu bölgeyi belirledikten sonra seçeneklerin kapsamını denetle; göz korumasından bütün risklerin kalktığı veya renk koşulu gerektiği sonucuna geçme.",
+      "steps": [
+        "Gözlük, göze sıçrama gibi gözle ilgili maruziyeti azaltmak içindir. Bu görevi elin ve gövdenin korunmasından ayır.",
+        "Eldiven ve önlük ayrı bölgeleri korur; gözlük takmanın bu donanımlara duyulan ihtiyacı kendiliğinden kaldırıp kaldırmadığını sorgula.",
+        "Renksiz ama aşındırıcı olabilen bir sıvıyı karşı örnek olarak düşün. Renk veya bütün riskleri kaldırma iddiası taşımadan gözlüğün sınırlı görevini doğru anlatan seçeneği bul."
+      ],
+      "optionReasons": [
+        "Doğru. Gözlük gözü korumaya yöneliktir; işe uygun eldivenin ve önlüğün koruduğu el ve vücut bölgelerinin yerine geçmez.",
+        "Gözlük bütün kimyasal riskleri tek başına kaldırmaz; solunum, el ve vücut maruziyeti gibi başka yollar ayrı önlemler gerektirebilir.",
+        "Koyu renk, gözlük gerekliliğinin ölçütü değildir. Renksiz bir kimyasal da göze zarar verebilir; uygun göz koruması tehlikeye göre seçilir."
+      ],
+      "commonError": "Bir koruyucu donanımın varlığını, diğer maruziyet yollarının ve korumaların gereksiz olduğu şeklinde yorumlamak.",
+      "check": "Gözlük takılıyken ellerin hâlâ açıkta kalıp kalmadığını düşün; bu basit bölge kontrolü “bütün riskler kalkar” iddiasını sınar."
+    }
+  },
+  {
+    "id": "atom-1",
+    "identity": "[\"atom-1\",\"Elektronların yayılmış pozitif yük içinde bulunduğu model hangisidir?\",\"\",[\"Dalton\",\"Thomson\",\"Bohr\"],1,\"Thomson, elektronları pozitif yükün yayıldığı hacim içine yerleştirmiştir; küçük çekirdek fikri bu modelin özelliği değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Atom modelleri, yükün ve maddenin atom içinde nasıl dağıldığına ilişkin farklı tasvirler içerir. Bir modelin ayırt edici varsayımı, yalnız genel bir atom çiziminden daha belirleyicidir.",
+        "Elektron negatif yüklüdür. Nötr atomu anlatan bir model, negatif yükün yanında toplamı dengeleyecek pozitif yükün yerini de açıklamalıdır."
+      ],
+      "strategy": "Kökte tarif edilen pozitif yük dağılımını esas al; seçeneklerin içi dolu tanecik, yayılmış yük ve belirli enerji düzeyleri tasvirlerini birbirinden ayır.",
+      "steps": [
+        "Dalton modelinin elektronu ayrı bir atom altı tanecik olarak yerleştirmediğini hatırla; kökte ise elektronlar açıkça var.",
+        "Bohr modelinde elektronlar çekirdek çevresinde belirli enerji düzeyleriyle ele alınır. Bu tasvir, pozitif yükün hacme yayılmasıyla aynı değildir.",
+        "Kalan modelin elektronları yayılmış pozitif yük içinde gösteren tasvirini kökle eşleştir; ona sonradan küçük çekirdek varsayımı ekleme."
+      ],
+      "optionReasons": [
+        "Dalton modeli elektronu atomun içine yerleştiren bir yapı sunmaz; atomu içi dolu tanecik olarak ele alır. Kökteki elektronlu tasviri karşılamaz.",
+        "Doğru. Thomson modeli, negatif elektronları atom hacmine yayılmış pozitif yük içinde gösterir; küçük çekirdek tasviri bu modelin özelliği değildir.",
+        "Bohr modelinde pozitif yük çekirdektedir; elektronlar belirli enerji düzeyleriyle ele alınır. Pozitif yükün hacme yayıldığı model değildir."
+      ],
+      "commonError": "Negatif elektron içeren bütün atom modellerini aynı sanıp pozitif yükün yayılmış mı çekirdekte mi olduğunu okumamak.",
+      "check": "Seçtiğin modele küçük, yoğun bir çekirdek çizdiğinde kökteki yayılmış pozitif yük tasviri değişiyorsa iki model özelliğini karıştırmış olursun."
+    }
+  },
+  {
+    "id": "atom-2",
+    "identity": "[\"atom-2\",\"Rutherford’un ince altın levhaya alfa tanecikleri gönderdiği deneyde taneciklerin çoğunun levhadan geçmesi en doğrudan hangi yorumu destekler?\",\"\",[\"Atom tamamen doludur.\",\"Elektronların hepsi çekirdektedir.\",\"Atom hacminin büyük kısmı boşluktur.\"],2,\"Çok büyük bölümün geçmesi, atomun büyük hacminin boşluk olmasıyla ilişkilendirilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Alfa tanecikleri pozitif yüklüdür. İnce levhadan geçen, sapan ve geri dönen taneciklerin oranları atom içindeki dağılıma ilişkin farklı bilgiler sağlar.",
+        "Bir deney gözleminden çıkarım yaparken en yaygın davranış ile az sayıdaki güçlü etkileşimi ayrı değerlendirmek gerekir."
+      ],
+      "strategy": "Yalnız “çoğunluğun geçmesi” gözlemini hedefle; az sayıdaki büyük sapmanın çekirdekle ilgili ayrı çıkarımını bu soruya taşımadan geçişe uygun hacim tasvirini seç.",
+      "steps": [
+        "Çok sayıda alfa taneciğinin levhayı belirgin biçimde engellenmeden geçebildiğini kökten çıkar; sürekli ve bütünüyle dolu bir engel tasvirini bununla karşılaştır.",
+        "Bu gözlem atomun hacminin çoğunda güçlü bir engelle karşılaşılmadığını destekler. Elektronların hepsinin nerede olduğu ise yalnız bu geçiş oranıyla belirlenmez.",
+        "Çoğunluğun geçişini en doğrudan açıklayan hacim yorumunu seç; “boşluk” yorumunun çekirdek ve elektronların hiç bulunmadığı anlamına gelmediğini koru."
+      ],
+      "optionReasons": [
+        "Atomun tamamen dolu olduğu tasvir, çoğu alfa taneciğinin levhadan geçmesini en doğrudan açıklamaz; yaygın geçiş büyük boş hacim yorumunu destekler.",
+        "Elektronların hepsinin çekirdekte olması, çoğunluğun geçişinden çıkarılamaz ve Rutherford tasvirinin de sonucu değildir.",
+        "Doğru. Taneciklerin çoğunun geçmesi, atom hacminin büyük kısmının boşluk olmasını destekler; az hacimli çekirdek bu yorumla birlikte bulunabilir."
+      ],
+      "commonError": "Çoğunluğun geçişiyle az sayıdaki büyük sapmayı karıştırıp her gözlemden aynı çekirdek sonucunu çıkarmak.",
+      "check": "Sorudaki oranı değiştirip çoğu taneciğin geri döndüğünü varsaysaydın aynı hacim yorumuna kolayca ulaşır mıydın? Geçiş çoğunluğu seçtiğin çıkarımın asıl dayanağı olmalı."
+    }
+  },
+  {
+    "id": "atom-3",
+    "identity": "[\"atom-3\",\"Rutherford’un ince altın levhaya alfa tanecikleri gönderdiği deneyde az sayıdaki taneciğin büyük açılarla sapması neyi destekler?\",\"\",[\"Pozitif yükün küçük ve yoğun çekirdekte toplanmasını\",\"Pozitif yükün her yerde eşit yoğunlukta olmasını\",\"Atomda yük bulunmamasını\"],0,\"Küçük ve yoğun pozitif çekirdek, çok az sayıdaki yakın geçişte büyük sapmaları açıklar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı işaretli yükler birbirini iter; alfa tanecikleri pozitif yüklüdür. Taneciğin çok büyük sapması güçlü bir etkileşime işaret eder.",
+        "Gözlemde hem sapmanın büyüklüğü hem bunun ne kadar sık olduğu önemlidir: büyük etki ile küçük karşılaşma olasılığı ayrı bilgiler taşır."
+      ],
+      "strategy": "Az sayıda olmayı etkileşim bölgesinin boyutuyla, büyük açıyı etkileşimin gücüyle ilişkilendir; iki gözlemi birlikte açıklayan yük dağılımını bul.",
+      "steps": [
+        "Pozitif alfa taneciğini güçlü biçimde geri çevirecek etkinin, yoğun pozitif yükle itilmeye uygun olduğunu belirle.",
+        "Büyük sapmaların az sayıda görülmesi, bu güçlü etkileşim bölgesinin atomun bütün hacmine yayılmadığını düşündürür.",
+        "Küçük bölge ile yoğun pozitif yük bilgisini birleştir. Yükün her yerde aynı yoğunlukta olması veya hiç yük bulunmaması bu iki gözlemi birlikte açıklıyor mu diye seçenekleri sınayarak seç."
+      ],
+      "optionReasons": [
+        "Doğru. Az sayıdaki büyük açılı sapma, güçlü itmenin küçük ve yoğun pozitif çekirdek bölgesinde gerçekleşmesini destekler.",
+        "Pozitif yükün her yerde eşit yoğunlukta yayılması, az taneciğin karşılaştığı çok küçük bölgede büyük itme oluşmasını açıklayan çekirdek yorumuyla uyuşmaz.",
+        "Atomda yük bulunmaması, pozitif alfa taneciklerinin yük etkileşimiyle büyük açılarda sapmasını açıklamaz."
+      ],
+      "commonError": "“Az sayıda” bilgisini yok sayıp yalnız güçlü sapmadan pozitif yükün tüm atom hacmine yayıldığını sanmak.",
+      "check": "Seçtiğin yorum iki soruyu da yanıtlamalı: Etki neden büyük, bu etkiyle karşılaşan tanecik sayısı neden az? Küçük ve yoğun bölge bu iki koşulu birlikte karşılar."
+    }
+  },
+  {
+    "id": "atom-4",
+    "identity": "[\"atom-4\",\"Bohr modelinde elektron daha yüksek enerji düzeyine çıkarken ne olur?\",\"\",[\"Mutlaka enerji yayar.\",\"Gerekli enerjiyi alır.\",\"Atomun proton sayısı artar.\"],1,\"Uyarılma için elektron enerji alır. Daha düşük düzeye dönerken enerji yayabilir; proton sayısı bu geçişle değişmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bohr modelinde elektronun enerjisi belirli düzeylerden birini alır. Düzeyler arasındaki geçişte enerji farkı alışverişi söz konusudur.",
+        "Elektronik enerji değişimi çekirdekteki proton sayısını değiştirmez; element kimliği ile elektronun enerji durumu farklı özelliklerdir."
+      ],
+      "strategy": "İlk ve son enerji düzeyini Eilk ve Eson diye karşılaştır; farkın işaretinden enerji aktarım yönünü bul, sonra bunu çekirdek değişiminden ayır.",
+      "steps": [
+        "Kökte son düzey daha yüksek olduğundan Eson>Eilk yaz. Elektronun enerji değişimi ΔE=Eson−Eilk pozitiftir.",
+        "Pozitif enerji değişimi, elektronun çevreden uygun miktarda enerji kazanmasını gerektirir. Enerji yayılması durumunda değişimin işaretinin ne olacağını karşılaştır.",
+        "Bu olayın elektron düzeyleri arasında olduğunu kullan; proton sayısını artıran seçeneği ayır ve enerji farkına uygun aktarım yönünü seç."
+      ],
+      "optionReasons": [
+        "Elektron enerji yaydığında daha düşük enerji düzeyine iner. Yukarı geçişte “mutlaka enerji yayar” ifadesi aktarım yönünü ters verir.",
+        "Doğru. Daha yüksek düzeye çıkış için elektron düzeyler arasındaki farka uygun enerjiyi alır.",
+        "Elektronun enerji düzeyinin değişmesi çekirdeğe proton eklemez; proton sayısının artması farklı bir elemente geçiş anlamına gelirdi."
+      ],
+      "commonError": "Yüksek enerji düzeyine geçişi enerji yayılmasıyla veya elementin proton sayısının artmasıyla karıştırmak.",
+      "check": "Geçişi tersine çevir: yüksekten düşüğe dönüşte enerji verilir. Yukarı geçiş bunun tersi olmalı ve iki yönde de çekirdek aynı kalmalıdır."
+    }
+  },
+  {
+    "id": "atom-5",
+    "identity": "[\"atom-5\",\"Modern modelde orbital için hangi ifade uygundur?\",\"\",[\"Elektronun kesin izlediği dairesel yol\",\"Çekirdeğin başka adı\",\"Elektronun bulunma olasılığıyla ilişkili hacimsel bölge\"],2,\"Orbital bir gezegen yörüngesi değildir; elektronun bulunma olasılığıyla ilişkili bölgeyi tanımlar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Modern atom yaklaşımı elektronun bulunmasını olasılık dağılımlarıyla ele alır. Katman, enerjiyle ilişkili bir düzenleme düzeyiyken orbital daha ayrıntılı uzaysal bir kavramdır.",
+        "Bir taneciğin hareket boyunca izlediği çizgi ile üç boyutlu bir olasılık bölgesi aynı geometrik nesne değildir."
+      ],
+      "strategy": "Seçenekleri çizgisel yol, çekirdek ve uzaysal olasılık tasviri olarak ayır; modern modelde elektronu tarif eden kavramın hangisiyle uyuştuğunu bul.",
+      "steps": [
+        "Kesin dairesel yol seçeneğinde elektronun her anda belirli bir çizgide bulunduğu ileri sürülür; bunun olasılık yaklaşımıyla aynı iddia olmadığını saptayarak başla.",
+        "Çekirdek protonların ve varsa nötronların bulunduğu bölgedir; “orbital” sözcüğünü çekirdeğin yeni bir adı gibi kullanma.",
+        "Geriye kalan ifadenin elektronun bulunma olasılığı ve üç boyutlu bölgeyle ilişkisini kontrol et; olasılık bölgesini elektronun hiç dışına çıkamadığı sert bir yüzey gibi de yorumlama."
+      ],
+      "optionReasons": [
+        "Kesin izlenen dairesel yol bir yörünge tasviridir; orbital, modern modelde böyle bir kesin hareket çizgisi değildir.",
+        "Çekirdek atomun protonları ve varsa nötronları içeren bölgesidir; orbital çekirdeğin başka adı değildir.",
+        "Doğru. Orbital, elektronun bulunma olasılığıyla ilişkili uzaysal bölgeyi anlatan modern model kavramıdır."
+      ],
+      "commonError": "Orbital ile çizilmiş dairesel yörüngeyi eş anlamlı kullanmak.",
+      "check": "Seçtiğin kavram bir çizgi mi yoksa üç boyutlu olasılık bölgesi mi? Modern orbital yorumu, elektronun bütün hareketini tek kesin çember olarak vermemelidir."
+    }
+  },
+  {
+    "id": "periodic-1",
+    "identity": "[\"periodic-1\",\"Na atomu bir elektron verip Na⁺ oluyor. Hangisi değişmez?\",\"\",[\"Elektron sayısı\",\"Proton sayısı ve tablo konumu\",\"Net yük\"],1,\"Elektron değişir; çekirdekteki 11 proton değişmez. Na yine 3. periyot, 1. gruptadır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Atom numarası Z, proton sayısıdır ve elementin kimliğini belirler. Periyodik tablo elementleri bu kimliğe göre düzenler.",
+        "Bir atom elektron verip aldığında iyonlaşır; çekirdek değişmiyorsa Z korunur. Elementin tablo yeri nötr temel hâliyle ilişkilidir, o anki iyonun elektron sayısına göre yeniden atanmaz."
+      ],
+      "strategy": "İyonlaşmayı yalnız elektron alışverişi olarak izle; çekirdek, elektron sayısı ve net yük için ayrı önce–sonra karşılaştırması yap.",
+      "steps": [
+        "Na→Na⁺ geçişinde bir elektron verildiğini belirle. Proton eklenmesi veya çekirdek tepkimesi verilmediğini not et.",
+        "Elektron sayısının bir azaldığını ve nötrden +1 yüklü duruma geçildiğini yaz; böylece bu iki özelliğin değişimini ayır.",
+        "Çekirdekteki proton sayısı değişmediği için elementin hâlâ Na olduğunu kullan. Tablo yerini iyonun kalan elektronlarına göre başka elementin yerine taşımadan seçeneği belirle."
+      ],
+      "optionReasons": [
+        "Elektron sayısı değişir: Na bir elektron vererek Na⁺ olur; bu yüzden değişmeyen özellik değildir.",
+        "Doğru. Elektron verme proton sayısını değiştirmez; Na’nın element kimliği ve bu kimliğe ait periyodik tablo konumu korunur.",
+        "Net yük nötr Na’da 0, Na⁺’ta +1’dir; elektron kaybıyla değişmiştir."
+      ],
+      "commonError": "İyonun elektron sayısını yeni bir nötr atom gibi okuyup elementi periyodik tabloda başka yere taşımak.",
+      "check": "Na ve Na⁺ yazımlarında aynı Na sembolü kalır. Yeni bir element sembolü gerektiren yorum, yalnız elektron verme bilgisiyle uyuşmaz."
+    }
+  },
+  {
+    "id": "periodic-2",
+    "identity": "[\"periodic-2\",\"Mg²⁺ iyonunda Z = 12. Elektron sayısı kaçtır?\",\"\",[\"10\",\"12\",\"14\"],0,\"e = Z − q = 12 − 2 = 10.\"]",
+    "guidance": {
+      "knowledge": [
+        "İyon yükü, temel yük biriminde q=p−e bağıntısıyla bulunur. Z proton sayısını verir; pozitif iyon elektron eksikliği taşır.",
+        "Üstteki yük işareti atom sayısı veya proton sayısına eklenecek bir sayı değildir; protonlarla elektronlar arasındaki farkı gösterir."
+      ],
+      "strategy": "Önce Z’den proton sayısını yaz; sonra q=p−e denklemini elektron sayısı için çözerek artı iki yük koşulunu sağlayan seçeneği bul.",
+      "steps": [
+        "Z=12 olduğundan Mg çekirdeğinde 12 proton vardır; iyonlaşma bu sayıyı değiştirmez.",
+        "Mg²⁺ için +2=12−e eşitliğini kur. Pozitif yükün iki elektron eksikliğini gerektirdiğini kullanarak e’yi yalnız bırak.",
+        "Bulduğun elektron sayısını 12−e ifadesine geri koy. 12 ve 14 elektron seçeneklerinin sırasıyla 0 ve −2 yük vereceğini de karşılaştır."
+      ],
+      "optionReasons": [
+        "Doğru. e=12−2=10 elektron; yük kontrolü 12−10=+2 verir.",
+        "12 elektron, 12 protonla nötr Mg verir; +2 yüklü iyonu karşılamaz.",
+        "14 elektron, 12 protondan iki fazla elektrondur; 12−14=−2 olur. Bu, Mg²⁺ için gereken yükün tersidir."
+      ],
+      "commonError": "İyondaki +2’yi elektron sayısına ekleyip artı yükü elektron fazlalığı sanmak.",
+      "check": "Elektron sayın proton sayısından iki az olmalı; p−e hesabının işareti de + olmalıdır."
+    }
+  },
+  {
+    "id": "periodic-3",
+    "identity": "[\"periodic-3\",\"He nötr atomunun 2 elektronu vardır. Hangi gruptadır?\",\"\",[\"2\",\"1\",\"18\"],2,\"He soy gazdır ve 18. gruptadır; iki değerlik elektronu onu 2. gruba yerleştirmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Grup numarası, periyodik tablodaki sütunu belirtir. IUPAC sistemi grupları 1’den 18’e kadar numaralandırır.",
+        "Son katmandaki elektron sayısını grup numarasına doğrudan eşitlemek bütün elementler için geçerli değildir. İlk katmanın kapasitesi iki elektrondur ve bu katmanın doluluğu özel önem taşır."
+      ],
+      "strategy": "Helyumun tek katmanının iki elektronla tamamlandığını belirle; otomatik “iki elektron→2. grup” eşleştirmesi yerine bu özel elementin bilinen aile yerleşimini kullan.",
+      "steps": [
+        "He’nin iki elektronu ilk katmandadır; ikinci bir elektron katmanı açılması gerekmez.",
+        "İlk katman iki elektronla tamamlanır. He’yi iki dış elektronlu diğer elementlerle yalnız sayısal benzerliğe göre aynı gruba koyma.",
+        "Helyumun soy gaz ailesindeki yerini kullanıp bu ailenin IUPAC grup numarasıyla eşleştir; seçeneklerde 1 ve 2 ile verilen genel sayı çağrışımlarını ayır."
+      ],
+      "optionReasons": [
+        "2, He’nin elektron sayısıdır; grup numarası değildir. Helyum, iki dış elektronu var diye 2. gruba yerleştirilmez.",
+        "1, He’nin elektron içeren katman sayısıyla ilişkilidir ve periyodunu verir; sorulan grup numarası değildir.",
+        "Doğru. Helyum ilk katmanı tamamlanmış soy gazdır ve periyodik tabloda 18. grupta bulunur."
+      ],
+      "commonError": "Helyumun iki elektronunu grup numarasına eşitleyerek soy gaz istisnasını atlamak.",
+      "check": "Periyot ile grup için ayrı sorular sor: kaç katman var ve hangi aile sütununda? İlk soruya verilen 1 veya elektron sayısı olan 2, ikinci sorunun yerine geçmez."
+    }
+  },
+  {
+    "id": "periodic-4",
+    "identity": "[\"periodic-4\",\"Nötr Al atomunun temel hâl katman dağılımı 2, 8, 3. Periyodu kaçtır?\",\"\",[\"13\",\"3\",\"5\"],1,\"Al’nin nötr temel hâl dağılımı 2,8,3 olduğundan elektron içeren üç katmanı vardır ve element 3. periyottadır. Periyot için katmanların tam dolu olması gerekmez; son katmanda 3 elektron bulunur. Toplam 13 elektron, nötr Al’nin atom numarasıdır; periyot numarası değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Periyot, nötr atomun temel hâlinde elektron içeren en dış katmanın sıra numarasıyla ilişkilidir. Bu katmanın kuramsal kapasitesine kadar tamamlanması gerekmez.",
+        "Katmanlardaki elektronların toplamı nötr atomda Z’yi verir; katman sayısı ile bu toplam farklı büyüklüklerdir."
+      ],
+      "strategy": "2,8,3 dizisindeki her terimi bir katman etiketiyle eşleştir; toplam elektron hesabını ayrı tutarak elektron içeren en dış katmanın sıra numarasını bul.",
+      "steps": [
+        "2’yi birinci, 8’i ikinci, 3’ü üçüncü katmana yerleştir. Son katmanda elektron bulunduğunu, tam kapasiteye ulaşmasının gerekmediğini belirle.",
+        "Dizideki terim sayısını say; ayrıca 2+8+3 toplamının neyi verdiğini ayrı yaz. Böylece periyot ölçütüyle atom numarasını ayır.",
+        "En dış elektronlu katmanın sıra numarasını seçeneklerle eşleştir. Üçüncü katmanda yalnız 3 elektron bulunmasının bu periyodu engellemediğini kontrol et."
+      ],
+      "optionReasons": [
+        "13, 2+8+3 toplamıdır; nötr Al’nin elektron sayısını ve Z’sini verir, periyodunu değil.",
+        "Doğru. Elektron içeren katmanlar birinci, ikinci ve üçüncüdür; Al 3. periyottadır. Üçüncü katmanın tam dolması gerekmez.",
+        "5 sayısı verilen dizideki katman sayısı değildir. Örneğin 2 ile son katmandaki 3’ü toplamak da periyot belirleme kuralı olmaz."
+      ],
+      "commonError": "Elektron içeren katman sayısını, elektronların toplamıyla veya katmanların tam dolmuş olma şartıyla karıştırmak.",
+      "check": "Son terimi aynı üçüncü katmanda başka bir pozitif elektron sayısıyla düşün: en dış katman hâlâ üçüncü kalır. Periyot, bu terimin tam kapasitede olmasına bağlı değildir."
+    }
+  },
+  {
+    "id": "periodic-5",
+    "identity": "[\"periodic-5\",\"17 proton ve 18 elektron taşıyan taneciğin yükü nedir?\",\"\",[\"−1\",\"+1\",\"0\"],0,\"q = 17 − 18 = −1. Bu tanecik Cl⁻ iyonudur; element kimliği Cl olarak kalır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Protonun yük katkısı +1, elektronunki −1 temel yük birimidir. Taneciğin net yükü q=p−e ile bulunur.",
+        "Zıt yükler eşit sayıda olduğunda toplam sıfır olur; artan parçacığın türü net yükün işaretini belirler."
+      ],
+      "strategy": "Proton–elektron çiftlerini nötrleştirerek geriye hangi türden kaç parçacık kaldığını bul; ardından q=p−e ile işareti doğrula.",
+      "steps": [
+        "17 protonun pozitif katkısını +17, 18 elektronun negatif katkısını −18 olarak ayrı yaz.",
+        "17 protonu 17 elektronla eşleştir. Eşleşmeden kalan bir parçacığın elektron olduğunu belirle.",
+        "Artan elektronun yükünü toplam katkıyla karşılaştır: (+17)+(−18) işlemi kalan parçacıkla aynı işareti vermeli. Bu işaret ve büyüklüğü seçeneklerle eşleştir."
+      ],
+      "optionReasons": [
+        "Doğru. 17−18=−1; bir fazla elektron taneciğe bir birim negatif yük verir.",
+        "+1, bir fazla proton olsaydı beklenirdi. Burada proton değil elektron fazla olduğundan işaret ters yazılmıştır.",
+        "0 yük için proton ve elektron sayıları eşit olmalıdır; 17 ile 18 eşit değildir."
+      ],
+      "commonError": "Yükü hesaplarken e−p kullanıp işareti ters çevirmek veya fazlalığın elektron olduğunu unutmak.",
+      "check": "Bir elektron daha uzaklaştırıldığında 17 proton ve 17 elektron kalıp nötr olmalıdır. Başlangıç yükü bu değişimden bir birim daha negatif olmalı."
+    }
+  },
+  {
+    "id": "f013-foundation-katman-elektron-dizilimi-1",
+    "identity": "[\"f013-foundation-katman-elektron-dizilimi-1\",\"Atom numarası 12 olan Mg²⁺ iyonunun temel hâl elektron sayısı, katman dağılımı ve proton sayısı sırasıyla hangisidir?\",\"\",[\"10 elektron; 2,8; 12 proton\",\"14 elektron; 2,8,4; 12 proton\",\"10 elektron; 2,8; 10 proton\",\"12 elektron; 2,8,2; 12 proton\",\"12 elektron; 2,8,2; 10 proton\"],0,\"Mg²⁺ iki elektron vermiştir: e=12−(+2)=10 ve temel hâl katman dağılımı 2,8 olur. Çekirdekteki 12 proton kimyasal iyonlaşmayla değişmez. On elektron görmek atom numarasının 10 olduğu anlamına gelmez; yük bilgisi korunmalıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Z proton sayısını verir; basit iyonlaşmada proton sayısı korunur. İyon yükü q=p−e, elektron sayısını bulmak için kullanılabilir.",
+        "İlk 20 elementin nötr atomları ve bu basit iyonların temel hâlleri için elektron sayımıyla katman dağılımı birlikte denetlenir; dağılımdaki sayıların toplamı elektron sayısına eşit olmalıdır."
+      ],
+      "strategy": "Üç sütunlu bir kontrol yap: değişmeyen proton sayısı, yükten bulunan elektron sayısı ve bu elektronlara uyan temel hâl dağılımı. Seçenek ancak üç koşulu birlikte sağlarsa geçsin.",
+      "steps": [
+        "Mg için Z=12’yi proton sayısına yaz. +2 yüklü iyonu, çekirdeği değiştirmeden iki elektron uzaklaşmış durum olarak ele al.",
+        "e=12−2 hesabını yap ve bu sayıdaki elektronun temel hâlinde ilk iki katmana nasıl yerleştiğini belirle.",
+        "Seçeneklerde hem dağılımın toplamını hem p−e=+2 eşitliğini denetle. Elektronları doğru verdiği hâlde protonu 10 yapan seçeneği de bu son kontrolden geçir."
+      ],
+      "optionReasons": [
+        "Doğru. Mg²⁺ için 12 proton, 10 elektron ve temel hâlde 2,8 dağılımı vardır; toplam 10 ve yük 12−10=+2’dir.",
+        "14 elektron ve 2,8,4 toplam bakımından uyuşsa da 12−14=−2 yük verir; gereken +2 değildir.",
+        "10 elektron ve 2,8 doğrudur; fakat 10 proton Z=12 koşulunu bozar. Mg’nin protonları iyonlaşmada 10’a düşmez.",
+        "12 elektron ve 2,8,2 nötr Mg’ye uyar; 12−12=0 olduğundan Mg²⁺ değildir.",
+        "12 elektron ile 10 proton hem Z=12 koşulunu bozar hem 10−12=−2 yük verir; verilen katman toplamı da elektron kaybını yansıtmaz."
+      ],
+      "commonError": "İyonun elektron sayısı doğru diye aynı seçenekte değiştirilmiş proton sayısını kontrol etmeden kabul etmek.",
+      "check": "Doğru üçlü, Z=12, dağılım toplamı=e ve p−e=2 denetimlerinin üçünü birden geçmelidir; tek denetim yeterli değildir."
+    }
+  },
+  {
+    "id": "f013-foundation-katman-elektron-dizilimi-2",
+    "identity": "[\"f013-foundation-katman-elektron-dizilimi-2\",\"Atom numarası 17 olan klor bir elektron alıp Cl⁻ oluyor. Bu iyon için doğru elektron sayısı ve temel hâl katman dağılımı hangisidir?\",\"\",[\"16 elektron; 2,8,6\",\"18 elektron; 2,8,8\",\"17 elektron; 2,8,7\",\"18 elektron; 2,8,7,1\",\"16 elektron; 2,8,8\"],1,\"e=17−(−1)=18 bulunur; seçili basit iyonun temel hâl dağılımı 2,8,8’dir. Elektron alımı proton sayısını veya element kimliğini değiştirmez. 2,8,7,1 dağılımının toplamı 18 olsa da verilen temel hâl koşulunu sağlamaz; toplam tek başına yeterli değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir elektron alan atomun elektron sayısı bir artar; çekirdeğindeki proton sayısı değişmez. Negatif yük elektron fazlalığını belirtir.",
+        "Temel hâl, elektronların daha düşük enerjili durumlara uygun yerleşimidir. Doğru elektron toplamı tek başına her dağılımın temel hâl olduğunu kanıtlamaz."
+      ],
+      "strategy": "Elektron alışını sayısal olarak uygula; sonra seçenekleri önce toplam elektron, ardından temel hâl yerleşimi bakımından iki ayrı filtreden geçir.",
+      "steps": [
+        "Nötr Cl için Z=17 olduğundan 17 elektronla başla. Bir elektron alınca toplamın hangi yönde değişeceğini belirle.",
+        "Yeni elektron sayısına uygun temel hâl dağılımını ilk üç katman üzerinde kur; dağılımdaki sayıların toplamını tekrar hesapla.",
+        "18 elektron yazıp 2,8,7,1 öneren seçeneği, 16 elektron yazıp toplamı 18 olan dağılım veren seçenekten farklı nedenle ayır: biri temel hâli, diğeri kendi iç tutarlılığını bozar."
+      ],
+      "optionReasons": [
+        "16 elektron ve 2,8,6 bir elektron kaybını anlatır; Cl’nin bir elektron almasıyla oluşan Cl⁻ için gereken yönün tersidir.",
+        "Doğru. Cl⁻ 18 elektron taşır; temel hâl dağılımı 2,8,8’dir ve 17−18=−1 yükü sağlar.",
+        "17 elektron ve 2,8,7 nötr klorun durumudur; verilen elektron alma olayı uygulanmamıştır.",
+        "18 elektron toplamı doğru olsa da 2,8,7,1 temel hâl değildir; burada elektron daha yüksek katmana taşınmışken üçüncü katmandaki daha düşük enerjili yerleşim tamamlanmamıştır.",
+        "“16 elektron” ifadesiyle 2+8+8=18 toplamı birbirini tutmaz; ayrıca Cl⁻ için elektron sayısı 18 olmalıdır."
+      ],
+      "commonError": "Dağılımın toplamı doğruysa temel hâlin de otomatik doğru olduğunu sanmak.",
+      "check": "İki bağımsız eşitliği denetle: dağılım toplamı=e ve 17−e=−1. Ayrıca kökün temel hâl koşulu, 2,8,7,1 gibi yalnız toplamı sağlayan yerleşimi dışlar."
+    }
+  },
+  {
+    "id": "f013-foundation-katman-elektron-dizilimi-3",
+    "identity": "[\"f013-foundation-katman-elektron-dizilimi-3\",\"X²⁺ iyonunun temel hâl katman dağılımı 2,8,8 olarak veriliyor. X nötr atomunun temel hâl dağılımı ve elementin periyodu hangisidir?\",\"\",[\"2,8,8; 3. periyot\",\"2,8,6; 3. periyot\",\"2,8,8,2; 4. periyot\",\"2,8,10; 3. periyot\",\"2,8,8,1; 4. periyot\"],2,\"İyonun elektron sayısı 18, yükü +2 olduğundan Z=e+q=18+2=20 olur. Nötr Ca atomunun temel hâl dağılımı 2,8,8,2 ve periyodu 4’tür. İyonun elektron içeren üç katmanı, elementin periyodunu 3’e indirmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Pozitif iyon, aynı çekirdeğin elektron kaybetmiş hâlidir. İyondan nötr atoma dönerken kaybedilen elektronlar geri eklenir.",
+        "Elementin periyodu nötr temel hâl üzerinden belirlenir; iyonun elektron içeren katman sayısı doğrudan elementin periyodu olarak alınmaz."
+      ],
+      "strategy": "İyonun dağılımını toplayarak elektron sayısını bul; yükten çekirdek kimliğine dön, ardından nötr atomun temel hâlini kurarak periyoda geç.",
+      "steps": [
+        "İyonun 2+8+8 dağılımını topla. Bu sayı X²⁺’ın elektron sayısıdır; nötr X’in elektron sayısı olarak henüz kullanma.",
+        "+2=p−e eşitliğinden p’yi bul; nötr atomda elektron sayısı bu proton sayısına eşittir. Böylece iyonlaşmada eksilen iki elektronu geri koymuş olursun.",
+        "Bulduğun nötr atom ilk 20 element içinde Ca’dır; temel hâlini 2,8,8’den sonra dördüncü katmanı da kullanarak kur. En dış elektronlu katmandan periyodu seç ve iyon dağılımıyla karıştırma."
+      ],
+      "optionReasons": [
+        "2,8,8 iyonun verilen dağılımıdır. Nötr atoma iki elektron geri eklenmediği için nötr X ve periyodu bu şekilde belirlenemez.",
+        "2,8,6, verilen iyon toplamından iki elektron daha çıkarmaktır; pozitif iyondan nötre dönüşte çıkarma değil geri ekleme gerekir.",
+        "Doğru. İyon 18 elektron taşır; X’in Z’si 20’dir. Nötr temel hâl 2,8,8,2 ve element 4. periyottadır.",
+        "2,8,10 toplamı 20 olsa da Ca’nın temel hâli değildir. Üçüncü katmanın kuramsal kapasitesi, dördüncü katmanın dolmaya başlamasını engellemez.",
+        "2,8,8,1 toplamı 19’dur; bu nötr atomdan iki elektron çıkarsa 17 kalır. Verilen 18 elektronlu X²⁺ durumunu sağlamaz."
+      ],
+      "commonError": "X²⁺’ın elektron dağılımını nötr X’in dağılımı saymak veya nötre dönerken elektronları yeniden çıkarmak.",
+      "check": "Nötr için seçtiğin dağılımdan dıştaki iki elektronu uzaklaştır: tam olarak verilen 2,8,8 iyon dağılımına dönebiliyor musun?"
+    }
+  },
+  {
+    "id": "f013-foundation-katman-elektron-dizilimi-4",
+    "identity": "[\"f013-foundation-katman-elektron-dizilimi-4\",\"Z=19 olan nötr potasyum atomunun temel hâl dağılımı için 2,8,9 öneriliyor. Toplamın 19 olması bu öneriyi doğrular mı?\",\"\",[\"Evet; doğru toplam her zaman temel hâli kanıtlar.\",\"Evet; M katmanı dolmadan N katmanında elektron bulunamaz.\",\"Hayır; potasyum nötrken yalnız 18 elektron taşır.\",\"Hayır; temel hâl dağılımı 2,8,8,1’dir.\",\"Hayır; 19 elektron hiçbir katmana dağıtılamaz.\"],3,\"2+8+9 toplamı 19’dur ama toplam denetimi temel hâl koşulunu tek başına sağlamaz. İlk 20 nötr atom kapsamında potasyum 2,8,8,1 biçimindedir. M katmanının kuramsal kapasitesinin 18 olması, potasyumda önce bu katmanın tamamen dolmasını gerektirmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Elektron dağılımında toplam sayının korunması zorunludur; temel hâl ayrıca enerjiye uygun yerleşim gerektirir.",
+        "Katmanın kuramsal kapasitesi ile orbitallerin enerjiye göre dolma sırası aynı kural değildir. İlk 20 elementte dördüncü katman, üçüncünün kuramsal kapasitesi dolmadan kullanılmaya başlar."
+      ],
+      "strategy": "Öneriyi iki ayrı sınamadan geçir: önce nötr atomun elektron toplamı, sonra potasyumun temel hâl yerleşimi. Toplamı doğru bulmayı son karar olarak kullanma.",
+      "steps": [
+        "Nötr K için Z=19 olduğundan 19 elektron gerekir. Önerilen 2+8+9 toplamının bu koşulu sağladığını hesapla.",
+        "Şimdi enerji koşulunu incele: potasyumun temel hâlinde üçüncü katmandaki 8 elektrondan sonra elektron dördüncü katmanda yer alır.",
+        "19 elektronu koruyan bu temel hâl dağılımını seçeneklerle karşılaştır. “M dolmadan N olamaz” iddiasını kapasite–dolma sırası ayrımıyla, “nötrken 18” iddiasını Z ile sınayarak ayır."
+      ],
+      "optionReasons": [
+        "Doğru toplam gerekli ama yeterli değildir. 2,8,9 toplamı 19 olsa da K’nin temel hâl dağılımı olduğunu kanıtlamaz.",
+        "M katmanının kuramsal kapasitesinin dolması, N katmanına elektron yerleşmesinin ön koşulu değildir; enerjiye göre dolma sırası bu iddiayı geçersiz kılar.",
+        "Nötr K, Z=19 nedeniyle 19 elektron taşır. 18 elektron bir eksik elektronlu K⁺ için söz konusu olurdu.",
+        "Doğru. Nötr K’nin temel hâli 2,8,8,1’dir; toplam 19 korunur, fakat 2,8,9 önerisi temel hâli vermez.",
+        "19 elektron katmanlara dağıtılabilir; K’nin 2,8,8,1 temel hâli bunun somut örneğidir. Önerinin hatası dağıtımın imkânsızlığı değildir."
+      ],
+      "commonError": "Elektron toplamı Z’ye eşit çıkınca enerji yerleşimini denetlemeden dağılımı temel hâl ilan etmek.",
+      "check": "2,8,8,1 toplamını 2,8,9 toplamıyla karşılaştır: ikisi de 19’dur. Seçtiğin gerekçe, neden yalnız toplam denetiminin yeterli olmadığını açıklamalıdır."
+    }
+  },
+  {
+    "id": "f013-foundation-katman-elektron-dizilimi-5",
+    "identity": "[\"f013-foundation-katman-elektron-dizilimi-5\",\"Bir katmanın kuramsal kapasitesi 2n² ile veriliyor. n=3 katmanının kapasitesi ile Z=20 nötr Ca atomunun temel hâlinde bu katmanda bulunan elektron sayısı sırasıyla nedir?\",\"\",[\"8 kapasite; 18 elektron\",\"18 kapasite; 18 elektron\",\"8 kapasite; 8 elektron\",\"32 kapasite; 2 elektron\",\"18 kapasite; 8 elektron\"],4,\"Kapasite 2×3²=18 elektrondur. Nötr temel hâl Ca dağılımı 2,8,8,2 olduğundan üçüncü katmanda 8 elektron bulunur. En çok sığabilecek sayı ile belirli bir atomun temel hâlinde gerçekten bulunan sayı farklıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "2n² bağıntısı, ana kuantum sayısı n olan katmanın kuramsal en fazla elektron kapasitesini verir.",
+        "Belirli bir atomun o katmanda gerçekten bulunan elektron sayısı enerjiye göre yerleşimden bulunur; kapasiteye eşit olmak zorunda değildir."
+      ],
+      "strategy": "İstenen iki sayıyı ayrı hesap satırlarına ayır: kuramsal kapasite için verilen bağıntı, gerçek doluluk için nötr Ca’nın temel hâl dağılımı. Sıralarını karıştırmadan birleştir.",
+      "steps": [
+        "Kapasite satırına n=3 koyup 2×3² işlemini kur; karesini aldıktan sonra 2 ile çarp.",
+        "Gerçek doluluk satırında nötr Ca’nın Z=20 nedeniyle 20 elektronunu kullan. İlk 20 için temel hâl dağılımını 2,8,8,2 olarak kur.",
+        "Dizinin üçüncü terimini al ve kapasite satırındaki sonuçla aynı sırada yaz. Bu iki değerin farklı olması bir çelişki değildir; kapasite bir üst sınırdır."
+      ],
+      "optionReasons": [
+        "8 üçüncü katmanın Ca’daki doluluğudur, kapasitesi değildir; 18’i gerçek doluluk diye yazmak da iki kavramı ters yerleştirir.",
+        "18 kapasite doğrudur; fakat Ca’nın üçüncü katmanı temel hâlde 18 değil 8 elektron içerir. Kapasitenin tamamı dolmaz.",
+        "8 gerçek doluluk için uygundur; kuramsal kapasite ise 2×3²=18’dir. İki değeri de 8 yazmak kapasiteyi dolulukla karıştırır.",
+        "32, n=4 için 2×4² kapasitesidir; sorudaki n=3’e ait değildir. 2 de Ca’nın üçüncü değil dördüncü katmanındaki elektron sayısıdır.",
+        "Doğru. n=3 kapasitesi 18, Ca’nın 2,8,8,2 temel hâlinde üçüncü katman doluluğu 8 elektrondur."
+      ],
+      "commonError": "Kapasiteyi her atomda gerçekleşen doluluk sanmak veya Ca dağılımındaki üçüncü terim yerine son terimi almak.",
+      "check": "Kapasite 18 iken gerçek doluluk 8 olması 8≤18 koşulunu sağlar. Ayrıca tüm katman doluluklarının toplamı 20 kalmalıdır."
+    }
+  },
+  {
+    "id": "f013-foundation-katman-elektron-dizilimi-6",
+    "identity": "[\"f013-foundation-katman-elektron-dizilimi-6\",\"Z=2 olan nötr He atomunun temel hâl katman dağılımı 2’dir. Periyot ve IUPAC 1–18 grup numarası hangi seçenekte doğru verilmiştir?\",\"\",[\"1. periyot; 18. grup\",\"1. periyot; 2. grup\",\"2. periyot; 18. grup\",\"2. periyot; 2. grup\",\"1. periyot; 1. grup\"],0,\"He’nin dolu tek katmanı vardır; bu yüzden 1. periyottadır. İlk katmanı iki elektronla tam dolduğu için soy gazlar arasında 18. grupta yer alır. Dış katmanda iki elektron var diye He’yi 2. gruba yerleştirmek ana grup eşleştirmesinin istisnasını atlar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Periyot, nötr temel hâlde elektron içeren en dış katmanın sıra numarasıdır. Grup ise elementin tablodaki aile sütununu gösterir.",
+        "Helyum, dış elektron sayısını doğrudan grup numarasına çeviren kestirme için istisnadır; ilk katmanı tamamlamak iki elektronla mümkündür."
+      ],
+      "strategy": "Verilen tek katmanlı dağılımdan önce periyodu çıkar; sonra helyumun aile yerini kullanarak grubu ayrı belirle. İki sayıyı elektron sayısına eşitleme.",
+      "steps": [
+        "2 dağılımı tek terimlidir ve iki elektronun birinci katmanda olduğunu söyler. Elektron sayısı 2 diye ikinci katman ekleme.",
+        "He’nin iki elektronla tamamlanan ilk katmanını soy gaz ailesiyle ilişkilendir; bu özel durumda iki dış elektronun 2. grubu göstermediğini uygula.",
+        "Bulduğun periyot ile soy gazların IUPAC grup numarasını sırasıyla birleştir. Her seçeneğin iki kısmını da ayrı denetleyerek yalnız biri doğru olan çiftleri ayır."
+      ],
+      "optionReasons": [
+        "Doğru. He tek elektronlu katman değil, iki elektron içeren tek katman taşır; 1. periyot ve soy gaz ailesinin 18. grubundadır.",
+        "1. periyot doğrudur; 2. grup yanlıştır. Helyumun iki elektronu doğrudan grup numarası olmaz.",
+        "18. grup doğrudur; fakat 2. periyot değildir. İki elektron aynı birinci katmanda olduğundan periyot 1’dir.",
+        "Hem periyot hem grup elektron sayısı olan 2’ye eşitlenmiştir. He’nin tek katmanı ve soy gaz aile yeri bu iki atamayı da düzeltir.",
+        "1. periyot doğrudur; 1. grup değildir. Helyumun ilk katmanı tamamlanmıştır ve H ile aynı aileye yerleştirilmez."
+      ],
+      "commonError": "“2 elektron” bilgisini hem iki katman hem 2. grup varmış gibi kullanmak.",
+      "check": "Doğru çiftte ilk sayı katman sayımından, ikinci sayı He’nin soy gaz aile yerinden gelmeli; iki sayıyı da aynı 2 değerinden türetme."
+    }
+  },
+  {
+    "id": "f013-foundation-katman-elektron-dizilimi-7",
+    "identity": "[\"f013-foundation-katman-elektron-dizilimi-7\",\"Ne nötr atomu için Z=10, Na⁺ için Z=11, Mg²⁺ için Z=12 veriliyor. Bu üç tanecik için hangi açıklama doğrudur?\",\"\",[\"Üçü aynı elementtir; çünkü elektron sayıları eşittir.\",\"Üçü de 10 elektron taşıyabilir; proton sayıları ve element kimlikleri farklıdır.\",\"Mg²⁺ oluşurken proton sayısı 10’a düşmüştür.\",\"Na⁺ oluşurken çekirdeğe bir proton eklenmiştir.\",\"Ne nötr olduğu için elektron taşımaz.\"],1,\"Ne için e=10; Na⁺ için e=11−1=10; Mg²⁺ için e=12−2=10 bulunur. Proton sayıları 10,11,12 olarak farklı kaldığından aynı elemente dönüşmüş sayılmazlar. Temel hâlde ele alınırlarsa üçünün de katman dağılımı 2,8 olur; bu koşulda elektron sayıları ve dizilimleri aynı olduğundan izoelektroniktirler. Kökte temel hâl verildiği varsayılmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Element kimliği proton sayısıyla belirlenir. Yük, proton ile elektron sayısının farkıdır; aynı elektron sayısı tek başına aynı element kimliği demek değildir.",
+        "Nötr atomda e=Z, q yüklü iyonda e=Z−q kullanılır. Yalnız elektron sayısından, belirtilmeyen bir enerji durumu veya ayrıntılı elektron dizilimi zorunlu olarak çıkarılmaz."
+      ],
+      "strategy": "Üç tanecik için ayrı p,e sütunları kur; Z ve yüklerden yalnız verilenlerin zorunlu kıldığı sayıları çıkar. Kimlik karşılaştırmasını elektronlara değil protonlara dayandır.",
+      "steps": [
+        "Ne nötr olduğundan p=10 ve e=10 yaz. Na⁺ için p=11’i sabit tutup e=11−1, Mg²⁺ için p=12’yi sabit tutup e=12−2 hesaplarını kur.",
+        "Elektron sütunundaki üç sonucu karşılaştır; ardından proton sütunundaki 10, 11 ve 12’nin eşit olup olmadığını denetle.",
+        "Eşit çıkan elektron sayısını farklı proton kimlikleriyle birlikte söyleyen seçeneği bul. Kök temel hâl demediği için buradan üçünün aynı ayrıntılı enerji yerleşiminde olduğunu ileri sürme."
+      ],
+      "optionReasons": [
+        "Elektron sayılarının eşitliği aynı element olmayı sağlamaz. Z değerleri 10, 11 ve 12 olduğundan çekirdek ve element kimlikleri farklıdır.",
+        "Doğru. Ne için 10, Na⁺ için 11−1=10 ve Mg²⁺ için 12−2=10 elektron bulunur; proton sayıları 10, 11 ve 12 olarak farklı kalır.",
+        "Mg²⁺ oluşurken iki elektron uzaklaşır; proton sayısı Z=12 olarak kalır. 10, bu iyonun elektron sayısıdır.",
+        "Na⁺ oluşumu çekirdeğe proton eklenmesi değildir. Z=11 değişmeden bir elektron kaybı gerçekleşir.",
+        "Nötr olmak elektron taşımamak değildir; proton ve elektron yüklerinin dengelenmesidir. Nötr Ne, 10 protona karşılık 10 elektron taşır."
+      ],
+      "commonError": "Elektron sayısı eşit olan taneciklerin elementini eşitlemek veya nötr taneciğin hiç yüklü parçacık taşımadığını sanmak.",
+      "check": "Her satırda p−e yükü sırasıyla 0,+1,+2 olmalı. Bu denetim için aynı temel hâl dizilimini varsaymak gerekmez."
+    }
+  },
+  {
+    "id": "f013-foundation-katman-elektron-dizilimi-8",
+    "identity": "[\"f013-foundation-katman-elektron-dizilimi-8\",\"Nötr bir atomun uyarılmış hâli için katman dağılımı 2,7,1,1 olarak veriliyor. Atom numarası ve elementin nötr temel hâlden belirlenen periyodu hangisidir?\",\"\",[\"Z=11; 4. periyot\",\"Z=10; 3. periyot\",\"Z=11; 3. periyot\",\"Z=12; 4. periyot\",\"Z=18; 3. periyot\"],2,\"Dağılım toplamı 2+7+1+1=11 elektrondur. Atom nötr olduğundan Z=11, yani Na’dır; nötr temel hâli 2,8,1 ve periyodu 3’tür. Uyarılmış bir elektronun daha yüksek katmanda bulunması elementi periyodik tabloda başka satıra taşımaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Uyarılmada elektronun enerji yerleşimi değişir; elektron kopması veya çekirdek değişimi yoksa toplam elektron ve proton sayıları korunur.",
+        "Elementin periyodu uyarılmış çizimdeki en dış elektronlu katmandan değil, aynı elementin nötr temel hâlinden belirlenir."
+      ],
+      "strategy": "Uyarılmış dağılımı yalnız toplam elektron sayısını bulmak için kullan; nötrlükten Z’ye geçip temel hâli yeniden kurduktan sonra periyodu belirle.",
+      "steps": [
+        "2,7,1,1 dizisinin bütün terimlerini topla; uyarılmış dış katmandaki elektronu toplamdan çıkarma.",
+        "Atom nötr olduğundan bulduğun toplam Z’ye eşittir. Bu elementin nötr temel hâlini ilk 20 element yerleşimiyle yeniden yaz.",
+        "Temel hâldeki en dış katmanı sayıp periyodu bul. Uyarılmış hâlde görülen dördüncü katmanı doğrudan periyot sayan seçeneği bu aşamada ayır."
+      ],
+      "optionReasons": [
+        "Z=11 toplamı doğrudur; 4. periyot ise uyarılmış dağılımdan okunmuştur. Nötr temel hâl 2,8,1 olduğundan periyot 3’tür.",
+        "Z=10, verilen dört terimin toplamı değildir; son katmandaki elektron da sayılmalıdır. Nötr toplam 11’dir.",
+        "Doğru. 2+7+1+1=11 elektron nötr atom için Z=11 verir; temel hâl 2,8,1 olduğundan element 3. periyottadır.",
+        "Z=12 için elektron toplamı 12 olmalıydı; verilen toplam 11’dir. 4. periyot da temel hâl yerine uyarılmış katman sayısından alınmıştır.",
+        "Z=18, verilen toplamdan bulunamaz. Periyot 3 tesadüfen doğru olsa da 2+7+1+1=11 koşulunu sağlamaz."
+      ],
+      "commonError": "Uyarılmış atomun geçici olarak elektron taşıyan en dış katmanını, elementin değişmiş periyodu gibi okumak.",
+      "check": "Temel hâle dönüşte elektronları yalnız yeniden yerleştir: toplam yine 11 kalmalı. Bu işlem yeni proton eklememeli ve elementin tablo yerini değiştirmemelidir."
+    }
+  },
+  {
+    "id": "f013-foundation-katman-elektron-dizilimi-9",
+    "identity": "[\"f013-foundation-katman-elektron-dizilimi-9\",\"X⁻ iyonunun temel hâl katman dağılımı 2,8,8. X’in nötr atomu için temel hâl dağılımı ve IUPAC grup numarası hangisidir?\",\"\",[\"2,8,8; 18. grup\",\"2,8,8,1; 1. grup\",\"2,8,6; 16. grup\",\"2,8,7; 17. grup\",\"2,8,7; 7. grup\"],3,\"Z=e+q=18+(−1)=17 olur. Nötr Cl’nin temel hâli 2,8,7’dir; yedi değerlik elektronu IUPAC 17. gruba karşılık gelir. İyonun sekiz dış elektronu nötr elementin grup adresini değiştirmez; 7A ile 17 sayımları da karıştırılmamalıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Negatif iyon, nötr atomuna göre elektron fazlalığı taşır. İyondan nötre dönerken fazla elektron geri çıkarılır; çekirdek değişmez.",
+        "İlk 20 ana grup elementi için nötr temel hâlin dış elektron sayısı grup hakkında bilgi verir; IUPAC 13–18 grup numaraları eski A grubu sayılarıyla aynı yazılmaz."
+      ],
+      "strategy": "İyon dağılımından e’yi bul, yükten Z’yi belirle ve nötr dağılıma dön; grubu bu nötr dağılımdan IUPAC numarasıyla yaz.",
+      "steps": [
+        "X⁻ dağılımındaki 2+8+8 toplamını elektron sayısı olarak al. İyonun bir fazla elektronu olduğundan p=e−1 ilişkisini kur.",
+        "Nötr X için elektron sayısını proton sayısına eşitle ve ilk üç katmana temel hâlde dağıt; iyonun son katmanındaki fazla elektronu kaldır.",
+        "Nötr dış katmandaki elektron sayısından ana grup ailesini belirle. Sonucu IUPAC 1–18 sistemiyle yaz; eski 7A gösterimini 7. grupla karıştırma."
+      ],
+      "optionReasons": [
+        "2,8,8 iyonun dağılımıdır. Nötr X’e geçerken fazla elektron çıkarılmadığından nötrün soy gaz ve 18. grup olduğu sonucu yanlıştır.",
+        "2,8,8,1, toplamı 19 olan nötr atoma aittir; bu atoma bir elektron eklenince 18 değil 20 elektron olurdu. X⁻ koşulunu sağlamaz.",
+        "2,8,6 toplamı 16’dır; buna bir elektron eklenince 17 olur. Verilen iyon toplamı 18’i karşılamaz.",
+        "Doğru. X⁻ 18 elektronlu olduğundan Z=17’dir; nötr X’in temel hâli 2,8,7 ve IUPAC grubu 17’dir.",
+        "2,8,7 dağılımı doğrudur; ancak dıştaki 7 elektronu IUPAC 7. grup diye yazmak yanlıştır. Bu aile eski gösterimde 7A, IUPAC sisteminde 17. gruptur."
+      ],
+      "commonError": "İyonun tamamlanmış dış katmanından nötr elementi soy gaz sanmak veya 7A’yı IUPAC 7. grup diye çevirmek.",
+      "check": "Seçtiğin nötr dağılıma bir elektron ekle: verilen 2,8,8’e dönmeli. Ayrıca nötrdeki 7 dış elektronu grup numarası olarak yazdıysan kullanılan numaralandırmayı yeniden kontrol et."
+    }
+  },
+  {
+    "id": "f013-foundation-katman-elektron-dizilimi-10",
+    "identity": "[\"f013-foundation-katman-elektron-dizilimi-10\",\"Modern atom yaklaşımıyla kullanılan basitleştirilmiş katman çizimleri hakkında hangi ifade uygundur?\",\"\",[\"Her elektron her anda çizilmiş çemberin tam üzerinde bulunmak zorundadır.\",\"Bir katman çizimi elektronun kesin konumunu ve hızını birlikte verir.\",\"Elektronun enerji alması elementin proton sayısını zorunlu değiştirir.\",\"Aynı elektron sayılı her iyon aynı elementtir.\",\"Çizilen çember ve noktalar sayımı kolaylaştırır; elektronların kesin dairesel yollarını göstermez.\"],4,\"Katman çizimleri enerji düzeyi ve elektron sayısını basitleştirir; gerçek, kesin dairesel yörüngelerin fotoğrafı değildir. Modern betimlemede orbitaller olasılık dağılımlarıyla kullanılır. Uyarılma ve iyonlaşma da proton sayısını değiştiren bir nükleer dönüşümle eşitlenmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bilimsel bir çizim, belli bilgileri görünür kılmak için kullanılan modeldir. Sayım gösterimi, gerçek uzaydaki hareketin bütün ayrıntılarını vermek zorunda değildir.",
+        "Modern atom yaklaşımı elektronları olasılıklarla açıklar; elektron enerjisi, elektron sayısı ve proton sayısı ise ayrı özelliklerdir."
+      ],
+      "strategy": "Her ifadenin çizime ne kadar bilgi yüklediğini sor: yalnız sayım mı, kesin hareket mi, çekirdek değişimi mi? Basitleştirilmiş çizimin hangi iddiayı gerçekten desteklediğini ayır.",
+      "steps": [
+        "Çember ve nokta sayısı elektronların katmanlara göre sayımını gösterebilir. Bunun her anda tam bir konum ve hız kaydı olup olmadığını düşün.",
+        "Kesin dairesel yol ve eşzamanlı kesin konum–hız iddialarını modern olasılık yaklaşımıyla karşılaştır. Enerji alma olayını da proton eklenmesiyle karıştırma.",
+        "Aynı elektron sayısının farklı Z’lerle mümkün olduğunu kullanarak “aynı element” iddiasını ayır. Geriye çizimin sayımı kolaylaştırdığını, kesin yol vermediğini söyleyen yorumu bırak."
+      ],
+      "optionReasons": [
+        "Çizilmiş çember üzerinde bulunmayı her an zorunlu kılmak, basitleştirilmiş sayım çizimini gerçek ve kesin yörüngeye dönüştürür; modern yorum bu değildir.",
+        "Bir katman çizimi elektronun kesin konumu ve hızını birlikte vermez; yalnız noktalar ve çemberlerden bu iki fiziksel büyüklük çıkarılamaz.",
+        "Elektronun enerji alması çekirdeğin proton sayısını zorunlu olarak değiştirmez; uyarılma ile element değişimi farklı olaylardır.",
+        "Elektron sayısı eşit iyonların Z değerleri farklı olabilir; aynı element kimliği için proton sayısı eşit olmalıdır.",
+        "Doğru. Çember ve noktalar sayımı kolaylaştıran temsil araçlarıdır; elektronun izlediği kesin dairesel yollar olarak okunmaz."
+      ],
+      "commonError": "Sayım için kullanılan çemberleri, elektronların her anda izlemek zorunda olduğu fiziksel yollar sanmak.",
+      "check": "Aynı sayım bilgisini çemberler yerine katman başlıkları altında noktalarla da verebilirsin. Bilgi korunuyorsa çemberin şekli tek başına gerçek hareket yolu kanıtı değildir."
+    }
+  },
+  {
+    "id": "elementlerin-siniflandirilmasi-q1",
+    "identity": "[\"elementlerin-siniflandirilmasi-q1\",\"H 1. gruptadır. Hangi sonuç doğrudur?\",\"\",[\"Alkali metaldir\",\"Ametaldir\",\"Yarı metaldir\",\"Soy gazdır\",\"Oda koşullarında sıvı metaldir\"],1,\"Hidrojen 1. grupta bulunmasına rağmen ametaldir; alkali metallerin genel özellikleri H için uygulanmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Periyodik tablodaki grup, aile sütununu; metal–ametal gibi sınıflar ise elementin özelliklerini anlatır. Bir sütundaki genel eğilimler istisnalar denetlenerek kullanılır.",
+        "Bir elementin sınıfı, yalnız bulunduğu sütunun diğer üyelerine bakılarak otomatik atanmaz; kimyasal ve fiziksel özellikleri de esas alınır."
+      ],
+      "strategy": "1. grubun genel ailesini hatırla, sonra H’nin bu aile adının otomatik uygulanamadığı özel üye olduğunu denetle; grup ile madde sınıfını ayrı tut.",
+      "steps": [
+        "1. gruptaki Li, Na ve K gibi elementlerin alkali metal örnekleri olduğunu belirle; bu genel bilgiyi H’ye uygulamadan önce istisnayı kontrol et.",
+        "Hidrojenin normal koşullarda moleküler bir gaz olduğunu ve metal özellikleriyle sınıflandırılmadığını hatırla. Grup numarası bu özelliği değiştirmez.",
+        "Soy gazların tamamlanmış dış katman ailesini, yarı metallerin karma özelliklerini ve sıvı metal seçeneğini H’nin bilinen özellikleriyle karşılaştırarak uygun sınıfı seç."
+      ],
+      "optionReasons": [
+        "H 1. grupta bulunsa da alkali metal olarak sınıflandırılmaz; sütundaki alkali metal genellemesinin özel istisnasıdır.",
+        "Doğru. Hidrojen ametaldir; 1. grupta yer alması onu alkali metal yapmaz.",
+        "H yarı metal değildir; Si gibi karma metal–ametal özellikleriyle ele alınan yarı metal sınıfına konmaz.",
+        "H soy gaz değildir; tek elektronlu nötr hidrojenin dış katmanı tamamlanmış soy gaz yapısında değildir.",
+        "H oda koşullarında sıvı metal değil, gaz hâlindeki ametaldir. Seçenek hem sınıfı hem fiziksel hâli yanlış verir."
+      ],
+      "commonError": "“1. grupta” bilgisinden, H istisnasını kontrol etmeden “alkali metal” sonucuna gitmek.",
+      "check": "Sınıf kararını yalnız sütun numarasıyla vermişsen H’nin gaz ve ametal özelliklerini açıklayamazsın; grup konumuyla sınıfın farklı bilgiler olduğunu kontrol et."
+    }
+  },
+  {
+    "id": "elementlerin-siniflandirilmasi-q2",
+    "identity": "[\"elementlerin-siniflandirilmasi-q2\",\"Oda koşullarında sıvı olan Hg için hangi yorum uygundur?\",\"\",[\"Metal olamaz\",\"Mutlaka ametaldir\",\"Metal sınıfındaki hâl istisnasıdır\",\"Soy gazdır\",\"Yarı metal olduğu kesindir\"],2,\"Cıva oda koşullarında sıvı bir metaldir. Metaller genellikle katıdır ifadesi her metal katıdır anlamına gelmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir madde sınıfına ilişkin yaygın özellik, her üye için istisnasız tanım olmak zorunda değildir. Maddenin hâli ayrıca sıcaklık ve basınç koşullarına bağlıdır.",
+        "Metal sınıflandırması tek başına “katı olmak” ölçütüne indirgenmez; bir element, hâli farklı olduğunda da aynı element kimliğini korur."
+      ],
+      "strategy": "Metallerin oda koşullarındaki hâli için verilen genel eğilimi mutlaklaştırma; Hg’nin bilinen madde sınıfını ve kökteki sıvı hâlini ayrı bilgiler olarak denetleyip genellemenin sınırını araştır.",
+      "steps": [
+        "Kökteki koşulun oda koşulları olduğunu belirle. Hg’nin bu koşulda sıvı olması gözlemini kabul et; onu gizli bir sıcaklık değişikliğiyle düzeltmeye çalışma.",
+        "Cıvanın metal olarak sınıflandırıldığını hatırla. Böylece katılık genellemesinin bütün metaller için zorunlu bir tanım olup olmadığını sınayabilirsin.",
+        "Sıvılık bilgisinin Hg’yi otomatik ametal, soy gaz veya yarı metal yapmadığını kullan; metal sınıfı içindeki hâl istisnasını anlatan seçeneği seç."
+      ],
+      "optionReasons": [
+        "“Metal olamaz” ifadesi bütün metallerin oda koşullarında katı olduğunu varsayar; sıvı cıva bu genellemenin istisnasıdır.",
+        "Sıvı olmak ametal sınıfını zorunlu kılmaz; Hg metal olarak sınıflandırılır.",
+        "Doğru. Hg oda koşullarında sıvı olan bir metaldir; metallerin yaygın katı hâli için istisna oluşturur.",
+        "Hg soy gaz değildir; fiziksel hâlin sıvı olması bir elementi soy gaz ailesine taşımaz.",
+        "Sıvılık yarı metal olmayı kanıtlamaz. Hg bu nedenle kesin yarı metal sayılamaz; bilinen sınıfı metaldir."
+      ],
+      "commonError": "“Metaller genellikle katıdır” bilgisindeki genellikle koşulunu kaldırıp sıvı metali imkânsız saymak.",
+      "check": "Gözlem Hg’nin element kimliğini değiştirmiyor. Sonucun, hem metal sınıfını hem verilen sıvı hâli aynı anda kabul edebilmeli."
+    }
+  },
+  {
+    "id": "elementlerin-siniflandirilmasi-q3",
+    "identity": "[\"elementlerin-siniflandirilmasi-q3\",\"Karbonun grafit biçimi elektrik iletiyor. Bu gözlem neyi gösterir?\",\"\",[\"Karbonun proton sayısı değişmiştir\",\"Grafit mutlaka alaşımdır\",\"Bütün ametaller iyi iletkendir\",\"İletkenlik tek başına metal sınıfını kanıtlamaz\",\"Karbon soy gazdır\"],3,\"Grafit ametal olan karbonun iletken allotropudur. Bir özelliği gözleyerek kesin metal sınıflandırması yapılamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir elementin farklı yapısal biçimlerine allotrop denir; atom türü aynı kalırken bağlanma düzeni ve fiziksel özellikler değişebilir.",
+        "Bir sınıfta sık görülen özellik, o özelliği gösteren her maddenin mutlaka o sınıfta olduğunu kanıtlamaz. Tek gözlemle sınıflandırmada karşı örnekler denetlenir."
+      ],
+      "strategy": "Grafitin iletkenliğini karbonun element kimliğinden ayır; bir ametalin iletken örneği bulunmasının hangi genel çıkarımı sınırlandırdığını bul.",
+      "steps": [
+        "Grafit karbonun yapısal biçimidir; gözlemde proton sayısının veya element türünün değiştiğine ilişkin bilgi yoktur.",
+        "Karbon ametal olduğu hâlde grafit yapısı elektrik iletebilir. Bu tek örneği, “iletken olan her madde metaldir” iddiasına karşı sınama olarak kullan.",
+        "Bu örnekten bütün ametallerin iletken olduğu sonucuna da geçme. Alaşım veya soy gaz demeden, yalnız iletkenliğin sınıf için yeterli kanıt olmadığını söyleyen seçeneği belirle."
+      ],
+      "optionReasons": [
+        "İletkenlik gözlemi proton sayısının değiştiğini göstermez; grafit hâlâ karbon atomlarından oluşur.",
+        "Alaşım, metal içeren bir karışım bağlamıdır. Grafitin iletmesi, saf karbonun bu biçiminin mutlaka alaşım olduğunu kanıtlamaz.",
+        "Tek bir ametalin iletken biçimi, bütün ametallerin iyi iletken olduğunu göstermez; bir örnek evrensel genellemeye yetmez.",
+        "Doğru. Ametal olan karbonun grafit biçimi iletkendir; dolayısıyla iletkenlik tek başına metal sınıfını kanıtlayamaz.",
+        "Karbon soy gaz değildir. İletkenlik gözlemi Z’yi veya elementin periyodik ailesini değiştirmez."
+      ],
+      "commonError": "Grafitin iletmesini bütün ametallere genellemek veya iletkenliği görünce karbonun element sınıfını değiştirmek.",
+      "check": "Tek karşı örnek “her iletken metaldir” önermesini çürütür; ama “bütün ametaller iletkendir” önermesini kurmaz. Sonucun bu iki mantıksal sınırı korumalı."
+    }
+  },
+  {
+    "id": "elementlerin-siniflandirilmasi-q4",
+    "identity": "[\"elementlerin-siniflandirilmasi-q4\",\"He atomunun iki elektronu bulunur. Doğru tablo konumu hangisidir?\",\"\",[\"1. periyot 18. grup\",\"1. periyot 2. grup\",\"2. periyot 2. grup\",\"2. periyot 18. grup\",\"3. periyot 1. grup\"],0,\"He ilk katmanı dolu olan soy gazdır; 1. periyot ve 18. gruptadır. İki elektron olması onu 2. gruba yerleştirmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir elementin periyodu nötr temel hâl katman düzeniyle, grubu tablodaki aile yerleşimiyle ilişkilidir. Elektron sayısı tek başına her iki numarayı vermez.",
+        "İlk katmanın kapasitesi ikidir. Helyumun aile yerleşimi, iki dış elektronu bulunan diğer elementlerle otomatik aynı grup sonucunu vermeyen özel bir durumdur."
+      ],
+      "strategy": "He’nin bilinen temel hâl yerleşimiyle satırı, soy gaz aile yeriyle sütunu ayrı çıkar; iki elektronu iki katman veya doğrudan 2. grup sanan seçenekleri sistemli denetle.",
+      "steps": [
+        "He’nin iki elektronu temel hâlde birinci katmanı tamamlar; dolayısıyla tablo satırını belirlerken yalnız bir katman kullanırsın.",
+        "Bu tamamlanmış ilk katmanlı elementin soy gaz ailesinde yer aldığını kullan; aileyi IUPAC grup numarasıyla yaz.",
+        "Satır ve sütun değerlerini birleştir. 2. periyot veya 2. grup veren seçeneklerin elektron sayısını yanlış numaraya taşıdığını, 3. periyot 1. grubun ise iki bilgiyi de değiştirdiğini ayır."
+      ],
+      "optionReasons": [
+        "Doğru. He’nin bilinen nötr temel hâli tek katmanlıdır; tablo konumu 1. periyot, soy gazların bulunduğu 18. gruptur.",
+        "1. periyot doğrudur, fakat 2. grup değildir. İki elektronlu He, soy gaz ailesinde 18. gruptadır.",
+        "İki elektron iki katman demek değildir; 2. periyot yanlıştır. Grup da 2 değil He’nin soy gaz aile grubu olan 18’dir.",
+        "18. grup doğrudur; ancak He’nin iki elektronu birinci katmanda olduğundan 2. periyot değil 1. periyottadır.",
+        "3. periyot için üçüncü katmanda temel hâl elektronu gerekir; He’de yoktur. Ayrıca He 1. grupta değil 18. gruptadır."
+      ],
+      "commonError": "Toplam elektron sayısını periyot ve grup numarası için ortak bir kestirme olarak kullanmak.",
+      "check": "He’nin 2 elektronunu tek bir birinci katmana çiz. Bu çizim satırı doğrular; grup için ayrıca soy gaz yerleşimini kullanman gerektiğini kontrol et."
+    }
+  },
+  {
+    "id": "elementlerin-siniflandirilmasi-q5",
+    "identity": "[\"elementlerin-siniflandirilmasi-q5\",\"Silisyumun yarı iletken ve kırılgan bir katı olması hangi sınıfla uyumludur?\",\"\",[\"Alkali metal\",\"Soy gaz\",\"Sıvı metal\",\"Halojen\",\"Yarı metal\"],4,\"Silisyum yarı metal örneğidir. Yarı iletkenliği ve kırılganlığı sınıflandırmada birlikte anlam taşır; yalnız parlaklığa bakılmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yarı iletkenlik, iletkenliği koşullara ve yapıya göre değişebilen bir elektriksel özelliktir; kırılganlık ise mekanik bir özelliktir.",
+        "Element sınıfları birden çok özelliğin birlikte değerlendirilmesiyle tanınır. Metal–ametal arasında karma özellikler gösterebilen elementler ayrıca sınıflandırılır."
+      ],
+      "strategy": "Elektriksel özellik ile kırılgan katı olma bilgisini birlikte kullan; yalnız bir özelliğe bakmak yerine Si’nin bilinen karma özellikli element sınıfıyla eşleştir.",
+      "steps": [
+        "Si’nin katı olduğu verildiğinden sıvı metal ve gaz aile çağrışımlarını kökle karşılaştırarak ayır.",
+        "Yarı iletkenlik ile kırılganlık, iyi iletken ve dövülebilir metal genellemesinin birlikte uygulanmadığını gösterir; tek başına “iletken” sözcüğünden alkali metal sonucu çıkarma.",
+        "Silisyumun bu karma özelliklerle yarı metal olarak sınıflandırıldığını hatırla. Halojen ve soy gaz seçeneklerinin bilinen aile yerlerini de Si ile karşılaştırarak son seçimi yap."
+      ],
+      "optionReasons": [
+        "Si alkali metal değildir; verilen yarı iletken ve kırılgan katı özellikleri onu 1. grubun alkali metalleriyle eşitlemez.",
+        "Si soy gaz değildir; katı yarı iletken silisyum, 18. grubun soy gaz ailesine ait değildir.",
+        "Kökte Si kırılgan bir katı olarak verilmiştir; “sıvı metal” hem verilen hâlle hem Si’nin sınıfıyla uyuşmaz.",
+        "Si halojen değildir; halojenler 17. grubun ailesidir. Yarı iletken silisyumun bu aileye yerleştiği sonucu çıkmaz.",
+        "Doğru. Silisyum, yarı iletkenlik ve kırılgan katılık gibi karma özellikleriyle yarı metal sınıfında ele alınır."
+      ],
+      "commonError": "İletkenlikle ilgili bir özellik duyunca yarı iletkenlik ile iyi metal iletkenliğini aynı sayıp Si’yi metal ilan etmek.",
+      "check": "Seçtiğin sınıf hem elektriksel yarı iletkenliği hem kırılgan katı yapıyı birlikte açıklamalı; yalnız gaz veya sıvı hâl varsayarak verilen özellikleri değiştirmemeli."
+    }
+  }
+]

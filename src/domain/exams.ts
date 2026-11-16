@@ -51,10 +51,10 @@ function snapshot(lesson: Lesson): ExamItem[] {
       lessonTitle: lesson.title.tr,
       prompt: helpQuestion.prompt,
       ...(q.passage ? { passage: q.passage.tr } : {}),
-      options: q.options.map((o) => o.tr),
+      options: [...helpQuestion.options],
       answer: q.answer,
-      explanation: q.explanation.tr,
-      hint: q.hint.tr,
+      explanation: helpQuestion.explanation,
+      hint: helpQuestion.hint,
       ...(guidance ? { guidance: structuredClone(guidance) } : {}),
     };
   });

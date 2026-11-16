@@ -1,10 +1,11 @@
+import { clarifiedQuestionView } from "../domain/questionPresentation";
 import { Lightbulb } from "lucide-react";
 import type { HelpQuestion } from "../domain/questionHelpModel";
 import { helpPanels, resolvedGuidance } from "../learning/questionHelp";
 import "./questionHelp.css";
 
 export function QuestionHelp({
-  question,
+  question: originalQuestion,
   level,
   onLevel,
   disabled = false,
@@ -16,6 +17,7 @@ export function QuestionHelp({
   disabled?: boolean;
   reviewed?: boolean;
 }) {
+  const question = clarifiedQuestionView(originalQuestion);
   const guidance = resolvedGuidance(question);
   const panels = helpPanels(question);
   const full = level > panels.length;
@@ -44,7 +46,7 @@ export function QuestionHelp({
                 <p>{question.explanation}</p>
                 {guidance && (
                   <>
-                <h4>Şıkların mantığı</h4>
+                    <h4>Şıkların mantığı</h4>
                     <ol type="A">
                       {guidance.optionReasons.map((reason, i) => (
                         <li key={i}>{reason}</li>

@@ -109,8 +109,12 @@ it("reveals the actual strategy and individual steps before the explicit full so
   expect(full).not.toContain("help-next");
 });
 
-it("uses original hints and explanations honestly where a four-part authored guide is not yet available", () => {
-  const q = bank.get("m1")!;
+it("retains original hints and explanations in an unreviewed historical custom snapshot", () => {
+  const q = {
+    ...bank.get("m1")!,
+    id: "unreviewed-historical-mol-snapshot",
+    guidance: undefined,
+  };
   expect(resolvedGuidance(q)).toBeUndefined();
   expect(helpPanels(q)).toEqual([{ title: "İlk ipucu", paragraphs: [q.hint] }]);
   const legacySnapshot = { ...q, hint: undefined };
@@ -158,11 +162,12 @@ it("keeps simulation assistance off until explicitly enabled, preserving the ent
   );
   expect(state.examDraft!.helpLevels).toBeUndefined();
   state = changeExam(state, id, { type: "help", index: 0, level: 3 }, 1400);
-  const { helpEnabled, helpLevels, helpPanelCounts, ...rest } = state.examDraft!;
+  const { helpEnabled, helpLevels, helpPanelCounts, ...rest } =
+    state.examDraft!;
   expect(rest).toEqual(before.examDraft);
   expect(helpEnabled).toBe(true);
   expect(helpLevels).toEqual([3]);
-  expect(helpPanelCounts).toEqual({0:4});
+  expect(helpPanelCounts).toEqual({ 0: 4 });
   state = changeExam(
     state,
     id,

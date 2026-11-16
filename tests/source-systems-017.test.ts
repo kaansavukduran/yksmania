@@ -1,3 +1,4 @@
+import { clarifiedGuideView } from "../src/learning/guidePresentation028";
 import { publishedQuestion } from "./helpers/publishedQuestion";
 import { createHash } from "node:crypto";
 import { expect, it } from "vitest";
@@ -38,7 +39,9 @@ it("retains every previously verified source question and teaching field while a
   expect(all.length).toBeGreaterThanOrEqual(2440);
   expect(byId.size).toBe(all.length);
   for (const question of oldQuestions)
-    expect(byId.get(question.id), question.id).toEqual(publishedQuestion(question));
+    expect(byId.get(question.id), question.id).toEqual(
+      publishedQuestion(question),
+    );
   expect(Object.keys(oldTeaching)).toHaveLength(235);
   for (const [id, hash] of Object.entries(oldTeaching)) {
     const lesson = lessonById(id)!;
@@ -52,7 +55,9 @@ it("retains every previously verified source question and teaching field while a
     ).toBe(hash);
   }
   const oldIds = new Set(oldQuestions.map((q) => q.id));
-  const stageIds = new Set(stageQuestions.filter((q) => !oldIds.has(q.id)).map((q) => q.id));
+  const stageIds = new Set(
+    stageQuestions.filter((q) => !oldIds.has(q.id)).map((q) => q.id),
+  );
   const added = all.filter((q) => stageIds.has(q.id));
   expect(added).toHaveLength(300);
   for (const question of added) {
@@ -71,7 +76,9 @@ it("retains every previously verified source question and teaching field while a
 
 it("teaches all thirty next headings in verified order with deep guides, complete sheets and independent practice", () => {
   expect(lessons.length).toBeGreaterThanOrEqual(265);
-  expect(lessons.filter((l) => !l.tags.includes("soru-seti")).length).toBeGreaterThanOrEqual(264);
+  expect(
+    lessons.filter((l) => !l.tags.includes("soru-seti")).length,
+  ).toBeGreaterThanOrEqual(264);
   expect(lessonGuides.size).toBeGreaterThanOrEqual(236);
   expect(builtInCheatSheets.size).toBeGreaterThanOrEqual(264);
   const next = studyTopics.slice(228, 258),
@@ -83,7 +90,7 @@ it("teaches all thirty next headings in verified order with deep guides, complet
     );
     expect(theory, topic.title).toHaveLength(1);
     const lesson = theory[0],
-      guide = lessonGuides.get(lesson.id)!;
+      guide = clarifiedGuideView(lessonGuides.get(lesson.id))!;
     expect(lesson.subjectId, topic.title).toBe(topic.subjectId);
     expect(Object.hasOwn(oldTeaching, lesson.id), topic.title).toBe(false);
     ids.push(lesson.id);

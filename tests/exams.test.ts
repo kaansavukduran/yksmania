@@ -181,13 +181,15 @@ it("copies whole original question payloads with unchanged option order and answ
     const chosen = selectExamVariant(spec, "payload-check");
     for (const item of chosen) {
       const original = bank.get(item.id)!;
+      const shown = localizedQuestionView(original.q);
       expect(item.lessonId).toBe(original.lesson.id);
       expect(item.subjectId).toBe(original.lesson.subjectId);
-      expect(item.prompt).toBe(localizedQuestionView(original.q).prompt.tr);
-      expect(item.options).toEqual(original.q.options.map((o) => o.tr));
+      expect(item.prompt).toBe(shown.prompt.tr);
+      expect(item.options).toEqual(shown.options.map((o) => o.tr));
       expect(item.answer).toBe(original.q.answer);
       expect(item.passage).toBe(original.q.passage?.tr);
-      expect(item.explanation).toBe(original.q.explanation.tr);
+      expect(item.explanation).toBe(shown.explanation.tr);
+      expect(item.hint).toBe(shown.hint.tr);
     }
     if (spec.id === "branch-tyt-turkce")
       expect(

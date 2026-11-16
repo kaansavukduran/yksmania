@@ -1,0 +1,1192 @@
+[
+  {
+    "id": "atom-capi-karsilastirma-q1",
+    "identity": "[\"atom-capi-karsilastirma-q1\",\"Nötr Li, Na ve K aynı grupta, sırasıyla 2, 3 ve 4. periyottadır. Yarıçap sırası hangisidir?\",\"\",[\"Li > Na > K\",\"Na > K > Li\",\"Li < Na < K\",\"K < Li < Na\",\"Üçü eşittir\"],2,\"Aynı grupta aşağı inerken katman ve perdeleme artar. Bu nedenle Li < Na < K olur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı gruptaki nötr atomlarda periyot arttığında dış elektron daha yüksek bir ana enerji katmanına yerleşir. İç elektronların perdelemesi de artar. Bu karşılaştırmada yalnız proton sayısını büyüklük ölçütü yapmak yerine dış katmanı izlemek gerekir."
+      ],
+      "strategy": "Üç atomu verilen periyot numaralarıyla yan yana yaz; ortak grup nedeniyle değişen katman sayısını yarıçap eğilimine çevir ve eşitsizlik işaretinin küçükten büyüğe doğru olduğunu denetle.",
+      "steps": [
+        "Li için iki, Na için üç, K için dört elektron içeren ana katman vardır; aynı grup verisi bu karşılaştırmayı mümkün kılar.",
+        "Yeni dış katman ve artan perdeleme, grupta aşağıdaki nötr atomun elektron bulutunu genel olarak genişletir.",
+        "Bu yüzden yarıçap küçükten büyüğe Li < Na < K olur; istenen üçlü sıra C seçeneğidir."
+      ],
+      "optionReasons": [
+        "Li > Na > K, dış katman sayısındaki artışın yarıçapı büyütmesi yerine küçülttüğünü varsayar; eğilimin yönünü ters çevirir.",
+        "Na > K > Li, Li’yi en küçük tutsa da K’nin dördüncü katmanını göz ardı ederek Na’yı K’den büyük yapar.",
+        "Doğru. Verilen ortak grupta iki, üç ve dört katman sırası nötr yarıçaplar için Li < Na < K sonucunu verir.",
+        "K < Li < Na, dört katmanlı K’yi iki katmanlı Li’den küçük kabul eder; ortak grup karşılaştırmasına uymaz.",
+        "Üçü eşit olamaz; aynı grupta bulunmak dış katman sayısının ve yarıçapın aynı olması anlamına gelmez."
+      ],
+      "commonError": "Aynı grupta aşağı inerken artan proton sayısını tek başına kullanıp yeni katman ile perdelemeyi yok sayma.",
+      "check": "Sırayı tersinden büyükten küçüğe yazınca K > Na > Li elde edilmelidir; periyotlar da aynı yönde 4 > 3 > 2’dir."
+    }
+  },
+  {
+    "id": "atom-capi-karsilastirma-q2",
+    "identity": "[\"atom-capi-karsilastirma-q2\",\"Nötr Na, Mg ve Al 3. periyottadır. Yarıçapları büyükten küçüğe nasıl sıralanır?\",\"\",[\"Al > Mg > Na\",\"Na > Mg > Al\",\"Mg > Al > Na\",\"Na > Al > Mg\",\"Üçü eşittir\"],1,\"Aynı periyotta artan etkin çekim elektron bulutunu sıkılaştırır. Bu üç atomda Na > Mg > Al olur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bu sorudaki Na, Mg ve Al gibi ana grup örneklerinde, aynı periyottaki atomlara eklenen elektronlar aynı ana katmana gelir. Proton sayısındaki artış tam olarak perdelenmediği için etkin çekim genellikle güçlenir. Ana grup örneklerinde bu durum elektron bulutunun daralmasını açıklar."
+      ],
+      "strategy": "Önce üçünün de aynı periyotta olduğunu sabitle; Na, Mg ve Al’nin tablodaki soldan sağa yerini belirleyip artan çekimi yarıçapın azalmasıyla ilişkilendir.",
+      "steps": [
+        "Na, Mg ve Al üçüncü periyotta, bu sırayla soldan sağa yer alır; karşılaştırmada yeni bir ana katman eklenmez.",
+        "Na’dan Mg’ye, ardından Al’ye giderken çekirdek yükü ve dış elektronlara etkiyen çekim artar.",
+        "Yarıçap bu yönde küçüldüğünden büyükten küçüğe Na > Mg > Al yazılır."
+      ],
+      "optionReasons": [
+        "Al > Mg > Na, aynı periyottaki etkin çekim artışının elektron bulutunu daraltmasını ters yönde yorumlar.",
+        "Doğru. Katman sayısı sabitken Na’dan Al’ye artan etkin çekim, Na > Mg > Al yarıçap sırasını verir.",
+        "Mg > Al > Na, Na’yı en küçük yapar; oysa bu üçlüde en soldaki nötr Na’nın yarıçapı en büyüktür.",
+        "Na > Al > Mg, Na’yı doğru yere koyar fakat Mg ile Al’yi ters sıralar; Al’nin daha güçlü etkin çekimi hesaba katılmamıştır.",
+        "Aynı periyotta bulunmaları yalnız ana katman sayısını ortaklaştırır; farklı çekirdek yükleri nedeniyle yarıçaplar eşit değildir."
+      ],
+      "commonError": "Daha fazla elektronu olan atomu her zaman daha büyük sayma; aynı periyotta çekirdek çekimi de değişir.",
+      "check": "Na–Mg ve Mg–Al ikililerini ayrı denetle: iki adımda da sağdaki atom küçülmelidir. Böylece tek bir yanlış ikili bütün sırayı bozamaz."
+    }
+  },
+  {
+    "id": "atom-capi-karsilastirma-q3",
+    "identity": "[\"atom-capi-karsilastirma-q3\",\"Atom numaraları O=8, F=9, Na=11, Mg=12 olan O²⁻, F⁻, Na⁺, Mg²⁺ iyonlarından en küçüğü hangisidir?\",\"\",[\"O²⁻\",\"F⁻\",\"Na⁺\",\"Mg²⁺\",\"Hepsi eşit\"],3,\"Dördü de 10 elektrondur. Proton sayısı en büyük olan Mg²⁺ aynı sayıda elektronu daha güçlü çeker ve en küçüktür.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tek atomlu iyonun elektron sayısı, proton sayısından cebirsel yükü çıkararak bulunur. Eş elektronlu iyonlarda elektron dizilimi ortak olduğundan çekirdek yükü daha büyük olan iyon elektron bulutunu daha kuvvetli toplar."
+      ],
+      "strategy": "Her iyon için önce proton ve elektron sayılarını iki sütuna yaz. Eş elektronlu olduklarını gerçekten doğruladıktan sonra en küçük yarıçapı en güçlü çekirdek çekimiyle eşleştir.",
+      "steps": [
+        "Elektron sayıları O²⁻ için 8+2, F⁻ için 9+1, Na⁺ için 11−1, Mg²⁺ için 12−2’dir; dördü de 10 eder.",
+        "Bu ortak elektron sayısında proton sayıları 8, 9, 11 ve 12’dir. Proton arttıkça yarıçap küçülür.",
+        "En yüksek proton sayısı 12 olan Mg²⁺ en küçüktür; tam büyükten küçüğe sıra O²⁻ > F⁻ > Na⁺ > Mg²⁺ olur."
+      ],
+      "optionReasons": [
+        "O²⁻ aynı 10 elektronu yalnız 8 protonla çeker; bu serinin en küçük değil en büyük üyesidir.",
+        "F⁻ iyonunun 9 protonu vardır; aynı elektronlu Na⁺ ve Mg²⁺ daha güçlü çekimle daha küçüktür.",
+        "Na⁺, O²⁻ ve F⁻’ten küçüktür; fakat 12 protonlu Mg²⁺, 11 protonlu Na⁺’tan da küçüktür.",
+        "Doğru. Mg²⁺’ın 10 elektronu ve 12 protonu vardır; eş elektronlu verilen seri içinde çekimi en güçlü, yarıçapı en küçüktür.",
+        "Elektron sayılarının eşitliği yarıçapların eşitliğini gerektirmez; dört farklı proton sayısı çekimi değiştirir."
+      ],
+      "commonError": "Yükün yalnız büyüklüğüne bakıp O²⁻ ile Mg²⁺’ı aynı boyda sayma; yük işareti ve proton sayısı birlikte kullanılmalıdır.",
+      "check": "Her türde proton−elektron farkını geri hesapla: 8−10=−2, 9−10=−1, 11−10=+1, 12−10=+2; verilen yükler aynen elde edilir."
+    }
+  },
+  {
+    "id": "atom-capi-karsilastirma-q4",
+    "identity": "[\"atom-capi-karsilastirma-q4\",\"Na atomu bir elektron verip Na⁺ olduğunda hangi değişim beklenir?\",\"\",[\"Proton sayısı azalır\",\"Elektron sayısı artar\",\"Atom numarası artar\",\"Yeni katman oluşur\",\"Yarıçap küçülür\"],4,\"Na 11 protonunu korur; elektron sayısı 10 olur, dış katman boşalır ve yarıçap küçülür.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kimyasal iyonlaşmada çekirdek korunur; proton sayısı ve element kimliği değişmez. Ana grup atomu en dış elektronunu verdiğinde elektron sayısı azalabilir ve boşalan dış katman nedeniyle kendi katyonu daha küçük olabilir."
+      ],
+      "strategy": "Na→Na⁺ dönüşümünü önce yalnız elektron kaybı olarak kaydet. Sonra nötr atom ile iyonun katman dizilimlerini karşılaştır; çekirdeğe ilişkin seçenekleri bu süreçten ayrı tut.",
+      "steps": [
+        "Nötr Na’nın 11 protonu ve 11 elektronu vardır. Bir elektron verildiğinde protonlar 11’de kalır, elektron sayısı 10 olur.",
+        "Elektron dağılımı 2,8,1’den 2,8’e geçer; üçüncü ana katmandaki son elektron çıkarılmıştır.",
+        "Dıştaki katmanın boşalması ve kalan elektronların çekilmesiyle Na⁺ yarıçapı Na’dan küçüktür; yarıçap küçülür seçilir."
+      ],
+      "optionReasons": [
+        "Proton sayısını azaltmak Na’nın element kimliğini değiştirirdi; elektron verme çekirdekten proton çıkarmak değildir.",
+        "Elektron verilmesi sayıyı 11’den 10’a düşürür; artış elektron alma sürecinde olurdu.",
+        "Atom numarası proton sayısıdır ve 11 olarak korunur; iyon yükündeki + işareti atom numarasına eklenmez.",
+        "Elektron kaybında yeni katman oluşmaz; bu örnekte dış üçüncü katman tam tersine boşalır.",
+        "Doğru. Na’nın dış elektronu çıkarılıp üçüncü katmanı boşaldığında kendi Na⁺ iyonu daha küçük olur."
+      ],
+      "commonError": "Pozitif yükü proton kazanılması sanma; burada artı yükün nedeni protonlara göre elektron eksikliğidir.",
+      "check": "Na⁺ için 11−10=+1 yükü bulunur. 2+8 toplamı 10 elektronu doğrular ve üçüncü katmanın artık elektron içermediğini gösterir."
+    }
+  },
+  {
+    "id": "atom-capi-karsilastirma-q5",
+    "identity": "[\"atom-capi-karsilastirma-q5\",\"Cl atomu bir elektron alıp Cl⁻ olduğunda hangi karşılaştırma doğrudur?\",\"\",[\"Cl⁻, Cl’den büyüktür\",\"Cl⁻, Cl’den küçüktür\",\"Proton sayıları farklıdır\",\"Atom numarası bir artar\",\"İkisi de nötrdür\"],0,\"Elektron alan Cl atomunda proton sayısı sabitken elektronlar arası itme artar. Cl⁻ yarıçapı kendi nötr atomundan büyüktür.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı elementin atomu ile anyonu karşılaştırılırken proton sayısı ortaktır. Dış katmana eklenen elektron, elektronlar arasındaki itme ve elektron başına etkin çekim dengesini değiştirerek bulutun genişlemesine yol açar."
+      ],
+      "strategy": "Cl ve Cl⁻ için hangi tanecik sayısının korunduğunu, hangisinin bir arttığını ayır. Yarıçap karşılaştırmasını farklı elementler arasında değil aynı çekirdeğin bu iki elektron durumu arasında kur.",
+      "steps": [
+        "Cl atomunda 17 proton ve 17 elektron vardır; Cl⁻ oluşurken bir elektron eklenir ve elektron sayısı 18 olur.",
+        "Çekirdek yükü değişmezken aynı dış katmandaki elektron sayısı ve itme artar; anyon kendi nötr atomundan büyür.",
+        "Bu nedenle Cl⁻ yarıçapı Cl’den büyüktür. İyonun − yükü nötr olmadığını ayrıca belirtir."
+      ],
+      "optionReasons": [
+        "Doğru. Aynı 17 protonlu çekirdeğe eklenen elektron, Cl⁻ bulutunun nötr Cl’ye göre genişlemesine yol açar.",
+        "Cl⁻ < Cl demek elektron alma etkisini bu aynı-element karşılaştırmasında ters yorumlamaktır; anyon daha büyüktür.",
+        "Cl ve Cl⁻ aynı elementtir; ikisinin de proton sayısı 17’dir. Değişen toplam elektron sayısıdır.",
+        "Atom numarası elektron sayısı değil proton sayısıdır; elektron almak onu 17’den 18’e çıkarmaz.",
+        "Cl nötrdür, Cl⁻ ise protonlarından bir fazla elektron taşır; iki türün de nötr olduğu söylenemez."
+      ],
+      "commonError": "Atom numarası, toplam elektron sayısı ve iyon yükünü tek sayı gibi kullanma; anyonda bunların görevleri farklıdır.",
+      "check": "Cl⁻’ta 17−18=−1 elde edilir; bu hesap çekirdeğin korunduğunu ve artan boyutun proton artışından kaynaklanmadığını doğrular."
+    }
+  },
+  {
+    "id": "iyonlasma-enerjisi-q1",
+    "identity": "[\"iyonlasma-enerjisi-q1\",\"Birinci iyonlaşma enerjisinin doğru süreci hangisidir?\",\"\",[\"X(g)+e⁻ → X⁻(g)\",\"X⁺(g) → X²⁺(g)+e⁻\",\"X(k) → X(s)\",\"X(g)+enerji → X⁺(g)+e⁻\",\"X⁻(g)+e⁻ → X²⁻(g)\"],3,\"Birinci iyonlaşma nötr gaz atomundan ilk elektronu koparmaktır. X⁺ başlangıcı ikinci iyonlaşma olur.\"]",
+    "guidance": {
+      "knowledge": [
+        "İyonlaşma elektron koparma olayıdır; kopan elektron ürünler tarafında gösterilir. Birinci ve sonraki iyonlaşmaların ayrımı, başlangıç taneciğinin yüküne bağlıdır. Tanımda gaz hâli belirtilir; bir katının hâl değiştirmesi farklı bir fiziksel olaydır."
+      ],
+      "strategy": "Her denklemde başlangıç yükünü, gaz hâlini ve elektronun hangi tarafta olduğunu işaretle. Ardından yalnız ilk elektronu uzaklaştıran ve enerji gerektiren süreci bu üç ölçütle seç.",
+      "steps": [
+        "Birinci iyonlaşma başlangıcında nötr bir gaz atomu bulunmalıdır; X⁺ ile başlayan olay ilk elektronun koparılması değildir.",
+        "Bir elektron uzaklaştırılınca ürün gaz iyonu +1 yük kazanır ve e⁻ sağ tarafa yazılır; koparma için sisteme enerji verilir.",
+        "X(g)+enerji → X⁺(g)+e⁻ bu koşulları birlikte sağlar. Elektron ekleme veya katı–sıvı dönüşümü aynı süreç değildir."
+      ],
+      "optionReasons": [
+        "X(g)+e⁻ → X⁻(g) bir gaz atomunun elektron almasıdır; iyonlaşmadaki koparma yönünün tersidir.",
+        "X⁺’tan X²⁺’a elektron koparılması ikinci iyonlaşmadır; başlangıçta nötr atom bulunmaz.",
+        "X(k) → X(s) katıdan sıvıya geçişi gösterir; denklemde elektron koparılması yoktur.",
+        "Doğru. Nötr gaz atomuna enerji verilerek bir elektron çıkarılır ve gaz hâlinde +1 iyon oluşur.",
+        "X⁻’a yeniden elektron eklenmesi negatif yükü artırır; birinci iyonlaşma ne anyonla başlar ne elektron ekler."
+      ],
+      "commonError": "Elektron içeren bütün denklemleri aynı enerji kavramı sanma; başlangıç yükü ve elektronun yönü süreç adını değiştirir.",
+      "check": "Seçilen denklemde yük solda 0, sağda (+1)+(−1)=0’dır. Elektronun ürün olması koparmayı, soldaki enerji de enerji gereksinimini doğrular."
+    }
+  },
+  {
+    "id": "iyonlasma-enerjisi-q2",
+    "identity": "[\"iyonlasma-enerjisi-q2\",\"Aynı gruptaki Li, Na, K için birinci iyonlaşma enerjisi büyükten küçüğe hangisidir?\",\"\",[\"Li > Na > K\",\"K > Na > Li\",\"Na > Li > K\",\"Li > K > Na\",\"Üçü eşittir\"],0,\"Grupta aşağı inerken yarıçap ve perdeleme artar; dış elektron daha kolay kopar. Li > Na > K bulunur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı grupta aşağıdaki nötr atomun dış elektronu daha yüksek katmanda ve daha fazla iç elektron perdelemesi altında bulunur. Bu elektronun çekirdekten ayrılması genellikle daha kolaydır. Kolay koparma, gereken iyonlaşma enerjisinin daha küçük olması demektir."
+      ],
+      "strategy": "Li, Na ve K’nin ortak grup içindeki yukarıdan aşağı konumlarını belirle; dış elektronun tutulma güçlüğünü karşılaştırıp enerji sırasını istenen büyükten küçüğe düzenle.",
+      "steps": [
+        "Li, Na ve K sırasıyla ikinci, üçüncü ve dördüncü periyot alkali metal atomlarıdır; elektron içeren ana katman sayısı aşağı doğru artar.",
+        "Dış elektron aşağı doğru daha uzak ve daha perdelenmiş olduğundan K’den koparmak Na’dan, Na’dan koparmak Li’den kolaydır.",
+        "Gereken enerji bunun ters sırasındadır: İE₁(Li) > İE₁(Na) > İE₁(K)."
+      ],
+      "optionReasons": [
+        "Doğru. Li’nin daha yakındaki ve daha az perdelenmiş dış elektronunu koparmak en fazla, K’ninkini koparmak en az enerji gerektirir.",
+        "K > Na > Li sırası, yarıçap artış yönünü iyonlaşma enerjisine doğrudan aktarır; kolay koparma daha büyük değil daha küçük enerji demektir.",
+        "Na > Li > K, K’yi en düşük tutar fakat aynı grupta Na’nın dış elektronu Li’ninkinden daha kolay kopar; ilk ikili ters çevrilmiştir.",
+        "Li > K > Na, Li’yi doğru yere koyar; ancak dördüncü katmanlı K’nin elektronunu koparmak üçüncü katmanlı Na’dan daha kolaydır.",
+        "Aynı gruptaki üyelerin değerlik elektron sayısı benzer olsa da katman ve perdelemeleri farklıdır; enerjileri eşit olmak zorunda değildir."
+      ],
+      "commonError": "Yarıçap büyümesini gereken koparma enerjisinin büyümesi sanma; daha uzaktaki dış elektronun ayrılması burada kolaylaşır.",
+      "check": "Yalnız verilen üçlü için yarıçap Li < Na < K iken İE₁ sırasının ters yönde olması nitel fiziksel kontrol sağlar; tam sayısal ters orantı kurulmaz."
+    }
+  },
+  {
+    "id": "iyonlasma-enerjisi-q3",
+    "identity": "[\"iyonlasma-enerjisi-q3\",\"Na, Mg, Al aynı periyottadır. Birinci iyonlaşma enerjilerinin küçükten büyüğe sırası hangisidir?\",\"\",[\"Na < Mg < Al\",\"Al < Na < Mg\",\"Na < Al < Mg\",\"Mg < Al < Na\",\"Mg < Na < Al\"],2,\"Mg’nin dolu 3s düzeninden elektron çıkarmak Al’nin 3p elektronunu çıkarmaktan daha zordur. Na < Al < Mg olur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı periyotta birinci iyonlaşma enerjisi genel olarak artsa da elektronun bulunduğu alt kabuk önemlidir. Dolu s alt kabuğundaki elektronu çıkarmak, sonraki elementin daha yüksek enerjili p elektronunu çıkarmaktan zor olabilir; genel eğilim tek başına her komşu çifti sıralamaz."
+      ],
+      "strategy": "Üç elementin dış elektron dizilimlerini yaz; Na’nın tek s elektronunu ve Mg–Al arasındaki s/p farkını iki ayrı karşılaştırmayla çöz, sonra küçükten büyüğe birleştir.",
+      "steps": [
+        "Dış düzenler Na için 3s¹, Mg için 3s² ve Al için 3s²3p¹’dir; ilk kopacak elektron Al’de p alt kabuğundadır.",
+        "Na’nın tek dış elektronu kolay kopar. Al’nin p elektronunu çıkarmak Mg’nin dolu 3s alt kabuğundan elektron çıkarmaktan daha kolaydır.",
+        "İki karşılaştırma birleştirilince küçükten büyüğe Na < Al < Mg bulunur; Mg–Al ikilisi genel periyot artışının istisnasıdır."
+      ],
+      "optionReasons": [
+        "Na < Mg < Al genel soldan sağa artışı istisnasız uygular; Mg’nin dolu s alt kabuğu ile Al’nin p elektronu ayrılmamıştır.",
+        "Al < Na < Mg, Mg–Al istisnasını Na’nın da altına taşır; bu üçlüde en düşük birinci iyonlaşma enerjisi Na’dadır.",
+        "Doğru. Na en kolay elektron verir; Al’nin 3p elektronu Mg’nin 3s elektronundan kolay kopar ve Na < Al < Mg olur.",
+        "Mg < Al < Na, Mg’yi en düşük ve Na’yı en yüksek yapar; hem alkali metalin kolay kopan elektronu hem Mg–Al karşılaştırması ters yorumlanır.",
+        "Mg < Na < Al, Mg’yi Na’dan düşük sayar ve Al’yi Mg’den yüksek tutar; iki gerekli ikiliyle de uyuşmaz."
+      ],
+      "commonError": "Periyodik okları bir istisna kontrolü yapmadan kesin sıralama gibi kullanma; hangi alt kabuktan elektron koptuğunu incele.",
+      "check": "Al’den ilk elektron çıkarılınca 3s² düzeni kalır; Mg’den çıkarılınca 3s¹ kalır. Bu kalan düzenlerin farkı Mg’den koparmanın görece güçlüğünü destekler."
+    }
+  },
+  {
+    "id": "iyonlasma-enerjisi-q4",
+    "identity": "[\"iyonlasma-enerjisi-q4\",\"Ana grup elementi için İE₁=900, İE₂=1750, İE₃=14850, İE₄=21000 kJ/mol verilmiştir. Değerlik elektron sayısı kaçtır?\",\"\",[\"1\",\"2\",\"3\",\"4\",\"Kesinlikle 8\"],1,\"Büyük artış ikinci ile üçüncü enerji arasındadır. İki değerlik elektronu çıkarıldıktan sonra iç katmana geçilir; değerlik elektron sayısı 2 olur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ana grup atomunda dış değerlik elektronları çıkarıldıktan sonra iç katmandan elektron koparmak çok daha fazla enerji ister. Ardışık enerji dizisindeki belirgin artış, kaçıncı elektronun artık iç katmandan geldiğini gösterir; değerlik sayısı bu sınırdan önce çıkarılanların adedidir."
+      ],
+      "strategy": "Enerjilerin kendisini yalnız büyüklüğe göre sıralamak yerine ardışık oran ve farklarını karşılaştır. İlk çok büyük artışın iki yanındaki koparma numaralarını işaretleyip dışarıdan çıkarılmış elektronları say.",
+      "steps": [
+        "İE₁→İE₂ artışı 1750−900=850 kJ/mol; İE₂→İE₃ artışı 14850−1750=13100 kJ/mol’dür.",
+        "İlk büyük sıçrama ikinci elektron çıkarıldıktan sonra, üçüncü koparmaya geçerken olur; üçüncü elektron iç katmandandır.",
+        "Sıçramadan önce iki dış elektron koparıldığı için ana grup atomunun değerlik elektron sayısı 2’dir."
+      ],
+      "optionReasons": [
+        "Bir değerlik elektronu olsaydı büyük sıçramanın ilk koparmadan sonra, İE₁ ile İE₂ arasında olması beklenirdi; verilen belirgin sınır bu değildir.",
+        "Doğru. İlk iki elektron düşük enerji bölgesinde çıkarılır; üçüncüde iç katmana geçiş olduğundan değerlik sayısı ikidir.",
+        "3, sıçrayan enerjinin indisini değerlik sayısı sanır. Üçüncü elektron içteki ilk elektrondur; öncesinde iki değerlik elektronu çıkarılmıştır.",
+        "Dört enerji verilmesi dört değerlik elektronu bulunduğunu göstermez; tablo iç katmandan koparmaları da içerebilir.",
+        "Sekiz değerlik elektronu sonucunu veren bir sıçrama gösterilmemiştir; verilen dizideki ilk büyük sınır ikinci ile üçüncü arasındadır."
+      ],
+      "commonError": "Büyük değerin indisini doğrudan cevap yazma; iç katmana geçilen koparmadan önce kaç elektron çıktığını say.",
+      "check": "Yaklaşık ardışık oranlar 1,94; 8,49; 1,41’dir. Ortadaki çok büyük artış, fark hesabıyla aynı sınırı gösterir; evrensel bir eşik ezberine gerek yoktur."
+    }
+  },
+  {
+    "id": "iyonlasma-enerjisi-q5",
+    "identity": "[\"iyonlasma-enerjisi-q5\",\"N ve O aynı periyottadır. İE₁(N) > İE₁(O) olmasının temel açıklaması hangisidir?\",\"\",[\"N’nin atom numarası daha büyük\",\"O soy gazdır\",\"İyonlaşma enerji verir\",\"N’de hiç p elektronu yoktur\",\"O’nun p orbitalindeki elektron eşleşmesi kopmayı kolaylaştırır\"],4,\"N yarı dolu p düzenindedir; O’daki eşleşen elektronlar arasındaki itme koparmayı kolaylaştırır. Bu 5A–6A istisnasıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı enerjili p orbitallerine elektronlar önce ayrı ayrı yerleşir, sonra eşleşir. Eşleşmiş iki elektron arasındaki itme, bu elektronlardan birinin kopmasını kolaylaştırabilir. Bu etki, aynı periyotta artan çekim eğilimine karşı bir istisna yaratır."
+      ],
+      "strategy": "N ve O’nun dış p elektronlarını üç kutuda göster. Yarı dolu düzene göre eklenen elektronun nerede eşleştiğini bulup koparma kolaylığını bu eşleşmeyle açıkla.",
+      "steps": [
+        "N’nin dış düzeni 2s²2p³’tür; üç p elektronu üç orbitalde birer tane bulunur. O için 2s²2p⁴ yazılır.",
+        "O’nun dördüncü p elektronu orbitallerden birinde eşleşir; aynı orbitaldeki itme bu elektronun çıkarılmasını kolaylaştırır.",
+        "Bu nedenle O’nun birinci iyonlaşma enerjisi N’den düşük olabilir; verilen N > O ilişkisini O’daki p eşleşmesi açıklar."
+      ],
+      "optionReasons": [
+        "N’nin atom numarası 7, O’nunki 8’dir; N’nin daha büyük atom numarası taşıdığı iddiası hem olgusal olarak yanlış hem verilen istisnanın açıklaması değildir.",
+        "Oksijen 16. grupta bir ametaldir; dolu dış katmanlı soy gaz değildir. Bu etiket eşleşme etkisini açıklamaz.",
+        "İyonlaşma elektron koparmak için enerji gerektirir; enerjinin açığa çıktığı iddiası doğru değildir.",
+        "N’nin üç adet 2p elektronu vardır; hiç p elektronu bulunmaması değil, bu elektronların ayrı orbitallerde olması önemlidir.",
+        "Doğru. O’nun p orbitallerindeki eşleşme itmesi koparmayı kolaylaştırır; yarı dolu p düzenli N’den koparmak daha zordur."
+      ],
+      "commonError": "N–O karşılaştırmasını yalnız artan proton sayısıyla açıklamaya çalışma; elektron eşleşmesi burada genel eğilimin istisnasıdır.",
+      "check": "O’dan eşleşen p elektronu çıkarılırsa 2p³ düzeni kalır. N’den çıkarıldığında 2p² kalması, iki başlangıcın aynı enerji durumunda olmadığını gösterir."
+    }
+  },
+  {
+    "id": "elektron-ilgisi-elektronegatiflik-q1",
+    "identity": "[\"elektron-ilgisi-elektronegatiflik-q1\",\"H–Cl bağında Cl’nin ortak elektronları daha güçlü çekmesini hangi kavram anlatır?\",\"\",[\"İyonlaşma enerjisi\",\"Elektronegatiflik\",\"Atom kütlesi\",\"Elektron sayısının korunmaması\",\"Çekirdek bozunması\"],1,\"Elektronegatiflik bağdaki ortak elektronları çekme eğilimidir. Bu olay tek gaz atomuna elektron ekleme süreci değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kovalent bağdaki elektron çifti iki atom tarafından ortaklaşa kullanılır; iki çekirdeğin bu çifti çekme eğilimi aynı olmak zorunda değildir. Elektron yoğunluğunun bir uca kayması bağ kutupluluğunu etkiler; bu kayma tek başına elektronu molekülden koparmak veya çekirdeği değiştirmek değildir."
+      ],
+      "strategy": "Sorudaki elektronun bağın içinde mi kaldığını, yoksa tek bir gaz atomuna eklenip ondan çıkarıldığını mı belirle. Kavramları bu süreç farkıyla eleyip ortak çiftin çekimine karşılık gelen adı bul.",
+      "steps": [
+        "H–Cl’de söz edilen elektronlar iki atomun ortak bağ elektronlarıdır; dışarı çıkan veya dışarıdan eklenen bir elektron verilmemiştir.",
+        "Bağ yapmış atomun ortak elektronları kendine çekme eğilimine elektronegatiflik denir; daha güçlü çeken uçta elektron yoğunluğu artar.",
+        "Cl’nin ortak çifti daha güçlü çekmesini elektronegatiflik anlatır. İyonlaşma enerjisi ise farklı olarak elektron koparmanın enerji gereksinimidir."
+      ],
+      "optionReasons": [
+        "İyonlaşma enerjisi gaz atomundan elektron koparmaya ilişkindir; burada bağ çifti paylaşılmaya devam etmektedir.",
+        "Doğru. Elektronegatiflik, bağ içindeki ortak elektronların hangi atom tarafından daha güçlü çekildiğini anlatır.",
+        "Atom kütlesi çekirdekteki proton ve nötronlarla ilişkilidir; ortak elektron çiftinin göreli çekim eğiliminin adı değildir.",
+        "Elektron yoğunluğunun yer değiştirmesi toplam elektron sayısını korur; soruda elektron yaratılması veya kaybolması yoktur.",
+        "Çekirdek bozunması elementin çekirdeğine ilişkin nükleer olaydır; H–Cl bağındaki ortak çiftin kayması bunu göstermez."
+      ],
+      "commonError": "Bağın kutuplanmasını mutlaka tam elektron aktarımı sanma; kısmi yoğunluk kayması ile serbest iyon oluşumu farklıdır.",
+      "check": "Bağda Cl tarafının kısmi negatif, H tarafının kısmi pozitif olması ortak elektron yoğunluğunun kaymasıyla uyumludur; molekülün toplam elektron sayısı bu nedenle değişmez."
+    }
+  },
+  {
+    "id": "elektron-ilgisi-elektronegatiflik-q2",
+    "identity": "[\"elektron-ilgisi-elektronegatiflik-q2\",\"X(g)+e⁻ → X⁻(g) için ΔE=−350 kJ/mol verilmiştir. Doğru yorum hangisidir?\",\"\",[\"Elektron koparılmıştır\",\"350 kJ/mol enerji alınmıştır\",\"Atom numarası artmıştır\",\"350 kJ/mol enerji açığa çıkmıştır\",\"Süreç elektronegatiflik ölçümüdür\"],3,\"Termodinamik işaret sözleşmesinde negatif ΔE enerji açığa çıktığını gösterir. Gaz atomu elektron almıştır; çekirdek değişmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir enerji değişiminde işaret, sistemin son enerjisi ile ilk enerjisi arasındaki farkı anlatır. Negatif değişim, sistemin çevreye enerji vermesiyle ilişkilidir; aktarılan enerjinin büyüklüğü ise pozitif sayı olarak ifade edilir. Elektron alma atom çekirdeğinin proton sayısını değiştirmez."
+      ],
+      "strategy": "Önce denklemin elektron alma mı verme mi olduğunu belirle; sonra verilen ΔE işaretini enerji aktarımının yönüne, mutlak değerini de aktarım büyüklüğüne çevir.",
+      "steps": [
+        "Elektron sol tarafta, X⁻ sağdadır; nötr gaz atomu bir elektron almıştır. Elektron koparılmamıştır.",
+        "ΔE=−350 kJ/mol olduğuna göre sistemin enerjisi mol başına 350 kJ azalmıştır; bu miktar enerji çevreye aktarılır.",
+        "Doğru yorum 350 kJ/mol enerjinin açığa çıkmasıdır. Atomun proton sayısı bu elektron alma olayında korunur."
+      ],
+      "optionReasons": [
+        "Denklemde elektron üründe değil girenlerdedir; koparma değil elektron ekleme gösterilmektedir.",
+        "350 kJ/mol alınması pozitif enerji değişimi gerektirirdi; verilen ΔE negatiftir.",
+        "Elektron eklenmesi atom numarasını değiştirmez; X ile X⁻ aynı sayıda proton taşır.",
+        "Doğru. Negatif ΔE, sistemden mol başına 350 kJ enerji açığa çıktığını belirtir.",
+        "Burada tek gaz atomuna elektron ekleme enerji süreci vardır; elektronegatiflik ise bağdaki ortak elektron çekiminin göreli ölçüsüdür."
+      ],
+      "commonError": "Negatif enerji değerini negatif miktarda enerji almak diye yorumlama; enerji büyüklüğü ile aktarım yönünü ayrı yaz.",
+      "check": "Sistemin enerji değişimi −350 kJ/mol ise çevrenin aldığı enerji +350 kJ/mol olmalıdır; iki tarafın toplam enerji bilançosu sıfırlanır."
+    }
+  },
+  {
+    "id": "elektron-ilgisi-elektronegatiflik-q3",
+    "identity": "[\"elektron-ilgisi-elektronegatiflik-q3\",\"Elektronegatifliği en yüksek yaygın element F iken elektron alımında açığa çıkan enerji büyüklüğünün Cl’de daha fazla olması neyi gösterir?\",\"\",[\"İki kavramın tanımları ve süreçleri farklıdır\",\"F metal olmalıdır\",\"Cl’nin proton sayısı azalır\",\"Elektron ilgisi birimsizdir\",\"Bütün periyodik özellikler aynıdır\"],0,\"EN bağ içi göreli çekimdir, elektron ilgisi gaz atomuna elektron ekleme enerjisidir; maksimumlarının aynı elementte olması gerekmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "İki fiziksel büyüklüğün ikisinde de elektron sözcüğünün geçmesi onları aynı ölçüm yapmaz. Bağ içindeki göreli çekim, ayrık gaz atomuna elektron eklenmesindeki enerji değişiminden farklı koşullarda tanımlanır. Farklı tanımlı büyüklüklerin sıralamaları aynı olmak zorunda değildir."
+      ],
+      "strategy": "Soruda verilen iki en büyük değerin hangi deneysel sürece ait olduğunu karşılaştır. Önce bağ bulunan ve bulunmayan durumu ayır; sonra farklı sıralamanın bir çelişki mi yoksa farklı nicelik ölçümü mü olduğunu değerlendir.",
+      "steps": [
+        "F için belirtilen en yüksek değer, bağ içindeki ortak elektronları çekme eğilimine, yani elektronegatifliğe ilişkindir.",
+        "Cl için belirtilen enerji üstünlüğü, bir gaz atomunun elektron alırken açığa çıkardığı enerji büyüklüğüne ilişkindir.",
+        "Başlangıç koşulları ve ölçülen nicelik farklı olduğundan iki maksimumun farklı elementlerde olması tanımların farklılığını gösterir."
+      ],
+      "optionReasons": [
+        "Doğru. Elektronegatiflik bağdaki göreli çekimi, elektron ilgisi gaz atomuna elektron ekleme enerjisini ölçer; aynı maksimum zorunlu değildir.",
+        "Florun ametal niteliği bu iki sıralamanın farklı olmasından etkilenmez; farklı maksimumlar metale dönüşme kanıtı değildir.",
+        "Cl elektron alırken proton sayısı değişmez; açığa çıkan enerji daha fazla diye çekirdekten proton eksilmez.",
+        "Elektron alma enerjisi kJ/mol gibi enerji birimiyle verilebilir; Pauling elektronegatifliğiyle karıştırılıp birimsiz sayılamaz.",
+        "Verilen iki farklı maksimum zaten özelliklerin tek bir aynı nicelik olmadığını gösterir; bütün periyodik özellikler aynı tanıma sahip değildir."
+      ],
+      "commonError": "Elektronegatifliği en yüksek olan elemente bütün elektron alışverişi enerjilerinde de birincilik verme; ölçülen süreci yeniden tanımla.",
+      "check": "Sorudaki F ve Cl bilgilerini değiştirmeden hem bağ içi çekim sırasını hem gaz atomu enerji sırasını ayrı tabloda tutabilirsin; farklı sütunlar farklı birinciler taşıyabilir."
+    }
+  },
+  {
+    "id": "elektron-ilgisi-elektronegatiflik-q4",
+    "identity": "[\"elektron-ilgisi-elektronegatiflik-q4\",\"Aynı gruptaki Li, Na ve K için metalik karakterin artış sırası hangisidir?\",\"\",[\"K < Na < Li\",\"Na < Li < K\",\"Li < Na < K\",\"Li < K < Na\",\"Üçü daima eşittir\"],2,\"Yeni katman ve artan perdeleme elektron vermeyi kolaylaştırır; metalik karakter genel olarak Li < Na < K olur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Metalik karakter, bu temel karşılaştırmada elektron vermeye yatkınlıkla ilişkilidir. Aynı grupta dış elektronun daha uzak katmanda ve daha çok perdelenmiş olması onu vermeyi kolaylaştırır. Bu nitel özellik, erime noktası veya bütün deney koşullarındaki tepkime hızıyla aynı nicelik değildir."
+      ],
+      "strategy": "Li, Na ve K’nin ortak grup içindeki dış katmanlarını belirle; elektron verme kolaylığını karşılaştırıp istenen artış sırasını en azdan en fazlaya yaz.",
+      "steps": [
+        "Li, Na ve K aşağı doğru yeni ana katmanlar içerir; dış elektron çekirdekten daha uzakta ve daha fazla iç elektron arkasındadır.",
+        "Grupta aşağı doğru dış elektronu vermek kolaylaşır; dolayısıyla metalik karakter artar.",
+        "Artış sırası Li < Na < K olur. Bu sıralama burada elektron verme eğilimine dayanır, ayrı bir yoğunluk sırası değildir."
+      ],
+      "optionReasons": [
+        "K < Na < Li, aşağı doğru kolaylaşan elektron vermeyi metalik karakterin azalması gibi yorumlar; yön ters çevrilmiştir.",
+        "Na < Li < K, K’yi en yüksek tutsa da Li ile Na’yı ters sıralar; Na’nın dış elektronu Li’ye göre daha kolay verilir.",
+        "Doğru. Aynı grupta artan katman ve perdeleme elektron vermeyi kolaylaştırır; Li < Na < K metalik karakter sırasıdır.",
+        "Li < K < Na, Na ile K arasındaki katman farkını ters yorumlar; bu üçlüde K daha yüksek metalik karakter taşır.",
+        "Ortak grup, benzer değerlik düzeni verir; farklı katman ve perdeleme nedeniyle metalik karakterin daima eşit olması gerekmez."
+      ],
+      "commonError": "Metalik karakteri proton sayısı, elektrik iletkenliği veya tepki hızıyla özdeşleştirme; bu soruda verilen ortak grup içinde elektron verme eğilimi karşılaştırılır.",
+      "check": "Birinci iyonlaşma enerjisi Li’den K’ye azalırken elektron vermeye yatkınlığın artması tutarlıdır; iki kavramın sıralamaları bu üçlüde karşıt yönlüdür."
+    }
+  },
+  {
+    "id": "elektron-ilgisi-elektronegatiflik-q5",
+    "identity": "[\"elektron-ilgisi-elektronegatiflik-q5\",\"Hangisi elektronegatiflik için doğru bir ifadedir?\",\"\",[\"Birimi kJ/mol’dür\",\"Gaz atomundan ilk elektron kopmasıdır\",\"Bütün soy gazlar için sıfırdır\",\"Elektron sayısıyla aynıdır\",\"Bağ içi göreli çekimi anlatır ve Pauling ölçeğinde birimsizdir\"],4,\"Elektronegatiflik Pauling ölçeğinde birimsiz göreli çekim ölçüsüdür. Değer verilmeyen soy gaz hücresine otomatik sıfır yazılmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir büyüklüğün enerji aktarımı olarak ölçülmesiyle bağıl bir karşılaştırma ölçeğinde sayı verilmesi farklıdır. Ayrıca bir tabloda değerin belirtilmemesi, o değerin ölçülmüş sıfır olduğu anlamına gelmez. Tanım, birim ve verinin bulunup bulunmaması ayrı denetlenmelidir."
+      ],
+      "strategy": "Her seçeneği üç soruyla sınayarak ilerle: Hangi elektron davranışı anlatılıyor, bu bir enerji süreci mi yoksa göreli ölçek mi, tabloda olmayan değer zorla sıfır mı sayılıyor?",
+      "steps": [
+        "Elektronegatifliğin konusu, bağlanmış atomun ortak bağ elektronlarını kendine çekmesidir; gaz atomundan elektron koparma süreci değildir.",
+        "Pauling elektronegatiflik ölçeği bağıl sayılar verir ve birimsizdir; kJ/mol iyonlaşma veya elektron alma enerjilerinde kullanılabilir.",
+        "Bağ içi göreli çekim ve Pauling ölçeğinde birimsizlik birlikte doğru olduğundan E ifadesi uygundur. Değeri verilmeyen soy gaza otomatik sıfır yazılmaz."
+      ],
+      "optionReasons": [
+        "kJ/mol bir enerji birimidir; Pauling elektronegatifliği enerji değişimi olarak değil birimsiz göreli ölçekle verilir.",
+        "Gaz atomundan ilk elektronu koparmak birinci iyonlaşmadır; elektronegatiflikte ortak bağ çifti çekilir.",
+        "Soy gazların bazı tablolarda elektronegatifliğinin verilmemesi bütün soy gazların ölçülmüş değerinin sıfır olduğu anlamına gelmez.",
+        "Toplam elektron sayısı bir tanecik sayımıdır; bağdaki elektronları göreli çekme eğilimiyle aynı büyüklük değildir.",
+        "Doğru. Elektronegatiflik ortak bağ elektronlarının göreli çekimini anlatır; Pauling ölçeğindeki sayıları birimsizdir."
+      ],
+      "commonError": "Boş tablo hücresini sıfırla doldurma ve elektron sözcüğünden hareketle enerji birimini her kavrama taşıma.",
+      "check": "Pauling sayısıyla bir atomun gerçek elektron sayısını veya mol başına enerji aktarımını doğrudan hesaplayamazsın; bunlar için ayrı fiziksel veriler gerekir."
+    }
+  },
+  {
+    "id": "chemical-species-1",
+    "identity": "[\"chemical-species-1\",\"O²⁻, O₂ ve O₂²⁻ türleri için sırasıyla doğru sınıflandırma hangisidir? Üstteki işaret toplam yükü, alttaki indis atom sayısını gösterir.\",\"\",[\"Tek atomlu anyon; element molekülü; çok atomlu anyon\",\"Element molekülü; tek atomlu anyon; bileşik molekülü\",\"Tek atomlu katyon; element molekülü; çok atomlu katyon\",\"Üçü de nötr element molekülüdür\",\"Tek atomlu anyon; bileşik molekülü; tek atomlu anyon\"],0,\"O²⁻ bir O atomu ve 2− yük taşır. O₂ iki O atomlu nötr element molekülüdür. O₂²⁻ iki O atomlu ve toplam 2− yüklü çok atomlu anyondur; aynı elementten iki atom içermesi bileşik yapmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Alt indis atom adedini, sağ üstteki işaret ise taneciğin toplam elektrik yükünü gösterir. Aynı elementin birkaç atomundan oluşmak bileşik olmak için yeterli değildir; bileşik farklı elementler içerir. İyonlar da tek atomlu veya çok atomlu olabilir."
+      ],
+      "strategy": "Üç sembolü iki bağımsız sütunda çöz: kaç O atomu var ve net yük ne? Atom adedinden tek/çok atomlu ayrımını, yükten nötr/anyon ayrımını yapıp sonuçları sorudaki sırada birleştir.",
+      "steps": [
+        "O²⁻’ta altta indis yoktur, bir O vardır; O₂ ve O₂²⁻’ta alttaki 2 iki O atomu bulunduğunu gösterir.",
+        "Üst yükler sırasıyla −2, 0 ve −2’dir. Dolayısıyla ilk ve üçüncü tür anyon, ortadaki nötrdür.",
+        "Sıra tek atomlu anyon; element molekülü; çok atomlu anyon olur. O₂ farklı element taşımadığı için bileşik molekülü değildir."
+      ],
+      "optionReasons": [
+        "Doğru. İlk tür bir O ve negatif yük, ikincisi iki O ve sıfır yük, üçüncüsü iki O ve toplam negatif yük taşır.",
+        "İlk tür yüklü tek atomdur, element molekülü değildir; O₂ de nötrdür ve O₂²⁻ yalnız O içerdiği için bileşik diye sınıflanmaz.",
+        "İlk ve üçüncü sembolde üstte − yükü vardır; katyon pozitif iyon olduğundan bu iki katyon etiketi yanlıştır.",
+        "İlk ve üçüncü türün negatif yüklerini yok sayar; ilkinde ayrıca tek atom vardır, üç tür de nötr molekül değildir.",
+        "O₂ aynı elementten oluştuğu için bileşik molekülü değildir; O₂²⁻’taki alt 2 de üçüncü türün tek atomlu olmadığını gösterir."
+      ],
+      "commonError": "Üstteki 2− yükünü alttaki ₂ atom sayısı gibi okuma; aynı rakamın yazıldığı konum anlamını değiştirir.",
+      "check": "Her sembol için atom ve yük çiftini tekrar yaz: (1,−2), (2,0), (2,−2). Bu iki sütun doğru sınıflandırmayı bağımsız yeniden üretir."
+    }
+  },
+  {
+    "id": "chemical-species-2",
+    "identity": "[\"chemical-species-2\",\"Nötr Mg atomunun proton sayısı 12, değerlik elektron sayısı 2'dir. Mg²⁺ iyonunun toplam elektron sayısı ve okul düzeyindeki Lewis sembolünde çizilen nokta sayısı sırasıyla kaçtır?\",\"\",[\"12 ve 2\",\"14 ve 4\",\"10 ve 8\",\"10 ve 0\",\"0 ve 0\"],3,\"Mg iki elektron verir: toplam elektron 12−2=10 olur. Nötr atomun iki dış değerlik elektronu verildiği için katyon Lewis sembolünde nokta çizilmez; yük 2+ yazılır. İç dolu katmandaki elektronlar bu gösterimde noktalara açılmaz; noktasızlık elektronsuzluk değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir katyonun gerçek toplam elektron sayısı ile okul düzeyindeki Lewis sembolündeki nokta sayısı aynı hesap değildir. Metal dış değerlik elektronlarını verdiğinde Lewis katyon sembolü noktasız çizilebilir; sembolün çizmediği dolu iç katman elektronları varlığını sürdürür."
+      ],
+      "strategy": "Önce net yükten toplam elektron sayısını bul; ardından yalnız nötr Mg’nin verilen dış iki elektronunun gösterimde ne olduğunu izle. İstenen ikilide bu iki ayrı sayımı sırayla yaz.",
+      "steps": [
+        "Nötr Mg’nin 12 protonu olduğu için toplam 12 elektronu vardır. Mg²⁺ oluşurken iki elektron verilir: 12−2=10 toplam elektron kalır.",
+        "Verilen iki değerlik elektronu da çıkarılmıştır. Okul Lewis katyon sembolünde iç dolu katman noktalara açılmaz; Mg²⁺ noktasız yazılır.",
+        "İstenen sıra toplam elektron ve Lewis noktasıdır: 10 ve 0. Noktasız gösterim iyonun elektronsuz olduğunu söylemez."
+      ],
+      "optionReasons": [
+        "12 ve 2 nötr Mg’nin toplam ve değerlik sayılarıdır; +2 iyon oluşumunda verilen iki elektron çıkarılmamıştır.",
+        "14 ve 4, pozitif yükü elektron eklemek gibi uygular; +2 yük elektron fazlalığı değil eksikliğidir.",
+        "Toplam 10 doğrudur; fakat kalan dolu iç katmandaki sekiz elektronu Mg²⁺ okul Lewis sembolüne sekiz nokta diye taşımak bu gösterimin kuralı değildir.",
+        "Doğru. Mg²⁺ toplam 10 elektron taşır; nötr atomun dış iki elektronu verildiği için okul Lewis sembolü 0 noktalı ve 2+ yüklüdür.",
+        "Nokta sayısı 0 olabilir ama gerçek toplam 0 değildir; 12 protona karşılık 10 elektron kaldığı için yük yalnız +2’dir."
+      ],
+      "commonError": "Gerçek dolu dış katman ile nötr atomun verdiği değerlik elektronlarını karıştırma; nokta çizilmemesi bütün elektronların çıkarıldığı anlamına gelmez.",
+      "check": "Toplam 10 elektron için 12−10=+2 yükü geri bulunur. Toplam 0 alınsaydı +12 yük çıkardı; bu verilen Mg²⁺ ile uyuşmaz."
+    }
+  },
+  {
+    "id": "chemical-species-3",
+    "identity": "[\"chemical-species-3\",\"Nötr Cl atomunda 7 değerlik elektronu vardır. Cl⁻ iyonu için doğru Lewis gösterimi hangisini içermelidir?\",\"\",[\"6 nokta, + yükü\",\"7 nokta, yük işareti yok\",\"8 nokta, köşeli ayraç dışında − yükü\",\"8 nokta, + yükü\",\"0 nokta, − yükü\"],2,\"Cl bir elektron aldığında 7+1=8 değerlik elektronu taşır. Dört çift nokta köşeli ayraç içinde, toplam − yükü dışarıda gösterilir. Sekiz nokta tek başına iyon yükünü belirtmenin yerine geçmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Negatif iyon, nötr atoma göre fazla elektron taşır. Lewis sembolünde noktalar elektron sayımını, köşeli ayraç dışındaki yük ise türün toplam yükünü açıklar. Dolu dış katman gösterilmesi, yük işaretini ayrıca yazma gereğini ortadan kaldırmaz."
+      ],
+      "strategy": "Nötr Cl için verilen dış elektron sayısını yükün yönüne göre düzelt; sonra nokta sayısı, ayraç ve yük işaretini ayrı koşullar olarak denetleyerek seçeneği bul.",
+      "steps": [
+        "Cl⁻, nötr Cl’ye göre bir elektron fazlasıdır. Dış elektron sayısı 7+1=8 olur.",
+        "Sekiz nokta dört elektron çiftiyle Cl sembolünün çevresine konur; yapı köşeli ayraca alınır.",
+        "Negatif toplam yük ayraç dışında − olarak gösterilir. Sekiz nokta ve dıştaki − yükü birlikte içeren seçenek doğrudur."
+      ],
+      "optionReasons": [
+        "Altı nokta bir elektron eklemek yerine eksiltir; üstteki + işareti de verilen anyonun yükünü ters çevirir.",
+        "Yedi nokta nötr Cl’nin dış elektron sayısıdır; eklenen elektron ve iyonun − yükü gösterilmemiştir.",
+        "Doğru. 7+1=8 nokta dört çift oluşturur; ayraç dışındaki − işareti toplam iyon yükünü belirtir.",
+        "Sekiz nokta doğru sayımdır fakat + yükü Cl⁻’ın işaretine aykırıdır; nokta sayısı yükü rastgele seçmeye izin vermez.",
+        "Noktasız katyon çizimi bu anyona uygulanamaz; Cl bir dış elektron kaybetmemiş, bir elektron almıştır."
+      ],
+      "commonError": "Yükü yalnız daha çok nokta çizerek anlatmış sayma; hem bütçe hem ayraç dışındaki toplam işaret doğru olmalıdır.",
+      "check": "Cl⁻’ın sekiz dış elektronu nötr Cl’nin yedisinden bir fazladır. Bu bir fazla elektron, seçilen − yüküyle aynı yönde bilgidir."
+    }
+  },
+  {
+    "id": "chemical-species-4",
+    "identity": "[\"chemical-species-4\",\"H'nin 1, O'nun 6 değerlik elektronu vardır. Nötr H₂O'nun basit Lewis yapısındaki bağ çifti sayısı ile O üzerindeki yalnız çift sayısı sırasıyla kaçtır?\",\"\",[\"1 ve 3\",\"2 ve 1\",\"4 ve 0\",\"2 ve 4\",\"2 ve 2\"],4,\"H₂O toplam 2×1+6=8 değerlik elektronu taşır. İki tek bağ iki ortak çift, yani 4 elektron kullanır. Kalan 4 elektron O üzerinde iki yalnız çift olur. Her H duet, O oktet yapar. Dört yalnız elektron, dört yalnız çift değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Lewis hesabında bir çizgi iki ortak elektrondur; yalnız çift de iki elektrondan oluşur fakat bağ çizgisinde yer almaz. Önce toplam değerlik elektronları sayılır, sonra bağlarda kullanılanlar çıkarılır. Elektron sayısı ile elektron çifti sayısını ayırmak gerekir."
+      ],
+      "strategy": "H’leri uçta tutan su iskeletini kur; bağlara ayrılan elektronlarla geriye kalan elektronları iki ayrı grupta say. Son olarak kalan elektronları çift adedine dönüştür.",
+      "steps": [
+        "Nötr H₂O’nun değerlik bütçesi iki H’den 2×1 ve O’dan 6 olmak üzere 8 elektrondur.",
+        "Her H bir O–H tek bağıyla duetini tamamlar; iki bağ toplam iki ortak çift, yani 4 elektron kullanır.",
+        "Kalan 8−4=4 elektron O’da iki yalnız çift olur. İstenen bağ çifti ve O’daki yalnız çift sayısı sırasıyla 2 ve 2’dir."
+      ],
+      "optionReasons": [
+        "Bir bağ çifti, iki ayrı H’nin ikisini de O’ya tek bağla bağlamaya yetmez; üç yalnız çift de eksik ikinci O–H bağını kurmaz.",
+        "İki bağ ve bir yalnız çift toplam 4+2=6 elektron kullanır; verilen 8 elektronun ikisi eksik bırakılmış olur.",
+        "Dört bağ çifti 8 elektron kullanır fakat iki H’nin her biri yalnız bir tek bağla duet yapabilir; bu su iskeletindeki bağ adedi değildir.",
+        "İki bağ çiftiyle dört yalnız çift 4+8=12 elektron gerektirir; dört kalan elektron, dört çift değil iki çifttir.",
+        "Doğru. İki O–H bağı iki ortak çift taşır; kalan dört elektron O üzerinde iki yalnız çift oluşturur."
+      ],
+      "commonError": "Bağ sayısını, ortak elektron sayısını ve yalnız çift sayısını aynı sayıyla ifade etme; çiftler elektron sayısının yarısıdır.",
+      "check": "Toplam bütçede 2×2+2×2=8 elektron vardır. O’nun yerel çevresi 4 ortak+4 yalnız=8, her H’ninki ortak çiftten 2’dir; yerel sayımlar bütçeye tekrar eklenmez."
+    }
+  },
+  {
+    "id": "chemical-species-5",
+    "identity": "[\"chemical-species-5\",\"C'nin 4, O'nun 6 değerlik elektronu var. Nötr CO₂ için O–C–O tek bağları çizilmiş ve her O'ya üç yalnız çift konmuştur. Toplam 16 elektron yerleşmişken C çevresinde 4 elektron sayılıyor. Bütçeyi koruyan uygun düzeltme hangisidir?\",\"\",[\"C üzerine dört yeni elektron eklemek\",\"Her O'dan bir yalnız çifti bağa dönüştürerek O=C=O kurmak\",\"Her O'dan iki elektronu bütçeden silmek\",\"Yapıya toplam 4− yükü yazıp nötr olduğunu söylemek\",\"İki tek bağı silip O atomlarını ayırmak\"],1,\"Her O'dan bir yalnız çift ortak bağ çiftine taşınır. İki çift bağda 8, O'lardaki dört yalnız çiftte 8 olmak üzere toplam yine 16 elektrondur. C ve O atomları oktete ulaşır. Dışarıdan elektron eklemek nötr CO₂'nin bütçesini değiştirir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir Lewis çiziminin toplam elektron sayısı doğru olsa bile elektronların atomlar arasındaki dağılımı eksik olabilir. Yalnız çifti bağ çifti yapmak yeni elektron yaratmaz; aynı iki elektronu iki atomun ortak bölgesine taşır. Nötr türün bütçesi bu yerleşim değişiminde korunmalıdır."
+      ],
+      "strategy": "Önce hangi atomun yerel çevresinin eksik olduğunu saptayıp toplam bütçeyle karıştırma. Sonra uç atomdaki bir çiftin ortaklaştırılmasının hem merkez hem uç oktetini koruyup korumadığını denetle.",
+      "steps": [
+        "Başlangıçta iki tek bağ 4, iki O’daki altı yalnız çift 12 elektron taşır: toplam 16 doğru, fakat C çevresinde yalnız 4 elektron vardır.",
+        "Her O üzerindeki bir yalnız çift C–O bağ bölgesine taşınır; iki tek bağ iki çift bağa dönüşür ve C çevresindeki ortak elektron sayısı 8 olur.",
+        "Son yapı O=C=O’dur. Bağlarda 8 ve O’lardaki yalnız çiftlerde 8 elektronla toplam 16 korunur; yeni elektron eklenmez."
+      ],
+      "optionReasons": [
+        "C’ye dört yeni elektron eklemek 16 elektronluk nötr bütçeyi 20’ye çıkarır; yerleşimi düzeltmek yerine türün yük hesabını değiştirir.",
+        "Doğru. Her O’dan bir yalnız çifti ortaklaştırmak iki çift bağ kurar; bütçeyi değiştirmeden bütün atomların oktetini sağlar.",
+        "Her O’dan iki elektronu silmek toplam dört elektronu kaldırıp bütçeyi 12’ye düşürür; korunması gereken 16 elektron kaybolur.",
+        "Yapıya 4− yük yazmak nötr CO₂ tanımını bozar; bir tür aynı anda toplam 4− yüklü ve nötr olamaz.",
+        "İki bağı silmek CO₂’nin bağlı O–C–O iskeletini ortadan kaldırır; merkez atomun okteti bu yolla tamamlanmaz."
+      ],
+      "commonError": "Yerel oktet eksiğini toplam elektron eksiği sanıp elektron ekleme; önce mevcut çiftlerin yeniden ortaklaşmasını araştır.",
+      "check": "Son yapıda C iki çift bağdan 8 elektron sayar; her O da bir çift bağdan 4 ve iki yalnız çiftten 4 sayar. Gerçek bütçe ortak elektronlar bir kez sayılarak 8+8=16’dır."
+    }
+  },
+  {
+    "id": "chemical-species-6",
+    "identity": "[\"chemical-species-6\",\"N'nin 5, H'nin 1 değerlik elektronu vardır. NH₄⁺ için toplam değerlik elektronu sayısı ve N üzerindeki yalnız çift sayısı hangisidir? Basit yapıda N dört H'ye tek bağla bağlıdır.\",\"\",[\"10 ve 1\",\"9 ve 1\",\"8 ve 1\",\"8 ve 0\",\"6 ve 0\"],3,\"Toplam 5+4×1−1=8 elektrondur. Dört tek bağ 4×2=8 elektronu kullanır, N üzerinde yalnız çift kalmaz. Yapının tamamı köşeli ayraç içinde ve + yüklü gösterilir. NH₃'ün yalnız çiftini NH₄⁺'a taşımak bütçeyi aşar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Çok atomlu bir türün değerlik bütçesi, nötr atom katkılarının toplamının iyon yüküne göre düzeltilmesiyle bulunur. Pozitif yük elektron eksikliği demektir. Bağ elektronları bu bütçenin içindedir; ayrıca yalnız çift çizilecekse yeterli elektron kalmış olmalıdır."
+      ],
+      "strategy": "NH₄⁺ için önce bütün atomların katkısını ve +1 düzeltmesini yaz. Verilen dört tek bağın kullandığı miktarı bundan çıkar; sonuç N üzerinde yalnız çift kalıp kalmadığını belirlesin.",
+      "steps": [
+        "N ve dört H’nin nötr katkıları 5+4×1=9 elektrondur. +1 yük nedeniyle bir elektron çıkarılır; bütçe 8 olur.",
+        "N’nin dört H ile yaptığı dört tek bağ 4×2=8 elektron kullanır; verilen iskelet bütçenin tamamını tüketir.",
+        "Geriye yalnız elektron kalmadığından N üzerindeki yalnız çift sayısı 0’dır; istenen ikili 8 ve 0’dır."
+      ],
+      "optionReasons": [
+        "10 ve 1, pozitif yükte bir elektron çıkarmak yerine ekler; 8 bağ elektronu+2 yalnız elektron nötr katkıyı da aşar.",
+        "9 nötr atom katkılarının toplamıdır; +1 yük düzeltmesi unutulmuştur. Dört bağ ve bir yalnız çift ayrıca 10 elektron ister.",
+        "Toplam 8 doğrudur ama dört bağ 8 elektronu kullandıktan sonra bir yalnız çift daha çizmek bütçeyi 10’a çıkarır.",
+        "Doğru. 5+4−1=8 elektronun tamamı dört tek bağdadır; N üzerinde yalnız çift yoktur.",
+        "6 elektron dört tek bağın gerektirdiği 8 elektrona bile yetmez; verilen atom ve yük bütçesi yanlış azaltılmıştır."
+      ],
+      "commonError": "NH₃’ün N üzerindeki yalnız çiftini NH₄⁺’a değişmeden taşıma; yeni atom adedi ve toplam yük için hesabı baştan yap.",
+      "check": "N dört ortak çiftten çevresinde 8, her H kendi bağından 2 elektron sayar. Türün tamamı + yüklü ayraçla gösterildiğinde hem yerel düzen hem toplam yük korunur."
+    }
+  },
+  {
+    "id": "chemical-species-7",
+    "identity": "[\"chemical-species-7\",\"N'nin 5 değerlik elektronu vardır. N₂ molekülünün oktetleri sağlayan basit Lewis yapısında bağ elektronlarının toplamı ve yalnız elektronların toplamı sırasıyla kaçtır?\",\"\",[\"6 ve 4\",\"3 ve 2\",\"4 ve 6\",\"8 ve 8\",\"2 ve 8\"],0,\"N≡N üçlü bağındaki üç ortak çift 6 elektron içerir. Her N üzerinde bir yalnız çift bulunduğundan yalnız elektronların toplamı 4'tür. 6 + 4 = 10 gerçek bütçedir; her atomun yerel çevresindeki 8'i toplamak ortak elektronları iki kez sayar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ortak bir elektron iki atomun yerel oktet denetiminde de sayılır, fakat molekülün gerçek bütçesine bir kez girer. İki yerel elektron sayımının toplamıyla gerçek bütçe arasındaki fark, paylaşıldığı için ikinci kez sayılan elektronları bulmaya yardım eder."
+      ],
+      "strategy": "İki N’nin toplam değerlik bütçesini ve iki oktetin yerel toplamını ayrı hesapla. Aradaki fazla sayımı bağ elektronlarına bağla; gerçek bütçenin kalanını yalnız elektron olarak belirle.",
+      "steps": [
+        "İki N atomu 2×5=10 değerlik elektronu verir. İki atomun oktet denetimleri birlikte 8+8=16 yerel sayım ister.",
+        "16−10=6 elektron yerel sayımda ikinci kez sayılmalıdır; bunlar ortak bağ elektronlarıdır ve üç elektron çiftine karşılık gelir.",
+        "Gerçek bütçede yalnız elektronlar 10−6=4’tür. Bağ ve yalnız elektron sayıları 6 ve 4; yapı N≡N ve her N’de bir yalnız çifttir."
+      ],
+      "optionReasons": [
+        "Doğru. Üç ortak çift 6 bağ elektronu, iki atomdaki birer yalnız çift toplam 4 yalnız elektron taşır; bütçe 10’dur.",
+        "3 ve 2 elektron çifti sayılarıdır; soru elektronların toplamını istediği için ikisi de ikiyle çarpılmalıdır.",
+        "4 bağ ve 6 yalnız elektron toplam 10 olsa da yerel toplam 2×4+6=14 olur; iki N’nin oktetleri birlikte sağlanmaz.",
+        "8 bağ ve 8 yalnız elektron toplam 16 gerçek elektron gerektirir; 10 elektronluk bütçe yerel oktet toplamıyla karıştırılmıştır.",
+        "2 bağ ve 8 yalnız elektronla yerel toplam 2×2+8=12 olur; yalnız tek bağ iki N’nin de oktetini bu bütçeyle tamamlamaz."
+      ],
+      "commonError": "Her atomdaki sekizi toplayıp molekülün 16 elektronu olduğunu söyleme; bağdaki ortak elektronlar iki yerel sayımda yer alır.",
+      "check": "Her N için 6 ortak+2 yalnız=8 bulunur. Ortak bölgeyi yalnız bir kez sayınca 6+2+2=10, verilen iki N’nin bütçesiyle eşleşir."
+    }
+  },
+  {
+    "id": "chemical-species-8",
+    "identity": "[\"chemical-species-8\",\"N'nin 5, O'nun 6 değerlik elektronu var. Nötr NO• için N=O, N üzerinde bir yalnız çift ve bir tek elektron, O üzerinde iki yalnız çift çiziliyor. Hangi yorum doğrudur?\",\"\",[\"Noktadaki tek elektron, türün toplam −1 yüklü olduğunu kanıtlar\",\"N çevresindeki 7 elektron mutlaka bir çizim hatasıdır\",\"Türün toplam 11 değerlik elektronu vardır ve eşleşmemiş elektron radikal niteliği gösterir\",\"Çift bağ iki elektron içerir; bütçe 9'dur\",\"NO aynı elementin iki atomunu içerdiği için element molekülüdür\"],2,\"NO nötrdür ve 5 + 6 = 11 değerlik elektronu taşır. Çift bağ 4, N üzerindeki bağ dışı elektronlar 3, O üzerindekiler 4: toplam 11. N çevresinde 7 olması bu basit radikal örneğinde oktet istisnasıdır. Radikal noktası eksi yük anlamına gelmez; NO farklı elementlerden oluşur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Radikal niteliği eşleşmemiş elektronla, iyon niteliği ise toplam elektrik yüküyle ilgilidir; bu iki özellik aynı şey değildir. Tek sayıda elektronun tamamı çiftlere ayrılamaz. Basit Lewis modelinde bazı tek elektronlu türler bütün atomların oktetini birlikte sağlayamaz."
+      ],
+      "strategy": "Önce nötr atom katkılarından toplam bütçeyi kur; sonra çizgi, yalnız çift ve tek noktayı elektron karşılıklarıyla say. Yükü radikal noktası üzerinden değil sorudaki nötrlük bilgisiyle denetle.",
+      "steps": [
+        "Nötr NO için 5+6=11 değerlik elektronu vardır; yük nedeniyle ekleme veya çıkarma yapılmaz.",
+        "Verilen çift bağ 4, N’nin bir çifti ve tek noktası 3, O’nun iki yalnız çifti 4 elektron içerir: 4+3+4=11.",
+        "Bir elektron eşleşmemiştir; NO• nötr radikaldir. N yerel çevrede 4+3=7 elektron sayar ve bu örnek oktet istisnasıdır."
+      ],
+      "optionReasons": [
+        "Radikal noktası −1 yük değildir; soruda NO nötr verilmiştir ve 11 elektron bütçesi bu nötrlükle uyumludur.",
+        "N çevresindeki 7 elektron verilen basit radikal yapısının özelliğidir; okteti zorlayıp elektron eklemek nötr bütçeyi değiştirirdi.",
+        "Doğru. Toplam 11 elektron ve bir eşleşmemiş elektron vardır; bu radikal niteliği gösterir, net yükü zorunlu olarak değiştirmez.",
+        "Çift bağ iki değil dört elektron içerir. Bağ çiftini iki elektron saymak bütçeyi 9’a eksiltir.",
+        "NO bir N ve bir O içerir; iki atomlu olması aynı elementten olduğu anlamına gelmez, element molekülü değildir."
+      ],
+      "commonError": "Radikal ile anyonu eşitleme ve okteti bütün türlerde bütçeden üstün bir kural gibi kullanma.",
+      "check": "N’nin yerel 7’si ile O’nun yerel 8’ini toplayınca 15 bulunur; ortak bağın 4 elektronu iki kez sayılmıştır. 15−4=11 gerçek bütçeyi yeniden verir."
+    }
+  },
+  {
+    "id": "chemical-species-9",
+    "identity": "[\"chemical-species-9\",\"Katı NaCl, uzanan bir Na⁺ ve Cl⁻ iyon örgüsüdür. NaCl formülü için bilimsel olarak uygun yorum hangisidir?\",\"\",[\"Her NaCl biriminde iki nötr atomdan oluşan bağımsız kovalent molekül vardır\",\"İyonların 1:1 oranını ifade eden formül birimidir; kristalin geometrik birim hücresiyle aynı terim değildir\",\"Bir NaCl birim hücresi tanım gereği yalnız bir iyon içerir\",\"Formüldeki Cl mutlaka nötr klor atomudur\",\"NaCl yalnız iki atom içerdiği için element molekülüdür\"],1,\"NaCl formül birimi, iyonların en sade 1:1 bileşim oranını verir. Kristal birim hücresi örgünün tekrarlanan geometrik parçasıdır ve birden çok formül birimi içerebilir. İyonik katıyı bağımsız NaCl moleküllerinden oluşmuş saymak yanlıştır.\"]",
+    "guidance": {
+      "knowledge": [
+        "İyonik kristalde iyonlar tek tek ayrık moleküller yerine uzanan bir örgü içinde etkileşir. Bileşim oranını ifade eden formül birimiyle örgünün uzayda tekrarını tarif eden birim hücre farklı kavramlardır; geometrik hücre birden fazla formül birimi içerebilir."
+      ],
+      "strategy": "NaCl yazımını önce en sade iyon oranı olarak oku; sonra her seçeneğin bileşim mi, ayrık molekül mü, yoksa geometrik hücre mi tanımladığını ayır. Verilen kristal ve iyon bilgisine uyan açıklamayı seç.",
+      "steps": [
+        "Soruda katının Na⁺ ve Cl⁻ iyonlarının uzanan örgüsü olduğu açıkça verilmiştir; ayrı nötr Na–Cl molekülleri varsayılmaz.",
+        "NaCl’de yazılmayan indisler 1’dir; bileşimde Na⁺:Cl⁻ oranı 1:1 ve toplam yük (+1)+(−1)=0’dır.",
+        "Bu en sade bileşim formül birimidir. Kristalin tekrar eden geometrik hücresiyle aynı terim sayılmamalıdır."
+      ],
+      "optionReasons": [
+        "Bağımsız nötr atomlu kovalent NaCl molekülleri, soruda verilen iyon örgüsü tanımına uymaz; Na⁺ ve Cl⁻ yükleri yok sayılamaz.",
+        "Doğru. NaCl formül birimi 1:1 iyon bileşimini, birim hücre ise örgünün geometrik tekrarını anlatır; iki terim eş anlamlı değildir.",
+        "Bir geometrik birim hücrenin tanım gereği tek iyon içermesi gerekmez; ayrıca nötr NaCl bileşimi hem katyon hem anyon gerektirir.",
+        "Soruda klorun türü Cl⁻ olarak verilmiştir; formülde yükün her sembole tekrar yazılmaması klorürün nötr Cl olduğu anlamına gelmez.",
+        "Na ve Cl farklı elementlerdir; NaCl element molekülü değildir ve iyonik kristali iki atomlu ayrık molekül gibi saymak da uygun değildir."
+      ],
+      "commonError": "En sade bileşim ifadesini en küçük geometrik kutu veya bağımsız molekül olarak yorumlama; oranın kendisi koordinasyon çizimi değildir.",
+      "check": "NaCl formül oranı bir kez de yükten doğrulanır: nNa−nCl=0 için en küçük pozitif çözüm 1:1’dir. Bu hesap birim hücrenin geometrisini belirlemez."
+    }
+  },
+  {
+    "id": "chemical-species-10",
+    "identity": "[\"chemical-species-10\",\"He atomunda toplam 2, nötr O atomunda toplam 8 elektron vardır. He'nin 2 ve O'nun 6 değerlik elektronu olduğu veriliyor. Lewis gösterimleri için hangi ifade doğrudur?\",\"\",[\"İkisi de toplam elektron sayısı kadar nokta taşır\",\"He'ye 18. grupta olduğu için 8 nokta konur\",\"O'nun bütün 6 noktası birbirinden ayrı ve çiftlenmeden çizilir\",\"Lewis noktalarının dört tarafa konması atomun kare biçiminde olduğunu gösterir\",\"He bir çiftle; O iki çift ve iki tek noktayla gösterilebilir, kâğıtta döndürmek türü değiştirmez\"],4,\"He'nin ilk katmanı iki elektronla doludur ve bir çiftle gösterilir. O'nun 6 değerlik elektronu önce dört tek nokta, sonra iki eşleşme ile iki çift ve iki tek nokta oluşturur. İçteki 2 elektron Lewis noktalarında gösterilmez; çizim yönü fiziksel geometri değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Nötr atomun Lewis sembolü, iç katmanlar yerine dış değerlik elektronlarını gösterir. Okul gösteriminde dört yöne önce tek noktalar yerleştirilir, sonra çiftler tamamlanır; dolu ilk katmanlı He ayrıca değerlendirilir. Kâğıttaki yönler gerçek atom geometrisi değildir."
+      ],
+      "strategy": "He ve O için verilen değerlik sayılarını toplam elektron sayılarından ayır. Her biri için tek ve çift noktaların toplamını kontrol et; son olarak çizimi döndürmenin türün kimliğini değiştirip değiştirmediğine bak.",
+      "steps": [
+        "He’nin ilk ve tek katmanı 2 elektronla doludur; Lewis sembolünde bu iki elektron bir çift olarak gösterilebilir.",
+        "O’nun verilen 6 değerlik elektronu için önce dört ayrı nokta, sonra iki eşleşme yapılır; sonuç iki çift ve iki tek noktadır.",
+        "He’de bir çift, O’da iki çift ve iki tek nokta doğru sayımı verir. Sembolün kâğıtta döndürülmesi element veya elektron sayısını değiştirmez."
+      ],
+      "optionReasons": [
+        "O’nun toplam 8 elektronunun yalnız dıştaki 6’sı noktadır; iki atom için de toplam elektron kadar nokta çizme genellemesi yanlıştır.",
+        "He 18. grupta olsa da ilk katmanı iki elektronla doludur; sekiz nokta çizmek verilen değerlik sayısını aşar.",
+        "Dört yöne önce tek yerleştirme kuralından sonra kalan iki elektron eşleşir; altı noktanın hepsini ayrı göstermek okul sembolündeki dağılım değildir.",
+        "Lewis sembolünün dört tarafı bir sayım düzenidir; atomun kare biçimde olduğunu veya elektronların dört sabit köşede durduğunu göstermez.",
+        "Doğru. He’nin iki elektronu bir çift; O’nun altısı iki çift ve iki tektir. Yönü döndürmek sayımı veya türü değiştirmez."
+      ],
+      "commonError": "Grup numarasından He’ye otomatik oktet verme; ayrıca çizim yönlerinden fiziksel kare veya bağ açısı çıkarma.",
+      "check": "He için 1×2=2, O için 2×2+2×1=6 nokta hesaplanır. O’nun içteki 2 elektronu eklendiğinde toplam 8’e ulaşılır, fakat bunlar Lewis noktası değildir."
+    }
+  },
+  {
+    "id": "iyonik-bag-ve-guclu-etkilesimler-q1",
+    "identity": "[\"iyonik-bag-ve-guclu-etkilesimler-q1\",\"İyonik bağın temel nedeni hangisidir?\",\"\",[\"Zıt yüklü iyonların elektrostatik çekimi\",\"Her durumda elektron çifti paylaşımı\",\"Yalnız nötronların çekimi\",\"Sadece aynı yüklü iyonların çekimi\",\"Atom numarasının değişmesi\"],0,\"Elektron aktarımı iyonların oluşumunu açıklayabilir; iyonik bağ zıt yüklü iyonlar arasındaki elektrostatik çekimdir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir bağın oluşmasından önce iyonların nasıl elde edildiğiyle oluşan iyonların neden bir arada kaldığı iki ayrı sorudur. Elektrostatik etkileşimde zıt işaretli yükler çekişir, aynı işaretli yükler itişir. Elektron aktarımı iyonların yükünü açıklasa da bağın tutucu etkisi iyonlar arasındaki kuvvettir."
+      ],
+      "strategy": "Seçeneklerin iyon oluşumunu mu, elektron paylaşımını mı, yoksa iyonları bir arada tutan çekimi mi anlattığını ayır. Sorudaki temel neden için yüklerin işareti ile kuvvetin yönünü birlikte denetle.",
+      "steps": [
+        "İyonik yapıda pozitif katyonlar ve negatif anyonlar bulunur; bunların çekirdekleri elektron paylaşımıyla bir molekül çifti gibi tarif edilmez.",
+        "Zıt elektrik yükleri arasındaki elektrostatik çekim, iyonların örgüde bir arada tutulmasının temelidir.",
+        "Dolayısıyla iyonik bağın temel nedeni zıt yüklü iyonların elektrostatik çekimidir; elektron aktarımı bunun öncesindeki iyon oluşumunu açıklayabilir."
+      ],
+      "optionReasons": [
+        "Doğru. Katyon ile anyon arasındaki zıt yük kaynaklı elektrostatik çekim iyonik bağı açıklar.",
+        "Elektron çiftinin ortaklaşa kullanılması kovalent bağın temel anlatımıdır; iyonik çekimle her durumda aynı süreç değildir.",
+        "Nötronlar elektriksel olarak yüksüzdür; bu temel kimyasal çekim yalnız nötronlara bağlanamaz.",
+        "Aynı işaretli yükler elektrostatik olarak birbirini iter; yalnız bunların çekimi iyonik bağın nedeni olamaz.",
+        "Atom numarasının değişmesi çekirdek kimliğini değiştirirdi; iyonik bağ oluşumunda elementlerin proton sayısı bu nedenle değişmez."
+      ],
+      "commonError": "Elektron alışverişini bağın kendisiyle eşitleyip oluşan iyonlar arasındaki kuvveti atlama.",
+      "check": "Na⁺–Cl⁻ gibi zıt işaretli bir çiftte çekim, Na⁺–Na⁺ gibi aynı işaretli çiftte itme beklenir; bu iki karşılaştırma doğru yük ilkesini sınar."
+    }
+  },
+  {
+    "id": "iyonik-bag-ve-guclu-etkilesimler-q2",
+    "identity": "[\"iyonik-bag-ve-guclu-etkilesimler-q2\",\"NaCl kristalindeki NaCl formülü neyi gösterir?\",\"\",[\"Bağımsız bir NaCl molekülünün boyunu\",\"Na⁺ ve Cl⁻ iyonlarının 1:1 oranını\",\"Yalnız elektron sayısını\",\"Tek birim hücrenin her zaman iki atomunu\",\"Çekirdek tepkimesini\"],1,\"Formül birimi en küçük iyon oranını verir. Kristal üç boyutlu uzanan iyon örgüsüdür; bağımsız NaCl molekülleri diye yorumlanmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir iyonik kristalin formülü, kristaldeki katyon ve anyonların en sade bileşim oranını kodlar. Bu oran ayrık molekül boyu veya kristalin tek bir geometrik hücresindeki kesin iyon adedi değildir. Yazılmayan alt indis bir kabul edilir."
+      ],
+      "strategy": "NaCl’deki iki sembolün alt indislerini açıkça yazıp bunları iyon adetleri oranına çevir. Ardından bu oranın zıt yükleri nötrleyip nötrlemediğini denetle.",
+      "steps": [
+        "NaCl yazımı Na₁Cl₁ olarak okunur; verilen kristal Na⁺ ve Cl⁻ iyonlarından oluşur.",
+        "Bir Na⁺’a karşı bir Cl⁻, (+1)+(−1)=0 net yük verir; iyon sayıları 1:1 oranındadır.",
+        "Formül bu en sade bileşimi gösterir. Bağımsız NaCl molekülünün boyunu veya her birim hücrenin iyon sayısını belirlemez."
+      ],
+      "optionReasons": [
+        "Formülde uzunluk verisi bulunmaz; ayrıca kristaldeki iyon örgüsü bağımsız NaCl moleküllerinin boylarıyla tanımlanmamıştır.",
+        "Doğru. Na ve Cl’nin yazılmayan birer indisleri, Na⁺:Cl⁻ iyon oranının 1:1 olduğunu gösterir.",
+        "NaCl formülü tek başına yalnız elektron sayısı kodu değildir; hangi iyonlardan hangi bileşim oranında bulunduğunu belirtir.",
+        "Geometrik birim hücre birden çok formül birimi içerebilir; formüldeki iki sembol her hücrede zorunlu iki atom bulunduğunu söylemez.",
+        "Bu iyonik bileşim gösterimidir; bir çekirdek tepkimesini veya atom numarası değişimini ifade etmez."
+      ],
+      "commonError": "Formüldeki 1:1 bileşim oranını, kristalin geometrik birim hücresindeki mutlak tanecik sayısı sanma.",
+      "check": "İyon oranı 2:2 veya 100:100 yazılsa aynı en sade 1:1 bileşime indirgenir; bu, formülün toplam kristal büyüklüğünden bağımsız olduğunu gösterir."
+    }
+  },
+  {
+    "id": "iyonik-bag-ve-guclu-etkilesimler-q3",
+    "identity": "[\"iyonik-bag-ve-guclu-etkilesimler-q3\",\"Al³⁺ ve O²⁻ iyonlarından oluşan nötr bileşiğin en küçük formülü hangisidir?\",\"\",[\"AlO\",\"Al₃O₂\",\"Al₂O₃\",\"Al₂O₂\",\"AlO₃\"],2,\"İki Al³⁺ toplam +6, üç O²⁻ toplam −6 taşır. Al₂O₃ nötrdür; Al₃O₂ nötr değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Nötr iyonik bileşikte katyonların toplam pozitif yüküyle anyonların toplam negatif yükü birbirini sıfırlar. Alt indisler iyon adetleri oranıdır; üstteki yükler ise tek bir iyonun yükünü belirtir. En küçük formül için oran sadeleştirilemez pozitif tam sayılardan oluşmalıdır."
+      ],
+      "strategy": "Al³⁺ ve O²⁻ için pozitif ve negatif toplamları eşitleyen en küçük iyon adetlerini bul. Önerilen indisleri üst yükleriyle çarparak her adayın net yükünü yeniden hesapla.",
+      "steps": [
+        "Pozitif toplam 3’ün, negatif yükün büyüklüğü 2’nin katı olmalıdır; en küçük ortak büyüklük 6’dır.",
+        "İki Al³⁺ toplam +6, üç O²⁻ toplam −6 taşır; net yük 2×3−3×2=0 olur.",
+        "İyon adetleri 2:3 sadeleşmediğinden en küçük formül Al₂O₃’tür; üst yükler alt indis olarak aynı iyonun yanına kopyalanmaz."
+      ],
+      "optionReasons": [
+        "AlO için (+3)+(−2)=+1 kalır; verilen iyonlarla nötr bir oran değildir.",
+        "Al₃O₂ için 3×(+3)+2×(−2)=+5 kalır; indisler nötr Al₂O₃ oranına göre ters yazılmıştır.",
+        "Doğru. İki Al³⁺ ile üç O²⁻ yükleri +6 ve −6 yapar; 2:3 en küçük nötr orandır.",
+        "Al₂O₂ için +6−4=+2 olur; iyon sayılarının eşit olması farklı yük büyüklüklerini dengelemez.",
+        "AlO₃ için +3−6=−3 olur; bir Al³⁺ üç oksit iyonunun yükünü nötrleyemez."
+      ],
+      "commonError": "Çapraz yazma kısa yolunu sonuç denetimi yerine kullanma; özellikle Al₃O₂ gibi bir yazımın net yükünü mutlaka topla.",
+      "check": "Nötrlük denklemi 3a=2b’dir. a=2, b=3 en küçük pozitif tam çözümü verir; daha büyük çözümler aynı 2:3 oranının katlarıdır."
+    }
+  },
+  {
+    "id": "iyonik-bag-ve-guclu-etkilesimler-q4",
+    "identity": "[\"iyonik-bag-ve-guclu-etkilesimler-q4\",\"Saf katı NaCl’nin elektrik iletmemesi hangi nedenle açıklanır?\",\"\",[\"Hiç iyon içermez\",\"Yalnız molekül içerir\",\"İyon yükleri yok olur\",\"İyonlar örgüde serbestçe yer değiştiremez\",\"Protonlar kristalden ayrılır\"],3,\"Katıda iyonlar vardır fakat örgü konumlarına bağlıdır. Serbest yük taşımaları sınırlı olduğundan tipik iyonik katı iyi elektrik iletmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Elektrik akımı için yükün varlığına ek olarak yük taşıyıcısının örnek içinde yer değiştirebilmesi gerekir. İyonik katıda iyonlar yüklerini korur, fakat düzenli örgüde konumları çevresindeki titreşimle sınırlıdır. Bu, eriyiğin taşıma hareketinden farklıdır."
+      ],
+      "strategy": "NaCl’de yük taşıyan türlerin bulunup bulunmadığını ve katıdaki hareketlerinin türünü ayrı incele. Seçeneklerden yükü yok eden açıklamalar yerine örgüdeki hareket sınırlamasını ara.",
+      "steps": [
+        "Saf katı NaCl, Na⁺ ve Cl⁻ içerir; katı olması iyonları nötr atomlara veya bağımsız moleküllere dönüştürmez.",
+        "İyonlar örgü konumları çevresinde titreşse de bu temel karşılaştırmada örnek boyunca serbestçe dolaşarak yük taşıyamaz.",
+        "İletkenliğin iyi olmamasının nedeni yüklerin yokluğu değil, iyonların örgüde serbestçe yer değiştirememesidir."
+      ],
+      "optionReasons": [
+        "NaCl katısı iyon içerir; iletken olmamasını iyonların bulunmamasına bağlamak kristal yapısını yanlış tarif eder.",
+        "NaCl iyonik örgüdür; yalnız bağımsız nötr moleküllerden oluşmuş sayılarak iletkenlik açıklanamaz.",
+        "Katılaşma veya örgü oluşumu Na⁺ ve Cl⁻ yüklerini yok etmez; toplam nötrlük tek tek iyonların yüksüz olması değildir.",
+        "Doğru. Katıdaki iyonların örgü konumlarına bağlılığı uzun mesafeli yük taşıma hareketini sınırlar; eriyiğe göre temel fark budur.",
+        "Protonların çekirdekten ayrılması bu elektrik iletkenliği açıklamasının parçası değildir; iyonik katıda protonlar kopup dolaşmaz."
+      ],
+      "commonError": "İyonların titreşmesini elektrik alan yönünde örnek boyunca serbest yük taşımayla karıştırma.",
+      "check": "NaCl eritildiğinde iyonların yükleri aynı kalırken iletkenlik artabilir; değişenin hareket serbestliği olması, katı için seçilen açıklamayı destekler."
+    }
+  },
+  {
+    "id": "iyonik-bag-ve-guclu-etkilesimler-q5",
+    "identity": "[\"iyonik-bag-ve-guclu-etkilesimler-q5\",\"NH₄Cl için doğru ifade hangisidir?\",\"\",[\"Metal yoksa iyonik olamaz\",\"N–H bağları iyoniktir\",\"NH₄⁺ tek atomlu iyondur\",\"Cl⁻ pozitif iyondur\",\"NH₄⁺ ve Cl⁻ arasındaki çekim iyoniktir\"],4,\"NH₄⁺ ile Cl⁻ arasında iyonik çekim vardır; NH₄⁺ içindeki N–H bağları ise kovalenttir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Çok atomlu bir iyonun içinde atomları bir arada tutan bağlarla bu iyonu başka bir karşı iyonla tutan etkileşim aynı türde olmak zorunda değildir. İyonik sınıflandırmada metal sembolü aramak yerine bütün grupların net yüklerine bakmak daha güvenlidir."
+      ],
+      "strategy": "NH₄Cl’yi önce iki yüklü gruba ayır. Sonra NH₄⁺ grubunun içindeki N–H ilişkisinin mi, yoksa grubun Cl⁻ ile ilişkisinin mi sorulduğunu her seçenek için işaretle.",
+      "steps": [
+        "Bileşikte NH₄⁺ toplam +1 yüklü çok atomlu katyon, Cl⁻ ise −1 yüklü anyondur; birlikte nötr oran kurarlar.",
+        "Bu iki iyonun birbirini çekmesi elektrostatik ve iyoniktir. NH₄⁺ içindeki N–H bağlarında ise elektron çiftleri ortaklaşır.",
+        "Doğru ifade NH₄⁺ ile Cl⁻ arasındaki çekimin iyonik olmasıdır; metal bulunmaması bu iyonlar arası çekimi ortadan kaldırmaz."
+      ],
+      "optionReasons": [
+        "NH₄⁺ gibi metal içermeyen katyonlar da iyonik tuz oluşturur; metalin yokluğu tek başına iyonik yapıyı dışlamaz.",
+        "NH₄⁺ içindeki N–H bağları kovalenttir; grubun Cl⁻ ile iyonik etkileşimi bütün iç bağları iyonik yapmaz.",
+        "NH₄⁺ bir N ve dört H içerdiği için beş atomlu bir iyon grubudur; tek atomlu değildir.",
+        "Cl⁻’ın − işareti negatif anyon olduğunu belirtir; pozitif iyon denmesi yük işaretini ters okur.",
+        "Doğru. Pozitif NH₄⁺ ile negatif Cl⁻ arasındaki çekim iyoniktir; N–H iç bağlarının kovalent olmasıyla çelişmez."
+      ],
+      "commonError": "Bileşiğe tek etiket verip bütün bağ düzeylerini aynı sayma; hangi iki parçanın arasına baktığını söyle.",
+      "check": "Bir NH₄⁺ ve bir Cl⁻ toplamda +1−1=0 yük verir. NH₄⁺’ı parçalamadan bu bilanço kurulabilmesi, grup ile grup içi bağ ayrımını doğrular."
+    }
+  },
+  {
+    "id": "iyonik-bag-ve-guclu-etkilesimler-q6",
+    "identity": "[\"iyonik-bag-ve-guclu-etkilesimler-q6\",\"Ca²⁺ ve O²⁻ iyonlarının oluşturduğu tuzun en küçük formülü hangisidir?\",\"\",[\"CaO\",\"Ca₂O₂\",\"CaO₂\",\"Ca₂O\",\"Ca₂O₃\"],0,\"+2 ve −2 yükler 1:1 ile dengelenir. Ca₂O₂ nötr olsa da en küçük oran değildir; CaO yazılır.\"]",
+    "guidance": {
+      "knowledge": [
+        "İyonik formülde nötr olmakla en küçük oranı vermek iki ayrı denetimdir. Aynı büyüklükte zıt yükler birer iyonla dengelenebilir; daha büyük ama aynı oranı veren indisler sadeleştirilir. Sadeleştirilen, verilen iyonların kendi yükü değil iyon adetleridir."
+      ],
+      "strategy": "Ca²⁺ ile O²⁻ için birer iyonun net yükünü dene. Sonra nötr adayların iyon adetlerini en küçük tam oranına indir; daha fazla iyon yazmanın yeni bir oran oluşturup oluşturmadığını karşılaştır.",
+      "steps": [
+        "Bir Ca²⁺ ile bir O²⁻ toplam +2−2=0 verir; nötrlük için birer iyon yeterlidir.",
+        "İki Ca ve iki O da +4−4=0 verir, ancak 2:2 oranı 1:1’e sadeleşir.",
+        "En küçük iyon oranı 1:1 olduğundan formül CaO’dur; 1 alt indisleri yazılmaz."
+      ],
+      "optionReasons": [
+        "Doğru. Bir Ca²⁺ ile bir O²⁻ nötr olur; 1:1 zaten en küçük oran olduğu için CaO yazılır.",
+        "Ca₂O₂ verilen iyonlarla nötrdür fakat 2:2 sadeleşir; istenen en küçük formül CaO’dur.",
+        "Verilen O²⁻ iyonlarıyla CaO₂ toplam +2−4=−2 taşır; farklı bir peroksit iyonunun varlığı bu soruda verilmemiştir.",
+        "Ca₂O için 2×(+2)−2=+2 kalır; tek oksit iki kalsiyum iyonunu nötrleyemez.",
+        "Ca₂O₃ için +4−6=−2 kalır; verilen iyon yükleriyle nötr bir oran oluşturmaz."
+      ],
+      "commonError": "Nötrlüğü sağlayan her indis çiftini en küçük formül sanma; ortak bölen varsa iyon adetleri sadeleştirilmelidir.",
+      "check": "Nötrlük denklemi 2a−2b=0, yani a=b verir. En küçük pozitif çözüm a=b=1’dir; seçilen oran bu denkleme doğrudan uyar."
+    }
+  },
+  {
+    "id": "iyonik-bag-ve-guclu-etkilesimler-q7",
+    "identity": "[\"iyonik-bag-ve-guclu-etkilesimler-q7\",\"İyonik tuzların suda çözünmesi için hangi genelleme doğrudur?\",\"\",[\"Hepsi sınırsız çözünür\",\"Çözünürlük tuza ve koşullara bağlıdır\",\"Hiçbiri iyon oluşturmaz\",\"Çözünme daima elektrolizdir\",\"AgCl her koşulda çok iyi çözünür\"],1,\"İyonik olmak her tuzun çok çözündüğünü göstermez. AgCl az çözünür; çözelti iletkenliği de hareketli iyonların miktarına bağlıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "İyonik örgünün suda çözünmesi, örgü etkileşimleriyle iyon–su etkileşimleri ve koşulların birlikte belirlediği bir dengedir. İyonik olma niteliği tek başına yüksek çözünürlük garantisi değildir. Çözünme, elektrolizle yürütülen kimyasal ayrıştırmayla aynı işlem değildir."
+      ],
+      "strategy": "Her seçenekteki hepsi, hiçbiri veya her koşul gibi sözcükleri denetle. Az çözünen bir iyonik tuzu karşı örnek olarak kullan; çözünürlük miktarının koşullara bağlılığını sınıf etiketinden ayır.",
+      "steps": [
+        "NaCl gibi kolay çözünen iyonik tuzların bulunması bütün iyonik tuzların aynı çözünürlükte olduğunu göstermez.",
+        "AgCl’nin saf suda az çözünmesi, iyonik olmanın sınırsız çözünmeyi garanti etmediği somut karşı örnektir.",
+        "Bu nedenle doğru genelleme çözünürlüğün tuza ve koşullara bağlı olmasıdır; iyonik yapı ile çözünürlük aynı sınıflandırma değildir."
+      ],
+      "optionReasons": [
+        "Her tuzun sınırsız çözünmesi doğru değildir; AgCl gibi az çözünen iyonik katılar bu genellemeyi çürütür.",
+        "Doğru. İyon türü, suyla etkileşim ve sıcaklık gibi koşullar çözünürlüğü etkiler; iyonik olmak tek başına çok çözünmek demek değildir.",
+        "İyonik tuzlar zaten iyonlardan oluşur; çözünen kısımları uygun sulu ortamda hareketli iyonlar verebilir. Hiçbiri ifadesi yanlıştır.",
+        "Suda çözünme dışarıdan elektrikle kimyasal dönüşüm yürütmek anlamına gelmez; her çözünme elektroliz değildir.",
+        "AgCl saf suda az çözünen bir örnektir; her koşulda çok iyi çözündüğü iddiası bu olguyla çelişir."
+      ],
+      "commonError": "İyonik demeyi suda tamamen çözünür veya her çözeltisi aynı iletkenliktedir diye genişletme.",
+      "check": "Kolay çözünen NaCl ile saf suda az çözünen AgCl aynı iyonik sınıfa girer. İki karşıt örneğin birlikte bulunması koşula bağlı yorumu destekler."
+    }
+  },
+  {
+    "id": "iyonik-bag-ve-guclu-etkilesimler-q8",
+    "identity": "[\"iyonik-bag-ve-guclu-etkilesimler-q8\",\"Maddenin hâli değişirken hangi durumda iyonların hareketliliği artabilir?\",\"\",[\"Saf tuz kristalinin soğutulmasında\",\"Nötron sayısı sabitken her durumda\",\"Tuzun eritilmesinde\",\"Her katı kırıldığında zorunlu olarak\",\"Atom numarası değiştiğinde\"],2,\"İyonik tuz eritildiğinde iyonlar daha serbest hareket eder; eriyik bu hareketli yük taşıyıcıları nedeniyle iletebilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "İyonların elektrik yüküyle hareket serbestliği farklı özelliklerdir. Katı örgüde konumlar daha sınırlıyken sıvı hâlde tanecikler birbirine göre yer değiştirebilir. Bir katıyı küçük parçalara kırmak ise onun mutlaka sıvı hâle geçtiğini göstermez."
+      ],
+      "strategy": "Seçenekleri gerçek hâl değişimi ve yalnız başka özellik değişimi olarak ayır. İyonların örgü konumlarından daha serbest hareket edeceği durumu, çekirdek veya yük değişimi gerektirmeden belirle.",
+      "steps": [
+        "Saf tuz kristalinde iyonlar düzenli konumlar çevresinde bulunur; yalnız kristali soğutmak onları eriyik hâle getirmez.",
+        "Tuz eritildiğinde katı örgünün sabit konum sınırlaması azalır; eriyikte iyonlar daha serbest yer değiştirebilir.",
+        "Bu yüzden iyon hareketliliğinin artabileceği hâl değişimi erimedir; kristali yalnız kırmak veya nötron sayısını sabit tutmak bu sonucu garanti etmez."
+      ],
+      "optionReasons": [
+        "Soğutma tuzu sıvılaştırmak yerine katı düzeni korur; iyonların daha serbest taşıma hareketini açıklayan değişim değildir.",
+        "Nötron sayısının sabit olması iyon hareketliliğini belirlemez; aynı çekirdeklerle katı ve eriyik hâller farklı hareket gösterebilir.",
+        "Doğru. Erimeyle iyonlar örgüdeki sabit konumlara bağlı olmaktan çıkarak daha serbest hareket edebilir.",
+        "Kırılan kristal parçaları yine katı olabilir; her kırılmada iyonların örnek içinde serbestçe dolaşması zorunlu değildir.",
+        "Atom numarası değişimi nükleer kimlik değişimidir; tuzun hâl değişimine dayanan iyon hareketliliğinin nedeni değildir."
+      ],
+      "commonError": "Katının parçalara ayrılmasıyla iyonların sıvı içindeki taşıma hareketini aynı olay sayma.",
+      "check": "Erime sırasında iyonların işaretleri korunur. İletkenliğin değişebilmesi yük miktarı yaratılmasından değil hareket kabiliyetinin artmasından kaynaklanabilir."
+    }
+  },
+  {
+    "id": "iyonik-bag-ve-guclu-etkilesimler-q9",
+    "identity": "[\"iyonik-bag-ve-guclu-etkilesimler-q9\",\"Birim hücre ile formül birimini ayıran doğru ifade hangisidir?\",\"\",[\"İkisi de bağımsız moleküldür\",\"Birim hücre sadece gazlarda vardır\",\"Formül birimi 3 boyutlu kutunun adı olmak zorundadır\",\"Birim hücre geometrik tekrar parçası, formül birimi en küçük iyon oranıdır\",\"Formül birimi iyon yüklerini değiştirme işlemidir\"],3,\"Birim hücre kristal geometrisinin tekrarlanan parçasıdır; formül birimi en küçük tam sayılı iyon oranını ifade eder.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir kristalin bileşimi hangi türden ne oranda bulunduğunu; geometrisi ise bu türlerin uzayda nasıl tekrarlandığını anlatır. En sade kimyasal oran ile uzayda seçilen tekrar hücresi aynı nesne değildir. Hücre seçimi yapısal, formül birimi ise stokiyometrik bilgi taşır."
+      ],
+      "strategy": "Her ifadeyi oran bildiren ve geometrik tekrar bildiren parçalara ayır. İki kavrama da molekül ya da fiziksel kutu adı verme eğilimini yük ve bileşim bilgisiyle karşılaştır.",
+      "steps": [
+        "Formül birimi, iyonların en küçük tam sayılı bileşim oranını belirtir; örneğin NaCl’de bu oran 1:1’dir.",
+        "Birim hücre, kristal düzenini uzayda tekrar ederek oluşturabilen geometrik parçadır; içinde birden fazla formül birimi bulunabilir.",
+        "Doğru ayrım geometrik tekrar parçası ile en küçük iyon oranıdır. Bunların birbirinden bağımsız moleküller olduğu söylenmez."
+      ],
+      "optionReasons": [
+        "İyonik kristalde bu iki kavramın hiçbiri zorunlu olarak ayrık molekül değildir; oran ve geometri tek molekül tanımına indirgenemez.",
+        "Birim hücre kavramı düzenli kristal geometriyle ilişkilidir; yalnız gazlara ait olduğu iddiası ters bir sınıflandırmadır.",
+        "Formül birimi üç boyutlu kutunun adı olmak zorunda değildir; kutu gibi geometrik tekrar birim hücreye ilişkindir.",
+        "Doğru. Birim hücre geometrik tekrar parçasını, formül birimi en sade iyon bileşimini anlatır.",
+        "Formül birimi yazmak iyonların yükünü değiştiren işlem değildir; var olan yüklerle nötr bileşim oranını ifade eder."
+      ],
+      "commonError": "Bir kristal çizimindeki tekrar kutusunu gördüğünde onun mutlaka yalnız bir formül birimi içerdiğini varsayma.",
+      "check": "Aynı NaCl bileşimi korunurken kristalin farklı büyüklükte tekrar hücreleri seçilebilir; bileşim oranının değişmemesi iki kavramın ayrı olduğunu gösterir."
+    }
+  },
+  {
+    "id": "iyonik-bag-ve-guclu-etkilesimler-q10",
+    "identity": "[\"iyonik-bag-ve-guclu-etkilesimler-q10\",\"Suyun kaynaması sırasında H₂O için temel değişim hangisidir?\",\"\",[\"Her O–H bağı zorunlu kopar\",\"Suyun atom numarası değişir\",\"Tüm su iyonik kristal olur\",\"Oksijen çekirdeği parçalanır\",\"Moleküller arası etkileşimler aşılır\"],4,\"Kaynama bir hâl değişimidir; H₂O molekülünün içindeki bütün O–H bağlarının kopması ve suyun elementlerine ayrılması değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hâl değişiminde aynı kimyasal tür farklı fiziksel düzene geçebilir. Molekül içindeki kovalent bağlar, molekülleri birbirine çeken etkileşimlerden ayrıdır. Bir sıvının buharlaşması moleküllerin uzamsal birlikteliğini değiştirir; kimyasal formülünün mutlaka parçalanmasını gerektirmez."
+      ],
+      "strategy": "Suyun kaynamasını önce fiziksel hâl değişimi olarak sınıflandır. Sonra hangi etkileşim düzeyinin aşılmasıyla moleküllerin sıvıdan gaz fazına geçebileceğini düşün; çekirdek veya molekül içi parçalanmayı gerektiren seçenekleri ayır.",
+      "steps": [
+        "Kaynamada H₂O sıvı fazdan H₂O gaz fazına geçer; temel kimyasal tür su molekülü olarak kalır.",
+        "Moleküllerin birbirinden ayrılabilmesi için aralarındaki çekimlerin etkisi aşılır; molekülün bütün O–H bağlarını koparmak gerekmez.",
+        "Temel değişim moleküller arası etkileşimlerin aşılmasıdır. Suyu elementlerine ayırmak kaynamadan farklı bir kimyasal dönüşümdür."
+      ],
+      "optionReasons": [
+        "Her O–H bağının kopması suyun kimyasal yapısını parçalar; yalnız kaynama için bu zorunlu değildir.",
+        "Atom numarası H veya O çekirdeğinin proton sayısıdır; suyun sıvıdan gaza geçmesi bu sayıları değiştirmez.",
+        "Kaynama H₂O’yu iyonik kristale dönüştürmez; moleküler suyun sıvı–gaz hâl değişimidir.",
+        "Oksijen çekirdeğinin parçalanması nükleer olaydır; kaynamanın moleküller arası enerji değişimiyle aynı şey değildir.",
+        "Doğru. Sıvıdaki su molekülleri birbirinden ayrılıp gaz fazına geçerken moleküller arası çekimlerin etkisi aşılır."
+      ],
+      "commonError": "Güçlü enerji verildi diye her durumda molekül içi bütün bağların koptuğunu varsayma; önce gerçekleşen olayın kimyasal mı fiziksel mi olduğunu belirle.",
+      "check": "Su buharı yeniden yoğunlaştığında yine H₂O elde edilmesi aynı molekül türünün korunduğuyla tutarlıdır; hidrojen ve oksijen gazlarına ayrışma ayrı bir olay olurdu."
+    }
+  },
+  {
+    "id": "iyonik-bilesik-adlandirma-q1",
+    "identity": "[\"iyonik-bilesik-adlandirma-q1\",\"MgBr₂ bileşiğinin doğru adı hangisidir?\",\"\",[\"Magnezyum dibrom\",\"Magnezyum(II) brom atomu\",\"Magnezyum bromür\",\"Magnezyum bromat\",\"Magnezyum oksit\"],2,\"Mg²⁺ ve Br⁻ iyonlarından oluşan MgBr₂ magnezyum bromürdür. İyonik adlandırmaya moleküler di- ön eki taşınmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "İyonik adlandırmada katyonun adı önce, anyonun adı sonra söylenir. Magnezyumun yaygın iyonu Mg²⁺’tır; tek atomlu halojen anyonlarının adları nötr element adlarından ayrılır. Moleküler adlandırmanın di-, tri- ön ekleri bu temel iyonik ad kuralının yerine geçirilmez."
+      ],
+      "strategy": "MgBr₂’yi katyon ve anyon olarak ayır; iki Br’nin yükünün bir Mg ile nasıl dengelendiğini denetle. Ardından sayı ön eki eklemek yerine doğru tek atomlu anyon adını metal adına bağla.",
+      "steps": [
+        "Mg²⁺ için iki Br⁻ toplam +2+2(−1)=0 yük verir; formüldeki Br türü nötr brom atomu değil bromür iyonudur.",
+        "Katyonun adı magnezyum, Br⁻’ın adı bromürdür; iyonik ad katyon–anyon sırasıyla kurulur.",
+        "Bileşik magnezyum bromür olarak adlandırılır. Alt indis 2, iki bromür oranını gösterir; ada moleküler dibrom ön eki taşıtmaz."
+      ],
+      "optionReasons": [
+        "Dibrom ifadesi iki nötr bromu moleküler ön ekle adlandırır; MgBr₂’nin iyonik anyon adı bromürdür.",
+        "Mg’nin +2 olması ifadenin bütününü doğru yapmaz; brom atomu demek Br⁻ anyonunun bromür adını vermez.",
+        "Doğru. Mg²⁺ ve Br⁻ iyonlarının katyon–anyon adları sırasıyla magnezyum bromürü oluşturur.",
+        "Bromat, oksijen içeren BrO₃⁻ iyonunun adıdır; MgBr₂ formülünde oksijenli bromat grubu yoktur.",
+        "Oksit O²⁻ iyonunu gerektirir; verilen bileşikte O değil Br bulunduğundan magnezyum oksit denemez."
+      ],
+      "commonError": "Formüldeki iki anyonu görüp moleküler sayı ön ekine atlama; önce brom, bromür ve bromatın farklı türler olduğunu ayır.",
+      "check": "Adı geri formüle çevir: bir Mg²⁺ ve iki Br⁻, MgBr₂ verir. Bromat veya oksit adı kullanılsaydı geri yazımda farklı atomlar ortaya çıkardı."
+    }
+  },
+  {
+    "id": "iyonik-bilesik-adlandirma-q2",
+    "identity": "[\"iyonik-bilesik-adlandirma-q2\",\"Fe₂O₃’te oksidin yükü −2’dir ve her Fe aynı yükü taşır. Stock (Roma rakamlı) iyonik adlandırmaya göre bileşiğin adı hangisidir?\",\"\",[\"Demir(I) oksit\",\"Demir(II) oksit\",\"Didemir trioksit\",\"Demir(III) oksit\",\"Demir(II) sülfür\"],3,\"Toplam −6 anyon yükünü dengeleyen iki Fe toplam +6 taşır. Fe başına +3 olduğundan demir(III) oksit denir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Stock adlandırmada değişken yüklü metalin adı ile anyon adı arasına metalin iyon yükünü belirten Roma rakamı yazılır. Bu rakam metal adedini göstermez. Metalin bütün iyonları aynı yükteyse nötr formüldeki toplam anyon yükü metal iyonlarının adedine bölünerek her birinin yükü bulunur."
+      ],
+      "strategy": "Önce üç oksidin toplam negatif yükünü hesapla; nötrlük için gereken pozitif toplamı iki eş yüklü Fe’ye paylaştır. Sonucu, soruda istenen Stock yönteminde Roma rakamına çevir.",
+      "steps": [
+        "Üç O²⁻ toplam 3×(−2)=−6 yük taşır. Nötr Fe₂O₃’te iki demirin toplam yükü +6 olmalıdır.",
+        "Her Fe aynı yükte olduğundan 2x=6 ve x=+3 bulunur; alttaki 2 iyon adedi, +3 ise her iyonun yüküdür.",
+        "Stock adında Fe için III ve O²⁻ için oksit kullanılır; sonuç demir(III) oksittir."
+      ],
+      "optionReasons": [
+        "Demir(I) oksitte iki Fe yalnız toplam +2 taşırdı; üç oksidin −6 yükünü dengeleyemez.",
+        "Demir(II) oksit ifadesi Fe başına +2 ister; Fe₂O₃ için toplam +4−6=−2 kalır.",
+        "Didemir trioksit atom oranını öneklerle anlatan farklı, stokiyometrik adlandırmadır; soruda istenen Stock adında yük III Roma rakamıyla belirtilmelidir.",
+        "Doğru. Üç oksidin −6 yükünü iki Fe+3 dengeler; Stock adı demir(III) oksittir.",
+        "Sülfür, S²⁻ iyonunun adıdır; formülde S değil O bulunur. Ayrıca her Fe’nin gereken yükü +3’tür, +2 değildir."
+      ],
+      "commonError": "Formüldeki metal adedini Roma rakamı sanma; adlandırma sistemini de kontrol et, atom oranı önekiyle yük rakamı aynı bilgi değildir.",
+      "check": "2(+3)+3(−2)=0 hesabı istenen yükü doğrular. Aynı oksit yüküyle FeO yazılsaydı tek Fe+2 gerekecekti; formül değişince Stock rakamı da değişir."
+    }
+  },
+  {
+    "id": "iyonik-bilesik-adlandirma-q3",
+    "identity": "[\"iyonik-bilesik-adlandirma-q3\",\"Ca²⁺ ve NO₃⁻ iyonlarından oluşan kalsiyum nitratın formülü hangisidir?\",\"\",[\"CaNO₃\",\"Ca₂NO₃\",\"CaNO₆\",\"Ca₂(NO₃)₃\",\"Ca(NO₃)₂\"],4,\"Bir Ca²⁺ için iki nitrat gerekir; parantez dışı 2 bütün NO₃ grubunu çoğaltır. Ca(NO₃)₂ nötrdür.\"]",
+    "guidance": {
+      "knowledge": [
+        "Çok atomlu iyonun kendi içindeki atom oranı tuz formülü yazılırken korunur. Bir gruptan birden fazla gerekiyorsa grup paranteze alınır ve adet dış indisle gösterilir. Nötr bileşik için önce grup adedi yükten bulunur, grup içi atom sayıları daha sonra çarpılır."
+      ],
+      "strategy": "Ca²⁺ yükünü kaç NO₃⁻ grubunun dengeleyeceğini bul. Nitratı parçalamadan çoğalt; hem toplam yükü hem her nitratın N:O oranını kontrol ederek formülü seç.",
+      "steps": [
+        "Bir Ca²⁺ toplam +2 taşır; her NO₃⁻ grubu −1 olduğundan iki nitrat grubu gerekir.",
+        "İki grubun içeriğini korumak için (NO₃)₂ yazılır; dıştaki 2 hem N hem O adedini çoğaltır.",
+        "Katyon öne yazıldığında Ca(NO₃)₂ elde edilir; yük +2−2=0, atom adetleri 1 Ca, 2 N, 6 O’dur."
+      ],
+      "optionReasons": [
+        "CaNO₃ bir Ca²⁺ ve yalnız bir nitratla +1 net yük bırakır; ikinci NO₃⁻ grubu eksiktir.",
+        "Ca₂NO₃ için iki Ca toplam +4, tek nitrat −1 taşır; toplam +3 ile nötr değildir.",
+        "CaNO₆, iki NO₃ grubundaki iki N’yi korumaz; yalnız oksijen indisini ikiyle çarpmak nitrat kimliğini bozar.",
+        "Ca₂(NO₃)₃ için +4−3=+1 kalır; parantez doğru kullanılmış olsa da grup adetleri nötr oranı sağlamaz.",
+        "Doğru. Bir Ca²⁺’a iki NO₃⁻ gerekir; Ca(NO₃)₂ hem toplam yükü sıfırlar hem nitrat grubunu korur."
+      ],
+      "commonError": "Bir iyon grubunu çoğaltırken yalnız son elementin indisini değiştirme; dış indis bütün paranteze uygulanır.",
+      "check": "Ca(NO₃)₂’de 2 N ve 6 O vardır; 2:6 oranı 1:3’e iner ve her nitratın N:O oranını geri verir. Yük denetimi ayrıca +2+2(−1)=0’dır."
+    }
+  },
+  {
+    "id": "iyonik-bilesik-adlandirma-q4",
+    "identity": "[\"iyonik-bilesik-adlandirma-q4\",\"Cu₂O’da oksidin yükü −2 ve her Cu’nun yükü aynı ise doğru ad hangisidir?\",\"\",[\"Bakır(I) oksit\",\"Bakır(II) oksit\",\"Bakır(III) oksit\",\"Bakır(I) peroksit\",\"Dibakır dioksit\"],0,\"2 x−2=0’dan her Cu+1 bulunur. İki Cu olması yükün II olduğunu göstermez; doğru ad bakır(I) oksittir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Stock adındaki Roma rakamı her metal iyonunun yükünü bildirir, formüldeki iyon sayısını değil. Birden çok eş yüklü metal varsa toplam pozitif yük bu iyonlar arasında paylaşılır. Oksit ile peroksit de farklı iyon türleridir; verilen iyon yükü korunmalıdır."
+      ],
+      "strategy": "Tek O²⁻’ın negatif yükünü yazıp iki Cu’nun birlikte taşıması gereken pozitif toplamı bul. Bunu Cu adedine böl; çıkan yükü Roma rakamıyla metalin adına ekle.",
+      "steps": [
+        "Cu₂O’daki bir O²⁻ toplam −2 taşır; nötrlük için iki Cu’nun toplamı +2 olmalıdır.",
+        "İki Cu eş yüklü olduğundan 2x−2=0, buradan her Cu için x=+1 bulunur.",
+        "Roma rakamı I ve anyon adı oksit olduğundan doğru ad bakır(I) oksittir. Cu’nun alttaki 2’si bu rakama doğrudan kopyalanmaz."
+      ],
+      "optionReasons": [
+        "Doğru. İki Cu+1, tek O²⁻’ın yükünü dengeler; her Cu’nun yükünü gösteren Stock rakamı I’dir.",
+        "Her Cu+2 olsaydı Cu₂O’da toplam +4−2=+2 kalırdı; iki Cu bulunması II yükü anlamına gelmez.",
+        "Her Cu+3 için +6−2=+4 kalır; verilen oksit ve eş yük koşullarıyla uyuşmaz.",
+        "Peroksit O₂²⁻ grubunu gerektirir; soruda tek O²⁻ oksit verildiği için anyon adı peroksit olamaz.",
+        "Dibakır dioksit iki O oranı ima eder; verilen formül Cu₂O yalnız bir O içerir ve istenen temel adlandırmada yük I ile belirtilir."
+      ],
+      "commonError": "Metal alt indisi ile metal iyonunun yükünü eşitleme; toplam anyon yükünü metal adedine bölmeden Roma rakamını seçme.",
+      "check": "Adı yükleriyle geri yazınca iki bakır(I) iyonu ve bir oksit toplam +1+1−2=0 verir. Bakır(II) oksit aynı oksitle CuO oranını gerektirirdi."
+    }
+  },
+  {
+    "id": "iyonik-bilesik-adlandirma-q5",
+    "identity": "[\"iyonik-bilesik-adlandirma-q5\",\"Mg₃(PO₄)₂ formül biriminde kaç O vardır?\",\"\",[\"4\",\"8\",\"2\",\"6\",\"12\"],1,\"Her fosfatta 4 oksijen, iki fosfatta 2×4=8 oksijen vardır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Parantez dışındaki alt indis, parantez içindeki her atom sayısını çarpar. Parantez öncesindeki farklı elementin indisi ise yalnız o elemente aittir. Formül birimi sayımı yaparken önce iyon grubu adedi, sonra bir gruptaki hedef atom sayısı okunur."
+      ],
+      "strategy": "Mg₃(PO₄)₂’yi magnezyum bölümü ve iki fosfat grubu olarak ayır. Yalnız O sayıldığı için bir fosfattaki oksijen adedini grup adediyle çarp; Mg ve P indislerini bu çarpıma karıştırma.",
+      "steps": [
+        "(PO₄)₂ yazımında dış 2, iki fosfat grubu bulunduğunu belirtir; her bir PO₄ grubunda dört O vardır.",
+        "İki grubun oksijenleri 4+4 olarak veya 2×4 çarpımıyla sayılır.",
+        "Bir formül biriminde toplam 8 O vardır. Baştaki Mg₃, O adedine ayrı bir üç çarpanı eklemez."
+      ],
+      "optionReasons": [
+        "4 tek bir fosfat grubundaki O sayısıdır; parantez dışındaki ikinci grup sayılmamıştır.",
+        "Doğru. İki PO₄ grubunun her birinde dört O bulunduğu için 2×4=8 O vardır.",
+        "2 fosfat grubu adedidir; her grupta dört O olması henüz hesaba katılmamıştır.",
+        "6, Mg’nin 3 indisiyle dış 2’yi çarpmakla elde edilebilir; Mg adedi oksijenin grup içi 4 indisi yerine kullanılamaz.",
+        "12, 3×4 hesabıyla Mg indisini fosfat grubu adedi sanır; gerçek fosfat adedi 2’dir."
+      ],
+      "commonError": "En yakın gördüğün iki indisi çarpmak yerine hedef atomun hangi parantezin içinde olduğunu ve o parantezin kaç kez bulunduğunu izle.",
+      "check": "Formülü grup bazında açınca 3 Mg, (1 P+4 O)+(1 P+4 O) bulunur. P=2 ve O=8 sayımları birlikte fosfatın 1:4 iç oranını korur."
+    }
+  },
+  {
+    "id": "iyonik-bilesik-adlandirma-q6",
+    "identity": "[\"iyonik-bilesik-adlandirma-q6\",\"S²⁻, SO₃²⁻ ve SO₄²⁻ için sırasıyla doğru adlar hangisidir?\",\"\",[\"Sülfat, sülfür, sülfit\",\"Sülfit, sülfat, sülfür\",\"Sülfür, sülfit, sülfat\",\"Sülfür, sülfat, sülfit\",\"Nitrat, nitrit, nitrür\"],2,\"S²⁻ sülfür, SO₃²⁻ sülfit, SO₄²⁻ sülfattır. Oksijen sayıları iyon köklerini ayırır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı toplam elektrik yükünü taşımak iyonların aynı kimyasal tür olması anlamına gelmez. Bir anyonu tanırken merkez element, oksijen bulunup bulunmaması ve oksijen adedi ayrı okunur. Tek atomlu kükürt anyonuyla oksijenli kükürt iyonlarının adları bu yapısal ayrımı korur."
+      ],
+      "strategy": "Üç formülde önce O sayılarını 0, 3 ve 4 olarak çıkar; tek atomlu türü oksijenli gruplardan ayır. Ardından her türün yaygın iyon adını bu formülle eşleyip sorudaki sırayı koru.",
+      "steps": [
+        "S²⁻ yalnız bir S atomu içerir; bunun iyon adı sülfürdür. Üstteki 2− bir oksijen veya atom indisi değildir.",
+        "SO₃²⁻ üç oksijenli sülfit, SO₄²⁻ dört oksijenli sülfat iyonudur; O adedindeki bir fark ayrı iyon adı verir.",
+        "İstenen sıra sülfür, sülfit, sülfattır. Üçünün de −2 yüklü olması bu isim ayrımını kaldırmaz."
+      ],
+      "optionReasons": [
+        "İlk sıraya sülfat konması oksijensiz S²⁻’ı dört O içeren SO₄²⁻ ile karıştırır; devamındaki adlar da verilen sıraya uymaz.",
+        "S²⁻ sülfit değildir; sülfit SO₃²⁻ grubunu gerektirir. SO₄²⁻’a sülfür denmesi de oksijenleri yok sayar.",
+        "Doğru. O sayıları sırasıyla 0, 3, 4 olduğunda adlar sülfür, sülfit ve sülfat olur.",
+        "İlk sülfür doğrudur fakat SO₃²⁻ ile SO₄²⁻ adları ters çevrilmiştir; üç O sülfit, dört O sülfattır.",
+        "Nitrat, nitrit ve nitrür N içeren türlerdir; verilen üç formülün merkez elementi S olduğundan bu adlar uygun değildir."
+      ],
+      "commonError": "Yalnız −2 yüküne bakarak iyon adını seçme; oksijen sayısı ve merkez element de türün kimliğine aittir.",
+      "check": "Adları geri yaz: sülfür S²⁻, sülfit SO₃²⁻, sülfat SO₄²⁻. Üç geri formülün de sorudaki O adetlerini koruduğunu denetle."
+    }
+  },
+  {
+    "id": "iyonik-bilesik-adlandirma-q7",
+    "identity": "[\"iyonik-bilesik-adlandirma-q7\",\"Fe₃(PO₄)₂’de fosfat −3 yüklüdür. Her Fe aynı yükü taşıyorsa bileşiğin adı hangisidir?\",\"\",[\"Demir(III) fosfat\",\"Demir(I) fosfat\",\"Demir(III) fosfür\",\"Demir(II) fosfat\",\"Demir(II) sülfat\"],3,\"Üç Fe toplam +6 taşımalı, her Fe+2 olmalıdır. Doğru ad demir(II) fosfattır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Parantez dışındaki indis çok atomlu anyonun bütününü çoğaltır. Stock adında metalin yükü, toplam anyon yükünün eş yüklü metal iyonları arasında paylaşılmasından bulunur. Anyonun fosfat mı sülfat mı olduğu yükten bağımsız olarak atom bileşimiyle kontrol edilir."
+      ],
+      "strategy": "İki fosfat grubunun toplam negatif yükünü yaz. Bunu dengeleyecek pozitif toplamı üç Fe’ye eşit paylaştır; sonra hem Roma rakamını hem anyon adını ayrı denetle.",
+      "steps": [
+        "Her PO₄³⁻ grubu −3 taşır; iki fosfat toplam −6 yüktür. İyonun içindeki dört O bu grup yükünü ayrıca dörtle çarpmaz.",
+        "Üç eş yüklü Fe toplam +6 taşımalıdır; 3x−6=0’dan her Fe için x=+2 bulunur.",
+        "Fe yükü II, anyon PO₄³⁻ ise fosfat olduğundan doğru ad demir(II) fosfattır."
+      ],
+      "optionReasons": [
+        "Demir(III) alınırsa üç Fe toplam +9, iki fosfat −6 taşır ve +3 net yük kalır; nötr formüle uymaz.",
+        "Demir(I) için toplam +3−6=−3 kalır; üç Fe’nin her biri +1 olsa yük dengelenmez.",
+        "Fosfür P³⁻ iken verilen grup PO₄³⁻ fosfattır. Ayrıca Fe için III değil II yükü gerekir.",
+        "Doğru. İki fosfatın −6 yükünü üç Fe+2 dengeler; ad demir(II) fosfattır.",
+        "Sülfat SO₄²⁻ grubudur; formülde S değil P bulunduğu için Fe’nin II yükü doğru olsa bile anyon adı yanlıştır."
+      ],
+      "commonError": "Üç demir gördüğün için III yazma; Roma rakamı iyon adedinden değil her iyon başına düşen yükten bulunur.",
+      "check": "3(+2)+2(−3)=0 ve formül biriminde 3 Fe, 2 P, 8 O vardır. Yük ile grup içeriğinin iki ayrı kontrolü aynı adı destekler."
+    }
+  },
+  {
+    "id": "iyonik-bilesik-adlandirma-q8",
+    "identity": "[\"iyonik-bilesik-adlandirma-q8\",\"NH₄Cl için doğru ad hangisidir?\",\"\",[\"Azot tetraklorür\",\"Amonyum klorat\",\"Amonyum oksit\",\"Amonyak klor\",\"Amonyum klorür\"],4,\"NH₄⁺ amonyum, Cl⁻ klorürdür. Bileşik amonyum klorürdür; metal içermemesi iyonik adlandırmayı değiştirmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir tuzun adı, bütün katyon grubunun adıyla anyonun adını birleştirir. Çok atomlu katyon metal içermese de bu kural geçerlidir. Nötr molekül ile yüklü atom grubu aynı adla kullanılamaz; formüldeki H ve O varlığı da iyon kimliğini sınar."
+      ],
+      "strategy": "NH₄Cl’yi yüklü katyon ve anyon parçalarına ayır. Adların geri yazdırdığı formülleri denetle; H’yi düşüren veya formülde olmayan O ekleyen adları ele.",
+      "steps": [
+        "NH₄⁺ bir N ve dört H’den oluşan +1 yüklü katyondur; adı amonyumdur.",
+        "Cl⁻, klorür anyonudur; ClO₃⁻ kloratla veya O²⁻ oksitle aynı tür değildir.",
+        "Katyon adı önce yazılır: NH₄Cl amonyum klorürdür. Birer iyonun +1−1=0 yük dengesi formülle uyumludur."
+      ],
+      "optionReasons": [
+        "Azot tetraklorür N ile dört Cl oranını ima eder; verilen NH₄Cl’deki dört H’yi kaybeder ve Cl adedini yanlış değiştirir.",
+        "Amonyum klorat, ClO₃⁻ anyonunu gerektirir; verilen NH₄Cl’de bu üç oksijen yoktur.",
+        "Amonyum oksit adı oksit anyonunu gerektirir; formülde O değil Cl vardır ve anyon klorürdür.",
+        "Amonyak nötr NH₃, amonyum NH₄⁺’tan farklıdır. Klor atomu adı da Cl⁻ iyonunun klorür adını karşılamaz.",
+        "Doğru. NH₄⁺ amonyum ve Cl⁻ klorür adları katyon–anyon sırasıyla amonyum klorür adını verir."
+      ],
+      "commonError": "Amonyum ile amonyağı veya klorür ile kloratı aynı sayma; adın her parçasını atom bileşimine geri çevir.",
+      "check": "Amonyum klorür adından NH₄⁺ ve Cl⁻ yazıp birer grup birleştirince NH₄Cl geri elde edilir; H adedi dört ve O adedi sıfır kalır."
+    }
+  },
+  {
+    "id": "iyonik-bilesik-adlandirma-q9",
+    "identity": "[\"iyonik-bilesik-adlandirma-q9\",\"Al³⁺ ve SO₄²⁻ iyonlarından oluşan tuzun en küçük formülü hangisidir?\",\"\",[\"Al₂(SO₄)₃\",\"Al₃(SO₄)₂\",\"AlSO₄\",\"Al₂SO₄\",\"Al₃SO₄\"],0,\"İki Al³⁺ toplam +6 ve üç sülfat toplam −6 verir. SO₄ grubu korunarak Al₂(SO₄)₃ yazılır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Nötr tuz oranı toplam yükten, çok atomlu anyonun içeriği ise onun sabit formülünden gelir. İki yük büyüklüğünün ortak katı en küçük iyon adetlerini bulmaya yardım eder; parantez içindeki atom indisleri bu sırada değiştirilmez."
+      ],
+      "strategy": "Al³⁺ ve SO₄²⁻ için en küçük ortak yük büyüklüğünü bul. Kaç katyon ve kaç bütün sülfat gerektiğini belirle; aday formüllerin toplam yükünü bu aynı iyonlarla tekrar hesapla.",
+      "steps": [
+        "3 ve 2’nin en küçük ortak katı 6’dır; bu toplam için iki Al³⁺ ve üç SO₄²⁻ grubu gerekir.",
+        "İki katyon +6, üç sülfat −6 taşır. Üç grup, bütün SO₄’ü paranteze alıp dışına 3 yazarak gösterilir.",
+        "En küçük formül Al₂(SO₄)₃’tür. 2:3 oranı sadeleşmez ve sülfatın içindeki dört O korunur."
+      ],
+      "optionReasons": [
+        "Doğru. 2(+3)+3(−2)=0 olduğundan iki Al ve üç bütün sülfat grubu Al₂(SO₄)₃ formülünü verir.",
+        "Al₃(SO₄)₂ için +9−4=+5 kalır; nötrleştiren iyon adetleri ters yazılmıştır.",
+        "AlSO₄ için +3−2=+1 kalır; birer iyon farklı büyüklükteki yükleri dengelemez.",
+        "Al₂SO₄ için +6−2=+4 kalır; iki Al’ye karşı yalnız bir sülfat eksik negatif yük verir.",
+        "Al₃SO₄ için +9−2=+7 kalır; bu iyon adetleri nötr tuz oranı değildir."
+      ],
+      "commonError": "İyonların üst yüklerini aynı sembolün alt indisine kopyalama; önce toplam yükleri eşitle ve SO₄ grubunu bölmeden koru.",
+      "check": "Al₂(SO₄)₃’ü atom sayımıyla açınca 2 Al, 3 S ve 12 O bulunur. 3:12, her sülfattaki S:O=1:4 oranını korur; toplam yük de sıfırdır."
+    }
+  },
+  {
+    "id": "iyonik-bilesik-adlandirma-q10",
+    "identity": "[\"iyonik-bilesik-adlandirma-q10\",\"Ca²⁺ ve SO₄²⁻ iyonlarının nötr formülü neden CaSO₄’tür?\",\"\",[\"Sülfat içindeki 4 yok edilir\",\"İyon adetleri 1:1 olur; SO₄’ün iç yapısı korunur\",\"Ca’nın yükü 4’e çıkar\",\"SO₄ yalnız O atomudur\",\"Bütün indisler aynı sayıya çevrilir\"],1,\"Yükler 2 ve −2 olduğu için birer iyon yeterlidir. SO₄ içindeki 4 oksijen adedi değişmez; grup parçalanıp sadeleştirilmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Çok atomlu iyonların iki ayrı sayısı vardır: grubun dışarıdaki adedi ve grubun içinde atomların oranı. Tuzun yükleri sadeleşirken değişen dış iyon adetleridir; anyonun iç formülü sabit kalır. Aynı yüklü büyüklükteki katyon ve anyon birer tane ile nötrleşebilir."
+      ],
+      "strategy": "Ca²⁺ ile bütün SO₄²⁻ grubunun yüklerini birer iyon üzerinden topla. Gereken iyon oranını bulduktan sonra grubun iç O indisine hiç müdahale etmeden formülü yaz.",
+      "steps": [
+        "Bir Ca²⁺ ve bir SO₄²⁻ için +2−2=0 olur; iyon adetleri 1:1 yeterlidir.",
+        "SO₄’teki 4, sülfatın içindeki oksijen sayısıdır; iyonların yük oranını sadeleştirmek bu iç atom oranını değiştirmez.",
+        "Bir Ca ve bir sülfat CaSO₄ olarak yazılır. Yazılmayan dış grup adedi 1, iç oksijen indisi 4’tür."
+      ],
+      "optionReasons": [
+        "Sülfattaki 4’ü kaldırmak SO₄²⁻ iyonunu başka bir kükürt türüne dönüştürür; yük sadeleştirmesi atomları yok etmez.",
+        "Doğru. Bir Ca²⁺ ile bir SO₄²⁻ nötrleşir; 1:1 iyon oranı yazılırken sülfatın iç atom dizilimi aynen korunur.",
+        "Ca’nın verilen yükü +2’dir; formül oluşturmak bu iyonun yükünü +4’e yükselten işlem değildir.",
+        "SO₄ bir S ve dört O içerir; yalnız tek O atomuymuş gibi ele alınamaz.",
+        "Bütün indisleri eşitlemek iyon kimliklerini bozar; yük dengesinden bulunan dış oran ile sülfatın iç 1:4 oranı farklı bilgilerdir."
+      ],
+      "commonError": "Yüklerdeki 2’ler sadeleşti diye SO₄’ün 4’ünü de sadeleştirme; aynı sembol konumundaki bütün sayılar aynı tür nicelik değildir.",
+      "check": "CaSO₄’te 1 Ca, 1 S ve 4 O sayılır. CaS yazılsaydı yükler yine dengelenebilse bile sülfat yerine sülfür iyonu kullanılmış olurdu; bileşim denetimi bu hatayı yakalar."
+    }
+  },
+  {
+    "id": "eq-1",
+    "identity": "[\"eq-1\",\"Kimyasal dengede derişimlerin sabit olması neyi gösterir?\",\"\",[\"Tepkimelerin tamamen durduğunu.\",\"İleri ve geri tepkime hızlarının eşit olduğunu.\",\"Giren ve ürün derişimlerinin mutlaka eşit olduğunu.\"],1,\"Denge dinamiktir: iki yön sürer, hızları eşit olduğundan net derişim değişimi olmaz. Derişimler eşit olmak zorunda değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Derişim bir türün birim hacimdeki miktarıdır; bunun zamanla sabit kalması her taneciğin aynı biçimde durduğunu söylemez. Tersinir dönüşümlerde bir türü üreten ve tüketen olaylar birlikte değerlendirilir. Mikroskobik olayların sürmesiyle makroskobik net değişimin olmaması bağdaşabilir."
+      ],
+      "strategy": "Sorunun kimyasal dengeyi zaten verdiğini esas al. Türün üretilmesi ve tüketilmesinin net derişime etkilerini karşılaştır; buradan hızlar için çıkan koşulu, tür miktarlarının eşitliğiyle karıştırma.",
+      "steps": [
+        "Tersinir tepkimede ileri yönde bir tür tüketilirken geri yönde yeniden oluşabilir; iki dönüşümün ayrı varlığı derişimi tek başına belirlemez.",
+        "Kimyasal dengede net değişim olmadığı için ileri ve geri dönüşümlerin hızları birbirini dengeler; iki yönün hızları eşittir.",
+        "Sabit derişimler dinamik dengenin sonucudur. Tepkimelerin durması veya farklı türlerin derişimlerinin eşit olması gerekmez."
+      ],
+      "optionReasons": [
+        "Sabit makroskobik değer, moleküler dönüşümlerin tamamen durması değildir; dengede ileri ve geri olaylar birlikte sürer.",
+        "Doğru. Kimyasal dengede ileri ve geri tepkime hızları eşittir; net derişim değişimi bu nedenle sıfır olur.",
+        "Hızların eşitliği miktarların eşitliği değildir; farklı hız sabitleriyle farklı denge derişimleri aynı iki yön hızını sağlayabilir."
+      ],
+      "commonError": "Sabit ile eşit sözcüklerini ayır: bir derişimin kendi içinde zamanla değişmemesi, başka türün derişimiyle aynı olması anlamına gelmez.",
+      "check": "Bir zaman aralığında aynı sayıda ileri ve geri dönüşüm gerçekleşmesi net miktarı korur; bu sırada her iki yönde olaylar sürer. Bu düşünce kontrolü durma yorumunu dışlar."
+    }
+  },
+  {
+    "id": "eq-2",
+    "identity": "[\"eq-2\",\"Sabit sıcaklıkta, ideal gazların A(g) ⇌ B(g) homojen dengesinde [A]=1 mol/L ve [B]=2 mol/L’dir. Derişimler cinsinden denge sabiti Kc kaçtır?\",\"\",[\"0,5\",\"1\",\"2\"],2,\"Kc=2/1=2. Bu oran denge derişimleriyle hesaplanır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Derişim denge bağıntısı dengeli tepkimenin ürün ve giren türlerini kullanır; katsayılar bu terimlerin üsleridir. Bu soruda gaz fazları ve ideal homojen model açıkça verildiği için iki tür de derişim terimiyle yer alır. Başlangıç değil denge anındaki veriler kullanılmalıdır."
+      ],
+      "strategy": "Dengeli denklemde ürünle gireni doğru tarafa yerleştir; verilen denge derişimlerini kendi terimlerine koy. Bölmeyi yaptıktan sonra sonucu çarparak geri doğrula; oranı ters çevirmemeye dikkat et.",
+      "steps": [
+        "A(g) ⇌ B(g) denkleminde iki katsayı da 1’dir. Denge verileri [A]=1 mol/L ve [B]=2 mol/L olarak verilmiştir.",
+        "Ürün/giren oranı Kc=[B]/[A] olur; verilen değerlerle 2/1 hesaplanır.",
+        "Kc=2 bulunur. Aynı derişim birimleri 1:1 bağıntıda oran içinde sadeleşir; ters oran 0,5 olurdu."
+      ],
+      "optionReasons": [
+        "0,5=1/2, giren A’yı ürün B’ye bölen ters orandır; soruda yazılan A→B yönünün Kc’si değildir.",
+        "Kc=1, bu 1:1 modelde [A]=[B] olduğunda elde edilirdi; verilen 1 ve 2 derişimleri eşit değildir.",
+        "Doğru. Yazılı tepkime yönünde ürün B kesrin üstüne, giren A altına yazılır; [B]/[A]=2/1=2’dir."
+      ],
+      "commonError": "Denklemi ters çevirmeden oranı ters alma; Kc’nin hangi yazılı tepkime yönüne ait olduğunu koru.",
+      "check": "Bulunan Kc ile Kc×[A]=2×1=2 mol/L hesaplanır ve verilen [B] geri elde edilir; ters oran aynı geri kontrolü sağlamaz."
+    }
+  },
+  {
+    "id": "eq-3",
+    "identity": "[\"eq-3\",\"Dengeye henüz ulaşmamış, sabit sıcaklıklı A ⇌ B modelinde bir katalizör her iki yönün hız sabitini de üç katına çıkarıyor. Hangisi doğrudur?\",\"\",[\"Denge derişimleri ve Kc aynı kalır; dengeye yaklaşım hızlanır.\",\"Kc üç katına çıkar.\",\"Geri tepkime durur.\"],0,\"İki sabit de aynı oranda arttığı için Kc değişmez. İleri ve geri tepkimeler hızlanır; denge karışımı değişmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir kinetik modelde aynı durumdaki iki karşıt dönüşümün hızlarının aynı çarpanla büyütülmesi, onların birbirine oranını değiştirmez. Denge konumu ile o konuma ulaşmak için geçen süre ayrı niceliklerdir. Katalizörün dengeye etkisi yorumlanırken sıcaklık koşulu korunmalıdır."
+      ],
+      "strategy": "İki yeni hız sabitini eski sabitlerin ortak çarpanlı biçiminde yaz. Önce oranı, sonra bu orana ulaşma hızını ayrı değerlendir; daha hızlı yaklaşmayı daha fazla denge ürünü diye yorumlama.",
+      "steps": [
+        "Modelde yeni sabitler kileri′=3kileri ve kgeri′=3kgeri’dir; yalnız tek yönün değil ikisinin de büyüdüğü açıkça verilir.",
+        "Oranda 3kileri/(3kgeri)=kileri/kgeri olduğundan sabit sıcaklıktaki denge oranı ve Kc değişmez.",
+        "İki yönün dönüşümü hızlandığı için aynı denge karışımına daha çabuk yaklaşılır; denge derişimleri ve Kc aynı kalır."
+      ],
+      "optionReasons": [
+        "Doğru. Verilen ortak üç çarpanı oranı değiştirmez; aynı denge bileşimi korunurken dengeye yaklaşım hızlanır.",
+        "Kc’nin üç katına çıkması ortak çarpanı yalnız ileri yönde bırakır; geri sabit de üçe katlandığı için oran içinde sadeleşir.",
+        "Geri tepkime durmaz; soruda geri hız sabitinin de üç kat arttığı verilmiştir. Bir yönü sıfırlamak veriye aykırıdır."
+      ],
+      "commonError": "Hız sabitinin büyümesini doğrudan Kc’nin büyümesi sanma; bu modelde hem pay hem payda aynı oranda değişir.",
+      "check": "Eski denge durumunda vileri=vgeri ise yeni sabitlerle aynı derişimlerde 3vileri=3vgeri kalır. Böylece eski denge bileşiminin hâlâ denge koşulunu sağladığı bağımsız görülür."
+    }
+  },
+  {
+    "id": "eq-4",
+    "identity": "[\"eq-4\",\"A ⇌ B modeli başlangıçta yalnız B içeriyor. İlk anda v(ileri)=k(ileri)[A] ve v(geri)=k(geri)[B] için hangisi doğrudur?\",\"\",[\"İleri hız pozitif, geri hız sıfır.\",\"İki hız da sıfır.\",\"İleri hız sıfır, geri hız pozitif.\"],2,\"İleri hız A’ya bağlı olduğu için ilk anda sıfırdır. B bulunduğu için geri tepkime başlayabilir; zamanla A oluşur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Verilmiş bir hız yasasında derişim çarpanı sıfırsa o yöne ait hız sıfır olur. Bir tersinir tepkimeye yalnız ürünle başlanması, ürünün geri dönüşümle gireni oluşturmasına engel değildir. İlk an ile sonraki zamanlar ayrı değerlendirilmelidir."
+      ],
+      "strategy": "Yalnız B içerme bilgisini iki başlangıç derişimine çevir; sonra ileri ve geri hız yasalarına ayrı ayrı yerleştir. Daha sonra A oluşabilecek olmasını ilk andaki A varlığıyla karıştırma.",
+      "steps": [
+        "Başlangıç yalnız B olduğundan ilk anda [A]=0 ve [B]>0’dır; bu iki değer farklı hız yasalarına girecektir.",
+        "vileri=kileri×0=0 olur. Geri yönde B bulunduğu için vgeri=kgeri[B]>0’dır.",
+        "İleri hız sıfır, geri hız pozitiftir. Geri dönüşüm A üretmeye başladıktan sonra ileri hız da artabilir; bu sonraki durum ilk anın cevabını değiştirmez."
+      ],
+      "optionReasons": [
+        "İleri ve geri rolleri ters çevrilmiştir; ilk anda ileri yolun kullandığı A yok, geri yolun kullandığı B vardır.",
+        "İleri hız sıfırdır fakat B mevcut olduğu için verilen geri hız yasası sıfır vermez; iki hızın da durduğu sonucuna ulaşılamaz.",
+        "Doğru. [A]=0 ileri hızı sıfırlar; pozitif [B], modelde geri dönüşümün ilk anda başlamasını sağlar."
+      ],
+      "commonError": "Tepkimenin A⇌B diye yazılmasını mutlaka A ile başlandığı sanma; başlangıç bileşimi ayrı verilen fiziksel bilgidir.",
+      "check": "1:1 modelde ilk net A oluşum hızı vgeri−vileri pozitiftir. Bu, yalnız B ile başlayınca A’nın zamanla oluşabilmesiyle ve seçilen ilk hızlarla tutarlıdır."
+    }
+  },
+  {
+    "id": "eq-5",
+    "identity": "[\"eq-5\",\"Sabit sıcaklıkta, ideal gazların A(g) ⇌ B(g) homojen dengesi için Kc=2 ve toplam denge derişimi [A]+[B]=6 mol/L’dir. Denge karışımı hangisidir?\",\"\",[\"[A]=3, [B]=3\",\"[A]=4, [B]=2\",\"[A]=2, [B]=4\"],2,\"[A]+2[A]=6 olduğundan [A]=2, [B]=4 mol/L. Hem toplam 6 hem [B]/[A]=2 sağlanır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir denge oranı tek başına her türün mutlak derişimini belirlemez; ayrıca toplam miktar veya benzeri bir korunum verisi gerekir. Bu 1:1 ideal homojen gaz modelinde seçenekler hem verilen toplamı hem denge oranını sağlamalıdır; yalnız bir koşula uymak yetmez."
+      ],
+      "strategy": "Üç adayı önce toplam derişim koşulundan, sonra ürün/giren oranından geçir. Aynı toplamı sağlayan adaylar kaldığında onları yalnız Kc koşuluyla ayır ve seçileni iki koşula birlikte geri yerleştir.",
+      "steps": [
+        "Üç seçeneğin de [A]+[B] toplamı 6 mol/L’dir; yalnız toplamı kontrol etmek doğru adayı ayıramaz.",
+        "A ⇌ B için [B]/[A] oranları adaylarda sırasıyla 3/3=1, 2/4=0,5 ve 4/2=2 olur.",
+        "Kc=2’yi de sağlayan tek aday [A]=2, [B]=4 mol/L’dir; toplamı 6 ve oranı 2 birlikte sağlanır."
+      ],
+      "optionReasons": [
+        "[A]=3 ve [B]=3 toplam 6’yı sağlar, fakat [B]/[A]=1 olur; denge sabiti 2 koşulu sağlanmaz.",
+        "[A]=4 ve [B]=2 için toplam doğru olsa da [B]/[A]=0,5’tir; Kc’nin yönü ters çevrilmiştir.",
+        "Doğru. [A]=2, [B]=4 için hem 2+4=6 mol/L hem 4/2=2 denge oranı elde edilir."
+      ],
+      "commonError": "Toplamı ikiye bölüp eşit derişimler varsayma; dengede eşitlik hızlara aittir, verilen Kc farklı tür derişimlerini farklı yapabilir.",
+      "check": "Aynı sonuç denklemle de bulunur: [B]=2[A] ve toplam 6 olduğundan 3[A]=6, [A]=2 ve [B]=4 mol/L. Seçenek elemesiyle bağımsız cebir yolu uyuşur."
+    }
+  }
+]

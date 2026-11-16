@@ -81,6 +81,7 @@ import { forge012TurkishCheatSheets } from "./forge012Turkish";
 import { lessonById, lessons } from "../domain/content";
 import { lessonTopic, studyTopicById } from "../domain/studyPlan";
 import { lessonGuides } from "./guides";
+import { clarifiedGuideView } from "./guidePresentation028";
 import { narrativeById } from "./narratives";
 import { physicsCheatSheets } from "./physicsCheatSheets";
 
@@ -208,7 +209,7 @@ function lessonSheet(id: string): CheatSheet | undefined {
     title: lesson.title.tr,
     subjectId: lesson.subjectId,
   };
-  const guide = lessonGuides.get(id),
+  const guide = clarifiedGuideView(lessonGuides.get(id)),
     narrative = narrativeById.get(id),
     reviewed = physicsCheatSheets.find((sheet) => sheet.topicId === topic.id);
   const firstQuestion = lesson.questions[0];

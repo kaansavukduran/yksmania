@@ -1,0 +1,582 @@
+[
+  {
+    "id": "a1",
+    "identity": "[\"a1\",\"ATP’nin yapısında hangi şeker bulunur?\",\"\",[\"Deoksiriboz\",\"Riboz\",\"Glikoz\"],1,\"ATP’de adenin bazı, riboz ve üç fosfat vardır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Nükleotit yapısında azotlu baz, beş karbonlu şeker ve fosfat bileşenleri ayırt edilir. Bazın adı, şekerin adı değildir; fosfat sayısı da şekerin karbon sayısını göstermez.",
+        "Riboz ile deoksiriboz birer pentozdur; deoksiribozda riboza göre bir oksijen daha az bulunur. Glikoz ise altı karbonlu bir monosakkarittir."
+      ],
+      "strategy": "ATP kısaltmasını molekülün parçalarına aç; şeker seçimini bazdan ve uçtaki fosfatlardan bağımsız denetle.",
+      "steps": [
+        "ATP’nin açılımı adenozin trifosfattır. Adenozin baz ile şekeri, trifosfat ise üç fosfatı belirtir; aranan parça fosfat değildir.",
+        "Adenozini oluşturan iki bileşen adenin ve ribozdur. Bu nedenle ATP’nin şeker bileşeni riboz olarak belirlenir.",
+        "Deoksiribozu DNA nükleotidiyle, glikozu altı karbonlu besin şekeriyle karşılaştır: ikisi de ATP’deki adenozinin şekerini karşılamaz."
+      ],
+      "optionReasons": [
+        "Yanlış. Deoksiriboz standart DNA nükleotitlerinin pentozudur; ATP’deki adenozin birimi bu şekeri değil ribozu içerir.",
+        "Doğru. ATP’nin adenozin kısmı adenin ve ribozdan oluşur; üç fosfatın bağlanması bu şekerin kimliğini değiştirmez.",
+        "Yanlış. Glikoz altı karbonludur. ATP’nin yapısındaki şeker beş karbonlu bir pentoz olduğundan glikoz bu bileşen olamaz."
+      ],
+      "commonError": "ATP sentezine enerji sağlayabilen glikozu ATP molekülünün yapısındaki şeker sanmak; enerji kaynağı ile molekül bileşenini karıştırmak.",
+      "check": "Adenin + seçtiğin şeker birlikteliğinin adenozin adını vermesini denetle. ADP ve AMP’ye geçildiğinde de aynı şeker korunur; yalnız fosfat sayısı değişir."
+    }
+  },
+  {
+    "id": "a2",
+    "identity": "[\"a2\",\"Protein sentezi hangi gruptadır?\",\"\",[\"Anabolizma\",\"Katabolizma\",\"Hidroliz\"],0,\"Amino asitlerden protein yapımı anabolik bir olaydır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Metabolik sınıflandırmada başlangıç maddeleri ile ürünlerin yapısal ilişkisi önemlidir. Bir makromolekülün kurulması ile onun bileşenlerine ayrılması ters yönlü dönüşümlerdir.",
+        "Hidrolizde su kullanılarak bir bağın ayrılması incelenir. Bir olayın enerjiyle ilişkili olması tek başına onun yapım mı yıkım mı olduğunu belirlemez."
+      ],
+      "strategy": "Olayı “hangi birimler hangi ürüne dönüşüyor?” biçiminde yaz; sonra dönüşüm yönünü metabolizma sınıfına bağla.",
+      "steps": [
+        "Protein sentezinde ayrı amino asitler belirli sırayla bir polipeptit zincirine katılır; ürün, bu küçük birimlerin oluşturduğu büyük yapıdır.",
+        "Buradaki yön proteinin amino asitlere parçalanması değildir. Bu nedenle yıkım ve suyla bağ ayırma sınıfları olayın yönünü karşılamaz.",
+        "Küçük birimlerden büyük yapı kurulması yapım, yani anabolizma olarak adlandırılır. Protein sentezi bu sınıfa girer."
+      ],
+      "optionReasons": [
+        "Doğru. Amino asitlerin protein zincirine katılması bir yapım olayıdır; bu yüzden anabolizma sınıfındadır.",
+        "Yanlış. Katabolizma parçalama yönünü belirtir. Protein sentezinde mevcut protein küçük birimlerine ayrılmıyor, yeni zincir kuruluyor.",
+        "Yanlış. Hidroliz su kullanılarak bağ ayırır; protein sentezinin verilen küçük birimlerden zincir oluşturma yönünün adı değildir."
+      ],
+      "commonError": "Proteinlerin sindirilebilmesinden hareketle proteinle ilgili her olayı yıkım saymak; sentez ile hidrolizin yönlerini ayırmamak.",
+      "check": "Olayı tersine çevirip proteinin amino asitlere ayrılmasını düşün. Sınıfın değişmesi gerekir; her iki yöne de aynı adı veriyorsan başlangıç–ürün ayrımını yeniden kur."
+    }
+  },
+  {
+    "id": "a3",
+    "identity": "[\"a3\",\"ETS zorunlu olmadan ATP oluşturabilen yol hangisidir?\",\"\",[\"Oksidatif fosforilasyon\",\"Fotofosforilasyon\",\"Substrat düzeyinde fosforilasyon\"],2,\"Substrat düzeyinde fosforilasyon, fosfatı organik ara üründen ADP’ye aktarır.\"]",
+    "guidance": {
+      "knowledge": [
+        "ADP’nin fosfat alarak ATP’ye dönüşmesine fosforilasyon denir. Bu işlemde fosfatın doğrudan nereden geldiği ve enerji aktarım düzeneği, fosforilasyon türlerini ayırt eder.",
+        "Elektron taşıma sistemi (ETS), zar üzerindeki elektron aktarım basamaklarıdır. ETS ile kurulan proton gradyanını ATP sentazın kullanması, bir organik molekülün fosfatını doğrudan aktarmasından farklı bir mekanizmadır."
+      ],
+      "strategy": "Üç yolun adını oksijen varlığına göre ezberlemek yerine her birinde ETS’nin mekanizmanın zorunlu parçası olup olmadığını karşılaştır.",
+      "steps": [
+        "Oksidatif fosforilasyonda elektronların ETS boyunca aktarılması proton gradyanıyla ATP sentezine bağlanır; ETS bu yolun parçasıdır.",
+        "Fotofosforilasyonda ışıkla uyarılan elektron akışı ve fotosentetik zar üzerindeki ETS değerlendirilir. Işık kullanılması ETS gereksinimini ortadan kaldırmaz.",
+        "Substrat düzeyinde fosforilasyonda uygun fosfatlı organik ara ürün fosfatını ADP’ye doğrudan aktarır. Bu basamak için ETS zorunlu olmadığından istenen yol budur."
+      ],
+      "optionReasons": [
+        "Yanlış. Oksidatif fosforilasyonun elektron aktarımı ETS üzerinden yürür; ETS olmadan gerçekleşebilen doğrudan fosfat aktarım yolu değildir.",
+        "Yanlış. Fotofosforilasyonda ışık ilk enerji kaynağıdır; ancak fotosentetik elektron aktarım sistemi yine mekanizmaya katılır.",
+        "Doğru. Substrat düzeyinde fosforilasyon fosfatı organik ara üründen ADP’ye doğrudan aktarabilir; bu aktarımın işlemesi için ETS gerekmez."
+      ],
+      "commonError": "Işıkla ATP yapılmasını ETS kullanılmaması sanmak veya bir hücrede oksijen bulunmasını o hücredeki bütün ATP’nin oksidatif yolla oluştuğuna kanıt saymak.",
+      "check": "Glikolizdeki fosfat aktarımını düşün: ilgili basamak sitozolde doğrudan ADP’ye fosfat verebilir. Bu örneği açıklamak için zar boyunca elektron akışı eklemen gerekmiyorsa seçimin koşulla uyumludur."
+    }
+  },
+  {
+    "id": "a4",
+    "identity": "[\"a4\",\"“Oksijen yoksa ATP üretilemez.” ifadesi neden yanlıştır?\",\"\",[\"ATP yalnız bitkilerde üretilir.\",\"Substrat düzeyinde fosforilasyon oksijensiz de gerçekleşebilir.\",\"ATP enerji gerektirmez.\"],1,\"Glikolizde substrat düzeyinde ATP sentezi oksijen gerektirmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "ATP sentezi enerji girdisi gerektirir; hücre bu enerjiyi farklı dönüşümlere eşleyebilir. Oksijenin belirli bir yoldaki görevi ile ATP sentezinin genel enerji gereksinimi aynı ölçüt değildir.",
+        "“Hiç üretilemez” biçimindeki evrensel bir yargıyı çürütmek için onun koşulunda gerçekleşebilen tek bir gerçek ATP sentez örneği yeterlidir."
+      ],
+      "strategy": "Oksijensiz koşulda ATP sentezine izin veren bir karşı örnek ara; canlı grubunu veya enerji korunumu ilkesini değiştiren iddiaları gerekçe olarak kullanma.",
+      "steps": [
+        "İddia bütün ATP sentez yollarını oksijene bağımlı sayıyor. Çürütme için oksijeni doğrudan kullanmadan ATP sağlayan bir basamak göstermelisin.",
+        "Glikolizin bazı basamaklarında organik ara üründen ADP’ye fosfat aktarılır. Bu substrat düzeyinde ATP sentezi oksijen gerektirmez.",
+        "Böylece oksijensiz de gerçekleşebilen substrat düzeyinde fosforilasyon iddiayı çürütür. ATP’yi yalnız bitkilere bağlamak veya ATP sentezinin enerji istemediğini söylemek bu kanıtı vermez."
+      ],
+      "optionReasons": [
+        "Yanlış. ATP yalnız bitkilerde üretilmez; hayvanlar ve prokaryot canlılar da ATP sentezler. Bu tür sınırlaması oksijensiz üretimi açıklamaz.",
+        "Doğru. Glikolizdeki substrat düzeyinde fosforilasyon oksijensiz koşulda da ATP sağlayabilir; bu tek karşı örnek genel yasağı çürütür.",
+        "Yanlış. ATP’nin ADP ve fosfattan yeniden sentezi enerji ister. Oksijenin zorunlu olmaması enerji girdisinin gereksiz olduğu anlamına gelmez."
+      ],
+      "commonError": "Oksijenli solunumdaki son elektron alıcısını bütün ATP sentezlerinin zorunlu maddesi sanmak ve oksijen gerektirmemeyi enerjisiz sentezle eşitlemek.",
+      "check": "Önerdiğin gerekçenin hem “oksijen yok” hem “ATP oluşuyor” koşullarını birlikte karşılayıp karşılamadığına bak. Glikolizdeki doğrudan fosfat aktarımı ikisini aynı anda sağlar."
+    }
+  },
+  {
+    "id": "a5",
+    "identity": "[\"a5\",\"Büyüyen bir hücre için hangisi doğrudur?\",\"\",[\"Yalnız yapım olur.\",\"Yapım ve yıkım birlikte sürer.\",\"ATP tüketimi durur.\"],1,\"Büyüme, katabolizmanın durduğu anlamına gelmez; enerji dönüşümleri sürer.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir hücrenin büyümesi net madde birikimini anlatır. Net artış, madde giriş ve yapımının toplamının tüketim ve yıkımdan fazla olmasıyla bağdaşır; tek bir akışın varlığını göstermez.",
+        "Biyosentez için yapı taşları, uygun enzimler ve enerji gerekir. ATP hücrede kullanılan ve yeniden sentezlenen bir enerji aktarım molekülüdür."
+      ],
+      "strategy": "Net büyümeyi bütün tepkimelerin tek yönde işlemesiyle eşitleme; hücrenin yapı taşı ve enerji gereksinimini aynı açıklamada karşılayan seçeneği ara.",
+      "steps": [
+        "Büyüyen hücre yeni proteinler ve başka bileşenler kurar. Bu, yapım tepkimelerinin sürmesini gerektirir.",
+        "Yeni yapıların kurulması sırasında enerji dönüşümleri, molekül yenilenmesi ve bazı maddelerin parçalanması da sürebilir; büyüme bunların durduğunu göstermez.",
+        "Bu nedenle yapım ve yıkımın birlikte sürmesi büyümeyle uyumludur. “Yalnız yapım” ve “ATP tüketimi durur” ifadeleri hücrenin devam eden gereksinimlerini dışlar."
+      ],
+      "optionReasons": [
+        "Yanlış. Yapımın net olarak baskın olması yıkımın sıfır olduğu anlamına gelmez; hücre büyürken enerji dönüşümü ve molekül yenilenmesi de sürer.",
+        "Doğru. Yapım ve yıkım aynı hücrede birlikte yürüyebilir; yapımın net katkısı fazla olduğunda hücre büyüyebilir.",
+        "Yanlış. Büyüme ve biyosentez enerji ister; ATP tüketiminin durması bu faaliyetlerin sürmesiyle bağdaşan genel bir sonuç değildir."
+      ],
+      "commonError": "Net büyümeyi yıkım hızının sıfır olması sanmak; toplam miktardaki değişimden bütün tekil tepkimelerin yönünü çıkarmaya çalışmak.",
+      "check": "Salt mantık örneği kur: aynı sürede 3 birim yapı kurulup 1 birim yıkılsa net 2 birim artış vardır. Hem büyüme hem yıkım bulunduğu için “yalnız yapım” zorunlu değildir."
+    }
+  },
+  {
+    "id": "cell-1",
+    "identity": "[\"cell-1\",\"Zarlı organelleri olmayan bir hücre protein sentezliyor. Bu işi hangi yapı yapar?\",\"\",[\"Golgi aygıtı\",\"Ribozom\",\"Kloroplast\"],1,\"Ribozom zarsızdır ve protein sentezler. Prokaryotlarda da bulunur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Protein sentezinde amino asitler mRNA bilgisine göre bir polipeptit zincirine bağlanır. Ürünün yapımı ile sonradan işlenip paketlenmesi farklı görevlerdir.",
+        "Zar, hücre içindeki bir bölmeyi sınırlar; bir yapının işlev görebilmesi her zaman çevresinde zar bulunmasını gerektirmez. Prokaryotlarda da protein üretimi gerçekleşir."
+      ],
+      "strategy": "Adayı iki süzgeçten geçir: gerçekten amino asit zinciri kuruyor mu ve zarlı organel yokluğu koşuluna uyuyor mu?",
+      "steps": [
+        "Verilen olay yeni protein zincirinin kurulmasıdır; yalnız hazırlanmış bir proteinin paketlenmesi aranmıyor.",
+        "Ribozom mRNA’yı kullanarak amino asitleri birleştirir ve zarsızdır. Böylece hem işlev hem yapı koşulunu karşılar.",
+        "Golgi zarlı bir işleme/paketleme yapısı, kloroplast ise zarlı bir fotosentez organelidir. Bu adaylar verilen hücre koşulunda protein sentez yerinin karşılığı olamaz."
+      ],
+      "optionReasons": [
+        "Yanlış. Golgi zarlı bir organeldir ve proteinlerin işlenip sınıflandırılmasına katılır; amino asit zincirini sentezleyen yapı değildir.",
+        "Doğru. Ribozom zarsızdır ve protein sentezler. Zarlı organelleri olmayan prokaryot bir hücre de ribozomuyla bu işi yapabilir.",
+        "Yanlış. Kloroplast çift zarlı bir fotosentez organelidir. Kendi ribozomları bulunabilse de soruda zarlı organel yoktur; protein zincirini kuran yapı ribozomdur."
+      ],
+      "commonError": "Salgıyla ilişkili olduğu için Golgi’yi protein zincirini üreten yer sanmak veya zarlı organel yokluğunda protein sentezinin de olamayacağını düşünmek.",
+      "check": "Seçtiğin yapı prokaryot bir hücrede de protein sentezini açıklayabilmeli. Bunun için çekirdek, ER veya başka zarlı bir organel eklemek zorunda kalıyorsan verilen koşulu aşmışsındır."
+    }
+  },
+  {
+    "id": "cell-2",
+    "identity": "[\"cell-2\",\"Salgılanacak bir proteinin işlenmesi ve paketlenmesinde en uygun sıra hangisidir?\",\"\",[\"Golgi → kloroplast → çekirdek\",\"Mitokondri → hücre duvarı\",\"Granüllü ER → Golgi → salgı vezikülü\"],2,\"ER’de işlenen protein veziküllerle Golgi’ye taşınır; Golgi’de sınıflandırılıp salgı veziküllerine paketlenebilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hücre dışına gönderilecek birçok protein önce sentezlenir, ardından katlanma ve kimyasal işleme basamaklarından geçer; hedefe uygun keseciklerle taşınabilir. Sentez, sınıflandırma ve dışarı verme ayrı işlerdir.",
+        "Vezikül zarla çevrili bir taşıma keseciğidir. Uygun salgı vezikülünün hücre zarıyla birleşmesi içerikteki proteinin ekzositozla dışarı verilmesini sağlayabilir."
+      ],
+      "strategy": "Seçenekleri bir güzergâh gibi denetle: ilk işlenme durağı, sınıflandırma/paketleme durağı ve dışarı taşıyan kesecik sırasını koru.",
+      "steps": [
+        "Granüllü ER’ye bağlı ribozomlarda sentezlenen salgı yolu proteinleri ER’de işlenir; buradan taşıma vezikülleriyle sonraki durağa gönderilebilir.",
+        "Golgi ER’den gelen ürünü değiştirir, sınıflandırır ve uygun salgı veziküllerine yönlendirir. Bu nedenle Golgi, ER’den sonra yer almalıdır.",
+        "Salgı vezikülü dışarı verme için taşıyıcıdır. Üç işlevi doğru sırada birleştiren yol granüllü ER → Golgi → salgı vezikülüdür; kloroplast veya hücre duvarı bu basamakların yerine geçmez."
+      ],
+      "optionReasons": [
+        "Yanlış. Golgi’den kloroplasta ve çekirdeğe giden bu sıra, salgı proteininin ER’den başlayıp dışarı yönlendirildiği işleme ve paketleme yolunu vermez.",
+        "Yanlış. Mitokondri ATP dönüşümleriyle, hücre duvarı dış destekle ilişkilidir; ikisi salgı proteinini işleyip veziküle paketleyen sıralı duraklar değildir.",
+        "Doğru. Granüllü ER’deki ilk işlemeyi Golgi’de sınıflandırma ve paketleme izleyebilir; salgı vezikülü ürünü dışarı verme yolunda taşır."
+      ],
+      "commonError": "Golgi’yi amino asit zincirini sıfırdan üreten yapı saymak veya hücre dışındaki hücre duvarını hücre içi paketleme durağı olarak kullanmak.",
+      "check": "Her oka bir taşıma anlamı ver: ER ürünü Golgi’ye ulaşmalı, Golgi’den çıkan paket dışarı yönelmelidir. Bu kontrol bütün hücre proteinlerinin aynı güzergâhı izlediği iddiasını gerektirmez."
+    }
+  },
+  {
+    "id": "cell-3",
+    "identity": "[\"cell-3\",\"Yeşil bir bitki hücresinde hangi iki organel birlikte bulunabilir?\",\"\",[\"Mitokondri ve kloroplast\",\"Yalnız kloroplast; mitokondri olamaz\",\"Hücre duvarı ve ribozom\"],0,\"Yeşil bitki hücreleri fotosentez ve hücresel solunumla ilişkili iki organeli birlikte taşıyabilir. Hücre duvarı organel değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Fotosentez ışık enerjisinin organik madde oluşumuna bağlanmasıyla, hücresel solunum ise besinlerdeki enerjinin kullanılabilir biçimlere aktarılmasıyla ilişkilidir. Bu görevler birbirinin varlığını zorunlu olarak dışlamaz.",
+        "Hücre duvarı zarın dışında destek sağlayan bir yapıdır; hücrede bulunması onu organel sınıfına sokmaz. Ribozom ise zarsız bir organeldir."
+      ],
+      "strategy": "Hem bitki hücresinin enerji dönüşümlerini hem de “iki organel” koşulunu denetle; yalnız bitkide bulunabilen iki yapı seçmek yetmez.",
+      "steps": [
+        "Yeşil, fotosentetik bitki hücresinde kloroplast bulunabilir; klorofil taşıyan bu organel fotosentezle ilişkilidir.",
+        "Aynı hücre besinleri hücresel solunumda da kullanabilir ve mitokondri taşıyabilir. Fotosentez yapması mitokondriyi dışlamaz.",
+        "Mitokondri–kloroplast çifti iki organelden oluşur. Hücre duvarı–ribozom seçeneğinde ise yalnız ribozom organeldir; bu çift istenen sınıfı karşılamaz."
+      ],
+      "optionReasons": [
+        "Doğru. Fotosentetik bir bitki hücresi hem kloroplast hem mitokondri taşıyabilir; fotosentez ve solunum aynı hücrede bulunabilir.",
+        "Yanlış. Kloroplastın bulunması mitokondrinin olamayacağını göstermez. Bitki hücreleri de hücresel solunum yapabilir.",
+        "Yanlış. Hücre duvarı ve ribozom bir bitki hücresinde birlikte bulunabilse de hücre duvarı organel değildir; soru iki organel istemektedir."
+      ],
+      "commonError": "Bitkinin fotosentez yapmasını solunum yapmaması sanmak veya hücrede bulunan her yapıyı organel olarak sınıflandırmak.",
+      "check": "Yanıtındaki iki yapının görevini ayrı söyle ve ikisine de organel adını doğru verebildiğini denetle. “Birlikte bulunabilir” ifadesi her bitki hücresinde aynı çiftin zorunlu olduğunu söylemez."
+    }
+  },
+  {
+    "id": "cell-4",
+    "identity": "[\"cell-4\",\"Hücre zarındaki çift katlı lipit tabakası ne anlama gelir?\",\"\",[\"Mitokondrideki gibi iki ayrı zar\",\"Bir zar içindeki iki lipit katmanı\",\"Zarsız bir organel\"],1,\"Lipit çift tabakası bir hücre zarının yapısıdır; iki ayrı zar demek değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Fosfolipitlerin suyla etkileşen başları ve sudan kaçınan kuyrukları vardır. Sulu ortamlar arasında başlar dış yüzeylere, kuyruklar birbirine dönük yerleşerek lipit çift tabakasını oluşturur."
+      ],
+      "strategy": "Saydığın birimin lipit katmanı mı yoksa ayrı biyolojik zar mı olduğunu açık tut; iki terimi aynı sayıymış gibi kullanma.",
+      "steps": [
+        "Verilen iki katman, fosfolipitlerin karşılıklı yerleşen iki yaprağıdır: başlar iki sulu yüzeye, kuyruklar orta bölgeye bakar.",
+        "Bu iki lipit katmanı birlikte tek biyolojik zarın temelini kurar. Hücre zarındaki “çift tabaka” bu iç düzeni anlatır.",
+        "Mitokondrinin iç ve dış zarları ise iki ayrı biyolojik zardır; her birinin lipit çift tabakası vardır. Dolayısıyla sorudaki ifade bir zar içindeki iki lipit katmanını anlatır."
+      ],
+      "optionReasons": [
+        "Yanlış. Mitokondride iç ve dış olmak üzere iki ayrı zar vardır. Hücre zarındaki iki lipit katmanını bu iki ayrı zarla eşitlemek ölçekleri karıştırır.",
+        "Doğru. Fosfolipitlerin iki karşılıklı katmanı birlikte bir biyolojik zar oluşturur; “çift katlı lipit tabakası” bu düzeni ifade eder.",
+        "Yanlış. Soruda doğrudan hücre zarının yapısı anlatılıyor; iki lipit katmanı bulunması zarsız bir organel tanımı değildir."
+      ],
+      "commonError": "Her “çift” sözcüğünü iki ayrı zar saymak; bir zarın kendi lipit katmanlarını organelin iç ve dış zarlarıyla karıştırmak.",
+      "check": "Bir ER zarı da lipit çift tabakası içerir ama ER tek zarlı gruptadır. Bu örnek, iki lipit katmanının iki ayrı zar anlamına gelmediğini bağımsız olarak denetler."
+    }
+  },
+  {
+    "id": "cell-5",
+    "identity": "[\"cell-5\",\"“Bütün bitki hücreleri kloroplast taşır.” yargısı için hangisi doğrudur?\",\"\",[\"Doğrudur; hücre duvarı bunu gerektirir.\",\"Doğrudur; mitokondri yoktur.\",\"Yanlıştır; kök gibi bazı hücrelerde bulunmayabilir.\"],2,\"Kloroplast her bitki hücresinde bulunmak zorunda değildir. Şema tek başına tüm hücreleri temsil etmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bitki dokularındaki hücreler farklı işlerde özelleşebilir. Plastitler de fotosentez, pigment taşıma veya depo işlevleriyle farklılaşan biçimler alabilir; hücre duvarı bu işlevlerin hangisinin yapıldığını tek başına belirlemez."
+      ],
+      "strategy": "“Bütün” yargısını tek bir gerçek hücre tipiyle sınamayı seç; kloroplastı bitkiye ait her yapının değişmez parçası sayma.",
+      "steps": [
+        "İddia istisnasız her bitki hücresinde kloroplast bulunmasını gerektiriyor. Onu değerlendirmek için fotosentetik olmayan bir dokuya bakılabilir.",
+        "Toprak altındaki birçok kök hücresi kloroplast taşımaz; farklı plastitler veya depo yapıları bulunabilir. Bu durum “bütün hücreler” iddiasına karşı örnektir.",
+        "Hücre duvarının bulunması kloroplastı zorunlu kılmaz; ayrıca bitki hücrelerinde mitokondri bulunabilir. Bu nedenle yalnız koşullu kök karşı örneğini veren seçenek uygundur."
+      ],
+      "optionReasons": [
+        "Yanlış. Selülozlu hücre duvarı bir destek yapısıdır; varlığı her hücrenin kloroplastla fotosentez yapmasını gerektirmez.",
+        "Yanlış. Bitki hücrelerinde mitokondri bulunabilir; mitokondrinin yokluğuyla bütün bitki hücrelerine kloroplast zorunluluğu getirilemez.",
+        "Doğru. Birçok kök hücresinde kloroplast bulunmayabilir. Tek bir geçerli karşı örnek bile bütün bitki hücrelerini kapsayan iddiayı çürütür."
+      ],
+      "commonError": "Tipik yeşil yaprak hücresi çizimini kök, depo ve diğer bütün bitki hücrelerinin zorunlu organel listesi sanmak.",
+      "check": "Sonucun kapsamını koru: “Bazı kök hücrelerinde kloroplast bulunmayabilir” yargısı yeterlidir. Bunu “Hiçbir kök hiçbir koşulda kloroplast taşımaz” gibi yeni bir mutlak iddiaya çevirme."
+    }
+  },
+  {
+    "id": "dna-1",
+    "identity": "[\"dna-1\",\"Bir DNA molekülü bir kez yarı korunumlu eşleniyor. Oluşan her DNA için hangisi doğrudur?\",\"\",[\"İki zinciri de tamamen eskidir.\",\"Bir eski ve bir yeni zincir içerir.\",\"İki zinciri de tamamen yenidir.\"],1,\"Her atasal zincirin karşısında yeni bir tamamlayıcı zincir oluşur. İki yavru DNA’nın her birinde bir eski, bir yeni zincir vardır.\"]",
+    "guidance": {
+      "knowledge": [
+        "DNA’daki iki polinükleotit zinciri karşılıklı baz eşleşmeleri taşır. Bir zincirin baz sırası, uygun eşlenme koşullarında tamamlayıcı yeni sıranın kurulmasında kalıp olarak kullanılabilir."
+      ],
+      "strategy": "İki atasal zincire ayrı işaret verip eşlenme sonunda her işaretin hangi yeni molekülde kaldığını izle; eski ve yeni molekül sayılarını birbirine karıştırma.",
+      "steps": [
+        "Başlangıç DNA’sındaki iki atasal zinciri E₁ ve E₂ diye ayır. Eşlenme sırasında bu iki zincir ayrı kalıplar hâline gelir.",
+        "E₁’in karşısına yeni Y₁, E₂’nin karşısına yeni Y₂ zinciri sentezlenir. Sonuçta iki ayrı çift oluşur: E₁–Y₁ ve E₂–Y₂.",
+        "İki sonucun her biri bir atasal ve bir yeni zincir içerir. İki eskiyi tek molekülde bırakmak ya da her iki yavruyu tamamen yeni saymak yarı korunumlu dağılımı karşılamaz."
+      ],
+      "optionReasons": [
+        "Yanlış. İki atasal zincir ayrı kalıplar olduğundan bir yavru DNA’da iki eski zincir birlikte tutulmaz; bu yarı korunumlu eşlenme değildir.",
+        "Doğru. Bir tam yarı korunumlu eşlenme sonunda her yavru DNA bir atasal zincir ile onun karşısında sentezlenen bir yeni zinciri taşır.",
+        "Yanlış. Başlangıçtaki zincirler sonuç moleküllerinde korunur; oluşan her DNA’nın iki zincirinin de tamamen yeni olması beklenmez."
+      ],
+      "commonError": "Yeni DNA molekülü oluşmasını o moleküldeki bütün nükleotitlerin yeni sentezlendiği sanmak; molekülün yeniliğiyle zincirin yaşını eşitlemek.",
+      "check": "İki yavru DNA’nın zincirlerini birlikte say: toplam dört zincirin ikisi atasal, ikisi yeni olmalıdır. Seçtiğin dağılım başlangıçtaki iki atasal zinciri kaybetmemelidir."
+    }
+  },
+  {
+    "id": "dna-2",
+    "identity": "[\"dna-2\",\"Üst zincir soldan sağa 5′–ATGC–3′. Tamamlayıcı alt zincir aynı hizada nasıl yazılır?\",\"\",[\"5′–TACG–3′\",\"3′–ATGC–5′\",\"3′–TACG–5′\"],2,\"A’nın karşısına T, T’nin karşısına A, G’nin karşısına C, C’nin karşısına G gelir. Karşılıklı zincirler antiparaleldir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Standart DNA’da A–T ve G–C tamamlayıcı çiftlerdir. Antiparalellik ise karşılıklı zincirlerin uç yönlerinin ters olmasıdır; baz eşlemesi ile yön etiketleri iki ayrı denetimdir."
+      ],
+      "strategy": "Bir seçeneği ancak hem sütun sütun baz eşleşmesi hem de aynı hizada ters uçlar testinden geçerse kabul et.",
+      "steps": [
+        "Üst zincirdeki A, T, G, C harflerinin altına sırayla T, A, C, G yerleştir; aynı hizada gereken baz sırası TACG olur.",
+        "Üst zincirin soldaki ucu 5′ olduğundan alttaki solda 3′ olmalıdır. Altın sağ ucu da üstteki 3′ karşısında 5′ olur.",
+        "İki koşulu birlikte yazınca 3′–TACG–5′ elde edilir. 5′–TACG–3′ yönleri, 3′–ATGC–5′ ise bazları yanlış eşler."
+      ],
+      "optionReasons": [
+        "Yanlış. TACG baz sırası tamamlayıcıdır; fakat iki zincirin soldaki uçları aynı 5′ etiketiyle verilmiştir. Aynı hizada antiparalellik korunmaz.",
+        "Yanlış. Uçlar ters verilse de ATGC, üstteki ATGC’nin aynı harflerini karşısına koyar; A–A ve diğer yanlış çiftler tamamlayıcılığı bozar.",
+        "Doğru. TACG her sütunda üstteki ATGC ile tamamlayıcıdır ve solda 3′, sağda 5′ uçları üst zincire antiparaleldir."
+      ],
+      "commonError": "Sadece bazları değiştirip uç etiketlerini üst zincirle aynı bırakmak veya uçları ters çevirirken bazı eşlemeyi unutmak.",
+      "check": "Üst ve altı aynı hizada yazıp dört sütunu tek tek kontrol et. Ardından yalnız sol uçlara bak: birinde 5′, ötekinde 3′ görünmelidir; iki ayrı koşul da sağlanmalıdır."
+    }
+  },
+  {
+    "id": "dna-3",
+    "identity": "[\"dna-3\",\"DNA polimerazın uzattığı yeni zincirin sentez yönü hangisidir?\",\"\",[\"5′ → 3′\",\"3′ → 5′\",\"Her basamakta rastgele değişir.\"],0,\"DNA polimeraz yeni zinciri 5′→3′ yönünde uzatır. Kalıp zincir antiparalel yerleşir.\"]",
+    "guidance": {
+      "knowledge": [
+        "5′ ve 3′ adları nükleotidin şekerindeki karbon konumlarına dayanır. Büyüyen zincirde kullanılabilir bir 3′ OH ucu bulunması, polimerazın uzatma işlevi için önemlidir."
+      ],
+      "strategy": "Sayfadaki sağ–sol okunu ezberlemek yerine yeni birimin hangi kimyasal uca eklendiğini izleyerek zincirin büyüme yönünü adlandır.",
+      "steps": [
+        "DNA polimeraz, var olan başlangıç zincirinin uygun 3′ OH ucuna yeni nükleotit ekler; başlangıcın öteki ucu 5′ olarak kalır.",
+        "Her eklemeyle uzayan uç yine 3′ uç olduğundan yeni zincirin sırası başlangıçtaki 5′ uçtan büyüyen 3′ uca doğru ilerler.",
+        "Bu yön 5′ → 3′ diye yazılır. Kalıbın ters yerleşmesi veya parçalı sentez, yeni DNA’nın sentez yönünü tersine ya da rastgele bir yöne çevirmemelidir."
+      ],
+      "optionReasons": [
+        "Doğru. Yeni nükleotitlerin 3′ uca eklenmesi yeni zincirin 5′ → 3′ yönünde uzaması anlamına gelir.",
+        "Yanlış. 3′ → 5′ kalıbın okunma yönüyle ilişkili olabilir; DNA polimerazın uzattığı yeni zincirin sentez yönü değildir.",
+        "Yanlış. DNA polimeraz her basamakta uygun 3′ ucu uzatır. Yön, eklenen nükleotide veya sayfadaki çizime göre rastgele değişmez."
+      ],
+      "commonError": "Kalıp zincirin yönünü yeni zincirin sentez yönü olarak okumak veya geciken zincirde sentezin 3′ → 5′ yapıldığını sanmak.",
+      "check": "Kesintili sentezdeki tek bir Okazaki parçasını ayrı düşün. O parça da 3′ ucundan uzar; aynı yön kuralını koruyabilmen kesintili oluşumu ters sentez sanmadığını gösterir."
+    }
+  },
+  {
+    "id": "dna-4",
+    "identity": "[\"dna-4\",\"6 baz çiftli tek bir DNA tamamen eşleniyor. Yeni zincirler için toplam kaç yeni nükleotit kullanılır?\",\"\",[\"6\",\"12\",\"24\"],1,\"İki atasal zincir 6’şar nükleotitlik yeni zincir için kalıp olur: 2×6=12 yeni nükleotit gerekir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir baz çifti karşılıklı iki nükleotit içerir. Bir DNA’nın baz çifti uzunluğu ile iki zincirindeki toplam nükleotit sayısı bu yüzden aynı sayı değildir.",
+        "Tam eşlenmede atasal zincirler kalıp olarak korunur; yeni gereken yapı taşlarını sayarken eski zincirlerin nükleotitleri yeniden sentezlenmiş kabul edilmez."
+      ],
+      "strategy": "Önce iki kalıp için gereken yeni uzunlukları ayrı tut; son moleküllerdeki toplam nükleotidi “yeni kullanılan” sayısına karıştırma.",
+      "steps": [
+        "6 baz çiftli başlangıç DNA’sının iki atasal zinciri vardır ve her zincir 6 nükleotit uzunluğundadır.",
+        "Her kalıbın karşısına 6 nükleotitlik yeni bir zincir kurulur. Yeni sentez toplamı bu iki uzunluğun toplamıdır: 6 + 6 = 12.",
+        "Son durumda iki DNA’da 24 nükleotit bulunur, fakat bunların 12’si zaten başlangıçta vardı. Yalnız yeni zincirler için kullanılan sayı 12’dir."
+      ],
+      "optionReasons": [
+        "Yanlış. 6, yalnız bir yeni zincirin uzunluğudur. Başlangıçtaki iki atasal zincirin karşısına iki yeni zincir yapılmalıdır.",
+        "Doğru. İki kalıbın her biri için 6 yeni nükleotit gerekir: 2 × 6 = 12 yeni nükleotit kullanılır.",
+        "Yanlış. 24, iki yavru DNA’daki eski ve yeni bütün nükleotitlerin toplamıdır. Başlangıçta bulunan 12 nükleotit yeni kullanım değildir."
+      ],
+      "commonError": "Baz çifti sayısını tek tek nükleotit sayısı sanmak veya sonuçtaki toplam maddeyi bütünüyle yeni sentezlenmiş gibi saymak.",
+      "check": "Madde bilançosu kur: başlangıçtaki 12 eski nükleotit + bulduğun yeni miktar = iki adet 6 baz çiftli DNA’daki toplam. Son toplam 24 olmalı; her iki taraf da aynı birimi saymalıdır."
+    }
+  },
+  {
+    "id": "dna-5",
+    "identity": "[\"dna-5\",\"Bir DNA, kayıp olmadan iki tam eşlenme turu geçiriyor. Yalnız en baştaki iki zincir “eski” sayılırsa son durumda dağılım nasıldır?\",\"\",[\"2 eski + 2 yeni zincir\",\"4 eski + 4 yeni zincir\",\"2 eski + 6 yeni zincir\"],2,\"Başlangıçtaki iki zincir korunur. Toplam 8 zincirin diğer 6’sı daha sonra sentezlendiğinden dağılım 2 eski + 6 yenidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kayıpsız bir tam DNA eşlenme turunda molekül sayısı iki katına çıkar. Çift zincirli her molekülde iki zincir bulunur; “eski” sözcüğünün hangi başlangıca göre kullanıldığı ayrıca sabit tutulmalıdır."
+      ],
+      "strategy": "Turları bir molekül ağacıyla çoğalt; yaş sınıfını her tur yeniden başlatmadan son toplamdan ilk zincir kohortunu ayır.",
+      "steps": [
+        "Tek başlangıç DNA’sı birinci turda 2, ikinci turda 4 DNA oluşturur. Son durum bu yüzden 4 çift zincirli moleküldür.",
+        "4 DNA toplam 8 zincir taşır. Soruda yalnız en baştaki iki zincir eski sayıldığından eski sayısı ikinci turda da 2 olarak kalır.",
+        "Diğer zincirlerin tamamı başlangıçtan sonra sentezlenmiştir: 8 − 2 = 6 yeni zincir. Son dağılım 2 eski + 6 yenidir."
+      ],
+      "optionReasons": [
+        "Yanlış. 2 eski + 2 yeni toplam dört zincirdir ve yalnız ilk tam eşlenme turunun sonuna karşılık gelir; iki turun toplamını vermez.",
+        "Yanlış. 4 eski + 4 yeni toplam sekiz olsa da eski tanımını ikinci tur başına taşır. Soruda yalnız ilk iki zincir eski sayılmaktadır.",
+        "Doğru. İki tur sonunda 8 zincir vardır; başlangıçtaki 2 zincir korunur, kalan 6 zincir başlangıçtan sonra oluşmuştur."
+      ],
+      "commonError": "Her eşlenme turunun başında bütün mevcut zincirleri yeniden “eski” diye etiketlemek ve sorunun başlangıç kohortu tanımını değiştirmek.",
+      "check": "Zincir sayısını tekrar moleküle çevir: (2 + 6) / 2 = 4 DNA, yani iki katlanma sonunda beklenen molekül sayısı. Eski sayısının başlangıçtaki ikiyi aşmadığını da denetle."
+    }
+  },
+  {
+    "id": "nuc-1",
+    "identity": "[\"nuc-1\",\"Bir yapı adenin ve riboz içeriyor, fosfat içermiyor. Bu yapı için doğru adlandırma hangisidir?\",\"\",[\"DNA adenin nükleotidi\",\"Fosfolipit\",\"Nükleozit\",\"Tam bir RNA polimeri\",\"Deoksiriboz nükleotidi\"],2,\"Baz + şeker nükleozittir. Fosfat bulunmadığından yapı nükleotit değildir. Ribozun bulunması onu tek başına uzun bir RNA polimerine de dönüştürmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Nükleik asitlerin yapı taşı olan nükleotit, azotlu baz, pentoz ve fosfat bileşenleriyle tanımlanır. Bir yapı taşının bulunması ise çok sayıda yapı taşından kurulmuş polimerin bulunduğu anlamına gelmez."
+      ],
+      "strategy": "Önce mevcut ve eksik parçaları listeleyip birim sınıfını seç; daha sonra şekere veya polimer adına göre gereksiz genişletme yapmadığını kontrol et.",
+      "steps": [
+        "Verilen yapı adenin ve ribozu içerir; fosfat açıkça yoktur. Bu nedenle üç bileşenli tam bir nükleotit tanımı karşılanmaz.",
+        "Riboz bulunması tek başına RNA polimeri oluşturmaz. Çok sayıda birimin zincir hâlinde bağlandığı bilgisi de verilmemiştir.",
+        "Baz ile şekerin birleşimine nükleozit denir; adenin–riboz yapısı bu sınıftadır. Deoksiriboz adı taşıyan ve fosfat gerektiren seçenekler de verilen parçalarla uyuşmaz."
+      ],
+      "optionReasons": [
+        "Yanlış. DNA adenin nükleotidi deoksiriboz ve fosfat gerektirir. Verilen yapıda riboz vardır, fosfat ise yoktur.",
+        "Yanlış. Fosfolipit için lipit bileşenleri ve fosfatlı yapı aranır; yalnız adenin ile riboz böyle bir lipit oluşturmaz.",
+        "Doğru. Azotlu baz ile pentozun birleşimi nükleozittir. Adenin ve riboz bulunup fosfat bulunmaması bu adlandırmaya uyar.",
+        "Yanlış. Tek bir baz–şeker yapısı tam RNA polimeri değildir; RNA zinciri çok sayıda fosfatlı nükleotidin bağlanmasıyla kurulur.",
+        "Yanlış. Verilen şeker deoksiriboz değil ribozdur; ayrıca fosfat yokken yapı nükleotit diye adlandırılamaz."
+      ],
+      "commonError": "Adenin veya riboz görünce eksik fosfatı kontrol etmeden yapıyı nükleotit, hatta doğrudan RNA zinciri diye adlandırmak.",
+      "check": "Fosfatı zihninde eklediğinde sınıfın nükleozitten nükleotide geçmesi gerekir. Bu eklemenin özgün soruda yapılmadığını koru; verilen yapıyı olmayan bir parçayla tamamlayarak adlandırma."
+    }
+  },
+  {
+    "id": "nuc-2",
+    "identity": "[\"nuc-2\",\"Adenin bazı taşıyan standart DNA ve RNA nükleotitleri karşılaştırılıyor. Hangi açıklama doğrudur?\",\"\",[\"Bazları aynı olsa da pentozları farklıdır.\",\"İkisi de deoksiriboz taşıdığı için bütünüyle aynıdır.\",\"DNA nükleotidinde fosfat bulunmaz.\",\"RNA nükleotidinde azotlu baz bulunmaz.\",\"Ortak baz adı bütün molekül özelliklerini eşitler.\"],0,\"DNA adenin nükleotidi deoksiriboz, RNA adenin nükleotidi riboz taşır. Baz ve fosfat ortak olabilir; ancak şeker değiştiği için nükleotitlerin bütünü aynı değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir nükleotidin kimliği tek bir baz adına indirgenmez; baz, pentoz ve fosfat birlikte değerlendirilir. Ortak bir bileşen bulunması bütün bileşenlerin eşit olmasını gerektirmez.",
+        "Ribozun 2′ konumunda OH, deoksiribozun aynı konumunda H bulunur. İkisinin de beş karbonlu olması oksijen bakımından aynı yapıda oldukları anlamına gelmez."
+      ],
+      "strategy": "Ortak adenin etiketini sabit tutup iki birimin şeker bileşenlerini karşılaştır; ortak parça ile bütün molekül eşitliğini ayrı sonuçlar olarak değerlendir.",
+      "steps": [
+        "İki nükleotitte de adenin bulunması baz bileşenini ortak yapar; bu bilgi şekerlerin aynı olduğunu henüz söylemez.",
+        "Standart DNA nükleotidinin şekeri deoksiriboz, standart RNA nükleotidinin şekeri ribozdur. Ortak adenin bu pentoz farkını ortadan kaldırmaz.",
+        "Her iki yapı da nükleotit olduğundan baz ve fosfat taşır. Dolayısıyla doğru karşılaştırma bazları aynı olsa da pentozlarının farklı olmasıdır; bir bileşeni eksik sayan seçenekler uygun değildir."
+      ],
+      "optionReasons": [
+        "Doğru. Ortak adenin bazına karşılık DNA birimi deoksiriboz, RNA birimi riboz içerir; pentoz farkı bütün nükleotitlerin aynı sayılmasını engeller.",
+        "Yanlış. Standart RNA nükleotidinin şekeri deoksiriboz değil ribozdur. İki yapının bütünüyle aynı olduğu sonucu bu nedenle kurulamaz.",
+        "Yanlış. DNA nükleotidi de fosfat içerir; fosfatı çıkarmak birimin nükleotit tanımını bozar.",
+        "Yanlış. RNA nükleotidinde azotlu baz bulunur; soruda bu bazın adenin olduğu zaten belirtilmiştir.",
+        "Yanlış. Adenin adının ortaklığı yalnız baz bileşenini eşitler. Şeker farklıyken bütün molekül özelliklerini aynı kabul etmek geçersizdir."
+      ],
+      "commonError": "Baz harfini nükleotidin bütün kimliği gibi kullanmak ve riboz–deoksiriboz farkını ortak adenin adı altında silmek.",
+      "check": "Üç sütunlu karşılaştırma yap: baz, şeker, fosfat. İlk sütun ortak kalırken şeker sütunu farklıysa “bütünüyle aynı” sonucunun neden kurulamadığı görünür olmalıdır."
+    }
+  },
+  {
+    "id": "nuc-3",
+    "identity": "[\"nuc-3\",\"Hangi seçenekte yalnız çift halkalı pürin bazları verilmiştir?\",\"\",[\"Timin ve urasil\",\"Sitozin ve timin\",\"Adenin ve sitozin\",\"Guanin ve urasil\",\"Adenin ve guanin\"],4,\"Adenin ve guanin pürindir ve çift halkalıdır. Sitozin, timin ve urasil tek halkalı pirimidinlerdir. DNA/RNA ortaklığı ile pürin/pirimidin ölçütü farklıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Azotlu bazlar halka yapısına göre pürin ve pirimidin olarak sınıflandırılır: pürin çift halkalı, pirimidin tek halkalıdır. Bu ölçüt bazın DNA’da mı RNA’da mı bulunduğunu sormaktan farklıdır."
+      ],
+      "strategy": "“Yalnız” koşulu için her seçenekteki iki adı ayrı ayrı sınayıp tek bir yanlış sınıf üyesi bulunan çifti ele.",
+      "steps": [
+        "Adenin ve guanin çift halkalı pürin grubundadır. Bu iki adın her birini hedef sınıf için işaretle.",
+        "Sitozin, timin ve urasil tek halkalı pirimidindir. Bir seçenekte bu adlardan biri bulunuyorsa iki üyenin de pürin olması koşulu bozulur.",
+        "Timin–urasil ve sitozin–timin çiftleri yalnız pirimidin; adenin–sitozin ve guanin–urasil çiftleri karışıktır. Yalnız adenin–guanin çiftinin iki üyesi de pürindir."
+      ],
+      "optionReasons": [
+        "Yanlış. Timin ve urasil ikisi de tek halkalı pirimidindir; DNA/RNA farkları onları pürin sınıfına dönüştürmez.",
+        "Yanlış. Sitozin ve timin tek halkalı pirimidin grubundadır; istenen çift halkalı sınıfı karşılamazlar.",
+        "Yanlış. Adenin pürindir ama sitozin pirimidindir. İkilide bir pürin bulunması “yalnız pürin” koşuluna yetmez.",
+        "Yanlış. Guanin çift halkalı pürin, urasil tek halkalı pirimidindir; bu seçenek iki farklı sınıfı birlikte verir.",
+        "Doğru. Adenin ile guanin iki halkalı pürin bazlarıdır; çiftin her iki üyesi de istenen sınıfa girer."
+      ],
+      "commonError": "Bir seçenekte tek pürin görünce öteki bazın sınıfını sınamadan işaretlemek veya DNA/RNA ortaklığı ölçütünü halka sayısının yerine koymak.",
+      "check": "Seçtiğin iki bazın halka sayılarını ayrı söyle. Sonra kalan üç bazın tek halkalı grupta kaldığını denetle; bazların DNA veya RNA’da bulunması bu sınıflandırmayı değiştirmemelidir."
+    }
+  },
+  {
+    "id": "nuc-4",
+    "identity": "[\"nuc-4\",\"Tamamlayıcı çift zincirli bir DNA toplam 800 nükleotit içeriyor. Bunların 160’ı timin ise toplam hidrojen bağı kaçtır?\",\"\",[\"800\",\"1040\",\"1280\",\"1600\",\"2400\"],1,\"A=T=160. G+C=800−320=480, G=C=240. Molekülde 160 A–T ve 240 G–C çifti vardır. H=2×160+3×240=1040. Çift sayısı 400, nükleotit sayısı 800’dür.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tamamlayıcı çift zincirli DNA’nın bütününde A sayısı T’ye, G sayısı C’ye eşittir. Her baz çifti iki nükleotit içerir; A–T çifti iki, G–C çifti üç hidrojen bağı taşır."
+      ],
+      "strategy": "Önce iki çift türünün adetlerini nükleotit toplamını koruyarak bul; hidrojen bağlarını ancak bu adetler tekilleşince ağırlıklı topla.",
+      "steps": [
+        "Timin 160 olduğundan tüm moleküldeki adenin de 160’tır. A ve T birlikte 320 nükleotit oluşturur.",
+        "G ve C’ye 800 − 320 = 480 nükleotit kalır; eşitlikten G = C = 240 bulunur. Böylece 160 A–T ve 240 G–C çifti vardır.",
+        "Hidrojen bağlarını çift başına say: 160 × 2 + 240 × 3 = 320 + 720 = 1040. Nükleotitleri birer çift gibi yeniden sayma."
+      ],
+      "optionReasons": [
+        "Yanlış. 800, bütün nükleotitlerin sayısıdır; ayrıca 400 çiftin hepsi A–T olsaydı alt H sınırı olurdu. Verilen G–C çiftleri ek bağlar getirir.",
+        "Doğru. 160 A–T çiftinin 320 bağına 240 G–C çiftinin 720 bağı eklenir; toplam 1040 hidrojen bağı bulunur.",
+        "Yanlış. 1280, bulunan 160 A–T ve 240 G–C çiftinin 2 ve 3 katsayılarıyla toplamı değildir; üstelik 400 çiftin en çok 1200 bağı olabilir.",
+        "Yanlış. 1600, toplam 800 nükleotidi ikişer bağ taşıyan 800 ayrı çift gibi saymaktan gelebilir; gerçekte yalnız 400 baz çifti vardır.",
+        "Yanlış. 2400, 800 nükleotidin hepsini üçer bağ taşıyan ayrı çiftler gibi sayar. Bu hem çift sayısını iki katına çıkarır hem A–T çiftlerini yok sayar."
+      ],
+      "commonError": "G ile C’yi toplayıp bu toplamı G–C çift sayısı sanmak; aynı baz çiftini iki nükleotidi üzerinden iki kez saymak.",
+      "check": "400 baz çiftinin her birine önce 2 bağ ver: 800 bağ eder. G–C olan 240 çiftin her birine bir ek bağ ekle: 800 + 240 = 1040. Bu farklı yol ve 800–1200 sınırı sonucu doğrular."
+    }
+  },
+  {
+    "id": "nuc-5",
+    "identity": "[\"nuc-5\",\"Tek zincirli bir RNA 300 nükleotit içeriyor ve bunların 120’si A. U sayısı hakkında başka bilgi verilmiyor. Hangi sonuç zorunludur?\",\"\",[\"U=120\",\"U=150\",\"G=C=30\",\"U sayısı tek bir değerle belirlenemez.\",\"RNA hiç hidrojen bağı kuramaz.\"],3,\"Tek RNA’da A=U zorunluluğu yoktur. Kalan 180 nükleotidin U, G, C dağılımı verilmediğinden U tek değerle bulunamaz. RNA’nın katlanıp bazı bölgelerde H bağı kurabilmesi de bütün baz sayılarını eşitlemez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tek bir RNA zincirindeki baz toplamı A + U + G + C’dir. Zincirin bazı bölgelerde kendi üzerine katlanabilmesi bütün bazlar için bire bir eşleşme zorunluluğu oluşturmaz; toplam ve tek bir baz sayısı tüm dağılımı belirlemeyebilir."
+      ],
+      "strategy": "Tek değer çıkarmaya çalışmadan önce verilenleri aynı anda sağlayan iki farklı baz dağılımı kur; ikisi de geçerliyse zorunluluk iddiasını karşı örnekle sınayabilirsin.",
+      "steps": [
+        "300 nükleotidin 120’si A olduğuna göre U + G + C = 180’dir. Soruda bu üç baz arasında başka bir eşitlik verilmemiştir.",
+        "Örneğin U = 80, G = 50, C = 50 dağılımı da U = 100, G = 40, C = 40 dağılımı da kalan 180’i ve A = 120 koşulunu sağlar.",
+        "Aynı verilenler iki farklı U sayısına izin verdiğinden U tek bir değerle belirlenemez. Bu sonuç RNA’nın hiç hidrojen bağı kuramayacağı anlamına gelmez."
+      ],
+      "optionReasons": [
+        "Yanlış. U = 120 mümkün olabilir ama zorunlu değildir; tek zincir için A = U koşulu verilmemiştir.",
+        "Yanlış. 150, toplam nükleotit sayısının yarısıdır; tek RNA’da yarının U olması gibi bir koşul yoktur.",
+        "Yanlış. G = C = 30 dağılımı bazı U değerleriyle mümkün olabilir, fakat G ile C’nin eşitliği veya bu sayıları sorudan zorunlu çıkmaz.",
+        "Doğru. Kalan 180 nükleotidin U, G ve C arasında dağılımı bilinmediğinden U için tek bir değer belirlenemez.",
+        "Yanlış. Tek zincirli RNA kendi üzerine katlanan tamamlayıcı bölgelerde hidrojen bağları kurabilir; veri eksikliği hiç H bağı olamayacağını göstermez."
+      ],
+      "commonError": "Çift zincirli DNA’daki eşitliği tek RNA’ya taşıyıp A = U yazmak; bulunamayan bir sayıyı bağların hiç bulunmadığı iddiasıyla karıştırmak.",
+      "check": "Kurduğun iki dağılımın her birinde A’yı 120, toplamı 300 tut ve U’nun farklı kaldığını gör. Ek bilgi verilmediği sürece bu iki geçerli olasılığın bulunması tek sayı iddiasını çürütür."
+    }
+  },
+  {
+    "id": "nuc-6",
+    "identity": "[\"nuc-6\",\"Bir DNA zinciri aynı yatay hizada soldan sağa 5′–AGTC–3′ yazılmıştır. Tamamlayıcı alt zincir aynı hizada hangisidir?\",\"\",[\"3′–TCAG–5′\",\"5′–TCAG–3′\",\"3′–AGTC–5′\",\"5′–UCAG–3′\",\"3′–TCUG–5′\"],0,\"A karşısına T, G karşısına C, T karşısına A, C karşısına G gelir: TCAG. Antiparalel alt zincirin soldaki ucu 3′ olduğundan aynı hizayla 3′–TCAG–5′ yazılır. RNA’daki U burada kullanılmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aynı yatay hizada yazılmış DNA zincirlerinde her sütun karşılıklı bir baz çiftini gösterir. “Alt zincir” ifadesi onun da soldan sağa 5′ → 3′ yazıldığı anlamına gelmez; uç yönleri konumla birlikte okunmalıdır."
+      ],
+      "strategy": "Bir alt sıra çizip üstteki dört konuma DNA eşlerini yerleştir; ardından bu sırayı ters çevirmeden sol ve sağ uç etiketlerini denetle.",
+      "steps": [
+        "AGTC üst sırasının karşılığı sütunlar korunarak T, C, A, G olur: A–T, G–C, T–A ve C–G çiftleri kurulur.",
+        "Üst sıra soldan sağa 5′ → 3′ olduğundan alt sıra aynı hizada soldan sağa 3′ → 5′ olmalıdır. Bu aşamada harf sırası ters çevrilmez.",
+        "Sonuç 3′–TCAG–5′tir. Diğer seçenekleri ayrı hata ölçütleriyle ele: aynı uç yönü, eşlenmeden kopyalanmış harfler veya DNA yerine U kullanılması."
+      ],
+      "optionReasons": [
+        "Doğru. TCAG, AGTC’nin her sütundaki DNA eşidir; 3′ solda ve 5′ sağda olduğundan iki sıra antiparaleldir.",
+        "Yanlış. TCAG bazları uygun olsa da 5′ solda verilince üst zincirle aynı yön oluşur; aynı hizadaki alt zincir için uçlar ters olmalıdır.",
+        "Yanlış. 3′ ve 5′ uçları uygun yerleşse de AGTC üst sıranın aynısıdır; tamamlayıcı baz dizisi TCAG olmalıdır.",
+        "Yanlış. UCAG DNA eşleşmesinde gereken timin yerine urasil kullanır; ayrıca 5′ soldaki yön etiketi de aynı hizadaki antiparalelliği bozmuştur.",
+        "Yanlış. TCUG dizisinde üstteki T’nin karşısına A yerine U konmuştur. DNA’da bu konum T–A çifti kurmalıdır."
+      ],
+      "commonError": "Tamamlayıcı sırayı bulduktan sonra sorulmadığı hâlde 5′ → 3′ yönünde yeniden okuyup aynı hizadaki yazımı değiştirmek; DNA’ya RNA bazı U eklemek.",
+      "check": "Dört dikey sütunu tek tek oku ve her birinde A–T ya da G–C gör. Sonra iki zincirin sol uç etiketlerinin farklı olduğunu doğrula; harf doğruluğu tek başına yön hatasını gidermez."
+    }
+  },
+  {
+    "id": "nuc-7",
+    "identity": "[\"nuc-7\",\"Bir RNA türü uygun amino asidi ribozoma getiriyor ve antikodon bölgesi mRNA kodonuyla ilişki kuruyor. Bu RNA hangisidir?\",\"\",[\"mRNA; yalnız DNA bilgisini saklar\",\"rRNA; yalnız amino asit taşır\",\"DNA; şekerinin adı ribozdur\",\"mRNA; ribozomun tek yapı maddesidir\",\"tRNA; amino asit taşıma ve antikodon görevi vardır\"],4,\"Uygun amino asidi taşıyan ve antikodonu bulunan molekül tRNA’dır. mRNA okunacak kalıp bilgisini taşır; rRNA proteinlerle ribozomun yapısına ve katalitik işlevine katılır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Protein sentezinde okunacak kalıp bilgi, amino asitlerin taşınması ve ribozomun yapısal/katalitik işlevi farklı görevlerdir. Kodon mRNA’daki, antikodon ise ona karşılık gelen başka RNA’daki üçlü baz dizisini adlandırır."
+      ],
+      "strategy": "İki kanıtı birlikte kullan: taşınan yükün amino asit olması ile antikodon bulunmasının aynı RNA türünde birleşmesini iste.",
+      "steps": [
+        "Soruda taşınan şey DNA bilgisi değil, proteine katılacak uygun amino asittir. Böylece mesaj taşıma ile yapı taşı taşıma görevlerini ayır.",
+        "Amino asit taşıyan ve antikodonuyla mRNA kodonuna bağlanan RNA, taşıyıcı RNA yani tRNA’dır. İki ipucu aynı molekülü gösterir.",
+        "mRNA okunacak kalıp, rRNA ise proteinlerle birlikte ribozomun yapı ve işlev bileşenidir. DNA da RNA türü değildir; bu adaylar verilen iki görevi birlikte karşılamaz."
+      ],
+      "optionReasons": [
+        "Yanlış. mRNA yalnız DNA bilgisini saklayan molekül değildir; ribozomda okunacak kalıp görevindedir. Uygun amino asidi antikodonuyla taşıyan tür değildir.",
+        "Yanlış. rRNA ribozomun yapısına ve katalitik işlevine katılır. Amino asit taşıma görevi bu seçenekte yanlış RNA’ya bağlanmıştır.",
+        "Yanlış. DNA bir RNA türü değildir ve standart şekerinin adı deoksiribozdur; riboz taşıdığı iddiası da verilen molekülü tanımlamaz.",
+        "Yanlış. mRNA ribozomun tek yapı maddesi değildir; ribozomda rRNA ve proteinler bulunur. mRNA ayrıca amino asit taşıyıcısı olarak tanımlanmaz.",
+        "Doğru. tRNA uygun amino asidi taşır ve antikodonu mRNA’daki kodonla ilişki kurar; sorunun iki belirleyici özelliğini birlikte karşılar."
+      ],
+      "commonError": "“Taşır” fiilini nesnesiyle birlikte okumadan genetik bilgi taşıyan mRNA ile amino asit taşıyan tRNA’yı aynı görevde saymak.",
+      "check": "Seçtiğin RNA için hem amino asit bağlanan bölgeyi hem antikodon işlevini açıklayabilmelisin. Yalnız bilgi taşıma veya ribozoma yapı sağlama anlatımı bu iki kanıtı birlikte karşılamaz."
+    }
+  },
+  {
+    "id": "nuc-8",
+    "identity": "[\"nuc-8\",\"İki açık uçlu doğrusal DNA zincirinin her biri 100 nükleotitten oluşuyor. Yalnız aynı zincirdeki komşu nükleotitleri bağlayan toplam fosfodiester bağlantısı kaçtır?\",\"\",[\"99\",\"100\",\"198\",\"200\",\"300\"],2,\"Her doğrusal zincirde n−1=99 komşu bağlantı vardır. İki zincirde toplam 2×99=198 olur. Bu sayı H bağları veya nükleotitlerin içindeki glikozit bağlarıyla toplanmaz; kapalı halkaya da aynı formül taşınmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Açık bir doğrusal zincirde bağlantılar komşu birimler arasındadır: ilk ve son birim birbirine ayrıca bağlanmaz. Fosfodiester omurga bağlantısı ile karşılıklı bazların hidrojen bağı farklı sayımlardır."
+      ],
+      "strategy": "Her açık zincirin komşuluk aralıklarını ayrı say ve sonra iki zinciri topla; halkayı kapatan ek bir bağlantı varsayma.",
+      "steps": [
+        "Birinci açık zincirde 100 nükleotit arasında 99 komşuluk aralığı vardır. Son nükleotitten ilkine dönen yüzüncü bağlantı verilmemiştir.",
+        "İkinci açık zincir de 100 nükleotitlik olduğundan 99 bağlantı taşır. İki omurganın toplamı 99 + 99 = 198 olur.",
+        "Sorulan yalnız komşu nükleotit bağlantısıdır; bazlar arası H bağları ve birim içi glikozit bağları bu toplama eklenmez. 200 sonucu için iki kapalı halka gibi farklı topoloji gerekirdi."
+      ],
+      "optionReasons": [
+        "Yanlış. 99, yalnız tek bir açık 100 nükleotitlik zincirin bağlantı sayısıdır; soruda iki zincirin toplamı istenmektedir.",
+        "Yanlış. 100 bir zincirin nükleotit sayısıdır, komşu bağlantı sayısı değildir. Açık uçlar nedeniyle her zincirde 99 bağlantı vardır.",
+        "Doğru. Her açık doğrusal zincirde 100 − 1 = 99 bağlantı bulunur; iki zincirde toplam 2 × 99 = 198 fosfodiester bağlantısı vardır.",
+        "Yanlış. 200 toplam nükleotit sayısıdır. Ancak her iki zincir kovalent kapalı halka olsaydı 200 komşu bağlantı sayılabilirdi; verilen zincirler açıktır.",
+        "Yanlış. 300, iki açık omurganın komşuluk sayısından çıkmaz. Bazlar arası başka bağ türlerini eklemek soruda istenen sayımı değiştirir."
+      ],
+      "commonError": "Nükleotit başına bir komşu bağlantı sayarak açık uçları unutmak veya tek zincirin sonucunu iki zincirin toplamı diye kullanmak.",
+      "check": "İki açık zincirin toplam 200 birimi vardır. Her açık sıra için bir eksiltme yap: 200 − 2 = 198. Son birimleri ilklerine bağlamadığından ve H bağı eklemediğinden emin ol."
+    }
+  },
+  {
+    "id": "nuc-9",
+    "identity": "[\"nuc-9\",\"Çift zincirli bir DNA’da yalnız karşılıklı bazlar arasındaki hidrojen bağlarının ayrıldığı, omurganın kovalent bağlarının korunmuş olduğu belirtiliyor. Hangi yorum uygundur?\",\"\",[\"Bütün nükleotitler bileşenlerine ayrılmak zorundadır.\",\"Her iki zincirin kendi nükleotit sırası korunabilir; omurga ile karşı baz etkileşimi farklıdır.\",\"Glikozit bağlarının tümü mutlaka kopmuştur.\",\"Fosfodiester bağları hidrojen bağıyla aynı bağdır.\",\"DNA bu nedenle riboz taşımaya başlar.\"],1,\"Bazlar arası H bağlarının ayrılması iki zincirin eşleşmesini bozar; omurga korunuyorsa zincirlerdeki nükleotit sırası bu işlemle zorunlu olarak parçalanmaz. Şekerin riboz olması veya glikozit bağlarının kopması verilmemiştir.\"]",
+    "guidance": {
+      "knowledge": [
+        "DNA’daki kovalent şeker-fosfat omurgası bir zincir boyunca nükleotitlerin sırasını bağlar. Karşılıklı bazlar arasındaki hidrojen bağları ise iki ayrı zincirin eşleşmesiyle ilişkilidir; bu iki bağlantı sınıfı aynı değildir."
+      ],
+      "strategy": "İşlemin değiştirdiği bağlarla korunmuş olduğu açıkça verilen bağları iki listeye ayır; sonuçları yalnız bu değişiklik sınırı içinde çıkar.",
+      "steps": [
+        "İşlem karşılıklı bazlar arasındaki hidrojen bağlarını ayırıyor. Bu yüzden iki zincir arasındaki tamamlayıcı eşleşme bozulabilir.",
+        "Omurganın kovalent bağları korunmuş olduğundan zincir boyunca komşu nükleotitler bağlı kalabilir; her zincirin kendi nükleotit sırasının parçalanması zorunlu değildir.",
+        "Bütün nükleotitlerin bileşenlerine ayrılması, bütün glikozit bağlarının kopması veya deoksiribozun riboza dönüşmesi verilmemiştir. Uygun yorum, omurga ile karşı baz etkileşimini ayrı tutan seçenektir."
+      ],
+      "optionReasons": [
+        "Yanlış. Yalnız karşı baz H bağlarının ayrılması, baz–şeker veya omurga bağlarının da parçalandığını söylemez; bütün nükleotitlerin bileşenlerine ayrılması gerekmez.",
+        "Doğru. Omurga kovalent bağları korunursa zincirin içindeki nükleotit bağlantıları ve sırası korunabilir; iki zincirin eşleşmesini sağlayan bağlar farklıdır.",
+        "Yanlış. Glikozit bağı baz ile şekeri bağlar. Karşılıklı bazlar arasındaki H bağlarının ayrılmasından bütün glikozit bağlarının koptuğu çıkmaz.",
+        "Yanlış. Fosfodiester bağı aynı zincirin kovalent omurga bağlantısıdır; karşı bazlar arasındaki hidrojen bağıyla aynı bağ türü değildir.",
+        "Yanlış. Bazlar arası H bağlarının ayrılması şekerin kimyasal türünü değiştirmez; DNA’nın bu nedenle riboz taşıması sonucu kurulamaz."
+      ],
+      "commonError": "DNA’nın iki zincirinin ayrılmasını her zincirin de yapı taşlarına kadar hidroliz olması sanmak; bağın hangi iki parçayı birleştirdiğini izlememek.",
+      "check": "İki ayrı ama iç sırası bozulmamış zincir çizimi, verilen değişikliği karşılar. Böyle bir karşı örnek kurulabiliyorsa “bütün nükleotitler parçalanmak zorundadır” iddiası zorunlu değildir."
+    }
+  },
+  {
+    "id": "nuc-10",
+    "identity": "[\"nuc-10\",\"Standart DNA ve RNA’nın dörder nükleotit çeşidinden birer tane kurulan bir çalışma seti hazırlanıyor. Bu sekiz birim için gereken şeker ve baz dağılımı hangisidir?\",\"\",[\"8 riboz; T ve U hiç yok\",\"8 deoksiriboz; A yalnız bir kez\",\"4 riboz, 4 deoksiriboz; bütün beş baz eşit sayıda\",\"4 riboz, 4 deoksiriboz; A/G/C ikişer, T/U birer\",\"2 riboz, 2 deoksiriboz; toplam 4 birim\"],3,\"DNA için A,T,G,C taşıyan dört deoksiribozlu; RNA için A,U,G,C taşıyan dört ribozlu birim kurulur. Böylece A,G,C iki kez; T,U bir kez kullanılır. Her birimde fosfat da vardır; ortak A adı iki farklı şekeri aynı yapmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Nükleotit çeşidi sayılırken yalnız baz adı değil şeker türü de kimliğe katılır. Aynı bazın farklı pentozlara bağlanması iki farklı nükleotit türü oluşturabilir; kullanılan toplam birim sayısı ile farklı baz adı sayısı ayrıdır."
+      ],
+      "strategy": "DNA ve RNA için iki ayrı malzeme çizelgesi kur; toplamı şeker sütununda ve her baz adının kaç kez geçtiği sütununda bağımsız denetle.",
+      "steps": [
+        "Standart DNA seti A, T, G ve C taşıyan dört nükleotittir. Bunların her birinde deoksiriboz olduğundan ilk çizelgede 4 deoksiriboz vardır.",
+        "Standart RNA seti A, U, G ve C taşıyan dört nükleotittir. Bunların her biri riboz içerir; ikinci çizelgede 4 riboz bulunur.",
+        "İki çizelgeyi birleştir: A, G ve C her iki sette birer kez geçtiği için ikişer; T yalnız DNA’da, U yalnız RNA’da olduğu için birer kez kullanılır. Bu dağılım toplam sekiz birimi karşılar."
+      ],
+      "optionReasons": [
+        "Yanlış. Sekiz birimin hepsi ribozlu değildir; DNA’daki dördü deoksiriboz içerir. Ayrıca standart DNA setinde T, RNA setinde U bulunmalıdır.",
+        "Yanlış. RNA’daki dört birim riboz taşır, dolayısıyla 8 deoksiriboz kullanılamaz. A da iki ayrı sette bulunduğundan yalnız bir kez geçmez.",
+        "Yanlış. Şeker sayıları uygun olsa da beş baz eşit sayıda kullanılmaz: A, G ve C iki sette; T ve U yalnız birer sette bulunur.",
+        "Doğru. Dört RNA birimi 4 riboz, dört DNA birimi 4 deoksiriboz ister. A/G/C ikişer, T/U birer kez sayıldığında toplam sekiz baz elde edilir.",
+        "Yanlış. Bu dağılım yalnız dört şeker ve dört birim verir; sorudaki dört DNA ile dört RNA nükleotidinden oluşan sekiz birimlik seti tamamlamaz."
+      ],
+      "commonError": "DNA ve RNA’da ortak görülen A/G/C bazlarını birer kez sayıp farklı şekerli birimleri birleştirmek veya beş baz adını sekiz birime eşit dağıtmak.",
+      "check": "Baz sayılarını topla: 2 + 2 + 2 + 1 + 1 = 8. Şekerler de 4 + 4 = 8 olmalı; her birim bir baz ve bir pentoz taşıdığı için iki toplam birbirini doğrular."
+    }
+  }
+]

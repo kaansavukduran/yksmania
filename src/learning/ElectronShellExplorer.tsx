@@ -127,8 +127,8 @@ export default function ElectronShellExplorer() {
         <p>
           Nötr atom {neutral.length}. periyot, {atom.group}. grup.{" "}
           {s.ion
-            ? "İyonun dolu katman sayısı elementin periyodunu değiştirmez."
-            : "Periyot nötr temel hâlde dolu katman sayısından okunur."}
+            ? "İyonun elektron içeren katman sayısı elementin periyodunu değiştirmez."
+            : "Periyot nötr temel hâlde elektron içeren katman sayısından okunur."}
         </p>
       </div>
       <p className="lab-caption">

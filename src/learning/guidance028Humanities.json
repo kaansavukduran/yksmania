@@ -1,0 +1,752 @@
+[
+  {
+    "id": "dgo-1",
+    "identity": "[\"dgo-1\",\"Bu gelişmelerin hazırlık–olay–siyasi sonuç sırası hangi seçenekte doğru verilmiştir?\",\"II. Mehmet İstanbul kuşatması öncesinde Rumeli Hisarı’nı yaptırdı. 29 Mayıs 1453’te İstanbul alındı. Fetih sonrasında kullandığı Kayser-i Rum unvanı Roma siyasi mirasına sahip çıkma iddiasını yansıttı.\",[\"Kayser-i Rum unvanı – Rumeli Hisarı – İstanbul’un alınması\",\"İstanbul’un alınması – Kayser-i Rum unvanı – Rumeli Hisarı\",\"Rumeli Hisarı – İstanbul’un alınması – Kayser-i Rum unvanı\",\"Rumeli Hisarı – Kayser-i Rum unvanı – İstanbul’un alınması\",\"İstanbul’un alınması – Rumeli Hisarı – Kayser-i Rum unvanı\"],2,\"Rumeli Hisarı kuşatma öncesi hazırlıktır. Şehrin alınması olaydır. Kayser-i Rum unvanı ise Roma başkentinin fethinden sonraki siyasi miras iddiasını gösterir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hazırlık, bir olayın gerçekleşmesini kolaylaştırmak için önceden alınan önlemdir. Olay, incelenen değişimin gerçekleşmesidir; sonuç ise onun ardından oluşan yeni durumdur. Bir yapının inşa edilmesiyle bir şehrin ele geçirilmesi aynı işlevi taşımaz.",
+        "Siyasi unvan, hükümdarın meşruiyet veya miras iddiasını ifade edebilir. Bir unvanın kullanılmasıyla o unvanın çağrıştırdığı bütün coğrafyanın fiilen yönetilmesi ayrı kanıtlar gerektirir."
+      ],
+      "strategy": "Parçadaki zaman bildiren sözleri üç gelişmenin yanına koy; sonra her gelişmenin kuşatmaya hazırlık mı, hedefin gerçekleşmesi mi, siyasi iddia mı olduğunu sınıflandır.",
+      "steps": [
+        "“Kuşatması öncesinde” ifadesiyle verilen yapı çalışmasını bul. Bu çalışma hedef şehir alınmadan önce yapıldığı için dizinin hazırlık hanesini doldurur.",
+        "29 Mayıs 1453 tarihindeki fiili ayır: şehir alınmıştır. Bu, önlem veya sonradan kullanılan unvan değil, soruda merkez alınan olaydır.",
+        "“Fetih sonrasında” kullanılan unvanı son haneye yerleştir. Böylece hazırlık Rumeli Hisarı, olay İstanbul’un alınması, siyasi sonuç Kayser-i Rum unvanının kullanılması olur."
+      ],
+      "optionReasons": [
+        "Kayser-i Rum’u ilk sıraya koymak, parçada fetih sonrasına yerleştirilen siyasi iddiayı hazırlık yapar; İstanbul’un alınması da yanlışlıkla sonuç hanesine kayar.",
+        "İstanbul’un alınması hazırlık değildir. Bu sıralamada fetih sonrası unvan olay, fetih öncesi hisar sonuç yerine geçirilmiştir.",
+        "Hisar olay öncesi hazırlığı, şehrin alınması olayın kendisini, unvan ise fetih sonrası Roma mirası iddiasını karşılar; üç hane de parçayla uyuşur.",
+        "İlk hane uygundur; ancak unvanla şehrin alınması yer değiştirmiştir. Parça unvanı fetihten sonraya bağlar.",
+        "Şehrin alınmasıyla hisarın yapılması ters sıradadır: hisar hazırlıktır, fetih onun ardından gelir. Son hanenin uygun olması ilk iki hatayı gidermez."
+      ],
+      "commonError": "Tarihçe doğru görünen üç adı, istenen işlev sırasını kontrol etmeden işaretlemek.",
+      "check": "Seçtiğin dizinin altına “öncesinde / 29 Mayıs’ta / sonrasında” sözlerini sırayla yaz. Her söz, parçada gerçekten o gelişmeye bağlanmalı."
+    }
+  },
+  {
+    "id": "dgo-2",
+    "identity": "[\"dgo-2\",\"Cem Sultan olayının bir iç sorunken dış siyasetin konusu hâline geldiğini en doğrudan hangi gelişme gösterir?\",\"\",[\"Taht mücadelesinin bir hanedan içinde başlaması\",\"Avrupa güçlerinin Cem’i Osmanlı’ya karşı baskı aracı olarak kullanabilmesi\",\"İstanbul’un başkent olarak kalması\",\"Fatih’in ölümünden sonra II. Bayezid’in tahta çıkması\",\"Osmanlı’da kara ordusunun bulunması\"],1,\"Cem’in Osmanlı dışındaki güçlerin elinde diplomatik baskı aracına dönüşmesi, iç hanedan mücadelesinin devletler arası ilişkilere taşındığının doğrudan göstergesidir. Diğer bilgiler dış müdahaleyi kanıtlamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hanedan, hükümdarlığın aynı aile çevresinde sürdüğü yönetimlerde iktidar hakkı bulunan aileyi anlatır. Hanedan üyelerinin tahta sahip olma mücadelesi, başlangıçta devletin iç yönetimiyle ilgili olabilir.",
+        "Dış siyasete taşınma, başka siyasi güçlerin meselenin taraflarını veya etkilerini kendi devletler arası amaçları için kullanabilmesidir. Bir sorunun başlaması, hükümdarın değişmesi ve dış müdahaleye elverişli hâle gelmesi ayrı aşamalardır."
+      ],
+      "strategy": "Her seçenekte kimlerin etkin olduğuna bak: yalnız Osmanlı içindeki kişiler ve kurumlar mı, yoksa Osmanlı’ya karşı hareket edebilen dış güçler mi? Ardından bu aktörün meselede ne yaptığını denetle.",
+      "steps": [
+        "Kök, Cem meselesinin varlığını değil, iç sorundan dış siyaset konusuna dönüşmesini soruyor. Bu nedenle yalnız taht mücadelesinin başlangıcını anlatan bilgiyi yeterli sayma.",
+        "Bir dış gücün Cem’i elinde tutarak Osmanlı’nın kararlarını etkileme imkânını ara. “Baskı aracı” ifadesi, hanedan meselesinin başka devletlerin çıkarlarına bağlandığını gösterir.",
+        "Avrupa güçlerinin Cem’i Osmanlı’ya karşı kullanabilmesi dönüşümün doğrudan kanıtıdır. Başkent, ordunun varlığı veya tahta çıkış bilgisi bu dış müdahale ilişkisini tek başına kurmaz."
+      ],
+      "optionReasons": [
+        "Hanedan içinde başlaması, meselenin iç boyutunu açıklar; dış güçlerin müdahalesini veya diplomatik baskıyı göstermez.",
+        "Avrupa güçlerinin hanedan mensubunu Osmanlı’ya karşı baskıda kullanabilmesi, iç çekişmenin devletler arası ilişkilere taşındığını doğrudan gösterir.",
+        "İstanbul’un başkent kalması yönetim merkezine ilişkin bilgidir; Cem üzerinden dış müdahaleyi kanıtlamaz.",
+        "II. Bayezid’in tahta çıkması iç iktidar değişimini verir. Yabancı bir aktörün bu meseleyi kullanmasını içermez.",
+        "Kara ordusunun bulunması askerî teşkilata aittir; Cem’in dış siyaset aracı olmasını açıklayan özgül bağlantı değildir."
+      ],
+      "commonError": "İç sorunun başlangıç nedenini, onun uluslararası bir baskı aracına dönüştüğünün kanıtı yerine kullanmak.",
+      "check": "Yanıtında “hangi dış aktör, hangi kişi üzerinden, kime karşı etki kurabiliyor?” sorularını doldur. Üç ilişkiyi de seçeneğin kendi ifadesi karşılamalı."
+    }
+  },
+  {
+    "id": "dgo-3",
+    "identity": "[\"dgo-3\",\"1514 Çaldıran Muharebesi ile 1517 Ridaniye Muharebesi için doğru rakip–sonuç eşleştirmesi hangisidir?\",\"\",[\"Çaldıran: Memlûk, devlet sona erdi; Ridaniye: Safevi, devlet sona erdi.\",\"Çaldıran: Habsburg, Viyana alındı; Ridaniye: Venedik, Kıbrıs alındı.\",\"Çaldıran: Safevi, devlet sona erdi; Ridaniye: Memlûk, rekabet aynı devletle devam etti.\",\"Çaldıran: Safevi, rakip devlet sona ermedi; Ridaniye: Memlûk, devlet sona erdi.\",\"Çaldıran: Portekiz, okyanus denetimi kuruldu; Ridaniye: Safevi, Amasya imzalandı.\"],3,\"Çaldıran Safevilere karşı kazanıldı, ancak Safevi Devleti devam etti. Ridaniye Memlûklere karşıdır; Mısır’ın alınması ve Memlûk Devleti’nin sona ermesiyle ilişkilidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir muharebede ordunun yenilmesi, o orduyu gönderen devletin bütünüyle sona ermesiyle aynı sonuç değildir. Yenilginin ardından devlet varlığını sürdürebilir; “zafer” bilgisine ayrıca siyasi sonuç bağlanmalıdır.",
+        "I. Selim döneminin doğu ve güney harekâtları aynı rakibe yönelmez. Safeviler İran ve doğu sınırıyla, Memlûkler Suriye–Mısır hattıyla ilişkilidir. Olay eşleştirmesinde yıl, rakip ve sonuç birlikte denetlenir."
+      ],
+      "strategy": "İki savaş için ayrı satır aç; önce rakibi, sonra devletin devam edip etmediğini yaz. Seçeneğin iki satırının da bu eşleştirmeye uymasını iste.",
+      "steps": [
+        "1514 Çaldıran’ı doğudaki Safevi mücadelesine bağla. Osmanlı zaferi vardır; fakat Safevi Devleti daha sonraki Osmanlı siyasetinde de aktördür.",
+        "1517 Ridaniye’yi Mısır’daki Memlûk yönetimiyle ilişkilendir. Bu süreçte sona eren rakip devlet Memlûk Devleti’dir.",
+        "İki sonucu yan yana getir: Çaldıran–Safevi–devlet sürer; Ridaniye–Memlûk–devlet sona erer. Rakipleri doğru yazıp sonuçları ters veren seçeneği de ele."
+      ],
+      "optionReasons": [
+        "Rakipler yer değiştirmiştir: Çaldıran Safevilerle, Ridaniye Memlûklerle ilgilidir. Safevi Devleti’nin bu savaşlarla sona erdiği de söylenemez.",
+        "Çaldıran’ı Habsburg ve Viyana’ya, Ridaniye’yi Venedik ve Kıbrıs’a bağlayan iki eşleştirme de yanlış olay ve coğrafyaları birleştirir.",
+        "Rakip adları uygundur; sonuçlar ters verilmiştir. Safeviler Çaldıran’dan sonra sürerken Memlûk Devleti Ridaniye sürecinde sona erer.",
+        "Her iki rakip ve siyasi sonuç yerindedir: Safeviler yenilgiden sonra devam eder; Memlûk Devleti Mısır’ın alınmasıyla sona erer.",
+        "Portekiz Hint Okyanusu rekabetine aittir. Amasya ise 1555’te Safevilerle yapılan antlaşmadır; Ridaniye’nin sonucu değildir."
+      ],
+      "commonError": "Aynı hükümdarın kazandığı iki muharebeyi aynı rakip ve aynı siyasi sonuçla eşleştirmek.",
+      "check": "1555’te Safevilerle antlaşma yapılabilmesi hangi devletin 1514’te sona ermediğini doğrular? Bu kontrolü Mısır’da sona eren yönetimle karıştırma."
+    }
+  },
+  {
+    "id": "dgo-4",
+    "identity": "[\"dgo-4\",\"Bu bilgilere dayanarak hangi yargıya ulaşılabilir?\",\"Osmanlı Belgrad’ı 1521’de alarak Orta Avrupa harekâtı için bir üs kazandı. 1526 Mohaç zaferi Macaristan’daki siyasi dengeyi değiştirdi. 1529 Viyana Kuşatması şehrin alınmasıyla sonuçlanmadı.\",[\"Orta Avrupa’daki bütün şehirler 1529’da Osmanlı’ya katılmıştır.\",\"Bir stratejik üssün alınması sonraki bütün kuşatmaların başarıyla sonuçlanmasını sağlar.\",\"Mohaç Akdeniz’deki deniz üstünlüğünü sağlamıştır.\",\"Viyana’nın alınamaması Belgrad’ın daha önce alınmadığını gösterir.\",\"Osmanlı Orta Avrupa’da etkili olmuş, ancak her askerî hedefine ulaşamamıştır.\"],4,\"Belgrad ve Mohaç batıdaki askerî etkiyi gösterir; Viyana’nın alınamaması bütün hedeflere ulaşıldığı iddiasını sınırlar. Bir üs harekâtı kolaylaştırır, sonucu garanti etmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Stratejik üs; geçişi, ikmali ve sonraki askerî hareketi destekleyen yerdir. Böyle bir konumun elde edilmesi bir harekâtın koşullarını iyileştirir; her sonraki hedefin zorunlu olarak ele geçirileceği anlamına gelmez.",
+        "Meydan muharebesi açık alandaki orduların çatışması, kuşatma ise bir yerleşme veya kalenin alınmasına yönelik çevreleme ve baskı sürecidir. Kuşatmanın yapılmış olmasıyla şehrin ele geçirilmesi farklı bilgilerdir."
+      ],
+      "strategy": "Üç olay için “elde edilen başarı / ulaşılamayan hedef” ayrımını yap. Yorumu tek bir olaya göre değil, üç sonucun tamamını koruyup korumadığına göre değerlendir.",
+      "steps": [
+        "Belgrad’ın alınmasını, Orta Avrupa seferlerine dayanak sağlayan bir üs kazanımı olarak kaydet. Parça bu başarının gerçekleştiğini açıkça veriyor.",
+        "Mohaç’ın Macaristan’daki siyasi dengeyi değiştirdiğini ekle; ardından Viyana’nın alınamadığını ayrı bir sonuç olarak tut. Bu son bilgi önceki iki başarıyı silmez.",
+        "Hem batıdaki etkiyi hem Viyana’daki sınırı içeren yorum, Osmanlı’nın Orta Avrupa’da etkili olup her askerî hedefine ulaşamadığıdır. “Bütün şehirler” veya “garanti başarı” bu üç bilgiyle kurulamaz."
+      ],
+      "optionReasons": [
+        "Viyana’nın alınmadığı açıkken bütün Orta Avrupa şehirlerinin 1529’da Osmanlı’ya katıldığını söylemek verilen sonuçla çelişir.",
+        "Belgrad’ın üs olması bir avantajdır; Viyana’nın alınamaması bu avantajın her kuşatmayı başarıya zorlamadığını doğrudan gösterir.",
+        "Mohaç, Macaristan’daki kara muharebesidir. Akdeniz deniz üstünlüğünü bu olayın sonucu diye yazmak alanları karıştırır.",
+        "Sonraki kuşatmanın başarısızlığı, daha önceki Belgrad fethini geçersiz yapmaz; iki olayın zamanı ve sonucu ayrı verilmiştir.",
+        "Belgrad ve Mohaç bölgesel etkiyi, Viyana’nın alınamaması hedeflerin tümüne ulaşılamadığını gösterir; yorum her üç kanıtı da korur."
+      ],
+      "commonError": "Son başarısızlıktan önceki fetihlerin de olmadığını veya önceki başarılardan son hedefin de alındığını çıkarmak.",
+      "check": "Belgrad’ı başarı, Viyana’yı alınamayan hedef olarak seçeneğinin içine yerleştir. Yorum iki veriyi aynı anda taşıyamıyorsa kapsamı uygun değildir."
+    }
+  },
+  {
+    "id": "dgo-5",
+    "identity": "[\"dgo-5\",\"1555 Amasya Antlaşması’nın tarafı ve ayırt edici niteliği hangi seçenekte doğrudur?\",\"\",[\"Safevi Devleti – Osmanlı ile yapılan ilk resmî antlaşma\",\"Avusturya – Viyana’nın Osmanlı’ya bırakılması\",\"Venedik – Kıbrıs’ın Osmanlı’ya bırakılması\",\"Memlûk Devleti – Mısır’da devletin yeniden kurulması\",\"Portekiz – Hint Okyanusu’ndan bütünüyle çekilme\"],0,\"Amasya 1555’te Osmanlı–Safevi ilişkilerini düzenleyen ilk resmî antlaşmadır. Avusturya/Habsburg ilişkileriyle ilgili 1533 İstanbul Antlaşması farklıdır; Amasya sonsuz barış garantisi de değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Resmî antlaşma, siyasi tarafların ilişkilerini hükümlerle düzenleyen diplomatik işlemdir. Savaşta yenilgi, devletin sona ermesi ve antlaşma yapılması farklı gelişmelerdir; taraf adını sonuç türüyle birlikte öğrenmek gerekir.",
+        "16. yüzyılda Osmanlı’nın batısında Habsburglarla, doğusunda Safevilerle rekabeti vardı. Bir barış düzenlemesinin yapılması o cephedeki bütün sonraki rekabetin sonsuza dek biteceği anlamına gelmez."
+      ],
+      "strategy": "Önce Amasya’nın hangi cephedeki ilişkiye ait olduğunu hatırla; sonra aynı seçenekteki ayırt edici antlaşma niteliğini denetle. İki parça birlikte doğru olmalıdır.",
+      "steps": [
+        "1555 Amasya’yı Kanuni dönemindeki doğu siyasetiyle eşleştir. Batıdaki 1533 İstanbul Antlaşması bu sorudaki olay değildir.",
+        "Doğu siyasetindeki muhatap Safevi Devleti’dir. Memlûk Devleti 1517’de sona erdiği için 1555’te Mısır’da yeniden kurulduğu şeklinde bir sonuç ekleme.",
+        "Safevi tarafını, Osmanlı–Safevi arasındaki ilk resmî antlaşma niteliğiyle birleştir. Bu nitelik ne Viyana’nın teslimi ne Portekiz’in okyanustan çekilmesidir."
+      ],
+      "optionReasons": [
+        "Amasya’nın tarafı Safevilerdir; 1555 düzenlemesi iki devlet arasındaki ilk resmî antlaşma olarak ayırt edilir.",
+        "Avusturya batıdaki Habsburg ilişkisine aittir; Amasya onunla yapılmamıştır ve Viyana’nın teslimini sağlamamıştır.",
+        "Venedik ve Kıbrıs ilişkisi Doğu Akdeniz siyasetidir; 1555 Amasya’nın tarafı ve ayırt edici sonucu değildir.",
+        "Memlûk Devleti’nin Mısır’da yeniden kurulması Amasya’nın hükmü değildir. Antlaşma Safevilerle yapılmıştır.",
+        "Portekiz, Hint Deniz Seferleri’nin rakibidir; Amasya tarafı değildir ve antlaşma Hint Okyanusu’ndan bütünüyle çekilme getirmemiştir."
+      ],
+      "commonError": "Antlaşma adını yalnız bir tarihle ezberleyip cepheyi, tarafı ve antlaşmanın niteliğini başka olaylardan tamamlamak.",
+      "check": "1555 Amasya ile 1590 Ferhat Paşa’yı zaman çizgisine koy: ikisi de Safevi ilişkilerine aittir. Daha sonraki antlaşmanın varlığı, ilkinin sonsuz barış demek olmadığını ayrıca denetler."
+    }
+  },
+  {
+    "id": "dgo-6",
+    "identity": "[\"dgo-6\",\"Bu gelişmeler birlikte değerlendirildiğinde hangi yorum en uygundur?\",\"Osmanlı 1571’de Kıbrıs’ı Venedik’ten aldı. Aynı yıl İnebahtı’nda donanması ağır yenilgiye uğradı. Donanma yeniden kuruldu ve 1574’te Tunus Osmanlı yönetimine girdi.\",[\"İnebahtı’ndan sonra Osmanlı’nın bütün deniz faaliyetleri sona ermiştir.\",\"Kıbrıs’ın alınması İnebahtı’nda da zafer kazanıldığını gösterir.\",\"Büyük bir donanma kaybına rağmen Osmanlı’nın deniz siyaseti devam etmiştir.\",\"Yeniden inşa yapıldığına göre İnebahtı’nda maddi kayıp olmamıştır.\",\"Tunus 1574’te alındığı için Kıbrıs 1571’de kaybedilmiştir.\"],2,\"İnebahtı ağır bir deniz yenilgisidir. Yeniden kurulan donanma ve Tunus harekâtı deniz siyasetinin sürdüğünü gösterir. Devam eden güç, kayıpların yaşanmadığı veya önemsiz olduğu anlamına gelmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir devletin deniz kapasitesi gemiler, yetişmiş denizciler, tersaneler, ikmal ve finansmandan oluşur. Ağır bir kayıp bu kapasiteyi sarsabilir; yeniden inşa ise yeni kaynak kullanarak faaliyeti sürdürme çabasıdır.",
+        "Birbirinden farklı iki olay aynı yılda gerçekleşebilir ve farklı sonuçlar verebilir. Ada fethi, donanma yenilgisi ve sonraki sefer ayrı ayrı kaydedilir; birinin sonucu ötekinin yerine geçirilmez."
+      ],
+      "strategy": "Parçadaki gelişmeleri zaman sırasıyla iki başlıkta topla: kayıp kanıtı ve sonraki faaliyet kanıtı. Seçeceğin yorumun bunlardan birini yok saymamasını sağla.",
+      "steps": [
+        "1571 Kıbrıs’ın alınmasını toprak kazanımı, İnebahtı’nı donanmanın ağır yenilgisi olarak ayrı yaz. Aynı yıl olmaları aynı sonuç değildir.",
+        "Yeniden kurulan donanmayı ve 1574 Tunus harekâtını kayıptan sonraki faaliyet olarak işaretle. Bunlar deniz siyasetinin tamamen durduğu iddiasıyla bağdaşmaz.",
+        "Sonuç, ağır donanma kaybına rağmen deniz siyasetinin devam ettiğidir. Yeniden inşa kaybın yaşanmadığını söylemez; devamı açıklayan yeni bir aşamadır."
+      ],
+      "optionReasons": [
+        "Donanmanın yeniden kurulması ve Tunus’un alınması, İnebahtı sonrasında bütün deniz faaliyetlerinin sona erdiği iddiasına karşı açık kanıtlardır.",
+        "Kıbrıs’ın alınması ada fethidir; aynı yılki İnebahtı’nın sonucu parçada ağır yenilgi diye ayrıca verilir. Biri ötekini zafere dönüştürmez.",
+        "Yorum hem ağır yenilgiyi kabul eder hem yeniden inşa ve Tunus’la görülen devamı açıklar; parçanın bütün gelişmeleriyle uyumludur.",
+        "Yeniden inşa, zarar gören kapasiteyi yerine koyma girişimidir. Kaybın telafi edilmeye çalışılması, daha önce maddi kayıp olmadığına kanıt sayılamaz.",
+        "1574’te Tunus’un alınması, 1571’de alınan Kıbrıs’ın kaybedildiğini göstermez; parçada Kıbrıs’ın kaybına ilişkin bilgi bulunmaz."
+      ],
+      "commonError": "Deniz siyasetinin devamını görünce yenilgiyi inkâr etmek veya yenilgiyi görünce sonraki faaliyetleri yok saymak.",
+      "check": "İnebahtı cümlesini ve 1574 Tunus cümlesini ayrı ayrı oku. Yanıtın ilkine “ağır kayıp”, ikincisine “faaliyet sürüyor” karşılığını verebilmeli."
+    }
+  },
+  {
+    "id": "dgo-7",
+    "identity": "[\"dgo-7\",\"Bu parçada ticari ayrıcalıkların hangi iki amaçla kullanıldığı belirtilmektedir?\",\"16. yüzyılda Osmanlı yönetimi, bazı yabancı tüccarlara ticari ve hukuki kolaylıklar tanıyarak limanlara ticaret çekmeyi ve gümrük gelirini artırmayı amaçladı. Fransa’yla yakınlaşmasında Habsburg karşısında diplomatik ortak arayışı da etkili oldu.\",[\"Roma mirasını üstlenmek ve Viyana’yı doğrudan yönetmek\",\"Doğu sınırlarını kaldırmak ve bütün vergileri sona erdirmek\",\"Denizciliği bırakmak ve iç pazarı kapatmak\",\"Ticareti canlandırmak ve Habsburg karşısında siyasi denge kurmak\",\"Avrupa’daki bütün devletleri tek yönetimde birleştirmek ve rekabeti bitirmek\"],3,\"Tüccarları limanlara çekmek ve gümrük geliri sağlamak ekonomik; Habsburg karşısında ortak kazanmak siyasi amaçtır. Bu iki kanıt ayrıcalıkların bu bağlamdaki işlevini açıklar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kapitülasyon, belirli yabancı topluluklara ticari ve hukuki kolaylık tanıyan düzenlemedir. Böyle bir uygulamanın bir dönemde hangi amaçla kullanıldığını, o dönemin karar ve hedeflerinden çıkarmak gerekir.",
+        "Ekonomik amaç gelir, pazar ve ticaret hacmiyle; siyasi amaç devletler arası güç dengesi ve ortaklıklarla ilişkilidir. Bir uygulama iki alanda birden işlev görebilir. Sonraki yüzyıllardaki etkileri başlangıçtaki amaçla özdeş değildir."
+      ],
+      "strategy": "Parçada “amaçladı” ve “arayışı” sözlerine bağlı hedefleri çıkar. Bunları ekonomik ve siyasi alanlara ayırıp aynı iki hedefi birlikte karşılayan seçeneği bul.",
+      "steps": [
+        "Yabancı tüccarların limanlara çekilmesi ile gümrük gelirinin artmasını tek ekonomik hedef grubuna al: ticaretin ve gelirin canlandırılması.",
+        "Fransa’yla yakınlaşmadaki Habsburg karşısında ortak arayışını siyasi denge grubuna koy. Bu, ticaret kolaylığından farklı ama onunla birlikte yürüyebilen amaçtır.",
+        "Ekonomik canlanma ve Habsburg karşısında siyasi dengeyi birlikte veren seçeneği seç. Parça yönetim birliği, vergilerin tamamının kaldırılması veya denizcilikten vazgeçme hedefi içermez."
+      ],
+      "optionReasons": [
+        "Roma mirası iddiası unvan siyasetiyle ilgilidir; Viyana’yı doğrudan yönetme hedefi de parçada ticari ayrıcalıkların amacı olarak verilmemiştir.",
+        "Doğu sınırlarının kaldırılması ve bütün vergilerin sona ermesi parçada yoktur. Aksine gümrük gelirini artırma amacı açıkça belirtilir.",
+        "Ticaret çekme hedefi iç pazarı kapatma, limanları kullanma hedefi de denizcilikten vazgeçme anlamına gelmez; bu ikili verilen yönelime aykırıdır.",
+        "Tüccar ve gümrük bilgisi ekonomik canlanmayı, Fransa ortaklığı Habsburg karşısında siyasi dengeyi gösterir; iki amaç da doğrudan parçada bulunur.",
+        "Diplomatik ortak aramak, bütün Avrupa devletlerini tek yönetimde birleştirmek veya her rekabeti bitirmek değildir; parça böyle bir amaç belirtmez."
+      ],
+      "commonError": "Daha sonraki ekonomik zararları ilk kararın amacı diye geriye taşımak veya iki amaçtan yalnız birini okumak.",
+      "check": "Seçeneğinin her yarısına parçadan ayrı dayanak bağla: birine tüccar–gümrük, ötekine Fransa–Habsburg ilişkisi. İki yarı da aynı dönemden destek almalı."
+    }
+  },
+  {
+    "id": "dgo-8",
+    "identity": "[\"dgo-8\",\"Osmanlı’nın Hint Deniz Seferleri hakkında aşağıdaki değerlendirmelerden hangisi doğrudur?\",\"\",[\"Temel rakip Safevilerdir ve bütün seferler Hazar Denizi’nde yapılmıştır.\",\"Portekiz bölgeden bütünüyle çıkarılamamış; buna karşılık Kızıldeniz ve Basra çevresindeki mücadele sürmüştür.\",\"Bütün seferler dünya denizlerinde kalıcı ve rakipsiz Osmanlı egemenliği kurmuştur.\",\"Seferlerin ticaret yolları ve bölgesel yardım talepleriyle hiçbir ilişkisi yoktur.\",\"Osmanlı bölgeye donanma göndermeden yalnız kara savaşları yapmıştır.\"],1,\"Hint Deniz Seferleri Portekiz’le rekabet, ticaret yolları ve bölgesel destek amaçlarıyla ilişkilidir. Portekiz bütünüyle uzaklaştırılamadı; ancak Osmanlı’nın Kızıldeniz ve Basra çevresindeki etkisi ve mücadele devam etti.\"]",
+    "guidance": {
+      "knowledge": [
+        "Hint Okyanusu’ndaki Portekiz denizciliği, Ümit Burnu çevresindeki yeni güzergâh üzerinden ticaret yollarında rekabet doğurdu. Kızıldeniz ve Basra Körfezi, Osmanlı’nın bu mücadeleye bağlandığı başlıca alanlardandı.",
+        "Seferin hedefi, kullanılan askerî araçlar ve gerçekleşen sonuç ayrı başlıklardır. Deniz filosu göndermek deniz harekâtıdır; ticaret yollarını koruma isteği ekonomik, bölgesel yardım talepleri siyasi bağlantı taşır."
+      ],
+      "strategy": "Seçenekleri üç süzgeçten geçir: gerçek rakip ve coğrafya, seferin araç ve amaçları, ulaşılan sonucun kapsamı. Bir seçenekteki doğru coğrafya yanlış “tam hâkimiyet” iddiasını kurtarmaz.",
+      "steps": [
+        "Mücadelenin denizci rakibini Portekiz, alanını Hint Okyanusu–Kızıldeniz–Basra hattı olarak kur. Safevi ve Hazar eşleştirmesi başka bir siyaset alanını buraya taşır.",
+        "Osmanlı’nın donanma göndererek ticaret yolları ve yardım isteyen bölgesel güçlerle ilgili hedefler izlediğini hatırla. “Yalnız kara” ve “ticaretle ilgisiz” ifadelerini bu bilgilerle denetle.",
+        "Portekiz bütünüyle uzaklaştırılmadı; buna karşılık Kızıldeniz ve Basra çevresindeki mücadele sürdü. Hem sınırlı sonucu hem devamı koruyan değerlendirme uygundur."
+      ],
+      "optionReasons": [
+        "Rakip ve alan yanlıştır: bu seferler Safevilere karşı Hazar’da değil, Portekiz rekabeti bağlamında Hint Okyanusu bağlantılarındadır.",
+        "Portekiz’in tamamen çıkarılamadığını belirtirken Kızıldeniz ve Basra çevresindeki devam eden mücadeleyi de korur; hedefle gerçekleşen sonucu doğru ayırır.",
+        "Bütün dünya denizlerinde kalıcı rakipsizlik, seferlerin elde ettiği sonuç değildir. Portekiz’in bölgedeki varlığının sürmesi bile bu kapsamı karşılamaz.",
+        "Ticaret güzergâhlarını koruma ve bölgesel yardım talepleri seferlerin amaçları arasındadır; bunlarla “hiçbir ilişki yok” demek yanlıştır.",
+        "Bölgeye filolar gönderilmiştir. “Donanma göndermeden yalnız kara savaşları” ifadesi deniz harekâtının kendisini yok sayar."
+      ],
+      "commonError": "Tam hedefe erişilememesini hiç faaliyet veya etki olmamasıyla eşitlemek; buna karşılık her seferi sınırsız zafer saymak.",
+      "check": "Portekiz’in sürmesiyle Osmanlı’nın Kızıldeniz–Basra faaliyeti aynı anda mümkün mü? Seçenek bu ikisini çelişki saymadan açıklayabilmeli."
+    }
+  },
+  {
+    "id": "dgo-9",
+    "identity": "[\"dgo-9\",\"Bu bilgilerden hangisi çıkarılamaz?\",\"Osmanlı 1526 Mohaç zaferiyle Macaristan’daki siyasi dengeyi etkiledi. 1538 Preveze’de Haçlı donanmasına karşı zafer kazandı. 1555 Amasya Antlaşması’yla Safevilerle ilişkilerini düzenledi.\",[\"Osmanlı kara ve deniz gücünü farklı bölgelerde kullanmıştır.\",\"Diplomasi, askerî harekâtın yanında bir dış siyaset aracı olmuştur.\",\"Doğudaki ve batıdaki rakipler aynı değildir.\",\"Osmanlı farklı siyasi dengeleri etkilemiştir.\",\"Osmanlı’ya karşı koyabilecek bütün devletler ortadan kalkmıştır.\"],4,\"Mohaç batıdaki kara gücünü; Preveze Akdeniz donanmasını; Amasya doğudaki diplomatik düzenlemeyi gösterir. Bu örnekler bütün devletlerin veya rakiplerin ortadan kalktığını kanıtlamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kara harekâtı, deniz savaşı ve antlaşma bir devletin dış siyasette kullandığı farklı araçlardır. Birden fazla coğrafyaya etki edebilmek, bütün diğer devletleri ortadan kaldırmış olmakla aynı ölçü değildir.",
+        "“Çıkarılamaz” kökü, kanıttan zorunlu veya doğrudan destek almayan yargıyı arar. Böyle bir yargının tarih boyunca hiçbir zaman gerçekleşmediğini kanıtlamak gerekmez; verilen bilgilerin iddiayı taşıyıp taşımadığı denetlenir."
+      ],
+      "strategy": "Üç olayı alan–araç–muhatap olarak çözümle. Her seçeneğin istediği kapsam için bu üç kayıttan somut dayanak göster; dayanağı olmayan genişletmeyi ayır.",
+      "steps": [
+        "Mohaç’ı batıda kara gücü ve Macaristan, Preveze’yi Akdeniz’de donanma, Amasya’yı doğuda Safevilerle antlaşma olarak kaydet.",
+        "Bu kayıtlar hem farklı coğrafyaları hem askerî ve diplomatik araçları verir. İlk dört yargının bu alan, araç veya etki bilgilerinden hangisine dayandığını eşleştir.",
+        "Üç başarı bütün karşı koyabilecek devletlerin yok edildiğini kanıtlamaz. Özellikle antlaşmanın Safevi tarafı olması bir siyasi muhatabın varlığını gösterir; çıkarılamayan yargı bütün rakiplerin ortadan kalkmasıdır."
+      ],
+      "optionReasons": [
+        "Mohaç kara, Preveze deniz gücüne örnektir; Macaristan ve Akdeniz kayıtları farklı bölgeleri de verir. Bu yargı desteklenir.",
+        "Amasya, savaşların yanında antlaşmanın da kullanıldığını gösterir; dolayısıyla diplomasinin dış siyaset aracı olduğu çıkarılabilir.",
+        "Mohaç’ın Macaristan bağlamı ile Amasya’nın Safevi tarafı aynı rakip değildir; doğu ve batı muhataplarının farklılığı desteklenir.",
+        "Macaristan’daki dengeye etki, Akdeniz zaferi ve doğu ilişkilerinin düzenlenmesi farklı siyasi dengelere etkiyi birlikte gösterir.",
+        "Parçada bütün karşı koyabilecek devletlerin sona erdiğine ilişkin veri yoktur. Bölgesel etkiyi rakiplerin tamamının yokluğuna genişleten bu yargı çıkarılamaz."
+      ],
+      "commonError": "Olumsuz kökü atlayıp parçada desteklenen ilk yargıyı işaretlemek veya geniş etkiyi bütün rakiplerin yokluğu saymak.",
+      "check": "Her desteklenen yargıya bir olay adı yaz. “Bütün karşı koyabilecek devletler” iddiasına aynı biçimde tüm kapsamı kapsayan dayanak gösterilemiyorsa çıkarım sınırı aşılmıştır."
+    }
+  },
+  {
+    "id": "dgo-10",
+    "identity": "[\"dgo-10\",\"Coğrafi keşifler ve Osmanlı ticareti hakkında en uygun değerlendirme hangisidir?\",\"\",[\"Yeni deniz yolları ticaretin göreli ağırlığını değiştirmiş; Akdeniz ticareti bütünüyle sona ermemiştir.\",\"Keşiflerin tek nedeni 1453’te bütün dünya ticaretinin durmasıdır.\",\"Yeni deniz yollarının devletler arası güç ve gelir dengelerine etkisi olmamıştır.\",\"Denizcilik teknolojisi ve hükümdar desteği keşiflerde rol oynamamıştır.\",\"Atlantik ticaretinin artması Akdeniz’de tek bir geminin bile kalmadığını kanıtlar.\"],0,\"Coğrafi keşiflerin teknolojik, ekonomik ve siyasi birden çok nedeni vardır. Atlantik güzergâhları güçlenirken Akdeniz ticareti devam etti; göreli ağırlık değişimi mutlak sona eriş değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Coğrafi keşifler, yeni deniz güzergâhlarının bulunması ve kullanılmasını içeren uzun bir süreçtir. Ticari arayışlar, denizcilik bilgisi, gemi teknolojisi ve siyasi destek bu sürecin farklı etkenleridir.",
+        "Göreli ağırlık, bir yolun ticaretteki payının başka yollarla karşılaştırılmasıdır. Bir yolun payının azalması, üzerinde hiç ticaret kalmaması demek değildir; pay, toplam hacim ve faaliyetin varlığı farklı ölçülerdir."
+      ],
+      "strategy": "Her değerlendirmede hem keşiflerin nedenlerini hem ticaretin değişen coğrafyasını kontrol et. Pay değişimiyle faaliyetin sona ermesini ayrı sorular olarak değerlendir.",
+      "steps": [
+        "Yeni güzergâhlar arayışında ekonomik hedeflerin yanında gemi ve seyir imkânları ile hükümdar desteğini de tut. Keşifleri yalnız 1453’te ticaretin tamamen durmasına bağlayan açıklama bunları dışarıda bırakır.",
+        "Atlantik yollarının güçlenmesini ticaretin dağılımında değişim olarak oku. Bu değişimden Akdeniz’de bütün seferlerin bittiği sonucunu çıkarmak için ayrıca yokluk kanıtı gerekirdi.",
+        "Yeni yolların göreli ağırlığı değiştirdiğini ve Akdeniz ticaretinin sürdüğünü birlikte söyleyen değerlendirme uygundur. Ne “hiç etki yok” ne “tek bir gemi kalmadı” ifadesi bu süreci karşılar."
+      ],
+      "optionReasons": [
+        "Yeni yolların pay ve güç dağılımını değiştirmesiyle Akdeniz’de ticaretin sürmesini birlikte verir; göreli değişim ile mutlak bitişi doğru ayırır.",
+        "1453’te bütün dünya ticareti durmamıştır. Keşifleri bu tek ve yanlış öncüle bağlamak ekonomik, teknik ve siyasi etkenleri de siler.",
+        "Yeni güzergâhlar gelir ve güç dağılımını etkilemiştir; “etkisi olmamıştır” ifadesi bu değişimleri yok sayar.",
+        "Gemi ve seyir teknolojisiyle hükümdar desteği keşifleri mümkün kılan etkenlerdendir; bunları dışlamak sürecin araç ve desteğini eksiltir.",
+        "Atlantik’in büyümesi, Akdeniz’de hiç gemi kalmadığını mantıken göstermez. Göreli önem kaybı faaliyetin mutlak yokluğuna eşit değildir."
+      ],
+      "commonError": "Bir güzergâhın öneminin azalmasını bütün ticaretin durması sanmak veya çok nedenli keşif sürecini tek bir olaya bağlamak.",
+      "check": "Bir yolun payı azalsa da ticaret yapması mümkün olabilir. Yanıtındaki “azaldı / bitti” ayrımını bu olasılıkla ve keşiflerin birden çok nedeni olmasıyla yeniden denetle."
+    }
+  },
+  {
+    "id": "snd-1",
+    "identity": "[\"snd-1\",\"‘Omzu ağrıyan çocuk dinlendi.’ cümlesindeki omzu sözcüğünde görülen ses olayı ve başlangıç biçimi hangisidir?\",\"\",[\"Ünlü daralması; oma\",\"Ünlü düşmesi; omuz\",\"Ünsüz yumuşaması; omut\",\"Ünsüz türemesi; omz\",\"Ünlü türemesi; omz\"],1,\"Omuz + u → omzu. Kökün ikinci u’su düşmüştür; sondaki u ektir. Daralma için önceki a/e’nin dar ünlüye dönüşmesi gerekirdi; burada bir ses eksilir. Omz biçiminde uydurulmuş kök kurulmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ses olayını bulurken sözcüğün anlamını koruyan ek öncesi biçimle eklenmiş biçimi karşılaştırırız. Ek, kendi seslerini sözcüğe getirir; bu sesler, kökün önceden taşıdığı seslerden ayrı izlenir.",
+        "Ünlü düşmesinde var olan bir ünlü eksilir; daralmada a veya e, ı/i/u/ü seslerinden birine dönüşür. Örneğin akıl + ı → aklı karşılaştırmasında kökün ikinci ı’sı eksilir, sona gelen ı ise ekin sesidir."
+      ],
+      "strategy": "Cümledeki organ adının eksiz biçimini bul; bu biçimdeki ünlüleri, ekin ünlüsünü ve son sözcükte kalan sesleri ayrı sütunlarda karşılaştır.",
+      "steps": [
+        "Cümlede ağrıyan organı adlandıran sözcüğün eksiz biçimi omuzdur. Son biçimde görünmeyen harfi geri kurmak için omz gibi yeni bir kök uydurma.",
+        "Omuz + u kuruluşunda iki ünlü kökte, bir ünlü ekte bulunur. Omzu sonucunda kökün ikinci u’su yoktur; en sondaki u korunmuş ektir.",
+        "Bir sesin eksildiği bu karşılaştırma ünlü düşmesidir. Başlangıç biçimi omuz olan ve olayı düşme diye adlandıran eşleştirme iki koşulu birlikte karşılar."
+      ],
+      "optionReasons": [
+        "Oma cümledeki organ adının başlangıcı değildir. Ayrıca a’nın dar bir ünlüye dönüşmesi gösterilemediği için daralma çözümü kurulamaz.",
+        "Omuz anlamı koruyan başlangıçtır; ikinci u’nun eksilmesiyle omzu oluşur. Hem olay adı hem başlangıç biçimi doğrudur.",
+        "Omut başlangıcı geçerli değildir; kök sonunda bir p/ç/t/k sesinin yumuşaması da gösterilmemiştir. Kayıp ses ünlüdür.",
+        "Omz, sonuçtan uydurulmuş eksik bir başlangıçtır. Önceki biçime göre fazladan bir ünsüz belirmemiştir; türeme yoktur.",
+        "Omz köküyle türeme kurulamaz. Sondaki u, ekin kendi sesidir; asıl değişim omuz tabanındaki bir u’nun düşmesidir."
+      ],
+      "commonError": "Sözcüğün sonundaki u’yu kökten sanarak asıl düşen u’yu görememek ya da omz biçimini kök kabul etmek.",
+      "check": "Cümlenin organ anlamını koruyarak omuz ve omzu biçimlerini ses ses hizala. Daralma deseydin hangi a/e’nin hangi dar ünlüye dönüştüğünü göstermen gerekirdi; burada böyle bir dönüşüm yoktur."
+    }
+  },
+  {
+    "id": "snd-2",
+    "identity": "[\"snd-2\",\"Kitabı ve kitapta sözcüklerinin ses olaylarını doğru ayıran seçenek hangisidir?\",\"\",[\"İkisinde de kökün p’si değişmiştir.\",\"Kitabı türeme, kitapta düşmedir.\",\"Kitabı benzeşme, kitapta daralmadır.\",\"Kitabı yumuşama, kitapta ek başında benzeşmedir.\",\"İki sözcükte de ses olayı yoktur.\"],3,\"Kitap + ı → kitabı biçiminde p→b kök sonu yumuşamasıdır. Kitap + da → kitapta biçiminde p korunur; ek başı d→t olur, benzeşmedir. Aynı kökten gelmek aynı olayı taşımak demek değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yumuşamada ünlü ek öncesindeki kök veya gövde sonu p/ç/t/k sesi b/c/d/g/ğ biçimine dönüşebilir. Benzeşmede ise sert ünsüzden sonra ek başındaki c/d/g sesinin ç/t/k biçimi kullanılır; değişen taraflar farklıdır.",
+        "Bir kök farklı eklerle farklı ses olayları gösterebilir. İnceleme için hem ek öncesi tabanı hem ekin başlangıcını bilmek gerekir; son sözcüklerin benzer görünmesi olayların aynı olduğunu kanıtlamaz."
+      ],
+      "strategy": "Kitap tabanını iki satırda sabit tut; ekin ilk sesi ve tabanın son sesindeki değişimleri ayrı ayrı işaretle. Ardından her değişimi gerçekleştiği tarafa göre adlandır.",
+      "steps": [
+        "Kitabı için kitap + ı kuruluşunu yaz. Ek ünlüyle başlar; tabanın son p’si sonuçta b olmuştur.",
+        "Kitapta için kitap + da karşılaştırmasını kur. Tabanın p’si durur; sert p’den sonra ekin ilk d’si t biçimindedir.",
+        "İlk değişim taban sonunda yumuşama, ikincisi ek başında benzeşmedir. İki olayın yönünü doğru veren karşılaştırmayı seç."
+      ],
+      "optionReasons": [
+        "Kitabı’nda p→b vardır; kitapta’da p korunur. İki kök sonunun da değiştiği iddiası ikinci sözcükle uyuşmaz.",
+        "İlkinde fazladan ses türemesi, ikincide ses düşmesi yoktur. Her iki örnekte de bir ünsüzün niteliği değişir; ses sayısı artmaz veya azalmaz.",
+        "İlkinde ek başı benzeşmesi değil kök sonu yumuşaması vardır; ikincide de a/e’nin daralması değil d→t değişimi görülür.",
+        "Kitabı’ndaki p→b yumuşama, kitapta’daki ek başı d→t benzeşmedir. Değişimin yeri ve adı iki sözcükte de uygundur.",
+        "Taban ve ek karşılaştırması ilkinde p→b, ikincide d→t değişimini açıkça gösterir; “iki sözcükte de yok” değerlendirmesi bu kanıtları dışlar."
+      ],
+      "commonError": "Kitapta’daki sert p’yi değişen ses sanmak; benzeşmede sertliğe uyum sağlayan sesin ek başında olduğunu atlamak.",
+      "check": "Son biçimlerde taban sonunu kapatıp yalnız ekleri, sonra ekleri kapatıp yalnız taban sonunu karşılaştır. Değişimin hangi tarafta kaldığı olay adını yeniden denetler."
+    }
+  },
+  {
+    "id": "snd-3",
+    "identity": "[\"snd-3\",\"Hangi sözcükte kök sonundaki geniş ünlünün daralması vardır?\",\"\",[\"bekliyor\",\"gülüyor\",\"sütü\",\"burnu\",\"evi\"],0,\"Bekle + yor → bekliyor biçiminde e→i daralır. Gülüyor’da kök gül- olduğundan son a/e yoktur. Burnu ünlü düşmesi, evi olağan ekleme, sütü ise son ünsüzü koruyan örnektir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Geniş ünlüler a, e, o, ö; dar ünlüler ı, i, u, ü’dür. Daralma bir dar ünlünün varlığı değil, önceki geniş ünlünün dar ünlüye dönüşmesidir; bu soru özellikle taban sonundaki a/e değişimini arar.",
+        "Şimdiki zaman ekinin önünde taban sonundaki a/e daralabilir. Ünsüzle biten bir tabana ekle gelen dar ünlü ise önceki a/e’nin değişmesi değildir. Tabanı fiilin anlamını koruyarak geri kurmak bu ayrımı görünür yapar."
+      ],
+      "strategy": "Her adayın ek öncesi tabanını geri getir; yalnız bu tabanın son a/e’si sonuçta dar ünlü olmuşsa işaretle. Ekten gelen ünlüyle kaybolan ünlüyü bu dönüşümden ayır.",
+      "steps": [
+        "Bekliyor ve gülüyor için sırasıyla bekle- ve gül- tabanlarını yaz. İlki e, ikincisi l ile biter; başlangıçlar aynı koşulu taşımaz.",
+        "Bekle- tabanındaki son e, bekliyor biçiminde i olmuştur. Gülüyor’daki ü ise taban sonundaki bir a/e’nin dönüşümü değildir.",
+        "Diğer adaylarda süt + ü, burun + u ve ev + i kuruluşlarını denetle: olağan ekleme veya düşme vardır. İstenen genişten dara dönüşümü bekliyor kanıtlar."
+      ],
+      "optionReasons": [
+        "Bekle + yor → bekliyor karşılaştırmasında taban sonundaki geniş e, dar i’ye dönüşür; sorunun aradığı daralma burada vardır.",
+        "Gül- ünsüzle biten tabandır; daralacak son a/e yoktur. Görülen ek ünlüsü, tabandaki geniş bir ünlünün dönüşümü değildir.",
+        "Süt + ü biçiminde tabanın ü’sü aynı kalır ve ek kendi ü’sünü getirir; taban sonu a/e daralması gösterilmez.",
+        "Burun + u → burnu biçiminde ikinci u eksilir. Başlangıçtaki bir a/e başka bir dar ünlüye dönüşmediği için olay daralma değildir.",
+        "Ev + i kuruluşunda i ekin sesidir; ev tabanında değişen son a/e yoktur. Olağan ekleme daralma sayılmaz."
+      ],
+      "commonError": "-yor ekini veya son biçimdeki herhangi bir dar ünlüyü tek başına daralma kanıtı kabul etmek.",
+      "check": "Yanıtın için “önce şu geniş ünlü vardı, sonra şu dar ünlü oldu” cümlesini doldur. Önceki geniş ünlüyü gösteremiyorsan yalnız ek ünlüsünü görmüş olabilirsin."
+    }
+  },
+  {
+    "id": "snd-4",
+    "identity": "[\"snd-4\",\"Bir öğrenci ‘p, ç, t, k ile biten bütün kökler ünlü ek alınca zorunlu yumuşar’ diyor. Hangisi bu iddiaya geçerli bir karşı örnektir?\",\"\",[\"kitap → kitabı\",\"kanat → kanadı\",\"renk → rengi\",\"ağaç → ağacı\",\"süt → sütü\"],4,\"Süt + ü → sütü örneğinde t korunur ve biçim doğrudur. Öteki dört örnekte son ünsüz değişir. Aday sonların bulunması her sözcükte zorunlu değişim anlamına gelmez; bir karşı örnek mutlak iddiayı çürütür.\"]",
+    "guidance": {
+      "knowledge": [
+        "p, ç, t, k ile biten sözcükler ünlü ek önünde yumuşayabilir; fakat bu seslerle biten her sözcükte değişim zorunlu değildir. Ses olayının varlığı doğru kullanılan önceki ve sonraki biçim üzerinden gösterilir.",
+        "“Bütün” ve “zorunlu” sözcüklerini içeren önerme için tek geçerli karşı örnek yeterlidir: önermenin koşulu sağlanır ama öne sürdüğü sonuç gerçekleşmez. Koşulu taşımayan örnek ise bu iddiayı sınamaz."
+      ],
+      "strategy": "Her çiftte hem taban sonunun aday ünsüzlerden olması hem ekin ünlüyle başlaması koşulunu kontrol et; sonra sonuç biçiminde aynı ünsüzün korunup korunmadığına bak.",
+      "steps": [
+        "Beş taban da p/ç/t/k grubundan bir sesle biter ve verilen ekler ünlüyle başlar. Bu nedenle çiftler iddianın koşulunu sınamaya uygundur.",
+        "Kitap → kitabı için p→b; kanat → kanadı için t→d; renk → rengi için k→g; ağaç → ağacı için ç→c değişimlerini işaretle. Bunlar iddia edilen değişimi gösteren örneklerdir.",
+        "Süt + ü → sütü çiftinde t aynı kalır; biçim yine doğru kullanımdır. Koşulu sağlayıp zorunlu değişimi göstermeyen bu örnek evrensel iddiayı çürütür."
+      ],
+      "optionReasons": [
+        "Kitap → kitabı çiftinde p, b olur. Bu çift değişimin gerçekleştiğini gösterir; zorunluluk iddiasına karşı örnek değildir.",
+        "Kanat → kanadı çiftinde t, d olur. İddiadaki değişimi doğrulayan bir örnek, bütün örneklerin böyle olduğunu kanıtlamaz ama iddiayı da çürütmez.",
+        "Renk → rengi çiftinde k, g olur; son ünsüz korunmadığı için aranan karşı örnek olamaz.",
+        "Ağaç → ağacı çiftinde ç, c olur. Bu da yumuşamanın gerçekleştiği örnektir; değişmeden kalan tabanı göstermez.",
+        "Süt ünlü ek alır fakat t korunur: sütü. Koşulların sağlanıp zorunlu sonuç oluşmaması “bütün kökler yumuşar” iddiasını çürütür."
+      ],
+      "commonError": "Yumuşamayı gösteren başarılı bir örneği, her sözcükte yumuşama zorunluluğuna karşı örnek diye seçmek.",
+      "check": "Seçtiğin çift için “aday son ünsüz var mı, ek ünlü mü, son ünsüz aynı mı?” sorularının üçünü yanıtla. Karşı örnekte üçüne de evet demelisin."
+    }
+  },
+  {
+    "id": "snd-5",
+    "identity": "[\"snd-5\",\"Kitapçığı sözcüğünün kitap + cık → kitapçık → kitapçığı kuruluşunda hangi iki olay sırasıyla gerçekleşir?\",\"\",[\"Ünlü düşmesi ve ünlü türemesi\",\"Daralma ve ünsüz düşmesi\",\"Benzeşme ve yumuşama\",\"Yumuşama ve ulama\",\"Ünsüz türemesi ve daralma\"],2,\"İlk basamakta sert p’den sonra -cık ekinin c’si ç olur: benzeşme. Sonra kitapçık + ı → kitapçığı biçiminde gövde sonu k→ğ olur: yumuşama. Kitap kökünün p’si b olmadığından iki basamağı karıştırma.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir sözcük art arda ek aldığında her ekleme basamağı ayrı bir ses çevresi oluşturabilir. Önceki basamağın sonunda oluşan gövde, sonraki ekin bağlandığı tabandır.",
+        "Sert ünsüzden sonra ek başında c→ç gibi değişim benzeşmedir. Ünlü ek geldiğinde taban sonundaki k→ğ gibi değişim yumuşamadır. Son ünsüzün kökte mi, daha sonra türeyen gövdede mi bulunduğu ayrıca belirtilir."
+      ],
+      "strategy": "Verilen üç biçimi iki komşu geçişe ayır; kitap→kitapçık ve kitapçık→kitapçığı satırlarında değişen sesi ve bulunduğu tarafı göster. Olay adlarını bu sıra korunarak eşleştir.",
+      "steps": [
+        "İlk geçişte kitap + cık kuruluşuna bak. Kitabın p’si korunurken sert p’den sonraki ek başı c, ç olur; sonuç kitapçık’tır.",
+        "İkinci geçişin tabanı artık kitapçık’tır. Ünlüyle başlayan -ı gelince bu gövdenin son k’si ğ olur; sonuç kitapçığı’dır.",
+        "İlk basamak ek başı benzeşmesi, ikinci basamak gövde sonu yumuşamasıdır. Kitap kökünün p’si iki basamakta da b’ye dönüşmüş değildir."
+      ],
+      "optionReasons": [
+        "Üç biçim arasında ünlü eksilmesi veya fazladan ünlü belirmesi gösterilmez. Değişen sesler c→ç ve k→ğ ünsüzleridir.",
+        "Geniş ünlünün daralması veya ünsüzün kaybolması yoktur; her iki basamakta bir ünsüz başka ünsüz biçimine dönüşür.",
+        "İlk eklemede c→ç benzeşmesi, ikinci eklemede k→ğ yumuşaması vardır; olayların sırası doğru verilmiştir.",
+        "İlk olay yumuşama değildir; ayrıca ulama ayrı sözcükler arasındaki söyleyiş bağıdır, bu sözcük içi ekleme zincirinin ikinci olayı olamaz.",
+        "Fazladan ünsüz belirmemiş ve taban sonundaki a/e daralmamıştır. Bu iki ad verilen dönüşümleri karşılamaz."
+      ],
+      "commonError": "Son sözcüğü tek hamlede kitap köküne bağlayıp yumuşayan ünsüzü p sanmak veya olayların sırasını ters yazmak.",
+      "check": "Her okun üstüne yalnız değişen harfi yaz: c→ç, ardından k→ğ. Ek başı ve gövde sonu etiketleriyle olay adlarının sırasını yeniden kontrol et."
+    }
+  },
+  {
+    "id": "snd-6",
+    "identity": "[\"snd-6\",\"Azıcık, evi ve hissi sözcükleri için doğru karşılaştırma hangisidir?\",\"\",[\"Üçünde de ünlü türemesi vardır.\",\"Evi’nde i, kökteki e’nin daralmasıdır.\",\"Hissi’nde bir ünsüz düşmüştür.\",\"Azıcıkta ünlü türemesi, evi’nde olağan ekleme, hissi’nde ünsüz türemesi vardır.\",\"Azıcık ile hissi yalnız yumuşama gösterir.\"],3,\"Az + cık → azıcık karşılaştırmasında fazladan ı; his + i → hissi karşılaştırmasında fazladan s görünür. Ev + i → evi biçimindeki i ise ekin kendisidir, ünlü türemesi değildir. Türeme için başlangıç, ek ve sonuç birlikte incelenir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Türeme, geçerli başlangıç ve ekin kendi seslerine göre ek bir sesin ortaya çıkmasıdır. Sözcüğe ekin doğal olarak getirdiği ses, sırf başlangıç tabanında yok diye türeme sayılmaz.",
+        "Ünlü türemesiyle ünsüz türemesinin ayrımı, fazladan ortaya çıkan sesin türüne bağlıdır. Dönüşümü kurarken taban + ek toplamını son biçimle karşılaştırmak, hangi sesin eklendiğini sayılabilir kılar."
+      ],
+      "strategy": "Üç sözcük için taban, ek ve son biçimi ayrı yaz; ekin zaten taşıdığı sesi ayırdıktan sonra kalan gerçek fazlalığı sınıflandır.",
+      "steps": [
+        "Az + cık ile azıcık biçimini karşılaştır. Taban ve -cık seslerine ek olarak arada bir ı belirir; bu fazladan ses ünlüdür.",
+        "Ev + i toplamı evi’yi doğrudan verir; i zaten ektir. His + i toplamında ise bir s beklenirken hissi sonucunda iki s görülür.",
+        "Sırayı koruyarak azıcık için ünlü türemesi, evi için olağan ekleme, hissi için ünsüz türemesi sonucunu birleştir."
+      ],
+      "optionReasons": [
+        "Evi’deki i ekin kendisidir; hissi’de fazladan beliren ses s ünsüzüdür. Bu yüzden üçünü ünlü türemesi saymak iki örnekte yanlıştır.",
+        "Ev tabanındaki e yerinde durur; i ekle gelir. Bir e→i dönüşümü olmadığı için daralma açıklaması kurulamaz.",
+        "His başlangıcında tek s, hissi sonucunda iki s vardır; bir ünsüz eksilmemiş, s ikizleşmiştir.",
+        "Azıcıkta fazladan ı, evi’de doğrudan -i eklemesi, hissi’de fazladan s bulunur; üç ayrı karşılaştırma doğru eşleştirilmiştir.",
+        "Azıcıkta ı, hissi’de s eklenir. Taban sonundaki p/ç/t/k’nin başka sese dönüşmesiyle kurulan yumuşama bu olayları açıklamaz."
+      ],
+      "commonError": "Tabanda bulunmayan bütün son sesleri, ekin kendi seslerini çıkarmadan türeme saymak.",
+      "check": "Üç son biçimden taban ile ekin kendi seslerini ayrı renklerle işaretlediğini düşün. Gerçek türemede bu iki gruba ait olmayan fazladan bir ses kalmalı; olağan eklemede kalmamalı."
+    }
+  },
+  {
+    "id": "snd-7",
+    "identity": "[\"snd-7\",\"Kavun sözcüğü için doğru değerlendirme hangisidir?\",\"\",[\"Büyük uyuma uyar, küçük uyuma uymaz; iki hecelidir.\",\"Her iki uyuma uyar; üç hecelidir.\",\"Büyük uyuma uymaz, küçük uyuma uyar; iki hecelidir.\",\"İki uyuma da uymaz; tek hecelidir.\",\"Küçük uyuma uymadığı için kavın yazılmalıdır.\"],0,\"a ve u kalın olduğu için büyük ünlü uyumu vardır. Düz a’dan sonra yuvarlak u gelmesi küçük uyuma uymaz. İki ünlü iki hece verir: ka-vun. Uyum ölçütü sözcüğün yazımını kendiliğinden değiştirmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Büyük ünlü uyumu kalınlık–incelikle ilgilidir: a, ı, o, u kalın; e, i, ö, ü incedir. Çok heceli sözcüğün ünlüleri tek kalınlık grubundaysa büyük uyum sağlanır.",
+        "Küçük ünlü uyumunda düz ünlüden sonra düz; yuvarlak ünlüden sonra dar-yuvarlak veya geniş-düz ünlü beklenir. Türkçede hece sayısı ünlü sayısıyla denetlenir. Bu uyum ölçüleri sözlüğe yerleşmiş sözcüğün yazımını kendiliğinden değiştirmez."
+      ],
+      "strategy": "Kavun’un ünlülerini sırayla çıkar; aynı dizi üzerinde önce kalınlık grubunu, sonra komşu ünlülerin dudak özelliğini kontrol et. En son ünlü adedinden hece sayısını bul.",
+      "steps": [
+        "Kavun’daki ünlü dizisi a, u’dur. İkisi de kalın gruptadır; büyük ünlü uyumunun aradığı kalınlık birlikteliği vardır.",
+        "Küçük uyum için a’dan u’ya geçişi denetle: a düz, u yuvarlaktır. Düzden sonra düz beklendiği için bu geçiş küçük uyuma uymaz.",
+        "İki ünlü iki hece verir: ka-vun. Sonucu büyük uyum var, küçük uyum yok, iki hece diye üç parçalı olarak eşleştir; sözcüğü kavın diye değiştirme."
+      ],
+      "optionReasons": [
+        "a ve u kalındır; fakat düz a’dan sonra yuvarlak u küçük uyumu bozar. İki ünlü ka-vun biçiminde iki hece verir; üç bilgi de doğrudur.",
+        "a→u geçişi küçük uyuma uygun değildir. Ayrıca sözcükte üç değil iki ünlü bulunduğundan üç hece açıklaması da yanlıştır.",
+        "İki ünlü de kalın olduğundan büyük uyum vardır; düzden yuvarlağa geçiş nedeniyle küçük uyum yoktur. Uyum sonuçları ters yazılmıştır.",
+        "Büyük uyum sağlanır ve sözcük iki hecelidir. Hem iki uyumsuzluk hem tek hece iddiası ünlü dizisiyle uyuşmaz.",
+        "Uyuma uymamak bir sözcüğü yanlış yazılmış yapmaz. Doğru kavun biçimini kavın’a dönüştürmek, inceleme ölçütünü yazım emri sanmaktır."
+      ],
+      "commonError": "Bir uyuma uyan sözcüğün diğerine de uyacağını sanmak veya uyumsuzluğu yazım yanlışı gibi düzeltmek.",
+      "check": "Ünlüleri a ve u olarak yeniden say; biri için kalın/düz/geniş, öteki için kalın/yuvarlak/dar de. Kalınlık ortaklığıyla dudak geçişinin farklı sonuç verdiğini doğrula."
+    }
+  },
+  {
+    "id": "snd-8",
+    "identity": "[\"snd-8\",\"‘Uzak ev’ ifadesi arada durak olmadan söyleniyor. Hangi açıklama doğrudur?\",\"\",[\"İki sözcük mutlaka bitişik yazılmalıdır.\",\"Araya yazıda y harfi konmalıdır.\",\"Ulama imkânı vardır; ünsüzle bitişten ünlüyle başlangıca söyleyiş bağı kurulur.\",\"Ünlü daralması oluşur; ev artık iv olur.\",\"İlk sözcük ünlüyle bittiği için ulama olamaz.\"],2,\"Uzak k ünsüzüyle biter, ev e ünlüsüyle başlar. Verilen duraksız söyleyiş koşulu ulama imkânı sağlar. Bu bir yazı birleştirmesi veya yardımcı harf türetmesi değildir; gerçek söyleyiş metinde koşul olarak verilmiştir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ulama, ayrı sözcüklerin söyleyişte bağlanmasıdır: ilk sözcüğün ünsüzle bitmesi, sonraki sözcüğün ünlüyle başlaması bu bağa elverişli bir sınır oluşturur. Sözcükler arasında durak bulunması akıcı bağı keser.",
+        "Söyleyiş bağıyla yazım aynı işlem değildir. Ulamada iki sözcük ayrı yazılmayı sürdürür ve yazıya yeni harf katılmaz. Yardımcı y gibi sesler ise sözcük–ek sınırının başka bir dil bilgisi olgusudur."
+      ],
+      "strategy": "İfadenin iki sözcüğü arasındaki sınırı incele: son ses, ilk ses ve durak koşulunu birlikte kontrol et. Sonra söyleyiş sonucunu yazıdaki değişiklik iddialarından ayır.",
+      "steps": [
+        "Uzak sözcüğü k ünsüzüyle biter. Ev sözcüğü e ünlüsüyle başlar; sınır ünsüz→ünlü biçimindedir.",
+        "Soru arada durak olmadan söylendiğini açıkça veriyor. Bu koşulla iki sözcük arasında ulama imkânı vardır; durak bilgisini varsaymana gerek yoktur.",
+        "Doğru açıklama ünsüz sonuyla ünlü başlangıcı arasında söyleyiş bağı kurar. Yazıyı birleştirmek, araya y katmak veya ev’in e’sini değiştirmek bu sonucun parçası değildir."
+      ],
+      "optionReasons": [
+        "Ulama ayrı sözcüklerin söyleyiş bağıdır; uzak ve ev bu yüzden bitişik yazılmaz. Söyleyişten zorunlu bitişik yazım çıkarılamaz.",
+        "Bu sınırda yazıya y eklenmez. Yardımcı sesle ekleme, iki ayrı sözcüğün ulama yoluyla bağlanmasından farklıdır.",
+        "Uzak’ın k’si ile ev’in e’si ve verilen duraksız söyleyiş, ulama imkânını karşılar. Açıklama gereken üç koşulu doğru kullanır.",
+        "Ev tabanındaki e’nin i’ye dönüştüğüne ilişkin bir ses olayı yoktur. Ulama bir a/e daralması değildir ve iv biçimi kurulmaz.",
+        "Uzak’ın son sesi a değil k’dir; sözcük ünsüzle biter. Seçenek ilk sözcüğün ses sınırını yanlış tanımlar."
+      ],
+      "commonError": "Sözcüğün son harfi yerine son ünlüsüne bakmak veya akıcı söyleyişi bitişik yazma kuralı sanmak.",
+      "check": "Uzak ile ev arasına gerçek bir durak koyduğunu düşün: yazım aynı kalırken bağlanma koşulu değişir. Bu karşılaştırma ulama ile yazımın ayrı olduğunu denetler."
+    }
+  },
+  {
+    "id": "snd-9",
+    "identity": "[\"snd-9\",\"‘Çocuk ağzını açıp kitabı gösterdi; küçücük bir çizimi inceledik.’ cümlesindeki ağzını, kitabı ve küçücük sözcüklerinde sırasıyla hangi olaylar kanıtlanır?\",\"\",[\"Daralma, ulama, türeme\",\"Ünsüz türemesi, ünlü düşmesi, daralma\",\"Benzeşme, daralma, yumuşama\",\"Ünlü türemesi, ünsüz düşmesi, benzeşme\",\"Ünlü düşmesi, yumuşama, ünsüz düşmesi\"],4,\"Ağız + ı biçiminde kökün ikinci ı’sı düşer; ardından gelen çekimler bu olayı silmez. Kitap + ı → kitabı p→b yumuşaması; küçük + cük → küçücük k kaybı, ünsüz düşmesidir. Olay adları ancak bu başlangıçlarla kanıtlanır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir cümlede sorulan her sözcük kendi ek öncesi biçimine göre incelenir. Ünlü kaybı, ünsüzün başka ünsüze dönüşmesi ve ünsüz kaybı farklı olaylardır; cümle içindeki sıraları ayrıca korunmalıdır.",
+        "Sonradan gelen çekim ekleri, daha önce gerçekleşmiş ses olayını ortadan kaldırmaz. Örneğin akıl tabanının aklı biçimindeki ünlü düşmesi, bu biçime başka çekimler eklendiğinde de önceki–sonraki karşılaştırmayla gösterilebilir."
+      ],
+      "strategy": "İstenen üç sözcük için ayrı önce–sonra zinciri kur; her zincirde kaybolan ya da değişen sesi işaretledikten sonra olay adlarını kökteki sırayla birleştir.",
+      "steps": [
+        "Ağzını sözcüğünü ağız tabanına geri götür. Ağız + ı aşamasında kökün ikinci ı’sı eksilir; sonraki n ve ı bu ünlü düşmesini silmez.",
+        "Kitabı için kitap + ı → kitabı yaz: p→b yumuşaması vardır. Küçücük için küçük + cük → küçücük yaz: tabanın son k’si eksilir.",
+        "Ağzını, kitabı, küçücük sırasına göre ünlü düşmesi–yumuşama–ünsüz düşmesi dizisini oluştur. Bir sözcüğün doğru olayını başka sıraya taşıyan seçenek uygun değildir."
+      ],
+      "optionReasons": [
+        "Ağzını’nda a/e daralması değil ı kaybı vardır; kitabı sözcükler arası ulama değildir; küçücükte de ek ses türemesi yerine k kaybı görülür.",
+        "İlk örnekte fazladan ünsüz belirmez; ikinci örnekte ünlü düşmez; üçüncüde geniş ünlü daralmaz. Üç olay adı da dönüşümlerle uyuşmaz.",
+        "Ağzını ek başı benzeşmesi, kitabı ünlü daralması değildir. Son örnekte de k başka sese dönüşmez, kaybolur.",
+        "İlkinde ünlü türemesi yerine ünlü düşmesi, ikincide ünsüz düşmesi yerine p→b yumuşaması vardır. Üçüncüde benzeşme değil k düşmesi bulunur.",
+        "Ağız→ağzı ünlü düşmesi, kitap→kitabı yumuşama, küçük→küçücük ünsüz düşmesidir; olayların hem türü hem sırası doğrudur."
+      ],
+      "commonError": "Üç sözcüğün olaylarını bulduktan sonra sıra denetimini atlamak veya küçücükte hece sayısına bakıp kaybolan k’yi görememek.",
+      "check": "Cevaptaki üç terimin altına sırasıyla “ı eksildi / p, b oldu / k eksildi” yaz. Harfin türü ve değişimin yönü her terimle örtüşmeli."
+    }
+  },
+  {
+    "id": "snd-10",
+    "identity": "[\"snd-10\",\"‘Yarın başlayacak.’ cümlesindeki başlayacak sözcüğü hakkında hangisi doğrudur?\",\"\",[\"Başla kökündeki a, ı’ya daralmıştır.\",\"Başla- tabanının a’sı korunur; -yor önündeki daralma bu gelecek zaman biçimine genellenmez.\",\"Kök başlangıçta başlı olduğu için ses olayı yoktur.\",\"Her y harfi ünsüz türemesi olduğu için iki y yazılmalıdır.\",\"Doğru yazım başlıyacak olmalıdır.\"],1,\"Başla- tabanının a’sı başlayacak biçiminde durur. Yardımcı y ek sınırındadır; başlıyor örneğindeki -yor daralması -(y)acak önüne taşınmaz. Yanlış bir başlangıç kökü veya başlıyacak yazımı kurmak kuralı hatalı genişletir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kök, sözcüğün anlamıyla ilişkili en küçük başlangıç birimidir; gövde en az bir yapım eki almış biçimdir. Baş + -la kuruluşundaki başla- türemiş bir fiil tabanıdır. Ses olaylarında karşılaştırılan ek öncesi taban mutlaka kök olmak zorunda değildir.",
+        "a/e ile biten fiil tabanlarında -yor önündeki daralma, bütün y’li eklemelerin ortak kuralı değildir. Gelecek zaman eki -(y)acak/-(y)ecek ile şimdiki zaman eki ayrı çevrelerdir; yardımcı y’nin varlığı tek başına ünlünün daraldığını göstermez."
+      ],
+      "strategy": "Önce karşılaştıracağın fiil tabanını ve kullanılan zaman ekini belirle; sonra tabanın son ünlüsünü son biçimde izle. Başka bir zaman ekinin kuralını bu eklemeye taşımadan karar ver.",
+      "steps": [
+        "Cümledeki fiilin ek öncesi tabanı başla-, kullanılan ek gelecek zaman -(y)acak’tır. Başla- biçimini morfolojik kökle eşitleme; kök baş, -la yapım ekidir.",
+        "Başla- tabanındaki son a’yı başlayacak içinde bul: ünlü a olarak durur; aradaki y yardımcı sestir. Bir a→ı dönüşümü gösterilmez.",
+        "Bu gelecek zaman biçiminde tabanın a’sı korunur. Başlıyor’daki -yor daralmasını buraya taşıyan başlıyacak yazımı ve “başlı” başlangıcı uygun değildir."
+      ],
+      "optionReasons": [
+        "Başlayacak biçiminde taban sonundaki a durur; ı’ya dönüşme yoktur. Seçenek başka bir ek önündeki değişimi buraya taşır.",
+        "Başla- türemiş tabanının a’sı korunur. Gelecek zaman biçiminin ayrı koşulunu gözeten ve -yor daralmasını genellemeyen açıklama doğrudur.",
+        "Ek öncesi taban başlı değil başla-’dır. Yanlış bir başlangıç kurarak değişim yokluğu kanıtlanamaz.",
+        "Her y ünsüz türemesi değildir; burada ek sınırındaki yardımcı y bulunur. İkinci bir y eklemek için ses veya ek kanıtı yoktur.",
+        "Standart yazım başlayacak’tır. Başlıyacak biçimi, -yor önündeki daralmayı gelecek zaman ekine yanlış geneller."
+      ],
+      "commonError": "Ses incelemesindeki tabana kök demek veya her y gördüğünde önceki a/e’nin mutlaka daralacağını düşünmek.",
+      "check": "Başla- tabanını başlayacak ve başlıyor biçimleriyle ayrı ayrı hizala. İlkinde a’nın kalması, ikincide ı’ya dönüşmesi aynı tabanın farklı eklerde farklı davrandığını gösterir."
+    }
+  },
+  {
+    "id": "wrd-1",
+    "identity": "[\"wrd-1\",\"‘Balıklar yüzüyordu.’ cümlesindeki balıklar sözcüğünün kökü ve yapısı hangi seçenekte doğrudur?\",\"\",[\"Bal; türemiş\",\"Balı; birleşik\",\"Balık; basit\",\"Balık; birleşik\",\"Bal; basit\"],2,\"Kök balık’tır; bal ile anlam ilişkisi bu çözümlemeyi kurmaz. -lar çokluk çekimidir, yeni taban türetmez; sözcük basittir. Her anlamlı görünen ilk harf dizisi kök değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Güncel sözcük çözümlemesinde kök, sözcüğün anlamıyla ilişkisini koruyan en küçük anlamlı başlangıçtır. Başta görülen kısa bir parça başka bir sözcük olarak anlamlı olsa bile bütünle gereken anlam ilişkisi yoksa kök seçilemez.",
+        "Basit sözcük, yapım ekiyle veya sözcük birleşmesiyle kurulmamıştır; çekim eki alabilir. Çokluk eki bir varlığın sayısını değiştirir, o varlık için yeni sözlük tabanı türetmez. Bu nedenle kök ve yapı türü ayrı denetlenir."
+      ],
+      "strategy": "Cümlede adlandırılan varlığın anlamını koruyan başlangıcı seç; kalan parçanın yeni taban mı yoksa sayı ilişkisi mi kurduğunu belirle. Kök ve yapı etiketini birlikte doğrula.",
+      "steps": [
+        "Cümlede yüzen varlık balıktır. Başlangıcı bal olarak kesince bal ile balık arasındaki güncel türetme anlamı kurulamaz; balı biçimi de kök değildir.",
+        "Balık + lar kuruluşunda -lar çokluk bildirir. Ayrı bir yeni varlık adı türeten yapım eki veya iki sözcüğün birleşmesi yoktur.",
+        "Kök balık olarak korunur; yalnız çokluk çekimi aldığı için yapı basittir. Bu iki bilgiyi aynı anda veren eşleştirmeyi seç."
+      ],
+      "optionReasons": [
+        "Bal parçası balık anlamının kökü değildir; -ık diye bir türetme kurmak için gereken anlam ilişkisi yoktur. Türemiş etiketi de bu yanlış ayrımdan doğar.",
+        "Balı güncel başlangıç kökü değildir. Ayrıca sözcük birden çok sözcüğün birleşmesiyle kurulmadığından birleşik açıklaması uygun değildir.",
+        "Anlamı koruyan kök balık’tır. -lar çokluk çekimi olduğundan yapım veya birleşme olmaksızın basit yapı sürer.",
+        "Kök adı doğru olsa da birleşik yapı etiketi yanlıştır; balık ile -lar iki bağımsız sözcüğün birleşmesi değildir.",
+        "Basit yapı sonucu uygun olsa da bal kökü, cümledeki varlığın anlam ilişkisini karşılamaz; eşleştirmenin iki parçası da doğru olmalıdır."
+      ],
+      "commonError": "En kısa anlamlı görünen harf dizisini kök kabul etmek veya çokluk ekini yeni sözcük türeten ek sanmak.",
+      "check": "Kök diye seçtiğin parçadan cümledeki varlığın anlamına geçişi açıklayabiliyor musun? Sonra -lar kaldırıldığında yeni bir sözlük anlamının değil yalnız çokluğun eksildiğini kontrol et."
+    }
+  },
+  {
+    "id": "wrd-2",
+    "identity": "[\"wrd-2\",\"‘Aşçı çorbayı tuzladı.’ cümlesindeki tuzladı sözcüğünün kuruluşu hangisidir?\",\"\",[\"Ad kökü + addan fiil yapımı + geçmiş zaman çekimi\",\"Fiil kökü + çokluk + iyelik\",\"Ad kökü + yalnız iki çekim eki\",\"İki adın birleşmesi + kişi eki\",\"Fiil kökü + yalnız gelecek zaman\"],0,\"Tuz addır; -la yeni tuzla- fiilini türetir, -dı görülen geçmiş zaman çekimidir. Son tabana -mak getirmek ilk kökün fiil olduğu anlamına gelmez. Bir yapım ve bir çekim basamağı vardır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ad kökü varlık veya kavramı adlandırır; fiil tabanı ise iş, oluş veya hareket bildirir. Bir ad, yapım ekiyle fiil tabanına dönüşebilir. Son biçime -mak getirebilmek yalnız o son tabanın fiil olduğunu gösterir; ilk kökün türünü tek başına göstermez.",
+        "Yapım eki yeni bir taban kurar; zaman çekimi ise eylemin gerçekleşmesini zamana bağlar. Taş + la- örneğinde yeni eylem türetilirken taşladı içindeki geçmiş zaman bu eylemi çekime sokar."
+      ],
+      "strategy": "Sondaki geçmiş zaman katmanını ayır; kalan eylemin dayandığı ilk adı bul. Her geçişte tabanın türünü ve ekin yeni anlam mı, zaman mı kurduğunu kaydet.",
+      "steps": [
+        "Tuzladı biçiminden geçmiş zaman -dı’yı ayırınca tuzla- eylemi kalır. Bu son tabanın fiil olması, ilk başlangıcın da fiil olduğunu göstermez.",
+        "Tuzla- eylemini tuz + -la olarak geri kur. Tuz bir maddenin adıdır; -la bu maddeden tuz katma eylemini türetir.",
+        "Zincir ad kökü tuz, addan fiil yapımı -la, geçmiş zaman çekimi -dı biçimindedir. İki ekin ayrı görevini ve sırasını koruyan kuruluş uygundur."
+      ],
+      "optionReasons": [
+        "Tuz adı üzerine -la eylem türetir; ardından -dı geçmiş zaman çekimi gelir. Kök türü, yapım ilişkisi ve zaman görevi doğru sıradadır.",
+        "Başlangıç tuz bir ad köküdür; sözcükte çokluk veya iyelik katmanı yoktur. Bu sıra tabanın anlamını karşılamaz.",
+        "-la yeni tuzla- fiilini türettiği için iki eki de çekim saymak yanlıştır. -dı’nın çekim olması önceki türetmeyi silmez.",
+        "İki ad birleşmemiştir; tek ad kökü bir ekle eyleme dönüşür. Gösterilen -dı da kişi eki değil geçmiş zaman ekidir.",
+        "İlk kök fiil değildir ve kullanılan zaman gelecek zaman değildir. Tuz + la + dı kuruluşu hem yapım hem geçmiş zaman içerir."
+      ],
+      "commonError": "Tuzlamak diyebilince tuz’u da fiil kökü saymak veya -dı’nın çekim oluşunu bütün sözcükte yapım yokluğu sanmak.",
+      "check": "Zamanı değiştirip tuzluyor biçimini düşün: tuz→tuzla- anlam geçişi korunur, yalnız zaman çekimi değişir. Böylece türetme ile zamanın iki ayrı katman olduğu doğrulanır."
+    }
+  },
+  {
+    "id": "wrd-3",
+    "identity": "[\"wrd-3\",\"Gözlükçülerimizden sözcüğündeki yapım ve çekim eki sayısı hangisidir?\",\"\",[\"1 yapım, 4 çekim\",\"3 yapım, 2 çekim\",\"0 yapım, 5 çekim\",\"2 yapım, 3 çekim\",\"5 yapım, 0 çekim\"],3,\"Göz + lük + çü + ler + imiz + den. -lük ve -çü iki yapım; -ler çokluk, -imiz iyelik, -den ayrılma olmak üzere üç çekimdir. Gövdeyi ses uyumu değişimlerinden dolayı fazladan çoğaltma.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yapım eki sayısı, her ara tabanda oluşan yeni sözlük anlamına göre bulunur. Birden fazla türetmede önceki gövde yeni bir yapım ekinin tabanı olabilir; gövde sayısıyla bütün eklerin toplamı aynı ölçü değildir.",
+        "Çokluk, iyelik ve ayrılma hâli adın sayısını, sahibini ve cümledeki ilişkisini kuran çekim görevleridir. Eklerin uyumlu biçimleri veya ek sınırındaki ses değişimi bağımsız bir yeni ek sayılmaz."
+      ],
+      "strategy": "Sözcüğü anlamlı ara tabanlardan geçirerek aç; önce yeni adlandırma üreten ekleri say, ardından çoğulluk–sahiplik–ayrılma ilişkilerini ayrı sayaca ekle.",
+      "steps": [
+        "Göz → gözlük → gözlükçü zincirini kur: ilk ek bir nesne adı, ikincisi o nesneyle ilgili meslek/kişi adı türetir. İki ayrı yeni taban oluşur.",
+        "Kalan -ler, -imiz ve -den parçalarını çokluk, bizimlik iyeliği ve ayrılma hâli olarak adlandır. Bunlar yeni sözlük tabanı kurmaz.",
+        "Yapım sayacı -lük ve -çü ile 2; çekim sayacı -ler, -imiz, -den ile 3 olur. Beş eki bu iki gruba doğru ayıran seçeneği seç."
+      ],
+      "optionReasons": [
+        "İki ayrı türetmeden biri eksik sayılmış, bir çekim fazladan yazılmıştır. Gözlük ve gözlükçü iki ayrı anlam basamağıdır.",
+        "Çokluk, iyelik veya ayrılmadan biri yapım sayılmış görünmektedir; yeni taban kuran basamaklar üç değil ikidir.",
+        "Gözlük ve gözlükçü yeni tabanlarını yok sayar. Bütün beş ekin çekim olduğu söylenemez.",
+        "-lük ve -çü iki yapım; -ler, -imiz ve -den üç çekim ekidir. Her ek görevine uygun gruba konmuştur.",
+        "Son üç ek sayıyı, sahibi ve ayrılma ilişkisini kurar; hepsini yapım saymak çekim görevlerini yok eder."
+      ],
+      "commonError": "Sözcüğün uzunluğunu eklerin hepsinin yapım olduğu sanısına dönüştürmek veya ses benzeşmesini fazladan ek saymak.",
+      "check": "İki sayacı topla: 2 + 3 = 5. Sonra bu toplamı göz + lük + çü + ler + imiz + den ayrımındaki kök dışındaki beş parçayla ve her parçanın anlam göreviyle karşılaştır."
+    }
+  },
+  {
+    "id": "wrd-4",
+    "identity": "[\"wrd-4\",\"Evlerimizden sözcüğü niçin yapı bakımından basittir?\",\"\",[\"Çünkü yalnız bir harften oluşan kökü vardır.\",\"Çünkü hiç ek almamıştır.\",\"Çünkü bütün çekim ekleri aynı zamanda yapım ekidir.\",\"Çünkü ayrı yazılan bütün sözcükler basittir.\",\"Çünkü ev + ler + imiz + den kuruluşunda yapım veya birleşme yok, yalnız çekim vardır.\"],4,\"Çokluk, iyelik ve ayrılma aynı ev tabanını cümleye bağlar; yeni gövde türetilmez. Basit sözcük çekim alabilir. Bu nedenle ‘hiç ek almamış’ açıklaması doğru gerekçe değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yapı bakımından basitlik, kısa olmak veya hiç ek almamak değildir. Yapım eki bulunmaması ve tabanın sözcük birleşmesiyle oluşmaması gerekir; çekim ekleri basit bir tabanı cümle içinde kullanabilir.",
+        "Adın çokluğu, sahibi ve bulunduğu/yöneldiği/ayrıldığı yer gibi ilişkiler çekimle kurulur. Sözcüğün biçimi uzasa da her ek yalnız bu ilişkileri kuruyorsa yeni bir sözlük tabanı oluşmaz."
+      ],
+      "strategy": "Evlerimizden biçimini son ekten başlayarak görevleriyle ayır; ardından kökten yeni bir taban türeten basamak veya birleşme olup olmadığını ara. Gerekçeyi ek yokluğuna değil ek türüne dayandır.",
+      "steps": [
+        "Evlerimizden’i ev + ler + imiz + den olarak çöz. Kök ev’dir; sözcüğün kökü tek harften oluşmaz ve sözcük eksiz değildir.",
+        "Üç eki sırayla çokluk, bizimlik iyeliği ve ayrılma hâli olarak adlandır. Her biri ev tabanının cümledeki kullanımını düzenler.",
+        "Yapım basamağı ve başka sözcükle birleşme bulunmadığından yapı basittir. Doğru gerekçe “yalnız çekim var”dır; “hiç ek yok” değildir."
+      ],
+      "optionReasons": [
+        "Ev kökü iki harflidir. Kökün harf sayısı zaten basitlik ölçütü değildir; yapım ve birleşme incelenir.",
+        "Sözcük -ler, -imiz, -den eklerini almıştır. Basit yapı, bu çekim eklerinin bulunmasını engellemez.",
+        "Çekim ekleri burada yapım değildir; çokluk, sahiplik ve ayrılma ilişkilerini kurar. İki ek sınıfını özdeş saymak gerekçeyi bozar.",
+        "Ayrı yazılan sözcükler türemiş veya birleşik yapıda da olabilir; yazım tek başına yapı türünü belirlemez. Bu örneğin ek görevleri incelenmelidir.",
+        "Ev + ler + imiz + den kuruluşunda yalnız çekim vardır; yeni taban veya birleşme bulunmaması basit yapı için doğru gerekçedir."
+      ],
+      "commonError": "“Basit sözcük hiç ek almaz” diyerek doğru yapı sonucunu yanlış bir gerekçeye bağlamak.",
+      "check": "Çekimleri çıkarınca ev tabanı kalır; ekleri tek tek geri takınca yalnız sayı, sahiplik ve ayrılma ilişkisi eklenir. Her aşamada yeni sözlük adı oluşup oluşmadığını denetle."
+    }
+  },
+  {
+    "id": "wrd-5",
+    "identity": "[\"wrd-5\",\"‘Onun kalemi kırıldı.’ ve ‘Kalemi çekmeceye koydum.’ cümlelerindeki kalemi sözcüğünün son -i eki sırasıyla hangi görevlerdedir?\",\"\",[\"İki cümlede de belirtme\",\"İyelik, belirtme\",\"Çokluk, kişi\",\"İki cümlede de fiilimsi\",\"Belirtme, iyelik\"],1,\"İlkinde onun kalemi sahiplik ilişkisiyle öznedir; -i iyeliktir. İkincide neyi koydum sorusunun belirli nesnesi kalemidir; -i belirtme hâlidir. Aynı harf, cümlede farklı ilişki kurabilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "İyelik eki, adın kime veya neye ait olduğunu bildirir. Belirtme hâli eki ise eylemin belirli nesnesini işaretler. Aynı -ı/-i görünüşü bu iki görevi de taşıyabileceğinden cümledeki ilişki esas alınır.",
+        "Özne, yüklemin bildirdiği işi yapan veya durumu taşıyan ögedir; belirli nesne ise eylemin etkilediği ve “neyi?” sorusuyla bulunan ögedir. İyelikli adın cümlede özne olması mümkündür; iyelik tek başına nesne görevi demek değildir."
+      ],
+      "strategy": "İki cümlede kalemi’nin yüklemle ve sahip bildiren sözle ilişkisini ayrı ayrı incele. Aynı yazılı ek için görevi ikinci cümleye otomatik kopyalama.",
+      "steps": [
+        "“Onun kalemi kırıldı” cümlesinde onun sözü sahibi gösterir; kırılan şey kalemidir. Son -i, “onun kalemi” sahiplik ilişkisini kurar.",
+        "“Kalemi çekmeceye koydum” cümlesinde “neyi koydum?” diye sor. Kalemi, koyma eyleminin belirli nesnesidir; son -i bu nesne ilişkisini kurar.",
+        "Sıra ilk cümlede iyelik, ikincide belirtme hâlidir. İki görevin aynı sesle görünmesi, aynı görev oldukları anlamına gelmez."
+      ],
+      "optionReasons": [
+        "İlk cümlede kalemi özne durumundadır ve onun sözüyle sahiplik kurar; buradaki -i’yi belirtme saymak ilk ilişkiyi kaçırır.",
+        "İlk -i “onun” sahipliğiyle iyelik, ikinci -i koyma eyleminin belirli nesnesiyle belirtmedir. Cümlelerin sırasıyla uyumludur.",
+        "Son -i, bu iki ad üzerinde ne çokluk ne kişi çekimidir; sahiplik ve nesne ilişkileri incelenmektedir.",
+        "Kalem bu cümlelerde fiil tabanı değildir ve -i eylem adı türetmez; iki eki de fiilimsi saymak sözcüğün türünü yanlış kurar.",
+        "Görevleri ters sıraya koyar. Onun sözü ilk cümlede sahipliği; koydum yüklemi ikinci cümlede belirli nesne ilişkisini açıklar."
+      ],
+      "commonError": "Aynı kalemi yazımını görünce iki cümlede de tek görev seçmek veya iyelikli özneyi nesne sanmak.",
+      "check": "İlk cümlede sahip sorusunun yanıtını, ikinci cümlede eylemin etkilediği nesneyi ayrı belirt. “Kimin?” ile “neyi?” aynı ilişkiyi sormadığı için iki ekin ayrımı korunmalı."
+    }
+  },
+  {
+    "id": "wrd-6",
+    "identity": "[\"wrd-6\",\"‘Onun kitabını okudum.’ cümlesindeki kitabını sözcüğünde hangisi doğrudur?\",\"\",[\"Yalnız iyelik eki vardır, hâl eki yoktur.\",\"n yeni fiil türeten yapım ekidir.\",\"Yalnız iki tane yapım eki vardır.\",\"İyelik ve belirtme birlikte bulunur; aradaki n yardımcı sestir.\",\"p’nin b olması ayrı bir yapım eki sayılır.\"],3,\"İlk ı üçüncü kişi iyeliği, son ı belirtme hâlidir; n yardımcı sestir. Kökün p→b yumuşaması ses olayıdır, yapım eki değildir. Sözcükte aynı anda iki çekim ilişkisi kurulabilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir ad hem sahiplik hem eylemin belirli nesnesi olma ilişkisini taşıyabilir. Böyle durumlarda iyelik ve belirtme ekleri aynı sözcükte yer alır; görevlerden birinin varlığı ötekini engellemez.",
+        "Üçüncü kişi iyeliğinden sonra hâl eki önünde yardımcı n görülebilir; ayrıntılı kaynaklarda zamir n’si adı da kullanılır. Bu ses yeni sözcük türeten ek değildir. Kök sonundaki yumuşama da ayrı bir yapım eki oluşturmaz."
+      ],
+      "strategy": "Önce “onun” ile kurulan sahipliği, sonra okuma eyleminin nesnesini işaretle. Bu iki ilişkiyi ek zincirine yerleştirip yardımcı sesi ve ses değişimini morfolojik ek sayısından ayır.",
+      "steps": [
+        "“Onun kitabı” parçasını kur: kitap + ı biçimindeki ilk ı, üçüncü kişinin sahipliğini bildirir. Ünlü ekle kitap kökünün p’si b biçiminde görünür.",
+        "“Neyi okudum?” sorusuna kitabını yanıtı gelir. Sahiplikli biçime yardımcı n ve belirtme -ı eklenir: kitap + ı + n + ı.",
+        "Aynı sözcükte iyelik ve belirtme birlikte bulunur; n yardımcı sestir. Ne n’yi ne p→b değişimini yeni fiil veya yapım eki olarak say."
+      ],
+      "optionReasons": [
+        "İyelik vardır; fakat son -ı ayrıca okuma eyleminin belirli nesnesini kurar. “Hâl eki yok” ifadesi bu son görevi siler.",
+        "n bu kuruluşta yardımcı sestir; yeni fiil türeten bir ek değildir. Sonuç zaten adın nesne görevidir.",
+        "Görülen iki ı sahiplik ve belirtme çekimleridir; iki yapım eki saymak görevlerini yanlış sınıflandırır.",
+        "İlk ı iyelik, son ı belirtme hâlidir; n bu ikisinin arasında yardımcı sestir. İlişkiler ve ek sırası doğru verilmiştir.",
+        "p→b kökün ünlü ek önündeki ses değişimidir. Yeni gövde türeten bağımsız bir ek olmadığı için yapım sayısına eklenemez."
+      ],
+      "commonError": "İki aynı ı’dan yalnız birini görevli saymak; aradaki n veya kökün b ile görünmesini ayrı yapım eki yapmak.",
+      "check": "Önce yalnız onun kitabı sözünü, sonra aynı sahiplikli adı okudum yükleminin nesnesi olarak kullan. İkinci kuruluşta eklenen nesne ilişkisini son -ı ile ayrı gösterebilmelisin."
+    }
+  },
+  {
+    "id": "wrd-7",
+    "identity": "[\"wrd-7\",\"‘Burada koşma!’ ve ‘Koşma alışkanlığı edindim.’ cümlelerindeki -ma hakkında doğru karşılaştırma hangisidir?\",\"\",[\"İlkinde olumsuzluk, ikincide isim-fiil görevi vardır.\",\"İkisinde de çokluk eki vardır.\",\"İlkinde isim-fiil, ikincide olumsuzluk vardır.\",\"İkisinde de iyelik eki vardır.\",\"Aynı biçim her cümlede zorunlu aynı görevdedir.\"],0,\"İlk cümle olumsuz emir verir; -ma fiili olumsuzlar. İkinci cümlede koşma işi ad olarak kullanılır; isim-fiil eki vardır. Yazıdaki aynı parça, bağlam ve sözcüğün cümledeki göreviyle ayırt edilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Olumsuzluk eki, fiilin bildirdiği işin yapılmamasını kurar; bir emir bu yolla olumsuz kullanılabilir. İsim-fiil eki ise eylemi adlandırıp cümlede ad göreviyle kullanılmasını sağlar.",
+        "Bir ekin sesçe aynı görünmesi her cümlede aynı görev taşımasını gerektirmez. Görev, sözcüğün yüklem olup olmaması, çevresindeki sözlerle kurduğu ilişki ve cümlenin anlamı birlikte incelenerek belirlenir."
+      ],
+      "strategy": "İki koşma kullanımını cümledeki görevleriyle aç: biri doğrudan yapılmaması istenen eylem mi, yoksa başka bir adla ilişki kuran eylem adı mı? Karşılaştırmayı bu sırayla kur.",
+      "steps": [
+        "“Burada koşma!” sözü muhataba bir işi yapmamasını bildirir; koş- fiili olumsuz emir olarak kullanılmıştır.",
+        "“Koşma alışkanlığı edindim” cümlesinde koşma, edinilen alışkanlığın hangi işe ait olduğunu adlandırır; emir veren yüklem değildir.",
+        "İlk -ma olumsuzluk, ikinci -ma isim-fiil görevi taşır. İki biçimi yazıdaki benzerliğe göre tek görevde birleştirme."
+      ],
+      "optionReasons": [
+        "İlk cümlede yapılmama buyruğu, ikincide eylemin adlandırılması vardır; olumsuzluk ve isim-fiil sırası doğrudur.",
+        "Çokluk eki -lar/-ler biçimindedir; bu cümlelerde -ma çokluk bildirmez ve iki kullanımın görev farkını karşılamaz.",
+        "İlk cümlede eylemin adı değil olumsuz emir, ikincide yasaklama değil eylem adı vardır. Görevler ters sırada verilmiştir.",
+        "Bu iki -ma sahip bildirmez. Bir iyelik ilişkisini gösterecek kişi–sahip bağı yerine olumsuzluk ve eylem adlandırması bulunur.",
+        "Aynı biçim farklı cümle görevleri taşıyabilir; bu iki cümle bunun somut örneğidir. Ses benzerliği zorunlu görev birliği kurmaz."
+      ],
+      "commonError": "Ünlemi tek kanıt saymak veya -ma ekini cümledeki görevine bakmadan her yerde olumsuzluk olarak ezberlemek.",
+      "check": "İlk cümleyi olumlu emir koş diye karşılaştır; ikinci cümlede “koşma işiyle ilgili alışkanlık” anlamını kur. Birinde olumsuzluk, ötekinde adlandırma bulunduğunu böyle yeniden denetle."
+    }
+  },
+  {
+    "id": "wrd-8",
+    "identity": "[\"wrd-8\",\"‘Annemsiz gitmem.’ cümlesindeki annemsiz sözcüğü hangi mutlak genellemeyi çürütür?\",\"\",[\"Sözcükler birden fazla hece taşıyabilir.\",\"Kök ile ek farklı birimlerdir.\",\"Yapım eki her zaman çekim ekinden önce gelir.\",\"Türkçede ad kökü vardır.\",\"İyelik, cümlede sahiplik kurabilir.\"],2,\"-m benim annem iyeliğini kuran çekimdir; ardından -siz yeni yokluk niteliğini türetir. Bu nedenle örnek, ‘her zaman yapım önce’ iddiasına karşı çıkar. İstisna çekim/yapım ayrımını ortadan kaldırmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "İyelik eki, adın kişiye aitliğini; -sız/-siz gibi bir yapım eki ise bir şeyin bulunmaması niteliğini kurabilir. Ekin türü, sözcükte üstlendiği göreve göre belirlenir; yalnız sıradaki yerine göre seçilmez.",
+        "Bir genelleme “her zaman” diyorsa bütün uygun örneklerde aynı ilişkiyi iddia eder. Karşı örnek, somut kuruluşu doğru çözümleyerek bu ilişkinin gerçekleşmediği durumu gösterir; ilgisiz doğru bilgiler genellemeyi çürütmez."
+      ],
+      "strategy": "Annemsiz’i anlamını koruyan basamaklarla kur; her basamakta önce sahiplik mi yokluk niteliği mi geldiğini yaz. Sonra seçeneklerdeki mutlak sıralama iddiasını bu gerçek sırayla karşılaştır.",
+      "steps": [
+        "Anne tabanına -m ekleyerek “benim annem” sahipliğini kur. Bu ilk ekin görevi iyeliktir ve çekim sınıfındadır.",
+        "Annem biçimine -siz eklenince “annem olmadan” niteliği türetilir. Yapım görevi taşıyan bu ek, kuruluşta iyelik çekiminden sonra gelmiştir.",
+        "Örnek, “yapım eki her zaman çekimden önce gelir” iddiasına karşıdır. Çok hecelilik, kök–ek ayrımı, ad kökünün varlığı veya iyeliğin sahiplik kurması bu örnekle çürütülmez."
+      ],
+      "optionReasons": [
+        "Annemsiz birden fazla hece taşıyabilir; bu durum çok heceli sözcüklerin varlığıyla çelişmez. Örnek bu doğru bilgiyi çürütmez.",
+        "Anne kökü ile -m ve -siz ekleri ayırt edilebilir; örnek kökle ekin farklı birimler olmasını ortadan kaldırmaz.",
+        "Gerçek sıra anne + m + siz biçiminde çekimden sonra yapımdır. Bu, yapımın her zaman önce geldiği mutlak sıralama iddiasını çürütür.",
+        "Anne ad kökü olarak kullanılır; örnek Türkçede ad kökü bulunmadığını göstermez. Tam tersine bir ad kökünden başlar.",
+        "-m sahipliği gerçekten kurar. Daha sonra yapım eki gelmesi, iyeliğin cümlede sahiplik bildirebilmesiyle çelişmez."
+      ],
+      "commonError": "İstisnayı görünce ek türlerinin de değiştiğini sanmak veya örneğin çürüttüğü sıralama yerine ilgisiz doğru bilgiyi seçmek.",
+      "check": "Anne→annem ve annem→annemsiz geçişlerini ayrı ayrı anlamlandır. Çekim/yapım etiketleri doğru kalırken yalnız iddia edilen “her zaman önce” sırasının bozulduğunu doğrula."
+    }
+  },
+  {
+    "id": "wrd-9",
+    "identity": "[\"wrd-9\",\"‘Yardım etti’ ve ‘hissetti’ ifadeleri için hangisi doğrudur?\",\"\",[\"Ayrı yazıldığı için yardım etti basit fiildir.\",\"Hissetti yalnız çekimle kurulmuş basit bir addır.\",\"İki ifadedeki -ti mutlaka yeni sözcük türetir.\",\"Bitişik yazım görülünce ses olayını incelemek gerekmez.\",\"İkisi de yardımcı fiille kurulan birleşik tabanın geçmiş zaman kullanımıdır; yazımları farklıdır.\"],4,\"Yardım + et- ayrı, his + et- ise s ikizleşmesiyle hisset- biçiminde bitişik yazılır. İkisinin de -ti biçimi geçmiş zamandır. Birleşik yapı ayrı yazılabilir; çekim almak onun kuruluşunu silmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Yardımcı fiille birleşik taban, ad soylu bir unsurla et-, ol- gibi bir fiilin birlikte eylem anlamı kurmasıdır. Örneğin mutlu ol- kuruluşunda iki unsur birlikte bir eylem tabanı oluşturur; yazıda ayrı durmaları bu kuruluşu kaldırmaz.",
+        "Birleşik taban sonradan zaman ve kişi çekimi alabilir. Bitişik veya ayrı yazım ise anlam kuruluşuna ek olarak ses değişimi ve yazım kurallarıyla ilgilidir; çekim ekinin gelmesi tabanı basit sözcüğe dönüştürmez."
+      ],
+      "strategy": "Her ifadede önce geçmiş zaman ekinden önceki eylem tabanını bul; ad unsuru ile yardımcı fiilin birlikte kurduğu anlamı denetle. Yapı kararından sonra ses değişiminin yazıma etkisini karşılaştır.",
+      "steps": [
+        "Yardım etti ifadesinde yardım + et- tabanını, ardından geçmiş zaman çekimini ayır. Ayrı yazım, yardımcı fiille kurulan eylem birliğini ortadan kaldırmaz.",
+        "Hissetti için his + et- kuruluşunu geri kur: birleşmede s ikizleşerek hisset- tabanı oluşur ve bitişik yazılır. Son -ti geçmiş zaman çekimidir.",
+        "İki ifade de yardımcı fiille kurulan birleşik tabanın geçmiş zaman kullanımıdır. Farklı yazılmalarını, birinin basit diğerinin birleşik olması diye yorumlama."
+      ],
+      "optionReasons": [
+        "Ayrı yazım birleşik tabanı geçersiz kılmaz. Yardım ve et- birlikte eylem kurduğu için yardım etti basit fiil diye sınıflandırılamaz.",
+        "Hisset- his + et- birleşmesinden oluşan fiil tabanıdır; yalnız çekimli basit bir ad değildir. Zaman çekimi bu birleşmeyi silmez.",
+        "İki kullanımdaki -ti geçmiş zaman çekimidir; yeni sözlük tabanı türeten yapım eki değildir. Türetme ile zaman görevi karıştırılmıştır.",
+        "Bitişik yazımın nedenini açıklarken his + et- arasındaki s ikizleşmesi önemlidir; ses olayını incelememek yazım farkının dayanağını atlar.",
+        "İkisinde de ad unsuru ve et- yardımcı fiili birleşik taban kurar; ardından geçmiş zaman çekimi gelir. Yardım etti ayrı, hissetti ses değişimiyle bitişik yazılır."
+      ],
+      "commonError": "Yazıda görünen sözcük sayısını tek yapı ölçütü yapmak veya geçmiş zaman ekini birleşik tabanı kuran yapım eki sanmak.",
+      "check": "Geçmiş zamanı çıkarıp yardım etmek ve hissetmek biçimlerini kur. Eylem birliği hâlâ varsa -ti’nin birleşikliği oluşturmadığını, yalnız zamanı değiştirdiğini denetlemiş olursun."
+    }
+  },
+  {
+    "id": "wrd-10",
+    "identity": "[\"wrd-10\",\"‘Yaz geldi.’ ile ‘Adını yaz.’ cümlelerindeki yaz köklerinin ilişkisi nedir?\",\"\",[\"Anlamca ilişkili oldukları için ortak kök\",\"Anlamca ilişkisiz ad ve fiil kullanımları oldukları için sesteş kök\",\"İkisi de aynı mevsim adı olduğu için yalnız ad kökü\",\"İkisi de fiil olduğu için kökleri yok\",\"Her ikisi de -az yapım eki aldığı için türemiş kök\"],1,\"İlk yaz bir mevsimi, ikinci yaz bir eylemi karşılar; sesleri aynı fakat anlamları ilişkisizdir. Bu çift sesteş köktür. Ortak/kökteş kökte ise ad ve fiil kullanımı arasında tat adı ile tat- eylemindeki gibi anlam ilişkisi bulunur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sesteş köklerde ses ve yazı benzerliğine rağmen anlam ilişkisi yoktur. Ortak veya kökteş kökte ise ad ve fiil kullanımları arasında anlam ilişkisi bulunur; aynı ses dizisi tek başına bu iki sınıftan birini belirlemez.",
+        "Kökün ad veya fiil oluşu, verildiği cümledeki anlamıyla saptanır. Cümlede bir kavramı adlandıran kullanım ile bir işi bildiren kullanım aynı ses dizisiyle kurulabilir; iki cümlenin anlamı ayrı açıklanmalıdır."
+      ],
+      "strategy": "Her yaz kullanımının cümlede ne anlama geldiğini birer sözle açıkla; ardından bu iki anlam arasında ortak kök için gereken ilişkiyi ara. Harf benzerliğini anlam bağı yerine kullanma.",
+      "steps": [
+        "“Yaz geldi” cümlesindeki yaz bir mevsimin adıdır; “Adını yaz” cümlesindeki yaz- bir eylemi bildirir.",
+        "Mevsim anlamıyla yazma işi arasında tat adı–tatma eylemi örneğindeki gibi bir anlam ilişkisi bulunmaz. Ortak ses dizisi bu eksik bağı kendiliğinden kurmaz.",
+        "Sesleri aynı, anlamları ilişkisiz ad ve fiil kökleri oldukları için çift sesteştir. Aynı mevsim adı, iki fiil veya -az ekiyle türemiş biçimler değildir."
+      ],
+      "optionReasons": [
+        "Ortak kök için gereken anlam ilişkisi bu iki yaz kullanımında yoktur; yalnız seslerinin aynı olması yeterli değildir.",
+        "İlk kullanım mevsim adı, ikinci kullanım yazma eylemidir; aralarında anlam ilişkisi bulunmadığı için sesteş kök değerlendirmesi doğrudur.",
+        "İkinci cümlede yaz mevsimi değil bir işi yapma buyruğu vardır; ikisini de aynı ad kökü olarak değerlendirmek bağlamı siler.",
+        "İlk yaz ad, ikinci yaz- fiildir. Ayrıca bir sözcüğün fiil olması kökü olmadığı anlamına gelmez.",
+        "Bu iki kullanım -az ekiyle kurulmamıştır. Yaz ses dizisini anlam kanıtı olmadan y + az diye ayırmak geçersiz bir türetme üretir."
+      ],
+      "commonError": "Aynı ses dizisini görünce anlam ilişkisini sınamadan ortak kök demek veya cümlenin birindeki ad/fiil görevini ötekine taşımak.",
+      "check": "İlk yaz yerine mevsim, ikinci yaz yerine yazma işi açıklamasını koy. İki anlamın ses benzerliği dışında ortak kök ilişkisi taşımadığını, tat adı–tat- fiili karşı örneğiyle denetle."
+    }
+  }
+]

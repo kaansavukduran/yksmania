@@ -321,15 +321,23 @@ describe("027 gerçek yardım kataloğunun 205 eski soruya bağlanması", () => 
     }
   });
 
-  it("gerçek banka içinde 5883 kartın 2508 tam ve 3375 kısmi rehberini sayar", () => {
+  it("kabul edilen 2508 rehberi korur ve sonraki katalog ekleri için kısmi kapsamı büyütmez", () => {
     expect(all).toHaveLength(5883);
     expect(new Set(all.map((question) => question.id)).size).toBe(5883);
     const full = all.filter((question) => resolvedGuidance(shown(question)));
     const partial = all.filter(
       (question) => !resolvedGuidance(shown(question)),
     );
-    expect(full).toHaveLength(2508);
-    expect(partial).toHaveLength(3375);
+    const acceptedIds = new Set([
+      ...old20Ids,
+      ...rows.map((row) => row.id),
+      ...all.filter((q) => q.guidance).map((q) => q.id),
+    ]);
+    expect(acceptedIds.size).toBe(2508);
+    for (const question of all.filter((q) => acceptedIds.has(q.id)))
+      expect(resolvedGuidance(shown(question)), question.id).toBeDefined();
+    expect(full.length).toBeGreaterThanOrEqual(2508);
+    expect(partial.length).toBeLessThanOrEqual(3375);
     expect(full.length + partial.length).toBe(all.length);
     for (const question of partial)
       expect(helpPanels(shown(question)).length).toBeLessThanOrEqual(1);

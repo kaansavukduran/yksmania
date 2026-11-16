@@ -1,5 +1,11 @@
 import { clarifiedQuestionView } from "../domain/questionPresentation";
 import curated from "./questionHelpCatalogue.json";
+import guidance028Math from "./guidance028Math.json";
+import guidance028ChemistryA from "./guidance028ChemistryA.json";
+import guidance028ChemistryB from "./guidance028ChemistryB.json";
+import guidance028Biology from "./guidance028Biology.json";
+import guidance028Humanities from "./guidance028Humanities.json";
+import guidance028Physics from "./guidance028Physics.json";
 import guidance027Math from "./guidance027Math.json";
 import guidance027Physics from "./guidance027Physics.json";
 import guidance027Chemistry from "./guidance027Chemistry.json";
@@ -26,6 +32,12 @@ type CatalogueRow = {
 // These accepted cards previously exposed one hint and then the full solution.
 // Keep that old numbering only for snapshots without their own inline guide.
 const expandedLegacyRows: CatalogueRow[] = [
+  ...guidance028Math,
+  ...guidance028ChemistryA,
+  ...guidance028ChemistryB,
+  ...guidance028Biology,
+  ...guidance028Humanities,
+  ...guidance028Physics,
   ...guidance027Math,
   ...guidance027Physics,
   ...guidance027Chemistry,
@@ -60,8 +72,9 @@ export function resolvedGuidance(
     : undefined;
 }
 export function helpPanels(question: HelpQuestion) {
-  const guidance = resolvedGuidance(question);
-  const hint = question.hint ?? matchingRow(question)?.hint;
+  const view = clarifiedQuestionView(question);
+  const guidance = resolvedGuidance(view);
+  const hint = view.hint ?? matchingRow(view)?.hint;
   if (!guidance)
     return hint ? [{ title: "İlk ipucu", paragraphs: [hint] }] : [];
   return [

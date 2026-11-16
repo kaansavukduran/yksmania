@@ -1,0 +1,1557 @@
+[
+  {
+    "id": "area-1",
+    "identity": "[\"area-1\",\"Tabanı 8, bu tabana dik yüksekliği 5 birim olan üçgenin alanı kaçtır?\",\"\",[\"40 birim²\",\"13 birim²\",\"20 birim²\"],2,\"A = 8 × 5 / 2 = 20 birim².\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir üçgenin alanı, seçilen taban ile karşı köşenin bu taban doğrusuna dik uzaklığının çarpımının yarısıdır. İki uzunluk çarpıldığı için sonuç kare birim taşır.",
+        "Aynı taban ve dik yüksekliğe sahip üçgen ile paralelkenarın alan formülleri farklıdır; şeklin türünü belirlemek, sayıları çarpmaktan önce gelir."
+      ],
+      "strategy": "Verilen iki uzunluğun taban–dik yükseklik çifti olduğunu doğrula; üçgen formülünü bu çiftle kurup çarpma ve paylaştırmayı ayrı yap.",
+      "steps": [
+        "8 birim taban ve ona dik 5 birim yükseklik birlikte kullanılabilir; ayrıca bir eğik kenar aramaya gerek yoktur.",
+        "Taban ile yüksekliğin çarpımı 8·5=40 birim² olur. Bu büyüklük aynı taban-yükseklikli paralelkenarın alanını verir.",
+        "Üçgen bu alanın yarısını kaplar: 40/2=20 birim². Seçimde hem sayı hem kare birim korunmalıdır."
+      ],
+      "optionReasons": [
+        "40=8·5, üçgene ait yarım katsayısını atlar; aynı taban ve yükseklikli paralelkenarın alanına karşılık gelir.",
+        "13=8+5, iki uzunluğu toplar. Bu işlem alanın taban-yükseklik çarpımını kurmaz; sonuna birim² yazmak işlemi alan yapmaz.",
+        "Doğru. Üçgenin iki eş kopyası 40 birim² alan kapladığından tek kopya 20 birim² kaplar."
+      ],
+      "commonError": "Şekli dikkate almadan her taban-yükseklik çarpımını doğrudan üçgen alanı saymak.",
+      "check": "Bulunan alanın iki katı 2·20=40, taban-yükseklik çarpımına eşittir. Aynı çiftle oluşan paralelkenarın tamamı, üçgenin iki kopyasıyla doldurulabilir."
+    }
+  },
+  {
+    "id": "area-2",
+    "identity": "[\"area-2\",\"Tabanı 8, dik yüksekliği 5 birim olan paralelkenarın alanı kaçtır?\",\"\",[\"40 birim²\",\"20 birim²\",\"26 birim²\"],0,\"A = b × h = 8 × 5 = 40 birim².\"]",
+    "guidance": {
+      "knowledge": [
+        "Paralelkenarda bir tabanla karşı paralel doğru arasındaki dik uzaklık, o tabana ait yüksekliktir. Alan, bu iki uzunluğun çarpımından bulunur.",
+        "Yan taraftaki üçgensel parça uygun boşluğa taşındığında aynı taban ve yüksekliğe sahip bir dikdörtgen elde edilebilir; bu, çarpım formülünü açıklar."
+      ],
+      "strategy": "Şeklin paralelkenar olduğunu kullanarak tabanı ilgili dik uzaklıkla eşleştir. Üçgen formülündeki paylaştırmanın burada gerekip gerekmediğini şeklin tamamına bakarak belirle.",
+      "steps": [
+        "Verilen 8 tabana ait 5 değeri dik yüksekliktir; alan hesabı için bu ikisi yeterlidir.",
+        "Kesme-birleştirme sonunda taban 8, dik yükseklik 5 olan dikdörtgenin alanı hesaplanır: 8·5.",
+        "Çarpım 40 olduğundan paralelkenarın tamamı 40 birim² kaplar. Burada şekil ikiye bölünmediği için ayrıca 2’ye bölünmez."
+      ],
+      "optionReasons": [
+        "Doğru. Paralelkenarın alanı 8·5=40 birim²; dikdörtgene yeniden dizme bu büyüklüğü korur.",
+        "20=8·5/2, bu taban-yükseklikli bir üçgenin alanıdır. Paralelkenarın tamamını hesaplarken yarıya indirmek gerekmez.",
+        "26=2(8+5), taban ile yüksekliği çevre benzeri bir toplama sokar. Yükseklik yan kenar diye de verilmemiştir; bu işlem alanı hesaplamaz."
+      ],
+      "commonError": "Paralelkenarı üçgenle karıştırıp taban-yükseklik çarpımını yarıya indirmek.",
+      "check": "A/b=40/8=5 birim, verilen dik yüksekliği geri verir. Sonucun alan birimi birim² olmalıdır."
+    }
+  },
+  {
+    "id": "area-3",
+    "identity": "[\"area-3\",\"Bir üçgenin tabanı sabitken dik yüksekliği iki katına çıkıyor. Alanı nasıl değişir?\",\"\",[\"Değişmez.\",\"İki katına çıkar.\",\"Dört katına çıkar.\"],1,\"A = b × h / 2 olduğundan h yerine 2h yazınca alan iki katına çıkar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Üçgen alanında taban ve yükseklik ayrı çarpanlardır: A=b·h/2. Bir oran sorusunda değişmeyen çarpanlar eski ve yeni alanın bölümünde sadeleşir.",
+        "Bütün uzunlukların aynı ölçekte büyümesi ile yalnız bir uzunluğun değişmesi farklı durumlardır; alanın ölçek katsayısı buna göre belirlenir."
+      ],
+      "strategy": "Eski ve yeni alanı aynı taban sembolüyle yaz; yalnız yüksekliğe verilen değişimi uygula ve yeni/eski oranında sabit çarpanları sadeleştir.",
+      "steps": [
+        "İlk alanı A₁=b·h/2 olarak göster. Tabanın sabit kalması, yeni ifadede de aynı b’nin bulunması demektir.",
+        "Yeni yükseklik 2h olduğundan A₂=b·(2h)/2 yazılır; tabana ikinci bir büyütme uygulanmaz.",
+        "A₂/A₁=2 olur. Alan iki katına çıkar; dört kat sonucu için iki boyutun birlikte ikiye katlanması gerekirdi."
+      ],
+      "optionReasons": [
+        "Değişmez sonucu, yükseklikteki artışı alan bağıntısında hiç kullanmaz. Sabit kalan yalnız tabandır.",
+        "Doğru. Alanın tek değişen çarpanı olan yükseklik ikiyle çarpıldığı için alan da ikiyle çarpılır.",
+        "Dört kat, taban ve yükseklik birlikte iki katına çıktığında elde edilir. Bu soruda taban değişmiyor."
+      ],
+      "commonError": "Her alan değişimini benzerlikteki karesel ölçek kuralı gibi yorumlayıp sabit tabanı da büyütmek.",
+      "check": "Bir örnek denetimi olarak b=6,h=4 seçildiğinde alan 12, h=8 olduğunda 24 çıkar; 24/12=2. Genel gerekçe ise sembolik alan oranıdır."
+    }
+  },
+  {
+    "id": "area-4",
+    "identity": "[\"area-4\",\"Paralelkenardan kesilen bir parça yalnız öteleniyor; boşluk ve örtüşme bırakılmıyor. Toplam alan ne olur?\",\"\",[\"Artar.\",\"Azalır.\",\"Korunur.\"],2,\"Öteleme parçanın alanını değiştirmez. Boşluk veya örtüşme yoksa toplam alan da korunur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Alan, bir bölgenin kapladığı yerin ölçüsüdür; parçanın konumu ile büyüklüğü ayrı özelliklerdir. Bütünü parçalara ayırınca her parça bir kez sayılmalıdır.",
+        "Parçaları yeniden dizerken arada boşluk kalması veya iki parçanın aynı bölgeyi kaplaması, eski parçaların toplamıyla yeni kaplanan bölgenin karşılaştırmasını etkiler."
+      ],
+      "strategy": "Kesilen parçanın ölçülerini ve kalan kısmı ayrı izle; sonra yeni dizilişte bir bölgenin kaybolup kaybolmadığını ya da iki kez sayılıp sayılmadığını denetle.",
+      "steps": [
+        "Ötelemede parçanın her noktası aynı yönde aynı miktarda kayar; parça gerilmez, küçülmez ve şekli değişmez.",
+        "Bu nedenle taşınan parçanın eski ve yeni alanı eşittir; paralelkenardan geriye kalan kısmın alanı da aynıdır.",
+        "Yeni dizilişte boşluk ve örtüşme olmadığı veriliyor. Alanlar birer kez toplandığından başlangıçtaki toplam alan korunur."
+      ],
+      "optionReasons": [
+        "Artış için büyütme, yeni parça ekleme veya alanı iki kez sayma gibi bir değişiklik gerekirdi. Yalnız öteleme bunları yapmaz.",
+        "Azalma için parça kaybı, küçültme veya kaplanan bölgenin eksilmesi gerekirdi. Sorunun boşluksuz ve örtüşmesiz ötelemesi bunları içermiyor.",
+        "Doğru. Taşınan ve kalan parçaların alanları aynı kalır; yeni düzende her parça bir kez hesaba girdiğinden toplam korunur."
+      ],
+      "commonError": "Parçanın yerinin değişmesini büyüklüğünün değişmesi sanmak; boşluk ve örtüşme koşullarını okumamak.",
+      "check": "Taşınan parçaya S, kalan kısma T de: ilk toplam S+T, son toplam yine S+T’dir. Bu denetim bir kenarın yeni konumunu alan artışı saymaz."
+    }
+  },
+  {
+    "id": "area-5",
+    "identity": "[\"area-5\",\"Alan hesabında kullanılan yükseklik hangisidir?\",\"\",[\"Seçilen tabana dik uzaklık\",\"Her zaman en uzun kenar\",\"Her zaman eğik kenar\"],0,\"h, seçilen tabana dik uzaklıktır. Eğik kenar ancak gerçekten dikse yükseklik olarak kullanılabilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Alan bağıntısında seçilen tabanla eşleştirilen ikinci uzunluk bir yüksekliktir. Bir noktanın doğruya uzaklığı o doğruya çizilen dikme üzerinden ölçülür.",
+        "Şekil döndürülebilir veya geniş açılı olabilir; bu yüzden yükseklik yalnız sayfada düşey görünen çizgi ya da dış sınırdaki bir kenar olarak seçilmez."
+      ],
+      "strategy": "Önce hangi kenarın taban seçildiğini belirle. İlgili köşe ya da karşı paralel doğru ile bu taban doğrusu arasındaki ölçümün diklik koşulunu denetle.",
+      "steps": [
+        "Taban bir doğru yönü belirler; alan formülündeki yükseklik bu yöne göre seçilmelidir.",
+        "İlgili karşı noktadan taban doğrusuna 90° yapan uzaklık alınır. Dikmenin ayağı gerektiğinde kenarın uzantısında olabilir.",
+        "Bu nedenle doğru tanım seçilen tabana dik uzaklıktır. Uzun ya da eğik oluş tek başına bir kenarı yükseklik yapmaz."
+      ],
+      "optionReasons": [
+        "Doğru. Yükseklik taban doğrusuna dik ölçülür; alan formülünde gereken taban-yükseklik eşleştirmesi budur.",
+        "En uzun kenar ölçütü diklik koşulunu denetlemez. Uzun bir kenarın seçilen tabana dik olması zorunlu değildir.",
+        "Eğik kenar, seçilen tabana dik değilse yüksekliğin yerine geçmez. Görünüşte eğimli bir şekil alan için bu koşulu değiştirmez."
+      ],
+      "commonError": "Tabanı seçmeden yüksekliği seçmek veya şeklin en dikkat çekici kenarını doğrudan yükseklik almak.",
+      "check": "Seçilen uzunluk tabana 90° yapıyor mu ve doğru karşı uzaklığı mı ölçüyor? Şekli döndürdüğünde bu ilişki değişmiyorsa aynı yükseklik tanımı korunur."
+    }
+  },
+  {
+    "id": "dt-1",
+    "identity": "[\"dt-1\",\"f(x)=x² eğrisi üzerindeki A(2; 4) ve B(2,5; 6,25) noktalarından geçen kirişin eğimi kaçtır?\",\"\",[\"4\",\"4,5\",\"5\"],1,\"(2,5²−2²)/0,5 = (6,25−4)/0,5 = 4,5. Bu, iki nokta arasındaki ortalama değişim oranıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "İki ayrı grafik noktasını birleştiren kirişin eğimi, çıktı farkının girdi farkına oranıdır: [f(b)−f(a)]/(b−a), a≠b.",
+        "Kiriş eğimi bir aralığın ortalama değişimidir. Tek noktadaki fonksiyon değeri veya teğet eğimiyle kendiliğinden aynı sayılmak zorunda değildir."
+      ],
+      "strategy": "A’dan B’ye yatay ve düşey değişimi ayrı hesapla; ikisinde de aynı yönü kullanıp düşey farkı yatay farka böl. İstenen iki noktalı oranı noktasal türevle değiştirme.",
+      "steps": [
+        "Yatay değişim 2,5−2=0,5’tir; koordinatlardaki virgül ondalık ayracıdır.",
+        "Düşey değişim 6,25−4=2,25 olur. Eğimi kurarken yalnız bu farkı almak yetmez; yatay aralığa bölmek gerekir.",
+        "Kiriş eğimi 2,25/0,5=4,5’tir. Bu oran A ile B arasındadır; A’daki teğetin eğimi ayrıca 4’tür."
+      ],
+      "optionReasons": [
+        "4, x²’nin x=2’deki türev eğimidir. Verilen aralıkta h=0,5 sıfır olmadığı için kiriş eğimi bu değerle eşit alınmaz.",
+        "Doğru. Aynı yönde alınan koordinat farkları 2,25 ve 0,5’tir; bölümleri 4,5 verir.",
+        "5, x²’nin x=2,5’teki türev eğimidir. Kiriş yerine B ucundaki teğeti hesaplamak istenen ortalama değişimi vermez."
+      ],
+      "commonError": "İki noktayı kullanmak yerine uçlardan birinde türev alıp kiriş eğimiyle teğet eğimini karıştırmak.",
+      "check": "x²’de kiriş oranı (b²−a²)/(b−a)=a+b’dir; 2+2,5=4,5 aynı sonucu verir. Paydanın 0 olmadığı koşulu burada sağlanır."
+    }
+  },
+  {
+    "id": "dt-2",
+    "identity": "[\"dt-2\",\"f(x)=x² için a=2 sabitken h, sıfıra iki yönden yaklaşıyor. Teğet eğimi hangi değere yaklaşır?\",\"\",[\"0\",\"2\",\"4\"],2,\"f′(2)=2·2=4. Kiriş eğimi sağdan ve soldan 4’e yaklaşır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir noktadaki sonlu türev, sıfır olmayan aralıklarla hesaplanan fark oranının limitidir. İki yanlı türevde h’nin pozitif ve negatif değerleriyle yaklaşımlar karşılaştırılır.",
+        "Polinom farkını açıp ortak h’yi yalnız h≠0 iken sadeleştirmek, limitten önceki oranı tanımlı tutar. Limit almak h’yi başlangıç paydasında sıfır yapmak değildir."
+      ],
+      "strategy": "a sabitini koruyarak x² için fark oranını aç; h çarpanını geçerli alanda sadeleştir. Pozitif ve negatif h dizilerinin aynı sonlu sayıya gidip gitmediğine bak.",
+      "steps": [
+        "a=2 için fark oranı [(2+h)²−4]/h olur; burada h≠0 alınır.",
+        "Pay 4h+h²=h(4+h) olduğundan oran 4+h’ye sadeleşir. Bu eşitlik sıfır olmayan h değerleri için geçerlidir.",
+        "h iki yönden 0’a giderken 4+h de 4’e gider. Aranan teğet eğimi bu ortak limit olan 4’tür."
+      ],
+      "optionReasons": [
+        "0, yalnız h’nin yaklaştığı değerdir. Fark oranında h dışında sabit kalan 4 terimi de bulunduğu için limit 0 değildir.",
+        "2, temas apsisi a’nın değeridir. x² için türev, apsisin kendisi değil iki katıdır.",
+        "Doğru. Sıfır olmayan h için oran 4+h’dir ve her iki yandan limit 4 olur."
+      ],
+      "commonError": "h’nin sıfıra gitmesini bütün fark oranının sıfıra gitmesi sanmak veya temas apsisini eğim yerine yazmak.",
+      "check": "h=0,1 ve h=−0,1 için oranlar 4,1 ve 3,9’dur; daha küçük mutlak h değerleri 4’e yaklaşır. Kesin limit, sadeleşen 4+h ifadesinden gelir."
+    }
+  },
+  {
+    "id": "dt-3",
+    "identity": "[\"dt-3\",\"f(x)=x² eğrisinin x=−1 noktasındaki teğet eğimi kaçtır?\",\"\",[\"−2\",\"1\",\"2\"],0,\"f′(a)=2a olduğundan f′(−1)=−2. Eğrinin bu noktadaki teğeti sağa doğru azalır.\"]",
+    "guidance": {
+      "knowledge": [
+        "f(x)=x² polinomunun türevi f′(x)=2x’tir. f(a) grafiğin yüksekliğini, f′(a) ise varsa yerel teğetin eğimini verir.",
+        "Sonlu negatif eğimli doğru sağa doğru gidildikçe alçalır. Eğim bir mutlak değer olmadığı için temas apsisinin işareti işlemde korunur."
+      ],
+      "strategy": "Önce fonksiyonun türevini genel x için belirle; ardından eksi işaretli temas apsisini parantezle yerine koy. Fonksiyon değeriyle türev değerini ayrı tut.",
+      "steps": [
+        "Kuvvet kuralı x²’nin türevini 2x olarak verir; istenen eğim bu türevde hesaplanır.",
+        "Temas apsisi −1 olduğundan f′(−1)=2·(−1) yazılır. Karesi alınacak ifade türevde artık x² değildir.",
+        "Çarpım −2’dir. f(−1)=1 ise temas yüksekliğidir; eğim yerine kullanılamaz."
+      ],
+      "optionReasons": [
+        "Doğru. Türev 2x olduğundan eksi temas apsisi eğimi −2 yapar; işaret korunur.",
+        "1=f(−1), grafikteki noktanın yüksekliğidir. Soru yüksekliği değil teğet eğimini istiyor.",
+        "2, türev değerinin işaretini kaybedip büyüklüğünü yazmaktır. Eğim negatif olabilir; mutlak değer istenmemiştir."
+      ],
+      "commonError": "x²’de eksi apsis pozitif yükseklik verdiği için türevin de pozitif olması gerektiğini sanmak.",
+      "check": "Fark oranı [(-1+h)²−1]/h=−2+h, h≠0 için geçerlidir. Limiti −2, kuvvet kuralıyla bulunan değeri bağımsız doğrular."
+    }
+  },
+  {
+    "id": "dt-4",
+    "identity": "[\"dt-4\",\"f(x)=|x| için x=0’da soldan eğim −1, sağdan eğim +1 bulunuyor. Hangisi doğrudur?\",\"\",[\"Ortalama alınır ve türev 0 olur.\",\"Fonksiyon sürekli olsa da bu noktada türev yoktur.\",\"İki eğimin büyüklüğü eşit olduğu için türev vardır.\"],1,\"−1 ile +1 farklıdır. Büyüklüklerin eşit olması veya grafiğin sürekli olması türev için yeterli değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "İç noktada iki yanlı türev için sağ ve sol fark oranlarının aynı sonlu değere ulaşması gerekir. Sayıların mutlak değerlerinin eşitliği, sayıların eşitliği değildir.",
+        "Süreklilik bir noktadaki değerle yakın değerlerin uyuşmasını inceler; türev ayrıca yerel değişim oranını inceler. Bu iki test farklı bilgi ister."
+      ],
+      "strategy": "Soruda verilen iki yan eğimini işaretleriyle yan yana yaz; ortalamalarını veya büyüklüklerini kullanmadan eşitlik koşulunu denetle. Sürekliliği ayrı bir gözlem olarak tut.",
+      "steps": [
+        "Sol yaklaşım eğimi −1, sağ yaklaşım eğimi+1 olarak verilmiştir; bunlar iki farklı reel sayıdır.",
+        "|x|’in 0’daki değeri 0’dır ve iki yandan fonksiyon değerleri 0’a gider; bu, sürekliliği sağlar ama eğim farkını ortadan kaldırmaz.",
+        "İki eğim eşit olmadığı için 0’da tek bir iki yanlı türev yoktur. Sürekliliğin varlığıyla bu sonuç çelişmez."
+      ],
+      "optionReasons": [
+        "Ortalama (−1+1)/2=0 bir sayı verir ama türev tanımı bu ortalamayı istemez. İki ayrı limitin uyuşmamasını ortalama alarak onaramazsın.",
+        "Doğru. Fonksiyon 0’da süreklidir; fakat −1 ve+1 eğimleri uyuşmadığı için iki yanlı türev bulunmaz.",
+        "Büyüklükler 1’e eşit olsa da yönlü eğim değerleri farklıdır. Türev koşulunda mutlak değer değil limitlerin kendisi eşit olmalıdır."
+      ],
+      "commonError": "Süreklilikten otomatik türev sonucu çıkarmak veya zıt eğimleri ortalayıp yeni bir teğet üretmek.",
+      "check": "0’a göre fark oranı |h|/h’dir: h>0 iken 1, h<0 iken −1. İki sabit farklı kaldığı için ortak limit elde edilemez."
+    }
+  },
+  {
+    "id": "dt-5",
+    "identity": "[\"dt-5\",\"Türev tanımındaki [f(a+h)−f(a)]/h oranı incelenirken hangisi doğrudur?\",\"\",[\"h doğrudan 0 yazılır; oran her zaman 0 çıkar.\",\"Yalnız sağdan yaklaşmak her fonksiyonda yeterlidir.\",\"h ≠ 0 değerleriyle yaklaşılır; iki yönün ortak limiti kontrol edilir.\"],2,\"h paydada olduğu için oran h ≠ 0 iken kurulur. İki taraflı türev için sağ ve sol yaklaşımların ortak bir sonlu değere ulaşması gerekir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir fark oranı için paydanın sıfır olmaması gerekir. Bir ifadenin limitini araştırmak ise yaklaşma noktasındaki doğrudan değerini hesaplamakla aynı işlem değildir.",
+        "İki yanlı türev araştırmasında ilgili noktaya tanım kümesi içinde her iki taraftan yaklaşan fark oranları aynı sonlu değere gitmelidir; tek yanlı türev ayrı bir kavramdır."
+      ],
+      "strategy": "Önce oranı hangi h değerlerinde kurabileceğini belirle. Sonra tek bir yerine koyma işlemi yapmak yerine sağ ve sol yakınlaşmaların değerlerini karşılaştır.",
+      "steps": [
+        "Oranın paydasında h vardır; bu yüzden türev tanımında kullanılan fark oranları h≠0 değerleriyle hesaplanır.",
+        "h→0 demek, sıfır olmayan değerleri sıfıra yaklaştırmaktır. Doğrudan h=0 yazmak pay ve paydayı 0 yapar; 0/0 sayısal bir sonuç değildir.",
+        "İki yanlı türev için sağ ve sol limitler aynı sonlu değeri vermelidir. Bu nedenle sıfır olmayan h ile yaklaşıp iki yönü denetleyen ifade doğrudur."
+      ],
+      "optionReasons": [
+        "h=0 yazılınca bu fark oranında 0/0 oluşur; bölüm tanımsızdır ve her zaman 0 diye değerlendirilemez.",
+        "Yalnız sağdan yaklaşım sağ türevi inceleyebilir; genel iki yanlı türev için soldaki davranışın da aynı sonlu değeri vermesi gerekir.",
+        "Doğru. Oran sıfır olmayan h için kurulur; türev, iki yaklaşımın ortak sonlu limitinin bulunmasıyla belirlenir."
+      ],
+      "commonError": "Yaklaşma ile yerine koymayı aynı sanmak; paydanın sıfır olduğu orana sonuç atamak.",
+      "check": "Tanımın iki koşulunu ayrı sor: oranı hesapladığım h sıfırdan farklı mı, iki yön aynı sonlu değere ulaşıyor mu? |x| örneğinde ilk koşul sağlanırken ikinci koşul başarısız olabilir."
+    }
+  },
+  {
+    "id": "bas-1",
+    "identity": "[\"bas-1\",\"√49 sayısı için doğru sınıflama hangisidir?\",\"\",[\"Yalnız irrasyoneldir.\",\"Doğal, tam, rasyonel ve gerçektir.\",\"Rasyoneldir ama tam sayı değildir.\"],1,\"√49 = 7. Bu anlatımda 7; ℕ, ℤ, ℚ ve ℝ kümelerinin hepsindedir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir sayının hangi kümelere ait olduğu yazılışına değil değerine bağlıdır. Karekök işareti, içindeki negatif olmayan sayının karesi o sayıyı veren negatif olmayan kökünü belirtir.",
+        "Doğal sayılar tam sayıların, tam sayılar rasyonellerin, rasyoneller gerçeklerin alt kümesidir. Bir sayının daha dar kümeye girmesi onu üst kümelerden çıkarmaz."
+      ],
+      "strategy": "Önce karekökün kesin değerini bul; ardından küme içerme zincirinde bu değerin ait olduğu bütün kümeleri işaretle. Kök simgesini tek başına irrasyonellik ölçütü yapma.",
+      "steps": [
+        "7²=49 ve 7≥0 olduğundan √49=7’dir; karekök gösterimi burada bir tam değere dönüşür.",
+        "7 doğal ve tam sayıdır. Ayrıca 7=7/1 yazılabildiği için rasyoneldir.",
+        "Rasyonel sayılar gerçek sayılar içinde bulunduğundan 7 aynı zamanda gerçektir; dört küme birden sağlanır."
+      ],
+      "optionReasons": [
+        "Kök işaretini görünce değeri hesaplamadan irrasyonel sayar. Burada tam kareden 7 çıkar ve 7/1 bir rasyonel gösterimdir.",
+        "Doğru. Değer 7’dir; ℕ⊂ℤ⊂ℚ⊂ℝ zinciri dört üyeliği de verir.",
+        "Rasyonel oluş doğrudur, fakat tam sayı değildir kısmı yanlıştır: hesaplanan 7 zaten bir tam sayıdır."
+      ],
+      "commonError": "Bir sayının köklü yazılışını, değeri ne olursa olsun irrasyonel sınıflamak.",
+      "check": "Bulunan kökün karesi 7·7=49’dur; ayrıca 7/1 rasyonel gösterim,7≥0 tam sayı oluşu doğal üyeliği doğrular."
+    }
+  },
+  {
+    "id": "bas-2",
+    "identity": "[\"bas-2\",\"a ve b farklı rakamlar, a ≠ 0. İki basamaklı 10a + b en çok kaç olabilir?\",\"\",[\"99\",\"89\",\"98\"],2,\"a = 9 seçilir. b farklı olduğundan en çok 8’dir; sayı 98 olur. 99 farklı rakam koşulunu bozar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Onluk gösterimde iki basamaklı sayı 10a+b’dir; a∈{1,…,9}, b∈{0,…,9}. Farklı rakam koşulu ayrıca a≠b ister.",
+        "Onlar basamağını bir artırmak sayıyı 10 büyütür. Birler basamağındaki değişim en fazla 9 olduğundan en büyük sayıyı ararken önce onlar basamağı belirlenir."
+      ],
+      "strategy": "Geçerli onlar rakamını olabilecek en büyük değerden seç; sonra o seçimle farklılık koşulunu sağlayan en büyük birler rakamını ara. Son adayı iki koşula da geri koy.",
+      "steps": [
+        "a’nın en büyük rakam değeri 9’dur; bu seçim iki basamaklılık koşulunu sağlar.",
+        "b de 9 olamaz çünkü rakamlar farklıdır. Kalan rakamların en büyüğü 8’dir.",
+        "10·9+8=98 bulunur. 9 ve 8 farklıdır; onlar rakamı daha küçük olan hiçbir sayı bu değeri aşamaz."
+      ],
+      "optionReasons": [
+        "99’da iki rakam aynıdır; daha büyük görünse de a≠b koşulunu sağlamaz.",
+        "89 geçerli bir iki basamaklı sayıdır; ancak onlar rakamını 8’de bırakır. Onlar 9 ve birler 8 seçimi daha büyüktür.",
+        "Doğru. En büyük onlar rakamı 9, ondan farklı en büyük birler rakamı 8’dir; sayı 98 olur."
+      ],
+      "commonError": "En büyük rakamı iki basamağa birden koyup farklılık koşulunu gözden kaçırmak.",
+      "check": "98’in rakamları 9 ve 8’dir; koşullar geçerlidir. 98’den büyük tek iki basamaklı tam sayı 99’dur ve onun rakamları eşittir."
+    }
+  },
+  {
+    "id": "bas-3",
+    "identity": "[\"bas-3\",\"15 ÷ 3 × 2 işleminin sonucu nedir?\",\"\",[\"10\",\"2,5\",\"5\"],0,\"Soldan sağa 15 ÷ 3 = 5, sonra 5 × 2 = 10. Çarpmayı önce yapıp 15 ÷ 6 yazılmaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Çarpma ve bölme aynı işlem önceliğine sahiptir. Aralarında ayrıca bir gruplama işareti yoksa bu işlemler soldan sağa yürütülür.",
+        "Bir ifade içine kendiliğinden parantez koymak yeni bir işlem oluşturur. Payda gibi gruplanmış bir bütün yokken sağdaki çarpım bölene katılamaz."
+      ],
+      "strategy": "Aynı öncelikteki işlemlerden solda olanı önce tamamla; ortaya çıkan tek sayıyla sağdaki işlemi sürdür. İşlem sırasını değiştiren gizli bir parantez ekleme.",
+      "steps": [
+        "İfadede önce 15÷3 bölmesiyle karşılaşılır; bunun sonucu 5’tir.",
+        "Tamamlanan bölmenin yerine 5 yazılınca kalan ifade 5×2 olur; bu kez çarpma yapılır.",
+        "5×2=10 bulunur. 15÷(3×2) yazılmış olsaydı başka bir ifade hesaplanmış olurdu."
+      ],
+      "optionReasons": [
+        "Doğru. Eş öncelikli işlemleri soldan sağa yapmak 15÷3=5 ve ardından 5×2=10 verir.",
+        "2,5=15/(3×2), sağdaki çarpmayı öncelikli yaparak bulunur. Başlangıçta böyle bir payda gruplaması yoktur.",
+        "5 yalnız ilk bölmenin sonucudur. İfadedeki son×2 işlemi henüz uygulanmamıştır."
+      ],
+      "commonError": "Çarpmanın her zaman bölmeden önce yapıldığını sanmak; yazılmamış bir parantez eklemek.",
+      "check": "3’e bölmek 1/3 ile çarpmaktır: 15·(1/3)·2=30/3=10. Bu eşdeğer çarpım aynı sonucu bağımsız denetler."
+    }
+  },
+  {
+    "id": "bas-4",
+    "identity": "[\"bas-4\",\"(3x + 6)/(x + 2) ifadesi hangi gerçek x değerlerinde 3’e eşittir?\",\"\",[\"Bütün gerçek sayılarda\",\"Yalnız x ≠ 2 iken\",\"x ≠ −2 iken\"],2,\"3x + 6 = 3(x + 2). x ≠ −2 iken ortak çarpan sadeleşir. x = −2 için başlangıç ifadesi tanımsızdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Rasyonel bir ifadede başlangıç paydası sıfır olamaz. Ortak çarpan sadeleştirme yalnız bu çarpanın sıfırdan farklı olduğu değerlerde geçerlidir.",
+        "Sadeleşmiş ifadenin daha geniş bir alanda yazılabilmesi, ilk ifadenin o yeni değerlerde tanımlı olduğunu göstermez. Tanım alanı hesap boyunca saklanır."
+      ],
+      "strategy": "Paydayı sıfır yapan değeri işlemden önce dışla; sonra payın tamamını çarpım biçimine getir. Sonucun sabit olmasıyla başlangıç tanım alanını ayrı değerlendir.",
+      "steps": [
+        "x+2=0 eşitliği x=−2 verir; ilk ifadenin tanımlı olması için bu değer dışlanır.",
+        "Pay 3x+6=3(x+2) olarak yazılır. x≠−2 için ortak sıfır olmayan x+2 çarpanı sadeleşebilir.",
+        "İzinli bütün değerlerde bölüm 3 olur. Aranan koşul x≠−2’dir; yasak noktada 0/0 ortaya çıkar."
+      ],
+      "optionReasons": [
+        "Bütün gerçekler seçimi, x=−2’deki sıfır paydayı da kapsar. Sabit sonuç tanım dışı noktayı onarmaz.",
+        "x≠2 yanlış işaretli yasak değerdir: payda x+2 olduğundan sıfır −2’de oluşur. x=2 ise ifade tanımlıdır.",
+        "Doğru. Başlangıçta x≠−2 korununca pay ve paydanın ortak çarpanı sadeleşir ve sonuç 3 kalır."
+      ],
+      "commonError": "Sadeleştirmeyi tanım alanını genişleten bir işlem saymak veya x+2’nin sıfırını+2 sanmak.",
+      "check": "x=0 için 6/2=3; x=2 için 12/4=3 bulunur. x=−2 ise payda 0’dır ve denetime bir sayı değeri olarak sokulamaz."
+    }
+  },
+  {
+    "id": "bas-5",
+    "identity": "[\"bas-5\",\"x = −7 için √(x²) kaçtır?\",\"\",[\"−7\",\"7\",\"49\"],1,\"x² = 49 ve √49 = 7. Genel ilişki √(x²) = |x|’tir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Gerçek sayılarda karekök sembolü negatif olmayan sonucu seçer. Bir sayının karesini almak işareti kaldırabilir; ardından karekök almak başlangıç işaretini kendiliğinden geri getirmez.",
+        "Genel eşitlik √(x²)=|x|’tir. Mutlak değer, sayının sıfıra uzaklığıdır ve hiçbir zaman negatif olmaz."
+      ],
+      "strategy": "Verilen negatif değeri önce parantezle kare ifadesine yerleştir; oluşan pozitif sayının negatif olmayan kökünü seç. Bunu mutlak değer tanımıyla karşılaştır.",
+      "steps": [
+        "x=−7 için x²=(−7)·(−7)=49 olur; iki eksi çarpımı pozitiftir.",
+        "49’un negatif olmayan karekökü 7’dir. −7 de 49’un kare köklerinden biridir ama √ simgesi negatif olmayanı belirtir.",
+        "Bu nedenle √(x²)=7’dir; |−7|=7 denetimi de aynı değeri verir."
+      ],
+      "optionReasons": [
+        "−7, kare ve kökün koşulsuz birbirini silmesiyle elde edilir. √ sonucu negatif olamayacağı için bu işaret korunamaz.",
+        "Doğru. Önce kare 49, ardından esas karekök 7 bulunur; sonuç |x| ile uyumludur.",
+        "49, yalnız x² hesabının sonucudur. Dıştaki karekök işlemi yapılmadan bırakılmıştır."
+      ],
+      "commonError": "√(x²)=x yazıp x’in negatif olabileceğini unutmak; karekök ile ikinci derece denklemin iki çözümünü karıştırmak.",
+      "check": "Sonuç 7 hem negatif değildir hem karesi 49’dur. −7 negatif olmayanlık koşulunu,49 ise kare kontrolünü sağlayamaz."
+    }
+  },
+  {
+    "id": "par-1",
+    "identity": "[\"par-1\",\"−8’in işareti ve tek–çift özelliği nedir?\",\"\",[\"Negatif ve çift\",\"Pozitif ve çift\",\"Negatif ve tek\"],0,\"−8 = 2(−4) çifttir ve sıfırdan küçük olduğu için negatiftir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tam sayının çift olması 2k biçiminde, k tam sayı olacak şekilde yazılabilmesidir. Bu k pozitif, negatif veya sıfır olabilir.",
+        "İşaret ayrı bir özelliktir: sayı 0’dan küçükse negatif,0’dan büyükse pozitiftir. Çiftlik işaretin yerine geçmez."
+      ],
+      "strategy": "Önce sayıyı sıfırla karşılaştır; sonra 2’ye bölündüğünde bir tam sayı verip vermediğini denetle. İki ayrı sonucu aynı seçenekte birleştir.",
+      "steps": [
+        "−8<0 olduğundan işaret negatiftir; çiftlik bu karşılaştırmadan bağımsızdır.",
+        "−8=2·(−4) yazılır ve −4 tam sayıdır; dolayısıyla sayı çifttir.",
+        "Gereken sınıflama negatif ve çifttir. Eksi işareti,2 ile tam bölünmeyi bozmaz."
+      ],
+      "optionReasons": [
+        "Doğru. Sayı 0’ın solundadır ve 2’nin tam katıdır; negatif ve çift özellikleri birlikte taşınır.",
+        "Çiftlik doğrudur; ancak −8 sıfırdan küçük olduğu için pozitif değildir.",
+        "Negatiflik doğrudur; ancak 2’ye bölüm −4 tam sayı olduğundan tek sınıfına girmez."
+      ],
+      "commonError": "Negatif tam sayılara tek–çift tanımı uygulanmadığını sanmak veya çift sayıyı otomatik pozitif kabul etmek.",
+      "check": "−8/2=−4 tam sayı verir; bu bölümün işareti çiftliği değiştirmez. Sayı doğrusunda −8’in 0’ın solunda olması negatifliği doğrular."
+    }
+  },
+  {
+    "id": "par-2",
+    "identity": "[\"par-2\",\"−3² ve (−3)² sırasıyla kaçtır?\",\"\",[\"9 ve 9\",\"−9 ve 9\",\"−9 ve −9\"],1,\"−3² = −(3²) = −9. (−3)² = (−3)(−3) = 9.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir üssün hangi tabana uygulandığını parantez belirler. Parantez içine alınmamış baştaki eksi, kuvvet işleminin dışında kalabilir.",
+        "İki negatif sayının çarpımı pozitiftir. Ancak bir pozitif kuvvet sonucunun önüne sonradan eksi koymak farklı bir işlemdir."
+      ],
+      "strategy": "İki yazılışta da üssün kapsadığı tabanı işaretle. Parantezsiz olanda kuvvetten sonraki eksiyi, parantezli olanda çarpımın iki işaretini ayrı uygula.",
+      "steps": [
+        "−3² yazılışında taban 3’tür; önce 3²=9, sonra baştaki eksiyle −9 elde edilir.",
+        "(−3)² yazılışında taban −3’tür; (−3)·(−3)=9 hesaplanır.",
+        "Sorulan sıra korununca ilk değer −9, ikinci değer 9 olur. Parantez iki ifadenin anlamını değiştirmiştir."
+      ],
+      "optionReasons": [
+        "9 ve 9, ilk ifadenin dıştaki eksi işaretini yok sayar; −3²’de eksi kuvvet tabanına alınmamıştır.",
+        "Doğru. İlki −(3²)=−9, ikincisi iki negatif çarpanın çarpımı 9’dur.",
+        "İlk değer uygundur; ikinciyi −9 yazmak, (−3)²’deki iki eksi işaretinin pozitif çarpımını gözden kaçırır."
+      ],
+      "commonError": "Parantezli ve parantezsiz negatif tabanı aynı yazılış sanmak.",
+      "check": "İfadeleri açık çarpım olarak yaz: −(3·3) ve (−3)·(−3). Ayrı işaret hesapları −9 ile 9 sırasını doğrular."
+    }
+  },
+  {
+    "id": "par-3",
+    "identity": "[\"par-3\",\"İki çift tam sayının bölümü için, bölen sıfır değilken hangisi doğrudur?\",\"\",[\"Daima tektir.\",\"Daima çifttir.\",\"Tek, çift veya tam sayı olmayan sonuç verebilir.\"],2,\"Çift/çift tek bir parite belirlemez: 3, 4 ve 1/2 sonuçları mümkündür.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tek–çift sınıflaması yalnız tam sayılara uygulanır. Bölen sıfırdan farklı olsa bile iki tam sayının bölümü tam sayı olmayabilir.",
+        "Bir işlemin sonucu için daima yargısı, bütün izinli pay ve paydalarda aynı özelliğin korunmasını ister. Farklı sonuç türleri sağlayan geçerli örnekler bu tür bir genellemeyi sınar."
+      ],
+      "strategy": "Pay ve paydayı çift tutarak farklı bölümler kur; her birinin önce tam sayı olup olmadığını, tam sayıysa paritesini incele. Tek bir örnekten zorunlu genel sonuç çıkarma.",
+      "steps": [
+        "6/2=3 örneğinde pay ve payda çifttir, bölen 0 değildir ve sonuç tek tam sayıdır.",
+        "8/2=4 örneği aynı başlangıç koşullarında çift sonuç verir. Bu yüzden tek bir parite zorunlu değildir.",
+        "2/4=1/2 de izinli bir bölümdür fakat tam sayı değildir. Böylece tek, çift ve tam sayı olmayan üç sonuç türünün de mümkün olduğu görülür."
+      ],
+      "optionReasons": [
+        "Daima tek iddiasını 8/2=4 çürütür; iki sayı da çift ve bölen 0’dan farklıdır.",
+        "Daima çift iddiasını 6/2=3 çürütür. Bölümde çift çarpanlar sadeleşince sonuç tek olabilir.",
+        "Doğru. 6/2,8/2 ve 2/4 aynı koşullar altında sırasıyla tek, çift ve tam sayı olmayan sonuç örnekleridir."
+      ],
+      "commonError": "Çarpımdaki çiftlik kuralını bölmeye koşulsuz taşımak; kesre tek veya çift demek.",
+      "check": "Üç örnekte de iki girdinin çift olduğunu ve paydanın sıfır olmadığını ayrı kontrol et. 1/2’ye parite atamadan tam sayı dışı sınıfında bırak."
+    }
+  },
+  {
+    "id": "par-4",
+    "identity": "[\"par-4\",\"(−2) × (−3) × 0 çarpımı nasıldır?\",\"\",[\"Negatif\",\"Pozitif\",\"Sıfır\"],2,\"Çarpanlardan biri sıfır olduğu için sonuç 0’dır; pozitif veya negatif değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Çarpmada sıfır yutan elemandır: herhangi bir gerçek a için a·0=0. Bu özellik, çarpımdaki diğer sayıların işaretinden bağımsızdır.",
+        "Pozitif ve negatif sınıfları sırasıyla 0’dan büyük ve 0’dan küçük değerlerdir; eşitlik durumu ayrı değerlendirilir."
+      ],
+      "strategy": "İşaretleri saymaya geçmeden bütün çarpanları tara; yutan eleman varsa onu önce kullan. Sonucun sıfırla ilişkisini ayrıca sınıflandır.",
+      "steps": [
+        "Çarpımdaki çarpanlardan biri açıkça 0’dır; bu bilgi sonucu belirlemek için yeterlidir.",
+        "İlk iki çarpanı hesaplarsan (−2)·(−3)=6 elde edilir; ancak işlem burada bitmez.",
+        "Kalan 6·0=0 olur. Sonuç ne pozitif ne negatiftir; sıfır seçeneğine karşılık gelir."
+      ],
+      "optionReasons": [
+        "Negatif sonuç, çarpımdaki 0 çarpanını görmezden gelir. Sıfırla çarpım negatif olamaz.",
+        "Pozitif olan yalnız ilk iki çarpanın sonucu 6’dır. Sonraki 0 çarpanı bütün çarpımı sıfırlar.",
+        "Doğru. Çarpımda 0 bulunduğundan diğer işaretlerden bağımsız olarak sonuç 0’dır."
+      ],
+      "commonError": "İki negatiften pozitif bulduktan sonra son sıfır çarpanını işlem dışında bırakmak.",
+      "check": "Çarpanları yeniden grupla: (−2)·[(−3)·0]=(−2)·0=0. İki farklı gruplama aynı sonucu verir."
+    }
+  },
+  {
+    "id": "par-5",
+    "identity": "[\"par-5\",\"Sıfır için doğru ifade hangisidir?\",\"\",[\"Tektir ve negatif değildir.\",\"Çifttir; ne pozitif ne negatiftir.\",\"Pozitif çift sayıdır.\"],1,\"Sıfır 2’nin tam katıdır. Pozitiflik x > 0, negatiflik x < 0 gerektirir; sıfır ikisini de sağlamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Çiftlik için sayı 2k, k tam sayı, biçiminde yazılabilmelidir. Teklik ise 2k+1 biçimine karşılık gelir; bu sınıflama büyüklük ve işaret sorusundan ayrıdır.",
+        "Pozitif olma x>0, negatif olma x<0 koşuludur. Sınır noktasının bu sıkı eşitsizlikleri sağlayıp sağlamadığı ayrıca denetlenir."
+      ],
+      "strategy": "Verilen sayıyı çiftlik tanımındaki 2k biçiminde sınayıp uygun tam sayı k’yı bul; ardından pozitiflik ve negatifliğin sıkı karşılaştırmalarını ayrı değerlendir.",
+      "steps": [
+        "0=2·0 yazılabilir ve buradaki k=0 tam sayıdır; bu nedenle 0 çifttir.",
+        "Pozitiflik için 0>0 gerekir; bu doğru değildir. Negatiflik için 0<0 gerekir; o da doğru değildir.",
+        "Birleşik sonuç: 0 çifttir, ne pozitif ne negatiftir. Çift olmak pozitif olmak anlamına gelmez."
+      ],
+      "optionReasons": [
+        "Negatif değildir kısmı doğrudur; fakat 0’ın 2’ye tam bölünmesi onu tek değil çift yapar.",
+        "Doğru. 0=2·0 çiftlik koşulunu sağlar; sıkı pozitif ve negatif karşılaştırmalarını sağlamaz.",
+        "Çiftlik doğrudur ama pozitiflik için gereken 0’dan büyük olma koşulu sağlanmaz."
+      ],
+      "commonError": "Sıfırı yalnız pozitif/negatif ikilisinden birine zorlamak veya çiftliği yalnız pozitif tam sayılara uygulamak.",
+      "check": "0/2=0 tam sayıdır; ayrıca −0=+0=0. İşaret yazılışını değiştirmek sayıyı sıfırın sağına ya da soluna taşımaz."
+    }
+  },
+  {
+    "id": "seq-1",
+    "identity": "[\"seq-1\",\"−5, −3, −1, 1 biçiminde başlayan ardışık tek sayı listesinin sonraki terimi nedir?\",\"\",[\"2\",\"3\",\"5\"],1,\"1’den sonra 2 eklenir ve 3 gelir. Negatif başlangıç, tek sayılardaki 2 artışını değiştirmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ardışık tek tam sayıların farkı 2’dir; bu ilişki sayıların negatif veya pozitif olmasına bağlı değildir.",
+        "Sonraki terim, önceki terime listenin ortak adımı eklenerek bulunur. Başlangıçtaki ardışık farkları karşılaştırmak kullanılan kuralı doğrular."
+      ],
+      "strategy": "Verilen ardışık tek liste için birkaç komşu farkı denetle; aynı adımı son terime uygula ve yeni değerin tekliğini kontrol et.",
+      "steps": [
+        "−3−(−5)=2 ve −1−(−3)=2’dir; verilen ardışık tek sıra adım 2 ile ilerliyor.",
+        "1’den sonraki terim için aynı artış korunur: 1+2 yazılır.",
+        "Sonraki terim 3’tür. 1 ile 3 arasında başka tek tam sayı yoktur; ardışık tek olma koşulu sağlanır."
+      ],
+      "optionReasons": [
+        "2, tam sayılar arasındaki 1 adımıyla ilerler ama verilen tek sayı dizisinde çift bir terim üretir.",
+        "Doğru. Verilen sırada her komşu fark 2 olduğu için 1’den sonra 3 gelir.",
+        "5 de tektir ancak 1’den sonraki ilk teki atlar; 1’den 5’e fark 4 olur."
+      ],
+      "commonError": "Sıfır çevresinden geçerken adımı değiştirmek veya her tek sayıyı sıradaki terim saymak.",
+      "check": "Yeni komşu fark 3−1=2’dir ve 3=2·1+1 biçimindedir. Hem ortak fark hem tek olma koşulu birlikte doğrulanır."
+    }
+  },
+  {
+    "id": "seq-2",
+    "identity": "[\"seq-2\",\"4, 7, 10, …, 28 listesinde kaç terim vardır?\",\"\",[\"8\",\"10\",\"9\"],2,\"n = (28 − 4)/3 + 1 = 8 + 1 = 9. Sekiz, terim değil adım sayısıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sabit adımlı listede ilk terimden son terime geçiş sayısı, terimler arasındaki aralıkların sayısıdır. n terim arasında n−1 aralık bulunur.",
+        "İlk a ve son b, adım d≠0 iken b=a+(n−1)d yazılır. Sonucun tam sayı olması, son değerin gerçekten bu listeye ait olduğunu da denetler."
+      ],
+      "strategy": "İlk ve son arasındaki farkı tek adımın büyüklüğüne bölerek geçiş sayısını bul; sonra ilk terimin de sayılması gerektiğini açıkça ekle.",
+      "steps": [
+        "Liste 4’ten başlayıp her adımda 3 artıyor; son terim 28’dir.",
+        "İki uç arasındaki fark 28−4=24 olduğundan 24/3=8 geçiş yapılmıştır.",
+        "Başlangıçtaki 4 de bir terimdir; 8 geçiş 9 terim oluşturur. Aranan sayı 9’dur."
+      ],
+      "optionReasons": [
+        "8, geçiş sayısıdır. İlk terim ayrıca sayılmadığı için terim adedinden 1 eksiktir.",
+        "10, doğru 9 terime bir fazla başlangıç ekler; 8 geçişin iki ucunu yeniden saymaya yol açar.",
+        "Doğru. 8 eşit aralık arasında iki uç da dahil 9 terim vardır."
+      ],
+      "commonError": "Uçlar arasındaki adım sayısını doğrudan nesne veya terim sayısı kabul etmek.",
+      "check": "Listeyi aç: 4,7,10,13,16,19,22,25,28. Dokuzuncu terim 4+8·3=28’dir; sonraki 31 verilen sonu aşar."
+    }
+  },
+  {
+    "id": "seq-3",
+    "identity": "[\"seq-3\",\"6 + 10 + 14 + … + 30 toplamı kaçtır?\",\"\",[\"126\",\"108\",\"144\"],0,\"n = (30 − 6)/4 + 1 = 7. S = 7(6 + 30)/2 = 126.\"]",
+    "guidance": {
+      "knowledge": [
+        "Eşit aralıklı bir listenin toplamında baştan ve sondan eşleşen terimlerin toplamları aynıdır. İki kopyayı ters yönlerde toplamak 2S=n(ilk+son) verir.",
+        "Bu formülde n, terim sayısıdır; aralık sayısı değildir. Önce ilk, son ve adımın aynı listeye ait olduğunu belirlemek gerekir."
+      ],
+      "strategy": "Terimler arasındaki sabit farktan adedi bul; ardından toplamı ters sıradaki kopyasıyla eşleyerek ilk-son toplamını kullan. Sonuçta iki kez saymayı düzelt.",
+      "steps": [
+        "Adım 10−6=4’tür. 6’dan 30’a geçiş sayısı (30−6)/4=6 olur.",
+        "İlk terimle birlikte n=7’dir. Baş ve son toplamı 6+30=36 olduğundan iki toplamın birleşimi 7·36 eder.",
+        "Tek toplam S=7·36/2=126 bulunur. Ortadaki terim 18 ile 7·18 de aynı toplamı verir."
+      ],
+      "optionReasons": [
+        "Doğru. Yedi terimin ortalaması (6+30)/2=18 olduğundan toplam 126’dır.",
+        "108=6·18, altı aralığı altı terim sanarak bulunur; ilk terimin sayılması eksiktir.",
+        "144=8·18, terim sayısını sekiz alır. Verilen listede yalnız yedi terim vardır."
+      ],
+      "commonError": "Toplam formülüne geçerken terim sayısındaki+1’i unutmak veya fazladan uç eklemek.",
+      "check": "6+30,10+26 ve 14+22 çiftleri 36’şar eder; geriye 18 kalır. 3·36+18=126, formülden bağımsız bir toplama denetimidir."
+    }
+  },
+  {
+    "id": "seq-4",
+    "identity": "[\"seq-4\",\"Ardışık üç çift tam sayının toplamı 42. En küçüğü kaçtır?\",\"\",[\"14\",\"10\",\"12\"],2,\"3x = 42 olduğundan ortanca 14’tür. Sayılar 12, 14, 16; en küçük 12.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ardışık çift tam sayılar arasındaki fark 2’dir. Üç terimi ortadaki t etrafında t−2,t,t+2 yazmak toplamda sapmaları birbirini götürür.",
+        "Bir listenin ortalaması, sorulan en küçük terimle aynı olmak zorunda değildir. Bulunan orta değerden uygun adımla geri gidilir ve çiftlik denetlenir."
+      ],
+      "strategy": "Üç çifti ortadaki sayı etrafında simetrik yaz; toplam koşulundan ortancayı bul. En küçük istendiği için bundan bir ortak adım geri git.",
+      "steps": [
+        "Sayılar t−2,t,t+2 olsun; t çift bir tam sayı olmalıdır.",
+        "Toplam 3t=42 verir ve t=14 bulunur. Bu, en küçük değil ortadaki sayıdır.",
+        "En küçük 14−2=12’dir; sayı üçlüsü 12,14,16 olur ve hepsi çifttir."
+      ],
+      "optionReasons": [
+        "14 toplamın üçe bölümünden çıkan ortadaki sayıdır. En küçük istenirken ondan bir adım geri gidilmelidir.",
+        "10 seçilirse ardışık çiftler 10,12,14 olur; toplamları 36’dır ve 42 koşuluna uymaz.",
+        "Doğru. Ortanca 14’ün bir önceki çifti 12’dir; 12+14+16=42 sağlar."
+      ],
+      "commonError": "Toplamı terim sayısına bölerek bulduğun ortalamayı, sorulan en küçük sayıyla karıştırmak.",
+      "check": "12+14+16=42; komşu farklar 2 ve bütün sayılar 2’nin katıdır. Böylece toplam, ardışıklık ve çiftlik birlikte sağlanır."
+    }
+  },
+  {
+    "id": "seq-5",
+    "identity": "[\"seq-5\",\"3, 4, 5, 6 listesinin ortalaması için hangisi doğrudur?\",\"\",[\"4’tür ve listededir.\",\"4,5’tir ve listede bir terim değildir.\",\"5’tir; çift terim sayısında ortalama olmaz.\"],1,\"(3 + 6)/2 = 4,5. Ortalama tanımlıdır; listede yer almak zorunda değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Aritmetik ortalama, toplamın terim sayısına bölümüdür; sayıların birinden seçilmesi gerekmez. Çift adet terim bulunması ortalamayı tanımsız yapmaz.",
+        "Eşit aralıklı listede ortalama uçların toplamının yarısıdır. Terim adedi çiftse iki orta terimin arasında bir değer elde edilebilir."
+      ],
+      "strategy": "Listenin toplamını ve adedini ayrı belirleyip oranını hesapla; sonra bulunan sayının listedeki terimlerle aynı olup olmadığını kontrol et.",
+      "steps": [
+        "Liste 3,4,5,6 olmak üzere dört terim içerir ve toplamı 18’dir.",
+        "Ortalama 18/4=4,5 olur. Aynı değer uçlardan (3+6)/2 ile de bulunur.",
+        "4,5 listedeki 3,4,5,6 sayılarından biri değildir. Ortalama vardır ama bir terim olması gerekmez."
+      ],
+      "optionReasons": [
+        "4 listede vardır; ancak 4·4=16, gerçek toplam 18’i geri vermez. Bu nedenle ortalama değildir.",
+        "Doğru. Toplam 18’in dört terime eşit payı 4,5’tir ve bu sayı listede bulunmaz.",
+        "5·4=20 toplamı da uyuşmaz. Ayrıca çift terim sayısı ortalamayı engellemez; iki orta değer arasında bulunabilir."
+      ],
+      "commonError": "Ortalamayı listedeki bir tam sayıya yuvarlamak veya çift sayıda terimde ortalama hesaplanamayacağını sanmak.",
+      "check": "3 ile 6’nın,4 ile 5’in toplamları 9’ar eder. Her çiftin ortalaması 4,5 olduğundan dört terimin ortalaması da 4,5’tir; 4·4,5=18 kapanır."
+    }
+  },
+  {
+    "id": "pri-1",
+    "identity": "[\"pri-1\",\"1 sayısı nasıl sınıflandırılır?\",\"\",[\"Asaldır.\",\"Ne asal ne bileşiktir.\",\"Bileşiktir.\"],1,\"1’in yalnız bir pozitif böleni vardır. Asal ve bileşik tanımları 1’den büyük tam sayılar içindir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Asal sayı tanımı,1’den büyük bir tam sayının tam iki farklı pozitif böleninin bulunmasını ister. Bileşik sayılar da 1’den büyük olup bu iki bölen dışında bölen taşır.",
+        "Bir tanıma göre sınıflandırırken hem büyüklük koşulu hem farklı bölen adedi kontrol edilir. Aynı böleni iki farklı adla söylemek iki bölen oluşturmaz."
+      ],
+      "strategy": "Sayının pozitif bölenlerini tekrarsız listele; asal ve bileşik tanımlarının 1’den büyük olma koşulunu da ayrı uygula. İki sınıftan birini seçmek zorunda olduğunu varsayma.",
+      "steps": [
+        "1’i pozitif tam bölen tek sayı 1’dir. “1 ve kendisi” denildiğinde burada iki farklı bölen sayılmış olmaz.",
+        "Asal tanımındaki 1’den büyük olma ve iki farklı pozitif bölen koşulları sağlanmaz.",
+        "Bileşik tanımı da 1’den büyük sayılar içindir. Dolayısıyla 1 ne asal ne bileşiktir."
+      ],
+      "optionReasons": [
+        "1’in yalnız bir farklı pozitif böleni vardır; asal tanımının iki bölen ve 1’den büyük olma koşulları sağlanmaz.",
+        "Doğru. 1, hem asal hem bileşik tanımının 1’den büyük olma koşulunun dışındadır.",
+        "Asal olmayan her pozitif tam sayı otomatik bileşik değildir. Bileşik tanımı 1’i kapsamaz; ayrıca iki büyük tam çarpana ayrılamaz."
+      ],
+      "commonError": "“1 ve kendisi” sözünü 1 için iki ayrı bölenmiş gibi saymak; asal olmayanı koşulsuz bileşik kabul etmek.",
+      "check": "Pozitif bölen kümesi{1} tek elemanlıdır. Asal sayıdaki iki farklı eleman ve bileşik sayıdaki ek bölen düzeni burada oluşmaz."
+    }
+  },
+  {
+    "id": "pri-2",
+    "identity": "[\"pri-2\",\"Tek çift asal sayı hangisidir?\",\"\",[\"2\",\"1\",\"4\"],0,\"2’nin bölenleri 1 ve 2’dir. Çift n > 2 için 2, kendisi ve 1 dışında bir bölen olur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir asal sayı yalnız 1 ve kendisine pozitif tam bölünür. Bir sayının 1 ile kendisi arasında ek bir pozitif bölenini bulmak, asal olmadığını kanıtlar.",
+        "Çift tam sayılar 2’nin katıdır. Çiftlik ile asallığı birleştirirken 2 böleninin sayının kendisiyle aynı olabildiği sınır durumu ayrı incelenir."
+      ],
+      "strategy": "Çift olma bilgisinden gelen 2 bölenini kullan; bu bölenin ek bölen mi yoksa sayının kendisi mi olduğunu ayır. Seçeneklerdeki küçük sayıları tanımla denetle.",
+      "steps": [
+        "2’nin pozitif bölenleri 1 ve 2’dir; farklı iki böleni bulunduğundan 2 asaldır.",
+        "2’den büyük bir çift sayıda 2,1’den ve sayının kendisinden farklı bir bölen olur; bu sayılar asal olamaz.",
+        "Böylece çiftler içinde tek asal 2’dir. 1 asal tanımını sağlamaz; 4 ise 2 ek bölenini taşır."
+      ],
+      "optionReasons": [
+        "Doğru. 2’nin bölenleri yalnız 1 ve 2’dir; daha büyük çiftlerde 2 ek bölen oluşturur.",
+        "1 çift değildir ve 1’den büyük olma koşulunu da sağlamaz; asal kabul edilemez.",
+        "4 çift olsa da pozitif bölenleri 1,2,4’tür. Ek 2 böleni asallığı bozar."
+      ],
+      "commonError": "Bütün çiftleri asal olmayan diye tek kurala sokup en küçük çiftin özel durumunu atlamak.",
+      "check": "2 için bölen kümesi{1,2}’dir. 2k>2 biçimindeki her pozitif çiftte k>1 olur; 1<2<2k ilişkisi ek böleni açıkça gösterir."
+    }
+  },
+  {
+    "id": "pri-3",
+    "identity": "[\"pri-3\",\"49’u asallık için incelerken hangi asal aday mutlaka dahil edilmelidir?\",\"\",[\"11\",\"13\",\"7\"],2,\"7² = 49 olduğundan 7 denenir. 49 = 7 × 7, bu nedenle bileşiktir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bileşik n sayısı,1’den büyük iki tam çarpanın çarpımıdır. İki çarpan da √n’den büyük olamayacağından en az biri bu sınırı aşmaz.",
+        "Asallık denemesinde p²≤n sağlayan asal p’ler yeterlidir. Kare sayı sınırda bir çarpan çifti verebildiği için eşitlik denemeden çıkarılamaz."
+      ],
+      "strategy": "Verilen sayı için asal adayların karelerini karşılaştır; deneme aralığını sıkı küçüklükle kesme. Sınırdaki kare eşitliğinin bir bölen üretip üretmediğini kontrol et.",
+      "steps": [
+        "49 için adayın karesi 49’u aşmamalıdır; 2,3,5 ve 7 bu sınır içinde kalan asal adaylardır.",
+        "7²=49 olduğu için 7 tam sınırdadır ve denemeye dahildir.",
+        "49/7=7 tam sayı çıkar. 7 denenmeden asallık kararı vermek bu bileşikliği kaçırır."
+      ],
+      "optionReasons": [
+        "11²=121,49’u aşar. Gerekli küçük adaylar elendikten sonra bu kadar büyük bir asalın denenmesi zorunlu değildir.",
+        "13²=169,49’un üzerindedir; karekök sınırının dışında kalır. 49’un bileşikliği daha küçük 7 ile zaten görülür.",
+        "Doğru. 7²=49 olduğundan eşitlik sınırı 7’yi kapsar ve 49=7·7 çarpımını ortaya çıkarır."
+      ],
+      "commonError": "p²≤n yerine p²<n kullanıp tam karelerdeki sınır böleni denememek.",
+      "check": "49’un 1 ve 49 dışındaki böleni 7’dir. Bu tek bölen bile bileşikliği kanıtlar; 11 veya 13 denemeleri bu kanıt için gerekli değildir."
+    }
+  },
+  {
+    "id": "pri-4",
+    "identity": "[\"pri-4\",\"84 = 2² × 3 × 7. Farklı asal bölen türü sayısı kaçtır?\",\"\",[\"4\",\"3\",\"2\"],1,\"Farklı asal bölenler 2, 3, 7: üç tür. Tekrarlı asal çarpan adedi ise dörttür.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir asal çarpımda farklı asal bölen sayısı, çarpımda pozitif üs taşıyan farklı asal tabanların sayısıdır. Aynı asalı tekrar görmek yeni bir tür eklemez.",
+        "Üslerin toplamı tekrarlı asal çarpan adedini verir. Bütün pozitif bölenleri sayan üs-seçim hesabı ise bunlardan ayrı bir sorudur."
+      ],
+      "strategy": "Verilen asal çarpımı farklı tabanlar ve tekrar adetleri olarak iki satıra ayır; soru hangi sayacı istiyorsa yalnız onu kullan.",
+      "steps": [
+        "84=2·2·3·7 açılımında 2 iki kez,3 ve 7 birer kez görünür.",
+        "Tekrarsız asal bölen kümesi{2,3,7}’dir. 2’nin ikinci kopyası aynı türün tekrarıdır.",
+        "Bu kümenin üç elemanı olduğundan farklı asal bölen türü sayısı 3’tür; üs toplamı 4 ise başka bir sayacı verir."
+      ],
+      "optionReasons": [
+        "4=2+1+1, üsleri toplayarak tekrarlı asal çarpanları sayar. Sorudaki farklı tür sayısı değildir.",
+        "Doğru. Asal tabanlar 2,3,7 olmak üzere üç farklı tür vardır.",
+        "2 sayısı ya 2² üssünü ya da eksik bir taban listesini sayar; 3 ve 7 tabanlarının ikisi de 84’ü böldüğü için toplam tür adedi iki olamaz."
+      ],
+      "commonError": "Asal çarpanın kaç kopyası olduğunu, kaç farklı asal bulunduğuyla karıştırmak.",
+      "check": "84/2=42,84/3=28,84/7=12 tam sayıdır. Verilen asal çarpım bu üç taban dışında asal içermediğinden liste eksiksizdir."
+    }
+  },
+  {
+    "id": "pri-5",
+    "identity": "[\"pri-5\",\"İki asal sayının toplamı 21. Çarpımları kaçtır?\",\"\",[\"40\",\"42\",\"38\"],2,\"Çift asal yalnız 2’dir; diğer asal 19. Çarpım 2 × 19 = 38.\"]",
+    "guidance": {
+      "knowledge": [
+        "İki tam sayının toplamı tekse biri tek, diğeri çifttir. Asal sayılardan çift olanının ek bölen taşımaması için özel küçük sınır durumunda kalması gerekir.",
+        "Bir asal toplamı probleminde toplam koşulu ile her bir sayının asallığı birlikte sağlanmalıdır. Toplamın kendisini çarpandaki sayılardan biri gibi kullanmak bu koşulu değiştirir."
+      ],
+      "strategy": "Toplamın tekliğini kullanarak asal çiftin paritelerini ayır; çift asal adayını belirledikten sonra diğer sayıyı toplamdan çıkar ve asallığını denetle. Çarpımı en son hesapla.",
+      "steps": [
+        "21 tek olduğundan asal sayılardan biri çift olmalıdır. Çift asal yalnız 2’dir.",
+        "Diğer sayı 21−2=19 olur. 19 için 2 ve 3 asal denemeleri yeterlidir; ikisi de bölmez, dolayısıyla 19 asaldır.",
+        "İstenen çarpım 2·19=38’dir; toplam 2+19=21 koşulu da korunur."
+      ],
+      "optionReasons": [
+        "40=2·20 seçimi, ikinci sayıyı 20 alır. 20 asal değildir ve 2+20=22, verilen toplamı da sağlamaz.",
+        "42=2·21, toplam 21’i ikinci çarpan yerine koyar. 21 asal değildir; 2+21 de 21’e eşit olmaz.",
+        "Doğru. İzinli asal çifti 2 ve 19’dur; çarpımları 38 bulunur."
+      ],
+      "commonError": "Tek toplamda çift asalın özel durumunu kullanmamak veya toplamı bir çarpan sanmak.",
+      "check": "Bulunan iki sayının toplamı 21, çarpımı 38’dir. 2’nin bölenleri 1,2; 19’un gerekli küçük asal denemelerinde kalansız bölme yoktur."
+    }
+  },
+  {
+    "id": "fac-1",
+    "identity": "[\"fac-1\",\"Üç farklı kitap, üç numaralı rafa birer kez ve ek kısıt olmadan kaç farklı düzende yerleşir?\",\"\",[\"3\",\"6\",\"9\"],1,\"3 × 2 × 1 = 3! = 6. Farklı kitaplar ve numaralı raflar sıralamayı belirler.\"]",
+    "guidance": {
+      "knowledge": [
+        "Farklı nesneler farklı etiketli yerlere birer kez yerleştiriliyorsa her seçimden sonra kalan seçenek sayısı azalır. Her aşamadaki kalan seçenekler dikkate alınır; aşamaların seçenek sayıları çarpılır.",
+        "Bütün nesneleri birer kez kullanıp ek kısıt koymadığımız sıralama sayısı n! biçimindedir. Aynı nesnenin yeniden seçilmesi bu modelin dışındadır."
+      ],
+      "strategy": "Numaralı rafları sırayla doldur; ilk seçimin ardından kullanılabilir kitapların nasıl azaldığını ayrı ayrı say. Aynı kitabı iki rafa koyan seçimleri dahil etme.",
+      "steps": [
+        "İlk numaralı raf için üç farklı kitaptan biri seçilebilir; 3 seçenek vardır.",
+        "Bir kitap yerleşince ikinci raf için 2, son raf için 1 seçenek kalır.",
+        "Toplam düzen 3·2·1=6’dır. Raf numaraları farklı olduğundan iki kitabın yer değiştirmesi yeni bir düzen oluşturur."
+      ],
+      "optionReasons": [
+        "3 yalnız ilk rafın seçenek sayısıdır; kalan iki kitabın yerleşim dallarını hesaba katmaz.",
+        "Doğru. Azalan 3,2,1 seçimleri 6 farklı düzen üretir; bütün kitaplar birer kez kullanılır.",
+        "9=3·3, iki seçimde de üç kitap varmış gibi davranır. İlk seçimde kullanılan kitabın tekrar seçilmesi yasaktır; kalan seçenekler azalmalıdır."
+      ],
+      "commonError": "Her raf için aynı sayıda seçenek kaldığını sanarak tekrar seçime izin vermek.",
+      "check": "Kitapları A,B,C diye adlandırırsan ABC,ACB,BAC,BCA,CAB,CBA düzenleri elde edilir. Altı farklı sıralama vardır; her birinde her harf bir kez bulunur."
+    }
+  },
+  {
+    "id": "fac-2",
+    "identity": "[\"fac-2\",\"9!/7! kaçtır?\",\"\",[\"2!\",\"9/7\",\"72\"],2,\"9! = 9 × 8 × 7!. Ortak 7! sadeleşince 9 × 8 = 72 kalır.\"]",
+    "guidance": {
+      "knowledge": [
+        "n!=n·(n−1)·…·1 çarpımıdır. Büyük faktöriyeli küçük faktöriyele kadar açmak ortak çarpanları görünür yapar.",
+        "Faktöriyellerin oranı, içlerindeki sayıların oranı veya farklarının faktöriyeli değildir. Sadeleşme ünlem işaretleri arasında değil ortak sıfır olmayan çarpımlar arasında yapılır."
+      ],
+      "strategy": "Paydaki çarpımı paydada bulunan faktöriyele ulaşana kadar aç; ortak çarpımı bütün olarak sadeleştir ve yalnız geriye kalan çarpanları hesapla.",
+      "steps": [
+        "9! çarpımı 9·8·7! biçiminde yazılır; 1’den 7’ye kadar bölüm iki tarafta ortaktır.",
+        "7! pozitif olduğundan (9·8·7!)/7!=9·8 sadeleşmesi geçerlidir.",
+        "Geriye kalan çarpım 9·8=72’dir. Faktöriyelleri büyük tam sayılara açmak gerekmez."
+      ],
+      "optionReasons": [
+        "2!=2,9−7 farkının faktöriyelidir. Faktöriyel bölümünde böyle bir fark kuralı yoktur; geriye 9 ile 8 çarpanları kalır.",
+        "9/7, ünlemleri ortak çarpanmış gibi siler. Oysa 9! ve 7! yalnız 9 ve 7’yi göstermez; her biri 1’den ilgili sayıya kadar çarpımın değeridir.",
+        "Doğru. 9!=9·8·7! olduğundan ortak 7! çıkar ve 72 kalır."
+      ],
+      "commonError": "Faktöriyel bölümünü indislerin farkı ya da doğrudan bölümüyle değiştirmek.",
+      "check": "9!/8!=9 ve 8!/7!=8 olduğundan iki ardışık oran çarpılınca 9!/7!=9·8=72 elde edilir."
+    }
+  },
+  {
+    "id": "fac-3",
+    "identity": "[\"fac-3\",\"(7! + 6!)/6! kaçtır?\",\"\",[\"8\",\"7\",\"13\"],0,\"7! + 6! = 6!(7 + 1). 6!’e bölünce 8 olur. Toplamın tek terimini çizmek geçersizdir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Payı toplam biçiminde olan ifadeyi sadeleştirirken payın bütün terimlerinde bulunan ortak çarpan ayrılır. Payın yalnız bir terimini paydadaki çarpanla sadeleştirip öteki terimi hesaptan çıkarmak toplamın değerini değiştirir.",
+        "Faktöriyel ardışıklığı (n+1)!=(n+1)·n! biçimindedir. Aynı faktöriyel çarpımını kullanmak toplamadaki katsayıları görünür kılar."
+      ],
+      "strategy": "Payın her terimini 6! çarpanıyla yaz; ortak çarpanı bütün toplamdan ayır. Kalan iki katsayıyı topladıktan sonra paydayla sadeleştir.",
+      "steps": [
+        "7!=7·6! ve 6!=1·6! olduğundan pay 7·6!+1·6! olur.",
+        "Dağılma kuralıyla pay 6!(7+1) şeklinde yazılır; ikinci terimin katsayısı 1’dir.",
+        "6! sıfır olmadığından bölüm 7+1=8 verir. Toplamın iki terimi de sonuca katılmıştır."
+      ],
+      "optionReasons": [
+        "Doğru. İki ayrı bölüm 7!/6!=7 ve 6!/6!=1 olduğundan toplam 8’dir.",
+        "7, yalnız ilk terimin bölümüdür. Payın ikinci 6! terimi de 1 katkı yapar; unutulamaz.",
+        "13=7+6, faktöriyellerin içlerini doğrudan toplar. 7! ve 6! sıradan 7 ve 6 sayılarıymış gibi işlem yapılamaz."
+      ],
+      "commonError": "Toplamdaki bir faktöriyel terimini yok sayarak yalnız büyük faktöriyel oranını hesaplamak.",
+      "check": "Oranı iki terime ayır: (7!+6!)/6!=7!/6!+6!/6!. Ortak payda nedeniyle bu eşitlik geçerlidir ve 7+1=8 denetimini verir."
+    }
+  },
+  {
+    "id": "fac-4",
+    "identity": "[\"fac-4\",\"n negatif olmayan tam sayı. n! = 1 hangi n değerlerinde sağlanır?\",\"\",[\"Yalnız 1\",\"Yalnız 0\",\"0 ve 1\"],2,\"0! = 1 ve 1! = 1. n ≥ 2 için çarpım en az 2’dir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Negatif olmayan tam sayılarda faktöriyel tanımı boş çarpım sınırını da içerir. n!=n(n−1)! bağıntısı n≥1 için kullanılır.",
+        "Birden büyük pozitif çarpanlar içeren faktöriyel, bu çarpanların etkisiyle büyür. Sınırdaki küçük değerler, büyük n’ler için kullanılan artış davranışından ayrı denetlenir."
+      ],
+      "strategy": "İzinli en küçük iki doğal değer için faktöriyel tanımını ayrı uygula; sonra daha büyük bütün değerlerin neden istenen eşitliğe dönemeyeceğini çarpım yapısıyla göster.",
+      "steps": [
+        "Boş çarpım tanımı 0!=1 verir; bu nedenle n=0 eşitliği sağlar.",
+        "1!=1 olduğundan n=1 de çözümdür; iki farklı n aynı faktöriyel değerini verebilir.",
+        "n≥2 için çarpım 2’yi ve yalnız pozitif tam çarpanları içerir; n!≥2 olur. Başka çözüm yoktur: n=0 veya 1."
+      ],
+      "optionReasons": [
+        "Yalnız 1 demek, izinli n=0 için boş çarpım değerini unutmak olur. 0! da 1’e eşittir.",
+        "Yalnız 0 demek,1!=1 olan tek çarpanlı sınır durumunu dışlar.",
+        "Doğru. 0 ve 1 eşitliği sağlar; n≥2 faktöriyelleri en az 2 olduğu için yeni çözüm getirmez."
+      ],
+      "commonError": "Faktöriyel değerlerinin n=0’dan itibaren kesin arttığını varsayıp 0! ile 1! eşitliğini kaçırmak.",
+      "check": "İlk değerleri sırala: 0!=1,1!=1,2!=2.2’den sonraki adımlarda 1’den büyük yeni çarpanlar eklendiğinden değer 1’e geri dönemez."
+    }
+  },
+  {
+    "id": "fac-5",
+    "identity": "[\"fac-5\",\"35! sayısının sonunda kaç sıfır vardır?\",\"\",[\"7\",\"8\",\"9\"],1,\"⌊35/5⌋ + ⌊35/25⌋ = 7 + 1 = 8. 125 > 35 olduğundan sonraki katkılar sıfırdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Onluk yazımda bir son sıfır, sayının bir 10 çarpanı içermesine karşılık gelir. 10=2·5 olduğundan sıfır sayısı bu asal çarpan çiftlerinin adediyle belirlenir.",
+        "n! içindeki 5’ler,5’in katlarından birer; 25’in katlarından birer ek kopya ve daha büyük 5 kuvvetlerinden ek kopyalar sayılarak bulunur. Faktöriyelde 2 kopyaları 5’lerden az değildir."
+      ],
+      "strategy": "Son sıfırları rakam sayarak değil asal çarpan eşleştirerek ara. Önce 5’in katlarını say, sonra birden fazla 5 içeren kuvvet katlarının ek katkılarını ayrı ekle.",
+      "steps": [
+        "1’den 35’e kadar 5’in katları 5,10,15,20,25,30,35’tir; bunlar en az birer 5, toplam 7 kopya verir.",
+        "25=5² olduğu için bu sayıda bir ek 5 daha vardır. 35 aralığında 25’in yalnız bir katı bulunur.",
+        "125>35 olduğundan daha yüksek kuvvet katkısı yoktur. 5 sayacı 7+1=8’dir; yeterli 2 ile eşleşerek 35!’in sonunda 8 sıfır oluşturur."
+      ],
+      "optionReasons": [
+        "7, yalnız 5’in katlarını birer kez sayar; 25’in ikinci 5 çarpanını dışarıda bırakır.",
+        "Doğru. ⌊35/5⌋+⌊35/25⌋=7+1=8 eşleşebilir 5 kopyası vardır.",
+        "9 sonucu bir fazla 5 kopyası sayar. Ek katkı verecek ikinci bir 25 katı veya 125 katı bu aralıkta yoktur."
+      ],
+      "commonError": "25’i yalnız tek bir 5’in katı olarak saymak; 10 katlarını saymanın yeterli olduğunu sanmak.",
+      "check": "2 sayacı 17+8+4+2+1=32’dir ve 8 beşi eşleştirmeye yeter. Sınırlayıcı sayaç 5 olduğu için son sıfır adedi 8 olarak doğrulanır."
+    }
+  },
+  {
+    "id": "f013-foundation-birinci-dereceden-denklemler-1",
+    "identity": "[\"f013-foundation-birinci-dereceden-denklemler-1\",\"x gerçek sayı olmak üzere 5−2(x−3)=3x+1 denkleminin kökü kaçtır?\",\"\",[\"2\",\"−2\",\"1\",\"3\",\"10\"],0,\"Sol taraf 5−2x+6=11−2x olur. 11−2x=3x+1 eşitliğinde iki tarafa 2x ekleyip 1 çıkarırsak 10=5x, dolayısıyla x=2 bulunur. İlk denklemde sol taraf 5−2(2−3)=7, sağ taraf 3·2+1=7’dir. Eksi işareti parantezin tamamını etkiler.\"]",
+    "guidance": {
+      "knowledge": [
+        "Denklem çözümünde iki tarafa aynı sayı ekleyip çıkarmak çözüm kümesini korur. Parantez önündeki katsayı içerideki her terime uygulanır.",
+        "ax=d biçiminde a≠0 ise iki taraf a’ya bölünebilir. Bulunan kök, ilk denklemin her iki tarafında aynı değeri üretmelidir."
+      ],
+      "strategy": "Sol parantezi eksi katsayısıyla tam aç; bilinmeyen terimlerini bir tarafta toplayıp sıfır olmayan katsayıyla böl. Son adayı ilk iki tarafın değerlerini hesaplayarak doğrula.",
+      "steps": [
+        "−2(x−3)=−2x+6 olduğundan denklem 11−2x=3x+1’e dönüşür; eksiyle eksi çarpımının artı oluşu korunur.",
+        "İki tarafa 2x ekleyip 1 çıkar: 10=5x. Bu dönüşümler eşitliğin iki tarafına da uygulanmıştır.",
+        "5 sıfır olmadığından bölme x=2 verir. İlk denklemde iki taraf da 7 olduğu için aday geçerlidir."
+      ],
+      "optionReasons": [
+        "Doğru. x=2 için 5−2(2−3)=7 ve 3·2+1=7’dir; çözüm eşitliği sağlar.",
+        "x=−2 için sol 15, sağ −5 olur. Eksi parantezi veya taraf değiştirmeyi yanlış işaretle yürütmek bu adayı geçerli yapmaz.",
+        "x=1 için sol 9, sağ 4’tür. Katsayılar toplanmadan bu değeri seçmek eşitliği sağlamaz.",
+        "x=3 için sol 5, sağ 10 olur; iki taraf arasında eşitlik yoktur.",
+        "10, sadeleşen 10=5x satırındaki sabittir. Katsayıya bölünmeden x yerine yazılamaz; x=10 için sol −9, sağ 31 çıkar."
+      ],
+      "commonError": "Parantezin içindeki −3’e−2’yi yanlış dağıtmak veya 5x=10 satırını x=10 diye okumak.",
+      "check": "Sol −sağ farkı (11−2x)−(3x+1)=10−5x’tir. x=2’de bu fark 0 olur; katsayı −5 sıfır olmadığı için başka kök yoktur."
+    }
+  },
+  {
+    "id": "f013-foundation-birinci-dereceden-denklemler-2",
+    "identity": "[\"f013-foundation-birinci-dereceden-denklemler-2\",\"x gerçek sayı olmak üzere (2x−1)/3−(x+2)/4=2 denklemini sağlayan x kaçtır?\",\"\",[\"2\",\"34/5\",\"22/5\",\"6\",\"10\"],1,\"Ortak payda 12 ile iki taraf çarpılınca 4(2x−1)−3(x+2)=24 olur. Buradan 8x−4−3x−6=24, yani 5x=34 ve x=34/5 çıkar. Kontrol: ilk kesir 21/5, ikinci kesir 11/5 olduğundan fark 10/5=2’dir. Sağdaki 2 de 12 ile çarpılır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sabit ve sıfır olmayan paydalar içeren denklem, iki tarafın tamamı ortak payda ile çarpılarak eşdeğer biçime getirilebilir.",
+        "Bir kesrin önündeki eksi, payın tamamına uygulanır. Kesirleri kaldırma işlemi sağdaki sabit terimi de çarpmayı gerektirir."
+      ],
+      "strategy": "Üç ve dördün ortak katıyla bütün denklemi çarp; ikinci payı paranteziyle tut. Dağıtma tamamlanınca benzer terimleri birleştir ve tam kesir değerini koru.",
+      "steps": [
+        "İki tarafı 12 ile çarpınca 4(2x−1)−3(x+2)=24 elde edilir; sağdaki 2 de 12 ile çarpılmıştır.",
+        "Parantezleri aç: 8x−4−3x−6=24. Böylece 5x−10=24 ve 5x=34 olur.",
+        "x=34/5 bulunur. İlk kesir 21/5, ikinci kesir 11/5 olduğundan aralarındaki fark 2’dir."
+      ],
+      "optionReasons": [
+        "x=2 için (2x−1)/3=1 ve (x+2)/4=1’dir; fark 0 çıkar,2 değil.",
+        "Doğru. x=34/5 ilk ifadede 21/5−11/5=2 verir; iki kesrin eksisi korunmuştur.",
+        "x=22/5 için sol taraf 1 olur. Bu, gereken 2 değerini sağlamadığı için kök değildir.",
+        "x=6 için sol taraf 11/3−2=5/3 olur; bu kesir 2’ye eşit değildir.",
+        "x=10 için sol taraf 19/3−3=10/3 çıkar. Ortak paydadan sonra kalan katsayıyı atlamak eşitliği bozabilir."
+      ],
+      "commonError": "Ortak paydayı yalnız kesirlere uygulayıp sağdaki sabiti çarpmamak veya −3(x+2)’de ikinci işareti kaçırmak.",
+      "check": "İki kesri tek paydada birleştir: sol taraf (5x−10)/12’dir. x=34/5 için (34−10)/12=24/12=2, çözümü ayrı yoldan doğrular."
+    }
+  },
+  {
+    "id": "f013-foundation-birinci-dereceden-denklemler-3",
+    "identity": "[\"f013-foundation-birinci-dereceden-denklemler-3\",\"x gerçek sayı, x≠2 olmak üzere (x+5)/(x−2)=4 denkleminin çözüm kümesi hangisidir?\",\"\",[\"{2}\",\"{3}\",\"{13/3}\",\"{13}\",\"∅\"],2,\"x≠2 iken iki tarafı x−2 ile çarpmak geçerlidir: x+5=4x−8. Böylece 3x=13 ve x=13/3 bulunur. Bu değer 2 değildir. İlk ifadede pay 28/3, payda 7/3 olduğundan oran 4’tür; yasak değer 2 hiçbir aşamada çözüme eklenmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Paydası değişken içeren denklemde önce paydayı sıfır yapan değerler dışlanır. İzinli alanda sıfır olmayan paydayla çarpma geri alınabilir.",
+        "Çözüm kümesi yalnız denklemi sağlayan ve başlangıç tanım koşuluna uyan adayları içerir; yasak değer bir sonraki cebir satırında görünmese de yasak kalır."
+      ],
+      "strategy": "Verilen dışlama koşulunu çözümün yanına not et; sonra paydayla iki tarafı çarpıp doğrusal denklemi çöz. Bulunan adayı hem yasak değere hem ilk orana karşı denetle.",
+      "steps": [
+        "Başlangıç alanı x≠2’dir. Bu alanda x−2 sıfır değildir ve iki taraf onunla çarpılabilir.",
+        "x+5=4(x−2)=4x−8 olduğundan 3x=13 elde edilir.",
+        "x=13/3,2’den farklıdır. Pay 28/3 ve payda 7/3 olduğundan oran 4 olur; çözüm kümesi{13/3}’tür."
+      ],
+      "optionReasons": [
+        "2 başlangıçta yasak değerdir; payda 0 olduğundan yerine koyunca bir denklem değeri hesaplanamaz.",
+        "x=3 için oran (3+5)/(3−2)=8 olur; istenen 4’ü vermez.",
+        "Doğru. 13/3 izinli bir değerdir ve (28/3)/(7/3)=4 sağlar.",
+        "13,3x=13 satırının sağındaki sayıdır. 3’e bölünmelidir; x=13 için oran 18/11 çıkar ve 4 değildir.",
+        "Boş küme demek, bulunan izinli 13/3 kökünü yok sayar. Bu aday ilk oranı gerçekten sağlar."
+      ],
+      "commonError": "Paydayla çarparken x≠2 koşulunu silmek veya bilinmeyenin katsayısını bölmeden bırakmak.",
+      "check": "Eşit oran kontrolüyle payın paydanın 4 katı olmasını denetle: 28/3=4·(7/3). İzinli alandaki 3x=13 tek çözüm verdiği için küme eksiksizdir."
+    }
+  },
+  {
+    "id": "f013-foundation-birinci-dereceden-denklemler-4",
+    "identity": "[\"f013-foundation-birinci-dereceden-denklemler-4\",\"x’in başlangıç alanı bütün gerçek sayılar olsun. 6(x−2)=6x−12 denkleminin çözüm kümesi hangisidir?\",\"\",[\"∅\",\"{0}\",\"{2}\",\"ℝ\",\"{−2}\"],3,\"Parantez açıldığında 6x−12=6x−12 elde edilir. İki taraftan 6x çıkarınca −12=−12, eşdeğer olarak 0x=0 kalır. Bu doğru eşitlikte x sonucu değiştirmez; başlangıç alanındaki bütün gerçekler çözümdür. Sıfıra bölerek tek kök üretilemez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Çözüm kümesi başlangıçta izin verilen değerlerden denklemi sağlayanların bütünüdür. İki taraf aynı ifadeye dönüşüyorsa değişken bir kısıt getirmeyebilir.",
+        "Bilinmeyen yok olduğunda kalan sabit eşitlik değerlendirilir: doğruysa bütün başlangıç alanı, yanlışsa boş küme ortaya çıkar. Sıfır katsayıya bölünmez."
+      ],
+      "strategy": "Parantezi açıp iki tarafı aynı yapıda karşılaştır; bilinmeyenleri çıkardıktan sonra kalan cümlenin doğruluğuna bak. Tek tek örnek seçmek yerine bunun bütün başlangıç alanına etkisini belirle.",
+      "steps": [
+        "Sol taraftaki 6(x−2),6x−12 olur; sağ taraf da zaten 6x−12’dir.",
+        "İki taraftan 6x çıkarınca −12=−12 kalır. Bu doğru cümle x’in değerine bağlı değildir.",
+        "Başlangıç alanı bütün gerçekler olduğu için bütün gerçek x’ler çözümdür: ÇK=ℝ. 0’a bölerek tek sayı aranmaz."
+      ],
+      "optionReasons": [
+        "Boş küme yanlış olur; örneğin x=0 bile her iki tarafta −12 verir. Üstelik cebirsel eşitlik bütün x’lerde aynıdır.",
+        "0 bir çözümdür ama tek çözüm değildir. Bilinmeyen kaybolunca başka gerçek değerleri dışlayan koşul kalmaz.",
+        "2 için iki taraf 0’dır; ancak yalnız 2’nin çözüm olduğunu göstermez. Her x için iki ifade özdeştir.",
+        "Doğru. Parantez açılınca iki tarafın aynı olduğu görülür; başlangıçtaki ℝ alanının tümü çözümdür.",
+        "−2 için iki taraf −24’tür ama çözüm bu tek değere sınırlanmaz. Değişkenin katsayısı tamamen yok olmuştur."
+      ],
+      "commonError": "0x=0 satırındaki 0’ı bilinmeyenin değeri sanmak; bir doğru örnekten tek kök sonucu çıkarmak.",
+      "check": "İki tarafın farkını kur: 6(x−2)−(6x−12)=0. Fark her gerçek x için özdeş 0 olduğundan bütün alanın kabulü doğrulanır."
+    }
+  },
+  {
+    "id": "f013-foundation-birinci-dereceden-denklemler-5",
+    "identity": "[\"f013-foundation-birinci-dereceden-denklemler-5\",\"x’in başlangıç alanı bütün gerçek sayılar olsun. 4(x+1)=4x−3 denkleminin çözüm kümesi hangisidir?\",\"\",[\"ℝ\",\"{0}\",\"{−3/4}\",\"{−7}\",\"∅\"],4,\"Sol taraf 4x+4 olduğundan 4x+4=4x−3 yazılır. İki taraftan 4x çıkarılınca 4=−3, yani 0x=−7 kalır. Hiçbir gerçek x bu yanlış sabit eşitliği sağlayamaz. Bu nedenle çözüm kümesi boştur; −7 kalan sabittir, denklemin kökü değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir denklemde bilinmeyenli terimler eşit katsayılarla yok olabilir. Bu durumda kalan sabit karşılaştırma, çözümün varlığını belirler.",
+        "0x=d ve d≠0 biçimi hiçbir gerçek sayıda sağlanmaz; x’in değerini değiştirmek 0x’i sıfırdan farklı yapamaz."
+      ],
+      "strategy": "İki taraftaki x terimlerini aynı işlemle çıkar; kalan sabit farkın herhangi bir x tarafından değiştirilebilir olup olmadığını incele. Kalan sabiti kök diye yazma.",
+      "steps": [
+        "Sol taraf 4x+4 olduğundan eşitlik 4x+4=4x−3 biçimindedir.",
+        "İki taraftan 4x çıkarılınca 4=−3 kalır. Bu, x ne olursa olsun yanlış bir sabit eşitliktir.",
+        "Hiçbir gerçek x başlangıç denklemini sağlayamaz; çözüm kümesi ∅’dir. Kalan −7 farkı bir x değeri değildir."
+      ],
+      "optionReasons": [
+        "Bütün gerçekler olabilmesi için kalan sabit eşitlik doğru olmalıydı. Burada 4=−3 yanlıştır.",
+        "x=0 için sol 4, sağ −3’tür; 0 çözüm olmaz. Değişkenin kaybolması x’in 0 olduğu anlamına gelmez.",
+        "x=−3/4 için sol 1, sağ −6 olur. Bu adayı yalnız 4x−3 parçasından üretmek bütün denklemi çözmez.",
+        "−7,0x=−7 satırındaki kalan sabittir; kök değildir. x=−7 için sol −24, sağ −31 olur.",
+        "Doğru. İki taraf arasındaki sabit fark 7 hiçbir x ile kapanmaz; çözüm yoktur."
+      ],
+      "commonError": "Çelişki çıkan sabit satırdaki sayıyı, bilinmeyen katsayısı yokken kök olarak almak.",
+      "check": "Sol −sağ farkı (4x+4)−(4x−3)=7’dir. Eşitlik için farkın 0 olması gerekirdi; hiçbir x farkı değiştirmez."
+    }
+  },
+  {
+    "id": "f013-foundation-birinci-dereceden-denklemler-6",
+    "identity": "[\"f013-foundation-birinci-dereceden-denklemler-6\",\"k gerçek bir parametre, x gerçek bir bilinmeyendir. (k+2)x=k+2 denklemi için hangi sınıflandırma doğrudur?\",\"\",[\"k=−2 ise ÇK=ℝ; k≠−2 ise ÇK={1}.\",\"Her k için yalnız ÇK={1}.\",\"k=−2 ise ÇK=∅; k≠−2 ise ÇK={1}.\",\"k=−2 ise ÇK={0}; k≠−2 ise ÇK=ℝ.\",\"Her k için ÇK=∅.\"],0,\"k=−2 iken denklem 0x=0 olur; her gerçek x çözümdür. k≠−2 iken k+2 sıfır değildir ve iki tarafı bu katsayıya bölünce x=1 bulunur. Tek bir bölme formülünü bütün k değerlerine uygulamak, katsayının sıfır olduğu özdeşlik durumunu kaybettirir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Parametreli ax=d denklemini sınıflandırırken a’nın sıfır olup olmadığını bölmeden önce ayırmak gerekir. Sıfır katsayısı birinci dereceden çözüm formülünün dışında kalır.",
+        "a=0 olduğunda 0x=d kalır; d’nin de 0 olmasıyla olmaması farklı sonuçlar verir. Başlangıç alanının gerçek sayılar olduğu bilgisi bütün çözüm durumunda kullanılır."
+      ],
+      "strategy": "Ortak katsayıyı sıfır yapan parametreyi önce bul; o değeri orijinal iki tarafa yaz. Kalan parametrelerde bölmenin geçerli olduğunu açıkça belirterek çöz.",
+      "steps": [
+        "k+2=0 koşulu k=−2 verir. Bu parametrede denklem 0x=0’a dönüşür; bütün gerçek x’ler kabul edilir.",
+        "k≠−2 için k+2 sıfır değildir. İki tarafı bu katsayıya bölmek x=1 verir.",
+        "Sınıflama iki parçalıdır: k=−2’de ÇK=ℝ, diğer k değerlerinde ÇK={1}. Katsayıya koşulsuz bölünmez."
+      ],
+      "optionReasons": [
+        "Doğru. Sıfır katsayıdaki özdeşlik ile sıfır olmayan katsayıdaki tek kök ayrı ve doğru sınıflandırılmıştır.",
+        "Her k için yalnız 1 demek, k=−2’deki 0x=0 eşitliğinin başka bütün gerçekleri de kabul etmesini kaçırır.",
+        "k=−2’de 0=0 doğrudur; çelişki olmadığından boş küme çıkmaz. Diğer parametre kolundaki{1} doğru olsa da ilk kol yanlıştır.",
+        "k=−2’de 0 tek çözüm değildir; her gerçek çözümdür. k≠−2 kolunda ise bölme x=1’e zorlar, bütün gerçekleri kabul etmez.",
+        "Hiçbir k için çözümsüzlük oluşmaz: x=1 yazmak iki tarafı her k’da eşit yapar. Özel parametrede çözüm daha da genişler."
+      ],
+      "commonError": "Parametreli katsayıyı sıfır olamayacakmış gibi sadeleştirip özdeşlik dalını kaybetmek.",
+      "check": "Özel parametrede x=0 ve x=7 seçilince ikisi de 0=0 verir. Genel parametrede denklem (k+2)(x−1)=0’dır; k+2≠0 iken yalnız x=1 kalır."
+    }
+  },
+  {
+    "id": "f013-foundation-birinci-dereceden-denklemler-7",
+    "identity": "[\"f013-foundation-birinci-dereceden-denklemler-7\",\"k gerçek bir parametre, x gerçek bir bilinmeyendir. (k−4)x=8 denkleminin hiç çözümü olmaması için k kaç olmalıdır?\",\"\",[\"−4\",\"4\",\"0\",\"2\",\"8\"],1,\"k=4 için sol taraf 0x olur ve 0=8 çelişkisi çıkar; hiçbir x çözüm değildir. k≠4 için k−4 sıfır değildir ve x=8/(k−4) tek gerçek çözümü verir. Dolayısıyla çözümü olmayan tek parametre 4’tür; özel durumu bölmeden önce ayırmak gerekir.\"]",
+    "guidance": {
+      "knowledge": [
+        "ax=d denklemi a≠0 ise bir gerçek kök verir. a=0 ve d≠0 ise 0=d çelişkisi ortaya çıkar.",
+        "Çözümsüzlük isteyen parametre sorusunda bilinmeyenin değerini değil, bütün bilinmeyen değerlerini olanaksız kılan katsayı koşulunu ararız."
+      ],
+      "strategy": "Sabit sağ tarafın sıfır olup olmadığını belirle; sol katsayıyı sıfır yapan parametreyi seçip çelişkiyi göster. Diğer parametrelerin niçin çözüm verdiğini de denetle.",
+      "steps": [
+        "Sağ taraf 8’dir ve sıfır değildir. Çözümsüzlük için solun her x’te 0 kalması yeterlidir.",
+        "Bunun koşulu k−4=0, yani k=4’tür. Yerine koyunca 0x=8 elde edilir ve hiçbir x sağlayamaz.",
+        "k≠4 olduğunda katsayı sıfır değildir; x=8/(k−4) gerçek kökü vardır. Bu nedenle çözümsüzlük yalnız k=4’te oluşur."
+      ],
+      "optionReasons": [
+        "k=−4 için katsayı −8 olur ve x=−1 çözüm verir. Katsayı sıfır olmadığı için çözümsüzlük yoktur.",
+        "Doğru. k=4 sol tarafı 0x yapar; 0=8 çelişkisi bütün gerçek x’leri eler.",
+        "k=0 için −4x=8 ve x=−2’dir. Parametrenin sıfır olması, bilinmeyenin katsayısının sıfır olması değildir.",
+        "k=2 için −2x=8, x=−4 çözümü vardır. Sıfır olmayan katsayıya bölme geçerlidir.",
+        "k=8 için 4x=8, x=2 bulunur. Sağdaki 8’i parametreye aynen vermek çözümsüzlük koşulunu sağlamaz."
+      ],
+      "commonError": "Parametreyi sıfır yapmakla bilinmeyenin tüm katsayısını sıfır yapmayı karıştırmak.",
+      "check": "Özel değerde hiçbir aday 0x=8’i sağlayamaz. Özel değer dışlandığında açık 8/(k−4) kökü üretilebildiği için başka çözümsüz parametre yoktur."
+    }
+  },
+  {
+    "id": "f013-foundation-birinci-dereceden-denklemler-8",
+    "identity": "[\"f013-foundation-birinci-dereceden-denklemler-8\",\"x gerçek sayı olmak üzere (x−3)/(x−3)=1 denkleminin çözüm kümesi hangisidir? Başlangıçtaki payda sıfır olamaz.\",\"\",[\"ℝ\",\"∅\",\"ℝ∖{3}\",\"{3}\",\"{1}\"],2,\"İlk ifade x=3 için tanımsızdır; önce x≠3 yazılır. Bu alan içindeki her x için pay ve payda aynı sıfır olmayan sayı olduğundan bölüm 1’dir. Böylece bütün izinli gerçekler çözüm olur: ℝ∖{3}. 3’ü denkleme koyup 0/0=1 demek geçersizdir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bir ifadenin kendisine bölümü ancak o ifade sıfırdan farklıysa 1’dir. Başlangıçtaki payda koşulu, daha sonra oluşan özdeşlikten bağımsız saklanır.",
+        "Çözüm kümesi, doğru eşitliğin geçerli olduğu başlangıç alanıdır. Tanımsız bir ifade yanlış bir sayı eşitliği değil, değerlendirmeye alınamayan bir durumdur."
+      ],
+      "strategy": "Önce ilk paydanın yasak değerini belirle. İzinli alanda bölümün değerini inceleyip hangi değerlerin eşitliği sağladığını bir küme olarak yaz.",
+      "steps": [
+        "Payda x−3 olduğundan x=3 yasaktır; başlangıç alanı ℝ∖{3} olur.",
+        "Bu alan içinde pay ile payda aynı sıfır olmayan sayıdır; oran 1 olduğundan denklem her izinli x için doğrudur.",
+        "ÇK=ℝ∖{3} bulunur. Sonradan çıkan 1=1, dışlanan 3’ü geri getirmez."
+      ],
+      "optionReasons": [
+        "ℝ, yasak 3’ü de içerir. 3’te ilk ifade 0/0 olduğundan bütün gerçekleri kabul etmek geçersizdir.",
+        "Boş küme, örneğin x=0 için (−3)/(−3)=1 olan geçerli çözümleri dışlar.",
+        "Doğru. İzinli tüm gerçekler eşitliği sağlar; yalnız başlangıç paydasını sıfır yapan 3 dışarıda kalır.",
+        "3 çözüm olamaz; tam bu değerde payda 0’dır. Ortak çarpanı sadeleştirmek yasak noktaya değer atamaz.",
+        "1 bir çözümdür ama tek çözüm değildir. 0 veya 4 gibi başka izinli gerçekler de aynı oranı sağlar."
+      ],
+      "commonError": "Sadeleşen özdeşlikten bütün ℝ sonucunu çıkarıp başlangıç paydasının yasağını unutmak.",
+      "check": "x=0 ve x=4 için oran 1 çıkar; x=3’te oran kurulamaz. Genel gerekçe, her izinli x için sıfır olmayan bir sayının kendisine bölümüdür."
+    }
+  },
+  {
+    "id": "f013-foundation-birinci-dereceden-denklemler-9",
+    "identity": "[\"f013-foundation-birinci-dereceden-denklemler-9\",\"Bir etkinlikte yalnız yetişkin ve öğrenci bileti satılıyor. Yetişkin bileti 90 TL, öğrenci bileti 60 TL’dir. Toplam 16 bilet için 1200 TL ödendiğine göre yetişkin bileti sayısı kaçtır?\",\"\",[\"4\",\"6\",\"10\",\"8\",\"12\"],3,\"a yetişkin bileti sayısı olsun. Öğrenci sayısı 16−a olduğundan 90a+60(16−a)=1200 kurulur. 30a+960=1200, buradan a=8 bulunur. Kalan 8 bilet öğrencidir; 8·90+8·60=1200 TL ve 8+8=16 koşulları birlikte sağlanır.\"]",
+    "guidance": {
+      "knowledge": [
+        "İki tür nesnenin toplam adedi biliniyorsa birinin sayısı a alındığında diğerinin sayısı toplam −a olur. Her grubun toplam bedeli birim fiyatla adedin çarpımıdır.",
+        "Nesne sayısı negatif olmayan tam sayı olmalı ve toplam adedi aşmamalıdır. Cebirsel sonuç, hem toplam bilet hem toplam ücret koşuluyla sınanır."
+      ],
+      "strategy": "Yetişkin sayısını bilinmeyen seçip öğrenci sayısını toplamdan çıkar; iki grubun TL cinsinden ücretlerini topla. Çözülen adedi hem sayı hem ücret bütçesine geri koy.",
+      "steps": [
+        "a yetişkin için 16−a öğrenci vardır. Toplam ücret 90a+60(16−a)=1200 olur.",
+        "Parantez açılınca 30a+960=1200 elde edilir; 30a=240 bulunur.",
+        "a=8 yetişkin vardır. Kalan 8 öğrenciyle 8+8=16 ve 720+480=1200 koşulları sağlanır."
+      ],
+      "optionReasons": [
+        "4 yetişkin seçilirse 12 öğrenci kalır; ücret 4·90+12·60=1080 TL olur,1200 değildir.",
+        "6 yetişkin ve 10 öğrenci toplam 1140 TL verir. Adet doğru olsa da ücret koşulu eksik kalır.",
+        "10 yetişkin ve 6 öğrenci 1260 TL tutar; verilen toplamı 60 TL aşar.",
+        "Doğru. 8 yetişkin ve 8 öğrenci 16 bilet ile 1200 TL koşullarını birlikte sağlar.",
+        "12 yetişkin ve 4 öğrenci 1320 TL tutar. Toplam bilet doğru olsa bile toplam ödeme uyuşmaz."
+      ],
+      "commonError": "İki grubun sayılarını bağımsız seçmek veya her biletin aynı fiyattan olduğunu varsaymak.",
+      "check": "Hepsi öğrenci olsaydı 16·60=960 TL olurdu. Her yetişkin bileti bu tabana 30 TL ekler; 240 TL fazlalık 240/30=8 yetişkini doğrular."
+    }
+  },
+  {
+    "id": "f013-foundation-birinci-dereceden-denklemler-10",
+    "identity": "[\"f013-foundation-birinci-dereceden-denklemler-10\",\"Bir sayı örüntüsünün 1. terimi 4’tür. Her yeni terim bir öncekinden 5 fazladır. Değeri 89 olan terimin pozitif tam sayı sıra numarası kaçtır?\",\"\",[\"17\",\"19\",\"21\",\"85\",\"18\"],4,\"n. terim 4+5(n−1) biçimindedir; n=1 yazınca başlangıçtaki 4 geri gelir. 4+5(n−1)=89 ise 5(n−1)=85, n−1=17 ve n=18 bulunur. Kontrol: 4+17·5=89. Artış sayısı 17’dir; terim numarası ilk terim de sayıldığı için 18’dir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sabit artışlı örüntüde birinci terim ile n’inci terim arasında n−1 geçiş vardır. Genel terim, ilk değer+(n−1)·adım biçimindedir.",
+        "Bir artış adedi ile terimin sıra numarası aynı şey değildir. Soruda sıra numarası istendiğinde başlangıç terimi de numaralandırmaya dahildir."
+      ],
+      "strategy": "İlk terim numarasını sınamak için n=1’de başlangıç değerini veren genel terimi kur. Hedef değeri bu ifadeye eşitleyip geçiş adedinden sıra numarasına dön.",
+      "steps": [
+        "İlk değer 4 ve ortak artış 5 olduğundan n’inci terim 4+5(n−1)’dir; n=1 yazınca 4 döner.",
+        "4+5(n−1)=89 eşitliğinde 5(n−1)=85, dolayısıyla n−1=17 bulunur.",
+        "n=18’dir. Bu,17 artışın ardından gelen terimin sıra numarasıdır ve pozitif tam sayı koşuluna uyar."
+      ],
+      "optionReasons": [
+        "17 artış sayısıdır; terim numarası değildir. 17’nci terim 4+16·5=84 olur.",
+        "19 bir fazla terim sayar; 19’uncu terim 4+18·5=94’tür.",
+        "21 seçilirse 4+20·5=104 çıkar. Hedef 89’a karşılık gelen geçiş adedi aşılmıştır.",
+        "85=89−4, toplam artışın sayı değeridir. Bunu tek adım 5’e bölmeden ve ilk terimi saymadan sıra numarası elde edilmez.",
+        "Doğru. 18’inci terime 17 kez 5 eklenir; 4+17·5=89’dur."
+      ],
+      "commonError": "Toplam artışı, artış sayısını ve terim numarasını aynı sayı gibi kullanmak.",
+      "check": "17’nci terim 84,18’inci 89,19’uncu 94’tür. Pozitif sabit artış nedeniyle hedef değer bu sırada yalnız bir kez alınır."
+    }
+  },
+  {
+    "id": "f013-foundation-basit-esitsizlikler-1",
+    "identity": "[\"f013-foundation-basit-esitsizlikler-1\",\"x gerçek sayı olmak üzere −4x+7≤19 eşitsizliğinin çözüm kümesi hangisidir?\",\"\",[\"[−3,∞)\",\"(−∞,−3]\",\"(−3,∞)\",\"(−∞,3]\",\"[3,∞)\"],0,\"İki taraftan 7 çıkarınca −4x≤12 olur. Negatif −4’e bölme yönü değiştirdiğinden x≥−3, yani [−3,∞) elde edilir. Uç x=−3 için eşitlik sağlanır; x=0 içeridedir, x=−4 ise 23≤19 yanlış olduğu için dışarıda kalır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Eşitsizliğin iki tarafına aynı sayıyı ekleyip çıkarmak yönü korur; negatif bir sayıya bölmek sıralamayı ters çevirir.",
+        "≤ ve≥ sınırdaki eşitliği kabul eder. Çözüm aralığında böyle bir sonlu uç köşeli parantezle, sonsuzluk ise normal parantezle gösterilir."
+      ],
+      "strategy": "Sabit terimi iki taraftan çıkar; bilinmeyenin katsayısının işaretine bakarak böl. Sınırın dahil oluşunu koruyup hangi yarı doğrunun seçildiğini bir iç değerle sına.",
+      "steps": [
+        "İki taraftan 7 çıkarınca −4x≤12 elde edilir; çıkarma yönü değiştirmez.",
+        "−4 negatif olduğu için bölmede yön döner: x≥−3. Eşitliğe izin veren işaret korunur.",
+        "Çözüm −3’ü içeren sağ yarı doğrudur: [−3,∞). ∞ alınabilecek bir sayı olmadığından kapalı uç yazılmaz."
+      ],
+      "optionReasons": [
+        "Doğru. Negatif katsayıya bölme sonunda x≥−3 gelir; sınır dahil ve sağ yönlü aralık doğrudur.",
+        "Bu aralık bölme sırasında yönü çevirmemiştir. Örneğin içerdiği x=−4 için 23≤19 yanlış olur.",
+        "Yön doğrudur ama −3 sınırını dışlar. x=−3 için iki taraf 19 olduğundan bu uç dahil olmalıdır.",
+        "Hem yön hem sınır sayısı yanlıştır. Çözüm sola doğru değil sağa doğru olmalı ve eşitlik x=−3’te kurulmalıdır.",
+        "3 pozitif sınırdır; oysa −4x=12 eşitliği x=−3 verir. Bu seçim x=0 gibi geçerli çözümleri de dışlar."
+      ],
+      "commonError": "Negatif bir sayı çıkarmakla negatif sayıya bölmeyi karıştırmak veya eşitlik işaretini aralıkta unutmak.",
+      "check": "x=−3 için 19≤19, x=0 için 7≤19 doğrudur; x=−4 için 23≤19 yanlıştır. Bu üç deneme sınırı, dahil oluşu ve yönü ayrı doğrular."
+    }
+  },
+  {
+    "id": "f013-foundation-basit-esitsizlikler-2",
+    "identity": "[\"f013-foundation-basit-esitsizlikler-2\",\"−5<2−3x≤11 bileşik eşitsizliğini sağlayan kaç farklı tam sayı x vardır?\",\"\",[\"4\",\"6\",\"5\",\"7\",\"8\"],1,\"Üç taraftan 2 çıkarınca −7<−3x≤9 olur. −3’e bölünce 7/3>x≥−3, küçükten büyüğe −3≤x<7/3 yazılır. Tam sayılar −3,−2,−1,0,1,2 olmak üzere altıdır. Sol −3 dahildir; sağdaki 7/3 açık uçtur ve 3 aralıkta değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bileşik eşitsizlikte her karşılaştırma birlikte sağlanır; üç tarafa aynı işlem uygulanır. Negatif sayıya bölünürse iki karşılaştırma yönü de değişir.",
+        "Tam sayı adedi için çözülen gerçek aralığın içindeki tam sayılar seçilir. Açık bir kesirli uç, en yakın tam sayıya gelişigüzel yuvarlanmaz."
+      ],
+      "strategy": "Üç taraftaki sabiti birlikte kaldır; negatif katsayıya bölüp zinciri küçükten büyüğe yeniden sırala. Dahil ve hariç uçları koruyarak izinli tam sayıları listele.",
+      "steps": [
+        "Üç taraftan 2 çıkar: −7<−3x≤9. İşlemler iki karşılaştırmada da aynı anda yapılır.",
+        "−3’e bölünce 7/3>x≥−3 elde edilir; sıralı yazılışı −3≤x<7/3’tür.",
+        "Tam sayılar −3,−2,−1,0,1,2’dir; altı tanedir. 3,7/3’ten büyük olduğu için alınmaz."
+      ],
+      "optionReasons": [
+        "4 sayısı örneğin yalnız −2,−1,0,1’i saymakla elde edilebilir; geçerli −3 ve 2 uç tam sayıları da vardır.",
+        "Doğru. −3’ten 2’ye kadar iki uç dahil altı tam sayı, ilk iki karşılaştırmayı birlikte sağlar.",
+        "5 sonucu −3 dahil ucunu dışlayıp −2,…,2’yi sayarsa bir geçerli değeri kaybeder. −3 ilk ifadede sağdaki 11 eşitliğini sağlar.",
+        "7 olması için −3,…,3 sayılmış olur; ancak x=3 için 2−3x=−7 ve −5<−7 yanlıştır.",
+        "8 sonucu, örneğin −4,−3,−2,−1,0,1,2,3 listesindeki sekiz tam sayıyı birlikte sayarak bulunur. Ancak x=−4 için 2−3x=14, x=3 için 2−3x=−7 olur; ikisi de ilk bileşik koşulu bozduğu için liste iki fazla değer içerir."
+      ],
+      "commonError": "Negatif bölmede iki yönü birden çevirmemek veya aralığın uzunluğunu tam sayı adedi saymak.",
+      "check": "x=−3 için ifade 11, x=2 için −4 verir ve ikisi de izinlidir. Komşular x=−4’te 14, x=3’te −7 verir; ikisi dışarıdadır. Altı ardışık tam sayının sınırları böyle doğrulanır."
+    }
+  },
+  {
+    "id": "f013-foundation-basit-esitsizlikler-3",
+    "identity": "[\"f013-foundation-basit-esitsizlikler-3\",\"x gerçek sayı için x>−2 ve x≤5 koşulları birlikte sağlanıyor. Çözüm kümesinin aralık gösterimi hangisidir?\",\"\",[\"[−2,5]\",\"(−2,5)\",\"(−2,5]\",\"[−2,5)\",\"ℝ\"],2,\"İlk koşul −2’nin sağını, ikinci koşul 5’i de içeren sol tarafı seçer. İkisinin ortak bölgesi −2<x≤5, yani (−2,5] olur. −2 ilk koşulu sağlamaz ve dışlanır; 5 her iki koşulu da sağladığından dahil edilir. Birleşim almak fazladan değerler üretir.\"]",
+    "guidance": {
+      "knowledge": [
+        "“Ve” ile bağlanan iki koşul aynı anda sağlanmalıdır; çözüm, iki çözüm bölgesinin kesişimidir.",
+        "Sıkı< vey a> uçları dışlar; ≤ vey a≥ uygun sınırı dahil eder. Aralık gösterimindeki her uç ayrı koşula bağlı olabilir."
+      ],
+      "strategy": "İki koşulun sayı doğrusundaki ortak bölgesini seç; sol ve sağ sınırları tek tek yerine koyarak parantez türlerini belirle.",
+      "steps": [
+        "x>−2,−2’nin sağını seçer ve −2 noktasını dışlar.",
+        "x≤5,5’in solunu seçer ve 5’i dahil eder. Ortak bölge −2 ile 5 arasındadır.",
+        "İki uç birlikte okununca −2<x≤5, yani (−2,5] elde edilir."
+      ],
+      "optionReasons": [
+        "Sol uç −2 kapalı yazılmıştır; ancak x=−2 ilk koşuldaki sıkı> işaretini sağlamaz.",
+        "Sol uç doğrudur fakat 5 dışlanmıştır. 5 hem −2’den büyüktür hem 5’e eşittir; çözüme dahildir.",
+        "Doğru. −2 dışarıda,5 içeride olacak şekilde ortak bölge (−2,5]’tir.",
+        "İki uç ters değerlendirilmiştir: −2 yanlış dahil edilmiş,5 yanlış dışlanmıştır.",
+        "ℝ,6 gibi x≤5 koşulunu bozan ve −3 gibi x>−2 koşulunu bozan değerleri de içerir; kesişim olamaz."
+      ],
+      "commonError": "“Ve” bağlacını birleşim gibi yorumlamak veya iki uçta aynı parantezi otomatik kullanmak.",
+      "check": "−2 iki koşuldan ilkini sağlayamaz; 5 ikisini de sağlar. İçeride 0 geçerlidir, dışarıda 6 geçersizdir; aralık ve uçlar birlikte denetlenir."
+    }
+  },
+  {
+    "id": "f013-foundation-basit-esitsizlikler-4",
+    "identity": "[\"f013-foundation-basit-esitsizlikler-4\",\"x gerçek sayı için x<−3 veya x≥2 koşulunu sağlayan çözüm kümesi hangisidir? “Veya”, koşullardan en az birinin sağlanması anlamındadır.\",\"\",[\"[−3,2)\",\"(−3,2]\",\"(−∞,−3]∪(2,∞)\",\"(−∞,−3)∪[2,∞)\",\"∅\"],3,\"x<−3 koşulu (−∞,−3), x≥2 koşulu [2,∞) verir. En az biri yeterli olduğu için çözüm bu aralıkların birleşimidir. −3 dışarıda, 2 içeridedir. Örneğin 0 hiçbir koşulu sağlamaz; iki sınır arasını almak bu nedenle yanlış olur.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kapsayıcı “veya” için koşullardan en az biri yeterlidir. Böyle iki koşulun çözümü birleşimle gösterilir; aralarındaki boşluğun da çözüm olması gerekmez.",
+        "Her ayrı parçanın sonlu sınırında eşitlik izni bağımsız okunur. ∞ ve −∞ dahil edilebilen reel uçlar değildir."
+      ],
+      "strategy": "Her koşulun yarı doğrusunu kendi açık veya kapalı ucuyla yaz; sonra bu iki parçayı birleştir. Aradaki bir değerin gerçekten en az bir koşulu sağlayıp sağlamadığını test et.",
+      "steps": [
+        "x<−3 koşulu (−∞,−3) verir; −3 bu parçaya dahil değildir.",
+        "x≥2 koşulu[2,∞) verir; 2 bu parçaya dahildir.",
+        "Veya en az biri demek olduğundan çözüm (−∞,−3)∪[2,∞)’dir. Örneğin 0 iki koşulu da sağlamadığından aradaki bölge eklenmez."
+      ],
+      "optionReasons": [
+        "Bu aralık iki sınır arasını seçer. İçindeki 0 ne −3’ten küçüktür ne 2’den büyük veya ona eşittir; çözüm olamaz.",
+        "Bu da aradaki yanlış bölgeyi içerir ve −4 gibi açıkça geçerli dış değerleri dışlar. Yalnız 2 ucunun doğru dahil edilmesi yeterli değildir.",
+        "Dış bölgeler seçilse de uçlar ters yazılmıştır: −3 dahil edilmemeli,2 dışlanmamalıdır.",
+        "Doğru. Sıkı sol koşul açık −3 ucu, eşitlikli sağ koşul kapalı 2 ucu verir; bölgelerin birleşimi alınır.",
+        "Boş küme değildir; örneğin −4 ilk koşulu,2 ikinci koşulu sağlar. İkisinin aynı anda sağlanması istenmiyor."
+      ],
+      "commonError": "“Veya” için ortak bölge aramak veya iki sınır arasındaki tek aralığı otomatik cevaplamak.",
+      "check": "−4 ve 2 geçerlidir; −3 ve 0 geçersizdir. Bu dört değer hem ayrık bölgeleri hem sınırların açık/kapalı oluşunu sınar."
+    }
+  },
+  {
+    "id": "f013-foundation-basit-esitsizlikler-5",
+    "identity": "[\"f013-foundation-basit-esitsizlikler-5\",\"a=0 ve x gerçek sayı olsun. ax−1<2 ile ax−1≥2 eşitsizliklerinin çözüm kümeleri sırasıyla hangisidir?\",\"\",[\"∅ ve ℝ\",\"ℝ ve ℝ\",\"∅ ve ∅\",\"{3} ve {3}\",\"ℝ ve ∅\"],4,\"a=0 için ilk eşitsizlik −1<2 olur ve her gerçek x için doğrudur; çözümü ℝ’dir. İkincisi −1≥2 biçimine dönüşür ve hiçbir x için doğru değildir; çözümü ∅’dir. Sıfır katsayıya bölünemez; x içermeyen doğru/yanlış cümle ayrı değerlendirilir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Bilinmeyenin katsayısı 0 ise ax ifadesi her x için 0 olur. Böylece eşitsizlik, bilinmeyen içermeyen sabit bir karşılaştırmaya dönüşür.",
+        "Sabit doğru bir cümle başlangıç alanındaki her değerde, sabit yanlış bir cümle hiçbir değerde sağlanır. Sıfır katsayıya bölerek çözüm aranamaz."
+      ],
+      "strategy": "İki eşitsizliğe de önce verilen parametreyi yaz; kalan sabit karşılaştırmaları ayrı değerlendir. Çözüm kümelerini sorunun sırasını bozmadan yan yana getir.",
+      "steps": [
+        "a=0 yazılınca ilk koşul −1<2, ikinci koşul −1≥2 olur; ikisinde de x etkisizdir.",
+        "−1<2 doğru olduğundan ilk eşitsizlik bütün gerçek x’leri kabul eder.",
+        "−1≥2 yanlış olduğundan ikinci eşitsizlik hiçbir gerçek x’i kabul etmez. İstenen sıra ℝ ve ∅’dir."
+      ],
+      "optionReasons": [
+        "∅ ve ℝ, iki koşulun doğruluk durumlarını ters yerleştirir. İlk sabit karşılaştırma doğru, ikincisi yanlıştır.",
+        "İlk küme doğrudur ama ikinci ℝ olamaz; −1 hiçbir x ile 2’den büyük veya eşit hale gelmez.",
+        "İkinci küme doğrudur ama ilk ∅ değildir; −1<2 her x’te zaten sağlanır.",
+        "{3} ve{3},0x’i normal katsayılı denklem gibi çözmeye çalışır. Burada 3 dahil hiçbir sayı x’in etkisini değiştiremez; tek kök oluşmaz.",
+        "Doğru. İlk sabit cümle doğru, ikinci yanlış olduğundan başlangıç ℝ alanına göre sırasıyla ℝ ve ∅ elde edilir."
+      ],
+      "commonError": "Bilinmeyen kaybolduğunda kalan sınır sayılarından tek kök üretmek veya sıfıra bölmek.",
+      "check": "x=0 ve x=100 için iki sol taraf da −1 kalır. Bu iki örnek sonucu sınar; bütün gerçeklere ilişkin gerekçe ise 0x’in her x için 0 olmasıdır."
+    }
+  },
+  {
+    "id": "f013-foundation-basit-esitsizlikler-6",
+    "identity": "[\"f013-foundation-basit-esitsizlikler-6\",\"a<0 olan gerçek bir parametre ve gerçek bilinmeyen x için ax+4<10 eşitsizliğinin çözümü hangisidir?\",\"\",[\"x>6/a\",\"x<6/a\",\"x≥6/a\",\"x=6/a\",\"Her gerçek x\"],0,\"ax+4<10 ifadesinden ax<6 elde edilir. a<0 verildiği için a sıfır değildir; negatif a’ya bölünce yön ters döner ve x>6/a olur. Sınır x=6/a için sol taraf 10’a eşit olur, sıkı < koşulunu sağlamaz. Eşitliği dahil etmek çözüm kümesini değiştirir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Sıfırdan farklı negatif bir sayıya bölmek eşitsizlik yönünü ters çevirir. Parametrenin işareti açıkça verildiyse bölme yönü o koşula göre belirlenir.",
+        "Sıkı eşitsizlikte eşitliği sağlayan sınır değeri çözüme alınmaz. Bir aralık çözümü, yalnız sınır denkleminin köküyle aynı değildir."
+      ],
+      "strategy": "Önce sabit terimi çıkar; a<0 koşulunu kullanarak bölmenin hem geçerliliğini hem yönünü belirle. Sınırdaki eşitliği, çözümün bir tarafındaki sıkı koşuldan ayır.",
+      "steps": [
+        "İki taraftan 4 çıkarınca ax<6 elde edilir; bu adım yönü değiştirmez.",
+        "a<0, hem a≠0 olduğunu hem negatif bölmede yönün döneceğini söyler. Bölme x>6/a verir.",
+        "x=6/a sınırında ilk sol taraf 10’dur ve 10<10 yanlış olur. Bu nedenle sınır dışlanır; sonuç sıkı> ile yazılır."
+      ],
+      "optionReasons": [
+        "Doğru. Negatif a’ya bölünce yön ters döner ve sınır eşitliği kabul edilmediğinden x>6/a olur.",
+        "Bu seçenek negatif bölmede yönü korur. Örneğin a=−2,x=−4 bu aralığa girer ama ilk sol taraf 12 olup 10’dan küçük değildir.",
+        "Yön doğru olsa da≥ sınırı dahil eder. x=6/a ilk ifadede 10=10 verir ve sıkı< koşulunu sağlamaz.",
+        "Yalnız eşitlik sınırını seçer; tam bu değerde sıkı eşitsizlik yanlıştır. Çözüm, sınırın bir tarafındaki aralıktır.",
+        "Bütün gerçekler olamaz; x=6/a bile 10<10 biçiminde başarısızdır. Ayrıca negatif katsayı bir tarafı sınırlar."
+      ],
+      "commonError": "Parametreyi işaretsiz bir sayı gibi bölmek vey a< koşulun u≥ ile kapatarak sınır eklemek.",
+      "check": "a=−2 özel kontrolünde ilk koşul −2x+4<10, yani x>−3 olur. x=0 sağlar, x=−4 sağlamaz ve sınır −3 dışarıdadır; genel yönü doğrular."
+    }
+  },
+  {
+    "id": "f013-foundation-basit-esitsizlikler-7",
+    "identity": "[\"f013-foundation-basit-esitsizlikler-7\",\"Bir atölyenin tek seferlik sabit ücreti 45 TL, seçilen her etkinliğin ücreti 22 TL’dir. Toplam bütçe 200 TL’yi aşmayacak. Etkinlik sayısı negatif olmayan tam sayı olduğuna göre en çok kaç etkinlik seçilebilir?\",\"\",[\"5\",\"7\",\"6\",\"8\",\"9\"],1,\"Bütçeyi aşmama koşulu 45+22n≤200’dür. 22n≤155 ve n≤155/22≈7,045 bulunur. n negatif olmayan tam sayı olduğundan en büyük değer 7’dir. Kontrol: 7 etkinlik 199 TL, 8 etkinlik 221 TL tutar; ilk değer bütçeye uyar, komşusu sınırı aşar.\"]",
+    "guidance": {
+      "knowledge": [
+        "Toplam gider, bir kez ödenen sabit tutar ile birim gider×adet toplamıdır. Bütçeyi aşmama ifadesi eşitliğe izin verir.",
+        "Adet negatif olmayan tam sayıysa gerçek sayı eşitsizliği çözüldükten sonra bu alandaki en büyük tam sayı seçilir. En büyük oluş, bir sonraki tam sayının başarısızlığıyla denetlenir."
+      ],
+      "strategy": "Sabit ücret ile etkinlik başına ücreti ayırarak toplam gideri kur. Bütçe sınırını çözdükten sonra geçerli en büyük tam sayı adayı ve komşusunun maliyetini karşılaştır.",
+      "steps": [
+        "n etkinlik için gider 45+22n TL’dir; aşmama koşulu 45+22n≤200 olur.",
+        "22n≤155, dolayısıyla n≤155/22 bulunur. Bu sınır 7’den büyük,8’den küçüktür.",
+        "En büyük izinli tam sayı 7’dir. 7 etkinlik 199 TL,8 etkinlik 221 TL tuttuğundan daha fazla etkinlik bütçeye sığmaz."
+      ],
+      "optionReasons": [
+        "5 etkinlik 155 TL tutar ve bütçeye uyar; ancak 7 etkinlik de uyduğu için en büyük sayı değildir.",
+        "Doğru. 7 için 199≤200; bir sonraki 8 için 221>200’dür. Artan ücret daha büyük adetleri de dışlar.",
+        "6 etkinlik 177 TL ile uygundur ama 199 TL tutan 7’ye hâlâ bütçe yeter; cevap en büyük olmalıdır.",
+        "8 etkinlik 221 TL tutar ve 200 TL sınırını 21 TL aşar.",
+        "9 etkinlik 243 TL tutar; sabit ücreti hesaba katmadan 200/22’ye göre seçim yapmak bütçeyi aşırır."
+      ],
+      "commonError": "Sabit ücreti unutmak veya gerçek sayı sınırını, eşitsizliğin yönüne bakmadan en yakın tam sayıya yuvarlamak.",
+      "check": "Bir etkinlik daha eklemek her defasında 22 TL artırır. 7 için 199 TL uygun ve 8 için 221 TL fazla olduğundan arada başka bir tam sayı aday yoktur."
+    }
+  },
+  {
+    "id": "f013-foundation-basit-esitsizlikler-8",
+    "identity": "[\"f013-foundation-basit-esitsizlikler-8\",\"Tam sayı x için x>−7/2 ve x≤5/2 koşulları birlikte sağlanıyor. x’in alabileceği en küçük değer kaçtır?\",\"\",[\"−4\",\"−7/2\",\"−3\",\"−2\",\"2\"],2,\"Koşullar −3,5<x≤2,5 aralığını verir. Alt sınıra en yakın izinli tam sayı −3’tür; −4, −3,5’ten küçük olduğu için ilk koşulu sağlamaz. −3 üst sınırı da sağlar. −7/2 hem tam sayı değildir hem sıkı alt sınır olduğundan çözüme alınamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tam sayı koşullu bir eşitsizlikte kesirli sınır çözümün kendisi değildir; yalnız hangi tam sayıların alınabileceğini belirler.",
+        "Sıkı alt sınırın hemen üstündeki ilk tam sayı, aranan en küçük aday olabilir. Bu aday üst sınırı da sağlamak zorundadır."
+      ],
+      "strategy": "Kesirli iki sınırı sayı doğrusunda yerleştir; alt sınırın sağındaki ilk tam sayıyı seç. Ondalık sayıyı sıradan yuvarlamak yerine hem sıkılığı hem üst koşulu denetle.",
+      "steps": [
+        "Koşullar −3,5<x≤2,5 biçimindedir; x ayrıca tam sayı olmalıdır.",
+        "−3,5’in hemen sağındaki ilk tam sayı −3’tür. −4 alt sınırın solunda kalır.",
+        "−3≤2,5 olduğu için üst koşul da sağlanır. Bu nedenle izinli en küçük değer −3’tür."
+      ],
+      "optionReasons": [
+        "−4<−3,5 olduğundan x>−7/2 koşulunu sağlamaz; sıradan aşağı yuvarlama geçerli aday üretmez.",
+        "−7/2 tam sayı değildir ve sıkı alt sınır olduğundan zaten dışlanmıştır.",
+        "Doğru. −3 alt sınırın üstündeki ilk tam sayıdır ve üst sınır 2,5’i de aşmaz.",
+        "−2 iki koşulu sağlar ama −3 daha küçük bir geçerli tam sayıdır; en küçük istenmiştir.",
+        "2 geçerli tam sayılardan biridir fakat en küçük değildir; örneğin −3 de izinlidir."
+      ],
+      "commonError": "Negatif kesirli sınırı yanlış yönde yuvarlamak veya geçerli herhangi bir tam sayıyı en küçük sanmak.",
+      "check": "−3 için −3>−3,5 ve −3≤2,5 doğrudur. Bir küçük tam sayı −4 başarısızdır; ondan daha küçükler de alt koşulu sağlayamaz."
+    }
+  },
+  {
+    "id": "f013-foundation-basit-esitsizlikler-9",
+    "identity": "[\"f013-foundation-basit-esitsizlikler-9\",\"0<a<b<4 olan gerçek sayılar için aşağıdaki sıralamalardan hangisi her zaman doğrudur?\",\"\",[\"1/a<1/b<1/4\",\"1/a>1/b ve 1/b<1/4\",\"1/a<1/b ve 1/b>1/4\",\"1/a>1/b>1/4\",\"1/a=1/b>1/4\"],3,\"0<a<b<4 koşulunda her sayının tersi tanımlıdır. Pozitif sayılarda küçük sayının tersi daha büyüktür; a<b için 1/a>1/b, b<4 için 1/b>1/4 olur. Birleştirince 1/a>1/b>1/4 elde edilir. Sıfırı içeren veya zıt işaretli durumlara bu kural koşulsuz taşınamaz.\"]",
+    "guidance": {
+      "knowledge": [
+        "Pozitif sayılarda ters alma sıralamayı ters çevirir. İki ters arasındaki farkı ortak paydada yazmak bunun gerekçesini gösterir: pozitif payda üzerindeki farkın işareti izlenir.",
+        "Bir zincir sıralamasında komşu iki ilişki ayrı doğrulanıp birleştirilir. Paydaların sıfır olmaması ve aynı pozitif alanda bulunması bu işlem için önemlidir."
+      ],
+      "strategy": "a ile b’nin tersleri arasındaki farkı, sonra b ile sabit üst sınırın tersleri arasındaki farkı incele. Verilen pozitiflikten her paydanın işaretini belirleyip iki kesin ilişkiyi birleştir.",
+      "steps": [
+        "0<a<b olduğundan ab>0 ve b−a>0’dır. 1/a−1/b=(b−a)/(ab)>0, yani 1/a>1/b olur.",
+        "0<b<4 için 1/b−1/4=(4−b)/(4b)>0’dır; dolayısıyla 1/b>1/4 bulunur.",
+        "İki sıkı ilişki birlikte 1/a>1/b>1/4 zincirini verir; eşitlik, başlangıçtaki sıkı sıralamaya uymaz."
+      ],
+      "optionReasons": [
+        "İki karşılaştırmayı da aynı yönde tersine çevirmeyi unutur. Küçük pozitif paydanın tersi daha büyük olmalıdır.",
+        "1/a>1/b kısmı uygundur; ancak b<4 pozitif koşulu 1/b>1/4 verir, bu seçenekteki< değil.",
+        "1/b>1/4 kısmı uygundur; fakat a<b iken 1/a<1/b olamaz. İlk karşılaştırma ters yazılmıştır.",
+        "Doğru. Pozitif paydalarla iki fark da pozitiftir; zincirin iki> ilişkisi de zorunludur.",
+        "1/a=1/b pozitif sıfır olmayan paydalarda a=b gerektirirdi. Verilen a<b bunu dışlar."
+      ],
+      "commonError": "Ters alma kuralını sayıların işaretlerini kontrol etmeden uygulamak veya zincirin yalnız bir komşu karşılaştırmasını düzeltmek.",
+      "check": "Örneğin a=1,b=2 için 1>1/2>1/4 görünür. Bu örnek denetimdir; her zaman doğruluğu, pozitif paydalı iki fark hesabı kanıtlar."
+    }
+  },
+  {
+    "id": "f013-foundation-basit-esitsizlikler-10",
+    "identity": "[\"f013-foundation-basit-esitsizlikler-10\",\"−5<a<−2 olan gerçek sayı a için a²’nin alabileceği değerlerin aralığı hangisidir?\",\"\",[\"(−25,−4)\",\"(−5,−2)\",\"[4,25]\",\"(0,25)\",\"(4,25)\"],4,\"−5<a<−2 için a negatiftir ve 2<|a|<5 olur. Pozitif sayılarda kare alma sırayı korur; 4<a²<25 bulunur. Her iki başlangıç ucu da dışlandığından 4 ve 25 dahil değildir. Negatif aralıkta doğrudan aynı sırayla kare almak yön hatası üretir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Kare alma bütün gerçek sayı doğrusunda sıralamayı koruyan bir işlem değildir. Negatif sayılarda büyüklük, mutlak değer üzerinden okunabilir.",
+        "Pozitif büyüklüklerin karesi artandır. Başlangıçta alınmayan uç değerler, sürekli ve sıkı artan bu pozitif dönüşümde ayrıca değerlendirilmeli; kendiliğinden dahil edilmemelidir."
+      ],
+      "strategy": "Tamamen negatif aralığı önce pozitif uzaklıklar aralığına çevir; sonra kare al. İki sınırın gerçekten alınıp alınmadığını ve aradaki bütün değerlerin üretilebildiğini denetle.",
+      "steps": [
+        "−5<a<−2 olduğundan a negatiftir ve 2<|a|<5 olur; yakınlık ve büyüklük sırası pozitif tarafta okunur.",
+        "Pozitif sayılarda kare sıralamayı korur: 4<|a|²<25. Ayrıca|a|²=a²’dir.",
+        "Uçlar dışarıda olduğundan a² aralığı (4,25)’tir. Bu aradaki her t için a=−√t başlangıç aralığına düşer."
+      ],
+      "optionReasons": [
+        "Kare sonucunu negatif sınırlar arasında yazar. Gerçek bir sayının karesi negatif olamayacağı için bu aralık uygun değildir.",
+        "Bu başlangıçtaki a aralığıdır; kare dönüşümü hiç uygulanmamıştır.",
+        "[4,25] iki ucu da ekler. 4 ancak a=−2,25 ancak a=−5 ile gelir; bu iki değer başlangıçta yasaktır.",
+        "(0,25),0’a yakın kareleri de içerir. Oysa |a|>2 olduğu için a² kesinlikle 4’ten büyüktür.",
+        "Doğru. Mutlak büyüklükler 2 ile 5 arasında, kareler 4 ile 25 arasındadır; uçlar dahil değildir."
+      ],
+      "commonError": "Negatif aralığın uçlarını aynı sırayla kareleyerek yönü bozmak veya açık uçları kapatmak.",
+      "check": "a=−3 için kare 9 aralık içindedir. Genel kapsama kontrolünde 4<t<25 seçip a=−√t alındığında −5<a<−2 sağlanır; böylece yalnız sınır değil bütün görüntü aralığı doğrulanır."
+    }
+  },
+  {
+    "id": "factr-1",
+    "identity": "[\"factr-1\",\"6x²+15x ifadesinin çarpanlarına ayrılmış biçimi hangisidir?\",\"\",[\"3x(2x+5)\",\"3(2x²+5)\",\"3x(2x+15)\",\"x(6x²+15)\",\"(6x+3)(x+5)\"],0,\"6x²=3x·2x ve 15x=3x·5. Bu yüzden 3x(2x+5); açılım iki terimi de geri verir. 3x dışarı alındığında parantez içinde 15 değil 5 kalır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Ortak çarpan parantezine alma, dağıtma işlemini ters okumaktır. Her terimde bulunan sayısal ortak bölen ile ortak değişken kuvveti birlikte dışarı alınabilir.",
+        "Dışarı çıkan çarpanla parantez içindeki her terimin çarpımı, başlangıçtaki karşılık gelen terimi geri vermelidir. Bir terimin x çarpanı kendiliğinden kaybolmaz."
+      ],
+      "strategy": "İki terimin ortak sayı ve değişken çarpanını birlikte belirle; her terimi onun katı olarak yeniden yaz. Son çarpımı açarak hem katsayıları hem x üslerini denetle.",
+      "steps": [
+        "6 ve 15’in ortak böleni 3’tür; her iki terimde en az bir x bulunduğu için 3x ortak çarpan seçilebilir.",
+        "6x²=3x·2x ve 15x=3x·5’tir. Bu yazım yalnız çarpan ayırır, x’e bölerek tanım dışı değer oluşturmaz.",
+        "Dağıtmayı ters okuyunca 6x²+15x=3x(2x+5) elde edilir. 3x dışarıda,2x+5 parantez içinde kalır."
+      ],
+      "optionReasons": [
+        "Doğru. Açılım 3x·2x+3x·5=6x²+15x olup iki terimi de eksiksiz geri verir.",
+        "3(2x²+5)=6x²+15’tir; ikinci terimin x çarpanı kaybolmuştur.",
+        "3x(2x+15)=6x²+45x verir. 15x terimi için parantez içinde 15 değil 5 bulunmalıdır.",
+        "x(6x²+15)=6x³+15x olur; ilk terimin derecesi 2’den 3’e yükselmiştir.",
+        "(6x+3)(x+5)=6x²+33x+15 çıkar. Hem x katsayısı hem sabit terim başlangıçtan farklıdır."
+      ],
+      "commonError": "Ortak çarpanı dışarı alırken içerideki terimleri aynı çarpanla ilişkilendirmemek; değişken üssünü veya katsayıyı artırmak.",
+      "check": "3x(2x+5)’i dağıtmak genel özdeşliği doğrular. x=0 kontrolünde iki taraf da 0’dır; ortak çarpan ayırma 0’ı yasaklamaz."
+    }
+  },
+  {
+    "id": "factr-2",
+    "identity": "[\"factr-2\",\"x²−2x−15 ifadesinin çarpanlarından biri hangisidir?\",\"\",[\"x−3\",\"x+5\",\"x−5\",\"x−15\",\"x+2\"],2,\"−5 ve 3 sayılarının çarpımı −15, toplamı −2: x²−2x−15=(x−5)(x+3). Dolayısıyla x−5 bir çarpandır. Uç çarpımı kadar orta terim de korunmalıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Baş katsayısı 1 olan x²+bx+c ifadesinde (x+p)(x+q) biçimi, p+q=b ve pq=c koşullarını birlikte gerektirir.",
+        "Bir polinomun x−r çarpanı varsa r yerine yazıldığında polinom 0 olur. Bu kök kontrolü seçilmiş doğrusal çarpanı ayrıca sınayabilir."
+      ],
+      "strategy": "Sabit terimin işaretinden iki sayının işaret düzenini çıkar; toplam ve çarpım koşulunu aynı anda sağlayan çifti bul. Çarpımı yazdıktan sonra seçeneklerdeki tek çarpanı seç.",
+      "steps": [
+        "Sabit −15 olduğu için p ve q zıt işaretlidir. Toplamlarının −2 olması istenir.",
+        "−5 ve 3 çifti −15 çarpımını ve −2 toplamını birlikte verir; ifade (x−5)(x+3) olur.",
+        "Bu çarpımdaki seçenekler arasında bulunan çarpan x−5’tir. Tek başına sabit çarpımını tutturmak yetmez; orta terim de korunmuştur."
+      ],
+      "optionReasons": [
+        "x−3 çarpan olsaydı x=3 polinomu sıfırlardı; fakat 9−6−15=−12 çıkar.",
+        "x+5,−5’i kök yapmalıydı. P(−5)=25+10−15=20 olduğu için bu bir çarpan değildir.",
+        "Doğru. x−5 ile x+3 çarpıldığında x²−2x−15 elde edilir; x−5 bir çarpandır.",
+        "x−15 için P(15)=225−30−15=180≠0’dır. Sabit terimi doğrudan kök saymak geçersizdir.",
+        "x+2 için P(−2)=4+4−15=−7≠0 olur. Orta katsayı −2 tek başına kökü belirlemez."
+      ],
+      "commonError": "Çarpımı −15 yapan herhangi bir sayı çiftini seçip toplamlarının −2 olmasını denetlememek.",
+      "check": "(x−5)(x+3)=x²+3x−5x−15=x²−2x−15. Ayrıca x=5 başlangıç ifadesini 0 yapar; seçilen doğrusal çarpan kontrol edilir."
+    }
+  },
+  {
+    "id": "factr-3",
+    "identity": "[\"factr-3\",\"Gerçek x için 9x²−16 ifadesi aşağıdakilerden hangisine özdeştir?\",\"\",[\"(3x−4)²\",\"(9x−4)(x+4)\",\"(3x+4)²\",\"(3x−4)(3x+4)\",\"(9x−16)(x+1)\"],3,\"9x²=(3x)² ve 16=4². a²−b²=(a−b)(a+b) ile (3x−4)(3x+4). Tek bir parantezin karesi orta terim üretir ve burada doğru değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "İki kare farkı a²−b²=(a−b)(a+b) özdeşliğidir; çarpımda zıt işaretli çapraz terimler birbirini götürür.",
+        "Bir farkın karesi (a−b)² ise orta terim −2 ab üretir ve son terimi pozitiftir. Görünüşü benzer bu iki yapı ayrı denetlenmelidir."
+      ],
+      "strategy": "Her terimin hangi ifadenin karesi olduğunu belirle; sonra toplam ve fark parantezlerini eşleştir. Açılımda x’li orta terimin yok olması gerektiğini kontrol et.",
+      "steps": [
+        "9x²=(3x)² ve 16=4²’tür; ifade iki karenin farkı biçimindedir.",
+        "a=3x,b=4 seçimi (3x−4)(3x+4) çarpımını verir.",
+        "Açıldığında 9x²+12x−12x−16=9x²−16 kalır. Bütün gerçek x değerlerinde aynı polinom elde edilir."
+      ],
+      "optionReasons": [
+        "(3x−4)²=9x²−24x+16’dır; başlangıçta olmayan orta terim üretir ve sabitin işaretini değiştirir.",
+        "(9x−4)(x+4)=9x²+32x−16 verir. İlk ve son katsayılar uygun görünse de orta terim sıfır değildir.",
+        "(3x+4)²=9x²+24x+16 olur; hem orta terim eklenir hem −16 yerine+16 gelir.",
+        "Doğru. Toplam ile farkın çarpımında+12x ve −12x birbirini götürerek tam 9x²−16 bırakır.",
+        "(9x−16)(x+1)=9x²−7x−16’dır. Başlangıçta bulunmayan −7x terimi eşitliği bozar."
+      ],
+      "commonError": "Kareler farkını farkın karesiyle karıştırmak veya 9x²’nin kare tabanını 9x sanmak.",
+      "check": "Doğru çarpımı sembolik açmak özdeşliği kanıtlar. Ek kontrol olarak x=0’da iki taraf −16 verir; karesi alınmış tek parantezler ise+16 verirdi."
+    }
+  },
+  {
+    "id": "factr-4",
+    "identity": "[\"factr-4\",\"2x²+7x+3 ifadesi hangisine eşittir?\",\"\",[\"(2x+3)(x+1)\",\"(2x+1)(x+3)\",\"(x+1)(x+3)\",\"(2x−1)(x−3)\",\"(x+3)(x+3)\"],1,\"(2x+1)(x+3)=2x²+6x+x+3=2x²+7x+3. Diğer pozitif uçlu aday (2x+3)(x+1) 5x üretir; yalnız ilk ve son terimi tutturmak yetmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "İki doğrusal çarpanın çarpımı (px+m)(tx+n)=pt x²+(pn+mt)x+mn biçimindedir. Baş, orta ve sabit katsayıların üçü de hedefle uyuşmalıdır.",
+        "Baş katsayısı 1 olmadığında yalnız sabit terim için uygun iki sayı seçmek yeterli değildir; çapraz çarpımların toplamı da değişir."
+      ],
+      "strategy": "Aday çarpanları uç terimlerle daralt; kalan adaylarda iki çapraz x terimini açıkça topla. Hedef polinomun üç katsayısını tek tek eşleştir.",
+      "steps": [
+        "Baş terim 2x² ve sabit 3 için 2x ile x, ayrıca 1 ile 3 çarpanları düşünülebilir.",
+        "(2x+1)(x+3) için çapraz terimler 6x ve x’tir; toplamları 7x olur.",
+        "Tam açılım 2x²+6x+x+3=2x²+7x+3’tür. Bu aday üç katsayıyı da doğru verir."
+      ],
+      "optionReasons": [
+        "(2x+3)(x+1)=2x²+5x+3 verir. Uçlar doğru olsa da orta katsayı 7 değil 5’tir.",
+        "Doğru. Çapraz terimler 6x+x=7x olduğundan hedef polinomun tamamı geri gelir.",
+        "(x+1)(x+3)=x²+4x+3’tür; hem baş katsayı hem orta katsayı yanlıştır.",
+        "(2x−1)(x−3)=2x²−7x+3 olur; hedefin orta terimi pozitif 7x’tir.",
+        "(x+3)²=x²+6x+9 çıkar. Üç katsayı da hedef yapıyla uyuşmaz."
+      ],
+      "commonError": "İlk ve son terimi tutan ilk çarpımı kabul edip çapraz terimlerin toplamını atlamak.",
+      "check": "Katsayı kontrolü (2,7,3) sırasını geri vermelidir. x=1 için aday 3·4=12, başlangıç 2+7+3=12 çıkar; genel doğrulama ise tam açılımdır."
+    }
+  },
+  {
+    "id": "factr-5",
+    "identity": "[\"factr-5\",\"x³−27 ifadesinin çarpanlarına ayrılmış biçimi hangisidir?\",\"\",[\"(x−3)(x²−3x+9)\",\"(x−3)³\",\"(x+3)(x²−3x+9)\",\"(x−9)(x²+3)\",\"(x−3)(x²+3x+9)\"],4,\"x³−3³=(x−3)(x²+3x+9). Açılımda +3x² ile −3x² ve +9x ile −9x birbirini götürür; x³−27 kalır. Küp farkı, farkın küpü değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Küpler farkı a³−b³=(a−b)(a²+ab+b²) biçimindedir. Bu çarpımda ara dereceli terimler açılışta birbirini götürür.",
+        "Farkın küpü (a−b)³ ayrı bir ifadedir ve genellikle üçüncü derecenin yanında ikinci ve birinci dereceli terimler de üretir."
+      ],
+      "strategy": "Sabitin küp tabanını bulup iki küp farkı özdeşliğine yerleştir; ikinci çarpandaki orta işareti açılımda iptal gereksinimiyle kontrol et.",
+      "steps": [
+        "27=3³ olduğu için x³−27=x³−3³ biçiminde okunur.",
+        "Küp farkı formülünde ilk parantez x−3, ikinci parantez x²+3x+9 olur.",
+        "Açılımda+3x² ile −3x² ve+9x ile −9x gider; x³−27 kalır. Doğru çarpım (x−3)(x²+3x+9)’dur."
+      ],
+      "optionReasons": [
+        "İkinci parantezdeki −3x yanlış işarettir. Açılım x³−6x²+18x−27 verir; ara terimler iptal olmaz.",
+        "(x−3)³=x³−9x²+27x−27’dir. Küpler farkı ile farkın küpü aynı ifade değildir.",
+        "(x+3)(x²−3x+9)=x³+27, küpler toplamının çarpımıdır; sabit işareti ters olur.",
+        "(x−9)(x²+3)=x³−9x²+3x−27 üretir. 27’yi 3³ olarak tanımak yerine yanlış tabanlar seçilmiştir.",
+        "Doğru. İki ara derece açılımda yok olur ve yalnız x³ ile −27 kalır."
+      ],
+      "commonError": "Küp farkını tek parantezin küpü sanmak veya ikinci parantezin orta işaretini ilk parantezle aynı yapmak.",
+      "check": "(x−3)(x²+3x+9) açılımının x² ve x katsayıları 0’dır. Ayrıca x=3 başlangıçta 27−27=0 yapar; ilk çarpan da 0 olur."
+    }
+  },
+  {
+    "id": "factr-6",
+    "identity": "[\"factr-6\",\"x²−7x=0 denkleminin gerçek çözüm kümesi hangisidir?\",\"\",[\"{7}\",\"{−7}\",\"{0,7}\",\"{0,−7}\",\"∅\"],2,\"x(x−7)=0. Gerçek sayılarda çarpım sıfırsa en az bir çarpan sıfırdır: x=0 veya x=7. Doğrudan x’e bölmek geçerli 0 kökünü kaybettirir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Gerçek sayılarda bir çarpımın sıfır olması için en az bir çarpanın sıfır olması gerekir. Bu, çarpanların ikisinin aynı anda sıfır olması zorunluluğu değildir.",
+        "Bilinmeyene doğrudan bölmek, onun sıfır olduğu geçerli bir çözümü baştan dışlayabilir. Ortak çarpan ayırma ise bu olasılığı korur."
+      ],
+      "strategy": "Bilinmeyen çarpanını bölmeden dışarı al; oluşan her çarpanın sıfır olma olasılığını ayrı çöz. Adayların tamamını ilk denkleme geri koy.",
+      "steps": [
+        "x²−7x=x(x−7) olduğundan denklem x(x−7)=0 biçimindedir.",
+        "İlk çarpan x=0 veya ikinci çarpan x−7=0 olabilir; adaylar 0 ve 7’dir.",
+        "İkisi de başlangıç denklemini sağlar. Çözüm kümesi{0,7}’dir; hiçbir kökü bölmeyle kaybetmedik."
+      ],
+      "optionReasons": [
+        "{7}, x’e koşulsuz bölünürse kalabilecek eksik kümedir. x=0 da denklemi sağladığı için atılamaz.",
+        "x=−7 için x²−7x=49+49=98 olur; −7 kök değildir.",
+        "Doğru. 0 ve 7 iki ayrı sıfır çarpan olasılığıdır ve ikisi de ilk denklemi sağlar.",
+        "0 uygundur ama −7 için ikinci çarpan −14 olur ve çarpım 98 çıkar. İşaret hatasıyla 7 yerine −7 alınmıştır.",
+        "Boş küme değildir; x=0 açıkça 0=0 verir, x=7 de 49−49=0 verir."
+      ],
+      "commonError": "Denklemi x’e bölüp 0 kökünü silmek veya x−7=0’dan −7 sonucu çıkarmak.",
+      "check": "0²−7·0=0 ve 7²−7·7=0. Sıfır çarpım kuralı bütün çarpan olasılıklarını kapsadığı için bu iki kök dışında çözüm yoktur."
+    }
+  },
+  {
+    "id": "factr-7",
+    "identity": "[\"factr-7\",\"(x²−25)/(x−5) ifadesinin sadeleşmiş biçimi ve başlangıç tanım koşulu hangisidir?\",\"\",[\"x+5, x≠5\",\"x+5, bütün gerçek x\",\"x−5, x≠−5\",\"x−5, x≠5\",\"x²+5, x≠5\"],0,\"İlk payda x−5 olduğundan x≠5. Pay (x−5)(x+5) olur; ortak çarpan yalnız izinli alanda sadeleşir. Son biçim x+5, koşul x≠5’tir. Sadeleşme ilk ifadenin tanımsız noktasını geri getirmez.\"]",
+    "guidance": {
+      "knowledge": [
+        "Rasyonel ifadede başlangıç paydası sıfır olamaz. Ortak çarpan sadeleşmesi, bu tanım koşulunu kaldıran bir işlem değildir.",
+        "İki kare farkını çarpıma çevirmek pay ile paydadaki aynı çarpanı görmeyi sağlar. Toplamın içinden rastgele terim silmek sadeleştirme değildir."
+      ],
+      "strategy": "Yasak değeri ilk paydadan belirle; payı iki kare farkıyla ayır. Ortak çarpanı yalnız izinli alanda sadeleştirip son ifade ve başlangıç koşulunu birlikte yaz.",
+      "steps": [
+        "İlk payda x−5 olduğundan x≠5 olmalıdır; bu koşul en başta saklanır.",
+        "x²−25=(x−5)(x+5) yazılır. Böylece pay ve paydanın ortak x−5 çarpanı görünür olur.",
+        "x≠5 alanında çarpan sadeleşir ve x+5 kalır. Sonuç x+5, başlangıç koşulu x≠5’tir."
+      ],
+      "optionReasons": [
+        "Doğru. Payın iki kare farkı ayrımı x+5’i bırakır; ilk paydanın x≠5 koşulu korunur.",
+        "İfade doğru görünse de bütün gerçek x demek 5’i ekler. 5’te ilk payda 0 olduğundan başlangıç ifadesi tanımsızdır.",
+        "Hem kalan ifade hem yasak değer yanlıştır. x=−5 başlangıçta tanımlıdır; x=0 için ilk bölüm 5, bu seçimin x−5 biçimi −5 verir.",
+        "Tanım koşulu doğru ama sadeleşen yanlış çarpan yazılmıştır. x−5 giderken x+5 kalmalıydı; x=0 kontrolü işaret farkını gösterir.",
+        "x²+5, payı ortak çarpanlarına ayırmadan parça silmeye benzer bir sonuçtur. x=2’de ilk bölüm 7, bu biçim 9 verir."
+      ],
+      "commonError": "Doğru sadeleşmiş biçimi yazınca tanım kümesini bütün gerçeklere genişletmek veya kalan çarpanın işaretini karıştırmak.",
+      "check": "İzinli alanda (x+5)(x−5)=x²−25 geri gelir. x=2 için 7 ve x=−5 için 0 iki biçimde de aynıdır; x=5 ise ilk ifadede hâlâ yasaktır."
+    }
+  },
+  {
+    "id": "factr-8",
+    "identity": "[\"factr-8\",\"x³+2x²−9x−18 ifadesinin tam sayı katsayılı çarpanlarına ayrılmış biçimi hangisidir?\",\"\",[\"(x+2)(x−9)\",\"(x−2)(x−3)(x+3)\",\"(x+2)(x²+9)\",\"(x+2)(x−3)(x+3)\",\"(x−2)(x²−9)\"],3,\"x²(x+2)−9(x+2)=(x+2)(x²−9)=(x+2)(x−3)(x+3). −9 grubun her iki terimini üretir; kalan iki kare farkı da ayrılmalıdır.\"]",
+    "guidance": {
+      "knowledge": [
+        "Gruplama yönteminde iki ayrı terim grubundan aynı parantezi üretmek hedeflenir. Dışarı alınan negatif çarpan, grubun iki teriminin de işaretini doğru vermelidir.",
+        "Yeni bir çarpan ortaya çıktıktan sonra o çarpanın daha ayrılıp ayrılmadığı incelenir. İki kare farkı tam sayı katsayılı doğrusal çarpanlara devam etmeyi sağlayabilir."
+      ],
+      "strategy": "İlk iki terim ile son iki terimi birlikte ele al; her grupta aynı doğrusal parantezi oluştur. Ortaklaştırmadan sonra kalan ikinci dereceyi de uygun özdeşlikle tamamla.",
+      "steps": [
+        "İlk grup x³+2x²=x²(x+2), son grup −9x−18=−9(x+2) olur; ortak parantez x+2’dir.",
+        "İfade (x+2)(x²−9) biçimine gelir. İlk parantezdeki+2, iki grupta da aynı işaretle oluşmuştur.",
+        "x²−9=(x−3)(x+3) olduğundan tam ayrım (x+2)(x−3)(x+3)’tür. Üç çarpan da tam sayı katsayılıdır."
+      ],
+      "optionReasons": [
+        "(x+2)(x−9)=x²−7x−18 ikinci derecelidir. Başlangıçtaki x³ terimini üretmediği için eşit olamaz.",
+        "Bu üç çarpan (x−2)(x²−9)=x³−2x²−9x+18 verir. İlk parantezde −2 seçilince x² ve sabit terimin işaretleri bozulur.",
+        "(x+2)(x²+9)=x³+2x²+9x+18 olur. Son iki terimin negatif işareti kaybolmuştur.",
+        "Doğru. Aynı x+2 parantezi ortaklaştırılır, kalan x²−9 da iki kare farkıyla ayrılır; bütün terimler geri gelir.",
+        "(x−2)(x²−9) gruplardan gelmesi gereken x+2 yerine x−2 kullanır; açılımın sabiti+18 olur,−18 değil. Ayrıca üç doğrusal çarpanlı yanlış seçenekle aynı polinomu verir."
+      ],
+      "commonError": "−9x−18 grubunu yanlış işaretle yazmak veya iki grupta farklı parantezleri ortakmış gibi almak.",
+      "check": "Son iki çarpan önce x²−9 olur; bunu x+2 ile çarpmak x³+2x²−9x−18’i verir. Bu tam açılım, tek bir x değerine bakmadan özdeşliği doğrular."
+    }
+  },
+  {
+    "id": "factr-9",
+    "identity": "[\"factr-9\",\"Gerçek a,b sayıları için a+b=9 ve ab=14. a²+b² kaçtır?\",\"\",[\"53\",\"67\",\"81\",\"95\",\"109\"],0,\"(a+b)²=a²+2ab+b² olduğundan a²+b²=9²−2·14=81−28=53. a ve b’yi tek tek çözmek gerekmez; toplamın karesi kareler toplamına eşit değildir.\"]",
+    "guidance": {
+      "knowledge": [
+        "İki sayının toplamının karesi (a+b)²=a²+2 ab+b²’dir. İstenen kareler toplamı için çapraz çarpımın iki kopyası ayrılır.",
+        "Toplam ve çarpım biliniyorsa simetrik bir ifade, sayılar tek tek çözülmeden bulunabilir. Bu yöntem a ile b’nin sırasına bağlı değildir."
+      ],
+      "strategy": "İstenen iki kareyi aynı özdeşlikte bir araya getir; verilen toplamın karesinden çarpımın gerekli katsayılı payını ayır. Sayıları ayrı ayrı bulmayı zorunlu görme.",
+      "steps": [
+        "Özdeşlik (a+b)²=a²+b²+2 ab olarak yazılır; hedef ifade a²+b²’dir.",
+        "Hedefi yalnızlaştırınca a²+b²=(a+b)²−2 ab elde edilir. Toplam ve çarpım bilgileri 9 ve 14 olarak yerine konur.",
+        "9²−2·14=81−28=53 bulunur. Çapraz çarpım iki kez çıkarılmıştır."
+      ],
+      "optionReasons": [
+        "Doğru. 81’den iki çarpım payı 28 çıkarılınca kareler toplamı 53 olur.",
+        "67=81−14, çapraz çarpımı yalnız bir kez çıkarır. Özdeşlikteki 2 ab katsayısı eksik uygulanmıştır.",
+        "81, toplamın karesidir. İçindeki 2 ab payı çıkarılmadığı için kareler toplamı değildir.",
+        "95=81+14, çıkarılması gereken çapraz katkının bir kopyasını ters yönde ekler.",
+        "109=81+28,2 ab katsayısını kullanır ama işareti ters alır. Hedefi yalnızlaştırırken 28 eklenmez, çıkarılır."
+      ],
+      "commonError": "Toplamın karesini doğrudan kareler toplamı saymak veya 2 ab’yi yanlış işaretle taşımak.",
+      "check": "a=2,b=7 verileri sağlar: toplam 9, çarpım 14 ve kareler 4+49=53’tür. Bu sonuç kontrolüdür; genel çözüm özdeşlikle a,b’nin sırasından bağımsız elde edilmiştir."
+    }
+  },
+  {
+    "id": "factr-10",
+    "identity": "[\"factr-10\",\"x⁴−13x²+36 ifadesi için aşağıdakilerden hangisi bir çarpandır?\",\"\",[\"x−1\",\"x−2\",\"x−5\",\"x²+4\",\"x²−6\"],1,\"u²−13u+36=(u−4)(u−9). Geri koyunca (x²−4)(x²−9)=(x−2)(x+2)(x−3)(x+3). Dolayısıyla x−2 çarpandır. Geçici değişken x²’ye geri dönmelidir.\"]",
+    "guidance": {
+      "knowledge": [
+        "Tekrarlanan x² ifadesine geçici u adı verilince x⁴, u²’ye dönüşür; dördüncü derece ifade ikinci derece yapıda incelenebilir.",
+        "Geçici değişkenle bulunan çarpanlarda özgün x² geri yazılır. Bir polinomda x−r çarpanını denetlemek için P(r)=0 olup olmadığı da kullanılabilir."
+      ],
+      "strategy": "x²’yi geçici tek değişken gibi ele alarak sabit çarpımı ve orta katsayıyı sağlayan ikiliyi bul. Sonra x’e dönüp kare farklarını ayır ve seçeneklerde bulunan çarpanı seç.",
+      "steps": [
+        "u=x² ile ifade u²−13u+36 olur. Çarpımı 36, toplamı −13 olan sayılar −4 ve −9’dur.",
+        "Böylece (u−4)(u−9), x’e dönünce (x²−4)(x²−9) elde edilir.",
+        "İki kare farkı (x−2)(x+2)(x−3)(x+3) verir. Seçenekler arasında bulunan çarpan x−2’dir."
+      ],
+      "optionReasons": [
+        "x−1 çarpan olsaydı P(1)=0 gerekirdi; 1−13+36=24≠0’dır.",
+        "Doğru. Ayrımda x²−4=(x−2)(x+2) bulunur; bu nedenle x−2 bir çarpandır.",
+        "x−5 için P(5)=625−325+36=336≠0’dır. Geçici değişkendeki sayılardan gelişigüzel doğrusal kök seçilemez.",
+        "x²+4, geçici değişkende u+4 demektir. u=−4 için 16+52+36=104≠0 olduğundan bu çarpan kalansız bölmez.",
+        "x²−6, geçici değişkende u−6’dır. u=6 yazınca 36−78+36=−6≠0 kalır; çarpan değildir."
+      ],
+      "commonError": "u ile ayrımı yaptıktan sonra x²’ye dönmemek veya kare farkında iki doğrusal çarpandan birini eksiltmek.",
+      "check": "(x²−4)(x²−9)=x⁴−13x²+36 açılımı bütün katsayıları doğrular. Ek kontrol olarak x=2’de 16−52+36=0, x−2 çarpanını sınar."
+    }
+  }
+]
