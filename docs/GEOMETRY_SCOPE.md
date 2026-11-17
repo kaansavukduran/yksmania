@@ -1,4 +1,4 @@
-# Geometri kapsamı: 0.20.0 geliştirme adayı
+# Geometri kapsamı: 0.20.0 yayını
 
 17 Kasım 2026. Yeni yedi TYT geometri ünitesi çokgenler, dörtgen aileleri, yamuk–deltoid, paralelkenar ailesi, dik prizmalar, piramitler ve kaynakla açı pekiştirmedir. Bu paket 68 anlatım bölümü, 34 çözümlü örnek, 36 hatırlama ve 94 tam gerekçeli soru içerir. Asal sayılar ünitesi matematik kapsamındadır; geometri toplamına eklenmez.
 
@@ -18,7 +18,7 @@ Yamuk “en az bir çift karşılıklı kenarı paralel dörtgen” olarak kapsa
 
 Sıradaki somut açıklar sentetik çember/dairede açı–uzunluk–çevre–alanın bütünleşik öğretimi, dönel cisimler ve daha ileri kesit/açınım durumlarıdır. Yeni çokgen/dörtgen/prizma/piramit ünitelerinin bulunması bütün kaynak varyantlarını veya bütün MEB alt becerilerini kapatmaz. [PDF kaydı](PDF_SOURCE_PROGRESS032.md), yedi sayfalık kaynak kapanışını, 16 sayfalık geometri derlemesi ve 160 sayfalık MEBİ kitabındaki kısmi eşlemelerden ayırır.
 
-C3 hedef UI, yerel Electron ve Pages alt dizini kabulleri geçti. Son içerik denetiminde bir çokgen çözüm adımındaki açı–kenar sırası açıklaştırıldı; Normal ve prefix C4 derlemeleri geçti; son C4 hedef UI turu 8/8 geçti; native/prefix ve uzak kapıların son C4 kabulü ayrıca aranır. Tam uzak CI ve yayın henüz bu adayda kabul edilmedi. Gerçek kaynak/cihaz sınırları [QA](QA.md) içindedir. Aşağıdaki eski sürümde “yok” veya “sıradaki” denen içerikler o sürümün tarihsel durumudur.
+Yayın kaynağı `387fc3ea` üzerinde 1.841 birim, 1.265 tarayıcı, gerçek paketli Windows/Linux ve prefix/gerçek Pages 107’şer akış geçti. Çokgen Q7 açıklamasındaki açı–kenar sırası son C4’te düzeltildi; aynı kaynak yayımlandı. Kamu 291 dosya normal TLS ile sabit derlemeyle eşleşti. Bu sayılar bütün kaynak alt becerilerinin kapandığını göstermez. Masaüstü dış kaynak bağlantılarındaki açık F032-DESKTOP-EXTERNAL-001 için web sürümü geçici yoldur; çevrimdışı geometri modeli ve soruları bu kusurdan etkilenmez. Gerçek kaynak/cihaz sınırları [QA](QA.md) içindedir. Aşağıdaki eski sürümde “yok” veya “sıradaki” denen içerikler o sürümün tarihsel durumudur.
 
 ---
 

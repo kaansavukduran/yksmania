@@ -48,6 +48,12 @@ Bu kanıt grupları bitmiş/kısmi/hiç işlenmemiş grupları değildir. Aynı 
 
 2024 TYT Temel Matematik 31’in gerçek resmî kitapçık 34. sayfası ve 43. sayfadaki D anahtarı; 2022 TYT Matematik 14’ün kitapçık 28. sayfası ve 45. sayfadaki B anahtarı ayrıca görüntülenip bağımsız hesaplandı: 63° ve 9. Bu iki inceleme bütün resmî kitapçıkların, yirmi yıllık sınav arşivinin veya atıf yapılan MEB kitaplarının tamamlandığı anlamına gelmez. Uygulamadaki öğretim şekilleri ve açıklamaları bu incelemelerden ayrı uyarlamalardır.
 
+## Yayın ile sonraki adayın ayrımı
+
+Bu kaynak eşlemeleri 0.20.0’ın `387fc3ea` kaynağında Pages ve masaüstü için yayımlandı; teknik CI/paket/yayın kabulleri [QA](QA.md) içinde ayrıdır. Masaüstündeki dış YouTube/OGM/ÖSYM bağlantı kusuru, bu dosyalardan uygulama içine yazılmış çevrimdışı öğretimin kapanışını yeni bir tam PDF sayısına dönüştürmez veya bütün bağlantı içeriğini aktarılmış saydırmaz. Bağlantılar için geçici yol web sürümüdür.
+
+Faktöriyel için izole 0.21 adayı geliştirilmekte, uygulama içi 43 soruluk oturum orada denenmektedir. Bu aday henüz yayımlanmış 0.20 veya yeni kanonik PDF kapanış kararı değildir. Bu rapordaki 2 tam/7 kısmi/8.927 belirsiz toplamları değişmedi; yeni kapanış ancak kaynak-sürüm, tüm maddeler, gerçek uygulama ve bağımsız kabul kanıtlarıyla ayrı işlenir. Saatlik bulut görevi aynı kuyruk ve defteri kullanır; ikinci PDF üreticisi başlatmaz.
+
 ## Kalıcı karar kaydı
 
 Her PDF’nin özel kaydı dosya kimliğini ve sürümünü, okunan sayfaları, incelenen şekilleri, kaynak maddelerini, bağlı uygulama kimliklerini ve kalan işleri korur. 8.936 satırlık kuyruk ve rapor aynı kanonik defterden türetilir. Bu tur dokuz kaynak kararı uygulanmış, işlem günlüğü tamamlanmış ve üç çıktı dosyası özetleriyle doğrulanmıştır. Diğer 8.927 satırın verisi değiştirilmedi; eski bağlar ve kaynak sürümleri korundu. Özel PDF kimlikleri, ham kitaplar ve kişisel kaynak adresleri kamu deposuna eklenmez.

@@ -1,15 +1,27 @@
-YKSMania 0.20.0 alpha 1: yayın notu taslağı, henüz yayımlanmadı
+# YKSMania 0.20.0 alpha 1
 
-Sekiz yeni ünite çokgenler, dörtgen aileleri, yamuk–deltoid, paralelkenar ailesi, dik prizmalar, piramitler, kaynakla açı pekiştirme ve asal sayıları kapsar. Yeni pakette 88 anlatım bölümü, 46 çözümlü örnek, 44 hatırlama ve 134 özgün beş seçenekli soru vardır. Çokgenin kenarını, cisimlerin ölçülerini ve kesitini değiştir; şekil ve hesapları birlikte incele. 1–50 asal eleğini adım adım çalıştır, bölenleri ve çarpan dikdörtgenlerini gör.
+Sekiz yeni interaktif ünite: çokgenler, dörtgen aileleri, yamuk–deltoid, paralelkenar ailesi, dik prizmalar, piramitler, kaynakla açı pekiştirme ve asal sayılar. Yeni pakette 88 anlatım bölümü, 46 çözümlü örnek, 44 hatırlama ve 134 özgün beş seçenekli soru vardır. Şekli veya ölçüleri değiştirince ilgili hesaplar da değişir; asal eleği ve çarpan dikdörtgenleri adım adım açıklama sunar.
 
-Toplam 494 ayrıntılı rehber, 494 ayrı kopya kağıdı ve 6.077 özgün soru bulunur. 3.437 soruda tam kademeli yardım hazır; 2.640 eski kartın bütün yardım aşamaları henüz tamamlanmadı. Bilgi, yöntem, tek tek çözüm adımları, her şıkkın gerekçesi ve sonuç denetimi ayrı açılır. Öğrenci PDF veya kaynak kataloğu yüklemez.
+Toplam 494 ayrıntılı rehber, 494 ayrı kopya kağıdı ve 6.077 özgün soru bulunur. 3.437 soruda tam kademeli yardım hazır; 2.640 eski kartın bütün yardım aşamaları henüz tamamlanmadı. Öğrenci PDF veya kaynak yüklemez. Eski kimlikler, cevaplar, notlar, yarım çalışmalar, denemeler, bilinçli kullanıcı tercihleri ve özgün 3/7/21 tarihleri korunur.
 
-İlk 479 çalışma kimliği/sırası, önceki 5.943 ham soru, anahtarlar, notlar, yarım çalışmalar, başlanmış denemeler, bilinçli kullanıcı tercihleri ve özgün 3/7/21 tekrar tarihleri korunur. Ek 14 çalışma başlığı bağımsız izlenir. TYT 120 soru/165 dakika, AYT Sayısal 80 soru/180 dakika ve 15 branş pratiği vardır. Yeni/ayarlanmamış profillerin değiştirilebilir kişisel hazırlık hedefi 28 Şubat 2027’dir; bu resmî sınav tarihi değildir. Mevcut/Matrix temaları ve Lexend korunur.
+## İndir ve aç
 
-17 Kasım 2026 tarihli güncel Aurelia/YKS envanteri 8.936 PDF’dir. Kanonik kaynak kaydı 2 doğrulanmış tam, 7 doğrulanmış kısmi ve 8.927 belirsiz aktarım içerir. Belirsiz, hiç işlenmemiş anlamına gelmez. Bütün MEB/ÖSYM arşivi veya bütün PDF’ler tamamlanmış değildir. Kaynak, sayfa ve açık madde ayrımı docs/PDF_SOURCE_PROGRESS032.md içindedir.
+- [Windows Setup](https://github.com/kaansavukduran/yksmania/releases/download/v0.20.0-alpha.1/YKSMania-0.20.0-Windows-x64-Setup.exe): indir, dosyaya çift tıkla ve kurulum adımlarını izle.
+- [Windows Portable](https://github.com/kaansavukduran/yksmania/releases/download/v0.20.0-alpha.1/YKSMania-0.20.0-Windows-x64-Portable.exe): indir ve çalıştır. Windows paketinin uygulama gövdesi CI’de denetlendi; Portable.exe başlatıcısının temiz bilgisayarda açılışı/taşınması ayrıca sınanmadı.
+- [Linux AppImage](https://github.com/kaansavukduran/yksmania/releases/download/v0.20.0-alpha.1/YKSMania-0.20.0-Linux-x86_64.AppImage): indirdiğin klasörde `chmod +x YKSMania-0.20.0-Linux-x86_64.AppImage`, sonra `./YKSMania-0.20.0-Linux-x86_64.AppImage` çalıştır.
+- [Linux DEB](https://github.com/kaansavukduran/yksmania/releases/download/v0.20.0-alpha.1/YKSMania-0.20.0-Linux-amd64.deb): indirdiğin klasörde `sudo apt install ./YKSMania-0.20.0-Linux-amd64.deb` çalıştır.
+- [Web uygulaması](https://kaansavukduran.github.io/yksmania/): ilk yüklemenin ardından uygulama içi öğretim ve kayıtlar çevrimdışı kullanılabilir. Videolar internet gerektirir.
 
-Uygulama içi öğretim, şekiller, sorular ve kayıtlar çevrimdışı çalışır. Konuya bağlı video önerileri internet gerektirir; bütün güncel erişimler ve oynatma doğrulanmadı. Süre, keşif, kağıt/video açma ve manuel onay bağımsız doğru, ustalık veya XP oluşturmaz.
+Android kişisel test APK’sı ayrı tutulur; bu genel Release’te APK yoktur. Fiziksel Android kurulum/ilk açılış henüz kabul edilmedi.
 
-Bu bir kaynak adayıdır. Son doğrulanmış yayın 0.19.0’dır. Tam uzak CI, test edilmiş Windows/Linux paketleri, gerçek Pages/Vercel yayını, kaynak/etiket ve dosya özetleri henüz bu adayda kabul edilmedi. verified-run.json ile SHA256SUMS.txt ancak gerçek kabulden sonra yayımlanan dosyalarla eşleştirilecektir. Sonuçlar docs/QA.md içinde ayrı tutulur.
+## Doğrulama
 
-Kullanıcının telefonunda denemesi için otomatik test imzalı ayrı Android APK’sı hazırlanıyor; kalıcı imza veya secret kurulumu istenmiyor. APK henüz bu kayıtta üretilmiş/kabul edilmiş sayılmaz ve kullanıcı testinden önce genel dağıtımı vaat edilmez. Fiziksel cihaz, temiz kurulum, portable taşıma ve native iki sürüm kurulumu ayrıca sınanacaktır.
+Kaynak [387fc3ea](https://github.com/kaansavukduran/yksmania/commit/387fc3ea7f43e39d64e0c1e5f062372969a0ebeb), [başarılı main CI](https://github.com/kaansavukduran/yksmania/actions/runs/44070229171) ve release etiketi aynı commit’e bağlıdır. 1.841 birim ve 1.265 tarayıcı testi geçti; fail/skip/flaky/retry sıfırdır. Gerçek paketli Windows/Linux ve [Pages hattının](https://github.com/kaansavukduran/yksmania/actions/runs/44074567259) prefix/HTTPS yayın kontrolleri 107’şer çevrimdışı model akışını geçti; renderer hatası sıfırdır. Yayındaki 291 dosya normal TLS ile sabit derlemeyle eşleşti. Yayımlanan AppImage ayrıca gerçek indirilmiş arşivden çalıştırılıp 107 akışı geçti.
+
+Dört masaüstü dosyası başarılı CI’nin çıktılarından yeniden derlenmeden yayımlandı. `verified-run.json` kaynak ve CI durumunu; `SHA256SUMS.txt` beş dosyanın SHA-256 değerini bağlar. Beş manifest kaydı GitHub varlık digest’leriyle eşleşti. Fiziksel cihaz, temiz kurulum, Windows portable taşıma ve native iki sürüm kurulumu bu kabul değildir.
+
+## Bilinen sorun ve kaynak sınırı
+
+**F032-DESKTOP-EXTERNAL-001, Orta, açık:** 0.20.0 masaüstü uygulamasında YouTube/OGM/ÖSYM ders bağlantıları dış tarayıcıyı açmıyor. Bu bağlantılar için şimdilik web sürümünü kullan. Çevrimdışı öğretim ve sorular etkilenmez. 107 çekirdek akış dış OS dispatch’ini kapsamıyordu; gerçek yayımlanan AppImage’de ayrı tıklama deneyi sorunu doğruladı. İzole 0.21 adayında 55 politika testi ve altı normal kaynak Electron bağlantı tıklaması geçti; süreç yeniden açılışı ve kayıtlar korundu. Bu kaynak kabulü, paketlenmiş/yayımlanmış 0.21 veya mevcut 0.20 indirmelerinin düzeldiği anlamına gelmez. Gerçek dış tarayıcı/video oynatma bu recorder deneyiyle doğrulanmadı.
+
+Güncel Aurelia/YKS envanteri 8.936 PDF’dir: 2 doğrulanmış tam aktarım, 7 doğrulanmış kısmi aktarım ve 8.927 belirsiz kayıt. Belirsiz hiç işlenmemiş anlamına gelmez. Bütün MEB/OGM alt kazanımları, PDF’ler ve resmî ÖSYM arşivi tamamlanmadı. Video eşlemesi bütün güncel oynatımların kabulü değildir. Ayrıntı repo içindeki `docs/PDF_SOURCE_PROGRESS032.md` ve `docs/QA.md` dosyalarındadır. Vercel’in son doğrulanan durumu hesap sınırından HTTP 402’dir; erişilebilir web yayını Pages’tir.
