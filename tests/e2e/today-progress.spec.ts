@@ -151,8 +151,8 @@ test("YKS-013 existing question-only records show their score and allow explicit
     .getByRole("button", { name: "Konuyu çalıştım", exact: true })
     .click();
   await expect(row(page)).toContainText("Konu tamamlandı");
-  await expect(card(page)).toContainText("493 kalan konu");
-  await expect(card(page, "Soru planı")).toContainText("493 kalan konu");
+  await expect(card(page)).toContainText("495 kalan konu");
+  await expect(card(page, "Soru planı")).toContainText("495 kalan konu");
   await nav(page, "Ayarlar");
   await setThemePreference(page, "light");
   await page

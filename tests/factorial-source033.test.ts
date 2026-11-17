@@ -59,11 +59,11 @@ it("preserves every prior6077question/528lesson/494guide/sheet value and the493-
   expect(studyTopics.slice(0, 493)).toEqual(baseline.studyTopics);
 });
 it("registers one source unit, separate rich guide/concise summary and43 self-contained fully-guided questions", () => {
-  expect(lessons).toHaveLength(529);
-  expect(lessons.flatMap((l) => l.questions)).toHaveLength(6120);
-  expect(lessonGuides.size).toBe(495);
-  expect(builtInCheatSheets.size).toBe(495);
-  expect(studyTopics).toHaveLength(494);
+  expect(lessons).toHaveLength(531);
+  expect(lessons.flatMap((l) => l.questions)).toHaveLength(6214);
+  expect(lessonGuides.size).toBe(497);
+  expect(builtInCheatSheets.size).toBe(497);
+  expect(studyTopics).toHaveLength(496);
   const lesson = lessonById(id)!,
     guide = lessonGuides.get(id)!,
     sheet = builtInCheatSheets.get(topic)!;
@@ -101,7 +101,7 @@ it("registers one source unit, separate rich guide/concise summary and43 self-co
   expect(lesson.questions).toHaveLength(43);
   expect(
     new Set(lessons.flatMap((l) => l.questions).map((q) => q.id)).size,
-  ).toBe(6120);
+  ).toBe(6214);
   for (const q of lesson.questions) {
     expect(questionContentIssues(q), q.id).toEqual([]);
     expect(q.options).toHaveLength(5);

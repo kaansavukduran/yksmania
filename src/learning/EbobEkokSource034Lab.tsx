@@ -1,0 +1,80 @@
+import { useId } from "react";
+import { useExploration } from "./useExploration";
+import { ebob034Pair, ebob034Euclid, ebob034Geometry, ebob034Timeline, ebob034SameRemainder, ebob034UnknownDivisor, ebob034PairConditions, ebob034Third, ebob034Cubes } from "./ebobEkokSource034Model";
+import "./ebobEkokSource034.css";
+const bounded = (value:number,fallback:number,min:number,max:number) => Number.isFinite(value)?Math.max(min,Math.min(max,Math.round(value))):fallback;
+export default function EbobEkokSource034Lab({id:lessonId}:{id?:string}={}) {
+  const uid=useId();
+  const [s,set]=useExploration("f034:ebob-ekok",{mode:0,a:72,b:120,euclidA:252,euclidB:198,step:0,width:36,height:24,side:12,p:12,q:18,offset:0,horizon:72,start:1,end:1,remainderMode:0,divisorA:8,divisorB:12,r:5,upper:150,n:85,m:133,r1:1,r2:1,pairMode:0,d:4,lcm:48,thirdA:18,thirdB:12,thirdD:6,thirdM:360,cubeA:12,cubeB:18});
+  const v=(key:keyof typeof s,fallback:number,min:number,max:number)=>bounded(s[key],fallback,min,max);
+  const mode=v("mode",0,0,6),pair=ebob034Pair(v("a",72,1,240),v("b",120,1,240)),e=ebob034Euclid(v("euclidA",252,1,600),v("euclidB",198,1,600)),step=v("step",0,0,e.rows.length),g=ebob034Geometry(v("width",36,1,60),v("height",24,1,60),v("side",12,1,60)),t=ebob034Timeline(v("p",12,1,60),v("q",18,1,60),v("offset",0,0,120),v("horizon",72,0,240),v("start",1,0,1)===1,v("end",1,0,1)===1),r=ebob034SameRemainder(v("divisorA",8,1,60),v("divisorB",12,1,60),v("r",5,0,120),v("upper",150,1,600)),u=ebob034UnknownDivisor(v("n",85,1,600),v("m",133,1,600),v("r1",1,0,600),v("r2",1,0,600)),c=ebob034PairConditions(v("d",4,1,120),v("lcm",48,1,600)),third=ebob034Third(v("thirdA",18,1,120),v("thirdB",12,1,120),v("thirdD",6,1,120),v("thirdM",360,1,1200)),cube=ebob034Cubes(v("cubeA",12,1,24),v("cubeB",18,1,24));
+  const geometryUnit=Math.min(360/g.a,260/g.b),geometryWidth=g.a*geometryUnit,geometryHeight=g.b*geometryUnit;
+  const range=(key:keyof typeof s,label:string,value:number,min:number,max:number)=>{
+    const id=uid+"-"+key;
+    return <div className="f034-range"><div><label htmlFor={id}>{label}</label><output htmlFor={id}>{value}</output></div><input id={id} type="range" min={min} max={max} step="1" value={value} onChange={(ev)=>set({...((key==="euclidA"||key==="euclidB")?{step:0}:{}),[key]:Number(ev.target.value)})}/></div>;
+  };
+  const frontGrid=(n:number,x:number,y:number,size:number)=>Array.from({length:n+1},(_,i)=>{const d=i*size/n;return <g key={i}><path d={`M${x+d},${y}v${size}M${x},${y+d}h${size}`} /></g>});
+  return <section className="visual-lab f034-lab" aria-labelledby={uid} data-lesson-id={lessonId??"tyt-mat-ebob-ekok-kaynak-034"}>
+    <h2 id={uid}>Ortak birimi kur, ortak anı ve koşulu denetle</h2>
+    <p>Şekil ve sonuç aynı tam sayı hesabından üretilir. Sayıları değiştir; neyin bölen, neyin kat olduğunu açıkla. Bu keşif konu tamamlaması veya öğrenme puanı oluşturmaz.</p>
+    <div className="f034-modes" role="group" aria-label="EBOB ve EKOK keşif görünümü">{["Asal tablosu","Öklid adımları","Parça ve işaret","Zaman çizelgesi","Kalan koşulu","EBOB ve EKOK’tan sayılar","Küp sayımı"].map((name,i)=><button type="button" className="secondary" key={name} aria-pressed={mode===i} onClick={()=>set({mode:i})}>{name}</button>)}</div>
+    {mode===0&&<div className="f034-panel" data-mode="prime">
+      <p>Ortak bölen her iki sayıda da bulunan asal kopyalarını, ortak kat ise her sayının bütün gereksinimini taşır.</p>
+      <div className="f034-controls">{range("a","İlk sayı a",pair.a,1,240)}{range("b","İkinci sayı b",pair.b,1,240)}</div>
+      {pair.rows.length?<figure><svg viewBox={`0 0 320 ${pair.rows.length*58+12}`} role="img" aria-label="Her asal için iki sayıdaki kopya sayısının karşılaştırması">{pair.rows.map((row,i)=><g key={row.prime} transform={`translate(12 ${i*58+8})`}><rect className="f034-bar-a" width={row.exponentA*28} height="17"/><rect className="f034-bar-b" y="24" width={row.exponentB*28} height="17"/></g>)}</svg><figcaption>Üst çubuk a, alt çubuk b. Bir çubuk birimi aynı asalın bir kopyasıdır; her satırın tam sayıları aşağıdadır.</figcaption></figure>:<p>1’in asal çarpanı yoktur. İki sayı da1 ise EBOB ve EKOK1’dir.</p>}
+      <dl className="f034-facts">{pair.rows.map((row)=><div key={row.prime}><dt>Asal {row.prime}</dt><dd>a üssü {row.exponentA}; b üssü {row.exponentB}. EBOB üssü {row.min}; EKOK üssü {row.max}.</dd></div>)}</dl>
+      <p><strong>EBOB {pair.gcd}; EKOK {pair.lcm}.</strong> Bölüm denetimleri: {pair.a}/{pair.gcd}={pair.quotients[0]}, {pair.b}/{pair.gcd}={pair.quotients[1]}; {pair.lcm}/{pair.a}={pair.quotients[2]}, {pair.lcm}/{pair.b}={pair.quotients[3]}.</p>
+      <p>Pozitif ortak bölenler: {pair.divisors.join(", ")}. {pair.positiveDivisorCount} pozitif, {pair.negativeDivisorCount} negatif; toplam {pair.totalIntegerDivisorCount} tam sayı ortak bölen. Negatifler pozitiflerin işaret değiştirmiş eşleridir; sıfır bölen değildir.</p>
+    </div>}
+    {mode===1&&<div className="f034-panel" data-mode="euclid">
+      <p>a=bq+r iken ortak bölenler değişmez: a−bq=r ve bq+r=a. Sıfır son kalanı değil, ondan önceki sıfır olmayan kalanı seç.</p>
+      <div className="f034-controls">{range("euclidA","İlk sayı",e.a,1,600)}{range("euclidB","İkinci sayı",e.b,1,600)}</div>
+      <div className="f034-actions"><button type="button" className="secondary" disabled={step===0} onClick={()=>set({step:step-1})}>Önceki bölme</button><button type="button" className="secondary" disabled={step===e.rows.length} onClick={()=>set({step:step+1})}>Sonraki bölme</button><button type="button" className="secondary" disabled={step===0} onClick={()=>set({step:0})}>Adımları başa al</button></div>
+      <p>{step}/{e.rows.length} bölme açıldı.</p>
+      <ol className="f034-equations">{e.rows.slice(0,step).map((row,i)=><li key={i}>{row.dividend}={row.divisor}×{row.quotient}+{row.remainder}. {row.remainder===0?"Kalan 0: işlem bitti; bölen son sıfır olmayan değerdir.":`Yeni çift ${row.divisor} ve ${row.remainder}.`}</li>)}</ol>
+      {step===e.rows.length&&<p><strong>EBOB {e.gcd}; EKOK {e.lcm}.</strong> {e.a}/{e.gcd}={e.a/e.gcd}; {e.b}/{e.gcd}={e.b/e.gcd}. Ortak bölenin iki ölçüye de tam uyması korunur.</p>}
+    </div>}
+    {mode===2&&<div className="f034-panel" data-mode="geometry">
+      <p>Eş kareler kenarlara paralel, boşluksuz ve kesilmeden yerleşir. Aynı ortak boyla kaplama, iki ayrı ip ve işaret sayımlarını karşılaştır.</p>
+      <div className="f034-controls">{range("width","İlk kenar / ip (cm)",g.a,1,60)}{range("height","İkinci kenar / ip (cm)",g.b,1,60)}{range("side","Seçilen kare / parça boyu (cm)",g.side,1,60)}</div>
+      <button type="button" className="secondary" onClick={()=>set({side:g.greatest})}>En büyük ortak boyu seç: {g.greatest}cm</button>
+      <figure><svg viewBox="0 0 400 300" role="img" aria-label={`${g.a}ye${g.b}cm dikdörtgende ${g.side}cm aralıklı kare ızgarası; ${g.valid?"kenarlara tam uyuyor":"son parça kenarlara tam uymuyor"}`}>
+        <defs><clipPath id={uid+"-clip"}><rect x="20" y="20" width={geometryWidth} height={geometryHeight} /></clipPath></defs>
+        <rect x="20" y="20" width={geometryWidth} height={geometryHeight} className="f034-shape"/>
+        <g clipPath={`url(#${uid}-clip)`} className="f034-grid">{Array.from({length:Math.floor(g.a/g.side)+1},(_,i)=><path key={"v"+i} d={`M${20+i*g.side*geometryUnit},20v${geometryHeight}`}/>)}{Array.from({length:Math.floor(g.b/g.side)+1},(_,i)=><path key={"h"+i} d={`M20,${20+i*g.side*geometryUnit}h${geometryWidth}`}/>)}</g>
+      </svg><figcaption>{g.a}cm × {g.b}cm; seçilen boy {g.side}cm. Karelerin satır/sütun sayısı kenar bölümlerinden gelir. {g.valid?"Kesim gerekmiyor.":"Bu boyla kesmeden tam kaplama yok; kenarda eksik parça kalır."}</figcaption></figure>
+      {g.valid?<><p><strong>{g.x} sütun × {g.y} satır = {g.squares} kare.</strong> Alan {g.area}cm²; bir kare {g.squareArea}cm². {g.optimal?"Seçilen boy en büyüğü; kare adedi en az.":`Boy geçerli fakat en büyük ${g.greatest}cm olduğundan bu adet en az değil.`}</p><p>Ayrı iplerde {g.x}+{g.y}={g.ropeParts} parça; üst üste kesmeden {g.separateCuts} kesim.</p><p>Kapalı çevre {g.perimeter}cm → {g.closedMarks} işaret; köşeler dahil, başlangıç ikinci kez sayılmaz. Açık {g.a}cm kenarda iki uç dahil {g.openMarks} nokta.</p></>:<p role="status">{g.a}/{g.side} veya {g.b}/{g.side} tam sayı değil. Geçersiz yerleşim için tam kare/parça adedi gösterilmez; boyu değiştir.</p>}
+    </div>}
+    {mode===3&&<div className="f034-panel" data-mode="timeline">
+      <p>A 0’da, B seçtiğin başlangıç anında çalışır. Periyotlar sabittir. Kaymış başlangıçta ilk ortak anı doğrudan EKOK seçme.</p>
+      <div className="f034-controls">{range("p","A periyodu (dk)",t.p,1,60)}{range("q","B periyodu (dk)",t.q,1,60)}{range("offset","B ilk çalışma anı (dk)",t.offset,0,120)}{range("horizon","Görülen son an (dk)",t.horizon,0,240)}</div>
+      <div className="f034-checks"><label><input type="checkbox" checked={t.includeStart} onChange={(ev)=>set({start:ev.target.checked?1:0})}/>0 başlangıcı sayıma dahil</label><label><input type="checkbox" checked={t.includeEnd} onChange={(ev)=>set({end:ev.target.checked?1:0})}/>Son an sayıma dahil</label></div>
+      <figure><svg viewBox="0 0 500 150" role="img" aria-label={`${t.rangeLabel}dk çizelgesinde A ve B olayları; ortak olay sayısı ${t.count}`}>
+        <path d="M20,40H480M20,110H480" className="f034-axis"/>
+        {t.commonAll.map((time)=><path key={time} d={`M${20+460*time/Math.max(1,t.horizon)},24v102`} className="f034-common"/>)}
+        {t.a.map((time)=><circle key={time} cx={20+460*time/Math.max(1,t.horizon)} cy="40" r="4" className="f034-dot-a"/>)}
+        {t.b.map((time)=><rect key={time} x={16+460*time/Math.max(1,t.horizon)} y="106" width="8" height="8" className="f034-dot-b"/>)}
+      </svg><figcaption>Üst çizgi A’nın yuvarlak olayları, alt çizgi B’nin kare olayları. Dikey çizgiler görülen ortak anları birleştirir; sayımda seçili uçlar ayrıca uygulanır. Başlangıç0dk, sağ uç {t.horizon}dk.</figcaption></figure>
+      <p>A anları: {t.a.join(", ")}. B anları: {t.b.length?t.b.join(", "):"Bu görünür aralıkta başlamadı"}.</p>
+      <p><strong>{t.rangeLabel} içinde {t.count} ortak olay.</strong> Dahil edilen anlar: {t.common.length?t.common.join(", "):"Yok"}.</p>
+      <p>İlk pozitif ortak an: {t.first===null?"Yok; başlangıç kayması iki döngünün ortak bölenine uymuyor.":`${t.first}. dakika.`} EKOK {t.period}dk, ortak anlar varsa aralarındaki tekrar süresidir; kaymış başlangıçtaki ilk anla aynı olmak zorunda değildir.</p>
+    </div>}
+    {mode===4&&<div className="f034-panel" data-mode="remainders">
+      <div className="f034-actions" role="group" aria-label="Kalan problemi türü"><button type="button" className="secondary" aria-pressed={v("remainderMode",0,0,1)===0} onClick={()=>set({remainderMode:0})}>Sayıyı bul: aynı kalan</button><button type="button" className="secondary" aria-pressed={v("remainderMode",0,0,1)===1} onClick={()=>set({remainderMode:1})}>Bilinmeyen böleni bul</button></div>
+      {v("remainderMode",0,0,1)===0?<><p>Aynı N, iki bölenle bölündüğünde aynı kalanı versin. Kalan çıkarılınca ortak kat kalır; r her bölenin altında olmalıdır.</p><div className="f034-controls">{range("divisorA","İlk bölen",r.a,1,60)}{range("divisorB","İkinci bölen",r.b,1,60)}{range("r","Ortak kalan r",r.remainder,0,120)}{range("upper","Hariç üst sınır",r.exclusiveUpper,1,600)}</div><p>EKOK {r.period}; aday biçimi N={r.period}k+{r.remainder},N pozitif ve N&lt;{r.exclusiveUpper}.</p>{r.valid?<><p>Adaylar: {r.candidates.length?r.candidates.join(", "):"Bu sınır altında uygun pozitif aday yok."}</p><p>En küçük {r.smallest??"yok"}; en büyük {r.largest??"yok"}. r pozitifse k=0 ile N=r geçerli olabilir; r=0 ise N=0 pozitif değildir.</p></>:<p role="status">{r.reason}</p>}</>:<><p>İki farklı sayı d’ye bölünsün. Her sayıdan kendi kalanını çıkar; d her iki farkı bölmeli ve bütün kalanlardan büyük olmalı.</p><div className="f034-controls">{range("n","İlk sayı N",u.n,1,600)}{range("m","İkinci sayı M",u.m,1,600)}{range("r1","N için kalan",u.r,0,600)}{range("r2","M için kalan",u.s,0,600)}</div><p>N−r={u.adjustedN};M−s={u.adjustedM};d≥{u.minimumDivisor}.</p>{u.unbounded?<p role="status">{u.reason}</p>:u.valid?<p><strong>En büyük bölen {u.largest}.</strong> Uygun bölenler {u.candidates.join(", ")}. Farkların EBOB’u {u.gcd}; yalnız bütün kalanlardan büyük bölenler listelendi.</p>:<p role="status">{u.reason}</p>}</>}
+    </div>}
+    {mode===5&&<div className="f034-panel" data-mode="conditions">
+      <div className="f034-actions" role="group" aria-label="Verilen ortak bölen ve kat koşulu"><button type="button" className="secondary" aria-pressed={v("pairMode",0,0,1)===0} onClick={()=>set({pairMode:0})}>İki sayıyı kur</button><button type="button" className="secondary" aria-pressed={v("pairMode",0,0,1)===1} onClick={()=>set({pairMode:1})}>Üçüncü sayıyı bul</button></div>
+      {v("pairMode",0,0,1)===0?<><p>a=dx,b=dy;EBOB(x,y)=1 korunmalı. xy=EKOK/EBOB tam sayı çıkmazsa iki pozitif sayı yoktur.</p><div className="f034-controls">{range("d","Verilen EBOB d",c.d,1,120)}{range("lcm","Verilen EKOK m",c.m,1,600)}</div>{c.valid?<><p>xy={c.product}. Aşağıdaki x≤y çiftleri bütün olasılıkları tüketir; tersleri toplamı değiştirmez.</p><ul className="f034-equations">{c.rows.map((row)=><li key={row.x}>x={row.x},y={row.y}: {row.coprime?`Geçerli; a=${row.a},b=${row.b},toplam ${row.sum},dikdörtgen çevresi ${row.perimeter}.`:"Elendi; x ve y aralarında asal değil, başlangıç EBOB’u korunmaz."}</li>)}</ul><p><strong>En küçük toplam {c.minSum}; en büyük {c.maxSum}.</strong></p></>:<p role="status">{c.d}, {c.m}’yi bölmüyor; uygun iki pozitif tam sayı yoktur.</p>}</>:<><p>Üçüncü x, aynı anda verilen üçlü EBOB ve EKOK’u sağlamalı. Hedef EKOK’un bölenleri taranır ve her aday iki koşulla ayrı doğrulanır; yalnız eksik asalı eklemek yetmez.</p><div className="f034-controls">{range("thirdA","İlk sayı a",third.a,1,120)}{range("thirdB","İkinci sayı b",third.b,1,120)}{range("thirdD","Hedef üçlü EBOB",third.d,1,120)}{range("thirdM","Hedef üçlü EKOK",third.m,1,1200)}</div><p>İlk çiftin EBOB’u {third.pairGcd}; EKOK’u {third.pairLcm}.</p>{third.valid?<p><strong>En küçük x={third.smallest}.</strong> Bütün uygun adaylar: {third.candidates.join(", ")}. Her aday hedef EKOK’u böler ve iki koşulu da sağlar.</p>:<p role="status">İki koşulu birlikte sağlayan pozitif x yok. Bir gerekli koşulun sağlanması tek başına yeterli değildir.</p>}</>}
+    </div>}
+    {mode===6&&<div className="f034-panel" data-mode="cubes">
+      <p>Her küçük küp boyu ayrı bir dolu büyük küp kurar; boyları aynı büyük küpte karıştırmıyoruz. Kesme yok, kenarlar paralel. Büyük ortak kenar EKOK; her eksenin adedi ayrı sayılır.</p>
+      <div className="f034-controls">{range("cubeA","İlk küçük küp kenarı (cm)",cube.a,1,24)}{range("cubeB","İkinci küçük küp kenarı (cm)",cube.b,1,24)}</div>
+      <figure><svg viewBox="0 0 460 240" role="img" aria-label={`Ortak kenar${cube.side}cm; ilk küpte eksen başına${cube.x},ikinci küpte${cube.y}parça; adetler${cube.countA}ve${cube.countB}`}>
+        {[cube.x,cube.y].map((n,index)=><g key={index} transform={`translate(${index*230},0)`}><path d="M25,60L65,20H205L165,60Z M165,60L205,20V160L165,200Z" className="f034-cube-side"/><rect x="25" y="60" width="140" height="140" className="f034-shape"/><g className="f034-grid">{frontGrid(n,25,60,140)}{Array.from({length:n+1},(_,i)=><path key={i} d={`M${25+40*i/n},${60-40*i/n}h140M${165+40*i/n},${60-40*i/n}v140`}/>)}</g></g>)}
+      </svg><figcaption>İki aynı büyüklükte küpün ön yüz ve derinlik katmanları. Perspektif şema adetleri gösterir; mimari ölçekli çizim değildir. Sol eksen adedi {cube.x},sağ {cube.y}.</figcaption></figure>
+      <p><strong>En küçük ortak kenar {cube.side}cm.</strong> İlk boy: {cube.x}×{cube.x}×{cube.x}={cube.countA}küp. İkinci boy: {cube.y}×{cube.y}×{cube.y}={cube.countB}küp.</p>
+      <p>Hacim kontrolü: {cube.countA}×{cube.smallVolumeA}={cube.volume}cm³; {cube.countB}×{cube.smallVolumeB}={cube.volume}cm³; ortak büyük hacim {cube.side}³={cube.volume}cm³.</p>
+    </div>}
+  </section>;
+}

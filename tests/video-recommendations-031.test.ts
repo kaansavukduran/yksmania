@@ -66,9 +66,19 @@ describe("031 source-bound optional video recommendations", () => {
       }
     }
     expect(
-      [...seen].filter((id) => !id.endsWith("-032") && !id.endsWith("-033")),
+      [...seen].filter(
+        (id) =>
+          !id.endsWith("-032") &&
+          !id.endsWith("-033") &&
+          ![
+            "tyt-mat-ebob-ekok-kaynak-034",
+            "tyt-mat-rasyonel-kaynak-035",
+          ].includes(id),
+      ),
     ).toHaveLength(485);
     expect(foundationIds.every((id) => seen.has(id))).toBe(true);
+    expect(seen.has("tyt-mat-ebob-ekok-kaynak-034")).toBe(true);
+    expect(seen.has("tyt-mat-rasyonel-kaynak-035")).toBe(true);
     expect(new Set(videoCatalog031.map((group) => group.subjectId)).size).toBe(
       15,
     );

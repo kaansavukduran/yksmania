@@ -1,3 +1,25 @@
+# YKSMania 0.22.0 geliştirme adayı — 17 Kasım 2026
+
+**Bu belge yerel kabulü anlatır; 0.22 henüz yayımlanmadı.** Son doğrulanmış yayın ve APK aşağıdaki 0.21 kaydındadır. Yeni kaynak commit’i, uzak CI, Pages/masaüstü yayını ve yeni kişisel APK kabulü ayrıca tamamlanacaktır.
+
+EBOB–EKOK: 29 bölüm, 24 örnek, 18 hatırlama, 46 gerekçeli soru ve yedi model. Rasyonel sayılar: 26 bölüm, 20 örnek, 17 hatırlama, 48 gerekçeli soru ve yedi model. Ayrı Kopya Kağıtları bölümünde toplam 24 yeni özet bölümü bulunur. Her yeni soruda gerekli bilgi, yöntem, çözüm adımları, beş şıkkın gerekçesi, sık hata ve denetim vardır; öğrenciye kaynak yükleme işi bırakılmaz.
+
+Ortak bölen/kat, Öklid adımları, geometrik kaplama, zaman/kalan koşulları; kesir parçaları, sayı doğrusu, işlemler, devir bloğu, değişen bütün ve dara/karışım/ip modelleri değiştirilebilir. Şekil ve sonuç aynı matematikten gelir. Keşif, süre, manuel onay ve örnek çözümü ustalık veya XP üretmez.
+
+Aday toplamı **531 set, 497 rehber, 497 ayrı özet, 496 çalışma başlığı ve 6.214 özgün soru**: 3.574 tam, 2.640 kısmi yardım. Önceki 6.120 soru, ilk 479 Excel kimliği/sırası, ayarlar, notlar, taslaklar, denemeler ve özgün 3/7/21 tarihleri korunur. Bu sayılar bütün YKS/MEB veya PDF arşivinin tamamlandığı anlamına gelmez.
+
+2021 TYT Matematik 15’in gerçek resmî anahtarı A=7’dir. Yeni yerleşik 225+252=477 ortak kat örneği kendi açık verileriyle yazılmış özgün, puansız öğretim çözümüdür; resmî soruyla karıştırılmaz. Önceki dokuz bağlantının nesneleri ve sırası korunur. Toplam 10 bağlantı/10 özgün örnek bütün resmî arşiv değildir.
+
+Son C6’da **1.939 birim, 110 prefix ve 110 gerçek paketli Linux çevrimdışı akışı** geçti; 297 paket web dosyası son derlemeye birebir eşleşti. Yerel dar ekran/büyük yazı/çevrimdışı UI ve üç ham IndexedDB deposunu koruyan aynı kökenli 0.21→0.22 web yükseltmesi ayrıca denetlendi. Son üç metin düzeltmesi gerçek C6 hedef testleriyle tekrar sınandı. İlk kopya kusurları ve ilk prefix/native test beklentisi hataları saklanır; uygulama sonucu veya eski beklentiler gevşetilmedi. E2E keşfi 1.277 vakadır, tam yürütme sonucu değildir.
+
+**Bekleyen kapılar:** kaynak commit’inin tam uzak tarayıcı/Windows/Linux CI’si, otomatik canlı Pages 110, gerçek yayın dosyaları ve kişisel Android test APK’sı. Android sürüm kodu 32’dir; ayrı test paketi otomatik test imzasıyla hazırlanır. Secret istenmez, genel APK/mağaza yayını yapılmaz. Fiziksel telefon, temiz kurulum, portable taşıma ve native kurulum yükseltmesi ayrıca sınanacaktır.
+
+Kanonik PDF kaydı hâlâ **8.981 / 3 tam / 6 kısmi / 8.972 belirsiz**. İki kaynak henüz tam sayılmadı; tekrar okuma yeni sayı oluşturmaz. Source036/037 özel hazırlıkları bu sürüme kayıtlı değildir. [Devir ve kapsam](FORGE034035.md), [mevcut PDF raporu](PDF_SOURCE_PROGRESS033.md).
+
+---
+
+## Aşağıdaki 0.21 notları doğrulanmış eski yayına aittir
+
 # YKSMania 0.21.0 alpha 1 — 17 Kasım 2026
 
 [Windows/Linux indir](https://github.com/kaansavukduran/yksmania/releases/tag/v0.21.0-alpha.1) · [Kişisel Android test paketi](https://github.com/kaansavukduran/yksmania/actions/runs/44082360745/artifacts/14328077495) · [Web uygulaması](https://kaansavukduran.github.io/yksmania/)

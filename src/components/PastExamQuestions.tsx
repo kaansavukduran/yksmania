@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ExternalLink } from "lucide-react";
-import { pastExamReferences, officialBooklets } from "../domain/pastExams";
+import { pastExamReferencesForTopic, officialBooklets } from "../domain/pastExams";
 import { examTeachingCases } from "../learning/pastExamCases";
 function TeachingCase({ id }: { id: string }) {
   const item = examTeachingCases[id];
@@ -46,9 +46,7 @@ export function PastExamQuestions({
 }) {
   const [exam, setExam] = useState("all"),
     [year, setYear] = useState("all");
-  const related = pastExamReferences.filter(
-    (r) => topicId && r.topicIds.includes(topicId),
-  );
+  const related = pastExamReferencesForTopic(topicId);
   const filtered = related.filter((r) => {
     const b = officialBooklets.find((b) => b.id === r.bookletId)!;
     return (

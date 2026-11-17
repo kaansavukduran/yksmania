@@ -1134,7 +1134,8 @@
     "subjectId": "tyt-matematik",
     "topic": "Ebob Ekok",
     "lessonIds": [
-      "ebob-ekok"
+      "ebob-ekok",
+      "tyt-mat-ebob-ekok-kaynak-034"
     ],
     "recommended": [
       {
@@ -1179,7 +1180,8 @@
     "subjectId": "tyt-matematik",
     "topic": "Rasyonel Sayılar",
     "lessonIds": [
-      "rasyonel-sayilar"
+      "rasyonel-sayilar",
+      "tyt-mat-rasyonel-kaynak-035"
     ],
     "recommended": [
       {

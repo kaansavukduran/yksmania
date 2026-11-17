@@ -176,7 +176,34 @@ export const pastExamReferences: PastExamReference[] = [
       "Bağımsız sayısal kontrol 132·182=24.024 verir. Resmî soru için C anahtarıyla eşleşir; buradaki öğretim açıklaması resmî kurum çözümü değildir.",
     ],
   },
+  {
+    id: "2021-TYT-MAT-15",
+    bookletId: "2021-tyt",
+    test: "Temel Matematik",
+    question: 15,
+    page: 30,
+    answerPage: 45,
+    answer: "A",
+    topicIds: ["detail-201", "topic-tyt-mat-ebob-ekok-kaynak-034"],
+    title: "Bölünebilme koşullarını ortak katta birleştirme",
+    connection: "EBOB ve EKOK: 9 ve 5 için ortak kat 45, 9 ve 12 için ortak kat 36 üzerinden rakam koşullarını denetleme.",
+    solution: [
+      "Üç basamaklı gösterimlerde A sıfır olamaz; AAB=110A+B ve ABA=101A+10B yazılır. İkisinin rakam toplamı da 2A+B’dir; 9’a bölünebilme ortak koşuldur.",
+      "5’e bölünen sayı AAB ise B=0 veya 5; ABA ise A=5 olur. Her dalda diğer sayının 12’ye bölünmesini, yani 3 ve 4 koşullarını da koru. A=1…9 ve B=0…9 içindeki 90 çifti bu iki olasılıkla tüketince tek uygun çift A=2, B=5’tir.",
+      "Kontrol: 225 hem 9’a hem 5’e; 252 hem 9’a hem 12’ye tam bölünür. A+B=7, resmî anahtar A ile eşleşir. Bu adımlar özgün öğretim açıklamasıdır; resmî kurum çözümü değildir.",
+    ],
+  },
 ];
+// Selected companion links leave all earlier source records and their topic lists intact.
+const sourceCompanionReferences: Record<string, readonly string[]> = {
+  "topic-tyt-mat-rasyonel-kaynak-035": ["2021-TYT-MAT-1"],
+};
+export function pastExamReferencesForTopic(topicId?: string) {
+  return pastExamReferences.filter((reference) => Boolean(topicId && (
+    reference.topicIds.includes(topicId) ||
+    sourceCompanionReferences[topicId]?.includes(reference.id)
+  )));
+}
 export const officialExamArchives = [
   { exam: "TYT / AYT", url: "https://osym.gov.tr/SinavGrubu/Index/2" },
   { exam: "ALES", url: "https://osym.gov.tr/SinavGrubu/Index/5" },

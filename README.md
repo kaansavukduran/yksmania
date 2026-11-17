@@ -1,5 +1,11 @@
 # YKSMania
 
+> **0.22.0 geliştirme adayı — henüz yayımlanmadı.** EBOB–EKOK ve rasyonel sayılara 55 anlatım bölümü, 44 çözümlü örnek, 94 gerekçeli soru, 14 etkileşimli model ve ayrı özetler eklendi. Adayda 497 rehber/özet, 496 çalışma başlığı ve 6.214 soru bulunuyor. Son C6 kaynağında 1.939 birim testi, 110 prefix ve 110 gerçek paketli Linux çevrimdışı akışı geçti. Dar ekran/büyük yazı, kayıt koruma ve aynı kökenli web yükseltmesi ayrıca denetlendi. Uzak tam tarayıcı CI’si, Pages/masaüstü yayını ve yeni kişisel APK kabulü bekliyor. [Kapsam ve test sınırları](docs/FORGE034035.md).
+>
+> PDF arşivi hâlâ **8.981 dosya: 3 tam, 6 kısmi, 8.972 belirsiz**. Bu iki kaynak henüz tam sayılmadı. Aşağıdaki 0.21 indirmeleri, test sonuçları ve APK bağlantıları kendi doğrulanmış sürümüne aittir.
+
+## Yayımlanmış 0.21.0 ve önceki devir
+
 Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması.
 
 [Web uygulamasını aç](https://kaansavukduran.github.io/yksmania/) · [Windows/Linux indir](https://github.com/kaansavukduran/yksmania/releases/tag/v0.21.0-alpha.1) · [Kişisel Android deneme paketi](https://github.com/kaansavukduran/yksmania/actions/runs/44082360745/artifacts/14328077495)

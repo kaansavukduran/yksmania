@@ -1,4 +1,8 @@
 import {
+  forge034035SmokeCases,
+  runForge034035SmokeCase,
+} from "./forge034035-smoke-cases.mjs";
+import {
   forge033SmokeCases,
   runForge033SmokeCase,
 } from "./forge033-smoke-cases.mjs";
@@ -55,6 +59,8 @@ import {
   runForge016SmokeCase,
 } from "./forge016-smoke-cases.mjs";
 import { createServer } from "node:http";
+import { writeFileSync, appendFileSync } from "node:fs";
+import { withinDeadline } from "./pages-deadline.mjs";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { chromium, expect } from "@playwright/test";
@@ -76,6 +82,46 @@ const evidence = path.resolve(
   process.env.YKSMANIA_EVIDENCE_DIR || "/tmp/yksmania-pages-evidence",
 );
 await fs.mkdir(evidence, { recursive: true });
+let lastStage = "initialization";
+let acceptanceClosed = false;
+const completedCases = [];
+let result = { status: "INCOMPLETE" };
+const progress = (stage, details = {}) => {
+  lastStage = stage;
+  const entry = {
+    type: "pages-stage",
+    at: new Date().toISOString(),
+    stage,
+    ...details,
+  };
+  appendFileSync(
+    path.join(evidence, "pages-progress.ndjson"),
+    JSON.stringify(entry) + "\n",
+  );
+  console.log(JSON.stringify(entry));
+};
+// Soft acceptance deadline leaves a full minute for bounded failure evidence/cleanup.
+// This is the last fail-closed backstop, including pre-test setup and cleanup.
+const hardStop = setTimeout(() => {
+  result = {
+    ...result,
+    status: "FAIL",
+    error: "PAGES_HARD_DEADLINE: 720000 ms",
+    lastStage,
+    cases: completedCases,
+  };
+  try {
+    writeFileSync(
+      path.join(evidence, "pages-result.json"),
+      JSON.stringify(result, null, 2),
+    );
+  } catch (error) {
+    console.error(String(error));
+  }
+  console.error(JSON.stringify(result));
+  process.exit(1);
+}, 12 * 60_000);
+progress("server-setup");
 let server;
 const missing = [];
 if (!process.env.YKSMANIA_PAGES_URL) {
@@ -115,24 +161,45 @@ if (!process.env.YKSMANIA_PAGES_URL) {
 }
 const origin =
   process.env.YKSMANIA_PAGES_URL || `http://127.0.0.1:4197${prefix}`;
+progress("browser-launch");
 const browser = await chromium.launch({
   headless: true,
   executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE || undefined,
 });
+progress("browser-context");
 const context = await browser.newContext({
   locale: "tr-TR",
   hasTouch: true,
   viewport: { width: 1440, height: 1000 },
 });
+progress("browser-page");
 const page = await context.newPage(),
   errors = [],
-  cases = [];
+  cases = completedCases;
 page.on("pageerror", (e) => errors.push(String(e)));
 const pageDiagnostics = [];
 const recordDiagnostic = (kind, data) => {
   pageDiagnostics.push({ kind, at: Date.now(), ...data });
+  appendFileSync(
+    path.join(evidence, "pages-diagnostics.ndjson"),
+    JSON.stringify({ kind, at: Date.now(), stage: lastStage, ...data }) + "\n",
+  );
   if (pageDiagnostics.length > 150) pageDiagnostics.shift();
 };
+context.on("response", (response) => {
+  if (response.status() >= 400)
+    recordDiagnostic("http-error", {
+      path: new URL(response.url()).pathname,
+      status: response.status(),
+    });
+});
+context.on("requestfailed", (request) => {
+  if (request.serviceWorker())
+    recordDiagnostic("service-worker-request-failed", {
+      path: new URL(request.url()).pathname,
+      error: request.failure()?.errorText,
+    });
+});
 page.on("requestfailed", (request) =>
   recordDiagnostic("request-failed", {
     path: new URL(request.url()).pathname,
@@ -373,248 +440,11 @@ const additionalFamilies = [
   },
 ];
 
-const storedExploration = (key) =>
-  page.evaluate(
-    (key) =>
-      new Promise((resolve, reject) => {
-        const request = indexedDB.open("yksmania");
-        request.onsuccess = () => {
-          const db = request.result;
-          const read = db
-            .transaction("state")
-            .objectStore("state")
-            .get("current");
-          read.onsuccess = () => {
-            resolve(read.result?.explorations?.[key] ?? null);
-            db.close();
-          };
-          read.onerror = () => {
-            db.close();
-            reject(read.error);
-          };
-        };
-        request.onerror = () => reject(request.error);
-      }),
-    key,
-  );
-
-let result = { status: "INCOMPLETE", url: origin };
-try {
-  expect(additionalFamilies).toHaveLength(6);
-  await page.goto(origin);
-  await expect(page.locator(".sidebar-version")).toContainText(expectedVersion);
-  const manifestLink = await page
-    .locator('link[rel="manifest"]')
-    .getAttribute("href");
-  const manifestUrl = new URL(manifestLink, origin);
-  const manifest = await (await context.request.get(manifestUrl.href)).json();
-  expect(new URL(manifest.start_url, manifestUrl).pathname).toBe(prefix);
-  expect(new URL(manifest.scope, manifestUrl).pathname).toBe(prefix);
-  for (const icon of manifest.icons)
-    expect(
-      (await context.request.get(new URL(icon.src, manifestUrl).href)).status(),
-    ).toBe(200);
-  const versionResponse = await context.request.get(
-    new URL("version.json", origin).href,
-  );
-  expect(versionResponse.status()).toBe(200);
-  expect((await versionResponse.json()).version).toBe(expectedVersion);
-  const worker = await page.evaluate(async () => {
-    const reg = await navigator.serviceWorker.ready;
-    if (!navigator.serviceWorker.controller)
-      await new Promise((resolve) =>
-        navigator.serviceWorker.addEventListener("controllerchange", resolve, {
-          once: true,
-        }),
-      );
-    return { scope: reg.scope, script: reg.active.scriptURL };
-  });
-  expect(new URL(worker.scope).pathname).toBe(prefix);
-  expect(new URL(worker.script).pathname).toBe(prefix + "sw.js");
-  await context.setOffline(true);
-  for (const unit of [...units, ...additionalFamilies]) {
-    await nav("Konu Anlatımı");
-    await page
-      .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
-      .fill(unit.title);
-    await page.locator(`.ready-topic[data-lesson-id="${unit.id}"]`).click();
-    const lab = page.locator(unit.selector || `[data-forge011="${unit.id}"]`);
-    await expect(lab).toBeVisible();
-    const model = lab.locator(unit.model || "svg").first();
-    const before = await model.innerHTML();
-    await unit.act(lab);
-    await expect(lab.locator("[data-model-result]")).toContainText(
-      unit.text || unit.expected,
-    );
-    expect(await model.innerHTML()).not.toBe(before);
-    await expect(page.locator(".save-status")).toContainText(
-      "Bu cihazda kaydedildi",
-    );
-    if (unit.storedKey)
-      await expect
-        .poll(() => storedExploration(unit.storedKey))
-        .toMatchObject(unit.persisted);
-    await page.reload();
-    await expect(lab.locator("[data-model-result]")).toContainText(
-      unit.text || unit.expected,
-    );
-    if (unit.storedKey)
-      expect(await storedExploration(unit.storedKey)).toMatchObject(
-        unit.persisted,
-      );
-    cases.push(unit.id);
-  }
-  // Existing model actions above establish a real durable state. New families
-  // still open for the first time offline; never invent an empty IDB baseline.
-  expect(forge014SmokeCases).toHaveLength(6);
-  const forge014Snapshots = [];
-  for (const unit of forge014SmokeCases) {
-    forge014Snapshots.push(await runForge014SmokeCase(page, nav, unit));
-    cases.push(unit.id);
-  }
-
-  expect(forge015SmokeCases).toHaveLength(6);
-  const forge015Snapshots = [];
-  for (const unit of forge015SmokeCases) {
-    forge015Snapshots.push(await runForge015SmokeCase(page, nav, unit));
-    cases.push(unit.id);
-  }
-  expect(forge016SmokeCases).toHaveLength(6);
-  const forge016Snapshots = [];
-  for (const unit of forge016SmokeCases) {
-    forge016Snapshots.push(await runForge016SmokeCase(page, nav, unit));
-    cases.push(unit.id);
-  }
-  expect(forge017SmokeCases).toHaveLength(6);
-  const forge017Snapshots = [];
-  for (const unit of forge017SmokeCases) {
-    forge017Snapshots.push(await runForge017SmokeCase(page, nav, unit));
-    cases.push(unit.id);
-  }
-  expect(forge018SmokeCases).toHaveLength(6);
-  const forge018Snapshots = [];
-  for (const unit of forge018SmokeCases) {
-    forge018Snapshots.push(await runForge018SmokeCase(page, nav, unit));
-    cases.push(unit.id);
-  }
-  expect(forge019SmokeCases).toHaveLength(6);
-  const forge019Snapshots = [];
-  for (const unit of forge019SmokeCases) {
-    forge019Snapshots.push(await runForge019SmokeCase(page, nav, unit));
-    cases.push(unit.id);
-  }
-  expect(forge020SmokeCases).toHaveLength(5);
-  const forge020Snapshots = [];
-  for (const unit of forge020SmokeCases) {
-    forge020Snapshots.push(await runForge020SmokeCase(page, nav, unit));
-    cases.push(unit.id);
-  }
-  expect(forge021SmokeCases).toHaveLength(7);
-  const forge021Snapshots = [];
-  for (const unit of forge021SmokeCases) {
-    forge021Snapshots.push(await runForge021SmokeCase(page, nav, unit));
-    cases.push(unit.id);
-  }
-  expect(forge022SmokeCases).toHaveLength(6);
-  const forge022Snapshots = [];
-  for (const unit of forge022SmokeCases) {
-    forge022Snapshots.push(await runForge022SmokeCase(page, nav, unit));
-    cases.push(unit.id);
-  }
-  expect(forge023SmokeCases).toHaveLength(7);
-  const forge023Snapshots = [];
-  for (const unit of forge023SmokeCases) {
-    forge023Snapshots.push(await runForge023SmokeCase(page, nav, unit));
-    cases.push(unit.id);
-  }
-
-  expect(forge024SmokeCases).toHaveLength(7);
-  const forge024Snapshots = [];
-  for (const unit of forge024SmokeCases) {
-    forge024Snapshots.push(await runForge024SmokeCase(page, nav, unit));
-    cases.push(unit.id);
-  }
-
-  expect(forge025SmokeCases).toHaveLength(4);
-  const forge025Snapshots = [];
-  for (const unit of forge025SmokeCases) {
-    forge025Snapshots.push(await runForge025SmokeCase(page, nav, unit));
-    cases.push(unit.id);
-  }
-  expect(forge031SmokeCases).toHaveLength(6);
-  const forge031Snapshots = [];
-  for (const unit of forge031SmokeCases) {
-    forge031Snapshots.push(await runForge031SmokeCase(page, nav, unit));
-    cases.push(unit.id);
-  }
-  // Append the eight032 flows while preserving the previous99 and final026 route.
-  expect(forge032SmokeCases).toHaveLength(8);
-  const forge032Snapshots = [];
-  for (const unit of forge032SmokeCases) {
-    forge032Snapshots.push(await runForge032SmokeCase(page, nav, unit));
-    cases.push(unit.id);
-  }
-
-  expect(forge033SmokeCases).toHaveLength(1);
-  const forge033Snapshots = [];
-  for (const unit of forge033SmokeCases) {
-    forge033Snapshots.push(await runForge033SmokeCase(page, nav, unit));
-    cases.push(unit.id);
-  }
-
-  expect(forge026SmokeCases).toHaveLength(8);
-  const forge026Snapshots = [];
-  for (const unit of forge026SmokeCases) {
-    forge026Snapshots.push(await runForge026SmokeCase(page, nav, unit));
-    cases.push(unit.id);
-  }
-  expect(cases).toHaveLength(108);
-  expect(new Set(cases).size).toBe(108);
-  await page.getByRole("button", { name: "Sorulara geç", exact: true }).click();
-  await expect(page.locator(".answer")).toHaveCount(5);
-  await page.locator(".answer").first().click();
-  await page
-    .getByRole("button", { name: "Cevabı kontrol et", exact: true })
-    .click();
-  await expect(page.locator(".feedback")).toBeVisible();
-  await expect(page.locator(".save-status")).toContainText(
-    "Bu cihazda kaydedildi",
-  );
-  await expect
-    .poll(() =>
-      page.evaluate(
-        () =>
-          new Promise((resolve, reject) => {
-            const request = indexedDB.open("yksmania");
-            request.onsuccess = () => {
-              const db = request.result;
-              const record = db
-                .transaction("state")
-                .objectStore("state")
-                .get("current");
-              record.onsuccess = () => {
-                db.close();
-                resolve(record.result?.draft?.checked);
-              };
-              record.onerror = () => {
-                db.close();
-                reject(record.error);
-              };
-            };
-            request.onerror = () => reject(request.error);
-          }),
-      ),
-    )
-    .toBe(true);
-  await page.reload();
-  await expect(page.locator(".feedback")).toBeVisible();
-
-  // These two existing narratives now have built-in independent question sets.
-  // Start them through the ordinary Questions search while already offline.
-  const foundationRouteCases = [];
-  const foundationState = () =>
+const storedExploration = (key) => {
+  progress("persistence:stored-exploration", { key });
+  return withinDeadline("read stored exploration", 15_000, () =>
     page.evaluate(
-      () =>
+      (key) =>
         new Promise((resolve, reject) => {
           const request = indexedDB.open("yksmania");
           request.onsuccess = () => {
@@ -624,236 +454,774 @@ try {
               .objectStore("state")
               .get("current");
             read.onsuccess = () => {
-              const value = read.result;
+              resolve(read.result?.explorations?.[key] ?? null);
               db.close();
-              resolve(value);
             };
             read.onerror = () => {
-              const error = read.error;
               db.close();
-              reject(error);
+              reject(read.error);
             };
           };
           request.onerror = () => reject(request.error);
         }),
+      key,
+    ),
+  );
+};
+
+result = { status: "INCOMPLETE", url: origin };
+try {
+  await withinDeadline("full Pages acceptance", 11 * 60_000, async () => {
+    progress("normal-entry");
+    expect(additionalFamilies).toHaveLength(6);
+    await page.goto(origin);
+    await expect(page.locator(".sidebar-version")).toContainText(
+      expectedVersion,
     );
-  const foundationLearning = (state) => ({
-    sessions: state.sessions,
-    reviews: state.reviews,
-    topicProgress: state.topicProgress,
-    theoryReviewCompletions: state.theoryReviewCompletions,
-    unlocked: state.unlocked,
-  });
-  const learningBeforeFoundation = foundationLearning(await foundationState());
-  for (const item of [
-    {
-      id: "sayi-basamaklari",
-      title: "Sayı basamakları: rakamdan koşullu denkleme",
-      prompt:
-        "Onluk sayı sisteminde 64027 sayısındaki 4 rakamının basamak değeri kaçtır?",
-      correct: "4000",
-      answer: 0,
-    },
-    {
-      id: "tarih-zaman",
-      title: "Tarih ve zaman: kanıtı sıraya koy",
-      prompt:
-        "İkinci ekibin çalışmasını doğrudan tarih araştırması yapan özellik hangisidir?",
-      correct:
-        "Doğa olayının insan toplulukları üzerindeki etkisini kaynaklarla incelemesi.",
-      answer: 0,
-      passage:
-        "Bir araştırma ekibi bir depremin dalga hızını ölçüyor. Başka bir ekip aynı depremden sonra kasabanın boşalmasını, vergi kayıtlarını ve yeniden yerleşme kararlarını inceliyor.",
-    },
-  ]) {
-    await nav("Sorular");
-    await page.getByRole("button", { name: "TYT", exact: true }).click();
-    await page
-      .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
-      .fill(item.title);
-    const entry = page.locator(`.ready-topic[data-lesson-id="${item.id}"]`);
-    await expect(entry).toHaveCount(1);
-    // Use the same in-app confirmation as learners on every platform. Opening
-    // it must not alter the durable partial draft before explicit approval.
-    const beforeReplacement = await foundationState();
-    await entry.click();
-    if (beforeReplacement.draft) {
-      const confirmation = page.getByRole("dialog", {
-        name: "Yarım kalan çalışmayı değiştirelim mi?",
-        exact: true,
-      });
-      await expect(confirmation).toBeVisible();
-      expect(await foundationState()).toEqual(beforeReplacement);
-      await confirmation
-        .getByRole("button", { name: "Yeni çalışmayı aç", exact: true })
-        .click();
-    }
-    await expect(page.locator(".question-panel")).toBeVisible();
-    await expect(page.locator(".question-panel h2")).toHaveText(item.prompt);
-    await expect(page.locator(".question-meta")).toContainText("Soru 1 / 10");
-    await expect
-      .poll(async () => (await foundationState()).draft?.lessonId)
-      .toBe(item.id);
-    const { draft: previousDraft, ...beforeRest } = beforeReplacement;
-    const { draft: replacementDraft, ...afterRest } = await foundationState();
-    expect(afterRest).toEqual(beforeRest);
-    await expect(page.locator(".answer")).toHaveCount(5);
-    await expect(page.locator(".answer").nth(item.answer)).toContainText(
-      item.correct,
-    );
-    if (item.passage) {
-      await expect(page.locator(".question-passage")).toHaveText(item.passage);
+    progress("manifest-and-version");
+    const manifestLink = await page
+      .locator('link[rel="manifest"]')
+      .getAttribute("href");
+    const manifestUrl = new URL(manifestLink, origin);
+    const manifest = await (await context.request.get(manifestUrl.href)).json();
+    expect(new URL(manifest.start_url, manifestUrl).pathname).toBe(prefix);
+    expect(new URL(manifest.scope, manifestUrl).pathname).toBe(prefix);
+    for (const icon of manifest.icons)
       expect(
-        await page.locator(".question-panel").evaluate((element) => {
-          const passage = element.querySelector(".question-passage");
-          const stem = element.querySelector("h2");
-          return !!(
-            passage.compareDocumentPosition(stem) &
-            Node.DOCUMENT_POSITION_FOLLOWING
-          );
+        (
+          await context.request.get(new URL(icon.src, manifestUrl).href)
+        ).status(),
+      ).toBe(200);
+    const versionResponse = await context.request.get(
+      new URL("version.json", origin).href,
+    );
+    expect(versionResponse.status()).toBe(200);
+    expect((await versionResponse.json()).version).toBe(expectedVersion);
+    progress("service-worker:ready-and-control");
+    const worker = await withinDeadline(
+      "service-worker ready/control",
+      125_000,
+      () =>
+        page.evaluate(async () => {
+          const container = navigator.serviceWorker;
+          if (!container) throw new Error("Service worker API unavailable");
+          let registration;
+          let observedRegistrations = [];
+          let registrationReadError = null;
+          let readPending = false;
+          let finished = false;
+          let cacheNames = "PENDING";
+          let cacheReadError = null;
+          // Observation only: do not open, populate, delete or replace any cache.
+          if ("caches" in window)
+            void caches.keys().then(
+              (names) => {
+                cacheNames = names;
+              },
+              (error) => {
+                cacheReadError = String(error);
+              },
+            );
+          const observedWorkers = new Map();
+          const snapshot = () => ({
+            controller: container.controller
+              ? {
+                  scriptURL: container.controller.scriptURL,
+                  state: container.controller.state,
+                }
+              : null,
+            registrations: observedRegistrations.map((reg) => ({
+              scope: reg.scope,
+              installing: reg.installing
+                ? {
+                    scriptURL: reg.installing.scriptURL,
+                    state: reg.installing.state,
+                  }
+                : null,
+              waiting: reg.waiting
+                ? { scriptURL: reg.waiting.scriptURL, state: reg.waiting.state }
+                : null,
+              active: reg.active
+                ? { scriptURL: reg.active.scriptURL, state: reg.active.state }
+                : null,
+            })),
+            registrationReadError,
+            cacheNames,
+            cacheReadError,
+            observedWorkers: [...observedWorkers].map(([worker, entry]) => ({
+              scriptURL: worker.scriptURL,
+              state: worker.state,
+              states: entry.states,
+            })),
+          });
+          let timer, poll, controllerListener;
+          const observe = async () => {
+            if (readPending) return;
+            readPending = true;
+            try {
+              const registrations = await container.getRegistrations();
+              if (finished) return;
+              observedRegistrations = registrations;
+              for (const reg of registrations)
+                for (const worker of [
+                  reg.installing,
+                  reg.waiting,
+                  reg.active,
+                ]) {
+                  if (!worker || observedWorkers.has(worker)) continue;
+                  // Retain installing/redundant workers even if registration slots clear.
+                  const entry = {
+                    states: [{ at: Date.now(), state: worker.state }],
+                  };
+                  entry.listener = () =>
+                    entry.states.push({ at: Date.now(), state: worker.state });
+                  observedWorkers.set(worker, entry);
+                  worker.addEventListener("statechange", entry.listener);
+                }
+            } catch (error) {
+              registrationReadError = String(error);
+            } finally {
+              readPending = false;
+            }
+          };
+          try {
+            return await new Promise((resolve, reject) => {
+              const check = () => {
+                if (registration && container.controller)
+                  resolve({
+                    scope: registration.scope,
+                    script: registration.active?.scriptURL,
+                    controllerScript: container.controller.scriptURL,
+                    diagnostics: snapshot(),
+                  });
+              };
+              controllerListener = check;
+              // Subscribe before checking to avoid a lost controllerchange transition.
+              container.addEventListener("controllerchange", check);
+              timer = setTimeout(
+                () =>
+                  reject(
+                    new Error(
+                      "SW_READY_CONTROL_TIMEOUT: " + JSON.stringify(snapshot()),
+                    ),
+                  ),
+                120_000,
+              );
+              poll = setInterval(() => {
+                void observe();
+              }, 1000);
+              void observe();
+              container.ready.then((reg) => {
+                registration = reg;
+                check();
+              }, reject);
+              check();
+            });
+          } finally {
+            finished = true;
+            clearTimeout(timer);
+            clearInterval(poll);
+            for (const [worker, entry] of observedWorkers)
+              worker.removeEventListener("statechange", entry.listener);
+            container.removeEventListener(
+              "controllerchange",
+              controllerListener,
+            );
+          }
         }),
-      ).toBe(true);
+    );
+    expect(new URL(worker.scope).pathname).toBe(prefix);
+    expect(new URL(worker.script).pathname).toBe(prefix + "sw.js");
+    progress("offline-entry");
+    await context.setOffline(true);
+    for (const unit of [...units, ...additionalFamilies]) {
+      progress("case:begin", { id: unit.id, completed: cases.length });
+      await nav("Konu Anlatımı");
+      await page
+        .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
+        .fill(unit.title);
+      await page.locator(`.ready-topic[data-lesson-id="${unit.id}"]`).click();
+      const lab = page.locator(unit.selector || `[data-forge011="${unit.id}"]`);
+      await expect(lab).toBeVisible();
+      const model = lab.locator(unit.model || "svg").first();
+      const before = await model.innerHTML();
+      await unit.act(lab);
+      await expect(lab.locator("[data-model-result]")).toContainText(
+        unit.text || unit.expected,
+      );
+      expect(await model.innerHTML()).not.toBe(before);
+      await expect(page.locator(".save-status")).toContainText(
+        "Bu cihazda kaydedildi",
+      );
+      if (unit.storedKey)
+        await expect
+          .poll(() => storedExploration(unit.storedKey))
+          .toMatchObject(unit.persisted);
+      await page.reload();
+      await expect(lab.locator("[data-model-result]")).toContainText(
+        unit.text || unit.expected,
+      );
+      if (unit.storedKey)
+        expect(await storedExploration(unit.storedKey)).toMatchObject(
+          unit.persisted,
+        );
+      cases.push(unit.id);
+      progress("case:passed", { id: unit.id, completed: cases.length });
     }
-    await page.locator(".answer").nth(item.answer).click();
+    // Existing model actions above establish a real durable state. New families
+    // still open for the first time offline; never invent an empty IDB baseline.
+    expect(forge014SmokeCases).toHaveLength(6);
+    const forge014Snapshots = [];
+    for (const unit of forge014SmokeCases) {
+      progress("case:begin", { id: unit.id, completed: cases.length });
+      forge014Snapshots.push(
+        await withinDeadline(`case ${unit.id}`, 120_000, () =>
+          runForge014SmokeCase(page, nav, unit),
+        ),
+      );
+      cases.push(unit.id);
+      progress("case:passed", { id: unit.id, completed: cases.length });
+    }
+
+    expect(forge015SmokeCases).toHaveLength(6);
+    const forge015Snapshots = [];
+    for (const unit of forge015SmokeCases) {
+      progress("case:begin", { id: unit.id, completed: cases.length });
+      forge015Snapshots.push(
+        await withinDeadline(`case ${unit.id}`, 120_000, () =>
+          runForge015SmokeCase(page, nav, unit),
+        ),
+      );
+      cases.push(unit.id);
+      progress("case:passed", { id: unit.id, completed: cases.length });
+    }
+    expect(forge016SmokeCases).toHaveLength(6);
+    const forge016Snapshots = [];
+    for (const unit of forge016SmokeCases) {
+      progress("case:begin", { id: unit.id, completed: cases.length });
+      forge016Snapshots.push(
+        await withinDeadline(`case ${unit.id}`, 120_000, () =>
+          runForge016SmokeCase(page, nav, unit),
+        ),
+      );
+      cases.push(unit.id);
+      progress("case:passed", { id: unit.id, completed: cases.length });
+    }
+    expect(forge017SmokeCases).toHaveLength(6);
+    const forge017Snapshots = [];
+    for (const unit of forge017SmokeCases) {
+      progress("case:begin", { id: unit.id, completed: cases.length });
+      forge017Snapshots.push(
+        await withinDeadline(`case ${unit.id}`, 120_000, () =>
+          runForge017SmokeCase(page, nav, unit),
+        ),
+      );
+      cases.push(unit.id);
+      progress("case:passed", { id: unit.id, completed: cases.length });
+    }
+    expect(forge018SmokeCases).toHaveLength(6);
+    const forge018Snapshots = [];
+    for (const unit of forge018SmokeCases) {
+      progress("case:begin", { id: unit.id, completed: cases.length });
+      forge018Snapshots.push(
+        await withinDeadline(`case ${unit.id}`, 120_000, () =>
+          runForge018SmokeCase(page, nav, unit),
+        ),
+      );
+      cases.push(unit.id);
+      progress("case:passed", { id: unit.id, completed: cases.length });
+    }
+    expect(forge019SmokeCases).toHaveLength(6);
+    const forge019Snapshots = [];
+    for (const unit of forge019SmokeCases) {
+      progress("case:begin", { id: unit.id, completed: cases.length });
+      forge019Snapshots.push(
+        await withinDeadline(`case ${unit.id}`, 120_000, () =>
+          runForge019SmokeCase(page, nav, unit),
+        ),
+      );
+      cases.push(unit.id);
+      progress("case:passed", { id: unit.id, completed: cases.length });
+    }
+    expect(forge020SmokeCases).toHaveLength(5);
+    const forge020Snapshots = [];
+    for (const unit of forge020SmokeCases) {
+      progress("case:begin", { id: unit.id, completed: cases.length });
+      forge020Snapshots.push(
+        await withinDeadline(`case ${unit.id}`, 120_000, () =>
+          runForge020SmokeCase(page, nav, unit),
+        ),
+      );
+      cases.push(unit.id);
+      progress("case:passed", { id: unit.id, completed: cases.length });
+    }
+    expect(forge021SmokeCases).toHaveLength(7);
+    const forge021Snapshots = [];
+    for (const unit of forge021SmokeCases) {
+      progress("case:begin", { id: unit.id, completed: cases.length });
+      forge021Snapshots.push(
+        await withinDeadline(`case ${unit.id}`, 120_000, () =>
+          runForge021SmokeCase(page, nav, unit),
+        ),
+      );
+      cases.push(unit.id);
+      progress("case:passed", { id: unit.id, completed: cases.length });
+    }
+    expect(forge022SmokeCases).toHaveLength(6);
+    const forge022Snapshots = [];
+    for (const unit of forge022SmokeCases) {
+      progress("case:begin", { id: unit.id, completed: cases.length });
+      forge022Snapshots.push(
+        await withinDeadline(`case ${unit.id}`, 120_000, () =>
+          runForge022SmokeCase(page, nav, unit),
+        ),
+      );
+      cases.push(unit.id);
+      progress("case:passed", { id: unit.id, completed: cases.length });
+    }
+    expect(forge023SmokeCases).toHaveLength(7);
+    const forge023Snapshots = [];
+    for (const unit of forge023SmokeCases) {
+      progress("case:begin", { id: unit.id, completed: cases.length });
+      forge023Snapshots.push(
+        await withinDeadline(`case ${unit.id}`, 120_000, () =>
+          runForge023SmokeCase(page, nav, unit),
+        ),
+      );
+      cases.push(unit.id);
+      progress("case:passed", { id: unit.id, completed: cases.length });
+    }
+
+    expect(forge024SmokeCases).toHaveLength(7);
+    const forge024Snapshots = [];
+    for (const unit of forge024SmokeCases) {
+      progress("case:begin", { id: unit.id, completed: cases.length });
+      forge024Snapshots.push(
+        await withinDeadline(`case ${unit.id}`, 120_000, () =>
+          runForge024SmokeCase(page, nav, unit),
+        ),
+      );
+      cases.push(unit.id);
+      progress("case:passed", { id: unit.id, completed: cases.length });
+    }
+
+    expect(forge025SmokeCases).toHaveLength(4);
+    const forge025Snapshots = [];
+    for (const unit of forge025SmokeCases) {
+      progress("case:begin", { id: unit.id, completed: cases.length });
+      forge025Snapshots.push(
+        await withinDeadline(`case ${unit.id}`, 120_000, () =>
+          runForge025SmokeCase(page, nav, unit),
+        ),
+      );
+      cases.push(unit.id);
+      progress("case:passed", { id: unit.id, completed: cases.length });
+    }
+    expect(forge031SmokeCases).toHaveLength(6);
+    const forge031Snapshots = [];
+    for (const unit of forge031SmokeCases) {
+      progress("case:begin", { id: unit.id, completed: cases.length });
+      forge031Snapshots.push(
+        await withinDeadline(`case ${unit.id}`, 120_000, () =>
+          runForge031SmokeCase(page, nav, unit),
+        ),
+      );
+      cases.push(unit.id);
+      progress("case:passed", { id: unit.id, completed: cases.length });
+    }
+    // Append the eight032 flows while preserving the previous99 and final026 route.
+    expect(forge032SmokeCases).toHaveLength(8);
+    const forge032Snapshots = [];
+    for (const unit of forge032SmokeCases) {
+      progress("case:begin", { id: unit.id, completed: cases.length });
+      forge032Snapshots.push(
+        await withinDeadline(`case ${unit.id}`, 120_000, () =>
+          runForge032SmokeCase(page, nav, unit),
+        ),
+      );
+      cases.push(unit.id);
+      progress("case:passed", { id: unit.id, completed: cases.length });
+    }
+
+    expect(forge033SmokeCases).toHaveLength(1);
+    const forge033Snapshots = [];
+    for (const unit of forge033SmokeCases) {
+      progress("case:begin", { id: unit.id, completed: cases.length });
+      forge033Snapshots.push(
+        await withinDeadline(`case ${unit.id}`, 120_000, () =>
+          runForge033SmokeCase(page, nav, unit),
+        ),
+      );
+      cases.push(unit.id);
+      progress("case:passed", { id: unit.id, completed: cases.length });
+    }
+
+    expect(forge026SmokeCases).toHaveLength(8);
+    const forge026Snapshots = [];
+    for (const unit of forge026SmokeCases) {
+      progress("case:begin", { id: unit.id, completed: cases.length });
+      forge026Snapshots.push(
+        await withinDeadline(`case ${unit.id}`, 120_000, () =>
+          runForge026SmokeCase(page, nav, unit),
+        ),
+      );
+      cases.push(unit.id);
+      progress("case:passed", { id: unit.id, completed: cases.length });
+    }
+    progress("all-model-cases:assert-108");
+    expect(cases).toHaveLength(108);
+    expect(new Set(cases).size).toBe(108);
+    progress("question-feedback-and-persistence");
+    await page
+      .getByRole("button", { name: "Sorulara geç", exact: true })
+      .click();
+    await expect(page.locator(".answer")).toHaveCount(5);
+    await page.locator(".answer").first().click();
     await page
       .getByRole("button", { name: "Cevabı kontrol et", exact: true })
       .click();
-    await expect(page.locator(".feedback.correct strong")).toHaveText("Doğru");
-    const feedback = await page.locator(".feedback p").innerText();
+    await expect(page.locator(".feedback")).toBeVisible();
     await expect(page.locator(".save-status")).toContainText(
       "Bu cihazda kaydedildi",
     );
     await expect
-      .poll(async () => (await foundationState()).draft?.checked)
+      .poll(() =>
+        page.evaluate(
+          () =>
+            new Promise((resolve, reject) => {
+              const request = indexedDB.open("yksmania");
+              request.onsuccess = () => {
+                const db = request.result;
+                const record = db
+                  .transaction("state")
+                  .objectStore("state")
+                  .get("current");
+                record.onsuccess = () => {
+                  db.close();
+                  resolve(record.result?.draft?.checked);
+                };
+                record.onerror = () => {
+                  db.close();
+                  reject(record.error);
+                };
+              };
+              request.onerror = () => reject(request.error);
+            }),
+        ),
+      )
       .toBe(true);
-    const beforeReload = await foundationState();
-    expect(beforeReload.draft.lessonId).toBe(item.id);
-    expect(beforeReload.draft.responses).toHaveLength(1);
-    expect(beforeReload.draft.responses[0].questionId).toMatch(/^f013-/);
-    expect(beforeReload.draft.responses[0].correct).toBe(true);
-    expect(foundationLearning(beforeReload)).toEqual(learningBeforeFoundation);
     await page.reload();
-    await expect(page.locator(".feedback.correct strong")).toHaveText("Doğru");
-    await expect(page.locator(".feedback p")).toHaveText(feedback);
-    await expect(page.locator(".answer").nth(item.answer)).toBeDisabled();
-    const afterReload = await foundationState();
-    expect(afterReload.draft).toEqual(beforeReload.draft);
-    expect(foundationLearning(afterReload)).toEqual(learningBeforeFoundation);
-    foundationRouteCases.push(item.id);
-  }
+    await expect(page.locator(".feedback")).toBeVisible();
 
-  await nav("Kopya Kağıtları");
-  await expect(page.locator("main h1")).toBeVisible();
-  await nav("Sınavlar");
-  await expect(
-    page.getByText("TYT karma denemesi", { exact: true }),
-  ).toBeVisible();
-  await page.setViewportSize({ width: 390, height: 844 });
-  await nav("Ayarlar");
-  await expect(
-    page.getByRole("button", {
-      name: "Güncellemeleri kontrol et",
-      exact: true,
-    }),
-  ).toBeVisible();
-  await page.screenshot({
-    path: path.join(evidence, "pages-mobile-offline.png"),
-    fullPage: false,
+    // These two existing narratives now have built-in independent question sets.
+    // Start them through the ordinary Questions search while already offline.
+    const foundationRouteCases = [];
+    const foundationState = () => {
+      progress("persistence:foundation-state");
+      return withinDeadline("read foundation state", 15_000, () =>
+        page.evaluate(
+          () =>
+            new Promise((resolve, reject) => {
+              const request = indexedDB.open("yksmania");
+              request.onsuccess = () => {
+                const db = request.result;
+                const read = db
+                  .transaction("state")
+                  .objectStore("state")
+                  .get("current");
+                read.onsuccess = () => {
+                  const value = read.result;
+                  db.close();
+                  resolve(value);
+                };
+                read.onerror = () => {
+                  const error = read.error;
+                  db.close();
+                  reject(error);
+                };
+              };
+              request.onerror = () => reject(request.error);
+            }),
+        ),
+      );
+    };
+    const foundationLearning = (state) => ({
+      sessions: state.sessions,
+      reviews: state.reviews,
+      topicProgress: state.topicProgress,
+      theoryReviewCompletions: state.theoryReviewCompletions,
+      unlocked: state.unlocked,
+    });
+    const learningBeforeFoundation = foundationLearning(
+      await foundationState(),
+    );
+    for (const item of [
+      {
+        id: "sayi-basamaklari",
+        title: "Sayı basamakları: rakamdan koşullu denkleme",
+        prompt:
+          "Onluk sayı sisteminde 64027 sayısındaki 4 rakamının basamak değeri kaçtır?",
+        correct: "4000",
+        answer: 0,
+      },
+      {
+        id: "tarih-zaman",
+        title: "Tarih ve zaman: kanıtı sıraya koy",
+        prompt:
+          "İkinci ekibin çalışmasını doğrudan tarih araştırması yapan özellik hangisidir?",
+        correct:
+          "Doğa olayının insan toplulukları üzerindeki etkisini kaynaklarla incelemesi.",
+        answer: 0,
+        passage:
+          "Bir araştırma ekibi bir depremin dalga hızını ölçüyor. Başka bir ekip aynı depremden sonra kasabanın boşalmasını, vergi kayıtlarını ve yeniden yerleşme kararlarını inceliyor.",
+      },
+    ]) {
+      await nav("Sorular");
+      await page.getByRole("button", { name: "TYT", exact: true }).click();
+      await page
+        .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
+        .fill(item.title);
+      const entry = page.locator(`.ready-topic[data-lesson-id="${item.id}"]`);
+      await expect(entry).toHaveCount(1);
+      // Use the same in-app confirmation as learners on every platform. Opening
+      // it must not alter the durable partial draft before explicit approval.
+      const beforeReplacement = await foundationState();
+      await entry.click();
+      if (beforeReplacement.draft) {
+        const confirmation = page.getByRole("dialog", {
+          name: "Yarım kalan çalışmayı değiştirelim mi?",
+          exact: true,
+        });
+        await expect(confirmation).toBeVisible();
+        expect(await foundationState()).toEqual(beforeReplacement);
+        await confirmation
+          .getByRole("button", { name: "Yeni çalışmayı aç", exact: true })
+          .click();
+      }
+      await expect(page.locator(".question-panel")).toBeVisible();
+      await expect(page.locator(".question-panel h2")).toHaveText(item.prompt);
+      await expect(page.locator(".question-meta")).toContainText("Soru 1 / 10");
+      await expect
+        .poll(async () => (await foundationState()).draft?.lessonId)
+        .toBe(item.id);
+      const { draft: previousDraft, ...beforeRest } = beforeReplacement;
+      const { draft: replacementDraft, ...afterRest } = await foundationState();
+      expect(afterRest).toEqual(beforeRest);
+      await expect(page.locator(".answer")).toHaveCount(5);
+      await expect(page.locator(".answer").nth(item.answer)).toContainText(
+        item.correct,
+      );
+      if (item.passage) {
+        await expect(page.locator(".question-passage")).toHaveText(
+          item.passage,
+        );
+        expect(
+          await page.locator(".question-panel").evaluate((element) => {
+            const passage = element.querySelector(".question-passage");
+            const stem = element.querySelector("h2");
+            return !!(
+              passage.compareDocumentPosition(stem) &
+              Node.DOCUMENT_POSITION_FOLLOWING
+            );
+          }),
+        ).toBe(true);
+      }
+      await page.locator(".answer").nth(item.answer).click();
+      await page
+        .getByRole("button", { name: "Cevabı kontrol et", exact: true })
+        .click();
+      await expect(page.locator(".feedback.correct strong")).toHaveText(
+        "Doğru",
+      );
+      const feedback = await page.locator(".feedback p").innerText();
+      await expect(page.locator(".save-status")).toContainText(
+        "Bu cihazda kaydedildi",
+      );
+      await expect
+        .poll(async () => (await foundationState()).draft?.checked)
+        .toBe(true);
+      const beforeReload = await foundationState();
+      expect(beforeReload.draft.lessonId).toBe(item.id);
+      expect(beforeReload.draft.responses).toHaveLength(1);
+      expect(beforeReload.draft.responses[0].questionId).toMatch(/^f013-/);
+      expect(beforeReload.draft.responses[0].correct).toBe(true);
+      expect(foundationLearning(beforeReload)).toEqual(
+        learningBeforeFoundation,
+      );
+      await page.reload();
+      await expect(page.locator(".feedback.correct strong")).toHaveText(
+        "Doğru",
+      );
+      await expect(page.locator(".feedback p")).toHaveText(feedback);
+      await expect(page.locator(".answer").nth(item.answer)).toBeDisabled();
+      const afterReload = await foundationState();
+      expect(afterReload.draft).toEqual(beforeReload.draft);
+      expect(foundationLearning(afterReload)).toEqual(learningBeforeFoundation);
+      foundationRouteCases.push(item.id);
+    }
+
+    // Keep all earlier108 model flows and their original question-feedback path.
+    // Source companions run only after that baseline has already passed unchanged.
+    expect(forge034035SmokeCases).toHaveLength(2);
+    const forge034035Snapshots = [];
+    for (const unit of forge034035SmokeCases) {
+      progress("case:begin", { id: unit.id, completed: cases.length });
+      forge034035Snapshots.push(
+        await withinDeadline(`case ${unit.id}`, 120_000, () =>
+          runForge034035SmokeCase(page, nav, unit),
+        ),
+      );
+      cases.push(unit.id);
+      progress("case:passed", { id: unit.id, completed: cases.length });
+    }
+    expect(cases).toHaveLength(110);
+    expect(new Set(cases).size).toBe(110);
+    progress("final-navigation-and-mobile");
+    await nav("Kopya Kağıtları");
+    await expect(page.locator("main h1")).toBeVisible();
+    await nav("Sınavlar");
+    await expect(
+      page.getByText("TYT karma denemesi", { exact: true }),
+    ).toBeVisible();
+    await page.setViewportSize({ width: 390, height: 844 });
+    await nav("Ayarlar");
+    await expect(
+      page.getByRole("button", {
+        name: "Güncellemeleri kontrol et",
+        exact: true,
+      }),
+    ).toBeVisible();
+    await expect
+      .poll(
+        () =>
+          page.evaluate(() => {
+            const sidebar = document.querySelector(".sidebar");
+            const title = document.querySelector("main h1");
+            if (!sidebar || !title) return false;
+            const side = sidebar.getBoundingClientRect();
+            const heading = title.getBoundingClientRect();
+            return (
+              sidebar.inert &&
+              side.right <= 0.5 &&
+              !document.querySelector(".menu-backdrop") &&
+              heading.left >= 0 &&
+              heading.right <= innerWidth &&
+              document.documentElement.scrollWidth <= innerWidth
+            );
+          }),
+        { timeout: 1500, intervals: [16, 32, 50] },
+      )
+      .toBe(true);
+    await page.screenshot({
+      path: path.join(evidence, "pages-mobile-offline.png"),
+      fullPage: false,
+    });
+    expect(errors).toEqual([]);
+    expect(missing.filter((p) => !p.endsWith("favicon.ico"))).toEqual([]);
+    if (acceptanceClosed)
+      throw new Error("Late completion after acceptance deadline");
+    result = {
+      status: "PASS",
+      url: origin,
+      worker,
+      manifestStart: manifest.start_url,
+      manifestScope: manifest.scope,
+      firstUseOfflineFamilies: cases,
+      modelChangesAndReload: "PASS",
+      forge014FamiliesOfflineHtmlStateAndReload: forge014Snapshots.map(
+        (item) => item.id,
+      ),
+      forge015FamiliesOfflineHtmlStateAndReload: forge015Snapshots.map(
+        (item) => item.id,
+      ),
+      forge016FamiliesOfflineHtmlStateAndReload: forge016Snapshots.map(
+        (item) => item.id,
+      ),
+      forge017FamiliesOfflineHtmlStateAndReload: forge017Snapshots.map(
+        (item) => item.id,
+      ),
+      forge018FamiliesOfflineHtmlStateAndReload: forge018Snapshots.map(
+        (item) => item.id,
+      ),
+      forge021FamiliesOfflineHtmlStateAndReload: forge021Snapshots.map(
+        (item) => item.id,
+      ),
+      forge021ExplorationWithoutLearningCredit: "PASS",
+      forge022FamiliesOfflineHtmlStateAndReload: forge022Snapshots.map(
+        (item) => item.id,
+      ),
+      forge022ExplorationWithoutLearningCredit: "PASS",
+      forge023FamiliesOfflineHtmlStateAndReload: forge023Snapshots.map(
+        (item) => item.id,
+      ),
+      forge023ExplorationWithoutLearningCredit: "PASS",
+      forge024FamiliesOfflineHtmlStateAndReload: forge024Snapshots.map(
+        (item) => item.id,
+      ),
+      forge024ExplorationWithoutLearningCredit: "PASS",
+      forge025FamiliesOfflineHtmlStateAndReload: forge025Snapshots.map(
+        (item) => item.id,
+      ),
+      forge025ExplorationWithoutLearningCredit: "PASS",
+      forge026FamiliesOfflineHtmlStateAndReload: forge026Snapshots.map(
+        (item) => item.id,
+      ),
+      forge026ExplorationWithoutLearningCredit: "PASS",
+      forge031FamiliesOfflineHtmlStateAndReload: forge031Snapshots.map(
+        (item) => item.id,
+      ),
+      forge031ExplorationWithoutLearningCredit: "PASS",
+      forge020FamiliesOfflineHtmlStateAndReload: forge020Snapshots.map(
+        (item) => item.id,
+      ),
+      forge020ExplorationWithoutLearningCredit: "PASS",
+      forge019FamiliesOfflineHtmlStateAndReload: forge019Snapshots.map(
+        (item) => item.id,
+      ),
+      forge019ExplorationWithoutLearningCredit: "PASS",
+      forge018ExplorationWithoutLearningCredit: "PASS",
+      forge017ExplorationWithoutLearningCredit: "PASS",
+      forge016ExplorationWithoutLearningCredit: "PASS",
+      forge015ExplorationWithoutLearningCredit: "PASS",
+      forge014ExplorationWithoutLearningCredit: "PASS",
+      forge032FamiliesOfflineHtmlStateAndReload: forge032Snapshots.map(
+        (item) => item.id,
+      ),
+      forge032ExplorationWithoutLearningCredit: "PASS",
+      forge032NotesOfflineReload: "PASS",
+      forge033FamiliesOfflineHtmlStateAndReload: forge033Snapshots.map(
+        (item) => item.id,
+      ),
+      forge033ExplorationWithoutLearningCredit: "PASS",
+      forge033NotesOfflineReload: "PASS",
+      forge034035FamiliesOfflineHtmlStateAndReload: forge034035Snapshots.map(
+        (item) => item.id,
+      ),
+      forge034035ExplorationWithoutLearningCredit: "PASS",
+      forge034035NotesOfflineReload: "PASS",
+      questionFeedbackReload: "PASS",
+      foundationQuestionRoutesOfflineReload: foundationRouteCases,
+      navigation: "theory/cheatsheets/questions/exams/settings",
+      rendererErrors: errors,
+      missing,
+    };
   });
-  expect(errors).toEqual([]);
-  expect(missing.filter((p) => !p.endsWith("favicon.ico"))).toEqual([]);
-  result = {
-    status: "PASS",
-    url: origin,
-    worker,
-    manifestStart: manifest.start_url,
-    manifestScope: manifest.scope,
-    firstUseOfflineFamilies: cases,
-    modelChangesAndReload: "PASS",
-    forge014FamiliesOfflineHtmlStateAndReload: forge014Snapshots.map(
-      (item) => item.id,
-    ),
-    forge015FamiliesOfflineHtmlStateAndReload: forge015Snapshots.map(
-      (item) => item.id,
-    ),
-    forge016FamiliesOfflineHtmlStateAndReload: forge016Snapshots.map(
-      (item) => item.id,
-    ),
-    forge017FamiliesOfflineHtmlStateAndReload: forge017Snapshots.map(
-      (item) => item.id,
-    ),
-    forge018FamiliesOfflineHtmlStateAndReload: forge018Snapshots.map(
-      (item) => item.id,
-    ),
-    forge021FamiliesOfflineHtmlStateAndReload: forge021Snapshots.map(
-      (item) => item.id,
-    ),
-    forge021ExplorationWithoutLearningCredit: "PASS",
-    forge022FamiliesOfflineHtmlStateAndReload: forge022Snapshots.map(
-      (item) => item.id,
-    ),
-    forge022ExplorationWithoutLearningCredit: "PASS",
-    forge023FamiliesOfflineHtmlStateAndReload: forge023Snapshots.map(
-      (item) => item.id,
-    ),
-    forge023ExplorationWithoutLearningCredit: "PASS",
-    forge024FamiliesOfflineHtmlStateAndReload: forge024Snapshots.map(
-      (item) => item.id,
-    ),
-    forge024ExplorationWithoutLearningCredit: "PASS",
-    forge025FamiliesOfflineHtmlStateAndReload: forge025Snapshots.map(
-      (item) => item.id,
-    ),
-    forge025ExplorationWithoutLearningCredit: "PASS",
-    forge026FamiliesOfflineHtmlStateAndReload: forge026Snapshots.map(
-      (item) => item.id,
-    ),
-    forge026ExplorationWithoutLearningCredit: "PASS",
-    forge031FamiliesOfflineHtmlStateAndReload: forge031Snapshots.map(
-      (item) => item.id,
-    ),
-    forge031ExplorationWithoutLearningCredit: "PASS",
-    forge020FamiliesOfflineHtmlStateAndReload: forge020Snapshots.map(
-      (item) => item.id,
-    ),
-    forge020ExplorationWithoutLearningCredit: "PASS",
-    forge019FamiliesOfflineHtmlStateAndReload: forge019Snapshots.map(
-      (item) => item.id,
-    ),
-    forge019ExplorationWithoutLearningCredit: "PASS",
-    forge018ExplorationWithoutLearningCredit: "PASS",
-    forge017ExplorationWithoutLearningCredit: "PASS",
-    forge016ExplorationWithoutLearningCredit: "PASS",
-    forge015ExplorationWithoutLearningCredit: "PASS",
-    forge014ExplorationWithoutLearningCredit: "PASS",
-    forge032FamiliesOfflineHtmlStateAndReload: forge032Snapshots.map(
-      (item) => item.id,
-    ),
-    forge032ExplorationWithoutLearningCredit: "PASS",
-    forge032NotesOfflineReload: "PASS",
-    forge033FamiliesOfflineHtmlStateAndReload: forge033Snapshots.map(
-      (item) => item.id,
-    ),
-    forge033ExplorationWithoutLearningCredit: "PASS",
-    forge033NotesOfflineReload: "PASS",
-    questionFeedbackReload: "PASS",
-    foundationQuestionRoutesOfflineReload: foundationRouteCases,
-    navigation: "theory/cheatsheets/questions/exams/settings",
-    rendererErrors: errors,
-    missing,
-  };
-  console.log(JSON.stringify(result, null, 2));
+  acceptanceClosed = true;
 } catch (error) {
+  acceptanceClosed = true;
+  const failedStage = lastStage;
+  progress("failure-evidence");
   result = {
     status: "FAIL",
     url: origin,
     error: String(error.stack || error),
+    failedStage,
     rendererErrors: errors,
     cases,
     missing,
     diagnostics: pageDiagnostics,
-    document: await page
-      .evaluate(() => ({
+    document: await withinDeadline("failure document snapshot", 3000, () =>
+      page.evaluate(() => ({
         readyState: document.readyState,
         bodyHtml: document.body.innerHTML.slice(0, 5000),
         controlled: Boolean(navigator.serviceWorker.controller),
@@ -868,26 +1236,76 @@ try {
             path: new URL(e.name).pathname,
             duration: e.duration,
           })),
-      }))
-      .catch(() => null),
+      })),
+    ).catch((error) => ({ unavailable: String(error) })),
   };
-  await page
-    .screenshot({ path: path.join(evidence, "failure.png"), fullPage: false })
-    .catch(() => {});
+  await withinDeadline("failure screenshot", 3000, () =>
+    page.screenshot({
+      path: path.join(evidence, "failure.png"),
+      fullPage: false,
+      timeout: 2500,
+    }),
+  ).catch(() => {});
   await fs.writeFile(
     path.join(evidence, "failure-dom.txt"),
-    await page
-      .locator("body")
-      .innerText()
-      .catch(() => ""),
+    await withinDeadline("failure text", 3000, () =>
+      page.locator("body").innerText({ timeout: 2500 }),
+    ).catch((error) => `UNAVAILABLE: ${error}`),
   );
   console.error(JSON.stringify(result, null, 2));
   process.exitCode = 1;
 } finally {
-  await fs.writeFile(
-    path.join(evidence, "pages-result.json"),
-    JSON.stringify(result, null, 2),
+  let cleanupFailed = false;
+  try {
+    progress("cleanup:browser");
+    await withinDeadline("browser cleanup", 10_000, () => browser.close());
+  } catch (error) {
+    cleanupFailed = true;
+    result = {
+      ...result,
+      status: "FAIL",
+      cleanupError: String(error),
+      lastStage,
+    };
+    process.exitCode = 1;
+  }
+  try {
+    if (server) {
+      progress("cleanup:server");
+      server.closeAllConnections?.();
+      await withinDeadline(
+        "server cleanup",
+        3000,
+        () =>
+          new Promise((resolve, reject) =>
+            server.close((error) => (error ? reject(error) : resolve())),
+          ),
+      );
+    }
+  } catch (error) {
+    cleanupFailed = true;
+    result = {
+      ...result,
+      status: "FAIL",
+      serverCleanupError: String(error),
+      lastStage,
+    };
+    process.exitCode = 1;
+  }
+  progress("final-result");
+  // A cleanup failure also invalidates acceptance. Emit PASS only after cleanup.
+  await withinDeadline("write final result", 3000, () =>
+    fs.writeFile(
+      path.join(evidence, "pages-result.json"),
+      JSON.stringify(result, null, 2),
+    ),
   );
-  await browser.close();
-  if (server) await new Promise((resolve) => server.close(resolve));
+  clearTimeout(hardStop);
+  if (result.status === "PASS") console.log(JSON.stringify(result, null, 2));
+  else {
+    process.exitCode = 1;
+    console.error(JSON.stringify(result, null, 2));
+  }
+  // Protocol cleanup failure cannot leave this node process waiting indefinitely.
+  if (cleanupFailed) process.exit(1);
 }

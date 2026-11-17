@@ -96,6 +96,8 @@ import { forge093HistoryTopics } from "./forge093History";
 import { lazy, Suspense, type ComponentType } from "react";
 const PrimeSource032 = lazy(() => import("./PrimeSource032Lab"));
 const FactorialSource033 = lazy(() => import("./FactorialSource033Lab"));
+const EbobEkokSource034 = lazy(() => import("./EbobEkokSource034Lab"));
+const RationalSource035 = lazy(() => import("./RationalSource035Lab"));
 const GeometryExpansion032 = lazy(() => import("./GeometryExpansion032Lab"));
 const GeometryLanguage032 = lazy(() => import("./GeometryLanguage032Lab"));
 const GeometryFoundation031 = lazy(() => import("./GeometryFoundation031Lab"));
@@ -451,7 +453,11 @@ export function VisualLab({ id }: { id: string }) {
   return (
     <Suspense fallback={<p role="status">{t("loading")}</p>}>
       <>
-        {id === "tyt-mat-faktoriyel-kaynak-033" ? (
+        {id === "tyt-mat-ebob-ekok-kaynak-034" ? (
+          <EbobEkokSource034 key={id} id={id} />
+        ) : id === "tyt-mat-rasyonel-kaynak-035" ? (
+          <RationalSource035 key={id} id={id} />
+        ) : id === "tyt-mat-faktoriyel-kaynak-033" ? (
           <FactorialSource033 key={id} id={id} />
         ) : id === "tyt-mat-asal-kaynak-032" ? (
           <PrimeSource032 key={id} id={id} />

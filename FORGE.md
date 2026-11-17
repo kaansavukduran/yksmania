@@ -1,3 +1,23 @@
+# 0.22.0 geliştirme adayı — Forge034035
+
+17 Kasım 2026. **Henüz yayımlanmadı; main’e 0.22 kaynak gönderimi, uzak CI, yeni Pages/masaüstü yayını veya yeni doğrulanmış APK sonucu yoktur.** Son doğrulanmış yayın 0.21.0’dır. Belge tabanı `8422b861211829e3d00e864cac442ba593899178`, yayımlanmış `197dc1b31c0a45ad03a3782106665591cc0c32fc` kodu üzerindeki belge güncellemesidir. [Ayrıntılı devir](docs/FORGE034035.md).
+
+EBOB–EKOK ve rasyonel sayılar toplam 55 açıklama bölümü, 44 çözümlü örnek, 35 hatırlama, 94 gerekçeli soru, 24 ayrı özet bölümü ve 14 hesaplamalı model ekler. Güncel aday: 531 set / 497 rehber / 497 özet / 496 çalışma başlığı / 6.214 soru = 3.574 tam + 2.640 kısmi yardım. Önceki 6.120 sorunun bütün verileri ve sırası, ilk 479 Excel kimliği ve kişisel öğrenme kayıtları korunur.
+
+Son C6: check 374 modül, 1.939/1.939 birim; eski 108+iki yeni kaynakla prefix 110/110 ve gerçek paketli Linux 110/110 çevrimdışı akışı/süreç yeniden açılışı geçti. Paket içindeki 297 web dosyası sabit C6 derlemesine birebir eşleşti. Yerel UI’nin iki ekran profili, tam 46/48 oturumu ve aynı kökenli 0.21→0.22 yükseltme kanıtı; sonraki üç metin alanının kesin değişim köprüsü ve gerçek C6 hedef tekrarlarıyla korunur. Üç ham IndexedDB deposu değişmedi; otomatik `put` 0. Bu kabul fiziksel kurulum veya Windows kabulü değildir.
+
+İlk C5 kopya denetimindeki gerçek yazım kusurları C6’da düzeltildi; bağımsız kaynak incelemesi 85/66 birimi, 283/380 bağ kenarını ve 108/130 farklı hedefi doğruladı. İlk prefix/native denemeleri son modelin erişilebilir açıklamasındaki büyük/küçük harf beklentisinde FAIL verdi; testin tam literal açıklaması düzeltildi. Sonraki native koşusu eski 494 toplamını bekleyen kontrolde FAIL verdi; yalnız iki toplam beklentisi gerçek 496 sayımına güncellendi. Uygulama değişmeden son iki tam akış tekrar geçti. Başarısız geçmiş saklandı; eski 108 aile ve Pages’in 158 doğrudan beklentisi korunur.
+
+Yeni resmî 2021 TYT Matematik 15 bağlantısı gerçek kitapçık/anahtarda A=7’dir. Çevrimdışı 225+252=477 ortak kat çözümü kendi verileri açık, özgün ve puansız öğretim örneğidir. Önceki dokuz bağlantı sırası korunur; toplam 10 bağlantı/10 özgün örnek bütün ÖSYM arşivi değildir.
+
+Tam E2E keşfi 1.277 vaka gösterir; 1.269 eski vakanın kimliği/metadata’sı değişmez. Keşif yürütülmüş test sonucu değildir. Sıradaki kapılar sabit kaynak commit’inde tam uzak CI, otomatik Pages 110, gerçek masaüstü yayın dosyaları ve ayrı Android test32 APK kabulüdür. Main bu kapılar bitene kadar sabit tutulur. Kullanıcıdan secret istenmez; genel APK/mağaza yayını yoktur.
+
+Kanonik PDF durumu **8.981 / 3 tam / 6 kısmi / 8.972 belirsiz** olarak değişmedi; 40 kaynakta uygulama bağı, 154 PDF’de okuma kaydı vardır. Belirsiz hiç işlenmemiş değildir; 22/13 sayfanın yeniden okunması yeni okuma/tamamlama sayısı değildir. İki kaynak kapanışı yeni commit/tam CI ve korumalı bağımsız defter işlemini bekler. Source036 C4 ve Source037 özel hazırlıkları bu sürüme dahil değildir. Ham PDF, özel kimlik ve özel denetim dosyaları Git’e taşınmaz.
+
+---
+
+## Aşağıdaki 0.21 ve daha eski kayıtlar kendi tarihsel kaynaklarına aittir
+
 # 0.21.0 — kaynak, masaüstü, Pages ve kişisel APK kabulü
 
 17 Kasım 2026. Yayın kaynağı `197dc1b31c0a45ad03a3782106665591cc0c32fc`. [Tam CI](https://github.com/kaansavukduran/yksmania/actions/runs/44086453423) 1.907 birim / 1.269 tarayıcı ve gerçek paketli Windows/Linux 108’er akışla başarılıdır. [0.21 masaüstü yayını](https://github.com/kaansavukduran/yksmania/releases/tag/v0.21.0-alpha.1), kaynak etiketi ve dosya özetleriyle doğrulandı. Gerçek indirilmiş AppImage 108 çevrimdışı akış, aynı profilde süreç yeniden açılışı ve altı normal dış bağlantı etkinleştirmesini geçti. Fiziksel video/tarayıcı, temiz kurulum ve native iki sürüm kurulumu kabulü değildir.

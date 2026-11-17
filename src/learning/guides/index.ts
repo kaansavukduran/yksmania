@@ -1,6 +1,8 @@
 import { legacy026Guides } from "../legacy026";
 import { primeSource032Guides } from "../primeSource032";
 import { factorialSource033Guides } from "../factorialSource033";
+import { ebobEkokSource034Guides } from "../ebobEkokSource034";
+import { rationalSource035Guides } from "../rationalSource035";
 import { geometryExpansion032Guides } from "../geometryExpansion032";
 import { geometryFoundation031Guides } from "../geometryFoundation031";
 import { forge025MathGuides } from "../forge025Math";
@@ -256,6 +258,8 @@ export const lessonGuides = new Map(
     shellsGuide,
     paragraphGuide,
     ...factorialSource033Guides,
+    ...ebobEkokSource034Guides,
+    ...rationalSource035Guides,
   ].map((guide) => [guide.id, guide]),
 );
 

@@ -1,0 +1,23 @@
+.f034-lab{--f034-a:var(--accent,#ffad95);--f034-b:var(--success,#a7cdb5);overflow-wrap:anywhere}
+.f034-modes,.f034-actions,.f034-checks{display:flex;flex-wrap:wrap;gap:.65rem;margin:1.1rem 0}
+.f034-modes button,.f034-actions button{min-height:44px;max-width:100%;white-space:normal;text-align:left;line-height:1.5}
+.f034-lab button[aria-pressed=true]{border-color:var(--f034-a);box-shadow:inset 0 -2px var(--f034-a)}
+.f034-panel{border-top:1px solid var(--border,#35404b);padding-top:1rem;min-width:0}
+.f034-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem 1.5rem;margin:1rem 0}
+.f034-range{min-width:0}.f034-range>div{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+.f034-range label,.f034-range output{font:inherit}.f034-range input{width:100%;min-height:44px;accent-color:var(--f034-a)}
+.f034-lab figure{margin:1.25rem 0;max-width:100%;min-width:0}
+.f034-lab svg{display:block;width:100%;height:auto;max-height:24rem;margin:.5rem auto;overflow:visible}
+.f034-lab figcaption{font:inherit;line-height:1.7;color:var(--muted,#a8b2bd)}
+.f034-axis,.f034-grid{stroke:var(--muted,#a8b2bd);stroke-width:1.5;fill:none}
+.f034-shape{fill:var(--f034-b);fill-opacity:.18;stroke:var(--f034-b);stroke-width:2}
+.f034-bar-a,.f034-dot-a{fill:var(--f034-a)}.f034-bar-b,.f034-dot-b{fill:var(--f034-b)}
+.f034-common{stroke:var(--f034-a);stroke-width:2;stroke-dasharray:4 4;opacity:.6}
+.f034-cube-side{fill:var(--f034-a);fill-opacity:.15;stroke:var(--f034-a);stroke-width:1.5}
+.f034-facts{margin:1rem 0}.f034-facts>div{display:grid;grid-template-columns:minmax(5rem,auto) minmax(0,1fr);gap:1rem;padding:.65rem 0;border-bottom:1px solid var(--border,#35404b)}
+.f034-facts dt{font-weight:650}.f034-facts dd{margin:0}
+.f034-equations{padding-inline-start:1.5rem}.f034-equations li{margin:.7rem 0;line-height:1.8}
+.f034-checks label{display:flex;align-items:center;gap:.6rem;min-height:44px;cursor:pointer}
+.f034-checks input{min-width:24px;min-height:24px;accent-color:var(--f034-a)}
+@media(max-width:700px){.f034-controls{grid-template-columns:minmax(0,1fr)}.f034-facts>div{grid-template-columns:minmax(0,1fr);gap:.35rem}.f034-modes button{flex:1 1 11rem}.f034-lab svg{max-height:18rem}}
+@media(prefers-reduced-motion:reduce){.f034-lab *{animation:none!important;transition:none!important}}

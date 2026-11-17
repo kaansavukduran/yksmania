@@ -1,6 +1,8 @@
 import { legacy026TheoryIds } from "./legacy026";
 import { primeSource032Sheets } from "./primeSource032";
 import { factorialSource033Sheets } from "./factorialSource033";
+import { ebobEkokSource034Sheets } from "./ebobEkokSource034";
+import { rationalSource035Sheets } from "./rationalSource035";
 import { geometryExpansion032Sheets } from "./geometryExpansion032";
 import { geometryFoundation031Sheets } from "./geometryFoundation031";
 import { forge025MathTopics } from "./forge025Math";
@@ -318,5 +320,7 @@ export const builtInCheatSheets = new Map<string, CheatSheet>(
     ...geometryExpansion032Sheets,
     ...primeSource032Sheets,
     ...factorialSource033Sheets,
+    ...ebobEkokSource034Sheets,
+    ...rationalSource035Sheets,
   ].map((sheet) => [sheet.topicId, sheet]),
 );

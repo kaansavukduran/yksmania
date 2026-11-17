@@ -1,4 +1,9 @@
 import {
+  forge034035SmokeCases,
+  runForge034035SmokeCase,
+  assertForge034035ProcessRestart,
+} from "./forge034035-smoke-cases.mjs";
+import {
   forge033SmokeCases,
   runForge033SmokeCase,
   assertForge033ProcessRestart,
@@ -741,6 +746,17 @@ try {
   expect(commonModelFlowIds).toHaveLength(108);
   expect(new Set(commonModelFlowIds).size).toBe(108);
 
+  // Preserve the original108 guard, then extend the actual completed flow set.
+  expect(forge034035SmokeCases).toHaveLength(2);
+  const forge034035Snapshots = [];
+  for (const unit of forge034035SmokeCases)
+    forge034035Snapshots.push(
+      await runForge034035SmokeCase(page, navigate, unit),
+    );
+  commonModelFlowIds.push(...forge034035Snapshots.map((item) => item.id));
+  expect(commonModelFlowIds).toHaveLength(110);
+  expect(new Set(commonModelFlowIds).size).toBe(110);
+
   const mathematics = [
     /Temel kavramlar: sayı, değer/,
     /Tek–çift ve işaret:/,
@@ -870,6 +886,7 @@ try {
   await assertForge031ProcessRestart(page, navigate, forge031Snapshots);
   await assertForge032ProcessRestart(page, navigate, forge032Snapshots);
   await assertForge033ProcessRestart(page, navigate, forge033Snapshots);
+  await assertForge034035ProcessRestart(page, navigate, forge034035Snapshots);
   await navigate("Bugün");
   await expect(page.locator(".stat-number").first()).toHaveText("1");
   const dailyTheory = page
@@ -891,7 +908,7 @@ try {
   await navigate("Dünyam");
   await expect(
     page.getByRole("img", { name: /Genel konu çalışma ilerlemesi/ }),
-  ).toHaveAttribute("aria-label", /1\/494 konu/);
+  ).toHaveAttribute("aria-label", /1\/496 konu/);
   await expect(
     page.getByRole("region", { name: "TYT konu ağacı", exact: true }),
   ).toBeVisible();
@@ -1117,7 +1134,7 @@ try {
   await expect(page.locator(".stat-number").first()).toHaveText("0");
   await expect(
     page.getByRole("region", { name: "Konu planı", exact: true }),
-  ).toContainText("0/494");
+  ).toContainText("0/496");
   await openSheet("Hücre Organelleri");
   await expect(
     page.getByRole("textbox", { name: "Notun", exact: true }),
@@ -1375,6 +1392,12 @@ try {
       forge033SameProfileProcessRestart: "PASS",
       forge033ExplorationWithoutLearningCredit: "PASS",
       forge033NotesOfflineAndProcessRestart: "PASS",
+      forge034035FamiliesOfflineHtmlStateAndReload: forge034035Snapshots.map(
+        (item) => item.id,
+      ),
+      forge034035SameProfileProcessRestart: "PASS",
+      forge034035ExplorationWithoutLearningCredit: "PASS",
+      forge034035NotesOfflineAndProcessRestart: "PASS",
       sharedOfflineModelFlowCount: commonModelFlowIds.length,
       sharedOfflineModelFlowIds: commonModelFlowIds,
       forge025ExplorationWithoutLearningCredit: "PASS",

@@ -1,7 +1,7 @@
 {
-  "version": "0.21.0",
+  "version": "0.22.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Faktöriyel kavramı yeni kaynak anlatımıyla genişletildi: çarpımı adım adım kurabilir, oranlarda ortak çarpımı görebilir, asal bütçesi ve 2–5 eşleşmelerini değiştirebilirsin. Sıralama koşulları ile toplam ve fark ayrı keşiflerde açıklanır. 43 açıklamalı öğretim sorusu, 16 çözümlü örnek, hatırlama kartları ve ayrı kopya kağıdı eklendi. Yeni konu kaydı bağımsızdır; önceki cevaplar, notlar, özel tarihler, tekrarlar ve başlanmış denemeler korunur. Bütün PDF arşivi henüz tamamlanmış değildir."
+    "tr": "EBOB ve EKOK; asal tabloları, Öklid adımları, parça ve zaman çizelgeleri, kalan koşulları ve küp sayımıyla genişletildi. Rasyonel sayılarda aynı bütün, sayı doğrusu, sıralama, işlemler, devirli ondalıklar ve değişen bütünü görsellerle inceleyebilirsin. İki ünitede toplam 55 anlatım bölümü, 44 çözümlü örnek ve 94 açıklamalı özgün soru; ayrı kısa kopya kağıtları bulunur. Önceki cevaplar, notlar, tercihler, özgün tekrar tarihleri ve yarım denemeler korunur. Görsel keşif öğrenme puanı üretmez. Bütün PDF arşivi henüz tamamlanmış değildir."
   }
 }

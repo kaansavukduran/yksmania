@@ -113,4 +113,16 @@ export const examTeachingCases: Record<string, ExamTeachingCase> = {
     pitfall:
       "Katman adetlerini ayrı faktöriyellere çevirme. Zincirin ilk çarpanı 11 olduğundan paydaya 10! gelir; kaynak sorunun C anahtarı bu özgün öğretim örneğinin seçenek harfi değildir.",
   },
+  "2021-TYT-MAT-15": {
+    prompt:
+      "Bir sayı atölyesinde A, 200 ile 250 arasında (sınırlar dahil) olup hem 9’a hem 5’e tam bölünen bir doğal sayıdır. B, 240 ile 270 arasında (sınırlar dahil) olup hem 9’a hem 12’ye tam bölünen bir doğal sayıdır. A ve B’yi ortak katlarla bulup toplamlarını hesapla. Burada A ve B birer sayıdır; rakam olarak kullanılmıyor.",
+    steps: [
+      "A için iki koşulu EKOK(9,5)=45 birleştirir. 45’in verilen aralıktaki tek katı 45×5=225’tir; A=225.",
+      "B için EKOK(9,12)=36 gerekir. 9×12=108 ortak kattır, fakat en küçük ortak kat değildir. 36’nın verilen aralıktaki tek katı 36×7=252’dir; B=252.",
+      "225+252=477. Denetim: 225/9=25, 225/5=45, 252/9=28 ve 252/12=21; sayılar belirtilen aralıklardadır. Bu özgün örneğin sonucu 477’dir; resmî kaydın A harfi/rakam toplamı 7 ile puanlanmaz.",
+    ],
+    answer: "A=225, B=252; toplam 477.",
+    pitfall:
+      "Birden fazla sayıya tam bölünme koşulunu sayıların çarpımıyla değil en küçük ortak katlarıyla birleştir. Bir sembolün rakam mı, sayı mı olduğunu bulunduğu sorunun tanımı belirler.",
+  },
 };
