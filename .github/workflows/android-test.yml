@@ -68,11 +68,23 @@ jobs:
           mkdir -p android-test-evidence
           "$signing_tool" verify --verbose --print-certs "$test_apk" > android-test-evidence/signature.txt
           "$(dirname "$signing_tool")/aapt" dump badging "$test_apk" > android-test-evidence/badging.txt
+          cat android-test-evidence/signature.txt
+          cat android-test-evidence/badging.txt
           python3 scripts/verify-android-test.py \
             --apk "$test_apk" --dist dist \
             --signature android-test-evidence/signature.txt \
             --badging android-test-evidence/badging.txt \
             --commit "$GITHUB_SHA" --output android-test-evidence
+      - name: Retain public APK verification diagnostics
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: Android-test-verification-diagnostics
+          if-no-files-found: ignore
+          retention-days: 7
+          path: |
+            android-test-evidence/signature.txt
+            android-test-evidence/badging.txt
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: YKSMania-Android-personal-test
