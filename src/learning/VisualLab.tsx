@@ -1,3 +1,4 @@
+import { geometryExpansion032Ids } from "../data/supplementalTopics032";
 import { legacy026Packs, legacy026QuestionIds } from "./legacy026";
 import { geometryFoundation031Ids } from "../data/supplementalTopics031";
 import { forge025MathTopics } from "./forge025Math";
@@ -93,6 +94,9 @@ import { forge093BiologyTopics } from "./forge093Biology";
 import { forge093TurkishTopics } from "./forge093Turkish";
 import { forge093HistoryTopics } from "./forge093History";
 import { lazy, Suspense, type ComponentType } from "react";
+const PrimeSource032 = lazy(() => import("./PrimeSource032Lab"));
+const GeometryExpansion032 = lazy(() => import("./GeometryExpansion032Lab"));
+const GeometryLanguage032 = lazy(() => import("./GeometryLanguage032Lab"));
 const GeometryFoundation031 = lazy(() => import("./GeometryFoundation031Lab"));
 import { useApp } from "../store";
 const PeriodicReasoning = lazy(() => import("./PeriodicReasoning"));
@@ -446,7 +450,13 @@ export function VisualLab({ id }: { id: string }) {
   return (
     <Suspense fallback={<p role="status">{t("loading")}</p>}>
       <>
-        {(geometryFoundation031Ids as readonly string[]).includes(id) ? (
+        {id === "tyt-mat-asal-kaynak-032" ? (
+          <PrimeSource032 key={id} id={id} />
+        ) : id === "tyt-geo-acilar-kaynak-pekitirme-032" ? (
+          <GeometryLanguage032 key={id} id={id} />
+        ) : (geometryExpansion032Ids as readonly string[]).includes(id) ? (
+          <GeometryExpansion032 key={id} id={id} />
+        ) : (geometryFoundation031Ids as readonly string[]).includes(id) ? (
           <GeometryFoundation031 key={id} id={id} />
         ) : Source025Lab ? (
           <Source025Lab key={id} lessonId={id} />

@@ -1,0 +1,106 @@
+.gl032-lab {
+  padding: clamp(1rem, 3vw, 1.7rem);
+  border: 1px solid var(--border);
+  border-radius: 0.9rem;
+  overflow-wrap: anywhere;
+}
+.gl032-lab h2 {
+  margin-top: 0;
+}
+.gl032-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1rem 0;
+}
+.gl032-options button {
+  min-height: 2.75rem;
+  min-width: 2.75rem;
+  white-space: normal;
+}
+.gl032-options button[aria-pressed="true"] {
+  border-color: var(--accent);
+  background: var(--hover-bg, var(--panel));
+}
+.gl032-range {
+  display: grid;
+  gap: 0.6rem;
+  margin: 1.2rem 0;
+}
+.gl032-range > span {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.gl032-range input {
+  width: 100%;
+  min-height: 2.75rem;
+  accent-color: var(--accent);
+}
+.gl032-range output {
+  font-variant-numeric: tabular-nums;
+}
+.gl032-lab label.gl032-condition {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  min-height: 2.75rem;
+}
+.gl032-lab > svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  color: var(--text);
+  background: var(--bg);
+  border-radius: 0.6rem;
+}
+.gl032-lab > svg line {
+  stroke: currentColor;
+  stroke-width: 3;
+}
+.gl032-lab > svg text {
+  fill: currentColor;
+  font-family: inherit;
+}
+.gl032-lab > svg circle:not(.gl032-label-bg) {
+  fill: currentColor;
+}
+.gl032-lab .gl032-transversal {
+  stroke: var(--accent);
+}
+.gl032-lab .gl032-selected text {
+  fill: var(--accent);
+  font-weight: 700;
+}
+.gl032-result {
+  border-left: 3px solid var(--accent);
+  padding: 0.8rem 1rem;
+}
+.gl032-evidence {
+  font-size: 0.875em;
+  color: var(--muted);
+}
+.gl032-sources {
+  border-top: 1px solid var(--border);
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+}
+.gl032-sources a {
+  display: block;
+  padding: 0.65rem 0;
+  min-height: 2.75rem;
+}
+@media (max-width: 420px) {
+  .gl032-lab {
+    padding: 0.8rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gl032-lab *,
+  .gl032-lab *::before,
+  .gl032-lab *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

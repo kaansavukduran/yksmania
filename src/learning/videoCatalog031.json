@@ -2,7 +2,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Simyadan kimyaya",
-    "lessonIds": ["simyadan-kimyaya"],
+    "lessonIds": [
+      "simyadan-kimyaya"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -28,7 +30,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Kimya disiplinleri",
-    "lessonIds": ["kimya-disiplinleri"],
+    "lessonIds": [
+      "kimya-disiplinleri"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -54,7 +58,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Kimyanın sembolik dili",
-    "lessonIds": ["sembolik-dil"],
+    "lessonIds": [
+      "sembolik-dil"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -80,7 +86,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Kimyada iş sağlığı ve güvenliği",
-    "lessonIds": ["kimya-guvenlik"],
+    "lessonIds": [
+      "kimya-guvenlik"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -106,7 +114,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Atom modelleri",
-    "lessonIds": ["atom-modelleri"],
+    "lessonIds": [
+      "atom-modelleri"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -132,7 +142,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Temel Kavramlar",
-    "lessonIds": ["temel-kavramlar"],
+    "lessonIds": [
+      "temel-kavramlar"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -170,7 +182,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Tek Çift Pozitif Negatif Sayılar",
-    "lessonIds": ["tek-cift-isaret"],
+    "lessonIds": [
+      "tek-cift-isaret"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -208,7 +222,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Ardışık Sayılar",
-    "lessonIds": ["ardisik-sayilar"],
+    "lessonIds": [
+      "ardisik-sayilar"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -246,7 +262,10 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Asal Sayılar",
-    "lessonIds": ["asal-sayilar"],
+    "lessonIds": [
+      "asal-sayilar",
+      "tyt-mat-asal-kaynak-032"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -289,7 +308,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Faktöriyel Kavramı",
-    "lessonIds": ["faktoriyel"],
+    "lessonIds": [
+      "faktoriyel"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -337,7 +358,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Canlıların Karakteristik Özellikleri",
-    "lessonIds": ["canli-ozellikleri"],
+    "lessonIds": [
+      "canli-ozellikleri"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -370,7 +393,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Bilimsel Yöntem ve Çalışma Basamakları",
-    "lessonIds": ["bilimsel-yontem"],
+    "lessonIds": [
+      "bilimsel-yontem"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -401,7 +426,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Mineraller",
-    "lessonIds": ["mineraller"],
+    "lessonIds": [
+      "mineraller"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -429,7 +456,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Sayı Basamakları",
-    "lessonIds": ["sayi-basamaklari"],
+    "lessonIds": [
+      "sayi-basamaklari"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -472,7 +501,9 @@
   {
     "subjectId": "tyt-tarih",
     "topic": "Tarih ve Zaman",
-    "lessonIds": ["tarih-zaman"],
+    "lessonIds": [
+      "tarih-zaman"
+    ],
     "recommended": [
       {
         "channel": "Ardıç Tarih",
@@ -503,7 +534,9 @@
   {
     "subjectId": "tyt-tarih",
     "topic": "İnsanlığın İlk Dönemleri",
-    "lessonIds": ["insanligin-ilk-donemleri"],
+    "lessonIds": [
+      "insanligin-ilk-donemleri"
+    ],
     "recommended": [
       {
         "channel": "Ardıç Tarih",
@@ -531,7 +564,9 @@
   {
     "subjectId": "tyt-fizik",
     "topic": "Fizik Bilimine Giriş",
-    "lessonIds": ["fizik-bilimine-giris"],
+    "lessonIds": [
+      "fizik-bilimine-giris"
+    ],
     "recommended": [
       {
         "channel": "Ertan Sinan Şahin",
@@ -566,7 +601,9 @@
   {
     "subjectId": "tyt-fizik",
     "topic": "Madde bilgisi",
-    "lessonIds": ["madde-ozkutle"],
+    "lessonIds": [
+      "madde-ozkutle"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -598,7 +635,9 @@
   {
     "subjectId": "tyt-fizik",
     "topic": "Doğrusal hareket",
-    "lessonIds": ["dogrusal-hareket"],
+    "lessonIds": [
+      "dogrusal-hareket"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -630,7 +669,9 @@
   {
     "subjectId": "tyt-tarih",
     "topic": "Orta Çağda Dünya",
-    "lessonIds": ["ortacag-dunya"],
+    "lessonIds": [
+      "ortacag-dunya"
+    ],
     "recommended": [
       {
         "channel": "Ardıç Tarih",
@@ -656,7 +697,9 @@
   {
     "subjectId": "tyt-tarih",
     "topic": "İlk ve Orta Çağlarda Türk Dünyası",
-    "lessonIds": ["ilk-turk-dunyasi"],
+    "lessonIds": [
+      "ilk-turk-dunyasi"
+    ],
     "recommended": [
       {
         "channel": "Ardıç Tarih",
@@ -689,7 +732,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Su, Asit-Baz ve Tuz",
-    "lessonIds": ["su-asit-baz-tuz"],
+    "lessonIds": [
+      "su-asit-baz-tuz"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -717,7 +762,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Karbohidratlar",
-    "lessonIds": ["karbohidratlar"],
+    "lessonIds": [
+      "karbohidratlar"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -756,7 +803,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Lipitler - Yağlar",
-    "lessonIds": ["lipitler"],
+    "lessonIds": [
+      "lipitler"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -791,7 +840,9 @@
   {
     "subjectId": "tyt-tarih",
     "topic": "İslam Medeniyetinin Doğuşu",
-    "lessonIds": ["islam-medeniyetinin-dogusu"],
+    "lessonIds": [
+      "islam-medeniyetinin-dogusu"
+    ],
     "recommended": [
       {
         "channel": "Ardıç Tarih",
@@ -820,7 +871,9 @@
   {
     "subjectId": "tyt-tarih",
     "topic": "Türklerin İslamiyeti Kabulü",
-    "lessonIds": ["turklerin-islamiyeti-kabulu"],
+    "lessonIds": [
+      "turklerin-islamiyeti-kabulu"
+    ],
     "recommended": [
       {
         "channel": "Ardıç Tarih",
@@ -852,7 +905,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Proteinler",
-    "lessonIds": ["proteinler"],
+    "lessonIds": [
+      "proteinler"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -887,7 +942,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Atomun temel tanecikleri",
-    "lessonIds": ["atomun-temel-tanecikleri"],
+    "lessonIds": [
+      "atomun-temel-tanecikleri"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -912,7 +969,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Atom türleri izotop izoton izobar izoelektronik",
-    "lessonIds": ["izotop-izoton-izobar"],
+    "lessonIds": [
+      "izotop-izoton-izobar"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -938,7 +997,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Periyodik cetvel genel özellikler",
-    "lessonIds": ["periyodik-sistem"],
+    "lessonIds": [
+      "periyodik-sistem"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -963,7 +1024,9 @@
   {
     "subjectId": "tyt-fizik",
     "topic": "Newton hareket yasaları",
-    "lessonIds": ["newton"],
+    "lessonIds": [
+      "newton"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -990,7 +1053,9 @@
   {
     "subjectId": "tyt-fizik",
     "topic": "Enerji ve hareket",
-    "lessonIds": ["enerji-ve-hareket"],
+    "lessonIds": [
+      "enerji-ve-hareket"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -1022,7 +1087,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Bölme Bölünebilme Kuralları",
-    "lessonIds": ["bolme-bolunebilme"],
+    "lessonIds": [
+      "bolme-bolunebilme"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -1065,7 +1132,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Ebob Ekok",
-    "lessonIds": ["ebob-ekok"],
+    "lessonIds": [
+      "ebob-ekok"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -1108,7 +1177,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Rasyonel Sayılar",
-    "lessonIds": ["rasyonel-sayilar"],
+    "lessonIds": [
+      "rasyonel-sayilar"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -1151,7 +1222,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Ses bilgisi",
-    "lessonIds": ["ses-bilgisi"],
+    "lessonIds": [
+      "ses-bilgisi"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -1184,7 +1257,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Sözcükte yapı",
-    "lessonIds": ["sozcukte-yapi"],
+    "lessonIds": [
+      "sozcukte-yapi"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -1221,7 +1296,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Enzimler",
-    "lessonIds": ["enzimler"],
+    "lessonIds": [
+      "enzimler"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -1261,7 +1338,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Vitaminler",
-    "lessonIds": ["vitaminler"],
+    "lessonIds": [
+      "vitaminler"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -1298,7 +1377,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Birinci Dereceden Denklemler",
-    "lessonIds": ["birinci-dereceden-denklemler"],
+    "lessonIds": [
+      "birinci-dereceden-denklemler"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -1341,7 +1422,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Basit Eşitsizlikler",
-    "lessonIds": ["basit-esitsizlikler"],
+    "lessonIds": [
+      "basit-esitsizlikler"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -1389,7 +1472,9 @@
   {
     "subjectId": "tyt-tarih",
     "topic": "Yerleşme ve Devletleşme Sürecinde Selçuklu",
-    "lessonIds": ["selcuklu-yerlesme-devletlesme"],
+    "lessonIds": [
+      "selcuklu-yerlesme-devletlesme"
+    ],
     "recommended": [
       {
         "channel": "Ardıç Tarih",
@@ -1420,7 +1505,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Katman elektron dizilimi",
-    "lessonIds": ["katman-elektron-dizilimi"],
+    "lessonIds": [
+      "katman-elektron-dizilimi"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -1443,7 +1530,9 @@
   {
     "subjectId": "tyt-tarih",
     "topic": "Beylikten Devlete Osmanlı Siyaseti",
-    "lessonIds": ["osmanli-kurulus-siyaseti"],
+    "lessonIds": [
+      "osmanli-kurulus-siyaseti"
+    ],
     "recommended": [
       {
         "channel": "Ardıç Tarih",
@@ -1479,7 +1568,9 @@
   {
     "subjectId": "tyt-tarih",
     "topic": "Devletleşme Sürecinde Savaşçılar ve Askerler",
-    "lessonIds": ["osmanli-askeri-teskilat"],
+    "lessonIds": [
+      "osmanli-askeri-teskilat"
+    ],
     "recommended": [
       {
         "channel": "Ardıç Tarih",
@@ -1506,7 +1597,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Elementlerin sınıflandırılması",
-    "lessonIds": ["elementlerin-siniflandirilmasi"],
+    "lessonIds": [
+      "elementlerin-siniflandirilmasi"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -1532,7 +1625,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Atom çapı karşılaştırma",
-    "lessonIds": ["atom-capi-karsilastirma"],
+    "lessonIds": [
+      "atom-capi-karsilastirma"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -1559,7 +1654,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "İyonlaşma enerjisi",
-    "lessonIds": ["iyonlasma-enerjisi"],
+    "lessonIds": [
+      "iyonlasma-enerjisi"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -1586,7 +1683,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Elektron ilgisi / elektronegatiflik / metalik ametalik özellik",
-    "lessonIds": ["elektron-ilgisi-elektronegatiflik"],
+    "lessonIds": [
+      "elektron-ilgisi-elektronegatiflik"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -1614,7 +1713,9 @@
   {
     "subjectId": "tyt-tarih",
     "topic": "Beylikten Devlete Osmanlı Medeniyeti",
-    "lessonIds": ["osmanli-medeniyeti"],
+    "lessonIds": [
+      "osmanli-medeniyeti"
+    ],
     "recommended": [
       {
         "channel": "Ardıç Tarih",
@@ -1641,7 +1742,9 @@
   {
     "subjectId": "tyt-tarih",
     "topic": "Dünya Gücü Osmanlı",
-    "lessonIds": ["dunya-gucu-osmanli"],
+    "lessonIds": [
+      "dunya-gucu-osmanli"
+    ],
     "recommended": [
       {
         "channel": "Ardıç Tarih",
@@ -1682,7 +1785,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Kimyasal türler / lewis yapısı",
-    "lessonIds": ["kimyasal-turler-lewis"],
+    "lessonIds": [
+      "kimyasal-turler-lewis"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -1708,7 +1813,9 @@
   {
     "subjectId": "tyt-fizik",
     "topic": "Isı ve sıcaklık",
-    "lessonIds": ["isi-ve-sicaklik"],
+    "lessonIds": [
+      "isi-ve-sicaklik"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -1740,7 +1847,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Nükleik Asitler DNA ve RNA",
-    "lessonIds": ["nukleik-asitler"],
+    "lessonIds": [
+      "nukleik-asitler"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -1767,7 +1876,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "ATP ve Metabolizma",
-    "lessonIds": ["atp-metabolizma"],
+    "lessonIds": [
+      "atp-metabolizma"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -1794,7 +1905,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Hücre Organelleri",
-    "lessonIds": ["hucre-organelleri"],
+    "lessonIds": [
+      "hucre-organelleri"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -1847,7 +1960,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Güçlü etkileşimler / iyonik bağ",
-    "lessonIds": ["iyonik-bag-ve-guclu-etkilesimler"],
+    "lessonIds": [
+      "iyonik-bag-ve-guclu-etkilesimler"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -1872,7 +1987,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "İyonik bileşiklerin sistematik adlandırılması",
-    "lessonIds": ["iyonik-bilesik-adlandirma"],
+    "lessonIds": [
+      "iyonik-bilesik-adlandirma"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -1901,7 +2018,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Kovalent bağ / polar apolar bağ",
-    "lessonIds": ["kovalent-bag-polar-apolar"],
+    "lessonIds": [
+      "kovalent-bag-polar-apolar"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -1928,7 +2047,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Moleküllerde polarlık apolarlık",
-    "lessonIds": ["molekullerde-polarlik-apolarlik"],
+    "lessonIds": [
+      "molekullerde-polarlik-apolarlik"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -1959,7 +2080,9 @@
   {
     "subjectId": "tyt-fizik",
     "topic": "Genleşme",
-    "lessonIds": ["genlesme"],
+    "lessonIds": [
+      "genlesme"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -1990,7 +2113,9 @@
   {
     "subjectId": "tyt-fizik",
     "topic": "Isı ve Sıcaklık: Hâl Değişimi",
-    "lessonIds": ["hal-degisimi"],
+    "lessonIds": [
+      "hal-degisimi"
+    ],
     "recommended": [
       {
         "channel": "FİZİK EVİM",
@@ -2018,7 +2143,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Mutlak Değer",
-    "lessonIds": ["mutlak-deger"],
+    "lessonIds": [
+      "mutlak-deger"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -2066,7 +2193,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Üslü Sayılar",
-    "lessonIds": ["uslu-sayilar"],
+    "lessonIds": [
+      "uslu-sayilar"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -2114,7 +2243,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Hücre Zarında Madde Alışverişleri",
-    "lessonIds": ["hucre-zarinda-madde-alisverisleri"],
+    "lessonIds": [
+      "hucre-zarinda-madde-alisverisleri"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -2151,7 +2282,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Canlıların Sınıflandırılması",
-    "lessonIds": ["canlilarin-siniflandirilmasi"],
+    "lessonIds": [
+      "canlilarin-siniflandirilmasi"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -2182,7 +2315,9 @@
   {
     "subjectId": "tyt-fizik",
     "topic": "Durgun elektrik",
-    "lessonIds": ["durgun-elektrik"],
+    "lessonIds": [
+      "durgun-elektrik"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -2209,7 +2344,9 @@
   {
     "subjectId": "tyt-fizik",
     "topic": "Elektrik akımı",
-    "lessonIds": ["elektrik-akimi"],
+    "lessonIds": [
+      "elektrik-akimi"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -2240,7 +2377,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "İsimler / isim tamlaması",
-    "lessonIds": ["isimler-isim-tamlamasi"],
+    "lessonIds": [
+      "isimler-isim-tamlamasi"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -2273,7 +2412,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Sıfatlar",
-    "lessonIds": ["sifatlar"],
+    "lessonIds": [
+      "sifatlar"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -2303,7 +2444,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Zamirler",
-    "lessonIds": ["zamirler"],
+    "lessonIds": [
+      "zamirler"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -2334,7 +2477,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Bilimsel Gösterim ve Katsayı",
-    "lessonIds": ["bilimsel-gosterim-katsayi"],
+    "lessonIds": [
+      "bilimsel-gosterim-katsayi"
+    ],
     "recommended": [
       {
         "channel": "Rehber Matematik",
@@ -2358,7 +2503,9 @@
   {
     "subjectId": "tyt-fizik",
     "topic": "Mıknatıslar ve manyetik alan",
-    "lessonIds": ["miknatislar-ve-manyetik-alan"],
+    "lessonIds": [
+      "miknatislar-ve-manyetik-alan"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -2384,7 +2531,9 @@
   {
     "subjectId": "tyt-tarih",
     "topic": "Sultan ve Osmanlı Merkez Teşkilatı",
-    "lessonIds": ["sultan-osmanli-merkez-teskilati"],
+    "lessonIds": [
+      "sultan-osmanli-merkez-teskilati"
+    ],
     "recommended": [
       {
         "channel": "Ardıç Tarih",
@@ -2411,7 +2560,9 @@
   {
     "subjectId": "tyt-tarih",
     "topic": "Klasik Çağda Osmanlı Toplum Düzeni",
-    "lessonIds": ["klasik-cag-osmanli-toplum-duzeni"],
+    "lessonIds": [
+      "klasik-cag-osmanli-toplum-duzeni"
+    ],
     "recommended": [
       {
         "channel": "Ardıç Tarih",
@@ -2438,7 +2589,9 @@
   {
     "subjectId": "tyt-tarih",
     "topic": "Değişen Dünya Dengeleri Osmanlı",
-    "lessonIds": ["degisen-dunya-dengeleri-osmanli"],
+    "lessonIds": [
+      "degisen-dunya-dengeleri-osmanli"
+    ],
     "recommended": [
       {
         "channel": "Ardıç Tarih",
@@ -2465,7 +2618,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Köklü Sayılar",
-    "lessonIds": ["koklu-sayilar"],
+    "lessonIds": [
+      "koklu-sayilar"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -2513,7 +2668,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Oran Orantı",
-    "lessonIds": ["oran-oranti"],
+    "lessonIds": [
+      "oran-oranti"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -2561,7 +2718,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Sayı Problemleri",
-    "lessonIds": ["sayi-problemleri"],
+    "lessonIds": [
+      "sayi-problemleri"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -2609,7 +2768,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Virüsler",
-    "lessonIds": ["virusler"],
+    "lessonIds": [
+      "virusler"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -2642,7 +2803,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Bakteri ve Arke",
-    "lessonIds": ["bakteri-ve-arke"],
+    "lessonIds": [
+      "bakteri-ve-arke"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -2672,7 +2835,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Protista",
-    "lessonIds": ["protista"],
+    "lessonIds": [
+      "protista"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -2705,7 +2870,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Bitki",
-    "lessonIds": ["bitkiler"],
+    "lessonIds": [
+      "bitkiler"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -2743,7 +2910,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Mantar",
-    "lessonIds": ["mantarlar"],
+    "lessonIds": [
+      "mantarlar"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -2776,7 +2945,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Omurgasızlar",
-    "lessonIds": ["omurgasizlar"],
+    "lessonIds": [
+      "omurgasizlar"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -2802,7 +2973,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Omurgalılar",
-    "lessonIds": ["omurgalilar"],
+    "lessonIds": [
+      "omurgalilar"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -2825,7 +2998,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Kesir Problemleri",
-    "lessonIds": ["kesir-problemleri"],
+    "lessonIds": [
+      "kesir-problemleri"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -2873,7 +3048,9 @@
   {
     "subjectId": "tyt-tarih",
     "topic": "Değişim Çağında Avrupa ve Osmanlı",
-    "lessonIds": ["degisim-caginda-avrupa-osmanli"],
+    "lessonIds": [
+      "degisim-caginda-avrupa-osmanli"
+    ],
     "recommended": [
       {
         "channel": "Ardıç Tarih",
@@ -2909,7 +3086,9 @@
   {
     "subjectId": "tyt-tarih",
     "topic": "Devrimler Çağında Değişen Devlet Toplum",
-    "lessonIds": ["devrimler-caginda-devlet-toplum"],
+    "lessonIds": [
+      "devrimler-caginda-devlet-toplum"
+    ],
     "recommended": [
       {
         "channel": "Ardıç Tarih",
@@ -2941,7 +3120,9 @@
   {
     "subjectId": "tyt-tarih",
     "topic": "Uluslararası İlişkilerde Denge Stratejisi",
-    "lessonIds": ["denge-stratejisi"],
+    "lessonIds": [
+      "denge-stratejisi"
+    ],
     "recommended": [
       {
         "channel": "Ardıç Tarih",
@@ -2974,7 +3155,9 @@
   {
     "subjectId": "tyt-tarih",
     "topic": "XIX ve XX. Yüzyılda Değişen Sosyoekonomik Hayat",
-    "lessonIds": ["degisen-sosyoekonomik-hayat"],
+    "lessonIds": [
+      "degisen-sosyoekonomik-hayat"
+    ],
     "recommended": [
       {
         "channel": "Ardıç Tarih",
@@ -3002,7 +3185,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Kovalent bileşiklerde isimlendirme / metalik bağ",
-    "lessonIds": ["kovalent-adlandirma-metalik-bag"],
+    "lessonIds": [
+      "kovalent-adlandirma-metalik-bag"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -3030,7 +3215,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Zarflar",
-    "lessonIds": ["zarflar"],
+    "lessonIds": [
+      "zarflar"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -3055,7 +3242,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Hücre Bölünmeleri - Mitoz",
-    "lessonIds": ["mitoz"],
+    "lessonIds": [
+      "mitoz"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -3089,7 +3278,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Eşeysiz Üreme",
-    "lessonIds": ["eseysiz-ureme"],
+    "lessonIds": [
+      "eseysiz-ureme"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -3123,7 +3314,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Hücre Bölünmeleri - Mayoz",
-    "lessonIds": ["mayoz"],
+    "lessonIds": [
+      "mayoz"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -3164,7 +3357,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Zayıf etkileşimler",
-    "lessonIds": ["zayif-etkilesimler"],
+    "lessonIds": [
+      "zayif-etkilesimler"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -3189,7 +3384,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Hidrojen bağı",
-    "lessonIds": ["hidrojen-bagi"],
+    "lessonIds": [
+      "hidrojen-bagi"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -3215,7 +3412,9 @@
   {
     "subjectId": "tyt-tarih",
     "topic": "20.Yüzyıl Başlarında Osmanlı ve Dünya",
-    "lessonIds": ["yirminci-yuzyil-baslarinda-osmanli"],
+    "lessonIds": [
+      "yirminci-yuzyil-baslarinda-osmanli"
+    ],
     "recommended": [
       {
         "channel": "Ardıç Tarih",
@@ -3252,7 +3451,9 @@
   {
     "subjectId": "tyt-fizik",
     "topic": "Basınç",
-    "lessonIds": ["basinc"],
+    "lessonIds": [
+      "basinc"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -3284,7 +3485,9 @@
   {
     "subjectId": "tyt-fizik",
     "topic": "Sıvılarda kaldırma kuvveti",
-    "lessonIds": ["sivilarin-kaldirma-kuvveti"],
+    "lessonIds": [
+      "sivilarin-kaldirma-kuvveti"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -3315,7 +3518,9 @@
   {
     "subjectId": "tyt-fizik",
     "topic": "Dalgalara giriş",
-    "lessonIds": ["dalgalara-giris"],
+    "lessonIds": [
+      "dalgalara-giris"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -3342,7 +3547,9 @@
   {
     "subjectId": "tyt-fizik",
     "topic": "Yay dalgaları",
-    "lessonIds": ["yay-dalgalari"],
+    "lessonIds": [
+      "yay-dalgalari"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -3374,7 +3581,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Fiziksel ve Kimyasal Değişimler",
-    "lessonIds": ["fiziksel-kimyasal-degisimler"],
+    "lessonIds": [
+      "fiziksel-kimyasal-degisimler"
+    ],
     "recommended": [
       {
         "channel": "Ferrum",
@@ -3395,7 +3604,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Maddenin halleri",
-    "lessonIds": ["maddenin-halleri"],
+    "lessonIds": [
+      "maddenin-halleri"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -3420,7 +3631,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Yaş Problemleri",
-    "lessonIds": ["yas-problemleri"],
+    "lessonIds": [
+      "yas-problemleri"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -3468,7 +3681,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Yüzde Problemleri",
-    "lessonIds": ["yuzde-problemleri"],
+    "lessonIds": [
+      "yuzde-problemleri"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -3516,7 +3731,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Kar Zarar Problemleri",
-    "lessonIds": ["kar-zarar-problemleri"],
+    "lessonIds": [
+      "kar-zarar-problemleri"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -3564,7 +3781,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Faiz Problemleri",
-    "lessonIds": ["faiz-problemleri"],
+    "lessonIds": [
+      "faiz-problemleri"
+    ],
     "recommended": [
       {
         "channel": "Hocalara Geldik",
@@ -3582,7 +3801,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Karışım Problemleri",
-    "lessonIds": ["karisim-problemleri"],
+    "lessonIds": [
+      "karisim-problemleri"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -3630,7 +3851,9 @@
   {
     "subjectId": "tyt-tarih",
     "topic": "Milli Mücadele Dönemi",
-    "lessonIds": ["milli-mucadele"],
+    "lessonIds": [
+      "milli-mucadele"
+    ],
     "recommended": [
       {
         "channel": "Ardıç Tarih",
@@ -3689,7 +3912,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Katılar / viskozite",
-    "lessonIds": ["katilar-viskozite"],
+    "lessonIds": [
+      "katilar-viskozite"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -3722,7 +3947,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Buharlaşma / buhar basıncı",
-    "lessonIds": ["buharlasma-buhar-basinci"],
+    "lessonIds": [
+      "buharlasma-buhar-basinci"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -3750,7 +3977,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Kaynama , bağıl nem , sıvılar karma test",
-    "lessonIds": ["kaynama-bagil-nem"],
+    "lessonIds": [
+      "kaynama-bagil-nem"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -3776,7 +4005,9 @@
   {
     "subjectId": "tyt-tarih",
     "topic": "Atatürkçülük ve Türk İnkılabı",
-    "lessonIds": ["ataturkculuk-inkilap"],
+    "lessonIds": [
+      "ataturkculuk-inkilap"
+    ],
     "recommended": [
       {
         "channel": "Ardıç Tarih",
@@ -3814,7 +4045,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Gazlar , hal değişim grafiği , plazma",
-    "lessonIds": ["gazlar-hal-degisim-plazma"],
+    "lessonIds": [
+      "gazlar-hal-degisim-plazma"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -3842,7 +4075,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Edat / bağlaç / ünlem",
-    "lessonIds": ["edat-baglac-unlem"],
+    "lessonIds": [
+      "edat-baglac-unlem"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -3873,7 +4108,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Eşeyli Üreme",
-    "lessonIds": ["eseyli-ureme"],
+    "lessonIds": [
+      "eseyli-ureme"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -3909,7 +4146,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Kalıtıma Giriş",
-    "lessonIds": ["kalitima-giris"],
+    "lessonIds": [
+      "kalitima-giris"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -3944,7 +4183,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Mendel Genetiği",
-    "lessonIds": ["mendel-genetigi"],
+    "lessonIds": [
+      "mendel-genetigi"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -3981,7 +4222,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "İşçi Problemleri",
-    "lessonIds": ["isci-problemleri"],
+    "lessonIds": [
+      "isci-problemleri"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -4029,7 +4272,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "İşçi - Havuz Problemleri",
-    "lessonIds": ["havuz-problemleri"],
+    "lessonIds": [
+      "havuz-problemleri"
+    ],
     "recommended": [
       {
         "channel": "Hocalara Geldik",
@@ -4077,7 +4322,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Hız Problemleri",
-    "lessonIds": ["hiz-problemleri"],
+    "lessonIds": [
+      "hiz-problemleri"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -4125,7 +4372,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Fiiller",
-    "lessonIds": ["fiiller"],
+    "lessonIds": [
+      "fiiller"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -4155,7 +4404,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Doğa ve kimya",
-    "lessonIds": ["doga-ve-kimya"],
+    "lessonIds": [
+      "doga-ve-kimya"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -4181,7 +4432,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Fiilde çatı",
-    "lessonIds": ["fiilde-cati"],
+    "lessonIds": [
+      "fiilde-cati"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -4207,7 +4460,9 @@
   {
     "subjectId": "tyt-fizik",
     "topic": "Su dalgaları",
-    "lessonIds": ["su-dalgalari"],
+    "lessonIds": [
+      "su-dalgalari"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -4238,7 +4493,9 @@
   {
     "subjectId": "tyt-fizik",
     "topic": "Ses ve deprem dalgaları",
-    "lessonIds": ["ses-deprem-dalgalari"],
+    "lessonIds": [
+      "ses-deprem-dalgalari"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -4268,7 +4525,9 @@
   {
     "subjectId": "tyt-fizik",
     "topic": "Işık bilgisi",
-    "lessonIds": ["isik-bilgisi"],
+    "lessonIds": [
+      "isik-bilgisi"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -4296,7 +4555,9 @@
   {
     "subjectId": "tyt-fizik",
     "topic": "Gölge ve yarı gölge",
-    "lessonIds": ["golge-yari-golge"],
+    "lessonIds": [
+      "golge-yari-golge"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -4321,7 +4582,9 @@
   {
     "subjectId": "tyt-fizik",
     "topic": "Düzlem ayna",
-    "lessonIds": ["duzlem-ayna"],
+    "lessonIds": [
+      "duzlem-ayna"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -4343,7 +4606,9 @@
   {
     "subjectId": "tyt-tarih",
     "topic": "İki Savaş Arasındaki Dönemde Türkiye ve Dünya",
-    "lessonIds": ["iki-savas-arasi-turkiye-dunya"],
+    "lessonIds": [
+      "iki-savas-arasi-turkiye-dunya"
+    ],
     "recommended": [
       {
         "channel": "Ardıç Tarih",
@@ -4372,7 +4637,9 @@
   {
     "subjectId": "tyt-tarih",
     "topic": "İki Küresel Savaş Arasında Türkiye ve Dünya",
-    "lessonIds": ["kuresel-savaslar-arasinda-turkiye-dunya"],
+    "lessonIds": [
+      "kuresel-savaslar-arasinda-turkiye-dunya"
+    ],
     "recommended": [
       {
         "channel": "Ardıç Tarih",
@@ -4390,7 +4657,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Mendel'den Sapmalar",
-    "lessonIds": ["mendelden-sapmalar"],
+    "lessonIds": [
+      "mendelden-sapmalar"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -4423,7 +4692,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Kan Grupları",
-    "lessonIds": ["kan-gruplari"],
+    "lessonIds": [
+      "kan-gruplari"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -4455,7 +4726,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Eşeyin Belirlenmesi X ve Y Kromozomları",
-    "lessonIds": ["eseyin-belirlenmesi"],
+    "lessonIds": [
+      "eseyin-belirlenmesi"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -4493,7 +4766,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Soy Ağaçları",
-    "lessonIds": ["soy-agaclari"],
+    "lessonIds": [
+      "soy-agaclari"
+    ],
     "recommended": [
       {
         "channel": "Biosem",
@@ -4521,7 +4796,9 @@
   {
     "subjectId": "tyt-tarih",
     "topic": "II. Dünya Savaşı Sürecinde ve Sonrasında Türkiye ve Dünya",
-    "lessonIds": ["ikinci-dunya-savasi-sonrasi"],
+    "lessonIds": [
+      "ikinci-dunya-savasi-sonrasi"
+    ],
     "recommended": [
       {
         "channel": "Ardıç Tarih",
@@ -4539,7 +4816,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Su, Hayat ve Çevre Kimyası",
-    "lessonIds": ["su-hayat-cevre"],
+    "lessonIds": [
+      "su-hayat-cevre"
+    ],
     "recommended": [
       {
         "channel": "Ferrum",
@@ -4573,7 +4852,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Kütle korunumu ve sabit oranlar kanunu",
-    "lessonIds": ["kutle-korunumu-sabit-oran"],
+    "lessonIds": [
+      "kutle-korunumu-sabit-oran"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -4606,7 +4887,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Sabit oranlar kanunu sınırlayıcı ( aşırı ) madde problemleri",
-    "lessonIds": ["sinirlayici-artan-madde"],
+    "lessonIds": [
+      "sinirlayici-artan-madde"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -4629,7 +4912,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Katlı oranlar kanunu",
-    "lessonIds": ["katli-oranlar"],
+    "lessonIds": [
+      "katli-oranlar"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -4655,7 +4940,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Mol kavramı mol tanecik ilişkisi",
-    "lessonIds": ["mol"],
+    "lessonIds": [
+      "mol"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -4685,7 +4972,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Mol tanecik ilişkisi",
-    "lessonIds": ["mol-tanecik-iliskisi"],
+    "lessonIds": [
+      "mol-tanecik-iliskisi"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -4711,7 +5000,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Doğa ve insan - Coğrafyanın Bölümleri",
-    "lessonIds": ["doga-insan-cografya"],
+    "lessonIds": [
+      "doga-insan-cografya"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -4734,7 +5025,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Coğrafyanın Tarihi Gelişimi",
-    "lessonIds": ["cografyanin-tarihi-gelisimi"],
+    "lessonIds": [
+      "cografyanin-tarihi-gelisimi"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -4751,7 +5044,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Yerel saat ve hesaplama",
-    "lessonIds": ["yerel-saat"],
+    "lessonIds": [
+      "yerel-saat"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -4769,7 +5064,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Grafik Problemleri",
-    "lessonIds": ["grafik-problemleri"],
+    "lessonIds": [
+      "grafik-problemleri"
+    ],
     "recommended": [
       {
         "channel": "Rehber Matematik",
@@ -4812,7 +5109,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Çarpanlara Ayırma",
-    "lessonIds": ["carpanlara-ayirma"],
+    "lessonIds": [
+      "carpanlara-ayirma"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -4850,7 +5149,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Kümeler",
-    "lessonIds": ["kumeler"],
+    "lessonIds": [
+      "kumeler"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -4898,7 +5199,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Mol kütle ilişkisi",
-    "lessonIds": ["mol-kutle-iliskisi"],
+    "lessonIds": [
+      "mol-kutle-iliskisi"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -4924,7 +5227,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Ekoloji Giriş",
-    "lessonIds": ["ekoloji-giris"],
+    "lessonIds": [
+      "ekoloji-giris"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -4954,7 +5259,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Besin Piramidi",
-    "lessonIds": ["besin-piramidi"],
+    "lessonIds": [
+      "besin-piramidi"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -4981,7 +5288,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Besin Zinciri ve Ağı",
-    "lessonIds": ["besin-zinciri-agi"],
+    "lessonIds": [
+      "besin-zinciri-agi"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -5008,7 +5317,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Madde Döngüleri",
-    "lessonIds": ["madde-donguleri"],
+    "lessonIds": [
+      "madde-donguleri"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -5034,7 +5345,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Güncel Çevre Sorunları",
-    "lessonIds": ["guncel-cevre-sorunlari"],
+    "lessonIds": [
+      "guncel-cevre-sorunlari"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -5059,7 +5372,9 @@
   {
     "subjectId": "tyt-biyoloji",
     "topic": "Doğal kaynaklar ve sürdürebilirlik",
-    "lessonIds": ["dogal-kaynaklar-surdurulebilirlik"],
+    "lessonIds": [
+      "dogal-kaynaklar-surdurulebilirlik"
+    ],
     "recommended": [
       {
         "channel": "Seda Hoca Biyoloji",
@@ -5082,7 +5397,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Atmosferin Katmanları ve Özellikleri",
-    "lessonIds": ["atmosfer-katmanlari"],
+    "lessonIds": [
+      "atmosfer-katmanlari"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -5104,7 +5421,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Sıcaklık",
-    "lessonIds": ["cografya-sicaklik"],
+    "lessonIds": [
+      "cografya-sicaklik"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -5130,7 +5449,9 @@
   {
     "subjectId": "tyt-fizik",
     "topic": "Küresel aynalar",
-    "lessonIds": ["kuresel-aynalar"],
+    "lessonIds": [
+      "kuresel-aynalar"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -5161,7 +5482,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Basınç ve Rüzgarlar",
-    "lessonIds": ["basinc-ruzgarlar"],
+    "lessonIds": [
+      "basinc-ruzgarlar"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -5189,7 +5512,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Nem ve Yağış",
-    "lessonIds": ["nem-yagis"],
+    "lessonIds": [
+      "nem-yagis"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -5215,7 +5540,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Kümeler: Kartezyen Çarpım",
-    "lessonIds": ["kartezyen-carpim"],
+    "lessonIds": [
+      "kartezyen-carpim"
+    ],
     "recommended": [
       {
         "channel": "SML Matematik",
@@ -5253,7 +5580,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Mantık Önerme",
-    "lessonIds": ["mantik-onerme"],
+    "lessonIds": [
+      "mantik-onerme"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -5296,7 +5625,9 @@
   {
     "subjectId": "tyt-fizik",
     "topic": "Işığın kırılması",
-    "lessonIds": ["isigin-kirilmasi"],
+    "lessonIds": [
+      "isigin-kirilmasi"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -5314,7 +5645,9 @@
   {
     "subjectId": "tyt-fizik",
     "topic": "Mercekler",
-    "lessonIds": ["mercekler"],
+    "lessonIds": [
+      "mercekler"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -5344,7 +5677,9 @@
   {
     "subjectId": "tyt-fizik",
     "topic": "Prizmalar ve renkler",
-    "lessonIds": ["prizmalar-renkler"],
+    "lessonIds": [
+      "prizmalar-renkler"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -5366,7 +5701,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Ek fiil",
-    "lessonIds": ["ek-fiil"],
+    "lessonIds": [
+      "ek-fiil"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -5392,7 +5729,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Fiilimsiler",
-    "lessonIds": ["fiilimsiler"],
+    "lessonIds": [
+      "fiilimsiler"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -5422,7 +5761,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Genetik Çeşitlilik",
-    "lessonIds": ["genetik-cesitlilik"],
+    "lessonIds": [
+      "genetik-cesitlilik"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -5445,7 +5786,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Sinir Sistemi Nöron ve Glialar",
-    "lessonIds": ["sinir-sistemi-noron-ve-glialar"],
+    "lessonIds": [
+      "sinir-sistemi-noron-ve-glialar"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -5473,7 +5816,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Sinir Sistemi Aksiyon Potansiyeli",
-    "lessonIds": ["sinir-sistemi-aksiyon-potansiyeli"],
+    "lessonIds": [
+      "sinir-sistemi-aksiyon-potansiyeli"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -5505,7 +5850,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Sinir Sistemi Ön Beyin",
-    "lessonIds": ["sinir-sistemi-on-beyin"],
+    "lessonIds": [
+      "sinir-sistemi-on-beyin"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -5533,7 +5880,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Vektörler",
-    "lessonIds": ["vektorler"],
+    "lessonIds": [
+      "vektorler"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -5581,7 +5930,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Gerçek kütle / AKB / normal koşullarda hacim",
-    "lessonIds": ["gercek-kutle-akb-nk"],
+    "lessonIds": [
+      "gercek-kutle-akb-nk"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -5609,7 +5960,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Kimyasal tepkimeler ve denklemler",
-    "lessonIds": ["tepkimeler-denklemler"],
+    "lessonIds": [
+      "tepkimeler-denklemler"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -5639,7 +5992,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Kimyasal tepkime türleri",
-    "lessonIds": ["tepkime-turleri"],
+    "lessonIds": [
+      "tepkime-turleri"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -5665,7 +6020,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Denklemli miktar geçiş hesaplamaları",
-    "lessonIds": ["denklemli-miktar-gecisi"],
+    "lessonIds": [
+      "denklemli-miktar-gecisi"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -5697,7 +6054,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Sınırlayıcı bileşen hesaplamaları",
-    "lessonIds": ["sinirlayici-bilesen"],
+    "lessonIds": [
+      "sinirlayici-bilesen"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -5730,7 +6089,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Kimyasal hesaplamalar katı kütlesi değişim problemleri",
-    "lessonIds": ["kati-kutlesi-degisimi"],
+    "lessonIds": [
+      "kati-kutlesi-degisimi"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -5748,7 +6109,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Büyük İklim Tipleri",
-    "lessonIds": ["buyuk-iklim-tipleri"],
+    "lessonIds": [
+      "buyuk-iklim-tipleri"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -5775,7 +6138,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Türkiye İklimi",
-    "lessonIds": ["turkiye-iklimi"],
+    "lessonIds": [
+      "turkiye-iklimi"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -5802,7 +6167,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Dünyanın Tektonik oluşumu",
-    "lessonIds": ["dunyanin-tektonik-olusumu"],
+    "lessonIds": [
+      "dunyanin-tektonik-olusumu"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -5824,7 +6191,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Cümlenin öğeleri",
-    "lessonIds": ["cumlenin-ogeleri"],
+    "lessonIds": [
+      "cumlenin-ogeleri"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -5855,7 +6224,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Cümle türleri",
-    "lessonIds": ["cumle-turleri"],
+    "lessonIds": [
+      "cumle-turleri"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -5886,7 +6257,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Sinir Sistemi Orta ve Arka Beyin",
-    "lessonIds": ["sinir-sistemi-orta-arka-beyin"],
+    "lessonIds": [
+      "sinir-sistemi-orta-arka-beyin"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -5914,7 +6287,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Sinir Sistemi Omurilik",
-    "lessonIds": ["sinir-sistemi-omurilik"],
+    "lessonIds": [
+      "sinir-sistemi-omurilik"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -5942,7 +6317,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Sinir Sistemi ÇSS ve Hastalıklar",
-    "lessonIds": ["sinir-sistemi-css-hastaliklar"],
+    "lessonIds": [
+      "sinir-sistemi-css-hastaliklar"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -5970,7 +6347,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Yüzde verim hesaplama",
-    "lessonIds": ["yuzde-verim"],
+    "lessonIds": [
+      "yuzde-verim"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -6007,7 +6386,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Safsızlık problemleri",
-    "lessonIds": ["safsizlik-problemleri"],
+    "lessonIds": [
+      "safsizlik-problemleri"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -6040,7 +6421,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Bağıl hareket",
-    "lessonIds": ["bagil-hareket"],
+    "lessonIds": [
+      "bagil-hareket"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -6071,7 +6454,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Atom kütlesi hesaplama problemleri",
-    "lessonIds": ["atom-kutlesi-hesaplari"],
+    "lessonIds": [
+      "atom-kutlesi-hesaplari"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -6094,7 +6479,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Kimyasal hesaplamalar karışım problemleri",
-    "lessonIds": ["tepkimeli-karisim"],
+    "lessonIds": [
+      "tepkimeli-karisim"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -6126,7 +6513,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Karışımların sınıflandırılması / çözünme süreci",
-    "lessonIds": ["karisim-sinif-cozunme"],
+    "lessonIds": [
+      "karisim-sinif-cozunme"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -6164,7 +6553,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Çözeltilerde derişim",
-    "lessonIds": ["cozelti-derisimi"],
+    "lessonIds": [
+      "cozelti-derisimi"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -6196,7 +6587,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Nehir problemleri",
-    "lessonIds": ["nehir-problemleri"],
+    "lessonIds": [
+      "nehir-problemleri"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -6221,7 +6614,9 @@
   {
     "subjectId": "tyt-matematik",
     "topic": "Veri Analizi (İstatistik)",
-    "lessonIds": ["veri-analizi"],
+    "lessonIds": [
+      "veri-analizi"
+    ],
     "recommended": [
       {
         "channel": "Mert Hoca",
@@ -6249,7 +6644,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "İç kuvvetler",
-    "lessonIds": ["ic-kuvvetler"],
+    "lessonIds": [
+      "ic-kuvvetler"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -6276,7 +6673,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Kayaçlar",
-    "lessonIds": ["cografya-kayaclar"],
+    "lessonIds": [
+      "cografya-kayaclar"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -6303,7 +6702,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Türkiye'de iç kuvvetler",
-    "lessonIds": ["turkiye-ic-kuvvetler"],
+    "lessonIds": [
+      "turkiye-ic-kuvvetler"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -6326,7 +6727,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Dış kuvvetler Akarsular",
-    "lessonIds": ["dis-kuvvetler-akarsular"],
+    "lessonIds": [
+      "dis-kuvvetler-akarsular"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -6348,7 +6751,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Endokrin Sistem Hipotalamus",
-    "lessonIds": ["endokrin-hipotalamus"],
+    "lessonIds": [
+      "endokrin-hipotalamus"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -6376,7 +6781,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Endokrin Sistem Hipofiz",
-    "lessonIds": ["endokrin-hipofiz"],
+    "lessonIds": [
+      "endokrin-hipofiz"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -6408,7 +6815,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Endokrin Sistem Tiroit",
-    "lessonIds": ["endokrin-tiroit"],
+    "lessonIds": [
+      "endokrin-tiroit"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -6441,7 +6850,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Dış kuvvetler Karstik şekiller",
-    "lessonIds": ["karstik-sekiller"],
+    "lessonIds": [
+      "karstik-sekiller"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -6459,7 +6870,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Rüzgar ve buzul",
-    "lessonIds": ["ruzgar-ve-buzul"],
+    "lessonIds": [
+      "ruzgar-ve-buzul"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -6481,7 +6894,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Dalga ve Akıntılar - Kıyı tipleri",
-    "lessonIds": ["dalga-akinti-kiyi-tipleri"],
+    "lessonIds": [
+      "dalga-akinti-kiyi-tipleri"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -6503,7 +6918,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Koligatif özellikler / karışımların ayrılması",
-    "lessonIds": ["koligatif-ayirma"],
+    "lessonIds": [
+      "koligatif-ayirma"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -6546,7 +6963,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Asit baz ve tuzlar genel özellikler",
-    "lessonIds": ["asit-baz-tuz-ozellikleri"],
+    "lessonIds": [
+      "asit-baz-tuz-ozellikleri"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -6584,7 +7003,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Asit baz tepkimeleri",
-    "lessonIds": ["asit-baz-tepkimeleri"],
+    "lessonIds": [
+      "asit-baz-tepkimeleri"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -6615,7 +7036,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Newton hareket yasaları",
-    "lessonIds": ["ayt-newton-hareket-yasalari"],
+    "lessonIds": [
+      "ayt-newton-hareket-yasalari"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -6639,7 +7062,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Bir boyutta sabit ivmeli hareket",
-    "lessonIds": ["bir-boyutta-sabit-ivmeli-hareket"],
+    "lessonIds": [
+      "bir-boyutta-sabit-ivmeli-hareket"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -6670,7 +7095,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Endokrin Sistem Paratiroit",
-    "lessonIds": ["endokrin-paratiroit"],
+    "lessonIds": [
+      "endokrin-paratiroit"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -6703,7 +7130,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Endokrin Sistem Böbrek Üstü Bezi",
-    "lessonIds": ["endokrin-bobrek-ustu"],
+    "lessonIds": [
+      "endokrin-bobrek-ustu"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -6736,7 +7165,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Endokrin Sistem Pankreas",
-    "lessonIds": ["endokrin-pankreas"],
+    "lessonIds": [
+      "endokrin-pankreas"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -6764,7 +7195,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Endokrin Sistem Epifiz",
-    "lessonIds": ["endokrin-epifiz"],
+    "lessonIds": [
+      "endokrin-epifiz"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -6787,7 +7220,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Duyu Organları Deri",
-    "lessonIds": ["duyu-organlari-deri"],
+    "lessonIds": [
+      "duyu-organlari-deri"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -6815,7 +7250,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Duyu Organları Dil Burun",
-    "lessonIds": ["duyu-organlari-dil-burun"],
+    "lessonIds": [
+      "duyu-organlari-dil-burun"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -6843,7 +7280,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Duyu Organları Göz",
-    "lessonIds": ["duyu-organlari-goz"],
+    "lessonIds": [
+      "duyu-organlari-goz"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -6879,7 +7318,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Yazım kuralları",
-    "lessonIds": ["yazim-kurallari"],
+    "lessonIds": [
+      "yazim-kurallari"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -6917,7 +7358,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Noktalama işaretleri",
-    "lessonIds": ["noktalama-isaretleri"],
+    "lessonIds": [
+      "noktalama-isaretleri"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -6955,7 +7398,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Türkiye'de Dış Kuvvetler",
-    "lessonIds": ["turkiye-dis-kuvvetler"],
+    "lessonIds": [
+      "turkiye-dis-kuvvetler"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -6982,7 +7427,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Türkiye'nin yer şekilleri",
-    "lessonIds": ["turkiye-yer-sekilleri"],
+    "lessonIds": [
+      "turkiye-yer-sekilleri"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -7005,7 +7452,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Dünya'da sular",
-    "lessonIds": ["dunyada-sular"],
+    "lessonIds": [
+      "dunyada-sular"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -7028,7 +7477,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Bir boyutta sabit ivmeli hareket grafikleri",
-    "lessonIds": ["sabit-ivmeli-hareket-grafikleri"],
+    "lessonIds": [
+      "sabit-ivmeli-hareket-grafikleri"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -7046,7 +7497,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Duyu Organları Kulak",
-    "lessonIds": ["duyu-organlari-kulak"],
+    "lessonIds": [
+      "duyu-organlari-kulak"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -7072,7 +7525,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Destek Hareket Sistemi Kemik",
-    "lessonIds": ["destek-hareket-kemik"],
+    "lessonIds": [
+      "destek-hareket-kemik"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -7098,7 +7553,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Destek Hareket Sistemi Kıkırdak ve Eklem",
-    "lessonIds": ["destek-hareket-kikirdak-eklem"],
+    "lessonIds": [
+      "destek-hareket-kikirdak-eklem"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -7125,7 +7582,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Asit ve bazların metallerle tepkimeleri",
-    "lessonIds": ["asit-baz-metaller"],
+    "lessonIds": [
+      "asit-baz-metaller"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -7151,7 +7610,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Hayatımızdaki asit ve bazlar",
-    "lessonIds": ["hayatimizda-asit-baz"],
+    "lessonIds": [
+      "hayatimizda-asit-baz"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -7181,7 +7642,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Sabun, Deterjan ve Temizlik Maddeleri",
-    "lessonIds": ["sabun-deterjan-temizlik"],
+    "lessonIds": [
+      "sabun-deterjan-temizlik"
+    ],
     "recommended": [
       {
         "channel": "Ferrum",
@@ -7208,7 +7671,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Anlatım bozuklukları",
-    "lessonIds": ["anlatim-bozukluklari"],
+    "lessonIds": [
+      "anlatim-bozukluklari"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -7239,7 +7704,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Atış hareketleri serbest düşme ve limit hız",
-    "lessonIds": ["serbest-dusme-limit-hiz"],
+    "lessonIds": [
+      "serbest-dusme-limit-hiz"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -7261,7 +7728,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Düşey atış hareketleri",
-    "lessonIds": ["dusey-atis"],
+    "lessonIds": [
+      "dusey-atis"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -7284,7 +7753,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Türkiye'de sular",
-    "lessonIds": ["turkiye-sulari"],
+    "lessonIds": [
+      "turkiye-sulari"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -7302,7 +7773,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Dünya'da topraklar",
-    "lessonIds": ["dunya-topraklari"],
+    "lessonIds": [
+      "dunya-topraklari"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -7328,7 +7801,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Yatay atış hareketi",
-    "lessonIds": ["yatay-atis"],
+    "lessonIds": [
+      "yatay-atis"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -7353,7 +7828,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Eğik atış hareketi",
-    "lessonIds": ["egik-atis"],
+    "lessonIds": [
+      "egik-atis"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -7378,7 +7855,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Polimerler, Kozmetik Ürünler ve İlaçlar",
-    "lessonIds": ["polimer-kozmetik-ilac"],
+    "lessonIds": [
+      "polimer-kozmetik-ilac"
+    ],
     "recommended": [
       {
         "channel": "Ferrum",
@@ -7406,7 +7885,9 @@
   {
     "subjectId": "tyt-kimya",
     "topic": "Polimer - hazır gıda - ilaç - yağ",
-    "lessonIds": ["polimer-gida-ilac-yag"],
+    "lessonIds": [
+      "polimer-gida-ilac-yag"
+    ],
     "recommended": [
       {
         "channel": "KİMYA ADASI",
@@ -7434,7 +7915,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Destek Hareket Sistemi Kas Doku",
-    "lessonIds": ["kas-doku"],
+    "lessonIds": [
+      "kas-doku"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -7471,7 +7954,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Enerji ve hareket",
-    "lessonIds": ["ayt-enerji-hareket"],
+    "lessonIds": [
+      "ayt-enerji-hareket"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -7499,7 +7984,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Modern atom teorisi / elektron dizilimi",
-    "lessonIds": ["ayt-modern-atom-elektron-dizilimi"],
+    "lessonIds": [
+      "ayt-modern-atom-elektron-dizilimi"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -7536,7 +8023,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Kuantum sayıları",
-    "lessonIds": ["ayt-kuantum-sayilari"],
+    "lessonIds": [
+      "ayt-kuantum-sayilari"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -7561,7 +8050,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Periyodik sisteme giriş ve atom çapı",
-    "lessonIds": ["ayt-periyodik-sistem-atom-capi"],
+    "lessonIds": [
+      "ayt-periyodik-sistem-atom-capi"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -7594,7 +8085,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Türkiye'de topraklar",
-    "lessonIds": ["turkiye-topraklari"],
+    "lessonIds": [
+      "turkiye-topraklari"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -7617,7 +8110,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Dünya'da bitkiler",
-    "lessonIds": ["dunya-bitkileri"],
+    "lessonIds": [
+      "dunya-bitkileri"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -7643,7 +8138,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Türkiye'de bitkiler",
-    "lessonIds": ["turkiye-bitkileri"],
+    "lessonIds": [
+      "turkiye-bitkileri"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -7666,7 +8163,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Dünya'da Yerleşmeler",
-    "lessonIds": ["dunya-yerlesmeleri"],
+    "lessonIds": [
+      "dunya-yerlesmeleri"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -7689,7 +8188,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Türkiye'de Yerleşmeler",
-    "lessonIds": ["turkiye-yerlesmeleri"],
+    "lessonIds": [
+      "turkiye-yerlesmeleri"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -7716,7 +8217,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Nüfusun önemi ve özellikleri",
-    "lessonIds": ["nufus-onemi-ozellikleri"],
+    "lessonIds": [
+      "nufus-onemi-ozellikleri"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -7739,7 +8242,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "İyonlaşma enerjisi / elektron ilgisi / elektronegatiflik",
-    "lessonIds": ["ayt-iyonlasma-elektron-ilgisi-en"],
+    "lessonIds": [
+      "ayt-iyonlasma-elektron-ilgisi-en"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -7772,7 +8277,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Metalik ametalik özellik, elementleri tanıyalım,yükseltgenme basamağı",
-    "lessonIds": ["ayt-elementler-yukseltgenme"],
+    "lessonIds": [
+      "ayt-elementler-yukseltgenme"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -7810,7 +8317,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Gazların özellikleri ve gaz yasaları",
-    "lessonIds": ["ayt-gaz-ozellikleri"],
+    "lessonIds": [
+      "ayt-gaz-ozellikleri"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -7853,7 +8362,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Gaz yasaları",
-    "lessonIds": ["ayt-gaz-yasalari"],
+    "lessonIds": [
+      "ayt-gaz-yasalari"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -7892,7 +8403,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Sindirim Sistemi Ağız Yutak Yemek Borusu",
-    "lessonIds": ["sindirim-agiz-yutak-yemek-borusu"],
+    "lessonIds": [
+      "sindirim-agiz-yutak-yemek-borusu"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -7925,7 +8438,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Sindirim Sistemi Mide",
-    "lessonIds": ["sindirim-mide"],
+    "lessonIds": [
+      "sindirim-mide"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -7953,7 +8468,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Sözcükte anlam",
-    "lessonIds": ["sozcukte-anlam"],
+    "lessonIds": [
+      "sozcukte-anlam"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -7984,7 +8501,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Sindirim Sistemi Bağırsaklar",
-    "lessonIds": ["sindirim-bagirsaklar"],
+    "lessonIds": [
+      "sindirim-bagirsaklar"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -8012,7 +8531,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Sindirim Sistemi Enzimler ve Hormonal Düzenleme",
-    "lessonIds": ["sindirim-enzimler-hormonlar"],
+    "lessonIds": [
+      "sindirim-enzimler-hormonlar"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -8040,7 +8561,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Sindirim Sistemi Karaciğer ve Safra Kesesi",
-    "lessonIds": ["sindirim-karaciger-safra"],
+    "lessonIds": [
+      "sindirim-karaciger-safra"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -8068,7 +8591,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Deyimler ve Atasözleri",
-    "lessonIds": ["deyimler-ve-atasozleri"],
+    "lessonIds": [
+      "deyimler-ve-atasozleri"
+    ],
     "recommended": [
       {
         "channel": "Emek TAŞTAN",
@@ -8086,7 +8611,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Cümlede anlam",
-    "lessonIds": ["cumlede-anlam"],
+    "lessonIds": [
+      "cumlede-anlam"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -8117,7 +8644,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "İtme ve momentum",
-    "lessonIds": ["itme-momentum"],
+    "lessonIds": [
+      "itme-momentum"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -8158,7 +8687,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Kesişen kuvvetlerin dengesi",
-    "lessonIds": ["kesisen-kuvvetler-dengesi"],
+    "lessonIds": [
+      "kesisen-kuvvetler-dengesi"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -8189,7 +8720,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Sindirim Sistemi Pankreas",
-    "lessonIds": ["sindirim-pankreas"],
+    "lessonIds": [
+      "sindirim-pankreas"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -8217,7 +8750,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Dolaşım Sistemi Kalp",
-    "lessonIds": ["dolasim-kalp"],
+    "lessonIds": [
+      "dolasim-kalp"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -8254,7 +8789,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Dolaşım Sistemi Damarlar ve Starling",
-    "lessonIds": ["dolasim-damarlar-starling"],
+    "lessonIds": [
+      "dolasim-damarlar-starling"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -8282,7 +8819,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Tork ve denge",
-    "lessonIds": ["tork-denge"],
+    "lessonIds": [
+      "tork-denge"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -8321,7 +8860,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Kinetik teori, ideal gaz denklemi, yoğunluk",
-    "lessonIds": ["ayt-kinetik-yogunluk"],
+    "lessonIds": [
+      "ayt-kinetik-yogunluk"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -8369,7 +8910,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Kısmi basınç/gaz karışımları/gazların su üstünde toplanması",
-    "lessonIds": ["ayt-kismi-basinci-suustu"],
+    "lessonIds": [
+      "ayt-kismi-basinci-suustu"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -8412,7 +8955,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Gerçek gaz / ideal gaz / faz diyagramı / kritik sıcaklık",
-    "lessonIds": ["ayt-gercek-gaz-faz"],
+    "lessonIds": [
+      "ayt-gercek-gaz-faz"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -8445,7 +8990,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Dünya'da nüfusun dağılışı",
-    "lessonIds": ["dunya-nufus-dagilisi"],
+    "lessonIds": [
+      "dunya-nufus-dagilisi"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -8468,7 +9015,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Nüfus piramitleri",
-    "lessonIds": ["nufus-piramitleri"],
+    "lessonIds": [
+      "nufus-piramitleri"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -8496,7 +9045,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Türkiye'de nüfus",
-    "lessonIds": ["turkiye-nufusu"],
+    "lessonIds": [
+      "turkiye-nufusu"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -8523,7 +9074,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Kütle ve ağırlık merkezi",
-    "lessonIds": ["kutle-agirlik-merkezi"],
+    "lessonIds": [
+      "kutle-agirlik-merkezi"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -8558,7 +9111,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Çözücü çözünen etkileşimleri ve çözeltilerde derişim",
-    "lessonIds": ["ayt-cozucu-cozunen"],
+    "lessonIds": [
+      "ayt-cozucu-cozunen"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -8601,7 +9156,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Molarite",
-    "lessonIds": ["ayt-molarite"],
+    "lessonIds": [
+      "ayt-molarite"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -8632,7 +9189,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Molarite / iyon derişimi",
-    "lessonIds": ["ayt-iyon-derisimi"],
+    "lessonIds": [
+      "ayt-iyon-derisimi"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -8665,7 +9224,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Dünya ve Türkiye'de göçler",
-    "lessonIds": ["dunya-turkiye-gocler"],
+    "lessonIds": [
+      "dunya-turkiye-gocler"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -8693,7 +9254,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Ekonomik faaliyetler",
-    "lessonIds": ["ekonomik-faaliyetler"],
+    "lessonIds": [
+      "ekonomik-faaliyetler"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -8715,7 +9278,9 @@
   {
     "subjectId": "tyt-geometri",
     "topic": "Noktanın Analitiği",
-    "lessonIds": ["noktanin-analitigi"],
+    "lessonIds": [
+      "noktanin-analitigi"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -8748,7 +9313,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Paragrafa Giriş",
-    "lessonIds": ["paragrafa-giris"],
+    "lessonIds": [
+      "paragrafa-giris"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -8776,7 +9343,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Basit makineler",
-    "lessonIds": ["basit-makineler-ayt"],
+    "lessonIds": [
+      "basit-makineler-ayt"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -8819,7 +9388,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Elektriksel kuvvet",
-    "lessonIds": ["elektriksel-kuvvet-ayt"],
+    "lessonIds": [
+      "elektriksel-kuvvet-ayt"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -8849,7 +9420,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Dolaşım Sistemi Kan Doku",
-    "lessonIds": ["dolasim-kan-doku"],
+    "lessonIds": [
+      "dolasim-kan-doku"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -8876,7 +9449,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Lenf Sistemi",
-    "lessonIds": ["lenf-sistemi"],
+    "lessonIds": [
+      "lenf-sistemi"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -8913,7 +9488,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Bağışıklık Sistemi",
-    "lessonIds": ["bagisiklik-sistemi"],
+    "lessonIds": [
+      "bagisiklik-sistemi"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -8955,7 +9532,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Paragrafta ana düşünce",
-    "lessonIds": ["paragraf"],
+    "lessonIds": [
+      "paragraf"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -8981,7 +9560,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Paragrafta yardımcı düşünce",
-    "lessonIds": ["yardimci-dusunce"],
+    "lessonIds": [
+      "yardimci-dusunce"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -9008,7 +9589,9 @@
   {
     "subjectId": "ayt-geometri",
     "topic": "Doğrunun Analitiği",
-    "lessonIds": ["dogrunun-analitigi"],
+    "lessonIds": [
+      "dogrunun-analitigi"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -9041,7 +9624,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Solunum Sistemi Organlar",
-    "lessonIds": ["solunum-organlar"],
+    "lessonIds": [
+      "solunum-organlar"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -9073,7 +9658,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Solunum Sistemi Soluk Alışverişi",
-    "lessonIds": ["soluk-alisverisi"],
+    "lessonIds": [
+      "soluk-alisverisi"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -9096,7 +9683,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Bölge ve bölge türleri",
-    "lessonIds": ["bolge-turleri"],
+    "lessonIds": [
+      "bolge-turleri"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -9123,7 +9712,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Ulaşım",
-    "lessonIds": ["ulasim-aglari"],
+    "lessonIds": [
+      "ulasim-aglari"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -9145,7 +9736,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Molalite /koligatif özellikler",
-    "lessonIds": ["ayt-molalite-koligatif"],
+    "lessonIds": [
+      "ayt-molalite-koligatif"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -9173,7 +9766,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Çözünürlük",
-    "lessonIds": ["ayt-cozunurluk"],
+    "lessonIds": [
+      "ayt-cozunurluk"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -9203,7 +9798,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Kimyasal tepkimelerde enerji",
-    "lessonIds": ["ayt-tepkimelerde-enerji"],
+    "lessonIds": [
+      "ayt-tepkimelerde-enerji"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -9234,7 +9831,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Çevre ve Toplum",
-    "lessonIds": ["cevre-toplum"],
+    "lessonIds": [
+      "cevre-toplum"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -9262,7 +9861,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Afetler",
-    "lessonIds": ["afetler-risk"],
+    "lessonIds": [
+      "afetler-risk"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -9284,7 +9885,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Elektriksel alan",
-    "lessonIds": ["elektrik-alan"],
+    "lessonIds": [
+      "elektrik-alan"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -9315,7 +9918,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Elektriksel potansiyel enerji",
-    "lessonIds": ["elektriksel-potansiyel-enerji"],
+    "lessonIds": [
+      "elektriksel-potansiyel-enerji"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -9346,7 +9951,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Entalpi / bağ enerjileri/hess yasası",
-    "lessonIds": ["ayt-entalpi-bag-hess"],
+    "lessonIds": [
+      "ayt-entalpi-bag-hess"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -9379,7 +9986,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Kimyasal tepkimelerde hız",
-    "lessonIds": ["ayt-tepkime-hizi"],
+    "lessonIds": [
+      "ayt-tepkime-hizi"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -9421,7 +10030,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Solunum Sistemi Gazların Taşınması",
-    "lessonIds": ["solunum-gaz-tasinmasi"],
+    "lessonIds": [
+      "solunum-gaz-tasinmasi"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -9453,7 +10064,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Üriner Sistem Organlar",
-    "lessonIds": ["uriner-organlar"],
+    "lessonIds": [
+      "uriner-organlar"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -9480,7 +10093,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Üriner Sistem Nefronun İşleyişi",
-    "lessonIds": ["nefron-isleyisi"],
+    "lessonIds": [
+      "nefron-isleyisi"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -9508,7 +10123,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Üreme Sistemi Erkek Üreme Organları",
-    "lessonIds": ["erkek-ureme-organlari"],
+    "lessonIds": [
+      "erkek-ureme-organlari"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -9540,7 +10157,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Kimyasal tepkimelerde denge",
-    "lessonIds": ["kimyasal-denge"],
+    "lessonIds": [
+      "kimyasal-denge"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -9571,7 +10190,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Denge hesaplamaları",
-    "lessonIds": ["ayt-denge-hesaplari"],
+    "lessonIds": [
+      "ayt-denge-hesaplari"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -9601,7 +10222,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Dengeye etki eden faktörler/derişim etkisi",
-    "lessonIds": ["ayt-denge-derisim"],
+    "lessonIds": [
+      "ayt-denge-derisim"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -9618,7 +10241,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Dengeye etki eden faktörler/sıcaklık etkisi/denge kesri",
-    "lessonIds": ["ayt-denge-sicaklik-kesir"],
+    "lessonIds": [
+      "ayt-denge-sicaklik-kesir"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -9651,7 +10276,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Elektriksel potansiyel",
-    "lessonIds": ["elektriksel-potansiyel"],
+    "lessonIds": [
+      "elektriksel-potansiyel"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -9682,7 +10309,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Düzgün elektrik alan ve paralel levhalar",
-    "lessonIds": ["duzgun-alan-paralel-levhalar"],
+    "lessonIds": [
+      "duzgun-alan-paralel-levhalar"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -9709,7 +10338,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Sığaçlar-kondansatörler",
-    "lessonIds": ["sigaclar-kondansatorler"],
+    "lessonIds": [
+      "sigaclar-kondansatorler"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -9736,7 +10367,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Paragrafta ikiye bölme",
-    "lessonIds": ["ikiye-bolme"],
+    "lessonIds": [
+      "ikiye-bolme"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -9754,7 +10387,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Paragrafta akışı bozan cümleler",
-    "lessonIds": ["akisi-bozan-cumle"],
+    "lessonIds": [
+      "akisi-bozan-cumle"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -9771,7 +10406,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Manyetik alan",
-    "lessonIds": ["manyetik-alan-ayt"],
+    "lessonIds": [
+      "manyetik-alan-ayt"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -9798,7 +10435,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Üreme Sistemi Kadın Üreme Organları",
-    "lessonIds": ["ureme-kadin-organlar"],
+    "lessonIds": [
+      "ureme-kadin-organlar"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -9826,7 +10465,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Üreme Sistemi Gametogenez",
-    "lessonIds": ["ureme-gametogenez"],
+    "lessonIds": [
+      "ureme-gametogenez"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -9849,7 +10490,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Üreme Sistemi Menstrual Döngü",
-    "lessonIds": ["ureme-menstrual-dongu"],
+    "lessonIds": [
+      "ureme-menstrual-dongu"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -9871,7 +10514,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Dünya'nın şekli ve hareketleri",
-    "lessonIds": ["dunya-sekli-hareket"],
+    "lessonIds": [
+      "dunya-sekli-hareket"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -9894,7 +10539,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Coğrafi konum",
-    "lessonIds": ["cografi-konum"],
+    "lessonIds": [
+      "cografi-konum"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -9916,7 +10563,9 @@
   {
     "subjectId": "tyt-cografya",
     "topic": "Harita bilgisi",
-    "lessonIds": ["harita-bilgisi"],
+    "lessonIds": [
+      "harita-bilgisi"
+    ],
     "recommended": [
       {
         "channel": "Coğrafyanın Kodları",
@@ -9943,7 +10592,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Dengeye etki eden faktörler/basınç-hacim etkisi",
-    "lessonIds": ["ayt-denge-basinc-hacim"],
+    "lessonIds": [
+      "ayt-denge-basinc-hacim"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -9965,7 +10616,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Sulu çözeltilerde denge/asit baz dengesi",
-    "lessonIds": ["ayt-sulu-asit-baz-denge"],
+    "lessonIds": [
+      "ayt-sulu-asit-baz-denge"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -9996,7 +10649,9 @@
   {
     "subjectId": "tyt-felsefe",
     "topic": "Felsefeyi Tanıma",
-    "lessonIds": ["felsefeyi-tanima"],
+    "lessonIds": [
+      "felsefeyi-tanima"
+    ],
     "recommended": [
       {
         "channel": "Benim Hocam",
@@ -10023,7 +10678,9 @@
   {
     "subjectId": "tyt-felsefe",
     "topic": "Felsefe ile Düşünme",
-    "lessonIds": ["felsefe-ile-dusunme"],
+    "lessonIds": [
+      "felsefe-ile-dusunme"
+    ],
     "recommended": [
       {
         "channel": "Benim Hocam",
@@ -10050,7 +10707,9 @@
   {
     "subjectId": "tyt-felsefe",
     "topic": "Varlık Felsefesi",
-    "lessonIds": ["varlik-felsefesi"],
+    "lessonIds": [
+      "varlik-felsefesi"
+    ],
     "recommended": [
       {
         "channel": "Benim Hocam",
@@ -10072,7 +10731,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Üreme Sistemi Embriyonik Gelişim",
-    "lessonIds": ["ureme-embriyonik-gelisim"],
+    "lessonIds": [
+      "ureme-embriyonik-gelisim"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -10103,7 +10764,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Komünite Ekolojisi",
-    "lessonIds": ["ekoloji-komunite"],
+    "lessonIds": [
+      "ekoloji-komunite"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -10146,7 +10809,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Manyetik kuvvet",
-    "lessonIds": ["manyetik-kuvvet"],
+    "lessonIds": [
+      "manyetik-kuvvet"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -10176,7 +10841,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Elektromanyetik indüksiyon",
-    "lessonIds": ["elektromanyetik-induksiyon"],
+    "lessonIds": [
+      "elektromanyetik-induksiyon"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -10201,7 +10868,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Alternatif akım",
-    "lessonIds": ["alternatif-akim"],
+    "lessonIds": [
+      "alternatif-akim"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -10232,7 +10901,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Transformatör",
-    "lessonIds": ["transformatorler"],
+    "lessonIds": [
+      "transformatorler"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -10254,7 +10925,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Çembersel hareket",
-    "lessonIds": ["cembersel-hareket"],
+    "lessonIds": [
+      "cembersel-hareket"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -10296,7 +10969,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Zayıf asit bazlarda denge tampon çözeltiler tuzlarda asitlik bazlık",
-    "lessonIds": ["ayt-zayif-asit-baz-tampon"],
+    "lessonIds": [
+      "ayt-zayif-asit-baz-tampon"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -10329,7 +11004,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Hidroliz",
-    "lessonIds": ["ayt-hidroliz"],
+    "lessonIds": [
+      "ayt-hidroliz"
+    ],
     "recommended": [
       {
         "channel": "Ferrum",
@@ -10356,7 +11033,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Nötralleşme tepkimeleri",
-    "lessonIds": ["ayt-notrallesme"],
+    "lessonIds": [
+      "ayt-notrallesme"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -10383,7 +11062,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Popülasyon Ekolojisi",
-    "lessonIds": ["ekoloji-populasyon"],
+    "lessonIds": [
+      "ekoloji-populasyon"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -10420,7 +11101,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Nükleik Asitler",
-    "lessonIds": ["nukleik-asitler-yapi"],
+    "lessonIds": [
+      "nukleik-asitler-yapi"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -10456,7 +11139,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Kalıtım Molekülünün Keşfi",
-    "lessonIds": ["kalitim-molekulu-kesfi"],
+    "lessonIds": [
+      "kalitim-molekulu-kesfi"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -10487,7 +11172,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "DNA Replikasyonu",
-    "lessonIds": ["dna-eslenmesi"],
+    "lessonIds": [
+      "dna-eslenmesi"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -10523,7 +11210,9 @@
   {
     "subjectId": "tyt-felsefe",
     "topic": "Bilgi Felsefesi",
-    "lessonIds": ["bilgi-felsefesi"],
+    "lessonIds": [
+      "bilgi-felsefesi"
+    ],
     "recommended": [
       {
         "channel": "Benim Hocam",
@@ -10545,7 +11234,9 @@
   {
     "subjectId": "tyt-felsefe",
     "topic": "Bilim Felsefesi",
-    "lessonIds": ["bilim-felsefesi"],
+    "lessonIds": [
+      "bilim-felsefesi"
+    ],
     "recommended": [
       {
         "channel": "Benim Hocam",
@@ -10567,7 +11258,9 @@
   {
     "subjectId": "tyt-felsefe",
     "topic": "Ahlak Felsefesi",
-    "lessonIds": ["ahlak-felsefesi"],
+    "lessonIds": [
+      "ahlak-felsefesi"
+    ],
     "recommended": [
       {
         "channel": "Benim Hocam",
@@ -10589,7 +11282,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Titrasyon",
-    "lessonIds": ["ayt-titrasyon"],
+    "lessonIds": [
+      "ayt-titrasyon"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -10615,7 +11310,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "ÇÖZÜNÜRLÜK DENGESİ / MOLAR ÇÖZÜNÜRLÜK Kç İLİŞKİSİ",
-    "lessonIds": ["ayt-cozunurluk-dengesi"],
+    "lessonIds": [
+      "ayt-cozunurluk-dengesi"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -10645,7 +11342,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Dönerek öteleme hareketi",
-    "lessonIds": ["donerek-oteleme-hareketi"],
+    "lessonIds": [
+      "donerek-oteleme-hareketi"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -10671,7 +11370,9 @@
   {
     "subjectId": "ayt-geometri",
     "topic": "Dönüşümler: Öteleme ve Dönme",
-    "lessonIds": ["donusum-oteleme-donme"],
+    "lessonIds": [
+      "donusum-oteleme-donme"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -10699,7 +11400,9 @@
   {
     "subjectId": "ayt-geometri",
     "topic": "Dönüşümler: Yansıma ve Simetri",
-    "lessonIds": ["donusum-yansima-simetri"],
+    "lessonIds": [
+      "donusum-yansima-simetri"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -10727,7 +11430,9 @@
   {
     "subjectId": "ayt-geometri",
     "topic": "Çemberin analitiği",
-    "lessonIds": ["cemberin-analitigi"],
+    "lessonIds": [
+      "cemberin-analitigi"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -10771,7 +11476,9 @@
   {
     "subjectId": "ayt-matematik",
     "topic": "Fonksiyonlar",
-    "lessonIds": ["ayt-fonksiyonlar"],
+    "lessonIds": [
+      "ayt-fonksiyonlar"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -10818,7 +11525,9 @@
   {
     "subjectId": "tyt-felsefe",
     "topic": "Din Felsefesi",
-    "lessonIds": ["din-felsefesi"],
+    "lessonIds": [
+      "din-felsefesi"
+    ],
     "recommended": [
       {
         "channel": "Benim Hocam",
@@ -10835,7 +11544,9 @@
   {
     "subjectId": "tyt-felsefe",
     "topic": "Siyaset Felsefesi",
-    "lessonIds": ["siyaset-felsefesi"],
+    "lessonIds": [
+      "siyaset-felsefesi"
+    ],
     "recommended": [
       {
         "channel": "Benim Hocam",
@@ -10857,7 +11568,9 @@
   {
     "subjectId": "tyt-felsefe",
     "topic": "Sanat Felsefesi",
-    "lessonIds": ["sanat-felsefesi"],
+    "lessonIds": [
+      "sanat-felsefesi"
+    ],
     "recommended": [
       {
         "channel": "Benim Hocam",
@@ -10879,7 +11592,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Çözünürlük dengesine etki eden faktörler/sıcaklık ve ortak iyon etkisi",
-    "lessonIds": ["cozunurluk-faktorleri"],
+    "lessonIds": [
+      "cozunurluk-faktorleri"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -10906,7 +11621,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Elektrokimya redox denkleştirme",
-    "lessonIds": ["redoks-denklestirme"],
+    "lessonIds": [
+      "redoks-denklestirme"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -10941,7 +11658,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Paragrafta sıralama",
-    "lessonIds": ["paragrafta-siralama"],
+    "lessonIds": [
+      "paragrafta-siralama"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -10964,7 +11683,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Paragrafta cümle ekleme",
-    "lessonIds": ["paragrafta-cumle-ekleme"],
+    "lessonIds": [
+      "paragrafta-cumle-ekleme"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -10982,7 +11703,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Paragrafta boşluk doldurma",
-    "lessonIds": ["paragrafta-bosluk-doldurma"],
+    "lessonIds": [
+      "paragrafta-bosluk-doldurma"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -11004,7 +11727,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Kodon Antikodon İlişkisi",
-    "lessonIds": ["ayt-kodon-antikodon"],
+    "lessonIds": [
+      "ayt-kodon-antikodon"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -11022,7 +11747,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Protein Sentezi",
-    "lessonIds": ["ayt-protein-sentezi"],
+    "lessonIds": [
+      "ayt-protein-sentezi"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -11063,7 +11790,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Biyoteknoloji",
-    "lessonIds": ["ayt-biyoteknoloji"],
+    "lessonIds": [
+      "ayt-biyoteknoloji"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -11110,7 +11839,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Fotosentez: Genel Kurallar",
-    "lessonIds": ["ayt-fotosentez-genel"],
+    "lessonIds": [
+      "ayt-fotosentez-genel"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -11148,7 +11879,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Açısal momentum",
-    "lessonIds": ["acisal-momentum"],
+    "lessonIds": [
+      "acisal-momentum"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -11179,7 +11912,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Newton genel çekim yasası",
-    "lessonIds": ["newton-genel-cekim-yasasi"],
+    "lessonIds": [
+      "newton-genel-cekim-yasasi"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -11201,7 +11936,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Kepler yasaları",
-    "lessonIds": ["kepler-yasalari"],
+    "lessonIds": [
+      "kepler-yasalari"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -11232,7 +11969,9 @@
   {
     "subjectId": "ayt-matematik",
     "topic": "Polinomlar",
-    "lessonIds": ["ayt-polinomlar"],
+    "lessonIds": [
+      "ayt-polinomlar"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -11279,7 +12018,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Fotosentez: Tepkimeler",
-    "lessonIds": ["ayt-fotosentez-tepkimeler"],
+    "lessonIds": [
+      "ayt-fotosentez-tepkimeler"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -11312,7 +12053,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Fotosentez: Çevresel ve Genetik Faktörler",
-    "lessonIds": ["fotosentez-hiz-faktorleri"],
+    "lessonIds": [
+      "fotosentez-hiz-faktorleri"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -11335,7 +12078,9 @@
   {
     "subjectId": "tyt-felsefe",
     "topic": "Felsefi Okuma ve Yazma",
-    "lessonIds": ["felsefi-okuma-ve-yazma"],
+    "lessonIds": [
+      "felsefi-okuma-ve-yazma"
+    ],
     "recommended": [
       {
         "channel": "Benim Hocam",
@@ -11358,7 +12103,9 @@
   {
     "subjectId": "tyt-felsefe",
     "topic": "İlk Çağ Felsefesi",
-    "lessonIds": ["ilk-cag-felsefesi"],
+    "lessonIds": [
+      "ilk-cag-felsefesi"
+    ],
     "recommended": [
       {
         "channel": "Benim Hocam",
@@ -11381,7 +12128,9 @@
   {
     "subjectId": "tyt-felsefe",
     "topic": "Orta Çağ Felsefesi",
-    "lessonIds": ["orta-cag-felsefesi"],
+    "lessonIds": [
+      "orta-cag-felsefesi"
+    ],
     "recommended": [
       {
         "channel": "Benim Hocam",
@@ -11403,7 +12152,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Kemosentez",
-    "lessonIds": ["kemosentez-enerji-karbon"],
+    "lessonIds": [
+      "kemosentez-enerji-karbon"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -11436,7 +12187,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Oksijenli Solunum",
-    "lessonIds": ["solunum-oksijenli-bilanco"],
+    "lessonIds": [
+      "solunum-oksijenli-bilanco"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -11463,7 +12216,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Oksijensiz Solunum",
-    "lessonIds": ["solunum-oksijensiz-alicilar"],
+    "lessonIds": [
+      "solunum-oksijensiz-alicilar"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -11491,7 +12246,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Elektrokimya aktiflik",
-    "lessonIds": ["metalik-aktiflik"],
+    "lessonIds": [
+      "metalik-aktiflik"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -11516,7 +12273,9 @@
   {
     "subjectId": "ayt-matematik",
     "topic": "2.Dereceden Denklemler",
-    "lessonIds": ["ayt-ikinci-dereceden-denklemler"],
+    "lessonIds": [
+      "ayt-ikinci-dereceden-denklemler"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -11563,7 +12322,9 @@
   {
     "subjectId": "ayt-matematik",
     "topic": "Karmaşık Sayılar",
-    "lessonIds": ["ayt-karmasik-sayilar"],
+    "lessonIds": [
+      "ayt-karmasik-sayilar"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -11600,7 +12361,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Elektrokimyasal piller",
-    "lessonIds": ["elektrokimyasal-piller"],
+    "lessonIds": [
+      "elektrokimyasal-piller"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -11625,7 +12388,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Pil gerilimine etki eden faktörler ve derişim pilleri",
-    "lessonIds": ["pil-gerilimi-derisim-pilleri"],
+    "lessonIds": [
+      "pil-gerilimi-derisim-pilleri"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -11663,7 +12428,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Elektroliz",
-    "lessonIds": ["elektroliz"],
+    "lessonIds": [
+      "elektroliz"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -11692,7 +12459,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Basit harmonik hareket",
-    "lessonIds": ["basit-harmonik-hareket"],
+    "lessonIds": [
+      "basit-harmonik-hareket"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -11733,7 +12502,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Paragrafta anlatım biçimleri",
-    "lessonIds": ["paragrafta-anlatim-bicimleri"],
+    "lessonIds": [
+      "paragrafta-anlatim-bicimleri"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -11764,7 +12535,9 @@
   {
     "subjectId": "tyt-felsefe",
     "topic": "Rönesans Felsefesi",
-    "lessonIds": ["ronesans-felsefesi"],
+    "lessonIds": [
+      "ronesans-felsefesi"
+    ],
     "recommended": [
       {
         "channel": "Benim Hocam",
@@ -11787,7 +12560,9 @@
   {
     "subjectId": "tyt-felsefe",
     "topic": "15–17. Yüzyıl Felsefesi: Hümanizm, Bilimsel Yöntem, Kartezyen Düşünce ve Hukuk Felsefesi",
-    "lessonIds": ["15-17-yuzyil-felsefesi"],
+    "lessonIds": [
+      "15-17-yuzyil-felsefesi"
+    ],
     "recommended": [
       {
         "channel": "Hocalara Geldik",
@@ -11810,7 +12585,9 @@
   {
     "subjectId": "tyt-felsefe",
     "topic": "Aydınlanma Felsefesi",
-    "lessonIds": ["aydinlanma-felsefesi"],
+    "lessonIds": [
+      "aydinlanma-felsefesi"
+    ],
     "recommended": [
       {
         "channel": "Benim Hocam",
@@ -11833,7 +12610,9 @@
   {
     "subjectId": "tyt-felsefe",
     "topic": "18–19. Yüzyıl Felsefesi: Akıl-Deney ve Birey-Devlet İlişkisi",
-    "lessonIds": ["18-19-yuzyil-felsefesi"],
+    "lessonIds": [
+      "18-19-yuzyil-felsefesi"
+    ],
     "recommended": [
       {
         "channel": "Hocalara Geldik",
@@ -11856,7 +12635,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Elektroliz faraday yasaları",
-    "lessonIds": ["faraday-yasalari"],
+    "lessonIds": [
+      "faraday-yasalari"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -11882,7 +12663,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Korozyon, Katodik Koruma",
-    "lessonIds": ["korozyon-katodik-koruma"],
+    "lessonIds": [
+      "korozyon-katodik-koruma"
+    ],
     "recommended": [
       {
         "channel": "Ferrum",
@@ -11905,7 +12688,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Karbon kimyasına giriş",
-    "lessonIds": ["karbon-kimyasina-giris"],
+    "lessonIds": [
+      "karbon-kimyasina-giris"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -11932,7 +12717,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Basit ve Molekül Formül",
-    "lessonIds": ["basit-ve-molekul-formul"],
+    "lessonIds": [
+      "basit-ve-molekul-formul"
+    ],
     "recommended": [
       {
         "channel": "Ferrum",
@@ -11955,7 +12742,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Hibritleşme",
-    "lessonIds": ["hibritlesme"],
+    "lessonIds": [
+      "hibritlesme"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -11980,7 +12769,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Molekül geometrisi",
-    "lessonIds": ["molekul-geometrisi"],
+    "lessonIds": [
+      "molekul-geometrisi"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -12005,7 +12796,9 @@
   {
     "subjectId": "tyt-felsefe",
     "topic": "Çağdaş Felsefe",
-    "lessonIds": ["cagdas-felsefe"],
+    "lessonIds": [
+      "cagdas-felsefe"
+    ],
     "recommended": [
       {
         "channel": "Benim Hocam",
@@ -12028,7 +12821,9 @@
   {
     "subjectId": "ayt-matematik",
     "topic": "Eşitsizlikler",
-    "lessonIds": ["ayt-esitsizlikler"],
+    "lessonIds": [
+      "ayt-esitsizlikler"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -12065,7 +12860,9 @@
   {
     "subjectId": "ayt-matematik",
     "topic": "Parabol",
-    "lessonIds": ["ayt-parabol"],
+    "lessonIds": [
+      "ayt-parabol"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -12107,7 +12904,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Su dalgalarında kırınım",
-    "lessonIds": ["su-dalgalarinda-kirinim"],
+    "lessonIds": [
+      "su-dalgalarinda-kirinim"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -12134,7 +12933,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Su dalgalarında girişim",
-    "lessonIds": ["su-dalgalarinda-girisim"],
+    "lessonIds": [
+      "su-dalgalarinda-girisim"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -12161,7 +12962,9 @@
   {
     "subjectId": "ayt-matematik",
     "topic": "Trigonometri",
-    "lessonIds": ["ayt-trigonometri"],
+    "lessonIds": [
+      "ayt-trigonometri"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -12208,7 +13011,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Alkanlar",
-    "lessonIds": ["alkanlar"],
+    "lessonIds": [
+      "alkanlar"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -12241,7 +13046,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Fermentasyon",
-    "lessonIds": ["ayt-fermantasyon"],
+    "lessonIds": [
+      "ayt-fermantasyon"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -12279,7 +13086,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Fotosentez - solunum ilişkisi",
-    "lessonIds": ["ayt-fotosentez-solunum"],
+    "lessonIds": [
+      "ayt-fotosentez-solunum"
+    ],
     "recommended": [
       {
         "channel": "Seda Hoca Biyoloji",
@@ -12306,7 +13115,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Bitkisel Dokular - Meristem Doku",
-    "lessonIds": ["ayt-meristem-doku"],
+    "lessonIds": [
+      "ayt-meristem-doku"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -12329,7 +13140,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Bitkisel Dokular - Temel Doku",
-    "lessonIds": ["ayt-temel-doku"],
+    "lessonIds": [
+      "ayt-temel-doku"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -12352,7 +13165,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Bitkisel Dokular - İletim Doku",
-    "lessonIds": ["ayt-iletim-doku"],
+    "lessonIds": [
+      "ayt-iletim-doku"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -12375,7 +13190,9 @@
   {
     "subjectId": "tyt-din",
     "topic": "Bilgi ve inanç",
-    "lessonIds": ["bilgi-ve-inanc"],
+    "lessonIds": [
+      "bilgi-ve-inanc"
+    ],
     "recommended": [
       {
         "channel": "Emre Yürük",
@@ -12403,7 +13220,9 @@
   {
     "subjectId": "tyt-din",
     "topic": "Din ve islam",
-    "lessonIds": ["din-ve-islam"],
+    "lessonIds": [
+      "din-ve-islam"
+    ],
     "recommended": [
       {
         "channel": "Emre Yürük",
@@ -12425,7 +13244,9 @@
   {
     "subjectId": "tyt-din",
     "topic": "İslam ve ibadet",
-    "lessonIds": ["islam-ve-ibadet"],
+    "lessonIds": [
+      "islam-ve-ibadet"
+    ],
     "recommended": [
       {
         "channel": "Emre Yürük",
@@ -12452,7 +13273,9 @@
   {
     "subjectId": "tyt-din",
     "topic": "Ahlak ve değerler - ahlaki tutum ve davranışlar",
-    "lessonIds": ["ahlaki-tutum-ve-davranislar"],
+    "lessonIds": [
+      "ahlaki-tutum-ve-davranislar"
+    ],
     "recommended": [
       {
         "channel": "Emre Yürük",
@@ -12475,7 +13298,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Sikloalkanlar ve izomerlik",
-    "lessonIds": ["ayt-sikloalkanlar"],
+    "lessonIds": [
+      "ayt-sikloalkanlar"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -12503,7 +13328,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Alkenler",
-    "lessonIds": ["ayt-alkenler"],
+    "lessonIds": [
+      "ayt-alkenler"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -12535,7 +13362,9 @@
   {
     "subjectId": "tyt-din",
     "topic": "Gençlik ve Değerler",
-    "lessonIds": ["genclik-ve-degerler"],
+    "lessonIds": [
+      "genclik-ve-degerler"
+    ],
     "recommended": [
       {
         "channel": "tonguç 9. SINIF",
@@ -12548,7 +13377,9 @@
   {
     "subjectId": "tyt-din",
     "topic": "Gönül coğrafyamız",
-    "lessonIds": ["gonul-cografyamiz"],
+    "lessonIds": [
+      "gonul-cografyamiz"
+    ],
     "recommended": [
       {
         "channel": "Emre Yürük",
@@ -12566,7 +13397,9 @@
   {
     "subjectId": "ayt-matematik",
     "topic": "Toplam-Fark ve Yarım Açı Formülleri",
-    "lessonIds": ["ayt-toplam-fark-yarim-aci"],
+    "lessonIds": [
+      "ayt-toplam-fark-yarim-aci"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -12599,7 +13432,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Işık teorileri",
-    "lessonIds": ["isik-teorileri"],
+    "lessonIds": [
+      "isik-teorileri"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -12632,7 +13467,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Doppler etkisi",
-    "lessonIds": ["doppler-etkisi"],
+    "lessonIds": [
+      "doppler-etkisi"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -12658,7 +13495,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Elektromanyetik dalgalar",
-    "lessonIds": ["elektromanyetik-dalgalar"],
+    "lessonIds": [
+      "elektromanyetik-dalgalar"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -12689,7 +13528,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Atom modelleri",
-    "lessonIds": ["atom-modelleri-fizik"],
+    "lessonIds": [
+      "atom-modelleri-fizik"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -12726,7 +13567,9 @@
   {
     "subjectId": "ayt-matematik",
     "topic": "Trigonometrik Denklemler",
-    "lessonIds": ["ayt-trigonometrik-denklemler"],
+    "lessonIds": [
+      "ayt-trigonometrik-denklemler"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -12754,7 +13597,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Paragrafta soru cevap",
-    "lessonIds": ["paragrafta-soru-cevap"],
+    "lessonIds": [
+      "paragrafta-soru-cevap"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -12777,7 +13622,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Paragrafta röportaj",
-    "lessonIds": ["paragrafta-roportaj"],
+    "lessonIds": [
+      "paragrafta-roportaj"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -12800,7 +13647,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Bitkisel Dokular - Örtü Doku",
-    "lessonIds": ["bitki-ortu-doku"],
+    "lessonIds": [
+      "bitki-ortu-doku"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -12823,7 +13672,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Alkinler",
-    "lessonIds": ["ayt-alkinler"],
+    "lessonIds": [
+      "ayt-alkinler"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -12855,7 +13706,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Aromatik bileşikler /arenler",
-    "lessonIds": ["ayt-arenler"],
+    "lessonIds": [
+      "ayt-arenler"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -12880,7 +13733,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Fonksiyonel gruplar / alkoller",
-    "lessonIds": ["ayt-alkoller"],
+    "lessonIds": [
+      "ayt-alkoller"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -12908,7 +13763,9 @@
   {
     "subjectId": "ayt-matematik",
     "topic": "Logaritma",
-    "lessonIds": ["ayt-logaritma"],
+    "lessonIds": [
+      "ayt-logaritma"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -12955,7 +13812,9 @@
   {
     "subjectId": "tyt-din",
     "topic": "Din ve hayat",
-    "lessonIds": ["din-ve-hayat"],
+    "lessonIds": [
+      "din-ve-hayat"
+    ],
     "recommended": [
       {
         "channel": "Emre Yürük",
@@ -12973,7 +13832,9 @@
   {
     "subjectId": "tyt-din",
     "topic": "Hz. muhammed ve gençler",
-    "lessonIds": ["hz-muhammed-ve-gencler"],
+    "lessonIds": [
+      "hz-muhammed-ve-gencler"
+    ],
     "recommended": [
       {
         "channel": "Emre Yürük",
@@ -12991,7 +13852,9 @@
   {
     "subjectId": "tyt-din",
     "topic": "Allah ve insan ilişkisi",
-    "lessonIds": ["allah-ve-insan-iliskisi"],
+    "lessonIds": [
+      "allah-ve-insan-iliskisi"
+    ],
     "recommended": [
       {
         "channel": "Emre Yürük",
@@ -13009,7 +13872,9 @@
   {
     "subjectId": "tyt-din",
     "topic": "İslam düşüncesinde mezhepler",
-    "lessonIds": ["islam-dusuncesinde-mezhepler"],
+    "lessonIds": [
+      "islam-dusuncesinde-mezhepler"
+    ],
     "recommended": [
       {
         "channel": "Emre Yürük",
@@ -13032,7 +13897,9 @@
   {
     "subjectId": "tyt-din",
     "topic": "Kur'ana göre hz.muhammed",
-    "lessonIds": ["kur-ana-gore-hz-muhammed"],
+    "lessonIds": [
+      "kur-ana-gore-hz-muhammed"
+    ],
     "recommended": [
       {
         "channel": "Emre Yürük",
@@ -13054,7 +13921,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Bitkisel Organlar - Kök",
-    "lessonIds": ["bitki-kok-anatomisi"],
+    "lessonIds": [
+      "bitki-kok-anatomisi"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -13082,7 +13951,9 @@
   {
     "subjectId": "ayt-matematik",
     "topic": "Diziler",
-    "lessonIds": ["ayt-diziler"],
+    "lessonIds": [
+      "ayt-diziler"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -13129,7 +14000,9 @@
   {
     "subjectId": "ayt-matematik",
     "topic": "Limit ve süreklilik",
-    "lessonIds": ["ayt-limit-sureklilik"],
+    "lessonIds": [
+      "ayt-limit-sureklilik"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -13167,7 +14040,9 @@
   {
     "subjectId": "tyt-din",
     "topic": "Kur'anda geçen bazı kavramlar",
-    "lessonIds": ["kur-anda-gecen-bazi-kavramlar"],
+    "lessonIds": [
+      "kur-anda-gecen-bazi-kavramlar"
+    ],
     "recommended": [
       {
         "channel": "Emre Yürük",
@@ -13190,7 +14065,9 @@
   {
     "subjectId": "tyt-din",
     "topic": "İnanç ile ilgili meseleler",
-    "lessonIds": ["inanc-ile-ilgili-meseleler"],
+    "lessonIds": [
+      "inanc-ile-ilgili-meseleler"
+    ],
     "recommended": [
       {
         "channel": "Emre Yürük",
@@ -13209,7 +14086,9 @@
   {
     "subjectId": "tyt-din",
     "topic": "Dünya ve ahiret",
-    "lessonIds": ["dunya-ve-ahiret"],
+    "lessonIds": [
+      "dunya-ve-ahiret"
+    ],
     "recommended": [
       {
         "channel": "Emre Yürük",
@@ -13228,7 +14107,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Paragrafta çoklu sorular",
-    "lessonIds": ["paragrafta-coklu-sorular"],
+    "lessonIds": [
+      "paragrafta-coklu-sorular"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -13255,7 +14136,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Paragrafta konu",
-    "lessonIds": ["paragrafta-konu"],
+    "lessonIds": [
+      "paragrafta-konu"
+    ],
     "recommended": [
       {
         "channel": "Deniz Hoca",
@@ -13278,7 +14161,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Bitkisel Organlar - Gövde",
-    "lessonIds": ["ayt-govde-yapisi"],
+    "lessonIds": [
+      "ayt-govde-yapisi"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -13306,7 +14191,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Bitkisel Organlar - Yaprak",
-    "lessonIds": ["ayt-yaprak-yapisi"],
+    "lessonIds": [
+      "ayt-yaprak-yapisi"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -13334,7 +14221,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Bitkilerde Madde Taşınması",
-    "lessonIds": ["bitki-madde-tasinmasi"],
+    "lessonIds": [
+      "bitki-madde-tasinmasi"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -13378,7 +14267,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Bitkilerde Stoma, Nodül ve Mikoriza",
-    "lessonIds": ["stoma-nodul-mikoriza"],
+    "lessonIds": [
+      "stoma-nodul-mikoriza"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -13406,7 +14297,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Bigbang teorisi ve atomaltı parçacıklar",
-    "lessonIds": ["buyuk-patlama-atomalti"],
+    "lessonIds": [
+      "buyuk-patlama-atomalti"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -13428,7 +14321,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Radyoaktivite",
-    "lessonIds": ["radyoaktivite"],
+    "lessonIds": [
+      "radyoaktivite"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -13459,7 +14354,9 @@
   {
     "subjectId": "ayt-matematik",
     "topic": "Türev Alma Kuralları",
-    "lessonIds": ["ayt-turev-alma-kurallari"],
+    "lessonIds": [
+      "ayt-turev-alma-kurallari"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -13497,7 +14394,9 @@
   {
     "subjectId": "ayt-matematik",
     "topic": "Türevin Geometrik Yorumu",
-    "lessonIds": ["turev-teget"],
+    "lessonIds": [
+      "turev-teget"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -13535,7 +14434,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Modern fizik izafiyet teorisi",
-    "lessonIds": ["ozel-gorelilik"],
+    "lessonIds": [
+      "ozel-gorelilik"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -13556,7 +14457,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Siyah cisim ışıması ve foton",
-    "lessonIds": ["siyah-cisim-foton"],
+    "lessonIds": [
+      "siyah-cisim-foton"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -13579,7 +14482,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Fotoelektrik olay",
-    "lessonIds": ["fotoelektrik-olay"],
+    "lessonIds": [
+      "fotoelektrik-olay"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -13610,7 +14515,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Bitkisel Hormonlar",
-    "lessonIds": ["bitki-hormonlari"],
+    "lessonIds": [
+      "bitki-hormonlari"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -13651,7 +14558,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Bitkilerde Hareket",
-    "lessonIds": ["bitkilerde-hareket"],
+    "lessonIds": [
+      "bitkilerde-hareket"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -13697,7 +14606,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Fotoperiyodizm",
-    "lessonIds": ["bitki-fotoperiyodizm"],
+    "lessonIds": [
+      "bitki-fotoperiyodizm"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -13720,7 +14631,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Bitkilerde Üreme Çiçek Yapısı",
-    "lessonIds": ["cicek-yapisi-ureme"],
+    "lessonIds": [
+      "cicek-yapisi-ureme"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -13748,7 +14661,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Bitkilerde Üreme Tozlaşma",
-    "lessonIds": ["bitki-tozlasma"],
+    "lessonIds": [
+      "bitki-tozlasma"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -13781,7 +14696,9 @@
   {
     "subjectId": "tyt-din",
     "topic": "Yahudilik ve hristiyanlık",
-    "lessonIds": ["yahudilik-ve-hristiyanlik"],
+    "lessonIds": [
+      "yahudilik-ve-hristiyanlik"
+    ],
     "recommended": [
       {
         "channel": "Emre Yürük",
@@ -13804,7 +14721,9 @@
   {
     "subjectId": "tyt-din",
     "topic": "İslam ve bilim",
-    "lessonIds": ["islam-ve-bilim"],
+    "lessonIds": [
+      "islam-ve-bilim"
+    ],
     "recommended": [
       {
         "channel": "Emre Yürük",
@@ -13817,7 +14736,9 @@
   {
     "subjectId": "tyt-din",
     "topic": "Anadoluda islam",
-    "lessonIds": ["anadoluda-islam"],
+    "lessonIds": [
+      "anadoluda-islam"
+    ],
     "recommended": [
       {
         "channel": "Emre Yürük",
@@ -13830,7 +14751,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Alkollerin eldesi ve kimyasal tepkimeleri",
-    "lessonIds": ["ayt-alkol-eldesi-tepkimeleri"],
+    "lessonIds": [
+      "ayt-alkol-eldesi-tepkimeleri"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -13856,7 +14779,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Eterler",
-    "lessonIds": ["ayt-eterler"],
+    "lessonIds": [
+      "ayt-eterler"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -13882,7 +14807,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Aldehit ve ketonlar",
-    "lessonIds": ["ayt-aldehit-keton"],
+    "lessonIds": [
+      "ayt-aldehit-keton"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -13914,7 +14841,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Karboksilik asitler",
-    "lessonIds": ["ayt-karboksilik-asitler"],
+    "lessonIds": [
+      "ayt-karboksilik-asitler"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -13940,7 +14869,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Esterler",
-    "lessonIds": ["ayt-esterler"],
+    "lessonIds": [
+      "ayt-esterler"
+    ],
     "recommended": [
       {
         "channel": "Levent Özdede",
@@ -13966,7 +14897,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Compton Saçılması ve De Broglie Dalga Boyu",
-    "lessonIds": ["compton-debroglie"],
+    "lessonIds": [
+      "compton-debroglie"
+    ],
     "recommended": [
       {
         "channel": "Ertan Sinan Şahin",
@@ -13998,7 +14931,9 @@
   {
     "subjectId": "ayt-fizik",
     "topic": "Modern fiziğin teknolojideki uygulamaları",
-    "lessonIds": ["modern-fizik-teknoloji"],
+    "lessonIds": [
+      "modern-fizik-teknoloji"
+    ],
     "recommended": [
       {
         "channel": "Fizikle Barış",
@@ -14030,7 +14965,9 @@
   {
     "subjectId": "tyt-turkce",
     "topic": "Metin, Tablo ve Görsel Yorumlama",
-    "lessonIds": ["metin-tablo-gorsel-yorumlama"],
+    "lessonIds": [
+      "metin-tablo-gorsel-yorumlama"
+    ],
     "recommended": [
       {
         "channel": "Emek TAŞTAN",
@@ -14049,7 +14986,9 @@
   {
     "subjectId": "ayt-matematik",
     "topic": "Belirsiz İntegral",
-    "lessonIds": ["ayt-belirsiz-integral"],
+    "lessonIds": [
+      "ayt-belirsiz-integral"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -14077,7 +15016,9 @@
   {
     "subjectId": "ayt-matematik",
     "topic": "Belirli İntegral",
-    "lessonIds": ["ayt-belirli-integral"],
+    "lessonIds": [
+      "ayt-belirli-integral"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -14105,7 +15046,9 @@
   {
     "subjectId": "ayt-matematik",
     "topic": "Alan ve Riemann",
-    "lessonIds": ["ayt-alan-riemann"],
+    "lessonIds": [
+      "ayt-alan-riemann"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -14143,7 +15086,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Enerji Kaynakları ve Bilimsel Gelişmeler",
-    "lessonIds": ["ayt-enerji-kaynaklari-gelismeler"],
+    "lessonIds": [
+      "ayt-enerji-kaynaklari-gelismeler"
+    ],
     "recommended": [
       {
         "channel": "Ferrum",
@@ -14171,7 +15116,9 @@
   {
     "subjectId": "tyt-din",
     "topic": "İslam düşüncesinde tasavvufi yorumlar",
-    "lessonIds": ["islam-dusuncesinde-tasavvufi-yorumlar"],
+    "lessonIds": [
+      "islam-dusuncesinde-tasavvufi-yorumlar"
+    ],
     "recommended": [
       {
         "channel": "Emre Yürük",
@@ -14190,7 +15137,9 @@
   {
     "subjectId": "tyt-din",
     "topic": "Güncel dini meseleler",
-    "lessonIds": ["guncel-dini-meseleler"],
+    "lessonIds": [
+      "guncel-dini-meseleler"
+    ],
     "recommended": [
       {
         "channel": "Emre Yürük",
@@ -14203,7 +15152,9 @@
   {
     "subjectId": "tyt-din",
     "topic": "Hint ve çin dinleri",
-    "lessonIds": ["hint-ve-cin-dinleri"],
+    "lessonIds": [
+      "hint-ve-cin-dinleri"
+    ],
     "recommended": [
       {
         "channel": "Emre Yürük",
@@ -14222,7 +15173,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Sürdürülebilirlik ve Geri Dönüşüm",
-    "lessonIds": ["ayt-surdurulebilirlik-geri-donusum"],
+    "lessonIds": [
+      "ayt-surdurulebilirlik-geri-donusum"
+    ],
     "recommended": [
       {
         "channel": "Sinan İhtiyaroğlu",
@@ -14246,7 +15199,9 @@
   {
     "subjectId": "ayt-kimya",
     "topic": "Nanoteknoloji ve Bilimsel Gelişmeler",
-    "lessonIds": ["ayt-nanoteknoloji-gelismeler"],
+    "lessonIds": [
+      "ayt-nanoteknoloji-gelismeler"
+    ],
     "recommended": [
       {
         "channel": "Sinan İhtiyaroğlu",
@@ -14269,7 +15224,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Bitkilerde Döllenme ve Çimlenme",
-    "lessonIds": ["bitkilerde-dollenme-cimlenme"],
+    "lessonIds": [
+      "bitkilerde-dollenme-cimlenme"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -14307,7 +15264,9 @@
   {
     "subjectId": "ayt-biyoloji",
     "topic": "Canlılar ve Çevre",
-    "lessonIds": ["canlilar-ve-cevre"],
+    "lessonIds": [
+      "canlilar-ve-cevre"
+    ],
     "recommended": [
       {
         "channel": "Dr. Biyoloji",
@@ -14332,7 +15291,10 @@
   {
     "subjectId": "tyt-geometri",
     "topic": "Doğruda açılar",
-    "lessonIds": ["tyt-geo-temel-acilar-031"],
+    "lessonIds": [
+      "tyt-geo-temel-acilar-031",
+      "tyt-geo-acilar-kaynak-pekitirme-032"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -14380,7 +15342,9 @@
   {
     "subjectId": "tyt-geometri",
     "topic": "Üçgende Açılar",
-    "lessonIds": ["tyt-geo-ucgende-acilar-031"],
+    "lessonIds": [
+      "tyt-geo-ucgende-acilar-031"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -14433,7 +15397,9 @@
   {
     "subjectId": "tyt-geometri",
     "topic": "Açı Kenar Bağıntıları",
-    "lessonIds": ["tyt-geo-ucgen-esitsizligi-031"],
+    "lessonIds": [
+      "tyt-geo-ucgen-esitsizligi-031"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -14466,7 +15432,9 @@
   {
     "subjectId": "tyt-geometri",
     "topic": "Dik Üçgenler",
-    "lessonIds": ["tyt-geo-dik-ucgen-031"],
+    "lessonIds": [
+      "tyt-geo-dik-ucgen-031"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -14509,7 +15477,9 @@
   {
     "subjectId": "tyt-geometri",
     "topic": "Kenar açı kenar eşliği",
-    "lessonIds": ["tyt-geo-eslik-benzerlik-031"],
+    "lessonIds": [
+      "tyt-geo-eslik-benzerlik-031"
+    ],
     "recommended": [
       {
         "channel": "Kenan Kara",
@@ -14532,7 +15502,9 @@
   {
     "subjectId": "tyt-geometri",
     "topic": "Açı Kenar Açı ve Kenar Kenar Kenar Eşliği",
-    "lessonIds": ["tyt-geo-eslik-benzerlik-031"],
+    "lessonIds": [
+      "tyt-geo-eslik-benzerlik-031"
+    ],
     "recommended": [
       {
         "channel": "Kenan Kara",
@@ -14555,7 +15527,9 @@
   {
     "subjectId": "tyt-geometri",
     "topic": "Üçgende Benzerlik",
-    "lessonIds": ["tyt-geo-eslik-benzerlik-031"],
+    "lessonIds": [
+      "tyt-geo-eslik-benzerlik-031"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -14603,7 +15577,9 @@
   {
     "subjectId": "tyt-geometri",
     "topic": "Açıortay",
-    "lessonIds": ["tyt-geo-ucgen-merkezleri-031"],
+    "lessonIds": [
+      "tyt-geo-ucgen-merkezleri-031"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -14636,7 +15612,9 @@
   {
     "subjectId": "tyt-geometri",
     "topic": "Kenarortay",
-    "lessonIds": ["tyt-geo-ucgen-merkezleri-031"],
+    "lessonIds": [
+      "tyt-geo-ucgen-merkezleri-031"
+    ],
     "recommended": [
       {
         "channel": "Matematiğin Güler Yüzü",
@@ -14674,7 +15652,9 @@
   {
     "subjectId": "tyt-geometri",
     "topic": "Üçgende merkezler",
-    "lessonIds": ["tyt-geo-ucgen-merkezleri-031"],
+    "lessonIds": [
+      "tyt-geo-ucgen-merkezleri-031"
+    ],
     "recommended": [
       {
         "channel": "Kenan Kara",
@@ -14691,6 +15671,369 @@
         "channel": "Partikül Matematik",
         "detail": "Çevrel çember merkezi ve yükseklikler",
         "url": "https://www.youtube.com/watch?v=CapnJjFBIPo"
+      }
+    ]
+  },
+  {
+    "subjectId": "tyt-geometri",
+    "topic": "Çokgenler",
+    "lessonIds": [
+      "tyt-geo-cokgenler-032"
+    ],
+    "recommended": [
+      {
+        "channel": "Matematiğin Güler Yüzü",
+        "url": "https://www.youtube.com/watch?v=T4ebLY4nFHY"
+      }
+    ],
+    "alternatives": [
+      {
+        "channel": "Mert Hoca",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=rFBQVoBC-8Y&list=PLxSXQclq3muBKKBXwyEAJP0shmedtEZQr&index=34&pp=iAQB"
+      },
+      {
+        "channel": "Bıyıklı Matematik",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=jSGClfUBejg&list=PL2wqvRc1FjTm9WF6YPcoYo5nMufCcAg2t&index=48&pp=iAQB"
+      },
+      {
+        "channel": "Barıştıran Matematik",
+        "detail": "Seriden bir bölüm",
+        "url": "https://www.youtube.com/watch?v=ulNt93a0w9A"
+      }
+    ]
+  },
+  {
+    "subjectId": "tyt-geometri",
+    "topic": "Genel Dörtgenler",
+    "lessonIds": [
+      "tyt-geo-dortgen-hiyerarsi-032"
+    ],
+    "recommended": [
+      {
+        "channel": "Matematiğin Güler Yüzü",
+        "url": "https://www.youtube.com/watch?v=W0tWsOve5zA"
+      }
+    ],
+    "alternatives": [
+      {
+        "channel": "Mert Hoca",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=XgWNXN6-2Yc&list=PLxSXQclq3muBKKBXwyEAJP0shmedtEZQr&index=36&pp=iAQB"
+      },
+      {
+        "channel": "Bıyıklı Matematik",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=EedSTRHNHFY&list=PL2wqvRc1FjTm9WF6YPcoYo5nMufCcAg2t&index=52&pp=iAQB"
+      },
+      {
+        "channel": "Barıştıran Matematik",
+        "detail": "Seriden bir bölüm",
+        "url": "https://www.youtube.com/watch?v=G5SNYHTsCes"
+      }
+    ]
+  },
+  {
+    "subjectId": "tyt-geometri",
+    "topic": "Yamuk",
+    "lessonIds": [
+      "tyt-geo-yamuk-deltoid-032"
+    ],
+    "recommended": [
+      {
+        "channel": "Matematiğin Güler Yüzü",
+        "url": "https://www.youtube.com/watch?v=JDSqHYttf3w"
+      }
+    ],
+    "alternatives": [
+      {
+        "channel": "Mert Hoca",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=eVcPaSVkB48&list=PLxSXQclq3muBKKBXwyEAJP0shmedtEZQr&index=38&pp=iAQB"
+      },
+      {
+        "channel": "Bıyıklı Matematik",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=EHO2-9fRCwE&list=PL2wqvRc1FjTm9WF6YPcoYo5nMufCcAg2t&index=54&pp=iAQB"
+      },
+      {
+        "channel": "Barıştıran Matematik",
+        "detail": "Başlangıç bölümü",
+        "url": "https://www.youtube.com/watch?v=NUc2Cqecm74"
+      }
+    ]
+  },
+  {
+    "subjectId": "tyt-geometri",
+    "topic": "Deltoid",
+    "lessonIds": [
+      "tyt-geo-yamuk-deltoid-032"
+    ],
+    "recommended": [
+      {
+        "channel": "Matematiğin Güler Yüzü",
+        "url": "https://www.youtube.com/watch?v=UR8Zj1ImdOQ"
+      }
+    ],
+    "alternatives": [
+      {
+        "channel": "Mert Hoca",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=NG_iMM2fItc&list=PLxSXQclq3muBKKBXwyEAJP0shmedtEZQr&index=48&pp=iAQB"
+      },
+      {
+        "channel": "Bıyıklı Matematik",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=SVblo4bYexU&list=PL2wqvRc1FjTm9WF6YPcoYo5nMufCcAg2t&index=69&pp=iAQB"
+      },
+      {
+        "channel": "Kenan Kara",
+        "detail": "Tekrar",
+        "url": "https://www.youtube.com/watch?v=JdKtY-yghqk"
+      }
+    ]
+  },
+  {
+    "subjectId": "tyt-geometri",
+    "topic": "Paralelkenar",
+    "lessonIds": [
+      "tyt-geo-paralelkenar-ozel-dortgenler-032"
+    ],
+    "recommended": [
+      {
+        "channel": "Matematiğin Güler Yüzü",
+        "url": "https://www.youtube.com/watch?v=zkk-KtX2vR4"
+      }
+    ],
+    "alternatives": [
+      {
+        "channel": "Mert Hoca",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=U3hV4C9E49M&list=PLxSXQclq3muBKKBXwyEAJP0shmedtEZQr&index=42&pp=iAQB"
+      },
+      {
+        "channel": "Bıyıklı Matematik",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=AyAPiR0-ZFw&list=PL2wqvRc1FjTm9WF6YPcoYo5nMufCcAg2t&index=62&pp=iAQB"
+      },
+      {
+        "channel": "Barıştıran Matematik",
+        "detail": "Başlangıç bölümü",
+        "url": "https://www.youtube.com/watch?v=efofz6AFl2Q"
+      }
+    ]
+  },
+  {
+    "subjectId": "tyt-geometri",
+    "topic": "Dikdörtgen",
+    "lessonIds": [
+      "tyt-geo-paralelkenar-ozel-dortgenler-032"
+    ],
+    "recommended": [
+      {
+        "channel": "Matematiğin Güler Yüzü",
+        "url": "https://www.youtube.com/watch?v=8HdPB6C7CiI"
+      }
+    ],
+    "alternatives": [
+      {
+        "channel": "Mert Hoca",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=CJyp2jcBYV8&list=PLxSXQclq3muBKKBXwyEAJP0shmedtEZQr&index=50&pp=iAQB0gcJCUEMAYcqIYzv"
+      },
+      {
+        "channel": "Bıyıklı Matematik",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=UYDH4ffFj1E&list=PL2wqvRc1FjTm9WF6YPcoYo5nMufCcAg2t&index=71&pp=iAQB"
+      },
+      {
+        "channel": "Barıştıran Matematik",
+        "detail": "Başlangıç bölümü",
+        "url": "https://www.youtube.com/watch?v=y5IwCYWMQ4E"
+      },
+      {
+        "channel": "Kenan Kara",
+        "detail": "Tekrar",
+        "url": "https://www.youtube.com/watch?v=P-swGwOf0jM"
+      }
+    ]
+  },
+  {
+    "subjectId": "tyt-geometri",
+    "topic": "Eşkenar Dörtgen",
+    "lessonIds": [
+      "tyt-geo-paralelkenar-ozel-dortgenler-032"
+    ],
+    "recommended": [
+      {
+        "channel": "Matematiğin Güler Yüzü",
+        "url": "https://www.youtube.com/watch?v=gwGvxq2y3BE"
+      }
+    ],
+    "alternatives": [
+      {
+        "channel": "Mert Hoca",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=HXZrjOjQCWQ&list=PLxSXQclq3muBKKBXwyEAJP0shmedtEZQr&index=46&pp=iAQB"
+      },
+      {
+        "channel": "Bıyıklı Matematik",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=5kSmZLgNj7s&list=PL2wqvRc1FjTm9WF6YPcoYo5nMufCcAg2t&index=67&pp=iAQB"
+      },
+      {
+        "channel": "Barıştıran Matematik",
+        "detail": "Seriden bir bölüm",
+        "url": "https://www.youtube.com/watch?v=GmSjwrhg9RE"
+      }
+    ]
+  },
+  {
+    "subjectId": "tyt-geometri",
+    "topic": "Kare",
+    "lessonIds": [
+      "tyt-geo-paralelkenar-ozel-dortgenler-032"
+    ],
+    "recommended": [
+      {
+        "channel": "Matematiğin Güler Yüzü",
+        "url": "https://www.youtube.com/watch?v=8W1fgICDMbE"
+      }
+    ],
+    "alternatives": [
+      {
+        "channel": "Mert Hoca",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=5_NuouyN6uE&list=PLxSXQclq3muBKKBXwyEAJP0shmedtEZQr&index=54&pp=iAQB"
+      },
+      {
+        "channel": "Bıyıklı Matematik",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=YyuiUHZeZAk&list=PL2wqvRc1FjTm9WF6YPcoYo5nMufCcAg2t&index=73&pp=iAQB"
+      },
+      {
+        "channel": "Barıştıran Matematik",
+        "detail": "Başlangıç bölümü",
+        "url": "https://www.youtube.com/watch?v=CIdtWx7o7fs"
+      }
+    ]
+  },
+  {
+    "subjectId": "tyt-geometri",
+    "topic": "Dik prizmalar",
+    "lessonIds": [
+      "tyt-geo-dik-prizmalar-032"
+    ],
+    "recommended": [
+      {
+        "channel": "Kenan Kara",
+        "detail": "1",
+        "url": "https://www.youtube.com/watch?v=tNvcPLl5eGo"
+      },
+      {
+        "channel": "Kenan Kara",
+        "detail": "2",
+        "url": "https://www.youtube.com/watch?v=DPEjL5HvD7Q"
+      },
+      {
+        "channel": "Kenan Kara",
+        "detail": "3",
+        "url": "https://www.youtube.com/watch?v=LOlUiBB750w"
+      },
+      {
+        "channel": "Kenan Kara",
+        "detail": "4",
+        "url": "https://www.youtube.com/watch?v=tDknnVRrgFI"
+      }
+    ],
+    "alternatives": [
+      {
+        "channel": "Mert Hoca",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=i99dlWUm4U4&list=PLxSXQclq3muBKKBXwyEAJP0shmedtEZQr&index=78&pp=iAQB0gcJCUEMAYcqIYzv"
+      },
+      {
+        "channel": "Bıyıklı Matematik",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=ngpbamDiVl4&list=PL2wqvRc1FjTm9WF6YPcoYo5nMufCcAg2t&index=88&pp=iAQB"
+      },
+      {
+        "channel": "Soner Akıncı",
+        "detail": "Seriden bir bölüm",
+        "url": "https://www.youtube.com/watch?v=RawWhfh97D4"
+      }
+    ]
+  },
+  {
+    "subjectId": "tyt-geometri",
+    "topic": "Küp",
+    "lessonIds": [
+      "tyt-geo-dik-prizmalar-032"
+    ],
+    "recommended": [
+      {
+        "channel": "Kenan Kara",
+        "detail": "1",
+        "url": "https://www.youtube.com/watch?v=1vCvieJvPUQ"
+      },
+      {
+        "channel": "Kenan Kara",
+        "detail": "2",
+        "url": "https://www.youtube.com/watch?v=IwRY5lpPbBI"
+      },
+      {
+        "channel": "Kenan Kara",
+        "detail": "3",
+        "url": "https://www.youtube.com/watch?v=UDybeAdKDpk"
+      }
+    ],
+    "alternatives": [
+      {
+        "channel": "Rehber Matematik",
+        "detail": "Küp",
+        "url": "https://www.youtube.com/watch?v=zwrjJ3tw1jU&pp=ygUea8O8cCByZWhiZXIgbWF0ZW1hdGlrIGdlb21ldHJp"
+      },
+      {
+        "channel": "3D Yayınları",
+        "detail": "Seriden bir bölüm",
+        "url": "https://www.youtube.com/watch?v=3YvbPQdcffA"
+      }
+    ]
+  },
+  {
+    "subjectId": "tyt-geometri",
+    "topic": "Piramit",
+    "lessonIds": [
+      "tyt-geo-piramitler-032"
+    ],
+    "recommended": [
+      {
+        "channel": "Kenan Kara",
+        "detail": "1",
+        "url": "https://www.youtube.com/watch?v=jwS4Y4iA5_A"
+      },
+      {
+        "channel": "Kenan Kara",
+        "detail": "2",
+        "url": "https://www.youtube.com/watch?v=p-5OZKusFiI"
+      }
+    ],
+    "alternatives": [
+      {
+        "channel": "Mert Hoca",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=loXoB4x7cjU&list=PLxSXQclq3muBKKBXwyEAJP0shmedtEZQr&index=82&pp=iAQB"
+      },
+      {
+        "channel": "Bıyıklı Matematik",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=ln9K8Nv-2JI&list=PL2wqvRc1FjTm9WF6YPcoYo5nMufCcAg2t&index=92&pp=iAQB"
+      },
+      {
+        "channel": "Soner Akıncı",
+        "detail": "Seriden bir bölüm",
+        "url": "https://www.youtube.com/watch?v=jgsFlsqnNqU"
       }
     ]
   }

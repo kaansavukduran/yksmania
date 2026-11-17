@@ -1,4 +1,4 @@
-﻿Sınav;Ders;Konu;Öğrenme Sırası (485 Konu);Bölüm Sayısı;Çözümlü Örnek Sayısı;Hatırlama Sayısı;Tahmini Dakika;Bağlı Soru Sayısı;Ayrıntılı Yardım;Kısmi Yardım
+﻿Sınav;Ders;Konu;Öğrenme Sırası (493 Konu);Bölüm Sayısı;Çözümlü Örnek Sayısı;Hatırlama Sayısı;Tahmini Dakika;Bağlı Soru Sayısı;Ayrıntılı Yardım;Kısmi Yardım
 TYT;Kimya;Simyadan kimyaya: amaç, yöntem ve kanıt;1;9;4;4;40;5;5;0
 TYT;Kimya;Kimya disiplinleri: maddeye hangi soruyu soruyoruz?;2;6;3;3;35;5;5;0
 TYT;Kimya;Kimyanın sembolik dili: harf, alt indis ve katsayı;3;8;4;4;40;5;5;0
@@ -484,4 +484,12 @@ TYT;Geometri;Üçgen eşitsizliği ve açı–kenar ilişkileri;482;7;3;4;40;10;
 TYT;Geometri;Dik üçgen: Pisagor, özel açılar ve Öklid bağıntıları;483;8;4;4;46;10;10;0
 TYT;Geometri;Üçgenlerde eşlik ve benzerlik: eşleme, ölçek ve paralellik;484;8;3;4;47;10;10;0
 TYT;Geometri;Üçgende yardımcı elemanlar: açıortay, kenarortay ve merkezler;485;11;4;6;55;10;10;0
+TYT;Geometri;Çokgenler: açı, köşegen ve düzgün şekiller;486;10;4;4;42;14;14;0
+TYT;Geometri;Dörtgenler: sınıflar, köşegenler ve yamuk;487;12;5;4;48;14;14;0
+TYT;Geometri;Yamuk ve deltoid: taban, yükseklik ve simetri;488;10;4;5;48;12;12;0
+TYT;Geometri;Paralelkenar ailesi: yükseklik, köşegen ve alan;489;10;4;5;52;12;12;0
+TYT;Geometri;Dik prizmalar: açınım, yüzey ve hacim;490;8;4;4;48;12;12;0
+TYT;Geometri;Piramitler: yükseklik, alan ve benzer kesit;491;8;4;4;52;12;12;0
+TYT;Geometri;Geometrinin dili: kaynakla pekiştir;492;10;9;10;42;18;18;0
+TYT;Matematik;Asal sayılar: sıfırdan kanıta ve problem çözümüne;493;20;12;8;90;40;40;0
 TYT;Geometri;Üçgen ve paralelkenarda alan;;10;6;4;50;5;5;0

@@ -1,0 +1,233 @@
+.g032-lab {
+  --g032-orange: #ffad94;
+  --g032-green: var(--mint);
+  padding: clamp(1rem, 3vw, 1.7rem);
+  border: 1px solid var(--border);
+  border-radius: 0.9rem;
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+:root[data-theme="light"] .g032-lab {
+  --g032-orange: #a94327;
+}
+@media (prefers-color-scheme: light) {
+  :root[data-theme="system"] .g032-lab {
+    --g032-orange: #a94327;
+  }
+}
+.g032-lab .lab-heading h2 {
+  margin-top: 0;
+}
+.g032-lab .lab-heading p {
+  max-width: 72ch;
+}
+.g032-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1.1rem 1.6rem;
+  margin: 1.4rem 0;
+  align-items: start;
+}
+.g032-range {
+  display: grid;
+  min-width: 0;
+  gap: 0.5rem;
+}
+.g032-range > span {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1rem;
+  justify-content: space-between;
+}
+.g032-range output {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.g032-range input {
+  width: 100%;
+  margin: 0;
+  min-height: 2.75rem;
+  accent-color: var(--accent);
+}
+.g032-modes,
+.g032-presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1.2rem 0;
+}
+.g032-lab button {
+  min-height: 2.75rem;
+  max-width: 100%;
+  white-space: normal;
+}
+.g032-modes button[aria-pressed="true"] {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+.g032-figure {
+  display: block;
+  width: 100%;
+  max-width: 52rem;
+  height: auto;
+  margin: 1rem auto;
+  color: var(--text);
+  background: var(--bg);
+  border-radius: 0.65rem;
+  overflow: visible;
+}
+.g032-figure text {
+  font: inherit;
+  font-size: var(--g032-font, 23px);
+  fill: var(--text);
+  paint-order: stroke;
+  stroke: var(--bg);
+  stroke-width: 5px;
+  stroke-linejoin: round;
+}
+.g032-line,
+.g032-outline {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2.7;
+  stroke-linejoin: round;
+}
+.g032-fill {
+  fill: var(--g032-green);
+  fill-opacity: 0.16;
+  stroke: var(--text);
+  stroke-width: 2.7;
+  stroke-linejoin: round;
+}
+.g032-fill.g032-alternate {
+  fill: var(--g032-orange);
+}
+.g032-helper {
+  stroke: var(--muted);
+  stroke-dasharray: 7 5;
+  stroke-width: 2;
+}
+.g032-accent {
+  stroke: var(--g032-orange);
+  stroke-width: 4;
+}
+.g032-secondary {
+  stroke: var(--g032-green);
+  stroke-width: 4;
+}
+.g032-section {
+  fill: var(--g032-orange);
+  fill-opacity: 0.35;
+  stroke: var(--g032-orange);
+  stroke-width: 3;
+}
+.g032-point {
+  fill: var(--g032-orange);
+}
+.g032-evidence {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  gap: 0.8rem;
+  margin: 1.2rem 0;
+}
+.g032-evidence > div {
+  min-width: 0;
+  padding: 0.85rem 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+}
+.g032-evidence dt {
+  font-size: 0.9em;
+  color: var(--muted);
+}
+.g032-evidence dd {
+  margin: 0.3rem 0 0;
+  color: var(--text);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.g032-insight {
+  margin: 1.2rem 0;
+  padding: 0.85rem 1rem;
+  border-inline-start: 3px solid var(--mint);
+  background: var(--bg);
+}
+.g032-families {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  gap: 0.65rem;
+}
+.g032-families li {
+  border: 1px solid var(--border);
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+}
+.g032-families li > span:last-child {
+  display: block;
+  font-size: 0.85em;
+  color: var(--muted);
+  margin-top: 0.3rem;
+}
+.g032-families .g032-belongs {
+  border-color: var(--mint);
+  background: var(--bg);
+}
+.g032-families .g032-belongs > span:first-child {
+  color: var(--mint);
+}
+.g032-footnote {
+  font-size: 0.85em;
+  color: var(--muted);
+  margin-top: 1.5rem;
+}
+.g032-reveal {
+  animation: g032-reveal 0.25s ease-out;
+}
+@keyframes g032-reveal {
+  from {
+    opacity: 0.25;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 560px) {
+  .g032-lab {
+    padding: clamp(10px, 2.5vw, 14px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .g032-lab *,
+  .g032-lab *::before,
+  .g032-lab *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+:root[data-motion="off"] .g032-lab * {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* Scientific degree/unit tokens remain whole; chosen font and scales are kept. */
+.g032-unit {
+  white-space: nowrap;
+}
+.g032-label-leader {
+  stroke: var(--muted);
+  stroke-width: 1.8;
+}
+@media (max-width: 560px) {
+  .g032-evidence > div,
+  .g032-insight,
+  .g032-families li {
+    padding: 10px 12px;
+  }
+}
+
+.g032-face-point {
+  fill: var(--g032-green);
+}

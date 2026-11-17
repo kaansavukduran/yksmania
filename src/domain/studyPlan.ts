@@ -98,6 +98,14 @@ import {
   geometryFoundation031TopicMap,
   supplementalTopics031,
 } from "../data/supplementalTopics031";
+import {
+  geometryExpansion032TopicMap,
+  supplementalTopics032,
+} from "../data/supplementalTopics032";
+import {
+  sourceMath032TopicMap,
+  supplementalSourceTopics032,
+} from "../data/supplementalSourceTopics032";
 import { lessons } from "./content";
 import {
   THEORY_DEADLINE,
@@ -116,7 +124,11 @@ export const workbookStudyTopics = order.map((id, i) => ({
 }));
 export const studyTopics = [
   ...workbookStudyTopics,
-  ...supplementalTopics031.map((topic, i) => ({
+  ...[
+    ...supplementalTopics031,
+    ...supplementalTopics032,
+    ...supplementalSourceTopics032,
+  ].map((topic, i) => ({
     ...topic,
     order: workbookStudyTopics.length + i + 1,
   })),
@@ -126,6 +138,8 @@ export const studyTopicById = (id: string) =>
 // Only reviewed one-to-one subject/topic associations; no fuzzy learning credit.
 export const lessonTopic: Record<string, string> = {
   ...geometryFoundation031TopicMap,
+  ...geometryExpansion032TopicMap,
+  ...sourceMath032TopicMap,
   ...legacy026Topics,
   ...forge025MathTopics,
   ...forge025ChemistryTopics,

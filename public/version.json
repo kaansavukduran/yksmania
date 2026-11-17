@@ -1,7 +1,7 @@
 {
-  "version": "0.19.0",
+  "version": "0.20.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Geometri temellerine şekillerle çalışan altı ayrıntılı anlatım, altı özet ve 60 gerekçeli özgün soru eklendi. Açılar, üçgen eşitsizliği, dik üçgen, benzerlik ve yardımcı elemanları değiştirerek inceleyebilirsin. Konuların altında kaynaktan eşleştirilmiş önerilen ve alternatif videolar bulunur; videolar internet gerektirir. Ayarlara Matrix teması eklendi. Yeni profillerin kişisel hazırlık hedefi 28 Şubat 2027’dir; kayıtlı özel tarihler korunur. Önceki 479 başlığın sırası ve ilerlemesi korunur, altı yeni geometri başlığı ayrıca izlenir. Eski yanıtlar, notlar, başlanmış denemeler ve 3/7/21 tekrar tarihleri değişmez. Bütün kaynak PDF’lerinin eksiksiz aktarımı üzerindeki çalışma sürüyor."
+    "tr": "Asal sayılarda gerçek Eratosthenes eleği ve kaynak problemleri eklendi. Geometriye çokgenler, dörtgen aileleri, yamuk ve deltoid, özel dörtgenler, dik prizmalar, piramitler ve kaynakla açı pekiştirmesi eklendi. Şekilleri değiştirerek özellikleri, yüzeyleri ve hacimleri inceleyebilirsin. Adımlı çözümler, gerekçeli sorular, ayrı kısa kopya kağıtları ve konuya bağlı video önerileri hazır. Yeni konuların ilerlemesi bağımsız kaydedilir; önceki yanıtlar, notlar, tarihler ve denemeler korunur. PDF kaynak aktarımı sayfa ve öğrenme maddesi düzeyinde kaydedilir; bütün arşiv tamamlanmış değildir."
   }
 }

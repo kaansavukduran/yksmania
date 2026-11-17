@@ -1,3 +1,53 @@
+# 0.20.0 geliştirme adayının kabul kaydı: 17 Kasım 2026
+
+Yerel aday dalı `forge/source-transfer-032`, taban `52f87bf94f26a14a5fea16d597920f4fd72e8971`. Son doğrulanmış yayın 0.19.0’dır. Bu kayıttaki C3 üretim derlemesi normal ve `/yksmania/` alt dizini için ayrı sabitlenmiştir. Uygulama kaynağı ile Android paket yapılandırmasının sonraki değişiklikleri kendi kabulünü gerektirir; eski PASS yeni pakete otomatik taşınmaz.
+
+| Kapı | Son doğrulanan sonuç |
+| --- | --- |
+| TypeScript ve modül yolu denetimi | PASS: 363 belirsiz olmayan modül yolu, `tsc --noEmit` hata vermedi |
+| Tam yerel birim turu | Son C4 turunda 205 dosyada 1.841/1.841 PASS, 103,70 saniye. Önceki 1.839 PASS/1 timeout, izole değiştirilmemiş 4/4 PASS ve daha eski 1.840 PASS ayrı tarihsel kayıtlardır. |
+| Normal ve prefix derleme | C4 PASS: her biri 291 dosya, 281 gerekli cache varlığı; en büyük dosya 5 MiB sınırının altında. C3 derlemeleri ayrıca tarihsel olarak korunur. |
+| Son C4 hedef tarayıcı kabulü | PASS: tek son koşuda 8/8 vaka; beş model vakası, iki tam açı öğrenme yolu ve bir gerçek asal soru akışı. Önceki C3 kabulü ayrı koşuların birleşimi olarak tarihsel korunur. |
+| Yerel Electron kaynak koşusu | PASS: 107 benzersiz çevrimdışı model akışı, reload ve aynı profilde süreç yeniden açılışı; renderer hatası 0 |
+| Yerel Pages alt dizini | PASS: 107 benzersiz ilk çevrimdışı model akışı ve reload; worker/manifest `/yksmania/`, rendererErrors ve missing boş |
+| Gerçek yerel 0.19 → 0.20 web güncellemesi | PASS: eski gerçek UI kayıtları ve üç ham veri deposu korundu |
+| Tam uzak CI | Bekliyor. 1.265 tarayıcı testi / 54 dosya, dört CI shard’ına bölünür; liste karşılaştırması tam 1.265 benzersiz vakayı korur. Bu statik sayım çalıştırma başarısı değildir. |
+| Gerçek Windows/Linux paketleri ve yeni web yayını | Bekliyor. Kaynak Electron veya yerel prefix PASS bu kapılar değildir. |
+| Android test APK’sı | Hazırlanıyor; kullanıcıdan kalıcı imza/secret ayarı istenmiyor. Henüz paket veya fiziksel cihaz kabulü yok. |
+| Fiziksel cihaz, temiz kurulum, portable taşıma, native iki sürüm kurulumu | NOT TESTED |
+
+Yerel Electron ve prefix koşuları ortam bağlantısının kesilmesinden önce tamamlanmış; sonuçları ortam geri geldiğinde gerçek JSON günlüklerinden okunmuştur. Electron, donmuş normal C3 web derlemesi ve mevcut güvenilir Electron çalışma zamanı ile kaynak kodundan çalıştırılmıştır. Dağıtılmış kurulum dosyası veya fiziksel masaüstü kabulü değildir. İlk Electron koşusu uygulamadaki dört kaynak bağlantısına karşı eski iki bağlantı beklentisinde durdu. Paylaşılan harness iki kaynak grubu ile dört tam başlık/adres/target/rel değerini doğrulayacak biçimde onarıldı. Ürün bu harness onarımı için değiştirilmedi; son 107 akış başarılıdır. İlk hata kaydı korunur.
+
+## Gerçek öğretim ve kayıt akışları
+
+Altı yeni geometri SVG modeli, asal eleği ve çarpan modeli normal ders girişinden denetlendi. 1–50 eleğinde 2/3/5/7 adımları sırasıyla 24/31/33/34 bileşik sayı işaretler; taban asallar korunur, 1 asal/bileşik sayılmaz. Çokgen A etiketi çizilen gerçek köşeye bağlıdır; piramidin h ve ℓ açıklamaları cismin/açınımın kenarından ayrıdır. Normal koyu masaüstü, 320 px Matrix/dokunma ve 320 px gerçek Lexend arayüz yüzde 200/yazı yüzde 150 profilleri; adlandırılmış klavye kontrolleri, en az 44 px hedefler, SVG metinleri ve ölçülen axe kapsamı denetlendi. Bu sınırlı ölçümler tam WCAG sertifikası değildir.
+
+Kaynak açı setinin iki gerçek UI profilinde 18/18 yanıt bağımsız doğru ve yardımsız kaydedildi. Dokuz çözümlü örnek, on hatırlama ve üç şekil modu açıldı. Bugün sonucu, notlar, manuel konu tamamlama ve 3/7/21 tarihleri denetlendi. İlk çalışma 17 Kasım için tekrarlar 19/23 Kasım ve 7 Aralık’tır. Keşif, şekil değiştirme ve bağlantı açma öğrenme puanı veya konu tamamlama üretmez.
+
+Asal setindeki 40 sorunun ve 200 seçenek gerekçesinin matematiği bağımsız incelendi; bu anahtarı görünen içerik denetimidir, kör çözüm değildir. Gerçek UI’de 84 örneğinin üç adımı ve alternatif yöntemi açıldı; ilk 1/40 soru yardım alınmadan doğru çözüldü. Kontrol edilmiş soru taslağı çevrimdışı reload’da korundu; konu otomatik tamamlanmadı. Tam 40 soruluk UI oturumu denendi denmez.
+
+Gerçek aynı kökenli 0.19 → 0.20 PWA yükseltmesinde eski UI’den 5/5 paragraf oturumu, özgün 3/7/21 tarihleri, yarım soru taslağı, cevaplı/işaretli 40 soruluk TYT branş denemesi, notlar, Matrix/Lexend ve 25/05/2027 özel tarihi oluşturuldu. Ayarlar üzerinden bekleyen güncelleme etkinleştirildi. Üç ham IndexedDB deposu, anahtarlar ve belge baytları aynı kaldı; aktivasyon, reload ve süreç yeniden açılışında otomatik durum yazımı 0. Yalnız belge/katalog kontrolü için açıkça sentetik zararsız bir belge doğrudan eklendi; öğrenme olayları gerçek eski UI ile oluşturuldu. Yeni çokgen n=8/köşegenler ve asal aşama 4/seçili 12/3×4 ilk kez çevrimdışı kullanıldı. İki keşif anahtarı dışında eski öğrenme/XP/veriler aynı kaldı; seçimler çevrimdışı reload ve süreç yeniden açılışında korundu. Bu yerel web deneyi public CDN veya native iki sürüm kurulumu değildir.
+
+## Onarılan sorunlar, ilk sonuçlar ve kalan sınırlar
+
+İlk C1’de örtük etiket içinde önce gelen `output`, iki range kontrolünün erişilebilir adını engelliyordu; açık id/for bağlantıları ve gerçek adlandırılmış klavye regresyonu eklendi. C1/C2’de açı numaralarının arka plakaları veya metin kutuları kesen çizgiyi örtüyordu; gerçek büyük yazı ölçümlerine göre şekle yer açılıp etiket konumu düzeltildi. C2’de çokgen A etiketi gerçek köşe yerine sabit üst noktadaydı; C3 gerçek model köşesine bağlandı. Piramit h/ℓ açıklamalarının kenarlara teması ve asal açıklamasındaki tek harfli satır kuyruğu da kaynak alanında onarıldı.
+
+C2 açı öğrenme testinde ilk bağımsız soru doğruyken, yardım panelinin asenkron açılması sırasında helper kaybolan düğmeyi bekliyordu. Test gerçek panel/sonuç açılışını bekleyecek biçimde düzeltildi; süre artırılmadı, işlev veya beklenti atlanmadı. C3’te iki tam 18/18 yol geçti. Eski başarısız ve kesilmiş koşular kanıtta korunur.
+
+Önceki tam birim turunda `foundation-practice-013` içindeki bütün hazırlanmış konuların bağımsız soru eşlemesini denetleyen test 5.000 ms bütçesini aştı. Aynı zamanlarda başka kaynak ve tarayıcı işleri vardı; bu tek başına kök neden kanıtı değildir. Aynı test dosyası değiştirilmeden ayrı koşuda dört testinin tamamını 5,07 saniyelik dosya süresinde geçti. Bu izole başarı tam turun yerine geçmez; ardından son C4 kaynağındaki tam tur 1.841/1.841 geçti. Timeout veya koşul gevşetilmedi.
+
+Son içerik denetiminde `f032-tyt-geo-cokgenler-032-7` sorusunun üçüncü çözüm adımında açı–kenar eşlemesinin sırası açıklaştırıldı: 60°/90°/120°/150° için sırasıyla 3/4/6/12 kenar. Soru, seçenek, anahtar ve toplamlar değişmedi. Bu son düzeltme C4 adayıdır; C3 normal/prefix, 107 akış ve hedef UI başarıları önceki kaynak kapsamıdır. Normal ve prefix C4 derlemeleri geçti; son C4 hedef UI turu 8/8 geçti. Son C4 native/prefix ve uzak kapılar bu kayıtta henüz kabul edilmedi.
+
+En yüksek ölçekte “Geometrinin” sözcüğünün son harfi bir alt satırda kalabilir. Bu küçük tipografik gözlem kayıtlıdır; kırpma veya yatay taşma yoktur. Uzun locator PNG’sinde büyük skip-link görünmesi gerçek DOM ile ayrı sınandı: odak yokken sınırlar ekranın üstündedir ve çekimden önce/sonra aynıdır; Tab → Enter gerçek ana içeriğe odaklanır. Sadece PNG artefaktına dayanarak global stil değiştirilmedi.
+
+Kanonik kaynak defteri güncel 8.936 PDF’de 2 tam, 7 kısmi ve 8.927 belirsiz karar içerir. [PDF ilerlemesi](PDF_SOURCE_PROGRESS032.md) okuma/aktarım/sürüm farklarını açıklar; belirsiz hiç işlenmemiş değildir. 134 yeni soru ve bu kaynaktaki eşlemeler bağımsız incelendi; bütün eski 5.943 soru bu tur baştan bilimsel olarak çözülmedi. Bütün MEB alt kazanımları, resmî soru arşivi ve video oynatımı tamamlandı sayılmaz.
+
+Tam CI, Windows/Linux paketleri, yayımlanmış Pages, Vercel ve Android APK kendi kaynak commit ve dosyalarıyla ayrıca kabul edilecektir. Son bilinen Vercel durumu hesap sınırı nedeniyle HTTP 402’dir; yeni 0.20 Vercel başarısı iddia edilmez. Önceki yayın sonuçları aşağıda tarihsel olarak korunur.
+
+---
+
+## Önceki doğrulanmış kabul kayıtları
+
 # 0.19.0 son yayın kabulü — 17 Kasım 2026
 
 Yayın kaynağı [1dd13c2f](https://github.com/kaansavukduran/yksmania/commit/1dd13c2f8e0b0c4f2b110075bb0f166d902d74c9). [Tam CI](https://github.com/kaansavukduran/yksmania/actions/runs/43972235774) 197 dosyada 1.786/1.786 birim ve 1.257/1.257 tarayıcı testini geçti. Başarısız, atlanan veya flaky tarayıcı senaryosu yoktur. Gerçek paketli Windows ve Linux, önceki 93 ve yeni 6 modelin toplam 99 akışında çevrimdışı kullanım, reload ve aynı profilde süreç yeniden açılışını geçti; iki platformda renderer hatası 0. Android işi açık kapsam gereği atlandı.

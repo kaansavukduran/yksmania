@@ -1,3 +1,6 @@
+import { supplementalSourceTopics032 } from "../src/data/supplementalSourceTopics032";
+import { supplementalTopics032 } from "../src/data/supplementalTopics032";
+import previous031 from "./fixtures/source-stage-031-preservation.json";
 import { describe, expect, it } from "vitest";
 import { lessons, lessonById } from "../src/domain/content";
 import { initialState } from "../src/domain/model";
@@ -25,19 +28,23 @@ describe("031 additive geometry learning path", () => {
   it("keeps the exact479 workbook entries and gives each new foundation independent credit", () => {
     expect(workbookStudyTopics).toEqual(workbookBaseline.studyTopics);
     expect(studyTopics.slice(0, 479)).toEqual(workbookBaseline.studyTopics);
-    expect(studyTopics.slice(479).map(({ order, ...topic }) => topic)).toEqual(
-      supplementalTopics031,
-    );
-    expect(new Set(studyTopics.map((topic) => topic.id)).size).toBe(485);
+    expect(
+      studyTopics.slice(479, 485).map(({ order, ...topic }) => topic),
+    ).toEqual(supplementalTopics031);
+    expect(new Set(studyTopics.map((topic) => topic.id)).size).toBe(493);
     const state = initialState();
     for (const topic of workbookStudyTopics)
       state.topicProgress[topic.id] = { theory: "2026-11-16" };
     state.notes = { "lesson:rasyonel-sayilar": "Önceki not korunur." };
     const restored = validateState(state);
     const plan = studyPlan(restored, "theory", "2026-11-17");
-    expect(plan).toMatchObject({ done: 479, remaining: 6, total: 485 });
+    expect(plan).toMatchObject({ done: 479, remaining: 14, total: 493 });
     expect(plan.scheduled.map(({ topic }) => topic.id)).toEqual(
-      supplementalTopics031.map((topic) => topic.id),
+      [
+        ...supplementalTopics031,
+        ...supplementalTopics032,
+        ...supplementalSourceTopics032,
+      ].map((topic) => topic.id),
     );
     expect(restored.topicProgress).toEqual(state.topicProgress);
     expect(restored.notes).toEqual(state.notes);
@@ -50,10 +57,26 @@ describe("031 additive geometry learning path", () => {
   });
 
   it("registers a full explanation, separate summary and reasoned question set for every new foundation", () => {
-    expect(lessons).toHaveLength(520);
-    expect(lessons.flatMap((lesson) => lesson.questions)).toHaveLength(5943);
-    expect(lessonGuides.size).toBe(486);
-    expect(builtInCheatSheets.size).toBe(486);
+    expect(
+      lessons.filter((lesson) => Object.hasOwn(previous031.lessons, lesson.id)),
+    ).toHaveLength(520);
+    expect(
+      lessons
+        .flatMap((lesson) => lesson.questions)
+        .filter((question) =>
+          Object.hasOwn(previous031.questions, question.id),
+        ),
+    ).toHaveLength(5943);
+    expect(
+      [...lessonGuides.keys()].filter((id) =>
+        Object.hasOwn(previous031.guides, id),
+      ),
+    ).toHaveLength(486);
+    expect(
+      [...builtInCheatSheets.keys()].filter((id) =>
+        Object.hasOwn(previous031.sheets, id),
+      ),
+    ).toHaveLength(486);
     const allQuestions = lessons.flatMap((lesson) => lesson.questions);
     expect(new Set(allQuestions.map((question) => question.id)).size).toBe(
       allQuestions.length,

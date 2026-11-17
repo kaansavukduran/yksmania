@@ -110,7 +110,7 @@ test("equations retain reversible steps and distinguish a zero coefficient offli
   await nav(page, "Bugün");
   await expect(
     page.getByRole("region", { name: "Konu planı", exact: true }),
-  ).toContainText("0/485");
+  ).toContainText("0/493");
   await expect(page.locator(".stat-number").first()).toHaveText("0");
 });
 

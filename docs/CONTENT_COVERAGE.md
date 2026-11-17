@@ -1,3 +1,27 @@
+# 0.20.0 geliştirme adayının ölçülen kapsamı
+
+| Ölçüm | Güncel kaynak adayı |
+| --- | ---: |
+| Ders/soru seti kaydı | 528 |
+| Ayrıntılı rehber / ayrı kopya kağıdı | 494 / 494 |
+| Sıralı çalışma başlığı | 493; ilk 479 + ayrı kimlikli 14 ek başlık |
+| Özgün soru | 6.077 |
+| Tam kademeli / kısmi yardım | 3.437 / 2.640 |
+| Bu tur yeni ünite / soru | 8 / 134 |
+| Bu tur bölüm / çözümlü örnek / hatırlama | 88 / 46 / 44 |
+| Doğrudan geometri rehberi | 19; 15 TYT + 4 AYT |
+| Deneme biçimleri | TYT 120/165 dk; AYT Sayısal 80/180 dk; 15 branş |
+
+Sekiz yeni ünite yedi geometri ve bir asal sayılar anlatımıdır. Önceki 5.943 ham soru, 520 ders/soru seti, 486 rehber/özet ve 485 çalışma başlığı ayrı tabanla karşılaştırılarak korunur. Yeni konu, rehber ve soru seti farklı birimlerdir; 341 katalog başlığına veya birbirlerine bölünerek MEB tamamlanma yüzdesi üretilmez. İlk 479 çalışma kimliği ve sırası değişmez. [Gerçek kayıttan üretilen CSV](CONTENT_INVENTORY.csv) 494 rehberin bölüm, örnek, hatırlama, bağlı soru ve yardım sayısını gösterir; [açıklaması](CONTENT_INVENTORY.txt) sınırlarını belirtir.
+
+Güncel 8.936 PDF’de 2 tam, 7 kısmi ve 8.927 belirsiz kapsam kararı doğrulandı. Belirsiz hiç işlenmemiş sayılmaz. 40 dosyada gerçek ders/soru bağı ve 154 dosyada okuma kaydı vardır; bunlar tam aktarım değildir. [PDF ilerlemesi](PDF_SOURCE_PROGRESS032.md), kaynak sürümüne bağlı kararları ve açık maddeleri gösterir. Bütün MEB/OGM alt kazanımları, bütün PDF’ler ve bütün resmî ÖSYM arşivi tamamlanmadı.
+
+C3 hedef UI, yerel Electron ve Pages alt dizininde 107’şer akış ile gerçek yerel web yükseltmesi geçti. Son C4 tam yerel turu 205 dosyada 1.841/1.841 PASS; TypeScript ve normal/prefix C4 derlemeleri PASS. Önceki tek timeout, izole değiştirilmemiş 4/4 başarı ve eski 1.840 tam başarı tarihsel olarak korunur. Son çokgen çözüm adımı düzeltmesinden sonra C4 hedef UI turu 8/8 geçti. Son native/prefix, tam uzak CI, paket ve yayın kapıları henüz bu kayıtta tamamlanmadı. [QA](QA.md) sonuçları ayırır; son doğrulanmış yayın 0.19.0’dır. Öğrenci PDF veya kaynak yüklemez; özgün sorular resmî ÖSYM sorusu diye sunulmaz.
+
+---
+
+## Önceki kapsam kayıtları
+
 # 0.18.2 yayınının ölçülen kapsamı
 
 | Ölçüm | Kapsam |

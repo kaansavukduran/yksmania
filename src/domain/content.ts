@@ -2,6 +2,8 @@ import {
   legacy026QuestionLessons,
   legacy026TheoryIds,
 } from "../learning/legacy026";
+import { primeSource032Lessons } from "../learning/primeSource032";
+import { geometryExpansion032Lessons } from "../learning/geometryExpansion032";
 import { geometryFoundation031Lessons } from "../learning/geometryFoundation031";
 import { forge025MathLessons } from "../learning/forge025Math";
 import { forge025ChemistryLessons } from "../learning/forge025Chemistry";
@@ -916,6 +918,8 @@ const baseLessons: Lesson[] = [
   },
   ...visualLessons,
   ...geometryFoundation031Lessons,
+  ...geometryExpansion032Lessons,
+  ...primeSource032Lessons,
   ...aytLessons,
   ...introLessons,
   ...mathLessons,

@@ -1,3 +1,15 @@
+# 0.20.0 geliştirme adayı: Forge032
+
+Sekiz yeni interaktif ünite, 46 çözümlü örnek ve 134 tam yardımlı soru eklendi. Toplam 494 ayrıntılı rehber, 494 kopya kağıdı, 493 çalışma başlığı ve 6.077 özgün soru vardır; 3.437 tam / 2.640 kısmi yardım ayrı izlenir. [Güncel Forge032 kaydı](docs/FORGE032.md), [QA](docs/QA.md) ve [PDF ilerlemesi](docs/PDF_SOURCE_PROGRESS032.md) kaynak ile teknik kabulü ayırır.
+
+Güncel 8.936 PDF için 2 tam, 7 kısmi ve 8.927 belirsiz kapsam kararı doğrulandı. Belirsiz, hiç işlenmemiş demek değildir. Eski kaynak sürümleri ve kayıtlar korunur. C3 hedef akışlar, gerçek yerel 0.19 → 0.20 web güncellemesi, yerel Electron ve Pages alt dizininde 107’şer çevrimdışı model akışı geçti. Son C4 tam birim turu 205 dosyada 1.841/1.841 PASS, TypeScript ve normal/prefix C4 derlemeleri PASS. Önceki tek timeout ve değiştirilmeden izole 4/4 geçen dosya tarihsel olarak korunur. Son denetimde tek çokgen çözüm adımındaki açı–kenar sırası düzeltildi; C3 kabulleri önceki kapsamdır, Son C4 hedef UI turu 8/8 geçti; tam uzak CI, son paket ve yayın kapıları ayrıca aranır.
+
+Son doğrulanmış yayın 0.19.0’dır. Kullanıcının telefonunda denemesi için ayrı Android test APK’sı hazırlanıyor; henüz üretilmiş veya fiziksel cihazda kabul edilmiş sayılmaz. Aşağıdaki 0.19 ve önceki sürüm kayıtları tarihsel olarak korunur.
+
+---
+
+## Önceki doğrulanmış sürümler
+
 # 0.19.0 doğrulanmış yayın — 17 Kasım 2026
 
 Altı geometri temeli gerçek şekil modelleri, konuya bağlı videolar ve Matrix temasıyla yayımlandı. Önceki 479 çalışma kimliği/sırası ve kayıtlar korunur; yeni altı konu bağımsız izlenir. Kaynak kapsamı ile teknik yayın kabulü [QA](docs/QA.md) ve [PDF kaydında](docs/PDF_SOURCE_PROGRESS.md) ayrı açıklanır.

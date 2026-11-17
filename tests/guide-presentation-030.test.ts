@@ -65,7 +65,7 @@ describe("030 capsid stock worked-example clarification", () => {
         expect(
           resolveGuideStep(view.id, saved, count, view.sections.length),
         ).toBe(resolveGuideStep(raw.id, saved, count, raw.sections.length));
-    expect(lessonGuides.size).toBe(486);
+    expect(lessonGuides.size).toBe(494);
   });
   it("does not mix old and new conditions after any known-field edit or missing/reordered step", () => {
     let rejected = 0;

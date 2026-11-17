@@ -987,7 +987,7 @@ test.describe("030 linked virus and plant guides and built-in sheets", () => {
           sheetSections: target.sections,
           sheetExamples: 2,
           sheetRecall: target.recall,
-          sheetCount: 486,
+          sheetCount: 494,
         });
         await nav(page, "Konu Anlatımı");
         await page.getByRole("button", { name: "TYT", exact: true }).click();
@@ -1061,7 +1061,7 @@ test.describe("030 linked virus and plant guides and built-in sheets", () => {
         expect(await allWrites(page)).toEqual([]);
         await nav(page, "Kopya Kağıtları");
         await expect(page.locator(".page-heading")).toContainText(
-          "486 hazır kağıt",
+          "494 hazır kağıt",
         );
         await page.getByRole("button", { name: "TYT", exact: true }).click();
         await page

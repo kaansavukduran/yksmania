@@ -1,3 +1,29 @@
+# Geometri kapsamı: 0.20.0 geliştirme adayı
+
+17 Kasım 2026. Yeni yedi TYT geometri ünitesi çokgenler, dörtgen aileleri, yamuk–deltoid, paralelkenar ailesi, dik prizmalar, piramitler ve kaynakla açı pekiştirmedir. Bu paket 68 anlatım bölümü, 34 çözümlü örnek, 36 hatırlama ve 94 tam gerekçeli soru içerir. Asal sayılar ünitesi matematik kapsamındadır; geometri toplamına eklenmez.
+
+494 ayrıntılı rehberin 19’u doğrudan geometri dersindedir: 15 TYT ve dört AYT. Katalogdaki 16 TYT/9 AYT başlığı, ayrıntılı rehber ve çalışma başlıkları farklı ölçülerdir; birbirine bölünerek tamamlanma yüzdesi çıkarılmaz. Matematikteki örtüşen alan, trigonometri, analitik ve parabol öğretimi korunur. İlk 479 başlığın kimliği ve sırası, önceki altı geometri eklemesi ve yeni bağımsız kayıtlar birbirine karıştırılmaz.
+
+| Yeni ünite | Etkileşimli açıklama |
+| --- | --- |
+| Çokgenler | Kenar sayısı, üçgenleme, bütün köşegenler, iç/dış açı hesapları aynı modelden gelir |
+| Dörtgen aileleri | Kapsayıcı sınıflandırma, kenar/paralellik/köşegen koşulları karşılaştırılır |
+| Yamuk–deltoid | Taban, dik yükseklik, orta taban, simetri ve köşegen alanı değiştirilebilir |
+| Paralelkenar ailesi | Kayma, dik yükseklik, özel dörtgen ve köşegen koşulları ayrılır |
+| Dik prizmalar | Kenarlar, açınım, yüzey alanı, hacim ve cisim köşegeni bağlanır |
+| Piramitler | Yükseklik, apotem, ayrıt, açınım ve benzer kesitte k/k²/k³ oranları ayrılır |
+| Kaynakla açı pekiştirme | Doğru/ışın/parça, numaralı paralel-kesen ve dönme şekilleri sayısal örneklerle kullanılır |
+
+Yamuk “en az bir çift karşılıklı kenarı paralel dörtgen” olarak kapsayıcı kullanılır; özel dörtgenlerin koşulları ayrıca açıklanır. Deltoidde yalnız ilgili köşegenin diğerini ortalaması ile iki köşegenin birbirini ortalaması karıştırılmaz. Cismin dik yüksekliği, yanal yüz apotemi ve yan ayrıt farklıdır. Şekil değiştirme doğru cevap veya XP sayılmaz.
+
+Sıradaki somut açıklar sentetik çember/dairede açı–uzunluk–çevre–alanın bütünleşik öğretimi, dönel cisimler ve daha ileri kesit/açınım durumlarıdır. Yeni çokgen/dörtgen/prizma/piramit ünitelerinin bulunması bütün kaynak varyantlarını veya bütün MEB alt becerilerini kapatmaz. [PDF kaydı](PDF_SOURCE_PROGRESS032.md), yedi sayfalık kaynak kapanışını, 16 sayfalık geometri derlemesi ve 160 sayfalık MEBİ kitabındaki kısmi eşlemelerden ayırır.
+
+C3 hedef UI, yerel Electron ve Pages alt dizini kabulleri geçti. Son içerik denetiminde bir çokgen çözüm adımındaki açı–kenar sırası açıklaştırıldı; Normal ve prefix C4 derlemeleri geçti; son C4 hedef UI turu 8/8 geçti; native/prefix ve uzak kapıların son C4 kabulü ayrıca aranır. Tam uzak CI ve yayın henüz bu adayda kabul edilmedi. Gerçek kaynak/cihaz sınırları [QA](QA.md) içindedir. Aşağıdaki eski sürümde “yok” veya “sıradaki” denen içerikler o sürümün tarihsel durumudur.
+
+---
+
+## 0.19.0 ve önceki kapsam kayıtları
+
 # Geometri kapsamı — 17 Kasım 2026
 
 0.19.0 kaynağına altı temel TYT geometri ünitesi eklendi: temel açılar ve paraleller; üçgende açılar; üçgen eşitsizliği ve açı–kenar ilişkisi; dik üçgen/Pisagor/Öklid; eşlik–benzerlik; yardımcı elemanlar ve merkezler. Bu yeni paket 48 bölüm, 20 çözümlü örnek, 26 hatırlama ve 60 özgün, gerekçeli soru içerir. Her ünitede kavramın geometrisini değiştiren SVG modeli bulunur. Video önerileri ilgili alt konu adlarını korur.

@@ -1,3 +1,4 @@
+import { geometryExpansion032Ids } from "../data/supplementalTopics032";
 import { lessonGuides } from "../learning/guides";
 import { useMemo, useState } from "react";
 import { Search, ChevronDown, ArrowRight } from "lucide-react";
@@ -92,7 +93,10 @@ export function Courses({
                   l(v.title).toLocaleLowerCase("tr-TR").includes(query)),
             )
             .sort((a, b) => {
-              const ids = geometryFoundation031Ids as readonly string[];
+              const ids: readonly string[] = [
+                ...geometryFoundation031Ids,
+                ...geometryExpansion032Ids,
+              ];
               const rank = (id: string) => {
                 const index = ids.indexOf(id);
                 return index < 0 ? ids.length : index;

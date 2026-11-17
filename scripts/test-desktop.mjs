@@ -1,4 +1,9 @@
 import {
+  forge032SmokeCases,
+  runForge032SmokeCase,
+  assertForge032ProcessRestart,
+} from "./forge032-smoke-cases.mjs";
+import {
   forge031SmokeCases,
   runForge031SmokeCase,
   assertForge031ProcessRestart,
@@ -686,6 +691,13 @@ try {
   for (const unit of forge031SmokeCases)
     forge031Snapshots.push(await runForge031SmokeCase(page, navigate, unit));
 
+  // Append the eight032 flows while preserving the previous99 and final026 route.
+  expect(forge032SmokeCases).toHaveLength(8);
+  const forge032Snapshots = [];
+  for (const unit of forge032SmokeCases) {
+    forge032Snapshots.push(await runForge032SmokeCase(page, navigate, unit));
+  }
+
   expect(forge026SmokeCases).toHaveLength(8);
   const forge026Snapshots = [];
   for (const unit of forge026SmokeCases)
@@ -711,10 +723,11 @@ try {
       forge025Snapshots,
       forge026Snapshots,
       forge031Snapshots,
+      forge032Snapshots,
     ].flatMap((snapshots) => snapshots.map((item) => item.id)),
   ];
-  expect(commonModelFlowIds).toHaveLength(99);
-  expect(new Set(commonModelFlowIds).size).toBe(99);
+  expect(commonModelFlowIds).toHaveLength(107);
+  expect(new Set(commonModelFlowIds).size).toBe(107);
 
   const mathematics = [
     /Temel kavramlar: sayı, değer/,
@@ -843,6 +856,7 @@ try {
   await assertForge025ProcessRestart(page, navigate, forge025Snapshots);
   await assertForge026ProcessRestart(page, navigate, forge026Snapshots);
   await assertForge031ProcessRestart(page, navigate, forge031Snapshots);
+  await assertForge032ProcessRestart(page, navigate, forge032Snapshots);
   await navigate("Bugün");
   await expect(page.locator(".stat-number").first()).toHaveText("1");
   const dailyTheory = page
@@ -864,7 +878,7 @@ try {
   await navigate("Dünyam");
   await expect(
     page.getByRole("img", { name: /Genel konu çalışma ilerlemesi/ }),
-  ).toHaveAttribute("aria-label", /1\/485 konu/);
+  ).toHaveAttribute("aria-label", /1\/493 konu/);
   await expect(
     page.getByRole("region", { name: "TYT konu ağacı", exact: true }),
   ).toBeVisible();
@@ -1090,7 +1104,7 @@ try {
   await expect(page.locator(".stat-number").first()).toHaveText("0");
   await expect(
     page.getByRole("region", { name: "Konu planı", exact: true }),
-  ).toContainText("0/485");
+  ).toContainText("0/493");
   await openSheet("Hücre Organelleri");
   await expect(
     page.getByRole("textbox", { name: "Notun", exact: true }),
@@ -1336,6 +1350,12 @@ try {
       ),
       forge031SameProfileProcessRestart: "PASS",
       forge031ExplorationWithoutLearningCredit: "PASS",
+      forge032FamiliesOfflineHtmlStateAndReload: forge032Snapshots.map(
+        (item) => item.id,
+      ),
+      forge032SameProfileProcessRestart: "PASS",
+      forge032ExplorationWithoutLearningCredit: "PASS",
+      forge032NotesOfflineAndProcessRestart: "PASS",
       sharedOfflineModelFlowCount: commonModelFlowIds.length,
       sharedOfflineModelFlowIds: commonModelFlowIds,
       forge025ExplorationWithoutLearningCredit: "PASS",

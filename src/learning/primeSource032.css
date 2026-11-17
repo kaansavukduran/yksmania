@@ -1,0 +1,152 @@
+.p032-lab {
+  padding: clamp(1rem, 3vw, 1.7rem);
+  border: 1px solid var(--border);
+  border-radius: 0.9rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.p032-lab .lab-heading h2 {
+  margin-top: 0;
+}
+.p032-lab p {
+  max-width: 75ch;
+}
+.p032-steps,
+.p032-pairs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1.2rem 0;
+  align-items: center;
+}
+.p032-lab button {
+  min-height: 2.75rem;
+  white-space: normal;
+  max-width: 100%;
+}
+.p032-progress {
+  font-variant-numeric: tabular-nums;
+}
+.p032-key {
+  font-size: 0.9em;
+  color: var(--muted);
+}
+.p032-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, max(44px, 2.2em)), 1fr)
+  );
+  gap: 8px;
+  margin: 1.2rem 0;
+}
+.p032-grid .p032-number {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.1em;
+  align-items: center;
+  padding: 0.25em 0.3em;
+  min-width: 44px;
+  min-height: 44px;
+  font: inherit;
+  font-variant-numeric: tabular-nums;
+  border: 1px solid var(--border);
+  position: relative;
+}
+.p032-number .p032-mark {
+  font-size: 0.65em;
+  min-width: 0.5em;
+}
+.p032-number.p032-composite {
+  color: var(--muted);
+  background: var(--bg);
+}
+.p032-number.p032-prime {
+  border-color: var(--mint);
+}
+.p032-number[aria-pressed="true"] {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.p032-insight {
+  border-inline-start: 3px solid var(--mint);
+  background: var(--bg);
+  padding: 0.85rem 1rem;
+}
+.p032-detail {
+  border-top: 1px solid var(--border);
+  margin-top: 1.7rem;
+  padding-top: 1rem;
+  min-width: 0;
+}
+.p032-verdict {
+  font-weight: 600;
+}
+.p032-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+  gap: 0.8rem;
+}
+.p032-facts > div {
+  border: 1px solid var(--border);
+  background: var(--bg);
+  border-radius: 0.5rem;
+  padding: 0.8rem 1rem;
+  min-width: 0;
+}
+.p032-facts dt {
+  font-size: 0.9em;
+  color: var(--muted);
+}
+.p032-facts dd {
+  margin: 0.3rem 0 0;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+.p032-array {
+  display: block;
+  width: 100%;
+  max-width: 34rem;
+  height: auto;
+  background: var(--bg);
+  margin: 1rem 0;
+}
+.p032-array rect {
+  fill: var(--mint);
+  fill-opacity: 0.3;
+  stroke: var(--text);
+  stroke-width: 1.5;
+}
+.p032-factor-equation {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  border-inline-start: 3px solid var(--mint);
+  padding: 0.8rem 1rem;
+  background: var(--bg);
+}
+.p032-footnote {
+  font-size: 0.85em;
+  color: var(--muted);
+  margin-top: 1.5rem;
+}
+@media (max-width: 560px) {
+  .p032-lab {
+    padding: 10px 12px;
+  }
+  .p032-insight,
+  .p032-facts > div,
+  .p032-factor-equation {
+    padding: 10px 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .p032-lab * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+:root[data-motion="off"] .p032-lab * {
+  animation: none !important;
+  transition: none !important;
+}

@@ -1,3 +1,4 @@
+import { geometryExpansion032Ids } from "../data/supplementalTopics032";
 import { useId, useState, useEffect, type ReactNode } from "react";
 import { useExploration } from "./useExploration";
 import "./guidedJourney.css";
@@ -7,8 +8,10 @@ import type { LessonGuide, WorkedExample } from "./guides/types";
 import { resolveGuideStep } from "./guides/position";
 import { geometryFoundation031Ids } from "../data/supplementalTopics031";
 
-const geometryVisualFirst = new Set<string>([
+const visualFirstLessonIds = new Set<string>([
+  "tyt-mat-asal-kaynak-032",
   ...geometryFoundation031Ids,
+  ...geometryExpansion032Ids,
   "alan-donusumleri",
   "noktanin-analitigi",
   "dogrunun-analitigi",
@@ -108,7 +111,7 @@ export function GuidedReading({
   // Geometry starts with the manipulable figure, so the first guided step
   // explains the shape the learner is looking at. Saved section numbers do not
   // change; the figure is positioned within the existing first section.
-  const visualSection = geometryVisualFirst.has(guide.id) ? 0 : 1;
+  const visualSection = visualFirstLessonIds.has(guide.id) ? 0 : 1;
   function setJourney(changes: Partial<typeof journey>) {
     persistJourney({
       ...changes,

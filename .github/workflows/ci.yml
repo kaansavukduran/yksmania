@@ -19,15 +19,34 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run check && npm test && npm run build
+  browser:
+    needs: verify
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2, 3, 4]
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: "24"
+          cache: npm
+      - run: npm ci
+        env:
+          ELECTRON_SKIP_BINARY_DOWNLOAD: "1"
+      - run: npm run build
       - run: npx playwright install --with-deps chromium
-      - run: npm run test:e2e -- --workers=2
+      - run: npm run test:e2e -- --workers=2 --shard=${{ matrix.shard }}/4
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         if: failure()
         with:
-          name: browser-test-report
+          name: browser-test-report-${{ matrix.shard }}
           path: playwright-report/
   windows:
-    needs: verify
+    needs: [verify, browser]
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
@@ -50,7 +69,7 @@ jobs:
           name: YKSMania-Windows-x64
           path: release/*.exe
   linux:
-    needs: verify
+    needs: [verify, browser]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
@@ -90,7 +109,7 @@ jobs:
             echo '::notice::Android package skipped: persistent signing is not configured. Web and desktop verification continue.'
           fi
   android:
-    needs: [verify, android_signing]
+    needs: [verify, browser, android_signing]
     if: needs.android_signing.outputs.ready == 'true'
     runs-on: ubuntu-latest
     steps:

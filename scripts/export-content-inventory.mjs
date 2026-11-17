@@ -102,9 +102,9 @@ try {
   );
   const description = `YKSMania ${pkg.default.version} — Sayısal konu kapsamı
 
-CSV, uygulamadaki ${rows.length} ayrıntılı rehberi gösterir. İlk 479 başlık Excel’in özgün sırasını ve kimliklerini korur. Altı yeni geometri temeli ayrı kimliklerle 480–485 sırasındadır. Ek “Üçgen ve paralelkenarda alan” rehberi planın dışındadır; öğrenme sırası hücresi boş bırakılmıştır.
+CSV, uygulamadaki ${rows.length} ayrıntılı rehberi gösterir. İlk 479 başlık Excel’in özgün sırasını ve kimliklerini korur. Sonradan eklenen ${plan.studyTopics.filter((topic) => topic.order > 479).length} çalışma başlığı, ayrı kimliklerle 480–${plan.studyTopics.length} sırasındadır. Plan dışında kalan rehberlerin öğrenme sırası hücresi boş bırakılmıştır.
 
-34 ek soru seti, aynı konuya ait doğrulanmış bağıyla ilgili rehberin sayısına eklenmiştir. Her soru yalnız bir kez sayılır. Toplam ${total} özgün soru vardır: ${full} ayrıntılı, ${total - full} kısmi yardım. Eski kısmi yardım kartları bu sayıma devam eder; altı yeni geometri biriminde 60 tam gerekçeli soru vardır.
+${lessons.filter((lesson) => lesson.tags.includes("soru-seti")).length} ek soru seti, aynı konuya ait doğrulanmış bağıyla ilgili rehberin sayısına eklenmiştir. Her soru yalnız bir kez sayılır. Toplam ${total} özgün soru vardır: ${full} ayrıntılı, ${total - full} kısmi yardım. Eski kısmi yardım kartları da bu sayıma dahildir; her rehberin güncel yardım sayıları CSV’de ayrı gösterilir.
 
 “Ayrıntılı Yardım”, uygulamanın tam çözüm rehberini bulabildiği soruları; “Kısmi Yardım”, daha sınırlı ipucu ve açıklamayla kalan soruları sayar. Sayılar öğrenci başarısı veya içerik kalitesi ölçüsü değildir. Bölüm, örnek ve hatırlama sayıları yapısal sayımlardır. Tahmini dakika bir planlama tahminidir.
 

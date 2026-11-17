@@ -18,3 +18,5 @@ src-tauri/target/
 src-tauri/gen/
 private/
 release/
+__pycache__/
+*.py[cod]
