@@ -58,6 +58,7 @@ const learning = (s: AppState) => ({
   focusTimer: s.focusTimer,
 });
 async function nav(page: Page, name: string) {
+  await expect(page.locator(".topbar")).toBeVisible();
   const menu = page.getByRole("button", { name: "Menüyü aç", exact: true });
   if (await menu.isVisible()) await menu.click();
   await page

@@ -287,7 +287,7 @@ test("progress reset is cancellable and atomic, preserves legacy files and nativ
     .fill("Rasyonel Sayılar");
   await page
     .locator(".cheatsheet-topic")
-    .filter({ hasText: "Rasyonel Sayılar" })
+    .filter({ has: page.getByText("Rasyonel Sayılar", { exact: true }) })
     .click();
   await expect(page.locator(".cheat-reader")).toBeVisible();
   await page
@@ -361,7 +361,7 @@ test("progress reset is cancellable and atomic, preserves legacy files and nativ
   await nav(page, "Bugün");
   await expect(
     page.getByRole("region", { name: "Konu planı", exact: true }),
-  ).toContainText("0/494");
+  ).toContainText("0/496");
   await expect(page.locator(".stat-number").first()).toHaveText("0");
   await nav(page, "Kopya Kağıtları");
   await page
@@ -369,7 +369,7 @@ test("progress reset is cancellable and atomic, preserves legacy files and nativ
     .fill("Rasyonel Sayılar");
   await page
     .locator(".cheatsheet-topic")
-    .filter({ hasText: "Rasyonel Sayılar" })
+    .filter({ has: page.getByText("Rasyonel Sayılar", { exact: true }) })
     .click();
   await expect(
     page.getByRole("textbox", { name: "Notun", exact: true }),

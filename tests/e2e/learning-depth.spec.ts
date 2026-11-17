@@ -37,7 +37,7 @@ test("YKS-016 full-width theory and separate ready cheatsheets retain notes offl
     .fill("Rasyonel Sayılar");
   await page
     .locator(".cheatsheet-topic")
-    .filter({ hasText: "Rasyonel Sayılar" })
+    .filter({ has: page.getByText("Rasyonel Sayılar", { exact: true }) })
     .click();
   const sheet = page.getByRole("region", {
     name: "Rasyonel Sayılar kopya kağıdı",
@@ -58,7 +58,7 @@ test("YKS-016 full-width theory and separate ready cheatsheets retain notes offl
     .fill("Rasyonel Sayılar");
   await page
     .locator(".cheatsheet-topic")
-    .filter({ hasText: "Rasyonel Sayılar" })
+    .filter({ has: page.getByText("Rasyonel Sayılar", { exact: true }) })
     .click();
   await expect(
     sheet.getByRole("textbox", { name: "Notun", exact: true }),
@@ -67,7 +67,7 @@ test("YKS-016 full-width theory and separate ready cheatsheets retain notes offl
   await nav(page, "Bugün");
   await expect(
     page.getByRole("region", { name: "Konu planı", exact: true }),
-  ).toContainText("0/494");
+  ).toContainText("0/496");
   await expect(page.locator(".stat-number").first()).toHaveText("0");
 });
 test("YKS-016 guides explain steps and keep topic/question cards padded; completed practice offers verified OSYM references without material imports", async ({
@@ -185,7 +185,7 @@ test("YKS-016 native sheets and long explanations reflow at 320px, 200% UI and 1
     .fill("Rasyonel Sayılar");
   await page
     .locator(".cheatsheet-topic")
-    .filter({ hasText: "Rasyonel Sayılar" })
+    .filter({ has: page.getByText("Rasyonel Sayılar", { exact: true }) })
     .tap();
   await expect(page.locator(".cheat-reader")).toContainText(/payda/i);
   expect(
@@ -256,5 +256,5 @@ test("guided study advances meaningful sections, keeps its place and notes offli
   await expect(page.locator(".stat-number").first()).toHaveText("0");
   await expect(
     page.getByRole("region", { name: "Konu planı", exact: true }),
-  ).toContainText("0/494");
+  ).toContainText("0/496");
 });

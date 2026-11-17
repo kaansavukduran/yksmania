@@ -154,7 +154,7 @@ test("built-in cheatsheet first opens offline with retained notes and no learnin
   await expect(page.locator(".stat-number").first()).toHaveText("0");
   await expect(
     page.getByRole("region", { name: "Konu planı", exact: true }),
-  ).toContainText("0/494");
+  ).toContainText("0/496");
 });
 
 test("a failed terminal save retains the answer draft and never celebrates false success", async ({
