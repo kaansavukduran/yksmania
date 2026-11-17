@@ -1,3 +1,4 @@
+import release from "../../package.json" with { type: "json" };
 import { test, expect, type Page, type Locator } from "@playwright/test";
 import { setThemePreference } from "./helpers/theme";
 import { registerOfflineBootDiagnostics } from "./helpers/offlineBootDiagnostics";
@@ -176,7 +177,7 @@ for (const profile of [
       await page.goto("/#/settings");
       expect(
         (await (await page.request.get("/version.json")).json()).version,
-      ).toBe("0.20.0");
+      ).toBe(release.version);
       await setThemePreference(page, profile.large ? "matrix" : "dark");
       if (profile.large) {
         await page
@@ -501,7 +502,7 @@ for (const profile of [
       await info.attach("source-language-acceptance", {
         body: JSON.stringify({
           status: "PASS",
-          version: "0.20.0",
+          version: release.version,
           profile,
           normalEntry: true,
           diagrams: true,

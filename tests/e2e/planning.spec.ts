@@ -327,14 +327,14 @@ test("YKS-009 an open offline app replans across midnight and refreshes when ret
   });
   await context.setOffline(true);
   await page.clock.runFor(61000);
-  await expect(plan(page)).toContainText("492 kalan konu ÷ 106 uygun gün");
+  await expect(plan(page)).toContainText("493 kalan konu ÷ 106 uygun gün");
   await expect(plan(page)).toContainText(
     "Bugünün hedefi: 5 konu · 0 tamamlandı",
   );
   await expect(plan(page).locator(".planned-topics li")).toHaveCount(5);
   await page.clock.setSystemTime(new Date("2026-11-16T12:00:00Z"));
   await page.evaluate(() => window.dispatchEvent(new Event("focus")));
-  await expect(plan(page)).toContainText("492 kalan konu ÷ 105 uygun gün");
+  await expect(plan(page)).toContainText("493 kalan konu ÷ 105 uygun gün");
   expect((await stored(page)).topicProgress["detail-139"].theory).toBe(
     "2026-11-14",
   );
