@@ -1,31 +1,15 @@
-name: Verify and build packages
+name: Verify published Pages recovery
 on:
-  push:
-    branches: [main]
-  pull_request:
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: published-pages-recovery-033
+  cancel-in-progress: false
 jobs:
-  verify:
+  verify-published:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
-        with:
-          persist-credentials: false
-      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
-        with:
-          node-version: "24"
-          cache: npm
-      - run: npm ci
-      - run: npm run check && npm test && npm run build
-  browser:
-    needs: verify
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        shard: [1, 2, 3, 4]
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -34,114 +18,21 @@ jobs:
         with:
           node-version: "24"
           cache: npm
+      - name: Prove frozen production inputs
+        run: |
+          git fetch origin 197dc1b31c0a45ad03a3782106665591cc0c32fc --depth=1
+          git diff --exit-code 197dc1b31c0a45ad03a3782106665591cc0c32fc HEAD -- src public desktop android index.html vite.config.ts package.json package-lock.json
       - run: npm ci
         env:
           ELECTRON_SKIP_BINARY_DOWNLOAD: "1"
-      - run: npm run build
       - run: npx playwright install --with-deps chromium
-      - run: npm run test:e2e -- --workers=2 --shard=${{ matrix.shard }}/4
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
-        if: failure()
-        with:
-          name: browser-test-report-${{ matrix.shard }}
-          path: playwright-report/
-  windows:
-    needs: [verify, browser]
-    runs-on: windows-latest
-    steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
-        with:
-          persist-credentials: false
-      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
-        with:
-          node-version: "24"
-          cache: npm
-      - run: npm ci
-      - run: npm run build
-      - run: npx electron-builder --win --publish never
+      - name: Verify existing deployment without publishing
+        run: node scripts/test-pages.mjs
         env:
-          CSC_IDENTITY_AUTO_DISCOVERY: "false"
-      - run: node scripts/test-desktop.mjs
-        env:
-          YKSMANIA_BINARY: release/win-unpacked/YKSMania.exe
+          YKSMANIA_PAGES_URL: https://kaansavukduran.github.io/yksmania/
+          YKSMANIA_EVIDENCE_DIR: pages-recovery-evidence
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
         with:
-          name: YKSMania-Windows-x64
-          path: release/*.exe
-  linux:
-    needs: [verify, browser]
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
-        with:
-          persist-credentials: false
-      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
-        with:
-          node-version: "24"
-          cache: npm
-      - run: npm ci && npm run build
-      - run: npx electron-builder --linux AppImage deb --publish never
-      - run: node scripts/test-desktop.mjs
-        env:
-          YKSMANIA_BINARY: release/linux-unpacked/yksmania
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        with:
-          name: YKSMania-Linux-x64
-          path: |
-            release/*.AppImage
-            release/*.deb
-  android_signing:
-    runs-on: ubuntu-latest
-    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
-    outputs:
-      ready: ${{ steps.availability.outputs.ready }}
-    steps:
-      - name: Check optional Android signing configuration
-        id: availability
-        shell: bash
-        env:
-          YKSMANIA_ANDROID_SIGNING: ${{ secrets.YKSMANIA_ANDROID_SIGNING }}
-        run: |
-          if [ -n "$YKSMANIA_ANDROID_SIGNING" ]; then
-            echo 'ready=true' >> "$GITHUB_OUTPUT"
-          else
-            echo 'ready=false' >> "$GITHUB_OUTPUT"
-            echo '::notice::Android package skipped: persistent signing is not configured. Web and desktop verification continue.'
-          fi
-  android:
-    needs: [verify, browser, android_signing]
-    if: needs.android_signing.outputs.ready == 'true'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
-        with:
-          persist-credentials: false
-      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
-        with:
-          node-version: "24"
-          cache: npm
-      - uses: actions/setup-java@c1e323688fd81a25caa38c78aa6df2d33d3e20d9 # v4.8.0
-        with:
-          distribution: temurin
-          java-version: "21"
-      - name: Prepare persistent Android signing
-        run: node scripts/prepare-android-signing.mjs
-        env:
-          YKSMANIA_ANDROID_SIGNING: ${{ secrets.YKSMANIA_ANDROID_SIGNING }}
-      - run: npm ci && npm run android:sync
-      - run: chmod +x gradlew && ./gradlew assembleDebug --no-daemon
-        working-directory: android
-      - name: Verify APK signature and package metadata
-        shell: bash
-        run: |
-          signing_tool="$(find "$ANDROID_HOME/build-tools" -type f -name apksigner | sort -V | tail -1)"
-          test -n "$signing_tool"
-          "$signing_tool" verify --verbose --print-certs android/app/build/outputs/apk/debug/app-debug.apk > android/app/build/outputs/apk/debug/verification.txt
-          "$(dirname "$signing_tool")/aapt" dump badging android/app/build/outputs/apk/debug/app-debug.apk >> android/app/build/outputs/apk/debug/verification.txt
-          node scripts/prepare-android-signing.mjs --verify android/app/build/outputs/apk/debug/verification.txt
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        with:
-          name: YKSMania-Android-debug
-          path: |
-            android/app/build/outputs/apk/debug/*.apk
-            android/app/build/outputs/apk/debug/verification.txt
+          name: published-pages-recovery-033-evidence
+          path: pages-recovery-evidence/

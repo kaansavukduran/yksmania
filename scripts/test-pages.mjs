@@ -55,6 +55,8 @@ import {
   runForge016SmokeCase,
 } from "./forge016-smoke-cases.mjs";
 import { createServer } from "node:http";
+import { writeFileSync, appendFileSync } from "node:fs";
+import { withinDeadline } from "./pages-deadline.mjs";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { chromium, expect } from "@playwright/test";
@@ -76,6 +78,26 @@ const evidence = path.resolve(
   process.env.YKSMANIA_EVIDENCE_DIR || "/tmp/yksmania-pages-evidence",
 );
 await fs.mkdir(evidence, { recursive: true });
+let lastStage = "initialization";
+let acceptanceClosed = false;
+const completedCases = [];
+let result = { status: "INCOMPLETE" };
+const progress = (stage, details = {}) => {
+  lastStage = stage;
+  const entry = { type: "pages-stage", at: new Date().toISOString(), stage, ...details };
+  appendFileSync(path.join(evidence, "pages-progress.ndjson"), JSON.stringify(entry) + "\n");
+  console.log(JSON.stringify(entry));
+};
+// Soft acceptance deadline leaves a full minute for bounded failure evidence/cleanup.
+// This is the last fail-closed backstop, including pre-test setup and cleanup.
+const hardStop = setTimeout(() => {
+  result = { ...result, status: "FAIL", error: "PAGES_HARD_DEADLINE: 720000 ms", lastStage, cases: completedCases };
+  try { writeFileSync(path.join(evidence, "pages-result.json"), JSON.stringify(result, null, 2)); }
+  catch (error) { console.error(String(error)); }
+  console.error(JSON.stringify(result));
+  process.exit(1);
+}, 12 * 60_000);
+progress("server-setup");
 let server;
 const missing = [];
 if (!process.env.YKSMANIA_PAGES_URL) {
@@ -115,24 +137,37 @@ if (!process.env.YKSMANIA_PAGES_URL) {
 }
 const origin =
   process.env.YKSMANIA_PAGES_URL || `http://127.0.0.1:4197${prefix}`;
+progress("browser-launch");
 const browser = await chromium.launch({
   headless: true,
   executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE || undefined,
 });
+progress("browser-context");
 const context = await browser.newContext({
   locale: "tr-TR",
   hasTouch: true,
   viewport: { width: 1440, height: 1000 },
 });
+progress("browser-page");
 const page = await context.newPage(),
   errors = [],
-  cases = [];
+  cases = completedCases;
 page.on("pageerror", (e) => errors.push(String(e)));
 const pageDiagnostics = [];
 const recordDiagnostic = (kind, data) => {
   pageDiagnostics.push({ kind, at: Date.now(), ...data });
+  appendFileSync(path.join(evidence, "pages-diagnostics.ndjson"), JSON.stringify({kind, at: Date.now(), stage: lastStage, ...data}) + "\n");
   if (pageDiagnostics.length > 150) pageDiagnostics.shift();
 };
+context.on("response", (response) => {
+  if (response.status() >= 400)
+    recordDiagnostic("http-error", {path: new URL(response.url()).pathname, status: response.status()});
+});
+context.on("requestfailed", (request) => {
+  if (request.serviceWorker()) recordDiagnostic("service-worker-request-failed", {
+    path: new URL(request.url()).pathname, error: request.failure()?.errorText,
+  });
+});
 page.on("requestfailed", (request) =>
   recordDiagnostic("request-failed", {
     path: new URL(request.url()).pathname,
@@ -373,8 +408,9 @@ const additionalFamilies = [
   },
 ];
 
-const storedExploration = (key) =>
-  page.evaluate(
+const storedExploration = (key) => {
+  progress("persistence:stored-exploration", { key });
+  return withinDeadline("read stored exploration", 15_000, () => page.evaluate(
     (key) =>
       new Promise((resolve, reject) => {
         const request = indexedDB.open("yksmania");
@@ -396,13 +432,17 @@ const storedExploration = (key) =>
         request.onerror = () => reject(request.error);
       }),
     key,
-  );
+  ));
+};
 
-let result = { status: "INCOMPLETE", url: origin };
+result = { status: "INCOMPLETE", url: origin };
 try {
+  await withinDeadline("full Pages acceptance", 11 * 60_000, async () => {
+  progress("normal-entry");
   expect(additionalFamilies).toHaveLength(6);
   await page.goto(origin);
   await expect(page.locator(".sidebar-version")).toContainText(expectedVersion);
+  progress("manifest-and-version");
   const manifestLink = await page
     .locator('link[rel="manifest"]')
     .getAttribute("href");
@@ -419,20 +459,78 @@ try {
   );
   expect(versionResponse.status()).toBe(200);
   expect((await versionResponse.json()).version).toBe(expectedVersion);
-  const worker = await page.evaluate(async () => {
-    const reg = await navigator.serviceWorker.ready;
-    if (!navigator.serviceWorker.controller)
-      await new Promise((resolve) =>
-        navigator.serviceWorker.addEventListener("controllerchange", resolve, {
-          once: true,
-        }),
-      );
-    return { scope: reg.scope, script: reg.active.scriptURL };
-  });
+  progress("service-worker:ready-and-control");
+  const worker = await withinDeadline("service-worker ready/control", 125_000, () => page.evaluate(async () => {
+    const container = navigator.serviceWorker;
+    if (!container) throw new Error("Service worker API unavailable");
+    let registration;
+    let observedRegistrations = [];
+    let registrationReadError = null;
+    let readPending = false;
+    let finished = false;
+    let cacheNames = "PENDING";
+    let cacheReadError = null;
+    // Observation only: do not open, populate, delete or replace any cache.
+    if ("caches" in window) void caches.keys().then((names) => { cacheNames = names; }, (error) => { cacheReadError = String(error); });
+    const observedWorkers = new Map();
+    const snapshot = () => ({
+      controller: container.controller ? { scriptURL: container.controller.scriptURL, state: container.controller.state } : null,
+      registrations: observedRegistrations.map((reg) => ({scope: reg.scope,
+        installing: reg.installing ? { scriptURL: reg.installing.scriptURL, state: reg.installing.state } : null,
+        waiting: reg.waiting ? { scriptURL: reg.waiting.scriptURL, state: reg.waiting.state } : null,
+        active: reg.active ? { scriptURL: reg.active.scriptURL, state: reg.active.state } : null})),
+      registrationReadError, cacheNames, cacheReadError,
+      observedWorkers: [...observedWorkers].map(([worker, entry]) => ({scriptURL: worker.scriptURL, state: worker.state, states: entry.states})),
+    });
+    let timer, poll, controllerListener;
+    const observe = async () => {
+      if (readPending) return;
+      readPending = true;
+      try {
+        const registrations = await container.getRegistrations();
+        if (finished) return;
+        observedRegistrations = registrations;
+        for (const reg of registrations) for (const worker of [reg.installing, reg.waiting, reg.active]) {
+          if (!worker || observedWorkers.has(worker)) continue;
+          // Retain installing/redundant workers even if registration slots clear.
+          const entry = {states: [{at: Date.now(), state: worker.state}]};
+          entry.listener = () => entry.states.push({at: Date.now(), state: worker.state});
+          observedWorkers.set(worker, entry);
+          worker.addEventListener("statechange", entry.listener);
+        }
+      }
+      catch (error) { registrationReadError = String(error); }
+      finally { readPending = false; }
+    };
+    try {
+      return await new Promise((resolve, reject) => {
+        const check = () => {
+          if (registration && container.controller)
+            resolve({scope: registration.scope, script: registration.active?.scriptURL,
+              controllerScript: container.controller.scriptURL, diagnostics: snapshot()});
+        };
+        controllerListener = check;
+        // Subscribe before checking to avoid a lost controllerchange transition.
+        container.addEventListener("controllerchange", check);
+        timer = setTimeout(() => reject(new Error("SW_READY_CONTROL_TIMEOUT: " + JSON.stringify(snapshot()))), 120_000);
+        poll = setInterval(() => { void observe(); }, 1000);
+        void observe();
+        container.ready.then((reg) => { registration = reg; check(); }, reject);
+        check();
+      });
+    } finally {
+      finished = true;
+      clearTimeout(timer); clearInterval(poll);
+      for (const [worker, entry] of observedWorkers) worker.removeEventListener("statechange", entry.listener);
+      container.removeEventListener("controllerchange", controllerListener);
+    }
+  }));
   expect(new URL(worker.scope).pathname).toBe(prefix);
   expect(new URL(worker.script).pathname).toBe(prefix + "sw.js");
+  progress("offline-entry");
   await context.setOffline(true);
   for (const unit of [...units, ...additionalFamilies]) {
+    progress("case:begin", { id: unit.id, completed: cases.length });
     await nav("Konu Anlatımı");
     await page
       .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
@@ -463,113 +561,148 @@ try {
         unit.persisted,
       );
     cases.push(unit.id);
+    progress("case:passed", { id: unit.id, completed: cases.length });
   }
   // Existing model actions above establish a real durable state. New families
   // still open for the first time offline; never invent an empty IDB baseline.
   expect(forge014SmokeCases).toHaveLength(6);
   const forge014Snapshots = [];
   for (const unit of forge014SmokeCases) {
-    forge014Snapshots.push(await runForge014SmokeCase(page, nav, unit));
+    progress("case:begin", { id: unit.id, completed: cases.length });
+    forge014Snapshots.push(await withinDeadline(`case ${unit.id}`, 120_000, () => runForge014SmokeCase(page, nav, unit)));
     cases.push(unit.id);
+    progress("case:passed", { id: unit.id, completed: cases.length });
   }
 
   expect(forge015SmokeCases).toHaveLength(6);
   const forge015Snapshots = [];
   for (const unit of forge015SmokeCases) {
-    forge015Snapshots.push(await runForge015SmokeCase(page, nav, unit));
+    progress("case:begin", { id: unit.id, completed: cases.length });
+    forge015Snapshots.push(await withinDeadline(`case ${unit.id}`, 120_000, () => runForge015SmokeCase(page, nav, unit)));
     cases.push(unit.id);
+    progress("case:passed", { id: unit.id, completed: cases.length });
   }
   expect(forge016SmokeCases).toHaveLength(6);
   const forge016Snapshots = [];
   for (const unit of forge016SmokeCases) {
-    forge016Snapshots.push(await runForge016SmokeCase(page, nav, unit));
+    progress("case:begin", { id: unit.id, completed: cases.length });
+    forge016Snapshots.push(await withinDeadline(`case ${unit.id}`, 120_000, () => runForge016SmokeCase(page, nav, unit)));
     cases.push(unit.id);
+    progress("case:passed", { id: unit.id, completed: cases.length });
   }
   expect(forge017SmokeCases).toHaveLength(6);
   const forge017Snapshots = [];
   for (const unit of forge017SmokeCases) {
-    forge017Snapshots.push(await runForge017SmokeCase(page, nav, unit));
+    progress("case:begin", { id: unit.id, completed: cases.length });
+    forge017Snapshots.push(await withinDeadline(`case ${unit.id}`, 120_000, () => runForge017SmokeCase(page, nav, unit)));
     cases.push(unit.id);
+    progress("case:passed", { id: unit.id, completed: cases.length });
   }
   expect(forge018SmokeCases).toHaveLength(6);
   const forge018Snapshots = [];
   for (const unit of forge018SmokeCases) {
-    forge018Snapshots.push(await runForge018SmokeCase(page, nav, unit));
+    progress("case:begin", { id: unit.id, completed: cases.length });
+    forge018Snapshots.push(await withinDeadline(`case ${unit.id}`, 120_000, () => runForge018SmokeCase(page, nav, unit)));
     cases.push(unit.id);
+    progress("case:passed", { id: unit.id, completed: cases.length });
   }
   expect(forge019SmokeCases).toHaveLength(6);
   const forge019Snapshots = [];
   for (const unit of forge019SmokeCases) {
-    forge019Snapshots.push(await runForge019SmokeCase(page, nav, unit));
+    progress("case:begin", { id: unit.id, completed: cases.length });
+    forge019Snapshots.push(await withinDeadline(`case ${unit.id}`, 120_000, () => runForge019SmokeCase(page, nav, unit)));
     cases.push(unit.id);
+    progress("case:passed", { id: unit.id, completed: cases.length });
   }
   expect(forge020SmokeCases).toHaveLength(5);
   const forge020Snapshots = [];
   for (const unit of forge020SmokeCases) {
-    forge020Snapshots.push(await runForge020SmokeCase(page, nav, unit));
+    progress("case:begin", { id: unit.id, completed: cases.length });
+    forge020Snapshots.push(await withinDeadline(`case ${unit.id}`, 120_000, () => runForge020SmokeCase(page, nav, unit)));
     cases.push(unit.id);
+    progress("case:passed", { id: unit.id, completed: cases.length });
   }
   expect(forge021SmokeCases).toHaveLength(7);
   const forge021Snapshots = [];
   for (const unit of forge021SmokeCases) {
-    forge021Snapshots.push(await runForge021SmokeCase(page, nav, unit));
+    progress("case:begin", { id: unit.id, completed: cases.length });
+    forge021Snapshots.push(await withinDeadline(`case ${unit.id}`, 120_000, () => runForge021SmokeCase(page, nav, unit)));
     cases.push(unit.id);
+    progress("case:passed", { id: unit.id, completed: cases.length });
   }
   expect(forge022SmokeCases).toHaveLength(6);
   const forge022Snapshots = [];
   for (const unit of forge022SmokeCases) {
-    forge022Snapshots.push(await runForge022SmokeCase(page, nav, unit));
+    progress("case:begin", { id: unit.id, completed: cases.length });
+    forge022Snapshots.push(await withinDeadline(`case ${unit.id}`, 120_000, () => runForge022SmokeCase(page, nav, unit)));
     cases.push(unit.id);
+    progress("case:passed", { id: unit.id, completed: cases.length });
   }
   expect(forge023SmokeCases).toHaveLength(7);
   const forge023Snapshots = [];
   for (const unit of forge023SmokeCases) {
-    forge023Snapshots.push(await runForge023SmokeCase(page, nav, unit));
+    progress("case:begin", { id: unit.id, completed: cases.length });
+    forge023Snapshots.push(await withinDeadline(`case ${unit.id}`, 120_000, () => runForge023SmokeCase(page, nav, unit)));
     cases.push(unit.id);
+    progress("case:passed", { id: unit.id, completed: cases.length });
   }
 
   expect(forge024SmokeCases).toHaveLength(7);
   const forge024Snapshots = [];
   for (const unit of forge024SmokeCases) {
-    forge024Snapshots.push(await runForge024SmokeCase(page, nav, unit));
+    progress("case:begin", { id: unit.id, completed: cases.length });
+    forge024Snapshots.push(await withinDeadline(`case ${unit.id}`, 120_000, () => runForge024SmokeCase(page, nav, unit)));
     cases.push(unit.id);
+    progress("case:passed", { id: unit.id, completed: cases.length });
   }
 
   expect(forge025SmokeCases).toHaveLength(4);
   const forge025Snapshots = [];
   for (const unit of forge025SmokeCases) {
-    forge025Snapshots.push(await runForge025SmokeCase(page, nav, unit));
+    progress("case:begin", { id: unit.id, completed: cases.length });
+    forge025Snapshots.push(await withinDeadline(`case ${unit.id}`, 120_000, () => runForge025SmokeCase(page, nav, unit)));
     cases.push(unit.id);
+    progress("case:passed", { id: unit.id, completed: cases.length });
   }
   expect(forge031SmokeCases).toHaveLength(6);
   const forge031Snapshots = [];
   for (const unit of forge031SmokeCases) {
-    forge031Snapshots.push(await runForge031SmokeCase(page, nav, unit));
+    progress("case:begin", { id: unit.id, completed: cases.length });
+    forge031Snapshots.push(await withinDeadline(`case ${unit.id}`, 120_000, () => runForge031SmokeCase(page, nav, unit)));
     cases.push(unit.id);
+    progress("case:passed", { id: unit.id, completed: cases.length });
   }
   // Append the eight032 flows while preserving the previous99 and final026 route.
   expect(forge032SmokeCases).toHaveLength(8);
   const forge032Snapshots = [];
   for (const unit of forge032SmokeCases) {
-    forge032Snapshots.push(await runForge032SmokeCase(page, nav, unit));
+    progress("case:begin", { id: unit.id, completed: cases.length });
+    forge032Snapshots.push(await withinDeadline(`case ${unit.id}`, 120_000, () => runForge032SmokeCase(page, nav, unit)));
     cases.push(unit.id);
+    progress("case:passed", { id: unit.id, completed: cases.length });
   }
 
   expect(forge033SmokeCases).toHaveLength(1);
   const forge033Snapshots = [];
   for (const unit of forge033SmokeCases) {
-    forge033Snapshots.push(await runForge033SmokeCase(page, nav, unit));
+    progress("case:begin", { id: unit.id, completed: cases.length });
+    forge033Snapshots.push(await withinDeadline(`case ${unit.id}`, 120_000, () => runForge033SmokeCase(page, nav, unit)));
     cases.push(unit.id);
+    progress("case:passed", { id: unit.id, completed: cases.length });
   }
 
   expect(forge026SmokeCases).toHaveLength(8);
   const forge026Snapshots = [];
   for (const unit of forge026SmokeCases) {
-    forge026Snapshots.push(await runForge026SmokeCase(page, nav, unit));
+    progress("case:begin", { id: unit.id, completed: cases.length });
+    forge026Snapshots.push(await withinDeadline(`case ${unit.id}`, 120_000, () => runForge026SmokeCase(page, nav, unit)));
     cases.push(unit.id);
+    progress("case:passed", { id: unit.id, completed: cases.length });
   }
+  progress("all-model-cases:assert-108");
   expect(cases).toHaveLength(108);
   expect(new Set(cases).size).toBe(108);
+  progress("question-feedback-and-persistence");
   await page.getByRole("button", { name: "Sorulara geç", exact: true }).click();
   await expect(page.locator(".answer")).toHaveCount(5);
   await page.locator(".answer").first().click();
@@ -612,8 +745,9 @@ try {
   // These two existing narratives now have built-in independent question sets.
   // Start them through the ordinary Questions search while already offline.
   const foundationRouteCases = [];
-  const foundationState = () =>
-    page.evaluate(
+  const foundationState = () => {
+    progress("persistence:foundation-state");
+    return withinDeadline("read foundation state", 15_000, () => page.evaluate(
       () =>
         new Promise((resolve, reject) => {
           const request = indexedDB.open("yksmania");
@@ -636,7 +770,8 @@ try {
           };
           request.onerror = () => reject(request.error);
         }),
-    );
+    ));
+  };
   const foundationLearning = (state) => ({
     sessions: state.sessions,
     reviews: state.reviews,
@@ -742,6 +877,7 @@ try {
     foundationRouteCases.push(item.id);
   }
 
+  progress("final-navigation-and-mobile");
   await nav("Kopya Kağıtları");
   await expect(page.locator("main h1")).toBeVisible();
   await nav("Sınavlar");
@@ -762,6 +898,7 @@ try {
   });
   expect(errors).toEqual([]);
   expect(missing.filter((p) => !p.endsWith("favicon.ico"))).toEqual([]);
+  if (acceptanceClosed) throw new Error("Late completion after acceptance deadline");
   result = {
     status: "PASS",
     url: origin,
@@ -842,17 +979,22 @@ try {
     rendererErrors: errors,
     missing,
   };
-  console.log(JSON.stringify(result, null, 2));
+  });
+  acceptanceClosed = true;
 } catch (error) {
+  acceptanceClosed = true;
+  const failedStage = lastStage;
+  progress("failure-evidence");
   result = {
     status: "FAIL",
     url: origin,
     error: String(error.stack || error),
+    failedStage,
     rendererErrors: errors,
     cases,
     missing,
     diagnostics: pageDiagnostics,
-    document: await page
+    document: await withinDeadline("failure document snapshot", 3000, () => page
       .evaluate(() => ({
         readyState: document.readyState,
         bodyHtml: document.body.innerHTML.slice(0, 5000),
@@ -869,25 +1011,50 @@ try {
             duration: e.duration,
           })),
       }))
-      .catch(() => null),
+      ).catch((error) => ({ unavailable: String(error) })),
   };
-  await page
-    .screenshot({ path: path.join(evidence, "failure.png"), fullPage: false })
+  await withinDeadline("failure screenshot", 3000, () => page
+    .screenshot({ path: path.join(evidence, "failure.png"), fullPage: false, timeout: 2500 }))
     .catch(() => {});
   await fs.writeFile(
     path.join(evidence, "failure-dom.txt"),
-    await page
+    await withinDeadline("failure text", 3000, () => page
       .locator("body")
-      .innerText()
-      .catch(() => ""),
+      .innerText({ timeout: 2500 }))
+      .catch((error) => `UNAVAILABLE: ${error}`),
   );
   console.error(JSON.stringify(result, null, 2));
   process.exitCode = 1;
 } finally {
-  await fs.writeFile(
+  let cleanupFailed = false;
+  try {
+    progress("cleanup:browser");
+    await withinDeadline("browser cleanup", 10_000, () => browser.close());
+  } catch (error) {
+    cleanupFailed = true;
+    result = { ...result, status: "FAIL", cleanupError: String(error), lastStage };
+    process.exitCode = 1;
+  }
+  try {
+    if (server) {
+      progress("cleanup:server");
+      server.closeAllConnections?.();
+      await withinDeadline("server cleanup", 3000, () => new Promise((resolve, reject) => server.close((error) => error ? reject(error) : resolve())));
+    }
+  } catch (error) {
+    cleanupFailed = true;
+    result = { ...result, status: "FAIL", serverCleanupError: String(error), lastStage };
+    process.exitCode = 1;
+  }
+  progress("final-result");
+  // A cleanup failure also invalidates acceptance. Emit PASS only after cleanup.
+  await withinDeadline("write final result", 3000, () => fs.writeFile(
     path.join(evidence, "pages-result.json"),
     JSON.stringify(result, null, 2),
-  );
-  await browser.close();
-  if (server) await new Promise((resolve) => server.close(resolve));
+  ));
+  clearTimeout(hardStop);
+  if (result.status === "PASS") console.log(JSON.stringify(result, null, 2));
+  else { process.exitCode = 1; console.error(JSON.stringify(result, null, 2)); }
+  // Protocol cleanup failure cannot leave this node process waiting indefinitely.
+  if (cleanupFailed) process.exit(1);
 }
