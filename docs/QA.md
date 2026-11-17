@@ -26,6 +26,61 @@ Gizlilikte bütün değişiklikler 9.199 bilinen özel kimlik ve 8.845 özel URL
 
 ## Önceki kabul kayıtları
 
+# 0.20.0 yayın kabulü ve açık bulgu: 17 Kasım 2026
+
+Yayın kaynağı [387fc3ea](https://github.com/kaansavukduran/yksmania/commit/387fc3ea7f43e39d64e0c1e5f062372969a0ebeb). [Tam CI](https://github.com/kaansavukduran/yksmania/actions/runs/44070229171), [Pages](https://github.com/kaansavukduran/yksmania/actions/runs/44074567259) ve [release](https://github.com/kaansavukduran/yksmania/releases/tag/v0.20.0-alpha.1) bu kaynak üzerindedir. Bu belge, başarılı çekirdek kontrolleri sonradan bulunan dış bağlantı kusurundan ayrı tutar. Başarılı test sayısı bütün ürünün kusursuz olduğu anlamına gelmez.
+
+| Kapı | Gerçek sonuç |
+| --- | --- |
+| TypeScript ve birim testleri | PASS: 363 modül yolu, 205 dosyada 1.841/1.841 test |
+| Tam uzak tarayıcı | PASS: dört shard 341 + 292 + 316 + 316 = 1.265; fail/skip/flaky/retry 0 |
+| Paketli Windows/Linux | PASS: her biri 107 benzersiz çevrimdışı model akışı, reload/aynı profilde süreç yeniden açılışı; rendererErrors 0 |
+| Prefix ve gerçek Pages HTTPS yayını | PASS: her biri 107 benzersiz akış; worker/manifest `/yksmania/`, rendererErrors/missing boş |
+| Kamu web dosyaları | PASS: 291 dosya, 27.631.620 byte; normal TLS ile byte/SHA-256 eşleşti, doğrulama atlanmadı |
+| Gerçek yayımlanmış AppImage | PASS: 145.843.557 byte indirildi, GitHub/manifest SHA-256 eşleşti; değiştirilmemiş arşivden çıkarılan gerçek binary 107 akış/restart/no-false-XP geçti, rendererErrors 0 |
+| Son C4 hedef UI | PASS: tek turda 8/8; bağımsız açı 18/18 iki profil, dokuz örnek/on hatırlama, modeller ve asalın ilk gerçek 1/40 taslağı |
+| Gerçek yerel 0.19 → 0.20 web yükseltmesi | PASS: üç ham veri deposu, notlar, taslak/deneme/ayarlar ve özgün tekrar tarihleri korundu; otomatik durum yazımı 0 |
+| Ek yerel Chromium ile kamu öğrenme yolu | BLOCKED: ilk normal `goto` sertifika otoritesini tanımadı; uygulama davranışı denenmeden kesildi. TLS bypass uygulanmadı. GitHub’ın gerçek HTTPS 107 kabulü bundan ayrıdır. |
+| Kişisel Android APK | PASS: yapı/imza/kod 30/0.20.0-test, 19.179.469 byte ve 291 C4 payload dosyası. Fiziksel kurulum/ilk açılış NOT TESTED. |
+| Dış tarayıcı dispatch’i, yayımlanmış AppImage | FAIL: F032-DESKTOP-EXTERNAL-001; ayrıntı aşağıda |
+| Fiziksel cihaz, temiz OS kurulumu, Windows portable taşıma, native iki sürüm kurulumu | NOT TESTED |
+
+CI çıktıları yeniden derlenmeden dört masaüstü dosyası ve iki kanıt varlığı olarak yayımlandı. `verified-run.json` kaynağı bağlar; `SHA256SUMS.txt` beş dosyayı bağlar ve beş GitHub digest’iyle eşleşir. Gerçek AppImage SHA-256 değeri `0b7b9f78d20f5786838e6610d0cd0119ce2369e1061367d8528f7490d2152b3e` olarak indirme öncesi kanıtla ve indirilen byte’larla doğrulandı. Bu Linux VM’de arşiv içinden çalıştırma, temiz kurulum veya fiziksel Linux kabulü değildir. DEB ve Windows kurulum dosyaları gerçek CI paketleridir; bütün kurulum/taşıma senaryoları denendi denmez.
+
+İlk kaynak `24475d3`’in tam CI’si 1.262 PASS/3 FAIL verdi. Üç testte 485 başlık sonrasından kalan `484` beklentisi vardı; ürün doğru biçimde 493−1 = 492 gösteriyordu. İki E2E dosyasındaki beş tam literal düzeltildi; davranış, kapsam, süre, undo, hata ve offline kontrolleri atlanmadı. Aynı üç vaka yerelde 27,4 saniyede geçti; son `387fc3ea` kaynağında bütün 1.265 vaka yeniden geçti. İlk otomatik Pages işi başarısız CI nedeniyle doğru biçimde atlandı. Önceki tek yerel birim timeout’u, değişmemiş dosyanın izole 4/4 sonucu ve son tam 1.841 başarı aşağıdaki tarihsel kayıtlarda ayrı korunur.
+
+Android [test işi](https://github.com/kaansavukduran/yksmania/actions/runs/44069495221), `953084d9bf42cd337da575e8a12fc4acdbc8baba` kaynağındandır. Yayın `387fc3ea` ile fark yalnız iki E2E dosyasıdır; ürün kaynakları ve APK’nin 291 web dosyası C4 ile birebir karşılaştırıldı. Ayrı uygulama kimliği `com.fragaria.yksmania.test`, etiket YKSMania Deneme, sürüm 0.20.0-test/kod 30’dur. APK SHA-256: `e0f828ddeeb6cb8dcc2705f2baaa67a912da195da7bfd530762b0c7c9585fc10`. Otomatik Android debug imzası kullanıldı, repository secret istenmedi. İlk SDK yolu hatası ile yeni apksigner çıktısı nedeniyle iki parser reddi korunur; son parser gerçek rapora göre daraltılıp kabul/ret testleriyle doğrulandı. Bu APK genel Release’e eklenmedi; telefondaki kullanıcı denemesi beklenir.
+
+## F032-DESKTOP-EXTERNAL-001
+
+**Önem: Orta. Durum: yayımlanan 0.20.0’da AÇIK.** Konum `desktop/main.cjs`, `safeExternal`, `setWindowOpenHandler` ve `will-navigate` yoludur. Mevcut politika yalnız proje GitHub ve belirli Drive dosya adreslerini kabul eder; uygulamanın gerçek YouTube, OGM ve ÖSYM öğretim bağlantılarını reddeder.
+
+Yeniden üretim: normal HTTPS ile indirilmiş ve SHA doğrulanmış gerçek AppImage → Konu Anlatımı → TYT Matematik → Asal kaynak ünitesi → görünen ilk önerilen YouTube bağlantısına normal tıklama. Yalnız `shell.openExternal` OS çağrısı recorder ile değiştirildi; uygulamanın olay handler’ı ve URL politikası değiştirilmedi. Beklenen bir dış dispatch, gözlenen sıfırdır. Uygulama penceresi 1 → 1 kaldı, konu açık kaldı. Bu kanıt gerçek video erişimi veya oynatma deneyi değildir. İlk probe yalnız mobil menüyü açmayı kaçırıp inert bir ekranla kaldı; o sonuç kusur kanıtı sayılmadı. Normal menüyle yinelenen gerçek tıklama sorunu doğruladı.
+
+Statik bağımsız karşılaştırmada 2.294 aktif video girdisi ve beş resmî kitapçık adresi eski politika tarafından reddedilir. Kullanıcı etkisi: ilgili masaüstü düğmesi dış tarayıcıyı açmaz. Çevrimdışı anlatım/sorular ve kayıtlar bu kusurdan etkilenmez. Geçici yol bağlantıları [web uygulamasından](https://kaansavukduran.github.io/yksmania/) açmaktır. Çekirdek 107 akışın başarılı olması bu kusuru çürütmez; o suite OS dış dispatch’ini kapsamıyordu.
+
+En küçük onarım, izole 0.21 adayında `desktop/external-links.cjs` adlı sıkı URL yardımcısını gerçek main handler’ına bağlamaktır. Onaylı adreslerin protokol/host/yol/parametre sınırları korunmalı; yanlış host eki, kullanıcı bilgisi, farklı port, zararlı protokol ve yönlendirme varyantları reddedilmelidir. Tüm HTTPS adreslerine genel izin vermek kabul değildir. Mevcut GitHub/Drive davranışı ve kayıtlar korunmalıdır. Son izole 0.21 kaynağında **55/55 politika testi ve altı normal kaynak Electron bağlantı aktivasyonu PASS**. YouTube, OGM statik PDF/HTML, ÖSYM soru ve cevap PDF sayfaları ile tam süreç yeniden açılışından sonraki YouTube bağlantısı normal arayüzden tıklandı. Yalnız `shell.openExternal` recorder yapıldı; handler/predicate override, doğrudan handler çağrısı veya durum enjeksiyonu yoktu. Her tıklama görünür href’i tam bir kez dispatch etti; renderer URL’si/tek pencere ve bütün AppState baytları aynı kaldı. Matrix ve sentetik not süreç yeniden açılışında korundu; yeni öğrenme/tamamlama üretilmedi, renderer hatası 0. Bu **kaynak Electron/main handler kabulüdür**; paketlenmiş/yayımlanmış 0.21, fiziksel OS tarayıcısı veya gerçek video oynatma kabulü değildir. Yayımlanan 0.20 bu onarımı içermez; bulgu orada AÇIK kalır. İlk onarım probunda beş dispatch geçti, ikinci süreçte hero bekleyen harness durdu; kök neden ürün kusuru olarak kanıtlanmadı. Zaman sınırı ve fonksiyonel/restart beklentileri korunarak bağlı sidebar açılış kapısı kullanılan ayrı taze profil koşusu altı aktivasyonu geçti; ilk sonuç saklanır.
+
+Kabul: sonraki gerçek paket/main yolunda normal YouTube/OGM/ÖSYM tıklamalarının her biri OS dispatch recorder’a tam bir kez ulaşmalı; pencere sayısı artmamalı, konu/not/öğrenme/XP aynı kalmalı. Reddedilen URL sınıfları hiç dispatch etmemeli. Recorder testi OS sınırını doğrular; gerçek video oynatma ve fiziksel tarayıcı bütünlüğü ayrıca test edilmedikçe iddia edilmez. 0.20 indirmeleri ve etiketi değiştirilmeden korunur; onarım yeni sürümde yayımlanır.
+
+## Devam kaydı ve denetim prompt’u
+
+Saatlik bulut Forge görevi etkin; ilk tetik aktif çalışma sahibini gördüğü için salt okunur denetim yaptı. İkinci PDF üreticisi veya çakışan ana dal gönderimi başlatılmadı. Her koşuda gerçek kaynak/commit, kanonik defter ve Actions sonuçları yeniden okunur. Bu, gelecekteki bütün koşuların kesintisiz veya başarılı çalışacağı iddiası değildir.
+
+0.21 Faktöriyel adayı izole dalda hazırlanıyor: 20 bölüm, 16 örnek, 12 hatırlama, 43 soru, sekiz bölümlük özet ve altı model. C3 aşamasında dört hedef UI vakası, tam 43/43 yardımsız oturum, kaynakla doğrulanmış 2021 TYT örneğinin adımları ve 208 dosyada 1.852 birim testi geçti. Son izole adayda 209 dosyada 1.907 birim testi ve 367 modül/TypeScript kontrolü geçti. Dış bağlantı politikası/kaynak Electron kabulü yukarıdadır; son izole adayın prefix 108 akışı da PASS, paket/yayın kapıları ayrıca bekler. Bu adayın 6.120 soru/495 rehber/494 başlık sayıları yayımlanan 0.20’ye aktarılmaz; kanonik PDF sayımı hâlâ 2 tam/7 kısmi/8.927 belirsizdir. [Forge032](FORGE032.md) devam noktasını, [PDF ilerlemesi](PDF_SOURCE_PROGRESS032.md) kararları tutar.
+
+```text
+YKSMania devam denetimi. Yayımlanan taban 0.20.0, commit `387fc3ea7f43e39d64e0c1e5f062372969a0ebeb`; sonraki izole hedef forge/source-transfer-033, 0.21 adayı. Önce gerçek dal/commit, AGENTS, FORGE ve son Actions sonuçlarını doğrula; 0.20 etiketi/indirmeleri ve öğrenci verisini koru.
+1. Doğrulanmış AÇIK bulgu F032-DESKTOP-EXTERNAL-001 (Orta): desktop/main.cjs safeExternal gerçek YouTube/OGM/ÖSYM bağlantılarını reddediyor. İzinli kod grubu desktop/main.cjs, desktop/external-links.cjs ve tests/desktop-external-links.test.ts; yalnız doğrudan kabul için gerekli scripts/test-desktop.mjs değişikliği eklenebilir. Genel host izni verme; proje GitHub/Drive davranışını ve kötü URL retlerini koru.
+2. Gerçek paket/main handler'ı değişmeden normal ders bağlantılarına tıkla. Sadece OS shell çağrısını recorder yap: her onaylı bağlantı tam 1 dispatch, reddedilenler 0; pencere, ders, not, öğrenme ve XP korunmalı. Ardından 108 model, restart/offline ve paket kontrollerini çalıştır. Saf helper PASS'ini native veya oynatma PASS'i sayma.
+3. Faktöriyel adayının mevcut kaynak/uygulama eşlemesini, 43 sorusunu, görsel açıklamalarını, resmî 2021 referansını ve korunmuş eski 6.077 kartı yeniden denetle. Özel aday, normal kullanım, kanonik PDF kapanışı ve kamu yayını ayrı kapılardır. Kanonik 2/7/8927 sayımını kanıtsız artırma. Saatlik sahibin aktifliğini kontrol et; ikinci producer veya çakışan main gönderimi başlatma.
+Kalan test engellerini kusur diye sunma. Bu kayıt anında izole 033 kaynak Electron’da 55 politika testi ve altı normal bağlantı aktivasyonu geçti; paketlenmiş/yayımlanmış 033, fiziksel dış tarayıcı/video oynatma ve ekstra yerel HTTPS kullanıcı yolu bu kabulün kapsamı değildir. Yayımlanan 0.20 bulgusu açık kalır. Doğrulanmış onarım ve uygun yeni sürüm kapıları bitmeden genel başarı ilan etme.
+```
+
+---
+
+## Yayın öncesi 032 aday gözlemleri ve daha eski kayıtlar
+
 # 0.20.0 geliştirme adayının kabul kaydı: 17 Kasım 2026
 
 Yerel aday dalı `forge/source-transfer-032`, taban `52f87bf94f26a14a5fea16d597920f4fd72e8971`. Son doğrulanmış yayın 0.19.0’dır. Bu kayıttaki C3 üretim derlemesi normal ve `/yksmania/` alt dizini için ayrı sabitlenmiştir. Uygulama kaynağı ile Android paket yapılandırmasının sonraki değişiklikleri kendi kabulünü gerektirir; eski PASS yeni pakete otomatik taşınmaz.

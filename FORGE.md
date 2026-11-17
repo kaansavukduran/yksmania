@@ -10,6 +10,26 @@ Bu dal taban 0.20.0'dan hazırlanmış bir adaydır; **0.21.0 için main, tam uz
 
 ## Önceki geliştirme kayıtları
 
+# 0.20.0 doğrulanmış yayın: 17 Kasım 2026
+
+[Pages](https://kaansavukduran.github.io/yksmania/) ve [dört Windows/Linux indirmesi](https://github.com/kaansavukduran/yksmania/releases/tag/v0.20.0-alpha.1) yayımlandı. Kaynak [387fc3ea](https://github.com/kaansavukduran/yksmania/commit/387fc3ea7f43e39d64e0c1e5f062372969a0ebeb), [CI](https://github.com/kaansavukduran/yksmania/actions/runs/44070229171), [Pages](https://github.com/kaansavukduran/yksmania/actions/runs/44074567259) ve release etiketi eşleşir. 1.841 birim ve dört shard’ın toplam 1.265 tarayıcı testi PASS; fail/skip/flaky/retry 0. Paketli Windows/Linux, prefix ve gerçek web yayını 107’şer çevrimdışı model akışını geçti. Yayındaki 291 dosya normal TLS ile eşleşti. Gerçek indirilen AppImage bu VM’de kendi binary’siyle 107 akışı geçti.
+
+Mevcut 0.20: sekiz yeni ünite, 88 bölüm, 46 çözümlü örnek, 44 hatırlama, 134 yeni soru; toplam 528 ders/soru seti, 494 rehber/özet, 493 çalışma başlığı, 6.077 soru = 3.437 tam + 2.640 kısmi yardım. Güncel 8.936 PDF’de **2 tam / 7 kısmi / 8.927 belirsiz**; bütün arşiv bitmedi. [Kaynak kaydı](docs/PDF_SOURCE_PROGRESS032.md) aynı kanonik defterden türetilir.
+
+**Açık bulgu F032-DESKTOP-EXTERNAL-001, Orta:** gerçek yayımlanan masaüstünde YouTube/OGM/ÖSYM bağlantısı OS tarayıcısına gönderilmiyor. Offline öğretim etkilenmez; geçici yol web sürümüdür. 107 çekirdek akış bu OS dispatch davranışını kapsamıyordu. İzole 0.21 adayındaki sıkı URL politikasının 55 testi ve altı normal kaynak Electron tıklaması geçti. Bunlar kaynak/main handler kabulüdür; paketlenmiş/yayımlanmış 0.21 kabulü değildir ve 0.20 indirmelerini onarmaz. [QA bulgusu ve tekrar kullanılabilir denetim prompt’u](docs/QA.md#f032-desktop-external-001) devam noktasını verir.
+
+[Kişisel Android test paketi](https://github.com/kaansavukduran/yksmania/actions/runs/44069495221/artifacts/14322825421) hazır: 19.179.469 byte, otomatik test imzalı ayrı `com.fragaria.yksmania.test`, 0.20.0-test/kod 30. APK’nin 291 web dosyası C4 ile aynıdır; kaynak `953084d9` ile yayın `387fc3ea` arasında yalnız iki E2E dosyası farkı bulunur. Fiziksel kurulum denenmedi; genel Release’e APK eklenmedi. [Forge032](docs/FORGE032.md) bütün kabul sınırlarını açıklar.
+
+Saatlik bulut Forge görevi etkin. İlk tetikte aktif çalışma sahibini görüp salt okunur doğrulamayla kaldı; ikinci PDF üreticisi veya çakışan ana dal gönderimi başlatmadı. Yeni iş aynı kaynak kuyruğundan sürer; her çalışmanın gerçek sonucu ayrı kaydedilir.
+
+## Sıradaki 0.21 adayı
+
+Faktöriyel 15 sayfa/81 kaynak maddesi için izole `forge/source-transfer-033` adayı var: 20 bölüm, 16 çözümlü örnek, 12 hatırlama, 43 soru, 8 bölümlük özet ve altı model. Adayda 529 set/495 rehber/495 özet/494 başlık/6.120 soru vardır; bu sayılar **yayımlanan 0.20’ye veya kanonik PDF bitiş sayısına eklenmez**. C3 aşamasının dört UI vakası, 43/43 bağımsız doğru, kaynakla karşılaştırılmış 2021 TYT örneği ve 1.852 birim testi geçti. Son izole adayda 209 dosyada 1.907 birim testi ve 367 modül/TypeScript kontrolü geçti. Dış bağlantı onarımının 55 politika testi ile altı normal kaynak Electron tıklaması; süreç yeniden açılışı, not/Matrix ve bütün kayıtların korunmasını geçti. Son paket/yayın kapıları açık kalır; gerçek dış tarayıcı/video oynatımı bu recorder kabulü değildir. Onarım bu belgede 0.20’ye uygulanmış gibi gösterilmez. Önceki 6.077 sorunun ve bütün kayıtların korunumu ayrıca denetlenir.
+
+---
+
+## Yayından önceki 032 aday kaydı ve önceki sürümler
+
 # 0.20.0 geliştirme adayı: Forge032
 
 Sekiz yeni interaktif ünite, 46 çözümlü örnek ve 134 tam yardımlı soru eklendi. Toplam 494 ayrıntılı rehber, 494 kopya kağıdı, 493 çalışma başlığı ve 6.077 özgün soru vardır; 3.437 tam / 2.640 kısmi yardım ayrı izlenir. [Güncel Forge032 kaydı](docs/FORGE032.md), [QA](docs/QA.md) ve [PDF ilerlemesi](docs/PDF_SOURCE_PROGRESS032.md) kaynak ile teknik kabulü ayırır.
