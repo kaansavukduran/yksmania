@@ -1,3 +1,32 @@
+# 0.22.0 son kaynak ve yayın kabulü — 17 Kasım 2026
+
+Kaynak `5bdc4a15123666b3dc701a802f7f6be7000a383a`. [Forge034035](FORGE034035.md) içerik ve yerel sürüm sınırlarını, [PDF raporu](PDF_SOURCE_PROGRESS034035.md) kanonik kaynak kararlarını tutar. Aşağıdaki daha eski kabuller kendi sürümlerine aittir.
+
+| Kapı | Gerçek sonuç |
+| --- | --- |
+| check ve tam birim | 374 modül yolu; 212 dosyada 1.939/1.939 birim başarılı |
+| Tam uzak CI | [44152986079](https://github.com/kaansavukduran/yksmania/actions/runs/44152986079): verify, dört browser shard’ında 1.277 test (352/287/319/319), Windows/Linux tamamlandı/başarılı |
+| Gerçek paketli Windows/Linux | Her birinde 110 çevrimdışı model akışı/reload/süreç yeniden açılışı başarılı |
+| Otomatik Pages | [44158312379](https://github.com/kaansavukduran/yksmania/actions/runs/44158312379): gerçek yayında 110 farklı model akışı/not/soru geri bildirimi/reload; rendererErrors ve missing boş |
+| Normal TLS ile yayındaki dosyalar | 297 dosya/27.970.391 byte sabit prefix derlemesiyle aynı |
+| Gerçek Release ve AppImage | [44159025855](https://github.com/kaansavukduran/yksmania/actions/runs/44159025855): etiket/kaynak/beş manifest özeti aynı, altı varlık/no APK; indirilen 145.945.845 byte AppImage kendi binary’siyle 110 akış/aynı profil yeniden açılışı ve 297 payload dosyasında başarılı |
+| Yerel web yükseltmesi | Gerçek eski UI kayıtlarıyla aynı kökenli 0.21→0.22; üç ham IndexedDB deposu aynı ve otomatik durum yazması 0. C3 kanıtı kesin C6 ve test-only son kaynak köprüleriyle korunur; yeniden yürütülmüş gibi sunulmaz. |
+| Kişisel test APK | [44146818660](https://github.com/kaansavukduran/yksmania/actions/runs/44146818660/artifacts/14355659976): 19.305.624 byte, 0.22.0-test/kod32, test kimliği, gerçek v2 imza ve 297 web dosyası doğrulandı |
+| Vercel | HTTP 402/hesap sınırı; yeni yayın kabulü yok |
+| Fiziksel telefon/temiz OS kurulumu/portable taşıma/native iki kurulum yükseltmesi | Henüz denenmedi |
+
+İlk `bbb681d` tam CI’si 1.259 başarılı / 18 başarısız tarayıcı vakasıyla bitti; buna bağlı Pages işi doğru biçimde atlandı ve o kaynakla masaüstü yayını yapılmadı. On eski konu toplamı, dört eski özet toplamı, üç belirsiz rasyonel başlık seçicisi ve bir çevrimdışı reload sonrası menü hazır-olma kontrolü düzeltildi. Değişiklik yalnız dokuz E2E dosyasıdır; süre, retry, atlama veya öğrenme beklentisi gevşetilmedi. Başarısız 18 vaka ile aynı yardımcının iki ek çağrısı gerçek UI’de geçti; ardından son kaynakta tam CI yeniden başarılı oldu. İlk hata geçmişi korunur.
+
+EBOB–EKOK ve rasyonel kaynakları için 85/66 inceleme birimi, 283/380 bağ kenarı, 108/130 farklı hedef, 94 soru ve 470 seçenek gerekçesi bağımsız incelendi; bu bütün eski soruların yeniden çözüldüğü anlamına gelmez. 1440 px koyu ve 320 px Matrix/Lexend/arayüz yüzde200/yazı yüzde150 öğrenme akışları, 46/48 tam oturum, çevrimdışı ilk model kullanımı, not/taslak/Bugün/3-7-21 ve puansız keşif kontrolleri gerçek UI’de doğrulandı. Son C6 metin düzeltmelerine duyarlı hedefler tekrar sınandı; eski C3/C5 koşuları C6’da yeniden yürütülmüş sayılmaz. Sınırlı axe ve ekran ölçümleri tam erişilebilirlik sertifikası değildir.
+
+Son ürün girdileri önceki APK/C6 ile aynıdır; yalnız dokuz E2E dosyasında test toplamı/seçici/hazır olma düzeltmesi vardır. 1.277 kayıtlı E2E vakasında eski 1.269 kimlik/metadata korunur. Son CI’nin başarı durumu bütün eski içeriklerin bilimsel doğruluğu veya bütün fiziksel kurulumların kabulü değildir.
+
+8.981 dosya: 5 tam, 4 kısmi, 8.972 belirsiz. EBOB–EKOK ve rasyonel sayıların güncel PDF sürümleri; bütün öğretim eşlemeleri, bağımsız kaynak incelemesi, gerçek kullanım ve son yayın kapıları doğrulandıktan sonra 17 Kasım 20:10 UTC’de korumalı kanonik işlemle tam durumuna geçirildi. Yalnız bu iki kaynak satırı değişti; diğer 8.979 satır, okuma kayıtları ve eski karar geçmişi korundu. Kaynakların yeniden indirilmesi yeni okuma kredisi değildir. Belirsiz dosyalar hiç işlenmemiş sayılmaz. Ham PDF, özel kimlik, özel URL veya kişisel çalışma dosyası Git’e eklenmez.
+
+---
+
+## Önceki aday ve eski sürüm kayıtları
+
 # 0.21.0 geliştirme adayının yerel kabulü: 17 Kasım 2026
 
 Dal `forge/source-transfer-033`, taban `387fc3ea7f43e39d64e0c1e5f062372969a0ebeb`. [Kapsam ve öğretim](FORGE033.md) ayrı kaydedilir. Bu kabul henüz main veya dağıtılmış 0.21.0 paket/yayın kabulü değildir.

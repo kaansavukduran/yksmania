@@ -1,3 +1,27 @@
+# 0.22.0 — iki kaynak, Pages, masaüstü ve kişisel APK kabulü
+
+17 Kasım 2026. Yayın kaynağı `5bdc4a15123666b3dc701a802f7f6be7000a383a`; [ayrıntılı devir](docs/FORGE034035.md). [Web uygulaması](https://kaansavukduran.github.io/yksmania/) · [Windows/Linux indir](https://github.com/kaansavukduran/yksmania/releases/tag/v0.22.0-alpha.1) · [Kişisel Android deneme paketi](https://github.com/kaansavukduran/yksmania/actions/runs/44146818660/artifacts/14355659976)
+
+EBOB–EKOK ve rasyonel sayılar: **55 bölüm, 44 çözümlü örnek, 35 hatırlama, 94 gerekçeli soru, 24 ayrı özet bölümü ve 14 hesaplamalı model**. Güncel ürün 531 set / 497 rehber / 497 özet / 496 çalışma başlığı / 6.214 soru = 3.574 tam + 2.640 kısmi yardım içerir. Önceki içerik, ilk 479 Excel kimliği/sırası, ayarlar, notlar, taslaklar, denemeler ve özgün tekrar tarihleri korunur.
+
+[Tam CI](https://github.com/kaansavukduran/yksmania/actions/runs/44152986079), 212 dosyada 1.939 birim testini geçti; dört shard’da 1.277 tarayıcı testi ve gerçek paketli Windows/Linux işleri başarılıdır. Her masaüstü platformunda 110 çevrimdışı model akışı sınandı.
+
+[Otomatik Pages](https://github.com/kaansavukduran/yksmania/actions/runs/44158312379) aynı kaynakta yayımlanan uygulamanın 110 farklı çevrimdışı model akışını, soru geri bildirimini, notları ve reload ile kayıt korunumunu geçti; renderer ve eksik istek hatası yoktur. Yayındaki 297 dosya / 27.970.391 byte normal TLS doğrulamasıyla sabit alt dizin derlemesine birebir eşleşti.
+
+[Masaüstü yayınının](https://github.com/kaansavukduran/yksmania/releases/tag/v0.22.0-alpha.1) kaynak etiketi, beş manifest girdisi ve GitHub dosya özetleri eşleşti. Altı yayın varlığı içinde genel APK yoktur. Gerçek AppImage ayrıca indirilip kendi değişmemiş binary’siyle bu Linux VM’de 110 çevrimdışı akış, notlar, taslaklar, Bugün sonucu ve aynı profilde süreç yeniden açılışından geçti; 297 web dosyası sabit normal derlemeye eşleşti.
+
+İlk `bbb681d` tam CI’si 1.259 başarılı / 18 başarısız tarayıcı vakasıyla bitti; buna bağlı Pages işi doğru biçimde atlandı ve o kaynakla masaüstü yayını yapılmadı. On eski konu toplamı, dört eski özet toplamı, üç belirsiz rasyonel başlık seçicisi ve bir çevrimdışı reload sonrası menü hazır-olma kontrolü düzeltildi. Değişiklik yalnız dokuz E2E dosyasıdır; süre, retry, atlama veya öğrenme beklentisi gevşetilmedi. Başarısız 18 vaka ile aynı yardımcının iki ek çağrısı gerçek UI’de geçti; ardından son kaynakta tam CI yeniden başarılı oldu. İlk hata geçmişi korunur.
+
+Android için **YKSMania Deneme 0.22.0-test / kod 32** hazırdır: 19.305.624 byte, ayrı `com.fragaria.yksmania.test`, otomatik test imzası. Gerçek APK’nin paket/etiket/sürümü, v2 imzası ve 297 çevrimdışı web dosyası doğrulandı. Actions ZIP’ini GitHub hesabınla indirip açarak APK’yı telefona kurabilirsin. APK kaynağı `bbb681d` ile yayın kaynağı arasındaki fark yalnız dokuz E2E test dosyasıdır; 584 uygulama girdisi aynıdır. Kullanıcıdan secret istenmez; genel APK/mağaza yayını yapılmadı. Fiziksel telefonda kurulum/ilk açılış henüz denenmedi. Önceki deneme sürümünün sertifikası farklıdır; Android güncellemeyi reddederse yalnız Deneme uygulamasını kaldırmadan önce kişisel ilerlemeni yedekle.
+
+**Kanonik PDF raporu: 8.981 dosya: 5 tam, 4 kısmi, 8.972 belirsiz.** EBOB–EKOK ve rasyonel sayıların güncel PDF sürümleri; bütün öğretim eşlemeleri, bağımsız kaynak incelemesi, gerçek kullanım ve son yayın kapıları doğrulandıktan sonra 17 Kasım 20:10 UTC’de korumalı kanonik işlemle tam durumuna geçirildi. Yalnız bu iki kaynak satırı değişti; diğer 8.979 satır, okuma kayıtları ve eski karar geçmişi korundu. Son 19:21–19:23 UTC Drive metaveri taraması aynı 8.981 PDF ve 247 klasörü buldu; eklenen, kayıp veya değişmiş dosya metaverisi yoktu. Çok istekli tarama atomik görüntü veya içerik okuma sayılmaz. 40 PDF’de uygulama bağı ve 154 PDF’de okuma kaydı korunur; yeni okuma kredisi yoktur. [Güncel rapor](docs/PDF_SOURCE_PROGRESS034035.md).
+
+Vercel HTTP 402; fiziksel telefon, temiz kurulum, portable taşıma ve iki kurulu native sürüm arasında yükseltme henüz kabul edilmedi. Source036/037 ve Source038 sonraki özel hazırlıklardır; 0.22 envanterine veya tam PDF sayısına dahil değildir. Kaynak Excel, ayrı PDF üretim otomasyonu ve Drive belgeleri değiştirilmez. Yeni tur önce mevcut sahibin devrini, gerçek main/Actions ve kanonik defteri uzlaştırır; aynı sürüme ikinci yayın başlatmaz.
+
+---
+
+## Aşağıdaki geliştirme adayı ve eski sürüm kayıtları tarihsel olarak korunur
+
 # 0.22.0 geliştirme adayı — Forge034035
 
 17 Kasım 2026. **Henüz yayımlanmadı; main’e 0.22 kaynak gönderimi, uzak CI, yeni Pages/masaüstü yayını veya yeni doğrulanmış APK sonucu yoktur.** Son doğrulanmış yayın 0.21.0’dır. Belge tabanı `8422b861211829e3d00e864cac442ba593899178`, yayımlanmış `197dc1b31c0a45ad03a3782106665591cc0c32fc` kodu üzerindeki belge güncellemesidir. [Ayrıntılı devir](docs/FORGE034035.md).

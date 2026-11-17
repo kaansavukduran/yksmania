@@ -1,8 +1,26 @@
 # YKSMania
 
-> **0.22.0 geliştirme adayı — henüz yayımlanmadı.** EBOB–EKOK ve rasyonel sayılara 55 anlatım bölümü, 44 çözümlü örnek, 94 gerekçeli soru, 14 etkileşimli model ve ayrı özetler eklendi. Adayda 497 rehber/özet, 496 çalışma başlığı ve 6.214 soru bulunuyor. Son C6 kaynağında 1.939 birim testi, 110 prefix ve 110 gerçek paketli Linux çevrimdışı akışı geçti. Dar ekran/büyük yazı, kayıt koruma ve aynı kökenli web yükseltmesi ayrıca denetlendi. Uzak tam tarayıcı CI’si, Pages/masaüstü yayını ve yeni kişisel APK kabulü bekliyor. [Kapsam ve test sınırları](docs/FORGE034035.md).
->
-> PDF arşivi hâlâ **8.981 dosya: 3 tam, 6 kısmi, 8.972 belirsiz**. Bu iki kaynak henüz tam sayılmadı. Aşağıdaki 0.21 indirmeleri, test sonuçları ve APK bağlantıları kendi doğrulanmış sürümüne aittir.
+Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması.
+
+[Web uygulaması](https://kaansavukduran.github.io/yksmania/) · [Windows/Linux indir](https://github.com/kaansavukduran/yksmania/releases/tag/v0.22.0-alpha.1) · [Kişisel Android deneme paketi](https://github.com/kaansavukduran/yksmania/actions/runs/44146818660/artifacts/14355659976)
+
+**0.22.0 yayımlandı.** EBOB–EKOK ve rasyonel sayılar; toplam 55 açıklama bölümü, 44 çözümlü örnek, 35 hatırlama, 94 gerekçeli özgün soru, 14 etkileşimli model ve ayrı özetlerle genişledi. Sayıları ve koşulları değiştirerek ortak bölen/kat, zaman çizelgesi, yerleşim, kesir, sayı doğrusu, işlem ve devirli ondalık modellerini inceleyebilirsin. Şekil ve sonuç aynı hesaplardan gelir. Her yeni soruda adım adım çözüm, beş şıkkın gerekçesi ve sık hatalar bulunur; öğrenci PDF veya katalog yüklemez.
+
+Toplam **531 set, 497 anlatım rehberi, 497 ayrı kopya kağıdı, 496 çalışma başlığı ve 6.214 özgün soru** vardır. 3.574 soruda tam kademeli yardım hazır; 2.640 eski kartın tüm yardım aşamaları henüz tamamlanmadı. Bu sayılar birbirinden ve PDF sayımından farklıdır. Eski 6.120 soru, ilk 479 Excel kimliği/sırası ve kişisel kayıtlar korunur.
+
+**PDF arşivi: 8.981 dosya: 5 tam, 4 kısmi, 8.972 belirsiz.** Belirsiz, hiç işlenmemiş demek değildir. [Güncel kaynak raporu](docs/PDF_SOURCE_PROGRESS034035.md), [konu envanteri](docs/CONTENT_INVENTORY.csv) ve [geometri kapsamı](docs/GEOMETRY_SCOPE.md) farklı ölçüleri açıklar. Arşivin ve bütün MEB/OGM/MEBİ/ÖSYM içeriğinin tamamlandığı iddia edilmez.
+
+[Tam CI](https://github.com/kaansavukduran/yksmania/actions/runs/44152986079), 212 dosyada 1.939 birim testini geçti; dört shard’da 1.277 tarayıcı testi ve gerçek paketli Windows/Linux işleri başarılıdır. Her masaüstü platformunda 110 çevrimdışı model akışı sınandı. [Otomatik Pages](https://github.com/kaansavukduran/yksmania/actions/runs/44158312379) aynı kaynakta yayımlanan uygulamanın 110 farklı çevrimdışı model akışını, soru geri bildirimini, notları ve reload ile kayıt korunumunu geçti; renderer ve eksik istek hatası yoktur. Yayındaki 297 dosya / 27.970.391 byte normal TLS doğrulamasıyla sabit alt dizin derlemesine birebir eşleşti.
+
+[Masaüstü yayınının](https://github.com/kaansavukduran/yksmania/releases/tag/v0.22.0-alpha.1) kaynak etiketi, beş manifest girdisi ve GitHub dosya özetleri eşleşti. Altı yayın varlığı içinde genel APK yoktur. Gerçek AppImage ayrıca indirilip kendi değişmemiş binary’siyle bu Linux VM’de 110 çevrimdışı akış, notlar, taslaklar, Bugün sonucu ve aynı profilde süreç yeniden açılışından geçti; 297 web dosyası sabit normal derlemeye eşleşti. Temiz OS kurulumu, portable taşıma ve iki kurulu native sürüm arasında yükseltme ayrıca sınanacaktır. Vercel’in son doğrulanan durumu hesap sınırı nedeniyle HTTP 402’dir; kullanılabilir web yayını GitHub Pages’tir.
+
+Android için **YKSMania Deneme 0.22.0-test / kod 32** hazırdır: 19.305.624 byte, ayrı `com.fragaria.yksmania.test`, otomatik test imzası. Gerçek APK’nin paket/etiket/sürümü, v2 imzası ve 297 çevrimdışı web dosyası doğrulandı. Actions ZIP’ini GitHub hesabınla indirip açarak APK’yı telefona kurabilirsin. APK kaynağı `bbb681d` ile yayın kaynağı arasındaki fark yalnız dokuz E2E test dosyasıdır; 584 uygulama girdisi aynıdır. Kullanıcıdan secret istenmez; genel APK/mağaza yayını yapılmadı. Fiziksel telefonda kurulum/ilk açılış henüz denenmedi. Önceki deneme sürümünün sertifikası farklıdır; Android güncellemeyi reddederse yalnız Deneme uygulamasını kaldırmadan önce kişisel ilerlemeni yedekle.
+
+Yerleşik öğretim, sorular ve kişisel kayıtlar çevrimdışı çalışır; dış videolar ve resmî kitapçık bağlantıları internet ister. Mevcut/Matrix temaları, Lexend, ortak kum saati, anlatımın altındaki notlar ve kişisel yedek/geri yükleme vardır. Yeni/ayarlanmamış profillerin değiştirilebilir kişisel hedefi 28 Şubat 2027’dir; kayıtlı farklı hedefler korunur, bu resmî sınav tarihi değildir. İlk çalışma günü 1, tekrarlar 3/7/21’dir. Bugün, tamamlanan çalışmayı ve son gerçek soru oturumunun doğru/yanlış sayısını gösterir. Süre, keşif, manuel onay ve belge/video açma ustalık veya XP üretmez.
+
+Yayın kaynağı `5bdc4a15123666b3dc701a802f7f6be7000a383a`. [Kapsam, gerçek testler ve kalan işler](docs/FORGE034035.md) · [QA](docs/QA.md). Aşağıdaki 0.21 sayımları ve bağlantıları kendi tarihsel sürümüne aittir.
+
+---
 
 ## Yayımlanmış 0.21.0 ve önceki devir
 
