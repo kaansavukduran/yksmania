@@ -30,18 +30,20 @@ def verify_apk(apk, dist, signature, badging, version, version_code, commit):
         raise ValueError("The test APK must use the debug build type")
     if not re.search(r"^Verified using v2 scheme .*: true\s*$", signature, re.MULTILINE):
         raise ValueError("APK signature verification did not confirm v2")
+    if re.findall(r"^Number of signers: (\d+)\s*$", signature, re.MULTILINE) != ["1"]:
+        raise ValueError("Exactly one APK signer is required")
     certificates = re.findall(
-        r"^Signer #(\d+) certificate SHA-256 digest: ([0-9a-fA-F]{64})\s*$",
+        r"^(Signer #\d+ |V2 Signer: )certificate SHA-256 digest: ([0-9a-fA-F]{64})\s*$",
         signature,
         re.MULTILINE,
     )
     subjects = re.findall(
-        r"^Signer #1 certificate DN: (.+)\s*$",
+        r"^(Signer #\d+ |V2 Signer: )certificate DN: (.+)\s*$",
         signature,
         re.MULTILINE,
     )
-    subject = re.split(r",\s*", subjects[0].strip()) if len(subjects) == 1 else []
-    if len(certificates) != 1 or certificates[0][0] != "1" or len(subject) != 3 or set(subject) != {"CN=Android Debug", "O=Android", "C=US"}:
+    subject = re.split(r",\s*", subjects[0][1].strip()) if len(subjects) == 1 else []
+    if len(certificates) != 1 or certificates[0][0] not in {"Signer #1 ", "V2 Signer: "} or len(subjects) != 1 or subjects[0][0] != certificates[0][0] or len(subject) != 3 or set(subject) != {"CN=Android Debug", "O=Android", "C=US"}:
         raise ValueError("Exactly one standard Android debug certificate is required")
     files = sorted(path for path in dist.rglob("*") if path.is_file())
     if not files or not (dist / "index.html").is_file():

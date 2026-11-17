@@ -19,7 +19,7 @@ class AndroidTestArtifact(unittest.TestCase):
         (self.dist / "index.html").write_text("<html lang='tr'>Öğren</html>")
         (self.dist / "version.json").write_text(json.dumps({"version": "1.2.3"}))
         self.apk = self.root / "fixture.zip"
-        self.signature = "Verified using v2 scheme (APK Signature Scheme v2): true\nSigner #1 certificate DN: CN=Android Debug, O=Android, C=US\nSigner #1 certificate SHA-256 digest: " + "a" * 64 + "\n"
+        self.signature = "Verified using v2 scheme (APK Signature Scheme v2): true\nNumber of signers: 1\nSigner #1 certificate DN: CN=Android Debug, O=Android, C=US\nSigner #1 certificate SHA-256 digest: " + "a" * 64 + "\n"
         self.badging = "package: name='com.fragaria.yksmania.test' versionCode='30' versionName='1.2.3-test' platformBuildVersionName='16'\napplication-label:'YKSMania Deneme'\napplication-debuggable\n"
         self.write_zip()
 
@@ -69,6 +69,20 @@ class AndroidTestArtifact(unittest.TestCase):
     def test_multiple_signers_are_rejected(self):
         with self.assertRaisesRegex(ValueError, "Exactly one"):
             self.verify(signature=self.signature + "Signer #2 certificate SHA-256 digest: " + "c" * 64 + "\n")
+
+    def test_actual_build_tools_v2_signer_report_is_supported(self):
+        signature = self.signature.replace("Signer #1 certificate", "V2 Signer: certificate").replace("CN=Android Debug, O=Android, C=US", "C=US, O=Android, CN=Android Debug")
+        self.assertEqual(self.verify(signature=signature)["certificateSHA256"], "a" * 64)
+
+    def test_mixed_or_unrecognized_signer_labels_are_rejected(self):
+        for report in [self.signature.replace("Signer #1 certificate DN", "V2 Signer: certificate DN"), self.signature.replace("Signer #1", "Signer #2")]:
+            with self.subTest(report=report), self.assertRaisesRegex(ValueError, "Exactly one"):
+                self.verify(signature=report)
+
+    def test_explicit_one_signer_count_is_required(self):
+        for report in [self.signature.replace("Number of signers: 1", "Number of signers: 2"), self.signature.replace("Number of signers: 1\n", "")]:
+            with self.subTest(report=report), self.assertRaisesRegex(ValueError, "Exactly one APK signer"):
+                self.verify(signature=report)
 
     def test_stale_web_version_and_ambiguous_source_are_rejected(self):
         (self.dist / "version.json").write_text(json.dumps({"version": "0.9.0"}))
