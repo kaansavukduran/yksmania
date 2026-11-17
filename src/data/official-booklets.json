@@ -53,5 +53,16 @@
     "coverage": "%10",
     "sha256": "becc024ea962ac4cba97a4e7eea3b703808431e4602077c7ecb7c04273b636f8",
     "checkedAt": "2026-11-14"
+  },
+  {
+    "id": "2024-tyt",
+    "title": "2024 TYT",
+    "exam": "TYT",
+    "year": 2024,
+    "url": "https://dokuman.osym.gov.tr/pdfdokuman/2024/YKS/TSK/yks_tyt_2024_kitapcik_T24kt.pdf",
+    "pages": 43,
+    "coverage": "seçili sorular doğrulandı",
+    "sha256": "5b517eba3f596ed1e9d2073e84023696c40a1f6a2347d7db0aa8c20ece63b64e",
+    "checkedAt": "2026-11-17"
   }
 ]

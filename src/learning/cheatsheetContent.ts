@@ -1,3 +1,5 @@
+import { linearEquationsSource036Sheets } from "./linearEquationsSource036";
+import { basicInequalitiesSource037Sheets } from "./basicInequalitiesSource037";
 import { legacy026TheoryIds } from "./legacy026";
 import { primeSource032Sheets } from "./primeSource032";
 import { factorialSource033Sheets } from "./factorialSource033";
@@ -322,5 +324,7 @@ export const builtInCheatSheets = new Map<string, CheatSheet>(
     ...factorialSource033Sheets,
     ...ebobEkokSource034Sheets,
     ...rationalSource035Sheets,
+    ...linearEquationsSource036Sheets,
+    ...basicInequalitiesSource037Sheets,
   ].map((sheet) => [sheet.topicId, sheet]),
 );

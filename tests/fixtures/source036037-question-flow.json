@@ -1,0 +1,974 @@
+{
+  "purpose": "Static flow fixtures from independently reviewed author content; runtime tests verify UI scoring/persistence, not a new independent semantic review.",
+  "units": [
+    {
+      "id": "tyt-mat-dogrusal-denklemler-kaynak-036",
+      "title": "Birinci dereceden denklemler: eşitliği koru, modeli kur",
+      "cards": [
+        {
+          "prompt": "x gerçek sayı olmak üzere 5x−7=18 denkleminin kökü kaçtır?",
+          "options": [
+            "5",
+            "11/5",
+            "18/5",
+            "-5",
+            "25"
+          ],
+          "correct": "5"
+        },
+        {
+          "prompt": "x gerçek sayı olmak üzere 3x+6=24 denkleminin kökü kaçtır?",
+          "options": [
+            "6",
+            "10",
+            "8",
+            "18",
+            "2"
+          ],
+          "correct": "6"
+        },
+        {
+          "prompt": "x gerçek sayı olmak üzere 4(x−3)=2x+10 denkleminin kökü kaçtır?",
+          "options": [
+            "11",
+            "13/2",
+            "-1",
+            "5",
+            "22"
+          ],
+          "correct": "11"
+        },
+        {
+          "prompt": "x gerçek sayı olmak üzere (x−1)/3+(x+2)/2=6 denkleminin kökü kaçtır?",
+          "options": [
+            "32/5",
+            "6",
+            "4",
+            "36/5",
+            "-32/5"
+          ],
+          "correct": "32/5"
+        },
+        {
+          "prompt": "x gerçek sayı olmak üzere 7x−9=40 denkleminin kökü kaçtır?",
+          "options": [
+            "7",
+            "31/7",
+            "40/7",
+            "49",
+            "-7"
+          ],
+          "correct": "7"
+        },
+        {
+          "prompt": "x gerçek sayı olmak üzere 3(2x−5)=x+20 denkleminin kökü kaçtır?",
+          "options": [
+            "7",
+            "5",
+            "1",
+            "25/6",
+            "35"
+          ],
+          "correct": "7"
+        },
+        {
+          "prompt": "x gerçek sayı olmak üzere (x+2)/4−(x−1)/3=1 denkleminin kökü kaçtır?",
+          "options": [
+            "-2",
+            "2",
+            "-10",
+            "10",
+            "2/3"
+          ],
+          "correct": "-2"
+        },
+        {
+          "prompt": "x gerçek sayı olmak üzere −2(x−3)=10 denkleminin kökü kaçtır?",
+          "options": [
+            "-2",
+            "-8",
+            "2",
+            "8",
+            "-5"
+          ],
+          "correct": "-2"
+        },
+        {
+          "prompt": "Bir sayının 4 katının 7 fazlası, aynı sayının 2 katının 19 fazlasına eşittir. Sayı kaçtır?",
+          "options": [
+            "6",
+            "13",
+            "3",
+            "12",
+            "-6"
+          ],
+          "correct": "6"
+        },
+        {
+          "prompt": "Bir sayının üçte birinin 4 fazlası 11’dir. Bu sayı kaçtır?",
+          "options": [
+            "21",
+            "29",
+            "5",
+            "33",
+            "15"
+          ],
+          "correct": "21"
+        },
+        {
+          "prompt": "Bir sayının 4 fazlasının üçte biri 11’dir. Bu sayı kaçtır?",
+          "options": [
+            "29",
+            "21",
+            "37",
+            "7/3",
+            "33"
+          ],
+          "correct": "29"
+        },
+        {
+          "prompt": "Bir sayının 3 katının 5 fazlası 20’dir. Sayı kaçtır?",
+          "options": [
+            "5",
+            "5/3",
+            "25/3",
+            "15",
+            "0"
+          ],
+          "correct": "5"
+        },
+        {
+          "prompt": "Bir sayının 5 fazlasının 3 katı 30’dur. Sayı kaçtır?",
+          "options": [
+            "5",
+            "25/3",
+            "15",
+            "10",
+            "-5"
+          ],
+          "correct": "5"
+        },
+        {
+          "prompt": "Bir sayının yarısının 4 eksiği 7’dir. Sayı kaçtır?",
+          "options": [
+            "22",
+            "18",
+            "6",
+            "14",
+            "3"
+          ],
+          "correct": "22"
+        },
+        {
+          "prompt": "Bir sayının 4 eksiğinin yarısı 7’dir. Sayı kaçtır?",
+          "options": [
+            "18",
+            "22",
+            "10",
+            "14",
+            "6"
+          ],
+          "correct": "18"
+        },
+        {
+          "prompt": "Bir sayının 7 eksiği 20’dir. Sayı kaçtır?",
+          "options": [
+            "27",
+            "13",
+            "140",
+            "20",
+            "-27"
+          ],
+          "correct": "27"
+        },
+        {
+          "prompt": "x gerçek sayı olmak üzere 6(x−2)=3x+12 denkleminin kökü kaçtır?",
+          "options": [
+            "8",
+            "14/3",
+            "4",
+            "6",
+            "24"
+          ],
+          "correct": "8"
+        },
+        {
+          "prompt": "x gerçek sayı olmak üzere 6x−2=3x+12 denkleminin kökü kaçtır?",
+          "options": [
+            "14/3",
+            "8",
+            "14",
+            "10/3",
+            "-14/3"
+          ],
+          "correct": "14/3"
+        },
+        {
+          "prompt": "Bir sayının 6 katının 2 eksiği, aynı sayının 3 katının 12 fazlasına eşittir. Sayı kaçtır?",
+          "options": [
+            "14/3",
+            "8",
+            "2",
+            "14",
+            "-2"
+          ],
+          "correct": "14/3"
+        },
+        {
+          "prompt": "x gerçek sayı olmak üzere 3(x−2)=12 denkleminin kökü kaçtır?",
+          "options": [
+            "6",
+            "14/3",
+            "4",
+            "10",
+            "18"
+          ],
+          "correct": "6"
+        },
+        {
+          "prompt": "Yetişkin bileti 80 TL, öğrenci bileti 50 TL. Toplam 12 kişinin ödediği ücret 780 TL olduğuna göre yetişkin sayısı kaçtır?",
+          "options": [
+            "6",
+            "12",
+            "5",
+            "9",
+            "3"
+          ],
+          "correct": "6"
+        },
+        {
+          "prompt": "İki yetişkin ve üç öğrenci bileti toplam 390 TL. Yetişkin bileti öğrenci biletinden 45 TL pahalıdır. Öğrenci bileti kaç TL?",
+          "options": [
+            "60",
+            "69",
+            "78",
+            "105",
+            "45"
+          ],
+          "correct": "60"
+        },
+        {
+          "prompt": "İlk terimi 5, her adımda artışı 4 olan bir örüntüde terim 69 olduğunda adım numarası kaçtır?",
+          "options": [
+            "17",
+            "16",
+            "18",
+            "69/4",
+            "69"
+          ],
+          "correct": "17"
+        },
+        {
+          "prompt": "Özgün öğretim modelinde ilk terim 1, her adımda sabit artış 3’tür. Terim 241 olduğunda pozitif tam sayı adımı kaçtır?",
+          "options": [
+            "81",
+            "80",
+            "241/3",
+            "82",
+            "240"
+          ],
+          "correct": "81"
+        },
+        {
+          "prompt": "x gerçek sayı olmak üzere (x+1)/(x−1)=2 denkleminin izinli kökü kaçtır?",
+          "options": [
+            "3",
+            "1",
+            "0",
+            "-1",
+            "2"
+          ],
+          "correct": "3"
+        },
+        {
+          "prompt": "x gerçek sayı olmak üzere (2x+3)/5=3 denkleminin kökü kaçtır?",
+          "options": [
+            "6",
+            "0",
+            "3",
+            "9",
+            "3/5"
+          ],
+          "correct": "6"
+        },
+        {
+          "prompt": "x gerçek sayı olmak üzere 2(x+3)=10 denkleminin kökü kaçtır?",
+          "options": [
+            "2",
+            "7/2",
+            "8",
+            "5",
+            "-2"
+          ],
+          "correct": "2"
+        },
+        {
+          "prompt": "x gerçek sayı olmak üzere 2x+3=10 denkleminin kökü kaçtır?",
+          "options": [
+            "7/2",
+            "2",
+            "7",
+            "13/2",
+            "5"
+          ],
+          "correct": "7/2"
+        },
+        {
+          "prompt": "x gerçek sayı olmak üzere 3(x+2)=3x+6 denkleminin çözüm kümesi hangisidir?",
+          "options": [
+            "ℝ",
+            "∅",
+            "{0}",
+            "{2}",
+            "{−2}"
+          ],
+          "correct": "ℝ"
+        },
+        {
+          "prompt": "x gerçek sayı olmak üzere 2(x−1)=2x+5 denkleminin çözüm kümesi hangisidir?",
+          "options": [
+            "∅",
+            "ℝ",
+            "{0}",
+            "{−7}",
+            "{7}"
+          ],
+          "correct": "∅"
+        },
+        {
+          "prompt": "x gerçek sayı olmak üzere 5(x−2)=5x−10 denkleminin çözüm kümesi hangisidir?",
+          "options": [
+            "ℝ",
+            "{0}",
+            "∅",
+            "{2}",
+            "{10}"
+          ],
+          "correct": "ℝ"
+        },
+        {
+          "prompt": "x gerçek sayı olmak üzere 4(x+3)=4x+12 denkleminin çözüm kümesi hangisidir?",
+          "options": [
+            "ℝ",
+            "∅",
+            "{0}",
+            "{3}",
+            "{−3}"
+          ],
+          "correct": "ℝ"
+        },
+        {
+          "prompt": "x gerçek sayı olmak üzere 4(x−3)=4x+10 denkleminin çözüm kümesi hangisidir?",
+          "options": [
+            "∅",
+            "ℝ",
+            "{0}",
+            "{−22}",
+            "{22}"
+          ],
+          "correct": "∅"
+        },
+        {
+          "prompt": "k gerçek parametre olmak üzere k(x−1)=2x−k denklemi için, her k≠2 değerinde daima geçerli kök ifadesi hangisidir?",
+          "options": [
+            "0",
+            "2",
+            "k",
+            "k−2",
+            "−k"
+          ],
+          "correct": "0"
+        },
+        {
+          "prompt": "k=2 iken k(x−1)=2x−k denkleminin gerçek çözüm kümesi hangisidir?",
+          "options": [
+            "ℝ",
+            "{0}",
+            "∅",
+            "{2}",
+            "{−2}"
+          ],
+          "correct": "ℝ"
+        },
+        {
+          "prompt": "İlk terimi 2, sabit artışı 3 olan bir örüntüde terimin tam 241 olduğu pozitif tam sayı adımı için hangisi doğrudur?",
+          "options": [
+            "Böyle bir pozitif tam sayı adımı yoktur.",
+            "81. adım",
+            "80. adım",
+            "82. adım",
+            "239. adım"
+          ],
+          "correct": "Böyle bir pozitif tam sayı adımı yoktur."
+        },
+        {
+          "prompt": "x gerçek sayı olmak üzere (x−1)/(x−1)=2 denkleminin çözüm kümesi hangisidir?",
+          "options": [
+            "∅",
+            "{1}",
+            "ℝ",
+            "ℝ’den 1 çıkarılmış küme",
+            "{2}"
+          ],
+          "correct": "∅"
+        },
+        {
+          "prompt": "x gerçek sayı olmak üzere (x−1)/(x−1)=1 denkleminin çözüm kümesi hangisidir?",
+          "options": [
+            "ℝ’den 1 çıkarılmış küme",
+            "ℝ",
+            "∅",
+            "{1}",
+            "{0}"
+          ],
+          "correct": "ℝ’den 1 çıkarılmış küme"
+        },
+        {
+          "prompt": "x=1 denkleminin iki tarafı 0 ile çarpılarak 0=0 yazılıyor. Bu işlem çözüm kümesi hakkında ne yapar?",
+          "options": [
+            "Başlangıç çözüm bilgisini kaybettirir; iki denklem eşdeğer değildir.",
+            "Çözüm kümesini aynen korur.",
+            "Başlangıç denklemini çözümsüz yapar.",
+            "Yeni denklem yalnız x=0 için doğrudur.",
+            "İşlem sıfıra bölme olduğu için tanımsızdır."
+          ],
+          "correct": "Başlangıç çözüm bilgisini kaybettirir; iki denklem eşdeğer değildir."
+        },
+        {
+          "prompt": "6x−2=3x+12 denkleminin iki tarafının tamamı 3’e bölünürse doğru yeni eşitlik hangisidir?",
+          "options": [
+            "2x−2/3=x+4",
+            "2x−2=x+4",
+            "2x−2=3x+12",
+            "6x−2=x+4",
+            "2x−6=x+4"
+          ],
+          "correct": "2x−2/3=x+4"
+        },
+        {
+          "prompt": "3(x−2)=12 → 3x−2=12 → 3x=14 zincirinde ilk bozulan adım hangisidir?",
+          "options": [
+            "3(x−2)’nin 3x−2 diye açılması",
+            "Her iki tarafa 2 eklenmesi",
+            "Denklemin başta parantez içermesi",
+            "x’in gerçek sayı kabul edilmesi",
+            "Son satırda x bulunması"
+          ],
+          "correct": "3(x−2)’nin 3x−2 diye açılması"
+        },
+        {
+          "prompt": "Her yeni katman adedi bir önceki katmandakinin iki katıdır. İlk katman adetleri 1,2,4,8,… olduğuna göre hangi açıklama doğrudur?",
+          "options": [
+            "Sabit +3 artış yoktur; ardışık katmanlar iki katına çıkar.",
+            "Her geçişte tam 3 eklenir.",
+            "n. katman her zaman 3n−2’dir.",
+            "İlk üç katmanın toplamı 12’dir.",
+            "İlk katmandan dördüncüye dört geçiş vardır."
+          ],
+          "correct": "Sabit +3 artış yoktur; ardışık katmanlar iki katına çıkar."
+        }
+      ]
+    },
+    {
+      "id": "tyt-mat-basit-esitsizlikler-kaynak-037",
+      "title": "Basit eşitsizlikler: sırayı koru, bütün çözümü gör",
+      "cards": [
+        {
+          "prompt": "Gerçek x için 5x−7≤18 eşitsizliğinin çözüm kümesi hangisidir?",
+          "options": [
+            "(−∞, 5]",
+            "(−∞, 5)",
+            "[5, ∞)",
+            "(5, ∞)",
+            "{5}"
+          ],
+          "correct": "(−∞, 5]"
+        },
+        {
+          "prompt": "Gerçek x için −4x+3>15 eşitsizliğinin çözüm kümesi hangisidir?",
+          "options": [
+            "(−∞, -3)",
+            "(-3, ∞)",
+            "(−∞, -3]",
+            "(−∞, 3)",
+            "{-3}"
+          ],
+          "correct": "(−∞, -3)"
+        },
+        {
+          "prompt": "Gerçek x için 3(2x−5)≤4x+7 eşitsizliğinin çözüm kümesi hangisidir?",
+          "options": [
+            "(−∞, 11]",
+            "(−∞, 11)",
+            "[11, ∞)",
+            "(−∞, 1)",
+            "{11}"
+          ],
+          "correct": "(−∞, 11]"
+        },
+        {
+          "prompt": "Gerçek x için 2≤(x−1)/3<5 koşulunun çözüm kümesi hangisidir?",
+          "options": [
+            "[7, 16)",
+            "(7, 16)",
+            "[7, 16]",
+            "[6, 15)",
+            "(−∞, 16)"
+          ],
+          "correct": "[7, 16)"
+        },
+        {
+          "prompt": "Kursun sabit ücreti 240 TL, her ders 80 TL. Bütçe en çok 880 TL ise en fazla kaç ders alınabilir? Ders sayısı negatif olmayan tam sayıdır.",
+          "options": [
+            "8",
+            "7",
+            "9",
+            "10",
+            "11"
+          ],
+          "correct": "8"
+        },
+        {
+          "prompt": "Gerçek x için −5<2x+1≤9 koşulunun çözüm kümesi hangisidir?",
+          "options": [
+            "(-3, 4]",
+            "[-3, 4]",
+            "(-3, 4)",
+            "(-2, 5]",
+            "[4, ∞)"
+          ],
+          "correct": "(-3, 4]"
+        },
+        {
+          "prompt": "Özgün bin-TL modelinde maliyet 40+u, ilk satış 2u+30, ikinci satış 3u−20’dir. İlk satış kâr, ikinci satış zarar ettiriyorsa pozitif u’nun çözüm kümesi hangisidir?",
+          "options": [
+            "(10, 30)",
+            "[10, 30]",
+            "[10, 30)",
+            "(10, 30]",
+            "(10, ∞)"
+          ],
+          "correct": "(10, 30)"
+        },
+        {
+          "prompt": "Gerçek x için 7x−9<40 eşitsizliğinin çözüm kümesi hangisidir?",
+          "options": [
+            "(−∞, 7)",
+            "(−∞, 7]",
+            "(7, ∞)",
+            "(−∞, 31/7)",
+            "{7}"
+          ],
+          "correct": "(−∞, 7)"
+        },
+        {
+          "prompt": "Gerçek x için −3(2x−5)≥x+8 eşitsizliğinin çözüm kümesi hangisidir?",
+          "options": [
+            "(−∞, 1]",
+            "[1, ∞)",
+            "(−∞, 1)",
+            "(−∞, -1]",
+            "{1}"
+          ],
+          "correct": "(−∞, 1]"
+        },
+        {
+          "prompt": "Gerçek x için −4≤(x+2)/2<5 koşulunun çözüm kümesi hangisidir?",
+          "options": [
+            "[-10, 8)",
+            "(-10, 8)",
+            "[-10, 8]",
+            "[-6, 3)",
+            "(−∞, 8)"
+          ],
+          "correct": "[-10, 8)"
+        },
+        {
+          "prompt": "Gerçek x için 5(x−2)<5x−7 eşitsizliğinin çözüm kümesi hangisidir?",
+          "options": [
+            "ℝ",
+            "∅",
+            "(−∞, 0]",
+            "(0, ∞)",
+            "{0}"
+          ],
+          "correct": "ℝ"
+        },
+        {
+          "prompt": "Bir konserin sabit gideri 1200 TL, kişi başı gideri 60 TL’dir. Bütçe en çok 4200 TL ise negatif olmayan tam sayı olarak en fazla kaç kişi alınabilir?",
+          "options": [
+            "50",
+            "49",
+            "51",
+            "60",
+            "70"
+          ],
+          "correct": "50"
+        },
+        {
+          "prompt": "Gerçek x için x≤−2 veya x>3 koşulunun çözüm kümesi hangisidir?",
+          "options": [
+            "(−∞, -2] ∪ (3, ∞)",
+            "[-2, 3)",
+            "∅",
+            "ℝ",
+            "(−∞, -2) ∪ [3, ∞)"
+          ],
+          "correct": "(−∞, -2] ∪ (3, ∞)"
+        },
+        {
+          "prompt": "Bütün tutarlar TL cinsinde olmak üzere toplam maliyet 80+b, gelir 2b+20’dir. Satışın zarar etmemesi için b’nin çözüm kümesi hangisidir?",
+          "options": [
+            "[60, ∞)",
+            "(60, ∞)",
+            "(−∞, 60]",
+            "(−∞, 60)",
+            "{60}"
+          ],
+          "correct": "[60, ∞)"
+        },
+        {
+          "prompt": "Bir öğrenci −2x<8 için x<−4 yazmıştır. Gerçek çözüm kümesi hangisidir?",
+          "options": [
+            "(-4, ∞)",
+            "(−∞, -4)",
+            "[-4, ∞)",
+            "(4, ∞)",
+            "{-4}"
+          ],
+          "correct": "(-4, ∞)"
+        },
+        {
+          "prompt": "Gerçek x için x−5<2 eşitsizliğinin çözüm kümesi hangisidir?",
+          "options": [
+            "(−∞, 7)",
+            "(7, ∞)",
+            "(−∞, 7]",
+            "(−∞, -3)",
+            "{7}"
+          ],
+          "correct": "(−∞, 7)"
+        },
+        {
+          "prompt": "Gerçek x için x<3 koşulunun doğru aralık gösterimi hangisidir?",
+          "options": [
+            "(−∞,3)",
+            "(−∞,3]",
+            "[−∞,3)",
+            "(3,∞)",
+            "[3,∞)"
+          ],
+          "correct": "(−∞,3)"
+        },
+        {
+          "prompt": "x bir gerçek miktarı göstermek üzere “en az 20” koşulunun çözüm kümesi hangisidir?",
+          "options": [
+            "[20, ∞)",
+            "(20, ∞)",
+            "(−∞, 20)",
+            "(−∞, 20]",
+            "{20}"
+          ],
+          "correct": "[20, ∞)"
+        },
+        {
+          "prompt": "Gerçek x için −5x≤20 eşitsizliğinin çözüm kümesi hangisidir?",
+          "options": [
+            "[-4, ∞)",
+            "(-4, ∞)",
+            "(−∞, -4]",
+            "[4, ∞)",
+            "{-4}"
+          ],
+          "correct": "[-4, ∞)"
+        },
+        {
+          "prompt": "Maliyet 40+u, ilk gelir 2u+30, ikinci gelir 3u−20 olsun; bütün tutarlar aynı birimde. İlk satış zarar etmezken ikinci satış zarar ediyor. Pozitif u’nun çözüm kümesi hangisidir?",
+          "options": [
+            "[10, 30)",
+            "(10, 30)",
+            "[10, 30]",
+            "(10, 30]",
+            "[10, ∞)"
+          ],
+          "correct": "[10, 30)"
+        },
+        {
+          "prompt": "Gerçek x için 3x>12 eşitsizliğinin çözüm kümesi hangisidir?",
+          "options": [
+            "(4, ∞)",
+            "(−∞, 4)",
+            "[4, ∞)",
+            "(−∞, -4)",
+            "{4}"
+          ],
+          "correct": "(4, ∞)"
+        },
+        {
+          "prompt": "Gerçek x için −2≤x≤5 koşulunun çözüm kümesi hangisidir?",
+          "options": [
+            "[-2, 5]",
+            "(-2, 5]",
+            "(-2, 5)",
+            "[-2, 5)",
+            "(−∞, 5]"
+          ],
+          "correct": "[-2, 5]"
+        },
+        {
+          "prompt": "Gerçek x için x≤−2 ve x>3 koşulunun çözüm kümesi hangisidir?",
+          "options": [
+            "∅",
+            "(−∞, -2] ∪ (3, ∞)",
+            "(−∞, -2]",
+            "(3, ∞)",
+            "[-2, 3]"
+          ],
+          "correct": "∅"
+        },
+        {
+          "prompt": "Gerçek x için −3x>12 eşitsizliğinin çözüm kümesi hangisidir?",
+          "options": [
+            "(−∞, -4)",
+            "(-4, ∞)",
+            "(−∞, -4]",
+            "(−∞, 4)",
+            "{-4}"
+          ],
+          "correct": "(−∞, -4)"
+        },
+        {
+          "prompt": "Gerçek x için x−3>12 eşitsizliğinin çözüm kümesi hangisidir?",
+          "options": [
+            "(15, ∞)",
+            "(−∞, 15)",
+            "[15, ∞)",
+            "(−∞, -4)",
+            "{15}"
+          ],
+          "correct": "(15, ∞)"
+        },
+        {
+          "prompt": "Ödenecek borç miktarı pozitif x TL’dir. Borcun 3 katı 12 TL’den büyükse x’in çözüm kümesi hangisidir?",
+          "options": [
+            "(4, ∞)",
+            "(−∞, 4)",
+            "[4, ∞)",
+            "(−∞, -4)",
+            "{4}"
+          ],
+          "correct": "(4, ∞)"
+        },
+        {
+          "prompt": "Gerçek x için x>2 koşulunun çözüm kümesi hangisidir?",
+          "options": [
+            "(2, ∞)",
+            "[2, ∞)",
+            "(−∞, 2)",
+            "(−∞, 2]",
+            "{2}"
+          ],
+          "correct": "(2, ∞)"
+        },
+        {
+          "prompt": "Gerçek x için −2<3x+1≤10 koşulunun çözüm kümesi hangisidir?",
+          "options": [
+            "(-1, 3]",
+            "[-1, 3]",
+            "(-1, 3)",
+            "(-3, 9]",
+            "[3, ∞)"
+          ],
+          "correct": "(-1, 3]"
+        },
+        {
+          "prompt": "Gerçek x için x>1 ve x≤4 koşulunun çözüm kümesi hangisidir?",
+          "options": [
+            "(1, 4]",
+            "[1, 4]",
+            "(1, 4)",
+            "ℝ",
+            "∅"
+          ],
+          "correct": "(1, 4]"
+        },
+        {
+          "prompt": "Gerçek x için −2<x≤5 koşulunun çözüm kümesi hangisidir?",
+          "options": [
+            "(-2, 5]",
+            "[-2, 5]",
+            "(-2, 5)",
+            "[-2, 5)",
+            "(−∞, 5]"
+          ],
+          "correct": "(-2, 5]"
+        },
+        {
+          "prompt": "Gerçek x için x≤−4 veya x>1 koşulunun çözüm kümesi hangisidir?",
+          "options": [
+            "(−∞, -4] ∪ (1, ∞)",
+            "[-4, 1)",
+            "∅",
+            "ℝ",
+            "(−∞, -4) ∪ [1, ∞)"
+          ],
+          "correct": "(−∞, -4] ∪ (1, ∞)"
+        },
+        {
+          "prompt": "a gerçek ve a>0 olmak üzere a·x<6 için her pozitif a’da geçerli eşdeğer çözüm biçimi hangisidir?",
+          "options": [
+            "x<6/a",
+            "x>6/a",
+            "x≤6/a",
+            "x<−6/a",
+            "x=6/a"
+          ],
+          "correct": "x<6/a"
+        },
+        {
+          "prompt": "a gerçek ve a<0 olmak üzere a·x<6 için her negatif a’da geçerli eşdeğer çözüm biçimi hangisidir?",
+          "options": [
+            "x>6/a",
+            "x<6/a",
+            "x≥6/a",
+            "x>−6/a",
+            "x=6/a"
+          ],
+          "correct": "x>6/a"
+        },
+        {
+          "prompt": "a=0 iken a·x<6 eşitsizliğinin gerçek çözüm kümesi hangisidir?",
+          "options": [
+            "ℝ",
+            "∅",
+            "{0}",
+            "x<6",
+            "x>6"
+          ],
+          "correct": "ℝ"
+        },
+        {
+          "prompt": "−3<2 ilişkisinin iki tarafı −1 ile çarpılıyor. Aynı işleme ait doğru yeni karşılaştırma hangisidir?",
+          "options": [
+            "3>−2",
+            "3<−2",
+            "−3>2",
+            "−2>3",
+            "3=−2"
+          ],
+          "correct": "3>−2"
+        },
+        {
+          "prompt": "−3<2 ilişkisinin iki tarafına −5 ekleniyor. Aynı işleme ait doğru yeni karşılaştırma hangisidir?",
+          "options": [
+            "−8<−3",
+            "−8>−3",
+            "2<−3",
+            "−3>2",
+            "8<3"
+          ],
+          "correct": "−8<−3"
+        },
+        {
+          "prompt": "Bir eşitsizliği x−1 ifadesine bölmeden önce neden x’in durumları ayrılmalıdır?",
+          "options": [
+            "x<1’de bölen negatif, x=1’de sıfır, x>1’de pozitiftir.",
+            "x−1 her gerçek x’te pozitiftir.",
+            "x−1 her gerçek x’te negatiftir.",
+            "x=1 iken bölen 1 olur ve bölme yapılır.",
+            "İfadede çıkarma olduğu için bölmenin işareti önem taşımaz."
+          ],
+          "correct": "x<1’de bölen negatif, x=1’de sıfır, x>1’de pozitiftir."
+        },
+        {
+          "prompt": "1<2 ilişkisinin iki tarafı 0 ile çarpılıyor. Doğru açıklama hangisidir?",
+          "options": [
+            "Yeni 0<0 ifadesi yanlıştır; bu işlem sıkı ilişkiyi eşdeğer biçimde korumaz.",
+            "0<0 doğrudur, çünkü iki taraf aynıdır.",
+            "Sıfıra bölme yapıldığı için işlem tanımsızdır.",
+            "Bu işlem aslında iki tarafa 0 eklemektir.",
+            "Yeni doğru ilişki 0>0 olur."
+          ],
+          "correct": "Yeni 0<0 ifadesi yanlıştır; bu işlem sıkı ilişkiyi eşdeğer biçimde korumaz."
+        },
+        {
+          "prompt": "Yeni bir kursun sabit ücreti 150 TL, ders başı ücreti 70 TL’dir. Toplam ücret 640 TL’den az olmalıdır. Negatif olmayan tam sayı olarak en fazla kaç ders alınabilir?",
+          "options": [
+            "6",
+            "5",
+            "7",
+            "8",
+            "9"
+          ],
+          "correct": "6"
+        },
+        {
+          "prompt": "Ek aktarım sorusu: gerçek x için 5(x−2)>5x−7 eşitsizliğinin çözüm kümesi hangisidir?",
+          "options": [
+            "∅",
+            "ℝ",
+            "{0}",
+            "(−∞, 0)",
+            "(0, ∞)"
+          ],
+          "correct": "∅"
+        },
+        {
+          "prompt": "u=b/1000 ve b TL cinsinden olsun. 10<u<30 koşulunun b için çözüm kümesi hangisidir?",
+          "options": [
+            "(10000, 30000)",
+            "(10, 30)",
+            "[10000, 30000]",
+            "(-30000, -10000)",
+            "(10000, ∞)"
+          ],
+          "correct": "(10000, 30000)"
+        },
+        {
+          "prompt": "|b−20000|, b ile 20000 arasındaki uzaklığı göstersin. Bu uzaklık 10000 TL’den az ise b’nin çözüm kümesi hangisidir?",
+          "options": [
+            "(10000, 30000)",
+            "[10000, 30000]",
+            "(0, 10000)",
+            "{20000}",
+            "(−∞, 10000) ∪ (30000, ∞)"
+          ],
+          "correct": "(10000, 30000)"
+        },
+        {
+          "prompt": "Yeni aktarım sorusu: gerçek x için −7<−3x+2≤11 eşitsizliğinin çözüm kümesi hangisidir?",
+          "options": [
+            "[-3, 3)",
+            "(-3, 3)",
+            "[-3, 3]",
+            "(-3, 3]",
+            "(3, ∞)"
+          ],
+          "correct": "[-3, 3)"
+        },
+        {
+          "prompt": "Yeni aktarım sorusu: gerçek x için x≥6 ve x≤6 koşulunun çözüm kümesi hangisidir?",
+          "options": [
+            "{6}",
+            "∅",
+            "ℝ",
+            "[6, ∞)",
+            "(−∞, 6]"
+          ],
+          "correct": "{6}"
+        },
+        {
+          "prompt": "Yeni aktarım sorusu: gerçek x için x<−1 veya x>−1 koşulunun çözüm kümesi hangisidir?",
+          "options": [
+            "(−∞, -1) ∪ (-1, ∞)",
+            "ℝ",
+            "∅",
+            "(−∞, -1)",
+            "(-1, ∞)"
+          ],
+          "correct": "(−∞, -1) ∪ (-1, ∞)"
+        }
+      ]
+    }
+  ]
+}

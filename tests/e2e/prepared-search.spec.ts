@@ -22,8 +22,13 @@ test("search separates question-only packs from theory and exposes the newly pre
   await page
     .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
     .fill("Birinci dereceden denklemler:");
-  await expect(page.locator(".ready-topic")).toHaveCount(1);
-  await expect(page.locator(".ready-topic")).toContainText("10 özgün soru");
+  await expect(page.locator(".ready-topic")).toHaveCount(2);
+  await expect(
+    page.locator('[data-lesson-id="birinci-dereceden-denklemler"]'),
+  ).toContainText("10 özgün soru");
+  await expect(
+    page.locator('[data-lesson-id="tyt-mat-dogrusal-denklemler-kaynak-036"]'),
+  ).toContainText("42 özgün soru");
   await expect(page.locator(".subject-panel")).toHaveCount(1);
   await page
     .getByRole("textbox", { name: "Ders veya konu ara", exact: true })

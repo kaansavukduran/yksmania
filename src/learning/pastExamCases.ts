@@ -125,4 +125,24 @@ export const examTeachingCases: Record<string, ExamTeachingCase> = {
     pitfall:
       "Birden fazla sayıya tam bölünme koşulunu sayıların çarpımıyla değil en küçük ortak katlarıyla birleştir. Bir sembolün rakam mı, sayı mı olduğunu bulunduğu sorunun tanımı belirler.",
   },
+  "2024-TYT-MAT-3": {
+    "prompt": "Özgün örnek: ilk katmanda 1 parça var ve her yeni katmanda bir öncekinin iki katı kadar yeni parça ekleniyor. İlk 7 katmandaki toplam ile ilk 5 katmandaki toplamın farkı kaçtır? Kural her adımda aynen sürer.",
+    "steps": [
+      "İlk beş katmanın ortak parçaları farkta silinir. Yalnız 6. ve 7. katmanları say.",
+      "6. katmanda 2⁵=32, 7. katmanda 2⁶=64 yeni parça bulunur.",
+      "Fark 32+64=96’dır. Bu veriler özgün öğretim örneğidir; resmî sorunun 12. ve 10. adımlarıyla aynı örnek değildir."
+    ],
+    "answer": "96 parça.",
+    "pitfall": "Katlanmayı sabit artış sanma; adım toplamı ile yalnız o katmandaki yeni parça sayısını karıştırma."
+  },
+  "2024-TYT-MAT-8": {
+    "prompt": "Özgün örnek: maliyetleri 12.000 TL, 18.000 TL ve b TL olan üç ürün birlikte satılıyor. Takım 2b+20.000 TL’ye satılırsa kâr, 3b−10.000 TL’ye satılırsa zarar ediliyor. b TL cinsindendir. İki koşulu sağlayan bütün b değerlerini bul.",
+    "steps": [
+      "Toplam maliyet 30.000+b TL. Kâr: 2b+20.000>30.000+b, dolayısıyla b>10.000.",
+      "Zarar: 3b−10.000<30.000+b, dolayısıyla 2b<40.000 ve b<20.000.",
+      "Ortak çözüm 10.000<b<20.000 TL. b=15.000 için maliyet 45.000, ilk satış 50.000, ikinci satış 35.000 TL’dir; iki koşul da sağlanır. Sınırlar başa baş olduğundan alınmaz."
+    ],
+    "answer": "10.000<b<20.000 TL; u=b/1000 ise 10<u<20.",
+    "pitfall": "Bu özgün örneğin verilerini ve sonucunu resmî soruyla eşitleme. TL ile bin TL değişkenini ayrı adlandır."
+  },
 };

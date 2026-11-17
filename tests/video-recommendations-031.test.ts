@@ -73,12 +73,16 @@ describe("031 source-bound optional video recommendations", () => {
           ![
             "tyt-mat-ebob-ekok-kaynak-034",
             "tyt-mat-rasyonel-kaynak-035",
+            "tyt-mat-dogrusal-denklemler-kaynak-036",
+            "tyt-mat-basit-esitsizlikler-kaynak-037",
           ].includes(id),
       ),
     ).toHaveLength(485);
     expect(foundationIds.every((id) => seen.has(id))).toBe(true);
     expect(seen.has("tyt-mat-ebob-ekok-kaynak-034")).toBe(true);
     expect(seen.has("tyt-mat-rasyonel-kaynak-035")).toBe(true);
+    expect(seen.has("tyt-mat-dogrusal-denklemler-kaynak-036")).toBe(true);
+    expect(seen.has("tyt-mat-basit-esitsizlikler-kaynak-037")).toBe(true);
     expect(new Set(videoCatalog031.map((group) => group.subjectId)).size).toBe(
       15,
     );

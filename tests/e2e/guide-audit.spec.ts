@@ -68,7 +68,10 @@ test("equations retain reversible steps and distinguish a zero coefficient offli
   context,
 }) => {
   await page.goto("/");
-  await openMath(page, /Birinci dereceden denklemler: eşitliği koru/);
+  await openMath(
+    page,
+    /Birinci dereceden denklemler: eşitliği koru, çözümü doğrula/,
+  );
   const lab = page.locator(".algebra-lab");
   await lab
     .getByRole("button", {
@@ -110,7 +113,7 @@ test("equations retain reversible steps and distinguish a zero coefficient offli
   await nav(page, "Bugün");
   await expect(
     page.getByRole("region", { name: "Konu planı", exact: true }),
-  ).toContainText("0/496");
+  ).toContainText("0/498");
   await expect(page.locator(".stat-number").first()).toHaveText("0");
 });
 

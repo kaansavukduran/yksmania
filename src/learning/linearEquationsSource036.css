@@ -1,0 +1,37 @@
+.f036-lab{--f036-a:var(--accent,#ffad95);--f036-b:var(--success,#a7cdb5);overflow-wrap:anywhere;min-width:0}
+.f036-modes,.f036-actions{display:flex;flex-wrap:wrap;gap:.65rem;margin:1.1rem 0}
+.f036-modes button,.f036-actions button{min-height:44px;max-width:100%;white-space:normal;text-align:left;line-height:1.5}
+.f036-lab button[aria-pressed=true]{border-color:var(--f036-a);box-shadow:inset 0 -2px var(--f036-a)}
+.f036-panel{border-top:1px solid var(--border,#35404b);padding-top:1rem;min-width:0}
+.f036-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem 1.5rem;margin:1rem 0}
+.f036-range{min-width:0}.f036-range>div{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+.f036-range label,.f036-range output{font:inherit}.f036-range input{width:100%;min-height:44px;accent-color:var(--f036-a)}
+.f036-lab svg{display:block;width:100%;height:auto;margin:1rem auto;overflow:visible;font-size:26px;font-family:inherit}
+.f036-lab svg text{fill:var(--text,#e6e7e8)}
+.f036-axis{stroke:var(--muted,#a8b2bd);stroke-width:2;fill:none}.f036-all{stroke:var(--f036-b);stroke-width:7;fill:none}
+.f036-bar-a,.f036-dot-a{fill:var(--f036-a)}.f036-bar-b,.f036-dot-b{fill:var(--f036-b)}
+.f036-bar-a,.f036-bar-b,.f036-dot-a,.f036-dot-b{transition:x .2s,width .2s,cx .2s}
+.f036-box,.f036-box-a,.f036-box-b{fill:var(--panel,#202731);stroke:var(--muted,#a8b2bd);stroke-width:2}
+.f036-box-a{stroke:var(--f036-a)}.f036-box-b{stroke:var(--f036-b);stroke-dasharray:5 3}
+.f036-forbidden{stroke:var(--f036-a);fill:var(--panel,#202731);stroke-width:3}
+.f036-step{stroke:var(--f036-b);stroke-width:2}.f036-first{stroke:var(--f036-a);stroke-width:5}
+.f036-equation{padding:1rem 0;border-block:1px solid var(--border,#35404b);font-weight:650;line-height:1.8}
+.f036-note{color:var(--muted,#a8b2bd);line-height:1.8}
+.f036-lab[data-motion=false] *{transition:none!important;animation:none!important}
+@media(max-width:700px){.f036-controls{grid-template-columns:minmax(0,1fr)}.f036-modes button{flex:1 1 12rem}}
+@media(prefers-reduced-motion:reduce){.f036-lab *{animation:none!important;transition:none!important}}
+
+/* Values stay in ordinary resizable text when the vector diagram is scaled. */
+.f036-diagram-values{display:grid;gap:.7rem;margin:1rem 0;font:inherit;line-height:1.7;min-width:0}
+.f036-diagram-values>div{min-width:0;padding-left:.7rem;border-left:4px solid var(--muted,#a8b2bd)}
+.f036-diagram-values>div[data-tone=a]{border-color:var(--f036-a)}
+.f036-diagram-values>div[data-tone=b]{border-color:var(--f036-b)}
+.f036-diagram-values dt{font-weight:600}.f036-diagram-values dd{margin:0;font:inherit;font-variant-numeric:tabular-nums}
+
+/* Keep diagrams readable when restoring older light-theme preferences. */
+:root[data-theme="light"] .f036-lab{--f036-b:var(--mint)}
+:root[data-theme="light"] .f036-lab :is(.f036-box,.f036-box-a,.f036-box-b,.f036-forbidden){fill:var(--surface-2)}
+@media(prefers-color-scheme:light){
+ :root[data-theme="system"] .f036-lab{--f036-b:var(--mint)}
+ :root[data-theme="system"] .f036-lab :is(.f036-box,.f036-box-a,.f036-box-b,.f036-forbidden){fill:var(--surface-2)}
+}

@@ -1,3 +1,4 @@
+import release from "../../package.json" with { type: "json" };
 import { writeFile } from "node:fs/promises";
 import { test, expect, type Page } from "@playwright/test";
 import type { AppState } from "../../src/domain/model";
@@ -498,7 +499,7 @@ test("corrected guidance and summary render through normal assisted study; past-
   const errors: string[] = [];
   page.on("pageerror", (error) => errors.push(String(error)));
   await page.goto("/");
-  await expect(page.locator(".sidebar-version")).toContainText("0.22.0");
+  await expect(page.locator(".sidebar-version")).toContainText(release.version);
   await nav(page, "Ayarlar");
   await page
     .getByRole("group", { name: "Tema", exact: true })
@@ -696,7 +697,7 @@ test("corrected guidance and summary render through normal assisted study; past-
     path: info.outputPath("assisted46-correct37-independent9-assisted.png"),
   });
   const evidence = {
-    version: "0.22.0",
+    version: release.version,
     correctedQuestionFields: observedRepairs,
     separateSummarySpacing: true,
     sourceReference: {

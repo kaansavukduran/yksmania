@@ -1,3 +1,5 @@
+import { linearEquationsSource036Lessons } from "../learning/linearEquationsSource036";
+import { basicInequalitiesSource037Lessons } from "../learning/basicInequalitiesSource037";
 import {
   legacy026QuestionLessons,
   legacy026TheoryIds,
@@ -1030,6 +1032,8 @@ const baseLessons: Lesson[] = [
   ...factorialSource033Lessons,
   ...ebobEkokSource034Lessons,
   ...rationalSource035Lessons,
+  ...linearEquationsSource036Lessons,
+  ...basicInequalitiesSource037Lessons,
 ];
 export const lessons: Lesson[] = baseLessons.map((lesson) => {
   const expanded =

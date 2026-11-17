@@ -193,6 +193,44 @@ export const pastExamReferences: PastExamReference[] = [
       "Kontrol: 225 hem 9’a hem 5’e; 252 hem 9’a hem 12’ye tam bölünür. A+B=7, resmî anahtar A ile eşleşir. Bu adımlar özgün öğretim açıklamasıdır; resmî kurum çözümü değildir.",
     ],
   },
+  {
+    "id": "2024-TYT-MAT-3",
+    "bookletId": "2024-tyt",
+    "test": "Temel Matematik",
+    "question": 3,
+    "page": 24,
+    "answerPage": 43,
+    "answer": "A",
+    "topicIds": [
+      "topic-tyt-mat-dogrusal-denklemler-kaynak-036"
+    ],
+    "title": "Sabit artış ile katlanmalı örüntüyü ayırma",
+    "connection": "Denklem kurmadan önce üretim kuralını belirle. Bu seçili resmî örnek katlanmalıdır; doğrusal 241→81 alıştırması bu sorunun özeti değildir.",
+    "solution": [
+      "Her yeni katmanda sayı iki katına çıkar: 1, 2, 4, …; ilk üç katman toplamı 7’dir.",
+      "12. adım toplamından 10. adım toplamını çıkarınca yalnız 11. ve 12. katman kalır: 2¹⁰+2¹¹=3×2¹⁰=3072.",
+      "Resmî A seçeneği 3×2¹⁰’dur. Sabit fark varsayımı kullanılamaz; bu özgün öğretim açıklaması resmî kurum çözümü değildir."
+    ]
+  },
+  {
+    "id": "2024-TYT-MAT-8",
+    "bookletId": "2024-tyt",
+    "test": "Temel Matematik",
+    "question": 8,
+    "page": 26,
+    "answerPage": 43,
+    "answer": "A",
+    "topicIds": [
+      "topic-tyt-mat-basit-esitsizlikler-kaynak-037"
+    ],
+    "title": "Kâr ve zarar koşullarının ortak aralığı",
+    "connection": "Basit eşitsizlikler: aynı maliyetle iki satış koşulunu kesiştir. Resmî b TL’dir; bin TL ölçeği ayrı u=b/1000 değişkenidir.",
+    "solution": [
+      "Toplam maliyet 18.000+22.000+b=40.000+b TL. Kâr koşulu 2b+30.000>40.000+b olduğundan b>10.000 TL.",
+      "Zarar koşulu 3b−20.000<40.000+b olduğundan 2b<60.000 ve b<30.000 TL. Birlikte 10.000<b<30.000.",
+      "Merkez 20.000, yarıçap 10.000 TL’dir: |b−20.000|<10.000. Resmî anahtar A’dır. u=b/1000 seçilirse 10<u<30; b=20 TL denmez."
+    ]
+  },
 ];
 // Selected companion links leave all earlier source records and their topic lists intact.
 const sourceCompanionReferences: Record<string, readonly string[]> = {

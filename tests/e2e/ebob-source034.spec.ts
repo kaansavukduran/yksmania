@@ -1,3 +1,4 @@
+import release from "../../package.json" with { type: "json" };
 import { test, expect, type Page, type Locator } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import type { AppState } from "../../src/domain/model";
@@ -122,7 +123,7 @@ for (const profile of [
       const errors: string[] = [];
       page.on("pageerror", (error) => errors.push(String(error)));
       await page.goto("/#/settings");
-      await expect(page.locator(".sidebar-version")).toContainText("0.22.0");
+      await expect(page.locator(".sidebar-version")).toContainText(release.version);
       await setThemePreference(page, profile.large ? "matrix" : "dark");
       if (profile.large) {
         await page
@@ -251,7 +252,7 @@ for (const profile of [
       expect(errors).toEqual([]);
       await info.attach("actual-offline-model-evidence", {
         body: JSON.stringify({
-          version: "0.22.0",
+          version: release.version,
           profile,
           geometry,
           settingsAndLearningExact: true,
@@ -656,7 +657,7 @@ test("all46 self-contained cards finish offline, Today shows actual46/46, manual
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/#/settings");
   await setThemePreference(page, "dark");
-  await expect(page.locator(".sidebar-version")).toContainText("0.22.0");
+  await expect(page.locator(".sidebar-version")).toContainText(release.version);
   await offlineReady(page);
   await context.setOffline(true);
   await enter(page);
@@ -797,7 +798,7 @@ test("all46 self-contained cards finish offline, Today shows actual46/46, manual
   expect(errors).toEqual([]);
   await info.attach("actual-full-ebob-session", {
     body: JSON.stringify({
-      version: "0.22.0",
+      version: release.version,
       lessonId: id,
       correct: 46,
       wrong: 0,

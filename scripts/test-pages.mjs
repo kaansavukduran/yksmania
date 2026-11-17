@@ -1,3 +1,4 @@
+import { forge036037SmokeCases, runForge036037SmokeCase } from "./forge036037-smoke-cases.mjs";
 import {
   forge034035SmokeCases,
   runForge034035SmokeCase,
@@ -1076,6 +1077,17 @@ try {
     }
     expect(cases).toHaveLength(110);
     expect(new Set(cases).size).toBe(110);
+
+    expect(forge036037SmokeCases).toHaveLength(2);
+    const forge036037Snapshots = [];
+    for (const unit of forge036037SmokeCases) {
+      progress("case:begin", { id: unit.id, completed: cases.length });
+      forge036037Snapshots.push(await withinDeadline(`case ${unit.id}`, 120_000, () => runForge036037SmokeCase(page, nav, unit)));
+      cases.push(unit.id);
+      progress("case:passed", { id: unit.id, completed: cases.length });
+    }
+    expect(cases).toHaveLength(112);
+    expect(new Set(cases).size).toBe(112);
     progress("final-navigation-and-mobile");
     await nav("Kopya Kağıtları");
     await expect(page.locator("main h1")).toBeVisible();
@@ -1199,6 +1211,9 @@ try {
       ),
       forge034035ExplorationWithoutLearningCredit: "PASS",
       forge034035NotesOfflineReload: "PASS",
+      forge036037FamiliesOfflineHtmlStateAndReload: forge036037Snapshots.map((item) => item.id),
+      forge036037ExplorationWithoutLearningCredit: "PASS",
+      forge036037NotesOfflineReload: "PASS",
       questionFeedbackReload: "PASS",
       foundationQuestionRoutesOfflineReload: foundationRouteCases,
       navigation: "theory/cheatsheets/questions/exams/settings",

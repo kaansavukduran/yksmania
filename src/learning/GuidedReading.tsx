@@ -9,6 +9,8 @@ import { resolveGuideStep } from "./guides/position";
 import { geometryFoundation031Ids } from "../data/supplementalTopics031";
 
 const visualFirstLessonIds = new Set<string>([
+  "tyt-mat-dogrusal-denklemler-kaynak-036",
+  "tyt-mat-basit-esitsizlikler-kaynak-037",
   "tyt-mat-ebob-ekok-kaynak-034",
   "tyt-mat-rasyonel-kaynak-035",
   "tyt-mat-faktoriyel-kaynak-033",

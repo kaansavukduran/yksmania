@@ -84,14 +84,14 @@ it("preserves every accepted 033 lesson, guide, summary, question value and thei
 });
 
 it("adds exactly two rich source companions and 94 fully guided self-contained cards", () => {
-  expect(lessons).toHaveLength(531);
-  expect(lessons.flatMap((l) => l.questions)).toHaveLength(6214);
-  expect(lessonGuides.size).toBe(497);
-  expect(builtInCheatSheets.size).toBe(497);
-  expect(studyTopics).toHaveLength(496);
+  expect(lessons).toHaveLength(533);
+  expect(lessons.flatMap((l) => l.questions)).toHaveLength(6301);
+  expect(lessonGuides.size).toBe(499);
+  expect(builtInCheatSheets.size).toBe(499);
+  expect(studyTopics).toHaveLength(498);
   expect(
     new Set(lessons.flatMap((l) => l.questions).map((q) => q.id)).size,
-  ).toBe(6214);
+  ).toBe(6301);
   for (const pack of packs) {
     const lesson = lessonById(pack.id)!;
     const guide = lessonGuides.get(pack.id)!;
@@ -153,7 +153,7 @@ for (const pack of packs)
   });
 
 it("links only the independently checked official item for each source companion", () => {
-  expect(pastExamReferences).toHaveLength(10);
+  expect(pastExamReferences).toHaveLength(12);
   expect(
     pastExamReferencesForTopic("topic-tyt-mat-rasyonel-kaynak-035").map(
       (ref) => ref.id,
@@ -166,7 +166,7 @@ it("links only the independently checked official item for each source companion
   ).toEqual(["2021-TYT-MAT-15"]);
   expect(pastExamReferencesForTopic("unknown-topic")).toEqual([]);
   expect(pastExamReferencesForTopic()).toEqual([]);
-  expect(pastExamReferences.at(-1)).toMatchObject({
+  expect(pastExamReferences.slice(0, 10).at(-1)).toMatchObject({
     id: "2021-TYT-MAT-15",
     page: 30,
     answerPage: 45,
@@ -224,7 +224,7 @@ it("keeps the own common-multiple example self-contained and distinct from the o
   expect(b).toEqual([252]);
   expect(a[0] + b[0]).toBe(477);
   expect(item.answer).toContain("477");
-  expect(pastExamReferences.at(-1)?.answer).toBe("A");
+  expect(pastExamReferences.slice(0, 10).at(-1)?.answer).toBe("A");
 });
 
 it("keeps reviewed EBOB symbols separated from the surrounding Turkish words in all guidance copies", () => {

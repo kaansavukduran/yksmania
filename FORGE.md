@@ -1,3 +1,25 @@
+# 0.23.0 geliştirme adayı — Forge036037
+
+18 Kasım 2026, Türkiye saati. **0.23.0 henüz yayımlanmadı.** Son yayımlanan uygulama 0.22.0 ve kaynağı `5bdc4a15123666b3dc701a802f7f6be7000a383a`’dır. Adayın tabanı yalnız belge değişiklikli `320092c4e177a737321c070bf46cb884d12b5787`; yeni kaynak commit’i ve uzak CI henüz yoktur. [Ayrıntılı kapsam ve kabul tablosu](docs/FORGE036037.md).
+
+Denklemler ve basit eşitsizlikler **57 bölüm, 60 çözümlü örnek, 40 hatırlama, 87 gerekçeli soru, 22 ayrı özet bölümü ve 14 hesaplamalı model** ekler. Aday toplamı 533 set / 499 rehber / 499 özet / 498 çalışma başlığı / 6.301 soru = 3.661 tam + 2.640 kısmi yardım. Önceki içerik, ilk 479 Excel kimliği/sırası, kişisel kayıtlar ve özgün tekrar tarihleri korunur; keşif, süre ve manuel onay ustalık/XP üretmez.
+
+C3’ün gerçek tam birim turu 215 dosyada 1.977/1.977 (104,78 saniye), sekiz normal UI vakası (112,984 saniye), yerel alt dizinde 112 ve paketli Linux’ta 112 farklı çevrimdışı akış bağımsız geri okumayla doğrulandı. Eski light/system tercihlerindeki kontrast kusuru her tema için 81 ölçümde 61 başarısızdan sıfıra indi. Bu sonuçlar tarihsel C3’e aittir.
+
+Son C4, yalnız iki modelin son yönerge metnini öğrencinin çözümünü açıklaması ve başlangıç/sınır koşullarını denetlemesi için sadeleştirir; kalan 591 ürün girdisi C3 ile bayt bayt aynıdır. C4 normal derleme 301 dosya/28.243.619 bayt, alt dizin derlemesi 301/28.243.429 bayttır. C4’ün iki ünitesinin yedişer modunu iki ekran profilinde çalıştıran dört UI vakası geçti. Gerçek C4 paketli Linux hedef kabulü iki ünite/14 mod, notlar, yönergeler ve süreç yeniden açılışını puan üretmeden geçti; tam 112 yerel akışı C4 adıyla yeniden çalıştırılmış sayılmaz. Son alt dizin hedef kabulünün ayrı durumu ayrıntılı tabloda tutulur.
+
+Gerçek aynı kökenli 0.22→C4 0.23 web güncellemesi, üç ham IndexedDB deposunu bayt bayt korudu; otomatik state.put sıfırdır. Normal eski arayüzde oluşturulan özel tarih/Matrix/Lexend, notlar, 5/5 soru sonucu, özgün 3/7/21 tarihleri, yarım çalışma ve 40 cevaplı branş denemesi korundu. Yeni iki model ilk kez çevrimdışı çalıştı; yenileme ve tüm tarayıcı sürecini yeniden açma geçti. Bu, kurulu native sürümler arasında veya fiziksel telefonda yükseltme testi değildir.
+
+İlk iki eski test hatası ve sonraki 2/2 kabul saklandı: rehber/native seçicileri eski tam başlığa bağlandı; geniş soru sorgusu değiştirilmeden iki sonuç ve eski 10/yeni 42 soruluk set ayrı sabit kimliklerle doğrulandı. Yalnız üç test/harness dosyası onarıldı. Güncel E2E keşfi 59 dosyada 1.285 vakadır; keşif tam yürütme değildir.
+
+**Bekleyen yayın kapıları:** sabit yeni kaynak commit’i üzerinde tam uzak 1.977 birim/1.285 tarayıcı, paketli Windows/Linux 112 ve otomatik canlı Pages 112 kabulü; ardından masaüstü Release ve kişisel Android test33 APK’sının gerçek içerik/imza kabulü. Kullanıcıdan secret istenmez; genel APK/mağaza yayını yapılmaz. Son 0.22 indirmeleri korunur.
+
+Kanonik durum **8.981 PDF / 5 tam / 4 kısmi / 8.972 belirsiz**; iki kaynak hâlâ kısmi ve yeni okuma kredisi sıfırdır. [Güncel rapor](docs/PDF_SOURCE_PROGRESS034035.md) değişmez. Yayın, güncel kaynak sürümü ve bağımsız kaynak-uygulama denetiminden sonra ayrı korumalı kanonik karar gerekir. Bütün arşiv tamamlandı sayılmaz.
+
+---
+
+## Aşağıdaki 0.22 ve eski kayıtlar kendi tarihsel kaynaklarına aittir
+
 # 0.22.0 — iki kaynak, Pages, masaüstü ve kişisel APK kabulü
 
 17 Kasım 2026. Yayın kaynağı `5bdc4a15123666b3dc701a802f7f6be7000a383a`; [ayrıntılı devir](docs/FORGE034035.md). [Web uygulaması](https://kaansavukduran.github.io/yksmania/) · [Windows/Linux indir](https://github.com/kaansavukduran/yksmania/releases/tag/v0.22.0-alpha.1) · [Kişisel Android deneme paketi](https://github.com/kaansavukduran/yksmania/actions/runs/44146818660/artifacts/14355659976)

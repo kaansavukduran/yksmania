@@ -67,7 +67,7 @@ test("YKS-016 full-width theory and separate ready cheatsheets retain notes offl
   await nav(page, "Bugün");
   await expect(
     page.getByRole("region", { name: "Konu planı", exact: true }),
-  ).toContainText("0/496");
+  ).toContainText("0/498");
   await expect(page.locator(".stat-number").first()).toHaveText("0");
 });
 test("YKS-016 guides explain steps and keep topic/question cards padded; completed practice offers verified OSYM references without material imports", async ({
@@ -256,5 +256,5 @@ test("guided study advances meaningful sections, keeps its place and notes offli
   await expect(page.locator(".stat-number").first()).toHaveText("0");
   await expect(
     page.getByRole("region", { name: "Konu planı", exact: true }),
-  ).toContainText("0/496");
+  ).toContainText("0/498");
 });

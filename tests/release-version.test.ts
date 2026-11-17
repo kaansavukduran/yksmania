@@ -16,12 +16,12 @@ it("keeps update discovery, visible labels, lockfile and native release on the s
     expect(read(file), file).toContain("APP_VERSION");
   const android = read("android/app/build.gradle");
   expect(android.match(/versionName "([^"]+)"/)?.[1]).toBe(pkg.version);
-  expect(Number(android.match(/versionCode (\d+)/)?.[1])).toBe(32);
+  expect(Number(android.match(/versionCode (\d+)/)?.[1])).toBe(33);
   expect(read(".github/workflows/release-alpha.yml")).toContain(
     `RELEASE_VERSION: "${pkg.version}"`,
   );
   expect(read(".github/workflows/release-alpha.yml")).toContain(
-    'ANDROID_VERSION_CODE: "32"',
+    'ANDROID_VERSION_CODE: "33"',
   );
   expect(metadata.notes.tr.length).toBeGreaterThan(100);
 });

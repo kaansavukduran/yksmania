@@ -1,3 +1,7 @@
+> **0.23.0 geliştirme adayı — 18 Kasım 2026, henüz yayımlanmadı.** Birinci dereceden denklemler ve basit eşitsizliklere 57 anlatım bölümü, 60 çözümlü örnek, 87 gerekçeli soru, 14 etkileşimli model ve 22 ayrı özet bölümü eklendi. Adayda 533 set, 499 rehber/özet, 498 çalışma başlığı ve 6.301 soru var. Yerel öğrenme, çevrimdışı modeller ve gerçek 0.22→0.23 web güncellemesinde veri korunumu doğrulandı. Yeni kaynak commit’i, tam uzak CI, canlı yayın ve yeni APK kabulü bekliyor. [Kapsam ve ayrı test sonuçları](docs/FORGE036037.md).
+>
+> Kanonik PDF sayımı **8.981 dosya: 5 tam, 4 kısmi, 8.972 belirsiz** olarak değişmedi. Bu iki PDF hâlâ kısmi; aşağıdaki 0.22 yayınları ve APK bağlantıları kendi doğrulanmış sürümüne aittir.
+
 # YKSMania
 
 Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması.

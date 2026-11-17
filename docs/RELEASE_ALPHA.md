@@ -1,3 +1,23 @@
+# YKSMania 0.23.0 geliştirme adayı — 18 Kasım 2026
+
+**Henüz yayımlanmadı.** Yeni kaynak commit’i, tam uzak CI, canlı Pages/masaüstü yayını ve yeni kişisel APK kabulü bekliyor. Aşağıdaki 0.22 bağlantıları eski doğrulanmış sürüme aittir; 0.23 indirmesi değildir.
+
+Birinci dereceden denklemler ve basit eşitsizlikler **57 açıklama bölümü, 60 adım adım örnek, 40 hatırlama, 87 gerekçeli özgün soru ve 14 hesaplamalı modelle** genişledi. Ayrı Kopya Kağıtları bölümünde 22 yeni özet bölümü var. Eşitliği koruma, parantez/payda koşulları, sözel model, sabit artış ve bilet; eşitsizlik yönü, aralık/ve-veya, tam sayı bütçesi, kâr/zarar birimi ve parametre dalları değiştirilebilir. Şekil ve sonuç aynı matematikten gelir. Her yeni soru kendi verileri ve beş seçeneğin gerekçesiyle açıklanır; öğrenci PDF/katalog yüklemez.
+
+Aday toplamı **533 set, 499 rehber, 499 ayrı özet, 498 çalışma başlığı ve 6.301 soru**: 3.661 tam, 2.640 kısmi yardım. Önceki içerik, ilk 479 Excel kimliği/sırası, notlar, ayarlar, taslaklar, denemeler ve özgün 3/7/21 tarihleri korunur. Görsel keşif, süre ve manuel onay ustalık/XP üretmez.
+
+Tarihsel C3 kabulü: 1.977 birim, sekiz normal öğrenme/UI vakası, yerel alt dizin 112 ve paketli Linux 112 farklı çevrimdışı akış. Son C4 yalnız iki son yönerge metnini sadeleştirir; kalan 591 ürün girdisi aynıdır. C4 normal ve alt dizin derlemeleri, dört model/UI vakası ve gerçek paketli Linux’ta iki ünite/14 mod, notlar ve süreç yeniden açılışı geçti. C4 için bütün 112 yerel akış yeniden çalıştırılmış sayılmaz; son alt dizin hedef durumu [ayrıntılı kabul tablosunda](FORGE036037.md) ayrıdır. 59 dosyada 1.285 E2E vakası keşfedildi; bu tam test yürütmesi değildir.
+
+Gerçek 0.22→C4 0.23 web güncellemesinde üç ham kayıt deposu, kişisel ayarlar/notlar, tamamlanmış ve yarım çalışmalar, 40 cevaplı deneme ve özgün tekrar tarihleri korundu; otomatik state.put sıfırdır. Yeni modeller ilk kez çevrimdışıyken çalıştı ve kayıtları tarayıcı yeniden açıldığında korundu. Fiziksel cihaz veya kurulu native sürüm yükseltmesi ayrıca sınanacaktır.
+
+Seçili gerçek 2024 TYT Matematik 3: A=3.072; Matematik 8: b TL olmak üzere 10.000<b<30.000, A. Ayrı 96 ve 10.000<b<20.000 çözümleri uygulamanın özgün, puansız öğretim örnekleridir; resmî soru metni değildir. Toplam 12 bağlantı/12 özgün örnek bütün ÖSYM arşivi değildir.
+
+Kanonik durum değişmedi: **8.981 PDF / 5 tam / 4 kısmi / 8.972 belirsiz**. İki yeni kaynak hâlâ kısmi; mevcut okuma kayıtları yeniden sayılmaz. [Mevcut PDF raporu](PDF_SOURCE_PROGRESS034035.md). Kişisel test APK kodu 33 olacak; secret istenmez, genel APK yayını yapılmaz. Bütün MEB/OGM/MEBİ bilgileri ve sorular henüz tamamlanmadı.
+
+---
+
+## Aşağıdaki 0.22 ve eski notlar kendi tarihsel yayınlarına aittir
+
 # YKSMania 0.22.0 alpha 1 — 17 Kasım 2026
 
 [Web uygulaması](https://kaansavukduran.github.io/yksmania/) · [Windows/Linux indir](https://github.com/kaansavukduran/yksmania/releases/tag/v0.22.0-alpha.1) · [Kişisel Android deneme paketi](https://github.com/kaansavukduran/yksmania/actions/runs/44146818660/artifacts/14355659976)

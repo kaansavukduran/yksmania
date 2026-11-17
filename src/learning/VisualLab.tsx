@@ -98,6 +98,8 @@ const PrimeSource032 = lazy(() => import("./PrimeSource032Lab"));
 const FactorialSource033 = lazy(() => import("./FactorialSource033Lab"));
 const EbobEkokSource034 = lazy(() => import("./EbobEkokSource034Lab"));
 const RationalSource035 = lazy(() => import("./RationalSource035Lab"));
+const LinearEquationsSource036 = lazy(() => import("./LinearEquationsSource036Lab").then((module) => ({default:module.LinearEquationsSource036Lab})));
+const BasicInequalitiesSource037 = lazy(() => import("./BasicInequalitiesSource037Lab").then((module) => ({default:module.BasicInequalitiesSource037Lab})));
 const GeometryExpansion032 = lazy(() => import("./GeometryExpansion032Lab"));
 const GeometryLanguage032 = lazy(() => import("./GeometryLanguage032Lab"));
 const GeometryFoundation031 = lazy(() => import("./GeometryFoundation031Lab"));
@@ -453,7 +455,11 @@ export function VisualLab({ id }: { id: string }) {
   return (
     <Suspense fallback={<p role="status">{t("loading")}</p>}>
       <>
-        {id === "tyt-mat-ebob-ekok-kaynak-034" ? (
+        {id === "tyt-mat-dogrusal-denklemler-kaynak-036" ? (
+          <LinearEquationsSource036 key={id} />
+        ) : id === "tyt-mat-basit-esitsizlikler-kaynak-037" ? (
+          <BasicInequalitiesSource037 key={id} />
+        ) : id === "tyt-mat-ebob-ekok-kaynak-034" ? (
           <EbobEkokSource034 key={id} id={id} />
         ) : id === "tyt-mat-rasyonel-kaynak-035" ? (
           <RationalSource035 key={id} id={id} />

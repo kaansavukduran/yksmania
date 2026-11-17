@@ -1,3 +1,4 @@
+import { forge036037SmokeCases, runForge036037SmokeCase, assertForge036037ProcessRestart } from "./forge036037-smoke-cases.mjs";
 import {
   forge034035SmokeCases,
   runForge034035SmokeCase,
@@ -757,6 +758,13 @@ try {
   expect(commonModelFlowIds).toHaveLength(110);
   expect(new Set(commonModelFlowIds).size).toBe(110);
 
+  expect(forge036037SmokeCases).toHaveLength(2);
+  const forge036037Snapshots = [];
+  for (const unit of forge036037SmokeCases) forge036037Snapshots.push(await runForge036037SmokeCase(page, navigate, unit));
+  commonModelFlowIds.push(...forge036037Snapshots.map((item) => item.id));
+  expect(commonModelFlowIds).toHaveLength(112);
+  expect(new Set(commonModelFlowIds).size).toBe(112);
+
   const mathematics = [
     /Temel kavramlar: sayı, değer/,
     /Tek–çift ve işaret:/,
@@ -887,6 +895,7 @@ try {
   await assertForge032ProcessRestart(page, navigate, forge032Snapshots);
   await assertForge033ProcessRestart(page, navigate, forge033Snapshots);
   await assertForge034035ProcessRestart(page, navigate, forge034035Snapshots);
+  await assertForge036037ProcessRestart(page, navigate, forge036037Snapshots);
   await navigate("Bugün");
   await expect(page.locator(".stat-number").first()).toHaveText("1");
   const dailyTheory = page
@@ -908,7 +917,7 @@ try {
   await navigate("Dünyam");
   await expect(
     page.getByRole("img", { name: /Genel konu çalışma ilerlemesi/ }),
-  ).toHaveAttribute("aria-label", /1\/496 konu/);
+  ).toHaveAttribute("aria-label", /1\/498 konu/);
   await expect(
     page.getByRole("region", { name: "TYT konu ağacı", exact: true }),
   ).toBeVisible();
@@ -948,7 +957,10 @@ try {
   await page.reload();
   await expect(page.locator(".model-result")).toContainText("29 = 6 × 4 + 5");
   for (const [title, expected] of [
-    [/Birinci dereceden denklemler: eşitliği koru/, "Çözüm: x=3"],
+    [
+      /Birinci dereceden denklemler: eşitliği koru, çözümü doğrula/,
+      "Çözüm: x=3",
+    ],
     [/Basit eşitsizlikler: yön/, "x > −3"],
   ]) {
     await navigate("Konu Anlatımı");
@@ -1134,7 +1146,7 @@ try {
   await expect(page.locator(".stat-number").first()).toHaveText("0");
   await expect(
     page.getByRole("region", { name: "Konu planı", exact: true }),
-  ).toContainText("0/496");
+  ).toContainText("0/498");
   await openSheet("Hücre Organelleri");
   await expect(
     page.getByRole("textbox", { name: "Notun", exact: true }),
@@ -1398,6 +1410,10 @@ try {
       forge034035SameProfileProcessRestart: "PASS",
       forge034035ExplorationWithoutLearningCredit: "PASS",
       forge034035NotesOfflineAndProcessRestart: "PASS",
+      forge036037FamiliesOfflineHtmlStateAndReload: forge036037Snapshots.map((item) => item.id),
+      forge036037SameProfileProcessRestart: "PASS",
+      forge036037ExplorationWithoutLearningCredit: "PASS",
+      forge036037NotesOfflineAndProcessRestart: "PASS",
       sharedOfflineModelFlowCount: commonModelFlowIds.length,
       sharedOfflineModelFlowIds: commonModelFlowIds,
       forge025ExplorationWithoutLearningCredit: "PASS",

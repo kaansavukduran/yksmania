@@ -1381,7 +1381,8 @@
     "subjectId": "tyt-matematik",
     "topic": "Birinci Dereceden Denklemler",
     "lessonIds": [
-      "birinci-dereceden-denklemler"
+      "birinci-dereceden-denklemler",
+      "tyt-mat-dogrusal-denklemler-kaynak-036"
     ],
     "recommended": [
       {
@@ -1426,7 +1427,8 @@
     "subjectId": "tyt-matematik",
     "topic": "Basit Eşitsizlikler",
     "lessonIds": [
-      "basit-esitsizlikler"
+      "basit-esitsizlikler",
+      "tyt-mat-basit-esitsizlikler-kaynak-037"
     ],
     "recommended": [
       {

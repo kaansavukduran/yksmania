@@ -1,3 +1,5 @@
+import { linearEquationsSource036Guides } from "../linearEquationsSource036";
+import { basicInequalitiesSource037Guides } from "../basicInequalitiesSource037";
 import { legacy026Guides } from "../legacy026";
 import { primeSource032Guides } from "../primeSource032";
 import { factorialSource033Guides } from "../factorialSource033";
@@ -260,6 +262,8 @@ export const lessonGuides = new Map(
     ...factorialSource033Guides,
     ...ebobEkokSource034Guides,
     ...rationalSource035Guides,
+    ...linearEquationsSource036Guides,
+    ...basicInequalitiesSource037Guides,
   ].map((guide) => [guide.id, guide]),
 );
 

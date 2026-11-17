@@ -1,7 +1,7 @@
 {
-  "version": "0.22.0",
+  "version": "0.23.0",
   "channel": "alpha",
   "notes": {
-    "tr": "EBOB ve EKOK; asal tabloları, Öklid adımları, parça ve zaman çizelgeleri, kalan koşulları ve küp sayımıyla genişletildi. Rasyonel sayılarda aynı bütün, sayı doğrusu, sıralama, işlemler, devirli ondalıklar ve değişen bütünü görsellerle inceleyebilirsin. İki ünitede toplam 55 anlatım bölümü, 44 çözümlü örnek ve 94 açıklamalı özgün soru; ayrı kısa kopya kağıtları bulunur. Önceki cevaplar, notlar, tercihler, özgün tekrar tarihleri ve yarım denemeler korunur. Görsel keşif öğrenme puanı üretmez. Bütün PDF arşivi henüz tamamlanmış değildir."
+    "tr": "Yayımlanmamış 0.23 geliştirme adayı: birinci dereceden denklemler ve basit eşitsizliklerde 57 açıklama bölümü, 60 çözümlü örnek, 40 hatırlama ve 87 gerekçeli özgün soru; yedişer hesaplamalı görsel model ve ayrı kopya kağıtları bulunur. Önceki cevaplar, notlar, tercihler, özgün tekrar tarihleri ve yarım çalışmalar korunur. Keşif, süre ve manuel onay öğrenme puanı üretmez. Bütün kaynak arşivi henüz tamamlanmış değildir."
   }
 }
