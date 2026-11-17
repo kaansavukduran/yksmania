@@ -65,7 +65,9 @@ describe("031 source-bound optional video recommendations", () => {
         }
       }
     }
-    expect([...seen].filter((id) => !id.endsWith("-032"))).toHaveLength(485);
+    expect(
+      [...seen].filter((id) => !id.endsWith("-032") && !id.endsWith("-033")),
+    ).toHaveLength(485);
     expect(foundationIds.every((id) => seen.has(id))).toBe(true);
     expect(new Set(videoCatalog031.map((group) => group.subjectId)).size).toBe(
       15,

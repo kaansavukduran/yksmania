@@ -3,6 +3,7 @@ import {
   legacy026TheoryIds,
 } from "../learning/legacy026";
 import { primeSource032Lessons } from "../learning/primeSource032";
+import { factorialSource033Lessons } from "../learning/factorialSource033";
 import { geometryExpansion032Lessons } from "../learning/geometryExpansion032";
 import { geometryFoundation031Lessons } from "../learning/geometryFoundation031";
 import { forge025MathLessons } from "../learning/forge025Math";
@@ -1024,6 +1025,7 @@ const baseLessons: Lesson[] = [
   ...forge093HistoryLessons,
   factorizationLesson,
   ...sourceNarratives,
+  ...factorialSource033Lessons,
 ];
 export const lessons: Lesson[] = baseLessons.map((lesson) => {
   const expanded =

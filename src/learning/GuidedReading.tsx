@@ -9,6 +9,7 @@ import { resolveGuideStep } from "./guides/position";
 import { geometryFoundation031Ids } from "../data/supplementalTopics031";
 
 const visualFirstLessonIds = new Set<string>([
+  "tyt-mat-faktoriyel-kaynak-033",
   "tyt-mat-asal-kaynak-032",
   ...geometryFoundation031Ids,
   ...geometryExpansion032Ids,

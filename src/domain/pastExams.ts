@@ -158,6 +158,24 @@ export const pastExamReferences: PastExamReference[] = [
       "C seçeneği; aynı sayfadaki resmî doğru cevap C’dir. Kök derecesini atlama.",
     ],
   },
+  {
+    id: "2021-TYT-MAT-5",
+    bookletId: "2021-tyt",
+    test: "Temel Matematik",
+    question: 5,
+    page: 27,
+    answerPage: 45,
+    answer: "C",
+    topicIds: ["detail-198", "topic-tyt-mat-faktoriyel-kaynak-033"],
+    title: "Katmanlı adetlerden faktöriyel zincirine",
+    connection:
+      "Faktöriyel: katman adetlerini çarpma ve 11’den 14’e ardışık çarpımı 14!/10! ile yazma.",
+    solution: [
+      "Verilen katman adetlerinin çarpımı 11·12·13·2·7’dir; her katman sayısı ayrı bir faktöriyel değildir.",
+      "2·7=14 birleşince 11·12·13·14 kalır. 14!=14·13·12·11·10! olduğundan çarpım 14!/10!’tır.",
+      "Bağımsız sayısal kontrol 132·182=24.024 verir. Resmî soru için C anahtarıyla eşleşir; buradaki öğretim açıklaması resmî kurum çözümü değildir.",
+    ],
+  },
 ];
 export const officialExamArchives = [
   { exam: "TYT / AYT", url: "https://osym.gov.tr/SinavGrubu/Index/2" },

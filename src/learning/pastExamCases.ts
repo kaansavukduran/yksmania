@@ -101,4 +101,16 @@ export const examTeachingCases: Record<string, ExamTeachingCase> = {
     pitfall:
       "Dördüncü kökü karekökle karıştırma; toplam veya farkın içinden keyfî terim sadeleştirme.",
   },
+  "2021-TYT-MAT-5": {
+    prompt:
+      "Bir sayma modelinde 11 bölgenin her birinde 12 birim, her birimde 13 merkez, her merkezde 2 kat ve her katta 7 salon vardır. Katmanlardaki bu adetler dışında ek kısıt yoktur. Toplam salon sayısını ardışık çarpım ve bir faktöriyel oranıyla yaz; neden her adede ayrı ünlem koymadığını açıkla.",
+    steps: [
+      "Adetler 11·12·13·2·7 ile çarpılır. Bölge, birim, merkez ve kat başına sayımlar sırayla birleşince sonuç salon adedidir; bu bir nesne sıralama sorusu değildir.",
+      "2·7=14. Çarpım 11·12·13·14 olur. 14!=14·13·12·11·10! olduğu için ortak 10!’a bölünür ve 14!/10! kalır.",
+      "11·12=132, 13·14=182 ve 132·182=24.024 salon. 13!/10! bir 14 çarpanını kaybeder; 14!/9! fazladan 10 taşır. Sonuç bir seçenek harfiyle değil bu matematiksel değerle değerlendirilir.",
+    ],
+    answer: "14!/10! = 24.024 salon.",
+    pitfall:
+      "Katman adetlerini ayrı faktöriyellere çevirme. Zincirin ilk çarpanı 11 olduğundan paydaya 10! gelir; kaynak sorunun C anahtarı bu özgün öğretim örneğinin seçenek harfi değildir.",
+  },
 };

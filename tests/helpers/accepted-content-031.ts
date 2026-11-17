@@ -12,9 +12,14 @@ export const acceptedGuide031 = ([id]: [string, unknown]) =>
   Object.hasOwn(guideFingerprints, id);
 
 export function beforeFoundation031Registration(source: string): string {
-  // Reverse only the two additive registration lines; every earlier byte is
+  // Reverse only additive registration lines; every earlier byte is
   // still compared with the unchanged historical SHA-256 by the source gate.
   return source
+    .replace(
+      'import { factorialSource033Lessons } from "../learning/factorialSource033";\n',
+      "",
+    )
+    .replace("  ...factorialSource033Lessons,\n", "")
     .replace(
       'import { primeSource032Lessons } from "../learning/primeSource032";\n',
       "",

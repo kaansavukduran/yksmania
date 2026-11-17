@@ -26,20 +26,7 @@ if (process.env.PORTABLE_EXECUTABLE_DIR) {
     path.join(process.env.PORTABLE_EXECUTABLE_DIR, "YKSManiaData"),
   );
 }
-const safeExternal = (url) => {
-  try {
-    const u = new URL(url);
-    return (
-      u.protocol === "https:" &&
-      ((u.hostname === "github.com" &&
-        u.pathname.startsWith("/kaansavukduran/yksmania")) ||
-        (u.hostname === "drive.google.com" &&
-          /^\/file\/d\/[\w-]+\/view$/.test(u.pathname)))
-    );
-  } catch {
-    return false;
-  }
-};
+const { isAllowedExternalUrl: safeExternal } = require("./external-links.cjs");
 async function createWindow() {
   const window = new BrowserWindow({
     width: 1400,

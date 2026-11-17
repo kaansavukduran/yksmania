@@ -1,0 +1,240 @@
+{
+  "source": "387fc3ea7f43e39d64e0c1e5f062372969a0ebeb",
+  "pastExamReferences": [
+    {
+      "id": "2021-TYT-MAT-1",
+      "bookletId": "2021-tyt",
+      "test": "Temel Matematik",
+      "question": 1,
+      "page": 26,
+      "answerPage": 45,
+      "answer": "E",
+      "topicIds": [
+        "detail-202"
+      ],
+      "title": "Doğru bütünü seçerek oran kurma",
+      "connection": "Rasyonel sayılar: kap kütlesini çıkarma ve kesri sadeleştirme.",
+      "solution": [
+        "Boş kap 280 g. Tam dolu su 400−280=120 g, kısmi su 355−280=75 g.",
+        "Doluluk oranı 75/120=5/8’dir. 355/400 kabı da hesaba katacağı için su doluluğunu vermez.",
+        "Kontrol: 120×5/8=75; 75+280=355 g. Resmî anahtar E ile eşleşir."
+      ]
+    },
+    {
+      "id": "2021-TYT-FEN-8",
+      "bookletId": "2021-tyt",
+      "test": "Fen Bilimleri",
+      "question": 8,
+      "page": 40,
+      "answerPage": 45,
+      "answer": "A",
+      "topicIds": [
+        "detail-141"
+      ],
+      "title": "Sistematik addan yaygın ada",
+      "connection": "Kimyanın sembolik dili: azot ve hidrojen sembollerini adla eşleştirme.",
+      "solution": [
+        "Verilen addaki azot N, hidrojen H ile gösterilir; tri üç hidrojen belirtir.",
+        "NH₃’ün yaygın adı amonyaktır. Formüldeki atom sayısı oranı N:H=1:3’tür.",
+        "Sonuç A; resmî anahtar da A’dır. Bu tek ad örneği tüm bileşikler için genel adlandırma kuralı değildir."
+      ]
+    },
+    {
+      "id": "2021-TYT-FEN-9",
+      "bookletId": "2021-tyt",
+      "test": "Fen Bilimleri",
+      "question": 9,
+      "page": 40,
+      "answerPage": 45,
+      "answer": "C",
+      "topicIds": [
+        "detail-146"
+      ],
+      "title": "Dış katmandaki elektronları karşılaştırma",
+      "connection": "Periyodik sistem: helyumun dış katman istisnası.",
+      "solution": [
+        "Temel halde He’nin dış katmanı 2, N’ninki 5, Mg’ninki 2 elektron içerir.",
+        "Bu nedenle N > Mg = He. Helyumu sırf 18. grupta diye sekiz dış elektronlu sayma.",
+        "C seçeneği bu ilişkiyi verir ve resmî anahtarla eşleşir."
+      ]
+    },
+    {
+      "id": "2018-TYT-FEN-1",
+      "bookletId": "2018-tyt",
+      "test": "Fen Bilimleri",
+      "question": 1,
+      "page": 34,
+      "answerPage": 42,
+      "answer": "E",
+      "topicIds": [
+        "detail-2",
+        "detail-139"
+      ],
+      "title": "Bilimsel bilgiye ulaşma yolları",
+      "connection": "Bilimsel yöntemle doğrudan; simyadan kimyaya geçişle bağlantılıdır. Doğrudan simya tarihi sorusu değildir.",
+      "solution": [
+        "Deney koşulları sınar, gözlem veri sağlar, akıl yürütme veriler arasında gerekçeli ilişki kurar.",
+        "Üçünün de kullanılabilmesi E sonucunu verir; resmî anahtar E’dir.",
+        "Kullanılabilirlik, her araştırmanın aynı sabit sırayla ilerlemesi veya üç yolun her seferinde zorunlu birlikte bulunması demek değildir."
+      ]
+    },
+    {
+      "id": "2018-TYT-FEN-12",
+      "bookletId": "2018-tyt",
+      "test": "Fen Bilimleri",
+      "question": 12,
+      "page": 37,
+      "answerPage": 42,
+      "answer": "E",
+      "topicIds": [
+        "detail-139"
+      ],
+      "title": "Mürekkebin bileşenlerini işleviyle eşleştirme",
+      "connection": "Tarihsel ürünlerle bağlantılı uygulama sorusudur; doğrudan simya tarihi sorusu değildir.",
+      "solution": [
+        "Boya veya pigment renk, uygun uçucu çözücü kuruma, bağlayıcı yüzeye tutunma işleviyle değerlendirilir.",
+        "Verilen üç işlev birlikte değerlendirilince E sonucu çıkar; resmî anahtar da E’dir.",
+        "Bir ürünün tarihsel kullanımı, güncel bileşenlerinin kimyayla incelenmesini engellemez."
+      ]
+    },
+    {
+      "id": "2026-ALES2-SAY-4",
+      "bookletId": "2026-ales2",
+      "test": "Sayısal",
+      "question": 4,
+      "page": 3,
+      "answerPage": 3,
+      "answer": "C",
+      "topicIds": [
+        "detail-202"
+      ],
+      "title": "Ondalık bölmelerde ölçeği koruma",
+      "connection": "Rasyonel sayılarla bağlantılı ondalık işlem; ortak payda ve işlem sırası.",
+      "solution": [
+        "Her bölmede bölen virgülden kurtarılırken bölünen de aynı 10 kuvvetiyle çarpılmalıdır.",
+        "İlk bölüm 10, ikinci bölüm 0,1 verir. Aradaki çıkarma 10−0,1=9,9’dur.",
+        "C seçeneği. Bu %10 kitapçığında doğru cevap soru sayfasında C olarak verilmiştir."
+      ]
+    },
+    {
+      "id": "2026-DGS-SAY-1",
+      "bookletId": "2026-dgs",
+      "test": "Sayısal",
+      "question": 1,
+      "page": 3,
+      "answerPage": 3,
+      "answer": "E",
+      "topicIds": [
+        "detail-202"
+      ],
+      "title": "Çok katlı kesirde gruplama",
+      "connection": "Rasyonel sayılar: üst ve alt grupları ayrı bitirip bölme.",
+      "solution": [
+        "Üstte 1/2+5=11/2; altta 1/2+3/5=11/10 bulunur.",
+        "(11/2)÷(11/10)=(11/2)×(10/11)=5.",
+        "E seçeneği. %10 kitapçığının aynı sayfasındaki cevap E ile eşleşir."
+      ]
+    },
+    {
+      "id": "2026-KPSS-GY-33",
+      "bookletId": "2026-kpss",
+      "test": "Genel Yetenek",
+      "question": 33,
+      "page": 13,
+      "answerPage": 13,
+      "answer": "C",
+      "topicIds": [
+        "detail-208"
+      ],
+      "title": "Kökleri ortak çarpana dönüştürme",
+      "connection": "Köklü sayılar: karekök ve dördüncü dereceden kök, ortak çarpanla sadeleştirme.",
+      "solution": [
+        "√96=4√6 ve ⁴√4=√2; pay 4√12=8√3 olur.",
+        "Payda √75−√27=5√3−3√3=2√3. Bölüm 4’tür.",
+        "C seçeneği; aynı sayfadaki resmî doğru cevap C’dir. Kök derecesini atlama."
+      ]
+    }
+  ],
+  "examTeachingCases": {
+    "2021-TYT-MAT-1": {
+      "prompt": "Boş bir kap 280 g, suyla tamamen doluyken 400 g geliyor. Aynı kap kısmen suyla doluyken 355 g geldiğine göre kapasitesinin kaçta kaçı suyla doludur? Kap her ölçümde aynıdır; suyun yoğunluğu değişmiyor.",
+      "steps": [
+        "Tam dolu suyun kütlesi 400−280=120 g'dır. Kap kütlesi su miktarına dahil edilmez.",
+        "Kısmi suyun kütlesi 355−280=75 g. Dolulukta karşılaştırılan aynı maddeden iki su miktarıdır.",
+        "75/120=5/8. Kontrol: 120×5/8=75 ve 75+280=355 g."
+      ],
+      "answer": "Kabın 5/8'i doludur.",
+      "pitfall": "355/400 oranı, her iki ölçümdeki kap kütlesini de su gibi sayar."
+    },
+    "2021-TYT-FEN-8": {
+      "prompt": "Bir bileşiğin bir molekülünde bir azot ve üç hidrojen atomu vardır. Formülünü, atom sayısı oranını ve yaygın adını yaz. Azotun sembolü N, hidrojeninki H'dir.",
+      "steps": [
+        "Bir azot için N yazılır; bir sayısı alt indis olarak gösterilmez.",
+        "Üç hidrojen H₃ ile gösterilir. Formül NH₃, N:H atom sayısı oranı 1:3'tür.",
+        "NH₃'ün yaygın adı amonyaktır. Alt indis atom adedini belirtir; molekülün iyon yükü değildir."
+      ],
+      "answer": "NH₃; 1:3; amonyak.",
+      "pitfall": "3NH, üç ayrı NH birimi anlamına gelir; NH₃ ile aynı yapı değildir."
+    },
+    "2021-TYT-FEN-9": {
+      "prompt": "Nötr temel hâl atomlarının katman dağılımları He: (2); N: (2, 5); Mg: (2, 8, 2) olarak verilmiştir. En dış dolu katmandaki elektron sayılarını karşılaştır.",
+      "steps": [
+        "He'nin tek katmanında 2 elektron vardır. 18. grupta olması bu katmanda 8 elektron bulunduğu anlamına gelmez.",
+        "N'nin dış katmanında 5, Mg'ninkinde 2 elektron vardır.",
+        "5>2=2 olduğundan N>Mg=He. Karşılaştırılan toplam elektron sayısı değil, dış katmandaki sayıdır."
+      ],
+      "answer": "N>Mg=He.",
+      "pitfall": "Helyumun dolu ilk katmanını sekiz elektronlu sayma."
+    },
+    "2018-TYT-FEN-1": {
+      "prompt": "Bir araştırmacı bitkilerin büyümesini incelerken boyları ölçüyor, ışık miktarını kontrollü değiştiriyor ve bulgularından bir açıklama kuruyor. Bu çalışmada gözlem, deney ve akıl yürütmenin işlevlerini ayrı açıkla.",
+      "steps": [
+        "Boy ölçümleri gözlemsel veri sağlar; veri toplama tek başına nedenin kesin kanıtı değildir.",
+        "Işığın kontrollü değiştirilmesi bir değişkenin etkisini sınayan deney düzenidir. Diğer koşulların karşılaştırılabilir olması gerekir.",
+        "Verileri ilişkilendirip açıklama kurmak akıl yürütmedir. Bilim bu yolları bir arada kullanabilir; her araştırmanın tek ve değişmez bir sıraya uyması gerekmez."
+      ],
+      "answer": "Ölçüm veri sağlar, deney koşulu sınar, akıl yürütme gerekçeli ilişki kurar.",
+      "pitfall": "Bir yöntemin kullanılabilmesini, her araştırmada zorunlu ve aynı sırada kullanılmasıyla karıştırma."
+    },
+    "2018-TYT-FEN-12": {
+      "prompt": "Bir yazı mürekkebi renk veren madde, uçucu sıvı ve bağlayıcı içeriyor. Bu üç bileşeni renk, kuruma ve yüzeye tutunma işlevleriyle eşleştir; uçucu sıvının buharlaşmasıyla rengin neden bütünüyle kaybolması gerekmediğini açıkla.",
+      "steps": [
+        "Boya veya pigment renk verir; bu görev çözücünün uçuculuğuyla aynı özellik değildir.",
+        "Uygun uçucu sıvı ortamı sağlar ve buharlaşması kurumaya katkı yapar. Renk maddesinin onunla birlikte tamamen buharlaşması gerekmez.",
+        "Bağlayıcı renk maddesinin yüzeye tutunmasına yardımcı olur. Ürün, bileşenlerin farklı görevlerinin birlikte çalışmasıyla işlev kazanır."
+      ],
+      "answer": "Renk: boya/pigment; kuruma: uçucu sıvı; tutunma: bağlayıcı.",
+      "pitfall": "Bütün bileşenlerin aynı fiziksel özelliğe veya tek göreve sahip olduğunu varsayma."
+    },
+    "2026-ALES2-SAY-4": {
+      "prompt": "(2,5÷0,25)−(0,02÷0,2) işlemini yap. Virgülü kaldırırken bölünenle böleni neden aynı katsayıyla çarpmak gerektiğini açıkla.",
+      "steps": [
+        "2,5/0,25=(2,5×100)/(0,25×100)=250/25=10.",
+        "0,02/0,2=(0,02×10)/(0,2×10)=0,2/2=0,1.",
+        "10−0,1=9,9. Bir kesrin payını ve paydasını aynı sıfırdan farklı sayıyla çarpmak oranı korur."
+      ],
+      "answer": "9,9.",
+      "pitfall": "Yalnız bölenin virgülünü kaldırmak oranı değiştirir."
+    },
+    "2026-DGS-SAY-1": {
+      "prompt": "(1/2+5)÷(1/2+3/5) ifadesinin değerini bul. Parantezler üst ve alt grupları ayrı toplar; işlem tek tek terimlere dağıtılan bir bölme değildir.",
+      "steps": [
+        "İlk parantez 1/2+10/2=11/2.",
+        "İkinci parantez 5/10+6/10=11/10.",
+        "(11/2)÷(11/10)=(11/2)×(10/11)=5. Kontrol: 5×11/10=11/2."
+      ],
+      "answer": "5.",
+      "pitfall": "Bölme yaparken ikinci kesrin tamamını ters çevir; toplamın yalnız bir terimini ters çevirme."
+    },
+    "2026-KPSS-GY-33": {
+      "prompt": "(√96×⁴√4)/(√75−√27) ifadesini sadeleştir. Köklü sayılar gerçek sayılarda esas pozitif kökleri gösteriyor; paydanın sıfır olmadığını da denetle.",
+      "steps": [
+        "√96=4√6 ve ⁴√4=√2. Pay 4√6×√2=4√12=8√3.",
+        "Payda 5√3−3√3=2√3; sıfır değildir.",
+        "8√3/(2√3)=4. Ortak çarpan √3 sıfırdan farklı olduğu için sadeleşir."
+      ],
+      "answer": "4.",
+      "pitfall": "Dördüncü kökü karekökle karıştırma; toplam veya farkın içinden keyfî terim sadeleştirme."
+    }
+  }
+}

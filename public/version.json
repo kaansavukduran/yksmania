@@ -1,7 +1,7 @@
 {
-  "version": "0.20.0",
+  "version": "0.21.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Asal sayılarda gerçek Eratosthenes eleği ve kaynak problemleri eklendi. Geometriye çokgenler, dörtgen aileleri, yamuk ve deltoid, özel dörtgenler, dik prizmalar, piramitler ve kaynakla açı pekiştirmesi eklendi. Şekilleri değiştirerek özellikleri, yüzeyleri ve hacimleri inceleyebilirsin. Adımlı çözümler, gerekçeli sorular, ayrı kısa kopya kağıtları ve konuya bağlı video önerileri hazır. Yeni konuların ilerlemesi bağımsız kaydedilir; önceki yanıtlar, notlar, tarihler ve denemeler korunur. PDF kaynak aktarımı sayfa ve öğrenme maddesi düzeyinde kaydedilir; bütün arşiv tamamlanmış değildir."
+    "tr": "Faktöriyel kavramı yeni kaynak anlatımıyla genişletildi: çarpımı adım adım kurabilir, oranlarda ortak çarpımı görebilir, asal bütçesi ve 2–5 eşleşmelerini değiştirebilirsin. Sıralama koşulları ile toplam ve fark ayrı keşiflerde açıklanır. 43 açıklamalı öğretim sorusu, 16 çözümlü örnek, hatırlama kartları ve ayrı kopya kağıdı eklendi. Yeni konu kaydı bağımsızdır; önceki cevaplar, notlar, özel tarihler, tekrarlar ve başlanmış denemeler korunur. Bütün PDF arşivi henüz tamamlanmış değildir."
   }
 }

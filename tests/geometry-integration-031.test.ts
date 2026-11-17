@@ -1,4 +1,5 @@
 import { supplementalSourceTopics032 } from "../src/data/supplementalSourceTopics032";
+import { supplementalSourceTopics033 } from "../src/data/supplementalSourceTopics033";
 import { supplementalTopics032 } from "../src/data/supplementalTopics032";
 import previous031 from "./fixtures/source-stage-031-preservation.json";
 import { describe, expect, it } from "vitest";
@@ -31,19 +32,20 @@ describe("031 additive geometry learning path", () => {
     expect(
       studyTopics.slice(479, 485).map(({ order, ...topic }) => topic),
     ).toEqual(supplementalTopics031);
-    expect(new Set(studyTopics.map((topic) => topic.id)).size).toBe(493);
+    expect(new Set(studyTopics.map((topic) => topic.id)).size).toBe(494);
     const state = initialState();
     for (const topic of workbookStudyTopics)
       state.topicProgress[topic.id] = { theory: "2026-11-16" };
     state.notes = { "lesson:rasyonel-sayilar": "Önceki not korunur." };
     const restored = validateState(state);
     const plan = studyPlan(restored, "theory", "2026-11-17");
-    expect(plan).toMatchObject({ done: 479, remaining: 14, total: 493 });
+    expect(plan).toMatchObject({ done: 479, remaining: 15, total: 494 });
     expect(plan.scheduled.map(({ topic }) => topic.id)).toEqual(
       [
         ...supplementalTopics031,
         ...supplementalTopics032,
         ...supplementalSourceTopics032,
+        ...supplementalSourceTopics033,
       ].map((topic) => topic.id),
     );
     expect(restored.topicProgress).toEqual(state.topicProgress);

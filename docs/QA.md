@@ -1,3 +1,31 @@
+# 0.21.0 geliştirme adayının yerel kabulü: 17 Kasım 2026
+
+Dal `forge/source-transfer-033`, taban `387fc3ea7f43e39d64e0c1e5f062372969a0ebeb`. [Kapsam ve öğretim](FORGE033.md) ayrı kaydedilir. Bu kabul henüz main veya dağıtılmış 0.21.0 paket/yayın kabulü değildir.
+
+| Kapı | Gerçek sonuç |
+| --- | --- |
+| TypeScript/modül yolları | PASS: 367 belirsiz olmayan yol |
+| Son tam birim turu | PASS: 209 dosyada 1.907/1.907, 233,15 saniye; masaüstü bağlantı testleri dahil |
+| Normal/prefix build | PASS: her biri 293 dosya/283 gerekli çevrimdışı varlık; en büyük dosya 5 MiB altında |
+| Son C3 hedef UI | PASS: tek tur 4/4; normal ve 320 px Matrix/Lexend yüzde 200/150, altı model, gerçek 2 cevaplı taslak ve gerçek 43/43 oturum |
+| Son C3 yerel Pages prefix | PASS: 108 farklı model ilk kez çevrimdışı/reload; rendererErrors ve missing boş, 293 dosya sabit |
+| Masaüstü eğitim bağlantıları | PASS: 55 birim; kaynak Electron'da altı normal OS devretme çağrısı ve süreç yeniden açılışı. Haricî oynatma/indirme kabulü değildir |
+| Tam yerel native model koşusu | C1 kaynak derlemesinde 108 PASS; C3 tam native/paket başarısı diye sunulmaz |
+| Tam yeni tarayıcı CI | Bekliyor: 55 dosya/1.269 vaka; dört shard 345/290/317/317, tam ve ayrık liste. Statik seçim çalıştırma değildir |
+| Dağıtılmış 0.21 paket/web/APK ve fiziksel cihaz | Bekliyor |
+
+Yeni kaynak ünitesinin 81 ayrı öğretim maddesi/199 gerçek hedefi ve 43 soru/215 seçenek gerekçesi bağımsız incelendi. Gerçek temel sürümden eski 6.077 soru/528 set/494 rehber-özet/493 çalışma başlığı ve sekiz resmî konu bağlantısı aynen karşılaştırıldı. Eski 64 fixture ve 15 smoke modülü değişmedi; sayı/versiyon beklentileri yalnız eklenen kayıtlar için güncellendi. Kanonik PDF statü/sayacı bu adayda değiştirilmedi.
+
+43 yanıt gerçek UI'de yardımsız doğru kaydedildi; konu otomatik tamamlanmadı. 2021 TYT Matematik 5 bağlantısı, yıl filtresi, resmî C/sayfa 27/45 ve çevrimdışı ilk kez açılan üç adımlı özgün çözüm geçti. Kaynak bağlantısının gerçek tıklaması zararsız yerel yanıtla sınandı; gerçek resmî kaynak sayfası incelemesi ayrı kanıttır. Otomatik yanıtlar anahtarı görünen regresyondur, kör öğrenme etkinliği kanıtı değildir. Sınırlı axe kapsamı tam erişilebilirlik sertifikası sayılmaz.
+
+Normal hareket açıkken yerleşmiş 390 px menü, gerçek geçişlerin bitişi ve iki animasyon karesi sonrasında ölçüldü. Görünür dış alan ve Escape kapanışı, inert/aria durumu, odak dönüşü ve ayar alanı erişimi geçti; taşma yoktur. İlk gözlem çekmecenin arkasındaki header düğmesine tıklamaya çalıştığı için FAIL verdi ve korundu; ürün/CSS bu gözlem için değiştirilmedi. Masaüstü kaynak devretme testinin ilk hero-gate zaman aşımı ve kesinleşmemiş nedeni de korunur. Son yeni profilde altı gerçek normal bağlantı adımı geçti. Bu kabuller tek bir bütün native108 C3 turu diye birleştirilmez.
+
+Gizlilikte bütün değişiklikler 9.199 bilinen özel kimlik ve 8.845 özel URL ile karşılaştırılır. Eğitim kaynağı/özel veri eşleşmesi yoktur. Politika testindeki üç açıkça sentetik Drive adresinin genel biçim uyarısı ayrı ve exact satır/hash ile açıklanır; ham uyarı korunur, asıl kimlik/URL taraması gevşetilmez. Ham PDF, özel anahtar veya kişisel çalışma verisi depoya eklenmez.
+
+---
+
+## Önceki kabul kayıtları
+
 # 0.20.0 geliştirme adayının kabul kaydı: 17 Kasım 2026
 
 Yerel aday dalı `forge/source-transfer-032`, taban `52f87bf94f26a14a5fea16d597920f4fd72e8971`. Son doğrulanmış yayın 0.19.0’dır. Bu kayıttaki C3 üretim derlemesi normal ve `/yksmania/` alt dizini için ayrı sabitlenmiştir. Uygulama kaynağı ile Android paket yapılandırmasının sonraki değişiklikleri kendi kabulünü gerektirir; eski PASS yeni pakete otomatik taşınmaz.

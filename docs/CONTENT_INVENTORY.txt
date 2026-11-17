@@ -1,12 +1,12 @@
-﻿YKSMania 0.20.0 — Sayısal konu kapsamı
+﻿YKSMania 0.21.0 — Sayısal konu kapsamı
 
-CSV, uygulamadaki 494 ayrıntılı rehberi gösterir. İlk 479 başlık Excel’in özgün sırasını ve kimliklerini korur. Sonradan eklenen 14 çalışma başlığı, ayrı kimliklerle 480–493 sırasındadır. Plan dışında kalan rehberlerin öğrenme sırası hücresi boş bırakılmıştır.
+CSV, uygulamadaki 495 ayrıntılı rehberi gösterir. İlk 479 başlık Excel’in özgün sırasını ve kimliklerini korur. Sonradan eklenen 15 çalışma başlığı, ayrı kimliklerle 480–494 sırasındadır. Plan dışında kalan rehberlerin öğrenme sırası hücresi boş bırakılmıştır.
 
-34 ek soru seti, aynı konuya ait doğrulanmış bağıyla ilgili rehberin sayısına eklenmiştir. Her soru yalnız bir kez sayılır. Toplam 6077 özgün soru vardır: 3437 ayrıntılı, 2640 kısmi yardım. Eski kısmi yardım kartları da bu sayıma dahildir; her rehberin güncel yardım sayıları CSV’de ayrı gösterilir.
+34 ek soru seti, aynı konuya ait doğrulanmış bağıyla ilgili rehberin sayısına eklenmiştir. Her soru yalnız bir kez sayılır. Toplam 6120 özgün soru vardır: 3480 ayrıntılı, 2640 kısmi yardım. Eski kısmi yardım kartları da bu sayıma dahildir; her rehberin güncel yardım sayıları CSV’de ayrı gösterilir.
 
 “Ayrıntılı Yardım”, uygulamanın tam çözüm rehberini bulabildiği soruları; “Kısmi Yardım”, daha sınırlı ipucu ve açıklamayla kalan soruları sayar. Sayılar öğrenci başarısı veya içerik kalitesi ölçüsü değildir. Bölüm, örnek ve hatırlama sayıları yapısal sayımlardır. Tahmini dakika bir planlama tahminidir.
 
 Bu döküm bütün MEB alt kazanımlarının veya Drive PDF arşivinin tamamlandığını göstermez. PDF kaynak kullanımı ve bütün bir PDF’nin eksiksiz aktarımı ayrı takip edilir. Video bağlantıları da öğrenme başarısı sayılmaz.
 
 Yeniden üretim: node scripts/export-content-inventory.mjs
-Kodlama: UTF-8 BOM. Ayırıcı: noktalı virgül (;). Başlık satırından sonra 494 veri satırı vardır. Formül olarak yorumlanabilecek metinler apostrofla korunur.
+Kodlama: UTF-8 BOM. Ayırıcı: noktalı virgül (;). Başlık satırından sonra 495 veri satırı vardır. Formül olarak yorumlanabilecek metinler apostrofla korunur.

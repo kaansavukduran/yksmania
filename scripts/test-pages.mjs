@@ -1,4 +1,8 @@
 import {
+  forge033SmokeCases,
+  runForge033SmokeCase,
+} from "./forge033-smoke-cases.mjs";
+import {
   forge032SmokeCases,
   runForge032SmokeCase,
 } from "./forge032-smoke-cases.mjs";
@@ -551,14 +555,21 @@ try {
     cases.push(unit.id);
   }
 
+  expect(forge033SmokeCases).toHaveLength(1);
+  const forge033Snapshots = [];
+  for (const unit of forge033SmokeCases) {
+    forge033Snapshots.push(await runForge033SmokeCase(page, nav, unit));
+    cases.push(unit.id);
+  }
+
   expect(forge026SmokeCases).toHaveLength(8);
   const forge026Snapshots = [];
   for (const unit of forge026SmokeCases) {
     forge026Snapshots.push(await runForge026SmokeCase(page, nav, unit));
     cases.push(unit.id);
   }
-  expect(cases).toHaveLength(107);
-  expect(new Set(cases).size).toBe(107);
+  expect(cases).toHaveLength(108);
+  expect(new Set(cases).size).toBe(108);
   await page.getByRole("button", { name: "Sorulara geç", exact: true }).click();
   await expect(page.locator(".answer")).toHaveCount(5);
   await page.locator(".answer").first().click();
@@ -820,6 +831,11 @@ try {
     ),
     forge032ExplorationWithoutLearningCredit: "PASS",
     forge032NotesOfflineReload: "PASS",
+    forge033FamiliesOfflineHtmlStateAndReload: forge033Snapshots.map(
+      (item) => item.id,
+    ),
+    forge033ExplorationWithoutLearningCredit: "PASS",
+    forge033NotesOfflineReload: "PASS",
     questionFeedbackReload: "PASS",
     foundationQuestionRoutesOfflineReload: foundationRouteCases,
     navigation: "theory/cheatsheets/questions/exams/settings",

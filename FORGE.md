@@ -1,3 +1,15 @@
+# 0.21.0 geliştirme adayı: Forge033
+
+Faktöriyel kaynağının 15 sayfasından 20 bölüm, 16 çözümlü örnek, 12 hatırlama, altı hesaplamaya bağlı interaktif model, sekiz bölümlü ayrı özet ve 43 tam yardımlı özgün soru uygulamaya işlendi. Toplam 495 rehber/özet, 494 çalışma başlığı ve 6.120 soru vardır: 3.480 tam, 2.640 kısmi yardım. Eski 6.077 sorunun tüm verisi/anahtarları ve eski içerik/sıra aynen korunur. Kaynak 81 ayrı öğretim maddesi ve 199 gerçek uygulama konumuyla özel defterde izlenir; kanonik PDF kapanışı henüz değiştirilmedi.
+
+Son yerel kabul: TypeScript, 1.907/1.907 birim, son C3 hedef 4/4 gerçek UI ve yerel `/yksmania/` 108/108 çevrimdışı model akışı PASS. Masaüstündeki kaynak bağlantısı onarımı 55 politika testi ve gerçek kaynak Electron'da altı normal bağlantı/süreç yeniden açılışıyla sınandı. İlk yanlış hedefli menü gözlemi ve hero-gate test hatası korunur. [Forge033 kaydı](docs/FORGE033.md) kaynak/yerel/paket/yayın kapsamlarını ayırır.
+
+Bu dal taban 0.20.0'dan hazırlanmış bir adaydır; **0.21.0 için main, tam uzak CI, yayın veya yeni APK kabulü yoktur.** Son doğrulanmış yayın 0.20.0'dır. Önceki geliştirme ve yayın notları aşağıda tarihsel olarak korunur.
+
+---
+
+## Önceki geliştirme kayıtları
+
 # 0.20.0 geliştirme adayı: Forge032
 
 Sekiz yeni interaktif ünite, 46 çözümlü örnek ve 134 tam yardımlı soru eklendi. Toplam 494 ayrıntılı rehber, 494 kopya kağıdı, 493 çalışma başlığı ve 6.077 özgün soru vardır; 3.437 tam / 2.640 kısmi yardım ayrı izlenir. [Güncel Forge032 kaydı](docs/FORGE032.md), [QA](docs/QA.md) ve [PDF ilerlemesi](docs/PDF_SOURCE_PROGRESS032.md) kaynak ile teknik kabulü ayırır.
