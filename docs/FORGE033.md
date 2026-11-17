@@ -1,3 +1,23 @@
+# Forge033: 0.21.0’ın güncel kabul durumu
+
+17 Kasım 2026. Kaynak `197dc1b31c0a45ad03a3782106665591cc0c32fc` main’dedir; önceki aday kaydı aşağıda tarihsel olarak korunur. [CI](https://github.com/kaansavukduran/yksmania/actions/runs/44086453423) ve [Windows/Linux yayını](https://github.com/kaansavukduran/yksmania/releases/tag/v0.21.0-alpha.1) başarılıdır. 1.907/1.907 birim, dört shard’da 1.269/1.269 tarayıcı testi (345 + 290 + 317 + 317), atlama/flaky/retry sıfır; gerçek paketli Windows/Linux 108’er çevrimdışı akış geçti. İlk `cc589984` CI turundaki 1.265 geçen / 4 metadata beklentisi hatası korunur; yalnız üç E2E dosyasında sürüm ve kalan konu sayısı düzeltildi. Ürün, eski davranış testleri ve test kapsamı azaltılmadı.
+
+Gerçek yayımlanan AppImage indirilip hash ve arşiv karşılaştırmasından sonra kendi binary’siyle bu Linux VM’de 108 akış, aynı profil yeniden açılışı, not/kayıt korunumu ve altı normal eğitim bağlantısı etkinleştirmesini geçti; renderer hatası sıfırdır. Yalnız OS devretme çağrısı recorder ile gözlendi. Fiziksel dış tarayıcı/video, temiz kurulum, Windows portable taşıma ve native iki sürüm kurulumu denenmedi. F032-DESKTOP-EXTERNAL-001, yayımlanan 0.21 AppImage kapsamındaki altı dispatch kabulüyle giderildi; eski 0.20 indirmeleri değişmedi.
+
+**Pages doğrulandı:** [aynı kaynaklı otomatik işin ikinci denemesi](https://github.com/kaansavukduran/yksmania/actions/runs/44091144353/attempts/2), yayımlanan 0.21 üzerinde 108 farklı çevrimdışı model akışını, soru geri bildirimini, notları ve reload ile kayıt korunumunu geçti; renderer ve eksik istek hatası yoktur. Önceden başarılı build/deploy adımları tekrar çalıştırılmadı. [Süre sınırı ve adım kayıtları eklenmiş ayrı doğrulama](https://github.com/kaansavukduran/yksmania/actions/runs/44120954459) da aynı 108 akışı geçti. Bu ayrı dalın üretim girdileri yayın kaynağı `197dc1b` ile aynıdır; yeniden dağıtım ve TLS atlatma yapılmadı. İlk otomatik deneme sonuç üretmeyince iptal edilmişti; iptal geçmişi korunur, takılmanın gerçek nedeni bilinmiyor.
+
+Gerçek yayın dosyaları yeniden okundu: 293 dosya / 27.716.294 byte, normal TLS doğrulaması ve tekrar denemeden her dosya hash’i eşleşti. Önceki yeni denemede bir HTTP503 hatası kaydedildi; bu geçici ağ yanıtı iptal edilen işin nedeni diye kabul edilmedi. HTTP dosya kabulü, tarayıcı/offline akış kabulünden ayrıdır. Normal üretim derlemesinin bütün 293 dosyası 27.716.486 byte; 283 gerekli çevrimdışı varlık alt kümesi 27.599.419 byte’tır. Prefix derlemenin bütün 293 dosyası 27.716.294 byte; gerekli 283 varlık alt kümesi 27.599.227 byte’tır.
+
+[Kişisel Android test APK’sı](https://github.com/kaansavukduran/yksmania/actions/runs/44082360745/artifacts/14328077495) 19.212.294 byte, SHA-256 `8d6c04a7d4c6116294c73830a12a681739f7b4362a7d8d5f7cf2753519aa1792`. Kimlik `com.fragaria.yksmania.test`, ad YKSMania Deneme, sürüm `0.21.0-test`, kod 31. Gerçek v2 test imzası/paket/launcher yapısı ve 293 uygulama dosyası doğrulandı; iki ek Cordova dosyası boştur. APK kaynağı `cc589984584b95b8274c22942b15f0decdec1d9b` ile yayın kaynağı arasında yalnız üç E2E dosyası farkı bulunur; üretim girdileri aynıdır. Önceki test APK sertifikası farklı olduğu için yerinde güncelleme kabulü yoktur. Fiziksel kurulum/ilk açılış denenmedi; ana uygulamanın kimlik/imza akışı değişmedi, secret istenmedi ve APK genel Release’e eklenmedi.
+
+Güncel PDF defteri **8.981 / 3 tam / 6 kısmi / 8.972 belirsiz** biçimindedir. Faktöriyel’in bütün güncel 15 sayfası, 81 ayrı öğretim maddesi ve 199 gerçek uygulama bağı bağımsız kaynak/gerçek UI kabulünden sonra ayrı korumalı işlemle kapatıldı. Sonraki metaveri taraması önceki 8.936 satırı koruyup yalnız 45 belirsiz kimlik ekledi; okuma veya kapanış kredisi üretmedi. [Güncel PDF raporu](PDF_SOURCE_PROGRESS033.md) bu ayrımı ve gerçek kalan kaynakları açıklar.
+
+Gerçek yerel 0.20 → 0.21 web güncellemesinde üç IndexedDB deposu, kayıt anahtarları, notlar, Matrix/Lexend, özel hedef tarih, soru taslağı, 40 cevaplı deneme/bayraklar ve özgün 3/7/21 tarihleri korundu; otomatik kayıt yazımı sıfırdı. Yeni altı model ilk kez çevrimdışı açıldı. Bu gerçek web yükseltmesidir; fiziksel Android veya iki native kurulum testi değildir.
+
+---
+
+## Yayından önceki aday incelemesi — tarihsel kayıt
+
 # Forge033: faktöriyel öğretimi — 0.21.0 geliştirme adayı
 
 Bu kayıt yalnız `forge/source-transfer-033` dalındaki adayı anlatır. Taban kaynak `387fc3ea7f43e39d64e0c1e5f062372969a0ebeb` üzerindeki 0.20.0'dır. Aday henüz main'e alınmadı; 0.21.0 için uzak CI, yayımlanmış web veya dağıtılmış paket kabulü yoktur.
@@ -29,7 +49,7 @@ Faktöriyel video önerileri aynı konuya ait mevcut kaynak satırına bağlanı
 
 ## Yerel kabul ve kalan kapılar
 
-İlk C1 tam birim turu 207 dosyada 1.850/1.850, masaüstü bağlantı onarımından önceki C3 tam turu 208 dosyada 1.852/1.852 geçti. Son kaynakta, aşağıdaki 55 masaüstü politika testi dahil **209 dosyada 1.907/1.907 PASS**, 233,15 saniyedir. TypeScript/367 modül yolu denetimi ve altı dosyadaki 20 hedef birim testi de geçti. Normal C3 üretim derlemesi 293 dosya, 283 gerekli çevrimdışı varlık ve 27.599.419 byte içerir; en büyük dosya 4.270.270 byte ile 5 MiB sınırının altındadır. `/yksmania/` derlemesi de 293 dosya/283 gerekli varlık ve 27.599.227 byte ile geçti; en büyük dosya 4.269.534 byte'tır.
+İlk C1 tam birim turu 207 dosyada 1.850/1.850, masaüstü bağlantı onarımından önceki C3 tam turu 208 dosyada 1.852/1.852 geçti. Son kaynakta, aşağıdaki 55 masaüstü politika testi dahil **209 dosyada 1.907/1.907 PASS**, 233,15 saniyedir. TypeScript/367 modül yolu denetimi ve altı dosyadaki 20 hedef birim testi de geçti. Normal C3 üretim derlemesinin bütün 293 dosyası 27.716.486 byte; 283 gerekli çevrimdışı varlık alt kümesi 27.599.419 byte’tır. En büyük dosya 4.270.270 byte ile 5 MiB sınırının altındadır. `/yksmania/` derlemesinin bütün 293 dosyası 27.716.294 byte; 283 gerekli varlık alt kümesi 27.599.227 byte’tır. En büyük dosya 4.269.534 byte’tır.
 
 C2'nin ardından son C3 hedef tarayıcı turu tek koşuda 4/4 PASS, 34,61 saniye; atlanan, başarısız veya flaky vaka yoktur. Normal koyu masaüstü ve 320 px Matrix/Lexend arayüz yüzde 200/yazı yüzde 150; altı modelin gerçek değerleri, en az 44 px dokunma alanları, sınırlı axe denetimi, notlar ve çevrimdışı yeniden açılış sınandı. Gerçek metin ölçüleri masaüstünde 15 px, dar profilde 45 px Lexend'dir; taşma yoktur. Uzun locator PNG'sindeki skip-link, gerçek odaksız DOM'da ekran üstündedir; Tab → Enter ana içeriğe geçer. Bu görüntü artefaktı için global stil değiştirilmedi.
 

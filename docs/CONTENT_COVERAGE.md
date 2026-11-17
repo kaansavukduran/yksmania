@@ -1,3 +1,32 @@
+# 0.21.0’ın ölçülen uygulama kapsamı
+
+| Ölçüm | Kayıtlı kapsam |
+| --- | ---: |
+| Ders/soru seti | 529 |
+| Anlatım rehberi / ayrı kopya kağıdı | 495 / 495 |
+| Sıralı çalışma başlığı | 494; ilk 479 + ayrı kimlikli 15 ek başlık |
+| Özgün soru | 6.120 |
+| Tam kademeli / kısmi yardım | 3.480 / 2.640 |
+| Bu tur eklenen ünite / soru | 1 / 43 |
+| Bu tur bölüm / örnek / hatırlama | 20 / 16 / 12 |
+| Bu tur interaktif model / özet bölümü | 6 / 8 |
+| Doğrudan geometri rehberi | 19; 15 TYT + 4 AYT |
+| Deneme biçimleri | TYT 120/165 dk; AYT Sayısal 80/180 dk; 15 branş |
+
+Yeni Faktöriyel ünitesi, önceki 6.077 soru, 528 set, 494 rehber/özet ve 493 çalışma başlığını korur. İlk 479 kimliğin ve Excel sırasının değişmediği ayrıca sınandı. Rehber/set/başlık/katalog farklı ölçülerdir; 495 rehber kaydı bütün MEB alt kazanımlarının tamamlandığını göstermez. [Gerçek koleksiyon CSV’si](CONTENT_INVENTORY.csv) ve [açıklaması](CONTENT_INVENTORY.txt) bu ayrımı korur.
+
+[PDF raporu](PDF_SOURCE_PROGRESS033.md): 8.981 güncel PDF’de **3 tam / 6 kısmi / 8.972 belirsiz**. 40 dosyada uygulama bağı ve 154 dosyada okuma kaydı ayrı ölçülerdir. Son 45 metaveri eki yeni öğretim/kapanış sayılmaz; belirsiz hiç işlenmemiş sayılmaz. Bütün MEB/OGM/MEBİ alt kazanımları ve resmî ÖSYM arşivi tamamlanmadı.
+
+[CI](https://github.com/kaansavukduran/yksmania/actions/runs/44086453423) 1.907 birim / 1.269 tarayıcı, gerçek paketli Windows/Linux 108’er model akışı; [masaüstü yayını](https://github.com/kaansavukduran/yksmania/releases/tag/v0.21.0-alpha.1) kaynak/etiket/dosyalar ve gerçek indirilmiş AppImage 108 + altı normal dış bağlantı devretmesiyle kabul edildi. 293 yayın dosyası normal TLS ile eşleşti. Bu teknik sonuçlar öğrenme etkinliği veya sınav başarısı araştırması değildir.
+
+**Pages doğrulandı:** [aynı kaynaklı otomatik işin ikinci denemesi](https://github.com/kaansavukduran/yksmania/actions/runs/44091144353/attempts/2), yayımlanan 0.21 üzerinde 108 farklı çevrimdışı model akışını, soru geri bildirimini, notları ve reload ile kayıt korunumunu geçti; renderer ve eksik istek hatası yoktur. Önceden başarılı build/deploy adımları tekrar çalıştırılmadı. [Süre sınırı ve adım kayıtları eklenmiş ayrı doğrulama](https://github.com/kaansavukduran/yksmania/actions/runs/44120954459) da aynı 108 akışı geçti. Bu ayrı dalın üretim girdileri yayın kaynağı `197dc1b` ile aynıdır; yeniden dağıtım ve TLS atlatma yapılmadı. İlk otomatik deneme sonuç üretmeyince iptal edilmişti; iptal geçmişi korunur, takılmanın gerçek nedeni bilinmiyor.
+
+Kişisel Android APK’sı hazır, imza/yapı/293 dosya kabulü var; fiziksel kurulum yok. Öğrenci PDF/kaynak yüklemez; kendi ilerleme yedeği kaynak yüklemeden ayrıdır. Keşif, süre ve manuel onay ustalık veya XP üretmez. Ayrıntılar [Forge033](FORGE033.md) ve [QA](QA.md) içindedir.
+
+---
+
+## Aşağıdaki kapsam kayıtları tarihsel sürümlere aittir
+
 # 0.20.0 yayınının ölçülen kapsamı
 
 | Ölçüm | Yayımlanan kapsam |

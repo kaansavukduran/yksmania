@@ -1,3 +1,23 @@
+# 0.21.0 — kaynak, masaüstü, Pages ve kişisel APK kabulü
+
+17 Kasım 2026. Yayın kaynağı `197dc1b31c0a45ad03a3782106665591cc0c32fc`. [Tam CI](https://github.com/kaansavukduran/yksmania/actions/runs/44086453423) 1.907 birim / 1.269 tarayıcı ve gerçek paketli Windows/Linux 108’er akışla başarılıdır. [0.21 masaüstü yayını](https://github.com/kaansavukduran/yksmania/releases/tag/v0.21.0-alpha.1), kaynak etiketi ve dosya özetleriyle doğrulandı. Gerçek indirilmiş AppImage 108 çevrimdışı akış, aynı profilde süreç yeniden açılışı ve altı normal dış bağlantı etkinleştirmesini geçti. Fiziksel video/tarayıcı, temiz kurulum ve native iki sürüm kurulumu kabulü değildir.
+
+Faktöriyel: 20 bölüm, 16 örnek, 12 hatırlama, 43 tam yardımlı soru, altı model ve ayrı sekiz bölümlük özet. Toplam 529 set / 495 rehber / 495 özet / 494 çalışma başlığı / 6.120 soru = 3.480 tam + 2.640 kısmi yardım. Eski 6.077 soru ve bütün eski kimlik/sıra/ayar/not/taslak/tekrar tarihleri korunur. Güncel Faktöriyel PDF’sinin 81 öğretim maddesi 199 gerçek uygulama konumuyla ve bağımsız kabulüyle eşleştirildi; kapanışı korumalı defter işlemine alındı.
+
+[PDF raporu](docs/PDF_SOURCE_PROGRESS033.md): **8.981 PDF / 3 tam / 6 kısmi / 8.972 belirsiz**. Son 45 dosya yalnız metaveri ekidir; okuma/tamamlama değildir. Belirsiz hiç işlenmemiş sayılmaz. Önceki kaynak sürümleri ve karar geçmişi korunur.
+
+**Pages doğrulandı:** [aynı kaynaklı otomatik işin ikinci denemesi](https://github.com/kaansavukduran/yksmania/actions/runs/44091144353/attempts/2), yayımlanan 0.21 üzerinde 108 farklı çevrimdışı model akışını, soru geri bildirimini, notları ve reload ile kayıt korunumunu geçti; renderer ve eksik istek hatası yoktur. Önceden başarılı build/deploy adımları tekrar çalıştırılmadı. [Süre sınırı ve adım kayıtları eklenmiş ayrı doğrulama](https://github.com/kaansavukduran/yksmania/actions/runs/44120954459) da aynı 108 akışı geçti. Bu ayrı dalın üretim girdileri yayın kaynağı `197dc1b` ile aynıdır; yeniden dağıtım ve TLS atlatma yapılmadı. İlk otomatik deneme sonuç üretmeyince iptal edilmişti; iptal geçmişi korunur, takılmanın gerçek nedeni bilinmiyor.
+
+Yayındaki 293 dosya normal TLS ile sabit üretim dosyalarına eşleşti. İptal edilmiş son adımın geçmişi korunur; bu byte denetimi bütün canlı 108 akışın kabulü değildir. Main, mevcut CI/yayın ve iki canlı doğrulama boyunca aynı kaynakta tutuldu. İkinci otomatik denemenin gerçek sonucu, yayımlanan 108 akışın artifact’ı ile ayrıca doğrulandı.
+
+[Kişisel APK](https://github.com/kaansavukduran/yksmania/actions/runs/44082360745/artifacts/14328077495): 19.212.294 byte, `0.21.0-test` / kod 31, ayrı `com.fragaria.yksmania.test`, otomatik debug imzalı. APK kaynağı `cc589984` ile yayın `197dc1b` arasında yalnız üç E2E dosyası değişmiştir; üretim girdileri ve APK’nin 293 web dosyası aynı kabul edilmiş C3’le eşleşir. Ayrıca iki boş Capacitor/Cordova dosyası vardır. Fiziksel kurulum denenmedi; APK genel yayına eklenmedi. Önceki test sürümünün debug sertifikası farklıdır; kaldırmadan önce yedek al.
+
+Sıradaki özel EBOB–EKOK adayı: 85 kaynak maddesi, 283 öneri bağı, 29 bölüm, 24 örnek, 18 hatırlama, 46 açıklamalı soru, 12 özet bölümü ve yedi model. Bağımsız özel öneri kabulü, gerçek uygulama kaydı/tarayıcı/paket/yayın veya yeni tam PDF kararı değildir. Rasyonel sayılar özel hazırlığı da sürmektedir. Öğrenciye PDF yükleme işi bırakılmaz; başka PDF üretim otomasyonu değiştirilmez.
+
+---
+
+## Aşağıdaki kayıtlar tarihsel: önceki aday ve 0.20 yayını
+
 # 0.21.0 geliştirme adayı: Forge033
 
 Faktöriyel kaynağının 15 sayfasından 20 bölüm, 16 çözümlü örnek, 12 hatırlama, altı hesaplamaya bağlı interaktif model, sekiz bölümlü ayrı özet ve 43 tam yardımlı özgün soru uygulamaya işlendi. Toplam 495 rehber/özet, 494 çalışma başlığı ve 6.120 soru vardır: 3.480 tam, 2.640 kısmi yardım. Eski 6.077 sorunun tüm verisi/anahtarları ve eski içerik/sıra aynen korunur. Kaynak 81 ayrı öğretim maddesi ve 199 gerçek uygulama konumuyla özel defterde izlenir; kanonik PDF kapanışı henüz değiştirilmedi.
