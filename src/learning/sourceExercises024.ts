@@ -1,4 +1,5 @@
 import { txt, type Lesson } from "../domain/model";
+import type { QuestionGuidance } from "../domain/questionHelpModel";
 import type {
   SourceMathNode,
   SourceQuestionFigureSpec,
@@ -10,6 +11,7 @@ import question03 from "./sourceExerciseAssets024/ogm-uslu-ifadeler-soru-03.png"
 import question04 from "./sourceExerciseAssets024/ogm-uslu-ifadeler-soru-04.png";
 import question05 from "./sourceExerciseAssets024/ogm-uslu-ifadeler-soru-05.png";
 import question06 from "./sourceExerciseAssets024/ogm-uslu-ifadeler-soru-06.png";
+import { extraOriginalSourceExercises024 } from "./extraOriginalSourceExercises024";
 
 export interface SourceAttribution {
   shortLabel: string;
@@ -32,6 +34,7 @@ export interface OriginalSourceExercise {
   hintFigure?: SourceQuestionFigureSpec;
   explanationFigure?: SourceQuestionFigureSpec;
   scoredLessonId?: string;
+  sourceContext?: string;
 }
 export const originalOgmLesson024Id =
   "tyt-mat-uslu-ifadeler-ogm-kaynak-sorulari-024";
@@ -663,6 +666,7 @@ export const originalSourceExercises024 = [
   ...originalAbsoluteExercises024,
   ...originalPowersExercises024,
   ...originalOgmExercises024,
+  ...extraOriginalSourceExercises024,
 ];
 export function originalExercisesForLesson(lessonId: string) {
   return originalSourceExercises024.filter((q) => q.lessonId === lessonId);
@@ -714,7 +718,17 @@ type BoundQuestion = {
   answer: number;
   explanation?: string;
   hint?: string;
+  guidance?: QuestionGuidance;
 };
+const guidanceRevision = (g: QuestionGuidance) =>
+  JSON.stringify([
+    g.knowledge,
+    g.strategy,
+    g.steps,
+    g.optionReasons,
+    g.commonError,
+    g.check,
+  ]);
 // Bind the full original revision. A changed prompt/options/key in an old frozen
 // exam paper must never receive a different source figure through ID alone.
 export function sourceQuestionPresentation(question: BoundQuestion):
@@ -741,7 +755,10 @@ export function sourceQuestionPresentation(question: BoundQuestion):
   // explanation. Attach help visuals only to the matching help revision.
   const sameHelpRevision =
     question.explanation === current.explanation.tr &&
-    question.hint === current.hint.tr;
+    question.hint === current.hint.tr &&
+    question.guidance !== undefined &&
+    current.guidance !== undefined &&
+    guidanceRevision(question.guidance) === guidanceRevision(current.guidance);
   return {
     source: exercise.source,
     figure: exercise.figure,
