@@ -100,15 +100,18 @@ async function openFullHelp(
     const next = container.locator(".help-next");
     const previousLabel = await next.textContent();
     await next.click();
-    await expect.poll(async () =>
-      await container.locator(".help-full-solution").isVisible() ||
-      (await next.allTextContents()).join("") !== previousLabel
-    ).toBe(true);
+    await expect
+      .poll(
+        async () =>
+          (await container.locator(".help-full-solution").isVisible()) ||
+          (await next.allTextContents()).join("") !== previousLabel,
+      )
+      .toBe(true);
   }
   await expect(container.locator(".help-full-solution")).toBeVisible();
 }
 
-test("24 source-reader activities and 31 visible model choices remain unscored and keep offline selections", async ({
+test("46 source-reader activities and 31 visible model choices remain unscored and keep offline selections", async ({
   page,
   context,
 }, info) => {
@@ -173,12 +176,12 @@ test("24 source-reader activities and 31 visible model choices remain unscored a
     {
       id: "tyt-mat-mutlak-deger-kaynak-038",
       title: "Mutlak değer: uzaklık, koşul ve grafiğin mantığı",
-      count: 8,
+      count: 18,
     },
     {
       id: "tyt-mat-uslu-sayilar-kaynak-039",
       title: "Üslü sayılar: çarpan, koşul ve ölçeğin mantığı",
-      count: 16,
+      count: 28,
     },
   ]) {
     await enter(unit.id, unit.title);
@@ -207,7 +210,7 @@ test("24 source-reader activities and 31 visible model choices remain unscored a
       await expect(
         reader.locator(".original-source-solution .source-question-figure"),
       ).toBeVisible();
-      if (unit.count === 16 && i >= 10) {
+      if (unit.count === 28 && i >= 10 && i < 16) {
         const q = ogm[i - 10];
         await expect(reader.locator("article h3")).toHaveText(q.stem);
         await expect(reader.locator(".source-figure-open img")).toHaveAttribute(
@@ -218,9 +221,17 @@ test("24 source-reader activities and 31 visible model choices remain unscored a
           await reader.locator(".original-source-options li").allTextContents(),
         ).toEqual(q.options);
       }
+      if (unit.count === 28 && i >= 24) {
+        const context = reader.getByRole("region", {
+          name: "Kaynak bağlamı",
+          exact: true,
+        });
+        await expect(context).toContainText("İlk bozulan adım:");
+        await expect(context).toContainText("Yeni sınama:");
+      }
     }
     expect(learning(await stored(page))).toEqual(learning(before));
-    if (unit.count === 8) {
+    if (unit.count === 18) {
       const lab = page.locator("[data-forge038]");
       await lab
         .getByRole("group", { name: "Mutlak değer modeli", exact: true })
@@ -281,7 +292,7 @@ test("24 source-reader activities and 31 visible model choices remain unscored a
   expect(observed).toHaveLength(31);
   await info.attach("actual-source-reader-and-choices", {
     body: JSON.stringify({
-      sourceActivities: 24,
+      sourceActivities: 46,
       visibleChoiceActivations: 31,
       observed,
       noLearningEvidence: true,
@@ -466,7 +477,7 @@ test("source image zoom and retry are read-only, accessible at 320px/45px; actua
   // A missing local asset produces a real image load error. Retry restores the
   // source URL from the unchanged component props and never writes learning.
   await opener.locator("img").evaluate((node: HTMLImageElement) => {
-      node.src = new URL("missing-source-figure024.png", location.href).href;
+    node.src = new URL("missing-source-figure024.png", location.href).href;
   });
   await expect(
     page.locator(".question-panel .source-figure-fallback"),
@@ -561,6 +572,10 @@ test("explicit valid frozen exam fixture retains exact source images in runner/r
   };
   items[3] = withPassage;
   items[4].answer = 0;
+  items[5].guidance = {
+    ...items[5].guidance,
+    steps: ["Tarihsel kişisel adım; güncel yardım görseli bağlanmamalı."],
+  };
   const fixture = examDraftSchema.parse({
     id: "exam:source024-explicit-fixture",
     title: "Kaynak görseli · açık test fikstürü",
@@ -617,6 +632,14 @@ test("explicit valid frozen exam fixture retains exact source images in runner/r
       page.locator(".exam-question .source-figure-open"),
     ).toHaveCount(index === 0 || index === 5 ? 1 : 0);
   }
+  // Same original stem/image, but the preserved historical guidance is different.
+  await page.getByRole("button", { name: "İpucu al", exact: true }).click();
+  await expect(page.locator(".exam-question .source-figure-open")).toHaveCount(
+    1,
+  );
+  await expect(
+    page.locator(".exam-question .question-help .source-math-layout"),
+  ).toHaveCount(0);
   await page.getByRole("button", { name: "Soru 1, boş", exact: true }).click();
   await page.getByRole("button", { name: "İpucu al", exact: true }).click();
   await expect(
@@ -653,6 +676,13 @@ test("explicit valid frozen exam fixture retains exact source images in runner/r
   await expect(
     results.first().locator(".help-full-solution .source-math-layout"),
   ).toBeVisible();
+  await openFullHelp(page, results.nth(5).locator(".question-help"));
+  await expect(
+    results.nth(5).locator(".help-full-solution .source-math-layout"),
+  ).toHaveCount(0);
+  await expect(results.nth(5).locator(".question-help")).toContainText(
+    "Tarihsel kişisel adım",
+  );
   const saved = await stored(page);
   expect(saved.examSessions.at(-1)?.items).toEqual(fixture.items);
   expect(saved.sessions).toEqual(before.sessions);
@@ -665,6 +695,7 @@ test("explicit valid frozen exam fixture retains exact source images in runner/r
       setup: "VALID_EXPLICIT_FIXTURE_NOT_NORMAL_EXAM_GENERATION",
       exactImages: 2,
       changedRevisionsWithoutWrongOverlay: 4,
+      changedGuidancePreservesQuestionImageWithoutCurrentHelpImages: true,
       itemsPreserved: true,
       helpLevels: saved.examSessions.at(-1)?.helpLevels,
       noLearningEvidence: true,

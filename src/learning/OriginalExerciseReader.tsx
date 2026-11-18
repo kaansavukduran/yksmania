@@ -67,6 +67,15 @@ export function OriginalExerciseReader({
           {question.source.itemLabel}
         </p>
         <h3 id={`${uid}-prompt`}>{question.prompt}</h3>
+        {question.sourceContext && (
+          <section
+            className="original-source-context"
+            aria-label="Kaynak bağlamı"
+          >
+            <h4>Kaynak bağlamı</h4>
+            <p>{question.sourceContext}</p>
+          </section>
+        )}
         {question.figure && <SourceQuestionFigure figure={question.figure} />}
         {!!question.options.length && (
           <ol className="original-source-options" type="A">

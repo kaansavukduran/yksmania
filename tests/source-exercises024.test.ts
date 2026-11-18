@@ -3,6 +3,7 @@ import { lessonById, lessons } from "../src/domain/content";
 import { lessonTopic, studyTopics } from "../src/domain/studyPlan";
 import { questionContentIssues } from "../src/domain/questionContent";
 import { questionGuidanceSchema } from "../src/domain/questionHelpModel";
+import { extraOriginalSourceExercises024 } from "../src/learning/extraOriginalSourceExercises024";
 import {
   originalAbsoluteExercises024,
   originalPowersExercises024,
@@ -15,6 +16,56 @@ import {
 } from "../src/learning/sourceExercises024";
 
 describe("asıl kaynak soruları ile özgün pekiştirme ayrı kalır", () => {
+  it("22 ek kaynak örneğini mevcut24 kaydın ardından ve eski seçim indekslerini koruyarak ekler", () => {
+    expect(extraOriginalSourceExercises024).toHaveLength(22);
+    expect(originalSourceExercises024.slice(0, 24)).toEqual([
+      ...originalAbsoluteExercises024,
+      ...originalPowersExercises024,
+      ...originalOgmExercises024,
+    ]);
+    expect(extraOriginalSourceExercises024.map((q) => q.prompt)).toEqual([
+      "|2x+1|=7 denklemini çöz.",
+      "|3x-2|<7 eşitsizliğini çöz.",
+      "|2x-1|≥5 eşitsizliğini çöz.",
+      "|4x-3|≤9 için önce ____≤4x-3≤____ yaz. Sonra her tarafa 3 ekle ve 4'e böl.",
+      "|x-2|+|x+1| ifadesinin en küçük değeri ve bu değeri aldığı x kümesi nedir?",
+      "||x|-3|=1 denklemini çöz.",
+      "y=|x-2|-1 grafiğinin tepe noktası ve kökleri?",
+      "|x-2|=m-1 denkleminin çözüm sayısı m'ye göre nedir?",
+      "|x-1|+|x-4|=5 denklemini çöz.",
+      "|x-1|=|2x+3| denklemini çöz.",
+      "(4^3·8^2)/2^5 işlemini hesapla.",
+      "8^(x-1)=4^(x+2) denklemini çöz.",
+      "5^(n+3)-2·5^(n+2) ifadesini sadeleştir.",
+      "(9^2·27)/(3^4) için 9=3^__ ve 27=3^__. Üstteki toplam üs __ olur; paydadaki 4 çıkarılır.",
+      "(6×10^7)(4×10^-3) sonucunu bilimsel gösterimle yaz.",
+      "2^18 ile 8^6'yı karşılaştır.",
+      "(1/3)^4 ile (1/3)^7'den hangisi büyüktür?",
+      "Başlangıçta 200 birim olan bir miktar her adımda iki katına çıkıyor. 6 adım sonraki miktar?",
+      "3^2+3^3=?",
+      "(5^2)^3=?",
+      "5^-2=?",
+      "0,0009=?",
+    ]);
+    for (const q of extraOriginalSourceExercises024) {
+      expect(q.options).toEqual([]);
+      expect(q.scoredLessonId).toBeUndefined();
+      expect(q.steps.length).toBeGreaterThanOrEqual(3);
+      expect(q.figure).toBeDefined();
+      expect(q.explanationFigure).toBeDefined();
+    }
+    expect(
+      extraOriginalSourceExercises024
+        .filter((q) => q.sourceContext)
+        .map((q) => q.sourceContext),
+    ).toEqual([
+      "İlk bozulan adım: 2^3+2^4=2^7\nNeden yanlış?: Toplam, aynı taban çarpımı değildir.\nHedefli düzeltme: 2^3(1+2)\nYeni sınama: 3^2+3^3=?",
+      "İlk bozulan adım: (2^3)^4=2^7\nNeden yanlış?: Üssün üssünde çarpım gerekir.\nHedefli düzeltme: 3·4=12\nYeni sınama: (5^2)^3=?",
+      "İlk bozulan adım: 2^-3=-8\nNeden yanlış?: Negatif üs işaret değil ters çevirme.\nHedefli düzeltme: 1/2^3\nYeni sınama: 5^-2=?",
+      "İlk bozulan adım: 0,006=6×10^-2\nNeden yanlış?: Geri açınca 0,06 olur.\nHedefli düzeltme: 6×10^-3\nYeni sınama: 0,0009=?",
+    ]);
+    expect(new Set(originalSourceExercises024.map((q) => q.id)).size).toBe(46);
+  });
   it("korunan sekiz açık uçlu mutlak değer sorusuna yeni kaynak şıkkı uydurmaz", () => {
     expect(originalAbsoluteExercises024.map((q) => q.prompt)).toEqual([
       "|3x-4|=8 denklemini çöz.",
@@ -108,13 +159,13 @@ describe("asıl kaynak soruları ile özgün pekiştirme ayrı kalır", () => {
     expect(
       new Set(lessons.flatMap((l) => l.questions.map((q) => q.id))).size,
     ).toBe(lessons.flatMap((l) => l.questions).length);
-    expect(originalSourceExercises024).toHaveLength(24);
+    expect(originalSourceExercises024).toHaveLength(46);
     expect(
       originalExercisesForLesson("tyt-mat-mutlak-deger-kaynak-038"),
-    ).toHaveLength(8);
+    ).toHaveLength(18);
     expect(
       originalExercisesForLesson("tyt-mat-uslu-sayilar-kaynak-039"),
-    ).toHaveLength(16);
+    ).toHaveLength(28);
   });
   it("kimlik aynı kalsa bile farklı metin, şık, anahtar veya pasajlı eski denemeye yanlış şekil bağlamaz", () => {
     for (const q of lessonById(originalOgmLesson024Id)!.questions) {
@@ -153,6 +204,7 @@ describe("asıl kaynak soruları ile özgün pekiştirme ayrı kalır", () => {
         ...exact,
         explanation: q.explanation.tr,
         hint: q.hint.tr,
+        guidance: q.guidance,
       };
       expect(sourceQuestionPresentation(withHelp)?.hintFigure).toBeDefined();
       expect(
@@ -162,6 +214,18 @@ describe("asıl kaynak soruları ile özgün pekiştirme ayrı kalır", () => {
         { ...withHelp, explanation: "Tarihsel kişisel çözüm" },
         { ...withHelp, hint: "Tarihsel kişisel ipucu" },
         { ...withHelp, hint: undefined },
+        { ...withHelp, guidance: undefined },
+        ...[
+          { knowledge: ["Tarihsel bilgi"] },
+          { strategy: "Tarihsel yöntem" },
+          { steps: ["Tarihsel adım"] },
+          { optionReasons: q.options.map(() => "Tarihsel seçenek açıklaması") },
+          { commonError: "Tarihsel sık hata" },
+          { check: "Tarihsel sonuç denetimi" },
+        ].map((change) => ({
+          ...withHelp,
+          guidance: { ...q.guidance!, ...change },
+        })),
       ]) {
         expect(sourceQuestionPresentation(historical)?.figure).toBeDefined();
         expect(

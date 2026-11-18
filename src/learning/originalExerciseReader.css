@@ -69,6 +69,14 @@
 .original-source-solution {
   margin-block: 1.5rem;
 }
+.original-source-context {
+  margin-block: 1rem;
+  padding-inline-start: 1rem;
+  border-inline-start: 3px solid var(--border);
+}
+.original-source-context p {
+  white-space: pre-line;
+}
 .original-exercise-navigation {
   display: flex;
   flex-wrap: wrap;
