@@ -89,3 +89,19 @@
 .help-concept-figure .section-figure {
   margin: 0.4rem 0 0.6rem;
 }
+
+.help-tactic {
+  margin-top: 0.8rem;
+  padding-left: 0.9rem;
+  border-left: 3px solid var(--guidance, var(--accent));
+}
+.help-tactic h4 {
+  margin: 0 0 0.4rem;
+}
+.help-tactic ol {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+.help-tactic li + li {
+  margin-top: 0.25rem;
+}

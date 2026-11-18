@@ -97,3 +97,18 @@ describe("question hint figures", () => {
     expect(m?.title ?? "").toContain(title);
   });
 });
+
+import { questionTactics, tacticsFor } from "../src/learning/questionTactics";
+
+describe("question-type tactics", () => {
+  const all = lessons.flatMap((l) => l.questions.map((q) => ({ id: q.id, prompt: q.prompt.tr, passage: q.passage?.tr })));
+  it("every tactic fires on at least one real question", () => {
+    const fired = new Set(all.flatMap((q) => tacticsFor(q).map((t) => t.id)));
+    for (const t of questionTactics) expect(fired, t.id).toContain(t.id);
+  });
+  it("shows at most two tactics and only inside the tactic's topics", () => {
+    for (const q of all) expect(tacticsFor(q).length).toBeLessThanOrEqual(2);
+    const angle = all.find((q) => /A=48° ve B=67°dir/.test(q.prompt))!;
+    expect(tacticsFor(angle).map((t) => t.id)).toContain("aci-hesabi");
+  });
+});

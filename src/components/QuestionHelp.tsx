@@ -7,6 +7,7 @@ import { SourceQuestionFigure } from "../learning/SourceQuestionFigure";
 import { sourceQuestionPresentation } from "../learning/sourceExercises024";
 import { lazy, Suspense } from "react";
 import { hintFigureFor } from "../learning/sectionFigures/hintFigure";
+import { tacticsFor } from "../learning/questionTactics";
 const SectionFigure = lazy(() =>
   import("../learning/sectionFigures/registry").then((m) => ({ default: m.SectionFigure })),
 );
@@ -32,6 +33,7 @@ export function QuestionHelp({
   // The matching theory figure is shown with the first ("Bilmen gerekenler")
   // panel; it is omitted when the question already carries its own figure.
   const conceptFigure = sourcePresentation?.hintFigure ? undefined : hintFigureFor(question);
+  const tactics = tacticsFor(question);
   return (
     <div className="question-help">
       {level > 0 && (
@@ -43,6 +45,17 @@ export function QuestionHelp({
                 {panel.paragraphs.map((paragraph, i) => (
                   <p key={i}>{paragraph}</p>
                 ))}
+                {index === 0 &&
+                  tactics.map((tactic) => (
+                    <div className="help-tactic" key={tactic.id}>
+                      <h4>Bu soru tipine yaklaşım: {tactic.title}</h4>
+                      <ol>
+                        {tactic.steps.map((step, i) => (
+                          <li key={i}>{step}</li>
+                        ))}
+                      </ol>
+                    </div>
+                  ))}
                 {index === 0 && conceptFigure && (
                   <div className="help-concept-figure">
                     <p className="small muted">Konu anlatımından: {conceptFigure.title}</p>
