@@ -132,7 +132,7 @@ const temelAcilar: Record<string, FigureDef> = {
         els,
         readout: [
           `${a}° · ${name}`,
-          `Tam dönüşün ${fmt(a / 3.6, 1)}%'i`,
+          `Tam dönüşe oranı: %${fmt(a / 3.6, 1)}`,
         ],
       };
     },

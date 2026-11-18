@@ -14,4 +14,6 @@ export const sectionFigureGuideIds = new Set<string>([
   "tyt-geo-dik-prizmalar-032",
   "tyt-geo-piramitler-032",
   "tyt-geo-acilar-kaynak-pekitirme-032",
+  "alan-donusumleri",
+  "noktanin-analitigi",
 ]);
