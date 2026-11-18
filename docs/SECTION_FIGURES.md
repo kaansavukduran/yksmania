@@ -57,6 +57,13 @@ Sorunun ilk yardım paneli (“Bilmen gerekenler”) artık, sorunun konusunu an
 
 `koklu-sayilar` rehberinin 10 bölümüne şekil eklendi. Drive'daki OGM 9. sınıf “022 Köklü İfadeler” sunumunun öğretim maddeleri (kesirli üs olarak kök, çift/tek derecede xⁿ = a çözüm sayısı) okunup grafiklerle eşlendi; PDF içeriği depoya kopyalanmadı, kanonik PDF defteri değiştirilmedi.
 
+## Soru tipi taktikleri ve fizik mekaniği (son tur)
+
+- İlk yardım panelinde 23 özgün **“Bu soru tipine yaklaşım”** taktiği: yalnız sorunun kendi metni kalıba uyuyorsa ve soru o konuya aitse gösterilir; her taktiğin en az bir gerçek soruda tetiklendiği testle denetlenir. Resmî ÖSYM içeriği değildir.
+- TYT Fizik: doğrusal hareket (9), Newton (7), basınç (6), kaldırma kuvveti (7), elektrik akımı (6) figürleri. Paralel devre çiziminde bulunan kısa devre teli ve eksik dönüş teli düzeltildi.
+- Güncel toplam: **30 rehber, 314 bölüm, 271 bölüm figürü.**
+- Doğrulama: tam birim 2.304 test PASS; ipucu/soru/sınav akışlarını kapsayan 8 tarayıcı dosyasında 82/82 PASS.
+
 ## Doğrulama
 
 | Kontrol | Sonuç |
