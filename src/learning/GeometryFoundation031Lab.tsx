@@ -763,6 +763,24 @@ function RightTriangle() {
     B = plot(m.B),
     C = plot(m.C),
     H = plot(m.H);
+  // H can sit very close to B or C (e.g. AB = 2, AC = 12). Put its label
+  // outside the hypotenuse, away from A, and slide it along BC away from the
+  // nearer vertex so it never covers that vertex's label at large text sizes.
+  const hLabel = (() => {
+    const bcx = C.x - B.x,
+      bcy = C.y - B.y;
+    const len = Math.hypot(bcx, bcy) || 1;
+    let nx = -bcy / len,
+      ny = bcx / len;
+    if (nx * (A.x - H.x) + ny * (A.y - H.y) > 0) {
+      nx = -nx;
+      ny = -ny;
+    }
+    const nearB = Math.hypot(H.x - B.x, H.y - B.y) <= Math.hypot(H.x - C.x, H.y - C.y);
+    const ux = ((nearB ? 1 : -1) * bcx) / len,
+      uy = ((nearB ? 1 : -1) * bcy) / len;
+    return { dx: nx * 32 + ux * 34, dy: ny * 32 + uy * 34 + 10 };
+  })();
   const legBSquare = legBVertices.map(plot);
   const legCSquare = legCVertices.map(plot);
   const hypSquare = hypVertices.map(plot);
@@ -815,7 +833,7 @@ function RightTriangle() {
           <g className="g031-reveal">
             <Line a={A} b={H} kind="g031-helper" />
             <RightMark vertex={H} along={B} to={A} />
-            <Dot p={H} name="H" dx={30} dy={-12} />
+            <Dot p={H} name="H" dx={hLabel.dx} dy={hLabel.dy} />
           </g>
         )}
         <Dot p={A} name="A" dx={-27} dy={30} />
