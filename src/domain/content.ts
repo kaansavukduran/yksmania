@@ -1,5 +1,7 @@
 import { linearEquationsSource036Lessons } from "../learning/linearEquationsSource036";
 import { basicInequalitiesSource037Lessons } from "../learning/basicInequalitiesSource037";
+import { absoluteValueSource038Lessons } from "../learning/absoluteValueSource038";
+import { powersSource039Lessons } from "../learning/powersSource039";
 import {
   legacy026QuestionLessons,
   legacy026TheoryIds,
@@ -1034,6 +1036,8 @@ const baseLessons: Lesson[] = [
   ...rationalSource035Lessons,
   ...linearEquationsSource036Lessons,
   ...basicInequalitiesSource037Lessons,
+  ...absoluteValueSource038Lessons,
+  ...powersSource039Lessons,
 ];
 export const lessons: Lesson[] = baseLessons.map((lesson) => {
   const expanded =

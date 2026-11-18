@@ -1,0 +1,615 @@
+{
+  "source": "approved-source038-c5",
+  "packSHA256": "ccdb41d56a2c3b86cce301dbca8a240d96a5c73d35560971e7a7ab53c2b415ef",
+  "unit": {
+    "id": "tyt-mat-mutlak-deger-kaynak-038",
+    "title": "Mutlak değer: uzaklık, koşul ve grafiğin mantığı",
+    "cards": [
+      {
+        "prompt": "|−7| işleminin değeri kaçtır?",
+        "options": [
+          "7",
+          "−7",
+          "0",
+          "14",
+          "1/7"
+        ],
+        "correct": "7"
+      },
+      {
+        "prompt": "Gerçek x<0 iken |5x| hangi ifadeye eşittir?",
+        "options": [
+          "−5x",
+          "5x",
+          "−5",
+          "5",
+          "0"
+        ],
+        "correct": "−5x"
+      },
+      {
+        "prompt": "Gerçek x>0 iken |−5x| hangi ifadeye eşittir?",
+        "options": [
+          "5x",
+          "−5x",
+          "5",
+          "−5",
+          "0"
+        ],
+        "correct": "5x"
+      },
+      {
+        "prompt": "Her gerçek a için |a²+3| hangi ifadeye eşittir?",
+        "options": [
+          "a²+3",
+          "a²−3",
+          "−a²−3",
+          "|a|+3",
+          "3"
+        ],
+        "correct": "a²+3"
+      },
+      {
+        "prompt": "Gerçek u ve v için aşağıdaki ifadelerden hangisi her zaman doğrudur?",
+        "options": [
+          "|u+v|≤|u|+|v|",
+          "|u+v|=|u|+|v|",
+          "|u+v|≥|u|+|v|",
+          "|u−v|=u−v",
+          "|u|+|v|<0"
+        ],
+        "correct": "|u+v|≤|u|+|v|"
+      },
+      {
+        "prompt": "|6/0| ifadesi için hangisi doğrudur?",
+        "options": [
+          "Tanımsızdır.",
+          "0’dır.",
+          "6’dır.",
+          "1’dir.",
+          "Gerçek sayı olarak ∞’dur."
+        ],
+        "correct": "Tanımsızdır."
+      },
+      {
+        "prompt": "Sayı doğrusunda 7 ile 2 arasındaki uzaklık kaç birimdir?",
+        "options": [
+          "5",
+          "−5",
+          "9",
+          "14",
+          "7/2"
+        ],
+        "correct": "5"
+      },
+      {
+        "prompt": "Gerçek x için |x−2|=4 koşulunun çözüm kümesi hangisidir?",
+        "options": [
+          "{−2, 6}",
+          "{2, 4}",
+          "{−6, 2}",
+          "{6}",
+          "∅"
+        ],
+        "correct": "{−2, 6}"
+      },
+      {
+        "prompt": "Gerçek x için |2x+1|=7 koşulunun çözüm kümesi hangisidir?",
+        "options": [
+          "{−4, 3}",
+          "{3}",
+          "{−4}",
+          "{−3, 4}",
+          "∅"
+        ],
+        "correct": "{−4, 3}"
+      },
+      {
+        "prompt": "Gerçek x için |2x+1|=−7 koşulunun çözüm kümesi hangisidir?",
+        "options": [
+          "∅",
+          "{−4, 3}",
+          "{0}",
+          "{−7, 7}",
+          "ℝ"
+        ],
+        "correct": "∅"
+      },
+      {
+        "prompt": "Gerçek x için |−3|=3 koşulunun çözüm kümesi hangisidir?",
+        "options": [
+          "ℝ",
+          "{−3, 3}",
+          "∅",
+          "{3}",
+          "{0}"
+        ],
+        "correct": "ℝ"
+      },
+      {
+        "prompt": "Gerçek x için |−3|=2 koşulunun çözüm kümesi hangisidir?",
+        "options": [
+          "∅",
+          "ℝ",
+          "{−3}",
+          "{2}",
+          "{−3, 3}"
+        ],
+        "correct": "∅"
+      },
+      {
+        "prompt": "Gerçek x için |3x−2|<7 koşulunun çözüm kümesi hangisidir?",
+        "options": [
+          "(−5/3, 3)",
+          "[−5/3, 3]",
+          "(−∞, −5/3) ∪ (3, ∞)",
+          "(−5/3, ∞)",
+          "(−∞, 3)"
+        ],
+        "correct": "(−5/3, 3)"
+      },
+      {
+        "prompt": "Gerçek x için |4x−3|≤9 koşulunun çözüm kümesi hangisidir?",
+        "options": [
+          "[−3/2, 3]",
+          "(−3/2, 3)",
+          "[−3, 3/2]",
+          "(−∞, −3/2] ∪ [3, ∞)",
+          "[−3/2, ∞)"
+        ],
+        "correct": "[−3/2, 3]"
+      },
+      {
+        "prompt": "Gerçek x için |2x−1|≥5 koşulunun çözüm kümesi hangisidir?",
+        "options": [
+          "(−∞, −2] ∪ [3, ∞)",
+          "[−2, 3]",
+          "(−∞, −2) ∪ (3, ∞)",
+          "(−∞, −2]",
+          "[3, ∞)"
+        ],
+        "correct": "(−∞, −2] ∪ [3, ∞)"
+      },
+      {
+        "prompt": "Gerçek x için |2x−3|>7 koşulunun çözüm kümesi hangisidir?",
+        "options": [
+          "(−∞, −2) ∪ (5, ∞)",
+          "[−2, 5]",
+          "(−∞, −2] ∪ [5, ∞)",
+          "(−2, 5)",
+          "(5, ∞)"
+        ],
+        "correct": "(−∞, −2) ∪ (5, ∞)"
+      },
+      {
+        "prompt": "Gerçek x için |x−5|≤0 koşulunun çözüm kümesi hangisidir?",
+        "options": [
+          "{5}",
+          "∅",
+          "ℝ",
+          "(−∞, 5]",
+          "[5, ∞)"
+        ],
+        "correct": "{5}"
+      },
+      {
+        "prompt": "Gerçek x için |x−5|<0 koşulunun çözüm kümesi hangisidir?",
+        "options": [
+          "∅",
+          "{5}",
+          "ℝ",
+          "(−∞, 5)",
+          "(5, ∞)"
+        ],
+        "correct": "∅"
+      },
+      {
+        "prompt": "Gerçek x için |x−2|>−1 koşulunun çözüm kümesi hangisidir?",
+        "options": [
+          "ℝ",
+          "∅",
+          "{2}",
+          "(−∞, 2)",
+          "(2, ∞)"
+        ],
+        "correct": "ℝ"
+      },
+      {
+        "prompt": "Gerçek x için |x−2|>0 koşulunun çözüm kümesi hangisidir?",
+        "options": [
+          "(−∞, 2) ∪ (2, ∞)",
+          "ℝ",
+          "{2}",
+          "∅",
+          "[2, ∞)"
+        ],
+        "correct": "(−∞, 2) ∪ (2, ∞)"
+      },
+      {
+        "prompt": "Gerçek x için |−2x+1|<5 koşulunun çözüm kümesi hangisidir?",
+        "options": [
+          "(−2, 3)",
+          "[−2, 3]",
+          "(−3, 2)",
+          "(−∞, −2) ∪ (3, ∞)",
+          "(−2, ∞)"
+        ],
+        "correct": "(−2, 3)"
+      },
+      {
+        "prompt": "Gerçek x için |x−2|=m−1 denkleminde m=1/2 verilirse kaç farklı çözüm vardır?",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "Sonsuz"
+        ],
+        "correct": "0"
+      },
+      {
+        "prompt": "Gerçek x için |x−2|=0 koşulunun çözüm kümesi hangisidir?",
+        "options": [
+          "{2}",
+          "{−2, 2}",
+          "∅",
+          "ℝ",
+          "{0}"
+        ],
+        "correct": "{2}"
+      },
+      {
+        "prompt": "Gerçek x için |x−2|=3 koşulunun çözüm kümesi hangisidir?",
+        "options": [
+          "{−1, 5}",
+          "{1, 5}",
+          "{−3, 3}",
+          "{5}",
+          "∅"
+        ],
+        "correct": "{−1, 5}"
+      },
+      {
+        "prompt": "Gerçek x için |x−1|=|2x+3| denkleminin çözüm kümesi hangisidir?",
+        "options": [
+          "{−4, −2/3}",
+          "{−4}",
+          "{−2/3}",
+          "{−4, 2/3}",
+          "{4, 2/3}"
+        ],
+        "correct": "{−4, −2/3}"
+      },
+      {
+        "prompt": "Gerçek x için |x|=−1 koşulunun çözüm kümesi hangisidir?",
+        "options": [
+          "∅",
+          "{−1, 1}",
+          "{1}",
+          "{−1}",
+          "ℝ"
+        ],
+        "correct": "∅"
+      },
+      {
+        "prompt": "Gerçek x için |x|=x−2 denkleminin çözüm kümesi hangisidir?",
+        "options": [
+          "∅",
+          "{1}",
+          "{−1}",
+          "[2, ∞)",
+          "ℝ"
+        ],
+        "correct": "∅"
+      },
+      {
+        "prompt": "Gerçek x için |x|=|x| denkleminin çözüm kümesi hangisidir?",
+        "options": [
+          "ℝ",
+          "{0}",
+          "∅",
+          "{−1, 1}",
+          "[0, ∞)"
+        ],
+        "correct": "ℝ"
+      },
+      {
+        "prompt": "Gerçek x için y=|x−2|−1 grafiğinin tepe noktası ve x eksenini kestiği değerler hangisidir?",
+        "options": [
+          "Tepe (2, −1); kökler 1 ve 3.",
+          "Tepe (−2, −1); kökler −3 ve −1.",
+          "Tepe (2, 1); kök yok.",
+          "Tepe (2, −1); tek kök 2.",
+          "Tepe (1, 2); kökler 0 ve 2."
+        ],
+        "correct": "Tepe (2, −1); kökler 1 ve 3."
+      },
+      {
+        "prompt": "y=−|x−2|−1 grafiğinin kökleri hakkında hangisi doğrudur?",
+        "options": [
+          "Gerçek kök yoktur.",
+          "1 ve 3’tür.",
+          "Yalnız 2’dir.",
+          "−1 ve 5’tir.",
+          "Her gerçek x köktür."
+        ],
+        "correct": "Gerçek kök yoktur."
+      },
+      {
+        "prompt": "y=|2x−4|−1 grafiğinin kökleri hangisidir?",
+        "options": [
+          "3/2 ve 5/2",
+          "1 ve 3",
+          "2 ve −1",
+          "−3/2 ve −5/2",
+          "Yalnız 2"
+        ],
+        "correct": "3/2 ve 5/2"
+      },
+      {
+        "prompt": "Gerçek x için y=|0x−3|−3 fonksiyonunun kök kümesi nedir?",
+        "options": [
+          "ℝ",
+          "{0}",
+          "{3}",
+          "∅",
+          "{−3, 3}"
+        ],
+        "correct": "ℝ"
+      },
+      {
+        "prompt": "Gerçek x için |x−2|+|x+1| ifadesinin en küçük değeri ve bu değeri aldığı x kümesi nedir?",
+        "options": [
+          "3; x∈[−1, 2]",
+          "3; yalnız x=1/2",
+          "1; x∈[−1, 2]",
+          "3; x∈(−1, 2)",
+          "0; x=−1 veya 2"
+        ],
+        "correct": "3; x∈[−1, 2]"
+      },
+      {
+        "prompt": "Gerçek x için |x−4|+|x+1| ifadesinin en küçük değeri ve bu değerin alındığı x kümesi hangisidir?",
+        "options": [
+          "5; x∈[−1, 4]",
+          "3; x∈[−1, 4]",
+          "5; yalnız x=3/2",
+          "5; x∈(−1, 4)",
+          "0; x=4"
+        ],
+        "correct": "5; x∈[−1, 4]"
+      },
+      {
+        "prompt": "Gerçek x için |x−(1)|+|x−(4)|=5 denkleminin çözüm kümesi hangisidir?",
+        "options": [
+          "{0, 5}",
+          "[1, 4]",
+          "{0}",
+          "{5}",
+          "∅"
+        ],
+        "correct": "{0, 5}"
+      },
+      {
+        "prompt": "Gerçek x için |x−(1)|+|x−(4)|=3 denkleminin çözüm kümesi hangisidir?",
+        "options": [
+          "[1, 4]",
+          "{1, 4}",
+          "{5/2}",
+          "(1, 4)",
+          "∅"
+        ],
+        "correct": "[1, 4]"
+      },
+      {
+        "prompt": "Gerçek x için ||x|−3|=1 denkleminin çözüm kümesi hangisidir?",
+        "options": [
+          "{−4, −2, 2, 4}",
+          "{−4, 4}",
+          "{−2, 2}",
+          "{−3, 3}",
+          "{0}"
+        ],
+        "correct": "{−4, −2, 2, 4}"
+      },
+      {
+        "prompt": "Gerçek x için ||x|−2|=3 denkleminin çözüm kümesi hangisidir?",
+        "options": [
+          "{−5, 5}",
+          "{−5, −1, 1, 5}",
+          "{−1, 1}",
+          "{5}",
+          "∅"
+        ],
+        "correct": "{−5, 5}"
+      },
+      {
+        "prompt": "Gerçek x için ||x|−3|=3 denkleminin çözüm kümesi hangisidir?",
+        "options": [
+          "{−6, 0, 6}",
+          "{−6, 6}",
+          "{−6, −3, 3, 6}",
+          "{0}",
+          "∅"
+        ],
+        "correct": "{−6, 0, 6}"
+      },
+      {
+        "prompt": "Gerçek x için |3x−4|=8 koşulunun çözüm kümesi hangisidir?",
+        "options": [
+          "{−4/3, 4}",
+          "{4}",
+          "{−4, 4/3}",
+          "{−4/3}",
+          "∅"
+        ],
+        "correct": "{−4/3, 4}"
+      },
+      {
+        "prompt": "Gerçek x için |x+2|≤5 koşulunun çözüm kümesi hangisidir?",
+        "options": [
+          "[−7, 3]",
+          "(−7, 3)",
+          "[−3, 7]",
+          "(−∞, −7] ∪ [3, ∞)",
+          "[−7, ∞)"
+        ],
+        "correct": "[−7, 3]"
+      },
+      {
+        "prompt": "|7−a|=3 denklemini sağlayan gerçek a değerleri hangisidir?",
+        "options": [
+          "4 ve 10",
+          "−4 ve 10",
+          "4 ve −10",
+          "Yalnız 4",
+          "7 ve 3"
+        ],
+        "correct": "4 ve 10"
+      },
+      {
+        "prompt": "y=|x+1|−2 grafiğinin tepe ve kök bilgisi hangisidir?",
+        "options": [
+          "Tepe (−1, −2); kökler −3 ve 1.",
+          "Tepe (1, −2); kökler −1 ve 3.",
+          "Tepe (−1, 2); kök yok.",
+          "Tepe (−1, −2); yalnız −1 kök.",
+          "Tepe (−2, −1); kökler −3 ve −1."
+        ],
+        "correct": "Tepe (−1, −2); kökler −3 ve 1."
+      },
+      {
+        "prompt": "Gerçek x için |x+2|<4 koşulunun çözüm kümesi hangisidir?",
+        "options": [
+          "(−6, 2)",
+          "[−6, 2]",
+          "(−2, 6)",
+          "(−∞, −6) ∪ (2, ∞)",
+          "(−6, ∞)"
+        ],
+        "correct": "(−6, 2)"
+      },
+      {
+        "prompt": "Gerçek x için |x−1|≥2 koşulunun çözüm kümesi hangisidir?",
+        "options": [
+          "(−∞, −1] ∪ [3, ∞)",
+          "[−1, 3]",
+          "(−∞, −1) ∪ (3, ∞)",
+          "(−∞, −1]",
+          "[3, ∞)"
+        ],
+        "correct": "(−∞, −1] ∪ [3, ∞)"
+      },
+      {
+        "prompt": "y=|x+3|−1 grafiğinin tepe noktası nedir?",
+        "options": [
+          "(−3, −1)",
+          "(3, −1)",
+          "(−3, 1)",
+          "(−1, −3)",
+          "(0, −1)"
+        ],
+        "correct": "(−3, −1)"
+      },
+      {
+        "prompt": "u=2 ve v=−5 için |u+v| ile |u|+|v| sırasıyla kaçtır?",
+        "options": [
+          "3 ve 7",
+          "7 ve 7",
+          "−3 ve 7",
+          "3 ve −3",
+          "−3 ve −7"
+        ],
+        "correct": "3 ve 7"
+      },
+      {
+        "prompt": "Gerçek x>0 için |3x|+|−2x|−|1+x| hangi ifadeye eşittir?",
+        "options": [
+          "4x−1",
+          "6x−1",
+          "4x+1",
+          "6x+1",
+          "x−1"
+        ],
+        "correct": "4x−1"
+      },
+      {
+        "prompt": "x=1/8 iken |3x|+|−2x|−|1+x| kaçtır?",
+        "options": [
+          "−1/2",
+          "1/2",
+          "0",
+          "1",
+          "3/2"
+        ],
+        "correct": "−1/2"
+      },
+      {
+        "prompt": "Eksik kapanış çizgisi olan |−20×3−5 ifadesinde sonuç 55 olsun. Çizgi hangi sayıların sağına konulduğunda eşitlik doğrudur?",
+        "options": [
+          "20 ve 3’ün sağına",
+          "Yalnız 3’ün sağına",
+          "Yalnız 20’nin sağına",
+          "Yalnız 5’in sağına",
+          "Hiçbir konumda"
+        ],
+        "correct": "20 ve 3’ün sağına"
+      },
+      {
+        "prompt": "Özgün bir işlem karşılaştırması: |−4+7−6+8−9=2 eşitliğindeki eksik sağ mutlak değer çizgisi hangi sayının hemen sağına konulmalıdır?",
+        "options": [
+          "6",
+          "4",
+          "7",
+          "8",
+          "9"
+        ],
+        "correct": "6"
+      },
+      {
+        "prompt": "Gerçek x için |x−100|≤2 koşulunun çözüm kümesi hangisidir?",
+        "options": [
+          "[98, 102]",
+          "(98, 102)",
+          "[−2, 2]",
+          "(−∞, 98] ∪ [102, ∞)",
+          "{100}"
+        ],
+        "correct": "[98, 102]"
+      },
+      {
+        "prompt": "İki nokta −1 ve 2, deneme konumu x=4 olsun. |x+1|+|x−2| toplamı en küçük toplamdan kaç birim büyüktür?",
+        "options": [
+          "4",
+          "2",
+          "3",
+          "7",
+          "0"
+        ],
+        "correct": "4"
+      },
+      {
+        "prompt": "Gerçek x için |x−2|<4 yerine |x−2|≤4 yazılırsa çözüm kümesine yeni hangi değerler eklenir?",
+        "options": [
+          "−2 ve 6",
+          "Yalnız 2",
+          "0 ve 4",
+          "−4 ve 4",
+          "Hiçbir değer eklenmez."
+        ],
+        "correct": "−2 ve 6"
+      },
+      {
+        "prompt": "√3 pozitif ve karesi 3 olan gerçek sayı olsun. |−√3| kaçtır?",
+        "options": [
+          "√3",
+          "−√3",
+          "3",
+          "−3",
+          "0"
+        ],
+        "correct": "√3"
+      }
+    ]
+  }
+}
