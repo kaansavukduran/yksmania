@@ -45,3 +45,55 @@ describe("section figures", () => {
     });
   }
 });
+
+import { lessons } from "../src/domain/content";
+import { hintFigureFor } from "../src/learning/sectionFigures/hintFigure";
+
+describe("question hint figures", () => {
+  const all = lessons.flatMap((l) =>
+    l.questions.map((q) => ({
+      id: q.id,
+      prompt: q.prompt.tr,
+      passage: q.passage?.tr,
+      options: q.options.map((o) => o.tr),
+      answer: q.answer,
+      explanation: q.explanation.tr,
+      hint: q.hint?.tr,
+      guidance: q.guidance,
+    })),
+  );
+  const pick = (re: RegExp) => all.find((q) => re.test(q.prompt));
+
+  it("only points to figures that exist", () => {
+    let shown = 0;
+    for (const q of all) {
+      const m = hintFigureFor(q);
+      if (!m) continue;
+      shown++;
+      expect(sectionFigures[m.guideId], q.id).toBeDefined();
+    }
+    expect(shown).toBeGreaterThan(50);
+  });
+
+  // Each case was a real mismatch during review; none may come back.
+  it.each([
+    [/Çukur aynada f=10 cm, u=5 cm/, "Tümsek"],
+    [/tam iç yansımanın temel koşulları/, "Geçiş ve yansıma"],
+    [/orta noktası M\(2; −1\), bir ucu A\(−4; 5\)/, "Eksenlere göre yansıma"],
+    [/sekizgen olan bir dik prizmanın toplam ayrıt/, "Diklik, yükseklik"],
+    [/P\(−2; 5\)'in y=x doğrusuna göre/, "Eksenler hangi koordinatı"],
+  ])("does not show the wrong section for %s", (re, wrong) => {
+    const q = pick(re);
+    expect(q, String(re)).toBeDefined();
+    const m = hintFigureFor(q!);
+    expect(m?.title ?? "").not.toContain(wrong);
+  });
+
+  it.each([
+    [/Dışbükey bir sekizgende aynı yönde seçilmiş yedi dış açı/, "Dış açıda aynı dönüş yönünü koru"],
+    [/Kenar uzunluğu 4 cm olan düzgün altıgenin alanı/, "Düzgün altıgeni"],
+  ])("shows the matching section for %s", (re, title) => {
+    const m = hintFigureFor(pick(re)!);
+    expect(m?.title ?? "").toContain(title);
+  });
+});

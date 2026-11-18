@@ -82,3 +82,10 @@
   padding-block: 1rem;
   line-height: 1.8;
 }
+
+.help-concept-figure {
+  margin-top: 0.8rem;
+}
+.help-concept-figure .section-figure {
+  margin: 0.4rem 0 0.6rem;
+}

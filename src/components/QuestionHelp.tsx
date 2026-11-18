@@ -5,6 +5,11 @@ import { helpPanels, resolvedGuidance } from "../learning/questionHelp";
 import "./questionHelp.css";
 import { SourceQuestionFigure } from "../learning/SourceQuestionFigure";
 import { sourceQuestionPresentation } from "../learning/sourceExercises024";
+import { lazy, Suspense } from "react";
+import { hintFigureFor } from "../learning/sectionFigures/hintFigure";
+const SectionFigure = lazy(() =>
+  import("../learning/sectionFigures/registry").then((m) => ({ default: m.SectionFigure })),
+);
 
 export function QuestionHelp({
   question: originalQuestion,
@@ -24,6 +29,9 @@ export function QuestionHelp({
   const panels = helpPanels(question);
   const full = level > panels.length;
   const sourcePresentation = sourceQuestionPresentation(question);
+  // The matching theory figure is shown with the first ("Bilmen gerekenler")
+  // panel; it is omitted when the question already carries its own figure.
+  const conceptFigure = sourcePresentation?.hintFigure ? undefined : hintFigureFor(question);
   return (
     <div className="question-help">
       {level > 0 && (
@@ -35,6 +43,14 @@ export function QuestionHelp({
                 {panel.paragraphs.map((paragraph, i) => (
                   <p key={i}>{paragraph}</p>
                 ))}
+                {index === 0 && conceptFigure && (
+                  <div className="help-concept-figure">
+                    <p className="small muted">Konu anlatımından: {conceptFigure.title}</p>
+                    <Suspense fallback={null}>
+                      <SectionFigure guideId={conceptFigure.guideId} title={conceptFigure.title} />
+                    </Suspense>
+                  </div>
+                )}
               </section>
             ))}
             {!full && sourcePresentation?.hintFigure && (
