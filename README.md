@@ -1,6 +1,26 @@
-> **0.23.0 geliştirme adayı — 18 Kasım 2026, henüz yayımlanmadı.** Birinci dereceden denklemler ve basit eşitsizliklere 57 anlatım bölümü, 60 çözümlü örnek, 87 gerekçeli soru, 14 etkileşimli model ve 22 ayrı özet bölümü eklendi. Adayda 533 set, 499 rehber/özet, 498 çalışma başlığı ve 6.301 soru var. Yerel öğrenme, çevrimdışı modeller ve gerçek 0.22→0.23 web güncellemesinde veri korunumu doğrulandı. Yeni kaynak commit’i, tam uzak CI, canlı yayın ve yeni APK kabulü bekliyor. [Kapsam ve ayrı test sonuçları](docs/FORGE036037.md).
->
-> Kanonik PDF sayımı **8.981 dosya: 5 tam, 4 kısmi, 8.972 belirsiz** olarak değişmedi. Bu iki PDF hâlâ kısmi; aşağıdaki 0.22 yayınları ve APK bağlantıları kendi doğrulanmış sürümüne aittir.
+# YKSMania 0.23.0
+
+Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.23.0 yayımlandı — 18 Kasım 2026, Türkiye saati.**
+
+[Web uygulaması](https://kaansavukduran.github.io/yksmania/) · [Windows/Linux indir](https://github.com/kaansavukduran/yksmania/releases/tag/v0.23.0-alpha.1) · [Kişisel Android deneme paketi](https://github.com/kaansavukduran/yksmania/actions/runs/44195736233/artifacts/14378249327)
+
+Birinci dereceden denklemler ve basit eşitsizlikler **57 açıklama bölümü, 60 çözümlü örnek, 40 hatırlama, 87 özgün soru ve 435 seçenek gerekçesiyle** genişledi. Değerleri değiştirerek eşitliğin iki tarafını, parantez/payda koşullarını, aralıkları, negatif işlemleri, bütçe ve kâr modellerini inceleyebilirsin. **14 etkileşimli modelin şekli ve sonucu aynı hesaplardan gelir.** Kopya Kağıtları ayrı menüdedir; 22 yeni özet bölümü içerir. Öğrenci PDF veya kaynak kataloğu yüklemez.
+
+Toplam **533 set, 499 anlatım rehberi, 499 ayrı özet, 498 çalışma başlığı ve 6.301 özgün soru** vardır. 3.661 soruda tam kademeli yardım hazır; 2.640 eski kartın bütün yardım aşamaları henüz tamamlanmadı. Bunlar PDF veya resmî müfredat başlığı sayıları değildir. Önceki 531 set, 6.214 soru, 497 rehber/özet, 496 çalışma başlığı ve ilk 479 Excel kimliği/sırası korunur. [Konu envanteri](docs/CONTENT_INVENTORY.csv) ölçüleri ayrı gösterir.
+
+[Aynı kaynaklı tam CI](https://github.com/kaansavukduran/yksmania/actions/runs/44195707384) **1.977 birim ve 1.285 tarayıcı testini** geçti; paketli Windows/Linux’ta 112’şer çevrimdışı model akışı başarılıdır. [Otomatik Pages](https://github.com/kaansavukduran/yksmania/actions/runs/44200061070) gerçek yayındaki 112 akışı geçti; yayının 301 dosyası / 28.243.429 baytı normal TLS ile eşleşti. Gerçek yayımlanan AppImage ayrıca indirilip değiştirilmemiş binary’siyle bu Linux VM’de 112 akışı, notları ve aynı profilde süreç yeniden açılışını geçti. 301 normal web dosyası / 28.243.619 bayt sabit derlemeyle aynıdır. [Kapsam, gerçek kabuller ve sınırlar](docs/FORGE036037.md).
+
+Android için **YKSMania Deneme 0.23.0-test / kod 33** hazırdır: 19.391.282 bayt, ayrı `com.fragaria.yksmania.test`, otomatik test imzası. Gerçek APK’nin v2 imzası, paket/sürümü ve 301 çevrimdışı dosyası doğrulandı. Actions ZIP’ini GitHub hesabınla indirip açarak APK’yı telefona kurabilirsin. **Önceki Deneme kurulumun varsa önce ilerlemeni yedekle.** Test sertifikası 0.22’den farklıdır; Android güncellemeyi reddederse yedeğini doğruladıktan sonra yalnız eski Deneme uygulamasını kaldırıp yenisini kur ve yedeği geri yükle. Kaldırma yerel ilerlemeyi siler; ana YKSMania’yı kaldırma. Fiziksel telefonda kurulum/ilk açılış henüz denenmedi. Secret istenmez; genel APK veya mağaza yayını yapılmadı.
+
+0.23’ün başlangıç teması mevcut koyu temadır; Matrix ayarlardan seçilebilir. Mevcut/Matrix temaları, Lexend, ortak kum saati, anlatımın altındaki notlar ve kişisel yedek/geri yükleme korunur. Yeni/ayarlanmamış profilin değiştirilebilir kişisel hedefi 28 Şubat 2027’dir; bilinçli kaydedilmiş farklı tarihler korunur, bu resmî sınav tarihi değildir. İlk öğrenme günü 1, tekrarlar 3/7/21’dir. Bugün tamamlanan çalışmayı ve son gerçek soru oturumunun doğru/yanlış sayısını gösterir. Keşif, süre ve manuel onay ustalık veya XP üretmez. Yerleşik öğretim çevrimdışı, dış videolar/resmî bağlantılar internetle çalışır.
+
+**Kanonik öğretim aktarımı: 8.981 PDF’de 7 tam, 2 kısmi, 8.972 belirsiz.** Denklem ve eşitsizlik kaynaklarının kapanışı gerçek korumalı işlem ve bağımsız salt okunur geri okumayla doğrulandı. Bu yedi sertifika öğretim maddeleri, örnek/çözümler ve uygulama eşlemeleri için doğrulanmış kapanışlardır. Kaynaktaki bütün soruların asıl metin, seçenek ve şekilleriyle birebir yerleşik aktarımının tamamlandığı anlamına gelmez; bu ayrı sadakat denetimi ve geliştirme ölçüsüdür, toplu tamamlanma sayısı henüz çıkarılmadı. Belirsiz, hiç işlenmemiş demek değildir. [Güncel kaynak raporu](docs/PDF_SOURCE_PROGRESS036037.md).
+
+Yayın kaynağı `2bbddcf6de7fb1d0dafd03bd6e8f94e88c4579d0`. Vercel’in son doğrulanmış durumu hesap sınırı nedeniyle HTTP 402’dir; kullanılabilir web yayını GitHub Pages’tir. Temiz OS kurulumu, Windows portable taşıma ve kurulu native sürümler arasında yükseltme ayrıca sınanacaktır. Bütün MEB/OGM/MEBİ bilgileri ve yirmi yıllık ÖSYM arşivi henüz tamamlanmadı.
+
+---
+
+## Aşağıdaki 0.22 ve eski kayıtlar kendi tarihsel yayınlarına aittir
 
 # YKSMania
 
