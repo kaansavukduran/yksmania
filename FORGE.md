@@ -1,6 +1,12 @@
 # Forge038039 / görsel 0.24 adayı
 
-18 Kasım 2026, Türkiye saati. Yerel aday; henüz yeni tam CI veya yayın yok. [FORGE038039](docs/FORGE038039.md), eklenen iki kaynak ünitesini, asıl OGM sorularını, görsel kontrolleri ve açık kapıları tutar. Son doğrulanmış yayın aşağıdaki 0.23.0’dır. Kanonik öğretim sayısı 8.981: 7 tam / 2 kısmi / 8.972 belirsiz; asıl soru/şekil sadakati ayrı ve tamamlanmamış ölçüdür. Kaynak012/013/014 kapanışı veya yeni okuma kredisi verilmedi.
+18 Kasım 2026, Türkiye saati. **Yerel aday; henüz yeni tam CI veya yayın yok.** [FORGE038039](docs/FORGE038039.md), eklenen iki kaynak ünitesini, asıl OGM sorularını, görsel kontrolleri ve açık kapıları tutar. Son doğrulanmış yayın aşağıdaki 0.23.0’dır.
+
+C2 birleşiminde check, normal/alt dizin derlemeleri ve 223 dosyada 2.032 birim testi geçti. Önceki C1’in 111 ilgili tarayıcı testi, diğer 620 ürün girdisinin değişmediği kesin karşılaştırmayla ayrılır; C2’nin ilk görsel adım düzeltmesi iki yeni gerçek UI testiyle doğrulandı. C2 alt dizin ve bu Linux VM’deki gerçek yerel paket, 114’er ortak model akışı ve ayrıca altı asıl OGM sorusunu geçti. Aynı kökenli gerçek 0.23→0.24 web güncellemesinde üç ham veri deposu ve eski kayıtlar korundu; etkinleşme otomatik ilerleme yazmadı. Bunlar yayımlanmış Pages/AppImage, Windows veya telefon kabulü değildir.
+
+İlk C2 birim turundaki tek zaman aşımı, native ilk denemesindeki gerçek ENOSPC hatası ve eski service worker kontrolünde kalan ilk güncelleme denemesi saklanır. Test süreleri/beklentileri gevşetilmedi. Yer açıldıktan sonra yeni profillerde tam yerel akışlar geçti; service worker zaman aşımının kesin nedeni ayrıca kanıtlanmış sayılmaz. Sıradaki kapılar tam uzak CI/E2E, gerçek Pages/Release/AppImage ve ayrı kişisel APK geri okumasıdır; main bu yayın zinciri bitene kadar ilerletilmez.
+
+Kanonik öğretim sayısı **8.981: 7 tam / 2 kısmi / 8.972 belirsiz**; asıl soru/şekil sadakati ayrı ve tamamlanmamış ölçüdür. Kaynak012/013/014 kapanışı veya yeni okuma kredisi verilmedi. Source012’nin ek sekiz istemi ile Source014/015 sonraki özel hazırlıkları bu 0.24 adayına dahil değildir.
 
 ---
 

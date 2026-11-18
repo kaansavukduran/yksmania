@@ -1,18 +1,31 @@
 # 0.24.0 adayının yerel regresyonları — 18 Kasım 2026
 
-Yayımlanmış kabul değildir. Son birleşim2032 birim testini geçti ve normal/prefix314 dosya derlendi; birleşik tarayıcı, güncelleme ve paket kapıları sürüyor. Önceki0.23 ve daha eski yayın kanıtları kendi sürümlerine aittir.
+**Yayımlanmış kabul değildir.** C2 birleşiminin check, normal/alt dizin derlemeleri, 223 dosyada 2.032 birim testi, iki yeni ilk-adım UI testi, yerel alt dizin/native akışları ve gerçek yerel web güncellemesi geçti. Tam uzak E2E/CI ve yayın geri okumaları bekliyor. Önceki 0.23 ve daha eski yayın kanıtları kendi sürümlerine aittir.
 
 | Bulgu | Gerçek belirti, onarım ve yerel kabul |
 | --- | --- |
-| F039-STATE-001 | Model seçimleri yenilemede kayboluyordu.40 sabit keşif anahtarıyla gerçek çevrimdışı yenileme/süreç açılışı ve puansız keşif denetlendi. |
-| F039-EXACT-CLIP-001 | Tam kesrin eksen sınırı float ile yanlış sınıflanıyordu. Aynı960bağımsız örnekte165 FAIL’den960 PASS’e geçildi; çizim koordinatı ile tam kapsam kararı ayrıdır. |
-| G031-FRAMING024-001 | İlk dik üçgen görünmeyen karelere yer ayırıp çok küçük kalıyordu. Yalnız görünür köşeler tek matematiksel ölçekle çerçevelenir;484 SVG ve teori/ayrıözet/4adım/2profil/45px gerçek UI kabulü vardır. |
-| F024-SOURCE-IMAGE-001 | Vite’ın aynı uygulamaya ait absolute PNG adresi reddedilip asıl soru şekli yerine yedek metin gösteriliyordu. Aynı protocol/host varlıkları kabul edilir; başka host, credentials ve farklı protocol reddedilir. Gerçek normal sorular ve hata/yeniden deneme denetlendi. |
-| F024-HELP-REVISION-001 | Aynı soru kimliği fakat farklı eski yardım içeriğine yeni yardım resmi bağlanabiliyordu. Kök/metin/şık/anahtar ile yardımın tüm knowledge/strategy/steps/optionReasons/commonError/check değerleri ayrı sürüm bağlarına alınır. Eski dondurulmuş kartların ham içeriği değiştirilmez; guidance-only negatif vaka gerçek denemede sınandı. |
-| F024-MATH-REFLOW-001 | Dar/büyük yazıda büyütme kontrolleri şekle alan bırakmıyor, kayan matematik klavyeyle kaydırılamıyordu. Kompakt kontroller, açık kapanış odağı/geri dönüşü ve odaklanabilir matematik bölgesi320px/45px/klavye/yerel axe ile sınandı. |
-| F024-W38-CLIP-001 | Kaynak çözümlü örneğindeki “6” etiketi SVG üstünden taşıyordu. Yalnız viewBox üst/yükseklik iki değeri değişti;22 asıl istem ve diğer44figür aynı, gerçek320/1440px ölçümler ve PNG geri okuması doğrulandı. |
+| F039-STATE-001 | Model seçimleri yenilemede kayboluyordu. 40 sabit keşif anahtarıyla gerçek çevrimdışı yenileme/süreç açılışı ve puansız keşif denetlendi. |
+| F039-EXACT-CLIP-001 | Tam kesrin eksen sınırı float ile yanlış sınıflanıyordu. Aynı 960 bağımsız örnekte 165 FAIL’den 960 PASS’e geçildi; çizim koordinatı ile tam kapsam kararı ayrıdır. |
+| G031-FRAMING024-001 | İlk dik üçgen görünmeyen karelere yer ayırıp çok küçük kalıyordu. Yalnız görünür köşeler tek matematiksel ölçekle çerçevelenir; 484 SVG ve teori/ayrı özet/dört adım/iki profil/45 px gerçek UI kabulü vardır. |
+| F024-SOURCE-IMAGE-001 | Vite’ın aynı uygulamaya ait mutlak PNG adresi reddedilip asıl soru şekli yerine yedek metin gösteriliyordu. Aynı protokol/host varlıkları kabul edilir; başka host, kimlik bilgisi içeren URL ve farklı protokol reddedilir. Gerçek normal sorular ve hata/yeniden deneme denetlendi. |
+| F024-HELP-REVISION-001 | Aynı soru kimliği fakat farklı eski yardım içeriğine yeni yardım resmi bağlanabiliyordu. Soru kökü/metin/şık/anahtar ile yardımın tüm bilgi/yöntem/adım/şık gerekçesi/hata/denetim değerleri ayrı sürüm bağlarına alınır. Eski dondurulmuş kartların ham içeriği değiştirilmez; yalnız yardımı farklı eski kart gerçek denemede sınandı. |
+| F024-MATH-REFLOW-001 | Dar/büyük yazıda büyütme kontrolleri şekle alan bırakmıyor, kayan matematik klavyeyle kaydırılamıyordu. Kompakt kontroller, açık kapanış odağı/geri dönüşü ve odaklanabilir matematik bölgesi 320 px/45 px/klavye/yerel axe ile sınandı. |
+| F024-W38-CLIP-001 | Kaynak çözümlü örneğindeki “6” etiketi SVG üstünden taşıyordu. Yalnız viewBox üst/yükseklik iki değeri değişti; 22 asıl istem ve diğer 44 figür aynı, gerçek 320/1440 px ölçümler ve PNG geri okuması doğrulandı. |
+| F024-VISUAL-FIRST-001 | C1 alt dizin turu eski 112 akıştan sonra yeni iki ünitenin modelini ilk yönlendirilmiş bölümde bulamadı. Var olan ilk-görsel listesine yalnız iki ders kimliği eklendi; diğer 620 ürün girdisi aynı kaldı. İlk bölüm beklentisi değiştirilmedi. C2’de normal giriş, ilk adımda gerçek kontrol/şekil, not, çevrimdışı yenileme ve puansız keşif için iki yeni test geçti. |
 
-İlk başarısızlar saklanır; derleme, SSR, yerel tarayıcı, paket, yayın ve fiziksel cihaz aynı kabul değildir. Kaynak okuma, görseli/çözümü açma, süre veya manuel onay ustalık/XP oluşturmaz. Asıl soru ve uygulamanın açıklayıcı şekli etiketlenir; kaynak belirsizliği sahte puanlı soruya dönüştürülmez.
+| Son birleşim kontrolü | Gözlenen yerel sonuç |
+| --- | --- |
+| check ve derlemeler | C2 check başarılı; normal ve alt dizin derlemelerinin her biri 314 dosya. Normal 28.753.562, alt dizin 28.753.297 bayt; 621 ürün girdisi sabit. |
+| Tam birim | C2’nin tek worker ile yinelenen tam turunda 223 dosya / 2.032 test başarılı, komut süresi 344,31 saniye. İlk tur 2.031 başarılı / bir zaman aşımıydı; aynı dosya ayrıca geçti. Test süresi ve beklentileri değiştirilmedi. |
+| İlgili normal tarayıcı | C1’de 14 dosyanın 111 testi başarılı, atlanan/başarısız/flaky vaka yok. C2’de diğer 620 ürün girdisi aynı; ilk-adım düzeltmesinin iki yeni testi C2’de 20,62 saniyede geçti. Bu iki ayrı kapsam tam C2 E2E koşusu diye birleştirilmez. |
+| Yerel alt dizin | C2’de 114 benzersiz model akışı ve ayrıca altı asıl OGM sorusu başarılı; şekil yüklenmesi, büyütme, altılı yardımsız oturum, özgün 3/7/21 kayıtları, eski oturum ve not koruması doğrulandı. Renderer/eksik istek listeleri boş. |
+| Gerçek yerel Linux paketi | C2’nin kendi binary/ASAR’ı 114 model, ayrıca altı asıl OGM sorusu, çevrimdışı çalışma ve aynı profil süreç yeniden açılışını geçti. 314 web dosyası ve 621 kaynak girdisi sabit derlemeye eşleşti. Yayımlanmış AppImage veya Windows kabulü değildir. |
+| Gerçek yerel web güncellemesi | Eski 0.23 UI’sinde oluşturulan ayar, not, tamamlanmış/yarım çalışma, özgün tekrar tarihleri ve cevaplı/işaretli denemeyle aynı kökenli 0.24 güncellemesi geçti. Üç ham veri deposu aynı, etkinleşmenin otomatik ilerleme yazması sıfır; yeni iki model çevrimdışı ilk kullanım ve süreç yeniden açılışından geçti. Yalnız açıkça sentetik, etkisiz belge/PDF işaretleyicisi doğrudan fikstürdür. |
+| Tam uzak CI/E2E ve yayınlar | 65 dosyada 1.308 E2E vakası yalnız statik keşfedildi. Tam uzak koşu henüz çalıştırılmadı/kabul edilmedi; gerçek Pages, Release/AppImage, Windows ve kişisel APK geri okuması bekliyor. Fiziksel telefon ayrıca denenmedi. |
+
+İlk C2 native koşusu yeniden açılışta gerçek `ENOSPC` ile durdu; başarısız kabul olarak korunur. İlk güncelleme denemesi eski service worker kontrolünde zaman aşımına uğradı. Disk doluluğu doğrulandı; yalnız yeniden üretilebilir, kabul edilmemiş paket/önbellekler temizlendikten sonra aynı ürünle yeni profillerde iki tam akış geçti. Bu gözlem zaman aşımının kesin nedenini kanıtlamaz. Yeni ilk-adım testinin ilk iki başarısızlığı da saklanır: kayıt yazılmadan boş profil karşılaştırması ve negatif tabanı değişince aynı kalan çarpan sayısı test kurulumu/beklentisiyle ilgiliydi. Normal UI ile not kaydı ve gerçek üs değişimi sınandı; ürün matematiği veya süre sınırları gevşetilmedi.
+
+Derleme, SSR, yerel tarayıcı, paket, yayın ve fiziksel cihaz aynı kabul değildir. Kaynak okuma, görseli/çözümü açma, süre veya manuel onay ustalık/XP oluşturmaz. Asıl soru ve uygulamanın açıklayıcı şekli etiketlenir; kaynak belirsizliği sahte puanlı soruya dönüştürülmez. Kanonik sayılar 8.981 PDF’de 7 öğretim aktarımı tam, 2 kısmi ve 8.972 belirsiz olarak değişmedi.
 
 ---
 
