@@ -49,6 +49,14 @@ Aynı sistem TYT Fizik optik rehberlerine genişletildi: düzlem ayna (8), küre
 
 Bulunup düzeltilen: aynanın arkasında da F/2F gösteriliyordu (aynada yalnız kendi tarafındaki odak var); iki kaynaklı gölge örneği varsayılan konumda hiç tam gölge göstermiyordu.
 
+## Soru ipuçlarında konu şekli
+
+Sorunun ilk yardım paneli (“Bilmen gerekenler”) artık, sorunun konusunu anlatan rehberden en uygun bölüm şeklini gösterir (`hintFigure.ts`). Eşleştirme sözcükseldir ve bilinçli olarak tutucudur: şekil yalnız sorunun kendi metni bölüm başlığıyla örtüşüyorsa, sorudaki adlandırılmış ifadeler (“tam iç yansıma”, “y = x”, “orta nokta”) o bölümde öğretiliyorsa, kardeş kavramlar çelişmiyorsa (çukur/tümsek, yakınsak/ıraksak, tümler/bütünler…) ve en iyi aday bir sonrakinden açıkça öndeyse gösterilir; aksi hâlde şekil yoktur. İnceleme sırasında bulunan yanlış eşleşmeler (çukur aynaya tümsek şekli, tam iç yansımaya geçiş–yansıma şekli…) birim testinde sabitlenmiştir. Şimdiki kapsam: şekilli rehberlere bağlı 259 sorudan ~126'sında şekil gösterilir. Kaynak sorusunun kendi ipucu şekli varsa o önceliklidir.
+
+## Matematik: köklü sayılar
+
+`koklu-sayilar` rehberinin 10 bölümüne şekil eklendi. Drive'daki OGM 9. sınıf “022 Köklü İfadeler” sunumunun öğretim maddeleri (kesirli üs olarak kök, çift/tek derecede xⁿ = a çözüm sayısı) okunup grafiklerle eşlendi; PDF içeriği depoya kopyalanmadı, kanonik PDF defteri değiştirilmedi.
+
 ## Doğrulama
 
 | Kontrol | Sonuç |
