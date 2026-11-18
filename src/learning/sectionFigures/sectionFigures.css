@@ -1,0 +1,142 @@
+/* Section figures sit inside the reading column, so they stay flat: one
+   hairline frame, no shadow or gradient. Color roles come from theme tokens
+   so the Matrix, light and contrast themes keep three distinguishable keys. */
+.section-figure {
+  --sf-ink: var(--text);
+  --sf-a: var(--guidance, var(--accent));
+  --sf-b: var(--plot-blue, #94bddf);
+  --sf-c: var(--mint);
+  --sf-muted: var(--muted);
+  --sf-warn: var(--danger);
+  margin: 1.4rem 0 1.8rem;
+  padding: 0;
+  max-width: 46rem;
+}
+.sf-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--bg);
+  overflow: visible;
+}
+.sf-ink { --sf: var(--sf-ink); }
+.sf-a { --sf: var(--sf-a); }
+.sf-b { --sf: var(--sf-b); }
+.sf-c { --sf: var(--sf-c); }
+.sf-muted { --sf: var(--sf-muted); }
+.sf-warn { --sf: var(--sf-warn); }
+.sf-stroke {
+  stroke: var(--sf);
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+.sf-thin { stroke-width: 1.6; }
+.sf-bold { stroke-width: 3.6; }
+.sf-dash { stroke-dasharray: 7 6; }
+.sf-head { fill: none; }
+.sf-nofill { fill: none; }
+.sf-fill-ink { fill: color-mix(in srgb, var(--sf-ink) 10%, transparent); }
+.sf-fill-a { fill: color-mix(in srgb, var(--sf-a) 22%, transparent); }
+.sf-fill-b { fill: color-mix(in srgb, var(--sf-b) 22%, transparent); }
+.sf-fill-c { fill: color-mix(in srgb, var(--sf-c) 22%, transparent); }
+.sf-fill-muted { fill: color-mix(in srgb, var(--sf-muted) 14%, transparent); }
+.sf-fill-warn { fill: color-mix(in srgb, var(--sf-warn) 22%, transparent); }
+.sf-open { fill: none; }
+.sf-dot { fill: var(--sf); }
+.sf-dot-hollow {
+  fill: var(--bg);
+  stroke: var(--sf);
+  stroke-width: 2;
+}
+.sf-arc {
+  fill: none;
+  stroke: var(--sf);
+  stroke-width: 2.2;
+}
+.sf-arc-fill {
+  fill: color-mix(in srgb, var(--sf) 26%, transparent);
+}
+.sf-label {
+  fill: var(--sf, var(--text));
+  font-family: inherit;
+  font-size: 21px;
+  font-weight: 600;
+  paint-order: stroke;
+  stroke: var(--bg);
+  stroke-width: 5px;
+  stroke-linejoin: round;
+}
+.sf-small {
+  font-size: 17px;
+  font-weight: 500;
+}
+.sf-strong { font-weight: 700; }
+.sf-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 0.8rem 1.2rem;
+  margin-top: 0.9rem;
+}
+.sf-range {
+  display: grid;
+  gap: 0.35rem;
+  flex: 1 1 15rem;
+  min-width: 0;
+}
+.sf-range > span {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.sf-range output {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+.sf-range input {
+  width: 100%;
+  min-height: 2.75rem;
+  margin: 0;
+  accent-color: var(--accent);
+}
+.sf-play {
+  min-height: 2.75rem;
+}
+.sf-steps {
+  flex: 1 1 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+}
+.sf-steps button {
+  min-height: 2.75rem;
+}
+.sf-step-label {
+  min-width: 0;
+  flex: 1 1 12rem;
+}
+.sf-readout {
+  margin: 0.8rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1.4rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+.section-figure figcaption {
+  margin-top: 0.7rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  max-width: 68ch;
+}
+@media (max-width: 520px) {
+  .sf-label { font-size: 25px; }
+  .sf-small { font-size: 21px; }
+}

@@ -1,0 +1,18 @@
+import "./sectionFigures.css";
+import { SectionFigureView, type FigureDef } from "./figureKit";
+import { geometryFigures031 } from "./geometryFigures031";
+
+export const sectionFigures: Record<string, Record<string, FigureDef>> = {
+  ...geometryFigures031,
+};
+
+export function SectionFigure({
+  guideId,
+  title,
+}: {
+  guideId: string;
+  title: string;
+}) {
+  const def = sectionFigures[guideId]?.[title];
+  return def ? <SectionFigureView def={def} title={title} /> : null;
+}

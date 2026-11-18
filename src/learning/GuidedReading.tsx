@@ -1,9 +1,13 @@
 import { geometryExpansion032Ids } from "../data/supplementalTopics032";
-import { useId, useState, useEffect, type ReactNode } from "react";
+import { lazy, Suspense, useId, useState, useEffect, type ReactNode } from "react";
 import { useExploration } from "./useExploration";
 import "./guidedJourney.css";
 import { ArrowRight, RotateCcw } from "lucide-react";
 import { VisualLab } from "./VisualLab";
+import { sectionFigureGuideIds } from "./sectionFigures/figureGuideIds";
+const SectionFigure = lazy(() =>
+  import("./sectionFigures/registry").then((m) => ({ default: m.SectionFigure })),
+);
 import type { LessonGuide, WorkedExample } from "./guides/types";
 import { resolveGuideStep } from "./guides/position";
 import { geometryFoundation031Ids } from "../data/supplementalTopics031";
@@ -278,6 +282,11 @@ export function GuidedReading({
                     </tbody>
                   </table>
                 </div>
+              )}
+              {sectionFigureGuideIds.has(guide.id) && (
+                <Suspense fallback={null}>
+                  <SectionFigure guideId={guide.id} title={section.title} />
+                </Suspense>
               )}
               {i === visualSection && <VisualLab id={guide.id} />}
             </section>
