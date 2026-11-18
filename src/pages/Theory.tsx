@@ -13,6 +13,7 @@ import { clarifiedGuideView } from "../learning/guidePresentation028";
 import { TheoryReviewAction } from "../components/LearningReviews";
 import { TopicCompletion } from "../components/StudyPlanning";
 import { lessonTopic, topicLessons } from "../domain/studyPlan";
+import { OriginalExerciseReader } from "../learning/OriginalExerciseReader";
 const NarrativeRecall = lazy(() =>
   import("../learning/NarrativeExplorer").then((module) => ({
     default: module.NarrativeRecall,
@@ -106,6 +107,13 @@ export function Theory({
               <NarrativeRecall id={lesson.id} />
             </Suspense>
           )}
+          <OriginalExerciseReader
+            lessonId={lesson.id}
+            onPractice={(id) => {
+              const set = lessonById(id);
+              if (set) practice(set);
+            }}
+          />
           <Suspense fallback={<p role="status">Video önerileri açılıyor…</p>}>
             <VideoRecommendations031 lessonId={lesson.id} />
           </Suspense>

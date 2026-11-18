@@ -106,11 +106,23 @@ import {
   sourceMath032TopicMap,
   supplementalSourceTopics032,
 } from "../data/supplementalSourceTopics032";
-import { sourceMath036037TopicMap, supplementalSourceTopics036037 } from "../data/supplementalSourceTopics036037";
-import { sourceMath038TopicMap, supplementalSourceTopics038 } from "../data/supplementalSourceTopics038";
-import { sourceMath039TopicMap, supplementalSourceTopics039 } from "../data/supplementalSourceTopics039";
+import {
+  sourceMath036037TopicMap,
+  supplementalSourceTopics036037,
+} from "../data/supplementalSourceTopics036037";
+import {
+  sourceMath038TopicMap,
+  supplementalSourceTopics038,
+} from "../data/supplementalSourceTopics038";
+import {
+  sourceMath039TopicMap,
+  supplementalSourceTopics039,
+} from "../data/supplementalSourceTopics039";
 import { lessons } from "./content";
-import { sourceMath034035TopicMap, supplementalSourceTopics034035 } from "../data/supplementalSourceTopics034035";
+import {
+  sourceMath034035TopicMap,
+  supplementalSourceTopics034035,
+} from "../data/supplementalSourceTopics034035";
 import {
   sourceMath033TopicMap,
   supplementalSourceTopics033,
@@ -150,6 +162,8 @@ export const studyTopicById = (id: string) =>
   studyTopics.find((t) => t.id === id);
 // Only reviewed one-to-one subject/topic associations; no fuzzy learning credit.
 export const lessonTopic: Record<string, string> = {
+  "tyt-mat-uslu-ifadeler-ogm-kaynak-sorulari-024":
+    "topic-tyt-mat-uslu-sayilar-kaynak-039",
   ...geometryFoundation031TopicMap,
   ...geometryExpansion032TopicMap,
   ...sourceMath032TopicMap,

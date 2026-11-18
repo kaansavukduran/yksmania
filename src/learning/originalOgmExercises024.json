@@ -1,0 +1,369 @@
+[
+  {
+    "id": "source-ogm-uslu-ifadeler-p01-q01",
+    "number": 1,
+    "stem": "(4^(-7) · 16 · 32^3) / (2^6 · 8^3 · 64^(-2)) işleminin sonucu kaçtır?",
+    "options": ["1/4", "1/2", "1", "2", "4"],
+    "correctIndex": 4,
+    "clarifications": [],
+    "teachingSolution": {
+      "knowledge": "4, 8, 16, 32 ve 64 aynı asal tabanın kuvvetleridir. Aynı tabanlı çarpımda üsler toplanır; bölümde paydanın toplam üssü çıkarılır.",
+      "strategy": "Bütün tabanları 2 yap. Payın ve paydanın üslerini önce ayrı hesapla; en son bu iki üssü çıkar.",
+      "steps": [
+        {
+          "title": "Tabanları dönüştür",
+          "text": "4=2², 16=2⁴, 32=2⁵, 8=2³ ve 64=2⁶."
+        },
+        {
+          "title": "Payı hesapla",
+          "text": "4⁻⁷·16·32³ = 2⁻¹⁴·2⁴·2¹⁵ = 2⁵."
+        },
+        {
+          "title": "Paydayı hesapla",
+          "text": "2⁶·8³·64⁻² = 2⁶·2⁹·2⁻¹² = 2³."
+        },
+        {
+          "title": "Bölümü tamamla",
+          "text": "2⁵/2³ = 2^(5−3) = 2² = 4. Kaynaktaki doğru seçenek E’dir."
+        }
+      ],
+      "optionReasons": [
+        {
+          "label": "A",
+          "text": "1/4=2⁻² olur; doğru bölümde üs 5−3=2’dir, ters yönde 3−5 değildir."
+        },
+        {
+          "label": "B",
+          "text": "1/2=2⁻¹’dir. Pay 2⁵ ve payda 2³ olduğundan sonuç negatif üs taşımaz."
+        },
+        {
+          "label": "C",
+          "text": "1=2⁰ olurdu. Burada payın ve paydanın toplam üsleri eşit değildir: 5 ve 3."
+        },
+        {
+          "label": "D",
+          "text": "2=2¹’dir; son üs 1 değil, 5−3=2’dir."
+        },
+        {
+          "label": "E",
+          "text": "4=2²; bütün tabanlar 2’ye çevrilip üsler koşuluna uygun birleştirildiğinde elde edilen sonuç budur."
+        }
+      ],
+      "check": "Pay=32, payda=8; 32/8=4. Negatif üsler, pozitif tabanları karşılığa dönüştürür; sonucu negatif yapmaz.",
+      "commonError": "64⁻² içindeki −2’yi paydanın toplam üssüne yanlış taşımak veya bölümde üs çıkarma yönünü ters çevirmek."
+    },
+    "image": {
+      "width": 618,
+      "height": 254,
+      "alt": "Soru 1. (4^(-7) · 16 · 32^3) / (2^6 · 8^3 · 64^(-2)) işleminin sonucu kaçtır? Seçenekler: A) 1/4; B) 1/2; C) 1; D) 2; E) 4."
+    }
+  },
+  {
+    "id": "source-ogm-uslu-ifadeler-p01-q02",
+    "number": 2,
+    "stem": "a^(-6) · (-a)^4 · (-a)^5 / [(-a)^(-3) · (-a)^(-2)] ifadesinin eşiti aşağıdakilerden hangisidir?",
+    "options": ["-a^8", "-a^(-2)", "a^(-2)", "a^8", "a^10"],
+    "correctIndex": 3,
+    "clarifications": [
+      {
+        "kind": "implicit-domain",
+        "text": "a≠0 koşulu negatif kuvvetlerin tanımlılığından gelir. Bu, özgün soru metninden ayrı verilen uygulama açıklamasıdır; soru metni korunur."
+      }
+    ],
+    "teachingSolution": {
+      "knowledge": "Negatif üsler tabanın sıfır olmamasını gerektirir. −a’nın tek ve çift tam sayı kuvvetlerini ayır; bir kesre bölmek o kesrin karşılığıyla çarpmaktır.",
+      "strategy": "Pay ve paydayı a cinsinden ayrı sadeleştir. Dış eksi çarpanlarını ve üs farkını birbirine karıştırma.",
+      "steps": [
+        {
+          "title": "Tanım koşulunu belirle",
+          "text": "İfadede negatif a kuvvetleri bulunduğu için a≠0 olmalıdır."
+        },
+        {
+          "title": "Payı sadeleştir",
+          "text": "a⁻⁶·(−a)⁴·(−a)⁵ = a⁻⁶·a⁴·(−a⁵) = −a³."
+        },
+        {
+          "title": "Paydayı sadeleştir",
+          "text": "(−a)⁻³·(−a)⁻² = (−a⁻³)·a⁻² = −a⁻⁵."
+        },
+        {
+          "title": "Bölümü hesapla",
+          "text": "(−a³)/(−a⁻⁵) = a^(3−(−5)) = a⁸. İki dış eksi çarpanı sadeleşir. Kaynaktaki seçenek D’dir."
+        }
+      ],
+      "optionReasons": [
+        {
+          "label": "A",
+          "text": "−a⁸ dış eksi içerir. Oysa paydaki ve paydadaki dış eksi çarpanları birbirini götürür."
+        },
+        {
+          "label": "B",
+          "text": "Hem dış eksi hem −2 üssü yanlıştır; doğru işlem a³/a⁻⁵=a⁸ verir."
+        },
+        {
+          "label": "C",
+          "text": "a⁻², paydayı bölerken üs farkını doğru izlememiş olur. Buradaki fark 3−(−5)=8’dir."
+        },
+        {
+          "label": "D",
+          "text": "a⁸ doğru sadeleştirmedir; a≠0 koşulunda özgün ifadeyle aynıdır."
+        },
+        {
+          "label": "E",
+          "text": "a¹⁰ olmaz; payın üssü 3, paydanın üssü −5 olduğundan sonuç üssü 8’dir."
+        }
+      ],
+      "check": "a=2 için pay=−8, payda=−1/32; bölüm256=2⁸ olur. Bu tek sayı örneği genel çözümün yerine değil, sonucunu denetlemek için kullanılır.",
+      "commonError": "“Pay ve payda mutlaka negatiftir” demek de doğru değildir; a’nın işareti bilinmez. Sadeleşenler iki dış eksi çarpanıdır."
+    },
+    "image": {
+      "width": 618,
+      "height": 342,
+      "alt": "Soru 2. a^(-6) · (-a)^4 · (-a)^5 / [(-a)^(-3) · (-a)^(-2)] ifadesinin eşiti aşağıdakilerden hangisidir? Seçenekler: A) -a^8; B) -a^(-2); C) a^(-2); D) a^8; E) a^10."
+    }
+  },
+  {
+    "id": "source-ogm-uslu-ifadeler-p01-q03",
+    "number": 3,
+    "stem": "5^x=2 olduğuna göre (25)^(2x+1) ifadesinin değeri kaçtır?",
+    "options": ["80", "120", "200", "300", "400"],
+    "correctIndex": 4,
+    "clarifications": [],
+    "teachingSolution": {
+      "knowledge": "25=5². Pozitif tabanda kuvvetin kuvvetinde üsler çarpılır; aynı tabanın toplam üssü çarpıma ayrılır.",
+      "strategy": "İfadeyi verilen 5^x’in kuvveti ve sabit bir çarpan halinde yaz.",
+      "steps": [
+        {
+          "title": "Tabanı verilen tabana çevir",
+          "text": "(25)^(2x+1) = (5²)^(2x+1) = 5^(4x+2)."
+        },
+        {
+          "title": "Verilen kuvveti ayır",
+          "text": "5^(4x+2) = 5²·(5^x)⁴."
+        },
+        {
+          "title": "5^x=2 bilgisini kullan",
+          "text": "25·2⁴ = 25·16 = 400. Kaynaktaki seçenek E’dir."
+        }
+      ],
+      "optionReasons": [
+        {
+          "label": "A",
+          "text": "80=5·16’dır; sabit çarpan 5 değil, 5²=25 olmalıdır."
+        },
+        {
+          "label": "B",
+          "text": "Verilen bağıntı 25·2⁴=25·16 getirir. 120 bu çarpımın sonucu değildir."
+        },
+        {
+          "label": "C",
+          "text": "200=25·8’dir; fakat 2⁴=16, 8 değildir."
+        },
+        {
+          "label": "D",
+          "text": "300=25·12’dir; burada gereken 2⁴ değeri 12 değil 16’dır."
+        },
+        {
+          "label": "E",
+          "text": "400=25·16, verilen 5^x=2 bağıntısıyla elde edilen tam sonuçtur."
+        }
+      ],
+      "check": "Ara üs4x+2’dir. (2x+1) ifadesindeki her iki terim de dıştaki2 ile çarpılır.",
+      "commonError": "(5²)^(2x+1) içindeki dış2’yi yalnız x’li terime uygulamak veya 5^(4x+2)’deki sabit5² çarpanını düşürmek."
+    },
+    "image": {
+      "width": 618,
+      "height": 210,
+      "alt": "Soru 3. 5^x=2 olduğuna göre (25)^(2x+1) ifadesinin değeri kaçtır? Seçenekler: A) 80; B) 120; C) 200; D) 300; E) 400."
+    }
+  },
+  {
+    "id": "source-ogm-uslu-ifadeler-p01-q04",
+    "number": 4,
+    "stem": "15^x=a, 3^x=b olduğuna göre 75^(2x)'in a ve b türünden değeri kaçtır?",
+    "options": ["a^4/b^2", "a^3/b^2", "a^2/b^3", "a^4/b^4", "a/b^2"],
+    "correctIndex": 0,
+    "clarifications": [
+      {
+        "kind": "identity-scope",
+        "text": "Şıklar verilen bağıntılarla genel cebirsel eşitlik olarak karşılaştırılır; yalnız x=0 gibi özel bir değerde şıkların tesadüfen aynı çıkması çözümün yerine geçmez."
+      }
+    ],
+    "teachingSolution": {
+      "knowledge": "75=15²/3. Pozitif tabanlar, gerçel x için kuvvet kurallarını kullanmaya izin verir; b=3^x sıfır olmaz.",
+      "strategy": "75’i doğrudan verilen 15 ve3 tabanlarından kur; 2x kuvvetini sonradan uygula.",
+      "steps": [
+        {
+          "title": "Ara tabanı kur",
+          "text": "75 = 15²/3."
+        },
+        {
+          "title": "2x kuvvetini uygula",
+          "text": "75^(2x) = 15^(4x)/3^(2x)."
+        },
+        {
+          "title": "Verilenleri yerine koy",
+          "text": "15^(4x)=(15^x)⁴=a⁴ ve 3^(2x)=(3^x)²=b²."
+        },
+        {
+          "title": "Sonucu yaz",
+          "text": "75^(2x)=a⁴/b². Kaynaktaki seçenek A’dır."
+        }
+      ],
+      "optionReasons": [
+        {
+          "label": "A",
+          "text": "a⁴/b², 15^(4x)/3^(2x) ifadesinin verilenlere göre tam karşılığıdır."
+        },
+        {
+          "label": "B",
+          "text": "Payda b² doğru olsa da pay a³ değil a⁴ olmalıdır; 15² tabanı 2x kuvvetine alınır."
+        },
+        {
+          "label": "C",
+          "text": "Hem pay hem payda üsleri değişmiştir. Doğru çift a⁴ ve b²’dir, a² ve b³ değildir."
+        },
+        {
+          "label": "D",
+          "text": "Pay a⁴ doğrudur; fakat 3^(2x)=(3^x)²=b², b⁴ değildir."
+        },
+        {
+          "label": "E",
+          "text": "Pay a değil a⁴ olmalıdır; verilen 15^x’in dördüncü kuvveti gerekir."
+        }
+      ],
+      "check": "x=1 için a=15, b=3: a⁴/b²=50625/9=5625=75². Genel bağıntı çözüldükten sonra kontrol edilir.",
+      "commonError": "75’i15·5 diye ayırıp verilen olmayan5^x’i bırakmak ya da 2x’i yalnız paya uygulamak."
+    },
+    "image": {
+      "width": 618,
+      "height": 297,
+      "alt": "Soru 4. 15^x=a, 3^x=b olduğuna göre 75^(2x)'in a ve b türünden değeri kaçtır? Seçenekler: A) a^4/b^2; B) a^3/b^2; C) a^2/b^3; D) a^4/b^4; E) a/b^2."
+    }
+  },
+  {
+    "id": "source-ogm-uslu-ifadeler-p01-q05",
+    "number": 5,
+    "stem": "2^x=a, 3^x=b, 5^x=c olarak veriliyor. Buna göre (0,72)^x sayısının a, b, c cinsinden yazılışı aşağıdakilerden hangisidir?",
+    "options": [
+      "a·b^2·c^2",
+      "a·b^2·c^(-2)",
+      "a·b·c^2",
+      "a^2·b^2·c",
+      "a^2·b·c^(-2)"
+    ],
+    "correctIndex": 1,
+    "clarifications": [
+      {
+        "kind": "typesetting",
+        "text": "Özgün görselde üç verilen sağ süslü ayraçla gruplanmıştır. Erişilebilir metinde aynı üç eşitlik ayrı satırlar halinde korunur."
+      },
+      {
+        "kind": "identity-scope",
+        "text": "Genel cebirsel özdeşlik aranır; tek bir özel x değerinde sayısal eşitlik tek başına yeterli değildir."
+      }
+    ],
+    "teachingSolution": {
+      "knowledge": "Sonlu ondalığı önce kesre çevir: 0,72=72/100=18/25. Pay ve paydayı asal tabanlarına ayır.",
+      "strategy": "0,72’yi verilen 2, 3, 5 tabanlarının çarpımı/bölümü halinde yazıp sonra x kuvvetini al.",
+      "steps": [
+        {
+          "title": "Ondalığı asal çarpanlarla yaz",
+          "text": "0,72=18/25=(2·3²)/5²."
+        },
+        {
+          "title": "x kuvvetini uygula",
+          "text": "(0,72)^x = 2^x·(3^x)²·(5^x)⁻²."
+        },
+        {
+          "title": "a, b, c ile yaz",
+          "text": "2^x=a,3^x=b,5^x=c olduğundan sonuç a·b²·c⁻²’dir. Kaynaktaki seçenek B’dir."
+        }
+      ],
+      "optionReasons": [
+        {
+          "label": "A",
+          "text": "c² payda yerine paya taşınmış olur; 5² başlangıçta paydadır ve c⁻² gerekir."
+        },
+        {
+          "label": "B",
+          "text": "Asal tabanların üsleri 2 için 1, 3 için 2, 5 için −2’dir; a·b²·c⁻² doğrudur."
+        },
+        {
+          "label": "C",
+          "text": "b’nin üssü1 değil2 olmalı; ayrıca c² değil c⁻² gerekir."
+        },
+        {
+          "label": "D",
+          "text": "a² ve c’nin pozitif birinci kuvveti verilen asal çarpan ayrımına uymaz; doğru üsler1,2,−2’dir."
+        },
+        {
+          "label": "E",
+          "text": "c⁻² doğru yerde olsa da a ve b’nin üsleri yer değiştirmiştir; a¹·b² gerekir."
+        }
+      ],
+      "check": "x=1 için a=2, b=3, c=5: a·b²/c²=2·9/25=18/25=0,72.",
+      "commonError": "0,72’yi72 sanmak, 100 paydasını kaybetmek veya 5’in paydadaki kuvvetini pozitif c kuvveti diye yazmak."
+    },
+    "image": {
+      "width": 546,
+      "height": 462,
+      "alt": "Soru 5. 2^x=a, 3^x=b, 5^x=c olarak veriliyor. Buna göre (0,72)^x sayısının a, b, c cinsinden yazılışı aşağıdakilerden hangisidir? Seçenekler: A) a·b^2·c^2; B) a·b^2·c^(-2); C) a·b·c^2; D) a^2·b^2·c; E) a^2·b·c^(-2)."
+    }
+  },
+  {
+    "id": "source-ogm-uslu-ifadeler-p01-q06",
+    "number": 6,
+    "stem": "[5^(n+3)−2·5^(n+2)] / 5^(n+1) ifadesinin değeri kaçtır?",
+    "options": ["25", "20", "15", "10", "5"],
+    "correctIndex": 2,
+    "clarifications": [],
+    "teachingSolution": {
+      "knowledge": "Toplam veya farkta üsler doğrudan toplanmaz; ortak çarpan alınır. Aynı tabanlı bölümde üsler çıkarılır.",
+      "strategy": "Paydan önce paydaki en küçük ortak kuvvet 5^(n+2)’yi dışarı al.",
+      "steps": [
+        {
+          "title": "Payı çarpanlarına ayır",
+          "text": "5^(n+3)−2·5^(n+2)=5^(n+2)·(5−2)=3·5^(n+2)."
+        },
+        {
+          "title": "Paydayla sadeleştir",
+          "text": "3·5^(n+2)/5^(n+1)=3·5^((n+2)−(n+1))=3·5¹."
+        },
+        {
+          "title": "Sonucu bul",
+          "text": "3·5=15. Kaynaktaki seçenek C’dir."
+        }
+      ],
+      "optionReasons": [
+        {
+          "label": "A",
+          "text": "25=5²’dir; paydaki katsayı 3 ve kalan kuvvet5¹ birlikte kullanılmalıdır."
+        },
+        {
+          "label": "B",
+          "text": "20=4·5 olurdu. Ortak çarpan sonrasında katsayı 5−2=3’tür,4 değildir."
+        },
+        {
+          "label": "C",
+          "text": "15=3·5, doğru ortak çarpan ve üs farkının sonucudur."
+        },
+        {
+          "label": "D",
+          "text": "10=2·5, payın ortak çarpanından kalan 5−2 katsayısını yanlışlıkla2 yapar."
+        },
+        {
+          "label": "E",
+          "text": "5 yalnız kuvvet bölümünün sonucudur; paydan gelen 3 katsayısı da çarpılmalıdır."
+        }
+      ],
+      "check": "n=0 için (125−2·25)/5=(125−50)/5=75/5=15. n değişse de pay ve paydadaki ortak kuvvetler sadeleşir.",
+      "commonError": "Fark içindeki iki üssü çıkararak tek kuvvet üretmek veya ortak çarpandan kalan 5−2 katsayısını unutmak."
+    },
+    "image": {
+      "width": 516,
+      "height": 255,
+      "alt": "Soru 6. [5^(n+3)−2·5^(n+2)] / 5^(n+1) ifadesinin değeri kaçtır? Seçenekler: A) 25; B) 20; C) 15; D) 10; E) 5."
+    }
+  }
+]

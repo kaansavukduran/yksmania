@@ -10,6 +10,8 @@ import type { Lesson, ReviewStage } from "../domain/model";
 import { PastExamQuestions } from "../components/PastExamQuestions";
 import { Theory } from "./Theory";
 import { StudyTimer } from "../components/StudyTimer";
+import { OriginalExerciseReader } from "../learning/OriginalExerciseReader";
+import { isSourceQuestionLesson } from "../learning/sourceExercises024";
 export function Topic({
   id,
   mode,
@@ -81,7 +83,12 @@ export function Topic({
               >
                 <span>
                   {l(lesson.title)}
-                  <small>{lesson.questions.length} özgün soru</small>
+                  <small>
+                    {lesson.questions.length}{" "}
+                    {isSourceQuestionLesson(lesson.id)
+                      ? "kaynak sorusu"
+                      : "özgün soru"}
+                  </small>
                 </span>
                 <ArrowRight size={18} />
               </button>
@@ -108,6 +115,19 @@ export function Topic({
             </button>
           </>
         )}
+        {mode === "questions" &&
+          narratives
+            .filter((lesson) => !lesson.tags.includes("soru-seti"))
+            .map((lesson) => (
+              <OriginalExerciseReader
+                key={lesson.id}
+                lessonId={lesson.id}
+                onPractice={(id) => {
+                  const set = available.find((lesson) => lesson.id === id);
+                  if (set) practice(set);
+                }}
+              />
+            ))}
         {mode === "questions" && (
           <PastExamQuestions topicId={topic.id} subjectId={topic.subjectId} />
         )}

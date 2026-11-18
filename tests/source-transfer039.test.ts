@@ -92,18 +92,18 @@ it("manual039 theory completion preserves old data and original day1→3/7/21 po
   expect(old.topicProgress[topic]).toBeUndefined();
 });
 
-it("preserves the approved teaching and CSS while separately guarding C7 state and C8 log corrections", () => {
+it("preserves approved teaching with pinned C10 choice CSS, C7 state and C8 log corrections", () => {
   const stable = {
     "../src/learning/powersSource039.ts": "3498df592bba7e7d5d716bc7991fe6aaccc29a40d90e8e110e9d0574a06f897b",
-    "../src/learning/PowersSource039Lab.css": "20160d75b8d773d71ef4b092f85007f9c389970990db4b90a28939c345f5f076",
+    "../src/learning/PowersSource039Lab.css": "acc2f37950759ab95e0a40099cbbd91d406f517b59b4f06412aeb361f98b8079",
   };
   for (const [file, expected] of Object.entries(stable))
     expect(createHash("sha256").update(readFileSync(new URL(file, import.meta.url))).digest("hex"), file).toBe(expected);
   const lab = readFileSync(new URL("../src/learning/PowersSource039Lab.tsx", import.meta.url), "utf8");
   expect((lab.match(/usePower039State(?:<[^>]+>)?\(/g) ?? [])).toHaveLength(40);
   expect(lab).not.toMatch(/useState\(/);
-  expect(lessons).toHaveLength(535);
-  expect(lessons.flatMap((value) => value.questions)).toHaveLength(6411);
+  expect(lessons).toHaveLength(536);
+  expect(lessons.flatMap((value) => value.questions)).toHaveLength(6417);
   expect(lessonGuides.size).toBe(501);
   expect(builtInCheatSheets.size).toBe(501);
   expect(studyTopics).toHaveLength(500);

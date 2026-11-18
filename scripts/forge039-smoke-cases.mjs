@@ -1,6 +1,18 @@
 import { expect } from "@playwright/test";
 
 const panel = (lab) => lab.locator(".f039-panel:visible");
+const modes = {
+  anatomy: "Çarpan ve işaret", laws: "Aynı taban", same: "Aynı üs",
+  factor: "Ortak çarpan", prime: "Verilen kuvvet", equation: "Denklem",
+  compare: "Karşılaştırma", scientific: "Bilimsel ölçek",
+  rational: "Kesirli üs", growth: "Adım ve süreç",
+};
+async function choice(root, group, name) {
+  const button = root.getByRole("group", { name: group, exact: true })
+    .getByRole("button", { name, exact: true });
+  await button.click();
+  await expect(button).toHaveAttribute("aria-pressed", "true");
+}
 const facts = (lab, name) => panel(lab).locator(".f039-facts > div").filter({
   has: lab.page().locator("dt", { hasText: name }),
 }).locator("dd");
@@ -28,8 +40,7 @@ export const forge039SmokeCases = [{
   persisted: { "PowersSource039Lab.mode": "growth", "Growth.q": "0", "Growth.steps": 0 },
   async act(lab, onMode = async () => {}) {
     const choose = async (name) => {
-      await lab.getByRole("combobox", { name: "Keşif modeli", exact: true }).selectOption(name);
-      await expect(lab.getByRole("combobox", { name: "Keşif modeli", exact: true })).toHaveValue(name);
+      await choice(lab, "Keşif modeli", modes[name]);
     };
     await choose("anatomy");
     await expect(facts(lab,"Sonuç")).toHaveText("16");
@@ -66,17 +77,17 @@ export const forge039SmokeCases = [{
 
     await choose("equation");
     await expect(facts(lab,"Tek çözüm")).toHaveText("x=7");
-    await panel(lab).getByRole("combobox",{name:"Ortak taban",exact:true}).selectOption("1");
+    await choice(panel(lab), "Ortak taban", "1");
     await expect(facts(lab,"Çözüm durumu")).toHaveText("Bütün gerçek sayılar");
     await expect(panel(lab).locator("svg")).toHaveCount(0);
-    await panel(lab).getByRole("combobox",{name:"Ortak taban",exact:true}).selectOption("half");
+    await choice(panel(lab), "Ortak taban", "1/2");
     await expect(facts(lab,"Tek çözüm")).toHaveText("x=7");
     await onMode("equation");
 
     await choose("compare");
     await expect(facts(lab,"Tam karşılaştırma")).toHaveText("1/16 > 1/128");
     await expect(panel(lab).locator("svg rect").first()).toHaveAttribute("width","250");
-    await panel(lab).getByRole("combobox",{name:"İlk taban",exact:true}).selectOption("-2");
+    await choice(panel(lab), "İlk taban", "−2");
     await expect(facts(lab,"Tam karşılaştırma")).toHaveText("16 > −128");
     await onMode("compare");
 
@@ -89,12 +100,12 @@ export const forge039SmokeCases = [{
     await expect(facts(lab,"Tam sonuç")).toHaveText("−990000000");
     await expect(panel(lab).locator("svg circle")).toHaveCount(0);
     await coefficient.press("End"); await range(lab,"İlk 10 kuvveti",9);
-    await panel(lab).getByRole("combobox",{name:"İşlem",exact:true}).selectOption("multiply");
+    await choice(panel(lab), "İşlem", "İki sayıyı çarp");
     await range(lab,"İkinci katsayı",99); await range(lab,"İkinci 10 kuvveti",9);
     await expect(facts(lab,"Tam sonuç")).toHaveText("98010000000000000000");
     await expect(panel(lab).locator("figcaption")).toContainText("aralığın dışında");
     await expect(panel(lab).locator("svg circle")).toHaveAttribute("cx","596");
-    await panel(lab).getByRole("combobox",{name:"İşlem",exact:true}).selectOption("add");
+    await choice(panel(lab), "İşlem", "İki sayıyı topla");
     await range(lab,"İkinci katsayı",-99);
     await expect(facts(lab,"Tam sonuç")).toHaveText("0");
     await expect(panel(lab).locator("svg circle")).toHaveCount(0);
@@ -115,7 +126,7 @@ export const forge039SmokeCases = [{
 
     await choose("growth");
     await expect(facts(lab,"Seçili adımdaki miktar")).toHaveText("12800");
-    await panel(lab).getByRole("combobox",{name:"Her tamamlanan adımın çarpanı",exact:true}).selectOption("0");
+    await choice(panel(lab), "Her tamamlanan adımın çarpanı", "0 (ilk adımdan sonra 0)");
     await range(lab,"Tamamlanan adım",0);
     await expect(facts(lab,"Seçili adımdaki miktar")).toHaveText("200");
     await expect(facts(lab,"Davranış")).toHaveText("başlangıç değeri");
@@ -128,8 +139,8 @@ export const forge039SmokeCases = [{
     await choose("growth");
   },
   async assertModel(lab) {
-    await expect(lab.getByRole("combobox",{name:"Keşif modeli",exact:true})).toHaveValue("growth");
-    await expect(panel(lab).getByRole("combobox",{name:"Her tamamlanan adımın çarpanı",exact:true})).toHaveValue("0");
+    await expect(lab.getByRole("group",{name:"Keşif modeli",exact:true}).getByRole("button",{name:"Adım ve süreç",exact:true})).toHaveAttribute("aria-pressed","true");
+    await expect(panel(lab).getByRole("group",{name:"Her tamamlanan adımın çarpanı",exact:true}).getByRole("button",{name:"0 (ilk adımdan sonra 0)",exact:true})).toHaveAttribute("aria-pressed","true");
     await expect(panel(lab).getByRole("slider",{name:"Tamamlanan adım",exact:true})).toHaveValue("0");
     await expect(facts(lab,"Seçili adımdaki miktar")).toHaveText("200");
   },

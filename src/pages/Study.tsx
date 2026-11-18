@@ -18,6 +18,8 @@ import { StudyTimer } from "../components/StudyTimer";
 import { QuestionHelp } from "../components/QuestionHelp";
 import { helpPanels, previousHelpPanelCount } from "../learning/questionHelp";
 import { effectiveHelpLevel } from "../learning/helpProgression";
+import { SourceQuestionFigure } from "../learning/SourceQuestionFigure";
+import { sourceQuestionPresentation } from "../learning/sourceExercises024";
 export function Study({ navigate }: { navigate: (s: string) => void }) {
   const { state, t, l, update, commit, toast } = useApp();
   const [busy, setBusy] = useState(false);
@@ -45,6 +47,7 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
     explanation: l(question.explanation),
     guidance: question.guidance,
   };
+  const sourcePresentation = sourceQuestionPresentation(helpQuestion);
   const panels = helpPanels(helpQuestion),
     previousCount = previousHelpPanelCount(helpQuestion),
     visibleHelpLevel = effectiveHelpLevel(
@@ -208,7 +211,9 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
             <span>
               {t("question")} {draft.index + 1} / {lesson.questions.length}
             </span>
-            <span className="small muted">{t("original")}</span>
+            <span className="small muted">
+              {sourcePresentation?.source.shortLabel ?? t("original")}
+            </span>
           </div>
           <progress
             aria-label={t("progress")}
@@ -221,6 +226,9 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
             </section>
           )}
           <h2>{l(question.prompt)}</h2>
+          {sourcePresentation?.figure && (
+            <SourceQuestionFigure figure={sourcePresentation.figure} />
+          )}
           <div
             className="answer-options"
             role="group"
