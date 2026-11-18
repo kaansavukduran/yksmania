@@ -1,0 +1,615 @@
+{
+  "source": "approved-source039-c6",
+  "packSHA256": "d1d50f6673c813ce7701748dd54b0b5a3617a800d5ee2839ab6fdad10df93809",
+  "unit": {
+    "id": "tyt-mat-uslu-sayilar-kaynak-039",
+    "title": "Üslü sayılar: çarpan, koşul ve ölçeğin mantığı",
+    "cards": [
+      {
+        "prompt": "3^4 ifadesinin değeri kaçtır?",
+        "options": [
+          "81",
+          "12",
+          "64",
+          "27",
+          "243"
+        ],
+        "correct": "81"
+      },
+      {
+        "prompt": "(-2)^6 kaçtır?",
+        "options": [
+          "64",
+          "-64",
+          "-12",
+          "12",
+          "32"
+        ],
+        "correct": "64"
+      },
+      {
+        "prompt": "Parantez bulunmayan -3^4 yazımının değeri kaçtır?",
+        "options": [
+          "-81",
+          "81",
+          "-12",
+          "12",
+          "-64"
+        ],
+        "correct": "-81"
+      },
+      {
+        "prompt": "(-5)^3 ifadesinin sonucu nedir?",
+        "options": [
+          "-125",
+          "125",
+          "-15",
+          "15",
+          "-625"
+        ],
+        "correct": "-125"
+      },
+      {
+        "prompt": "(7/3)^0 kaçtır?",
+        "options": [
+          "1",
+          "0",
+          "7/3",
+          "3/7",
+          "7"
+        ],
+        "correct": "1"
+      },
+      {
+        "prompt": "4^(-2) kaçtır?",
+        "options": [
+          "1/16",
+          "-16",
+          "16",
+          "1/8",
+          "-1/16"
+        ],
+        "correct": "1/16"
+      },
+      {
+        "prompt": "Bu ünitenin gerçek sayı tanımında 0^(-2) için hangisi doğrudur?",
+        "options": [
+          "Tanımlı değildir; 1/0 gerektirir.",
+          "0’dır.",
+          "1’dir.",
+          "-1’dir.",
+          "Sonsuz bir gerçek sayıdır."
+        ],
+        "correct": "Tanımlı değildir; 1/0 gerektirir."
+      },
+      {
+        "prompt": "0^5 ifadesinin değeri kaçtır?",
+        "options": [
+          "0",
+          "1",
+          "5",
+          "-5",
+          "Tanımsız"
+        ],
+        "correct": "0"
+      },
+      {
+        "prompt": "(-1)^41 kaçtır?",
+        "options": [
+          "-1",
+          "1",
+          "-41",
+          "41",
+          "0"
+        ],
+        "correct": "-1"
+      },
+      {
+        "prompt": "(-2)^(-3) kaçtır?",
+        "options": [
+          "-1/8",
+          "1/8",
+          "-8",
+          "8",
+          "-1/6"
+        ],
+        "correct": "-1/8"
+      },
+      {
+        "prompt": "2^4·2^7 ifadesi hangisine eşittir?",
+        "options": [
+          "2^11",
+          "2^28",
+          "2^3",
+          "4^11",
+          "2^12"
+        ],
+        "correct": "2^11"
+      },
+      {
+        "prompt": "7^6/7^2 ifadesi hangisine eşittir?",
+        "options": [
+          "7^4",
+          "7^3",
+          "7^8",
+          "1^4",
+          "7^12"
+        ],
+        "correct": "7^4"
+      },
+      {
+        "prompt": "(3^2)^4 ifadesi hangisine eşittir?",
+        "options": [
+          "3^8",
+          "3^6",
+          "3^16",
+          "9^8",
+          "12^2"
+        ],
+        "correct": "3^8"
+      },
+      {
+        "prompt": "(2·5)^3 işleminin sonucu kaçtır?",
+        "options": [
+          "1000",
+          "30",
+          "250",
+          "125",
+          "100"
+        ],
+        "correct": "1000"
+      },
+      {
+        "prompt": "(3/4)^(-2) kaçtır?",
+        "options": [
+          "16/9",
+          "9/16",
+          "-9/16",
+          "4/3",
+          "-16/9"
+        ],
+        "correct": "16/9"
+      },
+      {
+        "prompt": "2^5·5^5 ifadesi hangisine eşittir?",
+        "options": [
+          "10^5",
+          "7^5",
+          "10^10",
+          "2^25",
+          "25^5"
+        ],
+        "correct": "10^5"
+      },
+      {
+        "prompt": "(4^3·8^2)/2^5 işleminin sonucu kaçtır?",
+        "options": [
+          "128",
+          "64",
+          "32",
+          "256",
+          "1024"
+        ],
+        "correct": "128"
+      },
+      {
+        "prompt": "(9^2·27)/3^4 işleminin sonucu kaçtır?",
+        "options": [
+          "27",
+          "3",
+          "9",
+          "81",
+          "243"
+        ],
+        "correct": "27"
+      },
+      {
+        "prompt": "3·2^5+5·2^5 kaçtır?",
+        "options": [
+          "256",
+          "2^15",
+          "2^25",
+          "16",
+          "64"
+        ],
+        "correct": "256"
+      },
+      {
+        "prompt": "n negatif olmayan bir tam sayı olsun. 5^(n+3)−2·5^(n+2) ifadesinin eşiti hangisidir?",
+        "options": [
+          "3·5^(n+2)",
+          "3·5^(2 n+5)",
+          "5^(n+1)",
+          "5^(n+2)",
+          "-5^(n+2)"
+        ],
+        "correct": "3·5^(n+2)"
+      },
+      {
+        "prompt": "2^3+2^4 işleminin sonucu kaçtır?",
+        "options": [
+          "24",
+          "128",
+          "16",
+          "32",
+          "64"
+        ],
+        "correct": "24"
+      },
+      {
+        "prompt": "(1+2)^2−(1^2+2^2) işleminin sonucu kaçtır?",
+        "options": [
+          "4",
+          "0",
+          "9",
+          "5",
+          "-4"
+        ],
+        "correct": "4"
+      },
+      {
+        "prompt": "a sıfırdan farklı bir gerçek sayı; m ve n tam sayılardır. Hangisi bütün bu değerler için doğrudur?",
+        "options": [
+          "(a^m)^n=a^(m·n)",
+          "a^m+a^n=a^(m+n)",
+          "a^(-n)=−a^n",
+          "a^m/a^n=a^(m/n)",
+          "(a+a)^n=a^n+a^n"
+        ],
+        "correct": "(a^m)^n=a^(m·n)"
+      },
+      {
+        "prompt": "x gerçek sayıdır. 2^x=A ve 3^x=B veriliyor. 6^x her gerçek x için daima hangisine eşittir?",
+        "options": [
+          "A·B",
+          "A+B",
+          "A^B",
+          "A/B",
+          "A^2+B^2"
+        ],
+        "correct": "A·B"
+      },
+      {
+        "prompt": "x gerçek sayıdır. 3^x=A ve 5^x=B ise 75^x her gerçek x için daima hangisine eşittir?",
+        "options": [
+          "A·B^2",
+          "A^2·B",
+          "A+B^2",
+          "(A·B)^2",
+          "A·B"
+        ],
+        "correct": "A·B^2"
+      },
+      {
+        "prompt": "x gerçek sayıdır. 2^x=A, 3^x=B, 5^x=C veriliyor. 0,18^x her gerçek x için daima hangisine eşittir?",
+        "options": [
+          "B^2/(A·C^2)",
+          "A·B^2/C^2",
+          "B/(A·C)",
+          "A·B/C^2",
+          "B^2/(A^2·C)"
+        ],
+        "correct": "B^2/(A·C^2)"
+      },
+      {
+        "prompt": "x gerçek sayı ve 2^x=5 olduğuna göre 8^x kaçtır?",
+        "options": [
+          "125",
+          "15",
+          "25",
+          "40",
+          "625"
+        ],
+        "correct": "125"
+      },
+      {
+        "prompt": "x gerçek sayı ve 2^x=3 ise 4^(x+1) kaçtır?",
+        "options": [
+          "36",
+          "12",
+          "18",
+          "9",
+          "81"
+        ],
+        "correct": "36"
+      },
+      {
+        "prompt": "x gerçek sayıdır. 8^(x-1)=4^(x+2) denkleminin çözümü kaçtır?",
+        "options": [
+          "7",
+          "5",
+          "-7",
+          "2",
+          "1"
+        ],
+        "correct": "7"
+      },
+      {
+        "prompt": "9^(x-1)=27 ve x gerçek sayı ise x kaçtır?",
+        "options": [
+          "5/2",
+          "3/2",
+          "2",
+          "3",
+          "1/2"
+        ],
+        "correct": "5/2"
+      },
+      {
+        "prompt": "x gerçek sayıdır. 1^(2 x+3)=1^(x-4) denkleminin çözüm kümesi nedir?",
+        "options": [
+          "Bütün gerçek sayılar",
+          "Yalnız -7",
+          "Yalnız 0",
+          "Boş küme",
+          "Yalnız 1"
+        ],
+        "correct": "Bütün gerçek sayılar"
+      },
+      {
+        "prompt": "x gerçek sayıdır. 3^(2 x+1)=3^(2 x+4) denklemi için hangisi doğrudur?",
+        "options": [
+          "Gerçek çözümü yoktur",
+          "x=1",
+          "x=3",
+          "x=-3/2",
+          "Bütün gerçek sayılar çözümdür"
+        ],
+        "correct": "Gerçek çözümü yoktur"
+      },
+      {
+        "prompt": "(1/2)^8 ile (1/2)^5 arasındaki ilişki nedir?",
+        "options": [
+          "(1/2)^8 < (1/2)^5",
+          "(1/2)^8 > (1/2)^5",
+          "İkisi eşittir",
+          "İkisi de negatiftir",
+          "Karşılaştırmak için değerler yetersizdir"
+        ],
+        "correct": "(1/2)^8 < (1/2)^5"
+      },
+      {
+        "prompt": "2^18 ile 8^6 arasındaki ilişki nedir?",
+        "options": [
+          "Eşittir",
+          "2^18 daha büyüktür",
+          "8^6 daha büyüktür",
+          "İkisi de 2^24’e eşittir",
+          "İkisi de 16^6’ya eşittir"
+        ],
+        "correct": "Eşittir"
+      },
+      {
+        "prompt": "5^4 ile 5^2 nasıl sıralanır?",
+        "options": [
+          "5^4 > 5^2",
+          "5^4 < 5^2",
+          "Eşittir",
+          "Toplamları 5^6’dır",
+          "Bölümleri 5^8’dir"
+        ],
+        "correct": "5^4 > 5^2"
+      },
+      {
+        "prompt": "3^5 ile 5^3 karşılaştırıldığında hangisi doğrudur?",
+        "options": [
+          "3^5 > 5^3",
+          "3^5 < 5^3",
+          "Eşittir",
+          "İkisi de 15^8’dir",
+          "İkisi de 15’tir"
+        ],
+        "correct": "3^5 > 5^3"
+      },
+      {
+        "prompt": "8^(2/3) gerçek sayılarda kaçtır?",
+        "options": [
+          "4",
+          "2",
+          "16",
+          "64/3",
+          "-4"
+        ],
+        "correct": "4"
+      },
+      {
+        "prompt": "27^(-2/3) kaçtır?",
+        "options": [
+          "1/9",
+          "9",
+          "-9",
+          "1/3",
+          "-1/9"
+        ],
+        "correct": "1/9"
+      },
+      {
+        "prompt": "Gerçek sayılarda (-8)^(1/3) kaçtır?",
+        "options": [
+          "-2",
+          "2",
+          "-4",
+          "4",
+          "Gerçek sayılarda tanımsızdır"
+        ],
+        "correct": "-2"
+      },
+      {
+        "prompt": "Gerçek sayılarda (-16)^(1/2) için hangisi doğrudur?",
+        "options": [
+          "Gerçek sayılarda tanımlı değildir",
+          "-4",
+          "4",
+          "-8",
+          "0"
+        ],
+        "correct": "Gerçek sayılarda tanımlı değildir"
+      },
+      {
+        "prompt": "A=((−1)^2)^(1/2), B=(−1)^(2·1/2) olarak tanımlanıyor. Gerçek sayılarda A ve B nedir?",
+        "options": [
+          "A=1, B=-1",
+          "A=-1, B=-1",
+          "A=1, B=1",
+          "A=-1, B=1",
+          "İki ifade de tanımsızdır"
+        ],
+        "correct": "A=1, B=-1"
+      },
+      {
+        "prompt": "810 000 000 sayısının bilimsel gösterimi hangisidir?",
+        "options": [
+          "8,1×10^8",
+          "81×10^8",
+          "8,1×10^9",
+          "0,81×10^8",
+          "810×10^6"
+        ],
+        "correct": "8,1×10^8"
+      },
+      {
+        "prompt": "0,00042 sayısının bilimsel gösterimi nedir?",
+        "options": [
+          "4,2×10^-4",
+          "4,2×10^4",
+          "42×10^-4",
+          "4,2×10^-5",
+          "0,42×10^-3"
+        ],
+        "correct": "4,2×10^-4"
+      },
+      {
+        "prompt": "72×10^5 ifadesinin normalleştirilmiş bilimsel gösterimi hangisidir?",
+        "options": [
+          "7,2×10^6",
+          "7,2×10^4",
+          "7,2×10^5",
+          "72×10^6",
+          "0,72×10^7"
+        ],
+        "correct": "7,2×10^6"
+      },
+      {
+        "prompt": "0,36×10^8 ifadesi bilimsel standartta nasıl yazılır?",
+        "options": [
+          "3,6×10^7",
+          "3,6×10^9",
+          "3,6×10^8",
+          "36×10^6",
+          "0,036×10^9"
+        ],
+        "correct": "3,6×10^7"
+      },
+      {
+        "prompt": "(6×10^7)·(4×10^-3) çarpımının bilimsel gösterimi nedir?",
+        "options": [
+          "2,4×10^5",
+          "24×10^4",
+          "2,4×10^4",
+          "10×10^4",
+          "2,4×10^10"
+        ],
+        "correct": "2,4×10^5"
+      },
+      {
+        "prompt": "6×10^5 + 4×10^6 toplamının bilimsel gösterimi nedir?",
+        "options": [
+          "4,6×10^6",
+          "10×10^11",
+          "10×10^6",
+          "4,6×10^5",
+          "2,4×10^12"
+        ],
+        "correct": "4,6×10^6"
+      },
+      {
+        "prompt": "7,2×10^6 ile 9,1×10^5 pozitif sayıları nasıl sıralanır?",
+        "options": [
+          "7,2×10^6 > 9,1×10^5",
+          "7,2×10^6 < 9,1×10^5",
+          "Eşittir",
+          "Katsayısı büyük olan her zaman büyüktür",
+          "Karşılaştırılamaz"
+        ],
+        "correct": "7,2×10^6 > 9,1×10^5"
+      },
+      {
+        "prompt": "-2×10^5 ile -9×10^4 nasıl sıralanır?",
+        "options": [
+          "-2×10^5 < -9×10^4",
+          "-2×10^5 > -9×10^4",
+          "Eşittir",
+          "İkisi de pozitiftir",
+          "Büyük üs her işarette büyük sayı demektir"
+        ],
+        "correct": "-2×10^5 < -9×10^4"
+      },
+      {
+        "prompt": "Aşağıdakilerden hangisi sıfırdan farklı bir sayının normalleştirilmiş bilimsel gösterimidir?",
+        "options": [
+          "-3×10^4",
+          "31×10^4",
+          "0,3×10^4",
+          "10×10^-2",
+          "0×10^5"
+        ],
+        "correct": "-3×10^4"
+      },
+      {
+        "prompt": "Logaritmik ölçekli bir eksende 10, 100 ve 1000 eşit aralıklarla işaretleniyor. Her bir aralık hangi değişimi gösterir?",
+        "options": [
+          "Değerin 10 katına çıkmasını",
+          "Değere 90 eklenmesini",
+          "Değere 900 eklenmesini",
+          "Değerin karesinin alınmasını",
+          "Değerin yarıya inmesini"
+        ],
+        "correct": "Değerin 10 katına çıkmasını"
+      },
+      {
+        "prompt": "Başlangıçta 200 hücre vardır. Her tamamlanan saatte sayı iki katına çıkıyor. Altı saat sonunda kaç hücre vardır?",
+        "options": [
+          "12800",
+          "1200",
+          "6400",
+          "25600",
+          "202"
+        ],
+        "correct": "12800"
+      },
+      {
+        "prompt": "Başlangıç miktarı 80 birim olan bir madde her adım sonunda yarıya düşüyor. Dört adım sonunda kaç birim kalır?",
+        "options": [
+          "5",
+          "20",
+          "10",
+          "40",
+          "-5"
+        ],
+        "correct": "5"
+      },
+      {
+        "prompt": "Başlangıçta 50 puan olan bir dizide her adım sonunda puan üç katına çıkıyor. Dört adım sonunda kaç puan olur?",
+        "options": [
+          "4050",
+          "600",
+          "1350",
+          "12150",
+          "200"
+        ],
+        "correct": "4050"
+      },
+      {
+        "prompt": "Bir süreç başlangıçta 50 birimdir; her tamamlanan adımda miktar 0 ile çarpılıyor. Henüz hiçbir adım tamamlanmadığı 0. adımda miktar kaçtır?",
+        "options": [
+          "50",
+          "0",
+          "1",
+          "Tanımsız",
+          "-50"
+        ],
+        "correct": "50"
+      }
+    ]
+  }
+}

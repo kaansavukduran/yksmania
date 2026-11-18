@@ -107,6 +107,8 @@ import {
   supplementalSourceTopics032,
 } from "../data/supplementalSourceTopics032";
 import { sourceMath036037TopicMap, supplementalSourceTopics036037 } from "../data/supplementalSourceTopics036037";
+import { sourceMath038TopicMap, supplementalSourceTopics038 } from "../data/supplementalSourceTopics038";
+import { sourceMath039TopicMap, supplementalSourceTopics039 } from "../data/supplementalSourceTopics039";
 import { lessons } from "./content";
 import { sourceMath034035TopicMap, supplementalSourceTopics034035 } from "../data/supplementalSourceTopics034035";
 import {
@@ -137,6 +139,8 @@ export const studyTopics = [
     ...supplementalSourceTopics033,
     ...supplementalSourceTopics034035,
     ...supplementalSourceTopics036037,
+    ...supplementalSourceTopics038,
+    ...supplementalSourceTopics039,
   ].map((topic, i) => ({
     ...topic,
     order: workbookStudyTopics.length + i + 1,
@@ -152,6 +156,8 @@ export const lessonTopic: Record<string, string> = {
   ...sourceMath033TopicMap,
   ...sourceMath034035TopicMap,
   ...sourceMath036037TopicMap,
+  ...sourceMath038TopicMap,
+  ...sourceMath039TopicMap,
   ...legacy026Topics,
   ...forge025MathTopics,
   ...forge025ChemistryTopics,

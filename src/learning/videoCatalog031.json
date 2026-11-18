@@ -2149,7 +2149,8 @@
     "subjectId": "tyt-matematik",
     "topic": "Mutlak Değer",
     "lessonIds": [
-      "mutlak-deger"
+      "mutlak-deger",
+      "tyt-mat-mutlak-deger-kaynak-038"
     ],
     "recommended": [
       {
@@ -2199,7 +2200,8 @@
     "subjectId": "tyt-matematik",
     "topic": "Üslü Sayılar",
     "lessonIds": [
-      "uslu-sayilar"
+      "uslu-sayilar",
+      "tyt-mat-uslu-sayilar-kaynak-039"
     ],
     "recommended": [
       {
