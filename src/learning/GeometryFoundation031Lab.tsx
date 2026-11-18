@@ -737,30 +737,35 @@ function RightTriangle() {
     ac = Math.round(geometry031Bounds(s.ac, 2, 12));
   const step = Math.round(geometry031Bounds(s.step, 0, 3));
   const m = geometry031Right(ab, ac);
-  const scale = 230 / (ab + ac);
-  const plot: Plot = (p) => ({ x: 210 + p.x * scale, y: 270 - p.y * scale });
+  const legBVertices = [m.A, m.B, { x: ab, y: -ab }, { x: 0, y: -ab }];
+  const legCVertices = [m.A, m.C, { x: -ac, y: ac }, { x: -ac, y: 0 }];
+  const hypVertices = [m.B, m.C, { x: ac, y: ac + ab }, { x: ab + ac, y: ab }];
+  // Frame only the pieces shown in this step. A single scale keeps lengths,
+  // square areas and perpendicularity faithful; the margins reserve room for
+  // the responsive vertex labels. The shared SVG camera stays unchanged.
+  const visible = [
+    m.A,
+    m.B,
+    m.C,
+    ...(step >= 1 && step <= 2 ? [...legBVertices, ...legCVertices] : []),
+    ...(step === 2 ? hypVertices : []),
+  ];
+  const minX = Math.min(...visible.map((p) => p.x)),
+    maxX = Math.max(...visible.map((p) => p.x)),
+    minY = Math.min(...visible.map((p) => p.y)),
+    maxY = Math.max(...visible.map((p) => p.y));
+  const scale = Math.min(440 / (maxX - minX), 340 / (maxY - minY));
+  const plot: Plot = (p) => ({
+    x: 320 + (p.x - (minX + maxX) / 2) * scale,
+    y: 265 - (p.y - (minY + maxY) / 2) * scale,
+  });
   const A = plot(m.A),
     B = plot(m.B),
     C = plot(m.C),
     H = plot(m.H);
-  const legBSquare = [
-    A,
-    B,
-    { x: B.x, y: B.y + ab * scale },
-    { x: A.x, y: A.y + ab * scale },
-  ];
-  const legCSquare = [
-    A,
-    C,
-    { x: C.x - ac * scale, y: C.y },
-    { x: A.x - ac * scale, y: A.y },
-  ];
-  const hypSquare = [
-    B,
-    C,
-    { x: C.x + ac * scale, y: C.y - ab * scale },
-    { x: B.x + ac * scale, y: B.y - ab * scale },
-  ];
+  const legBSquare = legBVertices.map(plot);
+  const legCSquare = legCVertices.map(plot);
+  const hypSquare = hypVertices.map(plot);
   return (
     <Lab
       title="Pisagor'dan Öklid'e: aynı üçgen, iki bakış"
