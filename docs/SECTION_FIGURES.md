@@ -35,9 +35,13 @@ Her rehber bölümü artık kendi başlığıyla eşleşen bir figür gösterebi
 | Geometrinin dili: kaynakla pekiştir | 10 | 8 | 1 | 3 |
 | Üçgen ve paralelkenarda alan | 10 | 9 | 3 | 3 |
 | Noktanın analitiği | 18 | 15 | 2 | 1 |
-| **Toplam** | **144** | **138** | **37** | **20** |
+| AYT: Öteleme ve dönme | 12 | 11 | 2 | 1 |
+| AYT: Yansıma ve simetri | 12 | 11 | 0 | 0 |
+| AYT: Çemberin analitiği | 14 | 11 | 4 | 0 |
+| AYT: Doğrunun analitiği | 20 | 16 | 3 | 0 |
+| **Toplam (19 rehber)** | **202** | **187** | **46** | **21** |
 
-Figürü olmayan 6 bölüm bilinçli bırakıldı: ilk bölümün mevcut etkileşimli modeli aynı içeriği zaten gösterir (doğru/ışın/parça, tam tur) ya da bölüm bir kontrol listesidir. AYT geometri rehberleri (doğrunun analitiği, çemberin analitiği, öteleme–dönme, yansıma–simetri) bu turda ele alınmadı.
+Figürü olmayan 15 bölüm bilinçli bırakıldı: ilk bölümün mevcut etkileşimli modeli aynı içeriği zaten gösterir (doğru/ışın/parça, tam tur), bölüm bir kontrol listesidir ya da kavram yalnız cebirsel bir koşuldur (katsayı koşulları, diskriminant, eşdeğer denklem). AYT figürlerindeki sayılar rehber metnindeki örneklerin aynısıdır (ör. P(3; 4)'ün 3x + 4y − 5 = 0'a göre görüntüsü (−9/5; −12/5), M(2; 1), r = 5, x = 5 kirişi 8).
 
 ## Doğrulama
 
@@ -50,11 +54,15 @@ Figürü olmayan 6 bölüm bilinçli bırakıldı: ilk bölümün mevcut etkile�
 | Gerçek tarayıcı, 138 figür | Her figür normal ders girişinden açıldı; ekran görüntüleri tek tek incelendi; konsol hatası 0; SVG dışına taşan etiket 0 |
 | Matrix 360 px ve açık tema | Örnek dersler görsel olarak incelendi |
 
-Görsel incelemede bulunup düzeltilen gerçek hatalar: dış açılar figüründe yuvarlanmış etiketlerin toplamı 359° çıkıyordu (tam sayı dönüşlü beşgenle yeniden kuruldu); açınımda yan yüzler 2×2 çizilip 6 diye etiketlenmişti (3×2'ye düzeltildi); bir açıklama 72° derken şekil 48° gösteriyordu; eşit kenarlar “>” ile sıralanıyordu; piramidin iç yüksekliği düz çiziliyordu (kesikliye çevrildi); çok sayıda uzunluk etiketi şeklin içine düşüyordu (karşı köşeden uzağa yerleşen etiket kuralı eklendi).
+Görsel incelemede bulunup düzeltilen gerçek hatalar: açık eğri ve kırık çizgiler SVG polygon olarak kapanıyordu; “kapanmayan çizgi” örneği kapalı görünüyordu (açık şekiller polyline ile çiziliyor); dış açılar figüründe yuvarlanmış etiketlerin toplamı 359° çıkıyordu (tam sayı dönüşlü beşgenle yeniden kuruldu); açınımda yan yüzler 2×2 çizilip 6 diye etiketlenmişti (3×2'ye düzeltildi); bir açıklama 72° derken şekil 48° gösteriyordu; eşit kenarlar “>” ile sıralanıyordu; piramidin iç yüksekliği düz çiziliyordu (kesikliye çevrildi); çok sayıda uzunluk etiketi şeklin içine düşüyordu (karşı köşeden uzağa yerleşen etiket kuralı eklendi).
+
+## Mevcut modelde bulunan ve düzeltilen hata
+
+`geometry-right-framing024` testi değiştirilmemiş main derlemesinde de başarısızdı: dik üçgen modelinde AB = 2, AC = 12 iken H noktası B'ye çok yakın düşüyor; 320 px, arayüz %200, yazı %150 koşulunda H ve B etiketleri çakışıyordu. H etiketi artık hipotenüsün dışına, yakın köşeden uzağa yerleşir; aynı test masaüstü ve 320 px'te geçer.
 
 ## Açık kalanlar
 
-- AYT geometri rehberleri ve geometri dışındaki dersler için bölüm figürleri.
+- Geometri dışındaki dersler için bölüm figürleri (fizik, kimya, biyoloji, matematik).
 - Bu dalın tam uzak CI/E2E, Pages ve Release koşuları; dal main'e alınmadan önce yapılmalı.
 - Vercel: önceki kayıtta canlı adres HTTP 402 veriyordu. Bu bir kod değil Vercel hesabı/proje durumu sorunudur; bu çalışma ortamından iki canlı adrese ağ erişimi yoktu, yeniden doğrulanamadı.
 - PDF kanonik defteri bu turda değişmedi (8.981: 7 tam / 2 kısmi / 8.972 belirsiz); figürler kaynak kapanışı sayılmaz.

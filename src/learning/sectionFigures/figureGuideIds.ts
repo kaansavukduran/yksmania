@@ -16,4 +16,8 @@ export const sectionFigureGuideIds = new Set<string>([
   "tyt-geo-acilar-kaynak-pekitirme-032",
   "alan-donusumleri",
   "noktanin-analitigi",
+  "donusum-oteleme-donme",
+  "donusum-yansima-simetri",
+  "cemberin-analitigi",
+  "dogrunun-analitigi",
 ]);

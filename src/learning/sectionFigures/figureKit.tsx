@@ -438,6 +438,14 @@ function Render({ els, title, desc }: { els: El[]; title: string; desc: string }
         );
       }
       case "poly":
+        if (el.open)
+          return (
+            <polyline
+              key={i}
+              points={pts(el.ps.map(P))}
+              className={`${cls(el.tone)} sf-stroke sf-nofill${el.dash ? " sf-dash" : ""}${el.thin ? " sf-thin" : ""}${el.bold ? " sf-bold" : ""}`}
+            />
+          );
         return (
           <polygon
             key={i}

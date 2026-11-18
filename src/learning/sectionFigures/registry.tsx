@@ -4,12 +4,14 @@ import { geometryFigures031 } from "./geometryFigures031";
 import { geometryFigures032a } from "./geometryFigures032a";
 import { geometryFigures032b } from "./geometryFigures032b";
 import { geometryFiguresArea } from "./geometryFiguresArea";
+import { geometryFiguresAyt } from "./geometryFiguresAyt";
 
 export const sectionFigures: Record<string, Record<string, FigureDef>> = {
   ...geometryFigures031,
   ...geometryFigures032a,
   ...geometryFigures032b,
   ...geometryFiguresArea,
+  ...geometryFiguresAyt,
 };
 
 export function SectionFigure({
