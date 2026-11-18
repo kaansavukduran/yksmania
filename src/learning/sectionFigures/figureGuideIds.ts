@@ -28,4 +28,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "koklu-sayilar",
   "dogrusal-hareket",
   "newton",
+  "basinc",
+  "sivilarin-kaldirma-kuvveti",
+  "elektrik-akimi",
 ]);

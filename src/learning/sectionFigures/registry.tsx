@@ -8,6 +8,7 @@ import { geometryFiguresAyt } from "./geometryFiguresAyt";
 import { physicsFiguresOptics } from "./physicsFiguresOptics";
 import { mathFiguresRoots } from "./mathFiguresRoots";
 import { physicsFiguresMechanics } from "./physicsFiguresMechanics";
+import { physicsFiguresFluidsCircuits } from "./physicsFiguresFluidsCircuits";
 
 export const sectionFigures: Record<string, Record<string, FigureDef>> = {
   ...geometryFigures031,
@@ -18,6 +19,7 @@ export const sectionFigures: Record<string, Record<string, FigureDef>> = {
   ...physicsFiguresOptics,
   ...mathFiguresRoots,
   ...physicsFiguresMechanics,
+  ...physicsFiguresFluidsCircuits,
 };
 
 export function SectionFigure({
