@@ -1,3 +1,5 @@
+import { runSource024OriginalSmoke } from "./source024-original-smoke.mjs";
+import { forge038039SmokeCases, runForge038039SmokeCase, assertForge038039ProcessRestart } from "./forge038039-smoke-cases.mjs";
 import { forge036037SmokeCases, runForge036037SmokeCase, assertForge036037ProcessRestart } from "./forge036037-smoke-cases.mjs";
 import {
   forge034035SmokeCases,
@@ -769,6 +771,15 @@ try {
   expect(commonModelFlowIds).toHaveLength(112);
   expect(new Set(commonModelFlowIds).size).toBe(112);
 
+  expect(forge038039SmokeCases).toHaveLength(2);
+  const forge038039Snapshots = [];
+  for (const unit of forge038039SmokeCases) {
+    forge038039Snapshots.push(await runForge038039SmokeCase(page, navigate, unit));
+  }
+  commonModelFlowIds.push(...forge038039Snapshots.map((item) => item.id));
+  expect(commonModelFlowIds).toHaveLength(114);
+  expect(new Set(commonModelFlowIds).size).toBe(114);
+
   const mathematics = [
     /Temel kavramlar: sayı, değer/,
     /Tek–çift ve işaret:/,
@@ -900,6 +911,7 @@ try {
   await assertForge033ProcessRestart(page, navigate, forge033Snapshots);
   await assertForge034035ProcessRestart(page, navigate, forge034035Snapshots);
   await assertForge036037ProcessRestart(page, navigate, forge036037Snapshots);
+  await assertForge038039ProcessRestart(page, navigate, forge038039Snapshots);
   await navigate("Bugün");
   await expect(page.locator(".stat-number").first()).toHaveText("1");
   const dailyTheory = page
@@ -921,7 +933,7 @@ try {
   await navigate("Dünyam");
   await expect(
     page.getByRole("img", { name: /Genel konu çalışma ilerlemesi/ }),
-  ).toHaveAttribute("aria-label", /1\/498 konu/);
+  ).toHaveAttribute("aria-label", /1\/500 konu/);
   await expect(
     page.getByRole("region", { name: "TYT konu ağacı", exact: true }),
   ).toBeVisible();
@@ -1150,7 +1162,7 @@ try {
   await expect(page.locator(".stat-number").first()).toHaveText("0");
   await expect(
     page.getByRole("region", { name: "Konu planı", exact: true }),
-  ).toContainText("0/498");
+  ).toContainText("0/500");
   await openSheet("Hücre Organelleri");
   await expect(
     page.getByRole("textbox", { name: "Notun", exact: true }),
@@ -1334,6 +1346,8 @@ try {
   });
   foundationRouteCases.push("tarih-zaman");
 
+  const source024Original = await runSource024OriginalSmoke(page, navigate);
+
   expect(errors).toEqual([]);
   console.log(
     JSON.stringify({
@@ -1418,6 +1432,11 @@ try {
       forge036037SameProfileProcessRestart: "PASS",
       forge036037ExplorationWithoutLearningCredit: "PASS",
       forge036037NotesOfflineAndProcessRestart: "PASS",
+      forge038039FamiliesOfflineHtmlStateAndReload: forge038039Snapshots.map((item) => item.id),
+      forge038039SameProfileProcessRestart: "PASS",
+      forge038039ExplorationWithoutLearningCredit: "PASS",
+      forge038039NotesOfflineAndProcessRestart: "PASS",
+      source024OriginalQuestionsOffline: source024Original,
       sharedOfflineModelFlowCount: commonModelFlowIds.length,
       sharedOfflineModelFlowIds: commonModelFlowIds,
       forge025ExplorationWithoutLearningCredit: "PASS",

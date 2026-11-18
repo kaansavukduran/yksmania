@@ -1,7 +1,7 @@
 # Applicable AIONIA profile
 
-Live standard re-read at the 0.12.0 checkpoint (2026-11-15): **v1.7**; previously observed source modified at
-2026-11-13T00:29:34.975Z. Reference index revision 3 was last read at the 0.5.1 checkpoint; art is unchanged.
+Live standard re-read for the 0.24.0 candidate on 2026-11-18: **v1.7**, dated
+2026-11-13. Reference index revision **3** was also read again; approved art is unchanged.
 The authenticated private source is identified in the originating task; private
 document links and personal excerpts are deliberately excluded from public code.
 
@@ -22,6 +22,6 @@ The app retains its own navigation and shows Fragaria Interactive as publisher.
 
 The Unslop skill's UI, behavior and sprite references guided implementation and QA.
 At this checkpoint, the current live v1.7 source was fetched again and section 22,
-AIO-UI-001–005 and AIO-QA-001–003, was read for the 0.12.0 work. The applicable
+AIO-UI-001–005 and AIO-QA-001–003, was read for the 0.24.0 work. The applicable
 profile is unchanged. Approved course icons and Aion assets are unchanged.
 The current standard must be checked again at the next material Forge checkpoint.

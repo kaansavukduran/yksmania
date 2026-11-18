@@ -1,3 +1,9 @@
+# Forge038039 / görsel 0.24 adayı
+
+18 Kasım 2026, Türkiye saati. Yerel aday; henüz yeni tam CI veya yayın yok. [FORGE038039](docs/FORGE038039.md), eklenen iki kaynak ünitesini, asıl OGM sorularını, görsel kontrolleri ve açık kapıları tutar. Son doğrulanmış yayın aşağıdaki 0.23.0’dır. Kanonik öğretim sayısı 8.981: 7 tam / 2 kısmi / 8.972 belirsiz; asıl soru/şekil sadakati ayrı ve tamamlanmamış ölçüdür. Kaynak012/013/014 kapanışı veya yeni okuma kredisi verilmedi.
+
+---
+
 # 0.23.0 doğrulanmış yayın — Forge036037
 
 18 Kasım 2026, Türkiye saati. Kaynak `2bbddcf6de7fb1d0dafd03bd6e8f94e88c4579d0`; [tam CI](https://github.com/kaansavukduran/yksmania/actions/runs/44195707384), [otomatik Pages](https://github.com/kaansavukduran/yksmania/actions/runs/44200061070) ve [masaüstü Release](https://github.com/kaansavukduran/yksmania/releases/tag/v0.23.0-alpha.1) aynı kaynağa bağlıdır. [Ayrıntılı kabul tablosu](docs/FORGE036037.md). Main, CI/Pages/Release ve gerçek yayın dosyası kabulleri bitene kadar sabit tutuldu.

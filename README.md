@@ -1,3 +1,21 @@
+# YKSMania 0.24.0 — yerel geliştirme adayı
+
+18 Kasım 2026, Türkiye saati. **Bu aday henüz yayımlanmadı.** Son doğrulanmış web/masaüstü sürümü aşağıdaki 0.23.0’dır; 0.24’ün birleşik test, paket ve yayın kapıları sürüyor.
+
+Mutlak değer ve üslü sayılar 68 açıklama bölümü, 85 çözümlü örnek, 48 hatırlama, 110 gerekçeli özgün soru, 28 ayrı özet bölümü ve 18 etkileşimli modelle genişledi. Ayrıca asıl OGM sorularının altılı seti, kaynak düzeni/şekilleri ve seçenekleriyle çalışılabilir; uygulama için hazırlanmış görsel ipucu ve çözümler ayrı etiketlenir. Kaynak olabilecek hatalar ve belirsiz sorular puanlı doğru diye aktarılmaz.
+
+Kaynak okuyucusunda 46 alıştırma/çözümlü örnek kaydı bulunur; bunlar 46 benzersiz sınav sorusu veya yeni puanlı kart demek değildir. Eski 24 kaydın indeksleri korunur. Bu okuma, cevap gösterme ve görsel keşif öğrenme puanı üretmez. Source012’deki ayrıca belirlenen sekiz istem ve bütün arşivin asıl soru/şekil aktarımı hâlâ açıktır.
+
+Matrix yeni ve tema ayarı olmayan profillerin varsayılanıdır; bilinçli kaydedilmiş farklı temalar korunur. Tarih olayları ve yeni modellerin küçük seçim grupları görünür düğmelerle seçilir. Ayrı Kopya Kağıtları ekranındaki 19 geometri özeti hesapla üretilen şekillerle çalışır; dik üçgenin çerçevesi gösterilen adıma göre büyür. Dar ekran/büyük yazı, klavye, not ve çevrimdışı kayıtlar yerel hedef akışlarda sınandı; bu bütün hedef paketlerin kabulü değildir.
+
+Gerçek yapısal toplam 536 set, 501 anlatım rehberi, 501 ayrı özet, 500 çalışma başlığı ve 6.417 sorudur: 6.411 özgün öğretim sorusu + 6 asıl OGM sorusu. 3.777 soruda tam kademeli yardım, 2.640 eski kartta kısmi yardım bulunur. İlk 479 Excel kimliği/sırası ve önceki 6.301 soru korunur. Bunlar PDF ya da resmî müfredat tamamlanma sayıları değildir.
+
+Kanonik öğretim aktarımı **8.981 PDF’de 7 tam, 2 kısmi, 8.972 belirsiz** olarak kaldı. Yeni iki kaynağın veya asıl soru sadakatinin kapanışı yapılmadı. [Aday kapsamı ve doğrulama sınırları](docs/FORGE038039.md) · [Gerçek yapısal envanter](docs/CONTENT_INVENTORY.csv).
+
+---
+
+## Aşağıdaki 0.23.0 kaydı kendi doğrulanmış yayınına aittir
+
 # YKSMania 0.23.0
 
 Fragaria Interactive’in Türkçe, çevrimdışı YKS öğrenme uygulaması. **0.23.0 yayımlandı — 18 Kasım 2026, Türkiye saati.**

@@ -1,7 +1,7 @@
 {
-  "version": "0.23.0",
+  "version": "0.24.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Yayımlanmamış 0.23 geliştirme adayı: birinci dereceden denklemler ve basit eşitsizliklerde 57 açıklama bölümü, 60 çözümlü örnek, 40 hatırlama ve 87 gerekçeli özgün soru; yedişer hesaplamalı görsel model ve ayrı kopya kağıtları bulunur. Önceki cevaplar, notlar, tercihler, özgün tekrar tarihleri ve yarım çalışmalar korunur. Keşif, süre ve manuel onay öğrenme puanı üretmez. Bütün kaynak arşivi henüz tamamlanmış değildir."
+    "tr": "Mutlak değer ve üslü sayılar; adım adım anlatım, 18 etkileşimli model, çözümlü örnekler ve ayrı kopya kağıtlarıyla genişletildi. Asıl OGM soruları kaynak şekilleriyle, öğretici ipuçları ve ayrı çözüm görselleriyle çalışılabilir. Geometri özetlerinde değiştirilebilir şekiller, tarih anlatımlarında doğrudan seçilen olaylar bulunur. Matrix yeni profillerin başlangıç temasıdır; kayıtlı farklı temalar, notlar, yarım çalışmalar ve özgün tekrar tarihleri korunur. Keşif, süre ve manuel onay öğrenme puanı üretmez. Kaynak arşivinin aktarımı sürmektedir."
   }
 }

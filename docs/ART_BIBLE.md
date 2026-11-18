@@ -31,12 +31,19 @@ and is excluded from runtime bundles.
 
 ## Learning diagrams
 
-Diagrams are authored SVG, not screenshots copied from source books. Cell structures
+Interactive teaching models use authored SVG. Cell structures
 and secretory-protein steps are selected explicitly; typical-cell and scale limits
 are stated. Periodic-table data has a separate factual source record. Geometry uses
 actual polygons and translations preserving area. Motion settings disable transitions
 without disabling controls. Interaction choices and PDF page positions are retained
 outside scored responses and do not earn XP.
+
+For original source exercises, preserve the source's actual mathematical layout and
+figure separately from the explanatory SVG models. The 0.24 candidate includes
+bounded OGM question-region images with their original choices, source attribution
+and accessible text; it does not bundle a whole book. Supplemental hint and solution
+figures are identified as application explanations. Never substitute the current
+state of a theory explorer for a question's original data or figure.
 
 ## AYT diagrams, 0.3.0
 

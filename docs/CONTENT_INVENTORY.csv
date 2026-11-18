@@ -1,4 +1,4 @@
-﻿Sınav;Ders;Konu;Öğrenme Sırası (498 Konu);Bölüm Sayısı;Çözümlü Örnek Sayısı;Hatırlama Sayısı;Tahmini Dakika;Bağlı Soru Sayısı;Ayrıntılı Yardım;Kısmi Yardım
+﻿Sınav;Ders;Konu;Öğrenme Sırası (500 Konu);Bölüm Sayısı;Çözümlü Örnek Sayısı;Hatırlama Sayısı;Tahmini Dakika;Bağlı Soru Sayısı;Ayrıntılı Yardım;Kısmi Yardım
 TYT;Kimya;Simyadan kimyaya: amaç, yöntem ve kanıt;1;9;4;4;40;5;5;0
 TYT;Kimya;Kimya disiplinleri: maddeye hangi soruyu soruyoruz?;2;6;3;3;35;5;5;0
 TYT;Kimya;Kimyanın sembolik dili: harf, alt indis ve katsayı;3;8;4;4;40;5;5;0
@@ -497,4 +497,6 @@ TYT;Matematik;EBOB ve EKOK: ortak birimden ortak ana;495;29;24;18;140;46;46;0
 TYT;Matematik;Rasyonel sayılar: aynı bütün, doğru işlem ve görsel kanıt;496;26;20;17;140;48;48;0
 TYT;Matematik;Birinci dereceden denklemler: eşitliği koru, modeli kur;497;27;26;18;150;42;42;0
 TYT;Matematik;Basit eşitsizlikler: sırayı koru, bütün çözümü gör;498;30;34;22;165;45;45;0
+TYT;Matematik;Mutlak değer: uzaklık, koşul ve grafiğin mantığı;499;34;38;24;180;55;55;0
+TYT;Matematik;Üslü sayılar: çarpan, koşul ve ölçeğin mantığı;500;34;47;24;180;61;61;0
 TYT;Geometri;Üçgen ve paralelkenarda alan;;10;6;4;50;5;5;0

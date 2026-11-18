@@ -43,7 +43,7 @@ describe("ordered YKS deadlines and independent study records", () => {
       "detail-194",
     ]);
     expect(workbookStudyTopics.at(-1)?.order).toBe(479);
-    expect(studyTopics).toHaveLength(498);
+    expect(studyTopics).toHaveLength(500);
   });
   it("counts inclusive eligible days once across weekday and one-off overlaps", () => {
     const s = initialState().settings;
@@ -66,7 +66,7 @@ describe("ordered YKS deadlines and independent study records", () => {
     expect(p.target).toBe(5);
     expect(p.items.map((v) => v.topic.order)).toEqual([1, 2, 3, 4, 5]);
     expect(q.target).toBe(3);
-    expect(p.scheduled).toHaveLength(498);
+    expect(p.scheduled).toHaveLength(500);
     expect(
       p.scheduled.every(
         (v) => v.day! >= "2026-11-14" && v.day! <= "2027-02-28",
@@ -95,7 +95,7 @@ describe("ordered YKS deadlines and independent study records", () => {
     expect(p.items[0].topic.order).toBe(2);
     expect(xp(s)).toBe(0);
     expect(s.sessions).toHaveLength(0);
-    expect(studyPlan(s, "questions", today).remaining).toBe(498);
+    expect(studyPlan(s, "questions", today).remaining).toBe(500);
     s = setTopicCompletion(s, first, "theory", false, today);
     p = studyPlan(s, "theory", today);
     expect(p.items).toHaveLength(5);

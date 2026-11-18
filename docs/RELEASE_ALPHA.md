@@ -1,3 +1,21 @@
+# YKSMania 0.24.0 — doğrulama adayı
+
+18 Kasım 2026, Türkiye saati. Bu metin yeni sürümün aday kapsamıdır; tam CI/yayın ve gerçek dosya kabulü henüz tamamlanmadı. Önceki0.23 yayınının bilgileri aşağıda kendi tarihsel bölümünde korunur.
+
+Mutlak değer ve üslü sayılar; toplam68 açıklama bölümü,85 çözümlü örnek,48 hatırlama,110 özgün soru,28 özet bölümü ve18 etkileşimli modelle genişledi. Ayrı altılı asıl OGM seti, gerçek kaynak düzeni/görselleri ve seçenekleriyle çalışılabilir. Kaynak okuyucusunda46 çalışma kaydı vardır; çözümlü örnek ve tekrar eden kaynak konumları içerdiğinden46 benzersiz sınav sorusu anlamına gelmez. Asıl kaynak ile uygulamanın öğretici ipucu/çözüm şekilleri ayrıdır.
+
+Yeni/ayarlanmamış profiller Matrix ile başlar; kayıtlı temalar, hedef tarihler, notlar, yarım çalışmalar ve özgün3/7/21 tarihleri korunur. Tarih olayları ve yeni modellerin küçük seçim grupları doğrudan düğmelerle seçilir. Ayrı19 geometri özetinin öğretici şekilleri ve adımına göre çerçevelenen dik üçgen, kaynak soru büyütme/klavye/çevrimdışı kayıt akışları yerel hedef testlerden geçti.
+
+Toplam536 set,501 rehber,501 ayrı özet,500 çalışma başlığı;6.417 soru=6.411 özgün+6 asıl OGM.3.777 soruda tam,2.640 eski kartta kısmi yardım. İlk 479 başlık ve önceki 6.301 kart korunur. Birleşik yerel tam birim2032/2032 başarılı; son tarayıcı/paket/yayın kapıları sürüyor. Bu yapısal sayılar PDF veya bütün MEB tamamlanması değildir.
+
+Kanonik öğretim kararı8.981 PDF’de7 tam,2 kısmi,8.972 belirsiz; asıl soru/şekil aktarımı ayrı ve tamamlanmamış ölçüdür. Yeni kaynak012/013 kapanışı yapılmadı. Source012’deki ayrıca belirlenen8 istem46 kayda dahil değildir. Fiziksel telefon/temiz OS/native iki kurulum yükseltmesi sınanmadı. Yeni kişisel test APK’sı hazır kabul edilmez; hazır olduğunda gerçek imza, kimlik ve içerik kabulü ayrıca verilir. Genel APK veya mağaza yayını yoktur; kullanıcıdan secret/imza kurulumu istenmez.
+
+[Aday kapsamı](FORGE038039.md) · [Yapısal envanter](CONTENT_INVENTORY.csv) · [Son kanonik rapor](PDF_SOURCE_PROGRESS036037.md)
+
+---
+
+## Aşağıdaki0.23.0kaydı kendi doğrulanmış yayınına aittir
+
 # YKSMania 0.23.0 alpha 1 — 18 Kasım 2026
 
 **Yayımlandı.** Kaynak `2bbddcf6de7fb1d0dafd03bd6e8f94e88c4579d0`. [Web uygulaması](https://kaansavukduran.github.io/yksmania/) · [Windows/Linux dosyaları](https://github.com/kaansavukduran/yksmania/releases/tag/v0.23.0-alpha.1) · [Kişisel Android deneme ZIP’i](https://github.com/kaansavukduran/yksmania/actions/runs/44195736233/artifacts/14378249327).

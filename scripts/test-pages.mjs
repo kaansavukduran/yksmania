@@ -1,3 +1,5 @@
+import { runSource024OriginalSmoke } from "./source024-original-smoke.mjs";
+import { forge038039SmokeCases, runForge038039SmokeCase } from "./forge038039-smoke-cases.mjs";
 import { forge036037SmokeCases, runForge036037SmokeCase } from "./forge036037-smoke-cases.mjs";
 import {
   forge034035SmokeCases,
@@ -1092,6 +1094,20 @@ try {
     }
     expect(cases).toHaveLength(112);
     expect(new Set(cases).size).toBe(112);
+
+    expect(forge038039SmokeCases).toHaveLength(2);
+    const forge038039Snapshots = [];
+    for (const unit of forge038039SmokeCases) {
+      progress("case:begin", { id: unit.id, completed: cases.length });
+      forge038039Snapshots.push(await withinDeadline(`case ${unit.id}`, 120_000, () => runForge038039SmokeCase(page, nav, unit)));
+      cases.push(unit.id);
+      progress("case:passed", { id: unit.id, completed: cases.length });
+    }
+    expect(cases).toHaveLength(114);
+    expect(new Set(cases).size).toBe(114);
+    progress("original-source-questions:begin");
+    const source024Original = await withinDeadline("six original OGM question images", 120_000, () => runSource024OriginalSmoke(page, nav));
+    progress("original-source-questions:passed", { questions: source024Original.questionIds.length });
     progress("final-navigation-and-mobile");
     await nav("Kopya Kağıtları");
     await expect(page.locator("main h1")).toBeVisible();
@@ -1138,6 +1154,8 @@ try {
       throw new Error("Late completion after acceptance deadline");
     result = {
       status: "PASS",
+      source024OriginalQuestionsOffline: source024Original,
+      forge038039FamiliesOfflineHtmlStateAndReload: forge038039Snapshots.map((item) => item.id),
       url: origin,
       worker,
       manifestStart: manifest.start_url,

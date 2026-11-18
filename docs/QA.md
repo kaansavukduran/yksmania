@@ -1,3 +1,21 @@
+# 0.24.0 adayının yerel regresyonları — 18 Kasım 2026
+
+Yayımlanmış kabul değildir. Son birleşim2032 birim testini geçti ve normal/prefix314 dosya derlendi; birleşik tarayıcı, güncelleme ve paket kapıları sürüyor. Önceki0.23 ve daha eski yayın kanıtları kendi sürümlerine aittir.
+
+| Bulgu | Gerçek belirti, onarım ve yerel kabul |
+| --- | --- |
+| F039-STATE-001 | Model seçimleri yenilemede kayboluyordu.40 sabit keşif anahtarıyla gerçek çevrimdışı yenileme/süreç açılışı ve puansız keşif denetlendi. |
+| F039-EXACT-CLIP-001 | Tam kesrin eksen sınırı float ile yanlış sınıflanıyordu. Aynı960bağımsız örnekte165 FAIL’den960 PASS’e geçildi; çizim koordinatı ile tam kapsam kararı ayrıdır. |
+| G031-FRAMING024-001 | İlk dik üçgen görünmeyen karelere yer ayırıp çok küçük kalıyordu. Yalnız görünür köşeler tek matematiksel ölçekle çerçevelenir;484 SVG ve teori/ayrıözet/4adım/2profil/45px gerçek UI kabulü vardır. |
+| F024-SOURCE-IMAGE-001 | Vite’ın aynı uygulamaya ait absolute PNG adresi reddedilip asıl soru şekli yerine yedek metin gösteriliyordu. Aynı protocol/host varlıkları kabul edilir; başka host, credentials ve farklı protocol reddedilir. Gerçek normal sorular ve hata/yeniden deneme denetlendi. |
+| F024-HELP-REVISION-001 | Aynı soru kimliği fakat farklı eski yardım içeriğine yeni yardım resmi bağlanabiliyordu. Kök/metin/şık/anahtar ile yardımın tüm knowledge/strategy/steps/optionReasons/commonError/check değerleri ayrı sürüm bağlarına alınır. Eski dondurulmuş kartların ham içeriği değiştirilmez; guidance-only negatif vaka gerçek denemede sınandı. |
+| F024-MATH-REFLOW-001 | Dar/büyük yazıda büyütme kontrolleri şekle alan bırakmıyor, kayan matematik klavyeyle kaydırılamıyordu. Kompakt kontroller, açık kapanış odağı/geri dönüşü ve odaklanabilir matematik bölgesi320px/45px/klavye/yerel axe ile sınandı. |
+| F024-W38-CLIP-001 | Kaynak çözümlü örneğindeki “6” etiketi SVG üstünden taşıyordu. Yalnız viewBox üst/yükseklik iki değeri değişti;22 asıl istem ve diğer44figür aynı, gerçek320/1440px ölçümler ve PNG geri okuması doğrulandı. |
+
+İlk başarısızlar saklanır; derleme, SSR, yerel tarayıcı, paket, yayın ve fiziksel cihaz aynı kabul değildir. Kaynak okuma, görseli/çözümü açma, süre veya manuel onay ustalık/XP oluşturmaz. Asıl soru ve uygulamanın açıklayıcı şekli etiketlenir; kaynak belirsizliği sahte puanlı soruya dönüştürülmez.
+
+---
+
 # 0.22.0 son kaynak ve yayın kabulü — 17 Kasım 2026
 
 Kaynak `5bdc4a15123666b3dc701a802f7f6be7000a383a`. [Forge034035](FORGE034035.md) içerik ve yerel sürüm sınırlarını, [PDF raporu](PDF_SOURCE_PROGRESS034035.md) kanonik kaynak kararlarını tutar. Aşağıdaki daha eski kabuller kendi sürümlerine aittir.
