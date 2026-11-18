@@ -10,4 +10,8 @@ export const sectionFigureGuideIds = new Set<string>([
   "tyt-geo-cokgenler-032",
   "tyt-geo-dortgen-hiyerarsi-032",
   "tyt-geo-yamuk-deltoid-032",
+  "tyt-geo-paralelkenar-ozel-dortgenler-032",
+  "tyt-geo-dik-prizmalar-032",
+  "tyt-geo-piramitler-032",
+  "tyt-geo-acilar-kaynak-pekitirme-032",
 ]);
