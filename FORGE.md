@@ -1,3 +1,11 @@
+# Bölüm figürleri — geometri anlatımı (geliştirme dalı)
+
+18 Kasım 2026, Türkiye saati. **Dal `claude/laughing-ritchie-l0rre4`, taban 0.24 adayı `520662c`; main'e alınmadı, yayımlanmadı.** [Ayrıntı](docs/SECTION_FIGURES.md).
+
+Gerçek tarayıcı ölçümü, 15 geometri dersinin her birinde yalnız tek bir büyük şekil olduğunu ve kalan bölümlerin şekli yalnız yazıyla anlattığını gösterdi. Bu dalda 15 dersin 144 bölümünden 138'ine, o bölümün anlattığı şekli hesaplanmış koordinatlarla çizen figür eklendi (37 sürgülü, 20 adımlı). Figürler tema token'larını kullanır, erişilebilir ad taşır, tembel ve çevrimdışı önbellekli yüklenir; değiştirmek öğrenme kanıtı/XP üretmez. Her figür ekran görüntüsüyle incelendi; bulunan altı gerçek çizim/etiket hatası düzeltildi. Yeni birim testi figürleri bölüm başlıklarına bağlar. Varsayılan ayarlar değişmedi: yeni profil teması Matrix, kişisel hedef tarihi 2027-02-28 kaldı. Sıradaki: AYT geometri rehberleri ve diğer dersler; dalın tam uzak CI/Pages kabulü.
+
+---
+
 # Forge038039 / görsel 0.24 adayı
 
 18 Kasım 2026, Türkiye saati. **Yerel aday; henüz yeni tam CI veya yayın yok.** [FORGE038039](docs/FORGE038039.md), eklenen iki kaynak ünitesini, asıl OGM sorularını, görsel kontrolleri ve açık kapıları tutar. Son doğrulanmış yayın aşağıdaki 0.23.0’dır.
