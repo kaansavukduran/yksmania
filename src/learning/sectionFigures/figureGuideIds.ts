@@ -20,4 +20,9 @@ export const sectionFigureGuideIds = new Set<string>([
   "donusum-yansima-simetri",
   "cemberin-analitigi",
   "dogrunun-analitigi",
+  "duzlem-ayna",
+  "kuresel-aynalar",
+  "isigin-kirilmasi",
+  "mercekler",
+  "golge-yari-golge",
 ]);

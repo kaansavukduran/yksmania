@@ -43,6 +43,12 @@ Her rehber bölümü artık kendi başlığıyla eşleşen bir figür gösterebi
 
 Figürü olmayan 15 bölüm bilinçli bırakıldı: ilk bölümün mevcut etkileşimli modeli aynı içeriği zaten gösterir (doğru/ışın/parça, tam tur), bölüm bir kontrol listesidir ya da kavram yalnız cebirsel bir koşuldur (katsayı koşulları, diskriminant, eşdeğer denklem). AYT figürlerindeki sayılar rehber metnindeki örneklerin aynısıdır (ör. P(3; 4)'ün 3x + 4y − 5 = 0'a göre görüntüsü (−9/5; −12/5), M(2; 1), r = 5, x = 5 kirişi 8).
 
+## Fizik: geometrik optik
+
+Aynı sistem TYT Fizik optik rehberlerine genişletildi: düzlem ayna (8), küresel aynalar (8), ışığın kırılması (8), mercekler (8), gölge ve yarı gölge (7) = **39 figür / 40 bölüm**. Ayna ve mercek çizimleri elle değil, ortak bir ışın izleme fonksiyonuyla üretilir: 1/f = 1/u + 1/v ve m = −v/u'dan görüntü hesaplanır, özel ışınlar bu görüntüye gider; gerçek görüntüde ışınlar kesişir, sanalda yalnız kesikli uzantılar buluşur. Kırılmada Snell yasası ve kritik açı hesaplanır; i > i_c'de kırılan ışın çizilmez. Gölgelerde sınır ışınları ve tam/yarı gölge aralıkları geometriden çıkar. Ayna çizimi paraksiyal modeldir (ışınlar tepe düzleminde yansır gibi çizilir).
+
+Bulunup düzeltilen: aynanın arkasında da F/2F gösteriliyordu (aynada yalnız kendi tarafındaki odak var); iki kaynaklı gölge örneği varsayılan konumda hiç tam gölge göstermiyordu.
+
 ## Doğrulama
 
 | Kontrol | Sonuç |
@@ -62,7 +68,7 @@ Görsel incelemede bulunup düzeltilen gerçek hatalar: açık eğri ve kırık 
 
 ## Açık kalanlar
 
-- Geometri dışındaki dersler için bölüm figürleri (fizik, kimya, biyoloji, matematik).
+- Kalan TYT Fizik rehberleri (hareket, kuvvet, enerji, elektrik, dalgalar, basınç…) ve diğer dersler için bölüm figürleri. Ölçüm: geometri dışındaki ~7.500 rehber bölümünün hiçbirinde bölüm figürü yoktu.
 - Bu dalın tam uzak CI/E2E, Pages ve Release koşuları; dal main'e alınmadan önce yapılmalı.
 - Vercel: önceki kayıtta canlı adres HTTP 402 veriyordu. Bu bir kod değil Vercel hesabı/proje durumu sorunudur; bu çalışma ortamından iki canlı adrese ağ erişimi yoktu, yeniden doğrulanamadı.
 - PDF kanonik defteri bu turda değişmedi (8.981: 7 tam / 2 kısmi / 8.972 belirsiz); figürler kaynak kapanışı sayılmaz.
