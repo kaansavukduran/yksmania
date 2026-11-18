@@ -157,6 +157,12 @@
   .c012-lab {
     gap: 1rem;
   }
+  /* At 320px with enlarged text, default button padding left too little
+     room and "Tahminimi" broke mid-word; match the other chemistry labs. */
+  .c012-lab button {
+    width: 100%;
+    padding-inline: 6px;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   .c012-lab * {

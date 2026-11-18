@@ -66,6 +66,8 @@ Görsel incelemede bulunup düzeltilen gerçek hatalar: açık eğri ve kırık 
 
 `geometry-right-framing024` testi değiştirilmemiş main derlemesinde de başarısızdı: dik üçgen modelinde AB = 2, AC = 12 iken H noktası B'ye çok yakın düşüyor; 320 px, arayüz %200, yazı %150 koşulunda H ve B etiketleri çakışıyordu. H etiketi artık hipotenüsün dışına, yakın köşeden uzağa yerleşir; aynı test masaüstü ve 320 px'te geçer.
 
+İkinci mevcut hata: `next-thirty-units` testinin beş kimya dersi (katılar–viskozite, buharlaşma, kaynama–bağıl nem, gazlar–plazma, doğa ve kimya) değiştirilmemiş main'de de başarısızdı. 320 px ve büyük yazıda “Tahminimi karşılaştır” düğmesinde “Tahminimi” kelimesi ortadan bölünüyordu. Diğer kimya modellerindeki dar ekran düğme kuralı (`forge012Chemistry.css`) eklendi; beş ders de geçiyor.
+
 ## Açık kalanlar
 
 - Kalan TYT Fizik rehberleri (hareket, kuvvet, enerji, elektrik, dalgalar, basınç…) ve diğer dersler için bölüm figürleri. Ölçüm: geometri dışındaki ~7.500 rehber bölümünün hiçbirinde bölüm figürü yoktu.
