@@ -1,0 +1,117 @@
+// Public application topics; the unit test checks this against every geometry summary.
+export const geometrySummary024Inventory = [
+  {
+    topicId: "lesson:alan-donusumleri",
+    lessonId: "alan-donusumleri",
+    title: "Üçgen ve paralelkenarda alan",
+    subjectId: "tyt-geometri",
+  },
+  {
+    topicId: "topic-tyt-geo-temel-acilar-031",
+    lessonId: "tyt-geo-temel-acilar-031",
+    title: "Geometrinin dili: temel açılar ve paralellik",
+    subjectId: "tyt-geometri",
+  },
+  {
+    topicId: "topic-tyt-geo-ucgende-acilar-031",
+    lessonId: "tyt-geo-ucgende-acilar-031",
+    title: "Üçgende açılar: iç açıdan yardımcı çizgiye",
+    subjectId: "tyt-geometri",
+  },
+  {
+    topicId: "topic-tyt-geo-ucgen-esitsizligi-031",
+    lessonId: "tyt-geo-ucgen-esitsizligi-031",
+    title: "Üçgen eşitsizliği ve açı–kenar ilişkileri",
+    subjectId: "tyt-geometri",
+  },
+  {
+    topicId: "topic-tyt-geo-dik-ucgen-031",
+    lessonId: "tyt-geo-dik-ucgen-031",
+    title: "Dik üçgen: Pisagor, özel açılar ve Öklid bağıntıları",
+    subjectId: "tyt-geometri",
+  },
+  {
+    topicId: "topic-tyt-geo-eslik-benzerlik-031",
+    lessonId: "tyt-geo-eslik-benzerlik-031",
+    title: "Üçgenlerde eşlik ve benzerlik: eşleme, ölçek ve paralellik",
+    subjectId: "tyt-geometri",
+  },
+  {
+    topicId: "topic-tyt-geo-ucgen-merkezleri-031",
+    lessonId: "tyt-geo-ucgen-merkezleri-031",
+    title: "Üçgende yardımcı elemanlar: açıortay, kenarortay ve merkezler",
+    subjectId: "tyt-geometri",
+  },
+  {
+    topicId: "topic-tyt-geo-cokgenler-032",
+    lessonId: "tyt-geo-cokgenler-032",
+    title: "Çokgenler: açı, köşegen ve düzgün şekiller",
+    subjectId: "tyt-geometri",
+  },
+  {
+    topicId: "topic-tyt-geo-dortgen-hiyerarsi-032",
+    lessonId: "tyt-geo-dortgen-hiyerarsi-032",
+    title: "Dörtgenler: sınıflar, köşegenler ve yamuk",
+    subjectId: "tyt-geometri",
+  },
+  {
+    topicId: "topic-tyt-geo-yamuk-deltoid-032",
+    lessonId: "tyt-geo-yamuk-deltoid-032",
+    title: "Yamuk ve deltoid: taban, yükseklik ve simetri",
+    subjectId: "tyt-geometri",
+  },
+  {
+    topicId: "topic-tyt-geo-paralelkenar-ozel-dortgenler-032",
+    lessonId: "tyt-geo-paralelkenar-ozel-dortgenler-032",
+    title: "Paralelkenar ailesi: yükseklik, köşegen ve alan",
+    subjectId: "tyt-geometri",
+  },
+  {
+    topicId: "topic-tyt-geo-dik-prizmalar-032",
+    lessonId: "tyt-geo-dik-prizmalar-032",
+    title: "Dik prizmalar: açınım, yüzey ve hacim",
+    subjectId: "tyt-geometri",
+  },
+  {
+    topicId: "topic-tyt-geo-piramitler-032",
+    lessonId: "tyt-geo-piramitler-032",
+    title: "Piramitler: yükseklik, alan ve benzer kesit",
+    subjectId: "tyt-geometri",
+  },
+  {
+    topicId: "topic-tyt-geo-acilar-kaynak-pekitirme-032",
+    lessonId: "tyt-geo-acilar-kaynak-pekitirme-032",
+    title: "Geometrinin dili ve açı ilişkileri",
+    subjectId: "tyt-geometri",
+  },
+  {
+    topicId: "detail-405",
+    lessonId: "donusum-oteleme-donme",
+    title: "Dönüşümler: Öteleme ve Dönme",
+    subjectId: "ayt-geometri",
+  },
+  {
+    topicId: "detail-406",
+    lessonId: "donusum-yansima-simetri",
+    title: "Dönüşümler: Yansıma ve Simetri",
+    subjectId: "ayt-geometri",
+  },
+  {
+    topicId: "detail-407",
+    lessonId: "cemberin-analitigi",
+    title: "Çemberin analitiği",
+    subjectId: "ayt-geometri",
+  },
+  {
+    topicId: "detail-404",
+    lessonId: "dogrunun-analitigi",
+    title: "Doğrunun Analitiği",
+    subjectId: "ayt-geometri",
+  },
+  {
+    topicId: "detail-138",
+    lessonId: "noktanin-analitigi",
+    title: "Noktanın Analitiği",
+    subjectId: "tyt-geometri",
+  },
+] as const;

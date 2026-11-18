@@ -1,5 +1,6 @@
 import { useId } from "react";
 import { useExploration } from "./useExploration";
+import { HistoryEventChoices } from "./HistoryEventChoices";
 import { history012Events, history012State } from "./forge012History";
 import "./forge012History.css";
 
@@ -61,20 +62,11 @@ export default function Forge012HistoryLab({ id }: { id: string }) {
         Bir olay seç; koşulu, alınan kararı ve desteklenen sonucu sırayla aç.
         Sonra kanıtın hangi yoruma izin verdiğini kendi gerekçenle karşılaştır.
       </p>
-      <label className="h012-select" htmlFor={`${uid}-event`}>
-        İncelenecek olay
-        <select
-          id={`${uid}-event`}
-          value={index}
-          onChange={(e) => selectEvent(Number(e.target.value))}
-        >
-          {rows.map((r, i) => (
-            <option key={r.name} value={i}>
-              {r.date} · {r.name}
-            </option>
-          ))}
-        </select>
-      </label>
+      <HistoryEventChoices
+        items={rows}
+        selected={index}
+        onSelect={selectEvent}
+      />
       <div className="h012-evidence">
         <p className="h012-meta">
           {event.date} · {event.kind}

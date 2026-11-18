@@ -417,8 +417,10 @@ try {
       model: "svg[data-history-diagram]",
       async act(lab) {
         await lab
-          .getByRole("combobox", { name: "İncelenecek olay", exact: true })
-          .selectOption("1");
+          .getByRole("group", { name: "İncelenecek olay", exact: true })
+          .getByRole("button")
+          .nth(1)
+          .click();
         await lab
           .getByRole("button", { name: "Sonraki bağlantı", exact: true })
           .click();
@@ -552,8 +554,10 @@ try {
       persisted: { event: 1, step: 2 },
       async act(lab) {
         await lab
-          .getByRole("combobox", { name: "İncelenecek olay", exact: true })
-          .selectOption("1");
+          .getByRole("group", { name: "İncelenecek olay", exact: true })
+          .getByRole("button")
+          .nth(1)
+          .click();
         for (let i = 0; i < 2; i++)
           await lab
             .getByRole("button", { name: "Sonraki kanıt", exact: true })

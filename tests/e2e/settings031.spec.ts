@@ -96,7 +96,7 @@ test("031 current and Matrix themes preserve custom dates, independent settings 
     exact: true,
   });
   await expect(date).toHaveValue("28/02/2027");
-  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "matrix");
   await expect(page.getByText(/bu resmî YKS tarihi değildir/)).toBeVisible();
   const themes = page.getByRole("group", { name: "Tema", exact: true });
   await expect(themes.getByRole("button")).toHaveText([
@@ -104,8 +104,13 @@ test("031 current and Matrix themes preserve custom dates, independent settings 
     "Matrix",
   ]);
   await expect(
-    themes.getByRole("button", { name: "Mevcut tema", exact: true }),
+    themes.getByRole("button", { name: "Matrix", exact: true }),
   ).toHaveAttribute("aria-pressed", "true");
+  // Keep exercising a genuine dark→Matrix transition after checking the new default.
+  await themes
+    .getByRole("button", { name: "Mevcut tema", exact: true })
+    .click();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
   await date.fill("25/05/2027");
   await page.getByLabel("Yazı tipi", { exact: true }).selectOption("lexend");
   await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("135");
@@ -163,6 +168,21 @@ test("031 current and Matrix themes preserve custom dates, independent settings 
   await expect(current).toHaveAttribute("aria-pressed", "true");
   await saved(page);
   expect(await stored(page)).toEqual(before);
+});
+
+test("024 an unset saved theme defaults to Matrix without replacing existing notes or study records", async ({
+  page,
+}) => {
+  await settings(page);
+  await page.getByRole("button", { name: "Mevcut tema", exact: true }).click();
+  await patchStored(page, { theme: undefined }, true);
+  const before = await stored(page);
+  await page.reload();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "matrix");
+  expect(await stored(page)).toEqual({
+    ...before,
+    settings: { ...before.settings, theme: "matrix" },
+  });
 });
 
 for (const theme of ["light", "system", "contrast"] as const)

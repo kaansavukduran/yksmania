@@ -3,6 +3,7 @@ import { ArrowRight, Eye, EyeOff } from "lucide-react";
 import { useApp } from "../store";
 import { lessonById } from "../domain/content";
 import type { CheatSheet } from "./cheatsheetContent";
+import { VisualLab } from "./VisualLab";
 
 function Recall({ prompt, answer }: { prompt: string; answer: string }) {
   const [shown, setShown] = useState(false);
@@ -40,6 +41,11 @@ export function CheatReader({
         Önce ana ilişkileri hatırla, sonra örneği kendin çöz. Açıklamayı açıp
         kendi gerekçenle karşılaştır.
       </p>
+      {sheet.lessonId && (
+        <div className="cheat-visual" data-cheat-model={sheet.lessonId}>
+          <VisualLab id={sheet.lessonId} />
+        </div>
+      )}
       <div className="cheat-sections">
         {sheet.sections.map((section, i) => (
           <section className="cheat-section" key={`${section.title}-${i}`}>
