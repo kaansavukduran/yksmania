@@ -3,6 +3,8 @@ import { Lightbulb } from "lucide-react";
 import type { HelpQuestion } from "../domain/questionHelpModel";
 import { helpPanels, resolvedGuidance } from "../learning/questionHelp";
 import "./questionHelp.css";
+import { SourceQuestionFigure } from "../learning/SourceQuestionFigure";
+import { sourceQuestionPresentation } from "../learning/sourceExercises024";
 
 export function QuestionHelp({
   question: originalQuestion,
@@ -21,6 +23,7 @@ export function QuestionHelp({
   const guidance = resolvedGuidance(question);
   const panels = helpPanels(question);
   const full = level > panels.length;
+  const sourcePresentation = sourceQuestionPresentation(question);
   return (
     <div className="question-help">
       {level > 0 && (
@@ -34,6 +37,9 @@ export function QuestionHelp({
                 ))}
               </section>
             ))}
+            {!full && sourcePresentation?.hintFigure && (
+              <SourceQuestionFigure figure={sourcePresentation.hintFigure} />
+            )}
             {full && (
               <section className="help-full-solution" aria-label="Tam çözüm">
                 <h3>Tam çözüm</h3>
@@ -44,6 +50,11 @@ export function QuestionHelp({
                   · {question.options[question.answer]}
                 </p>
                 <p>{question.explanation}</p>
+                {sourcePresentation?.explanationFigure && (
+                  <SourceQuestionFigure
+                    figure={sourcePresentation.explanationFigure}
+                  />
+                )}
                 {guidance && (
                   <>
                     <h4>Şıkların mantığı</h4>

@@ -1,4 +1,6 @@
 import { clarifiedQuestionView } from "../domain/questionPresentation";
+import { SourceQuestionFigure } from "../learning/SourceQuestionFigure";
+import { sourceQuestionPresentation } from "../learning/sourceExercises024";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   ArrowLeft,
@@ -175,9 +177,10 @@ export function Exams({
         ))}
       </div>
       <p className="muted exam-scope">
-        Uygulamadaki özgün sorulardan hazırlanır. Kısa setler tam kapsamlı sınav
-        değildir. TYT için 120 soru / 165 dakika, AYT Sayısal için 80 soru / 180
-        dakika referansı kullanılır; süre gerçek soru sayısına göre ölçeklenir.
+        Uygulamadaki hazır soru bankasından hazırlanır. Kısa setler tam kapsamlı
+        sınav değildir. TYT için 120 soru / 165 dakika, AYT Sayısal için 80 soru
+        / 180 dakika referansı kullanılır; süre gerçek soru sayısına göre
+        ölçeklenir.
       </p>
       {error && (
         <p role="alert" className="exam-error">
@@ -323,6 +326,7 @@ function ExamRunner({
   const clockParts = formatCountdown(remaining).split(":");
   const answered = draft.answers.filter((value) => value !== null).length;
   const q = clarifiedQuestionView(draft.items[draft.index]);
+  const sourcePresentation = sourceQuestionPresentation(q);
   const visibleHelpLevel = effectiveHelpLevel(
     helpPanels(q),
     draft.helpLevels?.[draft.index],
@@ -488,6 +492,9 @@ function ExamRunner({
           <h2 ref={questionHeading} tabIndex={-1}>
             {q.prompt}
           </h2>
+          {sourcePresentation?.figure && (
+            <SourceQuestionFigure figure={sourcePresentation.figure} />
+          )}
           <div className="exam-options">
             {q.options.map((option, index) => (
               <button
@@ -772,6 +779,7 @@ function ExamResults({
         </p>
         {session.items.map((storedQuestion, index) => {
           const q = clarifiedQuestionView(storedQuestion);
+          const sourcePresentation = sourceQuestionPresentation(q);
           const selected = session.answers[index],
             correct = selected === q.answer;
           return (
@@ -793,6 +801,14 @@ function ExamResults({
                 </section>
               )}
               <h3>{q.prompt}</h3>
+              {sourcePresentation && (
+                <p className="small muted">
+                  {sourcePresentation.source.shortLabel}
+                </p>
+              )}
+              {sourcePresentation?.figure && (
+                <SourceQuestionFigure figure={sourcePresentation.figure} />
+              )}
               <ol type="A">
                 {q.options.map((option, i) => (
                   <li key={i}>

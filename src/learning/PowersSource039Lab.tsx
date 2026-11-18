@@ -105,30 +105,34 @@ function Range({
     </label>
   );
 }
-function Select({
+function Choices({
   label,
   value,
   set,
-  children,
+  choices,
 }: {
   label: string;
-  value: string | number;
+  value: string;
   set: (value: string) => void;
-  children: ReactNode;
+  choices: readonly (readonly [value: string, label: string])[];
 }) {
-  const id = useId();
   return (
-    <label className="f039-control" htmlFor={id}>
-      <span>{label}</span>
-      <select
-        id={id}
-        aria-label={label}
-        value={value}
-        onChange={(event) => set(event.target.value)}
-      >
-        {children}
-      </select>
-    </label>
+    <fieldset className="f039-choices">
+      <legend>{label}</legend>
+      <div className="f039-choice-buttons">
+        {choices.map(([key, text]) => (
+          <button
+            className="f039-button"
+            type="button"
+            key={key}
+            aria-pressed={value === key}
+            onClick={() => set(key)}
+          >
+            {text}
+          </button>
+        ))}
+      </div>
+    </fieldset>
   );
 }
 function Figure({
@@ -583,13 +587,12 @@ function Equation() {
   return (
     <>
       <div className="f039-controls">
-        <Select label="Ortak taban" value={base} set={setBase}>
-          {["half", "1", "2", "3"].map((v) => (
-            <option key={v} value={v}>
-              {v === "half" ? "1/2" : v}
-            </option>
-          ))}
-        </Select>
+        <Choices
+          label="Ortak taban"
+          value={base}
+          set={setBase}
+          choices={[["half", "1/2"], ["1", "1"], ["2", "2"], ["3", "3"]]}
+        />
         <Range
           label="Sol üste x katsayısı"
           value={a}
@@ -679,12 +682,12 @@ function Compare() {
   return (
     <>
       <div className="f039-controls">
-        <Select label="İlk taban" value={kind} set={setKind}>
-          <option value="half">1/2</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="-2">−2</option>
-        </Select>
+        <Choices
+          label="İlk taban"
+          value={kind}
+          set={setKind}
+          choices={[["half", "1/2"], ["1", "1"], ["2", "2"], ["-2", "−2"]]}
+        />
         <Range label="İlk üs" value={m} set={setM} min={-4} max={8} />
         <Range label="İkinci üs" value={n} set={setN} min={-4} max={8} />
         <label className="f039-check">
@@ -771,11 +774,16 @@ function Scientific() {
           min={-6}
           max={9}
         />
-        <Select label="İşlem" value={operation} set={setOperation}>
-          <option value="single">Yalnız ilk sayı</option>
-          <option value="add">İki sayıyı topla</option>
-          <option value="multiply">İki sayıyı çarp</option>
-        </Select>
+        <Choices
+          label="İşlem"
+          value={operation}
+          set={setOperation}
+          choices={[
+            ["single", "Yalnız ilk sayı"],
+            ["add", "İki sayıyı topla"],
+            ["multiply", "İki sayıyı çarp"],
+          ]}
+        />
         {operation !== "single" && (
           <>
             <Range
@@ -1035,13 +1043,18 @@ function Growth() {
           min={0}
           max={200}
         />
-        <Select label="Her tamamlanan adımın çarpanı" value={q} set={setQ}>
-          <option value="0">0 (ilk adımdan sonra 0)</option>
-          <option value="half">1/2 (yarılanma)</option>
-          <option value="1">1 (sabit)</option>
-          <option value="2">2 (iki kat)</option>
-          <option value="3">3 (üç kat)</option>
-        </Select>
+        <Choices
+          label="Her tamamlanan adımın çarpanı"
+          value={q}
+          set={setQ}
+          choices={[
+            ["0", "0 (ilk adımdan sonra 0)"],
+            ["half", "1/2 (yarılanma)"],
+            ["1", "1 (sabit)"],
+            ["2", "2 (iki kat)"],
+            ["3", "3 (üç kat)"],
+          ]}
+        />
         <Range
           label="Tamamlanan adım"
           value={steps}
@@ -1152,17 +1165,12 @@ export function PowersSource039Lab() {
         aynı modelden üretilir.
       </p>
       <div className="f039-modes">
-        <Select
+        <Choices
           label="Keşif modeli"
           value={mode}
           set={(value) => setMode(value as Mode)}
-        >
-          {modes.map(([key, label]) => (
-            <option key={key} value={key}>
-              {label}
-            </option>
-          ))}
-        </Select>
+          choices={modes}
+        />
       </div>
       {modes.map(([key, label]) => {
         const Renderer = renderers[key];

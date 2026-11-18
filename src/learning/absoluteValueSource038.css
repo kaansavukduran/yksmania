@@ -11,3 +11,8 @@
 /* Give the native disclosure the same reachable target as the other controls. */
 .f038-lab summary{min-height:44px;padding-block:.6rem;box-sizing:border-box;cursor:pointer}
 .f038-lab summary:focus-visible{outline:3px solid var(--f038-b);outline-offset:4px}
+
+.f038-choices{min-width:0;min-inline-size:0;margin:0;padding:0;border:0}
+.f038-choices legend{max-width:100%;padding:0;margin-block-end:.65rem;overflow-wrap:anywhere}
+.f038-choice-buttons{display:flex;flex-wrap:wrap;gap:.625rem;min-width:0}
+.f038-choice-buttons button{flex:1 1 44px;min-height:44px;max-width:100%;box-sizing:border-box;text-align:center}

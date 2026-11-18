@@ -9,6 +9,11 @@ import { Empty, SubjectMark } from "../components/Shared";
 import type { Lesson } from "../domain/model";
 import { StudyTimer } from "../components/StudyTimer";
 import { geometryFoundation031Ids } from "../data/supplementalTopics031";
+import {
+  originalExercisesForLesson,
+  isSourceQuestionLesson,
+} from "../learning/sourceExercises024";
+import { OriginalExerciseReader } from "../learning/OriginalExerciseReader";
 export function Courses({
   start,
   mode = "theory",
@@ -153,7 +158,7 @@ export function Courses({
                             <small>
                               {mode === "theory"
                                 ? `${lessonGuides.get(lesson.id)?.minutes ?? lesson.minutes} ${t("minutes")}`
-                                : `${lesson.questions.length} ${t("originalQuestions")}`}
+                                : `${lesson.questions.length} ${isSourceQuestionLesson(lesson.id) ? "kaynak sorusu" : t("originalQuestions")}`}
                             </small>
                           </span>
                           <ArrowRight size={18} />
@@ -161,6 +166,31 @@ export function Courses({
                       ))}
                     </div>
                   )}
+                  {mode === "questions" &&
+                    ready
+                      .filter(
+                        (lesson) =>
+                          originalExercisesForLesson(lesson.id).length > 0,
+                      )
+                      .map((lesson) => (
+                        <details
+                          key={`sources-${lesson.id}`}
+                          className="source-exercise-catalogue"
+                        >
+                          <summary>
+                            {l(lesson.title)} · Kaynak alıştırmalarını aç
+                          </summary>
+                          <OriginalExerciseReader
+                            lessonId={lesson.id}
+                            onPractice={(id) => {
+                              const set = lessons.find(
+                                (lesson) => lesson.id === id,
+                              );
+                              if (set) start(set);
+                            }}
+                          />
+                        </details>
+                      ))}
                   {(!query || topics.length > 0) && (
                     <details className="curriculum-details" open={!!query}>
                       <summary>

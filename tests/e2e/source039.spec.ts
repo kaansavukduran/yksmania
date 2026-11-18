@@ -139,10 +139,10 @@ for(const profile of [
     expect((await stored(page)).explorations[unit.storedKey]).toEqual(saved.explorations[unit.storedKey]);
     expect(learning(await stored(page))).toEqual(learning(saved));
     const anatomy=page.locator(".f039-panel[id$='-anatomy']");
-    await lab.getByRole("combobox",{name:"Keşif modeli",exact:true}).selectOption("anatomy");
+    await lab.getByRole("group",{name:"Keşif modeli",exact:true}).getByRole("button",{name:"Çarpan ve işaret",exact:true}).click();
     await expect(anatomy.getByRole("slider",{name:"Taban",exact:true})).toHaveValue("0");
     await expect(anatomy.getByRole("slider",{name:"Tam sayı üs",exact:true})).toHaveValue("0");
-    await lab.getByRole("combobox",{name:"Keşif modeli",exact:true}).selectOption("growth");
+    await lab.getByRole("group",{name:"Keşif modeli",exact:true}).getByRole("button",{name:"Adım ve süreç",exact:true}).click();
     await unit.assertModel(lab);
     const accessibility=await new AxeBuilder({page}).include(unit.selector).analyze();
     expect(accessibility.violations.filter(value=>["serious","critical"].includes(value.impact??""))).toEqual([]);

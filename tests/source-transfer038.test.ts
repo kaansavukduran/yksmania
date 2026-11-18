@@ -92,11 +92,11 @@ it("manual038 theory completion preserves old data and original day1→3/7/21 po
   expect(old.topicProgress[topic]).toBeUndefined();
 });
 
-it("keeps approvedC5 code and dependency exact; appends only reachable disclosure CSS", () => {
+it("keeps approved teaching and model exact; separately pins C10 visible relation control and appended CSS", () => {
   const files = {
     "../src/learning/absoluteValueSource038.ts": "d3830ea8d0660596d8c269f464e162deee237eec601408f11278a523709d66b5",
     "../src/learning/absoluteValueSource038Model.ts": "207566c259247e3fcf5ec08fa874084fae66882e767aaa82b1c28b48d8128bfd",
-    "../src/learning/AbsoluteValueSource038Lab.tsx": "00af2953dc4c895c4edae523ec74375bdd6a957ff83119a869d45333fa2713d5",
+    "../src/learning/AbsoluteValueSource038Lab.tsx": "3f67b42c126d54f2888c5891ff8d16ff498eeee40682ecf3c1e0e7a8f3537cd1",
     "./absolute-value-source038-model.test.ts": "10a5660f5f2fa7315d531b9241a90256673fb2f47f35fdf5995bf4b0508a20b6",
     "../src/learning/basicInequalitiesSource037Model.ts": "7b672bb1b1a2b5aab87f2d1e4d873a8a47efd1f8c6a9838c2f6a28ab22879cf8",
   };
@@ -104,5 +104,6 @@ it("keeps approvedC5 code and dependency exact; appends only reachable disclosur
     expect(createHash("sha256").update(readFileSync(new URL(file, import.meta.url))).digest("hex"), file).toBe(expected);
   const css = readFileSync(new URL("../src/learning/absoluteValueSource038.css", import.meta.url));
   expect(createHash("sha256").update(css.subarray(0, 4063)).digest("hex")).toBe("e6bd5c119c75e8bf7e5e5c591ea9a1c028dcba35de63cdfb3e38e381b93e8f2e");
-  expect(css.subarray(4063).toString()).toBe("\n/* Give the native disclosure the same reachable target as the other controls. */\n.f038-lab summary{min-height:44px;padding-block:.6rem;box-sizing:border-box;cursor:pointer}\n.f038-lab summary:focus-visible{outline:3px solid var(--f038-b);outline-offset:4px}\n");
+  expect(createHash("sha256").update(css).digest("hex")).toBe("d19cf25192fc9587c260ad73e521f247a300b2bd9433171759be2e849f14a97d");
+  expect(css.subarray(4063).toString().startsWith("\n/* Give the native disclosure the same reachable target as the other controls. */\n.f038-lab summary{min-height:44px;padding-block:.6rem;box-sizing:border-box;cursor:pointer}\n.f038-lab summary:focus-visible{outline:3px solid var(--f038-b);outline-offset:4px}\n")).toBe(true);
 });
