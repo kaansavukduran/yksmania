@@ -293,8 +293,10 @@ const units = [
     text: "1839 Tanzimat: hukuk güvenliği",
     act: async (l) => {
       await l
-        .getByRole("combobox", { name: "İncelenecek olay", exact: true })
-        .selectOption("1");
+        .getByRole("group", { name: "İncelenecek olay", exact: true })
+        .getByRole("button")
+        .nth(1)
+        .click();
       for (let i = 0; i < 2; i++)
         await l
           .getByRole("button", { name: "Sonraki bağlantı", exact: true })
@@ -426,8 +428,10 @@ const additionalFamilies = [
     persisted: { event: 1, step: 2 },
     async act(lab) {
       await lab
-        .getByRole("combobox", { name: "İncelenecek olay", exact: true })
-        .selectOption("1");
+        .getByRole("group", { name: "İncelenecek olay", exact: true })
+        .getByRole("button")
+        .nth(1)
+        .click();
       for (let i = 0; i < 2; i++)
         await lab
           .getByRole("button", { name: "Sonraki kanıt", exact: true })

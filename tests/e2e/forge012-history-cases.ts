@@ -45,8 +45,10 @@ export const history012Cases = rows.map((r) =>
     `forge012-history:${r.id}`,
     async (_page, lab) => {
       await lab
-        .getByRole("combobox", { name: "İncelenecek olay", exact: true })
-        .selectOption(r.event);
+        .getByRole("group", { name: "İncelenecek olay", exact: true })
+        .getByRole("button")
+        .nth(Number(r.event))
+        .click();
       await lab
         .getByRole("button", { name: "Sonraki kanıt", exact: true })
         .click();

@@ -609,8 +609,10 @@ function historyUnit(id: string, phrase: string, answer: string) {
     `forge011-history:${id}`,
     async (_page, lab) => {
       await lab
-        .getByRole("combobox", { name: "İncelenecek olay", exact: true })
-        .selectOption("1");
+        .getByRole("group", { name: "İncelenecek olay", exact: true })
+        .getByRole("button")
+        .nth(1)
+        .click();
       await lab
         .getByRole("button", { name: "Sonraki bağlantı", exact: true })
         .tap();

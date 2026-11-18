@@ -104,9 +104,9 @@ function withHistory() {
 }
 
 describe("031 personal target and durable theme preferences", () => {
-  it("starts on the current theme with the requested personal target, independently of the device timezone", () => {
+  it("starts on Matrix with the requested personal target, independently of the device timezone", () => {
     const state = initialState();
-    expect(state.settings.theme).toBe("dark");
+    expect(state.settings.theme).toBe("matrix");
     expect(state.settings.examDate).toBe("2027-02-28");
     expect(dateTR(state.settings.examDate)).toBe("28/02/2027");
     expect(parseDateTR("28/02/2027")).toBe("2027-02-28");
@@ -115,6 +115,23 @@ describe("031 personal target and durable theme preferences", () => {
     expect(plan.deadline).toBe("2027-02-28");
     expect(plan.days).toBe(107);
     expect(plan.target).toBe(5);
+  });
+
+  it.each(["dark", "light", "system", "contrast", "matrix"] as const)(
+    "preserves an explicit %s preference and all existing learning data",
+    async (theme) => {
+      const expected = withHistory();
+      expected.settings.theme = theme;
+      expect(validateState(expected)).toEqual(expected);
+      expect(await parseBackup(JSON.stringify(expected))).toEqual(expected);
+    },
+  );
+
+  it("fills only an unset theme with Matrix while keeping the existing work", () => {
+    const expected = withHistory();
+    expected.settings.theme = "matrix";
+    const { theme: _unset, ...settings } = expected.settings;
+    expect(validateState({ ...expected, settings })).toEqual(expected);
   });
 
   it.each([undefined, ""])(

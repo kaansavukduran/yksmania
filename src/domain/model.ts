@@ -24,9 +24,10 @@ const id = z.string().min(1).max(160);
 export const settingsSchema = z.object({
   // Read earlier English preferences/backups without losing the rest of the state.
   locale: z.enum(["tr", "en"]).transform(() => "tr" as const),
-  // Earlier explicit preferences still load, including backups. The interface
-  // offers the current dark theme and Matrix without rewriting an old choice.
-  theme: z.enum(["dark", "light", "system", "contrast", "matrix"]),
+  // Matrix is the new/unset default; every explicit earlier preference stays.
+  theme: z
+    .enum(["dark", "light", "system", "contrast", "matrix"])
+    .default("matrix"),
   scale: z
     .number()
     .int()
@@ -173,7 +174,7 @@ export const initialState = (): AppState => ({
   examSessions: [],
   settings: {
     locale: "tr",
-    theme: "dark",
+    theme: "matrix",
     scale: 100,
     textSize: 100,
     font: "system",

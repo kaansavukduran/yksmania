@@ -1,5 +1,6 @@
 import { useId } from "react";
 import { useExploration } from "./useExploration";
+import { HistoryEventChoices } from "./HistoryEventChoices";
 import {
   history011Cases,
   history011State,
@@ -119,22 +120,13 @@ export default function Forge011HistoryLab({ id }: { id: string }) {
     <section className="forge011-history-lab" data-forge011={id}>
       <h3>{title}</h3>
       <p>{introduction}</p>
-      <div className="h011-controls">
-        <label htmlFor={`${uid}-event`}>
-          İncelenecek olay
-          <select
-            id={`${uid}-event`}
-            value={view.index}
-            onChange={(e) => chooseCase(Number(e.target.value))}
-          >
-            {rows.map((item, i) => (
-              <option key={item.name} value={i}>
-                {item.date} · {item.name}
-              </option>
-            ))}
-          </select>
-        </label>
-        {documents && (
+      <HistoryEventChoices
+        items={rows}
+        selected={view.index}
+        onSelect={chooseCase}
+      />
+      {documents && (
+        <div className="h011-controls">
           <div className="h011-compare-control">
             <label className="h011-check">
               <input
@@ -145,38 +137,19 @@ export default function Forge011HistoryLab({ id }: { id: string }) {
               İkinci belgeyle karşılaştır
             </label>
             {saved.compare && (
-              <label htmlFor={`${uid}-comparison`}>
-                Karşılaştırılan belge
-                <select
-                  id={`${uid}-comparison`}
-                  value={compareIndex}
-                  onChange={(e) => set({ comparison: Number(e.target.value) })}
-                >
-                  {historyDocumentProfiles.map((p, i) => (
-                    <option key={p.year} value={i}>
-                      {p.year} · {p.name}
-                    </option>
-                  ))}
-                </select>
-              </label>
+              <HistoryEventChoices
+                label="Karşılaştırılan belge"
+                items={historyDocumentProfiles.map((p) => ({
+                  date: String(p.year),
+                  name: p.name,
+                }))}
+                selected={compareIndex}
+                onSelect={(index) => set({ comparison: index })}
+              />
             )}
           </div>
-        )}
-      </div>
-      <ol className="h011-timeline" aria-label="Olaylar arasında gezin">
-        {rows.map((item, i) => (
-          <li key={item.name}>
-            <button
-              type="button"
-              aria-pressed={view.index === i}
-              onClick={() => chooseCase(i)}
-              aria-label={`${item.date} · ${item.name}`}
-            >
-              {item.date}
-            </button>
-          </li>
-        ))}
-      </ol>
+        </div>
+      )}
       <p className="h011-evidence">
         <strong>Verilen kanıt</strong>
         <span>{current.evidence}</span>

@@ -80,6 +80,7 @@
   fill: var(--accent);
   stroke: var(--surface);
   stroke-width: 4;
+  transition: cx 180ms ease;
 }
 .h012-card {
   fill: var(--surface);

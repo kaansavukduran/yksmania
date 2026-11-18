@@ -105,6 +105,9 @@
   fill: var(--surface-2);
   stroke: var(--border);
   stroke-width: 2.5;
+  transition:
+    stroke 180ms ease,
+    fill 180ms ease;
 }
 .h011-role.is-revealed {
   stroke: var(--plot-blue);
@@ -125,6 +128,7 @@
   fill: none;
   stroke: var(--border);
   stroke-width: 3;
+  transition: stroke 180ms ease;
 }
 .h011-link.is-revealed,
 .h011-support.is-revealed {
