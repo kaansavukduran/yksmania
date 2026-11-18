@@ -7,4 +7,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "tyt-geo-dik-ucgen-031",
   "tyt-geo-eslik-benzerlik-031",
   "tyt-geo-ucgen-merkezleri-031",
+  "tyt-geo-cokgenler-032",
+  "tyt-geo-dortgen-hiyerarsi-032",
+  "tyt-geo-yamuk-deltoid-032",
 ]);
