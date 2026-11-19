@@ -1042,6 +1042,19 @@ export const questionTactics: QuestionTactic[] = [
       "Kapalı aralıkta en büyük/en küçük: uç değerleri ve (aralıktaysa) tepeyi karşılaştır. Tepe aralık dışındaysa onu seçme.",
     ],
   },
+  {
+    id: "oge-soru-sirasi",
+    guides: ["cumlenin-ogeleri"],
+    match: /öge|özne|yüklem|nesne|tümleç|tamlayıcı/i,
+    title: "Yüklemi bul, ögeleri sorularla ayır",
+    steps: [
+      "Önce tam yüklemi bul: çekimli fiil ya da ek fiil almış isim; birleşik fiil ve deyim tek bütün (yardım etti).",
+      "Özne: “kim/ne yaptı, ne oldu?” Gizli özne kişi ekinden (taşıdım → ben); edilgende etkilenen öge sözde özne.",
+      "Nesne: özneden sonra “neyi/kimi?” (belirtili), “ne?” (belirtisiz). Sıfat ve tamlama öbeği bütün olarak nesnedir.",
+      "Yer tamlayıcısı: kime/nereye, nerede, nereden. Zaman bildiren -de/-e (saat üçte, akşama) zarf tümlecidir.",
+      "Devrik cümlede sırayı yükleme sorduğun sorularla kur; son diziliş cümledeki öbek sırasıdır.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
