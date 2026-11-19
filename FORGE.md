@@ -67,7 +67,9 @@
 
 - **TYT Matematik problemleri (Drive 020 Yüzde Problemleri okundu):** art arda %a artış/azalış çubukları (100 → 120 → 96), ayrık grupların nokta ızgarasıyla %34 (düz ortalama %30 tuzağı), paket ve gram fiyatı (%4 ucuz paket, %20 pahalı gram), kare kenar–alan–maliyet sürgüsü (1,44 · 0,75 = 1,08); kâr–zarar para doğrusu (maliyet 100, etiket 150, indirim sürgüsü, başabaş indirimi %33⅓) ve sabit gider 600/katkı 15 başabaş grafiği; yaşlarda sabit 24 fark ve değişen oran; 7…31 adım 3 terim sayımı ve uç eşleştirme. 4 taktik.
 
-Doğrulama (yerel): check PASS; 2.675 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
+- **Ekoloji (Drive 032 Besin Piramidi okundu):** verim sürgülü dört basamaklı enerji piramidi (geçiş sayısı = düzey − 1), aynı zincirin ters sayı piramidi ile düzgün enerji piramidi, otçulun 1000 kJ bütçesi (300/500/200), enerji 10 000 → 100 kJ azalırken derişim 0,02 → 2 mg/kg; kuşun tohum ve böcek yollarında 2. ve 3. düzey olması; birey–popülasyon–komünite–ekosistem panelleri. 3 taktik.
+
+Doğrulama (yerel): check PASS; 2.684 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
 
 ---
 

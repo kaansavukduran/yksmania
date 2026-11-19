@@ -37,6 +37,7 @@ Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen boz
 | 002 TYT Fizik – Madde Bilgisi (kopya kâğıdı) | `madde-ozkutle` figürleri (mezür ve menisküs, daralı m–V grafiği, 2024 TYT Fen 1 mantığında eğim ve karışım sürgüsü, eşit hacim/eşit kütle, kılcal borular su/cıva); taktik | Kısmi |
 | 030 TYT Biyoloji – Soy Ağaçları (kopya kâğıdı) | `soy-agaclari` figürleri (sembol dili, otozomal çekinik + Punnett + 2/3, 2023 TYT Fen 19 X'e bağlı renk körlüğü, model eleme); taktik | Kısmi |
 | 025 TYT Biyoloji – Kalıtıma Giriş (kopya kâğıdı) | `kalitima-giris` figürleri (homologlarda lokus/alel, gamet ağacı 2ʰ, bağımsız vs bağlı gen, iki çocuk olasılık ağacı 3/8 ve 7/16); taktik | Kısmi |
+| 032 TYT Biyoloji – Besin Piramidi (kopya kâğıdı) | `besin-piramidi` figürleri (verim sürgülü enerji piramidi, 1 ağaç–200 tırtıl–8 kuş sayı piramidi ile enerji piramidi, 1000 kJ enerji bütçesi, enerji azalırken kalıcı madde derişimi artışı); ayrıca `besin-zinciri-agi` (kuşun iki yolda iki düzeyi, 2024 TYT Fen 20 doğrudan av) ve `ekoloji-giris` (birey → popülasyon → komünite → ekosistem); 3 taktik | Kısmi |
 | 020 TYT Matematik – Yüzde Problemleri (kopya kâğıdı) | `yuzde-problemleri` figürleri (100 → %a artış → %a azalış sürgüsü, 30 + 70 kişilik grupların nokta ızgarası %34, 500 g/200 TL → 400 g/192 TL birim fiyat %20, kare kenar–alan–maliyet sürgüsü); 2026 TYT Temel Mat 19 doluluk tabanı taktikte; ayrıca `kar-zarar-problemleri` (maliyet–etiket–satış doğrusu, başabaş grafiği), `yas-problemleri` (sabit fark, değişen oran), `ardisik-sayilar` (çit direği ve uç eşleştirme); 4 taktik | Kısmi |
 | 002 TYT Kimya – Kimya Disiplinleri (kopya kâğıdı) | `kimya-disiplinleri` figürleri (alev rengiyle nitel analiz ve 20 mL'de kaç mg nicel analiz, 2022 TYT Fen 8 bağı; CH₄/C₂H₅OH organik, CO₂/CaCO₃ anorganik top-çubuk modeller; monomer sürgüsüyle polimer zinciri; kapasite–kalite grafiğinde uygunluk bölgesi ve maliyet); taktik | Kısmi |
 | 001 TYT Kimya – Simyadan Kimyaya (kopya kâğıdı) | `simyadan-kimyaya` figürleri (Aristo nitelik karesi ve bugünkü sınıf; kumlu suda süzme, tuzlu suda süzmenin yetmemesi, damıtma düzeneği; kapalı kapta 148 g sabit tartım ve açık kapta gaz kaybı sürgüsü); 2018 TYT Fen 1 bağı; taktik | Kısmi |
@@ -95,15 +96,15 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | TYT Geometri | 19 | 19 |
 | TYT Fizik | 24 | 24 |
 | TYT Kimya | 55 | 7 |
-| TYT Biyoloji | 36 | 5 |
+| TYT Biyoloji | 36 | 8 |
 | AYT Matematik | 17 | 11 |
 | AYT Geometri | 4 | 4 |
 | AYT Fizik | 46 | 0 |
 | AYT Kimya | 55 | 0 |
 | AYT Biyoloji | 75 | 0 |
-| **Toplam** | **371** | **50 (%13,5)** |
+| **Toplam** | **371** | **53 (%14,3)** |
 
-Toplam bölüm figürü: 528 (554 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 51 (43 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
+Toplam bölüm figürü: 534 (560 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 54 (46 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
 
 TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 
@@ -154,3 +155,4 @@ TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 | 19 Kasım (40) | Kimya: simyadan kimyaya 3 figür; 1 taktik | 1 | 77 / 371 |
 | 19 Kasım (41) | Kimya: kimya disiplinleri 4 figür; 1 taktik | 1 | 78 / 371 |
 | 19 Kasım (42) | TYT Matematik: yüzde 4, kâr–zarar 2, yaş 1, ardışık 1 figür; 4 taktik | 1 | 79 / 371 |
+| 19 Kasım (43) | Biyoloji: besin piramidi 4, besin ağı 1, ekoloji giriş 1 figür; 3 taktik | 1 | 80 / 371 |

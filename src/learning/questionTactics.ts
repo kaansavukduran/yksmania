@@ -798,6 +798,43 @@ export const questionTactics: QuestionTactic[] = [
       "Ardışık tek ya da çift sayılarda artış 2'dir; azalan listede artış negatiftir.",
     ],
   },
+  {
+    id: "piramit-birim",
+    guides: ["besin-piramidi"],
+    match: /piramit|enerji|kJ|biyokütle|trofik|basamak|düzey/i,
+    title: "Piramitte önce ölçülen niceliği oku",
+    steps: [
+      "Birimi oku: kJ (enerji akışı), g/m² (anlık biyokütle), birey sayısı. Yalnız enerji piramidi asla ters olmaz.",
+      "Geçiş sayısı = hedef düzey − 1; verilen verimleri ardışık çarp, toplama.",
+      "Ters soruda son enerjiyi verim kesirlerine sırayla böl (60 ÷ 0,10 ÷ 0,20 = 3000).",
+      "Enerji bütçesi: alınan = sindirilmeyen + solunum + yeni biyokütle.",
+      "Kalıcı madde derişimi basamaklar boyunca artar; toplam kütle için derişim × doku kütlesi gerekir.",
+    ],
+  },
+  {
+    id: "besin-agi-yol",
+    guides: ["besin-zinciri-agi"],
+    match: /ağ|zincir|ok|tüketici|üretici|hepçil|av/i,
+    title: "Besin ağında yolu tek tek izle",
+    steps: [
+      "Ok enerjinin yenenden yiyene akışıdır; avcının baktığı yön değildir.",
+      "Bir türün düzeyini her yol için ayrı say: düzey = üreticiden itibaren sıra (üretici 1).",
+      "Doğrudan besin, oku doğrudan gelen türlerdir; enerjinin dolaylı ulaştığı alt basamaklar doğrudan besin sayılmaz.",
+      "Bir tür kaldırılınca önce doğrudan bağlantıları, sonra dolaylı etkileri zinciriyle açıkla.",
+    ],
+  },
+  {
+    id: "ekoloji-birim",
+    guides: ["ekoloji-giris"],
+    match: /popülasyon|komünite|ekosistem|habitat|niş|abiyotik|biyotik|birey/i,
+    title: "Araştırılan ekolojik birimi seç",
+    steps: [
+      "Birey tek canlı; popülasyon aynı tür, aynı yer, aynı zaman.",
+      "Komünite yalnız canlıları (farklı türlerin popülasyonları) kapsar; ekosistem cansız çevreyi de ekler.",
+      "Habitat yaşanan yer (adres); niş canlının ilişkileri ve gereksinimlerinin bütünü (meslek).",
+      "Abiyotik etkenler (ışık, su, sıcaklık, mineraller) birlikte sınırlayıcı olur.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
