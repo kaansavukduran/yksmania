@@ -1292,6 +1292,19 @@ export const questionTactics: QuestionTactic[] = [
       "‘Ulaşılamaz’ kökünde her seçeneğe kanıt ara; önce-sonra sırası neden-sonuç kanıtı değildir (2019 AYT TDE–Sosyal Bilimler-1 soru 28 mantığı).",
     ],
   },
+  {
+    id: "ses-olayi-kanit",
+    guides: ["ses-bilgisi"],
+    match: /ses olay|ünlü|ünsüz|yumuşama|benzeşme|düşme|daralma|türeme|uyum|ulama|hece|kaynaştırma/i,
+    title: "Ses olayını adından önce başlangıç biçimiyle kanıtla",
+    steps: [
+      "Kökü anlamını koruyarak geri kur ve eki ayır; ‘önce’ ve ‘sonra’ biçimini alt alta yaz.",
+      "Değişen sesin yerini bul: kök sonu p, ç, t, k → b, c, d, ğ yumuşama; ek başı c, d, g → ç, t, k benzeşme.",
+      "Ünlü eksildiyse düşme (burun → burnu), a/e dar ünlüye döndüyse daralma (bekle → bekliyor); ekin kendi ünlüsü olay değildir (evi).",
+      "‘Hangisi yoktur?’ kökünde var olan her olaya bir kanıt sözcük yaz; kalan aday için metni yeniden denetle (2019 TYT Türkçe 7 mantığı).",
+      "Büyük uyum kalınlık, küçük uyum düz-yuvarlak / geniş-dar geçişine bakar; ulama yazıya harf eklemez.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
