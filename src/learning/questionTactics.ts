@@ -478,6 +478,18 @@ export const questionTactics: QuestionTactic[] = [
       "Düz tel: sağ el (başparmak akım), B ∝ I / r. Uzaklık 2 kat → B yarıya iner.",
     ],
   },
+  {
+    id: "ses-deprem-ayir",
+    guides: ["ses-deprem-dalgalari"],
+    match: /ses|yankı|frekans|tiz|gür|tını|deprem|tel/i,
+    title: "Ses ve deprem soruları",
+    steps: [
+      "Önce neyi ölçtüğünü ayır: tizlik → frekans; gürlük → genlik/şiddet; tını → dalga biçimi. Frekans artınca ses daha gür olmaz.",
+      "Yankı aynı noktaya dönüyorsa toplam yol 2d: d = v·t/2. Kaynak ile alıcı ayrıysa /2 kullanma.",
+      "Aynı kaynak yeni ortama geçerse f sabit, λ = v/f değişir. Tel kısalırsa (aynı tel ve gerginlik) v sabit, λ = 2L küçülür, f artar.",
+      "Deprem: büyüklük olayın tek değeridir; şiddet yere göre değişir. Daha çok hasar daha büyük büyüklük kanıtı değildir.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

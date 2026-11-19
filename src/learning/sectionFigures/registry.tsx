@@ -20,6 +20,7 @@ import { biologyFiguresMeiosis } from "./biologyFiguresMeiosis";
 import { chemistryFiguresParticles } from "./chemistryFiguresParticles";
 import { physicsFiguresElectrostatics } from "./physicsFiguresElectrostatics";
 import { physicsFiguresMagnetism } from "./physicsFiguresMagnetism";
+import { physicsFiguresSound } from "./physicsFiguresSound";
 import { chemistryFiguresAtoms } from "./chemistryFiguresAtoms";
 import { turkeyFigures } from "./turkeyFigures";
 import { historyFiguresIslam } from "./historyFiguresIslam";
@@ -47,6 +48,7 @@ export const sectionFigures: Record<string, Record<string, FigureDef>> = {
   ...chemistryFiguresParticles,
   ...physicsFiguresElectrostatics,
   ...physicsFiguresMagnetism,
+  ...physicsFiguresSound,
   ...chemistryFiguresAtoms,
   ...turkeyFigures,
   ...historyFiguresIslam,

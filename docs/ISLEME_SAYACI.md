@@ -11,8 +11,8 @@ Her geliştirme turunda güncellenir. Sayılar yalnız gerçekten yapılmış i�
 | Kayıtlı toplam PDF (kanonik envanter, 17 Kasım taraması) | 8.981 |
 | Kanonik defterde öğretim aktarımı **tam** | 7 |
 | Kanonik defterde **kısmi** | 2 |
-| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 12 |
-| Okunduğu doğrulanan farklı PDF toplamı (7 + 2 + 12) | 21 / 8.981 (%0,23) |
+| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 13 |
+| Okunduğu doğrulanan farklı PDF toplamı (7 + 2 + 13) | 22 / 8.981 (%0,24) |
 
 Arşivdeki PDF'lerin büyük kısmı aynı konunun farklı biçimleridir (TYT konu özeti, “Dersler Cepte” sunumu, etkinlik, okuma metni, deneme). Bu yüzden PDF yüzdesi konu kapsamını ölçmez; konu kapsamı aşağıdaki rehber tablosundadır.
 
@@ -31,6 +31,7 @@ Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen boz
 | 006 TYT Kimya – Atomun temel tanecikleri (kopya kâğıdı) | `atomun-temel-tanecikleri` figürleri (gölgeli çekirdek + olasılık bulutu, renkli A/Z/q gösterimi ve p/n/e çubukları, elektron alıp verme sürgüsü, p–e grafiği); p/n/e taktiği | Kısmi |
 | 009 TYT Fizik – Durgun Elektrik (kopya kâğıdı) | `durgun-elektrik` figürleri (özdeş kürede dokunma, etki + topraklama sırası, elektroskop ve 2026 TYT Fen 5 mantığı, alan–kuvvet yönü ve ters kare); taktik | Kısmi |
 | 011 TYT Fizik – Mıknatıslar ve Manyetik Alan (kopya kâğıdı) | `miknatislar-ve-manyetik-alan` figürleri (sayısal hesaplanan alan çizgileri + pusulalar, kesilen mıknatıs, 2017 TYT örnek kitapçık gergin ip çözümü, düz telde B ∝ I/r); taktik | Kısmi |
+| 017 TYT Fizik – Ses ve Deprem Dalgaları (kopya kâğıdı) | `ses-deprem-dalgalari` figürleri (boyuna dalgada tanecikler + basınç, tizlik/gürlük/tını, yankı d = vt/2, 2020 TYT Fen 6 tel boyu L → L/2, odak–merkez üssü ve yerel şiddet); taktik | Kısmi |
 
 PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olarak etiketlenmez.
 
@@ -76,7 +77,7 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | --- | ---: | ---: |
 | TYT Matematik | 40 | 1 |
 | TYT Geometri | 19 | 19 |
-| TYT Fizik | 24 | 19 |
+| TYT Fizik | 24 | 20 |
 | TYT Kimya | 55 | 1 |
 | TYT Biyoloji | 36 | 0 |
 | AYT Matematik | 17 | 0 |
@@ -86,9 +87,9 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | AYT Biyoloji | 75 | 0 |
 | **Toplam** | **371** | **41 (%11,1)** |
 
-Toplam bölüm figürü: 429 (455 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 42 (34 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
+Toplam bölüm figürü: 434 (460 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 42 (34 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
 
-TYT Fizik'te figürü olmayan 5 rehber: fizik bilimine giriş, madde ve özkütle, prizmalar ve renkler, ses ve deprem dalgaları, ışık bilgisi.
+TYT Fizik'te figürü olmayan 4 rehber: fizik bilimine giriş, madde ve özkütle, prizmalar ve renkler, ışık bilgisi.
 
 ## Tur geçmişi
 
@@ -115,3 +116,4 @@ TYT Fizik'te figürü olmayan 5 rehber: fizik bilimine giriş, madde ve özkütl
 | 19 Kasım (18) | Kimya: atomun temel tanecikleri 4 figür (çekirdek–bulut, gösterimin dört konumu, iyonlaşmada korunanlar, p–e grafiği); 1 taktik | 1 | 41 / 371 (+1 kimya rehberi) |
 | 19 Kasım (19) | Fizik: durgun elektrik 4 figür (dokunma, etki + topraklama, elektroskop, alan ve kuvvet); 1 taktik | 1 | 42 / 371 |
 | 19 Kasım (20) | Fizik: mıknatıslar 4 figür (hesaplanan alan çizgileri ve pusulalar, kutup ayrılmaz, gergin ip = itme, düz tel); 1 taktik | 1 | 43 / 371 |
+| 19 Kasım (21) | Fizik: ses ve deprem dalgaları 5 figür; 1 taktik | 1 | 44 / 371 |
