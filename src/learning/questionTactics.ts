@@ -550,6 +550,18 @@ export const questionTactics: QuestionTactic[] = [
       "aa çocuktan geriye git: iki a'nın her biri bir ebeveynden gelir; özelliği göstermeyen ebeveyn bu durumda Aa'dır.",
     ],
   },
+  {
+    id: "madde-dongusu",
+    guides: ["madde-donguleri"],
+    match: /azot|nitrat|amonyum|karbon|döngü|fosfor|buharlaşma|terleme|fiksasyon/i,
+    title: "Madde döngüsü soruları",
+    steps: [
+      "Süreci adından değil biçim değişiminden tanı: N₂ → NH₃/NH₄⁺ fiksasyon; organik N → NH₄⁺ amonifikasyon; NH₄⁺ → NO₂⁻ → NO₃⁻ nitrifikasyon; NO₃⁻ → N₂ denitrifikasyon; NO₃⁻ → organik N asimilasyon.",
+      "Tek bir madde azaldı diye süreç seçme: nitrat bitki alımı ya da yıkanmayla da azalabilir; oluşan ürünü de oku.",
+      "Bütçe: son stok = ilk stok + girişler − sistem dışı çıkışlar; aynı sınır ve aynı süre kullan. Akı ile depoyu karıştırma.",
+      "Bitkinin ölçülen CO₂ değişimi = fotosentezle alınan − solunumla verilen; karanlıkta yalnız solunum sürer. Fosforun büyük gaz deposu yoktur.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
