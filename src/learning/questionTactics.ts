@@ -1357,6 +1357,19 @@ export const questionTactics: QuestionTactic[] = [
       "Tatlı suyun büyük kısmı buz ve yer altındadır; çok su ile kullanılabilir tatlı su aynı ölçü değildir.",
     ],
   },
+  {
+    id: "atp-fosforilasyon",
+    guides: ["atp-metabolizma"],
+    match: /ATP|ADP|fosforilasyon|metabolizma|anabolizma|katabolizma|kemiozmoz|ATP sentaz|hidroliz/i,
+    title: "ATP'de parçayı say, fosforilasyonu iki soruyla seç",
+    steps: [
+      "Adenin + riboz + fosfat sayısı: 1 AMP, 2 ADP, 3 ATP. Hidrolizde uç fosfat ayrılır; ATP kısa süreli taşıyıcıdır, depo değildir.",
+      "Küçükten büyüğe yapım anabolizma (net enerji ister), büyükten küçüğe yıkım katabolizma; hücre ikisini birlikte yürütür.",
+      "Fosfat organik ara üründen doğrudan aktarılıyorsa substrat düzeyi (ETS ve O₂ gerekmez).",
+      "ETS → H⁺ gradyanı → ATP sentaz varsa ilk enerjiye bak: ışık → foto, kimyasal vericinin yükseltgenmesi → oksidatif. Ortak nokta kemiozmozdur (2024 AYT Fen 38 mantığı).",
+      "‘Yalnız’ içeren genellemeyi sına: oksijenli solunum mitokondrisiz prokaryotlarda da olur (2026 AYT Fen 38 mantığı).",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
