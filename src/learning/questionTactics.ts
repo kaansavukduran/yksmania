@@ -574,6 +574,18 @@ export const questionTactics: QuestionTactic[] = [
       "Fosfolipit: baş + 2 kuyruk, zarda başlar iki sulu yüze. Steroit: dört kaynaşmış halka, yağ asidi içermez. Safra enzim değildir.",
     ],
   },
+  {
+    id: "sinirlayici",
+    guides: ["sinirlayici-artan-madde", "sinirlayici-bilesen", "kutle-korunumu-sabit-oran"],
+    match: /sınırlayıcı|artan|aşırı|tam verim|en çok|en az|mol|gram/i,
+    title: "Sınırlayıcı ve artan madde",
+    steps: [
+      "Gram verildiyse önce n = m / M ile mole çevir. Denklem denkleşmemişse önce katsayıları kur.",
+      "Her reaktif için n / katsayı (kütle oranı verildiyse m / oran payı) hesapla; en küçüğü sınırlayıcıdır. Küçük gram ya da küçük mol tek başına karar vermez.",
+      "Tüketilenleri bu küçük kat ile bul; artan = başlangıç − tüketilen; ürün katsayı × kat.",
+      "Kontrol: başlangıç kütlesi = ürün + artan. “En çok ürün” üst sınırdır; “en az eklenecek” artanı tam tüketecek miktardır.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
