@@ -19,6 +19,8 @@
 
 - **Kontur ayrıntısı artırıldı:** Türkiye sınırı ve bölge haritaları artık 0,01° (~1 km) hassasiyetle saklanıyor (önce 0,1° ≈ 11 km) ve daha az sadeleştiriliyor: Türkiye 1:10m 2.248 nokta (önce 1.324), bölge haritaları 35.345 nokta. Körfez, burun ve adalar gerçek biçimiyle görünür.
 
+- **Yumuşak eğriler:** Şekil motoruna `smooth` seçeneği (Catmull–Rom → Bézier) eklendi. Savaş şemalarındaki üçgen dağlar farklı yükseklikte doruklu, yumuşak eyerli sıradağ silüetlerine; Türkiye şekillerindeki dağ, fay ve graben çizgileri akan eğrilere dönüştü.
+
 Doğrulama (yerel): check PASS; 2.496 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
 
 ---

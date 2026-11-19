@@ -116,10 +116,25 @@ const compass = (w: number, left = "← batı", right = "doğu →"): El[] => [
   txt(v(0.1, -0.35), left, "e", { tone: "muted", small: true }),
   txt(v(w - 0.1, -0.35), right, "w", { tone: "muted", small: true }),
 ];
-const mountain = (x: number, y: number, w: number, h: number): El =>
-  poly([v(x - w / 2, y), v(x, y + h), v(x + w / 2, y)], { tone: "muted", fill: "muted", thin: true });
-const mountains = (xs: number[], y: number, w: number, h: number, down = false): El[] =>
-  xs.map((x) => (down ? poly([v(x - w / 2, y), v(x, y - h), v(x + w / 2, y)], { tone: "muted", fill: "muted", thin: true }) : mountain(x, y, w, h)));
+/**
+ * A mountain range as one smooth silhouette: peaks at xs with slightly
+ * different heights and soft saddles between them, filled down to the base.
+ * `down` draws the range hanging below the base line (the far side of a pass).
+ */
+const mountains = (xs: number[], y: number, w: number, h: number, down = false): El[] => {
+  const s = down ? -1 : 1;
+  const pts: V[] = [];
+  const x0 = xs[0] - w / 2;
+  const x1 = xs[xs.length - 1] + w / 2;
+  pts.push(v(x0, y), v(x0, y), v(x0 + w * 0.12, y + s * h * 0.25));
+  xs.forEach((x, i) => {
+    const peak = h * (0.82 + 0.18 * Math.abs(Math.sin(i * 1.7 + x)));
+    pts.push(v(x - w * 0.18, y + s * peak * 0.72), v(x, y + s * peak), v(x + w * 0.16, y + s * peak * 0.8));
+    if (i < xs.length - 1) pts.push(v((x + xs[i + 1]) / 2, y + s * h * 0.42));
+  });
+  pts.push(v(x1 - w * 0.12, y + s * h * 0.25), v(x1, y), v(x1, y));
+  return [poly(pts, { tone: "muted", fill: "muted", thin: true, smooth: true })];
+};
 /* ---------------- Malazgirt 1071 ---------------- */
 const malazgirt: Battle = {
   stages: [

@@ -34,7 +34,7 @@ function country(box?: [number, number, number, number]): El[] {
   return els;
 }
 const seaLabel = (lon: number, lat: number, s: string): El => txt(P(lon, lat), s, "c", { tone: "b", small: true });
-const ridge = (pts: [number, number][], tone: Tone = "c"): El => poly(line(pts), { open: true, tone, bold: true });
+const ridge = (pts: [number, number][], tone: Tone = "c"): El => poly(line(pts), { open: true, tone, bold: true, smooth: true });
 function token(lon: number, lat: number, code: string, tone: Tone, on = true, r = 0.3): El[] {
   const c = P(lon, lat);
   return on
@@ -175,7 +175,7 @@ const egeFigure: FigureDef = {
     });
     if (step >= 1)
       grabens.forEach((g, i) => {
-        els.push(poly(line(g.pts), { open: true, tone: "b", bold: true, dash: true }));
+        els.push(poly(line(g.pts), { open: true, tone: "b", bold: true, dash: true, smooth: true }));
         const [lo, la] = g.pts[g.pts.length - 1];
         const code = String.fromCharCode(65 + i);
         els.push(...token(lo + 0.14, la, code, "b", true, 0.11));
@@ -200,11 +200,11 @@ const faultFigure: FigureDef = {
   alt: "Türkiye haritasında kuzeyde doğu-batı uzanan kırmızı KAF çizgisi ve doğuda kuzeydoğu-güneybatı uzanan DAF çizgisi; çizgilerin iki yanında zıt yönlü oklar.",
   steps: ["Kuzey Anadolu Fayı (KAF)", "Doğu Anadolu Fayı (DAF)", "Yanal hareket"],
   draw: (_v, step) => {
-    const els: El[] = [...country(), poly(line(kaf), { open: true, tone: "warn", bold: true })];
+    const els: El[] = [...country(), poly(line(kaf), { open: true, tone: "warn", bold: true, smooth: true })];
     const legend: { code: string; label: string; tone: Tone }[] = [{ code: "1", label: "Kuzey Anadolu Fayı (yaklaşık)", tone: "warn" }];
     els.push(...token(29.0, 41.25, "1", "warn"));
     if (step >= 1) {
-      els.push(poly(line(daf), { open: true, tone: "a", bold: true }));
+      els.push(poly(line(daf), { open: true, tone: "a", bold: true, smooth: true }));
       els.push(...token(37.2, 37.0, "2", "a"));
       legend.push({ code: "2", label: "Doğu Anadolu Fayı (yaklaşık)", tone: "a" });
     }

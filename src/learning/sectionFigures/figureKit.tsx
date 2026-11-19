@@ -103,7 +103,7 @@ export type El =
   | ({ k: "line"; a: V; b: V; ext?: number } & Style)
   | ({ k: "ray"; a: V; b: V; ext?: number } & Style)
   | ({ k: "vec"; a: V; b: V } & Style)
-  | ({ k: "poly"; ps: V[]; fill?: Tone; open?: boolean; bare?: boolean } & Style)
+  | ({ k: "poly"; ps: V[]; fill?: Tone; open?: boolean; bare?: boolean; smooth?: boolean } & Style)
   | ({ k: "circle"; c: V; r: number; fill?: Tone } & Style)
   | { k: "pt"; p: V; label?: string; at?: Dir; tone?: Tone; hollow?: boolean }
   | {
@@ -148,7 +148,7 @@ export const ray = (a: V, b: V, s: Style & { ext?: number } = {}): El => ({
 export const vec = (a: V, b: V, s: Style = {}): El => ({ k: "vec", a, b, ...s });
 export const poly = (
   ps: V[],
-  s: Style & { fill?: Tone; open?: boolean; bare?: boolean } = {},
+  s: Style & { fill?: Tone; open?: boolean; bare?: boolean; smooth?: boolean } = {},
 ): El => ({ k: "poly", ps, ...s });
 export const circle = (
   c: V,
@@ -390,6 +390,25 @@ function layout(els: El[]) {
   return { P, height, s };
 }
 
+/** Catmull–Rom curve through the points as cubic Béziers (organic outlines). */
+function smoothPath(ps: [number, number][], closed: boolean) {
+  if (ps.length < 3) return `M${ps.map(([x, y]) => `${x.toFixed(1)} ${y.toFixed(1)}`).join("L")}`;
+  const n = ps.length;
+  const at = (i: number) => (closed ? ps[(i + n) % n] : ps[Math.max(0, Math.min(n - 1, i))]);
+  const f = (v: number) => v.toFixed(1);
+  let d = `M${f(ps[0][0])} ${f(ps[0][1])}`;
+  const last = closed ? n : n - 1;
+  for (let i = 0; i < last; i++) {
+    const p0 = at(i - 1);
+    const p1 = at(i);
+    const p2 = at(i + 1);
+    const p3 = at(i + 2);
+    const c1 = [p1[0] + (p2[0] - p0[0]) / 6, p1[1] + (p2[1] - p0[1]) / 6];
+    const c2 = [p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6];
+    d += `C${f(c1[0])} ${f(c1[1])} ${f(c2[0])} ${f(c2[1])} ${f(p2[0])} ${f(p2[1])}`;
+  }
+  return closed ? d + "Z" : d;
+}
 const r2 = (n: number) => Math.round(n * 10) / 10;
 const pts = (list: [number, number][]) =>
   list.map(([x, y]) => `${r2(x)},${r2(y)}`).join(" ");
@@ -455,6 +474,12 @@ function Render({ els, title, desc }: { els: El[]; title: string; desc: string }
         );
       }
       case "poly":
+        if (el.smooth) {
+          const cls2 = el.open
+            ? `${cls(el.tone)} sf-stroke sf-nofill${el.dash ? " sf-dash" : ""}${el.thin ? " sf-thin" : ""}${el.bold ? " sf-bold" : ""}`
+            : `${cls(el.tone)} sf-stroke${el.dash ? " sf-dash" : ""}${el.thin ? " sf-thin" : ""}${el.bold ? " sf-bold" : ""} ${el.fill ? `sf-fill-${el.fill}` : "sf-nofill"}${el.bare ? " sf-bare" : ""}`;
+          return <path key={i} d={smoothPath(el.ps.map(P), !el.open)} className={cls2} />;
+        }
         if (el.open)
           return (
             <polyline
