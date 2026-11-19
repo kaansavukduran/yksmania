@@ -7,6 +7,7 @@ import { formatDate, undoSession } from "../domain/scheduler";
 import { useConfirmationDialog } from "../components/ConfirmationDialog";
 import { Empty } from "../components/Shared";
 import type { Lesson } from "../domain/model";
+import { MistakeRepair, mistakeKey, mistakeMap, mistakeReasons } from "../components/MistakeRepair";
 export function Mistakes({
   start,
   navigate,
@@ -87,6 +88,10 @@ export function Mistakes({
       {tab === "mistakes" ? (
         items.length ? (
           <div className="mistake-list">
+            <MistakeMapPanel
+              explorations={state.explorations}
+              keys={items.map(({ session, response }) => mistakeKey(session.id, response.questionId))}
+            />
             {items.map(({ session, response, lesson, question }, i) =>
               question && lesson ? (
                 <article
@@ -121,6 +126,12 @@ export function Mistakes({
                     </p>
                     <p>{l(question.explanation)}</p>
                   </details>
+                  <MistakeRepair
+                    sessionId={session.id}
+                    questionId={response.questionId}
+                    options={question.options.map((o) => l(o))}
+                    answer={question.answer}
+                  />
                   <button className="text-button" onClick={() => start(lesson)}>
                     {t("repair")}
                     <ArrowUpRight size={17} />
@@ -172,5 +183,39 @@ export function Mistakes({
         </section>
       )}
     </>
+  );
+}
+
+function MistakeMapPanel({
+  explorations,
+  keys,
+}: {
+  explorations: Record<string, Record<string, unknown>>;
+  keys: string[];
+}) {
+  const { counts, untagged } = mistakeMap(explorations, keys);
+  const max = Math.max(1, ...counts.values());
+  return (
+    <section className="panel mistake-map" aria-label="Hata haritası">
+      <h2>Hata haritan</h2>
+      <p className="small muted">
+        Her yanlışa bir neden seç; en sık nedeni önce onar. Etiketler senin notundur, puan vermez.
+      </p>
+      <ul>
+        {mistakeReasons.map((r) => {
+          const n = counts.get(r.id) ?? 0;
+          return (
+            <li key={r.id}>
+              <span>{r.label}</span>
+              <span className="map-bar" aria-hidden="true">
+                <span style={{ width: `${(n / max) * 100}%` }} />
+              </span>
+              <strong>{n}</strong>
+            </li>
+          );
+        })}
+      </ul>
+      <p className="small muted">Nedeni seçilmemiş: {untagged}</p>
+    </section>
   );
 }

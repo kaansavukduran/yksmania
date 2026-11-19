@@ -1,3 +1,13 @@
+# Forge043 — hata otopsisi: neden etiketi, kapatıp yeniden çöz, hata haritası (main)
+
+19 Kasım 2026. Yanlışlarım ekranında her yanlış/yardımlı soruya yedi hata nedeninden biri seçilebilir (bilgi eksik, kavram yanılgısı, yöntem seçimi, işlem hatası, okuma/dikkat, birim/işaret, süre baskısı); seçilen nedene özel tek cümlelik onarım önerisi gösterilir. “Kapatıp yeniden çöz” açıklamaya bakmadan şıkları yeniden sunar, doğru/yanlış geri bildirimi verir ve onarım sırasını söyler (benzer soru → 3/7/21. gün tekrarı). Üstte nedenlere göre “Hata haritan” çubukları ve nedeni seçilmemiş sayısı. Etiket ve yeniden deneme öğrencinin notudur: `explorations` altında kısa özetli anahtarla (100 karakter sınırı içinde) saklanır, oturum/tekrar/konu ilerlemesini değiştirmez, puan/XP/ustalık üretmez. Bileşen: `src/components/MistakeRepair.tsx`.
+
+Ayrıca: 498ba02'de tarayıcı testlerinin tamamı geçti; yalnız masaüstü paket smoke betiği (`scripts/test-desktop.mjs`) eski 500 konu toplamını bekliyordu, 504'e güncellendi.
+
+Doğrulama: check PASS; 2.462 birim testi PASS; build PASS; yeni `mistake-autopsy-043` tarayıcı testi PASS (etiket, öneri, harita, yeniden çözme, çevrimdışı yeniden açılış, öğrenme kayıtları değişmedi); Yanlışlarım'ı kullanan 8 tarayıcı dosyası 78/78 PASS. Sıradaki: Forge044 taktik kütüphanesi + aktif kopya kâğıdı.
+
+---
+
 # Forge042 — sınav pratiği: şık eleme, klavye, karalama kâğıdı (main)
 
 19 Kasım 2026. Çalışma ve deneme ekranlarında her şıkkın yanında 44×44 px “ele” düğmesi (üstünü çizer, tekrar basınca geri alır; o şıkkı seçmek elemeyi kaldırır). Klavye: 1–5 veya A–E şık seçer, H bir sonraki ipucu basamağını açar, Enter çalışmada kontrol eder/sonraki soruya geçer, denemede sonraki soruya geçer; metin alanlarında ve odaklı düğmelerde devre dışı. Çalışma ekranında çevrimdışı “Karalama kâğıdı” (kalem, silgi, temizle; fare/kalem/dokunma). Elemeler ve karalama kaydedilmez, puan/XP/ustalık üretmez; soru değişince sıfırlanır. Ortak bileşenler: `src/components/AnswerOptions.tsx`, `src/components/Scratchpad.tsx`. 320 px büyük yazıda taşma bulundu ve düzeltildi (karalama düğmesi satıra sarar).
