@@ -101,11 +101,11 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | AYT Matematik | 17 | 11 |
 | AYT Geometri | 4 | 4 |
 | AYT Fizik | 46 | 5 |
-| AYT Kimya | 55 | 5 |
-| AYT Biyoloji | 75 | 0 |
-| **Toplam** | **371** | **64 (%17,3)** |
+| AYT Kimya | 55 | 7 |
+| AYT Biyoloji | 75 | 3 |
+| **Toplam** | **371** | **69 (%18,6)** |
 
-Toplam bölüm figürü: 547 (573 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 56 (48 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
+Toplam bölüm figürü: 553 (579 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 56 (48 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
 
 TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 
@@ -160,6 +160,7 @@ TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 | 19 Kasım (44) | Biyoloji: güncel çevre sorunları 3 figür; 1 taktik | 1 | 81 / 371 |
 | 19 Kasım (45) | AYT Fizik: çembersel hareket, BHH izdüşümü, Lenz, Kmax–f, manyetik yarıçap (5 figür, birim sadeleştirmeli okumalar); 1 taktik; kupa sistemi | 0 | 81 / 371 |
 | 19 Kasım (46) | AYT Kimya: Boyle pistonu + P–V hiperbolü, denge bozulmasında etki anı (N₂ ekleme), kuvvetli asit–baz titrasyon eğrisi (mmol hesabı), Daniell pili (elektron/iyon yolu, 1,10 V), Cr/Cu orbital istisnaları (5 figür, birim okumalı) | 0 | 86 / 371 |
+| 19 Kasım (51) | AYT Kimya: Faraday bakır kaplama (Q → n(e⁻) → n(Cu) → m), dört bölge CH₄/NH₃/H₂O, cis–trans 2-büten / 1-büten; AYT Biyoloji: ışık–CO₂ doygunluk platosu, 28 günlük hormon eğrileri (LH tepesi), okuma çerçevesi kayması; şekil kaydında aynı rehberi taşıyan iki paketin birbirini silmesi düzeltildi | 0 | 91 / 371 |
 | 19 Kasım (50) | Hata avı sprinti; yardımsız deneme cevapları onarım kanıtı | 0 | 86 / 371 |
 | 19 Kasım (49) | Yanlışlarım: kanıta dayalı onarım durumu, “Eminim ama yanlış” önceliği, ısı haritası, kendime uyarı, cep kitapçığı | 0 | 86 / 371 |
 | 19 Kasım (48) | Çevrimdışı yeniden yükleme koruması; 34 kupaya özgün SVG amblemleri ve metal kademeler; 3 yıldız kupası; Web Audio ses motoru ve ses seviyesi | 0 | 86 / 371 |

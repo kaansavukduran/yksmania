@@ -38,6 +38,8 @@ import { biologyFiguresEcology } from "./biologyFiguresEcology";
 import { biologyFiguresEnvironment } from "./biologyFiguresEnvironment";
 import { physicsFiguresAyt } from "./physicsFiguresAyt";
 import { chemistryFiguresAyt } from "./chemistryFiguresAyt";
+import { chemistryFiguresAyt2 } from "./chemistryFiguresAyt2";
+import { biologyFiguresAyt } from "./biologyFiguresAyt";
 import { chemistryFiguresLimiting } from "./chemistryFiguresLimiting";
 import { chemistryFiguresYield } from "./chemistryFiguresYield";
 import { mathFiguresAyt } from "./mathFiguresAyt";
@@ -52,59 +54,70 @@ import { historyFiguresIslam } from "./historyFiguresIslam";
 import { chemistryFiguresMolecules } from "./chemistryFiguresMolecules";
 import { turkishFiguresWords } from "./turkishFiguresWords";
 
-export const sectionFigures: Record<string, Record<string, FigureDef>> = {
-  ...geometryFigures031,
-  ...geometryFigures032a,
-  ...geometryFigures032b,
-  ...geometryFiguresArea,
-  ...geometryFiguresAyt,
-  ...physicsFiguresOptics,
-  ...mathFiguresRoots,
-  ...physicsFiguresMechanics,
-  ...physicsFiguresFluidsCircuits,
-  ...physicsFiguresEnergy,
-  ...physicsFiguresWaves,
-  ...physicsFiguresThermal,
-  ...geometryFiguresCircle040,
-  ...historyFiguresSeljuk,
-  ...biologyFiguresNucleic,
-  ...biologyFiguresMitosis,
-  ...biologyFiguresMeiosis,
-  ...chemistryFiguresParticles,
-  ...physicsFiguresElectrostatics,
-  ...physicsFiguresMagnetism,
-  ...physicsFiguresSound,
-  ...physicsFiguresPrism,
-  ...physicsFiguresLight,
-  ...physicsFiguresMatter,
-  ...biologyFiguresPedigree,
-  ...biologyFiguresGenetics,
-  ...biologyFiguresCycles,
-  ...biologyFiguresLipids,
-  ...biologyFiguresLife,
-  ...physicsFiguresIntro,
-  ...chemistryFiguresMultiple,
-  ...chemistryFiguresAlchemy,
-  ...chemistryFiguresDisciplines,
-  ...mathFiguresTyt3,
-  ...biologyFiguresEcology,
-  ...biologyFiguresEnvironment,
-  ...physicsFiguresAyt,
-  ...chemistryFiguresAyt,
-  ...chemistryFiguresLimiting,
-  ...chemistryFiguresYield,
-  ...mathFiguresAyt,
-  ...mathFiguresAyt2,
-  ...mathFiguresAyt3,
-  ...mathFiguresTyt,
-  ...mathFiguresTyt2,
-  ...chemistryFiguresIsotope,
-  ...chemistryFiguresAtoms,
-  ...turkeyFigures,
-  ...historyFiguresIslam,
-  ...chemistryFiguresMolecules,
-  ...turkishFiguresWords,
-};
+/*
+ * Figure packs are merged per guide. A plain object spread replaced a whole
+ * guide entry when two packs named the same guide, silently dropping the
+ * earlier pack's figures; the merge keeps every section from every pack.
+ */
+export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
+  geometryFigures031,
+  geometryFigures032a,
+  geometryFigures032b,
+  geometryFiguresArea,
+  geometryFiguresAyt,
+  physicsFiguresOptics,
+  mathFiguresRoots,
+  physicsFiguresMechanics,
+  physicsFiguresFluidsCircuits,
+  physicsFiguresEnergy,
+  physicsFiguresWaves,
+  physicsFiguresThermal,
+  geometryFiguresCircle040,
+  historyFiguresSeljuk,
+  biologyFiguresNucleic,
+  biologyFiguresMitosis,
+  biologyFiguresMeiosis,
+  chemistryFiguresParticles,
+  physicsFiguresElectrostatics,
+  physicsFiguresMagnetism,
+  physicsFiguresSound,
+  physicsFiguresPrism,
+  physicsFiguresLight,
+  physicsFiguresMatter,
+  biologyFiguresPedigree,
+  biologyFiguresGenetics,
+  biologyFiguresCycles,
+  biologyFiguresLipids,
+  biologyFiguresLife,
+  physicsFiguresIntro,
+  chemistryFiguresMultiple,
+  chemistryFiguresAlchemy,
+  chemistryFiguresDisciplines,
+  mathFiguresTyt3,
+  biologyFiguresEcology,
+  biologyFiguresEnvironment,
+  physicsFiguresAyt,
+  chemistryFiguresAyt,
+  chemistryFiguresAyt2,
+  biologyFiguresAyt,
+  chemistryFiguresLimiting,
+  chemistryFiguresYield,
+  mathFiguresAyt,
+  mathFiguresAyt2,
+  mathFiguresAyt3,
+  mathFiguresTyt,
+  mathFiguresTyt2,
+  chemistryFiguresIsotope,
+  chemistryFiguresAtoms,
+  turkeyFigures,
+  historyFiguresIslam,
+  chemistryFiguresMolecules,
+  turkishFiguresWords,
+];
+export const sectionFigures: Record<string, Record<string, FigureDef>> = {};
+for (const pack of figurePacks)
+  for (const [guide, figures] of Object.entries(pack))
+    sectionFigures[guide] = { ...(sectionFigures[guide] ?? {}), ...figures };
 
 export function SectionFigure({
   guideId,
