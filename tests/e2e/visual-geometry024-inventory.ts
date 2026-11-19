@@ -132,4 +132,10 @@ export const geometrySummary024Inventory = [
     title: "Silindir, koni ve küre",
     subjectId: "tyt-geometri",
   },
+  {
+    topicId: "topic-tyt-geo-trigonometrik-oranlar-040",
+    lessonId: "tyt-geo-trigonometrik-oranlar-040",
+    title: "Dik üçgende trigonometrik oranlar",
+    subjectId: "tyt-geometri",
+  },
 ] as const;

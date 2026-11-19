@@ -41,4 +41,5 @@ export const sectionFigureGuideIds = new Set<string>([
   "tyt-geo-cember-aci-040",
   "tyt-geo-daire-040",
   "tyt-geo-silindir-koni-kure-040",
+  "tyt-geo-trigonometrik-oranlar-040",
 ]);

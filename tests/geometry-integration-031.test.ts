@@ -37,14 +37,14 @@ describe("031 additive geometry learning path", () => {
     expect(
       studyTopics.slice(479, 485).map(({ order, ...topic }) => topic),
     ).toEqual(supplementalTopics031);
-    expect(new Set(studyTopics.map((topic) => topic.id)).size).toBe(503);
+    expect(new Set(studyTopics.map((topic) => topic.id)).size).toBe(504);
     const state = initialState();
     for (const topic of workbookStudyTopics)
       state.topicProgress[topic.id] = { theory: "2026-11-16" };
     state.notes = { "lesson:rasyonel-sayilar": "Önceki not korunur." };
     const restored = validateState(state);
     const plan = studyPlan(restored, "theory", "2026-11-17");
-    expect(plan).toMatchObject({ done: 479, remaining: 24, total: 503 });
+    expect(plan).toMatchObject({ done: 479, remaining: 25, total: 504 });
     expect(plan.scheduled.map(({ topic }) => topic.id)).toEqual(
       [
         ...supplementalTopics031,

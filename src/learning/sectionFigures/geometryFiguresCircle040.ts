@@ -636,8 +636,8 @@ const kati: Record<string, FigureDef> = {
           seg(v(0, 0), v(0, h * sc), { tone: "c", dash: true }),
           seg(v(0, 0), v(r * sc, 0), { tone: "b" }),
           right(v(0, 0), v(0, 1), v(1, 0), "muted"),
-          txt(v(-0.15, (h * sc) / 2), `h = ${h}`, "w", { small: true, tone: "c" }),
-          txt(v((r * sc) / 2, -0.35), "r = 3", "s", { small: true, tone: "b" }),
+          txt(v(0.12, (h * sc) * 0.62), `h = ${h}`, "e", { small: true, tone: "c" }),
+          txt(v((r * sc) / 2, 0.05), "r = 3", "n", { small: true, tone: "b" }),
           txt(v((r * sc) / 2 + 0.3, (h * sc) / 2), `ℓ = ${fmt(l, 2)}`, "e", { small: true, tone: "a" }),
           { k: "poly", ps: [c, ...Array.from({ length: 49 }, (_, i) => pol(l * 0.22, 90 - a / 2 + (a * i) / 48, c))], fill: "a", tone: "a", thin: true },
           txt(c, `${fmt(a)}°`, "s", { small: true, bold: true }),
@@ -744,8 +744,189 @@ const kati: Record<string, FigureDef> = {
   },
 };
 
+const trig: Record<string, FigureDef> = {
+  "Kenarları açıya göre adlandır": {
+    caption: "Adım: önce x açısına göre karşı ve komşu kenar; sonra öbür dar açı y'ye geçince karşı ve komşu yer değiştirir, hipotenüs aynı kalır.",
+    alt: "Dik üçgen; seçili açının karşısındaki ve yanındaki dik kenarlar renkli etiketli, hipotenüs ayrıca işaretli.",
+    steps: ["x açısına göre", "y açısına göre"],
+    draw: (_, step) => {
+      const A = v(0, 0);
+      const B = v(4, 0);
+      const C = v(4, 3);
+      const xAt = step === 0;
+      return {
+        els: [
+          seg(A, C, { tone: "ink", bold: true }),
+          seg(A, B, { tone: xAt ? "b" : "a", bold: true }),
+          seg(B, C, { tone: xAt ? "a" : "b", bold: true }),
+          right(B, A, C),
+          ang(xAt ? A : C, xAt ? B : A, xAt ? C : B, xAt ? "x" : "y", { tone: "c" }),
+          txt(v(2, 0), xAt ? "komşu" : "karşı", "s", { small: true, tone: xAt ? "b" : "a" }),
+          txt(v(4, 1.5), xAt ? "karşı" : "komşu", "e", { small: true, tone: xAt ? "a" : "b" }),
+          txt(v(2, 1.5), "hipotenüs", "nw", { small: true }),
+        ],
+      };
+    },
+  },
+  "sin, cos, tan ve cot birer orandır": {
+    caption: "Hipotenüs 5 birim. x açısını değiştir: karşı ve komşu kenarlar değişir, oranlar anlık hesaplanır.",
+    alt: "Hipotenüsü sabit, açısı sürgüyle değişen dik üçgen; karşı ve komşu kenar uzunlukları.",
+    param: { label: "x", min: 10, max: 80, step: 5, init: 37, unit: "°" },
+    draw: (x) => {
+      const r = 5;
+      const t = (x * Math.PI) / 180;
+      const B = v(r * Math.cos(t), 0);
+      const C = v(r * Math.cos(t), r * Math.sin(t));
+      const sc = 0.8;
+      const S = (p: V): V => v(p[0] * sc, p[1] * sc);
+      return {
+        els: [
+          seg(S(O), S(C), { tone: "ink", bold: true }),
+          seg(S(O), S(B), { tone: "b", bold: true }),
+          seg(S(B), S(C), { tone: "a", bold: true }),
+          right(S(B), S(O), S(C)),
+          ang(S(O), S(B), S(C), `${x}°`, { tone: "c" }),
+          txt(S(v(B[0] / 2, 0)), `komşu ${fmt(B[0], 2)}`, "s", { small: true, tone: "b" }),
+          txt(S(v(B[0], C[1] / 2)), `karşı ${fmt(C[1], 2)}`, "e", { small: true, tone: "a" }),
+          txt(S(v(C[0] / 2, C[1] / 2)), "5", "nw", { small: true }),
+        ],
+        readout: [`sin = ${fmt(Math.sin(t), 3)}, cos = ${fmt(Math.cos(t), 3)}, tan = ${fmt(Math.tan(t), 3)}`],
+      };
+    },
+  },
+  "Oran üçgenin boyutuna bağlı değildir": {
+    caption: "Aynı x açılı üç benzer dik üçgen (3–4–5, 6–8–10, 9–12–15): sin x = 3/5 hepsinde aynıdır.",
+    alt: "Ortak köşeli, iç içe üç dik üçgen; her birinin karşı kenarı ve hipotenüsü etiketli.",
+    draw: () => {
+      const els: El[] = [];
+      for (const k of [1, 2, 3]) {
+        const s0 = 0.55 * k;
+        els.push(seg(v(0, 0), v(4 * s0, 3 * s0), { tone: "ink" }), seg(v(4 * s0, 0), v(4 * s0, 3 * s0), { tone: "a" }), txt(v(4 * s0, 1.5 * s0), `${3 * k}`, "e", { small: true, tone: "a" }));
+      }
+      els.push(seg(v(0, 0), v(4 * 1.65, 0), { tone: "b" }), ang(v(0, 0), v(1, 0), v(4, 3), "x", { tone: "c" }));
+      return { els, readout: ["3/5 = 6/10 = 9/15 = 0,6"] };
+    },
+  },
+  "Özel açılar: 30°, 45°, 60°": {
+    caption: "Sol: ikizkenar dik üçgen (1, 1, √2) → 45°. Sağ: kenarı 2 olan eşkenar üçgenin yarısı (1, √3, 2) → 30° ve 60°.",
+    alt: "Solda dik kenarları 1 olan ikizkenar dik üçgen; sağda eşkenar üçgen ve yüksekliğiyle oluşan 30-60-90 üçgeni.",
+    draw: () => {
+      const s0 = 2;
+      const A = v(0, 0), B = v(s0, 0), C = v(0, s0);
+      const P = v(4, 0), Q = v(4 + s0, 0), R = v(4 + s0 / 2, s0 * Math.sqrt(3) / 2 * 1);
+      const H = v(4 + s0 / 2, 0);
+      return {
+        els: [
+          { k: "poly", ps: [A, B, C], tone: "a", bold: true },
+          right(A, B, C),
+          ang(B, C, A, "45°", { tone: "c" }),
+          txt(v(1, 0), "1", "s", { small: true }),
+          txt(v(0, 1), "1", "w", { small: true }),
+          txt(v(1, 1), "√2", "ne", { small: true }),
+          { k: "poly", ps: [P, Q, R], tone: "muted", dash: true },
+          { k: "poly", ps: [P, H, R], tone: "b", bold: true },
+          right(H, P, R),
+          ang(P, H, R, "60°", { tone: "c" }),
+          ang(R, P, H, "30°", { tone: "c" }),
+          txt(mid(P, H), "1", "s", { small: true }),
+          txt(mid(H, R), "√3", "e", { small: true }),
+          txt(mid(P, R), "2", "nw", { small: true }),
+        ],
+      };
+    },
+  },
+  "Tümler açılarda oranlar yer değiştirir": {
+    caption: "Dar açılar x ve 90° − x. x'in karşı kenarı (a), tümler açının komşu kenarıdır: sin x = a/c = cos(90° − x).",
+    alt: "Dik üçgen; iki dar açı x ve 90 eksi x, karşı kenar a her iki açıya göre farklı adla etiketli.",
+    draw: () => {
+      const A = v(0, 0), B = v(4, 0), C = v(4, 3);
+      return {
+        els: [
+          { k: "poly", ps: [A, B, C], tone: "ink", bold: true },
+          right(B, A, C),
+          ang(A, B, C, "x", { tone: "a" }),
+          ang(C, A, B, "90° − x", { tone: "b" }),
+          seg(B, C, { tone: "warn", bold: true }),
+          txt(v(4, 1.5), "a", "e", { small: true, tone: "warn", bold: true }),
+          txt(v(2, 1.5), "c", "nw", { small: true }),
+        ],
+        readout: ["sin x = a/c = cos(90° − x)", "tan x = cot(90° − x)"],
+      };
+    },
+  },
+  "sin²x + cos²x = 1": {
+    caption: "Hipotenüs 1 olan dik üçgende karşı kenar sin x, komşu kenar cos x'tir. Açıyı değiştir: kareler toplamı hep 1.",
+    alt: "Birim çeyrek çember içinde hipotenüsü 1 olan dik üçgen; dik kenarları sin x ve cos x.",
+    param: { label: "x", min: 10, max: 80, step: 5, init: 30, unit: "°" },
+    draw: (x) => {
+      const t = (x * Math.PI) / 180;
+      const r = 3;
+      const C = v(r * Math.cos(t), r * Math.sin(t));
+      const B = v(C[0], 0);
+      return {
+        els: [
+          { k: "poly", ps: Array.from({ length: 31 }, (_, i) => pol(r, (90 * i) / 30, O)), open: true, tone: "muted" },
+          seg(O, C, { tone: "ink", bold: true }),
+          seg(O, B, { tone: "b", bold: true }),
+          seg(B, C, { tone: "a", bold: true }),
+          right(B, O, C),
+          ang(O, B, C, `${x}°`, { tone: "c" }),
+          txt(v(B[0] / 2, 0), "cos x", "s", { small: true, tone: "b" }),
+          txt(v(B[0], C[1] / 2), "sin x", "e", { small: true, tone: "a" }),
+          txt(mid(O, C), "1", "nw", { small: true }),
+        ],
+        readout: [`${fmt(Math.sin(t) ** 2, 3)} + ${fmt(Math.cos(t) ** 2, 3)} = 1`],
+      };
+    },
+  },
+  "Verilen bir orandan üçgeni kur": {
+    caption: "tan x = 5/12: karşı 5k, komşu 12k, hipotenüs Pisagor ile 13k. k'yı değiştir: kenarlar büyür, oranlar değişmez.",
+    alt: "Dik kenarları 5k ve 12k, hipotenüsü 13k olan dik üçgen.",
+    param: { label: "k", min: 0.2, max: 0.6, step: 0.1, init: 0.4, unit: "" },
+    draw: (k) => {
+      const A = v(0, 0), B = v(12 * k, 0), C = v(12 * k, 5 * k);
+      return {
+        els: [
+          { k: "poly", ps: [A, B, C], tone: "ink", bold: true },
+          right(B, A, C),
+          ang(A, B, C, "x", { tone: "c" }),
+          txt(mid(A, B), `12k = ${fmt(12 * k, 1)}`, "s", { small: true, tone: "b" }),
+          txt(mid(B, C), `5k = ${fmt(5 * k, 1)}`, "e", { small: true, tone: "a" }),
+          txt(mid(A, C), `13k = ${fmt(13 * k, 1)}`, "nw", { small: true }),
+        ],
+        readout: ["sin x = 5/13, cos x = 12/13 (k sadeleşir)"],
+      };
+    },
+  },
+  "Yükseklik ve uzaklık problemleri": {
+    caption: "Gözlemci ağaçtan 20 m uzakta. Bakış açısını değiştir: yükseklik h = 20·tan x.",
+    alt: "Yerde gözlemci, ileride dikey ağaç; gözlemciden ağacın tepesine bakış doğrusu ve yerle yaptığı açı.",
+    param: { label: "x", min: 15, max: 60, step: 5, init: 30, unit: "°" },
+    draw: (x) => {
+      const d = 20;
+      const h = d * Math.tan((x * Math.PI) / 180);
+      const sc = 0.3;
+      const G = v(0, 0), T = v(d * sc, 0), Top = v(d * sc, h * sc);
+      return {
+        els: [
+          seg(v(-0.5, 0), v(d * sc + 1, 0), { tone: "muted" }),
+          seg(T, Top, { tone: "c", bold: true }),
+          seg(G, Top, { tone: "a", dash: true }),
+          right(T, G, Top),
+          ang(G, T, Top, `${x}°`, { tone: "a" }),
+          pt(G, "göz", "sw"),
+          txt(mid(G, T), "20 m", "s", { small: true }),
+          txt(v(d * sc, (h * sc) / 2), `h = ${fmt(h, 1)} m`, "e", { small: true, tone: "c" }),
+        ],
+        readout: [`h = 20·tan ${x}° ≈ ${fmt(h, 2)} m`],
+      };
+    },
+  },
+};
+
 export const geometryFiguresCircle040: Record<string, Record<string, FigureDef>> = {
   "tyt-geo-cember-aci-040": cember,
   "tyt-geo-daire-040": daire,
   "tyt-geo-silindir-koni-kure-040": kati,
+  "tyt-geo-trigonometrik-oranlar-040": trig,
 };

@@ -410,6 +410,7 @@ const summaryFigure040: Record<string, string> = {
   "tyt-geo-cember-aci-040": "Çevre açı yayın yarısıdır",
   "tyt-geo-daire-040": "Daire alanını dilimlerden kur",
   "tyt-geo-silindir-koni-kure-040": "Ana doğru, yanal alan ve açınım açısı",
+  "tyt-geo-trigonometrik-oranlar-040": "sin, cos, tan ve cot birer orandır",
 };
 
 export function VisualLab({ id }: { id: string }) {
