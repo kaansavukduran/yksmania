@@ -304,6 +304,42 @@ const twoStage: FigureDef = {
   },
 };
 
+/* ---------- 9. Tollens karışım hesabı ---------- */
+const tollensMix: FigureDef = {
+  caption:
+    "Sürgüyle oluşan gümüş kütlesini değiştir. 30 g propanal–propanon karışımında yalnız aldehit Tollens ayıracını indirger: 1 mol aldehit 2 mol Ag verir. Ag kütlesini mole çevir, ikiye böl, aldehit kütlesini bul; keton kütlesi kalandır. İki maddenin mol kütlesi aynı (58 g/mol) olsa da tepkime davranışı farklıdır.",
+  alt: "Üstte 30 g'lık karışım çubuğu aldehit ve keton olarak iki renge bölünür; altta oluşan gümüş miktarı çubuğu. Sürgüyle gümüş kütlesi değiştikçe bölünme yeri kayar.",
+  param: { label: "Oluşan Ag", min: 10.8, max: 108, step: 10.8, init: 43.2, unit: " g" },
+  draw: (ag) => {
+    const nAg = ag / 108;
+    const nAld = nAg / 2;
+    const mAld = Math.min(30, nAld * 58);
+    const mKet = 30 - mAld;
+    const W = 6;
+    const k = W / 30;
+    const els: El[] = [];
+    els.push(poly([v(0, 2), v(mAld * k, 2), v(mAld * k, 2.7), v(0, 2.7)], { tone: "c", fill: "c", thin: true }));
+    if (mKet > 0.01) els.push(poly([v(mAld * k, 2), v(W, 2), v(W, 2.7), v(mAld * k, 2.7)], { tone: "b", fill: "b", thin: true }));
+    els.push(txt(v(0, 2.7), "Karışım 30 g", "ne", { tone: "ink", small: true, bold: true }));
+    els.push(txt(v(W, 2.35), `propanal ${fmt(mAld, 1)} g + propanon ${fmt(mKet, 1)} g`, "e", { tone: "ink", small: true }));
+    const agW = Math.min(W, (ag / 108) * W);
+    els.push(poly([v(0, 0.4), v(agW, 0.4), v(agW, 1.1), v(0, 1.1)], { tone: "muted", fill: "muted", thin: true }));
+    els.push(txt(v(0, 1.1), "Ag (gümüş aynası)", "ne", { tone: "ink", small: true, bold: true }));
+    els.push(txt(v(W, 0.75), `${fmt(ag, 1)} g = ${fmt(nAg, 2)} mol`, "e", { tone: "ink", small: true }));
+    els.push(txt(v(-0.4, 3.6), " ", "c"), txt(v(W + 6, -0.2), " ", "c"));
+    const over = nAld * 58 > 30;
+    return {
+      els,
+      readout: [
+        `n(Ag) = ${fmt(ag, 1)} g ÷ 108 g/mol = ${fmt(nAg, 2)} mol → n(aldehit) = ${fmt(nAg, 2)} ÷ 2 = ${fmt(nAld, 2)} mol → m = ${fmt(nAld, 2)} · 58 = ${fmt(nAld * 58, 1)} g`,
+        over
+          ? "Bu kadar Ag 30 g'ı aşan aldehit ister: karışım yalnız aldehitten oluşsa bile mümkün değil; verileri denetle."
+          : `Keton tepkimeye girmez: 30 − ${fmt(mAld, 1)} = ${fmt(mKet, 1)} g propanon. 1 : 2 katsayısını unutup Ag molünü doğrudan aldehite yazmak kütleyi iki kat yapar.`,
+      ],
+    };
+  },
+};
+
 export const chemistryFiguresAyt2: Record<string, Record<string, FigureDef>> = {
   "faraday-yasalari": { "Elektron molünden ürün molüne geç": faraday },
   "molekul-geometrisi": { "Dört bölge: düzgün dört yüzlü": tetra },
@@ -313,4 +349,5 @@ export const chemistryFiguresAyt2: Record<string, Record<string, FigureDef>> = {
   "ayt-karboksilik-asitler": { "Karbonat ve hidrojen karbonat": carbonate },
   "ayt-eterler": { "Alıcı ile verici ayrımı": etherHBond },
   "ayt-enerji-kaynaklari-gelismeler": { "Isıl değer ile verim farklıdır": twoStage },
+  "ayt-aldehit-keton": { "Karışım ve çökelek hesabı": tollensMix },
 };

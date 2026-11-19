@@ -938,6 +938,19 @@ export const questionTactics: QuestionTactic[] = [
       "Kaynak ile taşıyıcıyı ayır: elektrik ve hidrojen taşıyıcıdır; yenilenebilirliği üretim yolu belirler. Nükleer fisyon yenilenebilir sayılmaz.",
     ],
   },
+  {
+    id: "aldehit-keton-tollens",
+    guides: ["ayt-aldehit-keton"],
+    match: /aldehit|keton|karbonil|Tollens|Fehling|gümüş|Ag|propanal|propanon|etanal|-al\b|-on\b/i,
+    title: "Karbonilin komşularına bak, Ag'yi ikiye böl",
+    steps: [
+      "C=O karbonuna H bağlıysa aldehit (R–CHO, ad -al, karbonil C 1 numara); iki C bağlıysa keton (R–CO–R′, ad -on, en küçük numara).",
+      "İzomerlik için önce kapalı formülleri karşılaştır: propanal ve propanon C₃H₆O; etanal (C₂H₄O) ile propanon izomer değil.",
+      "Tollens'te yalnız basit aldehit tepkimeye girer: n(aldehit) = n(Ag) ÷ 2 (formaldehit bu kuralın dışında).",
+      "Karışımda önce Ag'den aldehit kütlesini bul, sonra toplamdan çıkar: kalan keton kütlesidir.",
+      "İndirgenme: aldehit → birincil, keton → ikincil alkol; C iskeleti korunur.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
