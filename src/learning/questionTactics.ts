@@ -622,6 +622,30 @@ export const questionTactics: QuestionTactic[] = [
       "Kontrol: tek fonksiyon simetrik aralıkta 0 verir; ortalama değer = integral ÷ aralık genişliği.",
     ],
   },
+  {
+    id: "mutlak-uzaklik",
+    guides: ["mutlak-deger"],
+    match: /\||mutlak/i,
+    title: "Mutlak değer soruları",
+    steps: [
+      "|x − a| = x'in a'ya uzaklığı. Önce merkezi (a) ve uzaklığı oku; |x + 2| merkezi −2'dir.",
+      "|x − a| = c (c > 0) → x = a ± c; c < 0 ise çözüm yok, c = 0 ise tek çözüm.",
+      "|x − a| < c → a − c < x < a + c (içeri); |x − a| > c → x < a − c veya x > a + c (dışarı).",
+      "Sağ tarafta değişken varsa önce o tarafın ≥ 0 olmasını şart koş; tamsayı sayarken uçların dahil olup olmadığına bak.",
+    ],
+  },
+  {
+    id: "venn-bolge",
+    guides: ["kumeler"],
+    match: /küme|yalnız|ikisini|hiçbiri|öğrenci/i,
+    title: "Venn ve kümeler soruları",
+    steps: [
+      "Önce kesişimi yaz, sonra “yalnız” bölgeleri çıkararak bul, en son dışarıyı (evren − birleşim).",
+      "s(A ∪ B) = s(A) + s(B) − s(A ∩ B): ortak eleman yalnız bir kez sayılır.",
+      "A − B = yalnız A; tümleyen seçilen evrene göredir.",
+      "Kontrol: dört bölgenin toplamı evrenin eleman sayısına eşit olmalı.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
