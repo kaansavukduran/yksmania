@@ -751,6 +751,59 @@ const cember: Record<string, FigureDef> = {
       };
     },
   },
+  "Ortak çözüm ve diskriminant aynı geometriyi sınar": {
+    caption:
+      "x² + y² = 25 ile y = c doğrusu. y = c yerine konunca x² = 25 − c² olur. Kök sayısı ile merkez uzaklığı |c| ve r = 5 karşılaştırması aynı kararı verir: |c| < 5 iki nokta, |c| = 5 teğet, |c| > 5 kesişim yok.",
+    alt: "Orijin merkezli 5 yarıçaplı çember ve sürgüyle aşağı yukarı kayan yatay y = c doğrusu; kesişim noktaları ve merkezden doğruya dik uzaklık gösteriliyor.",
+    param: { label: "c", min: -7, max: 7, step: 1, init: 3 },
+    draw: (c) => {
+      const O = v(0, 0);
+      const k = 25 - c * c;
+      const tone = k > 0 ? "c" : k === 0 ? "a" : "warn";
+      const els: El[] = [...axes(-8, 8, -8, 8, 2), circle(O, 5, { tone: "a" }), line(v(-8, c), v(8, c), { tone: "b" })];
+      if (c !== 0) els.push(seg(O, v(0, c), { tone, dash: true }), txt(v(0.3, c / 2), `d = ${Math.abs(c)}`, "e", { small: true, tone }));
+      if (k > 0) {
+        const x = Math.sqrt(k);
+        els.push(pt(v(-x, c), "", "n", "c"), pt(v(x, c), "", "n", "c"));
+      } else if (k === 0) els.push(pt(v(0, c), "", "n", "a"));
+      els.push(txt(v(7.6, c), `y = ${c}`, c >= 0 ? "sw" : "nw", { small: true, tone: "b" }));
+      return {
+        els,
+        readout: [
+          `x² = 25 − ${c * c} = ${k}`,
+          k > 0 ? `İki kök · d = ${Math.abs(c)} < r = 5 · kiriş ${fmt(2 * Math.sqrt(k), 2)}` : k === 0 ? "Çift kök · d = r = 5 · teğet" : `Gerçek kök yok · d = ${Math.abs(c)} > r = 5`,
+        ],
+      };
+    },
+  },
+  "Denklem, uzaklık ve çizim birbirini denetlesin": {
+    caption:
+      "Merkez (3; 5), x eksenine teğet: r = |5| = 5. y eksenine uzaklık 3, yarım kiriş √(25 − 9) = 4, kesişimler (0; 1) ve (0; 9), aralarındaki uzaklık 8 (2026 AYT Matematik 39 mantığı). x = 0 yazmak da (y − 5)² = 16 ile aynı sonucu verir.",
+    alt: "Merkezi (3; 5) olan 5 yarıçaplı çember x eksenine (3; 0)'da teğet; y eksenini (0; 1) ve (0; 9)'da kesiyor; merkez, (0; 5) ve (0; 9) bir 3-4-5 dik üçgeni oluşturuyor.",
+    steps: ["Teğetlikten r", "Eksene uzaklık", "Kiriş ve denetim"],
+    draw: (_, step) => {
+      const M = v(3, 5);
+      const T = v(3, 0);
+      const H = v(0, 5);
+      const A = v(0, 9);
+      const B = v(0, 1);
+      const els: El[] = [...axes(-3, 9, -2, 11, 2), circle(M, 5, { tone: "a" }), pt(M, "M(3; 5)", "e")];
+      els.push(seg(M, T, { tone: step === 0 ? "c" : "muted", dash: step !== 0 }), pt(T, "", "s", "c"));
+      if (step === 0) els.push(txt(v(3.3, 2.5), "r = 5", "w", { small: true, tone: "c" }));
+      if (step >= 1) els.push(seg(M, H, { tone: "b" }), right(H, M, A, "b"), txt(v(1.5, 5.3), "d = 3", "s", { small: true, tone: "b" }));
+      if (step >= 2) {
+        els.push(poly([M, H, A], { fill: "c", tone: "c", thin: true }), seg(B, A, { tone: "warn", bold: true }));
+        els.push(pt(A, "(0; 9)", "w", "warn"), pt(B, "(0; 1)", "w", "warn"));
+      }
+      return {
+        els,
+        readout: [
+          step === 0 ? "x eksenine teğet → r = |merkezin y'si| = 5" : step === 1 ? "y eksenine dik uzaklık = |merkezin x'i| = 3 < 5 → iki kesişim" : "Yarım kiriş √(25 − 9) = 4 → AB = 8",
+          step === 2 ? "Denetim: x = 0 → 9 + (y − 5)² = 25 → y = 1 ya da 9" : "(x − 3)² + (y − 5)² = 25",
+        ],
+      };
+    },
+  },
   "Teğet doğru yarıçapa diktir": {
     caption:
       "x² + y² = 25 çemberinde P(3; 4) noktasındaki teğet, OP yarıçapına diktir: 3x + 4y = 25.",

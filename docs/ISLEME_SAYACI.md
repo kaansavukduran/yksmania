@@ -11,8 +11,8 @@ Her geliştirme turunda güncellenir. Sayılar yalnız gerçekten yapılmış i�
 | Kayıtlı toplam PDF (kanonik envanter, 17 Kasım taraması) | 8.981 |
 | Kanonik defterde öğretim aktarımı **tam** | 7 |
 | Kanonik defterde **kısmi** | 2 |
-| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 53 |
-| Okunduğu doğrulanan PDF toplamı (bu dal) | 53 / 8.981 (%0,59) |
+| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 54 |
+| Okunduğu doğrulanan PDF toplamı (bu dal) | 54 / 8.981 (%0,60) |
 
 Arşivdeki PDF'lerin büyük kısmı aynı konunun farklı biçimleridir (TYT konu özeti, “Dersler Cepte” sunumu, etkinlik, okuma metni, deneme). Bu yüzden PDF yüzdesi konu kapsamını ölçmez; konu kapsamı aşağıdaki rehber tablosundadır.
 
@@ -34,12 +34,12 @@ Klasördeki numaralı kopya kâğıtları ders ders sayıldı (517 kopya kâğı
 | TYT Din Kültürü | 20 | 1 | %5,0 |
 | **TYT toplam** | **320** | **28** | **%8,8** |
 | AYT Matematik | 17 | 1 | %5,9 |
-| AYT Geometri | 4 | 0 | %0 |
+| AYT Geometri | 4 | 1 | %25,0 |
 | AYT Fizik | 46 | 1 | %2,2 |
 | AYT Kimya | 55 | 11 | %20,0 |
 | AYT Biyoloji | 75 | 2 | %2,7 |
-| **AYT toplam** | **197** | **15** | **%7,6** |
-| **Genel toplam** | **517** | **43** | **%8,3** |
+| **AYT toplam** | **197** | **16** | **%8,1** |
+| **Genel toplam** | **517** | **44** | **%8,5** |
 
 Notlar: TYT Türkçe'de 028 numarası iki farklı konuda kullanılmış (33 dosya, 32 numara). TYT Kimya'da 031 aynı adla iki kez var (eski ve yeni sürüm; 55 farklı konu). TYT Matematik ve Geometri'de 000 numaralı genel özetler var. AYT klasöründeki 7 durum raporu “232 konu” diyor ama klasörlerde 197 AYT kopya kâğıdı bulunuyor; 35 konunun kopya kâğıdı Drive'da yok. Bu tablodaki sıfırlar, o derste kopya kâğıdından figür/taktik aktarılmadığını söyler; uygulamada o dersin anlatımı ve soruları yine vardır (ayrıntı aşağıdaki kapsam tablosunda).
 
@@ -98,6 +98,7 @@ Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen boz
 | 030 TYT Coğrafya – Nüfus piramitleri (kopya kâğıdı) | `nufus-piramitleri` figürü (beş MEB tipi normalize model: içe çökük, düzgün üçgen, asimetrik, arı kovanı, çan; 0–14 / 15–64 / 65+ payları ve yaş bağımlılık oranı okuması), eksen–payda–tip taktiği; 2024 TYT Sosyal 8 bağı | Kısmi |
 | 038 AYT Biyoloji – Üriner sistem, nefronun işleyişi (kopya kâğıdı) | `nefron-isleyisi` figürü (geri emilim sürgüsü: süzülme 100 − geri emilim + salgılama 10 = idrar; oklar tübül → kan ve kan → tübül yönünde), yön–madde–bilanço taktiği; 2025 AYT Fen 30 bağı | Kısmi |
 | 029 TYT Geometri – Piramit (kopya kâğıdı) | `tyt-geo-piramitler-032` kesik piramit figürü iki adımlı oldu (büyük − küçük; yan ayrıt √5'ten yatay kayma 1 + 1 ile dik yükseklik √3), h / ℓ / e ve k–k²–k³ taktiği; 2013 LYS-1 Geometri 22 bağı | Kısmi |
+| 004 AYT Geometri – Çemberin analitiği (kopya kâğıdı) | `cemberin-analitigi` iki yeni figür: y = c sürgüsüyle x² = 25 − c² kök sayısı ve d–r kararı; (3; 5) merkezli çemberde x eksenine teğetlikten r = 5, y eksenine uzaklık 3, kiriş 8 ve x = 0 denetimi (2026 AYT Matematik 39 mantığı). Çember taktiğine katsayı, eksen teğetliği ve kiriş adımları | Kısmi |
 
 PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olarak etiketlenmez.
 
@@ -118,13 +119,13 @@ Bu tablo her turda uygulamanın kendi verisinden yeniden üretilir. “Resmî ko
 | TYT Felsefe | 15 | 17 | 17 | 190 | 1 (%5,9) | 1 | 1 | 1 / 17 (%5,9) |
 | TYT Din | 19 | 20 | 20 | 371 | 2 (%10,0) | 2 | 1 | 1 / 20 (%5,0) |
 | AYT Matematik | 36 | 18 | 17 | 253 | 13 (%72,2) | 17 | 4 | 1 / 17 (%5,9) |
-| AYT Geometri | 9 | 4 | 4 | 40 | 4 (%100,0) | 49 | 4 | 0 / 4 (%0,0) |
+| AYT Geometri | 9 | 4 | 4 | 40 | 4 (%100,0) | 51 | 4 | 1 / 4 (%25,0) |
 | AYT Fizik | 32 | 47 | 46 | 541 | 6 (%12,8) | 6 | 10 | 1 / 46 (%2,2) |
 | AYT Kimya | 34 | 56 | 55 | 680 | 18 (%32,1) | 19 | 14 | 11 / 55 (%20,0) |
 | AYT Biyoloji | 29 | 76 | 75 | 907 | 7 (%9,2) | 11 | 2 | 2 / 75 (%2,7) |
-| **Toplam** | **341** | **540** | **505** | **6.465** | **139 (%25,7)** | **572** | **123** | **43 / 517 (%8,3)** |
+| **Toplam** | **341** | **540** | **505** | **6.465** | **139 (%25,7)** | **574** | **123** | **44 / 517 (%8,5)** |
 
-Okuma: anlatım ve soru bütün derslerde var (505 / 540 derste anlatım, 6.465 özgün soru); eksik olan en çok görsel/etkileşimli katman (figürlü ders %25) ve kopya kâğıtlarından aktarım (%7,4). AYT Matematik ve AYT Geometri'de resmî konu sayısı uygulama dersinden fazladır, çünkü bu derslerde birkaç resmî konu tek derste toplanmıştır.
+Okuma: anlatım ve soru bütün derslerde var (505 / 540 derste anlatım, 6.465 özgün soru); eksik olan en çok görsel/etkileşimli katman (figürlü ders %25) ve kopya kâğıtlarından aktarım (%8,5). AYT Matematik ve AYT Geometri'de resmî konu sayısı uygulama dersinden fazladır, çünkü bu derslerde birkaç resmî konu tek derste toplanmıştır.
 
 Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan konular):
 
@@ -155,7 +156,7 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | AYT Biyoloji | 75 | 4 |
 | **Toplam** | **371** | **82 (%22,1)** |
 
-Toplam bölüm figürü: 572 (598 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 77 (69 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
+Toplam bölüm figürü: 574 (600 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 77 (69 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
 
 TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 
@@ -210,6 +211,7 @@ TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 | 19 Kasım (44) | Biyoloji: güncel çevre sorunları 3 figür; 1 taktik | 1 | 81 / 371 |
 | 19 Kasım (45) | AYT Fizik: çembersel hareket, BHH izdüşümü, Lenz, Kmax–f, manyetik yarıçap (5 figür, birim sadeleştirmeli okumalar); 1 taktik; kupa sistemi | 0 | 81 / 371 |
 | 19 Kasım (46) | AYT Kimya: Boyle pistonu + P–V hiperbolü, denge bozulmasında etki anı (N₂ ekleme), kuvvetli asit–baz titrasyon eğrisi (mmol hesabı), Daniell pili (elektron/iyon yolu, 1,10 V), Cr/Cu orbital istisnaları (5 figür, birim okumalı) | 0 | 86 / 371 |
+| 19 Kasım (71) | Drive AYT Geometri 004 Çemberin analitiği okundu: diskriminant–uzaklık ve kiriş denetimi figürleri; çember taktiği genişledi | 0 | 105 / 371 |
 | 19 Kasım (70) | Drive TYT Geometri 029 Piramit okundu: kesik piramitte yan ayrıttan dik yükseklik adımı, 1 taktik | 0 | 105 / 371 |
 | 19 Kasım (69) | Drive AYT Biyoloji 038 Nefronun işleyişi okundu: süzülme–geri emilim–salgılama bilanço figürü, 1 taktik | 1 | 105 / 371 |
 | 19 Kasım (68) | Drive TYT Coğrafya 030 Nüfus piramitleri okundu: beş tipli piramit figürü, 1 taktik | 1 | 105 / 371 |

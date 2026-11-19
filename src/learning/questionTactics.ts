@@ -263,6 +263,9 @@ export const questionTactics: QuestionTactic[] = [
       "Genel denklemi tam kareye tamamla: merkez (−D/2; −E/2), r² = (D/2)² + (E/2)² − F.",
       "Doğru–çember durumu için merkezin doğruya uzaklığını r ile karşılaştır.",
       "Teğet, değme noktasındaki yarıçapa diktir.",
+      "Sağ taraf 0 çıkarsa tek nokta, negatifse boş küme; x² ve y² katsayıları eşit değilse ya da xy terimi varsa çember değildir.",
+      "Eksene teğetlikte r, merkezin öteki koordinatının mutlak değeridir: x eksenine teğet → r = |k|, y eksenine teğet → r = |h|.",
+      "Kiriş = 2√(r² − d²); denetim için doğruyu denkleme koy, kök sayısı d–r karşılaştırmasıyla aynı çıkmalı (2026 AYT Matematik 39 mantığı).",
     ],
   },
   {
