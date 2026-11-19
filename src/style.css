@@ -676,6 +676,22 @@ small,
   position: relative;
   z-index: 2;
 }
+.hero-progress-chip {
+  position: absolute;
+  z-index: 3;
+  top: 0.9rem;
+  left: 0.9rem;
+  right: 0.9rem;
+  width: fit-content;
+  max-width: calc(100% - 1.8rem);
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  background: rgb(21 25 31 / 0.82);
+  color: #eeeae1;
+  font-size: 0.78rem;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
 .art-caption {
   position: absolute;
   bottom: 1.25rem;

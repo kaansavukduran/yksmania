@@ -1,4 +1,4 @@
-import { useId, useMemo, useState } from "react";
+import { useEffect, useId, useMemo, useRef, useState } from "react";
 import { WorldBase, equirect, type Project } from "./WorldBase";
 import { decodeRings } from "./decodeRings";
 import { LAND_DETAIL_RINGS, LAND_DETAIL_SCALE } from "./landDetailData";
@@ -28,6 +28,9 @@ const KIND_LABEL: Record<PlaceKind, string> = {
 };
 
 const W = 640;
+/** Width : height of both map panels. */
+const ASPECT = 2.3;
+const MAX_ZOOM = 8;
 
 function regionOf(list: Place[]) {
   const lons = list.map((p) => p.lon);
@@ -45,7 +48,8 @@ function regionOf(list: Place[]) {
   lon1 += padLon;
   lat0 -= padLat;
   lat1 += padLat;
-  const wantRatio = 1.6;
+  // Same aspect as the world map, so the two panels match in size.
+  const wantRatio = ASPECT;
   const ratio = ((lon1 - lon0) * k) / (lat1 - lat0);
   if (ratio < wantRatio) {
     const extra = ((lat1 - lat0) * wantRatio) / k - (lon1 - lon0);
@@ -122,82 +126,139 @@ function gridPath(region: { lon: [number, number]; lat: [number, number] }, rxy:
 const fmtCoord = (v: number, pos: string, neg: string) =>
   `${Math.abs(v).toLocaleString("tr-TR", { maximumFractionDigits: 1 })}° ${v >= 0 ? pos : neg}`;
 
+type View = { x: number; y: number; w: number; h: number };
+
 export function PlaceMap({ places }: { places: Place[] }) {
   const id = useId();
   const [selected, setSelected] = useState<number | null>(null);
-  const [zoomed, setZoomed] = useState(false);
   const focus = selected !== null && selected < places.length ? places[selected] : null;
-  const zoomPlace = zoomed && focus ? focus : null;
 
-  // World map (small) and the outlined region: depend only on the place list.
+  // Both panels share one size: W wide, W / ASPECT tall (plus a frame).
+  const box = useMemo(() => ({ x: 4, y: 4, w: W - 8, h: (W - 8) / ASPECT }), []);
+  const H = box.h + 8;
+  const full: View = { x: 0, y: 0, w: W, h: H };
+
+  // World map and the outlined region depend only on the place list.
   const world = useMemo(() => {
     const region = regionOf(places);
-    const box = { x: 4, y: 4, w: W - 8, h: (W - 8) / 2.3 };
     const xy = equirect(box, [-180, 180], [-60, 85]);
     const [rx0, ry1] = xy(region.lon[0], region.lat[0]);
     const [rx1, ry0] = xy(region.lon[1], region.lat[1]);
-    return { region, box, xy, rect: { x: Math.min(rx0, rx1), y: Math.min(ry0, ry1), w: Math.max(6, Math.abs(rx1 - rx0)), h: Math.max(6, Math.abs(ry1 - ry0)) } };
-  }, [places]);
+    return { region, xy, rect: { x: Math.min(rx0, rx1), y: Math.min(ry0, ry1), w: Math.max(6, Math.abs(rx1 - rx0)), h: Math.max(6, Math.abs(ry1 - ry0)) } };
+  }, [places, box]);
 
-  // Regional close-up: the whole set, or one place when zoomed in.
+  // Regional map geometry is computed once; zoom only changes the viewBox.
   const close = useMemo(() => {
-    // Zoom keeps context: a window about a third of the full region (at least
-    // 12° of longitude) centred on the chosen place, not a featureless dot.
-    const region = zoomPlace
-      ? (() => {
-          const half = Math.max(6, (world.region.lon[1] - world.region.lon[0]) / 6);
-          const corner = (dl: number, dt: number) => ({ ...zoomPlace, lon: zoomPlace.lon + dl, lat: zoomPlace.lat + dt });
-          return regionOf([corner(-half, -half / 2), corner(half, half / 2)]);
-        })()
-      : world.region;
-    const box = { x: 4, y: 4, w: W - 8, h: (W - 8) / 1.6 };
-    const xy = equirect(box, region.lon, region.lat);
+    const xy = equirect(box, world.region.lon, world.region.lat);
     return {
-      box,
       xy,
       land: pathOf(xy),
-      grid: gridPath(region, xy),
+      grid: gridPath(world.region, xy),
       spot: spread(places.map((p) => xy(p.lon, p.lat)), 38),
     };
-  }, [places, world.region, zoomPlace]);
+  }, [places, world.region, box]);
+
+  // Zoom and pan: mouse wheel (around the pointer), drag, buttons.
+  const [view, setView] = useState<View>(full);
+  const svgRef = useRef<SVGSVGElement>(null);
+  const drag = useRef<{ px: number; py: number; view: View; id: number } | null>(null);
+  const clampView = (v: View): View => {
+    const w = Math.min(W, Math.max(W / MAX_ZOOM, v.w));
+    const h = (w * H) / W;
+    return { w, h, x: Math.min(W - w, Math.max(0, v.x)), y: Math.min(H - h, Math.max(0, v.y)) };
+  };
+  const zoomAt = (factor: number, fx: number, fy: number) =>
+    setView((v) => {
+      const w = Math.min(W, Math.max(W / MAX_ZOOM, v.w * factor));
+      const k = w / v.w;
+      return clampView({ x: fx - (fx - v.x) * k, y: fy - (fy - v.y) * k, w, h: v.h * k });
+    });
+  const toSvg = (clientX: number, clientY: number, v: View) => {
+    const r = svgRef.current!.getBoundingClientRect();
+    return { x: v.x + ((clientX - r.left) / r.width) * v.w, y: v.y + ((clientY - r.top) / r.height) * v.h };
+  };
+  const viewRef = useRef(view);
+  viewRef.current = view;
+  useEffect(() => {
+    const el = svgRef.current;
+    if (!el) return;
+    // A non-passive listener so the page does not scroll while zooming.
+    const onWheel = (e: WheelEvent) => {
+      e.preventDefault();
+      const p = toSvg(e.clientX, e.clientY, viewRef.current);
+      zoomAt(Math.exp(e.deltaY * 0.0015), p.x, p.y);
+    };
+    el.addEventListener("wheel", onWheel, { passive: false });
+    return () => el.removeEventListener("wheel", onWheel);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   if (!places.length) return null;
-  const { box: wBox, xy: wxy, rect } = world;
-  const { box: rBox, xy: rxy, spot } = close;
+  const { xy: wxy, rect } = world;
+  const { xy: rxy, spot } = close;
   const clip = `${id}-clip`;
   const anyApprox = places.some((p) => p.approx);
   const names = places.map((p) => p.label).join(", ");
+  const scale = W / view.w;
+  const zoomPct = Math.round(scale * 100);
   const choose = (i: number) => setSelected((cur) => (cur === i ? null : i));
+  const zoomToFocus = () => {
+    if (!focus) return;
+    const [fx, fy] = rxy(focus.lon, focus.lat);
+    const w = W / 3;
+    setView(clampView({ x: fx - w / 2, y: fy - (w * H) / W / 2, w, h: (w * H) / W }));
+  };
   return (
     <figure className="place-map">
       <figcaption className="place-map-title">Haritada nerede?</figcaption>
       <div className="place-map-pair">
-        <svg viewBox={`0 0 ${W} ${wBox.h + 8}`} role="img" aria-label={`Dünya haritasında konum: ${names}`}>
-          <WorldBase box={wBox} xy={wxy} graticule={30} />
+        <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Dünya haritasında konum: ${names}`}>
+          <WorldBase box={box} xy={wxy} graticule={30} />
           <rect className="place-map-region" x={rect.x} y={rect.y} width={rect.w} height={rect.h} />
           {places.map((p, i) => {
             const [x, y] = wxy(p.lon, p.lat);
             return <circle key={p.id} className={`place-dot place-${KIND_TONE[p.kind]}${selected === i ? " is-focus" : ""}`} cx={x} cy={y} r={selected === i ? 5 : 3.5} />;
           })}
         </svg>
-        <svg viewBox={`0 0 ${W} ${rBox.h + 8}`} role="group" aria-label={`Bölge haritası: ${names}. İşaretlere dokunarak ayrıntı aç.`}>
+        <svg
+          ref={svgRef}
+          className={`place-map-zoomable${view.w < W ? " is-zoomed" : ""}`}
+          viewBox={`${view.x} ${view.y} ${view.w} ${view.h}`}
+          role="group"
+          aria-label={`Bölge haritası: ${names}. Fare tekerleğiyle yakınlaştır, sürükleyerek kaydır; işaretlere dokunarak ayrıntı aç.`}
+          onPointerDown={(e) => {
+            if ((e.target as Element).closest(".place-pin-group")) return;
+            drag.current = { px: e.clientX, py: e.clientY, view, id: e.pointerId };
+            e.currentTarget.setPointerCapture(e.pointerId);
+          }}
+          onPointerMove={(e) => {
+            const d = drag.current;
+            if (!d || d.id !== e.pointerId) return;
+            const r = e.currentTarget.getBoundingClientRect();
+            setView(clampView({ ...d.view, x: d.view.x - ((e.clientX - d.px) / r.width) * d.view.w, y: d.view.y - ((e.clientY - d.py) / r.height) * d.view.h }));
+          }}
+          onPointerUp={() => (drag.current = null)}
+          onPointerCancel={() => (drag.current = null)}
+        >
           <g className="geo-world" aria-hidden="true">
             <defs>
               <clipPath id={clip}>
-                <rect x={rBox.x} y={rBox.y} width={rBox.w} height={rBox.h} rx={8} />
+                <rect x={box.x} y={box.y} width={box.w} height={box.h} rx={8} />
               </clipPath>
             </defs>
-            <rect className="geo-ocean" x={rBox.x} y={rBox.y} width={rBox.w} height={rBox.h} rx={8} />
+            <rect className="geo-ocean" x={box.x} y={box.y} width={box.w} height={box.h} rx={8} />
             <g clipPath={`url(#${clip})`}>
-              <path className="geo-graticule" d={close.grid} />
-              <path className="geo-land" d={close.land} />
+              <path className="geo-graticule" d={close.grid} style={{ strokeWidth: 1 / scale }} />
+              <path className="geo-land" d={close.land} style={{ strokeWidth: 1 / scale }} />
             </g>
           </g>
           <g clipPath={`url(#${clip})`}>
             {places.map((p, i) => {
               const [x, y] = rxy(p.lon, p.lat);
-              const [sx, sy] = spot[i];
+              // Zoomed in, pins sit on their true spot; markers keep screen size.
+              const [sx, sy] = scale > 1.5 ? [x, y] : spot[i];
               const on = selected === i;
+              const r = (on ? 21 : 17) / scale;
               return (
                 <g
                   key={p.id}
@@ -214,10 +275,10 @@ export function PlaceMap({ places }: { places: Place[] }) {
                     }
                   }}
                 >
-                  {(Math.abs(sx - x) > 1 || Math.abs(sy - y) > 1) && <line className="place-leader" x1={x} y1={y} x2={sx} y2={sy} />}
-                  <circle className="place-pin-dot" cx={x} cy={y} r={3} />
-                  <circle className="place-pin" cx={sx} cy={sy} r={on ? 21 : 17} />
-                  <text className="place-pin-text" x={sx} y={sy + 6}>
+                  {(Math.abs(sx - x) > 1 || Math.abs(sy - y) > 1) && <line className="place-leader" x1={x} y1={y} x2={sx} y2={sy} style={{ strokeWidth: 1.5 / scale }} />}
+                  <circle className="place-pin-dot" cx={x} cy={y} r={3 / scale} />
+                  <circle className="place-pin" cx={sx} cy={sy} r={r} style={{ strokeWidth: 2.5 / scale }} />
+                  <text className="place-pin-text" x={sx} y={sy + 6 / scale} style={{ fontSize: 18 / scale }}>
                     {i + 1}
                   </text>
                 </g>
@@ -226,11 +287,18 @@ export function PlaceMap({ places }: { places: Place[] }) {
           </g>
         </svg>
       </div>
-      <div className="place-map-tools">
-        <button type="button" className="secondary" disabled={!focus} aria-pressed={zoomed && !!focus} onClick={() => setZoomed((z) => !z)}>
-          {zoomed && focus ? "Tüm bölgeye dön" : "Seçili yere yakınlaştır"}
+      <div className="place-map-tools" role="toolbar" aria-label="Bölge haritası yakınlaştırma">
+        <button type="button" className="secondary" aria-label="Yakınlaştır" disabled={view.w <= W / MAX_ZOOM + 0.01} onClick={() => zoomAt(1 / 1.5, view.x + view.w / 2, view.y + view.h / 2)}>
+          +
         </button>
-        <button type="button" className="secondary" disabled={selected === null && !zoomed} onClick={() => { setSelected(null); setZoomed(false); }}>
+        <button type="button" className="secondary" aria-label="Uzaklaştır" disabled={view.w >= W - 0.01} onClick={() => zoomAt(1.5, view.x + view.w / 2, view.y + view.h / 2)}>
+          −
+        </button>
+        <span className="place-zoom-level" aria-live="polite">%{zoomPct}</span>
+        <button type="button" className="secondary" disabled={!focus} onClick={zoomToFocus}>
+          Seçili yere yakınlaştır
+        </button>
+        <button type="button" className="secondary" disabled={selected === null && view.w >= W - 0.01} onClick={() => { setSelected(null); setView(full); }}>
           Sıfırla
         </button>
       </div>
@@ -262,7 +330,7 @@ export function PlaceMap({ places }: { places: Place[] }) {
         ))}
       </ol>
       <p className="small muted place-map-note">
-        Kıyılar gerçek haritadan (Natural Earth) çizildi; düz ızgara alan oranlarını bozar. Bir işarete ya da listedeki ada dokununca o yer vurgulanır.
+        Kıyılar gerçek haritadan (Natural Earth) çizildi; düz ızgara alan oranlarını bozar. Sağdaki haritada fare tekerleğiyle yakınlaştır, sürükleyerek kaydır; bir işarete ya da listedeki ada dokununca o yer vurgulanır.
         {anyApprox ? " Yeri tartışmalı olanlar yaklaşık işaretlendi." : ""}
       </p>
     </figure>

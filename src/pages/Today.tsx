@@ -41,6 +41,7 @@ export function Today({
   const recommended = first ? (lessonById(first.lessonId ?? "") ?? next) : next;
   const correct = state.sessions.reduce((n, s) => n + independentCorrect(s), 0);
   const dates = Array.from({ length: 7 }, (_, i) => addDays(today, i - 6));
+  const theoryDone = completionDates(state, "theory").size;
   return (
     <>
       <header className="page-heading">
@@ -110,10 +111,14 @@ export function Today({
             className="study-landscape"
             aria-hidden="true"
             style={{
-              filter: `grayscale(${1 - completionDates(state, "theory").size / studyTopics.length})`,
+              filter: `grayscale(${1 - theoryDone / studyTopics.length})`,
             }}
           />
           <Aion size={240} />
+          {/* The landscape gains colour only from topics you marked as studied. */}
+          <span className="hero-progress-chip">
+            {theoryDone.toLocaleString(state.settings.locale)} / {studyTopics.length.toLocaleString(state.settings.locale)} konu çalışıldı · manzara bununla renklenir
+          </span>
           <span className="art-caption">AIONIA</span>
         </div>
       </section>

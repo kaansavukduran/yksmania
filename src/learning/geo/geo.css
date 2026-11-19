@@ -69,7 +69,7 @@
 .place-map-title { font-weight: 700; margin-bottom: 0.5rem; }
 .place-map-pair { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.8rem; }
 @media (min-width: 900px) {
-  .place-map-pair { grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); align-items: start; }
+  .place-map-pair { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; }
 }
 .place-map svg { display: block; width: 100%; height: auto; }
 .place-warn { --place: var(--danger); }
@@ -134,3 +134,10 @@
   cursor: pointer;
 }
 .place-legend-button[aria-pressed="true"] { border-color: var(--place); }
+
+.place-map-zoomable { cursor: grab; touch-action: pan-y; }
+.place-map-zoomable.is-zoomed { touch-action: none; }
+.place-map-zoomable:active { cursor: grabbing; }
+.place-zoom-level { align-self: center; min-width: 3.5rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.place-map-tools button[aria-label="Yakınlaştır"],
+.place-map-tools button[aria-label="Uzaklaştır"] { min-width: 44px; font-size: 1.2rem; font-weight: 700; }
