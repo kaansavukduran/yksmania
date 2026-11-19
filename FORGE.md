@@ -6,7 +6,10 @@
 - **İki yeni tema:** “Axolotl pembesi” (Aion'un pembe gövdesi ve mavi uçlu solungaçları; koyu mor zemin, pembe vurgu, mavi rehber rengi) ve “Trans bayrağı” (#5BCEFA açık mavi, #F5A9B8 pembe, beyaz; açık zemin, üstte bayrak şeridi, yazı taşıyan vurgular okunurluk için aynı tonların koyusu). Açık temaya özel düzeltmeler trans temasına da uygulandı; hash'le sabitlenmiş onaylı CSS dosyalarına dokunulmadı, kopyaları style.css'e eklendi. Bugün kartı iki temaya uyar.
 - **Savaş şemaları yeniden tasarlandı:** dış çerçeve kalktı, birlikler harfli yuvarlak pullar (pusu kesik halka, sonuç kırmızı halka), adlar şeklin altındaki HTML anahtar listesinde; hiçbir yazı birliklerin veya okların üstüne binmez. Şekil motoruna `legend` eklendi.
 
-Doğrulama (yerel): check PASS; 2.477 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
+- **Kimya görselleri (6 figür):** Rutherford saçılması (Oynat: çoğu geçer, ikisi sapar, biri geri döner; gözlem–çıkarım ayrımı), Bohr geçişleri (soğurma n=1→3, yayma 3→2 ve 2→1, foton enerjisi karşılaştırması, iyonlaşma), Na→Cl elektron aktarımı ve ardından çekim (bağın aktarım değil çekim olduğu), metalik bağda koridorlarda dolaşan elektron denizi, alanla sürüklenen elektronlar (akım) ve kayan katmanlar (işlenebilirlik; iyonik kristalle karşılaştırma).
+- Çiplerde “Bir sonuç seç” gibi boş değerli yer tutucu seçenekler çip olarak çizilmez.
+
+Doğrulama (yerel): check PASS; 2.486 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
 
 ---
 

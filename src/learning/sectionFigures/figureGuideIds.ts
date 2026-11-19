@@ -46,4 +46,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "nukleik-asitler-yapi",
   "dna-eslenmesi",
   "hucre-organelleri",
+  "atom-modelleri",
+  "iyonik-bag-ve-guclu-etkilesimler",
+  "kovalent-adlandirma-metalik-bag",
 ]);

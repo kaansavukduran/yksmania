@@ -15,6 +15,8 @@ interface Opt {
   value: string;
   label: string;
   disabled: boolean;
+  /** Empty "choose…" prompt: not a real answer, so no chip is drawn for it. */
+  placeholder: boolean;
 }
 
 function readOptions(select: HTMLSelectElement): Opt[] {
@@ -22,10 +24,12 @@ function readOptions(select: HTMLSelectElement): Opt[] {
     value: o.value,
     label: o.textContent ?? o.value,
     disabled: o.disabled,
+    placeholder: o.value === "" && (o.disabled || o.hidden === true || /seç|seçin|seçiniz|—|\.\.\.|…/i.test(o.textContent ?? "")),
   }));
 }
 const same = (a: Opt[], b: Opt[]) =>
-  a.length === b.length && a.every((o, i) => o.value === b[i].value && o.label === b[i].label && o.disabled === b[i].disabled);
+  a.length === b.length &&
+  a.every((o, i) => o.value === b[i].value && o.label === b[i].label && o.disabled === b[i].disabled && o.placeholder === b[i].placeholder);
 
 export function ChoiceSelect(props: SelectHTMLAttributes<HTMLSelectElement>) {
   const ref = useRef<HTMLSelectElement>(null);
@@ -58,7 +62,7 @@ export function ChoiceSelect(props: SelectHTMLAttributes<HTMLSelectElement>) {
     <span className={chips ? `choice-select${props.disabled ? " is-disabled" : ""}` : "choice-select is-plain"}>
       {chips && (
         <span className="choice-chips" aria-hidden="true">
-          {opts.map((o) => (
+          {opts.filter((o) => !o.placeholder).map((o) => (
             <span
               key={o.value}
               className={`choice-chip${o.value === current ? " is-selected" : ""}${o.disabled ? " is-disabled" : ""}`}
