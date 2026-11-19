@@ -63,7 +63,9 @@
 
 - **Simyadan kimyaya (Drive 001 TYT Kimya kopya kâğıdı okundu):** Aristo'nun sıcak/soğuk–kuru/ıslak karesi ve bugünkü sınıflar (su bileşik, hava ve toprak karışım); huni + filtre ile kumun tutulması, çözünmüş tuzun geçmesi, balon–soğutucu–toplama kabıyla damıtma; kapalı kapta katı 20 → 26 g iken toplam 148 g, kapak açılınca kaçan gazla düşen tartım. Taktik eklendi.
 
-Doğrulama (yerel): check PASS; 2.658 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
+- **Kimya disiplinleri (Drive 002 TYT Kimya kopya kâğıdı okundu):** sodyum/bakır/lityum alev renkleriyle nitel analiz, 20 mL numunede mg ile nicel analiz; metan ve etanol organik, CO₂ ve CaCO₃ karbonlu ama anorganik; monomer sürgüsüyle polimer zinciri; A/B/C üretim düzenleri kapasite–kalite grafiğinde, şart sürgüsüyle uygun bölge ve en ucuz uygun düzen. Taktik eklendi.
+
+Doğrulama (yerel): check PASS; 2.663 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
 
 ---
 

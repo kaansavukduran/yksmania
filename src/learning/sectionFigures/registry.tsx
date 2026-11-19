@@ -32,6 +32,7 @@ import { biologyFiguresLife } from "./biologyFiguresLife";
 import { physicsFiguresIntro } from "./physicsFiguresIntro";
 import { chemistryFiguresMultiple } from "./chemistryFiguresMultiple";
 import { chemistryFiguresAlchemy } from "./chemistryFiguresAlchemy";
+import { chemistryFiguresDisciplines } from "./chemistryFiguresDisciplines";
 import { chemistryFiguresLimiting } from "./chemistryFiguresLimiting";
 import { chemistryFiguresYield } from "./chemistryFiguresYield";
 import { mathFiguresAyt } from "./mathFiguresAyt";
@@ -79,6 +80,7 @@ export const sectionFigures: Record<string, Record<string, FigureDef>> = {
   ...physicsFiguresIntro,
   ...chemistryFiguresMultiple,
   ...chemistryFiguresAlchemy,
+  ...chemistryFiguresDisciplines,
   ...chemistryFiguresLimiting,
   ...chemistryFiguresYield,
   ...mathFiguresAyt,

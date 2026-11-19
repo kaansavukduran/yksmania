@@ -734,6 +734,20 @@ export const questionTactics: QuestionTactic[] = [
       "Deney yorumunda değişen bütün koşulları tabloya dök; birden fazla koşul değişmişse tek nedene bağlama.",
     ],
   },
+  {
+    id: "kimya-disiplin",
+    guides: ["kimya-disiplinleri"],
+    match: /disiplin|analitik|biyokimya|organik|anorganik|polimer|fizikokimya|endüstri|meslek|sektör|kimya/i,
+    title: "Disiplini nesneden değil hedeften seç",
+    steps: [
+      "Nesneyi (kan, plastik, mineral, ilaç) ve istenen çıktıyı ayrı yaz; karar çıktıya göre verilir.",
+      "Tür ya da miktar saptanıyorsa analitik (nitel: ne var? nicel: ne kadar?); alev rengiyle tür tanıma da analitiktir.",
+      "Canlıdaki kimyasal işleyiş → biyokimya; zincir–özellik ilişkisi → polimer; sıcaklık/basınç etkisi → fizikokimya; sanayi üretimi → endüstriyel.",
+      "Karbon içermek organik demek değildir: CO₂ ve karbonatlar anorganik; mineralin yapısı anorganik, miktarı analitiktir.",
+      "Üretim seçiminde önce bütün şartları sağlayanları ayır, sonra maliyeti karşılaştır; uygun aday yoksa zorla seçme.",
+      "Meslek (kimyager, eczacı), disiplin (analitik) ve sektör (ilaç, tekstil) farklı sorulara cevap verir.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
