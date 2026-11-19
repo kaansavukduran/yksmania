@@ -11,7 +11,7 @@ Her geliştirme turunda güncellenir. Sayılar yalnız gerçekten yapılmış i�
 | Kayıtlı toplam PDF (kanonik envanter, 17 Kasım taraması) | 8.981 |
 | Kanonik defterde öğretim aktarımı **tam** | 7 |
 | Kanonik defterde **kısmi** | 2 |
-| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 31 |
+| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 32 |
 | Okunduğu doğrulanan farklı PDF toplamı (7 + 2 + 23) | 32 / 8.981 (%0,36) |
 
 Arşivdeki PDF'lerin büyük kısmı aynı konunun farklı biçimleridir (TYT konu özeti, “Dersler Cepte” sunumu, etkinlik, okuma metni, deneme). Bu yüzden PDF yüzdesi konu kapsamını ölçmez; konu kapsamı aşağıdaki rehber tablosundadır.
@@ -58,6 +58,7 @@ Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen boz
 | 053 AYT Kimya – Enerji kaynakları ve bilimsel gelişmeler (kopya kâğıdı) | `ayt-enerji-kaynaklari-gelismeler` figürü (1000 kJ → %60 → η₂ sürgüsü; verimler çarpılır, kalan enerji diğer çıkışlara gider), kW/kWh, verim, aynı hizmet ve kaynak–taşıyıcı taktiği | Kısmi |
 | 050 AYT Kimya – Aldehit ve ketonlar (kopya kâğıdı) | `ayt-aldehit-keton` figürü (Ag kütlesi sürgüsü; 30 g propanal–propanon karışımında n(aldehit) = n(Ag)/2, keton kalan), karbonil sınıfı–izomerlik–Tollens taktiği; 2022 AYT Fen 27 (40 g etanal–propanon, 108 g Ag) bağı | Kısmi |
 | 052 AYT Kimya – Esterler (kopya kâğıdı) | `ayt-esterler` figürü (etil etanoat 2+2, metil propanoat 3+1, propil metanoat 1+3: asit tarafı karbonil dahil, alkol tarafı adın başı), adlandırma–hidroliz–izomer taktiği; 2022 AYT Fen 26 (metil etanoatta Y = OCH₃) bağı | Kısmi |
+| 037 AYT Kimya – Korozyon, katodik koruma (kopya kâğıdı) | `korozyon-katodik-koruma` figürü (damla ortası anot / kenar katot, metal içinde e⁻, Fe²⁺ + OH⁻ → pas, çinko kurban anot), rol taktiği; 2025 AYT Fen 22 (Cd/Ag⁺ aktiflik) aktarımı | Kısmi |
 
 PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olarak etiketlenmez.
 
@@ -109,11 +110,11 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | AYT Matematik | 17 | 11 |
 | AYT Geometri | 4 | 4 |
 | AYT Fizik | 46 | 5 |
-| AYT Kimya | 55 | 14 |
+| AYT Kimya | 55 | 15 |
 | AYT Biyoloji | 75 | 3 |
-| **Toplam** | **371** | **76 (%20,5)** |
+| **Toplam** | **371** | **77 (%20,8)** |
 
-Toplam bölüm figürü: 560 (586 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 64 (56 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
+Toplam bölüm figürü: 561 (587 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 65 (57 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
 
 TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 
@@ -168,6 +169,7 @@ TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 | 19 Kasım (44) | Biyoloji: güncel çevre sorunları 3 figür; 1 taktik | 1 | 81 / 371 |
 | 19 Kasım (45) | AYT Fizik: çembersel hareket, BHH izdüşümü, Lenz, Kmax–f, manyetik yarıçap (5 figür, birim sadeleştirmeli okumalar); 1 taktik; kupa sistemi | 0 | 81 / 371 |
 | 19 Kasım (46) | AYT Kimya: Boyle pistonu + P–V hiperbolü, denge bozulmasında etki anı (N₂ ekleme), kuvvetli asit–baz titrasyon eğrisi (mmol hesabı), Daniell pili (elektron/iyon yolu, 1,10 V), Cr/Cu orbital istisnaları (5 figür, birim okumalı) | 0 | 86 / 371 |
+| 19 Kasım (58) | Drive AYT Kimya 037 Korozyon okundu: damla yerel pili ve kurban anot figürü, 1 taktik | 1 | 99 / 371 |
 | 19 Kasım (57) | Drive AYT Kimya 052 Esterler okundu: ester iki parça figürü, 1 taktik | 1 | 98 / 371 |
 | 19 Kasım (56) | Drive AYT Kimya 050 Aldehit ve ketonlar okundu: Tollens karışım figürü, 1 taktik | 1 | 97 / 371 |
 | 19 Kasım (55) | Drive AYT Kimya 053 Enerji kaynakları okundu: iki aşamalı verim figürü, 1 taktik | 1 | 96 / 371 |

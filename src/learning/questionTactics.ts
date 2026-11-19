@@ -964,6 +964,19 @@ export const questionTactics: QuestionTactic[] = [
       "İzomer sayımında 1+3 ile 3+1 farklıdır (iki taraf eşdeğer değil); C₄H₈O₂ için 4 ester. Eter (C–O–C) karbonil taşımaz.",
     ],
   },
+  {
+    id: "korozyon-roller",
+    guides: ["korozyon-katodik-koruma"],
+    match: /korozyon|pas|kurban|katodik|çinko|galvaniz|boya|kaplama|demir|Fe/i,
+    title: "Kim yükseltgeniyor, kim korunuyor?",
+    steps: [
+      "Paslanan (çukurlaşan) bölge anottur: Fe → Fe²⁺ + 2e⁻. Oksijen katotta elektron alır: O₂ + 2H₂O + 4e⁻ → 4OH⁻.",
+      "Su ve oksijen birlikte gerekir; tuz iyon iletkenliğini artırıp korozyonu hızlandırır.",
+      "Kurban anot (Zn, Mg) demirden kolay yükseltgenir ve tükenir; korunan demir katottur. Demiri anot yapmak onu aşındırır.",
+      "Boya yalnız bariyerdir; çizilince korumaz. Galvanizde (çinko kaplama) çizikte bile çinko kurban olur; bakır kaplama çizilince demiri hızlandırabilir.",
+      "Aktiflik sırası hangi metalin elektron vereceğini söyler; korozyon hızı ortam ve oksit tabakasına da bağlıdır.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

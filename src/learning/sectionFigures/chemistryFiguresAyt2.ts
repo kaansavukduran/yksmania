@@ -384,6 +384,48 @@ const esterParts: FigureDef = {
   },
 };
 
+/* ---------- 11. Damla altında yerel pil ve kurban anot ---------- */
+const corrosionCell: FigureDef = {
+  caption:
+    "İleri ile demir yüzeydeki su damlasını izle. Oksijenin az olduğu damla ortası anot olur: Fe → Fe²⁺ + 2e⁻ (metal çukurlaşır). Elektronlar metal içinden oksijenin bol olduğu damla kenarına gider: O₂ + 2H₂O + 4e⁻ → 4OH⁻ (katot). Fe²⁺ ile OH⁻ buluşur, pas oluşur. Demire çinko bağlanınca elektronları çinko verir: çinko kurban anottur, demir katot olarak korunur.",
+  alt: "Demir levha kesiti ve üstünde yarım elips su damlası; adımlarda damla ortasında anot, kenarlarda katot, metal içinde elektron okları ve pas bölgesi; son adımda levhaya bağlı çinko blok elektron verir.",
+  steps: ["Damla ve iki bölge", "Elektron ve iyon yolu", "Çinko kurban anot"],
+  draw: (_v, step) => {
+    const els: El[] = [];
+    els.push(poly([v(-4, 0), v(4, 0), v(4, -1), v(-4, -1)], { tone: "muted", fill: "muted" }));
+    els.push(txt(v(-3.8, -0.5), "Fe", "e", { tone: "ink", small: true, bold: true }));
+    const drop: V[] = Array.from({ length: 33 }, (_, i) => {
+      const t = Math.PI - (Math.PI * i) / 32;
+      return v(2.6 * Math.cos(t), 1.2 * Math.sin(t));
+    });
+    els.push(poly(drop, { tone: "b", fill: "b", thin: true }));
+    if (step < 2) {
+      els.push(txt(v(0, 0.35), "anot", "n", { tone: "warn", small: true, bold: true }));
+      els.push(txt(v(-2.2, 0.15), "katot", "nw", { tone: "c", small: true, bold: true }), txt(v(2.2, 0.15), "katot", "ne", { tone: "c", small: true, bold: true }));
+      els.push(poly([v(-0.5, 0), v(-0.3, -0.25), v(0.3, -0.25), v(0.5, 0)], { tone: "warn", fill: "warn", open: false }));
+    }
+    if (step === 1) {
+      els.push(vec(v(0.2, -0.6), v(1.8, -0.6), { tone: "warn", bold: true }), vec(v(-0.2, -0.6), v(-1.8, -0.6), { tone: "warn", bold: true }));
+      els.push(txt(v(1.0, -0.6), "e⁻", "n", { tone: "warn", small: true, bold: true }));
+      els.push(txt(v(0, 1.25), "Fe²⁺ + OH⁻ → pas", "n", { tone: "ink", small: true }));
+    }
+    if (step === 2) {
+      els.push(poly([v(4, -0.2), v(5.2, -0.2), v(5.2, -0.9), v(4, -0.9)], { tone: "a", fill: "a" }));
+      els.push(txt(v(4.6, -0.55), "Zn", "c", { tone: "ink", small: true, bold: true }));
+      els.push(vec(v(4.0, -0.55), v(2.6, -0.55), { tone: "warn", bold: true }), txt(v(3.3, -0.55), "e⁻", "n", { tone: "warn", small: true, bold: true }));
+      els.push(txt(v(4.6, -0.9), "kurban anot", "s", { tone: "a", small: true, bold: true }));
+      els.push(txt(v(0, 1.25), "demir: katot (korunur)", "n", { tone: "c", small: true, bold: true }));
+    }
+    els.push(txt(v(-4.6, 2.2), " ", "c"), txt(v(6.2, -1.8), " ", "c"));
+    const rows: [string, string][] = [
+      ["Damla ortası (az O₂) anot: Fe → Fe²⁺ + 2e⁻. Damla kenarı (çok O₂) katot: O₂ + 2H₂O + 4e⁻ → 4OH⁻.", "Aynı metal yüzeyde küçük anot ve katot alanları kurulur: yerel pil. Paslanan bölge yükseltgenir, indirgenmez."],
+      ["Elektronlar metal içinden kenara, iyonlar su içinden hareket eder. Tuzlu su iletkenliği artırır, korozyon hızlanır.", "Pas (demir oksit/oksihidroksit) ilk yarı tepkimenin ürünü değildir; Fe²⁺ sonra yükseltgenip çöker."],
+      ["Çinko demirden kolay yükseltgenir: Zn → Zn²⁺ + 2e⁻. Elektronu çinko verdiği için demir katot olur, korunur.", "Kurban anot tükenir; değiştirilmezse koruma biter. Boya ise yalnız su ve O₂ temasını keser (bariyer)."],
+    ];
+    return { els, readout: rows[step] };
+  },
+};
+
 export const chemistryFiguresAyt2: Record<string, Record<string, FigureDef>> = {
   "faraday-yasalari": { "Elektron molünden ürün molüne geç": faraday },
   "molekul-geometrisi": { "Dört bölge: düzgün dört yüzlü": tetra },
@@ -395,4 +437,5 @@ export const chemistryFiguresAyt2: Record<string, Record<string, FigureDef>> = {
   "ayt-enerji-kaynaklari-gelismeler": { "Isıl değer ile verim farklıdır": twoStage },
   "ayt-aldehit-keton": { "Karışım ve çökelek hesabı": tollensMix },
   "ayt-esterler": { "Asit ve alkol parçalarını ayırmak": esterParts },
+  "korozyon-katodik-koruma": { "Aynı yüzeyde küçük anot ve katot alanları": corrosionCell },
 };
