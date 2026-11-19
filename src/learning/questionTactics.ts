@@ -1331,6 +1331,19 @@ export const questionTactics: QuestionTactic[] = [
       "Kmax–f doğrusunda eğim h, düşey kesişim −φ, yatay kesişim f₀ (2024 AYT Fen 13 mantığı).",
     ],
   },
+  {
+    id: "deri-katman-alici",
+    guides: ["duyu-organlari-deri"],
+    match: /deri|epidermis|dermis|ter|keratin|melanin|reseptör|Meissner|Pacini|Merkel|Ruffini|dokunma/i,
+    title: "Deride katmanı, yapıyı ve uyarıya uygun alıcıyı ayrı eşleştir",
+    steps: [
+      "Epidermis damarsız çok katlı epiteldir (canlı taban, keratinli yüzey); damar, sinir, bez ve kıl kökü dermiste; yağ deri altında.",
+      "Ter bezinin salgı bölümü derinde, ekrin kanalı yüzeye açılır; soğutma için terin BUHARLAŞMASI gerekir.",
+      "Uyarının türünü yaz: basınç ve titreşim mekanoreseptör, sıcaklık termoreseptör, doku hasarı ağrı; ayrıntı için soruda verilen tabloyu kullan.",
+      "Alıcı, iletim, bilinçli algı ve refleks ayrı basamaklardır: üst yol kesikse refleks olur, bilinçli algı olmayabilir (2022 AYT Fen 30 aktarımı).",
+      "Keratin protein, melanin pigmenttir; korunmaya katkı tam koruma demek değildir.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
