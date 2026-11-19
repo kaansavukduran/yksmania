@@ -586,6 +586,18 @@ export const questionTactics: QuestionTactic[] = [
       "Kontrol: başlangıç kütlesi = ürün + artan. “En çok ürün” üst sınırdır; “en az eklenecek” artanı tam tüketecek miktardır.",
     ],
   },
+  {
+    id: "yuzde-verim-adim",
+    guides: ["yuzde-verim"],
+    match: /verim|saflık|teorik|gerçek|elde edil/i,
+    title: "Yüzde verim soruları",
+    steps: [
+      "% verim = gerçek ÷ teorik × 100; pay ölçülen, payda beklenen. Tersleri: gerçek = teorik × kesir, teorik = gerçek ÷ kesir.",
+      "Teorik ürünü sınırlayıcıdan hesapla; gram ise önce mole çevir. Gerçek ve teorik aynı ürün ve aynı birim olmalı.",
+      "Saflık örnek kütlesine, verim teorik ürüne uygulanır: önce saf kısmı ayır, sonra teorik ürünü bul, en son verimi uygula.",
+      "Ardışık aşamalarda kesirleri çarp (0,80 × 0,75 = 0,60). %100 üstü sonuç veri ya da model hatasının işaretidir.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

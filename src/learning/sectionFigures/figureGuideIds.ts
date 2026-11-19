@@ -58,6 +58,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "madde-donguleri",
   "lipitler",
   "sinirlayici-artan-madde",
+  "yuzde-verim",
   "dna-eslenmesi",
   "hucre-organelleri",
   "atom-modelleri",

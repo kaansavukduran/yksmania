@@ -11,8 +11,8 @@ Her geliştirme turunda güncellenir. Sayılar yalnız gerçekten yapılmış i�
 | Kayıtlı toplam PDF (kanonik envanter, 17 Kasım taraması) | 8.981 |
 | Kanonik defterde öğretim aktarımı **tam** | 7 |
 | Kanonik defterde **kısmi** | 2 |
-| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 21 |
-| Okunduğu doğrulanan farklı PDF toplamı (7 + 2 + 21) | 30 / 8.981 (%0,33) |
+| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 22 |
+| Okunduğu doğrulanan farklı PDF toplamı (7 + 2 + 22) | 31 / 8.981 (%0,35) |
 
 Arşivdeki PDF'lerin büyük kısmı aynı konunun farklı biçimleridir (TYT konu özeti, “Dersler Cepte” sunumu, etkinlik, okuma metni, deneme). Bu yüzden PDF yüzdesi konu kapsamını ölçmez; konu kapsamı aşağıdaki rehber tablosundadır.
 
@@ -40,6 +40,7 @@ Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen boz
 | 034 TYT Biyoloji – Madde Döngüleri (kopya kâğıdı) | `madde-donguleri` figürleri (kesit manzarada su döngüsü + 100 birim bütçe, azot biçimleri haritası, orman karbon bütçesi +10 kg C, ışık sürgüsüyle net CO₂); taktik | Kısmi |
 | 006 TYT Biyoloji – Lipitler-Yağlar (kopya kâğıdı) | `lipitler` figürleri (trigliserit kurulumu 3 ester/3 su ve hidroliz, doymuş/cis/trans zincirler, fosfolipit çift katmanı, steroit dört halka); taktik | Kısmi |
 | 031 TYT Kimya – Sabit Oranlar / Sınırlayıcı Madde (kopya kâğıdı) | `sinirlayici-artan-madde` figürleri (tanecik düzeyinde 2H₂ + O₂ ilerlemesi, n/katsayı çubukları, ürün platosu); taktik | Kısmi |
+| 042 TYT Kimya – Yüzde Verim (kopya kâğıdı) | `yuzde-verim` figürleri (gerçek/teorik çubuk sürgüsü ve %100 üstü uyarısı, saflık → verim akışı, ardışık aşamalar, 2025 TYT Fen 12 su ayrışması); taktik | Kısmi |
 
 PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olarak etiketlenmez.
 
@@ -86,7 +87,7 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | TYT Matematik | 40 | 1 |
 | TYT Geometri | 19 | 19 |
 | TYT Fizik | 24 | 23 |
-| TYT Kimya | 55 | 2 |
+| TYT Kimya | 55 | 3 |
 | TYT Biyoloji | 36 | 4 |
 | AYT Matematik | 17 | 0 |
 | AYT Geometri | 4 | 4 |
@@ -95,7 +96,7 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | AYT Biyoloji | 75 | 0 |
 | **Toplam** | **371** | **41 (%11,1)** |
 
-Toplam bölüm figürü: 466 (492 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 42 (34 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
+Toplam bölüm figürü: 470 (496 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 42 (34 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
 
 TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 
@@ -133,3 +134,4 @@ TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 | 19 Kasım (27) | Biyoloji: madde döngüleri 4 figür; 1 taktik; e2e görsel yükleme beklemesi sağlamlaştırıldı | 1 | 50 / 371 |
 | 19 Kasım (28) | Biyoloji: lipitler 4 moleküler figür; 1 taktik | 1 | 51 / 371 |
 | 19 Kasım (29) | Kimya: sınırlayıcı madde 3 figür (tanecik animasyonu); 1 taktik | 1 | 52 / 371 |
+| 19 Kasım (30) | Kimya: yüzde verim 4 figür; 1 taktik | 1 | 53 / 371 |
