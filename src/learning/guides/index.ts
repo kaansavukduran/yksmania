@@ -8,6 +8,7 @@ import { factorialSource033Guides } from "../factorialSource033";
 import { ebobEkokSource034Guides } from "../ebobEkokSource034";
 import { rationalSource035Guides } from "../rationalSource035";
 import { geometryExpansion032Guides } from "../geometryExpansion032";
+import { geometryCircle040Guides } from "../geometryCircle040";
 import { geometryFoundation031Guides } from "../geometryFoundation031";
 import { forge025MathGuides } from "../forge025Math";
 import { forge025ChemistryGuides } from "../forge025Chemistry";
@@ -268,6 +269,7 @@ export const lessonGuides = new Map(
     ...basicInequalitiesSource037Guides,
     ...absoluteValueSource038Guides,
   ...powersSource039Guides,
+    ...geometryCircle040Guides,
   ].map((guide) => [guide.id, guide]),
 );
 

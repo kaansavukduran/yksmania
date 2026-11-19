@@ -12,12 +12,12 @@ describe("geometry summary browser coverage", () => {
         title,
         subjectId,
       }));
-    expect(geometry).toHaveLength(19);
+    expect(geometry).toHaveLength(20);
     expect(geometrySummary024Inventory).toEqual(geometry);
-    expect(new Set(geometry.map((sheet) => sheet.lessonId)).size).toBe(19);
+    expect(new Set(geometry.map((sheet) => sheet.lessonId)).size).toBe(20);
     expect(
       geometry.filter((sheet) => sheet.subjectId === "tyt-geometri"),
-    ).toHaveLength(15);
+    ).toHaveLength(16);
     expect(
       geometry.filter((sheet) => sheet.subjectId === "ayt-geometri"),
     ).toHaveLength(4);

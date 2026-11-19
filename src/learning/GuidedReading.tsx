@@ -1,4 +1,5 @@
 import { geometryExpansion032Ids } from "../data/supplementalTopics032";
+import { geometryCircle040Ids } from "./geometryCircle040";
 import { lazy, Suspense, useId, useState, useEffect, type ReactNode } from "react";
 import { useExploration } from "./useExploration";
 import "./guidedJourney.css";
@@ -288,7 +289,7 @@ export function GuidedReading({
                   <SectionFigure guideId={guide.id} title={section.title} />
                 </Suspense>
               )}
-              {i === visualSection && <VisualLab id={guide.id} />}
+              {i === visualSection && !geometryCircle040Ids.includes(guide.id) && <VisualLab id={guide.id} />}
             </section>
           ),
       )}

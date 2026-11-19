@@ -1,4 +1,5 @@
 import { geometryExpansion032Ids } from "../data/supplementalTopics032";
+import { geometryCircle040Ids } from "./geometryCircle040";
 import { legacy026Packs, legacy026QuestionIds } from "./legacy026";
 import { geometryFoundation031Ids } from "../data/supplementalTopics031";
 import { forge025MathTopics } from "./forge025Math";
@@ -401,6 +402,14 @@ const continuationLabs: {
   { topics: forge093TurkishTopics, Component: NextTurkish },
   { topics: forge093HistoryTopics, Component: NextHistory },
 ];
+// New 040 units teach with section figures; their summary shows the key one.
+const SectionFigure = lazy(() =>
+  import("./sectionFigures/registry").then((m) => ({ default: m.SectionFigure })),
+);
+const summaryFigure040: Record<string, string> = {
+  "tyt-geo-cember-aci-040": "Çevre açı yayın yarısıdır",
+};
+
 export function VisualLab({ id }: { id: string }) {
   const { t } = useApp();
   if (
@@ -568,6 +577,8 @@ export function VisualLab({ id }: { id: string }) {
           <Equilibrium />
         ) : id === "dna-eslenmesi" ? (
           <Dna />
+        ) : geometryCircle040Ids.includes(id) ? (
+          <SectionFigure guideId={id} title={summaryFigure040[id]} />
         ) : (
           <Compact id={id} />
         )}

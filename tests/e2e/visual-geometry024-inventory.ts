@@ -114,4 +114,10 @@ export const geometrySummary024Inventory = [
     title: "Noktanın Analitiği",
     subjectId: "tyt-geometri",
   },
+  {
+    topicId: "topic-tyt-geo-cember-aci-040",
+    lessonId: "tyt-geo-cember-aci-040",
+    title: "Çemberde açı, kiriş ve teğet",
+    subjectId: "tyt-geometri",
+  },
 ] as const;

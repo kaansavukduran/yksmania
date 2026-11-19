@@ -12,6 +12,7 @@ import { factorialSource033Lessons } from "../learning/factorialSource033";
 import { ebobEkokSource034Lessons } from "../learning/ebobEkokSource034";
 import { rationalSource035Lessons } from "../learning/rationalSource035";
 import { geometryExpansion032Lessons } from "../learning/geometryExpansion032";
+import { geometryCircle040Lessons } from "../learning/geometryCircle040";
 import { geometryFoundation031Lessons } from "../learning/geometryFoundation031";
 import { forge025MathLessons } from "../learning/forge025Math";
 import { forge025ChemistryLessons } from "../learning/forge025Chemistry";
@@ -1040,6 +1041,7 @@ const baseLessons: Lesson[] = [
   ...absoluteValueSource038Lessons,
   ...powersSource039Lessons,
   ...sourceQuestionLessons024,
+  ...geometryCircle040Lessons,
 ];
 export const lessons: Lesson[] = baseLessons.map((lesson) => {
   const expanded =

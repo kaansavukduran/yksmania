@@ -86,7 +86,8 @@ export function Exams({
   const { state, commit } = useApp();
   const specs = useMemo(examCatalogue, []);
   const [tab, setTab] = useState("TYT");
-  const [mode, setMode] = useState<"simulation" | "learning">("simulation");
+  // Hints are always available: learning while taking the exam is the goal.
+  const mode = "learning" as const;
   const [catalog, setCatalog] = useState(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
@@ -187,23 +188,11 @@ export function Exams({
           {error}
         </p>
       )}
-      <label className="field exam-mode">
-        Çalışma biçimi
-        <select
-          value={mode}
-          disabled={!!state.examDraft || busy}
-          onChange={(event) => setMode(event.target.value as typeof mode)}
-        >
-          <option value="simulation">
-            Sınav simülasyonu · ipuçları kapalı
-          </option>
-          <option value="learning">Öğrenme denemesi · ipuçları açık</option>
-        </select>
-        <span className="small muted">
-          İki biçimde de süre işler. Açtığın ipuçları ayrıca kaydedilir; doğru,
-          yanlış ve net hesabı aynı kalır.
-        </span>
-      </label>
+      <p className="small muted exam-mode">
+        Denemelerde ipucu ve adım adım çözüm her soruda açıktır; amaç sınav
+        olurken öğrenmektir. Açtığın ipuçları ayrıca kaydedilir; doğru, yanlış
+        ve net hesabı değişmez.
+      </p>
       <div className="exam-catalog">
         {specs
           .filter((spec) =>
@@ -446,9 +435,7 @@ function ExamRunner({
         zaman korunur. Süre bitince mevcut yanıtlarla sonuç kaydedilir.
       </p>
       <p className="small muted">
-        {draft.mode === "learning"
-          ? "Öğrenme denemesi · çözüm desteği açık"
-          : "Sınav simülasyonu · çözüm desteği isteğe bağlı"}
+        Öğrenme denemesi · ipucu ve çözüm her soruda açık
       </p>
       {error && (
         <div role="alert" className="panel exam-error">
@@ -517,31 +504,7 @@ function ExamRunner({
               </button>
             ))}
           </div>
-          {draft.mode !== "learning" && (
-            <div className="exam-help-gate">
-              <label>
-                <input
-                  type="checkbox"
-                  checked={draft.helpEnabled ?? false}
-                  disabled={busy || expired}
-                  onChange={(event) =>
-                    void change({
-                      type: "help-enabled",
-                      index: draft.index,
-                      value: event.target.checked,
-                    })
-                  }
-                />
-                <span>
-                  Çözüm desteğini aç{" "}
-                  <span className="small muted">
-                    · ipucu açtığın sorular yardımlı olarak kaydedilir
-                  </span>
-                </span>
-              </label>
-            </div>
-          )}
-          {(draft.mode === "learning" || draft.helpEnabled) && (
+          {(
             <QuestionHelp
               key={q.id}
               question={q}

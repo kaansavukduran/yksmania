@@ -16,6 +16,11 @@ export function beforeFoundation031Registration(source: string): string {
   // still compared with the unchanged historical SHA-256 by the source gate.
   return source
     .replace(
+      'import { geometryCircle040Lessons } from "../learning/geometryCircle040";\n',
+      "",
+    )
+    .replace("  ...geometryCircle040Lessons,\n", "")
+    .replace(
       'import { sourceQuestionLessons024 } from "../learning/sourceExercises024";\n',
       "",
     )

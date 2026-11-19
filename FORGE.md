@@ -1,3 +1,11 @@
+# Forge040 — eksik resmî geometri konuları ve her zaman açık ipucu (main)
+
+19 Kasım 2026. Resmî konu listesiyle (341) uygulama dersleri karşılaştırıldı; TYT-GEO-13 çember, 14 daire, 15 silindir/koni/küre, 09 trigonometrik oranlar ve AYT çember/daire konularının ayrı dersi yoktu. Bu turda **Çemberde açı, kiriş ve teğet** eklendi: 11 bölüm, 10 hesaplanmış şekil (sürgülü merkez/çevre açı, teğet, kiriş–merkez, kuvvet bağıntıları, kirişler dörtgeni), 3 çözümlü örnek, 4 hatırlama, 12 tam açıklamalı özgün soru, kopya kâğıdı. Ders ve kayıtlar dizilerin sonuna eklendi; önceki 536 ders, 6.417 soru ve 479 çalışma başlığı aynen korundu (sabit toplam testleri 537/6.429/502/501 olarak güncellendi). Denemelerde ipucu ve adım adım çözüm artık her soruda açık; seçim kutusu ve “çözüm desteğini aç” kapısı kaldırıldı (kullanıcı kararı: sınav olurken öğrenmek). Kişisel test APK'sı 1b54ae8 için başarıyla derlendi (Build personal Android test APK #9). Doğrulama: check, 224 dosya / 2.433 birim testi, build, ipucu/sınav/geometri özeti tarayıcı testleri 12/12 PASS. Sıradaki: daire, silindir–koni–küre, trigonometrik oranlar; sayfa sayfa tek anlatım düzeni.
+
+Fikir listesi (kullanıcıdan, sırası belirlenmedi): güven derecesi (Eminim/Şüpheliyim/Tahmin), önkoşul köprüsü, aktif kopya kâğıdı (gizli parça doldurma), 30 saniyelik sınav yolu sekmesi, turlama/süre nabzı, AIONIA piksel atölyesi, haftalık hata boss'u, 60 sn refleks ısınması, Web Audio ses (kapatılabilir), ders bazlı tembel yükleme, tekrar yükü dengeleyici, zen odak modu ve kaydırma jestleri, bağımsız çözüm ısı haritası; ayrıca karalama tuvali, şık eleme, biyom haritası, hata nedeni etiketi.
+
+---
+
 # Bölüm figürleri — fizik enerji, dalgalar ve ısı (main)
 
 19 Kasım 2026, Türkiye saati. Kullanıcı onayıyla `claude/laughing-ritchie-l0rre4` main'e alındı (`520662c..f5c5dd3`); bu tur aynı yoldan gider. İşleme sayacı: [docs/ISLEME_SAYACI.md](docs/ISLEME_SAYACI.md).

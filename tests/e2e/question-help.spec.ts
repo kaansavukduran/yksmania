@@ -73,10 +73,8 @@ async function openSteps(page: Page) {
 }
 async function paragraphExam(page: Page, learning = false) {
   await nav(page, "Sınavlar");
-  if (learning)
-    await page
-      .getByRole("combobox", { name: "Çalışma biçimi" })
-      .selectOption("learning");
+  // Exams always start as learning attempts with hints available.
+  void learning;
   await page
     .getByRole("button", { name: "Branş denemeleri", exact: true })
     .click();
@@ -170,7 +168,7 @@ test("staged question guidance persists offline, records the actual assistance l
   expect(done.sessions[0].note).toBe("Payda aynı kalır; ÇĞİÖŞÜ.");
 });
 
-for (const learning of [false, true])
+for (const learning of [true])
   test(`${learning ? "learning" : "simulation"} exam uses the same saved guidance without changing deadlines, answers, flags or net`, async ({
     page,
     context,

@@ -29,12 +29,48 @@ Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen boz
 
 PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olarak etiketlenmez.
 
+### Ders başına kapsam (19 Kasım, uygulama verisinden sayıldı)
+
+“Resmî konu” = uygulamadaki ÖSYM tabanlı konu listesi (`curriculum.json`, 341 konu). “Ders” = uygulamadaki ayrıntılı çalışma başlığı; bir resmî konu birden çok derse bölünebilir. Sorular özgündür.
+
+| Ders | Resmî konu | Uygulama dersi | Anlatımlı | Soru (toplam) | Video önerili | Bölüm şekilli |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| TYT Türkçe | 22 | 34 | 33 | 380 | 33 | 0 |
+| TYT Matematik | 31 | 45 | 40 | 735 | 40 | 1 |
+| TYT Geometri | 16 | 16 | 16 | 181 | 14 | 16 |
+| TYT Fizik | 20 | 28 | 24 | 311 | 24 | 17 |
+| TYT Kimya | 17 | 57 | 55 | 535 | 55 | 0 |
+| TYT Biyoloji | 18 | 45 | 36 | 515 | 36 | 0 |
+| TYT Tarih | 22 | 34 | 24 | 390 | 24 | 0 |
+| TYT Coğrafya | 21 | 40 | 40 | 400 | 40 | 0 |
+| TYT Felsefe | 15 | 17 | 17 | 190 | 17 | 0 |
+| TYT Din | 19 | 20 | 20 | 371 | 20 | 0 |
+| AYT Matematik | 36 | 18 | 17 | 253 | 17 | 0 |
+| AYT Geometri | 9 | 4 | 4 | 40 | 4 | 4 |
+| AYT Fizik | 32 | 47 | 46 | 541 | 46 | 0 |
+| AYT Kimya | 34 | 56 | 55 | 680 | 55 | 0 |
+| AYT Biyoloji | 29 | 76 | 75 | 907 | 75 | 0 |
+| **Toplam** | **341** | **537** | **502** | **6.429** | **500** | **38** |
+
+Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan konular):
+
+| Resmî konu | Durum |
+| --- | --- |
+| TYT-GEO-13 Çemberde açı, kiriş ve teğet | **19 Kasım'da eklendi** (11 bölüm, 10 şekil, 3 çözümlü örnek, 12 özgün soru, kopya kâğıdı) |
+| TYT-GEO-14 Daire, daire dilimi, çevre ve alan | Ders yok — sıradaki |
+| TYT-GEO-15 Silindir, koni, küre (prizma ve piramit var) | Kısmi — silindir/koni/küre dersi yok |
+| TYT-GEO-09 Dik üçgende trigonometrik oranlar | Ayrı ders yok (dik üçgen dersinde özel açılar var) |
+| TYT-GEO-06 Özel üçgenler | Ayrı ders yok (üçgen derslerinde dağınık) |
+| AYT-GEO-04/05/06 Çember ve daire | Ders yok (TYT çember dersi temel olarak kullanılabilir) |
+| AYT-GEO-07 Katı cisimler | Kısmi |
+| AYT Matematik | 36 resmî konuya karşı 18 ders: konular birleşik anlatılıyor; ayrıntılı eşleme yapılmadı |
+
 ### Sayısal konu rehberlerinde bölüm figürü
 
 | Ders | Rehber | Figürlü rehber |
 | --- | ---: | ---: |
 | TYT Matematik | 40 | 1 |
-| TYT Geometri | 15 | 15 |
+| TYT Geometri | 16 | 16 |
 | TYT Fizik | 24 | 17 |
 | TYT Kimya | 55 | 0 |
 | TYT Biyoloji | 36 | 0 |
@@ -43,9 +79,9 @@ PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olara
 | AYT Fizik | 46 | 0 |
 | AYT Kimya | 55 | 0 |
 | AYT Biyoloji | 75 | 0 |
-| **Toplam** | **367** | **37 (%10,1)** |
+| **Toplam** | **368** | **38 (%10,3)** |
 
-Toplam bölüm figürü: 342 (394 bölümde). Soru tipi taktiği: 34.
+Toplam bölüm figürü: 352 (405 bölümde). Soru tipi taktiği: 34.
 
 TYT Fizik'te figürü olmayan 7 rehber: fizik bilimine giriş, madde ve özkütle, prizmalar ve renkler, ses ve deprem dalgaları, ışık bilgisi, durgun elektrik, mıknatıslar ve manyetik alan.
 
@@ -56,3 +92,4 @@ TYT Fizik'te figürü olmayan 7 rehber: fizik bilimine giriş, madde ve özkütl
 | 18 Kasım | Geometri, optik, köklü sayılar, mekanik, akışkan ve devre figürleri; 23 taktik | 1 | 30 / 367 |
 | 19 Kasım | Enerji (20), dalgalara giriş (9), yay dalgaları (9), su dalgaları (9) figürleri; 7 taktik; çizgisiz ölçü etiketleri düzeltildi | 2 | 34 / 367 |
 | 19 Kasım (2) | Isı ve sıcaklık (9), genleşme (8), hal değişimi (7) figürleri; 4 taktik | 3 | 37 / 367 |
+| 19 Kasım (3) | Yeni ders: Çemberde açı, kiriş ve teğet (10 şekil, 12 soru, kopya kâğıdı); denemelerde ipucu her zaman açık | 0 | 38 / 368 |

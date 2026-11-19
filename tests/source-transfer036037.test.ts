@@ -42,13 +42,13 @@ it("preserves all BBB lesson, question, guide, sheet values and complete study o
 });
 
 it("appends only two independent companions with87 self-contained fully guided cards", () => {
-  expect(lessons).toHaveLength(536);
-  expect(lessons.flatMap((v) => v.questions)).toHaveLength(6417);
-  expect(new Set(lessons.flatMap((v) => v.questions).map((v) => v.id)).size).toBe(6417);
-  expect(lessonGuides.size).toBe(501);
-  expect(builtInCheatSheets.size).toBe(501);
-  expect(studyTopics).toHaveLength(500);
-  expect(studyTopics.slice(496).map((v) => v.order)).toEqual([497, 498, 499, 500]);
+  expect(lessons).toHaveLength(537);
+  expect(lessons.flatMap((v) => v.questions)).toHaveLength(6429);
+  expect(new Set(lessons.flatMap((v) => v.questions).map((v) => v.id)).size).toBe(6429);
+  expect(lessonGuides.size).toBe(502);
+  expect(builtInCheatSheets.size).toBe(502);
+  expect(studyTopics).toHaveLength(501);
+  expect(studyTopics.slice(496, 500).map((v) => v.order)).toEqual([497, 498, 499, 500]);
   for (const expected of packs) {
     const lesson = lessonById(expected.pack.id)!;
     const guide = lessonGuides.get(expected.pack.id)!;

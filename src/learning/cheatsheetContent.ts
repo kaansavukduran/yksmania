@@ -8,6 +8,7 @@ import { factorialSource033Sheets } from "./factorialSource033";
 import { ebobEkokSource034Sheets } from "./ebobEkokSource034";
 import { rationalSource035Sheets } from "./rationalSource035";
 import { geometryExpansion032Sheets } from "./geometryExpansion032";
+import { geometryCircle040Sheets } from "./geometryCircle040";
 import { geometryFoundation031Sheets } from "./geometryFoundation031";
 import { forge025MathTopics } from "./forge025Math";
 import { forge025ChemistryTopics } from "./forge025Chemistry";
@@ -330,5 +331,6 @@ export const builtInCheatSheets = new Map<string, CheatSheet>(
     ...basicInequalitiesSource037Sheets,
     ...absoluteValueSource038Sheets,
   ...powersSource039Sheets,
+    ...geometryCircle040Sheets,
   ].map((sheet) => [sheet.topicId, sheet]),
 );

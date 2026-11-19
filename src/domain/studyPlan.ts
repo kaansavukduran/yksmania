@@ -1,3 +1,4 @@
+import { supplementalTopics040, geometryCircle040TopicMap } from "../learning/geometryCircle040";
 import { legacy026Topics } from "../learning/legacy026";
 import { forge025MathTopics } from "../learning/forge025Math";
 import { forge025ChemistryTopics } from "../learning/forge025Chemistry";
@@ -153,6 +154,7 @@ export const studyTopics = [
     ...supplementalSourceTopics036037,
     ...supplementalSourceTopics038,
     ...supplementalSourceTopics039,
+    ...supplementalTopics040,
   ].map((topic, i) => ({
     ...topic,
     order: workbookStudyTopics.length + i + 1,
@@ -170,6 +172,7 @@ export const lessonTopic: Record<string, string> = {
   ...sourceMath033TopicMap,
   ...sourceMath034035TopicMap,
   ...sourceMath036037TopicMap,
+  ...geometryCircle040TopicMap,
   ...sourceMath038TopicMap,
   ...sourceMath039TopicMap,
   ...legacy026Topics,

@@ -1,4 +1,5 @@
 import { geometryExpansion032Ids } from "../data/supplementalTopics032";
+import { geometryCircle040Ids } from "../learning/geometryCircle040";
 import { lessonGuides } from "../learning/guides";
 import { useMemo, useState } from "react";
 import { Search, ChevronDown, ArrowRight } from "lucide-react";
@@ -101,6 +102,7 @@ export function Courses({
               const ids: readonly string[] = [
                 ...geometryFoundation031Ids,
                 ...geometryExpansion032Ids,
+                ...geometryCircle040Ids,
               ];
               const rank = (id: string) => {
                 const index = ids.indexOf(id);
