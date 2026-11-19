@@ -538,6 +538,18 @@ export const questionTactics: QuestionTactic[] = [
       "“Kesin” deniyorsa her modele somut genotip ata; çelişen modeli ele. Boş çocuğun taşıyıcı olma olasılığı (Aa × Aa) 2/3'tür; rastgele çocukta 1/2.",
     ],
   },
+  {
+    id: "kalitim-giris",
+    guides: ["kalitima-giris"],
+    match: /gamet|genotip|fenotip|alel|olasılık|baskın|çekinik|heterozigot/i,
+    title: "Gamet ve olasılık soruları",
+    steps: [
+      "Baskın görünümden kesin AA çıkmaz (Aa da baskın görünür); çekinik görünüm (otozomal, tam baskın modelde) aa'dır.",
+      "Gamet çeşidi 2ʰ: h yalnız heterozigot çiftlerin sayısı (AaBBcc → 2). Bağlı genlerde bu kural kendiliğinden geçmez.",
+      "Aynı yoldaki bağımsız olayları çarp, ayrı yolları topla. “En az bir” için 1 − (hiç olmama).",
+      "aa çocuktan geriye git: iki a'nın her biri bir ebeveynden gelir; özelliği göstermeyen ebeveyn bu durumda Aa'dır.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

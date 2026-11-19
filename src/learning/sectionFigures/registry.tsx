@@ -25,6 +25,7 @@ import { physicsFiguresPrism } from "./physicsFiguresPrism";
 import { physicsFiguresLight } from "./physicsFiguresLight";
 import { physicsFiguresMatter } from "./physicsFiguresMatter";
 import { biologyFiguresPedigree } from "./biologyFiguresPedigree";
+import { biologyFiguresGenetics } from "./biologyFiguresGenetics";
 import { chemistryFiguresAtoms } from "./chemistryFiguresAtoms";
 import { turkeyFigures } from "./turkeyFigures";
 import { historyFiguresIslam } from "./historyFiguresIslam";
@@ -57,6 +58,7 @@ export const sectionFigures: Record<string, Record<string, FigureDef>> = {
   ...physicsFiguresLight,
   ...physicsFiguresMatter,
   ...biologyFiguresPedigree,
+  ...biologyFiguresGenetics,
   ...chemistryFiguresAtoms,
   ...turkeyFigures,
   ...historyFiguresIslam,
