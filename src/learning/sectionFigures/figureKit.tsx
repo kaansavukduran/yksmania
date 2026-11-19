@@ -133,6 +133,8 @@ export type El =
       bold?: boolean;
       /** Secondary label (axis numbers): hidden when it would collide. */
       soft?: boolean;
+      /** Index into FigureDef.picks: clicking the label opens that detail card. */
+      pick?: number;
     };
 
 export const seg = (a: V, b: V, s: Style = {}): El => ({ k: "seg", a, b, ...s });
@@ -225,7 +227,7 @@ export const txt = (
   p: V,
   s: string,
   at: Dir = "c",
-  opts: { tone?: Tone; small?: boolean; bold?: boolean; soft?: boolean } = {},
+  opts: { tone?: Tone; small?: boolean; bold?: boolean; soft?: boolean; pick?: number } = {},
 ): El => ({ k: "text", p, s, at, ...opts });
 
 export interface FigureFrame {
@@ -253,10 +255,19 @@ export interface FigureDef {
     once?: boolean;
     /** Playback duration in milliseconds (default 6000). */
     playMs?: number;
+    /** Show the value as a bare integer (years): 1933, not 1.933. */
+    plain?: boolean;
   };
   /** Labels for a step-by-step build. draw() receives the step index. */
   steps?: string[];
-  draw: (value: number, step: number) => FigureFrame;
+  /**
+   * Selectable items with a detail card. Labels drawn with txt(..., { pick: i })
+   * open item i on click; the same items are also listed as HTML buttons under
+   * the drawing so keyboard and screen-reader users reach every card.
+   * draw() receives the selected index (−1 when none).
+   */
+  picks?: { label: string; title: string; detail: string[] }[];
+  draw: (value: number, step: number, pick?: number) => FigureFrame;
 }
 
 const W = 640;
@@ -532,7 +543,7 @@ function hiddenSoftLabels(els: El[], P: (p: V) => [number, number], scale: numbe
   return hidden;
 }
 
-function Render({ els, title, desc }: { els: El[]; title: string; desc: string }) {
+function Render({ els, title, desc, onPick }: { els: El[]; title: string; desc: string; onPick?: (i: number) => void }) {
   const tid = useId();
   const { P, height, s: layoutScale } = layout(els);
   const hidden = hiddenSoftLabels(els, P, layoutScale);
@@ -772,7 +783,8 @@ function Render({ els, title, desc }: { els: El[]; title: string; desc: string }
             y={r2(y + d[1] * 12)}
             textAnchor={anchorFor(el.at ?? "c")}
             dy={`${baselineShift(el.at ?? "c")}em`}
-            className={`${cls(el.tone)} sf-label${el.small ? " sf-small" : ""}${el.bold ? " sf-strong" : ""}`}
+            className={`${cls(el.tone)} sf-label${el.small ? " sf-small" : ""}${el.bold ? " sf-strong" : ""}${el.pick !== undefined && onPick ? " sf-pickable" : ""}`}
+            onClick={el.pick !== undefined && onPick ? () => onPick(el.pick!) : undefined}
           >
             {el.s}
           </text>
@@ -817,8 +829,10 @@ export function SectionFigureView({ def, title }: { def: FigureDef; title: strin
   const [value, setValue] = useState(def.param?.init ?? 0);
   const [step, setStep] = useState(0);
   const [playing, setPlaying] = useState(false);
+  const [pick, setPick] = useState(-1);
   const raf = useRef<number | undefined>(undefined);
-  const frame = def.draw(value, step);
+  const frame = def.draw(value, step, pick);
+  const togglePick = (i: number) => setPick((cur) => (cur === i ? -1 : i));
   const p = def.param;
   useEffect(() => {
     if (!playing || !p) return;
@@ -862,7 +876,32 @@ export function SectionFigureView({ def, title }: { def: FigureDef; title: strin
   }, [playing, p]);
   return (
     <figure className="section-figure" data-section-figure={title}>
-      <Render els={frame.els} title={`${title}: şekil`} desc={def.alt} />
+      <Render els={frame.els} title={`${title}: şekil`} desc={def.alt} onPick={def.picks ? togglePick : undefined} />
+      {def.picks && def.picks.length > 0 && (
+        <div className="sf-picks" role="group" aria-label="Ayrıntısını açmak için bir öğe seç">
+          {def.picks.map((item, i) => (
+            <button
+              key={item.label + i}
+              type="button"
+              className={`secondary sf-pick${pick === i ? " is-on" : ""}`}
+              aria-pressed={pick === i}
+              onClick={() => togglePick(i)}
+            >
+              {item.label}
+            </button>
+          ))}
+        </div>
+      )}
+      {def.picks && pick >= 0 && def.picks[pick] && (
+        <div className="sf-pick-card" aria-live="polite">
+          <strong>{def.picks[pick].title}</strong>
+          <ul>
+            {def.picks[pick].detail.map((line, k) => (
+              <li key={k}>{line}</li>
+            ))}
+          </ul>
+        </div>
+      )}
       {frame.word && frame.word.length > 0 && (
         <div className="sf-word" role="group" aria-label={`Sözcük yapısı: ${frame.word.map((w) => `${w.s} (${w.label})`).join(", ")}`}>
           {frame.word.map((w, k) => (
@@ -880,7 +919,7 @@ export function SectionFigureView({ def, title }: { def: FigureDef; title: strin
               <span>
                 {p.label}
                 <output htmlFor={`${id}-range`}>
-                  {fmt(value, p.step < 1 ? 1 : 0)}
+                  {p.plain ? String(Math.round(value)) : fmt(value, p.step < 1 ? 1 : 0)}
                   {p.unit ?? ""}
                 </output>
               </span>

@@ -212,3 +212,40 @@
   max-width: 7.5rem;
   line-height: 1.25;
 }
+
+/* Selectable items: a click on the drawn label or on the matching button opens its card. */
+.sf-label.sf-pickable {
+  cursor: pointer;
+  text-decoration: underline dotted;
+  text-underline-offset: 3px;
+}
+.sf-label.sf-pickable:hover { text-decoration-style: solid; }
+.sf-picks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.7rem;
+  min-width: 0;
+}
+.sf-pick {
+  min-height: 2.75rem;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.92em;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.sf-pick.is-on {
+  outline: 2px solid currentColor;
+  outline-offset: 1px;
+  font-weight: 700;
+}
+.sf-pick-card {
+  margin-top: 0.7rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid color-mix(in srgb, currentColor 25%, transparent);
+  border-radius: 10px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.sf-pick-card ul { margin: 0.35rem 0 0; padding-left: 1.1rem; }
+.sf-pick-card li + li { margin-top: 0.2rem; }
