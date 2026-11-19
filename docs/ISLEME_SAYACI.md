@@ -11,7 +11,7 @@ Her geliştirme turunda güncellenir. Sayılar yalnız gerçekten yapılmış i�
 | Kayıtlı toplam PDF (kanonik envanter, 17 Kasım taraması) | 8.981 |
 | Kanonik defterde öğretim aktarımı **tam** | 7 |
 | Kanonik defterde **kısmi** | 2 |
-| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 38 |
+| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 39 |
 | Okunduğu doğrulanan farklı PDF toplamı (7 + 2 + 23) | 32 / 8.981 (%0,36) |
 
 Arşivdeki PDF'lerin büyük kısmı aynı konunun farklı biçimleridir (TYT konu özeti, “Dersler Cepte” sunumu, etkinlik, okuma metni, deneme). Bu yüzden PDF yüzdesi konu kapsamını ölçmez; konu kapsamı aşağıdaki rehber tablosundadır.
@@ -28,18 +28,18 @@ Klasördeki numaralı kopya kâğıtları ders ders sayıldı (517 kopya kâğı
 | TYT Fizik | 24 | 7 | %29,2 |
 | TYT Kimya | 56 | 7 | %12,5 |
 | TYT Biyoloji | 36 | 7 | %19,4 |
-| TYT Tarih | 24 | 0 | %0 |
+| TYT Tarih | 24 | 1 | %4,2 |
 | TYT Coğrafya | 40 | 0 | %0 |
 | TYT Felsefe | 17 | 0 | %0 |
 | TYT Din Kültürü | 20 | 0 | %0 |
-| **TYT toplam** | **320** | **23** | **%7,2** |
+| **TYT toplam** | **320** | **24** | **%7,5** |
 | AYT Matematik | 17 | 1 | %5,9 |
 | AYT Geometri | 4 | 0 | %0 |
 | AYT Fizik | 46 | 1 | %2,2 |
 | AYT Kimya | 55 | 11 | %20,0 |
 | AYT Biyoloji | 75 | 1 | %1,3 |
 | **AYT toplam** | **197** | **14** | **%7,1** |
-| **Genel toplam** | **517** | **37** | **%7,2** |
+| **Genel toplam** | **517** | **38** | **%7,4** |
 
 Notlar: TYT Türkçe'de 028 numarası iki farklı konuda kullanılmış (33 dosya, 32 numara). TYT Kimya'da 031 aynı adla iki kez var (eski ve yeni sürüm; 55 farklı konu). TYT Matematik ve Geometri'de 000 numaralı genel özetler var. AYT klasöründeki 7 durum raporu “232 konu” diyor ama klasörlerde 197 AYT kopya kâğıdı bulunuyor; 35 konunun kopya kâğıdı Drive'da yok. Bu tablodaki sıfırlar, o derste kopya kâğıdından figür/taktik aktarılmadığını söyler; uygulamada o dersin anlatımı ve soruları yine vardır (ayrıntı aşağıdaki kapsam tablosunda).
 
@@ -92,6 +92,7 @@ Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen boz
 | 010 AYT Fizik – Eğik atış hareketi (kopya kâğıdı) | `egik-atis` figürü (açı sürgüsü, v₀ = 20 m/s: θ ve 90° − θ aynı menzil, tepe vₓ oku, T/H/R okumaları), bileşen–tepe–menzil–farklı seviye taktiği; 2024 AYT Fen 3 (yükseklikle sürat ve momentum) bağı | Kısmi |
 | 006 AYT Matematik – Parabol (kopya kâğıdı) | `ayt-parabol` figürü (y = x² − 4x + 5 ile y = 2x + m; m sürgüsü, Δ = 16 + 4m, m = −4'te teğet (3, 2), kesişim y'leri), tepe/kök biçimi–Δ–aralık taktiği; 2026 AYT Mat 12 (düşey ötelemede r² eşit artar) bağı | Kısmi |
 | 012 TYT Türkçe – Cümlenin ögeleri (kopya kâğıdı) | `cumlenin-ogeleri` figürü (yüklem → kim? → neyi? → kime? → ne zaman? zinciri ve söz öbeklerinin tek blok kalan renkli şeridi), öge sorusu sırası taktiği; 2024 TYT Türkçe 8 (devrik cümlede öge sırası) bağı | Kısmi |
+| 001 TYT Tarih – Tarih ve zaman (kopya kâğıdı) | `tarih-zaman` figürü (yıl sürgüsü: yüzyıl bloğu, kronolojik yarı ve çeyrek, MÖ'de ters akış, 1900/1901 sınırı, yıl 0 yok), yüzyıl–kaynak–tenkit–takvim taktiği; 2023 TYT Sosyal 2 (kaynağın kapsamı) bağı | Kısmi |
 
 PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olarak etiketlenmez.
 
@@ -147,7 +148,7 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | AYT Biyoloji | 75 | 4 |
 | **Toplam** | **371** | **82 (%22,1)** |
 
-Toplam bölüm figürü: 567 (593 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 71 (63 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
+Toplam bölüm figürü: 568 (594 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 72 (64 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
 
 TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 
@@ -202,6 +203,7 @@ TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 | 19 Kasım (44) | Biyoloji: güncel çevre sorunları 3 figür; 1 taktik | 1 | 81 / 371 |
 | 19 Kasım (45) | AYT Fizik: çembersel hareket, BHH izdüşümü, Lenz, Kmax–f, manyetik yarıçap (5 figür, birim sadeleştirmeli okumalar); 1 taktik; kupa sistemi | 0 | 81 / 371 |
 | 19 Kasım (46) | AYT Kimya: Boyle pistonu + P–V hiperbolü, denge bozulmasında etki anı (N₂ ekleme), kuvvetli asit–baz titrasyon eğrisi (mmol hesabı), Daniell pili (elektron/iyon yolu, 1,10 V), Cr/Cu orbital istisnaları (5 figür, birim okumalı) | 0 | 86 / 371 |
+| 19 Kasım (65) | Drive TYT Tarih 001 Tarih ve zaman okundu: yüzyıl şeridi figürü, 1 taktik | 1 | 105 / 371 |
 | 19 Kasım (64) | Drive TYT Türkçe 012 Cümlenin ögeleri okundu: öge zinciri figürü, 1 taktik | 1 | 105 / 371 |
 | 19 Kasım (63) | Drive AYT Matematik 006 Parabol okundu: parabol–doğru Δ figürü, 1 taktik | 1 | 104 / 371 |
 | 19 Kasım (62) | Drive AYT Fizik 010 Eğik atış okundu: tamamlayıcı açı figürü, 1 taktik | 1 | 103 / 371 |

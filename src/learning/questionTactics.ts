@@ -1055,6 +1055,19 @@ export const questionTactics: QuestionTactic[] = [
       "Devrik cümlede sırayı yükleme sorduğun sorularla kur; son diziliş cümledeki öbek sırasıdır.",
     ],
   },
+  {
+    id: "tarih-zaman-kaynak",
+    guides: ["tarih-zaman"],
+    match: /yüzyıl|MÖ|MS|takvim|kaynak|tenkit|olgu|olay|kronoloji|nümizmatik|paleografya|epigrafi|hicr|Rûmî|Celâli/i,
+    title: "Yüzyıl sınırı, kaynak ekseni, takvim özelliği",
+    steps: [
+      "Yüzyıl = ⌊(y − 1)/100⌋ + 1: 1900 XIX., 1901 XX. MÖ'de blok büyükten küçüğe akar (MÖ 300–201 III.; ilk yarı 300–251). Yıl 0 yok: MÖ a → MS b arası a + b − 1 yıl.",
+      "Olay tek somut gelişme (antlaşmanın imzası), olgu uzun süreç (kentleşme).",
+      "Kaynağın biçimi (yazılı, sözlü, görsel, maddi) ile araştırmaya uzaklığı (birinci/ikinci el) ayrı eksenlerdir; birinci el kesin doğru demek değildir.",
+      "Dış tenkit belgenin kimliğini (malzeme, imza, tarih), iç tenkit iddianın güvenilirliğini (yazarın amacı, tutarlılık) sınar.",
+      "Takvimde üç soru: ay mı güneş mi, başlangıç ne, amaç ne? Hicrî ay yılı; Rûmî hicret başlangıçlı ama güneş yılı (mali işler); Celâli güneş yılı (1079).",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
