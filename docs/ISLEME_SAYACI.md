@@ -11,8 +11,8 @@ Her geliştirme turunda güncellenir. Sayılar yalnız gerçekten yapılmış i�
 | Kayıtlı toplam PDF (kanonik envanter, 17 Kasım taraması) | 8.981 |
 | Kanonik defterde öğretim aktarımı **tam** | 7 |
 | Kanonik defterde **kısmi** | 2 |
-| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 7 |
-| Okunduğu doğrulanan farklı PDF toplamı (7 + 2 + 7) | 16 / 8.981 (%0,18) |
+| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 9 |
+| Okunduğu doğrulanan farklı PDF toplamı (7 + 2 + 9) | 18 / 8.981 (%0,20) |
 
 Arşivdeki PDF'lerin büyük kısmı aynı konunun farklı biçimleridir (TYT konu özeti, “Dersler Cepte” sunumu, etkinlik, okuma metni, deneme). Bu yüzden PDF yüzdesi konu kapsamını ölçmez; konu kapsamı aşağıdaki rehber tablosundadır.
 
@@ -27,6 +27,7 @@ Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen boz
 | 025 TYT 9. Sınıf Fizik – Hal Değişimi | `hal-degisimi` figürleri; −20 °C buzdan 120 °C buhara beş basamak, Le = Ld, Lb = Ly | Kısmi |
 | 026 TYT 9. Sınıf Fizik – Isıl Denge | `isi-ve-sicaklik` figürleri; T₂ ≥ Td ≥ T₁, sıcaklığı değişmeyen cisim hâl değiştirir taktiği | Kısmi |
 | 035 TYT 10. Sınıf Biyoloji – Mitoz | `mitoz` figürleri (evre evre hücre, döngü çarkı + G₀, DNA grafiği); bölünmeyen hücre, interfazda olmayan olay, “kromozom sayısı iki katına çıkar” tuzağı taktikleri | Kısmi (sunumdaki 3 soru tipi taktiğe aktarıldı; sabitlenmiş mevcut derse yeni soru eklenmedi) |
+| 040–041 TYT 10. Sınıf Biyoloji – Mayoz 1 ve 2 | `mayoz` figürleri (tetrat–kiyazma–krossing over yakın planı, 2n = 4 → 4 gamet 7 aşama, bağımsız dizilim 2ⁿ, DNA + kromozom grafiği); tetrat = n, Mayoz I/II ayrımı taktiği | Kısmi |
 
 PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olarak etiketlenmez.
 
@@ -82,7 +83,7 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | AYT Biyoloji | 75 | 0 |
 | **Toplam** | **371** | **41 (%11,1)** |
 
-Toplam bölüm figürü: 411 (437 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 42 (34 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
+Toplam bölüm figürü: 415 (441 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 42 (34 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
 
 TYT Fizik'te figürü olmayan 7 rehber: fizik bilimine giriş, madde ve özkütle, prizmalar ve renkler, ses ve deprem dalgaları, ışık bilgisi, durgun elektrik, mıknatıslar ve manyetik alan.
 
@@ -106,3 +107,4 @@ TYT Fizik'te figürü olmayan 7 rehber: fizik bilimine giriş, madde ve özkütl
 | 19 Kasım (13) | Kontur ayrıntısı (0,01°), yumuşak eğriler; Uhud Savaşı şeması ve 622–632 olay şeridi; İslam tarihi yerleri haritalarda | 0 | 41 / 371 (+2 rehber) |
 | 19 Kasım (14) | Gölgeli 3B molekül modelleri (2 figür), Türkçe sözcük anatomisi (5 figür), hücrede adları göster (etiket çizgileri), gerçekçi hücre biçimleri | 0 | 41 / 371 (+3 rehber) |
 | 19 Kasım (15) | Mitoz: 2n = 4 hücrede G₁→sitokinez 8 aşama (her aşamada kromozom/kromatit/DNA/C ve alan), hücre döngüsü çarkı + G₀, sürgülü DNA grafiği; 2 soru tipi taktiği | 1 | 41 / 371 (+1 biyoloji rehberi) |
+| 19 Kasım (16) | Mayoz: renkli parça değişimli kromatitlerle tetrat yakın planı (5 adım), 2n = 4 → 4 farklı gamet (7 aşama, aşama başına sayım), bağımsız dizilim 2ⁿ, DNA ve kromozom grafiği; 1 taktik | 2 | 41 / 371 (+1 biyoloji rehberi) |

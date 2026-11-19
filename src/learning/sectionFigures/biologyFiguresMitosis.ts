@@ -10,26 +10,25 @@ import { circle, poly, pol, seg, txt, v, vec, type El, type FigureDef, type Tone
  * scale; the model assumes normal balanced division as in the guide.
  */
 
-/** Rounded rod (chromatid) from a to b, width w. */
-function rod(a: V, b: V, w: number, tone: Tone): El {
+/** Rounded rod (chromatid) from a to b, width w: a capsule with semicircular
+ * ends and a coloured core so the chromatid's tone stays visible. */
+export function rod(a: V, b: V, w: number, tone: Tone): El {
   const dx = b[0] - a[0];
   const dy = b[1] - a[1];
   const l = Math.hypot(dx, dy) || 1;
-  const nx = (-dy / l) * (w / 2);
-  const ny = (dx / l) * (w / 2);
-  const ux = (dx / l) * (w / 2);
-  const uy = (dy / l) * (w / 2);
-  return poly(
-    [
-      v(a[0] + nx, a[1] + ny),
-      v(b[0] + nx, b[1] + ny),
-      v(b[0] + ux * 0.9, b[1] + uy * 0.9),
-      v(b[0] - nx, b[1] - ny),
-      v(a[0] - nx, a[1] - ny),
-      v(a[0] - ux * 0.9, a[1] - uy * 0.9),
-    ],
-    { tone, fill: tone, smooth: true, thin: true },
-  );
+  const r = w / 2;
+  const ang = Math.atan2(dy, dx);
+  const ps: V[] = [];
+  for (let i = 0; i <= 6; i++) {
+    const t = ang - Math.PI / 2 + (Math.PI * i) / 6;
+    ps.push(v(b[0] + Math.cos(t) * r, b[1] + Math.sin(t) * r));
+  }
+  for (let i = 0; i <= 6; i++) {
+    const t = ang + Math.PI / 2 + (Math.PI * i) / 6;
+    ps.push(v(a[0] + Math.cos(t) * r, a[1] + Math.sin(t) * r));
+  }
+  void l;
+  return poly(ps, { tone, fill: tone, thin: true });
 }
 
 type Chrom = { len: number; tone: Tone };
@@ -63,7 +62,7 @@ function sisters(c: V, ch: Chrom, angle: number, tight = true): El[] {
 }
 
 /** Smooth, slightly irregular membrane around centre c (radius rx, ry). */
-function membrane(c: V, rx: number, ry: number, pinch = 0, seed = 0): El {
+export function membrane(c: V, rx: number, ry: number, pinch = 0, seed = 0): El {
   const ps: V[] = [];
   const n = 28;
   for (let i = 0; i < n; i++) {
@@ -76,12 +75,12 @@ function membrane(c: V, rx: number, ry: number, pinch = 0, seed = 0): El {
   return poly(ps, { tone: "c", smooth: true, bold: true });
 }
 
-function nucleus(c: V, r: number, broken = false): El[] {
+export function nucleus(c: V, r: number, broken = false): El[] {
   if (broken) return [circle(c, r, { tone: "muted", dash: true, thin: true })];
   return [circle(c, r, { tone: "b", bold: true }), circle(v(c[0] - r * 0.7, c[1] - r * 0.45), r * 0.14, { tone: "muted", fill: "muted" })];
 }
 
-function centrosome(c: V): El[] {
+export function centrosome(c: V): El[] {
   return [seg(v(c[0] - 0.09, c[1]), v(c[0] + 0.09, c[1]), { tone: "ink", bold: true }), seg(v(c[0], c[1] - 0.09), v(c[0], c[1] + 0.09), { tone: "ink", bold: true })];
 }
 
@@ -100,7 +99,7 @@ function daughter(c: V, k: number, loose: boolean): El[] {
   return SET.flatMap((ch, i) => single(v(c[0] + DAUGHTER[i][0] * k, c[1] + DAUGHTER[i][1] * k), { ...ch, len: ch.len * 0.5 * k }, ANG[i], loose));
 }
 
-const spindle = (pole: V, ends: V[]): El[] => ends.map((e) => seg(pole, e, { tone: "muted", thin: true }));
+export const spindle = (pole: V, ends: V[]): El[] => ends.map((e) => seg(pole, e, { tone: "muted", thin: true }));
 
 type Stage = {
   name: string;

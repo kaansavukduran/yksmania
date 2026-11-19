@@ -45,6 +45,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "selcuklu-yerlesme-devletlesme",
   "nukleik-asitler-yapi",
   "mitoz",
+  "mayoz",
   "dna-eslenmesi",
   "hucre-organelleri",
   "atom-modelleri",

@@ -430,6 +430,18 @@ export const questionTactics: QuestionTactic[] = [
       "Denetim noktası seçerken zamana bak: G₁ büyüklük ve sinyal, G₂ eşlenmiş DNA'nın hasarı, M iğ ipliği–kinetokor bağlantısı.",
     ],
   },
+  {
+    id: "mayoz-sayim",
+    guides: ["mayoz"],
+    match: /tetrat|mayoz|gamet|homolog|krossing|kiyazma/i,
+    title: "Mayozda sayım ve ayrılma soruları",
+    steps: [
+      "Tetrat sayısı = homolog çift sayısı = n. Gamette 18 kromozom varsa n = 18, profaz I'de 18 tetrat.",
+      "Mayoz I homologları ayırır (2n → n, kardeşler bağlı kalır); Mayoz II kardeşleri ayırır (n kalır, DNA 2C → 1C). Arada S evresi yoktur.",
+      "Anafaz I'de kromozom sayısı artmaz; anafaz II'de hücre başına anlık 2n olur.",
+      "Çeşitlilik: krossing over (profaz I, kardeş olmayan kromatitler) + metafaz I bağımsız dizilim (2ⁿ). Krossing over yoksa da gametler farklı olabilir.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

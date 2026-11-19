@@ -16,6 +16,7 @@ import { geometryFiguresCircle040 } from "./geometryFiguresCircle040";
 import { historyFiguresSeljuk } from "./historyFiguresSeljuk";
 import { biologyFiguresNucleic } from "./biologyFiguresNucleic";
 import { biologyFiguresMitosis } from "./biologyFiguresMitosis";
+import { biologyFiguresMeiosis } from "./biologyFiguresMeiosis";
 import { chemistryFiguresAtoms } from "./chemistryFiguresAtoms";
 import { turkeyFigures } from "./turkeyFigures";
 import { historyFiguresIslam } from "./historyFiguresIslam";
@@ -39,6 +40,7 @@ export const sectionFigures: Record<string, Record<string, FigureDef>> = {
   ...historyFiguresSeljuk,
   ...biologyFiguresNucleic,
   ...biologyFiguresMitosis,
+  ...biologyFiguresMeiosis,
   ...chemistryFiguresAtoms,
   ...turkeyFigures,
   ...historyFiguresIslam,
