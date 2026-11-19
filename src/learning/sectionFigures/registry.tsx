@@ -11,6 +11,7 @@ import { physicsFiguresMechanics } from "./physicsFiguresMechanics";
 import { physicsFiguresFluidsCircuits } from "./physicsFiguresFluidsCircuits";
 import { physicsFiguresEnergy } from "./physicsFiguresEnergy";
 import { physicsFiguresWaves } from "./physicsFiguresWaves";
+import { physicsFiguresThermal } from "./physicsFiguresThermal";
 
 export const sectionFigures: Record<string, Record<string, FigureDef>> = {
   ...geometryFigures031,
@@ -24,6 +25,7 @@ export const sectionFigures: Record<string, Record<string, FigureDef>> = {
   ...physicsFiguresFluidsCircuits,
   ...physicsFiguresEnergy,
   ...physicsFiguresWaves,
+  ...physicsFiguresThermal,
 };
 
 export function SectionFigure({

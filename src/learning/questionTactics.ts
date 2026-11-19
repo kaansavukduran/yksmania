@@ -355,6 +355,54 @@ export const questionTactics: QuestionTactic[] = [
       "Kırılmada sin i / sin r = v₁/v₂ = λ₁/λ₂. Yavaş (sığ) bölgeye giren ışın normale yaklaşır.",
     ],
   },
+  {
+    id: "q-mcdt",
+    guides: ["isi-ve-sicaklik"],
+    match: /hâl değiştirmeden|c=|öz ısı|ısı sığası|aldığı enerji|işaretli Q/i,
+    title: "Q = mcΔT ve ısı sığası",
+    steps: [
+      "Önce hâl değişimi var mı bak; yoksa Q = m·c·(T_son − T_ilk). Kütle birimini c'nin birimine uydur (g ↔ kg).",
+      "Isınmada Q pozitif, soğumada negatif; soru “verdiği ısı” diyorsa büyüklüğü yaz.",
+      "Isı sığası C = m·c örneğe, öz ısı c maddeye bağlıdır. T–Q grafiğinde eğim 1/C, Q–ΔT grafiğinde C'dir.",
+      "Sıcaklık farkı °C ve K'de aynı sayıdır.",
+    ],
+  },
+  {
+    id: "isil-denge",
+    guides: ["isi-ve-sicaklik", "hal-degisimi"],
+    match: /denge|karışıyor|temas|yalıtılmış/i,
+    title: "Isıl denge soruları",
+    steps: [
+      "Alınan ısı = verilen ısı: C₁(Td − T₁) + C₂(Td − T₂) = 0 → Td = (C₁T₁ + C₂T₂)/(C₁ + C₂).",
+      "Td her zaman iki ilk sıcaklığın arasındadır ve ısı sığası büyük olanın ilk sıcaklığına yakındır.",
+      "Sıcaklığı hiç değişmeyen cisim hâl değiştiriyordur (örneğin erime sıcaklığında buz).",
+      "Buz varsa önce sına: sıcak su 0 °C'ye kadar ne kadar enerji verebilir, buzu eritmek ne kadar ister? Yetmezse Td = 0 °C ve buzun bir kısmı kalır.",
+    ],
+  },
+  {
+    id: "genlesme-karsilastir",
+    guides: ["genlesme"],
+    match: /uzama|α|γ|genleş|boşluk|taşma|şerit/i,
+    title: "Genleşme soruları",
+    steps: [
+      "ΔL = α·L₀·ΔT; alan için 2α, hacim için 3α kullan (soru β ya da γ verdiyse onu doğrudan kullan).",
+      "Aynı ΔT'de α büyük olan daha çok uzar, soğutunca daha çok kısalır: halka–silindir sorularında soğutunca α'sı büyük silindir halkadan rahat geçer.",
+      "Kapta sıvı: taşan = (γ_sıvı − γ_kap)·V₀·ΔT. Özdeş kaplarda önce taşan, görünen genleşmesi büyük olandır.",
+      "Bimetalde α büyük olan dış yayda kalır. Su 0–4 °C arasında ısınınca hacmi küçülür.",
+    ],
+  },
+  {
+    id: "hal-degisimi-enerji",
+    guides: ["hal-degisimi"],
+    match: /buz|erime|eritmek|yoğuşma|L=|Lf/i,
+    title: "Hâl değişimi enerji basamakları",
+    steps: [
+      "Süreci basamaklara ayır: ısıtma (mcΔT) → hâl değişimi (mL, sıcaklık sabit) → ısıtma... Her basamağın enerjisini ayrı yaz, sonra topla.",
+      "mL'deki kütle yalnız hâl değiştiren kısmın kütlesidir; L ve m birimleri uyumlu olmalı (J/g ile g).",
+      "Erime ısısı = donma ısısı, buharlaşma ısısı = yoğuşma ısısı; geçiş sıcaklıkları kütleye bağlı değildir.",
+      "Sabit güçte süre = enerji / güç: güç iki katına çıkınca aynı geçiş yarı sürede biter.",
+    ],
+  },
 ];
 
 /** Tactics that apply to this question, in list order (at most two). */
