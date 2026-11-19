@@ -454,6 +454,18 @@ export const questionTactics: QuestionTactic[] = [
       "Kontrol: p + n = A, p − e = q, bütün sayılar tam ve ≥ 0. Yalnız A ya da p + n + e verilmişse tek çözüm çıkmayabilir.",
     ],
   },
+  {
+    id: "durgun-elektrik-adim",
+    guides: ["durgun-elektrik"],
+    match: /küre|elektroskop|topra|çubuk|Coulomb|uzaklık|yük/i,
+    title: "Durgun elektrik soruları",
+    steps: [
+      "Özdeş küreler temas ediyorsa: işaretli toplamı yaz, küre sayısına böl; son toplam ilk toplama eşit olmalı. “Özdeş” yoksa eşit bölme.",
+      "Etki + topraklama: yaklaştır → toprakla → toprağı kes → uzaklaştır. Son yük etkileyene zıttır; sıra değişirse sonucu yeniden kur.",
+      "Başlangıçta nötr elektroskop: açılırsa cisim yüklü (işaret bilinmez), kapalı kalırsa nötr.",
+      "Coulomb oranı: F′/F = (q₁′q₂′)/(q₁q₂) · (r/r′)². Uzaklık 2 kat → 1/4. Negatif deneme yükünde kuvvet alana zıttır.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

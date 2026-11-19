@@ -11,8 +11,8 @@ Her geliştirme turunda güncellenir. Sayılar yalnız gerçekten yapılmış i�
 | Kayıtlı toplam PDF (kanonik envanter, 17 Kasım taraması) | 8.981 |
 | Kanonik defterde öğretim aktarımı **tam** | 7 |
 | Kanonik defterde **kısmi** | 2 |
-| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 10 |
-| Okunduğu doğrulanan farklı PDF toplamı (7 + 2 + 10) | 19 / 8.981 (%0,21) |
+| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 11 |
+| Okunduğu doğrulanan farklı PDF toplamı (7 + 2 + 11) | 20 / 8.981 (%0,22) |
 
 Arşivdeki PDF'lerin büyük kısmı aynı konunun farklı biçimleridir (TYT konu özeti, “Dersler Cepte” sunumu, etkinlik, okuma metni, deneme). Bu yüzden PDF yüzdesi konu kapsamını ölçmez; konu kapsamı aşağıdaki rehber tablosundadır.
 
@@ -29,6 +29,7 @@ Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen boz
 | 035 TYT 10. Sınıf Biyoloji – Mitoz | `mitoz` figürleri (evre evre hücre, döngü çarkı + G₀, DNA grafiği); bölünmeyen hücre, interfazda olmayan olay, “kromozom sayısı iki katına çıkar” tuzağı taktikleri | Kısmi (sunumdaki 3 soru tipi taktiğe aktarıldı; sabitlenmiş mevcut derse yeni soru eklenmedi) |
 | 040–041 TYT 10. Sınıf Biyoloji – Mayoz 1 ve 2 | `mayoz` figürleri (tetrat–kiyazma–krossing over yakın planı, 2n = 4 → 4 gamet 7 aşama, bağımsız dizilim 2ⁿ, DNA + kromozom grafiği); tetrat = n, Mayoz I/II ayrımı taktiği | Kısmi |
 | 006 TYT Kimya – Atomun temel tanecikleri (kopya kâğıdı) | `atomun-temel-tanecikleri` figürleri (gölgeli çekirdek + olasılık bulutu, renkli A/Z/q gösterimi ve p/n/e çubukları, elektron alıp verme sürgüsü, p–e grafiği); p/n/e taktiği | Kısmi |
+| 009 TYT Fizik – Durgun Elektrik (kopya kâğıdı) | `durgun-elektrik` figürleri (özdeş kürede dokunma, etki + topraklama sırası, elektroskop ve 2026 TYT Fen 5 mantığı, alan–kuvvet yönü ve ters kare); taktik | Kısmi |
 
 PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olarak etiketlenmez.
 
@@ -74,7 +75,7 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | --- | ---: | ---: |
 | TYT Matematik | 40 | 1 |
 | TYT Geometri | 19 | 19 |
-| TYT Fizik | 24 | 17 |
+| TYT Fizik | 24 | 18 |
 | TYT Kimya | 55 | 1 |
 | TYT Biyoloji | 36 | 0 |
 | AYT Matematik | 17 | 0 |
@@ -84,9 +85,9 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | AYT Biyoloji | 75 | 0 |
 | **Toplam** | **371** | **41 (%11,1)** |
 
-Toplam bölüm figürü: 421 (447 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 42 (34 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
+Toplam bölüm figürü: 425 (451 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 42 (34 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
 
-TYT Fizik'te figürü olmayan 7 rehber: fizik bilimine giriş, madde ve özkütle, prizmalar ve renkler, ses ve deprem dalgaları, ışık bilgisi, durgun elektrik, mıknatıslar ve manyetik alan.
+TYT Fizik'te figürü olmayan 6 rehber: fizik bilimine giriş, madde ve özkütle, prizmalar ve renkler, ses ve deprem dalgaları, ışık bilgisi, mıknatıslar ve manyetik alan.
 
 ## Tur geçmişi
 
@@ -111,3 +112,4 @@ TYT Fizik'te figürü olmayan 7 rehber: fizik bilimine giriş, madde ve özkütl
 | 19 Kasım (16) | Mayoz: renkli parça değişimli kromatitlerle tetrat yakın planı (5 adım), 2n = 4 → 4 farklı gamet (7 aşama, aşama başına sayım), bağımsız dizilim 2ⁿ, DNA ve kromozom grafiği; 1 taktik | 2 | 41 / 371 (+1 biyoloji rehberi) |
 | 19 Kasım (17) | İslam tarihi: Bedir (624; kervanın kıyı yolu, kuyular, karşılaşma, sonuç) ve Hendek (627; hendek, harra, Ahzab kuşatması, kuşatmanın kalkması) aşama aşama şemaları | 0 | 41 / 371 |
 | 19 Kasım (18) | Kimya: atomun temel tanecikleri 4 figür (çekirdek–bulut, gösterimin dört konumu, iyonlaşmada korunanlar, p–e grafiği); 1 taktik | 1 | 41 / 371 (+1 kimya rehberi) |
+| 19 Kasım (19) | Fizik: durgun elektrik 4 figür (dokunma, etki + topraklama, elektroskop, alan ve kuvvet); 1 taktik | 1 | 42 / 371 |
