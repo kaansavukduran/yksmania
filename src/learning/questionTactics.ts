@@ -1279,6 +1279,19 @@ export const questionTactics: QuestionTactic[] = [
       "Mutlak konum enlem–boylamdır; denizellik, boğaz, komşuluk göreceli konumdur. Aynı enlem aynı iklim demek değildir.",
     ],
   },
+  {
+    id: "ortacag-yetki-islev-kanit",
+    guides: ["ortacag-dunya"],
+    match: /feodal|senyör|serf|vassal|kervansaray|bedesten|kapan|ribat|İpek|Bizans|Moğol|Sasani|Magna|Haçlı|vergi|kurultay/i,
+    title: "Orta Çağ sorusunda yetkiyi, işlevi ve kanıt sınırını ayır",
+    steps: [
+      "Merkezî mi yerel mi? Unvana değil vergi, asker ve yargı yetkisinin kimde olduğuna bak; kral bulunması güçlü merkez demek değildir.",
+      "Meşruiyet (neden haklı sayıldığı) ile yetkiyi kullanma biçimini ayır; kurultay ya da meclis modern demokrasi kanıtı değildir.",
+      "Ödemenin anındaki araca bak: ürünle ayni, parayla nakdî; serf, köle ve vassal farklı konumlardır.",
+      "Mekânı işlevinden seç: yol üstü güvenlik kervansaray, değerli mal bedesten, toptan tartım kapan, esnaf sırası arasta; ribatın işlevi zamanla değişebilir.",
+      "‘Ulaşılamaz’ kökünde her seçeneğe kanıt ara; önce-sonra sırası neden-sonuç kanıtı değildir (2019 AYT TDE–Sosyal Bilimler-1 soru 28 mantığı).",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

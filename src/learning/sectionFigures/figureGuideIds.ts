@@ -28,6 +28,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "duyu-organlari-goz",
   "duyu-organlari-kulak",
   "cografi-konum",
+  "ortacag-dunya",
   "dogrunun-analitigi",
   "duzlem-ayna",
   "kuresel-aynalar",
