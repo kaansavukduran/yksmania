@@ -9,6 +9,10 @@
 - **Kimya görselleri (6 figür):** Rutherford saçılması (Oynat: çoğu geçer, ikisi sapar, biri geri döner; gözlem–çıkarım ayrımı), Bohr geçişleri (soğurma n=1→3, yayma 3→2 ve 2→1, foton enerjisi karşılaştırması, iyonlaşma), Na→Cl elektron aktarımı ve ardından çekim (bağın aktarım değil çekim olduğu), metalik bağda koridorlarda dolaşan elektron denizi, alanla sürüklenen elektronlar (akım) ve kayan katmanlar (işlenebilirlik; iyonik kristalle karşılaştırma).
 - Çiplerde “Bir sonuç seç” gibi boş değerli yer tutucu seçenekler çip olarak çizilmez.
 
+- **Gerçek haritalar:** “Lowpoly” elle çizilmiş dünya şekli kaldırıldı. Natural Earth (kamu malı) 1:50m kara verisi kendi TopoJSON çözücümüzle çevrimdışı bir veri dosyasına dönüştürüldü (`src/learning/geo/`; 637 kara parçası, ~10.500 nokta, ±180° boylamını aşan halkalar bölünür). Ortak `WorldBase` bileşeni okyanus, gerçek kıyı çizgileri ve ince ızgara çizer; dört temaya uygun renkler. Dünya nüfus dağılışı ve coğrafi konum laboratuvarları bunu kullanıyor; harita üzerindeki harfler artık noktaların içinde, hiçbir etiket üst üste binmiyor.
+- **Türkiye şekilleri (4 figür, 1:10m gerçek sınır):** iklim tipleri (örnek kentler adım adım), dağların uzanışı ve yağış gölgesi (nemli hava okları, Ege koridorları), Ege horst–graben yakın planı (yalnız kıyı çizgisi, kutu yok), KAF/DAF ve yanal hareket. Dağ, fay ve koridor çizgileri yaklaşık olarak etiketli; yer adları numaralı pullar ve alttaki anahtar listesinde.
+- 320 px/büyük yazıda çiplerde sözcük bölünmesi ve taşma giderildi (çip grubu kendi sütununda kalır, sözcükler bölünmez); ayarlar testi 4 temaya güncellendi.
+
 Doğrulama (yerel): check PASS; 2.486 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
 
 ---

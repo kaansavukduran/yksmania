@@ -102,6 +102,8 @@ test("031 current and Matrix themes preserve custom dates, independent settings 
   await expect(themes.getByRole("button")).toHaveText([
     "Mevcut tema",
     "Matrix",
+    "Axolotl pembesi",
+    "Trans bayrağı",
   ]);
   await expect(
     themes.getByRole("button", { name: "Matrix", exact: true }),
@@ -203,7 +205,7 @@ for (const theme of ["light", "system", "contrast"] as const)
       page
         .getByRole("group", { name: "Tema", exact: true })
         .getByRole("button"),
-    ).toHaveCount(2);
+    ).toHaveCount(4);
     await expect(
       page.getByRole("textbox", { name: "Hedef sınav tarihi", exact: true }),
     ).toHaveValue("18/06/2027");

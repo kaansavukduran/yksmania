@@ -14,6 +14,7 @@ import {
   economy018,
 } from "./forge018Geography";
 import "./forge018Geography.css";
+import { WorldBase, equirect } from "./geo/WorldBase";
 import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number, d = 2) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: d }).format(n);
@@ -298,10 +299,8 @@ function World() {
     clamp(s.total, 100, 1000000),
     clamp(s.area, 4, 100000),
   );
-  const xy = (lon: number, lat: number) => [
-    35 + ((lon + 180) / 360) * 370,
-    30 + ((80 - lat) / 140) * 200,
-  ];
+  const box = { x: 35, y: 30, w: 370, h: 200 };
+  const xy = equirect(box, [-180, 180], [-60, 80]);
   return (
     <>
       <h3>Dağılışı keşfet</h3>
@@ -321,10 +320,7 @@ function World() {
           description="Boylam ve enlem ızgarasında sekiz örnek nokta. Harflerin tam adı ve koşulları şeklin altında; gerçek ülke sınırı veya nüfus ölçümü yok."
           height={280}
         >
-          <path
-            className="g018-map-land"
-            d="M55 65L100 35L150 52L145 105L116 130L135 182L117 215L92 150L70 115Z M210 66L250 45L280 55L325 40L383 74L375 105L335 108L309 150L280 130L253 112L248 167L222 193L208 137L190 102Z M330 181L373 173L392 196L371 215L339 207Z"
-          />
+          <WorldBase box={box} xy={xy} graticule={0} />
           {[-120, -60, 0, 60, 120].map((lon) => {
             const [x] = xy(lon, 0);
             return (
@@ -354,10 +350,10 @@ function World() {
                 <circle
                   cx={x}
                   cy={y}
-                  r={k === s.place ? 12 : 8}
+                  r={k === s.place ? 13 : 10}
                   className={k === s.place ? "g018-active-node" : "g018-node"}
                 />
-                <text x={x} y={y - 17}>
+                <text x={x} y={y + 4} className="g018-node-letter">
                   {String.fromCharCode(65 + i)}
                 </text>
               </g>
@@ -368,8 +364,9 @@ function World() {
           </text>
         </Diagram>
         <figcaption>
-          Kabaca konum; eş alanlı dünya haritası değildir. Yukarı kuzeydir.
-          Noktalar bölge sınırı çizmez.
+          Kıyılar gerçek haritadan (Natural Earth) çizildi. Izgara düz olduğu
+          için alan oranları bozulur. Yukarı kuzeydir. Noktalar bölge sınırı
+          çizmez.
         </figcaption>
       </figure>
       <Facts

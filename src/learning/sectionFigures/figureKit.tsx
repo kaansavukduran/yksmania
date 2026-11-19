@@ -103,7 +103,7 @@ export type El =
   | ({ k: "line"; a: V; b: V; ext?: number } & Style)
   | ({ k: "ray"; a: V; b: V; ext?: number } & Style)
   | ({ k: "vec"; a: V; b: V } & Style)
-  | ({ k: "poly"; ps: V[]; fill?: Tone; open?: boolean } & Style)
+  | ({ k: "poly"; ps: V[]; fill?: Tone; open?: boolean; bare?: boolean } & Style)
   | ({ k: "circle"; c: V; r: number; fill?: Tone } & Style)
   | { k: "pt"; p: V; label?: string; at?: Dir; tone?: Tone; hollow?: boolean }
   | {
@@ -148,7 +148,7 @@ export const ray = (a: V, b: V, s: Style & { ext?: number } = {}): El => ({
 export const vec = (a: V, b: V, s: Style = {}): El => ({ k: "vec", a, b, ...s });
 export const poly = (
   ps: V[],
-  s: Style & { fill?: Tone; open?: boolean } = {},
+  s: Style & { fill?: Tone; open?: boolean; bare?: boolean } = {},
 ): El => ({ k: "poly", ps, ...s });
 export const circle = (
   c: V,
@@ -467,7 +467,7 @@ function Render({ els, title, desc }: { els: El[]; title: string; desc: string }
           <polygon
             key={i}
             points={pts(el.ps.map(P))}
-            className={`${cls(el.tone)} sf-stroke${el.dash ? " sf-dash" : ""}${el.thin ? " sf-thin" : ""}${el.bold ? " sf-bold" : ""} ${el.fill ? `sf-fill-${el.fill}` : "sf-nofill"}${el.open ? " sf-open" : ""}`}
+            className={`${cls(el.tone)} sf-stroke${el.dash ? " sf-dash" : ""}${el.thin ? " sf-thin" : ""}${el.bold ? " sf-bold" : ""} ${el.fill ? `sf-fill-${el.fill}` : "sf-nofill"}${el.open ? " sf-open" : ""}${el.bare ? " sf-bare" : ""}`}
           />
         );
       case "circle": {

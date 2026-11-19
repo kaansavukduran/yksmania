@@ -259,3 +259,4 @@ html[data-motion="off"] .forge018-geography-lab * {
   animation: none !important;
   transition: none !important;
 }
+.g018-node-letter { font-size: 11px; font-weight: 700; text-anchor: middle; pointer-events: none; }

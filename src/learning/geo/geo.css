@@ -1,0 +1,65 @@
+/* Real-coastline world backdrop. Muted natural colours stay behind the data
+   marks that labs draw on top; each theme gets a readable sea/land pair. */
+.geo-world {
+  --geo-ocean: #12304a;
+  --geo-land: #3f5a3a;
+  --geo-coast: #9cc39a;
+  --geo-grid: rgba(190, 220, 255, 0.16);
+  --geo-turkey: #e8b25d;
+}
+:root[data-theme="light"] .geo-world,
+:root[data-theme="trans"] .geo-world {
+  --geo-ocean: #cfe7f5;
+  --geo-land: #e8e1c8;
+  --geo-coast: #7f8f6a;
+  --geo-grid: rgba(40, 80, 120, 0.18);
+  --geo-turkey: #b8245a;
+}
+:root[data-theme="axolotl"] .geo-world {
+  --geo-ocean: #1b2a44;
+  --geo-land: #4a3346;
+  --geo-coast: #f2b6d6;
+  --geo-grid: rgba(163, 220, 247, 0.16);
+  --geo-turkey: #ff9fd0;
+}
+:root[data-theme="contrast"] .geo-world {
+  --geo-ocean: #001a33;
+  --geo-land: #2b2b2b;
+  --geo-coast: #ffffff;
+  --geo-grid: rgba(255, 255, 255, 0.25);
+  --geo-turkey: #ffe287;
+}
+@media (prefers-color-scheme: light) {
+  :root[data-theme="system"] .geo-world {
+    --geo-ocean: #cfe7f5;
+    --geo-land: #e8e1c8;
+    --geo-coast: #7f8f6a;
+    --geo-grid: rgba(40, 80, 120, 0.18);
+  }
+}
+.geo-ocean { fill: var(--geo-ocean); }
+.geo-land {
+  fill: var(--geo-land);
+  stroke: var(--geo-coast);
+  stroke-width: 0.6;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+.geo-turkey {
+  fill: var(--geo-turkey);
+  stroke: var(--geo-coast);
+  stroke-width: 0.8;
+  vector-effect: non-scaling-stroke;
+}
+.geo-graticule {
+  fill: none;
+  stroke: var(--geo-grid);
+  stroke-width: 0.6;
+  vector-effect: non-scaling-stroke;
+}
+.geo-frame {
+  fill: none;
+  stroke: var(--geo-coast);
+  stroke-opacity: 0.35;
+  stroke-width: 1;
+}

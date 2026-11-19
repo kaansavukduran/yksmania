@@ -4725,7 +4725,11 @@ progress::-moz-progress-bar {
   display: block;
   width: 100%;
   max-width: 100%;
+  min-width: 0;
   border-radius: 14px;
+  /* Chips wrap inside the column; nothing may widen the page. */
+  overflow: hidden;
+  padding: 2px;
 }
 .choice-select:not(.is-plain):focus-within {
   outline: 3px solid var(--accent);
@@ -4750,7 +4754,10 @@ progress::-moz-progress-bar {
   cursor: pointer;
   line-height: 1.25;
   text-align: center;
-  overflow-wrap: anywhere;
+  max-width: 100%;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: manual;
   user-select: none;
   transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
 }
@@ -4770,6 +4777,8 @@ progress::-moz-progress-bar {
   width: 100% !important;
   height: 100% !important;
   min-height: 0 !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
   opacity: 0;

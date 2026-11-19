@@ -49,4 +49,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "atom-modelleri",
   "iyonik-bag-ve-guclu-etkilesimler",
   "kovalent-adlandirma-metalik-bag",
+  "turkiye-iklimi",
+  "turkiye-yer-sekilleri",
+  "turkiye-ic-kuvvetler",
 ]);

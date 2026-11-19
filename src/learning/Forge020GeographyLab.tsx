@@ -11,6 +11,7 @@ import {
   contourIntervals020,
 } from "./forge020Geography";
 import "./forge020Geography.css";
+import { WorldBase, equirect } from "./geo/WorldBase";
 import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number, d = 2) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: d }).format(n);
@@ -499,9 +500,13 @@ function Position() {
         <Diagram
           height={295}
           title="Enlem-boylam ızgarası"
-          description={`X noktası enlem ${fmt(m.latitude)},boylam ${fmt(m.longitude)}. Ekvator yatay, Greenwich düşey. Karşı meridyen ${fmt(m.antimeridian)} derece. Izgara gerçek alan koruyan dünya haritası değildir.`}
+          description={`X noktası enlem ${fmt(m.latitude)},boylam ${fmt(m.longitude)}. Ekvator yatay, Greenwich düşey. Karşı meridyen ${fmt(m.antimeridian)} derece. Kıyılar gerçek veriden çizildi; düz ızgara alanları eşit oranlı göstermez.`}
         >
-          <rect className="g020-cell" x={45} y={45} width={210} height={200} />
+          <WorldBase
+            box={{ x: 45, y: 45, w: 210, h: 200 }}
+            xy={equirect({ x: 45, y: 45, w: 210, h: 200 }, [-180, 180], [-80, 80])}
+            graticule={0}
+          />
           {[-60, -30, 0, 30, 60].map((lat) => (
             <path
               key={lat}

@@ -167,3 +167,6 @@
   font-weight: 700;
   font-size: 0.85em;
 }
+
+/* Fill without outline (clipped map areas draw their coast separately). */
+.sf-bare { stroke: none; }
