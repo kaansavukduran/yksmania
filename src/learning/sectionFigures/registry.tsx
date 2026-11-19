@@ -23,6 +23,7 @@ import { physicsFiguresMagnetism } from "./physicsFiguresMagnetism";
 import { physicsFiguresSound } from "./physicsFiguresSound";
 import { physicsFiguresPrism } from "./physicsFiguresPrism";
 import { physicsFiguresLight } from "./physicsFiguresLight";
+import { physicsFiguresMatter } from "./physicsFiguresMatter";
 import { chemistryFiguresAtoms } from "./chemistryFiguresAtoms";
 import { turkeyFigures } from "./turkeyFigures";
 import { historyFiguresIslam } from "./historyFiguresIslam";
@@ -53,6 +54,7 @@ export const sectionFigures: Record<string, Record<string, FigureDef>> = {
   ...physicsFiguresSound,
   ...physicsFiguresPrism,
   ...physicsFiguresLight,
+  ...physicsFiguresMatter,
   ...chemistryFiguresAtoms,
   ...turkeyFigures,
   ...historyFiguresIslam,

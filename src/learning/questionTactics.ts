@@ -514,6 +514,18 @@ export const questionTactics: QuestionTactic[] = [
       "Birden çok kaynak: her E'yi ayrı bul, yüzeye ulaşıyorsa topla. Opak engel varsa o katkı 0.",
     ],
   },
+  {
+    id: "ozkutle-adim",
+    guides: ["madde-ozkutle"],
+    match: /özkütle|kütle|hacim|mezür|karışım|kılcal|grafik/i,
+    title: "Özkütle soruları",
+    steps: [
+      "Neyin kütlesi, neyin hacmi? Kap varsa sıvı = dolu − boş; mezürde cisim hacmi = son − ilk (tam batma, çözünmeme, emmeme koşuluyla).",
+      "m–V grafiğinde eğim = d; doğru orijinden geçmiyorsa kesişim kap kütlesidir, toplam m/V eğim değildir. Eksenler tersse eğim 1/d.",
+      "Karışım: önce toplam kütle, sonra son hacim. Eşit hacim → (d₁ + d₂)/2; eşit kütle → 2d₁d₂/(d₁ + d₂). Kolay sayı seçebilirsin.",
+      "Benzer cisim k kat büyürse A/V oranı 1/k olur. Islatan sıvı dar boruda daha çok yükselir; ıslatmayan alçalır.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
