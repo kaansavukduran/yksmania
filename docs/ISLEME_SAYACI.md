@@ -11,8 +11,8 @@ Her geliştirme turunda güncellenir. Sayılar yalnız gerçekten yapılmış i�
 | Kayıtlı toplam PDF (kanonik envanter, 17 Kasım taraması) | 8.981 |
 | Kanonik defterde öğretim aktarımı **tam** | 7 |
 | Kanonik defterde **kısmi** | 2 |
-| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 14 |
-| Okunduğu doğrulanan farklı PDF toplamı (7 + 2 + 14) | 23 / 8.981 (%0,26) |
+| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 15 |
+| Okunduğu doğrulanan farklı PDF toplamı (7 + 2 + 15) | 24 / 8.981 (%0,27) |
 
 Arşivdeki PDF'lerin büyük kısmı aynı konunun farklı biçimleridir (TYT konu özeti, “Dersler Cepte” sunumu, etkinlik, okuma metni, deneme). Bu yüzden PDF yüzdesi konu kapsamını ölçmez; konu kapsamı aşağıdaki rehber tablosundadır.
 
@@ -33,6 +33,7 @@ Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen boz
 | 011 TYT Fizik – Mıknatıslar ve Manyetik Alan (kopya kâğıdı) | `miknatislar-ve-manyetik-alan` figürleri (sayısal hesaplanan alan çizgileri + pusulalar, kesilen mıknatıs, 2017 TYT örnek kitapçık gergin ip çözümü, düz telde B ∝ I/r); taktik | Kısmi |
 | 017 TYT Fizik – Ses ve Deprem Dalgaları (kopya kâğıdı) | `ses-deprem-dalgalari` figürleri (boyuna dalgada tanecikler + basınç, tizlik/gürlük/tını, yankı d = vt/2, 2020 TYT Fen 6 tel boyu L → L/2, odak–merkez üssü ve yerel şiddet); taktik | Kısmi |
 | 024 TYT Fizik – Prizmalar ve Renkler (kopya kâğıdı) | `prizmalar-renkler` figürleri (Snell ile hesaplanan prizma ışın yolu ve renk ayrışması, sınır açısı sürgülü tam yansıma, ışık ekleme, 2019 TYT Fen 7 filtre/yüzey zinciri); taktik | Kısmi |
+| 018 TYT Fizik – Işık Bilgisi (kopya kâğıdı) | `isik-bilgisi` figürleri (kaynak ve görünen cisim, küre akısı Φ = 4πI ve 2018 TYT Fen 6, ters kare koni + E–d grafiği, normal açısı sürgüsü); taktik | Kısmi |
 
 PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olarak etiketlenmez.
 
@@ -78,7 +79,7 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | --- | ---: | ---: |
 | TYT Matematik | 40 | 1 |
 | TYT Geometri | 19 | 19 |
-| TYT Fizik | 24 | 21 |
+| TYT Fizik | 24 | 22 |
 | TYT Kimya | 55 | 1 |
 | TYT Biyoloji | 36 | 0 |
 | AYT Matematik | 17 | 0 |
@@ -88,9 +89,9 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | AYT Biyoloji | 75 | 0 |
 | **Toplam** | **371** | **41 (%11,1)** |
 
-Toplam bölüm figürü: 438 (464 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 42 (34 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
+Toplam bölüm figürü: 442 (468 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 42 (34 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
 
-TYT Fizik'te figürü olmayan 3 rehber: fizik bilimine giriş, madde ve özkütle, ışık bilgisi.
+TYT Fizik'te figürü olmayan 2 rehber: fizik bilimine giriş, madde ve özkütle.
 
 ## Tur geçmişi
 
@@ -119,3 +120,4 @@ TYT Fizik'te figürü olmayan 3 rehber: fizik bilimine giriş, madde ve özkütl
 | 19 Kasım (20) | Fizik: mıknatıslar 4 figür (hesaplanan alan çizgileri ve pusulalar, kutup ayrılmaz, gergin ip = itme, düz tel); 1 taktik | 1 | 43 / 371 |
 | 19 Kasım (21) | Fizik: ses ve deprem dalgaları 5 figür; 1 taktik | 1 | 44 / 371 |
 | 19 Kasım (22) | Fizik: prizmalar ve renkler 4 figür (hesaplanan ışın yolları); 1 taktik | 1 | 45 / 371 |
+| 19 Kasım (23) | Fizik: ışık bilgisi 4 figür; 1 taktik | 1 | 46 / 371 |

@@ -51,6 +51,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "miknatislar-ve-manyetik-alan",
   "ses-deprem-dalgalari",
   "prizmalar-renkler",
+  "isik-bilgisi",
   "dna-eslenmesi",
   "hucre-organelleri",
   "atom-modelleri",

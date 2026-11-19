@@ -502,6 +502,18 @@ export const questionTactics: QuestionTactic[] = [
       "Cismin beyaz ışıktaki adını sonuç sanma: sarı ışıkta mavi kart koyu, beyaz kart sarı görünür.",
     ],
   },
+  {
+    id: "aydinlanma",
+    guides: ["isik-bilgisi"],
+    match: /aydınlan|lüks|lx|kandela|cd|lümen|akı|şiddet/i,
+    title: "Aydınlanma soruları (I, Φ, E)",
+    steps: [
+      "Birimleri ayır: I kandela (kaynağa ait), Φ lümen (akı), E lüks (yüzeye ait). Uzaklaşınca I değişmez, E değişir.",
+      "Dik gelişte E = I/d²; eğikte E = (I/r²)·cos θ. θ yüzeyin normaliyle ölçülür; yüzeyle α verilmişse θ = 90° − α. r gerçek (eğik) uzaklıktır.",
+      "Oran kur: aynı I ve açıda E₂/E₁ = (d₁/d₂)². Tam küre, her yöne eşit kaynak: Φ = 4πI (yarıçaptan bağımsız).",
+      "Birden çok kaynak: her E'yi ayrı bul, yüzeye ulaşıyorsa topla. Opak engel varsa o katkı 0.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
