@@ -1188,6 +1188,19 @@ export const questionTactics: QuestionTactic[] = [
       "Mezhep din değildir: Katolik, Ortodoks, Protestan Hristiyanlık içindedir; tek gözlemden ‘bütün inananlar’ genellemesi kurma.",
     ],
   },
+  {
+    id: "din-felsefesi-hareket",
+    guides: ["din-felsefesi"],
+    match: /Tanrı|ontolojik|kozmolojik|teleolojik|teizm|deizm|panteizm|ateizm|agnostisizm|kötülük|inanç/i,
+    title: "Argümanı hareket noktasından, görüşü eksik koşuldan ayır",
+    steps: [
+      "‘Tanrı’ sözcüğünü ört ve ilk öncüle bak: kavram → ontolojik, var olan evren / neden zinciri → kozmolojik, düzen ve amaç → teleolojik (2024 TYT Sosyal 14 mantığı).",
+      "Yalnız ‘bir yaratıcı vardır’ deizmi ayırmaz; müdahale ve vahyin dışlandığı cümleyi ara.",
+      "Panteizm özdeşlik, panenteizm içkinlik + aşkınlık ister; ortak ‘evren’ sözcüğü yetmez.",
+      "‘Yoktur’ varlık hükmüdür (ateizm), ‘bilinemez’ bilgi sınırıdır (agnostisizm); biri ötekine çevrilmez.",
+      "Türü adlandırmak geçerliliği kanıtlamaz; bir gerekçenin çökmesi karşı görüşü de kanıtlamaz.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
