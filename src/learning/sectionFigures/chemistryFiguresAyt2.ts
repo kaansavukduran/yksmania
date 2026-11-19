@@ -119,8 +119,41 @@ const cisTrans: FigureDef = {
   },
 };
 
+
+/* ---------- 4. Eriyik ve sulu NaCl ---------- */
+const meltVsAq: FigureDef = {
+  caption:
+    "İleri ile aynı tuzu iki ortamda elektrolizle. Eriyikte yalnız Na⁺ ve Cl⁻ vardır: katotta sodyum metali, anotta Cl₂. Sulu çözeltide su da elektron alabilir; Na⁺ yerine su indirgenir, katotta H₂ ve OH⁻ oluşur. Derişik NaCl'de anotta yine Cl₂ çıkar. Elektrolizde anot (+), katot (−); olay adları değişmez.",
+  alt: "Elektroliz kabı, solda katot sağda anot ve üstte güç kaynağı. Adımlara göre kapta eriyik ya da sulu NaCl; elektrotların yanında oluşan ürünler ve gaz kabarcıkları görünür.",
+  steps: ["Eriyik NaCl", "Sulu (derişik) NaCl"],
+  draw: (_v, step) => {
+    const els: El[] = [];
+    els.push(poly([v(0, 3), v(0, 0), v(5, 0), v(5, 3)], { tone: "ink", open: true }));
+    els.push(poly([v(0.05, 2.3), v(4.95, 2.3), v(4.95, 0.05), v(0.05, 0.05)], { tone: step ? "b" : "warn", fill: step ? "b" : "warn", bare: true }));
+    els.push(poly([v(1.0, 0.4), v(1.4, 0.4), v(1.4, 3.6), v(1.0, 3.6)], { tone: "muted", fill: "muted" }));
+    els.push(poly([v(3.6, 0.4), v(4.0, 0.4), v(4.0, 3.6), v(3.6, 3.6)], { tone: "muted", fill: "muted" }));
+    els.push(seg(v(1.2, 3.6), v(1.2, 4.4), { tone: "ink" }), seg(v(1.2, 4.4), v(2.2, 4.4), { tone: "ink" }), seg(v(2.8, 4.4), v(3.8, 4.4), { tone: "ink" }), seg(v(3.8, 4.4), v(3.8, 3.6), { tone: "ink" }));
+    els.push(seg(v(2.2, 4.05), v(2.2, 4.75), { tone: "ink", bold: true }), seg(v(2.8, 4.2), v(2.8, 4.6), { tone: "ink", bold: true }));
+    els.push(txt(v(1.2, 0), "katot (−)", "s", { tone: "ink", small: true }), txt(v(3.8, 0), "anot (+)", "s", { tone: "ink", small: true }));
+    // Bubbles at the anode (Cl₂ in both); at the cathode only in water (H₂).
+    for (const [x, y] of [[4.2, 0.9], [4.35, 1.4], [4.2, 1.9]]) els.push(circle(v(x, y), 0.09, { tone: "c" }));
+    if (step) for (const [x, y] of [[0.75, 0.9], [0.6, 1.4], [0.75, 1.9]]) els.push(circle(v(x, y), 0.09, { tone: "ink" }));
+    else els.push(poly([v(1.4, 0.4), v(1.55, 0.4), v(1.55, 1.6), v(1.4, 1.6)], { tone: "muted", fill: "ink" }));
+    els.push(txt(v(-0.2, 1.4), step ? "H₂ + OH⁻" : "Na (s)", "w", { tone: "ink", small: true, bold: true }));
+    els.push(txt(v(5.2, 1.4), "Cl₂", "e", { tone: "c", small: true, bold: true }));
+    els.push(txt(v(2.5, 1.2), step ? "Na⁺ Cl⁻ H₂O" : "Na⁺ Cl⁻", "c", { tone: "ink", small: true }));
+    els.push(txt(v(-2.6, 5.2), " ", "c"), txt(v(6.6, -0.9), " ", "c"));
+    const rows: [string, string][] = [
+      ["Eriyik (yaklaşık 801 °C üstü): katot Na⁺ + e⁻ → Na, anot 2Cl⁻ → Cl₂ + 2e⁻. Ürünler: sodyum metali ve klor gazı.", "Eriyikte su yoktur; yarışan tek katyon Na⁺, tek anyon Cl⁻."],
+      ["Sulu: katot 2H₂O + 2e⁻ → H₂ + 2OH⁻ (Na⁺ indirgenmez), anot 2Cl⁻ → Cl₂ + 2e⁻. Katot çevresi bazikleşir.", "Sulu çözeltide aktif metal katyonu (Na⁺, K⁺, Mg²⁺) yerine su indirgenir; ürün koşula bağlıdır."],
+    ];
+    return { els, readout: rows[step] };
+  },
+};
+
 export const chemistryFiguresAyt2: Record<string, Record<string, FigureDef>> = {
   "faraday-yasalari": { "Elektron molünden ürün molüne geç": faraday },
   "molekul-geometrisi": { "Dört bölge: düzgün dört yüzlü": tetra },
   "ayt-alkenler": { "Cis–trans için önce iki karbonu incele": cisTrans },
+  elektroliz: { "Eriyik NaCl ile sulu NaCl aynı değildir": meltVsAq },
 };

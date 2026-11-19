@@ -81,6 +81,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "elektrokimyasal-piller",
   "ayt-modern-atom-elektron-dizilimi",
   "faraday-yasalari",
+  "elektroliz",
   "molekul-geometrisi",
   "ayt-alkenler",
   "fotosentez-hiz-faktorleri",

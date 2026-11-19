@@ -860,6 +860,32 @@ export const questionTactics: QuestionTactic[] = [
       "Sınırı denetle: eşik frekansın altında elektron yok; mıknatıs dururken akım yok; manyetik kuvvet süratı değiştirmez.",
     ],
   },
+  {
+    id: "faraday-zincir",
+    guides: ["faraday-yasalari"],
+    match: /akım|amper|coulomb|faraday|yük|elektron|kütle|süre|dakika|saniye|verim/i,
+    title: "Yük → elektron molü → ürün molü → kütle zinciri",
+    steps: [
+      "Süreyi saniyeye çevir, sonra Q = I·t (A·s = C). Q'yu doğrudan metal molü sayma.",
+      "n(e⁻) = Q ÷ F, F ≈ 96 500 C/mol e⁻ (C ÷ C/mol = mol).",
+      "Yarı tepkimeden z'yi yaz: Cu²⁺ için 2, Al³⁺ için 3, Cl₂ başına 2 elektron. n(ürün) = n(e⁻) ÷ z.",
+      "m = n · M; tek bağıntı m = M·I·t ÷ (z·F). Aynı akımda süre iki katsa ideal ürün de iki kat.",
+      "Akım verimi %η ise gerçek ürün idealin η/100 katıdır (%80 → 0,80, 80 değil).",
+    ],
+  },
+  {
+    id: "elektroliz-tani",
+    guides: ["elektroliz"],
+    match: /elektroliz|anot|katot|eriyik|sulu|kaplama|elektrot|NaCl|MgCl|indirgen|yükseltgen/i,
+    title: "Hücre tipini, ortamı ve elektrot olayını sırayla tanı",
+    steps: [
+      "Dış kaynak varsa elektroliz: enerji dışarıdan verilir, kendiliğinden elektrik üretilmez.",
+      "Anotta yükseltgenme, katotta indirgenme her zaman; elektrolizde anot (+), katot (−). İşarete bakıp olay adını tersleme.",
+      "Eriyik tuz: metal katyonu katotta metal olur, halojenür anotta X₂ olur (eriyik NaCl → Na ve Cl₂).",
+      "Sulu çözeltide su da yarışır: aktif metal katyonu (Na⁺, K⁺, Mg²⁺) yerine katotta H₂ çıkabilir.",
+      "Metal kaplamada kaplanacak parça katot olur; kaplama iyonu orada elektron alıp metal olarak birikir.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
