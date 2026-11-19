@@ -663,25 +663,51 @@ const piramitler: Record<string, FigureDef> = {
   },
   "Kesik piramidi büyükten küçüğü çıkararak anla": {
     caption:
-      "Alt kare 6, üst kare 3, kesik yükseklik 4. Kesik cismi büyük piramide tamamla (kesikli): büyük yükseklik 8, hacimler 96 − 12 = 84.",
-    alt: "Kare tabanlı kesik piramit; üstünde kesikli çizgilerle kaldırılmış küçük piramit gösterilmiş.",
-    draw: () => {
+      "Adım 1: alt kare 6, üst kare 3, kesik yükseklik 4; büyük piramide tamamla, 96 − 12 = 84. Adım 2: yükseklik verilmez, yan ayrıt verilirse önce dik üçgenle h bulunur (2013 LYS-1 Geometri 22 mantığı).",
+    alt: "Kare tabanlı kesik piramit. Birinci adımda üstüne kesikli çizgilerle küçük piramit tamamlanıyor; ikinci adımda üst köşeden tabana inen dik yükseklik, yan ayrıt ve tabandaki yatay kayma bir dik üçgen oluşturuyor.",
+    steps: ["Büyük − küçük", "Yan ayrıttan dik yükseklik"],
+    draw: (_, step) => {
       const big: [number, number][] = [[-3, -3], [3, -3], [3, 3], [-3, 3]];
-      const T: P3 = [0, 8, 0];
-      const top: P3[] = big.map(([x, z]) => [x / 2, 4, z / 2] as P3);
+      if (step === 0) {
+        const T: P3 = [0, 8, 0];
+        const top: P3[] = big.map(([x, z]) => [x / 2, 4, z / 2] as P3);
+        const bottom: P3[] = big.map(([x, z]) => [x, 0, z] as P3);
+        const frustum = solid([...bottom, ...top], [[0, 1, 2, 3], [4, 5, 6, 7], [0, 1, 5, 4], [1, 2, 6, 5], [2, 3, 7, 6], [3, 0, 4, 7]], {
+          fills: { 1: "b" },
+        });
+        return {
+          els: [
+            ...top.map((p) => seg(proj(p), proj(T), { dash: true, tone: "muted", thin: true })),
+            ...frustum,
+            p3(T, "T", "n", "a"),
+            txt(proj([3.4, 2, -3]), "4", "e"),
+            txt(proj([3.4, 6, -3]), "4", "e", { tone: "muted" }),
+          ],
+          readout: ["Büyük: 36·8/3 = 96 · Küçük: 9·4/3 = 12", "Kesik: 96 − 12 = 84"],
+        };
+      }
+      // Bottom square 6, top square 4, slant edge √5: drawn with h = √3 at 1.6× vertical scale.
+      const hy = Math.sqrt(3) * 1.6;
       const bottom: P3[] = big.map(([x, z]) => [x, 0, z] as P3);
+      const top: P3[] = big.map(([x, z]) => [(x * 2) / 3, hy, (z * 2) / 3] as P3);
       const frustum = solid([...bottom, ...top], [[0, 1, 2, 3], [4, 5, 6, 7], [0, 1, 5, 4], [1, 2, 6, 5], [2, 3, 7, 6], [3, 0, 4, 7]], {
         fills: { 1: "b" },
       });
+      const U = top[1];
+      const F: P3 = [U[0], 0, U[2]];
+      const B = bottom[1];
       return {
         els: [
-          ...top.map((p) => seg(proj(p), proj(T), { dash: true, tone: "muted", thin: true })),
           ...frustum,
-          p3(T, "T", "n", "a"),
-          txt(proj([3.4, 2, -3]), "4", "e"),
-          txt(proj([3.4, 6, -3]), "4", "e", { tone: "muted" }),
+          poly([proj(U), proj(F), proj(B)], { fill: "a", tone: "a", thin: true }),
+          seg(proj(U), proj(F), { tone: "a", dash: true }),
+          seg(proj(U), proj(B), { tone: "c", bold: true }),
+          txt(mid(proj(U), proj(F)), "h", "w", { tone: "a", bold: true }),
+          txt(mid(proj(U), mid(proj(U), proj(B))), "√5", "e", { tone: "c", bold: true }),
+          txt(proj([3.2, 0, -3.4]), "6", "s"),
+          txt(proj([-1, hy, -2]), "4", "s", { small: true }),
         ],
-        readout: ["Büyük: 36·8/3 = 96 · Küçük: 9·4/3 = 12", "Kesik: 96 − 12 = 84"],
+        readout: ["Kayma: (6 − 4)/2 = 1 iki eksende → FB² = 1 + 1 = 2", "h² = 5 − 2 = 3 → h = √3 · V = (36·3√3 − 16·2√3)/3 = 76√3/3"],
       };
     },
   },

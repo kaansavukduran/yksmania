@@ -1120,6 +1120,19 @@ export const questionTactics: QuestionTactic[] = [
       "ADH toplama kanalında su geçirgenliğini artırır: su geri emilimi artar, idrar hacmi azalır, derişimi artar.",
     ],
   },
+  {
+    id: "piramit-uc-uzunluk",
+    guides: ["tyt-geo-piramitler-032"],
+    match: /piramit|yan yüz|yan ayrıt|kesik|paralel kesit|tepe/i,
+    title: "Piramitte üç uzunluğu ayır, sonra oranı seç",
+    steps: [
+      "Hacimde yalnız tabana dik h kullanılır: V = taban alanı · h / 3. Yan yüz yüksekliği ℓ ya da yan ayrıt e hacme girmez.",
+      "Düzgün tabanda ℓ, merkezden kenar ortasına (iç yarıçap) giden dik üçgende; e, merkezden köşeye giden dik üçgende bulunur. Kare kenarı a ise ℓ² = h² + (a/2)², e² = h² + a²/2.",
+      "Yanal alan çevre · ℓ / 2; toplam alan için tabanı ekle. Taban alanını çevreyle karıştırma.",
+      "Paralel kesitte k tepeden ölçülür: uzunluk k, alan k², tepedeki küçük piramidin hacmi k³. Alt parça = tam − küçük.",
+      "Kesik piramitte h verilmeyip yan ayrıt verilirse üst köşeyi tabana indir: yatay kayma iki eksende (kenar farkı)/2, sonra h² = e² − kayma² (2013 LYS-1 Geometri 22 mantığı).",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
