@@ -1,6 +1,6 @@
 # Bölüm figürleri: geometri anlatımının her bölümüne şekil
 
-18 Kasım 2026, Türkiye saati. **Geliştirme dalı; henüz main'e alınmadı, yayımlanmadı.** Dal: `claude/laughing-ritchie-l0rre4`, taban `520662c` (0.24.0 adayı).
+19 Kasım 2026, Türkiye saati. Kullanıcı onayıyla `claude/laughing-ritchie-l0rre4` dalı main'e ileri sarıldı (`520662c..c2a03da`). Yayın durumu için CI ve Pages koşularına bakın; Cloudflare Pages yapılandırması depoda yoktur (pano üzerinden bağlanır).
 
 ## Çözülen sorun
 
@@ -86,6 +86,6 @@ Görsel incelemede bulunup düzeltilen gerçek hatalar: açık eğri ve kırık 
 ## Açık kalanlar
 
 - Kalan TYT Fizik rehberleri (hareket, kuvvet, enerji, elektrik, dalgalar, basınç…) ve diğer dersler için bölüm figürleri. Ölçüm: geometri dışındaki ~7.500 rehber bölümünün hiçbirinde bölüm figürü yoktu.
-- Bu dalın tam uzak CI/E2E, Pages ve Release koşuları; dal main'e alınmadan önce yapılmalı.
+- Cloudflare Pages: depoda yapılandırma yok; panoda üretim dalı `main`, derleme `npm run build`, çıktı `dist` olmalı. Bu ortamdan doğrulanamaz.
 - Vercel: önceki kayıtta canlı adres HTTP 402 veriyordu. Bu bir kod değil Vercel hesabı/proje durumu sorunudur; bu çalışma ortamından iki canlı adrese ağ erişimi yoktu, yeniden doğrulanamadı.
 - PDF kanonik defteri bu turda değişmedi (8.981: 7 tam / 2 kısmi / 8.972 belirsiz); figürler kaynak kapanışı sayılmaz.
