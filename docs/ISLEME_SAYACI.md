@@ -89,14 +89,14 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | TYT Fizik | 24 | 23 |
 | TYT Kimya | 55 | 3 |
 | TYT Biyoloji | 36 | 4 |
-| AYT Matematik | 17 | 4 |
+| AYT Matematik | 17 | 9 |
 | AYT Geometri | 4 | 4 |
 | AYT Fizik | 46 | 0 |
 | AYT Kimya | 55 | 0 |
 | AYT Biyoloji | 75 | 0 |
 | **Toplam** | **371** | **41 (%11,1)** |
 
-Toplam bölüm figürü: 476 (502 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 42 (34 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
+Toplam bölüm figürü: 481 (507 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 42 (34 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
 
 TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 
@@ -136,3 +136,4 @@ TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 | 19 Kasım (29) | Kimya: sınırlayıcı madde 3 figür (tanecik animasyonu); 1 taktik | 1 | 52 / 371 |
 | 19 Kasım (30) | Kimya: yüzde verim 4 figür; 1 taktik | 1 | 53 / 371 |
 | 19 Kasım (31) | AYT Matematik: limit (sol/sağ, delik), türev (kesenden teğete), belirli integral (Riemann, hız–yol), logaritma (y = x aynası) 6 grafik; 2 taktik | 0 | 57 / 371 |
+| 19 Kasım (32) | AYT Matematik: trigonometrik denklem iki aile, dikey/yatay doğru testi, Gauss eşleme, kalan teoremi, birim çemberde dönme (5 figür) | 0 | 62 / 371 |
