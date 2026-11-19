@@ -4856,11 +4856,3 @@ progress::-moz-progress-bar {
 .cell-label.is-on .cell-label-dot { fill: var(--accent); }
 .cell-label.is-on .cell-label-text { fill: var(--accent); font-weight: 800; }
 
-/* Shown for a moment while a route's code chunk loads. */
-.page-loading {
-  min-height: 40vh;
-  display: grid;
-  place-items: center;
-  color: var(--muted);
-  font-size: 0.95rem;
-}

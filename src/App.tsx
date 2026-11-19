@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { APP_VERSION } from "./version";
 import {
   BookOpen,
@@ -381,13 +381,6 @@ export default function App() {
           tabIndex={-1}
           className={`main-content ${["/study", "/lesson", "/practice"].includes(path) ? "study-main" : ""}`}
         >
-          <Suspense
-            fallback={
-              <div className="page-loading" role="status" aria-live="polite">
-                {t("loading")}
-              </div>
-            }
-          >
           {path === "/today" ? (
             <Today
               start={(l, r) => {
@@ -514,7 +507,6 @@ export default function App() {
               navigate={navigate}
             />
           )}
-          </Suspense>
         </main>
         <footer className="app-footer">{t("footer")}</footer>
       </div>
