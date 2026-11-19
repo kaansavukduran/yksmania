@@ -240,8 +240,8 @@ const caption = (who: string) =>
 /* ---------------- Üç baskı hattı: zaman şeridi ---------------- */
 const rivals: { year: number; name: string; side: string; rival: string; tone: Tone; result: string; at: "n" | "nw" | "ne"; h: number }[] = [
   { year: 1071, name: "Malazgirt", side: "Büyük Selçuklu", rival: "Bizans", tone: "b", result: "Anadolu'ya göç ve yerleşim hızlanır." , at: "n", h: 1 },
-  { year: 1176, name: "Miryokefalon", side: "Türkiye Selçuklu", rival: "Bizans", tone: "b", result: "Türk yerleşiminin kalıcılığı güçlenir." , at: "n", h: 2.6 },
-  { year: 1230, name: "Yassıçemen", side: "Türkiye Selçuklu", rival: "Harzemşahlar", tone: "c", result: "Harzemşah baskısı kırılır; Moğollarla doğrudan komşuluk başlar." , at: "nw", h: 4.2 },
+  { year: 1176, name: "Miryokefalon", side: "Türkiye Selçuklu", rival: "Bizans", tone: "b", result: "Türk yerleşiminin kalıcılığı güçlenir." , at: "n", h: 2.8 },
+  { year: 1230, name: "Yassıçemen", side: "Türkiye Selçuklu", rival: "Harzemşahlar", tone: "c", result: "Harzemşah baskısı kırılır; Moğollarla doğrudan komşuluk başlar." , at: "nw", h: 4.6 },
   { year: 1243, name: "Kösedağ", side: "Türkiye Selçuklu", rival: "Moğollar", tone: "warn", result: "Moğol üstünlüğü; merkezî güç sarsılır." , at: "ne", h: 1 },
 ];
 const X = (year: number) => ((year - 1060) / (1250 - 1060)) * 12;
@@ -261,7 +261,7 @@ const timeline: FigureDef = {
       const h = r.h;
       els.push(seg(v(x, 0), v(x, h), { tone: on ? r.tone : "muted", thin: !on, dash: !on }));
       els.push(pt(v(x, 0), undefined, "n", on ? r.tone : "muted", !on));
-      if (on) els.push(txt(v(x, h + 0.75), `karşı güç: ${r.rival}`, r.at, { tone: r.tone, small: true }));
+      if (on) els.push(txt(v(x, h + 0.95), `karşı güç: ${r.rival}`, r.at, { tone: r.tone, small: true }));
       els.push(txt(v(x, h + 0.15), on ? `${r.year} ${r.name}` : String(r.year), r.at, { tone: on ? r.tone : "muted", small: true, bold: i === step }));
     });
     const r = rivals[step];

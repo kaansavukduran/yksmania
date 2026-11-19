@@ -131,6 +131,8 @@ export type El =
       tone?: Tone;
       small?: boolean;
       bold?: boolean;
+      /** Secondary label (axis numbers): hidden when it would collide. */
+      soft?: boolean;
     };
 
 export const seg = (a: V, b: V, s: Style = {}): El => ({ k: "seg", a, b, ...s });
@@ -223,7 +225,7 @@ export const txt = (
   p: V,
   s: string,
   at: Dir = "c",
-  opts: { tone?: Tone; small?: boolean; bold?: boolean } = {},
+  opts: { tone?: Tone; small?: boolean; bold?: boolean; soft?: boolean } = {},
 ): El => ({ k: "text", p, s, at, ...opts });
 
 export interface FigureFrame {
@@ -330,21 +332,55 @@ function dimLabelPoint(el: Extract<El, { k: "dim" }>, scale: number): V {
 function layout(els: El[]) {
   const base = els.flatMap(extendPoints).filter((p) => p.every(Number.isFinite));
   const dims = els.filter((el): el is Extract<El, { k: "dim" }> => el.k === "dim");
-  // Side labels extend beyond their anchor point; estimate their pixel
-  // width (about 0.55em per glyph at 21px) and shrink the scale until both
-  // margins can hold them.
+  // Labels extend beyond their anchor point. Estimate each label's pixel box
+  // around its anchor (about 0.55em per glyph; vertical extent measured with
+  // the larger mobile font) so the scale and margins can hold all of them.
   const sideText = els.flatMap((el) => {
-    if (el.k !== "pt" && el.k !== "text") return [];
-    const label = el.k === "pt" ? el.label : el.s;
-    const at = el.at ?? (el.k === "pt" ? "ne" : "c");
-    if (!label) return [];
+    let label: string | undefined;
+    let dx = 0;
+    let dy = 0;
+    let anchor: "start" | "middle" | "end" = "middle";
+    let shift = 0.35;
+    let fs = 25;
+    let anchorPoint: V;
+    if (el.k === "pt" || el.k === "text") {
+      label = el.k === "pt" ? el.label : el.s;
+      const at = el.at ?? (el.k === "pt" ? "ne" : "c");
+      const off = el.k === "pt" ? 15 : 12;
+      dx = DIRS[at][0] * off;
+      dy = DIRS[at][1] * off;
+      anchor = anchorFor(at);
+      shift = baselineShift(at);
+      if (el.k === "text" && el.small) fs = 21;
+      anchorPoint = el.p;
+    } else if (el.k === "angle") {
+      label = el.label;
+      if (!label) return [];
+      const a1 = Math.atan2(el.p[1] - el.o[1], el.p[0] - el.o[0]);
+      const a2 = Math.atan2(el.q[1] - el.o[1], el.q[0] - el.o[0]);
+      let sweep = a2 - a1;
+      while (sweep <= -Math.PI) sweep += 2 * Math.PI;
+      while (sweep > Math.PI) sweep -= 2 * Math.PI;
+      if (el.reflex) sweep = sweep > 0 ? sweep - 2 * Math.PI : sweep + 2 * Math.PI;
+      const midA = a1 + sweep / 2;
+      const lr = (el.r ?? 28) + 15 + (label.length > 4 ? 9 : 0);
+      dx = lr * Math.cos(midA);
+      dy = -lr * Math.sin(midA);
+      anchorPoint = el.o;
+    } else return [];
+    if (!label || !label.trim()) return [];
     const px = label.length * 11.6 + 16;
-    const anchor = anchorFor(at);
+    const lo = anchor === "end" ? -px : anchor === "middle" ? -px / 2 : 0;
+    const top = dy + shift * fs - 0.8 * fs - 3;
+    const bottom = dy + shift * fs + 0.25 * fs + 3;
     return [
       {
-        x: el.p[0],
-        left: anchor === "end" ? px : anchor === "middle" ? px / 2 : 0,
-        right: anchor === "start" ? px : anchor === "middle" ? px / 2 : 0,
+        x: anchorPoint[0],
+        y: anchorPoint[1],
+        left: -(dx + lo),
+        right: dx + lo + px,
+        up: -top,
+        down: bottom,
       },
     ];
   });
@@ -388,10 +424,12 @@ function layout(els: El[]) {
       offX = leftNeed;
     }
   }
-  const height = Math.round((maxY - minY) * s + 2 * PAD);
+  const topNeed = Math.max(PAD, ...sideText.map((t) => t.up + 4 - (maxY - t.y) * s));
+  const bottomNeed = Math.max(PAD, ...sideText.map((t) => t.down + 4 - (t.y - minY) * s));
+  const height = Math.round((maxY - minY) * s + topNeed + bottomNeed);
   const P = (p: V): [number, number] => [
     offX + (p[0] - minX) * s,
-    PAD + (maxY - p[1]) * s,
+    topNeed + (maxY - p[1]) * s,
   ];
   return { P, height, s };
 }
@@ -435,10 +473,71 @@ function arcPath(
   return close ? `M ${r2(c[0])} ${r2(c[1])} L ${arc.slice(2)} Z` : arc;
 }
 
+/**
+ * Approximate pixel boxes of every label, used to hide secondary (soft)
+ * labels such as axis numbers when they would collide with a content label
+ * or with an earlier secondary label.
+ */
+function hiddenSoftLabels(els: El[], P: (p: V) => [number, number], scale: number) {
+  type Box = { i: number; soft: boolean; x0: number; x1: number; y0: number; y1: number };
+  const boxes: Box[] = [];
+  const add = (i: number, soft: boolean, x: number, y: number, label: string, anchor: string, shift: number, fs: number) => {
+    // Generous boxes (glyph advance, ascent and descent plus the label's
+    // background stroke) so near misses count as collisions.
+    const w = label.length * 0.6 * fs + 4;
+    const x0 = anchor === "end" ? x - w : anchor === "middle" ? x - w / 2 : x;
+    const base = y + shift * fs;
+    boxes.push({ i, soft, x0, x1: x0 + w, y0: base - 0.95 * fs, y1: base + 0.3 * fs });
+  };
+  els.forEach((el, i) => {
+    if (el.k === "text" && el.s.trim()) {
+      const [x, y] = P(el.p);
+      const at = el.at ?? "c";
+      const d = DIRS[at];
+      add(i, !!el.soft, x + d[0] * 12, y + d[1] * 12, el.s, anchorFor(at), baselineShift(at), el.small ? 17 : 21);
+    } else if (el.k === "pt" && el.label) {
+      const [x, y] = P(el.p);
+      const at = el.at ?? "ne";
+      const d = DIRS[at];
+      add(i, false, x + d[0] * 15, y + d[1] * 15, el.label, anchorFor(at), baselineShift(at), 21);
+    } else if (el.k === "dim") {
+      const [x, y] = P(dimLabelPoint(el, scale));
+      add(i, false, x, y, el.label, "middle", 0.35, 21);
+    } else if (el.k === "angle" && el.label) {
+      // Same placement as the renderer: along the bisector, outside the arc.
+      const [ox, oy] = P(el.o);
+      const pa = P(el.p);
+      const pq = P(el.q);
+      const a1 = Math.atan2(-(pa[1] - oy), pa[0] - ox);
+      const a2 = Math.atan2(-(pq[1] - oy), pq[0] - ox);
+      let sweep = a2 - a1;
+      while (sweep <= -Math.PI) sweep += 2 * Math.PI;
+      while (sweep > Math.PI) sweep -= 2 * Math.PI;
+      if (el.reflex) sweep = sweep > 0 ? sweep - 2 * Math.PI : sweep + 2 * Math.PI;
+      const midA = a1 + sweep / 2;
+      const lr = (el.r ?? 28) + 15 + (el.label.length > 4 ? 9 : 0);
+      add(i, false, ox + lr * Math.cos(midA), oy - lr * Math.sin(midA), el.label, "middle", 0.35, 21);
+    }
+  });
+  const hidden = new Set<number>();
+  const hit = (a: Box, b: Box) =>
+    Math.min(a.x1, b.x1) - Math.max(a.x0, b.x0) > 0 && Math.min(a.y1, b.y1) - Math.max(a.y0, b.y0) > 0;
+  const firm = boxes.filter((b) => !b.soft);
+  const kept: Box[] = [];
+  for (const b of boxes) {
+    if (!b.soft) continue;
+    if (firm.some((f) => hit(b, f)) || kept.some((k) => hit(b, k))) hidden.add(b.i);
+    else kept.push(b);
+  }
+  return hidden;
+}
+
 function Render({ els, title, desc }: { els: El[]; title: string; desc: string }) {
   const tid = useId();
   const { P, height, s: layoutScale } = layout(els);
+  const hidden = hiddenSoftLabels(els, P, layoutScale);
   const nodes = els.map((el, i) => {
+    if (hidden.has(i)) return null;
     const cls = (tone: Tone | undefined, extra = "") =>
       `sf-${tone ?? "ink"}${extra}`;
     switch (el.k) {

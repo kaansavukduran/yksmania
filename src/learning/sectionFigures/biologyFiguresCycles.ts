@@ -70,7 +70,7 @@ const PLABEL: [V, "e" | "w" | "n" | "s"][] = [
   [v(-3.1, -1.3), "w"],
   [v(0.3, -3.2), "s"],
   [v(1.3, -1.4), "e"],
-  [v(-2.0, -0.4), "s"],
+  [v(-1.9, 0.3), "n"],
   [v(1.6, 1.2), "e"],
 ];
 const PROC: { name: string; from: string; to: string; bend?: number; note: string; who: string }[] = [

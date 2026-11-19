@@ -33,7 +33,7 @@ const sinFamilies: FigureDef = {
     els.push(seg(v(C[0] - 2, R / 2), v(C[0] + 2, R / 2), { tone: "warn", dash: true }), txt(v(C[0] + 2.05, R / 2), "y = 1/2", "e", { tone: "warn", small: true }));
     const P1 = v(C[0] + R * Math.cos(rad(30)), R * Math.sin(rad(30)));
     const P2 = v(C[0] + R * Math.cos(rad(150)), R * Math.sin(rad(150)));
-    els.push(seg(C, P1, { tone: "b", bold: true }), ball(P1, 0.1, "b"), ang(C, v(C[0] + 1, 0), P1, "30°", { tone: "b", r: 0.55 }));
+    els.push(seg(C, P1, { tone: "b", bold: true }), ball(P1, 0.1, "b"), ang(C, v(C[0] + 1, 0), P1, "30°", { tone: "b", r: 34 }));
     if (step >= 1) els.push(seg(C, P2, { tone: "c", bold: true }), ball(P2, 0.1, "c"), txt(v(P2[0] - 0.1, P2[1] + 0.15), "150°", "nw", { tone: "c", small: true, bold: true }));
     if (step >= 2) {
       const X = (deg: number) => 0.8 + deg / 120;
@@ -68,11 +68,11 @@ const lineTest: FigureDef = {
   draw: (c) => {
     const els: El[] = [...axes(-2.8, 2.8, -2.6, 3.4)];
     els.push(poly(curve((x) => x * x - 2, -2.3, 2.3), { tone: "b", open: true, bold: true, smooth: true }));
-    els.push(seg(v(-2.6, c), v(2.6, c), { tone: "warn", dash: true }), txt(v(2.65, c), `y = ${fmt(c, 2)}`, "e", { tone: "warn", small: true }));
+    els.push(seg(v(-2.6, c), v(2.6, c), { tone: "warn", dash: true }), txt(v(-2.65, c), `y = ${fmt(c, 2)}`, "w", { tone: "warn", small: true }));
     const hits: V[] = c > -2 ? [v(-Math.sqrt(c + 2), c), v(Math.sqrt(c + 2), c)] : c === -2 ? [v(0, -2)] : [];
     for (const h of hits) els.push(ball(h, 0.1, "warn"));
-    els.push(seg(v(1.2, -2.5), v(1.2, 3.2), { tone: "c", dash: true, thin: true }), ball(v(1.2, 1.2 * 1.2 - 2), 0.09, "c"), txt(v(1.25, 3.2), "dikey: 1 nokta", "e", { tone: "c", small: true }));
-    els.push(txt(v(-3.2, 3.8), " ", "c"), txt(v(4.2, -2.9), " ", "c"));
+    els.push(seg(v(1.2, -2.6), v(1.2, 3.2), { tone: "c", dash: true, thin: true }), ball(v(1.2, 1.2 * 1.2 - 2), 0.09, "c"), txt(v(1.2, -2.6), "dikey: 1 nokta", "s", { tone: "c", small: true }));
+    els.push(txt(v(-3.2, 3.8), " ", "c"), txt(v(4.2, -3.4), " ", "c"));
     return {
       els,
       readout: [
@@ -121,8 +121,8 @@ const remainder: FigureDef = {
     const els: El[] = [...axes(-2.4, 2.6, -3.4, 5.4)];
     els.push(poly(curve(P, -2.05, 2.05), { tone: "b", open: true, bold: true, smooth: true }));
     const y = P(a);
-    els.push(seg(v(a, 0), v(a, y), { tone: "warn", dash: true }), ball(v(a, y), 0.1, "warn"), txt(v(a + 0.12, y), `P(${fmt(a, 2)}) = ${fmt(y, 3)}`, "e", { tone: "warn", small: true, bold: true }));
-    for (const t of [-2, -1, 1, 2]) els.push(seg(v(t, -0.08), v(t, 0.08), { tone: "ink" }), txt(v(t, -0.2), String(t), "s", { tone: "ink", small: true }));
+    els.push(seg(v(a, 0), v(a, y), { tone: "warn", dash: true }), ball(v(a, y), 0.1, "warn"), txt(v(a, y), `P(${fmt(a, 2)}) = ${fmt(y, 3)}`, a > 0 ? (y >= 0 ? "nw" : "sw") : y >= 0 ? "ne" : "se", { tone: "warn", small: true, bold: true }));
+    for (const t of [-2, -1, 1, 2]) els.push(seg(v(t, -0.08), v(t, 0.08), { tone: "ink" }), txt(v(t, -0.2), String(t), "s", { tone: "ink", small: true, soft: true }));
     els.push(txt(v(-2.8, 5.8), " ", "c"), txt(v(4.4, -3.7), " ", "c"));
     return {
       els,
@@ -147,8 +147,8 @@ const rotation: FigureDef = {
     const A = v(R * Math.cos(rad(a)), R * Math.sin(rad(a)));
     const B = v(R * Math.cos(rad(a + b)), R * Math.sin(rad(a + b)));
     els.push(seg(v(0, 0), A, { tone: "b", bold: true }), ball(A, 0.1, "b"), seg(v(0, 0), B, { tone: "warn", bold: true }), ball(B, 0.1, "warn"));
-    if (b > 0) els.push(ang(v(0, 0), A, B, "β", { tone: "warn", r: 0.8 }));
-    els.push(ang(v(0, 0), v(1, 0), A, "α", { tone: "b", r: 0.5 }));
+    if (b > 0) els.push(ang(v(0, 0), A, B, "β", { tone: "warn", r: 62 }));
+    els.push(ang(v(0, 0), v(1, 0), A, "α", { tone: "b", r: 34 }));
     els.push(seg(B, v(B[0], 0), { tone: "warn", dash: true, thin: true }), seg(B, v(0, B[1]), { tone: "warn", dash: true, thin: true }));
     els.push(txt(v(-3, 3), " ", "c"), txt(v(3.2, -2.9), " ", "c"));
     const s = Math.sin(rad(a + b));

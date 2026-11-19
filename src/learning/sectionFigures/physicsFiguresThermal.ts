@@ -127,7 +127,7 @@ const isi: Record<string, FigureDef> = {
         txt(v(4, y(100) + 0.3), "K", "n", { small: true, bold: true }),
       ];
       for (const c of [0, 50, 100]) {
-        els.push(seg(v(0, y(c)), v(4, y(c)), { dash: true, thin: true, tone: "muted" }), txt(v(-0.1, y(c)), String(c), "w", { small: true, tone: "muted" }), txt(v(4.1, y(c)), String(c + 273), "e", { small: true, tone: "muted" }));
+        els.push(seg(v(0, y(c)), v(4, y(c)), { dash: true, thin: true, tone: "muted" }), txt(v(-0.1, y(c)), String(c), "w", { small: true, tone: "muted", soft: true }), txt(v(4.1, y(c)), String(c + 273), "e", { small: true, tone: "muted", soft: true }));
       }
       els.push(pt(v(0, y(t)), `${t} °C`, "nw", "a"), pt(v(4, y(t)), `${t + 273} K`, "ne", "a"), seg(v(0, y(t)), v(4, y(t)), { tone: "a" }));
       return { els, readout: [`T = ${t} + 273 = ${t + 273} K`, "ΔT: 1 °C'lik fark = 1 K'lik fark"] };
@@ -161,10 +161,10 @@ const isi: Record<string, FigureDef> = {
         els: [
           poly([v(-0.25, 0), v(0.25, 0), v(0.25, y(85)), v(-0.25, y(85))], { tone: "ink" }),
           circle(v(0, -0.35), 0.4, { tone: "ink", fill: "warn" }),
-          ...[0, 20, 40, 60, 80].map((c) => txt(v(-0.4, y(c)), String(c), "w", { small: true, tone: "muted" })),
-          pt(v(0.25, y(20)), "ilk 20 °C", "e", "b"),
+          ...[0, 20, 40, 60, 80].map((c) => txt(v(-0.4, y(c)), String(c), "w", { small: true, tone: "muted", soft: true })),
+          pt(v(0.25, y(20)), "ilk 20 °C", T >= 20 ? "se" : "ne", "b"),
           ...(T !== 20 ? [vec(v(-1.5, y(20)), v(-1.5, y(T)), { tone: Q > 0 ? "warn" : "b", bold: true })] : []),
-          pt(v(0.25, y(T)), `son ${T} °C`, "e", "a"),
+          pt(v(0.25, y(T)), `son ${T} °C`, T >= 20 ? "ne" : "se", "a"),
         ],
         readout: [`Q = 0,5 · 4200 · (${T} − 20) = ${fmt(Q)} J`, Q > 0 ? "Pozitif: su enerji aldı" : Q < 0 ? "Negatif: su enerji verdi" : "ΔT = 0: aktarım yok"],
       };
@@ -205,7 +205,7 @@ const isi: Record<string, FigureDef> = {
       return {
         els: [
           seg(v(0, 0), v(10, 0), { tone: "ink" }),
-          ...[20, 30, 40, 50, 60, 70, 80].map((T) => txt(v(x(T), -0.2), String(T), "s", { small: true, tone: "muted" })),
+          ...[20, 30, 40, 50, 60, 70, 80].map((T) => txt(v(x(T), -0.2), String(T), "s", { small: true, tone: "muted", soft: true })),
           pt(v(0, 0), "1 kg", "n", "b"),
           pt(v(10, 0), `${fmt(m)} kg`, "n", "warn"),
           pt(v(x(Td), 0), `Td = ${fmt(Td)} °C`, "n", "c"),
@@ -500,7 +500,7 @@ const hal: Record<string, FigureDef> = {
         els: [
           ...axes(v(0, 0), xs[5] * sx, 140 * sy, "Q (kJ)", "T (°C)"),
           curve(pts),
-          ...[0, 100].map((c) => txt(v(0, (c + 20) * sy), String(c), "w", { small: true, tone: "muted" })),
+          ...[0, 100].map((c) => txt(v(0, (c + 20) * sy), String(c), "w", { small: true, tone: "muted", soft: true })),
           txt(v(0, 0), "−20", "w", { small: true, tone: "muted" }),
           ...names.map((n, i) => txt(v(((xs[i] + xs[i + 1]) / 2) * sx, ((T[i] + T[i + 1]) / 2 + 20) * sy), n, i === 3 ? "s" : i === 1 ? "n" : "nw", { small: true, tone: i === 1 || i === 3 ? "a" : "muted" })),
         ],

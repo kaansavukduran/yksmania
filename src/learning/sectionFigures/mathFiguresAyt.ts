@@ -10,8 +10,8 @@ const fmt = (x: number, d = 3) => x.toLocaleString("tr-TR", { maximumFractionDig
 const S = 1;
 function axes(x0: number, x1: number, y0: number, y1: number, ticksX: number[] = [], ticksY: number[] = [], lx = "x", ly = "y"): El[] {
   const els: El[] = [vec(v(x0, 0), v(x1, 0), { tone: "ink" }), vec(v(0, y0), v(0, y1), { tone: "ink" })];
-  for (const t of ticksX) els.push(seg(v(t, -0.08), v(t, 0.08), { tone: "ink" }), txt(v(t, -0.18), fmt(t), "s", { tone: "ink", small: true }));
-  for (const t of ticksY) els.push(seg(v(-0.08, t), v(0.08, t), { tone: "ink" }), txt(v(-0.15, t), fmt(t), "w", { tone: "ink", small: true }));
+  for (const t of ticksX) els.push(seg(v(t, -0.08), v(t, 0.08), { tone: "ink" }), txt(v(t, -0.18), fmt(t), "s", { tone: "ink", small: true, soft: true }));
+  for (const t of ticksY) els.push(seg(v(-0.08, t), v(0.08, t), { tone: "ink" }), txt(v(-0.15, t), fmt(t), "w", { tone: "ink", small: true, soft: true }));
   els.push(txt(v(x1 + 0.05, 0), lx, "e", { tone: "ink", small: true }), txt(v(0, y1 + 0.05), ly, "n", { tone: "ink", small: true }));
   return els;
 }
@@ -97,7 +97,7 @@ const secant: FigureDef = {
     els.push(line(1, "c", true), line(m, "warn", false));
     els.push(seg(A, v(B[0], A[1]), { tone: "muted", thin: true }), seg(v(B[0], A[1]), B, { tone: "muted", thin: true }));
     els.push(txt(v((A[0] + B[0]) / 2, A[1] - 0.15), "h", "s", { tone: "muted", small: true }), txt(v(B[0] + 0.1, (A[1] + B[1]) / 2), "Δy", "e", { tone: "muted", small: true }));
-    els.push(dot(A, "ink"), dot(B, "warn"), txt(v(A[0] - 0.1, A[1] + 0.15), "A", "nw", { tone: "ink", small: true, bold: true }), txt(v(B[0] - 0.1, B[1] + 0.1), "B", "nw", { tone: "warn", small: true, bold: true }));
+    els.push(dot(A, "ink"), dot(B, "warn"), txt(v(A[0] - 0.1, A[1] + 0.15), "A", "nw", { tone: "ink", small: true, bold: true }), txt(v(B[0] + 0.1, B[1] + 0.1), "B", "ne", { tone: "warn", small: true, bold: true }));
     els.push(txt(v(-1, 4.8), " ", "c"), txt(v(4, -0.7), " ", "c"));
     return {
       els,

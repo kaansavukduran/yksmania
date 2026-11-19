@@ -284,12 +284,12 @@ const cycle: FigureDef = {
     });
     const tip = pol(2, -270 + 2);
     els.push(vec(pol(2, -262), tip, { tone: "c" }));
-    els.push(poly(arc(1.35, 90, -150), { tone: "ink", open: true, thin: true, dash: true }), txt(v(0.15, -0.1), "interfaz", "c", { tone: "ink", small: true }), txt(v(0.15, -0.55), "G₁ + S + G₂", "c", { tone: "muted", small: true }));
+    els.push(poly(arc(1.35, 90, -150), { tone: "ink", open: true, thin: true, dash: true }), txt(v(0.15, -0.1), "interfaz", "c", { tone: "ink", small: true }), txt(v(0.15, -0.7), "G₁ + S + G₂", "c", { tone: "muted", small: true }));
     if (step === 4) {
       const from = pol(2, 40);
-      els.push(vec(from, v(3.9, 2.2), { tone: "warn", bold: true }), txt(v(4.0, 2.25), "G₀", "e", { tone: "warn", bold: true }));
-      els.push(txt(v(4.0, 1.7), "devam sinyali yok", "e", { tone: "warn", small: true }));
-      els.push(txt(v(4.0, 0.9), "sinir hücresi", "e", { tone: "ink", small: true }), txt(v(4.0, 0.45), "çizgili kas hücresi", "e", { tone: "ink", small: true }), txt(v(4.0, 0.0), "olgun alyuvar (çekirdeksiz)", "e", { tone: "ink", small: true }));
+      els.push(vec(from, v(3.9, 2.5), { tone: "warn", bold: true }), txt(v(4.0, 2.55), "G₀", "e", { tone: "warn", bold: true }));
+      els.push(txt(v(4.0, 1.8), "devam sinyali yok", "e", { tone: "warn", small: true }));
+      els.push(txt(v(4.0, 0.9), "sinir hücresi", "e", { tone: "ink", small: true }), txt(v(4.0, 0.2), "çizgili kas hücresi", "e", { tone: "ink", small: true }), txt(v(4.0, -0.5), "alyuvar (çekirdeksiz)", "e", { tone: "ink", small: true }));
     }
     els.push(txt(v(-3, 2.8), " ", "c"), txt(v(7.6, -2.8), " ", "c"));
     const text =

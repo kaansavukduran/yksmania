@@ -87,7 +87,8 @@ const cember: Record<string, FigureDef> = {
     caption:
       "AB yayı 100° (merkez açı 100°). C noktasını büyük yay üzerinde gezdir: ACB çevre açısı her konumda 50°'dir, yani yayın yarısı.",
     alt: "Çemberde sabit A ve B, merkez açı ve sürgüyle büyük yay üzerinde hareket eden C noktasından çizilen çevre açı.",
-    param: { label: "C konumu", min: 140, max: 360, step: 20, init: 220, unit: "°" },
+    // The major arc runs from 50° to 310°; C must stay on it.
+    param: { label: "C konumu", min: 70, max: 290, step: 20, init: 210, unit: "°" },
     draw: (c) => {
       const A = P(-50);
       const B = P(50);
@@ -103,9 +104,9 @@ const cember: Record<string, FigureDef> = {
           ang(C, A, B, "50°", { tone: "a" }),
           pt(A, "A", "se"),
           pt(B, "B", "ne"),
-          pt(C, "C", c > 260 && c < 300 ? "s" : "w", "a"),
+          pt(C, "C", c < 130 ? "n" : c > 230 ? "s" : "w", "a"),
         ],
-        readout: ["ACB = 100° / 2 = 50° (C nerede olursa olsun)"],
+        readout: ["ACB = 100° / 2 = 50° (C büyük yayın neresinde olursa olsun)"],
       };
     },
   },
@@ -318,7 +319,7 @@ const cember: Record<string, FigureDef> = {
   "Kirişler dörtgeninde karşı açılar 180°": {
     caption: "D noktasını kaydır: ABCD çembere çizili kaldıkça A ve C açılarının toplamı 180°, B ve D açılarının toplamı da 180°'dir.",
     alt: "Çembere çizilmiş dörtgen ABCD; dört köşesinde açı yayları ve ölçüleri.",
-    param: { label: "D konumu", min: 200, max: 320, step: 10, init: 260, unit: "°" },
+    param: { label: "D konumu", min: 200, max: 300, step: 10, init: 260, unit: "°" },
     draw: (dDeg) => {
       const A = P(150);
       const B = P(60);

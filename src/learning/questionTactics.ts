@@ -681,6 +681,19 @@ export const questionTactics: QuestionTactic[] = [
       "Kontrol: ortalama en küçük ve en büyük izotop kütlesi arasında, bol olana yakın olmalı.",
     ],
   },
+  {
+    id: "canli-ozellik",
+    guides: ["canli-ozellikleri"],
+    match: /ototrof|heterotrof|prokaryot|ökaryot|homeosta|metabolizma|canlı|hücre/i,
+    title: "Canlılık özelliğini eksene göre ayır",
+    steps: [
+      "Hangi eksen sorulduğunu seç: beslenme (karbon ve enerji kaynağı), hücre tipi (çekirdek zarı var mı) ya da hücre sayısı.",
+      "Beslenmede iki soruyu ayrı yanıtla: karbon CO₂'den mi, organik maddeden mi; enerji ışıktan mı, kimyasal tepkimeden mi?",
+      "Ortak özellikleri ele: ribozom, DNA, hücre zarı ve ATP kullanımı hem prokaryotta hem ökaryotta vardır.",
+      "Homeostazide yanıt sapmanın tersi yöndedir; denge bir aralıkta kalmaktır, hiç değişmemek değil.",
+      "Kontrol: tek hücreli olmak prokaryot olmak değildir (maya, amip); virüs hücresel değildir.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

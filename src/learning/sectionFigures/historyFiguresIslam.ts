@@ -142,7 +142,7 @@ const hendek: Battle = {
     ...mountains([5.2, 6.6, 8.0], 9.6, 1.6, 1.0),
     txt(v(6.6, 11.0), " ", "c"),
     txt(v(9.6, 9.9), "Uhud Dağı", "e", { tone: "muted", small: true }),
-    txt(v(12.4, 12.6), "kuzey ↑", "w", { tone: "muted", small: true }),
+    txt(v(12.4, 13.4), "kuzey ↑", "w", { tone: "muted", small: true }),
     ...compass(12.4),
   ],
   volleys: [[1.6, 2.6, 0, 1]],

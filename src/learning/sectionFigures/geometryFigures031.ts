@@ -431,7 +431,7 @@ const ucgendeAcilar: Record<string, FigureDef> = {
     caption:
       "B ve C açıortayları I'da kesişir. BIC küçük üçgeninde B/2 ve C/2 bulunur; I açısı 180°'den bunlar çıkarılarak hesaplanır.",
     alt: "ABC üçgeninde B ve C'den çıkan iç açıortaylar I noktasında buluşur; BIC üçgeni renkli, I'daki açı işaretli.",
-    param: { label: "A açısı", min: 30, max: 120, step: 2, init: 60, unit: "°" },
+    param: { label: "A açısı", min: 30, max: 110, step: 2, init: 60, unit: "°" },
     draw: (a) => {
       const b = (180 - a) * 0.56;
       const c = 180 - a - b;
@@ -477,12 +477,13 @@ const ucgendeAcilar: Record<string, FigureDef> = {
         pt(A, "A", "n"),
         pt(B, "B", "sw"),
         pt(C, "C", "se"),
-        pt(H, "H", "s", "b"),
+        pt(H, "H", gap > 0.01 && D[0] > H[0] ? "sw" : gap > 0.01 ? "se" : "s", "b"),
       ];
       if (gap > 0.01) {
         els.push(
           seg(A, D, { tone: "a" }),
-          pt(D, "D", "s", "a"),
+          // H and D are close when the gap is small: push their labels apart.
+          pt(D, "D", D[0] > H[0] ? "se" : "sw", "a"),
           ang(A, H, D, `${fmt(gap)}°`, { r: 70, tone: "a" }),
         );
       }
@@ -561,11 +562,11 @@ const ucgenEsitsizligi: Record<string, FigureDef> = {
       const A = fromSides(c, 4, 9);
       const ok = c > 5 && c < 13;
       const els: El[] = [
-        ...numberLine(-3, 0, 15, [0, 5, 13, 15]),
-        seg(v(5, -3), v(13, -3), { tone: "a", bold: true }),
-        pt(v(5, -3), undefined, "n", "a", true),
-        pt(v(13, -3), undefined, "n", "a", true),
-        pt(v(c, -3), `c = ${fmt(c)}`, "n", ok ? "b" : "warn"),
+        ...numberLine(-4.5, 0, 15, [0, 5, 13, 15]),
+        seg(v(5, -4.5), v(13, -4.5), { tone: "a", bold: true }),
+        pt(v(5, -4.5), undefined, "n", "a", true),
+        pt(v(13, -4.5), undefined, "n", "a", true),
+        pt(v(c, -4.5), `c = ${fmt(c)}`, "n", ok ? "b" : "warn"),
         seg(B, C),
         pt(B, "B", "sw"),
         pt(C, "C", "se"),
@@ -787,8 +788,8 @@ const dikUcgen: Record<string, FigureDef> = {
             tone: "a",
             bold: true,
           }),
-          dim(C, B, "8", v(4, -8)),
-          dim(A, C, "6", v(-6, 3)),
+          dim(C, B, "8", A),
+          dim(A, C, "6", B),
           dim(B, A, "10", add(A, n)),
         ],
         readout: ["6² + 8² = 36 + 64 = 100 = 10²", "Diğer dik kenar: √(100 − 36) = 8"],
@@ -910,7 +911,8 @@ const dikUcgen: Record<string, FigureDef> = {
           pt(A, "A", "n"),
           pt(B, "B", "sw"),
           pt(C, "C", "se"),
-          pt(H, "H", "s"),
+          // Keep H clear of the shorter of the two projection labels.
+          pt(H, "H", p < 5 ? "se" : "sw"),
           txt(v(5, 5.4), "", "c"),
         ],
         readout: [
@@ -939,7 +941,7 @@ const dikUcgen: Record<string, FigureDef> = {
           dim(T, F, "5 m", O, "a"),
           dim(O, T, `${fmt(h, 2)} m`, F),
           dim(F, O, `${fmt(d)} m`, T),
-          txt(v(-0.3, 2.6), "duvar", "w", { small: true, tone: "muted" }),
+          txt(v(0, 5.3), "duvar", "n", { small: true, tone: "muted" }),
         ],
         readout: [`Yükseklik = √(5² − ${fmt(d)}²) ≈ ${fmt(h, 2)} m`],
       };
@@ -1481,14 +1483,16 @@ const ucgenMerkezleri: Record<string, FigureDef> = {
           ticks(M, C, 1, "a"),
           dim(B, A, "5", C),
           dim(A, C, "7", B),
-          dim(C, B, "6", A),
+          // H (x = 1) and M (x = 3) are labelled under BC, so BC's length
+          // goes under the free right half; the ticks show BM = MC.
+          txt(mid(M, C), "MC = 3", "s", { tone: "muted", small: true }),
           pt(A, "A", "n"),
           pt(B, "B", "sw"),
           pt(C, "C", "se"),
           pt(M, "M", "s", "a"),
           pt(H, "H", "s", "b"),
         ],
-        readout: [`mₐ = √28 ≈ ${fmt(dist(A, M), 2)}`, `hₐ ≈ ${fmt(dist(A, H), 2)}`],
+        readout: [`BC = 6, BM = MC = 3 · mₐ = √28 ≈ ${fmt(dist(A, M), 2)}`, `hₐ ≈ ${fmt(dist(A, H), 2)}`],
       };
     },
   },

@@ -85,6 +85,7 @@ function rayDiagram(kind: "mirror" | "lens", f: number, u: number, h = 2) {
       if (Math.abs(x) <= span) els.push(pt(v(x, 0), k === 1 ? "F" : "2F", "s", "muted"));
     }
   els.push(arrow(-u, h), txt(tip, "cisim", "n", { small: true }));
+  const objLabel = els.length - 1;
   const P1 = v(0, h);
   const O = v(0, 0);
   const d1 = unit(mul(sub(F, P1), Math.sign(f)));
@@ -106,7 +107,24 @@ function rayDiagram(kind: "mirror" | "lens", f: number, u: number, h = 2) {
   };
   els.push(...ray(P1, reach(P1, d1), "a"), ...ray(O, reach(O, d2), "c"));
   if (!real) els.push(seg(P1, I, { dash: true, thin: true, tone: "a" }), seg(O, I, { dash: true, thin: true, tone: "c" }));
-  els.push(arrow(I[0], I[1], "b", !real), txt(I, "görüntü", I[1] >= 0 ? "n" : "s", { small: true, tone: "b" }));
+  // Upright images share the object's side of the axis: push the two labels
+  // apart horizontally. Inverted images keep their label clear of F/2F marks.
+  const right = I[0] > -u;
+  // A short image standing next to an F or 2F mark: label it beside the arrow,
+  // on the side away from that mark.
+  const marks = focusSides.flatMap((sd) => [1, 2].map((k) => sd * k * Math.abs(f)));
+  const near = marks.reduce((b, x) => (Math.abs(x - I[0]) < Math.abs(b - I[0]) ? x : b), Infinity);
+  const imgAt = right ? "ne" : "nw";
+  const crowded = Math.abs(near - I[0]) < 1.2 && Math.abs(I[1]) < 2;
+  els.push(
+    arrow(I[0], I[1], "b", !real),
+    crowded
+      ? txt(v(I[0], I[1] * 0.6), "görüntü", near < I[0] ? "e" : "w", { small: true, tone: "b" })
+      : I[1] < 0
+        ? txt(v(I[0], I[1] - 0.3 * h), "görüntü", "s", { small: true, tone: "b" })
+        : txt(I, "görüntü", imgAt, { small: true, tone: "b" }),
+  );
+  if (I[1] >= 0) els[objLabel] = txt(tip, "cisim", right ? "nw" : "ne", { small: true });
   const nature = `${real ? "gerçek" : "sanal"}, ${m < 0 ? "ters" : "düz"}, ${Math.abs(Math.abs(m) - 1) < 1e-9 ? "eş boylu" : Math.abs(m) > 1 ? "büyük" : "küçük"}`;
   return {
     els,

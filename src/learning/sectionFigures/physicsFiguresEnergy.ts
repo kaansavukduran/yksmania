@@ -30,7 +30,7 @@ function axes(o: V, w: number, hUp: number, hDown: number, xLabel: string, yLabe
     vec(add(o, v(0, -hDown)), add(o, v(0, hUp + 0.4)), { tone: "muted", thin: true }),
     vec(add(o, v(-hLeft, 0)), add(o, v(w + 0.4, 0)), { tone: "muted", thin: true }),
     txt(add(o, v(w + 0.4, 0)), xLabel, "se", { small: true, tone: "muted" }),
-    txt(add(o, v(0, hUp + 0.4)), yLabel, "w", { small: true, tone: "muted" }),
+    txt(add(o, v(0, hUp + 0.4)), yLabel, "nw", { small: true, tone: "muted" }),
   ];
 }
 const curve = (pts: V[], tone: T = "b"): El => poly(pts, { open: true, tone: tone, bold: true });
@@ -280,7 +280,7 @@ const enerji: Record<string, FigureDef> = {
           ...ground(-0.5, 5.5, -1.2),
           vec(v(0, -1.2), v(0, 4.6), { tone: "muted", thin: true }),
           txt(v(0, 4.6), "zeminden h (m)", "w", { small: true, tone: "muted" }),
-          ...[0, 1, 2, 3, 4].map((y) => txt(v(-0.1, y - 1), String(y), "w", { small: true, tone: "muted" })),
+          ...[0, 1, 2, 3, 4].map((y) => txt(v(-0.1, y - 1), String(y), "w", { small: true, tone: "muted", soft: true })),
           seg(v(-0.2, r - 1), v(5.2, r - 1), { dash: true, tone: "warn" }),
           txt(v(5.2, r - 1), "U = 0", "e", { small: true, tone: "warn" }),
           pt(v(2.5, 0), `A: U = ${fmt(UA)} J`, "e", "b"),
@@ -498,7 +498,7 @@ const enerji: Record<string, FigureDef> = {
         els: [
           ...axes(v(0, 0), 4.4, 3.8, 0, "t (s)", "P (W)"),
           curve([v(0, 20 * sy), v(4, 60 * sy)]),
-          txt(v(0, 20 * sy), "20", "w", { small: true }),
+          txt(v(0, 20 * sy), "20", "w", { small: true, soft: true }),
           seg(v(t, 0), v(t, P * sy), { dash: true, thin: true, tone: "a" }),
           pt(v(t, P * sy), `${fmt(P)} W`, "nw", "a"),
         ],

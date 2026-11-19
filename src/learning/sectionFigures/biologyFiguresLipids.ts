@@ -69,7 +69,7 @@ const tag: FigureDef = {
       if (b) els.push(seg(v(-1.73, y), v(cx - 0.17, y), { tone: "c", bold: true }), txt(v(-1.55, y - 0.32), "ester", "c", { tone: "c", small: true, bold: true }));
       els.push(...drawChain(chain(v(cx + 0.17, y), 0, 9), "a"));
       if (b && step < 3) els.push(txt(v(3.9, y), "→ H₂O", "e", { tone: "b", small: true, bold: true }));
-      if (step === 3) els.push(txt(v(-1.55, y - 0.4), "+ H₂O", "c", { tone: "b", small: true, bold: true }));
+      if (step === 3) els.push(txt(v(3.9, y), "+ H₂O harcanır", "e", { tone: "b", small: true, bold: true }));
     });
     els.push(txt(v(-4.6, 2.8), " ", "c"), txt(v(5.6, -2.4), " ", "c"));
     const rows: [string, string][] = [

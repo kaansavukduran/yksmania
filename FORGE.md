@@ -54,7 +54,10 @@
 - **Yazı çakışma denetimi:** Geliştirme betiği bütün figürlü dersleri açar; her adımda ve sürgü konumunda SVG yazı kutularının birbirine binmesini ve çerçeveden taşmasını ölçer. Bulunanlar düzeltilir.
 - **Ortalama atom kütlesi (Drive 044 TYT Kimya kopya kâğıdı okundu):** Cl-35 / Cl-37 cetveli: her top %5 bolluk, destek ağırlıklı ortalamada (MEB örneği %25 Cl-37 → 35,5 u), sürgüyle bolluk değişir. Eşit kütleli 10 ve 20 akb örneklerinde 2 : 1 atom ve 40/3 akb ortalama.
 
-Doğrulama (yerel): check PASS; 2.637 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
+- **Canlı özellikleri (Drive 001 TYT Biyoloji kopya kâğıdı okundu):** prokaryot (DNA sitoplazmada, ribozom var) ve ökaryot (çift zarlı çekirdek) planı; karbon kaynağı × enerji kaynağı tablosu (fotoototrof, kemoototrof, fotoheterotrof, heterotrof); homeostazi aralık grafiği ve terleme yanıtı; tek hücrelide hücre = organizma. Taktik eklendi.
+- **Figür kalitesi:** Kit, nokta/yazı/açı etiketlerinin piksel kutusunu dikeyde de hesaplıyor; çerçeve dışına taşan etiket 0. Eksen sayıları "soft": içerik etiketiyle çakışırsa gizleniyor. Kalan çakışmalar (dönme, Pisagor, Öklid, kenarortay, ikizkenar, EM spektrumu, mitoz G₀, Selçuklu zaman şeridi, DNA uçları, ayna/mercek görüntü etiketi vb.) tek tek giderildi; denetim tüm işaretli rehberlerde 0 bulgu verdi (P(2) = 5 ile y harfi arası 3 px kenar teması hariç). Piksel yerine birim yazılmış açı yarıçapları düzeltildi. Çevre açı figüründe C sürgüsü küçük yaya geçebiliyordu (orada açı 130°); aralık büyük yayla sınırlandı.
+
+Doğrulama (yerel): check PASS; 2.642 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
 
 ---
 

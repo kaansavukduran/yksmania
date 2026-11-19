@@ -154,7 +154,7 @@ const tirFig: FigureDef = {
       els.push(normalLine(hyp.at, hyp.normal, 1.2));
       const back = v(hyp.at[0] - 1, hyp.at[1]);
       const nIn = v(hyp.at[0] - hyp.normal[0], hyp.at[1] - hyp.normal[1]);
-      els.push(ang(hyp.at, back, nIn, "45°", { tone: "warn", r: 0.55 }));
+      els.push(ang(hyp.at, back, nIn, "45°", { tone: "warn", r: 30 }));
     }
     const tir = tr.events.some((e) => e.kind === "tam yansıma");
     els.push(txt(v(-3.4, 5.4), " ", "c"), txt(v(6.6, -3.4), " ", "c"));

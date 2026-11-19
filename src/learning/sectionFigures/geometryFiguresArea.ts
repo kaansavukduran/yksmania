@@ -43,13 +43,13 @@ export function axes(x0: number, x1: number, y0: number, y1: number, every = 1):
   els.push(
     vec(v(x0, 0), v(x1 + 0.6, 0), { tone: "muted" }),
     vec(v(0, y0), v(0, y1 + 0.6), { tone: "muted" }),
-    txt(v(x1 + 0.6, 0), "x", "se", { small: true, tone: "muted" }),
-    txt(v(0, y1 + 0.6), "y", "ne", { small: true, tone: "muted" }),
+    txt(v(x1 + 0.6, 0), "x", "se", { small: true, tone: "muted", soft: true }),
+    txt(v(0, y1 + 0.6), "y", "ne", { small: true, tone: "muted", soft: true }),
   );
   for (let x = Math.ceil(x0); x <= x1; x += every)
-    if (x !== 0) els.push(txt(v(x, 0), String(x), "s", { small: true, tone: "muted" }));
+    if (x !== 0) els.push(txt(v(x, 0), String(x), "s", { small: true, tone: "muted", soft: true }));
   for (let y = Math.ceil(y0); y <= y1; y += every)
-    if (y !== 0) els.push(txt(v(0, y), String(y), "w", { small: true, tone: "muted" }));
+    if (y !== 0) els.push(txt(v(0, y), String(y), "w", { small: true, tone: "muted", soft: true }));
   return els;
 }
 const xy = (p: V) => `(${fmt(p[0], 2)}; ${fmt(p[1], 2)})`;
@@ -160,9 +160,9 @@ const alan: Record<string, FigureDef> = {
           poly([A, B, C, D], { fill: "b" }),
           seg(D, v(s, 0), { tone: "a", dash: true }),
           right(v(s, 0), s < 10 ? B : A, D, "a"),
-          dim(v(s, 0), D, "4", s < 5 ? B : A, "a"),
+          ...(s !== 0 ? [dim(v(s, 0), D, "4", s > 0 ? A : B, "a")] : []),
           dim(A, B, "10", D),
-          dim(A, D, fmt(side, 2), B),
+          dim(A, D, s === 0 ? "4 (yan kenar = yükseklik)" : fmt(side, 2), s < 0 ? v(-20, 2) : B),
         ],
         readout: [`Alan = 10 · 4 = 40`, `Yan kenar ≈ ${fmt(side, 2)} · Çevre ≈ ${fmt(20 + 2 * side, 2)}`],
       };
@@ -536,7 +536,7 @@ const noktaninAnalitigi: Record<string, FigureDef> = {
           ...axes(-4, 7, -2, 6, 2),
           seg(A, P, { tone: "a", bold: true }),
           seg(P, B, { tone: "b", bold: true }),
-          pt(A, "A(−3; −1)", "se"),
+          pt(A, "A(−3; −1)", "sw"),
           pt(B, "B(6; 5)", "nw"),
           pt(P, `P${xy(P)}`, "se", "a"),
         ],

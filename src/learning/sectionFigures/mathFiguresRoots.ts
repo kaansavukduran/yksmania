@@ -67,11 +67,11 @@ const kokluSayilar: Record<string, FigureDef> = {
       const els: El[] = [
         line(v(-3, 0), v(3, 0), { tone: "muted", thin: true, ext: 0.2 }),
         line(v(0, -9 * k), v(0, 9 * k), { tone: "muted", thin: true, ext: 0.2 }),
-        ...[-8, -4, 4, 8].flatMap((y) => [seg(v(-0.1, y * k), v(0.1, y * k), { tone: "muted", thin: true }), txt(v(0, y * k), String(y), "w", { small: true, tone: "muted" })]),
-        ...[-2, -1, 1, 2].map((x) => txt(v(x, 0), String(x), "s", { small: true, tone: "muted" })),
+        ...[-8, -4, 4, 8].flatMap((y) => [seg(v(-0.1, y * k), v(0.1, y * k), { tone: "muted", thin: true }), txt(v(0, y * k), String(y), "w", { small: true, tone: "muted", soft: true })]),
+        ...[-2, -1, 1, 2].map((x) => txt(v(x, 0), String(x), "s", { small: true, tone: "muted", soft: true })),
         graph((x) => k * x ** n, n === 2 ? -2.95 : -2.05, n === 2 ? 2.95 : 2.05),
         line(v(-3, a * k), v(3, a * k), { tone: "c", ext: 0 }),
-        txt(v(3, a * k), `y = ${a}`, "e", { small: true, tone: "c" }),
+        txt(v(3, a * k), `y = ${a}`, "se", { small: true, tone: "c" }),
       ];
       const roots: number[] = n === 3 ? [Math.cbrt(a)] : a > 0 ? [-Math.sqrt(a), Math.sqrt(a)] : a === 0 ? [0] : [];
       roots.forEach((r) => els.push(pt(v(r, a * k), fmt(r, 2), r < 0 ? "nw" : "ne", "a")));

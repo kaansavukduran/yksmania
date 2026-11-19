@@ -76,8 +76,8 @@ const tilt: FigureDef = {
       const at = surf(Math.abs(s) > 3.6 ? Math.sign(s) * 3.6 : s);
       els.push(vec(v(at[0], 4), at, { tone: "a", thin: x !== 0, bold: x === 0 }));
     }
-    els.push(seg(v(0, 0), v(n[0] * 2.6, n[1] * 2.6), { tone: "muted", dash: true }), txt(v(n[0] * 2.8, n[1] * 2.8), "normal", "n", { tone: "muted", small: true }));
-    if (deg > 0) els.push(ang(v(0, 0), v(n[0], n[1]), v(0, 1), `θ = ${deg}°`, { tone: "warn", r: 1.0 }));
+    els.push(seg(v(0, 0), v(n[0] * 2.6, n[1] * 2.6), { tone: "muted", dash: true }), txt(v(n[0] * 2.6, n[1] * 2.6), "normal", n[0] < -0.3 ? "w" : "n", { tone: "muted", small: true }));
+    if (deg > 0) els.push(ang(v(0, 0), v(n[0], n[1]), v(0, 1), `θ = ${deg}°`, { tone: "warn", r: 48 }));
     els.push(txt(v(-4.2, 4.6), " ", "c"), txt(v(4.2, -3.6), " ", "c"));
     const E = 20 * Math.cos(t);
     return {

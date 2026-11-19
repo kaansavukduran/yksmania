@@ -191,7 +191,7 @@ const giris: Record<string, FigureDef> = {
   "Mekanik ve elektromanyetik ayrımı ortam gereksinimidir": {
     caption:
       "Elektromanyetik ailenin bölgeleri: radyodan gamaya frekans artar, boşluktaki dalga boyu azalır. Hepsi boşlukta aynı süratle yayılır; ses, yay ve deprem dalgaları ise maddesel ortam ister. Sınırlar sınıflamaya göre değişir; kutular ölçekli değildir.",
-    alt: "Yan yana yedi kutudan oluşan elektromanyetik spektrum şeridi; üstte sağa doğru artan frekans oku, altta sola doğru artan dalga boyu oku.",
+    alt: "Yan yana yedi kutudan oluşan elektromanyetik spektrum şeridi, adlar kutuların üstünde ve altında dönüşümlü; üstte sağa doğru artan frekans oku, altta sola doğru artan dalga boyu oku.",
     draw: () => {
       const names = ["radyo", "mikrodalga", "kızılötesi", "görünür", "morötesi", "X", "gama"];
       const tones: Tone[] = ["muted", "b", "warn", "c", "a", "b", "muted"];
@@ -199,12 +199,12 @@ const giris: Record<string, FigureDef> = {
         els: [
           ...names.flatMap((n, i) => [
             poly([v(i * 2.1, 0), v(i * 2.1 + 2.1, 0), v(i * 2.1 + 2.1, 1), v(i * 2.1, 1)], { fill: tones[i], tone: "ink", thin: true }),
-            txt(v(i * 2.1 + 1.05, 0.5), n, "c", { small: true, bold: true }),
+            txt(v(i * 2.1 + 1.05, i % 2 ? 0 : 1), n, i % 2 ? "s" : "n", { small: true, bold: true }),
           ]),
-          vec(v(0, 1.6), v(14.7, 1.6), { tone: "a", bold: true }),
-          txt(v(7.35, 1.6), "frekans artar", "n", { small: true, tone: "a" }),
-          vec(v(14.7, -0.6), v(0, -0.6), { tone: "c", bold: true }),
-          txt(v(7.35, -0.6), "boşluktaki dalga boyu artar", "s", { small: true, tone: "c" }),
+          vec(v(0, 2.3), v(14.7, 2.3), { tone: "a", bold: true }),
+          txt(v(7.35, 2.3), "frekans artar", "n", { small: true, tone: "a" }),
+          vec(v(14.7, -1.3), v(0, -1.3), { tone: "c", bold: true }),
+          txt(v(7.35, -1.3), "boşluktaki dalga boyu artar", "s", { small: true, tone: "c" }),
         ],
       };
     },

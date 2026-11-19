@@ -10,8 +10,8 @@ import { ball, poly, seg, txt, v, vec, type El, type FigureDef, type Tone, type 
 const fmt = (x: number, d = 3) => x.toLocaleString("tr-TR", { maximumFractionDigits: d });
 function axes(x0: number, x1: number, y0: number, y1: number, tx: number[] = [], ty: number[] = []): El[] {
   const els: El[] = [vec(v(x0, 0), v(x1, 0), { tone: "ink" }), vec(v(0, y0), v(0, y1), { tone: "ink" }), txt(v(x1 + 0.05, 0), "x", "e", { tone: "ink", small: true }), txt(v(0, y1 + 0.05), "y", "n", { tone: "ink", small: true })];
-  for (const t of tx) els.push(seg(v(t, -0.07), v(t, 0.07), { tone: "ink" }), txt(v(t, -0.17), fmt(t), "s", { tone: "ink", small: true }));
-  for (const t of ty) els.push(seg(v(-0.07, t), v(0.07, t), { tone: "ink" }), txt(v(-0.14, t), fmt(t), "w", { tone: "ink", small: true }));
+  for (const t of tx) els.push(seg(v(t, -0.07), v(t, 0.07), { tone: "ink" }), txt(v(t, -0.17), fmt(t), "s", { tone: "ink", small: true, soft: true }));
+  for (const t of ty) els.push(seg(v(-0.07, t), v(0.07, t), { tone: "ink" }), txt(v(-0.14, t), fmt(t), "w", { tone: "ink", small: true, soft: true }));
   return els;
 }
 const curve = (f: (x: number) => number, a: number, b: number, n = 120): V[] => Array.from({ length: n + 1 }, (_, i) => v(a + ((b - a) * i) / n, f(a + ((b - a) * i) / n)));

@@ -209,7 +209,7 @@ const fork: FigureDef = {
     els.push(seg(v(xf, 2.4), v(xf + 0.7, 1.15), { tone: "b", bold: true }), seg(v(xf, -0.4), v(xf + 0.7, 0.85), { tone: "b", bold: true }));
     els.push(seg(v(xf + 0.7, 1.15), v(end, 1.15), { tone: "b", bold: true }), seg(v(xf + 0.7, 0.85), v(end, 0.85), { tone: "b", bold: true }));
     els.push(txt(v(-0.1, 2.4), "3′", "w", { tone: "b", small: true }), txt(v(-0.1, -0.4), "5′", "w", { tone: "b", small: true }));
-    els.push(txt(v(end + 0.1, 1.15), "5′", "e", { tone: "b", small: true }), txt(v(end + 0.1, 0.85), "3′", "e", { tone: "b", small: true }));
+    els.push(txt(v(end + 0.1, 1.15), "5′", "ne", { tone: "b", small: true }), txt(v(end + 0.1, 0.85), "3′", "se", { tone: "b", small: true }));
     els.push(pt(v(xf + 0.35, 1), "helikaz", "n", "warn"));
     // Leading strand: continuous, grows toward the fork.
     const tip = xf - 0.3;
