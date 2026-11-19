@@ -1,16 +1,18 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Lock, Trophy, X } from "lucide-react";
+import { X } from "lucide-react";
+import { TrophyEmblem, type EmblemMetal } from "./TrophyEmblem";
 import { useApp } from "../store";
 import { lessonById } from "../domain/content";
+import { questionStars } from "../domain/exams";
 import {
   evaluateTrophies,
   nearestTrophies,
   TIER_NAME,
-  type Tier,
   type TrophyCategory,
   type TrophyState,
 } from "../domain/achievements";
 import "./trophies.css";
+import { playCue } from "../domain/soundEngine";
 
 /*
  * Trophy showcase and unlock toasts. Trophies are recomputed from saved
@@ -23,7 +25,7 @@ const subjectOf = (lessonId: string) => lessonById(lessonId)?.subjectId;
 export function useTrophies(): TrophyState[] {
   const { state } = useApp();
   return useMemo(
-    () => evaluateTrophies(state, subjectOf),
+    () => evaluateTrophies(state, subjectOf, questionStars),
     [state.sessions, state.reviews, state.examSessions],
   );
 }
@@ -37,13 +39,18 @@ const CATEGORIES: { id: TrophyCategory | "hepsi"; label: string }[] = [
   { id: "gizli", label: "Gizli" },
   { id: "platin", label: "Platin" },
 ];
-const TIER_CLASS: Record<Tier, string> = { 0: "locked", 1: "bronze", 2: "silver", 3: "gold" };
 
-function Medal({ trophy }: { trophy: TrophyState }) {
-  const cls = trophy.platinum ? (trophy.tier ? "platinum" : "locked") : TIER_CLASS[trophy.tier];
+function Medal({ trophy, size = 56 }: { trophy: TrophyState; size?: number }) {
+  const metal: EmblemMetal = trophy.platinum
+    ? trophy.tier
+      ? "platinum"
+      : "locked"
+    : (["locked", "bronze", "silver", "gold"] as const)[trophy.tier];
+  // An unearned secret trophy keeps its emblem hidden too.
+  const id = trophy.secret && trophy.tier === 0 ? "?" : trophy.id;
   return (
-    <span className={`trophy-medal trophy-${cls}`} aria-hidden="true">
-      {trophy.tier ? <Trophy size={20} /> : <Lock size={18} />}
+    <span className={`trophy-medal trophy-${metal}`} aria-hidden="true">
+      <TrophyEmblem id={id} metal={metal} size={size} />
     </span>
   );
 }
@@ -140,30 +147,6 @@ function writeSeen(map: Record<string, number>) {
     // Storage may be unavailable; toasts then simply repeat next time.
   }
 }
-function chime() {
-  try {
-    const Ctx = window.AudioContext ?? (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
-    if (!Ctx) return;
-    const ctx = new Ctx();
-    const now = ctx.currentTime;
-    [659.25, 987.77, 1318.5].forEach((f, i) => {
-      const osc = ctx.createOscillator();
-      const gain = ctx.createGain();
-      osc.type = "sine";
-      osc.frequency.value = f;
-      gain.gain.setValueAtTime(0.0001, now + i * 0.09);
-      gain.gain.exponentialRampToValueAtTime(0.12, now + i * 0.09 + 0.02);
-      gain.gain.exponentialRampToValueAtTime(0.0001, now + i * 0.09 + 0.5);
-      osc.connect(gain).connect(ctx.destination);
-      osc.start(now + i * 0.09);
-      osc.stop(now + i * 0.09 + 0.55);
-    });
-    setTimeout(() => void ctx.close(), 1200);
-  } catch {
-    // Audio is optional.
-  }
-}
-
 export function TrophyToasts() {
   const { state } = useApp();
   const trophies = useTrophies();
@@ -186,8 +169,11 @@ export function TrophyToasts() {
     writeSeen({ ...seen, ...current });
     if (!state.settings.gamification) return;
     setQueue((q) => [...q, ...fresh]);
-    if (state.settings.sound) chime();
-  }, [trophies, state.settings.gamification, state.settings.sound]);
+    if (state.settings.sound) {
+      const top = Math.max(1, ...fresh.map((t) => (t.platinum ? 4 : t.tier))) as 1 | 2 | 3 | 4;
+      playCue({ kind: "trophy", tier: top }, state.settings.soundVolume);
+    }
+  }, [trophies, state.settings.gamification, state.settings.sound, state.settings.soundVolume]);
   useEffect(() => {
     if (!queue.length) return;
     const timer = setTimeout(() => setQueue((q) => q.slice(1)), 6000);

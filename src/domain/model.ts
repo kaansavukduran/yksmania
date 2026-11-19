@@ -38,6 +38,8 @@ export const settingsSchema = z.object({
   font: z.enum(["system", "lexend"]),
   motion: z.boolean(),
   sound: z.boolean(),
+  // Volume of the synthesised cues, 0–100. Older saves get the default.
+  soundVolume: z.number().int().min(0).max(100).default(60),
   gamification: z.boolean(),
   dailyMinutes: z.number().int().min(10).max(600),
   blockedWeekdays: z.array(z.number().int().min(0).max(6)).max(7),
@@ -180,6 +182,7 @@ export const initialState = (): AppState => ({
     font: "system",
     motion: true,
     sound: false,
+    soundVolume: 60,
     gamification: true,
     dailyMinutes: 90,
     blockedWeekdays: [],

@@ -36,17 +36,27 @@
   flex: 0 0 auto;
   display: grid;
   place-items: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  color: #1d1a16;
-  box-shadow: inset 0 -3px 0 rgb(0 0 0 / 0.18);
+  width: 56px;
+  height: 56px;
 }
-.trophy-locked { background: color-mix(in srgb, var(--text) 14%, transparent); color: var(--muted); box-shadow: none; }
-.trophy-bronze { background: linear-gradient(145deg, #e0a477, #a8653a); }
-.trophy-silver { background: linear-gradient(145deg, #f1f3f6, #9ea7b2); }
-.trophy-gold { background: linear-gradient(145deg, #ffe08a, #d39b22); }
-.trophy-platinum { background: linear-gradient(145deg, #e7f6ff, #8fb6d8 55%, #c9b8f0); }
+.trophy-medal svg {
+  display: block;
+  filter: drop-shadow(0 2px 3px rgb(0 0 0 / 0.35));
+}
+.trophy-locked svg {
+  filter: none;
+  opacity: 0.85;
+}
+.trophy-card.is-earned .trophy-medal svg {
+  animation: emblem-in 0.5s ease-out;
+}
+@keyframes emblem-in {
+  from { transform: scale(0.85) rotate(-8deg); }
+  to { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .trophy-card.is-earned .trophy-medal svg { animation: none; }
+}
 .trophy-count { font-size: 0.8rem; color: var(--text); font-variant-numeric: tabular-nums; }
 .trophy-progress {
   position: relative;

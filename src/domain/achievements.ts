@@ -66,6 +66,9 @@ const BASE: TrophyDef[] = [
   { id: "soru-canavari", title: "Soru Canavarı", goal: "{n} soruyu ipucu ve yardım almadan doğru çöz", category: "ustalik", thresholds: [100, 500, 2500] },
   { id: "kusursuz-seri", title: "Kusursuz Seri", goal: "En az 10 soruluk bir oturumu yardımsız ve sıfır hatayla bitir ({n} kez)", category: "ustalik", thresholds: [1, 5, 20] },
   { id: "ipucu-yok", title: "İpucu Yok, Panik Yok", goal: "AYT'den en az 10 soruluk bir seti hiç yardım almadan %80 doğruyla bitir ({n} kez)", category: "ustalik", thresholds: [1, 5, 15] },
+  { id: "yildiz-avcisi", title: "Yıldız Avcısı", goal: "7 yıldız ve üstü {n} farklı soruyu yardımsız doğru çöz", category: "ustalik", thresholds: [10, 50, 200] },
+  { id: "secici-zirve", title: "Seçici Zirve", goal: "9–10 yıldızlı {n} farklı soruyu yardımsız doğru çöz", category: "ustalik", thresholds: [5, 25, 100] },
+  { id: "yildiz-merdiveni", title: "Yıldız Merdiveni", goal: "{n} derste 1'den 10'a kadar her yıldız düzeyinden en az bir soruyu yardımsız doğru çöz", category: "ustalik", thresholds: [1, 3, 8] },
   { id: "hata-mezarligi", title: "Hata Mezarlığı", goal: "Yanlış yaptığın {n} soruyu sonra yardımsız doğru çözerek onar", category: "ustalik", thresholds: [25, 50, 100] },
   { id: "tuzak-avcisi", title: "Tuzak Avcısı", goal: "\"Eminim\" deyip yanlış yaptığın {n} soruyu sonra yardımsız doğru çöz", category: "ustalik", thresholds: [1, 10, 30] },
   { id: "tekrar-dongusu", title: "Hatırlama Döngüsü", goal: "Vadesi gelen {n} tekrarı en az bir yardımsız doğruyla tamamla", category: "sureklilik", thresholds: [5, 30, 100] },
@@ -110,7 +113,11 @@ function examNetRatio(e: ExamSession): number {
 /** Day index (UTC days since epoch) of a YYYY-MM-DD date. */
 const dayIndex = (date: string) => Math.round(Date.parse(`${date}T00:00:00Z`) / 86400000);
 
-export function evaluateTrophies(state: AppState, subjectOf: (lessonId: string) => string | undefined): TrophyState[] {
+export function evaluateTrophies(
+  state: AppState,
+  subjectOf: (lessonId: string) => string | undefined,
+  starOf: (questionId: string) => number | undefined = () => undefined,
+): TrophyState[] {
   const sessions = [...state.sessions].sort((a, b) => (a.finishedAt < b.finishedAt ? -1 : a.finishedAt > b.finishedAt ? 1 : 0));
   const values: Record<string, number> = {};
 
@@ -186,8 +193,30 @@ export function evaluateTrophies(state: AppState, subjectOf: (lessonId: string) 
   }
   values["gizli:cok-yonlu"] = diverse;
 
-  // Exams without help.
+  // Difficulty stars: distinct questions solved without help, in study sets
+  // and in exams taken without help. Stars are an estimate (difficulty.ts).
   const exams = state.examSessions.filter(isIndependentExam);
+  const starSolved = new Map<string, { star: number; subject?: string }>();
+  for (const s of sessions)
+    for (const r of s.responses)
+      if (r.correct && !r.assisted) {
+        const star = starOf(r.questionId);
+        if (star) starSolved.set(r.questionId, { star, subject: subjectOf(s.lessonId) });
+      }
+  for (const e of exams)
+    e.items.forEach((q, i) => {
+      if (e.answers[i] !== q.answer) return;
+      const star = starOf(q.id);
+      if (star) starSolved.set(q.id, { star, subject: q.subjectId });
+    });
+  const solvedRows = [...starSolved.values()];
+  values["yildiz-avcisi"] = solvedRows.filter((x) => x.star >= 7).length;
+  values["secici-zirve"] = solvedRows.filter((x) => x.star >= 9).length;
+  const ladders = new Map<string, Set<number>>();
+  for (const x of solvedRows) if (x.subject) (ladders.get(x.subject) ?? ladders.set(x.subject, new Set()).get(x.subject)!).add(x.star);
+  values["yildiz-merdiveni"] = [...ladders.values()].filter((stars) => stars.size >= 10).length;
+
+  // Exams without help.
   values["deneme-savascisi"] = exams.length;
   const big = exams.filter((e) => e.items.length >= 20);
   values["net-avcisi"] = Math.round(Math.max(0, ...big.map(examNetRatio)) * 100);

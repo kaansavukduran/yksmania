@@ -1,3 +1,4 @@
+import { playCue } from "../domain/soundEngine";
 import { localizedQuestionView } from "../domain/questionPresentation";
 import { useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
@@ -83,6 +84,27 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
         ? { helpLevel: visibleHelpLevel, helpPanelCount: panels.length }
         : {}),
     };
+    if (state.settings.sound) {
+      const volume = state.settings.soundVolume;
+      if (!response.correct) playCue({ kind: "wrong" }, volume);
+      else if (
+        !response.assisted &&
+        state.sessions.some((s) =>
+          s.responses.some((r) => r.questionId === question.id && !r.correct),
+        )
+      )
+        playCue({ kind: "repair" }, volume);
+      else {
+        let combo = 1;
+        if (!response.assisted)
+          for (let i = draft.responses.length - 1; i >= 0; i--) {
+            const r = draft.responses[i];
+            if (!r.correct || r.assisted) break;
+            combo++;
+          }
+        playCue({ kind: "correct", combo }, volume);
+      }
+    }
     patch({
       checked: true,
       responses: [...draft.responses, response],
@@ -124,23 +146,17 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
     try {
       await commit((s) => finishSession(s, session));
       if (state.settings.sound) {
-        try {
-          const ctx = new AudioContext();
-          const osc = ctx.createOscillator();
-          const gain = ctx.createGain();
-          osc.connect(gain);
-          gain.connect(ctx.destination);
-          osc.frequency.value = 660;
-          gain.gain.setValueAtTime(0.04, ctx.currentTime);
-          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.2);
-          osc.start();
-          osc.stop(ctx.currentTime + 0.2);
-          osc.onended = () => {
-            void ctx.close();
-          };
-        } catch {
-          // Optional audio cannot turn a persisted learning event into a failure.
-        }
+        const review = draft.reviewId
+          ? state.reviews.find((r) => r.id === draft.reviewId)
+          : undefined;
+        const independent = session.responses.filter(
+          (r) => r.correct && !r.assisted,
+        ).length;
+        const sealed =
+          review?.stage === 21 &&
+          session.responses.length > 0 &&
+          independent / session.responses.length >= 0.8;
+        playCue({ kind: sealed ? "seal" : "finish" }, state.settings.soundVolume);
       }
       navigate(`/result?id=${encodeURIComponent(session.id)}`);
     } catch {

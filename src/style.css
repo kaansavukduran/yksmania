@@ -4872,3 +4872,26 @@ progress::-moz-progress-bar {
 .cell-label.is-on .cell-label-dot { fill: var(--accent); }
 .cell-label.is-on .cell-label-text { fill: var(--accent); font-weight: 800; }
 
+
+/* Sound settings: volume and a two-column grid of short previews. */
+.sound-volume {
+  display: grid;
+  gap: 0.4rem;
+}
+.sound-volume span {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.sound-volume input {
+  width: 100%;
+  min-height: 44px;
+}
+.sound-preview {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
+  gap: 0.5rem;
+}
+.sound-preview button {
+  min-height: 44px;
+}

@@ -84,3 +84,31 @@ describe("trophies come only from real evidence", () => {
     expect(near.some((t) => t.secret)).toBe(false);
   });
 });
+
+describe("difficulty-star trophies", () => {
+  const starOf = (id: string) => Number(id.split("-")[1]) || undefined;
+  const at = (state: AppState, id: string) => evaluateTrophies(state, subjectOf, starOf).find((t) => t.id === id)!;
+  it("count distinct independent correct answers by star; assisted and wrong never count", () => {
+    const state = initialState();
+    state.sessions = [
+      session("tyt-a", "2026-11-01", [
+        r("q-9", true),
+        r("q-9", true),
+        r("q-10", true, { assisted: true }),
+        r("q-8", false),
+        r("q-7", true),
+      ]),
+    ];
+    expect(at(state, "yildiz-avcisi").value).toBe(2);
+    expect(at(state, "secici-zirve").value).toBe(1);
+  });
+  it("the ladder needs every star 1–10 in one subject", () => {
+    const state = initialState();
+    const all = Array.from({ length: 10 }, (_, i) => r(`q-${i + 1}`, true));
+    state.sessions = [session("tyt-a", "2026-11-01", all.slice(0, 9))];
+    expect(at(state, "yildiz-merdiveni").value).toBe(0);
+    state.sessions.push(session("tyt-a", "2026-11-02", all.slice(9)));
+    expect(at(state, "yildiz-merdiveni").value).toBe(1);
+    expect(at(state, "yildiz-merdiveni").tier).toBe(1);
+  });
+});

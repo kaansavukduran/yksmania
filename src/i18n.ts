@@ -180,7 +180,7 @@ const messages: Record<string, string> = {
   reset: "Varsayılana dön",
   motion: "Aion animasyonu",
   motionHelp: "Sistem hareket azaltma tercihi de uygulanır.",
-  sound: "Başarı sesi",
+  sound: "Sesler (doğru, yanlış, seri, kupa)",
   game: "Oyunlaştırma",
   data: "Veri ve yedekler",
   deviceScope: "Ayarlar ve kayıtlar bu cihaza uygulanır.",

@@ -16,6 +16,7 @@ import { ResetProgress } from "../components/ResetProgress";
 import type { Settings as SettingsType } from "../domain/model";
 import { APP_VERSION } from "../version";
 import { ChoiceSelect } from "../components/ChoiceSelect";
+import { playCue, type SoundCue } from "../domain/soundEngine";
 function NumericControl({
   label,
   value,
@@ -381,6 +382,49 @@ export function Settings({
             checked={state.settings.sound}
             onChange={(v) => set("sound", v)}
           />
+          {state.settings.sound && (
+            <>
+              <label className="sound-volume">
+                <span>
+                  Ses seviyesi <output>%{state.settings.soundVolume}</output>
+                </span>
+                <input
+                  type="range"
+                  min={0}
+                  max={100}
+                  step={5}
+                  value={state.settings.soundVolume}
+                  onChange={(e) => set("soundVolume", Number(e.target.value))}
+                />
+              </label>
+              <div className="sound-preview" role="group" aria-label="Sesleri dinle">
+                {(
+                  [
+                    ["Doğru", { kind: "correct", combo: 1 }],
+                    ["Seri ×5", { kind: "correct", combo: 5 }],
+                    ["Yanlış", { kind: "wrong" }],
+                    ["Onarım", { kind: "repair" }],
+                    ["21. gün mührü", { kind: "seal" }],
+                    ["Set bitti", { kind: "finish" }],
+                    ["Altın kupa", { kind: "trophy", tier: 3 }],
+                    ["Platin kupa", { kind: "trophy", tier: 4 }],
+                  ] as [string, SoundCue][]
+                ).map(([label, cue]) => (
+                  <button
+                    key={label}
+                    type="button"
+                    className="secondary"
+                    onClick={() => playCue(cue, state.settings.soundVolume)}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
+              <p className="small muted">
+                Sesler cihazda sentezlenir; dosya indirilmez. Ses hiçbir zaman ilerleme ya da kupa kanıtı sayılmaz.
+              </p>
+            </>
+          )}
         </section>
         <section className="panel settings-panel">
           <h2>{t("data")}</h2>
