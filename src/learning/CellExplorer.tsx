@@ -223,9 +223,34 @@ export default function CellExplorer() {
           className="cell-figure"
         >
           <defs>
-            <linearGradient id={`${uid}-cyto`} x2="1" y2="1">
-              <stop stopColor="#e1f0dd" />
-              <stop offset="1" stopColor="#c4ddda" />
+            <radialGradient id={`${uid}-cyto`} cx="0.42" cy="0.4" r="0.75">
+              <stop stopColor="#eef7ea" />
+              <stop offset="0.7" stopColor="#d6ebe2" />
+              <stop offset="1" stopColor="#bfd9d4" />
+            </radialGradient>
+            <radialGradient id={`${uid}-nuc`} cx="0.4" cy="0.35" r="0.8">
+              <stop stopColor="#c3bbe2" />
+              <stop offset="1" stopColor="#968bc0" />
+            </radialGradient>
+            <radialGradient id={`${uid}-nucleolus`} cx="0.35" cy="0.35" r="0.7">
+              <stop stopColor="#8c7ba8" />
+              <stop offset="1" stopColor="#584a73" />
+            </radialGradient>
+            <linearGradient id={`${uid}-mito`} x2="0" y2="1">
+              <stop stopColor="#f2c3a8" />
+              <stop offset="1" stopColor="#d99476" />
+            </linearGradient>
+            <linearGradient id={`${uid}-golgi`} x2="0" y2="1">
+              <stop stopColor="#f0be8a" />
+              <stop offset="1" stopColor="#c98a56" />
+            </linearGradient>
+            <radialGradient id={`${uid}-vac`} cx="0.4" cy="0.35" r="0.8">
+              <stop stopColor="#d4ecf7" />
+              <stop offset="1" stopColor="#93c7de" />
+            </radialGradient>
+            <linearGradient id={`${uid}-chl`} x2="0" y2="1">
+              <stop stopColor="#a9d29a" />
+              <stop offset="1" stopColor="#77a86b" />
             </linearGradient>
           </defs>
           {s.plant && (
@@ -261,25 +286,25 @@ export default function CellExplorer() {
           </Part>
           <Part {...partProps("membrane")}>
             {s.plant ? (
-              <rect
-                x="38"
-                y="40"
-                width="525"
-                height="318"
-                rx="50"
-                fill="none"
-                stroke="#518b7c"
-                strokeWidth="5"
-                pointerEvents="stroke"
-              />
+              <g pointerEvents="stroke">
+                <rect x="38" y="40" width="525" height="318" rx="50" fill="none" stroke="#518b7c" strokeWidth="6" />
+                <rect x="38" y="40" width="525" height="318" rx="50" fill="none" stroke="#d9efe6" strokeWidth="1.4" />
+              </g>
             ) : (
-              <path
-                d="M42 210 C18 100 123 28 284 40 C428 15 566 76 568 201 C580 314 463 377 293 357 C139 385 47 321 42 210Z"
-                fill="none"
-                stroke="#518b7c"
-                strokeWidth="6"
-                pointerEvents="stroke"
-              />
+              <g pointerEvents="stroke">
+                <path
+                  d="M42 210 C18 100 123 28 284 40 C428 15 566 76 568 201 C580 314 463 377 293 357 C139 385 47 321 42 210Z"
+                  fill="none"
+                  stroke="#518b7c"
+                  strokeWidth="7"
+                />
+                <path
+                  d="M42 210 C18 100 123 28 284 40 C428 15 566 76 568 201 C580 314 463 377 293 357 C139 385 47 321 42 210Z"
+                  fill="none"
+                  stroke="#d9efe6"
+                  strokeWidth="1.6"
+                />
+              </g>
             )}
           </Part>
           <Part {...partProps("vacuole")}>
@@ -288,50 +313,48 @@ export default function CellExplorer() {
               cy={s.plant ? 200 : 286}
               rx={s.plant ? 90 : 44}
               ry={s.plant ? 80 : 28}
-              fill="#a7d5ea"
+              fill={`url(#${uid}-vac)`}
               stroke="#5790a6"
               strokeWidth="3"
             />
           </Part>
           <Part {...partProps("er")}>
-            <path
-              d="M245 119 C293 102 315 127 290 149 C324 156 314 180 285 183 C322 202 299 222 266 218 M250 133 C280 122 295 139 271 153 M255 173 C294 166 307 191 266 198"
-              fill="none"
-              stroke="#ba879f"
-              strokeWidth="12"
-              strokeLinecap="round"
-            />
+            <g fill="none" strokeLinecap="round">
+              {/* Rough ER: stacked, folded sheets continuous with the nuclear envelope */}
+              <path d="M262 112 C300 100 322 122 300 140 C330 150 324 176 298 182 C330 196 314 222 278 222" stroke="#c895ad" strokeWidth="10" />
+              <path d="M262 112 C300 100 322 122 300 140 C330 150 324 176 298 182 C330 196 314 222 278 222" stroke="#f3dbe6" strokeWidth="2.5" />
+              <path d="M266 128 C292 120 304 136 284 150 C306 160 300 176 280 178 C304 190 296 206 270 206" stroke="#c895ad" strokeWidth="8" />
+              <path d="M266 128 C292 120 304 136 284 150 C306 160 300 176 280 178 C304 190 296 206 270 206" stroke="#f3dbe6" strokeWidth="2" />
+              {/* Smooth ER: branching tubes without ribosomes */}
+              <path d="M318 214 c14 6 22 -4 34 4 s16 14 30 6 M330 228 c10 10 24 4 32 14" stroke="#d7a9c0" strokeWidth="5" />
+            </g>
+            <g fill="#5b5582">
+              {[
+                [270, 106], [284, 102], [298, 104], [312, 113], [318, 128], [325, 150], [324, 168], [318, 186],
+                [324, 200], [318, 214], [302, 224], [288, 226], [306, 172], [296, 160], [292, 194],
+              ].map(([x, y], i) => (
+                <circle key={i} cx={x} cy={y} r="2.6" />
+              ))}
+            </g>
           </Part>
           <Part {...partProps("nucleus")}>
-            <ellipse
-              cx="203"
-              cy="178"
-              rx="66"
-              ry="73"
-              fill="#a49bc9"
-              stroke="#6e608d"
-              strokeWidth="4"
-            />
-            <ellipse
-              cx="203"
-              cy="178"
-              rx="58"
-              ry="65"
-              fill="none"
-              stroke="#77688f"
-              strokeWidth="2"
-            />
-            <circle cx="217" cy="186" r="21" fill="#706087" />
-            <path
-              d="M170 153q35-20 39 10t-29 32m18-61q-18 25 13 20"
-              fill="none"
-              stroke="#e6def1"
-              strokeWidth="3"
-            />
+            <ellipse cx="203" cy="178" rx="66" ry="73" fill={`url(#${uid}-nuc)`} />
+            {/* Double nuclear envelope with pores (gaps) */}
+            <ellipse cx="203" cy="178" rx="66" ry="73" fill="none" stroke="#5d5080" strokeWidth="3.5" strokeDasharray="34 5" />
+            <ellipse cx="203" cy="178" rx="61" ry="68" fill="none" stroke="#7a6c9c" strokeWidth="2" strokeDasharray="31 5" />
+            {/* Chromatin threads */}
+            <g fill="none" stroke="#6f6391" strokeWidth="1.6" strokeLinecap="round" opacity="0.85">
+              <path d="M160 150c10-8 18 6 28-2s14 8 24 2" />
+              <path d="M166 205c8 6 16-6 26 2s18-4 24 4" />
+              <path d="M150 178c6-10 14 2 20-6m54 34c8-4 12 8 20 2" />
+              <path d="M228 140c6 8 14-2 18 8m-70 64c4 8 12 0 16 8" />
+            </g>
+            <circle cx="217" cy="186" r="21" fill={`url(#${uid}-nucleolus)`} />
+            <circle cx="210" cy="180" r="5" fill="#a596c4" opacity="0.6" />
           </Part>
           <Part {...partProps("ribosome")}>
             <circle cx="278" cy="142" r="24" fill="transparent" />
-            <g fill="#645f87">
+            <g fill="#4f4a78">
               {[
                 [271, 132],
                 [283, 148],
@@ -340,83 +363,68 @@ export default function CellExplorer() {
                 [307, 143],
                 [110, 172],
                 [122, 250],
+                [360, 120],
+                [380, 300],
+                [250, 300],
+                [150, 120],
               ].map(([x, y], i) => (
-                <circle key={i} cx={x} cy={y} r="5" />
+                <g key={i}>
+                  {/* large and small subunit */}
+                  <circle cx={x} cy={y} r="4.2" />
+                  <circle cx={x + 3.6} cy={y + 3} r="2.8" />
+                </g>
               ))}
             </g>
           </Part>
           <Part {...partProps("golgi")}>
             <g transform={s.plant ? "translate(-30 38)" : undefined}>
-              <g
-                stroke="#c68757"
-                strokeWidth="8"
-                fill="none"
-                strokeLinecap="round"
-              >
-                <path d="M316 260q40-26 81 0M321 275q34-24 69 0M328 289q25-20 55 0" />
+              <g fill={`url(#${uid}-golgi)`} stroke="#a86f43" strokeWidth="1.5">
+                <path d="M310 252q46-30 92 0q-46-20-92 0Z" />
+                <path d="M314 264q42-27 84 0q-42-18-84 0Z" />
+                <path d="M319 276q37-24 74 0q-37-16-74 0Z" />
+                <path d="M325 288q31-20 62 0q-31-13-62 0Z" />
+                <path d="M332 299q24-15 48 0q-24-10-48 0Z" />
               </g>
-              <circle
-                cx="408"
-                cy="264"
-                r="10"
-                fill="#e2af79"
-                stroke="#b88154"
-                strokeWidth="2"
-              />
+              {/* Vesicles budding from the trans face */}
+              <circle cx="408" cy="262" r="8" fill="#e8b886" stroke="#a86f43" strokeWidth="1.5" />
+              <circle cx="398" cy="248" r="5.5" fill="#e8b886" stroke="#a86f43" strokeWidth="1.5" />
+              <circle cx="394" cy="296" r="6" fill="#e8b886" stroke="#a86f43" strokeWidth="1.5" />
             </g>
           </Part>
           <Part {...partProps("mitochondrion")}>
-            <g transform="rotate(-22 137 294)">
-              <ellipse
-                cx="137"
-                cy="294"
-                rx="49"
-                ry="24"
-                fill="#e4ac91"
-                stroke="#ac735e"
-                strokeWidth="3"
-              />
-              <path
-                d="M102 293q13-23 17 0t15 0t15 0t16 0"
-                fill="none"
-                stroke="#ae6a5b"
-                strokeWidth="3"
-              />
-            </g>
-            <g transform="rotate(18 415 84)">
-              <ellipse
-                cx="415"
-                cy="84"
-                rx="40"
-                ry="20"
-                fill="#e4ac91"
-                stroke="#ac735e"
-                strokeWidth="3"
-              />
-              <path
-                d="M389 84q9-17 13 0t14 0t15 0"
-                fill="none"
-                stroke="#ae6a5b"
-                strokeWidth="3"
-              />
-            </g>
+            {[
+              { cx: 137, cy: 294, rx: 49, ry: 24, rot: -22 },
+              { cx: 415, cy: 84, rx: 40, ry: 20, rot: 18 },
+            ].map((m, k) => {
+              const folds = Math.round(m.rx / 9);
+              const d = Array.from({ length: folds }, (_, i) => {
+                const x = m.cx - m.rx + 12 + i * ((2 * m.rx - 24) / Math.max(1, folds - 1));
+                const top = i % 2 === 0;
+                return `M${x.toFixed(1)} ${(top ? m.cy - m.ry + 4 : m.cy + m.ry - 4).toFixed(1)}q4 ${top ? m.ry * 0.9 : -m.ry * 0.9} 0 ${top ? m.ry * 1.25 : -m.ry * 1.25}`;
+              }).join("");
+              return (
+                <g key={k} transform={`rotate(${m.rot} ${m.cx} ${m.cy})`}>
+                  {/* Outer membrane, inner membrane and folded cristae */}
+                  <ellipse cx={m.cx} cy={m.cy} rx={m.rx} ry={m.ry} fill={`url(#${uid}-mito)`} stroke="#a0644e" strokeWidth="3" />
+                  <ellipse cx={m.cx} cy={m.cy} rx={m.rx - 5} ry={m.ry - 4} fill="#f6d2bd" stroke="#b9775e" strokeWidth="1.6" />
+                  <path d={d} fill="none" stroke="#b9775e" strokeWidth="2.2" strokeLinecap="round" />
+                </g>
+              );
+            })}
           </Part>
           {s.plant && (
             <Part {...partProps("chloroplast")}>
-              <ellipse
-                cx="96"
-                cy="100"
-                rx="39"
-                ry="23"
-                fill="#8eb880"
-                stroke="#4b754b"
-                strokeWidth="3"
-              />
-              <path
-                d="M78 89v22m12-26v28m12-24v22m12-20v17"
-                stroke="#456e49"
-                strokeWidth="7"
-              />
+              <ellipse cx="96" cy="100" rx="39" ry="23" fill={`url(#${uid}-chl)`} stroke="#3f6b40" strokeWidth="3" />
+              <ellipse cx="96" cy="100" rx="35" ry="19.5" fill="none" stroke="#5f8f58" strokeWidth="1.2" />
+              {/* Grana: stacks of thylakoid discs joined by stroma lamellae */}
+              <path d="M70 100h52" stroke="#4e7d48" strokeWidth="1.4" />
+              <g fill="#3e6a3d">
+                {[72, 86, 100, 114].map((x, gi) =>
+                  [0, 1, 2, 3].map((k) => (
+                    <rect key={`${gi}-${k}`} x={x - 4.5} y={91 + k * 4.6 - (gi % 2) * 2} width="9" height="3.4" rx="1.6" />
+                  )),
+                )}
+              </g>
             </Part>
           )}
           <Part {...partProps("peroxisome")}>
@@ -428,7 +436,7 @@ export default function CellExplorer() {
               stroke="#8c8057"
               strokeWidth="2"
             />
-            <path d="M98 213h16m-8-8v16" stroke="#8c8057" strokeWidth="2" />
+            <rect x="99" y="206" width="14" height="14" rx="2" fill="#a99a5f" transform="rotate(20 106 213)" />
           </Part>
           {!s.plant && (
             <>
@@ -441,39 +449,32 @@ export default function CellExplorer() {
                   stroke="#8e729f"
                   strokeWidth="2"
                 />
-                <circle cx="458" cy="223" r="4" fill="#8e729f" />
-                <circle cx="469" cy="232" r="4" fill="#8e729f" />
+                {[[456, 221], [468, 224], [460, 233], [471, 234], [463, 214]].map(([x, y], i) => (
+                  <circle key={i} cx={x} cy={y} r="2.6" fill="#7c5f8f" />
+                ))}
               </Part>
               <Part {...partProps("centrosome")}>
-                <rect
-                  x="455"
-                  y="141"
-                  width="38"
-                  height="12"
-                  rx="3"
-                  fill="#c79367"
-                  stroke="#9e704d"
-                />
-                <rect
-                  x="469"
-                  y="154"
-                  width="12"
-                  height="36"
-                  rx="3"
-                  fill="#c79367"
-                  stroke="#9e704d"
-                />
+                <circle cx="474" cy="166" r="30" fill="#e7d3b8" opacity="0.45" />
+                <rect x="455" y="141" width="38" height="12" rx="3" fill="#c79367" stroke="#9e704d" />
+                <path d="M461 141v12m6-12v12m6-12v12m6-12v12m6-12v12" stroke="#9e704d" strokeWidth="1.2" />
+                <rect x="469" y="154" width="12" height="36" rx="3" fill="#c79367" stroke="#9e704d" />
+                <path d="M469 160h12m-12 6h12m-12 6h12m-12 6h12m-12 6h12" stroke="#9e704d" strokeWidth="1.2" />
               </Part>
             </>
           )}
           <Part {...partProps("cytoskeleton")}>
-            <path
-              d="M108 323Q238 355 308 323M315 58Q340 66 349 92"
-              fill="none"
-              stroke="#6b9997"
-              strokeWidth="4"
-              strokeDasharray="10 4"
-            />
+            <g fill="none" stroke="#6b9997" strokeLinecap="round">
+              {/* Microtubules (thicker) and microfilaments (thin) */}
+              <path
+                d={s.plant ? "M108 323Q238 355 308 323M315 58Q340 66 349 92" : "M108 323Q238 355 308 323M315 58Q340 66 349 92M474 166Q520 120 540 150M474 166Q500 230 530 250"}
+                strokeWidth="3.2"
+              />
+              <path
+                d={s.plant ? "M80 260Q120 240 150 270M70 150Q90 120 120 130M380 70Q420 40 470 60" : "M80 260Q120 240 150 270M380 70Q420 40 470 60M520 300Q480 330 440 320M70 150Q90 120 120 130"}
+                strokeWidth="1.4"
+                opacity="0.8"
+              />
+            </g>
           </Part>
           {s.route && (
             <path

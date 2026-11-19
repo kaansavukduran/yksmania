@@ -23,6 +23,8 @@
 
 - **İslam tarihi görselleri:** Uhud Savaşı (625) aşama aşama oynatılan şema: Uhud Dağı arkada (sıradağ silüeti), okçular Ayneyn Tepesi'nde, ilk üstünlük, okçuların tepeyi bırakması (“boş” işareti), Halid bin Velid süvarilerinin arkadan dolanması, dağa çekiliş ve sonuç; Âl-i İmrân 159 istişare bağlamıyla. 622–632 olay şeridi: Bedir/Uhud savaş, Hendek savunma, Hudeybiye antlaşma, Mekke'nin alınması fetih. Yer sözlüğüne Mekke, Medine, Bedir, Uhud, Hendek Savaşı, Hudeybiye, Hayber, Taif, Mute, Kudüs, Yermük, Kadisiye, Habeşistan eklendi (Sakarya'nın Hendek ilçesi dışlanır, birim testli).
 
+- **Hücre çizimi yeniden yapıldı (aynı etkileşim):** porlu çift çekirdek zarı, kromatin iplikleri ve gölgeli çekirdekçik; çekirdek zarıyla sürekli kıvrımlı granüllü ER keseleri ve üzerinde ribozomlar, borumsu granülsüz ER; beş kavisli Golgi kesesi ve tomurcuklanan veziküller; dış zar + iç zar + kristalı mitokondriler; granum yığınlı kloroplast; büyük/küçük alt birimli serbest ribozomlar; çizgili sentriyoller; mikrotübül ve mikrofilament ağı; lipit çift tabakası görünümlü hücre zarı. Bitki hücresinde sentrozoma bağlı lifler çizilmez.
+
 Doğrulama (yerel): check PASS; 2.500 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
 
 ---
