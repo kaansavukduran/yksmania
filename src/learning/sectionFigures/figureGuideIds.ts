@@ -43,4 +43,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "tyt-geo-silindir-koni-kure-040",
   "tyt-geo-trigonometrik-oranlar-040",
   "selcuklu-yerlesme-devletlesme",
+  "nukleik-asitler-yapi",
+  "dna-eslenmesi",
+  "hucre-organelleri",
 ]);

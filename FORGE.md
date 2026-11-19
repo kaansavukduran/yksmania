@@ -1,3 +1,11 @@
+# Forge045b — biyoloji görselleri: nükleik asit, eşlenme, zar (main)
+
+19 Kasım 2026. Görsel hafıza isteğiyle yedi bölüm figürü. Nükleik asitler: nükleotidi adım adım kur (pentoz karbonları, 1′'e baz, 5′'e fosfat, 2′'de OH/H, 3′ OH'ye sonraki fosfat), antiparalel yön (5′-ATGC-3′ → 3′-TACG-5′ → 5′-GCAT-3′), çift sarmal (omurga dışta, uzun pürin + kısa pirimidin = sabit genişlik, kırmızı 2/3 hidrojen bağı, sarmal 10 bç = 3,4 nm), hidrojen bağı sayacı (G–C sürgüsü, 2a+3g). DNA eşlenmesi: Oynat ile ilerleyen çatal; kesintisiz öncü zincir ve primerli Okazaki parçaları; üç orijinden büyüyüp birleşen kabarcıklar ve çatal sayısı. Hücre: tek zar = 2 lipit katmanı, çift zar = 4, zarsız ribozom. Mevcut hücre laboratuvarı ve altı baz çiftlik eşlenme modeli korunur; yeni figürler onlarda olmayanı gösterir. Keşif kaydedilmez.
+
+Doğrulama: check PASS; 2.477 birim PASS; build PASS; ilgili 6 tarayıcı dosyası 58/58 PASS. Ekran görüntüleriyle etiket çakışmaları düzeltildi.
+
+---
+
 # Forge044b — taktik kütüphanesi (main)
 
 19 Kasım 2026. Drive'daki 9 yöntem okundu ve uygulama içi kütüphaneye dönüştürüldü (`src/learning/tacticLibrary.ts`): iki çözümü karşılaştırıp tek yol seçme, 1'e kalan mesafe, sayı doğrusunda aralık, önce ilişkiyi kur, yol/yer değiştirme uç noktaları, etkileşimden kuvvete, birimle kur–oranla doğrula, çürütme kartı ve ön soru. Her yöntemde nerede kullanılacağı, üç adım, özgün sayılarla yeniden yazılmış 1–3 çözümlü örnek, tuzak, ne zaman kullanılmayacağı ve dürüst kanıt notu var (araştırmalar farklı yaş gruplarından; YKS netine etkisi ölçülmedi). Kopya Kağıtları sayfasında açılır “Soru çözme taktikleri” bölümü: kart aç, örneği önce kendin dene, sonra “çözümü göster”. Sekiz soru yöntemi ayrıca ipucu panelinde ilgili konuların sorularında görünür (soru, konunun bütün derslerine göre eşleşir: denklem 46, birim/mol 60, sözel problem, kesir karşılaştırma, hareket, Newton, biyoloji öncül soruları). Ön soru yöntemi bir çalışma yöntemi olduğu için yalnız kütüphanededir. Drive bağlantıları ve kişisel kimlikler Git'e konmadı. Okumak ve çözüm açmak kaydedilmez, XP üretmez.
