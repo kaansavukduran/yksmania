@@ -1107,6 +1107,19 @@ export const questionTactics: QuestionTactic[] = [
       "Çentik ya da çıkıntının nedeni (göç, doğum dalgası, kayıp) tek kesitten kesinleşmez; okuryazarlık ve gelir piramitten okunmaz (2024 TYT Sosyal 8).",
     ],
   },
+  {
+    id: "nefron-yon",
+    guides: ["nefron-isleyisi", "uriner-organlar"],
+    match: /nefron|süzül|geri emilim|salgıla|glomerul|Bowman|tübül|Henle|ADH|idrar|üre|böbrek/i,
+    title: "Yönü kana göre yaz, bilançoyu kur",
+    steps: [
+      "Süzülme: glomerulus kanından Bowman kapsülüne (basınç farkı); kan hücreleri ve büyük proteinler normalde geçmez.",
+      "Geri emilim: tübülden kana (glikoz, su, iyonlar); salgılama: kandan tübüle (H⁺ gibi). Yönü ters yazma.",
+      "Atılan = süzülen − geri emilen + salgılanan. Süzüntü son idrar değildir; ürenin bir kısmı geri emilebilir.",
+      "Sıra: Bowman kapsülü → proksimal tübül → Henle kulpu → distal tübül → toplama kanalı.",
+      "ADH toplama kanalında su geçirgenliğini artırır: su geri emilimi artar, idrar hacmi azalır, derişimi artar.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

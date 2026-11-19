@@ -104,6 +104,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "ureme-menstrual-dongu",
   "ayt-kodon-antikodon",
   "sinir-sistemi-aksiyon-potansiyeli",
+  "nefron-isleyisi",
   "sinirlayici-artan-madde",
   "yuzde-verim",
   "ayt-limit-sureklilik",

@@ -171,9 +171,49 @@ const actionPotential: FigureDef = {
   },
 };
 
+/* ---------- 5. Nefron bilançosu ---------- */
+const nephronBalance: FigureDef = {
+  caption:
+    "Sürgüyle geri emilen miktarı değiştir (bir madde için temsilî birimler). Glomerulustan Bowman kapsülüne 100 birim süzülür. Tübülden kana dönen kısım geri emilim, kandan tübüle eklenen kısım salgılamadır (burada 10 birim). İdrarla atılan = süzülen − geri emilen + salgılanan. Yön her zaman kana göre yazılır: kana dönüş geri emilim, kandan tübüle geçiş salgılama.",
+  alt: "Üstte tübül (Bowman kapsülünden toplama kanalına), altında ona paralel kılcal damar. Solda damardan kapsüle süzülme oku, ortada tübülden damara geri emilim okları, sağda damardan tübüle salgılama oku; sağ uçta idrarla atılan miktar.",
+  param: { label: "Geri emilen", min: 0, max: 100, step: 5, init: 50, unit: " birim" },
+  draw: (re) => {
+    const filtered = 100;
+    const secreted = 10;
+    const excreted = filtered - re + secreted;
+    const els: El[] = [];
+    const T = 3.6; // tubule bottom
+    els.push(poly([v(0.8, T), v(9.4, T), v(9.4, T + 0.6), v(0.8, T + 0.6)], { tone: "b", fill: "b", thin: true }));
+    els.push(poly([v(0, 0), v(9.4, 0), v(9.4, 0.6), v(0, 0.6)], { tone: "warn", fill: "warn", thin: true }));
+    els.push(txt(v(0.7, T + 0.3), "tübül", "w", { tone: "b", small: true, bold: true }), txt(v(-0.1, 0.3), "kan", "w", { tone: "warn", small: true, bold: true }));
+    // Filtration: blood → capsule at the start.
+    els.push(vec(v(0.4, 0.7), v(1.1, T - 0.1), { tone: "ink", bold: true }));
+    els.push(txt(v(0.4, 0), `süzülme ${filtered}`, "s", { tone: "ink", small: true, bold: true }));
+    // Reabsorption: tubule → blood, one arrow per 25 units.
+    const n = Math.round(re / 25);
+    for (let i = 0; i < n; i++) els.push(vec(v(2.8 + i * 1.1, T - 0.1), v(2.8 + i * 1.1, 0.7), { tone: "c", bold: true }));
+    els.push(txt(v(4.4, T + 0.6), `geri emilim ${re} (tübül → kan)`, "n", { tone: "c", small: true, bold: true }));
+    // Secretion: blood → tubule.
+    els.push(vec(v(8.2, 0.7), v(8.2, T - 0.1), { tone: "a", bold: true }));
+    els.push(txt(v(8.2, 0), `salgılama ${secreted} (kan → tübül)`, "s", { tone: "a", small: true, bold: true }));
+    els.push(vec(v(9.4, T + 0.3), v(10.3, T + 0.3), { tone: "ink", bold: true }), txt(v(10.4, T + 0.3), `idrar ${excreted}`, "e", { tone: "ink", small: true, bold: true }));
+    els.push(txt(v(-1.4, T + 1.4), " ", "c"), txt(v(12.6, -0.9), " ", "c"));
+    return {
+      els,
+      readout: [
+        `Atılan = süzülen − geri emilen + salgılanan = ${filtered} − ${re} + ${secreted} = ${excreted} birim.`,
+        re >= 95
+          ? "Neredeyse tamamı geri emiliyor (glikoz gibi); taşıma maksimumu aşılırsa fazlası idrara geçer."
+          : "Ürenin bir kısmı geri emilebilir; süzülen ürenin tamamı toplama kanalına gitmez (2025 AYT Fen 30). ADH toplama kanalında su geri emilimini artırır, idrar hacmi azalır.",
+      ],
+    };
+  },
+};
+
 export const biologyFiguresAyt: Record<string, Record<string, FigureDef>> = {
   "fotosentez-hiz-faktorleri": { "Işık artışı ve doygunluk platosu": light },
   "ureme-menstrual-dongu": { "LH tepesi ve ovulasyon": cycle },
   "ayt-kodon-antikodon": { "Okuma çerçevesi üçlüleri belirler": frame },
+  "nefron-isleyisi": { "Atılan miktar için üç işlem bilançosu": nephronBalance },
   "sinir-sistemi-aksiyon-potansiyeli": { "Depolarizasyon, repolarizasyon ve hiperpolarizasyon": actionPotential },
 };
