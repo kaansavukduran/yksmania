@@ -151,6 +151,12 @@ function Part({
   );
 }
 const route = ["nucleus", "ribosome", "er", "golgi", "membrane"];
+/* Plant cell: an irregular, slightly rounded polygon like cells in a tissue
+ * section; the inner outline is the cell membrane pressed against the wall. */
+const PLANT_WALL =
+  "M66 28 L300 16 L520 30 Q580 36 576 98 L570 196 L566 300 Q562 370 498 372 L290 386 L92 370 Q24 364 28 300 L32 200 L36 92 Q40 32 66 28Z";
+const PLANT_INNER =
+  "M80 46 L300 34 L512 48 Q558 52 556 104 L552 196 L548 294 Q544 352 492 354 L290 368 L100 352 Q48 348 48 296 L52 200 L54 98 Q56 50 80 46Z";
 export default function CellExplorer() {
   const { l } = useApp();
   const v = useVisualCopy();
@@ -255,31 +261,22 @@ export default function CellExplorer() {
           </defs>
           {s.plant && (
             <Part {...partProps("wall")}>
-              <rect
-                x="22"
-                y="24"
-                width="555"
-                height="350"
-                rx="62"
-                fill="#b2cf97"
-                stroke="#557b52"
-                strokeWidth="10"
-              />
+              <g>
+                {/* Neighbouring cells sharing the wall (middle lamella lines) */}
+                <path d="M300 22L304 0M522 36L540 0M568 200L600 196M560 320L600 336M290 380L286 400M92 366L70 400M34 200L0 206M48 40L20 0" stroke="#7d9c6f" strokeWidth="6" />
+                <path d={PLANT_WALL} fill="#b9d59c" stroke="#557b52" strokeWidth="9" strokeLinejoin="round" />
+                <path d={PLANT_WALL} fill="none" stroke="#8fb27a" strokeWidth="2" strokeLinejoin="round" />
+                {/* Plasmodesmata: thin channels through the wall */}
+                <path d="M200 26v14M420 30v14M562 130h-14M556 260h-14M180 368v-14M390 372v-14M38 140h14M42 280h14" stroke="#557b52" strokeWidth="2.4" />
+              </g>
             </Part>
           )}
           <Part {...partProps("cytoplasm")}>
             {s.plant ? (
-              <rect
-                x="38"
-                y="40"
-                width="525"
-                height="318"
-                rx="50"
-                fill={`url(#${uid}-cyto)`}
-              />
+              <path d={PLANT_INNER} fill={`url(#${uid}-cyto)`} />
             ) : (
               <path
-                d="M42 210 C18 100 123 28 284 40 C428 15 566 76 568 201 C580 314 463 377 293 357 C139 385 47 321 42 210Z"
+                d="M58 205 C44 128 104 62 196 48 C262 36 318 46 372 38 C452 28 534 70 560 142 C580 198 574 262 540 312 C500 364 420 372 346 366 C272 362 214 380 152 356 C88 334 66 272 58 205Z"
                 fill={`url(#${uid}-cyto)`}
               />
             )}
@@ -287,19 +284,19 @@ export default function CellExplorer() {
           <Part {...partProps("membrane")}>
             {s.plant ? (
               <g pointerEvents="stroke">
-                <rect x="38" y="40" width="525" height="318" rx="50" fill="none" stroke="#518b7c" strokeWidth="6" />
-                <rect x="38" y="40" width="525" height="318" rx="50" fill="none" stroke="#d9efe6" strokeWidth="1.4" />
+                <path d={PLANT_INNER} fill="none" stroke="#518b7c" strokeWidth="6" strokeLinejoin="round" />
+                <path d={PLANT_INNER} fill="none" stroke="#d9efe6" strokeWidth="1.4" strokeLinejoin="round" />
               </g>
             ) : (
               <g pointerEvents="stroke">
                 <path
-                  d="M42 210 C18 100 123 28 284 40 C428 15 566 76 568 201 C580 314 463 377 293 357 C139 385 47 321 42 210Z"
+                  d="M58 205 C44 128 104 62 196 48 C262 36 318 46 372 38 C452 28 534 70 560 142 C580 198 574 262 540 312 C500 364 420 372 346 366 C272 362 214 380 152 356 C88 334 66 272 58 205Z"
                   fill="none"
                   stroke="#518b7c"
                   strokeWidth="7"
                 />
                 <path
-                  d="M42 210 C18 100 123 28 284 40 C428 15 566 76 568 201 C580 314 463 377 293 357 C139 385 47 321 42 210Z"
+                  d="M58 205 C44 128 104 62 196 48 C262 36 318 46 372 38 C452 28 534 70 560 142 C580 198 574 262 540 312 C500 364 420 372 346 366 C272 362 214 380 152 356 C88 334 66 272 58 205Z"
                   fill="none"
                   stroke="#d9efe6"
                   strokeWidth="1.6"
