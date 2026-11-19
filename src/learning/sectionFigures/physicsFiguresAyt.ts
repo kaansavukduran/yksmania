@@ -185,7 +185,53 @@ const radius: FigureDef = {
   },
 };
 
+/* ---------- Eğik atış: tamamlayıcı açılar ---------- */
+const projectileAngles: FigureDef = {
+  caption:
+    "Sürgüyle atış açısını değiştir (v₀ = 20 m/s, g = 10 m/s², hava direnci yok, atış ve iniş aynı seviyede). Kesik eğri tamamlayıcı açının (90° − θ) yörüngesidir: menziller eşit, tepe ve uçuş süresi farklı. En büyük menzil 45°'te 40 m. Tepede yalnız düşey hız sıfırdır; yatay hız v₀cosθ sürer.",
+  alt: "Yatay zemin üzerinde iki parabol: seçilen açının yörüngesi ve tamamlayıcı açının kesik yörüngesi; ikisi aynı noktaya düşer. Seçilen yörüngenin tepesinde yatay hız oku.",
+  param: { label: "Atış açısı θ", min: 15, max: 75, step: 5, init: 30, unit: "°" },
+  draw: (deg) => {
+    const g = 10;
+    const v0 = 20;
+    const k = 0.17;
+    const path = (a: number): V[] => {
+      const r = (a * Math.PI) / 180;
+      const T = (2 * v0 * Math.sin(r)) / g;
+      return Array.from({ length: 41 }, (_, i) => {
+        const t = (T * i) / 40;
+        return v(v0 * Math.cos(r) * t * k, (v0 * Math.sin(r) * t - (g * t * t) / 2) * k);
+      });
+    };
+    const r = (deg * Math.PI) / 180;
+    const R = (v0 * v0 * Math.sin(2 * r)) / g;
+    const T = (2 * v0 * Math.sin(r)) / g;
+    const H = (v0 * Math.sin(r)) ** 2 / (2 * g);
+    const vx = v0 * Math.cos(r);
+    const els: El[] = [seg(v(-0.3, 0), v(42 * k, 0), { tone: "ink" })];
+    if (deg !== 45) els.push(poly(path(90 - deg), { tone: "muted", open: true, dash: true, smooth: true }));
+    els.push(poly(path(deg), { tone: "c", open: true, bold: true, smooth: true }));
+    els.push(vec(v(0, 0), v(v0 * Math.cos(r) * 0.08, v0 * Math.sin(r) * 0.08), { tone: "a", bold: true }));
+    els.push(txt(v(v0 * Math.cos(r) * 0.08, v0 * Math.sin(r) * 0.08), "v₀", "ne", { tone: "a", small: true, bold: true }));
+    const top = v((R / 2) * k, H * k);
+    els.push(vec(top, v(top[0] + vx * 0.06, top[1]), { tone: "warn", bold: true }), ball(top, 0.08, "warn"));
+    els.push(txt(v(top[0] + vx * 0.06, top[1]), "vₓ", "e", { tone: "warn", small: true, bold: true }));
+    els.push(ball(v(R * k, 0), 0.08, "c"), txt(v(R * k, 0), `R = ${fmt(R, 1)} m`, "s", { tone: "ink", small: true, bold: true }));
+    els.push(txt(v(-1.0, 3.9), " ", "c"), txt(v(42 * k + 1.0, -0.9), " ", "c"));
+    return {
+      els,
+      readout: [
+        `θ = ${deg}°: vₓ = 20·cos${deg}° = ${fmt(vx, 1)} m/s, v₀y = ${fmt(v0 * Math.sin(r), 1)} m/s · T = 2v₀y/g = ${fmt(T, 2)} s · H = v₀y²/2g = ${fmt(H, 1)} m · R = vₓ·T = ${fmt(R, 1)} m`,
+        deg === 45
+          ? "45°: aynı seviyede en büyük menzil u²/g = 40 m. Birim: (m/s)² ÷ (m/s²) = m."
+          : `${90 - deg}° ile aynı menzil, farklı tepe (${fmt((v0 * Math.cos(r)) ** 2 / (2 * g), 1)} m) ve süre. Farklı iniş seviyesinde bu eşitlik ve 45° kuralı geçerli değil.`,
+      ],
+    };
+  },
+};
+
 export const physicsFiguresAyt: Record<string, Record<string, FigureDef>> = {
+  "egik-atis": { "45° ve tamamlayıcı açılar nerede geçerli?": projectileAngles },
   "cembersel-hareket": { "İvme içe bakar, büyüklüğü sabit olabilir": circular },
   "basit-harmonik-hareket": { "Çembersel hareketin izdüşümü": shm },
   "elektromanyetik-induksiyon": { "Lenz yasası alanı değil değişimi karşılar": lenz },

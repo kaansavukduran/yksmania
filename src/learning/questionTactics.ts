@@ -1016,6 +1016,19 @@ export const questionTactics: QuestionTactic[] = [
       "Sinapsta: AP → Ca²⁺ girişi → kesecik salımı → alıcı reseptör. Bozulan basamağı gözlenen olaydan seç.",
     ],
   },
+  {
+    id: "egik-atis-bilesen",
+    guides: ["egik-atis"],
+    match: /eğik|atış|menzil|tepe|açı|yatay|düşey|v₀|uçuş/i,
+    title: "Hızı iki eksene ayır, ortak zamanı kullan",
+    steps: [
+      "Açı yataydan ölçülüyorsa vₓ = v₀cosθ, v₀y = v₀sinθ. Yatay ivme 0, düşey ivme −g.",
+      "Tepede yalnız vᵧ = 0: t_tepe = v₀y/g, H = v₀y²/(2g); sürat vₓ'tir, momentum sıfır değildir.",
+      "Aynı seviyede T = 2v₀y/g, R = vₓT = v₀²sin2θ/g. θ ile 90° − θ aynı menzil, farklı süre; en büyük menzil 45°.",
+      "Farklı seviye (teras, pike atış): y = y₀ + v₀y·t − gt²/2 denklemini hedef yükseklikte çöz; 2t_tepe formülünü kullanma.",
+      "Enerji: aynı yükseklikte sürat aynı, hız vektörü değil (vᵧ işaret değiştirir). v² = v₀² − 2g(y − y₀).",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
