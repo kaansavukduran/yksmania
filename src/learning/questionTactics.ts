@@ -646,6 +646,29 @@ export const questionTactics: QuestionTactic[] = [
       "Kontrol: dört bölgenin toplamı evrenin eleman sayısına eşit olmalı.",
     ],
   },
+  {
+    id: "hiz-model",
+    guides: ["hiz-problemleri"],
+    match: /km|hız|hızla|saat|araç|tren|köprü|karşılaş|yetiş/i,
+    title: "Hız problemleri",
+    steps: [
+      "Birimleri birleştir (km–sa ya da m–s). Yol = hız × zaman.",
+      "Birbirine gelenler: aralık ÷ (v₁ + v₂). Aynı yönde yetişme: fark ÷ (v₁ − v₂); arkadaki daha hızlı değilse yetişemez.",
+      "Tren köprüyü/tüneli tamamen geçiyorsa ön uç köprü + tren uzunluğu kadar yol alır.",
+      "Ortalama hız = toplam yol ÷ toplam zaman; hızların ortalaması değildir.",
+    ],
+  },
+  {
+    id: "isci-model",
+    guides: ["isci-problemleri"],
+    match: /gün|saat|iş|işçi|musluk|havuz|birlikte/i,
+    title: "İşçi ve havuz problemleri",
+    steps: [
+      "Tek başına t günde bitiren günde işin 1/t'sini yapar. Birlikte hızlar (1/t) toplanır, süreler toplanmaz.",
+      "Ortak süre = 1 ÷ (1/t₁ + 1/t₂); her iki tek başına süreden de kısa olmalı.",
+      "Evreli işlerde yapılan işi düş, kalanı o evrede çalışanların toplam hızına böl. Boşaltan musluk negatif hızdır.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

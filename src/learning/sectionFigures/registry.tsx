@@ -34,6 +34,7 @@ import { mathFiguresAyt } from "./mathFiguresAyt";
 import { mathFiguresAyt2 } from "./mathFiguresAyt2";
 import { mathFiguresAyt3 } from "./mathFiguresAyt3";
 import { mathFiguresTyt } from "./mathFiguresTyt";
+import { mathFiguresTyt2 } from "./mathFiguresTyt2";
 import { chemistryFiguresAtoms } from "./chemistryFiguresAtoms";
 import { turkeyFigures } from "./turkeyFigures";
 import { historyFiguresIslam } from "./historyFiguresIslam";
@@ -75,6 +76,7 @@ export const sectionFigures: Record<string, Record<string, FigureDef>> = {
   ...mathFiguresAyt2,
   ...mathFiguresAyt3,
   ...mathFiguresTyt,
+  ...mathFiguresTyt2,
   ...chemistryFiguresAtoms,
   ...turkeyFigures,
   ...historyFiguresIslam,

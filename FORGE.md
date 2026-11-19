@@ -50,8 +50,10 @@
 - **AYT Matematik (2), 5 rehber daha:** sin x = 1/2 için birim çemberde 30° ve 150° aileleri ve sinüs grafiğinde [0°, 720°) kökleri; x² − 2 üzerinde yatay doğru sürgüsüyle bire birlik testi (ve dikey doğru testi); 1 + … + 6 merdiveni ve ters kopyasıyla 6 × 7 dikdörtgen (Gauss); x³ − 2x + 1 için kalan = P(a) sürgüsü ve x = 1 çarpanı; birim çemberde α = 30° + β dönmesi ve sin(α + β) açılımının sayısal denetimi.
 - **AYT Matematik (3):** ∫ 2x dx = x² + C ailesi, C sürgüsü, paralel teğetler ve F(1) = 3 ile C = 2 seçimi; y = x ile y = x² arası alan (hareketli şerit, 1/6); x²/2 için sol/orta/sağ uç dikdörtgenleri (alt, üst ve orta toplam, 4/3); (0, −1)'den y = x²'ye iki teğet (a = ±1); √x'in x = 4'teki teğetiyle doğrusal yaklaşım ve hata sürgüsü.
 - **TYT Matematik ilk figürler (4 rehber, 5 figür):** |x − 2| = 3'ü sayı doğrusunda merkez ± uzaklık olarak; |x − 2| < 3 (içeri) ve > 3 (dışarı), ≤/≥ dolu uçlar; 40 öğrenci–İngilizce–Almanca Venn'i bölge bölge (7, 18, 11, 4); y = 2x doğrusu ile x·y = 12 hiperbolü ve sabit alanlı dikdörtgen; 2ⁿ ile (1/2)ⁿ üs sürgüsü. İki taktik (mutlak değer, Venn).
+- **TYT Matematik problemleri (4 rehber, 6 figür):** 300 km arayla karşılaşan iki araç (zaman sürgüsü, kapanan aralık), 60 km önden başlayan araca yetişme, 200 m tren – 600 m köprü (ön uç 800 m), A 6 / B 3 gün işçi çubuğu (birlikte 2 gün), %30 tuzlu suya su ekleme (tuz parçacıkları sabit), 12 × 18 alanı 6 × 6 karelerle kaplama (EBOB) ve 12/18 katları buluşması (EKOK 36). Hız ve işçi taktikleri.
+- **Yazı çakışma denetimi:** Geliştirme betiği bütün figürlü dersleri açar; her adımda ve sürgü konumunda SVG yazı kutularının birbirine binmesini ve çerçeveden taşmasını ölçer. Bulunanlar düzeltilir.
 
-Doğrulama (yerel): check PASS; 2.624 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
+Doğrulama (yerel): check PASS; 2.634 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
 
 ---
 
