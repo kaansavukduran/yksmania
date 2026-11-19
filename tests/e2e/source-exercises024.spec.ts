@@ -325,13 +325,17 @@ test("OGM six original cards preserve images and option order through normal Que
     await expect(page.locator(".question-panel h2")).toHaveText(original.stem);
     const image = page.locator(".question-panel .source-figure-open img");
     await expect(image).toHaveAttribute("alt", original.image.alt);
-    expect(
-      await image.evaluate((node: HTMLImageElement) => [
-        node.complete,
-        node.naturalWidth,
-        node.naturalHeight,
-      ]),
-    ).toEqual([true, original.image.width, original.image.height]);
+    // The image may still be decoding right after navigation; poll until it
+    // has loaded instead of sampling a single moment.
+    await expect
+      .poll(() =>
+        image.evaluate((node: HTMLImageElement) => [
+          node.complete,
+          node.naturalWidth,
+          node.naturalHeight,
+        ]),
+      )
+      .toEqual([true, original.image.width, original.image.height]);
     const options = page.locator(".answer-options .answer");
     expect(
       await options.locator("span:nth-child(2)").allTextContents(),
