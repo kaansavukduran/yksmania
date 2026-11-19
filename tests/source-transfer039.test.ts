@@ -102,9 +102,9 @@ it("preserves approved teaching with pinned C10 choice CSS, C7 state and C8 log 
   const lab = readFileSync(new URL("../src/learning/PowersSource039Lab.tsx", import.meta.url), "utf8");
   expect((lab.match(/usePower039State(?:<[^>]+>)?\(/g) ?? [])).toHaveLength(40);
   expect(lab).not.toMatch(/useState\(/);
-  expect(lessons).toHaveLength(537);
-  expect(lessons.flatMap((value) => value.questions)).toHaveLength(6429);
-  expect(lessonGuides.size).toBe(502);
-  expect(builtInCheatSheets.size).toBe(502);
-  expect(studyTopics).toHaveLength(501);
+  expect(lessons).toHaveLength(538);
+  expect(lessons.flatMap((value) => value.questions)).toHaveLength(6441);
+  expect(lessonGuides.size).toBe(503);
+  expect(builtInCheatSheets.size).toBe(503);
+  expect(studyTopics).toHaveLength(502);
 });

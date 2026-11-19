@@ -354,6 +354,185 @@ const cember: Record<string, FigureDef> = {
   },
 };
 
+const sector = (o: V, r: number, a0: number, a1: number, tone: "a" | "b" | "c" | "warn" | "muted" = "a"): El => ({
+  k: "poly",
+  ps: [o, ...Array.from({ length: 41 }, (_, i) => pol(r, a0 + ((a1 - a0) * i) / 40, o))],
+  fill: tone,
+  tone,
+  thin: true,
+});
+
+const daire: Record<string, FigureDef> = {
+  "Çember bir çizgi, daire bir bölgedir": {
+    caption: "Sol: çember yalnız sınır çizgisidir; uzunluğu çevredir (cm). Sağ: daire iç bölgedir; kapladığı yer alandır (cm²).",
+    alt: "Solda içi boş, kalın çizgili çember; sağda içi boyalı daire.",
+    draw: () => ({
+      els: [
+        circle(v(0, 0), 2.2, { tone: "a", bold: true }),
+        txt(v(0, -2.6), "çember: uzunluk (çevre)", "s", { small: true, bold: true }),
+        circle(v(6.5, 0), 2.2, { tone: "b", fill: "b" }),
+        txt(v(6.5, -2.6), "daire: bölge (alan)", "s", { small: true, bold: true }),
+      ],
+    }),
+  },
+  "π, çevrenin çapa oranıdır": {
+    caption: "Yarıçapı değiştir: çember açılınca elde edilen doğru parçası 2πr uzunluğundadır; çapın yaklaşık 3,14 katı. Oran her yarıçapta aynıdır.",
+    alt: "Solda çember ve çapı; sağda çemberin açılmasıyla oluşan uzun doğru parçası ve üzerinde çap uzunluğunda üç işaret.",
+    param: { label: "r", min: 0.5, max: 1.5, step: 0.25, init: 1, unit: "" },
+    draw: (r) => {
+      const C = 2 * Math.PI * r;
+      return {
+        els: [
+          circle(v(0, 0), r, { tone: "a", bold: true }),
+          seg(v(-r, 0), v(r, 0), { tone: "b" }),
+          seg(v(2, -1.6), v(2 + C, -1.6), { tone: "a", bold: true }),
+          ...[0, 1, 2, 3].map((k) => seg(v(2 + k * 2 * r, -1.8), v(2 + k * 2 * r, -1.4), { tone: "b" })),
+          txt(v(2 + C / 2, -1.6), `çevre = 2π·${fmt(r, 2)} ≈ ${fmt(C, 2)}`, "s", { small: true, tone: "a" }),
+          txt(v(0, 0), `çap ${fmt(2 * r, 2)}`, "n", { small: true, tone: "b" }),
+        ],
+        readout: [`çevre / çap = ${fmt(C, 2)} / ${fmt(2 * r, 2)} = ${fmt(Math.PI, 2)}`],
+      };
+    },
+  },
+  "Daire alanını dilimlerden kur": {
+    caption: "Dilim sayısını artır: dilimler ters–düz dizilince şekil, tabanı πr ve yüksekliği r olan dikdörtgene yaklaşır; alan πr² olur.",
+    alt: "Yan yana sırayla yukarı ve aşağı bakan ince daire dilimleri; dilim sayısı arttıkça dikdörtgene benzeyen şerit.",
+    param: { label: "dilim", min: 4, max: 24, step: 2, init: 8, unit: "" },
+    draw: (n) => {
+      const r = 2;
+      const w = (Math.PI * r) / (n / 2);
+      const half = 180 / n;
+      const els: El[] = [];
+      for (let i = 0; i < n; i++) {
+        const up = i % 2 === 0;
+        const x = (i * w) / 2;
+        const o = up ? v(x + w / 2, 0) : v(x + w / 2, r);
+        const dir = up ? 90 : -90;
+        els.push(sector(o, r, dir - half, dir + half, up ? "b" : "c"));
+      }
+      return {
+        els: [
+          ...els,
+          txt(v((Math.PI * r) / 2 + w / 4, -0.3), "≈ πr", "s", { small: true, bold: true }),
+          txt(v(-0.2, r / 2), "r", "w", { small: true, bold: true }),
+        ],
+        readout: [`Alan ≈ πr · r = πr² (dilim sayısı ${n})`],
+      };
+    },
+  },
+  "Yay uzunluğu açıyla orantılıdır": {
+    caption: "r = 6. Merkez açıyı değiştir: yay, çemberin α/360'lık kısmıdır; uzunluğu 2π·6·α/360.",
+    alt: "Çemberde merkez açı ve kalın çizilmiş yay; yay uzunluğu etiketi.",
+    param: { label: "α", min: 30, max: 330, step: 30, init: 60, unit: "°" },
+    draw: (a) => {
+      const r = 3;
+      const arc = Array.from({ length: 61 }, (_, i) => pol(r, (a * i) / 60, O));
+      return {
+        els: [
+          circle(O, r, { tone: "muted" }),
+          { k: "poly", ps: arc, open: true, tone: "a", bold: true },
+          seg(O, pol(r, 0, O), { tone: "b" }),
+          seg(O, pol(r, a, O), { tone: "b" }),
+          ang(O, pol(r, 0, O), pol(r, a, O), `${a}°`, { tone: "b", reflex: a > 180 }),
+          pt(O, "O", "sw"),
+        ],
+        readout: [`ℓ = 2π·6·${a}/360 = ${fmt((12 * a) / 360, 2)}π`],
+      };
+    },
+  },
+  "Daire dilimi alanı da aynı oranla bulunur": {
+    caption: "r = 6. Açıyı değiştir: dilim alanı πr²·α/360 ve yay·r/2 aynı sonucu verir.",
+    alt: "Boyalı daire dilimi ve onu çevreleyen soluk çember.",
+    param: { label: "α", min: 30, max: 330, step: 30, init: 120, unit: "°" },
+    draw: (a) => ({
+      els: [circle(O, 3, { tone: "muted" }), sector(O, 3, 0, a, "a"), pt(O, "O", "sw"), txt(pol(1.5, a / 2, O), `${a}°`, "c", { small: true, bold: true })],
+      readout: [`A = 36π·${a}/360 = ${fmt(a / 10, 1)}π`, `yay·r/2 = ${fmt((12 * a) / 360, 2)}π·6/2 = ${fmt(a / 10, 1)}π`],
+    }),
+  },
+  "Halka: büyükten küçüğü çıkar": {
+    caption: "R = 5, iç yarıçapı değiştir: halka alanı π(R² − r²). Küçük çembere teğet kirişin yarısı t için t² = R² − r²; halka alanı πt².",
+    alt: "İç içe iki çember, arası boyalı halka; küçük çembere teğet olan büyük çember kirişi ve yarısı.",
+    param: { label: "r", min: 1, max: 4.5, step: 0.5, init: 3, unit: "" },
+    draw: (r) => {
+      const R = 5;
+      const t = Math.sqrt(R * R - r * r);
+      return {
+        els: [
+          circle(O, R, { tone: "b", fill: "b" }),
+          circle(O, r, { tone: "ink", fill: "muted" }),
+          seg(v(-t, -r), v(t, -r), { tone: "a", bold: true }),
+          seg(O, v(0, -r), { tone: "muted", dash: true }),
+          seg(O, v(t, -r), { tone: "c" }),
+          right(v(0, -r), O, v(t, -r), "muted"),
+          txt(v(t / 2, -r), `t = ${fmt(t, 2)}`, "s", { small: true, tone: "a" }),
+          pt(O, "O", "nw"),
+        ],
+        readout: [`Halka = π(25 − ${fmt(r * r, 2)}) = ${fmt(25 - r * r, 2)}π = πt²`],
+      };
+    },
+  },
+  "Daire parçası: dilimden üçgeni çıkar": {
+    caption: "r = 6. Açıyı değiştir: kiriş ile yay arasındaki parça = dilim − üçgen (üçgen alanı ½·r²·sin α).",
+    alt: "Çemberde dilim, dilimin içindeki üçgen ve kiriş ile yay arasında kalan boyalı daire parçası.",
+    param: { label: "α", min: 60, max: 150, step: 30, init: 90, unit: "°" },
+    draw: (a) => {
+      const r = 3;
+      const A = pol(r, 0, O);
+      const B = pol(r, a, O);
+      const seg040: V[] = Array.from({ length: 41 }, (_, i) => pol(r, (a * i) / 40, O));
+      const tri = 0.5 * 36 * Math.sin((a * Math.PI) / 180);
+      return {
+        els: [
+          circle(O, r, { tone: "muted" }),
+          { k: "poly", ps: [O, A, B], fill: "muted", tone: "b", thin: true },
+          { k: "poly", ps: seg040, fill: "a", tone: "a", thin: true },
+          ang(O, A, B, `${a}°`, { tone: "b" }),
+          pt(O, "O", "sw"),
+          pt(A, "A", "e"),
+          pt(B, "B", "n"),
+        ],
+        readout: [`Parça = ${fmt(a / 10, 1)}π − ${fmt(tri, 2)}`],
+      };
+    },
+  },
+  "Yarıçap k katına çıkınca": {
+    caption: "k'yı değiştir: yarıçap k katına çıkınca çevre k, alan k² katına çıkar. Küçük daire içine kaç tane sığdığı alan oranını gösterir.",
+    alt: "Küçük ve büyük daire yan yana; büyük dairenin yarıçapı küçüğün k katı.",
+    param: { label: "k", min: 1, max: 3, step: 0.5, init: 2, unit: "" },
+    draw: (k) => ({
+      els: [
+        circle(v(0, 0), 1, { tone: "a", fill: "a" }),
+        circle(v(2 + k * 1.2, 0), k, { tone: "b", fill: "b" }),
+        txt(v(0, -1.3), "r", "s", { small: true }),
+        txt(v(2 + k * 1.2, -k - 0.3), `${fmt(k)}r`, "s", { small: true }),
+      ],
+      readout: [`Çevre oranı ${fmt(k)}, alan oranı ${fmt(k * k, 2)}`],
+    }),
+  },
+  "Boyalı alan sorusunu ekle–çıkar ile çöz": {
+    caption: "Kenarı 4 olan karede, merkezi A olan r = 4 çeyrek daire. Boyalı bölge = kare − çeyrek daire = 16 − 4π ≈ 3,43.",
+    alt: "Kare, sol alt köşe merkezli çeyrek daire ve karenin sağ üst köşesinde kalan boyalı bölge.",
+    draw: () => {
+      const s = 4;
+      const arc = Array.from({ length: 41 }, (_, i) => pol(s, (90 * i) / 40, v(0, 0)));
+      return {
+        els: [
+          { k: "poly", ps: [v(s, 0), v(s, s), v(0, s), ...[...arc].reverse()], fill: "warn", tone: "warn", thin: true },
+          { k: "poly", ps: [v(0, 0), v(s, 0), v(s, s), v(0, s)], tone: "ink" },
+          { k: "poly", ps: arc, open: true, tone: "a", bold: true },
+          pt(v(0, 0), "A", "sw"),
+          pt(v(s, 0), "B", "se"),
+          pt(v(s, s), "C", "ne"),
+          pt(v(0, s), "D", "nw"),
+          txt(v(3.55, 3.55), "?", "c", { bold: true }),
+        ],
+        readout: ["16 − π·16/4 = 16 − 4π"],
+      };
+    },
+  },
+};
+
 export const geometryFiguresCircle040: Record<string, Record<string, FigureDef>> = {
   "tyt-geo-cember-aci-040": cember,
+  "tyt-geo-daire-040": daire,
 };

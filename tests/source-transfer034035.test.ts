@@ -84,14 +84,14 @@ it("preserves every accepted 033 lesson, guide, summary, question value and thei
 });
 
 it("adds exactly two rich source companions and 94 fully guided self-contained cards", () => {
-  expect(lessons).toHaveLength(537);
-  expect(lessons.flatMap((l) => l.questions)).toHaveLength(6429);
-  expect(lessonGuides.size).toBe(502);
-  expect(builtInCheatSheets.size).toBe(502);
-  expect(studyTopics).toHaveLength(501);
+  expect(lessons).toHaveLength(538);
+  expect(lessons.flatMap((l) => l.questions)).toHaveLength(6441);
+  expect(lessonGuides.size).toBe(503);
+  expect(builtInCheatSheets.size).toBe(503);
+  expect(studyTopics).toHaveLength(502);
   expect(
     new Set(lessons.flatMap((l) => l.questions).map((q) => q.id)).size,
-  ).toBe(6429);
+  ).toBe(6441);
   for (const pack of packs) {
     const lesson = lessonById(pack.id)!;
     const guide = lessonGuides.get(pack.id)!;

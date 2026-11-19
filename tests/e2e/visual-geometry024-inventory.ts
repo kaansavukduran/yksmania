@@ -120,4 +120,10 @@ export const geometrySummary024Inventory = [
     title: "Çemberde açı, kiriş ve teğet",
     subjectId: "tyt-geometri",
   },
+  {
+    topicId: "topic-tyt-geo-daire-040",
+    lessonId: "tyt-geo-daire-040",
+    title: "Daire, daire dilimi, çevre ve alan",
+    subjectId: "tyt-geometri",
+  },
 ] as const;

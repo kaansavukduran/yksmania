@@ -408,6 +408,7 @@ const SectionFigure = lazy(() =>
 );
 const summaryFigure040: Record<string, string> = {
   "tyt-geo-cember-aci-040": "Çevre açı yayın yarısıdır",
+  "tyt-geo-daire-040": "Daire alanını dilimlerden kur",
 };
 
 export function VisualLab({ id }: { id: string }) {

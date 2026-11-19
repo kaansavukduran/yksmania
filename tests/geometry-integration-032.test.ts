@@ -52,11 +52,11 @@ describe("032 source transfer retains old learning while adding usable geometry"
   });
 
   it("provides eight full lessons, distinct concise summaries and134 fully explained independent questions", () => {
-    expect(lessons).toHaveLength(537);
-    expect(lessons.flatMap((l) => l.questions)).toHaveLength(6429);
-    expect(lessonGuides.size).toBe(502);
-    expect(builtInCheatSheets.size).toBe(502);
-    expect(studyTopics).toHaveLength(501);
+    expect(lessons).toHaveLength(538);
+    expect(lessons.flatMap((l) => l.questions)).toHaveLength(6441);
+    expect(lessonGuides.size).toBe(503);
+    expect(builtInCheatSheets.size).toBe(503);
+    expect(studyTopics).toHaveLength(502);
     const all = lessons.flatMap((l) => l.questions);
     expect(new Set(all.map((q) => q.id)).size).toBe(all.length);
     let questions = 0;
