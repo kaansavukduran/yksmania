@@ -148,7 +148,7 @@ Laboratuvar kuralları: “Tahmin et → Oynat → Gör”, 2–3 sınav senaryo
 ```
 Forge turu — <tarih>
 PDF: <okunan> / 8.981 (%<oran>) · kopya kâğıdı <k> / 517 (%<oran>, ders ders tablo) · figürlü rehber <n> / 371 · bölüm figürü <m>
-Ders oranları: TYT <...> · AYT Sayısal <...> · Denemeler <...> · Kopya kâğıtları/taktik <...>
+Ders tablosu (tüm YKS dersleri, uygulama verisinden): resmî konu · uygulama dersi · anlatımlı · soru · figürlü ders % · bölüm figürü · taktikli ders · kopya kâğıdı işlenen
 Bu tur: <kaynak> → <katman>; <özellik>
 Testler: check ✓ · birim <sayı> ✓ · build ✓ · e2e <kapsam>
 Yayın: main <sha> · Pages <durum> · APK <durum>

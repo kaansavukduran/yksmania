@@ -96,28 +96,30 @@ Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen boz
 
 PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olarak etiketlenmez.
 
-### Ders başına kapsam (19 Kasım, uygulama verisinden sayıldı)
+### Ders başına konu işleme (tüm YKS dersleri, uygulama verisinden üretildi)
 
-“Resmî konu” = uygulamadaki ÖSYM tabanlı konu listesi (`curriculum.json`, 341 konu). “Ders” = uygulamadaki ayrıntılı çalışma başlığı; bir resmî konu birden çok derse bölünebilir. Sorular özgündür.
+Bu tablo her turda uygulamanın kendi verisinden yeniden üretilir. “Resmî konu” = `curriculum.json` (ÖSYM tabanlı 341 konu). “Uygulama dersi” = ayrıntılı çalışma başlığı (bir resmî konu birden çok derse bölünebilir). “Anlatımlı” = sıfırdan konu anlatımı (rehber) olan ders. “Figürlü ders” = en az bir etkileşimli bölüm figürü olan ders. “Taktikli ders” = soru tipi taktiği bağlı ders. “Kopya kâğıdı” = Drive `04_Kopya Kâğıtları` içindeki o dersin kâğıtlarından okunup uygulamaya aktarılan. Sorular özgündür.
 
-| Ders | Resmî konu | Uygulama dersi | Anlatımlı | Soru (toplam) | Video önerili | Bölüm şekilli |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| TYT Türkçe | 22 | 34 | 33 | 380 | 33 | 0 |
-| TYT Matematik | 31 | 45 | 40 | 735 | 40 | 1 |
-| TYT Geometri | 16 | 19 | 19 | 217 | 14 | 19 |
-| TYT Fizik | 20 | 28 | 24 | 311 | 24 | 17 |
-| TYT Kimya | 17 | 57 | 55 | 535 | 55 | 0 |
-| TYT Biyoloji | 18 | 45 | 36 | 515 | 36 | 0 |
-| TYT Tarih | 22 | 34 | 24 | 390 | 24 | 1 |
-| TYT Coğrafya | 21 | 40 | 40 | 400 | 40 | 0 |
-| TYT Felsefe | 15 | 17 | 17 | 190 | 17 | 0 |
-| TYT Din | 19 | 20 | 20 | 371 | 20 | 0 |
-| AYT Matematik | 36 | 18 | 17 | 253 | 17 | 0 |
-| AYT Geometri | 9 | 4 | 4 | 40 | 4 | 4 |
-| AYT Fizik | 32 | 47 | 46 | 541 | 46 | 0 |
-| AYT Kimya | 34 | 56 | 55 | 680 | 55 | 0 |
-| AYT Biyoloji | 29 | 76 | 75 | 907 | 75 | 0 |
-| **Toplam** | **341** | **540** | **505** | **6.465** | **500** | **41** |
+| Ders | Resmî konu | Uygulama dersi | Anlatımlı | Soru | Figürlü ders | Bölüm figürü | Taktikli ders | Kopya kâğıdı işlenen |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| TYT Türkçe | 22 | 34 | 33 | 380 | 2 (%5,9) | 6 | 1 | 1 / 33 (%3,0) |
+| TYT Matematik | 31 | 45 | 40 | 735 | 13 (%28,9) | 29 | 18 | 1 / 38 (%2,6) |
+| TYT Geometri | 16 | 19 | 19 | 217 | 19 (%100,0) | 174 | 15 | 0 / 32 (%0,0) |
+| TYT Fizik | 20 | 28 | 24 | 311 | 24 (%85,7) | 177 | 23 | 7 / 24 (%29,2) |
+| TYT Kimya | 17 | 57 | 55 | 535 | 11 (%19,3) | 31 | 13 | 7 / 56 (%12,5) |
+| TYT Biyoloji | 18 | 45 | 36 | 515 | 12 (%26,7) | 37 | 14 | 7 / 36 (%19,4) |
+| TYT Tarih | 22 | 34 | 24 | 390 | 3 (%8,8) | 8 | 1 | 1 / 24 (%4,2) |
+| TYT Coğrafya | 21 | 40 | 40 | 400 | 3 (%7,5) | 4 | 0 | 0 / 40 (%0,0) |
+| TYT Felsefe | 15 | 17 | 17 | 190 | 0 (%0,0) | 0 | 0 | 0 / 17 (%0,0) |
+| TYT Din | 19 | 20 | 20 | 371 | 1 (%5,0) | 1 | 0 | 0 / 20 (%0,0) |
+| AYT Matematik | 36 | 18 | 17 | 253 | 13 (%72,2) | 17 | 4 | 1 / 17 (%5,9) |
+| AYT Geometri | 9 | 4 | 4 | 40 | 4 (%100,0) | 49 | 4 | 0 / 4 (%0,0) |
+| AYT Fizik | 32 | 47 | 46 | 541 | 6 (%12,8) | 6 | 10 | 1 / 46 (%2,2) |
+| AYT Kimya | 34 | 56 | 55 | 680 | 18 (%32,1) | 19 | 14 | 11 / 55 (%20,0) |
+| AYT Biyoloji | 29 | 76 | 75 | 907 | 6 (%7,9) | 10 | 1 | 1 / 75 (%1,3) |
+| **Toplam** | **341** | **540** | **505** | **6.465** | **135 (%25,0)** | **568** | **118** | **38 / 517 (%7,4)** |
+
+Okuma: anlatım ve soru bütün derslerde var (505 / 540 derste anlatım, 6.465 özgün soru); eksik olan en çok görsel/etkileşimli katman (figürlü ders %25) ve kopya kâğıtlarından aktarım (%7,4). AYT Matematik ve AYT Geometri'de resmî konu sayısı uygulama dersinden fazladır, çünkü bu derslerde birkaç resmî konu tek derste toplanmıştır.
 
 Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan konular):
 
