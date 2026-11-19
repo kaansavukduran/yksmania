@@ -951,6 +951,19 @@ export const questionTactics: QuestionTactic[] = [
       "İndirgenme: aldehit → birincil, keton → ikincil alkol; C iskeleti korunur.",
     ],
   },
+  {
+    id: "ester-iki-parca",
+    guides: ["ayt-esterler"],
+    match: /ester|etanoat|metanoat|propanoat|hidroliz|esterleş|sabun|asetat/i,
+    title: "Esteri asit ve alkol tarafına ayır",
+    steps: [
+      "C=O'yu bul; karbonil C'si asit tarafındadır. Tek bağlı O'nun öte yanı alkol tarafıdır.",
+      "Ad: önce alkol tarafı (metil, etil, propil), sonra asit tarafı -oat (etanoat, propanoat). CH₃COOCH₃ = metil etanoat, Y = OCH₃.",
+      "Asitli hidroliz: asit + alkol (denge). NaOH ile: karboksilat tuzu + alkol; asitleştirme verilmedikçe nötr asit yazma.",
+      "Esterleşme 1 : 1; sınırlayıcıyı bul, verimi ona uygula. Oluşan ester kadar su oluşur.",
+      "İzomer sayımında 1+3 ile 3+1 farklıdır (iki taraf eşdeğer değil); C₄H₈O₂ için 4 ester. Eter (C–O–C) karbonil taşımaz.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

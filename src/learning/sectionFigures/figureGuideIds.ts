@@ -87,6 +87,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "ayt-eterler",
   "ayt-enerji-kaynaklari-gelismeler",
   "ayt-aldehit-keton",
+  "ayt-esterler",
   "molekul-geometrisi",
   "ayt-alkenler",
   "fotosentez-hiz-faktorleri",

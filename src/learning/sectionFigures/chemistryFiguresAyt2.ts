@@ -340,6 +340,50 @@ const tollensMix: FigureDef = {
   },
 };
 
+/* ---------- 10. Esterin iki parçası ---------- */
+const esterParts: FigureDef = {
+  caption:
+    "İleri ile üç esteri ikiye ayır. Karbonil karbonu (C=O) asit tarafındadır ve sayılır; O'nun öbür yanındaki grup alkol tarafıdır. Ad alkol tarafıyla başlar (metil, etil, propil), asit tarafı -oat ile biter. Üçü de C₄H₈O₂ ama farklı bağlantılardır: ester grubunun iki yanı eşdeğer değildir, 1+3 ile 3+1 ayrı esterdir.",
+  alt: "Yan yana kutular: solda asit tarafının karbonları ve karbonil karbonu (üstünde =O), ortada ester oksijeni, sağda alkol tarafı. Altında iki tarafın adı ve karbon sayısı.",
+  steps: ["Etil etanoat (2 + 2)", "Metil propanoat (3 + 1)", "Propil metanoat (1 + 3)"],
+  draw: (_v, step) => {
+    const data: { acid: string[]; alcohol: string; acidName: string; alcName: string; nA: number; nB: number; formula: string }[] = [
+      { acid: ["CH₃"], alcohol: "CH₂CH₃", acidName: "etanoat", alcName: "etil", nA: 2, nB: 2, formula: "CH₃COOCH₂CH₃" },
+      { acid: ["CH₃", "CH₂"], alcohol: "CH₃", acidName: "propanoat", alcName: "metil", nA: 3, nB: 1, formula: "CH₃CH₂COOCH₃" },
+      { acid: ["H"], alcohol: "CH₂CH₂CH₃", acidName: "metanoat", alcName: "propil", nA: 1, nB: 3, formula: "HCOOCH₂CH₂CH₃" },
+    ];
+    const d = data[step];
+    const els: El[] = [];
+    const box = (x: number, w: number, label: string, tone: Tone) => {
+      els.push(poly([v(x, 0), v(x + w, 0), v(x + w, 0.8), v(x, 0.8)], { tone, fill: tone, thin: true }));
+      els.push(txt(v(x + w / 2, 0.4), label, "c", { tone: "ink", small: true, bold: true }));
+    };
+    let x = 0;
+    for (const g of d.acid) {
+      box(x, 1.0, g, "b");
+      x += 1.1;
+    }
+    const cx = x;
+    box(x, 0.8, "C", "b");
+    els.push(seg(v(cx + 0.33, 0.8), v(cx + 0.33, 1.4), { tone: "ink" }), seg(v(cx + 0.47, 0.8), v(cx + 0.47, 1.4), { tone: "ink" }), txt(v(cx + 0.4, 1.4), "O", "n", { tone: "ink", small: true, bold: true }));
+    x += 0.9;
+    box(x, 0.7, "O", "muted");
+    x += 0.8;
+    const alcW = Math.max(1.2, d.alcohol.length * 0.22);
+    box(x, alcW, d.alcohol, "a");
+    const end = x + alcW;
+    els.push(txt(v(cx / 2 + 0.4, -0.15), `asit tarafı: ${d.acidName} (${d.nA} C)`, "s", { tone: "b", small: true, bold: true }));
+    els.push(txt(v(x + alcW / 2, -0.75), `alkol tarafı: ${d.alcName} (${d.nB} C)`, "s", { tone: "a", small: true, bold: true }));
+    els.push(txt(v(-0.6, 2.4), " ", "c"), txt(v(Math.max(end, 6.4) + 0.6, -1.9), " ", "c"));
+    const rows: [string, string][] = [
+      [`${d.formula}: ${d.alcName} ${d.acidName}. Toplam ${d.nA} + ${d.nB} = 4 C, formül C₄H₈O₂.`, "Hidroliz (H⁺): etanoik asit + etanol. NaOH ile: sodyum etanoat + etanol."],
+      [`${d.formula}: ${d.alcName} ${d.acidName}. Asit tarafı karbonil dahil 3 C.`, "Propanoik asit + metanol → metil propanoat + su (1 : 1 : 1 : 1, denge)."],
+      [`${d.formula}: ${d.alcName} ${d.acidName}. Asit tarafında yalnız karbonil C'si var (H–C=O).`, "Üç C'li alkol O'ya ortadan da bağlanabilir: propan-2-il metanoat. C₄H₈O₂ için toplam 4 ester."],
+    ];
+    return { els, readout: rows[step] };
+  },
+};
+
 export const chemistryFiguresAyt2: Record<string, Record<string, FigureDef>> = {
   "faraday-yasalari": { "Elektron molünden ürün molüne geç": faraday },
   "molekul-geometrisi": { "Dört bölge: düzgün dört yüzlü": tetra },
@@ -350,4 +394,5 @@ export const chemistryFiguresAyt2: Record<string, Record<string, FigureDef>> = {
   "ayt-eterler": { "Alıcı ile verici ayrımı": etherHBond },
   "ayt-enerji-kaynaklari-gelismeler": { "Isıl değer ile verim farklıdır": twoStage },
   "ayt-aldehit-keton": { "Karışım ve çökelek hesabı": tollensMix },
+  "ayt-esterler": { "Asit ve alkol parçalarını ayırmak": esterParts },
 };
