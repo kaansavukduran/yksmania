@@ -84,7 +84,7 @@ function guideIndex(guideId: string): SectionIndex[] {
 }
 
 let lessonOfQuestion: Map<string, string> | undefined;
-function questionLesson(id: string) {
+export function questionLesson(id: string) {
   if (!lessonOfQuestion) {
     lessonOfQuestion = new Map();
     for (const l of lessons) for (const q of l.questions) lessonOfQuestion.set(q.id, l.id);

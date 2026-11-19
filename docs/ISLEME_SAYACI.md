@@ -81,7 +81,7 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | AYT Biyoloji | 75 | 0 |
 | **Toplam** | **371** | **41 (%11,1)** |
 
-Toplam bölüm figürü: 382 (434 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 34.
+Toplam bölüm figürü: 382 (434 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 42 (34 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
 
 TYT Fizik'te figürü olmayan 7 rehber: fizik bilimine giriş, madde ve özkütle, prizmalar ve renkler, ses ve deprem dalgaları, ışık bilgisi, durgun elektrik, mıknatıslar ve manyetik alan.
 
@@ -97,3 +97,4 @@ TYT Fizik'te figürü olmayan 7 rehber: fizik bilimine giriş, madde ve özkütl
 | 19 Kasım (5) | Yeni ders: Silindir, koni ve küre (9 şekil, 12 soru); öncüllü soruların satır satır gösterimi | 0 | 40 / 370 |
 | 19 Kasım (6) | Yeni ders: Dik üçgende trigonometrik oranlar (8 şekil, 12 soru) | 0 | 41 / 371 |
 | 19 Kasım (7) | Tarih: Malazgirt, Miryokefalon ve Kösedağ aşama aşama oynatılan savaş şemaları + 1071–1243 karşı güç zaman şeridi (4 figür) | 0 | 41 / 371 (sayısal değişmedi) |
+| 19 Kasım (8) | Taktik kütüphanesi: Drive 08_Taktik Dosya'daki 9 yöntem (dizin + 9 belge okundu) özgün örneklerle uygulamaya; ipucu panelinde 8 yöntem | 0 (10 Drive dokümanı okundu, PDF değil) | 41 / 371 |

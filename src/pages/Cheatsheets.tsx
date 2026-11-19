@@ -7,6 +7,7 @@ import { Empty, SubjectMark } from "../components/Shared";
 import { StudyTimer } from "../components/StudyTimer";
 import { builtInCheatSheets } from "../learning/cheatsheetContent";
 import { CheatReader } from "../learning/CheatReader";
+import { TacticLibrary } from "../learning/TacticLibraryPanel";
 import "../cheatsheets.css";
 
 export function Cheatsheets({
@@ -177,6 +178,7 @@ export function Cheatsheets({
               .name.tr.toLocaleLowerCase("tr-TR")
               .includes(query)),
       ) && <Empty text="Bu aramada hazır kopya kağıdı bulunamadı." />}
+      <TacticLibrary />
       <p className="scope-note">
         Hazırlanmış içerikler listelenir. Yeni konu kağıtları içerik
         güncellemeleriyle eklenir.

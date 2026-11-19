@@ -1,4 +1,6 @@
-import { figureGuidesFor } from "./sectionFigures/hintFigure";
+import { questionLesson } from "./sectionFigures/hintFigure";
+import { lessonTopic, topicLessons } from "../domain/studyPlan";
+import { methodTactics } from "./tacticLibrary";
 
 /*
  * Question-type tactics: short, exam-oriented approaches shown in the first
@@ -405,9 +407,22 @@ export const questionTactics: QuestionTactic[] = [
   },
 ];
 
+// Method tactics from the tactic library join the topic tactics in hints.
+for (const m of methodTactics)
+  if (m.kind === "question" && m.match)
+    questionTactics.push({ id: m.id, guides: m.guides, match: m.match, title: m.title, steps: m.steps });
+
+/** The question's own lesson plus the other lessons of the same topic. */
+export function topicGuidesFor(questionId: string): string[] {
+  const lessonId = questionLesson(questionId);
+  if (!lessonId) return [];
+  const topic = lessonTopic[lessonId];
+  return [lessonId, ...(topic ? topicLessons(topic).map((l) => l.id) : [])];
+}
+
 /** Tactics that apply to this question, in list order (at most two). */
 export function tacticsFor(question: { id: string; prompt: string; passage?: string }) {
-  const guides = new Set(figureGuidesFor(question.id));
+  const guides = new Set(topicGuidesFor(question.id));
   if (!guides.size) return [];
   const text = `${question.passage ?? ""} ${question.prompt}`;
   return questionTactics.filter((t) => t.guides.some((g) => guides.has(g)) && t.match.test(text)).slice(0, 2);
