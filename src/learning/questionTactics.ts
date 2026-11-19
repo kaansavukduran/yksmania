@@ -1214,6 +1214,19 @@ export const questionTactics: QuestionTactic[] = [
       "Sayaç verisinde önce aynı süreye çevir, arka planı çıkar, sonra oranla. A korunması fiziksel kütlenin korunması değildir (Q = Δm·c²).",
     ],
   },
+  {
+    id: "alan-riemann-toplam",
+    guides: ["ayt-alan-riemann"],
+    match: /alan|Riemann|toplam|dikdörtgen|integral|eğri/i,
+    title: "Alanda işareti, toplamda genişlik ve uç seçimini denetle",
+    steps: [
+      "Alan için kökleri bul ve aralığı böl; eksenin altındaki parçanın integraline eksi uygula. |∫f| ile ∫|f| aynı değildir.",
+      "İki eğri arasında her aralıkta üst − alt yaz; kesişimde üstlük değişebilir.",
+      "Riemann toplamında her dikdörtgen = kendi genişliği × örnek yüksekliği; eşit bölmede Δx = (b − a)/n, farklı genişlikleri ayrı çarp.",
+      "Artan ve pozitif f'de sağ uçlar üst, sol uçlar alt toplam verir; azalanda roller değişir (2022 AYT Matematik 27 mantığı).",
+      "Sonlu n bir sınırdır, alan değildir; alt ve üst toplamın farkı hata sınırını verir, n büyüdükçe ikisi integrale yaklaşır.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
