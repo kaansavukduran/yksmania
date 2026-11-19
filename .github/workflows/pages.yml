@@ -36,7 +36,14 @@ jobs:
       - run: npm run check && npm test && npm run build
         env:
           YKSMANIA_BASE_PATH: /yksmania/
-      - run: npx playwright install --with-deps chromium
+      - name: Install Chromium for Playwright (retries transient mirror failures)
+        run: |
+          for attempt in 1 2 3; do
+            npx playwright install --with-deps chromium && exit 0
+            echo "Playwright install attempt $attempt failed; retrying"
+            sleep $((attempt * 20))
+          done
+          exit 1
       - run: node scripts/test-pages.mjs
       - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa
         with:
@@ -74,7 +81,14 @@ jobs:
       - run: npm ci
         env:
           ELECTRON_SKIP_BINARY_DOWNLOAD: "1"
-      - run: npx playwright install --with-deps chromium
+      - name: Install Chromium for Playwright (retries transient mirror failures)
+        run: |
+          for attempt in 1 2 3; do
+            npx playwright install --with-deps chromium && exit 0
+            echo "Playwright install attempt $attempt failed; retrying"
+            sleep $((attempt * 20))
+          done
+          exit 1
       - run: node scripts/test-pages.mjs
         env:
           YKSMANIA_PAGES_URL: ${{ needs.deploy.outputs.page_url }}

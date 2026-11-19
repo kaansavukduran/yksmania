@@ -22,7 +22,14 @@ jobs:
       - run: npm ci
         env:
           ELECTRON_SKIP_BINARY_DOWNLOAD: "1"
-      - run: npx playwright install --with-deps chromium
+      - name: Install Chromium for Playwright (retries transient mirror failures)
+        run: |
+          for attempt in 1 2 3; do
+            npx playwright install --with-deps chromium && exit 0
+            echo "Playwright install attempt $attempt failed; retrying"
+            sleep $((attempt * 20))
+          done
+          exit 1
       - run: npm run test:e2e -- --workers=2 --trace retain-on-failure
         env:
           BASE_URL: ${{ inputs.url }}
