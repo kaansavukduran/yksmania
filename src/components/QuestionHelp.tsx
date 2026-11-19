@@ -58,9 +58,12 @@ export function QuestionHelp({
                   ))}
                 {index === 0 && conceptFigure && (
                   <div className="help-concept-figure">
-                    <p className="small muted">Konu anlatımından: {conceptFigure.title}</p>
                     <Suspense fallback={null}>
-                      <SectionFigure guideId={conceptFigure.guideId} title={conceptFigure.title} />
+                      <SectionFigure
+                        guideId={conceptFigure.guideId}
+                        title={conceptFigure.title}
+                        label={`Konu anlatımından: ${conceptFigure.title}`}
+                      />
                     </Suspense>
                   </div>
                 )}

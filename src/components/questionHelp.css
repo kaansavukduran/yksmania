@@ -83,7 +83,7 @@
   line-height: 1.8;
 }
 
-.help-concept-figure {
+.help-concept-figure:not(:empty) {
   margin-top: 0.8rem;
 }
 .help-concept-figure .section-figure {

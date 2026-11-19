@@ -35,10 +35,19 @@ export const sectionFigures: Record<string, Record<string, FigureDef>> = {
 export function SectionFigure({
   guideId,
   title,
+  label,
 }: {
   guideId: string;
   title: string;
+  /** Optional lead-in shown only when the section really has a figure. */
+  label?: string;
 }) {
   const def = sectionFigures[guideId]?.[title];
-  return def ? <SectionFigureView def={def} title={title} /> : null;
+  if (!def) return null;
+  return (
+    <>
+      {label && <p className="small muted">{label}</p>}
+      <SectionFigureView def={def} title={title} />
+    </>
+  );
 }
