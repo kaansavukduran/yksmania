@@ -83,7 +83,7 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | AYT Biyoloji | 75 | 0 |
 | **Toplam** | **371** | **41 (%11,1)** |
 
-Toplam bölüm figürü: 415 (441 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 42 (34 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
+Toplam bölüm figürü: 417 (443 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 42 (34 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
 
 TYT Fizik'te figürü olmayan 7 rehber: fizik bilimine giriş, madde ve özkütle, prizmalar ve renkler, ses ve deprem dalgaları, ışık bilgisi, durgun elektrik, mıknatıslar ve manyetik alan.
 
@@ -108,3 +108,4 @@ TYT Fizik'te figürü olmayan 7 rehber: fizik bilimine giriş, madde ve özkütl
 | 19 Kasım (14) | Gölgeli 3B molekül modelleri (2 figür), Türkçe sözcük anatomisi (5 figür), hücrede adları göster (etiket çizgileri), gerçekçi hücre biçimleri | 0 | 41 / 371 (+3 rehber) |
 | 19 Kasım (15) | Mitoz: 2n = 4 hücrede G₁→sitokinez 8 aşama (her aşamada kromozom/kromatit/DNA/C ve alan), hücre döngüsü çarkı + G₀, sürgülü DNA grafiği; 2 soru tipi taktiği | 1 | 41 / 371 (+1 biyoloji rehberi) |
 | 19 Kasım (16) | Mayoz: renkli parça değişimli kromatitlerle tetrat yakın planı (5 adım), 2n = 4 → 4 farklı gamet (7 aşama, aşama başına sayım), bağımsız dizilim 2ⁿ, DNA ve kromozom grafiği; 1 taktik | 2 | 41 / 371 (+1 biyoloji rehberi) |
+| 19 Kasım (17) | İslam tarihi: Bedir (624; kervanın kıyı yolu, kuyular, karşılaşma, sonuç) ve Hendek (627; hendek, harra, Ahzab kuşatması, kuşatmanın kalkması) aşama aşama şemaları | 0 | 41 / 371 |
