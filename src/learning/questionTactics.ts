@@ -1253,6 +1253,19 @@ export const questionTactics: QuestionTactic[] = [
       "Önce odağın yerine bak: önde → miyop, ıraksak mercek; arkada → hipermetrop, yakınsak mercek. Presbitlik, astigmatizma, katarakt ve glokom ayrı mekanizmadır.",
     ],
   },
+  {
+    id: "kulak-yol-denge",
+    guides: ["duyu-organlari-kulak"],
+    match: /kulak|Korti|salyangoz|üzengi|örs|çekiç|Östaki|pencere|yarım daire|tulumcuk|kesecik|denge|işitme/i,
+    title: "Kulakta aktarım, dönüşüm, taşıma ve dengeyi ayır",
+    steps: [
+      "Ses yolu: kulak zarı → çekiç → örs → üzengi → oval pencere → salyangoz (Korti) → işitme siniri. Östaki ve yuvarlak pencere bu sıranın basamağı değildir.",
+      "Kemikçikler titreşimi aktarır, Korti'deki tüy hücreleri sinirsel sinyale dönüştürür, işitme siniri taşır; seçici bir kayıp yalnız kendi basamağını bozar (2022 AYT Fen 30 mantığı).",
+      "Kohlear kanal endolenf ve Korti; vestibüler ve timpanik kanallar perilenf. ‘Vestibüler’ adı onu denge kanalı yapmaz.",
+      "Dönmedeki değişim → yarım daire kanalları; doğrusal ivme ve baş eğimi → tulumcuk ve kesecik. Sabit hız yeni ivme değildir.",
+      "Frekans tizliği, genlik gürlüğü belirler; eşit şiddetteki 1000 Hz ses 500 Hz'ten daha tizdir ama daha gür değildir.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
