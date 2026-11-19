@@ -9,6 +9,8 @@ import { physicsFiguresOptics } from "./physicsFiguresOptics";
 import { mathFiguresRoots } from "./mathFiguresRoots";
 import { physicsFiguresMechanics } from "./physicsFiguresMechanics";
 import { physicsFiguresFluidsCircuits } from "./physicsFiguresFluidsCircuits";
+import { physicsFiguresEnergy } from "./physicsFiguresEnergy";
+import { physicsFiguresWaves } from "./physicsFiguresWaves";
 
 export const sectionFigures: Record<string, Record<string, FigureDef>> = {
   ...geometryFigures031,
@@ -20,6 +22,8 @@ export const sectionFigures: Record<string, Record<string, FigureDef>> = {
   ...mathFiguresRoots,
   ...physicsFiguresMechanics,
   ...physicsFiguresFluidsCircuits,
+  ...physicsFiguresEnergy,
+  ...physicsFiguresWaves,
 };
 
 export function SectionFigure({

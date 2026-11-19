@@ -275,6 +275,86 @@ export const questionTactics: QuestionTactic[] = [
       "Sonucu kontrol et: simetride orta nokta aynada/merkezde olmalı.",
     ],
   },
+  {
+    id: "is-net-is",
+    guides: ["enerji-ve-hareket"],
+    match: /net iş|işi (ve|nedir|kaç)|yaptığı iş/i,
+    title: "İş ve net iş soruları",
+    steps: [
+      "Her kuvveti ayrı yaz: W = F·d·cosθ. Hareket yönündeki kuvvet +, zıt yöndeki −, dik kuvvet (normal, dikey ağırlık) 0 iş yapar.",
+      "Net iş = bütün işlerin işaretli toplamıdır; sonra Wnet = ΔK = K_son − K_ilk kullan.",
+      "Kuvvet–konum grafiği verilmişse iş, grafiğin altındaki işaretli alandır; eksen altındaki alan negatif sayılır.",
+    ],
+  },
+  {
+    id: "enerji-bilancosu",
+    guides: ["enerji-ve-hareket"],
+    match: /kinetik enerji|iç enerji|mekanik enerji|kinetik ve/i,
+    title: "Enerji bilançosu kur",
+    steps: [
+      "Başlangıç ve son anı seç; her an için K = ½mv², U = mgh (aynı referans!), yay için ½kx² yaz.",
+      "Girişler + başlangıç enerjileri = son enerjiler + sürtünmeyle iç enerjiye geçen kısım.",
+      "Sabit hızla yükselen cisimde K değişmez ama U artar: mekanik enerji artar. “Sürtünme yok” tek başına korunum demek değildir; dış kuvvet iş yapıyorsa enerji değişir.",
+      "Sonuçta K negatif çıkarsa cisim o noktaya ulaşamaz; duruş noktasını ayrıca bul.",
+    ],
+  },
+  {
+    id: "guc-verim",
+    guides: ["enerji-ve-hareket"],
+    match: /güç|verim|kWh|yararlı/i,
+    title: "Güç ve verim",
+    steps: [
+      "Enerji = güç × süre. Süreyi saniyeye (J için) ya da saate (kWh için) çevir; 1 kWh = 3,6 × 10⁶ J.",
+      "Verim = yararlı çıktı / toplam giriş (aynı süre aralığında). Kalan enerji yok olmaz, başka biçime gider.",
+      "Ardışık aygıtlarda verimler çarpılır, toplanmaz.",
+    ],
+  },
+  {
+    id: "yay-kuvvet-enerji",
+    guides: ["enerji-ve-hareket"],
+    match: /yay|Hooke/i,
+    title: "Yay kuvveti ve yay enerjisi",
+    steps: [
+      "Kuvvet F = −kx sapmayla doğrusal, enerji U = ½kx² karesel değişir: sapma 2 katına çıkınca kuvvet 2, enerji 4 kat olur.",
+      "Uzatma ile sıkıştırma aynı |x| için aynı enerjiyi verir; yalnız kuvvetin yönü terstir.",
+      "Eşit enerji sorularında k·x² sabittir; k oranını karekökle karıştırma.",
+    ],
+  },
+  {
+    id: "dalga-temel-iliskiler",
+    guides: ["dalgalara-giris", "su-dalgalari", "yay-dalgalari"],
+    match: /frekans|periyot|dalga boyu|titreşim|sürati/i,
+    title: "f, T, λ, v soruları",
+    steps: [
+      "N titreşim t sürede: f = N/t, T = 1/f. y–t grafiğinde tepe aralığı T, y–x grafiğinde tepe aralığı λ'dır.",
+      "v = λ·f. Sürat ortama bağlıdır: aynı ortamda kaynak frekansı artarsa v sabit kalır, λ küçülür.",
+      "Ortam değişirse frekans korunur (kaynak aynı): λ₂/λ₁ = v₂/v₁.",
+      "Birimi denetle: cm ile Hz çarpımı cm/s verir.",
+    ],
+  },
+  {
+    id: "atma-sinir",
+    guides: ["yay-dalgalari"],
+    match: /uç|ipe|ipten|μ|örtüş|uzanım/i,
+    title: "Yansıma, iletim ve üst üste binme",
+    steps: [
+      "Sabit uç: atma ters döner (tepe → çukur). Serbest uç: ters dönmez.",
+      "Hafiften ağıra: yansıyan ters, iletilen düz ve daha yavaş. Ağırdan hafife: yansıyan düz, iletilen düz ve daha hızlı. İletilen atma ters dönmez.",
+      "Aynı noktada örtüşen uzanımları işaretleriyle topla; karşılaştıktan sonra atmalar biçimlerini koruyarak yoluna devam eder.",
+      "Atmanın önündeki noktalar dengeden uzaklaşır, arkasındakiler dengeye yaklaşır.",
+    ],
+  },
+  {
+    id: "su-dalgasi-aci",
+    guides: ["su-dalgalari"],
+    match: /açı|engel|kırılma/i,
+    title: "Su dalgasında açı soruları",
+    steps: [
+      "Açıları sınırın normalinden ölç; engelle verilen açının 90°'ye tümlerini al.",
+      "Yansımada gelme = yansıma; f, λ ve sürat değişmez.",
+      "Kırılmada sin i / sin r = v₁/v₂ = λ₁/λ₂. Yavaş (sığ) bölgeye giren ışın normale yaklaşır.",
+    ],
+  },
 ];
 
 /** Tactics that apply to this question, in list order (at most two). */

@@ -205,6 +205,17 @@ export const dim = (
   side: 1 | -1 | V = 1,
   tone?: Tone,
 ): El => ({ k: "dim", a, b, label, side, tone });
+/** Measured span for physics drawings: a thin line with end ticks plus the
+ * dim label, for distances that are not already an edge of the figure. */
+export const span = (a: V, b: V, label: string, side: 1 | -1 | V = 1, tone?: Tone): El[] => {
+  const n = mul(unit([-(b[1] - a[1]), b[0] - a[0]]), 0.15);
+  return [
+    { k: "seg", a, b, tone, thin: true },
+    { k: "seg", a: sub(a, n), b: add(a, n), tone, thin: true },
+    { k: "seg", a: sub(b, n), b: add(b, n), tone, thin: true },
+    { k: "dim", a, b, label, side, tone },
+  ];
+};
 export const txt = (
   p: V,
   s: string,

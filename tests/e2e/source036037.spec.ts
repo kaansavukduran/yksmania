@@ -678,6 +678,20 @@ for (const theme of ["light", "system"] as const) {
             });
           }
       });
+      // Model changes are written to IndexedDB asynchronously; wait until the
+      // stored explorations stop changing so the reload sees the last click.
+      let lastSnapshot = "";
+      await expect
+        .poll(
+          async () => {
+            const now = JSON.stringify((await stored(page)).explorations ?? {});
+            const settled = now === lastSnapshot;
+            lastSnapshot = now;
+            return settled;
+          },
+          { intervals: [300], timeout: 10_000 },
+        )
+        .toBe(true);
       await page.reload();
       await expect(page.locator(unit.selector)).toBeVisible();
       await unit.assertModel(page.locator(unit.selector));

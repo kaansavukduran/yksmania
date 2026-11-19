@@ -1,3 +1,11 @@
+# Bölüm figürleri — fizik enerji ve dalgalar (main)
+
+19 Kasım 2026, Türkiye saati. Kullanıcı onayıyla `claude/laughing-ritchie-l0rre4` main'e alındı (`520662c..f5c5dd3`); bu tur aynı yoldan gider. İşleme sayacı: [docs/ISLEME_SAYACI.md](docs/ISLEME_SAYACI.md).
+
+Bu tur: enerji ve hareket (20), dalgalara giriş (9), yay dalgaları (9), su dalgaları (9) bölüm figürü ve 7 yeni soru tipi taktiği. Toplam 34 rehber / 368 bölüm / 318 figür / 30 taktik; Sayısal rehberlerin 34/367'sinde figür var. Okunan PDF: 019 TYT Mekanik Enerji ve 054 TYT Yay Dalgaları (toplam bu dalda 3; kanonik defter 8.981: 7 tam / 2 kısmi, değiştirilmedi). Bulunup düzeltilen: `dim` yalnız etiket çizdiği için fizikte ölçü çizgileri görünmüyordu (yeni `span` yardımcısı, eski basınç/barometre/manometre/dalga boyu figürleri de düzeltildi); açı yarıçapları birim sanılıp piksel verilmemişti. Main CI'daki tek kırmızı test (`source036037` eski tema varyantı) uygulama değil test yarışıydı: son tıklamanın IndexedDB yazımı bitmeden sayfa yenileniyordu; test artık kaydın oturmasını bekliyor. Doğrulama: check, 224 dosya / 2.395 birim testi, build, ilgili 7 tarayıcı dosyasında 186 testin 122'si + yarış testi yerelde PASS (kalanı arka planda).
+
+---
+
 # Bölüm figürleri — geometri anlatımı (geliştirme dalı)
 
 18 Kasım 2026, Türkiye saati. **Dal `claude/laughing-ritchie-l0rre4`, taban 0.24 adayı `520662c`; main'e alınmadı, yayımlanmadı.** [Ayrıntı](docs/SECTION_FIGURES.md).

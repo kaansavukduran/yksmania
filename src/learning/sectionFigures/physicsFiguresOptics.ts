@@ -1,4 +1,5 @@
 import {
+  span,
   add,
   ang,
   dim,
@@ -519,8 +520,8 @@ const kirilma: Record<string, FigureDef> = {
         els: [
           poly([v(6, -1.6), v(12, -1.6), v(12, 1.6), v(6, 1.6)], { fill: "b", tone: "b", thin: true }),
           poly(pts, { open: true, tone: "a" }),
-          dim(v(0.75, 1), v(3.75, 1), "600 nm", v(2, -1), "a"),
-          dim(v(6.5, 1), v(8.5, 1), "400 nm", v(7, -1), "a"),
+          ...span(v(0.75, 1), v(3.75, 1), "600 nm", v(2, -1), "a"),
+          ...span(v(6.5, 1), v(8.5, 1), "400 nm", v(7, -1), "a"),
           txt(v(3, -1.9), "boşluk", "c", { small: true }),
           txt(v(9, -1.9), "n = 1,5", "c", { small: true, tone: "b" }),
         ],

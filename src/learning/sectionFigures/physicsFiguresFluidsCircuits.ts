@@ -1,4 +1,5 @@
 import {
+  span,
   add,
   circle,
   dim,
@@ -91,7 +92,7 @@ const basinc: Record<string, FigureDef> = {
           ...water(0, 0, 4, top),
           tank(0, 0, 4, top),
           pt(v(2, top - h), `P = ${fmt(P)} kPa`, "e", "a"),
-          ...(h > 0 ? [dim(v(1.2, top), v(1.2, top - h), `h = ${fmt(h)} m`, v(3, 0), "a")] : []),
+          ...(h > 0 ? [...span(v(1.2, top), v(1.2, top - h), `h = ${fmt(h)} m`, v(3, 0), "a")] : []),
         ],
         readout: [`P = 100 + 1000·10·${fmt(h)}/1000 = ${fmt(P)} kPa`],
       };
@@ -154,7 +155,7 @@ const basinc: Record<string, FigureDef> = {
           poly([v(4, 0.3), add(v(4, 0.3), mul(v(tilt, 1), h)), add(v(4.5, 0.3), mul(v(tilt, 1), h)), v(4.5, 0.3)], { fill: "c", tone: "c", thin: true }),
           poly([v(4, 0.3), add(v(4, 0.3), mul(v(tilt, 1), 4.7)), add(v(4.5, 0.3), mul(v(tilt, 1), 4.7)), v(4.5, 0.3)], { open: true }),
           seg(v(0, h + 0.3), v(7, h + 0.3), { dash: true, thin: true, tone: "a" }),
-          dim(v(0.4, 0.6), v(0.4, h + 0.3), "76 cm", v(3, 2), "a"),
+          ...span(v(0.4, 0.6), v(0.4, h + 0.3), "76 cm", v(3, 2), "a"),
           txt(v(6.6, 0.3), "cıva", "e", { small: true, tone: "c" }),
         ],
         readout: ["P₀ ≈ ρ_cıva·g·h (h düşey)"],
@@ -181,7 +182,7 @@ const basinc: Record<string, FigureDef> = {
           poly([v(0.5, 3.2), v(0.5, 0), v(2, 0), v(2, 4)], { open: true }),
           seg(v(-0.2, gasLevel), v(3, gasLevel), { dash: true, thin: true, tone: "muted" }),
           seg(v(-0.2, openLevel), v(3, openLevel), { dash: true, thin: true, tone: "muted" }),
-          dim(v(3, Math.min(gasLevel, openLevel)), v(3, Math.max(gasLevel, openLevel)), "Δh", v(0, 1), "a"),
+          ...span(v(3, Math.min(gasLevel, openLevel)), v(3, Math.max(gasLevel, openLevel)), "Δh", v(0, 1), "a"),
           txt(v(2.25, 4.2), "açık uç (P₀)", "n", { small: true }),
         ],
         readout: [step === 0 ? "P_gaz = P₀ + ρgΔh" : "P_gaz = P₀ − ρgΔh"],
