@@ -1,2 +1,22 @@
 <!doctype html>
-<html lang="tr"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/><meta name="theme-color" content="#15191f"/><link rel="icon" type="image/svg+xml" href="/icon.svg"/><meta name="description" content="YKSMania: çevrimdışı öğrenme, aralıklı tekrar ve kişisel çalışma takvimi."/><title>YKSMania · Öğren, hatırla, keşfet</title></head><body><div id="root"></div><script type="module" src="/src/main.tsx"></script></body></html>
+<html lang="tr"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/><meta name="theme-color" content="#15191f"/><link rel="icon" type="image/svg+xml" href="/icon.svg"/><meta name="description" content="YKSMania: çevrimdışı öğrenme, aralıklı tekrar ve kişisel çalışma takvimi."/><title>YKSMania · Öğren, hatırla, keşfet</title></head><body><div id="root"></div><script>
+/* Startup guard: an offline reload can abort a module chunk request (seen in
+   Chromium), which leaves #root empty. Reload at most twice from the service
+   worker cache; main.tsx clears the counter after a successful start. */
+(function () {
+  var key = "yksmania.bootRetry";
+  function retry() {
+    if (window.__yksBooted) return;
+    var n = 0;
+    try { n = Number(sessionStorage.getItem(key) || 0); } catch (e) {}
+    if (n >= 2) return;
+    try { sessionStorage.setItem(key, String(n + 1)); } catch (e) { return; }
+    location.reload();
+  }
+  addEventListener("error", function (event) {
+    var t = event.target;
+    if (t && t.tagName === "SCRIPT" && t.type === "module") setTimeout(retry, 300);
+  }, true);
+  setTimeout(retry, 20000);
+})();
+</script><script type="module" src="/src/main.tsx"></script></body></html>
