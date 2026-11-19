@@ -96,6 +96,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "fotosentez-hiz-faktorleri",
   "ureme-menstrual-dongu",
   "ayt-kodon-antikodon",
+  "sinir-sistemi-aksiyon-potansiyeli",
   "sinirlayici-artan-madde",
   "yuzde-verim",
   "ayt-limit-sureklilik",

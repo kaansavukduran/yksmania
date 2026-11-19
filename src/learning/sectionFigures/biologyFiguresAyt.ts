@@ -127,8 +127,53 @@ const frame: FigureDef = {
   },
 };
 
+/* ---------- 4. Aksiyon potansiyeli ---------- */
+const apV = (t: number) => {
+  // Teaching shape (ms → mV): rest −70, threshold −55 at 1 ms, peak +30 at 1.6 ms,
+  // back to −70 at 2.6 ms, undershoot −80 at 3.1 ms, rest by 4 ms.
+  if (t < 0.6) return -70;
+  if (t < 1) return -70 + ((t - 0.6) / 0.4) * 15;
+  if (t < 1.6) return -55 + ((t - 1) / 0.6) ** 1.6 * 85;
+  if (t < 2.6) return 30 - (1 - Math.cos(((t - 1.6) / 1) * Math.PI)) * 50;
+  if (t < 3.1) return -70 - ((t - 2.6) / 0.5) * 10;
+  return -80 + Math.min(1, (t - 3.1) / 0.9) * 10;
+};
+const actionPotential: FigureDef = {
+  caption:
+    "Sürgüyle zamanı ilerlet (temsilî değerler). Dinlenmede zar −70 mV. Uyarı zarı eşiğe (−55 mV) getirirse voltaj kapılı Na⁺ kanalları açılır, Na⁺ içeri girer, gerilim +30 mV'ye çıkar (depolarizasyon). Sonra Na⁺ kanalları kapanır, K⁺ dışarı çıkar ve gerilim düşer (repolarizasyon); kısa süre dinlenmenin altına iner (hiperpolarizasyon). Na⁺/K⁺ pompası ATP ile gradyanı uzun vadede korur; hızlı tepeyi yapan kanallardır.",
+  alt: "Zar gerilimi–zaman grafiği: −70 mV düz çizgi, eşik −55 mV'de kesik çizgi, +30 mV tepeye hızlı yükseliş, iniş, −80 mV'ye kısa dalış ve dinlenmeye dönüş; sürgüyle hareket eden nokta.",
+  param: { label: "Zaman", min: 0, max: 4, step: 0.1, init: 1.3, unit: " ms" },
+  draw: (t) => {
+    const X = (ms: number) => ms * 1.6;
+    const Y = (mV: number) => (mV + 90) * 0.035;
+    const els: El[] = [vec(v(0, 0), v(X(4.3), 0), { tone: "ink" }), vec(v(0, 0), v(0, Y(45)), { tone: "ink" })];
+    els.push(txt(v(X(4.3), 0), "ms", "se", { tone: "ink", small: true }), txt(v(0, Y(45)), "V (mV)", "n", { tone: "ink", small: true }));
+    els.push(seg(v(0, Y(-55)), v(X(4), Y(-55)), { tone: "warn", dash: true, thin: true }), txt(v(X(4), Y(-55)), "eşik −55", "e", { tone: "warn", small: true }));
+    for (const mv of [30, -70]) els.push(txt(v(0, Y(mv)), mv < 0 ? `−${-mv}` : String(mv), "w", { tone: "muted", small: true, soft: true }), seg(v(0, Y(mv)), v(X(4), Y(mv)), { tone: "muted", dash: true, thin: true }));
+    const pts: V[] = Array.from({ length: 161 }, (_, i) => v(X(i / 40), Y(apV(i / 40))));
+    els.push(poly(pts, { tone: "c", open: true, bold: true }));
+    const now = apV(t);
+    els.push(ball(v(X(t), Y(now)), 0.12, "a"));
+    els.push(txt(v(-1.0, Y(52)), " ", "c"), txt(v(X(4.3) + 1.8, -0.8), " ", "c"));
+    const phase =
+      t < 0.6
+        ? ["Dinlenme (polarizasyon): Na⁺ dışarıda, K⁺ içeride daha yoğun; iç taraf −70 mV.", "Pompa: 3 Na⁺ dışarı, 2 K⁺ içeri, 1 ATP. Gradyanı korur, tepeyi yapmaz."]
+        : t < 1
+          ? ["Eşik altı depolarizasyon: −70'ten −55'e. −60 mV eşik altıdır (−60 < −55).", "Eşik aşılmazsa AP yok; aşılırsa tek AP'nin genliği uyaran şiddetinden bağımsız (ya hep ya hiç)."]
+          : t < 1.6
+            ? ["Depolarizasyon: voltaj kapılı Na⁺ kanalları açık, Na⁺ içeri; V +30 mV'ye çıkar.", "Pozitif değer iç tarafın dışa göre pozitifleştiğini gösterir. Bu evrede mutlak refrakterlik başlar."]
+            : t < 2.6
+              ? ["Repolarizasyon: Na⁺ kanalları inaktif, K⁺ kanalları açık, K⁺ dışarı; V düşer.", "Pozitif K⁺ kaybı içi negatifleştirir. Tepe sonrası iniş = repolarizasyon; aynı mV değeri yükselişte de görülebilir."]
+              : t < 3.1
+                ? ["Hiperpolarizasyon: K⁺ kanalları geç kapanır, V −80 mV'ye iner (dinlenmeden negatif).", "Göreli refrakter dönem: yeni AP için daha güçlü uyarı gerekebilir."]
+                : ["Dinlenmeye dönüş: −70 mV.", "Şiddet bilgisi impuls frekansıyla (Hz) taşınır; iletim hızı miyelin ve akson çapına bağlıdır (2018 AYT Fen 32)."];
+    return { els, readout: [`t = ${fmt(t, 1)} ms · V ≈ ${fmt(now, 0)} mV · ${phase[0]}`, phase[1]] };
+  },
+};
+
 export const biologyFiguresAyt: Record<string, Record<string, FigureDef>> = {
   "fotosentez-hiz-faktorleri": { "Işık artışı ve doygunluk platosu": light },
   "ureme-menstrual-dongu": { "LH tepesi ve ovulasyon": cycle },
   "ayt-kodon-antikodon": { "Okuma çerçevesi üçlüleri belirler": frame },
+  "sinir-sistemi-aksiyon-potansiyeli": { "Depolarizasyon, repolarizasyon ve hiperpolarizasyon": actionPotential },
 };

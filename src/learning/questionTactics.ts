@@ -1003,6 +1003,19 @@ export const questionTactics: QuestionTactic[] = [
       "Seçenekleri aynı hizmet (işlevsel birim) ve aynı süreç sınırıyla karşılaştır.",
     ],
   },
+  {
+    id: "aksiyon-potansiyeli-evre",
+    guides: ["sinir-sistemi-aksiyon-potansiyeli"],
+    match: /aksiyon|eşik|depolarizasyon|repolarizasyon|Na⁺|K⁺|impuls|miyelin|mV|refrakter|pompa/i,
+    title: "Eşik, evre, iyon; sonra genlik–frekans–hız",
+    steps: [
+      "Negatifleri sayı doğrusuna diz: −60 < −55 < −50. V ≥ eşikse AP olabilir; mutlak refrakter dönemde olmaz.",
+      "Grafikte eğime bak: tepeye yükseliş Na⁺ içeri (depolarizasyon), tepe sonrası iniş K⁺ dışarı (repolarizasyon), dinlenmenin altı hiperpolarizasyon.",
+      "Na⁺/K⁺ pompası (3 Na⁺ dışarı, 2 K⁺ içeri, ATP) gradyanı korur; hızlı Na⁺ girişi kanaldan, ATP'siz.",
+      "Genlik (mV) tek aksonda sabit; şiddet frekansı (Hz) değiştirir; hız (m/s) miyelin ve çapa bağlı. Birimiyle ayır.",
+      "Sinapsta: AP → Ca²⁺ girişi → kesecik salımı → alıcı reseptör. Bozulan basamağı gözlenen olaydan seç.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
