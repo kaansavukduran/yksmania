@@ -15,8 +15,18 @@ for (const width of [1280, 320])
     const map = section.locator(".place-map");
     await expect(map).toBeVisible();
     await expect(map.getByRole("img", { name: /Dünya haritasında konum/ })).toBeVisible();
-    await expect(map.getByRole("img", { name: /Bölge haritası/ })).toBeVisible();
+    await expect(map.getByRole("group", { name: /Bölge haritası/ })).toBeVisible();
     await expect(map.locator(".place-legend li")).toHaveText([/Çaldıran Savaşı/, /Mercidabık Savaşı/, /Ridaniye Savaşı/]);
+    // A pin opens a focus card; zoom and reset work from the keyboard-reachable buttons.
+    await expect(map.getByRole("button", { name: "Seçili yere yakınlaştır" })).toBeDisabled();
+    await map.getByRole("button", { name: /^2\. Mercidabık Savaşı/ }).click();
+    await expect(map.locator(".place-focus-card")).toContainText("Mercidabık Savaşı");
+    await map.getByRole("button", { name: "Seçili yere yakınlaştır" }).click();
+    await expect(map.getByRole("button", { name: "Tüm bölgeye dön" })).toBeVisible();
+    await map.getByRole("button", { name: "Sıfırla" }).click();
+    await expect(map.locator(".place-focus-card")).toHaveCount(0);
+    await map.locator(".place-legend").getByRole("button", { name: /Ridaniye Savaşı/ }).click();
+    await expect(map.locator(".place-focus-card")).toContainText("Ridaniye Savaşı");
     const docWidth = await page.evaluate(() => document.documentElement.scrollWidth);
     expect(docWidth).toBeLessThanOrEqual(width + 1);
     const axe = await new AxeBuilder({ page }).include(".place-map").analyze();

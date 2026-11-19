@@ -99,3 +99,38 @@
   font-size: 0.85em;
 }
 .place-map-note { margin-top: 0.4rem; }
+
+/* Interactive place focus */
+.place-pin-group { cursor: pointer; outline: none; }
+.place-pin-group.is-dim { opacity: 0.45; }
+.place-pin-group.is-focus .place-pin { stroke: var(--text); stroke-width: 3; }
+.place-pin-group:focus-visible .place-pin { stroke: var(--accent); stroke-width: 4; }
+.place-dot.is-focus { stroke: var(--text); stroke-width: 2; }
+.place-map-tools { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.6rem; }
+.place-map-tools button { min-height: 44px; }
+.place-focus-card {
+  display: grid;
+  gap: 0.2rem;
+  margin-top: 0.6rem;
+  padding: 0.6rem 0.8rem;
+  border-left: 4px solid var(--place);
+  border-radius: 0.5rem;
+  background: color-mix(in srgb, var(--place) 10%, transparent);
+  overflow-wrap: anywhere;
+}
+.place-legend-button {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  min-height: 44px;
+  width: 100%;
+  padding: 0.25rem 0.4rem;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+.place-legend-button[aria-pressed="true"] { border-color: var(--place); }
