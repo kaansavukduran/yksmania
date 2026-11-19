@@ -233,6 +233,7 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
           )}
           <Scratchpad key={`scratch-${draft.index}`} />
           <AnswerOptions
+              questionKey={`${draft.lessonId}-${draft.index}`}
             key={`options-${draft.index}`}
             options={question.options.map((option) => l(option))}
             selected={draft.selected}

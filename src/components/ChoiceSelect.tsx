@@ -24,7 +24,9 @@ function readOptions(select: HTMLSelectElement): Opt[] {
     value: o.value,
     label: o.textContent ?? o.value,
     disabled: o.disabled,
-    placeholder: o.value === "" && (o.disabled || o.hidden === true || /seç|seçin|seçiniz|—|\.\.\.|…/i.test(o.textContent ?? "")),
+    // An empty value is never a real answer in this app: it is the
+    // "choose…" prompt. Data, not wording, decides (no label regex).
+    placeholder: o.value === "",
   }));
 }
 const same = (a: Opt[], b: Opt[]) =>
@@ -36,14 +38,24 @@ export function ChoiceSelect(props: SelectHTMLAttributes<HTMLSelectElement>) {
   const [opts, setOpts] = useState<Opt[]>([]);
   const [current, setCurrent] = useState<string>("");
 
-  // Read the rendered options after every render; React owns the children.
+  // Read the options once, then only when the option list itself changes.
   useLayoutEffect(() => {
     const el = ref.current;
     if (!el) return;
-    const next = readOptions(el);
-    setOpts((prev) => (same(prev, next) ? prev : next));
-    setCurrent(el.value);
-  });
+    const read = () => {
+      const next = readOptions(el);
+      setOpts((prev) => (same(prev, next) ? prev : next));
+      setCurrent(el.value);
+    };
+    read();
+    const observer = new MutationObserver(read);
+    observer.observe(el, { childList: true, subtree: true, characterData: true, attributes: true });
+    return () => observer.disconnect();
+  }, []);
+  // A controlled value can change without any option changing.
+  useLayoutEffect(() => {
+    if (ref.current) setCurrent(ref.current.value);
+  }, [props.value]);
 
   const chips = opts.length > 0 && opts.length <= MAX_CHIPS && !props.multiple;
 

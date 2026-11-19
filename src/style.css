@@ -4605,6 +4605,25 @@ progress::-moz-progress-bar {
   border-color: var(--accent);
   color: var(--accent);
 }
+.scratch-tools button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.scratch-sheet[hidden] {
+  display: none;
+}
+.scratch-width {
+  display: inline-block;
+  width: 16px;
+  border-radius: 999px;
+  background: currentColor;
+}
+.scratch-width-thin {
+  height: 2px;
+}
+.scratch-width-thick {
+  height: 5px;
+}
 .scratch-canvas {
   display: block;
   width: 100%;

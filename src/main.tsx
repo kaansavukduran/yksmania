@@ -8,7 +8,7 @@ import "@fontsource/lexend/latin-ext-600.css";
 import "./style.css";
 import App from "./App";
 import { Provider } from "./store";
-import { preloadPages } from "./pages/routes";
+import { pagesForRoute, preloadPages } from "./pages/routes";
 
 const render = () =>
   createRoot(document.getElementById("root")!).render(
@@ -18,7 +18,17 @@ const render = () =>
     </Provider>
   </StrictMode>,
   );
-// Route chunks download in parallel; the app renders once they are in, so
-// later navigation is instant and works offline. A failed chunk still lets the
-// app start; that route then shows its loading state and retries on visit.
-preloadPages().then(render, render);
+// Paint as soon as the opening route's chunk is in, then fetch every other
+// route in the background so later navigation is instant and works offline.
+// A failed chunk still lets the app start; that route retries on its visit.
+const warmUp = () => void preloadPages().catch(() => {});
+Promise.all(pagesForRoute(location.hash).map((page) => page.preload())).then(
+  () => {
+    render();
+    warmUp();
+  },
+  () => {
+    render();
+    warmUp();
+  },
+);

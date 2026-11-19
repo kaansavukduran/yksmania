@@ -1,4 +1,4 @@
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { CheckCircle2, X } from "lucide-react";
 
 /*
@@ -18,6 +18,7 @@ export function AnswerOptions({
   onEnter,
   onHint,
   variant = "practice",
+  questionKey,
 }: {
   options: ReactNode[];
   selected: number | null;
@@ -30,21 +31,35 @@ export function AnswerOptions({
   onHint?: () => void;
   /** Exams keep their own option styling (`exam-answer`, `selected`). */
   variant?: "practice" | "exam";
+  /**
+   * Identity of the question on screen. Strikes reset when it changes, even if
+   * a caller reuses this component instead of keying it per question.
+   */
+  questionKey?: string | number;
 }) {
   const [struck, setStruck] = useState<number[]>([]);
+  const [strikeKey, setStrikeKey] = useState(questionKey);
+  if (strikeKey !== questionKey) {
+    setStrikeKey(questionKey);
+    setStruck([]);
+  }
   const letter = (i: number) => String.fromCharCode(65 + i);
+  // The window listener is attached once; it reads the latest props here.
+  const latest = useRef({ count: options.length, checked, busy, onSelect, onEnter, onHint });
+  latest.current = { count: options.length, checked, busy, onSelect, onEnter, onHint };
 
   useEffect(() => {
     function onKey(event: KeyboardEvent) {
+      const { count, checked, busy, onSelect, onEnter, onHint } = latest.current;
       if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey) return;
       const el = event.target as HTMLElement | null;
       if (el?.closest("input, textarea, select, [contenteditable='true'], canvas")) return;
       const key = event.key.toLocaleUpperCase("tr-TR");
       const digit = Number(event.key);
       const index =
-        Number.isInteger(digit) && digit >= 1 && digit <= options.length
+        Number.isInteger(digit) && digit >= 1 && digit <= count
           ? digit - 1
-          : key.length === 1 && key >= "A" && key < letter(options.length)
+          : key.length === 1 && key >= "A" && key < String.fromCharCode(65 + count)
             ? key.charCodeAt(0) - 65
             : -1;
       if (index >= 0 && key !== "H") {
@@ -67,7 +82,7 @@ export function AnswerOptions({
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  });
+  }, []);
 
   function toggleStrike(i: number) {
     setStruck((list) => (list.includes(i) ? list.filter((x) => x !== i) : [...list, i]));
@@ -80,6 +95,7 @@ export function AnswerOptions({
         return (
           <div className="answer-row" key={i}>
             <button
+              type="button"
               className={
                 variant === "exam"
                   ? `exam-answer ${selected === i ? "selected" : ""} ${isStruck ? "answer-struck" : ""}`

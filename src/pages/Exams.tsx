@@ -443,6 +443,7 @@ function ExamRunner({
           )}
           <div className="exam-options">
             <AnswerOptions
+              questionKey={q.id}
               key={q.id}
               variant="exam"
               options={q.options}

@@ -47,3 +47,28 @@ const pages = [Today, Courses, Cheatsheets, Calendar, Mistakes, Exams, World, Se
 export function preloadPages(): Promise<void> {
   return Promise.all(pages.map((page) => page.preload())).then(() => undefined);
 }
+
+/** The page chunk(s) a hash route renders first ("/study" may show Theory). */
+type Preloadable = { preload: () => Promise<void> };
+export function pagesForRoute(hash: string): Preloadable[] {
+  const path = hash.replace(/^#/, "").split("?")[0] || "/today";
+  const map: Record<string, Preloadable[]> = {
+    "/today": [Today],
+    "/courses": [Courses],
+    "/questions": [Courses],
+    "/sources": [Courses],
+    "/library": [Courses],
+    "/cheatsheets": [Cheatsheets],
+    "/topic": [Topic],
+    "/lesson": [Theory],
+    "/calendar": [Calendar],
+    "/mistakes": [Mistakes],
+    "/exams": [Exams],
+    "/world": [World],
+    "/settings": [Settings],
+    "/study": [Study, Theory],
+    "/practice": [Study],
+    "/result": [Result],
+  };
+  return map[path] ?? [Today];
+}
