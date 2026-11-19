@@ -100,12 +100,12 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | TYT Biyoloji | 36 | 9 |
 | AYT Matematik | 17 | 11 |
 | AYT Geometri | 4 | 4 |
-| AYT Fizik | 46 | 0 |
+| AYT Fizik | 46 | 5 |
 | AYT Kimya | 55 | 0 |
 | AYT Biyoloji | 75 | 0 |
-| **Toplam** | **371** | **54 (%14,6)** |
+| **Toplam** | **371** | **59 (%15,9)** |
 
-Toplam bölüm figürü: 537 (563 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 55 (47 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
+Toplam bölüm figürü: 542 (568 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 56 (48 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
 
 TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 
@@ -158,3 +158,4 @@ TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 | 19 Kasım (42) | TYT Matematik: yüzde 4, kâr–zarar 2, yaş 1, ardışık 1 figür; 4 taktik | 1 | 79 / 371 |
 | 19 Kasım (43) | Biyoloji: besin piramidi 4, besin ağı 1, ekoloji giriş 1 figür; 3 taktik | 1 | 80 / 371 |
 | 19 Kasım (44) | Biyoloji: güncel çevre sorunları 3 figür; 1 taktik | 1 | 81 / 371 |
+| 19 Kasım (45) | AYT Fizik: çembersel hareket, BHH izdüşümü, Lenz, Kmax–f, manyetik yarıçap (5 figür, birim sadeleştirmeli okumalar); 1 taktik; kupa sistemi | 0 | 81 / 371 |

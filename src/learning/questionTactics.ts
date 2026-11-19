@@ -848,6 +848,18 @@ export const questionTactics: QuestionTactic[] = [
       "Kalıcı kirleticide derişimleri aynı birimde böl (1,2 ÷ 0,2 = 6 kat); tek bireyde zamanla artış biyobirikimdir.",
     ],
   },
+  {
+    id: "ayt-fizik-birim",
+    guides: ["cembersel-hareket", "basit-harmonik-hareket", "elektromanyetik-induksiyon", "fotoelektrik-olay", "manyetik-kuvvet"],
+    match: /hız|ivme|kuvvet|frekans|periyot|akı|akım|enerji|alan|yarıçap|foton|elektron/i,
+    title: "Modeli seç, birimle denetle",
+    steps: [
+      "Hangi modelin geçerli olduğunu yaz: düzgün çembersel hareket, basit harmonik hareket, akı değişimi, foton–elektron enerji bütçesi ya da manyetik kuvvet.",
+      "Yönü önce çiz: hız teğet, merkezcil ivme içe; manyetik kuvvet hıza dik; indüklenen akım akı değişimine karşı.",
+      "Formülü kur ve birimi sadeleştir: v²/r → m/s²; m·v/(q·B) → m; h·f → eV; −ΔΦ/Δt → V.",
+      "Sınırı denetle: eşik frekansın altında elektron yok; mıknatıs dururken akım yok; manyetik kuvvet süratı değiştirmez.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
