@@ -1,3 +1,13 @@
+# Forge045a — tarih savaş şemaları: aşama aşama, oynatılabilir (main)
+
+19 Kasım 2026. Kullanıcının görsel hafıza isteği üzerine ilk sözel ders görselleri. “Türklerin Anadolu’da yerleşmesi ve Türkiye Selçuklu devletleşmesi” rehberinde dört bölüm figürü: Malazgirt 1071 (6 aşama: karşılaşma → atlı okçu tacizi → sahte geri çekilme → Uz–Peçenek'in taraf değiştirmesi ve artçının çekilmesi → hilal kuşatması → imparator esir), Miryokefalon 1176 (5 aşama: dar geçide giren uzun Bizans kolu, tepelerden ok ve iniş, kapanan geçit çıkışı, geri dönüş), Kösedağ 1243 (5 aşama: öncünün kopması, Moğol sahte geri çekilmesi, pusu, ana ordunun dağılması) ve 1071/1176/1230/1243 karşı güç zaman şeridi. Birlikler aşamalar arasında akıcı kayar; kesik ok o aşamadaki hareketi, kısa ok demeti atlı okçu atışını gösterir; her aşamanın adı ve açıklaması alt satırda okunur. Konumlar temsilîdir ve “ölçekli harita değildir” diye yazılır; paralı askerlerin taraf değiştirmesi “ders kaynaklarındaki anlatıma göre” etiketlidir. Şekil motoruna `once/playMs` eklendi: Oynat baştan sona bir kez ilerler, son aşamada durur (azaltılmış harekette düğme gizli, sürgü çalışır). Keşif kaydedilmez, XP üretmez.
+
+Doğrulama: check PASS; 2.467 birim testi PASS (şekil testleri her aşamada sonlu geometri); build PASS; yeni `history-battles-045` tarayıcı testi 1280/320 px PASS (sürgü End/Home, Oynat son aşamada durur, 44 px düğme, yatay taşma yok, axe ihlali yok, öğrenme kayıtları değişmedi). Ekran görüntüleri masaüstü ve 390 px'te aşama aşama incelendi; etiket çakışmaları üç turda giderildi. Ayrıca ff84b26 CI'ında tarayıcı parçalarının dördü de geçti; yalnız masaüstü smoke eski toplamı bekliyordu (c71c21d'de düzeltildi).
+
+Sıradaki: aynı motorla coğrafya katmanlı harita, biyoloji hücre/DNA, kimya atom–bağ görselleri; Dandanakan ve Osmanlı savaşları.
+
+---
+
 # Forge044 (ilk dilim) — aktif kopya kâğıdı: “Kendini sına” (main)
 
 19 Kasım 2026. Kopya kâğıdında “Kendini sına: formülleri gizle” düğmesi: her formülün eşittir sonrası (noktalı virgüle veya cümle sonuna kadar) “? göster” boşluğuna dönüşür; öğrenci önce kendisi söyler, sonra dokunup açar. Kapatınca kâğıt aynen geri gelir. Açılan boşluklar kaydedilmez, puan/XP üretmez. Mevcut “Bakmadan hatırla” kartları zaten yanıtı gizli sunuyor. Doğrulama: yeni `active-cheatsheet-044` testi 1280/320 px PASS (en az 5 gizli parça, 44 px dokunma hedefi, yatay taşma yok, öğrenme kayıtları değişmedi); kopya kâğıdı/geometri özeti/okuma/uygulama tarayıcı testleri 37/37 PASS. Sıradaki: Drive'daki 9 taktik yönteminin uygulama içi taktik kütüphanesine dönüştürülmesi; Forge045 akıllı oturum başlatıcı.

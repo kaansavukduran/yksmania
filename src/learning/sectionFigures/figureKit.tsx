@@ -240,6 +240,10 @@ export interface FigureDef {
     step: number;
     init: number;
     unit?: string;
+    /** Play once from start to end (story timelines) instead of sweeping. */
+    once?: boolean;
+    /** Playback duration in milliseconds (default 6000). */
+    playMs?: number;
   };
   /** Labels for a step-by-step build. draw() receives the step index. */
   steps?: string[];
@@ -661,16 +665,33 @@ export function SectionFigureView({ def, title }: { def: FigureDef; title: strin
     if (!playing || !p) return;
     const start = performance.now();
     const span = p.max - p.min;
+    const dur = p.playMs ?? 6000;
+    if (p.once) {
+      // Story playback: run forward to the end, restarting if already there.
+      const from = value >= p.max ? p.min : value;
+      const total = (dur * (p.max - from)) / span;
+      const tick = (now: number) => {
+        const k = Math.min(1, (now - start) / Math.max(total, 1));
+        const raw = from + k * (p.max - from);
+        setValue(Math.round(raw / p.step) * p.step);
+        if (k < 1) raf.current = requestAnimationFrame(tick);
+        else setPlaying(false);
+      };
+      raf.current = requestAnimationFrame(tick);
+      return () => {
+        if (raf.current !== undefined) cancelAnimationFrame(raf.current);
+      };
+    }
     const from = value;
     const tick = (now: number) => {
       // One slow back-and-forth sweep from the current value.
-      const t = ((now - start) / 6000) % 1;
+      const t = ((now - start) / dur) % 1;
       const phase = (from - p.min) / span;
       const x = (phase + t * 2) % 2;
       const pos = x <= 1 ? x : 2 - x;
       const raw = p.min + pos * span;
       setValue(Math.round(raw / p.step) * p.step);
-      if (now - start < 6000) raf.current = requestAnimationFrame(tick);
+      if (now - start < dur) raf.current = requestAnimationFrame(tick);
       else setPlaying(false);
     };
     raf.current = requestAnimationFrame(tick);

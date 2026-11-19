@@ -41,7 +41,7 @@ PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olara
 | TYT Fizik | 20 | 28 | 24 | 311 | 24 | 17 |
 | TYT Kimya | 17 | 57 | 55 | 535 | 55 | 0 |
 | TYT Biyoloji | 18 | 45 | 36 | 515 | 36 | 0 |
-| TYT Tarih | 22 | 34 | 24 | 390 | 24 | 0 |
+| TYT Tarih | 22 | 34 | 24 | 390 | 24 | 1 |
 | TYT Coğrafya | 21 | 40 | 40 | 400 | 40 | 0 |
 | TYT Felsefe | 15 | 17 | 17 | 190 | 17 | 0 |
 | TYT Din | 19 | 20 | 20 | 371 | 20 | 0 |
@@ -81,7 +81,7 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | AYT Biyoloji | 75 | 0 |
 | **Toplam** | **371** | **41 (%11,1)** |
 
-Toplam bölüm figürü: 378 (434 bölümde). Soru tipi taktiği: 34.
+Toplam bölüm figürü: 382 (434 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 34.
 
 TYT Fizik'te figürü olmayan 7 rehber: fizik bilimine giriş, madde ve özkütle, prizmalar ve renkler, ses ve deprem dalgaları, ışık bilgisi, durgun elektrik, mıknatıslar ve manyetik alan.
 
@@ -96,3 +96,4 @@ TYT Fizik'te figürü olmayan 7 rehber: fizik bilimine giriş, madde ve özkütl
 | 19 Kasım (4) | Yeni ders: Daire, daire dilimi, çevre ve alan (9 şekil, 12 soru, kopya kâğıdı); kalıcı tur kuralları ve laboratuvar planı (docs/FORGE_ROADMAP.md) | 0 | 39 / 369 |
 | 19 Kasım (5) | Yeni ders: Silindir, koni ve küre (9 şekil, 12 soru); öncüllü soruların satır satır gösterimi | 0 | 40 / 370 |
 | 19 Kasım (6) | Yeni ders: Dik üçgende trigonometrik oranlar (8 şekil, 12 soru) | 0 | 41 / 371 |
+| 19 Kasım (7) | Tarih: Malazgirt, Miryokefalon ve Kösedağ aşama aşama oynatılan savaş şemaları + 1071–1243 karşı güç zaman şeridi (4 figür) | 0 | 41 / 371 (sayısal değişmedi) |
