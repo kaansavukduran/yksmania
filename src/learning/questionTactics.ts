@@ -1305,6 +1305,19 @@ export const questionTactics: QuestionTactic[] = [
       "Büyük uyum kalınlık, küçük uyum düz-yuvarlak / geniş-dar geçişine bakar; ulama yazıya harf eklemez.",
     ],
   },
+  {
+    id: "atom-modeli-kanit-sinir",
+    guides: ["atom-modelleri"],
+    match: /model|Dalton|Thomson|Rutherford|Bohr|orbital|çekirdek|alfa|katot|yörünge/i,
+    title: "Modeli ayırıcı iddiasıyla, kanıtıyla ve sınırıyla eşle",
+    steps: [
+      "Ayırıcı iddiayı bul: dolu küre (Dalton), yayılmış + yük içinde elektron (Thomson), küçük + çekirdek ve boşluk (Rutherford), izinli enerji düzeyleri (Bohr), orbital / olasılık (modern).",
+      "‘Modeline göre’ sorusunda sonraki kavramı eski modele taşıma: Rutherford'a göre orbital yanlıştır (2024 TYT Fen 9 mantığı).",
+      "Gözlem ile çıkarımı ayır: alfaların çoğu geçer → boşluk; azı büyük sapar → küçük yoğun + çekirdek. Nötronun keşfi bu deneyden çıkmaz (Chadwick).",
+      "Enerji sürecinde başlangıç ve son düzeyi yaz: yukarı soğurma, aşağı yayma; elektron ayrılırsa iyonlaşma.",
+      "Bohr tek elektronlu sistemlerde geçerlidir: H, He⁺ (2 − 1), Li²⁺ (3 − 2); nötr He uymaz.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
