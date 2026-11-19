@@ -526,6 +526,18 @@ export const questionTactics: QuestionTactic[] = [
       "Benzer cisim k kat büyürse A/V oranı 1/k olur. Islatan sıvı dar boruda daha çok yükselir; ıslatmayan alçalır.",
     ],
   },
+  {
+    id: "soy-agaci",
+    guides: ["soy-agaclari"],
+    match: /soy|ağaç|birey|kız|oğul|anne|baba|taşıyıcı|X/i,
+    title: "Soy ağacı soruları",
+    steps: [
+      "Önce dolu şeklin neyi gösterdiğini ve modeli (otozomal/X, baskın/çekinik) yaz. Kare erkek, daire kadın.",
+      "Çekinik modelde dolu kişiden (aa / XᵃXᵃ / XᵃY) geriye git: her ebeveyn bir çekinik alel vermiştir.",
+      "X'e bağlı: baba X'ini kızlarına, Y'sini oğullarına verir; oğulun X'i anneden gelir. Dolu kız (çekinik) → baba dolu olmalı.",
+      "“Kesin” deniyorsa her modele somut genotip ata; çelişen modeli ele. Boş çocuğun taşıyıcı olma olasılığı (Aa × Aa) 2/3'tür; rastgele çocukta 1/2.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
