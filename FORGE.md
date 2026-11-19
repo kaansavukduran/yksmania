@@ -25,6 +25,8 @@
 
 - **Hücre çizimi yeniden yapıldı (aynı etkileşim):** porlu çift çekirdek zarı, kromatin iplikleri ve gölgeli çekirdekçik; çekirdek zarıyla sürekli kıvrımlı granüllü ER keseleri ve üzerinde ribozomlar, borumsu granülsüz ER; beş kavisli Golgi kesesi ve tomurcuklanan veziküller; dış zar + iç zar + kristalı mitokondriler; granum yığınlı kloroplast; büyük/küçük alt birimli serbest ribozomlar; çizgili sentriyoller; mikrotübül ve mikrofilament ağı; lipit çift tabakası görünümlü hücre zarı. Bitki hücresinde sentrozoma bağlı lifler çizilmez. Bitki hücresi dikdörtgen değil, dokudaki gibi düzensiz yuvarlatılmış çokgen; çevresinde komşu hücre duvarları (orta lamel) ve duvardan geçen plazmodezmalar. Hayvan hücresi kırıksız, akıcı ve düzensiz bir zarla çizilir.
 
+- **Gerçekçi molekül modelleri:** Şekil motoruna gölgeli 3B küre (`ball`: sol üstten ışık, altta gölge) eklendi. CH₄/NH₃/H₂O küre-çubuk modelleri gerçek 3B bağ yönleriyle, arkadan öne sıralı çizilir; ortaklanmamış çiftler yarı saydam loblar; açılar 109,5° > 107° > 104,5°. CO₂ ile H₂O dipol karşılaştırması: bağa paralel oklar, CO₂'de net 0, H₂O'da açıortay yönünde net etki. Atom renkleri standart renklere yakın (O kırmızı, N mavi, C gri, F yeşil).
+
 Doğrulama (yerel): check PASS; 2.500 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
 
 ---

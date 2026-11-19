@@ -170,3 +170,11 @@
 
 /* Fill without outline (clipped map areas draw their coast separately). */
 .sf-bare { stroke: none; }
+
+/* Shaded spheres for molecule models: light from the upper left. */
+.sf-ball-hi { stop-color: color-mix(in srgb, var(--sf) 30%, white); }
+.sf-ball-mid { stop-color: var(--sf); }
+.sf-ball-lo { stop-color: color-mix(in srgb, var(--sf) 55%, black); }
+.sf-ball { stroke: color-mix(in srgb, var(--sf) 60%, black); stroke-width: 1; }
+.sf-ball-shadow { fill: black; opacity: 0.18; }
+.sf-ball-label { fill: #fff; font-weight: 800; font-size: 17px; text-anchor: middle; paint-order: stroke; stroke: rgba(0, 0, 0, 0.45); stroke-width: 3px; pointer-events: none; }

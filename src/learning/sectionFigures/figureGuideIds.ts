@@ -54,4 +54,6 @@ export const sectionFigureGuideIds = new Set<string>([
   "turkiye-ic-kuvvetler",
   "islam-medeniyetinin-dogusu",
   "hz-muhammed-ve-gencler",
+  "molekul-geometrisi",
+  "molekullerde-polarlik-apolarlik",
 ]);

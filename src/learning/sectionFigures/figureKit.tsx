@@ -105,6 +105,7 @@ export type El =
   | ({ k: "vec"; a: V; b: V } & Style)
   | ({ k: "poly"; ps: V[]; fill?: Tone; open?: boolean; bare?: boolean; smooth?: boolean } & Style)
   | ({ k: "circle"; c: V; r: number; fill?: Tone } & Style)
+  | { k: "ball"; c: V; r: number; tone: Tone; label?: string }
   | { k: "pt"; p: V; label?: string; at?: Dir; tone?: Tone; hollow?: boolean }
   | {
       k: "angle";
@@ -155,6 +156,8 @@ export const circle = (
   r: number,
   s: Style & { fill?: Tone } = {},
 ): El => ({ k: "circle", c, r, ...s });
+/** Shaded 3D-looking sphere (atoms in molecule models); label sits inside. */
+export const ball = (c: V, r: number, tone: Tone, label?: string): El => ({ k: "ball", c, r, tone, label });
 export const pt = (
   p: V,
   label?: string,
@@ -294,6 +297,7 @@ function extendPoints(el: El): V[] {
     case "poly":
       return el.ps;
     case "circle":
+    case "ball":
       return [
         add(el.c, [el.r, el.r]),
         sub(el.c, [el.r, el.r]),
@@ -495,6 +499,22 @@ function Render({ els, title, desc }: { els: El[]; title: string; desc: string }
             className={`${cls(el.tone)} sf-stroke${el.dash ? " sf-dash" : ""}${el.thin ? " sf-thin" : ""}${el.bold ? " sf-bold" : ""} ${el.fill ? `sf-fill-${el.fill}` : "sf-nofill"}${el.open ? " sf-open" : ""}${el.bare ? " sf-bare" : ""}`}
           />
         );
+      case "ball": {
+        const [cx, cy] = P(el.c);
+        const [ex] = P(add(el.c, [el.r, 0]));
+        const rr = Math.abs(ex - cx);
+        return (
+          <g key={i}>
+            <ellipse cx={r2(cx + rr * 0.12)} cy={r2(cy + rr * 0.92)} rx={r2(rr * 0.8)} ry={r2(rr * 0.2)} className="sf-ball-shadow" />
+            <circle cx={r2(cx)} cy={r2(cy)} r={r2(rr)} fill={`url(#${tid}-ball-${el.tone})`} className={`${cls(el.tone)} sf-ball`} />
+            {el.label && (
+              <text x={r2(cx)} y={r2(cy + rr * 0.32)} className="sf-ball-label" style={{ fontSize: `${Math.max(12, rr * 0.85).toFixed(0)}px` }}>
+                {el.label}
+              </text>
+            )}
+          </g>
+        );
+      }
       case "circle": {
         const [cx, cy] = P(el.c);
         const [ex] = P(add(el.c, [el.r, 0]));
@@ -668,6 +688,17 @@ function Render({ els, title, desc }: { els: El[]; title: string; desc: string }
     >
       <title id={`${tid}-t`}>{title}</title>
       <desc id={`${tid}-d`}>{desc}</desc>
+      {els.some((e) => e.k === "ball") && (
+        <defs>
+          {(["ink", "a", "b", "c", "muted", "warn"] as Tone[]).map((t) => (
+            <radialGradient key={t} id={`${tid}-ball-${t}`} cx="0.35" cy="0.3" r="0.75" className={`sf-${t}`}>
+              <stop offset="0" className="sf-ball-hi" />
+              <stop offset="0.5" className="sf-ball-mid" />
+              <stop offset="1" className="sf-ball-lo" />
+            </radialGradient>
+          ))}
+        </defs>
+      )}
       {nodes}
     </svg>
   );
