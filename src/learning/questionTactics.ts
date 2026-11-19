@@ -562,6 +562,18 @@ export const questionTactics: QuestionTactic[] = [
       "Bitkinin ölçülen CO₂ değişimi = fotosentezle alınan − solunumla verilen; karanlıkta yalnız solunum sürer. Fosforun büyük gaz deposu yoktur.",
     ],
   },
+  {
+    id: "lipit-sayim",
+    guides: ["lipitler"],
+    match: /trigliserit|yağ asidi|gliserol|ester|su|fosfolipit|steroit|doymuş/i,
+    title: "Lipit soruları",
+    steps: [
+      "Trigliserit: 1 gliserol + 3 yağ asidi → 3 ester bağı, 3 su. n tane için 3n su; hidrolizde 3n su tüketilir.",
+      "Sınırlayıcı: t = min(gliserol, yağ asidi / 3); adet soruluyorsa aşağı yuvarla, artıkları yaz. Hazır DAG varsa yeni bağ = son − ilk.",
+      "Doymamışlık ölçütü karbon zincirindeki C=C'dir; uçtaki C=O değil. Cis kırık, trans düz ama ikisi de doymamış.",
+      "Fosfolipit: baş + 2 kuyruk, zarda başlar iki sulu yüze. Steroit: dört kaynaşmış halka, yağ asidi içermez. Safra enzim değildir.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
