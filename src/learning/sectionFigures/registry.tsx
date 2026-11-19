@@ -17,6 +17,7 @@ import { historyFiguresSeljuk } from "./historyFiguresSeljuk";
 import { biologyFiguresNucleic } from "./biologyFiguresNucleic";
 import { biologyFiguresMitosis } from "./biologyFiguresMitosis";
 import { biologyFiguresMeiosis } from "./biologyFiguresMeiosis";
+import { chemistryFiguresParticles } from "./chemistryFiguresParticles";
 import { chemistryFiguresAtoms } from "./chemistryFiguresAtoms";
 import { turkeyFigures } from "./turkeyFigures";
 import { historyFiguresIslam } from "./historyFiguresIslam";
@@ -41,6 +42,7 @@ export const sectionFigures: Record<string, Record<string, FigureDef>> = {
   ...biologyFiguresNucleic,
   ...biologyFiguresMitosis,
   ...biologyFiguresMeiosis,
+  ...chemistryFiguresParticles,
   ...chemistryFiguresAtoms,
   ...turkeyFigures,
   ...historyFiguresIslam,

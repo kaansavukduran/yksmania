@@ -442,6 +442,18 @@ export const questionTactics: QuestionTactic[] = [
       "Çeşitlilik: krossing over (profaz I, kardeş olmayan kromatitler) + metafaz I bağımsız dizilim (2ⁿ). Krossing over yoksa da gametler farklı olabilir.",
     ],
   },
+  {
+    id: "atom-sayim",
+    guides: ["atomun-temel-tanecikleri"],
+    match: /proton|nötron|elektron|kütle numarası|atom numarası|iyon/i,
+    title: "p, n, e ve yük hesabı",
+    steps: [
+      "Tablo kur: A, Z, q, p, n, e. Z'yi doğrudan p hanesine yaz.",
+      "n = A − Z; e = Z − q (q işaretli: 3+ için +3, 2− için −2). Ters soru: Z = e + q.",
+      "Elektron alıp vermede p, n, A değişmez; çok atomlu iyonda önce toplam P ve N, sonra E = P − q (yük bir kez).",
+      "Kontrol: p + n = A, p − e = q, bütün sayılar tam ve ≥ 0. Yalnız A ya da p + n + e verilmişse tek çözüm çıkmayabilir.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
