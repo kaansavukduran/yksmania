@@ -1,7 +1,7 @@
 import { useId } from "react";
 import { WorldBase, equirect, type Project } from "./WorldBase";
 import { decodeRings } from "./decodeRings";
-import { LAND_DETAIL_RINGS } from "./landDetailData";
+import { LAND_DETAIL_RINGS, LAND_DETAIL_SCALE } from "./landDetailData";
 import type { Place, PlaceKind } from "./gazetteer";
 import "./geo.css";
 
@@ -89,7 +89,7 @@ function spread(points: [number, number][], min: number): [number, number][] {
 }
 
 function pathOf(xy: Project) {
-  return decodeRings(LAND_DETAIL_RINGS)
+  return decodeRings(LAND_DETAIL_RINGS, LAND_DETAIL_SCALE)
     .map((ring) => ring.map(([lo, la], i) => {
       const [x, y] = xy(lo, la);
       return `${i ? "L" : "M"}${x.toFixed(1)} ${y.toFixed(1)}`;

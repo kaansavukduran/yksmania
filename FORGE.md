@@ -17,6 +17,8 @@
 
 - **“Haritada nerede?” (otomatik yer haritaları):** Konu anlatımında bir savaş, antlaşma/kongre, deprem/afet, uygarlık merkezi ya da düşünürün yaşadığı yer geçince sayfanın altında iki harita çıkar: dünya haritasında bölge çerçevesi ve bölgenin gerçek kıyılı yakın planı (Natural Earth 1:50m ayrıntılı, yalnız açılınca yüklenir), numaralı işaretler, alttaki anahtarda ad · olay türü · “konum yaklaşık” notu. Yer sözlüğü (`src/learning/geo/gazetteer.ts`) ~90 yer ve düşünür adı içerir (ör. Thales → Miletos, Kant → Königsberg, İbn Sina → Buhara); yalnız kesin özel adlarla ve Türkçe eklerle eşleşir, belirsiz adlar (Talas ilçesi, Gölcük Gölü, Afşin-Elbistan) birim testiyle dışlanır. Şu an 76+ sayfada harita çıkar (tarih, din kültürü, felsefe, coğrafya). Yeni `place-maps-046` testi 1280/320 px ve axe PASS; okuma/rehber tarayıcı testleri 51/51 PASS.
 
+- **Kontur ayrıntısı artırıldı:** Türkiye sınırı ve bölge haritaları artık 0,01° (~1 km) hassasiyetle saklanıyor (önce 0,1° ≈ 11 km) ve daha az sadeleştiriliyor: Türkiye 1:10m 2.248 nokta (önce 1.324), bölge haritaları 35.345 nokta. Körfez, burun ve adalar gerçek biçimiyle görünür.
+
 Doğrulama (yerel): check PASS; 2.496 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
 
 ---
