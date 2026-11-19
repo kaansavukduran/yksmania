@@ -155,7 +155,43 @@ const linear: FigureDef = {
   },
 };
 
+
+/* ---------- Parabol ile doğru: Δ ve teğet ---------- */
+const parabolaLine: FigureDef = {
+  caption:
+    "Sürgüyle doğrunun kesişimini (m) değiştir: y = x² − 4x + 5 parabolü ile y = 2x + m doğrusu. Ortak noktalar x² − 6x + (5 − m) = 0 denkleminin kökleridir: Δ = 16 + 4m. Δ > 0 iki kesişim, Δ = 0 teğet (m = −4, temas (3, 2)), Δ < 0 ortak nokta yok. Kesişim noktasının y'sini de hesapla.",
+  alt: "Koordinat düzleminde tepesi (2, 1) olan yukarı açılan parabol ve eğimi 2 olan doğru; sürgüyle doğru yukarı aşağı kayar, kesişim noktaları işaretlenir.",
+  param: { label: "Doğrunun y-kesişimi m", min: -7, max: 0, step: 0.5, init: -4, unit: "" },
+  draw: (m) => {
+    const k = 0.55;
+    const P = (x: number, y: number) => v(x * k, y * k);
+    const f = (x: number) => x * x - 4 * x + 5;
+    const els: El[] = [vec(P(-1, 0), P(6.3, 0), { tone: "ink" }), vec(P(0, -2.2), P(0, 10.5), { tone: "ink" })];
+    els.push(txt(P(6.3, 0), "x", "se", { tone: "ink", small: true }), txt(P(0, 10.5), "y", "n", { tone: "ink", small: true }));
+    const curve: V[] = [];
+    for (let x = -0.6; x <= 5.2; x += 0.1) if (f(x) <= 10.2) curve.push(P(x, f(x)));
+    els.push(poly(curve, { tone: "c", open: true, bold: true, smooth: true }));
+    const x0 = Math.max(-1, (-2.2 - m) / 2);
+    const x1 = Math.min(6, (10.2 - m) / 2);
+    els.push(seg(P(x0, 2 * x0 + m), P(x1, 2 * x1 + m), { tone: "a", bold: true }));
+    els.push(ball(P(2, 1), 0.08, "c"));
+    const D = 16 + 4 * m;
+    const roots = D > 1e-9 ? [3 - Math.sqrt(D) / 2, 3 + Math.sqrt(D) / 2] : Math.abs(D) <= 1e-9 ? [3] : [];
+    for (const r of roots) els.push(ball(P(r, 2 * r + m), 0.1, "warn"));
+    els.push(txt(v(-1.4, 6.4), " ", "c"), txt(v(6.6 * k + 1.2, -1.6), " ", "c"));
+    const pts = roots.map((r) => `(${fmt(r, 2)}, ${fmt(2 * r + m, 2)})`).join(" ve ");
+    return {
+      els,
+      readout: [
+        `x² − 4x + 5 = 2x + ${fmt(m, 1)} → x² − 6x + ${fmt(5 - m, 1)} = 0 → Δ = 36 − 4·(${fmt(5 - m, 1)}) = ${fmt(D, 1)}`,
+        D > 1e-9 ? `İki kesişim (kesen): ${pts}. Parabolün tepesi T(2, 1).` : Math.abs(D) <= 1e-9 ? `Teğet: çift kök x = 3, temas noktası ${pts}. y'yi de doğrudan hesapla.` : "Δ < 0: doğru parabolü kesmez. (Parabolün tepesi T(2, 1): (x − 2)² + 1.)",
+      ],
+    };
+  },
+};
+
 export const mathFiguresAyt3: Record<string, Record<string, FigureDef>> = {
+  "ayt-parabol": { "Bir doğruyla ortak çözüm farklı bir Δ kullanır": parabolaLine },
   "ayt-belirsiz-integral": { "Tek bir eğri yerine bir aile bulunur": family },
   "ayt-alan-riemann": {
     "İki eğri arasında yükseklik farkı kullan": between,

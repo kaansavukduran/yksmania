@@ -1029,6 +1029,19 @@ export const questionTactics: QuestionTactic[] = [
       "Enerji: aynı yükseklikte sürat aynı, hız vektörü değil (vᵧ işaret değiştirir). v² = v₀² − 2g(y − y₀).",
     ],
   },
+  {
+    id: "parabol-tepe-kesisim",
+    guides: ["ayt-parabol"],
+    match: /parabol|tepe|simetri|kök|kesişim|teğet|Δ|ax²|ikinci derece/i,
+    title: "Tepe biçimi, kök biçimi, kesişim Δ'sı",
+    steps: [
+      "y = a(x − h)² + k: tepe (h, k), eksen x = h. (x + 4)² için h = −4; işaret karenin içinde ters okunur.",
+      "a > 0 yukarı, a < 0 aşağı; |a| büyüdükçe dar. Tepe x'i = −b/(2a) = köklerin ortalaması; tepe y'si f(−b/2a).",
+      "Kökler x₁, x₂ ise y = a(x − x₁)(x − x₂); a için grafikten bir nokta daha koy.",
+      "Doğruyla kesişim: y'leri eşitle, yeni ikinci derece denklemin Δ'sı: > 0 iki, = 0 teğet (çift kök), < 0 yok. Kesişimin y'sini de hesapla.",
+      "Kapalı aralıkta en büyük/en küçük: uç değerleri ve (aralıktaysa) tepeyi karşılaştır. Tepe aralık dışındaysa onu seçme.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
