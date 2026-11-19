@@ -61,7 +61,9 @@
 
 - **Katlı oranlar (Drive 032 TYT Kimya kopya kâğıdı okundu):** FeO ve Fe₂O₃ yığın çubukları (toplam 36/40 g yanıltır, 28 g Fe'de O 8 : 12 = 2 : 3); XY₂/X₂Y₃ birimleri top olarak sayılır, X eşitlenince Y 4 : 3, Y eşitlenince X 3 : 4; ikinci örneği küçülten ölçek sürgüsü (14 g A'da B 8 : 12); C₂H₄/C₃H₆ karbon başına CH₂ grupları. Taktik eklendi.
 
-Doğrulama (yerel): check PASS; 2.654 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
+- **Simyadan kimyaya (Drive 001 TYT Kimya kopya kâğıdı okundu):** Aristo'nun sıcak/soğuk–kuru/ıslak karesi ve bugünkü sınıflar (su bileşik, hava ve toprak karışım); huni + filtre ile kumun tutulması, çözünmüş tuzun geçmesi, balon–soğutucu–toplama kabıyla damıtma; kapalı kapta katı 20 → 26 g iken toplam 148 g, kapak açılınca kaçan gazla düşen tartım. Taktik eklendi.
+
+Doğrulama (yerel): check PASS; 2.658 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
 
 ---
 

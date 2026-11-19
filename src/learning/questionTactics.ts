@@ -720,6 +720,20 @@ export const questionTactics: QuestionTactic[] = [
       "Basit formüller aynıysa (C₂H₄ ve C₃H₆ → CH₂) oran 1 : 1 çıkar; katlı oran aranmaz.",
     ],
   },
+  {
+    id: "simya-kimya",
+    guides: ["simyadan-kimyaya"],
+    match: /simya|damıt|süz|imbik|Aristo|Boyle|Lavoisier|kütle|deney|tarihsel|kimya/i,
+    title: "Simyadan kimyaya: rol, koşul, model, sistem",
+    steps: [
+      "Rolü ayır: amaç (altın, ölümsüzlük), araç (imbik, kroze), teknik (damıtma, süzme), ürün (boya, cam). Tek bir araç dönemi kanıtlamaz.",
+      "Ayırmada koşulu oku: çözünmeyen katı → süzme; çözünmüş maddeden sıvıyı geri toplamak → damıtma (buharlaştır, yoğunlaştır, topla).",
+      "Model adı verildiyse o modelin içinden yanıtla (Aristo: su soğuk-ıslak); bugünkü ölçüt sorulursa element = tek tür atom.",
+      "Kişi eşleştirmesinde belirleyici katkıyı ara: Kuşkucu Kimyager → Boyle; kapalı kapta tartım ve kütlenin korunumu → Lavoisier.",
+      "Tartımda sistem sınırını çiz: kapalı sistemde bir parçanın artışı ötekinin azalışıdır; açık kapta kaçan gaz tartıma girmez.",
+      "Deney yorumunda değişen bütün koşulları tabloya dök; birden fazla koşul değişmişse tek nedene bağlama.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

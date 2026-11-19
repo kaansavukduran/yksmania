@@ -37,6 +37,7 @@ Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen boz
 | 002 TYT Fizik – Madde Bilgisi (kopya kâğıdı) | `madde-ozkutle` figürleri (mezür ve menisküs, daralı m–V grafiği, 2024 TYT Fen 1 mantığında eğim ve karışım sürgüsü, eşit hacim/eşit kütle, kılcal borular su/cıva); taktik | Kısmi |
 | 030 TYT Biyoloji – Soy Ağaçları (kopya kâğıdı) | `soy-agaclari` figürleri (sembol dili, otozomal çekinik + Punnett + 2/3, 2023 TYT Fen 19 X'e bağlı renk körlüğü, model eleme); taktik | Kısmi |
 | 025 TYT Biyoloji – Kalıtıma Giriş (kopya kâğıdı) | `kalitima-giris` figürleri (homologlarda lokus/alel, gamet ağacı 2ʰ, bağımsız vs bağlı gen, iki çocuk olasılık ağacı 3/8 ve 7/16); taktik | Kısmi |
+| 001 TYT Kimya – Simyadan Kimyaya (kopya kâğıdı) | `simyadan-kimyaya` figürleri (Aristo nitelik karesi ve bugünkü sınıf; kumlu suda süzme, tuzlu suda süzmenin yetmemesi, damıtma düzeneği; kapalı kapta 148 g sabit tartım ve açık kapta gaz kaybı sürgüsü); 2018 TYT Fen 1 bağı; taktik | Kısmi |
 | 032 TYT Kimya – Katlı Oranlar Kanunu (kopya kâğıdı) | `katli-oranlar` figürleri (FeO/Fe₂O₃ eşit demirde O 8 : 12; XY₂/X₂Y₃ birim sayımıyla X ve Y eşitleme 4 : 3 ve 3 : 4; ikinci örneği ölçekleme sürgüsü 2 : 3; C₂H₄/C₃H₆ aynı CH₂); 2018 TYT Fen 8 (Dalton) bağı taktikte; taktik | Kısmi |
 | 001 TYT Fizik – Fizik Bilimine Giriş (kopya kâğıdı) | `fizik-bilimine-giris` figürleri (bir cihazda üç mekanizma → üç alt dal; temel/türetilmiş × skaler/vektörel tablosu; 100, 100², 100³ çarpanları; tek eksende işaretli toplam sürgüsü; dik 8 N + 3 N bileşkesi √73; cetvelde sabit sıfır kayması); taktik | Kısmi |
 | 001 TYT Biyoloji – Canlıların Karakteristik Özellikleri (kopya kâğıdı) | `canli-ozellikleri` figürleri (prokaryot/ökaryot planı, ribozom ikisinde de; karbon × enerji kaynağı 2 × 2 tablosu; homeostazi aralık grafiği; tek hücrelide hücre = organizma basamakları); taktik | Kısmi |
@@ -91,16 +92,16 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | TYT Matematik | 40 | 9 |
 | TYT Geometri | 19 | 19 |
 | TYT Fizik | 24 | 24 |
-| TYT Kimya | 55 | 5 |
+| TYT Kimya | 55 | 6 |
 | TYT Biyoloji | 36 | 5 |
 | AYT Matematik | 17 | 11 |
 | AYT Geometri | 4 | 4 |
 | AYT Fizik | 46 | 0 |
 | AYT Kimya | 55 | 0 |
 | AYT Biyoloji | 75 | 0 |
-| **Toplam** | **371** | **44 (%11,9)** |
+| **Toplam** | **371** | **45 (%12,1)** |
 
-Toplam bölüm figürü: 513 (539 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 45 (37 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
+Toplam bölüm figürü: 516 (542 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 46 (38 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
 
 TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 
@@ -148,3 +149,4 @@ TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 | 19 Kasım (37) | Biyoloji: canlı özellikleri 4 figür, 1 taktik; tüm figürlerde yazı çakışma/taşma düzeltmesi (228 → 0 çerçeve dışı, kalan çakışmalar giderildi); çevre açı sürgüsü küçük yaya taşıyordu, düzeltildi | 1 | 74 / 371 |
 | 19 Kasım (38) | Fizik: fizik bilimine giriş 6 figür; 1 taktik | 1 | 75 / 371 |
 | 19 Kasım (39) | Kimya: katlı oranlar 4 figür; 1 taktik | 1 | 76 / 371 |
+| 19 Kasım (40) | Kimya: simyadan kimyaya 3 figür; 1 taktik | 1 | 77 / 371 |
