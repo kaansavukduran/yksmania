@@ -1175,6 +1175,19 @@ export const questionTactics: QuestionTactic[] = [
       "Eğim % = 100 × kot farkı / yatay uzaklık; yüksek yer dik yamaç değildir, sık izohips ancak aynı ölçek ve aynı aralıkta dikliği gösterir.",
     ],
   },
+  {
+    id: "yahudilik-hristiyanlik-kanit",
+    guides: ["yahudilik-ve-hristiyanlik"],
+    match: /Yahudi|Hristiyan|sinagog|kilise|Tora|Tanah|İncil|Ahit|Şabat|vaftiz|menora|kipa|Paskalya|Noel|haç/i,
+    title: "Terimi türüyle eşle, yalnız metindeki kanıtı say",
+    steps: [
+      "Önce terimin türünü yaz: mekân (sinagog, kilise), zaman (Şabat, Noel, Paskalya), ritüel (vaftiz, evharistiya), giysi (kipa), simge (menora, Davud Yıldızı, haç), metin (Tora, Tanah, İncil).",
+      "Bütün–parçayı koru: Tora ⊂ Tanah; dört İncil ⊂ Yeni Ahit ⊂ Kitab-ı Mukaddes.",
+      "Sayarak ayır: menora 7 kol, Davud Yıldızı 6 köşe. Noel doğum, Paskalya diriliş.",
+      "‘Hangisinden söz edilmemiştir?’ kökünde her seçeneğe metinden kanıt ara; ortamda mümkün olan ama yazılmayan (örneğin Tora okunması) söylenmiş sayılmaz (2023 AYT Sosyal Bilimler-2 soru 38 mantığı).",
+      "Mezhep din değildir: Katolik, Ortodoks, Protestan Hristiyanlık içindedir; tek gözlemden ‘bütün inananlar’ genellemesi kurma.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
