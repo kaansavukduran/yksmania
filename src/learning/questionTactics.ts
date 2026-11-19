@@ -490,6 +490,18 @@ export const questionTactics: QuestionTactic[] = [
       "Deprem: büyüklük olayın tek değeridir; şiddet yere göre değişir. Daha çok hasar daha büyük büyüklük kanıtı değildir.",
     ],
   },
+  {
+    id: "prizma-renk",
+    guides: ["prizmalar-renkler"],
+    match: /prizma|renk|filtre|ışık|boya|kart|sarı|mavi/i,
+    title: "Prizma ve renk soruları",
+    steps: [
+      "Prizmada her yüze ayrı normal çiz; ilk yüze dik giren ışın ikinci yüze, iki normal arasındaki açı kadar eğik gelir.",
+      "Camdan havaya geçişte geliş açısını sınır açısıyla karşılaştır: büyükse tam yansıma. Beyaz ışıkta mor en çok, kırmızı en az sapar; tek renk ayrışmaz.",
+      "Renkleri K–Y–M listesine çevir. Işık + ışık → birleşim; filtre ya da yüzey → gelen ile izin verilenin ortak kısmı.",
+      "Cismin beyaz ışıktaki adını sonuç sanma: sarı ışıkta mavi kart koyu, beyaz kart sarı görünür.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
