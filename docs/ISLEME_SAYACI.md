@@ -101,11 +101,11 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | AYT Matematik | 17 | 11 |
 | AYT Geometri | 4 | 4 |
 | AYT Fizik | 46 | 5 |
-| AYT Kimya | 55 | 0 |
+| AYT Kimya | 55 | 5 |
 | AYT Biyoloji | 75 | 0 |
-| **Toplam** | **371** | **59 (%15,9)** |
+| **Toplam** | **371** | **64 (%17,3)** |
 
-Toplam bölüm figürü: 542 (568 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 56 (48 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
+Toplam bölüm figürü: 547 (573 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 56 (48 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
 
 TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 
@@ -159,3 +159,4 @@ TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 | 19 Kasım (43) | Biyoloji: besin piramidi 4, besin ağı 1, ekoloji giriş 1 figür; 3 taktik | 1 | 80 / 371 |
 | 19 Kasım (44) | Biyoloji: güncel çevre sorunları 3 figür; 1 taktik | 1 | 81 / 371 |
 | 19 Kasım (45) | AYT Fizik: çembersel hareket, BHH izdüşümü, Lenz, Kmax–f, manyetik yarıçap (5 figür, birim sadeleştirmeli okumalar); 1 taktik; kupa sistemi | 0 | 81 / 371 |
+| 19 Kasım (46) | AYT Kimya: Boyle pistonu + P–V hiperbolü, denge bozulmasında etki anı (N₂ ekleme), kuvvetli asit–baz titrasyon eğrisi (mmol hesabı), Daniell pili (elektron/iyon yolu, 1,10 V), Cr/Cu orbital istisnaları (5 figür, birim okumalı) | 0 | 86 / 371 |
