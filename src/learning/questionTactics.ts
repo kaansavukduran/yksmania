@@ -1344,6 +1344,19 @@ export const questionTactics: QuestionTactic[] = [
       "Keratin protein, melanin pigmenttir; korunmaya katkı tam koruma demek değildir.",
     ],
   },
+  {
+    id: "dunya-sulari-butce",
+    guides: ["dunyada-sular"],
+    match: /su|debi|havza|göl|akifer|kaynak|artezyen|tuzluluk|okyanus|rejim/i,
+    title: "Suda depo, akış, bütçe ve kökeni ayrı ölçütlerle oku",
+    steps: [
+      "Debi = hacim / süre (m³/s); rejim, debinin yıl içindeki değişimidir. Tek ölçüm rejim değildir.",
+      "Bütçede önce sistemi ve süreyi söyle: değişim = giriş − çıkış; havza içinde kalan sızmayı ikinci kez dış kayıp yazma.",
+      "Gölde çanağın kökeni (tektonik, volkanik, buzul, karstik, set) ile suyun tuzluluğu ayrı sorulardır; çözünme çanağı karstiktir (2020 TYT Sosyal 7 mantığı).",
+      "Akifer suyu depolar ve iletir; artezyenin belirleyicisi basınçlı akiferdir, her artezyen kuyu fışkırmaz; her sıcak kaynak gayzer değildir.",
+      "Tatlı suyun büyük kısmı buz ve yer altındadır; çok su ile kullanılabilir tatlı su aynı ölçü değildir.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
