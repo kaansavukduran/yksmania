@@ -1383,6 +1383,19 @@ export const questionTactics: QuestionTactic[] = [
       "Tek bağ enerjisi toplu özellik değildir; ‘sadece’ koşulunu ve farklı sıcaklıklardaki viskoziteyi ortak koşula getirerek oku (2024 TYT Fen 10, 2025 TYT Fen 11 mantığı).",
     ],
   },
+  {
+    id: "paragraf-konu-kapsam",
+    guides: ["paragraf"],
+    match: /konu|başlık|ana düşünce|asıl anlatılmak|değinilme|söylenemez|ulaşılamaz|çıkarılamaz|paragraf|parça/i,
+    title: "Konuyu her cümleye geri uygula, olumsuz kökte kanıtsızı seç",
+    steps: [
+      "Kökü etiketle: konu (ne hakkında?), başlık (konu + vurgu), ana düşünce (ne diyor?) ya da değinilmemiş bilgi.",
+      "Her cümlenin katkısını bir iki sözcükle yaz; örneği kaldırınca kalan ortak odağı adlandır.",
+      "Adayı bütün önemli cümlelere uygula: tek cümleyi kapsayan dar, metinde olmayan alanı ekleyen geniştir.",
+      "Olumsuz kökte her seçeneğe kanıt satırı yaz; ‘her, bütün, kesin’ gibi dışarıdan eklenmiş nicelikleri işaretle ve kanıtsızı seç.",
+      "Ortak metindeki sorular farklı beceri ölçer; konuyu bulmak yargı ve istisna sorusunu çözmez (2023 TYT Türkçe 37–38 mantığı).",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
