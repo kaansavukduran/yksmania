@@ -5,6 +5,47 @@ import { lessonById } from "../domain/content";
 import type { CheatSheet } from "./cheatsheetContent";
 import { VisualLab } from "./VisualLab";
 
+/*
+ * "Kendini sına": the right-hand side of each formula (text after "=" up to
+ * ";" or the end of the sentence) is hidden behind a button. The learner says
+ * it first, then reveals it. Nothing is saved or scored.
+ */
+const formulaPart = /(=\s*)([^=;]+?)(?=;|\.(?:\s|$)|$)/g;
+function ClozeText({ text, testing }: { text: string; testing: boolean }) {
+  const [open, setOpen] = useState<number[]>([]);
+  if (!testing || !text.includes("=")) return <>{text}</>;
+  const parts: React.ReactNode[] = [];
+  let last = 0;
+  let n = 0;
+  for (const m of text.matchAll(formulaPart)) {
+    const start = m.index! + m[1].length;
+    const hidden = m[2].trim();
+    if (!hidden) continue;
+    parts.push(text.slice(last, start));
+    const id = n++;
+    parts.push(
+      open.includes(id) ? (
+        <mark key={`m${id}`} className="cloze-open">
+          {m[2]}
+        </mark>
+      ) : (
+        <button
+          key={`b${id}`}
+          type="button"
+          className="cloze-gap"
+          aria-label={`Gizli formül parçası ${id + 1}: göster`}
+          onClick={() => setOpen((o) => [...o, id])}
+        >
+          ? göster
+        </button>
+      ),
+    );
+    last = start + m[2].length;
+  }
+  parts.push(text.slice(last));
+  return <>{parts}</>;
+}
+
 function Recall({ prompt, answer }: { prompt: string; answer: string }) {
   const [shown, setShown] = useState(false);
   return (
@@ -32,6 +73,7 @@ export function CheatReader({
   const { state, update, toast, t } = useApp();
   const noteKey = `cheatsheet:${sheet.topicId}`;
   const lesson = sheet.lessonId ? lessonById(sheet.lessonId) : undefined;
+  const [testing, setTesting] = useState(false);
   return (
     <section
       className="panel cheat-reader"
@@ -46,12 +88,29 @@ export function CheatReader({
           <VisualLab id={sheet.lessonId} />
         </div>
       )}
-      <div className="cheat-sections">
+      <div className="cheat-test-toggle">
+        <button
+          type="button"
+          className="secondary"
+          aria-pressed={testing}
+          onClick={() => setTesting((v) => !v)}
+        >
+          {testing ? "Kendini sına: kapat" : "Kendini sına: formülleri gizle"}
+        </button>
+        {testing && (
+          <p className="small muted">
+            Gizli parçayı önce kendin söyle, sonra aç. Bu çalışma kaydedilmez ve puan vermez.
+          </p>
+        )}
+      </div>
+      <div className="cheat-sections" key={testing ? "test" : "read"}>
         {sheet.sections.map((section, i) => (
           <section className="cheat-section" key={`${section.title}-${i}`}>
             <h2>{section.title}</h2>
             {section.text.map((text, j) => (
-              <p key={j}>{text}</p>
+              <p key={j}>
+                <ClozeText text={text} testing={testing} />
+              </p>
             ))}
             {section.table && (
               <div

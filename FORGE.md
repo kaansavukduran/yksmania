@@ -1,3 +1,9 @@
+# Forge044 (ilk dilim) — aktif kopya kâğıdı: “Kendini sına” (main)
+
+19 Kasım 2026. Kopya kâğıdında “Kendini sına: formülleri gizle” düğmesi: her formülün eşittir sonrası (noktalı virgüle veya cümle sonuna kadar) “? göster” boşluğuna dönüşür; öğrenci önce kendisi söyler, sonra dokunup açar. Kapatınca kâğıt aynen geri gelir. Açılan boşluklar kaydedilmez, puan/XP üretmez. Mevcut “Bakmadan hatırla” kartları zaten yanıtı gizli sunuyor. Doğrulama: yeni `active-cheatsheet-044` testi 1280/320 px PASS (en az 5 gizli parça, 44 px dokunma hedefi, yatay taşma yok, öğrenme kayıtları değişmedi); kopya kâğıdı/geometri özeti/okuma/uygulama tarayıcı testleri 37/37 PASS. Sıradaki: Drive'daki 9 taktik yönteminin uygulama içi taktik kütüphanesine dönüştürülmesi; Forge045 akıllı oturum başlatıcı.
+
+---
+
 # Forge043 — hata otopsisi: neden etiketi, kapatıp yeniden çöz, hata haritası (main)
 
 19 Kasım 2026. Yanlışlarım ekranında her yanlış/yardımlı soruya yedi hata nedeninden biri seçilebilir (bilgi eksik, kavram yanılgısı, yöntem seçimi, işlem hatası, okuma/dikkat, birim/işaret, süre baskısı); seçilen nedene özel tek cümlelik onarım önerisi gösterilir. “Kapatıp yeniden çöz” açıklamaya bakmadan şıkları yeniden sunar, doğru/yanlış geri bildirimi verir ve onarım sırasını söyler (benzer soru → 3/7/21. gün tekrarı). Üstte nedenlere göre “Hata haritan” çubukları ve nedeni seçilmemiş sayısı. Etiket ve yeniden deneme öğrencinin notudur: `explorations` altında kısa özetli anahtarla (100 karakter sınırı içinde) saklanır, oturum/tekrar/konu ilerlemesini değiştirmez, puan/XP/ustalık üretmez. Bileşen: `src/components/MistakeRepair.tsx`.

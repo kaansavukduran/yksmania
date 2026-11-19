@@ -152,3 +152,37 @@
     padding-inline-start: 1.2em;
   }
 }
+
+/* Active recall on the sheet. */
+.cheat-test-toggle {
+  display: grid;
+  gap: 0.35rem;
+  margin-block: 0.8rem;
+}
+.cheat-test-toggle button {
+  justify-self: start;
+  min-height: 44px;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.cloze-gap {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  min-width: 44px;
+  padding: 0 0.5rem;
+  margin: 0 0.15rem;
+  border: 1px dashed var(--accent);
+  border-radius: 0.35rem;
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  color: var(--accent);
+  font: inherit;
+  font-size: 0.9em;
+  vertical-align: baseline;
+}
+.cloze-open {
+  background: color-mix(in srgb, var(--mint) 18%, transparent);
+  color: inherit;
+  border-radius: 0.25rem;
+  padding: 0 0.15rem;
+}
