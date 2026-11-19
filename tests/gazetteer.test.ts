@@ -12,6 +12,7 @@ describe("place gazetteer", () => {
     expect(placesIn("Talas ilçesi Kayseri’dedir.")).toEqual([]);
     expect(placesIn("Isparta’daki Gölcük Gölü bir krater gölüdür.")).toEqual([]);
     expect(placesIn("Afşin-Elbistan termik santrali linyit kullanır.")).toEqual([]);
+    expect(placesIn("Sakarya’nın Hendek ilçesinde fındık yetişir.")).toEqual([]);
   });
   it("keeps coordinates valid and ids unique", () => {
     expect(new Set(places.map((p) => p.id)).size).toBe(places.length);

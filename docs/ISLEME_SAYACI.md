@@ -81,7 +81,7 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | AYT Biyoloji | 75 | 0 |
 | **Toplam** | **371** | **41 (%11,1)** |
 
-Toplam bölüm figürü: 399 (434 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 42 (34 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
+Toplam bölüm figürü: 401 (434 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 42 (34 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
 
 TYT Fizik'te figürü olmayan 7 rehber: fizik bilimine giriş, madde ve özkütle, prizmalar ve renkler, ses ve deprem dalgaları, ışık bilgisi, durgun elektrik, mıknatıslar ve manyetik alan.
 
@@ -102,3 +102,4 @@ TYT Fizik'te figürü olmayan 7 rehber: fizik bilimine giriş, madde ve özkütl
 | 19 Kasım (10) | Kimya: Rutherford, Bohr, Na→Cl aktarımı, elektron denizi, akım, kayan katmanlar (6 figür); seçim çipleri; axolotl ve trans temaları; sade savaş şemaları | 0 | 41 / 371 (+3 kimya rehberi) |
 | 19 Kasım (11) | Gerçek dünya haritası (Natural Earth 1:50m) iki coğrafya laboratuvarında; Türkiye 1:10m sınırıyla 4 figür (iklim, yağış gölgesi, Ege horst–graben, KAF/DAF) | 0 | 41 / 371 (+3 coğrafya rehberi) |
 | 19 Kasım (12) | Otomatik “Haritada nerede?”: ~90 yer/düşünür sözlüğü, 76+ sayfada dünya + bölge haritası (savaş, antlaşma, deprem, uygarlık, düşünce merkezleri) | 0 | 41 / 371 |
+| 19 Kasım (13) | Kontur ayrıntısı (0,01°), yumuşak eğriler; Uhud Savaşı şeması ve 622–632 olay şeridi; İslam tarihi yerleri haritalarda | 0 | 41 / 371 (+2 rehber) |

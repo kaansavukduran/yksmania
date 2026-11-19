@@ -52,4 +52,6 @@ export const sectionFigureGuideIds = new Set<string>([
   "turkiye-iklimi",
   "turkiye-yer-sekilleri",
   "turkiye-ic-kuvvetler",
+  "islam-medeniyetinin-dogusu",
+  "hz-muhammed-ve-gencler",
 ]);

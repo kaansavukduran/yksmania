@@ -21,7 +21,9 @@
 
 - **Yumuşak eğriler:** Şekil motoruna `smooth` seçeneği (Catmull–Rom → Bézier) eklendi. Savaş şemalarındaki üçgen dağlar farklı yükseklikte doruklu, yumuşak eyerli sıradağ silüetlerine; Türkiye şekillerindeki dağ, fay ve graben çizgileri akan eğrilere dönüştü.
 
-Doğrulama (yerel): check PASS; 2.496 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
+- **İslam tarihi görselleri:** Uhud Savaşı (625) aşama aşama oynatılan şema: Uhud Dağı arkada (sıradağ silüeti), okçular Ayneyn Tepesi'nde, ilk üstünlük, okçuların tepeyi bırakması (“boş” işareti), Halid bin Velid süvarilerinin arkadan dolanması, dağa çekiliş ve sonuç; Âl-i İmrân 159 istişare bağlamıyla. 622–632 olay şeridi: Bedir/Uhud savaş, Hendek savunma, Hudeybiye antlaşma, Mekke'nin alınması fetih. Yer sözlüğüne Mekke, Medine, Bedir, Uhud, Hendek Savaşı, Hudeybiye, Hayber, Taif, Mute, Kudüs, Yermük, Kadisiye, Habeşistan eklendi (Sakarya'nın Hendek ilçesi dışlanır, birim testli).
+
+Doğrulama (yerel): check PASS; 2.500 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
 
 ---
 

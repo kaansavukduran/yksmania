@@ -10,7 +10,7 @@ import { circle, dist, lerp, poly, pt, seg, txt, v, vec, type El, type FigureDef
  * hiçbir yazı birliklerin veya okların üstüne binmez.
  */
 
-type Unit = {
+export type Unit = {
   /** One or two letters drawn inside the token; the legend names it. */
   code: string;
   label: string;
@@ -23,8 +23,8 @@ type Unit = {
   /** Before this stage the unit is hidden in ambush (outline only). */
   hiddenUntil?: number;
 };
-type Stage = { name: string; text: string };
-type Battle = {
+export type Stage = { name: string; text: string };
+export type Battle = {
   stages: Stage[];
   units: Unit[];
   terrain: El[];
@@ -57,7 +57,7 @@ function legendItems(units: Unit[], sides: [string, Tone][]) {
   for (const u of units) if (!items.some((i) => i.code === u.code)) items.push({ code: u.code, label: u.label, tone: u.tone });
   return items;
 }
-const ring = (c: V): El => circle(c, R + 0.22, { tone: "warn", bold: true });
+export const ring = (c: V): El => circle(c, R + 0.22, { tone: "warn", bold: true });
 /** Three short dashed arrows from a to b: one volley of mounted archers. */
 function volley(a: V, b: V, tone: Tone): El[] {
   const d = dist(a, b) || 1;
@@ -70,7 +70,7 @@ function volley(a: V, b: V, tone: Tone): El[] {
   });
 }
 
-function battleFigure(b: Battle, caption: string, alt: string): FigureDef {
+export function battleFigure(b: Battle, caption: string, alt: string): FigureDef {
   const n = b.stages.length;
   return {
     caption,
@@ -112,7 +112,7 @@ function battleFigure(b: Battle, caption: string, alt: string): FigureDef {
 }
 
 /** Compass words under the map instead of a frame around it. */
-const compass = (w: number, left = "← batı", right = "doğu →"): El[] => [
+export const compass = (w: number, left = "← batı", right = "doğu →"): El[] => [
   txt(v(0.1, -0.35), left, "e", { tone: "muted", small: true }),
   txt(v(w - 0.1, -0.35), right, "w", { tone: "muted", small: true }),
 ];
@@ -121,7 +121,7 @@ const compass = (w: number, left = "← batı", right = "doğu →"): El[] => [
  * different heights and soft saddles between them, filled down to the base.
  * `down` draws the range hanging below the base line (the far side of a pass).
  */
-const mountains = (xs: number[], y: number, w: number, h: number, down = false): El[] => {
+export const mountains = (xs: number[], y: number, w: number, h: number, down = false): El[] => {
   const s = down ? -1 : 1;
   const pts: V[] = [];
   const x0 = xs[0] - w / 2;

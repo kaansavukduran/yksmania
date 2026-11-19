@@ -17,6 +17,7 @@ import { historyFiguresSeljuk } from "./historyFiguresSeljuk";
 import { biologyFiguresNucleic } from "./biologyFiguresNucleic";
 import { chemistryFiguresAtoms } from "./chemistryFiguresAtoms";
 import { turkeyFigures } from "./turkeyFigures";
+import { historyFiguresIslam } from "./historyFiguresIslam";
 
 export const sectionFigures: Record<string, Record<string, FigureDef>> = {
   ...geometryFigures031,
@@ -36,6 +37,7 @@ export const sectionFigures: Record<string, Record<string, FigureDef>> = {
   ...biologyFiguresNucleic,
   ...chemistryFiguresAtoms,
   ...turkeyFigures,
+  ...historyFiguresIslam,
 };
 
 export function SectionFigure({
