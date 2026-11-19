@@ -3,6 +3,7 @@ import { subjects } from "../domain/content";
 import { useApp } from "../store";
 import { completionDates, studyTopics } from "../domain/studyPlan";
 import { StudyTree } from "../components/StudyTree";
+import { TrophyShowcase } from "../components/Trophies";
 export function World({ navigate }: { navigate: (r: string) => void }) {
   const { state, t } = useApp();
   const completed = useMemo(
@@ -138,6 +139,7 @@ export function World({ navigate }: { navigate: (r: string) => void }) {
         göredir: Excel’deki 479 başlık ve eklenen 6 geometri temeli. Yeni
         başlıklar önceki tamamlanma kayıtlarını değiştirmez.
       </p>
+      <TrophyShowcase />
       <div className="study-trees">
         <StudyTree
           exam="TYT"

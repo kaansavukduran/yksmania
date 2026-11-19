@@ -21,6 +21,7 @@ import { useRegisterSW } from "virtual:pwa-register/react";
 import { Capacitor } from "@capacitor/core";
 import { useApp } from "./store";
 import { ExamDeadlineWatcher } from "./pages/ExamDeadlineWatcher";
+import { TrophyToasts } from "./components/Trophies";
 import {
   Calendar,
   Cheatsheets,
@@ -241,6 +242,7 @@ export default function App() {
     <div className="app-shell">
       {confirmationDialog}
       <ExamDeadlineWatcher />
+      <TrophyToasts />
       {!Capacitor.isNativePlatform() &&
         ["http:", "https:"].includes(location.protocol) && (
           <WebUpdates onReady={updateCallback} />
