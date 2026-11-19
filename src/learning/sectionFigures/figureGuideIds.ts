@@ -81,6 +81,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "tarih-zaman",
   "bilgi-felsefesi",
   "islam-dusuncesinde-mezhepler",
+  "nufus-piramitleri",
   "ayt-gaz-yasalari",
   "kimyasal-denge",
   "ayt-titrasyon",

@@ -1094,6 +1094,19 @@ export const questionTactics: QuestionTactic[] = [
       "“Hangisi söylenemez / etkili değildir?” kökünde her seçeneğin neden-sonuç bağını sına; mekanizması olmayanı seç (2023 TYT Sosyal 19).",
     ],
   },
+  {
+    id: "nufus-piramidi-payda",
+    guides: ["nufus-piramitleri"],
+    match: /piramit|yaş|nüfus|bağımlılık|ortanca|taban|kuşak|doğum|göç/i,
+    title: "Önce ekseni ve yüzdenin paydasını oku",
+    steps: [
+      "Dikey eksen yaş, yatay eksen kişi ya da pay. İki taraf toplam nüfusa göreyse aynı yaşta topla (%12 + %11 = %23); her cinsiyet kendi toplamına göreyse önce kişi sayısına dön.",
+      "Pay × toplam nüfus = kişi: %20 × 1 milyon = 200 bin < %10 × 3 milyon = 300 bin.",
+      "Yaş bağımlılık oranı = (0–14 + 65+) ÷ 15–64 × 100; çocuk + yaşlı payıyla aynı şey değil. 15–64 payı çalışanların oranı değil.",
+      "Tipler: içe çökük ve düzgün üçgen (geniş taban), asimetrik (taban üstündekinden dar), arı kovanı (orta ve üst belirgin), çan (taban yeniden genişliyor).",
+      "Çentik ya da çıkıntının nedeni (göç, doğum dalgası, kayıp) tek kesitten kesinleşmez; okuryazarlık ve gelir piramitten okunmaz (2024 TYT Sosyal 8).",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
