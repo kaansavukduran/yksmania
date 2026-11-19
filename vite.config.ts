@@ -26,6 +26,39 @@ export default defineConfig({
               test: /[\\/]learning[\\/]forge\d{3}[A-Z][^\\/]*\.ts$/,
               priority: 50,
             },
+            // Shared learning content used by several routes. Without these
+            // groups it is hoisted into the entry chunk, which then outgrows
+            // the offline precache limit as content is added.
+            {
+              name: "learning-sources",
+              test: /[\\/]src[\\/]learning[\\/][^\\/]*(?:Source\d{3}|[Ss]ourceExercises\d{3})\.ts$/,
+              priority: 40,
+            },
+            {
+              name: "learning-geometry",
+              test: /[\\/]src[\\/]learning[\\/]geometry[A-Z][^\\/]*\.ts$/,
+              priority: 40,
+            },
+            {
+              name: "learning-guides",
+              test: /[\\/]src[\\/]learning[\\/]guides[\\/][^\\/]*\.ts$/,
+              priority: 40,
+            },
+            {
+              name: "learning-narratives",
+              test: /[\\/]src[\\/]learning[\\/]narratives[\\/][^\\/]*\.ts$/,
+              priority: 40,
+            },
+            {
+              name: "learning-core",
+              test: /[\\/]src[\\/](?:learning|domain)[\\/][^\\/]*\.ts$/,
+              priority: 10,
+            },
+            {
+              name: "react-vendor",
+              test: /[\\/]node_modules[\\/](?:react|react-dom|scheduler)[\\/]/,
+              priority: 30,
+            },
           ],
         },
       },

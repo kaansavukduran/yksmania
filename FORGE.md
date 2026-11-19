@@ -69,7 +69,10 @@
 
 - **Ekoloji (Drive 032 Besin Piramidi okundu):** verim sürgülü dört basamaklı enerji piramidi (geçiş sayısı = düzey − 1), aynı zincirin ters sayı piramidi ile düzgün enerji piramidi, otçulun 1000 kJ bütçesi (300/500/200), enerji 10 000 → 100 kJ azalırken derişim 0,02 → 2 mg/kg; kuşun tohum ve böcek yollarında 2. ve 3. düzey olması; birey–popülasyon–komünite–ekosistem panelleri. 3 taktik.
 
-Doğrulama (yerel): check PASS; 2.684 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
+- **Faz 1 · paket bölme:** 12 sayfa `src/pages/routes.ts` içindeki önceden yüklenebilir tembel bileşenlere taşındı; sınav süresi bekçisi ayrı modülde. Paylaşılan içerik (kaynak soruları, geometri, rehberler, anlatılar, çekirdek içerik) ve React ayrı parçalara bölündü. Ölçüm (`npm run build`): giriş parçası 5.113.655 B → 33.796 B; en büyük parça 3.088.627 B (önbellek sınırı 5 MiB; önceki giriş sınıra %2,5 kalmıştı). Sayfa parçaları açılışta paralel önceden yüklenir, sonra çizilir; böylece gezinti anında ve çevrimdışı çalışır, saat dondurulmuş sınav testleri de Suspense zamanlayıcısına takılmaz. Başarısız parça bir sonraki ziyarette yeniden denenir.
+- **CI/Pages:** Playwright Chromium kurulumu 3 denemeli. e9a4341 Pages yayını ve 410de8a tarayıcı parçası yalnız bu adımda (apt aynası) düşmüştü.
+
+Doğrulama (yerel): check PASS; 2.684 birim PASS; app/exams/confirmation tarayıcı testleri 37/37 PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
 
 ---
 

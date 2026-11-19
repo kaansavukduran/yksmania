@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { Suspense, useEffect, useRef, useState } from "react";
 import { APP_VERSION } from "./version";
 import {
   BookOpen,
@@ -20,17 +20,21 @@ import {
 import { useRegisterSW } from "virtual:pwa-register/react";
 import { Capacitor } from "@capacitor/core";
 import { useApp } from "./store";
-import { Today } from "./pages/Today";
-import { Courses } from "./pages/Courses";
-import { Cheatsheets } from "./pages/Cheatsheets";
-import { Calendar } from "./pages/Calendar";
-import { Mistakes } from "./pages/Mistakes";
-import { Exams, ExamDeadlineWatcher } from "./pages/Exams";
-import { World } from "./pages/World";
-import { Settings } from "./pages/Settings";
-import { Theory } from "./pages/Theory";
-import { Study, Result } from "./pages/Study";
-import { Topic } from "./pages/Topic";
+import { ExamDeadlineWatcher } from "./pages/ExamDeadlineWatcher";
+import {
+  Calendar,
+  Cheatsheets,
+  Courses,
+  Exams,
+  Mistakes,
+  Result,
+  Settings,
+  Study,
+  Theory,
+  Today,
+  Topic,
+  World,
+} from "./pages/routes";
 import { useConfirmationDialog } from "./components/ConfirmationDialog";
 import type { Lesson, ReviewStage } from "./domain/model";
 const routes = [
@@ -377,6 +381,13 @@ export default function App() {
           tabIndex={-1}
           className={`main-content ${["/study", "/lesson", "/practice"].includes(path) ? "study-main" : ""}`}
         >
+          <Suspense
+            fallback={
+              <div className="page-loading" role="status" aria-live="polite">
+                {t("loading")}
+              </div>
+            }
+          >
           {path === "/today" ? (
             <Today
               start={(l, r) => {
@@ -503,6 +514,7 @@ export default function App() {
               navigate={navigate}
             />
           )}
+          </Suspense>
         </main>
         <footer className="app-footer">{t("footer")}</footer>
       </div>
