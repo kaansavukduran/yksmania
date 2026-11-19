@@ -1227,6 +1227,19 @@ export const questionTactics: QuestionTactic[] = [
       "Sonlu n bir sınırdır, alan değildir; alt ve üst toplamın farkı hata sınırını verir, n büyüdükçe ikisi integrale yaklaşır.",
     ],
   },
+  {
+    id: "mutlak-deger-uzaklik-kapsam",
+    guides: ["tyt-mat-mutlak-deger-kaynak-038", "mutlak-deger"],
+    match: /mutlak|\|/i,
+    title: "Mutlak değeri uzaklık oku, sağ tarafı ve çizginin kapsamını denetle",
+    steps: [
+      "|x − a| = x'in a'ya uzaklığı: merkez a, yarıçap sağ taraf. |x + 3| için merkez −3'tür.",
+      "Sağ tarafın işaretini önce yaz: negatifse eşitlik ve ‘küçüktür’ boş, ‘büyüktür’ her x; sıfırsa tek nokta.",
+      "Küçüktür / küçük eşittir iç aralık, büyüktür / büyük eşittir iki dış bölge; eşitlik varsa uçlar kapalı.",
+      "Mutlak değer çizgisi kapsamı belirler: içerisi önce tek sayıya toplanır, sonra mutlak değeri alınır (2026 TYT Temel Matematik 7 mantığı).",
+      "|x − a| + |x − b| en az |a − b|'dir ve bu değer a ile b arasındaki her x'te alınır; parçalı çözümde her kökü kendi aralığında denetle.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

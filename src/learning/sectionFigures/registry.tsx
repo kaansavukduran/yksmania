@@ -61,6 +61,7 @@ import { religionFiguresBooks } from "./religionFiguresBooks";
 import { philosophyFiguresReligion } from "./philosophyFiguresReligion";
 import { physicsFiguresNuclear } from "./physicsFiguresNuclear";
 import { mathFiguresAyt4 } from "./mathFiguresAyt4";
+import { mathFiguresAbs } from "./mathFiguresAbs";
 import { philosophyFigures } from "./philosophyFigures";
 import { religionFigures } from "./religionFigures";
 import { geographyFiguresPopulation } from "./geographyFiguresPopulation";
@@ -132,6 +133,7 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   philosophyFiguresReligion,
   physicsFiguresNuclear,
   mathFiguresAyt4,
+  mathFiguresAbs,
   philosophyFigures,
   religionFigures,
   geographyFiguresPopulation,
