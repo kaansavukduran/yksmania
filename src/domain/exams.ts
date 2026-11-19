@@ -8,6 +8,7 @@ import {
   resolvedGuidance,
 } from "../learning/questionHelp";
 import { effectiveHelpLevel } from "../learning/helpProgression";
+import { buildStarIndex, type StarIndex } from "./difficulty";
 export type ExamSpec = {
   id: string;
   title: string;
@@ -166,6 +167,49 @@ function previewForId(id: string): ExamSpec | undefined {
   if (id === "mixed-ayt") return mixed("AYT");
   const subject = subjects.find((s) => `branch-${s.id}` === id);
   return subject ? branchSpec(subject) : undefined;
+}
+let starIndexCache: StarIndex | undefined;
+/** Estimated 1–10 difficulty star of a built-in question (see difficulty.ts). */
+export function questionStars(id: string): number | undefined {
+  starIndexCache ??= buildStarIndex(lessons);
+  return starIndexCache.get(id);
+}
+export function starPool(subjectId: string, min: number, max: number) {
+  return lessons
+    .filter((l) => l.subjectId === subjectId && l.questions.length)
+    .flatMap((lesson) => snapshot(lesson))
+    .filter((item) => {
+      const star = questionStars(item.id) ?? 0;
+      return star >= min && star <= max;
+    });
+}
+/**
+ * A short practice drawn from one subject's questions whose estimated star
+ * level falls inside [min, max]. It is never a full official-format exam.
+ */
+export function starPracticeSpec(
+  subjectId: string,
+  min: number,
+  max: number,
+  random?: () => number,
+  limit = 20,
+): ExamSpec | undefined {
+  const subject = subjects.find((s) => s.id === subjectId);
+  if (!subject) return undefined;
+  const pool = starPool(subjectId, min, max);
+  const items = (random ? shuffle(pool, random) : pool).slice(0, limit);
+  if (!items.length) return undefined;
+  const range = min === max ? `${min}` : `${min}–${max}`;
+  return {
+    id: `stars-${subjectId}-${min}-${max}`,
+    title: `${subject.exam} ${subject.name.tr} · ${range} yıldız zorluk alıştırması`,
+    exam: subject.exam,
+    kind: "branch",
+    items,
+    durationSeconds: scaledExamSeconds(subject.exam, items.length),
+    fullLength: false,
+    missingSubjects: [],
+  };
 }
 export function examCatalogue(): ExamSpec[] {
   return [

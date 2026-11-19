@@ -1,0 +1,80 @@
+.star-practice {
+  display: grid;
+  gap: 0.9rem;
+  margin-bottom: 1rem;
+}
+.star-practice h2 {
+  margin: 0;
+}
+.star-subject {
+  display: grid;
+  gap: 0.35rem;
+  max-width: 22rem;
+}
+.star-bands {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.star-bands button,
+.star-histogram button {
+  min-height: 44px;
+  border-radius: 0.7rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+.star-bands button {
+  padding: 0.45rem 0.8rem;
+}
+.star-bands button[aria-pressed="true"] {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+.star-histogram {
+  max-width: 40rem;
+  display: grid;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  gap: 0.3rem;
+  align-items: end;
+}
+.star-histogram button {
+  display: grid;
+  justify-items: center;
+  gap: 0.2rem;
+  padding: 0.35rem 0.1rem;
+  min-width: 0;
+}
+.star-histogram .star-bar {
+  width: 70%;
+  border-radius: 0.3rem 0.3rem 0 0;
+  background: var(--border);
+}
+.star-histogram button.active .star-bar {
+  background: var(--accent);
+}
+.star-histogram .star-count,
+.star-histogram .star-num {
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+}
+.star-summary,
+.star-axis {
+  margin: 0;
+}
+.star-practice > .primary {
+  justify-self: start;
+}
+.star-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  font-size: 0.82rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+}

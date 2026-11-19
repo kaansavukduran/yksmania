@@ -20,8 +20,10 @@ import {
   examScore,
   examAssistance,
   finishExam,
+  questionStars,
   type ExamSpec,
 } from "../domain/exams";
+import { StarPractice, StarBadge } from "../components/StarPractice";
 import { formatCountdown } from "../domain/focusTimer";
 import type { ExamDraft, ExamSession } from "../domain/examModel";
 import "../exams.css";
@@ -121,7 +123,7 @@ export function Exams({
         </section>
       )}
       <div className="segmented exam-tabs" aria-label="Deneme türü">
-        {["TYT", "AYT", "Branş"].map((value) => (
+        {["TYT", "AYT", "Branş", "Zorluk"].map((value) => (
           <button
             key={value}
             className={tab === value ? "active" : ""}
@@ -132,7 +134,9 @@ export function Exams({
               ? "AYT Sayısal"
               : value === "Branş"
                 ? "Branş denemeleri"
-                : "TYT"}
+                : value === "Zorluk"
+                  ? "Zorluk yıldızı"
+                  : "TYT"}
           </button>
         ))}
       </div>
@@ -152,6 +156,12 @@ export function Exams({
         olurken öğrenmektir. Açtığın ipuçları ayrıca kaydedilir; doğru, yanlış
         ve net hesabı değişmez.
       </p>
+      {tab === "Zorluk" && (
+        <StarPractice
+          busy={busy || !!state.examDraft}
+          start={(spec) => void start(spec)}
+        />
+      )}
       <div className="exam-catalog">
         {specs
           .filter((spec) =>
@@ -429,6 +439,7 @@ function ExamRunner({
               Soru {draft.index + 1} / {draft.items.length}
             </strong>
             <span>{q.subjectName}</span>
+            <StarBadge stars={questionStars(q.id)} />
           </div>
           {q.passage && (
             <section className="question-passage" aria-label="Sorunun metni">
