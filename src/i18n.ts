@@ -163,6 +163,8 @@ const messages: Record<string, string> = {
   theme: "Tema",
   currentTheme: "Mevcut tema",
   matrixTheme: "Matrix",
+  axolotlTheme: "Axolotl pembesi",
+  transTheme: "Trans bayrağı",
   legacyThemeHelp:
     "Önceden kaydettiğin tema korunuyor. Aşağıdan yeni bir tema seçebilirsin.",
   dark: "Koyu",

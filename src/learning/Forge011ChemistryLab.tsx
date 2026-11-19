@@ -13,6 +13,7 @@ import {
 } from "./forge011Chemistry";
 import { useExploration } from "./useExploration";
 import "./forge011Chemistry.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 1 }).format(n);
 const safe = (n: number, min: number, max: number) =>
@@ -44,7 +45,7 @@ function Prediction({
   return (
     <div className="c011-prediction">
       <label htmlFor={`${id}-guess`}>Sonuç tahminin</label>
-      <select
+      <ChoiceSelect
         id={`${id}-guess`}
         value={options.includes(value) ? value : ""}
         onChange={(e) => change({ guess: e.target.value, checked: false })}
@@ -53,7 +54,7 @@ function Prediction({
         {options.map((option) => (
           <option key={option}>{option}</option>
         ))}
-      </select>
+      </ChoiceSelect>
       <label htmlFor={`${id}-reason`}>Gerekçen</label>
       <textarea
         id={`${id}-reason`}
@@ -144,7 +145,7 @@ function NamingLab() {
       <div className="c011-controls">
         <label htmlFor={`${uid}-sample`}>
           Molekül örneği
-          <select
+          <ChoiceSelect
             id={`${uid}-sample`}
             value={sample.id}
             onChange={(e) =>
@@ -164,7 +165,7 @@ function NamingLab() {
                 </option>
               );
             })}
-          </select>
+          </ChoiceSelect>
         </label>
         <button
           className="secondary"
@@ -395,7 +396,7 @@ function WeakLab() {
         {controls.map((c) => (
           <label key={c.key} htmlFor={`${uid}-${c.key}`}>
             {c.name}
-            <select
+            <ChoiceSelect
               id={`${uid}-${c.key}`}
               value={c.value}
               onChange={(e) =>
@@ -412,7 +413,7 @@ function WeakLab() {
                       : "apolar"}
                 </option>
               ))}
-            </select>
+            </ChoiceSelect>
           </label>
         ))}
       </div>
@@ -562,7 +563,7 @@ function HydrogenLab() {
         ].map((c) => (
           <label key={c.key} htmlFor={`${uid}-${c.key}`}>
             {c.title}
-            <select
+            <ChoiceSelect
               id={`${uid}-${c.key}`}
               value={c.value}
               onChange={(e) =>
@@ -579,7 +580,7 @@ function HydrogenLab() {
                   {m.formula} · {m.structure}
                 </option>
               ))}
-            </select>
+            </ChoiceSelect>
           </label>
         ))}
       </div>
@@ -772,7 +773,7 @@ function ChangesLab() {
       </p>
       <label htmlFor={`${uid}-process`}>
         İncelenecek süreç
-        <select
+        <ChoiceSelect
           id={`${uid}-process`}
           value={sample.id}
           onChange={(e) =>
@@ -789,7 +790,7 @@ function ChangesLab() {
               {c.title}
             </option>
           ))}
-        </select>
+        </ChoiceSelect>
       </label>
       <button
         className="secondary"

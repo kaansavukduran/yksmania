@@ -13,6 +13,7 @@ import {
   type ProkaryoteProcess,
 } from "./forge011BiologyA";
 import "./forge011BiologyA.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 const clamp = (v: number, min: number, max: number) =>
   Number.isFinite(v) ? Math.max(min, Math.min(max, Math.round(v))) : min;
@@ -59,7 +60,7 @@ function Prediction({
         <strong>{prompt}</strong>
       </p>
       <label htmlFor={`${uid}-guess`}>Tahminin</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-guess`}
         value={valid ? s.guess : ""}
         onChange={(e) => set({ guess: e.target.value, checked: false })}
@@ -70,7 +71,7 @@ function Prediction({
             {label}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <label htmlFor={`${uid}-reason`}>Gerekçen</label>
       <textarea
         id={`${uid}-reason`}
@@ -143,7 +144,7 @@ function VirusLab() {
         ))}
       </div>
       <label htmlFor={`${uid}-stage`}>Çoğalma basamağı</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-stage`}
         value={stage}
         onChange={(e) => set({ stage: Number(e.target.value) })}
@@ -153,7 +154,7 @@ function VirusLab() {
             {i + 1}. {name}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <Drawing title={`Bakteriyofaj modeli: ${model.label}`}>
         {model.released ? (
           <path
@@ -321,7 +322,7 @@ function BacteriaLab() {
         endosporu birey sayısı ve etkin durum bakımından karşılaştır.
       </p>
       <label htmlFor={`${uid}-count`}>Başlangıç bakteri sayısı</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-count`}
         value={initial}
         onChange={(e) => set({ initial: Number(e.target.value) })}
@@ -331,9 +332,9 @@ function BacteriaLab() {
             {n}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <label htmlFor={`${uid}-process`}>İşlem</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-process`}
         value={process}
         onChange={(e) => set({ process: e.target.value })}
@@ -341,7 +342,7 @@ function BacteriaLab() {
         <option value="division">Her hücre bir kez bölünsün</option>
         <option value="transfer">Yalnız DNA aktarımı olsun</option>
         <option value="endospore">Her hücre bir endospor oluştursun</option>
-      </select>
+      </ChoiceSelect>
       <Drawing
         title={`${model.label} Başlangıç ${initial}, son ${model.individuals} birey.`}
       >
@@ -464,7 +465,7 @@ function ProtistLab() {
         değildir.
       </p>
       <label htmlFor={`${uid}-example`}>Protist örneği</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-example`}
         value={example}
         onChange={(e) => set({ example: e.target.value })}
@@ -474,7 +475,7 @@ function ProtistLab() {
             {p.name}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <div className="f011-bio-a-checks">
         <label>
           <input
@@ -647,7 +648,7 @@ function PlantsLab() {
         {controls.map(([key, label, value]) => (
           <div key={key}>
             <label htmlFor={`${uid}-${key}`}>{label}</label>
-            <select
+            <ChoiceSelect
               id={`${uid}-${key}`}
               value={value}
               onChange={(e) => set({ [key]: e.target.value })}
@@ -655,7 +656,7 @@ function PlantsLab() {
               <option value="unknown">İncelenmedi</option>
               <option value="yes">Var</option>
               <option value="no">Yok</option>
-            </select>
+            </ChoiceSelect>
           </div>
         ))}
       </div>

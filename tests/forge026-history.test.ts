@@ -1,4 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
+import { ChoiceSelect } from "../src/components/ChoiceSelect";
 import {
   Children,
   isValidElement,
@@ -70,7 +71,7 @@ function render(id: string) {
 }
 function control(id: string, tag: string, suffix?: string) {
   const found = render(id).nodes.find(
-    (n) => n.type === tag && (!suffix || n.props.id?.endsWith(suffix)),
+    (n) => (n.type === tag || (tag === "select" && n.type === ChoiceSelect)) && (!suffix || n.props.id?.endsWith(suffix)),
   );
   if (!found) throw Error(`Missing ${tag} ${suffix}`);
   return found;

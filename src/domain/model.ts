@@ -26,7 +26,7 @@ export const settingsSchema = z.object({
   locale: z.enum(["tr", "en"]).transform(() => "tr" as const),
   // Matrix is the new/unset default; every explicit earlier preference stays.
   theme: z
-    .enum(["dark", "light", "system", "contrast", "matrix"])
+    .enum(["dark", "light", "system", "contrast", "matrix", "axolotl", "trans"])
     .default("matrix"),
   scale: z
     .number()

@@ -227,6 +227,8 @@ export interface FigureFrame {
   els: El[];
   /** Short result lines shown under the drawing; announced politely. */
   readout?: string[];
+  /** Key for lettered tokens, rendered as wrapping HTML under the drawing. */
+  legend?: { code: string; label: string; tone: Tone }[];
 }
 export interface FigureDef {
   /** One-sentence caption: what to look for in the drawing. */
@@ -765,6 +767,18 @@ export function SectionFigureView({ def, title }: { def: FigureDef; title: strin
             </div>
           )}
         </div>
+      )}
+      {frame.legend && frame.legend.length > 0 && (
+        <ul className="sf-legend" aria-label="Şekil anahtarı">
+          {frame.legend.map((item) => (
+            <li key={item.code + item.label} className={`sf-${item.tone}`}>
+              <span className="sf-legend-token" aria-hidden="true">
+                {item.code}
+              </span>
+              {item.label}
+            </li>
+          ))}
+        </ul>
       )}
       {frame.readout && frame.readout.length > 0 && (
         <ul className="sf-readout" aria-live="polite">

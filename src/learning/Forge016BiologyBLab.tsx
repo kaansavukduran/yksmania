@@ -16,6 +16,7 @@ import {
 } from "./forge016BiologyB";
 import { useExploration } from "./useExploration";
 import "./forge016BiologyB.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 3 }).format(
     Math.abs(n) < 1e-9 ? 0 : n,
@@ -37,13 +38,13 @@ function Select({
   return (
     <div className="bio016b-field">
       <label htmlFor={id}>{label}</label>
-      <select id={id} value={value} onChange={(e) => onChange(e.target.value)}>
+      <ChoiceSelect id={id} value={value} onChange={(e) => onChange(e.target.value)}>
         {options.map(([k, t]) => (
           <option key={k} value={k}>
             {t}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <p className="bio016b-chosen">
         Seçili: {options.find(([k]) => k === value)?.[1]}
       </p>

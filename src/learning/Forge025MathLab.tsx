@@ -10,6 +10,7 @@ import {
   type RiemannMethod025,
 } from "./forge025Math";
 import "./forge025Math.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number) =>
   new Intl.NumberFormat("tr-TR", {
     maximumFractionDigits: 6,
@@ -535,7 +536,7 @@ export default function Forge025MathLab({ lessonId }: { lessonId: string }) {
         />
         <label>
           Örnek seçimi
-          <select
+          <ChoiceSelect
             aria-label="Örnek seçimi"
             value={method}
             onChange={(e) => change({ method: e.currentTarget.value })}
@@ -545,7 +546,7 @@ export default function Forge025MathLab({ lessonId }: { lessonId: string }) {
                 {label}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
       </>
     );
@@ -678,7 +679,7 @@ export default function Forge025MathLab({ lessonId }: { lessonId: string }) {
       <div className="math025-prediction">
         <label>
           Sonuç tahminin
-          <select
+          <ChoiceSelect
             aria-label="Sonuç tahminin"
             value={validGuess ? s.guess : ""}
             onChange={(e) => change({ guess: e.currentTarget.value })}
@@ -689,7 +690,7 @@ export default function Forge025MathLab({ lessonId }: { lessonId: string }) {
                 {label}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
         <label>
           Modelden gerekçen

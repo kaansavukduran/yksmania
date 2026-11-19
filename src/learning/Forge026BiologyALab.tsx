@@ -17,6 +17,7 @@ import {
   thermalWater026,
 } from "./forge026BiologyA";
 import "./forge026BiologyA.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number, digits = 5) =>
   n.toLocaleString("tr-TR", { maximumFractionDigits: digits });
 const sci = (n: number) => n.toExponential(4).replace(".", ",");
@@ -37,13 +38,13 @@ function Menu({
   return (
     <div className="b026-field">
       <label htmlFor={id}>{label}</label>
-      <select id={id} value={value} onChange={(e) => onChange(e.target.value)}>
+      <ChoiceSelect id={id} value={value} onChange={(e) => onChange(e.target.value)}>
         {Object.entries(options).map(([key, text]) => (
           <option key={key} value={key}>
             {text}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <span className="b026-selected">Seçili: {options[String(value)]}</span>
     </div>
   );

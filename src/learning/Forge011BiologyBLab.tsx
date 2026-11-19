@@ -16,6 +16,7 @@ import {
   vertebrateSamples,
 } from "./forge011BiologyB";
 import "./forge011BiologyB.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 const clampInt = (value: number, min: number, max: number) =>
   Number.isFinite(value)
@@ -47,7 +48,7 @@ function Prediction({
   return (
     <div className="bio011b-prediction">
       <label htmlFor={`${uid}-guess`}>Sonuç tahminin</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-guess`}
         value={valid ? value : ""}
         onChange={(e) => onChange({ answer: e.target.value, checked: false })}
@@ -58,7 +59,7 @@ function Prediction({
             {label}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <label htmlFor={`${uid}-reason`}>Gerekçen</label>
       <textarea
         id={`${uid}-reason`}
@@ -228,7 +229,7 @@ function Invertebrates() {
         {(["first", "second"] as const).map((key, i) => (
           <label key={key} htmlFor={`${uid}-${key}`}>
             {i + 1}. yapısal kanıt
-            <select
+            <ChoiceSelect
               id={`${uid}-${key}`}
               value={key === "first" ? first : second}
               onChange={(e) => set({ [key]: e.target.value, checked: false })}
@@ -238,7 +239,7 @@ function Invertebrates() {
                   {e.label}
                 </option>
               ))}
-            </select>
+            </ChoiceSelect>
           </label>
         ))}
       </div>
@@ -352,7 +353,7 @@ function Vertebrates() {
       <div className="bio011b-controls">
         <label htmlFor={`${uid}-sample`}>
           İncelenen omurgalı
-          <select
+          <ChoiceSelect
             id={`${uid}-sample`}
             value={sample.id}
             onChange={(e) => set({ sample: e.target.value, checked: false })}
@@ -362,11 +363,11 @@ function Vertebrates() {
                 {v.name}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
         <label htmlFor={`${uid}-system`}>
           Gösterilen sistem
-          <select
+          <ChoiceSelect
             id={`${uid}-system`}
             value={system}
             onChange={(e) => set({ system: e.target.value, checked: false })}
@@ -376,7 +377,7 @@ function Vertebrates() {
                 {label}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
       </div>
       <svg
@@ -770,7 +771,7 @@ function Division({ meiosis }: { meiosis: boolean }) {
       <div className="bio011b-controls">
         <label htmlFor={`${uid}-diploid`}>
           Başlangıç kromozom sayısı (2n)
-          <select
+          <ChoiceSelect
             id={`${uid}-diploid`}
             value={diploid}
             onChange={(e) =>
@@ -782,11 +783,11 @@ function Division({ meiosis }: { meiosis: boolean }) {
                 2n = {v}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
         <label htmlFor={`${uid}-stage`}>
           İncelenen evre
-          <select
+          <ChoiceSelect
             id={`${uid}-stage`}
             value={stage}
             onChange={(e) =>
@@ -798,7 +799,7 @@ function Division({ meiosis }: { meiosis: boolean }) {
                 {name}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
       </div>
       <label className="bio011b-check">
@@ -863,7 +864,7 @@ function Division({ meiosis }: { meiosis: boolean }) {
           <h4>Çeşitliliğin iki kaynağını ayrı dene</h4>
           <label htmlFor={`${uid}-genetics`}>
             İşaretlerin modeli
-            <select
+            <ChoiceSelect
               id={`${uid}-genetics`}
               value={s.geneticMode === "crossover" ? "crossover" : "assortment"}
               onChange={(e) =>
@@ -876,7 +877,7 @@ function Division({ meiosis }: { meiosis: boolean }) {
               <option value="crossover">
                 Aynı homolog çiftte parça değişimi
               </option>
-            </select>
+            </ChoiceSelect>
           </label>
           <label className="bio011b-check">
             <input
@@ -1004,7 +1005,7 @@ function Asexual() {
       </p>
       <label htmlFor={`${uid}-sample`}>
         İzlenecek çoğalma veya onarım olayı
-        <select
+        <ChoiceSelect
           id={`${uid}-sample`}
           value={sample.id}
           onChange={(e) =>
@@ -1016,7 +1017,7 @@ function Asexual() {
               {v.name}
             </option>
           ))}
-        </select>
+        </ChoiceSelect>
       </label>
       <div className="bio011b-actions">
         <button

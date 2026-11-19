@@ -29,8 +29,10 @@
 .f036-diagram-values dt{font-weight:600}.f036-diagram-values dd{margin:0;font:inherit;font-variant-numeric:tabular-nums}
 
 /* Keep diagrams readable when restoring older light-theme preferences. */
-:root[data-theme="light"] .f036-lab{--f036-b:var(--mint)}
-:root[data-theme="light"] .f036-lab :is(.f036-box,.f036-box-a,.f036-box-b,.f036-forbidden){fill:var(--surface-2)}
+:root[data-theme="light"] .f036-lab,
+:root[data-theme="trans"] .f036-lab{--f036-b:var(--mint)}
+:root[data-theme="light"] .f036-lab :is(.f036-box,.f036-box-a,.f036-box-b,.f036-forbidden),
+:root[data-theme="trans"] .f036-lab :is(.f036-box,.f036-box-a,.f036-box-b,.f036-forbidden){fill:var(--surface-2)}
 @media(prefers-color-scheme:light){
  :root[data-theme="system"] .f036-lab{--f036-b:var(--mint)}
  :root[data-theme="system"] .f036-lab :is(.f036-box,.f036-box-a,.f036-box-b,.f036-forbidden){fill:var(--surface-2)}

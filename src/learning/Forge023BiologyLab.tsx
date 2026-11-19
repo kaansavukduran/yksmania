@@ -16,6 +16,7 @@ import {
 } from "./forge023Biology";
 import { useExploration } from "./useExploration";
 import "./forge023Biology.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 const rawTypes023 = (
   raw: unknown,
@@ -92,13 +93,13 @@ function Menu({
   return (
     <div className="bio023-field">
       <label htmlFor={id}>{label}</label>
-      <select id={id} value={value} onChange={(e) => onChange(e.target.value)}>
+      <ChoiceSelect id={id} value={value} onChange={(e) => onChange(e.target.value)}>
         {Object.entries(options).map(([key, name]) => (
           <option key={key} value={key}>
             {name}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
     </div>
   );
 }

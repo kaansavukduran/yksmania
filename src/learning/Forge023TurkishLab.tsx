@@ -10,6 +10,7 @@ import {
   forge023TurkishTopics,
 } from "./forge023Turkish";
 import "./forge023Turkish.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 export default function Forge023TurkishLab({ lessonId }: { lessonId: string }) {
   const uid = useId();
@@ -103,7 +104,7 @@ export default function Forge023TurkishLab({ lessonId }: { lessonId: string }) {
       <label htmlFor={`${uid}-context`}>
         {isAnswer ? "İncelenen metin" : "İncelenen görüşme"}
       </label>
-      <select
+      <ChoiceSelect
         id={`${uid}-context`}
         value={caseId}
         onChange={(e) => change({ caseId: e.target.value, choice: 0 })}
@@ -113,7 +114,7 @@ export default function Forge023TurkishLab({ lessonId }: { lessonId: string }) {
             {c.label}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <p>
         Seçili örnek: <strong>{scene.label}</strong>
       </p>
@@ -123,7 +124,7 @@ export default function Forge023TurkishLab({ lessonId }: { lessonId: string }) {
           <h4>Tam metin</h4>
           <p className="turkish023-passage">{answer.sentences.join(" ")}</p>
           <label htmlFor={`${uid}-question`}>İncelenen soru</label>
-          <select
+          <ChoiceSelect
             id={`${uid}-question`}
             value={choice}
             onChange={(e) => change({ choice: Number(e.target.value) })}
@@ -133,7 +134,7 @@ export default function Forge023TurkishLab({ lessonId }: { lessonId: string }) {
                 {q}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
           <p className="turkish023-question">
             <strong>Soru:</strong> {answer.ask.text}
           </p>
@@ -244,7 +245,7 @@ export default function Forge023TurkishLab({ lessonId }: { lessonId: string }) {
             ))}
           </div>
           <label htmlFor={`${uid}-followup`}>Takip sorusu</label>
-          <select
+          <ChoiceSelect
             id={`${uid}-followup`}
             value={choice}
             onChange={(e) => change({ choice: Number(e.target.value) })}
@@ -254,7 +255,7 @@ export default function Forge023TurkishLab({ lessonId }: { lessonId: string }) {
                 {q}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
           <p className="turkish023-question">
             <strong>Seçilen soru:</strong> {interview.questionLabels[choice]}
           </p>
@@ -325,7 +326,7 @@ export default function Forge023TurkishLab({ lessonId }: { lessonId: string }) {
         </div>
       )}
       <label htmlFor={`${uid}-guess`}>Karar tahminin</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-guess`}
         value={guess}
         onChange={(e) => set({ guess: e.target.value, compared: false })}
@@ -336,7 +337,7 @@ export default function Forge023TurkishLab({ lessonId }: { lessonId: string }) {
             {o}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <label htmlFor={`${uid}-reason`}>Metinden gerekçen</label>
       <textarea
         id={`${uid}-reason`}

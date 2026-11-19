@@ -12,6 +12,7 @@ import {
   type MembraneSolute,
 } from "./forge093Biology";
 import "./forge093Biology.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 const fmt = (value: number) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 2 }).format(value);
@@ -80,7 +81,7 @@ function Prediction({
   return (
     <div className="f093-bio-prediction">
       <label htmlFor={`${uid}-prediction`}>Sonuç tahminin</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-prediction`}
         value={valid ? value : ""}
         onChange={(event) => onValue(event.target.value)}
@@ -91,7 +92,7 @@ function Prediction({
             {label}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <label htmlFor={`${uid}-reason`}>Tahmininin gerekçesi</label>
       <textarea
         id={`${uid}-reason`}
@@ -379,7 +380,7 @@ function MembraneLab() {
           <div className="f093-bio-controls">
             <label>
               İzlenen madde
-              <select
+              <ChoiceSelect
                 value={solute}
                 onChange={(e) => change({ solute: e.target.value })}
               >
@@ -387,11 +388,11 @@ function MembraneLab() {
                 <option value="glucose">Glikoz · küçük polar</option>
                 <option value="sodium">Na⁺ · küçük yüklü iyon</option>
                 <option value="protein">Büyük protein</option>
-              </select>
+              </ChoiceSelect>
             </label>
             <label>
               Taşıma düzeni
-              <select
+              <ChoiceSelect
                 value={saved.active ? "active" : "passive"}
                 onChange={(e) =>
                   change({ active: e.target.value === "active" })
@@ -399,7 +400,7 @@ function MembraneLab() {
               >
                 <option value="passive">Pasif yol · gradyan boyunca</option>
                 <option value="active">ATP kullanan Na⁺ çıkış pompası</option>
-              </select>
+              </ChoiceSelect>
             </label>
           </div>
           <div className="f093-bio-controls">
@@ -504,13 +505,13 @@ function MembraneLab() {
         <>
           <label>
             İncelenen hücre
-            <select
+            <ChoiceSelect
               value={plant ? "plant" : "animal"}
               onChange={(e) => change({ cell: e.target.value })}
             >
               <option value="animal">Hayvan hücresi · çeper yok</option>
               <option value="plant">Bitki hücresi · sağlam çeper</option>
-            </select>
+            </ChoiceSelect>
           </label>
           <div className="f093-bio-controls">
             <AmountControl
@@ -884,7 +885,7 @@ function ClassificationLab() {
         <>
           <label>
             Ağaç için kanıt paketi
-            <select
+            <ChoiceSelect
               value={evidence}
               onChange={(e) => change({ evidence: e.target.value })}
             >
@@ -895,7 +896,7 @@ function ClassificationLab() {
               <option value="dna">
                 Yapısal paket + oluşturulmuş dizi karakterleri
               </option>
-            </select>
+            </ChoiceSelect>
           </label>
           <p>
             Karşılaştırılan örnekler: sazan, kurbağa, kedi, kertenkele ve
@@ -952,7 +953,7 @@ function ClassificationLab() {
           <div className="f093-bio-controls">
             <label>
               Birinci canlı
-              <select
+              <ChoiceSelect
                 value={first.id}
                 onChange={(e) => change({ first: e.target.value })}
               >
@@ -961,11 +962,11 @@ function ClassificationLab() {
                     {o.common} · {o.genus} {o.epithet}
                   </option>
                 ))}
-              </select>
+              </ChoiceSelect>
             </label>
             <label>
               İkinci canlı
-              <select
+              <ChoiceSelect
                 value={second.id}
                 onChange={(e) => change({ second: e.target.value })}
               >
@@ -974,7 +975,7 @@ function ClassificationLab() {
                     {o.common} · {o.genus} {o.epithet}
                   </option>
                 ))}
-              </select>
+              </ChoiceSelect>
             </label>
           </div>
           <div className="f093-bio-names">
@@ -1020,24 +1021,24 @@ function ClassificationLab() {
           <div className="f093-bio-controls">
             <label>
               Karşılaştırılan yapılar
-              <select
+              <ChoiceSelect
                 value={pair}
                 onChange={(e) => change({ organPair: e.target.value })}
               >
                 <option value="forelimbs">İnsan kolu / yarasa ön üyesi</option>
                 <option value="bird-insect">Kuş kanadı / böcek kanadı</option>
                 <option value="bird-bat">Kuş / yarasa ön üye planı</option>
-              </select>
+              </ChoiceSelect>
             </label>
             <label>
               Karşılaştırma ölçütü
-              <select
+              <ChoiceSelect
                 value={origin ? "origin" : "function"}
                 onChange={(e) => change({ criterion: e.target.value })}
               >
                 <option value="origin">Köken ve temel yapı kanıtı</option>
                 <option value="function">Yalnız görev bilgisi</option>
-              </select>
+              </ChoiceSelect>
             </label>
           </div>
           <OriginDrawing pair={pair} />

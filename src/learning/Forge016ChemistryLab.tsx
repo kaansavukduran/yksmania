@@ -8,6 +8,7 @@ import {
 } from "./forge016Chemistry";
 import { useExploration } from "./useExploration";
 import "./forge016Chemistry.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number, digits = 3) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: digits }).format(n);
 const sci = (n: number) => {
@@ -68,13 +69,13 @@ function Choice({
   return (
     <div className="c016-control">
       <label htmlFor={id}>{label}</label>
-      <select id={id} value={value} onChange={(e) => onChange(e.target.value)}>
+      <ChoiceSelect id={id} value={value} onChange={(e) => onChange(e.target.value)}>
         {choices.map(([key, text]) => (
           <option key={key} value={key}>
             {text}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <p className="c016-current">Seçili: {selected}</p>
     </div>
   );

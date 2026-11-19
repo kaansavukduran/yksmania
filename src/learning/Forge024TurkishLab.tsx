@@ -12,6 +12,7 @@ import {
   visualScene024,
 } from "./forge024Turkish";
 import "./forge024Turkish.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 function safe(value: number, max: number) {
   return Number.isInteger(value) && value >= 0 && value < max ? value : 0;
 }
@@ -141,7 +142,7 @@ export default function Forge024TurkishLab({ lessonId }: { lessonId: string }) {
   ) => (
     <label htmlFor={`${uid}-${key}`}>
       {label}
-      <select
+      <ChoiceSelect
         id={`${uid}-${key}`}
         value={value}
         onChange={(e) => change({ [key]: Number(e.target.value) })}
@@ -151,7 +152,7 @@ export default function Forge024TurkishLab({ lessonId }: { lessonId: string }) {
             {s}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
     </label>
   );
   const textScene = multi ?? topic;
@@ -176,7 +177,7 @@ export default function Forge024TurkishLab({ lessonId }: { lessonId: string }) {
       <div className="turkish024-controls">
         <label htmlFor={`${uid}-case`}>
           İncelenen örnek
-          <select
+          <ChoiceSelect
             id={`${uid}-case`}
             value={caseId}
             onChange={(e) =>
@@ -195,7 +196,7 @@ export default function Forge024TurkishLab({ lessonId }: { lessonId: string }) {
                 {c.label}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
         {multi &&
           select("İncelenen soru", multi.questionLabels, question, "question")}
@@ -431,7 +432,7 @@ export default function Forge024TurkishLab({ lessonId }: { lessonId: string }) {
       <div className="turkish024-response">
         <label htmlFor={`${uid}-guess`}>
           Karar tahminin
-          <select
+          <ChoiceSelect
             id={`${uid}-guess`}
             value={guess}
             onChange={(e) => set({ guess: e.target.value, show: false })}
@@ -442,7 +443,7 @@ export default function Forge024TurkishLab({ lessonId }: { lessonId: string }) {
                 {g.label}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
         <label htmlFor={`${uid}-reason`}>
           Kanıtın

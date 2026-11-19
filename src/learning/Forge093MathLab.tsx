@@ -8,6 +8,7 @@ import {
 } from "./forge093Math";
 import { useExploration } from "./useExploration";
 import "./forge093MathLab.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 const number = (n: number) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 8 }).format(
@@ -38,14 +39,14 @@ function Prediction({
       <div className="math093-prediction-controls">
         <label className="field">
           Tahminin
-          <select value={guess} onChange={(e) => choose(e.target.value)}>
+          <ChoiceSelect value={guess} onChange={(e) => choose(e.target.value)}>
             <option value="">Bir tahmin seç</option>
             {options.map(([value, label]) => (
               <option key={value} value={value}>
                 {label}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
         <button
           className="button secondary"
@@ -154,7 +155,7 @@ function AbsoluteLab() {
         />
         <label className="field">
           Uzaklık koşulu
-          <select
+          <ChoiceSelect
             value={mode}
             onChange={(e) => set({ mode: e.target.value, checked: false })}
           >
@@ -162,7 +163,7 @@ function AbsoluteLab() {
             <option value="inside">|x−a| &lt; r</option>
             <option value="outside">|x−a| &gt; r</option>
             <option value="equal">|x−a| = r</option>
-          </select>
+          </ChoiceSelect>
         </label>
       </div>
       <svg
@@ -505,7 +506,7 @@ function ScientificLab() {
       </p>
       <label className="field">
         Sayı örneği
-        <select
+        <ChoiceSelect
           value={example.id}
           onChange={(e) =>
             set({
@@ -521,7 +522,7 @@ function ScientificLab() {
               {e.title}
             </option>
           ))}
-        </select>
+        </ChoiceSelect>
       </label>
       <div className="math093-actions">
         <button
@@ -654,14 +655,14 @@ function RootsLab() {
       <div className="math093-controls">
         <label className="field">
           Kök modeli
-          <select
+          <ChoiceSelect
             value={mode}
             onChange={(e) => set({ mode: e.target.value, checked: false })}
           >
             <option value="area">Alan → kenar</option>
             <option value="square">√(x²) → |x|</option>
             <option value="domain">Gerçek kök tanımı</option>
-          </select>
+          </ChoiceSelect>
         </label>
         {mode === "square" ? (
           <Range
@@ -808,14 +809,14 @@ function RatioLab() {
       <div className="math093-controls">
         <label className="field">
           Orantı modeli
-          <select
+          <ChoiceSelect
             value={mode}
             onChange={(e) => set({ mode: e.target.value, checked: false })}
           >
             <option value="direct">Doğru · y=kx</option>
             <option value="inverse">Ters · y=k/x</option>
             <option value="affine">Sabit eklenen · y=kx+b</option>
-          </select>
+          </ChoiceSelect>
         </label>
         <Range
           label="Seçilen x"

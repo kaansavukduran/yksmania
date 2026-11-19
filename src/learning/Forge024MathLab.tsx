@@ -10,6 +10,7 @@ import {
   type Cubic024,
 } from "./forge024Math";
 import "./forge024Math.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 const fmt = (n: number) =>
   new Intl.NumberFormat("tr-TR", {
@@ -447,7 +448,7 @@ export default function Forge024MathLab({ lessonId }: { lessonId: string }) {
       <>
         <label>
           Rasyonel üs
-          <select
+          <ChoiceSelect
             aria-label="Rasyonel üs"
             value={`${p}/${q}`}
             onChange={(e) => change({ power: e.currentTarget.value })}
@@ -457,7 +458,7 @@ export default function Forge024MathLab({ lessonId }: { lessonId: string }) {
                 {a}/{b}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
         <Range
           label="Kuvvetin girdisi"
@@ -517,7 +518,7 @@ export default function Forge024MathLab({ lessonId }: { lessonId: string }) {
       <>
         <label>
           İşlem
-          <select
+          <ChoiceSelect
             aria-label="İşlem"
             value={operation}
             onChange={(e) => change({ operation: e.currentTarget.value })}
@@ -527,7 +528,7 @@ export default function Forge024MathLab({ lessonId }: { lessonId: string }) {
                 {label}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
         <Range
           label="Seçili x"
@@ -645,7 +646,7 @@ export default function Forge024MathLab({ lessonId }: { lessonId: string }) {
         />
         <label>
           Kiriş adımı h
-          <select
+          <ChoiceSelect
             aria-label="Kiriş adımı h"
             value={s.stepIndex}
             onChange={(e) =>
@@ -657,7 +658,7 @@ export default function Forge024MathLab({ lessonId }: { lessonId: string }) {
                 {fmt(value)}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
       </>
     );
@@ -741,14 +742,14 @@ export default function Forge024MathLab({ lessonId }: { lessonId: string }) {
       {rules && (
         <label className="math024-mode">
           İnceleme
-          <select
+          <ChoiceSelect
             aria-label="İnceleme"
             value={powerMode ? "power" : "rules"}
             onChange={(e) => change({ mode: e.currentTarget.value, guess: "" })}
           >
             <option value="rules">Polinom türevleri</option>
             <option value="power">Rasyonel üs ve tanım alanı</option>
-          </select>
+          </ChoiceSelect>
         </label>
       )}
       <div className="math024-controls">{controls}</div>
@@ -759,7 +760,7 @@ export default function Forge024MathLab({ lessonId }: { lessonId: string }) {
       <div className="math024-prediction">
         <label>
           Sonuç tahminin
-          <select
+          <ChoiceSelect
             aria-label="Sonuç tahminin"
             value={validGuess ? s.guess : ""}
             onChange={(e) => change({ guess: e.currentTarget.value })}
@@ -770,7 +771,7 @@ export default function Forge024MathLab({ lessonId }: { lessonId: string }) {
                 {label}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
         <label>
           Modelden gerekçen

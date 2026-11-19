@@ -9,8 +9,10 @@
 .f037-operation-choices button{width:100%;font:inherit;line-height:1.5;overflow-wrap:anywhere}
 
 /* Saved light/system preferences retain legible intervals and reference axes. */
-:root[data-theme="light"] .f037-lab{--f037-b:#24638d;--f037-c:#376c4e}
-:root[data-theme="light"] .f037-lab .f037-axis{opacity:1}
+:root[data-theme="light"] .f037-lab,
+:root[data-theme="trans"] .f037-lab{--f037-b:#24638d;--f037-c:#376c4e}
+:root[data-theme="light"] .f037-lab .f037-axis,
+:root[data-theme="trans"] .f037-lab .f037-axis{opacity:1}
 @media(prefers-color-scheme:light){
  :root[data-theme="system"] .f037-lab{--f037-b:#24638d;--f037-c:#376c4e}
  :root[data-theme="system"] .f037-lab .f037-axis{opacity:1}

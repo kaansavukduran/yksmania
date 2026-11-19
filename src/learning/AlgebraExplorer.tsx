@@ -7,6 +7,7 @@ import {
   solveInequality,
   type Relation,
 } from "./algebraModels";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 export default function AlgebraExplorer({
   inequality,
@@ -106,14 +107,14 @@ export default function AlgebraExplorer({
         {inequality && (
           <label className="field">
             Eşitsizlik işareti
-            <select
+            <ChoiceSelect
               value={relation}
               onChange={(event) => set({ relation: event.target.value })}
             >
               {["<", "≤", ">", "≥"].map((op) => (
                 <option key={op}>{op}</option>
               ))}
-            </select>
+            </ChoiceSelect>
           </label>
         )}
       </div>

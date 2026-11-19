@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ExternalLink } from "lucide-react";
 import { pastExamReferencesForTopic, officialBooklets } from "../domain/pastExams";
 import { examTeachingCases } from "../learning/pastExamCases";
+import { ChoiceSelect } from "./ChoiceSelect";
 function TeachingCase({ id }: { id: string }) {
   const item = examTeachingCases[id];
   const [count, setCount] = useState(0);
@@ -68,7 +69,7 @@ export function PastExamQuestions({
       <div className="source-filters">
         <label className="field">
           Sınav
-          <select
+          <ChoiceSelect
             aria-label="Sınav"
             value={exam}
             onChange={(e) => setExam(e.target.value)}
@@ -89,11 +90,11 @@ export function PastExamQuestions({
                 {e === "all" ? "Tüm sınavlar" : e}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
         <label className="field">
           Yıl
-          <select
+          <ChoiceSelect
             aria-label="Yıl"
             value={year}
             onChange={(e) => setYear(e.target.value)}
@@ -102,7 +103,7 @@ export function PastExamQuestions({
             {Array.from({ length: 21 }, (_, i) => 2026 - i).map((y) => (
               <option key={y}>{y}</option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
       </div>
       {filtered.map((ref) => {

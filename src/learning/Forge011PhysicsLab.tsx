@@ -11,6 +11,7 @@ import {
   type StringBoundary,
 } from "./forge011Physics";
 import "./forge011Physics.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 const fmt = (v: number, digits = 2) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: digits }).format(
@@ -194,7 +195,7 @@ function Pressure() {
       intro="Dört ideal düzeneği karşılaştır. g=10 m/s²; sıvı durgun ve sıkıştırılamazdır. Değerler sonucu belirler; çizim öğretim ölçeğindedir."
     >
       <label htmlFor={`${uid}-mode`}>İncelenen düzenek</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-mode`}
         value={mode}
         onChange={(e) => change({ mode: e.target.value })}
@@ -203,7 +204,7 @@ function Pressure() {
         <option value="liquid">Sıvıda derinlik</option>
         <option value="manometer">Açık uçlu manometre</option>
         <option value="hydraulic">İdeal hidrolik pistonlar</option>
-      </select>
+      </ChoiceSelect>
       <div className="physics011-controls">
         {(mode === "solid" || mode === "hydraulic") && (
           <ModelNumber
@@ -921,7 +922,7 @@ function Strings() {
       intro="Kayıpsız, doğrusal ve eş gerilimli ideal ipler. Önce gelen atmayı gör; ardından yansımayı aç. Yatay yön ile tepe/çukur işaretini ayrı karşılaştır."
     >
       <label htmlFor={`${uid}-boundary`}>Sınır türü</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-boundary`}
         value={boundary}
         onChange={(e) => change({ boundary: e.target.value, reflected: false })}
@@ -930,7 +931,7 @@ function Strings() {
         <option value="free">Serbest uç</option>
         <option value="heavy">Aynı gerilimde 4 kat boyca kütle</option>
         <option value="light">Aynı gerilimde dörtte bir boyca kütle</option>
-      </select>
+      </ChoiceSelect>
       <div className="physics011-controls">
         <ModelNumber
           label="Gerilim (N)"

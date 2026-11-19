@@ -14,6 +14,7 @@ import {
   normalizeChemistry026,
 } from "./forge026Chemistry";
 import "./forge026Chemistry.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number, digits = 3) =>
   n.toLocaleString("tr-TR", { maximumFractionDigits: digits });
 const signed = (n: number) => (n > 0 ? "+" + n : String(n).replace("-", "−"));
@@ -39,13 +40,13 @@ function Select({
   return (
     <label className="c026-field" htmlFor={id}>
       <span>{label}</span>
-      <select id={id} value={value} onChange={(e) => onChange(e.target.value)}>
+      <ChoiceSelect id={id} value={value} onChange={(e) => onChange(e.target.value)}>
         {Object.entries(options).map(([v, t]) => (
           <option key={v} value={v}>
             {t}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
     </label>
   );
 }

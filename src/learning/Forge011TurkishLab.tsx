@@ -8,6 +8,7 @@ import {
   type AdverbFamily,
 } from "./forge011Turkish";
 import "./forge011Turkish.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 export default function Forge011TurkishLab({ id }: { id: string }) {
   const uid = useId();
@@ -32,7 +33,7 @@ export default function Forge011TurkishLab({ id }: { id: string }) {
         geçtiğini, doğrudan bağlandığı sözcük üzerinden gör.
       </p>
       <label htmlFor={`${uid}-family`}>İncelenecek bağlantı</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-family`}
         value={family}
         onChange={(e) =>
@@ -50,7 +51,7 @@ export default function Forge011TurkishLab({ id }: { id: string }) {
             {f.label}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <div className="adverb011-actions">
         <button
           className="secondary"
@@ -157,7 +158,7 @@ export default function Forge011TurkishLab({ id }: { id: string }) {
       <fieldset>
         <legend>Görevi kendi kanıtınla açıkla</legend>
         <label htmlFor={`${uid}-guess`}>Tür tahminin</label>
-        <select
+        <ChoiceSelect
           id={`${uid}-guess`}
           value={hasGuess ? state.guess : ""}
           onChange={(e) => set({ guess: e.target.value, checked: false })}
@@ -168,7 +169,7 @@ export default function Forge011TurkishLab({ id }: { id: string }) {
               {k}
             </option>
           ))}
-        </select>
+        </ChoiceSelect>
         <label htmlFor={`${uid}-reason`}>Cümleden kanıtın</label>
         <textarea
           id={`${uid}-reason`}

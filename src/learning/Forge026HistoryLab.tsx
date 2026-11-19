@@ -14,6 +14,7 @@ import {
   type MilitaryTask026,
 } from "./forge026History";
 import "./forge026History.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 export const historyDefaults026 = {
   file: 0,
@@ -395,7 +396,7 @@ export default function Forge026HistoryLab({ lessonId }: { lessonId: string }) {
   ) => (
     <label htmlFor={`${uid}-${field}`}>
       {label}
-      <select
+      <ChoiceSelect
         id={`${uid}-${field}`}
         value={canonical[field]}
         onChange={(e) => change({ [field]: Number(e.target.value) })}
@@ -405,7 +406,7 @@ export default function Forge026HistoryLab({ lessonId }: { lessonId: string }) {
             {value}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
     </label>
   );
   const check = (label: string, field: "otherCause" | "deed" | "disturbed") => (
@@ -571,7 +572,7 @@ export default function Forge026HistoryLab({ lessonId }: { lessonId: string }) {
             }
           />
         ) : (
-          <select
+          <ChoiceSelect
             id={`${uid}-guess`}
             value={guess}
             onChange={(e) => set({ guess: e.target.value, reveal: false })}
@@ -582,7 +583,7 @@ export default function Forge026HistoryLab({ lessonId }: { lessonId: string }) {
                 {value}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
         )}
       </label>
       <label htmlFor={`${uid}-reason`}>

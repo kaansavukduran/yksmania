@@ -3,6 +3,7 @@ import { history093Cases } from "./forge093History";
 import { clampInt } from "./mathModels";
 import { useExploration } from "./useExploration";
 import "./forge093HistoryLab.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 export default function Forge093HistoryLab({ id }: { id: string }) {
   const [saved, set] = useExploration(`forge093-history:${id}`, {
@@ -79,7 +80,7 @@ export default function Forge093HistoryLab({ id }: { id: string }) {
       <div className="forge093-history-controls">
         <label htmlFor={`${unique}-case`}>
           İncelenecek durum
-          <select
+          <ChoiceSelect
             id={`${unique}-case`}
             value={index}
             onChange={(e) =>
@@ -91,12 +92,12 @@ export default function Forge093HistoryLab({ id }: { id: string }) {
                 {c.name}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
         {society && (
           <label htmlFor={`${unique}-axis`}>
             Karşılaştırma ekseni
-            <select
+            <ChoiceSelect
               id={`${unique}-axis`}
               value={axis}
               onChange={(e) =>
@@ -110,7 +111,7 @@ export default function Forge093HistoryLab({ id }: { id: string }) {
               <option value={0}>Görev ve vergi</option>
               <option value={1}>Dinî aidiyet</option>
               <option value={2}>Üretim ve hizmet</option>
-            </select>
+            </ChoiceSelect>
           </label>
         )}
       </div>

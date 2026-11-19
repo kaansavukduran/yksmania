@@ -15,6 +15,7 @@ import {
   pHSamplesC026,
 } from "./forge026BiologyC";
 import "./forge026BiologyC.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number) =>
   n.toLocaleString("tr-TR", { maximumFractionDigits: 3 });
 const displayCopyC026 = (value: string) =>
@@ -134,7 +135,7 @@ function Menu({
   return (
     <label className="bc026-field" htmlFor={id}>
       <span>{label}</span>
-      <select
+      <ChoiceSelect
         id={id}
         value={value}
         onChange={(e) => onChange(e.currentTarget.value)}
@@ -144,7 +145,7 @@ function Menu({
             {t}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
     </label>
   );
 }

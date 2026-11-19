@@ -16,6 +16,7 @@ import {
   normalizeChemistry025,
 } from "./forge025Chemistry";
 import "./forge025Chemistry.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt025 = (n: number, digits = 3) =>
   n.toLocaleString("tr-TR", { maximumFractionDigits: digits });
 const displayCopy025 = (value: string) =>
@@ -46,7 +47,7 @@ function Select025({
   return (
     <label className="c025-field" htmlFor={id}>
       <span>{selectedLabel025(label)}</span>
-      <select
+      <ChoiceSelect
         id={id}
         aria-label={label}
         value={value}
@@ -57,7 +58,7 @@ function Select025({
             {s}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
     </label>
   );
 }

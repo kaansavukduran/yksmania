@@ -19,6 +19,7 @@ import {
   youth023A,
 } from "./forge023HumanitiesA";
 import "./forge023HumanitiesA.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 type Pair = [string, string];
 const display = (s: string) => s.replaceAll("Farzıkifaye", "Farz-ı kifaye");
 const fmt = (n: number) =>
@@ -327,7 +328,7 @@ export default function Forge023HumanitiesALab({
   const select = (key: keyof typeof saved, label: string, options: Pair[]) => (
     <div key={key}>
       <label htmlFor={`${uid}-${key}`}>{label}</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-${key}`}
         value={
           key === "stage"
@@ -349,7 +350,7 @@ export default function Forge023HumanitiesALab({
             {short(text)}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <p className="humanities023a-selected">
         Seçili:{" "}
         <strong>
@@ -1034,7 +1035,7 @@ export default function Forge023HumanitiesALab({
                       : "Kayıp için ne değişti?"}
         </legend>
         <label htmlFor={`${uid}-guess`}>Tahminin</label>
-        <select
+        <ChoiceSelect
           id={`${uid}-guess`}
           value={guess}
           onChange={(e) => set({ guess: e.target.value, compared: false })}
@@ -1045,7 +1046,7 @@ export default function Forge023HumanitiesALab({
               {short(o)}
             </option>
           ))}
-        </select>
+        </ChoiceSelect>
         <p className="humanities023a-selected">
           Tahminin: <strong>{guess || "Henüz seçilmedi"}</strong>
         </p>

@@ -15,6 +15,7 @@ import {
   normalizeMath026,
 } from "./forge026Math";
 import "./forge026Math.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt026 = (v: number) =>
   v.toLocaleString("tr-TR", { maximumFractionDigits: 6 });
 type Choices026 = Record<string, string>;
@@ -42,7 +43,7 @@ function Menu026({
   return (
     <label className="m026-field" htmlFor={id}>
       <span>{label}</span>
-      <select
+      <ChoiceSelect
         id={id}
         value={value}
         onChange={(e) => change(e.currentTarget.value)}
@@ -52,7 +53,7 @@ function Menu026({
             {text}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
     </label>
   );
 }

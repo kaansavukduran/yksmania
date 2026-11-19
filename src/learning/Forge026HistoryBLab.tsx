@@ -22,6 +22,7 @@ import {
   type HistoryBState026,
 } from "./forge026HistoryB";
 import "./forge026HistoryB.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 type Change026B = (patch: Partial<HistoryBState026>) => void;
 type Option026B = readonly [string, string];
@@ -181,13 +182,13 @@ function Choice026B({
   return (
     <div className="historyb026-choice">
       <label htmlFor={uid}>{label}</label>
-      <select id={uid} value={value} onChange={(e) => change(e.target.value)}>
+      <ChoiceSelect id={uid} value={value} onChange={(e) => change(e.target.value)}>
         {options.map(([key, text]) => (
           <option key={key} value={key}>
             {copy026B(text)}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <p className="historyb026-selected">
         Seçili:{" "}
         <Readable026B

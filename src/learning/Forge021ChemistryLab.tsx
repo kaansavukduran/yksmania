@@ -13,6 +13,7 @@ import {
   type Metal021,
 } from "./forge021Chemistry";
 import "./forge021Chemistry.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 const fmt = (value: number, digits = 6) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: digits }).format(
@@ -44,7 +45,7 @@ function Select({
   return (
     <div className="c021-field">
       <label htmlFor={id}>{label}</label>
-      <select
+      <ChoiceSelect
         id={id}
         value={value}
         onChange={(event) => change(event.target.value)}
@@ -54,7 +55,7 @@ function Select({
             {text}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
     </div>
   );
 }

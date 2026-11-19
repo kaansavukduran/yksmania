@@ -1,6 +1,7 @@
 import { useId } from "react";
 import { useExploration } from "./useExploration";
 import { equilibriumAt, numberTR as f } from "./aytModels";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 export default function EquilibriumExplorer() {
   const uid = useId();
   const [s, set] = useExploration("dynamic-equilibrium", {
@@ -120,7 +121,7 @@ export default function EquilibriumExplorer() {
       <div className="ayt-controls">
         <label className="field">
           Başlangıç karışımı
-          <select
+          <ChoiceSelect
             aria-label="Başlangıç karışımı"
             value={initialB}
             onChange={(e) => set({ initialB: Number(e.target.value), time: 0 })}
@@ -128,7 +129,7 @@ export default function EquilibriumExplorer() {
             <option value={0}>Yalnız A: [A] = 3, [B] = 0</option>
             <option value={3}>Yalnız B: [A] = 0, [B] = 3</option>
             <option value={2}>Denge karışımı: [A] = 1, [B] = 2</option>
-          </select>
+          </ChoiceSelect>
         </label>
         <label className="lab-slider">
           Geçen süre: {f(time)} s

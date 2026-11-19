@@ -12,6 +12,7 @@ import {
   protectorsA022,
 } from "./forge022ChemistryA";
 import "./forge022ChemistryA.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number, d = 6) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: d }).format(
     Object.is(n, -0) ? 0 : n,
@@ -69,13 +70,13 @@ function Select({
   return (
     <div className="ca022-field">
       <label htmlFor={id}>{label}</label>
-      <select id={id} value={value} onChange={(e) => change(e.target.value)}>
+      <ChoiceSelect id={id} value={value} onChange={(e) => change(e.target.value)}>
         {options.map(([v, text]) => (
           <option key={v} value={v}>
             {text}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
     </div>
   );
 }

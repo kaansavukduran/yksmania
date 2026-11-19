@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { useExploration } from "./useExploration";
 import { grammarCasesFor } from "./forge012Turkish";
 import "./forge012Turkish.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 export default function Forge012TurkishLab({ id }: { id: string }) {
   const uid = useId(),
@@ -27,7 +28,7 @@ export default function Forge012TurkishLab({ id }: { id: string }) {
         görevini ve cümledeki ilişkileri birlikte incele.
       </p>
       <label htmlFor={`${uid}-family`}>İncelenen örnek çifti</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-family`}
         value={selected.id}
         onChange={(e) =>
@@ -45,7 +46,7 @@ export default function Forge012TurkishLab({ id }: { id: string }) {
             {c.label}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <div className="grammar012-actions">
         <button
           className="secondary"
@@ -154,7 +155,7 @@ export default function Forge012TurkishLab({ id }: { id: string }) {
       <fieldset>
         <legend>Kararını cümleden kanıtla</legend>
         <label htmlFor={`${uid}-guess`}>Görev tahminin</label>
-        <select
+        <ChoiceSelect
           id={`${uid}-guess`}
           value={guessed ? s.guess : ""}
           onChange={(e) => set({ guess: e.target.value, checked: false })}
@@ -165,7 +166,7 @@ export default function Forge012TurkishLab({ id }: { id: string }) {
               {k}
             </option>
           ))}
-        </select>
+        </ChoiceSelect>
         <label htmlFor={`${uid}-reason`}>Cümleden gerekçen</label>
         <textarea
           id={`${uid}-reason`}

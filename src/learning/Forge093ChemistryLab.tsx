@@ -10,6 +10,7 @@ import {
 } from "./forge093Chemistry";
 import { useExploration } from "./useExploration";
 import "./forge093Chemistry.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 const number = new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 2 });
 const fmt = (n: number) => number.format(Math.abs(n) < 1e-9 ? 0 : n);
@@ -210,7 +211,7 @@ export default function Forge093ChemistryLab({ id }: { id: string }) {
       {molecular ? (
         <>
           <label htmlFor={`${marker}-molecule`}>Molekül örneği</label>
-          <select
+          <ChoiceSelect
             id={`${marker}-molecule`}
             value={molecule.id}
             onChange={(e) =>
@@ -228,7 +229,7 @@ export default function Forge093ChemistryLab({ id }: { id: string }) {
                 {item.formula}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
           <dl className="f093c-facts">
             <div>
               <dt>Atom geometrisi</dt>
@@ -278,7 +279,7 @@ export default function Forge093ChemistryLab({ id }: { id: string }) {
             </button>
           </div>
           <label htmlFor={`${marker}-bond-choice`}>İncelenecek bağ</label>
-          <select
+          <ChoiceSelect
             id={`${marker}-bond-choice`}
             value={bond}
             onChange={(e) => set({ bond: Number(e.target.value) })}
@@ -288,7 +289,7 @@ export default function Forge093ChemistryLab({ id }: { id: string }) {
                 {molecule.center}–{atom} · {i + 1}. yön
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
           <div className="f093c-result" data-model-result role="status">
             <strong>
               {molecule.formula} ·{" "}
@@ -336,7 +337,7 @@ export default function Forge093ChemistryLab({ id }: { id: string }) {
       ) : (
         <>
           <label htmlFor={`${marker}-pair`}>Bağ örneği</label>
-          <select
+          <ChoiceSelect
             id={`${marker}-pair`}
             value={pair.id}
             onChange={(e) =>
@@ -353,7 +354,7 @@ export default function Forge093ChemistryLab({ id }: { id: string }) {
                 {item.formula}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
           <p>
             Verilen nötr değerlik elektronları: {pair.atoms[0]} için{" "}
             {pair.valence[0]}, {pair.atoms[1]} için {pair.valence[1]}. Toplam{" "}
@@ -499,7 +500,7 @@ export default function Forge093ChemistryLab({ id }: { id: string }) {
             ? "Molekül kutupluluğu tahminin"
             : "Bağ kutupluluğu tahminin"}
         </label>
-        <select
+        <ChoiceSelect
           id={`${marker}-prediction`}
           value={prediction}
           onChange={(e) => set({ prediction: e.target.value, checked: false })}
@@ -507,7 +508,7 @@ export default function Forge093ChemistryLab({ id }: { id: string }) {
           <option value="">Bir sonuç seç</option>
           <option value="polar">Polar</option>
           <option value="apolar">Apolar</option>
-        </select>
+        </ChoiceSelect>
         <label htmlFor={`${marker}-reason`}>Tahmininin gerekçesi</label>
         <textarea
           id={`${marker}-reason`}

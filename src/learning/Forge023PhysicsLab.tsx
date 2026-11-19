@@ -18,6 +18,7 @@ import {
   excitation023,
 } from "./forge023Physics";
 import "./forge023Physics.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number, digits = 3) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: digits }).format(
     Math.abs(n) < 0.5 * 10 ** -digits ? 0 : n,
@@ -124,13 +125,13 @@ function Choice({
   return (
     <div className="physics023-choice">
       <label htmlFor={uid}>{label}</label>
-      <select id={uid} value={value} onChange={(e) => onChange(e.target.value)}>
+      <ChoiceSelect id={uid} value={value} onChange={(e) => onChange(e.target.value)}>
         {options.map(([v, t]) => (
           <option key={v} value={v}>
             {t}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <p className="small muted">
         Seçili: {options.find((x) => x[0] === value)?.[1]}
       </p>

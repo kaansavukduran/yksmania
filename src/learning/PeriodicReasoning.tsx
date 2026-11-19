@@ -1,6 +1,7 @@
 import { useId } from "react";
 import { useExploration } from "./useExploration";
 import "./periodicReasoning.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 const labs = {
   "elementlerin-siniflandirilmasi": {
@@ -127,7 +128,7 @@ export default function PeriodicReasoning({ id }: { id: string }) {
         gerekçeyi aç.
       </p>
       <label htmlFor={`${uid}-case`}>İncelenecek durum</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-case`}
         value={index}
         onChange={(e) =>
@@ -139,7 +140,7 @@ export default function PeriodicReasoning({ id }: { id: string }) {
             {c.name}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       {radius || bars ? (
         <svg
           viewBox="0 0 600 230"

@@ -9,6 +9,7 @@ import {
 } from "./forge011Math";
 import { useExploration } from "./useExploration";
 import "./forge011Math.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 const fmt = (n: number) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 4 }).format(
@@ -35,7 +36,7 @@ function Prediction({
   return (
     <div className="f011m-prediction">
       <label htmlFor={`${uid}-guess`}>Sonuç tahminin</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-guess`}
         value={valid ? state.guess : ""}
         onChange={(e) => set({ guess: e.target.value, checked: false })}
@@ -46,7 +47,7 @@ function Prediction({
             {label}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <label htmlFor={`${uid}-reason`}>Modelden gerekçen</label>
       <textarea
         id={`${uid}-reason`}
@@ -329,14 +330,14 @@ function Fraction() {
         />
         <label className="field" htmlFor={`${uid}-reference`}>
           İkinci kesrin referansı
-          <select
+          <ChoiceSelect
             id={`${uid}-reference`}
             value={reference}
             onChange={(e) => set({ reference: e.target.value, checked: false })}
           >
             <option value="remaining">Kalan miktar</option>
             <option value="initial">Başlangıç miktarı</option>
-          </select>
+          </ChoiceSelect>
         </label>
       </div>
       <svg
@@ -759,7 +760,7 @@ function Profit() {
       </p>
       <label className="field" htmlFor={`${uid}-mode`}>
         İncelenecek ilişki
-        <select
+        <ChoiceSelect
           id={`${uid}-mode`}
           value={mode}
           onChange={(e) =>
@@ -768,7 +769,7 @@ function Profit() {
         >
           <option value="price">Etiket ve indirim</option>
           <option value="break">Sabit gider ve başabaş</option>
-        </select>
+        </ChoiceSelect>
       </label>
       {mode === "price" ? (
         <>

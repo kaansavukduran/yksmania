@@ -15,6 +15,7 @@ import { useConfirmationDialog } from "../components/ConfirmationDialog";
 import { ResetProgress } from "../components/ResetProgress";
 import type { Settings as SettingsType } from "../domain/model";
 import { APP_VERSION } from "../version";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 function NumericControl({
   label,
   value,
@@ -304,8 +305,32 @@ export function Settings({
                 />
                 {t("matrixTheme")}
               </button>
+              <button
+                type="button"
+                className="theme-choice"
+                aria-pressed={state.settings.theme === "axolotl"}
+                onClick={() => set("theme", "axolotl")}
+              >
+                <span
+                  className="theme-swatch theme-swatch-axolotl"
+                  aria-hidden="true"
+                />
+                {t("axolotlTheme")}
+              </button>
+              <button
+                type="button"
+                className="theme-choice"
+                aria-pressed={state.settings.theme === "trans"}
+                onClick={() => set("theme", "trans")}
+              >
+                <span
+                  className="theme-swatch theme-swatch-trans"
+                  aria-hidden="true"
+                />
+                {t("transTheme")}
+              </button>
             </div>
-            {!["dark", "matrix"].includes(state.settings.theme) && (
+            {!["dark", "matrix", "axolotl", "trans"].includes(state.settings.theme) && (
               <small className="muted">{t("legacyThemeHelp")}</small>
             )}
           </div>
@@ -325,7 +350,7 @@ export function Settings({
           />
           <label className="field">
             {t("font")}
-            <select
+            <ChoiceSelect
               aria-label={t("font")}
               value={state.settings.font}
               onChange={(e) =>
@@ -334,7 +359,7 @@ export function Settings({
             >
               <option value="system">{t("systemFont")}</option>
               <option value="lexend">{t("dyslexia")}</option>
-            </select>
+            </ChoiceSelect>
           </label>
           <p className="font-preview">{t("fontPreview")}</p>
           <Toggle

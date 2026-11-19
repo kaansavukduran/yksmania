@@ -6,6 +6,7 @@ import {
   turkishExplorationDefaults016,
 } from "./forge016Turkish";
 import "./forge016Turkish.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 export default function Forge016TurkishLab({ lessonId }: { lessonId: string }) {
   const uid = useId();
@@ -56,7 +57,7 @@ export default function Forge016TurkishLab({ lessonId }: { lessonId: string }) {
         bu araç serbest yazılmış her cümleyi çözmez.
       </p>
       <label htmlFor={`${uid}-pair`}>İncelenen cümle çifti</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-pair`}
         value={pair.id}
         onChange={(event) =>
@@ -68,7 +69,7 @@ export default function Forge016TurkishLab({ lessonId }: { lessonId: string }) {
             {item.label}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <p className="turkish016-selected-label">
         Seçili çift: <strong>{pair.label}</strong>
       </p>
@@ -258,7 +259,7 @@ export default function Forge016TurkishLab({ lessonId }: { lessonId: string }) {
       <fieldset>
         <legend>Bu cümlede hangi karar geçerli?</legend>
         <label htmlFor={`${uid}-guess`}>Karar tahminin</label>
-        <select
+        <ChoiceSelect
           id={`${uid}-guess`}
           value={guess}
           onChange={(event) =>
@@ -271,7 +272,7 @@ export default function Forge016TurkishLab({ lessonId }: { lessonId: string }) {
               {option}
             </option>
           ))}
-        </select>
+        </ChoiceSelect>
         <p className="turkish016-selected-label">
           Tahminin: <strong>{guess || "Henüz seçilmedi"}</strong>
         </p>

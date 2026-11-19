@@ -7,7 +7,8 @@
   overflow-wrap: anywhere;
   min-width: 0;
 }
-:root[data-theme="light"] .g032-lab {
+:root[data-theme="light"] .g032-lab ,
+:root[data-theme="trans"] .g032-lab {
   --g032-orange: #a94327;
 }
 @media (prefers-color-scheme: light) {

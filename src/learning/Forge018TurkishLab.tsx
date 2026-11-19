@@ -6,6 +6,7 @@ import {
   turkishExplorationDefaults018,
 } from "./forge018Turkish";
 import "./forge018Turkish.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 const displayDecision018 = (value: string) =>
   value === "Neden-sonuç" ? "Neden ve sonuç" : value;
@@ -63,7 +64,7 @@ export default function Forge018TurkishLab({ lessonId }: { lessonId: string }) {
             : "İki yargıyı ayrı oku. Oku izleyip neden, hedef, şart veya çıkarımı kendi sözlerinle açıkla."}
       </p>
       <label htmlFor={`${uid}-pair`}>İncelenen örnek</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-pair`}
         value={pair.id}
         onChange={(event) =>
@@ -75,7 +76,7 @@ export default function Forge018TurkishLab({ lessonId }: { lessonId: string }) {
             {item.label}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <p className="turkish018-selected-label">
         Seçili örnek: <strong>{pair.label}</strong>
       </p>
@@ -236,7 +237,7 @@ export default function Forge018TurkishLab({ lessonId }: { lessonId: string }) {
       <fieldset>
         <legend>Bu bağlamda hangi karar geçerli?</legend>
         <label htmlFor={`${uid}-guess`}>Karar tahminin</label>
-        <select
+        <ChoiceSelect
           id={`${uid}-guess`}
           value={guess}
           onChange={(event) =>
@@ -249,7 +250,7 @@ export default function Forge018TurkishLab({ lessonId }: { lessonId: string }) {
               {displayDecision018(option)}
             </option>
           ))}
-        </select>
+        </ChoiceSelect>
         <p className="turkish018-selected-label">
           Tahminin: <strong>{displayDecision018(guess) || "Henüz seçilmedi"}</strong>
         </p>

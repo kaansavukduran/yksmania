@@ -2,6 +2,7 @@ import { useEffect, useId, useRef, useState } from "react";
 import { useExploration } from "./useExploration";
 import { buildHumanitiesScene020, humanitiesDefaults020, type HumanitiesScene020 } from "./forge020Humanities";
 import "./forge020Humanities.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 function Drawing020({ scene, selected, uid }: { scene: HumanitiesScene020; selected: number; uid: string }) {
   const ref = useRef<HTMLDivElement>(null), [width, setWidth] = useState(270);
@@ -61,7 +62,7 @@ export default function Forge020HumanitiesLab({ lessonId }: { lessonId: string }
   const guess = scene.options.includes(saved.guess) ? saved.guess : "", reason = saved.reason.slice(0, 120), compared = saved.compared && Boolean(guess && reason.trim()), revealed = saved.show || compared;
   const change = (patch: Parameters<typeof set>[0]) => set({ ...patch, guess: "", reason: "", compared: false, show: false, selected: 0 });
   const select = (key: keyof typeof values, label: string, options: [string, string][]) => <div key={key}>
-    <label htmlFor={`${uid}-${key}`}>{label}</label><select id={`${uid}-${key}`} value={String(values[key])} onChange={event => change({ [key]: event.target.value })}>{options.map(([value, text]) => <option key={value} value={value}>{text}</option>)}</select>
+    <label htmlFor={`${uid}-${key}`}>{label}</label><ChoiceSelect id={`${uid}-${key}`} value={String(values[key])} onChange={event => change({ [key]: event.target.value })}>{options.map(([value, text]) => <option key={value} value={value}>{text}</option>)}</ChoiceSelect>
     <p className="humanities020-selected">Seçili: <strong>{options.find(([value]) => value === values[key])?.[1]}</strong></p>
   </div>;
   return <section className="humanities020-lab" data-forge020={lessonId}>
@@ -86,7 +87,7 @@ export default function Forge020HumanitiesLab({ lessonId }: { lessonId: string }
       <div className="humanities020-nodes">{scene.nodes.map((node, i) => <div key={i} data-node={i} data-selected={i === selected}><p><strong>{node.label}</strong>{node.root ? " — bağımsız temel" : ""}</p><p>{node.text}</p></div>)}</div>
       {!(scene.allocation || scene.science) && <><p>Bir parçaya dokun; ona bağlı okları izle.</p><div className="humanities020-node-actions">{scene.nodes.map((node, i) => <button key={i} type="button" className="secondary" aria-pressed={i === selected} data-node-button={i} onClick={() => set({ selected: i })}>{node.label}</button>)}</div><ul>{scene.links.map((link, i) => <li key={i}>{scene.nodes[link.from].label} → {scene.nodes[link.to].label}: {link.label}.</li>)}</ul></>}
     </div>
-    <fieldset><legend>Bağlamdan karar ver</legend><label htmlFor={`${uid}-guess`}>Tahminin</label><select id={`${uid}-guess`} value={guess} onChange={event => set({ guess: event.target.value, compared: false })}><option value="">Bir karar seç</option>{scene.options.map(option => <option key={option} value={option}>{option}</option>)}</select><p className="humanities020-selected">Tahminin: <strong>{guess || "Henüz seçilmedi"}</strong></p>
+    <fieldset><legend>Bağlamdan karar ver</legend><label htmlFor={`${uid}-guess`}>Tahminin</label><ChoiceSelect id={`${uid}-guess`} value={guess} onChange={event => set({ guess: event.target.value, compared: false })}><option value="">Bir karar seç</option>{scene.options.map(option => <option key={option} value={option}>{option}</option>)}</ChoiceSelect><p className="humanities020-selected">Tahminin: <strong>{guess || "Henüz seçilmedi"}</strong></p>
       <label htmlFor={`${uid}-reason`}>Gerekçen</label><textarea id={`${uid}-reason`} rows={3} maxLength={120} value={reason} onChange={event => set({ reason: event.target.value.slice(0, 120), compared: false })} />
       <button className="secondary humanities020-compare" type="button" disabled={!guess || !reason.trim()} onClick={() => set({ compared: true })}>Tahminimi karşılaştır</button>
       {compared && <div className="humanities020-feedback" role="status"><p><strong>{guess === scene.decision ? "Seçimin bu bağlamla uyumlu." : "Seçimini kanıtla yeniden denetle."}</strong></p><p>Gerekçene otomatik puan verilmez. Kendi sözünü kanıtla karşılaştır.</p></div>}

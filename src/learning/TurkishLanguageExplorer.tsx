@@ -2,6 +2,7 @@ import { useId } from "react";
 import { useExploration } from "./useExploration";
 import { clampInt } from "./mathModels";
 import "./turkish-language.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 export const soundCases = [
   {
@@ -363,7 +364,7 @@ function SoundExplorer() {
       </p>
       <label className="field">
         Ses örneği
-        <select
+        <ChoiceSelect
           aria-label="Ses örneği"
           value={index}
           onChange={(e) => select(Number(e.target.value))}
@@ -373,7 +374,7 @@ function SoundExplorer() {
               {i + 1}. {c.base} → {c.result}
             </option>
           ))}
-        </select>
+        </ChoiceSelect>
       </label>
       <div
         className={`morph-pieces ${state.joined ? "is-joined" : ""}`}
@@ -405,7 +406,7 @@ function SoundExplorer() {
       )}
       <label className="field">
         Hangi değişimi bekliyorsun?
-        <select
+        <ChoiceSelect
           aria-label="Beklediğin ses olayı"
           value={state.claim}
           onChange={(e) => set({ claim: e.target.value, checked: false })}
@@ -414,7 +415,7 @@ function SoundExplorer() {
           {eventNames.map((name) => (
             <option key={name}>{name}</option>
           ))}
-        </select>
+        </ChoiceSelect>
       </label>
       <button
         className="secondary"
@@ -486,7 +487,7 @@ function StructureExplorer() {
       </p>
       <label className="field">
         Yapı örneği
-        <select
+        <ChoiceSelect
           aria-label="Yapı örneği"
           value={index}
           onChange={(e) => select(Number(e.target.value))}
@@ -496,7 +497,7 @@ function StructureExplorer() {
               {i + 1}. {c.word}
             </option>
           ))}
-        </select>
+        </ChoiceSelect>
       </label>
       <p className="language-sentence">{item.sentence}</p>
       <div

@@ -8,6 +8,7 @@ import {
 } from "./forge012Math";
 import { useExploration } from "./useExploration";
 import "./forge012Math.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 4 }).format(
     Object.is(n, -0) ? 0 : n,
@@ -33,7 +34,7 @@ function Prediction({
   return (
     <div className="f012m-prediction">
       <label htmlFor={`${uid}-guess`}>Sonuç tahminin</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-guess`}
         value={valid ? state.guess : ""}
         onChange={(e) => set({ guess: e.target.value, checked: false })}
@@ -44,7 +45,7 @@ function Prediction({
             {label}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <label htmlFor={`${uid}-reason`}>Modelden gerekçen</label>
       <textarea
         id={`${uid}-reason`}
@@ -186,7 +187,7 @@ function Interest() {
         />
         <label className="field" htmlFor={`${uid}-mode`}>
           Faiz kuralı
-          <select
+          <ChoiceSelect
             id={`${uid}-mode`}
             value={s.compound ? "compound" : "simple"}
             onChange={(e) =>
@@ -195,7 +196,7 @@ function Interest() {
           >
             <option value="simple">Basit: ilk anapara sabit</option>
             <option value="compound">Bileşik: yıl sonu yeniden yatır</option>
-          </select>
+          </ChoiceSelect>
         </label>
       </div>
       <div className="f012m-diagram-key" data-interest-axes>
@@ -328,7 +329,7 @@ function Mixture() {
         />
         <label className="field" htmlFor={`${uid}-operation`}>
           Yapılan işlem
-          <select
+          <ChoiceSelect
             id={`${uid}-operation`}
             value={operation}
             onChange={(e) => update({ operation: e.target.value })}
@@ -339,7 +340,7 @@ function Mixture() {
             <option value="replace">
               Homojen karışım al, yerine aynı kütle su koy
             </option>
-          </select>
+          </ChoiceSelect>
         </label>
       </div>
       <Drawing
@@ -472,7 +473,7 @@ function Workers() {
         />
         <label className="field" htmlFor={`${uid}-second`}>
           İkinci evrede çalışan
-          <select
+          <ChoiceSelect
             id={`${uid}-second`}
             value={second}
             onChange={(e) => update({ second: e.target.value })}
@@ -480,7 +481,7 @@ function Workers() {
             <option value="a">Yalnız A</option>
             <option value="b">Yalnız B</option>
             <option value="both">A ve B birlikte</option>
-          </select>
+          </ChoiceSelect>
         </label>
       </div>
       <Drawing
@@ -743,14 +744,14 @@ function Motion() {
         />
         <label className="field" htmlFor={`${uid}-direction`}>
           B’nin yönü
-          <select
+          <ChoiceSelect
             id={`${uid}-direction`}
             value={s.opposite ? "toward" : "same"}
             onChange={(e) => update({ opposite: e.target.value === "toward" })}
           >
             <option value="same">A ile aynı yöne</option>
             <option value="toward">A’ya doğru</option>
-          </select>
+          </ChoiceSelect>
         </label>
       </div>
       <div className="f012m-diagram-key" data-motion-axis>

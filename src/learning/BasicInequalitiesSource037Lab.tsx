@@ -8,6 +8,7 @@ import {
   type Ineq037Fraction, type Ineq037Interval, type Ineq037Operator,
 } from "./basicInequalitiesSource037Model";
 import "./basicInequalitiesSource037.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 const defaults={mode:0,a:5,b:-7,c:0,d:18,op:"<=",x:5,xd:1,left:-3,right:2,operation:"multiply",amount:-1,lower:-2,ca:3,cb:1,p:1,upper:10,lc:false,hc:true,firstOp:"<=",first:-2,secondOp:">",second:3,join:"or",fixed:240,per:80,budget:880,inclusive:true,u:20,ud:1,firstInclusive:false,secondInclusive:false,transfer:false,parameter:2,px:2,pxd:1,factorMode:false};
 const symbol=(operator:Ineq037Operator)=>operator==="<="?"≤":operator===">="?"≥":operator;
@@ -50,7 +51,7 @@ export function BasicInequalitiesSource037Lab() {
   const n=(key:keyof typeof defaults,fallback:number,min:number,max:number)=>{const value=saved[key];return typeof value==="number"&&Number.isFinite(value)?Math.max(min,Math.min(max,Math.round(value))):fallback;};
   const mode=n("mode",0,0,6),operator=validOp(saved.op);
   const range=(key:keyof typeof defaults,label:string,value:number,min:number,max:number)=><div className="f037-range"><div><label htmlFor={`${uid}-${key}`}>{label}</label><output htmlFor={`${uid}-${key}`}>{value}</output></div><input id={`${uid}-${key}`} aria-label={label} type="range" min={min} max={max} step="1" value={value} onChange={(e)=>set({[key]:Number(e.target.value)})}/></div>;
-  const signs=(key:"op"|"firstOp"|"secondOp",label:string,value:Ineq037Operator)=><label className="f037-select" htmlFor={`${uid}-${key}`}>{label}<select id={`${uid}-${key}`} aria-label={label} value={value} onChange={(e)=>set({[key]:e.target.value})}>{(["<","<=",">",">="]as const).map((o)=><option value={o} key={o}>{symbol(o)}</option>)}</select></label>;
+  const signs=(key:"op"|"firstOp"|"secondOp",label:string,value:Ineq037Operator)=><label className="f037-select" htmlFor={`${uid}-${key}`}>{label}<ChoiceSelect id={`${uid}-${key}`} aria-label={label} value={value} onChange={(e)=>set({[key]:e.target.value})}>{(["<","<=",">",">="]as const).map((o)=><option value={o} key={o}>{symbol(o)}</option>)}</ChoiceSelect></label>;
   const check=(key:keyof typeof defaults,label:string)=><label className="f037-checkbox" htmlFor={`${uid}-${key}`}><input id={`${uid}-${key}`} type="checkbox" checked={saved[key]===true} onChange={(e)=>set({[key]:e.target.checked})}/>{label}</label>;
   const general=ineq037Test(n("a",5,-12,12),n("b",-7,-60,60),operator,n("c",0,-12,12),n("d",18,-120,120),n("x",5,-120,120),n("xd",1,1,12));
   const operation=saved.operation==="add"||saved.operation==="divide"?saved.operation:"multiply";

@@ -11,6 +11,7 @@ import {
   reflectedRay,
 } from "./forge012Physics";
 import "./forge012Physics.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (v: number, digits = 2) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: digits }).format(
     Math.abs(v) < 1e-8 ? 0 : v,
@@ -338,14 +339,14 @@ function Sound() {
       intro="Gazdaki boyuna sesin sıkışma bölgelerini ve sabit hava süratinde dalga boyunu izle. İkinci düzenek, verilen sabit P/S süratleriyle ayrı bir deprem yol modelidir."
     >
       <label htmlFor={`${uid}-mode`}>İncelenen düzenek</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-mode`}
         value={mode}
         onChange={(e) => update({ mode: e.target.value })}
       >
         <option value="sound">Ses ve yankı</option>
         <option value="quake">Deprem varışları</option>
-      </select>
+      </ChoiceSelect>
       {mode === "sound" ? (
         <>
           <div className="physics012-controls">

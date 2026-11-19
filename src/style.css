@@ -22,7 +22,8 @@
   font-synthesis: none;
   scroll-behavior: smooth;
 }
-:root[data-theme="light"] {
+:root[data-theme="light"] ,
+:root[data-theme="trans"] {
   --bg: #f5f3ee;
   --surface: #fffefa;
   --surface-2: #eeece5;
@@ -65,6 +66,47 @@
   --repair: #ffaaa8;
   --guidance: #f0cf89;
   color-scheme: dark;
+}
+/* Axolotl: Aion's pink body with blue-tipped gills on a soft plum night. */
+:root[data-theme="axolotl"] {
+  --bg: #1b1219;
+  --surface: #251922;
+  --surface-2: #31202d;
+  --text: #fbeef5;
+  --muted: #d6b8c9;
+  --border: #84587a;
+  --hover-bg: #3a2636;
+  --accent: #ff9fd0;
+  --accent-text: #2b0d1e;
+  --mint: #a3dcf7;
+  --danger: #ffb3a8;
+  --repair: #ffb3a8;
+  --guidance: #a3dcf7;
+  --plot-blue: #a3dcf7;
+  color-scheme: dark;
+}
+/* Trans flag: light blue #5BCEFA, pink #F5A9B8 and white. Text-bearing
+   accents use deeper shades of the same hues so they stay readable. */
+:root[data-theme="trans"] {
+  --bg: #fdf6f9;
+  --surface: #ffffff;
+  --surface-2: #eaf7fe;
+  --text: #1f2633;
+  --muted: #4d5869;
+  --border: #b7dcee;
+  --hover-bg: #fde7ed;
+  --accent: #b8245a;
+  --accent-text: #fff;
+  --mint: #1b6f99;
+  --danger: #a82e35;
+  --repair: #a82e35;
+  --guidance: #1b6f99;
+  color-scheme: light;
+}
+:root[data-theme="trans"] body {
+  background:
+    linear-gradient(to bottom, #5bcefa 0 3px, #f5a9b8 3px 6px, #ffffff 6px 9px, #f5a9b8 9px 12px, #5bcefa 12px 15px) top / 100% 15px no-repeat,
+    var(--bg);
 }
 @media (prefers-color-scheme: light) {
   :root[data-theme="system"] {
@@ -122,6 +164,14 @@
 .theme-swatch-matrix {
   background: #88e8a2;
   border: 3px solid #526d5a;
+}
+.theme-swatch-axolotl {
+  background: #ff9fd0;
+  border: 3px solid #a3dcf7;
+}
+.theme-swatch-trans {
+  background: linear-gradient(to bottom, #5bcefa 0 20%, #f5a9b8 20% 40%, #ffffff 40% 60%, #f5a9b8 60% 80%, #5bcefa 80% 100%);
+  border: 1px solid #8a9aab;
 }
 * {
   box-sizing: border-box;
@@ -3013,7 +3063,8 @@ progress::-moz-progress-bar {
 :root {
   --plot-blue: #94bddf;
 }
-:root[data-theme="light"] {
+:root[data-theme="light"] ,
+:root[data-theme="trans"] {
   --plot-blue: #275e85;
 }
 :root[data-theme="contrast"] {
@@ -4666,3 +4717,104 @@ progress::-moz-progress-bar {
     grid-column: 1 / -1;
   }
 }
+
+/* Choice chips replace drop-downs (ChoiceSelect). */
+.choice-select.is-plain { display: contents; }
+.choice-select:not(.is-plain) {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 14px;
+}
+.choice-select:not(.is-plain):focus-within {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+.choice-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.choice-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0.45rem 0.95rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: inherit;
+  cursor: pointer;
+  line-height: 1.25;
+  text-align: center;
+  overflow-wrap: anywhere;
+  user-select: none;
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+}
+.choice-chip:hover { border-color: var(--accent); }
+.choice-chip:active { transform: scale(0.97); }
+.choice-chip.is-selected {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-text);
+  font-weight: 700;
+}
+.choice-chip.is-disabled,
+.choice-select.is-disabled .choice-chip { opacity: 0.45; cursor: not-allowed; }
+.choice-native {
+  position: absolute !important;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  opacity: 0;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .choice-chip { transition: none; }
+  .choice-chip:active { transform: none; }
+}
+
+/* Trans theme copies of light overrides kept in approved, hash-pinned lab CSS. */
+:root[data-theme="trans"] .f038-lab{--f038-b:#21658a;--f038-c:#356945}
+:root[data-theme="trans"] .f038-lab .f038-axis{opacity:1}
+[data-theme="trans"] .f039-lab {
+  --f039-a: #923d26;
+  --f039-b: #245c88;
+  --f039-negative: #813c70;
+  --f039-result: #327247;
+  --f039-ink: #202a34;
+  --f039-muted: #4a5664;
+  --f039-border: #a2aab3;
+}
+[data-theme="trans"] .f039-node-value {
+  fill: white;
+}
+[data-theme="trans"] .f039-node-unfilled {
+  fill: var(--f039-ink);
+}
+
+/* Today's hero card follows the two personal themes. */
+:root[data-theme="axolotl"] .hero {
+  background: #2e1d2a;
+  border-color: #84587a;
+  color: #fbeef5;
+}
+:root[data-theme="axolotl"] .hero-kicker,
+:root[data-theme="axolotl"] .tiny-star { color: #a3dcf7; }
+:root[data-theme="axolotl"] .hero-content > p { color: #e2c7d6; }
+:root[data-theme="axolotl"] .hero .primary { background: #ff9fd0; color: #2b0d1e; }
+:root[data-theme="trans"] .hero {
+  background: #ffffff;
+  border-color: #b7dcee;
+  color: #1f2633;
+}
+:root[data-theme="trans"] .hero-kicker,
+:root[data-theme="trans"] .tiny-star { color: #1b6f99; }
+:root[data-theme="trans"] .hero-content > p { color: #4d5869; }
+:root[data-theme="trans"] .hero .primary { background: #b8245a; color: #fff; }

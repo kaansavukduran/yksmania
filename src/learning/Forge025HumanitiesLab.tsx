@@ -17,6 +17,7 @@ import {
   type HumanitiesScene025,
 } from "./forge025Humanities";
 import "./forge025Humanities.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const displayCopy025 = [
   ["Sağlanmadığı", "Yerine gelmediği"],
   ["sağlanmadığı", "yerine gelmediği"],
@@ -276,7 +277,7 @@ export default function Forge025HumanitiesLab({
     return (
       <label className="humanities025-control" htmlFor={id}>
         {visibleText025(label)}
-        <select
+        <ChoiceSelect
           id={id}
           value={value}
           onChange={(e) => change({ [key]: Number(e.target.value) })}
@@ -286,7 +287,7 @@ export default function Forge025HumanitiesLab({
               {s}
             </option>
           ))}
-        </select>
+        </ChoiceSelect>
       </label>
     );
   };

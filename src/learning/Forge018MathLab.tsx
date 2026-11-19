@@ -14,6 +14,7 @@ import {
   type Reflection018,
 } from "./forge018Math";
 import "./forge018Math.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 const fmt = (n: number) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 3 }).format(n);
@@ -76,13 +77,13 @@ function Choice018({
   return (
     <div className="m018-field">
       <label htmlFor={id}>{label}</label>
-      <select id={id} value={value} onChange={(e) => onChange(e.target.value)}>
+      <ChoiceSelect id={id} value={value} onChange={(e) => onChange(e.target.value)}>
         {options.map(([v, text]) => (
           <option key={v} value={v}>
             {text}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
     </div>
   );
 }

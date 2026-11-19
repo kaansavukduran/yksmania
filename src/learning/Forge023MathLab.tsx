@@ -11,6 +11,7 @@ import {
   type SequenceKind023,
 } from "./forge023Math";
 import "./forge023Math.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 const fmt = (x: number) =>
   new Intl.NumberFormat("tr-TR", {
@@ -271,14 +272,14 @@ export default function Forge023MathLab({ lessonId }: { lessonId: string }) {
         />
         <label>
           İşlem
-          <select
+          <ChoiceSelect
             aria-label="İşlem"
             value={s.subtract ? "minus" : "plus"}
             onChange={(e) => change({ subtract: e.target.value === "minus" })}
           >
             <option value="plus">Toplama</option>
             <option value="minus">Çıkarma</option>
-          </select>
+          </ChoiceSelect>
         </label>
       </>
     );
@@ -513,7 +514,7 @@ export default function Forge023MathLab({ lessonId }: { lessonId: string }) {
       <>
         <label>
           Taban
-          <select
+          <ChoiceSelect
             aria-label="Taban"
             value={base}
             onChange={(e) => change({ base: e.target.value })}
@@ -523,7 +524,7 @@ export default function Forge023MathLab({ lessonId }: { lessonId: string }) {
             <option value="3">3</option>
             <option value="10">10</option>
             <option value="e">e</option>
-          </select>
+          </ChoiceSelect>
         </label>
         <Range
           title="Seçili x"
@@ -641,7 +642,7 @@ export default function Forge023MathLab({ lessonId }: { lessonId: string }) {
       <>
         <label>
           Kural
-          <select
+          <ChoiceSelect
             aria-label="Kural"
             value={kind}
             onChange={(e) => change({ sequence: e.target.value })}
@@ -650,7 +651,7 @@ export default function Forge023MathLab({ lessonId }: { lessonId: string }) {
             <option value="geometric">Çarpım</option>
             <option value="recurrence">İndirgeme</option>
             <option value="triangular">Üçgensel</option>
-          </select>
+          </ChoiceSelect>
         </label>
         {kind !== "triangular" && (
           <>
@@ -779,14 +780,14 @@ export default function Forge023MathLab({ lessonId }: { lessonId: string }) {
       <>
         <label>
           Model
-          <select
+          <ChoiceSelect
             aria-label="Model"
             value={hole ? "hole" : "piecewise"}
             onChange={(e) => change({ mode: e.target.value })}
           >
             <option value="piecewise">İki parça</option>
             <option value="hole">Ortak çarpan</option>
-          </select>
+          </ChoiceSelect>
         </label>
         <Range
           title="Hedef a"
@@ -963,7 +964,7 @@ export default function Forge023MathLab({ lessonId }: { lessonId: string }) {
       <div className="math023-prediction">
         <label>
           Sonuç tahminin
-          <select
+          <ChoiceSelect
             aria-label="Sonuç tahminin"
             value={options.some((o) => o[0] === s.guess) ? s.guess : ""}
             onChange={(e) => change({ guess: e.target.value })}
@@ -974,7 +975,7 @@ export default function Forge023MathLab({ lessonId }: { lessonId: string }) {
                 {label}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
         <label>
           Modelden gerekçen

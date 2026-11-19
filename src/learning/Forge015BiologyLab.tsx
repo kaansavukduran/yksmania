@@ -23,6 +23,7 @@ import {
   type DiseaseEvidence,
 } from "./forge015Biology";
 import "./forge015Biology.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const n = (value: number) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 2 }).format(value);
 const bounded = (value: number, min: number, max: number) =>
@@ -64,13 +65,13 @@ function Choice({
   return (
     <div className="bio015-field">
       <label htmlFor={uid}>{label}</label>
-      <select id={uid} value={value} onChange={(e) => onChange(e.target.value)}>
+      <ChoiceSelect id={uid} value={value} onChange={(e) => onChange(e.target.value)}>
         {options.map(([key, text]) => (
           <option key={key} value={key}>
             {text}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <output htmlFor={uid} className="bio015-current-choice">
         Seçili: {options.find(([key]) => key === value)?.[1]}
       </output>
@@ -153,7 +154,7 @@ function Prediction({
   return (
     <div className="bio015-prediction">
       <label htmlFor={uid + "-answer"}>Sonuç tahminin</label>
-      <select
+      <ChoiceSelect
         id={uid + "-answer"}
         value={selected ? s.answer : ""}
         onChange={(e) => set({ answer: e.target.value, checked: false })}
@@ -164,7 +165,7 @@ function Prediction({
             {text}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <output data-selected-prediction htmlFor={uid + "-answer"}>
         {selected
           ? `Seçili tahmin: ${selected[1]}`

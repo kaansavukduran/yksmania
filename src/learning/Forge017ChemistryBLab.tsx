@@ -16,6 +16,7 @@ import {
   type LawB017,
 } from "./forge017ChemistryB";
 import "./forge017ChemistryB.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 const fmt = (n: number) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 3 }).format(n);
@@ -45,13 +46,13 @@ function Choice({
   return (
     <div className="cb017-field">
       <label htmlFor={id}>{label}</label>
-      <select id={id} value={value} onChange={(e) => onChange(e.target.value)}>
+      <ChoiceSelect id={id} value={value} onChange={(e) => onChange(e.target.value)}>
         {options.map(([v, t]) => (
           <option key={v} value={v}>
             {t}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
     </div>
   );
 }

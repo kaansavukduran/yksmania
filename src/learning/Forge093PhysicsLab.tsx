@@ -11,6 +11,7 @@ import {
   wireField,
 } from "./forge093Physics";
 import "./forge093PhysicsLab.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 const fmt = (n: number, digits = 2) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: digits }).format(
@@ -130,7 +131,7 @@ function ExpansionLab({ id }: { id: string }) {
         />
         <label htmlFor={`${uid}-alpha`}>
           Doğrusal katsayı α (×10⁻⁶ °C⁻¹)
-          <select
+          <ChoiceSelect
             id={`${uid}-alpha`}
             value={alpha}
             onChange={(e) =>
@@ -139,7 +140,7 @@ function ExpansionLab({ id }: { id: string }) {
           >
             <option value={12}>12</option>
             <option value={24}>24</option>
-          </select>
+          </ChoiceSelect>
         </label>
         <ModelNumber
           label="Sıcaklık değişimi (°C)"
@@ -709,7 +710,7 @@ function ChargeLab({ id }: { id: string }) {
         <>
           <label htmlFor={`${uid}-rod`}>
             Çubuğun yükü
-            <select
+            <ChoiceSelect
               id={`${uid}-rod`}
               value={s.positive ? "positive" : "negative"}
               onChange={(e) =>
@@ -721,7 +722,7 @@ function ChargeLab({ id }: { id: string }) {
             >
               <option value="positive">Pozitif (+)</option>
               <option value="negative">Negatif (−)</option>
-            </select>
+            </ChoiceSelect>
           </label>
           <label className="forge093-physics-check">
             <input
@@ -944,7 +945,7 @@ function CircuitLab({ id }: { id: string }) {
         />
         <label htmlFor={`${uid}-connection`}>
           Dirençlerin bağlantısı
-          <select
+          <ChoiceSelect
             id={`${uid}-connection`}
             value={s.parallel ? "parallel" : "series"}
             onChange={(e) =>
@@ -953,7 +954,7 @@ function CircuitLab({ id }: { id: string }) {
           >
             <option value="series">Seri</option>
             <option value="parallel">Paralel</option>
-          </select>
+          </ChoiceSelect>
         </label>
       </div>
       <label className="forge093-physics-check">
@@ -1150,7 +1151,7 @@ function MagneticLab({ id }: { id: string }) {
           </p>
           <label htmlFor={`${uid}-pole`}>
             Mıknatıs yönü
-            <select
+            <ChoiceSelect
               id={`${uid}-pole`}
               value={s.northRight ? "right" : "left"}
               onChange={(e) =>
@@ -1159,7 +1160,7 @@ function MagneticLab({ id }: { id: string }) {
             >
               <option value="right">N sağda</option>
               <option value="left">N solda</option>
-            </select>
+            </ChoiceSelect>
           </label>
         </>
       ) : (
@@ -1185,7 +1186,7 @@ function MagneticLab({ id }: { id: string }) {
           />
           <label htmlFor={`${uid}-current`}>
             Akımın sayfaya göre yönü
-            <select
+            <ChoiceSelect
               id={`${uid}-current`}
               value={s.outward ? "out" : "in"}
               onChange={(e) =>
@@ -1194,7 +1195,7 @@ function MagneticLab({ id }: { id: string }) {
             >
               <option value="out">Dışarı (⊙)</option>
               <option value="in">İçeri (⊗)</option>
-            </select>
+            </ChoiceSelect>
           </label>
         </>
       )}

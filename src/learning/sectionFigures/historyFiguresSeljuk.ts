@@ -1,4 +1,4 @@
-import { dist, lerp, poly, pt, seg, txt, v, vec, type El, type FigureDef, type Tone, type V } from "./figureKit";
+import { circle, dist, lerp, poly, pt, seg, txt, v, vec, type El, type FigureDef, type Tone, type V } from "./figureKit";
 
 /*
  * Selçuklu dönemi savaş şemaları. Her savaş, sürgü veya "Oynat" ile ilerleyen
@@ -6,9 +6,13 @@ import { dist, lerp, poly, pt, seg, txt, v, vec, type El, type FigureDef, type T
  * aşamadaki hareketi, kısa ok demetleri atlı okçu atışını gösterir.
  * Konumlar temsilîdir; ölçekli harita değildir. Anlatım ders kaynaklarının
  * genel çerçevesini izler, ayrıntılı birlik sayıları verilmez.
+ * Birlikler harfli pullardır; adları haritanın altındaki lejantta durur, böylece
+ * hiçbir yazı birliklerin veya okların üstüne binmez.
  */
 
 type Unit = {
+  /** One or two letters drawn inside the token; the legend names it. */
+  code: string;
   label: string;
   tone: Tone;
   /** One position per stage (stage 0 … n-1). */
@@ -18,11 +22,6 @@ type Unit = {
   toneAfter?: Tone;
   /** Before this stage the unit is hidden in ambush (outline only). */
   hiddenUntil?: number;
-  /** From this stage on the label is dropped (the unit merges into a group). */
-  labelUntil?: number;
-  at?: "n" | "s" | "e" | "w";
-  w?: number;
-  h?: number;
 };
 type Stage = { name: string; text: string };
 type Battle = {
@@ -33,6 +32,9 @@ type Battle = {
   volleys?: [number, number, number, number][];
   /** Extra marks for a stage window. */
   marks?: (t: number, pos: (i: number) => V) => El[];
+  /** Map width (legend wraps inside it) and the two sides for the colour key. */
+  width: number;
+  sides: [string, Tone][];
 };
 
 const smooth = (x: number) => x * x * (3 - 2 * x);
@@ -42,27 +44,20 @@ function posAt(path: V[], t: number): V {
   const f = smooth(Math.max(0, Math.min(1, t - i)));
   return lerp(path[i], path[i + 1], f);
 }
-function box(c: V, w: number, h: number, tone: Tone, hidden: boolean): El {
-  const [x, y] = c;
-  return poly(
-    [v(x - w / 2, y - h / 2), v(x + w / 2, y - h / 2), v(x + w / 2, y + h / 2), v(x - w / 2, y + h / 2)],
-    hidden ? { tone, dash: true, thin: true } : { tone, fill: tone, bold: true },
-  );
+const R = 0.5;
+function token(c: V, code: string, tone: Tone, hidden: boolean): El[] {
+  return [
+    hidden ? circle(c, R, { tone, dash: true, thin: true }) : circle(c, R, { tone, fill: tone, bold: true }),
+    txt(c, code, "c", { tone, small: true, bold: true }),
+  ];
 }
-function labelPoint(c: V, u: Unit): V {
-  const h = (u.h ?? 0.7) / 2 + 0.25;
-  const w = (u.w ?? 1.4) / 2 + 0.2;
-  switch (u.at ?? "n") {
-    case "s":
-      return v(c[0], c[1] - h);
-    case "e":
-      return v(c[0] + w, c[1]);
-    case "w":
-      return v(c[0] - w, c[1]);
-    default:
-      return v(c[0], c[1] + h);
-  }
+/** Legend entries: side key first, then each unit code once. */
+function legendItems(units: Unit[], sides: [string, Tone][]) {
+  const items: { code: string; label: string; tone: Tone }[] = sides.map(([label, tone]) => ({ code: "", label, tone }));
+  for (const u of units) if (!items.some((i) => i.code === u.code)) items.push({ code: u.code, label: u.label, tone: u.tone });
+  return items;
 }
+const ring = (c: V): El => circle(c, R + 0.22, { tone: "warn", bold: true });
 /** Three short dashed arrows from a to b: one volley of mounted archers. */
 function volley(a: V, b: V, tone: Tone): El[] {
   const d = dist(a, b) || 1;
@@ -106,31 +101,25 @@ function battleFigure(b: Battle, caption: string, alt: string): FigureDef {
         const c = pos(i);
         const tone = u.switchAt !== undefined && t >= u.switchAt - 0.5 ? (u.toneAfter ?? u.tone) : u.tone;
         const hidden = u.hiddenUntil !== undefined && t < u.hiddenUntil - 0.5;
-        els.push(box(c, u.w ?? 1.4, u.h ?? 0.7, tone, hidden));
-        const at = u.at ?? "n";
-        if (u.labelUntil !== undefined && t >= u.labelUntil - 0.5) return;
-        els.push(txt(labelPoint(c, u), hidden ? `${u.label} (pusu)` : u.label, at === "n" ? "n" : at === "s" ? "s" : at, { tone, small: true }));
+        els.push(...token(c, u.code, tone, hidden));
       });
       if (b.marks) els.push(...b.marks(t, pos));
+
       const stage = b.stages[k];
-      return { els, readout: [`Aşama ${k + 1}/${n}: ${stage.name}`, stage.text] };
+      return { els, legend: legendItems(b.units, b.sides), readout: [`Aşama ${k + 1}/${n}: ${stage.name}`, stage.text] };
     },
   };
 }
 
-const frame = (w: number, h: number): El =>
-  poly([v(0, 0), v(w, 0), v(w, h), v(0, h)], { tone: "muted", thin: true });
+/** Compass words under the map instead of a frame around it. */
+const compass = (w: number, left = "← batı", right = "doğu →"): El[] => [
+  txt(v(0.1, -0.35), left, "e", { tone: "muted", small: true }),
+  txt(v(w - 0.1, -0.35), right, "w", { tone: "muted", small: true }),
+];
 const mountain = (x: number, y: number, w: number, h: number): El =>
   poly([v(x - w / 2, y), v(x, y + h), v(x + w / 2, y)], { tone: "muted", fill: "muted", thin: true });
 const mountains = (xs: number[], y: number, w: number, h: number, down = false): El[] =>
   xs.map((x) => (down ? poly([v(x - w / 2, y), v(x, y - h), v(x + w / 2, y)], { tone: "muted", fill: "muted", thin: true }) : mountain(x, y, w, h)));
-const legend = (x: number, y: number, a: string, b: string, aTone: Tone = "a", bTone: Tone = "b"): El[] => [
-  box(v(x, y), 0.5, 0.35, aTone, false),
-  txt(v(x + 0.4, y), a, "e", { tone: aTone, small: true }),
-  box(v(x + 1.4 + a.length * 0.3, y), 0.5, 0.35, bTone, false),
-  txt(v(x + 1.8 + a.length * 0.3, y), b, "e", { tone: bTone, small: true }),
-];
-
 /* ---------------- Malazgirt 1071 ---------------- */
 const malazgirt: Battle = {
   stages: [
@@ -142,30 +131,27 @@ const malazgirt: Battle = {
     { name: "İmparator esir", text: "Romen Diyojen esir düşer. Sonuç: Anadolu'ya Türk göçü ve yerleşimi hızlanır. Türkiye Selçuklu Devleti'nin kuruluşu ayrı bir olaydır (1077)." },
   ],
   units: [
-    { label: "Romen Diyojen", tone: "b", path: [v(3, 4), v(3, 4), v(6.2, 4), v(7, 4), v(7, 4), v(7, 4)], w: 1.8, at: "w" },
-    { label: "Bizans sol", tone: "b", path: [v(3.6, 6.6), v(3.6, 6.6), v(5.8, 6.1), v(6.6, 5.2), v(7, 4.75), v(7, 4.75)], labelUntil: 3 },
-    { label: "Bizans sağ", tone: "b", path: [v(3.6, 1.4), v(3.6, 1.4), v(5.8, 1.9), v(6.6, 2.8), v(7, 3.25), v(7, 3.25)], labelUntil: 3, at: "s" },
-    { label: "Uz–Peçenek", tone: "c", path: [v(1.4, 2.9), v(1.4, 2.9), v(4, 2.8), v(9.8, 1.8), v(9.8, 2.2), v(9.8, 2.2)], switchAt: 3, toneAfter: "a", at: "s" },
-    { label: "Artçı", tone: "b", path: [v(1, 4.8), v(1, 4.8), v(1.3, 4.8), v(0.8, 6.8), v(0.8, 6.8), v(0.8, 6.8)], at: "e", w: 1.1 },
-    { label: "Alp Arslan", tone: "a", path: [v(10, 4), v(10, 4), v(11.6, 4), v(11.2, 4), v(9.6, 4), v(9.6, 4)], w: 1.6 },
-    { label: "Atlı okçu", tone: "a", path: [v(9, 6.6), v(6.4, 6.5), v(9.6, 6.6), v(10.2, 6.6), v(7.4, 6.5), v(7.4, 6.5)], w: 1.1 },
-    { label: "Atlı okçu", tone: "a", path: [v(9, 1.4), v(6.4, 1.5), v(9.6, 1.4), v(11.6, 3), v(7.4, 1.5), v(7.4, 1.5)], w: 1.1, at: "s" },
-    { label: "Selçuklu", tone: "a", path: [v(11.8, 7), v(11.8, 7), v(11.8, 7), v(7.6, 7.6), v(4.8, 5.6), v(4.8, 5.6)], hiddenUntil: 3, w: 1.1 },
-    { label: "Selçuklu", tone: "a", path: [v(11.8, 0.9), v(11.8, 0.9), v(11.8, 0.9), v(7.6, 0.4), v(4.8, 2.4), v(4.8, 2.4)], hiddenUntil: 3, w: 1.1, at: "s" },
+    { code: "R", label: "Romen Diyojen", tone: "b", path: [v(3, 4), v(3, 4), v(6.2, 4), v(7, 4), v(7, 4), v(7, 4)] },
+    { code: "K", label: "Bizans kanatları", tone: "b", path: [v(3.6, 6.4), v(3.6, 6.4), v(5.8, 6), v(6.6, 5.4), v(7, 5.1), v(7, 5.1)] },
+    { code: "K", label: "Bizans kanatları", tone: "b", path: [v(3.6, 1.6), v(3.6, 1.6), v(5.8, 2), v(6.6, 2.6), v(7, 2.9), v(7, 2.9)] },
+    { code: "U", label: "Uz–Peçenek (taraf değiştirir)", tone: "c", path: [v(1.6, 2.8), v(1.6, 2.8), v(4.2, 2.8), v(9.8, 1.8), v(9.6, 2.4), v(9.6, 2.4)], switchAt: 3, toneAfter: "a" },
+    { code: "Ç", label: "Bizans artçısı", tone: "b", path: [v(1.2, 4.8), v(1.2, 4.8), v(1.5, 4.8), v(0.6, 6.6), v(0.6, 6.6), v(0.6, 6.6)] },
+    { code: "A", label: "Alp Arslan", tone: "a", path: [v(10, 4), v(10, 4), v(11.6, 4), v(11.2, 4), v(9.3, 4), v(9.3, 4)] },
+    { code: "O", label: "Atlı okçular", tone: "a", path: [v(9, 6.4), v(6.4, 6.3), v(9.6, 6.4), v(10.2, 6.4), v(7.4, 6.6), v(7.4, 6.6)] },
+    { code: "O", label: "Atlı okçular", tone: "a", path: [v(9, 1.6), v(6.4, 1.7), v(9.6, 1.6), v(11.4, 2.8), v(7.4, 1.4), v(7.4, 1.4)] },
+    { code: "P", label: "Pusudaki Selçuklu birlikleri", tone: "a", path: [v(12, 7), v(12, 7), v(12, 7), v(8, 7.6), v(5, 5.6), v(5, 5.6)], hiddenUntil: 3 },
+    { code: "P", label: "Pusudaki Selçuklu birlikleri", tone: "a", path: [v(12, 1), v(12, 1), v(12, 1), v(8, 0.4), v(5, 2.4), v(5, 2.4)], hiddenUntil: 3 },
   ],
-  terrain: [
-    frame(13, 8),
-    ...legend(0.5, -1.1, "Selçuklu", "Bizans"),
-    txt(v(0.4, 7.6), "batı", "e", { tone: "muted", small: true }),
-    txt(v(12.6, 4), "doğu", "w", { tone: "muted", small: true }),
-  ],
+  terrain: [...compass(13)],
+  width: 13,
+  sides: [["Selçuklu", "a"], ["Bizans", "b"]],
   volleys: [
     [0.3, 1.4, 6, 1],
     [0.3, 1.4, 7, 2],
     [3.4, 5, 6, 0],
     [3.4, 5, 7, 0],
   ],
-  marks: (t, pos) => (t >= 4.6 ? [pt(pos(0), "esir", "s", "warn")] : []),
+  marks: (t, pos) => (t >= 4.6 ? [ring(pos(0))] : []),
 };
 
 /* ---------------- Miryokefalon 1176 ---------------- */
@@ -178,23 +164,23 @@ const miryokefalon: Battle = {
     { name: "Barış ve geri dönüş", text: "Manuel barış ister ve geri çekilir. Sonuç: Bizans'ın Türkleri Anadolu'dan çıkarma hedefi sonuçsuz kalır; Türk yerleşiminin kalıcılığı güçlenir." },
   ],
   units: [
-    { label: "Öncü", tone: "b", path: [v(3.8, 4), v(10.4, 4), v(10.4, 4), v(10.8, 4), v(3.8, 4)], w: 1.1, at: "n" },
-    { label: "Manuel", tone: "b", path: [v(2.3, 4), v(8.2, 4), v(8.2, 4), v(7.9, 4), v(2.3, 4)], w: 1.3, at: "s" },
-    { label: "Ağırlık", tone: "b", path: [v(0.8, 4), v(6, 4), v(6, 4), v(6, 4), v(0.8, 4)], w: 1.3, at: "n" },
-    { label: "Artçı", tone: "b", path: [v(-0.6, 4), v(3.8, 4), v(3.8, 4), v(3.6, 4), v(-0.6, 4)], w: 1, at: "s" },
-    { label: "Kılıç Arslan", tone: "a", path: [v(8.6, 6.5), v(8.6, 6.5), v(8.6, 5.5), v(8.4, 5.3), v(8.6, 6.5)], w: 1.4 },
-    { label: "Yamaç birliği", tone: "a", path: [v(4.2, 6.5), v(4.2, 6.5), v(4.4, 5.5), v(4.6, 5.3), v(4.2, 6.5)], w: 1.1 },
-    { label: "Yamaç birliği", tone: "a", path: [v(7.4, 1.4), v(7.4, 1.4), v(7.2, 2.3), v(7, 2.4), v(7.4, 1.4)], w: 1.1, at: "s" },
-    { label: "Geçit çıkışı", tone: "a", path: [v(13.4, 4), v(13.4, 4), v(13.4, 4), v(12.4, 4), v(13.4, 4)], hiddenUntil: 3, w: 1, at: "s" },
+    { code: "Ö", label: "Bizans öncüsü", tone: "b", path: [v(3.8, 4), v(10.4, 4), v(10.4, 4), v(10.8, 4), v(3.8, 4)] },
+    { code: "M", label: "Manuel Komnenos", tone: "b", path: [v(2.6, 4), v(8.4, 4), v(8.4, 4), v(8.1, 4), v(2.6, 4)] },
+    { code: "Y", label: "Ağırlık ve kuşatma araçları", tone: "b", path: [v(1.4, 4), v(6.4, 4), v(6.4, 4), v(6.4, 4), v(1.4, 4)] },
+    { code: "Ç", label: "Bizans artçısı", tone: "b", path: [v(0.2, 4), v(4.4, 4), v(4.4, 4), v(4.2, 4), v(0.2, 4)] },
+    { code: "K", label: "II. Kılıç Arslan", tone: "a", path: [v(8.6, 6.5), v(8.6, 6.5), v(8.6, 5.4), v(8.4, 5.2), v(8.6, 6.5)] },
+    { code: "T", label: "Tepelerdeki birlikler", tone: "a", path: [v(5.2, 6.5), v(5.2, 6.5), v(5.4, 5.4), v(5.8, 5.2), v(5.2, 6.5)] },
+    { code: "T", label: "Tepelerdeki birlikler", tone: "a", path: [v(7.2, 1.5), v(7.2, 1.5), v(7, 2.6), v(6.8, 2.8), v(7.2, 1.5)] },
+    { code: "G", label: "Geçit çıkışını kapatan birlik", tone: "a", path: [v(13.4, 4), v(13.4, 4), v(13.4, 4), v(12, 4), v(13.4, 4)], hiddenUntil: 3 },
   ],
   terrain: [
-    frame(14, 8),
     ...mountains([4.4, 6, 7.6, 9.2, 10.8], 5.1, 1.6, 1.7),
     ...mountains([5.2, 6.8, 8.4, 10, 11.6], 2.9, 1.6, 1.7, true),
-    txt(v(0.2, 5.6), "geçit girişi →", "e", { tone: "muted", small: true }),
-    ...legend(0.4, -0.6, "Türkiye Selçuklu", "Bizans"),
-    txt(v(13.8, 7.5), "Konya yönü →", "w", { tone: "muted", small: true }),
+    txt(v(2, 5.3), "dar geçit", "c", { tone: "muted", small: true }),
+    ...compass(14, "← batı", "Konya yönü →"),
   ],
+  width: 14,
+  sides: [["Türkiye Selçuklu", "a"], ["Bizans", "b"]],
   volleys: [
     [1.6, 3.2, 4, 1],
     [1.6, 3.2, 5, 2],
@@ -213,27 +199,28 @@ const kosedag: Battle = {
     { name: "Ana ordu dağılır", text: "Ana ordu savaşmadan dağılır, sultan çekilir. Sonuç: Moğol üstünlüğü ve vergi/bağlılık ilişkisi. Siyasi son ayrı tarihtir (1308)." },
   ],
   units: [
-    { label: "Selçuklu öncü", tone: "a", path: [v(4.6, 4), v(6.8, 4), v(8.6, 4), v(8.6, 4), v(8.6, 4)], w: 1.3, labelUntil: 4 },
-    { label: "Keyhüsrev", tone: "a", path: [v(2.2, 4), v(2.4, 4), v(2.4, 4), v(2.2, 4), v(0.9, 2)], w: 1.4, at: "s" },
-    { label: "Baycu Noyan", tone: "b", path: [v(10.6, 4), v(10.6, 4), v(12, 4), v(10.6, 4), v(10.6, 4)], w: 1.4, at: "s" },
-    { label: "Moğol", tone: "b", path: [v(10.6, 6.9), v(10.6, 6.9), v(10.6, 6.9), v(8.6, 5.5), v(8.6, 5.6)], hiddenUntil: 3, w: 1 },
-    { label: "Moğol", tone: "b", path: [v(10.6, 1), v(10.6, 1), v(10.6, 1), v(8.6, 2.5), v(8.6, 2.4)], hiddenUntil: 3, w: 1, at: "s" },
+    { code: "Ö", label: "Selçuklu öncüsü", tone: "a", path: [v(4.6, 4), v(6.8, 4), v(8.6, 4), v(8.6, 4), v(8.6, 4)] },
+    { code: "K", label: "II. Gıyaseddin Keyhüsrev", tone: "a", path: [v(2.2, 4), v(2.4, 4), v(2.4, 4), v(2.2, 4), v(0.9, 2.2)] },
+    { code: "B", label: "Baycu Noyan", tone: "b", path: [v(10.6, 4), v(10.6, 4), v(12, 4), v(10.4, 4), v(10.2, 4)] },
+    { code: "P", label: "Pusudaki Moğol birlikleri", tone: "b", path: [v(10.6, 6.6), v(10.6, 6.6), v(10.6, 6.6), v(8.6, 5.1), v(8.6, 5.1)], hiddenUntil: 3 },
+    { code: "P", label: "Pusudaki Moğol birlikleri", tone: "b", path: [v(10.6, 1.4), v(10.6, 1.4), v(10.6, 1.4), v(8.6, 2.9), v(8.6, 2.9)], hiddenUntil: 3 },
   ],
   terrain: [
-    frame(13, 8),
-    ...mountains([3.8, 5.6, 7.4], 6.8, 1.8, 1),
-    txt(v(1.8, 7.3), "Kösedağ", "c", { tone: "muted", small: true }),
-    ...legend(0.4, -0.6, "Türkiye Selçuklu", "Moğol"),
+    ...mountains([4.2, 6, 7.8], 6.4, 1.8, 1.1),
+    txt(v(6, 7.85), "Kösedağ", "c", { tone: "muted", small: true }),
+    ...compass(13),
   ],
+  width: 13,
+  sides: [["Türkiye Selçuklu", "a"], ["Moğol", "b"]],
   volleys: [
     [2.6, 3.4, 3, 0],
     [2.6, 3.4, 4, 0],
   ],
-  marks: (t, pos) => (t >= 3.6 ? [pt(pos(0), "dağıldı", "w", "warn")] : []),
+  marks: (t, pos) => (t >= 3.6 ? [ring(pos(0))] : []),
 };
 
 const caption = (who: string) =>
-  `Sürgüyü sürükle veya Oynat'a bas: ${who} Kesik ok o aşamadaki hareketi, kısa ok demeti atlı okçu atışını gösterir. Konumlar temsilîdir, ölçekli harita değildir.`;
+  `Sürgüyü sürükle veya Oynat'a bas: ${who} Harfli pullar birliklerdir, adları altta yazar; kesik halka pusudaki birliktir. Kesik ok o aşamadaki hareketi, kısa ok demeti ok atışını, kırmızı halka sonucu gösterir. Konumlar temsilîdir, ölçekli harita değildir.`;
 
 /* ---------------- Üç baskı hattı: zaman şeridi ---------------- */
 const rivals: { year: number; name: string; side: string; rival: string; tone: Tone; result: string; at: "n" | "nw" | "ne"; h: number }[] = [

@@ -1,6 +1,7 @@
 import { useId } from "react";
 import { useExploration } from "./useExploration";
 import "./ionicWorkshop.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 export function balanceCharges(positive: number, negative: number) {
   if (
@@ -180,7 +181,7 @@ export default function IonicWorkshop({
       <label htmlFor={`${uid}-compound`}>
         {naming ? "İncelenecek formül" : "İncelenecek iyon çifti"}
       </label>
-      <select
+      <ChoiceSelect
         id={`${uid}-compound`}
         value={index}
         onChange={(e) =>
@@ -203,7 +204,7 @@ export default function IonicWorkshop({
                 {p.label}
               </option>
             ))}
-      </select>
+      </ChoiceSelect>
       {naming ? (
         <>
           <svg
@@ -349,7 +350,7 @@ export default function IonicWorkshop({
           </p>
           <h3>NaCl örgüsünde hâl ve hareket</h3>
           <label htmlFor={`${uid}-phase`}>NaCl örneğinin hâli</label>
-          <select
+          <ChoiceSelect
             id={`${uid}-phase`}
             value={phase}
             onChange={(e) => set({ phase: e.target.value })}
@@ -357,7 +358,7 @@ export default function IonicWorkshop({
             <option value="solid">Katı kristal</option>
             <option value="molten">Erimiş NaCl</option>
             <option value="solution">Yeterince çözünmüş sulu NaCl</option>
-          </select>
+          </ChoiceSelect>
           <svg
             viewBox="0 0 500 205"
             role="img"

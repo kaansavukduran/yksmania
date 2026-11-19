@@ -14,6 +14,7 @@ import {
 } from "./forge014Math";
 import { useExploration } from "./useExploration";
 import "./forge014Math.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 4 }).format(
     Object.is(n, -0) ? 0 : n,
@@ -41,7 +42,7 @@ function Prediction({
   return (
     <div className="f014m-prediction">
       <label htmlFor={`${uid}-guess`}>Sonuç tahminin</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-guess`}
         value={valid ? state.guess : ""}
         onChange={(e) => set({ guess: e.target.value, checked: false })}
@@ -52,7 +53,7 @@ function Prediction({
             {v}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       {valid && (
         <p className="f014m-selection">
           Seçili: {options.find(([key]) => key === state.guess)![1]}
@@ -142,13 +143,13 @@ function Select({
   return (
     <div className="f014m-field">
       <label htmlFor={id}>{label}</label>
-      <select id={id} value={value} onChange={(e) => onChange(e.target.value)}>
+      <ChoiceSelect id={id} value={value} onChange={(e) => onChange(e.target.value)}>
         {options.map(([k, v]) => (
           <option key={k} value={k}>
             {v}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <p className="f014m-selection">
         Seçili: {options.find(([key]) => key === value)?.[1]}
       </p>

@@ -15,6 +15,7 @@ import {
   type GastricSignal017,
 } from "./forge017Biology";
 import "./forge017Biology.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 const n = (x: number) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 2 }).format(x);
@@ -128,13 +129,13 @@ function Choice({
   return (
     <div className="bio017-field">
       <label htmlFor={uid}>{label}</label>
-      <select id={uid} value={value} onChange={(e) => onChange(e.target.value)}>
+      <ChoiceSelect id={uid} value={value} onChange={(e) => onChange(e.target.value)}>
         {options.map(([k, t]) => (
           <option key={k} value={k}>
             {t}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <output htmlFor={uid}>{options.find(([k]) => k === value)?.[1]}</output>
     </div>
   );
@@ -192,7 +193,7 @@ function Prediction({
   return (
     <div className="bio017-prediction">
       <label htmlFor={uid + "-answer"}>Sonuç tahminin</label>
-      <select
+      <ChoiceSelect
         id={uid + "-answer"}
         value={selected ? s.answer : ""}
         onChange={(e) => set({ answer: e.target.value, checked: false })}
@@ -203,7 +204,7 @@ function Prediction({
             {t}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <output data-selected-prediction htmlFor={uid + "-answer"}>
         {selected
           ? "Seçili tahmin: " + selected[1]

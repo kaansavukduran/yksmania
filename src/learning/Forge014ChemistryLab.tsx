@@ -11,6 +11,7 @@ import {
 } from "./forge014Chemistry";
 import { useExploration } from "./useExploration";
 import "./forge014Chemistry.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number, digits = 3) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: digits }).format(n);
 const bound = (n: number, min: number, max: number) =>
@@ -76,13 +77,13 @@ function Choice({
   return (
     <div className="c014-control">
       <label htmlFor={uid}>{label}</label>
-      <select id={uid} value={value} onChange={(e) => onChange(e.target.value)}>
+      <ChoiceSelect id={uid} value={value} onChange={(e) => onChange(e.target.value)}>
         {choices.map(([v, t]) => (
           <option value={v} key={v}>
             {t}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <div className="c014-current">
         Seçili: {choices.find(([v]) => v === value)?.[1]}
       </div>
@@ -799,7 +800,7 @@ export default function Forge014ChemistryLab({
       <div className="c014-prediction">
         <h4>Önce öngör, sonra kanıtla karşılaştır</h4>
         <label htmlFor={`${uid}-guess`}>Sonuç tahminin</label>
-        <select
+        <ChoiceSelect
           id={`${uid}-guess`}
           value={options.includes(s.guess) ? s.guess : ""}
           onChange={(e) => update({ guess: e.target.value })}
@@ -808,7 +809,7 @@ export default function Forge014ChemistryLab({
           {options.map((x) => (
             <option key={x}>{x}</option>
           ))}
-        </select>
+        </ChoiceSelect>
         <div className="c014-current" data-selected-prediction>
           {options.includes(s.guess)
             ? `Seçili tahmin: ${s.guess}`

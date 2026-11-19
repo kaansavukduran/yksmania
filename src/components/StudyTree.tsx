@@ -2,6 +2,7 @@ import { useState } from "react";
 import { subjects } from "../domain/content";
 import { studyTopics, topicLessons, type StudyMode } from "../domain/studyPlan";
 import { SubjectIcon } from "./SubjectIcon";
+import { ChoiceSelect } from "./ChoiceSelect";
 export function StudyTree({
   exam,
   completed,
@@ -93,7 +94,7 @@ export function StudyTree({
       </svg>
       <label className="field">
         Ders
-        <select
+        <ChoiceSelect
           aria-label={`${exam} ders seçimi`}
           value={selected}
           onChange={(e) => setSelected(e.target.value)}
@@ -103,7 +104,7 @@ export function StudyTree({
               {s.name.tr}
             </option>
           ))}
-        </select>
+        </ChoiceSelect>
       </label>
       <div className="section-heading">
         <h3>{subject.name.tr}</h3>

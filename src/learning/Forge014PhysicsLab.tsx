@@ -18,6 +18,7 @@ import {
   type MaskName,
 } from "./forge014Physics";
 import "./forge014Physics.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (v: number, digits = 2) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: digits }).format(
     Math.abs(v) < 1e-8 ? 0 : v,
@@ -386,14 +387,14 @@ function Mirrors() {
       intro="Paraksiyal küresel ayna modelinde gerçek cisim ön taraftadır. Çukur odak pozitif, tümsek odak negatiftir. Şekil yansımayı tepe düzleminde gösterir; küresel sapmayı hesaplamaz."
     >
       <label htmlFor={`${uid}-kind`}>Ayna türü</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-kind`}
         value={kind}
         onChange={(e) => update({ kind: e.target.value })}
       >
         <option value="concave">Çukur</option>
         <option value="convex">Tümsek</option>
-      </select>
+      </ChoiceSelect>
       <div className="physics014-controls">
         <ModelNumber
           label="Odak uzaklığının büyüklüğü (cm)"
@@ -670,14 +671,14 @@ function Lenses() {
       intro="İki eş yarıçaplı ince mercek modeli. İki tarafta aynı ortam vardır; optik güç bağıl indisten gerçekten yeniden hesaplanır. Yakınsak/ıraksak davranışı biçim adından ayrı oku."
     >
       <label htmlFor={`${uid}-shape`}>Mercek biçimi</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-shape`}
         value={shape}
         onChange={(e) => update({ shape: e.target.value })}
       >
         <option value="convex">İnce kenar</option>
         <option value="concave">Kalın kenar</option>
-      </select>
+      </ChoiceSelect>
       <div className="physics014-controls">
         <ModelNumber
           label="Mercek indisi ×100"
@@ -1079,7 +1080,7 @@ function Prisms() {
   ) => (
     <label>
       {label}
-      <select
+      <ChoiceSelect
         aria-label={label}
         value={value}
         onChange={(e) => onChange(e.target.value as MaskName)}
@@ -1089,7 +1090,7 @@ function Prisms() {
             {names[k]}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <span className="small muted">Seçili: {names[value]}</span>
     </label>
   );
@@ -1100,7 +1101,7 @@ function Prisms() {
       intro="Üç farklı işlem var: seri ideal filtre, opak yüzey yansıması ve verilen indislerle prizma kırılması. RGB kanalları ikili bir öğretim modelidir; sürekli tayfın veya bütün gerçek pigmentlerin tam ölçümü değildir."
     >
       <label htmlFor={`${uid}-mode`}>İncelenen işlem</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-mode`}
         value={mode}
         onChange={(e) => update({ mode: e.target.value })}
@@ -1108,11 +1109,11 @@ function Prisms() {
         <option value="filters">Filtreler</option>
         <option value="surface">Yüzey</option>
         <option value="prism">Prizma</option>
-      </select>
+      </ChoiceSelect>
       {mode === "prism" ? (
         <>
           <label htmlFor={`${uid}-selection`}>Prizmada gösterilen ışık</label>
-          <select
+          <ChoiceSelect
             id={`${uid}-selection`}
             value={selection}
             onChange={(e) => update({ selection: e.target.value })}
@@ -1120,7 +1121,7 @@ function Prisms() {
             <option value="both">Kıyasla</option>
             <option value="red">Kırmızı</option>
             <option value="violet">Mor</option>
-          </select>
+          </ChoiceSelect>
           <PrismSVG selection={selection} />
           <div className="physics014-result" data-model-result>
             <strong>

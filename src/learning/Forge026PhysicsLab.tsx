@@ -23,6 +23,7 @@ import {
   type Dimension026,
 } from "./forge026Physics";
 import "./forge026Physics.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 const bases026 = [
   "fizik-bilimine-giris",
@@ -277,13 +278,13 @@ function Choice({
   return (
     <div className="p026-choice">
       <label htmlFor={uid}>{label}</label>
-      <select id={uid} value={value} onChange={(e) => change(e.target.value)}>
+      <ChoiceSelect id={uid} value={value} onChange={(e) => change(e.target.value)}>
         {options.map(([v, t]) => (
           <option key={v} value={v}>
             {t}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <p className="small muted">
         Seçili: {options.find((x) => x[0] === value)?.[1]}
       </p>

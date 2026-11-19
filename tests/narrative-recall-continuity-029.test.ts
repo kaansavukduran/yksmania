@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { ChoiceSelect } from "../src/components/ChoiceSelect";
 import { PassThrough } from "node:stream";
 import { Children, createElement, isValidElement, type ReactNode } from "react";
 import { renderToPipeableStream, renderToStaticMarkup } from "react-dom/server";
@@ -104,7 +105,7 @@ function native(
   function walk(value: ReactNode) {
     Children.forEach(value, (child) => {
       if (!isValidElement<Record<string, any>>(child)) return;
-      if (child.type === tag && (label === undefined || text(child) === label))
+      if ((child.type === tag || (tag === "select" && child.type === ChoiceSelect)) && (label === undefined || text(child) === label))
         found = child.props;
       if (!found) walk(child.props.children);
     });

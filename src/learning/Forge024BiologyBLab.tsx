@@ -18,6 +18,7 @@ import {
 } from "./forge024BiologyB";
 import { useExploration } from "./useExploration";
 import "./forge024BiologyB.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 type ExplorationValues = Record<string, string | number | boolean>;
 function useBiologyExploration<T extends ExplorationValues>(
   id: string,
@@ -81,13 +82,13 @@ function Menu({
   return (
     <div className="bio024b-field">
       <label htmlFor={id}>{label}</label>
-      <select id={id} value={value} onChange={(e) => change(e.target.value)}>
+      <ChoiceSelect id={id} value={value} onChange={(e) => change(e.target.value)}>
         {Object.entries(options).map(([v, t]) => (
           <option key={v} value={v}>
             {t}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
     </div>
   );
 }

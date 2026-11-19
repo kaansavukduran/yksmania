@@ -2,6 +2,7 @@ import { useId } from "react";
 import elements from "../data/elements.json";
 import { useExploration } from "./useExploration";
 import { useVisualCopy } from "./copy";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 export default function PeriodicExplorer() {
   const v = useVisualCopy();
   const uid = useId();
@@ -25,13 +26,13 @@ export default function PeriodicExplorer() {
       <div className="lab-toolbar">
         <label className="field">
           {v("element")}
-          <select value={z} onChange={(e) => choose(Number(e.target.value))}>
+          <ChoiceSelect value={z} onChange={(e) => choose(Number(e.target.value))}>
             {elements.map((e) => (
               <option key={e.z} value={e.z}>
                 {e.z} · {e.symbol} · {e.tr}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
         <div className="segmented">
           <button

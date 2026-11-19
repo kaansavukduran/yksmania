@@ -8,6 +8,7 @@ import {
   type CopulaPerson,
 } from "./forge014Turkish";
 import "./forge014Turkish.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 export default function Forge014TurkishLab({ lessonId }: { lessonId: string }) {
   const uid = useId();
@@ -53,16 +54,16 @@ export default function Forge014TurkishLab({ lessonId }: { lessonId: string }) {
       </p>
       <div className="grammar014-controls">
         <label htmlFor={`${uid}-base`}>Hedef sözün tabanı</label>
-        <select
+        <ChoiceSelect
           id={`${uid}-base`}
           value={mode}
           onChange={(e) => change({ mode: e.target.value })}
         >
           <option value="nominal">Ad soylu: hazır</option>
           <option value="verbal">Fiil: gel-</option>
-        </select>
+        </ChoiceSelect>
         <label htmlFor={`${uid}-form`}>Çekim katmanı</label>
-        <select
+        <ChoiceSelect
           id={`${uid}-form`}
           value={form}
           onChange={(e) => change({ form: e.target.value })}
@@ -71,9 +72,9 @@ export default function Forge014TurkishLab({ lessonId }: { lessonId: string }) {
           <option value="past">İdi: geçmiş / hikâye</option>
           <option value="reported">İmiş: dolaylı aktarım / rivayet</option>
           <option value="conditional">İse: koşul / şart</option>
-        </select>
+        </ChoiceSelect>
         <label htmlFor={`${uid}-person`}>Kişi</label>
-        <select
+        <ChoiceSelect
           id={`${uid}-person`}
           value={person}
           onChange={(e) => change({ person: e.target.value })}
@@ -81,7 +82,7 @@ export default function Forge014TurkishLab({ lessonId }: { lessonId: string }) {
           <option value="ben">Ben</option>
           <option value="sen">Sen</option>
           <option value="o">O</option>
-        </select>
+        </ChoiceSelect>
         <label className="grammar014-check" htmlFor={`${uid}-negative`}>
           <input
             id={`${uid}-negative`}
@@ -101,7 +102,7 @@ export default function Forge014TurkishLab({ lessonId }: { lessonId: string }) {
       <fieldset>
         <legend>Önce sen çözümle</legend>
         <label htmlFor={`${uid}-prediction`}>Yapı tahminin</label>
-        <select
+        <ChoiceSelect
           id={`${uid}-prediction`}
           value={prediction}
           onChange={(e) => set({ prediction: e.target.value, compared: false })}
@@ -112,7 +113,7 @@ export default function Forge014TurkishLab({ lessonId }: { lessonId: string }) {
               {kind}
             </option>
           ))}
-        </select>
+        </ChoiceSelect>
         <p data-selected-prediction>
           Seçili tahmin: {prediction || "Henüz seçilmedi"}
         </p>

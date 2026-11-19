@@ -19,6 +19,7 @@ import {
   discoveryConditions020,
 } from "./forge020Biology";
 import "./forge020Biology.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number, digits = 2) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: digits }).format(n);
 const clamp = (n: number, a: number, b: number) =>
@@ -90,13 +91,13 @@ function Choice({
   return (
     <div className="bio020-field">
       <label htmlFor={id}>{label}</label>
-      <select id={id} value={value} onChange={(e) => onChange(e.target.value)}>
+      <ChoiceSelect id={id} value={value} onChange={(e) => onChange(e.target.value)}>
         {choices.map(([v, text]) => (
           <option key={v} value={v}>
             {readable(text)}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <output htmlFor={id}>
         Seçili: {readable(choices.find(([v]) => v === value)?.[1] ?? "")}
       </output>

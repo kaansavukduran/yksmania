@@ -3,6 +3,7 @@ import { ModelNumber } from "./ModelNumber";
 import { thermalContact, waterHeating } from "./heatTemperature";
 import { useExploration } from "./useExploration";
 import "./heatTemperatureLab.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 const fmt = (n: number, digits = 1) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: digits }).format(
@@ -106,7 +107,7 @@ export default function HeatTemperatureLab() {
             <fieldset>
               <legend>A örneği</legend>
               <label htmlFor={`${uid}-material`}>A’nın malzemesi</label>
-              <select
+              <ChoiceSelect
                 id={`${uid}-material`}
                 value={materialA}
                 onChange={(e) =>
@@ -115,7 +116,7 @@ export default function HeatTemperatureLab() {
               >
                 <option value="water">Su · c=4200 J/(kg·°C)</option>
                 <option value="aluminium">Alüminyum · c=900 J/(kg·°C)</option>
-              </select>
+              </ChoiceSelect>
               <ModelNumber
                 label="A kütlesi (g)"
                 min={100}

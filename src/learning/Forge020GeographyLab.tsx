@@ -11,6 +11,7 @@ import {
   contourIntervals020,
 } from "./forge020Geography";
 import "./forge020Geography.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number, d = 2) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: d }).format(n);
 const clamp = (n: number, a: number, b: number) =>
@@ -71,13 +72,13 @@ function Choice({
   return (
     <div className="g020-control">
       <label htmlFor={id}>{label}</label>
-      <select id={id} value={value} onChange={(e) => onChange(e.target.value)}>
+      <ChoiceSelect id={id} value={value} onChange={(e) => onChange(e.target.value)}>
         {options.map(([k, t]) => (
           <option key={k} value={k}>
             {readable(t)}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <output className="g020-selected" htmlFor={id}>
         Seçili: {readable(options.find(([k]) => k === value)?.[1] ?? "")}
       </output>

@@ -8,6 +8,7 @@ import {
 } from "./chemicalSpecies";
 import { useExploration } from "./useExploration";
 import "./chemicalSpeciesLab.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 type Dot = { x: number; y: number };
 // The dots are a counting diagram, not orbital positions or a scale geometry.
@@ -198,7 +199,7 @@ export default function ChemicalSpeciesLab() {
       </div>
       <label className="field">
         Tür örneği
-        <select
+        <ChoiceSelect
           value={example.id}
           onChange={(event) =>
             set({
@@ -215,7 +216,7 @@ export default function ChemicalSpeciesLab() {
               {e.title}
             </option>
           ))}
-        </select>
+        </ChoiceSelect>
       </label>
       <p className="species-kind">
         <strong>{example.formula}</strong> · {example.kind} · Toplam yük:{" "}
@@ -242,7 +243,7 @@ export default function ChemicalSpeciesLab() {
             {isCationSymbol
               ? "Lewis sembolündeki nokta sayısı tahminin"
               : "Toplam değerlik elektronu tahminin"}
-            <select
+            <ChoiceSelect
               value={s.prediction}
               onChange={(event) =>
                 set({ prediction: event.target.value, checked: false })
@@ -254,7 +255,7 @@ export default function ChemicalSpeciesLab() {
                   {n}
                 </option>
               ))}
-            </select>
+            </ChoiceSelect>
           </label>
           <button
             className="button secondary"

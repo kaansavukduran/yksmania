@@ -19,6 +19,7 @@ import {
   type Structure023,
 } from "./forge023Chemistry";
 import "./forge023Chemistry.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 type Options = Readonly<Record<string, string>>;
 const common = { prediction: "", reason: "", checked: false };
@@ -132,7 +133,7 @@ function Select({
   return (
     <div className="c023-field">
       <label htmlFor={id}>{label}</label>
-      <select
+      <ChoiceSelect
         id={id}
         value={value}
         disabled={disabled}
@@ -143,7 +144,7 @@ function Select({
             {text}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <p className="small muted">Seçili: {options[value]}</p>
     </div>
   );

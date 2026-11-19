@@ -8,6 +8,7 @@ import {
   type TurkishAxis015,
 } from "./forge015Turkish";
 import "./forge015Turkish.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 export default function Forge015TurkishLab({ lessonId }: { lessonId: string }) {
   const uid = useId();
@@ -50,7 +51,7 @@ export default function Forge015TurkishLab({ lessonId }: { lessonId: string }) {
         çözümleyen bir araç değildir.
       </p>
       <label htmlFor={`${uid}-pair`}>İncelenen cümle çifti</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-pair`}
         value={pair.id}
         onChange={(e) =>
@@ -62,7 +63,7 @@ export default function Forge015TurkishLab({ lessonId }: { lessonId: string }) {
             {c.label}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <p className="turkish015-selected-label">
         Seçili çift: <strong>{pair.label}</strong>
       </p>
@@ -191,7 +192,7 @@ export default function Forge015TurkishLab({ lessonId }: { lessonId: string }) {
       {sentenceKinds && (
         <>
           <label htmlFor={`${uid}-axis`}>İnceleme ölçütü</label>
-          <select
+          <ChoiceSelect
             id={`${uid}-axis`}
             value={axis}
             onChange={(e) => alter({ axis: e.target.value })}
@@ -201,7 +202,7 @@ export default function Forge015TurkishLab({ lessonId }: { lessonId: string }) {
                 {a.label}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
           <p className="turkish015-selected-label">
             Seçili ölçüt:{" "}
             <strong>{turkishAxes015.find((a) => a.id === axis)!.label}</strong>
@@ -220,7 +221,7 @@ export default function Forge015TurkishLab({ lessonId }: { lessonId: string }) {
           </p>
         )}
         <label htmlFor={`${uid}-guess`}>Görev tahminin</label>
-        <select
+        <ChoiceSelect
           id={`${uid}-guess`}
           value={guess}
           onChange={(e) => set({ guess: e.target.value, compared: false })}
@@ -231,7 +232,7 @@ export default function Forge015TurkishLab({ lessonId }: { lessonId: string }) {
               {option}
             </option>
           ))}
-        </select>
+        </ChoiceSelect>
         <p className="turkish015-selected-label">
           Tahminin: <strong>{guess || "Henüz seçilmedi"}</strong>
         </p>

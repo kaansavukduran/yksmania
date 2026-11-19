@@ -9,7 +9,8 @@
   border-radius: 0.9rem;
   overflow-wrap: anywhere;
 }
-:root[data-theme="light"] .g031-lab {
+:root[data-theme="light"] .g031-lab ,
+:root[data-theme="trans"] .g031-lab {
   --g031-first: #a94327;
 }
 @media (prefers-color-scheme: light) {

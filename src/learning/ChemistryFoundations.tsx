@@ -1,5 +1,6 @@
 import { useId } from "react";
 import { useExploration } from "./useExploration";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 export const formulaModels = [
   {
     label: "H₂O",
@@ -115,7 +116,7 @@ export default function ChemistryFoundations({ id }: { id: string }) {
             : mode === "separation"
               ? "Ayırma yöntemi"
               : "Kimya disiplini"}
-      <select
+      <ChoiceSelect
         aria-label={
           mode === "atoms"
             ? "Atom modeli"
@@ -135,7 +136,7 @@ export default function ChemistryFoundations({ id }: { id: string }) {
             {v}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
     </label>
   );
   return (

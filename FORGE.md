@@ -1,3 +1,15 @@
+# Forge046a — seçim çipleri, iki yeni tema, sade savaş şemaları (çalışma dalı, CI bekliyor)
+
+19 Kasım 2026. Kullanıcı düzeltmeleri:
+
+- **Açılır kutular kalktı.** 106 dosyadaki 219 `<select>` ortak `ChoiceSelect` bileşenine çevrildi: seçenekler doğrudan, yan yana (sığmazsa alt satıra kayan) 44 px'lik çipler olarak görünür; seçili çip vurgu rengindedir. Yerel `<select>` görünmez biçimde çiplerin altında kalır: etiket, değer, değişim olayı, klavye ve ekran okuyucu aynı denetimle çalışır, odak halkası çip grubunda görünür. 12'den uzun listeler okunabilirlik için açılır kalır. Kaydedilen değerler ve ayarlar değişmez.
+- **İki yeni tema:** “Axolotl pembesi” (Aion'un pembe gövdesi ve mavi uçlu solungaçları; koyu mor zemin, pembe vurgu, mavi rehber rengi) ve “Trans bayrağı” (#5BCEFA açık mavi, #F5A9B8 pembe, beyaz; açık zemin, üstte bayrak şeridi, yazı taşıyan vurgular okunurluk için aynı tonların koyusu). Açık temaya özel düzeltmeler trans temasına da uygulandı; hash'le sabitlenmiş onaylı CSS dosyalarına dokunulmadı, kopyaları style.css'e eklendi. Bugün kartı iki temaya uyar.
+- **Savaş şemaları yeniden tasarlandı:** dış çerçeve kalktı, birlikler harfli yuvarlak pullar (pusu kesik halka, sonuç kırmızı halka), adlar şeklin altındaki HTML anahtar listesinde; hiçbir yazı birliklerin veya okların üstüne binmez. Şekil motoruna `legend` eklendi.
+
+Doğrulama (yerel): check PASS; 2.477 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
+
+---
+
 # Forge045b — biyoloji görselleri: nükleik asit, eşlenme, zar (main)
 
 19 Kasım 2026. Görsel hafıza isteğiyle yedi bölüm figürü. Nükleik asitler: nükleotidi adım adım kur (pentoz karbonları, 1′'e baz, 5′'e fosfat, 2′'de OH/H, 3′ OH'ye sonraki fosfat), antiparalel yön (5′-ATGC-3′ → 3′-TACG-5′ → 5′-GCAT-3′), çift sarmal (omurga dışta, uzun pürin + kısa pirimidin = sabit genişlik, kırmızı 2/3 hidrojen bağı, sarmal 10 bç = 3,4 nm), hidrojen bağı sayacı (G–C sürgüsü, 2a+3g). DNA eşlenmesi: Oynat ile ilerleyen çatal; kesintisiz öncü zincir ve primerli Okazaki parçaları; üç orijinden büyüyüp birleşen kabarcıklar ve çatal sayısı. Hücre: tek zar = 2 lipit katmanı, çift zar = 4, zarsız ribozom. Mevcut hücre laboratuvarı ve altı baz çiftlik eşlenme modeli korunur; yeni figürler onlarda olmayanı gösterir. Keşif kaydedilmez.

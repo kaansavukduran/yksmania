@@ -248,7 +248,8 @@
     padding-inline: 8px;
   }
 }
-:root[data-theme="light"] .ca022 {
+:root[data-theme="light"] .ca022 ,
+:root[data-theme="trans"] .ca022 {
   --ca-blue: #2c6c8c;
   --ca-green: #32734d;
   --ca-soft: #e7edf0;

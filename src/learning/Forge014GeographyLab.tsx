@@ -18,6 +18,7 @@ import {
   rainfall014Processes,
 } from "./forge014Geography";
 import "./forge014Geography.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 const num = (x: number, a: number, b: number) =>
   Number.isFinite(x) ? Math.min(b, Math.max(a, Math.round(x))) : a;
@@ -123,13 +124,13 @@ function Choice({
   return (
     <div className="g014-control">
       <label htmlFor={uid}>{label}</label>
-      <select id={uid} value={value} onChange={(e) => onChange(e.target.value)}>
+      <ChoiceSelect id={uid} value={value} onChange={(e) => onChange(e.target.value)}>
         {options.map(([k, text]) => (
           <option key={k} value={k}>
             {text}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <output className="g014-selected" htmlFor={uid}>
         Seçili: {options.find(([k]) => k === value)?.[1]}
       </output>

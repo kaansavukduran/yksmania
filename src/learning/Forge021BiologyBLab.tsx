@@ -10,6 +10,7 @@ import {
   anaerobicAcceptors021,
 } from "./forge021BiologyB";
 import "./forge021BiologyB.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 const fmt = (value: number) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 2 }).format(value);
@@ -87,13 +88,13 @@ function Choice({
   return (
     <div className="bio021b-field">
       <label htmlFor={id}>{label}</label>
-      <select id={id} value={value} onChange={(e) => onChange(e.target.value)}>
+      <ChoiceSelect id={id} value={value} onChange={(e) => onChange(e.target.value)}>
         {options.map(([key, text]) => (
           <option key={key} value={key}>
             {text}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <output htmlFor={id}>
         Seçili: {options.find(([key]) => key === value)?.[1] ?? ""}
       </output>

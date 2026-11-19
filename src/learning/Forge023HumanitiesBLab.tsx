@@ -20,6 +20,7 @@ import {
   type SceneB023,
 } from "./forge023HumanitiesB";
 import "./forge023HumanitiesB.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 function safe(value: number, max: number) {
   return Number.isInteger(value) && value >= 0 && value < max ? value : 0;
 }
@@ -214,7 +215,7 @@ export default function Forge023HumanitiesBLab({
     return (
       <div className="humanitiesB023-control">
         <label htmlFor={id}>{label}</label>
-        <select
+        <ChoiceSelect
           id={id}
           value={value}
           onChange={(e) => change({ [key]: Number(e.target.value) })}
@@ -224,7 +225,7 @@ export default function Forge023HumanitiesBLab({
               {item}
             </option>
           ))}
-        </select>
+        </ChoiceSelect>
         <p>Seçili: {items[value]}</p>
       </div>
     );
@@ -309,7 +310,7 @@ export default function Forge023HumanitiesBLab({
               htmlFor={`${uid}-quality`}
             >
               İşin niteliği
-              <select
+              <ChoiceSelect
                 id={`${uid}-quality`}
                 value={quality}
                 disabled={!done}
@@ -317,7 +318,7 @@ export default function Forge023HumanitiesBLab({
               >
                 <option value="0">Bilinçli ve özenli</option>
                 <option value="1">Özensiz</option>
-              </select>
+              </ChoiceSelect>
             </label>
             <label className="humanitiesB023-checkbox">
               <input

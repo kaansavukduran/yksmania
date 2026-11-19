@@ -10,6 +10,7 @@ import {
 } from "./forge015Math";
 import { useExploration } from "./useExploration";
 import "./forge015Math.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 const fmt = (n: number) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 4 }).format(
@@ -67,7 +68,7 @@ function Select({
   return (
     <div className="stat015-field">
       <label htmlFor={uid}>{label}</label>
-      <select
+      <ChoiceSelect
         id={uid}
         value={value}
         disabled={disabled}
@@ -78,7 +79,7 @@ function Select({
             {title}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <p className="stat015-chosen">
         Seçili: {options.find(([key]) => key === value)?.[1]}
       </p>

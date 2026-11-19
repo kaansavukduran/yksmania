@@ -9,6 +9,7 @@ import {
 } from "./nucleicAcids";
 import { useExploration } from "./useExploration";
 import "./nucleic-acids.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 const dnaBases: StandardBase[] = ["A", "G", "C", "T"];
 const rnaBases: StandardBase[] = ["A", "G", "C", "U"];
@@ -394,7 +395,7 @@ export default function NucleicAcidsLab() {
       {panel === "chains" && (
         <div className="nucleic-chains">
           <label htmlFor={`${uid}-sequence`}>Örnek baz dizisi</label>
-          <select
+          <ChoiceSelect
             id={`${uid}-sequence`}
             value={sequence}
             onChange={(e) =>
@@ -419,7 +420,7 @@ export default function NucleicAcidsLab() {
               {kind === "DNA" ? "ATTAAT" : "AUUAAU"} · A/
               {kind === "DNA" ? "T" : "U"} ağırlıklı
             </option>
-          </select>
+          </ChoiceSelect>
           <p>
             Üst dizinin bir yerini seç; sonra o bazı değiştir. DNA’da karşı
             zincir eşleşmeye göre yeniden kurulur. RNA görünümünde aynı örnekte

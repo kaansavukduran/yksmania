@@ -1,4 +1,5 @@
 import { describe, it, expect, vi } from "vitest";
+import { ChoiceSelect } from "../src/components/ChoiceSelect";
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { questionContentIssues } from "../src/domain/questionContent";
@@ -624,7 +625,7 @@ function native023(
   type: string,
   predicate: (p: Record<string, unknown>) => boolean = () => true,
 ) {
-  return fixtures.nodes.find((n) => n.type === type && predicate(n.props))!
+  return fixtures.nodes.find((n) => (n.type === type || (type === "select" && n.type === ChoiceSelect)) && predicate(n.props))!
     .props;
 }
 function input023(

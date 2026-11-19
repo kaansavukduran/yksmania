@@ -13,6 +13,7 @@ import {
   sequence,
   type Arithmetic,
 } from "./mathModels";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const f = (n: number) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 3 }).format(n);
 
@@ -166,7 +167,7 @@ function ParitySigns() {
         ))}
         <label className="field">
           İşlem
-          <select
+          <ChoiceSelect
             aria-label="İşlem"
             value={operation}
             onChange={(e) => set({ operation: e.target.value })}
@@ -174,7 +175,7 @@ function ParitySigns() {
             <option value="sum">Toplama</option>
             <option value="product">Çarpma</option>
             <option value="division">Bölme</option>
-          </select>
+          </ChoiceSelect>
         </label>
       </div>
       <svg
@@ -289,7 +290,7 @@ function Consecutive() {
         </label>
         <label className="field">
           Artış
-          <select
+          <ChoiceSelect
             aria-label="Artış"
             value={step}
             onChange={(e) => set({ step: Number(e.target.value) })}
@@ -297,7 +298,7 @@ function Consecutive() {
             <option value={1}>1 · ardışık tam sayılar</option>
             <option value={2}>2 · ardışık tek veya çift sayılar</option>
             <option value={3}>3 · eşit aralıklı dizi</option>
-          </select>
+          </ChoiceSelect>
         </label>
       </div>
       <p className="sequence-terms">

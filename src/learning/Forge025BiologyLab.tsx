@@ -14,6 +14,7 @@ import {
   normalizeBiology025,
 } from "./forge025Biology";
 import "./forge025Biology.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number, d = 2) =>
   n.toLocaleString("tr-TR", { maximumFractionDigits: d });
 const displayCopy025 = (text: string) =>
@@ -33,13 +34,13 @@ function Menu({
   return (
     <div className="b025-field">
       <label htmlFor={id}>{label}</label>
-      <select id={id} value={value} onChange={(e) => change(e.target.value)}>
+      <ChoiceSelect id={id} value={value} onChange={(e) => change(e.target.value)}>
         {Object.entries(options).map(([k, t]) => (
           <option key={k} value={k}>
             {t}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <span className="b025-choice">
         Seçim: {options[String(value)] ?? "Bir sonuç seç"}
       </span>

@@ -20,6 +20,7 @@ import {
   type HumanitiesScene024,
 } from "./forge024Humanities";
 import "./forge024Humanities.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 function modelText(text: string) {
   if (!text.includes("Sulucakarahöyük")) return text;
   return text.split(/(Sulucakarahöyük)/).map((part, i) =>
@@ -232,7 +233,7 @@ export default function Forge024HumanitiesLab({
     return (
       <label className="humanities024-control" htmlFor={id}>
         {label}
-        <select
+        <ChoiceSelect
           id={id}
           value={value}
           onChange={(e) => change({ [key]: Number(e.target.value) })}
@@ -242,7 +243,7 @@ export default function Forge024HumanitiesLab({
               {s}
             </option>
           ))}
-        </select>
+        </ChoiceSelect>
       </label>
     );
   };

@@ -13,6 +13,7 @@ import {
 import { waterHeating } from "./forge011Chemistry";
 import { useExploration } from "./useExploration";
 import "./forge012Chemistry.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number, digits = 2) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: digits }).format(n);
 const bound = (n: number, min: number, max: number) =>
@@ -48,7 +49,7 @@ function Prediction({
   return (
     <div className="c012-prediction">
       <label htmlFor={`${uid}-guess`}>Sonuç tahminin</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-guess`}
         value={value}
         onChange={(e) => change({ guess: e.target.value, checked: false })}
@@ -61,7 +62,7 @@ function Prediction({
         ].map((t) => (
           <option key={t}>{t}</option>
         ))}
-      </select>
+      </ChoiceSelect>
       <label htmlFor={`${uid}-reason`}>Modelden gerekçen</label>
       <textarea
         id={`${uid}-reason`}
@@ -122,7 +123,7 @@ function Solids() {
       <div className="c012-controls">
         <label htmlFor={`${uid}-solid`}>
           Katı örneği
-          <select
+          <ChoiceSelect
             id={`${uid}-solid`}
             value={solid.id}
             onChange={(e) => set({ solid: e.target.value, checked: false })}
@@ -132,22 +133,22 @@ function Solids() {
                 {x.name}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
         <label htmlFor={`${uid}-sample`}>
           Akış örneği
-          <select
+          <ChoiceSelect
             id={`${uid}-sample`}
             value={s.sample}
             onChange={(e) => set({ sample: e.target.value, checked: false })}
           >
             <option value="x">X sıvısı</option>
             <option value="y">Y sıvısı</option>
-          </select>
+          </ChoiceSelect>
         </label>
         <label htmlFor={`${uid}-temp`}>
           Deney sıcaklığı
-          <select
+          <ChoiceSelect
             id={`${uid}-temp`}
             value={f.temperature}
             onChange={(e) =>
@@ -159,7 +160,7 @@ function Solids() {
                 {t} °C
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
         <label htmlFor={`${uid}-elapsed`}>
           Geçen süre (s)
@@ -290,7 +291,7 @@ function Vapour() {
       <div className="c012-controls">
         <label htmlFor={`${uid}-temp`}>
           Su sıcaklığı
-          <select
+          <ChoiceSelect
             id={`${uid}-temp`}
             value={s.temperature}
             onChange={(e) =>
@@ -302,7 +303,7 @@ function Vapour() {
                 {x.temperature} °C
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
         <label htmlFor={`${uid}-mass`}>
           Toplam su (g)
@@ -453,7 +454,7 @@ function Boiling() {
       <div className="c012-controls">
         <label htmlFor={`${uid}-boil`}>
           Dış basınç
-          <select
+          <ChoiceSelect
             id={`${uid}-boil`}
             value={s.boil}
             onChange={(e) =>
@@ -465,11 +466,11 @@ function Boiling() {
                 {x.pressure} mmHg
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
         <label htmlFor={`${uid}-temp`}>
           Hava sıcaklığı
-          <select
+          <ChoiceSelect
             id={`${uid}-temp`}
             value={s.temperature}
             onChange={(e) =>
@@ -481,7 +482,7 @@ function Boiling() {
                 {x.temperature} °C
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
         <label htmlFor={`${uid}-pressure`}>
           Başlangıç su buharı basıncı (mmHg)
@@ -617,7 +618,7 @@ function Gas() {
       </p>
       <label className="c012-mode" htmlFor={`${uid}-mode`}>
         İncelenen model
-        <select
+        <ChoiceSelect
           id={`${uid}-mode`}
           value={mode}
           onChange={(e) => set({ mode: e.target.value, checked: false })}
@@ -625,7 +626,7 @@ function Gas() {
           <option value="gas">İdeal gaz</option>
           <option value="phase">Hâl değişim grafiği</option>
           <option value="plasma">İyonlaşma ve yük</option>
-        </select>
+        </ChoiceSelect>
       </label>
       {mode === "gas" ? (
         <div className="c012-controls">

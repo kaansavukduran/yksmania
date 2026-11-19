@@ -12,6 +12,7 @@ import {
   pedigreeCandidates,
 } from "./forge012Biology";
 import "./forge012Biology.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const clamp = (x: number, a: number, b: number) =>
   Number.isFinite(x) ? Math.max(a, Math.min(b, Math.round(x))) : a;
 const percent = (x: number) =>
@@ -59,7 +60,7 @@ function Prediction({
   return (
     <div className="bio012-prediction">
       <label htmlFor={uid + "-answer"}>Sonuç tahminin</label>
-      <select
+      <ChoiceSelect
         id={uid + "-answer"}
         value={valid ? s.answer : ""}
         onChange={(e) => set({ answer: e.target.value, checked: false })}
@@ -70,7 +71,7 @@ function Prediction({
             {v}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <output
         className="bio012-current-choice"
         htmlFor={uid + "-answer"}
@@ -149,7 +150,7 @@ function Sexual() {
         </label>
         <label htmlFor={uid + "-stage"}>
           İzlenen olay
-          <select
+          <ChoiceSelect
             id={uid + "-stage"}
             value={stage}
             onChange={(e) => set({ stage: +e.target.value })}
@@ -164,7 +165,7 @@ function Sexual() {
                 {t}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
         {stage === 3 && (
           <label htmlFor={uid + "-rounds"}>
@@ -254,7 +255,7 @@ function Gametes() {
       <div className="bio012-controls">
         <label htmlFor={uid + "-geno"}>
           Diploit genotip
-          <select
+          <ChoiceSelect
             id={uid + "-geno"}
             value={genotype}
             onChange={(e) => set({ genotype: e.target.value, chosen: 0 })}
@@ -262,11 +263,11 @@ function Gametes() {
             {["AaBBcc", "AaBb", "AABbCc", "AABB"].map((g) => (
               <option key={g}>{g}</option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
         <label htmlFor={uid + "-choice"}>
           İzlenen gamet
-          <select
+          <ChoiceSelect
             id={uid + "-choice"}
             value={chosen}
             onChange={(e) => set({ chosen: +e.target.value })}
@@ -276,7 +277,7 @@ function Gametes() {
                 {g}
               </option>
             ))}
-          </select>
+          </ChoiceSelect>
         </label>
       </div>
       <Drawing
@@ -409,7 +410,7 @@ function Mendel() {
         {(["first", "second"] as const).map((k, i) => (
           <label key={k} htmlFor={uid + k}>
             {i + 1}. ebeveyn genotipi
-            <select
+            <ChoiceSelect
               id={uid + k}
               value={k === "first" ? first : second}
               onChange={(e) => set({ [k]: e.target.value })}
@@ -417,7 +418,7 @@ function Mendel() {
               {["AA", "Aa", "aa"].map((g) => (
                 <option key={g}>{g}</option>
               ))}
-            </select>
+            </ChoiceSelect>
           </label>
         ))}
       </div>
@@ -479,7 +480,7 @@ function Deviations() {
       <div className="bio012-controls">
         <label htmlFor={uid + "-kind"}>
           İncelenen kalıtım ilişkisi
-          <select
+          <ChoiceSelect
             id={uid + "-kind"}
             value={kind}
             onChange={(e) => set({ kind: e.target.value })}
@@ -487,7 +488,7 @@ function Deviations() {
             <option value="codominance">Eş baskınlık: iki ürün birlikte</option>
             <option value="incomplete">Eksik baskınlık: ara görünüm</option>
             <option value="linkage">Bağlı genler: gamet payları</option>
-          </select>
+          </ChoiceSelect>
         </label>
         {kind === "linkage" && (
           <>
@@ -506,14 +507,14 @@ function Deviations() {
             </label>
             <label htmlFor={uid + "-phase"}>
               Alel yerleşimi
-              <select
+              <ChoiceSelect
                 id={uid + "-phase"}
                 value={phase}
                 onChange={(e) => set({ phase: e.target.value })}
               >
                 <option value="cis">AB / ab</option>
                 <option value="trans">Ab / aB</option>
-              </select>
+              </ChoiceSelect>
             </label>
           </>
         )}
@@ -656,7 +657,7 @@ function Blood() {
         {(["first", "second"] as const).map((k, i) => (
           <label key={k} htmlFor={uid + k}>
             {i + 1}. AB0 genotipi
-            <select
+            <ChoiceSelect
               id={uid + k}
               value={k === "first" ? first : second}
               onChange={(e) => set({ [k]: e.target.value })}
@@ -666,7 +667,7 @@ function Blood() {
                   {g} · {aboPhenotype(g)}
                 </option>
               ))}
-            </select>
+            </ChoiceSelect>
           </label>
         ))}
       </div>
@@ -735,7 +736,7 @@ function SexChromosomes() {
       <div className="bio012-controls">
         <label htmlFor={uid + "-mother"}>
           XX ebeveynin alelleri
-          <select
+          <ChoiceSelect
             id={uid + "-mother"}
             value={mother}
             onChange={(e) => set({ mother: e.target.value })}
@@ -743,18 +744,18 @@ function SexChromosomes() {
             <option value="AA">XᴬXᴬ</option>
             <option value="Aa">XᴬXᵃ</option>
             <option value="aa">XᵃXᵃ</option>
-          </select>
+          </ChoiceSelect>
         </label>
         <label htmlFor={uid + "-father"}>
           XY ebeveynin alelleri
-          <select
+          <ChoiceSelect
             id={uid + "-father"}
             value={father}
             onChange={(e) => set({ father: e.target.value })}
           >
             <option value="AY">XᴬY</option>
             <option value="aY">XᵃY</option>
-          </select>
+          </ChoiceSelect>
         </label>
       </div>
       <Drawing title="Dört eş olasılıklı XX/XY birleşmesi">

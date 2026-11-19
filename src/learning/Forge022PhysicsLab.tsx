@@ -15,6 +15,7 @@ import {
 } from "./forge022Physics";
 type Point022 = { x: number; y: number };
 import "./forge022Physics.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number, digits = 2) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: digits }).format(
     Math.abs(n) < 0.5 * 10 ** -digits ? 0 : n,
@@ -129,13 +130,13 @@ function Select({
   return (
     <div className="physics022-select">
       <label htmlFor={uid}>{label}</label>
-      <select id={uid} value={value} onChange={(e) => onChange(e.target.value)}>
+      <ChoiceSelect id={uid} value={value} onChange={(e) => onChange(e.target.value)}>
         {options.map(([value, name]) => (
           <option key={value} value={value}>
             {name}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <p className="small muted">
         Seçili: {options.find((o) => o[0] === value)?.[1]}
       </p>

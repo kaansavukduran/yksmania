@@ -6,6 +6,7 @@ import {
   numberTR as f,
   type Curve,
 } from "./aytModels";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 export default function DerivativeExplorer() {
   const uid = useId();
   const [s, set] = useExploration("derivative", {
@@ -45,7 +46,7 @@ export default function DerivativeExplorer() {
       <div className="ayt-controls">
         <label className="field">
           Fonksiyon
-          <select
+          <ChoiceSelect
             aria-label="Fonksiyon"
             value={curve}
             onChange={(e) =>
@@ -54,7 +55,7 @@ export default function DerivativeExplorer() {
           >
             <option value="square">f(x) = x²</option>
             <option value="absolute">f(x) = |x|</option>
-          </select>
+          </ChoiceSelect>
         </label>
         <label className="lab-slider">
           A noktasının x değeri: {f(a)}

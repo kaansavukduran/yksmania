@@ -18,6 +18,7 @@ import {
   type PyramidKind,
 } from "./forge014Biology";
 import "./forge014Biology.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 const bounded = (value: number, min: number, max: number) =>
   Number.isFinite(value)
@@ -97,13 +98,13 @@ function Choice({
   return (
     <div className="bio014-field">
       <label htmlFor={id}>{label}</label>
-      <select id={id} value={value} onChange={(e) => onChange(e.target.value)}>
+      <ChoiceSelect id={id} value={value} onChange={(e) => onChange(e.target.value)}>
         {options.map(([key, text]) => (
           <option key={key} value={key}>
             {text}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <output htmlFor={id} className="bio014-current-choice">
         Seçili: {options.find(([key]) => key === value)?.[1]}
       </output>
@@ -134,7 +135,7 @@ function Prediction({
   return (
     <div className="bio014-prediction">
       <label htmlFor={uid + "-answer"}>Sonuç tahminin</label>
-      <select
+      <ChoiceSelect
         id={uid + "-answer"}
         value={selected ? s.answer : ""}
         onChange={(e) => set({ answer: e.target.value, checked: false })}
@@ -145,7 +146,7 @@ function Prediction({
             {text}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <output
         htmlFor={uid + "-answer"}
         className="bio014-current-choice"

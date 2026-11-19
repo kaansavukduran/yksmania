@@ -23,6 +23,7 @@ import {
 } from "./forge022Math";
 import { useExploration } from "./useExploration";
 import "./forge022Math.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const numberFormat022 = new Intl.NumberFormat("tr-TR", {
   maximumFractionDigits: 4,
 });
@@ -64,7 +65,7 @@ function Prediction({
   return (
     <div className="m022-guess">
       <label htmlFor={id + "-g"}>Sonuç tahminin</label>
-      <select
+      <ChoiceSelect
         id={id + "-g"}
         value={selected}
         onChange={(e) => set({ guess: e.target.value, checked: false })}
@@ -75,7 +76,7 @@ function Prediction({
             {label}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <p>
         Seçili:{" "}
         {options.find((x) => x[0] === selected)?.[1] ?? "Henüz seçim yok."}
@@ -164,13 +165,13 @@ function Select({
   return (
     <div className="m022-field">
       <label htmlFor={id}>{label}</label>
-      <select id={id} value={value} onChange={(e) => onChange(e.target.value)}>
+      <ChoiceSelect id={id} value={value} onChange={(e) => onChange(e.target.value)}>
         {options.map(([key, text]) => (
           <option key={key} value={key}>
             {text}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <p>Seçili: {options.find((x) => x[0] === value)?.[1]}</p>
     </div>
   );

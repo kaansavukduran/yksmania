@@ -20,6 +20,7 @@ import {
   population017,
 } from "./forge017Geography";
 import "./forge017Geography.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const clamp = (n: number, a: number, b: number) =>
   Number.isFinite(n) ? Math.min(b, Math.max(a, n)) : a;
 const fmt = (n: number, d = 2) =>
@@ -80,13 +81,13 @@ function Choice({
   return (
     <div className="g017-control">
       <label htmlFor={id}>{label}</label>
-      <select id={id} value={value} onChange={(e) => onChange(e.target.value)}>
+      <ChoiceSelect id={id} value={value} onChange={(e) => onChange(e.target.value)}>
         {options.map(([v, text]) => (
           <option key={v} value={v}>
             {text}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <output className="g017-selected" htmlFor={id}>
         Seçili: {options.find(([v]) => v === value)?.[1]}
       </output>

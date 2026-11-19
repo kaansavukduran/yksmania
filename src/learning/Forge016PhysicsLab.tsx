@@ -16,6 +16,7 @@ import {
   type StageSegment016,
 } from "./forge016Physics";
 import "./forge016Physics.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number, digits = 2) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: digits }).format(
     Object.is(n, -0) ? 0 : n,
@@ -130,13 +131,13 @@ function Select({
   return (
     <div className="physics016-select">
       <label htmlFor={uid}>{label}</label>
-      <select id={uid} value={value} onChange={(e) => onChange(e.target.value)}>
+      <ChoiceSelect id={uid} value={value} onChange={(e) => onChange(e.target.value)}>
         {options.map(([value, name]) => (
           <option key={value} value={value}>
             {name}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <p className="small muted">
         Seçili: {options.find((o) => o[0] === value)?.[1]}
       </p>

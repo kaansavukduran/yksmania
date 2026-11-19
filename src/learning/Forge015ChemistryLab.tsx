@@ -17,6 +17,7 @@ import {
 } from "./forge015Chemistry";
 import { useExploration } from "./useExploration";
 import "./forge015Chemistry.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (x: number, d = 3) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: d }).format(x);
 const bound = (x: number, a: number, b: number) =>
@@ -69,7 +70,7 @@ function Choice({
   return (
     <div className="c015-control">
       <label htmlFor={id}>{label}</label>
-      <select
+      <ChoiceSelect
         id={id}
         value={selected}
         onChange={(e) => onChange(e.target.value)}
@@ -79,7 +80,7 @@ function Choice({
             {t}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <span>Seçili: {choices.find(([v]) => v === selected)?.[1]}</span>
     </div>
   );
@@ -1301,7 +1302,7 @@ export default function Forge015ChemistryLab({
       >
         <h4>Önce tahmin et, sonra kanıtı karşılaştır</h4>
         <label htmlFor={`${uid}-prediction`}>Sonuç tahminin</label>
-        <select
+        <ChoiceSelect
           id={`${uid}-prediction`}
           value={s.prediction}
           onChange={(e) => set({ prediction: e.target.value, compared: false })}
@@ -1312,7 +1313,7 @@ export default function Forge015ChemistryLab({
               {x}
             </option>
           ))}
-        </select>
+        </ChoiceSelect>
         <p className="c015-current">
           Seçili tahmin:{" "}
           {s.prediction === ""

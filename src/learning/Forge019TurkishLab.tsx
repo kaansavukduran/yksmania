@@ -6,6 +6,7 @@ import {
   turkishExplorationDefaults019,
 } from "./forge019Turkish";
 import "./forge019Turkish.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 export default function Forge019TurkishLab({ lessonId }: { lessonId: string }) {
   const uid = useId(),
@@ -65,7 +66,7 @@ export default function Forge019TurkishLab({ lessonId }: { lessonId: string }) {
             : "Tam metni oku. Bir cümleyi çıkarıp kalan cümlelerin öncül ve amaç bağlarını yeniden denetle."}
       </p>
       <label htmlFor={`${uid}-case`}>İncelenen örnek</label>
-      <select
+      <ChoiceSelect
         id={`${uid}-case`}
         value={item.id}
         onChange={(e) => {
@@ -78,7 +79,7 @@ export default function Forge019TurkishLab({ lessonId }: { lessonId: string }) {
             {c.label}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
       <p>
         Seçili örnek: <strong>{item.label}</strong>
       </p>
@@ -93,7 +94,7 @@ export default function Forge019TurkishLab({ lessonId }: { lessonId: string }) {
               ? "İkinci paragrafın başlangıcı"
               : "Çıkarma deneyi"}
         </label>
-        <select
+        <ChoiceSelect
           id={`${uid}-choice`}
           value={choice}
           onChange={(e) => change({ choice: Number(e.target.value) })}
@@ -103,7 +104,7 @@ export default function Forge019TurkishLab({ lessonId }: { lessonId: string }) {
               {label}
             </option>
           ))}
-        </select>
+        </ChoiceSelect>
         <p className="turkish019-choice">
           Seçili işlem:{" "}
           <strong>{scene.choiceLabels[choice - scene.choiceOffset]}</strong>
@@ -269,7 +270,7 @@ export default function Forge019TurkishLab({ lessonId }: { lessonId: string }) {
       <fieldset>
         <legend>Sonucu önce kendin açıkla</legend>
         <label htmlFor={`${uid}-guess`}>Karar tahminin</label>
-        <select
+        <ChoiceSelect
           id={`${uid}-guess`}
           value={guess}
           onChange={(e) => set({ guess: e.target.value, compared: false })}
@@ -280,7 +281,7 @@ export default function Forge019TurkishLab({ lessonId }: { lessonId: string }) {
               {o}
             </option>
           ))}
-        </select>
+        </ChoiceSelect>
         <p>
           Tahminin: <strong>{guess || "Henüz seçilmedi"}</strong>
         </p>

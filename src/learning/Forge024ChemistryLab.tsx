@@ -20,6 +20,7 @@ import {
   type Term024,
 } from "./forge024Chemistry";
 import "./forge024Chemistry.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const uiText024 = (text: string) => {
   const copies: Record<string, string> = {
     Yükseltgenme: "Alkol + [O]",
@@ -89,13 +90,13 @@ function Select024({
   return (
     <label className="c024-field" htmlFor={id}>
       <span>{label}</span>
-      <select id={id} value={value} onChange={(e) => onChange(e.target.value)}>
+      <ChoiceSelect id={id} value={value} onChange={(e) => onChange(e.target.value)}>
         {Object.entries(options).map(([key, text]) => (
           <option key={key} value={key}>
             {text}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
     </label>
   );
 }

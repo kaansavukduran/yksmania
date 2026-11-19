@@ -9,6 +9,7 @@ import {
   normalizeBiologyB026,
 } from "./forge026BiologyB";
 import "./forge026BiologyB.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 type Values = ReturnType<typeof normalizeBiologyB026>["values"];
 function Range({
@@ -371,7 +372,7 @@ export function Forge026BiologyBLab({ lessonId }: { lessonId: string }) {
       <div className="bb026-compare">
         <p>{task}</p>
         <label htmlFor={predictionId}>Tahminin</label>
-        <select
+        <ChoiceSelect
           id={predictionId}
           value={v.guess}
           onChange={(e) => commit({ guess: e.target.value, checked: false })}
@@ -382,7 +383,7 @@ export function Forge026BiologyBLab({ lessonId }: { lessonId: string }) {
               {n}
             </option>
           ))}
-        </select>
+        </ChoiceSelect>
         <label htmlFor={reasonId}>Gerekçen</label>
         <textarea
           id={reasonId}

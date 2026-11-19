@@ -2,6 +2,7 @@ import { useEffect, useId, useRef, useState } from "react";
 import { useExploration } from "./useExploration";
 import { buildHumanitiesScene022, humanitiesDefaults022, type HumanitiesScene022 } from "./forge022Humanities";
 import "./forge022Humanities.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 
 function Drawing022({ scene, selected, uid }: { scene: HumanitiesScene022; selected: number; uid: string }) {
  const ref = useRef<HTMLDivElement>(null), [width, setWidth] = useState(270);
@@ -48,7 +49,7 @@ export default function Forge022HumanitiesLab({ lessonId }: { lessonId: string }
  const scene = buildHumanitiesScene022(lessonId, values), selected = Number.isInteger(saved.selected) && saved.selected >= 0 && saved.selected < scene.nodes.length ? saved.selected : 0;
  const guess = scene.options.includes(saved.guess) ? saved.guess : "", reason = saved.reason.slice(0, 120), compared = saved.compared && Boolean(guess && reason.trim()), revealed = saved.show || compared;
  const change = (patch: Parameters<typeof set>[0]) => set({ ...patch, guess: "", reason: "", compared: false, show: false, selected: 0 });
- const select = (key: keyof typeof values, label: string, options: [string, string][]) => <div key={key}><label htmlFor={`${uid}-${key}`}>{label}</label><select id={`${uid}-${key}`} value={String(values[key])} onChange={e => change({ [key]: key === "stage" ? Number(e.target.value) : e.target.value })}>{options.map(([value, text]) => <option key={value} value={value}>{text}</option>)}</select><p className="humanities022-selected">Seçili: <strong>{options.find(([value]) => value === String(values[key]))?.[1]}</strong></p></div>;
+ const select = (key: keyof typeof values, label: string, options: [string, string][]) => <div key={key}><label htmlFor={`${uid}-${key}`}>{label}</label><ChoiceSelect id={`${uid}-${key}`} value={String(values[key])} onChange={e => change({ [key]: key === "stage" ? Number(e.target.value) : e.target.value })}>{options.map(([value, text]) => <option key={value} value={value}>{text}</option>)}</ChoiceSelect><p className="humanities022-selected">Seçili: <strong>{options.find(([value]) => value === String(values[key]))?.[1]}</strong></p></div>;
  const check = (key: "authority" | "thinking" | "outside" | "access" | "data" | "objection" | "review" | "reliable", label: string) => <label className="humanities022-check"><input type="checkbox" checked={values[key]} onChange={e => change({ [key]: e.target.checked })} />{label}</label>;
  return <section className="humanities022-lab" data-forge022={lessonId}>
   <h3>{scene.title}</h3><p>Tam metni oku. Bir koşulu değiştir; değişen veri ve okları kendi sözlerinle açıkla.</p>
@@ -67,7 +68,7 @@ export default function Forge022HumanitiesLab({ lessonId }: { lessonId: string }
    <div className="humanities022-node-actions">{scene.nodes.map((n, i) => <button key={i} className="secondary" type="button" aria-pressed={selected === i} data-node-button={i} onClick={() => set({ selected: i })}>{n.label}</button>)}</div>
    <ul aria-label="Şemadaki bağlar">{scene.links.length ? scene.links.map((l, i) => <li key={i}>{scene.nodes[l.from].label} → {scene.nodes[l.to].label}: {l.label}{l.active === false ? " — bu bağ açık değil" : ""}.</li>) : <li>Bu sahnede eşzamanlı nitelikler var; olay ilerleten ok eklenmedi.</li>}</ul>
   </div>
-  <fieldset><legend>Bağlamdan karar ver</legend><label htmlFor={`${uid}-guess`}>Tahminin</label><select id={`${uid}-guess`} value={guess} onChange={e => set({ guess: e.target.value, compared: false })}><option value="">Bir karar seç</option>{scene.options.map(v => <option key={v} value={v}>{v}</option>)}</select><p className="humanities022-selected">Tahminin: <strong>{guess || "Henüz seçilmedi"}</strong></p>
+  <fieldset><legend>Bağlamdan karar ver</legend><label htmlFor={`${uid}-guess`}>Tahminin</label><ChoiceSelect id={`${uid}-guess`} value={guess} onChange={e => set({ guess: e.target.value, compared: false })}><option value="">Bir karar seç</option>{scene.options.map(v => <option key={v} value={v}>{v}</option>)}</ChoiceSelect><p className="humanities022-selected">Tahminin: <strong>{guess || "Henüz seçilmedi"}</strong></p>
    <label htmlFor={`${uid}-reason`}>Gerekçen</label><textarea id={`${uid}-reason`} value={reason} rows={3} maxLength={120} onChange={e => set({ reason: e.target.value.slice(0, 120), compared: false })} />
    <button className="secondary humanities022-compare" type="button" disabled={!guess || !reason.trim()} onClick={() => set({ compared: true })}>Tahminimi karşılaştır</button>
    {compared && <div className="humanities022-feedback" role="status"><p><strong>{guess === scene.decision ? "Seçimin bu bağlamla uyumlu." : "Seçimini kanıtla yeniden denetle."}</strong></p><p>Gerekçene otomatik puan verilmez. Kendi sözünü kanıtla karşılaştır.</p></div>}

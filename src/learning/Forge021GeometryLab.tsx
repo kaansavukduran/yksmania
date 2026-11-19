@@ -19,6 +19,7 @@ import {
   type Inner021,
 } from "./forge021Geometry";
 import "./forge021Geometry.css";
+import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 3 }).format(
     Object.is(n, -0) ? 0 : n,
@@ -42,13 +43,13 @@ function Select({
   return (
     <div className="g021-field">
       <label htmlFor={id}>{label}</label>
-      <select id={id} value={value} onChange={(e) => change(e.target.value)}>
+      <ChoiceSelect id={id} value={value} onChange={(e) => change(e.target.value)}>
         {options.map(([v, t]) => (
           <option value={v} key={v}>
             {t}
           </option>
         ))}
-      </select>
+      </ChoiceSelect>
     </div>
   );
 }
