@@ -835,6 +835,19 @@ export const questionTactics: QuestionTactic[] = [
       "Abiyotik etkenler (ışık, su, sıcaklık, mineraller) birlikte sınırlayıcı olur.",
     ],
   },
+  {
+    id: "cevre-zincir",
+    guides: ["guncel-cevre-sorunlari"],
+    match: /çevre|kirlilik|ozon|sera|asit|ötrofikasyon|oksijen|tür|erozyon|biyoçeşitlilik|habitat/i,
+    title: "Çevre sorununu kaynak, süreç ve göstergeyle eşleştir",
+    steps: [
+      "Kirleticiyi, taşındığı ortamı, doğrudan etkiyi ve ölçülen göstergeyi tek cümlede sırala.",
+      "Ötrofikasyon: N/P girişi → alg artışı → ölüm ve ayrışma → çözünmüş O₂ düşer. Oksijeni tüketen ayrıştırıcılardır.",
+      "Atmosferde üç ayrı süreç: sera etkisi (kızılötesi, uzun dönem sıcaklık), stratosferik ozon (UV, ozon sütunu), asit birikimi (SO₂/NOₓ, yağış pH'ı).",
+      "Biyoçeşitlilikte birey sayısı ile tür zenginliğini ayrı oku; alan ve gözlem süresi eşit olmalı.",
+      "Kalıcı kirleticide derişimleri aynı birimde böl (1,2 ÷ 0,2 = 6 kat); tek bireyde zamanla artış biyobirikimdir.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

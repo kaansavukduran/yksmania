@@ -69,6 +69,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "besin-piramidi",
   "besin-zinciri-agi",
   "ekoloji-giris",
+  "guncel-cevre-sorunlari",
   "sinirlayici-artan-madde",
   "yuzde-verim",
   "ayt-limit-sureklilik",
