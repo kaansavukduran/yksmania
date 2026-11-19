@@ -1136,6 +1136,19 @@ export const questionTactics: QuestionTactic[] = [
       "Kesik piramitte h verilmeyip yan ayrıt verilirse üst köşeyi tabana indir: yatay kayma iki eksende (kenar farkı)/2, sonra h² = e² − kayma² (2013 LYS-1 Geometri 22 mantığı).",
     ],
   },
+  {
+    id: "sozcuk-yapi-gorev",
+    guides: ["sozcukte-yapi"],
+    match: /kök|gövde|yapım|çekim|ek|türemiş|birleşik|basit|iyelik|belirtme/i,
+    title: "Ek sorusunda harfi değil görevi kanıtla",
+    steps: [
+      "Kökü anlamla seç: balık'ı bal + ık diye bölme; anlam bağı kurulmuyorsa daha küçük parça kök değildir.",
+      "Kökün türü ilk parçadan okunur: taşladı fiildir ama kökü taş addır; -mak denemesi yalnız son tabanı sınar.",
+      "Her eke ‘yeni taban kurdu mu?’ diye sor: evet → yapım (ses uyumuyla -lık/-lik/-luk/-lük tek ektir), hayır → çekim.",
+      "Aynı ses için cümleye sor: kimin? → iyelik, neyi? → belirtme, kim yaptı? → kişi eki (2019 TYT Türkçe 9 mantığı).",
+      "Yapı türü: yapım eki yoksa ne kadar uzun olursa olsun basit (evlerimizden); birleşiklik yazımdan değil anlam birliğinden anlaşılır (yardım etmek).",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

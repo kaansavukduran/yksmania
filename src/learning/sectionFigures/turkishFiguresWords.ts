@@ -95,9 +95,33 @@ const fiilCekimi = wordFigure(
   "Geldim ve evim sözcükleri renkli parçalarla; altlarında kip, kişi ve iyelik görevleri.",
 );
 
+const kokTuru = wordFigure(
+  [
+    { name: "Kök", parts: [["taş", "kök", "kök · ad"]], note: "Taş bir varlık adıdır: kök ad." },
+    { name: "Addan fiil", parts: [["taş", "kök", "kök · ad"], ["la", "yapım", "yapım: addan fiil"]], note: "Taşla-: taş atma işi. Yapım eki adı fiile çevirdi; ilk kök yine addır." },
+    { name: "Çekim", parts: [["taş", "kök", "kök · ad"], ["la", "yapım", "yapım"], ["dı", "çekim", "kip: geçmiş zaman"]], note: "Taşladı son hâlde fiildir ama kökü addır. ‘-mak getirilebiliyor, öyleyse kök fiil’ demek bu yüzden yanlış." },
+  ],
+  "İleri ile taş → taşla- → taşladı zincirini kur: son sözcük fiil, kök ad. Kökün türünü son biçimden değil ilk anlamlı parçadan oku.",
+  "Taş, taşla ve taşladı sözcükleri merdiven gibi; altta taş-la-dı parçaları kök, yapım ve çekim renklerinde.",
+);
+
+const dortTuretme = wordFigure(
+  [
+    { name: "Fiil kökü", parts: [["bil", "kök", "kök · fiil"]], note: "Bil-: bilme işi, fiil kökü." },
+    { name: "Fiilden ad", parts: [["bil", "kök", "kök · fiil"], ["gi", "yapım", "fiilden ad"]], note: "Bilgi: bilinen şeyin adı. Fiilden ad yapım eki." },
+    { name: "Addan fiil", parts: [["bil", "kök", "kök"], ["gi", "yapım", "fiilden ad"], ["len", "yapım", "addan fiil"]], note: "Bilgilen-: bilgi edinmek. Addan fiil yapım eki." },
+    { name: "Fiilden fiil", parts: [["bil", "kök", "kök"], ["gi", "yapım", "fiilden ad"], ["len", "yapım", "addan fiil"], ["dir", "yapım", "fiilden fiil"]], note: "Bilgilendir-: bilgi edinmesini sağlamak. Fiilden fiil yapım eki; üç gövde oldu." },
+    { name: "Çekim", parts: [["bil", "kök", "kök"], ["gi", "yapım", "yapım"], ["len", "yapım", "yapım"], ["dir", "yapım", "yapım"], ["di", "çekim", "kip: geçmiş"]], note: "Bilgilendirdi: -di yeni taban kurmaz, yalnız zamanı bildirir. Üç yapım eki, bir çekim eki." },
+  ],
+  "İleri ile tek zincirde dört ilişkiyi gör: fiilden ad (-gi), addan fiil (-len), fiilden fiil (-dir). Her ara biçim anlamlı olmalı; addan ad için gözlük örneğine bak.",
+  "Bil, bilgi, bilgilen, bilgilendir, bilgilendirdi sözcükleri merdiven gibi; altta parçalar ve her yapım ekinin hangi türden hangi türe geçtiği.",
+);
+
 export const turkishFiguresWords: Record<string, Record<string, FigureDef>> = {
   "sozcukte-yapi": {
     "Kök, gövde ve ek: sözcüğün kuruluş hikâyesi": kokGovde,
+    "Kökün türü, son sözcüğün türü değildir": kokTuru,
+    "Yapım eki: yeni bir taban kuruldu mu?": dortTuretme,
     "Ad çekimi: aynı sözcük cümleye bağlanır": adCekimi,
     "Aynı i sesi, farklı görev: iyelik ve belirtme": iSesi,
     "Fiil çekimi ve aynı biçimli eklerin tuzağı": fiilCekimi,

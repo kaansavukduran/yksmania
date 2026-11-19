@@ -269,7 +269,9 @@ describe("028 Turkish20 and Ottoman10 old-card guidance", () => {
           expect(html).toContain(escape(q.explanation));
           for (const text of [...g.optionReasons, g.commonError, g.check])
             expect(html).toContain(escape(text));
-          expect((html.match(/<li>/g) ?? []).length).toBe(5);
+          // Option reasons only; a question-type tactic panel has its own list.
+          const reasons = html.replace(/<div class="help-tactic">[\s\S]*?<\/div>/g, "");
+          expect((reasons.match(/<li>/g) ?? []).length).toBe(5);
           expect(
             nextButton(QuestionHelp({ question: q, level, onLevel })),
           ).toBeUndefined();
