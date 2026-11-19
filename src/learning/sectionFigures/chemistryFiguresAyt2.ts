@@ -426,6 +426,55 @@ const corrosionCell: FigureDef = {
   },
 };
 
+/* ---------- 12. Kesmeyle toplam yüzey ---------- */
+const nanoCut: FigureDef = {
+  caption:
+    "Sürgüyle her kenarı kaç parçaya böldüğünü seç. 100 nm kenarlı küp k parçaya bölünürse kenar 100/k nm olur; üç boyutta k³ küçük küp çıkar. Toplam hacim aynı kalır, toplam yüzey k katına çıkar, tek küpün A/V oranı (6/a) da k katına çıkar. Parça sayısı (k³), yüzey (k) ve hacim (1) farklı ölçeklenir.",
+  alt: "Solda büyük küpün ön yüzü k × k ızgarayla bölünmüş, üst ve yan yüzleri eğik çizgilerle; sağda parça sayısı, toplam yüzey ve hacim çarpanlarını gösteren üç çubuk.",
+  param: { label: "Kenar başına parça k", min: 1, max: 5, step: 1, init: 2, unit: "" },
+  draw: (k) => {
+    const els: El[] = [];
+    const S = 3;
+    const d = 0.9;
+    // Oblique cube: front square, top and side faces.
+    els.push(poly([v(0, 0), v(S, 0), v(S, S), v(0, S)], { tone: "c", fill: "c", thin: true }));
+    els.push(poly([v(0, S), v(d, S + d), v(S + d, S + d), v(S, S)], { tone: "c", thin: true }));
+    els.push(poly([v(S, 0), v(S + d, d), v(S + d, S + d), v(S, S)], { tone: "c", thin: true }));
+    for (let i = 1; i < k; i++) {
+      const t = (S * i) / k;
+      els.push(seg(v(t, 0), v(t, S), { tone: "ink", thin: true }), seg(v(0, t), v(S, t), { tone: "ink", thin: true }));
+      els.push(seg(v(t, S), v(t + d, S + d), { tone: "ink", thin: true }), seg(v(S, t), v(S + d, t + d), { tone: "ink", thin: true }));
+      const z = (d * i) / k;
+      els.push(seg(v(z, S + z), v(S + z, S + z), { tone: "ink", thin: true }), seg(v(S + z, z), v(S + z, S + z), { tone: "ink", thin: true }));
+    }
+    els.push(txt(v(S / 2, 0), `kenar ${fmt(100 / k, 1)} nm`, "s", { tone: "ink", small: true, bold: true }));
+    // Scaling bars (log-free; parts capped visually at 125).
+    const bx = S + 2.2;
+    const rows: [string, number, number, Tone][] = [
+      ["parça sayısı", k ** 3, 125, "a"],
+      ["toplam yüzey", k, 5, "c"],
+      ["toplam hacim", 1, 5, "b"],
+    ];
+    rows.forEach(([label, value, max, tone], i) => {
+      const y = S - 0.2 - i * 1.25;
+      const w = (value / max) * 3.2;
+      els.push(poly([v(bx, y - 0.5), v(bx + 3.2, y - 0.5), v(bx + 3.2, y), v(bx, y)], { tone: "muted", thin: true }));
+      els.push(poly([v(bx, y - 0.5), v(bx + Math.max(0.05, w), y - 0.5), v(bx + Math.max(0.05, w), y), v(bx, y)], { tone, fill: tone, thin: true }));
+      els.push(txt(v(bx, y), label, "ne", { tone: "ink", small: true, bold: true }));
+      els.push(txt(v(bx + 3.2, y - 0.25), `× ${value}`, "e", { tone: "ink", small: true }));
+    });
+    els.push(txt(v(-0.4, S + d + 0.6), " ", "c"), txt(v(bx + 4.6, -0.8), " ", "c"));
+    const a = 100 / k;
+    return {
+      els,
+      readout: [
+        `k = ${k}: ${k ** 3} küp, kenar ${fmt(a, 1)} nm. Toplam yüzey 6·100² = 60 000 nm² → ${k ** 3} · 6 · ${fmt(a, 1)}² = ${fmt(6 * a * a * k ** 3, 0)} nm² (× ${k}).`,
+        `A/V = 6/a = 6/${fmt(a, 1)} = ${fmt(6 / a, 2)} nm⁻¹ (birim: nm² ÷ nm³ = nm⁻¹). Hacim 100³ nm³ sabit. 1 µm = 1000 nm.`,
+      ],
+    };
+  },
+};
+
 export const chemistryFiguresAyt2: Record<string, Record<string, FigureDef>> = {
   "faraday-yasalari": { "Elektron molünden ürün molüne geç": faraday },
   "molekul-geometrisi": { "Dört bölge: düzgün dört yüzlü": tetra },
@@ -438,4 +487,5 @@ export const chemistryFiguresAyt2: Record<string, Record<string, FigureDef>> = {
   "ayt-aldehit-keton": { "Karışım ve çökelek hesabı": tollensMix },
   "ayt-esterler": { "Asit ve alkol parçalarını ayırmak": esterParts },
   "korozyon-katodik-koruma": { "Aynı yüzeyde küçük anot ve katot alanları": corrosionCell },
+  "ayt-nanoteknoloji-gelismeler": { "Kesmeyle toplam yüzey artışı": nanoCut },
 };

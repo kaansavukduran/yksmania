@@ -977,6 +977,19 @@ export const questionTactics: QuestionTactic[] = [
       "Aktiflik sırası hangi metalin elektron vereceğini söyler; korozyon hızı ortam ve oksit tabakasına da bağlıdır.",
     ],
   },
+  {
+    id: "nano-olcek",
+    guides: ["ayt-nanoteknoloji-gelismeler"],
+    match: /nano|nm|µm|yüzey|hacim|A\/V|küp|grafen|grafit|elmas|fulleren|allotrop/i,
+    title: "Birim, oran ve parça sayısını ayrı say",
+    steps: [
+      "1 nm = 10⁻⁹ m, 1 µm = 1000 nm: küçük birime geçerken sayı büyür (0,04 µm = 40 nm).",
+      "Küpte A/V = 6/a (birim nm⁻¹): kenar 3'te birine inerse oran 3 katına çıkar; tek küpün yüzeyi ise küçülür.",
+      "Aynı hacmi kenarı k'da birine bölünce parça sayısı k³, toplam yüzey k katı, toplam hacim sabit.",
+      "Allotrop (elmas, grafit, grafen, fulleren) bağlanma düzeni farkıdır; yalnız tane boyutunu küçültmek allotrop değiştirmez.",
+      "Deney yorumunda sabit tutulanları (madde, kütle, sıcaklık, derişim, kaplama, kümelenme) sorgula; geometrik oran tek başına performans kanıtı değil.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
