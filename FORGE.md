@@ -15,7 +15,9 @@
 
 - **Çevrimdışı kurulum dayanıklılığı:** Pages yayın sonrası doğrulaması iki kez, GitHub Pages'in ilk önbellekleme sırasındaki ani ~310 dosyalık yükte rastgele bir dosyaya 503 döndürmesiyle düştü (yayın kendisi başarılıydı). Service worker'a `sw-fetch-retry.js` eklendi: eşzamanlı indirme 8 ile sınırlı, 429/502/503/504 yanıtları kısa bekleyişlerle 3 kez yeniden denenir. Yerel Pages doğrulaması PASS; service worker kullanan 8 tarayıcı dosyası 80/80 PASS.
 
-Doğrulama (yerel): check PASS; 2.486 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
+- **“Haritada nerede?” (otomatik yer haritaları):** Konu anlatımında bir savaş, antlaşma/kongre, deprem/afet, uygarlık merkezi ya da düşünürün yaşadığı yer geçince sayfanın altında iki harita çıkar: dünya haritasında bölge çerçevesi ve bölgenin gerçek kıyılı yakın planı (Natural Earth 1:50m ayrıntılı, yalnız açılınca yüklenir), numaralı işaretler, alttaki anahtarda ad · olay türü · “konum yaklaşık” notu. Yer sözlüğü (`src/learning/geo/gazetteer.ts`) ~90 yer ve düşünür adı içerir (ör. Thales → Miletos, Kant → Königsberg, İbn Sina → Buhara); yalnız kesin özel adlarla ve Türkçe eklerle eşleşir, belirsiz adlar (Talas ilçesi, Gölcük Gölü, Afşin-Elbistan) birim testiyle dışlanır. Şu an 76+ sayfada harita çıkar (tarih, din kültürü, felsefe, coğrafya). Yeni `place-maps-046` testi 1280/320 px ve axe PASS; okuma/rehber tarayıcı testleri 51/51 PASS.
+
+Doğrulama (yerel): check PASS; 2.496 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
 
 ---
 

@@ -101,3 +101,4 @@ TYT Fizik'te figürü olmayan 7 rehber: fizik bilimine giriş, madde ve özkütl
 | 19 Kasım (9) | Biyoloji: nükleotit kurulumu, antiparalel yön, çift sarmal (pürin/pirimidin, 2/3 H bağı, 3,4 nm tur), H bağı sayacı, oynatılan replikasyon çatalı (Okazaki), orijin–kabarcık, zar/lipit katmanı (7 figür) | 0 | 41 / 371 (+3 biyoloji rehberi) |
 | 19 Kasım (10) | Kimya: Rutherford, Bohr, Na→Cl aktarımı, elektron denizi, akım, kayan katmanlar (6 figür); seçim çipleri; axolotl ve trans temaları; sade savaş şemaları | 0 | 41 / 371 (+3 kimya rehberi) |
 | 19 Kasım (11) | Gerçek dünya haritası (Natural Earth 1:50m) iki coğrafya laboratuvarında; Türkiye 1:10m sınırıyla 4 figür (iklim, yağış gölgesi, Ege horst–graben, KAF/DAF) | 0 | 41 / 371 (+3 coğrafya rehberi) |
+| 19 Kasım (12) | Otomatik “Haritada nerede?”: ~90 yer/düşünür sözlüğü, 76+ sayfada dünya + bölge haritası (savaş, antlaşma, deprem, uygarlık, düşünce merkezleri) | 0 | 41 / 371 |

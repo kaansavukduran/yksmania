@@ -63,3 +63,39 @@
   stroke-opacity: 0.35;
   stroke-width: 1;
 }
+
+/* Place maps */
+.place-map { margin: 1.4rem 0; min-width: 0; }
+.place-map-title { font-weight: 700; margin-bottom: 0.5rem; }
+.place-map-pair { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.8rem; }
+@media (min-width: 900px) {
+  .place-map-pair { grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); align-items: start; }
+}
+.place-map svg { display: block; width: 100%; height: auto; }
+.place-warn { --place: var(--danger); }
+.place-a { --place: var(--accent); }
+.place-c { --place: var(--mint); }
+.place-b { --place: var(--plot-blue, #94bddf); }
+.place-ink { --place: var(--text); }
+.place-map-region { fill: none; stroke: var(--danger); stroke-width: 2.5; }
+.place-dot { fill: var(--place); stroke: var(--bg); stroke-width: 1; }
+.place-pin { fill: var(--place); stroke: var(--bg); stroke-width: 2.5; }
+.place-pin-dot { fill: var(--place); }
+.place-leader { stroke: var(--place); stroke-width: 1.5; }
+.place-pin-text { fill: var(--bg); font-size: 18px; font-weight: 800; text-anchor: middle; pointer-events: none; }
+.place-legend { list-style: none; padding: 0; margin: 0.7rem 0 0.3rem; display: grid; gap: 0.35rem; }
+.place-legend li { display: flex; align-items: baseline; gap: 0.5rem; overflow-wrap: anywhere; }
+.place-legend li small { color: var(--muted); }
+.place-legend-pin {
+  flex: 0 0 auto;
+  display: inline-grid;
+  place-items: center;
+  width: 1.6em;
+  height: 1.6em;
+  border-radius: 50%;
+  background: var(--place);
+  color: var(--bg);
+  font-weight: 800;
+  font-size: 0.85em;
+}
+.place-map-note { margin-top: 0.4rem; }

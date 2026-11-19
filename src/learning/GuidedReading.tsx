@@ -1,11 +1,13 @@
 import { geometryExpansion032Ids } from "../data/supplementalTopics032";
 import { geometryCircle040Ids } from "./geometryCircle040";
-import { lazy, Suspense, useId, useRef, useState, useEffect, type ReactNode } from "react";
+import { lazy, Suspense, useId, useMemo, useRef, useState, useEffect, type ReactNode } from "react";
 import { useExploration } from "./useExploration";
 import "./guidedJourney.css";
 import { ArrowRight, RotateCcw } from "lucide-react";
 import { VisualLab } from "./VisualLab";
 import { sectionFigureGuideIds } from "./sectionFigures/figureGuideIds";
+import { placesIn } from "./geo/gazetteer";
+const PlaceMap = lazy(() => import("./geo/PlaceMap"));
 const SectionFigure = lazy(() =>
   import("./sectionFigures/registry").then((m) => ({ default: m.SectionFigure })),
 );
@@ -355,6 +357,7 @@ export function GuidedReading({
                   <SectionFigure guideId={guide.id} title={section.title} />
                 </Suspense>
               )}
+              <SectionPlaces text={[section.title, ...section.paragraphs].join(" ")} />
               {i === visualSection && !geometryCircle040Ids.includes(guide.id) && <VisualLab id={guide.id} />}
               <PageTurn next={i + 1} title={pageTitle(i + 1)} onTurn={goTo} />
             </section>
@@ -413,5 +416,16 @@ export function GuidedReading({
         </button>
       </nav>
     </>
+  );
+}
+
+/** World + regional map for places named on this page (lazy, offline). */
+function SectionPlaces({ text }: { text: string }) {
+  const found = useMemo(() => placesIn(text), [text]);
+  if (!found.length) return null;
+  return (
+    <Suspense fallback={null}>
+      <PlaceMap places={found} />
+    </Suspense>
   );
 }
