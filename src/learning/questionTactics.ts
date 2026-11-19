@@ -1081,6 +1081,19 @@ export const questionTactics: QuestionTactic[] = [
       "Aynı araç iki görev yapabilir: “gözleyerek öğrendim” kaynak, “gözlemle karşılaştırdım” ölçüt. Önce fiili oku.",
     ],
   },
+  {
+    id: "mezhep-iki-eksen",
+    guides: ["islam-dusuncesinde-mezhepler"],
+    match: /mezhep|fıkıh|fıkhi|itikad|Hanefi|Maliki|Şafii|Hanbeli|Caferi|Matüridi|Eşari|Şia|yorum/i,
+    title: "Konuyu etiketle: inanç mı, uygulama mı?",
+    steps: [
+      "İnanç (Allah'ın sıfatları, iman, ahiret, imamet) → itikadi-siyasi: Eşarilik, Matüridilik, Şia.",
+      "Uygulama (ibadetin yapılışı, miras, alışveriş) → amelî-fıkhi: Hanefilik, Malikilik, Şafiilik, Hanbelilik, Caferilik.",
+      "Kurucu eşleşmesi: Ebu Hanife → Hanefilik, Ahmed bin Hanbel → Hanbelilik (ses benzerliğine güvenme), Malik bin Enes → Malikilik.",
+      "Yorum farkı nedenleri: insanın yapısı, sosyal, kültürel, coğrafi, siyasi, dinî metin (çok anlamlı ifade). Baskın kanıtı seç.",
+      "“Hangisi söylenemez / etkili değildir?” kökünde her seçeneğin neden-sonuç bağını sına; mekanizması olmayanı seç (2023 TYT Sosyal 19).",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

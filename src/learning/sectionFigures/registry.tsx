@@ -56,6 +56,7 @@ import { turkishFiguresWords } from "./turkishFiguresWords";
 import { turkishFiguresSentence } from "./turkishFiguresSentence";
 import { historyFiguresTime } from "./historyFiguresTime";
 import { philosophyFigures } from "./philosophyFigures";
+import { religionFigures } from "./religionFigures";
 
 /*
  * Figure packs are merged per guide. A plain object spread replaced a whole
@@ -119,6 +120,7 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   turkishFiguresSentence,
   historyFiguresTime,
   philosophyFigures,
+  religionFigures,
 ];
 export const sectionFigures: Record<string, Record<string, FigureDef>> = {};
 for (const pack of figurePacks)
