@@ -145,6 +145,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "dna-eslenmesi",
   "hucre-organelleri",
   "atom-modelleri",
+  "hidrojen-bagi",
   "iyonik-bag-ve-guclu-etkilesimler",
   "kovalent-adlandirma-metalik-bag",
   "turkiye-iklimi",

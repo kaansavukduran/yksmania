@@ -881,7 +881,9 @@ describe("030 original chemistry50 individually staged guidance", () => {
             [...g.optionReasons, g.commonError, g.check].forEach((v) =>
               expect(text).toContain(v),
             );
-            expect((html.match(/<li>/g) ?? []).length).toBe(5);
+            // The question-type tactic panel adds its own list; count only answer reasons.
+            const reasons = html.replace(/<div class="help-tactic">[\s\S]*?<\/div>/g, "");
+            expect((reasons.match(/<li>/g) ?? []).length).toBe(5);
           }
         }
         const reviewed = plain(

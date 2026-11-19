@@ -1370,6 +1370,19 @@ export const questionTactics: QuestionTactic[] = [
       "‘Yalnız’ içeren genellemeyi sına: oksijenli solunum mitokondrisiz prokaryotlarda da olur (2026 AYT Fen 38 mantığı).",
     ],
   },
+  {
+    id: "hidrojen-bagi-verici-alici",
+    guides: ["hidrojen-bagi"],
+    match: /hidrojen bağı|H bağı|verici|alıcı|kaynama|eter|metanol|amonyak|NH₃|H₂O|H₂S|HF|viskozite|yoğunluk|buz/i,
+    title: "Hidrojen bağında önce vericiyi, sonra alıcıyı ayrı işaretle",
+    steps: [
+      "Vericiyi bul: H doğrudan F, O veya N’ye kovalent bağlı mı? H₂S, HCl ve C–H bağları TYT modelinde verici değildir.",
+      "Alıcıyı bul: komşu taneciğin F, O veya N’sinde ortaklanmamış çift var mı? Saf eter alıcı taşır ama verici taşımaz.",
+      "Karışımda iki yönü ayrı dene: su–eter tek yönle, su–amonyak iki yönle bağ kurar. Saf madde kararını karışıma taşıma.",
+      "Kaynama verisinde önce aynı basınç ve benzer seri: H₂S < H₂Se < H₂Te eğiliminden sapan H₂O’yu H bağı ağı açıklar (2025 TYT Fen 10 mantığı).",
+      "Tek bağ enerjisi toplu özellik değildir; ‘sadece’ koşulunu ve farklı sıcaklıklardaki viskoziteyi ortak koşula getirerek oku (2024 TYT Fen 10, 2025 TYT Fen 11 mantığı).",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
