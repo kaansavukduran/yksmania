@@ -59,7 +59,9 @@
 
 - **Fizik bilimine giriş (Drive 001 TYT Fizik kopya kâğıdı okundu):** tek cihazda mercek/bobin/gövde → optik, elektromanyetizma, termodinamik; temel/türetilmiş × skaler/vektörel 2 × 2 tablosu (temel–vektörel hücresi boş); 1 m → 100 cm, 1 m² → 10 000 cm² ızgara, 1 m³ → 10⁶ cm³ küp; sağ +/sol − işaretli toplam sürgüsü; dik 8 N + 3 N → √73 ≈ 8,54 N (5 N tuzağı); 2,0–8,4 cm cetvel okuması ve sabit 0,3 cm kayma. Taktik eklendi.
 
-Doğrulama (yerel): check PASS; 2.649 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
+- **Katlı oranlar (Drive 032 TYT Kimya kopya kâğıdı okundu):** FeO ve Fe₂O₃ yığın çubukları (toplam 36/40 g yanıltır, 28 g Fe'de O 8 : 12 = 2 : 3); XY₂/X₂Y₃ birimleri top olarak sayılır, X eşitlenince Y 4 : 3, Y eşitlenince X 3 : 4; ikinci örneği küçülten ölçek sürgüsü (14 g A'da B 8 : 12); C₂H₄/C₃H₆ karbon başına CH₂ grupları. Taktik eklendi.
+
+Doğrulama (yerel): check PASS; 2.654 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
 
 ---
 

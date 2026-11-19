@@ -59,6 +59,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "lipitler",
   "canli-ozellikleri",
   "fizik-bilimine-giris",
+  "katli-oranlar",
   "sinirlayici-artan-madde",
   "yuzde-verim",
   "ayt-limit-sureklilik",

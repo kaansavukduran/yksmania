@@ -707,6 +707,19 @@ export const questionTactics: QuestionTactic[] = [
       "Ölçümde iki ucu oku ve farkı al; birim uyumu bir formülün doğru olduğunu tek başına kanıtlamaz.",
     ],
   },
+  {
+    id: "katli-oran",
+    guides: ["katli-oranlar"],
+    match: /katlı|oran|bileşik|eşit/i,
+    title: "Katlı oran: önce sabit elementi eşitle",
+    steps: [
+      "Aynı iki elementten oluşan iki saf bileşik mi? Değilse (üç element, karışım) yöntem uygulanmaz.",
+      "Sabit tutulacak elementi yaz. Formülde indisleri birim sayısıyla ölçekleyerek eşitle (XY₂ ve X₂Y₃: 2 XY₂ ile X'ler 2).",
+      "Kütle verisinde ikinci örneği ölçekle ya da B/A değerlerini böl: (mB₁/mA₁) ÷ (mB₂/mA₂). Toplam kütleleri karşılaştırma.",
+      "İstenen sırayı (I/II) koru; eşitlenen element değişirse oran tersine döner.",
+      "Basit formüller aynıysa (C₂H₄ ve C₃H₆ → CH₂) oran 1 : 1 çıkar; katlı oran aranmaz.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
