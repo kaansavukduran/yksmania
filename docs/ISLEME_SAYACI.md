@@ -53,9 +53,6 @@ Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen boz
 | 035 AYT Kimya – Elektroliz (kopya kâğıdı) | `elektroliz` figürü (eriyik NaCl → Na + Cl₂, sulu NaCl → H₂ + OH⁻ + Cl₂; anot +, katot −), hücre–ortam–elektrot tanı taktiği; 2025 AYT Fen 23 mantığı (yük → elektron → Mg) taktikte | Kısmi |
 | 036 AYT Kimya – Elektroliz, Faraday yasaları (kopya kâğıdı) | `faraday-yasalari` figürü (süre sürgüsüyle Q = I·t → n(e⁻) → n(Cu) → m, birim sadeleştirme), yük–mol–kütle zinciri ve akım verimi taktiği; 2023 AYT Fen 26 (Fe³⁺ için z = 3, Cl₂ için 2) bağı | Kısmi |
 
-| 035 AYT Kimya – Elektroliz (kopya kâğıdı) | `elektroliz` figürü (eriyik NaCl → Na + Cl₂, sulu NaCl → H₂ + OH⁻ + Cl₂; anot +, katot −), hücre–ortam–elektrot tanı taktiği; 2025 AYT Fen 23 mantığı (yük → elektron → Mg) taktikte | Kısmi |
-| 036 AYT Kimya – Elektroliz, Faraday yasaları (kopya kâğıdı) | `faraday-yasalari` figürü (süre sürgüsüyle Q = I·t → n(e⁻) → n(Cu) → m, birim sadeleştirme), yük–mol–kütle zinciri ve akım verimi taktiği; 2023 AYT Fen 26 (Fe³⁺ için z = 3, Cl₂ için 2) bağı | Kısmi |
-
 PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olarak etiketlenmez.
 
 ### Ders başına kapsam (19 Kasım, uygulama verisinden sayıldı)
