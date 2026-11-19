@@ -11,7 +11,7 @@ Her geliştirme turunda güncellenir. Sayılar yalnız gerçekten yapılmış i�
 | Kayıtlı toplam PDF (kanonik envanter, 17 Kasım taraması) | 8.981 |
 | Kanonik defterde öğretim aktarımı **tam** | 7 |
 | Kanonik defterde **kısmi** | 2 |
-| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 25 |
+| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 27 |
 | Okunduğu doğrulanan farklı PDF toplamı (7 + 2 + 23) | 32 / 8.981 (%0,36) |
 
 Arşivdeki PDF'lerin büyük kısmı aynı konunun farklı biçimleridir (TYT konu özeti, “Dersler Cepte” sunumu, etkinlik, okuma metni, deneme). Bu yüzden PDF yüzdesi konu kapsamını ölçmez; konu kapsamı aşağıdaki rehber tablosundadır.
@@ -52,6 +52,8 @@ Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen boz
 | 044 TYT Kimya – Atom Kütlesi Hesaplama (kopya kâğıdı) | `atom-kutlesi-hesaplari` figürleri (izotop bolluğu denge noktası sürgüsü, MEB klor 35,5 u; eşit kütle–farklı atom sayısı 40/3); taktik | Kısmi |
 | 035 AYT Kimya – Elektroliz (kopya kâğıdı) | `elektroliz` figürü (eriyik NaCl → Na + Cl₂, sulu NaCl → H₂ + OH⁻ + Cl₂; anot +, katot −), hücre–ortam–elektrot tanı taktiği; 2025 AYT Fen 23 mantığı (yük → elektron → Mg) taktikte | Kısmi |
 | 036 AYT Kimya – Elektroliz, Faraday yasaları (kopya kâğıdı) | `faraday-yasalari` figürü (süre sürgüsüyle Q = I·t → n(e⁻) → n(Cu) → m, birim sadeleştirme), yük–mol–kütle zinciri ve akım verimi taktiği; 2023 AYT Fen 26 (Fe³⁺ için z = 3, Cl₂ için 2) bağı | Kısmi |
+| 048 AYT Kimya – Alkollerin eldesi ve kimyasal tepkimeleri (kopya kâğıdı) | `ayt-alkol-eldesi-tepkimeleri` figürü (OH karbonunun C komşuları: birincil → aldehit, ikincil → keton, üçüncül → basit ürün yok), sınıf–ürün–esterleşme taktiği; 2026 AYT Fen 26 (2,3-dimetilpent-2-en, cis/trans yok) bağı | Kısmi |
+| 051 AYT Kimya – Karboksilik asitler (kopya kâğıdı) | `ayt-karboksilik-asitler` figürü (asit molü sürgüsü: NaOH, NaHCO₃ ve Na₂CO₃ ile CO₂ çubukları 1 : 1 : ½), COOH sayımı taktiği; 2024 AYT Fen 27 (etanoik asit, karbonil ≠ doymamışlık) bağı | Kısmi |
 
 PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olarak etiketlenmez.
 
@@ -103,11 +105,11 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | AYT Matematik | 17 | 11 |
 | AYT Geometri | 4 | 4 |
 | AYT Fizik | 46 | 5 |
-| AYT Kimya | 55 | 8 |
+| AYT Kimya | 55 | 10 |
 | AYT Biyoloji | 75 | 3 |
-| **Toplam** | **371** | **70 (%18,9)** |
+| **Toplam** | **371** | **72 (%19,4)** |
 
-Toplam bölüm figürü: 554 (580 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 58 (50 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
+Toplam bölüm figürü: 556 (582 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 60 (52 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
 
 TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 
@@ -162,6 +164,7 @@ TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 | 19 Kasım (44) | Biyoloji: güncel çevre sorunları 3 figür; 1 taktik | 1 | 81 / 371 |
 | 19 Kasım (45) | AYT Fizik: çembersel hareket, BHH izdüşümü, Lenz, Kmax–f, manyetik yarıçap (5 figür, birim sadeleştirmeli okumalar); 1 taktik; kupa sistemi | 0 | 81 / 371 |
 | 19 Kasım (46) | AYT Kimya: Boyle pistonu + P–V hiperbolü, denge bozulmasında etki anı (N₂ ekleme), kuvvetli asit–baz titrasyon eğrisi (mmol hesabı), Daniell pili (elektron/iyon yolu, 1,10 V), Cr/Cu orbital istisnaları (5 figür, birim okumalı) | 0 | 86 / 371 |
+| 19 Kasım (53) | Drive AYT Kimya 048 Alkollerin eldesi ve 051 Karboksilik asitler okundu: 2 figür, 2 taktik | 2 | 94 / 371 |
 | 19 Kasım (52) | Drive AYT Kimya 035 Elektroliz ve 036 Faraday kopya kâğıtları okundu: eriyik/sulu NaCl figürü, 2 taktik | 2 | 92 / 371 |
 | 19 Kasım (51) | AYT Kimya: Faraday bakır kaplama (Q → n(e⁻) → n(Cu) → m), dört bölge CH₄/NH₃/H₂O, cis–trans 2-büten / 1-büten; AYT Biyoloji: ışık–CO₂ doygunluk platosu, 28 günlük hormon eğrileri (LH tepesi), okuma çerçevesi kayması; şekil kaydında aynı rehberi taşıyan iki paketin birbirini silmesi düzeltildi | 0 | 91 / 371 |
 | 19 Kasım (50) | Hata avı sprinti; yardımsız deneme cevapları onarım kanıtı | 0 | 86 / 371 |

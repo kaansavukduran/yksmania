@@ -886,6 +886,32 @@ export const questionTactics: QuestionTactic[] = [
       "Metal kaplamada kaplanacak parça katot olur; kaplama iyonu orada elektron alıp metal olarak birikir.",
     ],
   },
+  {
+    id: "alkol-sinif-urun",
+    guides: ["ayt-alkol-eldesi-tepkimeleri", "ayt-alkoller"],
+    match: /alkol|yükseltgen|aldehit|keton|birincil|ikincil|üçüncül|primer|sekonder|tersiyer|hidratasyon|esterleş/i,
+    title: "OH karbonunun komşularını say, ürünü koşulla seç",
+    steps: [
+      "OH taşıyan karbonu daire içine al; ona bağlı C atomlarını say: 1 birincil, 2 ikincil, 3 üçüncül. OH sayısı sınıfı vermez.",
+      "Kontrollü yükseltgenme: birincil → aldehit (ileri koşulda karboksilik asit), ikincil → keton, üçüncül → basit dönüşüm yok.",
+      "İndirgenme tersidir: aldehit → birincil, keton → ikincil alkol; C iskeleti korunur (CH₃CHO + H₂ → CH₃CH₂OH).",
+      "Eten + H₂O → etanol; propende OH ortadaki karbona gider (propan-2-ol). Alkin hidratasyonunu bu kurala taşıma.",
+      "Esterleşme 1 : 1 : 1 : 1 dengedir; sınırlayıcıyı bul, verimi yalnız ona uygula. Katalizör denge sabitini değiştirmez.",
+    ],
+  },
+  {
+    id: "karboksil-sayim",
+    guides: ["ayt-karboksilik-asitler"],
+    match: /karboksil|COOH|asit|NaOH|karbonat|nötrleş|etanoik|propanoik|ester/i,
+    title: "COOH sayısıyla mol oranını kur",
+    steps: [
+      "Adlandırmada COOH karbonu 1 numaradır ve sayılır: CH₃COOH 2 C, etanoik asit (yaygın adı asetik asit).",
+      "C=O ile OH aynı karbondaysa tek bir karboksil grubudur; içindeki OH'yi ayrı alkol sayma.",
+      "Bir COOH bir OH⁻ tüketir: diasitte NaOH iki katı. Hacim için V = n ÷ c (mol ÷ mol/L = L).",
+      "NaHCO₃ ile asit : CO₂ = 1 : 1; Na₂CO₃ ile 2 : 1 (karbonat iki proton ister).",
+      "Zayıf asit kısmen iyonlaşır; seyreltik olmak ile zayıf olmak farklıdır. Yağ asidinde doymamışlık zincirdeki C=C'dir, karbonil C=O değil.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

@@ -1,4 +1,4 @@
-import { ball, circle, fmt, poly, pol, seg, txt, v, vec, type El, type FigureDef, type V } from "./figureKit";
+import { ball, circle, fmt, poly, pol, seg, txt, v, vec, type El, type FigureDef, type Tone, type V } from "./figureKit";
 
 /*
  * AYT Kimya (2). Copper plating by a constant current with the full unit
@@ -151,9 +151,74 @@ const meltVsAq: FigureDef = {
   },
 };
 
+/* ---------- 5. Alkol sınıfı ve yükseltgenme ---------- */
+const alcoholClass: FigureDef = {
+  caption:
+    "İleri ile OH taşıyan karbonun (sarı) karbon komşularını say. Bir C komşusu birincil, iki ikincil, üç üçüncül alkol demektir. Kontrollü yükseltgenme birincilde aldehit, ikincilde keton verir; üçüncülde o karbonda H kalmadığı için aynı basit dönüşüm olmaz. OH sayısı bu sınıflamayı belirlemez.",
+  alt: "Merkezde OH bağlı karbon, çevresinde bir, iki ya da üç karbon atomu ve kalan yerlerde H. Sağda ok ve oluşan ürün sınıfı.",
+  steps: ["Birincil: propan-1-ol", "İkincil: propan-2-ol", "Üçüncül: 2-metilpropan-2-ol"],
+  draw: (_v, step) => {
+    const c: V = v(0, 0);
+    const slots: V[] = [pol(1.5, 180), pol(1.5, 270), pol(1.5, 0)];
+    const nC = step + 1;
+    const els: El[] = [];
+    els.push(seg(c, v(0, 1.5), { tone: "ink" }), ball(v(0, 1.5), 0.3, "b"), txt(v(0, 1.5), "OH", "c", { tone: "ink", small: true, bold: true }));
+    slots.forEach((p, i) => {
+      const carbon = i < nC;
+      els.push(seg(c, p, { tone: "ink" }));
+      els.push(ball(p, carbon ? 0.48 : 0.24, carbon ? "muted" : "c"), txt(p, carbon ? (i === 0 && step === 0 ? "C₂H₅" : "CH₃") : "H", "c", { tone: "ink", small: true, bold: carbon }));
+    });
+    els.push(ball(c, 0.34, "warn"), txt(c, "C", "c", { tone: "ink", bold: true }));
+    const products = ["aldehit (propanal)", "keton (propanon)", "basit ürün yok"];
+    els.push(vec(v(2.3, 0), v(3.6, 0), { tone: step === 2 ? "muted" : "a", bold: true, dash: step === 2 }), txt(v(2.95, 0), "[O]", "n", { tone: "muted", small: true }));
+    els.push(txt(v(3.8, 0), products[step], "e", { tone: step === 2 ? "muted" : "a", small: true, bold: true }));
+    els.push(txt(v(-2.6, 2.4), " ", "c"), txt(v(7.6, -2.2), " ", "c"));
+    const rows: [string, string][] = [
+      ["OH karbonunun 1 C komşusu var: birincil. Kontrollü yükseltgenme CH₃CH₂CHO (propanal); ileri yükseltgenme propanoik asit.", "Koşul (kontrollü mü, ileri mi) yazılmadan birincil alkolün son ürünü tekleştirilmez."],
+      ["OH karbonunun 2 C komşusu var: ikincil. Ürün CH₃COCH₃ (propanon); keton aynı basit koşulda aside geçmez.", "Propan-1-ol ve propan-2-ol aynı formüllü (C₃H₈O) ama farklı ürün verir: bağlantı önemlidir."],
+      ["OH karbonunun 3 C komşusu var: üçüncül. O karbonda H olmadığından kontrollü yükseltgenmede basit karbonil oluşmaz.", "Metanolün OH karbonunda C komşusu yoktur; onu ayrı oku (yükseltgenince metanal)."],
+    ];
+    return { els, readout: rows[step] };
+  },
+};
+
+/* ---------- 6. Karbonat ve hidrojen karbonat ---------- */
+const carbonate: FigureDef = {
+  caption:
+    "Sürgüyle tek COOH'li asidin molünü değiştir. Her COOH bir OH⁻ (NaOH) tüketir ve fazla NaHCO₃ ile bir CO₂ verir. Karbonat (CO₃²⁻) iki proton ister: 2 RCOOH + CO₃²⁻ → 2 RCOO⁻ + CO₂ + H₂O, yani aynı asitten yarı kadar CO₂ çıkar. İki COOH'li asitte bütün değerler iki katına çıkar.",
+  alt: "Üç yatay çubuk: tüketilen NaOH, NaHCO₃ ile oluşan CO₂ ve Na₂CO₃ ile oluşan CO₂; sürgüyle uzunlukları değişir, karbonat çubuğu diğerlerinin yarısıdır.",
+  param: { label: "Asit (tek COOH)", min: 0.1, max: 1, step: 0.1, init: 0.4, unit: " mol" },
+  draw: (n) => {
+    const rows: [string, number, Tone][] = [
+      ["NaOH tüketimi", n, "b"],
+      ["CO₂ (NaHCO₃ fazla)", n, "c"],
+      ["CO₂ (Na₂CO₃ fazla)", n / 2, "a"],
+    ];
+    const W = 5;
+    const els: El[] = [];
+    rows.forEach(([label, value, tone], i) => {
+      const y = 2.4 - i * 1.1;
+      els.push(poly([v(0, y), v(W, y), v(W, y + 0.55), v(0, y + 0.55)], { tone: "muted", thin: true }));
+      els.push(poly([v(0, y), v(W * value, y), v(W * value, y + 0.55), v(0, y + 0.55)], { tone, fill: tone, thin: true }));
+      els.push(txt(v(0, y + 0.55), label, "ne", { tone: "ink", small: true, bold: true }));
+      els.push(txt(v(W, y + 0.275), `${fmt(value, 2)} mol`, "e", { tone: "ink", small: true }));
+    });
+    els.push(txt(v(-0.4, 3.9), " ", "c"), txt(v(W + 2.2, -0.4), " ", "c"));
+    return {
+      els,
+      readout: [
+        `${fmt(n, 1)} mol RCOOH → ${fmt(n, 1)} mol NaOH; NaHCO₃ ile ${fmt(n, 1)} mol CO₂; Na₂CO₃ ile ${fmt(n / 2, 2)} mol CO₂.`,
+        "Kural: bir COOH = bir H⁺. HCO₃⁻ bir H⁺, CO₃²⁻ iki H⁺ alıp CO₂ verir. İki COOH'li asitte (HOOC–CH₂–COOH) her değer iki katıdır.",
+      ],
+    };
+  },
+};
+
 export const chemistryFiguresAyt2: Record<string, Record<string, FigureDef>> = {
   "faraday-yasalari": { "Elektron molünden ürün molüne geç": faraday },
   "molekul-geometrisi": { "Dört bölge: düzgün dört yüzlü": tetra },
   "ayt-alkenler": { "Cis–trans için önce iki karbonu incele": cisTrans },
   elektroliz: { "Eriyik NaCl ile sulu NaCl aynı değildir": meltVsAq },
+  "ayt-alkol-eldesi-tepkimeleri": { "Sekonder alkolün yükseltgenmesi": alcoholClass },
+  "ayt-karboksilik-asitler": { "Karbonat ve hidrojen karbonat": carbonate },
 };
