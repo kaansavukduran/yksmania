@@ -79,6 +79,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "ayt-parabol",
   "cumlenin-ogeleri",
   "tarih-zaman",
+  "bilgi-felsefesi",
   "ayt-gaz-yasalari",
   "kimyasal-denge",
   "ayt-titrasyon",

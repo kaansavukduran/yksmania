@@ -1068,6 +1068,19 @@ export const questionTactics: QuestionTactic[] = [
       "Takvimde üç soru: ay mı güneş mi, başlangıç ne, amaç ne? Hicrî ay yılı; Rûmî hicret başlangıçlı ama güneş yılı (mali işler); Celâli güneş yılı (1079).",
     ],
   },
+  {
+    id: "bilgi-dort-soru",
+    guides: ["bilgi-felsefesi"],
+    match: /bilgi|kaynak|ölçüt|doğruluk|kuşku|akıl|deney|sınır|uygunluk|tutarlılık|epistemoloji|sezgi/i,
+    title: "Hangi soruyu yanıtlıyor: imkân, kaynak, ölçüt, sınır?",
+    steps: [
+      "İmkân: doğru bilgi mümkün mü? Yöntemsel kuşku araçtır (Descartes); hükmü askıya almak septisizmdir.",
+      "Kaynak: nereden? Akıl (rasyonalizm), deney (empirizm: Locke, Hume), ikisi birlikte (Kant), sezgi (Bergson), olgu (pozitivizm: Comte).",
+      "Ölçüt: neyle doğru? Uygunluk (yargı–olgu), tutarlılık (yargı–yargı), apaçıklık, uzlaşım, yarar (pragmatizm: James, Dewey).",
+      "Sınır: “bazı yönler bilinemez” ≠ “hiçbir şey bilinemez”; bilme sınırı varlığın yokluğu değildir.",
+      "Aynı araç iki görev yapabilir: “gözleyerek öğrendim” kaynak, “gözlemle karşılaştırdım” ölçüt. Önce fiili oku.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
