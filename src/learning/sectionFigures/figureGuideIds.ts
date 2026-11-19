@@ -48,6 +48,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "mayoz",
   "atomun-temel-tanecikleri",
   "durgun-elektrik",
+  "miknatislar-ve-manyetik-alan",
   "dna-eslenmesi",
   "hucre-organelleri",
   "atom-modelleri",

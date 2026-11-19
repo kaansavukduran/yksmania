@@ -466,6 +466,18 @@ export const questionTactics: QuestionTactic[] = [
       "Coulomb oranı: F′/F = (q₁′q₂′)/(q₁q₂) · (r/r′)². Uzaklık 2 kat → 1/4. Negatif deneme yükünde kuvvet alana zıttır.",
     ],
   },
+  {
+    id: "miknatis-kutup",
+    guides: ["miknatislar-ve-manyetik-alan"],
+    match: /kutup|mıknatıs|pusula|alan çizgi|ip|tel/i,
+    title: "Kutup ve alan yönü soruları",
+    steps: [
+      "Her çubukta iki uç zıttır. Önce birbirine bakan uçlar için kanıtı bul: itme (gergin ip, sıkışmış yay dahil) → aynı; iki mıknatıs arasında çekim → zıt.",
+      "Yalnız çekim verilmişse dur: karşı cisim mıknatıslanmamış demir olabilir, kutup atanmaz.",
+      "Alan çizgisi: dışarıda N → S, içeride S → N, çizgiler kesişmez. Pusulanın N ucu o noktadaki teğete (B yönüne) döner.",
+      "Düz tel: sağ el (başparmak akım), B ∝ I / r. Uzaklık 2 kat → B yarıya iner.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
