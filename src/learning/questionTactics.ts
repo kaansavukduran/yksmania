@@ -1201,6 +1201,19 @@ export const questionTactics: QuestionTactic[] = [
       "Türü adlandırmak geçerliliği kanıtlamaz; bir gerekçenin çökmesi karşı görüşü de kanıtlamaz.",
     ],
   },
+  {
+    id: "radyoaktivite-denge-yari-omur",
+    guides: ["radyoaktivite"],
+    match: /bozunma|alfa|beta|gama|α|β|γ|yarı ömür|çekirdek|fisyon|füzyon|izotop|etkinlik|nötron/i,
+    title: "A ve Z'yi ayrı dengele, yarı ömürde kalanı güncelle",
+    steps: [
+      "Her bozunmayı A ve Z satırına ayrı yaz: α (A − 4, Z − 2), β⁻ (A, Z + 1), β⁺ ve elektron yakalama (A, Z − 1), γ (A, Z aynı; enerji azalır).",
+      "Zincirde önce A farkı / 4 ile α sayısını, sonra Z farkından β sayısını bul; yük denetimiyle doğrula.",
+      "Fisyonda giren ve çıkan bütün nötronları A'ya kat (her biri A = 1, Z = 0); yalnız iki ürünü toplama (2024 AYT Fen 12 mantığı).",
+      "Yarı ömürde k = t/T, N = N₀(1/2)^k; her adımda o anki kalanın yarısı gider. Bozunan = N₀ − N; %75 bozunma %25 kalma demektir.",
+      "Sayaç verisinde önce aynı süreye çevir, arka planı çıkar, sonra oranla. A korunması fiziksel kütlenin korunması değildir (Q = Δm·c²).",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

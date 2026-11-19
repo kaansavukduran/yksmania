@@ -23,6 +23,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "harita-bilgisi",
   "yahudilik-ve-hristiyanlik",
   "din-felsefesi",
+  "radyoaktivite",
   "dogrunun-analitigi",
   "duzlem-ayna",
   "kuresel-aynalar",

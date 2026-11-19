@@ -11,8 +11,8 @@ Her geliştirme turunda güncellenir. Sayılar yalnız gerçekten yapılmış i�
 | Kayıtlı toplam PDF (kanonik envanter, 17 Kasım taraması) | 8.981 |
 | Kanonik defterde öğretim aktarımı **tam** | 7 |
 | Kanonik defterde **kısmi** | 2 |
-| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 59 |
-| Okunduğu doğrulanan PDF toplamı (bu dal) | 59 / 8.981 (%0,66) |
+| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 60 |
+| Okunduğu doğrulanan PDF toplamı (bu dal) | 60 / 8.981 (%0,67) |
 
 Arşivdeki PDF'lerin büyük kısmı aynı konunun farklı biçimleridir (TYT konu özeti, “Dersler Cepte” sunumu, etkinlik, okuma metni, deneme). Bu yüzden PDF yüzdesi konu kapsamını ölçmez; konu kapsamı aşağıdaki rehber tablosundadır.
 
@@ -35,11 +35,11 @@ Klasördeki numaralı kopya kâğıtları ders ders sayıldı (517 kopya kâğı
 | **TYT toplam** | **320** | **33** | **%10,3** |
 | AYT Matematik | 17 | 1 | %5,9 |
 | AYT Geometri | 4 | 1 | %25,0 |
-| AYT Fizik | 46 | 1 | %2,2 |
+| AYT Fizik | 46 | 2 | %4,3 |
 | AYT Kimya | 55 | 11 | %20,0 |
 | AYT Biyoloji | 75 | 2 | %2,7 |
-| **AYT toplam** | **197** | **16** | **%8,1** |
-| **Genel toplam** | **517** | **49** | **%9,5** |
+| **AYT toplam** | **197** | **17** | **%8,6** |
+| **Genel toplam** | **517** | **50** | **%9,7** |
 
 Notlar: TYT Türkçe'de 028 numarası iki farklı konuda kullanılmış (33 dosya, 32 numara). TYT Kimya'da 031 aynı adla iki kez var (eski ve yeni sürüm; 55 farklı konu). TYT Matematik ve Geometri'de 000 numaralı genel özetler var. AYT klasöründeki 7 durum raporu “232 konu” diyor ama klasörlerde 197 AYT kopya kâğıdı bulunuyor; 35 konunun kopya kâğıdı Drive'da yok. Bu tablodaki sıfırlar, o derste kopya kâğıdından figür/taktik aktarılmadığını söyler; uygulamada o dersin anlatımı ve soruları yine vardır (ayrıntı aşağıdaki kapsam tablosunda).
 
@@ -104,6 +104,7 @@ Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen boz
 | 040 TYT Coğrafya – Harita bilgisi (kopya kâğıdı) | `harita-bilgisi` ilk üç figürü: k sürgülü fotokopi (çizgi ölçek geçerli kalır, basılı 1 : 100.000 geçersizleşir, yeni ölçek 1 : 100.000/k), 1 cm² = 2 km × 2 km = 4 km² alan karesi ve 6 cm² göl, 100–180–120–160–100 m profilde aralık sürgülü eğim yüzdesi; birim–sabit–oran taktiği; 2013 YGS Sosyal Bilimler 16 bağı | Kısmi |
 | 015 TYT Din Kültürü – Yahudilik ve Hristiyanlık (kopya kâğıdı) | `yahudilik-ve-hristiyanlik` ilk üç figürü: Tanah bütün–parça kutusu (Tora, Neviim, Ketuvim), Kitab-ı Mukaddes kapsamı (Eski / Yeni Ahit, dört İncil ve diğer yazılar), sayarak ayırma (menora 7 kol, Davud Yıldızı 6 köşe, haç); tür–kapsam–kanıt taktiği; 2023 AYT Sosyal Bilimler-2 soru 38 bağı | Kısmi |
 | 007 TYT Felsefe – Din felsefesi (kopya kâğıdı) | `din-felsefesi` ilk iki figürü: hareket noktası panosu (ontolojik kavram / kozmolojik evren ve neden / teleolojik düzen; üç örnek cümle sırayla yerleşir), panteizm–panenteizm kavramsal şeması (özdeşlik ve içkin + aşkın); hareket noktası ve eksik koşul taktiği; 2024 TYT Sosyal 14 (Anselmus) bağı | Kısmi |
+| 041 AYT Fizik – Radyoaktivite (kopya kâğıdı) | `radyoaktivite` ilk iki figürü: k = t/T sürgülü yarı ömür eğrisi (160 → 80 → 40, kalan / bozunan çubukları) ve A–Z düzleminde (238, 92) → 2α + 3β⁻ → (230, 91) zinciri; A–Z dengesi ve yarı ömür taktiği; 2024 AYT Fen 12 (fisyonda nötron sayımı) bağı | Kısmi |
 
 PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olarak etiketlenmez.
 
@@ -125,12 +126,12 @@ Bu tablo her turda uygulamanın kendi verisinden yeniden üretilir. “Resmî ko
 | TYT Din | 19 | 20 | 20 | 371 | 3 (%15,0) | 5 | 2 | 2 / 20 (%10,0) |
 | AYT Matematik | 36 | 18 | 17 | 253 | 13 (%72,2) | 17 | 4 | 1 / 17 (%5,9) |
 | AYT Geometri | 9 | 4 | 4 | 40 | 4 (%100,0) | 51 | 4 | 1 / 4 (%25,0) |
-| AYT Fizik | 32 | 47 | 46 | 541 | 6 (%12,8) | 6 | 10 | 1 / 46 (%2,2) |
+| AYT Fizik | 32 | 47 | 46 | 541 | 7 (%14,9) | 8 | 11 | 2 / 46 (%4,3) |
 | AYT Kimya | 34 | 56 | 55 | 680 | 18 (%32,1) | 19 | 14 | 11 / 55 (%20,0) |
 | AYT Biyoloji | 29 | 76 | 75 | 907 | 7 (%9,2) | 11 | 2 | 2 / 75 (%2,7) |
-| **Toplam** | **341** | **540** | **505** | **6.465** | **143 (%26,5)** | **585** | **128** | **49 / 517 (%9,5)** |
+| **Toplam** | **341** | **540** | **505** | **6.465** | **144 (%26,7)** | **587** | **129** | **50 / 517 (%9,7)** |
 
-Okuma: anlatım ve soru bütün derslerde var (505 / 540 derste anlatım, 6.465 özgün soru); eksik olan en çok görsel/etkileşimli katman (figürlü ders %26) ve kopya kâğıtlarından aktarım (%9,5). AYT Matematik ve AYT Geometri'de resmî konu sayısı uygulama dersinden fazladır, çünkü bu derslerde birkaç resmî konu tek derste toplanmıştır.
+Okuma: anlatım ve soru bütün derslerde var (505 / 540 derste anlatım, 6.465 özgün soru); eksik olan en çok görsel/etkileşimli katman (figürlü ders %26) ve kopya kâğıtlarından aktarım (%9,7). AYT Matematik ve AYT Geometri'de resmî konu sayısı uygulama dersinden fazladır, çünkü bu derslerde birkaç resmî konu tek derste toplanmıştır.
 
 Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan konular):
 
@@ -161,7 +162,7 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | AYT Biyoloji | 75 | 4 |
 | **Toplam** | **371** | **82 (%22,1)** |
 
-Toplam bölüm figürü: 585 (611 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 82 (74 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
+Toplam bölüm figürü: 587 (613 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 83 (75 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
 
 TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 
@@ -216,6 +217,7 @@ TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 | 19 Kasım (44) | Biyoloji: güncel çevre sorunları 3 figür; 1 taktik | 1 | 81 / 371 |
 | 19 Kasım (45) | AYT Fizik: çembersel hareket, BHH izdüşümü, Lenz, Kmax–f, manyetik yarıçap (5 figür, birim sadeleştirmeli okumalar); 1 taktik; kupa sistemi | 0 | 81 / 371 |
 | 19 Kasım (46) | AYT Kimya: Boyle pistonu + P–V hiperbolü, denge bozulmasında etki anı (N₂ ekleme), kuvvetli asit–baz titrasyon eğrisi (mmol hesabı), Daniell pili (elektron/iyon yolu, 1,10 V), Cr/Cu orbital istisnaları (5 figür, birim okumalı) | 0 | 86 / 371 |
+| 19 Kasım (77) | Drive AYT Fizik 041 Radyoaktivite okundu: yarı ömür eğrisi ve A–Z bozunma zinciri, 1 taktik | 0 | 105 / 371 |
 | 19 Kasım (76) | Drive TYT Felsefe 007 Din felsefesi okundu: argüman panosu ve Tanrı–evren ilişki şeması, 1 taktik | 0 | 105 / 371 |
 | 19 Kasım (75) | Drive TYT Din 015 Yahudilik ve Hristiyanlık okundu: kutsal metin kapsamı ve simge figürleri (3), 1 taktik | 0 | 105 / 371 |
 | 19 Kasım (74) | Drive TYT Coğrafya 040 Harita bilgisi okundu: ölçek, alan ve profil figürleri (3), 1 taktik | 0 | 105 / 371 |
