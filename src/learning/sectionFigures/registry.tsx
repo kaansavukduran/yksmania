@@ -56,6 +56,7 @@ import { turkishFiguresWords } from "./turkishFiguresWords";
 import { turkishFiguresSentence } from "./turkishFiguresSentence";
 import { historyFiguresTime } from "./historyFiguresTime";
 import { historyFiguresRepublic } from "./historyFiguresRepublic";
+import { geographyFiguresMap } from "./geographyFiguresMap";
 import { philosophyFigures } from "./philosophyFigures";
 import { religionFigures } from "./religionFigures";
 import { geographyFiguresPopulation } from "./geographyFiguresPopulation";
@@ -122,6 +123,7 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   turkishFiguresSentence,
   historyFiguresTime,
   historyFiguresRepublic,
+  geographyFiguresMap,
   philosophyFigures,
   religionFigures,
   geographyFiguresPopulation,

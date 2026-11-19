@@ -1162,6 +1162,19 @@ export const questionTactics: QuestionTactic[] = [
       "Fazla genelleme kurma: devlet fabrikası ‘özel girişim yasak’ demek değildir; laiklik inanç özgürlüğünü kaldırmaz.",
     ],
   },
+  {
+    id: "harita-olcek-egim",
+    guides: ["harita-bilgisi"],
+    match: /ölçek|harita|izohips|eğim|profil|kot|lejant|projeksiyon|CBS/i,
+    title: "Haritada birimi, sabit kalanı ve oranı ayır",
+    steps: [
+      "1 : N birimsizdir: harita uzunluğu × N aynı birimde gerçek uzunluktur; 100.000 cm = 1 km.",
+      "Alan sorulursa paydanın karesini kullan: 1 cm bir kenarda N, 1 cm² ise N × N temsil eder (1 : 200.000'de 1 cm² = 4 km²).",
+      "Harita k kat küçülür ya da büyürse arazi değişmez: çizgi ölçek de aynı oranda değiştiyse geçerlidir, basılı kesir 1 : N/k olur (2013 YGS Sosyal Bilimler 16 mantığı).",
+      "Küçük payda büyük ölçektir: aynı kâğıtta daha dar alan, daha çok ayrıntı.",
+      "Eğim % = 100 × kot farkı / yatay uzaklık; yüksek yer dik yamaç değildir, sık izohips ancak aynı ölçek ve aynı aralıkta dikliği gösterir.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
