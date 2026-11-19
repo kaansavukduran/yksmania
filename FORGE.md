@@ -57,7 +57,9 @@
 - **Canlı özellikleri (Drive 001 TYT Biyoloji kopya kâğıdı okundu):** prokaryot (DNA sitoplazmada, ribozom var) ve ökaryot (çift zarlı çekirdek) planı; karbon kaynağı × enerji kaynağı tablosu (fotoototrof, kemoototrof, fotoheterotrof, heterotrof); homeostazi aralık grafiği ve terleme yanıtı; tek hücrelide hücre = organizma. Taktik eklendi.
 - **Figür kalitesi:** Kit, nokta/yazı/açı etiketlerinin piksel kutusunu dikeyde de hesaplıyor; çerçeve dışına taşan etiket 0. Eksen sayıları "soft": içerik etiketiyle çakışırsa gizleniyor. Kalan çakışmalar (dönme, Pisagor, Öklid, kenarortay, ikizkenar, EM spektrumu, mitoz G₀, Selçuklu zaman şeridi, DNA uçları, ayna/mercek görüntü etiketi vb.) tek tek giderildi; denetim tüm işaretli rehberlerde 0 bulgu verdi (P(2) = 5 ile y harfi arası 3 px kenar teması hariç). Piksel yerine birim yazılmış açı yarıçapları düzeltildi. Çevre açı figüründe C sürgüsü küçük yaya geçebiliyordu (orada açı 130°); aralık büyük yayla sınırlandı.
 
-Doğrulama (yerel): check PASS; 2.642 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
+- **Fizik bilimine giriş (Drive 001 TYT Fizik kopya kâğıdı okundu):** tek cihazda mercek/bobin/gövde → optik, elektromanyetizma, termodinamik; temel/türetilmiş × skaler/vektörel 2 × 2 tablosu (temel–vektörel hücresi boş); 1 m → 100 cm, 1 m² → 10 000 cm² ızgara, 1 m³ → 10⁶ cm³ küp; sağ +/sol − işaretli toplam sürgüsü; dik 8 N + 3 N → √73 ≈ 8,54 N (5 N tuzağı); 2,0–8,4 cm cetvel okuması ve sabit 0,3 cm kayma. Taktik eklendi.
+
+Doğrulama (yerel): check PASS; 2.649 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
 
 ---
 

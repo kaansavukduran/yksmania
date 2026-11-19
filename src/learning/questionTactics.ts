@@ -694,6 +694,19 @@ export const questionTactics: QuestionTactic[] = [
       "Kontrol: tek hücreli olmak prokaryot olmak değildir (maya, amip); virüs hücresel değildir.",
     ],
   },
+  {
+    id: "fizik-giris",
+    guides: ["fizik-bilimine-giris"],
+    match: /birim|temel|türetilmiş|skaler|vektör|alt dal|ölçüm|cetvel|dönüş|bileşke|fizik/i,
+    title: "Nicelik, birim ve alt dal",
+    steps: [
+      "Alt dal sorusunda cihaz adını sil, sorulan mekanizmayı yaz (kırılma → optik, akımın manyetik etkisi → elektromanyetizma, ısı aktarımı → termodinamik).",
+      "Niceliği iki ayrı sütunda sınıfla: yedi SI temel büyüklüğünden biri mi; yön gerektiriyor mu? Kuvvet türetilmiş ve vektörel, enerji türetilmiş ve skaler.",
+      "Birim dönüşümünde 1'e eşit oranlarla çarp; alan için çarpanın karesi, hacim için küpü (1 cm² = 10⁻⁴ m²). km/h → m/s: 3,6'ya böl.",
+      "Aynı doğrultudaki vektörleri işaretle topla; dik doğrultuda çıkarma geçersizdir (bileşke √(a² + b²)).",
+      "Ölçümde iki ucu oku ve farkı al; birim uyumu bir formülün doğru olduğunu tek başına kanıtlamaz.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
