@@ -1149,6 +1149,19 @@ export const questionTactics: QuestionTactic[] = [
       "Yapı türü: yapım eki yoksa ne kadar uzun olursa olsun basit (evlerimizden); birleşiklik yazımdan değil anlam birliğinden anlaşılır (yardım etmek).",
     ],
   },
+  {
+    id: "inkilap-ilke-kronoloji",
+    guides: ["ataturkculuk-inkilap"],
+    match: /ilke|inkılap|cumhuriyet|laik|halkçı|devletçi|milliyetçi|kanun|reform|yıl/i,
+    title: "İnkılapta önce işlevi, sonra yılı sor",
+    steps: [
+      "Olayın işlevini tek sözcükle yaz: yönetim yetkisi (cumhuriyetçilik), kanun önünde eşitlik (halkçılık), din–devlet ayrımı (laiklik), kamu yatırımı (devletçilik), ortak dil–tarih (milliyetçilik), sürekli yenilenme (inkılapçılık).",
+      "Bir reform birden çok ilkeye bağlanabilir; ama her ilke için metinde ayrı kanıt göster. Kurum adında ‘Türk’ geçmesi tek başına kanıt değildir.",
+      "‘Henüz / önce / sonra’ kökünde her seçeneğin yanına yılını yaz ve referans yıla bir çizgi çek (2025 AYT Sosyal Bilimler-2 Tarih-2 soru 10: 1933'te 1934 milletvekili hakkı henüz yok).",
+      "Hakkın türünü ayır: 1926 Medeni Kanun aile–miras; 1930 belediye, 1933 köy, 1934 milletvekili seçim hakları. Kabul ve yürürlük tarihi farklı olabilir.",
+      "Fazla genelleme kurma: devlet fabrikası ‘özel girişim yasak’ demek değildir; laiklik inanç özgürlüğünü kaldırmaz.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
