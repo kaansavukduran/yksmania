@@ -1396,6 +1396,19 @@ export const questionTactics: QuestionTactic[] = [
       "Ortak metindeki sorular farklı beceri ölçer; konuyu bulmak yargı ve istisna sorusunu çözmez (2023 TYT Türkçe 37–38 mantığı).",
     ],
   },
+  {
+    id: "noron-glia-yer-gorev",
+    guides: ["sinir-sistemi-noron-ve-glialar"],
+    match: /nöron|glia|miyelin|Ranvier|akson|dendrit|Schwann|oligodendrosit|mikroglia|astrosit|ependim|sinaps|duyu|motor|ara nöron/i,
+    title: "Nöron ve gliada önce yeri, sonra görevi, en son niceliği denetle",
+    steps: [
+      "Şekilde gövdeyi bul; kısa dallar dendrit, tek uzun çıkış akson, uçlar sinaptik uçtur.",
+      "Miyelin sorusunda önce yer: MSS (beyin, omurilik) → oligodendrosit, ÇSS (kol, bacak siniri) → Schwann.",
+      "Görev ve yer ayrı sınıflamadır: duyu merkeze, motor efektöre taşır; ara nöron MSS içindedir. Gerilme refleksi ara nöronsuz olabilir.",
+      "‘Tüm/her’ ifadesini bir karşı örnek çürütür (miyelinsiz akson, miyelin yapmayan mikroglia); ‘bazı’yı çürütmez (2024 AYT Fen 31 mantığı).",
+      "Hız karşılaştırmasında sabit tutulanı listele: çap eşitse miyelinli hızlı beklenir; çap da farklıysa kesin sıralama yoktur.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

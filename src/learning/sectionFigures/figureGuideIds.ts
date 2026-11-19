@@ -26,6 +26,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "radyoaktivite",
   "tyt-mat-mutlak-deger-kaynak-038",
   "duyu-organlari-goz",
+  "sinir-sistemi-noron-ve-glialar",
   "duyu-organlari-kulak",
   "cografi-konum",
   "ortacag-dunya",
