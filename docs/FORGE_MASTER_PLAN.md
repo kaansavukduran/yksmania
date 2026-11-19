@@ -147,7 +147,7 @@ Laboratuvar kuralları: “Tahmin et → Oynat → Gör”, 2–3 sınav senaryo
 
 ```
 Forge turu — <tarih>
-PDF: <okunan> / 8.981 (%<oran>) · figürlü rehber <n> / 371 · bölüm figürü <m>
+PDF: <okunan> / 8.981 (%<oran>) · kopya kâğıdı <k> / 517 (%<oran>, ders ders tablo) · figürlü rehber <n> / 371 · bölüm figürü <m>
 Ders oranları: TYT <...> · AYT Sayısal <...> · Denemeler <...> · Kopya kâğıtları/taktik <...>
 Bu tur: <kaynak> → <katman>; <özellik>
 Testler: check ✓ · birim <sayı> ✓ · build ✓ · e2e <kapsam>

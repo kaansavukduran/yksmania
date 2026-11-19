@@ -16,6 +16,33 @@ Her geliştirme turunda güncellenir. Sayılar yalnız gerçekten yapılmış i�
 
 Arşivdeki PDF'lerin büyük kısmı aynı konunun farklı biçimleridir (TYT konu özeti, “Dersler Cepte” sunumu, etkinlik, okuma metni, deneme). Bu yüzden PDF yüzdesi konu kapsamını ölçmez; konu kapsamı aşağıdaki rehber tablosundadır.
 
+### Kopya kâğıtları (Drive `04_Kopya Kâğıtları`, 19 Kasım sayımı)
+
+Klasördeki numaralı kopya kâğıtları ders ders sayıldı (517 kopya kâğıdı + 7 durum raporu = 524 PDF; numara boşluğu yok). “İşlendi” = PDF okundu ve içeriği uygulamaya özgün figür ve taktik olarak aktarıldı (aşağıdaki listede satırı var); hepsi hâlâ “kısmi” sayılır.
+
+| Ders | Kopya kâğıdı | İşlendi | Oran |
+| --- | ---: | ---: | ---: |
+| TYT Türkçe | 33 | 0 | %0 |
+| TYT Matematik | 38 | 1 | %2,6 |
+| TYT Geometri | 32 | 0 | %0 |
+| TYT Fizik | 24 | 7 | %29,2 |
+| TYT Kimya | 56 | 7 | %12,5 |
+| TYT Biyoloji | 36 | 7 | %19,4 |
+| TYT Tarih | 24 | 0 | %0 |
+| TYT Coğrafya | 40 | 0 | %0 |
+| TYT Felsefe | 17 | 0 | %0 |
+| TYT Din Kültürü | 20 | 0 | %0 |
+| **TYT toplam** | **320** | **22** | **%6,9** |
+| AYT Matematik | 17 | 0 | %0 |
+| AYT Geometri | 4 | 0 | %0 |
+| AYT Fizik | 46 | 0 | %0 |
+| AYT Kimya | 55 | 11 | %20,0 |
+| AYT Biyoloji | 75 | 0 | %0 |
+| **AYT toplam** | **197** | **11** | **%5,6** |
+| **Genel toplam** | **517** | **33** | **%6,4** |
+
+Notlar: TYT Türkçe'de 028 numarası iki farklı konuda kullanılmış (33 dosya, 32 numara). TYT Kimya'da 031 aynı adla iki kez var (eski ve yeni sürüm; 55 farklı konu). TYT Matematik ve Geometri'de 000 numaralı genel özetler var. AYT klasöründeki 7 durum raporu “232 konu” diyor ama klasörlerde 197 AYT kopya kâğıdı bulunuyor; 35 konunun kopya kâğıdı Drive'da yok. Bu tablodaki sıfırlar, o derste kopya kâğıdından figür/taktik aktarılmadığını söyler; uygulamada o dersin anlatımı ve soruları yine vardır (ayrıntı aşağıdaki kapsam tablosunda).
+
 Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen bozuk geldi):
 
 | PDF | Uygulamaya eşlenen | Durum |
