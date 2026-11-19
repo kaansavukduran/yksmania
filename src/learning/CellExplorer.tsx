@@ -151,6 +151,23 @@ function Part({
   );
 }
 const route = ["nucleus", "ribosome", "er", "golgi", "membrane"];
+/** Where each part's name line starts (animal / plant drawing). */
+const ANCHOR: Record<string, { a: [number, number]; p?: [number, number] }> = {
+  nucleus: { a: [180, 150] },
+  mitochondrion: { a: [130, 300] },
+  ribosome: { a: [360, 120] },
+  er: { a: [318, 150] },
+  golgi: { a: [372, 270], p: [342, 308] },
+  membrane: { a: [372, 40], p: [400, 42] },
+  vacuole: { a: [480, 290], p: [500, 170] },
+  chloroplast: { a: [70, 96] },
+  lysosome: { a: [480, 222] },
+  peroxisome: { a: [100, 216] },
+  centrosome: { a: [486, 150] },
+  cytoskeleton: { a: [240, 342] },
+  wall: { a: [30, 250], p: [30, 250] },
+  cytoplasm: { a: [250, 240] },
+};
 /* Plant cell: an irregular, slightly rounded polygon like cells in a tissue
  * section; the inner outline is the cell membrane pressed against the wall. */
 const PLANT_WALL =
@@ -165,6 +182,7 @@ export default function CellExplorer() {
     selected: "nucleus",
     route: false,
     step: 0,
+    labels: false,
   });
   const uid = useId().replaceAll(":", "");
   const available = parts.filter((p) =>
@@ -221,9 +239,17 @@ export default function CellExplorer() {
           {v("plant")}
         </button>
       </div>
+      <button
+        type="button"
+        className="secondary cell-label-toggle"
+        aria-pressed={s.labels}
+        onClick={() => set({ labels: !s.labels })}
+      >
+        {s.labels ? "Adları gizle" : "Adları göster"}
+      </button>
       <div className="cell-workbench">
         <svg
-          viewBox="0 0 600 400"
+          viewBox={s.labels ? "-175 0 1000 400" : "0 0 600 400"}
           role="group"
           aria-label={v("cellDiagram")}
           className="cell-figure"
@@ -488,6 +514,35 @@ export default function CellExplorer() {
               pointerEvents="none"
             />
           )}
+          {s.labels &&
+            (() => {
+              // Left half names go to the left margin, the rest to the right;
+              // each side is spread evenly so no two names touch.
+              const items = available.map((p) => {
+                const an = ANCHOR[p.id];
+                const [x, y] = (s.plant && an.p) || an.a;
+                return { id: p.id, name: l(p.name), x, y, left: x < 300 };
+              });
+              const place = (list: typeof items) => {
+                const sorted = [...list].sort((a, b) => a.y - b.y);
+                const gap = Math.min(52, 380 / Math.max(1, sorted.length));
+                const top = 200 - (gap * (sorted.length - 1)) / 2;
+                return sorted.map((it, k) => ({ ...it, ly: top + k * gap }));
+              };
+              return [...place(items.filter((i) => i.left)), ...place(items.filter((i) => !i.left))].map((it) => {
+                const lx = it.left ? -12 : 612;
+                const on = it.id === part.id;
+                return (
+                  <g key={it.id} className={`cell-label${on ? " is-on" : ""}`} pointerEvents="none">
+                    <polyline points={`${it.x},${it.y} ${it.left ? lx + 8 : lx - 8},${it.ly} ${lx},${it.ly}`} className="cell-label-line" />
+                    <circle cx={it.x} cy={it.y} r="3.5" className="cell-label-dot" />
+                    <text x={it.left ? lx - 4 : lx + 4} y={it.ly + 5} textAnchor={it.left ? "end" : "start"} className="cell-label-text">
+                      {it.name}
+                    </text>
+                  </g>
+                );
+              });
+            })()}
         </svg>
         <div className="organelle-info" aria-live="polite">
           <span className="lab-kicker">{l(part.structure)}</span>

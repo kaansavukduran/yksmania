@@ -232,6 +232,8 @@ export interface FigureFrame {
   readout?: string[];
   /** Key for lettered tokens, rendered as wrapping HTML under the drawing. */
   legend?: { code: string; label: string; tone: Tone }[];
+  /** A word split into coloured parts (Turkish morphology), rendered as HTML. */
+  word?: { s: string; tone: Tone; label: string }[];
 }
 export interface FigureDef {
   /** One-sentence caption: what to look for in the drawing. */
@@ -762,6 +764,16 @@ export function SectionFigureView({ def, title }: { def: FigureDef; title: strin
   return (
     <figure className="section-figure" data-section-figure={title}>
       <Render els={frame.els} title={`${title}: şekil`} desc={def.alt} />
+      {frame.word && frame.word.length > 0 && (
+        <div className="sf-word" role="group" aria-label={`Sözcük yapısı: ${frame.word.map((w) => `${w.s} (${w.label})`).join(", ")}`}>
+          {frame.word.map((w, k) => (
+            <span key={k} className={`sf-word-part sf-${w.tone}`}>
+              <span className="sf-word-text">{w.s}</span>
+              <span className="sf-word-label">{w.label}</span>
+            </span>
+          ))}
+        </div>
+      )}
       {(p || def.steps) && (
         <div className="sf-controls">
           {p && (

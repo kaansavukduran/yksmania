@@ -27,7 +27,10 @@
 
 - **Gerçekçi molekül modelleri:** Şekil motoruna gölgeli 3B küre (`ball`: sol üstten ışık, altta gölge) eklendi. CH₄/NH₃/H₂O küre-çubuk modelleri gerçek 3B bağ yönleriyle, arkadan öne sıralı çizilir; ortaklanmamış çiftler yarı saydam loblar; açılar 109,5° > 107° > 104,5°. CO₂ ile H₂O dipol karşılaştırması: bağa paralel oklar, CO₂'de net 0, H₂O'da açıortay yönünde net etki. Atom renkleri standart renklere yakın (O kırmızı, N mavi, C gri, F yeşil).
 
-Doğrulama (yerel): check PASS; 2.500 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
+- **Parçalar ayırt edilebilir:** Hücrede “Adları göster”: her organelden kenara gösterge çizgisi, adlar iki kenarda eşit aralıkla dizilir (üst üste binmez), seçili organel vurgulanır; ders kitabı etiketli çizim düzeni. Durum `explorations` içinde saklanır, puan vermez.
+- **Türkçe sözcük anatomisi:** Şekil motoruna HTML “sözcük” şeridi eklendi: kök (koyu), yapım eki (yeşil), çekim eki (mavi), yardımcı ses (gri) ayrı renkli bloklar ve altında görevleri. Sözcükte yapı rehberinde 5 adım adım figür (göz→gözlük→gözlükçü→gözlükçüler; ev+ler+imiz+den ve evsizlerimizden; iyelik/belirtme -i ve kitab-ı-n-ı; geldim/evim; annemsiz istisnası), örnekler rehberin kendi çözümlemeleri.
+
+Doğrulama (yerel): check PASS; 2.510 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
 
 ---
 

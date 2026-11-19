@@ -4827,3 +4827,12 @@ progress::-moz-progress-bar {
 :root[data-theme="trans"] .tiny-star { color: #1b6f99; }
 :root[data-theme="trans"] .hero-content > p { color: #4d5869; }
 :root[data-theme="trans"] .hero .primary { background: #b8245a; color: #fff; }
+
+/* Cell explorer name labels (optional, with leader lines). */
+.cell-label-toggle { margin: 0.6rem 0; min-height: 44px; }
+.cell-label-line { fill: none; stroke: var(--muted); stroke-width: 1.4; }
+.cell-label-dot { fill: var(--text); stroke: var(--bg); stroke-width: 1.5; }
+.cell-label-text { fill: var(--text); font-size: 19px; font-weight: 600; paint-order: stroke; stroke: var(--bg); stroke-width: 4px; }
+.cell-label.is-on .cell-label-line { stroke: var(--accent); stroke-width: 2.4; }
+.cell-label.is-on .cell-label-dot { fill: var(--accent); }
+.cell-label.is-on .cell-label-text { fill: var(--accent); font-weight: 800; }

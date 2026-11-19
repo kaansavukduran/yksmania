@@ -178,3 +178,37 @@
 .sf-ball { stroke: color-mix(in srgb, var(--sf) 60%, black); stroke-width: 1; }
 .sf-ball-shadow { fill: black; opacity: 0.18; }
 .sf-ball-label { fill: #fff; font-weight: 800; font-size: 17px; text-anchor: middle; paint-order: stroke; stroke: rgba(0, 0, 0, 0.45); stroke-width: 3px; pointer-events: none; }
+
+/* Word anatomy: each morpheme is a coloured block with its role underneath. */
+.sf-word {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem;
+  margin: 0.8rem 0 0.4rem;
+}
+.sf-word-part {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 2.6rem;
+}
+.sf-word-text {
+  font-size: clamp(1.7em, 6vw, 2.6em);
+  font-weight: 800;
+  line-height: 1.2;
+  padding: 0.15rem 0.45rem;
+  border-radius: 0.5rem;
+  color: var(--sf);
+  background: color-mix(in srgb, var(--sf) 16%, transparent);
+  border-bottom: 4px solid var(--sf);
+}
+.sf-word-label {
+  font-size: 0.85em;
+  font-weight: 600;
+  color: var(--sf);
+  margin-top: 0.3rem;
+  text-align: center;
+  max-width: 7.5rem;
+  line-height: 1.25;
+}

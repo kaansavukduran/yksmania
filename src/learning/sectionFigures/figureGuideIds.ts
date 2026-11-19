@@ -56,4 +56,5 @@ export const sectionFigureGuideIds = new Set<string>([
   "hz-muhammed-ve-gencler",
   "molekul-geometrisi",
   "molekullerde-polarlik-apolarlik",
+  "sozcukte-yapi",
 ]);
