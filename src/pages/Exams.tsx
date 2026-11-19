@@ -476,7 +476,7 @@ function ExamRunner({
               <p>{q.passage}</p>
             </section>
           )}
-          <h2 ref={questionHeading} tabIndex={-1}>
+          <h2 className="question-prompt" ref={questionHeading} tabIndex={-1}>
             {q.prompt}
           </h2>
           {sourcePresentation?.figure && (

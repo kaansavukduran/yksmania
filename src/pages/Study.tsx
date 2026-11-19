@@ -225,7 +225,7 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
               <p>{l(question.passage)}</p>
             </section>
           )}
-          <h2>{l(question.prompt)}</h2>
+          <h2 className="question-prompt">{l(question.prompt)}</h2>
           {sourcePresentation?.figure && (
             <SourceQuestionFigure figure={sourcePresentation.figure} />
           )}

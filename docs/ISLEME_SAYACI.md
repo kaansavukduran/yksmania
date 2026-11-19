@@ -37,7 +37,7 @@ PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olara
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | TYT Türkçe | 22 | 34 | 33 | 380 | 33 | 0 |
 | TYT Matematik | 31 | 45 | 40 | 735 | 40 | 1 |
-| TYT Geometri | 16 | 17 | 17 | 193 | 14 | 17 |
+| TYT Geometri | 16 | 18 | 18 | 205 | 14 | 18 |
 | TYT Fizik | 20 | 28 | 24 | 311 | 24 | 17 |
 | TYT Kimya | 17 | 57 | 55 | 535 | 55 | 0 |
 | TYT Biyoloji | 18 | 45 | 36 | 515 | 36 | 0 |
@@ -50,7 +50,7 @@ PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olara
 | AYT Fizik | 32 | 47 | 46 | 541 | 46 | 0 |
 | AYT Kimya | 34 | 56 | 55 | 680 | 55 | 0 |
 | AYT Biyoloji | 29 | 76 | 75 | 907 | 75 | 0 |
-| **Toplam** | **341** | **538** | **503** | **6.441** | **500** | **39** |
+| **Toplam** | **341** | **539** | **504** | **6.453** | **500** | **40** |
 
 Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan konular):
 
@@ -58,7 +58,7 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | --- | --- |
 | TYT-GEO-13 Çemberde açı, kiriş ve teğet | **19 Kasım'da eklendi** (11 bölüm, 10 şekil, 3 çözümlü örnek, 12 özgün soru, kopya kâğıdı) |
 | TYT-GEO-14 Daire, daire dilimi, çevre ve alan | **19 Kasım'da eklendi** (10 bölüm, 9 şekil, 3 çözümlü örnek, 12 özgün soru, kopya kâğıdı) |
-| TYT-GEO-15 Silindir, koni, küre (prizma ve piramit var) | Kısmi — silindir/koni/küre dersi yok |
+| TYT-GEO-15 Silindir, koni, küre (prizma ve piramit var) | **19 Kasım'da eklendi** (10 bölüm, 9 şekil, 3 örnek, 12 özgün soru — öncüllü I–II–III dahil, kopya kâğıdı) |
 | TYT-GEO-09 Dik üçgende trigonometrik oranlar | Ayrı ders yok (dik üçgen dersinde özel açılar var) |
 | TYT-GEO-06 Özel üçgenler | Ayrı ders yok (üçgen derslerinde dağınık) |
 | AYT-GEO-04/05/06 Çember ve daire | Ders yok (TYT çember dersi temel olarak kullanılabilir) |
@@ -70,7 +70,7 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | Ders | Rehber | Figürlü rehber |
 | --- | ---: | ---: |
 | TYT Matematik | 40 | 1 |
-| TYT Geometri | 17 | 17 |
+| TYT Geometri | 18 | 18 |
 | TYT Fizik | 24 | 17 |
 | TYT Kimya | 55 | 0 |
 | TYT Biyoloji | 36 | 0 |
@@ -79,9 +79,9 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | AYT Fizik | 46 | 0 |
 | AYT Kimya | 55 | 0 |
 | AYT Biyoloji | 75 | 0 |
-| **Toplam** | **369** | **39 (%10,6)** |
+| **Toplam** | **370** | **40 (%10,8)** |
 
-Toplam bölüm figürü: 361 (415 bölümde). Soru tipi taktiği: 34.
+Toplam bölüm figürü: 370 (425 bölümde). Soru tipi taktiği: 34.
 
 TYT Fizik'te figürü olmayan 7 rehber: fizik bilimine giriş, madde ve özkütle, prizmalar ve renkler, ses ve deprem dalgaları, ışık bilgisi, durgun elektrik, mıknatıslar ve manyetik alan.
 
@@ -94,3 +94,4 @@ TYT Fizik'te figürü olmayan 7 rehber: fizik bilimine giriş, madde ve özkütl
 | 19 Kasım (2) | Isı ve sıcaklık (9), genleşme (8), hal değişimi (7) figürleri; 4 taktik | 3 | 37 / 367 |
 | 19 Kasım (3) | Yeni ders: Çemberde açı, kiriş ve teğet (10 şekil, 12 soru, kopya kâğıdı); denemelerde ipucu her zaman açık | 0 | 38 / 368 |
 | 19 Kasım (4) | Yeni ders: Daire, daire dilimi, çevre ve alan (9 şekil, 12 soru, kopya kâğıdı); kalıcı tur kuralları ve laboratuvar planı (docs/FORGE_ROADMAP.md) | 0 | 39 / 369 |
+| 19 Kasım (5) | Yeni ders: Silindir, koni ve küre (9 şekil, 12 soru); öncüllü soruların satır satır gösterimi | 0 | 40 / 370 |

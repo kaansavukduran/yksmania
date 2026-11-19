@@ -1299,6 +1299,10 @@ small,
   margin: 0;
   white-space: pre-wrap;
 }
+/* Premise items (I., II., III.) are authored on their own lines. */
+.question-prompt {
+  white-space: pre-line;
+}
 progress {
   display: block;
   width: 100%;

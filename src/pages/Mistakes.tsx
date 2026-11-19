@@ -106,7 +106,7 @@ export function Mistakes({
                       {t(response.assisted ? "assisted" : "incorrect")}
                     </span>
                   </div>
-                  <h2>{l(question.prompt)}</h2>
+                  <h2 className="question-prompt">{l(question.prompt)}</h2>
                   <p>
                     <span className="muted">{t("yourAnswer")}: </span>
                     {l(question.options[response.selected])}

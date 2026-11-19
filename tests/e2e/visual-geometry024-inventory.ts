@@ -126,4 +126,10 @@ export const geometrySummary024Inventory = [
     title: "Daire, daire dilimi, çevre ve alan",
     subjectId: "tyt-geometri",
   },
+  {
+    topicId: "topic-tyt-geo-silindir-koni-kure-040",
+    lessonId: "tyt-geo-silindir-koni-kure-040",
+    title: "Silindir, koni ve küre",
+    subjectId: "tyt-geometri",
+  },
 ] as const;

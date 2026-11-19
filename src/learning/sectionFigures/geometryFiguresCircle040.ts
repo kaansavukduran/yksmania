@@ -532,7 +532,220 @@ const daire: Record<string, FigureDef> = {
   },
 };
 
+/** Ellipse for an oblique view of a circle (horizontal radius r, vertical squash q). */
+const ell = (c: V, r: number, q = 0.32, from = 0, to = 360, n = 48): V[] =>
+  Array.from({ length: n + 1 }, (_, i) => {
+    const t = ((from + ((to - from) * i) / n) * Math.PI) / 180;
+    return v(c[0] + r * Math.cos(t), c[1] + r * q * Math.sin(t));
+  });
+const openPoly = (ps: V[], tone: "a" | "b" | "c" | "ink" | "muted" | "warn" = "ink", dash = false): El => ({ k: "poly", ps, open: true, tone, dash, bold: !dash });
+/** Cylinder of radius r, height h with its base centre at b. */
+function cylinder(b: V, r: number, h: number, tone: "a" | "b" | "c" | "ink" = "ink"): El[] {
+  const top = add(b, v(0, h));
+  return [
+    openPoly(ell(b, r, 0.32, 180, 360), tone),
+    openPoly(ell(b, r, 0.32, 0, 180), tone, true),
+    openPoly(ell(top, r, 0.32), tone),
+    seg(add(b, v(-r, 0)), add(top, v(-r, 0)), { tone }),
+    seg(add(b, v(r, 0)), add(top, v(r, 0)), { tone }),
+  ];
+}
+function cone(b: V, r: number, h: number, tone: "a" | "b" | "c" | "ink" = "ink"): El[] {
+  const apex = add(b, v(0, h));
+  return [
+    openPoly(ell(b, r, 0.32, 180, 360), tone),
+    openPoly(ell(b, r, 0.32, 0, 180), tone, true),
+    seg(add(b, v(-r, 0)), apex, { tone }),
+    seg(add(b, v(r, 0)), apex, { tone }),
+  ];
+}
+function sphere(c: V, r: number, tone: "a" | "b" | "c" | "ink" = "ink"): El[] {
+  return [circle(c, r, { tone }), openPoly(ell(c, r, 0.3, 180, 360), tone), openPoly(ell(c, r, 0.3, 0, 180), tone, true)];
+}
+
+const kati: Record<string, FigureDef> = {
+  "Silindir: daire tabanlı dik prizma gibi": {
+    caption: "r = 3. Yüksekliği değiştir: hacim taban alanı (9π) çarpı yüksekliktir. Arka taraftaki taban yayı kesikli çizilir.",
+    alt: "Eğik görünümde dik silindir; taban yarıçapı ve yükseklik ölçüleri.",
+    param: { label: "h", min: 2, max: 8, step: 1, init: 5, unit: "" },
+    draw: (h) => {
+      const sc = 0.6;
+      const b = v(0, 0);
+      return {
+        els: [
+          ...cylinder(b, 3 * sc, h * sc, "a"),
+          seg(b, v(3 * sc, 0), { tone: "b" }),
+          txt(v(1.5 * sc, 0), "r = 3", "s", { small: true, tone: "b" }),
+          seg(v(3 * sc + 0.4, 0), v(3 * sc + 0.4, h * sc), { tone: "c" }),
+          txt(v(3 * sc + 0.4, (h * sc) / 2), `h = ${h}`, "e", { small: true, tone: "c" }),
+        ],
+        readout: [`V = π·3²·${h} = ${9 * h}π`],
+      };
+    },
+  },
+  "Silindirin açınımı bir dikdörtgen ve iki dairedir": {
+    caption: "h = 4. Yarıçapı değiştir: yan yüz açılınca eni 2πr, boyu h olan dikdörtgen olur; iki taban daire eklenir.",
+    alt: "Ortada uzun dikdörtgen, üstünde ve altında birer daire: silindirin açınımı.",
+    param: { label: "r", min: 0.5, max: 1.5, step: 0.25, init: 1, unit: "" },
+    draw: (r) => {
+      const w = 2 * Math.PI * r;
+      const h = 4 * 0.5;
+      return {
+        els: [
+          { k: "poly", ps: [v(0, 0), v(w, 0), v(w, h), v(0, h)], fill: "b", tone: "b", thin: true },
+          circle(v(w / 2, h + r), r, { tone: "a", fill: "a" }),
+          circle(v(w / 2, -r), r, { tone: "a", fill: "a" }),
+          txt(v(w / 2, h / 2), `2πr = ${fmt(2 * r, 2)}π`, "c", { small: true, bold: true }),
+          txt(v(w, h / 2), "h = 4", "e", { small: true }),
+        ],
+        readout: [`Yanal ${fmt(8 * r, 2)}π + iki taban ${fmt(2 * r * r, 2)}π = ${fmt(8 * r + 2 * r * r, 2)}π`],
+      };
+    },
+  },
+  "Koni: hacim silindirin üçte biri": {
+    caption: "Aynı taban ve yükseklikte silindir ile koni. Adım adım: üç koni dolusu su silindiri tam doldurur.",
+    alt: "Silindir ve içinde aynı taban ve yükseklikte koni; silindirde üç eşit su seviyesi çizgisi.",
+    steps: ["Silindir ve koni", "1 koni dolusu", "2 koni dolusu", "3 koni dolusu: dolu"],
+    draw: (_, step) => {
+      const r = 1.8;
+      const h = 3.6;
+      const fillH = (h * step) / 3;
+      return {
+        els: [
+          ...(step > 0 ? [{ k: "poly" as const, ps: [v(-r, 0), v(r, 0), v(r, fillH), v(-r, fillH)], fill: "b" as const, tone: "b" as const, thin: true }] : []),
+          ...cylinder(v(0, 0), r, h, "ink"),
+          ...cone(v(4.5, 0), r, h, "a"),
+        ],
+        readout: [`Su: ${step}/3 · πr²h`],
+      };
+    },
+  },
+  "Ana doğru, yanal alan ve açınım açısı": {
+    caption: "r = 3. Yüksekliği değiştir: ℓ² = r² + h²; yan yüz açılınca yarıçapı ℓ olan dilim olur ve açısı 360°·r/ℓ.",
+    alt: "Solda koni ve içindeki yükseklik–yarıçap–ana doğru dik üçgeni; sağda açınımdaki daire dilimi.",
+    param: { label: "h", min: 2, max: 8, step: 1, init: 4, unit: "" },
+    draw: (h) => {
+      const sc = 0.9;
+      const r = 3;
+      const l = Math.sqrt(r * r + h * h);
+      const a = (360 * r) / l;
+      const c = v(7.5, 2);
+      return {
+        els: [
+          ...cone(v(0, 0), r * sc, h * sc, "ink"),
+          seg(v(0, 0), v(0, h * sc), { tone: "c", dash: true }),
+          seg(v(0, 0), v(r * sc, 0), { tone: "b" }),
+          right(v(0, 0), v(0, 1), v(1, 0), "muted"),
+          txt(v(-0.15, (h * sc) / 2), `h = ${h}`, "w", { small: true, tone: "c" }),
+          txt(v((r * sc) / 2, -0.35), "r = 3", "s", { small: true, tone: "b" }),
+          txt(v((r * sc) / 2 + 0.3, (h * sc) / 2), `ℓ = ${fmt(l, 2)}`, "e", { small: true, tone: "a" }),
+          { k: "poly", ps: [c, ...Array.from({ length: 49 }, (_, i) => pol(l * 0.22, 90 - a / 2 + (a * i) / 48, c))], fill: "a", tone: "a", thin: true },
+          txt(c, `${fmt(a)}°`, "s", { small: true, bold: true }),
+        ],
+        readout: [`ℓ = √(9 + ${h * h}) = ${fmt(l, 2)}`, `Yanal alan πrℓ = ${fmt(3 * l, 2)}π, açı = ${fmt(a)}°`],
+      };
+    },
+  },
+  "Küre: hacim 4πr³/3, alan 4πr²": {
+    caption: "Yarıçapı değiştir: yüzey alanı aynı yarıçaplı dört dairenin alanı kadardır (4πr²); hacim 4πr³/3.",
+    alt: "Ekvator çemberi kesikli çizilmiş küre ve yanında aynı yarıçaplı dört küçük daire.",
+    param: { label: "r", min: 1, max: 3, step: 0.5, init: 2, unit: "" },
+    draw: (r) => {
+      const sc = 0.7;
+      return {
+        els: [
+          ...sphere(v(0, 0), r * sc, "a"),
+          seg(v(0, 0), v(r * sc, 0), { tone: "b" }),
+          txt(v((r * sc) / 2, 0), `r = ${fmt(r)}`, "n", { small: true, tone: "b" }),
+          ...[0, 1, 2, 3].map((i) => circle(v(r * sc + 1.2 + (i % 2) * (r * sc * 0.55 * 2 + 0.2), (i < 2 ? 1 : -1) * (r * sc * 0.55 + 0.1)), r * sc * 0.55, { tone: "c", fill: "c" })),
+        ],
+        readout: [`S = 4π·${fmt(r * r, 2)} = ${fmt(4 * r * r, 2)}π`, `V = 4π·${fmt(r ** 3, 2)}/3 = ${fmt((4 * r ** 3) / 3, 2)}π`],
+      };
+    },
+  },
+  "Silindir : küre : koni = 3 : 2 : 1": {
+    caption: "Yarıçap r, yükseklik 2r. Silindir 2πr³, içine tam sığan küre 4πr³/3, aynı taban–yükseklikteki koni 2πr³/3: oran 3 : 2 : 1.",
+    alt: "Yan yana üç cisim: silindir, onun içine sığan küre ve aynı ölçülerde koni; altlarında 3, 2, 1 oranları.",
+    draw: () => {
+      const r = 1.3;
+      return {
+        els: [
+          ...cylinder(v(0, 0), r, 2 * r, "ink"),
+          ...sphere(v(0, r), r, "b"),
+          ...cone(v(3.8, 0), r, 2 * r, "a"),
+          txt(v(0, -0.7), "silindir 3 · küre 2", "s", { small: true, bold: true }),
+          txt(v(3.8, -0.7), "koni 1", "s", { small: true, bold: true }),
+        ],
+        readout: ["2πr³ : 4πr³/3 : 2πr³/3 = 3 : 2 : 1"],
+      };
+    },
+  },
+  "Batırılan cisim suyu yükseltir": {
+    caption: "Kap yarıçapı 6, bilyenin yarıçapını değiştir: bilye hacmi 4πr³/3 = 36π·Δh, su Δh kadar yükselir (tam batar, taşmaz).",
+    alt: "Silindir kapta su, dipte bilye; ilk su seviyesi kesikli, yükselmiş seviye kalın çizgi.",
+    param: { label: "bilye r", min: 1, max: 4, step: 0.5, init: 3, unit: "" },
+    draw: (rb) => {
+      const sc = 0.4;
+      const R = 6 * sc;
+      const h0 = 4 * sc;
+      const dh = ((4 / 3) * rb ** 3) / 36;
+      const h1 = h0 + dh * sc;
+      return {
+        els: [
+          { k: "poly", ps: [v(-R, 0), v(R, 0), v(R, h1), v(-R, h1)], fill: "b", tone: "b", thin: true },
+          ...cylinder(v(0, 0), R, 4.5, "ink"),
+          circle(v(0, rb * sc), rb * sc, { tone: "warn", fill: "warn" }),
+          seg(v(-R, h0), v(R, h0), { tone: "muted", dash: true }),
+          seg(v(-R, h1), v(R, h1), { tone: "a", bold: true }),
+          txt(v(R, h1), `Δh = ${fmt(dh, 2)}`, "e", { small: true, tone: "a" }),
+        ],
+        readout: [`4π·${fmt(rb ** 3, 3)}/3 = 36π·Δh → Δh = ${fmt(dh, 3)}`],
+      };
+    },
+  },
+  "Paralel kesit ve benzer cisimler": {
+    caption: "k = tepeden kesite uzaklık / tam yükseklik. Kesiti kaydır: küçük koninin yarıçapı k, taban alanı k², hacmi k³ oranında; kesik koni 1 − k³.",
+    alt: "Koni ve tabana paralel kesit düzlemi; üstteki küçük koni farklı renkte.",
+    param: { label: "k", min: 0.25, max: 0.9, step: 0.05, init: 0.5, unit: "" },
+    draw: (k) => {
+      const r = 2;
+      const h = 4;
+      const cy = h * (1 - k);
+      return {
+        els: [
+          ...cone(v(0, 0), r, h, "ink"),
+          { k: "poly", ps: [v(-r * k, cy), v(r * k, cy), v(0, h)], fill: "a", tone: "a", thin: true },
+          openPoly(ell(v(0, cy), r * k), "a"),
+          txt(v(r * k, cy), `k = ${fmt(k, 2)}`, "e", { small: true, tone: "a" }),
+        ],
+        readout: [`Küçük/büyük hacim = k³ = ${fmt(k ** 3, 3)}`, `Kesik koni = ${fmt(1 - k ** 3, 3)} · büyük`],
+      };
+    },
+  },
+  "Dönel cisimleri şekilden tanı": {
+    caption: "Dik kenarları 3 ve 4 olan üçgen. Adım: 4'lük kenar etrafında dönerse r = 3, h = 4 (12π); 3'lük kenar etrafında dönerse r = 4, h = 3 (16π).",
+    alt: "Dik üçgen ve seçilen dönme ekseni etrafında oluşan koninin eğik görünümü.",
+    steps: ["Eksen: 4 birimlik kenar", "Eksen: 3 birimlik kenar"],
+    draw: (_, step) => {
+      const sc = 0.7;
+      const [r, h] = step === 0 ? [3, 4] : [4, 3];
+      return {
+        els: [
+          { k: "poly", ps: [v(0, 0), v(r * sc, 0), v(0, h * sc)], fill: "a", tone: "a", thin: true },
+          seg(v(0, -0.4), v(0, h * sc + 0.5), { tone: "warn", dash: true }),
+          txt(v(0, h * sc + 0.5), "eksen", "n", { small: true, tone: "warn" }),
+          ...cone(v(0, 0), r * sc, h * sc, "ink"),
+          txt(v((r * sc) / 2, 0), `r = ${r}`, "s", { small: true }),
+          txt(v(0, (h * sc) / 2), `h = ${h}`, "w", { small: true }),
+        ],
+        readout: [`V = π·${r * r}·${h}/3 = ${(r * r * h) / 3}π`],
+      };
+    },
+  },
+};
+
 export const geometryFiguresCircle040: Record<string, Record<string, FigureDef>> = {
   "tyt-geo-cember-aci-040": cember,
   "tyt-geo-daire-040": daire,
+  "tyt-geo-silindir-koni-kure-040": kati,
 };
