@@ -27,6 +27,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "tyt-mat-mutlak-deger-kaynak-038",
   "duyu-organlari-goz",
   "duyu-organlari-kulak",
+  "cografi-konum",
   "dogrunun-analitigi",
   "duzlem-ayna",
   "kuresel-aynalar",

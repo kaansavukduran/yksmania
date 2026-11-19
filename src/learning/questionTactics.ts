@@ -1266,6 +1266,19 @@ export const questionTactics: QuestionTactic[] = [
       "Frekans tizliği, genlik gürlüğü belirler; eşit şiddetteki 1000 Hz ses 500 Hz'ten daha tizdir ama daha gür değildir.",
     ],
   },
+  {
+    id: "cografi-konum-saat",
+    guides: ["cografi-konum"],
+    match: /enlem|boylam|saat|UTC|meridyen|paralel|konum|tarih/i,
+    title: "Boylamdan güneş saati, ofsetten resmî saat; ikisini karıştırma",
+    steps: [
+      "Doğuyu +, batıyı − yaz; fark = hedef − kaynak; 1° = 4 dakika, doğu ileri. 30′ = 0,5° (açı dakikası saat dakikası değildir).",
+      "Saat dilimi (UTC ofseti) verilmişse dereceyle uğraşma: kalkışı UTC'ye çevir, süreyi ekle, varış ofsetini ekle (2017 YGS Sosyal Bilimler 17 mantığı).",
+      "Tarih değişimini saat hanesiyle birlikte taşı; UTC yolunu kullandıysan tarih çizgisi için ikinci düzeltme yapma.",
+      "1° enlem ≈ 111 km; 1° boylam ≈ 111 · cos φ km. Saat farkı her enlemde 1° = 4 dakikadır.",
+      "Mutlak konum enlem–boylamdır; denizellik, boğaz, komşuluk göreceli konumdur. Aynı enlem aynı iklim demek değildir.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
