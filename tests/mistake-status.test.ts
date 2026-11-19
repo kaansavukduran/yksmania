@@ -46,3 +46,19 @@ describe("ordering", () => {
     ]);
   });
 });
+
+describe("exam items count only when answered without help", () => {
+  const wrong = s("a", "2026-11-01", false);
+  const exam = (day: string, answer: number, help: number) => ({
+    items: [{ id: "q", lessonId: "l", subjectId: "tyt-kimya", subjectName: "Kimya", lessonTitle: "L", prompt: "p", options: ["a", "b"], answer: 0, explanation: "e" }],
+    answers: [answer],
+    helpLevels: [help],
+    finishedAt: Date.parse(`${day}T12:00:00`),
+  });
+  it("a correct sprint answer without help repairs; with help it does not", () => {
+    expect(mistakeStatus([wrong], wrong, "q", [exam("2026-11-02", 0, 1)])).toBe("acik");
+    expect(mistakeStatus([wrong], wrong, "q", [exam("2026-11-02", 1, 0)])).toBe("acik");
+    expect(mistakeStatus([wrong], wrong, "q", [exam("2026-11-02", 0, 0)])).toBe("onarildi");
+    expect(mistakeStatus([wrong], wrong, "q", [exam("2026-11-05", 0, 0)])).toBe("kalici");
+  });
+});

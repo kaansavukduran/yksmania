@@ -1,4 +1,5 @@
 import type { Session } from "./model";
+import type { ExamSession } from "./examModel";
 
 /*
  * Repair status of one mistake, derived only from saved answers:
@@ -6,6 +7,8 @@ import type { Session } from "./model";
  *   onarildi – a later study set answered it correctly without help
  *   kalici   – such an answer came at least three calendar days after the
  *              mistake (the day-3 spacing of the review policy)
+ * A finished exam counts too, but only for items answered correctly with no
+ * help panel opened on that item (helpLevels[i] === 0).
  * Closed-book retries on the Mistakes page and tags are notes, not evidence,
  * so they never change the status.
  */
@@ -14,16 +17,31 @@ export type MistakeStatus = "acik" | "onarildi" | "kalici";
 const DAY = 86400000;
 const dayOf = (date: string) => Date.parse(`${date}T00:00:00Z`);
 
-export function mistakeStatus(sessions: readonly Session[], mistake: Session, questionId: string): MistakeStatus {
-  let status: MistakeStatus = "acik";
+// Local calendar day, matching how study sessions store their date.
+const isoDay = (ms: number) => {
+  const d = new Date(ms);
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+};
+
+export function mistakeStatus(
+  sessions: readonly Session[],
+  mistake: Session,
+  questionId: string,
+  exams: readonly Pick<ExamSession, "items" | "answers" | "helpLevels" | "finishedAt">[] = [],
+): MistakeStatus {
+  const later: string[] = [];
   for (const s of sessions) {
     if (s.finishedAt <= mistake.finishedAt) continue;
-    const solved = s.responses.some((r) => r.questionId === questionId && r.correct && !r.assisted);
-    if (!solved) continue;
-    if (dayOf(s.date) - dayOf(mistake.date) >= 3 * DAY) return "kalici";
-    status = "onarildi";
+    if (s.responses.some((r) => r.questionId === questionId && r.correct && !r.assisted)) later.push(s.date);
   }
-  return status;
+  const after = Date.parse(mistake.finishedAt);
+  for (const e of exams) {
+    if (!(e.finishedAt > after)) continue;
+    const i = e.items.findIndex((q) => q.id === questionId);
+    if (i >= 0 && e.answers[i] === e.items[i].answer && (e.helpLevels?.[i] ?? 0) === 0) later.push(isoDay(e.finishedAt));
+  }
+  if (!later.length) return "acik";
+  return later.some((d) => dayOf(d) - dayOf(mistake.date) >= 3 * DAY) ? "kalici" : "onarildi";
 }
 
 export const STATUS_LABEL: Record<MistakeStatus, string> = {

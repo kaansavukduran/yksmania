@@ -8,9 +8,9 @@ import { useConfirmationDialog } from "../components/ConfirmationDialog";
 import { Empty } from "../components/Shared";
 import type { Lesson } from "../domain/model";
 import { MistakeRepair, mistakeKey, mistakeMap, mistakeReasons } from "../components/MistakeRepair";
-import { MistakeWarning, PocketBooklet } from "../components/MistakeTools";
+import { MistakeSprint, MistakeWarning, PocketBooklet } from "../components/MistakeTools";
 import { StarBadge } from "../components/StarPractice";
-import { questionStars } from "../domain/exams";
+import { beginExam, mistakeSprintSpec, questionStars } from "../domain/exams";
 import { compareMistakes, mistakeStatus, STATUS_LABEL, type MistakeStatus } from "../domain/mistakeStatus";
 export function Mistakes({
   start,
@@ -61,7 +61,7 @@ export function Mistakes({
             response: r,
             lesson,
             question: question ? localizedQuestionView(question) : undefined,
-            status: mistakeStatus(state.sessions, s, r.questionId),
+            status: mistakeStatus(state.sessions, s, r.questionId, state.examSessions),
             confident: !r.correct && r.confidence === "high",
             assistedOnly: r.correct,
             stars: questionStars(r.questionId) ?? 0,
@@ -126,6 +126,20 @@ export function Mistakes({
                 </button>
               ))}
             </div>
+            <MistakeSprint
+              ids={allItems.filter((x) => x.status === "acik").map((x) => x.response.questionId)}
+              busy={!!state.examDraft}
+              begin={async (ids) => {
+                const spec = mistakeSprintSpec(ids);
+                if (!spec) return;
+                try {
+                  await commit((s) => beginExam(s, spec, Date.now(), "learning"));
+                  navigate("/exams");
+                } catch {
+                  toast("Sprint başlatılamadı. Kayıtların korundu; yeniden dene.");
+                }
+              }}
+            />
             <PocketBooklet
               items={allItems
                 .filter((x) => x.status !== "kalici" && x.question)

@@ -110,4 +110,8 @@ for (const width of [1280, 320])
     expect(docWidth).toBeLessThanOrEqual(width + 1);
     const axe = await new AxeBuilder({ page }).include(".mistake-list").analyze();
     expect(axe.violations).toEqual([]);
+    // The sprint drills the two open mistakes, confident-wrong first.
+    await page.getByRole("button", { name: "2 soruluk sprinti başlat" }).click();
+    await expect(page.getByRole("heading", { name: q2.prompt.tr })).toBeVisible();
+    await expect(page.locator(".exam-question-meta")).toContainText("Soru 1 / 2");
   });

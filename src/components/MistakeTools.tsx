@@ -95,3 +95,43 @@ export function PocketBooklet({ items }: { items: BookletItem[] }) {
     </section>
   );
 }
+
+/**
+ * Short timed practice from open mistakes. Answers given without opening
+ * help count as later independent answers; help-assisted ones do not.
+ */
+export function MistakeSprint({
+  ids,
+  busy,
+  begin,
+}: {
+  ids: string[];
+  busy: boolean;
+  begin: (ids: string[]) => Promise<void>;
+}) {
+  const [running, setRunning] = useState(false);
+  const unique = [...new Set(ids)];
+  if (!unique.length) return null;
+  const count = Math.min(10, unique.length);
+  return (
+    <section className="panel mistake-sprint" aria-labelledby="sprint-heading">
+      <h2 id="sprint-heading">Hata avı sprinti</h2>
+      <p className="small muted">
+        Açık hatalarından {count} soruluk kısa, süreli bir tur (önce “Eminim” deyip yanlış yaptıkların). İpucu açmadan doğru
+        çözdüğün her soru hatanı onarır; 3 gün ve sonrasında yeniden doğru çözersen onarım kalıcı olur.
+      </p>
+      <button
+        type="button"
+        className="primary"
+        disabled={busy || running}
+        onClick={() => {
+          setRunning(true);
+          void begin(unique).finally(() => setRunning(false));
+        }}
+      >
+        {count} soruluk sprinti başlat
+      </button>
+      {busy && <p className="small muted">Önce devam eden denemeyi bitir.</p>}
+    </section>
+  );
+}

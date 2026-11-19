@@ -211,6 +211,33 @@ export function starPracticeSpec(
     missingSubjects: [],
   };
 }
+/**
+ * "Hata avı sprinti": a short practice built from the learner's own open
+ * mistakes (at most 10). Items answered without opening help count as later
+ * independent answers for the mistake's repair status.
+ */
+export function mistakeSprintSpec(questionIds: readonly string[], limit = 10): ExamSpec | undefined {
+  const wanted = [...new Set(questionIds)].slice(0, limit);
+  const byId = new Map<string, ExamItem>();
+  for (const lesson of lessons) {
+    if (!lesson.questions.some((q) => wanted.includes(q.id))) continue;
+    for (const item of snapshot(lesson)) if (wanted.includes(item.id)) byId.set(item.id, item);
+  }
+  const items = wanted.map((id) => byId.get(id)).filter((x): x is ExamItem => !!x);
+  if (!items.length) return undefined;
+  const ayt = items.filter((i) => i.subjectId.startsWith("ayt-")).length;
+  const exam = ayt > items.length / 2 ? "AYT" : "TYT";
+  return {
+    id: `sprint-${items.map((i) => i.id).join("|").length}-${items.length}`,
+    title: `Hata avı sprinti · ${items.length} soru`,
+    exam,
+    kind: "branch",
+    items,
+    durationSeconds: scaledExamSeconds(exam, items.length),
+    fullLength: false,
+    missingSubjects: [],
+  };
+}
 export function examCatalogue(): ExamSpec[] {
   return [
     mixed("TYT"),
