@@ -79,6 +79,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "isci-problemleri",
   "karisim-problemleri",
   "ebob-ekok",
+  "atom-kutlesi-hesaplari",
   "dna-eslenmesi",
   "hucre-organelleri",
   "atom-modelleri",

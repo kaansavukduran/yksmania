@@ -669,6 +669,18 @@ export const questionTactics: QuestionTactic[] = [
       "Evreli işlerde yapılan işi düş, kalanı o evrede çalışanların toplam hızına böl. Boşaltan musluk negatif hızdır.",
     ],
   },
+  {
+    id: "izotop-ortalama",
+    guides: ["atom-kutlesi-hesaplari"],
+    match: /izotop|bolluk|ortalama atom|akb|u\b/i,
+    title: "Ortalama atom kütlesi",
+    steps: [
+      "Yüzdeleri kesre çevir (toplam 1). Ortalama = Σ (izotop kütlesi × atomca kesir).",
+      "Ters soru: iki izotopta kesirleri x ve 1 − x yaz, ortalamaya eşitle.",
+      "Kütle yüzdesi verildiyse önce atom sayısına çevir (kütle ÷ atom kütlesi).",
+      "Kontrol: ortalama en küçük ve en büyük izotop kütlesi arasında, bol olana yakın olmalı.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

@@ -52,8 +52,9 @@
 - **TYT Matematik ilk figürler (4 rehber, 5 figür):** |x − 2| = 3'ü sayı doğrusunda merkez ± uzaklık olarak; |x − 2| < 3 (içeri) ve > 3 (dışarı), ≤/≥ dolu uçlar; 40 öğrenci–İngilizce–Almanca Venn'i bölge bölge (7, 18, 11, 4); y = 2x doğrusu ile x·y = 12 hiperbolü ve sabit alanlı dikdörtgen; 2ⁿ ile (1/2)ⁿ üs sürgüsü. İki taktik (mutlak değer, Venn).
 - **TYT Matematik problemleri (4 rehber, 6 figür):** 300 km arayla karşılaşan iki araç (zaman sürgüsü, kapanan aralık), 60 km önden başlayan araca yetişme, 200 m tren – 600 m köprü (ön uç 800 m), A 6 / B 3 gün işçi çubuğu (birlikte 2 gün), %30 tuzlu suya su ekleme (tuz parçacıkları sabit), 12 × 18 alanı 6 × 6 karelerle kaplama (EBOB) ve 12/18 katları buluşması (EKOK 36). Hız ve işçi taktikleri.
 - **Yazı çakışma denetimi:** Geliştirme betiği bütün figürlü dersleri açar; her adımda ve sürgü konumunda SVG yazı kutularının birbirine binmesini ve çerçeveden taşmasını ölçer. Bulunanlar düzeltilir.
+- **Ortalama atom kütlesi (Drive 044 TYT Kimya kopya kâğıdı okundu):** Cl-35 / Cl-37 cetveli: her top %5 bolluk, destek ağırlıklı ortalamada (MEB örneği %25 Cl-37 → 35,5 u), sürgüyle bolluk değişir. Eşit kütleli 10 ve 20 akb örneklerinde 2 : 1 atom ve 40/3 akb ortalama.
 
-Doğrulama (yerel): check PASS; 2.634 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
+Doğrulama (yerel): check PASS; 2.637 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
 
 ---
 
