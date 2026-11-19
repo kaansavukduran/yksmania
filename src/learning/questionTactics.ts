@@ -748,6 +748,56 @@ export const questionTactics: QuestionTactic[] = [
       "Meslek (kimyager, eczacı), disiplin (analitik) ve sektör (ilaç, tekstil) farklı sorulara cevap verir.",
     ],
   },
+  {
+    id: "yuzde-taban",
+    guides: ["yuzde-problemleri"],
+    match: /%|yüzde|indirim|zam|art|azal/i,
+    title: "Yüzdede önce tabanı yaz",
+    steps: [
+      "Her yüzdenin yanına tabanını yaz (\"%20, 360'ın\"); parça = bütün · p/100, bütün = 100 · parça / p.",
+      "Art arda değişimi çarpanla kur: %a artış 1 + a/100, %a azalış 1 − a/100; çarpanları çarp, yüzdeleri toplama.",
+      "Ters işlemde son değeri kalan çarpana böl: %20 indirimle 160 → 160 ÷ 0,80 = 200.",
+      "Yüzde puanı (42 − 30 = 12) ile göreli değişimi (12 / 30 = %40) ayır.",
+      "Ayrık grupları adetle birleştir; birim fiyatta TL/g'yi, alanda iki kenarın çarpanını birlikte kullan.",
+    ],
+  },
+  {
+    id: "kar-zarar-taban",
+    guides: ["kar-zarar-problemleri"],
+    match: /kâr|zarar|maliyet|etiket|satış|indirim/i,
+    title: "Maliyet, etiket, satış ayrı tabanlardır",
+    steps: [
+      "Parayı adlandır: maliyet (alış), etiket (liste), satış (gerçek gelir).",
+      "Kâr ve zarar yüzdesi, aksi söylenmedikçe maliyete göredir; indirim etiket üzerinden yapılır.",
+      "Zincir: maliyet · (1 + kâr/100) = satış; etiket · (1 − indirim/100) = satış.",
+      "Sabit giderde başabaş: katkı (satış − birim maliyet) · adet = sabit gider.",
+      "Fire satılabilir miktarı azaltır; ödenmiş maliyet aynı kalır.",
+    ],
+  },
+  {
+    id: "yas-tablo",
+    guides: ["yas-problemleri"],
+    match: /yaş|yıl önce|yıl sonra|doğ/i,
+    title: "Yaşları aynı tarihin sütununa yaz",
+    steps: [
+      "Tablo kur: satırlar kişiler, sütunlar tarihler (geçmiş, bugün, gelecek).",
+      "t yılda herkes t yaş büyür; iki kişinin yaş farkı hiç değişmez, toplamı n kişi için n · t artar.",
+      "Oran ve ilişkiyi yalnız verildiği sütundaki yaşlarla kur.",
+      "Kontrol: bulunan yaşlar doğal sayı mı, kişi o tarihte doğmuş mu?",
+    ],
+  },
+  {
+    id: "ardisik-terim",
+    guides: ["ardisik-sayilar"],
+    match: /ardışık|terim|toplam|ortalama|tek|çift/i,
+    title: "Terim sayısı ve toplam",
+    steps: [
+      "Terim sayısı = (son − ilk) ÷ artış + 1; aralık sayısı bundan bir azdır.",
+      "Toplam = terim sayısı · (ilk + son) ÷ 2; uçlardan eşit uzaklıktaki çiftlerin toplamı sabittir.",
+      "Ortalama = (ilk + son) ÷ 2; tek sayıda terimde ortanca terime eşittir.",
+      "Ardışık tek ya da çift sayılarda artış 2'dir; azalan listede artış negatiftir.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

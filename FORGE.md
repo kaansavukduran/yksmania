@@ -65,7 +65,9 @@
 
 - **Kimya disiplinleri (Drive 002 TYT Kimya kopya kâğıdı okundu):** sodyum/bakır/lityum alev renkleriyle nitel analiz, 20 mL numunede mg ile nicel analiz; metan ve etanol organik, CO₂ ve CaCO₃ karbonlu ama anorganik; monomer sürgüsüyle polimer zinciri; A/B/C üretim düzenleri kapasite–kalite grafiğinde, şart sürgüsüyle uygun bölge ve en ucuz uygun düzen. Taktik eklendi.
 
-Doğrulama (yerel): check PASS; 2.663 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
+- **TYT Matematik problemleri (Drive 020 Yüzde Problemleri okundu):** art arda %a artış/azalış çubukları (100 → 120 → 96), ayrık grupların nokta ızgarasıyla %34 (düz ortalama %30 tuzağı), paket ve gram fiyatı (%4 ucuz paket, %20 pahalı gram), kare kenar–alan–maliyet sürgüsü (1,44 · 0,75 = 1,08); kâr–zarar para doğrusu (maliyet 100, etiket 150, indirim sürgüsü, başabaş indirimi %33⅓) ve sabit gider 600/katkı 15 başabaş grafiği; yaşlarda sabit 24 fark ve değişen oran; 7…31 adım 3 terim sayımı ve uç eşleştirme. 4 taktik.
+
+Doğrulama (yerel): check PASS; 2.675 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
 
 ---
 
