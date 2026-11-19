@@ -1240,6 +1240,19 @@ export const questionTactics: QuestionTactic[] = [
       "|x − a| + |x − b| en az |a − b|'dir ve bu değer a ile b arasındaki her x'te alınır; parçalı çözümde her kökü kendi aralığında denetle.",
     ],
   },
+  {
+    id: "goz-yol-uyum-kusur",
+    guides: ["duyu-organlari-goz"],
+    match: /göz|kornea|mercek|retina|koni|çubuk|miyop|hipermetrop|kör nokta|sarı benek|uyum/i,
+    title: "Gözde ışık yolunu, uyumu ve kusuru ayrı basamaklarda çöz",
+    steps: [
+      "Işık yolu dıştan içe: kornea → ön sıvı → göz bebeği → mercek → camsı cisim → retina (2020 AYT Fen 30 mantığı). Retinadan sonra ışık değil sinirsel bilgi gider.",
+      "Göz bebeği açıklıktır, iris onu ayarlar; mercek şeklini kirpiksi kas ve asıcı bağ değiştirir.",
+      "Yakına uyum: kirpiksi kas kasılır, asıcı bağ gevşer, mercek bombelenir, kırıcılık artar; uzakta üçü tersine döner.",
+      "Çubuk loş ışık, koni renk ve ayrıntı; sarı benek koniden zengin, kör nokta (optik disk) alıcısız.",
+      "Önce odağın yerine bak: önde → miyop, ıraksak mercek; arkada → hipermetrop, yakınsak mercek. Presbitlik, astigmatizma, katarakt ve glokom ayrı mekanizmadır.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

@@ -25,6 +25,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "din-felsefesi",
   "radyoaktivite",
   "tyt-mat-mutlak-deger-kaynak-038",
+  "duyu-organlari-goz",
   "dogrunun-analitigi",
   "duzlem-ayna",
   "kuresel-aynalar",
