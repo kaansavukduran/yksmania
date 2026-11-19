@@ -267,6 +267,43 @@ const etherHBond: FigureDef = {
   },
 };
 
+/* ---------- 8. İki aşamalı verim ---------- */
+const twoStage: FigureDef = {
+  caption:
+    "Sürgüyle ikinci aşamanın verimini değiştir. 1000 kJ girişin ilk aşamada %60'ı elektriğe dönüşür (600 kJ); ikinci aşama bu 600 kJ'yi işler. Toplam verim çarpımdır: 0,60 · η₂. Kaybolan enerji yoktur; hedef iş dışındaki ısı ve ses gibi çıkışlara gider. Yüzdeleri toplamak (60 + 80 = 140) farklı paydaları karıştırır.",
+  alt: "Üç yatay çubuk: giriş 1000 kJ, birinci aşama çıkışı 600 kJ ve 400 kJ diğer çıkış, ikinci aşama yararlı çıkışı ve diğer çıkışı; sürgüyle ikinci aşama oranı değişir.",
+  param: { label: "İkinci aşama verimi η₂", min: 10, max: 100, step: 5, init: 80, unit: " %" },
+  draw: (pct) => {
+    const eta2 = pct / 100;
+    const W = 6;
+    const k = W / 1000;
+    const stage1 = 600;
+    const useful = stage1 * eta2;
+    const els: El[] = [];
+    const bar = (y: number, parts: [number, Tone, string][], label: string) => {
+      let x = 0;
+      for (const [value, tone] of parts) {
+        if (value <= 0) continue;
+        els.push(poly([v(x, y), v(x + value * k, y), v(x + value * k, y + 0.6), v(x, y + 0.6)], { tone, fill: tone, thin: true }));
+        x += value * k;
+      }
+      els.push(txt(v(0, y + 0.6), label, "ne", { tone: "ink", small: true, bold: true }));
+      els.push(txt(v(W, y + 0.3), parts.map(([value, , name]) => `${name} ${fmt(value, 0)}`).join(" + ") + " kJ", "e", { tone: "ink", small: true }));
+    };
+    bar(2.8, [[1000, "b", "giriş"]], "Giriş (birincil kaynak)");
+    bar(1.5, [[stage1, "c", "elektrik"], [400, "muted", "diğer"]], "1. aşama: %60");
+    bar(0.2, [[useful, "a", "yararlı"], [stage1 - useful, "muted", "diğer"]], `2. aşama: %${pct} (600 kJ üzerinden)`);
+    els.push(txt(v(-0.4, 4.2), " ", "c"), txt(v(W + 5.2, -0.4), " ", "c"));
+    return {
+      els,
+      readout: [
+        `Toplam verim = 0,60 · ${fmt(eta2, 2)} = ${fmt(0.6 * eta2, 2)} → %${fmt(60 * eta2, 0)}; yararlı ${fmt(useful, 0)} kJ.`,
+        "Birim: 1 kWh = 1000 J/s · 3600 s = 3600 kJ. kW güçtür, kWh enerjidir; 1,5 kW · 4 h = 6 kWh.",
+      ],
+    };
+  },
+};
+
 export const chemistryFiguresAyt2: Record<string, Record<string, FigureDef>> = {
   "faraday-yasalari": { "Elektron molünden ürün molüne geç": faraday },
   "molekul-geometrisi": { "Dört bölge: düzgün dört yüzlü": tetra },
@@ -275,4 +312,5 @@ export const chemistryFiguresAyt2: Record<string, Record<string, FigureDef>> = {
   "ayt-alkol-eldesi-tepkimeleri": { "Sekonder alkolün yükseltgenmesi": alcoholClass },
   "ayt-karboksilik-asitler": { "Karbonat ve hidrojen karbonat": carbonate },
   "ayt-eterler": { "Alıcı ile verici ayrımı": etherHBond },
+  "ayt-enerji-kaynaklari-gelismeler": { "Isıl değer ile verim farklıdır": twoStage },
 };

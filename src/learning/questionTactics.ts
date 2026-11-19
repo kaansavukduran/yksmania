@@ -925,6 +925,19 @@ export const questionTactics: QuestionTactic[] = [
       "Simetrik eter için C sayısı çift olmalı; çift olması simetriyi kanıtlamaz (1+5 asimetriktir).",
     ],
   },
+  {
+    id: "enerji-verim-birim",
+    guides: ["ayt-enerji-kaynaklari-gelismeler"],
+    match: /enerji|verim|güç|kWh|kW|yenilenebilir|fosil|hidrojen|kaynak|yakıt|joule|kJ/i,
+    title: "Enerji mi güç mü, hangi sınırda verim?",
+    steps: [
+      "kW güç (J/s), kWh enerji: E = P · t, 1 kWh = 3600 kJ. 500 W · 2 h = 1 kWh; önce W'ı kW'a çevir.",
+      "Verim = yararlı ÷ giren (aynı sistem sınırı). Kalan enerji kaybolmaz, ısı/ses gibi diğer çıkışlara gider.",
+      "Ardışık aşamalarda verimler çarpılır: %60 sonra %80 → %48. Toplamak farklı paydaları birleştirir.",
+      "Aynı hizmeti karşılaştır: giriş = hedef ÷ verim. %40'tan %50'ye çıkış 10 puan, girişte %20 tasarruftur.",
+      "Kaynak ile taşıyıcıyı ayır: elektrik ve hidrojen taşıyıcıdır; yenilenebilirliği üretim yolu belirler. Nükleer fisyon yenilenebilir sayılmaz.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
