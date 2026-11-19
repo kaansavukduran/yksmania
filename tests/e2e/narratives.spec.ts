@@ -2,6 +2,7 @@ import { setThemePreference } from "./helpers/theme";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { narrativePacks } from "../../src/learning/narratives";
+import { openRecall } from "./helpers/guidePages";
 test.use({ locale: "tr-TR", timezoneId: "Europe/Istanbul" });
 async function nav(page: Page, name: string) {
   await expect(page.locator(".sidebar")).toBeAttached();
@@ -150,6 +151,7 @@ for (const subject of [
         const heading = await page
           .locator(".language-result > strong,.language-result > h3")
           .allTextContents();
+        await openRecall(page);
         const recalls = page.locator(".guide-recall details");
         await expect(recalls).toHaveCount(4);
         for (const recall of await recalls.all()) {
@@ -205,6 +207,7 @@ for (const subject of [
           "16 hidrojen bağı",
         );
         await expect(lab.locator('line[data-bond="hydrogen"]')).toHaveCount(16);
+        await openRecall(page);
         const recalls = page.locator(".guide-recall details");
         await expect(recalls).toHaveCount(5);
         for (const recall of await recalls.all()) {
@@ -318,6 +321,7 @@ for (const subject of [
       await expect(lab.locator(".walk-conclusion")).toContainText(
         scenario.conclusion,
       );
+      await openRecall(page);
       const recall = page.getByRole("region", {
         name: "Bakmadan hatırla",
         exact: true,

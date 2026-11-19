@@ -1,5 +1,6 @@
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
+import { turnToGuideContent } from "./helpers/guidePages";
 
 test.use({ hasTouch: true, locale: "tr-TR" });
 
@@ -23,6 +24,7 @@ async function lesson(page: Page, title: string) {
 }
 
 async function verifyTable(page: Page, cards: boolean, font = 15) {
+  await turnToGuideContent(page, page.locator(".guide-table"));
   const region = page.locator(".guide-table").first();
   await expect(region).toBeVisible();
   const geometry = await region.evaluate((element) => {

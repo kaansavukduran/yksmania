@@ -35,11 +35,9 @@ for (const unit of units) {
       [`lesson:${unit.id}`]: note,
     });
     const before = await stored(page);
-    await page.getByRole("button", { name: "Adım adım çalış", exact: true }).click();
+    // One numbered-page reader; the model stays on the first page.
+    await expect(page.locator(".guide-section").first().locator(".page-label")).toContainText("Sayfa 1 /");
     await expect(lab).toBeVisible();
-    await expect.poll(async () => (await stored(page)).explorations).toMatchObject({
-      [`guide:${unit.id}`]: { guided: true },
-    });
     const guidedChoices = JSON.stringify((await stored(page)).explorations);
     const svg = lab.locator("svg").first();
     const drawing = await svg.innerHTML();

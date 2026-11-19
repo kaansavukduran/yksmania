@@ -14,6 +14,7 @@ import {
   forge019TurkishGuideExtensions,
   forge019TurkishLessons,
 } from "../../src/learning/forge019Turkish";
+import { expectGuideSections, guideSectionCount } from "./helpers/guidePages";
 
 test.describe.configure({ mode: "parallel" });
 test.use({ locale: "tr-TR", hasTouch: true });
@@ -140,9 +141,7 @@ for (const extension of extensions)
         .filter({ hasText: lesson.title.tr })
         .click();
       await expect(page.locator(".study-title h1")).toHaveText(lesson.title.tr);
-      await expect(page.locator(".guide-section")).toHaveCount(
-        old.sections.length + extension.sections.length,
-      );
+      await expectGuideSections(page, old.sections.length + extension.sections.length);
       await expect(page.locator(".guide-section").first()).toContainText(
         old.sections[0].paragraphs[0],
       );

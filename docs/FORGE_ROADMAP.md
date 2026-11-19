@@ -15,8 +15,8 @@
 
 | Forge | Dikey dilim | Durum |
 | --- | --- | --- |
-| 040 | Eksik resmî geometri konuları: çember ✓, daire ✓, silindir–koni–küre, dik üçgende trigonometri, özel üçgenler, AYT çember–daire | Sürüyor |
-| 041 | Tek anlatım türü: sayfa sayfa okuma; ilk sayfada model, bölüm sonlarında örnek ve çözüm, sonda video önerileri | Sırada |
+| 040 | Eksik resmî geometri konuları: çember ✓, daire ✓, silindir–koni–küre ✓, dik üçgende trigonometri ✓; kalan: AYT çember–daire derinleştirme | Büyük ölçüde tamam |
+| 041 | Tek anlatım türü: numaralı sayfalar, sayfa çevirme düğmeleri ve tuşları, kaldığı sayfayı açma | Tamam (19 Kasım) |
 | 042 | Soru UX: şık eleme, karalama tuvali, klavye kısayolları (1–5, H, Enter, Space, F zen), kapatılabilir Web Audio geri bildirimi | Sırada |
 | 043 | Hata otopsisi: hata nedeni taksonomisi, 3 aşamalı onarım, Hata Avı Sprinti, deneme sonu kayıp net raporu, turlama/süre nabzı | Sırada |
 | 044 | Taktik kütüphanesi (Drive'daki 9 yöntem) + aktif kopya kâğıdı (boşluk doldurma) + önkoşul köprüsü | Sırada |

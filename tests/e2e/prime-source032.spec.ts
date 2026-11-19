@@ -3,6 +3,7 @@ import AxeBuilder from "@axe-core/playwright";
 import type { AppState } from "../../src/domain/model";
 import { setThemePreference } from "./helpers/theme";
 import { registerOfflineBootDiagnostics } from "./helpers/offlineBootDiagnostics";
+import { openWorkedExamples } from "./helpers/guidePages";
 registerOfflineBootDiagnostics();
 async function stored(page: Page): Promise<AppState> {
   return page.evaluate(
@@ -335,6 +336,7 @@ test("Asal source lesson exposes84alternative and saves one actual independent a
   await expect(
     page.locator(".guide-section").first().locator(".p032-lab"),
   ).toBeVisible();
+  await openWorkedExamples(page);
   const example = page.locator("details.worked-example").filter({
     has: page
       .locator("summary")

@@ -6,11 +6,11 @@ import { clarifiedGuideView } from "../src/learning/guidePresentation028";
 import { GuidedReading } from "../src/learning/GuidedReading";
 import { resolveGuideStep } from "../src/learning/guides/position";
 import expected from "./fixtures/virus-worked-030.json";
-const fixture = vi.hoisted(() => ({ writes: vi.fn(), keys: [] as string[] }));
+const fixture = vi.hoisted(() => ({ writes: vi.fn(), keys: [] as string[], guide: {} as Record<string, unknown> }));
 vi.mock("../src/learning/useExploration", () => ({
   useExploration: (key: string, defaults: Record<string, unknown>) => {
     fixture.keys.push(key);
-    return [defaults, fixture.writes];
+    return [{ ...defaults, ...(key.startsWith("guide:") ? fixture.guide : {}) }, fixture.writes];
   },
 }));
 vi.mock("../src/learning/VisualLab", () => ({ VisualLab: () => null }));
@@ -130,9 +130,12 @@ describe("030 capsid stock worked-example clarification", () => {
   it("exposes the complete experimental condition in the actual guided reader without learning writes", () => {
     const warn = vi.spyOn(console, "error");
     try {
+      // The reader is paged: open the worked-example page.
+      fixture.guide = { step: raw.sections.length, sectionCount: raw.sections.length };
       const html = renderToStaticMarkup(
         createElement(GuidedReading, { guide: clarifiedGuideView(raw) }),
       );
+      fixture.guide = {};
       expect(html).toContain(escape(expected.after.prompt));
       expect(html).not.toContain(escape(expected.before.prompt));
       expect(html).toContain("İlk adımı göster");

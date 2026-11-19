@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 import { createServer } from "vite";
 import type { AppState, Lesson } from "../../src/domain/model";
 import type { QuestionGuidance } from "../../src/domain/questionHelpModel";
+import { expectGuideSections, guideSectionCount } from "./helpers/guidePages";
 
 const cases = [
   ["Matematik", "oran-oranti", "Math"],
@@ -859,7 +860,7 @@ test.describe("linked membrane guide and built-in sheet", () => {
         sheetSections: 10,
         sheetExamples: 2,
         sheetRecall: 5,
-        sheetCount: 501,
+        sheetCount: 505,
       });
       const lesson = lessons.find(
         (item) => item.id === "hucre-zarinda-madde-alisverisleri",
@@ -890,7 +891,7 @@ test.describe("linked membrane guide and built-in sheet", () => {
       await expect(page.locator(".study-title h1")).toHaveText(
         "Hücre zarında madde alışverişleri",
       );
-      await expect(page.locator(".guide-section")).toHaveCount(10);
+      await expectGuideSections(page, 10);
       await expect(
         page.locator(".guide-examples > .worked-example"),
       ).toHaveCount(4);
@@ -956,7 +957,7 @@ test.describe("linked membrane guide and built-in sheet", () => {
 
       await nav(page, "Kopya Kağıtları");
       await expect(page.locator(".page-heading")).toContainText(
-        "501 hazır kağıt",
+        "505 hazır kağıt",
       );
       await page.getByRole("button", { name: "TYT", exact: true }).click();
       await page

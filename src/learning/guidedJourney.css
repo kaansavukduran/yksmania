@@ -39,3 +39,25 @@
   min-width: 0;
   overflow-wrap: anywhere;
 }
+
+/* Numbered pages in the single reading mode. */
+.guide-section,
+.guide-examples,
+.guide-recall {
+  scroll-margin-top: 1rem;
+}
+.page-label {
+  margin: 0 0 0.25rem;
+  letter-spacing: 0.02em;
+}
+.page-turn {
+  display: flex;
+  justify-content: flex-end;
+  margin-block: 1rem 0;
+}
+.page-turn button {
+  min-height: 44px;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  text-align: end;
+}

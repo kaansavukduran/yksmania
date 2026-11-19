@@ -266,8 +266,10 @@ describe("029 atomic membrane worked display clarification", () => {
   });
   it("uses the same view in actualTheory and built-in summaries without a state write", () => {
     fixture.writes.mockClear();
-    const saved = JSON.stringify(fixture.saved),
-      view = clarifiedGuideView(source);
+    const view = clarifiedGuideView(source);
+    // The reader is paged: open the worked-example page.
+    fixture.saved = { step: view.sections.length, guided: false, sectionCount: view.sections.length };
+    const saved = JSON.stringify(fixture.saved);
     const html = renderToStaticMarkup(
       createElement(Theory, { id, practice: () => {}, navigate: () => {} }),
     );

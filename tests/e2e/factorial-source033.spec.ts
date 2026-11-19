@@ -309,7 +309,11 @@ test("factorial source shows ownsolutions and saves two genuinely independent an
   await page.goto("/#/settings");
   await setThemePreference(page, "dark");
   await enter(page);
-  await page.getByRole("button", { name: "Tüm anlatım", exact: true }).click();
+  await page
+    .getByRole("navigation", { name: "Anlatım içeriği", exact: true })
+    .locator("summary")
+    .click();
+  await page.getByRole("button", { name: "Çözümlü örnekler", exact: true }).click();
   const example = page.locator("details.worked-example").filter({
     has: page
       .locator("summary")
@@ -392,7 +396,11 @@ test("all43factorialcards complete through actualUI and expose learner-facingE11
   await page.goto("/#/settings");
   await setThemePreference(page, "dark");
   await enter(page);
-  await page.getByRole("button", { name: "Tüm anlatım", exact: true }).click();
+  await page
+    .getByRole("navigation", { name: "Anlatım içeriği", exact: true })
+    .locator("summary")
+    .click();
+  await page.getByRole("button", { name: "Çözümlü örnekler", exact: true }).click();
   const example = page.locator("details.worked-example").filter({
     has: page
       .locator("summary")

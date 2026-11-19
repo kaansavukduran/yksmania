@@ -597,7 +597,7 @@ for (const sectionCount of [undefined, 11]) {
     );
     await expect(page.locator(".worked-example")).toHaveCount(12);
     await expect(page.locator(".learning-journey")).toContainText(
-      "Bölüm 20 / 21",
+      "Sayfa 20 / 21",
     );
     await expect(
       page
@@ -614,7 +614,7 @@ for (const sectionCount of [undefined, 11]) {
       learningEvidence(before),
     );
     await page
-      .getByRole("button", { name: "Sonraki bölüm", exact: true })
+      .getByRole("button", { name: "Sonraki sayfa", exact: true })
       .click();
     await expect(page.locator(".guide-recall h2")).toHaveText(
       "Anlatmadan önce hatırla",

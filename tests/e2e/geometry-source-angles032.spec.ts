@@ -3,6 +3,7 @@ import { test, expect, type Page, type Locator } from "@playwright/test";
 import { setThemePreference } from "./helpers/theme";
 import { registerOfflineBootDiagnostics } from "./helpers/offlineBootDiagnostics";
 import type { AppState } from "../../src/domain/model";
+import { openWorkedExamples } from "./helpers/guidePages";
 
 registerOfflineBootDiagnostics();
 const lessonId = "tyt-geo-acilar-kaynak-pekitirme-032";
@@ -305,6 +306,7 @@ for (const profile of [
         "125°.",
         "112°.",
       ];
+      await openWorkedExamples(page);
       const examples = page.locator(".worked-example");
       await expect(examples).toHaveCount(9);
       for (let i = 0; i < 9; i++) {

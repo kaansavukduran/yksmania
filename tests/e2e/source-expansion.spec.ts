@@ -1,4 +1,5 @@
 import { test, expect, type Page } from "@playwright/test";
+import { expectGuideSections, guideSectionCount, turnToGuideContent } from "./helpers/guidePages";
 async function nav(page: Page, name: string) {
   await expect(page.locator(".sidebar")).toBeAttached();
   const menu = page.getByRole("button", { name: "Menüyü aç", exact: true });
@@ -22,8 +23,8 @@ test("reviewed Seljuk, shell distribution and paragraph lessons explain evidence
 }) => {
   await page.goto("/");
   await open(page, "selcuklu-yerlesme-devletlesme", "Selçuklu Türkiyesi");
-  await expect(page.locator(".lesson-article")).toContainText("1071 Malazgirt");
-  await expect(page.locator(".lesson-article")).toContainText("1243 Kösedağ");
+  await turnToGuideContent(page, page.locator(".lesson-article .guide-section, .lesson-article .guide-examples, .lesson-article .guide-recall", { hasText: "1071 Malazgirt" }));
+  await turnToGuideContent(page, page.locator(".lesson-article .guide-section, .lesson-article .guide-examples, .lesson-article .guide-recall", { hasText: "1243 Kösedağ" }));
   await page
     .getByRole("button", { name: "1243 ile 1308’i ayır", exact: true })
     .click();
@@ -59,7 +60,7 @@ test("reviewed Seljuk, shell distribution and paragraph lessons explain evidence
   await page.reload();
   await expect(page.locator(".shell-result")).toContainText("18 elektron");
   await open(page, "paragraf", "Paragrafta ana düşünce");
-  expect(await page.locator(".guide-section").count()).toBeGreaterThanOrEqual(
+  expect(await guideSectionCount(page)).toBeGreaterThanOrEqual(
     7,
   );
   const passage = page.locator(".worked-example").filter({
@@ -100,7 +101,7 @@ test("reviewed Seljuk, shell distribution and paragraph lessons explain evidence
   await expect(
     page.locator('[data-forge023="ayt-sikloalkanlar"]'),
   ).toBeVisible();
-  expect(await page.locator(".guide-section").count()).toBeGreaterThan(0);
+  expect(await guideSectionCount(page)).toBeGreaterThan(0);
   await expect(
     page.getByRole("button", { name: /PDF.*ekle|Kaynak dosyalarını yönet/ }),
   ).toHaveCount(0);

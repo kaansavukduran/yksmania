@@ -1,6 +1,6 @@
 import { geometryExpansion032Ids } from "../data/supplementalTopics032";
 import { geometryCircle040Ids } from "./geometryCircle040";
-import { lazy, Suspense, useId, useState, useEffect, type ReactNode } from "react";
+import { lazy, Suspense, useId, useRef, useState, useEffect, type ReactNode } from "react";
 import { useExploration } from "./useExploration";
 import "./guidedJourney.css";
 import { ArrowRight, RotateCcw } from "lucide-react";
@@ -99,6 +99,16 @@ function Example({ example }: { example: WorkedExample }) {
     </details>
   );
 }
+function PageTurn({ next, title, onTurn }: { next: number; title: string; onTurn: (i: number) => void }) {
+  return (
+    <p className="page-turn">
+      <button className="text-button" onClick={() => onTurn(next)}>
+        Sonraki sayfa: {title} <ArrowRight size={16} aria-hidden="true" />
+      </button>
+    </p>
+  );
+}
+
 export function GuidedReading({
   guide,
   recallSupplement,
@@ -119,11 +129,22 @@ export function GuidedReading({
     journey.sectionCount,
     guide.sections.length,
   );
-  const guided = journey.guided;
-  // Geometry starts with the manipulable figure, so the first guided step
-  // explains the shape the learner is looking at. Saved section numbers do not
-  // change; the figure is positioned within the existing first section.
+  // One reading mode: every section is a numbered page in one continuous
+  // reader. The page bar follows scrolling, the buttons and arrow keys turn
+  // pages, and the last turned page is reopened next time.
+  // Geometry starts with the manipulable figure, so the first page explains
+  // the shape the learner is looking at; other models follow the first page.
   const visualSection = visualFirstLessonIds.has(guide.id) ? 0 : 1;
+  const pageId = (i: number) =>
+    i < guide.sections.length
+      ? `${prefix}-${i}`
+      : i === guide.sections.length
+        ? `${prefix}-examples`
+        : `${prefix}-recall`;
+  const [current, setCurrent] = useState(step);
+  // A page opened or turned stays aligned (even while lazy figures load)
+  // until the learner scrolls, touches or clicks.
+  const pinned = useRef<number | null>(step > 0 ? step : null);
   function setJourney(changes: Partial<typeof journey>) {
     persistJourney({
       ...changes,
@@ -131,30 +152,91 @@ export function GuidedReading({
       sectionCount: guide.sections.length,
     });
   }
-  useEffect(() => {
-    if (!guided) return;
-    const frame = requestAnimationFrame(() => {
-      const id =
-        step < guide.sections.length
-          ? `${prefix}-${step}`
-          : step === guide.sections.length
-            ? `${prefix}-examples`
-            : `${prefix}-recall`;
-      moveToSection(id);
-    });
-    return () => cancelAnimationFrame(frame);
-  }, [step, guided, prefix, guide.sections.length]);
-  function jump(i: number) {
-    if (guided) setJourney({ step: i });
-    else
-      moveToSection(
-        i < guide.sections.length
-          ? `${prefix}-${i}`
-          : i === guide.sections.length
-            ? `${prefix}-examples`
-            : `${prefix}-recall`,
-      );
+  function goTo(i: number) {
+    if (i < 0 || i > stages - 1) return;
+    setJourney({ step: i });
+    setCurrent(i);
+    pinned.current = i;
+    moveToSection(pageId(i));
   }
+  // Reopen the last turned page without moving keyboard focus, and keep the
+  // pinned page aligned while content above it finishes loading.
+  useEffect(() => {
+    const align = () => {
+      if (pinned.current === null) return;
+      document.getElementById(pageId(pinned.current))?.scrollIntoView({ block: "start" });
+    };
+    const frame = requestAnimationFrame(align);
+    const release = () => {
+      pinned.current = null;
+    };
+    const releaseKeys = (event: KeyboardEvent) => {
+      if (["PageDown", "PageUp", "Home", "End", "ArrowDown", "ArrowUp", " "].includes(event.key)) release();
+    };
+    window.addEventListener("keydown", releaseKeys);
+    const resize = typeof ResizeObserver === "undefined" ? null : new ResizeObserver(align);
+    resize?.observe(document.body);
+    for (const type of ["wheel", "touchstart", "pointerdown"] as const)
+      window.addEventListener(type, release, { passive: true });
+    return () => {
+      cancelAnimationFrame(frame);
+      resize?.disconnect();
+      for (const type of ["wheel", "touchstart", "pointerdown"] as const)
+        window.removeEventListener(type, release);
+      window.removeEventListener("keydown", releaseKeys);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [guide.id]);
+  // The page bar shows the page whose top is nearest the reading line.
+  useEffect(() => {
+    if (typeof IntersectionObserver === "undefined") return;
+    const ids = Array.from({ length: stages }, (_, i) => pageId(i));
+    const observer = new IntersectionObserver(
+      () => {
+        if (pinned.current !== null) {
+          setCurrent(pinned.current);
+          return;
+        }
+        let best = 0;
+        ids.forEach((id, i) => {
+          const el = document.getElementById(id);
+          if (el && el.getBoundingClientRect().top <= window.innerHeight * 0.35) best = i;
+        });
+        setCurrent(best);
+      },
+      { rootMargin: "0px 0px -60% 0px", threshold: [0, 1] },
+    );
+    for (const id of ids) {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    }
+    return () => observer.disconnect();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [prefix, stages]);
+  // Arrow keys turn pages unless the learner is using a control.
+  useEffect(() => {
+    function onKey(event: KeyboardEvent) {
+      if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey) return;
+      if (event.key !== "ArrowRight" && event.key !== "ArrowLeft") return;
+      const el = event.target as HTMLElement | null;
+      if (el?.closest("input, textarea, select, [contenteditable='true'], [role='slider'], [role='tablist'], [role='radiogroup'], [role='radio'], [role='listbox'], [role='menu'], [role='grid'], svg, .visual-lab")) return;
+      const next = event.key === "ArrowRight" ? current + 1 : current - 1;
+      if (next < 0 || next > stages - 1) return;
+      event.preventDefault();
+      goTo(next);
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  });
+  function jump(i: number) {
+    goTo(i);
+  }
+  const pageTitle = (i: number) =>
+    i < guide.sections.length
+      ? guide.sections[i].title
+      : i === guide.sections.length
+        ? "Birlikte çöz"
+        : "Bakmadan hatırla";
 
   return (
     <>
@@ -163,38 +245,13 @@ export function GuidedReading({
         role="group"
         aria-label="Anlatım düzeni"
       >
-        <div className="segmented">
-          <button
-            aria-pressed={guided}
-            className={guided ? "active" : ""}
-            onClick={() => setJourney({ guided: true })}
-          >
-            Adım adım çalış
-          </button>
-          <button
-            aria-pressed={!guided}
-            className={!guided ? "active" : ""}
-            onClick={() => setJourney({ guided: false })}
-          >
-            Tüm anlatım
-          </button>
-        </div>
-        {guided && (
-          <>
-            <p className="small muted">
-              Bölüm {step + 1} / {stages} ·{" "}
-              {step < guide.sections.length
-                ? guide.sections[step].title
-                : step === guide.sections.length
-                  ? "Birlikte çöz"
-                  : "Bakmadan hatırla"}
-            </p>
-            <p className="small muted">
-              Bu sıra, anlatımda bulunduğun yeri gösterir. Öğrenme veya
-              tamamlanma puanı değildir.
-            </p>
-          </>
-        )}
+        <p className="small muted">
+          Sayfa {current + 1} / {stages} · {pageTitle(current)}
+        </p>
+        <p className="small muted">
+          Sayfa numarası yalnız yerini gösterir; öğrenme veya tamamlanma puanı
+          değildir.
+        </p>
       </div>
       <nav className="guide-contents" aria-label="Anlatım içeriği">
         <p className="small muted">
@@ -204,16 +261,16 @@ export function GuidedReading({
           <summary>İçindekiler</summary>
           <div>
             {guide.sections.map(
-              (section, i) =>
-                (!guided || i === step) && (
-                  <button
-                    className="text-button"
-                    key={section.title}
-                    onClick={() => jump(i)}
-                  >
-                    {section.title}
-                  </button>
-                ),
+              (section, i) => (
+                <button
+                  className="text-button"
+                  key={section.title}
+                  aria-current={i === step ? "page" : undefined}
+                  onClick={() => jump(i)}
+                >
+                  {section.title}
+                </button>
+              ),
             )}
             <button
               className="text-button"
@@ -221,17 +278,26 @@ export function GuidedReading({
             >
               Çözümlü örnekler
             </button>
+            <button
+              className="text-button"
+              onClick={() => jump(guide.sections.length + 1)}
+            >
+              Bakmadan hatırla
+            </button>
           </div>
         </details>
       </nav>
       {guide.sections.map(
         (section, i) =>
-          (!guided || i === step) && (
+          (
             <section
               className="guide-section"
               key={section.title}
               id={`${prefix}-${i}`}
             >
+              <p className="page-label small muted">
+                Sayfa {i + 1} / {stages}
+              </p>
               <h2 tabIndex={-1}>{section.title}</h2>
               {section.paragraphs.map((paragraph, j) => (
                 <p key={j}>{paragraph}</p>
@@ -290,10 +356,11 @@ export function GuidedReading({
                 </Suspense>
               )}
               {i === visualSection && !geometryCircle040Ids.includes(guide.id) && <VisualLab id={guide.id} />}
+              <PageTurn next={i + 1} title={pageTitle(i + 1)} onTurn={goTo} />
             </section>
           ),
       )}
-      {(!guided || step === guide.sections.length) && (
+      {(
         <section className="guide-examples" id={`${prefix}-examples`}>
           <h2 tabIndex={-1}>Çözümlü örnekler</h2>
           <p className="small muted">
@@ -303,9 +370,14 @@ export function GuidedReading({
           {guide.examples.map((example) => (
             <Example key={example.title} example={example} />
           ))}
+          <PageTurn
+            next={guide.sections.length + 1}
+            title={pageTitle(guide.sections.length + 1)}
+            onTurn={goTo}
+          />
         </section>
       )}
-      {(!guided || step === guide.sections.length + 1) && (
+      {(
         <section className="guide-recall" id={`${prefix}-recall`}>
           <h2 tabIndex={-1}>Anlatmadan önce hatırla</h2>
           <p className="small muted">
@@ -321,27 +393,25 @@ export function GuidedReading({
           {recallSupplement}
         </section>
       )}
-      {guided && (
-        <nav className="journey-actions" aria-label="Anlatım adımları">
-          <button
-            className="secondary"
-            disabled={step === 0}
-            onClick={() => setJourney({ step: step - 1 })}
-          >
-            Önceki bölüm
-          </button>
-          <span className="small muted">
-            {step + 1} / {stages}
-          </span>
-          <button
-            className="primary"
-            disabled={step === stages - 1}
-            onClick={() => setJourney({ step: step + 1 })}
-          >
-            Sonraki bölüm <ArrowRight size={17} />
-          </button>
-        </nav>
-      )}
+      <nav className="journey-actions journey-sticky" aria-label="Anlatım sayfaları">
+        <button
+          className="secondary"
+          disabled={current === 0}
+          onClick={() => goTo(current - 1)}
+        >
+          Önceki sayfa
+        </button>
+        <span className="small muted">
+          {current + 1} / {stages}
+        </span>
+        <button
+          className="primary"
+          disabled={current === stages - 1}
+          onClick={() => goTo(current + 1)}
+        >
+          Sonraki sayfa <ArrowRight size={17} />
+        </button>
+      </nav>
     </>
   );
 }

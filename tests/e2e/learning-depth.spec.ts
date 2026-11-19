@@ -1,6 +1,7 @@
 import { setThemePreference } from "./helpers/theme";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
+import { guideSectionCount, openGuidePage, openWorkedExamples } from "./helpers/guidePages";
 test.use({ hasTouch: true, locale: "tr-TR" });
 async function nav(page: Page, name: string) {
   await expect(page.locator(".sidebar")).toBeAttached();
@@ -67,7 +68,7 @@ test("YKS-016 full-width theory and separate ready cheatsheets retain notes offl
   await nav(page, "Bugün");
   await expect(
     page.getByRole("region", { name: "Konu planı", exact: true }),
-  ).toContainText("0/500");
+  ).toContainText("0/504");
   await expect(page.locator(".stat-number").first()).toHaveText("0");
 });
 test("YKS-016 guides explain steps and keep topic/question cards padded; completed practice offers verified OSYM references without material imports", async ({
@@ -75,6 +76,7 @@ test("YKS-016 guides explain steps and keep topic/question cards padded; complet
 }) => {
   await page.goto("/");
   await rational(page);
+  await openWorkedExamples(page);
   const example = page.locator(".worked-example").filter({
     has: page.locator("summary", { hasText: "Negatiflerin arasındaki sayı" }),
   });
@@ -170,6 +172,7 @@ test("YKS-016 native sheets and long explanations reflow at 320px, 200% UI and 1
   await expect(
     page.locator(".topic-cheatsheet,.cheatsheet-toggle"),
   ).toHaveCount(0);
+  await openWorkedExamples(page);
   const example = page.locator(".worked-example").first();
   await example.locator("summary").tap();
   await example
@@ -209,52 +212,43 @@ test("guided study advances meaningful sections, keeps its place and notes offli
   });
   await rational(page);
   const sections = page.locator(".guide-section");
-  const fullCount = await sections.count();
-  expect(fullCount).toBeGreaterThanOrEqual(6);
-  const firstTitle = await sections.first().locator(":scope > h2").innerText();
+  // One reading mode: every section is a numbered page in a single reader.
+  const sectionCount = await guideSectionCount(page);
+  expect(sectionCount).toBeGreaterThanOrEqual(6);
+  await expect(sections).toHaveCount(sectionCount);
+  const titles = await sections.locator(":scope > h2").allInnerTexts();
   await page
     .getByRole("textbox", { name: "Notun", exact: true })
     .fill("Konu notum adımlarla korunmalı.");
   await expect(page.locator(".save-status")).toContainText(
     "Bu cihazda kaydedildi",
   );
-  await page
-    .getByRole("button", { name: "Adım adım çalış", exact: true })
-    .click();
-  await expect(sections).toHaveCount(1);
-  await expect(sections.locator(":scope > h2")).toHaveText(firstTitle);
-  await page
-    .getByRole("button", { name: "Sonraki bölüm", exact: true })
-    .click();
-  await expect(sections.locator(":scope > h2")).not.toHaveText(firstTitle);
-  await expect(sections.locator(":scope > h2")).toBeFocused();
   await expect(page.locator(".visual-lab")).toHaveCount(1);
   await page.getByRole("slider", { name: /^Payda:/ }).fill("3");
   await expect(page.locator(".area-result")).toContainText("1/3 ≈ 0,333");
-  await page
-    .getByRole("button", { name: "Sonraki bölüm", exact: true })
-    .click();
-  const savedTitle = await sections.locator(":scope > h2").innerText();
+  const journey = page.locator(".learning-journey");
+  // Each page ends with a button that turns to the next page.
+  await sections.nth(0).getByRole("button", { name: /^Sonraki sayfa:/ }).click();
+  await expect(sections.nth(1).locator(":scope > h2")).toBeFocused();
+  await sections.nth(1).getByRole("button", { name: /^Sonraki sayfa:/ }).click();
+  await expect(sections.nth(2).locator(":scope > h2")).toBeFocused();
+  await expect(journey).toContainText(`Sayfa 3 / ${sectionCount + 2} · ${titles[2]}`);
   await expect(page.locator(".save-status")).toContainText(
     "Bu cihazda kaydedildi",
   );
   await context.setOffline(true);
   await page.reload();
-  await expect(
-    page.getByRole("button", { name: "Adım adım çalış", exact: true }),
-  ).toHaveAttribute("aria-pressed", "true");
-  await expect(sections).toHaveCount(1);
-  await expect(sections.locator(":scope > h2")).toHaveText(savedTitle);
+  // The last turned page reopens.
+  await expect(journey).toContainText(`Sayfa 3 / ${sectionCount + 2}`);
   await expect(
     page.getByRole("textbox", { name: "Notun", exact: true }),
   ).toHaveValue("Konu notum adımlarla korunmalı.");
-  await page.getByRole("button", { name: "Önceki bölüm", exact: true }).click();
+  await openGuidePage(page, titles[0]);
+  await expect(sections.nth(0).locator(":scope > h2")).toBeFocused();
   await expect(page.locator(".area-result")).toContainText("1/3 ≈ 0,333");
-  await page.getByRole("button", { name: "Tüm anlatım", exact: true }).click();
-  await expect(sections).toHaveCount(fullCount);
   await nav(page, "Bugün");
   await expect(page.locator(".stat-number").first()).toHaveText("0");
   await expect(
     page.getByRole("region", { name: "Konu planı", exact: true }),
-  ).toContainText("0/500");
+  ).toContainText("0/504");
 });

@@ -637,7 +637,11 @@ test("all 48 rational cards finish independently and Today keeps the actual save
   await offlineReady(page);
   await context.setOffline(true);
   await enter(page);
-  await page.getByRole("button", { name: "Tüm anlatım", exact: true }).click();
+  await page
+    .getByRole("navigation", { name: "Anlatım içeriği", exact: true })
+    .locator("summary")
+    .click();
+  await page.getByRole("button", { name: "Çözümlü örnekler", exact: true }).click();
   const example = page.locator("details.worked-example").filter({
     has: page
       .locator("summary")
@@ -837,9 +841,6 @@ test.describe("rational corrected feedback at 320 Matrix large text", () => {
     const before = await stored(page);
     await context.setOffline(true);
     await enter(page);
-    await page
-      .getByRole("button", { name: "Tüm anlatım", exact: true })
-      .click();
     const contents = page.getByRole("navigation", {
       name: "Anlatım içeriği",
       exact: true,

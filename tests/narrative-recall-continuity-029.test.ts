@@ -155,6 +155,8 @@ describe("029 narrative recall continuity inside enriched guides", () => {
   });
 
   it("keeps the optional-slot-free guide contract and never dispatches while reading", () => {
+    // The reader is paged: open each guide on its recall page.
+    for (const guide of guides) seed(guide.id, true, guide.sections.length + 1);
     const before = structuredClone(fixture.state);
     for (const guide of guides) {
       const html = renderToStaticMarkup(
@@ -170,15 +172,16 @@ describe("029 narrative recall continuity inside enriched guides", () => {
     expect(fixture.state).toEqual(before);
   });
 
-  it("hides old recall and pitfalls during teaching and worked-example stages for all31 IDs", () => {
+  it("keeps old recall and pitfalls on the last page at every saved page for all31 IDs", () => {
+    // One numbered-page reader: the recall page is always the last page,
+    // whichever page was saved; reading never writes state.
     for (const [i, pack] of narrativePacks.entries()) {
       for (const step of [0, guides[i].sections.length]) {
         seed(pack.id, true, step);
         const before = structuredClone(fixture.state);
         const html = renderGuide(i);
-        expect(html).not.toContain('class="narrative-recall"');
-        expect(html).not.toContain('class="narrative-pitfalls"');
-        expect(html).not.toContain("Hatırlama alanı açılıyor");
+        expect(html.match(/class="narrative-recall"/g)).toHaveLength(1);
+        expect(html.match(/class="narrative-pitfalls"/g)).toHaveLength(1);
         expect(fixture.state).toEqual(before);
       }
     }
@@ -215,7 +218,7 @@ describe("029 narrative recall continuity inside enriched guides", () => {
 
   it("restores both62 saved legacy prompts,answers and attempts in the full-reading layout", () => {
     for (const [i, pack] of narrativePacks.entries()) {
-      seed(pack.id, false, 0);
+      seed(pack.id, false, guides[i].sections.length + 1);
       for (const index of [0, 1]) {
         Object.assign(fixture.state.explorations[`recall:${pack.id}`], {
           index,
@@ -286,7 +289,7 @@ describe("029 narrative recall continuity inside enriched guides", () => {
     }
   });
 
-  it("actual Theory lazy-loads old recall exactly once at final stage and leaves it absent early", async () => {
+  it("actual Theory loads old recall exactly once on its last page from any saved page", async () => {
     const before = structuredClone(fixture.state);
     for (const [i, pack] of narrativePacks.entries()) {
       seed(pack.id, true, 0);
@@ -297,8 +300,7 @@ describe("029 narrative recall continuity inside enriched guides", () => {
           navigate: () => {},
         }),
       );
-      expect(early).not.toContain('class="narrative-recall"');
-      expect(early).not.toContain('class="narrative-pitfalls"');
+      expect(early.match(/class="narrative-recall"/g)).toHaveLength(1);
       seed(pack.id, true, guides[i].sections.length + 1);
       const html = await renderReady(
         createElement(Theory, {

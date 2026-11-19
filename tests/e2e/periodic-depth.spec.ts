@@ -1,6 +1,7 @@
 import { setThemePreference } from "./helpers/theme";
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
+import { expectGuideSections, guideSectionCount } from "./helpers/guidePages";
 const ids = [
   "elementlerin-siniflandirilmasi",
   "atom-capi-karsilastirma",
@@ -14,7 +15,7 @@ test("four new lessons expose explanations, actual changing models and saved off
   await page.goto("/");
   for (const id of ids) {
     await page.goto("/#/lesson?id=" + id);
-    await expect(page.locator(".guide-section")).toHaveCount(6);
+    await expectGuideSections(page, 6);
     const lab = page.locator(".periodic-comparison");
     await expect(lab).toBeVisible();
     const first = await lab.getByLabel("İncelenecek durum").inputValue();

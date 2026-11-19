@@ -19,6 +19,7 @@ import type {
   HelpQuestion,
   QuestionGuidance,
 } from "../../src/domain/questionHelpModel";
+import { expectGuideSections, guideSectionCount } from "./helpers/guidePages";
 
 registerOfflineBootDiagnostics();
 
@@ -773,7 +774,7 @@ test("three Guide views: Theory and Sheet show occupied-shell meaning offline wh
   for (const item of guideCases) {
     const meta = guideMetadata.get(item.id)!;
     await page.goto(`/#/lesson?id=${encodeURIComponent(item.id)}`);
-    await expect(page.locator(".guide-section")).toHaveCount(meta.sections);
+    await expectGuideSections(page, meta.sections);
     await expect(page.locator(".guide-examples .worked-example")).toHaveCount(
       meta.examples,
     );

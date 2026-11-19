@@ -14,6 +14,7 @@ import type { AppState, Lesson } from "../../src/domain/model";
 import type { QuestionGuidance } from "../../src/domain/questionHelpModel";
 
 import type { WorkedExample } from "../../src/learning/guides/types";
+import { expectGuideSections, guideSectionCount } from "./helpers/guidePages";
 
 // Node and Playwright read these frozen literal fixtures without importing
 // production presentation functions or requiring JSON module attributes.
@@ -987,7 +988,7 @@ test.describe("030 linked virus and plant guides and built-in sheets", () => {
           sheetSections: target.sections,
           sheetExamples: 2,
           sheetRecall: target.recall,
-          sheetCount: 501,
+          sheetCount: 505,
         });
         await nav(page, "Konu Anlatımı");
         await page.getByRole("button", { name: "TYT", exact: true }).click();
@@ -1002,9 +1003,7 @@ test.describe("030 linked virus and plant guides and built-in sheets", () => {
         await expect(page.locator(".study-title h1")).toHaveText(
           lesson.title.tr,
         );
-        await expect(page.locator(".guide-section")).toHaveCount(
-          target.sections,
-        );
+        await expectGuideSections(page, target.sections);
         await expect(
           page.locator(".guide-examples > .worked-example"),
         ).toHaveCount(target.examples);
@@ -1061,7 +1060,7 @@ test.describe("030 linked virus and plant guides and built-in sheets", () => {
         expect(await allWrites(page)).toEqual([]);
         await nav(page, "Kopya Kağıtları");
         await expect(page.locator(".page-heading")).toContainText(
-          "501 hazır kağıt",
+          "505 hazır kağıt",
         );
         await page.getByRole("button", { name: "TYT", exact: true }).click();
         await page

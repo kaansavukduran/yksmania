@@ -1,6 +1,7 @@
 import { setThemePreference } from "./helpers/theme";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
+import { expectGuideSections, guideSectionCount } from "./helpers/guidePages";
 test.use({ locale: "tr-TR", hasTouch: true });
 const title = "Çarpanlara ayırma";
 async function nav(page: Page, name: string) {
@@ -26,7 +27,7 @@ test("factorization pieces preserve area, signed factors preserve coefficients a
 }) => {
   await page.goto("/");
   await open(page);
-  expect(await page.locator(".guide-section").count()).toBeGreaterThanOrEqual(
+  expect(await guideSectionCount(page)).toBeGreaterThanOrEqual(
     12,
   );
   const lab = page.locator(".factorization-lab");

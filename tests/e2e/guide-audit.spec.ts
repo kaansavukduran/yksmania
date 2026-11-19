@@ -1,6 +1,7 @@
 import { setThemePreference } from "./helpers/theme";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
+import { expectGuideSections, guideSectionCount, openWorkedExamples } from "./helpers/guidePages";
 test.use({ hasTouch: true, locale: "tr-TR" });
 
 async function nav(page: Page, name: string) {
@@ -93,6 +94,7 @@ test("equations retain reversible steps and distinguish a zero coefficient offli
   await expect(
     lab.getByRole("button", { name: "İki tarafı a’ya böl", exact: true }),
   ).toHaveCount(0);
+  await openWorkedExamples(page);
   const example = page.locator(".worked-example").filter({
     has: page.locator("summary", { hasText: "Paydadaki bilinmeyen" }),
   });
@@ -113,7 +115,7 @@ test("equations retain reversible steps and distinguish a zero coefficient offli
   await nav(page, "Bugün");
   await expect(
     page.getByRole("region", { name: "Konu planı", exact: true }),
-  ).toContainText("0/500");
+  ).toContainText("0/504");
   await expect(page.locator(".stat-number").first()).toHaveText("0");
 });
 
@@ -191,6 +193,7 @@ test("YKS-020 inequality remains readable while direction and endpoints survive 
   }
   await lab.getByRole("slider", { name: "a katsayısı", exact: true }).fill("0");
   await expect(lab.locator(".algebra-result")).toContainText("Çözüm kümesi: ℝ");
+  await openWorkedExamples(page);
   const example = page.locator(".worked-example").filter({
     has: page.locator("summary", {
       hasText: "Negatif katsayı yönü değiştirir",
@@ -256,10 +259,11 @@ test("expanded source-led guides expose interactive models and reasoned worked e
     await page.getByRole("button", { name: subject }).click();
     await page.getByRole("button", { name: lesson }).click();
     await expect(page.locator(".study-title h1")).toHaveText(lesson);
-    expect(await page.locator(".guide-section").count()).toBeGreaterThanOrEqual(
+    expect(await guideSectionCount(page)).toBeGreaterThanOrEqual(
       6,
     );
     await expect(page.locator(".visual-lab")).toHaveCount(1);
+    await openWorkedExamples(page);
     const example = page
       .locator(".worked-example")
       .filter({ has: page.locator("summary", { hasText: title }) });
