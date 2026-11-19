@@ -70,6 +70,8 @@ export default defineConfig({
         navigateFallback: `${appBase === "./" ? "" : appBase}index.html`,
         cleanupOutdatedCaches: true,
         clientsClaim: true,
+        // Cap concurrency and retry temporary host errors during precaching.
+        importScripts: ["sw-fetch-retry.js"],
       },
     }),
   ],

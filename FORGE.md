@@ -13,6 +13,8 @@
 - **Türkiye şekilleri (4 figür, 1:10m gerçek sınır):** iklim tipleri (örnek kentler adım adım), dağların uzanışı ve yağış gölgesi (nemli hava okları, Ege koridorları), Ege horst–graben yakın planı (yalnız kıyı çizgisi, kutu yok), KAF/DAF ve yanal hareket. Dağ, fay ve koridor çizgileri yaklaşık olarak etiketli; yer adları numaralı pullar ve alttaki anahtar listesinde.
 - 320 px/büyük yazıda çiplerde sözcük bölünmesi ve taşma giderildi (çip grubu kendi sütununda kalır, sözcükler bölünmez); ayarlar testi 4 temaya güncellendi.
 
+- **Çevrimdışı kurulum dayanıklılığı:** Pages yayın sonrası doğrulaması iki kez, GitHub Pages'in ilk önbellekleme sırasındaki ani ~310 dosyalık yükte rastgele bir dosyaya 503 döndürmesiyle düştü (yayın kendisi başarılıydı). Service worker'a `sw-fetch-retry.js` eklendi: eşzamanlı indirme 8 ile sınırlı, 429/502/503/504 yanıtları kısa bekleyişlerle 3 kez yeniden denenir. Yerel Pages doğrulaması PASS; service worker kullanan 8 tarayıcı dosyası 80/80 PASS.
+
 Doğrulama (yerel): check PASS; 2.486 birim PASS (seçim kutusu arayan üç test yardımcısı ChoiceSelect'i de tanıyacak şekilde güncellendi); build PASS; seçili tarayıcı testleri PASS. Tam tarayıcı seti yerelde ~3,5 saat sürdüğü için çalışma dalında GitHub CI ile koşturuluyor; main'e CI yeşil olunca alınacak.
 
 ---
