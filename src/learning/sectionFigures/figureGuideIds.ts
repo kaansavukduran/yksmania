@@ -44,6 +44,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "tyt-geo-trigonometrik-oranlar-040",
   "selcuklu-yerlesme-devletlesme",
   "nukleik-asitler-yapi",
+  "mitoz",
   "dna-eslenmesi",
   "hucre-organelleri",
   "atom-modelleri",

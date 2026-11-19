@@ -405,6 +405,31 @@ export const questionTactics: QuestionTactic[] = [
       "Sabit güçte süre = enerji / güç: güç iki katına çıkınca aynı geçiş yarı sürede biter.",
     ],
   },
+  {
+    id: "mitoz-sayim",
+    guides: ["mitoz"],
+    match: /kromozom|kromatit|DNA|anafaz|metafaz|kutup|2n/i,
+    title: "Mitozda sayım soruları",
+    steps: [
+      "Önce evreyi ve alanı yaz: bütün hücre mi, tek kutup mu, tek yavru mu?",
+      "Kromozom = sentromer sayısı. S'den sonra kromozom sayısı aynı, DNA molekülü ve kromatit iki katı.",
+      "Anafazda kardeşler ayrılınca bütün hücrede kromozom sayısı anlık iki katı olur; DNA artmaz. Bir kutup başlangıç sayısını taşır.",
+      "Sitokinez sonrası her yavru 2n ve 2C alır; iki yavrunun toplam DNA'sı 4C'dir, DNA kaybolmaz.",
+    ],
+  },
+  {
+    id: "interfaz-ayikla",
+    guides: ["mitoz"],
+    match: /interfaz|denetim|bölünemez|bölünmez|G₀|alyuvar|sinir hücre/i,
+    title: "İnterfaz, denetim ve bölünmeyen hücreler",
+    steps: [
+      "İnterfazda olanlar: büyüme, organel çoğalması, solunum, protein sentezi, DNA eşlenmesi (S). Olmayan: iğ ipliğinin kromozoma bağlanması (mitoz).",
+      "“Kromozom sayısı iki katına çıkar” interfaz için yanlıştır; iki katına çıkan DNA miktarıdır.",
+      "Olgun memeli alyuvarı çekirdeksiz olduğu için bölünemez; sinir ve çizgili kas hücreleri genellikle bölünmez (G₀).",
+      "Karaciğer hücresi uyarıyla döngüye dönebilir, bağırsak epiteli sürekli bölünür: “özelleşmiş = bölünemez” genellemesi yapma.",
+      "Denetim noktası seçerken zamana bak: G₁ büyüklük ve sinyal, G₂ eşlenmiş DNA'nın hasarı, M iğ ipliği–kinetokor bağlantısı.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
