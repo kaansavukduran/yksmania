@@ -68,6 +68,7 @@ import { geographyFiguresLocation } from "./geographyFiguresLocation";
 import { historyFiguresMedieval } from "./historyFiguresMedieval";
 import { turkishFiguresSound } from "./turkishFiguresSound";
 import { chemistryFiguresModels } from "./chemistryFiguresModels";
+import { physicsFiguresPhoto } from "./physicsFiguresPhoto";
 import { philosophyFigures } from "./philosophyFigures";
 import { religionFigures } from "./religionFigures";
 import { geographyFiguresPopulation } from "./geographyFiguresPopulation";
@@ -146,6 +147,7 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   historyFiguresMedieval,
   turkishFiguresSound,
   chemistryFiguresModels,
+  physicsFiguresPhoto,
   philosophyFigures,
   religionFigures,
   geographyFiguresPopulation,

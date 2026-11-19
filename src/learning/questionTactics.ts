@@ -1318,6 +1318,19 @@ export const questionTactics: QuestionTactic[] = [
       "Bohr tek elektronlu sistemlerde geçerlidir: H, He⁺ (2 − 1), Li²⁺ (3 − 2); nötr He uymaz.",
     ],
   },
+  {
+    id: "fotoelektrik-esik-akim",
+    guides: ["fotoelektrik-olay"],
+    match: /foto|eşik|iş fonksiyonu|durdurma|kesme|doyma|Kmax|foton|fotosel/i,
+    title: "Fotoelektrikte kopma, enerji ve akımı üç ayrı basamakta çöz",
+    steps: [
+      "Önce eşik: hf ≥ φ mi? Değilse elektron kopmaz; negatif Kmax yazma. λ₀ = hc/φ (hc ≈ 1240 eV·nm).",
+      "Kmax = hf − φ; durdurma gerilimi büyüklüğü Vs = Kmax/e. Şiddet aynı frekansta Kmax ve Vs'yi değiştirmez.",
+      "Akım = e·η·Ṅ: daha çok foton daha yüksek plato. Güç sabitken frekans artarsa foton sayısı azalır.",
+      "Akım sıfırsa kopma ile toplamayı ayır: ters gerilim kopan elektronu durdurabilir (2026 AYT Fen 13 mantığı).",
+      "Kmax–f doğrusunda eğim h, düşey kesişim −φ, yatay kesişim f₀ (2024 AYT Fen 13 mantığı).",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
