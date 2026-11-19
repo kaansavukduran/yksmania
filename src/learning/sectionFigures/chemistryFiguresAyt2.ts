@@ -475,6 +475,38 @@ const nanoCut: FigureDef = {
   },
 };
 
+/* ---------- 13. Tekrar kullanım eşiği ---------- */
+const reuseThreshold: FigureDef = {
+  caption:
+    "Sürgüyle kullanım sayısını n artır. Tek kullanımlık seçenek her hizmette 12 birim enerji harcar (12n). Tekrar kullanılan ürün başta 60 birim, her kullanımda 3 birim ister (60 + 3n). İki doğru 60 + 3n = 12n, n ≈ 6,67'de kesişir: 7. kullanımdan itibaren tekrar kullanım daha az toplam enerji harcar. Karşılaştırma aynı hizmet (işlevsel birim) üzerinden yapılır.",
+  alt: "Toplam enerji–kullanım sayısı grafiği: dik eğimli tek kullanımlık doğrusu ve 60'tan başlayan yatık tekrar kullanım doğrusu; kesişim noktası ve sürgüyle hareket eden dikey çizgi.",
+  param: { label: "Kullanım sayısı n", min: 1, max: 12, step: 1, init: 7, unit: "" },
+  draw: (n) => {
+    const X = (k: number) => k * 0.55;
+    const Y = (e: number) => e * 0.03;
+    const els: El[] = [vec(v(0, 0), v(X(13), 0), { tone: "ink" }), vec(v(0, 0), v(0, Y(160)), { tone: "ink" })];
+    els.push(txt(v(X(13), 0), "n", "se", { tone: "ink", small: true }), txt(v(0, Y(160)), "toplam enerji", "n", { tone: "ink", small: true }));
+    els.push(seg(v(0, 0), v(X(12), Y(144)), { tone: "a", bold: true }), seg(v(0, Y(60)), v(X(12), Y(96)), { tone: "c", bold: true }));
+    els.push(txt(v(X(10.5), Y(126)), "tek kullanım 12n", "se", { tone: "a", small: true, bold: true }));
+    els.push(txt(v(X(12), Y(96)), "tekrar 60 + 3n", "se", { tone: "c", small: true, bold: true }));
+    const nx = 60 / 9;
+    els.push(ball(v(X(nx), Y(12 * nx)), 0.1, "warn"), seg(v(X(nx), 0), v(X(nx), Y(12 * nx)), { tone: "muted", dash: true, thin: true }));
+    els.push(txt(v(X(nx), 0), "6,67", "s", { tone: "muted", small: true, soft: true }));
+    els.push(seg(v(X(n), 0), v(X(n), Y(150)), { tone: "ink", dash: true, thin: true }));
+    els.push(ball(v(X(n), Y(12 * n)), 0.09, "a"), ball(v(X(n), Y(60 + 3 * n)), 0.09, "c"));
+    els.push(txt(v(-1.0, Y(175)), " ", "c"), txt(v(X(13) + 1.4, -0.8), " ", "c"));
+    const single = 12 * n;
+    const reuse = 60 + 3 * n;
+    return {
+      els,
+      readout: [
+        `n = ${n}: tek kullanım ${single} birim, tekrar kullanım ${reuse} birim → ${reuse < single ? "tekrar kullanım avantajlı" : reuse === single ? "eşit" : "henüz tek kullanım daha az"}.`,
+        "Oranlar için: toplama %60 × süreç verimi %80 = toplam geri kazanım %48. Her yüzdenin paydasını adıyla yaz.",
+      ],
+    };
+  },
+};
+
 export const chemistryFiguresAyt2: Record<string, Record<string, FigureDef>> = {
   "faraday-yasalari": { "Elektron molünden ürün molüne geç": faraday },
   "molekul-geometrisi": { "Dört bölge: düzgün dört yüzlü": tetra },
@@ -488,4 +520,5 @@ export const chemistryFiguresAyt2: Record<string, Record<string, FigureDef>> = {
   "ayt-esterler": { "Asit ve alkol parçalarını ayırmak": esterParts },
   "korozyon-katodik-koruma": { "Aynı yüzeyde küçük anot ve katot alanları": corrosionCell },
   "ayt-nanoteknoloji-gelismeler": { "Kesmeyle toplam yüzey artışı": nanoCut },
+  "ayt-surdurulebilirlik-geri-donusum": { "Karşılaştırmanın işlevsel birimi": reuseThreshold },
 };

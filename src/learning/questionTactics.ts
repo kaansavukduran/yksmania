@@ -990,6 +990,19 @@ export const questionTactics: QuestionTactic[] = [
       "Deney yorumunda sabit tutulanları (madde, kütle, sıcaklık, derişim, kaplama, kümelenme) sorgula; geometrik oran tek başına performans kanıtı değil.",
     ],
   },
+  {
+    id: "surdurulebilirlik-payda",
+    guides: ["ayt-surdurulebilirlik-geri-donusum"],
+    match: /geri dönüşüm|yeniden kullanım|sürdürülebilir|atık|polimer|plastik|verim|toplama|biyobozunur|monomer/i,
+    title: "İşlemi adlandır, yüzdenin paydasını yaz",
+    steps: [
+      "Ürün biçimi korunuyorsa yeniden kullanım (şişeyi yıkayıp doldurma); malzeme işlenip yeni ürün oluyorsa geri dönüşüm. Geri dönüşüm yeni doğal kaynak yaratmaz.",
+      "Toplama oranı ÷ toplam atık, süreç verimi ÷ ayrılmış girdi, toplam geri kazanım ÷ toplam atık: %60 × %80 = %48.",
+      "Kütle dengesi: giriş = ürün + diğer çıkışlar + birikim. Eksik kütle yok olmaz, ölçülmemiş çıkıştır.",
+      "Tekrar kullanım eşiği: sabit yük + n · kullanım yükü < n · tek kullanım yükü (60 + 3n < 12n → n ≥ 7).",
+      "Seçenekleri aynı hizmet (işlevsel birim) ve aynı süreç sınırıyla karşılaştır.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
