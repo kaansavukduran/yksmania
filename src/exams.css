@@ -362,3 +362,8 @@
     flex-basis: 100%;
   }
 }
+
+.answer-options-exam {
+  display: grid;
+  gap: 0.75rem;
+}

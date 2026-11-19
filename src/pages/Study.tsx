@@ -1,6 +1,6 @@
 import { localizedQuestionView } from "../domain/questionPresentation";
 import { useState } from "react";
-import { ArrowLeft, ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useApp } from "../store";
 import { lessonById, subjectById } from "../domain/content";
 import {
@@ -19,6 +19,8 @@ import { QuestionHelp } from "../components/QuestionHelp";
 import { helpPanels, previousHelpPanelCount } from "../learning/questionHelp";
 import { effectiveHelpLevel } from "../learning/helpProgression";
 import { SourceQuestionFigure } from "../learning/SourceQuestionFigure";
+import { AnswerOptions } from "../components/AnswerOptions";
+import { Scratchpad } from "../components/Scratchpad";
 import { sourceQuestionPresentation } from "../learning/sourceExercises024";
 export function Study({ navigate }: { navigate: (s: string) => void }) {
   const { state, t, l, update, commit, toast } = useApp();
@@ -229,29 +231,26 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
           {sourcePresentation?.figure && (
             <SourceQuestionFigure figure={sourcePresentation.figure} />
           )}
-          <div
-            className="answer-options"
-            role="group"
-            aria-label={t("question")}
-          >
-            {question.options.map((option, i) => (
-              <button
-                key={i}
-                className={`answer ${draft.selected === i ? "chosen" : ""} ${draft.checked && i === question.answer ? "answer-correct" : ""} ${draft.checked && draft.selected === i && i !== question.answer ? "answer-wrong" : ""}`}
-                disabled={draft.checked || busy}
-                aria-pressed={draft.selected === i}
-                onClick={() => patch({ selected: i })}
-              >
-                <span className="answer-letter">
-                  {String.fromCharCode(65 + i)}
-                </span>
-                <span>{l(option)}</span>
-                {draft.checked && i === question.answer && (
-                  <CheckCircle2 size={19} />
-                )}
-              </button>
-            ))}
-          </div>
+          <Scratchpad key={`scratch-${draft.index}`} />
+          <AnswerOptions
+            key={`options-${draft.index}`}
+            options={question.options.map((option) => l(option))}
+            selected={draft.selected}
+            checked={draft.checked}
+            answer={question.answer}
+            busy={busy}
+            label={t("question")}
+            onSelect={(i) => patch({ selected: i })}
+            onEnter={() => {
+              if (busy) return;
+              if (!draft.checked) {
+                if (draft.selected !== null) void check();
+              } else void next();
+            }}
+            onHint={() => {
+              if (visibleHelpLevel < panels.length + 1) void openHelp(visibleHelpLevel + 1);
+            }}
+          />
           {!draft.checked && (
             <fieldset className="confidence">
               <legend>{t("confidence")}</legend>

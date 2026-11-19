@@ -1,3 +1,11 @@
+# Forge042 — sınav pratiği: şık eleme, klavye, karalama kâğıdı (main)
+
+19 Kasım 2026. Çalışma ve deneme ekranlarında her şıkkın yanında 44×44 px “ele” düğmesi (üstünü çizer, tekrar basınca geri alır; o şıkkı seçmek elemeyi kaldırır). Klavye: 1–5 veya A–E şık seçer, H bir sonraki ipucu basamağını açar, Enter çalışmada kontrol eder/sonraki soruya geçer, denemede sonraki soruya geçer; metin alanlarında ve odaklı düğmelerde devre dışı. Çalışma ekranında çevrimdışı “Karalama kâğıdı” (kalem, silgi, temizle; fare/kalem/dokunma). Elemeler ve karalama kaydedilmez, puan/XP/ustalık üretmez; soru değişince sıfırlanır. Ortak bileşenler: `src/components/AnswerOptions.tsx`, `src/components/Scratchpad.tsx`. 320 px büyük yazıda taşma bulundu ve düzeltildi (karalama düğmesi satıra sarar).
+
+Doğrulama: check PASS; 2.462 birim testi PASS; build PASS; yeni `question-tools-042` tarayıcı testi 1280 ve 320 px'te PASS (eleme, klavye, ipucu, Enter, karalama, axe ciddi/kritik ihlal yok, öğrenme kaydı değişmedi); ipucu/sınav/uygulama/soru sunumu 42/42 ve guidance-029/030 28/28 PASS. Tam tarayıcı paketi CI'da doğrulanacak. Sıradaki: Forge043 hata otopsisi (hata nedeni etiketi, onarım döngüsü).
+
+---
+
 # Forge041 — tek anlatım türü: numaralı sayfalar (main)
 
 19 Kasım 2026. “Adım adım çalış / Tüm anlatım” seçimi kaldırıldı (kullanıcı kararı: tek anlatım türü, sayfa sayfa). Her bölüm “Sayfa x / N” etiketli bir sayfa kartı; her kartın sonunda “Sonraki sayfa: …” düğmesi, üstte kaydırmayı izleyen sayfa göstergesi, altta önceki/sonraki sayfa, ← → tuşlarıyla sayfa çevirme (kaydırıcı, metin alanı ve modellerde devre dışı). İçindekiler artık bütün sayfaları ve “Bakmadan hatırla”yı listeler. Son çevrilen sayfa kaydedilir ve açılışta geri açılır; tembel yüklenen şekiller sayfayı kaydırmasın diye açılan sayfa, öğrenci kaydırana veya dokunana kadar hizalı tutulur. Açılışta odak çalınmaz. Bütün içerik DOM'da kalır; sayfa çevirmek ustalık/XP üretmez. Eski kayıtlı `guided` alanı silinmez, yok sayılır.

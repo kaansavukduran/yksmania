@@ -4466,3 +4466,101 @@ progress::-moz-progress-bar {
 :root[data-motion="off"] .model-plot-marker {
   transition: none;
 }
+
+/* Answer rows: strike-through elimination beside each option. */
+.answer-row {
+  display: flex;
+  align-items: stretch;
+  gap: 0.45rem;
+  min-width: 0;
+}
+.answer-row > .answer {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.answer-strike {
+  flex: 0 0 auto;
+  min-width: 44px;
+  min-height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: transparent;
+  color: var(--muted);
+}
+.answer-strike[aria-pressed="true"] {
+  color: var(--danger);
+  border-color: var(--danger);
+}
+.answer.answer-struck > span:not(.answer-letter) {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  opacity: 0.55;
+}
+.answer.answer-struck .answer-letter {
+  opacity: 0.55;
+}
+.answer-keys {
+  margin: 0.2rem 0 0;
+  overflow-wrap: anywhere;
+}
+/* Offline scratch paper. */
+.scratchpad {
+  margin-block: 0.6rem;
+}
+.scratchpad {
+  min-width: 0;
+  max-width: 100%;
+}
+.scratch-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 44px;
+  max-width: 100%;
+  min-width: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-align: start;
+}
+.scratch-sheet {
+  margin-top: 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  padding: 0.6rem;
+}
+.scratch-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+.scratch-tools button {
+  max-width: 100%;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  min-height: 44px;
+  padding-inline: 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: transparent;
+  color: var(--text);
+}
+.scratch-tools button[aria-pressed="true"] {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.scratch-canvas {
+  display: block;
+  width: 100%;
+  height: min(52vh, 420px);
+  touch-action: none;
+  border-radius: 0.4rem;
+  background: color-mix(in srgb, var(--text) 4%, transparent);
+  color: var(--text);
+  cursor: crosshair;
+}

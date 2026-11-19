@@ -17,7 +17,7 @@
 | --- | --- | --- |
 | 040 | Eksik resmî geometri konuları: çember ✓, daire ✓, silindir–koni–küre ✓, dik üçgende trigonometri ✓; kalan: AYT çember–daire derinleştirme | Büyük ölçüde tamam |
 | 041 | Tek anlatım türü: numaralı sayfalar, sayfa çevirme düğmeleri ve tuşları, kaldığı sayfayı açma | Tamam (19 Kasım) |
-| 042 | Soru UX: şık eleme, karalama tuvali, klavye kısayolları (1–5, H, Enter, Space, F zen), kapatılabilir Web Audio geri bildirimi | Sırada |
+| 042 | Soru UX: şık eleme ✓, karalama kâğıdı ✓, klavye kısayolları (1–5/A–E, H, Enter) ✓; kalan: Space kum saati, F zen modu, Web Audio | Büyük ölçüde tamam |
 | 043 | Hata otopsisi: hata nedeni taksonomisi, 3 aşamalı onarım, Hata Avı Sprinti, deneme sonu kayıp net raporu, turlama/süre nabzı | Sırada |
 | 044 | Taktik kütüphanesi (Drive'daki 9 yöntem) + aktif kopya kâğıdı (boşluk doldurma) + önkoşul köprüsü | Sırada |
 | 045 | Akıllı oturum başlatıcı (15/30/60 dk), tempo göstergesi, en yüksek net getirili 3 konu | Sırada |

@@ -1,5 +1,6 @@
 import { clarifiedQuestionView } from "../domain/questionPresentation";
 import { SourceQuestionFigure } from "../learning/SourceQuestionFigure";
+import { AnswerOptions } from "../components/AnswerOptions";
 import { sourceQuestionPresentation } from "../learning/sourceExercises024";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
@@ -483,26 +484,27 @@ function ExamRunner({
             <SourceQuestionFigure figure={sourcePresentation.figure} />
           )}
           <div className="exam-options">
-            {q.options.map((option, index) => (
-              <button
-                className={`exam-answer ${draft.answers[draft.index] === index ? "selected" : ""}`}
-                key={index}
-                aria-pressed={draft.answers[draft.index] === index}
-                disabled={busy || expired}
-                onClick={() =>
-                  void change({
-                    type: "answer",
-                    index: draft.index,
-                    value: index,
-                  })
-                }
-              >
-                <span className="exam-option-letter">
-                  {String.fromCharCode(65 + index)}
-                </span>
-                <span>{option}</span>
-              </button>
-            ))}
+            <AnswerOptions
+              key={q.id}
+              variant="exam"
+              options={q.options}
+              selected={draft.answers[draft.index] ?? null}
+              checked={false}
+              answer={-1}
+              busy={busy || expired}
+              label="Seçenekler"
+              onSelect={(index) =>
+                void change({ type: "answer", index: draft.index, value: index })
+              }
+              onEnter={() => {
+                if (!busy && !expired && draft.index < draft.items.length - 1)
+                  void change({ type: "index", index: draft.index + 1 });
+              }}
+              onHint={() => {
+                if (visibleHelpLevel < helpPanels(q).length + 1)
+                  void change({ type: "help", index: draft.index, level: visibleHelpLevel + 1 });
+              }}
+            />
           </div>
           {(
             <QuestionHelp
