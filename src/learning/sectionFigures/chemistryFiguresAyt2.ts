@@ -214,6 +214,59 @@ const carbonate: FigureDef = {
   },
 };
 
+/* ---------- 7. Eter: H bağı alıcı / verici ---------- */
+const etherHBond: FigureDef = {
+  caption:
+    "İleri ile üç molekül çiftine bak. Hidrojen bağı için bir tarafta O'ya bağlı H (verici), diğer tarafta elektron çifti taşıyan O (alıcı) gerekir. İki eter arasında verici H yoktur; iki alkol arasında O–H···O kurulur; eter ile su arasında suyun H'si eter oksijenine bağlanır. Bu yüzden dietil eter bütan-1-olden düşük sıcaklıkta kaynar ama suda biraz çözünebilir.",
+  alt: "İki molekül yan yana: solda ve sağda O atomları, bağlı gruplar ve H atomları; adımlara göre aralarında kesik H bağı çizgisi ya da çarpı işareti görünür.",
+  steps: ["Eter – eter", "Alkol – alkol", "Eter – su"],
+  draw: (_v, step) => {
+    const els: El[] = [];
+    const atom = (p: V, label: string) => {
+      const h = label === "H";
+      const o = label === "O";
+      els.push(ball(p, h ? 0.24 : o ? 0.36 : 0.42, h ? "c" : o ? "warn" : "muted"), txt(p, label, "c", { tone: "ink", small: !o, bold: !h }));
+    };
+    const bond = (a: V, b: V) => els.push(seg(a, b, { tone: "ink" }));
+    const o1 = v(-2.2, 0.6);
+    const o2 = v(2.2, 0.6);
+    // Left molecule: ether (CH₃–O–CH₃) or alcohol (C₂H₅–O–H with H toward the partner).
+    const leftAlcohol = step === 1;
+    const l1 = v(-3.3, -0.1);
+    const l2 = leftAlcohol ? v(-1.05, 0.6) : v(-1.1, -0.1);
+    bond(o1, l1);
+    bond(o1, l2);
+    atom(l1, leftAlcohol ? "C₂H₅" : "CH₃");
+    atom(l2, leftAlcohol ? "H" : "CH₃");
+    atom(o1, "O");
+    // Right molecule: ether, alcohol or water; a donor H points left when water.
+    const r1 = step === 2 ? v(1.05, 0.6) : v(1.1, -0.1);
+    const r2 = v(3.3, -0.1);
+    bond(o2, r1);
+    bond(o2, r2);
+    atom(r1, step === 0 ? "CH₃" : step === 1 ? "C₂H₅" : "H");
+    atom(r2, step === 0 ? "CH₃" : step === 1 ? "H" : "H");
+    atom(o2, "O");
+    if (step === 0) {
+      els.push(seg(v(-0.6, 0.6), v(0.6, 0.6), { tone: "muted", dash: true, thin: true }));
+      els.push(txt(v(0, 0.6), "✕", "c", { tone: "warn", bold: true }));
+    } else if (step === 1) {
+      els.push(seg(v(-0.8, 0.6), v(1.85, 0.6), { tone: "c", dash: true, bold: true }));
+    } else {
+      els.push(seg(v(0.8, 0.6), v(-1.85, 0.6), { tone: "c", dash: true, bold: true }));
+    }
+    els.push(txt(v(-2.2, 1.0), step === 2 ? "eter" : step === 1 ? "alkol" : "eter", "n", { tone: "muted", small: true }));
+    els.push(txt(v(2.2, 1.0), step === 2 ? "su" : step === 1 ? "alkol" : "eter", "n", { tone: "muted", small: true }));
+    els.push(txt(v(-4.4, 2.0), " ", "c"), txt(v(4.4, -1.4), " ", "c"));
+    const rows: [string, string][] = [
+      ["CH₃–O–CH₃ iki molekülü: O alıcı olabilir ama hiçbir H oksijene bağlı değil. Verici yok → H bağı yok.", "Kendi aralarında yalnız dipol–dipol ve London; benzer kütleli alkolden düşük kaynama."],
+      ["C₂H₅OH iki molekülü: birinin O–H'si diğerinin O'suna H bağı verir.", "Bütan-1-ol (C₄H₁₀O) dietil eterle aynı formül, aynı kütle; H bağı yüzünden daha yüksek kaynar."],
+      ["Eter ile su: su verici (O–H), eter O'su alıcı. Eter suyla H bağı kurabilir.", "“Eter H bağı yapmaz” değil, “saf eter kendi arasında H bağı yapmaz” doğrudur. 2025 AYT Fen 27 bu ayrımı sınar."],
+    ];
+    return { els, readout: rows[step] };
+  },
+};
+
 export const chemistryFiguresAyt2: Record<string, Record<string, FigureDef>> = {
   "faraday-yasalari": { "Elektron molünden ürün molüne geç": faraday },
   "molekul-geometrisi": { "Dört bölge: düzgün dört yüzlü": tetra },
@@ -221,4 +274,5 @@ export const chemistryFiguresAyt2: Record<string, Record<string, FigureDef>> = {
   elektroliz: { "Eriyik NaCl ile sulu NaCl aynı değildir": meltVsAq },
   "ayt-alkol-eldesi-tepkimeleri": { "Sekonder alkolün yükseltgenmesi": alcoholClass },
   "ayt-karboksilik-asitler": { "Karbonat ve hidrojen karbonat": carbonate },
+  "ayt-eterler": { "Alıcı ile verici ayrımı": etherHBond },
 };

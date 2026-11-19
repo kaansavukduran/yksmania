@@ -912,6 +912,19 @@ export const questionTactics: QuestionTactic[] = [
       "Zayıf asit kısmen iyonlaşır; seyreltik olmak ile zayıf olmak farklıdır. Yağ asidinde doymamışlık zincirdeki C=C'dir, karbonil C=O değil.",
     ],
   },
+  {
+    id: "eter-alkol-ayrim",
+    guides: ["ayt-eterler"],
+    match: /eter|alkol|metoksi|etoksi|kaynama|hidrojen bağı|izomer|C₄H₁₀O|C3H8O|C₃H₈O|simetrik/i,
+    title: "O'nun iki komşusuna bak: C–O–C mi, C–O–H mı?",
+    steps: [
+      "O'ya iki karbon bağlıysa eter, bir karbon ve bir H bağlıysa alkol. Kapalı formül (CₙH₂ₙ₊₂O) ikisini ayırmaz.",
+      "Ad: uzun karbon tarafı ana alkan, kısa taraf O ile birlikte alkoksi (CH₃–O–CH₂CH₂CH₃ = 1-metoksipropan). O'yu karbon sayma.",
+      "İzomer sayımı: toplam C'yi O'nun iki yanına dağıt (1+3, 2+2); 3+1 aynısıdır. Dallanmayı ayrıca say: C₄H₁₀O'da 3 eter.",
+      "H bağı: verici O–H gerekir. Saf eter kendi arasında H bağı yapmaz; suyla (su verici) yapabilir.",
+      "Simetrik eter için C sayısı çift olmalı; çift olması simetriyi kanıtlamaz (1+5 asimetriktir).",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
