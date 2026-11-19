@@ -4895,3 +4895,134 @@ progress::-moz-progress-bar {
 .sound-preview button {
   min-height: 44px;
 }
+
+/* Mistakes: status filters, chips, warning note, heatmap, pocket booklet. */
+.mistake-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.mistake-filters button {
+  min-height: 44px;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.7rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+}
+.mistake-filters button[aria-pressed="true"] {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+.mistake-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+}
+.status-chip {
+  display: inline-flex;
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  border: 1px solid var(--border);
+}
+.status-acik {
+  border-color: var(--danger);
+}
+.status-onarildi {
+  border-color: var(--accent);
+}
+.status-kalici {
+  border-color: var(--mint);
+  background: color-mix(in srgb, var(--mint) 18%, transparent);
+}
+.mistake-warning {
+  display: grid;
+  gap: 0.3rem;
+}
+.mistake-warning input {
+  min-height: 44px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.mistake-map {
+  min-width: 0;
+}
+.mistake-heat {
+  overflow-x: auto;
+  max-width: 100%;
+  margin-top: 0.8rem;
+}
+.mistake-heat table {
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+.mistake-heat th,
+.mistake-heat td {
+  padding: 0.35rem 0.45rem;
+  border: 1px solid var(--border);
+  text-align: center;
+}
+.mistake-heat th[scope="row"] {
+  text-align: left;
+  white-space: nowrap;
+}
+.mistake-heat td.hot {
+  background: color-mix(in srgb, var(--danger) calc(var(--heat) * 70%), transparent);
+  font-weight: 700;
+}
+.pocket-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pocket-head h2 {
+  margin: 0;
+}
+.pocket-list {
+  display: grid;
+  gap: 0.6rem;
+  padding-left: 1.2rem;
+  max-height: 22rem;
+  overflow-y: auto;
+}
+.pocket-list p {
+  margin: 0.15rem 0;
+}
+.pocket-warning {
+  color: var(--accent);
+}
+@media print {
+  body.print-booklet * {
+    visibility: hidden;
+  }
+  body.print-booklet .pocket-booklet,
+  body.print-booklet .pocket-booklet * {
+    visibility: visible;
+  }
+  body.print-booklet .pocket-booklet {
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    border: 0;
+  }
+  .pocket-booklet button {
+    display: none;
+  }
+  .pocket-list {
+    max-height: none;
+    overflow: visible;
+  }
+  .pocket-list li {
+    break-inside: avoid;
+  }
+  .pocket-warning {
+    color: #000;
+  }
+}

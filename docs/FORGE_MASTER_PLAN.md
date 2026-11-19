@@ -45,9 +45,9 @@ Son güncelleme: 19 Kasım 2026.
 | 10 | Gemini Faz 1: karalama kâğıdı, şık ve seçim düzeltmeleri, harita, Bugün kartı | Tamam |
 | 11 | Harita panelleri eşit; sağ harita fare tekerleğiyle yakınlaşır | Tamam (place-maps-046 testi) |
 | 12 | Gemini Faz 5: Steam/PS5 kupaları, karma pratik, tuzak destesi, grafik okulu, +5 net pusulası, yorgunluk eğrisi, cep kitapçığı, bölünmüş görünüm, düşük enerji modu, haftalık karne, `.yksmania` senkronu, içerik denetçisi, 6 tema × 320 px testi | Kupa sistemi tamam (31 kupa); kalanlar aşağıdaki fazlarda |
-| 13 | Rozetlerin kendine ait logoları; Duolingo hissinde başarı sesleri | Faz 1'de |
-| 14 | Yanlışlar bölümü geliştirilmeli; Claude da yaratıcı fikir üretsin | Faz 2'de |
-| 15 | Her soruda 1–10 yıldız zorluk; her yıldızda eşit soru; zorluğa göre filtre; rozetler buna bağlansın | Zorluk motoru ve filtre bu turda eklendi; yıldız rozetleri Faz 1'de |
+| 13 | Rozetlerin kendine ait logoları; Duolingo hissinde başarı sesleri | Tamam: 34 özgün SVG amblem, metal kademeler, Web Audio ses motoru ve ses seviyesi |
+| 14 | Yanlışlar bölümü geliştirilmeli; Claude da yaratıcı fikir üretsin | Faz 2 başladı: onarım durumu, güven önceliği, ısı haritası, uyarı notu, cep kitapçığı; ikiz soru, sprint/boss, önkoşul köprüsü ve çeldirici parmak izi sırada |
+| 15 | Her soruda 1–10 yıldız zorluk; her yıldızda eşit soru; zorluğa göre filtre; rozetler buna bağlansın | Tamam: zorluk motoru, Sınavlar'da yıldız alıştırması, 3 yıldız kupası |
 | 16 | Eksik soru tiplerini araştır; geçmiş ÖSYM sınavlarındaki (ÖSS/YGS/LYS/TYT/AYT/KPSS/ALES/DGS) konu ve soru kalıplarını tara; sınav tarzı özgün sorular üret | Faz 5'te; kopyalama yok, kalıp analizi + özgün soru |
 | 17 | Her Forge turunda PDF işleme yüzdesi raporu | Bu planla zorunlu |
 

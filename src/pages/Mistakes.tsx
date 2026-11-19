@@ -2,12 +2,16 @@ import { localizedQuestionView } from "../domain/questionPresentation";
 import { useRef, useState } from "react";
 import { RotateCcw, ArrowUpRight } from "lucide-react";
 import { useApp } from "../store";
-import { lessons, lessonById } from "../domain/content";
+import { lessons, lessonById, subjects } from "../domain/content";
 import { formatDate, undoSession } from "../domain/scheduler";
 import { useConfirmationDialog } from "../components/ConfirmationDialog";
 import { Empty } from "../components/Shared";
 import type { Lesson } from "../domain/model";
 import { MistakeRepair, mistakeKey, mistakeMap, mistakeReasons } from "../components/MistakeRepair";
+import { MistakeWarning, PocketBooklet } from "../components/MistakeTools";
+import { StarBadge } from "../components/StarPractice";
+import { questionStars } from "../domain/exams";
+import { compareMistakes, mistakeStatus, STATUS_LABEL, type MistakeStatus } from "../domain/mistakeStatus";
 export function Mistakes({
   start,
   navigate,
@@ -42,7 +46,8 @@ export function Mistakes({
     }
   }
   const [tab, setTab] = useState("mistakes");
-  const items = state.sessions
+  const [filter, setFilter] = useState<MistakeStatus | "hepsi">("hepsi");
+  const allItems = state.sessions
     .flatMap((s) =>
       s.responses
         .filter((r) => !r.correct || r.assisted)
@@ -50,15 +55,28 @@ export function Mistakes({
           const question = lessons
             .flatMap((x) => x.questions)
             .find((q) => q.id === r.questionId);
+          const lesson = lessonById(s.lessonId);
           return {
             session: s,
             response: r,
-            lesson: lessonById(s.lessonId),
+            lesson,
             question: question ? localizedQuestionView(question) : undefined,
+            status: mistakeStatus(state.sessions, s, r.questionId),
+            confident: !r.correct && r.confidence === "high",
+            assistedOnly: r.correct,
+            stars: questionStars(r.questionId) ?? 0,
+            finishedAt: s.finishedAt,
           };
         }),
     )
-    .reverse();
+    .sort(compareMistakes);
+  const counts = {
+    hepsi: allItems.length,
+    acik: allItems.filter((x) => x.status === "acik").length,
+    onarildi: allItems.filter((x) => x.status === "onarildi").length,
+    kalici: allItems.filter((x) => x.status === "kalici").length,
+  };
+  const items = allItems.filter((x) => filter === "hepsi" || x.status === filter);
   return (
     <>
       {confirmationDialog}
@@ -75,7 +93,7 @@ export function Mistakes({
           className={tab === "mistakes" ? "active" : ""}
           onClick={() => setTab("mistakes")}
         >
-          {t("mistakes")} ({items.length})
+          {t("mistakes")} ({allItems.length})
         </button>
         <button
           aria-pressed={tab === "history"}
@@ -86,13 +104,39 @@ export function Mistakes({
         </button>
       </div>
       {tab === "mistakes" ? (
-        items.length ? (
+        allItems.length ? (
           <div className="mistake-list">
             <MistakeMapPanel
               explorations={state.explorations}
-              keys={items.map(({ session, response }) => mistakeKey(session.id, response.questionId))}
+              rows={allItems.map(({ session, response, lesson }) => ({
+                key: mistakeKey(session.id, response.questionId),
+                subject: lesson?.subjectId ?? "",
+              }))}
             />
-            {items.map(({ session, response, lesson, question }, i) =>
+            <div className="mistake-filters" role="group" aria-label="Onarım durumu">
+              {(["hepsi", "acik", "onarildi", "kalici"] as const).map((f) => (
+                <button
+                  key={f}
+                  type="button"
+                  aria-pressed={filter === f}
+                  className={filter === f ? "active" : ""}
+                  onClick={() => setFilter(f)}
+                >
+                  {f === "hepsi" ? "Hepsi" : STATUS_LABEL[f]} ({counts[f]})
+                </button>
+              ))}
+            </div>
+            <PocketBooklet
+              items={allItems
+                .filter((x) => x.status !== "kalici" && x.question)
+                .map((x) => ({
+                  key: mistakeKey(x.session.id, x.response.questionId),
+                  lesson: x.lesson ? l(x.lesson.title) : "",
+                  prompt: l(x.question!.prompt),
+                  answer: l(x.question!.options[x.question!.answer]),
+                }))}
+            />
+            {items.map(({ session, response, lesson, question, status, confident, stars }, i) =>
               question && lesson ? (
                 <article
                   className="panel mistake-card"
@@ -111,6 +155,11 @@ export function Mistakes({
                       {t(response.assisted ? "assisted" : "incorrect")}
                     </span>
                   </div>
+                  <div className="mistake-meta">
+                    <span className={`status-chip status-${status}`}>{STATUS_LABEL[status]}</span>
+                    {confident && <span className="error-chip">Eminim dedin · yanlış</span>}
+                    <StarBadge stars={stars || undefined} />
+                  </div>
                   <h2 className="question-prompt">{l(question.prompt)}</h2>
                   <p>
                     <span className="muted">{t("yourAnswer")}: </span>
@@ -126,6 +175,7 @@ export function Mistakes({
                     </p>
                     <p>{l(question.explanation)}</p>
                   </details>
+                  <MistakeWarning storageKey={mistakeKey(session.id, response.questionId)} />
                   <MistakeRepair
                     sessionId={session.id}
                     questionId={response.questionId}
@@ -188,13 +238,17 @@ export function Mistakes({
 
 function MistakeMapPanel({
   explorations,
-  keys,
+  rows,
 }: {
   explorations: Record<string, Record<string, unknown>>;
-  keys: string[];
+  rows: { key: string; subject: string }[];
 }) {
-  const { counts, untagged } = mistakeMap(explorations, keys);
+  const { counts, untagged } = mistakeMap(explorations, rows.map((r) => r.key));
   const max = Math.max(1, ...counts.values());
+  const subjectsWithTags = [...new Set(rows.filter((r) => typeof explorations[r.key]?.reason === "string").map((r) => r.subject))];
+  const cell = (subject: string, reason: string) =>
+    rows.filter((r) => r.subject === subject && explorations[r.key]?.reason === reason).length;
+  const cellMax = Math.max(1, ...subjectsWithTags.flatMap((sub) => mistakeReasons.map((r) => cell(sub, r.id))));
   return (
     <section className="panel mistake-map" aria-label="Hata haritası">
       <h2>Hata haritan</h2>
@@ -216,6 +270,43 @@ function MistakeMapPanel({
         })}
       </ul>
       <p className="small muted">Nedeni seçilmemiş: {untagged}</p>
+      {subjectsWithTags.length > 0 && (
+        <div className="mistake-heat" role="region" aria-label="Ders ve neden ısı haritası" tabIndex={0}>
+          <table>
+            <caption className="small muted">Ders × neden: koyu hücre, en çok tekrarlayan hata kalıbın.</caption>
+            <thead>
+              <tr>
+                <th scope="col">Ders</th>
+                {mistakeReasons.map((r) => (
+                  <th scope="col" key={r.id}>
+                    {r.label}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {subjectsWithTags.map((sub) => (
+                <tr key={sub}>
+                  <th scope="row">{subjectName(sub)}</th>
+                  {mistakeReasons.map((r) => {
+                    const n = cell(sub, r.id);
+                    return (
+                      <td key={r.id} style={{ ["--heat" as string]: String(n / cellMax) }} className={n ? "hot" : ""}>
+                        {n || ""}
+                      </td>
+                    );
+                  })}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
     </section>
   );
+}
+
+function subjectName(id: string) {
+  const subject = subjects.find((s) => s.id === id);
+  return subject ? `${subject.exam} ${subject.name.tr}` : id;
 }
