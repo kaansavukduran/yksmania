@@ -598,6 +598,30 @@ export const questionTactics: QuestionTactic[] = [
       "Ardışık aşamalarda kesirleri çarp (0,80 × 0,75 = 0,60). %100 üstü sonuç veri ya da model hatasının işaretidir.",
     ],
   },
+  {
+    id: "limit-yan",
+    guides: ["ayt-limit-sureklilik"],
+    match: /limit|lim|sürekli|soldan|sağdan/i,
+    title: "Limit soruları",
+    steps: [
+      "Önce yerine koy: sonlu ve tanımlıysa (polinom, paydası sıfır olmayan kesir) cevap budur.",
+      "0/0 çıkarsa çarpanlara ayır ya da eşlenikle çarp; sadeleştirdiğin çarpanın x ≠ a koşulunu sakla (delik).",
+      "Parçalı ve mutlak değerli fonksiyonda sol ve sağ limiti ayrı hesapla; eşitlerse limit vardır.",
+      "Süreklilik için üçü birden: limit var, f(a) tanımlı, ikisi eşit. f(a) dolu noktadan okunur.",
+    ],
+  },
+  {
+    id: "integral-alan",
+    guides: ["ayt-belirli-integral"],
+    match: /integral|∫|alan|yer değiştirme|yol/i,
+    title: "Belirli integral soruları",
+    steps: [
+      "∫ₐᵇ f dx = F(b) − F(a): işaretli (net) birikim; eksenin altı negatif katkı verir.",
+      "“Alan” ya da “yol” soruluyorsa f'nin işaret değiştirdiği noktalarda böl ve parçaların mutlak değerlerini topla.",
+      "Sınırları ters çevirmek işareti değiştirir; aralığı parçalayıp toplayabilirsin. Değişken değiştirirken sınırları da dönüştür.",
+      "Kontrol: tek fonksiyon simetrik aralıkta 0 verir; ortalama değer = integral ÷ aralık genişliği.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
