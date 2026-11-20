@@ -5054,3 +5054,25 @@ progress::-moz-progress-bar {
 .mistake-boss.is-weekend {
   border-color: var(--accent);
 }
+/* Bugün: akıllı oturum. */
+.smart-session {
+  margin-block: 1.25rem;
+  padding: clamp(0.9rem, 2.5vw, 1.4rem);
+}
+.smart-session p {
+  margin: 0.4rem 0 0.8rem;
+}
+.smart-session h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0;
+}
+.smart-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.smart-buttons button {
+  min-height: 2.75rem;
+}

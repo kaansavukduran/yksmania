@@ -1,6 +1,7 @@
 import { ArrowRight, Check, Sprout } from "lucide-react";
 import { useApp } from "../store";
 import { lessons, lessonById } from "../domain/content";
+import { SmartSession } from "../components/SmartSession";
 import {
   addDays,
   formatDate,
@@ -122,6 +123,7 @@ export function Today({
           <span className="art-caption">AIONIA</span>
         </div>
       </section>
+      <SmartSession navigate={navigate} />
       <div className="stats-strip">
         <div>
           <span className="stat-number">

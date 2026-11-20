@@ -216,6 +216,16 @@ export function starPracticeSpec(
  * mistakes (at most 10). Items answered without opening help count as later
  * independent answers for the mistake's repair status.
  */
+/** Verilen soru kimliklerinin deneme kopyaları, verilen sırayla (bulunmayanlar atlanır). */
+export function examItemsByIds(questionIds: readonly string[]): ExamItem[] {
+  const wanted = [...new Set(questionIds)];
+  const byId = new Map<string, ExamItem>();
+  for (const lesson of lessons) {
+    if (!lesson.questions.some((q) => wanted.includes(q.id))) continue;
+    for (const item of snapshot(lesson)) if (wanted.includes(item.id)) byId.set(item.id, item);
+  }
+  return wanted.map((id) => byId.get(id)).filter((x): x is ExamItem => !!x);
+}
 export function mistakeSprintSpec(
   questionIds: readonly string[],
   limit = 10,

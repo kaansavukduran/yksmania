@@ -27,6 +27,7 @@ import { StarPractice, StarBadge } from "../components/StarPractice";
 import { formatCountdown } from "../domain/focusTimer";
 import type { ExamDraft, ExamSession } from "../domain/examModel";
 import "../exams.css";
+import { hidesSubject } from "../domain/smartSession";
 import { QuestionHelp } from "../components/QuestionHelp";
 import { helpPanels, previousHelpPanelCount } from "../learning/questionHelp";
 import { effectiveHelpLevel } from "../learning/helpProgression";
@@ -438,7 +439,7 @@ function ExamRunner({
             <strong>
               Soru {draft.index + 1} / {draft.items.length}
             </strong>
-            <span>{q.subjectName}</span>
+            <span>{hidesSubject(draft.title) ? "Konu gizli (karma pratik)" : q.subjectName}</span>
             <StarBadge stars={questionStars(q.id)} />
           </div>
           {q.passage && (
