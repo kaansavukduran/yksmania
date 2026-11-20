@@ -1,3 +1,4 @@
+import { typeset } from "../domain/typeset";
 import { clarifiedQuestionView } from "../domain/questionPresentation";
 import { SourceQuestionFigure } from "../learning/SourceQuestionFigure";
 import { AnswerOptions } from "../components/AnswerOptions";
@@ -445,11 +446,11 @@ function ExamRunner({
           </div>
           {q.passage && (
             <section className="question-passage" aria-label="Sorunun metni">
-              <p>{q.passage}</p>
+              <p>{typeset(q.passage)}</p>
             </section>
           )}
           <h2 className="question-prompt" ref={questionHeading} tabIndex={-1}>
-            {q.prompt}
+            {typeset(q.prompt)}
           </h2>
           {sourcePresentation?.figure && (
             <SourceQuestionFigure figure={sourcePresentation.figure} />
@@ -735,10 +736,10 @@ function ExamResults({
                   className="question-passage"
                   aria-label="Sorunun metni"
                 >
-                  <p>{q.passage}</p>
+                  <p>{typeset(q.passage)}</p>
                 </section>
               )}
-              <h3>{q.prompt}</h3>
+              <h3>{typeset(q.prompt)}</h3>
               {sourcePresentation && (
                 <p className="small muted">
                   {sourcePresentation.source.shortLabel}

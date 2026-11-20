@@ -1,3 +1,4 @@
+import { typeset } from "../domain/typeset";
 import { localizedQuestionView } from "../domain/questionPresentation";
 import { useRef, useState } from "react";
 import { RotateCcw, ArrowUpRight } from "lucide-react";
@@ -193,7 +194,7 @@ export function Mistakes({
                     {confident && <span className="error-chip">Eminim dedin · yanlış</span>}
                     <StarBadge stars={stars || undefined} />
                   </div>
-                  <h2 className="question-prompt">{l(question.prompt)}</h2>
+                  <h2 className="question-prompt">{typeset(l(question.prompt))}</h2>
                   <p>
                     <span className="muted">{t("yourAnswer")}: </span>
                     {l(question.options[response.selected])}

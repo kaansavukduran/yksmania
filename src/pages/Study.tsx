@@ -1,3 +1,4 @@
+import { typeset } from "../domain/typeset";
 import { playCue } from "../domain/soundEngine";
 import { localizedQuestionView } from "../domain/questionPresentation";
 import { useState } from "react";
@@ -240,10 +241,10 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
           />
           {question.passage && (
             <section className="question-passage" aria-label="Sorunun metni">
-              <p>{l(question.passage)}</p>
+              <p>{typeset(l(question.passage))}</p>
             </section>
           )}
-          <h2 className="question-prompt">{l(question.prompt)}</h2>
+          <h2 className="question-prompt">{typeset(l(question.prompt))}</h2>
           {sourcePresentation?.figure && (
             <SourceQuestionFigure figure={sourcePresentation.figure} />
           )}

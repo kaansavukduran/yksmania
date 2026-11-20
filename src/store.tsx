@@ -14,7 +14,6 @@ import {
 } from "./domain/model";
 import { loadState, saveState } from "./domain/storage";
 import { localise, translate } from "./i18n";
-import { typeset } from "./domain/typeset";
 import { localDate } from "./domain/scheduler";
 type Store = {
   state: AppState;
@@ -139,8 +138,7 @@ export function Provider({ children }: { children: ReactNode }) {
           void persist(current.current).catch(() => {});
         },
         t: translate,
-        // Display text only: typeset never changes the saved content.
-        l: (value) => typeset(localise(value)),
+        l: localise,
         toast,
       }}
     >

@@ -1,3 +1,4 @@
+import { typeset } from "../domain/typeset";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { CheckCircle2, X } from "lucide-react";
 
@@ -110,7 +111,7 @@ export function AnswerOptions({
               }}
             >
               <span className={variant === "exam" ? "exam-option-letter" : "answer-letter"}>{letter(i)}</span>
-              <span>{option}</span>
+              <span>{typeof option === "string" ? typeset(option) : option}</span>
               {checked && i === answer && <CheckCircle2 size={19} />}
             </button>
             {!checked && (
