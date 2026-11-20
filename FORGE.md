@@ -13,33 +13,41 @@
 - **Ek tur:** ayna laboratuvarında “Görüntü” etiketi ışınların geçmediği sağ alta alındı ve lab yazılarına tema renginde hale eklendi; kalıtım laboratuvarında alel harfleri kromozom çubuklarının üstünden yanlarına alındı; “Önceki adım” (yalnız görünüm, kayıtlı yardım düzeyi düşmez); `#/world` açıklaması 479 + 6 yerine tek kaynaktan çalışma kitabı + eklenen başlık sayısı; 6 tema (dark, light, contrast, matrix, axolotl, trans) × 320/1280 px figür ve axe kapısı; içerik denetimi `content-audit-053` (geçerli anahtar, ayrı şıklar, açıklama, bağımlı metin yok, yetim müfredat yok, çeldirici gerekçesi eksik kart sayısı 2.640'ı aşamaz). Önceki tabloda adım adım sayısı yerelleştirilmemiş metinle hesaplanmıştı (2.865); doğrusu 3.825.
 - **Açık:** 2.640 kartın adım adım çözüme yükseltilmesi (TYT Coğrafya 0 / 400 ve AYT Geometri 0 / 40 öncelikli), 99_ÖSYM PDF işleme ve `docs/OSYM_SAYACI.md`, Faz 3 laboratuvarlar, Faz 4 kupa/ses/karne.
 
-### İlerleme tablosu (20 Kasım, Forge052)
+### İlerleme tablosu
 
-99_ÖSYM sütunu, figür ve taktiklerde resmî kitapçığa atıfla bağlanan farklı geçmiş soru sayısıdır (çözümler özgündür, resmî soru olarak sunulmaz); ders bazında ayrım henüz yok, toplamda verilir. OGM/MEBİ ve 99_ÖSYM paydaları ayrı tutulur, çift sayım yok.
+Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır); elle düzenlenmez.
 
-| Ders | Hazır konu / uygulama dersi | Görsel/interaktif lab (figürlü ders · figür) | Adım adım çözümlü soru | Kopya kâğıdı (OGM/MEBİ) işlenen | 99_ÖSYM soru kalıbı | Kalan açık (figürsüz ders) |
+<!-- ilerleme:başla -->
+| Ders | Hazır konu / toplam | Görsel lab (figürlü ders · figür) | Adım adım çözümlü soru | OGM/MEBİ kopya kâğıdı | 99_ÖSYM | Kalan açık (figürsüz ders) |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| TYT Türkçe | 33 / 34 | 4 · 15 | 170 / 380 (%44,74) | 4 / 33 (%12,12) | ↓ | 30 |
-| TYT Matematik | 40 / 45 | 17 · 45 | 635 / 735 (%86,39) | 5 / 38 (%13,16) | ↓ | 28 |
-| TYT Geometri | 19 / 19 | 19 · 174 | 207 / 217 (%95,39) | 1 / 32 (%3,13) | ↓ | 0 |
-| TYT Fizik | 24 / 28 | 24 · 177 | 221 / 311 (%71,06) | 7 / 24 (%29,17) | ↓ | 4 |
-| TYT Kimya | 55 / 57 | 41 · 179 | 225 / 535 (%42,06) | 38 / 56 (%67,86) | ↓ | 16 |
-| TYT Biyoloji | 36 / 45 | 12 · 37 | 385 / 515 (%74,76) | 7 / 36 (%19,44) | ↓ | 33 |
-| TYT Tarih | 24 / 34 | 6 · 16 | 340 / 390 (%87,18) | 4 / 24 (%16,67) | ↓ | 28 |
-| TYT Coğrafya | 40 / 40 | 8 · 17 | 0 / 400 (%0,00) | 5 / 40 (%12,50) | ↓ | 32 |
-| TYT Felsefe | 17 / 17 | 3 · 7 | 70 / 190 (%36,84) | 3 / 17 (%17,65) | ↓ | 14 |
-| TYT Din | 20 / 20 | 4 · 9 | 371 / 371 (%100,00) | 3 / 20 (%15,00) | ↓ | 16 |
-| AYT Matematik | 17 / 18 | 13 · 19 | 233 / 253 (%92,09) | 2 / 17 (%11,76) | ↓ | 5 |
-| AYT Geometri | 4 / 4 | 4 · 51 | 0 / 40 (%0,00) | 1 / 4 (%25,00) | ↓ | 0 |
-| AYT Fizik | 46 / 47 | 11 · 26 | 221 / 541 (%40,85) | 7 / 46 (%15,22) | ↓ | 36 |
-| AYT Kimya | 55 / 56 | 18 · 19 | 360 / 680 (%52,94) | 11 / 55 (%20,00) | ↓ | 38 |
-| AYT Biyoloji | 75 / 76 | 16 · 39 | 387 / 907 (%42,67) | 11 / 75 (%14,67) | ↓ | 60 |
-| Temel İnşa (0. basamak) | 25 ön ders (10 TYT dersinin hepsi) | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 ders ön derssiz |
-| **Toplam** | **505 / 540** | **225 · 887** | **3.825 / 6.465 (%59,16)** | **109 / 517 (%21,08)** | **77 bağlantılı geçmiş soru** | **340** |
-| **Genel OGM/MEBİ PDF** | **119 / 8.981 · %1,33** | | | | | |
-| **Genel 99_ÖSYM PDF** | **0 / 1.001 işlendi · %0** (payda kullanıcı beyanı; Drive sayımı bekliyor) | | | | | |
-| **Adım adım çözüm** | **3.825 / 6.465 · %59,16** soruda Adım 1…N + final otopsi | | | | | |
-| **SVG çakışma/taşma testi** | **201 figürlü rehber · 320/1280 px · 6 tema + axe · 0 hata (e2e 052)** | | | | | |
+| Temel İnşa (0. basamak) | 25 ön ders | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 |
+| TYT Türkçe | 33 / 34 | 4 · 15 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 120 soru · 3 kitapçık | 30 |
+| TYT Matematik | 40 / 45 | 17 · 45 | 735 / 735 · %100,00 | 5 / 38 · %13,16 | 89 soru · 3 kitapçık | 28 |
+| TYT Geometri | 19 / 19 | 19 · 174 | 217 / 217 · %100,00 | 1 / 32 · %3,13 | 31 soru · 3 kitapçık | 0 |
+| TYT Fizik | 24 / 28 | 24 · 177 | 311 / 311 · %100,00 | 7 / 24 · %29,17 | 21 soru · 3 kitapçık | 4 |
+| TYT Kimya | 55 / 57 | 41 · 179 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 21 soru · 3 kitapçık | 16 |
+| TYT Biyoloji | 36 / 45 | 12 · 37 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 18 soru · 3 kitapçık | 33 |
+| TYT Tarih | 24 / 34 | 6 · 16 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 15 soru · 3 kitapçık | 28 |
+| TYT Coğrafya | 40 / 40 | 8 · 17 | 400 / 400 · %100,00 | 5 / 40 · %12,50 | 15 soru · 3 kitapçık | 32 |
+| TYT Felsefe | 17 / 17 | 3 · 7 | 190 / 190 · %100,00 | 3 / 17 · %17,65 | 30 soru · 3 kitapçık | 14 |
+| TYT Din | 20 / 20 | 4 · 9 | 371 / 371 · %100,00 | 3 / 20 · %15,00 | 15 soru · 3 kitapçık | 16 |
+| AYT Matematik | 17 / 18 | 13 · 19 | 253 / 253 · %100,00 | 2 / 17 · %11,76 | 60 soru · 2 kitapçık | 5 |
+| AYT Geometri | 4 / 4 | 4 · 51 | 40 / 40 · %100,00 | 1 / 4 · %25,00 | 20 soru · 2 kitapçık | 0 |
+| AYT Fizik | 46 / 47 | 11 · 26 | 541 / 541 · %100,00 | 7 / 46 · %15,22 | 28 soru · 2 kitapçık | 36 |
+| AYT Kimya | 55 / 56 | 18 · 19 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 26 soru · 2 kitapçık | 38 |
+| AYT Biyoloji | 75 / 76 | 16 · 39 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 26 soru · 2 kitapçık | 60 |
+| Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 5 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
+| **Toplam** | **505 / 540** | **200 · 830** | **6.465 / 6.465 · %100,00** | **109 / 517 · %21,08** | **5 / 1.001 · %0,50 PDF · 535 soru** | **340** |
+
+| Genel gösterge | Değer |
+| --- | ---: |
+| OGM/MEBİ PDF (okunan / envanter) | 119 / 8.981 · %1,33 |
+| 99_ÖSYM PDF (işlenen / beyan edilen) | 5 / 1.001 · %0,50 |
+| 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 535 · 76 |
+| Adım adım çözümlü soru | 6.465 / 6.465 · %100,00 |
+| Kopya kâğıdı (işlenen / toplam) | 109 / 517 · %21,08 |
+| Resmî ana başlık · uygulama dersi · hazır anlatım | 341 · 540 · 505 |
+<!-- ilerleme:bitir -->
 
 # Forge051 — 0.25.0 adayı: Temel İnşa (0. basamak), kupa, hata merkezi ve tek kaynaklı konu sayısı
 

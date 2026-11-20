@@ -159,4 +159,18 @@ describe("ilerleme tablosu", () => {
     expect(readFileSync("docs/ILERLEME.json", "utf8"), "docs/ILERLEME.json eski: npm run progress çalıştır").toBe(json);
     expect(readFileSync("docs/ILERLEME.md", "utf8")).toBe(md);
   });
+
+  // README.md and FORGE.md carry the same table between two markers, so the
+  // round summary can never show numbers the code does not produce.
+  it.each(["README.md", "FORGE.md"])("%s embeds the current table", (file) => {
+    const START = "<!-- ilerleme:başla -->";
+    const END = "<!-- ilerleme:bitir -->";
+    const current = readFileSync(file, "utf8");
+    const a = current.indexOf(START);
+    const b = current.indexOf(END);
+    expect(a >= 0 && b > a, `${file}: ilerleme işaretleri eksik`).toBe(true);
+    const next = `${current.slice(0, a + START.length)}\n${markdown(compute())}${current.slice(b)}`;
+    if (process.env.UPDATE_PROGRESS) writeFileSync(file, next);
+    expect(readFileSync(file, "utf8"), `${file} eski: npm run progress çalıştır`).toBe(next);
+  });
 });
