@@ -82,5 +82,49 @@
  {
   "from": "T iki katına çıkınca P de iki kat olur:2,4 atm.",
   "to": "T iki katına çıkınca P de iki kat olur: 2,4 atm."
+ },
+ {
+  "from": "Nötr bileşik için toplam 0: 1+x −8=0, x=+7. Oksijenin dört atomu ve potasyumun +1 katkısı birlikte hesaba katılır. Bu, Mn’nin molekülde serbest +7 yüklü iyon olduğu iddiası değildir.",
+  "to": "Nötr bileşik için toplam 0: 1 + x − 8 = 0, x=+7. Oksijenin dört atomu ve potasyumun +1 katkısı birlikte hesaba katılır. Bu, Mn’nin molekülde serbest +7 yüklü iyon olduğu iddiası değildir."
+ },
+ {
+  "from": "1+x +4(−2)=0 toplamını kur.",
+  "to": "1 + x + 4(−2) = 0 toplamını kur."
+ },
+ {
+  "from": "Fe +2 H⁺ → Fe²⁺+H₂.",
+  "to": "Fe + 2 H⁺ → Fe²⁺+H₂."
+ },
+ {
+  "from": "3 Cu +8 HNO₃ → 3 Cu(NO₃)₂+2 NO+4 H₂O denkleminde N, HNO₃ ve nitratta +5, NO’da +2’dir. Yazılan denklem bir kez ilerlerken kaç N atomu indirgenir?",
+  "to": "3 Cu + 8 HNO₃ → 3 Cu(NO₃)₂+2 NO+4 H₂O denkleminde N, HNO₃ ve nitratta +5, NO’da +2’dir. Yazılan denklem bir kez ilerlerken kaç N atomu indirgenir?"
+ },
+ {
+  "from": "Cu²⁺+2 e⁻ → Cu için E°=+0,337 V ve Ag⁺+e⁻ → Ag için +0,799 V. Cu +2 Ag⁺ → Cu²⁺+2 Ag yönünün standart potansiyeli kaçtır?",
+  "to": "Cu²⁺+2 e⁻ → Cu için E°=+0,337 V ve Ag⁺+e⁻ → Ag için +0,799 V. Cu + 2 Ag⁺ → Cu²⁺+2 Ag yönünün standart potansiyeli kaçtır?"
+ },
+ {
+  "from": "Cr³⁺/Cr=−0,744 V, Pb²⁺/Pb=−0,126 V veriliyor. 2 Cr +3 Pb²⁺ → 2 Cr³⁺+3 Pb standart yönünün E° değeri nedir?",
+  "to": "Cr³⁺/Cr=−0,744 V, Pb²⁺/Pb=−0,126 V veriliyor. 2 Cr + 3 Pb²⁺ → 2 Cr³⁺+3 Pb standart yönünün E° değeri nedir?"
+ },
+ {
+  "from": "Zn²⁺/Zn için E°=−0,763 V, 2 H⁺/H₂ için 0 V. Yüzey engeli olmayan uygun yükseltgen olmayan asit modelinde Zn +2 H⁺ → Zn²⁺+H₂ yönü için hangisi doğrudur?",
+  "to": "Zn²⁺/Zn için E°=−0,763 V, 2 H⁺/H₂ için 0 V. Yüzey engeli olmayan uygun yükseltgen olmayan asit modelinde Zn + 2 H⁺ → Zn²⁺+H₂ yönü için hangisi doğrudur?"
+ },
+ {
+  "from": "Normal ders koşulunda Cu, HCl’den H₂ çıkarmıyor. Cu’nun sıcak derişik H₂SO₄ ile verilen tepkimesinde SO₂ oluşuyor. Doğru açıklama hangisidir?",
+  "to": "Normal koşullarda Cu, HCl’den H₂ çıkarmıyor. Cu’nun sıcak derişik H₂SO₄ ile verilen tepkimesinde SO₂ oluşuyor. Doğru açıklama hangisidir?"
+ },
+ {
+  "from": "İnertin eklenmesi ilgili reaktiflerin n,T,V değerlerini değiştirmez. İnert kendi basıncını toplama ekler; fakat verilen ideal koşulda denge oranına yeni bir reaktif terimi girmez.",
+  "to": "İnertin eklenmesi ilgili reaktiflerin n, T, V değerlerini değiştirmez. İnert kendi basıncını toplama ekler; fakat verilen ideal koşulda denge oranına yeni bir reaktif terimi girmez."
+ },
+ {
+  "from": "300 K'de R=0,082 L·atm/(mol·K), V=24,6 L sabit. Kapta AB,A,B birer mol ve sonradan 2 mol inert I var. A'nın mol kesri ve kısmi basıncı?",
+  "to": "300 K'de R=0,082 L·atm/(mol·K), V=24,6 L sabit. Kapta AB, A, B birer mol ve sonradan 2 mol inert I var. A'nın mol kesri ve kısmi basıncı?"
+ },
+ {
+  "from": "Toplam mol 5; A mol kesri 1/5'tir. Toplam P=5 atm olduğundan pA=(1/5)×5=1 atm. Aynı sonuç nART/V ile doğrudan da bulunur.",
+  "to": "Toplam mol 5; A mol kesri 1/5'tir. Toplam P=5 atm olduğundan pA=(1/5)×5=1 atm. Aynı sonuç nA·RT/V ile doğrudan da bulunur."
  }
 ]

@@ -1,5 +1,1827 @@
 [
  {
+  "id": "f021c-cozunurluk-faktorleri-1",
+  "h": "03cb076a32fff7",
+  "guidance": {
+   "knowledge": [
+    "Çözünürlük dengesi: katı tuzun çözünüp çökmesinin aynı hızda sürdüğü durum; MX(k) ⇌ M⁺ + X⁻. Kç (çözünürlük çarpımı) bu dengede [M⁺]·[X⁻] çarpımının sabit değeridir ve yalnız sıcaklıkla değişir.",
+    "Molar çözünürlük s: doygun çözeltide 1 L'de çözünen tuzun mol sayısı (mol/L). 1:1 tuzda [M⁺] = [X⁻] = s olduğundan Kç = s², s = √Kç.",
+    "Isı girenler tarafında yazılıysa çözünme ısı alır (endotermik)."
+   ],
+   "strategy": "Sıcaklık değişince denge sabitinin kendisi değişir; yönü bulmak için ısıyı bir girdi gibi düşünüp Le Chatelier ilkesini uygula, sonra Kç ile s arasındaki bağı kullan.",
+   "steps": [
+    "Denklemde ısı sol tarafta: MX(k) + ısı ⇌ M⁺ + X⁻, yani çözünme endotermiktir.",
+    "Sıcaklığı artırmak ısı eklemek gibidir; sistem bu ısıyı tüketmek için ileri, çözünme yönüne kayar.",
+    "İleri kayma iyon derişimlerini artırır; yeni sıcaklıktaki Kç = [M⁺][X⁻] daha büyüktür.",
+    "1:1 tuzda s = √Kç olduğundan Kç büyüyünce doygun molar çözünürlük de artar."
+   ],
+   "optionReasons": [
+    "Yalnız hızı etkileyen değişkenlerle sıcaklığı karıştırır; sıcaklık Kç'yi değiştiren tek etkendir.",
+    "Endotermik çözünmede ısıtmanın Kç'yi düşüreceğini sanır, sonra çözünürlüğün yine artacağını söyleyerek kendi içinde çelişir.",
+    "Doğru: ısı alan çözünmede ısıtma dengeyi ileri iter, Kç büyür ve s = √Kç de büyür.",
+    "Denge kayması maddelerin miktarını değiştirir, MX'in bileşimini değil; katının formülü aynı kalır.",
+    "Hızın artmasını dengenin bozulması sanar; hız artsa da yeni sıcaklıkta yeni ve tanımlı bir Kç değeri oluşur."
+   ],
+   "commonError": "Sıcaklık etkisini ortak iyon ya da miktar etkisiyle karıştırıp Kç'nin sabit kalacağını düşünmek.",
+   "check": "Tersini düşün: sıcaklık düşerse ısı çekilir, denge sola kayar ve katı çöker; bu, ısınınca çözünürlüğün arttığı sonucuyla uyumludur."
+  }
+ },
+ {
+  "id": "f021c-cozunurluk-faktorleri-2",
+  "h": "06a77fbcc6d2f8",
+  "guidance": {
+   "knowledge": [
+    "Kç (çözünürlük çarpımı): doygun çözeltide [M⁺]·[X⁻] çarpımı; sıcaklığa bağlı bir sabittir.",
+    "Molar çözünürlük s: 1 L doygun çözeltide çözünen tuzun molü (M = mol/L). 1:1 ayrışan MX'te iki iyon da s kadar olur: Kç = s·s = s², buradan s = √Kç.",
+    "Ekzotermik çözünme: ısı veren çözünme; böyle bir tuzda sıcaklık artınca Kç küçülür."
+   ],
+   "strategy": "Her sıcaklıktaki Kç'den ayrı ayrı s hesaplanır, çünkü soru çözünürlüğün nasıl değiştiğini soruyor ve Kç ile s aynı sayı değildir.",
+   "steps": [
+    "10 °C: s = √(9·10⁻⁴) = 3·10⁻² = 0,03 M.",
+    "40 °C: s = √(1·10⁻⁴) = 1·10⁻² = 0,01 M.",
+    "Sıcaklık 10 °C'den 40 °C'ye çıkınca s, 0,03 M'den 0,01 M'ye iner.",
+    "Isınınca Kç küçüldüğüne göre bu aralıkta çözünme ısı verir (ekzotermik); düşüş bununla tutarlıdır."
+   ],
+   "optionReasons": [
+    "Sayıları doğru bulur ama sıcaklıkları karıştırır: 0,03 M aslında soğuk (10 °C) değerdir, ısınınca s düşer.",
+    "Üsleri okumaz: 9·10⁻⁴ ile 1·10⁻⁴ farklı sayılardır, Kç'ler aynı değildir.",
+    "Kç ile s'yi aynı nicelik sanır; 40 °C'de s = √(1·10⁻⁴) = 0,01 M'dir, 10⁻⁴ M değil.",
+    "Ezber 'çözünme ısı alır' yargısını uygular; oysa ısınınca Kç düştüğü için bu aralıkta çözünme ısı verir.",
+    "Doğru: √(9·10⁻⁴) = 0,03 M ve √(1·10⁻⁴) = 0,01 M; ısınmayla çözünürlük azalır."
+   ],
+   "commonError": "Kç değerini doğrudan molar çözünürlük sanmak ya da karekök almayı unutmak.",
+   "check": "Sonucu geri koy: 0,01² = 1·10⁻⁴ ve 0,03² = 9·10⁻⁴; iki değer de verilen Kç'lerle aynıdır."
+  }
+ },
+ {
+  "id": "f021c-cozunurluk-faktorleri-3",
+  "h": "18cf2fdfda9d98",
+  "guidance": {
+   "knowledge": [
+    "Ortak iyon: çözeltiye başka bir kaynaktan eklenen ve dengedeki tuzla aynı olan iyon; burada MY'den gelen M⁺.",
+    "Kç (çözünürlük çarpımı): doygun çözeltide [M⁺]·[X⁻] çarpımının sabit değeri; derişim değişince değil, yalnız sıcaklık değişince değişir.",
+    "Molar çözünürlük: belirli ortamda 1 L çözeltide çözünebilen MX molü (mol/L); ortamdaki diğer iyonlara bağlıdır."
+   ],
+   "strategy": "Soru bir derişim değişikliğinden sonra neyin sabit kaldığını soruyor; denge sabitini değiştiren tek etkenin sıcaklık olduğunu kullan, sonra her şıkkı Le Chatelier ile sına.",
+   "steps": [
+    "MY eklenince [M⁺] artar; iyon çarpımı [M⁺][X⁻] geçici olarak Kç'yi aşar.",
+    "Sistem fazlayı azaltmak için geri yöne kayar; bir miktar MX çöker, [X⁻] azalır.",
+    "Yeni dengede toplam [M⁺] başlangıçtan büyük, [X⁻] küçüktür; MX'in bu ortamdaki çözünürlüğü de azalır.",
+    "Sıcaklık değişmediği için çarpımın denge değeri Kç aynı kalır."
+   ],
+   "optionReasons": [
+    "Ortak iyon geri kaymaya yol açar, MX daha az çözünür; molar çözünürlük azalır.",
+    "Doğru: sıcaklık sabit olduğu için Kç değişmez; yalnız iyonların ona ulaşma biçimi değişir.",
+    "Ekleme sonrası [M⁺] artar, [X⁻] azalır; bütün iyon derişimleri sabit kalmaz.",
+    "Geri kayma ile bir miktar MX çöker; MX'ten gelen X⁻ derişimi azalır.",
+    "Dışarıdan M⁺ eklendiği için toplam M⁺ artar; çökme bu artışın yalnız bir bölümünü geri alır."
+   ],
+   "commonError": "Le Chatelier kaymasını denge sabitinin değişmesi sanmak.",
+   "check": "Kç'yi değiştirmek için sıcaklık değişmeli; işlem listesinde yalnız MY ekleme var, öyleyse sabit kalan nicelik Kç'dir."
+  }
+ },
+ {
+  "id": "f021c-cozunurluk-faktorleri-4",
+  "h": "10ef4945ee9d70",
+  "guidance": {
+   "knowledge": [
+    "Kç (çözünürlük çarpımı): doygun MX çözeltisinde [M⁺]·[X⁻] çarpımı; burada 4·10⁻⁴.",
+    "s: ortamda yeni çözünen MX'in molar derişimi (mol/L). Her çözünen MX bir M⁺ ve bir X⁻ verir.",
+    "Ortak iyon: çözeltide baştan bulunan M⁺; toplam [M⁺] = başlangıç + s olur."
+   ],
+   "strategy": "M⁺ hem baştan hem tuzdan geldiği için [X⁻] = s, [M⁺] = 0,03 + s yazılır; bunlar Kç bağıntısına konup ikinci dereceden denklem çözülür.",
+   "steps": [
+    "Denge: [M⁺] = 0,03 + s, [X⁻] = s. Kç: (0,03 + s)·s = 4·10⁻⁴.",
+    "Düzenle: s² + 0,03s − 0,0004 = 0.",
+    "Pozitif kök: s = (−0,03 + √(0,0009 + 0,0016)) / 2 = (−0,03 + 0,05) / 2 = 0,01 M.",
+    "[M⁺] = 0,03 + 0,01 = 0,04 M ve [X⁻] = 0,01 M."
+   ],
+   "optionReasons": [
+    "Saf sudaki s = √(4·10⁻⁴) = 0,02 M'yi X⁻ diye yazar ve M⁺'ya eklemeyi unutur; 0,03·0,02 = 6·10⁻⁴ Kç'yi tutmaz.",
+    "Ortak iyonu tamamen yok sayar, saf sudaki gibi iki iyonu da √Kç = 0,02 M alır.",
+    "s değerini doğru bulur ama iyonları yer değiştirir; ortak iyon M⁺ olduğu için büyük olan [M⁺] olmalı.",
+    "Doğru: (0,03 + 0,01)·0,01 = 0,04·0,01 = 4·10⁻⁴ ve M⁺ fazlası 0,03 M'dir.",
+    "Başlangıç derişimini iki iyona birden verir; 0,03·0,03 = 9·10⁻⁴, Kç'den büyüktür."
+   ],
+   "commonError": "Ortak iyon varken de s = √Kç yazmak ya da başlangıçtaki iyonu toplama katmamak.",
+   "check": "İki koşulu birden dene: çarpım 0,04·0,01 = 4·10⁻⁴ ve [M⁺] − [X⁻] = 0,03 M; ikisi de sağlanıyor."
+  }
+ },
+ {
+  "id": "f021c-cozunurluk-faktorleri-5",
+  "h": "05e02326a73cba",
+  "guidance": {
+   "knowledge": [
+    "Tam ayrışma: suda çözünen her CaX₂ formül biriminin iyonlarına bütünüyle ayrılması: CaX₂ → Ca²⁺ + 2 X⁻.",
+    "Molarite (M): 1 L çözeltideki madde molü. Tuzun formül molaritesi 0,02 M ise 1 L'de 0,02 mol CaX₂ vardır.",
+    "Ortak iyon kaynağı: başka bir tuzun dengesinde de bulunan iyonu (burada X⁻) sağlayan çözelti."
+   ],
+   "strategy": "İyon derişimi, tuz derişimi ile formüldeki iyon sayısının çarpımıdır; ayrışma denklemindeki katsayıyı kullan.",
+   "steps": [
+    "Ayrışma: CaX₂ → Ca²⁺ + 2 X⁻; 1 mol tuz 2 mol X⁻ verir.",
+    "[X⁻] = 2 × 0,02 M = 0,04 M.",
+    "MX henüz eklenmediği için başka X⁻ katkısı yoktur; sonuç 0,04 M."
+   ],
+   "optionReasons": [
+    "Doğru: her CaX₂ iki X⁻ verir, 2 × 0,02 = 0,04 M.",
+    "Katsayıyla çarpmak yerine ikiye böler: 0,02 / 2 = 0,01 M.",
+    "Formüldeki 2 alt simgesini yok sayar, X⁻ derişimini tuz derişimine eşit alır.",
+    "Ca²⁺ ve X⁻ derişimlerini toplar: 0,02 + 0,04 = 0,06 M; soru yalnız X⁻'yi istiyor.",
+    "Ondalık kaydırır: 0,02 × 10 = 0,20 M gibi yanlış bir çarpan kullanır."
+   ],
+   "commonError": "Formüldeki alt simgeyi unutup iyon derişimini tuz derişimine eşit almak.",
+   "check": "Yük dengesiyle sına: [Ca²⁺] = 0,02 M iki pozitif yükle 0,04 M pozitif yük eder; bunu 0,04 M X⁻ dengeler."
+  }
+ },
+ {
+  "id": "f021c-cozunurluk-faktorleri-6",
+  "h": "0dc00007e6660a",
+  "guidance": {
+   "knowledge": [
+    "Doygun çözünürlük: belli sıcaklık ve çözücüde dengeye ulaşıldığında çözünebilen en büyük tuz miktarı (mol/L); bir denge özelliğidir.",
+    "Çözünme hızı: tuzun ne kadar çabuk çözündüğü. Öğütme (yüzey alanı) ve karıştırma hızı artırır ama dengeye varılınca çözünen miktarı değiştirmez.",
+    "Endotermik çözünme: ısı alarak gerçekleşen çözünme. Kompleks: metal iyonunun bir ligandla oluşturduğu bağlı tür."
+   ],
+   "strategy": "Her yöntemi 'dengenin yerini mi değiştiriyor, yalnız varış süresini mi' sorusuyla sına; yalnız hızı etkileyen yöntem cevaptır.",
+   "steps": [
+    "Endotermik çözünmede ısıtma Kç'yi büyütür; doygun çözünürlük artar.",
+    "Asitle iyon tüketmek ya da kompleksle serbest metal iyonunu bağlamak ürün iyonunu azaltır, denge ileri kayar; çözünürlük artar.",
+    "Çözünürlüğü yüksek olduğu ölçülmüş bir çözücüye geçmek ortamı değiştirir; doygun miktar büyür.",
+    "Öğütme ve karıştırma teması ve hızı artırır; aynı çözücü ve sıcaklıkta varılan doygunluk sınırı aynıdır."
+   ],
+   "optionReasons": [
+    "Isı alan çözünmede sıcaklık artışı dengeyi ileri iter ve Kç büyür; gerçekten çözünürlüğü artırır.",
+    "Serbest iyonu tüketmek ürünü azaltır, denge ileri kayar; çözünürlük artırıcı bir yöntemdir.",
+    "Kompleks serbest metal iyonunu bağlar ve çözünmeyi ileri çeker; toplam çözünen miktar artar.",
+    "Deneyle daha çözücü olduğu verilen ortam doygun miktarı büyütür; çözücü değişimi dengeyi değiştirir.",
+    "Doğru: öğütme ve karıştırma yalnız dengeye varış hızını artırır; doygunluk sınırı aynı kalır."
+   ],
+   "commonError": "Daha hızlı çözünmeyi daha çok çözünme sanmak.",
+   "check": "İki kabı uzun süre beklet: öğütülmüş ve öğütülmemiş tuz aynı sıcaklıkta sonunda aynı derişimde doyar; fark yalnız bekleme süresindedir."
+  }
+ },
+ {
+  "id": "f021c-cozunurluk-faktorleri-7",
+  "h": "0b49dd9cb80237",
+  "guidance": {
+   "knowledge": [
+    "Doygun çözelti: katısıyla dengede olan, aynı koşulda daha fazla tuz çözemeyen çözelti.",
+    "Kç (çözünürlük çarpımı) = [M⁺][X⁻]; saf katının miktarı bu ifadeye girmez, çünkü saf katının etkinliği sabittir.",
+    "Aşırı doymuş çözelti: dengeden fazla çözünmüş madde içeren kararsız çözelti; katı varken kalıcı olamaz."
+   ],
+   "strategy": "Kç ifadesinde yalnız çözünmüş iyonlar bulunduğu için, katı eklemenin derişimleri değiştirip değiştirmediğine bu ifadeden bak.",
+   "steps": [
+    "Kç = [M⁺][X⁻] ve saf MX(k) bu ifadede yer almaz.",
+    "Sıcaklık, hacim ve ortam aynı; iyon derişimleri zaten Kç'yi sağlıyor.",
+    "Eklenen katı çözünmeden dibe çöker; çözeltideki derişimler değişmez, yalnız katı miktarı artar."
+   ],
+   "optionReasons": [
+    "Doğru: doygun çözeltide derişimler Kç ile sabitlenmiştir; fazla katı dipte birikir.",
+    "Saf katı miktarını Kç ifadesine sokar; katı terim bağıntıda yoktur, Kç yalnız sıcaklıkla değişir.",
+    "Katı eklemeyi derişim artışı sanar; Kç ne iki katına çıkar ne değişir.",
+    "Doygun çözeltinin daha fazla tuz alamayacağını unutur; eklenen tuz çözünmeden kalır.",
+    "Fazla katıyı aşırı doygunluk sanar; katı varken fazla çözünen madde zaten çöker."
+   ],
+   "commonError": "Kç ifadesine saf katının miktarını katmak.",
+   "check": "Kütle denetimi: dipteki katı, eklenen kütle kadar artar; çözeltinin iyon derişimi ve iletkenliği değişmez."
+  }
+ },
+ {
+  "id": "f021c-cozunurluk-faktorleri-8",
+  "h": "1a373fca2d5478",
+  "guidance": {
+   "knowledge": [
+    "Kç (çözünürlük çarpımı): doygun çözeltide [M⁺][X⁻] değeri; burada 4·10⁻⁴.",
+    "Q (iyon çarpımı): o anki derişimlerle hesaplanan [M⁺][X⁻]. Q < Kç ise çözelti doymamıştır, daha çok tuz çözünebilir.",
+    "Kapasite: doygunluk için gereken mol = s·V; s = √Kç (mol/L), V hacim (L)."
+   ],
+   "strategy": "Önce 1 L'nin çözebileceği en çok tuzu bul ve eldeki 0,012 mol ile karşılaştır; sonra gerçek derişimle Q hesaplayıp Kç ile kıyasla.",
+   "steps": [
+    "s = √(4·10⁻⁴) = 0,02 M; 1 L'de kapasite 0,02 mol.",
+    "Eldeki 0,012 mol < 0,02 mol olduğu için tuzun tamamı çözünür.",
+    "[M⁺] = [X⁻] = 0,012 M; Q = 0,012² = 1,44·10⁻⁴.",
+    "1,44·10⁻⁴ < 4·10⁻⁴; çözelti doymamış, Kç değişmez."
+   ],
+   "optionReasons": [
+    "Kapasiteyle karşılaştırmayı tersine yapar; 0,012 mol kapasitenin altında olduğu için hiç katı kalmaz.",
+    "Doygunluk derişimini (0,02 M) gerçek derişim sanır; 0,02 mol çözecek tuz yoktur, derişim 0,012 M olur.",
+    "Doğru: tüm tuz çözünür, Q = 0,012² = 1,44·10⁻⁴ < Kç ve çözelti doymamıştır.",
+    "Q ile Kç'yi karıştırır; Kç sıcaklığa bağlı sabittir, eldeki tuz azaldı diye düşmez.",
+    "Doygunluk için eksik tuzun bir yerden geleceğini sanar; su MX üretemez, çözelti doymamış kalır."
+   ],
+   "commonError": "Az tuz eklendiği hâlde derişimi otomatik olarak doygunluk derişimi kabul etmek.",
+   "check": "Ters yoldan: [M⁺] = 0,012 M iken çökme için [X⁻] = 4·10⁻⁴ / 0,012 ≈ 0,033 M gerekir; 0,012 M bunun altında."
+  }
+ },
+ {
+  "id": "f021c-cozunurluk-faktorleri-9",
+  "h": "131d733d13ef67",
+  "guidance": {
+   "knowledge": [
+    "Endotermik çözünme: ısı alan çözünme; sıcaklık artınca Kç ve çözünürlük büyür.",
+    "Ortak iyon etkisi: tuzla aynı iyonun ortamda bulunması çözünmeyi azaltır (denge geri kayar).",
+    "Molar çözünürlük: belli ortamda 1 L'de çözünen tuz molü; hem sıcaklığa hem ortamdaki iyonlara bağlıdır."
+   ],
+   "strategy": "İki etkinin yönünü ayrı ayrı belirle; aynı yönde değillerse sonucu yalnız sayısal büyüklükler belirler, bu yüzden verilenlerin yeterli olup olmadığını denetle.",
+   "steps": [
+    "II yüksek sıcaklıkta: endotermik çözünme nedeniyle çözünürlüğü artıran etki.",
+    "II daha çok ortak iyon içeriyor: çözünürlüğü azaltan etki.",
+    "I'de iki etki de tersine işler; düşük sıcaklık azaltır, az ortak iyon artırır.",
+    "Kç(T) değerleri ve iyon derişimleri yok; hangi etkinin baskın olduğu hesaplanamaz, sıralama kesin değildir."
+   ],
+   "optionReasons": [
+    "Yalnız sıcaklık etkisine bakar, ortak iyonun azaltıcı etkisini yok sayar.",
+    "Doğru: biri artıran biri azaltan iki etki var, sayılar verilmeden hangisinin baskın olduğu bilinemez.",
+    "Yalnız ortak iyon etkisine bakar, yüksek sıcaklığın endotermik çözünmeyi artırdığını unutur.",
+    "Kç'nin sıcaklığa bağlı olduğunu unutur; sıcaklıkları farklı iki ortamın Kç'si aynı kabul edilemez.",
+    "Olası bir durumu kural sanar; ortak iyon etkisi sıcaklık etkisini ancak sayılar öyle gösterirse aşabilir."
+   ],
+   "commonError": "Zıt yönlü iki etkiden yalnız birini görüp kesin sonuç çıkarmak.",
+   "check": "Karşı örnek kur: II'deki ortak iyon az ise II'de, çok fazla ise I'de çözünürlük büyük olur; iki sonuç da mümkündür."
+  }
+ },
+ {
+  "id": "f021c-cozunurluk-faktorleri-10",
+  "h": "066d0df28b7eb0",
+  "guidance": {
+   "knowledge": [
+    "Ligand: metal iyonuna elektron çifti vererek bağlanan molekül ya da iyon. Kompleks: metal iyonu ile ligandların oluşturduğu bağlı tür.",
+    "Serbest metal iyonu: hiçbir ligandla bağlanmamış, Kç ifadesine giren M⁺. Toplam çözünmüş metal: serbest iyon ile komplekslerdeki metalin toplamı.",
+    "Kç (çözünürlük çarpımı): serbest iyonlarla yazılan ve yalnız sıcaklıkla değişen sabit."
+   ],
+   "strategy": "Kompleks oluşumunu serbest iyonu tüketen ikinci bir denge gibi düşün; Le Chatelier ile çözünmenin yönünü bul, sonra serbest ve toplam metali ayrı izle.",
+   "steps": [
+    "Ligand serbest M⁺'yı kompleks içine alır; serbest [M⁺] düşer.",
+    "İyon çarpımı Kç'nin altına iner, MX(k) ⇌ M⁺ + X⁻ dengesi ileri kayar, daha çok katı çözünür.",
+    "Çözünen metalin çoğu komplekste durur; toplam çözünmüş metal artarken serbest M⁺ düşük kalabilir.",
+    "Sıcaklık sabit olduğu için Kç değişmez."
+   ],
+   "optionReasons": [
+    "Kç'yi toplam metalle yazar; Kç ifadesine yalnız serbest iyon girer, kompleksteki metal girmez.",
+    "Saf suyu en çözücü ortam sanar; bu soruda kompleks oluşumu çözünürlüğü saf sudakinden büyütür.",
+    "Dengenin kaymasını sabitin değişmesi sanar; sıcaklık sabitken Kç aynıdır.",
+    "Doğru: kompleks serbest iyonu bağlar, katı daha çok çözünür; toplam metal artar, serbest iyon azalabilir.",
+    "Kompleks oluşumu yeni bir kimyasal tür üretir ve dengeyi kaydırır; öğütme gibi yalnız hız etkisi değildir."
+   ],
+   "commonError": "Serbest metal iyonu derişimi ile toplam çözünmüş metal miktarını aynı nicelik sanmak.",
+   "check": "Kç ile sına: serbest [M⁺] azalıp [X⁻] arttığında çarpım aynı kalabilir; artan X⁻, çözünen MX miktarının arttığını gösterir."
+  }
+ },
+ {
+  "id": "f021c-redoks-denklestirme-1",
+  "h": "154f00bac738b5",
+  "guidance": {
+   "knowledge": [
+    "Yükseltgenme basamağı: bir atomun bileşikteki bağ elektronları tamamen daha elektronegatif atoma verilmiş sayıldığında taşıyacağı varsayımsal yük.",
+    "Nötr bileşikte bütün atomların yükseltgenme basamakları toplamı 0'dır; her basamak atom sayısıyla çarpılarak toplanır."
+   ],
+   "strategy": "Mn dışındaki basamaklar verildiği için bilinmeyeni x yapıp toplam = 0 denklemini kurmak en kısa yoldur.",
+   "steps": [
+    "Mn'nin basamağına x de; K: 1 × (+1) = +1, O: 4 × (−2) = −8.",
+    "Toplam: +1 + x − 8 = 0.",
+    "x − 7 = 0 → x = +7."
+   ],
+   "optionReasons": [
+    "MnO₂'deki basamağı ezberden getirir; KMnO₄ için toplam +1 + 4 − 8 = −3 olur, 0 değil.",
+    "Manganat gibi başka bir bileşiğin değerini kullanır; +1 + 6 − 8 = −1 olur, toplam 0 değil.",
+    "Denklemi çözerken işareti çevirir; x = −7 alınırsa toplam +1 − 7 − 8 = −14 olur.",
+    "Doğru: +1 + 7 + 4(−2) = 0.",
+    "Çözeltide sık görülen Mn²⁺ iyonunu düşünür; +1 + 2 − 8 = −5 olur."
+   ],
+   "commonError": "Oksijenin −2 değerini atom sayısıyla çarpmayı unutmak.",
+   "check": "MnO₄⁻ iyonuyla sına: x + 4(−2) = −1 → x = +7; aynı sonuç."
+  }
+ },
+ {
+  "id": "f021c-redoks-denklestirme-2",
+  "h": "023dab1eb90b44",
+  "guidance": {
+   "knowledge": [
+    "Yükseltgenme basamağı: bileşikteki bir atoma bağ elektronları paylaştırılarak verilen varsayımsal yük.",
+    "Peroksit: iki oksijenin birbirine bağlı olduğu (O−O bağı içeren) bileşik; H₂O₂ buna örnektir. O−O bağı eşit paylaşıldığı için oksijen burada −2 olmaz.",
+    "Nötr bileşikte basamakların toplamı 0'dır."
+   ],
+   "strategy": "Ezber −2 değeri peroksitte geçersiz olduğu için O'ya x deyip toplam 0 denklemini kur.",
+   "steps": [
+    "H: 2 × (+1) = +2; O: 2 × x.",
+    "+2 + 2x = 0 → 2x = −2.",
+    "Sonuç: her O için x = −1."
+   ],
+   "optionReasons": [
+    "Oksijen için her yerde −2 ezberini uygular; o zaman 2 + 2(−2) = −2 olur, nötr bileşik toplamı 0 değil.",
+    "Doğru: 2(+1) + 2(−1) = 0.",
+    "Element hâlindeki O₂'nin basamağını kullanır; H₂O₂ bir bileşiktir ve toplam 2 + 0 = +2 olur.",
+    "Hidrojenin basamağını oksijene aktarır; 2 + 2(+1) = +4 olur.",
+    "Florlu bileşiklerdeki istisnai değeri getirir; 2 + 2(+2) = +6, toplam 0 değil."
+   ],
+   "commonError": "Peroksitte de oksijeni −2 kabul etmek.",
+   "check": "Yapıdan bak: her O bağlı olduğu H'nin elektronunu çeker, O−O bağı eşit paylaşılır; her O'ya bir fazla elektron düşer, yani −1."
+  }
+ },
+ {
+  "id": "f021c-redoks-denklestirme-3",
+  "h": "01d07280998a64",
+  "guidance": {
+   "knowledge": [
+    "Yükseltgenme: elektron verip basamağı artırma. İndirgenme: elektron alıp basamağı azaltma.",
+    "İndirgen: elektron veren, kendisi yükseltgenen madde. Yükseltgen: elektron alan, kendisi indirgenen madde.",
+    "Element hâlindeki atomun basamağı 0, tek atomlu iyonun basamağı yüküne eşittir (Sn²⁺ için +2)."
+   ],
+   "strategy": "Her elementin iki taraftaki basamağını yaz; artan elektron vermiştir (indirgen), azalan elektron almıştır (yükseltgen). Rol adları giren maddelere verilir.",
+   "steps": [
+    "Fe: 0 → +2, basamak arttı; Fe 2 e⁻ verir, yani indirgendir.",
+    "Sn: +2 → 0, basamak azaldı; Sn²⁺ 2 e⁻ alır, yani yükseltgendir.",
+    "Sıra indirgen sonra yükseltgen: Fe ve Sn²⁺."
+   ],
+   "optionReasons": [
+    "Rolleri ters çevirir; Sn²⁺ elektron aldığı için yükseltgendir, indirgen değildir.",
+    "Ürünleri seçer; Fe²⁺ ve Sn ürün tarafındadır, rol adları girenlere verilir.",
+    "Ürünleri ve sırayı karıştırır; Sn ve Fe²⁺ tepkimede oluşan maddelerdir.",
+    "Fe'yi doğru seçer ama yükseltgen yerine kendi ürünü Fe²⁺'yı yazar; elektron alan Sn²⁺'dır.",
+    "Doğru: Fe elektron veren indirgen, Sn²⁺ elektron alan yükseltgendir."
+   ],
+   "commonError": "Yükseltgenen maddeye 'yükseltgen' adını vermek; yükseltgenen madde indirgendir.",
+   "check": "Elektron sayısını eşle: Fe 2 e⁻ verir, Sn²⁺ 2 e⁻ alır; veren ile alan sayıca tutuyor."
+  }
+ },
+ {
+  "id": "f021c-redoks-denklestirme-4",
+  "h": "115ce533fbb162",
+  "guidance": {
+   "knowledge": [
+    "Redoks tepkimesi: en az bir atomun yükseltgenme basamağının değiştiği, elektron aktarılan tepkime.",
+    "Çökelme tepkimesi: çözeltideki iyonların birleşip az çözünen katı oluşturması; iyon yükleri korunur.",
+    "Element hâlinde (Zn, H₂, O₂, Cl₂, Fe) basamak 0'dır; tek atomlu iyonda basamak yüke eşittir."
+   ],
+   "strategy": "Her tepkimede element hâlinde bir tür olup olmadığına bak; element hâli ile iyon ya da bileşik hâli arasında geçiş varsa basamak değişmiştir.",
+   "steps": [
+    "Ag⁺ + Cl⁻ → AgCl: Ag +1, Cl −1 olarak kalır; değişim yok.",
+    "Zn + Cu²⁺ ve Fe + 2 H⁺ tepkimelerinde metaller 0'dan +2'ye çıkar.",
+    "2 H₂ + O₂ → 2 H₂O: H 0'dan +1'e, O 0'dan −2'ye geçer. Cl₂ + 2 Br⁻: Cl 0'dan −1'e iner.",
+    "Basamakların değişmediği tek tepkime AgCl çökelmesidir."
+   ],
+   "optionReasons": [
+    "Doğru: Ag +1 ve Cl −1 olarak kalır; yalnız katı oluşur, elektron aktarımı yoktur.",
+    "Zn 0'dan +2'ye çıkar, Cu +2'den 0'a iner; metal yer değiştirmesi bir redokstur.",
+    "Ürün tek bileşik olduğu için redoks sayılmayabilir sanılır; H 0 → +1, O 0 → −2 değişir.",
+    "Metal ile asit tepkimesini nötrleşme sanar; Fe 0 → +2 ve H +1 → 0 olur.",
+    "Ametal yer değiştirmesini iyon değişimi sanar; Cl 0 → −1 ve Br −1 → 0 olur."
+   ],
+   "commonError": "Katı ya da gaz oluşumunu görünce tepkimeyi redoks sanmak.",
+   "check": "Element hâlinde tür ara: yalnız AgCl tepkimesinde hiç element yok; diğerlerinin hepsinde var."
+  }
+ },
+ {
+  "id": "f021c-redoks-denklestirme-5",
+  "h": "05754eb605f15d",
+  "guidance": {
+   "knowledge": [
+    "Dikromat iyonu Cr₂O₇²⁻: içinde iki Cr atomu bulunan, her Cr'nin +6 basamağında olduğu çok atomlu iyon.",
+    "Bir atomun basamağı +6'dan +3'e inerken aldığı elektron sayısı basamak farkıdır: 6 − 3 = 3. İyonun tamamı için bu sayı atom sayısıyla çarpılır."
+   ],
+   "strategy": "Atom başına elektronu basamak farkından, iyon başına elektronu Cr sayısıyla çarparak bul; mol oranı aynı kalır.",
+   "steps": [
+    "Bir Cr: +6 → +3, alınan elektron 6 − 3 = 3.",
+    "Bir iyonda 2 Cr var: 2 × 3 = 6 e⁻.",
+    "1 mol Cr₂O₇²⁻ → 6 mol elektron alır."
+   ],
+   "optionReasons": [
+    "Atom başına değerde kalır; iyonda iki Cr bulunduğunu hesaba katmaz.",
+    "Yalnız Cr atom sayısını alır, her atomun 3 elektron aldığını unutur.",
+    "Doğru: 2 Cr × 3 e⁻ = 6 mol e⁻.",
+    "Basamak farkı yerine +6'nın kendisini kullanır: 2 × 6 = 12.",
+    "Her iyonu tek elektronluk bir birim sayar; basamak değişimini hiç hesaplamaz."
+   ],
+   "commonError": "Atom başına alınan elektronu iyonun tamamının değeri sanmak.",
+   "check": "Yük ile sına: Cr₂O₇²⁻ + 14 H⁺ + 6 e⁻ → 2 Cr³⁺ + 7 H₂O; sol −2 + 14 − 6 = +6, sağ 2 × 3 = +6."
+  }
+ },
+ {
+  "id": "f021c-redoks-denklestirme-6",
+  "h": "10b8a01b64271b",
+  "guidance": {
+   "knowledge": [
+    "Redoks denkleştirme: alınan ve verilen elektron sayısını eşitleyip ardından atom ve yükleri denkleştirme.",
+    "MnO₄⁻'de Mn +7, Mn²⁺'da +2; Fe²⁺ +2, Fe³⁺ +3 basamağındadır.",
+    "Yük denkliği: iki tarafın iyon yükleri toplamı eşit olmalıdır."
+   ],
+   "strategy": "a hem Fe atomlarını hem elektronları belirlediği için elektron alışverişini eşitlemek en kısa yoldur; sonra yükle doğrula.",
+   "steps": [
+    "Mn: +7 → +2, bir MnO₄⁻ 5 e⁻ alır.",
+    "Fe: +2 → +3, her Fe²⁺ 1 e⁻ verir.",
+    "Verilen = alınan: a × 1 = 5 → a = 5.",
+    "Yük: sol −1 + 8 + 2·5 = +17; sağ +2 + 3·5 = +17."
+   ],
+   "optionReasons": [
+    "Doğru: 5 Fe²⁺ × 1 e⁻ = 5 e⁻, MnO₄⁻'nin aldığı elektronla eşit.",
+    "Yalnız Fe atomlarını sayar; a = 1 de Fe'yi denkler ama yük sol −1 + 8 + 2 = 9, sağ 2 + 3 = 5 olur.",
+    "Fe³⁺'ün yükündeki 3'ü katsayı sanar; o zaman verilen elektron 3, alınan 5 olur.",
+    "H₂O katsayısındaki 4'ü kullanır; 4 e⁻ verilir, 5 alınır, denklem tutmaz.",
+    "H⁺ katsayısı 8'i a sanar; yük sol −1 + 8 + 16 = 23, sağ 2 + 24 = 26 olur."
+   ],
+   "commonError": "Yalnız atomları sayıp elektron ve yük denkliğini denetlememek.",
+   "check": "Oksijen ve hidrojen de tutar: 4 O, 4 H₂O'daki 4 O'ya; 8 H⁺, 4 H₂O'daki 8 H'ye eşit."
+  }
+ },
+ {
+  "id": "f021c-redoks-denklestirme-7",
+  "h": "0af03fed824a34",
+  "guidance": {
+   "knowledge": [
+    "Yarı tepkime: redoksun yalnız elektron alan ya da yalnız elektron veren kısmı; elektronlar denkleme açıkça yazılır.",
+    "Net denklem için alınan toplam elektron verilen toplam elektrona eşit olmalı; her yarı uygun bir çarpanla çarpılır.",
+    "En küçük ortak kat (EKOK): iki sayının ikisine de tam bölünen en küçük sayı; 3 ve 2 için 6."
+   ],
+   "strategy": "Elektronları sildirmek için iki yarının elektron sayısını EKOK'ta buluştur; çarpan = EKOK / yarının elektron sayısı.",
+   "steps": [
+    "İlk yarı 3 e⁻ alır, ikinci yarı 2 e⁻ verir; EKOK(3, 2) = 6.",
+    "İlk yarının çarpanı 6 / 3 = 2, ikincinin 6 / 2 = 3.",
+    "Sırasıyla 2 ve 3: alınan 2·3 = 6, verilen 3·2 = 6 e⁻."
+   ],
+   "optionReasons": [
+    "Çarpanları elektron sayılarıyla aynı yazar; 3·3 = 9 alınır, 2·2 = 4 verilir.",
+    "Çarpansız toplar; 3 e⁻ alınıp 2 e⁻ verildiği için 1 elektron artar.",
+    "İkinci çarpanı doğru alıp ilkini unutur; alınan 3, verilen 6 olur.",
+    "Doğru: 2 × 3 = 6 alınan, 3 × 2 = 6 verilen elektron.",
+    "İlk çarpanı doğru alıp ikinciyi unutur; alınan 6, verilen 2 olur."
+   ],
+   "commonError": "Çarpanı çapraz almak yerine her yarıyı kendi elektron sayısıyla çarpmak.",
+   "check": "Toplanan denklem: 2 MnO₄⁻ + 3 SO₃²⁻ + H₂O → 2 MnO₂ + 3 SO₄²⁻ + 2 OH⁻; yük iki tarafta da −8."
+  }
+ },
+ {
+  "id": "f021c-redoks-denklestirme-8",
+  "h": "1cfb093db60415",
+  "guidance": {
+   "knowledge": [
+    "Elektron dengesi: net denklemde alınan toplam elektron (çarpan × yarı başına alınan) verilen toplam elektrona eşit olmalıdır.",
+    "En küçük tam katsayılar: bütün katsayıların ortak böleni kalmayacak biçimde sadeleştirilmiş hâl; ortak bölen varsa denklem ona bölünür."
+   ],
+   "strategy": "Önce verilen çarpanlarla elektronların eşit olup olmadığını hesapla, sonra çarpanların ortak böleni var mı diye bak; ikisi ayrı koşuldur.",
+   "steps": [
+    "Alınan: 2 × 5 = 10 e⁻; verilen: 10 × 1 = 10 e⁻. Elektronlar eşit.",
+    "2 ile 10'un ortak böleni 2'dir.",
+    "Bütün denklem 2'ye bölünür: çarpanlar 1 ve 5; bu en küçük tam takımdır."
+   ],
+   "optionReasons": [
+    "Çarpanları elektron toplamı sanır; asıl toplamlar 2·5 = 10 ve 10·1 = 10, eşittir.",
+    "Doğru: 10 = 10 olduğu için denk; ortak 2 bölünerek 1 ve 5 elde edilir.",
+    "Çarpanların farklı olmasını sorun sanır; farklı elektron sayılı yarılar zaten farklı çarpan ister.",
+    "Denk olmayı en küçük olmakla karıştırır; 2 ve 10 ortak 2'ye bölünebilir.",
+    "Yalnız elektronları bölmeyi önerir; bölme bütün denkleme uygulanmazsa atomlar ile elektronlar uyumsuz kalır."
+   ],
+   "commonError": "Elektronları eşitleyen her çarpan takımını en küçük takım sanmak.",
+   "check": "EKOK(5, 1) = 5; çarpanlar 5 / 5 = 1 ve 5 / 1 = 5 çıkar, bölmeyle bulunanla aynı."
+  }
+ },
+ {
+  "id": "f021c-redoks-denklestirme-9",
+  "h": "1826f988eebd94",
+  "guidance": {
+   "knowledge": [
+    "İndirgenme: bir atomun elektron alıp yükseltgenme basamağının azalması.",
+    "HNO₃ ve nitrat iyonu NO₃⁻ içinde N +5, NO içinde N +2 basamağındadır.",
+    "Katsayı: denklemde bir formülün önündeki sayı; o formülden kaç tane tepkimeye girdiğini gösterir."
+   ],
+   "strategy": "Azot atomlarını ürün tarafında nereye gittiklerine göre ayır; yalnız basamağı azalan azotlar indirgenmiştir.",
+   "steps": [
+    "Sağda N iki yerde: 3 Cu(NO₃)₂ içinde 3 × 2 = 6 N, 2 NO içinde 2 N.",
+    "Tuzdaki 6 N +5 olarak kalır; değişmez.",
+    "NO'daki 2 N +5 → +2 iner; her biri 3 e⁻ alır. İndirgenen N sayısı 2.",
+    "Denetim: 3 Cu × 2 e⁻ = 6 e⁻ verilir, 2 N × 3 e⁻ = 6 e⁻ alınır."
+   ],
+   "optionReasons": [
+    "HNO₃'ün katsayısını kullanır; 8 N'nin 6'sı tuzda +5 olarak kalır, indirgenmez.",
+    "Tuzdaki nitrat azotlarını sayar; onların basamağı +5 olarak kalır.",
+    "Cu sayısını azot sayısıyla karıştırır; 3 Cu yükseltgenen atomlardır.",
+    "Yönü ters okur; azotun basamağı artmaz, ya +5'ten +2'ye iner ya da hiç değişmez.",
+    "Doğru: yalnız NO'ya dönüşen 2 N atomunun basamağı +5'ten +2'ye iner."
+   ],
+   "commonError": "Asidin toplam katsayısını indirgenen atom sayısı sanmak.",
+   "check": "Elektron dengesi: 2 N × 3 = 6 e⁻ ile 3 Cu × 2 = 6 e⁻ eşit; 6 ya da 8 N alınsaydı elektronlar tutmazdı."
+  }
+ },
+ {
+  "id": "f021c-redoks-denklestirme-10",
+  "h": "0a77bdca20283d",
+  "guidance": {
+   "knowledge": [
+    "Orantısızlaşma: aynı türdeki aynı elementin bir kısmının yükseltgenip bir kısmının indirgendiği redoks.",
+    "İndirgenme: basamağın azalması (elektron alma); yükseltgenme: basamağın artması (elektron verme).",
+    "Burada O'nun basamağı H₂O₂'de −1, H₂O'da −2, O₂'de 0."
+   ],
+   "strategy": "Aynı başlangıç türünden çıkan iki ürünü ayrı ayrı izle; basamağın yönü her ürün için ayrı belirlenir.",
+   "steps": [
+    "H₂O₂ → H₂O: O −1 → −2, basamak azaldı; bu O'lar elektron alır, indirgenir.",
+    "H₂O₂ → O₂: O −1 → 0, basamak arttı; bu O'lar elektron verir, yükseltgenir.",
+    "Elektron denetimi: 2 O birer e⁻ alır (2 e⁻), 2 O birer e⁻ verir (2 e⁻); eşit.",
+    "Aynı H₂O₂ hem indirgenen hem yükseltgenen O sağlar."
+   ],
+   "optionReasons": [
+    "Yalnız H₂O ürününe bakar; O₂'ye giden O'ların basamağı artar ve elektron verir.",
+    "Yalnız O₂ ürününe bakar; H₂O'ya giden O'lar elektron alır.",
+    "Doğru: bir kısım O −1 → −2 indirgenir, bir kısım −1 → 0 yükseltgenir.",
+    "Basamakların değiştiğini görmez; −1'den hem −2'ye hem 0'a değişim vardır.",
+    "H₂O₂'yi her zaman yükseltgen sanır; burada hem yükseltgen hem indirgen rolündedir."
+   ],
+   "commonError": "Bir maddeye her tepkimede tek bir rol (yalnız yükseltgen) yakıştırmak.",
+   "check": "Toplam basamak: solda 4 O × (−1) = −4; sağda 2 × (−2) + 2 × 0 = −4; artış ve azalış birbirini götürür."
+  }
+ },
+ {
+  "id": "f021c-metalik-aktiflik-1",
+  "h": "0f9ea03aba989f",
+  "guidance": {
+   "knowledge": [
+    "Standart indirgenme potansiyeli E°: bir iyonun elektron alıp metale dönüşme eğiliminin volt (V) cinsinden ölçüsü; 25 °C, 1 M ve 1 atm koşulunda verilir.",
+    "E° ne kadar küçükse (daha negatif) iyonun indirgenmesi o kadar zor, metalin ters yönde elektron vermesi o kadar kolaydır.",
+    "Elektron verici (indirgen): elektron veren tür; bir metal ancak metal hâlindeyken elektron verebilir."
+   ],
+   "strategy": "Metalin elektron verme yönü tablodaki indirgenmenin tersi olduğu için en küçük E° değerine sahip çiftin metalini seç.",
+   "steps": [
+    "Değerleri sırala: Zn −0,763 V < Cu +0,337 V < Ag +0,799 V.",
+    "En küçük indirgenme değeri Zn'de; Zn²⁺ en zor indirgenir, Zn en kolay elektron verir.",
+    "En güçlü elektron verici Zn'dir."
+   ],
+   "optionReasons": [
+    "Ortadaki değeri seçer; Cu'nun indirgenme değeri Zn'ninkinden büyük, elektron vermesi daha zordur.",
+    "Büyük E°'yi güçlü verici sanır; büyük E° iyonun kolay elektron aldığını gösterir, Ag en zayıf vericidir.",
+    "İyonu metalle karıştırır; Ag⁺ zaten elektron kaybetmiştir, alıcı rolündedir.",
+    "Metal olmayı aynı aktiflik sanır; değerler farklı olduğu için verme eğilimleri de farklıdır.",
+    "Doğru: en küçük E° Zn çiftinde, Zn en kolay yükseltgenir."
+   ],
+   "commonError": "En büyük indirgenme potansiyeline sahip metali en aktif sanmak.",
+   "check": "Zn + Cu²⁺ için E° = 0,337 − (−0,763) = +1,100 V, pozitif; Zn, Cu²⁺'ya elektron verebilir."
+  }
+ },
+ {
+  "id": "f021c-metalik-aktiflik-2",
+  "h": "06eccee27a0de4",
+  "guidance": {
+   "knowledge": [
+    "E° (standart potansiyel): elektron aktarma eğiliminin volt (V) cinsinden ölçüsü; tablolarda indirgenme yönünde yazılır.",
+    "Tepkime potansiyeli: E° = E°(elektron alan çift) − E°(elektron veren çift); iki değer de indirgenme değeridir.",
+    "E° şiddet özelliğidir: yarı tepkimeyi bir sayıyla çarpmak E°'yi değiştirmez."
+   ],
+   "strategy": "Elektron alan ve vereni belirleyip iki indirgenme değerini çıkar; denkleştirme katsayılarını potansiyele uygulama.",
+   "steps": [
+    "Cu → Cu²⁺: Cu elektron verir. Ag⁺ → Ag: Ag⁺ elektron alır.",
+    "E° = E°(Ag⁺/Ag) − E°(Cu²⁺/Cu) = 0,799 − 0,337.",
+    "E° = +0,462 V; Ag yarısındaki 2 katsayısı E°'yi değiştirmez."
+   ],
+   "optionReasons": [
+    "Ag değerini 2 katsayısıyla çarpar: 2·0,799 − 0,337 = 1,261 V; potansiyel katsayıyla çarpılmaz.",
+    "İki değeri toplar: 0,799 + 0,337 = 1,136 V; indirgenme değerleri çıkarılmalıdır.",
+    "Doğru: 0,799 − 0,337 = +0,462 V.",
+    "Çıkarmayı ters sırayla yapar: 0,337 − 0,799; bu ters yönün değeridir.",
+    "Farkı iki elektrona böler: 0,462 / 2 = 0,231 V; E° elektron sayısıyla bölünmez."
+   ],
+   "commonError": "Denkleştirme katsayısını standart potansiyele de uygulamak.",
+   "check": "İşaretle sına: büyük E°'li Ag⁺ elektron alıcı, küçük E°'li Cu verici olduğunda fark pozitif çıkmalı; +0,462 V buna uyar."
+  }
+ },
+ {
+  "id": "f021c-metalik-aktiflik-3",
+  "h": "044a70eddf0f62",
+  "guidance": {
+   "knowledge": [
+    "E° (standart indirgenme potansiyeli): bir çiftin elektron alma eğilimi, volt (V). Büyük değer kolay elektron alır.",
+    "Tepkime potansiyeli: E° = E°(elektron alan çift) − E°(elektron veren çift). Sonuç negatifse yazılan yön standart koşulda istemli değildir.",
+    "Denkleştirme katsayıları E°'yi çarpmaz."
+   ],
+   "strategy": "Yazılan yönde kimin elektron verip kimin aldığını belirle, sonra alan eksi veren kuralını uygula; işaret yönün desteklenip desteklenmediğini söyler.",
+   "steps": [
+    "Ag → Ag⁺: Ag elektron verir. Zn²⁺ → Zn: Zn²⁺ elektron alır.",
+    "E° = E°(Zn²⁺/Zn) − E°(Ag⁺/Ag) = −0,763 − 0,799.",
+    "E° = −1,562 V; negatif olduğu için yazılan yön standart koşulda desteklenmez."
+   ],
+   "optionReasons": [
+    "Doğru: −0,763 − 0,799 = −1,562 V; negatif değer yönün desteklenmediğini gösterir.",
+    "Ters yönün değerini alır ve Ag'nin değerini küçük sanır; Ag çiftinin indirgenme değeri +0,799 V ile büyüktür.",
+    "İşaretleri karıştırarak toplar: 0,763 − 0,799 = −0,036; doğru işlem alan eksi verendir.",
+    "Elektron eşitlemenin voltajı sıfırladığını sanır; elektron sayısı eşitlenir, potansiyel farkı kalır.",
+    "Yalnız Ag değerini kullanır; tepkime potansiyeli iki çiftin farkıdır."
+   ],
+   "commonError": "Hangi çiftin elektron aldığını belirlemeden değerleri gelişigüzel çıkarmak.",
+   "check": "Ters yön Zn + 2 Ag⁺ için E° = 0,799 − (−0,763) = +1,562 V; yön tersine dönünce işaret de döner."
+  }
+ },
+ {
+  "id": "f021c-metalik-aktiflik-4",
+  "h": "06c172a7b8022f",
+  "guidance": {
+   "knowledge": [
+    "E° (standart indirgenme potansiyeli): bir iyonun elektron alma eğilimi, volt (V).",
+    "Tepkime potansiyeli: E° = E°(alan) − E°(veren). E° birim yük başına enerji olduğundan şiddet özelliğidir; katsayılarla çarpılmaz."
+   ],
+   "strategy": "Cr metal, Pb²⁺ iyon; vereni ve alanı belirleyip iki indirgenme değerinin farkını al, 2 ve 3 katsayılarını potansiyele uygulama.",
+   "steps": [
+    "Cr → Cr³⁺: Cr elektron verir. Pb²⁺ → Pb: Pb²⁺ elektron alır.",
+    "E° = E°(Pb²⁺/Pb) − E°(Cr³⁺/Cr) = −0,126 − (−0,744).",
+    "−(−0,744) = +0,744 olduğundan: −0,126 + 0,744 = +0,618 V.",
+    "Katsayılar 2·3 = 6 elektronu eşitler; E°'yi değiştirmez."
+   ],
+   "optionReasons": [
+    "Değerleri katsayılarla çarpar: 3(−0,126) − 2(−0,744) = −0,378 + 1,488 = 1,110 V.",
+    "Doğru: −0,126 − (−0,744) = +0,618 V.",
+    "Çıkarmayı ters sırayla yapar: −0,744 − (−0,126) = −0,618 V; bu ters yönün değeridir.",
+    "Eksi işaretlerini yok sayıp toplar: 0,744 + 0,126 = 0,870 V.",
+    "Farkı aktarılan 6 elektronla çarpar: 6 × 0,618 = 3,708 V."
+   ],
+   "commonError": "Negatif değeri çıkarırken işaret hatası yapmak ya da potansiyeli katsayıyla çarpmak.",
+   "check": "Cr'nin E°'si Pb'ninkinden küçük; Cr daha aktif olduğu için Pb²⁺'yı indirgemesi beklenir, pozitif sonuç bununla uyumlu."
+  }
+ },
+ {
+  "id": "f021c-metalik-aktiflik-5",
+  "h": "11b952ecfbc393",
+  "guidance": {
+   "knowledge": [
+    "Yükseltgenme: elektron verip basamağı artırma (Zn 0 → +2). İndirgenme: elektron alıp basamağı azaltma (H +1 → 0).",
+    "Standart hidrojen elektrodu: 2 H⁺ + 2 e⁻ → H₂ çiftinin E° değeri tanım gereği 0 V'tur.",
+    "E° = E°(alan) − E°(veren); pozitifse yazılan yön standart koşulda istemlidir."
+   ],
+   "strategy": "Basamak değişimlerinden rolleri bul, sonra alan eksi veren kuralıyla potansiyeli hesapla; şıklar bu iki kontrolle ayrılır.",
+   "steps": [
+    "Zn: 0 → +2, elektron verir, yükseltgenir.",
+    "H: +1 → 0, H⁺ elektron alır, indirgenir; H₂ asitteki H⁺ iyonlarından oluşur.",
+    "E° = E°(H⁺/H₂) − E°(Zn²⁺/Zn) = 0 − (−0,763) = +0,763 V."
+   ],
+   "optionReasons": [
+    "Sayıyı doğru bulur ama rolleri ters çevirir; Zn'nin basamağı artar, indirgenmez.",
+    "Rolü doğru bulur ama çıkarma sırasını ters alır: −0,763 − 0 = −0,763 V.",
+    "H₂'nin metalden geldiğini sanar; H atomları asitteki H⁺ iyonlarından gelir.",
+    "Doğru: Zn yükseltgenir, H⁺ indirgenir; E° = 0 − (−0,763) = +0,763 V.",
+    "H⁺'yı seyirci sanır; +1'den 0'a inerek H₂ oluşturur."
+   ],
+   "commonError": "Metalin basamağı arttığı hâlde 'indirgenir' demek.",
+   "check": "Pozitif E°, çinkonun yükseltgen olmayan asitte gaz çıkararak çözünmesi beklentisiyle uyumludur."
+  }
+ },
+ {
+  "id": "f021c-metalik-aktiflik-6",
+  "h": "063875089d89a8",
+  "guidance": {
+   "knowledge": [
+    "Yükseltgen asit: H⁺ dışında kendi anyonu da elektron alabilen asit; sıcak derişik H₂SO₄ böyledir, kükürt +6'dan SO₂'deki +4'e iner.",
+    "Yükseltgen olmayan asit (HCl gibi): metalle tepkimede yalnız H⁺ elektron alır ve H₂ oluşur.",
+    "Cu'nun indirgenme değeri H⁺/H₂ çiftininkinden büyüktür; bu yüzden H⁺'ya elektron veremez."
+   ],
+   "strategy": "Hangi türün elektron aldığına bak; elektron alan tür değişince ürün gazı da değişir.",
+   "steps": [
+    "HCl'de elektron alabilecek tek tür H⁺; Cu bu iyonu indirgeyemez, H₂ çıkmaz.",
+    "Sıcak derişik H₂SO₄'te S (+6) elektron alarak SO₂'de +4'e iner.",
+    "Cu bu güçlü alıcıya elektron verir; ürün gazı SO₂ olur.",
+    "Demek ki asit türü değişince elektron alan tür ve gaz ürünü değişebilir."
+   ],
+   "optionReasons": [
+    "Her metal ile asitten H₂ çıkacağını sanar; yükseltgen asitte elektronu anyon alır ve başka gaz oluşur.",
+    "Doğru: HCl'de alıcı H⁺, sıcak derişik H₂SO₄'te alıcı kükürttür; bu yüzden ürün gazı değişir.",
+    "Bir ortamda tepkime olmamasını her ortama genelleştirir; Cu sıcak derişik H₂SO₄ ile tepkime veriyor.",
+    "Gaz formüllerini karıştırır; H₂ ile SO₂ farklı maddelerdir.",
+    "Gaz çıkmamasını bazlık sanır; Cu bir metaldir, asit-baz sınıflaması böyle yapılmaz."
+   ],
+   "commonError": "Bütün asitlerde elektron alan türün yalnız H⁺ olduğunu varsaymak.",
+   "check": "Basamaklarla sına: Cu 0 → +2 (2 e⁻ verir), S +6 → +4 (2 e⁻ alır); elektronlar eşleşiyor."
+  }
+ },
+ {
+  "id": "f021c-metalik-aktiflik-7",
+  "h": "0285471de9775f",
+  "guidance": {
+   "knowledge": [
+    "Yer değiştirme tepkimesi: bir metalin başka bir metalin iyonuna elektron verip onu metal olarak açığa çıkarması.",
+    "E° = E°(alan) − E°(veren); negatif değer yazılan yönün standart koşulda desteklenmediğini gösterir.",
+    "Burada Zn²⁺/Zn = −0,763 V, Cu²⁺/Cu = +0,337 V."
+   ],
+   "strategy": "Cu metali elektron verecek, Zn²⁺ alacak; alan eksi veren kuralıyla işareti bul.",
+   "steps": [
+    "Veren Cu (Cu → Cu²⁺), alan Zn²⁺ (Zn²⁺ → Zn).",
+    "E° = −0,763 − 0,337 = −1,100 V.",
+    "Negatif değer: bakır, çinko iyonunu indirgeyemez; yazılan yön desteklenmez."
+   ],
+   "optionReasons": [
+    "Ters yönün değerini alır ve aktifliği karıştırır; Cu'nun E°'si büyük olduğu için daha zayıf vericidir.",
+    "E°'nin madde miktarına bağlı olduğunu sanar; kütle iki katına çıksa da potansiyel değişmez.",
+    "İyonu metalle karıştırır; Zn²⁺ elektronlarını vermiş bir iyondur, ancak elektron alabilir.",
+    "Katsayı 1 olmasını engel sanır; E° katsayıdan bağımsız hesaplanır.",
+    "Doğru: −0,763 − 0,337 = −1,100 V; negatif olduğu için bu yön desteklenmez."
+   ],
+   "commonError": "Potansiyel farkını hesaplarken alan ile vereni karıştırıp işareti ters bulmak.",
+   "check": "Ters yön Zn + Cu²⁺ için E° = 0,337 − (−0,763) = +1,100 V; ters yön pozitif olduğuna göre yazılan yön negatif olmalı."
+  }
+ },
+ {
+  "id": "f021c-metalik-aktiflik-8",
+  "h": "07c3555fedb492",
+  "guidance": {
+   "knowledge": [
+    "Standart potansiyel E°: belli bir metal/iyon çiftinin 25 °C, 1 M, 1 atm koşulundaki elektron alma eğilimi. Şiddet özelliğidir; madde miktarına bağlı değildir.",
+    "Kapasite özelliği: miktarla büyüyen nicelik (kütle, toplam aktarılabilecek elektron). Yüzey alanı tepkime hızını etkiler."
+   ],
+   "strategy": "Değişen niceliğin şiddet mi kapasite mi olduğuna bak; E° şiddet özelliği olduğu için kütle artışı ona yansımaz.",
+   "steps": [
+    "Çift, sıcaklık ve iyon koşulları aynı; değişen yalnız metal kütlesi.",
+    "E° madde miktarından bağımsızdır; değer aynı kalır.",
+    "Fazla metal tüketilebilecek toplam maddeyi (stok) ve yüzeyi artırabilir; bu E°'yi değil, kapasiteyi ve hızı etkiler."
+   ],
+   "optionReasons": [
+    "E°'yi kütle gibi toplanan bir nicelik sanır; şiddet özelliği olduğu için kütleyle değişmez.",
+    "Katsayı ile kütleyi karıştırır; E° ne bölünür ne çarpılır.",
+    "İyon yükünü madde miktarına bağlar; iyonun yükü elektrot kütlesinden bağımsızdır.",
+    "Doğru: E° aynı kalır; değişen yalnız toplam madde stoğu ve yüzeydir.",
+    "Miktar değişiminin işaret değiştirdiğini sanar; koşullar aynıyken E° aynı değeri korur."
+   ],
+   "commonError": "Daha çok metali daha büyük potansiyel sanmak.",
+   "check": "Sıcaklık ve yoğunluk gibi şiddet özellikleriyle kıyasla: bir çubuğu ikiye bölmek bunları değiştirmez, E° de aynı kalır."
+  }
+ },
+ {
+  "id": "f021c-metalik-aktiflik-9",
+  "h": "1e03e49078f0f7",
+  "guidance": {
+   "knowledge": [
+    "E° > 0: yazılan yönün standart koşulda termodinamik olarak istemli olduğunu, yani kendiliğinden yürüme eğilimini gösterir.",
+    "Hız (kinetik): tepkimenin ne kadar çabuk ilerlediği; E° hız hakkında bilgi vermez.",
+    "Pasifleşme: metal yüzeyinde oluşan koruyucu tabakanın tepkimeyi yavaşlatması."
+   ],
+   "strategy": "Gözlenen yavaşlığın termodinamik mi kinetik mi bir bilgi olduğunu ayır; E° yön söyler, hız söylemez.",
+   "steps": [
+    "E° > 0, tepkimenin yazılan yönde istemli olduğunu söyler.",
+    "Koruyucu tabaka metalin iyonlarla temasını engeller; tepkime yavaşlar.",
+    "Kısa sürede az değişim hızın düşük olduğunu gösterir, yönü çürütmez.",
+    "Yön (termodinamik) ile hız (kinetik) ayrı değerlendirilmelidir."
+   ],
+   "optionReasons": [
+    "İstemliliği anında tamamlanma sanır; istemli tepkimeler de çok yavaş olabilir.",
+    "Yüzey tabakasının korunum yasalarını bozduğunu sanır; tabaka yalnız teması azaltır, yük korunumu geçerlidir.",
+    "Doğru: E° yönü, yüzey tabakası hızı belirler; ikisi ayrı bilgilerdir.",
+    "Az değişimi kütle etkisine bağlar; E° kütleden bağımsızdır, az değişim yavaşlıktan kaynaklanır.",
+    "Tek bir gözlemi bütün metallere genelleştirir; aktiflik farkı farklı E° değerlerinden gelir."
+   ],
+   "commonError": "Pozitif E° gördüğünde tepkimenin hızlı da olacağını sanmak.",
+   "check": "Tabaka kaldırılırsa aynı E° ile tepkime hızlanmalıdır; değişen hız olur, E° değil."
+  }
+ },
+ {
+  "id": "f021c-metalik-aktiflik-10",
+  "h": "1281c8b833a27e",
+  "guidance": {
+   "knowledge": [
+    "Yükseltgen: elektron alan ve kendisi indirgenen tür. İndirgen: elektron veren ve kendisi yükseltgenen tür.",
+    "Element hâlindeki Cl₂ ve Br₂'de basamak 0; Cl⁻ ve Br⁻ iyonlarında basamak −1."
+   ],
+   "strategy": "Her elementin basamağını iki tarafta yazıp yönünü bul; rol adı basamağın değişimine göre verilir.",
+   "steps": [
+    "Cl: Cl₂'de 0 → Cl⁻'de −1; basamak azaldı, Cl₂ elektron aldı, yükseltgendir.",
+    "Br: Br⁻'de −1 → Br₂'de 0; basamak arttı, Br⁻ elektron verdi, indirgendir.",
+    "Cl₂ yükseltgen, Br⁻ indirgen."
+   ],
+   "optionReasons": [
+    "Doğru: Cl₂ elektron alıp Cl⁻ olur (yükseltgen), Br⁻ elektron verip Br₂ olur (indirgen).",
+    "Rolü ters çevirir; Cl₂'nin basamağı 0'dan −1'e iner, yani elektron alır.",
+    "İyon olmayı değişmezlik sanır; Br⁻ elektron vererek Br₂ (0) olur.",
+    "Basamağın işaretini ters okur; Cl 0'dan +1'e değil −1'e iner.",
+    "Ametal tepkimesini redoks saymaz; basamaklar değiştiği için elektron aktarımı vardır."
+   ],
+   "commonError": "Yükseltgen ile yükseltgenen maddeyi karıştırmak.",
+   "check": "Elektronları say: 2 Br⁻ toplam 2 e⁻ verir, Cl₂'nin iki atomu 2 e⁻ alır; denklem dengeli."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-denge-basinc-hacim-1",
+  "h": "05bd9c6dc11870",
+  "guidance": {
+   "knowledge": [
+    "Kısmi basınç p: karışımdaki bir gazın tek başına kabı doldursaydı yapacağı basınç; ideal gazda p = nRT/V.",
+    "Kp: dengedeki kısmi basınçlarla yazılan sabit; AB ⇌ A + B için Kp = pA·pB / pAB. Yalnız sıcaklıkla değişir.",
+    "Qp: aynı ifadenin o anki basınçlarla hesaplanan değeri. Qp > Kp ise tepkime geri, Qp < Kp ise ileri kayar."
+   ],
+   "strategy": "Hacmi yarıya indirmek bütün kısmi basınçları iki katına çıkarır; bunu Qp ifadesine koyup Kp ile karşılaştırmak yönü verir.",
+   "steps": [
+    "V yarıya inince her p = nRT/V iki katına çıkar: 2pA, 2pB, 2pAB.",
+    "Qp = (2pA)(2pB) / (2pAB) = 2 · pA·pB/pAB = 2Kp.",
+    "Qp > Kp; sistem geri yönde, AB oluşumu yönünde kayar.",
+    "T sabit olduğu için Kp aynı kalır."
+   ],
+   "optionReasons": [
+    "Yönü ters okur ve Qp'nin artışını Kp'nin artışı sanır; Qp = 2Kp olduğundan geri yön desteklenir, Kp sabittir.",
+    "Değişiklikten sonra Kp'nin sıfırlanacağını sanır; Kp sıfır olamaz, Qp ≠ Kp olduğu için kayma da vardır.",
+    "Doğru: Qp = 2Kp > Kp, denge AB yönüne kayar; sıcaklık sabit olduğu için Kp değişmez.",
+    "Kaymayı bütün türlerin bitmesi sanır; yeni dengede üç tür de bulunur.",
+    "Bu tepkimede katı yoktur; yön basınçların Qp ifadesindeki değişiminden bulunur."
+   ],
+   "commonError": "Le Chatelier kaymasını Kp'nin değişmesiyle karıştırmak.",
+   "check": "Gaz mollerini say: sol 1, sağ 2 mol; sıkıştırma az gaz molü olan yöne kaydırır, yani AB yönüne."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-denge-basinc-hacim-2",
+  "h": "1572c48a56ba6f",
+  "guidance": {
+   "knowledge": [
+    "İnert gaz: karışımdaki hiçbir türle tepkime vermeyen gaz.",
+    "Kısmi basınç: pᵢ = nᵢRT/V; yalnız o gazın molüne, sıcaklığa ve hacme bağlıdır.",
+    "Qp: kısmi basınçlarla o an hesaplanan denge ifadesi; Kp'ye eşitse sistem dengededir."
+   ],
+   "strategy": "Tepkimeye giren her gaz için pᵢ = nᵢRT/V yaz; inert eklemek bu formüldeki hiçbir değeri değiştirmiyorsa Qp de değişmez.",
+   "steps": [
+    "Sabit V ve T'de ilgili gazların nᵢ değerleri değişmez; pᵢ = nᵢRT/V aynı kalır.",
+    "Qp aynı kısmi basınçlardan hesaplandığı için değişmez; denge bozulmaz.",
+    "İnert kendi kısmi basıncını ekler; toplam basınç artar."
+   ],
+   "optionReasons": [
+    "Toplam basınç artışını kısmi basınçlara dağıtır; sabit hacimde ilgili gazların pᵢ değeri değişmez.",
+    "Kp'yi miktara bağlar; Kp yalnız sıcaklıkla değişir, inert miktarıyla değişmez.",
+    "İnert eklemeyi tepkimeye müdahale sanır; ürünler bitmez, denge hiç kaymaz.",
+    "Formülü yanlış okur; T ve V sabitken RT/V sabit ve sıfırdan farklı bir sayıdır.",
+    "Doğru: inert yalnız toplam basınca katkı yapar; ilgili gazların kısmi basınçları ve Qp aynı kalır."
+   ],
+   "commonError": "Toplam basınç arttı diye dengenin az mol yönüne kayacağını sanmak.",
+   "check": "Sayıyla sına: pA = 1 atm iken 2 atm'lik inert eklenince toplam basınç 2 atm artar ama pA = nART/V hâlâ 1 atm'dir."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-denge-basinc-hacim-3",
+  "h": "18d17cb14efd4a",
+  "guidance": {
+   "knowledge": [
+    "Kısmi basınç: karışımdaki bir gazın payına düşen basınç. Sabit toplam basınçta inert eklenirse hacim büyür ve ilgili gazların kısmi basınçları düşer.",
+    "Qp = pA·pB / pAB: o anki basınçlarla hesaplanan oran; Kp = 1 atm ile karşılaştırılır.",
+    "Qp < Kp ise net tepkime ileri (ürün) yönündedir."
+   ],
+   "strategy": "İnert eklendikten hemen sonraki kısmi basınçlar verildiği için doğrudan Qp'yi hesapla ve Kp ile kıyasla.",
+   "steps": [
+    "Qp = (0,6 × 0,6) / 0,6.",
+    "Pay 0,36, payda 0,6: Qp = 0,36 / 0,6 = 0,6 atm.",
+    "0,6 atm < 1 atm = Kp; net yön ürünlere, A ve B oluşumuna doğrudur."
+   ],
+   "optionReasons": [
+    "Toplam basınç sabit diye oranın da sabit kaldığını sanır; kısmi basınçlar 0,6 atm'ye düştüğü için Qp değişir.",
+    "Doğru: Qp = 0,6 · 0,6 / 0,6 = 0,6 atm < Kp, tepkime ürünlere kayar.",
+    "Basınçları toplar: 0,6 + 0,6 + 0,6 = 1,8; Qp çarpım ve bölümle yazılır.",
+    "Paydaya AB'yi koymayı unutur: 0,6 · 0,6 = 0,36; yönü de ters okur.",
+    "Toplamı paydaya böler: 1,8 / 0,6 = 3; ayrıca sıcaklık zaten sabit tutuluyor."
+   ],
+   "commonError": "Toplam basınç sabit olduğunda kısmi basınçların da sabit kaldığını sanmak.",
+   "check": "Gaz mollerini say: sağ 2, sol 1 mol; hacim büyüyünce denge çok gaz molü olan yöne, yani ürünlere kayar."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-denge-basinc-hacim-4",
+  "h": "0432609c71851d",
+  "guidance": {
+   "knowledge": [
+    "Qp = pHI² / (pH₂·pI₂): üsler denklem katsayılarıdır. Pay ve paydadaki toplam üs eşitse ortak çarpan sadeleşir.",
+    "Δn gaz: ürün gaz molü eksi giren gaz molü; burada 2 − (1 + 1) = 0.",
+    "İzotermal sıkıştırma: sıcaklık sabitken hacim azaltma; her kısmi basınç aynı oranda artar."
+   ],
+   "strategy": "Hacim yarıya inince bütün basınçlar iki katına çıkar; bu ortak çarpanı Qp'ye koyup sadeleşip sadeleşmediğine bak.",
+   "steps": [
+    "Her kısmi basınç 2 katına çıkar.",
+    "Pay: (2pHI)² = 4pHI². Payda: (2pH₂)(2pI₂) = 4pH₂·pI₂.",
+    "Yeni Qp = (4 / 4) × Qp = Qp; oran değişmez, Qp = Kp kalır ve net kayma olmaz."
+   ],
+   "optionReasons": [
+    "Doğru: pay ve payda dörder kat artar, Qp aynı kalır; Δn = 0 olduğu için kayma gerekmez.",
+    "Yalnız paydaki kareyi görür (4 kat), paydanın da 4 kat arttığını unutur.",
+    "Pay ve paydadan yalnız birini 2 ile çarpar; iki taraftaki çarpanlar birbirini götürür.",
+    "Kp'yi hacme bağlar; Kp yalnız sıcaklıkla değişir.",
+    "Basınç artışını mol artışı sanır; kapalı kapta mol sayısı aynı kalır, artan derişimdir."
+   ],
+   "commonError": "Sıkıştırmanın her gaz dengesini kaydırdığını sanmak; Δn gaz = 0 ise kayma olmaz.",
+   "check": "Gaz mollerini say: sol 1 + 1 = 2, sağ 2; iki taraf eşit olduğu için basınç değişimi tercih edilecek yön yaratmaz."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-denge-basinc-hacim-5",
+  "h": "174233bff6643d",
+  "guidance": {
+   "knowledge": [
+    "Saf sıvı ya da saf katı: Kp ve Kc ifadesine yazılmaz, çünkü etkinliği sabittir.",
+    "Kp = pZ / pX: yalnız gaz türlerinin kısmi basınçlarıyla yazılır.",
+    "Sıkıştırma: sabit T'de hacim azalınca her gazın kısmi basıncı aynı oranda artar."
+   ],
+   "strategy": "Yalnız gazlar ifadede yer aldığı için ortak çarpanın pay ve paydada sadeleşip sadeleşmediğine bak.",
+   "steps": [
+    "Hacim k kat azalırsa pX ve pZ ikisi de k katına çıkar.",
+    "Qp = (k·pZ) / (k·pX) = pZ / pX; k sadeleşir.",
+    "Qp = Kp kalır; net kayma gerekmez, X ve Z basınçlarının oranı aynıdır."
+   ],
+   "optionReasons": [
+    "Saf sıvıyı gaz gibi sayar; saf sıvının ifadede terimi yoktur.",
+    "İfadeye yazılmamayı atomların kaybolması sanır; Y sıvı fazda durur, atomlar korunur.",
+    "Kp'yi sıvının kütlesine bağlar; Kp = pZ/pX'tir ve sıvının gramı ifadede yer almaz.",
+    "Doğru: pX ve pZ aynı çarpanla artar, oran ve Qp değişmez.",
+    "Her sıkıştırmanın ürün yönüne kaydığını sanır; burada gaz molü iki tarafta da 1'dir."
+   ],
+   "commonError": "Saf sıvıyı ya da katıyı gaz molü sayımına katmak.",
+   "check": "Gaz mollerini say: solda 1 X, sağda 1 Z; Δn gaz = 0 olduğundan sıkıştırmanın tercih ettiği bir yön yoktur."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-denge-basinc-hacim-6",
+  "h": "023884b5d02ce5",
+  "guidance": {
+   "knowledge": [
+    "Ani durum: hacim değiştiği anda, tepkime henüz ilerlemeden önceki basınçlar; burada pA = 2 atm.",
+    "Yeni dengeye gidiş: ani durumdan son dengeye kadar olan aralık; net yön bu iki değerin karşılaştırmasından bulunur.",
+    "Sabit hacimde kısmi basınç p = nRT/V olduğundan basınç azalması mol azalması demektir."
+   ],
+   "strategy": "Net tepkime ani durumdan sonra başlar; bu yüzden karşılaştırmanın başlangıç anı eski denge değil, ani durumdur.",
+   "steps": [
+    "Hacim azalınca pA 1 atm'den anında 2 atm'ye çıkar; bu tepkime değil, sıkışmadır.",
+    "Sonra hacim sabitken pA 2 atm'den 1,56 atm'ye iner.",
+    "Sabit hacimde basınç düşüşü mol azalmasıdır; bu aralıkta A net olarak tüketilmiştir."
+   ],
+   "optionReasons": [
+    "Yanlış başlangıç noktası seçer; 1,56 eski 1 atm'den büyüktür ama eski değer başka hacme aittir, ani 2 atm'ye göre azalış vardır.",
+    "Doğru: ani 2 atm'den 1,56 atm'ye düşüş, sabit hacimde A'nın net tüketilmesiyle uyumludur.",
+    "Azalmayı tükenme sanır; A'nın basıncı 1,56 atm'de kalır, sıfıra inmez.",
+    "Verilen 1 atm değerini görmezden gelir; eski dengedeki basınç zaten ölçülmüştür.",
+    "Basınç oranlarını Kp değişimi sanar; sıcaklık değişmediği için Kp aynıdır."
+   ],
+   "commonError": "Son dengeyi ani durumla değil eski dengeyle karşılaştırıp net yönü yanlış bulmak.",
+   "check": "Le Chatelier ile sına: sıkıştırma sonrası sistem basıncı azaltan yöne gider; A'nın 2 atm'den düşmesi bununla uyumludur."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-denge-basinc-hacim-7",
+  "h": "0501f535692a9b",
+  "guidance": {
+   "knowledge": [
+    "Mol kesri X: bir gazın molünün toplam gaz molüne oranı; XA = nA / ntoplam.",
+    "İdeal gaz denklemi: P = nRT/V; R = 0,082 L·atm/(mol·K), T kelvin, V litre.",
+    "Dalton yasası: kısmi basınç pA = XA × Ptoplam; inert gaz da toplam mole ve toplam basınca katılır."
+   ],
+   "strategy": "Mol kesri için inert dahil toplam molü bul; kısmi basıncı mol kesri × toplam basınçla ya da doğrudan nA·RT/V ile hesapla.",
+   "steps": [
+    "Toplam mol: AB 1 + A 1 + B 1 + I 2 = 5 mol.",
+    "XA = 1 / 5.",
+    "Ptoplam = 5 × 0,082 × 300 / 24,6 = 123 / 24,6 = 5 atm.",
+    "pA = (1/5) × 5 = 1 atm; denetim: 1 × 0,082 × 300 / 24,6 = 1 atm."
+   ],
+   "optionReasons": [
+    "İnert gazı mol kesrinde unutur (1/3), sonra inertli toplam basıncı kullanır: (1/3) × 5 = 5/3 atm.",
+    "Mol kesrini doğru bulur ama toplam basıncı A'nın kısmi basıncı sanır.",
+    "A'yı yalnız B ile kıyaslar (1/2) ve toplam basınçla çarpar: 0,5 × 5 = 2,5 atm.",
+    "Doğru: XA = 1/5 ve pA = (1/5) × 5 atm = 1 atm.",
+    "A ile B'yi birlikte sayar: 2/5 ve (2/5) × 5 = 2 atm; bu A ve B'nin toplam basıncıdır."
+   ],
+   "commonError": "Mol kesrini hesaplarken inert gazı toplam mole katmamak.",
+   "check": "Kısmi basınçları topla: AB 1 + A 1 + B 1 + I 2 = 5 atm, toplam basınçla aynı."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-denge-basinc-hacim-8",
+  "h": "0fd86e0003ed2b",
+  "guidance": {
+   "knowledge": [
+    "Qp = pA·pB / pAB: o anki kısmi basınçlarla hesaplanan oran; AB paydadadır.",
+    "Qp < Kp ise net tepkime ileri (A ve B oluşumu), Qp > Kp ise geri yöndedir.",
+    "Sabit T ve V'de bir gaz eklenince yalnız o gazın kısmi basıncı artar (p = nRT/V)."
+   ],
+   "strategy": "Eklenen tür paydada olduğu için Qp'nin nasıl değiştiğini ifadeden oku, sonra Kp ile kıyasla.",
+   "steps": [
+    "AB eklenince pAB artar; pA ve pB ilk anda aynıdır.",
+    "Payda büyür, pay aynı: Qp küçülür, Qp < Kp olur.",
+    "Sistem Kp'ye dönmek için AB'yi tüketip A ve B üreten ileri yöne kayar."
+   ],
+   "optionReasons": [
+    "AB eklemeyi sıkıştırma ile karıştırır; sabit hacimde yalnız AB'nin basıncı artar.",
+    "AB'nin paydada olduğunu unutur; payda artınca Qp azalır, AB tüketilir.",
+    "Kp'yi madde miktarıyla eşler; Kp sıcaklığa bağlı bir orandır.",
+    "İnert ile tepkimeye giren türü karıştırır; inert Qp'ye girmez, AB doğrudan paydada yer alır.",
+    "Doğru: payda büyür, Qp < Kp olur ve ürün yönü desteklenir."
+   ],
+   "commonError": "Eklenen türün Qp ifadesinde payda mı paydada mı olduğuna bakmadan yön seçmek.",
+   "check": "Le Chatelier ile sına: girenlerden biri artırılınca sistem onu tüketen ileri yöne kayar; sonuç aynı."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-denge-basinc-hacim-9",
+  "h": "12324689de8a5f",
+  "guidance": {
+   "knowledge": [
+    "Heterojen denge: farklı fazlardaki türleri içeren denge; saf katı NH₄Cl, Kp ifadesine yazılmaz.",
+    "Kp = pNH₃·pHCl: yalnız gaz ürünlerin kısmi basınçlarının çarpımı.",
+    "Sıkıştırma: sabit T'de hacim azalınca her gazın kısmi basıncı artar."
+   ],
+   "strategy": "Gazlar Kp ifadesinde bulunduğu için sıkıştırmanın Qp'yi nasıl değiştirdiğini hesapla; katının ifadeye girmemesi gazların etkisini ortadan kaldırmaz.",
+   "steps": [
+    "Hacim yarıya inerse pNH₃ ve pHCl ikisi de 2 katına çıkar.",
+    "Qp = (2pNH₃)(2pHCl) = 4Kp > Kp.",
+    "Sistem gazları tüketip katı oluşturan geri yöne kayar."
+   ],
+   "optionReasons": [
+    "Katı bulunduğu için basıncın etkisiz olduğunu sanır; Kp ifadesinde iki gaz vardır ve sıkıştırma onları etkiler.",
+    "Katıyı gaz gibi sayar ve yönü ters okur; katı ifadeye girmez, sıkıştırma gazları tüketen yöne iter.",
+    "Doğru: Qp = 4Kp > Kp, gazlar NH₄Cl katısına dönüşür.",
+    "Kp'yi katının kütlesine bağlar; Kp yalnız gaz basınçlarına ve sıcaklığa bağlıdır.",
+    "Sıkıştırmayı katalizör etkisi sanır; katalizör dengeyi kaydırmaz, sıkıştırma kaydırır."
+   ],
+   "commonError": "Katı faz var diye basınç değişiminin dengeyi etkilemeyeceğini sanmak.",
+   "check": "Gaz mollerini say: sol 0, sağ 2 mol gaz; sıkıştırma az gaz yönüne, yani katı yönüne kaydırır."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-denge-basinc-hacim-10",
+  "h": "0d3224e37a5071",
+  "guidance": {
+   "knowledge": [
+    "Qp = pA·pB / pAB: yalnız tepkimeye giren ve oluşan gazların kısmi basınçlarıyla hesaplanır.",
+    "İnert gaz I tepkimeye girmez; Qp ifadesinde yer almaz, yalnız toplam basınca eklenir.",
+    "Qp = Kp ise sistem dengededir ve net kayma olmaz."
+   ],
+   "strategy": "Verilen kısmi basınçları doğrudan Qp'ye koy; inertin basıncını hesaba katma, sonucu Kp ile kıyasla.",
+   "steps": [
+    "Qp = (0,5 × 0,5) / 0,25.",
+    "Pay 0,25, payda 0,25: Qp = 1 atm.",
+    "Qp = Kp = 1 atm; net kayma gerekmez."
+   ],
+   "optionReasons": [
+    "Doğru: Qp = 0,5 · 0,5 / 0,25 = 1 atm, Kp'ye eşit; denge oranı sağlanmış.",
+    "Bütün basınçları toplar: 0,5 + 0,5 + 10 = 11; inert tükenmez, Qp bir toplam değildir.",
+    "İnertin basıncını AB'ninkine ekler: 10 + 0,25 = 10,25; I ifadeye girmez.",
+    "Paydayı unutup yalnız 0,5 · 0,5 = 0,25'i alır; ayrıca toplam basınca bakmak yanlıştır.",
+    "Ürün basınçlarını toplayıp böler: (0,5 + 0,5) / 0,25 = 4; Qp çarpımla yazılır."
+   ],
+   "commonError": "İnert gazın basıncını Qp ifadesine katmak.",
+   "check": "İnert yokmuş gibi düşün: aynı kısmi basınçlarla Qp yine 1 atm; inert sonucu değiştirmez."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-sulu-asit-baz-denge-1",
+  "h": "008bbe73fb32df",
+  "guidance": {
+   "knowledge": [
+    "Kw (suyun iyonlaşma sabiti): [H₃O⁺]·[OH⁻] çarpımı; 25 °C'de 1,0×10⁻¹⁴. Köşeli parantez mol/L derişimi gösterir.",
+    "pH = −log[H₃O⁺]: H₃O⁺ derişiminin eksi logaritması. [H₃O⁺] = 10⁻ⁿ M ise pH = n.",
+    "25 °C'de pH + pOH = 14 olur; pOH = −log[OH⁻]."
+   ],
+   "strategy": "OH⁻ derişimini Kw bağıntısından, pH'ı tanımdan bul; iki işlem ayrıdır.",
+   "steps": [
+    "[OH⁻] = Kw / [H₃O⁺] = 10⁻¹⁴ / 10⁻⁴.",
+    "Üsler çıkarılır: −14 − (−4) = −10; [OH⁻] = 10⁻¹⁰ M.",
+    "pH = −log(10⁻⁴) = 4."
+   ],
+   "optionReasons": [
+    "OH⁻'yi H₃O⁺'ya eşit alır ve pH yerine pOH'u yazar; asidik çözeltide iki derişim eşit değildir.",
+    "Nötr su değerlerini kullanır; [H₃O⁺] = 10⁻⁴ M verildiği için çözelti nötr değildir.",
+    "Kw'yi doğrudan OH⁻ derişimi sanır ve pH'ı pKw ile karıştırır.",
+    "Doğru: [OH⁻] = 10⁻¹⁴ / 10⁻⁴ = 10⁻¹⁰ M ve pH = 4.",
+    "Asidik çözeltide OH⁻ kalmadığını sanır; su her zaman iyonlaşır, OH⁻ sıfır olmaz."
+   ],
+   "commonError": "Asidik çözeltide OH⁻ derişimini sıfır sanmak ya da Kw ile bölmeyi unutmak.",
+   "check": "pOH = −log(10⁻¹⁰) = 10; pH + pOH = 4 + 10 = 14, 25 °C koşuluna uyuyor."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-sulu-asit-baz-denge-2",
+  "h": "11f296bacda9bd",
+  "guidance": {
+   "knowledge": [
+    "Kw: suyun iyonlaşma sabiti, [H₃O⁺]·[OH⁻]; sıcaklık artınca büyür (burada 80 °C'de 9,0×10⁻¹⁴).",
+    "Nötr çözelti: [H₃O⁺] = [OH⁻] olan çözelti. pH = 7 ölçütü yalnız 25 °C içindir.",
+    "Saf su yalnız kendi iyonlaşmasıyla iyon üretir; her H₃O⁺ ile birlikte bir OH⁻ oluşur."
+   ],
+   "strategy": "Saf suda iki iyon eşit olduğu için [H₃O⁺] = [OH⁻] = x yazıp x² = Kw denklemini çözmek yeterlidir.",
+   "steps": [
+    "x · x = 9,0×10⁻¹⁴.",
+    "x = √(9,0×10⁻¹⁴) = 3,0×10⁻⁷ M.",
+    "[H₃O⁺] = [OH⁻] = 3,0×10⁻⁷ M; eşit oldukları için su nötrdür."
+   ],
+   "optionReasons": [
+    "Doğru: x² = 9,0×10⁻¹⁴ → x = 3,0×10⁻⁷ M; iki iyon eşit, su nötr.",
+    "Kw'yi doğrudan H₃O⁺ derişimi sanar; ayrıca saf suda OH⁻ her zaman H₃O⁺ kadar bulunur.",
+    "25 °C değerini her sıcaklıkta kullanır; Kw değiştiği için 10⁻⁷ M artık geçerli değildir.",
+    "pH'ın 7'nin altına inmesini asitlik sanar; saf suda iki iyon eşittir, su nötrdür.",
+    "Kw'deki 9 katsayısını derişim sanır; saf suda 9 M OH⁻ olanaksızdır."
+   ],
+   "commonError": "pH = 7 nötrlük ölçütünü 25 °C dışındaki sıcaklıklara da uygulamak.",
+   "check": "Geri çarp: (3,0×10⁻⁷)² = 9,0×10⁻¹⁴, verilen Kw ile aynı. pH ≈ 6,52 olur ama su yine nötrdür."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-sulu-asit-baz-denge-3",
+  "h": "089271175859e6",
+  "guidance": {
+   "knowledge": [
+    "Suyun iyonlaşması: H₂O + H₂O ⇌ H₃O⁺ + OH⁻; 25 °C'de Kw = [H₃O⁺][OH⁻] = 10⁻¹⁴, saf suda her iyon 10⁻⁷ M.",
+    "Elektriksel denklik: çözeltide pozitif yük toplamı negatif yük toplamına eşittir; burada [H₃O⁺] = [OH⁻] + [Cl⁻].",
+    "25 °C'de bir asit çözeltisinin pH'ı 7'den büyük olamaz; asit eklemek H₃O⁺'yı artırır."
+   ],
+   "strategy": "Asidin verdiği 10⁻⁸ M, suyun kendi verdiği 10⁻⁷ M'den küçük olduğu için su katkısı ihmal edilemez; eksik katkıyı bulmak için önce sonucun mantığını sına.",
+   "steps": [
+    "Yalnız asidi sayan hesap: [H₃O⁺] = 10⁻⁸ M → pH = 8; asit çözeltisi bazik çıkar, bu olanaksız.",
+    "Çelişkinin nedeni: suyun 10⁻⁷ M düzeyindeki H₃O⁺ katkısı 10⁻⁸ M'den on kat büyük ve hesaba katılmamış.",
+    "Doğru kurulum: [H₃O⁺] − [OH⁻] = 10⁻⁸ ve [H₃O⁺][OH⁻] = 10⁻¹⁴; çözüm [H₃O⁺] ≈ 1,05×10⁻⁷ M, pH ≈ 6,98.",
+    "Eksik olan suyun iyonlaşması ve elektriksel denkliktir."
+   ],
+   "optionReasons": [
+    "Klorun metal olduğunu ileri sürer; Cl bir ametaldir ve bu hesapla ilgisi yoktur.",
+    "Derişimi 1 M sanar; soru açıkça 10⁻⁸ M veriyor.",
+    "Doğru: suyun 10⁻⁷ M düzeyindeki katkısı ve yük denkliği eklenince pH ≈ 6,98 olur.",
+    "Gazların molar hacmini getirir; sulu çözeltide gaz hacmi hesabı yoktur.",
+    "pH'ı hacim birimi sanır; pH birimsiz bir logaritmik ölçektir."
+   ],
+   "commonError": "Çok seyrek asitte H₃O⁺ derişimini doğrudan asit derişimine eşitleyip suyun katkısını unutmak.",
+   "check": "Sınırla sına: asit ne kadar seyrek olursa olsun pH en çok saf suyun değeri 7'ye yaklaşır; 6,98 bu sınırın hemen altında."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-sulu-asit-baz-denge-4",
+  "h": "051276214e4d97",
+  "guidance": {
+   "knowledge": [
+    "Brønsted-Lowry asidi: proton (H⁺) veren tür. Brønsted-Lowry bazı: proton alan tür.",
+    "Eşlenik asit-baz çifti: yalnız bir H⁺ farkıyla birbirine dönüşen iki tür; aynı atom iskeletini taşırlar."
+   ],
+   "strategy": "Aynı iskelete sahip ve tek H⁺ farkı olan türleri eşleştir; farklı iskeletteki türler eşlenik olamaz.",
+   "steps": [
+    "NH₃ bir H⁺ alarak NH₄⁺ olur; ikisinin farkı tek H⁺.",
+    "H₂O bir H⁺ vererek OH⁻ olur; bu da ikinci çifttir.",
+    "Seçeneklerdeki eşlenik çift NH₄⁺ ve NH₃'tür."
+   ],
+   "optionReasons": [
+    "Giren baz ile ürün bazını eşler; NH₃ ile OH⁻ farklı iskelettedir.",
+    "Doğru: NH₄⁺ bir proton verince NH₃ olur; aralarında tek H⁺ farkı var.",
+    "Ürün tarafındaki iki iyonu eşler; NH₄⁺ ile OH⁻ birbirine dönüşmez.",
+    "Giren iki türü eşler; H₂O ile NH₃ farklı atomlardan oluşur.",
+    "İki asidi eşler; NH₄⁺ ile H₂O arasında tek H⁺ farkı yoktur."
+   ],
+   "commonError": "Denklemde yan yana duran ya da aynı tarafta bulunan türleri eşlenik sanmak.",
+   "check": "Formülden çıkar: NH₄⁺'dan bir H⁺ çıkınca NH₃ kalır; yük +1'den 0'a iner, atom iskeleti aynı kalır."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-sulu-asit-baz-denge-5",
+  "h": "18b374d5c10377",
+  "guidance": {
+   "knowledge": [
+    "Brønsted-Lowry asidi: proton (H⁺) veren tür. Bazı: proton alan tür.",
+    "Bir türün asit ya da baz rolü, karşısındaki türe ve tepkimenin yönüne göre belirlenir; su hem asit hem baz olabilir (amfoter)."
+   ],
+   "strategy": "NH₃'ün NH₄⁺'ya dönüşmesi için gereken H⁺'nın nereden geldiğini izle; o kaynağın rolü asittir.",
+   "steps": [
+    "NH₃ → NH₄⁺: NH₃ bir H⁺ alır, baz rolündedir.",
+    "H₂O → OH⁻: su bir H⁺ kaybeder.",
+    "Su protonu NH₃'e verir; ileri yönde Brønsted-Lowry asididir."
+   ],
+   "optionReasons": [
+    "Asit-baz tanımını çekirdek olaylarıyla karıştırır; tepkimede elektron ya da çekirdek bölünmesi yoktur.",
+    "OH⁻'yi suyun aldığı bir tür sanar; OH⁻ suyun proton vermesiyle geriye kalandır, ortada tuz yoktur.",
+    "Suyu değişmeyen bir tür sanar; su bir H⁺ kaybederek OH⁻ olur, ayrıca gaz değil sıvıdır.",
+    "Suya ölçüm aracı rolü verir; su tepkimeye katılan bir türdür.",
+    "Doğru: su NH₃'e proton verir ve OH⁻ olur; bu yönde asittir."
+   ],
+   "commonError": "Suyu her tepkimede yalnız çözücü sanıp asit ya da baz rolünü görmemek.",
+   "check": "Ters yönde bak: OH⁻ NH₄⁺'dan proton alıp H₂O olur; OH⁻ baz ise eşleniği H₂O asittir."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-sulu-asit-baz-denge-6",
+  "h": "0efa15af6307a3",
+  "guidance": {
+   "knowledge": [
+    "pH = −log[H₃O⁺]; pH = n ise [H₃O⁺] = 10⁻ⁿ M (mol/L).",
+    "pH logaritmik bir ölçektir: bir birimlik fark derişimde 10 kat fark demektir."
+   ],
+   "strategy": "pH değerlerini önce derişime çevir, sonra iki derişimi böl; pH farkını doğrudan oran sanma.",
+   "steps": [
+    "pH = 5 → [H₃O⁺] = 10⁻⁵ M; pH = 3 → [H₃O⁺] = 10⁻³ M.",
+    "Oran: 10⁻³ / 10⁻⁵ = 10⁽⁻³⁺⁵⁾ = 10².",
+    "İkinci çözeltinin H₃O⁺ derişimi birincinin 100 katıdır."
+   ],
+   "optionReasons": [
+    "pH farkını (5 − 3 = 2) doğrudan oran sanar; fark üste yazılır: 10².",
+    "pH sayılarını oranlar: 3 / 5; logaritmik değerler bölünerek karşılaştırılmaz.",
+    "Doğru: 10⁻³ / 10⁻⁵ = 100.",
+    "Yalnız bir pH birimini hesaba katar; fark iki birim olduğu için 10 · 10 = 100 olur.",
+    "Oranı ters kurar: 10⁻⁵ / 10⁻³ = 1/100; oysa ikinci çözelti daha asidiktir."
+   ],
+   "commonError": "pH farkını derişim oranı sanmak.",
+   "check": "Düşük pH daha asidiktir: pH 3 olan çözeltinin derişimi büyük olmalı; oranın 1'den büyük çıkması bununla uyumlu."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-sulu-asit-baz-denge-7",
+  "h": "191570127ac249",
+  "guidance": {
+   "knowledge": [
+    "pOH = −log[OH⁻]; pH = −log[H₃O⁺].",
+    "25 °C'de Kw = [H₃O⁺][OH⁻] = 10⁻¹⁴ bağıntısının eksi logaritması alınınca pH + pOH = 14 olur."
+   ],
+   "strategy": "25 °C ve Kw = 10⁻¹⁴ verildiği için pH + pOH = 14 bağıntısını doğrudan kullan.",
+   "steps": [
+    "pH + pOH = 14.",
+    "pH = 14 − 2,30.",
+    "pH = 11,70."
+   ],
+   "optionReasons": [
+    "pOH ile pH'ı aynı sanır; bu ikisi toplamı 14 olan farklı ölçülerdir.",
+    "Nötr suyun pH'ını yazar; pOH = 2,30 çözeltinin bazik olduğunu gösterir.",
+    "Çıkarmak yerine toplar: 14 + 2,30 = 16,30.",
+    "pOH'u derişim gibi düşünüp 100'e böler: 2,30 / 100 = 0,023; pH ile pOH toplam bağıntısıyla bağlıdır.",
+    "Doğru: pH = 14 − 2,30 = 11,70."
+   ],
+   "commonError": "pH ile pOH'u karıştırmak ya da 14'ten çıkarmak yerine eklemek.",
+   "check": "pOH küçük (2,30) olduğundan OH⁻ çok, çözelti baziktir; pH'ın 7'den büyük (11,70) çıkması bununla uyumlu."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-sulu-asit-baz-denge-8",
+  "h": "13072ef024b651",
+  "guidance": {
+   "knowledge": [
+    "pH: çözeltideki H₃O⁺ derişiminin logaritmik ölçüsü; o çözeltinin anlık asitliğini anlatır.",
+    "Asit kuvveti: bir asidin suda iyonlaşma eğilimi; Ka sabitiyle ölçülür ve derişimden bağımsızdır.",
+    "Kuvvetli asit tamamen, zayıf asit kısmen iyonlaşır."
+   ],
+   "strategy": "pH'ın hem asit türüne hem derişime bağlı olduğunu kullan; derişim bilinmezken tek başına pH'tan asit kuvvetine geçilip geçilemeyeceğini sına.",
+   "steps": [
+    "pH değerleri, hangi çözeltide [H₃O⁺]'ın büyük olduğunu ve oranını doğrudan verir.",
+    "Asit kuvveti ise Ka'dır; aynı pH'ı derişik bir zayıf asit de seyrek bir kuvvetli asit de verebilir.",
+    "Başlangıç derişimleri bilinmediği için asitlerin kuvvet sıralaması kesin kurulamaz."
+   ],
+   "optionReasons": [
+    "Doğru: pH derişime de bağlı olduğundan, derişimler bilinmeden asit kuvveti sıralanamaz.",
+    "pH = −log[H₃O⁺] olduğundan küçük pH'lı çözeltinin H₃O⁺'sı büyüktür; bu kesin söylenebilir.",
+    "pH farkı n ise derişim oranı 10ⁿ'dir; bu hesap doğrudan yapılabilir.",
+    "Verilen iki sayı her zaman karşılaştırılabilir; bunun için ek bilgi gerekmez.",
+    "pH'ın tanımı H₃O⁺ derişiminin logaritmik ölçüsü olmasıdır; bu kesin bilgidir."
+   ],
+   "commonError": "Düşük pH'lı çözeltinin asidini her zaman daha kuvvetli asit sanmak.",
+   "check": "Karşı örnek: Ka = 10⁻⁶ olan 1 M zayıf asitte [H₃O⁺] ≈ √(10⁻⁶ × 1) = 10⁻³ M; 10⁻³ M HCl ile aynı pH = 3 elde edilir."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-sulu-asit-baz-denge-9",
+  "h": "0603b1606b8067",
+  "guidance": {
+   "knowledge": [
+    "Arrhenius bazı: suda OH⁻ veren madde. Brønsted-Lowry bazı: proton (H⁺) alan madde; formülünde OH bulunması gerekmez.",
+    "Bazik çözelti: [OH⁻] > [H₃O⁺] olan çözelti."
+   ],
+   "strategy": "OH⁻'nin nereden geldiğini denklemden izle; Brønsted-Lowry tanımı formülde OH aranmasını gerektirmez.",
+   "steps": [
+    "NH₃ suyun bir protonunu alır: NH₃ + H₂O → NH₄⁺ + OH⁻.",
+    "Proton veren sudan OH⁻ kalır; çözeltide OH⁻ artar ve çözelti bazik olur.",
+    "Formülde OH olmaması bazikliği engellemez; OH⁻ suyla etkileşimden doğar."
+   ],
+   "optionReasons": [
+    "Formülde OH olmamasını iyonsuzluk sanar; denklemde NH₄⁺ ve OH⁻ iyonları oluşuyor.",
+    "OH yazmamayı asitlik sanar; NH₃ proton aldığı için bazdır, kuvvetli asit değildir.",
+    "Rolü ters çevirir; NH₃ bu tepkimede proton alır, vermez.",
+    "Doğru: NH₃ sudan proton alır, su OH⁻ bırakır; çözelti baziktir.",
+    "Yalnız Arrhenius tanımını bilir; Brønsted-Lowry tanımına göre proton alan her tür bazdır."
+   ],
+   "commonError": "Bazlığı yalnız formülde OH bulunmasıyla tanımlamak.",
+   "check": "OH⁻'deki oksijeni izle: NH₃'te oksijen yoktur, öyleyse bu O atomu sudan gelir."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-sulu-asit-baz-denge-10",
+  "h": "1155eb67da2902",
+  "guidance": {
+   "knowledge": [
+    "Lewis bazı: bağ oluşturmak için elektron çifti veren tür. Lewis asidi: elektron çifti alan tür.",
+    "Ortaklanmamış elektron çifti: bağa katılmamış iki elektron; NH₃'teki azotta bir tane bulunur. BF₃'teki borun elektron çifti alabilecek boş bir yörüngesi vardır."
+   ],
+   "strategy": "Lewis tanımı proton değil elektron çifti hareketine baktığı için çiftin hangi yöne gittiğini izle.",
+   "steps": [
+    "Elektron çifti NH₃'ten BF₃'e gider.",
+    "Çifti veren NH₃ Lewis bazıdır.",
+    "Çifti alan BF₃ Lewis asididir; proton aktarımı gerekmez."
+   ],
+   "optionReasons": [
+    "Rolleri ters çevirir; elektron çiftini veren baz, alan asittir.",
+    "Doğru: NH₃ elektron çifti verir (baz), BF₃ alır (asit).",
+    "Lewis tanımını Brønsted-Lowry ile karıştırır; Lewis tanımı protona değil elektron çiftine bakar.",
+    "Türleri tuz sanar; NH₃ ile BF₃ arasında bir bağ oluşur, ikisi de tuz değildir.",
+    "Elektron verici türü soy gaz sanar; soy gazlar böyle bağ kurmaz, NH₃ kurar."
+   ],
+   "commonError": "Lewis tanımında da proton aktarımı aramak ve rolleri ters vermek.",
+   "check": "Brønsted tanımıyla tutarlılık: NH₃ proton alırken de H⁺'ya elektron çifti verir; iki tanımda da baz rolündedir."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-zayif-asit-baz-tampon-1",
+  "h": "10a66ed86fc01f",
+  "guidance": {
+   "knowledge": [
+    "(aq) gösterimi: maddenin suda çözünmüş, su molekülleriyle çevrilmiş olarak bulunduğunu belirtir; (k) katı, (g) gaz demektir.",
+    "Zayıf asit: suda çözünen moleküllerinin yalnız küçük bir bölümü iyonlaşan asit (HA ⇌ H₃O⁺ + A⁻).",
+    "Çözünme ile iyonlaşma farklıdır: çözünen HA molekül olarak kalabilir."
+   ],
+   "strategy": "Faz gösteriminin anlamını, proton aktarımından ayırarak oku.",
+   "steps": [
+    "HA(aq), HA'nın sulu fazda çözünmüş molekül olarak bulunduğunu söyler.",
+    "Denge oku zayıf asidin kısmen iyonlaştığını gösterir; molekül hâlindeki HA çözeltide kalır.",
+    "HA(aq) çözünmüş, iyonlaşmamış asit molekülleridir."
+   ],
+   "optionReasons": [
+    "(aq) ile (k) gösterimini karıştırır; dipteki katı (k) ile gösterilir.",
+    "(aq) ile (g) gösterimini karıştırır; gaz hâli (g) ile yazılır.",
+    "Çözünmeyi tam iyonlaşma sanar; zayıf asit kısmen iyonlaşır, denge oku bunu gösterir.",
+    "HA ile OH⁻'yi karıştırır; HA bir asit molekülüdür.",
+    "Doğru: HA(aq) suda çözünmüş fakat iyonlaşmamış asit moleküllerini gösterir."
+   ],
+   "commonError": "Suda çözünmüş olmayı tamamen iyonlaşmış olmakla karıştırmak.",
+   "check": "Şekerle kıyasla: C₁₂H₂₂O₁₁(aq) da çözünmüştür ama hiç iyon vermez; (aq) tek başına iyonlaşma bildirmez."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-zayif-asit-baz-tampon-2",
+  "h": "1b90862fe5b58e",
+  "guidance": {
+   "knowledge": [
+    "Ka (asitlik sabiti): HA ⇌ H₃O⁺ + A⁻ için Ka = [H₃O⁺][A⁻] / [HA]; köşeli parantez mol/L derişimdir.",
+    "x: iyonlaşan HA derişimi (mol/L); dengede [H₃O⁺] = [A⁻] = x, [HA] = C − x.",
+    "x ≪ C yaklaşımı: x, başlangıç derişimi C'nin yanında çok küçükse C − x ≈ C alınır."
+   ],
+   "strategy": "Ka küçük olduğu için x ≪ C yaklaşımıyla Ka ≈ x² / C kurulur ve karekök alınır.",
+   "steps": [
+    "Ka = x² / (C − x) ≈ x² / C.",
+    "x² = Ka · C = 10⁻⁵ × 0,100 = 10⁻⁶.",
+    "x = √(10⁻⁶) = 1,0×10⁻³ M.",
+    "Denetim: x / C = 10⁻³ / 0,1 = 0,01 (%1); yaklaşım geçerli."
+   ],
+   "optionReasons": [
+    "Ka'yı doğrudan H₃O⁺ derişimi sanar; Ka bir sabittir, derişim değildir.",
+    "Doğru: x = √(10⁻⁵ × 0,100) = √10⁻⁶ = 10⁻³ M.",
+    "Zayıf asidi tamamen iyonlaşmış sayar ve [H₃O⁺] = C = 0,1 M yazar.",
+    "Karekök almayı unutur: Ka·C = 10⁻⁶ değerini x sanar.",
+    "İyonlaşma oranı x/C = 0,01 değerini derişim sanır."
+   ],
+   "commonError": "Ka·C çarpımının karekökünü almayı unutmak.",
+   "check": "Geri koy: (10⁻³)² / 0,1 = 10⁻⁶ / 10⁻¹ = 10⁻⁵ = Ka; uyuyor."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-zayif-asit-baz-tampon-3",
+  "h": "00508bf50c77ab",
+  "guidance": {
+   "knowledge": [
+    "İyonlaşma yüzdesi α: iyonlaşan asidin başlangıç derişimine oranı; α = x / C (× 100).",
+    "Zayıf asitte x ≈ √(Ka·C) ve α ≈ √(Ka / C); Ka aynı sıcaklıkta sabittir.",
+    "Seyreltme: su ekleyerek C'yi azaltma."
+   ],
+   "strategy": "Oran (α) ile derişimi (x) ayrı formüllerle yaz ve C azalırken her birinin yönünü bul.",
+   "steps": [
+    "Seyreltmede C azalır.",
+    "x ≈ √(Ka·C): C küçülünce x, yani [H₃O⁺] azalır.",
+    "α ≈ √(Ka / C): C küçülünce α büyür.",
+    "İki niceliğin zıt yönde değişmesi, oran ile hacim başına miktarın farklı şeyler olmasından gelir."
+   ],
+   "optionReasons": [
+    "Yüzde artışını Ka'nın artışı sanar; sıcaklık sabitken Ka değişmez, artan α'dır.",
+    "Yüzde artışını kuvvetli asitlik sanar; asit hâlâ kısmen iyonlaşır, Ka değişmemiştir.",
+    "Derişim azalırken yüzdenin artmasını madde kaybı sanar; maddeler korunur, yalnız hacim büyür.",
+    "Doğru: x ≈ √(Ka·C) azalırken α ≈ √(Ka/C) artar; ikisi farklı niceliklerdir.",
+    "Seyreltmeyi çökme sanar; su eklemek HA'yı çözeltiden çıkarmaz."
+   ],
+   "commonError": "İyonlaşma yüzdesi artınca H₃O⁺ derişiminin de arttığını sanmak.",
+   "check": "Sayıyla sına (Ka = 10⁻⁵): C = 0,1 M'de x = 10⁻³ M, α = %1; C = 0,001 M'de x ≈ 10⁻⁴ M, α ≈ %10."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-zayif-asit-baz-tampon-4",
+  "h": "0137d1055337f2",
+  "guidance": {
+   "knowledge": [
+    "Ka: asidin iyonlaşma sabiti; Kb: bazın iyonlaşma sabiti.",
+    "Eşlenik çift (HA ve A⁻) için Ka · Kb = Kw; 25 °C'de Kw = 1,0×10⁻¹⁴."
+   ],
+   "strategy": "A⁻, HA'nın eşlenik bazı olduğu için Kb = Kw / Ka bağıntısı doğrudan uygulanır.",
+   "steps": [
+    "Kb = Kw / Ka = 1,0×10⁻¹⁴ / 2,0×10⁻⁵.",
+    "Katsayı: 1,0 / 2,0 = 0,5; üs: −14 − (−5) = −9.",
+    "Kb = 0,5×10⁻⁹ = 5,0×10⁻¹⁰."
+   ],
+   "optionReasons": [
+    "Bölmek yerine çarpar: 2,0×10⁻⁵ × 10⁻¹⁴ = 2,0×10⁻¹⁹.",
+    "Bölmeyi ters kurar: Ka / Kw = 2,0×10⁻⁵ / 10⁻¹⁴ = 2,0×10⁹.",
+    "Doğru: 10⁻¹⁴ / (2×10⁻⁵) = 5,0×10⁻¹⁰.",
+    "Üs farkını −9 yerine −5 alır: 0,5×10⁻⁵ = 5,0×10⁻⁶.",
+    "Nötr suyun H₃O⁺ derişimini yazar; Kb ile ilgisi yoktur."
+   ],
+   "commonError": "Kw / Ka bölmesinde üsleri yanlış çıkarmak ya da çarpma ile bölmeyi karıştırmak.",
+   "check": "Geri çarp: 2,0×10⁻⁵ × 5,0×10⁻¹⁰ = 10×10⁻¹⁵ = 10⁻¹⁴ = Kw."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-zayif-asit-baz-tampon-5",
+  "h": "03922d8c0c1de2",
+  "guidance": {
+   "knowledge": [
+    "Kb (bazlık sabiti): bazın sudaki iyonlaşma dengesi için yazılan denge sabiti.",
+    "Denge sabiti ifadesi: ürünlerin derişimleri çarpımı paya, girenlerinki paydaya yazılır. Köşeli parantez [ ] mol/L derişimi gösterir.",
+    "Çözücü su saf sıvı gibi davranır; etkinliği sabit kabul edilip ifadeye yazılmaz."
+   ],
+   "strategy": "Denge sabiti tanımını uygula: ürünler paya, girenler paydaya; suyu ifadeye yazma.",
+   "steps": [
+    "Ürünler NH₄⁺ ve OH⁻: pay [NH₄⁺][OH⁻].",
+    "Giren NH₃ paydaya yazılır; H₂O yazılmaz.",
+    "Kb = [NH₄⁺][OH⁻] / [NH₃]."
+   ],
+   "optionReasons": [
+    "Doğru: ürünler paya, NH₃ paydaya; su yazılmaz.",
+    "İfadeyi ters kurar; bu, ters tepkimenin sabitidir (1/Kb).",
+    "Denklemde bulunmayan H₃O⁺'yı ekler ve oran yerine çarpım yazar.",
+    "Bölme yerine çıkarma yapar; denge sabiti çarpım ve bölümle tanımlanır.",
+    "Derişimleri toplar ve suyu da katar; su ifadeye girmez."
+   ],
+   "commonError": "Ürünleri paydaya, girenleri paya yazmak.",
+   "check": "Anlamla sına: baz çok iyonlaşırsa ürünler artar ve Kb büyümelidir; ürünler payda olduğu için ifade gerçekten büyür."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-zayif-asit-baz-tampon-6",
+  "h": "0b636f17a3f42f",
+  "guidance": {
+   "knowledge": [
+    "Tampon: zayıf asit (HA) ile eşlenik bazının (A⁻) birlikte bulunduğu, eklenen asit ya da baza karşı pH değişimini azaltan çözelti.",
+    "Kuvvetli asit eklenince H₃O⁺ tamponun bazik bileşeniyle tamamen tepkimeye girer: A⁻ + H₃O⁺ → HA + H₂O.",
+    "Mol tablosu: tepkimeden önce ve sonra her türün mol sayısının yazıldığı çizelge."
+   ],
+   "strategy": "Kuvvetli asit tam tepkimeye girdiği için önce 1:1 tüketim hesabı yapılır; denge düzeltmesi bu ara tablodan sonra gelir.",
+   "steps": [
+    "Eklenen 0,030 mol H₃O⁺, 0,030 mol A⁻ ile tepkimeye girer (1:1).",
+    "A⁻: 0,080 − 0,030 = 0,050 mol.",
+    "HA: 0,100 + 0,030 = 0,130 mol.",
+    "Denetim: toplam 0,130 + 0,050 = 0,180 mol, başlangıçla aynı."
+   ],
+   "optionReasons": [
+    "Yönü ters çevirir; baz eklenmiş gibi HA'yı azaltıp A⁻'yi artırır.",
+    "Eklenen asidin tepkimeye girmediğini varsayar; tablo değişmeden kalmaz.",
+    "Eklenen asit miktarını bileşenlerin yeni molü sanar.",
+    "Doğru: A⁻ 0,030 mol azalır (0,050), HA 0,030 mol artar (0,130).",
+    "Bütün A⁻'nin tükendiğini sanar; eklenen asit 0,030 mol, A⁻ 0,080 mol olduğu için hepsini bitiremez."
+   ],
+   "commonError": "Eklenen kuvvetli asidin HA'yı tükettiğini sanıp yönü ters çevirmek.",
+   "check": "HA ile A⁻'nin toplamı korunur: 0,100 + 0,080 = 0,180 ve 0,130 + 0,050 = 0,180."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-zayif-asit-baz-tampon-7",
+  "h": "1daf569cb26491",
+  "guidance": {
+   "knowledge": [
+    "pKa = −log Ka; asidin kuvvetini logaritmik ölçekte gösterir.",
+    "Henderson-Hasselbalch bağıntısı: tampon için pH ≈ pKa + log([A⁻] / [HA]); aynı hacimde mol oranı da kullanılabilir.",
+    "Logaritma değerleri: log 10 = 1, log 1 = 0, log(1/10) = −1."
+   ],
+   "strategy": "Tamponun pKa'sı ve bileşen oranı verildiği için Henderson-Hasselbalch bağıntısı doğrudan uygulanır.",
+   "steps": [
+    "pH ≈ pKa + log(A⁻/HA).",
+    "log 10 = 1.",
+    "pH ≈ 5 + 1 = 6."
+   ],
+   "optionReasons": [
+    "Doğru: pH ≈ 5 + log 10 = 6.",
+    "Oranı ters çevirir: 5 + log(1/10) = 5 − 1 = 4.",
+    "Oran 1 olduğunda geçerli olan pH = pKa durumunu kullanır.",
+    "Oranın kendisini pH sanar.",
+    "Yalnız log 10 = 1 değerini yazar, pKa'yı eklemeyi unutur."
+   ],
+   "commonError": "Oranı HA/A⁻ olarak ters yazıp pH'ı pKa'nın altında bulmak.",
+   "check": "Eşlenik baz fazla olduğunda çözelti daha baziktir; pH'ın pKa'dan büyük çıkması bununla uyumlu."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-zayif-asit-baz-tampon-8",
+  "h": "1524791ca279de",
+  "guidance": {
+   "knowledge": [
+    "Tampon pH'ı Henderson-Hasselbalch bağıntısıyla yaklaşık pH ≈ pKa + log(A⁻/HA); pH bileşenlerin oranına bağlıdır.",
+    "Tampon kapasitesi: tamponun pH'ı belirgin değişmeden tüketebileceği asit ya da baz miktarı; bileşenlerin mol sayısına bağlıdır."
+   ],
+   "strategy": "Oran pH'ı, mol sayısı kapasiteyi belirlediği için iki niceliği ayrı ayrı değerlendir.",
+   "steps": [
+    "İki tamponda A⁻/HA oranı eşit; log(oran) aynı, pH benzerdir.",
+    "İkinci tamponda her bileşenin molü iki kat; eklenen asidi tüketen A⁻ stoğu da iki kat.",
+    "pH benzer, ikinci tamponun asit tüketme kapasitesi iki kat."
+   ],
+   "optionReasons": [
+    "Mol artışını pH artışı sanar; pH orana bağlıdır, oran değişmemiştir.",
+    "Doğru: oranlar eşit olduğu için pH benzer; A⁻ molü iki kat olduğu için asit tüketme stoğu iki kat.",
+    "pH eşitliğini kapasite eşitliği sanar; kapasite toplam mole bağlıdır.",
+    "Mol artışını Ka'ya yansıtır; Ka asidin türüne ve sıcaklığa bağlıdır, miktarla değişmez.",
+    "Tampon tanımını karıştırır; tampon zayıf asit ile eşlenik bazından oluşur."
+   ],
+   "commonError": "Aynı pH'taki iki tamponun aynı miktarda asit tüketebileceğini sanmak.",
+   "check": "Sayıyla sına: 1 ve 2 birimlik A⁻ stoğuna 1 birim asit eklenirse ilkinde A⁻ biter, ikincide yarısı kalır; kapasite farkı açıktır."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-zayif-asit-baz-tampon-9",
+  "h": "136a3e6eeb02e5",
+  "guidance": {
+   "knowledge": [
+    "Tampon: zayıf asit (HA) ve eşlenik bazı (A⁻) birlikte bulunduğu sürece çalışır; bileşenlerden biri biterse tampon özelliği kaybolur.",
+    "Kuvvetli baz OH⁻, HA ile tamamen tepkimeye girer: HA + OH⁻ → A⁻ + H₂O.",
+    "Artan kuvvetli baz: tüketilecek HA bittikten sonra çözeltide kalan OH⁻; pH'ı o belirler."
+   ],
+   "strategy": "Eklenen baz HA stoğundan fazla olduğu için önce tam tüketim hesabı yapılmalı, sonra kalan türe göre yöntem seçilmelidir.",
+   "steps": [
+    "0,030 mol OH⁻, 0,010 mol HA'yı tamamen tüketir: HA 0 mol.",
+    "Kalan OH⁻: 0,030 − 0,010 = 0,020 mol.",
+    "A⁻: 0,010 + 0,010 = 0,020 mol; HA kalmadığı için tampon bağıntısı kullanılamaz.",
+    "pH, artan 0,020 mol kuvvetli OH⁻'den hesaplanır."
+   ],
+   "optionReasons": [
+    "HA sıfırken log(A⁻/HA) tanımsızdır; tampon bağıntısı kullanılamaz.",
+    "Eklenen bazın büyük kısmını yok sayar; 0,030 mol OH⁻ pH'ı belirleyen ana etkendir.",
+    "Ka'yı eklenen bazla ölçekler; Ka sıcaklığa bağlı bir sabittir.",
+    "A⁻'yi çökelti sanar; A⁻ çözünmüş bir iyondur.",
+    "Doğru: önce HA tüketilir, sonra artan 0,020 mol OH⁻ ile pH hesaplanır."
+   ],
+   "commonError": "Bileşenlerden biri tükendiği hâlde Henderson-Hasselbalch bağıntısını kullanmaya devam etmek.",
+   "check": "Mol dengesi: 0,010 mol HA ile 0,010 mol OH⁻ tepkimeye girer; geriye 0,020 mol OH⁻ ve 0,020 mol A⁻ kalır."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-zayif-asit-baz-tampon-10",
+  "h": "02eb0798fc13e1",
+  "guidance": {
+   "knowledge": [
+    "Tampon çözelti: zayıf asit ile eşlenik bazını (ya da zayıf baz ile eşlenik asidini) birlikte içeren çözelti.",
+    "Tampon kapasitesi: tamponun pH'ı belirgin değişmeden tüketebileceği asit ya da baz miktarı; sonludur."
+   ],
+   "strategy": "Tampon tanımındaki iki noktayı kullan: pH değişimini azaltır ama sonlu bileşenle çalışır.",
+   "steps": [
+    "Eklenen asidi A⁻, eklenen bazı HA tüketir; pH az değişir.",
+    "Bileşenler sınırlı mol içerdiği için büyük dozda biri tükenir ve pH hızla değişir.",
+    "Doğru tanım: sınırlı ek asit ya da baza karşı pH değişimine direnç."
+   ],
+   "optionReasons": [
+    "Direnci tam sabitlik sanar; pH az da olsa değişir ve büyük dozda tampon tükenir.",
+    "Kuvvetli asidi tampon sanar; tampon için zayıf asit ve eşlenik bazı gerekir.",
+    "Doğru: tampon sınırlı ek asit ya da baza karşı pH değişimini azaltır.",
+    "Seyreltmeyi kapasite artışı sanar; seyreltme mol sayısını artırmaz, kapasite sonsuz olmaz.",
+    "Bileşen tükenmesini önemsiz sanır; bir bileşen biterse tampon bağıntısı geçersizleşir."
+   ],
+   "commonError": "Tamponu, her miktar asit ve bazda pH'ı sabit tutan bir çözelti sanmak.",
+   "check": "Sayıyla sına: 0,010 mol HA içeren tampona 0,030 mol NaOH eklenirse HA tamamen biter ve 0,020 mol OH⁻ artar; kapasite sonludur."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-hidroliz-1",
+  "h": "1e7938c9acd704",
+  "guidance": {
+   "knowledge": [
+    "Hidroliz: bir tuz iyonunun suyla proton alışverişi yaparak H₃O⁺ ya da OH⁻ oluşturması.",
+    "NaCH₃COO suda Na⁺ ve CH₃COO⁻ (asetat) iyonlarına ayrışır. Asetat, zayıf asit CH₃COOH'nin eşlenik bazıdır.",
+    "Na⁺ kuvvetli baz NaOH'den gelen katyondur; suyla proton alışverişi yapmaz (seyirci iyon)."
+   ],
+   "strategy": "Bazik hidroliz, eşlenik bazın sudan proton alıp OH⁻ bırakmasıdır; bu nedenle asetat iyonunun suyla tepkimesini ara.",
+   "steps": [
+    "Çözünme: NaCH₃COO → Na⁺ + CH₃COO⁻.",
+    "Asetat sudan H⁺ alır: CH₃COO⁻ + H₂O ⇌ CH₃COOH + OH⁻.",
+    "Oluşan OH⁻ çözeltiyi bazik yapar; Na⁺ seyirci kalır."
+   ],
+   "optionReasons": [
+    "Doğru: asetat sudan proton alır, OH⁻ oluşur; bazik hidroliz budur.",
+    "Seyirci Na⁺'yı tepkimeye sokar ve H⁺ oluşturur; bu asitlik yaratırdı, Na⁺ hidroliz vermez.",
+    "Denklemde olmayan Cl⁻'yi getirir; atomlar korunmaz.",
+    "Asetatı katıya dönüştürür; hidroliz bir çökelme değildir.",
+    "Tuzla ilgisiz türler yazar; Na⁺ ve Cl⁻'den NH₃ oluşamaz."
+   ],
+   "commonError": "Tuzun çözünmesini hidroliz sanmak ya da seyirci katyonu tepkimeye sokmak.",
+   "check": "Zayıf asidin eşlenik bazı bazik davranır: CH₃COOH zayıf olduğuna göre CH₃COO⁻ proton alır ve OH⁻ üretir."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-hidroliz-2",
+  "h": "15189d6cf8dbf5",
+  "guidance": {
+   "knowledge": [
+    "Ka: asitlik sabiti, Kb: bazlık sabiti.",
+    "NH₄⁺, NH₃'ün eşlenik asididir (NH₃ + H⁺ → NH₄⁺). Eşlenik çift için Ka · Kb = Kw = 10⁻¹⁴ (25 °C)."
+   ],
+   "strategy": "NH₄⁺ ile NH₃ eşlenik çift olduğu için Ka = Kw / Kb bağıntısı doğrudan uygulanır.",
+   "steps": [
+    "Ka = Kw / Kb = 10⁻¹⁴ / (2,0×10⁻⁵).",
+    "Katsayı: 1 / 2 = 0,5; üs: −14 − (−5) = −9.",
+    "Ka = 0,5×10⁻⁹ = 5,0×10⁻¹⁰."
+   ],
+   "optionReasons": [
+    "Bölmek yerine çarpar: 2,0×10⁻⁵ × 10⁻¹⁴ = 2,0×10⁻¹⁹.",
+    "Üs farkını −9 yerine −4 alır: 0,5×10⁻⁴ = 5,0×10⁻⁵.",
+    "Doğru: 10⁻¹⁴ / (2,0×10⁻⁵) = 5,0×10⁻¹⁰.",
+    "Bölmeyi ters kurar: Kb / Kw = 2,0×10⁻⁵ / 10⁻¹⁴ = 2,0×10⁹.",
+    "Nötr suyun H₃O⁺ derişimini yazar; Ka bununla aynı nicelik değildir."
+   ],
+   "commonError": "Katyon olduğu için NH₄⁺'yı kuvvetli asit sanmak ya da Kw/Kb bölmesinde üs hatası yapmak.",
+   "check": "Geri çarp: 5,0×10⁻¹⁰ × 2,0×10⁻⁵ = 10×10⁻¹⁵ = 10⁻¹⁴ = Kw."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-hidroliz-3",
+  "h": "1e611b882c84c2",
+  "guidance": {
+   "knowledge": [
+    "Hidroliz: tuz iyonunun suyla proton alışverişi yapıp H₃O⁺ ya da OH⁻ oluşturması.",
+    "NaCl, kuvvetli asit HCl ile kuvvetli baz NaOH'den oluşan tuzdur; Na⁺ ve Cl⁻ suyla proton alışverişi yapmaz.",
+    "25 °C'de saf suda [H₃O⁺] = [OH⁻] = √Kw = 10⁻⁷ M, pH = 7."
+   ],
+   "strategy": "İyonlar hidroliz vermediği için pH'ı yalnız suyun kendi iyonlaşması belirler.",
+   "steps": [
+    "Na⁺ ve Cl⁻ seyirci iyon; H₃O⁺ ya da OH⁻ üretmez.",
+    "[H₃O⁺] = [OH⁻] = √(10⁻¹⁴) = 10⁻⁷ M.",
+    "pH = −log(10⁻⁷) = 7."
+   ],
+   "optionReasons": [
+    "Tuz derişimini H₃O⁺ derişimi sanar: −log 0,10 = 1; NaCl asit değildir.",
+    "Tuz derişimini OH⁻ derişimi sanar: pOH = 1, pH = 13; NaCl baz değildir.",
+    "1 M kuvvetli asidin pH'ını yazar; NaCl çözeltisinde H₃O⁺ 1 M olamaz.",
+    "pKw değerini pH sanar; 14, pH ile pOH'un toplamıdır.",
+    "Doğru: iyonlar seyirci, pH suyun iyonlaşmasından 7 olur."
+   ],
+   "commonError": "Her tuz çözeltisinin asidik ya da bazik olacağını varsaymak.",
+   "check": "Kaynak asit de baz da kuvvetli; eşlenikleri hidroliz vermeyecek kadar zayıf olduğundan pH = 7 kalır."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-hidroliz-4",
+  "h": "0fd8dd1fd18761",
+  "guidance": {
+   "knowledge": [
+    "Brønsted-Lowry asidi: proton (H⁺) veren tür. Eşlenik asit: bir bazın proton almasıyla oluşan tür; NH₄⁺, NH₃'ün eşlenik asididir.",
+    "Hidroliz: bir tuz iyonunun suyla proton alışverişi yapması."
+   ],
+   "strategy": "NH₄⁺'nın formülündeki H sayısının ve yükünün nasıl değiştiğini izle; H ve yük azalıyorsa proton vermiştir.",
+   "steps": [
+    "NH₄⁺ → NH₃: bir H azalır, yük +1'den 0'a iner; NH₄⁺ bir proton verir.",
+    "H₂O → H₃O⁺: su protonu alır, baz rolündedir.",
+    "NH₄⁺ proton veren eşlenik asittir."
+   ],
+   "optionReasons": [
+    "NH₄⁺'yı metal sanar ve redoks düşünür; burada elektron değil proton aktarılır.",
+    "Rolü ters çevirir; NH₄⁺ proton verir, almaz.",
+    "NH₄⁺'nın değiştiğini görmez; NH₃'e dönüşür, seyirci değildir.",
+    "Doğru: NH₄⁺ bir proton vererek NH₃ olur; proton veren eşlenik asittir.",
+    "Çökelme ile karıştırır; ürünler çözünmüş türlerdir, katı oluşmaz."
+   ],
+   "commonError": "Proton aktarımını elektron aktarımı (redoks) ile karıştırmak.",
+   "check": "Yük ile sına: solda +1 NH₄⁺ üzerinde, sağda H₃O⁺ üzerinde; pozitif yük protonla birlikte NH₄⁺'dan suya geçmiştir."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-hidroliz-5",
+  "h": "0c222ca13f29c4",
+  "guidance": {
+   "knowledge": [
+    "Hidroliz: A⁻ + H₂O ⇌ HA + OH⁻; zayıf asidin eşlenik bazı A⁻ sudan proton alıp OH⁻ oluşturur.",
+    "Kb (bazlık sabiti) = Kw / Ka; eşlenik çift için Ka · Kb = Kw = 10⁻¹⁴.",
+    "Küçük hidroliz yaklaşımı: [OH⁻] ≈ √(Kb · C); C tuzun molar derişimi."
+   ],
+   "strategy": "Hidrolizi yapan A⁻ olduğu için önce Kb'yi Ka'dan türet, sonra zayıf baz yaklaşımıyla OH⁻'yi bul.",
+   "steps": [
+    "Kb = 10⁻¹⁴ / 10⁻⁵ = 10⁻⁹.",
+    "[OH⁻] ≈ √(Kb · C) = √(10⁻⁹ × 0,10) = √(10⁻¹⁰).",
+    "[OH⁻] ≈ 10⁻⁵ M."
+   ],
+   "optionReasons": [
+    "Kb yerine Ka'yı kullanır: √(10⁻⁵ × 0,10) = 10⁻³ M.",
+    "Doğru: Kb = 10⁻⁹ ve [OH⁻] ≈ √(10⁻⁹ × 0,10) = 10⁻⁵ M.",
+    "Hidrolizi yok sayar ve nötr suyun değerini yazar.",
+    "Karekök almadan Kb'yi doğrudan OH⁻ derişimi sanar.",
+    "Tuzun tamamının OH⁻ verdiğini sanar; A⁻ zayıf bazdır, kısmen tepkimeye girer."
+   ],
+   "commonError": "Hidroliz hesabında Kb yerine ana asidin Ka değerini kullanmak.",
+   "check": "Geri koy: (10⁻⁵)² / 0,10 = 10⁻¹⁰ / 10⁻¹ = 10⁻⁹ = Kb; pH = 14 − 5 = 9, bazik tuz beklentisine uyar."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-hidroliz-6",
+  "h": "06a086f9d33713",
+  "guidance": {
+   "knowledge": [
+    "Hidroliz: tuz iyonunun suyla proton alışverişi. NH₄⁺ suya proton verip H₃O⁺ (asidik etki), CH₃COO⁻ sudan proton alıp OH⁻ (bazik etki) oluşturur.",
+    "Ka(NH₄⁺) ve Kb(CH₃COO⁻): bu iki iyonun asitlik ve bazlık sabitleri; eşitlerse iki etkinin büyüklüğü de eşittir."
+   ],
+   "strategy": "Nötr pH'ın bir sonuç sayısı olduğunu, mekanizmayı göstermediğini düşün; iki zıt etkinin eşit büyüklükte olup olmadığına bak.",
+   "steps": [
+    "NH₄⁺ hidrolizi H₃O⁺ üretir, asetat hidrolizi OH⁻ üretir.",
+    "Ka = Kb ve mol sayıları eşit olduğu için iki etki aynı büyüklüktedir.",
+    "H₃O⁺ ve OH⁻ katkıları birbirini dengeler, pH nötr kalır; yine de iki iyon da suyla tepkimeye girmiştir."
+   ],
+   "optionReasons": [
+    "Nötr pH'ı hidroliz olmaması sanar; iki iyon da suyla tepkimeye girer, etkiler birbirini götürür.",
+    "Bu özel durumu bütün tuzlara genelleştirir; NH₄Cl ya da NaCH₃COO çözeltisi nötr değildir.",
+    "Nötr pH'ı çözünmeme sanar; tuz çözünmüş, iyonları ortamda bulunuyor.",
+    "Nötrlüğü iyon yokluğu sanar; nötr suda bile H₃O⁺ ve OH⁻ eşit ve sıfırdan büyüktür.",
+    "Doğru: asidik ve bazik hidroliz eşit büyüklükte olduğu için birbirini dengeler."
+   ],
+   "commonError": "Nötr pH'ı, hiçbir iyonun suyla tepkimeye girmediğinin kanıtı sanmak.",
+   "check": "Ka ≠ Kb olsaydı büyük olan etki baskın gelir, pH 7'den sapardı; nötrlük iki sabitin eşitliğinden gelir."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-hidroliz-7",
+  "h": "0b395a95844823",
+  "guidance": {
+   "knowledge": [
+    "Amfiprotik tür: hem proton verebilen hem proton alabilen tür; HCO₃⁻ böyledir.",
+    "Proton verme: HCO₃⁻ + H₂O ⇌ CO₃²⁻ + H₃O⁺, ölçüsü H₂CO₃'ün ikinci asitlik sabiti Ka₂.",
+    "Proton alma: HCO₃⁻ + H₂O ⇌ H₂CO₃ + OH⁻, ölçüsü Kb = Kw / Ka₁ (Ka₁, H₂CO₃'ün birinci asitlik sabiti)."
+   ],
+   "strategy": "İki yönün hangisinin baskın olduğu iki ayrı sabitin büyüklüğüne bağlıdır; formüle bakarak değil sabitleri karşılaştırarak karar ver.",
+   "steps": [
+    "HCO₃⁻ proton verirse CO₃²⁻, proton alırsa H₂CO₃ olur.",
+    "Verme eğilimi Ka₂, alma eğilimi Kb = Kw / Ka₁ ile ölçülür.",
+    "Hangisi büyükse o etki baskındır; sabitler ayrı ayrı karşılaştırılmalıdır."
+   ],
+   "optionReasons": [
+    "Formülde H görünce yalnız asit sayar; HCO₃⁻ proton da alabilir.",
+    "Doğru: proton verme (Ka₂) ve alma (Kb = Kw/Ka₁) sabitleri ayrı ayrı karşılaştırılır.",
+    "Eksi yükü asitliğe engel sanar; HCO₃⁻ yüklü olsa da protonunu verip CO₃²⁻ olabilir.",
+    "İki yön için aynı sabiti kullanır; verme ve alma farklı dengelerdir, farklı sabitleri vardır.",
+    "Yük denkliğini kaldırmayı önerir; yük denkliği her çözeltide geçerli bir koşuldur."
+   ],
+   "commonError": "Amfiprotik türün rolünü yalnız formülüne bakarak belirlemek.",
+   "check": "İki yönü formülle sına: HCO₃⁻ bir H⁺ alınca H₂CO₃, bir H⁺ verince CO₃²⁻ olur; iki ayrı denge, iki ayrı sabit."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-hidroliz-8",
+  "h": "0e299e88cc4c5e",
+  "guidance": {
+   "knowledge": [
+    "Hidratlı metal iyonu: suda su molekülleriyle (ligand) çevrilmiş metal iyonu; [Al(H₂O)₆]³⁺ altı su molekülüne bağlı Al³⁺'tür.",
+    "Ligand: metal iyonuna elektron çifti vererek bağlanan tür. Yüksek yüklü küçük metal iyonu, bağlı suyun O−H bağını zayıflatır.",
+    "Brønsted-Lowry asidi: proton veren tür."
+   ],
+   "strategy": "Protonun hangi atomdan geldiğini bul; metal çekirdeği proton veremez, bağlı su molekülü verebilir.",
+   "steps": [
+    "[Al(H₂O)₆]³⁺ + H₂O ⇌ [Al(H₂O)₅(OH)]²⁺ + H₃O⁺.",
+    "Proton, Al³⁺'e bağlı bir su molekülünden kopar; o su OH⁻'ye dönüşür.",
+    "Hidratlı metal iyonu bağlı suyu etkileyerek asitlik oluşturur."
+   ],
+   "optionReasons": [
+    "Metal iyonlarını baz sanır ve hepsine aynı kuvveti verir; bu iyon proton verdiği için asit gibi davranır.",
+    "Protonun metal çekirdeğinden geldiğini sanar; çekirdek değişmez, proton bağlı sudan kopar.",
+    "Doğru: Al³⁺'e bağlı su proton kaybeder; hidratlı iyon asitlik oluşturur.",
+    "Asitlik için metalin kendisinde H bulunması gerektiğini sanar; H bağlı su molekülündedir.",
+    "Bütün iyonları seyirci sayar; Al³⁺ gibi iyonlar bağlı su üzerinden asitlik gösterir."
+   ],
+   "commonError": "Metal katyonlarının asitlik oluşturamayacağını, protonun yalnız H içeren asitlerden geleceğini sanmak.",
+   "check": "Yük denetimi: +3 yüklü kompleks proton verince +2 olur; H₃O⁺'nın +1'iyle toplam +3 korunur."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-hidroliz-9",
+  "h": "1658c486e111fe",
+  "guidance": {
+   "knowledge": [
+    "Asetat ailesi: aynı iskeleti taşıyan CH₃COOH (HA) ve CH₃COO⁻ (A⁻) türleri; birbirine proton alışverişiyle dönüşür.",
+    "Kütle denkliği (aile korunumu): HA ve A⁻ derişimlerinin toplamı başlangıç (analitik) derişime eşittir; [HA] + [A⁻] = C."
+   ],
+   "strategy": "Aile toplamı korunduğu için bilinmeyeni toplamdan bilinen türü çıkararak bul.",
+   "steps": [
+    "[HA] + [A⁻] = 0,100 M.",
+    "[A⁻] = 0,100 − 0,001.",
+    "[A⁻] = 0,099 M."
+   ],
+   "optionReasons": [
+    "Doğru: 0,100 − 0,001 = 0,099 M.",
+    "Çıkarmak yerine ekler: 0,100 + 0,001 = 0,101 M.",
+    "Hidrolizle oluşan HA'yı yok sayar; A⁻'nin bir kısmı HA'ya dönüşmüştür.",
+    "HA derişimini A⁻ diye yazar.",
+    "HA derişimini on kat büyük okuyup (0,010) A⁻ sanar; toplam 0,100 M'yi hiç kullanmaz."
+   ],
+   "commonError": "Aile korunumunda toplamdan çıkarma yerine toplama yapmak.",
+   "check": "Toplayarak sına: 0,099 + 0,001 = 0,100 M; analitik derişime eşit."
+  }
+ },
+ {
+  "id": "f020-chem-ayt-hidroliz-10",
+  "h": "1e9b3d12ab93e1",
+  "guidance": {
+   "knowledge": [
+    "Analitik derişim: çözeltiye konan maddenin toplam molar derişimi (mol/L); sıfırsa o madde çözeltide yoktur.",
+    "Suyun iyonlaşması: saf suda 25 °C'de [H₃O⁺] = [OH⁻] = √Kw = 10⁻⁷ M, pH = 7."
+   ],
+   "strategy": "Tuz miktarı sıfır olduğu için hidroliz yapacak iyon yoktur; pH'ı yalnız suyun iyonlaşması belirler.",
+   "steps": [
+    "C = 0: çözeltide tuz iyonu yok, hidroliz olmaz.",
+    "Saf su: [H₃O⁺] = √(10⁻¹⁴) = 10⁻⁷ M.",
+    "pH = −log(10⁻⁷) = 7."
+   ],
+   "optionReasons": [
+    "Etiketin gerçek madde yarattığını sanar; tuz yoksa onun etkisi de yoktur.",
+    "Suyun iyonlaşmasını unutur; saf suda bile 10⁻⁷ M H₃O⁺ vardır.",
+    "Derişimin eksi olabileceğini sanar; derişim en az sıfırdır.",
+    "Doğru: tuz yok, su kendi iyonlaşmasıyla pH 7 verir.",
+    "Sıfırı sonsuzla karıştırır; C = 0 tuz olmadığı anlamına gelir."
+   ],
+   "commonError": "Model adını ya da seçili maddeyi çözeltide gerçekten bulunan madde sanmak.",
+   "check": "Sınır durumu: C küçüldükçe tuzun pH'a etkisi azalır ve pH 7'ye yaklaşır; C = 0'da tam 7 olur."
+  }
+ },
+ {
   "id": "f020-chem-ayt-notrallesme-1",
   "h": "0fe2e8d3ce0806",
   "guidance": {

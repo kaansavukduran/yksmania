@@ -18,14 +18,14 @@ Bu dosya `npm run progress` ile koddan üretilir; elle düzenlenmez.
 | AYT Matematik | 17 / 18 | 13 · 19 | 253 / 253 · %100,00 | 2 / 17 · %11,76 | ↓ | 5 |
 | AYT Geometri | 4 / 4 | 4 · 51 | 40 / 40 · %100,00 | 1 / 4 · %25,00 | ↓ | 0 |
 | AYT Fizik | 46 / 47 | 11 · 26 | 541 / 541 · %100,00 | 7 / 46 · %15,22 | ↓ | 36 |
-| AYT Kimya | 55 / 56 | 18 · 19 | 610 / 680 · %89,71 | 11 / 55 · %20,00 | ↓ | 38 |
+| AYT Kimya | 55 / 56 | 18 · 19 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | ↓ | 38 |
 | AYT Biyoloji | 75 / 76 | 16 · 39 | 417 / 907 · %45,98 | 11 / 75 · %14,67 | ↓ | 60 |
-| **Toplam** | **505 / 540** | **200 · 830** | **5.905 / 6.465 · %91,34** | **109 / 517 · %21,08** | **76 bağlantılı geçmiş soru** | **340** |
+| **Toplam** | **505 / 540** | **200 · 830** | **5.975 / 6.465 · %92,42** | **109 / 517 · %21,08** | **76 bağlantılı geçmiş soru** | **340** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
 | OGM/MEBİ PDF (okunan / envanter) | 119 / 8.981 · %1,33 |
 | 99_ÖSYM PDF (işlenen / beyan edilen) | 0 / 1.001 · %0,00 |
-| Adım adım çözümlü soru | 5.905 / 6.465 · %91,34 |
+| Adım adım çözümlü soru | 5.975 / 6.465 · %92,42 |
 | Kopya kâğıdı (işlenen / toplam) | 109 / 517 · %21,08 |
 | Resmî ana başlık · uygulama dersi · hazır anlatım | 341 · 540 · 505 |
