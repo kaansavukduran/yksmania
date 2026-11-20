@@ -1,4 +1,5 @@
 import { clarifiedQuestionView } from "../domain/questionPresentation";
+import guidance053AytGeometry from "./guidance053AytGeometry.json";
 import guidance030Math from "./guidance030Math.json";
 import guidance030Physics from "./guidance030Physics.json";
 import guidance030Chemistry from "./guidance030Chemistry.json";
@@ -44,6 +45,7 @@ type CatalogueRow = {
 // These accepted cards previously exposed one hint and then the full solution.
 // Keep that old numbering only for snapshots without their own inline guide.
 const expandedLegacyRows: CatalogueRow[] = [
+  ...guidance053AytGeometry,
   ...guidance030Math,
   ...guidance030Physics,
   ...guidance030Chemistry,

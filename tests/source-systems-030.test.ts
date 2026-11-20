@@ -150,8 +150,11 @@ describe("030 gerçek katalog bütünleşmesi ve eski çözüm koruması", () =>
     const partial = all.filter(
       (q) => !resolvedGuidance(flat(localizedQuestionView(q))),
     );
-    expect(full).toHaveLength(3243);
-    expect(partial).toHaveLength(2640);
+    // Later rounds upgrade partial cards to full step-by-step guides (053+):
+    // the full count may only grow and the partial count only shrink.
+    expect(full.length + partial.length).toBe(5883);
+    expect(full.length).toBeGreaterThanOrEqual(3243);
+    expect(partial.length).toBeLessThanOrEqual(2640);
     expect(all.filter((q) => q.guidance)).toHaveLength(2283);
     for (const q of partial) {
       expect(q.options, q.id).toHaveLength(5);

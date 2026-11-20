@@ -1,0 +1,987 @@
+[
+ {
+  "id": "f021-donusum-oteleme-donme-1",
+  "identity": "[\"f021-donusum-oteleme-donme-1\",\"P(−3; 4), (5; −6) vektörüyle öteleniyor. Görüntü hangisidir?\",\"\",[\"(−8; 10)\",\"(2; 10)\",\"(−8; −2)\",\"(5; −6)\",\"(2; −2)\"],4,\"P′=(−3+5; 4−6)=(2; −2). Sonuçtaki iki koordinat yeni konumdur; öteleme vektörü ise değişimdir. Aynı vektörü çıkarmak ters hareketi verir.\"]",
+  "guidance": {
+   "knowledge": [
+    "Öteleme: her noktayı aynı vektör kadar kaydırmak. (a; b) vektörü x'e a, y'ye b ekler.",
+    "Görüntü, yeni konumdaki noktadır; P′ ile gösterilir."
+   ],
+   "strategy": "Vektörün iki bileşenini noktanın aynı sıradaki koordinatına ekle; iki bileşeni ayrı ayrı işle.",
+   "steps": [
+    "x: −3 + 5 = 2.",
+    "y: 4 + (−6) = −2.",
+    "P′ = (2; −2)."
+   ],
+   "optionReasons": [
+    "Vektörü eklemek yerine çıkarır: (−3 − 5; 4 + 6).",
+    "x'te ekler, y'de −6'yı çıkarır; iki bileşen farklı işlem görmüş.",
+    "x'te çıkarır, y'de ekler; işlem karışmış.",
+    "Öteleme vektörünü görüntü noktası sanır.",
+    "Doğru: (−3 + 5; 4 − 6) = (2; −2)."
+   ],
+   "commonError": "Negatif bileşeni eklerken işareti kaybetmek: 4 + (−6) = −2'dir, 10 değil.",
+   "check": "Geri dönüş: (2; −2) − (5; −6) = (−3; 4), yani P'ye ulaşılır."
+  }
+ },
+ {
+  "id": "f021-donusum-oteleme-donme-2",
+  "identity": "[\"f021-donusum-oteleme-donme-2\",\"P noktası (−2; 3) ile ötelendiğinde P′(5; −1) oluyor. İlk P nedir?\",\"\",[\"(3; −4)\",\"(−7; 4)\",\"(7; −4)\",\"(3; 2)\",\"(7; 2)\"],2,\"P=(5−(−2); −1−3)=(7; −4). Geri kontrolde (7; −4)+(−2; 3)=(5; −1) olur. İki bileşenin de ters değişimi kullanılmalıdır.\"]",
+  "guidance": {
+   "knowledge": [
+    "Öteleme: her noktayı aynı vektör kadar kaydırmak. (a; b) vektörü x'e a, y'ye b ekler.",
+    "Görüntüden ilk noktaya dönmek için aynı vektör çıkarılır: P = P′ − v."
+   ],
+   "strategy": "Ters işlemi kullan: görüntüden öteleme vektörünü bileşen bileşen çıkar.",
+   "steps": [
+    "x: 5 − (−2) = 7.",
+    "y: −1 − 3 = −4.",
+    "P = (7; −4)."
+   ],
+   "optionReasons": [
+    "x'te vektörü ekler (5 − 2), y'de çıkarır; işlem karışık.",
+    "v − P′ hesaplanmış; işaretlerin hepsi ters.",
+    "Doğru: (5 + 2; −1 − 3) = (7; −4).",
+    "P′ + v hesaplanmış; ileri öteleme tekrar uygulanmış.",
+    "x doğru, y'de çıkarmak yerine eklemiş (−1 + 3)."
+   ],
+   "commonError": "P′'ye vektörü bir kez daha eklemek; bu, noktayı iki kez ileri taşır.",
+   "check": "(7; −4) + (−2; 3) = (5; −1) = P′."
+  }
+ },
+ {
+  "id": "f021-donusum-oteleme-donme-3",
+  "identity": "[\"f021-donusum-oteleme-donme-3\",\"P(2; −5) orijin çevresinde saatin tersine 90° döndürülüyor. Görüntü?\",\"\",[\"(5; 2)\",\"(−5; −2)\",\"(−2; 5)\",\"(−5; 2)\",\"(2; 5)\"],0,\"(−(−5); 2)=(5; 2). Yarıçap karesi başlangıçta 4+25=29, görüntüde 25+4=29'dur. Saat yönündeki 90° farklı olarak (−5; −2) verir.\"]",
+  "guidance": {
+   "knowledge": [
+    "Orijin çevresinde pozitif (saatin tersi) 90° dönme (x; y) → (−y; x) kuralıyla yapılır; uzaklıklar korunur.",
+    "Saat yönünde 90° dönme ise (x; y) → (y; −x) verir; yön farkı sonucu değiştirir."
+   ],
+   "strategy": "Pozitif 90° kuralına koordinatları yerleştir; sonucu uzaklık korunumuyla denetle.",
+   "steps": [
+    "x = 2, y = −5.",
+    "Yeni x = −y = 5; yeni y = x = 2.",
+    "P′ = (5; 2)."
+   ],
+   "optionReasons": [
+    "Doğru: (−(−5); 2) = (5; 2).",
+    "Saat yönünde 90° kuralı (y; −x) kullanılmış.",
+    "180° dönme (−x; −y) yapılmış.",
+    "Yalnız koordinatlar yer değiştirmiş: y = x doğrusuna yansıma.",
+    "x eksenine yansıma: y'nin işareti değişmiş."
+   ],
+   "commonError": "Saat yönü ile saatin tersini karıştırmak.",
+   "check": "Orijine uzaklık karesi 2² + 5² = 29 başta ve sonda aynı."
+  }
+ },
+ {
+  "id": "f021-donusum-oteleme-donme-4",
+  "identity": "[\"f021-donusum-oteleme-donme-4\",\"P(4; 3), C(1; 2) etrafında 180° döndürülüyor. Görüntü hangisi?\",\"\",[\"(2; −1)\",\"(6; 7)\",\"(−3; 4)\",\"(−2; 1)\",\"(−4; −3)\"],3,\"P′=2C−P=(2−4; 4−3)=(−2; 1). P ile P′'nin ortası ((4−2)/2; (3+1)/2)=(1; 2) çıkar; verilen merkez sağlanır.\"]",
+  "guidance": {
+   "knowledge": [
+    "Bir C noktası çevresinde 180° dönme, C'ye göre nokta simetrisidir: C, P ile P′'nin orta noktası olur."
+   ],
+   "strategy": "Orta nokta formülünden P′ = 2C − P yaz.",
+   "steps": [
+    "2C = (2; 4).",
+    "P′ = (2 − 4; 4 − 3).",
+    "P′ = (−2; 1)."
+   ],
+   "optionReasons": [
+    "P − 2C hesaplanmış; çıkarma sırası ters.",
+    "P + 2C toplanmış; orta nokta kuralı yok sayılmış.",
+    "Orijin çevresinde 90° döndürülmüş, merkez C kullanılmamış.",
+    "Doğru: 2C − P = (−2; 1).",
+    "Orijin çevresinde 180° döndürülmüş; merkez C değil."
+   ],
+   "commonError": "Dönme merkezini orijin sanmak.",
+   "check": "P(4; 3) ile (−2; 1)'in ortası (1; 2) = C."
+  }
+ },
+ {
+  "id": "f021-donusum-oteleme-donme-5",
+  "identity": "[\"f021-donusum-oteleme-donme-5\",\"P(1; 2) önce (3; −1) ile öteleniyor, sonra orijinde pozitif 90° döndürülüyor. Son nokta?\",\"\",[\"(1; −4)\",\"(−1; 4)\",\"(1; 0)\",\"(4; 1)\",\"(−2; 1)\"],1,\"Ötelemeden sonra (4; 1), dönmeden sonra (−1; 4) olur. (1; 0), işlemlerin ters sırada yapılmasının sonucudur; sorudaki sırayı sağlamaz.\"]",
+  "guidance": {
+   "knowledge": [
+    "Öteleme: her noktayı aynı vektör kadar kaydırmak. (a; b) vektörü x'e a, y'ye b ekler.",
+    "Orijin çevresinde pozitif (saatin tersi) 90° dönme (x; y) → (−y; x) kuralıyla yapılır; uzaklıklar korunur."
+   ],
+   "strategy": "İşlemleri sorudaki sırayla yap: önce öteleme, sonra dönme.",
+   "steps": [
+    "Öteleme: (1 + 3; 2 − 1) = (4; 1).",
+    "Dönme: (4; 1) → (−1; 4).",
+    "Son nokta (−1; 4)."
+   ],
+   "optionReasons": [
+    "Ara noktayı saat yönünde döndürür: (1; −4).",
+    "Doğru: önce (4; 1), sonra (−1; 4).",
+    "Sıra ters: önce dönme (−2; 1), sonra öteleme (1; 0).",
+    "Dönme unutulmuş; yalnız öteleme sonucu.",
+    "Öteleme unutulmuş; yalnız P döndürülmüş."
+   ],
+   "commonError": "Bileşke dönüşümlerde sırayı değiştirmek; öteleme ve dönme genelde yer değiştirmez.",
+   "check": "(−1; 4)'ün orijine uzaklık karesi 17, ara nokta (4; 1)'inkiyle aynı."
+  }
+ },
+ {
+  "id": "f021-donusum-oteleme-donme-6",
+  "identity": "[\"f021-donusum-oteleme-donme-6\",\"d: 2x+y−5=0 doğrusu (2; −3) vektörüyle öteleniyor. Görüntü doğru denklemi?\",\"\",[\"2x+y−4=0\",\"2x+y+6=0\",\"x+2y−6=0\",\"2x−y−6=0\",\"2x+y−6=0\"],4,\"2(x−2)+(y+3)−5=0 düzenlenince 2x+y−6=0 çıkar. Normal katsayılar aynı kalır; öteleme doğrunun yönünü değiştirmez.\"]",
+  "guidance": {
+   "knowledge": [
+    "Doğru denklemi ax + by + c = 0 biçimindedir; (a; b) normal (dik) vektördür, b ≠ 0 ise eğim m = −a/b.",
+    "Bir şekli (a; b) kadar ötelemek, denklemde x yerine x − a, y yerine y − b yazmaktır."
+   ],
+   "strategy": "Yerine koyma kuralını uygula ve sadeleştir; normal katsayılar değişmez, yalnız sabit değişir.",
+   "steps": [
+    "x yerine x − 2, y yerine y + 3 yaz.",
+    "2(x − 2) + (y + 3) − 5 = 0.",
+    "2x − 4 + y + 3 − 5 = 0 → 2x + y − 6 = 0."
+   ],
+   "optionReasons": [
+    "x yerine x + 2, y yerine y − 3 yazılmış; öteleme ters yönde.",
+    "Sabit terim işaret hatasıyla bulunmuş.",
+    "x ve y katsayıları yer değiştirmiş; doğrunun yönü bozulmuş.",
+    "y katsayısının işareti değişmiş; artık paralel değil.",
+    "Doğru: 2x + y − 6 = 0."
+   ],
+   "commonError": "Sağa ötelemede x yerine x + 2 yazmak; doğru yazım x − 2'dir.",
+   "check": "d üzerindeki (0; 5) noktası (2; 2)'ye gider: 4 + 2 − 6 = 0."
+  }
+ },
+ {
+  "id": "f021-donusum-oteleme-donme-7",
+  "identity": "[\"f021-donusum-oteleme-donme-7\",\"y=x²+1 grafiği 3 birim sağa, 2 birim yukarı öteleniyor. Yeni kural?\",\"\",[\"y=x²+6\",\"y=(x+2)²+4\",\"y=(x−3)²+3\",\"y=(x+3)²+3\",\"y=(x−3)²−1\"],2,\"g(x)=f(x−3)+2=(x−3)²+1+2=(x−3)²+3. Eski tepe (0; 1), yeni tepe (3; 3) olur ve istenen vektörle taşınır.\"]",
+  "guidance": {
+   "knowledge": [
+    "f(x) grafiğini a birim sağa ve b birim yukarı ötelemek g(x) = f(x − a) + b verir.",
+    "Parabol y = x² + 1'in tepe noktası (0; 1)'dir."
+   ],
+   "strategy": "Kuralı a = 3, b = 2 ile uygula; tepe noktasının taşınmasıyla doğrula.",
+   "steps": [
+    "f(x − 3) = (x − 3)² + 1.",
+    "2 ekle: (x − 3)² + 3.",
+    "Tepe (0; 1) → (3; 3)."
+   ],
+   "optionReasons": [
+    "Yatay ötelemeyi sabite eklemiş; parabol yana kaymaz.",
+    "Miktarlar ve yönler karışık; tepe (−2; 4) olur.",
+    "Doğru: (x − 3)² + 3.",
+    "x + 3 sola ötelemedir.",
+    "Yukarı yerine aşağı ötelenmiş: 1 − 2 = −1."
+   ],
+   "commonError": "Sağa ötelemeyi x + 3 ile yazmak.",
+   "check": "x = 3'te g = 3: tepe (3; 3) = (0; 1) + (3; 2)."
+  }
+ },
+ {
+  "id": "f021-donusum-oteleme-donme-8",
+  "identity": "[\"f021-donusum-oteleme-donme-8\",\"Düzlemde C sabit merkezi etrafında 360° dönme uygulanıyor. Hangi ifade doğrudur?\",\"\",[\"Bütün noktalar ilk konumuna döner.\",\"Yalnız C sabittir.\",\"Hiçbir nokta sabit kalmaz.\",\"Bütün noktalar C'ye gider.\",\"Yarıçaplar iki katına çıkar.\"],0,\"cos360°=1, sin360°=0; C+R360(P−C)=P. Her P sabittir. Yalnız merkezin sabit olması, tam tur olmayan bir dönmenin koşullu özelliğidir.\"]",
+  "guidance": {
+   "knowledge": [
+    "Bir C merkezi çevresinde θ derece dönme, her noktayı C etrafında θ kadar çevirir; 360° tam turdur."
+   ],
+   "strategy": "Tam turun her noktayı başladığı yere getirdiğini kullan.",
+   "steps": [
+    "360° dönme her yarıçapı tam bir tur çevirir.",
+    "Her P noktası yine P'ye gelir.",
+    "Bu dönüşüm özdeşliktir: bütün noktalar sabittir."
+   ],
+   "optionReasons": [
+    "Doğru: tam turda her nokta ilk konumuna döner.",
+    "Yalnız merkezin sabit kalması, tam tur olmayan dönmelerin özelliğidir.",
+    "Hiç sabit noktası olmamak sıfırdan farklı ötelemenin özelliğidir.",
+    "Dönme noktaları merkeze toplamaz; uzaklık korunur.",
+    "Dönme uzaklıkları değiştirmez."
+   ],
+   "commonError": "360°'yi sıradan bir dönme gibi düşünüp yalnız merkezi sabit saymak.",
+   "check": "cos 360° = 1, sin 360° = 0: kural P′ = P verir."
+  }
+ },
+ {
+  "id": "f021-donusum-oteleme-donme-9",
+  "identity": "[\"f021-donusum-oteleme-donme-9\",\"A(−1; 1), B(2; 5) aynı merkez çevresinde 37° döndürülüp ikisi de aynı vektörle öteleniyor. |A′B′| kaç birimdir?\",\"\",[\"√17\",\"25\",\"Merkez bilinmeden bulunamaz.\",\"5\",\"7\"],3,\"|AB|=√((2+1)²+(5−1)²)=√25=5. Dönme ve ortak öteleme bu uzunluğu değiştirmez; merkezi bilmek son koordinatlar için gerekir, korunmuş uzaklık için gerekmez.\"]",
+  "guidance": {
+   "knowledge": [
+    "Dönme ve öteleme izometridir: iki nokta arasındaki uzaklığı değiştirmez.",
+    "İki nokta arası uzaklık √((x₂ − x₁)² + (y₂ − y₁)²)."
+   ],
+   "strategy": "Dönüşümleri hesaplamadan, ilk uzaklığı bul; izometri olduğu için sonuç aynıdır.",
+   "steps": [
+    "Δx = 2 − (−1) = 3, Δy = 5 − 1 = 4.",
+    "|AB| = √(9 + 16) = 5.",
+    "|A′B′| = |AB| = 5."
+   ],
+   "optionReasons": [
+    "Δx'i 2 − 1 = 1 alır; eksi işaretini kaçırır.",
+    "Karekök alınmamış; 25 uzaklığın karesidir.",
+    "Uzaklık korunduğu için merkez gerekmez.",
+    "Doğru: izometri uzaklığı korur, 5.",
+    "Δx ile Δy toplanmış; uzaklık karekökle bulunur."
+   ],
+   "commonError": "Merkez verilmediği için hesap yapılamaz sanmak.",
+   "check": "3–4–5 dik üçgeni: kenarlar 3 ve 4 iken hipotenüs 5."
+  }
+ },
+ {
+  "id": "f021-donusum-oteleme-donme-10",
+  "identity": "[\"f021-donusum-oteleme-donme-10\",\"Bir şekil önce C çevresinde pozitif 90°, ardından aynı C çevresinde pozitif 270° döndürülüyor. Sonuç?\",\"\",[\"Şeklin alanı sıfırlanır.\",\"Bütün noktalar ilk konumuna döner.\",\"Yalnız C ilk konumuna döner.\",\"180° dönme oluşur.\",\"(1; 1) ötelemesi oluşur.\"],1,\"90°+270°=360°; aynı merkezde tam tur özdeşliktir. İki dönmede de yarıçap korunur ve sonuç her P için P olur. Merkezlerin aynı olduğu kökte özellikle verilmiştir.\"]",
+  "guidance": {
+   "knowledge": [
+    "Aynı merkezli iki dönme art arda yapılınca açıları toplanır.",
+    "360° dönme her noktayı yerinde bırakır."
+   ],
+   "strategy": "Açıları topla ve tam turla karşılaştır.",
+   "steps": [
+    "90° + 270° = 360°.",
+    "Aynı merkezde 360° dönme özdeşliktir.",
+    "Bütün noktalar ilk konumuna döner."
+   ],
+   "optionReasons": [
+    "Dönme alanı korur; sıfırlamaz.",
+    "Doğru: toplam 360°, her nokta yerine döner.",
+    "Tam turda yalnız merkez değil her nokta sabittir.",
+    "Açılar çıkarılmış (270 − 90); aynı yönlü dönmeler toplanır.",
+    "Aynı merkezli dönmelerin bileşkesi dönmedir, öteleme değil."
+   ],
+   "commonError": "Aynı yöndeki dönme açılarını çıkarmak.",
+   "check": "Herhangi bir nokta, örneğin C'den 1 birim uzaktaki nokta, 360° sonra aynı yerde."
+  }
+ },
+ {
+  "id": "f021-donusum-yansima-simetri-1",
+  "identity": "[\"f021-donusum-yansima-simetri-1\",\"P(−2; 5)'in y=x doğrusuna göre görüntüsü hangisidir?\",\"\",[\"(2; −5)\",\"(−2; −5)\",\"(2; 5)\",\"(5; −2)\",\"(−5; 2)\"],3,\"P′=(y; x)=(5; −2). Orta nokta (3/2; 3/2) ayna üzerindedir; PP′ yönü (7; −7), aynanın yönüne diktir. İki koşul birlikte sağlanır.\"]",
+  "guidance": {
+   "knowledge": [
+    "Yansıma (ayna simetrisi): nokta ile görüntüsünün orta noktası aynadadır ve ikisini birleştiren doğru aynaya diktir.",
+    "y = x doğrusuna göre yansımada koordinatlar yer değiştirir: (x; y) → (y; x)."
+   ],
+   "strategy": "Kuralı uygula; orta nokta ve diklik koşuluyla denetle.",
+   "steps": [
+    "x = −2, y = 5.",
+    "Yer değiştir: (5; −2).",
+    "Orta nokta (3/2; 3/2) y = x üzerinde."
+   ],
+   "optionReasons": [
+    "Orijine göre simetri (−x; −y) alınmış.",
+    "x eksenine göre yansıma: yalnız y'nin işareti değişmiş.",
+    "y eksenine göre yansıma: yalnız x'in işareti değişmiş.",
+    "Doğru: (y; x) = (5; −2).",
+    "y = −x doğrusuna göre yansıma (−y; −x) alınmış."
+   ],
+   "commonError": "Eksenlere göre yansıma kurallarını y = x aynasıyla karıştırmak.",
+   "check": "PP′ yönü (7; −7), y = x'in yönü (1; 1) ile dik: 7 − 7 = 0."
+  }
+ },
+ {
+  "id": "f021-donusum-yansima-simetri-2",
+  "identity": "[\"f021-donusum-yansima-simetri-2\",\"P(4; 3)'ün C(1; −2) noktasına göre simetriği nedir?\",\"\",[\"(6; −1)\",\"(−2; −7)\",\"(−4; −3)\",\"(2; 7)\",\"(−3; 4)\"],1,\"P′=2C−P=(2−4; −4−3)=(−2; −7). Ortası ((4−2)/2; (3−7)/2)=(1; −2) olur ve C'yi verir. Doğru aynası kuralıyla karıştırılmaz.\"]",
+  "guidance": {
+   "knowledge": [
+    "Bir C noktasına göre simetri: C, P ile P′'nin orta noktasıdır; P′ = 2C − P."
+   ],
+   "strategy": "Orta nokta formülünden P′'yi çek.",
+   "steps": [
+    "2C = (2; −4).",
+    "P′ = (2 − 4; −4 − 3).",
+    "P′ = (−2; −7)."
+   ],
+   "optionReasons": [
+    "P + 2C toplanmış.",
+    "Doğru: 2C − P = (−2; −7).",
+    "Orijine göre simetri alınmış; merkez C kullanılmamış.",
+    "P − 2C hesaplanmış; sıra ters.",
+    "Orijin çevresinde 90° dönme yapılmış."
+   ],
+   "commonError": "Nokta simetrisini orijine göre almak.",
+   "check": "(4; 3) ile (−2; −7)'nin ortası (1; −2) = C."
+  }
+ },
+ {
+  "id": "f021-donusum-yansima-simetri-3",
+  "identity": "[\"f021-donusum-yansima-simetri-3\",\"P(3; 4)'ün 3x+4y−5=0 doğrusuna göre yansıması hangisidir?\",\"\",[\"(3/5; 4/5)\",\"(−3; −4)\",\"(9/5; 12/5)\",\"(3; −4)\",\"(−9/5; −12/5)\"],4,\"Pay 20, katsayı 4/5 ve H=(3/5; 4/5). Görüntü 2H−(3; 4)=(−9/5; −12/5) olur. H yalnız ayaktır, görüntü değildir; karşı tarafın eş uzaklık parçası da eklenmelidir.\"]",
+  "guidance": {
+   "knowledge": [
+    "Yansıma (ayna simetrisi): nokta ile görüntüsünün orta noktası aynadadır ve ikisini birleştiren doğru aynaya diktir.",
+    "H, P'den aynaya inen dikmenin ayağıdır; görüntü P′ = 2H − P."
+   ],
+   "strategy": "Önce dikme ayağı H'yi bul, sonra H'yi orta nokta kabul et.",
+   "steps": [
+    "Pay: 3·3 + 4·4 − 5 = 20; 20/25 = 4/5.",
+    "H = (3; 4) − (4/5)(3; 4) = (3/5; 4/5).",
+    "P′ = 2H − P = (6/5 − 3; 8/5 − 4) = (−9/5; −12/5)."
+   ],
+   "optionReasons": [
+    "Bu H'dir, yani yalnız dikme ayağı; görüntü değil.",
+    "Orijine göre simetri alınmış.",
+    "Ayağa kadar olan yolun yarısında durulmuş.",
+    "x eksenine göre yansıma alınmış.",
+    "Doğru: 2H − P = (−9/5; −12/5)."
+   ],
+   "commonError": "Dikme ayağını görüntü sanmak.",
+   "check": "P ile P′'nin ortası (3/5; 4/5) aynada: 9/5 + 16/5 − 5 = 0."
+  }
+ },
+ {
+  "id": "f021-donusum-yansima-simetri-4",
+  "identity": "[\"f021-donusum-yansima-simetri-4\",\"P(−2; 1) bir doğruya göre yansıtılınca P′(4; −3) oluyor. Ayna hangisidir?\",\"\",[\"x−y−2=0\",\"x+y=0\",\"3x−2y−5=0\",\"3x−2y+5=0\",\"2x+3y+1=0\"],2,\"6(x−1)−4(y+1)=0, sadeleştirilince 3x−2y−5=0. Bu doğru H'den geçer ve PP′'ye diktir. İki nokta farklı olduğundan orta dikme tektir.\"]",
+  "guidance": {
+   "knowledge": [
+    "Yansıma (ayna simetrisi): nokta ile görüntüsünün orta noktası aynadadır ve ikisini birleştiren doğru aynaya diktir.",
+    "Bu yüzden ayna, PP′ parçasının orta dikmesidir."
+   ],
+   "strategy": "Orta nokta H'yi ve normal yönü PP′'yi bul, nokta–normal denklemini yaz.",
+   "steps": [
+    "H = ((−2 + 4)/2; (1 − 3)/2) = (1; −1).",
+    "PP′ = (6; −4), sadeleşince normal (3; −2).",
+    "3(x − 1) − 2(y + 1) = 0 → 3x − 2y − 5 = 0."
+   ],
+   "optionReasons": [
+    "H'den geçer ama normali (1; −1), PP′'ye paralel değil.",
+    "H'den geçer ama PP′'ye dik değil.",
+    "Doğru: H'den geçer ve normali PP′ ile aynı yönde.",
+    "Normal doğru ama sabit işaretli; H'den geçmez (3 + 2 + 5 ≠ 0).",
+    "Bu, P ile P′'den geçen doğrudur; ayna değil."
+   ],
+   "commonError": "Aynayı P ile P′'yi birleştiren doğru sanmak.",
+   "check": "H(1; −1): 3 + 2 − 5 = 0 ve P, P′ aynaya eşit uzaklıkta."
+  }
+ },
+ {
+  "id": "f021-donusum-yansima-simetri-5",
+  "identity": "[\"f021-donusum-yansima-simetri-5\",\"d: y=2 doğrusunun x eksenine göre yansıması hangisidir?\",\"\",[\"y=−2\",\"x=2\",\"x=−2\",\"y=2\",\"y=x−2\"],0,\"Apsis serbest kalır, ordinat −2 olur. Bu nedenle görüntü y=−2 yatayıdır. Doğrunun bir tek noktasını yansıtmak yerine bütün noktalarının sağladığı ortak denklem bulunur.\"]",
+  "guidance": {
+   "knowledge": [
+    "x eksenine göre yansıma (x; y) → (x; −y): apsis aynı, ordinat ters işaretli."
+   ],
+   "strategy": "Doğrunun genel noktasını yansıt; ortak denklemi oku.",
+   "steps": [
+    "y = 2 üzerindeki nokta (x; 2).",
+    "Görüntüsü (x; −2).",
+    "Görüntü doğrusu y = −2."
+   ],
+   "optionReasons": [
+    "Doğru: her (x; 2) noktası (x; −2) olur.",
+    "Yatay doğru düşey olmaz; yansıma yönü korur.",
+    "Düşey doğru; ayrıca işaret ile eksen karışmış.",
+    "y = 2 kendine gitmez; x ekseni üzerinde değil.",
+    "Eğim eklenmiş; yatay doğrunun görüntüsü yataydır."
+   ],
+   "commonError": "Yalnız bir noktayı yansıtıp doğruyu yanlış genellemek.",
+   "check": "(0; 2) → (0; −2) ve (5; 2) → (5; −2): ikisi de y = −2'de."
+  }
+ },
+ {
+  "id": "f021-donusum-yansima-simetri-6",
+  "identity": "[\"f021-donusum-yansima-simetri-6\",\"P(1; 3) önce x=0, sonra x=2 aynasına göre yansıtılıyor. Son konum?\",\"\",[\"(3; 3)\",\"(−1; 3)\",\"(1; −3)\",\"(5; 3)\",\"(−3; 3)\"],3,\"İkinci apsis 4−(−1)=5, ordinat 3'tür. Sonuç (5; 3), başlangıcın 4 birim sağındadır. Ters sıra (−3; 3) verir, kökteki sırayla aynı değildir.\"]",
+  "guidance": {
+   "knowledge": [
+    "x = h düşey aynasına göre yansıma: x′ = 2h − x, y değişmez."
+   ],
+   "strategy": "İki yansımayı sırayla uygula.",
+   "steps": [
+    "x = 0 aynası: (1; 3) → (−1; 3).",
+    "x = 2 aynası: x′ = 4 − (−1) = 5.",
+    "Son konum (5; 3)."
+   ],
+   "optionReasons": [
+    "İlk yansıma atlanmış; yalnız x = 2 aynası uygulanmış.",
+    "İkinci yansıma unutulmuş.",
+    "x eksenine göre yansıma yapılmış.",
+    "Doğru: önce (−1; 3), sonra (5; 3).",
+    "Sıra ters: önce x = 2, sonra x = 0."
+   ],
+   "commonError": "İki aynanın sırasını değiştirmek.",
+   "check": "İki paralel aynaya art arda yansıma, aralarındaki uzaklığın iki katı (2·2 = 4) ötelemedir: 1 + 4 = 5."
+  }
+ },
+ {
+  "id": "f021-donusum-yansima-simetri-7",
+  "identity": "[\"f021-donusum-yansima-simetri-7\",\"P(2; −1), x=2 doğrusuna göre yansıtılıyor. Görüntü?\",\"\",[\"(4; −1)\",\"(2; −1)\",\"(−2; −1)\",\"(2; 1)\",\"(−2; 1)\"],1,\"P'nin apsisi 2 olduğundan P aynanın üzerindedir. x′=4−2=2 ve y′=−1; nokta sabittir. Aynaya uzaklık 0 olduğu için görüntü başka tarafa sıçramaz.\"]",
+  "guidance": {
+   "knowledge": [
+    "x = h aynasına göre yansıma x′ = 2h − x; aynadaki nokta yerinde kalır."
+   ],
+   "strategy": "Önce noktanın ayna üzerinde olup olmadığını kontrol et.",
+   "steps": [
+    "P'nin apsisi 2, ayna x = 2.",
+    "x′ = 4 − 2 = 2, y değişmez.",
+    "P′ = (2; −1) = P."
+   ],
+   "optionReasons": [
+    "Nokta aynaya göre değil 2 birim sağa kaydırılmış.",
+    "Doğru: P aynada olduğu için sabittir.",
+    "y eksenine göre yansıma alınmış.",
+    "x eksenine göre yansıma alınmış.",
+    "Orijine göre simetri alınmış."
+   ],
+   "commonError": "Ayna üzerindeki noktayı da karşı tarafa atmak.",
+   "check": "Aynaya uzaklık 0; görüntünün uzaklığı da 0."
+  }
+ },
+ {
+  "id": "f021-donusum-yansima-simetri-8",
+  "identity": "[\"f021-donusum-yansima-simetri-8\",\"Bir P noktasının bilinmeyen bir doğruya göre görüntüsü yine P. Yalnız bu veriden ne söylenebilir?\",\"\",[\"Ayna kesin x eksenidir.\",\"Ayna kesin y eksenidir.\",\"Ayna mutlaka P'den geçmez.\",\"Her doğru, P üzerinde olsun olmasın, aynı sonucu verir.\",\"Ayna tek belirlenmez; P'den geçen farklı doğrular mümkündür.\"],4,\"Bir doğru yansımasının sabit noktaları ayna üzerindedir. P'den geçen her doğru P'yi sabit bırakır; bu nedenle tek bir doğru seçilemez. P'den geçmeyen ayna ise P'yi farklı bir noktaya götürür.\"]",
+  "guidance": {
+   "knowledge": [
+    "Bir doğruya göre yansımada sabit kalan noktalar tam olarak ayna üzerindeki noktalardır."
+   ],
+   "strategy": "P sabit kaldığına göre P aynadadır; P'den geçen doğruların sayısını düşün.",
+   "steps": [
+    "Görüntü P ise P ayna üzerindedir.",
+    "P'den sonsuz farklı doğru geçer.",
+    "Bu veriyle ayna tek belirlenemez."
+   ],
+   "optionReasons": [
+    "Ayna x ekseni olabilir ama zorunlu değil.",
+    "Ayna y ekseni olabilir ama zorunlu değil.",
+    "Tersine, ayna P'den mutlaka geçer.",
+    "P'den geçmeyen ayna P'yi başka noktaya taşır.",
+    "Doğru: P'den geçen her doğru bu koşulu sağlar."
+   ],
+   "commonError": "Tek bir örnek ayna bulup onu kesin sanmak.",
+   "check": "P'den geçen iki farklı doğru dene: ikisinde de P sabit."
+  }
+ },
+ {
+  "id": "f021-donusum-yansima-simetri-9",
+  "identity": "[\"f021-donusum-yansima-simetri-9\",\"Alanı 6 birim kare olan bir üçgen tek bir doğruya göre yansıtılıyor. Alan büyüklüğü ve köşelerin dolaşım yönü için doğru yorum?\",\"\",[\"Alan 0 olur; bütün köşeler aynadadır.\",\"Alan 6 kalır; her durumda dolaşım yönü de aynı kalır.\",\"Alan 6 kalır; dolaşım yönü ters döner.\",\"Alan −6 olur; büyüklük negatiftir.\",\"Alan 12 olur; yön aynı kalır.\"],2,\"Doğru yansıması eşlik dönüşümüdür; kenar ve alan büyüklükleri korunur. İşaretli alanın işareti ters döndüğü için köşe dolaşım yönü değişir. Pozitif alan büyüklüğü yine 6'dır.\"]",
+  "guidance": {
+   "knowledge": [
+    "Yansıma eşlik dönüşümüdür: kenar uzunlukları ve alan korunur.",
+    "Köşeleri saat yönünde dolaşan bir üçgenin görüntüsü saatin tersine dolaşır (yön tersine döner)."
+   ],
+   "strategy": "Alan büyüklüğü ile köşelerin dolaşım yönünü ayrı ayrı değerlendir.",
+   "steps": [
+    "Uzunluklar korunur, alan 6 kalır.",
+    "Ayna görüntüsü sağı sola çevirir.",
+    "Köşe dolaşım yönü ters döner."
+   ],
+   "optionReasons": [
+    "Alan yalnız bütün köşeler aynı doğru üzerindeyse 0 olur; burada üçgen var.",
+    "Alan korunur ama yön ters döner.",
+    "Doğru: alan 6, yön ters.",
+    "Alanın büyüklüğü negatif olmaz; işaretli alan ayrı kavramdır.",
+    "Yansıma uzunlukları büyütmez."
+   ],
+   "commonError": "Yön değişimini alan büyüklüğünün işaretiyle karıştırmak.",
+   "check": "Elinin sağını aynada gör: boyut aynı, sağ sol olur."
+  }
+ },
+ {
+  "id": "f021-donusum-yansima-simetri-10",
+  "identity": "[\"f021-donusum-yansima-simetri-10\",\"Bir noktayı 0x+0y+1=0 ifadesine göre doğru aynasında yansıtmak isteniyor. Doğru yaklaşım?\",\"\",[\"Bu ifade ayna doğrusu tanımlamaz; yansıma hesaplanamaz.\",\"Görüntü her zaman orijindir.\",\"Görüntü her zaman noktanın kendisidir.\",\"Eğim 0 alınarak x ekseni kullanılır.\",\"Normal (0; 0) ile bölüp sonsuz görüntü seçilir.\"],0,\"0x+0y+1=0 hiçbir noktada sağlanmaz; bir doğru değildir. Normalin normu da 0'dır. Görüntüye rastgele bir koordinat atamak yerine ayna verisinin geçersiz olduğu belirtilir.\"]",
+  "guidance": {
+   "knowledge": [
+    "ax + by + c = 0 bir doğru olsun diye a ile b aynı anda 0 olamaz."
+   ],
+   "strategy": "Önce ayna verisinin bir doğru olup olmadığını denetle.",
+   "steps": [
+    "a = 0 ve b = 0.",
+    "0x + 0y + 1 = 0, yani 1 = 0: hiçbir nokta sağlamaz.",
+    "Ayna yok; yansıma tanımsız."
+   ],
+   "optionReasons": [
+    "Doğru: ifade doğru değil, yansıma hesaplanamaz.",
+    "Geçersiz veriye rastgele sonuç atanmış.",
+    "Sabit nokta yalnız ayna üzerindeki noktalar için geçerlidir; burada ayna yok.",
+    "Eğim 0 seçmek veriyi uydurmaktır.",
+    "Sıfıra bölme tanımsızdır; sonsuz görüntü yoktur."
+   ],
+   "commonError": "Geçersiz denklemi bilinen bir doğruymuş gibi kullanmak.",
+   "check": "Herhangi bir (x; y) için sol taraf 1'dir; 0 olmaz."
+  }
+ },
+ {
+  "id": "f021-cemberin-analitigi-1",
+  "identity": "[\"f021-cemberin-analitigi-1\",\"x²+y²−6x+4y−12=0 çemberinin merkezi ve yarıçapı hangisidir?\",\"\",[\"M(6; −4), r=5\",\"M(3; 2), r=√12\",\"M(3; −2), r=5\",\"M(−3; 2), r=5\",\"M(3; −2), r=25\"],2,\"(x−3)²+(y+2)²=12+9+4=25. Merkez (3; −2), yarıçap 5'tir. Katsayıların yarısını ters işaretle okumak, aynı tam kare işleminin kısa sonucudur.\"]",
+  "guidance": {
+   "knowledge": [
+    "Çember: merkeze uzaklığı r olan noktalar. Denklemi (x − a)² + (y − b)² = r²; M(a; b) merkez, r > 0 yarıçap.",
+    "Tam kare: x² − 6x = (x − 3)² − 9; y² + 4y = (y + 2)² − 4."
+   ],
+   "strategy": "x ve y terimlerini tam kareye tamamla, sabitleri sağa topla.",
+   "steps": [
+    "(x − 3)² − 9 + (y + 2)² − 4 − 12 = 0.",
+    "(x − 3)² + (y + 2)² = 25.",
+    "M(3; −2), r = 5."
+   ],
+   "optionReasons": [
+    "Katsayılar yarıya bölünmeden okunmuş.",
+    "y işareti hatalı ve eklenen 9 ile 4 sağa geçirilmemiş.",
+    "Doğru: M(3; −2), r = 5.",
+    "Merkez işaretleri ters alınmış.",
+    "r² = 25 ile r karıştırılmış."
+   ],
+   "commonError": "Merkezi okurken işaretleri ters çevirmeyi unutmak.",
+   "check": "(8; −2) noktası: 64 + 4 − 48 − 8 − 12 = 0, merkezden 5 uzakta."
+  }
+ },
+ {
+  "id": "f021-cemberin-analitigi-2",
+  "identity": "[\"f021-cemberin-analitigi-2\",\"Merkezi M(−2; 4), yarıçapı 3 olan çemberin denklemi hangisidir?\",\"\",[\"(x+2)²+(y−4)²=9\",\"(x−2)²+(y+4)²=9\",\"(x+2)²+(y−4)²=3\",\"(x−2)²+(y−4)²=9\",\"x²+y²=9\"],0,\"Uzaklık koşulu (x−(−2))²+(y−4)²=3² verir. Parantezler (x+2),(y−4), sağ taraf 9 olur. Merkez orijinde olmadığı için x²+y²=9 aynı çember değildir.\"]",
+  "guidance": {
+   "knowledge": [
+    "Çember: merkeze uzaklığı r olan noktalar. Denklemi (x − a)² + (y − b)² = r²; M(a; b) merkez, r > 0 yarıçap."
+   ],
+   "strategy": "Merkez koordinatlarını parantezlere ters işaretle, yarıçapın karesini sağa yaz.",
+   "steps": [
+    "a = −2, b = 4, r = 3.",
+    "(x − (−2))² + (y − 4)² = 3².",
+    "(x + 2)² + (y − 4)² = 9."
+   ],
+   "optionReasons": [
+    "Doğru.",
+    "Merkezin işaretleri ters.",
+    "Sağ tarafa r yazılmış; r² olmalı.",
+    "x parantezinin işareti hatalı.",
+    "Merkez orijin sanılmış."
+   ],
+   "commonError": "Sağ tarafa r² yerine r yazmak.",
+   "check": "(1; 4) merkezden 3 birim sağda: 9 + 0 = 9."
+  }
+ },
+ {
+  "id": "f021-cemberin-analitigi-3",
+  "identity": "[\"f021-cemberin-analitigi-3\",\"(x−2)²+(y−1)²=25 çemberi x=5 doğrusunu hangi iki noktada keser?\",\"\",[\"(2; 6) ve (2; −4)\",\"(5; 1) ve (5; −1)\",\"Ortak nokta yoktur.\",\"(5; 5) ve (5; −3)\",\"(5; 4) ve (5; −4)\"],3,\"(5−2)²=9, dolayısıyla (y−1)²=25−9=16. y−1=±4 ve y=5 veya −3. İki farklı çözüm de x=5'i ve çemberi sağlar; kiriş ortası (5; 1)'dir.\"]",
+  "guidance": {
+   "knowledge": [
+    "Çember: merkeze uzaklığı r olan noktalar. Denklemi (x − a)² + (y − b)² = r²; M(a; b) merkez, r > 0 yarıçap.",
+    "Doğru ile çemberin ortak noktaları, iki denklemi birlikte sağlayan noktalardır."
+   ],
+   "strategy": "x = 5'i çember denklemine koy, y için çöz.",
+   "steps": [
+    "(5 − 2)² = 9.",
+    "(y − 1)² = 25 − 9 = 16.",
+    "y − 1 = ±4 → y = 5 veya y = −3."
+   ],
+   "optionReasons": [
+    "x = 5 yerine merkez apsisi 2 kullanılmış.",
+    "Uç noktalar yanlış; kiriş ortası (5; 1)'dir.",
+    "Merkezin doğruya uzaklığı 3 < 5 olduğu için kesişirler.",
+    "Doğru: (5; 5) ve (5; −3).",
+    "Merkez kayması unutulmuş: y = ±4 alınmış."
+   ],
+   "commonError": "y − 1 = ±4'ten y = ±4 yazmak.",
+   "check": "(5; 5): 9 + 16 = 25; (5; −3): 9 + 16 = 25."
+  }
+ },
+ {
+  "id": "f021-cemberin-analitigi-4",
+  "identity": "[\"f021-cemberin-analitigi-4\",\"x²+y²+4x−6y+13=0 denkleminin gerçek çözüm kümesi nedir?\",\"\",[\"x+y=1 doğrusu.\",\"Yalnız (−2; 3) noktası.\",\"Merkezi (−2; 3), yarıçapı 13 olan çember.\",\"Boş küme.\",\"Bütün düzlem.\"],1,\"(x+2)²+(y−3)²=4+9−13=0. İki kare ancak x=−2,y=3 için birlikte 0 olur. Bu tek nokta, pozitif yarıçaplı sonsuz noktalı çember değildir.\"]",
+  "guidance": {
+   "knowledge": [
+    "Çember: merkeze uzaklığı r olan noktalar. Denklemi (x − a)² + (y − b)² = r²; M(a; b) merkez, r > 0 yarıçap.",
+    "Karelerin toplamı 0 ise her kare ayrı ayrı 0'dır."
+   ],
+   "strategy": "Tam kareye tamamla, sağ tarafın işaretine bak: pozitif çember, 0 tek nokta, negatif boş küme.",
+   "steps": [
+    "(x + 2)² + (y − 3)² = 4 + 9 − 13.",
+    "Sağ taraf 0.",
+    "Tek çözüm x = −2, y = 3."
+   ],
+   "optionReasons": [
+    "Denklem doğrusal değildir; kareli terimler var.",
+    "Doğru: yalnız (−2; 3).",
+    "Sabit terim yarıçap sanılmış; sağ taraf 0.",
+    "Sağ taraf 0 olduğunda bir çözüm vardır.",
+    "Yalnız tek nokta sağlar."
+   ],
+   "commonError": "Sağ taraf 0 iken de çember var sanmak.",
+   "check": "(−2; 3): 4 + 9 − 8 − 18 + 13 = 0."
+  }
+ },
+ {
+  "id": "f021-cemberin-analitigi-5",
+  "identity": "[\"f021-cemberin-analitigi-5\",\"x²+y²+4x−6y+14=0 gerçek düzlemde ne belirtir?\",\"\",[\"Yalnız (−2; 3).\",\"Yarıçapı 1 olan çember.\",\"Yarıçapı −1 olan çember.\",\"x=−2 doğrusu.\",\"Boş küme.\"],4,\"(x+2)²+(y−3)²=4+9−14=−1 çıkar. Gerçek karelerin toplamı negatif olamaz; çözüm yoktur. Negatif sağ taraf, negatif yarıçaplı çember diye yorumlanmaz.\"]",
+  "guidance": {
+   "knowledge": [
+    "Çember: merkeze uzaklığı r olan noktalar. Denklemi (x − a)² + (y − b)² = r²; M(a; b) merkez, r > 0 yarıçap.",
+    "Gerçek sayıların kareleri negatif olamaz; toplamları da negatif olamaz."
+   ],
+   "strategy": "Tam kareye tamamla ve sağ tarafın işaretini oku.",
+   "steps": [
+    "(x + 2)² + (y − 3)² = 4 + 9 − 14.",
+    "Sağ taraf −1.",
+    "Gerçek çözüm yok: boş küme."
+   ],
+   "optionReasons": [
+    "Bu sağ taraf 0 olsaydı geçerli olurdu.",
+    "−1'in işareti yok sayılmış.",
+    "Negatif yarıçap tanımsızdır.",
+    "Denklem doğru belirtmez.",
+    "Doğru: kareler toplamı −1 olamaz."
+   ],
+   "commonError": "Negatif sağ tarafı yarıçap gibi yorumlamak.",
+   "check": "(−2; 3) en küçük değeri verir: 0 + 0 = 0 > −1, yine sağlanmaz."
+  }
+ },
+ {
+  "id": "f021-cemberin-analitigi-6",
+  "identity": "[\"f021-cemberin-analitigi-6\",\"İki eksene teğet bir çemberin merkezi IV. bölgede ve 2x+y−3=0 üzerinde. Yarıçap kaç birimdir?\",\"\",[\"−3\",\"6\",\"3\",\"1\",\"2\"],2,\"Teğetlik |a|=|b|=r; IV. bölge (r; −r) verir. 2r−r−3=0'dan r=3. Negatif −3 bir yarıçap olamaz; bölge işareti koordinatlarda kullanılır.\"]",
+  "guidance": {
+   "knowledge": [
+    "Çember: merkeze uzaklığı r olan noktalar. Denklemi (x − a)² + (y − b)² = r²; M(a; b) merkez, r > 0 yarıçap.",
+    "İki eksene teğet çemberde merkezin iki eksene uzaklığı r'dir: |a| = |b| = r.",
+    "IV. bölgede x > 0, y < 0."
+   ],
+   "strategy": "Merkezi (r; −r) yaz ve doğru denkleminde yerine koy.",
+   "steps": [
+    "Merkez (r; −r), r > 0.",
+    "2r + (−r) − 3 = 0.",
+    "r = 3."
+   ],
+   "optionReasons": [
+    "Yarıçap negatif olamaz.",
+    "(6; −6) doğruyu sağlamaz: 12 − 6 − 3 ≠ 0.",
+    "Doğru: (3; −3) için 6 − 3 − 3 = 0.",
+    "Merkez I. bölgede (r; r) alınmış; bölge koşulu unutulmuş.",
+    "(2; −2) doğruyu sağlamaz: 4 − 2 − 3 ≠ 0."
+   ],
+   "commonError": "Bölge işaretini merkez koordinatına yansıtmamak.",
+   "check": "(3; −3) eksenlere 3 uzaklıkta ve 2·3 − 3 − 3 = 0."
+  }
+ },
+ {
+  "id": "f021-cemberin-analitigi-7",
+  "identity": "[\"f021-cemberin-analitigi-7\",\"Merkezleri (0; 0) ve (6; 0), yarıçapları ayrı ayrı 5 olan iki çemberin ortak noktaları hangisidir?\",\"\",[\"(3; 4) ve (3; −4)\",\"(0; 5) ve (6; 5)\",\"Yalnız (3; 0)\",\"Ortak noktaları yoktur.\",\"Bütün noktaları ortaktır.\"],0,\"x²+y²=25 ile (x−6)²+y²=25 çıkarılınca −12x+36=0 ve x=3. y²=25−9=16, y=±4. Merkez uzaklığı 6, yarıçapların toplamı 10'dan küçük olduğu için iki kesimle uyumludur.\"]",
+  "guidance": {
+   "knowledge": [
+    "Çember: merkeze uzaklığı r olan noktalar. Denklemi (x − a)² + (y − b)² = r²; M(a; b) merkez, r > 0 yarıçap.",
+    "İki çember denklemi çıkarılınca kareli terimler gider; ortak kirişin doğrusu kalır."
+   ],
+   "strategy": "Denklemleri çıkar, x'i bul, bir çembere geri koy.",
+   "steps": [
+    "x² + y² − (x − 6)² − y² = 0 → 12x − 36 = 0.",
+    "x = 3.",
+    "y² = 25 − 9 = 16 → y = ±4."
+   ],
+   "optionReasons": [
+    "Doğru: (3; 4) ve (3; −4).",
+    "Her çemberin en üst noktası alınmış; diğer çemberi sağlamıyor.",
+    "Teğetlik sanılmış; merkez uzaklığı 6 < 10.",
+    "Merkez uzaklığı yarıçap toplamından küçük; kesişirler.",
+    "Merkezler farklı; çemberler çakışmaz."
+   ],
+   "commonError": "Merkezlerin ortasını tek ortak nokta sanmak.",
+   "check": "(3; 4): 9 + 16 = 25 ve (−3)² + 16 = 25."
+  }
+ },
+ {
+  "id": "f021-cemberin-analitigi-8",
+  "identity": "[\"f021-cemberin-analitigi-8\",\"x²+y²=25 çemberi ile 3x+4y−25=0 doğrusunun durumu ve ortak noktası hangisidir?\",\"\",[\"Ortak nokta yoktur.\",\"Çakışıktır; sonsuz nokta.\",\"Teğettir; (4; 3).\",\"Teğettir; (3; 4).\",\"İki noktada keser; (3; ±4).\"],3,\"O'dan doğruya uzaklık |−25|/√25=5=r. Ayak (3; 4)'tür; 3²+4²=25 ve 9+16−25=0 sağlanır. (4; 3) çemberdedir fakat doğru üzerinde değildir.\"]",
+  "guidance": {
+   "knowledge": [
+    "Çember: merkeze uzaklığı r olan noktalar. Denklemi (x − a)² + (y − b)² = r²; M(a; b) merkez, r > 0 yarıçap.",
+    "Merkezin doğruya uzaklığı d: d < r iki nokta, d = r teğet, d > r kesişmez.",
+    "Noktanın doğruya uzaklığı |ax₀ + by₀ + c| / √(a² + b²)."
+   ],
+   "strategy": "d'yi hesapla, r ile karşılaştır; teğetse değme noktasını bul.",
+   "steps": [
+    "d = |−25| / √(9 + 16) = 5 = r: teğet.",
+    "Değme noktası merkezden normal (3; 4) yönündedir.",
+    "(3; 4) çemberde ve doğruda."
+   ],
+   "optionReasons": [
+    "d = r olduğu için bir ortak nokta var.",
+    "Çember ile doğru çakışamaz.",
+    "(4; 3) çemberde ama doğruda değil: 12 + 12 − 25 ≠ 0.",
+    "Doğru: teğet, (3; 4).",
+    "d = r iken tek nokta vardır."
+   ],
+   "commonError": "Çemberde olan her noktayı değme noktası sanmak.",
+   "check": "(3; 4): 9 + 16 = 25 ve 9 + 16 − 25 = 0."
+  }
+ },
+ {
+  "id": "f021-cemberin-analitigi-9",
+  "identity": "[\"f021-cemberin-analitigi-9\",\"x²+y²=25 çemberine P(3; 4) noktasında çizilen teğet hangisidir?\",\"\",[\"y=4\",\"3x+4y=25\",\"4x+3y=25\",\"3x−4y=25\",\"x+y=7\"],1,\"3(x−3)+4(y−4)=0, yani 3x+4y=25. Doğru P'den geçer ve (3; 4) yarıçapına diktir. Yalnız P'den geçen başka bir doğru teğet olmak zorunda değildir.\"]",
+  "guidance": {
+   "knowledge": [
+    "Çember: merkeze uzaklığı r olan noktalar. Denklemi (x − a)² + (y − b)² = r²; M(a; b) merkez, r > 0 yarıçap.",
+    "Teğet, değme noktasındaki yarıçapa diktir; bu yüzden normali OP'dir."
+   ],
+   "strategy": "Nokta–normal denklemini OP = (3; 4) ile kur.",
+   "steps": [
+    "Normal (3; 4), nokta P(3; 4).",
+    "3(x − 3) + 4(y − 4) = 0.",
+    "3x + 4y = 25."
+   ],
+   "optionReasons": [
+    "P'den geçer ama OP'ye dik değil.",
+    "Doğru: 3x + 4y = 25.",
+    "P'den geçmez: 12 + 12 ≠ 25.",
+    "P'den geçmez: 9 − 16 ≠ 25.",
+    "P'den geçer ama OP'ye dik değil."
+   ],
+   "commonError": "P'den geçen herhangi bir doğruyu teğet saymak.",
+   "check": "Merkez uzaklığı 25/5 = 5 = r."
+  }
+ },
+ {
+  "id": "f021-cemberin-analitigi-10",
+  "identity": "[\"f021-cemberin-analitigi-10\",\"(k−1)x²+2y²+mxy−8=0 denklemi pozitif yarıçaplı bir çember belirtiyor. (k; m) hangisidir?\",\"\",[\"(1; 0)\",\"(2; 0)\",\"(3; 2)\",\"(−1; 0)\",\"(3; 0)\"],4,\"k−1=2 ve m=0 gerekir; k=3. Denklem 2x²+2y²−8=0, yani x²+y²=4 olur; r=2>0 da sağlanır. Katsayı eşitliği tek başına yetmediği için yarıçap koşulu ayrıca kontrol edildi.\"]",
+  "guidance": {
+   "knowledge": [
+    "Çember: merkeze uzaklığı r olan noktalar. Denklemi (x − a)² + (y − b)² = r²; M(a; b) merkez, r > 0 yarıçap.",
+    "Genel ikinci dereceden denklem çember olsun diye x² ve y² katsayıları eşit ve sıfırdan farklı, xy katsayısı 0 olmalı."
+   ],
+   "strategy": "Katsayı koşullarını yaz, sonra yarıçapın pozitif olduğunu kontrol et.",
+   "steps": [
+    "k − 1 = 2 → k = 3; m = 0.",
+    "2x² + 2y² − 8 = 0 → x² + y² = 4.",
+    "r = 2 > 0."
+   ],
+   "optionReasons": [
+    "x² katsayısı 0 olur; çember değil.",
+    "x² katsayısı 1, y²'ninki 2: eşit değil.",
+    "xy terimi kalır.",
+    "x² katsayısı −2: eşit değil.",
+    "Doğru: k = 3, m = 0, r = 2."
+   ],
+   "commonError": "xy teriminin sıfır olması gerektiğini unutmak.",
+   "check": "(2; 0): 2·4 + 0 + 0 − 8 = 0."
+  }
+ },
+ {
+  "id": "f019-math-dogrunun-analitigi-1",
+  "identity": "[\"f019-math-dogrunun-analitigi-1\",\"Dik koordinat düzleminde A(−1; 2) ve B(5; −1) farklı noktalarından geçen doğrunun eğimi kaçtır?\",\"\",[\"1/2\",\"−2\",\"2\",\"Tanımsız\",\"−1/2\"],4,\"Δy=−1−2=−3, Δx=5−(−1)=6. m=−3/6=−1/2. İki farkın yalnız birinde uç sırasını değiştirmek yanlış işaret verir; apsisler farklı olduğundan eğim tanımlıdır.\"]",
+  "guidance": {
+   "knowledge": [
+    "Eğim m = Δy / Δx: dikey değişimin yatay değişime oranı; aynı uç sırasıyla hesaplanır."
+   ],
+   "strategy": "İki farkı aynı sırayla al, böl.",
+   "steps": [
+    "Δy = −1 − 2 = −3.",
+    "Δx = 5 − (−1) = 6.",
+    "m = −3/6 = −1/2."
+   ],
+   "optionReasons": [
+    "İşaret kaybolmuş; bir farkta sıra değişmiş.",
+    "Oran ters: Δx/Δy.",
+    "Hem ters oran hem işaret hatası.",
+    "Apsisler farklı; eğim tanımlı.",
+    "Doğru: −1/2."
+   ],
+   "commonError": "Farkları farklı uç sırasıyla almak.",
+   "check": "A'dan 6 sağa gidince 3 aşağı inilir: B'ye ulaşılır."
+  }
+ },
+ {
+  "id": "f019-math-dogrunun-analitigi-2",
+  "identity": "[\"f019-math-dogrunun-analitigi-2\",\"P(2; −3) noktasından geçen ve eğimi 2 olan doğrunun denklemi hangisidir?\",\"\",[\"x=2\",\"y=−3\",\"2x−y−7=0\",\"2x−y+7=0\",\"x−2y−8=0\"],2,\"y+3=2x−4, buradan 2x−y−7=0 çıkar. P yerine konunca 4+3−7=0; y=2x−7 biçiminde eğim de 2'dir. Yalnız P'den geçmek yetmez, eğim koşulu da gerekir.\"]",
+  "guidance": {
+   "knowledge": [
+    "Noktası ve eğimi bilinen doğru: y − y₁ = m(x − x₁)."
+   ],
+   "strategy": "Nokta–eğim formülünü yaz, genel biçime getir.",
+   "steps": [
+    "y + 3 = 2(x − 2).",
+    "y + 3 = 2x − 4.",
+    "2x − y − 7 = 0."
+   ],
+   "optionReasons": [
+    "Dikey doğru; eğimi tanımsız.",
+    "Yatay doğru; eğimi 0.",
+    "Doğru.",
+    "P'den geçmez: 4 + 3 + 7 ≠ 0.",
+    "P'den geçer ama eğimi 1/2."
+   ],
+   "commonError": "Yalnız noktayı sağlayan doğruyu seçip eğimi kontrol etmemek.",
+   "check": "y = 2x − 7: x = 2 için y = −3 ve eğim 2."
+  }
+ },
+ {
+  "id": "f019-math-dogrunun-analitigi-3",
+  "identity": "[\"f019-math-dogrunun-analitigi-3\",\"Dik koordinat sisteminde ax+by+c=0 eşitliği için hangi ifade doğrudur?\",\"\",[\"b≠0 ise eğim −a/b; a≠0 ve b=0 ise doğru dikeydir.\",\"Eğim her a,b için −b/a'dır.\",\"a=b=0, c=1 bir doğru tanımlar.\",\"a=b=c=0 yalnız orijini tanımlar.\",\"b=0 olan her denklem yatay bir doğrudur.\"],0,\"b≠0 iken y=(−a/b)x−c/b; eğim −a/b'dir. b=0,a≠0 iken x=−c/a dikeyi çıkar. a=b=0,c=1 boş küme; a=b=c=0 tüm düzlemdir. Bunlar tek bir doğru olarak kullanılamaz.\"]",
+  "guidance": {
+   "knowledge": [
+    "Doğru denklemi ax + by + c = 0 biçimindedir; (a; b) normal (dik) vektördür, b ≠ 0 ise eğim m = −a/b."
+   ],
+   "strategy": "b ≠ 0 ve b = 0 durumlarını ayrı incele; a = b = 0'ı da unutma.",
+   "steps": [
+    "b ≠ 0: y = (−a/b)x − c/b, eğim −a/b.",
+    "b = 0, a ≠ 0: x = −c/a dikey doğru.",
+    "a = b = 0: doğru tanımlanmaz."
+   ],
+   "optionReasons": [
+    "Doğru: iki durum ayrı ayrı doğru verilmiş.",
+    "Oran ters: eğim −a/b.",
+    "1 = 0 olur; boş küme.",
+    "0 = 0 her noktada sağlanır; tüm düzlem.",
+    "b = 0 dikey doğrudur."
+   ],
+   "commonError": "b = 0 iken de −a/b ile bölmeye çalışmak.",
+   "check": "2x + 4y − 8 = 0: eğim −1/2; x − 3 = 0: dikey."
+  }
+ },
+ {
+  "id": "f019-math-dogrunun-analitigi-4",
+  "identity": "[\"f019-math-dogrunun-analitigi-4\",\"A(3; −2) noktasından geçen ve y eksenine paralel olan doğrunun denklemi hangisidir?\",\"\",[\"y=3\",\"x=−2\",\"2x+3y=0\",\"x=3\",\"y=−2\"],3,\"Düşey doğrunun bütün noktalarında apsis 3'tür; denklem x=3. Ordinat serbesttir ve eğim tanımsızdır. y=−2, A'dan geçen yatay doğrudur; istenen yönü sağlamaz.\"]",
+  "guidance": {
+   "knowledge": [
+    "y eksenine paralel doğru düşeydir: bütün noktalarının apsisi aynıdır, denklemi x = sabit."
+   ],
+   "strategy": "A'nın apsisini sabit al.",
+   "steps": [
+    "Düşey doğruda x değişmez.",
+    "A'nın apsisi 3.",
+    "x = 3."
+   ],
+   "optionReasons": [
+    "Apsis, y'nin değeri gibi yazılmış.",
+    "Ordinat, x'in değeri gibi yazılmış.",
+    "Orijinden geçen eğik doğru.",
+    "Doğru: x = 3.",
+    "A'dan geçen yatay doğru."
+   ],
+   "commonError": "Paralel eksenin adını denklemdeki değişkenle karıştırmak.",
+   "check": "(3; 0) ve (3; 7) ikisi de x = 3'te ve üst üste dikey."
+  }
+ },
+ {
+  "id": "f019-math-dogrunun-analitigi-5",
+  "identity": "[\"f019-math-dogrunun-analitigi-5\",\"d: 2x+4y−6=0 ve e: x+2y−5=0 denklemleriyle verilen iki doğrunun birbirine göre durumu nedir?\",\"\",[\"İki denklem de hiçbir nokta içermez.\",\"Farklı ve paraleldir.\",\"Çakışıktır.\",\"Tek noktada dik kesişirler.\",\"Tek noktada dik olmayan açıyla kesişirler.\"],1,\"d, x+2y−3=0 olur. e ile aynı normal katsayılarına fakat farklı sabitlere sahiptir. Bu yüzden farklı paralel doğrulardır, ortak noktaları yoktur. Eğimin eşit olması tek başına çakışıklık vermez.\"]",
+  "guidance": {
+   "knowledge": [
+    "Doğru denklemi ax + by + c = 0 biçimindedir; (a; b) normal (dik) vektördür, b ≠ 0 ise eğim m = −a/b.",
+    "Normal katsayıları orantılı ama sabitleri orantısız iki doğru paraleldir; hepsi orantılıysa çakışıktır."
+   ],
+   "strategy": "İlk denklemi sadeleştir, katsayıları karşılaştır.",
+   "steps": [
+    "d: x + 2y − 3 = 0.",
+    "e: x + 2y − 5 = 0.",
+    "Normal aynı, sabit farklı: paralel."
+   ],
+   "optionReasons": [
+    "Her denklem bir doğrudur.",
+    "Doğru: farklı paralel doğrular.",
+    "Sabitler −3 ve −5; çakışık değil.",
+    "Normaller aynı; kesişmezler.",
+    "Eğimler eşit; kesişmezler."
+   ],
+   "commonError": "Eğim eşitliğini çakışıklık sanmak.",
+   "check": "d'nin (3; 0) noktası e'yi sağlamaz: 3 − 5 ≠ 0."
+  }
+ },
+ {
+  "id": "f019-math-dogrunun-analitigi-6",
+  "identity": "[\"f019-math-dogrunun-analitigi-6\",\"d: x+2y−5=0 ve e: 2x−y=0 doğrularının kesim noktası hangisidir?\",\"\",[\"(2; 1)\",\"(0; 5/2)\",\"(5; 0)\",\"Doğrular kesişmez.\",\"(1; 2)\"],4,\"x+2(2x)=5, yani 5x=5 ve x=1. y=2 olur. Nokta her iki denklemi de sağlar: 1+4−5=0, 2−2=0. Sadece birinciyi sağlayan noktalar ortak çözüm sayılmaz.\"]",
+  "guidance": {
+   "knowledge": [
+    "İki doğrunun kesim noktası, iki denklemi birlikte sağlayan noktadır."
+   ],
+   "strategy": "Birinden bir değişkeni çek, ötekine koy.",
+   "steps": [
+    "e'den y = 2x.",
+    "x + 4x = 5 → x = 1.",
+    "y = 2 → (1; 2)."
+   ],
+   "optionReasons": [
+    "Koordinatlar yer değiştirmiş; d'yi sağlamaz.",
+    "Yalnız d'nin y kesişimi; e'yi sağlamaz.",
+    "Yalnız d'nin x kesişimi; e'yi sağlamaz.",
+    "Eğimler farklı (−1/2 ve 2); kesişirler.",
+    "Doğru: (1; 2)."
+   ],
+   "commonError": "Tek denklemi sağlayan noktayı kesim noktası sanmak.",
+   "check": "1 + 4 − 5 = 0 ve 2 − 2 = 0."
+  }
+ },
+ {
+  "id": "f019-math-dogrunun-analitigi-7",
+  "identity": "[\"f019-math-dogrunun-analitigi-7\",\"d: x−4=0 doğrusuna dik ve P(−1; 3) noktasından geçen e doğrusunun denklemi nedir?\",\"\",[\"x=4\",\"3x+y=0\",\"y=3\",\"x=−1\",\"y=−3\"],2,\"Düşey x=4'e dik doğru yataydır. P'nin ordinatı 3 olduğu için e: y=3. d'nin eğimi tanımsız olduğundan burada m₁m₂=−1 biçiminde iki sonlu sayı çarpımı kurmak gerekmez.\"]",
+  "guidance": {
+   "knowledge": [
+    "x = sabit düşey, y = sabit yatay doğrudur; düşeye dik doğru yataydır."
+   ],
+   "strategy": "d'nin yönünü tanı, dik yönü seç, P'den geçir.",
+   "steps": [
+    "d: x = 4 düşey.",
+    "Dik doğru yatay: y = sabit.",
+    "P'nin ordinatı 3: y = 3."
+   ],
+   "optionReasons": [
+    "d'nin kendisi.",
+    "P'den geçer ama yatay değil.",
+    "Doğru: y = 3.",
+    "d'ye paralel, dik değil.",
+    "Ordinat işareti hatalı; P'den geçmez."
+   ],
+   "commonError": "Dikeyin eğimi tanımsızken m₁·m₂ = −1 kurmaya çalışmak.",
+   "check": "y = 3 yatay, x = 4 düşey: 90°; ve (−1; 3) sağlanır."
+  }
+ },
+ {
+  "id": "f019-math-dogrunun-analitigi-8",
+  "identity": "[\"f019-math-dogrunun-analitigi-8\",\"P(1; 3) noktasının d: 3x+4y−5=0 doğrusuna dik uzaklığı kaç birimdir?\",\"\",[\"2\",\"10\",\"5\",\"14\",\"√10\"],0,\"Pay |3×1+4×3−5|=10, payda √25=5. Uzaklık 10/5=2 birimdir. 10 yalnız paydır; aynı doğrunun katsayılarını ölçeklemek payı değiştirse de gerçek uzaklığı değiştirmemelidir.\"]",
+  "guidance": {
+   "knowledge": [
+    "Noktanın doğruya uzaklığı |ax₀ + by₀ + c| / √(a² + b²)."
+   ],
+   "strategy": "Pay ve paydayı ayrı hesapla, böl.",
+   "steps": [
+    "Pay: |3·1 + 4·3 − 5| = 10.",
+    "Payda: √(9 + 16) = 5.",
+    "Uzaklık 10/5 = 2."
+   ],
+   "optionReasons": [
+    "Doğru: 2.",
+    "Yalnız pay; paydaya bölünmemiş.",
+    "Yalnız payda alınmış.",
+    "Pay yanlış toplanmış; formül 10 verir.",
+    "Payın karekökü alınmış; bölme yerine kök yok."
+   ],
+   "commonError": "Paya bölmeyi unutmak.",
+   "check": "Katsayıları 2 ile çarp: 20/10 = 2, sonuç değişmez."
+  }
+ },
+ {
+  "id": "f019-math-dogrunun-analitigi-9",
+  "identity": "[\"f019-math-dogrunun-analitigi-9\",\"d: 3x+4y−5=0 ile e: 6x+8y−30=0 paralel doğruları arasındaki uzaklık kaç birimdir?\",\"\",[\"7\",\"1\",\"0\",\"2\",\"5\"],3,\"e: 3x+4y−15=0 olur. Aynı normal katsayılarıyla uzaklık |−5−(−15)|/√25=10/5=2 birimdir. Ham sabit terimleri farklı ölçeklerde doğrudan çıkarmak yanlış olur.\"]",
+  "guidance": {
+   "knowledge": [
+    "Paralel ax + by + c₁ = 0 ve ax + by + c₂ = 0 arası uzaklık |c₁ − c₂| / √(a² + b²); a, b aynı olmalı."
+   ],
+   "strategy": "Önce katsayıları eşitle, sonra formülü uygula.",
+   "steps": [
+    "e ÷ 2: 3x + 4y − 15 = 0.",
+    "|−5 − (−15)| = 10.",
+    "10/5 = 2."
+   ],
+   "optionReasons": [
+    "Katsayılar eşitlenmeden yapılan hesaptır.",
+    "Katsayılar eşitlenmeden yapılan hesaptır.",
+    "Doğrular farklı; uzaklık 0 değil.",
+    "Doğru: 2.",
+    "Ham sabitlerle |−5 + 30|/5 hesaplanmış."
+   ],
+   "commonError": "Ölçekleri farklı denklemlerin sabitlerini doğrudan çıkarmak.",
+   "check": "d'nin (0; 5/4) noktasının e'ye uzaklığı |0 + 5 − 15|/5 = 2."
+  }
+ },
+ {
+  "id": "f019-math-dogrunun-analitigi-10",
+  "identity": "[\"f019-math-dogrunun-analitigi-10\",\"2x+3y−12=0 doğrusu ile iki koordinat ekseni arasında oluşan kapalı üçgenin alanı kaç birim karedir?\",\"\",[\"18\",\"12\",\"24\",\"6\",\"8\"],1,\"y=0 için x=6, x=0 için y=4. Eksenler birbirine dik olduğundan alan 6×4/2=12 birim karedir. Çarpımı ikiye bölmemek dikdörtgen alanını verir; burada üçgen isteniyor.\"]",
+  "guidance": {
+   "knowledge": [
+    "Doğrunun eksenleri kestiği noktalar x = 0 ve y = 0 koyarak bulunur.",
+    "Dik üçgen alanı dik kenarların çarpımının yarısıdır."
+   ],
+   "strategy": "Eksen kesişimlerini bul, dik üçgen alanını hesapla.",
+   "steps": [
+    "y = 0: x = 6.",
+    "x = 0: y = 4.",
+    "Alan = 6 · 4 / 2 = 12."
+   ],
+   "optionReasons": [
+    "Alan hesabıyla uyuşmaz; doğrusu 6·4/2.",
+    "Doğru: 12.",
+    "İkiye bölünmemiş: dikdörtgen alanı.",
+    "Alan hesabıyla uyuşmaz; doğrusu 6·4/2.",
+    "Alan hesabıyla uyuşmaz; doğrusu 6·4/2."
+   ],
+   "commonError": "Üçgen alanında ikiye bölmeyi unutmak.",
+   "check": "(6; 0) ve (0; 4) doğruyu sağlar: 12 − 12 = 0 ve 12 − 12 = 0."
+  }
+ }
+]
