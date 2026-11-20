@@ -49,6 +49,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "polimer-gida-ilac-yag",
   "sinirlayici-bilesen",
   "kati-kutlesi-degisimi",
+  "safsizlik-problemleri",
   "din-felsefesi",
   "ahlak-felsefesi",
   "radyoaktivite",

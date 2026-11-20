@@ -1929,6 +1929,19 @@ export const questionTactics: QuestionTactic[] = [
       "Dönüşüm yüzdesi başlangıç reaktifinin payıdır, kalıntıdaki ürün yüzdesi değildir.",
     ],
   },
+  {
+    id: "saflik-pay-verim-carpan",
+    guides: ["safsizlik-problemleri"],
+    match: /saflık|saf olmayan|safsız|yüzde .* saf|%\s*\d+.*saf|verim|toplanan|örneğin kütlesi/i,
+    title: "Saflıkta denkleme yalnız saf kısmı ver; verim ayrı çarpandır; geriye bölerek dön",
+    steps: [
+      "Saf kütle = örnek × p/100 (80 g × 0,75 = 60 g); safsızlık tepkimeye girmez, denkleme kaba kütle verilmez.",
+      "Teorik ürün saf kısımdan; toplanan = teorik × verim (60 g %75 saf → 45 g → 19,8 g CO₂ → %80’de 15,84 g). Verim katı kalıntıya uygulanmaz.",
+      "Geriye dön: üründen mole, katsayı oranıyla saf girene, saflıkla örneğe böl (2011 LYS2 Kimya 4: 0,51 g Al₂O₃ → 0,270 g Al, C; %90 saf olsaydı 0,300 g örnek).",
+      "Verim verilmişse ölçülen ürünü önce verime böl (9 g, %75 → 12 g oluşmuş). Verim bilinmezse tek saflık değeri yoktur.",
+      "Yüzdeler toplanmaz, çarpılır: %70 saflık × %80 verim = 0,56; sonuç 0–%100 aralığında kalmalı.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
