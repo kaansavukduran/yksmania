@@ -1448,6 +1448,19 @@ export const questionTactics: QuestionTactic[] = [
       "Kuvvet var, zamanlama bozuk → koordinasyon (beyincik) ile uyumlu; tek bulgudan kesin klinik tanı çıkarma.",
     ],
   },
+  {
+    id: "css-yer-yon-hedef",
+    guides: ["sinir-sistemi-css-hastaliklar"],
+    match: /ÇSS|çevresel|somatik|otonom|sempatik|parasempatik|gangliyon|afferent|efferent|karma sinir|MS|Parkinson|Alzheimer|epilepsi|depresyon/i,
+    title: "ÇSS’de yer, yön ve hedefi sırayla sor; hastalıkta mekanizmayı ayır",
+    steps: [
+      "Yer: MSS (beyin, omurilik) mi, ÇSS (sinirler, gangliyonlar) mı? Yön: merkeze duyu, hedefe motor.",
+      "Hedef: iskelet kası → somatik (diz refleksi istemsiz ama somatik); düz kas, kalp kası, bez → otonom.",
+      "Otonom yolda iki motor nöron: gangliyon öncesi ve sonrası. Gangliyon tek başına motor yol kanıtı değildir.",
+      "Organın işini yaz: sempatik kalbi hızlandırır, göz bebeğini genişletir, sindirim hareketini baskılar (2010 LYS-2 Biyoloji 12); ‘hepsini artırır’ yanlış.",
+      "Hastalık: MS merkezî miyelin, Parkinson dopaminli nöron, Alzheimer amiloid/tau, epilepsi anormal elektriksel etkinlik, depresyon çok etkenli; tek belirtiden kesin tanı çıkarma.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

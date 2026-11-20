@@ -67,6 +67,7 @@ import { biologyFiguresNeuron } from "./biologyFiguresNeuron";
 import { biologyFiguresSpinal } from "./biologyFiguresSpinal";
 import { biologyFiguresForebrain } from "./biologyFiguresForebrain";
 import { biologyFiguresHindbrain } from "./biologyFiguresHindbrain";
+import { biologyFiguresPns } from "./biologyFiguresPns";
 import { biologyFiguresEar } from "./biologyFiguresEar";
 import { geographyFiguresLocation } from "./geographyFiguresLocation";
 import { historyFiguresMedieval } from "./historyFiguresMedieval";
@@ -155,6 +156,7 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   biologyFiguresSpinal,
   biologyFiguresForebrain,
   biologyFiguresHindbrain,
+  biologyFiguresPns,
   biologyFiguresEar,
   geographyFiguresLocation,
   historyFiguresMedieval,
