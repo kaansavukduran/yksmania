@@ -1,3 +1,4 @@
+import { typeset } from "../../src/domain/typeset";
 import {
   expect,
   test,
@@ -337,9 +338,7 @@ test("old checked basic draft level2 remains the full solution with five reasons
     false,
   );
   await seedAndMount(page, fixture, "/practice");
-  await expect(page.locator(".question-panel h2")).toHaveText(
-    lesson.questions[0].prompt.tr,
-  );
+  await expect(page.locator(".question-panel h2")).toHaveText(typeset(lesson.questions[0].prompt.tr));
   await expectFull(page);
   const mounted = await unchanged(page, fixture);
   await offlineReload(page, context);
@@ -400,9 +399,7 @@ test("two fresh explicit study help clicks save count5 and level2 as method acro
     .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
     .fill(lesson.title.tr);
   await page.locator(`.ready-topic[data-lesson-id="${lessonId}"]`).click();
-  await expect(page.locator(".question-panel h2")).toHaveText(
-    lesson.questions[0].prompt.tr,
-  );
+  await expect(page.locator(".question-panel h2")).toHaveText(typeset(lesson.questions[0].prompt.tr));
   await expect(page.locator(".hint-box")).toHaveCount(0);
   await expect
     .poll(async () => (await stored(page)).draft?.lessonId)

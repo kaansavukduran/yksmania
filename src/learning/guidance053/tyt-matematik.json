@@ -1,0 +1,2522 @@
+[
+ {
+  "id": "veri-analizi-015-1",
+  "h": "11aa3dcb09ddee",
+  "guidance": {
+   "knowledge": [
+    "Ortanca: veriler küçükten büyüğe sıralandığında tam ortada kalan değerdir.",
+    "Gözlem sayısı çiftse ortada iki değer kalır; ortanca bu iki değerin aritmetik ortalamasıdır ve listede bulunmak zorunda değildir."
+   ],
+   "strategy": "Ortanca konuma bağlı bir ölçü olduğu için önce sıralama şarttır; altı gözlem olduğundan 3. ve 4. değerler ortalanır.",
+   "steps": [
+    "Gözlemleri küçükten büyüğe sırala: 1, 4, 4, 7, 8, 9.",
+    "Gözlem sayısı 6, yani çift; ortadaki iki değer 3. ve 4. sıradakiler: 4 ve 7.",
+    "Bu iki değerin ortalamasını al: (4 + 7) / 2 = 11 / 2 = 5,5."
+   ],
+   "optionReasons": [
+    "Sıralamadan listenin son gözlemi olan 8’i alır; 8 sıralı listede yalnız beşinci değerdir.",
+    "Doğru: sıralı listenin ortasındaki 4 ve 7’nin ortalaması 5,5’tir.",
+    "Sıralamadan yazılış sırasındaki 3. ve 4. değerleri (4 ve 4) ortalar: (4 + 4) / 2 = 4.",
+    "Ortadaki iki değer yerine 3. ve 5. değeri ortalar: (4 + 8) / 2 = 6.",
+    "Tekrarlanan 4’ü bir kez sayıp 1, 4, 7, 8, 9 listesinin ortasını alır: 7."
+   ],
+   "commonError": "Verileri sıralamadan, yazıldıkları sıradaki orta değerleri ortanca sanmak.",
+   "check": "5,5’ten küçük 3 gözlem (1, 4, 4) ve büyük 3 gözlem (7, 8, 9) var; ortanca veriyi tam ikiye bölüyor."
+  }
+ },
+ {
+  "id": "veri-analizi-015-2",
+  "h": "1c4c0f7e77c9c4",
+  "guidance": {
+   "knowledge": [
+    "Frekans (sıklık): bir değerin veride kaç kez görüldüğüdür. Değer 3, frekans 3 ise veride üç tane 3 vardır.",
+    "Aritmetik ortalama: bütün gözlemlerin toplamının gözlem sayısına bölümüdür."
+   ],
+   "strategy": "Tabloda tekrarlar frekans sütununda saklandığı için her değeri kendi frekansıyla çarpıp toplam bulunur; payda frekansların toplamıdır.",
+   "steps": [
+    "Her değeri frekansıyla çarp: 1·2 = 2, 3·3 = 9, 7·1 = 7.",
+    "Bunları topla: 2 + 9 + 7 = 18; bu, bütün gözlemlerin toplamıdır.",
+    "Gözlem sayısını bul: 2 + 3 + 1 = 6.",
+    "Ortalama: 18 / 6 = 3."
+   ],
+   "optionReasons": [
+    "Frekansları yok sayıp yalnız üç farklı değeri ortalar: (1 + 3 + 7) / 3 = 11/3.",
+    "Gözlemlerin toplamını bulur ama gözlem sayısına bölmeyi unutur: 18.",
+    "Değerler yerine frekansları ortalar: (2 + 3 + 1) / 3 = 2.",
+    "Doğru: toplam 18, gözlem sayısı 6; 18 / 6 = 3.",
+    "Toplamı gözlem sayısı yerine satır sayısına böler: 18 / 3 = 6."
+   ],
+   "commonError": "Tablodaki satır sayısını gözlem sayısı sanıp frekans toplamı yerine 3’e bölmek.",
+   "check": "Veriyi açık yaz: 1, 1, 3, 3, 3, 7. Toplam 18, adet 6; ortalama yine 3."
+  }
+ },
+ {
+  "id": "veri-analizi-015-3",
+  "h": "164fe8ddb58b1b",
+  "guidance": {
+   "knowledge": [
+    "Mod (tepe değer): veride en çok tekrar eden değerdir.",
+    "Soruda verilen özel tanım: en az iki farklı değerin hepsi aynı sayıda tekrar ediyorsa hiçbir değer öne çıkmaz ve ayırt edici mod yok sayılır."
+   ],
+   "strategy": "Soru modu kendi tanımıyla belirlediği için önce her değerin frekansını sayar, sonra bu tanımın koşulunun sağlanıp sağlanmadığına bakarsın.",
+   "steps": [
+    "Frekansları say: 2 iki kez, 5 iki kez görülüyor.",
+    "Farklı değerler 2 ve 5; ikisi de aynı frekansta (2), yani bütün farklı değerler eş sıklıkta.",
+    "Verilen tanıma göre bu durumda ayırt edici mod yoktur."
+   ],
+   "optionReasons": [
+    "Doğru: 2 ve 5 eşit sıklıkta olduğundan verilen tanım mod tanımlamaz.",
+    "Eşitlikte ilk yazılan değeri seçer; tanım eş sıklıkta bir değeri öne çıkarmaya izin vermez.",
+    "Eşitlikte büyük değeri seçer; 5’in frekansı 2’ninkinden fazla değildir.",
+    "Ortanca ya da ortalamayı mod sanır: (2 + 2 + 5 + 5) / 4 = 14 / 4 = 3,5.",
+    "Mod adayı iki değeri toplar: 2 + 5 = 7; mod bir toplam değil, verideki bir değerdir."
+   ],
+   "commonError": "Sorunun verdiği tanımı okumadan eş frekanslı değerlerden birini mod seçmek.",
+   "check": "Veriye bir tane daha 2 eklenseydi (2, 2, 2, 5, 5) frekanslar ayrışır ve mod 2 olurdu; burada eşitlik bozulmuyor."
+  }
+ },
+ {
+  "id": "veri-analizi-015-4",
+  "h": "071defee097654",
+  "guidance": {
+   "knowledge": [
+    "Bir grubun puan toplamı = kişi sayısı · ortalama.",
+    "Birleşik ortalama: iki grubun puan toplamları toplanıp toplam kişi sayısına bölünerek bulunur; kişi sayıları farklıysa ortalamaların düz ortalaması doğru sonuç vermez."
+   ],
+   "strategy": "Gruplar farklı büyüklükte olduğu için ortalamaları doğrudan ortalayamazsın; önce toplamlara dönüp sonra toplam kişiye bölersin.",
+   "steps": [
+    "A grubunun toplamı: 4·50 = 200 puan.",
+    "B grubunun toplamı: 8·80 = 640 puan.",
+    "Birleşik toplam: 200 + 640 = 840 puan; kişi sayısı 4 + 8 = 12.",
+    "Birleşik ortalama: 840 / 12 = 70 puan."
+   ],
+   "optionReasons": [
+    "Kişi sayılarını ters ağırlıklandırır: (4·80 + 8·50) / 12 = (320 + 400) / 12 = 60.",
+    "İki ortalamayı toplar: 50 + 80 = 130; ortalama hiçbir puandan büyük olamaz.",
+    "Doğru: 840 puan 12 kişiye bölünür, 70 bulunur.",
+    "Gruplar eşit büyüklükteymiş gibi düz ortalama alır: (50 + 80) / 2 = 65.",
+    "75 için toplam 75·12 = 900 puan gerekir; gerçek toplam 840 olduğundan sağlamaz."
+   ],
+   "commonError": "Kişi sayıları farklı iki grubun ortalamalarını doğrudan toplayıp ikiye bölmek.",
+   "check": "Büyük grup B’nin ortalaması 80 olduğundan sonuç 65’ten 80’e yakın olmalı; 70, 50 ile 80 arasını 2’ye 1 oranında bölüyor (20 ve 10 puan)."
+  }
+ },
+ {
+  "id": "veri-analizi-015-5",
+  "h": "1fdc80a1e97d39",
+  "guidance": {
+   "knowledge": [
+    "Ortalama: toplam / adet; tek bir gözlemin değişmesi toplamı ve dolayısıyla ortalamayı değiştirir.",
+    "Ortanca: sıralı verinin ortası; uçtaki bir değer büyüse bile ortadaki değerler aynı kalırsa ortanca değişmez."
+   ],
+   "strategy": "İki ölçüyü ayrı ayrı hesapla: ortalama için yeni toplamı, ortanca için yeni sıralı listenin ortasını bul.",
+   "steps": [
+    "Eski toplam: 1 + 3 + 3 + 5 = 12; eski ortalama 12 / 4 = 3.",
+    "Son gözlem 5 yerine 13 olunca toplam 8 artar: 12 + 8 = 20; yeni ortalama 20 / 4 = 5.",
+    "Yeni sıralı liste: 1, 3, 3, 13; ortadaki iki değer 3 ve 3.",
+    "Ortanca: (3 + 3) / 2 = 3; yani ortanca 3 olarak kalır."
+   ],
+   "optionReasons": [
+    "Ortancayı da ortalama gibi toplamdan hesaplar; ortanca yalnız ortadaki 3 ve 3’e bakar.",
+    "İki ölçüyü karıştırır: ortalamanın sabit kaldığını, ortancanın değiştiğini sanır; toplam 12’den 20’ye çıkıyor.",
+    "Yalnız uç değerleri ortalar: (1 + 13) / 2 = 7; ortalama dört gözlemin hepsini kullanır.",
+    "Toplamı güncellemeyi unutur; 13 gelince toplam 20 olur, ortalama değişir.",
+    "Doğru: ortalama 20 / 4 = 5 olur, ortanca 3 kalır."
+   ],
+   "commonError": "Bir uç değer değişince ortalama ile ortancanın aynı şekilde etkileneceğini sanmak.",
+   "check": "Ortalama artışı = toplam artış / adet = 8 / 4 = 2; 3 + 2 = 5 tutuyor."
+  }
+ },
+ {
+  "id": "veri-analizi-015-6",
+  "h": "1faa2d909286a7",
+  "guidance": {
+   "knowledge": [
+    "Standart sapma: verilerin ortalama çevresinde ne kadar yayıldığını gösterir; hiçbir zaman negatif olmaz.",
+    "Bu sorudaki tanım: s = √[Σ(x − ortalama)² / (n − 1)]. Σ “topla”, n gözlem sayısı demektir."
+   ],
+   "strategy": "Formül verildiği için sırayla uygula: ortalama, farklar, farkların kareleri, toplam, n − 1’e bölme ve karekök.",
+   "steps": [
+    "Ortalama: (2 + 4 + 6) / 3 = 12 / 3 = 4.",
+    "Farklar: 2 − 4 = −2, 4 − 4 = 0, 6 − 4 = 2.",
+    "Kareleri topla: 4 + 0 + 4 = 8.",
+    "n − 1 = 3 − 1 = 2’ye böl: 8 / 2 = 4.",
+    "Karekök al: s = √4 = 2."
+   ],
+   "optionReasons": [
+    "Farkları karelemeden toplar: −2 + 0 + 2 = 0; farkların toplamı her veride sıfırdır.",
+    "Doğru: √(8 / 2) = √4 = 2.",
+    "Verilen n − 1 yerine n’ye böler: √(8 / 3).",
+    "8 / 2 = 4 olan varyansta durur, karekök almayı unutur.",
+    "Bölmeyi atlayıp kareler toplamının kökünü alır: √8."
+   ],
+   "commonError": "Kartın verdiği n − 1 paydası yerine n kullanmak ya da son adımda karekök almayı unutmak.",
+   "check": "Uç değerler ortalamadan 2 birim uzakta, ortadaki tam ortalamada; yayılımın 2 civarında çıkması mantıklı."
+  }
+ },
+ {
+  "id": "veri-analizi-015-7",
+  "h": "0e78b642b8716a",
+  "guidance": {
+   "knowledge": [
+    "Doğrusal dönüşüm: her x değeri y = a·x + b ile yeni değere çevrilir; burada a = −3, b = 5.",
+    "Kural: yeni ortalama = a·eski ortalama + b; yeni standart sapma = |a|·eski sapma. Sabit eklemek yayılımı değiştirmez, sapma negatif olmaz."
+   ],
+   "strategy": "Dönüşüm doğrusal olduğu için ortalama ve sapma kuralları doğrudan kullanılır; istersen yeni listeyi yazıp doğrularsın.",
+   "steps": [
+    "Yeni ortalama: −3·4 + 5 = −12 + 5 = −7.",
+    "Yeni sapma: |−3|·2 = 3·2 = 6; +5 eklemek sapmayı etkilemez.",
+    "Liste ile doğrula: 2 → −1, 4 → −7, 6 → −13; ortalama (−1 − 7 − 13) / 3 = −21 / 3 = −7."
+   ],
+   "optionReasons": [
+    "Ortalamada işareti kaybeder: −3·4 + 5 = −7 yerine 7 yazar.",
+    "Dönüşümün yayılımı hiç değiştirmediğini sanır; çarpan 3 farkları da 3 katına çıkarır.",
+    "Çarpanın eksi işaretini yok sayar: 3·4 + 5 = 17.",
+    "Doğru: ortalama −3·4 + 5 = −7, sapma |−3|·2 = 6.",
+    "Sapmayı da işaretli çarpar: −3·2 = −6; sapma mutlak değerle çarpılır, negatif olmaz."
+   ],
+   "commonError": "Sapmayı negatif çarpanla doğrudan çarpıp negatif sapma elde etmek.",
+   "check": "Yeni farklar −1 − (−7) = 6, 0, −13 − (−7) = −6; kareler toplamı 72, 72 / 2 = 36, √36 = 6."
+  }
+ },
+ {
+  "id": "veri-analizi-015-8",
+  "h": "1c985debee0ed7",
+  "guidance": {
+   "knowledge": [
+    "Histogram: veriyi sınıflara (aralıklara) ayırıp her sınıfı bir sütunla gösteren grafiktir. [0,5) 0 dahil, 5 hariç demektir.",
+    "Frekans yoğunluğu = sınıf frekansı / sınıf genişliği (kişi/puan). Sütunun alanı (yükseklik · genişlik) kişi sayısını verir."
+   ],
+   "strategy": "Sınıf genişlikleri farklı olduğu için yükseklik frekansın kendisi değil, genişliğe bölünmüş hâlidir; önce genişlikleri bul.",
+   "steps": [
+    "Genişlikler: 5 − 0 = 5, 15 − 5 = 10, 30 − 15 = 15 puan.",
+    "Yoğunluklar: 2 / 5 = 0,4; 4 / 10 = 0,4; 3 / 15 = 0,2 kişi/puan.",
+    "Yükseklik sırası: 0,4; 0,4; 0,2."
+   ],
+   "optionReasons": [
+    "Doğru: her frekans kendi genişliğine bölünür: 0,4; 0,4; 0,2.",
+    "Ham frekansları yükseklik sanır; genişlik farklıyken sütun alanı yanlış kişi sayısı verir.",
+    "Bölmek yerine genişlikle çarpar: 2·5 = 10, 4·10 = 40, 3·15 = 45.",
+    "0,2 ve 0,1 yükseklikleriyle alanlar 0,2·10 = 2 ve 0,1·15 = 1,5 olur; 4 ve 3 kişiyi vermez.",
+    "Bütün sınıfları 10 genişlikte sanır: 2 / 10 = 0,2; 4 / 10 = 0,4; 3 / 10 = 0,3."
+   ],
+   "commonError": "Eşit olmayan sınıf genişliklerinde sütun yüksekliğini ham frekans almak.",
+   "check": "Alanları hesapla: 0,4·5 = 2, 0,4·10 = 4, 0,2·15 = 3; kişi sayıları tutuyor."
+  }
+ },
+ {
+  "id": "veri-analizi-015-9",
+  "h": "0a9aaf49fefbc3",
+  "guidance": {
+   "knowledge": [
+    "Sınıflanmış veri: tek tek puanlar değil, yalnız hangi aralıkta kaç kişi olduğu bilinir.",
+    "Orta nokta tahmini: her sınıftakilerin sınıf ortasında olduğu varsayımıyla hesaplanan ortalamadır; gerçek ortalama değil, tahmindir."
+   ],
+   "strategy": "“Kesin” sözcüğü sorulduğu için, aynı frekanslara uyan farklı ham puanlarla farklı ortalamalar çıkıp çıkmadığını denersin.",
+   "steps": [
+    "Orta nokta tahmini: (4·5 + 6·15) / 10 = (20 + 90) / 10 = 11; bu bir varsayıma dayanır.",
+    "Örnek 1: ilk sınıfta herkes 1, ikincide herkes 11 alsın: (4·1 + 6·11) / 10 = 70 / 10 = 7.",
+    "Örnek 2: herkes 9 ve 19 alsın: (4·9 + 6·19) / 10 = 150 / 10 = 15.",
+    "İki örnek de verilen frekanslara uyuyor ama ortalamalar farklı; kesin ortalama belirlenemez."
+   ],
+   "optionReasons": [
+    "Bütün aralığın ortasını (0 ile 20’nin ortası 10) ortalama sanır; frekanslar da puanlar da bunu kesinleştirmez.",
+    "En büyük olası puanı ortalama sanır; 20’yi yalnız [10,20] sınıfındakiler alabilir.",
+    "Doğru: aynı frekanslarla 7 ve 15 gibi farklı ortalamalar mümkündür.",
+    "Orta nokta tahminini kesin sanır: (4·5 + 6·15) / 10 = 11; bu yalnız bir varsayımdır.",
+    "12 de olası değerlerden biridir ama 7 ile 15 gibi başka değerler de mümkün olduğundan kesin değildir."
+   ],
+   "commonError": "Orta nokta yöntemiyle bulunan tahmini kesin ortalama gibi sunmak.",
+   "check": "Tek bir karşı örnek yeter: ortalaması 7 olan ve 15 olan iki veri de aynı tabloyu üretiyor."
+  }
+ },
+ {
+  "id": "veri-analizi-015-10",
+  "h": "0e6aeff882f28b",
+  "guidance": {
+   "knowledge": [
+    "Standart sapma, gözlenen puanların ortalama çevresindeki yayılımını betimler; sapma 0 ise bütün puanlar eşittir.",
+    "Betimleme ölçüsü: yalnız elde olan veriyi özetler; geleceği, kişinin gerçek bilgisini ya da ölçümün hatasızlığını kanıtlamaz."
+   ],
+   "strategy": "Her şıkkı yalnız verilen sayılarla (ortalamalar 70 ve 70, sapmalar 0 ve 10) desteklenip desteklenmediğine göre sına.",
+   "steps": [
+    "Ortalamalar eşit: A için 210 / 3 = 70, B için (60 + 70 + 80) / 3 = 70.",
+    "Sapmalar 0 ve 10; A’nın puanları hiç yayılmamış, B’ninkiler 70 çevresinde yayılmış.",
+    "Bu sayılar gelecekteki başarıyı ya da ölçme hatasını göstermez; geçerli çıkarım yalnız yayılım karşılaştırmasıdır."
+   ],
+   "optionReasons": [
+    "Geçmiş üç puanın yayılımını geleceğe ilişkin kesin tahmine dönüştürür; veri bunu taşımaz.",
+    "Sapmanın 0 olmasını ölçümün hatasız olduğuna yorar; sapma yalnız puanların eşit olduğunu söyler.",
+    "Ortalamaları karşılaştırmaz: B için (60 + 70 + 80) / 3 = 70, A ile eşittir.",
+    "Standart sapma bir karekök olduğundan negatif olamaz; B’ninki 10’dur.",
+    "Doğru: A’nın puanları daha az yayılmıştır; bu gelecekteki başarıyı garanti etmez."
+   ],
+   "commonError": "Küçük standart sapmayı daha başarılı ya da daha güvenilir kişi diye yorumlamak.",
+   "check": "A’nın puanları 70, 70, 70; B’ninkiler 10 puan aşağı ve yukarı sapıyor. Gelecekle ilgili hiçbir sayı verilmemiş."
+  }
+ },
+ {
+  "id": "grafik-problemleri-014-1",
+  "h": "12f81ae1fe628d",
+  "guidance": {
+   "knowledge": [
+    "Daire grafiği: bütünü 360°’lik bir daire olarak gösterir; her dilimin açısı, grubun bütün içindeki payıyla orantılıdır.",
+    "Merkez açı = 360° · (grup sayısı / toplam)."
+   ],
+   "strategy": "Açı paya bağlı olduğu için önce ikinci kulübün toplam içindeki kesrini bul, sonra 360° ile çarp.",
+   "steps": [
+    "Toplam: 20 + 30 + 50 = 100 kişi.",
+    "İkinci kulübün payı: 30 / 100 = 3/10.",
+    "Merkez açı: 360·3/10 = 1080 / 10 = 108°."
+   ],
+   "optionReasons": [
+    "Doğru: 360·30/100 = 108°.",
+    "Kişi sayısını ya da yüzdeyi (%30) derece sanır; 30 kişi 30° değildir.",
+    "Birinci kulübün açısını hesaplar: 360·20/100 = 72°.",
+    "Kulüpleri eşit büyüklükte sanıp daireyi üçe böler: 360 / 3 = 120°.",
+    "Üçüncü kulübün açısını hesaplar: 360·50/100 = 180°."
+   ],
+   "commonError": "Yüzdeyi ya da kişi sayısını doğrudan derece olarak okumak.",
+   "check": "Üç açıyı topla: 72 + 108 + 180 = 360°; daire tamamlanıyor."
+  }
+ },
+ {
+  "id": "grafik-problemleri-014-2",
+  "h": "19e37663a6f6f5",
+  "guidance": {
+   "knowledge": [
+    "Daire grafiğinde dilim payı = dilim açısı / 360°.",
+    "Gruptaki kişi sayısı = toplam kişi · dilim payı."
+   ],
+   "strategy": "Açı bütünün kesrini verdiği için 72/360 kesrini sadeleştirip 150 kişiye uygularsın.",
+   "steps": [
+    "Pay: 72 / 360; pay ve paydayı 72’ye böl: 1/5.",
+    "Kişi sayısı: 150·1/5 = 150 / 5 = 30."
+   ],
+   "optionReasons": [
+    "1/5 payını yüzde gibi (%20) okuyup kişi sayısı sanır; 150 kişinin beşte biri 30’dur.",
+    "Doğru: 72/360 = 1/5 ve 150 / 5 = 30.",
+    "36 kişi bütünün 36/150’si olur, açısı 360·36/150 = 86,4° çıkar; 72° ile uyuşmaz.",
+    "Tam daire yerine yarım daireyi (180°) bütün sanır: 150·72/180 = 60.",
+    "Açı değerini kişi sayısı sanır; 72 derece birimindedir."
+   ],
+   "commonError": "Payı hesaplarken 360° yerine yanlış bir bütün açı kullanmak ya da açıyı kişi sanmak.",
+   "check": "30 kişi için açı 360·30/150 = 72°; verilenle aynı."
+  }
+ },
+ {
+  "id": "grafik-problemleri-014-3",
+  "h": "1eaa8f6c3ee242",
+  "guidance": {
+   "knowledge": [
+    "Konum-zaman grafiği: yatay eksende zaman (s), düşey eksende konum (m) vardır.",
+    "Doğru parçasının eğimi = konum değişimi / zaman değişimi; bu da o aralıktaki sabit hızdır (m/s)."
+   ],
+   "strategy": "Grafik doğru parçası olduğundan hız sabittir ve eğim formülüyle bulunur; konum farkını süre farkına bölersin.",
+   "steps": [
+    "Konum değişimi: 90 − 60 = 30 m.",
+    "Süre değişimi: 5 − 2 = 3 s.",
+    "Hız (eğim): 30 / 3 = 10 m/s."
+   ],
+   "optionReasons": [
+    "Konum farkını süre farkı yerine son zamana böler: 30 / 5 = 6.",
+    "Konum farkını ilk zamana böler: 30 / 2 = 15.",
+    "Doğru: 30 m / 3 s = 10 m/s.",
+    "Son konumu son zamana böler: 90 / 5 = 18; başlangıç noktasını yok sayar.",
+    "Yalnız konum farkını (30 m) hız sanır, süreyi hiç kullanmaz."
+   ],
+   "commonError": "Fark yerine tek bir noktanın konum ve zamanını kullanmak.",
+   "check": "10 m/s hızla 3 s’de 30 m gidilir: 60 + 30 = 90 m; grafikle aynı."
+  }
+ },
+ {
+  "id": "grafik-problemleri-014-4",
+  "h": "05552f88a6759a",
+  "guidance": {
+   "knowledge": [
+    "Pay (kesir): bir grubun sayısı / bütünün sayısı.",
+    "Bir gruba yeni kişi eklenince hem o grubun sayısı hem de bütün (toplam) büyür."
+   ],
+   "strategy": "Ekleme hem payı hem paydayı değiştirdiği için önce C’yi, sonra toplamı güncelleyip kesri sadeleştirirsin.",
+   "steps": [
+    "C’nin yeni sayısı: 50 + 20 = 70.",
+    "Yeni toplam: 20 + 30 + 50 + 20 = 120.",
+    "Pay: 70 / 120; 10’a böl: 7/12."
+   ],
+   "optionReasons": [
+    "Eklemeden önceki payı yazar: 50 / 100 = 1/2.",
+    "C’yi günceller ama toplamı eski bırakır: 70 / 100 = 7/10.",
+    "Toplamı günceller ama C’yi eski bırakır: 50 / 120 = 5/12.",
+    "Doğru: 70 / 120 = 7/12.",
+    "2/3 için C’nin 120 kişide 80 olması gerekir; C yalnız 50 + 20 = 70’e çıkar."
+   ],
+   "commonError": "Gruba ekleme yapınca paydaki sayıyı güncelleyip paydadaki toplamı unutmak.",
+   "check": "7/12 ≈ 0,58; eski pay 0,5’ti. C’ye kişi eklenince payının biraz artması beklenir, 0,7 kadar artması değil."
+  }
+ },
+ {
+  "id": "grafik-problemleri-014-5",
+  "h": "07e8e122528d07",
+  "guidance": {
+   "knowledge": [
+    "Sütun grafiğinde her sütunun gerçek değeri eksendeki okumadır; eksenin 0’dan başlamaması değeri değiştirmez.",
+    "Kesilmiş eksen: düşey eksen 0 yerine örneğin 50’den başlar; bu sütun boylarını gerçek oranlardan farklı gösterir."
+   ],
+   "strategy": "Soru gerçek oranı istediği için görünen sütun boylarını değil, gerçek kişi sayılarını oranlarsın.",
+   "steps": [
+    "Gerçek değerler: B = 65, A = 60.",
+    "Oran: B/A = 65 / 60; ikisini 5’e böl: 13/12.",
+    "Görünen boylar 65 − 50 = 15 ve 60 − 50 = 10’dur; bunlar yalnız görsel yanıltmayı açıklar."
+   ],
+   "optionReasons": [
+    "Kesilmiş eksendeki görünen boyları oranlar: 15 / 10 = 3/2.",
+    "Görünen boyları ters oranlar: 10 / 15 = 2/3.",
+    "Gerçek değerleri ters sırayla oranlar: A/B = 60 / 65 = 12/13.",
+    "Oran yerine farkı alır: 65 − 60 = 5.",
+    "Doğru: gerçek oran 65 / 60 = 13/12."
+   ],
+   "commonError": "Kesilmiş eksende sütun boylarını gerçek değer sanıp farkı abartmak.",
+   "check": "13/12 ≈ 1,08; B, A’dan yalnız %8 kadar fazla. 3/2 ise %50 fazlalık gösterir ki veriyle uyuşmaz."
+  }
+ },
+ {
+  "id": "grafik-problemleri-014-6",
+  "h": "1d2844cbb6a2a8",
+  "guidance": {
+   "knowledge": [
+    "Aritmetik ortalama: toplam / adet.",
+    "Ortanca: sıralı verinin ortası; çift adette ortadaki iki değerin ortalaması.",
+    "Mod: en çok tekrar eden değer."
+   ],
+   "strategy": "Üç ölçü farklı soruları yanıtlar; her birini kendi tanımıyla ayrı ayrı hesapla ve sırasını koru.",
+   "steps": [
+    "Ortalama: (2 + 3 + 3 + 8) / 4 = 16 / 4 = 4.",
+    "Ortanca: sıralı 2, 3, 3, 8 verisinde ortadaki iki değer 3 ve 3; (3 + 3) / 2 = 3.",
+    "Mod: 3 iki kez, diğerleri birer kez geçiyor; mod 3.",
+    "Sıralı yanıt: 4; 3; 3."
+   ],
+   "optionReasons": [
+    "Doğru: ortalama 4, ortanca 3, mod 3.",
+    "Ortalama ile ortancanın yerini değiştirir; sıralı ortadaki değerler 3 ve 3’tür.",
+    "Ortancayı da ortalama gibi 16 / 4 = 4 hesaplar; ortanca sıralamaya bakar.",
+    "Ortalamayı ortancayla, modu ortalamayla karıştırıp 3; 3; 4 yazar.",
+    "Modu en büyük değer sanır; 8 yalnız bir kez geçer."
+   ],
+   "commonError": "Ölçüleri doğru hesaplayıp istenen sırayla yazmamak.",
+   "check": "Uçtaki 8 ortalamayı ortancanın üstüne çeker: 4 > 3. Bu, sağa çarpık veride beklenen durumdur."
+  }
+ },
+ {
+  "id": "grafik-problemleri-014-7",
+  "h": "14a6d2a89b8406",
+  "guidance": {
+   "knowledge": [
+    "Frekans tablosu: her değerin yanında kaç kez görüldüğü yazılır; satır sayısı gözlem sayısı değildir.",
+    "Ağırlıklı toplam: her değerin frekansıyla çarpılıp toplanmasıdır; ortalama = ağırlıklı toplam / frekans toplamı."
+   ],
+   "strategy": "Gözlemler tekrarlı olduğundan her değeri frekansıyla çarpıp toplarsın; payda altı gözlemdir.",
+   "steps": [
+    "Çarpımlar: 1·2 = 2, 2·3 = 6, 3·1 = 3.",
+    "Ağırlıklı toplam: 2 + 6 + 3 = 11.",
+    "Gözlem sayısı: 2 + 3 + 1 = 6.",
+    "Ortalama: 11 / 6."
+   ],
+   "optionReasons": [
+    "Frekansları yok sayıp üç değeri ortalar: (1 + 2 + 3) / 3 = 2.",
+    "Doğru: 11 / 6.",
+    "Doğru toplamı satır sayısına böler: 11 / 3.",
+    "Kesri ters çevirir: 6 / 11; ortalama 1 ile 3 arasında olmalı.",
+    "3/2 için toplam 6·3/2 = 9 olmalıydı; gerçek ağırlıklı toplam 11’dir."
+   ],
+   "commonError": "Toplamı gözlem sayısı yerine tablodaki satır sayısına bölmek.",
+   "check": "Veriyi aç: 1, 1, 2, 2, 2, 3. Toplam 11, adet 6; 11/6 ≈ 1,83 ve en sık değer 2’ye yakın."
+  }
+ },
+ {
+  "id": "grafik-problemleri-014-8",
+  "h": "0766392fa6213e",
+  "guidance": {
+   "knowledge": [
+    "[0,10) aralığı 0’ı içerir, 10’u içermez; [20,30] iki ucu da içerir. 10 puan alan kişi [10,20) sınıfındadır.",
+    "Yüzde = parça / bütün · 100."
+   ],
+   "strategy": "“En az 10” 10 ve üstü demektir; aralık gösterimine göre bu ikinci ve üçüncü sınıftır. Parçayı bütün gruba bölersin.",
+   "steps": [
+    "En az 10 alanlar: ikinci ve üçüncü sınıf, 7 + 5 = 12 kişi.",
+    "Bütün grup: 4 + 7 + 5 = 16 kişi.",
+    "Oran: 12 / 16 = 3/4 = 0,75, yani %75."
+   ],
+   "optionReasons": [
+    "Tümleyeni hesaplar: 10’dan az alanların oranı 4 / 16 = %25.",
+    "Yalnız ikinci sınıfı sayar: 7 / 16 = 0,4375 = %43,75.",
+    "Doğru: 12 / 16 = %75.",
+    "%50 için 16 kişinin 8’i gerekirdi; en az 10 alan 12 kişidir.",
+    "Paydayı 15 alırsa 12 / 15 = %80 bulur; toplam 4 + 7 + 5 = 16’dır."
+   ],
+   "commonError": "Aralık uçlarının hangi sınıfa ait olduğunu okumadan sınıfları yanlış seçmek.",
+   "check": "Tümleyenle doğrula: 10’dan az alanlar %25, 100 − 25 = 75."
+  }
+ },
+ {
+  "id": "grafik-problemleri-014-9",
+  "h": "180bbdc357d5e7",
+  "guidance": {
+   "knowledge": [
+    "Örneklem standart sapması: farkların kareleri toplamı n − 1’e bölünür, sonra karekök alınır.",
+    "Fark: her ölçüm − ortalama; n: ölçüm sayısı."
+   ],
+   "strategy": "Tanım soruda adım adım verildiği için sırayla uygula; paydanın n − 1 olduğuna dikkat et.",
+   "steps": [
+    "Ortalama: (2 + 4 + 6) / 3 = 4.",
+    "Farkların kareleri: (−2)² = 4, 0² = 0, 2² = 4; toplam 8.",
+    "n − 1 = 2’ye böl: 8 / 2 = 4.",
+    "Karekök: √4 = 2."
+   ],
+   "optionReasons": [
+    "Payda olarak n + 1 = 4 kullanır: √(8 / 4) = √2.",
+    "Karekök almadan varyansta durur: 8 / 2 = 4.",
+    "n − 1 yerine n’ye böler: √(8 / 3).",
+    "Doğru: √(8 / 2) = 2.",
+    "Kareler toplamında durur; ne böler ne karekök alır: 8."
+   ],
+   "commonError": "Farkları kareledikten sonra paydayı yanlış seçmek ya da kökü unutmak.",
+   "check": "Birim kontrolü: ölçümler ve sapma aynı birimde olmalı; 4 kare birimdedir, kökü 2 asıl birime döner."
+  }
+ },
+ {
+  "id": "grafik-problemleri-014-10",
+  "h": "00540c8265457e",
+  "guidance": {
+   "knowledge": [
+    "Ortanca: veriler küçükten büyüğe sıralanınca ortada kalan değerdir.",
+    "Dört gözlemde ortada iki değer kalır (2. ve 3.); ortanca bunların ortalamasıdır."
+   ],
+   "strategy": "Ortanca sıralamaya bağlı olduğundan önce veriyi sırala, sonra ortadaki iki değeri ortala.",
+   "steps": [
+    "Sırala: 1, 5, 7, 9.",
+    "Ortadaki iki değer 2. ve 3. sıradakiler: 5 ve 7.",
+    "Ortanca: (5 + 7) / 2 = 12 / 2 = 6."
+   ],
+   "optionReasons": [
+    "Sıralamadan yazılış sırasının ortasını (9 ve 1) ortalar: (9 + 1) / 2 = 5.",
+    "Ortancayı ortalamayla karıştırır: (5 + 9 + 1 + 7) / 4 = 22 / 4 = 5,5.",
+    "Ortadaki iki değerden yalnız üçüncüyü alır: 7.",
+    "Sıralamadan ikinci yazılan 9’u orta değer sanır; 9 sıralı listenin en büyüğüdür.",
+    "Doğru: sıralı 1, 5, 7, 9 verisinde (5 + 7) / 2 = 6."
+   ],
+   "commonError": "Veriyi sıralamadan ilk yazılıştaki ortadaki değerleri almak.",
+   "check": "6’dan küçük iki değer (1, 5), büyük iki değer (7, 9) var; ortanca veriyi eşit böldü."
+  }
+ },
+ {
+  "id": "kumeler-014-1",
+  "h": "1bb5a566c0ca5a",
+  "guidance": {
+   "knowledge": [
+    "Küme: birbirinden farklı nesnelerin topluluğudur; aynı eleman iki kez yazılsa da bir kez sayılır.",
+    "s(A): A kümesinin eleman sayısı, yani içindeki farklı nesnelerin sayısı."
+   ],
+   "strategy": "Kümede tekrar yeni eleman yaratmadığı için yazılı listeyi değil, farklı nesneleri sayarsın.",
+   "steps": [
+    "Yazılı liste: 1, 1, 2, 3; 1 iki kez yazılmış.",
+    "Tekrarı bir kez say: farklı elemanlar 1, 2, 3.",
+    "s(A) = 3."
+   ],
+   "optionReasons": [
+    "Doğru: farklı elemanlar 1, 2, 3; s(A) = 3.",
+    "Yalnız tekrar eden 1’i sayar; 2 ve 3 de A’nın elemanıdır.",
+    "Yalnız bir kez yazılan 2 ve 3’ü sayar, tekrar eden 1’i dışarıda bırakır.",
+    "Yazılı listenin uzunluğunu sayar: 4; tekrar yeni eleman değildir.",
+    "Eleman sayısı yerine farklı elemanların toplamını alır: 1 + 2 + 3 = 6."
+   ],
+   "commonError": "Kümede iki kez yazılan elemanı iki ayrı eleman saymak.",
+   "check": "A = {1, 2, 3} olarak da yazılabilir; iki yazılış aynı kümedir ve 3 eleman görünür."
+  }
+ },
+ {
+  "id": "kumeler-014-2",
+  "h": "00d5059ef970c6",
+  "guidance": {
+   "knowledge": [
+    "∅: boş küme, hiç elemanı olmayan kümedir. Ama bir kümenin içinde yazıldığında kendisi tek bir eleman olur.",
+    "Bir kümenin elemanları, en dıştaki süslü parantezin içinde virgülle ayrılmış nesnelerdir; içteki kümenin elemanları dış kümeye ayrıca eklenmez."
+   ],
+   "strategy": "Yalnız en dıştaki parantezin içindeki nesneleri sayarsın; her iç küme tek bir nesne gibi davranır.",
+   "steps": [
+    "Dış parantezin içinde virgülle ayrılmış nesneler: ∅ ve {1}.",
+    "Bunlar farklı nesneler; ∅’nin elemanı yok, {1}’in bir elemanı var.",
+    "A’nın eleman sayısı: 2."
+   ],
+   "optionReasons": [
+    "İçinde boş küme var diye A’nın da boş olduğunu sanır; A’nın içinde iki nesne yazılıdır.",
+    "Doğru: elemanlar ∅ ve {1}, toplam 2.",
+    "∅’yi “hiçbir şey” sayıp atlar, yalnız {1}’i sayar.",
+    "∅ ve {1}’e ek olarak içteki 1’i de A’nın elemanı sayar: 3.",
+    "Eleman sayısı yerine alt küme sayısını bulur: 2² = 4."
+   ],
+   "commonError": "Kümenin elemanı olan ∅’yi hiçbir şey sanıp saymamak.",
+   "check": "∅ ∈ A ve {1} ∈ A doğrudur, ama 1 ∈ A yanlıştır; çünkü 1 doğrudan dış parantezde yazılı değildir."
+  }
+ },
+ {
+  "id": "kumeler-014-3",
+  "h": "0758f08eb12f35",
+  "guidance": {
+   "knowledge": [
+    "Alt küme: elemanlarının hepsi verilen kümede bulunan kümedir; boş küme ve kümenin kendisi de alt kümedir.",
+    "n elemanlı kümenin alt küme sayısı 2ⁿ’dir: her eleman ya alınır ya alınmaz, iki karar."
+   ],
+   "strategy": "Önce bütün alt kümeleri 2ⁿ ile say, sonra öz alt küme tanımı gereği yalnız kümenin kendisini çıkar.",
+   "steps": [
+    "Her eleman için 2 karar: 2·2·2·2·2 = 2⁵ = 32 alt küme.",
+    "Öz alt küme, kümenin kendisi dışındakilerdir; 1 tanesini çıkar.",
+    "32 − 1 = 31."
+   ],
+   "optionReasons": [
+    "Eleman sayısını alt küme sayısı sanır: 5.",
+    "Kararları çarpmak yerine toplar: 2·5 = 10.",
+    "Doğru: 2⁵ − 1 = 32 − 1 = 31.",
+    "Üssü bir eksik alır: 2⁴ = 16.",
+    "Bütün alt kümeleri sayar ama kümenin kendisini çıkarmayı unutur: 32."
+   ],
+   "commonError": "Öz alt küme sayısında boş kümeyi de çıkarmak ya da hiçbir şeyi çıkarmamak.",
+   "check": "Küçük örnekle sına: {a} kümesinin alt kümeleri ∅ ve {a}; öz alt küme yalnız ∅, yani 2¹ − 1 = 1."
+  }
+ },
+ {
+  "id": "kumeler-014-4",
+  "h": "05b3ff49e959af",
+  "guidance": {
+   "knowledge": [
+    "Alt küme sayımında her eleman için ayrı karar verilir: al ya da alma.",
+    "Zorunlu eleman (a) her alt kümede vardır, yasak eleman (b) hiçbirinde yoktur; ikisi için seçim kalmaz."
+   ],
+   "strategy": "a ve b için karar önceden verildiği için yalnız serbest kalan c ve d üzerinden sayarsın.",
+   "steps": [
+    "a: her zaman alınır, 1 yol. b: hiç alınmaz, 1 yol.",
+    "c ve d serbest: her biri için 2 yol, 2·2 = 4.",
+    "Toplam: 1·1·4 = 4 alt küme: {a}, {a, c}, {a, d}, {a, c, d}."
+   ],
+   "optionReasons": [
+    "Serbest iki elemanı tek bir karar gibi sayar: 2¹ = 2.",
+    "Listeyi eksik yazar: {a}, {a, c}, {a, d} sayıp {a, c, d}’yi unutur.",
+    "Yalnız a’yı sabitler, b’yi serbest bırakır: 2³ = 8.",
+    "Doğru: yalnız c ve d serbest, 2·2 = 4.",
+    "Koşulları hiç uygulamaz, bütün alt kümeleri sayar: 2⁴ = 16."
+   ],
+   "commonError": "Zorunlu ya da yasak elemanları da serbest elemanlar gibi 2 ile çarpmak.",
+   "check": "Bulunan dört kümenin hepsinde a var, hiçbirinde b yok; c ve d’nin dört farklı birleşimi tamam."
+  }
+ },
+ {
+  "id": "kumeler-014-5",
+  "h": "18ce5a1b44629d",
+  "guidance": {
+   "knowledge": [
+    "A ∪ B (birleşim): A’da ya da B’de olan bütün elemanlar; her eleman bir kez sayılır.",
+    "A ∩ B (kesişim): hem A’da hem B’de olan elemanlar.",
+    "Sayma kuralı: s(A ∪ B) = s(A) + s(B) − s(A ∩ B)."
+   ],
+   "strategy": "s(A) ile s(B) toplanınca ortak elemanlar iki kez sayıldığı için kesişim bir kez çıkarılır.",
+   "steps": [
+    "s(A) + s(B) = 18 + 16 = 34; ortak 7 eleman burada iki kez sayıldı.",
+    "Fazladan sayılan kesişimi bir kez çıkar: 34 − 7 = 27.",
+    "s(A ∪ B) = 27."
+   ],
+   "optionReasons": [
+    "Birleşim yerine kesişimi yazar: 7.",
+    "25 için ortak sayımın 34 − 25 = 9 olması gerekir; verilen kesişim 7’dir.",
+    "Toplamı alır ama ortak elemanları çıkarmayı unutur: 18 + 16 = 34.",
+    "Kesişimi çıkarmak yerine ekler: 34 + 7 = 41.",
+    "Doğru: 18 + 16 − 7 = 27."
+   ],
+   "commonError": "İki küme sayısını toplayıp ortak elemanları çıkarmayı unutmak.",
+   "check": "Parçalarla say: yalnız A 18 − 7 = 11, yalnız B 16 − 7 = 9, ortak 7; 11 + 9 + 7 = 27."
+  }
+ },
+ {
+  "id": "kumeler-014-6",
+  "h": "1b130ac34efe8e",
+  "guidance": {
+   "knowledge": [
+    "E (evrensel küme): sorudaki bütün kişileri içeren küme, burada 40 kişi.",
+    "En az birine katılanlar A ∪ B’dir; hiçbirine katılmayanlar bunun dışındakilerdir: s(E) − s(A ∪ B)."
+   ],
+   "strategy": "Hiçbirine katılmayanları bulmak için önce en az birine katılanları (birleşimi) sayar, sonra evrenden çıkarırsın.",
+   "steps": [
+    "Birleşim: 22 + 19 − 8 = 41 − 8 = 33 kişi.",
+    "Hiçbirine katılmayan: 40 − 33 = 7 kişi."
+   ],
+   "optionReasons": [
+    "Doğru: 40 − (22 + 19 − 8) = 40 − 33 = 7.",
+    "22 ve 19’u doğrudan 40’tan çıkarır: 40 − 41 = −1 bulur, olanaksız deyip sıfır seçer.",
+    "Her ikisine katılanları (8) hiçbirine katılmayan sanır.",
+    "Yalnız B’ye katılanları bulur: 19 − 8 = 11.",
+    "Yalnız A’ya katılanları bulur: 22 − 8 = 14."
+   ],
+   "commonError": "A ve B sayılarını evrenden ayrı ayrı çıkarıp ortak kişileri iki kez çıkarmak.",
+   "check": "Bölgeleri topla: yalnız A 14, yalnız B 11, ortak 8, hiçbiri 7; 14 + 11 + 8 + 7 = 40."
+  }
+ },
+ {
+  "id": "kumeler-014-7",
+  "h": "11534072357c4b",
+  "guidance": {
+   "knowledge": [
+    "A ∪ B: A’nın ve B’nin bütün elemanları, tekrarsız.",
+    "Tümleyen (′): evrensel küme E içinde olup verilen kümede olmayan elemanlar. (A ∪ B)′, E’de olup A ∪ B’de olmayanlardır."
+   ],
+   "strategy": "Önce parantezin içini (birleşimi) listele, sonra E’de bu listenin dışında kalanları seç.",
+   "steps": [
+    "A ∪ B: {1, 2, 3, 4} ile {3, 4, 5} birleşir, {1, 2, 3, 4, 5}.",
+    "E = {1, 2, 3, 4, 5, 6, 7, 8} içinde bu listede olmayanlar: 6, 7, 8.",
+    "(A ∪ B)′ = {6, 7, 8}."
+   ],
+   "optionReasons": [
+    "A’da olup B’de olmayanları (A ∖ B) alır: {1, 2}.",
+    "Doğru: E’de birleşimin dışında kalan 6, 7, 8.",
+    "Kesişimi yazar: A ∩ B = {3, 4}.",
+    "Yalnız A’nın tümleyenini alır: E − A = {5, 6, 7, 8}; 5 B’de olduğu için birleşimdedir.",
+    "Birleşimin evrenin tamamını kapladığını sanır; 6, 7, 8 hiçbir kümede yok."
+   ],
+   "commonError": "Birleşimin tümleyeni yerine yalnız bir kümenin tümleyenini ya da ortak olmayanları almak.",
+   "check": "A ∪ B (5 eleman) ile tümleyeni (3 eleman) birleşince E’nin 8 elemanı tam çıkar: 5 + 3 = 8."
+  }
+ },
+ {
+  "id": "kumeler-014-8",
+  "h": "12682ffefd01e1",
+  "guidance": {
+   "knowledge": [
+    "A ∖ B (fark): A’da olup B’de olmayan elemanlar.",
+    "Fark işleminde sıra önemlidir: A ∖ B ile B ∖ A genellikle farklıdır."
+   ],
+   "strategy": "A’nın her elemanını tek tek alıp B’de olup olmadığına bakarsın; B’de olanları silersin.",
+   "steps": [
+    "1: A’da var, B’de yok, kalır.",
+    "2: A’da var, B’de yok, kalır.",
+    "3: B’de de var, çıkarılır.",
+    "A ∖ B = {1, 2}."
+   ],
+   "optionReasons": [
+    "Sırayı ters çevirip B ∖ A’yı bulur: {4}.",
+    "Farkı kesişimle karıştırır: A ∩ B = {3}.",
+    "Doğru: A’da olup B’de olmayanlar 1 ve 2.",
+    "Farkı birleşimle karıştırır: {1, 2, 3, 4}.",
+    "B’de A’dan bir eleman var diye A’nın tamamını silinir sanır; yalnız 3 çıkarılır."
+   ],
+   "commonError": "A ∖ B ile B ∖ A’yı karıştırıp sırayı ters uygulamak.",
+   "check": "A ∖ B ile A ∩ B birleşince A geri gelir: {1, 2} ∪ {3} = {1, 2, 3}."
+  }
+ },
+ {
+  "id": "kumeler-014-9",
+  "h": "01931e7650ebe3",
+  "guidance": {
+   "knowledge": [
+    "En az birine katılan: A ∪ B. Her ikisine katılan: A ∩ B.",
+    "Tam birine katılan: yalnız A’ya ya da yalnız B’ye katılan; sayısı s(A ∪ B) − s(A ∩ B)."
+   ],
+   "strategy": "Bireysel küme sayıları verilmediği için birleşimi evrenden bulur, sonra iki etkinliğe birden katılanları çıkarırsın.",
+   "steps": [
+    "En az birine katılan: 30 − 5 = 25 kişi.",
+    "Bu 25 kişinin 6’sı iki etkinliğe de katılıyor.",
+    "Tam birine katılan: 25 − 6 = 19 kişi."
+   ],
+   "optionReasons": [
+    "Hiçbirine ve ikisine katılanları toplar: 5 + 6 = 11; bu, tam birine katılmayanların sayısıdır.",
+    "Hiçbirine katılmayanları çıkarmayı unutur: 30 − 6 = 24.",
+    "En az birine katılanları (birleşimi) yazar: 30 − 5 = 25.",
+    "Doğru: 30 − 5 − 6 = 19.",
+    "29 için yalnız 1 kişinin tam bire girmemesi gerekir; oysa 5 + 6 = 11 kişi dışarıda."
+   ],
+   "commonError": "“En az birine” ile “tam birine” ifadelerini aynı sanmak.",
+   "check": "Bölgeler: tam bir 19, ikisi 6, hiçbiri 5; 19 + 6 + 5 = 30."
+  }
+ },
+ {
+  "id": "kumeler-014-10",
+  "h": "0113d3cc0cb221",
+  "guidance": {
+   "knowledge": [
+    "Kümelerin eşitliği (A = B): iki küme tam olarak aynı elemanları taşır.",
+    "A ⊆ B: A’nın her elemanı B’dedir. Eleman sayısının eşit olması kümelerin eşit olmasını gerektirmez."
+   ],
+   "strategy": "Her şıkkı eleman düzeyinde sına: ortak eleman var mı, sayılar eşit mi, boş küme mi.",
+   "steps": [
+    "s(A) = 2 (1 ve 2), s(B) = 2 (a ve b); sayılar eşit.",
+    "a ve b, 1 ve 2’den farklı olduğundan ortak eleman yok: A ∩ B = ∅.",
+    "Aynı elemanları taşımadıkları için A ≠ B; doğru ifade sayıların eşit, kümelerin farklı olduğudur."
+   ],
+   "optionReasons": [
+    "Eleman sayısı eşitliğini küme eşitliği sanır; 1, B’nin elemanı değildir.",
+    "A ⊆ B için 1 ve 2’nin B’de olması gerekir; B’nin elemanları a ve b’dir.",
+    "B’nin elemanlarını harf diye yok sayar; B’nin a ve b olmak üzere iki elemanı vardır.",
+    "A ∩ B = A için A’nın her elemanı B’de olmalıdır; kesişim ∅’dir.",
+    "Doğru: s(A) = s(B) = 2 ama ortak eleman olmadığından A ≠ B."
+   ],
+   "commonError": "Aynı sayıda elemanı olan kümeleri eşit küme sanmak.",
+   "check": "Tek eleman yeter: 1 ∈ A ama 1 ∉ B; bu yüzden A = B ve A ⊆ B yanlıştır."
+  }
+ },
+ {
+  "id": "kartezyen-carpim-014-1",
+  "h": "0aaa93b8dba2ec",
+  "guidance": {
+   "knowledge": [
+    "Kartezyen çarpım A × B: birinci bileşeni A’dan, ikincisi B’den seçilen bütün sıralı ikililerin kümesidir.",
+    "Sonlu kümelerde s(A × B) = s(A) · s(B)."
+   ],
+   "strategy": "Her A elemanı B’nin her elemanıyla bir çift oluşturduğu için seçim sayılarını çarparsın.",
+   "steps": [
+    "s(A) = 2, s(B) = 3.",
+    "Her A elemanı 3 çift kurar: 1 için (1, 3), (1, 4), (1, 5); 2 için de üç çift.",
+    "s(A × B) = 2·3 = 6."
+   ],
+   "optionReasons": [
+    "Doğru: 2·3 = 6 sıralı ikili.",
+    "Yalnız A’nın eleman sayısını yazar: 2.",
+    "Her A elemanını yalnız bir B elemanıyla eşleştirir ya da s(B)’yi yazar: 3.",
+    "Sayıları çarpmak yerine toplar: 2 + 3 = 5.",
+    "B’yi kendisiyle çarpar: 3·3 = 9."
+   ],
+   "commonError": "Eleman sayılarını çarpmak yerine toplamak.",
+   "check": "Çiftleri listele: (1,3), (1,4), (1,5), (2,3), (2,4), (2,5); altı tane."
+  }
+ },
+ {
+  "id": "kartezyen-carpim-014-2",
+  "h": "06ca8c5589e5d1",
+  "guidance": {
+   "knowledge": [
+    "Sıralı ikili (x, y): sırası önemli olan çifttir; (2, 4) ile (4, 2) farklıdır.",
+    "(x, y) ∈ A × B olması için x ∈ A ve y ∈ B olmalıdır."
+   ],
+   "strategy": "Her şıkta birinci bileşenin A’da, ikinci bileşenin B’de olup olmadığını ayrı ayrı kontrol edersin.",
+   "steps": [
+    "A = {1, 2}, B = {4, 5}; birinci bileşen 1 ya da 2, ikinci bileşen 4 ya da 5 olmalı.",
+    "(2, 4): 2 ∈ A, 4 ∈ B; iki koşul da sağlanıyor.",
+    "Diğer şıklarda en az bir bileşen yanlış kümeden geliyor; yanıt (2, 4)."
+   ],
+   "optionReasons": [
+    "Sırayı ters çevirir: 4 ∈ B birinci, 2 ∈ A ikinci konumda; bu B × A’nın elemanıdır.",
+    "Doğru: 2 ∈ A ve 4 ∈ B.",
+    "İki bileşeni de A’dan alır; 2, B’nin elemanı değildir.",
+    "İki bileşeni de B’den alır; 4, A’nın elemanı değildir.",
+    "İki bileşeni A’dan, üstelik ters sırada alır; 1 ∉ B."
+   ],
+   "commonError": "Sıralı ikilide sırayı önemsemeyip (4, 2) ile (2, 4)’ü aynı saymak.",
+   "check": "A × B’nin dört elemanı (1,4), (1,5), (2,4), (2,5); şıklardan yalnız (2, 4) bu listede."
+  }
+ },
+ {
+  "id": "kartezyen-carpim-014-3",
+  "h": "140978de6c163e",
+  "guidance": {
+   "knowledge": [
+    "İki sıralı ikili, ancak aynı konumdaki bileşenleri eşitse eşittir: (a, b) = (c, d) ise a = c ve b = d.",
+    "Bu kural iki ayrı denklem verir; toplamlarının eşit olması yetmez."
+   ],
+   "strategy": "Konum konum eşitleyip iki basit denklem kurar, her birini ayrı çözersin.",
+   "steps": [
+    "Birinci bileşenler: 2x + 1 = 7. İki taraftan 1 çıkar: 2x = 6; iki tarafı 2’ye böl: x = 3.",
+    "İkinci bileşenler: 3 = y − 2. İki tarafa 2 ekle: y = 5.",
+    "x + y = 3 + 5 = 8."
+   ],
+   "optionReasons": [
+    "Toplam yerine farkı alır: y − x = 5 − 3 = 2.",
+    "Yalnız x’i bulup yanıt sanır: 3.",
+    "Doğru: x = 3, y = 5; x + y = 8.",
+    "Yalnız y’yi bulup yanıt sanır: 5.",
+    "Konumları karıştırır: y − 2 = 7’den y = 9, 2x + 1 = 3’ten x = 1 bulur; 1 + 9 = 10."
+   ],
+   "commonError": "Bileşenleri çapraz eşitlemek ya da iki ikilinin bileşen toplamlarını eşitlemek.",
+   "check": "Yerine koy: (2·3 + 1, 3) = (7, 3) ve (7, 5 − 2) = (7, 3); ikililer eşit."
+  }
+ },
+ {
+  "id": "kartezyen-carpim-014-4",
+  "h": "1e077efed73aa7",
+  "guidance": {
+   "knowledge": [
+    "∅: hiç elemanı olmayan küme. {∅} ise tek elemanı boş küme olan, yani boş olmayan bir kümedir.",
+    "A × B’nin bir elemanı için birinci bileşen A’dan, ikincisi B’den seçilmelidir; kümelerden biri boşsa seçim yapılamaz ve çarpım ∅ olur."
+   ],
+   "strategy": "Bir çift kurmak için her iki konumdan seçim gerektiği için, boş kümenin hangi konumda olduğuna bakmadan çarpımın boş olduğunu görürsün.",
+   "steps": [
+    "A × B: birinci bileşen A = ∅’den seçilemez; hiç çift kurulamaz, A × B = ∅.",
+    "B × A: ikinci bileşen A = ∅’den seçilemez; B × A = ∅.",
+    "Sayıyla doğrula: 0·2 = 0 ve 2·0 = 0; ikisi de ∅."
+   ],
+   "optionReasons": [
+    "Boş küme ile boş kümeyi içeren {∅}’yi karıştırır; {∅}’nin bir elemanı vardır.",
+    "Çarpımda sıranın boşluğu etkilediğini sanır; B × A’da da ikinci bileşen seçilemez.",
+    "Ters yönde aynı hatayı yapar; A × B’de de birinci bileşen seçilemez.",
+    "Doğru: iki çarpımda da bir konum boş kümeden seçilmeli, ikisi de ∅.",
+    "Yalnız s(B) = 2’ye bakar; s(A × B) = 0·2 = 0’dır."
+   ],
+   "commonError": "Boş küme ile {∅} kümesini aynı sanmak.",
+   "check": "s(A × B) = s(A)·s(B) = 0·2 = 0; eleman sayısı 0 olan tek küme ∅’dir."
+  }
+ },
+ {
+  "id": "kartezyen-carpim-014-5",
+  "h": "1e59a41b5de94f",
+  "guidance": {
+   "knowledge": [
+    "A × B: birinci bileşen A’da, ikinci B’de. B × A: birinci bileşen B’de, ikinci A’da.",
+    "Bir çiftin iki çarpımda da bulunması için her bileşeni hem A’da hem B’de, yani A ∩ B’de olmalıdır."
+   ],
+   "strategy": "Ortak çiftin her iki konumu da iki kümede birden bulunmak zorunda; bu yüzden önce A ∩ B’yi bulup onunla çift kurarsın.",
+   "steps": [
+    "A ∩ B = {1, 2} ∩ {2, 3} = {2}.",
+    "Her iki konum da {2}’den seçilir: tek çift (2, 2).",
+    "Listeyle doğrula: A × B = {(1,2), (1,3), (2,2), (2,3)}, B × A = {(2,1), (2,2), (3,1), (3,2)}; ortak yalnız (2, 2). Eleman sayısı 1."
+   ],
+   "optionReasons": [
+    "Sıra farklı diye iki çarpımın hiç ortak çifti olmadığını sanır; (2, 2) iki çarpımda da var.",
+    "(2, 2)’ye ek olarak (2, 3)’ü de ortak sanır; (2, 3) B × A’da yok çünkü 3 ∉ A.",
+    "A ∪ B = {1, 2, 3} kümesinin eleman sayısını yazar: 3.",
+    "Yalnız A × B’nin eleman sayısını yazar: 2·2 = 4.",
+    "Doğru: ortak tek çift (2, 2)."
+   ],
+   "commonError": "Aynı elemanın bir çiftte iki konumda birden kullanılabileceğini düşünmemek.",
+   "check": "Kural: (A × B) ∩ (B × A) = (A ∩ B) × (A ∩ B); 1·1 = 1."
+  }
+ },
+ {
+  "id": "kartezyen-carpim-014-6",
+  "h": "179b7b6f4a2a46",
+  "guidance": {
+   "knowledge": [
+    "Sonlu kümelerde s(A × B) = s(A) · s(B).",
+    "Bilinmeyen eleman sayısı, çarpımdan bilinen çarpana bölünerek bulunur; bölen sıfır olmamalıdır."
+   ],
+   "strategy": "Eleman sayısı ilişkisi bir çarpım denklemi verdiği için s(B)’yi bölmeyle bulursun; s(A) = 3 ≠ 0 olduğundan bölme geçerli.",
+   "steps": [
+    "Denklem: 12 = 3 · s(B).",
+    "İki tarafı 3’e böl: s(B) = 12 / 3 = 4."
+   ],
+   "optionReasons": [
+    "Doğru: 12 / 3 = 4.",
+    "s(B) = 0 olsaydı s(A × B) = 3·0 = 0 olurdu, 12 değil.",
+    "B’nin A kadar elemanı olduğunu varsayar: 3; o zaman çarpım 9 olurdu.",
+    "Bölme yerine 12’yi ikiye böler: 6; 3·6 = 18 eder.",
+    "Bölmek yerine çıkarır: 12 − 3 = 9."
+   ],
+   "commonError": "Çarpım ilişkisini toplama gibi düşünüp eleman sayılarını çıkarmak.",
+   "check": "3·4 = 12; verilen s(A × B) ile aynı."
+  }
+ },
+ {
+  "id": "kartezyen-carpim-014-7",
+  "h": "00d47022266106",
+  "guidance": {
+   "knowledge": [
+    "A × B’de her yeni B elemanı, A’nın her elemanıyla bir çift oluşturur.",
+    "Yeni oluşan çift sayısı = s(A) · (eklenen B elemanı sayısı)."
+   ],
+   "strategy": "Soru toplamı değil yalnız yeni çiftleri istediği için, yeni eleman 5’in kurduğu çiftleri sayarsın.",
+   "steps": [
+    "Eski çarpım: 2·2 = 4 çift.",
+    "5 eklenince yeni çiftler: (1, 5) ve (2, 5), yani 2·1 = 2.",
+    "Yeni toplam 2·3 = 6; artış 6 − 4 = 2."
+   ],
+   "optionReasons": [
+    "Eklenen tek eleman için tek çift oluştuğunu sanır; 5, A’nın iki elemanıyla eşleşir.",
+    "Doğru: (1, 5) ve (2, 5) olmak üzere 2 yeni çift.",
+    "B’nin yeni eleman sayısını yazar: 3.",
+    "Eski çift sayısını yazar: 2·2 = 4.",
+    "Yeni toplamı yazar: 2·3 = 6; soru yalnız yeni oluşanları istiyor."
+   ],
+   "commonError": "Yeni oluşan çift sayısı yerine yeni toplam çift sayısını vermek.",
+   "check": "Fark yöntemi: 2·3 − 2·2 = 6 − 4 = 2."
+  }
+ },
+ {
+  "id": "kartezyen-carpim-014-8",
+  "h": "19fcebf40e0ec7",
+  "guidance": {
+   "knowledge": [
+    "B ∪ C: B’nin ve C’nin bütün elemanları, tekrarsız.",
+    "A × (B ∪ C): birinci bileşen A’dan, ikinci bileşen B ∪ C’den seçilen çiftlerdir; eleman sayısı s(A)·s(B ∪ C)."
+   ],
+   "strategy": "Önce parantezin içini bulup ikinci kaynağın eleman sayısını belirler, sonra çarpım kuralını uygularsın.",
+   "steps": [
+    "B ∪ C = {3} ∪ {4, 5} = {3, 4, 5}, 3 eleman.",
+    "s(A) = 2.",
+    "s(A × (B ∪ C)) = 2·3 = 6."
+   ],
+   "optionReasons": [
+    "Yalnız A’nın eleman sayısını yazar: 2.",
+    "Yalnız B ∪ C’nin eleman sayısını yazar: 3.",
+    "Doğru: 2·3 = 6.",
+    "Birleşim yerine yalnız C’yi kullanır: 2·2 = 4.",
+    "Çarpım yerine alt küme sayısıyla karıştırır: 2³ = 8."
+   ],
+   "commonError": "Parantez içindeki birleşimi kurmadan yalnız bir kümeyi kullanmak.",
+   "check": "Dağılma kuralıyla: A × B 2·1 = 2, A × C 2·2 = 4 çift; 2 + 4 = 6."
+  }
+ },
+ {
+  "id": "kartezyen-carpim-014-9",
+  "h": "1ea2010271e6d3",
+  "guidance": {
+   "knowledge": [
+    "A × B’nin çiftlerinde birinci bileşenler A’nın, ikinci bileşenler B’nin elemanlarıdır.",
+    "Çarpım boş değilse ve bütün çiftler verilmişse, birinci bileşenlerin kümesi A’yı, ikincilerin kümesi B’yi tam verir."
+   ],
+   "strategy": "Çiftlerden birinci ve ikinci bileşenleri ayrı listeleyip A ile B’yi kurar, sonra birleşimini alırsın.",
+   "steps": [
+    "Birinci bileşenler: 1, 1, 2, 2; A = {1, 2}.",
+    "İkinci bileşenler: 3, 5, 3, 5; B = {3, 5}.",
+    "A ∪ B = {1, 2, 3, 5}."
+   ],
+   "optionReasons": [
+    "Yalnız A’yı yazar: {1, 2}.",
+    "Yalnız B’yi yazar: {3, 5}.",
+    "Yalnız ilk iki çifte, (1, 3) ve (1, 5)’e bakar: {1, 3, 5}.",
+    "Doğru: A = {1, 2}, B = {3, 5}, birleşim {1, 2, 3, 5}.",
+    "Sayıları aralık gibi doldurup 4’ü ekler; 4 hiçbir çiftte geçmiyor."
+   ],
+   "commonError": "Çiftlerde geçmeyen ara sayıları kümeye eklemek.",
+   "check": "A × B = {1, 2} × {3, 5} çarpımı tam olarak verilen dört çifti üretir: 2·2 = 4."
+  }
+ },
+ {
+  "id": "kartezyen-carpim-014-10",
+  "h": "10e45198802d30",
+  "guidance": {
+   "knowledge": [
+    "A × B’nin çiftleri (a, b) biçimindedir; a ∈ A, b ∈ B.",
+    "Sıkı küçüklük a < b: a, b’den kesinlikle küçük olmalı; a = b olan çiftler koşulu sağlamaz."
+   ],
+   "strategy": "Çarpımda yalnız 2·2 = 4 çift olduğu için hepsini listeleyip koşulu tek tek denetlersin.",
+   "steps": [
+    "A × B = {(0, 1), (0, 2), (1, 1), (1, 2)}.",
+    "Denetle: 0 < 1 evet, 0 < 2 evet, 1 < 1 hayır (eşit), 1 < 2 evet.",
+    "Koşulu sağlayan çift sayısı: 3."
+   ],
+   "optionReasons": [
+    "(0, 1) çiftinde bile 0 < 1 sağlandığından sonuç sıfır olamaz.",
+    "Sıkı küçüklük yerine eşitliği arar, yalnız (1, 1)’i sayar.",
+    "Yalnız birinci bileşeni 0 olan çiftleri sayar; (1, 2)’de de 1 < 2’dir.",
+    "Eşitliği de kabul eder (≤ gibi) ve dört çiftin hepsini sayar.",
+    "Doğru: (0, 1), (0, 2), (1, 2) olmak üzere 3 çift."
+   ],
+   "commonError": "Sıkı küçüklükte (<) eşit bileşenli çifti de saymak.",
+   "check": "Tümleyenle say: 4 çiftten koşulu bozan yalnız (1, 1); 4 − 1 = 3."
+  }
+ },
+ {
+  "id": "mantik-onerme-014-1",
+  "h": "11bb35b3f07d7e",
+  "guidance": {
+   "knowledge": [
+    "Önerme: doğru ya da yanlış olduğu kesin olarak söylenebilen yargı bildiren cümledir.",
+    "Emir, soru, dilek cümleleri ve ölçütü belirtilmemiş beğeni ifadeleri doğru ya da yanlış diye değerlendirilemez; önerme değildir."
+   ],
+   "strategy": "Her şıkka “Bu cümle doğru mu, yanlış mı?” diye sor; yanıtı kesin olan tek cümleyi seç.",
+   "steps": [
+    "“9 sayısı 3’ün katıdır”: 9 = 3·3 olduğu için kesin doğrudur; önermedir.",
+    "“Kapıyı kapat” emir, “Yarın buluşalım mı?” soru, “Keşke hava güzel olsa” dilektir; doğru ya da yanlış denemez.",
+    "“En lezzetli meyve budur” kişiden kişiye değişen bir beğenidir; ölçütü yoktur. Yanıt ilk cümle."
+   ],
+   "optionReasons": [
+    "Doğru: 9 = 3·3 olduğundan cümle kesin doğru bir yargıdır.",
+    "Emir cümlesidir; bir istek bildirir, doğru ya da yanlış olamaz.",
+    "Soru cümlesidir; yargı bildirmez, yanıt bekler.",
+    "Dilek cümlesidir; bir isteği anlatır, gerçeklik iddiası taşımaz.",
+    "Öznel beğenidir; ölçüt verilmediği için doğruluğu kişiye göre değişir."
+   ],
+   "commonError": "Bilgi içeriyor gibi görünen öznel beğeni cümlelerini önerme saymak.",
+   "check": "Cümlenin değilini kur: “9, 3’ün katı değildir” kesin yanlış; doğruluk değeri belirlenebiliyor."
+  }
+ },
+ {
+  "id": "mantik-onerme-014-2",
+  "h": "1f5b452471d642",
+  "guidance": {
+   "knowledge": [
+    "Doğruluk değeri: doğru için 1, yanlış için 0 yazılır.",
+    "∨ (veya): en az biri 1 ise 1. ∧ (ve): ikisi de 1 ise 1. q′ (q’nun değili): q’nun tersidir, q = 0 ise q′ = 1."
+   ],
+   "strategy": "İfade parantezle bölündüğü için önce parantezi ve q′’yü ayrı hesapla, sonra ∧ ile birleştir.",
+   "steps": [
+    "Parantez: p ∨ q = 1 ∨ 0 = 1.",
+    "Değil: q = 0 olduğundan q′ = 1.",
+    "Birleştir: 1 ∧ 1 = 1."
+   ],
+   "optionReasons": [
+    "q′ yerine q’yu kullanır: 1 ∧ 0 = 0.",
+    "Doğru: (1 ∨ 0) ∧ 1 = 1 ∧ 1 = 1.",
+    "Bağlaçları aritmetik toplama sanır: 1 + 1 = 2; doğruluk değeri yalnız 0 ya da 1’dir.",
+    "Değil işaretini eksi sanıp −1 yazar; q′ yalnız 0 ile 1’i yer değiştirir.",
+    "Bütün değerler verildiği için ifade belirlenebilir; bilinmeyen yok."
+   ],
+   "commonError": "Olumsuzlamayı unutup q′ yerine q’nun değerini kullanmak.",
+   "check": "∧’nin 1 olması için iki parça da 1 olmalı: p ∨ q = 1 ve q′ = 1; ikisi de sağlanıyor."
+  }
+ },
+ {
+  "id": "mantik-onerme-014-3",
+  "h": "0fb22db32861c9",
+  "guidance": {
+   "knowledge": [
+    "p ⇒ q (koşullu önerme, “p ise q”): p öncül, q sonuçtur.",
+    "Koşullu önerme yalnız 1 ⇒ 0 durumunda, yani öncül doğru, sonuç yanlışken yanlıştır; diğer üç durumda doğrudur."
+   ],
+   "strategy": "Koşullunun yanlış olduğu tek satırı bildiğin için verilen değerlerin o satır olup olmadığına bakarsın.",
+   "steps": [
+    "Verilen: p = 0, q = 0; ifade 0 ⇒ 0.",
+    "Yanlış olan tek satır 1 ⇒ 0; bu satır değil.",
+    "Öyleyse 0 ⇒ 0 = 1."
+   ],
+   "optionReasons": [
+    "⇒’yi ∧ gibi düşünür: iki parça yanlış diye sonucu da yanlış sanır.",
+    "Doğruluk değeri yalnız 0 ya da 1 olabilir; 2 bir doğruluk değeri değildir.",
+    "Doğru: koşullu yalnız 1 ⇒ 0’da yanlıştır, 0 ⇒ 0 = 1.",
+    "Yanlış öncülü negatif değer sanır; doğruluk değeri negatif olamaz.",
+    "Öncül yanlışken ifadenin anlamsız olduğunu sanır; tanıma göre değeri 1’dir."
+   ],
+   "commonError": "Öncülü yanlış olan koşullu önermeyi yanlış ya da tanımsız saymak.",
+   "check": "p ⇒ q ≡ p′ ∨ q: 1 ∨ 0 = 1; aynı sonuç."
+  }
+ },
+ {
+  "id": "mantik-onerme-014-4",
+  "h": "198adedd04b7a4",
+  "guidance": {
+   "knowledge": [
+    "Bir önermenin değili (olumsuzu), onun doğru olduğu her satırda yanlış, yanlış olduğu her satırda doğru olan ifadedir.",
+    "p ⇒ q yalnız p = 1, q = 0 iken yanlıştır. Ters: p′ ⇒ q′; karşıt: q ⇒ p; karşıt ters: q′ ⇒ p′."
+   ],
+   "strategy": "Değil, başlangıcın yanlış olduğu durumu anlatmalı; p ⇒ q yalnız bir satırda yanlış olduğu için o satırı tarif eden ifadeyi ararsın.",
+   "steps": [
+    "p ⇒ q yalnız p = 1 ve q = 0 iken yanlış.",
+    "Değili yalnız bu durumda doğru olmalı: “p doğru ve q yanlış”.",
+    "Bu durum p ∧ q′ ile yazılır."
+   ],
+   "optionReasons": [
+    "Ters önermeyi değil sanır; p = 1, q = 1 iken p ⇒ q de p′ ⇒ q′ de 1 olur, zıt değiller.",
+    "Karşıt önermeyi değil sanır; p = 1, q = 1 iken q ⇒ p de 1’dir, zıt değil.",
+    "Karşıt tersi değil sanır; q′ ⇒ p′ başlangıca denktir, zıttı değildir.",
+    "Doğru: p ∧ q′ yalnız p = 1, q = 0 iken doğrudur.",
+    "p′ ∨ q, p ⇒ q’nun kendisine denktir; değili değil."
+   ],
+   "commonError": "Koşullu önermenin değilini ters ya da karşıt önermeyle karıştırmak.",
+   "check": "p = 1, q = 0 için p ⇒ q = 0 ve p ∧ q′ = 1 ∧ 1 = 1; p = 0, q = 0 için 1 ve 0. Her satırda zıtlar."
+  }
+ },
+ {
+  "id": "mantik-onerme-014-5",
+  "h": "134483a783328d",
+  "guidance": {
+   "knowledge": [
+    "Denk önermeler: bütün doğruluk değeri atamalarında (dört satırda) aynı değeri alan önermelerdir.",
+    "Karşıt ters: hem sıra değişir hem iki parça olumsuzlanır: p ⇒ q için q′ ⇒ p′."
+   ],
+   "strategy": "Denklik dört satırın hepsinde aynı sonucu gerektirdiği için şıkları özellikle p = 0, q = 1 ve p = 1, q = 0 satırlarında sınarsın.",
+   "steps": [
+    "p ⇒ q yalnız p = 1, q = 0 iken 0’dır.",
+    "q′ ⇒ p′ yalnız q′ = 1, p′ = 0 iken, yani q = 0, p = 1 iken 0’dır; aynı satır.",
+    "Diğer üç satırda ikisi de 1; öyleyse q′ ⇒ p′ ile p ⇒ q denktir."
+   ],
+   "optionReasons": [
+    "Karşıt önermedir; p = 0, q = 1 iken p ⇒ q = 1 ama q ⇒ p = 1 ⇒ 0 = 0.",
+    "Ters önermedir; p = 0, q = 1 iken p′ ⇒ q′ = 1 ⇒ 0 = 0, başlangıç ise 1.",
+    "Başlangıcın değilidir; her satırda p ⇒ q’nun tersini verir.",
+    "Çift koşullu p ⇔ q, p = 0, q = 1 iken 0 olur; başlangıç 1’dir.",
+    "Doğru: q′ ⇒ p′ de yalnız p = 1, q = 0 iken yanlıştır; dört satırda aynı."
+   ],
+   "commonError": "Karşıt (q ⇒ p) ya da ters (p′ ⇒ q′) önermeyi başlangıca denk sanmak.",
+   "check": "Örnek: “Yağmur yağarsa yer ıslanır” ile “Yer ıslak değilse yağmur yağmamıştır” aynı şeyi söyler."
+  }
+ },
+ {
+  "id": "mantik-onerme-014-6",
+  "h": "0dde2c8447128f",
+  "guidance": {
+   "knowledge": [
+    "p ⊻ q (dışlayıcı “ya da”): yalnız biri doğruysa 1, ikisi de doğru ya da ikisi de yanlışsa 0.",
+    "p ∨ q (“veya”) ise ikisi birden doğruyken de 1’dir; iki bağlaç bu satırda ayrılır."
+   ],
+   "strategy": "Dışlayıcı ya da tanımı “yalnız biri” dediği için iki önermenin aynı anda doğru olup olmadığına bakarsın.",
+   "steps": [
+    "Verilen: p = 1, q = 1; ikisi birden doğru.",
+    "“Yalnız biri doğru” koşulu sağlanmıyor.",
+    "p ⊻ q = 0."
+   ],
+   "optionReasons": [
+    "Doğru: ikisi de doğru olduğundan “yalnız biri” koşulu bozulur, değer 0.",
+    "Dışlayıcı ya da yerine veya kullanır: 1 ∨ 1 = 1.",
+    "Değerleri aritmetik toplar: 1 + 1 = 2; doğruluk değeri 0 ya da 1’dir.",
+    "İki doğruyu birbirini götüren işaretli sayılar gibi düşünür; −1 bir doğruluk değeri değildir.",
+    "Değerler verildiği için sonuç kesin hesaplanır; belirsizlik yok."
+   ],
+   "commonError": "Dışlayıcı ya da (⊻) ile veya (∨) bağlacını karıştırmak.",
+   "check": "p ⊻ q, p ile q farklıyken 1’dir; 1 ile 1 aynı olduğu için 0."
+  }
+ },
+ {
+  "id": "mantik-onerme-014-7",
+  "h": "0e4b9115ae01ee",
+  "guidance": {
+   "knowledge": [
+    "“Her x için” yargısı: alanın bütün elemanları için doğru olmalıdır.",
+    "Karşı örnek: alanda bulunan ve yargıyı yanlış yapan tek bir elemandır; bir karşı örnek yargıyı çürütmeye yeter."
+   ],
+   "strategy": "Karşı örnek hem E’de olmalı hem x² > 0’ı bozmalı; bu yüzden yalnız E’nin üç elemanını tek tek denersin.",
+   "steps": [
+    "x = −1: (−1)² = 1 > 0, koşul sağlanıyor.",
+    "x = 1: 1² = 1 > 0, koşul sağlanıyor.",
+    "x = 0: 0² = 0 ve 0 > 0 yanlış; karşı örnek 0."
+   ],
+   "optionReasons": [
+    "Negatif sayının karesini negatif sanır; (−1)² = 1 > 0, koşul sağlanır.",
+    "Doğru: 0² = 0 ve 0 > 0 yanlıştır.",
+    "1² = 1 > 0; koşulu sağlar, çürütmez.",
+    "2 alanda yok; üstelik 2² = 4 > 0, koşulu sağlar.",
+    "Negatif diye seçer; −2 E’de yok ve (−2)² = 4 > 0."
+   ],
+   "commonError": "Karşı örneği alanın dışından seçmek ya da negatif sayıların karesini negatif sanmak.",
+   "check": "Yargı x² ≥ 0 olsaydı 0 da sağlardı; çürütme yalnız sıkı > işaretinden doğuyor."
+  }
+ },
+ {
+  "id": "mantik-onerme-014-8",
+  "h": "10632f678f57db",
+  "guidance": {
+   "knowledge": [
+    "∀: “her”, ∃: “en az bir, bazı” niceleyicisidir. ℝ gerçek sayılar kümesidir.",
+    "Değil alma kuralı: ∀’nin değili ∃, ∃’nin değili ∀ olur; koşul da olumsuzlanır. ≥’nin değili <’dir. Alan aynı kalır."
+   ],
+   "strategy": "İki değişiklik birlikte yapılmalı: niceleyici değişir ve eşitsizlik olumsuzlanır; alanı koruyarak her şıkkı bu iki ölçütle sınarsın.",
+   "steps": [
+    "Niceleyici: ∀ → ∃.",
+    "Koşul: x² ≥ 0’ın değili x² < 0 (≥ hem büyüğü hem eşiti kapsar, değili ikisini de dışlar).",
+    "Alan aynı: ℝ. Sonuç: ∃x ∈ ℝ, x² < 0."
+   ],
+   "optionReasons": [
+    "Yalnız eşitsizliği olumsuzlar, niceleyiciyi ∀ bırakır.",
+    "≥’nin değilini ≤ sanır; ≤ eşitliği de içerir, oysa değil eşitliği dışlamalı.",
+    "Doğru: niceleyici ∃’ye, koşul < 0’a döner, alan korunur.",
+    "Niceleyiciyi değiştirmez ve ≥’yi > yapar; ikisi de değil alma kuralına uymaz.",
+    "Yalnız niceleyiciyi değiştirir, koşulu olduğu gibi bırakır."
+   ],
+   "commonError": "≥ işaretinin değilini ≤ almak ya da niceleyiciyi değiştirmeyi unutmak.",
+   "check": "Başlangıç doğru bir yargı, değili yanlış olmalı: ∃x ∈ ℝ, x² < 0 yanlıştır çünkü hiçbir gerçek sayının karesi negatif değil."
+  }
+ },
+ {
+  "id": "mantik-onerme-014-9",
+  "h": "129cbd3bf58408",
+  "guidance": {
+   "knowledge": [
+    "Doğruluk ataması: her önermeye 1 ya da 0 değerinin verilmesidir; doğruluk tablosunda bir satırdır.",
+    "n bağımsız önerme için satır sayısı 2ⁿ’dir: her önerme iki değer alır ve seçimler çarpılır."
+   ],
+   "strategy": "Önermeler bağımsız olduğu için çarpma ilkesi kullanılır: her önerme için 2 seçenek, dört önerme için bunlar çarpılır.",
+   "steps": [
+    "Her önerme 2 değer alır: 1 ya da 0.",
+    "Dört bağımsız seçim: 2·2·2·2.",
+    "2⁴ = 16 atama."
+   ],
+   "optionReasons": [
+    "Önerme sayısını atama sayısı sanır: 4.",
+    "İki ile çarpar ama üs almaz: 2·4 = 8.",
+    "12, 2’nin hiçbir kuvveti değildir; 2·2·2·2 = 16 olur.",
+    "Doğru: 2⁴ = 16.",
+    "Üssü bir fazla alır: 2⁵ = 32."
+   ],
+   "commonError": "2ⁿ yerine 2·n hesaplamak.",
+   "check": "Küçük örnek: 2 önerme için satırlar 11, 10, 01, 00; 2² = 4. Her yeni önerme sayıyı ikiye katlar: 4, 8, 16."
+  }
+ },
+ {
+  "id": "mantik-onerme-014-10",
+  "h": "1f379a1c8c634b",
+  "guidance": {
+   "knowledge": [
+    "p ⇒ q doğruysa p, q için yeterli koşuldur: p olunca q kesin olur.",
+    "Aynı durumda q, p için gerekli koşuldur: q olmadan p olamaz."
+   ],
+   "strategy": "Önce p ⇒ q’nun doğru olduğunu gösterir, sonra öncülün yeterli, sonucun gerekli olduğu kuralını uygular, ters yönü bir karşı örnekle sınarsın.",
+   "steps": [
+    "n 4’e bölünüyorsa n = 4k; n = 2·(2k) olduğundan 2’ye de bölünür. p ⇒ q doğru.",
+    "Öncül p yeterli koşuldur; sonuç q gerekli koşuldur.",
+    "Ters yön: n = 2 için q doğru, p yanlış; q, p için yeterli değildir."
+   ],
+   "optionReasons": [
+    "Rolleri ters çevirir; n = 2 için q doğru ama p yanlış, q yeterli değildir.",
+    "Denklik için iki yön de geçmeli; n = 2’de q doğru, p yanlış.",
+    "n = 4 için p de q de doğrudur; birlikte doğru olabilirler.",
+    "Anlamı tersine çevirir; p ⇒ q, 4’e bölünen sayının çift olduğunu söyler.",
+    "Doğru: n = 4k ise n = 2·(2k); p yeterli, q gereklidir."
+   ],
+   "commonError": "Yeterli ve gerekli koşul rollerini yer değiştirmek.",
+   "check": "Gerekli koşulun değili sonucu engeller: n tekse (q yanlış) n 4’e de bölünemez (p yanlış)."
+  }
+ },
+ {
+  "id": "faiz-problemleri-012-1",
+  "h": "1c16aae6b3a261",
+  "guidance": {
+   "knowledge": [
+    "Basit faiz: faiz yalnız ilk yatırılan paraya (anapara) işler. F = A · r · t; A anapara, r yıllık oran (%12 = 0,12), t yıl cinsinden süre.",
+    "Ay cinsinden süre yıla çevrilir: 5 ay = 5/12 yıl."
+   ],
+   "strategy": "Oran yıllık verildiği için süreyi yıla çevirmen gerekir; sonra basit faiz formülünü uygularsın.",
+   "steps": [
+    "Bir yıllık faiz: 6000·0,12 = 720 TL.",
+    "Süre: 5 ay = 5/12 yıl.",
+    "Faiz: 720·5/12 = 3600 / 12 = 300 TL."
+   ],
+   "optionReasons": [
+    "Doğru: 6000·0,12·5/12 = 300 TL.",
+    "250 TL için aylık 50 TL faiz gerekir; gerçek aylık faiz 720 / 12 = 60 TL’dir.",
+    "Süreyi yarım yıl alır: 720 / 2 = 360 TL; 5 ay 6 ay değildir.",
+    "Yılı 6 ay sayar: 720·5/6 = 600 TL.",
+    "Süreyi dönüştürmeyip bir yıllık faizi yazar: 720 TL."
+   ],
+   "commonError": "Ay cinsinden süreyi 12’ye bölmeden yıllık oranla çarpmak.",
+   "check": "Aylık faiz 720 / 12 = 60 TL; 5 ayda 5·60 = 300 TL."
+  }
+ },
+ {
+  "id": "faiz-problemleri-012-2",
+  "h": "06adf137f4d112",
+  "guidance": {
+   "knowledge": [
+    "Basit faiz: F = A · r · t (A anapara, r yıllık oran, t yıl).",
+    "Anapara bilinmiyorsa denklem kurulup A, faizin r · t çarpımına bölünmesiyle bulunur."
+   ],
+   "strategy": "Faiz, oran ve süre verildiği için formülde tek bilinmeyen anaparadır; denklemi kurup bölmeyle çözersin.",
+   "steps": [
+    "Denklem: 900 = A·0,10·2.",
+    "Çarpanı birleştir: 0,10·2 = 0,20; 900 = 0,20·A.",
+    "İki tarafı 0,20’ye böl: A = 900 / 0,20 = 4500 TL."
+   ],
+   "optionReasons": [
+    "Faizi anapara sanır: 900 TL.",
+    "Doğru: 900 / (0,10·2) = 4500 TL.",
+    "Faizi süreyle çarpar: 900·2 = 1800 TL.",
+    "5000·0,10·2 = 1000 TL eder; 900 TL faiz vermez.",
+    "Süreyi unutur: 900 / 0,10 = 9000 TL."
+   ],
+   "commonError": "Süreyi denkleme katmayıp yalnız orana bölmek.",
+   "check": "Yerine koy: 4500·0,10 = 450 TL yıllık, 2 yılda 450·2 = 900 TL."
+  }
+ },
+ {
+  "id": "faiz-problemleri-012-3",
+  "h": "14649533783c77",
+  "guidance": {
+   "knowledge": [
+    "Yıllık oran: bir yılda anaparanın yüzde kaçının faiz olarak eklendiğidir.",
+    "Basit faizde faiz süreyle doğru orantılıdır: 6 ayın faizi bir yılınkinin yarısıdır."
+   ],
+   "strategy": "Soru yıllık oranı istediği için 6 aylık faizi önce bir yıla ölçekler, sonra anaparaya bölersin.",
+   "steps": [
+    "6 ay yarım yıldır; yıllık faiz 360·2 = 720 TL.",
+    "Yıllık oran: 720 / 4000 = 0,18.",
+    "0,18 = %18."
+   ],
+   "optionReasons": [
+    "Altı aylık oranı yıllık sanır: 360 / 4000 = 0,09 = %9.",
+    "%12 ile 6 ayın faizi 4000·0,12·0,5 = 240 TL olur, 360 değil.",
+    "Doğru: yıllık faiz 720 TL, 720 / 4000 = %18.",
+    "%24 ile 6 ayın faizi 4000·0,24·0,5 = 480 TL olur, 360 değil.",
+    "Faiz tutarını yüzde sanır: 360 TL’yi %36 yazar."
+   ],
+   "commonError": "Kısa dönemde bulunan oranı yıllık orana çevirmeyi unutmak.",
+   "check": "Formülle: 4000·0,18·6/12 = 720·0,5 = 360 TL; verilen faiz."
+  }
+ },
+ {
+  "id": "faiz-problemleri-012-4",
+  "h": "1423c42fa9bd7b",
+  "guidance": {
+   "knowledge": [
+    "Basit faiz: F = A · r · t; süre yıl cinsinden olmalıdır.",
+    "Gün cinsinden süre, yıl 360 gün kabul edilerek yıla çevrilir: 40 gün = 40/360 = 1/9 yıl."
+   ],
+   "strategy": "Süre gün olarak verildiği için sorunun dediği 360 günlük yılla bölüp yıla çevirir, sonra formülü uygularsın.",
+   "steps": [
+    "Bir yıllık faiz: 2000·0,18 = 360 TL.",
+    "Süre: 40/360 = 1/9 yıl.",
+    "Faiz: 360·1/9 = 40 TL."
+   ],
+   "optionReasons": [
+    "20 TL ancak 20 günlük faiz olur: 360·20/360 = 20; süre 40 gündür.",
+    "Süreyi 1/10 yıl alır: 360 / 10 = 36; oysa 40/360 = 1/9.",
+    "Yıllık faizin beşte birini alır: 360 / 5 = 72; 40 gün yılın 1/5’i değildir.",
+    "Doğru: 2000·0,18·40/360 = 40 TL.",
+    "Süreyi dönüştürmeyip bir yıllık faizi yazar: 2000·0,18 = 360 TL."
+   ],
+   "commonError": "Gün sayısını yıla çevirmeden doğrudan yıllık oranla çarpmak.",
+   "check": "Günlük faiz 360 / 360 = 1 TL; 40 günde 40 TL."
+  }
+ },
+ {
+  "id": "faiz-problemleri-012-5",
+  "h": "0bceb761e71f87",
+  "guidance": {
+   "knowledge": [
+    "Basit faizde her yılın faizi aynı anaparaya göre hesaplanır; faiz anaparaya eklenip yeniden faiz getirmez.",
+    "Son tutar (anapara + faiz) = A + A · r · t."
+   ],
+   "strategy": "Soru basit faiz dediği için iki yılın faizini aynı 5000 TL tabandan hesaplayıp anaparaya eklersin.",
+   "steps": [
+    "Yıllık faiz: 5000·0,20 = 1000 TL.",
+    "İki yıllık faiz: 1000·2 = 2000 TL.",
+    "Son tutar: 5000 + 2000 = 7000 TL."
+   ],
+   "optionReasons": [
+    "Yalnız faizi bulur, anaparayı eklemeyi unutur: 2000 TL.",
+    "Yalnız bir yılı hesaplar: 5000 + 1000 = 6000 TL.",
+    "Bileşik faiz uygular: 5000·1,2·1,2 = 7200 TL; soru basit faiz diyor.",
+    "Parayı iki katına çıkarır: 5000·2 = 10000 TL; bu %100 faiz demektir.",
+    "Doğru: 5000 + 5000·0,20·2 = 7000 TL."
+   ],
+   "commonError": "Basit faizi bileşik faizle karıştırıp ikinci yıl faizi büyümüş tabana uygulamak.",
+   "check": "Her yıl 1000 TL eklenir: 5000 → 6000 → 7000."
+  }
+ },
+ {
+  "id": "faiz-problemleri-012-6",
+  "h": "19b24410689b6d",
+  "guidance": {
+   "knowledge": [
+    "Bileşik faiz: her dönemin faizi anaparaya eklenir ve sonraki dönemde o da faiz getirir.",
+    "Yıllık %20 artış, parayı her yıl 1,20 ile çarpmak demektir; iki yılda çarpan 1,20·1,20 = 1,44."
+   ],
+   "strategy": "Faiz yeniden yatırıldığı için her yılın tabanı değişir; 1,20 çarpanını yıl yıl uygularsın.",
+   "steps": [
+    "1. yıl sonu: 5000·1,20 = 6000 TL.",
+    "2. yıl sonu: 6000·1,20 = 7200 TL; ikinci yılın faizi 6000·0,20 = 1200 TL."
+   ],
+   "optionReasons": [
+    "Doğru: 5000·1,20·1,20 = 7200 TL.",
+    "Yalnız basit faiz tutarını yazar: 5000·0,20·2 = 2000 TL.",
+    "Yalnız birinci yılın sonunu yazar: 6000 TL.",
+    "Basit faiz uygular: 5000 + 2000 = 7000 TL; ikinci yıl taban 6000’dir.",
+    "8000 için çarpan 8000 / 5000 = 1,6 olmalıydı; 1,2·1,2 = 1,44’tür."
+   ],
+   "commonError": "Yeniden yatırılan faizi unutup ikinci yılı da ilk anaparaya göre hesaplamak.",
+   "check": "Çarpanla: 5000·1,44 = 7200 TL."
+  }
+ },
+ {
+  "id": "faiz-problemleri-012-7",
+  "h": "19eaef4c74d81a",
+  "guidance": {
+   "knowledge": [
+    "Basit faizde bir yıllık faiz = anapara · oran.",
+    "Para iki parçaya bölünürse: bir parça x, diğeri 10000 − x; toplam faiz iki faizin toplamıdır."
+   ],
+   "strategy": "Parçaların toplamı ve toplam faiz bilindiği için tek bilinmeyenli denklem kurar, adım adım çözersin.",
+   "steps": [
+    "Denklem: 0,04·x + 0,10·(10000 − x) = 760.",
+    "Parantezi aç: 0,04x + 1000 − 0,10x = 760; x’leri topla: 1000 − 0,06x = 760.",
+    "İki taraftan 1000 çıkar: −0,06x = −240; iki tarafı −0,06’ya böl: x = 4000."
+   ],
+   "optionReasons": [
+    "0,06x = 240’ı çözerken 0,1’e böler: 240 / 0,1 = 2400.",
+    "Doğru: x = 4000; kontrol 160 + 600 = 760 TL.",
+    "0,04·3000 + 0,10·7000 = 120 + 700 = 820 TL eder, 760 değil.",
+    "x’i %10’luk kola yazar: 0,10x + 0,04(10000 − x) = 760, 0,06x = 360, x = 6000; bu %10 kısmıdır.",
+    "Faizi 10 ile çarpıp anapara sanır: 760·10 = 7600."
+   ],
+   "commonError": "Bilinmeyeni hangi kola verdiğini unutup diğer parçanın değerini yanıt yazmak.",
+   "check": "4000·0,04 = 160 TL ve 6000·0,10 = 600 TL; 160 + 600 = 760 TL."
+  }
+ },
+ {
+  "id": "faiz-problemleri-012-8",
+  "h": "0ff6718b8d7d0f",
+  "guidance": {
+   "knowledge": [
+    "Basit faiz: F = A · r · t; aynı anaparada faizi r · t çarpımı belirler.",
+    "Süre yıl cinsinden: 6 ay = 6/12 yıl, 3 ay = 3/12 yıl."
+   ],
+   "strategy": "Anapara ortak olduğu için iki durumun oran·süre katsayılarını karşılaştırmak yeter.",
+   "steps": [
+    "Birinci katsayı: 0,12·6/12 = 0,12·0,5 = 0,06.",
+    "İkinci katsayı: 0,24·3/12 = 0,24·0,25 = 0,06.",
+    "Katsayılar eşit; aynı anaparada getiriler eşittir."
+   ],
+   "optionReasons": [
+    "Yalnız süreye bakar: 6 ay, 3 ayın iki katı diye birinci getiriyi iki kat sanır.",
+    "Yalnız orana bakar: %24, %12’nin iki katı diye ikinci getiriyi iki kat sanır.",
+    "Doğru: iki katsayı da 0,06; getiriler eşit.",
+    "Süre oranını oranların tersiyle çarpar: 2·2 = 4 kat bulur.",
+    "Süreler soruda verilmiştir: 6 ay ve 3 ay; kıyas yapılabilir."
+   ],
+   "commonError": "Oran ile süreden yalnız birini karşılaştırıp diğerinin etkisini unutmak.",
+   "check": "1000 TL ile dene: 1000·0,06 = 60 TL; iki durumda da 60 TL."
+  }
+ },
+ {
+  "id": "faiz-problemleri-012-9",
+  "h": "0a4e7320265049",
+  "guidance": {
+   "knowledge": [
+    "Basit faiz: F = A · r · t.",
+    "Süre t = 0 ise çarpımın bir çarpanı sıfırdır ve faiz sıfır olur; para kaldığı gibi kalır."
+   ],
+   "strategy": "Formül bir çarpım olduğu için, çarpanlardan biri sıfırsa sonucun sıfır olacağını kullanırsın.",
+   "steps": [
+    "Değerler: A = 3000, r = 0,08, t = 0.",
+    "F = 3000·0,08·0 = 0 TL.",
+    "Son tutar 3000 + 0 = 3000 TL olarak kalır."
+   ],
+   "optionReasons": [
+    "Oranın sayısını faiz sanır: 8.",
+    "Süreyi sıfır yerine kısa bir dönem kabul edip yaklaşık değer alır; oysa 3000·0,08·0 = 0.",
+    "Bir yıllık faizi yazar: 3000·0,08 = 240 TL.",
+    "Doğru: t = 0 olduğundan F = 0 TL.",
+    "Faiz yerine anaparayı, yani son tutarı yazar: 3000 TL."
+   ],
+   "commonError": "Faiz ile son tutarı karıştırmak.",
+   "check": "Faiz süreyle doğru orantılı: 12 ayda 240 TL, 6 ayda 120 TL, 0 ayda 0 TL."
+  }
+ },
+ {
+  "id": "faiz-problemleri-012-10",
+  "h": "073681fdb85bee",
+  "guidance": {
+   "knowledge": [
+    "Basit faiz: F = A · (r/100) · t; burada t = 1 yıl.",
+    "Aynı anapara ve sürede faizler oranlarla doğru orantılıdır: F₁ / F₂ = r₁ / r₂."
+   ],
+   "strategy": "Anapara ve süre ortak olduğu için faizleri oranlayınca sadeleşirler; geriye r’li bir orantı kalır.",
+   "steps": [
+    "Orantı: r / (r − 2) = 300 / 200 = 3/2.",
+    "İçler dışlar çarpımı: 2r = 3(r − 2) = 3r − 6.",
+    "İki taraftan 2r çıkar ve 6 ekle: 6 = r. Yani r = 6."
+   ],
+   "optionReasons": [
+    "300/200 oranının payındaki 3’ü r sanır.",
+    "r − 2’nin değerini r sanır: 6 − 2 = 4.",
+    "r = 8 olsaydı oran 8 / 6 = 4/3 olurdu, 3/2 değil.",
+    "r = 10 olsaydı oran 10 / 8 = 5/4 olurdu, 3/2 değil.",
+    "Doğru: 6 / 4 = 3/2."
+   ],
+   "commonError": "İki faizin farkını (100 TL) ya da oranın sayılarını doğrudan yüzde sanmak.",
+   "check": "Anaparayı bul: A·0,06 = 300 ⇒ A = 5000 TL; 5000·0,04 = 200 TL tutuyor."
+  }
+ },
+ {
+  "id": "karisim-problemleri-012-1",
+  "h": "0bb08bf6952c9e",
+  "guidance": {
+   "knowledge": [
+    "Tuz yüzdesi = tuz kütlesi / toplam kütle · 100.",
+    "İki karışım birleşince tuzlar toplanır, toplam kütleler toplanır; yüzdeler toplanmaz."
+   ],
+   "strategy": "Kütleler eşit olmadığı için yüzdeleri doğrudan ortalayamazsın; her kaptaki tuzu grama çevirip toplarsın.",
+   "steps": [
+    "Birinci kaptaki tuz: 50·0,10 = 5 g.",
+    "İkinci kaptaki tuz: 150·0,30 = 45 g.",
+    "Toplam tuz 5 + 45 = 50 g; toplam kütle 50 + 150 = 200 g.",
+    "Yüzde: 50 / 200 = 0,25 = %25."
+   ],
+   "optionReasons": [
+    "Doğru: 50 g tuz 200 g içinde %25 eder.",
+    "%15 için 200 g’da 30 g tuz gerekir; gerçek tuz 5 + 45 = 50 g.",
+    "Kütleleri eşit sanıp düz ortalama alır: (10 + 30) / 2 = 20.",
+    "Büyük kaptaki yüzdeyi yazar: 30; az tuzlu kap bunu düşürür.",
+    "Yüzdeleri toplar: 10 + 30 = 40."
+   ],
+   "commonError": "Kütleleri farklı karışımların yüzdelerini düz ortalamak.",
+   "check": "Sonuç 10 ile 30 arasında ve kütlesi 3 kat büyük olan %30’a daha yakın olmalı: 25 − 10 = 15, 30 − 25 = 5, oran 3’e 1."
+  }
+ },
+ {
+  "id": "karisim-problemleri-012-2",
+  "h": "10d8d88861581f",
+  "guidance": {
+   "knowledge": [
+    "Şeker yüzdesi = şeker kütlesi / toplam kütle · 100.",
+    "Saf su eklemek şeker miktarını değiştirmez, yalnız toplam kütleyi artırır."
+   ],
+   "strategy": "Şeker sabit kaldığı için önce şeker gramını bulur, sonra yeni toplama bölersin.",
+   "steps": [
+    "Şeker: 120·0,25 = 30 g.",
+    "Yeni toplam: 120 + 80 = 200 g.",
+    "Yüzde: 30 / 200 = 0,15 = %15."
+   ],
+   "optionReasons": [
+    "Yüzdeyi eklenen suyun payıyla çarpar: 25·80/200 = 10.",
+    "Doğru: 30 g şeker 200 g’da %15 eder.",
+    "%20 için toplam 30 / 0,20 = 150 g olmalı; gerçek toplam 200 g.",
+    "Su eklemenin yüzdeyi değiştirmediğini sanır: %25.",
+    "Şekerin gram değerini (30 g) yüzde sanır."
+   ],
+   "commonError": "Su eklenince paydayı büyütmeyi unutmak.",
+   "check": "200 g’ın %15’i 30 g; başlangıçtaki şekerle aynı."
+  }
+ },
+ {
+  "id": "karisim-problemleri-012-3",
+  "h": "1537371c38687f",
+  "guidance": {
+   "knowledge": [
+    "Buharlaşma: yalnız su uçar; tuz kütlesi değişmez, toplam kütle azalır.",
+    "Tuz yüzdesi = tuz / toplam · 100."
+   ],
+   "strategy": "Tuz sabit kaldığı için tuz gramını bulur, sudaki azalmayı yalnız paydaya yansıtırsın.",
+   "steps": [
+    "Tuz: 100·0,20 = 20 g.",
+    "Yeni toplam: 100 − 20 = 80 g.",
+    "Yüzde: 20 / 80 = 1/4 = %25."
+   ],
+   "optionReasons": [
+    "Tuzu da %20 azaltıp 16 g alır ve eski 100 g’a böler: 16 / 100 = %16.",
+    "Buharlaşmanın oranı değiştirmediğini sanır: %20.",
+    "Doğru: 20 g tuz 80 g’da %25 eder.",
+    "Buharlaşan 20 g’ı yüzdelik artış sanır: 20·1,2 = 24.",
+    "Buharlaşan 20 g’ı yüzdeye ekler: 20 + 20 = 40."
+   ],
+   "commonError": "Buharlaşmada tuzun da azaldığını düşünmek.",
+   "check": "80 g’ın %25’i 20 g; tuz korunmuş."
+  }
+ },
+ {
+  "id": "karisim-problemleri-012-4",
+  "h": "06c6d90922a204",
+  "guidance": {
+   "knowledge": [
+    "Saf tuz eklemek hem tuz kütlesini hem toplam kütleyi aynı miktarda artırır.",
+    "Yüzde denklemi: (tuz) / (toplam) = istenen oran."
+   ],
+   "strategy": "Bilinmeyen x hem paya hem paydaya girdiği için oran denklemi kurar, paydayla çarpıp düz denkleme çevirirsin.",
+   "steps": [
+    "Başlangıç tuzu: 200·0,25 = 50 g.",
+    "Denklem: (50 + x) / (200 + x) = 0,40. İki tarafı (200 + x) ile çarp: 50 + x = 80 + 0,40x.",
+    "İki taraftan 0,40x ve 50 çıkar: 0,60x = 30.",
+    "İki tarafı 0,60’a böl: x = 50 g."
+   ],
+   "optionReasons": [
+    "Tuzu yalnız paya ekler: (50 + x) / 200 = 0,40, 50 + x = 80, x = 30.",
+    "(50 + 40) / 240 = 90 / 240 = 0,375 eder; %40’a ulaşmaz.",
+    "(50 + 60) / 260 = 110 / 260 ≈ 0,42 eder; %40’ı geçer.",
+    "Doğru: (50 + 50) / 250 = 100 / 250 = %40.",
+    "Hedef tuz miktarını (200·0,40 = 80 g) eklenecek tuz sanır."
+   ],
+   "commonError": "Eklenen saf tuzu yalnız paya yazıp toplam kütleye eklemeyi unutmak.",
+   "check": "Su miktarı değişmez: başta 150 g su; sonda 250 g’ın %60’ı = 150 g su."
+  }
+ },
+ {
+  "id": "karisim-problemleri-012-5",
+  "h": "056389acc59fc9",
+  "guidance": {
+   "knowledge": [
+    "Homojen karışımdan bir kısım alınınca alınan kısım da aynı yüzdede şeker taşır; şeker de su da aynı oranda azalır.",
+    "Saf su eklemek şekeri değiştirmez, toplamı artırır."
+   ],
+   "strategy": "İşlemler sırayla yapıldığı için şekeri ve toplamı her adımda ayrı güncellersin.",
+   "steps": [
+    "Başlangıç: şeker 100·0,30 = 30 g, toplam 100 g.",
+    "Beşte biri (20 g) alınır; içindeki şeker 20·0,30 = 6 g. Kalan: şeker 30 − 6 = 24 g, toplam 80 g.",
+    "20 g su eklenir: toplam 80 + 20 = 100 g, şeker 24 g.",
+    "Yüzde: 24 / 100 = %24."
+   ],
+   "optionReasons": [
+    "Alınan şeker miktarını (6 g) yüzde sanır.",
+    "%20 için 100 g’da 20 g şeker kalmalıydı; 30 − 6 = 24 g kalır.",
+    "%25 için 100 g’da 25 g şeker gerekir; kalan şeker 24 g’dır.",
+    "Eklenen 20 g suyu unutur: 24 / 80 = 0,30 = %30.",
+    "Doğru: 24 g şeker 100 g’da %24 eder."
+   ],
+   "commonError": "Homojen karışımdan alınan kısımda yalnız su gittiğini sanmak.",
+   "check": "Oran yöntemi: alma yüzdeyi değiştirmez (%30), suyla 80 g’dan 100 g’a seyrelme 30·80/100 = 24 verir."
+  }
+ },
+ {
+  "id": "karisim-problemleri-012-6",
+  "h": "12d5fde519ab28",
+  "guidance": {
+   "knowledge": [
+    "Tuz kütlesi = karışım kütlesi · tuz oranı.",
+    "İki karışım birleşince tuzlar ve toplam kütleler ayrı ayrı toplanır."
+   ],
+   "strategy": "Bilinmeyen kütle hem tuza hem toplama girdiği için oran denklemi kurar, paydayla çarparak çözersin.",
+   "steps": [
+    "Tuzlar: 80·0,10 = 8 g ve 0,30x g. Toplam: 80 + x.",
+    "Denklem: (8 + 0,30x) / (80 + x) = 0,20. İki tarafı (80 + x) ile çarp: 8 + 0,30x = 16 + 0,20x.",
+    "İki taraftan 0,20x ve 8 çıkar: 0,10x = 8; iki tarafı 0,10’a böl: x = 80."
+   ],
+   "optionReasons": [
+    "Doğru: (8 + 24) / 160 = 32 / 160 = %20.",
+    "(8 + 12) / 120 = 20 / 120 ≈ %16,7 eder; %20’ye ulaşmaz.",
+    "(8 + 18) / 140 = 26 / 140 ≈ %18,6 eder; %20’ye ulaşmaz.",
+    "(8 + 30) / 180 = 38 / 180 ≈ %21,1 eder; %20’yi geçer.",
+    "Kütleyi iki katına çıkarır: (8 + 48) / 240 = 56 / 240 ≈ %23,3; %20’yi geçer."
+   ],
+   "commonError": "Denklemi kurarken yalnız tuzları eşitleyip toplam kütleyi unutmak.",
+   "check": "%20, %10 ile %30’un tam ortası; bu ancak iki kütle eşitse olur, yani x = 80."
+  }
+ },
+ {
+  "id": "karisim-problemleri-012-7",
+  "h": "0f5f0a1ad01aa4",
+  "guidance": {
+   "knowledge": [
+    "Saf tuz eklemek: tuz ve toplam aynı miktarda artar.",
+    "Buharlaşma: yalnız su gider; tuz değişmez, toplam azalır."
+   ],
+   "strategy": "İki işlem art arda yapıldığı için tuzu (T) ve toplamı (S) her adımda ayrı güncelleyip en sonda bölersin.",
+   "steps": [
+    "Başlangıç: T = 240·0,25 = 60 g, S = 240 g.",
+    "20 g saf tuz: T = 60 + 20 = 80 g, S = 240 + 20 = 260 g.",
+    "60 g su uçar: T = 80 g, S = 260 − 60 = 200 g.",
+    "Yüzde: 80 / 200 = 0,40 = %40."
+   ],
+   "optionReasons": [
+    "İşlemlerin oranı değiştirmediğini sanır: %25.",
+    "Doğru: 80 g tuz 200 g’da %40 eder.",
+    "Buharlaşmayı unutur: 80 / 260 ≈ %30,8, yaklaşık 30 seçer.",
+    "%32 için 200 g’da 64 g tuz gerekir; tuz 60 + 20 = 80 g’dır.",
+    "Eklenen 20 g tuzu toplamdan çıkarır: 240 − 20 − 60 = 160, 80 / 160 = %50."
+   ],
+   "commonError": "Saf tuz eklerken toplam kütleyi artırmayı ya da buharlaşmada azaltmayı unutmak.",
+   "check": "Su ile kontrol: başta 180 g su, buharlaşmadan sonra 120 g su; 80 + 120 = 200 g."
+  }
+ },
+ {
+  "id": "karisim-problemleri-012-8",
+  "h": "16f95aa0c5f40a",
+  "guidance": {
+   "knowledge": [
+    "Homojen karışımdan alınan kısım, karışımla aynı yüzdede tuz taşır.",
+    "Yerine saf tuz konunca hem tuz hem toplam artar."
+   ],
+   "strategy": "Önce alınan kısımla giden tuzu hesaplar, sonra eklenen saf tuzu ekleyip yeni toplama bölersin.",
+   "steps": [
+    "Başlangıç tuzu: 100·0,40 = 40 g.",
+    "Dörtte bir (25 g) alınır; giden tuz 25·0,40 = 10 g. Kalan: 30 g tuz, 75 g toplam.",
+    "25 g saf tuz eklenir: tuz 30 + 25 = 55 g, toplam 75 + 25 = 100 g.",
+    "Yüzde: 55 / 100 = %55."
+   ],
+   "optionReasons": [
+    "Yerine saf su konmuş gibi hesaplar: 30 / 100 = %30.",
+    "İşlemlerin oranı değiştirmediğini sanır: %40.",
+    "Doğru: 55 g tuz 100 g’da %55 eder.",
+    "%50 için 100 g’da 50 g tuz gerekir; 30 + 25 = 55 g vardır.",
+    "Alınan kısmı yalnız su sanır: 40 + 25 = 65 g tuz, %65."
+   ],
+   "commonError": "Homojen karışımdan alınan kısımla tuzun da gittiğini unutmak.",
+   "check": "Su ile kontrol: başta 60 g su, 25 g karışımla 15 g su gider, 45 g kalır; 55 + 45 = 100 g."
+  }
+ },
+ {
+  "id": "karisim-problemleri-012-9",
+  "h": "1a3af431f07d77",
+  "guidance": {
+   "knowledge": [
+    "İki karışımın birleşimindeki yüzde, iki başlangıç yüzdesinin ağırlıklı ortalamasıdır.",
+    "İki miktar da pozitifse ağırlıklı ortalama her zaman iki yüzdenin arasında, yani %10’dan büyük ve %40’tan küçük olur."
+   ],
+   "strategy": "Sonuç başlangıç oranlarının arasında kalmak zorunda olduğu için aralığın dışındaki şıkkı ararsın; diğerlerini bir örnekle doğrularsın.",
+   "steps": [
+    "Ulaşılabilir aralık: %10 ile %40 arası.",
+    "15, 20, 25, 35 bu aralıkta; uygun kütle oranlarıyla elde edilir.",
+    "50 > 40; hiçbir pozitif kütle oranı %50 vermez."
+   ],
+   "optionReasons": [
+    "Elde edilebilir: 5 g %10 ile 1 g %40: (0,5 + 0,4) / 6 = 0,9 / 6 = %15.",
+    "Elde edilebilir: 2 g %10 ile 1 g %40: (0,2 + 0,4) / 3 = 0,6 / 3 = %20.",
+    "Elde edilebilir: eşit kütleler, 1 g ve 1 g: (0,1 + 0,4) / 2 = %25.",
+    "Doğru: %50, en yüksek başlangıç oranı %40’ı aşar; elde edilemez.",
+    "Elde edilebilir: 1 g %10 ile 5 g %40: (0,1 + 2) / 6 = 2,1 / 6 = %35."
+   ],
+   "commonError": "Karıştırmayla yüzdelerin toplanabileceğini sanıp üst sınırı aşan sonucu mümkün görmek.",
+   "check": "Bütün karışım %40’lık olsa bile oran %40’ı geçemez; %50 için ek saf tuz gerekir, o da verilmemiş."
+  }
+ },
+ {
+  "id": "karisim-problemleri-012-10",
+  "h": "0152185bbab8cd",
+  "guidance": {
+   "knowledge": [
+    "Ortalama birim fiyat = toplam bedel / toplam kütle (TL/kg).",
+    "Karışımın %40’ı, kütlenin %40’ı demektir: 20 kg’ın %40’ı 8 kg."
+   ],
+   "strategy": "Kütle payları eşit olmadığı için fiyatları düz ortalayamazsın; kütleleri bulup toplam bedeli hesaplarsın.",
+   "steps": [
+    "Kütleler: 20·0,40 = 8 kg ve 20·0,60 = 12 kg.",
+    "Bedeller: 8·30 = 240 TL ve 12·50 = 600 TL; toplam 840 TL.",
+    "Ortalama: 840 / 20 = 42 TL/kg."
+   ],
+   "optionReasons": [
+    "%35 için toplam 35·20 = 700 TL gerekir; gerçek toplam 840 TL.",
+    "Kütleleri ters eşleştirir: 8·50 + 12·30 = 400 + 360 = 760, 760 / 20 = 38.",
+    "Kütle paylarını yok sayıp düz ortalama alır: (30 + 50) / 2 = 40.",
+    "Düz ortalama 40 ile yüksek fiyat 50’yi yeniden ortalar: (40 + 50) / 2 = 45.",
+    "Doğru: 840 TL / 20 kg = 42 TL/kg."
+   ],
+   "commonError": "Farklı kütlelerdeki ürünlerin birim fiyatlarını düz ortalamak.",
+   "check": "Ağırlıklı ortalama kısayolu: 0,40·30 + 0,60·50 = 12 + 30 = 42."
+  }
+ },
+ {
+  "id": "isci-problemleri-012-1",
+  "h": "1a4c3e95ce4832",
+  "guidance": {
+   "knowledge": [
+    "İşin tamamı 1 kabul edilir. Bir işi t saatte bitiren kişinin hızı 1/t iş/saattir; yani her saatte işin 1/t kadarını yapar.",
+    "Yapılan iş = hız × çalışılan süre."
+   ],
+   "strategy": "Çalışan sabit hızla çalıştığı için önce saatlik payı bulur, sonra çalışılan saatle çarparsın.",
+   "steps": [
+    "Saatlik hız: işin tamamı 24 saat sürüyor, yani her saatte 1/24 iş yapılır.",
+    "9 saatte yapılan iş: 9 · (1/24) = 9/24.",
+    "Pay ve paydayı ortak bölen 3'e böl: 9/24 = 3/8. İşin 3/8'i biter."
+   ],
+   "optionReasons": [
+    "Doğru: 9 · (1/24) = 9/24 = 3/8.",
+    "9 saati 8 saat gibi düşünür; 8/24 = 1/3 olur, bir saatlik katkıyı kaçırır.",
+    "Paydayı 24 yerine 12 alır: 9/12 = 3/4; günün yarısını iş süresi sanır.",
+    "Biten kısım yerine kalan kısmı verir: 1 − 3/8 = 5/8.",
+    "Oranı ters kurar: 24/9 = 8/3; bu 1'den büyük olduğu için bir iş payı olamaz."
+   ],
+   "commonError": "Biten kısım sorulmuşken kalan kısmı (1 − 3/8) cevap olarak işaretlemek.",
+   "check": "3/8 iş 9 saat sürüyorsa 8/8 iş 9 · 8/3 = 24 saat sürer; verilen süreyle uyuşur."
+  }
+ },
+ {
+  "id": "isci-problemleri-012-2",
+  "h": "08152a917e22e8",
+  "guidance": {
+   "knowledge": [
+    "Bir işi t saatte bitirenin hızı 1/t iş/saattir.",
+    "Birlikte ve bağımsız çalışanların hızları toplanır; süreler toplanmaz. Süre = iş / hız."
+   ],
+   "strategy": "İki kişi aynı anda çalıştığı için saatlik hızlarını toplayıp 1 işi bu ortak hıza bölersin.",
+   "steps": [
+    "Hızlar: A için 1/10, B için 1/15 iş/saat.",
+    "Ortak payda 30: 1/10 = 3/30 ve 1/15 = 2/30. Topla: 3/30 + 2/30 = 5/30.",
+    "Sadeleştir: 5/30 = 1/6 iş/saat.",
+    "Süre = 1 ÷ (1/6) = 6 saat."
+   ],
+   "optionReasons": [
+    "Payın 5'ini (5/30) süre sanır; oysa 5/30 saatlik iş payıdır.",
+    "Doğru: ortak hız 1/6 iş/saat, süre 6 saat.",
+    "Yalnız A'nın süresini alır; B'nin yardımını yok sayar.",
+    "Sürelerin ortalamasına benzer bir sayı seçer; 2 · 10 · 15 / 25 = 12, tek ortalama işçinin süresidir.",
+    "Süreleri toplar: 10 + 15 = 25; birlikte çalışmak süreyi uzatmaz, kısaltır."
+   ],
+   "commonError": "Birlikte çalışmada hızlar yerine süreleri toplamak.",
+   "check": "6 saatte A 6/10 = 3/5, B 6/15 = 2/5 iş yapar; 3/5 + 2/5 = 1 iş eder."
+  }
+ },
+ {
+  "id": "isci-problemleri-012-3",
+  "h": "14039aa569733c",
+  "guidance": {
+   "knowledge": [
+    "Hız = 1/süre (iş/saat); yapılan iş = hız × süre.",
+    "Kalan iş = 1 − yapılan iş. Kalan süre = kalan iş / o anda çalışanın hızı."
+   ],
+   "strategy": "İş iki evrede yapılıyor: önce birlikte, sonra yalnız A. Birinci evrenin payını bulup kalanı A'nın hızına bölersin.",
+   "steps": [
+    "Birlikte hız: 1/8 + 1/12; ortak payda 24 ile 3/24 + 2/24 = 5/24 iş/saat.",
+    "2 saatte yapılan: 2 · 5/24 = 10/24 = 5/12.",
+    "Kalan iş: 1 − 5/12 = 7/12.",
+    "A'nın ek süresi: (7/12) ÷ (1/8) = (7/12) · 8 = 56/12 = 14/3 saat."
+   ],
+   "optionReasons": [
+    "A'nın hızını 1/4 sanır: (7/12) ÷ (1/4) = 7/3.",
+    "Kalan işi 1/2 sanır, yani 2 saatte işin yarısı bitti der: (1/2) ÷ (1/8) = 4.",
+    "Doğru: kalan 7/12 iş, A'nın hızıyla 14/3 saat sürer.",
+    "Ortak hızı 3/24 + 1/24 = 1/6 diye yanlış genişletir; kalan 2/3 iş ve (2/3) · 8 = 16/3 bulur.",
+    "B'nin katkısını unutur: A'nın 8 saatinden geçen 2 saati çıkarır, 8 − 2 = 6."
+   ],
+   "commonError": "Birlikte çalışılan ilk 2 saatte B'nin katkısını hesaba katmamak.",
+   "check": "A toplam 2 + 14/3 = 20/3 saat çalışır: 20/3 · 1/8 = 5/6; B 2 saatte 2/12 = 1/6 yapar; toplam 1 iş."
+  }
+ },
+ {
+  "id": "isci-problemleri-012-4",
+  "h": "068fb1514b68a3",
+  "guidance": {
+   "knowledge": [
+    "Kişi-gün: çalışan sayısı × gün sayısı. Eş hızlı işçilerle aynı iş hep aynı kişi-gün tutar.",
+    "Bu yüzden işçi sayısı artınca süre aynı oranda azalır (ters orantı)."
+   ],
+   "strategy": "İşin toplam kişi-gün miktarını bulup yeni işçi sayısına bölersin; işçiler eş hızlı ve iş aynı olduğu için bu geçerlidir.",
+   "steps": [
+    "Toplam iş: 6 işçi · 12 gün = 72 kişi-gün.",
+    "Aynı 72 kişi-gün 9 işçiye bölünür: 72 / 9 = 8 gün."
+   ],
+   "optionReasons": [
+    "Eklenen 3 işçinin her birinin 2 gün kısalttığını sanır: 12 − 3 · 2 = 6.",
+    "İşçi sayısını (9) gün sayısı diye yazar.",
+    "İşçi sayısı değiştiği hâlde sürenin aynı kaldığını sanır.",
+    "Doğru: 72 kişi-gün / 9 işçi = 8 gün.",
+    "Doğru orantı kurar: 12 · 9 / 6 = 18; işçi artınca süre uzamaz."
+   ],
+   "commonError": "İşçi sayısı ile süre arasında ters orantı yerine doğru orantı kurmak.",
+   "check": "9 · 8 = 72 kişi-gün eder; 6 · 12 ile aynı."
+  }
+ },
+ {
+  "id": "isci-problemleri-012-5",
+  "h": "16726cc7762b04",
+  "guidance": {
+   "knowledge": [
+    "İş günü burada günde kaç saat çalışıldığıyla tanımlıdır; 24 saat değildir.",
+    "Hız 1/(toplam çalışma saati) iş/saattir; birlikte hız, hızların toplamıdır."
+   ],
+   "strategy": "Birimler karışık verildiği için önce her iki kişinin süresini çalışma saatine çevirir, saatlik ortak hızı bulursun; en sonda günde 5 saate bölersin.",
+   "steps": [
+    "A'nın toplam süresi: 5 gün · 6 saat = 30 saat; hızı 1/30 iş/saat. B'nin hızı 1/20 iş/saat.",
+    "Ortak payda 60: 1/30 = 2/60, 1/20 = 3/60. Topla: 5/60 = 1/12 iş/saat.",
+    "Gereken çalışma saati: 1 ÷ (1/12) = 12 saat.",
+    "Günde 5 saat çalışıldığından 12 / 5 = 12/5 iş günü, yani 2 tam gün ve üçüncü gün 2 saat."
+   ],
+   "optionReasons": [
+    "Yalnız tam günleri sayar; 2 günde 10 saat çalışılır, iş 10/12'de kalır.",
+    "Sonucu üst tam sayıya yuvarlar; üçüncü günün 5 saatinin yalnız 2'si gerekir.",
+    "B'nin 20 saatini günde 5 saate böler: 20 / 5 = 4; A'nın yardımını unutur.",
+    "A'nın 30 saatini günde 5 saate böler: 30 / 5 = 6; B'yi unutur.",
+    "Doğru: 12 çalışma saati / günde 5 saat = 12/5 iş günü."
+   ],
+   "commonError": "A'nın süresini iş günü olarak bırakıp saatle verilen B ile doğrudan toplamak.",
+   "check": "12 saatte A 12/30 = 2/5, B 12/20 = 3/5 iş yapar; toplam 1. 12 saat de 12/5 · 5 eder."
+  }
+ },
+ {
+  "id": "isci-problemleri-012-6",
+  "h": "00633bc11dcf12",
+  "guidance": {
+   "knowledge": [
+    "Hız = 1/süre. Hız yarıya inerse yeni hız eski hızın yarısıdır ve aynı iş iki kat uzun sürer.",
+    "Toplam süre = her evrenin süresinin toplamı."
+   ],
+   "strategy": "Hız ortada değiştiği için iş iki evreye bölünür; ilk evrenin payını eski hızla, kalanın süresini yeni hızla bulursun.",
+   "steps": [
+    "İlk hız 1/6 iş/saat; 2 saatte 2 · 1/6 = 2/6 = 1/3 iş biter.",
+    "Kalan iş: 1 − 1/3 = 2/3.",
+    "Yeni hız: (1/6) ÷ 2 = 1/12 iş/saat. Kalan süre: (2/3) ÷ (1/12) = (2/3) · 12 = 8 saat.",
+    "Toplam: 2 + 8 = 10 saat."
+   ],
+   "optionReasons": [
+    "Doğru: 2 saat eski hızla, 8 saat yeni hızla; toplam 10 saat.",
+    "Hız düşüşünü yok sayar ve ilk süreyi (6 saat) verir.",
+    "Yalnız ikinci evrenin süresini (8 saat) verir, ilk 2 saati eklemez.",
+    "Bütün işi yeni hızla yapılmış sayar: 1 ÷ (1/12) = 12.",
+    "Bütün işi yeni hızla sayıp ilk 2 saati de ekler: 12 + 2 = 14."
+   ],
+   "commonError": "Hız değişince işin tamamını yeni hızla hesaplayıp önceden yapılan kısmı yok saymak.",
+   "check": "2 · 1/6 + 8 · 1/12 = 1/3 + 2/3 = 1 iş eder."
+  }
+ },
+ {
+  "id": "isci-problemleri-012-7",
+  "h": "0747e7d7e6f467",
+  "guidance": {
+   "knowledge": [
+    "Kişi-saat: çalışan sayısı × saat. Eş hızlı çalışanlarda üretim kişi-saatle doğru orantılıdır.",
+    "Kişi-saat başına üretim = toplam parça / toplam kişi-saat."
+   ],
+   "strategy": "Çalışanlar ve saat birlikte değiştiği için ikisini kişi-saatte birleştirir, birim üretimi bulup yeni kişi-saatle çarparsın.",
+   "steps": [
+    "İlk durum: 3 · 4 = 12 kişi-saat ile 24 parça.",
+    "Birim üretim: 24 / 12 = 2 parça/kişi-saat.",
+    "Yeni durum: 5 · 6 = 30 kişi-saat.",
+    "Üretim: 30 · 2 = 60 parça."
+   ],
+   "optionReasons": [
+    "Kişi-saat sayısını (30) parça sayısı sanır; birim üretimle (2) çarpmayı unutur.",
+    "Doğru: 30 kişi-saat · 2 parça = 60 parça.",
+    "Yalnız kişi oranını kullanır, saat artışını unutur: 24 · 5/3 = 40.",
+    "Saat oranını yanlış eşler: 24 · 6/3 = 48; 6 saati 3 kişiye böler.",
+    "Saat oranını doğru alır (6/4) ama 2 kişi eklenmesini iki kat sanır: 24 · (6/4) · 2 = 72."
+   ],
+   "commonError": "Çalışan ve süre değişimlerinden yalnız birini hesaba katmak.",
+   "check": "Orantıyla: 24 · (5/3) · (6/4) = 24 · 30/12 = 60; sonuç aynı."
+  }
+ },
+ {
+  "id": "isci-problemleri-012-8",
+  "h": "1744c54279593e",
+  "guidance": {
+   "knowledge": [
+    "Hız = 1/süre; yapılan iş = hız × süre.",
+    "Evreler arka arkaya geldiğinde her evrenin payı ayrı bulunup toplanır; kalan iş = 1 − toplam pay."
+   ],
+   "strategy": "Üç evre var: yalnız A, birlikte, yine yalnız A. İlk iki evrenin payını toplayıp kalanı A'nın hızına bölersin.",
+   "steps": [
+    "Yalnız A 5 saat: 5 · 1/20 = 1/4.",
+    "Birlikte hız: 1/20 + 1/30 = 3/60 + 2/60 = 5/60 = 1/12. 6 saatte: 6 · 1/12 = 1/2.",
+    "Biten: 1/4 + 1/2 = 3/4. Kalan: 1 − 3/4 = 1/4.",
+    "A'nın süresi: (1/4) ÷ (1/20) = 20/4 = 5 saat."
+   ],
+   "optionReasons": [
+    "Kalanı birlikte hızla böler: (1/4) ÷ (1/12) = 3; oysa kalanı yalnız A yapıyor.",
+    "Kalan payın paydasını (1/4'teki 4) süre sanır.",
+    "Doğru: kalan 1/4 iş, A'nın 1/20 hızıyla 5 saat sürer.",
+    "Birlikte çalışılan süreyi (6 saat) tekrar yazar.",
+    "A'nın ilk 5 saatini unutur: kalan 1/2 sanır ve (1/2) · 20 = 10 bulur."
+   ],
+   "commonError": "Önceki evrelerde yapılan işi eksik toplayıp kalan işi büyük bulmak.",
+   "check": "A toplam 5 + 6 + 5 = 16 saat çalışır: 16/20 = 4/5; B 6 saat: 6/30 = 1/5; toplam 1 iş."
+  }
+ },
+ {
+  "id": "isci-problemleri-012-9",
+  "h": "18e9dfc4959ab6",
+  "guidance": {
+   "knowledge": [
+    "Hız = 1/süre. Hızı yarıya inen kişinin yeni hızı eski hızının yarısıdır.",
+    "Birlikte süre = 1 / (yeni hızların toplamı)."
+   ],
+   "strategy": "Birlikte çalışırken A'nın hızı değiştiği için toplamaya eski hızla değil, yeni hızla girmesi gerekir.",
+   "steps": [
+    "A'nın eski hızı 1/6; yarıya inince (1/6) ÷ 2 = 1/12 iş/saat.",
+    "B'nin hızı değişmez: 1/12 iş/saat.",
+    "Birlikte hız: 1/12 + 1/12 = 2/12 = 1/6 iş/saat.",
+    "Süre: 1 ÷ (1/6) = 6 saat."
+   ],
+   "optionReasons": [
+    "Doğru hızı (1/6) bulduktan sonra iki kişi var diye süreyi ikiye böler: 6 / 2 = 3.",
+    "Hız düşüşünü atlar: 1/6 + 1/12 = 1/4 ile 4 saat bulur.",
+    "Sürelerin ortalamasını alır: (6 + 12) / 2 = 9.",
+    "Doğru: yeni hızlar toplamı 1/6, süre 6 saat.",
+    "Süreleri toplar: 6 + 12 = 18."
+   ],
+   "commonError": "Hız değişimini atlayıp A'nın eski hızıyla toplamak.",
+   "check": "6 saatte A yeni hızla 6/12 = 1/2, B de 6/12 = 1/2 iş yapar; toplam 1."
+  }
+ },
+ {
+  "id": "isci-problemleri-012-10",
+  "h": "1bd4795d8ff203",
+  "guidance": {
+   "knowledge": [
+    "Hız = 1/süre; birlikte hız, hızların toplamıdır.",
+    "Ek süre: ortaklık bittikten sonra kalan işi yapmak için geçen süre; toplam süreden farklıdır."
+   ],
+   "strategy": "İki evre var: birlikte 2 saat, sonra yalnız B. Birlikte yapılan payı bulup kalanı B'nin hızına bölersin.",
+   "steps": [
+    "Birlikte hız: 1/9 + 1/18 = 2/18 + 1/18 = 3/18 = 1/6 iş/saat.",
+    "2 saatte: 2 · 1/6 = 1/3 iş. Kalan: 1 − 1/3 = 2/3.",
+    "B'nin ek süresi: (2/3) ÷ (1/18) = (2/3) · 18 = 12 saat."
+   ],
+   "optionReasons": [
+    "Biten payı kalan sanır: (1/3) · 18 = 6.",
+    "Kalanı iki kişinin ortalama hızıyla böler: (1/9 + 1/18)/2 = 1/12 ve (2/3) · 12 = 8.",
+    "Ek süreyi toplam sanıp ilk 2 saati çıkarır: 12 − 2 = 10.",
+    "Toplam süreyi verir: 2 + 12 = 14; sorulan ayrılmadan sonraki ek süre.",
+    "Doğru: kalan 2/3 iş, B'nin 1/18 hızıyla 12 saat sürer."
+   ],
+   "commonError": "Ek süre sorulduğunda ilk ortak çalışma saatlerini de ekleyip toplam süreyi vermek.",
+   "check": "B toplam 2 + 12 = 14 saat: 14/18 = 7/9; A 2 saat: 2/9; toplam 1 iş."
+  }
+ },
+ {
+  "id": "havuz-problemleri-012-1",
+  "h": "1c7b4f72caace7",
+  "guidance": {
+   "knowledge": [
+    "Tank payı: tankın kaçta kaçının dolu olduğu; %30 = 0,30 = 3/10.",
+    "Giriş hızı dakikada tankın 1/20'si ise süre = gereken pay ÷ (1/20)."
+   ],
+   "strategy": "Tank boş değil, %30 dolu; bu yüzden önce eksik payı bulur, sonra bu payı giriş hızına bölersin.",
+   "steps": [
+    "Eksik pay: 1 − 0,30 = 0,70.",
+    "Süre: 0,70 ÷ (1/20) = 0,70 · 20 = 14 dakika."
+   ],
+   "optionReasons": [
+    "Doğru: eksik 0,70 pay, dakikada 1/20 ile 14 dakikada dolar.",
+    "Dolu kısmın süresini bulur: 0,30 · 20 = 6.",
+    "Tankın yarı dolu olduğunu varsayar: 0,50 · 20 = 10.",
+    "Tankı boş sayar: 1 ÷ (1/20) = 20.",
+    "Boş tankın süresine dolu kısmın süresini ekler: 20 + 6 = 26."
+   ],
+   "commonError": "Başlangıçtaki suyu unutup boş tankın süresini vermek.",
+   "check": "0,30 + 14 · (1/20) = 0,30 + 0,70 = 1 tam tank."
+  }
+ },
+ {
+  "id": "havuz-problemleri-012-2",
+  "h": "068f3d2ef7d945",
+  "guidance": {
+   "knowledge": [
+    "Musluk hızı: tankı t saatte dolduran 1/t tank/saat getirir. Boşaltan musluk hızını eksi işaretle katar.",
+    "Net hız = girişler − çıkışlar; süre = 1 / net hız."
+   ],
+   "strategy": "Üç musluk aynı anda açık olduğu için hızları işaretleriyle toplar, net hıza bölersin.",
+   "steps": [
+    "Hızlar: A 1/8, B 1/12, C −1/24 tank/saat.",
+    "Ortak payda 24: 3/24 + 2/24 − 1/24 = 4/24.",
+    "Sadeleştir: 4/24 = 1/6 tank/saat.",
+    "Süre: 1 ÷ (1/6) = 6 saat."
+   ],
+   "optionReasons": [
+    "Boşaltanı da ekler: 3/24 + 2/24 + 1/24 = 6/24 = 1/4 ile 4 saat.",
+    "Doğru: net hız 1/6 tank/saat, süre 6 saat.",
+    "Yalnız A'nın süresini verir; B ve C'yi yok sayar.",
+    "B'yi unutur: 3/24 − 1/24 = 2/24 = 1/12 ile 12 saat.",
+    "Boşaltanın süresini (24) cevap sanır."
+   ],
+   "commonError": "Boşaltan musluğun hızını eksi yerine artı işaretle toplamak.",
+   "check": "6 saatte A 6/8, B 6/12 getirir, C 6/24 götürür: 3/4 + 1/2 − 1/4 = 1 tank."
+  }
+ },
+ {
+  "id": "havuz-problemleri-012-3",
+  "h": "0eaa32d8486468",
+  "guidance": {
+   "knowledge": [
+    "Hız = 1/süre (tank/saat). Kaçak varken net hız = giriş hızı − kaçak hızı.",
+    "Kaçağın tek başına boşaltma süresi = 1 / kaçak hızı."
+   ],
+   "strategy": "Kaçaklı ve kaçaksız iki durumun hızları arasındaki fark kaçağın hızını verir; süreler değil, hızlar çıkarılır.",
+   "steps": [
+    "Kaçaksız giriş hızı: 1/6. Kaçakla net hız: 1/9.",
+    "Kaçak hızı: 1/6 − 1/9; ortak payda 18 ile 3/18 − 2/18 = 1/18 tank/saat.",
+    "Kaçağın tek başına süresi: 1 ÷ (1/18) = 18 saat."
+   ],
+   "optionReasons": [
+    "Süreleri çıkarır: 9 − 6 = 3; bu bir süre farkıdır, hız değil.",
+    "Kaçaklı dolma süresini (9) kaçağın süresi sanır.",
+    "Doğru: kaçak hızı 1/18 tank/saat, süresi 18 saat.",
+    "Doğru süreyi bulup girişin 6 saatini de çıkarır: 18 − 6 = 12; oysa kaçak tek başına çalışır.",
+    "Süreleri toplar: 6 + 9 = 15."
+   ],
+   "commonError": "Hızlar yerine süreleri çıkarmak.",
+   "check": "Giriş 1/6 getirirken kaçak 1/18 götürürse net 3/18 − 1/18 = 2/18 = 1/9 olur; tank 9 saatte dolar."
+  }
+ },
+ {
+  "id": "havuz-problemleri-012-4",
+  "h": "124f1d777532a5",
+  "guidance": {
+   "knowledge": [
+    "Litre (L) hacim birimidir; L/dk dakikada geçen su miktarıdır.",
+    "Net hız = giriş − çıkış; süre = eksik hacim / net hız."
+   ],
+   "strategy": "Tankta zaten su olduğu ve çıkış da açık olduğu için eksik hacmi net hıza bölersin.",
+   "steps": [
+    "Eksik hacim: 900 − 180 = 720 L.",
+    "Net hız: 12 − 3 = 9 L/dk.",
+    "Süre: 720 / 9 = 80 dakika."
+   ],
+   "optionReasons": [
+    "Çıkışı unutur: 720 / 12 = 60.",
+    "Hem mevcut suyu hem çıkışı ekler: (900 + 180) / (12 + 3) = 1080/15 = 72.",
+    "Mevcut suyu çıkarmak yerine ekler ve çıkışı unutur: (900 + 180) / 12 = 90.",
+    "Doğru: 720 L / 9 L/dk = 80 dakika.",
+    "Mevcut suyu unutur: 900 / 9 = 100."
+   ],
+   "commonError": "Açık çıkışı unutup yalnız giriş hızına bölmek.",
+   "check": "180 + 80 · 9 = 180 + 720 = 900 L; tank tam dolar."
+  }
+ },
+ {
+  "id": "havuz-problemleri-012-5",
+  "h": "1bb0e4c58f7ce7",
+  "guidance": {
+   "knowledge": [
+    "Net hız: giriş hızı − çıkış hızı. Net hız 0 ise su miktarı zamanla değişmez.",
+    "Pay(t) = başlangıç payı + net hız · t."
+   ],
+   "strategy": "Dolma süresi eksik payın net hıza bölünmesiyle bulunur; net hız 0 olduğundan bu bölme yapılamaz, önce payın zamanla nasıl değiştiğine bakarsın.",
+   "steps": [
+    "Pay(t) = 1/4 + 0 · t = 1/4; hiçbir t için değişmez.",
+    "Dolmak için Pay(t) = 1 olmalı: 1/4 = 1 hiçbir zaman sağlanmaz.",
+    "Eksik 3/4 pay 0 hıza bölünemez; tank dolmaz."
+   ],
+   "optionReasons": [
+    "Giriş ve çıkış açık diye kısa sürede dolar sanır; 1 saat sonra pay yine 1/4'tür.",
+    "Dolu payın paydasından (1/4'teki 4) süre üretir; 4 saat sonra da pay 1/4'tür.",
+    "Net hızı sıfır değil de bir sayı varsayar; 8 saat sonra pay hâlâ 1/4 kalır.",
+    "Eksik 3/4 ile dolu payın paydasını çarpar: 3 · 4 = 12; hız 0 olduğu için bu süre anlamsızdır.",
+    "Doğru: net hız 0, pay hep 1/4 kalır."
+   ],
+   "commonError": "Musluklar açık diye tankın mutlaka bir sürede dolacağını sanmak.",
+   "check": "Herhangi bir t için 1/4 + 0 · t = 1/4 ≠ 1; hiçbir süre tankı doldurmaz."
+  }
+ },
+ {
+  "id": "havuz-problemleri-012-6",
+  "h": "0282e2c4f90b7a",
+  "guidance": {
+   "knowledge": [
+    "Net hız = giriş − çıkış. Sonuç eksi ise su azalır.",
+    "Hacim V(t) = başlangıç hacmi + net hız · t; boşalma V(t) = 0 olduğu andır."
+   ],
+   "strategy": "Çıkış girişten büyük olduğu için net hız eksidir; hacim denklemini kurup sıfıra eşitlersin.",
+   "steps": [
+    "Net hız: 5 − 8 = −3 L/dk; tank dakikada 3 L kaybeder.",
+    "Hacim: V(t) = 300 − 3t.",
+    "300 − 3t = 0 → iki tarafa 3t ekle: 300 = 3t → iki tarafı 3'e böl: t = 100 dakika."
+   ],
+   "optionReasons": [
+    "Doğru: 300 L su dakikada 3 L azalarak 100 dakikada biter.",
+    "30 dakikada yalnız 3 · 30 = 90 L azalır; tankta 210 L kalır.",
+    "Yalnız giriş hızına böler: 300 / 5 = 60; 60 dakikada net 180 L gider, 120 L kalır.",
+    "75 dakikada 3 · 75 = 225 L azalır; tankta 75 L su kalır.",
+    "150 dakikada 450 L gitmesi gerekir; tankta yalnız 300 L var, çok önce boşalır."
+   ],
+   "commonError": "Giriş ve çıkıştan yalnız birini kullanmak ya da net hızın işaretini ters almak.",
+   "check": "V(100) = 300 − 3 · 100 = 0; V(99) = 3 L olduğundan tam 100. dakikada boşalır."
+  }
+ },
+ {
+  "id": "havuz-problemleri-012-7",
+  "h": "029729a62e2421",
+  "guidance": {
+   "knowledge": [
+    "Hız = 1/süre (tank/saat); yapılan pay = hız × süre.",
+    "Toplam süre: tankın boş olduğu andan dolana kadar geçen bütün süre; ortak çalışma süresi bunun bir parçasıdır."
+   ],
+   "strategy": "İki evre var: yalnız A 2 saat, sonra A ile B. İlk payı bulup kalanı ortak hıza bölersin, sonra iki süreyi toplarsın.",
+   "steps": [
+    "Yalnız A: 2 · 1/10 = 1/5 tank. Kalan: 1 − 1/5 = 4/5.",
+    "Ortak hız: 1/10 + 1/15 = 3/30 + 2/30 = 5/30 = 1/6.",
+    "Ortak süre: (4/5) ÷ (1/6) = (4/5) · 6 = 24/5 saat.",
+    "Toplam: 2 + 24/5 = 10/5 + 24/5 = 34/5 saat."
+   ],
+   "optionReasons": [
+    "Yalnız ortak çalışma süresini verir; ilk 2 saati eklemez.",
+    "Doğru: 2 + 24/5 = 34/5 saat.",
+    "5 saatte A 5/10, B 3 saatte 3/15 doldurur: 1/2 + 1/5 = 7/10; tank dolmaz.",
+    "Boş tankın ortak dolma süresini verir: 1 ÷ (1/6) = 6; A'nın yalnız geçen 2 saatini hesaba katmaz.",
+    "Boş tankın ortak süresine ilk 2 saati ekler: 6 + 2 = 8; tankın bir kısmı zaten doluydu."
+   ],
+   "commonError": "Toplam süre sorulduğunda yalnız ortak çalışma süresini cevap vermek.",
+   "check": "A 34/5 saat: 34/50; B 24/5 saat: 24/75 = 16/50; 34/50 + 16/50 = 1 tank."
+  }
+ },
+ {
+  "id": "havuz-problemleri-012-8",
+  "h": "001dc44fdb1d15",
+  "guidance": {
+   "knowledge": [
+    "Hız = 1/süre; bir musluğun getirdiği pay = hız × açık kaldığı süre.",
+    "Tank tam dolunca bütün katkıların toplamı 1'dir."
+   ],
+   "strategy": "B'nin açık kaldığı süre bilindiği için önce onun katkısını bulursun; kalan pay A'nındır ve A'nın hızına bölünür.",
+   "steps": [
+    "B'nin katkısı: 6 · 1/20 = 6/20 = 3/10.",
+    "A'ya kalan pay: 1 − 3/10 = 7/10.",
+    "A'nın süresi: (7/10) ÷ (1/10) = 7 saat."
+   ],
+   "optionReasons": [
+    "5 saatte A 5/10 getirir: 5/10 + 3/10 = 8/10; tank dolmaz.",
+    "Süreleri zorla eşitler; 6 saatte A 6/10 getirir ve toplam 9/10 olur.",
+    "Doğru: A 7/10 payı 1/10 hızla 7 saatte getirir.",
+    "8 saatte A 8/10 getirir: 8/10 + 3/10 = 11/10; tank taşar.",
+    "A'nın boş tankı tek başına doldurma süresini (10) verir; B'nin katkısını unutur."
+   ],
+   "commonError": "İki musluğun aynı süre açık kaldığını varsaymak.",
+   "check": "7 · 1/10 + 6 · 1/20 = 7/10 + 3/10 = 1 tank."
+  }
+ },
+ {
+  "id": "havuz-problemleri-012-9",
+  "h": "0d1fa91c8a554d",
+  "guidance": {
+   "knowledge": [
+    "Dik silindirin hacmi V = taban alanı × yükseklik; taban alanı πr² (r yarıçap).",
+    "Hacim aynıysa yükseklik h = V / (πr²); taban alanı büyüdükçe yükseklik küçülür."
+   ],
+   "strategy": "Hacimler eşit olduğundan yükseklikler taban alanlarıyla ters orantılıdır; alanlar yarıçapın karesiyle büyüdüğü için kareleri karşılaştırırsın.",
+   "steps": [
+    "Küçük tankın taban alanı: π · 2² = 4π m². Büyük tankınki: π · 4² = 16π m².",
+    "Eşit hacim V için h(küçük) = V / 4π, h(büyük) = V / 16π.",
+    "Oran: (V / 4π) ÷ (V / 16π) = 16π / 4π = 4."
+   ],
+   "optionReasons": [
+    "Oranı ters kurar: büyük tankın yüksekliğini küçüğünkine böler, 4π / 16π = 1/4.",
+    "Hem oranı ters kurar hem kareyi atlar: 2/4 = 1/2.",
+    "Yarıçap oranını (4/2 = 2) yükseklik oranı sanır; alanın kare ile büyüdüğünü atlar.",
+    "Doğru: yükseklik oranı taban alanı oranının tersi, 16π / 4π = 4.",
+    "Yarıçap oranının küpünü alır: 2³ = 8; hacim gibi düşünür ama hacimler zaten eşit."
+   ],
+   "commonError": "Yarıçap oranını doğrudan yükseklik oranı sanıp alanın kare ile büyüdüğünü unutmak.",
+   "check": "V = 16π alırsan küçük tankta h = 16π / 4π = 4 m, büyükte h = 16π / 16π = 1 m; oran 4."
+  }
+ },
+ {
+  "id": "havuz-problemleri-012-10",
+  "h": "0623711bc8be82",
+  "guidance": {
+   "knowledge": [
+    "Tank payı: tankın kaçta kaçının dolu olduğu. 0. saat başlangıç anıdır.",
+    "Sabit net hız = pay artışı / geçen süre (tank/saat)."
+   ],
+   "strategy": "İki andaki paylardan saatlik artışı bulursun; sonra başlangıçtaki eksik payı bu hıza bölersin, çünkü süre başlangıçtan soruluyor.",
+   "steps": [
+    "3 saatteki artış: 5/8 − 1/4 = 5/8 − 2/8 = 3/8.",
+    "Saatlik hız: (3/8) ÷ 3 = 1/8 tank/saat.",
+    "Başlangıçta eksik pay: 1 − 1/4 = 3/4.",
+    "Süre: (3/4) ÷ (1/8) = (3/4) · 8 = 6 saat."
+   ],
+   "optionReasons": [
+    "3. saatten sonraki ek süreyi verir: (1 − 5/8) ÷ (1/8) = 3.",
+    "4 saat sonunda pay 1/4 + 4/8 = 3/4 olur; tank dolmamıştır.",
+    "5 saat sonunda pay 1/4 + 5/8 = 7/8 olur; tank dolmamıştır.",
+    "Hızın paydasını (1/8'deki 8) süre sanır; bu boş tankın dolma süresidir.",
+    "Doğru: eksik 3/4 pay, saatte 1/8 ile 6 saatte dolar."
+   ],
+   "commonError": "Başlangıçtan sorulan süre yerine ara andan sonraki ek süreyi vermek.",
+   "check": "1/4 + 6 · 1/8 = 2/8 + 6/8 = 1 tank; 3. saatte 1/4 + 3/8 = 5/8 de verilenle uyuşur."
+  }
+ },
+ {
+  "id": "hiz-problemleri-012-1",
+  "h": "0890a661853683",
+  "guidance": {
+   "knowledge": [
+    "Sürat: birim zamanda alınan yol; km/sa, bir saatte kaç kilometre gidildiğini söyler.",
+    "Yol = sürat × zaman, buradan zaman = yol / sürat."
+   ],
+   "strategy": "Yol ve sürat verildiği için zaman = yol / sürat bağıntısını doğrudan kullanırsın; birimler zaten uyumlu (km ve km/sa).",
+   "steps": [
+    "Zaman = 150 / 60.",
+    "Pay ve paydayı 30'a böl: 150/60 = 5/2 = 2,5 saat.",
+    "0,5 saat = 0,5 · 60 = 30 dakika; yani 2 saat 30 dakika."
+   ],
+   "optionReasons": [
+    "Doğru: 150 / 60 = 2,5 saat.",
+    "Yoldan bir saatlik yolu (60 km) çıkarıp böler: (150 − 60) / 60 = 1,5.",
+    "Yalnız tam saati alır; 2 saatte 120 km gidilir, 30 km kalır.",
+    "Üst tam sayıya yuvarlar; 3 saatte 180 km gidilir, yol aşılır.",
+    "3,5 saatte 60 · 3,5 = 210 km gidilir; bu 150 km'den fazladır."
+   ],
+   "commonError": "2,5 saati 2 saat 50 dakika sanmak; 0,5 saat 30 dakikadır.",
+   "check": "60 · 2,5 = 150 km; verilen yolla aynı."
+  }
+ },
+ {
+  "id": "hiz-problemleri-012-2",
+  "h": "14f41bc02f13c5",
+  "guidance": {
+   "knowledge": [
+    "1 km = 1000 m ve 1 saat = 3600 sn.",
+    "km/sa'den m/sn'ye geçmek için 1000 ile çarpıp 3600'e bölersin; bu, 3,6'ya bölmekle aynıdır."
+   ],
+   "strategy": "Hem uzunluk hem zaman birimi değiştiği için iki dönüşümü birlikte yaparsın.",
+   "steps": [
+    "72 km = 72 · 1000 = 72 000 m.",
+    "1 saat = 3600 sn; sürat 72 000 / 3600 m/sn.",
+    "Böl: 72 000 / 3600 = 20 m/sn."
+   ],
+   "optionReasons": [
+    "Virgülü yanlış kaydırıp 7,2'ye böler: 72 / 7,2 = 10.",
+    "Doğru: 72 · 1000 / 3600 = 20 m/sn.",
+    "3,6 yerine 4'e böler: 72 / 4 = 18.",
+    "25 m/sn = 25 · 3,6 = 90 km/sa eder; 72 değil.",
+    "30 m/sn = 30 · 3,6 = 108 km/sa eder; 72 değil."
+   ],
+   "commonError": "Yalnız 1000 ile çarpıp saati saniyeye çevirmeyi unutmak.",
+   "check": "Ters yönde: 20 m/sn · 3,6 = 72 km/sa."
+  }
+ },
+ {
+  "id": "hiz-problemleri-012-3",
+  "h": "147b9685013de4",
+  "guidance": {
+   "knowledge": [
+    "Ortalama sürat = toplam yol / toplam süre.",
+    "Süratlerin düz ortalaması yalnız iki süratte eşit süre geçirilirse ortalama sürate eşittir."
+   ],
+   "strategy": "İki parçada eşit yol ama farklı süre geçtiği için düz ortalama işe yaramaz; toplam yolu ve toplam süreyi ayrı bulursun.",
+   "steps": [
+    "Birinci parçanın süresi: 60 / 30 = 2 saat. İkinci parçanınki: 60 / 60 = 1 saat.",
+    "Toplam yol: 60 + 60 = 120 km. Toplam süre: 2 + 1 = 3 saat.",
+    "Ortalama sürat: 120 / 3 = 40 km/sa."
+   ],
+   "optionReasons": [
+    "Yalnız birinci parçanın süratini (30 km/sa) alır.",
+    "Süratlerin düz ortalamasını alır: (30 + 60) / 2 = 45; yavaş parçada daha uzun kalındığını atlar.",
+    "Doğru: 120 km / 3 sa = 40 km/sa.",
+    "50 km/sa ile 120 km 2,4 saat sürer; oysa yol 3 saatte alındı.",
+    "Yalnız ikinci parçanın süratini (60 km/sa) alır."
+   ],
+   "commonError": "Eşit yollarda süratlerin düz ortalamasını ortalama sürat sanmak.",
+   "check": "40 km/sa ile 3 saatte 40 · 3 = 120 km gidilir; toplam yolla uyuşur."
+  }
+ },
+ {
+  "id": "hiz-problemleri-012-4",
+  "h": "043a50c81bc417",
+  "guidance": {
+   "knowledge": [
+    "Yaklaşma hızı: birbirine doğru giden iki aracın aralarındaki uzaklığın saatte kapanan miktarı; süratlerin toplamıdır.",
+    "Karşılaşma süresi = başlangıç aralığı / yaklaşma hızı."
+   ],
+   "strategy": "Araçlar birbirine doğru gittiği için aradaki yolu ikisi birlikte kapatır; süratleri toplayıp aralığa bölersin.",
+   "steps": [
+    "Yaklaşma hızı: 50 + 55 = 105 km/sa.",
+    "Süre: 210 / 105 = 2 saat."
+   ],
+   "optionReasons": [
+    "1 saatte yalnız 105 km kapanır; aralarında hâlâ 105 km vardır.",
+    "3 saatte 315 km kapanması gerekir; araçlar bundan bir saat önce karşılaşmış olur.",
+    "Yalnız yavaş aracı kullanır: 210 / 50 = 4,2 ve 4'e yuvarlar.",
+    "Doğru: 210 km / 105 km/sa = 2 saat.",
+    "Sürat farkını (55 − 50 = 5) süre gibi yazar; fark aynı yönde kapanma için kullanılır."
+   ],
+   "commonError": "Karşılıklı harekette süratleri toplamak yerine çıkarmak.",
+   "check": "2 saatte biri 100 km, öbürü 110 km gider: 100 + 110 = 210 km."
+  }
+ },
+ {
+  "id": "hiz-problemleri-012-5",
+  "h": "1e5f83adb9a373",
+  "guidance": {
+   "knowledge": [
+    "Aynı yönde giden iki araçta aradaki fark saatte süratlerin farkı kadar kapanır (yetişme hızı).",
+    "Yetişme süresi = öndeki aracın farkı / sürat farkı; bu süre arkadakinin çıktığı andan sayılır."
+   ],
+   "strategy": "B çıktığında A'nın ne kadar önde olduğunu bulursun; sonra bu farkı sürat farkına bölüp B'nin çıkış saatine eklersin.",
+   "steps": [
+    "08.00 ile 09.00 arasında A tek başına 1 saat gider: 60 · 1 = 60 km önde.",
+    "Yetişme hızı: 90 − 60 = 30 km/sa.",
+    "Süre: 60 / 30 = 2 saat.",
+    "B 09.00'da çıktığı için 09.00 + 2 saat = 11.00."
+   ],
+   "optionReasons": [
+    "Farkı B'nin süratine böler: 60 / 90 = 2/3 saat = 40 dakika ve 09.40 bulur.",
+    "2 saati A'nın çıkışına ekler: 08.00 + 2 = 10.00.",
+    "10.30'da A 150 km, B 135 km gitmiştir; B henüz yetişmemiştir.",
+    "2 saat yerine A'nın toplam 3 saatini B'nin çıkışına ekler: 09.00 + 3 = 12.00.",
+    "Doğru: B 09.00'dan 2 saat sonra, 11.00'de yetişir."
+   ],
+   "commonError": "Bulunan süreyi arkadaki aracın değil öndeki aracın çıkış saatine eklemek.",
+   "check": "11.00'de A 3 saatte 180 km, B 2 saatte 180 km gitmiştir; konumlar eşit."
+  }
+ },
+ {
+  "id": "hiz-problemleri-012-6",
+  "h": "02995c0ee9d4e8",
+  "guidance": {
+   "knowledge": [
+    "Konum fonksiyonu: t saat sonra aracın başlangıç noktasına göre kaçıncı kilometrede olduğunu verir.",
+    "Karşılaşma: iki aracın konumunun eşit olduğu andır; sorulan konumsa bu t konum ifadesine yazılır."
+   ],
+   "strategy": "Karşılaşma anında konumlar eşit olduğu için iki ifadeyi eşitleyip t'yi bulur, sonra sorulan konumu hesaplarsın.",
+   "steps": [
+    "Eşitle: 20 + 40t = 140 − 20t.",
+    "İki tarafa 20t ekle: 20 + 60t = 140. İki taraftan 20 çıkar: 60t = 120.",
+    "İki tarafı 60'a böl: t = 2 saat.",
+    "Konum: 20 + 40 · 2 = 20 + 80 = 100 km."
+   ],
+   "optionReasons": [
+    "Doğru: t = 2 için iki araç da 100. kilometrededir.",
+    "Yanlış zamanı kullanır; t = 1 için A 60. km'de, B 120. km'dedir, karşılaşmamışlardır.",
+    "A'nın aldığı yolu (40 · 2 = 80) konum sanır; başlangıçtaki 20 km'yi eklemez.",
+    "60t = 120 eşitliğinin sağ tarafını konum sanır.",
+    "B'nin başlangıç konumunu (140) cevap sanır."
+   ],
+   "commonError": "Bulunan zamanı ya da alınan yolu konum yerine cevap vermek.",
+   "check": "B için: 140 − 20 · 2 = 100 km; A ile aynı."
+  }
+ },
+ {
+  "id": "hiz-problemleri-012-7",
+  "h": "1caed48e5c4d1c",
+  "guidance": {
+   "knowledge": [
+    "Tren nokta değildir; peronu tamamen geçmesi, arka ucunun da perondan çıkmasıdır.",
+    "Bunun için trenin ön ucu peron uzunluğu + tren uzunluğu kadar yol alır. Süre = yol / sürat."
+   ],
+   "strategy": "Trenin uzunluğu ihmal edilemez; ön ucun aldığı toplam yolu bulup sürate bölersin.",
+   "steps": [
+    "Ön ucun alması gereken yol: 220 + 180 = 400 m.",
+    "Süre: 400 / 20 = 20 saniye."
+   ],
+   "optionReasons": [
+    "Yalnız tren boyunu kullanır: 180 / 20 = 9.",
+    "Doğru: 400 m / 20 m/sn = 20 sn.",
+    "Yalnız peron boyunu kullanır: 220 / 20 = 11; bu sürede arka uç hâlâ peronda.",
+    "18 sn'de ön uç 360 m gider; arka uç perondan çıkmamış, 40 m kalmıştır.",
+    "22 sn'de ön uç 440 m gider; tren 2 sn önce peronu tamamen geçmiştir."
+   ],
+   "commonError": "Tren uzunluğunu unutup yalnız peron uzunluğunu sürate bölmek.",
+   "check": "20 sn'de ön uç 400 m gider; arka uç 400 − 180 = 220 m ilerleyip tam peron sonuna gelir."
+  }
+ },
+ {
+  "id": "hiz-problemleri-012-8",
+  "h": "10b01c6d8ee388",
+  "guidance": {
+   "knowledge": [
+    "Akıntıyla giderken teknenin yere göre hızı = durgun su hızı + akıntı hızı.",
+    "Akıntıya karşı giderken hız = durgun su hızı − akıntı hızı. Süre = yol / hız."
+   ],
+   "strategy": "İki yönde hız farklı olduğu için gidiş ve dönüş sürelerini ayrı ayrı bulup toplarsın.",
+   "steps": [
+    "Akıntıyla hız: 15 + 3 = 18 km/sa. Süre: 36 / 18 = 2 saat.",
+    "Akıntıya karşı hız: 15 − 3 = 12 km/sa. Süre: 36 / 12 = 3 saat.",
+    "Toplam: 2 + 3 = 5 saat."
+   ],
+   "optionReasons": [
+    "İki yönde de akıntıyla giden hızı kullanır: 72 / 18 = 4.",
+    "4,5 saatin 2 saati gidişse dönüşe 2,5 saat kalır; bu 36 / 2,5 = 14,4 km/sa ister, oysa dönüş hızı 12 km/sa.",
+    "Doğru: 2 saat gidiş + 3 saat dönüş = 5 saat.",
+    "İki yönde de akıntıya karşı hızı kullanır: 72 / 12 = 6.",
+    "8 saat, ortalama 72 / 8 = 9 km/sa demektir; tekne en yavaş hâlinde bile 12 km/sa gider."
+   ],
+   "commonError": "İki yönün hızlarını ortalayıp tek hızla hesaplamak ya da akıntıyı bir yönde unutmak.",
+   "check": "Akıntı yokken 72 / 15 = 4,8 saat olurdu; gidiş dönüşte akıntı toplam süreyi uzatır, 5 > 4,8 tutarlı."
+  }
+ },
+ {
+  "id": "hiz-problemleri-012-9",
+  "h": "11f13154a3e41c",
+  "guidance": {
+   "knowledge": [
+    "Kapalı pistte aynı yönde koşanlardan hızlı olan, yavaşı tam bir tur (pist uzunluğu kadar) öne geçince yeniden yan yana gelirler.",
+    "Göreli sürat: aynı yönde süratlerin farkı. Süre = pist uzunluğu / göreli sürat."
+   ],
+   "strategy": "Aynı yönde gittikleri için aralarındaki fark sürat farkı kadar büyür; farkın 400 m olacağı anı bulursun.",
+   "steps": [
+    "Göreli sürat: 6 − 4 = 2 m/sn.",
+    "Fark 400 m olmalı: 400 / 2 = 200 saniye."
+   ],
+   "optionReasons": [
+    "Zıt yönde koşuyorlarmış gibi süratleri toplar: 400 / (6 + 4) = 40.",
+    "Süratlerin ortalamasına böler: 400 / 5 = 80.",
+    "Yavaş koşucunun bir tur süresini alır: 400 / 4 = 100.",
+    "Doğru: 400 m / 2 m/sn = 200 sn.",
+    "400 sn'de fark 2 · 400 = 800 m, yani iki tur olur; bu ikinci yan yana gelmedir."
+   ],
+   "commonError": "Aynı yönde hareket ederken süratleri toplamak.",
+   "check": "200 sn'de hızlı 1200 m, yavaş 800 m gider; fark 400 m, tam bir tur."
+  }
+ },
+ {
+  "id": "hiz-problemleri-012-10",
+  "h": "1c63b6c22e315d",
+  "guidance": {
+   "knowledge": [
+    "Arkadaki ancak öndekinden daha hızlıysa yetişebilir; aradaki fark saatte (arkadakinin sürati − öndekinin sürati) kadar kapanır.",
+    "Bu fark eksi çıkarsa aralık açılır, yani yetişme olmaz."
+   ],
+   "strategy": "Önce aralığın zamanla nasıl değiştiğini yazar, kapanıp kapanmadığına bakarsın; formüle sayı koymadan önce yönü denetlersin.",
+   "steps": [
+    "Yaya 4 km/sa, öndeki bisikletli 12 km/sa; bisikletli saatte 12 − 4 = 8 km daha fazla gider.",
+    "Aralık: 18 + 8t km. t ≥ 0 için hep 18'den büyük ya da eşittir.",
+    "Aralık hiç küçülmediği için yaya yetişemez."
+   ],
+   "optionReasons": [
+    "Aralığı bisikletlinin süratine böler: 18 / 12 = 1,5; 1,5 saatte aralık 30 km olur.",
+    "Farkın yönünü atlar: 18 / (12 − 4) = 2,25; bu sürede aralık 36 km'ye çıkar.",
+    "3 saatte yaya 12 km, bisikletli 36 km gider; aralık 18 + 24 = 42 km olur.",
+    "Bisikletlinin durduğunu sanır: 18 / 4 = 4,5.",
+    "Doğru: arkadaki daha yavaş, aralık 18 + 8t ile büyür."
+   ],
+   "commonError": "Arkadakinin daha yavaş olduğunu görmeden aralığı sürat farkına bölmek.",
+   "check": "t = 1 için aralık 26 km, t = 2 için 34 km; aralık sürekli büyüyor."
+  }
+ }
+]

@@ -1,3 +1,4 @@
+import { typeset } from "../domain/typeset";
 import { clarifiedQuestionView } from "../domain/questionPresentation";
 import { Footprints, Lightbulb } from "lucide-react";
 import type { HelpQuestion } from "../domain/questionHelpModel";
@@ -27,6 +28,7 @@ export function QuestionHelp({
   onShown,
   playing = false,
   onPlay,
+  polish = false,
 }: {
   question: HelpQuestion;
   level: number;
@@ -45,7 +47,10 @@ export function QuestionHelp({
   /** Replays the opened steps one by one (view only). */
   playing?: boolean;
   onPlay?: (playing: boolean) => void;
+  /** Show display repairs and typesetting (the app does; raw checks do not). */
+  polish?: boolean;
 }) {
+  const show = (text: string) => (polish ? typeset(text) : text);
   const question = clarifiedQuestionView(originalQuestion);
   const guidance = resolvedGuidance(question);
   const panels = helpPanels(question);
@@ -113,7 +118,7 @@ export function QuestionHelp({
                 )}
                 <h3>{panel.title}</h3>
                 {panel.paragraphs.map((paragraph, i) => (
-                  <p key={i}>{paragraph}</p>
+                  <p key={i}>{show(paragraph)}</p>
                 ))}
                 {index === 0 &&
                   tactics.map((tactic) => (
@@ -152,9 +157,9 @@ export function QuestionHelp({
                   <strong>
                     Doğru yanıt: {String.fromCharCode(65 + question.answer)}
                   </strong>{" "}
-                  · {question.options[question.answer]}
+                  · {show(question.options[question.answer])}
                 </p>
-                <p>{question.explanation}</p>
+                <p>{show(question.explanation)}</p>
                 {sourcePresentation?.explanationFigure && (
                   <SourceQuestionFigure
                     figure={sourcePresentation.explanationFigure}
@@ -165,13 +170,13 @@ export function QuestionHelp({
                     <h4>Şıkların mantığı</h4>
                     <ol type="A">
                       {guidance.optionReasons.map((reason, i) => (
-                        <li key={i}>{reason}</li>
+                        <li key={i}>{show(reason)}</li>
                       ))}
                     </ol>
                     <h4>Sık hata</h4>
-                    <p>{guidance.commonError}</p>
+                    <p>{show(guidance.commonError)}</p>
                     <h4>Sonucu kontrol et</h4>
-                    <p>{guidance.check}</p>
+                    <p>{show(guidance.check)}</p>
                   </>
                 )}
                 {guidance && steps && (
@@ -184,8 +189,8 @@ export function QuestionHelp({
                             {String.fromCharCode(65 + i)}
                           </span>
                           <span className="help-autopsy-body">
-                            <span className="help-autopsy-option">{question.options[i]}</span>
-                            <span>{reason}</span>
+                            <span className="help-autopsy-option">{show(question.options[i])}</span>
+                            <span>{show(reason)}</span>
                           </span>
                         </li>
                       ))}
@@ -194,20 +199,20 @@ export function QuestionHelp({
                       <h4>Bu sorudan cebine kalan 1 dakikalık konu kuralı</h4>
                       <ul>
                         {guidance.knowledge.map((rule, i) => (
-                          <li key={i}>{rule}</li>
+                          <li key={i}>{show(rule)}</li>
                         ))}
                       </ul>
                       {route && (
                         <>
                           <h4>30 saniyelik sınav kısayolu</h4>
-                          <p>{route}</p>
+                          <p>{show(route)}</p>
                         </>
                       )}
                     </div>
                     <h4>Sık hata</h4>
-                    <p>{guidance.commonError}</p>
+                    <p>{show(guidance.commonError)}</p>
                     <h4>Sonucu kontrol et</h4>
-                    <p>{guidance.check}</p>
+                    <p>{show(guidance.check)}</p>
                   </>
                 )}
               </section>
@@ -309,7 +314,7 @@ function thirtySecondRoute(strategy: string, check: string) {
  * QuestionHelp with its step-by-step state. Step mode and the closed solution
  * are view state only and reset when another question appears.
  */
-export function GuidedQuestionHelp(props: Omit<ComponentProps<typeof QuestionHelp>, "steps" | "onSteps" | "hidden" | "onHidden" | "shown" | "onShown" | "playing" | "onPlay">) {
+export function GuidedQuestionHelp(props: Omit<ComponentProps<typeof QuestionHelp>, "steps" | "onSteps" | "hidden" | "onHidden" | "shown" | "onShown" | "playing" | "onPlay" | "polish">) {
   const id = props.question.id;
   const fresh = { id, steps: false, hidden: false, shown: undefined as number | undefined, playing: false };
   const [state, setState] = useState(fresh);
@@ -330,6 +335,7 @@ export function GuidedQuestionHelp(props: Omit<ComponentProps<typeof QuestionHel
   return (
     <QuestionHelp
       {...props}
+      polish
       steps={current.steps}
       onSteps={() => setState({ ...current, steps: true, shown: 1 })}
       hidden={current.hidden}

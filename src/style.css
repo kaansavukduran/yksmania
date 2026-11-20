@@ -24,6 +24,10 @@
     "Segoe UI", "Segoe UI Symbol", "Noto Sans Symbols 2", "Noto Sans Symbols", "Apple Symbols", sans-serif;
   color-scheme: dark;
   font-synthesis: none;
+  /* Unhinted, sub-pixel glyph advances: text measures the same on every
+     platform, so labels and layout gates do not shift by a pixel between
+     Windows, Android, Linux and the web. */
+  text-rendering: geometricPrecision;
   scroll-behavior: smooth;
 }
 :root[data-theme="light"] ,

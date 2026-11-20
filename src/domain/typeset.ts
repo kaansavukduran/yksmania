@@ -1,3 +1,4 @@
+import { displayFix } from "../learning/displayFixes";
 /*
  * Display-only Turkish typesetting. Content records stay byte-for-byte as they
  * were saved (preservation tests pin them); this repairs, at render time, the
@@ -17,7 +18,10 @@ const suffixDigit = new RegExp(`(’)([${L}]{2,})(?=\\d)`, "g");
 const commaWord = new RegExp(`(?<![A-Za-z0-9ÇĞİÖŞÜ${L}])([A-ZÇĞİÖŞÜ]?[${L}]{2,})([,;])(?=[${L}]{3,})`, "g");
 const ellipsis = /(?<![.…])\.\.\.(?!\.)/g;
 // “fark−60°”, “nemi%100”, “için°C”: a word glued to a signed number, a percent or a degree unit.
+// Variables such as “ax−1” are mathematics, not prose: only real words qualify
+// (three letters or more, or one of the short Turkish words below).
 const wordSign = new RegExp(`(?<![A-Za-z0-9${L}])([${L}]{2,})(?=[−%]\\d|°C)`, "g");
+const SHORT_WORDS = new Set(["ve", "de", "da", "ki", "ya"]);
 // “alçalıyor;100 m” and “merkezdir.1.013 hPa”: a clause mark glued to the next number.
 const semicolonDigit = /;(?=\d)/g;
 const sentenceDigit = new RegExp(`([${L}]{4,})\\.(?=\\d)`, "g");
@@ -30,8 +34,10 @@ function fixToken(token: string): string {
     .replace(suffixDigit, (m, ap: string, word: string) => `${ap}${word} `);
 }
 
-export function typeset(text: string): string {
-  if (!text) return text;
+export function typeset(original: string): string {
+  if (!original) return original;
+  // Reviewed per-card repairs come first; the general rules then tidy the rest.
+  const text = displayFix(original);
   // Work token by token so a link or code fragment is never touched.
   const spaced = text
     .split(/(\s+)/)
@@ -39,7 +45,7 @@ export function typeset(text: string): string {
     .join("");
   return spaced
     .replace(commaWord, (_m, word: string, mark: string) => `${word}${mark} `)
-    .replace(wordSign, "$1 ")
+    .replace(wordSign, (m, word: string) => (KEEP.has(word) || (word.length < 3 && !SHORT_WORDS.has(word)) ? m : `${word} `))
     .replace(semicolonDigit, "; ")
     .replace(sentenceDigit, "$1. ")
     .replace(ellipsis, "…");

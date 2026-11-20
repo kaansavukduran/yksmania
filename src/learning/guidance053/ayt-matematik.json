@@ -1,0 +1,502 @@
+[
+ {
+  "id": "f021-ayt-fonksiyonlar-1",
+  "h": "1aa3220c2f3acf",
+  "guidance": {
+   "knowledge": [
+    "Fonksiyon: A'daki her elemanı B'de tam bir elemana götüren kural. Görüntü kümesi: gerçekten alınan çıktıların kümesi.",
+    "Örten: görüntü kümesi B'nin tamamıdır. Bire bir: farklı girdiler farklı çıktılara gider."
+   ],
+   "strategy": "Kümeler küçük olduğu için her girdinin çıktısını tek tek hesaplar, sonra görüntüyü B ile karşılaştırıp aynı çıktıyı alan girdi var mı diye bakarsın.",
+   "steps": [
+    "Çıktılar: f(−1) = (−1)² = 1, f(0) = 0² = 0, f(1) = 1² = 1.",
+    "Görüntü kümesi {0, 1}; bu B'nin tamamı olduğundan f örtendir.",
+    "−1 ve 1 farklı girdiler ama ikisi de 1'e gider; f bire bir değildir."
+   ],
+   "optionReasons": [
+    "Tanım kümesini görüntü sanır; kare negatif olamaz, −1 hiç çıktı olmaz.",
+    "Doğru: görüntü B'ye eşit, ama −1 ve 1 aynı çıktıyı alır.",
+    "Bire birliği ve örtenliği yer değiştirir; aslında B'de boşta eleman yoktur ve iki girdi birleşir.",
+    "Bire birliği atlar; f(−1) = f(1) = 1 bunu bozar.",
+    "Fonksiyon tanımını ters okur; kural her girdiye tek çıktı verdiği sürece iki girdinin aynı çıktıyı alması serbesttir."
+   ],
+   "commonError": "Farklı girdilerin aynı çıktıya gitmesini fonksiyon olmamakla karıştırmak.",
+   "check": "Bire bir olsaydı 3 girdi 3 farklı çıktı isterdi; B'de yalnız 2 eleman var, bu imkânsız."
+  }
+ },
+ {
+  "id": "f021-ayt-fonksiyonlar-2",
+  "h": "16c6df3eb7bad2",
+  "guidance": {
+   "knowledge": [
+    "Bağıntı: A'dan B'ye sıralı ikililer kümesi; (x, y) ikilisi x'in y ile eşleştiğini söyler.",
+    "Fonksiyon olması için A'daki her eleman tam bir ikilide ilk eleman olmalı: hiçbiri boşta kalmamalı ve hiçbiri iki farklı çıktı almamalı."
+   ],
+   "strategy": "İki koşulu tek tek denetlersin: her girdinin görüntüsü var mı ve hiçbir girdinin iki görüntüsü var mı.",
+   "steps": [
+    "1'in ikilileri: (1, 3) ve (1, 4). 1 iki farklı çıktı almıştır.",
+    "2'nin ikilisi: (2, 3); 2'nin görüntüsü vardır.",
+    "Tek değerlilik 1 girdisinde bozulduğu için R fonksiyon değildir."
+   ],
+   "optionReasons": [
+    "Yalnız 'her girdinin görüntüsü var' koşulunu denetler; 1'in iki görüntüsü olduğunu atlar.",
+    "Aynı çıktıya iki girdinin gitmesini sorun sanır; bu bire birliği bozar, fonksiyon olmayı değil.",
+    "Küme büyüklüklerinin eşitliği fonksiyon olmanın ölçütü değildir.",
+    "İkililer listesini eksik okur; (2, 3) ikilisi 2'nin görüntüsünün 3 olduğunu gösterir.",
+    "Doğru: 1 hem 3 hem 4 ile eşleşmiştir."
+   ],
+   "commonError": "Bir çıktıya iki girdi gitmesini fonksiyon olmamanın nedeni sanmak.",
+   "check": "(1, 4) ikilisini silersen kalan {(1, 3), (2, 3)} fonksiyon olur; sorun yalnız 1'in ikinci görüntüsüdür."
+  }
+ },
+ {
+  "id": "f021-ayt-fonksiyonlar-3",
+  "h": "1d0b4322d170e8",
+  "guidance": {
+   "knowledge": [
+    "f(2x − 1) ifadesinde fonksiyonun girdisi parantezin içidir, yani 2x − 1.",
+    "f(3) istenirken parantezin içi 3 olmalıdır; bunun için x değeri ayrıca bulunur."
+   ],
+   "strategy": "Parantezin içini 3'e eşitleyip x'i bulursun; sonra bu x'i sağ tarafa yazarsın.",
+   "steps": [
+    "2x − 1 = 3 → iki tarafa 1 ekle: 2x = 4 → iki tarafı 2'ye böl: x = 2.",
+    "Sağ tarafa x = 2 yaz: 4 · 2² − 4 · 2 + 5 = 4 · 4 − 8 + 5.",
+    "Hesapla: 16 − 8 + 5 = 13. Yani f(3) = 13."
+   ],
+   "optionReasons": [
+    "f(t) = t² + 4 kuralında +4'ü unutur: 3² = 9.",
+    "x = 3 yazar ve −4x terimini −4 diye okur: 36 − 4 + 5 = 37.",
+    "Doğru: x = 2 için sağ taraf 13'tür.",
+    "x = 2'yi doğru bulur ama −4x terimini −4 diye okur: 16 − 4 + 5 = 17.",
+    "Sabit terimi cevap sanır; bu x = 1 için değerdir, yani f(1)."
+   ],
+   "commonError": "Parantezin içini 3 yapmadan sağ taraftaki x yerine doğrudan 3 yazmak; bu f(5)'i verir.",
+   "check": "t = 2x − 1 ise 4x² − 4x + 5 = (2x − 1)² + 4, yani f(t) = t² + 4; f(3) = 9 + 4 = 13."
+  }
+ },
+ {
+  "id": "f021-ayt-fonksiyonlar-4",
+  "h": "0c265c7c4de304",
+  "guidance": {
+   "knowledge": [
+    "g∘f (g bileşke f): önce f uygulanır, çıkan sonuç g'ye verilir; g(f(x)).",
+    "Doğal tanım kümesi: kuralın anlamlı olduğu bütün gerçek sayılar; bir kesirde payda 0 olamaz."
+   ],
+   "strategy": "Önce f(x)'i g'nin x'inin yerine yazarak kuralı bulursun; sonra paydayı 0 yapan x'i dışlarsın.",
+   "steps": [
+    "g(f(x)) = 1 / (f(x) − 3) = 1 / (2x + 1 − 3).",
+    "Paydayı sadeleştir: 2x + 1 − 3 = 2x − 2. Kural 1 / (2x − 2).",
+    "Payda 0 olmamalı: 2x − 2 = 0 → iki tarafa 2 ekle: 2x = 2 → x = 1. Tanım R − {1}."
+   ],
+   "optionReasons": [
+    "Doğru: kural 1/(2x − 2), x = 1 dışlanır.",
+    "Kuralı doğru bulur ama g'nin yasak değeri 3'ü girdiye taşır; x = 3'te 1/4 tanımlıdır.",
+    "Sırayı ters çevirip f(g(x)) = 2/(x − 3) + 1 = (x − 1)/(x − 3) hesaplar.",
+    "g'deki −3'ü unutur: 1/(2x + 1); bu da x = −1/2'de tanımsızdır.",
+    "f∘g'nin yarım kalmış hâlini yazar (2/(x − 3)) ve tanımı da karıştırır."
+   ],
+   "commonError": "Bileşkede sırayı karıştırıp f(g(x)) hesaplamak.",
+   "check": "x = 2 için f(2) = 5 ve g(5) = 1/2; kural da 1/(4 − 2) = 1/2 verir."
+  }
+ },
+ {
+  "id": "f021-ayt-fonksiyonlar-5",
+  "h": "1cf0e00cbcb92c",
+  "guidance": {
+   "knowledge": [
+    "Ters fonksiyon f⁻¹: f'nin yaptığını geri alır; f(a) = b ise f⁻¹(b) = a.",
+    "Bulmak için y = f(x) yazılır, x yalnız bırakılır, sonra harfler yer değiştirir. Tersin tanım kümesi f'nin görüntü kümesidir."
+   ],
+   "strategy": "Kesirli bir kural olduğu için paydayla çarpıp x'li terimleri bir tarafa toplar, x'i ortak çarpan parantezine alırsın.",
+   "steps": [
+    "y = (2x + 1)/(x − 3) → iki tarafı (x − 3) ile çarp: yx − 3y = 2x + 1.",
+    "x'li terimleri sola, diğerlerini sağa al: yx − 2x = 3y + 1.",
+    "x'i ortak paranteze al: x(y − 2) = 3y + 1 → iki tarafı (y − 2)'ye böl: x = (3y + 1)/(y − 2).",
+    "Harfleri değiştir: f⁻¹(x) = (3x + 1)/(x − 2), x ≠ 2."
+   ],
+   "optionReasons": [
+    "Terimleri taşırken işaretleri ters çevirir; f(0) = −1/3 olduğundan x = −1/3 için 0 vermeli; bu kural −6/5 verir.",
+    "Pay ve paydanın katsayılarını karıştırır; x = −1/3 için 0 vermez.",
+    "f'nin kendisini yazar; f kendi kendisinin tersi değildir, f(f(0)) = f(−1/3) ≠ 0.",
+    "Doğru: x(y − 2) = 3y + 1'den elde edilir.",
+    "1/f(x)'i ters fonksiyon sanır; çarpma tersi ile ters eşleme farklıdır."
+   ],
+   "commonError": "Ters fonksiyonu 1/f(x) ile karıştırmak.",
+   "check": "f(1) = 3/(−2) = −3/2. f⁻¹(−3/2) = (−9/2 + 1)/(−3/2 − 2) = (−7/2)/(−7/2) = 1."
+  }
+ },
+ {
+  "id": "f021-ayt-fonksiyonlar-6",
+  "h": "0e87b9d8ee86e6",
+  "guidance": {
+   "knowledge": [
+    "[a, b]: a ile b arasındaki bütün gerçek sayılar, uçlar dahil; (a, b) uçları içermez.",
+    "Görüntü kümesi: tanım aralığındaki her x için f(x) değerlerinin oluşturduğu küme."
+   ],
+   "strategy": "x² ifadesi x = 0'da en küçük değeri alır ve 0 bu aralığın içindedir; bu yüzden yalnız uçlara bakmak yetmez, en küçük ve en büyük değeri ayrı bulursun.",
+   "steps": [
+    "Aralık [−2, 1] içinde 0 vardır; en küçük değer f(0) = 0.",
+    "Uçlar: f(−2) = 4, f(1) = 1. En büyük değer 4.",
+    "Aradaki bütün değerler alınır ve 0 ile 4 de alındığından görüntü [0, 4]."
+   ],
+   "optionReasons": [
+    "Uçları dışarıda bırakır; oysa 0 = f(0) ve 4 = f(−2) gerçekten alınır.",
+    "Doğru: en küçük 0, en büyük 4, ikisi de dahil.",
+    "Yalnız iki uç görüntüsünü alır (1 ve 4); x = 0'daki 0 değerini kaçırır.",
+    "Tanım kümesini görüntü kümesi sanır.",
+    "Yalnız [0, 1] aralığının görüntüsünü alır; −2 tarafını unutur."
+   ],
+   "commonError": "Görüntüyü yalnız uçlardaki değerlerden kurup aralığın içindeki en küçük değeri kaçırmak.",
+   "check": "x = −1,5 için f = 2,25 ve x = 0,5 için f = 0,25; ikisi de [0, 4] içinde."
+  }
+ },
+ {
+  "id": "f021-ayt-fonksiyonlar-7",
+  "h": "193db4288ff069",
+  "guidance": {
+   "knowledge": [
+    "Sabit fonksiyon: her girdiye aynı değeri veren kural; burada her x için 3.",
+    "Bir fonksiyonun tersinin fonksiyon olması için bire bir (farklı girdi, farklı çıktı) ve örten (görüntü hedef kümenin tamamı) olması gerekir."
+   ],
+   "strategy": "Tersin varlığı bire birlik ve örtenlik koşullarına bağlı olduğundan önce bu iki koşulu sabit fonksiyonda denetlersin.",
+   "steps": [
+    "f(0) = 3 ve f(1) = 3: farklı girdiler aynı çıktıya gider, bire bir değildir.",
+    "Görüntü yalnız {3}; R'nin tamamı değil, örten de değildir.",
+    "Geri yönde 3'e hangi girdinin karşılık geleceği seçilemez; ters fonksiyon yoktur."
+   ],
+   "optionReasons": [
+    "Çarpma tersini (1/3) fonksiyon tersi sanır.",
+    "f(x) = x + 3 kuralının tersini yazar; sabit 3 fonksiyonu x'e bağlı değildir.",
+    "Birim fonksiyon ters olsaydı f(x) yeniden x'e dönmeliydi; oysa her girdi 3'e gider ve geri dönüş yoktur.",
+    "3 dışındaki girdiler f'nin görüntüsünde yoktur; onlara geri yönde bir değer atanamaz.",
+    "Doğru: bütün girdiler 3'e gider, bire birlik yoktur."
+   ],
+   "commonError": "Fonksiyon tersini 1/f gibi çarpma tersiyle karıştırmak.",
+   "check": "Ters olsaydı f⁻¹(3) hem 0 hem 1 olmalıydı; tek değerlilik bozulur."
+  }
+ },
+ {
+  "id": "f021-ayt-fonksiyonlar-8",
+  "h": "0cb045e1f7717f",
+  "guidance": {
+   "knowledge": [
+    "Parçalı fonksiyon: tanım kümesinin farklı bölgelerinde farklı kurallar kullanır.",
+    "x < 1 sınırı 1'i içermez; x ≥ 1 sınırı 1'i içerir. Bir noktadaki değer, o noktayı içeren parçanın kuralıyla bulunur."
+   ],
+   "strategy": "Önce x = 1'in hangi parçaya ait olduğunu eşitsizliklerden belirler, sonra yalnız o kuralı uygularsın.",
+   "steps": [
+    "1 < 1 yanlıştır; birinci parçaya ait değil. 1 ≥ 1 doğrudur; ikinci parçaya aittir.",
+    "f(1) = 2 · 1 − 1 = 2 − 1 = 1."
+   ],
+   "optionReasons": [
+    "2x − 1'de −1'i unutur: 2 · 1 = 2.",
+    "Sınırda kuralın değiştiğini görüp değeri yok sanır; oysa x ≥ 1 parçası 1'i içerir.",
+    "Doğru: x = 1 ikinci parçaya aittir, f(1) = 1.",
+    "Birinci kuralı kullanır: 1 + 2 = 3; bu yalnız soldan yaklaşırken yaklaşılan değerdir.",
+    "Kuralı x − 1 gibi okuyup 2 katsayısını atlar: 1 − 1 = 0."
+   ],
+   "commonError": "Sınır noktasında yanlış parçanın kuralını kullanmak.",
+   "check": "Sağdan yaklaş: x = 1,1 için 2,2 − 1 = 1,2; değerler 1'e yaklaşıyor ve f(1) = 1 ile uyumlu."
+  }
+ },
+ {
+  "id": "f021-ayt-fonksiyonlar-9",
+  "h": "186466b4e38401",
+  "guidance": {
+   "knowledge": [
+    "Çift fonksiyon: her x için f(−x) = f(x). Tek fonksiyon: her x için f(−x) = −f(x).",
+    "Bu tanımlar için tanım kümesi x içerdiğinde −x'i de içermelidir; R bu koşulu sağlar."
+   ],
+   "strategy": "İki tanımı da sıfır fonksiyonuna ayrı ayrı uygular, her birinin sağlanıp sağlanmadığına bakarsın.",
+   "steps": [
+    "Çiftlik: f(−x) = 0 ve f(x) = 0; 0 = 0 sağlanır.",
+    "Teklik: f(−x) = 0 ve −f(x) = −0 = 0; 0 = 0 sağlanır.",
+    "İki tanım da sağlandığı için sıfır fonksiyonu hem tek hem çifttir."
+   ],
+   "optionReasons": [
+    "Doğru: iki eşitlik de 0 = 0 olur.",
+    "Yalnız teklik tanımını dener; çiftlik tanımı da aynı biçimde sağlanır.",
+    "Yalnız çiftlik tanımını dener; −0 = 0 olduğu için teklik de sağlanır.",
+    "Bir fonksiyonun ancak birinde olabileceğini sanıp ikisini birden reddeder.",
+    "Her x'e tek çıktı (0) verdiği için kural bir fonksiyondur."
+   ],
+   "commonError": "Bir fonksiyonun aynı anda hem tek hem çift olamayacağını sanmak.",
+   "check": "Hem tek hem çift olan f için f(x) = f(−x) = −f(x), yani 2f(x) = 0; bu yalnız sıfır fonksiyonunda olur."
+  }
+ },
+ {
+  "id": "f021-ayt-fonksiyonlar-10",
+  "h": "11ae2debd27097",
+  "guidance": {
+   "knowledge": [
+    "A'dan B'ye fonksiyon: A'nın her elemanına B'den bir eleman seçmek. s(A) = 3, s(B) = 2 ise her girdi için 2 seçenek vardır.",
+    "Bire bir fonksiyon: farklı girdiler farklı çıktı alır; bunun için B'de en az A kadar eleman olmalıdır."
+   ],
+   "strategy": "Toplam sayıyı her girdinin seçenek sayısını çarparak bulursun; bire birlik için önce eleman sayısı koşulunu denetlersin.",
+   "steps": [
+    "a için 2, b için 2, c için 2 seçenek: 2 · 2 · 2 = 2³ = 8 fonksiyon.",
+    "Bire birlik için 3 farklı çıktı gerekir; B'de yalnız 2 eleman vardır.",
+    "Koşul sağlanamaz; bire bir fonksiyon sayısı 0."
+   ],
+   "optionReasons": [
+    "Taban ile üssü karıştırır: 3² = 9; bire bir için de 3 yazar.",
+    "Toplamı doğru bulur ama 2 sabit fonksiyonu bire bir sanır.",
+    "Çarpma yerine 3 · 2 = 6 yazar; bu, eleman sayılarının çarpımıdır.",
+    "Doğru: 2³ = 8 fonksiyon, bire bir fonksiyon yoktur.",
+    "Toplamı 3 · 2 = 6 alır ve bire bir sayısını uydurma bir 1 olarak yazar."
+   ],
+   "commonError": "Fonksiyon sayısını s(A)^s(B) diye ters kurmak; doğrusu s(B)^s(A).",
+   "check": "a, b, c'nin çıktılarını sırayla yaz: 111, 112, 121, 122, 211, 212, 221, 222; 8 dizi var ve hepsinde bir çıktı tekrar eder."
+  }
+ },
+ {
+  "id": "f021-ayt-polinomlar-1",
+  "h": "1ca7d6f412aacf",
+  "guidance": {
+   "knowledge": [
+    "Katsayı: bir terimde x'in kuvvetinin önündeki sayı; sabit terim de bir katsayıdır.",
+    "x = 1 yazınca her terim katsayısına eşit olur; bu yüzden katsayılar toplamı P(1)'dir."
+   ],
+   "strategy": "Katsayıları tek tek toplamak yerine x = 1 yazarsın; eksik terimlerin katsayısı 0 olduğundan sonucu değiştirmez.",
+   "steps": [
+    "P(1) = 3 · 1⁴ − 2 · 1² + 1 − 7.",
+    "Hesapla: 3 − 2 + 1 − 7 = −5."
+   ],
+   "optionReasons": [
+    "Doğru: P(1) = 3 − 2 + 1 − 7 = −5.",
+    "Sabit terimi (P(0) = −7) katsayılar toplamı sanır.",
+    "Sonucun işaretini kaybeder: 5 bulur.",
+    "−2x² terimini atlar: 3 + 1 − 7 = −3.",
+    "Yalnız baş katsayıyı (3) cevap sanır."
+   ],
+   "commonError": "Katsayılar toplamını sabit terimle, yani P(1)'i P(0) ile karıştırmak.",
+   "check": "Katsayıları tek tek yaz: 3, 0, −2, 1, −7; toplam 3 + 0 − 2 + 1 − 7 = −5."
+  }
+ },
+ {
+  "id": "f021-ayt-polinomlar-2",
+  "h": "1053e6eb8f9d1f",
+  "guidance": {
+   "knowledge": [
+    "Polinom: a·xⁿ biçimindeki terimlerin toplamı; üsler 0, 1, 2 gibi doğal sayılar olmalı.",
+    "Katsayılar herhangi gerçek sayı olabilir (√2 de olur). 1/x = x⁻¹ negatif üslüdür."
+   ],
+   "strategy": "Her kuralı terim terim açıp x'in üslerine bakarsın; negatif ya da kesirli üs görürsen polinom değildir.",
+   "steps": [
+    "(x − 1)² = x² − 2x + 1; üsler 2, 1, 0. 5 ve 0 sabit polinomdur.",
+    "√2·x² − 3: katsayı √2 gerçek, üsler 2 ve 0; polinomdur.",
+    "x + 1/x = x + x⁻¹; −1 üssü doğal sayı değil, polinom değildir."
+   ],
+   "optionReasons": [
+    "Sıfır polinomunu polinom saymaz; oysa 0 da bir polinomdur.",
+    "Parantezli yazılışı polinom dışı sanır; açınca x² − 2x + 1 çıkar.",
+    "Sabit sayının x içermediği için polinom olmadığını sanır; 5 = 5x⁰'dır.",
+    "Doğru: 1/x = x⁻¹ negatif üslüdür.",
+    "Kök işaretini x'in üssüyle karıştırır; √2 yalnız katsayıdır."
+   ],
+   "commonError": "Katsayıdaki kökü üs sorunu sanmak ya da 1/x'teki negatif üssü görmemek.",
+   "check": "x = 0'da x + 1/x tanımsızdır; her polinom her gerçek x'te tanımlı olmalıdır."
+  }
+ },
+ {
+  "id": "f021-ayt-polinomlar-3",
+  "h": "043e3ad24e124c",
+  "guidance": {
+   "knowledge": [
+    "Sabit polinom: x içeren hiçbir terimi olmayan polinom; yalnız sayıdan oluşur.",
+    "Bir terimin yok olması için katsayısı 0 olmalıdır."
+   ],
+   "strategy": "Sabit kalması için x³ ve x² terimlerinin ikisinin de katsayısı 0 olmalı; iki ayrı denklem kurarsın.",
+   "steps": [
+    "x³ katsayısı: a − 2 = 0 → iki tarafa 2 ekle: a = 2.",
+    "x² katsayısı: b + 1 = 0 → iki taraftan 1 çıkar: b = −1.",
+    "Toplam: a + b = 2 + (−1) = 1. Polinom P(x) = 3 olur."
+   ],
+   "optionReasons": [
+    "Yalnız a'yı bulur ve cevap yazar.",
+    "Doğru: a = 2, b = −1, toplam 1.",
+    "b'nin işaretini yanlış aktarır: b = 1 alır ve 2 + 1 = 3 bulur.",
+    "Yalnız b'yi (−1) cevap yazar.",
+    "b + 1 = 0'dan b = −2 gibi hatalı aktarır: 2 + (−2) = 0."
+   ],
+   "commonError": "Yalnız en büyük dereceli terimi sıfırlayıp diğer x'li terimi unutmak.",
+   "check": "a = 2, b = −1 yaz: 0·x³ + 0·x² + 3 = 3; sabit polinom."
+  }
+ },
+ {
+  "id": "f021-ayt-polinomlar-4",
+  "h": "0e37f742e9f4d6",
+  "guidance": {
+   "knowledge": [
+    "Derece: polinomda katsayısı 0 olmayan terimlerden en büyük üs.",
+    "Sıfır olmayan sabit (ör. 5 = 5x⁰) polinomun derecesi 0'dır; sıfır polinomunda katsayısı 0 olmayan terim yoktur."
+   ],
+   "strategy": "Derece, sıfırdan farklı katsayılı terimlere bakılarak tanımlandığından sıfır polinomunda böyle terim olup olmadığını denetlersin.",
+   "steps": [
+    "P(x) = 0'da her katsayı 0'dır; sıfırdan farklı katsayılı terim yoktur.",
+    "En büyük üs seçilecek terim bulunmadığından derece tanımsızdır."
+   ],
+   "optionReasons": [
+    "Sıfır polinomunu 5 gibi sıfır olmayan sabitlerle karıştırır; derecesi 0 olan onlardır.",
+    "Derece için 1'in seçilmesine dayanak yoktur; x'li hiçbir terim yok.",
+    "Dereceye sabit bir eksi sayı atayan uzlaşımı genel kural sanır; bu tanımda derece tanımsızdır.",
+    "Dereceyi bir üs yerine katsayıyla karıştırır.",
+    "Doğru: sıfırdan farklı terim olmadığı için en büyük üs seçilemez."
+   ],
+   "commonError": "Sıfır polinomunun derecesini sıfır olmayan sabitlerle aynı sanıp 0 demek.",
+   "check": "0 = 0·x = 0·x⁵ gibi her derecede yazılabilir; tek bir derece seçilemez."
+  }
+ },
+ {
+  "id": "f021-ayt-polinomlar-5",
+  "h": "1423426a92aa1d",
+  "guidance": {
+   "knowledge": [
+    "Çift kuvvetli terimler: x⁰ (sabit terim), x², x⁴ gibi üssü çift olanlar.",
+    "P(1) bütün katsayıları toplar; P(−1)'de tek kuvvetli terimler eksi işaret alır. Bu yüzden çift kuvvetliler toplamı (P(1) + P(−1))/2'dir."
+   ],
+   "strategy": "Polinom kısa olduğu için çift kuvvetli katsayıları doğrudan seçip toplarsın; sonucu P(1) ve P(−1) ile denetlersin.",
+   "steps": [
+    "Terimler: x³ (üs 3, tek), −x² (üs 2, çift), x (üs 1, tek), 3 (üs 0, çift).",
+    "Çift kuvvetlilerin katsayıları: −1 ve 3.",
+    "Toplam: −1 + 3 = 2."
+   ],
+   "optionReasons": [
+    "Sabit terimi unutup yalnız x² katsayısını alır: −1.",
+    "Yalnız sabit terimi alır: 3.",
+    "Doğru: −1 + 3 = 2.",
+    "Bütün katsayıları toplar: P(1) = 1 − 1 + 1 + 3 = 4.",
+    "P(−1) değerini verir: −1 − 1 − 1 + 3 = 0."
+   ],
+   "commonError": "Sabit terimin x⁰ olarak çift kuvvetli olduğunu unutmak.",
+   "check": "P(1) = 4 ve P(−1) = 0; (4 + 0) / 2 = 2."
+  }
+ },
+ {
+  "id": "f021-ayt-polinomlar-6",
+  "h": "0d8720501bc4a9",
+  "guidance": {
+   "knowledge": [
+    "Kalan teoremi: P(x) polinomunun x − a ile bölümünden kalan P(a)'dır.",
+    "Çünkü P(x) = (x − a)·Q(x) + K yazılır; x = a koyunca ilk terim 0 olur ve geriye K kalır."
+   ],
+   "strategy": "Bölen x − 2 biçiminde olduğu için uzun bölme yerine kalan teoremini kullanır, x = 2 yazarsın.",
+   "steps": [
+    "Bölenin kökü: x − 2 = 0 → x = 2.",
+    "P(2) = 2 · 2³ − 3 · 2² − 5 · 2 + 7 = 2 · 8 − 3 · 4 − 10 + 7.",
+    "Hesapla: 16 − 12 − 10 + 7 = 1."
+   ],
+   "optionReasons": [
+    "Doğru: P(2) = 16 − 12 − 10 + 7 = 1.",
+    "Bütün işaretleri ters çevirir: −16 + 12 + 10 − 7 = −1.",
+    "Sabit terimi (P(0) = 7) kalan sanır.",
+    "Bölenin kökünü (2) kalan sanır.",
+    "Bölmenin tam olduğunu varsayar; P(2) = 1 ≠ 0, yani 2 kök değildir."
+   ],
+   "commonError": "x − 2 için x = −2 yazmak; kök bölenin sıfır olduğu yerdir, x = 2.",
+   "check": "Elle bölme: katsayılar 2, −3, −5, 7 için 2 ile kademeli işlem 2, 1, −3 ve kalan 1 verir."
+  }
+ },
+ {
+  "id": "f021-ayt-polinomlar-7",
+  "h": "182563d9d2c7be",
+  "guidance": {
+   "knowledge": [
+    "Bölme bağıntısı: P(x) = (x − 2)·Q(x) + K; Q bölüm, K kalan.",
+    "Kademeli (Horner) bölme: katsayılar sırayla yazılır, bölenin kökü 2 ile çarpıp bir sonraki katsayıya eklenir; son sayı kalandır."
+   ],
+   "strategy": "Bölen birinci dereceden olduğu için kademeli bölme kısa ve hatasız yoldur; katsayıları sırayla işlersin.",
+   "steps": [
+    "Katsayılar: 2, −3, −5, 7. İlk katsayıyı indir: 2.",
+    "2 · 2 = 4, sonrakine ekle: −3 + 4 = 1. 1 · 2 = 2, ekle: −5 + 2 = −3.",
+    "−3 · 2 = −6, ekle: 7 − 6 = 1 (kalan).",
+    "Bölüm katsayıları 2, 1, −3: Q(x) = 2x² + x − 3."
+   ],
+   "optionReasons": [
+    "Son katsayının işaretini kaybeder: −3 yerine +3 yazar.",
+    "P'nin ilk üç katsayısını kopyalar; köke göre ekleme yapmaz.",
+    "Baş katsayıyı 1 alır; (x − 2)(x² + 2x − 3) = x³ − 7x + 6 olur, baş katsayı 2 değil.",
+    "Doğru: kademeli bölme 2, 1, −3 ve kalan 1 verir.",
+    "Ortadaki katsayıda işaret hatası yapar: −3 + 4 = 1 yerine −1 yazar."
+   ],
+   "commonError": "Kademeli bölmede çarpımı eklemek yerine çıkarmak.",
+   "check": "(x − 2)(2x² + x − 3) = 2x³ − 3x² − 5x + 6; üstüne kalan 1 eklenince P(x) elde edilir."
+  }
+ },
+ {
+  "id": "f021-ayt-polinomlar-8",
+  "h": "1a9372d19f5126",
+  "guidance": {
+   "knowledge": [
+    "P(x + 1) ifadesinde P'nin girdisi x + 1'dir.",
+    "P(2) istenirken parantezin içi 2 olmalı; bunun için x değeri ayrıca bulunur."
+   ],
+   "strategy": "Parantezin içini 2'ye eşitleyip x'i bulur, sağ tarafa yazarsın.",
+   "steps": [
+    "x + 1 = 2 → iki taraftan 1 çıkar: x = 1.",
+    "Sağ taraf: 1³ + 3 · 1² + 3 · 1 + 6 = 1 + 3 + 3 + 6.",
+    "Topla: 13. Yani P(2) = 13."
+   ],
+   "optionReasons": [
+    "P(t) = t³ + 5 kuralındaki sabiti cevap sanır.",
+    "Doğru: x = 1 için sağ taraf 13.",
+    "Sağ tarafa x = 2 yazar: 8 + 12 + 6 + 6 = 32; bu P(3)'tür.",
+    "Sağ tarafa x = 0 yazar ve 6 bulur; bu P(1)'dir.",
+    "P(t) = t³ + 5'te +5'i unutur: 2³ = 8."
+   ],
+   "commonError": "Parantezin içini 2 yapmadan sağ taraftaki x yerine 2 yazmak.",
+   "check": "x³ + 3x² + 3x + 6 = (x + 1)³ + 5, yani P(t) = t³ + 5; P(2) = 8 + 5 = 13."
+  }
+ },
+ {
+  "id": "f021-ayt-polinomlar-9",
+  "h": "053a675caa64d7",
+  "guidance": {
+   "knowledge": [
+    "Bölme bağıntısı: P(x) = (x² − 1)·Q(x) + K(x). Kalanın derecesi bölenden küçük olmalı; bölen 2. derece olduğundan K(x) = ax + b.",
+    "x² − 1'in kökleri 1 ve −1'dir; bu değerlerde bölen 0 olur ve P(kök) = K(kök) kalır."
+   ],
+   "strategy": "Bölenin iki kökü bilinen sayılar olduğu için x = 1 ve x = −1 yazıp a ve b için iki denklem kurarsın.",
+   "steps": [
+    "P(1) = 1 + 2 + 3 + 4 = 10, P(−1) = −1 + 2 − 3 + 4 = 2.",
+    "K(1) = a + b = 10 ve K(−1) = −a + b = 2.",
+    "İki denklemi topla: 2b = 12 → b = 6. İlkinden a = 10 − 6 = 4.",
+    "Kalan: K(x) = 4x + 6."
+   ],
+   "optionReasons": [
+    "a ile b'yi yer değiştirir: 6x + 4; x = −1'de −2 verir, oysa P(−1) = 2.",
+    "Kalanı sabit sanır; x = 1'de 4 verir, oysa P(1) = 10.",
+    "Bölümü (Q = x + 2) kalan sanır.",
+    "P'nin son iki terimini kopyalar; x = 1'de 7 verir, oysa P(1) = 10.",
+    "Doğru: a + b = 10 ve −a + b = 2'den a = 4, b = 6."
+   ],
+   "commonError": "İkinci dereceden bir bölende kalanı sabit sanıp ax + b biçiminde yazmamak.",
+   "check": "(x² − 1)(x + 2) = x³ + 2x² − x − 2; üstüne 4x + 6 ekle: x³ + 2x² + 3x + 4."
+  }
+ },
+ {
+  "id": "f021-ayt-polinomlar-10",
+  "h": "1ae9dfb7eea8a2",
+  "guidance": {
+   "knowledge": [
+    "Polinom toplamı: aynı üslü terimlerin katsayıları toplanır.",
+    "Derece: katsayısı 0 olmayan en büyük üs. Baş terimler birbirini götürürse derece düşer."
+   ],
+   "strategy": "İki polinomun en büyük terimleri zıt katsayılı olduğundan dereceyi tahmin etmek yerine toplamı açıkça hesaplarsın.",
+   "steps": [
+    "x⁴ terimleri: 2x⁴ + (−2x⁴) = 0.",
+    "Kalan terimler: 3x² (yalnız Q'da), −x (yalnız P'de), 1 + (−4) = −3.",
+    "Toplam 3x² − x − 3; en büyük üs 2, katsayısı 3 ≠ 0. Derece 2."
+   ],
+   "optionReasons": [
+    "x² terimini görmeden −x terimine bakar ve 1 der.",
+    "Bütün terimlerin birbirini götürdüğünü sanır; 3x² ve −x kalır.",
+    "Doğru: toplam 3x² − x − 3, derecesi 2.",
+    "Dereceler eşit diye toplamın derecesini koşulsuz 4 alır; x⁴ katsayıları 2 − 2 = 0.",
+    "3x²'deki katsayı 3'ü derece sanır."
+   ],
+   "commonError": "Derecesi eşit iki polinomun toplamında baş terimlerin birbirini götürebileceğini unutmak.",
+   "check": "x = 10 için P + Q = 300 − 10 − 3 = 287; bu da x² mertebesinde büyüme gösterir, x⁴ değil."
+  }
+ }
+]

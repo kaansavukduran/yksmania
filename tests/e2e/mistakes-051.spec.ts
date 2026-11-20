@@ -1,3 +1,4 @@
+import { typeset } from "../../src/domain/typeset";
 import { test, expect, type Page } from "@playwright/test";
 import { setThemePreference } from "./helpers/theme";
 import AxeBuilder from "@axe-core/playwright";
@@ -89,6 +90,6 @@ test("051 mistakes: prerequisite bridge opens a Temel İnşa lesson and the boss
   await page.goto("/#/mistakes");
   await page.getByRole("button", { name: "6 soruluk boss turunu başlat" }).click();
   // The confident wrong answer leads the boss round.
-  await expect(page.getByRole("heading", { name: qs[3].prompt.tr })).toBeVisible();
+  await expect(page.getByRole("heading", { name: typeset(qs[3].prompt.tr) })).toBeVisible();
   await expect(page.locator(".exam-question-meta")).toContainText("Soru 1 / 6");
 });

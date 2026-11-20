@@ -1,3 +1,4 @@
+import { typeset } from "../../src/domain/typeset";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { foundation013QuestionSets } from "../../src/learning/forge013FoundationQuestions";
@@ -153,9 +154,7 @@ test("YKS-067 draft replacement cancels exactly, restores focus, and confirms on
   await modal
     .getByRole("button", { name: "Yeni çalışmayı aç", exact: true })
     .click({ clickCount: 2 });
-  await expect(page.locator(".question-panel h2")).toHaveText(
-    history.questions[0].prompt.tr,
-  );
+  await expect(page.locator(".question-panel h2")).toHaveText(typeset(history.questions[0].prompt.tr));
   await saved(page);
   const after = await stored(page);
   expect(after).toEqual({
@@ -174,9 +173,7 @@ test("YKS-067 draft replacement cancels exactly, restores focus, and confirms on
     },
   });
   await page.reload();
-  await expect(page.locator(".question-panel h2")).toHaveText(
-    history.questions[0].prompt.tr,
-  );
+  await expect(page.locator(".question-panel h2")).toHaveText(typeset(history.questions[0].prompt.tr));
   expect(await stored(page)).toEqual(after);
 });
 
@@ -215,9 +212,7 @@ test("YKS-067 failed replacement retains the checked draft and retry still requi
   await modal
     .getByRole("button", { name: "Yeni çalışmayı aç", exact: true })
     .click();
-  await expect(page.locator(".question-panel h2")).toHaveText(
-    history.questions[0].prompt.tr,
-  );
+  await expect(page.locator(".question-panel h2")).toHaveText(typeset(history.questions[0].prompt.tr));
   await saved(page);
   expect((await stored(page)).draft?.lessonId).toBe(history.lessonId);
 });

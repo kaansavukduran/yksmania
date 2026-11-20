@@ -1,0 +1,749 @@
+[
+ {
+  "id": "f015-bio-sinir-sistemi-orta-arka-beyin-1",
+  "h": "16417bf405c3d4",
+  "guidance": {
+   "knowledge": [
+    "Beyin sapı: beyni omuriliğe bağlayan sap biçimli bölge; orta beyin, pons ve omurilik soğanından (medulla) oluşur.",
+    "Arka beyin pons, omurilik soğanı ve beyinciği içerir. İki grup ortak üyeler taşır ama aynı liste değildir; beyincik beyin sapına dâhil edilmez."
+   ],
+   "strategy": "Beyin sapının üç üyesini bil, sonra her şıkta bu üç yapının dışında kalan bir öge ya da merkezî sinir sistemine ait olmayan bir parça var mı diye bak.",
+   "steps": [
+    "Beyin sapı = orta beyin + pons + omurilik soğanı.",
+    "Beyincik, korteks, talamus ve epifiz beyin sapı dışındadır; gangliyon, deri reseptörü ve iskelet kası ise çevresel yapılardır.",
+    "Üç üyeyi eksiksiz ve yabancı öge olmadan veren tek grup: orta beyin, pons ve omurilik soğanı."
+   ],
+   "optionReasons": [
+    "Doğru: Beyin sapı orta beyin, pons ve omurilik soğanından oluşur.",
+    "Beyinciği arka beyin üyesi olduğu için beyin sapı sanır; korteks ise ön beyindedir.",
+    "Talamus ve epifiz ara beyin yapılarıdır; beyin sapını ön beyinle karıştırır.",
+    "Gangliyonlar çevresel sinir sistemine aittir; beyin sapı merkezî sinir sisteminin parçasıdır.",
+    "Ponsu doğru seçer ama deri reseptörü ve iskelet kası gibi sinir sistemi dışı ya da çevresel ögeleri ekler."
+   ],
+   "commonError": "Arka beyin ile beyin sapını aynı liste sanıp beyinciği beyin sapına katmak.",
+   "check": "İki listeyi alt alta yaz: ortak üyeler pons ve omurilik soğanıdır; orta beyin yalnız beyin sapında, beyincik yalnız arka beyinde kalır."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-orta-arka-beyin-2",
+  "h": "0a7a04d81cc432",
+  "guidance": {
+   "knowledge": [
+    "Arka beyin: pons, omurilik soğanı (medulla) ve beyincikten oluşan bölge.",
+    "Beyin sapı: orta beyin, pons ve omurilik soğanı. Pons ve omurilik soğanı iki grupta da vardır."
+   ],
+   "strategy": "İki listeyi karşılaştır; arka beyinde olup beyin sapında olmayan üyeyi bul.",
+   "steps": [
+    "Arka beyin listesi: pons, omurilik soğanı, beyincik.",
+    "Beyin sapı listesi: orta beyin, pons, omurilik soğanı.",
+    "Arka beyinde olup beyin sapında bulunmayan tek yapı: beyincik."
+   ],
+   "optionReasons": [
+    "Pons iki listede de vardır; hem arka beyin hem beyin sapı üyesidir.",
+    "Doğru: Beyincik arka beyindedir ama beyin sapı grubuna alınmaz.",
+    "Omurilik soğanı iki listede de bulunur; beyin sapının dışında değildir.",
+    "Orta beyin beyin sapındadır ama arka beyin üyesi değildir; koşulu tersinden sağlar.",
+    "Çevresel sinir demeti merkezî sinir sistemine ait değildir; ne arka beyin ne beyin sapıdır."
+   ],
+   "commonError": "Arka beyin ile beyin sapını aynı sanıp beyinciği beyin sapına yerleştirmek.",
+   "check": "Venn şeması çiz: kesişimde pons ve omurilik soğanı, yalnız arka beyin tarafında beyincik kalır."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-orta-arka-beyin-3",
+  "h": "0ce77b4010d1c7",
+  "guidance": {
+   "knowledge": [
+    "Orta beyin: beyin sapının en üst parçası; ani görsel ve işitsel uyaranlara baş ve gözü yöneltme ile göz bebeği refleksi gibi bazı reflekslerde rol alır.",
+    "Refleks: bilinçli karar beklemeden oluşan hızlı yanıt. Bilinçli görsel yorum (gördüğünü tanıma) ise beyin kabuğunda (korteks) gerçekleşir."
+   ],
+   "strategy": "Soruda bilinçli tanıma değil, refleks niteliğinde yönelme anlatılıyor; bu görevi üstlenen merkezî sinir sistemi bölgesini ara.",
+   "steps": [
+    "Ani görsel olaya baş ve göz çevirme hızlı, otomatik bir yönelmedir.",
+    "Bu tür görsel ve işitsel yönelme ile bazı göz refleksleri orta beyin ağlarıyla ilişkilidir.",
+    "Sonuç: orta beyin ağları."
+   ],
+   "optionReasons": [
+    "Miyelin iletimi hızlandıran kılıftır; yönelmeyi düzenleyen bir merkez değildir.",
+    "Parmak kası yanıt veren bir efektördür; baş-göz yönelmesini düzenleyemez.",
+    "Doğru: Orta beyin ağları görsel ve işitsel yönelme ile bazı göz reflekslerinde rol alır.",
+    "Beyin omurilik sıvısı (BOS) koruma ve besleme sağlar; refleks merkezi değildir.",
+    "Epifiz melatonin salgılayan bezdir; bilinçli görme kortekste olur ve bu yanıt da reflekstir."
+   ],
+   "commonError": "Görsel yönelme refleksini bilinçli görme ile karıştırıp her görsel işi tek bir merkeze yüklemek.",
+   "check": "Ani ışık çakmasına başını çevirmen, ne olduğunu düşünmeden önce olur; bu hız refleks bir merkezi gösterir."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-orta-arka-beyin-4",
+  "h": "1dc114422d5512",
+  "guidance": {
+   "knowledge": [
+    "Beyincik: arka beyinde, beynin arka alt kısmında yer alan yapı; hareketin zamanlamasını, dengeyi ve kas uyumunu düzeltir, motor öğrenmeye katkı verir.",
+    "Koordinasyon: kasların doğru sırada ve doğru güçte birlikte çalışması. Hareketi başlatan komut ise başka motor bölgelerden gelir."
+   ],
+   "strategy": "Sorudaki anahtar sözcükler zamanlama, denge ve el-göz uyumudur; bu üçünü birlikte düzelten yapıyı ara.",
+   "steps": [
+    "Zamanlama, denge ve el-göz uyumu, hareketin ince ayarıdır.",
+    "Bu ince ayar ve motor öğrenme beyincik ağlarıyla ilişkilidir.",
+    "Sonuç: beyincik."
+   ],
+   "optionReasons": [
+    "Aksonda çekirdek bulunmaz, çekirdek hücre gövdesindedir; ayrıca tek bir hücre parçası denge merkezi olamaz.",
+    "Epifiz hormonu (melatonin) uyku-uyanıklık ritmiyle ilişkilidir; hareket uyumunu düzeltmez.",
+    "Retina pigmenti ışığı algılar; koordinasyonda yalnız görsel bilgi kaynağıdır, düzeltmeyi yapmaz.",
+    "Doğru: Beyincik zamanlama, denge ve el-göz uyumunu düzeltir.",
+    "Sinir birçok hücrenin aksonlarından oluşan demettir; tek hücre değildir ve koordinasyon merkezi sayılmaz."
+   ],
+   "commonError": "Beyinciği hareketi başlatan tek merkez sanmak; o, hareketi başlatmaktan çok düzeltir.",
+   "check": "Beyincik etkilendiğinde kişi hareket edebilir ama sendeler ve hedefi ıskalar; bu, görevin başlatma değil düzeltme olduğunu gösterir."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-orta-arka-beyin-5",
+  "h": "186db1a3fe9612",
+  "guidance": {
+   "knowledge": [
+    "Pons (köprü): beyin sapının orta parçası; beyin bölgeleri arasında bağlantı yolları ve çekirdekler içerir.",
+    "Solunum ritmi omurilik soğanında (medulla) düzenlenir; pons bu düzenlemeye medullayla birlikte katkı verir."
+   ],
+   "strategy": "Ponsun iki temel özelliğini (bağlantı ve solunum düzenlemesine katkı) hatırla; \"yalnız\", \"bütün\", \"hiçbir\" gibi aşırı ifadeler taşıyan şıkları eler.",
+   "steps": [
+    "Pons farklı beyin bölgeleri arasında bilgi taşıyan yollar içerir.",
+    "Solunum ritminin düzenlenmesinde medullayla birlikte çalışır.",
+    "Bu iki görevi birlikte veren ifade doğrudur."
+   ],
+   "optionReasons": [
+    "Ponsu kemikleri bağlayan bağ dokusu (ligament) ile karıştırır; pons sinir dokusudur.",
+    "Duyu reseptörleri vücudun her yerine dağılmış çok sayıda hücredir; pons tek bir reseptör değildir.",
+    "Pons çekirdekler içerir ve düzenleme yapar; boş bir kanal değildir.",
+    "Bellek birçok beyin ağına dağılmıştır; tek bir yerde, hele ponsta saklanmaz.",
+    "Doğru: Pons bağlantı sağlar ve medullayla solunum ritmini düzenlemeye katkı verir."
+   ],
+   "commonError": "\"Köprü\" adına bakıp ponsu yalnız kablo sanmak, düzenleme görevini görmemek.",
+   "check": "Solunum merkezi olarak medulla ve pons birlikte anılır; bu da ponsun yalnız bağlantı yolu olmadığını gösterir."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-orta-arka-beyin-6",
+  "h": "09fea006922021",
+  "guidance": {
+   "knowledge": [
+    "Omurilik soğanı (medulla): beyin sapının en alt parçası; solunum, kalp atımı ve kan basıncı gibi yaşamsal düzenlemelerde ve öksürme, yutma gibi koruyucu reflekslerde rol alır.",
+    "Zorunlu çıkarım: verilen bilgiden kaçınılmaz olarak çıkan sonuç. Hasarın sonucu, hasarın büyüklüğüne ve yerine göre değişir."
+   ],
+   "strategy": "Soru \"çıkarılamaz\" diyor; medullanın görevlerinden doğrudan çıkan ifadeleri ele, aşırı genelleme yapan ifadeyi bul.",
+   "steps": [
+    "Solunum, dolaşım ve koruyucu refleks katkısı medullanın bilinen görevleridir; bunlar çıkarılabilir.",
+    "Hasarın yeri ve yaygınlığının önemli olması da bu görevlerle uyumludur.",
+    "Her hasarın herkeste aynı kesin sonucu vereceği ise görev bilgisinden çıkmaz."
+   ],
+   "optionReasons": [
+    "Doğru: Çıkarılamayan budur; hasarın kapsamı ve koşulları sonucu değiştirir.",
+    "Çıkarılabilir: medulla solunum ağlarına katkı verir.",
+    "Çıkarılabilir: kalp atımı ve kan basıncı düzenlemesiyle ilişkilidir.",
+    "Çıkarılabilir: öksürme, yutma gibi koruyucu reflekslerde rol alır.",
+    "Çıkarılabilir: önemli merkezler içerdiği için hasarın yeri ve yaygınlığı önem taşır."
+   ],
+   "commonError": "Bir bölgenin önemli görevlerini bilip her hasarın tek ve kesin sonucu olacağına atlamak.",
+   "check": "Karşı örnek düşün: küçük ve sınırlı bir hasar ile geniş bir hasar aynı sonucu vermez; demek ki \"her hasar aynı\" ifadesi çıkarılamaz."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-orta-arka-beyin-7",
+  "h": "113b9739ba2edf",
+  "guidance": {
+   "knowledge": [
+    "Nasırlı cisim (korpus kallozum): iki beyin yarımküresini birbirine bağlayan kalın sinir lifi demeti; ön beyinde yer alır.",
+    "Pons: beyin sapında yer alan, farklı bölgeler arasında bağlantı ve düzenleme görevi olan yapı."
+   ],
+   "strategy": "Soru \"neyi göstermez\" diyor; ortak bağlantı işlevinden çıkarılabilen genel sonuçları ele, iki yapının aynı olduğunu söyleyen ifadeyi bul.",
+   "steps": [
+    "İki yapının da bağlantı rolü olması, bağlantı işlevinin farklı yerlerde bulunduğunu gösterir.",
+    "Ama konumları ve bağladıkları bölgeler farklıdır: biri yarımküreler arasında, öteki beyin sapında.",
+    "Ortak işlev, aynı anatomik yapı oldukları sonucunu göstermez."
+   ],
+   "optionReasons": [
+    "Gösterir: bağlantı yapıları farklı yollar arasında bilgi alışverişine izin verir.",
+    "Doğru: Gösterilmeyen budur; ortak işlev sözcüğü iki yapıyı aynı parça yapmaz.",
+    "Gösterir: bağlantı varlığı birden çok bölgenin birlikte çalıştığını düşündürür.",
+    "Gösterir: aynı türden işlev iki ayrı yerde bulunuyor.",
+    "Gösterir: yapıları ayırmak için görev ile konum birlikte okunmalıdır."
+   ],
+   "commonError": "Aynı işlevi gören iki yapıyı aynı yapı sanmak.",
+   "check": "Benzetme: köprü ve tünel ikisi de iki yakayı bağlar ama aynı yapı değildir; konum ve biçim farkı ayrımı sağlar."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-orta-arka-beyin-8",
+  "h": "088ec05e648bb8",
+  "guidance": {
+   "knowledge": [
+    "Çaprazlanma: bir sinir yolunun vücudun bir tarafından öteki tarafına geçmesi; bu yüzden beynin sol tarafı çoğu zaman vücudun sağını denetler.",
+    "Model (şema): yalnız gösterilen yolu temsil eden basitleştirilmiş çizim; gösterilmeyen yollar hakkında bilgi vermez."
+   ],
+   "strategy": "Yalnız şemada gösterilen tek yol hakkında konuş; bu yoldan bütün yollara ya da başka konulara genelleme yapan şıkları eler.",
+   "steps": [
+    "Şemada sol taraftan çıkan bir motor yol bir kez sağa geçiyor.",
+    "Bu, o yolun hedefinin karşı tarafta olabileceğini gösterir.",
+    "Tek bir yolun çaprazlanması, bütün yolların aynı noktada çaprazlandığını kanıtlamaz."
+   ],
+   "optionReasons": [
+    "Bir motor yol çiziminden bütün duyu yollarına genelleme yapar; şema bunu göstermez.",
+    "Şemadaki motor yol zaten çaprazlanıyor; ifade gözlemle doğrudan çelişir.",
+    "Doğru: Bu yolun hedefi karşı tarafta olabilir; tüm yollar için aynı nokta çıkmaz.",
+    "Bir sinir yolu şemasını zekâ ya da kişilik özelliğine bağlar; böyle bir veri yoktur.",
+    "Çizimdeki çizgi kesişmesini sinaps sanır; sinaps iki nöronun bağlantı noktasıdır, çizgi kesişmesi değildir."
+   ],
+   "commonError": "Tek bir yolun özelliğini bütün sinir yollarına genellemek.",
+   "check": "Şemada yalnız bir yol var; \"bütün\" ya da \"hiçbir\" diyen her ifade bu tek gözlemin kapsamını aşar."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-orta-arka-beyin-9",
+  "h": "0ce4c78ad2f18c",
+  "guidance": {
+   "knowledge": [
+    "Refleks yanıt: uyarana bilinçli karar olmadan verilen hızlı tepki; örneğin ani sese baş çevirme.",
+    "Bilinçli yorum: uyaranın ne olduğunu tanıma; beyin kabuğunda (korteks) gerçekleşir. Aynı uyaran bilgisi farklı sinir yollarına paralel olarak gidebilir."
+   ],
+   "strategy": "Aynı uyaranın iki farklı yanıt doğurduğu veriliyor; bu iki yanıtın bir arada olmasını açıklayan ifadeyi ara.",
+   "steps": [
+    "Uyaran önce hızlı yönelme refleksi, sonra bilinçli yorum doğuruyor.",
+    "İki yanıtın ikisinin de görülmesi, bilginin farklı yollara iletildiğini gösterir.",
+    "Sonuç: aynı uyaran farklı işlevsel yollara bilgi verebilir."
+   ],
+   "optionReasons": [
+    "Soruda iki yanıtın birlikte görüldüğü veriliyor; ifade verilenle çelişir.",
+    "İki yanıt farklı ağlarda işlenir; tek bir hücrede tamamlanmaz.",
+    "Refleks hızlı ilk yanıttır; bilinçli yorum ondan sonra gelir, refleks yorumun bittiğini göstermez.",
+    "Doğru: Aynı uyaran farklı işlevsel yollara bilgi verebilir.",
+    "İskelet kası yanıt veren efektördür; bilinçli yorum beyin kabuğunda yapılır."
+   ],
+   "commonError": "Ortak uyaranı tek bir yol sanıp refleks ile bilinçli tanımayı birbirini dışlayan olaylar gibi görmek.",
+   "check": "Sıcak bir şeye dokunduğunda elini önce çekip sonra \"bu sıcakmış\" diye fark etmen, iki ayrı yolun çalıştığını gösterir."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-orta-arka-beyin-10",
+  "h": "07a05dbba5eecd",
+  "guidance": {
+   "knowledge": [
+    "Beyincik hareket uyumu ve dengede rol alır; sendeleme (dengesiz yürüme) bu rolü öğretirken verilen örnektir.",
+    "Kanıt sınırı: bir bilgiden ne kadarının güvenle çıkarılabileceği. Sendeleme yorgunluk, iç kulak sorunu ya da ilaç gibi başka nedenlerle de görülebilir."
+   ],
+   "strategy": "Konu öğretimi ile bir kişiye tanı koymayı ayır; ilişkiyi kabul eden ama tek belirtiden kesin hüküm vermeyen şıkkı ara.",
+   "steps": [
+    "Beyincik ile koordinasyon ilişkisi öğretilebilir bir bilgidir.",
+    "Ama sendeleme başka nedenlerle de oluşabilir; tek belirti kesin neden göstermez.",
+    "Kanıt sınırını koruyan yaklaşım: ilişkiyi öğrenmek, tek belirtiden kesin lezyon tanısı koymamak."
+   ],
+   "optionReasons": [
+    "Tek belirtiden herkes için kesin bölge kaybı çıkarır; sendelemenin başka nedenleri olabilir.",
+    "Başka nedenleri araştırmayı gereksiz sayar; tek belirti nedeni kesinleştirmez.",
+    "Beyinciğe organlarla ilgisi olmayan aşırı bir görev yükler; beyincik bir sinir sistemi yapısıdır.",
+    "Tek belirtiden herkes için aynı tedaviye atlar; tedavi kişinin durumuna göre belirlenir.",
+    "Doğru: İlişki öğretilir; tek belirtiden kişiye kesin lezyon tanısı konmaz."
+   ],
+   "commonError": "Ders kitabındaki bir ilişkiyi, tek belirtiye dayanan kesin tanı aracı gibi kullanmak.",
+   "check": "Karşı örnek: yorgunluk ya da baş dönmesi olan biri de sendeleyebilir; demek ki sendeleme tek başına beyincik hasarını kanıtlamaz."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-omurilik-1",
+  "h": "0fa37633a8adde",
+  "guidance": {
+   "knowledge": [
+    "Ak madde: miyelinli aksonların çoğunlukta olduğu, açık renkli sinir dokusu; bilgi taşıyan yolları oluşturur.",
+    "Gri madde: nöron gövdeleri ve ara nöronların çoğunlukta olduğu koyu renkli doku. Omurilik enine kesitinde ortada kelebek biçiminde görülür."
+   ],
+   "strategy": "Omurilik kesitinin genel düzenini hatırla: gri madde içte, ak madde dışta. Beyin kabuğundaki ters düzeni omuriliğe taşıma.",
+   "steps": [
+    "Omurilik enine kesitinde ortada kelebek biçimli gri madde bulunur.",
+    "Gri maddeyi çevreleyen dış bölge ak maddedir.",
+    "Sonuç: ak madde dışta, gri madde içte."
+   ],
+   "optionReasons": [
+    "Doğru: Omurilik kesitinde gri madde içte, ak madde dıştadır.",
+    "Gri madde sinir dokusudur; omurlar (kemik) omuriliği yalnız korur.",
+    "Ak madde katı sinir dokusudur; beyin omurilik sıvısında (BOS) çözünmüş hâlde bulunmaz.",
+    "Ak ve gri madde merkezî sinir sistemi dokularıdır; gangliyon ise çevresel sinir sistemindeki gövde topluluğudur.",
+    "Gri madde beyincikte de vardır ama yalnız orada değildir; omurilik kesitinde de bulunur."
+   ],
+   "commonError": "Beyin kabuğundaki düzeni (gri dışta) omuriliğe uygulayıp yerleri ters söylemek.",
+   "check": "Kelebek biçimli koyu bölge kesitin ortasındadır; demek ki gri madde içte, çevresi ak maddedir."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-omurilik-2",
+  "h": "040282426cec80",
+  "guidance": {
+   "knowledge": [
+    "Arka kök: omurilik sinirinin omuriliğe arka taraftan giren duyu (afferent, merkeze getiren) lif demeti.",
+    "Arka boynuz: omurilik içindeki gri maddenin arka kısmı; duyu bilgisinin ulaştığı merkezî bölge."
+   ],
+   "strategy": "Kök ile boynuz arasındaki ayrım, lif demeti ile merkezî doku bölgesi ayrımıdır; bu ölçüte uyan şıkkı ara.",
+   "steps": [
+    "Arka kök omuriliğin dışında, giriş liflerinden oluşan bir demettir.",
+    "Arka boynuz omuriliğin içinde, gri maddenin bir bölgesidir.",
+    "İkisi bağlantılıdır ama farklı yapılardır."
+   ],
+   "optionReasons": [
+    "Aynı yönde (arkada) olmalarını özdeşlik sanır; biri lif demeti, öteki gri madde bölgesidir.",
+    "Doğru: Arka kök giriş lifleriyle, arka boynuz merkezî gri maddeyle ilişkilidir.",
+    "Arka boynuz sinir dokusudur; kas hücresiyle karıştırır.",
+    "Melatonin epifizin hormonudur; arka kök salgı yapan bir yapı değildir.",
+    "İki yapı da omurilikle ilgilidir; beyin yarımküreleriyle karıştırır."
+   ],
+   "commonError": "Arka kök ile arka boynuzu, ikisi de arkada diye aynı yapı sanmak.",
+   "check": "Konumla sına: kök omuriliğin dışında, boynuz içindedir; dışarıdaki demet ile içerideki doku aynı olamaz."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-omurilik-3",
+  "h": "1165eb272d70f0",
+  "guidance": {
+   "knowledge": [
+    "Ön kök: omurilikten çıkan motor (efferent, merkezden götüren) lif demeti; komutu kasa taşır.",
+    "Arka kök duyu bilgisini omuriliğe getirir. Giriş ve çıkış yolları ayrı demetlerdedir."
+   ],
+   "strategy": "Kesilen yolu ve sağlam kalan yolu ayrı izle; yalnız kesilen yolun işlevini kaybettiren şıkkı ara.",
+   "steps": [
+    "Duyu girişi (arka kök) sağlamdır; bilgi omuriliğe ulaşır.",
+    "Motor çıkış (ön kök) kesilmiştir; komut kasa gidemez.",
+    "Sonuç: duyu bilgisi merkeze ulaşabilir, ilgili motor yanıt engellenir."
+   ],
+   "optionReasons": [
+    "Duyu girişi sağlam verilmiştir; tek bir devredeki kesiyi bütün vücuda yayar.",
+    "Motor yol kesilince kas tür değiştirmez; yalnız komut alamaz.",
+    "Doğru: Duyu bilgisi merkeze ulaşırken ilgili motor yanıt yolu engellenebilir.",
+    "Soruda arka kökün sağlam olduğu açıkça verilmiştir; iki kökü birbirine bağlı sanır.",
+    "Tek bir motor çıkış kesisini bilinç kaybına genişletir; bilinç beyinde oluşur."
+   ],
+   "commonError": "Ön kök ile arka kökün işlevlerini karıştırıp duyunun da kaybolacağını sanmak.",
+   "check": "Ok yönleriyle sına: içeri giren ok (duyu) sağlam, dışarı çıkan ok (motor) kesik; yalnız çıkış etkilenir."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-omurilik-4",
+  "h": "01e8748abbfe78",
+  "guidance": {
+   "knowledge": [
+    "Nöron: sinir sisteminin temel hücresi. Duyu nöronu uyarıyı merkeze getirir, motor nöron komutu efektöre götürür.",
+    "Efektör: yanıtı veren organ ya da hücre (burada kas); nöron değildir. Sinaps: iki hücre arasındaki bağlantı noktası."
+   ],
+   "strategy": "Yalnız nöronları say; kas çizimde yer alsa da efektördür ve nöron sayısına girmez.",
+   "steps": [
+    "Yolda bir duyu nöronu var: 1.",
+    "Merkezî sinapsla bağlandığı bir motor nöron var: 2.",
+    "Kas efektördür, sayılmaz; toplam 2 nöron."
+   ],
+   "optionReasons": [
+    "Yalnız duyu nöronunu sayar; sinapsın iki nöron arasında olduğunu unutur.",
+    "Kas efektörünü de nöron sayar: 2 + 1 = 3.",
+    "Sinaps ve kası da ayrı birim sayar: 2 nöron + 1 sinaps + 1 kas = 4.",
+    "Doğru: Bir duyu ve bir motor nöron vardır; toplam 2.",
+    "Reseptör, sinaps ve kası da ekleyerek her çizim ögesini nöron sayar."
+   ],
+   "commonError": "Efektör kası nöron sayısına eklemek.",
+   "check": "Tek merkezî sinaps iki nöronu birbirine bağlar; sinaps sayısı + 1 = nöron sayısı: 1 + 1 = 2."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-omurilik-5",
+  "h": "0f6879815f8ad2",
+  "guidance": {
+   "knowledge": [
+    "Ara nöron: duyu nöronu ile motor nöron arasında bağlantı kuran, merkezî sinir sistemindeki nöron.",
+    "Merkezî sinaps: merkezî sinir sisteminde (burada omurilikte) iki nöron arasındaki bağlantı noktası."
+   ],
+   "strategy": "Ardışık dizilmiş nöronlar arasında her komşu çift bir sinaps oluşturur; bu yüzden bağlantıları tek tek saymak yeterlidir.",
+   "steps": [
+    "Dizi: duyu → ara → motor.",
+    "Birinci sinaps duyu ile ara nöron arasında, ikincisi ara ile motor nöron arasındadır.",
+    "Toplam 2 merkezî sinaps."
+   ],
+   "optionReasons": [
+    "Nöronların sinapssız bağlandığını sanır; ardışık iki nöron arasında her zaman sinaps vardır.",
+    "Ara nöronu atlayıp tek sinapslı refleksle karıştırır.",
+    "Nöron sayısını sinaps sayısı sanır: 3.",
+    "Nöronları ve kas kavşağını birlikte sayar: 3 nöron + 1 kas kavşağı = 4; soru yalnız merkezî sinapsları ister.",
+    "Doğru: duyu→ara ve ara→motor, iki merkezî sinaps."
+   ],
+   "commonError": "Nöron sayısı ile sinaps sayısını karıştırmak.",
+   "check": "Ardışık n nöron arasında n − 1 bağlantı olur: 3 − 1 = 2."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-omurilik-6",
+  "h": "19330ce584c154",
+  "guidance": {
+   "knowledge": [
+    "İletim süresi: uyarının bir yolu baştan sona geçmesi için gereken zaman; süre = uzunluk / hız (t = L/v).",
+    "Birimler: m (metre), m/s (metre bölü saniye), s (saniye). 1 s = 1000 ms (milisaniye)."
+   ],
+   "strategy": "Uzunluk ve hız verilmiş; t = L/v ile süreyi saniye cinsinden bul, sonra istenen birim ms olduğu için 1000 ile çarp.",
+   "steps": [
+    "t = 0,5 / 50 = 0,01 s.",
+    "Milisaniyeye çevir: 0,01 · 1000 = 10 ms."
+   ],
+   "optionReasons": [
+    "Doğru: 0,5 / 50 = 0,01 s = 10 ms.",
+    "Saniye sonucunu birim çevirmeden yazar: 0,01.",
+    "Saniyeyi ms'ye çevirirken 10 ile çarpar: 0,01 · 10 = 0,1.",
+    "100 ile çarpar: 0,01 · 100 = 1.",
+    "Uzunluğu hıza bölmek yerine hızı uzunluğa böler: 50 / 0,5 = 100."
+   ],
+   "commonError": "Doğru süreyi bulup saniyeden milisaniyeye çevirmeyi unutmak ya da yanlış katla çevirmek.",
+   "check": "Ters yön: 50 m/s · 0,010 s = 0,5 m, verilen uzunluk."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-omurilik-7",
+  "h": "1d424b8ff66e68",
+  "guidance": {
+   "knowledge": [
+    "Sinaptik gecikme: uyarının bir nörondan ötekine sinapsta geçerken harcadığı ek süre.",
+    "Toplam süre = aksonlardaki iletim süresi + her sinapsın gecikmesi (burada başka gecikme yok kabul ediliyor)."
+   ],
+   "strategy": "Toplam süreyi parçaların toplamı olarak kur: akson süresine sinaps sayısı kadar gecikme ekle.",
+   "steps": [
+    "Sinaps katkısı: 2 · 0,5 = 1 ms.",
+    "Toplam: 20 + 1 = 21 ms."
+   ],
+   "optionReasons": [
+    "Sinaptik gecikmeleri tümüyle unutur.",
+    "Doğru: 20 + 2 · 0,5 = 21 ms.",
+    "Yalnız bir sinapsın gecikmesini ekler: 20 + 0,5 = 20,5.",
+    "Sinaps sayısını iki kez çarpar: 20 + 2 · 2 · 0,5 = 22.",
+    "Akson süresini toplamak yerine ikiyle çarpar: 20 · 2 = 40."
+   ],
+   "commonError": "Birden çok sinaps varken gecikmeyi yalnız bir kez eklemek.",
+   "check": "Sonuç akson süresinden biraz büyük olmalı: 21 > 20 ve fark 1 ms, iki gecikmenin toplamı."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-omurilik-8",
+  "h": "00976d80c2e81f",
+  "guidance": {
+   "knowledge": [
+    "Yerel refleks devresi: duyu bilgisinin omurilikte doğrudan motor yanıta dönüştüğü kısa yol; beyne ulaşmayı beklemez.",
+    "Yükselen dal: aynı duyu bilgisini omurilikten beyne taşıyan ayrı yol."
+   ],
+   "strategy": "Dallanan iki yolu ayrı denetle: kesilen yalnız yükselen dal, yerel devre sağlam; sonuçları ayrı ayrı yaz.",
+   "steps": [
+    "Yerel duyu-motor devre sağlamdır; refleks yanıt oluşabilir.",
+    "Yükselen dal kesildiği için bilgi bu yoldan beyne ulaşamaz.",
+    "Sonuç: yerel yanıt kalabilir, bu daldan yukarı bilgi ilerlemez."
+   ],
+   "optionReasons": [
+    "Bir dalın kesilmesinin bütün bağlantıları sildiğini sanır; yerel devre ayrıdır ve sağlam verilmiştir.",
+    "Beynin refleksleri düzenleyebildiğini yok sayar; ayrıca bu kesiden böyle bir genel sonuç çıkmaz.",
+    "Doğru: Yerel yanıt kalabilir; bu daldan yukarı bilgi ilerlemez.",
+    "Gösterilen tek dalın kesisini bütün duyulara genişletir.",
+    "Sinir kesisinin kas sayısını değiştirdiğini sanır; kas sayısı sinir yolundan etkilenmez."
+   ],
+   "commonError": "Bir dalın kesilmesini bütün devrenin kaybı sanmak.",
+   "check": "Ok şemasında kesik yalnız yukarı giden kolda; aşağıdaki yerel döngüde hiçbir ok kesilmemiştir."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-omurilik-9",
+  "h": "04c492a89e9fc4",
+  "guidance": {
+   "knowledge": [
+    "Afferent lif: bilgiyi merkeze getiren (duyu) lif. Efferent lif: komutu merkezden efektöre götüren (motor) lif.",
+    "Karışık sinir: hem afferent hem efferent lifleri aynı demette taşıyan sinir; omurilik sinirleri böyledir. Her lif tek yönde iletir."
+   ],
+   "strategy": "Demetin özelliği ile tek bir lifin özelliğini ayır; demetin karışık olması lifleri aynılaştırmaz.",
+   "steps": [
+    "Sinir, birçok aksonun bir araya geldiği bir demettir.",
+    "Demette duyu ve motor lifler yan yana bulunabilir.",
+    "Her lif kendi yönünde ve görevinde kalır; tek akson bütün rolleri üstlenmez."
+   ],
+   "optionReasons": [
+    "Bir aksonun bütün nöronların yerini aldığını sanır; her akson tek bir nörona aittir.",
+    "Sinir demetini kas dokusuyla karıştırır; sinir, aksonlardan oluşan sinir dokusudur.",
+    "Liflerin sıvı taşıdığını sanır; lifler elektriksel uyarı iletir, BOS taşımaz.",
+    "Doğru: Demette farklı işlevli lifler bulunabilir; tek aksonun rolleri aynılaşmaz.",
+    "Afferent (merkeze) ile efferent (merkezden) zıt yönlerdir; aynı yön sanır."
+   ],
+   "commonError": "Karışık siniri, her lifin hem duyu hem motor iletim yaptığı bir yapı sanmak.",
+   "check": "Elektrik kablosu benzetmesi: bir kablo içinde gidiş ve dönüş telleri yan yanadır ama her tel kendi yolunu taşır."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-omurilik-10",
+  "h": "04b0b5d027f844",
+  "guidance": {
+   "knowledge": [
+    "Refleks: bilinçli kortikal (beyin kabuğuna ait) karar beklemeden, çoğu zaman omurilik düzeyinde başlayan hızlı yanıt.",
+    "Düzenleyici etki: üst merkezlerin (beyin) bir refleksi güçlendirmesi ya da baskılaması; örneğin bir refleksi bilinçli olarak bastırmak."
+   ],
+   "strategy": "Soru \"desteklemez\" diyor; \"karar zorunlu değil\" bilgisinden çıkan ılımlı sonuçları ele, bunu \"hiçbir etki yok\" diye genişleten ifadeyi bul.",
+   "steps": [
+    "Kortikal karar gerekmemesi, yerel devrelerin hızlı yanıt başlatabildiğini destekler.",
+    "Bilgi farklı dallardan ilerleyebilir ve üst merkez bağlantıları ayrıca incelenebilir; bunlar da uyumludur.",
+    "Ama \"karar zorunlu değil\" demek, beynin refleksi hiç düzenleyemediği anlamına gelmez."
+   ],
+   "optionReasons": [
+    "Desteklenir: yerel devreler kortikal kararı beklemeden yanıt başlatabilir.",
+    "Desteklenir: bilgi hem yerel devreye hem yukarı giden dallara ilerleyebilir.",
+    "Desteklenir: zorunlu olmamak, bağlantının hiç olmadığını göstermez; ayrıca incelenebilir.",
+    "Desteklenir: refleks merkezini anlamak için hangi yolun kullanıldığı önemlidir.",
+    "Doğru: Desteklenmeyen budur; üst merkezler refleksleri düzenleyebilir, \"zorunlu değil\" \"hiç etkisi yok\" demek değildir."
+   ],
+   "commonError": "\"Gerekli değil\" ifadesini \"hiç etkisi yok\" diye genişletmek.",
+   "check": "Örnek: hapşırmayı ya da diz refleksini kısmen bastırabilmen, beynin reflekse düzenleyici katkısı olduğunu gösterir."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-css-hastaliklar-1",
+  "h": "0f5e970128f892",
+  "guidance": {
+   "knowledge": [
+    "Kafa (kranial) sinirleri doğrudan beyinden, omurilik sinirleri omurilikten çıkar. Sinirler sağ ve sol olmak üzere çiftler hâlinde bulunur.",
+    "Çift: sağ ve sol iki sinir. Çift sayısını 2 ile çarpınca tek tek sinir sayısı bulunur."
+   ],
+   "strategy": "Önce iki grubun çift sayılarını topla, sonra her çiftte iki sinir olduğu için ikiyle çarp.",
+   "steps": [
+    "Toplam çift: 12 + 31 = 43 çift.",
+    "Tek tek sinir: 43 · 2 = 86 sinir."
+   ],
+   "optionReasons": [
+    "Doğru: 12 + 31 = 43 çift; 43 · 2 = 86 sinir.",
+    "Çift sayısını tek sinir sayısı sanır; ikiyle çarpmayı unutur.",
+    "Çift ile tek sinir sayılarının yerini değiştirir.",
+    "Toplamak yerine çıkarır: 31 − 12 = 19 çift ve 19 · 2 = 38.",
+    "Toplamak yerine çarpar: 12 · 31 = 372 çift ve 372 · 2 = 744."
+   ],
+   "commonError": "Çift sayısını tek sinir sayısıyla karıştırmak.",
+   "check": "Ayrı ayrı say: 24 kafa siniri + 62 omurilik siniri = 86; aynı sonuç."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-css-hastaliklar-2",
+  "h": "00e29013ee178f",
+  "guidance": {
+   "knowledge": [
+    "Afferent (getirici) yol: bilgiyi reseptörden merkezî sinir sistemine (beyin ve omurilik) taşıyan duyu yolu.",
+    "Efferent (götürücü) yol: komutu merkezî sinir sisteminden kas ya da beze (efektöre) taşıyan motor yol."
+   ],
+   "strategy": "Yönü belirleyen ölçüt merkeze göre konumdur: merkeze gelen afferent, merkezden çıkan efferenttir.",
+   "steps": [
+    "Bilgi periferik reseptörden başlar.",
+    "Merkezî sinir sistemine doğru ilerler.",
+    "Merkeze gelen yol afferenttir."
+   ],
+   "optionReasons": [
+    "Yönü ters okur; efferent merkezden efektöre giden motor çıkıştır.",
+    "Doğru: Reseptörden merkeze gelen yol afferenttir.",
+    "Kas kasılması yolun sonucu olan yanıttır; bilgi taşıma yönü değildir.",
+    "BOS akımı beyin ve omuriliği koruyan sıvının hareketidir; sinir iletim yönü değildir.",
+    "Hormon salımı endokrin iletişimdir; sinir yolunun yönünü adlandırmaz."
+   ],
+   "commonError": "Afferent ile efferenti ezberden karıştırmak; ölçüt her zaman merkeze göre yöndür.",
+   "check": "Sözcük ipucu: afferent \"getiren\", efferent \"götüren\"; reseptörden merkeze bilgi getirilir."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-css-hastaliklar-3",
+  "h": "0c23b1686447f7",
+  "guidance": {
+   "knowledge": [
+    "Otonom sinir sistemi: iç organları istemsiz denetleyen motor sistem; komut iki nöronla taşınır.",
+    "Pregangliyonik nöron: gövdesi merkezî sinir sisteminde olan ilk nöron. Postgangliyonik nöron: gövdesi periferik gangliyonda (merkez dışındaki nöron gövdesi topluluğu) olan ikinci nöron."
+   ],
+   "strategy": "İki nöronlu yolda sıralamayı izle: ilk nöron merkezden çıkar, gangliyonda ikinci nöronla sinaps yapar; ikincinin gövdesi orada kalır.",
+   "steps": [
+    "Birinci (pregangliyonik) nöronun gövdesi merkezî sinir sistemindedir.",
+    "Bu nöron periferik gangliyonda ikinci nöronla sinaps yapar.",
+    "Postgangliyonik nöronun gövdesi periferik gangliyondadır."
+   ],
+   "optionReasons": [
+    "Bütün motor gövdeleri merkezde sanır; otonom yolun ikinci gövdesi merkez dışındadır, korteks de bu yolun yeri değildir.",
+    "Nöron gövdesini kas hücresinin çekirdeğiyle karıştırır; sinir hücresi kas içinde değildir.",
+    "Doğru: Postgangliyonik nöronun gövdesi periferik gangliyondadır.",
+    "BOS bir sıvıdır; nöron gövdesi sıvıda çözünmüş hâlde bulunmaz.",
+    "Epifiz bir bezdir; otonom yolun nöron gövdeleri orada yer almaz."
+   ],
+   "commonError": "Bütün motor nöron gövdelerinin merkezî sinir sisteminde olduğunu sanmak.",
+   "check": "\"Post\" sonra, \"gangliyonik\" gangliyona ait demektir: gangliyondan sonra uzanan nöronun gövdesi gangliyondadır."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-css-hastaliklar-4",
+  "h": "1cd38f463fedbc",
+  "guidance": {
+   "knowledge": [
+    "Somatik sinir sistemi: iskelet kaslarını denetleyen motor sistem. Otonom sinir sistemi ise düz kas, kalp kası ve bezleri denetler.",
+    "Gerilme refleksi: kas gerilince omurilik devresiyle aynı kasın istemsizce kasılması (örneğin diz refleksi)."
+   ],
+   "strategy": "Sistemi ayırmanın ölçütü hedef dokudur, istemli olup olmama değil; hedef iskelet kası ise yol somatiktir.",
+   "steps": [
+    "Hedef doku iskelet kasıdır; bu somatik sistemin hedefidir.",
+    "Yanıt bilinçli karar beklemeden oluşuyor; somatik refleksler istemsiz olabilir.",
+    "Sonuç: somatik hedefle uyumludur; somatik yanıt her zaman istemli olmak zorunda değildir."
+   ],
+   "optionReasons": [
+    "Refleksin kas türünü değiştirdiğini sanır; iskelet kası iskelet kası olarak kalır.",
+    "İstemsizliği otonom sistemin ölçütü sanır; ölçüt hedef dokudur.",
+    "Kası nöronla karıştırır; ara nöron omurilikteki bir sinir hücresidir.",
+    "Doğru: Hedef iskelet kası olduğu için somatiktir; somatik yanıt istemsiz de olabilir.",
+    "Gerilme refleksi zaten kas iğciğindeki duyu girdisiyle başlar; duyuyu gereksiz sayamaz."
+   ],
+   "commonError": "Her istemsiz yanıtı otonom sinir sistemine bağlamak.",
+   "check": "Diz refleksinde bacak kası (iskelet kası) istemsiz kasılır; bu yanıt somatik yoldan geçer."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-css-hastaliklar-5",
+  "h": "1b04aba2f2a0dc",
+  "guidance": {
+   "knowledge": [
+    "Miyelin: aksonu saran ve iletimi hızlandıran yağlı kılıf. MSS (merkezî sinir sistemi) miyelini beyin ve omurilikteki aksonları sarar.",
+    "Multipl skleroz (MS): merkezî sinir sisteminde miyelinin zarar gördüğü ve iletimin aksadığı bir hastalık. Tek bir belirti kesin tanı için yeterli değildir."
+   ],
+   "strategy": "Verilen mekanizmayı (MSS miyelin bozulması) uygun hastalık bağlamıyla eşleştir; ama tek belirtiden kesin tanı koyan ifadeleri eler.",
+   "steps": [
+    "Mekanizma: merkezî sinir sisteminde miyelin bozulması ve iletim aksaması.",
+    "Bu mekanizma multipl skleroz bağlamında öğretilir.",
+    "Uyuşma gibi belirtilerin başka nedenleri de olabileceği için tek belirti kesin tanı değildir."
+   ],
+   "optionReasons": [
+    "Tek bir belirtiden herkes için kesin tanıya atlar; uyuşmanın birçok nedeni vardır.",
+    "Miyelin bozulmasını kas protein sentezi ile karıştırır; sorun sinir iletimindedir.",
+    "Sinirlerin tek hücreye dönüştüğünü sanır; sinirler birçok aksondan oluşur ve böyle bir dönüşüm olmaz.",
+    "Konuyu epifiz hormonuna bağlar; verilen mekanizma miyelin ve iletimle ilgilidir.",
+    "Doğru: Multipl skleroz bağlamıdır; tek belirtiyle kişiye kesin tanı konmaz."
+   ],
+   "commonError": "Bir mekanizma ile hastalığın ilişkisini, her belirtide kesin tanı koyma aracına çevirmek.",
+   "check": "Sorudaki iki anahtar, \"merkezî\" ve \"miyelin\", birlikte MS bağlamını işaret eder; kas ya da hormonla ilgili sözcük yoktur."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-css-hastaliklar-6",
+  "h": "15b1383efddaed",
+  "guidance": {
+   "knowledge": [
+    "Dopaminerjik nöron: sinapsta dopamin adlı nörotransmitteri (sinir hücreleri arasında ileti taşıyan kimyasal) kullanan nöron.",
+    "Parkinson hastalığı: orta beyindeki dopamin üreten nöronların kaybı ve hareket düzenleme ağlarının bozulmasıyla ilişkili hastalık; titreme, yavaşlık ve katılık görülebilir."
+   ],
+   "strategy": "Sorudaki üç ipucunu (orta beyin, dopamin, motor düzenleme) birlikte taşıyan hastalık bağlamını ara.",
+   "steps": [
+    "Orta beyindeki dopamin üreten nöronlar hareketin düzenlenmesinde rol alır.",
+    "Bu nöronların ve ağın bozulması Parkinson bağlamında ele alınır.",
+    "Sonuç: Parkinson."
+   ],
+   "optionReasons": [
+    "Doğru: Orta beyin dopaminerjik nöron kaybı ve motor ağ bozulması Parkinson bağlamıdır.",
+    "Sağlıklı uyku normal bir süreçtir; bir bozulmayı hastalık olmayan bir durumla eşleştirir.",
+    "Reseptör yenilenmesi normal bir olaydır ve çevresel sistemle ilgilidir; orta beyin bozulması değildir.",
+    "Kemik uzaması iskelet sistemi büyümesidir; dopaminerjik nöronlarla ilgisi yoktur.",
+    "Nöbetler epilepsi bağlamıdır ve tek bir mekanizmaya indirgenemez; dopamin-motor ağ ipucunu karşılamaz."
+   ],
+   "commonError": "Hareket bozukluğu gören her durumu, mekanizmaya bakmadan aynı hastalık sanmak.",
+   "check": "İpuçlarını tek tek eşle: orta beyin, dopamin, hareket; üçünü birden karşılayan tek şık Parkinson'dur."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-css-hastaliklar-7",
+  "h": "126a4785a72f93",
+  "guidance": {
+   "knowledge": [
+    "Hipokampus: beyinde yeni anıların oluşmasında rol alan yapı. Amiloid ve tau, Alzheimer hastalığıyla ilişkili olarak beyinde biriken proteinlerdir.",
+    "Alzheimer: bellek ağlarının ilerleyici biçimde etkilendiği bir hastalık. Unutkanlığın stres, uykusuzluk, normal yaşlanma gibi başka nedenleri de olabilir."
+   ],
+   "strategy": "Verilen mekanizmanın hangi hastalık bağlamına ait olduğunu tanı, ama bu bilgiyi tek belirtiye dayanan genellemeye dönüştüren şıkları eler.",
+   "steps": [
+    "Hipokampus etkilenmesi ve amiloid/tau süreçleri Alzheimer bağlamındadır.",
+    "Unutkanlığın başka nedenleri de vardır; her unutkanlık Alzheimer değildir.",
+    "Uygun yaklaşım: bağlamı öğrenmek, bütün unutkanlığı bu hastalıkla özdeşleştirmemek."
+   ],
+   "optionReasons": [
+    "Her unutkanlığı kesin aynı tanıya bağlar; unutkanlığın birçok nedeni vardır.",
+    "Doğru: Alzheimer bağlamı öğrenilir; bütün unutkanlık bu hastalıkla özdeşleştirilmez.",
+    "Normal yaşlanmadaki hafif değişiklikleri hastalıkla aynı sayar; ikisi ayrı süreçlerdir.",
+    "Tek bir alışkanlığa herkes için kesin koruma gücü verir; böyle bir garanti yoktur.",
+    "Tek bir gözlemden bütün tedavi kararlarına atlar; tedavi kişisel değerlendirme ister."
+   ],
+   "commonError": "Mekanizma bilgisini tek bir belirtiye dayalı kesin tanıya ya da kesin önleme vaadine dönüştürmek.",
+   "check": "Karşı örnek: uykusuz geçen bir gecenin ertesinde unutkanlık olabilir; bu tek başına Alzheimer göstermez."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-css-hastaliklar-8",
+  "h": "1464850120cad3",
+  "guidance": {
+   "knowledge": [
+    "Epilepsi: beyindeki sinir ağlarının anormal ve eşzamanlı etkinliğiyle ortaya çıkan, tekrarlayan nöbetlerle seyreden hastalık.",
+    "Nöbetlerin biçimi kişiden kişiye değişir; ışıkla tetiklenme (fotosensitivite) yalnız bazı kişilerde görülür."
+   ],
+   "strategy": "Kapsamı koruyan ifade, nöbet çeşitliliğini kabul eden ve bazı kişilerdeki tetikleyiciyi herkese yaymayan ifadedir.",
+   "steps": [
+    "Epilepsi anormal ağ etkinliğiyle ilişkilidir.",
+    "Nöbetler farklı biçimlerde olabilir; hepsi bilinç kaybı ve kasılma değildir.",
+    "Işıkla tetiklenme bazı kişilere özgüdür; bütün epilepsiler ışıkla tetiklenmez."
+   ],
+   "optionReasons": [
+    "Nöbetlerin tek biçimli olduğunu sanır; bazı nöbetler kısa dalmalar ya da yalnız bir uzvun kasılması biçimindedir.",
+    "Bazı kişilerdeki ışık tetikleyicisini bütün hastalara yayar.",
+    "Doğru: Nöbetler anormal ağ etkinliğiyle ilişkilidir, biçimleri değişir; hepsi ışıkla tetiklenmez.",
+    "Işıktan rahatsızlanmayı tek başına tanı sanır; bunun migren gibi başka nedenleri olabilir.",
+    "Tek bir gözlemden ilaç seçimine atlar; tedavi uzman değerlendirmesi ister."
+   ],
+   "commonError": "Bazı hastalarda görülen bir özelliği, örneğin ışıkla tetiklenmeyi, bütün epilepsilere genellemek.",
+   "check": "Şıklarda \"her\", \"bütün\" ve \"tek\" sözcükleri genelleme işaretidir; yalnız doğru şık çeşitliliği kabul eder."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-css-hastaliklar-9",
+  "h": "047d9aa7dff581",
+  "guidance": {
+   "knowledge": [
+    "Depresyon: süreklilik gösteren çökkün ruh hâli, ilgi kaybı, uyku ve iştah değişiklikleriyle seyreden bir sağlık sorunu.",
+    "Çok etkenli neden: birden fazla etkenin (biyolojik yapı, psikolojik süreçler, çevresel yaşam koşulları) birlikte rol oynaması."
+   ],
+   "strategy": "Uygun yaklaşım tek nedene indirgemeyen ve kişisel tanı ya da tedaviyi dersten çıkarmayan yaklaşımdır; şıkları bu iki ölçütle sına.",
+   "steps": [
+    "Depresyonda biyolojik, psikolojik ve çevresel etkenler birlikte rol oynar.",
+    "Karakter yargısı ya da tek molekül açıklaması bu çok etkenli yapıyı karşılamaz.",
+    "Uygun yaklaşım: üç etken grubunu birlikte değerlendirmek."
+   ],
+   "optionReasons": [
+    "Biyolojik ve çevresel etkenleri yok sayıp hastalığı kişilik kusuruna indirger.",
+    "Tek bir nörotransmittere bütün açıklamayı yükler; çok etkenli yapıyı görmez.",
+    "Uyku değişikliğini tek başına tanı sanır; uykunun başka birçok nedenle değişebileceğini atlar.",
+    "Doğru: Biyolojik, psikolojik ve çevresel etkenler birlikte değerlendirilir.",
+    "Kişisel tedavi kararını bir dersten çıkarır; ilaç ve doz uzman tarafından kişiye göre belirlenir."
+   ],
+   "commonError": "Çok etkenli bir sağlık sorununu tek bir nedene indirgemek.",
+   "check": "İndirgeyici şıkların hepsinde \"yalnız\", \"tek\" ya da \"herkese aynı\" ifadesi var; doğru şık \"birlikte\" der."
+  }
+ },
+ {
+  "id": "f015-bio-sinir-sistemi-css-hastaliklar-10",
+  "h": "11073f6a10a321",
+  "guidance": {
+   "knowledge": [
+    "Destekleyici alışkanlık: sağlığı olumlu etkileyebilen ama sonucu garanti etmeyen davranış (düzenli uyku, dengeli beslenme).",
+    "Savunulabilir ifade: kanıtla desteklenebilen, \"kesin\", \"herkeste\", \"her zaman\" gibi aşırı vaatler içermeyen ifade."
+   ],
+   "strategy": "Şıklarda koşulsuz garanti veren ifadeleri eler; yararı kabul edip sınırını da söyleyen ifadeyi seç.",
+   "steps": [
+    "Düzenli uyku ve dengeli beslenme sinir sistemi sağlığını destekleyebilir.",
+    "Ama herkeste aynı etkiyi ya da kesin hastalık önlemeyi garanti etmez.",
+    "Savunulabilir ifade: destekleyebilir, garanti vermez."
+   ],
+   "optionReasons": [
+    "Tek bir vitamine herkes için kesin koruma gücü yükler; böyle bir garanti yoktur.",
+    "Bir zihin etkinliğini bütün hastalıkların tedavisi sanır.",
+    "Eksikliği olmayanlarda ek almanın aynı yararı sağlayacağını varsayar; yarar kişiye göre değişir.",
+    "Sağlıklı alışkanlığı tıbbi değerlendirmenin yerine koyar; gerektiğinde değerlendirme yine gereklidir.",
+    "Doğru: Sinir sistemi sağlığını destekleyebilir; zekâ artışı ya da kesin önleme garantisi vermez."
+   ],
+   "commonError": "Yararlı bir alışkanlığı herkes için kesin sonuç veren bir tedavi gibi sunmak.",
+   "check": "Yanlış şıklarda \"kesin\", \"tek\", \"zorunlu\", \"her zaman\" sözcükleri var; doğru şık \"destekleyebilir\" diyerek sınırını korur."
+  }
+ }
+]

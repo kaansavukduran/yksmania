@@ -1,3 +1,4 @@
+import { typeset } from "../../src/domain/typeset";
 import { expect, test, type Locator, type Page } from "@playwright/test";
 import {
   legacy026QuestionLessons,
@@ -135,9 +136,7 @@ async function first026Card(page: Page, lesson: Lesson, question: Question) {
   await expect(page.locator(".question-meta")).toContainText(
     `Soru 1 / ${lesson.questions.length}`,
   );
-  await expect(page.locator(".question-panel h2")).toHaveText(
-    question.prompt.tr,
-  );
+  await expect(page.locator(".question-panel h2")).toHaveText(typeset(question.prompt.tr));
   const answers = page.locator(".question-panel .answer");
   await expect(answers).toHaveCount(5);
   for (const [index, option] of question.options.entries())
@@ -183,9 +182,7 @@ async function full026Solution(
   await expect(full.locator(":scope > p").nth(0)).toHaveText(
     `Doğru yanıt: ${String.fromCharCode(65 + question.answer)} · ${question.options[question.answer].tr}`,
   );
-  await expect(full.locator(":scope > p").nth(1)).toHaveText(
-    question.explanation.tr,
-  );
+  await expect(full.locator(":scope > p").nth(1)).toHaveText(typeset(question.explanation.tr));
   await expect(full.locator('ol[type="A"] > li')).toHaveText(
     guidance.optionReasons,
   );
@@ -199,7 +196,7 @@ async function full026Solution(
 async function checked026Card(page: Page, question: Question) {
   await expect(page.locator(".feedback")).toHaveClass("feedback correct");
   await expect(page.locator(".feedback strong")).toHaveText("Doğru");
-  await expect(page.locator(".feedback p")).toHaveText(question.explanation.tr);
+  await expect(page.locator(".feedback p")).toHaveText(typeset(question.explanation.tr));
   const selected = page.locator(".answer").nth(question.answer);
   await expect(selected).toHaveAttribute("aria-pressed", "true");
   await expect(selected).toHaveClass(/\bchosen\b/);

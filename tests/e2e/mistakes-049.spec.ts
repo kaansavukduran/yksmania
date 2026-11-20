@@ -1,3 +1,4 @@
+import { typeset } from "../../src/domain/typeset";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { setThemePreference } from "./helpers/theme";
@@ -85,7 +86,7 @@ for (const width of [1280, 320])
     await expect(cards).toHaveCount(3);
     // The confident wrong answer leads; the permanently repaired one is last.
     await expect(cards.first().locator(".mistake-meta")).toContainText("Eminim dedin");
-    await expect(cards.first().locator("h2")).toHaveText(q2.prompt.tr);
+    await expect(cards.first().locator("h2")).toHaveText(typeset(q2.prompt.tr));
     await expect(cards.last().locator(".status-chip")).toHaveText("Kalıcı onarım");
     const filters = page.getByRole("group", { name: "Onarım durumu" });
     await expect(filters.getByRole("button", { name: "Açık (2)" })).toBeVisible();
@@ -112,6 +113,6 @@ for (const width of [1280, 320])
     expect(axe.violations).toEqual([]);
     // The sprint drills the two open mistakes, confident-wrong first.
     await page.getByRole("button", { name: "2 soruluk sprinti başlat" }).click();
-    await expect(page.getByRole("heading", { name: q2.prompt.tr })).toBeVisible();
+    await expect(page.getByRole("heading", { name: typeset(q2.prompt.tr) })).toBeVisible();
     await expect(page.locator(".exam-question-meta")).toContainText("Soru 1 / 2");
   });

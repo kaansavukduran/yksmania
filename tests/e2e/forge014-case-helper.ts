@@ -1,3 +1,5 @@
+// The page shows typeset text (display repairs and spacing); expectations use the same view.
+import { typeset } from "../../src/domain/typeset";
 import { expect, type Locator } from "@playwright/test";
 import type { Lesson } from "../../src/domain/model";
 import type { LessonCase } from "./thirty-units.spec";
@@ -15,8 +17,8 @@ export function forge014Case(
   return {
     id,
     title: lesson.title.tr,
-    firstQuestion: lesson.questions[0].prompt.tr,
-    firstExplanation: lesson.questions[0].explanation.tr,
+    firstQuestion: typeset(lesson.questions[0].prompt.tr),
+    firstExplanation: typeset(lesson.questions[0].explanation.tr),
     exploration,
     lab: `[data-forge014="${id}"]`,
     result: "[data-model-result]",

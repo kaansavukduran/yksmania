@@ -1,0 +1,2254 @@
+[
+ {
+  "id": "kuresel-aynalar-q1",
+  "h": "0c8e3636dce7ff",
+  "guidance": {
+   "knowledge": [
+    "Çukur ayna: iç yüzeyi yansıtan, ışığı toplayan küresel ayna. f odak uzaklığı (cm), u cismin aynaya uzaklığı (cm), v görüntünün aynaya uzaklığıdır (cm).",
+    "İşaret kuralı: çukur aynada f pozitiftir; v pozitif çıkarsa görüntü aynanın önünde (gerçek), negatif çıkarsa arkasında (sanal) demektir."
+   ],
+   "strategy": "f ve u sayı olarak verildiği için ayna denklemi 1/f = 1/u + 1/v doğrudan kullanılır; v yalnız bırakılınca v = f·u / (u − f) olur.",
+   "steps": [
+    "Verilenler: f = 10 cm, u = 30 cm. Denklemi v için çöz: 1/v = 1/f − 1/u.",
+    "1/v = 1/10 − 1/30 = 3/30 − 1/30 = 2/30 = 1/15 cm⁻¹.",
+    "Ters çevir: v = 15 cm. Aynı sonucu v = 10·30 / (30 − 10) = 300 / 20 = 15 cm verir.",
+    "v pozitif olduğu için görüntü aynanın önünde, 15 cm uzaklıktadır."
+   ],
+   "optionReasons": [
+    "Denklemi çözmek yerine odak uzaklığını yarılar (10 / 2 = 5 cm) ve çukur aynada görüntünün hep arkada olduğunu sanır.",
+    "Doğru: 1/v = 1/10 − 1/30 = 1/15, v = +15 cm; pozitif v aynanın önü demektir.",
+    "Kesirleri ters sırada çıkarır: 1/v = 1/30 − 1/10 = −1/15, v = −15 cm bulup görüntüyü arkaya koyar.",
+    "Görüntünün her zaman cismin bulunduğu yerde oluştuğunu sanır; bu yalnız u = 2f = 20 cm iken doğrudur.",
+    "Görüntünün odakta oluştuğunu sanır; bu yalnız cisim çok uzaktayken (u çok büyük) geçerlidir."
+   ],
+   "commonError": "1/v = 1/f − 1/u yerine 1/u − 1/f yazıp işareti ters çevirmek ve gerçek görüntüyü sanal sanmak.",
+   "check": "Bulduğun değeri denkleme koy: 1/30 + 1/15 = 1/30 + 2/30 = 3/30 = 1/10 = 1/f. Ayrıca u > 2f olduğundan görüntü f ile 2f arasında (10 ile 20 cm) olmalıydı; 15 cm uyuyor."
+  }
+ },
+ {
+  "id": "kuresel-aynalar-q2",
+  "h": "106a0736e8dfc7",
+  "guidance": {
+   "knowledge": [
+    "f odak uzaklığı, u cismin aynaya, v görüntünün aynaya uzaklığı, h cismin boyudur; hepsi cm.",
+    "Büyütme m = −v/u: görüntü boyunun cisim boyuna oranıdır. m negatifse görüntü ters, pozitifse düzdür; |m|·h görüntünün boyunu verir."
+   ],
+   "strategy": "Önce ayna denkleminden v bulunur, sonra büyütme formülü m = −v/u hem yönü (işaret) hem boyu (büyüklük) verdiği için kullanılır.",
+   "steps": [
+    "v = f·u / (u − f) = 12·24 / (24 − 12) = 288 / 12 = 24 cm.",
+    "m = −v/u = −24 / 24 = −1.",
+    "Eksi işaret görüntünün ters olduğunu söyler; |m| = 1 olduğundan görüntü boyu 1·6 cm = 6 cm.",
+    "Sonuç: ters ve 6 cm."
+   ],
+   "optionReasons": [
+    "Görüntünün cismin yarısı olduğunu sanır; f/u = 12/24 = 1/2 oranını büyütme yerine kullanıp 6·1/2 = 3 cm bulur.",
+    "Yönü düz ayna gibi düz sanar ve u/f = 24/12 = 2 oranını büyütme alıp 6·2 = 12 cm bulur.",
+    "Yön doğru ama v/f = 24/12 = 2 oranını büyütme sanıp 2·6 = 12 cm bulur.",
+    "Doğru: v = 24 cm, m = −24/24 = −1; ters ve boyu 6 cm.",
+    "Boyu doğru bulur ama m = −1 sonucundaki eksi işareti görmezden gelip görüntüyü düz sanır."
+   ],
+   "commonError": "Büyütmedeki eksi işaretini atlayıp ters görüntüyü düz saymak.",
+   "check": "u = 24 cm = 2f, yani cisim merkezde; merkezdeki cismin görüntüsü yine merkezde, ters ve eş boylu oluşur."
+  }
+ },
+ {
+  "id": "kuresel-aynalar-q3",
+  "h": "1e72ad7913dd30",
+  "guidance": {
+   "knowledge": [
+    "Çukur aynada f = 10 cm pozitiftir. v negatif çıkarsa görüntü aynanın arkasındadır.",
+    "Sanal görüntü: yansıyan ışınların kendileri değil geriye uzantıları birleşir; perdeye düşmez. m = −v/u pozitifse görüntü düz, |m| > 1 ise büyüktür."
+   ],
+   "strategy": "Cisim odağın içinde (u < f) olduğu için u − f negatif çıkar; işareti koruyarak v = f·u / (u − f) ve m = −v/u hesaplanır.",
+   "steps": [
+    "v = 10·5 / (5 − 10) = 50 / (−5) = −10 cm.",
+    "Eksi v: görüntü aynanın arkasında, 10 cm uzakta ve sanaldır.",
+    "m = −v/u = −(−10) / 5 = 10 / 5 = 2.",
+    "m pozitif: düz; |m| = 2: cismin 2 katı. Sonuç: arkada 10 cm, sanal, düz, 2 kat."
+   ],
+   "optionReasons": [
+    "Doğru: v = −10 cm (arkada, sanal), m = +2 (düz, 2 kat).",
+    "v = −10 cm'nin eksisini atlar; görüntüyü önde ve gerçek sayınca ters de der.",
+    "Düz ayna gibi düşünür: görüntüyü cisim kadar (5 cm) arkada sanar ve tümsek aynanın küçük görüntüsüyle karıştırır.",
+    "Görüntüyü cismin yerinde ve eş boylu sanar; bu çukur aynada yalnız u = 2f iken olur.",
+    "Odak içindeki cismi tam odaktaki cisimle karıştırır; u = f olmadıkça sonlu görüntü vardır."
+   ],
+   "commonError": "Negatif v sonucunu görüp işareti silmek ve sanal görüntüyü gerçek saymak.",
+   "check": "Denkleme koy: 1/5 + 1/(−10) = 2/10 − 1/10 = 1/10 = 1/f. Büyüteç olarak kullanılan çukur aynada da odak içindeki yüz büyük ve düz görünür."
+  }
+ },
+ {
+  "id": "kuresel-aynalar-q4",
+  "h": "0cb958d9835623",
+  "guidance": {
+   "knowledge": [
+    "Tümsek ayna: dış yüzeyi yansıtan, ışığı dağıtan ayna; odak uzaklığı negatif alınır (f = −10 cm).",
+    "m = −v/u büyütmedir: işareti yönü, büyüklüğü boy oranını verir; pozitif ve 1'den küçük m düz ve küçük görüntü demektir."
+   ],
+   "strategy": "Büyütme için önce v gerekir; f'nin eksi işaretini koruyarak v = f·u / (u − f) hesaplanır, sonra m = −v/u bulunur.",
+   "steps": [
+    "v = (−10)·20 / (20 − (−10)) = −200 / 30 = −20/3 cm.",
+    "m = −v/u = −(−20/3) / 20 = (20/3) / 20.",
+    "(20/3) / 20 = 20 / 60 = 1/3."
+   ],
+   "optionReasons": [
+    "Oranı ters kurar ve v'nin eksisini atlar: −u/|v| = −20 / (20/3) = −3.",
+    "Tümsek aynayı düz ayna gibi düşünüp görüntüyü eş boylu sanır: m = 1.",
+    "Doğru: v = −20/3 cm, m = (20/3) / 20 = 1/3; düz ve küçük.",
+    "v'nin eksi işaretini kaybeder: v = +20/3 alınca m = −(20/3)/20 = −1/3 çıkar.",
+    "Boy oranını u/|v| = 20 / (20/3) = 3 diye ters kurar."
+   ],
+   "commonError": "Tümsek aynada f'yi pozitif yazmak ya da v'nin eksisini büyütmeye taşımamak.",
+   "check": "Tümsek ayna gerçek cisim için her zaman düz ve küçük görüntü verir, yani 0 < m < 1 olmalı; 1/3 bu aralıkta."
+  }
+ },
+ {
+  "id": "kuresel-aynalar-q5",
+  "h": "134ba9e472107d",
+  "guidance": {
+   "knowledge": [
+    "Odak (F): asal eksene paralel gelen ışınların yansıdıktan sonra toplandığı nokta; ışın yolu tersinir olduğundan odaktan çıkan ışınlar yansıyınca eksene paralel gider.",
+    "Paraksiyal model: asal eksene yakın ve küçük açılı ışınlar için kullanılan yaklaşık model; 1/f = 1/u + 1/v burada geçerlidir."
+   ],
+   "strategy": "u = f iken v = f·u / (u − f) ifadesinin paydası sıfır olur; bu sınırı ışın yolunun tersinirliğiyle yorumlamak gerekir.",
+   "steps": [
+    "u = f koy: v = f·f / (f − f) = f² / 0; bu bir sayı değildir, sonlu v yoktur.",
+    "Işın yolu tersinir: odaktan çıkıp aynaya çarpan ışınlar yansıyınca asal eksene paralel olur.",
+    "Paralel ışınlar hiçbir sonlu noktada kesişmez; görüntü sonsuzda denir, sonlu konum atanmaz."
+   ],
+   "optionReasons": [
+    "Paydadaki sıfırı v = 0 sanıp görüntüyü ayna tepesine koyar ve boyu sıfır alır.",
+    "Odak ile merkezi (2f) karıştırır; görüntü 2f'de yalnız cisim 2f'deyken oluşur.",
+    "Sıfıra bölmeyi sıfır sonucu sanır; payda sıfırken v tanımsızdır, sıfır değildir.",
+    "Odak içi durumun sanal görüntüsünü bu sınıra taşır ve uydurma bir −f konumu verir.",
+    "Doğru: odaktan çıkan ışınlar yansıyınca paralel gider, kesişmez; sonlu görüntü yoktur."
+   ],
+   "commonError": "Paydanın sıfır olmasını v = 0 diye okumak.",
+   "check": "Cismi odağa yaklaştırdıkça u = 11, 10,5 cm gibi değerlerde v büyür (f = 10 için 110, 210 cm); sınırda sonsuza gider."
+  }
+ },
+ {
+  "id": "kuresel-aynalar-q6",
+  "h": "0c37113e9b7a52",
+  "guidance": {
+   "knowledge": [
+    "Küresel aynanın merkezi (M): aynanın parçası olduğu kürenin merkezi. Merkezden yüzeye çizilen doğru o kürenin yarıçapıdır.",
+    "Normal: bir yüzeye, ışığın çarptığı noktada dik olan doğru; gelme ve yansıma açıları ondan ölçülür."
+   ],
+   "strategy": "Geometrideki 'yarıçap, çembere değme noktasında teğete diktir' kuralı burada kullanılır; yüzeye dik doğru normalin tanımıdır.",
+   "steps": [
+    "Merkezden gelme noktasına giden doğru kürenin yarıçapıdır.",
+    "Yarıçap, o noktadaki teğet düzleme diktir; yani yüzeye diktir.",
+    "Yüzeye dik doğruya normal denir; bu doğru o noktanın yerel normalidir."
+   ],
+   "optionReasons": [
+    "Büyütme bir boy oranıdır (m = −v/u); tek bir doğru bunu vermez, uzaklık ve boy ölçümü gerekir.",
+    "Doğru: yarıçap yüzeye dik olduğu için o noktadaki normaldir.",
+    "Asal eksen yalnız tepe noktasından geçen yarıçaptır; diğer noktalarda merkezden çizilen doğru eksene eğiktir.",
+    "Odak, paralel ışınların toplandığı noktadır; merkezden çizilen doğru odaktan geçmez, her koşulda odak doğrusu değildir.",
+    "Cismin boyu cisme ait bir ölçüdür; aynanın geometrik bir doğrusuyla bulunmaz."
+   ],
+   "commonError": "Her noktadaki normali asal eksene paralel sanmak.",
+   "check": "Merkezden geçerek aynaya gelen ışın normal üzerinden geldiği için gelme açısı 0° olur ve kendi üzerinden geri döner; bu da doğrunun normal olduğunu doğrular."
+  }
+ },
+ {
+  "id": "kuresel-aynalar-q7",
+  "h": "13110cd7ca748e",
+  "guidance": {
+   "knowledge": [
+    "Çukur aynada f = 10 cm pozitiftir; u = 15 cm cisim uzaklığı, v görüntü uzaklığıdır.",
+    "Büyütme m = −v/u; negatif m ters görüntü, |m| boy oranıdır. Cisim f ile 2f arasındaysa görüntü 2f'nin dışında, gerçek ve büyük olur."
+   ],
+   "strategy": "İki bilinmeyen sırayla bulunur: önce ayna denkleminden v, sonra o v ile m = −v/u.",
+   "steps": [
+    "v = f·u / (u − f) = 10·15 / (15 − 10) = 150 / 5 = 30 cm.",
+    "m = −v/u = −30 / 15 = −2.",
+    "v pozitif (önde, gerçek), m = −2 (ters, 2 kat büyük): v = 30 cm; m = −2."
+   ],
+   "optionReasons": [
+    "Görüntüyü cismin yerinde sanır; bu yalnız u = 2f = 20 cm iken geçerlidir.",
+    "Denklem yerine uzaklıkları çıkarır: v = u − f = 5 cm, sonra m = −5/15 = −1/3.",
+    "Çıkarmayı ters yapar: v = f − u = −5 cm, m = −(−5)/15 = 1/3.",
+    "Doğru: v = 150/5 = 30 cm, m = −30/15 = −2.",
+    "1/v = 1/u − 1/f diye ters kurar: 1/15 − 1/10 = −1/30, v = −30 cm, m = +2."
+   ],
+   "commonError": "Ayna denklemini toplama ya da çıkarma gibi kısa yoldan çözüp kesirleri atlamak.",
+   "check": "Denkleme koy: 1/15 + 1/30 = 2/30 + 1/30 = 3/30 = 1/10. Ayrıca cisim f ile 2f arasında olduğu için görüntü 20 cm'nin ötesinde olmalıydı; 30 cm uyuyor."
+  }
+ },
+ {
+  "id": "kuresel-aynalar-q8",
+  "h": "1a4b960e1371b1",
+  "guidance": {
+   "knowledge": [
+    "Gerçek görüntü: yansıyan ışınların kendileri bir noktada toplanır, perdeye düşer.",
+    "Sanal görüntü: yansıyan ışınlar dağılır; yalnız geriye doğru uzantıları (kesikli çizgiler) aynanın arkasında kesişir, perdeye düşmez."
+   ],
+   "strategy": "Görüntünün perdeye düşüp düşmediği, o noktada gerçek ışınların toplanıp toplanmadığına bağlıdır; tümsek aynanın ışınları nasıl yansıttığına bakılır.",
+   "steps": [
+    "Tümsek ayna, gelen ışınları yansıtırken birbirinden uzaklaştırır (dağıtır).",
+    "Dağılan ışınlar aynanın önünde hiçbir noktada kesişmez; geriye uzatıldıklarında arkada kesişirler.",
+    "Görüntü ışık enerjisinin gerçekten toplanmadığı bir uzantı noktası olduğu için perdeye düşmez."
+   ],
+   "optionReasons": [
+    "Doğru: yansıyan ışınlar dağılır, yalnız uzantıları birleşir; bu yüzden görüntü sanaldır.",
+    "Görüntünün olması zaten ışığın yansıdığını gösterir; ayna ışığı yansıtmasaydı hiç görüntü görülmezdi.",
+    "Merkezde ışın toplanması çukur aynaya ait bir yanılgıdır; tümsek aynada gerçek ışınlar hiçbir yerde toplanmaz.",
+    "Görüntünün cisme göre yeriyle perdeye düşmesi ilgisizdir; asıl soru ışınların gerçekten kesişip kesişmediğidir.",
+    "Aynanın arkasında ışık kaynağı yoktur; arkadaki nokta yalnız uzantıların kesişimidir."
+   ],
+   "commonError": "Görüntünün yalnız konumuna bakıp ışınların gerçekten mi uzantılarıyla mı kesiştiğini düşünmemek.",
+   "check": "Tümsek ayna gerçek cisim için daima negatif v verir (örneğin f = −10, u = 20 için v = −20/3 cm); negatif v arkada, sanal görüntü demektir."
+  }
+ },
+ {
+  "id": "kuresel-aynalar-q9",
+  "h": "11c7c169d89922",
+  "guidance": {
+   "knowledge": [
+    "Eğrilik yarıçapı R: aynanın parçası olduğu kürenin yarıçapı, yani merkezle ayna tepesi arası uzaklık.",
+    "Odak uzaklığı f: odakla ayna tepesi arası uzaklık. Paraksiyal modelde odak, merkezle tepenin tam ortasındadır: |f| = R/2."
+   ],
+   "strategy": "Soru yalnız büyüklüğü istediği için işaret düşünülmeden |f| = R/2 bağıntısı kullanılır.",
+   "steps": [
+    "Verilen: R = 40 cm.",
+    "|f| = R / 2 = 40 cm / 2 = 20 cm.",
+    "Çukur aynada f = +20 cm, tümsekte f = −20 cm yazılır; büyüklük her ikisinde 20 cm."
+   ],
+   "optionReasons": [
+    "R'yi iki yerine dörde böler: 40 / 4 = 10 cm.",
+    "R'yi sekize böler gibi iki kez yarılamayı fazla uygular: 40 / 8 = 5 cm.",
+    "Doğru: |f| = 40 / 2 = 20 cm.",
+    "Odak uzaklığını eğrilik yarıçapıyla aynı sanır: 40 cm.",
+    "Yarılamak yerine ikiyle çarpar: 2·40 = 80 cm."
+   ],
+   "commonError": "R ile f'yi karıştırmak ya da R/2 yerine 2R almak.",
+   "check": "Odak merkezle tepenin ortasında: merkez 40 cm'deyse orta nokta 20 cm'dedir."
+  }
+ },
+ {
+  "id": "kuresel-aynalar-q10",
+  "h": "1afaf0f5141310",
+  "guidance": {
+   "knowledge": [
+    "Yansıma kanunu: gelme açısı yansıma açısına eşittir; açılar normalden ölçülür. Bu kanun ortamın kırıcılık indisine bağlı değildir.",
+    "Kırıcılık indisi n: ışığın bir ortamda ne kadar yavaşladığını gösteren birimsiz sayı; merceklerde önemlidir çünkü mercek ışığı kırar."
+   ],
+   "strategy": "Aynanın odağı yalnız yansıma geometrisinden çıkar; yansıma kanununda indis bulunmadığı için odak uzaklığı geometrik büyüklüğe bağlanır.",
+   "steps": [
+    "Ayna ışığı kırmaz, yansıtır; ışık ortam değiştirmeden aynı ortama geri döner.",
+    "Yansıma kanunu (gelme açısı = yansıma açısı) ortam indisi içermez.",
+    "Odak uzaklığı bu yüzden yalnız aynanın biçimine, yani eğrilik yarıçapına bağlıdır: f ≈ R/2."
+   ],
+   "optionReasons": [
+    "İndisi mercek formülünden aynaya taşır; aynada ışık kırılmadığı için indis hiçbir kuvvetle girmez.",
+    "Rengi (frekansı) mercekteki renk ayrışmasıyla karıştırır; yansıma açısı renge göre değişmez.",
+    "Cismin boyu görüntünün boyunu etkiler, odağın yerini etkilemez; odak aynanın kendi özelliğidir.",
+    "Gözlemcinin uzaklığı görüşü etkiler, aynanın ışınları toplama noktasını etkilemez.",
+    "Doğru: yansıma yalnız geometriye bağlıdır, f ≈ R/2."
+   ],
+   "commonError": "Merceklerdeki ortam indisi etkisini aynalara da uygulamak.",
+   "check": "Aynı çukur aynayı havada da suda da kullansan paralel ışınlar aynı noktada toplanır; çünkü yansıma açıları ortama göre değişmez."
+  }
+ },
+ {
+  "id": "isigin-kirilmasi-q1",
+  "h": "17bcf1c40f1f73",
+  "guidance": {
+   "knowledge": [
+    "Kırılma: ışığın bir ortamdan diğerine geçerken doğrultu değiştirmesi. n kırıcılık indisi (birimsiz); n büyüdükçe ışık o ortamda yavaşlar.",
+    "i gelme açısı, r kırılma açısıdır; ikisi de sınır yüzeyine dik çizilen normalden ölçülür. Snell yasası: n₁·sin i = n₂·sin r."
+   ],
+   "strategy": "İki indis ve gelme açısının sinüsü verildiği için tek bilinmeyen sin r'dir; Snell yasası bu bilinmeyeni doğrudan verir.",
+   "steps": [
+    "Snell yasasını yaz: n₁·sin i = n₂·sin r.",
+    "Değerleri koy: 1·(1/2) = 1,5·sin r.",
+    "Her iki tarafı 1,5'e böl: sin r = (1/2) / 1,5 = (1/2)·(2/3) = 1/3."
+   ],
+   "optionReasons": [
+    "Kırılan ışının yüzeye paralel gittiğini (r = 90°) sanır ve sin 90° = 1 yazar.",
+    "Doğru: sin r = (1/2) / 1,5 = 1/3.",
+    "1,5'e bölmek yerine çarpar: (1/2)·1,5 = 3/4.",
+    "sin i'yi unutup yalnız indis oranını alır: n₁/n₂ = 1/1,5 = 2/3.",
+    "Kırılmayı yok sayıp sin r = sin i = 1/2 alır; bu yalnız indisler eşit olsaydı doğru olurdu."
+   ],
+   "commonError": "Snell eşitliğinde indisle çarpmak yerine bölmek ya da tersini yapmak.",
+   "check": "Işık daha büyük indisli ortama giriyor, normale yaklaşmalı, yani sin r < sin i olmalı: 1/3 < 1/2. Ayrıca 1,5·1/3 = 1/2 = 1·sin 30°."
+  }
+ },
+ {
+  "id": "isigin-kirilmasi-q2",
+  "h": "0a074f0b19156f",
+  "guidance": {
+   "knowledge": [
+    "Dik geliş: ışın sınır yüzeyine dik gelir, normal boyunca ilerler; gelme açısı i = 0°.",
+    "Sürat v = c/n (c boşluktaki ışık sürati); frekans f kaynağa bağlıdır, sınırda değişmez; dalga boyu λ = v/f."
+   ],
+   "strategy": "Snell yasası yönü, v = c/n bağıntısı sürati, sınırda frekansın korunması da dalga boyunu belirler; her büyüklük ayrı ayrı denetlenir.",
+   "steps": [
+    "Yön: 1·sin 0° = 1,5·sin r → sin r = 0 → r = 0°; ışın sapmaz.",
+    "Sürat: v = c/n; n 1'den 1,5'e çıktığı için sürat c'den c/1,5'e düşer.",
+    "Frekans kaynağa bağlıdır, aynı kalır; λ = v/f olduğundan dalga boyu da azalır. Sonuç: yön sapmaz, sürat azalır, frekans korunur."
+   ],
+   "optionReasons": [
+    "Frekansı indisle değişen bir büyüklük sanır; frekans kaynağın titreşimiyle belirlenir, sınırda değişmez.",
+    "Sapma olmamasını hiçbir şeyin değişmemesi sanır; oysa n büyüdüğü için sürat ve dalga boyu azalır.",
+    "Kırılan ışının varlığını yansımanın yokluğu sanır; dik gelişte de ışığın bir kısmı yansıyabilir.",
+    "Doğru: i = 0 → r = 0, v = c/n azalır, f değişmez.",
+    "Dik gelişi yüzeye paralel ilerlemeyle karıştırır; açı 0°'den 0°'ye geçer, 90° dönme olmaz."
+   ],
+   "commonError": "Yönün değişmemesini süratin de değişmediği diye yorumlamak.",
+   "check": "Sayısal dene: v₁ = 3×10⁸ m/s, v₂ = 3×10⁸ / 1,5 = 2×10⁸ m/s; sapma olmasa da sürat değişti."
+  }
+ },
+ {
+  "id": "isigin-kirilmasi-q3",
+  "h": "14e338155692ca",
+  "guidance": {
+   "knowledge": [
+    "Kritik açı i_c: ışık büyük indisli ortamdan küçük indisli ortama geçerken kırılma açısını tam 90° yapan gelme açısı.",
+    "Snell yasası n₁·sin i = n₂·sin r; kritik durumda r = 90° ve sin 90° = 1 yazılır."
+   ],
+   "strategy": "Kritik açı r = 90° koşuluyla tanımlandığı için Snell yasasına r = 90° koyunca sin i_c doğrudan çıkar.",
+   "steps": [
+    "Kritik durumda: n₁·sin i_c = n₂·sin 90°.",
+    "Değerleri koy: 2·sin i_c = 1·1 = 1.",
+    "sin i_c = 1/2 (bu da i_c = 30° demektir)."
+   ],
+   "optionReasons": [
+    "Doğru: sin i_c = n₂/n₁ = 1/2.",
+    "Oranı ters kurar: n₁/n₂ = 2; sinüs 1'den büyük olamayacağı için bu imkânsızdır.",
+    "Kırılma açısının sinüsünü (sin 90° = 1) gelme açısının sinüsü sanır.",
+    "Oranın karesini alır: (1/2)² = 1/4.",
+    "Kritik açıyı dik gelişle (0°) karıştırır; sin 0° = 0."
+   ],
+   "commonError": "sin i_c = n₂/n₁ oranını ters yazıp 1'den büyük bir sinüs bulmak.",
+   "check": "Bulduğunu yerine koy: 2·(1/2) = 1 = 1·sin 90°. Sinüs 0 ile 1 arasında olmalıdır; 1/2 uygun."
+  }
+ },
+ {
+  "id": "isigin-kirilmasi-q4",
+  "h": "071b93473cfe60",
+  "guidance": {
+   "knowledge": [
+    "Kritik açı: büyük indisli ortamdan küçük indisliye geçişte kırılma açısını 90° yapan gelme açısı; burada yaklaşık 41,81°.",
+    "Tam iç yansıma: gelme açısı kritik açıdan büyükse ışık ikinci ortama geçemez, tamamı sınırdan geri yansır."
+   ],
+   "strategy": "Tam iç yansıma için iki koşul aranır: geçiş büyük indisten küçüğe mi ve gelme açısı kritik açıdan büyük mü; ikisi karşılaştırılır.",
+   "steps": [
+    "Geçiş yönü: n₁ = 1,5 > n₂ = 1; büyük indisten küçüğe, koşul sağlanır.",
+    "Açı: 50° > 41,81°; gelme açısı kritik açıyı aşıyor.",
+    "Snell'e koysan sin r = 1,5·sin 50° ≈ 1,5·0,77 ≈ 1,15 > 1 çıkar; böyle bir açı yoktur. Işık tam iç yansıma yapar."
+   ],
+   "optionReasons": [
+    "Frekans kaynağa bağlıdır; yansıma ya da kırılma onu değiştirmez, sıfır yapmaz.",
+    "Açının büyümesini kırılma açısının 90°'yi aşması sanır; 90°'den büyük kırılma açısı ikinci ortamda ışın demek değildir, geçiş olmaz.",
+    "Doğru: büyük indisten küçüğe geçiş ve 50° > 41,81°; tam iç yansıma olur.",
+    "Geçiş yönünü ters düşünür; küçük indise geçen ışın normalden uzaklaşır, hem de burada hiç geçemez.",
+    "Kırılma açısı 0° yalnız dik gelişte (i = 0°) olur; burada gelme açısı 50°'dir."
+   ],
+   "commonError": "Yalnız açıyı karşılaştırıp geçişin büyük indisten küçüğe olup olmadığını denetlememek.",
+   "check": "Sinüs 1'i aşamaz: 1,5·sin 50° ≈ 1,15 olduğu için kırılan ışın denklemi çözümsüzdür; bu tam iç yansımanın imzasıdır."
+  }
+ },
+ {
+  "id": "isigin-kirilmasi-q5",
+  "h": "1897b26f5ebfcf",
+  "guidance": {
+   "knowledge": [
+    "Dalga boyu λ: ardışık iki tepe arası uzaklık; nm (nanometre, 10⁻⁹ m) ile ölçülür.",
+    "Sürat v = c/n ve λ = v/f. Frekans f sınırda değişmediği için dalga boyu süratle orantılıdır: λ₂/λ₁ = v₂/v₁ = n₁/n₂."
+   ],
+   "strategy": "Frekans sabit kaldığı için dalga boyu indisle ters orantılıdır; oran kurmak hız değerlerini bilmeden sonucu verir.",
+   "steps": [
+    "Oranı yaz: λ₂/λ₁ = n₁/n₂ = 1 / 1,5 = 2/3.",
+    "λ₂ = 600 nm·(2/3) = 400 nm.",
+    "Aynı sonuç: λ₂ = 600 nm / 1,5 = 400 nm."
+   ],
+   "optionReasons": [
+    "Oranı ters kurar, bölmek yerine çarpar: 600·1,5 = 900 nm.",
+    "Dalga boyunun frekans gibi sınırda sabit kaldığını sanır.",
+    "İndisi 2 sanmış gibi dalga boyunu yarıya indirir: 600 / 2 = 300 nm.",
+    "Doğru sonucu bulup farkı yazar: 600 − 400 = 200 nm.",
+    "Doğru: f sabit, λ₂ = 600 / 1,5 = 400 nm."
+   ],
+   "commonError": "Dalga boyunu da frekans gibi değişmez saymak ya da indisle çarpmak.",
+   "check": "Işık yoğun ortamda yavaşlar; f sabitken λ = v/f de küçülmeli. 400 < 600, yön doğru; 600/400 = 1,5 = n₂/n₁."
+  }
+ },
+ {
+  "id": "isigin-kirilmasi-q6",
+  "h": "0e1307f28d102a",
+  "guidance": {
+   "knowledge": [
+    "Kırıcılık indisi n: ışığın ortamdaki yavaşlama ölçüsü. n₁ ışığın geldiği, n₂ geçmek istediği ortamın indisidir.",
+    "Kritik açı i_c: kırılma açısını 90° yapan gelme açısı; yalnız büyük indisten küçük indise geçişte vardır."
+   ],
+   "strategy": "Tam iç yansıma ışığın ikinci ortama geçemediği durumdur; bunun için hem geçiş yönü hem gelme açısı koşulu birlikte gerekir.",
+   "steps": [
+    "Küçük indise geçen ışın normalden uzaklaşır; kırılma açısı gelme açısından büyüktür. Bu yüzden n₁ > n₂ olmalı.",
+    "Gelme açısı büyüdükçe kırılma açısı 90°'ye ulaşır; o gelme açısı i_c'dir.",
+    "i > i_c olunca kırılan ışın kalmaz: koşullar n₁ > n₂ ve i > i_c."
+   ],
+   "optionReasons": [
+    "Rengi tek koşul sanır; renk indisi biraz değiştirir ama geçiş yönü ve açı koşulu olmadan tam iç yansıma olmaz.",
+    "Doğru: büyük indisten küçüğe geçiş ve kritik açıdan büyük gelme açısı.",
+    "Geçiş yönünü ters alır; küçük indisten büyüğe geçen ışın normale yaklaşır ve her açıda kırılabilir, i = 0'da ise sapmadan geçer.",
+    "İndisler eşitse sınırda kırılma olmaz; ışık doğrudan geçer, yansıma koşulu oluşmaz.",
+    "Kütle yoğunluğunu optik yoğunlukla (indis) karıştırır; belirleyici olan indislerdir."
+   ],
+   "commonError": "Koşullardan yalnız birini (yalnız açı ya da yalnız yön) yeterli saymak.",
+   "check": "Örnek: camdan (1,5) havaya (1) 50° ile gelen ışın yansır, ama havadan cama 50° ile gelen ışın kırılarak girer; yön koşulu gerçekten gerekli."
+  }
+ },
+ {
+  "id": "isigin-kirilmasi-q7",
+  "h": "01a1ee6d560088",
+  "guidance": {
+   "knowledge": [
+    "c: ışığın boşluktaki sürati, 3×10⁸ m/s (metre bölü saniye). v: ışığın ortamdaki sürati.",
+    "Kırıcılık indisi n = c/v; birimsizdir ve ortamda ışığın kaç kat yavaşladığını söyler."
+   ],
+   "strategy": "İndisin tanımı n = c/v sürati içerir; v yalnız bırakılınca v = c/n olur.",
+   "steps": [
+    "n = c/v eşitliğini v için çöz: v = c/n.",
+    "Değerleri koy: v = 3×10⁸ m/s / 1,5.",
+    "3 / 1,5 = 2, yani v = 2×10⁸ m/s."
+   ],
+   "optionReasons": [
+    "1,5 yerine 2'ye böler: 3×10⁸ / 2 = 1,5×10⁸ m/s.",
+    "Ortamın ışığı yavaşlatmadığını sanıp boşluktaki değeri yazar.",
+    "İndisten 1 çıkarıp (1,5 − 1 = 0,5) bunu sürat katsayısı sanır.",
+    "Doğru: v = c/n = 3×10⁸ / 1,5 = 2×10⁸ m/s.",
+    "Bölmek yerine çarpar: 3×10⁸·1,5 = 4,5×10⁸ m/s; ışık boşluktan hızlı olamaz."
+   ],
+   "commonError": "v = c/n yerine v = c·n yazmak.",
+   "check": "Ters yönden: n = c/v = 3×10⁸ / 2×10⁸ = 1,5. Ayrıca ortamdaki sürat c'den küçük olmalı."
+  }
+ },
+ {
+  "id": "isigin-kirilmasi-q8",
+  "h": "03f9e88392eec8",
+  "guidance": {
+   "knowledge": [
+    "Görünür derinlik h': sudaki bir cismin dışarıdan bakıldığında bulunduğu sanılan derinlik. Gerçek derinlik h: cismin asıl derinliği.",
+    "Yaklaşık dik bakışta h' = h·n_gözlemci / n_cisim; n_su = 4/3, n_hava = 1."
+   ],
+   "strategy": "Dik bakış ve iki indis verildiği için görünür derinlik bağıntısı doğrudan uygulanır; gözlemci havada, cisim suda.",
+   "steps": [
+    "h' = h·n_hava / n_su.",
+    "h' = 4 m·1 / (4/3) = 4 m·3/4.",
+    "h' = 3 m."
+   ],
+   "optionReasons": [
+    "Doğru: h' = 4·(3/4) = 3 m; cisim olduğundan sığ görünür.",
+    "Kırılmayı yok sayıp gerçek derinliği yazar.",
+    "Oranı ters kurar: 4·(4/3) = 16/3 m; cisim daha derin görünürdü.",
+    "Gerçek ile görünür derinliğin farkını alır: 4 − 3 = 1 m.",
+    "Yankı problemi gibi gidiş-dönüş düşünüp derinliği ikiyle çarpar: 2·4 = 8 m."
+   ],
+   "commonError": "İndisleri ters yazıp sudaki cismi olduğundan derin bulmak.",
+   "check": "Havadan suya bakınca havuz tabanı sığ görünür; h' < h olmalı. 3 m < 4 m ve 3/4 = n_hava/n_su."
+  }
+ },
+ {
+  "id": "isigin-kirilmasi-q9",
+  "h": "179c57d96af74f",
+  "guidance": {
+   "knowledge": [
+    "Paralel yüzlü levha: iki yüzeyi birbirine paralel saydam blok (örneğin pencere camı).",
+    "Yanal kayma: çıkan ışının gelen ışınla aynı doğrultuda olup yana doğru ötelenmiş olması."
+   ],
+   "strategy": "Işık iki paralel yüzeyde iki kez kırılır; Snell yasasını iki yüzeyde ard arda uygulayıp çıkış açısını giriş açısıyla karşılaştırmak yeter.",
+   "steps": [
+    "Giriş yüzü: n_hava·sin i = n_cam·sin r.",
+    "Yüzeyler paralel olduğu için camın içindeki açı ikinci yüzde de r'dir: n_cam·sin r = n_hava·sin e.",
+    "İki eşitlikten sin e = sin i, yani e = i. Çıkan ışın gelene paraleldir; camda eğik gittiği için yana kaymıştır."
+   ],
+   "optionReasons": [
+    "İki kırılmanın aynı yönde biriktiğini sanır; ikinci yüzde sapma ilk sapmayı geri alır.",
+    "Paralel çıkışı hiçbir değişiklik olmaması sanır; ışın camda yavaşladığı ve eğik gittiği için yol farkı ve kayma olur.",
+    "Doğru: e = i olduğundan çıkan ışın gelene paraleldir, yanal kayma olabilir.",
+    "Kırılmayı tam iç yansımayla karıştırır; havadan cama giren ışın kırılarak girer ve diğer yüzden çıkar.",
+    "Frekans kaynağa bağlıdır; cam onu değiştirmez."
+   ],
+   "commonError": "İki yüzeydeki sapmaların toplandığını düşünmek.",
+   "check": "Sayıyla dene: i = 30°, n = 1,5 → camda sin r = 1/3; çıkışta sin e = 1,5·1/3 = 1/2, e = 30° = i."
+  }
+ },
+ {
+  "id": "isigin-kirilmasi-q10",
+  "h": "17dad8b08ed0e1",
+  "guidance": {
+   "knowledge": [
+    "Kritik açı i_c: büyük indisli ortamdan küçük indisliye geçerken kırılan ışını yüzeye teğet gönderen gelme açısı.",
+    "Kırılma açısı normalden ölçülür; 90° kırılma açısı ışının sınır yüzeyi boyunca ilerlemesi demektir."
+   ],
+   "strategy": "Kritik açı zaten kırılma açısının 90° olduğu durum olarak tanımlandığı için tanımın kendisi cevabı verir.",
+   "steps": [
+    "Tanım: i = i_c iken n₁·sin i_c = n₂·sin r ve sin r = 1.",
+    "sin r = 1 ancak r = 90° ile sağlanır.",
+    "Kırılan ışın sınır yüzeyine paralel (yüzeyi yalayarak) gider: r = 90°."
+   ],
+   "optionReasons": [
+    "0° kırılma açısı dik geliş içindir; kritik gelişte ışın normal boyunca değil yüzey boyunca gider.",
+    "Normal ile yüzey arasındaki açının yarısını alır; sin 45° ≈ 0,71 olur, tanımdaki sin r = 1'i sağlamaz.",
+    "Kırılma açısını gelme açısının bir kesri sanır; kırılma açısı Snell yasasıyla bulunur, yarılama kuralı yoktur.",
+    "Işığın tamamen geri döndüğünü düşünür; 180° kırılma açısı tanımlı değildir, geri dönüş yansımadır.",
+    "Doğru: kritik açının tanımı r = 90°'dir."
+   ],
+   "commonError": "Kritik durumu tam iç yansımayla eşitlemek; tam iç yansıma i > i_c için başlar.",
+   "check": "n₁ = 2, n₂ = 1 örneğinde i_c = 30°: 2·sin 30° = 1 = 1·sin r → sin r = 1 → r = 90°."
+  }
+ },
+ {
+  "id": "mercekler-q1",
+  "h": "155c76c7bdaaa7",
+  "guidance": {
+   "knowledge": [
+    "Yakınsak (ince kenarlı) mercek: içinden geçen ışığı toplar; odak uzaklığı f pozitiftir. u cismin, v görüntünün merceğe uzaklığıdır (cm).",
+    "İnce mercek denklemi 1/f = 1/u + 1/v. Bu soruda v pozitifse görüntü çıkış tarafındadır ve gerçektir."
+   ],
+   "strategy": "f ve u verildiği için ince mercek denklemi v'yi doğrudan verir; çözülmüş biçimi v = f·u / (u − f)'dir.",
+   "steps": [
+    "Verilen: f = 10 cm, u = 30 cm.",
+    "1/v = 1/10 − 1/30 = 3/30 − 1/30 = 2/30 = 1/15 cm⁻¹.",
+    "v = 15 cm, yani 300 / 20 = 15 cm. Pozitif: görüntü çıkış tarafında, 15 cm uzaklıkta."
+   ],
+   "optionReasons": [
+    "Cismi odakta sanır; sonlu görüntünün olmaması yalnız u = f = 10 cm iken olur.",
+    "Doğru: v = 300 / 20 = +15 cm, çıkış tarafında gerçek görüntü.",
+    "Pozitif v'yi giriş tarafı sanarak işaret kuralını ters okur.",
+    "Görüntüyü cismin merceğe göre simetriğinde sanır; bu yalnız u = 2f = 20 cm iken olur.",
+    "Büyüteç durumuyla karıştırıp odağı yarılar (10 / 2 = 5 cm) ve görüntüyü giriş tarafına koyar."
+   ],
+   "commonError": "v'nin işaretini ters yorumlayıp gerçek görüntüyü giriş tarafına koymak.",
+   "check": "Denkleme koy: 1/30 + 1/15 = 3/30 = 1/10. Ayrıca u > 2f iken görüntü f ile 2f arasında (10 ile 20 cm) olmalı; 15 cm uyuyor."
+  }
+ },
+ {
+  "id": "mercekler-q2",
+  "h": "022a86d45b50d2",
+  "guidance": {
+   "knowledge": [
+    "Yakınsak mercekte f = 10 cm; u = 20 cm cisim uzaklığı, h = 4 cm cisim boyu.",
+    "Büyütme m = −v/u: negatifse görüntü ters, |m|·h görüntü boyudur. v pozitifse görüntü çıkış tarafında ve gerçektir."
+   ],
+   "strategy": "Önce mercek denkleminden v, sonra m = −v/u ile yön ve boy bulunur; u = 2f özel durumu da sonucu denetler.",
+   "steps": [
+    "v = f·u / (u − f) = 10·20 / (20 − 10) = 200 / 10 = 20 cm.",
+    "m = −v/u = −20 / 20 = −1.",
+    "Görüntü çıkış tarafında 20 cm, ters (m eksi) ve boyu 1·4 cm = 4 cm."
+   ],
+   "optionReasons": [
+    "Görüntünün odakta oluştuğunu sanır (v = 10 cm) ve m = −10/20 = −1/2 ile boyu 2 cm bulur.",
+    "Büyüteç durumunu uygular; sanal ve büyük görüntü yalnız cisim odak içindeyse oluşur.",
+    "u = 2f'yi u = f ile karıştırır; 20 ≠ 10 olduğundan sonlu görüntü vardır.",
+    "Doğru: v = 20 cm, m = −1; çıkışta ters, 4 cm.",
+    "Konumu ve boyu doğru bulur ama pozitif v'yi giriş tarafı sanıp görüntüyü düz ve sanal yorumlar."
+   ],
+   "commonError": "m = −1 sonucundaki eksi işareti atlayıp ters görüntüyü düz saymak.",
+   "check": "Denkleme koy: 1/20 + 1/20 = 2/20 = 1/10 = 1/f. Cisim 2f'de ise görüntü de karşı tarafta 2f'de ve eş boylu olur."
+  }
+ },
+ {
+  "id": "mercekler-q3",
+  "h": "0f12843a084449",
+  "guidance": {
+   "knowledge": [
+    "İşaretli büyütme m = −v/u: işareti görüntünün yönünü (pozitif düz, negatif ters), büyüklüğü boy oranını verir.",
+    "Bu kuralda v negatif çıkarsa görüntü cisimle aynı taraftadır (giriş tarafı) ve sanaldır; cisim odak içindeyse yakınsak mercek büyüteç gibi çalışır."
+   ],
+   "strategy": "Cisim odak içinde (u = 8 < f = 12) olduğu için v negatif çıkacaktır; işareti koruyarak önce v, sonra m bulunur.",
+   "steps": [
+    "v = f·u / (u − f) = 12·8 / (8 − 12) = 96 / (−4) = −24 cm.",
+    "m = −v/u = −(−24) / 8 = 24 / 8 = 3.",
+    "m = 3: görüntü sanal, düz ve 3 kat büyük."
+   ],
+   "optionReasons": [
+    "Doğru: v = −24 cm, m = −(−24)/8 = +3.",
+    "v = −24'ün eksisini atlar: m = −24/8 = −3 bulup görüntüyü ters sanır.",
+    "Oranı ters kurar: u/|v| = 8/24 = 1/3.",
+    "Hem oranı ters kurar hem eksiyi korur: −8/24 = −1/3.",
+    "Merceği düz cam gibi düşünüp görüntüyü eş boylu sanır."
+   ],
+   "commonError": "Negatif v'yi görünce görüntüyü ters sanmak; eksi v yalnız tarafı söyler, yönü m'nin işareti söyler.",
+   "check": "Denkleme koy: 1/8 + 1/(−24) = 3/24 − 1/24 = 2/24 = 1/12. Büyüteç düz ve büyük görüntü verir; m = +3 uyuyor."
+  }
+ },
+ {
+  "id": "mercekler-q4",
+  "h": "160ef1f226e2f0",
+  "guidance": {
+   "knowledge": [
+    "Iraksak (kalın kenarlı) mercek: ışığı dağıtır; odak uzaklığı negatiftir (f = −10 cm).",
+    "v negatif çıkarsa görüntü giriş tarafında ve sanaldır. m = −v/u pozitifse düz, 1'den küçükse küçüktür."
+   ],
+   "strategy": "f'nin eksi işaretini koruyarak mercek denklemiyle v, ardından büyütmeyle yön ve boy bulunur.",
+   "steps": [
+    "v = (−10)·20 / (20 − (−10)) = −200 / 30 = −20/3 cm (≈ −6,7 cm).",
+    "Negatif v: görüntü giriş tarafında, 20/3 cm uzakta, sanal.",
+    "m = −v/u = (20/3) / 20 = 1/3: düz ve küçük."
+   ],
+   "optionReasons": [
+    "Paralel ışın durumunu bu cisme uygular; sonsuzda görüntü yalnız yakınsak mercekte cisim odaktayken olur.",
+    "Görüntünün odakta (10 cm) oluştuğunu sanır ve sanal görüntüyü ters yorumlar; ıraksak mercekte sanal görüntü daima düzdür.",
+    "Doğru: v = −20/3 cm (giriş tarafı), m = 1/3 (düz, küçük).",
+    "f'nin eksisini kaybeder; yakınsak mercek gibi çıkış tarafında gerçek görüntü sanar.",
+    "Görüntüyü cismin yerinde ve eş boylu sanar; ıraksak mercek gerçek cisim için daima küçük görüntü verir."
+   ],
+   "commonError": "Iraksak mercekte f'yi pozitif alıp gerçek görüntü bulmak.",
+   "check": "Denkleme koy: 1/20 + 1/(−20/3) = 1/20 − 3/20 = −2/20 = −1/10 = 1/f. Görüntü mercekle odak arasında olmalı: 6,7 cm < 10 cm."
+  }
+ },
+ {
+  "id": "mercekler-q5",
+  "h": "1349d0bd77850e",
+  "guidance": {
+   "knowledge": [
+    "Odak (F): yakınsak merceğe eksene paralel gelen ışınların toplandığı nokta. Işık yolu tersinir olduğundan odaktan çıkan ışınlar mercekten sonra eksene paralel gider.",
+    "Optik güç: merceğin ışığı kırma gücü (1/f); cismin yeri değiştiğinde değişmez."
+   ],
+   "strategy": "u = f iken v = f·u / (u − f) paydası sıfır olur; bunun anlamını ışık yolunun tersinirliğiyle yorumlamak gerekir.",
+   "steps": [
+    "u = f koy: v = f² / 0; tanımsız, yani sonlu v yok.",
+    "Odaktan çıkan ışınlar mercekten geçince eksene paralel olur.",
+    "Paralel ışınlar sonlu bir noktada kesişmez; sonlu görüntü yoktur, görüntü sonsuzda denir."
+   ],
+   "optionReasons": [
+    "Paydadaki sıfırı v = 0 diye okuyup görüntüyü optik merkeze koyar.",
+    "Sıfıra bölmeyi sıfır sanır; payda sıfırken v tanımsızdır.",
+    "Büyütmeyi eş boylu sanır; m = 1 düz cam içindir, burada sonlu görüntü bile yoktur.",
+    "Sonlu görüntü olmamasını merceğin gücünün kaybolması sanır; bu ancak indisler eşitse olur, burada mercek yine kırıcıdır.",
+    "Doğru: odaktan çıkan ışınlar paralel olur, sonlu görüntü yoktur."
+   ],
+   "commonError": "u = f durumunu v = 0 ya da mercek gücünün sıfırlanması sanmak.",
+   "check": "f = 10 cm için u = 11 cm'de v = 110 cm, u = 10,5 cm'de v = 210 cm; cisim odağa yaklaştıkça görüntü sonsuza kaçar."
+  }
+ },
+ {
+  "id": "mercekler-q6",
+  "h": "162151887bedb2",
+  "guidance": {
+   "knowledge": [
+    "Bikonveks mercek: iki yüzü de dışa bombeli yakınsak mercek; simetrikse iki yüzün eğrilik yarıçapı aynı R'dir.",
+    "n_m mercek camının, n_o çevre ortamın kırıcılık indisidir. Verilen bağıntı: 1/f = (n_m/n_o − 1)·2/R; R cm ise 1/f cm⁻¹, f cm çıkar."
+   ],
+   "strategy": "Bağıntı ve bütün değerler verildiği için iki çarpanı ayrı hesaplayıp çarpmak, sonra tersini almak yeterlidir.",
+   "steps": [
+    "Birinci çarpan: n_m/n_o − 1 = 1,5/1 − 1 = 0,5.",
+    "İkinci çarpan: 2/R = 2 / 10 cm = 0,2 cm⁻¹.",
+    "1/f = 0,5·0,2 = 0,1 cm⁻¹; tersini al: f = 1 / 0,1 = 10 cm."
+   ],
+   "optionReasons": [
+    "Optik gücü sıfır sanır; bu ancak n_m = n_o olsaydı olurdu, burada 1,5 ≠ 1.",
+    "Doğru: 1/f = 0,5·0,2 = 0,1 cm⁻¹, f = 10 cm.",
+    "Bağıntıyı f = (n − 1)·R diye kurar: 0,5·10 = 5 cm.",
+    "2 çarpanını unutur: 1/f = 0,5·(1/10) = 0,05 cm⁻¹, f = 20 cm.",
+    "Hesap doğru ama işareti çevirir; havadaki bikonveks mercek yakınsaktır, f pozitiftir."
+   ],
+   "commonError": "Sonucu 1/f iken f sanmak ya da 2/R çarpanındaki 2'yi unutmak.",
+   "check": "Bilinen kural: havadaki n = 1,5 simetrik bikonveks mercekte f = R olur; R = 10 cm → f = 10 cm."
+  }
+ },
+ {
+  "id": "mercekler-q7",
+  "h": "075eadc3a937c5",
+  "guidance": {
+   "knowledge": [
+    "Bağıl indis n_m/n_o: merceğin indisinin çevre ortamın indisine oranı. Oran 1'den küçükse mercek çevresinden daha az kırıcıdır.",
+    "Odak uzaklığı pozitifse mercek yakınsak (toplayıcı), negatifse ıraksak (dağıtıcı) davranır."
+   ],
+   "strategy": "Davranışı belirleyen şey 1/f'nin işaretidir; bu da n_m/n_o − 1 çarpanının işaretinden gelir, bu yüzden önce o çarpan hesaplanır.",
+   "steps": [
+    "n_m/n_o − 1 = 1,5/1,6 − 1 = 15/16 − 16/16 = −1/16.",
+    "2/R = 2/10 = 1/5 cm⁻¹; 1/f = (−1/16)·(1/5) = −1/80 cm⁻¹.",
+    "f = −80 cm: negatif odak, mercek bu ortamda ıraksak davranır."
+   ],
+   "optionReasons": [
+    "Çevre ortamı yok sayıp havadaki sonucu (f = 10 cm) yazar.",
+    "Işığın durduğunu söyler; mercek gücünün değişmesi ışığı durdurmaz, yalnız yönünü farklı kırar.",
+    "Havadaki büyüklüğü alır, işareti eksi yapar ama negatif odağı yanlışlıkla yakınsak diye yorumlar.",
+    "Doğru: 1/f = −1/80 cm⁻¹, f = −80 cm; ıraksak.",
+    "Büyüklüğü doğru bulur ama eksi işareti atlar ve bombeli şekle bakıp yakınsak sanır."
+   ],
+   "commonError": "Merceğin şekline bakıp her durumda ince kenarlıyı yakınsak saymak.",
+   "check": "Çevre mercekten daha kırıcı (1,6 > 1,5); bu durumda kırılma ters yönde olur ve bombeli mercek dağıtıcı davranır, f negatif olmalı."
+  }
+ },
+ {
+  "id": "mercekler-q8",
+  "h": "0f29f5f098b5c0",
+  "guidance": {
+   "knowledge": [
+    "Mercek yapıcı formülü: 1/f = (n_m/n_o − 1)·(eğrilik çarpanı). n_m merceğin, n_o çevrenin indisidir.",
+    "Optik güç 1/f: merceğin ışığı ne kadar kırdığı. Güç sıfırsa mercek ışığı hiç yönlendirmez; f sonsuz demektir, sıfır değil."
+   ],
+   "strategy": "İndisler eşitse bağıl indis 1 olur; formülde 1 − 1 = 0 çıkınca eğrilik ne olursa olsun güç sıfırlanır.",
+   "steps": [
+    "n_m = n_o → n_m/n_o = 1.",
+    "1/f = (1 − 1)·(eğrilik çarpanı) = 0·(sonlu sayı) = 0.",
+    "Güç sıfır: mercek ışığı kırmaz, ayrı bir odak etkisi kalmaz."
+   ],
+   "optionReasons": [
+    "Doğru: 1/f = 0; mercek ışığı kırmaz, ayrı bir odak etkisi olmaz.",
+    "1/f = 0 sonucunu f = 0 sanır; 1/f sıfırsa f sonsuzdur, ayrıca ışık soğurulmaz.",
+    "Belirli bir sayısal odak uydurur; çarpan sıfır olunca eğrilik ne olursa olsun güç sıfırdır.",
+    "Oranın 1 olmasını indislerin sıfır olması sanır; indisler eşittir, sıfır değildir (boşlukta bile n = 1).",
+    "Odağın tanımsızlığını cismin odakta olmasıyla karıştırır; bu cismin yeriyle ilgili bir sorudur, formülle değil."
+   ],
+   "commonError": "1/f = 0 ile f = 0'ı karıştırmak.",
+   "check": "Suya batırılmış ve suyla aynı indisli saydam bir cisim görünmez olur; ışık onu fark etmeden geçer, yani kırma gücü yoktur."
+  }
+ },
+ {
+  "id": "mercekler-q9",
+  "h": "0bd660feb66481",
+  "guidance": {
+   "knowledge": [
+    "Optik merkez: ince merceğin ortasındaki nokta; asal eksen buradan geçer.",
+    "İnce mercek modeli: merceğin kalınlığı ihmal edilir ve iki yanındaki ortam aynıdır; bu modelde optik merkezden geçen ışın sapmaz."
+   ],
+   "strategy": "Merceğin ortası, iki yüzü birbirine paralel ince bir levha gibidir; paralel yüzlü levha sonucunu kullanmak cevabı verir.",
+   "steps": [
+    "Optik merkez çevresinde merceğin iki yüzü birbirine paraleldir.",
+    "Paralel yüzlü levhadan geçen ışın gelene paralel çıkar; kayma levhanın kalınlığıyla orantılıdır.",
+    "İnce mercekte kalınlık ihmal edildiği için kayma da ihmal edilir: ışın doğrusal devam eder."
+   ],
+   "optionReasons": [
+    "Soğurmayı kırılmayla karıştırır; saydam mercek ışığı geçirir.",
+    "Sanal çizgiyi gerçek ışınla karıştırır; merkezden geçen ışın gerçek ışındır, uzantı değil.",
+    "Doğru: ince ve iki yanı aynı ortamlı mercekte merkez ışını sapmadan devam eder.",
+    "Bu davranışı odaktan geçerek gelen ışınla karıştırır; o ışın paralel çıkar, merkez ışını değil.",
+    "Frekans kaynakla belirlenir; mercek onu değiştirmez."
+   ],
+   "commonError": "Optik merkezden geçen ışını da odağa doğru kırılıyor sanmak.",
+   "check": "Bir merceğin ortasından bakınca karşıdaki noktalar kaymadan görünür; kenarlardan bakınca kayar."
+  }
+ },
+ {
+  "id": "mercekler-q10",
+  "h": "0e607ff6f7282d",
+  "guidance": {
+   "knowledge": [
+    "Dispersiyon (renk ayrışması): camın kırıcılık indisinin ışığın rengine (frekansına) göre değişmesi. Normal dispersiyonda mor için indis kırmızıdan büyüktür.",
+    "|f| odak uzaklığının büyüklüğüdür; mercek ışığı ne kadar güçlü kırarsa ışınlar o kadar yakında toplanır, |f| küçülür."
+   ],
+   "strategy": "Aynı mercekte geometri sabit, değişen yalnız indistir; daha fazla kırılan renk daha yakında toplanacağı için odaklar kırılma miktarına göre sıralanır.",
+   "steps": [
+    "Soruya göre mor ışık kırmızıdan daha fazla kırılıyor.",
+    "Daha fazla kırılan ışın asal eksene daha erken ulaşır; odağı merceğe daha yakındır.",
+    "Bu yüzden |f_mor| < |f_kırmızı|."
+   ],
+   "optionReasons": [
+    "Sıralamayı ters kurar; fazla kırılmayı uzak odak sanır.",
+    "Geometri aynı diye odakların da aynı olduğunu sanır; indis renge göre değiştiği için odaklar ayrılır.",
+    "Mor ışığın toplanmadığını sanır; mor da kırılır ve toplanır, yalnız daha yakında.",
+    "Saydam mercek görünür ışığın bütün renklerini geçirir; kırmızının geçmemesi için bir neden yoktur.",
+    "Doğru: mor daha çok kırıldığı için odağı daha yakındır, |f_mor| < |f_kırmızı|."
+   ],
+   "commonError": "Daha güçlü kırılmanın daha uzun odak verdiğini sanmak.",
+   "check": "Mercek yapıcı formülünde n büyürse (n − 1) büyür, 1/f büyür, f küçülür; mor için n büyük olduğundan f küçük olmalı."
+  }
+ },
+ {
+  "id": "prizmalar-renkler-q1",
+  "h": "05fa1b3fe429ca",
+  "guidance": {
+   "knowledge": [
+    "RGB modeli: her ışık üç kanalla yazılır [kırmızı, yeşil, mavi]; 1 o renk var, 0 yok demektir. Kırmızı [1, 0, 0], yeşil [0, 1, 0], mavi [0, 0, 1].",
+    "Toplamsal karışım: farklı ışıklar aynı yere düşünce kanalları toplanır. Kırmızı + yeşil sarı, yeşil + mavi camgöbeği, kırmızı + mavi macenta görünür."
+   ],
+   "strategy": "İki ışık aynı noktada birleştiği için bu bir toplamsal karışımdır; kanal vektörleri toplanıp çıkan vektörün adı bulunur.",
+   "steps": [
+    "Kırmızı [1, 0, 0] + yeşil [0, 1, 0] = [1, 1, 0].",
+    "[1, 1, 0]: kırmızı ve yeşil kanal açık, mavi kapalı.",
+    "Bu bileşim sarı görünür."
+   ],
+   "optionReasons": [
+    "Işıkların toplanmasını filtrelerin üst üste konmasıyla karıştırır; ışık eklenince karanlık olmaz.",
+    "Doğru: [1, 0, 0] + [0, 1, 0] = [1, 1, 0], sarı.",
+    "Karışımda hiç olmayan mavi kanalı ortaya çıkarır; toplamda mavi 0 + 0 = 0'dır.",
+    "Macentayı kırmızı + mavi yerine kırmızı + yeşil sanır.",
+    "Camgöbeğini (yeşil + mavi) bu karışımla karıştırır; kırmızı kanalı yok sayar."
+   ],
+   "commonError": "Işık karışımını boya karışımı gibi düşünüp kırmızı ve yeşilden kahverengi ya da koyu renk beklemek.",
+   "check": "Sarı ışığın tümleri mavidir; sarı + mavi = [1, 1, 0] + [0, 0, 1] = [1, 1, 1] beyaz eder, bu da sarının [1, 1, 0] olduğunu doğrular."
+  }
+ },
+ {
+  "id": "prizmalar-renkler-q2",
+  "h": "1383616ea43501",
+  "guidance": {
+   "knowledge": [
+    "Filtre: yalnız kendi rengindeki kanalları geçiren, diğerlerini soğuran saydam süzgeç. Sarı filtre [1, 1, 0] kırmızı ve yeşili, mavi filtre [0, 0, 1] yalnız maviyi geçirir.",
+    "Seri süzme: ışık filtrelerden ard arda geçerse her kanal yalnız bütün filtrelerde 1 ise kalır; kanal kanal çarpılır."
+   ],
+   "strategy": "Filtreler ard arda dizildiği için her filtre bir öncekinin bıraktığından seçer; kanalları sırayla çarpmak çıkışı verir.",
+   "steps": [
+    "Beyaz ışık [1, 1, 1] sarı filtreden: [1·1, 1·1, 1·0] = [1, 1, 0].",
+    "Bu ışık mavi filtreden: [1·0, 1·0, 0·1] = [0, 0, 0].",
+    "Hiçbir kanal kalmaz: ışık yok."
+   ],
+   "optionReasons": [
+    "İkinci filtreyi yok sayıp yalnız ilk filtrenin çıkışını yazar.",
+    "Yalnız son filtreye bakar; mavi kanalın ilk filtrede zaten soğurulduğunu unutur.",
+    "Sarının yeşil kanalını mavi filtrenin geçireceğini sanır; mavi filtre yeşili soğurur.",
+    "Doğru: [1, 1, 0] ile [0, 0, 1] arasında ortak kanal yok; çıkış [0, 0, 0].",
+    "Filtreleri toplamsal karışım gibi toplar: [1, 1, 0] + [0, 0, 1] = [1, 1, 1]."
+   ],
+   "commonError": "Filtreleri ışık gibi toplamak; filtreler çıkarır, kanal kanal çarpılır.",
+   "check": "Sırayı değiştir: önce mavi filtre [0, 0, 1] bırakır, sonra sarı filtre maviyi soğurur; yine karanlık."
+  }
+ },
+ {
+  "id": "prizmalar-renkler-q3",
+  "h": "1b57a18d519491",
+  "guidance": {
+   "knowledge": [
+    "Sarı filtre [1, 1, 0]: kırmızı ve yeşili geçirir, maviyi soğurur. Kırmızı filtre [1, 0, 0]: yalnız kırmızıyı geçirir.",
+    "Seri süzmede bir kanal ancak her filtrede 1 ise çıkışa ulaşır; maskeler kanal kanal çarpılır."
+   ],
+   "strategy": "İki filtre ard arda olduğu için ortak kanal aranır; beyaz ışığın kanallarını maskelerle sırayla çarpmak bunu verir.",
+   "steps": [
+    "Beyaz [1, 1, 1] sarı filtreden: [1, 1, 0].",
+    "[1, 1, 0] kırmızı filtreden: [1·1, 1·0, 0·0] = [1, 0, 0].",
+    "Yalnız kırmızı kanal kalır: kırmızı."
+   ],
+   "optionReasons": [
+    "Doğru: ortak kanal yalnız kırmızı; [1, 1, 0] ile [1, 0, 0] çarpımı [1, 0, 0].",
+    "İkinci filtrenin yeşili geçirdiğini sanır; kırmızı filtre yeşili soğurur.",
+    "İkinci filtreyi yok sayıp ilk filtrenin çıkışını yazar.",
+    "Filtrelerin ışık eklediğini sanır; filtre yalnız var olanı süzer, beyaza dönemez.",
+    "Ortak kanalı gözden kaçırır; kırmızı her iki filtrede de 1'dir, ışık geçer."
+   ],
+   "commonError": "Seri filtrelerde ortak kanal varken ışığın tümden kesildiğini sanmak.",
+   "check": "Sıra değişse de sonuç aynı: önce kırmızı filtre [1, 0, 0], sonra sarı filtre kırmızıyı geçirir, çıkış [1, 0, 0]."
+  }
+ },
+ {
+  "id": "prizmalar-renkler-q4",
+  "h": "046599d48de9ee",
+  "guidance": {
+   "knowledge": [
+    "Opak (ışık geçirmeyen) yüzeyin rengi yansıttığı kanallardır. İdeal sarı yüzey [1, 1, 0] kırmızı ve yeşili yansıtır, maviyi soğurur.",
+    "Yüzey yalnız üzerine gelen kanalları yansıtabilir; gelen ışıkta olmayan rengi üretemez. Yansıyan ışık = gelen kanallar × yüzey kanalları."
+   ],
+   "strategy": "Görünen renk, gelen ışık ile yüzeyin yansıttığı kanalların ortak kısmıdır; iki vektör kanal kanal çarpılır.",
+   "steps": [
+    "Gelen ışık mavi: [0, 0, 1].",
+    "Yüzey: [1, 1, 0]. Çarpım: [0·1, 0·1, 1·0] = [0, 0, 0].",
+    "Göze hiçbir kanal ulaşmaz: yüzey karanlık (siyah) görünür."
+   ],
+   "optionReasons": [
+    "Gelen ışıkta kırmızı kanal yoktur; yüzey olmayan kırmızıyı yansıtamaz.",
+    "Sarının içindeki yeşili görür ama gelen mavi ışıkta yeşil bulunmadığını unutur.",
+    "Doğru: [0, 0, 1] ile [1, 1, 0] ortak kanalı yok; yansıyan ışık [0, 0, 0], karanlık.",
+    "Yüzeyin rengini beyaz ışıktaki rengi sanır; rengi aydınlatan ışık belirler.",
+    "Yüzeyi ışık kaynağı gibi düşünür; yüzey ışık üretmez, yalnız yansıtır."
+   ],
+   "commonError": "Cismin rengini her aydınlatmada aynı sanmak.",
+   "check": "Aynı sarı yüzeyi kırmızı ışıkla aydınlatsaydın [1, 0, 0]·[1, 1, 0] = [1, 0, 0] kırmızı görünürdü; renk ışığa bağlıdır."
+  }
+ },
+ {
+  "id": "prizmalar-renkler-q5",
+  "h": "0cb8e463f47471",
+  "guidance": {
+   "knowledge": [
+    "Camgöbeği filtre [0, 1, 1]: yeşil ve maviyi geçirir, kırmızıyı soğurur. Sarı filtre [1, 1, 0]: kırmızı ve yeşili geçirir, maviyi soğurur.",
+    "Seri süzme: ışık iki filtreden ard arda geçerse kanal kanal çarpılır (⊙ işareti bu kanal kanal çarpımı gösterir)."
+   ],
+   "strategy": "Filtreler ard arda olduğu için yalnız iki maskede de 1 olan kanal geçer; maskeleri kanal kanal çarpmak bunu gösterir.",
+   "steps": [
+    "Beyaz [1, 1, 1] camgöbeği filtreden: [0, 1, 1].",
+    "[0, 1, 1] ⊙ [1, 1, 0] = [0·1, 1·1, 1·0] = [0, 1, 0].",
+    "Yalnız yeşil kanal kalır: yeşil."
+   ],
+   "optionReasons": [
+    "İlk filtrenin bıraktığı maviyi ikinci filtrenin de geçireceğini sanır; sarı filtre maviyi soğurur.",
+    "Sarı filtrenin kırmızısını görür ama kırmızının ilk filtrede zaten soğurulduğunu unutur.",
+    "Kırmızı ve maviyi birleştirir; ikisi de filtrelerden birinde soğurulur, macenta oluşamaz.",
+    "Filtreleri toplamsal karışım gibi toplar: [0, 1, 1] + [1, 1, 0] ile her kanalı açık sanır.",
+    "Doğru: iki maskenin ortak kanalı yalnız yeşil, [0, 1, 0]."
+   ],
+   "commonError": "Seri filtreleri toplamak; doğrusu yalnız ortak kanalı almaktır.",
+   "check": "Ters sırayla dene: sarı filtre [1, 1, 0] bırakır, camgöbeği kırmızıyı soğurur: [0, 1, 0], yine yeşil."
+  }
+ },
+ {
+  "id": "prizmalar-renkler-q6",
+  "h": "03aa41cc16486f",
+  "guidance": {
+   "knowledge": [
+    "Prizma: ışığı kıran üçgen kesitli saydam cisim. Sapma: çıkan ışının gelen ışına göre ne kadar yön değiştirdiği.",
+    "Dispersiyon: indisin renge göre değişmesi. Soruda n_mor > n_kırmızı veriliyor; indis büyük olan ışık her yüzeyde daha çok kırılır."
+   ],
+   "strategy": "Aynı geometri ve aynı geliş açısında sapmayı yalnız indis belirler; indisleri karşılaştırmak sapma sırasını verir.",
+   "steps": [
+    "Snell yasası: aynı gelme açısında indis büyüdükçe kırılma (yön değişimi) artar.",
+    "Soruda n_mor > n_kırmızı.",
+    "Bu yüzden mor ışık prizmada kırmızıdan daha fazla sapar; beyaz ışık renklerine ayrılır."
+   ],
+   "optionReasons": [
+    "Bütün malzemelerde indislerin aynı olduğunu söyler; soru bu prizma için indislerin farklı olduğunu açıkça veriyor.",
+    "Doğru: n_mor > n_kırmızı olduğundan mor ışık daha çok sapar.",
+    "Prizmanın renk ürettiğini sanır; prizma beyaz ışıkta zaten bulunan renkleri ayırır.",
+    "Frekansın prizmada değiştiğini sanır; frekans kaynağa bağlıdır, her renk kendi frekansını korur.",
+    "Ayrışmayı ters düşünür; tek renkli ışık prizmada başka renklere ayrılmaz, beyaza da dönmez."
+   ],
+   "commonError": "Kırmızı ışığın dalga boyu büyük diye daha çok saptığını sanmak.",
+   "check": "Gökkuşağında ve prizma tayfında kırmızı az sapan uçta, mor çok sapan uçta görülür; sıra n_mor > n_kırmızı ile uyumlu."
+  }
+ },
+ {
+  "id": "prizmalar-renkler-q7",
+  "h": "11fc735d2adc2b",
+  "guidance": {
+   "knowledge": [
+    "Kritik açı: büyük indisli ortamdan küçük indisliye geçişte kırılma açısını 90° yapan gelme açısı; camdan havaya 41,81°.",
+    "Tam iç yansıma: geçiş büyük indisten küçüğe ve gelme açısı kritik açıdan büyükse ışık dışarı çıkamaz, tamamen geri yansır."
+   ],
+   "strategy": "Tam iç yansımanın iki koşulu (indis yönü ve açı) verilen değerlerle tek tek denetlenir.",
+   "steps": [
+    "İndis yönü: camdan (1,5) havaya (1); büyükten küçüğe, sağlanır.",
+    "Açı: 45° > 41,81°, sağlanır.",
+    "İki koşul birlikte sağlandığı için ışın tam iç yansıma yapar."
+   ],
+   "optionReasons": [
+    "Açıyı frekansla karıştırır; geliş açısı ışığın frekansını belirlemez.",
+    "Yansımanın maddenin özelliğini değiştirdiğini sanır; indisler malzemeye bağlıdır, sabittir.",
+    "Tam yansımayı enerji kazancı sanır; yansıyan enerji gelen enerjiden fazla olamaz.",
+    "Doğru: büyük indisten küçüğe geçiş ve 45° > 41,81°; tam iç yansıma.",
+    "Kritik açıyla karşılaştırmayı atlar; 45° kritik açıyı aştığı için ışık karşıya geçemez."
+   ],
+   "commonError": "45°'yi kritik açıyla karşılaştırmadan ışının çıkacağını varsaymak.",
+   "check": "Snell ile dene: sin r = 1,5·sin 45° ≈ 1,5·0,71 ≈ 1,06 > 1; böyle bir kırılma açısı yoktur, ışık yansır."
+  }
+ },
+ {
+  "id": "prizmalar-renkler-q8",
+  "h": "1d94b48612cf43",
+  "guidance": {
+   "knowledge": [
+    "Tayf: bir ışığın içerdiği frekansların (dalga boylarının) listesi. Tek frekanslı sarı ışığın tayfında yalnız bir çizgi, kırmızı + yeşil karışımında iki çizgi vardır.",
+    "Renk algısı: göz ışığı üç tür alıcıyla değerlendirir; farklı tayflar alıcıları aynı oranda uyarırsa aynı renk görülür."
+   ],
+   "strategy": "Soru algıyı fiziksel bileşenle karşılaştırıyor; aynı algıyı veren iki farklı tayf örneği verildiği için genelleme buradan çıkarılır.",
+   "steps": [
+    "Birinci ışık: tek frekans. İkinci ışık: iki frekans (kırmızı ve yeşil). Tayfları farklıdır.",
+    "İkisi de sarı görünüyor, yani algı aynı.",
+    "Sonuç: aynı renk algısı tek başına aynı tayfı kanıtlamaz."
+   ],
+   "optionReasons": [
+    "Doğru: farklı tayflar aynı sarı algıyı verebildiğine göre algı tayfı kanıtlamaz.",
+    "Tek frekanslı sarı ışık örneğini görmezden gelir; sarı görünüm tek frekansla da oluşabilir.",
+    "RGB modelini tayfın kendisi sanır; model yalnız bir gösterim aracıdır, ara frekanslar gerçekten vardır.",
+    "Prizmanın ışık ürettiğini sanır; prizma yalnız var olan frekansları ayırır.",
+    "Algıyı yalnız dalga boyuna bağlar; aynı algıyı veren farklı karışımlar bunu çürütür."
+   ],
+   "commonError": "Gözün gördüğü rengi ışığın fiziksel içeriğiyle aynı şey saymak.",
+   "check": "İki sarı ışığı prizmadan geçir: tek frekanslı olan tek çizgi, karışım olan kırmızı ve yeşil iki çizgi verir; algı aynı, tayf farklı."
+  }
+ },
+ {
+  "id": "prizmalar-renkler-q9",
+  "h": "1dee60d60dd7c7",
+  "guidance": {
+   "knowledge": [
+    "RGB modelinde ışık [kırmızı, yeşil, mavi] kanallarıyla yazılır: yeşil [0, 1, 0], mavi [0, 0, 1].",
+    "Toplamsal karışımda iki birincil renk ikincil renk verir: kırmızı + yeşil sarı, kırmızı + mavi macenta, yeşil + mavi camgöbeği."
+   ],
+   "strategy": "İki ışık birleştiği için toplamsal karışım uygulanır; kanallar toplanıp sonuç vektörün adı bulunur.",
+   "steps": [
+    "Yeşil [0, 1, 0] + mavi [0, 0, 1] = [0, 1, 1].",
+    "Kırmızı kapalı, yeşil ve mavi açık.",
+    "[0, 1, 1] camgöbeği görünür."
+   ],
+   "optionReasons": [
+    "Macentayı (kırmızı + mavi) bununla karıştırır; karışımda kırmızı kanal yok.",
+    "Işık eklemeyi filtre üst üste koymakla karıştırır; ışıklar eklenince karanlık olmaz.",
+    "Doğru: [0, 1, 0] + [0, 0, 1] = [0, 1, 1], camgöbeği.",
+    "Sarıyı (kırmızı + yeşil) bununla karıştırır; maviyi kırmızı sanır.",
+    "Karışımda olmayan kırmızı kanalı ortaya çıkarır; toplamda kırmızı 0 + 0 = 0."
+   ],
+   "commonError": "İkincil renklerin hangi iki birincil renkten oluştuğunu karıştırmak.",
+   "check": "Camgöbeğinin tümleri kırmızıdır: [0, 1, 1] + [1, 0, 0] = [1, 1, 1] beyaz; bu, sonucu doğrular."
+  }
+ },
+ {
+  "id": "prizmalar-renkler-q10",
+  "h": "03efc5b4b38dca",
+  "guidance": {
+   "knowledge": [
+    "İdeal beyaz opak yüzey [1, 1, 1]: üzerine gelen her kanalı yansıtır. Kendisi ışık üretmez.",
+    "Yansıyan ışık = gelen ışığın kanalları × yüzeyin yansıttığı kanallar (kanal kanal çarpım)."
+   ],
+   "strategy": "Yüzey yalnız gelen ışığı geri verebildiği için gelen ışık ile yüzey vektörü kanal kanal çarpılır.",
+   "steps": [
+    "Gelen ışık [1, 0, 0], yüzey [1, 1, 1].",
+    "Çarpım: [1·1, 0·1, 0·1] = [1, 0, 0].",
+    "Yansıyan ışık yalnız kırmızıdır; yüzey kırmızı görünür."
+   ],
+   "optionReasons": [
+    "Yüzeyin adını rengi sanır; beyaz yüzey yalnız beyaz ışık altında beyaz görünür.",
+    "Kaynakta olmayan yeşil kanalı ekler; yüzey yeşil üretemez.",
+    "Kaynakta olmayan mavi kanalı ortaya çıkarır.",
+    "Kırmızının tümlerini (camgöbeği) yansıyan ışık sanır; yüzey gelen kırmızıyı soğurmaz, yansıtır.",
+    "Doğru: [1, 0, 0]·[1, 1, 1] = [1, 0, 0], yalnız kırmızı yansır."
+   ],
+   "commonError": "Beyaz yüzeyin her ışıkta beyaz görüneceğini sanmak.",
+   "check": "Karanlık odada kırmızı lambayla beyaz kâğıda bak: kâğıt kırmızı görünür, çünkü göze yalnız kırmızı ulaşır."
+  }
+ },
+ {
+  "id": "su-dalgalari-q1",
+  "h": "03a87f54ce995b",
+  "guidance": {
+   "knowledge": [
+    "Frekans f: bir saniyedeki dalga sayısı; birimi Hz (hertz, 1/s). Sürat v: dalganın saniyede aldığı yol (cm/s).",
+    "Dalga boyu λ: ardışık iki tepe arası uzaklık. Temel bağıntı v = λ·f: her saniye f tane λ uzunluğunda dalga ilerler."
+   ],
+   "strategy": "Sürat ve frekans verilip dalga boyu isteniyor; v = λ·f bağıntısı λ = v/f biçimine getirilir.",
+   "steps": [
+    "λ = v / f.",
+    "λ = (24 cm/s) / (4 1/s).",
+    "Saniyeler sadeleşir: λ = 6 cm."
+   ],
+   "optionReasons": [
+    "Doğru sonucu (6 cm) bulup iki katını alır; dalga boyunu tepe ile çukur arası mesafeyle karıştırır.",
+    "Doğru: λ = 24 / 4 = 6 cm.",
+    "Bölmek yerine çarpar: 24·4 = 96; birimi cm/s² çıkar, uzunluk değildir.",
+    "Frekansın sayısını dalga boyu sanır.",
+    "Oranı ters kurar: f/v = 4/24 ≈ 0,167; birimi 1/cm çıkar, uzunluk değildir."
+   ],
+   "commonError": "v = λ·f'yi λ = v·f diye yanlış çevirmek.",
+   "check": "Birim denetimi: (cm/s) / (1/s) = cm. Yerine koy: 6 cm·4 Hz = 24 cm/s."
+  }
+ },
+ {
+  "id": "su-dalgalari-q2",
+  "h": "04834d6f7c2711",
+  "guidance": {
+   "knowledge": [
+    "Su dalgasının sürati derinliğe bağlıdır; v₁ ve v₂ iki bölgedeki süratlerdir (cm/s).",
+    "Frekans dalgayı üreten kaynakla belirlenir; bölge sınırında değişmez. f sabitken λ = v/f olduğundan λ₂/λ₁ = v₂/v₁."
+   ],
+   "strategy": "Frekans iki bölgede aynı olduğu için dalga boyları süratlerle orantılıdır; oran kurmak f'yi bilmeden sonucu verir.",
+   "steps": [
+    "λ₂/λ₁ = v₂/v₁ = 20 / 40 = 1/2.",
+    "λ₂ = 8 cm·1/2 = 4 cm.",
+    "Denetim: f = v₁/λ₁ = 40/8 = 5 Hz; λ₂ = 20/5 = 4 cm."
+   ],
+   "optionReasons": [
+    "Oranı ters kurar: 8·(40/20) = 16 cm.",
+    "Yarılamayı iki kez uygular: 8 / 2 / 2 = 2 cm.",
+    "İkinci bölgenin süratini dalga boyu sanır.",
+    "Doğru: λ₂ = 8·(20/40) = 4 cm.",
+    "Dalga boyunun da frekans gibi sınırda korunduğunu sanır."
+   ],
+   "commonError": "Sınırda frekans yerine dalga boyunu sabit saymak.",
+   "check": "Frekans iki bölgede aynı mı? 40/8 = 5 Hz ve 20/4 = 5 Hz; evet."
+  }
+ },
+ {
+  "id": "su-dalgalari-q3",
+  "h": "1f2af4d16f3e2c",
+  "guidance": {
+   "knowledge": [
+    "Dik geliş: dalganın ilerleme doğrultusu sınıra diktir; gelme açısı 0°.",
+    "Kaynak değişmediği için frekans sabit kalır; λ = v/f olduğundan sürat azalırsa dalga boyu da azalır."
+   ],
+   "strategy": "Yön ve dalga boyu ayrı kurallarla bulunur: yönü kırılma kuralı (i = 0 → r = 0), dalga boyunu λ = v/f belirler.",
+   "steps": [
+    "i = 0° iken kırılma açısı da 0°; doğrultu sapmaz.",
+    "Frekans kaynağa bağlı, sabit.",
+    "v küçüldüğü için λ = v/f de küçülür: doğrultu sapmaz, dalga boyu azalır."
+   ],
+   "optionReasons": [
+    "Doğru: dik gelişte yön sapmaz; f sabitken v azaldığı için λ azalır.",
+    "Değişeni ters seçer; sınırda frekans değil dalga boyu değişir.",
+    "Eğik gelişteki kırılmayı dik gelişe uygular; dik gelen dalga sapmaz.",
+    "Yön sapmadığı için süratin de aynı kaldığını sanır; soru süratin küçüldüğünü söylüyor.",
+    "Periyot (T = 1/f) frekansa bağlıdır; frekans değişmediği için periyot da değişmez."
+   ],
+   "commonError": "Doğrultunun değişmemesini süratin değişmemesi sanmak.",
+   "check": "Sayıyla dene: f = 5 Hz, v₁ = 20 cm/s → λ₁ = 4 cm; v₂ = 10 cm/s → λ₂ = 2 cm. Yön aynı, dalga boyu yarıya indi."
+  }
+ },
+ {
+  "id": "su-dalgalari-q4",
+  "h": "0c2d672b964094",
+  "guidance": {
+   "knowledge": [
+    "Normal: engel yüzeyine dik çizilen doğru. Gelme ve yansıma açıları ilerleme ışını ile normal arasında ölçülür.",
+    "Yansıma kanunu: gelme açısı = yansıma açısı. Yüzey ile normal arasında 90° olduğundan normal açısı = 90° − yüzey açısı."
+   ],
+   "strategy": "Verilen açı engel yüzeyinden ölçülmüş; normalden ölçülen açıya çevirip yansıma kanununu uygulamak gerekir.",
+   "steps": [
+    "Işının yüzeyle açısı 40°.",
+    "Normalle açısı: i = 90° − 40° = 50°.",
+    "Yansıma açısı gelme açısına eşit: r = 50°."
+   ],
+   "optionReasons": [
+    "Verilen açıyı yarılar: 40 / 2 = 20°; yarılamanın dayanağı yoktur.",
+    "Normalin kendisinin yüzeyle yaptığı açıyı (90°) cevap sanır.",
+    "Doğru: i = 90° − 40° = 50°, r = i = 50°.",
+    "Yüzeyle ölçülen açıyı normalden ölçülmüş sanır.",
+    "Gelen ve yansıyan ışın arasındaki açıyı bulur: 180° − 2·50° = 80°; bu yansıma açısı değildir."
+   ],
+   "commonError": "Açıyı yüzeyden ölçüp normale çevirmeyi unutmak.",
+   "check": "Yansıyan ışın da yüzeyle 40° yapar: 40° + 50° = 90°; gelen ve yansıyan simetrik."
+  }
+ },
+ {
+  "id": "su-dalgalari-q5",
+  "h": "1f8e387944fcdd",
+  "guidance": {
+   "knowledge": [
+    "Yansıma: dalganın engele çarpıp aynı ortama geri dönmesi.",
+    "Aynı ortamda sürat v aynı kalır; frekans f ve periyot T = 1/f kaynağa bağlıdır; λ = v/f de bu yüzden değişmez."
+   ],
+   "strategy": "Dalga yansımada ortam değiştirmediği için süratin, frekansın, periyodun ve dalga boyunun neye bağlı olduğu tek tek denetlenir.",
+   "steps": [
+    "Ortam (derinlik) aynı: sürat aynı.",
+    "Kaynak aynı: f ve T aynı; λ = v/f de aynı.",
+    "Değişen tek şey dalganın ilerleme yönüdür."
+   ],
+   "optionReasons": [
+    "Frekansı yansımada değişen bir büyüklük sanır; frekans kaynakla belirlenir.",
+    "Periyodun da frekansla birlikte sabit kaldığını görmez; T = 1/f.",
+    "Dalga boyunun yansımada kısaldığını sanır; aynı v ve f için λ = v/f aynıdır.",
+    "Sürati yön ile karıştırır; süratin büyüklüğü ortama bağlıdır, ortam aynı.",
+    "Doğru: yansıma yalnız ilerleme yönünü değiştirir."
+   ],
+   "commonError": "Yansımada dalga boyunun ya da süratin değiştiğini sanmak.",
+   "check": "Dalga leğeninde yansıyan dalgaların tepe aralıkları gelen dalgalarınkiyle aynı görünür; yalnız doğrultu değişir."
+  }
+ },
+ {
+  "id": "su-dalgalari-q6",
+  "h": "1b931499d55176",
+  "guidance": {
+   "knowledge": [
+    "Tepe: suyun en yükseğe çıktığı nokta; çukur: en alçağa indiği nokta.",
+    "Dalga boyu λ: aynı evredeki ardışık iki nokta arası uzaklık, örneğin iki ardışık tepe. Tepe ile bitişik çukur arası λ/2'dir."
+   ],
+   "strategy": "Dalga boyunun tanımı aynı evredeki ardışık noktalar olduğu için tepe ile sonraki tepe arası doğrudan λ'dır; tepe ile çukur değeri denetim için kullanılır.",
+   "steps": [
+    "Ardışık iki tepe arası 12 cm, yani λ = 12 cm.",
+    "Denetim: tepe ile çukur λ/2 = 6 cm olmalı.",
+    "Verilen 6 cm ile uyuşuyor: λ = 12 cm."
+   ],
+   "optionReasons": [
+    "İki uzaklığı toplar: 12 + 6 = 18 cm.",
+    "Doğru: ardışık tepeler arası λ = 12 cm.",
+    "Tepe ile çukur arasını dalga boyu sanır; bu λ/2'dir.",
+    "Ardışık tepe arasını yarım dalga sanıp ikiyle çarpar: 2·12 = 24 cm.",
+    "Tepe ile çukur arasını bir kez daha yarılar: 6 / 2 = 3 cm."
+   ],
+   "commonError": "Tepe ile çukur arasını tam dalga boyu sanmak.",
+   "check": "λ = 12 cm ise tepe, çukur, tepe dizisinde aralıklar 6 cm ve 6 cm; toplam 12 cm."
+  }
+ },
+ {
+  "id": "su-dalgalari-q7",
+  "h": "115ad39c20a437",
+  "guidance": {
+   "knowledge": [
+    "Kırınım: dalganın dar bir açıklıktan geçince açıklığın arkasında yanlara doğru yayılması.",
+    "Kırınımın belirginliği açıklık genişliği / dalga boyu oranına bağlıdır; açıklık dalga boyuna yakın ya da ondan küçükse yayılma belirgindir."
+   ],
+   "strategy": "Ortam ve frekans sabit olduğu için dalga boyu sabittir; değişen tek şey açıklık genişliği olduğundan açıklık/λ oranı karşılaştırılır.",
+   "steps": [
+    "Önce: açıklık / λ = 10λ / λ = 10 (geniş açıklık, zayıf kırınım).",
+    "Sonra: açıklık / λ = (λ/2) / λ = 1/2 (dar açıklık).",
+    "Oran küçüldüğü için kırınım daha belirginleşir."
+   ],
+   "optionReasons": [
+    "Sürat ortama bağlıdır; ortam aynı kaldığı için açıklık sürati sıfırlayamaz.",
+    "Etkiyi ters düşünür; açıklık daraldıkça kırınım azalmaz, artar.",
+    "Periyot kaynağın titreşimine bağlıdır; açıklık kaynağı etkilemez.",
+    "Doğru: açıklık/λ oranı 10'dan 1/2'ye iner, kırınım belirginleşir.",
+    "Frekans kaynakla belirlenir; açıklık genişliği onu değiştirmez."
+   ],
+   "commonError": "Dar açıklığın dalgayı daha çok engelleyip kırınımı azalttığını sanmak.",
+   "check": "Ses dalgaları (dalga boyu metrelerce) kapı aralığından kolayca yayılır, ışık (dalga boyu çok küçük) yayılmaz; kırınım açıklık/λ ile belirlenir."
+  }
+ },
+ {
+  "id": "su-dalgalari-q8",
+  "h": "13420dd4f88234",
+  "guidance": {
+   "knowledge": [
+    "Stroboskop: üzerinde yarıklar olan dönen disk; her yarık geçtiğinde dalgalara kısa bir an bakılır.",
+    "Dalga her bakışta tam bir periyot ilerlemişse hep aynı yerde duruyormuş gibi görünür; bu durumda dalga frekansı = saniyedeki bakış sayısı."
+   ],
+   "strategy": "Bir saniyedeki bakış sayısı yarık sayısı ile tur sayısının çarpımıdır; koşul her bakışta tek periyot dediği için bu sayı frekansa eşittir.",
+   "steps": [
+    "Bir turda 6 bakış; saniyede 3 tur.",
+    "Saniyedeki bakış sayısı: 6·3 = 18 bakış/s.",
+    "Her bakış arasında tam 1 periyot geçtiğine göre saniyede 18 periyot: f = 18 Hz."
+   ],
+   "optionReasons": [
+    "Doğru: 6 yarık·3 tur/s = 18 bakış/s ve her bakışta bir periyot; f = 18 Hz.",
+    "Çarpmak yerine böler: 6 / 3 = 2.",
+    "Yarık sayısını unutup yalnız tur sayısını alır.",
+    "Tur sayısını unutup yalnız yarık sayısını alır.",
+    "Ters böler: 3 / 6 = 0,5."
+   ],
+   "commonError": "Yarık sayısı ile dönüş frekansından yalnız birini kullanmak.",
+   "check": "Bakışlar arası süre 1/18 s; dalganın periyodu da 1/18 s ise her bakışta aynı görüntü oluşur, koşul sağlanır."
+  }
+ },
+ {
+  "id": "su-dalgalari-q9",
+  "h": "1f0993e312bb90",
+  "guidance": {
+   "knowledge": [
+    "Kırılma: dalganın derinliği farklı bölgeye geçerken yön değiştirmesi. i gelme, r kırılma açısıdır; ikisi de normalden ölçülür.",
+    "Dalgalar için Snell bağıntısı: sin i / sin r = v₁ / v₂, yani v₂/v₁ = sin r / sin i. Açısı büyük olan bölgede sürat büyüktür."
+   ],
+   "strategy": "Açıların sinüsleri verildiği için sürat oranı doğrudan sinüs oranından bulunur.",
+   "steps": [
+    "v₂/v₁ = sin r / sin i = sin 60° / sin 30°.",
+    "= (√3/2) / (1/2).",
+    "İkiler sadeleşir: v₂/v₁ = √3."
+   ],
+   "optionReasons": [
+    "Oranı hem ters kurar hem karesini alır: (1/√3)² = 1/3.",
+    "Kırılmayı yok sayıp süratlerin eşit olduğunu düşünür; açılar farklıysa süratler de farklıdır.",
+    "Doğru: (√3/2) / (1/2) = √3.",
+    "Oranı ters kurar: sin i / sin r = 1/√3.",
+    "Sinüs oranının karesini alır: (√3)² = 3."
+   ],
+   "commonError": "v₂/v₁ yerine v₁/v₂ oranını yazmak.",
+   "check": "Kırılma açısı (60°) gelme açısından (30°) büyük, yani dalga normalden uzaklaşıyor; bu daha hızlı (sığ değil, derin) bölgeye geçiş demektir, oran 1'den büyük olmalı."
+  }
+ },
+ {
+  "id": "su-dalgalari-q10",
+  "h": "1909a6936b2be1",
+  "guidance": {
+   "knowledge": [
+    "Noktasal kaynak: bir noktadan çıkan, halka (dairesel) dalgalar üreten kaynak. Dalga cephesi: aynı anda tepe olan noktaları birleştiren eğri.",
+    "Düz engelde yansıma düz aynadaki gibi simetriktir; yansıyan cepheler engelin arkasındaki bir noktadan çıkıyormuş gibi görünür."
+   ],
+   "strategy": "Düz engel düz ayna gibi davrandığı için düz aynadaki görüntü kuralı (görüntü, cismin aynaya göre simetriğinde) kullanılır.",
+   "steps": [
+    "Düz engel, düz ayna gibi her noktada gelme açısı = yansıma açısı kuralını uygular.",
+    "Bu kural, yansıyan cephelerin engelin arkasında kaynakla aynı uzaklıktaki bir noktadan çıkıyormuş gibi olmasını sağlar.",
+    "Sanal merkez, kaynağın engele göre simetriğindedir."
+   ],
+   "optionReasons": [
+    "Düz engeli çukur engelle karıştırır; düz engelin odak noktası yoktur.",
+    "Merkezi kaynağın kendisi sanır; yansıyan cepheler kaynaktan değil engelin arkasından yayılıyormuş gibidir.",
+    "Derinliği sanal merkezle ilişkilendirir; merkez geometriyle belirlenir, derinlikle değil.",
+    "Dalga boyunu konum ölçüsü olarak kullanır; sanal merkezin uzaklığı kaynağın engele uzaklığına eşittir.",
+    "Doğru: düz engel düz ayna gibi davranır, sanal merkez kaynağın simetriğindedir."
+   ],
+   "commonError": "Düz engeli çukur ayna gibi düşünüp yansıyan dalgaların bir odakta toplandığını sanmak.",
+   "check": "Kaynak engelden 5 cm uzaksa yansıyan halkaların merkezi engelin arkasında 5 cm'dedir; tıpkı düz aynada görüntünün cisim kadar arkada olması gibi."
+  }
+ },
+ {
+  "id": "ses-deprem-dalgalari-q1",
+  "h": "188de926d2e143",
+  "guidance": {
+   "knowledge": [
+    "Yankı: sesin bir engele çarpıp geri dönmesi. Ölçülen süre t, sesin duvara gidip geri gelmesi için geçen toplam süredir.",
+    "Sabit süratle alınan yol: yol = sürat × süre (m = m/s × s). d, kaynak ile duvar arası tek yön uzaklıktır."
+   ],
+   "strategy": "Ses duvara gidip döndüğü için alınan toplam yol 2d'dir; 2d = v·t yazılıp d bulunur.",
+   "steps": [
+    "Toplam yol: v·t = 340 m/s·0,4 s = 136 m.",
+    "Bu yol gidiş ve dönüşü içerir: 2d = 136 m.",
+    "d = 136 m / 2 = 68 m."
+   ],
+   "optionReasons": [
+    "Süreyi kullanmadan sürati ikiye böler: 340 / 2 = 170.",
+    "Doğru: d = 340·0,4 / 2 = 68 m.",
+    "Toplam yolu (340·0,4 = 136 m) duvar uzaklığı sanır; ikiye bölmeyi unutur.",
+    "İkiye bölmeyi iki kez yapar: 68 / 2 = 34 m.",
+    "Çarpmak yerine böler: 340 / 0,4 = 850; birimi m/s² olur, uzaklık değildir."
+   ],
+   "commonError": "Yankı süresinin gidiş ve dönüşü kapsadığını unutup ikiye bölmemek.",
+   "check": "Ses 68 m'yi 68/340 = 0,2 s'de gider, 0,2 s'de döner; toplam 0,4 s, verilenle aynı."
+  }
+ },
+ {
+  "id": "ses-deprem-dalgalari-q2",
+  "h": "1fdf1bbbbbac95",
+  "guidance": {
+   "knowledge": [
+    "Ses sürati v (m/s): sesin havada saniyede aldığı yol. Frekans f (Hz): kaynağın saniyedeki titreşim sayısı.",
+    "Dalga boyu λ (m): ardışık iki sıkışma arası uzaklık. v = λ·f, buradan λ = v/f."
+   ],
+   "strategy": "Sürat ve frekans verilip dalga boyu isteniyor; temel dalga bağıntısı λ = v/f doğrudan uygulanır.",
+   "steps": [
+    "λ = v / f.",
+    "λ = (330 m/s) / (110 1/s).",
+    "λ = 3 m."
+   ],
+   "optionReasons": [
+    "Bölmek yerine çarpar: 330·110 = 36300.",
+    "Frekansın sayısını dalga boyu sanır.",
+    "Bölmede basamak kaydırır: 330 / 10 = 33.",
+    "Doğru: λ = 330 / 110 = 3 m.",
+    "Oranı ters kurar: 110 / 330 ≈ 0,333; birimi 1/m olur."
+   ],
+   "commonError": "λ = v/f yerine λ = v·f ya da f/v yazmak.",
+   "check": "Yerine koy: 3 m·110 Hz = 330 m/s. Birim: (m/s) / (1/s) = m."
+  }
+ },
+ {
+  "id": "ses-deprem-dalgalari-q3",
+  "h": "0f78259f274dfc",
+  "guidance": {
+   "knowledge": [
+    "Ses yüksekliği (tizlik/peslik): frekansla belirlenir; frekans artarsa ses tizleşir. Periyot T = 1/f bir titreşimin süresidir.",
+    "Ses sürati yalnız ortama ve sıcaklığa bağlıdır. v = λ·f; v sabitken f artarsa λ azalır. Gürlük ise genliğe (şiddete) bağlıdır."
+   ],
+   "strategy": "Ortam ve sıcaklık sabit olduğu için sürat sabittir; v = λ·f ve T = 1/f ile her büyüklüğün değişimi bulunur.",
+   "steps": [
+    "v sabit; f iki katına çıkıyor (2f).",
+    "λ = v/f → λ' = v/(2f) = λ/2; dalga boyu yarıya iner.",
+    "Frekans arttığı için ses tizleşir; T' = 1/(2f) = T/2."
+   ],
+   "optionReasons": [
+    "Doğru: f iki kat olunca ses tizleşir ve λ = v/f yarıya iner.",
+    "Süratin frekansla değiştiğini sanır; sürat ortama bağlıdır, ortam aynı.",
+    "Orantıyı ters kurar; v sabitken f artarsa λ azalır.",
+    "Periyodu frekansla doğru orantılı sanır; T = 1/f olduğundan yarıya iner.",
+    "Frekansı gürlükle karıştırır; gürlük genliğe bağlıdır, genlik hakkında bilgi yok."
+   ],
+   "commonError": "Tizliği gürlükle karıştırmak.",
+   "check": "Sayıyla dene: v = 340 m/s, f = 170 Hz → λ = 2 m; f = 340 Hz → λ = 1 m. Dalga boyu yarıya indi."
+  }
+ },
+ {
+  "id": "ses-deprem-dalgalari-q4",
+  "h": "01e62170f36777",
+  "guidance": {
+   "knowledge": [
+    "Genlik A: titreşen noktanın denge konumundan en çok uzaklaşması. Şiddet I: birim alandan birim zamanda geçen ses enerjisi (W/m²).",
+    "Verilen kabul I ∝ A²: şiddet genliğin karesiyle orantılıdır; genlik k kat olursa şiddet k² kat olur."
+   ],
+   "strategy": "Orantı verildiği için yeni ve eski değerlerin oranı kurulur; genlik oranının karesi şiddet oranını verir.",
+   "steps": [
+    "A₂/A₁ = 3.",
+    "I₂/I₁ = (A₂/A₁)² = 3².",
+    "I₂/I₁ = 3² = 9; şiddet 9 katına çıkar."
+   ],
+   "optionReasons": [
+    "Hem kareyi atlar hem oranı ters kurar: 1/3.",
+    "Kareyi alır ama oranı ters kurar: (1/3)² = 1/9.",
+    "Doğru: (A₂/A₁)² = 3² = 9.",
+    "Karesini almayı unutur: oran 3 kalır.",
+    "Kare almak yerine ikiyle çarpar: 2·3 = 6."
+   ],
+   "commonError": "I ∝ A² ilişkisinde kare almayı unutmak.",
+   "check": "Genlik 2 kat olsaydı şiddet 4 kat olurdu; aynı kuralla 3 kat genlik 9 kat şiddet verir."
+  }
+ },
+ {
+  "id": "ses-deprem-dalgalari-q5",
+  "h": "1b1a6cb0b10f60",
+  "guidance": {
+   "knowledge": [
+    "Şiddet düzeyi L: sesin şiddetini bir referansa göre logaritmik ölçen büyüklük; birimi dB (desibel). Bağıntı: ΔL = 10·log₁₀(I₂/I₁).",
+    "log₁₀ x: 10'un kaçıncı kuvvetinin x ettiği; log₁₀ 10 = 1, log₁₀ 100 = 2."
+   ],
+   "strategy": "Şiddetler oranı verildiği için düzey farkı bağıntısı ΔL = 10·log₁₀(I₂/I₁) doğrudan uygulanır.",
+   "steps": [
+    "I₂/I₁ = 10.",
+    "ΔL = 10·log₁₀ 10 = 10·1.",
+    "ΔL = 10 dB."
+   ],
+   "optionReasons": [
+    "log₁₀ 10 = 1 değerini bulur ama 10 ile çarpmayı unutur.",
+    "Logaritma almadan oranı 10 ile çarpar: 10·10 = 100.",
+    "dB düzey artışı yerine şiddet birimi (W/m²) yazar; şiddetin kendisi verilmedi.",
+    "Referans aynı diye düzeyin değişmediğini sanır; şiddet arttığı için düzey de artar.",
+    "Doğru: ΔL = 10·log₁₀ 10 = 10 dB."
+   ],
+   "commonError": "Desibeli şiddetle doğru orantılı sanıp 10 kat şiddete 10 kat düzey demek.",
+   "check": "Aynı kuralla 100 kat şiddet 10·log₁₀ 100 = 20 dB artış verir; her 10 kat 10 dB ekler."
+  }
+ },
+ {
+  "id": "ses-deprem-dalgalari-q6",
+  "h": "02b131fd898cb0",
+  "guidance": {
+   "knowledge": [
+    "Tını: aynı yükseklik ve gürlükteki seslerin farklı kaynaklardan geldiğini ayırt etmemizi sağlayan özellik. Kaynağın ürettiği üst harmoniklere (temel frekansın katları) ve dalga biçimine bağlıdır.",
+    "Yükseklik frekansla, gürlük şiddetle (genlikle) ilgilidir."
+   ],
+   "strategy": "Frekans ve gürlük aynı verildiği için bu iki özellik ayırt edici olamaz; geriye kalan ses özelliği aranır.",
+   "steps": [
+    "Aynı temel frekans: yükseklik aynı.",
+    "Benzer gürlük: şiddet benzer.",
+    "Yine de ayırt ediliyorsa fark dalga biçimindedir: bu tınıdır."
+   ],
+   "optionReasons": [
+    "Uzaklığın sıfır olması bir ses özelliği değildir; ayırt etme her uzaklıkta mümkündür.",
+    "Doğru: aynı nota ve gürlükte kaynakları ayıran özellik tınıdır.",
+    "Sürati ayırt edici sanır; ses sürati ortama bağlıdır, aynı havada iki çalgının sesi aynı süratle gider.",
+    "Ses boşlukta yayılamaz; yayılma ortamı ayırt etmeyi açıklamaz.",
+    "Sesin yönüyle ilgili bir özellik değildir; iki çalgı aynı yerden çalsa da ayırt edilir."
+   ],
+   "commonError": "Tınıyı frekansla (yükseklikle) karıştırmak.",
+   "check": "Aynı notayı insan sesi ve flüt söylediğinde de kim olduğunu ayırt edersin; frekans aynı, tını farklıdır."
+  }
+ },
+ {
+  "id": "ses-deprem-dalgalari-q7",
+  "h": "1ff047775a1b4e",
+  "guidance": {
+   "knowledge": [
+    "P dalgası: deprem odağından ilk gelen hızlı (boyuna) dalga. S dalgası: daha yavaş (enine) dalga.",
+    "Sabit süratle yol alma süresi t = d / v (km / (km/s) = s). Varış farkı, yavaş dalganın süresinden hızlı dalganın süresinin çıkarılmasıdır."
+   ],
+   "strategy": "İki dalga aynı yolu farklı süratlerle aldığı için her birinin süresi ayrı hesaplanıp farkı alınır.",
+   "steps": [
+    "t_P = 160 km / 8 km/s = 20 s.",
+    "t_S = 160 km / 4 km/s = 40 s.",
+    "Fark: 40 s − 20 s = 20 s."
+   ],
+   "optionReasons": [
+    "Hızlar farkını (4 km/s) bulup S süresine böler: 40 / 4 = 10.",
+    "Yolun sayısını süre sanır; km ile s farklı birimlerdir.",
+    "Süratler farkını (8 − 4 = 4) süre sanır.",
+    "Doğru: 40 s − 20 s = 20 s.",
+    "Yolu süratler farkına böler: 160 / (8 − 4) = 40; bu da S'nin süresidir, fark değildir."
+   ],
+   "commonError": "Süreleri ayrı ayrı bulmak yerine yolu süratler farkına bölmek.",
+   "check": "S dalgası, P'den 20 s sonra 4 km/s ile 20 s daha yol alır: P geldiğinde S 4·20 = 80 km'deydi, kalan 80 km'yi 20 s'de bitirir."
+  }
+ },
+ {
+  "id": "ses-deprem-dalgalari-q8",
+  "h": "104dd201c2e761",
+  "guidance": {
+   "knowledge": [
+    "Deprem büyüklüğü: depremin kaynağında açığa çıkan enerjiyle ilgili tek bir değer; ölçekle (örneğin Richter) verilir.",
+    "Deprem şiddeti: depremin belli bir yerde insanlara, yapılara ve zemine etkisi; uzaklık, zemin ve yapı kalitesine göre yerden yere değişir."
+   ],
+   "strategy": "İki kavramı ayırmak yeter: büyüklük kaynağa ait tek değerdir, şiddet gözlem noktasına aittir; ifadeler bu ayrıma göre sınanır.",
+   "steps": [
+    "Büyüklük depremin kaynağına aittir; bir deprem için tek değerdir.",
+    "Şiddet her yerde gözlenen etkidir; merkeze uzaklık, zemin türü ve yapı kalitesiyle değişir.",
+    "Bu yüzden aynı depremin farklı yerlerdeki şiddeti farklı olabilir."
+   ],
+   "optionReasons": [
+    "Doğru: şiddet yerel etkidir; uzaklık, zemin ve yapıya göre değişir.",
+    "Şiddeti büyüklük gibi tek değer sanır; uzak yerde etki daha az hissedilir.",
+    "Hasarın yalnız büyüklüğe bağlı olduğunu sanır; zemin ve yapı kalitesi de belirleyicidir.",
+    "Ölçeğe yapay bir üst sınır koyar; Richter ölçeği 9 ile sınırlı tanımlanmamıştır.",
+    "İki ayrı kavramı aynı sayar; biri kaynağa, diğeri gözlem yerine aittir."
+   ],
+   "commonError": "Büyüklük ile şiddeti aynı kavram saymak.",
+   "check": "Aynı depremi merkezde güçlü, yüzlerce kilometre ötede hafif hissederiz; büyüklük tek, şiddet farklı."
+  }
+ },
+ {
+  "id": "ses-deprem-dalgalari-q9",
+  "h": "0f1a1ea217fe64",
+  "guidance": {
+   "knowledge": [
+    "Boyuna dalga (P, ses): ortamın tanecikleri dalga yönünde ileri geri titreşir, sıkışma ve seyrelme oluşur; katı, sıvı ve gazda yayılır.",
+    "Kayma (enine) dalga (S): tanecikler dalga yönüne dik titreşir; ortamın kaymaya direnmesi gerekir. Olağan sıvılar kaymaya direnmez, S dalgasını iletmez."
+   ],
+   "strategy": "Soru kayma türünde olan ve sıvıda yayılmayan dalgayı soruyor; şıklar boyuna ve enine diye ayrılır.",
+   "steps": [
+    "Ultrases, ses ve P dalgası sıkışma (boyuna) dalgalarıdır; sıvıda yayılır.",
+    "S dalgası kayma türüdür.",
+    "Sıvılar kaymaya direnmediği için S dalgası olağan sıvılarda yayılmaz."
+   ],
+   "optionReasons": [
+    "Ultrases yüksek frekanslı ses dalgasıdır, yani boyunadır; suda yayılır.",
+    "Basınç dalgası boyunadır; sıkışma sıvıda da olur, yayılır.",
+    "Doğru: S dalgası kayma türüdür ve sıvılarda yayılmaz.",
+    "P dalgası boyunadır; katı, sıvı ve gazda yayılır.",
+    "Havadaki ses boyuna bir basınç dalgasıdır; kayma dalgası değildir."
+   ],
+   "commonError": "S dalgasını da P gibi her ortamda yayılır sanmak.",
+   "check": "Sıvı sıkıştırılmaya direnir ama katmanlarının birbiri üzerinde kaymasına direnmez; S dalgası bu kayma direncine muhtaç olduğu için sıvıda ilerleyemez."
+  }
+ },
+ {
+  "id": "ses-deprem-dalgalari-q10",
+  "h": "15a45a5e1d8928",
+  "guidance": {
+   "knowledge": [
+    "Eş yönsüz (noktasal) kaynak: sesi her yöne eşit yayar. Güç P (W) r yarıçaplı kürenin yüzeyine dağılır; kürenin alanı 4πr².",
+    "Şiddet I = P / (4πr²): birim alana düşen güç (W/m²). Bu yüzden I ∝ 1/r²; uzaklık k kat olursa şiddet 1/k² kat olur."
+   ],
+   "strategy": "Güç aynı kalıp daha büyük küre alanına dağıldığı için ters kare kuralı kullanılır; oranla 4π ve P sadeleşir.",
+   "steps": [
+    "Uzaklık oranı: r₂/r₁ = 6 / 2 = 3.",
+    "I₂/I₁ = (r₁/r₂)² = (2/6)² = (1/3)².",
+    "I₂/I₁ = 1/9."
+   ],
+   "optionReasons": [
+    "Kare almayı unutur: 2/6 = 1/3.",
+    "Hem kareyi atlar hem oranı ters kurar: 6/2 = 3.",
+    "Kareyi alır ama oranı ters kurar: (6/2)² = 9; şiddet uzaklaştıkça artmaz.",
+    "Ses kaynağı aynı diye şiddetin değişmediğini sanır; güç daha büyük alana yayılır.",
+    "Doğru: I ∝ 1/r²; (2/6)² = 1/9."
+   ],
+   "commonError": "Ters kare kuralında kare almayı unutmak.",
+   "check": "Küre alanları: 4π·2² = 16π m² ve 4π·6² = 144π m²; alan 9 kat, aynı güç için şiddet 1/9."
+  }
+ },
+ {
+  "id": "isik-bilgisi-q1",
+  "h": "1753b2b73048a9",
+  "guidance": {
+   "knowledge": [
+    "Işık şiddeti I: kaynağın bir yöne yaydığı ışık miktarı; birimi cd (kandela). Aydınlanma E: bir yüzeye düşen ışık; birimi lx (lüks).",
+    "Noktasal kaynaktan r uzaklıktaki, ışığa dik küçük yüzeyde E = I / r² (r metre cinsinden)."
+   ],
+   "strategy": "Yüzey ışığa dik ve kaynak noktasal olduğu için ters kare bağıntısı E = I/r² doğrudan kullanılır.",
+   "steps": [
+    "Verilen: I = 180 cd, r = 2 m.",
+    "r² = 2² = 4 m².",
+    "E = 180 / 4 = 45 lx."
+   ],
+   "optionReasons": [
+    "Işık şiddetini aydınlanma sanır; uzaklığın etkisini yok sayar.",
+    "Doğru: E = 180 / 2² = 45 lx.",
+    "Uzaklığın karesi yerine kendisine böler: 180 / 2 = 90 lx.",
+    "Bölmek yerine uzaklıkla çarpar: 180·2 = 360.",
+    "Bölmek yerine uzaklığın karesiyle çarpar: 180·4 = 720."
+   ],
+   "commonError": "Ters kare kuralında uzaklığın karesini almayı unutmak.",
+   "check": "Uzaklık 1 m olsaydı E = 180 lx olurdu; 2 katı uzaklıkta 1/4'ü, yani 45 lx beklenir."
+  }
+ },
+ {
+  "id": "isik-bilgisi-q2",
+  "h": "0ed4e60126a2e9",
+  "guidance": {
+   "knowledge": [
+    "Aydınlanma E (lx): yüzeye düşen ışık miktarı. Noktasal kaynakta E = I·cos θ / r²; I ışık şiddeti, r uzaklık, θ ışının yüzey normaliyle açısı.",
+    "I ve θ değişmiyorsa E yalnız 1/r² ile değişir: uzaklık k kat olursa E, 1/k² kat olur."
+   ],
+   "strategy": "Işık şiddeti ve açı sabit olduğu için oran kurulunca bunlar sadeleşir; geriye ters kare oranı kalır.",
+   "steps": [
+    "E₂/E₁ = (r₁/r₂)².",
+    "r₁/r₂ = 3/9 = 1/3.",
+    "E₂/E₁ = (1/3)² = 1/9."
+   ],
+   "optionReasons": [
+    "Hem kareyi atlar hem oranı ters kurar: 9/3 = 3.",
+    "Kareyi alır ama oranı ters kurar: (9/3)² = 9; uzaklaşınca aydınlanma artmaz.",
+    "Kaynak aynı diye aydınlanmanın değişmediğini sanır.",
+    "Doğru: (3/9)² = 1/9.",
+    "Kare almayı unutur: 3/9 = 1/3."
+   ],
+   "commonError": "Uzaklık oranını kare almadan kullanmak.",
+   "check": "Sayıyla dene: I = 90 cd için E₁ = 90/9 = 10 lx, E₂ = 90/81 = 10/9 lx; oran 1/9."
+  }
+ },
+ {
+  "id": "isik-bilgisi-q3",
+  "h": "0898aae341601e",
+  "guidance": {
+   "knowledge": [
+    "Işık akısı Φ: kaynaktan çıkan toplam ışık miktarı; birimi lm (lümen).",
+    "Ortalama aydınlanma E = Φ / A: yüzeye düşen akının alana bölümü. 1 lx = 1 lm/m²."
+   ],
+   "strategy": "Akı ve alan verildiği, dağılım da düzgün olduğu için aydınlanmanın tanımı E = Φ/A doğrudan uygulanır.",
+   "steps": [
+    "E = Φ / A.",
+    "E = 240 lm / 12 m².",
+    "E = 20 lm/m² = 20 lx."
+   ],
+   "optionReasons": [
+    "Doğru: E = 240 / 12 = 20 lx.",
+    "Bölmek yerine çarpar: 240·12 = 2880.",
+    "Bölmede basamak kaydırır: 240 / 120 = 2.",
+    "Akıyı aydınlanma sanır; alanla bölmeyi unutur.",
+    "Alanın sayısını aydınlanma sanır."
+   ],
+   "commonError": "Akı ile aydınlanmayı karıştırıp alana bölmemek.",
+   "check": "Birim denetimi: lm / m² = lx. Ters işlem: 20 lx·12 m² = 240 lm."
+  }
+ },
+ {
+  "id": "isik-bilgisi-q4",
+  "h": "17e9054fbf64fe",
+  "guidance": {
+   "knowledge": [
+    "Normal: yüzeye dik çizilen doğru. Bu modelde θ ışınla normal arasındaki açıdır.",
+    "cos θ: θ = 0° iken 1 (en büyük), θ = 90° iken 0'dır. Işık yüzeye dik düşerken aydınlanma en büyük olmalıdır."
+   ],
+   "strategy": "Formüldeki cos θ dik düşmede en büyük değeri vermeli; hangi açı seçiminin bunu sağladığına bakılır.",
+   "steps": [
+    "Dik düşmede ışın normal boyunca gelir; ışınla normal arası 0°.",
+    "cos 0° = 1, yani E = I/r²; en büyük aydınlanma.",
+    "Bu yüzden θ, ışınla yüzey normali arasındaki açıdır."
+   ],
+   "optionReasons": [
+    "Alan ve yarıçap arasında açı tanımlanmaz; bunlar uzunluk ve alan büyüklükleridir.",
+    "θ sabit değildir; ışının geliş yönüne göre değişir.",
+    "Doğru: dik düşmede θ = 0° ve cos 0° = 1 en büyük aydınlanmayı verir.",
+    "Işınla yüzey arasındaki açıyı alır; dik düşmede bu açı 90° olur ve cos 90° = 0 sıfır aydınlanma verirdi.",
+    "Tek kaynaklı formülde ikinci kaynak yoktur; açı ışın ile yüzeye ilişkindir."
+   ],
+   "commonError": "Açıyı yüzeyden ölçüp sin ile cos'u karıştırmak.",
+   "check": "Sınır durumu: ışık yüzeyi yalayarak gelirse (yüzeye paralel) aydınlanma sıfır olmalı; ışınla normal arası 90°, cos 90° = 0, uyuyor."
+  }
+ },
+ {
+  "id": "isik-bilgisi-q5",
+  "h": "13a1ec9fd5df9d",
+  "guidance": {
+   "knowledge": [
+    "Aydınlanma E = I·cos θ / r²: I ışık şiddeti (cd), r uzaklık (m), θ ışının yüzey normaliyle yaptığı açı. Birim lx.",
+    "Eğik düşmede yüzeye düşen ışık azalır; cos θ bu azalmayı gösterir (cos 60° = 0,5)."
+   ],
+   "strategy": "Kaynak noktasal ve ışın eğik geldiği için açılı aydınlanma formülü kullanılır; önce dik değeri, sonra cos θ çarpanı.",
+   "steps": [
+    "Dik düşseydi: I / r² = 100 / 2² = 100 / 4 = 25 lx.",
+    "Eğik geliş çarpanı: cos 60° = 0,5.",
+    "E = 25·0,5 = 12,5 lx."
+   ],
+   "optionReasons": [
+    "cos θ çarpanını unutup dik düşme değerini yazar: 100 / 4 = 25.",
+    "Uzaklığın karesine bölmeyi unutur: 100·0,5 = 50.",
+    "Işık şiddetini aydınlanma sanır; uzaklık ve açıyı yok sayar.",
+    "Bölmek yerine uzaklıkla çarpar: 100·2 = 200.",
+    "Doğru: E = 100·0,5 / 4 = 12,5 lx."
+   ],
+   "commonError": "Eğik düşmede cos θ çarpanını unutmak.",
+   "check": "Eğik gelen ışık aynı yerdeki dik değerden az olmalı: 12,5 < 25 lx ve tam yarısı, cos 60° = 0,5 ile uyumlu."
+  }
+ },
+ {
+  "id": "isik-bilgisi-q6",
+  "h": "1bf4eaf026203c",
+  "guidance": {
+   "knowledge": [
+    "Işık şiddeti I: kaynağın belli bir yöne yaydığı ışığın ölçüsü; SI (Uluslararası Birim Sistemi) temel birimi kandela (cd).",
+    "Akı Φ lümen (lm), aydınlanma E lüks (lx) ile ölçülür; bunlar farklı büyüklüklerdir."
+   ],
+   "strategy": "Üç ışık büyüklüğünün (şiddet, akı, aydınlanma) birimlerini eşleştirip şiddete ait olanı seçmek yeterlidir.",
+   "steps": [
+    "Kaynağın kendisine ait yönsel büyüklük: ışık şiddeti I.",
+    "Toplam ışık: akı (lm); yüzeye düşen ışık: aydınlanma (lx).",
+    "Işık şiddetinin birimi kandeladır."
+   ],
+   "optionReasons": [
+    "Metre uzunluk birimidir; ışık şiddetiyle ilgisi yoktur.",
+    "Doğru: ışık şiddetinin SI birimi kandeladır (cd).",
+    "Lüks aydınlanmanın birimidir; yüzeye düşen ışığı ölçer.",
+    "Lümen akının birimidir; kaynaktan çıkan toplam ışığı ölçer.",
+    "Joule enerji birimidir; ışık şiddeti enerji değil, yönsel ışık ölçüsüdür."
+   ],
+   "commonError": "Kandela, lümen ve lüks birimlerini birbirine karıştırmak.",
+   "check": "E = I / r² bağıntısında birimler: cd / m² = lx; şiddetin cd olduğu bu tutarlılıkla da görülür."
+  }
+ },
+ {
+  "id": "isik-bilgisi-q7",
+  "h": "10693d94a0ca3e",
+  "guidance": {
+   "knowledge": [
+    "Katı açı: bir koninin uzaydaki açıklığı; birimi steradyan (sr). Bir noktanın çevresindeki tam katı açı 4π sr'dir.",
+    "Her yöne eşit ışık şiddeti I olan kaynağın toplam akısı Φ = I × (tam katı açı) = 4π·I; birim cd·sr = lm."
+   ],
+   "strategy": "Kaynak her yöne eşit ışık verdiği için toplam akı, şiddetin tam katı açıyla çarpılmasıyla bulunur.",
+   "steps": [
+    "Φ = 4π·I.",
+    "Φ = 4π·50.",
+    "Φ = 200π lm."
+   ],
+   "optionReasons": [
+    "Işık şiddetini akı sanır; katı açıyla çarpmayı unutur.",
+    "50'yi π ile çarpıp ikiye böler: 50π/2 = 25π; tam katı açı 4π'dir.",
+    "Oranı ters kurar: 4π / 50; çarpmak yerine böler.",
+    "Doğru: Φ = 4π·50 = 200π lm.",
+    "Tam katı açıyı π sanır: π·50 = 50π."
+   ],
+   "commonError": "Tam katı açıyı 4π yerine 2π ya da π almak.",
+   "check": "Yarıçapı 1 m olan kürede her noktada E = 50 lx; küre alanı 4π m², toplam akı 50·4π = 200π lm."
+  }
+ },
+ {
+  "id": "isik-bilgisi-q8",
+  "h": "145214cac44d85",
+  "guidance": {
+   "knowledge": [
+    "Aydınlanma E (lx): bir noktaya düşen ışık miktarı.",
+    "Birbirinden bağımsız kaynakların bir noktaya yaptığı aydınlanmalar toplanır: E_toplam = E₁ + E₂."
+   ],
+   "strategy": "Her kaynağın katkısı ayrı verildiği ve katkılar toplanabildiği için doğrudan toplama yapılır.",
+   "steps": [
+    "E₁ = 24 lx, E₂ = 16 lx.",
+    "E = E₁ + E₂ = 24 + 16.",
+    "E = 40 lx."
+   ],
+   "optionReasons": [
+    "Doğru: katkılar toplanır, 24 + 16 = 40 lx.",
+    "Toplamak yerine çıkarır: 24 − 16 = 8; ikinci ışık birinciyi azaltmaz.",
+    "Ortalama alır: (24 + 16) / 2 = 20.",
+    "Çarpar: 24·16 = 384; birimi lx² olurdu.",
+    "Oran alır: 24 / 16 = 1,5; birimsiz bir sayı çıkar."
+   ],
+   "commonError": "İki ışığın katkısını toplamak yerine ortalamak.",
+   "check": "İkinci lambayı da yakınca oda daha aydınlık olur; toplam her iki katkıdan da büyük olmalı: 40 > 24."
+  }
+ },
+ {
+  "id": "isik-bilgisi-q9",
+  "h": "10aed4c82744a9",
+  "guidance": {
+   "knowledge": [
+    "Paralel demet: ışınları birbirine paralel ilerleyen, genişlemeyen ışık (örneğin ideal bir lazer demeti).",
+    "Ters kare kuralı (E ∝ 1/r²) yalnız noktasal kaynaktan çıkan, uzaklaştıkça açılan demetler için geçerlidir; ışık daha geniş alana yayıldığı için azalır."
+   ],
+   "strategy": "Ters kare kuralının nedeni ışığın yayılmasıdır; demet açılmıyor ve soğurulmuyorsa birim alana düşen ışık değişmez.",
+   "steps": [
+    "Paralel demetin kesit alanı uzaklıkla değişmez.",
+    "Soğurma yok, yani demetteki toplam ışık da azalmaz.",
+    "Aynı ışık aynı alana düştüğü için E değişmez."
+   ],
+   "optionReasons": [
+    "Uzaklaşmanın ışığı yok ettiğini sanır; soğurma olmadığı için ışık kaybolmaz.",
+    "Frekans kaynağa bağlıdır; yüzeyin yeri onu değiştirmez.",
+    "Doğru: demet açılmadığı ve soğurulmadığı için aydınlanma değişmez.",
+    "Ters kare kuralını her ışığa uygular; kural yalnız açılan, noktasal kaynak demetinde geçerlidir.",
+    "Uzaklaşmanın ışığı artırdığını sanır; enerjinin korunumu bunu engeller."
+   ],
+   "commonError": "Ters kare kuralını her ışık demetine uygulamak.",
+   "check": "Demetin 1 cm²'lik kesitine düşen ışık, 1 m sonra da aynı 1 cm²'ye düşer; ışık yayılmadığı için oran değişmez."
+  }
+ },
+ {
+  "id": "isik-bilgisi-q10",
+  "h": "109c667943f2e8",
+  "guidance": {
+   "knowledge": [
+    "Crookes radyometresi: içinde düşük basınçlı gaz bulunan cam fanus içinde, bir yüzü siyah diğeri parlak kanatlardan oluşan dönen çark.",
+    "Işık enerji ve momentum taşır; ancak bu düzenekte siyah yüzün daha çok ısınması ve çevresindeki gazın bu sıcaklık farkıyla etkileşmesi dönmede asıl rolü oynar."
+   ],
+   "strategy": "Gözlemi açıklayan etkenler arasında seçim yapılır; düzenekte gaz ve sıcaklık farkı bulunduğu için yalnız ışık basıncı yorumu yetersiz kalır.",
+   "steps": [
+    "Siyah yüzey ışığı soğurup parlak yüzeyden daha çok ısınır.",
+    "Düşük basınçlı gaz bu sıcaklık farkı nedeniyle kanatlara farklı itme uygular.",
+    "Bu termal gaz etkileri dönmede önemlidir; olay saf ışık basıncının kanıtı sayılmaz."
+   ],
+   "optionReasons": [
+    "Gazın rolünü yok sayar; oysa düzenekteki termal gaz etkileri dönmenin temel nedenidir.",
+    "Dönme, kanatlara enerji aktarıldığını gösterir; ışık enerji taşır.",
+    "Lümen ışık akısının birimidir, kuvvet birimi değildir (kuvvet birimi newton).",
+    "Işık boşlukta yayılabilir; Güneş ışığı uzay boşluğundan geçerek bize ulaşır.",
+    "Doğru: termal gaz etkileri önemlidir; dönme yalnız ışık basıncının kanıtı sayılmaz."
+   ],
+   "commonError": "Radyometrenin dönmesini doğrudan ışığın itme kuvvetine bağlamak.",
+   "check": "Işık basıncı tek başına etkili olsaydı ışığı yansıtan parlak yüz daha çok itilirdi; dönme yönü ise siyah yüzün ısınmasına uyar, bu da gaz etkisini gösterir."
+  }
+ },
+ {
+  "id": "golge-yari-golge-q1",
+  "h": "03df0c6b705be6",
+  "guidance": {
+   "knowledge": [
+    "Noktasal kaynak: boyutu ihmal edilen, ışığı tek noktadan her yöne yayan kaynak. Gölge: opak (ışık geçirmeyen) cismin arkasında ışığın ulaşamadığı bölge.",
+    "Işık doğrusal yayıldığı için kaynak, cismin ucu ve gölgenin ucu aynı doğru üzerindedir; kaynaktan cisme ve perdeye uzanan iki benzer üçgen oluşur. Uzunluklar santimetre (cm) ile verilmiştir."
+   ],
+   "strategy": "Kaynak, cisim ve gölge benzer üçgenler oluşturduğu için oran kurulur: gölge boyu / cisim boyu = kaynak-perde uzaklığı / kaynak-cisim uzaklığı.",
+   "steps": [
+    "Kaynak-perde uzaklığını bul: 20 cm + 40 cm = 60 cm.",
+    "Oranı yaz: H / 8 cm = 60 cm / 20 cm = 3.",
+    "Gölge boyu: H = 3 · 8 cm = 24 cm."
+   ],
+   "optionReasons": [
+    "Kaynak-perde uzaklığını 2 · (20 + 40) = 120 cm sayar: 8 · 120 / 20 = 48 cm.",
+    "Doğru: benzerlik oranı 60 / 20 = 3 olduğundan gölge 3 · 8 = 24 cm olur.",
+    "Yalnız cisim-perde aralığını kullanır: 8 · 40 / 20 = 16 cm.",
+    "Işığın yayıldığını unutup gölgeyi cisim boyuna eşit sanar: 8 cm.",
+    "Oranı ters kurar: 8 · 20 / 40 = 4 cm; gölge cisimden küçük çıkamaz."
+   ],
+   "commonError": "Oranda kaynak-perde uzaklığı yerine yalnız cisim-perde aralığını kullanmak.",
+   "check": "Noktasal kaynakta gölge cisimden büyük olmalı: 24 cm > 8 cm. Perde cisme yapışık olsaydı oran 20 / 20 = 1 ve gölge 8 cm olurdu."
+  }
+ },
+ {
+  "id": "golge-yari-golge-q2",
+  "h": "013b7d72cfc702",
+  "guidance": {
+   "knowledge": [
+    "Noktasal kaynak: boyutu ihmal edilen, ışığı tek noktadan her yöne yayan kaynak. Gölge: opak (ışık geçirmeyen) cismin arkasında ışığın ulaşamadığı bölge.",
+    "Tam gölge: hiç ışık almayan bölge. Yarı gölge: kaynağın yalnız bir kısmından ışık alan bölge; yalnız geniş ya da birden çok kaynakta oluşur. Geometrik optik: ışığı doğru çizgiler hâlinde yayılan ışın olarak alan model."
+   ],
+   "strategy": "Tek noktasal kaynaktan bir noktaya tek bir ışın gider; bu ışın ya engele çarpar ya geçer. Bu yüzden yalnız iki durum vardır: aydınlık ya da tam gölge.",
+   "steps": [
+    "Tek noktadan çıkan ışınlar engelin kenarına teğet geçen doğrularla sınırlanır.",
+    "Bu doğruların içinde kalan bölgeye hiç ışık gitmez: tam gölge.",
+    "Kısmi ışık alan ara bölge oluşamaz; gölge sınırı keskindir."
+   ],
+   "optionReasons": [
+    "Opak engelin arkasına ışık geçemediğini unutur; gölge mutlaka oluşur.",
+    "Tek kaynağı iki kaynak gibi düşünür; iki görünüm için iki kaynak gerekir.",
+    "Kırınım gibi dalga etkilerini modele katar; soru bunları dışarıda bırakan geometrik optiği istiyor.",
+    "Doğru: tek ideal noktasal kaynakta ışın ya engellenir ya geçer, sınır keskin tam gölgedir.",
+    "Yarı gölgeyi her gölgeye ekler; yarı gölge için kaynağın bir kısmının görülebilmesi, yani geniş ya da çoklu kaynak gerekir."
+   ],
+   "commonError": "Yarı gölgenin her durumda oluştuğunu sanmak; tek noktasal kaynakta yarı gölge olmaz.",
+   "check": "Kaynağı bir noktaya küçült: perdedeki her noktadan bakınca kaynak ya tamamen görünür ya hiç görünmez, ara durum yoktur."
+  }
+ },
+ {
+  "id": "golge-yari-golge-q3",
+  "h": "146aac1c9d0388",
+  "guidance": {
+   "knowledge": [
+    "Tam gölge: iki kaynaktan da ışık almayan bölge. Yarı gölge: kaynaklardan yalnız birinden ışık alan bölge. Tam aydınlık: her iki kaynaktan da ışık alan bölge."
+   ],
+   "strategy": "Perdedeki bir noktanın sınıfı, o noktaya kaç kaynaktan ışık ulaştığı sayılarak belirlenir.",
+   "steps": [
+    "K'den gelen ışın engelleniyor: bu kaynak için nokta gölgede.",
+    "L'den ışık geliyor: nokta tamamen karanlık değil.",
+    "Bir kaynaktan ışık alıp diğerinden almayan nokta yarı gölgededir."
+   ],
+   "optionReasons": [
+    "Doğru: yalnız K engellenmiş, L'den ışık geliyor; bu yarı gölgedir.",
+    "Tam gölge için iki kaynağın da engellenmesi gerekir; burada L'den ışık geliyor.",
+    "Tam aydınlık için K'den de ışık gelmesi gerekir; K engelli.",
+    "L'den ışık geldiğini gözden kaçırır; nokta karanlık değildir.",
+    "Görüntü ayna ve merceklerle ilgilidir; gölge sınıflamasında yeri yoktur."
+   ],
+   "commonError": "Bir kaynağın engellenmesini tam gölge sanmak; tam gölge için bütün kaynaklar engellenmelidir.",
+   "check": "Işık alan kaynak sayısını yaz: 2 ise aydınlık, 1 ise yarı gölge, 0 ise tam gölge. Burada sayı 1."
+  }
+ },
+ {
+  "id": "golge-yari-golge-q4",
+  "h": "19efb9b110a09a",
+  "guidance": {
+   "knowledge": [
+    "Perde üzerinde konumlar santimetre (cm) ile bir sayı doğrusunda verilmiş; [−8, 4] gösterimi −8 cm ile 4 cm arasındaki aralıktır. Bir aralığın boyu: büyük uç − küçük uç.",
+    "Tam gölge: iki kaynağın da gölgesinin düştüğü, yani iki gölge aralığının ortak (kesişen) kısmı."
+   ],
+   "strategy": "Tam gölge iki kaynaktan da ışık almayan noktalar olduğu için iki aralığın kesişimini bulup boyunu hesaplarız.",
+   "steps": [
+    "Kesişimin sol ucu, iki sol ucun büyüğüdür: −8 ile −2 arasında −2.",
+    "Kesişimin sağ ucu, iki sağ ucun küçüğüdür: 4 ile 10 arasında 4.",
+    "Tam gölge [−2, 4]; boyu 4 − (−2) = 6 cm."
+   ],
+   "optionReasons": [
+    "L aralığının boyunu bulurken −2'nin eksisini düşürür: 10 − 2 = 8 cm.",
+    "Ortak sol ucu (−2) mutlak değerle boy sanar: 2 cm.",
+    "Doğru: kesişim [−2, 4], boyu 4 − (−2) = 6 cm.",
+    "Kesişim yerine birleşimi alır: 10 − (−8) = 18 cm.",
+    "Tek bir gölgenin boyunu yazar: 4 − (−8) = 12 cm."
+   ],
+   "commonError": "Tam gölgeyi iki gölgenin birleşimi sanmak; tam gölge kesişimdir.",
+   "check": "Kesişimdeki bir nokta, örneğin 0 cm, iki aralıkta da var; 5 cm yalnız L gölgesinde olduğundan yarı gölgededir. Sınırlar doğru."
+  }
+ },
+ {
+  "id": "golge-yari-golge-q5",
+  "h": "1aae9653b4b50a",
+  "guidance": {
+   "knowledge": [
+    "Noktasal kaynak: boyutu ihmal edilen, ışığı tek noktadan her yöne yayan kaynak. Gölge: opak (ışık geçirmeyen) cismin arkasında ışığın ulaşamadığı bölge.",
+    "Benzer üçgenlerden: gölge boyu H = cisim boyu h · (kaynak-perde uzaklığı L) / (kaynak-cisim uzaklığı a)."
+   ],
+   "strategy": "Cisim ve kaynak sabit olduğundan h ve a değişmez; H yalnız L ile doğru orantılı kalır. Bu yüzden oran yöntemi en kısa yoldur.",
+   "steps": [
+    "H = h · L / a ve h, a sabit: H, L ile doğru orantılı.",
+    "L iki katına çıkıyor: L' = 2L.",
+    "Yeni gölge H' = h · 2L / a = 2H; oran H' / H = 2."
+   ],
+   "optionReasons": [
+    "Boyu alan gibi karesiyle büyütür: 2² = 4; alan sorulmadı.",
+    "Oranı ters kurar: uzaklık artınca gölgenin küçüleceğini sanar.",
+    "Hem ters hem kare alır: 1 / 2² = 1 / 4.",
+    "Cisim boyu değişmediği için gölgenin de değişmeyeceğini sanar.",
+    "Doğru: H, kaynak-perde uzaklığıyla doğru orantılı; uzaklık 2 kat, gölge 2 kat."
+   ],
+   "commonError": "Doğrusal boy oranı ile alan oranını karıştırıp kare almak.",
+   "check": "Sayı ver: a = 10 cm, h = 2 cm, L = 30 cm için H = 6 cm; L = 60 cm için H = 12 cm. Oran 2."
+  }
+ },
+ {
+  "id": "golge-yari-golge-q6",
+  "h": "14678916c5c89f",
+  "guidance": {
+   "knowledge": [
+    "Çap: dairenin bir ucundan merkezden geçerek öbür ucuna uzanan uzunluk; yarıçap r bunun yarısıdır.",
+    "Dairenin alanı A = π · r². r karesiyle girdiği için boy k katına çıkınca alan k² katına çıkar."
+   ],
+   "strategy": "Gölge dairesel olduğu için alan formülü kullanılır; çaptaki artış yarıçapa aynen geçer ve alanda karesi alınır.",
+   "steps": [
+    "Çap 3 kat ise yarıçap da 3 kat: r' = 3r.",
+    "Yeni alan: A' = π · (3r)² = 9 · π · r².",
+    "Alan oranı: A' / A = 9."
+   ],
+   "optionReasons": [
+    "Kare yerine küp alır: 3³ = 27; küp hacim için geçerlidir.",
+    "Doğru: A = π · r² olduğundan 3 kat yarıçap 3² = 9 kat alan verir.",
+    "Alanı boy gibi doğrusal büyütür: 3.",
+    "Kare almak yerine 2 ile çarpar: 2 · 3 = 6.",
+    "Oranı ters çevirir; gölge büyüdüğü için alan küçülemez."
+   ],
+   "commonError": "Uzunluktaki artışı alana doğrudan aktarmak; alan oranı boy oranının karesidir.",
+   "check": "r = 1 için A = π; r = 3 için A = 9π. Oran 9."
+  }
+ },
+ {
+  "id": "golge-yari-golge-q7",
+  "h": "12053c04a0786a",
+  "guidance": {
+   "knowledge": [
+    "Gölge aralığı: perde üzerinde bir kaynağın ışığının ulaşmadığı bölge; [−10, −2] cm, −10 cm ile −2 cm arasıdır.",
+    "Tam gölge: iki gölgenin ortak kısmı; ortak kısım yoksa tam gölge boyu 0 cm'dir."
+   ],
+   "strategy": "Tam gölge iki kaynağın da engellendiği yer olduğundan iki aralığın kesişimine bakılır.",
+   "steps": [
+    "Birinci aralık −2 cm'de bitiyor, ikinci 2 cm'de başlıyor.",
+    "−2 < 2 olduğundan iki aralığın ortak noktası yok.",
+    "Tam gölge boyu 0 cm; her aralık kendi içinde yarı gölgedir."
+   ],
+   "optionReasons": [
+    "Tek bir gölgenin boyunu yazar: −2 − (−10) = 8 cm.",
+    "İki gölgenin boylarını toplar: 8 + 8 = 16 cm.",
+    "Uçtan uca birleşimi alır: 10 − (−10) = 20 cm.",
+    "Doğru: aralıklar örtüşmez; tam gölge 0 cm.",
+    "Aradaki boşluğu tam gölge sanar: 2 − (−2) = 4 cm; orası iki kaynaktan da aydınlıktır."
+   ],
+   "commonError": "Ayrı ayrı gölgeleri ya da aradaki boşluğu tam gölge saymak.",
+   "check": "0 cm noktası iki aralıkta da yok, yani iki kaynaktan ışık alır; −5 cm yalnız birinci aralıkta, yani yarı gölgede. Hiçbir nokta ikisinde birden değil."
+  }
+ },
+ {
+  "id": "golge-yari-golge-q8",
+  "h": "196b7b5fcf3aae",
+  "guidance": {
+   "knowledge": [
+    "Geniş kaynak: boyutu ihmal edilemeyen kaynak; farklı noktalarından ayrı ışınlar çıkar.",
+    "Bir noktaya ışık gelmesi, o noktadan bakınca kaynağın görülmesi demektir. Tam gölgede kaynak hiç görünmez, yarı gölgede bir kısmı görünür."
+   ],
+   "strategy": "Gözlemcinin kaynağın ne kadarını gördüğü, aldığı doğrudan ışığı belirler; bu yüzden görülen kısım üzerinden sınıflama yapılır.",
+   "steps": [
+    "Kaynağın tamamı görünmüyor: tam aydınlık değil.",
+    "Kenarının bir kısmı görünüyor: o kısımdan doğrudan ışık geliyor, tam gölge değil.",
+    "Kaynağın bir kısmından ışık alan bölge yarı gölgedir."
+   ],
+   "optionReasons": [
+    "Doğru: kaynağın bir kısmı görünüyor, yani doğrudan ışığın bir kısmı geliyor.",
+    "Tam gölgede kaynağın hiçbir yeri görünmez; burada kenar görünüyor.",
+    "Kaynağın içi gözlemci konumu değildir; soru engel arkasını soruyor.",
+    "Kaynağın bir kısmı engellendiği için gölge etkisi var.",
+    "Odak aynalar ve merceklerle ilgilidir; gölge sınıflamasında yer almaz."
+   ],
+   "commonError": "Kaynağın büyük kısmı görünmüyorsa tam gölge sanmak; küçük bir kısım bile görünse yarı gölgedir.",
+   "check": "Ters düşün: tam gölgede elinle hiç ışık yakalayamazsın; burada kenardan gelen ışık yakalanır."
+  }
+ },
+ {
+  "id": "golge-yari-golge-q9",
+  "h": "1f2bde13a7a902",
+  "guidance": {
+   "knowledge": [
+    "Noktasal kaynak: boyutu ihmal edilen, ışığı tek noktadan her yöne yayan kaynak. Gölge: opak (ışık geçirmeyen) cismin arkasında ışığın ulaşamadığı bölge.",
+    "Benzer üçgenlerden gölge boyu H = h · (a + b) / a; a kaynak-cisim, b cisim-perde uzaklığı, h cisim boyudur."
+   ],
+   "strategy": "a ve h sabit tutulduğu için H yalnız (a + b) ile değişir; formülde bu terimin artıp artmadığına bakmak yeter.",
+   "steps": [
+    "a ve h sabit, b artıyor: a + b artar.",
+    "H = h · (a + b) / a ifadesinde pay büyür, payda aynı kalır.",
+    "Gölge boyu artar."
+   ],
+   "optionReasons": [
+    "Perde uzaklaşınca gölgenin yok olacağını sanar; gölge büyüyerek sürer.",
+    "Frekans gölge geometrisini belirlemez; ışık doğrusal yayılır.",
+    "Doğru: b artınca a + b artar, H = h · (a + b) / a büyür.",
+    "Uzaklaşan cisimlerin küçük görünmesiyle gölgeyi karıştırır.",
+    "Paralel ışık gibi düşünür; noktasal kaynakta ışınlar açıldığı için gölge değişir."
+   ],
+   "commonError": "Gölge boyunu, uzaktaki cismin göze küçük görünmesiyle karıştırmak.",
+   "check": "Sayı ver: a = 10 cm, h = 2 cm. b = 10 cm için H = 4 cm, b = 30 cm için H = 8 cm; gölge büyüdü."
+  }
+ },
+ {
+  "id": "golge-yari-golge-q10",
+  "h": "016c94aaba123d",
+  "guidance": {
+   "knowledge": [
+    "Opak engel: ışığı geçirmeyen cisim. Bir noktanın aydınlanması için kaynaktan o noktaya giden doğru yolun açık olması gerekir.",
+    "Tam gölge: iki kaynaktan da ışık almayan nokta."
+   ],
+   "strategy": "Her kaynağın noktaya giden yolu ayrı değerlendirilir; bir kaynağı kapatmak öbür kaynağın yolunu açmaz.",
+   "steps": [
+    "Başlangıçta iki kaynağın da yolu engel tarafından kapalı: nokta tam gölgede.",
+    "Kaynaklardan biri kapatılıyor; kalan kaynağın geometrisi aynı, yolu hâlâ engelli.",
+    "Hiçbir kaynaktan ışık gelmez; nokta karanlık kalır."
+   ],
+   "optionReasons": [
+    "Bir kaynağı kapatmanın ışık artıracağını sanar; ışık en çok aynı kalır ya da azalır.",
+    "Kaynaklardan biri kapatıldı; artık iki kaynaktan ışık alınamaz.",
+    "Noktanın konumu değişmez; kaynak kapatmak perdeyi yerinden oynatmaz.",
+    "Opak engelin özelliği kaynak kapatmakla değişmez.",
+    "Doğru: kalan kaynağın yolu baştan beri engelli; nokta karanlık kalır."
+   ],
+   "commonError": "Kaynaklardan birini kaldırmanın diğerinin ışık yolunu değiştirdiğini sanmak.",
+   "check": "Işık alan kaynak sayısı başta 0; bir kaynak eksilince sayı artamaz, yine 0 kalır."
+  }
+ },
+ {
+  "id": "duzlem-ayna-q1",
+  "h": "18b02d7cb414ce",
+  "guidance": {
+   "knowledge": [
+    "Normal: aynanın ışının çarptığı noktada yüzeye dik çizilen çizgi. Gelme açısı (i) ve yansıma açısı (r) normalden ölçülür; yansıma yasası i = r der.",
+    "Açılar derece (°) ile ölçülür; normal yüzeye dik olduğundan yüzeyle yapılan açı ile normalle yapılan açının toplamı 90°'dir."
+   ],
+   "strategy": "Verilen açı yüzeyden ölçülmüş; yansıma yasası normalden ölçülen açılarla çalıştığı için önce 90°'den çıkararak gelme açısını buluruz.",
+   "steps": [
+    "Gelme açısı: i = 90° − 20° = 70°.",
+    "Yansıma yasası: r = i.",
+    "Yansıma açısı r = 70°."
+   ],
+   "optionReasons": [
+    "Normali ışının kendisi sanar ya da yüzeye dik gelişle karıştırır: 90°.",
+    "Doğru: i = 90° − 20° = 70° ve r = i = 70°.",
+    "Yüzeyle yapılan açıyı doğrudan yansıma açısı sanar: 20°.",
+    "Gelen ve yansıyan ışınların yüzeyle yaptığı açıları toplar: 20° + 20° = 40°.",
+    "Yüzey açısını ikiye böler: 20° / 2 = 10°."
+   ],
+   "commonError": "Yüzeyden ölçülen açıyı normalden ölçülen açı sanmak.",
+   "check": "Gelen ve yansıyan ışın arasındaki açı i + r = 140° olmalı; yüzeyle yaptıkları açılarla 20° + 140° + 20° = 180° tutar."
+  }
+ },
+ {
+  "id": "duzlem-ayna-q2",
+  "h": "04e35e0f852806",
+  "guidance": {
+   "knowledge": [
+    "Normal: aynanın ışının çarptığı noktada yüzeye dik çizilen çizgi. Gelme açısı (i) ve yansıma açısı (r) normalden ölçülür; yansıma yasası i = r der.",
+    "Dik gelen ışın: aynaya 90° açıyla çarpan, yani normalin tam üzerinde ilerleyen ışın."
+   ],
+   "strategy": "Gelme açısı ışın ile normal arasındaki açı olduğu için, ışının normalle çakışıp çakışmadığına bakmak yeter.",
+   "steps": [
+    "Işın yüzeye dik, normal de yüzeye dik: ışın normal üzerinde.",
+    "Işın ile normal arasındaki açı 0°.",
+    "Gelme açısı 0°; yansıma açısı da 0° olur ve ışın geldiği yoldan döner."
+   ],
+   "optionReasons": [
+    "Yüzeyle yapılan açıyı 45° gibi ara bir değer sanır; dik gelişte açı sıfırdır.",
+    "Ters dönen ışının yönünü açı sanır: geri dönüş 180° yön değişimidir, gelme açısı değil.",
+    "Rastgele bir açı seçer; dik gelişte ışın normalden hiç sapmaz.",
+    "Doğru: ışın normal üzerinde olduğundan normalle açısı 0°'dir.",
+    "Yüzeyle yapılan 90° açıyı gelme açısı sanır; gelme açısı normalden ölçülür."
+   ],
+   "commonError": "Yüzeyle yapılan 90° açıyı gelme açısı saymak.",
+   "check": "i = 0° ise r = 0°; ışın aynı doğrudan döner. Gerçekten de dik çarpan ışık geldiği yöne yansır."
+  }
+ },
+ {
+  "id": "duzlem-ayna-q3",
+  "h": "15d1d1a0de8f9e",
+  "guidance": {
+   "knowledge": [
+    "Düzlem ayna: düz yansıtıcı yüzey. Görüntü aynanın arkasında, cismin aynaya uzaklığı kadar uzakta oluşur (simetri).",
+    "Cisim-görüntü aralığı: cisim ile görüntüsü arasındaki toplam uzaklık; santimetre (cm) ile ölçülür."
+   ],
+   "strategy": "Düzlem ayna simetri verdiği için görüntünün aynaya uzaklığı bilinir; iki uzaklığı toplamak aralığı verir.",
+   "steps": [
+    "Cismin aynaya uzaklığı 35 cm.",
+    "Görüntünün aynaya uzaklığı da 35 cm (simetri).",
+    "Cisim-görüntü aralığı: 35 cm + 35 cm = 70 cm."
+   ],
+   "optionReasons": [
+    "Doğru: cisim 35 cm önde, görüntü 35 cm arkada; aralık 70 cm.",
+    "Görüntünün aynaya uzaklığını aralık sanır: 35 cm.",
+    "Uzaklığı ikiye böler: 35 / 2 = 17,5 cm; simetri uzaklığı korur.",
+    "Uzaklığı üç kez sayar: 3 · 35 = 105 cm.",
+    "Görüntünün ayna yüzeyinde oluştuğunu sanar: 0 cm."
+   ],
+   "commonError": "Görüntünün aynaya uzaklığını cisim-görüntü aralığıyla karıştırmak.",
+   "check": "Ayna, cisim ile görüntüyü birleştiren doğrunun tam ortasında olmalı: 70 / 2 = 35 cm. Tutuyor."
+  }
+ },
+ {
+  "id": "duzlem-ayna-q4",
+  "h": "008b393d935282",
+  "guidance": {
+   "knowledge": [
+    "Gerçek görüntü: ışınların kendisinin kesiştiği, perdeye düşürülebilen görüntü. Sanal görüntü: yansıyan ışınların geri uzantılarının kesiştiği, perdeye düşmeyen görüntü.",
+    "Düz: baş yukarıda; ters: baş aşağıda. Eş boylu: görüntü boyu cisim boyuna eşit."
+   ],
+   "strategy": "Görüntünün türünü, yansıyan ışınların mı yoksa uzantılarının mı kesiştiğine bakarak; boyunu ve yönünü simetriyle belirleriz.",
+   "steps": [
+    "Düzlem aynadan yansıyan ışınlar ıraksar; ancak geri uzantıları aynanın arkasında kesişir: sanal.",
+    "Simetri cismi aynaya göre aynalar; yukarı-aşağı yön korunur: düz.",
+    "Her noktanın uzaklığı korunduğu için boy değişmez: eş boylu."
+   ],
+   "optionReasons": [
+    "Görüntü boyunu aynanın boyuna bağlar; boy cisme eşittir, ayna boyu yalnız ne kadarının görüldüğünü etkiler.",
+    "Simetriyi bozar; görüntü aynaya cisimle aynı dik uzaklıktadır.",
+    "Doğru: uzantılar kesiştiği için sanal, simetri nedeniyle düz ve eş boylu.",
+    "Çukur ayna ya da ince kenarlı mercekle karıştırır; düzlem ayna gerçek ve ters görüntü vermez.",
+    "Sanal görüntü perdeye düşürülemez; ışınlar orada gerçekten kesişmez."
+   ],
+   "commonError": "Düzlem aynadaki görüntüyü gerçek sanmak; ışınlar aynanın arkasına hiç geçmez.",
+   "check": "Aynanın arkasına perde koyarsan hiçbir şey görünmez; görüntü sanaldır. Aynada kendine baktığında başın yukarıda ve boyun aynıdır."
+  }
+ },
+ {
+  "id": "duzlem-ayna-q5",
+  "h": "04754c8500c4d8",
+  "guidance": {
+   "knowledge": [
+    "Tam boy ayna: kişinin baştan ayağa kendini görebildiği düşey ayna. Kişi baş tepesini ve ayağını göz hizasından gelen yansımalarla görür.",
+    "Göz ile bir nokta arasında yansıma, ayna üzerinde bu iki noktanın yüksekliklerinin tam ortasında olur; çünkü görüntü simetriktir."
+   ],
+   "strategy": "Gerekli ayna kenarları, göz ile baş tepesinin ve göz ile ayağın orta noktalarıdır; bu yüzden iki yüksekliği ayrı bulup farkını alırız.",
+   "steps": [
+    "Üst kenar: göz 150 cm ile baş 160 cm'nin ortası: (160 + 150) / 2 = 155 cm.",
+    "Alt kenar: göz 150 cm ile ayak 0 cm'nin ortası: 150 / 2 = 75 cm.",
+    "Ayna boyu: 155 − 75 = 80 cm; bu, kişi boyunun yarısıdır."
+   ],
+   "optionReasons": [
+    "Aynanın kişi boyu kadar olması gerektiğini sanar: 160 cm.",
+    "Göz yüksekliğini ayna boyu sanır: 150 cm.",
+    "Yalnız alt kenarın yerden yüksekliğini bulur: 75 cm.",
+    "Yalnız üst kenarın yerden yüksekliğini bulur: 155 cm.",
+    "Doğru: kenarlar 155 cm ve 75 cm yükseklikte; ayna boyu 155 − 75 = 80 cm."
+   ],
+   "commonError": "Kenarların yerden yüksekliğini ayna boyu sanmak ya da aynanın kişi boyunda olması gerektiğini düşünmek.",
+   "check": "Ayna boyu = kişi boyu / 2 = 160 / 2 = 80 cm; göz yüksekliği ne olursa olsun bu değişmez."
+  }
+ },
+ {
+  "id": "duzlem-ayna-q6",
+  "h": "08a00803d96c75",
+  "guidance": {
+   "knowledge": [
+    "Düzlem aynada görüntü, cisimle aynı uzaklıkta aynanın arkasındadır; cisim aynaya yaklaştıkça görüntü de aynı hızla yaklaşır.",
+    "Hız metre/saniye (m/s): her saniyede alınan metre. Aralığın azalma hızı: cisim ve görüntünün yaklaşma hızlarının toplamı."
+   ],
+   "strategy": "Ayna sabit olduğundan cisim ve görüntü aynaya eşit hızla yaklaşır; birbirlerine doğru hareket ettikleri için hızlar toplanır.",
+   "steps": [
+    "Cisim aynaya 3 m/s ile yaklaşıyor.",
+    "Görüntü de aynaya 3 m/s ile ters yönden yaklaşıyor.",
+    "Aralık her saniye 3 + 3 = 6 m azalır: 6 m/s."
+   ],
+   "optionReasons": [
+    "Hızı 3 ile çarpar: 3 · 3 = 9 m/s.",
+    "Doğru: cisim ve görüntü birbirine 3 + 3 = 6 m/s ile yaklaşır.",
+    "Yalnız cismin hızını alır; görüntünün de hareket ettiğini unutur: 3 m/s.",
+    "Hızı ikiye böler: 3 / 2 = 1,5 m/s.",
+    "Görüntünün aynayla birlikte durduğunu sanar; görüntü cisme bağlıdır."
+   ],
+   "commonError": "Görüntünün de hareket ettiğini unutup yalnız cismin hızını almak.",
+   "check": "1 s'de cisim-ayna uzaklığı 3 m azalır, aralık bunun iki katı olduğundan 6 m azalır."
+  }
+ },
+ {
+  "id": "duzlem-ayna-q7",
+  "h": "1e61e7bd0b4d63",
+  "guidance": {
+   "knowledge": [
+    "Düzlem aynada görüntü, aynaya cisimle aynı uzaklıktadır. Yer değiştirme: konumdaki değişimin büyüklüğü ve yönü; burada santimetre (cm) ile ölçülür.",
+    "Ayna hareket ederse simetri doğrusu da kayar; sabit cismin görüntüsü aynanın yer değiştirmesinin iki katı kadar yer değiştirir."
+   ],
+   "strategy": "Cisim sabit, ayna hareket ettiği için görüntünün yeni yerini simetriyle bulup eski yeriyle karşılaştırırız.",
+   "steps": [
+    "Başlangıçta cisim-ayna uzaklığı d olsun; görüntü cisimden 2d uzakta.",
+    "Ayna 4 cm yaklaşınca uzaklık d − 4 olur; görüntü cisimden 2(d − 4) = 2d − 8 uzakta.",
+    "Cisim sabit olduğundan görüntü cisme 8 cm yaklaştı: yere göre yer değiştirme 8 cm."
+   ],
+   "optionReasons": [
+    "Aynanın yer değiştirmesini ikiye böler: 4 / 2 = 2 cm.",
+    "İkiyle değil dörtle çarpar: 4 · 4 = 16 cm.",
+    "Cisim sabit diye görüntünün de sabit kaldığını sanar.",
+    "Doğru: görüntü-cisim uzaklığı 2d'den 2d − 8'e iner; görüntü yere göre 8 cm kayar.",
+    "Görüntünün aynaya uzaklığındaki 4 cm azalmayı yere göre yer değiştirme sanır."
+   ],
+   "commonError": "Görüntünün aynaya göre uzaklık değişimi ile yere göre yer değiştirmesini karıştırmak.",
+   "check": "Sayı ver: d = 10 cm iken görüntü cisimden 20 cm; d = 6 cm iken 12 cm. Fark 8 cm."
+  }
+ },
+ {
+  "id": "duzlem-ayna-q8",
+  "h": "1ad18f9bf09b81",
+  "guidance": {
+   "knowledge": [
+    "Normal: aynanın ışının çarptığı noktada yüzeye dik çizilen çizgi. Gelme açısı (i) ve yansıma açısı (r) normalden ölçülür; yansıma yasası i = r der.",
+    "Ayna θ kadar dönerse normal de θ kadar döner; gelme açısı θ değişir, yansıyan ışın ise gelen ışına göre iki kat açıyla ayarlandığı için 2θ döner."
+   ],
+   "strategy": "Gelen ışın sabit olduğundan yansıyan ışının yönü normale bağlıdır; normalin dönmesi yansıyan ışını iki kat açıyla döndürür.",
+   "steps": [
+    "Ayna 10° dönünce normal de 10° döner; gelme açısı 10° değişir.",
+    "Gelen ile yansıyan ışın arasındaki açı 2i'dir; i 10° değişince bu açı 2 · 10° = 20° değişir.",
+    "Gelen ışın sabit olduğundan yansıyan ışın 20° döner."
+   ],
+   "optionReasons": [
+    "Doğru: normal 10° döner, gelen-yansıyan arası açı 2 · 10° = 20° değişir.",
+    "Yansıyan ışının da aynayla aynı açıda döndüğünü sanar: 10°.",
+    "Açıyı ikiye böler: 10° / 2 = 5°.",
+    "Gelen ışın sabit diye yansıyanın da sabit kaldığını sanar.",
+    "İki katı alma kuralını iki kez uygular: 4 · 10° = 40°."
+   ],
+   "commonError": "Yansıyan ışının da aynanın döndüğü açı kadar döndüğünü sanmak.",
+   "check": "Sayı ver: i = 30° iken gelen-yansıyan arası 60°; i = 40° olunca 80°. Fark 20°."
+  }
+ },
+ {
+  "id": "duzlem-ayna-q9",
+  "h": "0d45ba2afee74d",
+  "guidance": {
+   "knowledge": [
+    "Görüntü noktası: yansıyan ışınların geri uzantılarının kesiştiği yer. Göz bir noktayı ancak o noktadan çıkıp aynadan yansıyan gerçek bir ışın göze gelirse görür.",
+    "Sonlu ayna: kenarları olan, sınırlı boydaki ayna."
+   ],
+   "strategy": "Görüntünün yerini bilmek yetmez; göze gerçek ışın gelip gelmediğini anlamak için göz ile görüntüyü birleştiren doğrunun aynanın gerçek parçasından geçip geçmediğine bakılır.",
+   "steps": [
+    "Göz ile görüntüyü birleştiren doğruyu çiz; göze gelen yansıyan ışın bu doğru üzerindedir.",
+    "Doğru aynanın gerçek parçasını kesmezse orada yansıma olamaz; ışın yoktur.",
+    "Cisimden aynaya ve aynadan göze giden yol da açık olmalı; ikisi birlikte görmeyi sağlar."
+   ],
+   "optionReasons": [
+    "Cisim aynanın önünde olmalı; arkadaki cisimden yansıyan ışık göze gelmez.",
+    "Göz aynadan uzakta da görebilir; sıfır uzaklık gerekmez.",
+    "Doğru: göz-görüntü doğrusu aynanın gerçek parçasını kesmeli ve ışın yolu engelsiz olmalı.",
+    "Düzlem aynada görüntü her zaman sanaldır; görülmesi için gerçek olması gerekmez.",
+    "Tam boy görmek için bile ayna cismin yarısı kadar yeter; bir noktayı görmek için büyüklük gerekmez."
+   ],
+   "commonError": "Görüntünün yerini bulmayı, onun görülebildiği anlamına almak.",
+   "check": "Aynanın kenarını elinle kapat: görüntü yine aynı yerde hesaplanır ama göz-görüntü doğrusu kapalı parçaya düşerse o nokta görünmez olur."
+  }
+ },
+ {
+  "id": "duzlem-ayna-q10",
+  "h": "01e3db27d97fee",
+  "guidance": {
+   "knowledge": [
+    "Normal: aynanın ışının çarptığı noktada yüzeye dik çizilen çizgi. Gelme açısı (i) ve yansıma açısı (r) normalden ölçülür; yansıma yasası i = r der.",
+    "Dağınık yansıma: pürüzlü yüzeyde paralel gelen ışınların farklı yönlere yansıması. Düzgün yansıma: pürüzsüz yüzeyde paralel ışınların paralel yansıması."
+   ],
+   "strategy": "Yansıma yasası her noktada geçerlidir; yansıyan ışının yönünü normal belirlediği için farklı yönlerin nedeni normallere bakılarak bulunur.",
+   "steps": [
+    "Her küçük bölgede ışın, o noktadaki normale göre i = r ile yansır.",
+    "Pürüzlü yüzeyde küçük bölgeler farklı eğimdedir; normalleri farklı yönlerdedir.",
+    "Aynı yönden gelen ışınların gelme açıları farklı olur; yansıyan ışınlar dağılır."
+   ],
+   "optionReasons": [
+    "Yasa her noktada geçerlidir; değişen, noktadan noktaya normalin yönüdür.",
+    "Renk ışığın frekansına bağlıdır; yansıma rengi değiştirmez.",
+    "Yansımada frekans değişmez; sıfırlanması anlamsızdır.",
+    "Işık yüzeyle etkileşmeseydi hiç yansımazdı; yansıma bir etkileşimdir.",
+    "Doğru: pürüzlerin farklı normalleri, aynı yönden gelen ışınlara farklı gelme açıları verir."
+   ],
+   "commonError": "Dağınık yansımada yansıma yasasının bozulduğunu sanmak.",
+   "check": "Yüzeyi zımparalayıp parlat: normaller hizalanır ve aynı ışınlar paralel yansır; yasa değişmedi, yalnız normaller değişti."
+  }
+ }
+]

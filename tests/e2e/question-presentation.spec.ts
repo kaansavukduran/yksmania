@@ -1,3 +1,4 @@
+import { typeset } from "../../src/domain/typeset";
 import { test, expect, type Locator, type Page } from "@playwright/test";
 import { fileURLToPath } from "node:url";
 import { createServer } from "vite";
@@ -186,9 +187,7 @@ for (const item of cases) {
       await expect(page.locator(".question-meta")).toContainText(
         `Soru ${index + 1} / 5`,
       );
-      await expect(page.locator(".question-panel h2")).toHaveText(
-        lesson.questions[index].prompt.tr,
-      );
+      await expect(page.locator(".question-panel h2")).toHaveText(typeset(lesson.questions[index].prompt.tr));
       await checkStudyAnswer(page, selections[index], true);
       await page
         .getByRole("button", { name: "Sonraki soru", exact: true })
@@ -222,9 +221,7 @@ for (const item of cases) {
     await page
       .getByRole("button", { name: "Sonraki soru", exact: true })
       .click();
-    await expect(page.locator(".question-panel h2")).toHaveText(
-      lesson.questions[4].prompt.tr,
-    );
+    await expect(page.locator(".question-panel h2")).toHaveText(typeset(lesson.questions[4].prompt.tr));
     await checkStudyAnswer(page, selections[4], true);
     await page
       .getByRole("button", { name: "Çalışmayı kaydet", exact: true })

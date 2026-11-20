@@ -1,3 +1,4 @@
+import { typeset } from "../../src/domain/typeset";
 import {
   expect,
   test,
@@ -1200,9 +1201,7 @@ test.describe("030 mobile full staged question help", () => {
         .getByRole("button", { name: "Sonraki soru", exact: true })
         .click();
     }
-    await expect(page.locator(".question-panel h2")).toHaveText(
-      question.prompt.tr,
-    );
+    await expect(page.locator(".question-panel h2")).toHaveText(typeset(question.prompt.tr));
     await expect(page.locator(".answer > span:nth-child(2)")).toHaveText(
       question.options.map((o) => o.tr),
     );
@@ -1266,9 +1265,7 @@ test.describe("030 mobile full staged question help", () => {
     await offlineReady(page);
     await context.setOffline(true);
     await page.reload();
-    await expect(page.locator(".question-panel h2")).toHaveText(
-      question.prompt.tr,
-    );
+    await expect(page.locator(".question-panel h2")).toHaveText(typeset(question.prompt.tr));
     await expect(page.locator(".help-full-solution li")).toHaveText(
       help.optionReasons,
     );

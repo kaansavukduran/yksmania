@@ -758,7 +758,7 @@ function ExamResults({
               </ol>
               <div className="exam-explanation">
                 <h4>Çözümün mantığı</h4>
-                <p>{q.explanation}</p>
+                <p>{typeset(q.explanation)}</p>
               </div>
               <SolutionHelp question={q} />
               <button

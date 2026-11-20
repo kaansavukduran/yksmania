@@ -24,6 +24,7 @@ describe("display typesetting", () => {
     expect(typeset("alçalıyor;100 m’de")).toBe("alçalıyor; 100 m’de");
     expect(typeset("merkezdir.1.013 hPa")).toBe("merkezdir. 1.013 hPa");
     expect(typeset("P(2; −3) ve x−4=0, 3,5 ve 1.013")).toBe("P(2; −3) ve x−4=0, 3,5 ve 1.013");
+    expect(typeset("ax−1<2 ile ax−1≥2, bx%3 ve log−1")).toBe("ax−1<2 ile ax−1≥2, bx%3 ve log−1");
   });
   it("uses the ellipsis character", () => {
     expect(typeset("“Örneğin...” diye")).toBe("“Örneğin…” diye");

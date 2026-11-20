@@ -1,3 +1,4 @@
+import { typeset } from "../../src/domain/typeset";
 import { expect, test, type Page, type Locator } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { readFile } from "node:fs/promises";
@@ -196,9 +197,7 @@ for (const [subject, lessonId] of cases) {
       .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
       .fill(lesson.title.tr);
     await page.locator(`.ready-topic[data-lesson-id="${lesson.id}"]`).click();
-    await expect(page.locator(".question-panel h2")).toHaveText(
-      question.prompt.tr,
-    );
+    await expect(page.locator(".question-panel h2")).toHaveText(typeset(question.prompt.tr));
     await expect(page.locator(".answer > span:nth-child(2)")).toHaveText(
       question.options.map((o) => o.tr),
     );
@@ -279,7 +278,7 @@ for (const [subject, lessonId] of cases) {
     }));
     for (let i = 0; i < lesson.questions.length; i++) {
       const q = lesson.questions[i];
-      await expect(page.locator(".question-panel h2")).toHaveText(q.prompt.tr);
+      await expect(page.locator(".question-panel h2")).toHaveText(typeset(q.prompt.tr));
       await page.locator(".answer").nth(expectedResponses[i].selected).click();
       await page
         .getByRole("button", { name: "Cevabı kontrol et", exact: true })
@@ -317,19 +316,15 @@ for (const [subject, lessonId] of cases) {
     await nav(page, "Yanlışlarım");
     const mistake = page.locator(".mistake-card");
     await expect(mistake).toHaveCount(1);
-    await expect(mistake.locator("h2")).toHaveText(question.prompt.tr);
+    await expect(mistake.locator("h2")).toHaveText(typeset(question.prompt.tr));
     await mistake.locator("details > summary").click();
     await expect(mistake.locator("details strong")).toContainText(
       question.options[question.answer].tr,
     );
-    await expect(mistake.locator("details > p").last()).toHaveText(
-      question.explanation.tr,
-    );
+    await expect(mistake.locator("details > p").last()).toHaveText(typeset(question.explanation.tr));
     expect(await stored(page)).toEqual(completed);
     await page.reload();
-    await expect(page.locator(".mistake-card h2")).toHaveText(
-      question.prompt.tr,
-    );
+    await expect(page.locator(".mistake-card h2")).toHaveText(typeset(question.prompt.tr));
     expect(await stored(page)).toEqual(completed);
     expect(JSON.stringify(lesson.questions)).toBe(rawBytes);
     await info.attach("actual-guidance-session.json", {
@@ -473,9 +468,7 @@ for (const target of guardedCases) {
     // Reach the target by actual answer/check/next actions. No draft/IDB seed.
     for (let i = 0; i < target.index; i++) {
       const previous = lesson.questions[i];
-      await expect(page.locator(".question-panel h2")).toHaveText(
-        previous.prompt.tr,
-      );
+      await expect(page.locator(".question-panel h2")).toHaveText(typeset(previous.prompt.tr));
       await expect(page.locator(".answer > span:nth-child(2)")).toHaveText(
         previous.options.map((option) => option.tr),
       );

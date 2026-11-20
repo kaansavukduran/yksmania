@@ -401,7 +401,8 @@ const corrosionCell: FigureDef = {
     els.push(poly(drop, { tone: "b", fill: "b", thin: true }));
     if (step < 2) {
       els.push(txt(v(0, 0.35), "anot", "n", { tone: "warn", small: true, bold: true }));
-      els.push(txt(v(-2.2, 0.15), "katot", "nw", { tone: "c", small: true, bold: true }), txt(v(2.2, 0.15), "katot", "ne", { tone: "c", small: true, bold: true }));
+      // The two cathode labels stand clear of the drop outline, beside its rim.
+      els.push(txt(v(-2.75, 0.55), "katot", "w", { tone: "c", small: true, bold: true }), txt(v(2.75, 0.55), "katot", "e", { tone: "c", small: true, bold: true }));
       els.push(poly([v(-0.5, 0), v(-0.3, -0.25), v(0.3, -0.25), v(0.5, 0)], { tone: "warn", fill: "warn", open: false }));
     }
     if (step === 1) {

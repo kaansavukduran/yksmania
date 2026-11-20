@@ -1,3 +1,4 @@
+import { typeset } from "../../src/domain/typeset";
 import { setThemePreference } from "./helpers/theme";
 import { test, expect, type Page } from "@playwright/test";
 import type { AppState } from "../../src/domain/model";
@@ -201,7 +202,7 @@ for (const extension of extensions)
         .click();
       await expect(page.locator(".question-meta")).toContainText("Soru 1 / 10");
       const q = advanced.questions[0];
-      await expect(page.locator(".question-panel h2")).toHaveText(q.prompt.tr);
+      await expect(page.locator(".question-panel h2")).toHaveText(typeset(q.prompt.tr));
       if (q.passage)
         await expect(page.locator(".question-passage")).toHaveText(
           q.passage.tr,
@@ -210,14 +211,14 @@ for (const extension of extensions)
       await page
         .getByRole("button", { name: "Cevabı kontrol et", exact: true })
         .click();
-      await expect(page.locator(".feedback p")).toHaveText(q.explanation.tr);
+      await expect(page.locator(".feedback p")).toHaveText(typeset(q.explanation.tr));
       await expect
         .poll(async () => (await state(page))?.draft?.checked)
         .toBe(true);
       const saved = (await state(page))?.draft;
       expect(saved?.lessonId).toBe(advanced.id);
       await page.reload();
-      await expect(page.locator(".feedback p")).toHaveText(q.explanation.tr);
+      await expect(page.locator(".feedback p")).toHaveText(typeset(q.explanation.tr));
       expect((await state(page))?.draft).toEqual(saved);
       expect(learning(await state(page))).toEqual(before);
       expect(

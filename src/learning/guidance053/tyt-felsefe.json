@@ -1,0 +1,3006 @@
+[
+ {
+  "id": "din-felsefesi-021-1",
+  "h": "105fde891bef21",
+  "guidance": {
+   "knowledge": [
+    "Ontolojik argüman: Tanrı'nın varlığını, bir kavramın (örneğin en yetkin varlık kavramının) anlamını çözümleyerek göstermeye çalışan akıl yürütmedir; dünyayı gözlemeye ihtiyaç duymaz.",
+    "Kozmolojik argüman evrenin var olmasından ya da sonradan meydana gelmesinden, teleolojik argüman doğadaki düzen ve amaca uygunluktan başlar."
+   ],
+   "strategy": "Argüman türlerini ayıran şey başlangıç noktasıdır; bu yüzden düşünürün işe kavramdan mı, gözlenen olaydan mı başladığına bak.",
+   "steps": [
+    "Belirleyici ifade: “daha yetkini düşünülemeyen varlık kavramını çözümleyerek”. Başlangıç bir kavramdır.",
+    "Metin ayrıca “evrendeki olayların sırasını gözlemlemiyor” diyor; yani evrenin nedeni ya da düzeni çıkış noktası değil.",
+    "Kavram çözümlemesiyle başlayan tür ontolojik argümandır."
+   ],
+   "optionReasons": [
+    "Kozmolojik argüman evrenin varlığından ya da başlangıcından yola çıkar; metin olay gözlemini açıkça dışarıda bırakıyor.",
+    "Teleolojik argüman doğadaki düzen ve amaçtan başlar; burada düzen gözlemi yok, yalnız kavram var.",
+    "Doğru: Başlangıç yetkin varlık kavramının çözümlenmesidir; bu ontolojik argümanın tipik yönüdür.",
+    "Ahlaki kötülük tartışması insanın bilerek verdiği zararla ilgilidir; Tanrı kavramı geçtiği için karıştırılır.",
+    "Tarihsel belge argümanı geçmiş kayıtlara dayanır; metinde hiçbir belge ya da tanıklık yok."
+   ],
+   "commonError": "Tanrı'nın varlığıyla ilgili her argümanı aynı saymak; türü başlangıç noktası belirler.",
+   "check": "Metinden “kavram” sözcüğünü çıkar: argüman çöker. Kozmolojik ya da teleolojik olsaydı gözlenen bir olay ya da düzen gerekecekti."
+  }
+ },
+ {
+  "id": "din-felsefesi-021-2",
+  "h": "040f8488a441cf",
+  "guidance": {
+   "knowledge": [
+    "Öncül: bir argümanda sonucu desteklemek için ileri sürülen yargı. Sonuç: öncüllerden çıkarılan yargı.",
+    "Geçerli bir argümanda sonuç, öncüllerde söylenenin ötesine geçemez; öncülde olmayan yeni bir nitelik (örneğin mutlak iyilik) ayrı bir gerekçe ister."
+   ],
+   "strategy": "Sonuç cümlesinde neyin kanıtlandığını öncüllerle karşılaştır; öncüllerde olmayan bir şey sonuca eklenmişse o ek ayrıca savunulmalıdır.",
+   "steps": [
+    "Öncüller: sonradan olan her şeyin nedeni vardır; evren sonradan olmuştur.",
+    "Sonuç: evrenin bir nedeni vardır. Sonuç yalnız nedenin varlığını söylüyor, onun niteliklerini değil.",
+    "Nedenin mutlak iyi olduğu öncüllerde geçmiyor; bu iddia için ayrıca gerekçe gerekir."
+   ],
+   "optionReasons": [
+    "Sonuç yalnız bir nedenin varlığını söyler; nedenin bütün niteliklerini kanıtladığını sanmak öncülleri aşmaktır.",
+    "En yetkin varlık kavramıyla başlamak ontolojik argümandır; bu argüman sonradan olma gözleminden başlıyor.",
+    "Sonradan olma, varlığa sonradan gelmeyi anlatır; iyilikle ilgili bir tanım değildir.",
+    "Argüman kötülükten hiç söz etmez; doğal kötülük ayrı bir problem alanıdır.",
+    "Doğru: Sonuç nedenin varlığıyla sınırlıdır; mutlak iyilik gibi yeni bir nitelik öncüllerden kendiliğinden çıkmaz."
+   ],
+   "commonError": "Bir nedenin varlığını kanıtlayan argümanın o nedenin bütün niteliklerini de kanıtladığını sanmak.",
+   "check": "Sonuçtaki her kavramı öncüllerde ara: “neden” var, “mutlak iyi” yok. Öyleyse iyilik iddiası ek dayanak ister."
+  }
+ },
+ {
+  "id": "din-felsefesi-021-3",
+  "h": "04b55706ede47e",
+  "guidance": {
+   "knowledge": [
+    "Teleolojik argüman: doğadaki düzen ve amaca uygunluktan (telos: amaç, erek) bu düzeni kuran amaçlı bir kaynağa geçen akıl yürütmedir.",
+    "Ontolojik argüman ise gözlemden değil, bir kavramın çözümlenmesinden başlar."
+   ],
+   "strategy": "Kişinin kanıtını nereden aldığına bak: gözlenen düzen ve işlev uyumu mu, yoksa bir kavramın anlamı mı?",
+   "steps": [
+    "Kanıt: organların belirli işlevlere uygunluğu, yani gözlenen düzen.",
+    "Geçiş: bu uyumun amaçlı bir kaynağa işaret ettiği.",
+    "Metin “kavramdan değil gözlenen düzenden başlıyor” diyor; düzenden amaca geçen tarz teleolojiktir."
+   ],
+   "optionReasons": [
+    "Ontolojik argüman kavram çözümlemesinden başlar; metin bunun tersini açıkça söylüyor.",
+    "Doğru: Gözlenen işlev uyumundan amaçlı kaynağa geçiş teleolojik tarzdır.",
+    "Agnostisizm kesin bilgiye ulaşılamayacağını söyler; kişi ise bir sonuca vardığını savunuyor.",
+    "Adcılık tümellerin yalnız ortak ad olduğunu söyleyen görüştür; Tanrı argümanıyla ilgisi yok.",
+    "Ahlaki görecilik doğru ve yanlışın kişiye ya da topluma göre değiştiğini söyler; metin ahlakla ilgili değil."
+   ],
+   "commonError": "Doğadan söz eden her argümanı kozmolojik ya da ontolojik saymak; düzen ve amaç vurgusu teleolojiyi gösterir.",
+   "check": "Metinde “işlev”, “uyum”, “amaçlı” sözcüklerini işaretle: hepsi amaç (telos) kavramına bağlanıyor."
+  }
+ },
+ {
+  "id": "din-felsefesi-021-4",
+  "h": "00b0fb85efe96f",
+  "guidance": {
+   "knowledge": [
+    "Teizm: bir yaratıcının var olduğunu ve evrene müdahale ettiğini kabul eden görüş.",
+    "Deizm: yaratıcıyı kabul eden ama onun evrenin işleyişine müdahale etmediğini savunan görüş.",
+    "Ateizm Tanrı'nın varlığını reddeder; agnostisizm bu konuda kesin bilgiye ulaşılamayacağını söyler; panteizm Tanrı ile evreni özdeş sayar."
+   ],
+   "strategy": "İki kişi de yaratıcıyı kabul ediyor; ayrım yalnız müdahale konusunda. Bu yüzden yaratıcıyı reddeden ya da bilgiyi askıya alan etiketleri hemen ele.",
+   "steps": [
+    "A ve B “Yaratıcı vardır” diyor; ateizm ve agnostisizm ikisi için de olamaz.",
+    "A müdahaleyi kabul ediyor: teizm.",
+    "B müdahaleyi reddediyor: deizm. Eşleştirme A teizm, B deizm."
+   ],
+   "optionReasons": [
+    "A yaratıcıyı kabul ettiği için ateist olamaz; etiketler ters ve yanlış yerleştirilmiş.",
+    "B yaratıcıyı kabul ediyor, ateizm olamaz; A'nın müdahale vurgusu da deizme uymaz.",
+    "A kesin bir varlık yargısı veriyor, agnostik değil; B'de Tanrı-evren özdeşliği yok.",
+    "Doğru: Müdahale eden yaratıcı teizm, müdahale etmeyen yaratıcı deizmdir.",
+    "Adcılık tümeller, düalizm iki ayrı töz sorusudur; ikisi de Tanrı'nın müdahalesiyle ilgili değil."
+   ],
+   "commonError": "Deizmi ateizmle karıştırmak; deist yaratıcıyı reddetmez, yalnız müdahaleyi reddeder.",
+   "check": "Ortak noktayı (yaratıcı var) sabit tut, farkı (müdahale) değiştir: var ve müdahale eder teizm, var ve etmez deizm."
+  }
+ },
+ {
+  "id": "din-felsefesi-021-5",
+  "h": "13e7ab501ced0e",
+  "guidance": {
+   "knowledge": [
+    "Panteizm: Tanrı ile evrenin özdeş, yani bir ve aynı olduğunu savunan görüş.",
+    "Panenteizm: evrenin Tanrı'da bulunduğunu ama Tanrı'nın evrenden ibaret olmadığını, evreni aştığını savunan görüş. “Pan-en-teizm” her şeyin Tanrı'da olması demektir."
+   ],
+   "strategy": "İki adın farkı tek bir ayrımdadır: Tanrı evrenle aynı mı, yoksa evreni içerip onu aşıyor mu? Tanımları bu ayrıma göre eşleştir.",
+   "steps": [
+    "X: Tanrı ile evren özdeş. Bu panteizmdir.",
+    "Y: evren Tanrı'da, ama Tanrı evrenden ibaret değil. Tanrı evreni içerir ve aşar; bu panenteizmdir.",
+    "Metin “yer” sözcüğünün fiziksel kap anlamında olmadığını belirtiyor; ayrım kavramsaldır. Eşleştirme X panteizm, Y panenteizm."
+   ],
+   "optionReasons": [
+    "Doğru: Özdeşlik panteizm, evreni içerip onu tüketmeyen Tanrı anlayışı panenteizmdir.",
+    "Adların benzerliği yüzünden X ile Y ters çevrilmiş; Y ayrıca Tanrı'yı kabul ettiği için ateizm olamaz.",
+    "Deizm Tanrı'nın müdahale etmemesiyle ilgilidir, özdeşlikle değil; panteizm de Y'ye değil X'e uyar.",
+    "X tek bir Tanrı-evren özdeşliği söylüyor, birden çok tanrı yok; Y'de müdahale konusu geçmiyor.",
+    "Ontolojik kanıt bir argüman türüdür, bir Tanrı-evren görüşü değildir; X de kesin bir yargı veriyor, agnostik değil."
+   ],
+   "commonError": "Panteizm ile panenteizmi ad benzerliği yüzünden karıştırmak; panenteizmde Tanrı evrenden fazlasıdır.",
+   "check": "“Tanrı evrenden ibaret mi?” diye sor: X için evet (panteizm), Y için hayır (panenteizm)."
+  }
+ },
+ {
+  "id": "din-felsefesi-021-6",
+  "h": "1f22627b9b82c5",
+  "guidance": {
+   "knowledge": [
+    "Agnostisizm: Tanrı'nın varlığı ya da yokluğu konusunda kesin bilgiye ulaşılamayacağını savunan bilgi tutumu.",
+    "Ateizm Tanrı'nın yokluğunu ileri sürer; panteizm Tanrı ile evreni özdeş sayar; çoktanrıcılık birden çok tanrıyı kabul eder."
+   ],
+   "strategy": "Cümle bir varlık iddiası değil, bilginin sınırına ilişkin bir iddia içeriyor; o yüzden bilgiyle ilgili tutumu ara ve cümlenin kapsamını aşma.",
+   "steps": [
+    "Belirleyici ifade: “kesin bilgiye ulaşabileceğimizi düşünmüyorum”.",
+    "Kişi Tanrı'nın varlığını da yokluğunu da ileri sürmüyor; yalnız bilginin ulaşamayacağını söylüyor.",
+    "Bu, agnostik bilgi tutumudur."
+   ],
+   "optionReasons": [
+    "Yokluğu kesin bildiğini söylemek ateizme yakın bir iddiadır; kişi ise kesin bilgiyi hiç kabul etmiyor.",
+    "Tanrı-evren özdeşliği panteizmdir; cümlede evrenden söz edilmiyor.",
+    "Çoktanrıcılık birden çok tanrıyı bildiğini ileri sürer; kişi tek bir kesin bilgiye bile ulaşılamayacağını söylüyor.",
+    "Doğru: Kesin bilgiye ulaşılamayacağı ifadesi agnostik tutumdur.",
+    "Düzenden amaçlı kaynağa geçen teleolojik ispat kesin bir sonuç ileri sürer; bu cümleyle çelişir."
+   ],
+   "commonError": "Agnostisizmi ateizmle aynı saymak; agnostik yokluğu ileri sürmez, bilginin sınırını vurgular.",
+   "check": "Cümlede “vardır” ya da “yoktur” yargısı ara: hiçbiri yok, yalnız “bilgiye ulaşamayız” var."
+  }
+ },
+ {
+  "id": "din-felsefesi-021-7",
+  "h": "1fdbb1e8c1af42",
+  "guidance": {
+   "knowledge": [
+    "Ahlaki kötülük: insanın özgür seçimiyle, bilerek yaptığı kötülük (örneğin başkasına zarar vermek).",
+    "Doğal kötülük: deprem, sel gibi insan seçiminden bağımsız olaylardan doğan acı. Özgür irade cevabı, kötülüğü insanın seçimini yanlış kullanmasıyla açıklar."
+   ],
+   "strategy": "Kötülüğün kaynağına bak: insan seçimi mi, doğal olay mı? Cevabın yöneldiği alan bu kaynağa göre belirlenir.",
+   "steps": [
+    "Örnek: bir insanın bilerek başkasına zarar vermesi. Kaynak insan seçimi.",
+    "Cevap: özgür seçimin yanlış kullanılabileceği. Bu da insan seçimine yöneliyor.",
+    "Metin doğal afetlerin henüz konuşulmadığını belirtiyor; cevap ahlaki kötülük alanına yönelir."
+   ],
+   "optionReasons": [
+    "Doğal acılar insan seçiminden bağımsızdır; metin doğal afetlerin henüz konuşulmadığını açıkça söylüyor.",
+    "Doğru: Bilerek zarar verme insan seçimine bağlı ahlaki kötülüktür; özgür irade cevabı buna yönelir.",
+    "Tümellerin zihinsel statüsü bilgi ve varlık felsefesinin konusudur; kötülükle ilgisi yok.",
+    "Sanatta temsil sanat felsefesinin konusudur; metinde eser yok.",
+    "Bilginin duyulardan gelmesi bilgi felsefesi sorusudur; metin kötülüğün kaynağını tartışıyor."
+   ],
+   "commonError": "Ahlaki kötülük ile doğal kötülüğü karıştırıp özgür irade cevabının her türlü acıyı çözdüğünü sanmak.",
+   "check": "Zararı verenin bir insan olup olmadığını sor: evet, ve bilerek yapıyor; öyleyse ahlaki kötülük."
+  }
+ },
+ {
+  "id": "din-felsefesi-021-8",
+  "h": "0de275042d4cfb",
+  "guidance": {
+   "knowledge": [
+    "Töz (madde): kendi başına var olan şey.",
+    "Yoksunluk: bir şeyde bulunması gereken bir niteliğin eksik olması. Körlük gözün yanında duran ayrı bir şey değil, görme yetisinin eksikliğidir."
+   ],
+   "strategy": "Benzetme açıklamanın anahtarıdır: körlüğün ne tür bir şey olduğunu bul, kötülüğe aynı yapıyı uygula.",
+   "steps": [
+    "Metin: kötülük iyilikle aynı düzeyde ayrı bir madde değil, iyinin eksilmesidir.",
+    "Benzetme: körlük, görme yetisinin yoksunluğudur.",
+    "Öyleyse kötülük bir iyiliğin yoksunluğu ya da bozulması olarak açıklanıyor."
+   ],
+   "optionReasons": [
+    "Doğru: Körlük örneği ayrı bir madde değil bir yetinin eksikliğini gösterir; kötülük de iyiliğin yoksunluğudur.",
+    "Metin kötülüğün ayrı bir madde olmadığını açıkça söylüyor; bu şık tam tersini ileri sürüyor.",
+    "Yoksunluk görüşü acıyı hoş saymaz; acının gerçekliğini değil varlık statüsünü tartışır.",
+    "Evrenin sonu hakkında metinde hiçbir bilgi yok; konu kötülüğün ne olduğu.",
+    "Seçim ve deney metinde geçmiyor; açıklama kavramsal bir benzetmeye dayanıyor."
+   ],
+   "commonError": "Kötülüğü yoksunluk olarak açıklamayı kötülüğün önemsiz ya da hoş olduğu iddiası sanmak.",
+   "check": "Körlük yerine sağırlık koy: o da işitme yetisinin eksikliğidir; yapı aynı, ayrı bir madde yok."
+  }
+ },
+ {
+  "id": "din-felsefesi-021-9",
+  "h": "1e0c368a521d7b",
+  "guidance": {
+   "knowledge": [
+    "Çıkarım: bir ya da birkaç yargıdan başka bir yargıya geçmek. Zorunlu çıkarımda sonuç, öncül doğruysa başka türlü olamaz.",
+    "Başlangıç geçmişe dönük bir sınırı, son ise geleceğe dönük bir sınırı anlatır; bunlar iki ayrı iddiadır."
+   ],
+   "strategy": "Öğrenci “hiçbir ek öncül olmadan” bir geçiş yapıyor; bu geçişin kavramların anlamından çıkıp çıkmadığını denetle.",
+   "steps": [
+    "Öncül: bir şeyin başlangıcı vardır. Bu yalnız geçmişteki sınırı söyler.",
+    "Sonuç: o şeyin mutlaka bir sonu vardır. Bu gelecekle ilgili yeni bir iddiadır.",
+    "Başlangıç kavramı son kavramını içermediği için geçiş ancak ek bir dayanakla kurulabilir."
+   ],
+   "optionReasons": [
+    "Başlangıç yalnız geçmişteki ilk anı anlatır; içinde bitiş tarihi yoktur.",
+    "Bir ilk anı kabul etmek fizik yasaları hakkında hiçbir şey kanıtlamaz; konu yalnız çıkarımın biçimi.",
+    "Sonlu geçmiş ile sınırsız gelecek birlikte düşünülebilir; aksi, öğrencinin hatasını tekrarlar.",
+    "Başlangıç bir zaman sınırıdır, ahlaki nitelik vermez; ahlak burada hiç tartışılmıyor.",
+    "Doğru: Başlangıç ve son farklı iddialardır; zorunlu geçiş için ek dayanak gerekir."
+   ],
+   "commonError": "Bir kavramın karşıtını ya da tamamlayıcısını kendiliğinden içerdiğini sanmak.",
+   "check": "Karşı örnek düşün: sayılar 1'den başlar ama sonu yoktur. Başlangıç varken son olmayabilir."
+  }
+ },
+ {
+  "id": "din-felsefesi-021-10",
+  "h": "164ecaa9460959",
+  "guidance": {
+   "knowledge": [
+    "Teoloji (ilahiyat): bir dinin öğretilerini o dinin kendi kabulleri ve kaynakları içinde açıklayan çalışma.",
+    "Din felsefesi: dinî iddiaları baştan kabul etmeden, öncül ve itirazlarıyla akıl yoluyla inceleyen felsefe dalı."
+   ],
+   "strategy": "İki çalışmayı ayıran şey başlangıç kabulüdür; inancı baştan kabul edip etmemelerine bak.",
+   "steps": [
+    "İlk araştırmacı vahiy ve öğretileri o geleneğin kabulleriyle açıklıyor: teolojik bağlam.",
+    "İkincisi argümanı inancı baştan kabul etmeden, öncül ve itirazlarıyla inceliyor: din felsefesi.",
+    "Doğru ayrım: ilkinde teolojik bağlam, ikincisinde bağımsız argüman incelemesi."
+   ],
+   "optionReasons": [
+    "Teolojik açıklama da akıl yürütme kullanır; fark akıl yürütmenin varlığı değil başlangıç kabulüdür.",
+    "Din felsefesi sonucu baştan belirlemez; bağımsız incelemeyi ateizmle karıştırır.",
+    "Doğru: İlki geleneğin kabulleriyle açıklar, ikincisi argümanı başlangıç kabulü olmadan tartışır.",
+    "İki çalışma da metin ve argümanla uğraşıyor; fiziksel ölçüm yok.",
+    "Metin iki çalışmanın başlangıç kabulünün farklı olduğunu açıkça söylüyor."
+   ],
+   "commonError": "Din felsefesinin zorunlu olarak inancı reddettiğini sanmak; o yalnız inancı baştan kabul etmeden inceler.",
+   "check": "“İnanç baştan kabul ediliyor mu?” sorusunu iki çalışmaya sor: ilkinde evet, ikincisinde hayır."
+  }
+ },
+ {
+  "id": "siyaset-felsefesi-021-1",
+  "h": "17715f87caa70e",
+  "guidance": {
+   "knowledge": [
+    "İktidar (fiilî güç): bir kararı uygulatabilme yeteneği.",
+    "Yasallık (usule uygunluk): kararın yürürlükteki kurallara göre alınmış olması.",
+    "Meşruluk: kararın haklı, kabul edilmeyi hak eden bir gerekçeye dayanması. Bu normatif bir sorudur; normatif, “ne olmalı” sorusuyla ilgili demektir."
+   ],
+   "strategy": "Metin üç düzeyi ayırıyor: güç ve usul zaten verilmiş. Yurttaşın sorusunun hangi düzeyde yeni bir şey istediğine bak.",
+   "steps": [
+    "Verilen: kurumun uygulama araçları var (güç) ve karar usulüne uygun alınmış (yasallık).",
+    "Yurttaş “haklara saygı bakımından niçin haklıdır?” diye soruyor; bu bir haklılık sorusudur.",
+    "Haklılık gerekçesi istemek normatif meşruluk sorusudur."
+   ],
+   "optionReasons": [
+    "Uygulama gücü metinde zaten verilmiş; yurttaş yapabilmeyi değil haklılığı soruyor.",
+    "Kâğıdın boyu kararın içeriği ya da haklılığıyla ilgisi olmayan fiziksel bir ayrıntıdır.",
+    "Doğru: Haklara saygı bakımından haklılık istemek normatif meşruluk sorusudur.",
+    "Oylamanın süresi usule ilişkin bir ayrıntıdır; haklılık gerekçesi vermez.",
+    "Görevlinin soyu kişisel bir bilgidir; kararın haklı olup olmadığını belirlemez."
+   ],
+   "commonError": "Bir kararın uygulanabilir ya da yasal olmasını onun meşru olmasıyla aynı saymak.",
+   "check": "Güç ve usul sağlandığı hâlde soru hâlâ anlamlı; demek ki yurttaş bunların ötesinde bir şey, yani haklılık gerekçesi istiyor."
+  }
+ },
+ {
+  "id": "siyaset-felsefesi-021-2",
+  "h": "067ff35f6bf318",
+  "guidance": {
+   "knowledge": [
+    "Toplum sözleşmesi: siyasal düzenin, insanların ortak bir anlaşmayla bir otoriteyi kabul etmesinden doğduğunu açıklayan görüş.",
+    "Hobbes bu sözleşmeyi, insanların çatışma ve güvensizlikten kurtulmak için güçlü bir ortak otoriteyi kabul etmesi olarak açıklar."
+   ],
+   "strategy": "Sözleşmeyi farklı düşünürler farklı amaçlarla açıklar; metindeki amaç sözcüğünü (güvenlik) yakala ve onu vurgulayan düşünürü seç.",
+   "steps": [
+    "Belirleyici ifadeler: “çatışma ve güvensizlikten kurtulmak”, “güçlü ortak otorite”, “güvenliğin sağlanması amacıyla”.",
+    "Sözleşmenin amacı güvenliktir; otoritenin gücü öne çıkar.",
+    "Bu vurgu Hobbes'un yaklaşımına uygundur."
+   ],
+   "optionReasons": [
+    "Locke da sözleşme düşünürüdür, bu yüzden karıştırılır; ama onun vurgusu hakları koruyan sınırlı yönetimdir, güçlü otorite değil.",
+    "Kant'ın çıkar gözetmeyen beğenisi sanat felsefesi kavramıdır; siyasal otoriteyle ilgili değil.",
+    "Croce'nin sezgi ve ifadesi sanat eserini açıklar; toplum sözleşmesiyle ilgisi yok.",
+    "Demokritos'un atom ve boşluğu doğayı açıklayan İlk Çağ görüşüdür.",
+    "Doğru: Güvenlik için güçlü ortak otoriteyi kabul etme vurgusu Hobbes'a uygundur."
+   ],
+   "commonError": "Bütün sözleşme düşünürlerini aynı saymak; güvenlik vurgusu Hobbes'u, hakların korunması vurgusu Locke'u gösterir.",
+   "check": "Metinde “hak” ya da “sınırlama” sözcüğü ara: yok; “güvenlik” ve “güçlü otorite” var. Bu Hobbes'u gösterir."
+  }
+ },
+ {
+  "id": "siyaset-felsefesi-021-3",
+  "h": "0a72fd99085cf6",
+  "guidance": {
+   "knowledge": [
+    "Temel (doğal) haklar: yaşam ve özgürlük gibi, kişinin yalnız insan olduğu için sahip sayıldığı haklar.",
+    "Sınırlı yönetim: yönetimin yetkisinin bu hakları korumakla sınırlı olduğu, hakları çiğneyemeyeceği anlayışı. Bu vurgu Locke'la ilişkilidir."
+   ],
+   "strategy": "Yönetimin neden kurulduğuna ve neyle sınırlandığına bak; amaç hakların korunmasıysa ve yönetim bir araçsa doğru düşünürü bulmuş olursun.",
+   "steps": [
+    "Metin: yönetim yaşam ve özgürlük gibi temel hakları korumak için kurulur.",
+    "Yönetim bu haklarla sınırlıdır; amaç değil araçtır.",
+    "Hakların korunması ve yönetimin sınırlanması Locke'un belirgin vurgusudur."
+   ],
+   "optionReasons": [
+    "Hobbes da sözleşme düşünürüdür; ama ona atfedilen vurgu güçlü otoritedir, hakların sınır çizmesi değil.",
+    "Doğru: Hakları korumak için kurulan ve onlarla sınırlı yönetim Locke'un vurgusudur.",
+    "Schiller'in oyun yaklaşımı sanat felsefesine aittir; yönetimle ilgili değil.",
+    "Anaksimenes'in hava öğretisi doğanın ilk maddesini arar; siyasetle ilgisi yok.",
+    "Gorgias'a atfedilen soru bilginin aktarılabilirliğiyle ilgilidir; hak ve yönetim sorusu değil."
+   ],
+   "commonError": "Hobbes ile Locke'u karıştırmak; sınırı hakların çizdiği yönetim Locke'u gösterir.",
+   "check": "“Yönetim neyle sınırlı?” diye sor: metin “bu haklarla” diyor. Sınırsız güç vurgusu bununla çelişir."
+  }
+ },
+ {
+  "id": "siyaset-felsefesi-021-4",
+  "h": "0b3c2c984f407d",
+  "guidance": {
+   "knowledge": [
+    "Genel irade (Rousseau): topluluğun ortak yararını hedefleyen irade.",
+    "Özel çıkarların toplamı: her kişinin kendi çıkarına yönelik isteklerinin basitçe toplanması. Metin bu ikisini birbirinden ayırıyor."
+   ],
+   "strategy": "Soru “yalnız bu ayrımı” kullanıyor; seçenekleri genel irade ile özel çıkar toplamı arasındaki farkı koruyup korumamalarına göre sına.",
+   "steps": [
+    "Metin: genel irade ortak yararı hedefler.",
+    "Metin: genel irade, özel çıkarların basit toplamından ayrıdır.",
+    "Öyleyse genel irade özel çıkarların aritmetik toplamına indirgenmez."
+   ],
+   "optionReasons": [
+    "Bir anket sonucu özel tercihlerin toplamı olabilir; onu tanım gereği genel irade saymak ayrımı siler.",
+    "Genel irade ortak yararı hedefler; tek bir kişinin, hele en zenginin isteği özel çıkardır.",
+    "Metin bireysel tercihlerin aynı olduğunu söylemiyor; tam tersine özel çıkarlardan söz ediyor.",
+    "Doğru: Metin genel iradeyi ortak yararla açıklar ve özel çıkar toplamından ayırır.",
+    "Ortak yarar, genel iradenin tanımında yer alır; siyasetin tam merkezindedir."
+   ],
+   "commonError": "Genel iradeyi çoğunluğun oyu ya da tercihlerin toplamı sanmak.",
+   "check": "Herkes yalnız kendi çıkarını isteseydi toplam ortak yararı hedeflemeyebilirdi; bu yüzden ikisi aynı olamaz."
+  }
+ },
+ {
+  "id": "siyaset-felsefesi-021-5",
+  "h": "05e079c8c70755",
+  "guidance": {
+   "knowledge": [
+    "Weber üç otorite tipi ayırır: geleneksel (alışkanlık ve göreneğe dayanan), karizmatik (liderin olağanüstü kişisel etkisine dayanan), rasyonel-yasal (makamın tanımlı yetkisine ve genel kurallara dayanan).",
+    "Bunlar “ideal tip”tir: gerçek durumları anlamak için kurulmuş saf modeller."
+   ],
+   "strategy": "İtaatin neye dayandığını bul: kişiye mi, geleneğe mi, kurala mı?",
+   "steps": [
+    "Metin: görevliye kişisel hayranlıktan değil uyuluyor. Karizmatik tip elenir.",
+    "Uyulma nedeni: görevin tanımlı yetkisi ve genel kurallar. Gelenek de anılmıyor.",
+    "Makama ve kişiden bağımsız kurallara dayanma rasyonel-yasal otoritedir."
+   ],
+   "optionReasons": [
+    "Doğru: Makamın tanımlı yetkisine ve genel kurallara dayanan itaat rasyonel-yasal otoritedir.",
+    "Karizmatik otorite kişisel hayranlığa dayanır; metin bunu açıkça dışlıyor.",
+    "Geleneksel otorite görenek ve alışkanlığa dayanır; metinde gelenekten söz edilmiyor.",
+    "Dinî aidiyet Weber'in üç tipinden biri değildir ve metinde geçmez.",
+    "Sanatsal beğeni otoriteyle değil sanat felsefesiyle ilgilidir."
+   ],
+   "commonError": "Rasyonel-yasal otoriteyi kendiliğinden demokratik saymak; metin demokratik nitelik hakkında bilgi vermiyor.",
+   "check": "Görevli değişse ama makam ve kurallar aynı kalsa itaat sürer mi? Evet; bu rasyonel-yasal tipin ölçütüdür."
+  }
+ },
+ {
+  "id": "siyaset-felsefesi-021-6",
+  "h": "079904aa6e2402",
+  "guidance": {
+   "knowledge": [
+    "Rawls'un fark ilkesi: eşit temel özgürlükler ve adil fırsat eşitliği sağlandıktan sonra, eşitsizlikler en az avantajlı grubun durumunu iyileştirdiği ölçüde kabul edilir.",
+    "En az avantajlı grup: toplumda en kötü durumdaki kesim."
+   ],
+   "strategy": "Öncelikli koşullar (temel özgürlükler, adil fırsat) iki seçenekte aynı verildiği için karar yalnız en az avantajlı grubun durumuna göre verilir.",
+   "steps": [
+    "Temel özgürlükler ve adil fırsat iki seçenekte de eşit; bunlar karar vermez.",
+    "En az avantajlı grubun durumu: A'da 5, B'de 8 birim.",
+    "8 > 5 olduğundan fark ilkesi B'yi destekler."
+   ],
+   "optionReasons": [
+    "Fark ilkesi en az avantajlının durumunun iyileşmesini ister; ona daha az verilmesini adil saymak ilkeyi tersine çevirir.",
+    "Fark ilkesi en yüksek gelirliye değil en az avantajlı gruba bakar.",
+    "Metinde temel özgürlükler bozulmuyor, iki seçenekte eşit; ayrıca Rawls'ta bu özgürlükler önceliklidir.",
+    "Doğru: Öncelikli koşullar eşitken en az avantajlı grubun durumu B'de daha iyidir: 8 > 5.",
+    "Karşılaştırma için gereken bütün bilgi verilmiş; tek değişken en az avantajlının durumu."
+   ],
+   "commonError": "Fark ilkesini toplam ya da en yüksek refaha bakmak sanmak; ölçüt en kötü durumdaki gruptur.",
+   "check": "Sayıları yer değiştir: A 8, B 5 olsaydı ilke A'yı desteklerdi. Karar yalnız en az avantajlının durumuna bağlı."
+  }
+ },
+ {
+  "id": "siyaset-felsefesi-021-7",
+  "h": "15af57189aa400",
+  "guidance": {
+   "knowledge": [
+    "Negatif özgürlük: kişinin başkaları tarafından doğrudan engellenmemesi, dış müdahalenin yokluğu.",
+    "Pozitif özgürlük: kişinin kendini yönetebilmesi ve amaçlarını gerçekleştirebilmesi için gereken imkânlara sahip olması."
+   ],
+   "strategy": "İki yazarın özgürlüğü neyle tanımladığına bak: biri engelin yokluğuyla, öteki kendini yönetme imkânıyla. Bu ayrımın adını seçeneklerde ara.",
+   "steps": [
+    "Birinci yazar: bireyin doğrudan engellenmemesi. Bu negatif özgürlüktür.",
+    "İkinci yazar: kişinin kendini yönetebilmesi ve amaçlarını gerçekleştirebilmesi. Bu pozitif özgürlüktür.",
+    "Öne çıkan ayrım negatif ve pozitif özgürlüktür."
+   ],
+   "optionReasons": [
+    "Maddi ve formel neden Aristoteles'in dört neden ayrımına aittir; özgürlükle ilgili değil.",
+    "Doğru: Engel yokluğu negatif, öz yönetim ve imkân pozitif özgürlük vurgusudur.",
+    "Ontolojik ve teleolojik kanıt Tanrı'nın varlığına ilişkin argüman türleridir.",
+    "İdea Platon'un, atom Demokritos'un varlık açıklamasıdır; siyasetle ilgisi yok.",
+    "Taklit sanat felsefesi kavramıdır; satış fiyatı ise felsefi bir ayrım değildir."
+   ],
+   "commonError": "Negatif sözcüğünü “kötü” anlamında okumak; burada yalnız engelin yokluğunu anlatır.",
+   "check": "Önündeki kapı açık ama yürüyemiyorsan negatif özgürlüğün var, pozitif özgürlüğün eksik; iki vurgu gerçekten ayrı."
+  }
+ },
+ {
+  "id": "siyaset-felsefesi-021-8",
+  "h": "006ffdfcb958c7",
+  "guidance": {
+   "knowledge": [
+    "Kuvvetler ayrılığı: yasama (yasa yapma), yürütme (yasayı uygulama) ve yargı (anlaşmazlıkları yasaya göre çözme) görevlerinin farklı kurumlara verilmesi.",
+    "Denetim ve denge: bu kurumların birbirinin yetki aşımını sınırlayabilmesi."
+   ],
+   "strategy": "Metin düzenlemenin amacını kendisi söylüyor; o amaç cümlesini bul ve seçenekle eşleştir.",
+   "steps": [
+    "Görevler üç kuruma ayrılmış ve kurumlar birbirini denetleyebiliyor.",
+    "Belirleyici ifade: “gücün tek elde sınırsızlaşmasını önlemek”.",
+    "Temel amaç gücü sınırlamak ve özgürlüğü koruyacak bir denetim kurmaktır."
+   ],
+   "optionReasons": [
+    "Doğru: Görev ayrımı ve karşılıklı denetim gücü sınırlar, özgürlüğü korur.",
+    "Kurum adlarını farklı yazmak biçimsel bir ayrıntıdır; metindeki amaç denetimdir.",
+    "Kişisel karizmayla dokunulmazlık gücü sınırsızlaştırır; düzenlemenin amacının tersidir.",
+    "Fiziksel ağırlık siyasal karar ölçütü değildir; metinde böyle bir şey yok.",
+    "Amaç karar alınamaması değil, kararın tek elde sınırsız güce dönüşmemesidir."
+   ],
+   "commonError": "Kuvvetler ayrılığını yalnız kurumları saymak sanmak; asıl işlev karşılıklı denetimdir.",
+   "check": "Üç görev tek bir kişide toplansaydı onu kim denetlerdi? Hiç kimse; düzenleme tam bu sorunu çözüyor."
+  }
+ },
+ {
+  "id": "siyaset-felsefesi-021-9",
+  "h": "1607e4f118f2d2",
+  "guidance": {
+   "knowledge": [
+    "Ütopya: arzu edilen, ideal bir toplum düzeninin kurgusu.",
+    "Distopya: istenmeyen, korkutucu bir düzenin kurgusu. Genellikle bugünkü eğilimlerin tehlikelerini göstererek uyarı işlevi görür."
+   ],
+   "strategy": "Kurgudaki düzenin olumlu mu olumsuz mu çizildiğine ve anlatının ne amaçla yazıldığına bak.",
+   "steps": [
+    "Romandaki düzen: gözetim ve düşünce denetiminin yaygınlaştığı, istenmeyen bir düzen.",
+    "İşlev: gelecekteki bir tehlikeyi görünür kılıp bugünkü uygulamaları sorgulatmak.",
+    "İstenmeyen düzenle uyaran kurgu distopyadır."
+   ],
+   "optionReasons": [
+    "Maddi neden bir şeyin neyden yapıldığını açıklar; romanın uyarı işleviyle ilgisi yok.",
+    "Roman kurgudur; gerçek olayları kaydeden bir tutanak değildir.",
+    "Ontolojik argüman Tanrı'nın varlığına ilişkindir; siyasal kurguyla ilgisi yok.",
+    "Kurgunun amacı imkânsızlık ispatı değil, olası bir tehlikeye karşı uyarmaktır.",
+    "Doğru: İstenmeyen bir düzeni göstererek uyaran kurgu distopyadır."
+   ],
+   "commonError": "Distopya ile ütopyayı karıştırmak; ütopya ideal, distopya istenmeyen düzeni anlatır.",
+   "check": "Düzen anlatıda özlenen bir şey mi? Hayır, korkutucu ve istenmeyen; bu distopyanın ayırt edici yönüdür."
+  }
+ },
+ {
+  "id": "siyaset-felsefesi-021-10",
+  "h": "0aaf009efef39e",
+  "guidance": {
+   "knowledge": [
+    "Yasal hak (pozitif hukuk): yürürlükteki yasa metninde tanınmış hak.",
+    "Ahlaki ya da doğal hak: yasada yazmasa bile haklı bir gerekçeyle savunulabilen hak talebi. Bu ayrım, yasaların kendisinin eleştirilebilmesini sağlar."
+   ],
+   "strategy": "Kişi bir hakkın yasada olmamasının onu savunmayı engellemediğini söylüyor; bunun için hangi iki şeyin birbirinden ayrılması gerektiğini bul.",
+   "steps": [
+    "Sav: yasada tanınmamış bir hak yine de ahlaki ya da doğal hak olarak savunulabilir.",
+    "Bu ancak “yasada tanınma” ile “haklı olma” farklı düzeyler sayılırsa mümkündür.",
+    "Sav, yasal tanınma ile haklı hak talebini ayırmayı gerektirir."
+   ],
+   "optionReasons": [
+    "Hakları fiilî güçle özdeşleştirmek, gücü olmayanın hak talebini anlamsız kılar; sav bunun tersidir.",
+    "Kişi yasal düzenin eleştirilebilmesini vurguluyor; yasaları eleştiriden bağışık saymak bununla çelişir.",
+    "Doğru: Sav, yürürlükteki yasanın durumu ile haklı hak talebini farklı düzeyler sayar.",
+    "Kişi ortak kurallara karşı çıkmıyor; yalnız mevcut kuralların eleştirilebileceğini söylüyor.",
+    "Hak normatif bir kavramdır; nesnenin ağırlığı gibi fiziksel bir ölçüye indirgenemez."
+   ],
+   "commonError": "Yasada yazmayan bir hakkın hiç savunulamayacağını sanmak; yasallık ile haklılık ayrı düzeylerdir.",
+   "check": "Ayrım yapılmasaydı hiçbir yasa haksız olarak eleştirilemezdi; oysa metin eleştiriyi mümkün sayıyor."
+  }
+ },
+ {
+  "id": "sanat-felsefesi-021-1",
+  "h": "1964d0ee5923c3",
+  "guidance": {
+   "knowledge": [
+    "Estetik: güzel ve güzellik deneyimi üzerine düşünen felsefe dalı; doğadaki güzelliği de kapsar.",
+    "Sanat eseri: insan eliyle, bir anlam ya da etki amacıyla yapılmış ürün. Sanat felsefesi bu eserlerin ne olduğunu ve değerini sorgular."
+   ],
+   "strategy": "İki durumu ayrı ayrı oku: doğal güzellik estetik deneyim olur ama sanat eseri değildir; rahatsız eden eser de sanat olabilir. Bu iki ayrımı birlikte koruyan seçeneği seç.",
+   "steps": [
+    "Gün batımı güzel bulunuyor ama insan yapımı değil: her güzel nesne sanat eseri değildir.",
+    "İnsan yapımı bir eserin rahatsız edici etkisi tartışılıyor: sanat yalnız hoşluk vermek zorunda değildir.",
+    "İki gözlemi birlikte söyleyen değerlendirme doğrudur."
+   ],
+   "optionReasons": [
+    "Gün batımı doğal bir görünümdür; güzel olanı insan yapımı saymak estetik ile sanatı karıştırır.",
+    "Metin rahatsız eden eserin tartışıldığını gösteriyor; sanatı hoşluğa indirgemek bu durumu dışlar.",
+    "Doğru: Doğal güzellik sanat eseri değildir; eser de yalnız hoşluk vermek zorunda değildir.",
+    "Estetik güzellik deneyimini inceler; satış fiyatı ekonomik bir ölçüdür.",
+    "Sanat felsefesinin işi tam da eserler hakkında soru sormaktır."
+   ],
+   "commonError": "Güzel olan ile sanat olanı aynı saymak; doğa güzel olabilir, sanat rahatsız edebilir.",
+   "check": "İki örneği çapraz sına: güzel ama sanat değil (gün batımı), sanat ama hoş değil (rahatsız eden eser). Seçenek ikisini de kapsıyor."
+  }
+ },
+ {
+  "id": "sanat-felsefesi-021-2",
+  "h": "09569ae3f089a5",
+  "guidance": {
+   "knowledge": [
+    "Taklit (mimesis) ya da temsil kuramı: sanatı, dış dünyadaki nesnelerin eserde yeniden sunulması olarak açıklayan yaklaşım.",
+    "Bu yaklaşım eser ile dünya arasındaki ilişkiye odaklanır; eser ile sanatçının iç yaşantısı arasındaki ilişki başka kuramların konusudur."
+   ],
+   "strategy": "Yorumcunun ilişkiyi hangi iki şey arasında kurduğuna bak: eser ile dünya mı, eser ile sanatçı mı?",
+   "steps": [
+    "Yorumcu tablodaki doğa görünümünün nasıl temsil edildiğini inceliyor.",
+    "Eser ile dış dünyadaki nesne arasındaki ilişkiyi öne çıkarıyor; sanatçının yaşantısını tartışmıyor.",
+    "Dünya ile eser arasındaki ilişki taklit ya da temsil yaklaşımıdır."
+   ],
+   "optionReasons": [
+    "Ekonomik kazanç eserin piyasa değeridir; yorumcu temsil ilişkisini inceliyor.",
+    "Ontolojik kanıt Tanrı'nın varlığına ilişkin bir argümandır; sanat yorumuyla ilgisi yok.",
+    "Pozitif hukuk yürürlükteki yasalardır; tabloyla ilgisi yok.",
+    "Atomlar doğanın yapısını açıklayan bir görüştür; eserin dünyayı nasıl sunduğuyla ilgili değil.",
+    "Doğru: Dış dünyadaki nesnenin eserde nasıl yeniden sunulduğu taklit ya da temsil odağıdır."
+   ],
+   "commonError": "Taklidi fotoğraf gibi bire bir kopya sanmak; temsil seçici bir yeniden sunuştur.",
+   "check": "Yorumcu sanatçının duygularını incelemeye başlasaydı odak ifadeye kayardı; burada odak dünya ile eser arasında kalıyor."
+  }
+ },
+ {
+  "id": "sanat-felsefesi-021-3",
+  "h": "016e24e9f8b15e",
+  "guidance": {
+   "knowledge": [
+    "Görünüş: duyularla algılanan, değişen dünya.",
+    "İdeal olan (idea): akılla kavranan, değişmeyen gerçeklik. Platon'a göre sanat görünüşü yeniden temsil ettiği için hakikatten bir kat daha uzaklaşabilir."
+   ],
+   "strategy": "Metindeki sıralamayı izle: ideal olan, onun görünüşü ve görünüşün sanattaki temsili. Bu basamaklı uzaklık vurgusu belirli bir düşünürü gösterir.",
+   "steps": [
+    "Metin: sanat duyusal görünüşü yeniden temsil eder.",
+    "Görünüş ideal olanla aynı düzeyde değildir; sanat bu yüzden hakikatten uzaklaşabilir.",
+    "Görünüş ile ideal ayrımına dayanan bu sanat eleştirisi Platon'a yakındır."
+   ],
+   "optionReasons": [
+    "Schiller sanatı duyusal ve biçimsel yönün özgür oyunu olarak görür; hakikatten uzaklaşma eleştirisi yapmaz.",
+    "Doğru: Görünüşün taklidi ile hakikatten uzaklık arasında bağ kurmak Platoncu sanat eleştirisidir.",
+    "Croce eseri sezginin ifadesi olarak açıklar; görünüş ile ideal ayrımına dayanmaz.",
+    "Locke'un sınırlı yönetimi siyaset felsefesidir; sanatla ilgisi yok.",
+    "Weber'in yasal otoritesi siyasal itaat türüdür; sanat eleştirisi değildir."
+   ],
+   "commonError": "Platon ile Aristoteles'i karıştırmak; burada taklit olumsuz, hakikatten uzaklaşma olarak değerlendiriliyor.",
+   "check": "Metindeki “ideal olan” ve “görünüş” ayrımını seçeneklerde ara: yalnız Platon'un öğretisi bu ikili yapıya dayanır."
+  }
+ },
+ {
+  "id": "sanat-felsefesi-021-4",
+  "h": "1bef1b15e07745",
+  "guidance": {
+   "knowledge": [
+    "Mimesis: Yunanca taklit ya da temsil.",
+    "Aristoteles'in mimesis anlayışı: sanat yalnız yaşanmış olayı kopyalamaz; olabilecek eylemleri olasılık ve bütünlük içinde kurar. Taklit, insanın öğrenmesiyle de ilişkilidir."
+   ],
+   "strategy": "Metin taklidi kopyadan ayırıyor ve öğrenmeyle ilişkilendiriyor; taklidi olumlu ve kurucu gören yaklaşımı ara.",
+   "steps": [
+    "Metin: sanatsal anlatı tek bir olayı kopyalamaz, olabilecek eylemleri olasılık ve bütünlük içinde kurar.",
+    "Taklit öğrenmeyle ilişkilendiriliyor; yani bilgiyle bağı var.",
+    "Bu, Aristoteles'in mimesis anlayışıdır."
+   ],
+   "optionReasons": [
+    "Metin sanatın tek bir olayı kopyalamadığını açıkça söylüyor; mekanik fotoğraf savının tersi.",
+    "Metin taklidi öğrenmeyle ilişkilendiriyor; bilgiyle ilişkiyi reddetmek bununla çelişir.",
+    "Tanrı-evren özdeşliği panteizmdir; sanatla ilgisi yok.",
+    "Doğru: Olasılık, bütünlük ve öğrenme vurgusu Aristoteles'in mimesis anlayışına uygundur.",
+    "Rasyonel-yasal otorite Weber'in siyasal kavramıdır."
+   ],
+   "commonError": "Her taklit kuramını hakikatten uzaklaşma diye okumak; Aristoteles taklidi öğretici ve kurucu görür.",
+   "check": "“Olabilecek eylemler” ifadesine dikkat: kopya yalnız olmuş olanı gösterir, burada ise olası olan kuruluyor."
+  }
+ },
+ {
+  "id": "sanat-felsefesi-021-5",
+  "h": "026d96fc107380",
+  "guidance": {
+   "knowledge": [
+    "Sezgi: bir şeyi akıl yürütmeden doğrudan kavrama.",
+    "İfade: iç yaşantının dışa vurulup biçim kazanması. Croce'yle ilişkilendirilen anlayışta sanat, sezgi ile ifadenin birliğidir."
+   ],
+   "strategy": "Metinde birlikte geçen iki anahtar terimi (sezgi ve ifade) yakala ve onları sanatın temeline koyan düşünürü seç.",
+   "steps": [
+    "Metin: eser, sanatçının sezgisel yaşantısının özgün bir ifadeye dönüşmesidir.",
+    "Dış görünüşün kopyası değil, sezgi ile ifade arasındaki birlik vurgulanıyor.",
+    "Bu vurgu Croce'yle ilişkilidir."
+   ],
+   "optionReasons": [
+    "Doğru: Sezgi ve ifadeyi sanatın kuruluşunda öne çıkaran anlayış Croce'yle ilişkilidir.",
+    "Hobbes siyaset felsefesinde güvenlik ve güçlü otoriteyle anılır; sanat kuramıyla değil.",
+    "Anaksimenes doğanın ilk maddesini hava olarak açıklayan İlk Çağ düşünürüdür.",
+    "Demokritos atom ve boşluk öğretisiyle anılır; sanatın ifadesiyle ilgisi yok.",
+    "Hareket argümanı Tanrı'nın varlığına ilişkin bir kanıttır; sanat açıklaması değildir."
+   ],
+   "commonError": "İfade kuramını taklit kuramıyla karıştırmak; burada odak dış dünya değil sanatçının sezgisidir.",
+   "check": "Metin “dış görünüşün kopyasından çok” diyerek taklidi geri plana itiyor; geriye sezgi ve ifade kalıyor."
+  }
+ },
+ {
+  "id": "sanat-felsefesi-021-6",
+  "h": "09365fc1712500",
+  "guidance": {
+   "knowledge": [
+    "Schiller'in oyun anlayışı: sanat etkinliğinde insanın duyusal yönü ile akli-biçimsel yönü özgürce ilişki kurar; bu özgür ilişkiye “oyun” denir.",
+    "Burada oyun gündelik oyalanma ya da yarış değil, iki yönün zorlamasız uyumunu anlatan felsefi bir kavramdır."
+   ],
+   "strategy": "Metin “oyun” sözcüğünün gündelik anlamını dışlıyor; duyusal ve biçimsel yönün özgür ilişkisini anlatan yaklaşımı ara.",
+   "steps": [
+    "Metin: sanat etkinliğinde duyusal yön ile akli-biçimsel yön özgürce ilişki kurar.",
+    "Oyun sözcüğü oyalanma ya da yarış anlamında kullanılmıyor.",
+    "Bu, Schiller'in oyun anlayışıdır."
+   ],
+   "optionReasons": [
+    "Kâr hesabı ekonomik bir ölçüdür; metin sanat etkinliğindeki özgür ilişkiyi anlatıyor.",
+    "Doğal hak öğretisi siyaset felsefesine aittir.",
+    "Hudûs argümanı evrenin sonradan olmasından Tanrı'ya geçen bir kanıttır; sanatla ilgisi yok.",
+    "Doğru: Duyusal ve biçimsel yönün özgür etkinlikteki ilişkisi Schiller'in oyun anlayışıdır.",
+    "Adcılık tümellerin yalnız ortak ad olduğunu söyler; sanat etkinliğiyle ilgili değil."
+   ],
+   "commonError": "Oyun sözcüğünü gündelik anlamıyla okuyup kavramın felsefi işlevini kaçırmak.",
+   "check": "Metindeki iki yönü (duyusal, akli-biçimsel) ve “özgürce” sözcüğünü seçenekte ara: yalnız Schiller'in oyun anlayışı bunları birleştirir."
+  }
+ },
+ {
+  "id": "sanat-felsefesi-021-7",
+  "h": "1541af5c8b6a3f",
+  "guidance": {
+   "knowledge": [
+    "Çıkar gözetmeme (Kant): güzellik beğenisinin yarar, kazanç ya da sahip olma isteğine dayanmaması.",
+    "Beğeni yargısı: bir şeyi güzel bulduğumuzu bildiren yargı."
+   ],
+   "strategy": "Kişinin beğenisini neye dayandırdığına bak: kazanca ve kullanıma mı, biçimin kendisine mi?",
+   "steps": [
+    "Kişi resmi yeniden satmak ya da işe yarar bulduğu için beğenmiyor.",
+    "Biçimini güzel bulduğu için beğeniyor; kazanç beklentisi yok.",
+    "Beğeninin yarar ve kazançtan bağımsız olması Kant'ın çıkar gözetmeme vurgusudur."
+   ],
+   "optionReasons": [
+    "Metin yarar ve kazancı beğeninin temeli olmaktan açıkça çıkarıyor.",
+    "Doğru: Kazanç ve kullanım beklentisi olmadan biçimi güzel bulmak çıkar gözetmemedir.",
+    "Metinde ölçüm ya da oylama yok; tek bir kişinin beğenisi anlatılıyor.",
+    "Tek kişinin beğenisi herkesin fiilen aynı duyguyu yaşadığını göstermez.",
+    "Metin beğeniyi biçime bağlıyor; propaganda gibi bir amaç yok."
+   ],
+   "commonError": "Çıkar gözetmemeyi ilgisizlik sanmak; kişi resimle ilgilidir ama beğenisi kazanca dayanmaz.",
+   "check": "Resim satılamaz ve işe yaramaz olsaydı kişi onu yine güzel bulur muydu? Metne göre evet; bu çıkar gözetmemeyi doğrular."
+  }
+ },
+ {
+  "id": "sanat-felsefesi-021-8",
+  "h": "0211b8170bab35",
+  "guidance": {
+   "knowledge": [
+    "Evrensel geçerlilik talebi (Kant bağlamında): bir şeyi güzel bulduğumda başkalarının da bu yargıya katılmasını beklemem.",
+    "Fiilî oy birliği: herkesin gerçekten aynı yargıyı vermiş olması. Talep bir beklentidir, gerçekleşmiş bir olgu değildir."
+   ],
+   "strategy": "Yorumcunun ne söylediğini ve ne söylemediğini ayır: katılma bekliyor, ama herkesin katıldığını bildirmiyor.",
+   "steps": [
+    "Yorumcu başkalarının da yargısına katılmasını beklediğini söylüyor: bu bir geçerlilik talebidir.",
+    "Metin herkesin bir ankette aynı cevabı verdiğini söylemediğini açıkça belirtiyor.",
+    "Talep ile fiilî oy birliği farklıdır."
+   ],
+   "optionReasons": [
+    "Doğru: Başkasının katılmasını beklemek bir taleptir; herkesin fiilen aynı yargıyı verdiği bir veri değildir.",
+    "Metin anket sonucunu açıkça reddediyor; talebi gerçekleşmiş oy birliği sanmak hatadır.",
+    "Bir beklenti eserin fiyatını belirlemez; konu ekonomik değil estetik.",
+    "Beğeni yargısı estetik bir yargıdır; yasal yaptırım gücü yoktur.",
+    "Farklı beğeniler olabilir; talep, farklılığın imkânsız olduğunu söylemez."
+   ],
+   "commonError": "Bir yargının herkes için geçerli olduğunu ileri sürmeyi, herkesin zaten katıldığını söylemekle karıştırmak.",
+   "check": "Biri yorumcuya katılmasa talep çürür mü? Hayır, talep bir beklentidir; çürüyecek olan fiilî oy birliği iddiası olurdu."
+  }
+ },
+ {
+  "id": "sanat-felsefesi-021-9",
+  "h": "19ace4857a41aa",
+  "guidance": {
+   "knowledge": [
+    "Hegel'le ilişkilendirilen sanat anlayışı: sanat eseri, düşünsel içeriğin (anlamın) duyusal bir biçimde görünmesidir.",
+    "Duyusal biçim: taş, ses, renk gibi duyularla algılanan malzemenin düzenlenmiş hâli."
+   ],
+   "strategy": "Metin eseri iki öğenin ilişkisiyle tanımlıyor: düşünsel içerik ve duyusal biçim. Bu ilişkiyi öne çıkaran düşünürü seç.",
+   "steps": [
+    "Metin: sanat eseri düşünsel içeriğin duyusal biçimde görünmesidir.",
+    "Taş ya da ses yalnız ham madde değil, anlamın görünürleştiği düzendir.",
+    "Düşünsel içerik ile duyusal biçim ilişkisi Hegel'le ilişkilidir."
+   ],
+   "optionReasons": [
+    "Protagoras'ın insan ölçüsü yargıların kişiye göre değişmesini anlatır; sanat eserini tanımlamaz.",
+    "Locke'un hakların korunması siyaset felsefesidir.",
+    "Thales doğanın ilk maddesini su olarak gösteren İlk Çağ düşünürüdür.",
+    "İbn Haldun'un asabiyeti toplumsal dayanışmayla ilgilidir; sanatla ilgili değil.",
+    "Doğru: Düşünsel içeriğin duyusal biçimde görünmesi Hegel'le ilişkilendirilen sanat anlayışıdır."
+   ],
+   "commonError": "Eseri yalnız malzemesine ya da yalnız taşıdığı mesaja indirgemek; burada ikisinin birliği vurgulanıyor.",
+   "check": "Seçeneklerden yalnız biri sanat felsefesiyle anılan bir düşünürdür; öbürleri siyaset, doğa ya da bilgi sorularına aittir."
+  }
+ },
+ {
+  "id": "sanat-felsefesi-021-10",
+  "h": "078eabcbcf1d6e",
+  "guidance": {
+   "knowledge": [
+    "Yarar (işlev): bir nesnenin bir işe yaraması.",
+    "Estetik değer: bir nesneyi biçimi, uyumu nedeniyle güzel bulmak.",
+    "Çıkar: nesneden kazanç sağlama beklentisi. Aynı nesnede bu üç değer birlikte bulunabilir ama birbirine indirgenmez."
+   ],
+   "strategy": "Ece her yargıyı ayrı bir “için” gerekçesiyle kuruyor; her yargının gerekçesini ayrı okuyup aralarında zorunlu bağ olup olmadığına bak.",
+   "steps": [
+    "Kullanışlı, çünkü sağlam: yarar gerekçesi.",
+    "Güzel, çünkü çizgileri uyumlu: estetik gerekçe. Kazançlı, çünkü satılabilir: çıkar gerekçesi.",
+    "Aynı nesne için üç farklı değer, üç farklı gerekçeyle değerlendirilebilir."
+   ],
+   "optionReasons": [
+    "Ece sağlamlığı kullanışlılığa, güzelliği çizgi uyumuna bağlıyor; sağlamlıktan güzelliğe geçiş kurmuyor.",
+    "Ece aynı sandalyeyi hem güzel hem satılabilir buluyor; bu şık metindeki örnekle çelişir.",
+    "Doğru: Yarar, estetik değer ve çıkar aynı nesnede ayrı gerekçelerle değerlendirilebilir.",
+    "Tek bir nesnenin güzel ve kullanışlı olması, her güzel nesnenin her işe yaradığını göstermez.",
+    "Ece üç yargıyı açıkça ayrı gerekçelerle kuruyor; tek dayanak yok."
+   ],
+   "commonError": "Bir nesnede birlikte bulunan değerleri birbirinin nedeni ya da aynısı saymak.",
+   "check": "Sandalye kırılsa güzelliği değişmez ama kullanışlılığı biter; demek ki iki değerin dayanağı farklı."
+  }
+ },
+ {
+  "id": "felsefi-okuma-ve-yazma-021-1",
+  "h": "05afcdf5596c32",
+  "guidance": {
+   "knowledge": [
+    "Sav (tez): yazarın okura kabul ettirmek istediği temel yargı ya da öneri.",
+    "Gerekçe (dayanak): savı desteklemek için verilen neden. Türkçede “çünkü” sözcüğü genellikle gerekçeyi başlatır."
+   ],
+   "strategy": "Cümleyi “çünkü” sözcüğünden ikiye böl: öncesi yazarın istediği şey, sonrası onun nedeni.",
+   "steps": [
+    "Cümlenin ilk bölümü: “Atölyenin saatleri uzatılmalıdır.” Bu bir öneridir.",
+    "“Çünkü” sonrası: akşam çalışanlar mevcut saatlerde gelemiyor. Bu, önerinin nedenidir.",
+    "Sav saatlerin uzatılması önerisidir."
+   ],
+   "optionReasons": [
+    "Bu cümle “çünkü” sonrasında gelir; savı destekleyen gerekçedir, savın kendisi değil.",
+    "Doğru: Yazarın kabul ettirmek istediği öneri saatlerin uzatılmasıdır.",
+    "Atölyelerin yeri metinde hiç geçmiyor; metinden çıkmayan bir genelleme.",
+    "Metin akşam çalışan katılımcılar olduğunu söylüyor; bu şık metinle çelişir.",
+    "Mevcut saatlerin sonsuz olduğu metinle çelişir; sınırlı oldukları için bazıları gelemiyor."
+   ],
+   "commonError": "Gerekçeyi savla karıştırıp argümanın yönünü ters okumak.",
+   "check": "“Neden?” sorusunu sor: “Saatler neden uzatılmalı?” Cevap gerekçedir; soruyu doğuran cümle savdır."
+  }
+ },
+ {
+  "id": "felsefi-okuma-ve-yazma-021-2",
+  "h": "0797c678c45a43",
+  "guidance": {
+   "knowledge": [
+    "Felsefi problem: cevabı aranan, tartışmaya açık temel soru (örneğin “Bir eylemi özgür yapan nedir?”).",
+    "Kavram: bir düşünceyi adlandıran anlam birimi (özgürlük, eylem, sorumluluk). Kavramlar problemi kurmaya ve açıklamaya yarar."
+   ],
+   "strategy": "Metinde soru biçimindeki cümleyi ve anlamı açıklanan sözcükleri ayır; ikisinin birbirine nasıl hizmet ettiğine bak.",
+   "steps": [
+    "Problem: “Bir eylemi özgür yapan nedir?” Bu cevap aranan sorudur.",
+    "Kavramlar: özgürlük, eylem, sorumluluk. Araştırmacı bunların anlamını açıklıyor.",
+    "Kavramlar soruyu kurmada ve açıklamada iş görür; problem ise cevap aranan sorudur."
+   ],
+   "optionReasons": [
+    "Problem bir kişi adı değil, cevap aranan bir sorudur; kavramlar da tarih bilgisi değildir.",
+    "Kavram tanımlamak gereklidir ama tartışmayı tek başına kapatmaz; tanımın kendisi de tartışılabilir.",
+    "Bir sözcüğü yazmak problemi çözmez; kavramın açıklanması ve gerekçeli tartışma gerekir.",
+    "Doğru: Problem cevap aranan sorudur; kavramlar bu soruyu kurmada ve açıklamada iş görür.",
+    "Metnin kendisi problem ile kavramları birlikte kullanıyor; ilişki kurulmuş."
+   ],
+   "commonError": "Kavramı tanımlamanın problemi kendiliğinden çözdüğünü sanmak.",
+   "check": "Kavramları çıkar: soru kurulamaz hâle gelir. Soruyu çıkar: kavramların açıklanmasının amacı kalmaz. İkisi birbirine bağlıdır."
+  }
+ },
+ {
+  "id": "felsefi-okuma-ve-yazma-021-3",
+  "h": "0ae0ea56393075",
+  "guidance": {
+   "knowledge": [
+    "Örtük öncül: argümanda söylenmeyen ama sonucun çıkması için gereken gizli varsayım.",
+    "Bir tekil durumdan (bu karar) bir sonuca zorunlu geçiş için genellikle “her … şudur” biçiminde genel bir kural gerekir."
+   ],
+   "strategy": "Verilen öncülü ve sonucu yan yana koy; ikisini birbirine bağlayan genel kuralı kur. Kural “çoğunluk” ile “adalet”i bağlamalıdır.",
+   "steps": [
+    "Açık öncül: Bu karar çoğunluğun oyunu aldı. Sonuç: Bu karar adildir.",
+    "Eksik halka: çoğunluk ile adalet arasında genel bir bağ.",
+    "Genel kural: “Çoğunluğun seçtiği her karar adildir.” Bu eklenince sonuç zorunlu çıkar."
+   ],
+   "optionReasons": [
+    "Doğru: Bu genel kural eklenince karar kuralın kapsamına girer ve sonuç zorunlu olur.",
+    "Kâğıdın rengi ne çoğunlukla ne adaletle ilgilidir; köprü kurmaz.",
+    "Salonun penceresi oylama ile adaleti bağlamaz; ilgisiz bir olgu.",
+    "Bu cümle köprüyü kurmak yerine onu zayıflatır; çıkarımı geçersiz kılan bir karşı öncüldür.",
+    "Adalet sözcüğü sonuçta açıkça geçiyor; bu cümle metinle çelişir ve köprü kurmaz."
+   ],
+   "commonError": "Örtük öncülü bulmayı onu doğru kabul etmekle karıştırmak; köprü eleştirinin hedefi olabilir.",
+   "check": "Bulduğun öncülü ekleyip argümanı oku: her çoğunluk kararı adil, bu karar çoğunluk kararı, öyleyse adil. Sonuç zorunlu çıkıyor."
+  }
+ },
+ {
+  "id": "felsefi-okuma-ve-yazma-021-4",
+  "h": "1b42f1ad84a1cc",
+  "guidance": {
+   "knowledge": [
+    "Evrensel sav: bir grubun bütün üyeleri hakkında söylenen yargı (“bütün kişiler”).",
+    "Karşı örnek: evrensel savın kapsadığı gruptan olup sava uymayan tek bir örnek. Tek bir karşı örnek evrensel savı çürütmeye yeter."
+   ],
+   "strategy": "Karşı örneğin aynı gruptan olduğunu ve “yalnız” sözcüğüyle çeliştiğini doğrula; sonra sonucu karşı örneğin kapsamını aşmadan söyle.",
+   "steps": [
+    "Sav: gruptaki herkes yalnız sabah çalışabilir.",
+    "Deniz aynı gruptan ve akşam da çalışabiliyor; “yalnız sabah” ifadesine uymuyor.",
+    "Tek bir karşı örnek yeter: evrensel sav verilen kapsamıyla korunamaz."
+   ],
+   "optionReasons": [
+    "Bir kişinin akşam da çalışabilmesi herkesin yalnız akşam çalıştığını göstermez; aşırı genelleme.",
+    "Deniz bile sabah çalışabiliyor olabilir; karşı örnek sabah çalışmayı yasaklamaz.",
+    "Metin Deniz'in aynı grupta olduğunu açıkça söylüyor; bu şık metinle çelişir.",
+    "Bir evrensel savın çürümesi bütün evrensel savların yanlış olduğunu göstermez.",
+    "Doğru: Aynı gruptan tek bir karşı örnek evrensel savı verilen kapsamıyla çürütür."
+   ],
+   "commonError": "Bir karşı örnekten, çürütülen savın tersinin de genel olarak doğru olduğunu çıkarmak.",
+   "check": "Savı “Gruptaki kişilerin çoğu yalnız sabah çalışabilir.” diye daraltırsan Deniz onu çürütmez; çürüyen yalnız “bütün” kapsamıdır."
+  }
+ },
+ {
+  "id": "felsefi-okuma-ve-yazma-021-5",
+  "h": "1d4d9b0c532555",
+  "guidance": {
+   "knowledge": [
+    "Tutarlılık: bir metnin yargıları arasında çelişki bulunmaması; metnin iç düzenine bakar.",
+    "Doğruluk: bir yargının olgulara, gerçekliğe uygun olması; metnin dışındaki dünyaya bakar."
+   ],
+   "strategy": "Metin iki ayrı denetimden geçiyor: iç düzen ve olgusal dayanak. Birinin sağlanmasının ötekini garanti edip etmediğini sor.",
+   "steps": [
+    "İç denetim: metinde hiçbir çelişki yok, yani tutarlı.",
+    "Dış denetim: temel olgu öncülü yanlış.",
+    "Öyleyse tutarlılık tek başına öncüllerin doğruluğunu garanti etmez."
+   ],
+   "optionReasons": [
+    "Metin tutarlı olduğu hâlde öncülü yanlış çıkıyor; bu şık metindeki durumla doğrudan çelişir.",
+    "Yanlış öncüllü metin de cümleler kurabilir; metin zaten kurulmuş ve tutarlı.",
+    "Doğru: Çelişkisiz bir metin yanlış bir olguya dayanabilir; tutarlılık doğruluğu garanti etmez.",
+    "Metin tam da bu iki kavramın ayrıldığı bir örnek; aynı olsalardı tutarlı metnin öncülü yanlış çıkamazdı.",
+    "Metinde ünlü bir yazardan söz edilmiyor; otoriteye başvurmak denetimin yerini tutmaz."
+   ],
+   "commonError": "Tutarlı ve düzenli bir metni kendiliğinden doğru saymak.",
+   "check": "Bir masal düşün: kendi içinde çelişkisiz olabilir ama olgulara uymaz. Tutarlılık ile doğruluk ayrı ölçütlerdir."
+  }
+ },
+ {
+  "id": "felsefi-okuma-ve-yazma-021-6",
+  "h": "00e395f953b873",
+  "guidance": {
+   "knowledge": [
+    "Savın kapsamı: bir yargının hangi durumları içine aldığı. “Bazı durumlarda” dar, “hiçbir koşulda” en geniş kapsamdır.",
+    "Saman adam hatası: karşıdakinin savını değiştirip daha kolay çürütülen başka bir savı eleştirmek."
+   ],
+   "strategy": "Yazarın cümlesiyle eleştirmenin aktardığı cümleyi kapsam sözcükleri bakımından karşılaştır.",
+   "steps": [
+    "Yazar: “Bazı durumlarda süre sınırı yararlı olabilir.” Dar kapsamlı ve olasılık bildiren bir sav.",
+    "Eleştirmen: “Yazar hiç kimsenin hiçbir koşulda konuşmasını istemiyor.” Kapsam ve içerik tamamen değişmiş.",
+    "Eleştirmen asıl savı değil, kendi kurduğu başka bir savı eleştiriyor."
+   ],
+   "optionReasons": [
+    "Doğru: Eleştirmen “bazı durumlarda”yı “hiçbir koşulda”ya çevirip başka bir sava yöneliyor.",
+    "Eleştirmen savı aynı kapsamla kurmuyor; tam tersine kapsamı genişletiyor.",
+    "Eleştirmen hiçbir gerekçeyi çürütmüyor; asıl görüşün gerekçelerine hiç değinmiyor.",
+    "Eleştiride tarih bilgisi yok; konu savın kapsamı.",
+    "Hem yazarın hem eleştirmenin cümlesinde süre ve konuşma sözcükleri var; bu şık metinle çelişir."
+   ],
+   "commonError": "Bir savı eleştirmeden önce onun kapsam sözcüklerini (bazı, her, hiçbir) doğru aktarmamak.",
+   "check": "Eleştirmenin cümlesini yazara geri götür: yazar “bazı durumlar” dedi; “hiçbir koşulda konuşmasın” hiçbir yerde geçmiyor."
+  }
+ },
+ {
+  "id": "felsefi-okuma-ve-yazma-021-7",
+  "h": "1a5957f525d602",
+  "guidance": {
+   "knowledge": [
+    "Çözümleme (analiz): bir bütünü parçalarına ve işlevlerine ayırmak.",
+    "Sentez: parçalar arasındaki ilişkileri kurarak bütünü yeniden oluşturmak."
+   ],
+   "strategy": "Öğrencinin yaptığı işi iki aşamaya böl: önce ne yapıyor, ardından ne yapıyor? Her aşamanın adını bul.",
+   "steps": [
+    "Birinci aşama: metni problem, sav, gerekçe ve itiraz olarak ayrı kutulara ayırıyor. Bu çözümlemedir.",
+    "İkinci aşama: bu parçaların ilişkilerini gösterip bütün anlamı yeniden açıklıyor. Bu sentezdir.",
+    "Öğrenci çözümleme ve sentezi birlikte yapıyor."
+   ],
+   "optionReasons": [
+    "Belge yakma ve kopyalama metni anlamakla ilgili değildir; öğrenci metni yok etmiyor, yeniden kuruyor.",
+    "Piyasa hesabı ekonomik bir işlemdir; metinde fiyat ya da kâr yok.",
+    "Hız ölçümü fiziksel bir işlemdir; öğrenci kavramsal bir çalışma yapıyor.",
+    "Öğrenci gerekçeyi gizlemiyor, açıkça bir kutuya yerleştiriyor.",
+    "Doğru: Parçalara ayırma çözümleme, ilişkileri kurup bütünü açıklama sentezdir."
+   ],
+   "commonError": "Yalnız parçalara ayırmayı yeterli sanıp bütünü yeniden kurma aşamasını gözden kaçırmak.",
+   "check": "Öğrenci yalnız kutuları doldursaydı sadece çözümleme olurdu; ilişkileri gösterdiği için sentez de var."
+  }
+ },
+ {
+  "id": "felsefi-okuma-ve-yazma-021-8",
+  "h": "1b3ee052dd7e2b",
+  "guidance": {
+   "knowledge": [
+    "Felsefi yazma süreci: soruyu daraltma, sav ve dayanakları planlama, taslak yazma ve düzeltme aşamalarından oluşur.",
+    "İtiraz: sava karşı ileri sürülen güçlü bir karşı gerekçe. İtirazı ele almak savın sınırlarını netleştirir."
+   ],
+   "strategy": "Öğrencinin itirazla karşılaşınca ne yaptığına bak: savı bırakıyor mu, çarpıtıyor mu, yoksa gerekçeyle düzeltiyor mu?",
+   "steps": [
+    "Öğrenci soruyu daraltıp sav ve dayanaklarını planlıyor.",
+    "Taslakta güçlü bir itirazı ele alıyor ve savının kapsamını gerekçeyle düzeltiyor.",
+    "İtiraz savı daha savunulabilir hâle getirmeye katkı sağlamıştır."
+   ],
+   "optionReasons": [
+    "Öğrenci düşünmeyi bırakmıyor; itirazdan sonra savını geliştiriyor.",
+    "Taslağı düzeltmek yazma sürecinin olağan parçasıdır; başarısızlık değil gelişme gösterir.",
+    "Doğru: Öğrenci itirazı inceleyip savının kapsamını gerekçeli biçimde düzeltiyor.",
+    "Sözcük sıralamak gerekçe değildir; öğrenci dayanaklarını planlayarak gerekçe kuruyor.",
+    "Öğrenci itirazı çarpıtmıyor, onu güçlü hâliyle ele alıyor."
+   ],
+   "commonError": "Bir itiraz karşısında savı düzeltmeyi zayıflık ya da yenilgi saymak.",
+   "check": "Düzeltmeden sonra sav itiraza karşı daha korunaklı mı? Evet, kapsamı gerekçeyle daraltıldı; bu gelişmedir."
+  }
+ },
+ {
+  "id": "felsefi-okuma-ve-yazma-021-9",
+  "h": "1fada88a3b1aed",
+  "guidance": {
+   "knowledge": [
+    "Argüman: öncüller ile bu öncüllere dayanan sonuçtan oluşan yapı.",
+    "Öncül: sonucu desteklemek için sunulan yargı. Sonuç: öncüllerden çıkarılan yargı; “o hâlde”, “öyleyse” gibi sözcüklerle başlar."
+   ],
+   "strategy": "Üç cümlenin görevini belirle: hangileri dayanak, hangisi sonuç? Sonra bu ilişkinin adını bul.",
+   "steps": [
+    "Birinci cümle: bütün kayıtlı öğrenciler kart aldı. İkinci cümle: Ece kayıtlı öğrencidir. İkisi dayanaktır.",
+    "Üçüncü cümle “O hâlde” ile başlar: Ece kart aldı. Bu sonuçtur.",
+    "Öncülleri sonuca bağlayan bu yapı argümandır."
+   ],
+   "optionReasons": [
+    "Yapı yalnız sonuç cümlesinden ibaret değil; ilk iki cümle ona dayanak oluyor.",
+    "Metinde düşünürün yaşamından söz edilmiyor; cümleler bir akıl yürütme kuruyor.",
+    "Her üç cümle de doğru ya da yanlış olabilen bir yargıdır; anlamsız ses dizisi değildir.",
+    "Doğru: İlk iki yargı öncül, son yargı sonuçtur; bu ilişki argümanı oluşturur.",
+    "Metinde malzeme yok; cümleler bir sonuca destek sunuyor."
+   ],
+   "commonError": "Yalnız sonuç cümlesini argüman sanmak; argüman öncüllerle sonuç arasındaki ilişkidir.",
+   "check": "İlk iki cümleyi çıkar: geriye kalan “Ece kart aldı.” desteksiz bir iddiadır, artık argüman değildir."
+  }
+ },
+ {
+  "id": "felsefi-okuma-ve-yazma-021-10",
+  "h": "01c6e81a426b78",
+  "guidance": {
+   "knowledge": [
+    "Kaynak gösterme: aktarılan bir görüşün kime ait olduğunu belirtmek.",
+    "Özetleme kendi sözcüklerle aktarmaktır; doğrudan alıntı yazarın sözcüklerini aynen kullanmaktır ve ayrıca işaretlenir.",
+    "Düşünsel izlenebilirlik: okurun hangi düşüncenin kime ait olduğunu takip edebilmesi."
+   ],
+   "strategy": "Öğrencinin aktarılan görüşü ve kendi itirazını nasıl ayırdığına bak; bu ayrımın okura ne kazandırdığını sor.",
+   "steps": [
+    "Öğrenci başka yazarın görüşünü özetliyor ve kaynağını belirtiyor; alıntıları ayrıca işaretliyor.",
+    "Kendi itirazını ayrı paragrafta yazıyor.",
+    "Böylece aktarılan görüş ile öğrencinin yorumu ayrılıyor; okur kimin ne söylediğini izleyebiliyor."
+   ],
+   "optionReasons": [
+    "Öğrenci kaynağı açıkça belirtiyor; bu şık tam tersini, yani başkasının görüşünü sahiplenmeyi anlatır.",
+    "Doğru: Aktarılan görüş ile öğrencinin yorumu ayrılır ve düşünsel izlenebilirlik sağlanır.",
+    "Kaynak göstermek alıntıyı incelemeyi gereksiz kılmaz; öğrenci zaten ona itiraz ediyor.",
+    "Öğrenci özetlediği görüşe itiraz ediyor; özet yazmak aynı görüşte olmayı göstermez.",
+    "Kaynak göstermek bir iddianın doğruluğunu kanıtlamaz; yalnız kime ait olduğunu belirtir."
+   ],
+   "commonError": "Kaynak göstermeyi aktarılan görüşü onaylamak sanmak.",
+   "check": "Kaynak ve paragraf ayrımı kaldırılsaydı okur itirazın kime ait olduğunu bilemezdi; ayrımın yararı tam budur."
+  }
+ },
+ {
+  "id": "ilk-cag-felsefesi-021-1",
+  "h": "123af2e15e25cc",
+  "guidance": {
+   "knowledge": [
+    "Arkhe: İlk Çağ düşünürlerinin aradığı, doğadaki bütün çokluğun temelindeki ilk ilke ya da ilk madde.",
+    "Thales arkheyi su, Anaksimandros sınırsız-belirsiz apeiron (belirli bir madde olmayan), Anaksimenes hava olarak gösterir; Anaksimenes'e göre hava yoğunlaşıp seyrekleşerek başka şeylere dönüşür."
+   ],
+   "strategy": "Her düşünürü önerdiği ilkeyle eşleştir; en ayırt edici ipucu apeironun belirli bir madde olmamasıdır.",
+   "steps": [
+    "A suyu öne çıkarıyor: Thales.",
+    "B sınırsız-belirsiz apeironu öne çıkarıyor: Anaksimandros.",
+    "C havayı ve yoğunlaşma-seyrekleşmeyi öne çıkarıyor: Anaksimenes. Eşleştirme A Thales, B Anaksimandros, C Anaksimenes."
+   ],
+   "optionReasons": [
+    "Üç ad doğru ama yerleri karışık: su Thales'in, apeiron Anaksimandros'un, hava Anaksimenes'in ilkesidir.",
+    "Doğru: Su Thales, apeiron Anaksimandros, hava ve yoğunlaşma-seyrekleşme Anaksimenes ile ilişkilidir.",
+    "Platon, Aristoteles ve Sokrates de İlk Çağ düşünürleridir; ama arkhe olarak su, apeiron ya da hava önermezler.",
+    "Gorgias ve Protagoras sofistlerdir, bilgi ve yargı üzerine düşünürler; Schiller sanat düşünürüdür.",
+    "Hobbes, Locke ve Rousseau siyaset felsefesindeki sözleşme düşünürleridir; doğanın ilk maddesini aramazlar."
+   ],
+   "commonError": "Ad benzerliği yüzünden Anaksimandros ile Anaksimenes'i karıştırmak.",
+   "check": "Ayırt edici ipucunu sına: belirli bir madde olmayan apeiron yalnız Anaksimandros'a, yoğunlaşma-seyrekleşme yalnız Anaksimenes'e aittir."
+  }
+ },
+ {
+  "id": "ilk-cag-felsefesi-021-2",
+  "h": "1de5d0bf367960",
+  "guidance": {
+   "knowledge": [
+    "Empedokles: doğada dört kök (ateş, hava, su, toprak) kabul eder; bunların birleşip ayrılmasını sevgi ve nefret güçleriyle açıklar.",
+    "Burada sevgi birleştiren, nefret ayıran doğal güçtür; kişiler arası duygu anlamında kullanılmaz."
+   ],
+   "strategy": "Metin tek bir ilke değil dört kök ve iki güç veriyor; tek maddeli görüşleri ele, dört kök ile sevgi-nefreti birleştiren düşünürü bul.",
+   "steps": [
+    "Dört kök kabul ediliyor: ateş, hava, su, toprak.",
+    "Birleşme ve ayrılma sevgi ve nefret güçleriyle açıklanıyor.",
+    "Dört kök ve sevgi-nefret açıklaması Empedokles'e aittir."
+   ],
+   "optionReasons": [
+    "Thales tek bir ilke olarak suyu önerir; metinde dört kök var, tek madde değil.",
+    "Anaksimenes tek bir ilke olarak havayı önerir; hava burada dört kökten yalnız biridir.",
+    "Sokrates'in ironisi sorgulama yöntemidir; doğanın yapısını açıklamaz.",
+    "Doğru: Dört kök ve sevgi-nefret güçleri Empedokles'in yaklaşımıdır.",
+    "Weber'in otorite tipleri siyasal itaati açıklar; doğayla ilgisi yok."
+   ],
+   "commonError": "Seçenekte metindeki maddelerden biri geçtiği için tek maddeli bir görüşü seçmek.",
+   "check": "Kök sayısını say: dört. Tek ilkeli düşünürler (su, hava) bu sayıyı karşılamaz."
+  }
+ },
+ {
+  "id": "ilk-cag-felsefesi-021-3",
+  "h": "0cdd1b805bcdc8",
+  "guidance": {
+   "knowledge": [
+    "Herakleitos: değişimi ve karşıtların ilişkisini öne çıkarır; değişimin içindeki düzeni logos kavramıyla anlatır.",
+    "Parmenides: aklın varlığı bir ve değişmez olarak düşünmesi gerektiğini savunur; yokluktan varlığın çıkmasını sorunlu bulur."
+   ],
+   "strategy": "İki görüşü değişime verdikleri yere göre ayır: biri değişimi vurgular, öteki değişmez varlığı.",
+   "steps": [
+    "A: değişim, karşıtların ilişkisi ve logos. Bu Herakleitos'tur.",
+    "B: varlık bir ve değişmezdir, yokluktan varlık çıkmaz. Bu Parmenides'tir.",
+    "Eşleştirme A Herakleitos, B Parmenides."
+   ],
+   "optionReasons": [
+    "Doğru: Değişim ve logos Herakleitos, değişmez bir varlık Parmenides ile ilişkilidir.",
+    "İki ad doğru ama ters çevrilmiş; değişmez varlığı savunan Parmenides değişim görüşü olamaz.",
+    "Locke siyaset, Croce sanat felsefesine aittir; varlık ve değişim sorusunu tartışmazlar.",
+    "Schiller sanat, Hobbes siyaset düşünürüdür; logos ya da değişmez varlıkla ilgileri yok.",
+    "Kant'ın estetiği ve Weber'in otoritesi doğa ve varlık sorusuyla ilgili değildir."
+   ],
+   "commonError": "Herakleitos ile Parmenides'i ters eşleştirmek.",
+   "check": "B'deki “değişmez” sözcüğüne bak: değişimi vurgulayan Herakleitos'a uymaz, öyleyse B Parmenides'tir."
+  }
+ },
+ {
+  "id": "ilk-cag-felsefesi-021-4",
+  "h": "0277732e0d2842",
+  "guidance": {
+   "knowledge": [
+    "Atomculuk (Demokritos): görülen değişimi bölünemeyen temel parçaların (atomların) ve boşluğun varlığıyla, parçaların farklı birleşim ve düzenleriyle açıklayan antik görüş.",
+    "Antik atomculuk felsefi bir açıklamadır; modern deneysel atom fiziğiyle aynı şey değildir."
+   ],
+   "strategy": "Önce metnin hangi antik görüşü anlattığını belirle; sonra bu görüşün modern bilimle nasıl ilişkilendirilmesi gerektiğine dikkat et.",
+   "steps": [
+    "Metin değişimi temel parçalar ve boşlukla, parçaların birleşim düzenleriyle açıklıyor: Demokritosçu atomculuk.",
+    "Metin antik bir düşünceyi anlattığını belirtiyor.",
+    "Doğru yargı hem Demokritosçu atomculuğu tanır hem de onu modern atom fiziğiyle özdeşleştirmez."
+   ],
+   "optionReasons": [
+    "Demokritos antik bir düşünürdür; modern laboratuvar deneyleri ona atfedilemez.",
+    "Boşluğun varlığını kabul etmek tam da bir varlık sorusudur; bu şık metnin tersini söylüyor.",
+    "Kant'ın beğeni yargısı sanat felsefesine aittir; metin doğanın yapısını anlatıyor.",
+    "Parçaların birleşimiyle açıklama atomculuğun ta kendisidir; ilişkiyi reddetmek hatadır.",
+    "Doğru: Görüş Demokritosçu atomculuktur; modern atom fiziğinin bütün ayrıntılarıyla özdeş değildir."
+   ],
+   "commonError": "Aynı “atom” sözcüğü geçtiği için antik atomculuğu modern atom fiziğiyle aynı saymak.",
+   "check": "Doğru şıkkın iki parçası da metne dayanır: parçalar ve boşluk atomculuğu, “antik bir düşünce” ifadesi modern fizikten ayrımı gösterir."
+  }
+ },
+ {
+  "id": "ilk-cag-felsefesi-021-5",
+  "h": "1d03398569aaa0",
+  "guidance": {
+   "knowledge": [
+    "Sofistler: İlk Çağ'da bilgi, yargı ve dil üzerine düşünen bir grup düşünür.",
+    "Protagoras “İnsan her şeyin ölçüsüdür.” vurgusuyla yargıların kişiye ve koşula göre değiştiğini öne çıkarır. Gorgias'a ise varlık, bilme ve bildirme üzerine üç ayrı sav atfedilir."
+   ],
+   "strategy": "Soru yalnız ilk vurguyu soruyor; “insan ölçüdür” ifadesini doğru sofistle eşleştir, üçlü savı ona karıştırma.",
+   "steps": [
+    "İlk vurgu: “İnsan ölçüdür.” ve yargıların kişiye göre değişmesi.",
+    "Bu vurgu Protagoras'la ilişkilidir.",
+    "Varlık, bilme ve bildirme üzerine üçlü sav başka bir düşünüre, Gorgias'a aittir."
+   ],
+   "optionReasons": [
+    "Gorgias da sofisttir ve metinde ayrıca anılıyor; ama üçlü sav ile insan ölçüsü farklı düşünürlere aittir.",
+    "Anaksimandros doğanın ilkesini apeiron olarak gösterir; yargıların görecelikle ilgisi yok.",
+    "Doğru: İnsan ölçüsü ve yargıların kişiye göre değişmesi Protagoras'la ilişkilidir.",
+    "Aquinolu Thomas Orta Çağ'da akıl ile inanç ilişkisini tartışır; sofist değildir.",
+    "İbn Haldun toplumsal dayanışmayı inceleyen bir düşünürdür; insan ölçüsü vurgusu ona ait değil."
+   ],
+   "commonError": "İki sofisti, Protagoras ile Gorgias'ı aynı görüşün sahibi saymak.",
+   "check": "Metin üçlü savı “başka bir düşünür”e veriyor; öyleyse ilk vurgu Gorgias olamaz, Protagoras kalır."
+  }
+ },
+ {
+  "id": "ilk-cag-felsefesi-021-6",
+  "h": "1c2440922bb7fb",
+  "guidance": {
+   "knowledge": [
+    "Sokratesçi sorgulama: bir tanımı sorularla, farklı durumlardaki sonuçları ve karşı örnekleri inceleyerek sınama yöntemi.",
+    "Amaç kişiyi küçük düşürmek değil, tanımın gerekçesini ve kapsamını sınayıp daha tutarlı bir kavrayışa ulaşmaktır."
+   ],
+   "strategy": "Sorgulamanın tanıma ne yaptığına bak: sorular ve karşı örnekler tanımı neye doğru götürüyor?",
+   "steps": [
+    "Tanım: adalet, güçlü olanın her istediğini yapmasıdır.",
+    "Sorgulama: bu tanımın farklı durumlardaki sonuçları ve karşı örnekleri soruluyor.",
+    "Amaç tanımın gerekçesini ve kapsamını sınayıp daha tutarlı bir kavrayış geliştirmektir."
+   ],
+   "optionReasons": [
+    "Doğru: Sorular ve karşı örnekler tanımın gerekçesini ve kapsamını sınar, daha tutarlı kavrayışa götürür.",
+    "Kişinin adını öğrenmek tanımı sınamaz; sorgulama cevapları denetler, doğru saymaz.",
+    "Satış fiyatı adaletle ilgili bir ölçüt değildir; sorgulama kavramsaldır.",
+    "Sorgulamanın amacı alay ya da küçük düşürme değil, kavrayışı geliştirmektir.",
+    "Örnekler tanımın yerine geçmez; tanımı sınamak için kullanılır."
+   ],
+   "commonError": "Sokratesçi sorgulamayı karşıdakini mahcup etme oyunu sanmak.",
+   "check": "Sorgulama sonunda tanım düzeltilirse yöntem amacına ulaşmış olur; bu da amacın daha tutarlı bir kavrayış olduğunu gösterir."
+  }
+ },
+ {
+  "id": "ilk-cag-felsefesi-021-7",
+  "h": "16c223c100ca88",
+  "guidance": {
+   "knowledge": [
+    "İdea (Platon): değişen duyusal nesnelerin ötesindeki, değişmeyen ve akılla kavranan gerçeklik; örneğin güzel nesnelerin ötesindeki “güzelin kendisi”.",
+    "Platon'da idea, kişinin aklına gelen anlık bir düşünce değil, bilginin nesnesidir."
+   ],
+   "strategy": "Metin değişen nesneyi değişmeyen güzelin kendisinden ayırıyor; bu ikili yapıyı kuran anlayışı ara.",
+   "steps": [
+    "Ayrım: değişen güzel nesneler ile değişmeyen güzelin kendisi.",
+    "Değişmeyen olan, anlık özel bir düşünce değil, bilginin nesnesi olarak ele alınıyor.",
+    "Değişen duyusal nesne ile değişmeyen idea ayrımı Platon'un idealar öğretisidir."
+   ],
+   "optionReasons": [
+    "Demokritos her şeyi atomların düzeniyle açıklar; değişmeyen “güzelin kendisi” gibi bir ayrım yapmaz.",
+    "Locke'un sınırlı yönetimi siyaset felsefesidir; güzellik ve bilgi sorusuyla ilgisi yok.",
+    "Weber'in karizması siyasal otorite türüdür.",
+    "Schiller sanat düşünürüdür ama oyun anlayışı yarış puanı değildir ve idea ayrımı kurmaz.",
+    "Doğru: Değişen nesne ile değişmeyen ideal olanın ayrımı Platon'un idealar öğretisidir."
+   ],
+   "commonError": "“İdea” sözcüğünü gündelik anlamda kişisel fikir sanmak.",
+   "check": "Metin değişmeyenin “aklına anlık gelen özel düşünce değil” olduğunu söylüyor; bu, Platon'daki ideanın gündelik fikirden farkıdır."
+  }
+ },
+ {
+  "id": "ilk-cag-felsefesi-021-8",
+  "h": "1e7aa9728e43b9",
+  "guidance": {
+   "knowledge": [
+    "Aristoteles'in dört nedeni: maddi neden (neyden yapıldığı), formel neden (biçimi, düzeni), fail neden (kim ya da ne yaptığı), ereksel neden (ne için yapıldığı, amacı)."
+   ],
+   "strategy": "Her nedeni kendi sorusuyla eşleştir; ereksel neden “ne için?” sorusunun cevabıdır.",
+   "steps": [
+    "Neyden yapıldı? Bronz: maddi neden. Kim yaptı? Heykeltıraş: fail neden.",
+    "Hangi biçimde? Figürün düzeni: formel neden.",
+    "Ne için yapıldı? Anma amacıyla: ereksel neden budur."
+   ],
+   "optionReasons": [
+    "Bronz heykelin neyden yapıldığını söyler; bu maddi nedendir.",
+    "Heykeltıraş heykeli yapan kişidir; bu fail nedendir.",
+    "Doğru: Ereksel neden yapılma amacıdır; burada anma amacı.",
+    "Figürün düzeni heykelin biçimidir; bu formel nedendir.",
+    "Kütle malzemenin bir özelliğidir; maddi nedene yakındır, amaç bildirmez."
+   ],
+   "commonError": "Fail neden ile ereksel nedeni karıştırmak; yapan kişi ile yapılma amacı farklıdır.",
+   "check": "“Heykel ne için yapıldı?” sorusunu sor: cevap ancak “anmak için” olabilir; bronz ya da heykeltıraş bu soruya cevap vermez."
+  }
+ },
+ {
+  "id": "ilk-cag-felsefesi-021-9",
+  "h": "0e67ead55d73ae",
+  "guidance": {
+   "knowledge": [
+    "Erdem: insanın iyi ve doğru eylemde bulunma yatkınlığı.",
+    "Aristoteles'te erdemli orta: iki aşırı uç (örneğin korkaklık ve ölçüsüz atılganlık) arasında, koşula ve kişiye uygun akıllı seçimle bulunan noktadır; aritmetik ortalama değildir."
+   ],
+   "strategy": "Metin ortanın sayısal olmadığını açıkça söylüyor; koşul ve akıllı seçim vurgusunu taşıyan görüşü seç.",
+   "steps": [
+    "Cesaret iki uç arasında konumlanıyor: korkaklık ve ölçüsüz atılganlık.",
+    "Orta, koşula ve kişiye uygun akıllı seçimle belirleniyor; iki sayının ortalaması değil.",
+    "Bu, Aristoteles'in erdemde orta anlayışıdır."
+   ],
+   "optionReasons": [
+    "Metin ortanın aritmetik ortalama olmadığını açıkça söylüyor; sayısal orta bu uyarıyı yok sayar.",
+    "Metin ahlaki seçimi merkeze koyuyor; atom hesabı onu yok saymaz, burada hiç geçmez.",
+    "Güzelin satış fiyatı sanat ve ekonomi konusudur; erdem tartışmasıyla ilgisi yok.",
+    "Doğru: Uçlar arasında koşula uygun akıllı seçim Aristoteles'in erdemde orta anlayışıdır.",
+    "Metin koşula uygunluğu vurguluyor; koşulun önemsiz olduğu savı bununla çelişir."
+   ],
+   "commonError": "Erdemde ortayı iki ucun matematiksel ortalaması sanmak.",
+   "check": "Aynı tehlike karşısında farklı kişi ve koşullar farklı cesur eylem gerektirebilir; sabit bir sayı bu esnekliği karşılamaz."
+  }
+ },
+ {
+  "id": "ilk-cag-felsefesi-021-10",
+  "h": "0464c698a24266",
+  "guidance": {
+   "knowledge": [
+    "Tao: Çin düşüncesinde yol, doğal akış ve uyumla ilişkili temel kavram; zorlamadan kaçınmayı vurgular.",
+    "İndirgeme: zengin içerikli bir görüşü tek bir basit etikete ya da slogana çevirip içeriğini kaybetmek."
+   ],
+   "strategy": "Uyarının neyi engellemek istediğine bak: karşılaştırmayı mı, yoksa anlamı silen özdeşleştirmeyi mi?",
+   "steps": [
+    "Okur Tao'da doğal akışla uyum ve zorlamadan kaçınma vurgusunu görüyor.",
+    "Bunu “mutlak olarak hiçbir şey yoktur” savıyla eşitlemesi uyarılıyor.",
+    "Gerekçe: Tao'yu tek bir mutlak yokluk etiketine indirgemek görüşün olumlu içeriğini kaybettirir."
+   ],
+   "optionReasons": [
+    "Uyarı karşılaştırmayı yasaklamıyor; yalnız tanımı silen özdeşleştirmeyi engelliyor.",
+    "Doğru: Tao'yu mutlak yokluk etiketine indirgemek yol, akış ve uyum içeriğini kaybettirir.",
+    "Tao modern fiziğin ölçülmüş kütlesi değildir; metin doğal akış ve uyumdan söz ediyor.",
+    "Metin doğal akış vurgusunu felsefi bir içerik olarak ele alıyor; bu şık onunla çelişir.",
+    "Tarihsel görüşler farklıdır; uyarının kendisi de farklılığı korumak içindir."
+   ],
+   "commonError": "Farklı bir geleneği tek bir slogana indirgeyip olumlu içeriğini gözden kaçırmak.",
+   "check": "Metindeki olumlu ifadeleri say: doğal akış, uyum, zorlamadan kaçınma. Hiçbiri “hiçbir şey yoktur” sloganına sığmıyor."
+  }
+ },
+ {
+  "id": "orta-cag-felsefesi-021-1",
+  "h": "1acf67cc1bd51c",
+  "guidance": {
+   "knowledge": [
+    "Dönemleme: tarihi öğretmek ve düzenlemek için yaklaşık sınırlarla dönemlere ayırmak. Orta Çağ felsefesi için bu notta MS 2–15. yüzyıl genel başlık olarak veriliyor.",
+    "Bir dönem adı, o dönemdeki bütün düşünürlerin aynı görüşte olduğu anlamına gelmez."
+   ],
+   "strategy": "Notta iki bilgi var: genel bir dönem başlığı ve aynı dönemde farklı görüşlerin bulunduğu. İkisini birlikte koruyan yorumu seç.",
+   "steps": [
+    "Not MS 2–15. yüzyılı genel dönem başlığı olarak veriyor.",
+    "Aynı dönemde farklı dil ve geleneklerde inanç, akıl, varlık ve bilgi üzerine farklı görüşler bulunduğunu da söylüyor.",
+    "Öyleyse dönem adı her yerde tek bir görüşün aynı biçimde egemen olduğunu göstermez."
+   ],
+   "optionReasons": [
+    "Not akıl ve bilgi üzerine görüşlerin bulunduğunu söylüyor; akıl yürütmenin hiç olmadığı sonucu bununla çelişir.",
+    "Doğru: Dönem adı öğretimi düzenler; farklı gelenek ve görüşleri tek bir görüşe indirgemez.",
+    "Not farklı görüşlerin bulunduğunu açıkça belirtiyor; herkesin akla aynı rolü verdiği sonucu çıkmaz.",
+    "Tarih etiketi bir sınıflamadır; notun kendisi görüş farklarının sürdüğünü söylüyor.",
+    "Dönemleme kişilerin doğum tarihleriyle değil düşünce tarihinin düzenlenmesiyle ilgilidir."
+   ],
+   "commonError": "Bir dönem adını o dönemdeki bütün düşüncelerin özdeş olduğu biçiminde okumak.",
+   "check": "Notun ikinci cümlesini oku: “farklı görüşlerin bulunduğunu da belirtiyor”. Tek görüş iddiası bu cümleyle çelişir."
+  }
+ },
+ {
+  "id": "orta-cag-felsefesi-021-2",
+  "h": "1a464f268e9718",
+  "guidance": {
+   "knowledge": [
+    "Patristik dönem: erken Hristiyan düşüncesinin savunulduğu ve kavramsal olarak kurulduğu dönem.",
+    "Skolastik dönem: okul (skola) geleneğinde inanç ile akıl ilişkisinin sistemli biçimde tartışıldığı dönem."
+   ],
+   "strategy": "Metin iki dönemi sırayla tanımlıyor; her tanımı dönem adıyla eşleştir ve sırayı koru.",
+   "steps": [
+    "İlk dönem: erken Hristiyan düşüncesinin savunulması ve kavramsal kuruluşu. Bu patristiktir.",
+    "Ardından: okul geleneğinde sistemli inanç-akıl tartışmaları. Bu skolastiktir.",
+    "Sıra: patristik, ardından skolastik."
+   ],
+   "optionReasons": [
+    "Skolastik ikinci dönemdir; ayrıca ardından modern atom fiziği gelmez, metin iki felsefe dönemini anlatıyor.",
+    "Rönesans Orta Çağ'dan sonra, İlk Çağ ise önce gelir; metindeki tanımlarla da eşleşmez.",
+    "Karizmatik ve yasal otorite Weber'in otorite tipleridir; dönem adı değildir.",
+    "Doğru: Savunma ve kuruluş patristik, okul geleneğindeki sistemli tartışma skolastiktir.",
+    "Distopya ve ütopya kurgu türleridir; tarihsel dönem değildir."
+   ],
+   "commonError": "Patristik ile skolastiğin sırasını ters çevirmek.",
+   "check": "Skolastik adı “okul” anlamındaki kökten gelir; metnin ikinci dönem için kullandığı “okul geleneği” ifadesi sırayı doğrular."
+  }
+ },
+ {
+  "id": "orta-cag-felsefesi-021-3",
+  "h": "1ad3b3b0d5a29c",
+  "guidance": {
+   "knowledge": [
+    "Töz: kendi başına var olan şey.",
+    "Yoksunluk olarak kötülük: kötülük iyilik gibi ayrı bir töz değil, bir iyiliğin eksilmesidir. Bu açıklama Augustinusçu yaklaşımla ilişkilidir."
+   ],
+   "strategy": "Metindeki açıklamayı (iyinin eksilmesi, körlük benzetmesi) bir Orta Çağ düşünürüyle eşleştir; diğer seçeneklerin hangi konulara ait olduğunu belirleyerek ele.",
+   "steps": [
+    "Metin: kötülük bağımsız ikinci bir töz değil, iyiliğin eksilmesidir.",
+    "Benzetme: körlük, görme yetisinin yoksunluğudur.",
+    "Kötülüğü iyinin yoksunluğu olarak açıklama Augustinus'la ilişkilidir."
+   ],
+   "optionReasons": [
+    "Doğru: Kötülüğün iyinin yoksunluğu olarak açıklanması Augustinusçu yaklaşımdır.",
+    "Anaksimenes'in yoğunlaşması havanın başka şeylere dönüşmesini açıklar; kötülükle ilgisi yok.",
+    "Weber'in makam düzeni siyasal otoriteyle ilgilidir.",
+    "Croce'nin ifade öğretisi sanatı açıklar; kötülüğün varlık statüsünü tartışmaz.",
+    "Hobbes'un sözleşmesi güvenlik için ortak otoriteyi açıklar; kötülüğün ne olduğunu değil."
+   ],
+   "commonError": "Kötülüğü yoksunluk olarak görmeyi acının gerçek olmadığı iddiası sanmak.",
+   "check": "Seçeneklerden yalnız biri Orta Çağ'da kötülük ve iyilik sorusuyla anılan düşünürdür; diğerleri doğa, siyaset ya da sanat konularına aittir."
+  }
+ },
+ {
+  "id": "orta-cag-felsefesi-021-4",
+  "h": "0eb2403fd0040b",
+  "guidance": {
+   "knowledge": [
+    "Vahiy: dinî inanca göre Tanrı'nın bildirdiği bilgi.",
+    "Aquinolu Thomas: akıl ile inancı düşman saymaz; bazı Tanrı bilgilerine akılla ulaşılabileceğini, bazı inanç sırlarının ise vahiy yoluyla kabul edildiğini söyler."
+   ],
+   "strategy": "Düşünürün akla hem bir alan tanıdığına hem de bir sınır çizdiğine dikkat et; akıl-inanç uyumunu arayan Orta Çağ düşünürünü seç.",
+   "steps": [
+    "Bazı Tanrı bilgilerine akılla ulaşılabilir: akla alan tanınıyor.",
+    "Bazı inanç sırları vahiy yoluyla kabul edilir: aklın sınırı çiziliyor.",
+    "Akıl ile inancı uyumlu sayan bu yaklaşım Aquinolu Thomas'a uygundur."
+   ],
+   "optionReasons": [
+    "Düşünür akla açıkça bir alan tanıyor; mantığı reddeden görüş bununla çelişir.",
+    "Demokritos'un atom dizilişi doğayı açıklar; akıl ve inanç ilişkisini tartışmaz.",
+    "Protagoras'ın insan ölçüsü yargıların göreceliğiyle ilgilidir; vahiy kavramı içermez.",
+    "Schiller'in oyun anlayışı sanat etkinliğini açıklar.",
+    "Doğru: Akla ve vahye ayrı alanlar tanıyıp uyum arayan yaklaşım Aquinolu Thomas'ındır."
+   ],
+   "commonError": "Orta Çağ düşünürlerinin hepsinin aklı tümden reddettiğini sanmak.",
+   "check": "Metindeki iki cümle bir denge kuruyor: “akılla ulaşılabilir” ve “vahiy yoluyla kabul edilir”. Yalnız bir yanı seçen görüş bu dengeyi bozar."
+  }
+ },
+ {
+  "id": "orta-cag-felsefesi-021-5",
+  "h": "18565439cc9244",
+  "guidance": {
+   "knowledge": [
+    "Tümel: birçok tekil şeyde ortak olan nitelik ya da doğa (örneğin “ağaçlık”). Tekil: tek tek var olan şey (bu ağaç).",
+    "Tümeller tartışmasında görüşler: bağımsız idealar gerçekçiliği (tümel tekillerden ayrı var olur), ılımlı gerçekçilik (tümel tekillerde örneklenen formdur), kavramcılık (tümel zihinsel kavramdır), adcılık (tümel yalnız ortak addır)."
+   ],
+   "strategy": "Tanımın ortaklığı nereye yerleştirdiğine bak: tekillerden ayrı bir yere mi, tekillerin içine mi, zihne mi, yoksa yalnız ada mı?",
+   "steps": [
+    "Tanım: iki ağacın ortak doğası o ağaçlarda örneklenir.",
+    "Bu ortaklık tekillerden bağımsız ayrı bir nesne değil, tekillerle ilişkili formdur.",
+    "Tümelin tekillerde var olduğunu söyleyen görüş ılımlı gerçekçiliktir."
+   ],
+   "optionReasons": [
+    "Bağımsız idealar gerçekçiliği tümeli tekillerden ayrı koyar; tanım bunu açıkça dışlıyor.",
+    "Adcılık ortaklığı yalnız ad sayar; tanım ise ortak doğanın tekillerde gerçekten bulunduğunu söylüyor.",
+    "Doğru: Tekillerde örneklenen ortak doğa ya da form ılımlı gerçekçiliktir.",
+    "Ateizm Tanrı'nın yokluğuna ilişkin bir görüştür; tümeller tartışmasıyla ilgisi yok.",
+    "Teleolojik argüman düzenden amaçlı kaynağa geçer; tümellerin statüsünü tartışmaz."
+   ],
+   "commonError": "Ilımlı gerçekçiliği bağımsız idealar gerçekçiliğiyle karıştırmak; fark tümelin tekillerden ayrı olup olmamasıdır.",
+   "check": "“Tümel nerede?” diye sor: tanım “o ağaçlarda” diyor. Ayrı yerde değil, zihinde değil, adda değil."
+  }
+ },
+ {
+  "id": "orta-cag-felsefesi-021-6",
+  "h": "19670e5f69b231",
+  "guidance": {
+   "knowledge": [
+    "Kavramcılık: tümeli zihinde bulunan bir kavram olarak açıklayan görüş.",
+    "Adcılık: tekiller dışında ayrı tümel varlık kabul etmeyen, ortaklığı ortak adın kullanımıyla açıklayan görüş.",
+    "Bağımsız idealar gerçekçiliği ise tümeli tekillerden ayrı var olan bir gerçeklik sayar."
+   ],
+   "strategy": "A ve B'nin tümeli nereye yerleştirdiğine bak: zihne mi, ada mı? Sonra adları buna göre eşleştir.",
+   "steps": [
+    "A: tümel zihinsel bir kavramdır. Bu kavramcılıktır.",
+    "B: tekiller dışında ayrı tümel yok, ortak adın kullanımı öne çıkıyor. Bu adcılıktır.",
+    "Eşleştirme A kavramcılık, B adcılık."
+   ],
+   "optionReasons": [
+    "Doğru: Zihinsel kavram vurgusu kavramcılık, ortak ad vurgusu adcılıktır.",
+    "A tümeli zihne koyuyor, ada değil; B ise ayrı tümel varlığı açıkça reddediyor, gerçekçilik olamaz.",
+    "Teleoloji ve kozmoloji Tanrı argümanlarının türleridir; tümeller tartışmasına ait değildir.",
+    "Negatif özgürlük siyaset, ereksel neden Aristoteles'in neden ayrımına aittir.",
+    "Karizma Weber'in otorite tipi, patristik bir tarih dönemidir; tümel görüşü değildir."
+   ],
+   "commonError": "Kavramcılık ile adcılığı karıştırmak; biri tümeli zihindeki kavrama, öteki yalnız ortak ada bağlar.",
+   "check": "“Tümel nerede bulunur?” sorusuna A “zihinde”, B “yalnız adda” cevabını verir; adlar bu cevaplarla örtüşüyor."
+  }
+ },
+ {
+  "id": "orta-cag-felsefesi-021-7",
+  "h": "07865bf6d9efcf",
+  "guidance": {
+   "knowledge": [
+    "İbn Sînâ'nın ayrımı: zorunlu varlık, özü gereği var olan ve var olmaması düşünülemeyen varlıktır.",
+    "Mümkün varlık: var olması da var olmaması da düşünülebilen, varlığını başka bir dayanağa borçlu olan varlıktır. İmkânsız ise hiçbir biçimde var olamayandır."
+   ],
+   "strategy": "Varlığın şu an var olmasına değil, özü bakımından var olmamasının düşünülebilir olup olmadığına ve bir dayanağa bağlı olup olmadığına bak.",
+   "steps": [
+    "Varlık fiilen var; demek ki imkânsız değil.",
+    "Özü bakımından var olmaması düşünülebilir ve varlığı başka bir dayanağa bağlı; demek ki zorunlu değil.",
+    "Bu özellikler mümkün varlığın tanımıdır."
+   ],
+   "optionReasons": [
+    "Zorunlu varlığın var olmaması düşünülemez; bu varlığın ise var olmaması düşünülebiliyor.",
+    "İmkânsız olan hiç var olamaz; bu varlık fiilen var.",
+    "Genel adın ses biçimi tümeller tartışmasındaki adcılıkla ilgilidir; varlık statüsü değildir.",
+    "Estetik beğeni sanat felsefesine aittir; varlığın zorunluluğuyla ilgisi yok.",
+    "Doğru: Var olmaması düşünülebilen ve dayanağa bağlı varlık mümkün varlıktır."
+   ],
+   "commonError": "Şu an var olan her şeyi zorunlu varlık saymak.",
+   "check": "Dayanağı ortadan kalksa bu varlık var olmaya devam eder mi? Metne göre varlığı ona bağlı; öyleyse kendi başına zorunlu değil."
+  }
+ },
+ {
+  "id": "orta-cag-felsefesi-021-8",
+  "h": "0c9b877482631e",
+  "guidance": {
+   "knowledge": [
+    "Metafizik: varlığın temel ilkeleri gibi duyuların ötesindeki konuları inceleyen felsefe alanı.",
+    "Aşırı genelleme: belirli bir konudaki bir bilgiyi, kapsamını aşarak bütün alanlara yaymak."
+   ],
+   "strategy": "Metnin verdiği bilgiyle öğrencinin çıkardığı sonucu kapsam bakımından karşılaştır: “bazı metafizik savlar” ile “her tür mantık ve bütün bilim”.",
+   "steps": [
+    "Metin: Gazzâlî bazı metafizik savları eleştirmiştir.",
+    "Öğrenci: Gazzâlî her tür mantığı ve bütün bilimi her koşulda reddetmiştir.",
+    "Öğrenci belirli savlara yönelen eleştiriyi bütün yöntem ve alanlara sınırsızca genişletiyor."
+   ],
+   "optionReasons": [
+    "Öğrenci kapsamı değiştiriyor; “bazı” sözcüğünü “her tür”e çeviriyor.",
+    "Öğrenci hiçbir kanıtı doğrulamıyor; yalnız tek bir bilgiden genelleme yapıyor.",
+    "Doğru: Bazı metafizik savlara yönelen eleştiri her tür mantık ve bilime genişletilmiş.",
+    "Öğrenci eleştiriyi daraltmıyor, tam tersine genişletiyor.",
+    "Mümkün varlık İbn Sînâ'nın ayrımıdır; öğrencinin yorumunda hiç geçmiyor."
+   ],
+   "commonError": "Bir düşünürün belirli bir eleştirisini onun bütün alanları reddettiği biçiminde genellemek.",
+   "check": "Metinde “mantık” ya da “bilim” sözcüğü geçiyor mu? Hayır; yalnız “bazı metafizik savlar” geçiyor. Gerisi öğrencinin eklemesi."
+  }
+ },
+ {
+  "id": "orta-cag-felsefesi-021-9",
+  "h": "18af68aa282e02",
+  "guidance": {
+   "knowledge": [
+    "Çeviri hareketi: felsefi ve bilimsel metinlerin farklı diller (burada Yunanca, Süryanice, Arapça, Latince) arasında aktarılması.",
+    "Çok merkezli etkileşim: düşüncenin tek bir yerden değil, birçok gelenek ve kişinin katkısıyla gelişmesi."
+   ],
+   "strategy": "Metnin vurguladığı iki öğeyi yakala: birden çok dil ve farklı geleneklerden kişilerin katkısı. Bunları birlikte koruyan sonucu seç.",
+   "steps": [
+    "Metin: dört dil arasında çeviriler yapılmış ve düşünce alışverişi gelişmiş.",
+    "Farklı geleneklerden kişiler katkı sunmuş.",
+    "Çeviri hareketi çok merkezli bir etkileşim ve yorumlama süreci olarak anlaşılabilir."
+   ],
+   "optionReasons": [
+    "Metin farklı geleneklerden birçok kişinin katkısından söz ediyor; tek kişi ve tek gün bununla çelişir.",
+    "Metin katkı sunulduğunu söylüyor; çevirmenlerin hiç özgün düşünmediği sonucu metinden çıkmaz.",
+    "Metin çevirilerin düşünce alışverişini geliştirdiğini açıkça söylüyor.",
+    "Doğru: Birden çok dil, gelenek ve kişinin katkısı çok merkezli bir etkileşimi gösterir.",
+    "Çevrilen metinlerin çeviriden önce var olması gerekir; bu şık çevirinin anlamıyla çelişir."
+   ],
+   "commonError": "Çeviriyi yalnız edilgin kopyalama sanıp yorum ve katkı yönünü gözden kaçırmak.",
+   "check": "Metindeki çoğul ifadeleri say: dört dil, farklı gelenekler, kişiler. Tek merkezli bir açıklama bunları karşılamaz."
+  }
+ },
+ {
+  "id": "orta-cag-felsefesi-021-10",
+  "h": "091bd741d6ba4c",
+  "guidance": {
+   "knowledge": [
+    "Benzetme (analoji): bir şeyi daha tanıdık başka bir şeye benzeterek açıklamak; benzerlik her ayrıntıda özdeşlik demek değildir.",
+    "Asabiyet: İbn Haldun'un toplumsal dayanışma bağını anlatan kavramı; kişisel kızgınlık anlamına gelmez."
+   ],
+   "strategy": "Öğrencinin benzetmeden ne çıkardığına bak: açıklayıcı bir benzerlikten her ayrıntıda zorunlu bir takvim çıkarılabilir mi?",
+   "steps": [
+    "İbn Haldun devletin dönüşümünü canlıların gelişimine benzetiyor; bu açıklayıcı bir benzetmedir.",
+    "Öğrenci buradan bütün devletlerin aynı biyolojik takvimde çökeceğini çıkarıyor.",
+    "Benzerlik her ayrıntıda aynı zorunlu takvimi tek başına kanıtlamaz."
+   ],
+   "optionReasons": [
+    "Benzetme düşünmeye yardım eder ama tarihsel koşulları incelemenin yerini tutmaz.",
+    "Doğru: Açıklayıcı benzerlik her ayrıntıda aynı zorunlu takvimi tek başına kanıtlamaz.",
+    "Devletin biyolojik doğum belgesi olmaz; bu, benzetmeyi kelimesi kelimesine okumaktır.",
+    "Benzetmenin kendisi toplum incelemesinde bir ilişki kurar; ilişki kurulamaz demek bununla çelişir.",
+    "Asabiyet toplumsal dayanışma bağıdır; kızgınlık sözcüğüne benzetilerek yanlış okunuyor."
+   ],
+   "commonError": "Bir benzetmeyi bire bir özdeşlik gibi okuyup ayrıntılarına kadar zorunlu sonuçlar çıkarmak.",
+   "check": "Benzetmeyi başka bir örnekle sına: bir kenti “kalp” diye anmak ona kan pompalatmaz. Benzerlik açıklar, özdeşlik kurmaz."
+  }
+ },
+ {
+  "id": "felsefeyi-tanima-020-1",
+  "h": "02bde9009a473c",
+  "guidance": {
+   "knowledge": [
+    "Olgusal soru: cevabı gözlem, belge ya da ölçümle bulunan soru (örneğin bir resmin hangi yılda yapıldığı).",
+    "Felsefi soru: bir kavramın anlamını ve onu değerlendirme ölçütünü gerekçeyle soruşturan soru (örneğin bir resmi güzel yapan nedir)."
+   ],
+   "strategy": "İki araştırmanın istediği bilgiyi karşılaştır: biri bir olayın tarihini, öteki bir değerlendirme ölçütünü istiyor. Felsefi yön ikincisindedir.",
+   "steps": [
+    "Birinci araştırma: resmin yapılış yılı. Bu olgusal bir bilgidir.",
+    "İkinci araştırma: hangi nitelik bir resmi güzel saymaya yeter. Bu, güzellik kavramının ölçütünü soruyor.",
+    "Felsefi yön, güzelliğin ölçütünü kavramsal ve gerekçeli biçimde soruşturmasıdır."
+   ],
+   "optionReasons": [
+    "Felsefe beğeniyi gerekçesiz dayatmaz; öğrenci tam tersine gerekçe arıyor.",
+    "Laboratuvar ölçümü olgusal ve bilimsel bir işlemdir; güzellik ölçütü deneyle ölçülmez.",
+    "Doğru: İkinci araştırma güzelliğin ölçütünü kavramsal ve gerekçeli biçimde soruşturuyor.",
+    "Tarihi ölçmek birinci araştırmanın konusudur; ikinci araştırma tarihle ilgili değil.",
+    "Öğrenci güzel resimlerin yılı hakkında bir varsayım yapmıyor; ölçüt soruyor."
+   ],
+   "commonError": "Soru eki taşıyan her cümleyi felsefi soru saymak; belirleyici olan kavram ve gerekçe araştırmasıdır.",
+   "check": "İkinci soruyu bir arşivde ya da laboratuvarda cevaplayabilir misin? Hayır; cevap ancak kavramsal tartışmayla aranır."
+  }
+ },
+ {
+  "id": "felsefeyi-tanima-020-2",
+  "h": "1cc688301e855e",
+  "guidance": {
+   "knowledge": [
+    "Refleksiyon (refleksif olma): düşüncenin kendi üzerine dönmesi, kendi dayanaklarını ve yöntemini incelemesi.",
+    "Felsefi düşünce yalnız dış konulara değil, o konuları değerlendirirken kullandığı ölçütlere de yönelir."
+   ],
+   "strategy": "Okurun düşüncesinin bu kez neyi inceleme konusu yaptığına bak: yalnız yazarın savını mı, kendi değerlendirme ölçütünü mü?",
+   "steps": [
+    "Okur önce yazarın savının neden ikna edici geldiğini soruyor.",
+    "Sonra kendi kullandığı ölçütün dayanağını incelemesi gerektiğini söylüyor; kendi değerlendirmesine geri dönüyor.",
+    "Düşüncenin kendi dayanağını incelemesi refleksif olmaktır."
+   ],
+   "optionReasons": [
+    "Duyusal ölçüm dış nesneye yönelir; okur kendi ölçütünü inceliyor.",
+    "Okur ezberlemiyor, sorguluyor; tartışmasız kabul refleksiyonun tersidir.",
+    "Okur gerekçeyi reddetmiyor, onun dayanağını inceliyor.",
+    "Okur çoğunluğa başvurmuyor; kendi değerlendirmesini sorguluyor.",
+    "Doğru: Okurun kendi değerlendirme ölçütünün dayanağına dönmesi refleksiyondur."
+   ],
+   "commonError": "Refleksiyonu yalnız başkasının görüşünü eleştirmek sanmak; asıl ayırt edici yön düşüncenin kendine dönmesidir.",
+   "check": "Metindeki dönüm noktası “kendi kullandığım ölçütün dayanağı” ifadesidir; düşüncenin nesnesi okurun kendisi olmuştur."
+  }
+ },
+ {
+  "id": "felsefeyi-tanima-020-3",
+  "h": "0c634ed7dac010",
+  "guidance": {
+   "knowledge": [
+    "Tutarlılık: bir kişinin savları arasında ve savları ile uygulamaları arasında çelişki bulunmaması.",
+    "Gerekçesiz istisna: koşullar aynıyken kuralı yalnız kişisel bir nedenle (örneğin dostluk) uygulamamak."
+   ],
+   "strategy": "Düşünürün savını ve uygulamasını yan yana koy; koşulların aynı kaldığına dikkat et ve ikisinin bağdaşıp bağdaşmadığına bak.",
+   "steps": [
+    "Sav: aynı koşuldaki kişilere aynı gerekçe uygulanmalı.",
+    "Uygulama: aynı koşuldaki dostuna yalnız dostu olduğu için istisna tanıyor.",
+    "Koşul değişmediği hâlde kural çiğneniyor; sav ile uygulama arasında tutarlılık sorunu var."
+   ],
+   "optionReasons": [
+    "Doğru: Aynı koşulda aynı gerekçeyi isteyen sav, yalnız dostluk nedeniyle tanınan istisnayla bağdaşmıyor.",
+    "Metinde bir ölçüm ya da birim yok; sorun ahlaki ve mantıksal.",
+    "Metinde iki farklı tutum var ve bunlar çelişiyor; görüşlerin aynısı olması söz konusu değil.",
+    "İlkenin tarihsel olarak ortadan kalkmasından söz edilmiyor; sorun aynı kişinin tutumunda.",
+    "Metin koşulların aynı olduğunu özellikle belirtiyor; farklı koşul gerekçesi burada yok."
+   ],
+   "commonError": "Koşulların değiştiğini varsayarak istisnayı haklı saymak; metin koşulların aynı olduğunu söylüyor.",
+   "check": "Dost yerine bir yabancıyı koy: düşünür ona istisna tanımazdı. Tek fark dostluk; bu da savın kabul etmediği bir gerekçe."
+  }
+ },
+ {
+  "id": "felsefeyi-tanima-020-4",
+  "h": "195f053b1260f4",
+  "guidance": {
+   "knowledge": [
+    "Sistemlilik: bir düşüncedeki yargıların rastgele değil, birbirini destekleyen tutarlı bir bütün oluşturması.",
+    "Felsefi bir sistemde bir kavramın tanımı öteki kavramları da etkiler."
+   ],
+   "strategy": "Düşünürün kavramları birbirine nasıl bağladığına bak; bağlantının kendisi hangi özelliği gösterir?",
+   "steps": [
+    "Düşünür özgürlüğü tanımlıyor ve sorumluluk görüşünü bu tanıma bağlıyor.",
+    "İnsan anlayışını bu ikisiyle ilişkilendiriyor; yargılar birbirini destekliyor.",
+    "Birbirine bağlı yargılardan oluşan yapı sistemliliktir."
+   ],
+   "optionReasons": [
+    "Metinde oylama ya da çoğunluk onayı yok; yargıların birbirine bağlı olması vurgulanıyor.",
+    "Metin yargıların rastgele olmadığını söylüyor; anlık duyguyla karar bunun tersidir.",
+    "Düşünür soruları sona erdirmiyor, kavramlar arasında bağ kuruyor.",
+    "Doğru: Özgürlük, sorumluluk ve insan anlayışı birbirini destekleyen bir bütün oluşturuyor.",
+    "Metinde deney yok; bağlantılar kavramsal düzeyde kuruluyor."
+   ],
+   "commonError": "Sistemliliği yalnız konuları başlıklara ayırmak sanmak; asıl ölçüt düşünceler arasındaki bağlantıdır.",
+   "check": "Özgürlük tanımını değiştir: sorumluluk görüşü de değişmek zorunda kalır. Bu bağımlılık sistemliliğin işaretidir."
+  }
+ },
+ {
+  "id": "felsefeyi-tanima-020-5",
+  "h": "0623ba10faf885",
+  "guidance": {
+   "knowledge": [
+    "Eleştirel düşünme: bir savı kabul etmeden önce gerekçesini ve gerekçenin sonucu gerçekten destekleyip desteklemediğini denetlemek.",
+    "Çıkarım bağı: öncüllerden sonuca geçişin sağlamlığı."
+   ],
+   "strategy": "Öğrencinin neye dayanmadığına ve neyi denetlediğine bak; eleştiriyi gerekçesiz reddetmekten ve kişiye saldırmaktan ayır.",
+   "steps": [
+    "Öğrenci bir açıklamayı uzun süredir duymuş olmasını tek başına doğruluk ölçütü saymıyor.",
+    "Açıklamanın hangi öncüllere dayandığını ve sonucu destekleyip desteklemediğini inceleyeceğini söylüyor.",
+    "Eleştirelliği sağlayan, savın gerekçesini ve çıkarım bağını denetlemesidir."
+   ],
+   "optionReasons": [
+    "Öğrenci kendi yanılmazlığını ileri sürmüyor; dışarıdaki bir savı denetlemeyi öneriyor.",
+    "Doğru: Öğrenci savın öncüllerini ve sonuca giden çıkarım bağını denetliyor.",
+    "Öğrenci eski düşünceyi peşinen reddetmiyor; yalnız eskiliği yeterli gerekçe saymıyor.",
+    "Metinde savı söyleyen kişiye hiçbir saldırı yok; inceleme savın kendisine yöneliyor.",
+    "Öğrenci görüşleri eşit ilan etmiyor; gerekçesine göre değerlendirmek istiyor."
+   ],
+   "commonError": "Eleştirel olmayı eski ya da yaygın görüşleri peşinen reddetmek sanmak.",
+   "check": "Öğrencinin incelemesi sonunda açıklama sağlam çıkarsa onu kabul edebilir; bu, eleştirinin reddetmek değil denetlemek olduğunu gösterir."
+  }
+ },
+ {
+  "id": "felsefeyi-tanima-020-6",
+  "h": "0fcf84dea38d2a",
+  "guidance": {
+   "knowledge": [
+    "Felsefi soruların evrenselliği: adalet gibi soruların her insanın ve her toplumun ilgisine açık olması.",
+    "Cevapların özdeşliği: herkesin aynı cevabı vermesi. Bir sorunun evrensel olması, cevapların aynı olmasını gerektirmez."
+   ],
+   "strategy": "Kişinin hangi iki şeyi birbirinden ayırdığını bul: ortak bir soru ile tek bir ortak cevap.",
+   "steps": [
+    "Kişi herkesin adaleti tartışabileceğini söylüyor: soru herkese açık.",
+    "Farklı toplumlarda farklı cevaplar verilmesini anlaşılır buluyor.",
+    "Ortak soru tek cevap demek değildir; korunan ayrım soruların evrenselliği ile cevapların özdeşliğidir."
+   ],
+   "optionReasons": [
+    "Kişi farklı toplumların cevaplarını anlaşılır buluyor; görüşlerin tarih dışı olması gerektiğini söylemiyor.",
+    "Kişi tam tersini söylüyor: ortak soru herkesin aynı sonuca varmasını gerektirmez.",
+    "Kişi farklı cevaplar olsa da sorunun ortak olduğunu söylüyor; bu şık onunla çelişir.",
+    "Evrensellik herkesi ilgilendirmek demektir; tek kişiye ait soru evrensel olmaz.",
+    "Doğru: Sorunun herkese açık olması ile herkesin aynı cevabı vermesi ayrı şeylerdir."
+   ],
+   "commonError": "Evrensel bir sorunun herkesin aynı cevabı verdiği anlamına geldiğini sanmak.",
+   "check": "Metindeki son cümleyi oku: “Ortak soru, tek bir cevabın herkesçe zaten kabul edildiği anlamına gelmez.” Ayrımın kendisi bu cümlede."
+  }
+ },
+ {
+  "id": "felsefeyi-tanima-020-7",
+  "h": "00622667bb60dc",
+  "guidance": {
+   "knowledge": [
+    "Yığılımlı (birikimli) gelişme: yeni düşüncelerin öncekilerle ilişki kurarak, onlara itiraz ederek ya da onları yeniden kurarak gelişmesi.",
+    "Felsefede eski görüşler silinmez; yeni tartışmalarda değerlendirilmeye devam eder."
+   ],
+   "strategy": "Yeni görüşlerin eski görüşlerle nasıl bir ilişki içinde olduğuna bak: onları siliyor mu, onlarla konuşarak mı gelişiyor?",
+   "steps": [
+    "Bir filozof önceki görüşe yeni bir itiraz getiriyor; başka biri eski soruyu yeni bir kavramla yeniden kuruyor.",
+    "Eski görüşler yeni tartışmalarda hâlâ değerlendiriliyor.",
+    "Önceki düşüncelerle ilişki kurarak ilerleyen bu süreç yığılımlı gelişmedir."
+   ],
+   "optionReasons": [
+    "Metindeki filozoflar öncekilere itiraz ediyor ve eski soruyu yeniden kuruyor; geçmişsiz başlamıyorlar.",
+    "Doğru: Yeni itiraz ve kavramlar önceki düşüncelerle ilişki kurarak birikim oluşturuyor.",
+    "Metin eski görüşlerin hâlâ değerlendirildiğini söylüyor; silinme iddiasıyla çelişir.",
+    "Eski soru yeni bir kavramla yeniden kuruluyor; soruların sorulamaması söz konusu değil.",
+    "Yeni itiraz ve kavramlar getiriliyor; cevapların özdeş kalması bununla çelişir."
+   ],
+   "commonError": "Eski görüşlerin hâlâ tartışılmasını felsefede hiç gelişme olmadığı biçiminde yorumlamak.",
+   "check": "Metindeki üç olgu (itiraz, yeniden kurma, eski görüşü değerlendirme) hep öncekiyle bağ kuruyor; bağ birikimin işaretidir."
+  }
+ },
+ {
+  "id": "felsefeyi-tanima-020-8",
+  "h": "1b823c68210e5a",
+  "guidance": {
+   "knowledge": [
+    "Hayret (şaşırma): alışılmış bir şeyin birden açıklama gerektiren bir soru olarak görünmesi.",
+    "Felsefede hayret, kavramsal sorgulamayı başlatan bir duygu olarak görülür; ama bir cevabın doğruluğunu kanıtlamaz."
+   ],
+   "strategy": "Deniz'in şaşırdıktan sonra ne yaptığına bak: şaşkınlık onu hangi tür bir soruya götürüyor?",
+   "steps": [
+    "Deniz gökyüzündeki değişime şaşırıyor.",
+    "Şaşkınlık onu “değişim nedir, aynı kalan bir şey var mı?” sorusuna götürüyor; bu kavramsal bir sorudur.",
+    "Hayret kavramsal sorgulamaya başlangıç sağlıyor."
+   ],
+   "optionReasons": [
+    "Deniz araştırmayı bırakmıyor, tam tersine yeni sorular soruyor.",
+    "Deniz'in sorusu takvim hesabı değil, değişim kavramının ne olduğu.",
+    "Kavram sormak duyusal bilgiyi yok etmez; Deniz duyusal gözlemden yola çıkıyor.",
+    "Doğru: Deniz'in hayreti değişim ve kalıcılık üzerine kavramsal bir sorgulama başlatıyor.",
+    "Deniz henüz hiçbir cevap vermiyor; şaşırmak bir cevabı doğrulamaz."
+   ],
+   "commonError": "Hayreti bir cevabın kanıtı sanmak; o yalnız sorgulamayı başlatır.",
+   "check": "Deniz'in cümlesinde bir sonuç var mı? Yok, yalnız sorular var; demek ki hayretin rolü başlatmaktır."
+  }
+ },
+ {
+  "id": "felsefeyi-tanima-020-9",
+  "h": "11599b74d15521",
+  "guidance": {
+   "knowledge": [
+    "Ahlak felsefesi (etik): eylemlerin doğru ya da yanlış sayılmasının ölçütlerini ve gerekçelerini inceleyen felsefe dalı.",
+    "Rıza: bir kişinin kendisiyle ilgili bir işleme bilerek ve isteyerek onay vermesi."
+   ],
+   "strategy": "Sorunun geçtiği ortama değil, sorduğu şeye bak: bir olgu mu soruluyor, yoksa bir eylemin doğruluğu ve gerekçesi mi?",
+   "steps": [
+    "Soru: rıza almadan katılımcının örneğini kullanmak neden doğru ya da yanlış sayılmalı?",
+    "Sorulan şey bir eylemin doğruluğu ve gerekçesi; ölçüm ya da olgu değil.",
+    "Eylemin doğruluk ölçütünü soran soru ahlak felsefesine yönelir."
+   ],
+   "optionReasons": [
+    "Doğru: Soru rıza, doğru eylem ve ahlaki gerekçeyi konu ediniyor.",
+    "Ontoloji varlığın temel ilkelerini araştırır; soru varlığın yapısıyla ilgili değil.",
+    "Sanat felsefesi güzellik ve eser koşulunu araştırır; soruda eser yok.",
+    "Soru araştırma ortamında sorulduğu için deney işlemi sanılabilir; ama sorulan ölçüm değil eylemin doğruluğu.",
+    "Dilbilgisi eklerin biçimini inceler; sorunun dille ilgili bir yönü yok."
+   ],
+   "commonError": "Bir sorunun geçtiği ortama bakıp (araştırma ortamı) onu bilimsel yöntem sorusu saymak.",
+   "check": "Soruda “doğru veya yanlış sayılmalı” ifadesi var; “olmalı” ve “sayılmalı” türünden değer soruları ahlak felsefesinin alanıdır."
+  }
+ },
+ {
+  "id": "felsefeyi-tanima-020-10",
+  "h": "12799e72a48af3",
+  "guidance": {
+   "knowledge": [
+    "Öz bilinç: kişinin kendi zihinsel etkinliklerinin (düşünme, yorumlama) farkında olması.",
+    "Farkındalığın yönü: dış bir nesneye (kitabın cümleleri) ya da kişinin kendi etkinliğine (yorumlama biçimi) yönelebilir."
+   ],
+   "strategy": "İki cümleyi karşılaştır: farkındalık ilk cümlede neye, ikinci cümlede neye yöneliyor?",
+   "steps": [
+    "İlk cümle: okur kitabın cümlelerini fark ediyor. Farkındalık dış nesneye yönelik.",
+    "İkinci cümle: okur cümleleri kendi beklentilerine göre yorumladığının farkına varıyor.",
+    "Farkındalık kendi yorumlama etkinliğine dönmüştür."
+   ],
+   "optionReasons": [
+    "Okur beklentisinin yorumunu etkilediğini fark ediyor; bunun her yargıyı doğru yaptığını söylemiyor.",
+    "Okur kitabı okumuş; kitabın var olmadığını ilan etmek metinle çelişir.",
+    "Doğru: Okur kendi yorumlama biçiminin farkına varmıştır; bu öz bilinçle ilişkili bir yönelimdir.",
+    "Harf saymak dış nesneye yönelik bir ölçümdür; ikinci cümle okurun kendisine yöneliyor.",
+    "Kendi yorumunun farkına varmak anlamayı engellemez; tam tersine daha bilinçli anlamayı sağlar."
+   ],
+   "commonError": "Dış nesneyi algılamayı öz bilinçle karıştırmak; öz bilinçte farkındalık kişinin kendi etkinliğine yönelir.",
+   "check": "İkinci cümlenin nesnesi “kitap” değil “yorumladığım” etkinliğidir; farkındalık dıştan içe dönmüş."
+  }
+ },
+ {
+  "id": "felsefe-ile-dusunme-020-1",
+  "h": "067deacd970704",
+  "guidance": {
+   "knowledge": [
+    "Önerme: doğru ya da yanlış olabilen, yani doğruluk değeri taşıyan yargı cümlesidir.",
+    "Doğruluk değeri: bir yargının doğru ya da yanlış olma niteliği. Emir, soru ve salt duygu ünlemi bu değeri taşımaz."
+   ],
+   "strategy": "Bir cümlenin önerme olup olmadığını anlamak için tek soruyu sor: Bu söz doğru ya da yanlış diye sınanabilir mi?",
+   "steps": [
+    "Metin, ifadenin belirli bir durum hakkında doğru ya da yanlış olabilen bir yargı ileri sürdüğünü açıkça söylüyor.",
+    "Pencereler gerçekten açıksa ifade yanlış olur; yanlış olabilmesi önerme olmasını engellemez.",
+    "Öyleyse dayanak, doğruluk değeri taşıyan bir yargı bildirmesidir."
+   ],
+   "optionReasons": [
+    "“Kapalıdır” bir bildirme kipidir; emir kipi “kapat” olurdu. Emirler doğru ya da yanlış olmaz, önermeye karşıt örnektir.",
+    "İfade birçok sözcükten oluşuyor; ayrıca sözcük sayısı önerme ölçütü değildir.",
+    "İfade bir iddia taşıyor; iddiasız duygu ünlemi tam da önerme olmayan cümle türüdür.",
+    "Doğru: önerme, doğru ya da yanlış olabilen bir yargıdır ve bu ifade öyledir.",
+    "Önermeyi “doğru cümle” sanmaktan doğar; yanlış olabilen yargılar da önermedir."
+   ],
+   "commonError": "Önermeyi yalnız doğru olan cümle sanmak; yanlış yargılar da önermedir.",
+   "check": "Cümleyi “Doğru mu yanlış mı?” diye sorgula: pencerelere bakıp karar verebiliyorsan elinde bir önerme vardır."
+  }
+ },
+ {
+  "id": "felsefe-ile-dusunme-020-2",
+  "h": "047e2e0a571faf",
+  "guidance": {
+   "knowledge": [
+    "Argüman: öncüller denen gerekçe cümleleriyle bir sonucun desteklendiği akıl yürütmedir.",
+    "Sonuç: öncüllerin desteklediği, argümanın kanıtlamaya çalıştığı yargı. “Çünkü” sözcüğünden önce gelen yargı genellikle sonuçtur."
+   ],
+   "strategy": "Gösterge sözcüklere bak: “çünkü”den sonra gelenler gerekçe, yani öncüldür; desteklenen yargı ise sonuçtur.",
+   "steps": [
+    "“Çünkü”den sonra iki yargı var: odadaki bütün kapılar kapalıdır ve söz konusu kapı bu odadadır. Bunlar öncüldür.",
+    "“Çünkü”den önceki yargı “Kapı kapalıdır.” cümlesidir; öncüller bunu destekliyor.",
+    "Sonuç, söz konusu kapının kapalı olduğudur."
+   ],
+   "optionReasons": [
+    "Metinde kapının açılamayacağına dair hiçbir yargı yok; argümana eklenmiş yeni bir iddiadır.",
+    "Doğru: “çünkü”den önce gelen ve öncüllerin desteklediği tekil yargı budur.",
+    "Bu, “çünkü”den sonra gelen genel öncüldür; gerekçeyi sonuçla karıştırır.",
+    "Bu da ikinci öncüldür; kapının yerini bildiren gerekçeyi sonuç sanar.",
+    "Öncül yalnız bu odadaki kapılardan söz eder; her kapının bu odada olduğu hiç söylenmemiştir."
+   ],
+   "commonError": "Sonucun her zaman cümlenin sonunda geldiğini sanmak; “çünkü” sonucu başa alabilir.",
+   "check": "Sonucu “O hâlde” ile başlatıp öncüllerin ardına koy: “Kapılar kapalı, kapı bu odada; o hâlde kapı kapalıdır.” cümle anlamlı kalıyor."
+  }
+ },
+ {
+  "id": "felsefe-ile-dusunme-020-3",
+  "h": "1134d8c367fc6c",
+  "guidance": {
+   "knowledge": [
+    "Koşullu öncül: “P ise Q” biçimindeki yargı. P koşul, Q koşulun sonucudur.",
+    "Zorunlu çıkarım: öncüller doğruyken sonucun yanlış olamadığı akıl yürütmedir. “P ise Q” ve “P” öncüllerinden “Q” böyle çıkar."
+   ],
+   "strategy": "Çıkarımı koşullu biçime çevir: P = yağmur var, Q = yer ıslanır. Sonra öncüllerin koşulu doğrulayıp doğrulamadığına bak.",
+   "steps": [
+    "Birinci öncül: yağmur varsa yer ıslanır (P ise Q).",
+    "İkinci öncül koşulu doğruluyor: yağmur yağmaktadır (P).",
+    "Koşul gerçekleşince sonuç da gerçekleşmek zorundadır: yer ıslanır (Q). Bu zorunlu bir çıkarımdır."
+   ],
+   "optionReasons": [
+    "Ters yönü tarif eder: ıslaklıktan yağmura geçmek; oysa burada yağmurdan ıslaklığa geçiliyor.",
+    "Geçerlilik tanımını tersine çevirir: geçerli biçimde öncüller doğruyken sonuç yanlış olamaz.",
+    "Benzetmeyle yapılan çıkarımı (analoji) burayla karıştırır; metinde renk ya da iki nesne yok.",
+    "Genel koşul kullanmak geçersizlik nedeni değildir; tümdengelimli çıkarımların çoğu genel koşulla kurulur.",
+    "Doğru: koşul ve koşulun gerçekleştiği bilgisi birlikte sonucu zorunlu kılar."
+   ],
+   "commonError": "“P ise Q” ve “Q” öncüllerinden “P” çıkarmayı bu geçerli biçimle karıştırmak.",
+   "check": "Öncülleri doğru kabul edip “yer ıslanmaz” de: yağmur var ve yağmur varsa yer ıslanır dediğin için çelişkiye düşersin."
+  }
+ },
+ {
+  "id": "felsefe-ile-dusunme-020-4",
+  "h": "11f95c01bcc037",
+  "guidance": {
+   "knowledge": [
+    "Karşı örnek: öncüllerin doğru, sonucun yanlış olduğu durum. Böyle bir durum mümkünse çıkarım zorunlu değildir.",
+    "Sonucu doğrulama hatası: “P ise Q” ve “Q” öncüllerinden “P” çıkarmak. Q başka bir nedenle de oluşabilir."
+   ],
+   "strategy": "Zorunluluk iddiasını çürütmek için öncüllerin doğru kaldığı ama sonucun yanlış olduğu bir durum ara.",
+   "steps": [
+    "Öncüller: yağmur varsa bahçe ıslaktır; bahçe ıslaktır. Sonuç: yağmur vardır.",
+    "Metin ikinci bir ıslatma nedeni veriyor: fıskiye.",
+    "Yağmur yokken fıskiye bahçeyi ıslatırsa iki öncül doğru, sonuç yanlış olur. Bu karşı örnek iddiayı çürütür."
+   ],
+   "optionReasons": [
+    "Doğru: öncüller doğru kalırken yağmur sonucu yanlış olur; bu karşı örnektir.",
+    "Yağmur ve ıslaklığın birlikte görüldüğü gün sonucu doğrular; çürütmek için sonucun yanlış olduğu durum gerekir.",
+    "Yağmur bu durumda da vardır; sonuç yine doğru çıktığı için karşı örnek olmaz.",
+    "Birinci öncülü yeniden doğrular; öncülü desteklemek sonucun zorunlu olup olmadığını sınamaz.",
+    "Renk bilgisinin ıslaklık ve yağmurla ilgisi yok; ilgisiz bir gözlemdir."
+   ],
+   "commonError": "Bir çıkarımı çürütmek için sonucu destekleyen yeni örnekler toplamak; oysa öncüller doğru, sonuç yanlış bir durum gerekir.",
+   "check": "Karşı örneği öncüllerle sına: koşul doğru (yağmur olsaydı ıslanırdı), bahçe ıslak, yağmur yok. Üçü birlikte tutarlı."
+  }
+ },
+ {
+  "id": "felsefe-ile-dusunme-020-5",
+  "h": "14d14cff5b8e6f",
+  "guidance": {
+   "knowledge": [
+    "Geçerlilik: öncüller doğru olsaydı sonucun yanlış olamaması. Biçimle ilgilidir, öncüllerin gerçekte doğru olup olmadığına bakmaz.",
+    "Sağlamlık: hem geçerli hem de bütün öncülleri gerçekte doğru olan argüman."
+   ],
+   "strategy": "Geçerlilik ile öncüllerin gerçek doğruluğunu ayır; soru zorunlu olarak söylenebilecek olanı istediği için ancak bu ayrımdan çıkanı seç.",
+   "steps": [
+    "Verilen: biçim geçerli, bir öncül olgusal olarak yanlış.",
+    "Geçerlilik yalnız “öncüller doğru olsaydı” durumunu konu eder; öncüllerin gerçekte doğru olduğunu güvenceye almaz.",
+    "Bu yüzden zorunlu olarak söylenebilecek tek şey: geçerli biçim, öncüllerin gerçek dünyada doğru olduğunu garanti etmez."
+   ],
+   "optionReasons": [
+    "Verilenle çelişir: öncüllerden biri yanlıştır, bu yüzden argüman sağlam değildir.",
+    "Geçerliliği öncüllerin doğruluğuyla karıştırır; yanlış öncül biçimi geçersiz yapmaz.",
+    "Doğru: geçerlilik biçimle ilgilidir, öncüllerin gerçek doğruluğunu güvenceye almaz.",
+    "Yanlış öncülden doğru sonuç da çıkabilir; sonucun kesin yanlış olduğu bilgisi verilmemiştir.",
+    "Geçerliliği öncülleri doğrulayan bir güç sanır; biçim içerik hakkında hiçbir şey söylemez."
+   ],
+   "commonError": "Geçerli argümanın doğru öncüllere ve doğru sonuca sahip olduğunu sanmak.",
+   "check": "Örnek kur: “Bütün kuşlar yüzer; penguen kuştur; o hâlde penguen yüzer.” Biçim geçerli, ilk öncül yanlış, sonuç yine doğru."
+  }
+ },
+ {
+  "id": "felsefe-ile-dusunme-020-6",
+  "h": "0ea69b702f12ca",
+  "guidance": {
+   "knowledge": [
+    "Tümevarım: gözlenen sınırlı örneklerden daha geniş bir küme hakkında genel yargıya geçen akıl yürütmedir. Sonucu olasıdır, zorunlu değildir.",
+    "Tam sayım: kümedeki bütün üyeleri tek tek inceleyerek genel yargıya varmak."
+   ],
+   "strategy": "Geçişin yönüne bak: azdan çoğa, örnekten genele mi gidiliyor, yoksa genelden tekile mi?",
+   "steps": [
+    "Gözlenen: seçilmiş otuz hane.",
+    "Varılan yargı: kentin bütün haneleri. Yani sınırlı örnekten daha geniş kümeye geçiliyor.",
+    "Bütün haneler incelenmediği için tam sayım değildir; bu tümevarımsal genellemedir."
+   ],
+   "optionReasons": [
+    "Doğru: otuz haneden bütün kente geçmek tümevarımsal genellemedir.",
+    "Metin bütün hanelerin incelenmediğini açıkça söylüyor; tam sayım koşulu yok.",
+    "Tümdengelimle karıştırır; burada genelden tekile değil, örneklerden genele gidiliyor.",
+    "Metinde sözcük benzerliğine dayalı bir eşitleme yok; konu haneler ve yöntemleridir.",
+    "Araştırmacı bir öneri, yani yargı ileri sürüyor; emir cümlesi kurulmamış."
+   ],
+   "commonError": "Çok sayıda örneğe bakılınca genellemenin kesinleştiğini sanmak; incelenmeyen üyeler hâlâ farklı olabilir.",
+   "check": "Kentte otuz hane dışında yöntemi kullanmayan tek bir hane bulunursa sonuç çöker; tümevarımın sonucu bu yüzden olasıdır."
+  }
+ },
+ {
+  "id": "felsefe-ile-dusunme-020-7",
+  "h": "134e84ecc7550f",
+  "guidance": {
+   "knowledge": [
+    "Analoji (benzetme): iki şeyin bazı yönlerden benzemesinden başka bir yönden de benzeyeceği sonucuna varan akıl yürütmedir.",
+    "İlgili benzerlik: sonuçtaki özelliği gerçekten etkileyen benzerlik. Analojinin gücü buna bağlıdır."
+   ],
+   "strategy": "Analojiyi değerlendirirken gösterilen benzerliğin, sonuçtaki özellikle bağlantılı olup olmadığını sor.",
+   "steps": [
+    "Gösterilen benzerlik: iki telefonun rengi aynı.",
+    "Varılan sonuç: pil süresi aynı olacak. Pil kapasitesi ve kullanım bilinmiyor.",
+    "Renk pil süresini etkileyen bir özellik değildir; en uygun eleştiri benzerliğin ilgisiz olduğudur."
+   ],
+   "optionReasons": [
+    "Analojiyi tümdengelim gibi zorunlu sanır; analojinin sonucu en fazla olasıdır.",
+    "Akıl yürütmedeki hatanın kendisini savunur; renk benzerliği bütün özellikleri aynı yapmaz.",
+    "Doğru: renk ile pil süresi arasında bağ gösterilmemiştir.",
+    "Tersine aşırı genelleme yapar; B’nin pil süresi hakkında hiçbir veri yok.",
+    "Abartılı karşı iddiadır; telefonlar bazı yönlerden elbette benzeyebilir."
+   ],
+   "commonError": "Analojide benzerliğin sayısına bakıp konuyla ilgili olup olmadığını sormamak.",
+   "check": "Renkleri farklı ama pil ve kullanımları aynı iki telefon düşün: pil süreleri yine benzer olur; demek ki belirleyici olan renk değil."
+  }
+ },
+ {
+  "id": "felsefe-ile-dusunme-020-8",
+  "h": "06741b60e0c471",
+  "guidance": {
+   "knowledge": [
+    "Tümel sav: bir kümenin bütün üyeleri hakkında konuşan yargı (“bütün taşlar beyazdır”).",
+    "Karşı örnek: tümel savın kapsamına giren ama sava uymayan tek bir üye. Tümel savı çürütmeye yeter."
+   ],
+   "strategy": "Bulgunun savın kapsamında olup olmadığına bak; kapsamdaysa ve sava uymuyorsa doğrudan etkisi karşı örnek olmaktır.",
+   "steps": [
+    "Sav, kutudaki bütün taşları beyaz sayıyor.",
+    "Kutuda gerçekten bulunan bir taşın siyah olduğu doğrulanmış; kapsamdaki bir üye sava uymuyor.",
+    "Bu tek taş savı çürüten karşı örnektir; ama başka bir genel sav kanıtlamaz."
+   ],
+   "optionReasons": [
+    "Tek siyah taştan bütün taşların siyah olduğuna aşırı genelleme yapar.",
+    "Bulgu yalnız kutudaki taşlarla ilgilidir; dünyadaki beyaz taşlar hakkında bir şey söylemez.",
+    "“Bütün”ün anlamı değişmez; sav “bütün” dediği için tek siyah taş onunla çelişir.",
+    "Savın konusu tam da taşların rengidir; renk bulgusu doğrudan ilgilidir.",
+    "Doğru: kapsamdaki tek uyumsuz üye tümel sav için karşı örnektir."
+   ],
+   "commonError": "Tümel savı çürüten karşı örneği, karşıt tümel savın kanıtı saymak.",
+   "check": "Savı “Kutuda beyaz olmayan taş yoktur.” biçiminde yeniden yaz; siyah taş bu cümleyi doğrudan yanlışlıyor."
+  }
+ },
+ {
+  "id": "felsefe-ile-dusunme-020-9",
+  "h": "102d3baca75200",
+  "guidance": {
+   "knowledge": [
+    "Çelişki: aynı konu hakkında, aynı anda ve aynı bakımdan birbirini dışlayan iki yargı. Biri doğruysa öteki yanlış olmak zorundadır.",
+    "Zaman belirteci: “sabah dokuzda”, “akşam dokuzda” gibi ifadeler yargının hangi ana ait olduğunu sınırlar."
+   ],
+   "strategy": "İki yargının çelişip çelişmediğini anlamak için konu, zaman ve koşulun aynı olup olmadığını karşılaştır.",
+   "steps": [
+    "Konu aynı: Deniz ve bu oda.",
+    "Zaman farklı: biri sabah dokuz, öteki akşam dokuz.",
+    "Deniz arada odadan çıkmış olabilir; iki yargı birlikte doğru olabilir, doğrudan çelişki yok."
+   ],
+   "optionReasons": [
+    "Bir kişinin bir odada bulunup bulunmaması onun var olup olmadığına dair bir şey söylemez.",
+    "Doğru: farklı zamanlara ait yargılar birlikte doğru olabilir.",
+    "Yalnız konunun aynılığına bakar, zaman koşulunu atlar.",
+    "İkinci yargı bir bildirme cümlesidir, soru değil; doğruluk değeri taşır.",
+    "Zamanların farklı olduğunu görmez; sabah orada olmak akşam orada olmamayı dışlamaz."
+   ],
+   "commonError": "Aynı kişi ve yer geçtiği için iki yargıyı çelişik sanmak; zaman ve koşul da aynı olmalıdır.",
+   "check": "İkisinin birlikte doğru olduğu bir senaryo kur: Deniz öğlen odadan çıkıyor. Böyle bir senaryo varsa çelişki yoktur."
+  }
+ },
+ {
+  "id": "felsefe-ile-dusunme-020-10",
+  "h": "1cb19de6e24a38",
+  "guidance": {
+   "knowledge": [
+    "Gerekçe: bir yargıyı kabul ya da reddetmek için ileri sürülen neden. İlgili gerekçe, görüşün içeriğine yönelir.",
+    "Kişiye yönelik itiraz: görüşü değil söyleyeni hedef alan, bu yüzden görüşün doğruluğu hakkında bilgi vermeyen itiraz."
+   ],
+   "strategy": "Kişinin verdiği gerekçenin görüşün öncül ya da sonucuna mı yoksa konuşana mı yöneldiğine bak; eksik olanı bu karşılaştırma gösterir.",
+   "steps": [
+    "Kişinin tek gerekçesi söyleyenin adının hoşuna gitmemesi.",
+    "Bu, görüşün içeriği, öncülleri ya da sonucu hakkında hiçbir şey söylemez.",
+    "Eksik olan, görüşün öncül veya sonucuna yönelen ilgili bir gerekçedir."
+   ],
+   "optionReasons": [
+    "Tekrar ya da ses yüksekliği gerekçe eklemez; eksiklik aynı kalır.",
+    "Eksik dayanağı değil başka bir kusuru tarif eder; metinde görüşün okunmadığı söylenmiyor.",
+    "Kişiye dayanmayı ters yönde tekrarlar; adın görüşü doğru yapması da ilgisiz bir gerekçe olurdu.",
+    "Doğru: geçerli bir itiraz görüşün öncül veya sonucunu hedef almalıdır.",
+    "Adın uzunluğu da adın kendisi gibi görüşün içeriğiyle ilgisizdir."
+   ],
+   "commonError": "Konuşan kişiyle ilgili bir yargıyı, söylediği görüşe karşı gerekçe saymak.",
+   "check": "Aynı görüşü sevdiğin biri söylese kararın değişir mi? Değişiyorsa gerekçe görüşe değil kişiye yöneliktir."
+  }
+ },
+ {
+  "id": "varlik-felsefesi-020-1",
+  "h": "114f6de9da4f2e",
+  "guidance": {
+   "knowledge": [
+    "Töz: kendi başına var olan, başka şeylerin dayandığı temel gerçeklik.",
+    "Nicelik bakımından: kaç temel töz kabul edildiği (tek ise monizm, iki ise düalizm). Nitelik bakımından: tözün ne olduğu (madde ise materyalizm, düşünce ise idealizm)."
+   ],
+   "strategy": "Soru iki ayrı ölçüt istiyor; önce temel sayısını, sonra temelin ne olduğunu belirle ve ikisini birleştiren şıkkı seç.",
+   "steps": [
+    "Kaç temel var? Taş, su ve beden aynı tek maddi temelin düzenlenişi; ayrı zihinsel töz yok: tek temel, yani monizm.",
+    "Temel nedir? Madde: materyalizm.",
+    "İkisi birlikte: materyalist monizm."
+   ],
+   "optionReasons": [
+    "Metin ayrı bir zihinsel tözü açıkça reddediyor; iki töz yok.",
+    "Nesne sayısını töz sayısıyla karıştırır; üç nesne tek temelin farklı düzenlenişidir.",
+    "Görüş maddeyi temel alıyor; maddi varlığı reddeden idealizm bunun tersidir.",
+    "Metin varlığın temelini soruyor; ahlaki ölçüt araştırması etiğin konusudur.",
+    "Doğru: tek temel (monizm) ve bu temelin madde oluşu (materyalizm)."
+   ],
+   "commonError": "Gözlenen nesnelerin sayısını kabul edilen temel töz sayısı sanmak.",
+   "check": "Görüşe “Her şey kaç şeyden ve neyden yapılmıştır?” diye sor: “Tek şeyden, maddeden” cevabı materyalist monizmdir."
+  }
+ },
+ {
+  "id": "varlik-felsefesi-020-2",
+  "h": "0c18feb9a9c94d",
+  "guidance": {
+   "knowledge": [
+    "Ontoloji: varlık felsefesi; neyin var olduğunu ve var olanların temelini soran alan.",
+    "Düalizm: varlığın birbirine indirgenemeyen iki temel tözden oluştuğunu savunan görüş. İndirgenemez: biri ötekiyle açıklanamaz."
+   ],
+   "strategy": "Metinde kaç temel kabul edildiğini say; temel sayısı görüşün adını doğrudan verir.",
+   "steps": [
+    "Metin iki temel sayıyor: yer kaplayan madde ve düşünen zihin.",
+    "İkisi birbirine indirgenemez, yani biri ötekinden türetilmiyor.",
+    "İki bağımsız temel kabul eden görüş düalist ontolojidir."
+   ],
+   "optionReasons": [
+    "Metin zihni temel olarak kabul ediyor; zihni reddetmek bunun tersidir.",
+    "Çoğunluk oyu bilgi ve doğruluk tartışmasına ait bir ölçüttür; metin varlığın temelini konu ediyor.",
+    "Doğru: madde ve zihni iki indirgenemez temel saymak düalizmdir.",
+    "Tek temel kabul eden monizmle karıştırır; metin iki temel sayıyor.",
+    "İki temel ile iki nesneyi karıştırır; metin nesne listesi değil temel sayısı veriyor."
+   ],
+   "commonError": "İki farklı nesnenin varlığını kabul etmeyi düalizm sanmak; düalizm iki temel tözle ilgilidir.",
+   "check": "Zihni maddeyle açıklamaya çalış: metin buna izin vermiyor (indirgenemez); demek ki temel sayısı iki."
+  }
+ },
+ {
+  "id": "varlik-felsefesi-020-3",
+  "h": "19f117d696511f",
+  "guidance": {
+   "knowledge": [
+    "İdea: Platon’a göre duyulur nesnelerin değişmeyen, akılla kavranan asıl örnekleri.",
+    "Duyulur nesne: duyularla algılanan, değişen ve eksilen somut şey."
+   ],
+   "strategy": "Metindeki iki katmanlı ayrımı (değişen duyulur nesne ve değişmeyen idea) bulup bu ayrımla anılan düşünürü eşleştir.",
+   "steps": [
+    "Metin duyulur nesnelerin değişip eksildiğini söylüyor.",
+    "İdealar ise duyusal değişimden bağımsız bir gerçeklik taşıyor.",
+    "Bu iki katmanlı ayrım Platon ile ilişkilendirilen idea öğretisidir."
+   ],
+   "optionReasons": [
+    "Metin idealara gerçeklik veriyor; düşünsel gerçekliği reddetmek tam tersidir.",
+    "Doğru: değişen duyulur nesne ile değişmeyen idea ayrımı Platon’a aittir.",
+    "İdeayı kişinin geçici tasarımıyla karıştırır; metin idealara değişimden bağımsız gerçeklik veriyor.",
+    "Her şeyi atom hareketine indirgemek maddeci bir açıklamadır; metin maddi olmayan idealardan söz ediyor.",
+    "Hava ölçümü belirli bir olgunun bilimsel ölçümüdür; varlığın temeli sorusu değildir."
+   ],
+   "commonError": "“İdea” sözcüğünü gündelik anlamdaki “fikir” sanmak; Platon’da idea kişiden bağımsız bir gerçekliktir.",
+   "check": "Değişmezlik ölçütünü uygula: kişinin aklına gelen düşünce değişir, metindeki idealar değişmez; şıkta da değişmezlik korunmalı."
+  }
+ },
+ {
+  "id": "varlik-felsefesi-020-4",
+  "h": "1263925db9f76a",
+  "guidance": {
+   "knowledge": [
+    "Aristoteles’in dört nedeni: maddi neden (neyden yapıldığı), formel neden (hangi biçimde olduğu), fail neden (onu kimin ya da neyin yaptığı), ereksel neden (ne için yapıldığı).",
+    "Erek: amaç, bir şeyin varlık nedeni olan hedef."
+   ],
+   "strategy": "Heykelin her öğesini bir soruyla eşleştir: neyden, hangi biçimde, kim yaptı, ne için? Anma amacı hangi soruya cevapsa o nedendir.",
+   "steps": [
+    "Bronz “neyden?” sorusunun cevabı: maddi neden.",
+    "İnsan biçimi “hangi biçimde?”: formel neden. Heykeltıraşın yapma etkinliği “kim yaptı?”: fail neden.",
+    "Anma amacı “ne için?” sorusunun cevabı: ereksel neden."
+   ],
+   "optionReasons": [
+    "Formel neden heykelin aldığı insan biçimidir; amaç değil.",
+    "Fail neden heykeltıraşın yapma etkinliğidir; amacı değil, yapan gücü anlatır.",
+    "Renk ölçümü dört nedenden biri değildir; ayrımla ilgisiz bir seçenektir.",
+    "Doğru: anma amacı heykelin ne için yapıldığını söyler; bu ereksel nedendir.",
+    "Maddi neden heykelin yapıldığı bronzdur."
+   ],
+   "commonError": "Fail neden ile ereksel nedeni karıştırmak: biri yapanı, öteki amacı gösterir.",
+   "check": "Kontrol cümlesi kur: “Heykel anma için yapıldı.” “İçin” ekiyle kurulan cümle amacı, yani ereksel nedeni gösterir."
+  }
+ },
+ {
+  "id": "varlik-felsefesi-020-5",
+  "h": "0ee50021ec33cd",
+  "guidance": {
+   "knowledge": [
+    "Oluş: varlığın sürekli değişim ve dönüşüm içinde olması.",
+    "Süreç vurgusu: varlığı sabit parçalardan çok değişim ve ilişkiler üzerinden anlama yaklaşımı."
+   ],
+   "strategy": "Metnin neyi reddedip neyi öne çıkardığını ayır; öne çıkan şey sorunun istediği ontolojik vurgudur.",
+   "steps": [
+    "Reddedilen: tek tek değişmeyen parçalar aramak.",
+    "Öne çıkan: sürekli oluş ve ilişkiler süreci.",
+    "Doğrudan vurgu, oluşun ve sürecin temel alınmasıdır."
+   ],
+   "optionReasons": [
+    "Doğru: metin varlığı oluş ve süreç içinde anlıyor.",
+    "Tersini söyler; metin değişimi varlığın merkezine koyuyor.",
+    "Ahlak kuralları etik konusudur; metin varlığın yapısını soruyor.",
+    "Çoğunluk oyu bir doğruluk ölçütü tartışmasıdır; ontolojik vurgu değildir.",
+    "Metinde nicelik eşitliğine dair bir yargı yok; sayısal ölçüm konusu edilmiyor."
+   ],
+   "commonError": "Değişim vurgusunu varlığın inkârı ya da bilgi kuramı sorusu gibi okumak.",
+   "check": "Metnin anahtar sözcüklerini say: “sürekli oluş”, “ilişkiler süreci”. Doğru şık bu sözcüklerle örtüşmeli."
+  }
+ },
+ {
+  "id": "varlik-felsefesi-020-6",
+  "h": "151a74d642ac9c",
+  "guidance": {
+   "knowledge": [
+    "Fenomenoloji: şeylerin bilince nasıl göründüğünü, yani deneyimde nasıl verildiğini betimleyen yöntem.",
+    "Paranteze alma: gündelik “bu gerçekten var mı?” kabullerini reddetmeden geçici olarak askıya almak."
+   ],
+   "strategy": "Metindeki eylemlere bak: askıya alma ve bilinçteki görünüşü betimleme. Bu iki adımı birlikte içeren yöntemi seç; dış dünyanın inkârı olmadığına dikkat et.",
+   "steps": [
+    "Araştırmacı varoluş kabullerini geçici olarak askıya alıyor: paranteze alma.",
+    "Ağacın bilinçte nasıl verildiğini betimliyor: fenomenolojik betimleme.",
+    "Dış dünyanın yokluğunu ilan etmiyor; yöntemsel yön paranteze almadır."
+   ],
+   "optionReasons": [
+    "Metin bilince verili deneyimi betimliyor; düşünceyi maddeye indirgemek maddeciliktir.",
+    "Toplam yarar hesabı ahlak felsefesindeki faydacılığa aittir.",
+    "Doğru: kabulleri askıya alıp bilinçteki görünüşü betimlemek fenomenolojik yöntemdir.",
+    "Askıya almayı inkârla karıştırır; metin dış dünyanın yokluğunu ilan etmediğini açıkça söylüyor.",
+    "Oyla seçim bilimsel ya da fenomenolojik bir yöntem değildir; metinde oy yok."
+   ],
+   "commonError": "Paranteze almayı dış dünyayı reddetmek sanmak; yalnız varlık hükmü geçici olarak askıya alınır.",
+   "check": "Metnin son cümlesi denetim sağlar: “Dış dünyanın hiç var olmadığını ilan etmiyor.” Seçtiğin şık bu cümleyle çelişmemeli."
+  }
+ },
+ {
+  "id": "varlik-felsefesi-020-7",
+  "h": "1d031127ea9455",
+  "guidance": {
+   "knowledge": [
+    "Bilimsel soru: belirli bir olgunun nasıl gerçekleştiğini gözlem ve ölçümle araştırır.",
+    "Ontolojik soru: var olanların ne anlamda var olduğunu ve genel temelini sorar."
+   ],
+   "strategy": "İki soruyu konularının genişliğine göre karşılaştır: biri belirli cisme, öteki bütün var olanlara yöneliyor.",
+   "steps": [
+    "Fizikçi belirli bir cismin hangi kuvvetle hızlandığını araştırıyor: belirli olgu.",
+    "Filozof cismin ve öteki var olanların ne anlamda var olduğunu ve temel yapısını soruyor: genel varlık.",
+    "Ayıran yön, varlığın genel anlam ve temelini sorgulamasıdır."
+   ],
+   "optionReasons": [
+    "Doğru: filozof tek cismi değil bütün var olanların anlamını ve temelini soruyor.",
+    "Daha hassas tartmak yine bilimsel ölçümdür; filozofun sorusunu ayırmaz.",
+    "Deney tekrarı bilimsel yöntemin parçasıdır; filozof deney yapmıyor.",
+    "Filozof ölçümleri reddetmiyor; yalnız farklı bir soru soruyor.",
+    "Fizik de var olanları araştırır; bilimi varlıkla ilgisiz saymak yanlış bir karşıtlıktır."
+   ],
+   "commonError": "Felsefeyi bilime karşı ya da bilimi varlıkla ilgisiz sanmak; fark soru düzeyindedir.",
+   "check": "Sorudaki “diğer var olanlar” ifadesine bak: filozofun sorusu her şeyi kapsıyor, fizikçininki tek cismi."
+  }
+ },
+ {
+  "id": "varlik-felsefesi-020-8",
+  "h": "1c3029ad62b614",
+  "guidance": {
+   "knowledge": [
+    "Kimlik ölçütü: bir şeyin zaman içinde “aynı şey” sayılması için neyin belirleyici olduğunu söyleyen kural.",
+    "Süreklilik: parçalar değişse de örgütlenme ve kullanımın kesintisiz sürmesi."
+   ],
+   "strategy": "İki yorumun aynı olayları paylaştığına dikkat et; farklı sonuç ancak farklı ölçütlerden doğabilir.",
+   "steps": [
+    "Olaylar ortak: tahtalar zamanla değişiyor, kullanım ve örgütlenme sürüyor.",
+    "Bir yorum maddi parçaları, öteki sürekliliği ölçüt yapıyor.",
+    "Aynı veriden farklı sonuç, kimlik için belirleyici ölçütlerin farklı olmasından doğar."
+   ],
+   "optionReasons": [
+    "Kimlik sorusu geminin aynı gemi olup olmadığını sorar; renk konu edilmemiş.",
+    "Doğru: aynı olaylar farklı kimlik ölçütleriyle değerlendirildiği için sonuç ayrışır.",
+    "İki yorum aynı olayları kabul ediyor; olaylar birbirini inkâr etmiyor.",
+    "Metin her yorumun bir ölçüt kullandığını açıkça söylüyor.",
+    "Tahta sayısının değişmesi kimlik sorununu başlatıyor; bitirmiyor."
+   ],
+   "commonError": "Yorum farkını olgulardaki bir anlaşmazlık sanmak; burada olgular ortak, ölçüt farklı.",
+   "check": "İki yorumu tek ölçütle değerlendir: hepsi süreklilik ölçütünü kullansaydı aynı sonuca varırlardı; fark ölçütten geliyor."
+  }
+ },
+ {
+  "id": "varlik-felsefesi-020-9",
+  "h": "0dca6f891e1b78",
+  "guidance": {
+   "knowledge": [
+    "Ontolojik problem: varlığın gerçekten var olup olmadığı, yani varlığın imkânı sorusu.",
+    "Epistemolojik problem: bilgi felsefesinin sorusu; varlık hakkında doğru bilgi edinmenin imkânı."
+   ],
+   "strategy": "Her soruyu ana fiiline göre sınıflandır: “var mıdır?” varlığa, “bilgi edinebilir miyiz?” bilmeye yönelir.",
+   "steps": [
+    "Birinci soru varlığın var olup olmadığını soruyor: ontoloji.",
+    "İkinci soru varlık hakkında doğru bilgi edinip edinemeyeceğimizi soruyor: epistemoloji.",
+    "İlişkileri: ilki varlığın imkânına, ikincisi bilmenin imkânına yönelir."
+   ],
+   "optionReasons": [
+    "Hacim ölçmek bilimsel ölçümdür; iki soru da felsefi ve geneldir.",
+    "Ontolojik soruyu bilgi sorusuyla eşitler; varlığı kabul etmek her bilgimizi doğru yapmaz.",
+    "Soru sormak nesneyi ortadan kaldırmaz; bilgi sorusu varlığı yok etmez.",
+    "Doğru: biri varlığın, öteki bilmenin imkânını sorar.",
+    "Ortak sözcük konuyu aynı yapmaz; sorulan şey farklıdır."
+   ],
+   "commonError": "Varlık sorusu ile bilgi sorusunu aynı problem sanmak.",
+   "check": "Birinci soruya “evet” de: ikinci soru yine açık kalıyor. İki soru birbirinden bağımsız cevaplanabiliyorsa farklı problemlerdir."
+  }
+ },
+ {
+  "id": "varlik-felsefesi-020-10",
+  "h": "12a615d59561fa",
+  "guidance": {
+   "knowledge": [
+    "Katman: varlığın bir düzeyi; burada fiziksel, canlı, ruhsal ve tinsel düzeyler.",
+    "Tinsel: kültür, dil, sanat gibi insanın ortak düşünsel dünyasına ait olan."
+   ],
+   "strategy": "Metnin hem neyi açıkladığına (katmanlar) hem de neyi araştırdığına (katmanlar arası ilişki) bak; ikisini birlikte içeren şıkkı seç.",
+   "steps": [
+    "Metin varlığı dört katman üzerinden açıklıyor: fiziksel, canlı, ruhsal, tinsel.",
+    "Katmanlar birbirine bütünüyle indirgenemiyor ve aralarındaki ilişki araştırılıyor.",
+    "Odak: varlığın katmanları ve bu katmanların ilişkisi."
+   ],
+   "optionReasons": [
+    "Katmanların indirgenemez farklı özellikleri var; hepsini tek ölçüme indirmek metne aykırıdır.",
+    "Yasal yaptırım hukuk ve ahlak konusudur; metin varlığın yapısını inceliyor.",
+    "Katmanlar varlığın düzeyleri olarak ele alınıyor; kişisel keyfe indirgenmiyor.",
+    "Metin bilimin yöntemi hakkında bir şey söylemiyor; konu varlık katmanları.",
+    "Doğru: metin katmanları ve aralarındaki ilişkiyi inceliyor."
+   ],
+   "commonError": "İndirgenemez katmanları birbirinin türevi sanmak ya da yalnız tek katmana odaklanmak.",
+   "check": "Metindeki iki fiili eşle: “açıklıyor” (katmanlar) ve “araştırıyor” (ilişki); doğru şık ikisini de içermeli."
+  }
+ },
+ {
+  "id": "bilgi-felsefesi-020-1",
+  "h": "066f8760ec1607",
+  "guidance": {
+   "knowledge": [
+    "Bilginin kaynağı problemi: bilginin hangi yolla (duyu, akıl, sezgi vb.) elde edildiğini sorar.",
+    "Doğruluk ölçütü problemi: bir yargının doğru olup olmadığına neyle karar verileceğini sorar. Uygunluk bu ölçütlerden biridir."
+   ],
+   "strategy": "Metin sorunun neyi araştırdığını ve neyi dışarıda bıraktığını açıkça söylüyor; bu sınırı kullan.",
+   "steps": [
+    "Ece kapıya bakarak yargıya ulaşıyor: bilgiyi algıyla ediniyor.",
+    "Soru yargının hangi yolla elde edildiğini araştırıyor; olguyla uygunluk sorulmuyor.",
+    "Ediniliş yolu sorusu bilginin kaynağı problemidir."
+   ],
+   "optionReasons": [
+    "Yazı uzunluğu felsefi bir problem değildir; ilgisiz bir ölçüttür.",
+    "Doğru: yargının hangi yolla elde edildiği sorusu bilginin kaynağı problemidir.",
+    "Töz sayısı varlık felsefesinin sorusudur.",
+    "Ahlaki yükümlülük etiğin konusudur; kapı örneğinde eylem değerlendirilmiyor.",
+    "Güzelin ölçütü estetiğin konusudur."
+   ],
+   "commonError": "Bilginin kaynağı ile doğruluk ölçütünü karıştırmak; biri “nereden?”, öteki “doğru mu?” diye sorar.",
+   "check": "Soruyu yeniden yaz: “Ece bunu nereden biliyor?” Bu cümle kaynak sorusudur, “Doğru mu?” sorusu değil."
+  }
+ },
+ {
+  "id": "bilgi-felsefesi-020-2",
+  "h": "1f8147f17622ce",
+  "guidance": {
+   "knowledge": [
+    "Doğruluk ölçütü: bir yargının doğru sayılması için başvurulan ölçü.",
+    "Uygunluk ölçütü: yargının, söz ettiği olguyla örtüşüyorsa doğru sayılması."
+   ],
+   "strategy": "Kişinin yargıyı neyle karşılaştırdığına bak: olguyla mı, başka yargılarla mı, sonuçlarla mı, ortak kabulle mi?",
+   "steps": [
+    "Yargı: “Bu odadaki ışık yanıyor.”",
+    "Kişi bunu aynı yer ve zamanda ışığın gerçekten yanıp yanmadığını gözleyerek değerlendiriyor; yargıyı olguyla karşılaştırıyor.",
+    "Yargı ile olgunun karşılaştırılması uygunluk ölçütüdür."
+   ],
+   "optionReasons": [
+    "Kazanç sağlaması pratik yarar ölçütüdür; kişi yarara değil olguya bakıyor.",
+    "Ödevden eylemek ahlak felsefesinin kavramıdır, doğruluk ölçütü değildir.",
+    "İki töz kabulü varlık felsefesindeki düalizmdir.",
+    "Doğru: yargı olguyla karşılaştırılıyor; bu uygunluk ölçütüdür.",
+    "Ortak kabul uzlaşım ölçütüdür; metinde başkalarının görüşüne başvurulmuyor."
+   ],
+   "commonError": "Gözlem geçtiği için soruyu bilginin kaynağı sorusu sanmak; burada gözlem doğrulamanın aracıdır.",
+   "check": "Işık sönükse kişi yargıyı yanlış sayacak; doğruluğu olgu belirliyor, demek ki ölçüt uygunluktur."
+  }
+ },
+ {
+  "id": "bilgi-felsefesi-020-3",
+  "h": "178108b15e373b",
+  "guidance": {
+   "knowledge": [
+    "Yöntemsel kuşku: kesin bilgiye ulaşmak için kabulleri sınamaya araç olarak kullanılan kuşku.",
+    "Kuşkuculuk: kesin bilginin imkânsız olduğunu son hüküm olarak savunan görüş."
+   ],
+   "strategy": "Kuşkunun araç mı amaç mı olduğuna bak; metin bunu açıkça belirtiyor.",
+   "steps": [
+    "Yaklaşım kesin bilgiye ulaşmayı hedefliyor.",
+    "Bunun için önce kuşku duyulabilir kabulleri inceliyor; kuşkuyu son amaç saymıyor.",
+    "Kuşku burada güvenilir bilgi arayışında bir yöntemdir."
+   ],
+   "optionReasons": [
+    "Çoğunluk oyu uzlaşım ölçütüne aittir; metinde kuşkuyla ilişkisi yok.",
+    "Kuşku düşünsel bir sınamadır; nesneleri fiziksel olarak yok etmez.",
+    "Doğru: kuşku kesin bilgiye ulaşmanın aracı olarak kullanılıyor.",
+    "Kuşkuculukla karıştırır; metin kuşkuyu son hüküm saymadığını açıkça söylüyor.",
+    "Tersini söyler; yaklaşım tam da kabullerin incelenmesini istiyor."
+   ],
+   "commonError": "Her kuşkuyu kuşkuculuk sanmak; yöntemsel kuşku kesin bilgiyi hedefler.",
+   "check": "Metnin hedef sözcüğünü bul: “kesin bilgiye ulaşmak için”. Hedef bilgi olduğuna göre kuşku amaç değil araçtır."
+  }
+ },
+ {
+  "id": "bilgi-felsefesi-020-4",
+  "h": "1b75157376a6e7",
+  "guidance": {
+   "knowledge": [
+    "Rasyonalizm (akılcılık): temel bilgilerin akılla, deneyden bağımsız olarak elde edilebildiğini savunan görüş.",
+    "Zorunlu ilke: başka türlü olamayacak, her durumda geçerli ilke."
+   ],
+   "strategy": "Metnin bilginin kaynağı olarak neyi öne çıkardığına bak: akıl mı, deney mi?",
+   "steps": [
+    "Metin bazı temel bilgilerin deney doğrulamasına gerek olmadan akılla bilinebileceğini söylüyor.",
+    "Zorunlu ilkelerin yalnız duyusal tekrardan türemediğini ekliyor.",
+    "Aklı ve deneyden bağımsız ilkeleri öne çıkaran yönelim rasyonalizmdir."
+   ],
+   "optionReasons": [
+    "Empirizmle karıştırır; metin bilgiyi yalnız duyuya bağlamayı reddediyor.",
+    "Anlık kazanç pragmatizme yakın bir doğruluk anlayışıdır; metin aklı öne çıkarıyor.",
+    "Çoğunluk kabulü uzlaşım ölçütüdür; metinde geçmiyor.",
+    "Metinde bilincin varlığına dair bir inkâr yok; konu bilginin kaynağı.",
+    "Doğru: aklı ve deneyden bağımsız zorunlu ilkeleri temel alan görüş rasyonalizmdir."
+   ],
+   "commonError": "“Deney” sözcüğünü görünce empirizm demek; metin deneye bağımlılığı reddediyor.",
+   "check": "Metindeki “akıl yoluyla” ve “duyusal tekrardan türemediği” ifadeleri aynı yönü gösteriyor: kaynak akıl."
+  }
+ },
+ {
+  "id": "bilgi-felsefesi-020-5",
+  "h": "1fddd9759a590e",
+  "guidance": {
+   "knowledge": [
+    "Empirizm (deneycilik): bilginin içeriğinin deneyimle, duyular yoluyla kazanıldığını savunan görüş.",
+    "Doğuştan bilgi: zihinde deneyimden önce hazır bulunduğu ileri sürülen bilgi; empirizm bunu reddeder."
+   ],
+   "strategy": "Metnin bilginin kaynağı olarak neyi kabul edip neyi reddettiğine bak.",
+   "steps": [
+    "Kabul edilen: bilginin içeriği deneyimle kazanılır.",
+    "Reddedilen: zihnin doğuştan tamamlanmış bilgilerle dolu olduğu.",
+    "Bu iki vurgu empirizmle doğrudan ilişkilidir."
+   ],
+   "optionReasons": [
+    "Doğru: bilgiyi deneyime bağlayıp doğuştan bilgiyi reddetmek empirizmdir.",
+    "Düalizm varlık felsefesine aittir; metin bilginin kaynağını konu ediyor.",
+    "Ödevden eylemek ahlak felsefesinin konusudur.",
+    "Metnin reddettiği görüşü, yani doğuştan hazır bilgiyi seçer.",
+    "Yargının uzunluğu doğruluk ölçütü değildir; metinle ilgisizdir."
+   ],
+   "commonError": "Empirizm ile rasyonalizmi karıştırmak; deneyime vurgu empirizmin, akla vurgu rasyonalizmin göstergesidir.",
+   "check": "Metindeki “doğuştan tamamlanmış bilgi kabul edilemez” ifadesi rasyonalist seçeneği doğrudan dışarıda bırakıyor."
+  }
+ },
+ {
+  "id": "bilgi-felsefesi-020-6",
+  "h": "1558c6dec701f2",
+  "guidance": {
+   "knowledge": [
+    "Deney malzemesi: duyular yoluyla gelen ham veri.",
+    "Zihnin düzenleyici formları: zihnin bu ham veriyi bilgiye dönüştüren kendi kalıpları. Bu çerçeve Kant ile ilişkilendirilir."
+   ],
+   "strategy": "Görüşteki iki parçayı ayır: “deneyimle başlar” ve “zihnin formlarıyla bilgi hâline gelir”. Doğru aktarım ikisini de korumalı.",
+   "steps": [
+    "Birinci parça: bilgi deneyimle başlar; deneyim gerekli.",
+    "İkinci parça: deney malzemesi zihnin düzenleyici formlarıyla bilgiye dönüşür; zihin etkin.",
+    "Doğru aktarım: deney malzemesi ile zihnin kurucu düzeni birlikte kabul edilir."
+   ],
+   "optionReasons": [
+    "Zihni edilgin kayıt yüzeyi saymak ikinci parçayı siler; metinde zihin düzenleyicidir.",
+    "Çoğunluk oyu bilginin kaynağıyla ilgisizdir; metinde geçmiyor.",
+    "Metin önermelerin sınanması hakkında bir şey söylemiyor; konu bilginin oluşumu.",
+    "Doğru: deney malzemesi ve zihnin formları birlikte bilgiyi oluşturur.",
+    "Birinci parçayı siler; metin bilginin deneyimle başladığını söylüyor."
+   ],
+   "commonError": "Uzlaştırıcı bir görüşü yalnız bir yarısıyla okumak: yalnız empirist ya da yalnız rasyonalist.",
+   "check": "Seçtiğin şıktan görüşün iki parçasını da yeniden kurabiliyor musun? “Deney” ve “zihin” birlikte geçmiyorsa aktarım eksiktir."
+  }
+ },
+ {
+  "id": "bilgi-felsefesi-020-7",
+  "h": "0c9db1c33a1e56",
+  "guidance": {
+   "knowledge": [
+    "Tutarlılık ölçütü: bir yargının, kabul edilmiş öteki yargılarla çelişmiyor ve onlarla uyumlu bir bütün oluşturuyorsa doğru sayılması.",
+    "Çelişmemek: iki yargının birlikte doğru olabilmesi."
+   ],
+   "strategy": "Kişinin yargıyı neyle karşılaştırdığına bak; olguyla değil öteki yargılarla karşılaştırıyorsa ölçüt tutarlılıktır.",
+   "steps": [
+    "Kişi yargıyı kabul ettiği öteki yargılarla karşılaştırıyor.",
+    "Ölçütleri: çelişmeme ve anlamlı bir bütün oluşturma.",
+    "Yargılar arası uyuma dayanan ölçüt tutarlılıktır."
+   ],
+   "optionReasons": [
+    "Doğru: öteki yargılarla çelişmeme ve bütünlük tutarlılık ölçütüdür.",
+    "Fiziksel hacim bir nesne özelliğidir; doğruluk ölçütü değildir.",
+    "Maddi kazanç pratik yarar ölçütüne yakındır; kişi kazançtan söz etmiyor.",
+    "Oyla seçmek uzlaşım ölçütüne benzer; kişi başkalarının oyuna değil kendi yargılarına bakıyor.",
+    "Ödev ve niyet ahlak felsefesine aittir."
+   ],
+   "commonError": "Tutarlılık ile uygunluğu karıştırmak: biri yargıları birbiriyle, öteki yargıyı olguyla karşılaştırır.",
+   "check": "Kişinin cümlesinde olgu ya da gözlem geçiyor mu? Geçmiyor; yalnız “kabul ettiğim yargılar” geçiyor. Bu tutarlılığı doğrular."
+  }
+ },
+ {
+  "id": "bilgi-felsefesi-020-8",
+  "h": "12d92c32c7cb50",
+  "guidance": {
+   "knowledge": [
+    "Tümel uzlaşım ölçütü: herkesin ortak kabul ettiği yargının doğru sayılması.",
+    "İtirazın hedefi: bir görüşün itiraz edilen zayıf noktası."
+   ],
+   "strategy": "Soru iki şey istiyor: önce ilk kişinin ölçütünü adlandır, sonra ikinci kişinin hangi varsayıma itiraz ettiğini bul.",
+   "steps": [
+    "İlk kişi ortak kabulü doğruluk ölçütü yapıyor: tümel uzlaşım.",
+    "İkinci kişi insan gruplarının ortaklaşa yanılabileceğini söylüyor.",
+    "İtirazın hedefi, ortak kabulün yanılmaz doğruluk garantisi sayılmasıdır."
+   ],
+   "optionReasons": [
+    "İlk kişi olguyla karşılaştırma yapmıyor; uygunluk ölçütünü kullanmıyor.",
+    "Erdem ahlak felsefesine aittir; metin doğruluk ölçütünü tartışıyor.",
+    "Monizm varlık felsefesine aittir.",
+    "Tümdengelim bir çıkarım türüdür, doğruluk ölçütü değildir.",
+    "Doğru: ölçüt ortak kabul, itiraz ise bu kabulün yanılmaz sayılmasına yöneliyor."
+   ],
+   "commonError": "Bir ölçütü tanımayı onu benimsemekle karıştırmak ya da itirazın hedefini atlamak.",
+   "check": "Tarihten bir örnek düşün: bir dönem herkesin yanlış kabul ettiği bir yargı varsa uzlaşım doğruluğu garanti etmez; itiraz tam bunu söylüyor."
+  }
+ },
+ {
+  "id": "bilgi-felsefesi-020-9",
+  "h": "02ae4098cfb9c5",
+  "guidance": {
+   "knowledge": [
+    "Pragmatik (faydacı) doğruluk ölçütü: bir düşüncenin deneyimde işe yaraması ve sorun çözmesi doğruluğunun ölçüsüdür.",
+    "Ahlaki fayda: eylemlerin iyi ya da kötü olmasını toplam yararla değerlendiren etik görüş; doğruluk ölçütünden farklıdır."
+   ],
+   "strategy": "Metnin hem bilgi yargısını konu ettiğine hem de işe yarama vurgusuna dikkat et; ikisi birlikte doğruluk ölçütünü belirler.",
+   "steps": [
+    "Yaklaşım düşüncenin deneyimde işe yaramasını ve sorun çözmesini öne çıkarıyor.",
+    "Metin konunun ahlak değil bilgi yargısı olduğunu açıkça söylüyor.",
+    "Bilgi yargısında işe yaramayı ölçü alan ölçüt pratik yarardır."
+   ],
+   "optionReasons": [
+    "Töz bölünmesi varlık felsefesine aittir.",
+    "Sözcük sayısı doğrulukla ilgisizdir.",
+    "Doğru: işe yarama ve sorun çözme pratik yarar ölçütüdür.",
+    "Görünüş simetrisi estetik bir niteliktir, doğruluk ölçütü değildir.",
+    "Ödev ahlakına aittir; metin ahlaki değeri değil bilgi yargısını konu ediyor."
+   ],
+   "commonError": "Pragmatik doğruluk ölçütünü ahlaktaki faydacılıkla karıştırmak.",
+   "check": "Metnin anahtar ifadesi “işe yaraması ve sonuç vermesi”; seçtiğin ölçüt bu ifadeyi karşılamalı."
+  }
+ },
+ {
+  "id": "bilgi-felsefesi-020-10",
+  "h": "1032cb25c8202e",
+  "guidance": {
+   "knowledge": [
+    "Varlık ile yargı ayrımı: bir nesnenin var olması ile onun hakkında söylenen yargının doğru olması farklı şeylerdir.",
+    "Yanlış yargı: söz ettiği olguyla örtüşmeyen yargı; nesneyi etkilemez."
+   ],
+   "strategy": "Örnekte neyin yanlış çıktığını ve neyin tartışmasız kaldığını ayır; aradaki fark ayrımı gösterir.",
+   "steps": [
+    "“Çamdır.” yargısı incelemeyle yanlış çıkıyor; ağaç servi.",
+    "Ağacın bahçede bulunduğu tartışmasız.",
+    "Gösterilen ayrım: var olan nesne ile onun hakkındaki yargının doğruluğu."
+   ],
+   "optionReasons": [
+    "Ahlak kuralları örnekte hiç geçmiyor.",
+    "Doğru: ağaç var, yargı yanlış; ikisi ayrıdır.",
+    "Tersini söyler; yanlış yargıya rağmen ağaç bahçede duruyor.",
+    "Örnekte yanlış çıkan bir yargı var; bütün sözler doğru değildir.",
+    "Tür, konuşanın oyuyla değil incelemeyle belirleniyor."
+   ],
+   "commonError": "Yanlış yargının nesnenin yokluğunu gösterdiğini sanmak.",
+   "check": "Yargıyı düzelt: “Servidir.” Ağaçta hiçbir şey değişmedi, yalnız yargı değişti; demek ki ikisi ayrı şeylerdir."
+  }
+ },
+ {
+  "id": "bilim-felsefesi-020-1",
+  "h": "0570933f4dce27",
+  "guidance": {
+   "knowledge": [
+    "Bilim: olguları gözlem, ölçüm ve deneyle araştıran etkinlik.",
+    "Bilim felsefesi: bilimin kendisini konu edinir; bir açıklamayı bilimsel yapan yöntem ve sınama ölçütlerini sorar."
+   ],
+   "strategy": "İki etkinliği konularına göre karşılaştır: biri olguya, öteki bilimin yöntemine yöneliyor.",
+   "steps": [
+    "Biyolog fidelerin büyümesini ölçüyor: olgu araştırması, yani bilim.",
+    "Filozof bir açıklamanın bilimsel sayılması için hangi sınama koşullarını taşıması gerektiğini soruyor.",
+    "Ayıran yön: bilimin yöntem ve sınama ölçütlerini incelemesi."
+   ],
+   "optionReasons": [
+    "Doğru: filozof olguyu değil bilimsel açıklamanın ölçütlerini soruyor.",
+    "Daha küçük birimle ölçmek yine bilimsel ölçümdür; filozofun sorusu bu değil.",
+    "Sayıyı tekrar etmek hiçbir soru düzeyi farkı yaratmaz; ilgisiz bir seçenektir.",
+    "Filozof veriyi reddetmiyor; yalnız verinin bilimsel açıklamada nasıl kullanılacağını soruyor.",
+    "Filozof sınama koşullarını soruyor; sonuçları kişisel beğeni saymıyor."
+   ],
+   "commonError": "Bilim felsefesini bilime karşı bir tutum sanmak; o, bilimin yöntemini inceler.",
+   "check": "Filozofun sorusunu fidelere değil başka bir alana uygula: soru yine anlamlıdır. Bu, sorunun olguya değil yönteme ait olduğunu gösterir."
+  }
+ },
+ {
+  "id": "bilim-felsefesi-020-2",
+  "h": "1c6d812022a0be",
+  "guidance": {
+   "knowledge": [
+    "Bağımsız değişken: araştırmacının etkisini görmek için bilerek değiştirdiği etken.",
+    "Bağımlı değişken: bağımsız değişkene bağlı olarak değişip değişmediği ölçülen sonuç. Sabit tutulanlar ise kontrol değişkenidir."
+   ],
+   "strategy": "Deneydeki her öğeye bir soru sor: Araştırmacı bunu değiştiriyor mu, ölçüyor mu, sabit mi tutuyor?",
+   "steps": [
+    "Değiştirilen: ışık süresi. Bağımsız değişkendir.",
+    "Ölçülen: dört hafta sonundaki boy artışı. Bağımlı değişkendir.",
+    "Su, toprak ve başlangıç boyu sabit tutuluyor; bunlar kontrol değişkenidir. Sıra: ışık süresi ve boy artışı."
+   ],
+   "optionReasons": [
+    "Sırayı ve rolleri karıştırır; boy artışı ölçülen bağımlı değişkendir, başlangıç boyu sabit tutulur.",
+    "Su ve toprak sabit tutulan kontrol değişkenleridir; değiştirilmiyor.",
+    "Toprak türü de su da sabit tutuluyor; ikisi de bağımsız ya da bağımlı değişken değildir.",
+    "Cetvelin rengi ve araştırmacının adı deneyin değişkenleri değildir.",
+    "Doğru: değiştirilen ışık süresi, ölçülen boy artışıdır."
+   ],
+   "commonError": "Sabit tutulan kontrol değişkenlerini bağımsız değişken sanmak.",
+   "check": "Cümle kur: “Işık süresi boy artışını etkiler mi?” Etkileyen bağımsız, etkilenen bağımlı değişkendir; cümle anlamlı."
+  }
+ },
+ {
+  "id": "bilim-felsefesi-020-3",
+  "h": "12537a880f2028",
+  "guidance": {
+   "knowledge": [
+    "Karışık değişken: bağımsız değişkenle birlikte değişip sonucu etkileyebilen ikinci etken.",
+    "Kontrollü karşılaştırma: tek etkenin etkisini görmek için yalnız onu değiştirip ötekileri sabit tutmak."
+   ],
+   "strategy": "Gruplar arasında kaç etkenin birlikte değiştiğini say; birden fazla etken birlikte değişiyorsa etki tek birine yüklenemez.",
+   "steps": [
+    "Birinci grup sıcak ve nemli, ikinci grup soğuk ve kuru.",
+    "Gruplar arasında hem sıcaklık hem nem değişmiş.",
+    "Sonuç farkı sıcaklıktan, nemden ya da ikisinden olabilir; etki tek etkene ayrılamıyor."
+   ],
+   "optionReasons": [
+    "Tersine aşırı sonuçtur; verilenler sıcaklığın etkisiz olduğunu da göstermez.",
+    "Fark bir bilgi taşır; sorun farkın hangi etkenden geldiğinin ayrılamamasıdır.",
+    "Sayısal ifade deneyi gereksiz kılmaz; sorun ölçüm biçiminde değil düzenektedir.",
+    "Doğru: iki etken birlikte değiştiği için etki yalnız sıcaklığa yüklenemez.",
+    "İki grup tek başına kanıt değildir; gruplar tek etkende farklılaşmalıdır."
+   ],
+   "commonError": "Birlikte değişen iki etkenden birini gözden kaçırıp sonucu tek nedene bağlamak.",
+   "check": "Ayırt edici deney tasarla: sıcak-kuru ve soğuk-kuru grupları karşılaştırırsan nem sabit kalır; ancak o zaman sıcaklığın etkisi görülür."
+  }
+ },
+ {
+  "id": "bilim-felsefesi-020-4",
+  "h": "1e65a480516524",
+  "guidance": {
+   "knowledge": [
+    "Hipotez: sınanabilir bir öngörü. H1 yalnız sıcaklığın, H2 yalnız nemin sonucu artıracağını öngörüyor.",
+    "Aynı nemde karşılaştırma: nemi sabit tutup yalnız sıcaklığın etkisine bakmak."
+   ],
+   "strategy": "Tabloyu çiftler hâlinde oku: önce nemi sabit tutup sıcaklığı değiştir, sonra sıcaklığı sabit tutup nemi değiştir.",
+   "steps": [
+    "Kuru koşulda: sıcak 4, soğuk 4. Nemli koşulda: sıcak 10, soğuk 10. Aynı nemde sıcaklık sonucu değiştirmiyor.",
+    "Sıcak koşulda: kuru 4, nemli 10. Soğuk koşulda: kuru 4, nemli 10. Nem artınca sonuç 6 birim artıyor.",
+    "Sonuç H2’nin nem öngörüsüyle uyuşuyor, H1’in sıcaklık öngörüsüyle uyuşmuyor."
+   ],
+   "optionReasons": [
+    "Dört kurgu sayıdan bütün gerçek sistemler için evrensel hüküm çıkarır; veri bu kadar geniş değildir.",
+    "Doğru: aynı nemde sıcaklık sonucu değiştirmiyor ve bu H2 ile uyuşuyor.",
+    "6 birimlik fark nemden gelir: 10 − 4 = 6. Aynı nemde sıcaklık değişince fark 4 − 4 = 0 olur.",
+    "Her çiftte sıcaklık değişince sonuç aynı kalıyor; H1 hiçbir çiftte doğrulanmıyor.",
+    "Tablo kuru ve nemli koşulları açıkça karşılaştırıyor."
+   ],
+   "commonError": "Tablodaki farkın hangi değişkenden geldiğini çiftleri sabitlemeden yorumlamak.",
+   "check": "Sıcaklık sütunlarının ortalamasını al: sıcak (4 + 10) / 2 = 7, soğuk (4 + 10) / 2 = 7. Eşit oldukları için sıcaklık etkisizdir."
+  }
+ },
+ {
+  "id": "bilim-felsefesi-020-5",
+  "h": "126492447f1a85",
+  "guidance": {
+   "knowledge": [
+    "Kuram (teori): çok sayıda olguyu ortak ilkelerle ilişkilendiren ve öndeyi üreten açıklama yapısı.",
+    "Yasa: doğadaki bir düzenliliği ya da değişkenler arası ilişkiyi ifade eden genelleme. Öndeyi: önceden kestirim."
+   ],
+   "strategy": "Son ifadedeki varsayımı bul (çok sınanan kuram yasaya dönüşür) ve kuramla yasanın işlevlerini karşılaştırarak düzelt.",
+   "steps": [
+    "İfade, başarılı sınamalardan sonra kuramın zorunlu olarak yasa adını alacağını söylüyor.",
+    "Oysa kuram açıklama yapar, yasa bir düzenliliği ifade eder; işlevleri farklıdır.",
+    "Destek artışı bir kuramı yasaya dönüştürmez; uygun düzeltme budur."
+   ],
+   "optionReasons": [
+    "Metin kuramın öndeyi sunduğunu açıkça söylüyor; tersini iddia etmek veriyle çelişir.",
+    "Tek gözlem bir kuramı değişmez yapmaz; bilimsel bilgi düzeltilebilir.",
+    "Doğru: kuram ve yasa farklı işlev taşır; destek artışı bir ad değiştirme basamağı değildir.",
+    "Gündelik dildeki “kuram = tahmin” anlamını bilime taşır; metindeki kuram güçlü bir açıklama yapısıdır.",
+    "Yasa bir ilişki ya da düzenlilik ifade eder; bu yüzden veriye dayanır."
+   ],
+   "commonError": "Hipotez, kuram ve yasayı birbirine dönüşen basamaklar sanmak.",
+   "check": "İki ayrı soru sor: “Ne oluyor?” sorusuna yasa, “Neden oluyor?” sorusuna kuram cevap verir. Farklı sorular olduğu için biri ötekine dönüşmez."
+  }
+ },
+ {
+  "id": "bilim-felsefesi-020-6",
+  "h": "0fdb4b228a185e",
+  "guidance": {
+   "knowledge": [
+    "Yanlışlanabilirlik: bir savın, onunla uyuşmayacak olası bir gözlem tanımlanabilmesi; savın sınanabilir olması.",
+    "Fiilen yanlışlanmış sav: kendisiyle uyuşmayan bulgu gerçekten elde edilmiş sav."
+   ],
+   "strategy": "Metnin olası bir bulgudan mı yoksa elde edilmiş bir bulgudan mı söz ettiğine dikkat et.",
+   "steps": [
+    "Sav: bu koşulda bütün örnekler genleşir.",
+    "Metin, genleşmeyen bir örneğin savla uyuşmayacağını belirtiyor; böyle bir örneğin bulunduğunu söylemiyor.",
+    "Savın hangi bulguyla çürüyeceği belli olduğu için sav olası bir karşı bulguyla sınanabilirdir."
+   ],
+   "optionReasons": [
+    "Savda açık bir koşul var: “bu koşul sağlandığında”.",
+    "Doğru: savla uyuşmayacak olası bulgu tanımlanmış; sav sınanabilirdir.",
+    "Olasılık ile gerçekleşmeyi karıştırır; karşı örneğin bulunduğu söylenmemiştir.",
+    "Tersini söyler; sav uyuşmayacağı bulguyu açıkça belirtiyor.",
+    "Oy çokluğu metinde geçmiyor; sınanabilirlik gözlemle ilgilidir."
+   ],
+   "commonError": "Yanlışlanabilir savı yanlışlanmış sav sanmak.",
+   "check": "Savı “Her şey ya genleşir ya genleşmez.” cümlesiyle karşılaştır: bu cümleyle uyuşmayan hiçbir gözlem yok, yani sınanamaz. Bizim sav ise sınanabilir."
+  }
+ },
+ {
+  "id": "bilim-felsefesi-020-7",
+  "h": "0b913c38b31b69",
+  "guidance": {
+   "knowledge": [
+    "Evrensel sav: bir kümenin bütün üyeleri hakkında konuşan sav (“bütün kuğular beyazdır”).",
+    "Doğrulama ile çürütme arasındaki asimetri: uyumlu örnekler ne kadar çok olsa da evrensel savı kesinleştiremez; tek gerçek karşı örnek ise onu çürütür."
+   ],
+   "strategy": "Uyumlu gözlemlerin ve tek karşı örneğin savı nasıl etkilediğini ayrı ayrı değerlendir.",
+   "steps": [
+    "Yüzlerce beyaz kuğu savı destekliyor ama gözlenmemiş kuğular hâlâ farklı olabilir.",
+    "Savın kapsamındaki tek siyah kuğu güvenilir biçimde görülüyor.",
+    "Çok sayıdaki uyumlu örnek kesinlik sağlamazken tek gerçek karşı örnek savla bağdaşmaz."
+   ],
+   "optionReasons": [
+    "Kapsamdaki karşı örnek tam da savı çürüten bulgudur.",
+    "Sınırlı gözlemden genellemeye geçmek tümevarımdır; matematiksel ispat değildir.",
+    "Doğru: uyumlu örnekler kesinleştirmez, tek karşı örnek çürütür.",
+    "Tek siyah kuğudan bütün kuğuların siyah olduğuna aşırı genelleme yapar.",
+    "Sonlu sayıda gözlem açık bir kümenin bütün üyelerini tüketemez."
+   ],
+   "commonError": "Çok sayıda uyumlu gözlemin evrensel savı kanıtladığını sanmak.",
+   "check": "Savı “Beyaz olmayan kuğu yoktur.” diye yeniden yaz: tek siyah kuğu bu cümleyi yanlışlar, yüz beyaz kuğu ise doğrulamaya yetmez."
+  }
+ },
+ {
+  "id": "bilim-felsefesi-020-8",
+  "h": "13cf19d1281dff",
+  "guidance": {
+   "knowledge": [
+    "Paradigma: bir bilim topluluğunun uzun süre paylaştığı ortak problem, yöntem ve kabul çerçevesi. Bu kavram Kuhn ile ilişkilendirilir.",
+    "Aykırılık: paradigmanın açıklayamadığı bulgu. Kriz: aykırılıkların birikmesiyle çerçevenin sarsılması."
+   ],
+   "strategy": "Metindeki anahtar kavramları (ortak çerçeve, aykırılık, kriz, büyük değişim) bul ve bunlarla anılan yaklaşımı eşleştir.",
+   "steps": [
+    "Metin bilim topluluğunun ortak problem ve yöntem çerçevesinde çalıştığını söylüyor: paradigma.",
+    "Aykırılık ve krizlerin büyük değişimlere yol açabilmesi inceleniyor.",
+    "Bu kavramlar Kuhn ile ilişkilendirilen paradigma ve bilimsel değişme yaklaşımıdır."
+   ],
+   "optionReasons": [
+    "Doğru: ortak çerçeve, aykırılık ve kriz kavramları Kuhn’un paradigma yaklaşımına aittir.",
+    "Metin önermelerin kaynağını değil bilim topluluğunun çalışmasını konu ediyor.",
+    "Tersini söyler; metin bilimin topluluk ve tarih içindeki pratiğini inceliyor.",
+    "Kuram ile yasa arasında zorunlu basamak varsayımıdır; metinde geçmiyor.",
+    "Matematiksel ispat konusu edilmiyor; oy da geçmiyor."
+   ],
+   "commonError": "Paradigma değişimini keyfî inanç değişimi sanmak.",
+   "check": "Metindeki “aykırılık” ve “kriz” sözcüklerini çıkar: geriye yalnız ortak çerçeve kalır. Üçünü birlikte kullanan yaklaşım paradigma yaklaşımıdır."
+  }
+ },
+ {
+  "id": "bilim-felsefesi-020-9",
+  "h": "124ccd26dafba1",
+  "guidance": {
+   "knowledge": [
+    "Bilimsel dürüstlük: verileri eksiksiz ve olduğu gibi sunma ilkesi.",
+    "Denetlenebilirlik: başka araştırmacıların veriyi ve yöntemi inceleyip sonucu yeniden değerlendirebilmesi."
+   ],
+   "strategy": "Davranışın kime ve neye zarar verdiğine bak: gizlenen veri sonucu yanıltır ve başkalarının denetimini engeller.",
+   "steps": [
+    "Araştırmacı istediği sonuca uymayan veriyi gizliyor.",
+    "Bunu açıkça bildirmiyor; başkaları eksikliği fark edip sonucu yeniden değerlendiremiyor.",
+    "Zedelenen ilke: araştırmada dürüstlük ve denetlenebilirlik."
+   ],
+   "optionReasons": [
+    "Kavram sayısı bir kuramın değerini belirlemez; sorun veri gizlemedir.",
+    "Töz sayısı varlık felsefesinin konusudur.",
+    "Uyak düzeni şiirle ilgilidir; araştırma raporuyla ilgisi yok.",
+    "Sözcük sayısı doğruluk ölçütü değildir; sorun verinin saklanmasıdır.",
+    "Doğru: veriyi gizlemek dürüstlüğü ve başkalarının denetimini zedeler."
+   ],
+   "commonError": "Veri gizlemeyi yalnız teknik bir sunum sorunu sanmak.",
+   "check": "Gizlenen veri raporda olsaydı başka biri sonucu yeniden sınayabilirdi; bu, ihlal edilenin denetlenebilirlik olduğunu doğrular."
+  }
+ },
+ {
+  "id": "bilim-felsefesi-020-10",
+  "h": "13ed52dac10099",
+  "guidance": {
+   "knowledge": [
+    "Kanıt gücü: bir bilimsel sonucu destekleyen verilerin miktarı ve niteliği; her sonuç için aynı değildir.",
+    "Düzeltilebilirlik: yeni verilerle sonuçların gözden geçirilebilmesi; açık yöntem bunu mümkün kılar."
+   ],
+   "strategy": "Yazarın iki iddiasını birlikte tut: sonuçlar farklı güçte desteklenir ve düzeltilebilir. Ancak ikisinden birlikte çıkan şıkkı seç.",
+   "steps": [
+    "Yazar sonuçların farklı güçte kanıtlarla desteklendiğini söylüyor.",
+    "Yeni verinin bazılarını düzeltebileceğini ve açık yöntemin bunu mümkün kıldığını ekliyor.",
+    "Düzeltilebilirlik, sonuçların eşit derecede rastgele olduğu anlamına gelmez; kanıt gücü farklıdır."
+   ],
+   "optionReasons": [
+    "Yazar sonuçların düzeltilebileceğini söylüyor; değişmezlik tersidir.",
+    "Yazar kanıtların farklı güçte olduğunu açıkça belirtiyor.",
+    "Yazar açık yöntemin düzeltmeyi mümkün kıldığını söylüyor; gizlemek bunu zorlaştırır.",
+    "Doğru: sonuçlar düzeltilebilir ama farklı güçte desteklendikleri için eşit derecede rastgele değildir.",
+    "Değişebilirliği kullanılamazlık sanır; yazar güçlü kanıtlı sonuçları dışlamıyor."
+   ],
+   "commonError": "Bilimsel bilginin değişebilir olmasını bütün sonuçların eşit derecede güvensiz olduğu sanmak.",
+   "check": "Yazarın ilk cümlesi “farklı güçte kanıt” diyor; bütün sonuçlar eşit derecede rastgele olsaydı bu cümle anlamsız kalırdı."
+  }
+ },
+ {
+  "id": "ahlak-felsefesi-020-1",
+  "h": "06cda57f4ad28a",
+  "guidance": {
+   "knowledge": [
+    "Ahlak: bir toplumda uygulanan davranış kuralları; ne yapıldığını betimler.",
+    "Etik: ahlak felsefesi; kuralların ve yükümlülüklerin gerekçesini, neden uyulması gerektiğini sorgular."
+   ],
+   "strategy": "İki öğrencinin ifadelerini türüne göre ayır: biri ne yapıldığını söylüyor, öteki neden yapılması gerektiğini soruyor.",
+   "steps": [
+    "Birinci öğrenci toplumda sözünde durmanın beklendiğini söylüyor: uygulamanın betimlenmesi.",
+    "İkinci öğrenci bu davranışın hangi gerekçeyle yükümlülük sayılacağını soruyor.",
+    "İkinci soru, kuralın gerekçesini araştıran etik incelemeye yönelir."
+   ],
+   "optionReasons": [
+    "İkinci öğrenci tam da bir ahlaki kavramı tartışıyor.",
+    "Soru ekleri değil yükümlülüğün gerekçesini konu ediyor.",
+    "Doğru: ikinci soru kuralın gerekçesini sorgulayan etik incelemedir.",
+    "Davranışın sıklığını saymak betimleyici bir işlemdir; ikinci öğrenci gerekçe soruyor.",
+    "Kuralın varlığını doğruluk kanıtı saymak ikinci öğrencinin sorguladığı varsayımdır."
+   ],
+   "commonError": "Bir kuralın toplumda var olmasını onun gerekçelendirilmiş olmasıyla karıştırmak.",
+   "check": "Birinci ifadeye “Neden?” diye sor: ikinci öğrencinin sorusu tam bu “Neden?” sorusudur."
+  }
+ },
+ {
+  "id": "ahlak-felsefesi-020-2",
+  "h": "14f6088543598e",
+  "guidance": {
+   "knowledge": [
+    "Betimleyici yargı: olanı bildiren yargı (“yardımlaşma yaygındır”).",
+    "Normatif yargı: olması gerekeni, doğru ya da yanlış olanı bildiren yargı. Betimleyici yargıdan ek bir değer öncülü olmadan çıkmaz."
+   ],
+   "strategy": "Öncülün ve sonucun türünü karşılaştır; olandan olması gerekene geçişte eksik bir değer öncülü var mı bak.",
+   "steps": [
+    "Öncül betimleyicidir: toplulukta yardımlaşma yaygın.",
+    "Sonuç normatif ve sınırsızdır: her yardım yöntemi her koşulda doğrudur.",
+    "Arada gerekçe ya da değer öncülü yok; sorun budur."
+   ],
+   "optionReasons": [
+    "Doğru: betimlemeden gerekçesiz ve sınırsız bir normatif sonuç çıkarılıyor.",
+    "İlk yargı bir olgu bildiriyor; yaygınlık gözlenebilir bir durumdur.",
+    "Ters uca kayar; metin yardımın zararlı olduğuna dair hiçbir şey söylemiyor.",
+    "Yardımlaşma açık anlamlı bir sözcüktür; sorun sözcükte değil geçiştedir.",
+    "Davranışın görülmesi değer tartışmasını bitirmez; bu, eleştirilen hatanın kendisidir."
+   ],
+   "commonError": "Bir davranışın yaygın olmasından onun her durumda doğru olduğu sonucunu çıkarmak.",
+   "check": "Aynı geçişi zararlı bir davranışla dene: “Yalan yaygındır; o hâlde doğrudur.” Sonucun saçmalığı geçişin hatalı olduğunu gösterir."
+  }
+ },
+ {
+  "id": "ahlak-felsefesi-020-3",
+  "h": "0919ff13faa9ae",
+  "guidance": {
+   "knowledge": [
+    "Kant’ın ödev ahlakı: bir eylemin ahlaki değeri, sonucuna değil hangi gerekçeyle yapıldığına bağlıdır.",
+    "Ödeve uygun eylem: dışarıdan kurala uyan eylem. Ödevden dolayı eylem: yalnız ödev olduğu için yapılan eylem."
+   ],
+   "strategy": "Eylemin dış görünüşünü ve onu yapan gerekçeyi ayrı değerlendir; Kant’ta belirleyici olan gerekçedir.",
+   "steps": [
+    "Dış görünüş: Ece cüzdanı iade ediyor; eylem ödeve uygun.",
+    "Gerekçe: yalnız ödül kazanmak.",
+    "Ödeve uygunluk var ama ödevden dolayı eylem yok; ikisi ayrılmalıdır."
+   ],
+   "optionReasons": [
+    "Kant’ın ayrımını tersine çevirir; ödeve uygun eylem niyetten bağımsız olarak ödevden yapılmış sayılmaz.",
+    "Eylemi aşırı biçimde cezalandırır; iade etmek hırsızlık değildir, yalnız ahlaki değeri tartışılır.",
+    "Kant’ın ahlakında niyet tam merkezdedir.",
+    "Dış uygunluk sonuçları ortadan kaldırmaz; sorunun konusu da sonuç değil niyet.",
+    "Doğru: ödeve uygunluk ile ödevden dolayı yapma ayrıdır; ödül niyeti ikincisini sağlamaz."
+   ],
+   "commonError": "Kurala uyan her eylemin Kant’a göre ahlaki değer taşıdığını sanmak.",
+   "check": "Ödül olmasaydı Ece cüzdanı iade eder miydi? Metne göre etmezdi; demek ki eylemi belirleyen ödev değil ödüldür."
+  }
+ },
+ {
+  "id": "ahlak-felsefesi-020-4",
+  "h": "164b00080dba9a",
+  "guidance": {
+   "knowledge": [
+    "Sonuççuluk: bir eylemin doğruluğunu sonuçlarına göre değerlendiren yaklaşım.",
+    "Faydacılık: sonuççuluğun bir türü; etkilenen herkes için toplam yarar ve zararı ölçü alır."
+   ],
+   "strategy": "Kişinin seçim yaparken neye baktığını bul: niyet, karakter, kural mı, yoksa sonuçlar mı?",
+   "steps": [
+    "Kişi iki yöntemi beklenen yarar ve zarara göre karşılaştırıyor.",
+    "Yalnız kendi kazancını değil etkilenen herkesin toplam etkisini ölçüt yapıyor.",
+    "Odak, sonuçların yarar ve zarar bakımından değerlendirilmesidir."
+   ],
+   "optionReasons": [
+    "Kuralın uzunluğu hiçbir ahlak görüşünde ölçüt değildir.",
+    "Doğru: kişi sonuçları yarar ve zarar bakımından karşılaştırıyor.",
+    "Kişi eylemi yapanın adına değil eylemin etkilerine bakıyor.",
+    "Tersini söyler; kişi tam da sonuçlara bakıyor.",
+    "Töz sayısı varlık felsefesine aittir."
+   ],
+   "commonError": "Faydacılığı kişisel çıkarcılık sanmak; faydacılık etkilenen herkesin yararını hesaba katar.",
+   "check": "Kişinin cümlesindeki “etkilenen herkes” ve “toplam etkiler” ifadeleri faydacılığın tanımındaki öğelerle örtüşüyor."
+  }
+ },
+ {
+  "id": "ahlak-felsefesi-020-5",
+  "h": "1696daba2b2acd",
+  "guidance": {
+   "knowledge": [
+    "Erdem: dürüstlük, adalet, cesaret gibi kişinin kalıcı iyi karakter özelliği.",
+    "Erdem ahlakı: tek tek eylemlerden çok iyi bir karakterin nasıl geliştirileceğini soran yaklaşım."
+   ],
+   "strategy": "Kişinin neyi önemsediğini bul: anlık kazanç mı, kural mı, yoksa karakter mi?",
+   "steps": [
+    "Kişi yalnız anlık kazancı önemsemediğini söylüyor.",
+    "Dürüst ve adaletli bir karakteri nasıl geliştireceğini önemsiyor.",
+    "Odak, erdem ve karakter gelişimidir."
+   ],
+   "optionReasons": [
+    "Rastlantı ve özgürlük konusu kişinin gerekçesinde geçmiyor.",
+    "Oy çokluğu bilgi doğrulamasıyla ilgilidir, ahlaki gerekçeyle değil.",
+    "Sözcük sayısı ahlaki değerlendirme ölçütü değildir.",
+    "Doğru: dürüstlük ve adalet erdemdir; kişi karakterini geliştirmeyi önemsiyor.",
+    "Fiziksel kütle ahlakla ilgisizdir."
+   ],
+   "commonError": "Erdem ahlakını tek bir eylemin sonucunu hesaplamak sanmak; odak karakterdir.",
+   "check": "Kişinin cümlesindeki “karakter” sözcüğü doğrudan erdem ahlakının anahtar kavramıdır."
+  }
+ },
+ {
+  "id": "ahlak-felsefesi-020-6",
+  "h": "0c1ef08fb2274f",
+  "guidance": {
+   "knowledge": [
+    "Ahlaki sorumluluk: bir kişinin eyleminden ve sonuçlarından hesap verebilir olması.",
+    "Sorumluluğun koşulları: kişinin olası sonuçları bilebilmesi ve baskı olmadan seçim yapabilmesi."
+   ],
+   "strategy": "İki yorum arasında neyin değiştiğini bul; sonuç aynıysa sorumluluk değerlendirmesini değiştirecek olan farklılaşan koşuldur.",
+   "steps": [
+    "Birinci yorumda kişi zararı biliyor ve özgürce seçiyor.",
+    "İkinci yorumda önemli bilgi kendisinden gizlenmiş; sonuç ise benzer.",
+    "Değişen koşul kişinin bilgisi ve öngörü olanaklarıdır; yeniden değerlendirilmesi gereken budur."
+   ],
+   "optionReasons": [
+    "Harf sayısı sorumlulukla ilgisizdir.",
+    "Sonucun aynı olması koşulların farklı olduğu gerçeğini değiştirmez.",
+    "Ters uca kayar; bilgisizlik sorumluluğu otomatik sıfırlamaz, kişinin bilgiye ulaşma imkânı da incelenir.",
+    "Kişinin adı sorumluluk koşulu değildir.",
+    "Doğru: iki yorum arasındaki fark bilgi ve öngörü olanağıdır."
+   ],
+   "commonError": "Yalnız sonuca bakıp bilgi ve öngörü koşulunu atlamak.",
+   "check": "İki yorumu tek farkla yeniden yaz: bilgi gizlenmeseydi iki durum aynı olurdu. Demek ki değerlendirmeyi değiştiren bilgi koşuludur."
+  }
+ },
+ {
+  "id": "ahlak-felsefesi-020-7",
+  "h": "150f8d6ccadc67",
+  "guidance": {
+   "knowledge": [
+    "Erdemli orta: Aristoteles’e göre erdem, aşırılık ile eksiklik arasında akılla belirlenen uygun ölçüdür.",
+    "Aritmetik ortalama: iki sayıyı toplayıp ikiye bölmek. Aristoteles’in ortası böyle hesaplanmaz."
+   ],
+   "strategy": "Öğrencinin açıklamasındaki yanlış varsayımı bul (orta = sayısal ortalama) ve bunu koşullara göre belirlenen ölçüyle düzelt.",
+   "steps": [
+    "Öğrenci ortayı her durumda sayısal ortalama sanıyor.",
+    "Aristoteles’e göre uygun ölçü kişiye, zamana, nedene ve koşula göre akılla belirlenir.",
+    "Doğru düzeltme: erdemli ölçü koşullara göre akla uygun seçimdir, salt aritmetik ortalama değildir."
+   ],
+   "optionReasons": [
+    "Aristoteles’in ortası tam da koşullara bağlıdır.",
+    "Öğrencinin hatasını genişletir; erdem nesnelerin ağırlık ortalaması değildir.",
+    "Cesaret tehlikeyi fark edip uygun biçimde karşılamaktır; tehlikeyi görmemek bir eksikliktir.",
+    "Doğru: erdemli ölçü kişi, zaman, neden ve koşula göre akılla belirlenir.",
+    "Her davranışın bir ortası yoktur; haksızlığın yarısı erdem olmaz."
+   ],
+   "commonError": "Aristoteles’in ortasını matematiksel bir orta nokta sanmak.",
+   "check": "Cesaret örneğini dene: korkaklık ile atılganlık arasında uygun davranış, tehlikenin büyüklüğüne göre değişir; sabit bir sayı değildir."
+  }
+ },
+ {
+  "id": "ahlak-felsefesi-020-8",
+  "h": "10fb4a36a47985",
+  "guidance": {
+   "knowledge": [
+    "Belirlenimcilik: her olayın, insan eylemleri dahil, önceki nedenlerle belirlendiğini savunan görüş.",
+    "Bağdaşırcılık: belirlenimcilik ile belirli bir özgürlük anlayışının birlikte savunulabileceğini öne süren görüş."
+   ],
+   "strategy": "Metindeki iki iddiayı birlikte tut: eylemler nedenlerle ilişkili ve bu, bir özgürlük anlayışıyla bağdaşabilir. Şıkları bu birlikteliğe göre sına.",
+   "steps": [
+    "Metin eylemlerin önceki nedenlerle ilişkili olduğunu savunuyor.",
+    "Bunun belirli bir özgürlük anlayışıyla birlikte savunulabileceğini de söylüyor.",
+    "Buradan çıkan: nedensel belirlenim kabulü her yorumda özgürlüğün zorunlu reddi değildir."
+   ],
+   "optionReasons": [
+    "Kadercilikle nedenselliği eşitler; metin bunu söylemiyor.",
+    "Eylemin nedenini bilmek değerlendirme sorularını bitirmez; metin de bunu ileri sürmüyor.",
+    "Doğru: metin belirlenim ile özgürlüğün bir yorumda birlikte savunulabileceğini söylüyor.",
+    "Metindeki görüş bir belirlenimci yorumun özgürlükle bağdaşabildiğini gösteriyor; “bütün” ifadesi bununla çelişir.",
+    "Rastgelelik metinde geçmiyor; rastgele karar denetimi kendiliğinden sağlamaz."
+   ],
+   "commonError": "Belirlenimciliği her zaman özgürlüğün ve sorumluluğun inkârı sanmak.",
+   "check": "Metnin ikinci cümlesini sil: geriye yalnız belirlenim kalır. İkinci cümle varken özgürlük reddedilemez; doğru şık bu cümleye dayanıyor."
+  }
+ },
+ {
+  "id": "ahlak-felsefesi-020-9",
+  "h": "10d5f9e7d91834",
+  "guidance": {
+   "knowledge": [
+    "İhtiyaç ilkesi: herkese ihtiyacı kadar destek verilmesini öngören dağıtım ilkesi.",
+    "Tutarlı uygulama: aynı ilkenin herkese aynı gerekçeyle uygulanması. Miktarların farklı olması tutarsızlık değildir."
+   ],
+   "strategy": "Soru olumsuz kökte; verilenlerle desteklenen yargıları elersen geriye savunulamayan kalır.",
+   "steps": [
+    "A’nın ihtiyacı 8, verilen 8; B’nin ihtiyacı 4, verilen 4. Herkese ihtiyacı kadar verilmiş.",
+    "İlke iki kişiye aynı gerekçeyle uygulanmış; miktar farkı ihtiyaç farkından geliyor.",
+    "Bu yüzden ilkenin tutarsız ya da keyfî uygulandığı savunulamaz."
+   ],
+   "optionReasons": [
+    "Veriyle uyumlu: destek miktarı ihtiyaca eşit.",
+    "Doğru: ilke iki kişiye aynı gerekçeyle uygulandığı için tutarsızlık ya da keyfîlik savunulamaz.",
+    "Veriyle uyumlu: ihtiyaçlar 8 ve 4, yani farklı.",
+    "Veriyle uyumlu: 8 > 4, A daha fazla almış.",
+    "Veriyle uyumlu: her iki dağıtım da ihtiyaç miktarına göre yapılmış."
+   ],
+   "commonError": "Farklı miktar verilmesini otomatik olarak adaletsizlik ya da tutarsızlık saymak.",
+   "check": "Oranlara bak: 8 / 8 = 1 ve 4 / 4 = 1. İki kişide de ihtiyacın tamamı karşılanmış; ilke aynı biçimde uygulanmış."
+  }
+ },
+ {
+  "id": "ahlak-felsefesi-020-10",
+  "h": "0fdf02b94322ab",
+  "guidance": {
+   "knowledge": [
+    "Hukuki uygunluk: bir davranışın yürürlükteki yasa ya da kurala uygun olması.",
+    "Ahlaki gerekçelendirme: bir kuralın adil olup olmadığını ve neden savunulabileceğini değer bakımından sorgulamak."
+   ],
+   "strategy": "Metindeki iki düzeyi ayır: davranışın kurala uygunluğu ve kuralın kendisinin ahlaken savunulabilirliği.",
+   "steps": [
+    "Davranış yürürlükteki kurala uygun: hukuki uygunluk var.",
+    "Filozof kuralın adil olup olmadığını ve insan hakları bakımından nasıl gerekçelendirileceğini tartışıyor.",
+    "Korunan ayrım: hukuki uygunluk ile ahlaki gerekçelendirme."
+   ],
+   "optionReasons": [
+    "Doğru: kurala uygunluk, kuralın ahlaken savunulabilir olduğunu kendiliğinden göstermez.",
+    "Filozof tam da yasal olanı sorguluyor; sorgulanamazlık metinle çelişir.",
+    "Metin itirazların otomatik doğru olduğunu söylemiyor; tartışma gerekçe arıyor.",
+    "Hukuk yaptırım ve kurumlarla doğrudan ilgilidir; metin hukukun değerini reddetmiyor.",
+    "Eylem gerçekleşmiş ama kuralın adaleti hâlâ tartışılıyor; değer soruları sürüyor."
+   ],
+   "commonError": "Yasal olanı otomatik olarak ahlaken doğru saymak.",
+   "check": "Kural adaletsiz çıksa bile davranış yasaya uygun kalır; iki değerlendirme ayrı sonuç verebildiğine göre farklı düzeylerdir."
+  }
+ }
+]

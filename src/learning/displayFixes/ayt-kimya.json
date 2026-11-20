@@ -1,0 +1,86 @@
+[
+ {
+  "from": "C=kH·Pgaz'da sabit T ile kH ve ilgili Pgas korunmuştur. İnertin toplam basınca katkısı bu koşullarda denge derişimini değiştirmez.",
+  "to": "C=kH·Pgaz'da sabit T ile kH ve ilgili Pgaz korunmuştur. İnertin toplam basınca katkısı bu koşullarda denge derişimini değiştirmez."
+ },
+ {
+  "from": "4D+2×498−(2×799+4×463)=−802. 4D−2454=−802,4D=1652 ve D=413 kJ/mol. Gaz fazı ve ortalama enerji öncülleri kullanıldı.",
+  "to": "4D+2×498−(2×799+4×463)=−802. 4D−2454=−802, 4D=1652 ve D=413 kJ/mol. Gaz fazı ve ortalama enerji öncülleri kullanıldı."
+ },
+ {
+  "from": "50,50,0 kJ/mol",
+  "to": "50, 50, 0 kJ/mol"
+ },
+ {
+  "from": "60,30,+30 kJ/mol",
+  "to": "60, 30, +30 kJ/mol"
+ },
+ {
+  "from": "30,60, −30 kJ/mol",
+  "to": "30, 60, −30 kJ/mol"
+ },
+ {
+  "from": "30,30, −30 kJ/mol",
+  "to": "30, 30, −30 kJ/mol"
+ },
+ {
+  "from": "70,40,+30 kJ/mol",
+  "to": "70, 40, +30 kJ/mol"
+ },
+ {
+  "from": "[X₂]=0,25 M,[X]=0,50 M. Kc=0,50²/0,25=1. Mol oranını doğrudan kullanmak ek hacim çarpanını kaçırır.",
+  "to": "[X₂]=0,25 M, [X]=0,50 M. Kc=0,50²/0,25=1. Mol oranını doğrudan kullanmak ek hacim çarpanını kaçırır."
+ },
+ {
+  "from": "Δn=2−(1+3)=−2. Lise sayısal bağıntısı Kp=Kc(RT)^Δn olduğundan paydada(RT)² vardır.",
+  "to": "Δn=2−(1+3)=−2. Kullanılan bağıntı Kp=Kc(RT)^Δn olduğundan paydada (RT)² vardır."
+ },
+ {
+  "from": "K 1=[Y]/[X], K 2=[Z]/[Y]. Çarpım[Z]/[X]=6; K değerleri toplama işlemine rağmen toplanmaz.",
+  "to": "K1=[Y]/[X], K2=[Z]/[Y]. Çarpım [Z]/[X]=6; K değerleri toplama işlemine rağmen toplanmaz."
+ },
+ {
+  "from": "Ani derişimler 2,1,1.",
+  "to": "Ani derişimler 2, 1, 1."
+ },
+ {
+  "from": "1 M'den büyük,2 M'den küçüktür",
+  "to": "1 M'den büyük, 2 M'den küçüktür"
+ },
+ {
+  "from": "Sabit T, V'de X+Y⇌XY; eski 1,1,1 M, Kc=1. XY'den 0,50 M çekiliyor. İlk net tepki?",
+  "to": "Sabit T, V'de X+Y⇌XY; eski 1, 1, 1 M, Kc=1. XY'den 0,50 M çekiliyor. İlk net tepki?"
+ },
+ {
+  "from": "X⇌Y için kurmaca ideal 1:1 model tablosu K 300=1, K 325=2, K 350=4. Bu aralıktaki eğilim hangi yorumla uyumludur?",
+  "to": "X⇌Y için kurmaca ideal 1:1 model tablosu K(300 K)=1, K(325 K)=2, K(350 K)=4. Bu aralıktaki eğilim hangi yorumla uyumludur?"
+ },
+ {
+  "from": "Sabit V'de ideal X⇌Y için toplam derişim 3 M ve yeni sıcaklıkta K=4. Denge[X],[Y]?",
+  "to": "Sabit V'de ideal X⇌Y için toplam derişim 3 M ve yeni sıcaklıkta K=4. Denge [X], [Y]?"
+ },
+ {
+  "from": "1<5,11 atm olduğundan verilen ders faz haritasında sıvı bölgesi bu yola girmez. Katı-buhar sınırı geçilebilir; her saf madde her basınçta erime-kaynama sırasını izlemek zorunda değildir.",
+  "to": "1<5,11 atm olduğundan verilen faz haritasında sıvı bölgesi bu yola girmez. Katı-buhar sınırı geçilebilir; her saf madde her basınçta erime-kaynama sırasını izlemek zorunda değildir."
+ },
+ {
+  "from": "Sulu HCl örneğinde H₃O⁺ ve Cl⁻ oluştuğu açık veriliyor. Öğretim açısından hangi yorum doğrudur?",
+  "to": "Sulu HCl örneğinde H₃O⁺ ve Cl⁻ oluştuğu açık veriliyor. Hangi yorum doğrudur?"
+ },
+ {
+  "from": "1:1 tepkimede 0,010 mol AgCl oluşur ve okul modelinde bu kadar Ag⁺/Cl⁻ çözünmüş stoktan çıkar. Gerçek küçük artık derişimler için ayrıca çözünürlük dengesi gerekir; bu model onu ihmal etmiştir.",
+  "to": "1:1 tepkimede 0,010 mol AgCl oluşur ve bu modelde bu kadar Ag⁺/Cl⁻ çözünmüş stoktan çıkar. Gerçek küçük artık derişimler için ayrıca çözünürlük dengesi gerekir; bu model onu ihmal etmiştir."
+ },
+ {
+  "from": "İki kaynak için de formel tuz molü 0’dır; bu kaynaklardan gelen Ca/Na/Cl iyon stokları oluşmaz. Su öz iyonlaşması bu tuz stok modelinin çıktısı değildir; çizimde var olmayan tuz iyonu üretilmez.",
+  "to": "İki kaynak için de formel tuz molü 0’dır; bu kaynaklardan gelen Ca/Na/Cl iyon stokları oluşmaz. Su öz iyonlaşması bu tuz stok modelinin çıktısı değildir; modelde var olmayan tuz iyonu üretilmez."
+ },
+ {
+  "from": "Al için İE değerleri 578,1817,2745,11577 kJ/mol; dış düzen 3s²3p¹ olarak verilmiştir. Hangi iddia yanlıştır?",
+  "to": "Al için İE değerleri 578, 1817, 2745, 11577 kJ/mol; dış düzen 3s²3p¹ olarak verilmiştir. Hangi iddia yanlıştır?"
+ },
+ {
+  "from": "T iki katına çıkınca P de iki kat olur:2,4 atm.",
+  "to": "T iki katına çıkınca P de iki kat olur: 2,4 atm."
+ }
+]

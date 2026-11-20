@@ -307,7 +307,7 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
                   draft.selected === question.answer ? "correct" : "incorrect",
                 )}
               </strong>
-              <p>{l(question.explanation)}</p>
+              <p>{typeset(l(question.explanation))}</p>
             </div>
           )}
           <div className="question-actions">

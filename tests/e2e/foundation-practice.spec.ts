@@ -1,3 +1,4 @@
+import { typeset } from "../../src/domain/typeset";
 import { setThemePreference } from "./helpers/theme";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
@@ -112,9 +113,7 @@ for (const pack of allFoundationPracticeSets) {
       await expect(page.locator(".question-meta")).toContainText(
         `Soru ${i + 1} / 10`,
       );
-      await expect(page.locator(".question-panel h2")).toHaveText(
-        question.prompt.tr,
-      );
+      await expect(page.locator(".question-panel h2")).toHaveText(typeset(question.prompt.tr));
       await assertPassageBeforeStem(page, question);
       await expect(page.locator(".answer")).toHaveCount(5);
       for (const [j, option] of question.options.entries())
@@ -126,9 +125,7 @@ for (const pack of allFoundationPracticeSets) {
       await page
         .getByRole("button", { name: "Cevabı kontrol et", exact: true })
         .tap();
-      await expect(page.locator(".feedback p")).toHaveText(
-        question.explanation.tr,
-      );
+      await expect(page.locator(".feedback p")).toHaveText(typeset(question.explanation.tr));
       await expect(page.locator(".save-status")).toContainText(
         "Bu cihazda kaydedildi",
       );
@@ -137,9 +134,7 @@ for (const pack of allFoundationPracticeSets) {
           .poll(async () => (await stored(page)).draft?.checked)
           .toBe(true);
         await page.reload();
-        await expect(page.locator(".feedback p")).toHaveText(
-          question.explanation.tr,
-        );
+        await expect(page.locator(".feedback p")).toHaveText(typeset(question.explanation.tr));
         expect((await stored(page)).sessions).toHaveLength(0);
         expect((await stored(page)).reviews).toHaveLength(0);
       }
@@ -189,14 +184,14 @@ for (const pack of allFoundationPracticeSets) {
     await page.emulateMedia({ reducedMotion: "reduce" });
     await open(page, pack.lessonId, "Konu Anlatımı");
     const q = pack.questions[0];
-    await expect(page.locator(".question-panel h2")).toHaveText(q.prompt.tr);
+    await expect(page.locator(".question-panel h2")).toHaveText(typeset(q.prompt.tr));
     await assertPassageBeforeStem(page, q);
     await expect(page.locator(".answer")).toHaveCount(5);
     await page.locator(".answer").nth(q.answer).tap();
     await page
       .getByRole("button", { name: "Cevabı kontrol et", exact: true })
       .tap();
-    await expect(page.locator(".feedback p")).toHaveText(q.explanation.tr);
+    await expect(page.locator(".feedback p")).toHaveText(typeset(q.explanation.tr));
     expect(
       await page.evaluate(() => document.documentElement.scrollWidth),
     ).toBeLessThanOrEqual(321);

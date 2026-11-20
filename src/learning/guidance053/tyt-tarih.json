@@ -1,0 +1,1252 @@
+[
+ {
+  "id": "f12h-milli-mucadele-01",
+  "h": "0289b631cb2066",
+  "guidance": {
+   "knowledge": [
+    "Genelge: bir merkezden ilgili yerlere gönderilen, bir durumu bildirip ne yapılacağını isteyen yazılı bildiri.",
+    "Millî irade: yönetim kararlarının hanedandan ya da yabancı güçlerden değil milletin kendisinden gelmesi."
+   ],
+   "strategy": "Belgedeki iki ipucunu birlikte kullan: millet iradesine dayanan kurtuluş fikri ve Sivas’ta kongre çağrısı. Bu ikisini taşıyan belge ve işlevi seç.",
+   "steps": [
+    "Belge, bağımsızlığı milletin azim ve kararının kurtaracağını söylüyor: millî irade vurgusu.",
+    "Sivas’ta kongre toplanmasını istiyor: örgütlenme çağrısı.",
+    "Bu iki öğeyi birleştiren belge Amasya Genelgesi, işlevi millî iradeye dayalı örgütlenme çağrısıdır."
+   ],
+   "optionReasons": [
+    "Doğru: millet iradesi vurgusu ve Sivas’ta kongre çağrısı Amasya Genelgesi’ni gösterir.",
+    "Lozan devletler arası kesin barış antlaşmasıdır; kongre çağrısı yapan bir iç belge değildir.",
+    "Mudanya bir ateşkes antlaşmasıdır; çatışmanın durdurulmasıyla ilgilidir, örgütlenme çağrısıyla değil.",
+    "Montrö Boğazlar sözleşmesidir; Millî Mücadele’nin örgütlenme döneminden çok sonradır.",
+    "Medeni Kanun aile ve miras gibi özel hukuk ilişkilerini düzenler; kongre çağrısı değildir."
+   ],
+   "commonError": "Belgenin konusuna değil yalnız dönemine bakıp Millî Mücadele ile anılan her belgeyi uygun sanmak.",
+   "check": "Belgenin türünü sına: Amasya Genelgesi bir iç çağrı belgesidir; öteki belgelerin hepsi antlaşma, sözleşme ya da kanundur."
+  }
+ },
+ {
+  "id": "f12h-milli-mucadele-02",
+  "h": "0c29d2dad5aebd",
+  "guidance": {
+   "knowledge": [
+    "Toplanış bakımından bölgesel kongre: temsilcilerin yalnız belli bir bölgeden geldiği toplantı.",
+    "Karar bakımından millî kongre: alınan kararların bütün vatanı ilgilendirmesi. Manda: bir ülkenin yönetiminin başka bir devletin denetimine bırakılması."
+   ],
+   "strategy": "Toplantıyı iki ayrı ölçütle değerlendir: temsilcilerin nereden geldiği ve kararların neyi kapsadığı.",
+   "steps": [
+    "Temsilciler doğu illerinden geliyor: toplanış bölgesel.",
+    "Kararlar bütün vatanın bölünmezliği ve mandanın reddi: kapsam bütün ülke, yani millî.",
+    "Değerlendirme: toplanış bölgesel, kararlar millîdir. Açıklamaya göre bu, Erzurum Kongresi örneğidir."
+   ],
+   "optionReasons": [
+    "Kararlar bütün vatanın bölünmezliğini konu ediyor; belediye işi gibi yerel bir konu değildir.",
+    "Doğru: temsil tabanı bölgesel, kararların kapsamı bütün vatandır.",
+    "Millî kapsamı uluslararası katılımla karıştırır; temsilciler doğu illerindendir.",
+    "Metindeki durumun tersini söyler; bölgesel toplanan bu kurul millî kararlar alıyor.",
+    "Manda yabancı denetimi demektir; reddi bağımsızlığı kaldırmaz, tersine korumayı amaçlar."
+   ],
+   "commonError": "Bölgesel toplanan bir kongrenin yalnız bölgesel kararlar alabileceğini sanmak.",
+   "check": "Kararın sözcüklerine bak: “bütün vatan” ifadesi kapsamın bir bölgeyle sınırlı olmadığını doğrudan gösteriyor."
+  }
+ },
+ {
+  "id": "f12h-milli-mucadele-03",
+  "h": "1937f39b0a3d7b",
+  "guidance": {
+   "knowledge": [
+    "Müdafaa-i Hukuk cemiyetleri: Millî Mücadele’de yurdun çeşitli yerlerinde kurulan yerel savunma örgütleri.",
+    "Temsil kurulu (Heyet-i Temsiliye): kongrelerin seçtiği, millî hareketi yöneten yürütme kurulu."
+   ],
+   "strategy": "Metindeki iki eylemi (cemiyetlerin birleşmesi ve kurulun yetkisinin genişlemesi) sonuçla eşle; metnin alanı dışına taşan şıkları ele.",
+   "steps": [
+    "Çeşitli yerel cemiyetler tek çatı altında birleşiyor.",
+    "Temsil kurulunun yetki alanı genişliyor; hareket tek merkezden yönetilebilir hâle geliyor.",
+    "En doğrudan sonuç: millî hareketin örgütsel birliği güçlenmiştir. Açıklamaya göre bu toplantı Sivas Kongresi’dir."
+   ],
+   "optionReasons": [
+    "Birleşen ülkeler değil yurt içindeki cemiyetlerdir; uluslararası bir birleşme yok.",
+    "Boğazlar geçiş rejimi 1936 Montrö’nün konusudur; 1919 toplantısıyla ilgisi yok.",
+    "Doğru: cemiyetlerin birleşmesi ve temsil kurulunun güçlenmesi örgütsel birliği artırır.",
+    "1919’da henüz cumhuriyet ilan edilmemişti; metinde seçimden söz edilmiyor.",
+    "Metin örgütlenmeden söz ediyor; borç ödemesi hakkında bilgi yok."
+   ],
+   "commonError": "Bir kongre kararını metinde hiç geçmeyen siyasi ya da ekonomik sonuçlara genişletmek.",
+   "check": "Metindeki iki fiil “birleşiyor” ve “genişliyor”; ikisi de örgütle ilgili. Doğru şık da örgüt sözcüğünü taşıyor."
+  }
+ },
+ {
+  "id": "f12h-milli-mucadele-04",
+  "h": "0f94c2a4566cc7",
+  "guidance": {
+   "knowledge": [
+    "Misak-ı Millî: Millî Mücadele’nin bağımsızlık ve sınır hedeflerini belirleyen karar metni.",
+    "Kronoloji: olayları tarih sırasına koyma. Önce olan olay, sonra kurulan bir kurumun işi olamaz."
+   ],
+   "strategy": "Metindeki iki tarihi karşılaştır: belge Ankara’daki meclis açılmadan önce kabul edildiyse onu kabul eden kurum o meclis olamaz.",
+   "steps": [
+    "Misak-ı Millî 28 Ocak 1920’de kabul ediliyor.",
+    "Ankara’daki meclis 23 Nisan 1920’de açılıyor; yani belgeden sonradır.",
+    "Belgeyi ilk kabul eden kurum, açıklamaya göre Son Osmanlı Mebusan Meclisi’dir."
+   ],
+   "optionReasons": [
+    "II. TBMM 1923’te açılmıştır; 1920 belgesinden yıllar sonradır.",
+    "Milletler Cemiyeti uluslararası bir örgüttür; Türkiye’nin iç hedef belgesini kabul etmez.",
+    "Belediye meclisi şehir yönetim organıdır; ulusal bir hedef belgesini kabul etme yetkisi yoktur.",
+    "Doğru: belge Ankara meclisi açılmadan önce Son Osmanlı Mebusan Meclisi’nde kabul edildi.",
+    "1938 Hatay Meclisi belgeden on sekiz yıl sonradır."
+   ],
+   "commonError": "Misak-ı Millî’yi TBMM’nin kabul ettiğini sanmak; TBMM bu hedefleri sonradan benimsemiştir.",
+   "check": "Tarih sınamasını yap: 28 Ocak 1920, 23 Nisan 1920’den öncedir; demek ki Ankara’daki meclis ilk kabulü yapamaz."
+  }
+ },
+ {
+  "id": "f12h-milli-mucadele-05",
+  "h": "1fd5e7d937b5ea",
+  "guidance": {
+   "knowledge": [
+    "Yasama: yasa yapma yetkisi. Yürütme: yasaları uygulama ve ülkeyi yönetme yetkisi.",
+    "Güçler birliği: yasama ve yürütmenin aynı organda toplanması. Meclis hükûmeti sistemi: bakanların meclis tarafından kendi içinden tek tek seçilmesi."
+   ],
+   "strategy": "Metindeki iki ayrı bilgiyi iki kavramla eşle: yetkilerin toplanması bir kavramı, bakanların seçimi öteki kavramı verir.",
+   "steps": [
+    "Meclis hem yasama hem yürütme yetkisini kullanıyor: güçler birliği.",
+    "Bakanları kendi içinden ayrı ayrı seçiyor: meclis hükûmeti sistemi.",
+    "Anlatılan özellik: güçler birliği ve meclis hükûmeti sistemi."
+   ],
+   "optionReasons": [
+    "Metinde yetki yabancı bir komisyonda değil meclisin kendisinde toplanıyor.",
+    "Mutlak saltanatta yetki hükümdardadır; burada yetki seçilmiş mecliste.",
+    "Yürütme meclisin seçtiği bakanlarda; özel şirketlere bırakılmamış.",
+    "Boğazlar geçiş tarifesi 1936 Montrö’ye ait bir konudur; yönetim sistemi değildir.",
+    "Doğru: yetkilerin mecliste toplanması güçler birliği, bakanları meclisin seçmesi meclis hükûmetidir."
+   ],
+   "commonError": "Güçler birliğini güçler ayrılığıyla karıştırmak; burada yetkiler ayrılmamış, birleşmiştir.",
+   "check": "Kavramların tanımını metne uygula: yasama ve yürütme aynı yerde mi? Evet. Bakanları meclis mi seçiyor? Evet. İki koşul da sağlanıyor."
+  }
+ },
+ {
+  "id": "f12h-milli-mucadele-06",
+  "h": "08bf249f969580",
+  "guidance": {
+   "knowledge": [
+    "Cephe: savaşın yürütüldüğü bölge. Millî Mücadele’de doğu, güney ve batı cepheleri vardı.",
+    "TBMM antlaşması: Ankara’daki meclis hükûmetinin bir devletle imzaladığı antlaşma."
+   ],
+   "strategy": "Metindeki üç ipucunu (Kâzım Karabekir, Doğu Cephesi, Ermenistan ile Aralık 1920) aynı anda karşılayan antlaşmayı ara.",
+   "steps": [
+    "Doğu Cephesi ve Ermenistan ile imza, antlaşmanın doğuda yapıldığını gösteriyor.",
+    "Aralık 1920 tarihi ve “ilk TBMM antlaşması” ifadesi seçenekleri daraltıyor.",
+    "Açıklamaya göre bu, TBMM hükûmetinin Ermenistan’la yaptığı ilk antlaşma olan Gümrü’dür."
+   ],
+   "optionReasons": [
+    "Doğru: Doğu Cephesi, Ermenistan ve ilk TBMM antlaşması Gümrü’yü gösterir.",
+    "Mudanya 1922 tarihli bir ateşkestir ve Ermenistan’la değil batıdaki savaşın sonunda yapılmıştır.",
+    "Montrö 1936’da Boğazlar için imzalanmıştır; 1920 doğu cephesiyle ilgisi yok.",
+    "Lozan 1923 genel barış antlaşmasıdır; ilk TBMM antlaşması değildir.",
+    "Balkan Antantı 1934 bölgesel güvenlik girişimidir; Ermenistan taraf değildir."
+   ],
+   "commonError": "Cephe ile taraf devleti eşleştirmeden yalnız dönemin bilinen antlaşmalarından birini seçmek.",
+   "check": "Tarih sınaması: seçeneklerde Aralık 1920’ye uyan tek antlaşma Gümrü; ötekilerin hepsi 1922 ve sonrasına ait."
+  }
+ },
+ {
+  "id": "f12h-milli-mucadele-07",
+  "h": "1be6aa86454cf1",
+  "guidance": {
+   "knowledge": [
+    "Güney Cephesi: Millî Mücadele’de Fransız kuvvetlerine karşı yerel halk direnişleriyle yürütülen cephe.",
+    "1921 Ankara Antlaşması: TBMM ile Fransa arasında imzalanan ve bu cephedeki çatışmayı sona erdiren antlaşma."
+   ],
+   "strategy": "Düşman kuvvetini ve antlaşmayı cepheyle eşle: Fransa ve 1921 Ankara Antlaşması hangi cepheyi gösteriyor?",
+   "steps": [
+    "Karşı tarafta Fransız kuvvetleri var ve direniş yerel şehir halkınca yapılıyor.",
+    "Çatışma 20 Ekim 1921 Ankara Antlaşması ile sona eriyor.",
+    "Bu ipuçları Güney Cephesi’ni gösterir."
+   ],
+   "optionReasons": [
+    "1877 Kafkasya cephesi Millî Mücadele’den kırk yılı aşkın süre önceki başka bir savaşa aittir.",
+    "Doğru: Fransızlara karşı yerel direniş ve 1921 Ankara Antlaşması Güney Cephesi’nin ayırt edicisidir.",
+    "Batı Cephesi’nde mücadele Yunan kuvvetlerine karşıdır; 1922 taarruzu 1921 antlaşmasından sonradır.",
+    "1941 Pasifik Cephesi II. Dünya Savaşı’na aittir; Türkiye’nin bu cepheyle ilgisi yok.",
+    "Çanakkale I. Dünya Savaşı’na aittir; 1921 Ankara Antlaşması’yla bitmemiştir."
+   ],
+   "commonError": "Millî Mücadele’nin cephelerini karşı taraftaki devletle eşleştirmemek.",
+   "check": "Eşleşmeyi tamamla: Doğu Ermenistan ve Gümrü, Güney Fransa ve Ankara, Batı Yunanistan. Fransa geçtiği için cevap Güney."
+  }
+ },
+ {
+  "id": "f12h-milli-mucadele-08",
+  "h": "09795e87a2c14e",
+  "guidance": {
+   "knowledge": [
+    "Kronolojik çıkarım: verilen tarihleri sıraya koyarak olayların hangi sırayla geldiğini bulmak.",
+    "Taarruz: saldırı. Ateşkes: savaşan tarafların çatışmayı durdurması."
+   ],
+   "strategy": "Üç tarihi küçükten büyüğe sırala ve şıkları bu sıraya göre sına.",
+   "steps": [
+    "Sakarya: 23 Ağustos–13 Eylül 1921.",
+    "Büyük Taarruz: 26 Ağustos 1922. Mudanya: 11 Ekim 1922.",
+    "Sıra: Sakarya → Büyük Taarruz → Mudanya. Yani Sakarya’nın ardından kesin taarruz ve ateşkes gelmiştir."
+   ],
+   "optionReasons": [
+    "Sırayı tersine çevirir; Mudanya 1922, Sakarya 1921’dedir.",
+    "Üç tarih farklıdır; aynı savaşa ait olmak aynı gün demek değildir.",
+    "Doğru: 1921 Sakarya’dan sonra 1922’de taarruz, ardından ateşkes gelir.",
+    "Büyük Taarruz 26 Ağustos 1922’de başlamıştır; 1921’e kaydırmak yılı karıştırır.",
+    "1921’de Sakarya Savaşı yapılmıştır; sonraki ateşkes önceki savaşları silmez."
+   ],
+   "commonError": "Aynı süreçteki olayları tarih sırası yerine akılda kalış sırasıyla dizmek.",
+   "check": "Yılları karşılaştır: 1921 < 1922; 1922 içinde Ağustos < Ekim. Sıra doğru şıkla birebir örtüşüyor."
+  }
+ },
+ {
+  "id": "f12h-milli-mucadele-09",
+  "h": "1c3a05475d5bf8",
+  "guidance": {
+   "knowledge": [
+    "Tekâlif-i Millîye emirleri: 1921’de ordunun ihtiyaçlarını karşılamak için halkın elindeki kaynakların seferber edilmesini isteyen emirler.",
+    "İkmal: orduya silah, giyecek, yiyecek ve taşıma desteği sağlanması. Seferberlik: kaynakların savaş için toplanması."
+   ],
+   "strategy": "Emirlerde istenen kalemlerin ortak noktasını bul; bu ortak nokta düzenlemenin amacını verir.",
+   "steps": [
+    "İstenenler: giyecek, silah, taşıma ve üretim kaynakları.",
+    "Hepsi ordunun ihtiyacı için seferber ediliyor.",
+    "Temel amaç: ordunun ikmal ve kaynak ihtiyacını karşılamak."
+   ],
+   "optionReasons": [
+    "Boğazlar Komisyonu Lozan düzeninin bir kurumudur; 1921 kaynak seferberliğiyle ilgisi yok.",
+    "Kadınların seçilme hakkı siyasal bir düzenlemedir ve 1934’e aittir.",
+    "Yeni alfabe 1928 kültür inkılabıdır; savaş ikmaliyle ilgisi yok.",
+    "Doğru: istenen bütün kalemler ordunun savaş ihtiyacına yöneliktir.",
+    "Birleşmiş Milletler 1945’te kurulan uluslararası bir örgüttür."
+   ],
+   "commonError": "Düzenlemenin adını tanımayıp dönemin başka bir yeniliğiyle karıştırmak.",
+   "check": "Kalemleri tek tek sor: giyecek kimin için, silah kimin için? Hepsinin cevabı ordu; amaç da buna göre."
+  }
+ },
+ {
+  "id": "f12h-milli-mucadele-10",
+  "h": "04fa21f23528ab",
+  "guidance": {
+   "knowledge": [
+    "Ateşkes: savaşan tarafların çatışmayı geçici olarak durdurmasıdır; kalıcı düzeni belirlemez.",
+    "Barış antlaşması: sınır, egemenlik gibi konuları kalıcı olarak düzenleyen antlaşmadır."
+   ],
+   "strategy": "İki kartın hem tarihini hem türünü belirle; doğru sıralama ikisini birlikte korumalı.",
+   "steps": [
+    "Birinci kart 11 Ekim 1922, çatışmanın durdurulması: Mudanya ateşkesi.",
+    "İkinci kart 24 Temmuz 1923, sınır ve egemenlikte kalıcı barış: Lozan barışı.",
+    "1922 1923’ten önce gelir: Mudanya ateşkesi → Lozan barışı."
+   ],
+   "optionReasons": [
+    "Türleri değiştirir: Lozan barış, Mudanya ateşkestir; ayrıca sıra da tersine dönmüştür.",
+    "Montrö bir sözleşmedir, kongre değildir; Erzurum da bir kongredir, barış değildir.",
+    "Sevr ve Misak-ı Millî’yi belediye kanunu ve vergi tarifesi gibi ilgisiz türlere sokar.",
+    "Balkan Antantı 1934, Amasya Görüşmeleri 1919’dadır; kartlardaki 1922 ve 1923 olaylarıyla ilgisi yok.",
+    "Doğru: 1922 Mudanya ateşkesi önce, 1923 Lozan barışı sonra gelir."
+   ],
+   "commonError": "Ateşkes ile barış antlaşmasını aynı tür belge sanmak.",
+   "check": "Mantık sınaması: önce çatışma durur, sonra kalıcı barış imzalanır. Tarihler de bu sırayı doğruluyor."
+  }
+ },
+ {
+  "id": "f12h-ataturkculuk-inkilap-01",
+  "h": "0373b884340b61",
+  "guidance": {
+   "knowledge": [
+    "Cumhuriyetçilik: egemenliğin milletten geldiğini ve yönetimin seçilmiş temsilcilerle yürütülmesini esas alan Atatürk ilkesi.",
+    "Hanedan: aynı soydan gelen ve yönetimi babadan oğula geçiren aile. Temsil: halkın seçtiği kişilerin onun adına karar vermesi."
+   ],
+   "strategy": "Düzenlemenin açık amacını bul: karar yetkisinin kaynağı ve yönetimin biçimi hangi ilkenin tanımına uyuyor?",
+   "steps": [
+    "Karar yetkisi hanedandan değil milletten geliyor: millî egemenlik.",
+    "Yönetim temsil esasına dayanıyor: seçilmiş temsilciler.",
+    "Bu iki öğe cumhuriyetçilik ilkesinin ayırt edici yönüdür."
+   ],
+   "optionReasons": [
+    "Doğru: yetkinin milletten gelmesi ve temsil esası cumhuriyetçiliğin tanımıdır.",
+    "Dış ticaret korumacılığı ekonomik bir politikadır; karar yetkisinin kaynağıyla ilgisi yok.",
+    "Metin yetkinin hanedandan gelmediğini söylüyor; hanedan üstünlüğü tam tersidir.",
+    "Merkantilizm altın birikimine dayanan bir ekonomi anlayışıdır; yönetim biçimi değildir.",
+    "Sömürgecilik başka ülkeleri egemenlik altına almaktır; millet egemenliğinin karşıtıdır."
+   ],
+   "commonError": "Millî egemenlik vurgusu taşıyan bir düzenlemeyi ekonomik ya da dış politika kavramlarıyla karıştırmak.",
+   "check": "Düzenlemenin cümlesindeki “milletten” ve “temsil” sözcüklerini ilkenin tanımına koy: ikisi de cumhuriyetçiliğin tanımında var."
+  }
+ },
+ {
+  "id": "f12h-ataturkculuk-inkilap-02",
+  "h": "1c1769c04630ce",
+  "guidance": {
+   "knowledge": [
+    "Medeni hukuk: kişiler arasındaki aile, evlilik, boşanma ve miras gibi özel ilişkileri düzenleyen hukuk dalı.",
+    "Kabul ve yürürlük: bir kanunun mecliste onaylanması ile uygulanmaya başlaması farklı tarihlerde olabilir."
+   ],
+   "strategy": "Kanunun düzenlediği konulara (evlenme, boşanma, miras) bak; bu konuların ait olduğu hukuk alanı kanunu da gösterir.",
+   "steps": [
+    "Kanun evlenme, boşanma ve miras ilişkilerini düzenliyor.",
+    "Bu konular medeni hukukun alanıdır.",
+    "17 Şubat 1926 kabul, 4 Ekim yürürlük tarihli bu düzenleme Türk Medeni Kanunu’dur."
+   ],
+   "optionReasons": [
+    "Montrö Boğazlardan geçişi düzenleyen uluslararası bir sözleşmedir; aile ilişkileriyle ilgisi yok.",
+    "Doğru: evlenme, boşanma ve miras medeni hukukun konusudur; kanun Türk Medeni Kanunu’dur.",
+    "Tekâlif-i Millîye 1921’de ordunun ihtiyacı için kaynak seferberliğidir.",
+    "Misak-ı Millî 1920’de bağımsızlık hedeflerini belirleyen bir belgedir; meclisin açılışıyla da eşleşmez.",
+    "Kabotaj kıyı taşımacılığıyla ilgilidir ve milletvekili seçimiyle eşleştirilemez."
+   ],
+   "commonError": "Kabul ve yürürlük tarihleri farklı diye iki ayrı kanun olduğunu sanmak.",
+   "check": "Düzenlenen üç konuyu say: evlenme, boşanma, miras. Hepsi aile ve kişi ilişkisidir; seçeneklerde bu alana ait tek düzenleme Medeni Kanun."
+  }
+ },
+ {
+  "id": "f12h-ataturkculuk-inkilap-03",
+  "h": "13659be8e441af",
+  "guidance": {
+   "knowledge": [
+    "Siyasal hak: seçme, seçilme gibi yönetime katılma hakkı.",
+    "Yönetim düzeyleri: belediye (şehir), köy (muhtarlık ve ihtiyar heyeti) ve milletvekili (ülke geneli) seçimleri."
+   ],
+   "strategy": "Üç tarihi ve üç yönetim düzeyini birlikte sırala; sıralamadan çıkan örüntüyü yorumla.",
+   "steps": [
+    "1930: belediye seçimleri, yani şehir düzeyi.",
+    "1933: köy yönetimi. 1934: milletvekili seçimleri, yani ülke düzeyi.",
+    "Haklar yerelden ulusala doğru, farklı yönetim düzeylerinde aşamalarla genişlemiştir."
+   ],
+   "optionReasons": [
+    "Metinde üç ayrı yıl veriliyor; haklar tek günde verilmemiş.",
+    "Metin yalnız siyasal haklardan söz ediyor; medeni haklar hakkında bilgi vermiyor.",
+    "Doğru: haklar belediye, köy ve milletvekili düzeylerinde aşama aşama genişlemiştir.",
+    "Belediye seçimi siyasal hak, miras ise medeni hukuk konusudur; aynı işlem değildir.",
+    "Milletvekili hakkı metne göre 1934’te verilmiştir."
+   ],
+   "commonError": "Siyasal haklar ile medeni hakları karıştırmak.",
+   "check": "Yılları sırala: 1930 < 1933 < 1934. Her yıl farklı bir düzeye ait olduğuna göre süreç aşamalıdır."
+  }
+ },
+ {
+  "id": "f12h-ataturkculuk-inkilap-04",
+  "h": "189d6840aed1aa",
+  "guidance": {
+   "knowledge": [
+    "Tevhid-i Tedrisat: “öğretimin birleştirilmesi” anlamına gelir; bütün eğitim kurumlarını tek bakanlığa bağlayan 1924 kanunu.",
+    "Denetim: bir kurumun kurallara uygun çalışıp çalışmadığının üst bir otorite tarafından kontrolü."
+   ],
+   "strategy": "Kanunun amacı olan eğitimde yönetim birliğini, adı tam bu anlamı taşıyan düzenlemeyle eşleştir.",
+   "steps": [
+    "Kanun 3 Mart 1924 tarihli.",
+    "Amaç: eğitim kurumlarının yönetim ve denetimini Millî Eğitim Bakanlığı’nda birleştirmek.",
+    "Eğitimde birlik sağlayan bu düzenleme Tevhid-i Tedrisat’tır."
+   ],
+   "optionReasons": [
+    "Soyadı Kanunu resmî kimlik ve aile kaydıyla ilgilidir.",
+    "Kabotaj Kanunu kıyı taşımacılığıyla ilgilidir.",
+    "1926 Ankara Antlaşması Musul sınırıyla ilgili bir dış politika belgesidir.",
+    "Doğru: eğitimin tek bakanlıkta birleştirilmesi Tevhid-i Tedrisat’tır.",
+    "Balkan Antantı bölgesel güvenlik amacıyla kurulan bir dış politika girişimidir."
+   ],
+   "commonError": "Aynı döneme ait her inkılabın aynı amaca hizmet ettiğini sanmak.",
+   "check": "Adı çevir: “tevhid” birleştirme, “tedrisat” öğretim demektir. Ad, metindeki amaçla birebir örtüşüyor."
+  }
+ },
+ {
+  "id": "f12h-ataturkculuk-inkilap-05",
+  "h": "0a1d5ed65497a4",
+  "guidance": {
+   "knowledge": [
+    "Harf inkılabı: 1928’de yeni Türk harflerinin kabul edilmesi.",
+    "Millet Mektepleri: okul çağını geçmiş yetişkinlere yeni harflerle okuma yazma öğretmek için açılan kurumlar."
+   ],
+   "strategy": "Kurumların işlevine bak: yetişkinlere yeni yazıyı öğretmek. Bu işlevi taşıyan kurumu seç.",
+   "steps": [
+    "1928’de yeni harfler kabul ediliyor: hukuki düzenleme.",
+    "1929’da okul çağını geçmiş yetişkinlerin bu yazıyı öğrenmesi için kurumlar açılıyor: uygulama.",
+    "Bu kurumlar Millet Mektepleri’dir."
+   ],
+   "optionReasons": [
+    "İstiklal Mahkemeleri yargı kurumudur; okuma yazma öğretmez.",
+    "Boğazlar Komisyonu uluslararası bir denetim kurumudur; eğitimle ilgisi yok.",
+    "Son Osmanlı Mebusan Meclisi 1920’de kapanmış bir yasama organıdır.",
+    "1938 Hatay Meclisi ayrı bir devletin yasama organıdır; okuryazarlık kurumu değildir.",
+    "Doğru: yetişkinlere yeni harfleri öğretmek için açılan kurumlar Millet Mektepleri’dir."
+   ],
+   "commonError": "Harflerin kabulünü (yasa) ve öğretilmesini (uygulama kurumu) aynı şey sanmak.",
+   "check": "Kurumun öğrencisini sor: okul çağını geçmiş yetişkinler. Seçeneklerde öğrencisi olan tek kurum Millet Mektepleri."
+  }
+ },
+ {
+  "id": "f12h-ataturkculuk-inkilap-06",
+  "h": "07f46645f6b853",
+  "guidance": {
+   "knowledge": [
+    "Devletçilik: ekonomide özel girişimin yetersiz kaldığı alanlarda devletin yatırım yapmasını öngören Atatürk ilkesi.",
+    "Kamu yatırımı: devletin bütçesiyle yaptığı yatırım. Özel işletme: kişilere ait işletme."
+   ],
+   "strategy": "Metindeki iki bilgiyi (kamu sanayi yatırımı ve özel işletmelerin varlığı) birlikte koruyan yorumu seç.",
+   "steps": [
+    "1934’te kamu eliyle sanayi yatırımları planlanıyor.",
+    "Metin aynı dönemde özel işletmelerin de bulunduğunu açıkça söylüyor.",
+    "Uyumlu yorum: devletçilik kamu yatırımını özel girişimle birlikte içerebilir."
+   ],
+   "optionReasons": [
+    "Doğru: kamu yatırımı ve özel işletmeler aynı dönemde birlikte vardır.",
+    "İki bilgiden birini siler; metin kamu yatırımı yapıldığını açıkça söylüyor.",
+    "Metin özel işletmelerin bulunduğunu söylüyor; mülkiyetin kaldırılması bununla çelişir.",
+    "Ekonomik planlamayı siyasal oylamayla karıştırır; hanedan da cumhuriyet döneminde söz konusu değildir.",
+    "Fabrika planı ekonomik bir veridir; alfabe değişikliğine kanıt olamaz."
+   ],
+   "commonError": "Devletçiliği bütün özel mülkiyetin kaldırılması sanmak.",
+   "check": "Metnin ikinci cümlesi “özel işletmelerin de bulunduğunu açıkça belirtiyor”; seçtiğin yorum bu cümleyle çelişmemeli."
+  }
+ },
+ {
+  "id": "f12h-ataturkculuk-inkilap-07",
+  "h": "19e2e717bcf9f0",
+  "guidance": {
+   "knowledge": [
+    "Türk Tarih Kurumu (1931) ve Türk Dil Kurumu (1932): millî kültür araştırmaları için kurulan bilimsel kurumlar.",
+    "Millî kültür: bir toplumun ortak tarihi, dili ve değerlerinden oluşan birikim."
+   ],
+   "strategy": "Kurumların adlarını ve kuruluş amacını kullan; amaç dışındaki alanlara (ekonomi, ordu, ticaret) taşan şıkları ele.",
+   "steps": [
+    "Kurumların adı tarih ve dil alanlarını gösteriyor.",
+    "Metne göre amaçları millî kültür araştırmaları.",
+    "Desteklenen amaç: ortak tarih ve dil bilincini bilimsel çalışmalarla geliştirmek."
+   ],
+   "optionReasons": [
+    "Kurumlar kültür alanındadır; fabrikalar ekonomik bir konudur.",
+    "Doğru: tarih ve dil kurumlarının amacı bu alanlarda bilimsel çalışma yapmaktır.",
+    "Ordu ve yabancı komisyon askerî ve dış politika konularıdır.",
+    "Kıyı gemileri tarifesi ticaret konusudur; kültür kurumlarının alanı değildir.",
+    "Kurumlar araştırma ve yayın amacı taşır; okumayı yasaklamak bu amaca terstir."
+   ],
+   "commonError": "Kültür alanındaki bir veriden ekonomik ya da askerî sonuç çıkarmak.",
+   "check": "Kurum adlarındaki “Tarih” ve “Dil” sözcükleri doğru şıktaki “tarih ve dil bilinci” ifadesiyle birebir eşleşiyor."
+  }
+ },
+ {
+  "id": "f12h-ataturkculuk-inkilap-08",
+  "h": "0651684a0a37f9",
+  "guidance": {
+   "knowledge": [
+    "Soyadı Kanunu: 1934’te herkesin bir soyadı kullanmasını zorunlu kılan kanun.",
+    "Resmî kayıt: devletin nüfus, kimlik gibi belgelerde kişileri ve aileleri tanımlama düzeni."
+   ],
+   "strategy": "Kanunun açık amacını (ailelerin resmî kayıtta ayırt edilmesi) düzenlemenin nesnesi olarak al.",
+   "steps": [
+    "Kanun 1934’te soyadı kullanımını düzenliyor.",
+    "Amacı ailelerin resmî kayıtlarda ayırt edilmesini kolaylaştırmak.",
+    "Temel nesne: resmî kimlik ve toplumsal kayıt düzeni."
+   ],
+   "optionReasons": [
+    "Alfabe düzenlemesi 1928 harf inkılabıdır; soyadıyla farklı bir düzenlemedir.",
+    "Savaş gemisi sayısı uluslararası bir askerî konudur.",
+    "Doğru: soyadı ailelerin resmî kayıtta ayırt edilmesini sağlar.",
+    "Ordu ikmali 1921 Tekâlif-i Millîye konusudur.",
+    "Polonya’nın işgali 1939’da II. Dünya Savaşı’nı başlatan olaydır."
+   ],
+   "commonError": "Aynı dönemin farklı inkılaplarını (soyadı ve harf) tek düzenleme sanmak.",
+   "check": "Metindeki amaç cümlesinde “resmî kayıt” ifadesi geçiyor; doğru şıkta da aynı ifade var."
+  }
+ },
+ {
+  "id": "f12h-ataturkculuk-inkilap-09",
+  "h": "092ac7a09d7e91",
+  "guidance": {
+   "knowledge": [
+    "Koruyucu sağlık: hastalık ortaya çıkmadan önce önlem almaya yönelik sağlık hizmeti (laboratuvar, aşı, salgın takibi gibi).",
+    "Salgın bildirimi: bulaşıcı hastalık görüldüğünde yetkililere haber verme zorunluluğu."
+   ],
+   "strategy": "Verilen iki düzenlemenin ortak amacını bul; kurum kurmak hedefi gösterir, başarı ölçüsünü göstermez.",
+   "steps": [
+    "1928 Hıfzıssıhha Müessesesi halk sağlığı laboratuvar hizmetleri veriyor.",
+    "1930 kanunu salgın bildirimini düzenliyor.",
+    "Desteklenen çıkarım: koruyucu sağlık hizmetleri kurumsallaştırılmaya çalışılmıştır."
+   ],
+   "optionReasons": [
+    "Kurum kurmak hastalıkların anında yok olduğunu göstermez; başarı ayrıca ölçülmelidir.",
+    "Metinde kanunun salgın bildirimiyle ilgili olduğu açıkça yazıyor.",
+    "Tersini söyler; devlet sağlık alanında kurum kuruyor.",
+    "Doğru: laboratuvar ve salgın bildirimi koruyucu sağlığın kurumsal altyapısıdır.",
+    "Ateşkes askerî bir konudur; sağlık düzenlemesiyle ilgisi yok."
+   ],
+   "commonError": "Bir kurumun kurulmasını hedefe ulaşıldığının kanıtı saymak.",
+   "check": "Laboratuvar ve salgın bildirimi hastalığı tedavi etmez, önceden yakalar; bu, “koruyucu” sözcüğünü doğrular."
+  }
+ },
+ {
+  "id": "f12h-ataturkculuk-inkilap-10",
+  "h": "1a5a41b4f7d264",
+  "guidance": {
+   "knowledge": [
+    "Kronoloji sorusu: verilen olayların bir tarihe göre önce ya da sonra olduğunu bulmak.",
+    "Burada ölçüt tarih 1933; ondan büyük yıl sonra, küçük yıl önce demektir."
+   ],
+   "strategy": "Her seçenekteki yılı 1933 ile karşılaştır; yalnız 1933’ten büyük olanı seç.",
+   "steps": [
+    "1924, 1928, 1931 ve 1932 yıllarının hepsi 1933’ten küçüktür: önce.",
+    "1934 > 1933: sonra.",
+    "Konuşmadan sonraki olay 1934 kadınların milletvekili seçim hakkıdır."
+   ],
+   "optionReasons": [
+    "1928 < 1933; harflerin kabulü konuşmadan öncedir.",
+    "1931 < 1933; tarih kurumu konuşmadan öncedir.",
+    "1932 < 1933; dil kurumu da öncedir, bir yıl farkla.",
+    "1924 < 1933; eğitimde birlik kanunu en erken tarihli seçenektir.",
+    "Doğru: 1934 > 1933, yani konuşmadan sonradır."
+   ],
+   "commonError": "Yakın yılları (1932 ve 1934) dikkatsizce karıştırmak.",
+   "check": "Farkları hesapla: 1934 − 1933 = 1 (pozitif, sonra); ötekilerin hepsinde fark negatiftir."
+  }
+ },
+ {
+  "id": "f12h-iki-savas-arasi-turkiye-dunya-01",
+  "h": "009223bdb9f511",
+  "guidance": {
+   "knowledge": [
+    "Musul sorunu: Lozan’da çözülemeyen ve Türkiye ile İngiltere arasında süren Musul’un hangi ülkede kalacağı meselesi.",
+    "1926 Ankara Antlaşması: Türkiye, İngiltere ve Irak arasında imzalanan, Musul’u Irak’a bırakan sınır antlaşması."
+   ],
+   "strategy": "Taraflara ve yıla bak: Türkiye, İngiltere, Irak ve 1926. Aynı şehir adını taşıyan 1921 antlaşmasıyla karıştırma.",
+   "steps": [
+    "Taraflar Türkiye, İngiltere ve Irak; yıl 1926.",
+    "Konu sınır düzenlemesi; Musul Irak’ta kalıyor.",
+    "Belge ve sorun: 1926 Ankara Antlaşması ve Musul."
+   ],
+   "optionReasons": [
+    "Doğru: taraflar, yıl ve Musul bilgisi 1926 Ankara Antlaşması’nı gösterir.",
+    "Aynı adı taşıyan ama Fransa ile 1921’de imzalanan farklı antlaşmadır.",
+    "Montrö 1936 Boğazlar sözleşmesidir; okul denetimiyle eşleşmez.",
+    "Balkan Antantı bir güvenlik girişimidir; Medeni Kanun ise iç hukuk düzenlemesidir.",
+    "Alfabe kanunu kültür alanındadır; mübadele nüfus konusudur. İkisi de Musul’la ilgisiz."
+   ],
+   "commonError": "Ankara adını taşıyan iki antlaşmayı tarafları ve yılı karşılaştırmadan karıştırmak.",
+   "check": "Taraf sınaması: 1921 antlaşmasında karşı taraf Fransa, burada İngiltere ve Irak var; yıl da 1926."
+  }
+ },
+ {
+  "id": "f12h-iki-savas-arasi-turkiye-dunya-02",
+  "h": "17d060fdab72e6",
+  "guidance": {
+   "knowledge": [
+    "Boğazlar Komisyonu: Lozan düzeniyle kurulan, Boğazlardaki geçişi denetleyen uluslararası komisyon.",
+    "Montrö Boğazlar Sözleşmesi (1936): komisyonu kaldırıp Boğazların savunmasını Türkiye’ye bırakan ve gemilerin geçişini düzenleyen sözleşme."
+   ],
+   "strategy": "Metindeki üç öğeyi (komisyonun kaldırılması, savunmanın Türkiye’ye bırakılması, 1936) aynı anda taşıyan belgeyi seç.",
+   "steps": [
+    "1923 Lozan düzenindeki uluslararası komisyon 1936’da kaldırılıyor.",
+    "Boğazların savunması Türkiye’ye bırakılıyor ve geçiş hükümleri konuluyor.",
+    "Bu değişiklik Montrö Boğazlar Sözleşmesi’ne aittir."
+   ],
+   "optionReasons": [
+    "Misak-ı Millî 1920’de hedefleri belirleyen bir belgedir; 1936 değişikliğini yapamaz.",
+    "Doğru: komisyonun kaldırılması ve savunmanın Türkiye’ye bırakılması Montrö ile olmuştur.",
+    "Tekâlif-i Millîye 1921 ordu ikmali emirleridir.",
+    "Soyadı Kanunu bir iç hukuk düzenlemesidir; Boğazlarla ilgisi yok.",
+    "Serbest Fırka bir siyasi partidir; uluslararası sözleşme yapamaz."
+   ],
+   "commonError": "Boğazlarla ilgili Lozan ve Montrö düzenlemelerini birbirine karıştırmak.",
+   "check": "Seçeneklerde devletler arası sözleşme olan tek belge Montrö; ötekiler iç belge, kanun ya da parti programıdır."
+  }
+ },
+ {
+  "id": "f12h-iki-savas-arasi-turkiye-dunya-03",
+  "h": "0314481bc30d4a",
+  "guidance": {
+   "knowledge": [
+    "Antant: devletlerin ortak bir amaç için kurduğu anlaşma ya da birlik.",
+    "Balkan Antantı: 1934’te Türkiye, Yunanistan, Romanya ve Yugoslavya arasında bölgesel güvenlik amacıyla kurulan birlik."
+   ],
+   "strategy": "Üye listesi ve yıl seçenekleri ayırt eder; dört ülkenin ve 1934’ün eşleştiği oluşumu seç.",
+   "steps": [
+    "Üyeler: Türkiye, Yunanistan, Romanya, Yugoslavya; hepsi Balkan ülkesi.",
+    "Yıl 1934, amaç bölgesel güvenlik.",
+    "Anlatılan oluşum Balkan Antantı’dır."
+   ],
+   "optionReasons": [
+    "Sadabat Paktı farklı üyelerle (İran, Irak, Afganistan) ve 1937’de kurulmuştur.",
+    "Milletler Cemiyeti küresel bir örgüttür ve 1920’de kurulmuştur; dört Balkan ülkesiyle sınırlı değildir.",
+    "Doğru: dört Balkan ülkesi ve 1934 Balkan Antantı’nı gösterir.",
+    "BM Güvenlik Konseyi 1945 sonrası küresel bir organdır.",
+    "Lozan’daki devletler barış konferansının taraflarıdır; 1934 güvenlik birliği değildir."
+   ],
+   "commonError": "Balkan Antantı ile Sadabat Paktı’nın üyelerini ve yıllarını karıştırmak.",
+   "check": "Üyeleri haritada düşün: dördü de Balkan yarımadasında. Adı da “Balkan” olan seçenek bunu doğruluyor."
+  }
+ },
+ {
+  "id": "f12h-iki-savas-arasi-turkiye-dunya-04",
+  "h": "048c052fd6f845",
+  "guidance": {
+   "knowledge": [
+    "Sadabat Paktı: 1937’de Türkiye, İran, Irak ve Afganistan arasında saldırmazlık ve iyi komşuluk için kurulan pakt.",
+    "Olumsuz kök: “söylenemez” diye sorulan soruda listede olmayanı seçmek gerekir."
+   ],
+   "strategy": "Kökün olumsuz olduğuna dikkat et; metindeki imzacı listesini seçeneklerle tek tek karşılaştır ve listede olmayanı bul.",
+   "steps": [
+    "Metindeki imzacılar: Türkiye, İran, Irak, Afganistan.",
+    "Seçeneklerde Türkiye, İran, Irak ve Afganistan listede var.",
+    "Suriye listede yok; imzacı olduğu söylenemez."
+   ],
+   "optionReasons": [
+    "Türkiye metindeki imzacı listesinin ilk sırasında yer alıyor.",
+    "İran imzacı listesinde açıkça geçiyor.",
+    "Irak da imzacı listesindedir.",
+    "Doğru: Suriye metindeki imzacı listesinde yok.",
+    "Afganistan listenin son üyesidir."
+   ],
+   "commonError": "Olumsuz kökü gözden kaçırıp listede olan bir ülkeyi seçmek ya da komşuluğu üyelik sanmak.",
+   "check": "Listedeki ülke sayısı dört, seçenek sayısı beş; fazladan gelen tek ülke Suriye."
+  }
+ },
+ {
+  "id": "f12h-iki-savas-arasi-turkiye-dunya-05",
+  "h": "1de930d915116a",
+  "guidance": {
+   "knowledge": [
+    "Hatay sorunu: Hatay’ın statüsünün tartışılması, ayrı devlet olması ve Türkiye’ye katılması aşamalarından oluşan süreç.",
+    "Statü: bir bölgenin hukuki konumu, kime bağlı olduğu ya da nasıl yönetileceği."
+   ],
+   "strategy": "Kök “uyuşmaz” diye soruyor; her yargıyı metindeki yıllarla karşılaştır ve yılı ya da sırayı bozan yargıyı seç.",
+   "steps": [
+    "1936: statü tartışması.",
+    "1938: ayrı devletin kurulması.",
+    "1939: Türkiye’ye katılma. Buna göre “1938’de katıldı” yargısı verilerle uyuşmaz."
+   ],
+   "optionReasons": [
+    "Veriyle uyumlu: statü 1936’da tartışılmış, katılma 1939’dadır.",
+    "Veriyle uyumlu: ayrı devlet 1938’de kurulmuş.",
+    "Veriyle uyumlu: katılma kararı 1939.",
+    "Veriyle uyumlu: süreç üç aşamadan oluşuyor.",
+    "Doğru: 1938 ayrı devletin yılıdır; katılma 1939’dadır, bu yargı uyuşmaz."
+   ],
+   "commonError": "Ayrı devletin kurulduğu yıl ile Türkiye’ye katılma yılını karıştırmak.",
+   "check": "Aşamaları yıl sırasına koy: tartışma, ayrı devlet, katılma. 1938 ikinci aşamaya, katılma üçüncüye denk geliyor."
+  }
+ },
+ {
+  "id": "f12h-iki-savas-arasi-turkiye-dunya-06",
+  "h": "1324bf37c160c9",
+  "guidance": {
+   "knowledge": [
+    "Kapatılma: bir partinin kendi isteği dışında, yetkili bir makamın kararıyla faaliyetine son verilmesi.",
+    "Fesih (kendini feshetme): partinin kendi kararıyla dağılması. Açıklamaya göre bu iki parti Terakkiperver Cumhuriyet Fırkası ve Serbest Cumhuriyet Fırkası’dır."
+   ],
+   "strategy": "İki kapanışın kimin kararıyla olduğuna bak; karar mekanizması farklıysa işlemler de farklıdır.",
+   "steps": [
+    "Birinci parti 1924’te kuruluyor, 1925’te kapatılıyor: dışarıdan bir karar.",
+    "İkinci parti 1930’da kuruluyor, kurucusunun kararıyla aynı yıl kendini feshediyor: kendi kararı.",
+    "Kapatılma ile kendini feshetme farklı işlemlerdir."
+   ],
+   "optionReasons": [
+    "Doğru: birinde karar dışarıdan, ötekinde partinin kendisinden geliyor.",
+    "Medeni Kanun 1926’da kabul edilmiştir; ayrıca parti kapanışlarıyla ilgisi yoktur.",
+    "Kuruluş yılları 1924 ve 1930, yani farklıdır.",
+    "Parti kapanışı bir iç siyasi işlemdir; askerî ateşkesle ilgisi yok.",
+    "Fesih ancak var olan bir parti için mümkündür; kurulmuş olmayı kanıtlar."
+   ],
+   "commonError": "Bir partinin kapatılmasıyla kendi kendini feshetmesini aynı süreç sanmak.",
+   "check": "Fiillere bak: “kapatılıyor” edilgen, dışarıdan yapılır; “kendisini feshediyor” dönüşlü, parti kendisi yapar."
+  }
+ },
+ {
+  "id": "f12h-iki-savas-arasi-turkiye-dunya-07",
+  "h": "07c4ec80c30f33",
+  "guidance": {
+   "knowledge": [
+    "Nüfus mübadelesi: iki ülkenin belirli gruplardaki nüfusu karşılıklı olarak değiştirmesi. Türk-Yunan mübadelesi Lozan döneminde kararlaştırılmıştır.",
+    "Yerleşik (etabli): mübadele dışında tutulan, bulunduğu yerde kalabilen kişi. İstanbul Rumları ve Batı Trakya Türkleri bu kapsamdaydı."
+   ],
+   "strategy": "Uyuşmazlıktaki iki grubu (İstanbul Rumları ve Batı Trakya Türkleri) ve görüşülen konuyu (yerleşik sayılma) birlikte değerlendir.",
+   "steps": [
+    "Taraflardan biri İstanbul Rumları, öteki Batı Trakya Türkleri: iki ülkedeki karşılıklı azınlıklar.",
+    "Görüşülen konu bu kişilerin yerleşik sayılma koşulları.",
+    "Ana konu Türk-Yunan nüfus mübadelesidir; 1930’da uzlaşma sağlanmıştır."
+   ],
+   "optionReasons": [
+    "Musul Türkiye ile İngiltere arasında bir sınır sorunuydu; Rumlar ve Batı Trakya Türkleriyle ilgisi yok.",
+    "Doğru: yerleşik sayılma koşulları mübadele kapsamının belirlenmesiyle ilgilidir.",
+    "Boğazlardaki gemi tonajı Montrö’nün konusudur.",
+    "Alfabe iç kültür düzenlemesidir; iki ülke arasında uyuşmazlık konusu değildir.",
+    "Sakarya ikmali Millî Mücadele’nin askerî bir konusudur."
+   ],
+   "commonError": "Nüfusla ilgili her konuyu genel göç sanıp mübadelenin istisnalarını gözden kaçırmak.",
+   "check": "Gruplar iki ülkede karşılıklı yaşıyor: biri Türkiye’de Rum, öteki Yunanistan’da Türk. Karşılıklılık mübadeleyi doğruluyor."
+  }
+ },
+ {
+  "id": "f12h-iki-savas-arasi-turkiye-dunya-08",
+  "h": "0d2bce2df84155",
+  "guidance": {
+   "knowledge": [
+    "Ulusal egemenlik: bir devletin kendi ülkesinde yasa yapma ve uygulama yetkisini başka bir güce bırakmaması.",
+    "İç mesele: bir devletin kendi hukuku içinde çözdüğü, dış müdahaleye kapalı konu."
+   ],
+   "strategy": "Devletin tutumunu iki öğeye ayır: kendi mevzuatına göre denetim ve dış müdahalenin reddi. İkisini birlikte karşılayan ilkeyi seç.",
+   "steps": [
+    "Devlet yabancı okulları kendi eğitim mevzuatına göre denetliyor.",
+    "Bunu iç mesele sayıyor ve dış müdahaleyi reddediyor.",
+    "Bağlantılı ilke: ulusal egemenlik ve hukuk yetkisi."
+   ],
+   "optionReasons": [
+    "Tersini söyler; devlet okulları kendi denetimine alıyor, devretmiyor.",
+    "Devlet yabancı müdahaleyi reddediyor; komisyonun üstünlüğü bununla çelişir.",
+    "Doğru: kendi hukukunu uygulamak ve dış müdahaleyi reddetmek ulusal egemenliktir.",
+    "Okul denetiminden deniz ticareti hakkında sonuç çıkarmak kanıt sınırını aşar.",
+    "Borç ödemesi ekonomik bir konudur; metin bu konuda bilgi vermiyor."
+   ],
+   "commonError": "Bir alandaki egemenlik kararından başka alanlarda sonuç çıkarmak.",
+   "check": "Devletin cümlesindeki “kendi mevzuatı” ve “dış müdahaleyi reddediyor” ifadeleri egemenliğin tanımındaki iki öğeyle örtüşüyor."
+  }
+ },
+ {
+  "id": "f12h-iki-savas-arasi-turkiye-dunya-09",
+  "h": "0cadfb35626a42",
+  "guidance": {
+   "knowledge": [
+    "Milletler Cemiyeti: 1920’de barışı korumak için kurulan uluslararası örgüt. Türkiye 1932’de katılmıştır.",
+    "Desteklenmeyen çıkarım: verilen bilgiden çıkmayan, onu aşan yargı."
+   ],
+   "strategy": "Kök olumsuz; verilerle doğrudan desteklenen yargıları ele, verinin kapsamını aşan yargıyı seç.",
+   "steps": [
+    "Veriler: 1932 Milletler Cemiyeti’ne katılım ve 1934 Balkan Antantı.",
+    "Tarih sırası, farklı yıllar ve iki oluşumun türü verilerden çıkıyor.",
+    "Üyelikten sonra bütün uyuşmazlıkların kesinlikle bittiği verilerle desteklenmez."
+   ],
+   "optionReasons": [
+    "Veriyle uyumlu: 1932 < 1934.",
+    "Veriyle uyumlu: biri 1932’de, öteki 1934’te.",
+    "Veriyle uyumlu: Milletler Cemiyeti uluslararası bir örgüttür.",
+    "Doğru: üyelik bir araçtır; bütün uyuşmazlıkların bittiğine dair veri yok.",
+    "Veriyle uyumlu: Balkan Antantı bölgesel güvenlik girişimidir."
+   ],
+   "commonError": "Bir örgüte katılmayı amacına ulaşıldığının kanıtı saymak.",
+   "check": "“Kesinlikle” ve “bütün” gibi mutlak sözcükler verinin kapsamını aşan yargıların belirtisidir; yalnız seçilen şıkta var."
+  }
+ },
+ {
+  "id": "f12h-iki-savas-arasi-turkiye-dunya-10",
+  "h": "1b194f890de237",
+  "guidance": {
+   "knowledge": [
+    "Cumhurbaşkanı seçimi: bu dönemde cumhurbaşkanını TBMM seçiyordu.",
+    "Devletin sürekliliği: devlet başkanının ölümünde yerine kurumsal yolla hemen yeni bir başkanın seçilmesi."
+   ],
+   "strategy": "Tarihi ve seçen kurumu kullan: 10 Kasım 1938’in ertesi günü TBMM’nin seçtiği kişi açıklamada açıkça verilmiştir.",
+   "steps": [
+    "Atatürk 10 Kasım 1938’de ölüyor.",
+    "Ertesi gün, 11 Kasım 1938’de TBMM yeni cumhurbaşkanını seçiyor.",
+    "Seçilen kişi İsmet İnönü’dür."
+   ],
+   "optionReasons": [
+    "Atatürk 10 Kasım 1938’de ölmüştür; yeni cumhurbaşkanı onun yerine seçilen kişidir.",
+    "Fethi Okyar 1930’da Serbest Cumhuriyet Fırkası’nı kuran kişidir; 1938’de cumhurbaşkanı seçilmedi.",
+    "Kâzım Karabekir Millî Mücadele’de Doğu Cephesi komutanıdır; 1938 seçimiyle ilgisi yok.",
+    "Rauf Orbay Millî Mücadele döneminin önemli isimlerindendir; 1938’de seçilen kişi değildir.",
+    "Doğru: TBMM 11 Kasım 1938’de İsmet İnönü’yü cumhurbaşkanı seçti."
+   ],
+   "commonError": "Millî Mücadele’nin tanınmış isimlerini 1938 seçimiyle karıştırmak.",
+   "check": "Metin seçimin Atatürk’ün ölümünden sonra yapıldığını söylüyor; bu yüzden ilk seçenek kendiliğinden düşer, kalanlar arasında açıklama İnönü’yü veriyor."
+  }
+ },
+ {
+  "id": "f12h-kuresel-savaslar-arasinda-turkiye-dunya-01",
+  "h": "01e5c52672eb23",
+  "guidance": {
+   "knowledge": [
+    "Milletler Cemiyeti: I. Dünya Savaşı’ndan sonra 1920’de barışı korumak için kurulan, merkezi Cenevre’de olan uluslararası örgüt.",
+    "Birleşmiş Milletler: II. Dünya Savaşı’nın sonunda, 1945’te kurulan ayrı ve daha sonraki örgüt."
+   ],
+   "strategy": "Metindeki üç ipucunu (1920, Cenevre, ABD’nin katılmaması) seçeneklerdeki örgütlerin yılı ve türüyle karşılaştır.",
+   "steps": [
+    "Örgüt 1920’de faaliyete başlıyor ve merkezi Cenevre.",
+    "Amacı barışı korumak; fikri destekleyen ABD üye olmuyor.",
+    "Bu örgüt Milletler Cemiyeti’dir."
+   ],
+   "optionReasons": [
+    "Doğru: 1920, Cenevre ve barış amacı Milletler Cemiyeti’ni gösterir.",
+    "Birleşmiş Milletler 1945’te kurulmuştur; 1920 tarihine uymaz.",
+    "Balkan Antantı 1934’te kurulan bölgesel bir birliktir, küresel örgüt değildir.",
+    "Sadabat Paktı 1937’de dört ülke arasında kurulan bölgesel bir paktır.",
+    "TBMM Türkiye’nin yasama organıdır; uluslararası örgüt değildir ve 1920’de Ankara’da açılmıştır."
+   ],
+   "commonError": "Milletler Cemiyeti ile Birleşmiş Milletler’i kuruluş yıllarına bakmadan karıştırmak.",
+   "check": "Yıl sınaması: seçeneklerde 1920’ye uyan tek uluslararası örgüt Milletler Cemiyeti; BM 25 yıl sonra kurulmuştur."
+  }
+ },
+ {
+  "id": "f12h-kuresel-savaslar-arasinda-turkiye-dunya-02",
+  "h": "00bd59f51e7ab8",
+  "guidance": {
+   "knowledge": [
+    "Taahhüt: bir devletin belirli bir davranışa uyacağını resmen üstlenmesi.",
+    "Uygulama garantisi: taahhüde uyulmasını sağlayan yaptırım ya da zorlama gücü. Açıklamaya göre bu pakt Briand-Kellogg Paktı’dır."
+   ],
+   "strategy": "İki bilgiyi (savaşı reddeden taahhüt ve sonraki saldırıları durduramama) çelişki gibi değil, birlikte doğru olan iki olgu olarak yorumla.",
+   "steps": [
+    "Pakt 1928’de savaşı ulusal politika aracı olarak reddediyor: barış taahhüdü.",
+    "Sonraki saldırıları durdurmakta yetersiz kalıyor: uygulama zayıf.",
+    "Birlikte yorum: barış taahhüdü etkili uygulama garantisi değildir."
+   ],
+   "optionReasons": [
+    "Paktın kendisi savaşı reddediyor; barış hedefi açıkça var.",
+    "Doğru: taahhüt verilmiş ama saldırılar sürmüş; taahhüt uygulamayı garanti etmemiştir.",
+    "Metin sonraki saldırılardan söz ediyor; savaşlar imza günü bitmemiştir.",
+    "Pakt uyuşmazlıkların çözümüyle ilgili diplomatik bir belgedir; borsa işlemi değildir.",
+    "Metin saldırıların paktan “sonra” olduğunu söylüyor; 1928’den önceye kaydırmak sırayı bozar."
+   ],
+   "commonError": "Bir antlaşmanın amacını, o amaca ulaşıldığının kanıtı saymak.",
+   "check": "Metindeki “sonraki saldırılar” ifadesi hem barış hedefinin hem de uygulama başarısızlığının birlikte var olduğunu doğrular."
+  }
+ },
+ {
+  "id": "f12h-kuresel-savaslar-arasinda-turkiye-dunya-03",
+  "h": "1df3a98f89b52c",
+  "guidance": {
+   "knowledge": [
+    "Kredi: bankaların işletmelere ve kişilere borç vermesi. Kredi daralması: bankaların daha az borç vermesi.",
+    "Neden-mekanizma-sonuç zinciri: bir olayın, hangi ara yolla başka bir sonuca yol açtığını gösteren sıralama."
+   ],
+   "strategy": "Metindeki olayları sırasıyla zincire diz; her halkanın bir sonrakine yol açtığı ve metindeki sırayı koruyan zinciri seç.",
+   "steps": [
+    "Neden: bankalar kayıp yaşıyor ve kredi daralıyor.",
+    "Mekanizma: firmalar yatırım ve üretimi azaltıyor.",
+    "Sonuç: işsizlik artıyor. Zincir: kredi daralması → üretim-yatırım kısıntısı → işsizlik artışı."
+   ],
+   "optionReasons": [
+    "Sırayı tersine çevirir ve metinde olmayan sonuçlar ekler; borçların yok olduğu söylenmiyor.",
+    "Alfabe kültürel bir düzenlemedir; 1929 ekonomik kriziyle ilgisi yok.",
+    "Doğru: metindeki sıra kredi daralması, üretim kısıntısı ve işsizlik artışıdır.",
+    "Metinde barış antlaşması ya da sabit fiyat bilgisi yok.",
+    "Banka kaybı daralmaya yol açıyor; büyüme metindeki yönün tam tersidir."
+   ],
+   "commonError": "Ekonomik zincirde nedeni ve sonucu yer değiştirmek.",
+   "check": "Zinciri “çünkü” ile geriye oku: işsizlik arttı, çünkü üretim azaldı; üretim azaldı, çünkü kredi daraldı. Her halka anlamlı."
+  }
+ },
+ {
+  "id": "f12h-kuresel-savaslar-arasinda-turkiye-dunya-04",
+  "h": "1b94881f729455",
+  "guidance": {
+   "knowledge": [
+    "Uluslararası ticaret: ülkeler arasında mal alışverişi. Dış kredi: bir ülkenin başka ülkelerden aldığı borç.",
+    "Krizin yayılması: bir ülkedeki ekonomik daralmanın ticaret ve kredi bağlarıyla başka ülkelere aktarılması."
+   ],
+   "strategy": "Metindeki bağlantıları (dış kredi, ticaret, tarım ihracatı) izle; etkinin sınırları nasıl aştığını gösteren ama verinin kapsamını aşmayan çıkarımı seç.",
+   "steps": [
+    "Krizde dış kredi ve uluslararası ticaret azalıyor.",
+    "Tarım ürünü ihraç eden ülkelerin gelirleri düşüyor; kriz onlara ticaret yoluyla ulaşıyor.",
+    "Çıkarım: ülkeler arası ekonomik bağlantılar etkileri sınırların ötesine taşıyabilir."
+   ],
+   "optionReasons": [
+    "Metin etkilerin aktarıldığını söylüyor; her ülkenin aynı gün aynı oranda etkilendiğini söylemiyor.",
+    "Metinde askerî işgal yok; etkilenen ülkeler ticaret yoluyla etkileniyor.",
+    "Tersini söyler; ticaretin azalması ihracatçı ülkelerin gelirini düşürüyor.",
+    "Doğru: kredi ve ticaret bağları krizi başka ülkelere taşıyor.",
+    "Metin tarım gelirlerinin düştüğünü söylüyor; sabit fiyat bunun tersidir."
+   ],
+   "commonError": "Bir krizin yayıldığı bilgisinden her ülkenin eşit etkilendiği sonucunu çıkarmak.",
+   "check": "Şıktaki “taşıyabilir” sözcüğü olasılık bildirir ve veriyi aşmaz; “tam olarak aynı gün” gibi kesin ifadeler ise aşar."
+  }
+ },
+ {
+  "id": "f12h-kuresel-savaslar-arasinda-turkiye-dunya-05",
+  "h": "006589743f450d",
+  "guidance": {
+   "knowledge": [
+    "Otoriter rejim: muhalefetin bastırıldığı, gücün tek lider ya da partide toplandığı yönetim.",
+    "Faşizm ve Nazizm: Mussolini’nin İtalya’da, Hitler’in Almanya’da kurduğu otoriter rejimler."
+   ],
+   "strategy": "Kök “yanlış” olanı istiyor; her yorumu metindeki ülke-yıl çiftleriyle karşılaştır ve veriyi tersine çeviren yorumu seç.",
+   "steps": [
+    "Mussolini: İtalya, 1922.",
+    "Hitler: Almanya, 1933.",
+    "Ülkeler de yıllar da farklı; “aynı ülkede aynı yılda” yorumu yanlıştır."
+   ],
+   "optionReasons": [
+    "Veriyle uyumlu bir yorum: iki süreçte de muhalefet bastırılıyor; otoriter ortaklık var.",
+    "Veriyle uyumlu bir yorum: İtalya 1922 ve Almanya 1933 ayrı tutulmalı.",
+    "Veriyle uyumlu bir yorum: benzerlik ayrıntıların aynılığını göstermez.",
+    "Veriyle uyumlu bir yorum: Nazizmin kendine özgü politikaları ayrıca incelenmelidir.",
+    "Doğru: ülke-yıl çiftleri farklı olduğu için bu yorum veriyle çelişir."
+   ],
+   "commonError": "Ortak özellikleri olan iki olayı tek olay gibi okumak.",
+   "check": "Ülkeleri ve yılları yan yana koy: İtalya ≠ Almanya, 1922 ≠ 1933. İki eşitsizlik de bu yorumu çürütüyor."
+  }
+ },
+ {
+  "id": "f12h-kuresel-savaslar-arasinda-turkiye-dunya-06",
+  "h": "168f3280860660",
+  "guidance": {
+   "knowledge": [
+    "Propaganda: bir ideolojiyi yaymak için yapılan, çoğu zaman yanıltıcı bilgi içeren tanıtım.",
+    "Antisemitizm: Yahudilere yönelik düşmanlık ve ayrımcılık. Irk üstünlüğü iddiası bilimsel bir dayanağı olmayan ayrımcı bir savdır."
+   ],
+   "strategy": "Tarihsel bir iddiayı incelemek ile onu doğru kabul etmek arasındaki farkı koru; inceleme konusu olan iddiaya onay veren şıkları ele.",
+   "steps": [
+    "Kaynak Nazi propagandasındaki ırk üstünlüğü ve antisemitizm iddialarını inceliyor.",
+    "Amaç rejimin dışlama politikalarını açıklamak; iddiaları benimsemek değil.",
+    "Doğru ele alış: bu iddialar ayrımcı ideolojinin tarihsel savları olarak, doğruluk ya da onay atfedilmeden incelenir."
+   ],
+   "optionReasons": [
+    "Doğru: iddialar tarihsel ve ayrımcı savlar olarak incelenir; onlara doğruluk ya da onay verilmez.",
+    "Irk üstünlüğü iddiası bilimsel bir gerçek değildir; incelenen bir propaganda savıdır.",
+    "İncelenen politikayı dersin hedefiyle karıştırır; tarih incelemesi onay anlamına gelmez.",
+    "Propaganda siyasal bir söylemdir; ses dalgası deneyi fizikle ilgilidir.",
+    "Nazi rejimi demokratik değildi; ayrımcı iddialar demokrasinin tanımı olamaz."
+   ],
+   "commonError": "Bir ideolojiyi tarihsel olarak incelemeyi onu onaylamak sanmak.",
+   "check": "Kaynağın amacını oku: “dışlama politikalarını açıklamak için”. Açıklamak onaylamak değildir; doğru şık bu farkı koruyor."
+  }
+ },
+ {
+  "id": "f12h-kuresel-savaslar-arasinda-turkiye-dunya-07",
+  "h": "1c7e0233510e0e",
+  "guidance": {
+   "knowledge": [
+    "Çarlık: Rusya’da çar denen hükümdarın mutlak yönetimi.",
+    "Bolşevikler: 1917’de iktidarı alan devrimci grup. Brest-Litovsk: Bolşevik yönetiminin Rusya’yı I. Dünya Savaşı’ndan çıkaran antlaşması."
+   ],
+   "strategy": "Metindeki aktörleri sırayla say; aynı yıl içinde kaç farklı yönetimin yer aldığını gör.",
+   "steps": [
+    "Birinci aşama: Çarlık yıkılıyor.",
+    "İkinci aşama: geçici hükûmet kuruluyor. Üçüncü aşama: Bolşevikler iktidarı alıp Brest-Litovsk ile savaştan çekiliyor.",
+    "Yorum: 1917’de farklı aktörlerin yer aldığı birden çok siyasal aşama vardır."
+   ],
+   "optionReasons": [
+    "Metin üç farklı yönetimden söz ediyor; aynı hükümetin devamı değildir.",
+    "Doğru: Çarlık, geçici hükûmet ve Bolşevikler farklı aşamalardır.",
+    "Brest-Litovsk savaştan çekilme antlaşmasıdır; 1928 alfabesiyle ilgisi yok.",
+    "Metin savaştan çekilmeden söz ediyor; demek ki savaş etkisi vardı.",
+    "Geçici hükûmet 1917 Rusya’sına aittir; BM Güvenlik Konseyi 1945 sonrasının kurumudur."
+   ],
+   "commonError": "Aynı yıl içinde olan olayları tek bir yönetimin işi sanmak.",
+   "check": "Aktörleri say: Çar, geçici hükûmet, Bolşevikler. Üç farklı aktör en az üç aşama demektir."
+  }
+ },
+ {
+  "id": "f12h-kuresel-savaslar-arasinda-turkiye-dunya-08",
+  "h": "05907e44c10932",
+  "guidance": {
+   "knowledge": [
+    "NEP (Yeni Ekonomi Politikası): Sovyet Rusya’da bazı küçük özel işletmelere izin verilen ekonomi politikası.",
+    "Veriyi aşan yargı: metnin söylediğinden daha geniş ya da onunla çelişen yargı."
+   ],
+   "strategy": "Kök veriyi aşanı soruyor; metindeki sektör farkını (küçük işletme serbest, büyük sektör devlette) koruyan yargıları ele.",
+   "steps": [
+    "Küçük özel işletmelere izin veriliyor.",
+    "Büyük sanayi, ulaşım ve bankacılıkta devletin rolü sürüyor.",
+    "“Bütün sektörlerde devlet rolü bitti” yargısı ikinci bilgiyle çelişir; veriyi aşar."
+   ],
+   "optionReasons": [
+    "Veriyle uyumlu: küçük işletmeler ve büyük sektörler farklı ele alınıyor.",
+    "Veriyle uyumlu: küçük işletmelere izin verilmiş.",
+    "Doğru: metin büyük sektörlerde devlet rolünün sürdüğünü söylüyor; bu yargı veriyi aşar.",
+    "Veriyle uyumlu: rejim adı tek başına ayrıntıyı vermez, metin de ayrıntı veriyor.",
+    "Veriyle uyumlu: metin büyük sanayi ile küçük işletmeyi ayırıyor."
+   ],
+   "commonError": "Bir alandaki serbestleşmeyi bütün ekonomiye genellemek.",
+   "check": "Yargıdaki “bütün” ve “tamamen” sözcüklerini metindeki “sürüyor” fiiliyle karşılaştır: ikisi bir arada doğru olamaz."
+  }
+ },
+ {
+  "id": "f12h-kuresel-savaslar-arasinda-turkiye-dunya-09",
+  "h": "08bd179f2c70ec",
+  "guidance": {
+   "knowledge": [
+    "Locarno düzenlemeleri: 1925’te Avrupa devletleri arasında imzalanan bir dizi diplomatik antlaşma.",
+    "Örgüte üyelik: bir devletin uluslararası bir örgüte katılması; antlaşma imzalamaktan farklı bir işlemdir."
+   ],
+   "strategy": "İki gelişmenin hem tarihini hem türünü karşılaştır; doğru ayrım ikisini birlikte korumalı.",
+   "steps": [
+    "1925: Locarno düzenlemeleri, yani diplomatik antlaşmalar.",
+    "1926: Almanya’nın Milletler Cemiyeti’ne katılması, yani üyelik işlemi.",
+    "Ayrım: antlaşma ile örgüte üyelik farklı işlemlerdir."
+   ],
+   "optionReasons": [
+    "İki ayrı yıl verilmiş: 1925 ve 1926; aynı gün değildir.",
+    "Üyelik bir örgüte katılmadır; işgal askerî bir eylemdir.",
+    "1926 > 1925; 1926 sonra gelir, sıra tersine çevrilmiş.",
+    "Doğru: Locarno antlaşmalar dizisidir, Cemiyete katılma ise üyelik işlemidir.",
+    "Polonya’nın işgali 1939’dadır; 1925 ve 1926 gelişmeleriyle ilgisi yok."
+   ],
+   "commonError": "Art arda gelen iki gelişmeyi aynı tür işlem sanmak.",
+   "check": "Yılları çıkar: 1926 − 1925 = 1. Fark pozitif olduğuna göre üyelik antlaşmadan sonradır ve iki ayrı işlemdir."
+  }
+ },
+ {
+  "id": "f12h-kuresel-savaslar-arasinda-turkiye-dunya-10",
+  "h": "0a6bbb4a2c5ca4",
+  "guidance": {
+   "knowledge": [
+    "Revizyonizm: mevcut antlaşmaları ve sınırları kendi lehine değiştirmeyi amaçlayan dış politika.",
+    "Statüko: var olan durum. Statükoculuk mevcut düzeni korumayı amaçlar."
+   ],
+   "strategy": "Metindeki iki tutumu ayır: değiştirmek isteyenler ve korumak isteyenler. Soru ilk tutumu istiyor.",
+   "steps": [
+    "İlk tutum: antlaşma ve sınırların kendi lehine değiştirilmesini savunmak.",
+    "İkinci tutum: mevcut düzeni korumak; bu statükoculuktur.",
+    "İlk tutumun adı revizyonist politikadır."
+   ],
+   "optionReasons": [
+    "İkinci tutumun adıdır; soru ilk tutumu, yani değişiklik isteyenleri soruyor.",
+    "Okul denetimi iç politika konusudur; uluslararası düzenle ilgili değildir.",
+    "Laboratuvar ölçümü bilimsel bir işlemdir; dış politika kavramı değildir.",
+    "İklim göçü coğrafi bir olgudur; antlaşma ve sınır tartışmasıyla ilgisi yok.",
+    "Doğru: düzeni kendi lehine değiştirmek isteyen tutum revizyonizmdir."
+   ],
+   "commonError": "Revizyonizm ile statükoculuğu karıştırmak.",
+   "check": "Sözcüğe bak: “revizyon” gözden geçirip değiştirme demektir; bu da ilk tutumun değişiklik isteğiyle örtüşür."
+  }
+ },
+ {
+  "id": "f12h-ikinci-dunya-savasi-sonrasi-01",
+  "h": "125e9f20223ffc",
+  "guidance": {
+   "knowledge": [
+    "Yakın neden: bir savaşı doğrudan başlatan son olay.",
+    "Uzak neden: savaşa zemin hazırlayan uzun süreli ekonomik ve siyasal gelişmeler."
+   ],
+   "strategy": "Soru “yakın gelişme” istiyor; metindeki tarihleri kullanarak savaş ilanından hemen önceki olayı bul.",
+   "steps": [
+    "1 Eylül 1939: Almanya Polonya’yı işgal ediyor.",
+    "3 Eylül: İngiltere ve Fransa Almanya’ya savaş ilan ediyor.",
+    "Savaşı başlatan yakın gelişme Polonya’nın işgalidir."
+   ],
+   "optionReasons": [
+    "Doğru: savaş ilanları Polonya’nın işgalinin hemen ardından geliyor.",
+    "San Francisco Konferansı 1945’te savaşın sonunda yapılmıştır.",
+    "1934 kadın hakları Türkiye’nin iç gelişmesidir; savaş başlangıcıyla ilgisi yok.",
+    "1946 Demokrat Parti’nin kuruluşu savaştan sonradır.",
+    "1923 İzmir İktisat Kongresi Türkiye’nin ekonomi kongresidir; savaştan on altı yıl öncedir."
+   ],
+   "commonError": "Yakın neden ile uzak nedeni ya da sonradan olan olayları karıştırmak.",
+   "check": "Tarih sınaması: savaş ilanından önce olan ve Avrupa’da olan tek seçenek 1 Eylül 1939 işgali; ötekiler ya başka ülkede ya başka yılda."
+  }
+ },
+ {
+  "id": "f12h-ikinci-dunya-savasi-sonrasi-02",
+  "h": "111933aab9b4da",
+  "guidance": {
+   "knowledge": [
+    "Savaşın genişlemesi: yeni ülkelerin savaşa katılması ve yeni cephelerin açılması.",
+    "SSCB: Sovyet Sosyalist Cumhuriyetler Birliği. Pearl Harbor: ABD’nin Pasifik’teki deniz üssü."
+   ],
+   "strategy": "İki olayın sonucunu ayrı ayrı bul (hangi güç savaşa girdi) ve ortak noktayı adlandır.",
+   "steps": [
+    "Haziran 1941: Almanya SSCB’ye saldırıyor; SSCB savaşın içine giriyor ve doğuda yeni cephe açılıyor.",
+    "Aralık 1941: Japonya Pearl Harbor’a saldırıyor; ABD savaşa giriyor.",
+    "Ortak sonuç: savaşın coğrafyası ve başlıca güçlerin katılımı genişlemiştir."
+   ],
+   "optionReasons": [
+    "Savaş 1945’e kadar sürdü; 1941 saldırıları barış değil genişleme getirdi.",
+    "Doğru: iki saldırı da yeni büyük güçleri ve cepheleri savaşa kattı.",
+    "Metin ABD’nin Aralık 1941’de savaşa girdiğini söylüyor; 1939’dan önce değil.",
+    "Saldırıları farklı ülkeler (Almanya ve Japonya) farklı aylarda yapmıştır.",
+    "Polonya işgali 1939’dadır; sonraki olaylar onu yeniden tarihlemez."
+   ],
+   "commonError": "Farklı aktörlerin farklı saldırılarını tek olay sanmak.",
+   "check": "Saldırganları ve hedefleri eşle: Almanya → SSCB, Japonya → ABD. İki yeni büyük güç savaşa katılıyor; genişleme doğrulanıyor."
+  }
+ },
+ {
+  "id": "f12h-ikinci-dunya-savasi-sonrasi-03",
+  "h": "173c3d1675366a",
+  "guidance": {
+   "knowledge": [
+    "Teslim olma: savaşan bir devletin silahlı direnişi bırakması.",
+    "Avrupa cephesi ve Asya-Pasifik cephesi: II. Dünya Savaşı’nın farklı zamanlarda sona eren iki ana bölgesi."
+   ],
+   "strategy": "İki teslim tarihini bölgeleriyle eşleştir ve sırala; şıkları bu sıraya göre sına.",
+   "steps": [
+    "Almanya Mayıs 1945’te teslim oluyor: Avrupa’da savaş bitiyor.",
+    "Asya-Pasifik’te çatışma sürüyor; Japonya Eylül 1945’te teslim oluyor.",
+    "Avrupa’daki bitiş ile savaşın küresel bitişi aynı tarih değildir."
+   ],
+   "optionReasons": [
+    "Savaş 1945’te bitmiştir; 1939’dan önce bitmesi başlangıcıyla da çelişir.",
+    "Mayıs Eylül’den önce gelir; Almanya önce teslim olmuştur.",
+    "Doğru: Avrupa’da Mayıs, küresel olarak Eylül 1945’te bitiş vardır.",
+    "Mayıs ve Eylül farklı aylardır.",
+    "Metin Almanya’nın Mayıs 1945’te teslim olduğunu açıkça söylüyor."
+   ],
+   "commonError": "Almanya’nın teslimiyle II. Dünya Savaşı’nın her yerde bittiğini sanmak.",
+   "check": "Ay sırasına bak: Mayıs beşinci, Eylül dokuzuncu ay. Arada dört ay boyunca Asya-Pasifik’te savaş sürmüştür."
+  }
+ },
+ {
+  "id": "f12h-ikinci-dunya-savasi-sonrasi-04",
+  "h": "0d835b395fd6e2",
+  "guidance": {
+   "knowledge": [
+    "Şart: bir uluslararası örgütün kuruluş belgesi.",
+    "Birleşmiş Milletler: 1945’te San Francisco Konferansı’nda hazırlanan Şart ile kurulan uluslararası barış örgütü."
+   ],
+   "strategy": "Metindeki ipuçlarını (1945, San Francisco, Şart, uluslararası barış örgütü) seçeneklerin yılı ve türüyle karşılaştır.",
+   "steps": [
+    "Şart 1945’te San Francisco Konferansı’nda hazırlanıyor.",
+    "24 Ekim’de yürürlüğe giriyor ve yeni bir uluslararası barış örgütü kuruluyor.",
+    "Bu örgüt Birleşmiş Milletler’dir."
+   ],
+   "optionReasons": [
+    "Milletler Cemiyeti 1920’de kurulmuştur; 1945’teki yeni örgüt değildir.",
+    "Balkan Antantı 1934 bölgesel birliğidir; uluslararası barış örgütü değildir.",
+    "Temsil Heyeti Millî Mücadele’nin yürütme kuruludur.",
+    "Doğru: 1945 San Francisco Şartı ile kurulan örgüt Birleşmiş Milletler’dir.",
+    "Serbest Cumhuriyet Fırkası 1930’da kurulan bir siyasi partidir."
+   ],
+   "commonError": "Barış amacını paylaşan Milletler Cemiyeti ile Birleşmiş Milletler’i karıştırmak.",
+   "check": "Metindeki “yeni” sözcüğü örgütün daha önce var olmadığını söylüyor; 1920’den beri var olan Milletler Cemiyeti bu yüzden düşer."
+  }
+ },
+ {
+  "id": "f12h-ikinci-dunya-savasi-sonrasi-05",
+  "h": "1a85c44f7cb313",
+  "guidance": {
+   "knowledge": [
+    "Genel Kurul: BM’de bütün üye devletlerin temsil edildiği organ.",
+    "Güvenlik Konseyi ve veto: Konseyin beş daimi üyesinin bir kararı tek başına engelleme yetkisi."
+   ],
+   "strategy": "Kök “yanlış” olanı istiyor; her çıkarımı metindeki iki bilgiyle (herkes Genel Kurulda, veto yalnız beş daimi üyede) karşılaştır.",
+   "steps": [
+    "Bütün üyeler Genel Kurulda temsil ediliyor.",
+    "Veto yetkisi yalnız Güvenlik Konseyi’nin beş daimi üyesinde.",
+    "“Bütün üyeler bütün organlarda aynı veto yetkisine sahiptir” çıkarımı yanlıştır."
+   ],
+   "optionReasons": [
+    "Veriyle uyumlu: metin iki organı ayrı ayrı anlatıyor.",
+    "Veriyle uyumlu: veto yalnız daimi üyelere tanınmış.",
+    "Veriyle uyumlu: temsil herkese, veto beş üyeye ait; ikisi farklı kavramdır.",
+    "Veriyle uyumlu: veto Güvenlik Konseyi’ndeki karar usulünün parçasıdır.",
+    "Doğru: veto beş daimi üyeye özgüdür; bütün üyelere yaymak metinle çelişir."
+   ],
+   "commonError": "Genel Kuruldaki eşit temsili Güvenlik Konseyi’ndeki veto yetkisiyle karıştırmak.",
+   "check": "Sayıları karşılaştır: veto yetkisi olan üye sayısı beş, Genel Kuruldaki üye sayısı çok daha fazla; “bütün üyeler” iddiası tutmaz."
+  }
+ },
+ {
+  "id": "f12h-ikinci-dunya-savasi-sonrasi-06",
+  "h": "0d656d1c96cab5",
+  "guidance": {
+   "knowledge": [
+    "Diplomatik görüşme: devletlerin temsilcileri arasında yapılan resmî konuşma.",
+    "Fiilî muharebe: askerlerin cephede gerçekten savaşması; görüşmeden ya da talepten farklıdır."
+   ],
+   "strategy": "Kök “çıkarılamaz” olanı istiyor; görüşme bilgisinden doğrudan çıkanları ele, bilginin kapsamını aşanı seç.",
+   "steps": [
+    "1943 Adana ve Kahire’de görüşmeler yapılıyor; Türkiye’den savaşa katılması isteniyor.",
+    "Türkiye askerî hazırlık ihtiyacını öne sürüyor.",
+    "Bu bilgiden Türkiye’nin cephelerde fiilî muharebeye girdiği çıkarılamaz."
+   ],
+   "optionReasons": [
+    "Doğru: görüşme ve talep fiilî savaşa girildiğini kanıtlamaz; Türkiye fiilî muharebelerden uzak kaldı.",
+    "Veriyle uyumlu: savaşa katılma talepleri açıkça var.",
+    "Veriyle uyumlu: Adana ve Kahire görüşmeleri yapılmıştır.",
+    "Veriyle uyumlu: Türkiye askerî hazırlık ihtiyacını öne sürmüştür.",
+    "Veriyle uyumlu: görüşmeye katılmak ile asker göndermek farklı eylemlerdir."
+   ],
+   "commonError": "Savaşa katılma talebiyle karşılaşmayı savaşa katılmak sanmak.",
+   "check": "Türkiye’nin cevabı hazırlık ihtiyacını öne sürmek; hazırlık isteyen bir ülke o gün cephede savaşıyor olamaz."
+  }
+ },
+ {
+  "id": "f12h-ikinci-dunya-savasi-sonrasi-07",
+  "h": "18891a341cf500",
+  "guidance": {
+   "knowledge": [
+    "Savaş ilanı: bir devletin başka bir devletle savaş hâlinde olduğunu resmen bildirmesi; hukuki ve siyasi bir işlemdir.",
+    "Fiilî cephe savaşı: askerlerin gerçekten çatışmaya girmesi; savaş ilanından ayrı bir eylemdir."
+   ],
+   "strategy": "İki bilgiyi (savaş ilanı var, fiilî muharebe yok) birlikte koruyan yorumu ara; birini silen yorumları ele.",
+   "steps": [
+    "23 Şubat 1945’te Türkiye Almanya ve Japonya’ya savaş ilan ediyor: hukuki-siyasi ilan.",
+    "Fiilî muharebelere katılmıyor: cephe savaşı yok.",
+    "İki bilgiyi koruyan yorum: ilan vardır, fiilî cephe savaşı farklı bir eylemdir."
+   ],
+   "optionReasons": [
+    "Birinci bilgiyi siler; metin savaş ilanını açıkça veriyor.",
+    "Doğru: savaş ilanı hukuki bir işlemdir; cepheye girmek ayrı bir eylemdir.",
+    "İkinci bilgiyi siler; metin fiilî muharebeye katılmadığını söylüyor.",
+    "Savaş ilanı tam da bir diplomatik işlemdir; çatışma olmaması diplomasinin yokluğu demek değildir.",
+    "Polonya’yı 1939’da işgal eden Almanya’dır; Türkiye ile ilgisi yok."
+   ],
+   "commonError": "Savaş ilanını otomatik olarak cephede savaşmak sanmak.",
+   "check": "Seçtiğin yorumda iki bilgi de geçiyor mu? “İlan vardır” birinci, “fiilî cephe savaşı farklı” ikinci bilgiyi karşılıyor."
+  }
+ },
+ {
+  "id": "f12h-ikinci-dunya-savasi-sonrasi-08",
+  "h": "0c9eb5bb559e9c",
+  "guidance": {
+   "knowledge": [
+    "Seferberlik: savaş için insan ve kaynakların toplanması.",
+    "Karne uygulaması: kıt olan temel malların (burada ekmeğin) kişi başına sınırlı miktarda dağıtılması."
+   ],
+   "strategy": "Metindeki dört bilginin ortak noktasını bul ve Türkiye’nin fiilen savaşmadığı bilgisiyle birleştir.",
+   "steps": [
+    "Savaş yıllarında seferberlik, ithalat güçlüğü ve mal darlığı yaşanıyor.",
+    "1942’de ekmek karnesi uygulanıyor: temel ihtiyaç bile sınırlı dağıtılıyor.",
+    "Sonuç: fiilî muharebeye katılmadan da savaşın ekonomik etkileri yaşanmıştır."
+   ],
+   "optionReasons": [
+    "Mal darlığı ve karne kaynak sorununun açık göstergesidir.",
+    "Metinde gelir artışı yok; mal darlığı tersini düşündürür.",
+    "Doğru: Türkiye savaşmadığı hâlde seferberlik, darlık ve karne yaşamıştır.",
+    "Karne ekmeğin sınırlı dağıtılmasıdır; alfabe ile ilgisi yok.",
+    "Ekmek karnesi bir iç ekonomik önlemdir; uluslararası antlaşma değildir."
+   ],
+   "commonError": "Savaşa girmeyen bir ülkenin savaştan hiç etkilenmediğini sanmak.",
+   "check": "Ekmek karnesinin nedenini sor: ekmek yeterli olsaydı karneye gerek kalmazdı. Bu, darlığın varlığını doğrular."
+  }
+ },
+ {
+  "id": "f12h-ikinci-dunya-savasi-sonrasi-09",
+  "h": "18d484ae5f5ac1",
+  "guidance": {
+   "knowledge": [
+    "Varlık Vergisi: 1942’de servet üzerinden gelir sağlamak amacıyla konulan olağanüstü vergi.",
+    "İlan edilen amaç ve uygulama sonucu: bir politikanın neden konulduğu ile uygulamada ne sonuç doğurduğu ayrı değerlendirilir."
+   ],
+   "strategy": "Metindeki iki bilgiyi (amaç ve uygulamadaki eşitsizlik) birlikte koruyan değerlendirmeyi seç.",
+   "steps": [
+    "Verginin amacı servet üzerinden gelir sağlamak.",
+    "Uygulamada eşitsizlik, ağır yük ve çalışma yükümlülüğü doğuyor.",
+    "Uygun değerlendirme: ilan edilen amaç ile uygulamadaki haksızlıklar ayrı incelenmelidir."
+   ],
+   "optionReasons": [
+    "Amacın varlığı haksızlıkları silmez; metin eşitsizliği açıkça belirtiyor.",
+    "Metin eşitsizlikten söz ediyor; herkesin aynı yükü taşıdığı bununla çelişir.",
+    "Varlık Vergisi bir iç vergi uygulamasıdır; uluslararası sözleşme değildir.",
+    "Doğru: amaç ile uygulamadaki eşitsizlik ayrı ayrı incelenmelidir.",
+    "Çalışma yükümlülüğü vergiyi ödeyemeyenlere yönelik bir yaptırımdır; eğitim kursu değildir."
+   ],
+   "commonError": "Bir politikanın ilan edilen amacına bakıp uygulamadaki sonuçlarını görmezden gelmek.",
+   "check": "Metnin iki yarısını ayır: “amacı olduğu” ve “eşitsizlik doğurduğu”. Doğru değerlendirme ikisini de içermeli."
+  }
+ },
+ {
+  "id": "f12h-ikinci-dunya-savasi-sonrasi-10",
+  "h": "1e5f667e7d2bce",
+  "guidance": {
+   "knowledge": [
+    "Muhalefet partisi: iktidardaki partiye karşı kurulan ve onu denetleyen parti.",
+    "Çok partili hayat: birden fazla partinin seçimlere katıldığı siyasal düzen."
+   ],
+   "strategy": "Kök “uyuşmaz” olanı istiyor; metindeki önceki muhalefet denemeleri bilgisini kullanarak “ilk” iddiasını sına.",
+   "steps": [
+    "1945 Millî Kalkınma Partisi, 1946 Demokrat Parti kuruluyor.",
+    "Metin 1920’lerde de muhalefet partisi denemeleri olduğunu söylüyor.",
+    "Bu yüzden “Demokrat Parti ilk muhalefet partisidir” iddiası verilerle uyuşmaz."
+   ],
+   "optionReasons": [
+    "Veriyle uyumlu: 1946 > 1945.",
+    "Veriyle uyumlu: 1920’lerdeki denemeler 1946’dan öncedir.",
+    "Veriyle uyumlu: kuruluşlar 1920’ler, 1945 ve 1946 gibi farklı dönemlerde.",
+    "Verilerle çelişmiyor: Demokrat Parti’nin önemi “ilk” olmasına bağlı değildir.",
+    "Doğru: 1920’lerde ve 1945’te önceki partiler olduğu için Demokrat Parti ilk değildir."
+   ],
+   "commonError": "Önemli olmayı ilk olmakla karıştırmak.",
+   "check": "Metinde Demokrat Parti’den önce kurulan en az iki örnek var: 1920’ler denemeleri ve 1945 partisi. Tek bir önceki örnek bile “ilk” iddiasını çürütür."
+  }
+ }
+]

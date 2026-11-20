@@ -206,7 +206,7 @@ export function Mistakes({
                         {l(question.options[question.answer])}
                       </strong>
                     </p>
-                    <p>{l(question.explanation)}</p>
+                    <p>{typeset(l(question.explanation))}</p>
                   </details>
                   <MistakeWarning storageKey={mistakeKey(session.id, response.questionId)} />
                   <MistakeRepair
