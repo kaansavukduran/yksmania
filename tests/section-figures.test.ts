@@ -35,11 +35,12 @@ describe("section figures", () => {
               const frame = def.draw(value, step);
               expect(frame.els.length).toBeGreaterThan(0);
               const text = JSON.stringify(frame);
-              expect(text).not.toMatch(/NaN|Infinity|null/);
+              // Gerçek NaN/Infinity JSON’da null olur; metindeki NaNO₃ gibi formüller yanlış alarm vermesin.
+              expect(text).not.toMatch(/\bNaN\b|Infinity|null/);
             }
           const html = renderToStaticMarkup(createElement(SectionFigureView, { def, title }));
           expect(html).toContain('role="img"');
-          expect(html).not.toMatch(/NaN|Infinity/);
+          expect(html).not.toMatch(/\bNaN\b|Infinity/);
         });
       }
     });

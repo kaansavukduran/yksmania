@@ -42,6 +42,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "asit-baz-tuz-ozellikleri",
   "asit-baz-metaller",
   "hayatimizda-asit-baz",
+  "tepkimeler-denklemler",
   "din-felsefesi",
   "ahlak-felsefesi",
   "radyoaktivite",

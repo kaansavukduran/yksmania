@@ -1838,6 +1838,19 @@ export const questionTactics: QuestionTactic[] = [
       "Malzeme seçimi asit kuvvetinden ayrıdır (HF zayıf ama camı aşındırır). pH toplam asit miktarı değildir; birlikte kullanmak nötrlemek demek değildir.",
     ],
   },
+  {
+    id: "denklestirme-envanter",
+    guides: ["tepkimeler-denklemler"],
+    match: /denkleştir|katsayı|denklem|eksik ürün|X maddesi|net iyon|seyirci/i,
+    title: "Denkleştirmede atom envanteri: tek yerde geçen element önce, O ve H en son; yükü ayrıca say",
+    steps: [
+      "Elementleri satır, sol/sağı sütun yap. Katsayı tüm formülü çarpar (3Ca(OH)₂: 3 Ca, 6 O, 6 H); alt indis kimliktir, değiştirilmez (H₂O ≠ H₂O₂).",
+      "Tek bileşikte geçen elementten başla, iki yerde geçen O’yu en sona bırak: C₂H₆ → 2CO₂, 3H₂O, 7/2 O₂ → ×2: 2, 7, 4, 6.",
+      "Eksik ürün: bilinen türleri dengele, kalan envanter X’tir (2017 LYS2 Kimya 5: 2HNO₃ + Na₂CO₃ → H₂O + X + 2NaNO₃; C 1, O 2 kalır → X = CO₂, E).",
+      "İyonlu denklemde yük de korunur: Ag⁺ + Cl⁻ → AgCl(k), +1 − 1 = 0; seyirci iyonlar sadeleşir, katı/su/gaz iyonlarına ayrılmaz.",
+      "Atom ve kütle korunur, mol sayısı değişebilir (2H₂ + O₂ → 2H₂O: 3 → 2 mol). Son adım: tüm katsayıları ortak bölenle sadeleştir (4, 2, 4 → 2, 1, 2).",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

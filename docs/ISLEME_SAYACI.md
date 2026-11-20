@@ -11,8 +11,8 @@ Her geliştirme turunda güncellenir. Sayılar yalnız gerçekten yapılmış i�
 | Kayıtlı toplam PDF (kanonik envanter, 17 Kasım taraması) | 8.981 |
 | Kanonik defterde öğretim aktarımı **tam** | 7 |
 | Kanonik defterde **kısmi** | 2 |
-| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 108 |
-| Okunduğu doğrulanan PDF toplamı (bu dal) | 108 / 8.981 (%1,20) |
+| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 109 |
+| Okunduğu doğrulanan PDF toplamı (bu dal) | 109 / 8.981 (%1,21) |
 
 Arşivdeki PDF'lerin büyük kısmı aynı konunun farklı biçimleridir (TYT konu özeti, “Dersler Cepte” sunumu, etkinlik, okuma metni, deneme). Bu yüzden PDF yüzdesi konu kapsamını ölçmez; konu kapsamı aşağıdaki rehber tablosundadır.
 
@@ -26,20 +26,20 @@ Klasördeki numaralı kopya kâğıtları ders ders sayıldı (517 kopya kâğı
 | TYT Matematik | 38 | 5 | %13,2 |
 | TYT Geometri | 32 | 1 | %3,1 |
 | TYT Fizik | 24 | 7 | %29,2 |
-| TYT Kimya | 56 | 27 | %48,2 |
+| TYT Kimya | 56 | 28 | %50,0 |
 | TYT Biyoloji | 36 | 7 | %19,4 |
 | TYT Tarih | 24 | 4 | %16,7 |
 | TYT Coğrafya | 40 | 5 | %12,5 |
 | TYT Felsefe | 17 | 3 | %17,6 |
 | TYT Din Kültürü | 20 | 3 | %15,0 |
-| **TYT toplam** | **320** | **66** | **%20,6** |
+| **TYT toplam** | **320** | **67** | **%20,9** |
 | AYT Matematik | 17 | 2 | %11,8 |
 | AYT Geometri | 4 | 1 | %25,0 |
 | AYT Fizik | 46 | 7 | %15,2 |
 | AYT Kimya | 55 | 11 | %20,0 |
 | AYT Biyoloji | 75 | 11 | %14,7 |
 | **AYT toplam** | **197** | **32** | **%16,2** |
-| **Genel toplam** | **517** | **98** | **%19,0** |
+| **Genel toplam** | **517** | **99** | **%19,1** |
 
 Notlar: TYT Türkçe'de 028 numarası iki farklı konuda kullanılmış (33 dosya, 32 numara). TYT Kimya'da 031 aynı adla iki kez var (eski ve yeni sürüm; 55 farklı konu). TYT Matematik ve Geometri'de 000 numaralı genel özetler var. AYT klasöründeki 7 durum raporu “232 konu” diyor ama klasörlerde 197 AYT kopya kâğıdı bulunuyor; 35 konunun kopya kâğıdı Drive'da yok. Bu tablodaki sıfırlar, o derste kopya kâğıdından figür/taktik aktarılmadığını söyler; uygulamada o dersin anlatımı ve soruları yine vardır (ayrıntı aşağıdaki kapsam tablosunda).
 
@@ -153,6 +153,7 @@ Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen boz
 | 049 TYT Kimya – Asit, baz ve tuzlar: genel özellikler (kopya kâğıdı) | `asit-baz-tuz-ozellikleri` dört figürü: pH kaydırıcısıyla üç gösterge satırı (metil oranj, turnusol, fenolftalein geçiş bantları, renk adları; OpenStax aralıkları), tıklanabilir “formüldeki harf yetmez” panosu (N₂O₅, CO₂, NH₃, CaO, CH₃OH, CO), tıklanabilir kuvvet × derişim tanecik kabı, tıklanabilir tuz pH bölgesi (NaCl, Na₂CO₃, NaHCO₃, NH₄Cl); sınıf–kanıt taktiği | Kısmi |
 | 051 TYT Kimya – Asit ve bazların metallerle tepkimeleri (kopya kâğıdı) | `asit-baz-metaller` altı figürü: tıklanabilir metal × ortam tablosu (Ca, Cu, Au, Al; 2026 TYT Fen 14, cevap D), tıklanabilir yarı tepkime adımları (Mg → Mg²⁺ + 2e⁻, 2H⁺ → H₂), tıklanabilir mol/gram ekseni H₂ doğruları (Mg, Al), Zn kütlesi kaydırıcısıyla Cu–Zn alaşımı (%65), tıklanabilir asit türü → gaz panosu (NO₂, NO, SO₂, H₂), tıklanabilir sulu baz atom sayımı; sınıf–koşul taktiği | Kısmi |
 | 052 TYT Kimya – Hayatımızdaki asit ve bazlar (kopya kâğıdı) | `hayatimizda-asit-baz` dört figürü: tıklanabilir kireç döngüsü (CaCO₃ → CaO → Ca(OH)₂ → CaCO₃; 2023 TYT Fen 8, cevap E), saflık kaydırıcısıyla kireç + HCl → CO₂ ve HCl tüketimi, tıklanabilir soda/karbonat atom tablosu (NaHCO₃, Na₂CO₃, CaCO₃, NaOH), tıklanabilir günlük ad → formül panosu; ad–formül–tepkime taktiği | Kısmi |
+| 037 TYT Kimya – Kimyasal tepkimeler ve denklemler (kopya kâğıdı) | `tepkimeler-denklemler` beş figürü: adım kaydırıcısıyla 2017 LYS2 Kimya 5 eksik ürün envanteri (cevap E), adım kaydırıcısıyla etan yanması (C → H → O → ×2), tıklanabilir 2H₂O / H₂O₂ / 3Ca(OH)₂ tanecikleri, tıklanabilir net iyon yük terazisi (hatalı örnekle), tıklanabilir atom/kütle/molekül korunum çubukları; envanter taktiği | Kısmi |
 
 PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olarak etiketlenmez.
 
@@ -166,7 +167,7 @@ Bu tablo her turda uygulamanın kendi verisinden yeniden üretilir. “Resmî ko
 | TYT Matematik | 31 | 45 | 40 | 735 | 17 (%37,8) | 45 | 21 | 5 / 38 (%13,2) |
 | TYT Geometri | 16 | 19 | 19 | 217 | 19 (%100,0) | 174 | 15 | 1 / 32 (%3,1) |
 | TYT Fizik | 20 | 28 | 24 | 311 | 24 (%85,7) | 177 | 23 | 7 / 24 (%29,2) |
-| TYT Kimya | 17 | 57 | 55 | 535 | 30 (%52,6) | 133 | 30 | 27 / 56 (%48,2) |
+| TYT Kimya | 17 | 57 | 55 | 535 | 31 (%54,4) | 138 | 31 | 28 / 56 (%50,0) |
 | TYT Biyoloji | 18 | 45 | 36 | 515 | 12 (%26,7) | 37 | 14 | 7 / 36 (%19,4) |
 | TYT Tarih | 22 | 34 | 24 | 390 | 6 (%17,6) | 16 | 4 | 4 / 24 (%16,7) |
 | TYT Coğrafya | 21 | 40 | 40 | 400 | 8 (%20,0) | 17 | 5 | 5 / 40 (%12,5) |
@@ -177,9 +178,9 @@ Bu tablo her turda uygulamanın kendi verisinden yeniden üretilir. “Resmî ko
 | AYT Fizik | 32 | 47 | 46 | 541 | 11 (%23,4) | 26 | 15 | 7 / 46 (%15,2) |
 | AYT Kimya | 34 | 56 | 55 | 680 | 18 (%32,1) | 19 | 14 | 11 / 55 (%20,0) |
 | AYT Biyoloji | 29 | 76 | 75 | 907 | 16 (%21,1) | 39 | 12 | 11 / 75 (%14,7) |
-| **Toplam** | **341** | **540** | **505** | **6.465** | **189 (%35,0)** | **784** | **172** | **98 / 517 (%19,0)** |
+| **Toplam** | **341** | **540** | **505** | **6.465** | **190 (%35,2)** | **789** | **173** | **99 / 517 (%19,1)** |
 
-Okuma: anlatım ve soru bütün derslerde var (505 / 540 derste anlatım, 6.465 özgün soru); eksik olan en çok görsel/etkileşimli katman (figürlü ders %35) ve kopya kâğıtlarından aktarım (%19,0). AYT Matematik ve AYT Geometri'de resmî konu sayısı uygulama dersinden fazladır, çünkü bu derslerde birkaç resmî konu tek derste toplanmıştır.
+Okuma: anlatım ve soru bütün derslerde var (505 / 540 derste anlatım, 6.465 özgün soru); eksik olan en çok görsel/etkileşimli katman (figürlü ders %35) ve kopya kâğıtlarından aktarım (%19,1). AYT Matematik ve AYT Geometri'de resmî konu sayısı uygulama dersinden fazladır, çünkü bu derslerde birkaç resmî konu tek derste toplanmıştır.
 
 Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan konular):
 
@@ -210,7 +211,7 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | AYT Biyoloji | 75 | 4 |
 | **Toplam** | **371** | **82 (%22,1)** |
 
-Toplam bölüm figürü: 784 (810 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 131 (123 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
+Toplam bölüm figürü: 789 (815 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 132 (124 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
 
 TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 
@@ -265,6 +266,7 @@ TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 | 19 Kasım (44) | Biyoloji: güncel çevre sorunları 3 figür; 1 taktik | 1 | 81 / 371 |
 | 19 Kasım (45) | AYT Fizik: çembersel hareket, BHH izdüşümü, Lenz, Kmax–f, manyetik yarıçap (5 figür, birim sadeleştirmeli okumalar); 1 taktik; kupa sistemi | 0 | 81 / 371 |
 | 19 Kasım (46) | AYT Kimya: Boyle pistonu + P–V hiperbolü, denge bozulmasında etki anı (N₂ ekleme), kuvvetli asit–baz titrasyon eğrisi (mmol hesabı), Daniell pili (elektron/iyon yolu, 1,10 V), Cr/Cu orbital istisnaları (5 figür, birim okumalı) | 0 | 86 / 371 |
+| 20 Kasım (126) | Drive TYT Kimya 037 Kimyasal tepkimeler ve denklemler okundu: 2017 LYS2 Kimya 5 envanteri, etan yanması, katsayı–kimlik, yük terazisi, korunum çubukları (5 figür), 1 taktik | 0 | 139 / 371 |
 | 20 Kasım (125) | Drive TYT Kimya 052 Hayatımızdaki asit ve bazlar okundu: kireç döngüsü ve 2023 TYT Fen 8, kireç + HCl saflık, soda tablosu, günlük ad panosu (4 figür), 1 taktik | 0 | 138 / 371 |
 | 20 Kasım (124) | Drive TYT Kimya 051 Asit ve bazların metallerle tepkimeleri okundu: amfoter tablosu ve 2026 TYT Fen 14, yarı tepkimeler, mol/gram doğruları, alaşım, asit türü → gaz, sulu baz sayımı (6 figür), 1 taktik | 0 | 137 / 371 |
 | 20 Kasım (123) | Drive TYT Kimya 049 Asit, baz ve tuzlar genel özellikler okundu: gösterge aralıkları, formül ve suyla tepkime, kuvvet × derişim, tuz pH bölgesi (4 figür), 1 taktik | 0 | 136 / 371 |

@@ -104,6 +104,7 @@ import { chemistryFiguresNeutralization } from "./chemistryFiguresNeutralization
 import { chemistryFiguresAcidBasics } from "./chemistryFiguresAcidBasics";
 import { chemistryFiguresAcidMetals } from "./chemistryFiguresAcidMetals";
 import { chemistryFiguresDailyAcids } from "./chemistryFiguresDailyAcids";
+import { chemistryFiguresBalancing } from "./chemistryFiguresBalancing";
 import { chemistryFiguresAffinity } from "./chemistryFiguresAffinity";
 import { biologyFiguresSkin } from "./biologyFiguresSkin";
 import { geographyFiguresWater } from "./geographyFiguresWater";
@@ -223,6 +224,7 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   chemistryFiguresAcidBasics,
   chemistryFiguresAcidMetals,
   chemistryFiguresDailyAcids,
+  chemistryFiguresBalancing,
   biologyFiguresSkin,
   geographyFiguresWater,
   biologyFiguresAtp,
