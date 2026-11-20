@@ -1,3 +1,17 @@
+# YKSMania 0.25.0 — doğrulama adayı
+
+20 Kasım 2026, Türkiye saati. **Bu aday henüz yayımlanmadı.** Yerel kontroller (check, 236 dosya / 2.974 birim testi, derleme ve bu sürümün yeni ve etkilenen tarayıcı testleri) geçti; tam uzak CI/E2E dal üzerinde çalışır ve main yalnız yeşil sonuçla ilerler. Windows/Linux paketleri ve kişisel Android denemesi yeni sürüm koduyla (`versionCode 35`) hazırdır; gerçek cihaz kabulü ayrıca yapılır.
+
+Kilometre taşı kapsamı: **Temel İnşa (0. basamak)** 10 TYT dersinin hepsinde 25 ön ders, 57 figür, 51 çözümlü örnek, 81 özgün kontrol sorusu; yalnız ilk denemesi kaydedilen kontroller ve yeni 35. kupa “Temel İnşa”. Konu anlatımlarında sayfa sayfa ↔ tümünü gör ve yapışkan konum çubuğu. Bugün ekranında akıllı oturum (15/30/60 dk, etiketi gizli karma pratik) ve 5 dk kurtarma; F ile Zen odak modu. Hata merkezinde önkoşul köprüsü ve hafta sonu hata boss’u. Deneme sonuçlarında yorgunluk eğrisi ve +5 Net Pusulası. Konu sayısı tek kaynakta 505 (anlatım = plan). Kopya kâğıdı dalgası: TYT Kimya periyodik özellikler (21 figür, 4 taktik).
+
+Veri: durum şemasına isteğe bağlı `foundationAttempts` alanı eklendi; eski kayıt ve yedeklerde boş gelir, sahte kayıt reddedilir, ilerleme sıfırlaması temizler. Kayıtlı ilerleme, notlar (kopya kâğıdı anahtarları dahil), ayarlar, hedef tarihler ve özgün 3/7/21 tarihleri korunur. Okuma, süre, figür keşfi ve elle işaretleme hâlâ kanıt ya da XP üretmez.
+
+Kanonik PDF ölçüsü: bu dalda okunup eşlenen 94 / 8.981 (%1,05); kopya kâğıdı 84 / 517. Bu sayılar bütün MEB/ÖSYM arşivinin tamamlandığı anlamına gelmez.
+
+---
+
+## Aşağıdaki 0.24.0 kaydı kendi doğrulama adayına aittir
+
 # YKSMania 0.24.0 — doğrulama adayı
 
 18 Kasım 2026, Türkiye saati. **Bu aday henüz yayımlanmadı.** Yerel C2 kontrolleri tamamlandı; tam uzak CI/E2E ve gerçek yayın dosyalarının kabulü bekleniyor. Önceki 0.23 yayınının bilgileri aşağıda kendi tarihsel bölümünde korunur.

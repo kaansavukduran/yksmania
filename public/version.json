@@ -1,7 +1,7 @@
 {
-  "version": "0.24.0",
+  "version": "0.25.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Mutlak değer ve üslü sayılar; adım adım anlatım, 18 etkileşimli model, çözümlü örnekler ve ayrı kopya kağıtlarıyla genişletildi. Asıl OGM soruları kaynak şekilleriyle, öğretici ipuçları ve ayrı çözüm görselleriyle çalışılabilir. Geometri özetlerinde değiştirilebilir şekiller, tarih anlatımlarında doğrudan seçilen olaylar bulunur. Matrix yeni profillerin başlangıç temasıdır; kayıtlı farklı temalar, notlar, yarım çalışmalar ve özgün tekrar tarihleri korunur. Keşif, süre ve manuel onay öğrenme puanı üretmez. Kaynak arşivinin aktarımı sürmektedir."
+    "tr": "Temel İnşa (0. basamak): 10 TYT dersinin hepsinde 25 isteğe bağlı ön ders; sayfa sayfa okuma, dokunulabilir şekiller, adım adım çözümlü örnekler ve özgün kontrol soruları. Yalnız ilk denemedeki doğrular yeni Temel İnşa kupasına sayılır; plan ve tekrar takvimi etkilenmez. Konu anlatımlarında sayfa sayfa ↔ tümünü gör ve yapışkan konum çubuğu. Bugün ekranında akıllı oturum (15/30/60 dk karma pratik) ve 5 dk kurtarma; F ile Zen odak modu. Hata merkezinde önkoşul köprüsü ve hafta sonu hata boss’u; deneme sonuçlarında yorgunluk eğrisi ve +5 Net Pusulası. Konu sayısı tek kaynakta 505. Kayıtlı ilerleme, notlar, ayarlar ve özgün tekrar tarihleri korunur."
   }
 }
