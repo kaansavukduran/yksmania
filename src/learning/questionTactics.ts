@@ -1695,6 +1695,19 @@ export const questionTactics: QuestionTactic[] = [
       "Sınırlar: Hg₂²⁺ (cıva(I)) grup olarak kalır → Hg₂Cl₂; Fe₃O₄ tek tür iyonla açıklanmaz (1 Fe²⁺ + 2 Fe³⁺).",
     ],
   },
+  {
+    id: "karisim-faz-kapasite",
+    guides: ["karisim-sinif-cozunme"],
+    match: /karışım|çözelti|süspansiyon|emülsiyon|aerosol|kolloid|doymuş|doymamış|çözünürlük|çözünme|dipte|homojen|heterojen/i,
+    title: "Karışımda önce dağılan–ortam ve faz, hesapta önce kapasite; dipteki katıyı sıvıya katma",
+    steps: [
+      "Sınıfla: dağılan kısım hangi hâlde, ortam hangi hâlde, tanecik ne kadar büyük? Sis sıvı aerosol, kum–su süspansiyon, yağ–su emülsiyon; tekdüze görünüm çözeltinin tek kanıtı değil (kolloid, Tyndall).",
+      "Kapasite = S × su kütlesi / 100. Eklenen miktarı kapasiteyle karşılaştır: çözünen = min(eklenen, kapasite), fazlası ayrı katı.",
+      "Sıvı çözelti = su + çözünmüş kısım; kabın toplamı ayrı katıyı da içerir (100 g su + 40 g tuz, sınır 34 → sıvı 134 g, dip 6 g).",
+      "Doymuş olmak için dipte katı gerekmez; dipteki katı sıvının derişimini artırmaz (2020 TYT Fen 14: T_X > T_Y = T_Z → B).",
+      "Karıştırma ve ufaltma hızı değiştirir, aynı sıcaklıkta çözünürlüğü değiştirmez; sıcaklık etkisini veriden oku, gazlarda ısınma genellikle çözünürlüğü azaltır.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

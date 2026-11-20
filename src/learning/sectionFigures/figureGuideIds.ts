@@ -31,6 +31,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "elementlerin-siniflandirilmasi",
   "kimyasal-turler-lewis",
   "iyonik-bilesik-adlandirma",
+  "karisim-sinif-cozunme",
   "din-felsefesi",
   "ahlak-felsefesi",
   "radyoaktivite",
