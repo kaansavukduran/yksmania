@@ -244,6 +244,16 @@ const GLYPHS: Record<string, ReactNode> = {
       <path d="M7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4M12 14v3M8 20h8M9.5 17h5" {...S} />
     </>
   ),
+  // Shield joining the three TYT science branches: an atom orbit (physics,
+  // chemistry) around a lens at the top, and a sprouting leaf pair (biology).
+  "platin:tyt-fen": (
+    <>
+      <path d="M12 2.5 4.5 5.3v5.4c0 4.6 3 8.3 7.5 10.8 4.5-2.5 7.5-6.2 7.5-10.8V5.3z" {...S} />
+      <circle cx="12" cy="8.8" r="1.2" {...S} />
+      <ellipse cx="12" cy="8.8" rx="5.6" ry="2.3" transform="rotate(-18 12 8.8)" {...S} />
+      <path d="M12 19v-5.6M12 18.4c0-2-1-3.2-3-3.6 0 2 1 3.2 3 3.6zM12 16.4c0-2 1-3.2 3-3.6 0 2-1 3.2-3 3.6z" {...S} />
+    </>
+  ),
   "platin:ayt": (
     <>
       <path d="M7 4h10v5a5 5 0 0 1-10 0z" {...S} />

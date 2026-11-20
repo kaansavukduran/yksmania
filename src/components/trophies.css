@@ -105,3 +105,18 @@
 @media (prefers-reduced-motion: reduce) {
   .trophy-toast { animation: none; }
 }
+/* Showcase total: opened trophies out of all trophies. */
+.trophy-total { display: grid; gap: 0.3rem; min-width: 0; }
+.trophy-total-row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.25rem 0.75rem; font-size: 0.9rem; }
+.trophy-total-count { font-weight: 700; font-variant-numeric: tabular-nums; color: var(--text); }
+.trophy-total-bar { height: 0.7rem; border: 1px solid var(--border); }
+.trophy-total-bar span { background: var(--accent); }
+/* Aion stands on the toast's top edge. The sprite keeps its own foot anchor;
+   only the box is placed, so the character's baseline is never shifted. */
+.trophy-toast-aion {
+  position: absolute;
+  right: 3.2rem;
+  bottom: calc(100% - 0.3rem);
+  width: 72px;
+  pointer-events: none;
+}

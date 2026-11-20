@@ -7,12 +7,15 @@ import { questionStars } from "../domain/exams";
 import {
   evaluateTrophies,
   nearestTrophies,
+  newlyUnlocked,
+  trophyTotals,
   TIER_NAME,
   type TrophyCategory,
   type TrophyState,
 } from "../domain/achievements";
 import "./trophies.css";
 import { playCue } from "../domain/soundEngine";
+import { Aion } from "./Aion";
 
 /*
  * Trophy showcase and unlock toasts. Trophies are recomputed from saved
@@ -91,15 +94,31 @@ export function TrophyShowcase() {
   const [filter, setFilter] = useState<TrophyCategory | "hepsi">("hepsi");
   const shown = trophies.filter((t) => filter === "hepsi" || t.category === filter);
   const near = nearestTrophies(trophies);
-  const earned = trophies.filter((t) => t.tier > 0).length;
-  const gold = trophies.filter((t) => t.tier === 3).length;
+  const { earned, total, gold, percent } = trophyTotals(trophies);
   return (
     <section className="panel trophy-showcase" aria-labelledby="trophy-heading">
       <div className="trophy-head">
         <h2 id="trophy-heading">Kupa vitrini</h2>
-        <span className="quiet-chip">
-          {earned} / {trophies.length} açıldı · {gold} altın
-        </span>
+        <span className="quiet-chip">{gold} altın</span>
+      </div>
+      <div className="trophy-total">
+        <div className="trophy-total-row">
+          <span id="trophy-total-label">Açılan kupalar</span>
+          <span className="trophy-total-count">
+            {earned} / {total}
+          </span>
+        </div>
+        <div
+          className="trophy-progress trophy-total-bar"
+          role="progressbar"
+          aria-labelledby="trophy-total-label"
+          aria-valuemin={0}
+          aria-valuemax={total}
+          aria-valuenow={earned}
+          aria-valuetext={`${total} kupadan ${earned} kupa açıldı`}
+        >
+          <span style={{ width: `${percent}%` }} />
+        </div>
       </div>
       <p className="small muted">
         Kupalar yalnız gerçek kanıtla açılır: yardımsız doğru çözüm, tamamlanan 3/7/21 tekrarları, yanlışın sonradan yardımsız onarılması ve yardımsız denemeler. Bir konuda ustalaşmak: o konunun en az 5 soruluk bir oturumunda %80 yardımsız doğru. Okuma, süre, görsel keşif ve elle işaretleme kupa vermez.
@@ -164,7 +183,7 @@ export function TrophyToasts() {
         return;
       }
     }
-    const fresh = trophies.filter((t) => t.tier > (seen[t.id] ?? 0));
+    const fresh = newlyUnlocked(trophies, seen);
     if (!fresh.length) return;
     writeSeen({ ...seen, ...current });
     if (!state.settings.gamification) return;
@@ -183,6 +202,12 @@ export function TrophyToasts() {
   if (!current) return null;
   return (
     <div className="trophy-toast" role="status" aria-live="polite">
+      {/* Aion stands on the toast and plays its existing "happy" clip once per
+          newly announced trophy (remounted by key). Motion off or reduced
+          motion leaves the idle frame static. Decorative: the text speaks. */}
+      <span className="trophy-toast-aion" aria-hidden="true" inert key={`${current.id}:${current.tier}`}>
+        <Aion celebrate size={72} />
+      </span>
       <Medal trophy={current} />
       <div>
         <span className="trophy-toast-kicker">Kupa açıldı · {current.platinum ? "Platin" : TIER_NAME[current.tier]}</span>

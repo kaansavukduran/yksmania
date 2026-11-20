@@ -80,13 +80,18 @@ for (const width of [1280, 320])
     await addSessions(page, [session("session:1:katli-oranlar", "2026-11-18", true)]);
     await page.goto("/#/world");
     const showcase = page.locator(".trophy-showcase");
-    await expect(showcase).toContainText("0 / 35 açıldı");
+    const total = showcase.getByRole("progressbar", { name: "Açılan kupalar" });
+    await expect(showcase.locator(".trophy-total-count")).toHaveText("0 / 36");
+    await expect(total).toHaveAttribute("aria-valuenow", "0");
+    await expect(total).toHaveAttribute("aria-valuemax", "36");
     await expect(showcase.locator(".trophy-card.is-earned")).toHaveCount(0);
     // The same ten answers without help: the chemistry badge and the perfect run open.
     await addSessions(page, [session("session:2:katli-oranlar", "2026-11-19", false)]);
     await page.reload();
     await expect(showcase.locator(".trophy-card", { hasText: "Mol Simyacısı" }).last()).toContainText("Bronz");
     await expect(showcase.locator(".trophy-card", { hasText: "Kusursuz Seri" }).last()).toContainText("Bronz");
+    await expect(total).toHaveAttribute("aria-valuenow", String(await showcase.locator(".trophy-grid").last().locator(".trophy-card.is-earned").count()));
+    await expect(showcase.locator(".trophy-total-count")).toHaveText(/^[1-9]\d* \/ 36$/);
     // Every card has its own emblem; the earned badge shows the bronze metal.
     await expect(showcase.locator(".trophy-card", { hasText: "Mol Simyacısı" }).last().locator("svg.emblem-bronze")).toHaveCount(1);
     // Ten distinct independent answers advance the star trophies by their estimated stars.

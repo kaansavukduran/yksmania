@@ -86,11 +86,13 @@ const BASE: TrophyDef[] = [
 const subjectTrophies = (group: "TYT" | "AYT") => SUBJECTS.filter((s) => s.group === group).map((s) => `ders:${s.id}`);
 const PLATINUM: TrophyDef[] = [
   { id: "platin:tyt", title: "TYT Platin", goal: "TYT'nin bütün ders rozetlerini altına çıkar", category: "platin", thresholds: [1, 1, 1], platinum: true },
+  { id: "platin:tyt-fen", title: "TYT Fen Platin", goal: "TYT Fizik, TYT Kimya ve TYT Biyoloji rozetlerini altına çıkar", category: "platin", thresholds: [1, 1, 1], platinum: true },
   { id: "platin:ayt", title: "AYT Sayısal Platin", goal: "AYT Sayısal'ın bütün ders rozetlerini altına çıkar", category: "platin", thresholds: [1, 1, 1], platinum: true },
   { id: "platin:efsane", title: "YKS Efsanesi", goal: "Gizli olmayan bütün kupaları altına çıkar", category: "platin", thresholds: [1, 1, 1], platinum: true },
 ];
 const PLATINUM_MEMBERS: Record<string, string[]> = {
   "platin:tyt": subjectTrophies("TYT"),
+  "platin:tyt-fen": ["tyt-fizik", "tyt-kimya", "tyt-biyoloji"].map((id) => `ders:${id}`),
   "platin:ayt": subjectTrophies("AYT"),
   "platin:efsane": BASE.filter((t) => !t.secret).map((t) => t.id),
 };
@@ -249,6 +251,23 @@ export function nearestTrophies(list: TrophyState[], count = 3): TrophyState[] {
     .sort((a, b) => b.ratio - a.ratio || a.t.title.localeCompare(b.t.title, "tr"))
     .slice(0, count)
     .map((x) => x.t);
+}
+
+/** Showcase totals: trophies opened (any tier, platinum included) out of all trophies. */
+export function trophyTotals(list: TrophyState[]): { earned: number; total: number; gold: number; percent: number } {
+  const earned = list.filter((t) => t.tier > 0).length;
+  const total = list.length;
+  return { earned, total, gold: list.filter((t) => t.tier === 3).length, percent: total ? Math.round((earned / total) * 100) : 0 };
+}
+
+/**
+ * Trophies whose tier rose above what this device already announced. A device
+ * with no record yet announces nothing, so an existing history never replays
+ * celebrations; a page reload sees the stored record and stays quiet too.
+ */
+export function newlyUnlocked(list: TrophyState[], announced: Record<string, number> | null): TrophyState[] {
+  if (!announced) return [];
+  return list.filter((t) => t.tier > (announced[t.id] ?? 0));
 }
 
 export const TIER_NAME: Record<Tier, string> = { 0: "Kilitli", 1: "Bronz", 2: "Gümüş", 3: "Altın" };
