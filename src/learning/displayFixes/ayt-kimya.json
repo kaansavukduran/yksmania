@@ -126,5 +126,177 @@
  {
   "from": "Toplam mol 5; A mol kesri 1/5'tir. Toplam P=5 atm olduğundan pA=(1/5)×5=1 atm. Aynı sonuç nART/V ile doğrudan da bulunur.",
   "to": "Toplam mol 5; A mol kesri 1/5'tir. Toplam P=5 atm olduğundan pA=(1/5)×5=1 atm. Aynı sonuç nA·RT/V ile doğrudan da bulunur."
+ },
+ {
+  "from": "Bir damıtma kulesinde alt bölüm sıcak, üst bölüm soğuktur. Verilen A, B, C fraksiyonlarının kaynama temsil değerleri 80,220,360 °C’dir. Üstten alta beklenen sıra hangisidir?",
+  "to": "Bir damıtma kulesinde alt bölüm sıcak, üst bölüm soğuktur. Verilen A, B, C fraksiyonlarının kaynama temsil değerleri 80, 220, 360 °C’dir. Üstten alta beklenen sıra hangisidir?"
+ },
+ {
+  "from": "A80 °C ile en uçucu fraksiyondur. B220 °C ara, C360 °C en yüksek değerdedir. Üstten alta A–B–C eğilimi bulunur. Bu fiziksel ayırma örneği gerçek fraksiyonların kaynama aralığı taşımasını basitleştirir.",
+  "to": "A 80 °C ile en uçucu fraksiyondur. B 220 °C ara, C 360 °C en yüksek değerdedir. Üstten alta A–B–C eğilimi bulunur. Bu fiziksel ayırma örneği gerçek fraksiyonların kaynama aralığı taşımasını basitleştirir."
+ },
+ {
+  "from": "Bir öğretim modelinde 30 MJ yararlı enerji için %40 verimli yakıcı kullanılıyor. Yakıtın alt ısıl değeri 50 MJ/kg ise gereken yakıt kaç kilogramdır?",
+  "to": "Bir sistemde 30 MJ yararlı enerji için %40 verimli yakıcı kullanılıyor. Yakıtın alt ısıl değeri 50 MJ/kg ise gereken yakıt kaç kilogramdır?"
+ },
+ {
+  "from": "A seçeneğinin yalnız işletme CO₂’si, B seçeneğinin ise üretim+taşıma+işletme+ömür sonu CO₂’si verilmiştir. Bu iki sayıdan doğrudan bütün yaşam döngüsü üstünlüğü çıkarılamamasının nedeni nedir?",
+  "to": "A seçeneğinin yalnız işletme CO₂’si, B seçeneğinin ise üretim + taşıma + işletme + ömür sonu CO₂’si verilmiştir. Bu iki sayıdan doğrudan bütün yaşam döngüsü üstünlüğü çıkarılamamasının nedeni nedir?"
+ },
+ {
+  "from": "Önlenen 40 kg; kalan 360 kg’dır. Yeniden kullanım 360×0,20=72 kg’dır. Atık adayı 360−72=288 kg bulunur. 40 kg önleme+72 kg yeniden kullanım+288 kg aday=400 kg’dır.",
+  "to": "Önlenen 40 kg; kalan 360 kg’dır. Yeniden kullanım 360×0,20=72 kg’dır. Atık adayı 360−72=288 kg bulunur. 40 kg önleme + 72 kg yeniden kullanım + 288 kg aday = 400 kg’dır."
+ },
+ {
+  "from": "Bir ince tabakanın kalınlığı 0,040μm’dir.1μm=1000 nm ise kalınlık kaç nm’dir?",
+  "to": "Bir ince tabakanın kalınlığı 0,040 μm’dir. 1 μm = 1000 nm ise kalınlık kaç nm’dir?"
+ },
+ {
+  "from": "1μm 1000 nm’ye eşittir. 0,040μm×1000=40 nm bulunur. 40 nm yaklaşık 1–100 nm öğretim aralığında bir kalınlıktır. 40 nm×10⁻³μm/nm=0,040μm ile geri dönüş kapanır.",
+  "to": "1 μm 1000 nm’ye eşittir. 0,040μm×1000=40 nm bulunur. 40 nm yaklaşık 1–100 nm aralığında bir kalınlıktır. 40 nm×10⁻³μm/nm=0,040μm ile geri dönüş kapanır."
+ },
+ {
+  "from": "CH₂=CH₂+H₂O→C₂H₅OH denklemi 1:1 oranını verir. 0,35 mol eten 0,35 mol etanol verir. m=0,35×46=16,1 g bulunur. Ürün kütlesi 9,8 g eten+6,3 g su toplamına eşittir.",
+  "to": "CH₂=CH₂+H₂O→C₂H₅OH denklemi 1:1 oranını verir. 0,35 mol eten 0,35 mol etanol verir. m=0,35×46=16,1 g bulunur. Ürün kütlesi 9,8 g eten + 6,3 g su toplamına eşittir."
+ },
+ {
+  "from": "Eten ve su katsayıları birdir; stoklar 0,70 ve 0,50 moldür. Su 0,50 mol dönüşümü sınırlar; etanol en çok 0,50 mol oluşur. Eten artığı 0,70−0,50=0,20 mol olur. 0,50 mol tüketilen eten+0,20 mol artan eten=0,70 mol başlangıç etenidir.",
+  "to": "Eten ve su katsayıları birdir; stoklar 0,70 ve 0,50 moldür. Su 0,50 mol dönüşümü sınırlar; etanol en çok 0,50 mol oluşur. Eten artığı 0,70−0,50=0,20 mol olur. 0,50 mol tüketilen eten + 0,20 mol artan eten = 0,70 mol başlangıç etenidir."
+ },
+ {
+  "from": "Propanoik asidin parçası CH₃CH₂C(=O)– olur. Etanolün C₂H₅ grubu –O–CH₂CH₃ tarafında yer alır. Ürün CH₃CH₂COOCH₂CH₃, etil propanoattır. Toplam C sayısı asit3+alkol2=ester5; su C içermez.",
+  "to": "Propanoik asidin parçası CH₃CH₂C(=O)– olur. Etanolün C₂H₅ grubu –O–CH₂CH₃ tarafında yer alır. Ürün CH₃CH₂COOCH₂CH₃, etil propanoattır. Toplam C sayısı asit 3 + alkol 2 = ester 5; su C içermez."
+ },
+ {
+  "from": "Stearik H36 ile zincirde çift bağ taşımaz. Oleik iki H eksik olduğundan bir C=C taşır. Linoleik dört H eksik olduğundan iki C=C taşır; sıra 0,1,2’dir. O₂ sayısı üçünde de aynıdır; değişen zincirin H ve C=C sayısıdır.",
+  "to": "Stearik H36 ile zincirde çift bağ taşımaz. Oleik iki H eksik olduğundan bir C=C taşır. Linoleik dört H eksik olduğundan iki C=C taşır; sıra 0, 1, 2’dir. O₂ sayısı üçünde de aynıdır; değişen zincirin H ve C=C sayısıdır."
+ },
+ {
+  "from": "Tek bağlı O’nun sağında CH₃ olduğundan alkil metildir. Asit tarafı CH₃CH₂CO– ile üç C’li propanoattır. Ad metil propanoattır. Asit3+alkol1=toplam4 C; iki ad parçası ayrı kökenleri gösterir.",
+  "to": "Tek bağlı O’nun sağında CH₃ olduğundan alkil metildir. Asit tarafı CH₃CH₂CO– ile üç C’li propanoattır. Ad metil propanoattır. Asit 3 + alkol 1 = toplam 4 C; iki ad parçası ayrı kökenleri gösterir."
+ },
+ {
+  "from": "Üç C yine üçlü kapalı halka kurar. Bir CH₃ yine yalnız bir halka C’sine bağlıdır. Komşuluklar aynı olduğundan aynı yapının farklı çizimidir. Her iki çizimde toplam 4C,8H ve tek halka bulunur.",
+  "to": "Üç C yine üçlü kapalı halka kurar. Bir CH₃ yine yalnız bir halka C’sine bağlıdır. Komşuluklar aynı olduğundan aynı yapının farklı çizimidir. Her iki çizimde toplam 4 C, 8 H ve tek halka bulunur."
+ },
+ {
+  "from": "C₄H₈ için siklobütan, metilsiklopropan,1-büten,2-büten ve 2-metilpropen listeleniyor. Cis/trans ayrı sayılmadan listede kaç farklı yapı vardır?",
+  "to": "C₄H₈ için siklobütan, metilsiklopropan, 1-büten, 2-büten ve 2-metilpropen listeleniyor. Cis/trans ayrı sayılmadan listede kaç farklı yapı vardır?"
+ },
+ {
+  "from": "İki ayrı halkalı bağlantı vardır:siklobütan, metilsiklopropan. Üç ayrı açık bağlantı vardır:1-büten,2-büten,2-metilpropen. Yapı toplamı 2 + 3=5’tir. Beş adın da formülü C₄H₈; hiçbirinin ters yazılışı listede ikinci kez bulunmuyor.",
+  "to": "İki ayrı halkalı bağlantı vardır: siklobütan, metilsiklopropan. Üç ayrı açık bağlantı vardır: 1-büten, 2-büten, 2-metilpropen. Yapı toplamı 2 + 3=5’tir. Beş adın da formülü C₄H₈; hiçbirinin ters yazılışı listede ikinci kez bulunmuyor."
+ },
+ {
+  "from": "Altı C için doymuş açık referans H14’tür. H12 iki eksiklik ve bir eşdeğer verir. Bu halka veya çift bağla sağlanabilir; kesin açık alken denemez. İki açık karşı örnek C₆H₁₂’yi sağlar:siklohekzan ve 1-heksen.",
+  "to": "Altı C için doymuş açık referans H14’tür. H12 iki eksiklik ve bir eşdeğer verir. Bu halka veya çift bağla sağlanabilir; kesin açık alken denemez. İki açık karşı örnek C₆H₁₂’yi sağlar: siklohekzan ve 1-heksen."
+ },
+ {
+  "from": "Çift bağı içeren kesintisiz en uzun yol üç C’dir; propen. Kalan CH₃ ikinci karbonda daldır. Doğru ad 2-metilpropen olur. Üç ana C+bir metil C=4; formül C₄H₈ kalır.",
+  "to": "Çift bağı içeren kesintisiz en uzun yol üç C’dir; propen. Kalan CH₃ ikinci karbonda daldır. Doğru ad 2-metilpropen olur. Üç ana C + bir metil C = 4; formül C₄H₈ kalır."
+ },
+ {
+  "from": "Su katılmasıyla CH₂=CHOH enolü düşünülür. H ve pi bağı konumu değişerek CH₃CHO oluşur. Son ürün etanaldir; C₂H₄O formülü korunur. Etanalde iki C/dört H/bir O; etin+bir su atom toplamıyla eşittir.",
+  "to": "Su katılmasıyla CH₂=CHOH enolü düşünülür. H ve pi bağı konumu değişerek CH₃CHO oluşur. Son ürün etanaldir; C₂H₄O formülü korunur. Etanalde iki C/dört H/bir O; etin + bir su atom toplamıyla eşittir."
+ },
+ {
+  "from": "Örnek saf ve denge koşulundadır. 20–25°C,41°C erime noktasının altındadır. Bu nedenle katı faz yorumu uygundur. Karışım veya aşırı soğuma koşulu verilmemiştir; kökteki saf denge varsayımını koru.",
+  "to": "Örnek saf ve denge koşulundadır. 20–25°C, 41°C erime noktasının altındadır. Bu nedenle katı faz yorumu uygundur. Karışım veya aşırı soğuma koşulu verilmemiştir; kökteki saf denge varsayımını koru."
+ },
+ {
+  "from": "Altı C için doymuş açık H sayısı 14. Gerçek H6 olduğundan eksik 8. 8/2=4 eşdeğer vardır. Bir halka+üç pi katkısı toplam 4’e karşılık gelir.",
+  "to": "Altı C için doymuş açık H sayısı 14. Gerçek H6 olduğundan eksik 8. 8/2=4 eşdeğer vardır. Bir halka + üç pi katkısı toplam 4’e karşılık gelir."
+ },
+ {
+  "from": "Etanolün OH’si karbonla kovalent bağlı molekül parçasıdır. Suya karışması NaOH gibi bol OH⁻ oluşumu anlamına gelmez. Bu yüzden yalnız OH yazımından kuvvetli baz sonucu çıkmaz. Türlerin formüllerini ve yüklerini yaz:CH₃CH₂OH nötr; OH⁻ ayrı iyon.",
+  "to": "Etanolün OH’si karbonla kovalent bağlı molekül parçasıdır. Suya karışması NaOH gibi bol OH⁻ oluşumu anlamına gelmez. Bu yüzden yalnız OH yazımından kuvvetli baz sonucu çıkmaz. Türlerin formüllerini ve yüklerini yaz: CH₃CH₂OH nötr; OH⁻ ayrı iyon."
+ },
+ {
+  "from": "Tek çizgiler metal/çözelti gibi faz sınırlarıdır. Çift çizgi iki yarı hücre arasında iyon iletişimini sağlayan bağlantıyı gösterir. Dış teldeki elektron yolu şemada ayrıca fiziksel düzenekle gösterilebilir.",
+  "to": "Tek çizgiler metal/çözelti gibi faz sınırlarıdır. Çift çizgi iki yarı hücre arasında iyon iletişimini sağlayan bağlantıyı gösterir. Dış teldeki elektron yolu ayrıca fiziksel düzenekle gösterilebilir."
+ },
+ {
+  "from": "Zn²⁺ derişimi azalır; Cu²⁺ değişmediğinden Q küçülür. E=E°−0,0296log Q olduğundan E yükselir. E° aynı 25°C başvurusudur; değişen E’dir.",
+  "to": "Zn²⁺ derişimi azalır; Cu²⁺ değişmediğinden Q küçülür. E=E°−0,0296 log Q olduğundan E yükselir. E° aynı 25°C başvurusudur; değişen E’dir."
+ },
+ {
+  "from": "E=0 V; çünkü Q=1 her zamanK’dır",
+  "to": "E=0 V; çünkü Q=1 her zaman K’dır"
+ },
+ {
+  "from": "İdeal Zn kurban anodunun üst kapasitesi 1930 C, bir öğretim örneğinde istenen elektron desteği 2500 C olarak veriliyor. Hangisi doğrudur?",
+  "to": "İdeal Zn kurban anodunun üst kapasitesi 1930 C, istenen elektron desteği 2500 C olarak veriliyor. Hangisi doğrudur?"
+ },
+ {
+  "from": "1,2,3",
+  "to": "1, 2, 3"
+ },
+ {
+  "from": "2,3,4",
+  "to": "2, 3, 4"
+ },
+ {
+  "from": "4,3,2",
+  "to": "4, 3, 2"
+ },
+ {
+  "from": "4,2,1",
+  "to": "4, 2, 1"
+ },
+ {
+  "from": "4,4,4",
+  "to": "4, 4, 4"
+ },
+ {
+  "from": "Farklı komşu sayıları 4,3,2 olur; bağ mertebesi toplamı üçünde de 4’tür. Karbonun olağan değerliği 4 bilgisiyle komşu sayısı aynı bilgi değildir.",
+  "to": "Farklı komşu sayıları 4, 3, 2 olur; bağ mertebesi toplamı üçünde de 4’tür. Karbonun olağan değerliği 4 bilgisiyle komşu sayısı aynı bilgi değildir."
+ },
+ {
+  "from": "6,12,6 alt indislerinin ortak bölenini kullan.",
+  "to": "6, 12, 6 alt indislerinin ortak bölenini kullan."
+ },
+ {
+  "from": "2,6,1 alt indislerinin ortak böleni 1 olduğu için.",
+  "to": "2, 6, 1 alt indislerinin ortak böleni 1 olduğu için."
+ },
+ {
+  "from": "0,2,1",
+  "to": "0, 2, 1"
+ },
+ {
+  "from": "0,1,2",
+  "to": "0, 1, 2"
+ },
+ {
+  "from": "2,1,0",
+  "to": "2, 1, 0"
+ },
+ {
+  "from": "Sıra 0,1,2’dir. Her C’nin saf p sayısı bu yapılarda yerel π sayısıyla uyumludur.",
+  "to": "Sıra 0, 1, 2’dir. Her C’nin saf p sayısı bu yapılarda yerel π sayısıyla uyumludur."
+ },
+ {
+  "from": "Ad 2-metilbütandır. Ana zincir 4+yan metil 1=5 C korunur.",
+  "to": "Ad 2-metilbütandır. Ana zincir 4 + yan metil 1 = 5 C korunur."
+ },
+ {
+  "from": "Ara tabloda HA ve A⁻ eşittir.",
+  "to": "Yarı eşdeğerlikte HA ve A⁻ eşittir."
+ },
+ {
+  "from": "Ani 2,2,2 M için Q=2/(2×2)=0,50. Yalnız bir eğriyi sıçratmak hacim etkisini yanlış temsil eder.",
+  "to": "Ani 2, 2, 2 M için Q=2/(2×2)=0,50. Yalnız bir eğriyi sıçratmak hacim etkisini yanlış temsil eder."
+ },
+ {
+  "from": "İdeal X⇌Y modelinde Δngaz=0 ve ileri dönüşüm endotermik. Aynı koşul aralığında sıcaklık artınca verilen K tablosu nasıl bir eğilimle uyumludur?",
+  "to": "İdeal X⇌Y modelinde Δngaz=0 ve ileri dönüşüm endotermik. Aynı koşul aralığında sıcaklık artınca K’deki değişim hangi eğilimle uyumludur?"
+ },
+ {
+  "from": "İdeal X⇌Y, Δngaz=0; ileri dönüşüm ekzotermik. T artışını K bakımından destekleyen tablo?",
+  "to": "İdeal X⇌Y, Δngaz=0; ileri dönüşüm ekzotermik. T artışını K bakımından destekleyen eğilim?"
+ },
+ {
+  "from": "O²⁻, F⁻, Na⁺, Mg²⁺ iyonlarının hepsi 10 elektrondur; Z değerleri 8,9,11,12. Nitel yarıçapı en küçük olan hangisidir?",
+  "to": "O²⁻, F⁻, Na⁺, Mg²⁺ iyonlarının hepsi 10 elektrondur; Z değerleri 8, 9, 11, 12. Nitel yarıçapı en küçük olan hangisidir?"
  }
 ]

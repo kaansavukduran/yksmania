@@ -3,6 +3,8 @@ import ayt_fizik from "./ayt-fizik.json" with { type: "json" };
 import ayt_kimya from "./ayt-kimya.json" with { type: "json" };
 import tyt_biyoloji from "./tyt-biyoloji.json" with { type: "json" };
 import tyt_cografya from "./tyt-cografya.json" with { type: "json" };
+import tyt_din from "./tyt-din.json" with { type: "json" };
+import tyt_felsefe from "./tyt-felsefe.json" with { type: "json" };
 import tyt_geometri from "./tyt-geometri.json" with { type: "json" };
 import tyt_kimya from "./tyt-kimya.json" with { type: "json" };
 import tyt_matematik from "./tyt-matematik.json" with { type: "json" };
@@ -19,7 +21,7 @@ import tyt_turkce from "./tyt-turkce.json" with { type: "json" };
  * this index is generated too (explicit imports, so it also loads outside Vite).
  */
 type Row = { from: string; to: string };
-const files: Row[][] = [ayt_biyoloji, ayt_fizik, ayt_kimya, tyt_biyoloji, tyt_cografya, tyt_geometri, tyt_kimya, tyt_matematik, tyt_tarih, tyt_turkce];
+const files: Row[][] = [ayt_biyoloji, ayt_fizik, ayt_kimya, tyt_biyoloji, tyt_cografya, tyt_din, tyt_felsefe, tyt_geometri, tyt_kimya, tyt_matematik, tyt_tarih, tyt_turkce];
 const repairs = new Map<string, string>();
 for (const rows of files) for (const row of rows) repairs.set(row.from, row.to);
 
