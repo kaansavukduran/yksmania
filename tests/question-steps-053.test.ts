@@ -36,6 +36,7 @@ describe("053 ipucu ve adım adım çözüm", () => {
     expect(out).not.toContain("Adım 3 / 6");
     expect(out).toContain("Sonraki adım");
     expect(out).toContain("Tüm adımları aç");
+    expect(out).toContain("Önceki adım");
     expect(out).not.toContain("Tam çözüm</h3>");
     expect(out).toContain("bağımsız doğru olarak sayılmaz");
   });
@@ -48,6 +49,13 @@ describe("053 ipucu ve adım adım çözüm", () => {
     expect(out).toContain("1 dakika kuralı");
     expect(out).toContain("Çözümü kapat, benzerini bağımsız dene");
     expect(out).not.toContain("Sonraki adım");
+  });
+  it("stepping back only hides steps; the recorded level stays", () => {
+    const onLevel = vi.fn();
+    const out = html({ level: 4, shown: 2, steps: true, onSteps: () => {}, onShown: () => {}, onLevel });
+    expect(out).toContain("Adım 2 / 6");
+    expect(out).not.toContain("Adım 3 / 6");
+    expect(onLevel).not.toHaveBeenCalled();
   });
   it("closing the solution hides it without undoing the recorded help", () => {
     const out = html({ level: 6, steps: true, hidden: true, onSteps: () => {}, onHidden: () => {} });

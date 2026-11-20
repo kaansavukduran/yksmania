@@ -300,15 +300,17 @@ function RayImage({
                 : "physics014-image-arrow"
             }
           />
+          {/* A real inverted image: the rays leave its tip toward the lower
+              left, so the caption sits to the lower right, clear of them. */}
           <text
             data-image-caption
-            x={px(image.x)}
+            x={rays.image.kind === "real" && image.y < 0 ? px(image.x) + 10 : px(image.x)}
             y={
               rays.image.kind === "virtual"
                 ? 221
                 : py(image.y) + (image.y > 0 ? -12 : 22)
             }
-            textAnchor="middle"
+            textAnchor={rays.image.kind === "real" && image.y < 0 ? "start" : "middle"}
           >
             Görüntü
           </text>

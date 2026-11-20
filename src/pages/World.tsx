@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import { subjects } from "../domain/content";
 import { useApp } from "../store";
 import { completionDates, studyTopics } from "../domain/studyPlan";
+import { contentCounts } from "../domain/counts";
 import { StudyTree } from "../components/StudyTree";
 import { TrophyShowcase } from "../components/Trophies";
 export function World({ navigate }: { navigate: (r: string) => void }) {
@@ -135,8 +136,9 @@ export function World({ navigate }: { navigate: (r: string) => void }) {
       </section>
       <p className="small muted">
         Ağaçlardaki dallar çalışma sırasını gösterir. Konudan anlatıma, yan
-        dalından sorulara geçebilirsin. Yüzdeler {studyTopics.length} başlığa
-        göredir: Excel’deki 479 başlık ve eklenen 6 geometri temeli. Yeni
+        dalından sorulara geçebilirsin. Yüzdeler {contentCounts.studyTopics} çalışma
+        başlığına göredir: çalışma kitabı sırasındaki {contentCounts.workbookTopics} başlık ve
+        sonradan eklenen {contentCounts.studyTopics - contentCounts.workbookTopics} başlık. Yeni
         başlıklar önceki tamamlanma kayıtlarını değiştirmez.
       </p>
       <TrophyShowcase />

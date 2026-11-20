@@ -299,10 +299,11 @@ function Gametes() {
           >
             <path d="M-24 0 v 105" className="bio012-maternal" />
             <path d="M24 0 v 105" className="bio012-paternal" />
-            <text x="-24" y="58" textAnchor="middle">
+            {/* Allele letters stand beside their chromatid, never on it. */}
+            <text x="-36" y="58" textAnchor="end">
               {genotype[i * 2]}
             </text>
-            <text x="24" y="58" textAnchor="middle">
+            <text x="36" y="58" textAnchor="start">
               {genotype[i * 2 + 1]}
             </text>
             <path

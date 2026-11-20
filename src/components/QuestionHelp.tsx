@@ -23,6 +23,8 @@ export function QuestionHelp({
   onSteps,
   hidden = false,
   onHidden,
+  shown,
+  onShown,
 }: {
   question: HelpQuestion;
   level: number;
@@ -35,11 +37,18 @@ export function QuestionHelp({
   /** The learner closed the full solution to try a similar item alone. */
   hidden?: boolean;
   onHidden?: (hidden: boolean) => void;
+  /** Steps on screen in step mode; going back only hides, help stays recorded. */
+  shown?: number;
+  onShown?: (shown: number) => void;
 }) {
   const question = clarifiedQuestionView(originalQuestion);
   const guidance = resolvedGuidance(question);
   const panels = helpPanels(question);
   const full = level > panels.length;
+  // In step mode the learner may step back: fewer steps are shown, but the
+  // recorded help level never decreases.
+  const view = steps ? Math.max(1, Math.min(level, shown ?? level)) : level;
+  const fullView = view > panels.length;
   const sourcePresentation = sourceQuestionPresentation(question);
   // The matching theory figure is shown with the first ("Bilmen gerekenler")
   // panel; it is omitted when the question already carries its own figure.
@@ -67,7 +76,7 @@ export function QuestionHelp({
       {level > 0 && (
         <aside className="hint-box" aria-label="Çözüm rehberi">
           <div className="help-content">
-            {panels.slice(0, level).map((panel, index) => (
+            {panels.slice(0, view).map((panel, index) => (
               <section key={index} className={steps ? "help-step" : undefined}>
                 {steps && (
                   <span className="help-step-chip">
@@ -103,10 +112,10 @@ export function QuestionHelp({
                 )}
               </section>
             ))}
-            {!full && sourcePresentation?.hintFigure && (
+            {!fullView && sourcePresentation?.hintFigure && (
               <SourceQuestionFigure figure={sourcePresentation.hintFigure} />
             )}
-            {full && (
+            {fullView && (
               <section className="help-full-solution" aria-label="Tam çözüm">
                 <h3>Tam çözüm</h3>
                 <p>
@@ -148,7 +157,7 @@ export function QuestionHelp({
                 )}
               </section>
             )}
-            {steps && full && onHidden && (
+            {steps && fullView && onHidden && (
               <button type="button" className="secondary help-close" onClick={() => onHidden?.(true)}>
                 Çözümü kapat, benzerini bağımsız dene
               </button>
@@ -161,14 +170,40 @@ export function QuestionHelp({
           </div>
         </aside>
       )}
-      {!full && steps && (
+      {steps && level > 0 && (
         <div className="help-step-actions" role="group" aria-label="Adım adım çözüm">
-          <button type="button" className="secondary" disabled={disabled} onClick={() => onLevel(level + 1)}>
-            {level < panels.length ? "Sonraki adım" : "Son adım: tam çözüm"}
+          <button type="button" className="secondary" disabled={disabled || view <= 1} onClick={() => onShown?.(view - 1)}>
+            Önceki adım
           </button>
-          <button type="button" className="text-button" disabled={disabled} onClick={() => onLevel(total)}>
-            Tüm adımları aç
-          </button>
+          {!fullView && (
+            <button
+              type="button"
+              className="secondary"
+              disabled={disabled}
+              onClick={() => {
+                if (view < level) onShown?.(view + 1);
+                else {
+                  onLevel(level + 1);
+                  onShown?.(level + 1);
+                }
+              }}
+            >
+              {view < panels.length ? "Sonraki adım" : "Son adım: tam çözüm"}
+            </button>
+          )}
+          {!fullView && (
+            <button
+              type="button"
+              className="text-button"
+              disabled={disabled}
+              onClick={() => {
+                if (!full) onLevel(total);
+                onShown?.(total);
+              }}
+            >
+              Tüm adımları aç
+            </button>
+          )}
         </div>
       )}
       {!full && !steps && (
@@ -214,17 +249,20 @@ function thirtySecondRoute(strategy: string, check: string) {
  * QuestionHelp with its step-by-step state. Step mode and the closed solution
  * are view state only and reset when another question appears.
  */
-export function GuidedQuestionHelp(props: Omit<ComponentProps<typeof QuestionHelp>, "steps" | "onSteps" | "hidden" | "onHidden">) {
+export function GuidedQuestionHelp(props: Omit<ComponentProps<typeof QuestionHelp>, "steps" | "onSteps" | "hidden" | "onHidden" | "shown" | "onShown">) {
   const id = props.question.id;
-  const [view, setView] = useState({ id, steps: false, hidden: false });
-  const current = view.id === id ? view : { id, steps: false, hidden: false };
+  const fresh = { id, steps: false, hidden: false, shown: undefined as number | undefined };
+  const [state, setState] = useState(fresh);
+  const current = state.id === id ? state : fresh;
   return (
     <QuestionHelp
       {...props}
       steps={current.steps}
-      onSteps={() => setView({ ...current, steps: true })}
+      onSteps={() => setState({ ...current, steps: true, shown: 1 })}
       hidden={current.hidden}
-      onHidden={(hidden) => setView({ ...current, hidden })}
+      onHidden={(hidden) => setState({ ...current, hidden })}
+      shown={current.shown}
+      onShown={(shown) => setState({ ...current, shown })}
     />
   );
 }

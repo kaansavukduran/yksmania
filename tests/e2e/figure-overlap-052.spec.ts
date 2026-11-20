@@ -139,3 +139,26 @@ test("052 crowded figures pass axe at 320px", async ({ page }) => {
     expect(axe.violations, guide).toEqual([]);
   }
 });
+
+const THEMES = ["dark", "light", "contrast", "matrix", "axolotl", "trans"] as const;
+for (const width of [320, 1280]) {
+  test(`052 figures and a lab stay readable in all six themes at ${width}px`, async ({ page }) => {
+    test.setTimeout(240_000);
+    await page.setViewportSize({ width, height: 900 });
+    for (const guide of ["kuresel-aynalar", "ortacag-dunya", "hucre-organelleri"]) {
+      await page.goto(`/#/lesson?id=${guide}`);
+      await expect(page.locator("figure.section-figure svg").first()).toBeVisible();
+      for (const theme of THEMES) {
+        // The theme attribute alone drives colours; layout must not change.
+        await page.evaluate((t) => document.documentElement.setAttribute("data-theme", t), theme);
+        expect(await auditFigures(page), `${guide} · ${theme}`).toEqual([]);
+        expect(
+          await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth),
+          `${guide} · ${theme} yatay kaydırma`,
+        ).toBe(true);
+        const axe = await new AxeBuilder({ page }).include("figure.section-figure").analyze();
+        expect(axe.violations.map((v) => `${v.id}: ${v.nodes.length}`), `${guide} · ${theme}`).toEqual([]);
+      }
+    }
+  });
+}

@@ -388,3 +388,11 @@
     gap: 6px;
   }
 }
+
+/* Labels keep a halo in the panel colour so a ray never cuts through them. */
+.physics014-lab svg text {
+  paint-order: stroke;
+  stroke: var(--surface);
+  stroke-width: 5px;
+  stroke-linejoin: round;
+}

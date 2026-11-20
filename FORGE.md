@@ -10,7 +10,8 @@
 - **Faz 1 adım adım çözüm:** Çalışma, Sınavlar ve denemelerde “İpucu al” yolu korunur; ayrı “Adım adım çözüm”: Adım k / N rozeti (1 terimler, 2 veri ve yöntem, sonra adımlar), “Sonraki adım” / “Tüm adımları aç”, yumuşak belirme (reduced-motion: yok), finalde tam çözüm + 30 saniyelik rota + 1 dakika kuralı + çeldirici otopsisi + sık hata + kontrol, “Çözümü kapat, benzerini bağımsız dene”. Açılan her adım yardım olarak kaydedilir; XP, kupa ve bağımsız doğru verilmez.
 - **Önceden yapılmış, doğrulanan maddeler:** AnswerOptions (güncel props ref ile, `type="button"`, soru değişince eleme sıfırlanır), ChoiceSelect (`useLayoutEffect`, veriye dayalı yer tutucu), PlaceMap (`useMemo`, iğne kartı ve yakınlaştırma).
 - **Doğrulama:** check, 3.129 birim testi, build; e2e: figür kapısı 052 (3/3), figür/taktik/temel paketleri 25/25, Bugün/kum saati/anlatım/sorular 48/48, yardım/sınav 50/50.
-- **Açık:** 3.600 kartın adım adım çözüme yükseltilmesi (TYT Coğrafya 0 / 400 ve AYT Geometri 0 / 40 öncelikli), 99_ÖSYM PDF işleme ve `docs/OSYM_SAYACI.md`, Faz 3 laboratuvarlar, Faz 4 kupa/ses/karne.
+- **Ek tur:** ayna laboratuvarında “Görüntü” etiketi ışınların geçmediği sağ alta alındı ve lab yazılarına tema renginde hale eklendi; kalıtım laboratuvarında alel harfleri kromozom çubuklarının üstünden yanlarına alındı; “Önceki adım” (yalnız görünüm, kayıtlı yardım düzeyi düşmez); `#/world` açıklaması 479 + 6 yerine tek kaynaktan çalışma kitabı + eklenen başlık sayısı; 6 tema (dark, light, contrast, matrix, axolotl, trans) × 320/1280 px figür ve axe kapısı; içerik denetimi `content-audit-053` (geçerli anahtar, ayrı şıklar, açıklama, bağımlı metin yok, yetim müfredat yok, çeldirici gerekçesi eksik kart sayısı 2.640'ı aşamaz). Önceki tabloda adım adım sayısı yerelleştirilmemiş metinle hesaplanmıştı (2.865); doğrusu 3.825.
+- **Açık:** 2.640 kartın adım adım çözüme yükseltilmesi (TYT Coğrafya 0 / 400 ve AYT Geometri 0 / 40 öncelikli), 99_ÖSYM PDF işleme ve `docs/OSYM_SAYACI.md`, Faz 3 laboratuvarlar, Faz 4 kupa/ses/karne.
 
 ### İlerleme tablosu (20 Kasım, Forge052)
 
@@ -18,27 +19,27 @@
 
 | Ders | Hazır konu / uygulama dersi | Görsel/interaktif lab (figürlü ders · figür) | Adım adım çözümlü soru | Kopya kâğıdı (OGM/MEBİ) işlenen | 99_ÖSYM soru kalıbı | Kalan açık (figürsüz ders) |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| TYT Türkçe | 33 / 34 | 4 · 15 | 105 / 380 (%27,6) | 4 / 33 (%12,12) | ↓ | 30 |
-| TYT Matematik | 40 / 45 | 17 · 45 | 440 / 735 (%59,9) | 5 / 38 (%13,16) | ↓ | 28 |
-| TYT Geometri | 19 / 19 | 19 · 174 | 202 / 217 (%93,1) | 1 / 32 (%3,13) | ↓ | 0 |
-| TYT Fizik | 24 / 28 | 24 · 177 | 96 / 311 (%30,9) | 7 / 24 (%29,17) | ↓ | 4 |
-| TYT Kimya | 55 / 57 | 41 · 179 | 50 / 535 (%9,3) | 38 / 56 (%67,86) | ↓ | 16 |
-| TYT Biyoloji | 36 / 45 | 12 · 37 | 190 / 515 (%36,9) | 7 / 36 (%19,44) | ↓ | 33 |
-| TYT Tarih | 24 / 34 | 6 · 16 | 165 / 390 (%42,3) | 4 / 24 (%16,67) | ↓ | 28 |
-| TYT Coğrafya | 40 / 40 | 8 · 17 | 0 / 400 (%0,0) | 5 / 40 (%12,50) | ↓ | 32 |
-| TYT Felsefe | 17 / 17 | 3 · 7 | 70 / 190 (%36,8) | 3 / 17 (%17,65) | ↓ | 14 |
-| TYT Din | 20 / 20 | 4 · 9 | 371 / 371 (%100,0) | 3 / 20 (%15,00) | ↓ | 16 |
-| AYT Matematik | 17 / 18 | 13 · 19 | 228 / 253 (%90,1) | 2 / 17 (%11,76) | ↓ | 5 |
-| AYT Geometri | 4 / 4 | 4 · 51 | 0 / 40 (%0,0) | 1 / 4 (%25,00) | ↓ | 0 |
-| AYT Fizik | 46 / 47 | 11 · 26 | 216 / 541 (%39,9) | 7 / 46 (%15,22) | ↓ | 36 |
-| AYT Kimya | 55 / 56 | 18 · 19 | 355 / 680 (%52,2) | 11 / 55 (%20,00) | ↓ | 38 |
-| AYT Biyoloji | 75 / 76 | 16 · 39 | 377 / 907 (%41,6) | 11 / 75 (%14,67) | ↓ | 60 |
+| TYT Türkçe | 33 / 34 | 4 · 15 | 170 / 380 (%44,74) | 4 / 33 (%12,12) | ↓ | 30 |
+| TYT Matematik | 40 / 45 | 17 · 45 | 635 / 735 (%86,39) | 5 / 38 (%13,16) | ↓ | 28 |
+| TYT Geometri | 19 / 19 | 19 · 174 | 207 / 217 (%95,39) | 1 / 32 (%3,13) | ↓ | 0 |
+| TYT Fizik | 24 / 28 | 24 · 177 | 221 / 311 (%71,06) | 7 / 24 (%29,17) | ↓ | 4 |
+| TYT Kimya | 55 / 57 | 41 · 179 | 225 / 535 (%42,06) | 38 / 56 (%67,86) | ↓ | 16 |
+| TYT Biyoloji | 36 / 45 | 12 · 37 | 385 / 515 (%74,76) | 7 / 36 (%19,44) | ↓ | 33 |
+| TYT Tarih | 24 / 34 | 6 · 16 | 340 / 390 (%87,18) | 4 / 24 (%16,67) | ↓ | 28 |
+| TYT Coğrafya | 40 / 40 | 8 · 17 | 0 / 400 (%0,00) | 5 / 40 (%12,50) | ↓ | 32 |
+| TYT Felsefe | 17 / 17 | 3 · 7 | 70 / 190 (%36,84) | 3 / 17 (%17,65) | ↓ | 14 |
+| TYT Din | 20 / 20 | 4 · 9 | 371 / 371 (%100,00) | 3 / 20 (%15,00) | ↓ | 16 |
+| AYT Matematik | 17 / 18 | 13 · 19 | 233 / 253 (%92,09) | 2 / 17 (%11,76) | ↓ | 5 |
+| AYT Geometri | 4 / 4 | 4 · 51 | 0 / 40 (%0,00) | 1 / 4 (%25,00) | ↓ | 0 |
+| AYT Fizik | 46 / 47 | 11 · 26 | 221 / 541 (%40,85) | 7 / 46 (%15,22) | ↓ | 36 |
+| AYT Kimya | 55 / 56 | 18 · 19 | 360 / 680 (%52,94) | 11 / 55 (%20,00) | ↓ | 38 |
+| AYT Biyoloji | 75 / 76 | 16 · 39 | 387 / 907 (%42,67) | 11 / 75 (%14,67) | ↓ | 60 |
 | Temel İnşa (0. basamak) | 25 ön ders (10 TYT dersinin hepsi) | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 ders ön derssiz |
-| **Toplam** | **505 / 540** | **225 · 887** | **2.865 / 6.465 (%44,3)** | **109 / 517 (%21,08)** | **77 bağlantılı geçmiş soru** | **340** |
+| **Toplam** | **505 / 540** | **225 · 887** | **3.825 / 6.465 (%59,16)** | **109 / 517 (%21,08)** | **77 bağlantılı geçmiş soru** | **340** |
 | **Genel OGM/MEBİ PDF** | **119 / 8.981 · %1,33** | | | | | |
 | **Genel 99_ÖSYM PDF** | **0 / 1.001 işlendi · %0** (payda kullanıcı beyanı; Drive sayımı bekliyor) | | | | | |
-| **Adım adım çözüm** | **2.865 / 6.465 · %44,3** soruda Adım 1…N + final otopsi | | | | | |
-| **SVG çakışma/taşma testi** | **201 rehber · 320 px ve 1280 px · 0 hata (e2e 052)** | | | | | |
+| **Adım adım çözüm** | **3.825 / 6.465 · %59,16** soruda Adım 1…N + final otopsi | | | | | |
+| **SVG çakışma/taşma testi** | **201 figürlü rehber · 320/1280 px · 6 tema + axe · 0 hata (e2e 052)** | | | | | |
 
 # Forge051 — 0.25.0 adayı: Temel İnşa (0. basamak), kupa, hata merkezi ve tek kaynaklı konu sayısı
 
