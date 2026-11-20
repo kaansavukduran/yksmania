@@ -1552,6 +1552,19 @@ export const questionTactics: QuestionTactic[] = [
       "Doppler enine, boyuna ve elektromanyetik dalgaların hepsinde uygun bağıl harekette görülebilir (2022 AYT Fen 11: E).",
     ],
   },
+  {
+    id: "tork-kol-iki-denge",
+    guides: ["tork-denge"],
+    match: /tork|moment|menteşe|destek|çubuk|denge|kuvvet çifti|merdiven|devril|tahterevalli/i,
+    title: "Torkta dik kolu çiz, iki denge denklemini ayrı yaz",
+    steps: [
+      "τ = F·d⊥ = rF·sinθ; d⊥ eksenden kuvvetin etki doğrusuna dik uzaklıktır, uygulama noktasına uzaklık değil. Doğrultu eksenden geçerse τ = 0.",
+      "Duran rijit cisimde ΣF = 0 ve Στ = 0 birlikte: bilinmeyen bir desteği eksen seç, sonra kuvvet toplamıyla ötekini bul.",
+      "Türdeş çubuğun ağırlığı ortada etkir; unutmak tepkileri bozar. Temas desteği çekemez: negatif tepki temasın kalktığını gösterir.",
+      "Kuvvet çifti: ΣF = 0 ama τ = F·d; dönme dengesi için ayrıca Στ = 0 gerekir.",
+      "Kapı/menteşe: zıt momentleri eşitle (2026 AYT Fen 4: 0,40·F = 1,20·5 ⇒ F = 15 N). Birim N·m, joule değil.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

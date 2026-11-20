@@ -101,6 +101,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "yatay-atis",
   "kepler-yasalari",
   "doppler-etkisi",
+  "tork-denge",
   "manyetik-kuvvet",
   "egik-atis",
   "ayt-parabol",
