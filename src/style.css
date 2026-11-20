@@ -5076,3 +5076,39 @@ progress::-moz-progress-bar {
 .smart-buttons button {
   min-height: 2.75rem;
 }
+/* Zen odak modu (F): yalnız içerik kalır. */
+.zen .sidebar,
+.zen .topbar,
+.zen .app-footer,
+.zen .menu-backdrop {
+  display: none;
+}
+.zen .main-shell {
+  margin-left: 0;
+}
+.zen .main-content {
+  max-width: 60rem;
+  margin-inline: auto;
+}
+.zen-exit {
+  position: fixed;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 50;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 2.5rem;
+}
+.zen-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+}
+@media (max-width: 700px) {
+  /* Telefonda kenar çubuğu zaten ekran dışında; üst çubuk dar kalsın. */
+  .zen-toggle {
+    display: none;
+  }
+}

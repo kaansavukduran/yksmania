@@ -17,6 +17,8 @@ import {
   AlertCircle,
   Menu,
   X,
+  Maximize2,
+  Minimize2,
 } from "lucide-react";
 import { useRegisterSW } from "virtual:pwa-register/react";
 import { Capacitor } from "@capacitor/core";
@@ -115,6 +117,37 @@ export default function App() {
     location.hash = r;
     setMenu(false);
   };
+  // Zen odak modu: kenar çubuğu, üst çubuk ve alt bilgi gizlenir. F açar/kapatır,
+  // Esc çıkar. Tercih cihazdadır; öğrenme kaydı değildir.
+  const [zen, setZenState] = useState(() => {
+    try {
+      return localStorage.getItem("yksmania.zen") === "1";
+    } catch {
+      return false;
+    }
+  });
+  const setZen = (on: boolean) => {
+    setZenState(on);
+    try {
+      localStorage.setItem("yksmania.zen", on ? "1" : "0");
+    } catch {
+      /* yalnız bu oturum */
+    }
+  };
+  useEffect(() => {
+    function onKey(event: KeyboardEvent) {
+      if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey) return;
+      const el = event.target as HTMLElement | null;
+      if (el?.closest("input, textarea, select, [contenteditable='true'], dialog, [role='dialog']")) return;
+      if (event.key === "f" || event.key === "F") {
+        event.preventDefault();
+        setZen(!zen);
+      } else if (event.key === "Escape" && zen) setZen(false);
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [zen]);
   useEffect(() => {
     const handle = () => {
       setRoute(location.hash.slice(1) || "/today");
@@ -242,7 +275,12 @@ export default function App() {
     },
   )[0];
   return (
-    <div className="app-shell">
+    <div className={zen ? "app-shell zen" : "app-shell"}>
+      {zen && (
+        <button type="button" className="zen-exit secondary" onClick={() => setZen(false)} aria-keyshortcuts="F Escape">
+          <Minimize2 size={16} aria-hidden="true" /> Odaktan çık
+        </button>
+      )}
       {confirmationDialog}
       <ExamDeadlineWatcher />
       <TrophyToasts />
@@ -328,6 +366,16 @@ export default function App() {
             YKSMania <span>/</span> {t(navKey)}
           </span>
           <div className="topbar-status">
+            <button
+              type="button"
+              className="zen-toggle text-button"
+              aria-pressed={zen}
+              aria-keyshortcuts="F"
+              title="Zen odak modu (F)"
+              onClick={() => setZen(!zen)}
+            >
+              <Maximize2 size={14} aria-hidden="true" /> Odak
+            </button>
             <span
               className={`save-status ${status === "error" ? "error" : ""}`}
               role="status"
