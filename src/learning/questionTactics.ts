@@ -1760,6 +1760,19 @@ export const questionTactics: QuestionTactic[] = [
       "Atom istenirse molekül molünü indisle çarp; toplam atomdan geri dön (0,9 mol atom CO₂ → 0,3 mol → 13,2 g).",
     ],
   },
+  {
+    id: "koligatif-tanecik-ayirma-fark",
+    guides: ["koligatif-ayirma"],
+    match: /donma|kaynama noktası|kaynama sıcaklığı|buhar basıncı|koligatif|osmoz|süzme|damıtma|ayırma hunisi|kristallendirme|özütleme|ayırma yöntemi/i,
+    title: "Koligatifte önce etkin tanecik ÷ çözücü; ayırmada önce gözlenebilir farkı adlandır",
+    steps: [
+      "Etkin taneciği bul: glikoz 1, NaCl 2, CaCl₂ 3 (ideal tam ayrışma). Sonra aynı çözücü miktarına oranla: 200 g su + 0,10 mol NaCl (1,0) < 100 g su + 0,15 mol glikoz (1,5) = 200 g su + 0,10 mol CaCl₂ (1,5).",
+      "Yön: tanecik derişimi artınca donma sıcaklığı ve buhar basıncı düşer, kaynama (aynı dış basınçta) yükselir. Su eklemek ters yöne götürür (2025 TYT Fen 13: yalnız II, B).",
+      "Ayırmada hedefi yaz (çözücü mü, çözünen mi, ikisi mi), sonra farkı seç: tane boyutu → süzme, karışmama → ayırma hunisi, uçuculuk → (ayrımsal) damıtma (2017 YGS Fen 25, B), manyetiklik → mıknatıs.",
+      "Çözünmüş iyon süzgeçte kalmaz; su da isteniyorsa buharlaştırma değil damıtma gerekir. Çok bileşende sırayı kur: mıknatıs → süzme → damıtma; kütle envanteri korunur.",
+      "Kristallendirmede çözünen kütle sabit, kapasite düşer: 150 g su, 80 °C’de 90 g, 20 °C’de 30 g → 60 g kristal. Soğukta çözünürlük artıyorsa bu yol çalışmaz.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
