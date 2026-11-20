@@ -1539,6 +1539,19 @@ export const questionTactics: QuestionTactic[] = [
       "Korunanlar: yıldıza göre tork 0 ⇒ L sabit; E = K + U = −GMm/(2a) sabit, K ve U tek tek değişir (2025 AYT Fen 9: yalnız III).",
     ],
   },
+  {
+    id: "doppler-kim-hareketli",
+    guides: ["doppler-etkisi"],
+    match: /Doppler|siren|ambulans|tiz|kalın|frekans|kırmızıya|maviye|kayma|tayf|radar|sonar|kaynak|gözlemci|alıcı/i,
+    title: "Doppler’de önce kimin hareket ettiğini, sonra aralığın kapanıp kapanmadığını yaz",
+    steps: [
+      "+ yön dalganın kaynaktan alıcıya gittiği yön: fₒ = fₛ(v − uₒ)/(v − uₛ). Pay alıcının, payda kaynağın hızı (havaya göre).",
+      "Kontrol: aralık kapanıyorsa fₒ > fₛ (tiz), açılıyorsa fₒ < fₛ. Aynı yönde giderken hızları karşılaştır; birlikte aynı hızla gidince kayma yok.",
+      "Aynı kapanma hızı aynı sonucu vermez: kaynak 30 m/s yaklaşınca 666,67 Hz, alıcı 30 m/s yaklaşınca 660 Hz (v = 300, fₛ = 600).",
+      "Işıkta ses formülü yok: aynı çizginin λ’sını karşılaştır, z = λgöz/λref − 1; uzun λ kırmızıya, kısa λ maviye kayma.",
+      "Doppler enine, boyuna ve elektromanyetik dalgaların hepsinde uygun bağıl harekette görülebilir (2022 AYT Fen 11: E).",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

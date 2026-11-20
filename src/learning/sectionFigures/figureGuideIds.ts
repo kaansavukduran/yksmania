@@ -100,6 +100,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "fotoelektrik-olay",
   "yatay-atis",
   "kepler-yasalari",
+  "doppler-etkisi",
   "manyetik-kuvvet",
   "egik-atis",
   "ayt-parabol",
