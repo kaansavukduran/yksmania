@@ -34,6 +34,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "karisim-sinif-cozunme",
   "izotop-izoton-izobar",
   "cozelti-derisimi",
+  "mol-tanecik-iliskisi",
   "din-felsefesi",
   "ahlak-felsefesi",
   "radyoaktivite",

@@ -1734,6 +1734,19 @@ export const questionTactics: QuestionTactic[] = [
       "Buharlaştırmada çözünürlük sınırını denetle: fazlası çöker, sıvı doymuş derişimde kalır. ppm = mg ÷ kg; mg/L ile eşitlik yoğunluk 1 g/mL koşulunu ister.",
     ],
   },
+  {
+    id: "mol-hedef-tanecik",
+    guides: ["mol-tanecik-iliskisi"],
+    match: /avogadro|tanecik|atom sayısı|molekül sayısı|iyon sayısı|formül birimi|N_?A|Nₐ/i,
+    title: "Mol sorusunda önce hedef taneciği adlandır, sonra mol × hedef adedi",
+    steps: [
+      "Hedefi yaz: molekül mü, belirli atom mu, toplam atom mu, iyon mu? 0,20 mol CO₂ / 0,30 mol CO: molekülde CO, O atomunda CO₂ (0,40 > 0,30) önde.",
+      "Veriyi mole çevir: kütle ÷ M, NK gaz hacmi ÷ 22,4, sayı ÷ 6,02 × 10²³ (2024 TYT Fen 12: 0,50 · 0,25 · 0,50 mol; O ile 0,50 · 0,25 · 1,00 → M > K > L, D).",
+      "Parantez dışındaki indis grubun tamamını çarpar: Ca(NO₃)₂ başına 1 Ca, 2 N, 6 O, toplam 9 atom.",
+      "İyon sayısı ayrışma ister: Na₂SO₄ → 2 Na⁺ + SO₄²⁻ (3 iyon, 7 atom); glikoz iyonlaşmaz. Yük bilançosu tanecik sayısı değildir.",
+      "Karışımda iki denklem kur: toplam mol ve hedef atom (CO + CO₂ = 1,0; O = 1,6 → CO₂ 0,6, CO 0,4). Adet istenirse en son Nₐ ile çarp.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
