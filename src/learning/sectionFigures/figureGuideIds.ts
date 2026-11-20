@@ -33,6 +33,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "iyonik-bilesik-adlandirma",
   "karisim-sinif-cozunme",
   "izotop-izoton-izobar",
+  "cozelti-derisimi",
   "din-felsefesi",
   "ahlak-felsefesi",
   "radyoaktivite",

@@ -1721,6 +1721,19 @@ export const questionTactics: QuestionTactic[] = [
       "“Kesin” için bütün koşullarda doğru olmalı; tek karşı örnek çürütür. İzotop ve izobar bir çiftte birlikte olamaz (Z hem aynı hem farklı olamaz).",
     ],
   },
+  {
+    id: "derisim-pay-payda",
+    guides: ["cozelti-derisimi"],
+    match: /kütlece yüzde|hacimce yüzde|derişim|seyrelt|ppm|karıştırılırsa|karışımın yüzdesi|buharlaştır/i,
+    title: "Derişimde önce pay ve paydayı adlandır; sabit kalan miktarı bul",
+    steps: [
+      "Kütlece yüzde = çözünen ÷ çözelti × 100; çözelti = su + çözünmüş kısım (20 g tuz + 180 g su → 200 g, %10). Hacimce yüzdede payda ölçülen son hacimdir.",
+      "Su eklemede çözünen sabit: yeni toplamı bul (200 g %15 → 30 g tuz; %10 için 300 g son çözelti, 100 g su). Homojenden örnek almak yüzdeyi değiştirmez.",
+      "İki çözelti karışırsa tuzları ve çözeltileri ayrı topla (2017 YGS Fen 24: 20 g tuz / 400 g → %5, C). Basit ortalama yalnız eşit kütlelerde.",
+      "Ters hazırlamada hedef iki ucun arasında olmalı; kütleler karşı uzaklıkla orantılı (%12 ve %32’den %24: 8 : 12 → 200 g + 300 g). Tuz denkliğiyle kontrol et.",
+      "Buharlaştırmada çözünürlük sınırını denetle: fazlası çöker, sıvı doymuş derişimde kalır. ppm = mg ÷ kg; mg/L ile eşitlik yoğunluk 1 g/mL koşulunu ister.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
