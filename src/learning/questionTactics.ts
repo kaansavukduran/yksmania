@@ -1669,6 +1669,19 @@ export const questionTactics: QuestionTactic[] = [
       "Tepkime verildiyse soru metal alt sınıfıdır: asitle H₂ → aktif; tepkime yok → soy metal; asit ve bazla H₂ → amfoter (2026 TYT Fen 14: Ca, Au, Al → D).",
     ],
   },
+  {
+    id: "lewis-butce-uc-kontrol",
+    guides: ["kimyasal-turler-lewis"],
+    match: /Lewis|nokta|yalnız çift|bağ çifti|oktet|duet|değerlik elektron|radikal|çok atomlu iyon|formül birimi/i,
+    title: "Lewis yapısında önce tür ve bütçe, sonra iskelet; en son üç kontrol",
+    steps: [
+      "Türü söyle: atom, iyon, molekül, çok atomlu iyon ya da iyonik formül birimi (NaCl molekül değildir).",
+      "Bütçe = değerlik e⁻ toplamı + negatif yük − pozitif yük (NH₄⁺: 5 + 4 − 1 = 8). Tek atomlu iyonda: Mg²⁺ 0 nokta, S²⁻ 8 nokta; nokta sayısı toplam elektron değildir.",
+      "İskelet: H uçta (duet), merkezde genellikle tek bulunan ve daha az elektronegatif atom; tek bağlar, uç oktetler, kalan merkeze, gerekirse yalnız çifti bağa çevir (O=C=O).",
+      "Üç kontrol: toplam elektron bütçeye eşit mi, H duet / diğerleri oktet mi (BF₃ eksik oktet istisnası), toplam yük doğru mu?",
+      "Seçenekli soruda beklenen çizimi bilmek yetmez, çizilen noktaları say (2026 TYT Fen 10: Mg²⁺’ya iki nokta çizilmiş → yanlış; S²⁻ sekiz nokta → C).",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

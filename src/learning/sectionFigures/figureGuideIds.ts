@@ -29,6 +29,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "atom-capi-karsilastirma",
   "elektron-ilgisi-elektronegatiflik",
   "elementlerin-siniflandirilmasi",
+  "kimyasal-turler-lewis",
   "din-felsefesi",
   "ahlak-felsefesi",
   "radyoaktivite",
