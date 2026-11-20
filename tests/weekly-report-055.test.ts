@@ -83,6 +83,21 @@ describe("weekly summary", () => {
     expect(week.bestExamNet).toBe(4);
   });
 
+  it("counts a mistake sprint or boss run as question work, not as a completed exam", () => {
+    const s = state({
+      examSessions: [
+        exam("exam:1:tyt-mixed", "2026-11-17", [0, 0, 1, 1]),
+        exam("exam:2:sprint-40-4", "2026-11-18", [0, 0, 0, 0]),
+        exam("exam:3:boss-90-4", "2026-11-19", [0, 0, 0, 1]),
+      ],
+    });
+    const week = weekSummary(s, "2026-11-16", subjectOf);
+    expect(week.exams).toBe(1);
+    expect(week.bestExamNet).toBe(1.5);
+    expect(week.independentCorrect).toBe(2 + 4 + 3);
+    expect(week.wrong).toBe(2 + 0 + 1);
+  });
+
   it("counts completed 3/7/21 reviews of both kinds in the week", () => {
     const s = state({
       sessions: [session("learn", "2026-11-10", [[true]]), session("rev", "2026-11-17", [[true]])],

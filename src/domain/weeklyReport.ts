@@ -37,6 +37,9 @@ export function weekStart(day: string): string {
 
 export const isSunday = (day: string) => dayOfWeek(day) === 0;
 
+/** Exam ids are `exam:<time>:<spec id>`; repair runs use a sprint- or boss- spec. */
+const isRepairRun = (examId: string) => /:(sprint|boss)-/.test(examId);
+
 export function weekSummary(
   state: ReportSource,
   start: string,
@@ -57,12 +60,16 @@ export function weekSummary(
     }
   }
   let bestExamNet: number | null = null;
+  let mockExams = 0;
   for (const e of exams) {
     const help = examAssistance(e);
     const score = examScore(e);
     independent += help.independentCorrect;
     assistedSolved += help.assistedCorrect;
     wrong += score.wrong;
+    // Hata sprinti ve boss turu tekrar çalışmasıdır: soruları sayılır, deneme sayılmaz.
+    if (isRepairRun(e.id)) continue;
+    mockExams++;
     if (bestExamNet === null || score.net > bestExamNet) bestExamNet = score.net;
   }
   const sessionDates = new Map(state.sessions.map((s) => [s.id, s.date]));
@@ -82,7 +89,7 @@ export function weekSummary(
     wrong,
     assistedSolved,
     reviews,
-    exams: exams.length,
+    exams: mockExams,
     bestExamNet,
     topLossSubject,
     hasData: independent + wrong + assistedSolved + reviews + exams.length > 0,
