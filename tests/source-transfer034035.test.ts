@@ -88,7 +88,7 @@ it("adds exactly two rich source companions and 94 fully guided self-contained c
   expect(lessons.flatMap((l) => l.questions)).toHaveLength(6465);
   expect(lessonGuides.size).toBe(505);
   expect(builtInCheatSheets.size).toBe(505);
-  expect(studyTopics).toHaveLength(504);
+  expect(studyTopics).toHaveLength(505);
   expect(
     new Set(lessons.flatMap((l) => l.questions).map((q) => q.id)).size,
   ).toBe(6465);

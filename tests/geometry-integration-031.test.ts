@@ -28,6 +28,7 @@ import {
 } from "../src/data/supplementalTopics031";
 import { lessonGuides } from "../src/learning/guides";
 import { builtInCheatSheets } from "../src/learning/cheatsheetContent";
+import { supplementalTopics041 } from "../src/data/supplementalTopics041";
 import workbookBaseline from "./fixtures/source-stage-025-topic-associations.json";
 
 describe("031 additive geometry learning path", () => {
@@ -37,14 +38,14 @@ describe("031 additive geometry learning path", () => {
     expect(
       studyTopics.slice(479, 485).map(({ order, ...topic }) => topic),
     ).toEqual(supplementalTopics031);
-    expect(new Set(studyTopics.map((topic) => topic.id)).size).toBe(504);
+    expect(new Set(studyTopics.map((topic) => topic.id)).size).toBe(505);
     const state = initialState();
     for (const topic of workbookStudyTopics)
       state.topicProgress[topic.id] = { theory: "2026-11-16" };
     state.notes = { "lesson:rasyonel-sayilar": "Önceki not korunur." };
     const restored = validateState(state);
     const plan = studyPlan(restored, "theory", "2026-11-17");
-    expect(plan).toMatchObject({ done: 479, remaining: 25, total: 504 });
+    expect(plan).toMatchObject({ done: 479, remaining: 26, total: 505 });
     expect(plan.scheduled.map(({ topic }) => topic.id)).toEqual(
       [
         ...supplementalTopics031,
@@ -56,6 +57,7 @@ describe("031 additive geometry learning path", () => {
         ...supplementalSourceTopics038,
         ...supplementalSourceTopics039,
         ...supplementalTopics040,
+        ...supplementalTopics041,
       ].map((topic) => topic.id),
     );
     expect(restored.topicProgress).toEqual(state.topicProgress);

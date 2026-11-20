@@ -56,7 +56,7 @@ describe("032 source transfer retains old learning while adding usable geometry"
     expect(lessons.flatMap((l) => l.questions)).toHaveLength(6465);
     expect(lessonGuides.size).toBe(505);
     expect(builtInCheatSheets.size).toBe(505);
-    expect(studyTopics).toHaveLength(504);
+    expect(studyTopics).toHaveLength(505);
     const all = lessons.flatMap((l) => l.questions);
     expect(new Set(all.map((q) => q.id)).size).toBe(all.length);
     let questions = 0;

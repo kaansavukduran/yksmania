@@ -104,7 +104,7 @@ test("YKS-013 completed daily topics retain the actual four-of-five score offlin
   await expect(page.locator(".result-stats")).toContainText("4/5");
   await page.getByRole("button", { name: "Bugüne dön", exact: true }).click();
   await card(page)
-    .getByText("Tüm çalışma sırası ve tarihler (504)", { exact: true })
+    .getByText("Tüm çalışma sırası ve tarihler (505)", { exact: true })
     .click();
   const full = card(page)
     .locator(".plan-full-order li")
@@ -127,7 +127,7 @@ test("YKS-013 existing question-only records show their score and allow explicit
   await expect(row(page)).toContainText(
     "3 bağımsız doğru · 1 soruda ipucu kullanıldı",
   );
-  await expect(card(page)).toContainText("504 kalan konu");
+  await expect(card(page)).toContainText("505 kalan konu");
   await page.evaluate(() => {
     const put = IDBObjectStore.prototype.put;
     IDBObjectStore.prototype.put = function (
@@ -151,8 +151,8 @@ test("YKS-013 existing question-only records show their score and allow explicit
     .getByRole("button", { name: "Konuyu çalıştım", exact: true })
     .click();
   await expect(row(page)).toContainText("Konu tamamlandı");
-  await expect(card(page)).toContainText("503 kalan konu");
-  await expect(card(page, "Soru planı")).toContainText("503 kalan konu");
+  await expect(card(page)).toContainText("504 kalan konu");
+  await expect(card(page, "Soru planı")).toContainText("504 kalan konu");
   await nav(page, "Ayarlar");
   await setThemePreference(page, "light");
   await page
@@ -293,5 +293,5 @@ test("YKS-013 external question work has no invented score and stays visible on 
     "soru sonucu kaydedilmedi",
   );
   await expect(row(page, "Soru planı")).not.toContainText("Son sonuç");
-  await expect(card(page)).toContainText("504 kalan konu");
+  await expect(card(page)).toContainText("505 kalan konu");
 });

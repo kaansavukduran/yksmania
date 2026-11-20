@@ -63,7 +63,7 @@ it("registers one source unit, separate rich guide/concise summary and43 self-co
   expect(lessons.flatMap((l) => l.questions)).toHaveLength(6465);
   expect(lessonGuides.size).toBe(505);
   expect(builtInCheatSheets.size).toBe(505);
-  expect(studyTopics).toHaveLength(504);
+  expect(studyTopics).toHaveLength(505);
   const lesson = lessonById(id)!,
     guide = lessonGuides.get(id)!,
     sheet = builtInCheatSheets.get(topic)!;

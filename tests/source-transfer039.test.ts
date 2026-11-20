@@ -106,5 +106,5 @@ it("preserves approved teaching with pinned C10 choice CSS, C7 state and C8 log 
   expect(lessons.flatMap((value) => value.questions)).toHaveLength(6465);
   expect(lessonGuides.size).toBe(505);
   expect(builtInCheatSheets.size).toBe(505);
-  expect(studyTopics).toHaveLength(504);
+  expect(studyTopics).toHaveLength(505);
 });

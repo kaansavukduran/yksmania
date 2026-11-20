@@ -47,7 +47,7 @@ it("appends only two independent companions with87 self-contained fully guided c
   expect(new Set(lessons.flatMap((v) => v.questions).map((v) => v.id)).size).toBe(6465);
   expect(lessonGuides.size).toBe(505);
   expect(builtInCheatSheets.size).toBe(505);
-  expect(studyTopics).toHaveLength(504);
+  expect(studyTopics).toHaveLength(505);
   expect(studyTopics.slice(496, 500).map((v) => v.order)).toEqual([497, 498, 499, 500]);
   for (const expected of packs) {
     const lesson = lessonById(expected.pack.id)!;
