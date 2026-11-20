@@ -135,3 +135,45 @@ export function MistakeSprint({
     </section>
   );
 }
+
+/**
+ * Haftalık büyük tur: kalıcı olmamış hatalardan en zor 20 soru (önce “Eminim”
+ * deyip yanlış yaptıkların, sonra yıldızı yüksek olanlar). Hafta sonu önerilir;
+ * her gün açılabilir. Sprint gibi: yalnız yardımsız doğrular onarım sayılır.
+ */
+export function MistakeBoss({
+  ids,
+  busy,
+  weekend,
+  begin,
+}: {
+  ids: string[];
+  busy: boolean;
+  weekend: boolean;
+  begin: (ids: string[]) => Promise<void>;
+}) {
+  const [running, setRunning] = useState(false);
+  const unique = [...new Set(ids)];
+  if (unique.length < 5) return null;
+  const count = Math.min(20, unique.length);
+  return (
+    <section className={`panel mistake-boss${weekend ? " is-weekend" : ""}`} aria-labelledby="boss-heading">
+      <h2 id="boss-heading">Hafta sonu hata boss’u</h2>
+      <p className="small muted">
+        Henüz kalıcı onarılmamış hatalarından en zorlu {count} soru, tek uzun tur. {weekend ? "Bugün hafta sonu: tam zamanı." : "Hafta sonu için önerilir; istersen şimdi de başlatabilirsin."}{" "}
+        İpucu açmadan doğru çözdüklerin onarım sayılır.
+      </p>
+      <button
+        type="button"
+        className={weekend ? "primary" : "secondary"}
+        disabled={busy || running}
+        onClick={() => {
+          setRunning(true);
+          void begin(unique).finally(() => setRunning(false));
+        }}
+      >
+        {count} soruluk boss turunu başlat
+      </button>
+    </section>
+  );
+}

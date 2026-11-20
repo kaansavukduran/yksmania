@@ -5026,3 +5026,31 @@ progress::-moz-progress-bar {
     color: #000;
   }
 }
+/* Hata merkezi: önkoşul köprüsü ve haftalık boss turu. */
+.mistake-bridge {
+  margin-top: 0.6rem;
+}
+.mistake-bridge p {
+  margin: 0 0 0.35rem;
+}
+.mistake-bridge-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.mistake-bridge-link {
+  min-height: 2.4rem;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  text-align: left;
+  font-size: 0.85em;
+}
+.mistake-bridge-link:hover {
+  border-color: var(--accent);
+}
+.mistake-boss.is-weekend {
+  border-color: var(--accent);
+}

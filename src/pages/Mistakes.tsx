@@ -8,7 +8,8 @@ import { useConfirmationDialog } from "../components/ConfirmationDialog";
 import { Empty } from "../components/Shared";
 import type { Lesson } from "../domain/model";
 import { MistakeRepair, mistakeKey, mistakeMap, mistakeReasons } from "../components/MistakeRepair";
-import { MistakeSprint, MistakeWarning, PocketBooklet } from "../components/MistakeTools";
+import { MistakeBoss, MistakeSprint, MistakeWarning, PocketBooklet } from "../components/MistakeTools";
+import { MistakeBridge } from "../components/MistakeBridge";
 import { StarBadge } from "../components/StarPractice";
 import { beginExam, mistakeSprintSpec, questionStars } from "../domain/exams";
 import { compareMistakes, mistakeStatus, STATUS_LABEL, type MistakeStatus } from "../domain/mistakeStatus";
@@ -140,6 +141,24 @@ export function Mistakes({
                 }
               }}
             />
+            <MistakeBoss
+              ids={[...allItems]
+                .filter((x) => x.status !== "kalici" && !x.assistedOnly)
+                .sort((a, b) => Number(b.confident) - Number(a.confident) || b.stars - a.stars)
+                .map((x) => x.response.questionId)}
+              busy={!!state.examDraft}
+              weekend={[0, 6].includes(new Date().getDay())}
+              begin={async (ids) => {
+                const spec = mistakeSprintSpec(ids, 20, "boss");
+                if (!spec) return;
+                try {
+                  await commit((s) => beginExam(s, spec, Date.now(), "learning"));
+                  navigate("/exams");
+                } catch {
+                  toast("Boss turu başlatılamadı. Kayıtların korundu; yeniden dene.");
+                }
+              }}
+            />
             <PocketBooklet
               items={allItems
                 .filter((x) => x.status !== "kalici" && x.question)
@@ -196,6 +215,7 @@ export function Mistakes({
                     options={question.options.map((o) => l(o))}
                     answer={question.answer}
                   />
+                  <MistakeBridge lessonId={lesson.id} subjectId={lesson.subjectId} navigate={navigate} />
                   <button className="text-button" onClick={() => start(lesson)}>
                     {t("repair")}
                     <ArrowUpRight size={17} />

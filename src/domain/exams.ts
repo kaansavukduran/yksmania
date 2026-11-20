@@ -216,7 +216,11 @@ export function starPracticeSpec(
  * mistakes (at most 10). Items answered without opening help count as later
  * independent answers for the mistake's repair status.
  */
-export function mistakeSprintSpec(questionIds: readonly string[], limit = 10): ExamSpec | undefined {
+export function mistakeSprintSpec(
+  questionIds: readonly string[],
+  limit = 10,
+  kind: "sprint" | "boss" = "sprint",
+): ExamSpec | undefined {
   const wanted = [...new Set(questionIds)].slice(0, limit);
   const byId = new Map<string, ExamItem>();
   for (const lesson of lessons) {
@@ -228,8 +232,8 @@ export function mistakeSprintSpec(questionIds: readonly string[], limit = 10): E
   const ayt = items.filter((i) => i.subjectId.startsWith("ayt-")).length;
   const exam = ayt > items.length / 2 ? "AYT" : "TYT";
   return {
-    id: `sprint-${items.map((i) => i.id).join("|").length}-${items.length}`,
-    title: `Hata avı sprinti · ${items.length} soru`,
+    id: `${kind}-${items.map((i) => i.id).join("|").length}-${items.length}`,
+    title: kind === "boss" ? `Hafta sonu hata boss’u · ${items.length} soru` : `Hata avı sprinti · ${items.length} soru`,
     exam,
     kind: "branch",
     items,
