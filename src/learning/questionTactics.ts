@@ -1812,6 +1812,19 @@ export const questionTactics: QuestionTactic[] = [
       "Tuz ≠ nötr: NaCl yaklaşık nötr, Na₂CO₃ ve NaHCO₃ bazik, NH₄Cl asidik. Hepsi iletken; iletkenlik asitlik kanıtı değildir.",
     ],
   },
+  {
+    id: "metal-asit-sinif-kosul",
+    guides: ["asit-baz-metaller"],
+    match: /amfoter|soy metal|aktif metal|yarı soy|H₂ gazı|hidrojen gazı|alaşım|Cu|Zn|Al|Mg|HNO₃|NaOH ile/i,
+    title: "Metal–asit sorusunda sınıf + asit türü + koşul; gazı denklemden, metali gazdan geriye çöz",
+    steps: [
+      "Sınıfı iki gözlemle kur: aktif (Ca, Mg) HCl’den H₂; yarı soy (Cu) HCl’den H₂ vermez; soy (Au) verilen HNO₃’e dirençli; amfoter (Al, Zn) hem asit hem kuvvetli bazla (2026 TYT Fen 14: Ca aktif, Au soy, Al amfoter, D).",
+      "Elektronu metal verir: Mg → Mg²⁺ + 2e⁻, 2H⁺ + 2e⁻ → H₂ → 1 Mg : 1 H₂ : 2 H⁺; 2 Al : 3 H₂ (2,7 g Al → 0,15 mol H₂).",
+      "Asidin adı gazı değiştirir: Cu + derişik HNO₃ → NO₂, seyreltik HNO₃ → NO, derişik sıcak H₂SO₄ → SO₂. H₂ kuralını yükseltgen aside taşıma.",
+      "Alaşımda gaz yalnız tepkime veren metali ölçer: 10,0 g Cu–Zn, 0,10 mol H₂ → 6,5 g Zn (%65), 3,5 g Cu. İki aktif metalde (Mg–Al) kütle ve gaz için iki denklem kur.",
+      "Bazda su da reaktandır: 2Al + 2NaOH + 6H₂O → 2Na[Al(OH)₄] + 3H₂; atomları say (H 14 = 14). Pasif yüzey gaz yokluğunu açıklayabilir; tek başına soyluk kanıtı değildir.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

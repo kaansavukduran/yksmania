@@ -40,6 +40,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "sabun-deterjan-temizlik",
   "asit-baz-tepkimeleri",
   "asit-baz-tuz-ozellikleri",
+  "asit-baz-metaller",
   "din-felsefesi",
   "ahlak-felsefesi",
   "radyoaktivite",
