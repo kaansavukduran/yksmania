@@ -65,7 +65,7 @@
    "figureLessons": 41,
    "figures": 179,
    "questions": 535,
-   "stepped": 225,
+   "stepped": 365,
    "sheetsDone": 38,
    "sheets": 56,
    "open": 16
@@ -107,7 +107,7 @@
    "figureLessons": 8,
    "figures": 17,
    "questions": 400,
-   "stepped": 0,
+   "stepped": 400,
    "sheetsDone": 5,
    "sheets": 40,
    "open": 32
@@ -222,7 +222,7 @@
   "figureLessons": 200,
   "figures": 830,
   "questions": 6465,
-  "stepped": 3865,
+  "stepped": 4405,
   "sheetsDone": 109,
   "sheets": 517,
   "open": 340,

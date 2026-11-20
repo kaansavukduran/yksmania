@@ -16,6 +16,11 @@ const wordDigit = new RegExp(`(^|[\\s(“"«])([${L}]{3,})(?=\\d)`, "g");
 const suffixDigit = new RegExp(`(’)([${L}]{2,})(?=\\d)`, "g");
 const commaWord = new RegExp(`(?<![A-Za-z0-9ÇĞİÖŞÜ${L}])([A-ZÇĞİÖŞÜ]?[${L}]{2,})([,;])(?=[${L}]{3,})`, "g");
 const ellipsis = /(?<![.…])\.\.\.(?!\.)/g;
+// “fark−60°”, “nemi%100”, “için°C”: a word glued to a signed number, a percent or a degree unit.
+const wordSign = new RegExp(`(?<![A-Za-z0-9${L}])([${L}]{2,})(?=[−%]\\d|°C)`, "g");
+// “alçalıyor;100 m” and “merkezdir.1.013 hPa”: a clause mark glued to the next number.
+const semicolonDigit = /;(?=\d)/g;
+const sentenceDigit = new RegExp(`([${L}]{4,})\\.(?=\\d)`, "g");
 const linkLike = /[/_#@]|https?:|www\.|\.pdf|\.html/;
 
 function fixToken(token: string): string {
@@ -34,5 +39,8 @@ export function typeset(text: string): string {
     .join("");
   return spaced
     .replace(commaWord, (_m, word: string, mark: string) => `${word}${mark} `)
+    .replace(wordSign, "$1 ")
+    .replace(semicolonDigit, "; ")
+    .replace(sentenceDigit, "$1. ")
     .replace(ellipsis, "…");
 }

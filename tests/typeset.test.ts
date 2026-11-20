@@ -17,6 +17,14 @@ describe("display typesetting", () => {
     expect(typeset("olmalı;enerji korunur")).toBe("olmalı; enerji korunur");
     expect(typeset("3,5 kg ve EKOK(4,10)=20")).toBe("3,5 kg ve EKOK(4,10)=20");
   });
+  it("separates a word from a signed number, percent or degree unit, and a clause mark from the next number", () => {
+    expect(typeset("fark−60° ve−240 dakika")).toBe("fark −60° ve −240 dakika");
+    expect(typeset("bağıl nemi%100’dür")).toBe("bağıl nemi %100’dür");
+    expect(typeset("Celsius için°C")).toBe("Celsius için °C");
+    expect(typeset("alçalıyor;100 m’de")).toBe("alçalıyor; 100 m’de");
+    expect(typeset("merkezdir.1.013 hPa")).toBe("merkezdir. 1.013 hPa");
+    expect(typeset("P(2; −3) ve x−4=0, 3,5 ve 1.013")).toBe("P(2; −3) ve x−4=0, 3,5 ve 1.013");
+  });
   it("uses the ellipsis character", () => {
     expect(typeset("“Örneğin...” diye")).toBe("“Örneğin…” diye");
     expect(typeset("n=1,2,...")).toBe("n=1,2,…");
