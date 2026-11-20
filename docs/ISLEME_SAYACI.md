@@ -11,8 +11,8 @@ Her geliştirme turunda güncellenir. Sayılar yalnız gerçekten yapılmış i�
 | Kayıtlı toplam PDF (kanonik envanter, 17 Kasım taraması) | 8.981 |
 | Kanonik defterde öğretim aktarımı **tam** | 7 |
 | Kanonik defterde **kısmi** | 2 |
-| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 94 |
-| Okunduğu doğrulanan PDF toplamı (bu dal) | 94 / 8.981 (%1,05) |
+| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 95 |
+| Okunduğu doğrulanan PDF toplamı (bu dal) | 95 / 8.981 (%1,06) |
 
 Arşivdeki PDF'lerin büyük kısmı aynı konunun farklı biçimleridir (TYT konu özeti, “Dersler Cepte” sunumu, etkinlik, okuma metni, deneme). Bu yüzden PDF yüzdesi konu kapsamını ölçmez; konu kapsamı aşağıdaki rehber tablosundadır.
 
@@ -26,20 +26,20 @@ Klasördeki numaralı kopya kâğıtları ders ders sayıldı (517 kopya kâğı
 | TYT Matematik | 38 | 5 | %13,2 |
 | TYT Geometri | 32 | 1 | %3,1 |
 | TYT Fizik | 24 | 7 | %29,2 |
-| TYT Kimya | 56 | 13 | %23,2 |
+| TYT Kimya | 56 | 14 | %25,0 |
 | TYT Biyoloji | 36 | 7 | %19,4 |
 | TYT Tarih | 24 | 4 | %16,7 |
 | TYT Coğrafya | 40 | 5 | %12,5 |
 | TYT Felsefe | 17 | 3 | %17,6 |
 | TYT Din Kültürü | 20 | 3 | %15,0 |
-| **TYT toplam** | **320** | **52** | **%16,3** |
+| **TYT toplam** | **320** | **53** | **%16,6** |
 | AYT Matematik | 17 | 2 | %11,8 |
 | AYT Geometri | 4 | 1 | %25,0 |
 | AYT Fizik | 46 | 7 | %15,2 |
 | AYT Kimya | 55 | 11 | %20,0 |
 | AYT Biyoloji | 75 | 11 | %14,7 |
 | **AYT toplam** | **197** | **32** | **%16,2** |
-| **Genel toplam** | **517** | **84** | **%16,2** |
+| **Genel toplam** | **517** | **85** | **%16,4** |
 
 Notlar: TYT Türkçe'de 028 numarası iki farklı konuda kullanılmış (33 dosya, 32 numara). TYT Kimya'da 031 aynı adla iki kez var (eski ve yeni sürüm; 55 farklı konu). TYT Matematik ve Geometri'de 000 numaralı genel özetler var. AYT klasöründeki 7 durum raporu “232 konu” diyor ama klasörlerde 197 AYT kopya kâğıdı bulunuyor; 35 konunun kopya kâğıdı Drive'da yok. Bu tablodaki sıfırlar, o derste kopya kâğıdından figür/taktik aktarılmadığını söyler; uygulamada o dersin anlatımı ve soruları yine vardır (ayrıntı aşağıdaki kapsam tablosunda).
 
@@ -139,6 +139,7 @@ Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen boz
 | 009 TYT Kimya – Katman elektron dizilimi (kopya kâğıdı) | `katman-elektron-dizilimi` beş figürü: tıklanabilir altı tanecikle e = Z − q ve şematik katman diyagramı, Z kaydırıcısıyla 2n² kapasite ve gerçek yerleşme sütunları (K: 2,8,8,1), Al için adım adım dağıt–denetle, tıklanabilir periyot–grup okuma panosu (Ca²⁺, uyarılmış 2,7,2, He), nötr Na için temel/uyarılmış/geçersiz aday panosu; say–dağıt–denetle taktiği; 2017 TYT örnek Fen 10 ve 2022 TYT Fen 9 bağı | Kısmi |
 | 011 TYT Kimya – Atom çapı karşılaştırma (kopya kâğıdı) | `atom-capi-karsilastirma` altı figürü: tıklanabilir beş durumlu karar panosu (aynı grup, aynı periyot, kendi iyonu, eş elektronlu, çatışan yön), periyot kaydırıcısıyla Be–Mg–Ca katman diyagramı, Z kaydırıcısıyla Na→Cl küçülen bulut, tıklanabilir atom/iyon çiftleri, tıklanabilir 10 elektronlu seri (N³⁻→Al³⁺), Li–Cl çatışan oklar ve RSC kovalent yarıçap (130/100 pm, d = 2r) adımları; ilişki–kural taktiği; 2017 TYT örnek Fen 10 B bağı | Kısmi |
 | 013 TYT Kimya – Elektron ilgisi, elektronegatiflik, metalik–ametalik (kopya kâğıdı) | `elektron-ilgisi-elektronegatiflik` altı figürü: tıklanabilir dört kavram–süreç panosu, tıklanabilir enerji düzeyiyle işaret sözleşmesi (−349/−53/+15 kJ/mol), F–Cl iki eksen (EN 3,98/3,16; salınan enerji 328,165/348,575 kJ/mol, RSC), 2. periyot Pauling EN çubukları (Ne değer yok), tıklanabilir metalik karakter haritası (H ve yarı metal sınırı), iki elektron ekleme basamakları (+550 kJ/mol, 0,20 mol → +110 kJ); süreç–işaret taktiği; 2017 TYT örnek Fen 10 C bağı | Kısmi |
+| 010 TYT Kimya – Elementlerin sınıflandırılması (kopya kâğıdı) | `elementlerin-siniflandirilmasi` altı figürü: tıklanabilir dört periyotluk sınıf haritası (metal, ametal, yarı metal, soy gaz, H istisnası; basamak çizgisi), adım adım metalik bağ ve elektron denizi (iletim, dövme), tıklanabilir ametal hâl/yapı panosu (grafit–elmas allotropları), iletkenlik şeridi (yarı iletken bölge), He–Ne–Ar katman diyagramları, 2026 TYT Fen 14 Ca/Au/Al kanıt panosu (aktif, soy, amfoter; cevap D); konum–kanıt taktiği | Kısmi |
 
 PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olarak etiketlenmez.
 
@@ -152,7 +153,7 @@ Bu tablo her turda uygulamanın kendi verisinden yeniden üretilir. “Resmî ko
 | TYT Matematik | 31 | 45 | 40 | 735 | 17 (%37,8) | 45 | 21 | 5 / 38 (%13,2) |
 | TYT Geometri | 16 | 19 | 19 | 217 | 19 (%100,0) | 174 | 15 | 1 / 32 (%3,1) |
 | TYT Fizik | 20 | 28 | 24 | 311 | 24 (%85,7) | 177 | 23 | 7 / 24 (%29,2) |
-| TYT Kimya | 17 | 57 | 55 | 535 | 16 (%28,1) | 59 | 19 | 13 / 56 (%23,2) |
+| TYT Kimya | 17 | 57 | 55 | 535 | 17 (%29,8) | 65 | 20 | 14 / 56 (%25,0) |
 | TYT Biyoloji | 18 | 45 | 36 | 515 | 12 (%26,7) | 37 | 14 | 7 / 36 (%19,4) |
 | TYT Tarih | 22 | 34 | 24 | 390 | 6 (%17,6) | 16 | 4 | 4 / 24 (%16,7) |
 | TYT Coğrafya | 21 | 40 | 40 | 400 | 8 (%20,0) | 17 | 5 | 5 / 40 (%12,5) |
@@ -163,9 +164,9 @@ Bu tablo her turda uygulamanın kendi verisinden yeniden üretilir. “Resmî ko
 | AYT Fizik | 32 | 47 | 46 | 541 | 11 (%23,4) | 26 | 15 | 7 / 46 (%15,2) |
 | AYT Kimya | 34 | 56 | 55 | 680 | 18 (%32,1) | 19 | 14 | 11 / 55 (%20,0) |
 | AYT Biyoloji | 29 | 76 | 75 | 907 | 16 (%21,1) | 39 | 12 | 11 / 75 (%14,7) |
-| **Toplam** | **341** | **540** | **505** | **6.465** | **175 (%32,4)** | **710** | **161** | **84 / 517 (%16,2)** |
+| **Toplam** | **341** | **540** | **505** | **6.465** | **176 (%32,6)** | **716** | **162** | **85 / 517 (%16,4)** |
 
-Okuma: anlatım ve soru bütün derslerde var (505 / 540 derste anlatım, 6.465 özgün soru); eksik olan en çok görsel/etkileşimli katman (figürlü ders %32) ve kopya kâğıtlarından aktarım (%16,2). AYT Matematik ve AYT Geometri'de resmî konu sayısı uygulama dersinden fazladır, çünkü bu derslerde birkaç resmî konu tek derste toplanmıştır.
+Okuma: anlatım ve soru bütün derslerde var (505 / 540 derste anlatım, 6.465 özgün soru); eksik olan en çok görsel/etkileşimli katman (figürlü ders %32) ve kopya kâğıtlarından aktarım (%16,4). AYT Matematik ve AYT Geometri'de resmî konu sayısı uygulama dersinden fazladır, çünkü bu derslerde birkaç resmî konu tek derste toplanmıştır.
 
 Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan konular):
 
@@ -196,7 +197,7 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | AYT Biyoloji | 75 | 4 |
 | **Toplam** | **371** | **82 (%22,1)** |
 
-Toplam bölüm figürü: 710 (736 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 117 (109 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
+Toplam bölüm figürü: 716 (742 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 118 (110 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
 
 TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 
@@ -251,6 +252,7 @@ TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 | 19 Kasım (44) | Biyoloji: güncel çevre sorunları 3 figür; 1 taktik | 1 | 81 / 371 |
 | 19 Kasım (45) | AYT Fizik: çembersel hareket, BHH izdüşümü, Lenz, Kmax–f, manyetik yarıçap (5 figür, birim sadeleştirmeli okumalar); 1 taktik; kupa sistemi | 0 | 81 / 371 |
 | 19 Kasım (46) | AYT Kimya: Boyle pistonu + P–V hiperbolü, denge bozulmasında etki anı (N₂ ekleme), kuvvetli asit–baz titrasyon eğrisi (mmol hesabı), Daniell pili (elektron/iyon yolu, 1,10 V), Cr/Cu orbital istisnaları (5 figür, birim okumalı) | 0 | 86 / 371 |
+| 20 Kasım (112) | Drive TYT Kimya 010 Elementlerin sınıflandırılması okundu: sınıf haritası, elektron denizi, ametal yapıları, iletkenlik şeridi, soy gaz katmanları, 2026 TYT Fen 14 kanıt panosu (6 figür), 1 taktik | 0 | 125 / 371 |
 | 20 Kasım (111) | Drive TYT Kimya 013 Elektron ilgisi ve elektronegatiflik okundu: kavram–süreç panosu, işaret sözleşmesi, F–Cl iki eksen, Pauling çubukları, metalik harita, iki basamak enerji (6 figür), 1 taktik | 0 | 124 / 371 |
 | 20 Kasım (110) | Drive TYT Kimya 011 Atom çapı karşılaştırma okundu: karar panosu, grup ve periyot kaydırıcıları, atom/iyon çiftleri, eş elektronlu seri, Li–Cl çatışan yön (6 figür), 1 taktik | 0 | 123 / 371 |
 | 20 Kasım (109) | Drive TYT Kimya 009 Katman elektron dizilimi okundu: e = Z − q katman diyagramı, 2n² kapasite sütunları, Al dağıt–denetle adımları, periyot–grup ve aday dağılım panoları (5 figür), 1 taktik | 0 | 122 / 371 |

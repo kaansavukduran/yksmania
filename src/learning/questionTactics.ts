@@ -1656,6 +1656,19 @@ export const questionTactics: QuestionTactic[] = [
       "Çok basamakta başlangıç taneciğini yaz ve işaretli topla: −150 + 700 = +550 kJ/mol; molle çarp. İlk basamağı ikiyle çarpma.",
     ],
   },
+  {
+    id: "element-sinif-konum-kanit",
+    guides: ["elementlerin-siniflandirilmasi"],
+    match: /metal|ametal|yarı metal|soy gaz|amfoter|aktif metal|soy metal|iletken|dövülebilir|parlak/i,
+    title: "Element sınıfında önce konum, sonra özellik kümesi; soru düzeyini değiştirme",
+    steps: [
+      "Konum verildiyse: 18. grup → soy gaz; H → ametal (1. grupta olsa da); basamak çizgisi (B, Si, Ge, As) → yarı metal; kalan sol–orta → metal.",
+      "Yalnız özellik verildiyse tek belirtiye değil kümeye bak: iletkenlik + işlenebilirlik + hâl. “Parlak” tek başına metal demek değildir.",
+      "Mutlak ifadeyi istisnayla sına: Hg sıvı metal, grafit iletken ametal, He’de son katman 2, Kr/Xe özel koşulda bileşik yapar.",
+      "Aynı grup aynı sınıf demek değildir: B yarı metal, Al metal (13. grup).",
+      "Tepkime verildiyse soru metal alt sınıfıdır: asitle H₂ → aktif; tepkime yok → soy metal; asit ve bazla H₂ → amfoter (2026 TYT Fen 14: Ca, Au, Al → D).",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

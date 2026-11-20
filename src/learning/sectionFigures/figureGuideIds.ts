@@ -28,6 +28,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "katman-elektron-dizilimi",
   "atom-capi-karsilastirma",
   "elektron-ilgisi-elektronegatiflik",
+  "elementlerin-siniflandirilmasi",
   "din-felsefesi",
   "ahlak-felsefesi",
   "radyoaktivite",

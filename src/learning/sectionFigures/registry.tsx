@@ -90,6 +90,7 @@ import { physicsFiguresTorque } from "./physicsFiguresTorque";
 import { chemistryFiguresIonization } from "./chemistryFiguresIonization";
 import { chemistryFiguresShells } from "./chemistryFiguresShells";
 import { chemistryFiguresRadius } from "./chemistryFiguresRadius";
+import { chemistryFiguresClasses } from "./chemistryFiguresClasses";
 import { chemistryFiguresAffinity } from "./chemistryFiguresAffinity";
 import { biologyFiguresSkin } from "./biologyFiguresSkin";
 import { geographyFiguresWater } from "./geographyFiguresWater";
@@ -195,6 +196,7 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   chemistryFiguresShells,
   chemistryFiguresRadius,
   chemistryFiguresAffinity,
+  chemistryFiguresClasses,
   biologyFiguresSkin,
   geographyFiguresWater,
   biologyFiguresAtp,
