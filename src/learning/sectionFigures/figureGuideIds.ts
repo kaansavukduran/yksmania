@@ -45,6 +45,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "tepkimeler-denklemler",
   "tepkime-turleri",
   "denklemli-miktar-gecisi",
+  "polimer-kozmetik-ilac",
   "din-felsefesi",
   "ahlak-felsefesi",
   "radyoaktivite",

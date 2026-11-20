@@ -107,6 +107,7 @@ import { chemistryFiguresDailyAcids } from "./chemistryFiguresDailyAcids";
 import { chemistryFiguresBalancing } from "./chemistryFiguresBalancing";
 import { chemistryFiguresReactionTypes } from "./chemistryFiguresReactionTypes";
 import { chemistryFiguresStoichPath } from "./chemistryFiguresStoichPath";
+import { chemistryFiguresPolymers } from "./chemistryFiguresPolymers";
 import { chemistryFiguresAffinity } from "./chemistryFiguresAffinity";
 import { biologyFiguresSkin } from "./biologyFiguresSkin";
 import { geographyFiguresWater } from "./geographyFiguresWater";
@@ -229,6 +230,7 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   chemistryFiguresBalancing,
   chemistryFiguresReactionTypes,
   chemistryFiguresStoichPath,
+  chemistryFiguresPolymers,
   biologyFiguresSkin,
   geographyFiguresWater,
   biologyFiguresAtp,

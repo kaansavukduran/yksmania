@@ -1877,6 +1877,19 @@ export const questionTactics: QuestionTactic[] = [
       "Geriye yürü: 6,72 L H₂ = 0,30 mol → Al 0,30 × 2/3 = 0,20 mol = 5,4 g. Ardışık tepkimede ara ürünün yalnız kullanılan kısmını taşı (0,5 mol CaO’nun %80’i → 0,4 mol Ca(OH)₂ = 29,6 g).",
     ],
   },
+  {
+    id: "polimer-ad-yapi-islev",
+    guides: ["polimer-kozmetik-ilac"],
+    match: /polimer|monomer|polietilen|PVC|PET|PTFE|teflon|plastik|kozmetik|emülsiyon|süspansiyon|etkin madde|yardımcı madde|tablet/i,
+    title: "Polimer ve ürün sorusunda kısaltmayı tam ada, yapıya ve işleve aç; ürünü dört düzeyde oku",
+    steps: [
+      "Kısaltmayı aç: PE polietilen (film), PP polipropilen, PVC polivinil klorür (boru), PS polistiren, PTFE politetrafloroeten (yapışmaz kaplama), PET polietilen tereftalat (şişe, polyester lif).",
+      "2019 TYT Fen 14 (A): düşük yapışmalı kaplama PTFE’dir; PET ile harf benzerliği aynı malzeme demek değildir.",
+      "Katılmada çift bağ açılır: n CH₂=CH₂ → [–CH₂–CH₂–]ₙ; zincirde etilen çift bağı kalmaz. (AYT bağlantısı: n = zincir M ÷ tekrar birimi M.)",
+      "Dağılımı ayır: çözelti (molekül/iyon), süspansiyon (katı tanecik), emülsiyon (sıvı damla; krem). Sıvı görünüş tek başına çözelti demek değildir.",
+      "Ürünü dört düzeyde oku: ambalaj polimeri, dağılım türü, bileşen görevi, kullanım amacı. Etkin madde etkiyle, yardımcı madde (bağlayıcı, koruyucu) biçim ve kararlılıkla ilgilidir.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
