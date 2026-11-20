@@ -25,6 +25,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "din-felsefesi",
   "radyoaktivite",
   "tyt-mat-mutlak-deger-kaynak-038",
+  "basit-esitsizlikler",
   "duyu-organlari-goz",
   "sinir-sistemi-css-hastaliklar",
   "sinir-sistemi-orta-arka-beyin",

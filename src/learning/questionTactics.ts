@@ -1461,6 +1461,19 @@ export const questionTactics: QuestionTactic[] = [
       "Hastalık: MS merkezî miyelin, Parkinson dopaminli nöron, Alzheimer amiloid/tau, epilepsi anormal elektriksel etkinlik, depresyon çok etkenli; tek belirtiden kesin tanı çıkarma.",
     ],
   },
+  {
+    id: "esitsizlik-yon-uc-baglac",
+    guides: ["basit-esitsizlikler", "tyt-mat-basit-esitsizlikler-kaynak-037"],
+    match: /eşitsizlik|aralık|en az|en çok|fazla|kâr|zarar|başa baş|çözüm kümesi|ve|veya|<|>|≤|≥/i,
+    title: "Eşitsizlikte yönü, ucu ve bağlacı ayrı denetle",
+    steps: [
+      "Yön yalnız negatif sayıyla çarpma/bölmede döner; sabit eklemek ya da çıkarmak yönü değiştirmez. Değişkenli ifadeye bölmeden önce işaretini bil.",
+      "Uç: ≤, ≥ dolu nokta ve köşeli parantez; <, > boş nokta ve normal parantez; ∞ daima normal parantez.",
+      "Bileşik eşitsizlikte üç tarafa aynı işlemi uygula; ‘ve’ kesişim, ‘veya’ birleşim.",
+      "Sözcük: en az ≥, en çok ≤, fazla/düşük sıkı; kâr gelir > maliyet, zarar <, ‘zarar etmez’ ≥ (2024 TYT Mat 8: 10 < b < 30).",
+      "Aralık işleminde bağımsızlığı ve işareti sor: a − b’nin alt ucunda a küçük, b büyük; sıfırı içeren aralıkta karenin alt ucu 0.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
