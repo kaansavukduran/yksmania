@@ -114,6 +114,7 @@ import { chemistryFiguresSolidMass } from "./chemistryFiguresSolidMass";
 import { chemistryFiguresPurity } from "./chemistryFiguresPurity";
 import { chemistryFiguresReactiveMix } from "./chemistryFiguresReactiveMix";
 import { chemistryFiguresPhaseCurve } from "./chemistryFiguresPhaseCurve";
+import { chemistryFiguresSolidsViscosity } from "./chemistryFiguresSolidsViscosity";
 import { chemistryFiguresAffinity } from "./chemistryFiguresAffinity";
 import { biologyFiguresSkin } from "./biologyFiguresSkin";
 import { geographyFiguresWater } from "./geographyFiguresWater";
@@ -243,6 +244,7 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   chemistryFiguresPurity,
   chemistryFiguresReactiveMix,
   chemistryFiguresPhaseCurve,
+  chemistryFiguresSolidsViscosity,
   biologyFiguresSkin,
   geographyFiguresWater,
   biologyFiguresAtp,

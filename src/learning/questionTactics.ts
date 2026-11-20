@@ -1968,6 +1968,19 @@ export const questionTactics: QuestionTactic[] = [
       "Birim: 1 atm = 760 mmHg; oranlarda sıcaklık Kelvin (°C oranı kullanılmaz). Gaz yasaları bu TYT kazanımında isteğe bağlı AYT bağlantısıdır.",
     ],
   },
+  {
+    id: "kati-tur-viskozite-tek-degisken",
+    guides: ["katilar-viskozite"],
+    match: /kristal|amorf|katı|grafit|elmas|cam|viskozite|akmaya|akıyor|akış|akıcılık|mPa·s|yük taşıyıcı|iletme/i,
+    title: "Katıda tanecik → tutan etkileşim → iletkenlik; viskozitede birimi ve tek değişkeni denetle",
+    steps: [
+      "Düzen: kristal uzun erimli tekrar, amorf yok (cam aralıkta yumuşar). Sertlik ya da renk kanıt değildir.",
+      "Tür: NaCl iyonik (katı iletmez, eriyik iletir), I₂ moleküler (I–I molekül içi; kristal London ile), elmas kovalent ağ (grafit tabakada iletir), Zn metalik (katı iletir).",
+      "Viskozite = akmaya direnç; önce birimi eşitle (1 Pa·s = 1000 mPa·s; 0,0015 Pa·s = 1,5 mPa·s).",
+      "2020 TYT Fen 11 (C): 25 °C’de etanol 1,074 > su 0,890 > metanol 0,544; en düşük viskozite “en güçlü çekim” demek değildir; sıvı soğuyunca viskozite artar.",
+      "Tek değişkenli kıyas: aynı sıvıda iki sıcaklık ya da aynı sıcaklıkta iki sıvı. İkisi birden değişirse neden seçilemez; bilye süresi oranı η oranı değildir, viskoziteden yoğunluk çıkmaz.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
