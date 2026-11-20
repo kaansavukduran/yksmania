@@ -20,3 +20,4 @@ private/
 release/
 __pycache__/
 *.py[cod]
+.claude/worktrees/
