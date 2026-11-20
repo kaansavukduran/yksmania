@@ -156,6 +156,11 @@ vi.mock("../src/components/QuestionHelp", async (original) => {
       fixture.help = props;
       return createElement(actual.QuestionHelp, props);
     },
+    // Pages render the stateful wrapper; capture the props they pass.
+    GuidedQuestionHelp: (props: Parameters<typeof actual.GuidedQuestionHelp>[0]) => {
+      fixture.help = props;
+      return createElement(actual.GuidedQuestionHelp, props);
+    },
   };
 });
 vi.mock("../src/components/Aion", () => ({ Aion: () => null }));

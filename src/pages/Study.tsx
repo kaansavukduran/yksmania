@@ -16,7 +16,7 @@ import { Aion } from "../components/Aion";
 import { PastExamQuestions } from "../components/PastExamQuestions";
 import { lessonTopic } from "../domain/studyPlan";
 import { StudyTimer } from "../components/StudyTimer";
-import { QuestionHelp } from "../components/QuestionHelp";
+import { GuidedQuestionHelp } from "../components/QuestionHelp";
 import { helpPanels, previousHelpPanelCount } from "../learning/questionHelp";
 import { effectiveHelpLevel } from "../learning/helpProgression";
 import { SourceQuestionFigure } from "../learning/SourceQuestionFigure";
@@ -285,7 +285,7 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
               </div>
             </fieldset>
           )}
-          <QuestionHelp
+          <GuidedQuestionHelp
             question={helpQuestion}
             level={visibleHelpLevel}
             onLevel={(level) => void openHelp(level)}

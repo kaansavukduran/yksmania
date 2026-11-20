@@ -105,3 +105,40 @@
 .help-tactic li + li {
   margin-top: 0.25rem;
 }
+
+/* Adım adım çözüm: each newly opened step fades in; reduced motion skips it. */
+.question-help.is-stepping .help-step {
+  animation: help-step-in 0.24s ease-out;
+}
+@keyframes help-step-in {
+  from { opacity: 0; transform: translateY(0.35rem); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .question-help.is-stepping .help-step { animation: none; }
+}
+.help-step-chip {
+  display: inline-block;
+  margin-bottom: 0.25rem;
+  padding: 0.1rem 0.55rem;
+  border-radius: 1rem;
+  font-size: 0.75em;
+  background: color-mix(in srgb, var(--accent) 16%, transparent);
+  color: var(--text);
+}
+.help-step-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  margin-top: 0.6rem;
+}
+.help-steps-start { margin-inline-end: 1rem; }
+.help-route {
+  margin-block: 0.6rem;
+  padding: 0.6rem 0.8rem;
+  border-inline-start: 3px solid var(--accent);
+  background: color-mix(in srgb, var(--accent) 6%, transparent);
+}
+.help-route h4 { margin-block: 0.2rem; }
+.help-close { margin-top: 0.8rem; }

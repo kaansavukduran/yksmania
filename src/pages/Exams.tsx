@@ -29,7 +29,7 @@ import type { ExamDraft, ExamSession } from "../domain/examModel";
 import "../exams.css";
 import { hidesSubject } from "../domain/smartSession";
 import { ExamInsights } from "../components/ExamInsights";
-import { QuestionHelp } from "../components/QuestionHelp";
+import { GuidedQuestionHelp } from "../components/QuestionHelp";
 import { helpPanels, previousHelpPanelCount } from "../learning/questionHelp";
 import { effectiveHelpLevel } from "../learning/helpProgression";
 
@@ -479,7 +479,7 @@ function ExamRunner({
             />
           </div>
           {(
-            <QuestionHelp
+            <GuidedQuestionHelp
               key={q.id}
               question={q}
               level={visibleHelpLevel}
@@ -784,7 +784,7 @@ function SolutionHelp({
 }) {
   const [level, setLevel] = useState(0);
   return (
-    <QuestionHelp
+    <GuidedQuestionHelp
       question={question}
       level={level}
       onLevel={setLevel}

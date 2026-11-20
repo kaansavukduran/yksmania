@@ -1,11 +1,12 @@
 import { clarifiedQuestionView } from "../domain/questionPresentation";
-import { Lightbulb } from "lucide-react";
+import { Footprints, Lightbulb } from "lucide-react";
 import type { HelpQuestion } from "../domain/questionHelpModel";
 import { helpPanels, resolvedGuidance } from "../learning/questionHelp";
 import "./questionHelp.css";
 import { SourceQuestionFigure } from "../learning/SourceQuestionFigure";
 import { sourceQuestionPresentation } from "../learning/sourceExercises024";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useState } from "react";
+import type { ComponentProps } from "react";
 import { hintFigureFor } from "../learning/sectionFigures/hintFigure";
 import { tacticsFor } from "../learning/questionTactics";
 const SectionFigure = lazy(() =>
@@ -18,12 +19,22 @@ export function QuestionHelp({
   onLevel,
   disabled = false,
   reviewed = false,
+  steps = false,
+  onSteps,
+  hidden = false,
+  onHidden,
 }: {
   question: HelpQuestion;
   level: number;
   onLevel: (level: number) => void;
   disabled?: boolean;
   reviewed?: boolean;
+  /** Step-by-step mode; only offered when the caller can hold that state. */
+  steps?: boolean;
+  onSteps?: () => void;
+  /** The learner closed the full solution to try a similar item alone. */
+  hidden?: boolean;
+  onHidden?: (hidden: boolean) => void;
 }) {
   const question = clarifiedQuestionView(originalQuestion);
   const guidance = resolvedGuidance(question);
@@ -34,13 +45,36 @@ export function QuestionHelp({
   // panel; it is omitted when the question already carries its own figure.
   const conceptFigure = sourcePresentation?.hintFigure ? undefined : hintFigureFor(question);
   const tactics = tacticsFor(question);
+  // “Adım adım çözüm” walks the same panels one step at a time. Every opened
+  // step is help: the parent records the level and the answer is no longer
+  // independent. Closing the solution only hides it; nothing is undone.
+  const canStep = panels.length >= 2 && !!onSteps;
+  const total = panels.length + 1;
+  const route = guidance ? thirtySecondRoute(guidance.strategy, guidance.check) : undefined;
+  if (hidden)
+    return (
+      <div className="question-help">
+        <p className="small help-closed" role="status">
+          Çözüm kapatıldı. Bu soru yardımlı kaydedildi; benzer bir soruyu yardımsız dene.
+        </p>
+        <button type="button" className="text-button" onClick={() => onHidden?.(false)}>
+          Çözümü yeniden göster
+        </button>
+      </div>
+    );
   return (
-    <div className="question-help">
+    <div className={`question-help${steps ? " is-stepping" : ""}`}>
       {level > 0 && (
         <aside className="hint-box" aria-label="Çözüm rehberi">
           <div className="help-content">
             {panels.slice(0, level).map((panel, index) => (
-              <section key={index}>
+              <section key={index} className={steps ? "help-step" : undefined}>
+                {steps && (
+                  <span className="help-step-chip">
+                    Adım {index + 1} / {total}
+                    {index === 0 ? " · terimler" : index === 1 ? " · veri ve yöntem" : ""}
+                  </span>
+                )}
                 <h3>{panel.title}</h3>
                 {panel.paragraphs.map((paragraph, i) => (
                   <p key={i}>{paragraph}</p>
@@ -89,7 +123,18 @@ export function QuestionHelp({
                 )}
                 {guidance && (
                   <>
-                    <h4>Şıkların mantığı</h4>
+                    {steps && route && (
+                      <div className="help-route">
+                        <h4>30 saniyelik rota</h4>
+                        <p>{route}</p>
+                        <h4>1 dakika kuralı</h4>
+                        <p>
+                          Bir dakikada ilk işlemi kuramıyorsan soruyu işaretle, sonrakine geç ve turun sonunda
+                          dön. Kurduysan bitir; yarım bırakılan işlem süreyi iki kez harcatır.
+                        </p>
+                      </div>
+                    )}
+                    <h4>{steps ? "Çeldirici otopsisi: şıkların mantığı" : "Şıkların mantığı"}</h4>
                     <ol type="A">
                       {guidance.optionReasons.map((reason, i) => (
                         <li key={i}>{reason}</li>
@@ -103,6 +148,11 @@ export function QuestionHelp({
                 )}
               </section>
             )}
+            {steps && full && onHidden && (
+              <button type="button" className="secondary help-close" onClick={() => onHidden?.(true)}>
+                Çözümü kapat, benzerini bağımsız dene
+              </button>
+            )}
             {!reviewed && (
               <p className="small help-evidence">
                 Yardım alındı · bu soru bağımsız doğru olarak sayılmaz.
@@ -111,8 +161,19 @@ export function QuestionHelp({
           </div>
         </aside>
       )}
-      {!full && (
+      {!full && steps && (
+        <div className="help-step-actions" role="group" aria-label="Adım adım çözüm">
+          <button type="button" className="secondary" disabled={disabled} onClick={() => onLevel(level + 1)}>
+            {level < panels.length ? "Sonraki adım" : "Son adım: tam çözüm"}
+          </button>
+          <button type="button" className="text-button" disabled={disabled} onClick={() => onLevel(total)}>
+            Tüm adımları aç
+          </button>
+        </div>
+      )}
+      {!full && !steps && (
         <button
+          type="button"
           className="text-button help-next"
           disabled={disabled}
           onClick={() => onLevel(level + 1)}
@@ -125,6 +186,45 @@ export function QuestionHelp({
               : "Tam çözümü aç"}
         </button>
       )}
+      {!full && !steps && canStep && (
+        <button
+          type="button"
+          className="text-button help-steps-start"
+          disabled={disabled}
+          onClick={() => {
+            onSteps?.();
+            if (level === 0) onLevel(1);
+          }}
+        >
+          <Footprints size={18} aria-hidden="true" />
+          Adım adım çözüm
+        </button>
+      )}
     </div>
+  );
+}
+
+/** A short route from the guide's own strategy and check sentences. */
+function thirtySecondRoute(strategy: string, check: string) {
+  const first = (text: string) => text.split(/(?<=[.!?])\s/)[0]?.trim() ?? text;
+  return `${first(strategy)} Son kontrol: ${first(check)}`;
+}
+
+/**
+ * QuestionHelp with its step-by-step state. Step mode and the closed solution
+ * are view state only and reset when another question appears.
+ */
+export function GuidedQuestionHelp(props: Omit<ComponentProps<typeof QuestionHelp>, "steps" | "onSteps" | "hidden" | "onHidden">) {
+  const id = props.question.id;
+  const [view, setView] = useState({ id, steps: false, hidden: false });
+  const current = view.id === id ? view : { id, steps: false, hidden: false };
+  return (
+    <QuestionHelp
+      {...props}
+      steps={current.steps}
+      onSteps={() => setView({ ...current, steps: true })}
+      hidden={current.hidden}
+      onHidden={(hidden) => setView({ ...current, hidden })}
+    />
   );
 }
