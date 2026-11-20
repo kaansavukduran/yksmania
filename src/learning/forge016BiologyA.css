@@ -183,3 +183,12 @@
   animation: none !important;
   transition: none !important;
 }
+
+/* Çok büyütülmüş yazıda (arayüz 2 kat, metin 1,5 kat) dar ekranda uzun sözcük
+   ortadan bölünmesin: paragraf yazısı ekran genişliğinin yüzde 13'ünü aşmaz. */
+@media (max-width: 360px) {
+  .bio016a p,
+  .bio016a label {
+    font-size: min(1em, 13vw);
+  }
+}

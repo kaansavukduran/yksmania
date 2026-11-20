@@ -11,6 +11,9 @@ test("Zen focus mode hides navigation with F or the topbar button, exits with Es
   await expect(page.locator(".topbar")).toBeHidden();
   await expect(page.getByRole("button", { name: "Odaktan çık" })).toBeVisible();
   await page.reload();
+  // The exit button proves the app has mounted in Zen; before that a hidden
+  // sidebar only means nothing is rendered yet and Escape would go nowhere.
+  await expect(page.getByRole("button", { name: "Odaktan çık" })).toBeVisible();
   await expect(sidebar).toBeHidden();
   await page.keyboard.press("Escape");
   await expect(sidebar).toBeVisible();

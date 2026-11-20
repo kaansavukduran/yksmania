@@ -1,0 +1,670 @@
+[
+ {
+  "from": "Sıcaklık — ısı",
+  "to": "Sıcaklık, ısı"
+ },
+ {
+  "from": "Isı — iç enerji",
+  "to": "Isı, iç enerji"
+ },
+ {
+  "from": "İç enerji — sıcaklık",
+  "to": "İç enerji, sıcaklık"
+ },
+ {
+  "from": "Isı — sıcaklık",
+  "to": "Isı, sıcaklık"
+ },
+ {
+  "from": "Sıcaklık — iç enerji",
+  "to": "Sıcaklık, iç enerji"
+ },
+ {
+  "from": "Saf suyun normal basınçtaki erime geçişinde buz ve su birlikte kaldığı sürece sıcaklık 0 °C kalabilir; verilen enerji eriyen miktarı ve iç enerjiyi artırır. Erime enerjisi Q=meriyenL ile hesaplanır. Q=mcΔT tek hâldeki sıcaklık değişimine aittir, bu sabit sıcaklıktaki erimeyi açıklamaz. Kütle yok olmaz; katıdan sıvıya geçer.",
+  "to": "Saf suyun normal basınçtaki erime geçişinde buz ve su birlikte kaldığı sürece sıcaklık 0 °C kalabilir; verilen enerji eriyen miktarı ve iç enerjiyi artırır. Erime enerjisi Q=meriyen L ile hesaplanır. Q=mcΔT tek hâldeki sıcaklık değişimine aittir, bu sabit sıcaklıktaki erimeyi açıklamaz. Kütle yok olmaz; katıdan sıvıya geçer."
+ },
+ {
+  "from": "Dik x ve y eksenlerinde iki kuvvetin bileşenleri F₁=(4,−3)N ve F₂=(−4,7)N. Bileşkenin yönü ve büyüklüğü hangisidir?",
+  "to": "Dik x ve y eksenlerinde iki kuvvetin bileşenleri F₁=(4,−3) N ve F₂=(−4,7) N. Bileşkenin yönü ve büyüklüğü hangisidir?"
+ },
+ {
+  "from": "Rx=4+(−4)=0 N. Ry=−3+7=+4 N. Bileşke(0,+4)N olduğundan+y yönünde ve büyüklüğü 4 N’dir.",
+  "to": "Rx=4+(−4)=0 N. Ry=−3+7=+4 N. Bileşke (0,+4) N olduğundan +y yönünde ve büyüklüğü 4 N’dir."
+ },
+ {
+  "from": "Mutlak sapma|40,8−40,0|=0,8 mm. Göreli sapma 0,8/40,0=0,02. Yüzde değeri 0,02·100=%2’dir; birimler oranda sadeleşir.",
+  "to": "Mutlak sapma |40,8−40,0|=0,8 mm. Göreli sapma 0,8/40,0=0,02. Yüzde değeri 0,02·100=%2’dir; birimler oranda sadeleşir."
+ },
+ {
+  "from": "Mutlak sapma|40,8−40,0|=0,8 mm.",
+  "to": "Mutlak sapma |40,8−40,0|=0,8 mm."
+ },
+ {
+  "from": "Bir sensör aynı kesin 0 referansta deneyden önce−0,3 birim, deneyden sonra+0,1 birim okuyor. İki sıfır kontrolü dışında veri yok. Hangi sonuç doğrudan desteklenir?",
+  "to": "Bir sensör aynı kesin 0 referansta deneyden önce−0,3 birim, deneyden sonra +0,1 birim okuyor. İki sıfır kontrolü dışında veri yok. Hangi sonuç doğrudan desteklenir?"
+ },
+ {
+  "from": "Sıfır göstergesi+0,1−(−0,3)=+0,4 birim değişmiştir. Bu iki anda sıfır kaymasının aynı olmadığını gösterir. Başka referans noktası verilmediği için tüm ölçek çarpanının ne kadar değiştiği çıkarılamaz.",
+  "to": "Sıfır göstergesi +0,1−(−0,3)=+0,4 birim değişmiştir. Bu iki anda sıfır kaymasının aynı olmadığını gösterir. Başka referans noktası verilmediği için tüm ölçek çarpanının ne kadar değiştiği çıkarılamaz."
+ },
+ {
+  "from": "Sıfır göstergesi+0,1−(−0,3)=+0,4 birim değişmiştir.",
+  "to": "Sıfır göstergesi +0,1−(−0,3)=+0,4 birim değişmiştir."
+ },
+ {
+  "from": "Sıfır okuması+0,4 birim değişmiştir; ölçek çarpanı ayrıca bilinmez.",
+  "to": "Sıfır okuması +0,4 birim değişmiştir; ölçek çarpanı ayrıca bilinmez."
+ },
+ {
+  "from": "Bir sensörün kalibrasyon verileri x=1,2,3,4 için sırasıyla y=2,4,6,6. Hiçbir ölçüm belirsizliği verilmediği ve değerlerin kesin kabul edildiği belirtiliyor. Tüm aralık için y=2 x iddiasına ilişkin en uygun değerlendirme hangisidir?",
+  "to": "Bir sensörün kalibrasyon verileri x=1, 2, 3, 4 için sırasıyla y=2, 4, 6, 6. Hiçbir ölçüm belirsizliği verilmediği ve değerlerin kesin kabul edildiği belirtiliyor. Tüm aralık için y=2x iddiasına ilişkin en uygun değerlendirme hangisidir?"
+ },
+ {
+  "from": "y=2 x dört kesin veriye de uyar.",
+  "to": "y=2x dört kesin veriye de uyar."
+ },
+ {
+  "from": "İlk üç girdide 2 x sırasıyla 2,4,6 verir ve verilerle uyumludur. x=4 için model 8 öngörür; kesin veri 6 olduğundan tüm aralıkta aynı model uymaz. Son noktada doyma gibi başka bir mekanizma olabilir; bu mekanizmanın ne olduğu tek veriyle kesinleşmez. Tüm aralık için model yeniden sınanmalıdır.",
+  "to": "İlk üç girdide 2x sırasıyla 2, 4, 6 verir ve verilerle uyumludur. x=4 için model 8 öngörür; kesin veri 6 olduğundan tüm aralıkta aynı model uymaz. Son noktada doyma gibi başka bir mekanizma olabilir; bu mekanizmanın ne olduğu tek veriyle kesinleşmez. Tüm aralık için model yeniden sınanmalıdır."
+ },
+ {
+  "from": "İlk üç girdide 2 x sırasıyla 2,4,6 verir ve verilerle uyumludur.",
+  "to": "İlk üç girdide 2x sırasıyla 2, 4, 6 verir ve verilerle uyumludur."
+ },
+ {
+  "from": "Hacimler m/2 ve m/8; oran 4: 1’dir. Toplam hacim 5 m/8, yoğun bileşenin hacmi m/8 olur. Pay(m/8)/(5 m/8)=1/5=%20.",
+  "to": "Hacimler m/2 ve m/8; oran 4:1’dir. Toplam hacim 5m/8, yoğun bileşenin hacmi m/8 olur. Pay (m/8)/(5m/8)=1/5=%20."
+ },
+ {
+  "from": "Hacimler m/2 ve m/8; oran 4: 1’dir.",
+  "to": "Hacimler m/2 ve m/8; oran 4:1’dir."
+ },
+ {
+  "from": "ρilk=m/Vilk veρson=m/(1,25 Vilk). Oran 1/1,25=0,8 olur. Yoğunluk 0,8 katına iner; sıcaklığın sayısal değeri gerekmez, çünkü hacim çarpanı açık verilmiştir.",
+  "to": "ρilk=m/Vilk ve ρson=m/(1,25 Vilk). Oran 1/1,25=0,8 olur. Yoğunluk 0,8 katına iner; sıcaklığın sayısal değeri gerekmez, çünkü hacim çarpanı açık verilmiştir."
+ },
+ {
+  "from": "ρilk=m/Vilk veρson=m/(1,25 Vilk).",
+  "to": "ρilk=m/Vilk ve ρson=m/(1,25 Vilk)."
+ },
+ {
+  "from": "3 kg kütleli kapalı bir cisim, yerelg=10 m/s² için kilogram ölçeğiyle kalibre edilmiş yaylı kuvvetölçerle tartılıyor. Cisim ve aygıt, g=2 m/s² olan yerde de aynı biçimde asılı ve dengede. YalnızG=mgve gösterge=G/10 ilişkileri veriliyor. Gerçek kütle ve aygıtın kgölçeğindeki okuma nedir?",
+  "to": "3 kg kütleli kapalı bir cisim, yerel g=10 m/s² için kilogram ölçeğiyle kalibre edilmiş yaylı kuvvetölçerle tartılıyor. Cisim ve aygıt, g=2 m/s² olan yerde de aynı biçimde asılı ve dengede. Yalnız G=mg ve gösterge=G/10 ilişkileri veriliyor. Gerçek kütle ve aygıtın kg ölçeğindeki okuma nedir?"
+ },
+ {
+  "from": "İğnenin mveVsi aynı olduğundan özkütlesi değişmedi. Katkı sonrası bu deneydeγazaldığı ölçülmüş; yüzeyde tutunma koşulu değişmiş olabilir. Batma, iğnenin birden daha yoğun olduğu sonucunu zorunlu kılmaz; arayüz desteği ve ıslatma incelenir.",
+  "to": "İğnenin m ve V’si aynı olduğundan özkütlesi değişmedi. Katkı sonrası bu deneyde γ azaldığı ölçülmüş; yüzeyde tutunma koşulu değişmiş olabilir. Batma, iğnenin birden daha yoğun olduğu sonucunu zorunlu kılmaz; arayüz desteği ve ıslatma incelenir."
+ },
+ {
+  "from": "İğnenin mveVsi aynı olduğundan özkütlesi değişmedi.",
+  "to": "İğnenin m ve V’si aynı olduğundan özkütlesi değişmedi."
+ },
+ {
+  "from": "İlk evreΔx=2·2+½·3·4=10 m; sınır konumu 6 m, hızı 8 m/s. İkinci evreΔx=8·4−½·16=24 m; son hız 8−4=4 m/s. Son konum 6+24=30 m; son hız+4 m/s.",
+  "to": "İlk evre Δx=2·2+½·3·4=10 m; sınır konumu 6 m, hızı 8 m/s. İkinci evre Δx=8·4−½·16=24 m; son hız 8−4=4 m/s. Son konum 6+24=30 m; son hız +4 m/s."
+ },
+ {
+  "from": "İlk evreΔx=2·2+½·3·4=10 m; sınır konumu 6 m, hızı 8 m/s.",
+  "to": "İlk evre Δx=2·2+½·3·4=10 m; sınır konumu 6 m, hızı 8 m/s."
+ },
+ {
+  "from": "34 m;+4 m/s",
+  "to": "34 m; +4 m/s"
+ },
+ {
+  "from": "30 m;−2 m/s",
+  "to": "30 m; −2 m/s"
+ },
+ {
+  "from": "30 m;+4 m/s",
+  "to": "30 m; +4 m/s"
+ },
+ {
+  "from": "36 m;+2 m/s",
+  "to": "36 m; +2 m/s"
+ },
+ {
+  "from": "6 m;+8 m/s",
+  "to": "6 m; +8 m/s"
+ },
+ {
+  "from": "Bir cisim ilk 2 s +6 m/s, sonraki 3 s 0 m/s, son 4 s−3 m/s sabit hızla gidiyor. Bütün 9 s için ortalama hız ve ortalama sürat nedir?",
+  "to": "Bir cisim ilk 2 s +6 m/s, sonraki 3 s 0 m/s, son 4 s −3 m/s sabit hızla gidiyor. Bütün 9 s için ortalama hız ve ortalama sürat nedir?"
+ },
+ {
+  "from": "İşaretli yer değiştirmeler+12,0,−12 m; toplam 0. Yol 12+0+12=24 m; toplam süre 2+3+4=9 s. Ortalama hız 0/9=0; sürat 24/9=8/3 m/s.",
+  "to": "İşaretli yer değiştirmeler +12, 0, −12 m; toplam 0. Yol 12+0+12=24 m; toplam süre 2+3+4=9 s. Ortalama hız 0/9=0; sürat 24/9=8/3 m/s."
+ },
+ {
+  "from": "İşaretli yer değiştirmeler+12,0,−12 m; toplam 0.",
+  "to": "İşaretli yer değiştirmeler +12, 0, −12 m; toplam 0."
+ },
+ {
+  "from": "+1 m/s;+1 m/s",
+  "to": "+1 m/s; +1 m/s"
+ },
+ {
+  "from": "Başlangıç hızı−1 m/s olan cismin ilk 2 s ivmesi+3 m/s², sonraki 3 s ivmesi−2 m/s². Son hız ve toplam yer değiştirme hangisidir?",
+  "to": "Başlangıç hızı−1 m/s olan cismin ilk 2 s ivmesi +3 m/s², sonraki 3 s ivmesi−2 m/s². Son hız ve toplam yer değiştirme hangisidir?"
+ },
+ {
+  "from": "İlk son hız−1+3·2=5 m/s; ilkΔx=−1·2+½·3·4=4 m. İkinci son hız 5−2·3=−1 m/s; ikinciΔx=5·3−½·2·9=6 m. Son hız−1 m/s, toplamΔx=10 m. ToplamΔv=0 olsa daΔxsıfır değildir.",
+  "to": "İlk son hız−1+3·2=5 m/s; ilk Δx=−1·2+½·3·4=4 m. İkinci son hız 5−2·3=−1 m/s; ikinci Δx=5·3−½·2·9=6 m. Son hız−1 m/s, toplam Δx=10 m. Toplam Δv=0 olsa da Δx sıfır değildir."
+ },
+ {
+  "from": "İlk son hız−1+3·2=5 m/s; ilkΔx=−1·2+½·3·4=4 m.",
+  "to": "İlk son hız−1+3·2=5 m/s; ilk Δx=−1·2+½·3·4=4 m."
+ },
+ {
+  "from": "−1 m/s;+10 m",
+  "to": "−1 m/s; +10 m"
+ },
+ {
+  "from": "+5 m/s;+4 m",
+  "to": "+5 m/s; +4 m"
+ },
+ {
+  "from": "−7 m/s;−8 m",
+  "to": "−7 m/s; −8 m"
+ },
+ {
+  "from": "Bir cismin 3 s boyunca ivmesi 0, bu aralığın başındaki hızı+7 m/s. Başlangıç konumu verilmemiş. Hangi nicelik çifti bu verilerle kesin belirlenir?",
+  "to": "Bir cismin 3 s boyunca ivmesi 0, bu aralığın başındaki hızı +7 m/s. Başlangıç konumu verilmemiş. Hangi nicelik çifti bu verilerle kesin belirlenir?"
+ },
+ {
+  "from": "vson=+7 m/sçünküΔv=0. Δx=7·3=+21 m. xson=xilk+21 m olur; başlangıç verilmediğinden mutlak son konum bilinmez.",
+  "to": "vson=+7 m/s çünkü Δv=0. Δx=7·3=+21 m. xson=xilk+21 m olur; başlangıç verilmediğinden mutlak son konum bilinmez."
+ },
+ {
+  "from": "vson=+7 m/sçünküΔv=0.",
+  "to": "vson=+7 m/s çünkü Δv=0."
+ },
+ {
+  "from": "Son hız+7 m/s; yer değiştirme+21 m",
+  "to": "Son hız +7 m/s; yer değiştirme +21 m"
+ },
+ {
+  "from": "Başlangıç hızı−8 m/s, cismin 3 s boyunca sabit ivmesi+2 m/s². Bu 3 s’nin sonunda hareket yönü ve süratin değişme eğilimi hangisidir?",
+  "to": "Başlangıç hızı−8 m/s, cismin 3 s boyunca sabit ivmesi +2 m/s². Bu 3 s’nin sonunda hareket yönü ve süratin değişme eğilimi hangisidir?"
+ },
+ {
+  "from": "vson=−8+2·3=−2 m/s. Son hız negatif olduğundan cisim hâlâ−x yönündedir. a=+2, v=−2 zıt işaretli; son anda sürat azalır. Duruş 4 s’de olur, verilen 3 s’den sonradır.",
+  "to": "vson=−8+2·3=−2 m/s. Son hız negatif olduğundan cisim hâlâ −x yönündedir. a=+2, v=−2 zıt işaretli; son anda sürat azalır. Duruş 4 s’de olur, verilen 3 s’den sonradır."
+ },
+ {
+  "from": "Dünya çerçevesinde v₀=−2 m/s, a=+3 m/s². Başlangıçta aynı yerde bulunan gözlemci+x yönünde sabit 4 m/s ile gidiyor. t=2 s’de cismin bu gözlemciye göre hızı ve ivmesi nedir? Galile dönüşümü kullanılacak.",
+  "to": "Dünya çerçevesinde v₀=−2 m/s, a=+3 m/s². Başlangıçta aynı yerde bulunan gözlemci +x yönünde sabit 4 m/s ile gidiyor. t=2 s’de cismin bu gözlemciye göre hızı ve ivmesi nedir? Galile dönüşümü kullanılacak."
+ },
+ {
+  "from": "Dünya hızı−2+3·2=+4 m/s. Göreli hız 4−4=0 m/s. Gözlemci sabit hızlı olduğundan göreli ivme yine+3 m/s²’dir.",
+  "to": "Dünya hızı−2+3·2=+4 m/s. Göreli hız 4−4=0 m/s. Gözlemci sabit hızlı olduğundan göreli ivme yine +3 m/s²’dir."
+ },
+ {
+  "from": "+4 m/s;+3 m/s²",
+  "to": "+4 m/s; +3 m/s²"
+ },
+ {
+  "from": "−4 m/s;−1 m/s²",
+  "to": "−4 m/s; −1 m/s²"
+ },
+ {
+  "from": "0 m/s;+3 m/s²",
+  "to": "0 m/s; +3 m/s²"
+ },
+ {
+  "from": "+8 m/s;+3 m/s²",
+  "to": "+8 m/s; +3 m/s²"
+ },
+ {
+  "from": "Sabit duran iki gözlemcinin eksen yönleri aynı; B’nin konum başlangıcı A’ya göre+x yönünde 10 m ileride. Bir cisim A’da 25 m’den 40 m’ye 3 s’de gidiyor. B’nin ilk/son konumları ve bu aralığın ortalama hızı nedir?",
+  "to": "Sabit duran iki gözlemcinin eksen yönleri aynı; B’nin konum başlangıcı A’ya göre +x yönünde 10 m ileride. Bir cisim A’da 25 m’den 40 m’ye 3 s’de gidiyor. B’nin ilk/son konumları ve bu aralığın ortalama hızı nedir?"
+ },
+ {
+  "from": "15 m,30 m; 0 m/s",
+  "to": "15 m, 30 m; 0 m/s"
+ },
+ {
+  "from": "35 m,50 m;+5 m/s",
+  "to": "35 m, 50 m; +5 m/s"
+ },
+ {
+  "from": "25 m,40 m;+5 m/s",
+  "to": "25 m, 40 m; +5 m/s"
+ },
+ {
+  "from": "15 m,30 m;+5 m/s",
+  "to": "15 m, 30 m; +5 m/s"
+ },
+ {
+  "from": "15 m,30 m;+15 m/s",
+  "to": "15 m, 30 m; +15 m/s"
+ },
+ {
+  "from": "Bir cismin 0–4 s hız grafiği,+3 m/s’den 0 m/s’ye inen doğru parçası.4 s’den sonraki hareket verilmemiş. Bu aralık ve tam 4 s için hangi ifade doğrudur?",
+  "to": "Bir cismin 0–4 s hız grafiği, +3 m/s’den 0 m/s’ye inen doğru parçası.4 s’den sonraki hareket verilmemiş. Bu aralık ve tam 4 s için hangi ifade doğrudur?"
+ },
+ {
+  "from": "0–4 s alanı½·4·3=6 m; grafik negatif alana geçmez. Bu aralıkta yol 6 m, yer değiştirme+6 m. t=4 s’de hız 0; sonrasında mutlaka geri gideceği verilmiş değildir.",
+  "to": "0–4 s alanı ½·4·3=6 m; grafik negatif alana geçmez. Bu aralıkta yol 6 m, yer değiştirme +6 m. t=4 s’de hız 0; sonrasında mutlaka geri gideceği verilmiş değildir."
+ },
+ {
+  "from": "0–4 s alanı½·4·3=6 m; grafik negatif alana geçmez.",
+  "to": "0–4 s alanı ½·4·3=6 m; grafik negatif alana geçmez."
+ },
+ {
+  "from": "Yol 6 m,Δx=+6 m; 4 s’den sonraki yön belirsiz.",
+  "to": "Yol 6 m, Δx=+6 m; 4 s’den sonraki yön belirsiz."
+ },
+ {
+  "from": "Yol 6 m,Δx=−6 m; sonra kesin+x",
+  "to": "Yol 6 m, Δx=−6 m; sonra kesin +x"
+ },
+ {
+  "from": "Bir cismin 0≤t<2 s için ivmesi+1 m/s²; 2≤t<5 s için ivmesi−2 m/s² verilmiş. Model iç sınırda sağ evrenin değerini kullanıyor; 5 s’den sonrası belirtilmemiş. t=2 s ve tam 5 s için ivme raporu hangisi olmalıdır?",
+  "to": "Bir cismin 0≤t<2 s için ivmesi +1 m/s²; 2≤t<5 s için ivmesi−2 m/s² verilmiş. Model iç sınırda sağ evrenin değerini kullanıyor; 5 s’den sonrası belirtilmemiş. t=2 s ve tam 5 s için ivme raporu hangisi olmalıdır?"
+ },
+ {
+  "from": "2 s’de+1; 5 s’de−2",
+  "to": "2 s’de +1; 5 s’de−2"
+ },
+ {
+  "from": "2 s’debelirsiz; 5 s’de+1",
+  "to": "2 s’de belirsiz; 5 s’de +1"
+ },
+ {
+  "from": "Bir hareket kaydında başlangıç konumu 7 m, hızı+3 m/s ve tüm evre süreleri 0 s. Başka hareket aralığı yok. Bu sıfır toplam süre için hangi rapor doğrudur?",
+  "to": "Bir hareket kaydında başlangıç konumu 7 m, hızı +3 m/s ve tüm evre süreleri 0 s. Başka hareket aralığı yok. Bu sıfır toplam süre için hangi rapor doğrudur?"
+ },
+ {
+  "from": "Hiç süre geçmediği için konum 7 m ve hız+3 m/sanlık başlangıç bilgisi olarak kalır. Toplam yer değiştirme ve yol 0’dır. Ortalama hız 0/0 veortalama sürat 0/0 olduğundan tanımsızdır; 0 diye raporlanmaz.",
+  "to": "Hiç süre geçmediği için konum 7 m ve hız +3 m/s anlık başlangıç bilgisi olarak kalır. Toplam yer değiştirme ve yol 0’dır. Ortalama hız 0/0 ve ortalama sürat 0/0 olduğundan tanımsızdır; 0 diye raporlanmaz."
+ },
+ {
+  "from": "Hiç süre geçmediği için konum 7 m ve hız+3 m/sanlık başlangıç bilgisi olarak kalır.",
+  "to": "Hiç süre geçmediği için konum 7 m ve hız +3 m/s anlık başlangıç bilgisi olarak kalır."
+ },
+ {
+  "from": "Konum 7 m, hız+3 m/s; iki aralık ortalaması tanımsız.",
+  "to": "Konum 7 m, hız +3 m/s; iki aralık ortalaması tanımsız."
+ },
+ {
+  "from": "Doğrusal harekette hız 54 km/h’den 90 km/h’ye 5 s’de düzgün artıyor. Ortalama ivme kaç m/s²?1 m/s=3,6 km/h.",
+  "to": "Doğrusal harekette hız 54 km/h’den 90 km/h’ye 5 s’de düzgün artıyor. Ortalama ivme kaç m/s²? 1 m/s=3,6 km/h."
+ },
+ {
+  "from": "54/3,6=15 m/s; 90/3,6=25 m/s. Hız farkı+10 m/s. a=10/5=+2 m/s².",
+  "to": "54/3,6=15 m/s; 90/3,6=25 m/s. Hız farkı +10 m/s. a=10/5=+2 m/s²."
+ },
+ {
+  "from": "Cisim x₀=−5 m’den sabitv=+3 m/s ile hareket ediyor. Program 0–3 s için verilmiş. Başlangıç noktasından(x=0)geçiş zamanı ve bu geçişteki hareket yönü nedir?",
+  "to": "Cisim x₀=−5 m’den sabit v=+3 m/s ile hareket ediyor. Program 0–3 s için verilmiş. Başlangıç noktasından (x=0) geçiş zamanı ve bu geçişteki hareket yönü nedir?"
+ },
+ {
+  "from": "−5+3 t=0 için t=5/3 s. 5/3,0–3 saralığındadır. Hız daima+3 m/s olduğu için geçiş+x yönündedir; konum eksenini kesmek yön değiştirmek değildir.",
+  "to": "−5+3t=0 için t=5/3 s. 5/3, 0–3 s aralığındadır. Hız daima +3 m/s olduğu için geçiş +x yönündedir; konum eksenini kesmek yön değiştirmek değildir."
+ },
+ {
+  "from": "−5+3 t=0 için t=5/3 s.",
+  "to": "−5+3t=0 için t=5/3 s."
+ },
+ {
+  "from": "3/5 s;+x yönünde",
+  "to": "3/5 s; +x yönünde"
+ },
+ {
+  "from": "5/3 s;+x yönünde",
+  "to": "5/3 s; +x yönünde"
+ },
+ {
+  "from": "5/3 s;−x yönünde",
+  "to": "5/3 s; −x yönünde"
+ },
+ {
+  "from": "Aynı cisim için aynı saat ve aynı eksen yönüyle iki gözlem kaydı x₁=−3+2 t, x₂=7+2 t metre biçiminde. İki gözlemci de birbirine göre durgun. Bu iki kayıt hangi farkla uyumludur?",
+  "to": "Aynı cisim için aynı saat ve aynı eksen yönüyle iki gözlem kaydı x₁=−3+2t, x₂=7+2t metre biçiminde. İki gözlemci de birbirine göre durgun. Bu iki kayıt hangi farkla uyumludur?"
+ },
+ {
+  "from": "x₂−x₁=10 m ve zamandan bağımsızdır. İki eğim de+2 m/s; ivmeler 0’dır. Kayıtlar 10 m’lik konum başlangıcı farkıyla uyumludur; hareketli gözlemci hızı farkı gerektirmez.",
+  "to": "x₂−x₁=10 m ve zamandan bağımsızdır. İki eğim de +2 m/s; ivmeler 0’dır. Kayıtlar 10 m’lik konum başlangıcı farkıyla uyumludur; hareketli gözlemci hızı farkı gerektirmez."
+ },
+ {
+  "from": "İkinci cisim 10 m/sdaha hızlı görünür.",
+  "to": "İkinci cisim 10 m/s daha hızlı görünür."
+ },
+ {
+  "from": "Sabit 10 mkonum kayması; hızlar aynı+2 m/s",
+  "to": "Sabit 10 m konum kayması; hızlar aynı +2 m/s"
+ },
+ {
+  "from": "İki ayrı doğrusal yolculuk için pozitif süre boyunca ortalamalar raporlanıyor. K’da ortalama hız−2 m/s, ortalama sürat 3 m/s; L’de ortalama hız+2 m/s, ortalama sürat 1 m/s. Yalnız yol ve yer değiştirme tanımlarına göre hangisi mümkündür?",
+  "to": "İki ayrı doğrusal yolculuk için pozitif süre boyunca ortalamalar raporlanıyor. K’da ortalama hız−2 m/s, ortalama sürat 3 m/s; L’de ortalama hız +2 m/s, ortalama sürat 1 m/s. Yalnız yol ve yer değiştirme tanımlarına göre hangisi mümkündür?"
+ },
+ {
+  "from": "K’da 3≥|−2|=2; zorunlu sınırla çelişmez. L’de 1<|+2|=2; sınır ihlal edilir. Dolayısıyla yalnız Kkaydı bu tanımlarla mümkün olabilir; Lverileri birlikte tutarsızdır.",
+  "to": "K’da 3≥|−2|=2; zorunlu sınırla çelişmez. L’de 1<|+2|=2; sınır ihlal edilir. Dolayısıyla yalnız K kaydı bu tanımlarla mümkün olabilir; L verileri birlikte tutarsızdır."
+ },
+ {
+  "from": "YalnızL mümkündür; negatif hız olmaz.",
+  "to": "Yalnız L mümkündür; negatif hız olmaz."
+ },
+ {
+  "from": "Cisim 5 m boyunca+x yönünde gidiyor. Seçili itiş kuvveti+10 N, direnç−4 N ve yer değiştirmeye dik normal 20 N; sabitler. Başka iş yapan kuvvet yok. İtişin işi, net iş ve kinetik enerji değişimi sırasıyla nedir?",
+  "to": "Cisim 5 m boyunca +x yönünde gidiyor. Seçili itiş kuvveti +10 N, direnç−4 N ve yer değiştirmeye dik normal 20 N; sabitler. Başka iş yapan kuvvet yok. İtişin işi, net iş ve kinetik enerji değişimi sırasıyla nedir?"
+ },
+ {
+  "from": "İtiş işi 10·5=+50 J; direnç işi−4·5=−20 J; normal işi 0. Net iş 50−20=+30 J. Kinetik enerji değişimiΔK=+30 J’dir; tek itiş işi 50 J ile karıştırılmaz.",
+  "to": "İtiş işi 10·5=+50 J; direnç işi−4·5=−20 J; normal işi 0. Net iş 50−20=+30 J. Kinetik enerji değişimi ΔK=+30 J’dir; tek itiş işi 50 J ile karıştırılmaz."
+ },
+ {
+  "from": "+50 J;+70 J;+70 J",
+  "to": "+50 J; +70 J; +70 J"
+ },
+ {
+  "from": "+50 J;+30 J;−30 J",
+  "to": "+50 J; +30 J; −30 J"
+ },
+ {
+  "from": "+50 J;+30 J;+30 J",
+  "to": "+50 J; +30 J; +30 J"
+ },
+ {
+  "from": "+30 J;+30 J;+30 J",
+  "to": "+30 J; +30 J; +30 J"
+ },
+ {
+  "from": "+50 J;+130 J;+130 J",
+  "to": "+50 J; +130 J; +130 J"
+ },
+ {
+  "from": "Net kuvvet–konum grafiği 0–2 m’de 0’dan+6 N’a doğrusal artıyor; 2–4 m’de−2 N sabit. Cisim bu 4 m’yi gerçekten tamamlıyor ve başlangıç kinetik enerjisi 10 J. Son kinetik enerjisi nedir?",
+  "to": "Net kuvvet–konum grafiği 0–2 m’de 0’dan +6 N’a doğrusal artıyor; 2–4 m’de−2 N sabit. Cisim bu 4 m’yi gerçekten tamamlıyor ve başlangıç kinetik enerjisi 10 J. Son kinetik enerjisi nedir?"
+ },
+ {
+  "from": "İlk iş½·2·6=+6 J. İkinci iş−2·2=−4 J; net+2 J. Kson=10+2=12 J. İkinci bölümdeK 16’dan 12’ye iner; negatif olmaz.",
+  "to": "İlk iş ½·2·6=+6 J. İkinci iş −2·2=−4 J; net +2 J. Kson=10+2=12 J. İkinci bölümde K 16’dan 12’ye iner; negatif olmaz."
+ },
+ {
+  "from": "İlk iş½·2·6=+6 J.",
+  "to": "İlk iş ½·2·6=+6 J."
+ },
+ {
+  "from": "A veB iki ayrı klasik cisim. B’nin kütlesi A’nın yarısı; A’nın hızı+3 m/s, B’nin−6 m/s. K=½mv² ile KB/KAkaçtır?",
+  "to": "A ve B iki ayrı klasik cisim. B’nin kütlesi A’nın yarısı; A’nın hızı +3 m/s, B’nin−6 m/s. K=½mv² ile KB/KA kaçtır?"
+ },
+ {
+  "from": "Sabit 4 kg kütleli noktasal cismin sürati bir aralık sonunda 2 m/s. Bu aralıktaki net iş−24 J. Başlangıç sürati kaç m/s?",
+  "to": "Sabit 4 kg kütleli noktasal cismin sürati bir aralık sonunda 2 m/s. Bu aralıktaki net iş −24 J. Başlangıç sürati kaç m/s?"
+ },
+ {
+  "from": "Kson=½·4·2²=8 J. −24=8−Kilk; Kilk=32 J. 32=½·4·vilk²=2 vilk²; vilk=4 m/sbüyüklüğü bulunur.",
+  "to": "Kson=½·4·2²=8 J. −24=8−Kilk; Kilk=32 J. 32=½·4·vilk²=2vilk²; vilk=4 m/s büyüklüğü bulunur."
+ },
+ {
+  "from": "Göreli yükseklik 4−2=2 m. U=3·10·2=60 J. Yere göre 120 Jolabilirdi; referans seçimi mutlakUdeğerini değiştirir, fiziksel yükseklik farkını değiştirmez.",
+  "to": "Göreli yükseklik 4−2=2 m. U=3·10·2=60 J. Yere göre 120 J olabilirdi; referans seçimi mutlak U değerini değiştirir, fiziksel yükseklik farkını değiştirmez."
+ },
+ {
+  "from": "Bir cisim yukarı taşınırken dış çekmenin işi+30 J, ağırlığın işi−20 J. Diğer kuvvet işi 0. Cisim–Dünya sistemi içinΔU=+20 J. Hangi iki eşitlik aynı doğru enerji hesabını verir?",
+  "to": "Bir cisim yukarı taşınırken dış çekmenin işi +30 J, ağırlığın işi−20 J. Diğer kuvvet işi 0. Cisim–Dünya sistemi için ΔU=+20 J. Hangi iki eşitlik aynı doğru enerji hesabını verir?"
+ },
+ {
+  "from": "Wnet=30−20=10 J;ΔK=10 J. −20 Jyerçekimi işi,+20 Jpotansiyel artışının negatifidir. Bu yüzden 30−20=ΔKile 30=ΔK+20 aynıΔK=10 Jsonucunu verir.",
+  "to": "Wnet=30−20=10 J; ΔK=10 J. −20 J yerçekimi işi, +20 J potansiyel artışının negatifidir. Bu yüzden 30−20=ΔK ile 30=ΔK+20 aynı ΔK=10 J sonucunu verir."
+ },
+ {
+  "from": "Wnet=30−20=10 J;ΔK=10 J.",
+  "to": "Wnet=30−20=10 J; ΔK=10 J."
+ },
+ {
+  "from": "ΔK=−20 veΔU=30",
+  "to": "ΔK=−20 ve ΔU=30"
+ },
+ {
+  "from": "İdeal Hooke yayında k=100 N/m, doğal boydan işaretli sapmax=−0,20 m. Yayın cisme kuvveti ve depoladığı enerji nedir?Fx=−kx, U=½kx².",
+  "to": "İdeal Hooke yayında k=100 N/m, doğal boydan işaretli sapma x=−0,20 m. Yayın cisme kuvveti ve depoladığı enerji nedir? Fx=−kx, U=½kx²."
+ },
+ {
+  "from": "Fx=−100·(−0,20)=+20 N. U=½·100·0,20²=2 J. Kuvvet+x yönünde, enerji pozitiftir; sıkıştırılmış yay negatif enerji taşımak zorunda değildir.",
+  "to": "Fx=−100·(−0,20)=+20 N. U=½·100·0,20²=2 J. Kuvvet +x yönünde, enerji pozitiftir; sıkıştırılmış yay negatif enerji taşımak zorunda değildir."
+ },
+ {
+  "from": "+20 N;−2 J",
+  "to": "+20 N; −2 J"
+ },
+ {
+  "from": "2 kg cisim yatay yola 3 m/s süratle giriyor. İleri sabit itiş 4 N, geriye sabit kayma direnci 7 N.5 m ilerlemesi isteniyor. İlk duruşta ileri izleme bitiriliyor. Gerçekte tamamlanan yol ve o yolda direnç kaynaklı iç enerji artışı nedir?",
+  "to": "2 kg cisim yatay yola 3 m/s süratle giriyor. İleri sabit itiş 4 N, geriye sabit kayma direnci 7 N. 5 m ilerlemesi isteniyor. İlk duruşta ileri izleme bitiriliyor. Gerçekte tamamlanan yol ve o yolda direnç kaynaklı iç enerji artışı nedir?"
+ },
+ {
+  "from": "K₀=½·2·3²=9 J; net kuvvet 4−7=−3 N. K=9−3 s, ilk sıfır s=3 m; 5 m hedef tamamlanamaz. Bu 3 m’de iç enerji artışı 7·3=21 J; başlangıç 9+itiş 12=21 J.’dir.",
+  "to": "K₀=½·2·3²=9 J; net kuvvet 4−7=−3 N. K=9−3s, ilk sıfır s=3 m; 5 m hedef tamamlanamaz. Bu 3 m’de iç enerji artışı 7·3=21 J; başlangıç 9 + itiş 12=21 J’dir."
+ },
+ {
+  "from": "İleri yol boyunca K(s)=8−2 s joule veren bir model var; smetre. İlkK=0 noktasında ileri hareket durur. Bir denemede hedef 4 m, diğerinde 4,1 m. Hedefe erişim için hangi kıyas doğrudur?",
+  "to": "İleri yol boyunca K(s)=8−2s joule veren bir model var; s metre. İlk K=0 noktasında ileri hareket durur. Bir denemede hedef 4 m, diğerinde 4,1 m. Hedefe erişim için hangi kıyas doğrudur?"
+ },
+ {
+  "from": "8−2 s=0 için duruş uzaklığı 4 m. 4 m hedefindeK 0; hedefe anlık 0 hızla varılır. 4,1 m hedefi ilk duruştan ötedir; aynı ileri programda tamamlanamaz.",
+  "to": "8−2s=0 için duruş uzaklığı 4 m. 4 m hedefinde K 0; hedefe anlık 0 hızla varılır. 4,1 m hedefi ilk duruştan ötedir; aynı ileri programda tamamlanamaz."
+ },
+ {
+  "from": "8−2 s=0 için duruş uzaklığı 4 m.",
+  "to": "8−2s=0 için duruş uzaklığı 4 m."
+ },
+ {
+  "from": "İki hedefe de erişemez; 0 Kvarış sayılmaz.",
+  "to": "İki hedefe de erişemez; 0 K varış sayılmaz."
+ },
+ {
+  "from": "4,1 m’ye erişir,4 m’ye erişemez.",
+  "to": "4,1 m’ye erişir, 4 m’ye erişemez."
+ },
+ {
+  "from": "İki hedefe de erişir; negatifKkullanılır.",
+  "to": "İki hedefe de erişir; negatif K kullanılır."
+ },
+ {
+  "from": "Yükün uygulama noktasıΔr=0; bu kuvvetin yüke öteleme işi 0. Kişinin kas sisteminde iç süreçler ve enerji dönüşümleri ayrıca bulunabilir. Bu nedenle mekanik iş 0 sonucu kişinin hiçbir enerji harcamadığı iddiasını vermez.",
+  "to": "Yükün uygulama noktası Δr=0; bu kuvvetin yüke öteleme işi 0. Kişinin kas sisteminde iç süreçler ve enerji dönüşümleri ayrıca bulunabilir. Bu nedenle mekanik iş 0 sonucu kişinin hiçbir enerji harcamadığı iddiasını vermez."
+ },
+ {
+  "from": "Yükün uygulama noktasıΔr=0; bu kuvvetin yüke öteleme işi 0.",
+  "to": "Yükün uygulama noktası Δr=0; bu kuvvetin yüke öteleme işi 0."
+ },
+ {
+  "from": "İş 0 isekişinin bütün enerjisi sabittir.",
+  "to": "İş 0 ise kişinin bütün enerjisi sabittir."
+ },
+ {
+  "from": "Sabit 750 W giriş gücüyle 8 dakika çalışan aygıtın yararlı payı 0,60. Giriş enerjisinin kWhdeğeri ve diğer enerjiye giden miktar nedir?1 kWh=3,6×10⁶ J.",
+  "to": "Sabit 750 W giriş gücüyle 8 dakika çalışan aygıtın yararlı payı 0,60. Giriş enerjisinin kWh değeri ve diğer enerjiye giden miktar nedir? 1 kWh=3,6×10⁶ J."
+ },
+ {
+  "from": "Bir modelde sabitgiriş gücü 0 W, süre 10 s ve önceden seçilmiş yararlıpay katsayısı 0,80. Çıkış da 0 Jhesaplanıyor. Bu denemedeki ölçülmüş yararlı çıktı/giriş verimi için hangi rapor doğrudur?",
+  "to": "Bir modelde sabit giriş gücü 0 W, süre 10 s ve önceden seçilmiş yararlı pay katsayısı 0,80. Çıkış da 0 J hesaplanıyor. Bu denemedeki ölçülmüş yararlı çıktı/giriş verimi için hangi rapor doğrudur?"
+ },
+ {
+  "from": "Model mutlaka 0,8 Jyararlı enerji üretir.",
+  "to": "Model mutlaka 0,8 J yararlı enerji üretir."
+ },
+ {
+  "from": "Ölçülmüş verimkesin%80",
+  "to": "Ölçülmüş verim kesin %80"
+ },
+ {
+  "from": "Ölçülmüş verimkesin%0",
+  "to": "Ölçülmüş verim kesin %0"
+ },
+ {
+  "from": "Verimsonsuzdur",
+  "to": "Verim sonsuzdur"
+ },
+ {
+  "from": "Toplam çıkış 300+250=550 J. Giriş 500 J; 50 Jeksik bilanço vardır. Veriler ve “başka giriş yok” iddiası birlikte tutarlı değildir; ek giriş, depolama veya ölçüm bilgisi yeniden denetlenmelidir.",
+  "to": "Toplam çıkış 300+250=550 J. Giriş 500 J; 50 J eksik bilanço vardır. Veriler ve “başka giriş yok” iddiası birlikte tutarlı değildir; ek giriş, depolama veya ölçüm bilgisi yeniden denetlenmelidir."
+ },
+ {
+  "from": "Rapor 50 Jeksik giriş veya başka açıklama gerektirir; veriler birlikte tutarsız.",
+  "to": "Rapor 50 J eksik giriş veya başka açıklama gerektirir; veriler birlikte tutarsız."
+ },
+ {
+  "from": "Bir cisim+x yönünde 3 m/s süratle giderken seçilmiş sabit kuvvet−4 N. Bu kuvvetin o andaki gücü P=Fx·vxile veriliyor. Güç ve enerji aktarım yönü hangisidir?",
+  "to": "Bir cisim +x yönünde 3 m/s süratle giderken seçilmiş sabit kuvvet−4 N. Bu kuvvetin o andaki gücü P=Fx·vx ile veriliyor. Güç ve enerji aktarım yönü hangisidir?"
+ },
+ {
+  "from": "1 kg cisim 2 m yüksekte durgun başlıyor; g=10 m/s². Son durumda aynı referansa göre yükseklik 0; ideal yatay yay en çok sıkıştığı için cisim anlık durgun. Bu aralıkta toplam 5 Jiç enerjiye aktarılmış; başka giriş/çıkış yok. Yayk=120 N/m. Maksimum sıkışma büyüklüğü nedir?",
+  "to": "1 kg cisim 2 m yüksekte durgun başlıyor; g=10 m/s². Son durumda aynı referansa göre yükseklik 0; ideal yatay yay en çok sıkıştığı için cisim anlık durgun. Bu aralıkta toplam 5 J iç enerjiye aktarılmış; başka giriş/çıkış yok. Yay k=120 N/m. Maksimum sıkışma büyüklüğü nedir?"
+ },
+ {
+  "from": "Başlangıç enerji 1·10·2=20 J; ilk ve sonK 0. Son yay enerjisi 20−5=15 J. 15=½·120·x²=60 x²; x²=1/4; x=0,50 mbüyüklüğü bulunur.",
+  "to": "Başlangıç enerji 1·10·2=20 J; ilk ve son K 0. Son yay enerjisi 20−5=15 J. 15=½·120·x²=60x²; x²=1/4; x=0,50 m büyüklüğü bulunur."
+ },
+ {
+  "from": "Başlangıç enerji 1·10·2=20 J; ilk ve sonK 0.",
+  "to": "Başlangıç enerji 1·10·2=20 J; ilk ve son K 0."
+ },
+ {
+  "from": "√(1/3)m",
+  "to": "√(1/3) m"
+ },
+ {
+  "from": "Bir sistemin seçilmiş mekanik enerji terimleri K+Uyer+Uyay.2 kg cisim 3 m/s süratli; bulunduğu düzlemde Uyer=0 seçilmiş. k=100 N/myay doğal boydan 0,20 m sapmış. Bu mekanik toplam nedir ve Uyer=0 ne demektir?",
+  "to": "Bir sistemin seçilmiş mekanik enerji terimleri K+Uyer+Uyay. 2 kg cisim 3 m/s süratli; bulunduğu düzlemde Uyer=0 seçilmiş. k=100 N/m yay doğal boydan 0,20 m sapmış. Bu mekanik toplam nedir ve Uyer=0 ne demektir?"
+ },
+ {
+  "from": "0 J; bir terim 0 isebütün enerji 0 olur.",
+  "to": "0 J; bir terim 0 ise bütün enerji 0 olur."
+ },
+ {
+  "from": "13 J; yerçekimi enerjisi 2 Jeklenir.",
+  "to": "13 J; yerçekimi enerjisi 2 J eklenir."
+ },
+ {
+  "from": "Kırmızı[1,0,0]+yeşil[0,1,0]→[1,1,0] sarı görünüm verir. Seri filtre veya boya karışımı yapılmıyor.",
+  "to": "Kırmızı [1,0,0] + yeşil [0,1,0] → [1,1,0] sarı görünüm verir. Seri filtre veya boya karışımı yapılmıyor."
+ },
+ {
+  "from": "İdeal RGB beyaz ışık sarı[1,1,0], sonra mavi[0,0,1] filtreden geçiyor. Çıkış?",
+  "to": "İdeal RGB beyaz ışık sarı [1,1,0], sonra mavi [0,0,1] filtreden geçiyor. Çıkış?"
+ },
+ {
+  "from": "İdeal sarı opak yüzey[1,1,0] yalnız mavi[0,0,1] ışık altında. Yansıyan görünüm?",
+  "to": "İdeal sarı opak yüzey [1,1,0] yalnız mavi [0,0,1] ışık altında. Yansıyan görünüm?"
+ },
+ {
+  "from": "İdeal camgöbeği filtre yeşil ve maviyi geçiriyor. Beyaz ışık bu filtreden, sonra sarı[1,1,0]filtreden geçerse çıkış?",
+  "to": "İdeal camgöbeği filtre yeşil ve maviyi geçiriyor. Beyaz ışık bu filtreden, sonra sarı [1,1,0] filtreden geçerse çıkış?"
+ },
+ {
+  "from": "[0,1,1]ile[1,1,0]maskelerinin ortak kanalını bul.",
+  "to": "[0,1,1] ile [1,1,0] maskelerinin ortak kanalını bul."
+ },
+ {
+  "from": "İki açık kanal[0,1,1]olur.",
+  "to": "İki açık kanal [0,1,1] olur."
+ },
+ {
+  "from": "İdeal beyaz opak yüzey[1,1,1], yalnız kırmızı[1,0,0]ışıkla aydınlanıyor. Yansıyan ışık?",
+  "to": "İdeal beyaz opak yüzey [1,1,1], yalnız kırmızı [1,0,0] ışıkla aydınlanıyor. Yansıyan ışık?"
+ },
+ {
+  "from": "Işık şiddetininSI birimi hangisi?",
+  "to": "Işık şiddetinin SI birimi hangisi?"
+ },
+ {
+  "from": "Doğrultusal kaynak niceliğiI.",
+  "to": "Doğrultusal kaynak niceliği I."
+ },
+ {
+  "from": "Su4200 J verir; bütün buz için 25·336=8400 J gerekir. Yalnız 4200/336=12,5 g buz erir;12,5 g kalır. Buz ve su birlikteyken normal basınçta denge 0 °C’dir. Tüm buz erir varsayımı enerji yetersizliği nedeniyle yanlıştır.",
+  "to": "Su 4200 J verir; bütün buz için 25·336=8400 J gerekir. Yalnız 4200/336=12,5 g buz erir;12,5 g kalır. Buz ve su birlikteyken normal basınçta denge 0 °C’dir. Tüm buz erir varsayımı enerji yetersizliği nedeniyle yanlıştır."
+ },
+ {
+  "from": "Tüm buz erir,20 °C su olur",
+  "to": "Tüm buz erir, 20 °C su olur"
+ },
+ {
+  "from": "Suyun 0 °C’ye kadar verebildiği 16800 J,8400 J erime ihtiyacından büyüktür. Kalan 8400 J toplam 125 g sıvıyı ısıtır:Td=8400/(125·4,2)=16 °C. Yalnız ilk 100 g’a bölmek yeni oluşan suyun ısınmasını atlar.",
+  "to": "Suyun 0 °C’ye kadar verebildiği 16800 J, 8400 J erime ihtiyacından büyüktür. Kalan 8400 J toplam 125 g sıvıyı ısıtır: Td=8400/(125·4,2)=16 °C. Yalnız ilk 100 g’a bölmek yeni oluşan suyun ısınmasını atlar."
+ },
+ {
+  "from": "A dört negatif yük kaybettiği için+4e, B dört elektron kazandığı için−4e kalır. Toplam yük 0 korunur. İki son yükü aynı işaret almak yalıtılmış sistemde sıfırdan net yük üretmek olur.",
+  "to": "A dört negatif yük kaybettiği için +4e, B dört elektron kazandığı için−4e kalır. Toplam yük 0 korunur. İki son yükü aynı işaret almak yalıtılmış sistemde sıfırdan net yük üretmek olur."
+ },
+ {
+  "from": "+4e,+4e",
+  "to": "+4e, +4e"
+ },
+ {
+  "from": "0,−4e",
+  "to": "0, −4e"
+ },
+ {
+  "from": "−4e,0",
+  "to": "−4e, 0"
+ },
+ {
+  "from": "−4e,+4e",
+  "to": "−4e, +4e"
+ },
+ {
+  "from": "+4e,−4e",
+  "to": "+4e, −4e"
+ },
+ {
+  "from": "Dış etkilerin uzakta olduğu uygun simetrik düzende özdeş iletken iki kürenin yükleri+8 μC ve−2 μC. Temas edip ayrılıyorlar. Her birinin son yükü?",
+  "to": "Dış etkilerin uzakta olduğu uygun simetrik düzende özdeş iletken iki kürenin yükleri +8 μC ve−2 μC. Temas edip ayrılıyorlar. Her birinin son yükü?"
+ },
+ {
+  "from": "Toplam+6 μC korunur; özdeş ve uygun simetrik iki kürede her biri+3 μC olur.8 ve 2’nin büyüklüklerini toplamak+5 sonucunu verir fakat negatif işareti atlar. Toplam+6’yı her küreye vermek yükü iki katına çıkarır.",
+  "to": "Toplam +6 μC korunur; özdeş ve uygun simetrik iki kürede her biri +3 μC olur.8 ve 2’nin büyüklüklerini toplamak +5 sonucunu verir fakat negatif işareti atlar. Toplam +6’yı her küreye vermek yükü iki katına çıkarır."
+ },
+ {
+  "from": "Hem+hem−olduğu için işareti tanımsız",
+  "to": "Hem + hem − olduğu için işareti tanımsız"
+ },
+ {
+  "from": "Pozitif cisimde elektronlar topuza, negatif cisimde yapraklara kayabilir; iki durumda da yapraklar aynı işaretle yüklenip açılabilir. Bu nedenle tek açılma gözlemi dış cismin+veya−olduğunu belirlemez. İşareti karşılaştırmak için yükü bilinen elektroskop ve kontrollü protokol gerekir.",
+  "to": "Pozitif cisimde elektronlar topuza, negatif cisimde yapraklara kayabilir; iki durumda da yapraklar aynı işaretle yüklenip açılabilir. Bu nedenle tek açılma gözlemi dış cismin + veya − olduğunu belirlemez. İşareti karşılaştırmak için yükü bilinen elektroskop ve kontrollü protokol gerekir."
+ },
+ {
+  "from": "Havada+1 μC ve−2 μC noktasal yüklerin arası 0,30 m. k=9×10⁹ N·m²/C². Kuvvet büyüklüğü ve türü?",
+  "to": "Havada +1 μC ve−2 μC noktasal yüklerin arası 0,30 m. k=9×10⁹ N·m²/C². Kuvvet büyüklüğü ve türü?"
+ },
+ {
+  "from": "Basit pilin kapalı dış metal devresinde konvansiyonel akımın+uçtan−uca olduğu veriliyor. Elektron sürüklenmesi hangi yöndedir?",
+  "to": "Basit pilin kapalı dış metal devresinde konvansiyonel akımın +uçtan −uca olduğu veriliyor. Elektron sürüklenmesi hangi yöndedir?"
+ },
+ {
+  "from": "Elektronlar negatif taşıyıcıdır; sürüklenme yönleri konvansiyonel akıma terstir, dış devrede−uçtan+uca giderler. Katı çekirdek protonlarının devreyi dolaştığı varsayılmaz. Düzensiz ısıl hareket ise yönlü sürüklenmeden ayrıca vardır.",
+  "to": "Elektronlar negatif taşıyıcıdır; sürüklenme yönleri konvansiyonel akıma terstir, dış devrede −uçtan +uca giderler. Katı çekirdek protonlarının devreyi dolaştığı varsayılmaz. Düzensiz ısıl hareket ise yönlü sürüklenmeden ayrıca vardır."
+ },
+ {
+  "from": "+uçtan−uca",
+  "to": "+uçtan −uca"
+ },
+ {
+  "from": "−uçtan+uca",
+  "to": "−uçtan +uca"
+ },
+ {
+  "from": "Optik — mekanik",
+  "to": "Optik, mekanik"
+ },
+ {
+  "from": "Termodinamik — optik",
+  "to": "Termodinamik, optik"
+ },
+ {
+  "from": "Katıhal — yalnız akustik",
+  "to": "Katıhal, yalnız akustik"
+ },
+ {
+  "from": "Atom fiziği — nükleer fizik",
+  "to": "Atom fiziği, nükleer fizik"
+ },
+ {
+  "from": "Yalnız elektromanyetizma — yalnız termodinamik",
+  "to": "Yalnız elektromanyetizma, yalnız termodinamik"
+ }
+]

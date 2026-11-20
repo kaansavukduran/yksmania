@@ -60,6 +60,12 @@ export default defineConfig({
               priority: 45,
             },
             {
+              // Reviewed display repairs grow with every proofreading wave.
+              name: "display-fixes",
+              test: /[\\/]src[\\/]learning[\\/]displayFixes[\\/][a-z-]+\.json$/,
+              priority: 45,
+            },
+            {
               name: "osym-patterns",
               test: /[\\/]src[\\/]learning[\\/]osym[\\/][0-9a-z-]+\.json$/,
               priority: 45,

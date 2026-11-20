@@ -355,10 +355,10 @@ function Plane018({
           <rect
             className="m018-label-bg"
             data-origin-label-bg
-            x={360 - font * 1.35}
+            x={360 - font * 1.5}
             y={320 + font * 0.08}
-            width={font * 1.05}
-            height={font * 1.25}
+            width={font * 1.3}
+            height={font * 1.4}
             rx="3"
           />
           <text

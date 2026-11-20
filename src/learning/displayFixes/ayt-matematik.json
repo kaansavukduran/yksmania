@@ -1,0 +1,162 @@
+[
+ {
+  "from": "Sağ uçlar 1,2,5; katkılar 1·1,1·2,3·5. Toplam 1+2+15=18.",
+  "to": "Sağ uçlar 1, 2, 5; katkılar 1·1, 1·2, 3·5. Toplam 1+2+15=18."
+ },
+ {
+  "from": "Genişlikleri 1,1,3 olarak yaz.",
+  "to": "Genişlikleri 1, 1, 3 olarak yaz."
+ },
+ {
+  "from": "x≠3 için f(x)=x+3 ve bu alanda f′(x)=1. Başlangıç fonksiyonu=3’te0/0 olduğundan f′(3) yoktur; ayrıca uzatma verilmemiştir.",
+  "to": "x≠3 için f(x)=x+3 ve bu alanda f′(x)=1. Başlangıç fonksiyonu x=3’te 0/0 olduğundan f′(3) yoktur; ayrıca uzatma verilmemiştir."
+ },
+ {
+  "from": "x<2 için F=−(x−2)², x>2 için F=(x−2)²; F′=2|x−2| ve F′(2)=0. F′’nin2’de soldan türevi−2, sağdan+2; eşit olmadığından F″(2) yok.",
+  "to": "x<2 için F=−(x−2)², x>2 için F=(x−2)²; F′=2|x−2| ve F′(2)=0. F′’nin2’de soldan türevi−2, sağdan +2; eşit olmadığından F″(2) yok."
+ },
+ {
+  "from": "Sağ eğim 2·2=4; sol eğim a olduğundan a=4. Süreklilik=2a+b=2²+1=5 verir; b=−3 ve a+b=1.",
+  "to": "Sağ eğim 2·2=4; sol eğim a olduğundan a=4. Süreklilik: 2a+b=2²+1=5 verir; b=−3 ve a+b=1."
+ },
+ {
+  "from": "sin75°=sin45°cos30°+cos45°sin30°. Ürünler√6/4 ve√2/4; toplam(√6+√2)/4. Sonuç yaklaşık 0,966; sin60° ile 1 arasındadır.",
+  "to": "sin75°=sin45°cos30°+cos45°sin30°. Ürünler √6/4 ve √2/4; toplam (√6+√2)/4. Sonuç yaklaşık 0,966; sin60° ile 1 arasındadır."
+ },
+ {
+  "from": "a=35°, b=15° yerine koy. Sonuç sin 50°+sin20° olur. a+b ve a−b geri ortalandığında 35° ve15° bulunur.",
+  "to": "a=35°, b=15° yerine koy. Sonuç sin 50°+sin20° olur. a+b ve a−b geri ortalandığında 35° ve 15° bulunur."
+ },
+ {
+  "from": "sin2x=sin x denkleminin[0,2π) içinde kaç farklı kökü vardır?",
+  "to": "sin2x=sin x denkleminin [0,2π) içinde kaç farklı kökü vardır?"
+ },
+ {
+  "from": "Sin x=0 kökleri 0,π. Cos x=1/2 kökleri π/3,5π/3; toplam 4. Dört kök ayrı ve 2π aralıkta değil.",
+  "to": "Sin x=0 kökleri 0, π. Cos x=1/2 kökleri π/3, 5π/3; toplam 4. Dört kök ayrı ve 2π aralıkta değil."
+ },
+ {
+  "from": "cos2x=cos x denkleminin[0,2π) içindeki çözüm kümesi nedir?",
+  "to": "cos2x=cos x denkleminin [0,2π) içindeki çözüm kümesi nedir?"
+ },
+ {
+  "from": "(2t+1)(t−1)=0 ⇒t=−1/2 veya 1. Aralıkta 2π/3,4π/3 ve 0. Cos değerleri−1/2 veya 1; başlangıç eşitliği sağlanır.",
+  "to": "(2t+1)(t−1)=0 ⇒t=−1/2 veya 1. Aralıkta 2π/3, 4π/3 ve 0. Cos değerleri−1/2 veya 1; başlangıç eşitliği sağlanır."
+ },
+ {
+  "from": "sin x+cos x=1 denkleminin[0,2π) içindeki çözüm kümesi nedir?",
+  "to": "sin x+cos x=1 denkleminin [0,2π) içindeki çözüm kümesi nedir?"
+ },
+ {
+  "from": "Adaylar 0,π/2,π,3π/2. İlk ikisinde toplam 1, son ikisinde−1. Sin0+cos0=1; sin(π/2)+cos(π/2)=1.",
+  "to": "Adaylar 0, π/2, π, 3π/2. İlk ikisinde toplam 1, son ikisinde−1. Sin0+cos0=1; sin(π/2)+cos(π/2)=1."
+ },
+ {
+  "from": "sin x+cos x=√2 denkleminin[0,2π) içindeki kökü hangisidir?",
+  "to": "sin x+cos x=√2 denkleminin [0,2π) içindeki kökü hangisidir?"
+ },
+ {
+  "from": "sin x=0 denkleminin[0,2π] kapalı aralığında kaç farklı kökü vardır?",
+  "to": "sin x=0 denkleminin [0,2π] kapalı aralığında kaç farklı kökü vardır?"
+ },
+ {
+  "from": "0≤k≤2, tam sayılar 0,1,2. Kökler 0,π,2π; üç farklı nokta. Üçü de kapalı aralığın içinde ve sinüsleri sıfır.",
+  "to": "0≤k≤2, tam sayılar 0, 1, 2. Kökler 0, π, 2π; üç farklı nokta. Üçü de kapalı aralığın içinde ve sinüsleri sıfır."
+ },
+ {
+  "from": "tan2x=tan x denkleminin[0,2π) içindeki çözüm kümesi nedir?",
+  "to": "tan2x=tan x denkleminin [0,2π) içindeki çözüm kümesi nedir?"
+ },
+ {
+  "from": "x=kπ. Aralıkta 0 veπ; iki tanjant da bu noktalarda 0. x=π için tan2π=tanπ=0.",
+  "to": "x=kπ. Aralıkta 0 ve π; iki tanjant da bu noktalarda 0. x=π için tan2π=tanπ=0."
+ },
+ {
+  "from": "sinx=1/2 denkleminin[0,2π) içindeki çözüm kümesi nedir?",
+  "to": "sinx=1/2 denkleminin [0,2π) içindeki çözüm kümesi nedir?"
+ },
+ {
+  "from": "Birinci bölgeπ/6, ikinci bölgeπ−π/6=5π/6; aralıkta iki kök bulunur.",
+  "to": "Birinci bölge π/6, ikinci bölge π−π/6=5π/6; aralıkta iki kök bulunur."
+ },
+ {
+  "from": "sin 2x=sinx denkleminin[0,2π) içinde kaç farklı çözümü vardır?",
+  "to": "sin 2x=sinx denkleminin [0,2π) içinde kaç farklı çözümü vardır?"
+ },
+ {
+  "from": "İlk dal 0,π; ikinci dalπ/3,5π/3 verir. Dört farklı kök vardır; 2π açık uçtur.",
+  "to": "İlk dal 0, π; ikinci dal π/3, 5π/3 verir. Dört farklı kök vardır; 2π açık uçtur."
+ },
+ {
+  "from": "İki değeri 3 ve2 bul veya log₂32 yaz.",
+  "to": "İki değeri 3 ve 2 bul veya log₂32 yaz."
+ },
+ {
+  "from": "x>3; sonra(x−1)(x−3)=8.",
+  "to": "x>3; sonra (x−1)(x−3)=8."
+ },
+ {
+  "from": "a_7=5+6·(−2). 5−12=−7. 5,3,1,−1,−3,−5,−7.",
+  "to": "a_7=5+6·(−2). 5−12=−7. 5, 3, 1, −1, −3, −5, −7."
+ },
+ {
+  "from": "d=(14−2)/4. d=3. 2,5,8,11,14 hedefleri sağlar.",
+  "to": "d=(14−2)/4. d=3. 2, 5, 8, 11, 14 hedefleri sağlar."
+ },
+ {
+  "from": "2⁵=32. 3·32=96. 3,6,12,24,48,96.",
+  "to": "2⁵=32. 3·32=96. 3, 6, 12, 24, 48, 96."
+ },
+ {
+  "from": "Yalnız f(a)tanımlı",
+  "to": "Yalnız f(a) tanımlı"
+ },
+ {
+  "from": "f(a)tanımlı, limit var ve limit=f(a).",
+  "to": "f(a) tanımlı, limit var ve limit=f(a)."
+ },
+ {
+  "from": "0’ın çarpmaya göre tersi yoktur. Diğer işlemler sırasıyla 1,0,0 ve 0 verir; karmaşık sayılara geçmek sıfıra bölmeyi tanımlamaz.",
+  "to": "0’ın çarpmaya göre tersi yoktur. Diğer işlemler sırasıyla 1, 0, 0 ve 0 verir; karmaşık sayılara geçmek sıfıra bölmeyi tanımlamaz."
+ },
+ {
+  "from": "z=0 için aşağıdakilerden hangisi bu ünitedeki işlem tanımlarında tanımsızdır?",
+  "to": "z=0 için aşağıdakilerden hangisi tanımsızdır?"
+ },
+ {
+  "from": "−1,0,1,2,3,4 olmak üzere 6 sayı vardır. −2 dışlandığı için alınmaz.",
+  "to": "−1, 0, 1, 2, 3, 4 olmak üzere 6 sayı vardır. −2 dışlandığı için alınmaz."
+ },
+ {
+  "from": "tanθ=sinθ/cosθ=1/0 tanımsızdır. Diğerleri 1,0,0 ve 1 olarak tanımlıdır.",
+  "to": "tanθ=sinθ/cosθ=1/0 tanımsızdır. Diğerleri 1, 0, 0 ve 1 olarak tanımlıdır."
+ },
+ {
+  "from": "Sinüs üçüncü bölgede negatiftir; değer−sin(π/6)=−1/2.",
+  "to": "Sinüs üçüncü bölgede negatiftir; değer −sin(π/6)=−1/2."
+ },
+ {
+  "from": "Referansπ/6, üçüncü bölge.",
+  "to": "Referans π/6, üçüncü bölge."
+ },
+ {
+  "from": "İki açının ortalaması40°, yarı farkı30°. Toplam formülü2sin 40°·cos 30° verir; cos 30°=√3/2 ile sonuç√3sin 40° olur.",
+  "to": "İki açının ortalaması40°, yarı farkı30°. Toplam formülü2sin 40°·cos 30° verir; cos 30°=√3/2 ile sonuç √3sin 40° olur."
+ },
+ {
+  "from": "Sol taraf 5sin(x+φ) biçimindedir ve[−5,5] aralığında kalır.6 bu aralığın dışında olduğundan çözüm yoktur.",
+  "to": "Sol taraf 5sin(x+φ) biçimindedir ve [−5,5] aralığında kalır.6 bu aralığın dışında olduğundan çözüm yoktur."
+ },
+ {
+  "from": "Genlik√(3²+4²).",
+  "to": "Genlik √(3²+4²)."
+ },
+ {
+  "from": "Çıktıları 1,0,1 olarak yaz ve iki özelliği ayrı sına.",
+  "to": "Çıktıları 1, 0, 1 olarak yaz ve iki özelliği ayrı sına."
+ },
+ {
+  "from": "P(x)=0 sıfır polinomunun derecesi için bu okul tanımında hangisi doğrudur?",
+  "to": "P(x)=0 sıfır polinomunun derecesi için hangisi doğrudur?"
+ }
+]
