@@ -1851,6 +1851,19 @@ export const questionTactics: QuestionTactic[] = [
       "Atom ve kütle korunur, mol sayısı değişebilir (2H₂ + O₂ → 2H₂O: 3 → 2 mol). Son adım: tüm katsayıları ortak bölenle sadeleştir (4, 2, 4 → 2, 1, 2).",
     ],
   },
+  {
+    id: "tepkime-turu-olcut",
+    guides: ["tepkime-turleri"],
+    match: /yanma|sentez|analiz|ayrışma|çökelme|çökelti|nötralleşme|tepkime türü|redoks|elektron alışverişi/i,
+    title: "Tepkime türünde önce ölçütü seç; bir tepkime birden çok sınıfa girebilir",
+    steps: [
+      "Yanma: O₂ girendir (CH₄ + 2O₂). O₂ ürünse (2KClO₃ → 2KCl + 3O₂) ayrışmadır, yanma değil.",
+      "Sentez/analiz tür sayısını izler: çok türden tek bileşik sentez (CaO + CO₂ → CaCO₃, O₂ gerekmez); tek bileşikten çok tür analiz. 2Mg + O₂ → 2MgO hem yanma hem sentez.",
+      "Asit-baz proton aktarımıdır; su oluşmayabilir (HCl + NH₃ → NH₄Cl). Çökelme: çözünmüş iyonlardan yeni katı (Ag⁺ + Cl⁻ → AgCl(k)); seyirciler sadeleşir, çözünür kalan karışımda net tepkime yoktur.",
+      "Çökelmede miktar: Pb²⁺ + 2I⁻ → PbI₂; 0,010 mol Pb²⁺ + 0,030 mol I⁻ → 0,010 mol PbI₂, 0,010 mol I⁻ artar.",
+      "Redoks (AYT bağlantısı) basamak değişimi ister: 2017 YGS Fen 23’te nötralleşme ve tuz var, basamak değişmez (C). Tuz ya da katı oluşması redoks kanıtı değildir.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

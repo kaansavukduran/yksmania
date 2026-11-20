@@ -43,6 +43,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "asit-baz-metaller",
   "hayatimizda-asit-baz",
   "tepkimeler-denklemler",
+  "tepkime-turleri",
   "din-felsefesi",
   "ahlak-felsefesi",
   "radyoaktivite",
