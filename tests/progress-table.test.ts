@@ -7,6 +7,8 @@ import { sectionFigures } from "../src/learning/sectionFigures/registry";
 import { foundationLessons } from "../src/learning/foundations";
 import { localizedQuestionView } from "../src/domain/questionPresentation";
 import { helpPanels } from "../src/learning/questionHelp";
+import { osymRows } from "../src/learning/osym";
+import { examCatalogue } from "../src/domain/exams";
 
 /*
  * Machine-readable progress record. The table shown at the end of every Forge
@@ -64,6 +66,7 @@ function compute() {
       );
     }).length;
     const figureLessons = ls.filter((l) => Object.keys(sectionFigures[l.id] ?? {}).length).length;
+    const osymMine = osymRows.filter((r) => r.subject === id);
     return {
       id,
       name,
@@ -76,12 +79,21 @@ function compute() {
       stepped,
       sheetsDone: sheetsDone[id] ?? 0,
       sheets,
+      osymQuestions: osymMine.length,
+      osymBooklets: new Set(osymMine.map((r) => `${r.y}-${r.e}`)).size,
       open: ls.length - figureLessons,
     };
   });
   const sum = (k: keyof (typeof rows)[number]) => rows.reduce((n, r) => n + (r[k] as number), 0);
+  const catalogue = examCatalogue();
   return {
     rows,
+    exams: {
+      specs: catalogue.length,
+      branch: catalogue.filter((e) => e.kind === "branch").length,
+      fullLength: catalogue.filter((e) => e.fullLength).length,
+      items: catalogue.reduce((n, e) => n + e.items.length, 0),
+    },
     foundations: { lessons: foundationLessons.length, figures: foundationLessons.reduce((n, l) => n + (l as { pages?: { figure?: unknown }[] }).pages!.filter((p) => p.figure).length, 0) },
     totals: {
       officialHeadings: sum("officialHeadings"),
@@ -98,6 +110,7 @@ function compute() {
       ogmPdfTotal: pdf ? Number(pdf[2].replace(/\./g, "")) : 0,
       osymPdfDone: Number(osym[1]),
       osymPdfTotal: Number(osym[2]),
+      osymQuestions: osymRows.length,
       osymCitedQuestions: cited.size,
     },
   };
@@ -111,15 +124,21 @@ function markdown(data: ReturnType<typeof compute>) {
     `| Temel İnşa (0. basamak) | ${data.foundations.lessons} ön ders | ${data.foundations.lessons} · ${data.foundations.figures} | ön derslerde çözümlü örnek | — | — | 0 |`,
   ];
   const body = data.rows.map(
-    (r) => `| ${r.name} | ${r.readyLessons} / ${r.lessons} | ${r.figureLessons} · ${r.figures} | ${frac(r.stepped, r.questions)} | ${frac(r.sheetsDone, r.sheets)} | ↓ | ${r.open} |`,
+    (r) =>
+      `| ${r.name} | ${r.readyLessons} / ${r.lessons} | ${r.figureLessons} · ${r.figures} | ${frac(r.stepped, r.questions)} | ${frac(r.sheetsDone, r.sheets)} | ${r.osymQuestions ? `${tr(r.osymQuestions)} soru · ${r.osymBooklets} kitapçık` : "0"} | ${r.open} |`,
+  );
+  const x = data.exams;
+  body.push(
+    `| Denemeler | ${x.specs} hazır deneme (${x.specs - x.branch} karma, ${x.branch} ders) | — | ${x.specs} denemede toplam ${tr(x.items)} soru; incelemede aynı çözüm paneli | — | ${t.osymPdfDone} / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: ${x.fullLength} |`,
   );
   const foot = [
-    `| **Toplam** | **${t.readyLessons} / ${t.lessons}** | **${t.figureLessons} · ${t.figures}** | **${frac(t.stepped, t.questions)}** | **${frac(t.sheetsDone, t.sheets)}** | **${t.osymCitedQuestions} bağlantılı geçmiş soru** | **${t.open}** |`,
+    `| **Toplam** | **${t.readyLessons} / ${t.lessons}** | **${t.figureLessons} · ${t.figures}** | **${frac(t.stepped, t.questions)}** | **${frac(t.sheetsDone, t.sheets)}** | **${frac(t.osymPdfDone, t.osymPdfTotal)} PDF · ${tr(t.osymQuestions)} soru** | **${t.open}** |`,
     "",
     "| Genel gösterge | Değer |",
     "| --- | ---: |",
     `| OGM/MEBİ PDF (okunan / envanter) | ${frac(t.ogmPdfDone, t.ogmPdfTotal)} |`,
     `| 99_ÖSYM PDF (işlenen / beyan edilen) | ${frac(t.osymPdfDone, t.osymPdfTotal)} |`,
+    `| 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | ${tr(t.osymQuestions)} · ${t.osymCitedQuestions} |`,
     `| Adım adım çözümlü soru | ${frac(t.stepped, t.questions)} |`,
     `| Kopya kâğıdı (işlenen / toplam) | ${frac(t.sheetsDone, t.sheets)} |`,
     `| Resmî ana başlık · uygulama dersi · hazır anlatım | ${t.officialHeadings} · ${t.lessons} · ${t.readyLessons} |`,

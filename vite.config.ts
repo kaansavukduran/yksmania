@@ -60,6 +60,11 @@ export default defineConfig({
               priority: 45,
             },
             {
+              name: "osym-patterns",
+              test: /[\\/]src[\\/]learning[\\/]osym[\\/][0-9a-z-]+\.json$/,
+              priority: 45,
+            },
+            {
               name: "learning-core",
               test: /[\\/]src[\\/](?:learning|domain)[\\/][^\\/]*\.ts$/,
               priority: 10,

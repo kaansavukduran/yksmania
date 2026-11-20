@@ -29,15 +29,21 @@ export interface OsymRow {
   subject: string;
   /** Official key letter, or "iptal" for a cancelled question. */
   a: string;
+  /** Official curriculum heading; null when no heading fits (the note names it). */
+  c: string | null;
+  c2: string | null;
+  /** Detailed study heading, when one matches. */
   topic: string | null;
   topic2: string | null;
-  /** Sub-topic in words when the heading list has no exact match. */
-  topicNote: string | null;
+  /** Sub-topic in a few words; every row has one. */
+  topicNote: string;
   pattern: string;
   skill: string;
   trap: string;
   form: OsymForm;
   difficulty: 1 | 2 | 3;
+  /** Posed inside an everyday scenario rather than as a bare exercise. */
+  context: boolean;
   /** Philosophy questions answered instead of Religious Culture. */
   alt?: boolean;
 }
@@ -52,7 +58,12 @@ export function processedYears(rows: readonly OsymRow[], exam: OsymExam): number
   return [...new Set(rows.filter((r) => r.e === exam).map((r) => r.y))].sort((a, b) => a - b);
 }
 
-/** Rows that measure this topic, newest booklet first. */
+/** Rows under an official curriculum heading, newest booklet first. */
+export function rowsForHeading(rows: readonly OsymRow[], headingId: string): OsymRow[] {
+  return rows.filter((r) => r.c === headingId || r.c2 === headingId).sort(byBookletOrder);
+}
+
+/** Rows that measure this detailed study topic, newest booklet first. */
 export function rowsForTopic(rows: readonly OsymRow[], topicId: string): OsymRow[] {
   return rows.filter((r) => r.topic === topicId || r.topic2 === topicId).sort(byBookletOrder);
 }
@@ -75,7 +86,7 @@ export interface HeatmapRow {
   total: number;
 }
 
-/** Topic × year question counts for one subject, in the given topic order. */
+/** Official heading × year question counts for one subject, in the given heading order. */
 export function subjectHeatmap(
   rows: readonly OsymRow[],
   subjectId: string,
@@ -84,7 +95,7 @@ export function subjectHeatmap(
   const years = processedYears(rows, examOfSubject(subjectId));
   const mine = rows.filter((r) => r.subject === subjectId);
   const table = topics.map((t) => {
-    const cells = years.map((y) => mine.filter((r) => r.y === y && (r.topic === t.id || r.topic2 === t.id)).length);
+    const cells = years.map((y) => mine.filter((r) => r.y === y && (r.c === t.id || r.c2 === t.id)).length);
     return { id: t.id, title: t.title, cells, total: cells.reduce((a, b) => a + b, 0) };
   });
   return { years, rows: table, questions: mine.length };
@@ -96,11 +107,11 @@ export interface NoteGroup {
   years: number[];
 }
 
-/** Questions the heading list could not place, grouped by their sub-topic note. */
+/** Questions no official heading could place, grouped by their sub-topic note. */
 export function unplacedGroups(rows: readonly OsymRow[], subjectId: string): NoteGroup[] {
   const groups = new Map<string, OsymRow[]>();
   for (const r of rows) {
-    if (r.subject !== subjectId || r.topic !== null || !r.topicNote) continue;
+    if (r.subject !== subjectId || r.c !== null) continue;
     const key = r.topicNote.trim();
     groups.set(key, [...(groups.get(key) ?? []), r]);
   }
@@ -124,6 +135,12 @@ export function formShares(rows: readonly OsymRow[], subjectId: string): FormSha
   return [...counts]
     .map(([form, count]) => ({ form, count, percent: Math.round((count / mine.length) * 100) }))
     .sort((a, b) => b.count - a.count || a.form.localeCompare(b.form, "tr"));
+}
+
+/** Whole percent of the subject's processed questions posed in an everyday scenario. */
+export function contextPercent(rows: readonly OsymRow[], subjectId: string): number {
+  const mine = rows.filter((r) => r.subject === subjectId);
+  return mine.length ? Math.round((mine.filter((r) => r.context).length / mine.length) * 100) : 0;
 }
 
 export interface BookletSummary {

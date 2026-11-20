@@ -2,9 +2,11 @@ import { useState, type CSSProperties } from "react";
 import { osymRows } from "../learning/osym";
 import {
   bookletPlace,
+  contextPercent,
   examOfSubject,
   formShares,
   processedYears,
+  rowsForHeading,
   rowsForTopic,
   subjectHeatmap,
   topicYearCounts,
@@ -22,6 +24,7 @@ function PatternItem({ row }: { row: OsymRow }) {
     <li className="osym-pattern">
       <p className="osym-place small muted">
         {bookletPlace(row)} · {row.form} · {DIFFICULTY[row.difficulty]}
+        {row.context ? " · gündelik yaşam bağlamı" : ""}
       </p>
       <p className="osym-pattern-title">{row.pattern}</p>
       <p>
@@ -93,6 +96,7 @@ export function OsymHeatmap({
   topics: readonly { id: string; title: string }[];
 }) {
   const [byCount, setByCount] = useState(true);
+  const [open, setOpen] = useState<string | null>(null);
   const exam = examOfSubject(subjectId);
   if (!processedYears(osymRows, exam).length) return null;
   const map = subjectHeatmap(osymRows, subjectId, topics);
@@ -114,7 +118,7 @@ export function OsymHeatmap({
       </div>
       <p className="muted small">
         {span(map.years)} arası {map.years.length} {exam} kitapçığında bu dersten {map.questions} soru işlendi. Sayılar
-        soru adedidir; boş kutu o yıl sorulmadığını gösterir.
+        soru adedidir; boş kutu o yıl sorulmadığını gösterir. Başlığa dokununca o başlığın soru kalıpları açılır.
       </p>
       <div className="osym-map-head" aria-hidden="true">
         <span />
@@ -126,7 +130,18 @@ export function OsymHeatmap({
       <ul className="osym-map">
         {rows.map((r) => (
           <li key={r.id} className={r.total ? undefined : "never"}>
-            <span className="osym-map-title">{r.title}</span>
+            {r.total ? (
+              <button
+                type="button"
+                className="osym-map-title text-button"
+                aria-expanded={open === r.id}
+                onClick={() => setOpen(open === r.id ? null : r.id)}
+              >
+                {r.title}
+              </button>
+            ) : (
+              <span className="osym-map-title">{r.title}</span>
+            )}
             {r.cells.map((n, i) => (
               <span
                 key={map.years[i]}
@@ -139,6 +154,13 @@ export function OsymHeatmap({
             <span className="osym-total" aria-label={`Toplam ${r.total} soru`}>
               {r.total}
             </span>
+            {open === r.id && (
+              <ul className="osym-patterns osym-map-open">
+                {rowsForHeading(osymRows, r.id).map((x) => (
+                  <PatternItem key={`${x.y}-${x.e}-${x.test}-${x.q}`} row={x} />
+                ))}
+              </ul>
+            )}
           </li>
         ))}
       </ul>
@@ -150,6 +172,7 @@ export function OsymHeatmap({
       )}
       <p className="small">
         <strong>Soru biçimi:</strong> {forms.map((f) => `${f.form} %${f.percent}`).join(" · ")}
+        {" · "}gündelik yaşam bağlamlı %{contextPercent(osymRows, subjectId)}
       </p>
     </section>
   );

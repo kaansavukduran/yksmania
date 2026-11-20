@@ -12,6 +12,8 @@
    "stepped": 380,
    "sheetsDone": 4,
    "sheets": 33,
+   "osymQuestions": 40,
+   "osymBooklets": 1,
    "open": 30
   },
   {
@@ -26,6 +28,8 @@
    "stepped": 735,
    "sheetsDone": 5,
    "sheets": 38,
+   "osymQuestions": 30,
+   "osymBooklets": 1,
    "open": 28
   },
   {
@@ -40,6 +44,8 @@
    "stepped": 217,
    "sheetsDone": 1,
    "sheets": 32,
+   "osymQuestions": 10,
+   "osymBooklets": 1,
    "open": 0
   },
   {
@@ -54,6 +60,8 @@
    "stepped": 311,
    "sheetsDone": 7,
    "sheets": 24,
+   "osymQuestions": 7,
+   "osymBooklets": 1,
    "open": 4
   },
   {
@@ -68,6 +76,8 @@
    "stepped": 535,
    "sheetsDone": 38,
    "sheets": 56,
+   "osymQuestions": 7,
+   "osymBooklets": 1,
    "open": 16
   },
   {
@@ -82,6 +92,8 @@
    "stepped": 515,
    "sheetsDone": 7,
    "sheets": 36,
+   "osymQuestions": 6,
+   "osymBooklets": 1,
    "open": 33
   },
   {
@@ -96,6 +108,8 @@
    "stepped": 390,
    "sheetsDone": 4,
    "sheets": 24,
+   "osymQuestions": 5,
+   "osymBooklets": 1,
    "open": 28
   },
   {
@@ -110,6 +124,8 @@
    "stepped": 400,
    "sheetsDone": 5,
    "sheets": 40,
+   "osymQuestions": 5,
+   "osymBooklets": 1,
    "open": 32
   },
   {
@@ -124,6 +140,8 @@
    "stepped": 190,
    "sheetsDone": 3,
    "sheets": 17,
+   "osymQuestions": 10,
+   "osymBooklets": 1,
    "open": 14
   },
   {
@@ -138,6 +156,8 @@
    "stepped": 371,
    "sheetsDone": 3,
    "sheets": 20,
+   "osymQuestions": 5,
+   "osymBooklets": 1,
    "open": 16
   },
   {
@@ -152,6 +172,8 @@
    "stepped": 253,
    "sheetsDone": 2,
    "sheets": 17,
+   "osymQuestions": 0,
+   "osymBooklets": 0,
    "open": 5
   },
   {
@@ -166,6 +188,8 @@
    "stepped": 40,
    "sheetsDone": 1,
    "sheets": 4,
+   "osymQuestions": 0,
+   "osymBooklets": 0,
    "open": 0
   },
   {
@@ -180,6 +204,8 @@
    "stepped": 541,
    "sheetsDone": 7,
    "sheets": 46,
+   "osymQuestions": 0,
+   "osymBooklets": 0,
    "open": 36
   },
   {
@@ -194,6 +220,8 @@
    "stepped": 680,
    "sheetsDone": 11,
    "sheets": 55,
+   "osymQuestions": 0,
+   "osymBooklets": 0,
    "open": 38
   },
   {
@@ -208,9 +236,17 @@
    "stepped": 907,
    "sheetsDone": 11,
    "sheets": 75,
+   "osymQuestions": 0,
+   "osymBooklets": 0,
    "open": 60
   }
  ],
+ "exams": {
+  "specs": 17,
+  "branch": 15,
+  "fullLength": 2,
+  "items": 800
+ },
  "foundations": {
   "lessons": 25,
   "figures": 57
@@ -228,8 +264,9 @@
   "open": 340,
   "ogmPdfDone": 119,
   "ogmPdfTotal": 8981,
-  "osymPdfDone": 0,
+  "osymPdfDone": 1,
   "osymPdfTotal": 1001,
+  "osymQuestions": 125,
   "osymCitedQuestions": 76
  }
 }
