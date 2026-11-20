@@ -87,6 +87,10 @@ import { physicsFiguresProjectile } from "./physicsFiguresProjectile";
 import { physicsFiguresKepler } from "./physicsFiguresKepler";
 import { physicsFiguresDoppler } from "./physicsFiguresDoppler";
 import { physicsFiguresTorque } from "./physicsFiguresTorque";
+import { chemistryFiguresIonization } from "./chemistryFiguresIonization";
+import { chemistryFiguresShells } from "./chemistryFiguresShells";
+import { chemistryFiguresRadius } from "./chemistryFiguresRadius";
+import { chemistryFiguresAffinity } from "./chemistryFiguresAffinity";
 import { biologyFiguresSkin } from "./biologyFiguresSkin";
 import { geographyFiguresWater } from "./geographyFiguresWater";
 import { biologyFiguresAtp } from "./biologyFiguresAtp";
@@ -187,6 +191,10 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   physicsFiguresKepler,
   physicsFiguresDoppler,
   physicsFiguresTorque,
+  chemistryFiguresIonization,
+  chemistryFiguresShells,
+  chemistryFiguresRadius,
+  chemistryFiguresAffinity,
   biologyFiguresSkin,
   geographyFiguresWater,
   biologyFiguresAtp,

@@ -1604,6 +1604,58 @@ export const questionTactics: QuestionTactic[] = [
       "Sembol sorusunda kökü oku: yin–yang Taoizmle ilişkilendirilir (2026 AYT SB-2 39: A) ama kişinin aidiyetini kanıtlamaz; olumsuz kökte dışarıdakini seç.",
     ],
   },
+  {
+    id: "iyonlasma-sicrama-istisna",
+    guides: ["iyonlasma-enerjisi"],
+    match: /iyonlaşma enerjisi|İE₁|İE₂|İE₃|ardışık iyonlaşma|değerlik elektron|kJ\/mol|sıçrama/i,
+    title: "İyonlaşma enerjisinde önce sıçramayı say, sonra yönü ve istisnayı kontrol et",
+    steps: [
+      "Ardışık değerlerde komşu oranları hesapla (İE₂/İE₁, İE₃/İE₂ …); ilk büyük oran iç katmana geçişi gösterir.",
+      "Sıçramadan önce çıkan elektron sayısı ana grupta değerlik elektron sayısıdır: Al için İE₃ → İE₄ ⇒ 3A.",
+      "Farklı elementlerde başlangıç tahmini: periyotta sağa ve grupta yukarı İE₁ genel olarak artar.",
+      "İstisnaları düzelt: Be > B, Mg > Al (dolu s); N > O, P > S (yarı dolu p). Sıralama Na < Al < Mg, O < N < F gibi çıkar.",
+      "Farklı periyotlar karışıksa genellemeyle değil veriyle karar ver: soy gaz Ar (≈1521) F’den (≈1681) düşüktür; tek karşı örnek tümel iddiayı eler.",
+    ],
+  },
+  {
+    id: "katman-say-dagit-denetle",
+    guides: ["katman-elektron-dizilimi"],
+    match: /katman|elektron dağılımı|elektron dizilimi|2n²|izoelektronik|uyarılmış|temel hâl|değerlik elektron/i,
+    title: "Katman diziliminde önce elektronu say, sonra dağıt ve toplamla denetle",
+    steps: [
+      "Taneciği tanı: nötrde e = Z, iyonda e = Z − q (q işaretli). Ca²⁺: 20 − (+2) = 18; Cl⁻: 17 − (−1) = 18.",
+      "İçten dışa dağıt: ilk 20 element için 2, 8, 8, 2 örüntüsü. 2n² kapasitedir, dolma sırası değildir (K: 2,8,8,1).",
+      "Toplamı geri denetle; dağılım verildiyse önce topla: nötrse Z = toplam, iyonsa Z = e + q.",
+      "Periyot ve ana grubu yalnız nötr temel dağılımdan oku: Ca²⁺ (2,8,8) 4. periyot 2A’dır; uyarılmış 2,7,2 Na’dır, grup 1.",
+      "Aday dağılımda sıra: toplam → kapasite (K ≤ 2, L ≤ 8) → enerji. Aynı elektron sayısı aynı element demek değildir (Na⁺, Ne, Mg²⁺).",
+    ],
+  },
+  {
+    id: "atom-capi-iliski-kural",
+    guides: ["atom-capi-karsilastirma"],
+    match: /atom çapı|atom yarıçapı|yarıçap|eş elektronlu|izoelektronik|katyon|anyon|büyükten küçüğe|küçükten büyüğe/i,
+    title: "Atom çapında önce tanecik ilişkisini adlandır, sonra o ilişkinin kuralını uygula",
+    steps: [
+      "Türü yaz: nötr atom, katyon, anyon. İyonsa dağılımı yeniden kur (Na⁺ = 2,8: bir katman kaybı).",
+      "Aynı grup → katman sayısı: aşağı büyür (Be < Mg < Ca). Aynı periyot → proton çekimi: sağa küçülür (Na > Mg > Al; B > F).",
+      "Atom ve kendi iyonu → proton sabit: katyon küçük, anyon büyük (Na > Na⁺, Cl⁻ > Cl).",
+      "Eş elektronlu seri → önce elektronları eşitle, sonra proton çoksa küçük: O²⁻ > F⁻ > Na⁺ > Mg²⁺.",
+      "Farklı grup ve periyotta oklar çatışırsa veri iste: aynı tanımla Li 130 pm > Cl 100 pm. Çapı yarıçapla kıyaslama (d = 2r).",
+    ],
+  },
+  {
+    id: "elektron-kavram-surec-isaret",
+    guides: ["elektron-ilgisi-elektronegatiflik"],
+    match: /elektron ilgisi|elektronegatiflik|metalik|ametalik|Pauling|kJ\/mol|elektron alma|elektron verme/i,
+    title: "Elektron kavramlarında süreci adlandır, işareti eşitle, istisnayı veriyle kontrol et",
+    steps: [
+      "Süreci seç: gaz atomuna elektron ekleme → elektron ilgisi (kJ/mol); bağdaki ortak elektronu çekme → elektronegatiflik (birimsiz); verme/alma eğilimi → metalik/ametalik.",
+      "Elektron ilgisinde işaret tanımını oku: ΔE = −349 ile “349 kJ/mol salınır” aynı olay olabilir; −53 sayıca büyük ama salım küçük.",
+      "Genel yön: EN ve ametalik sağa–yukarı, metalik sola–aşağı artar. Soy gaza ölçek değer vermiyorsa boşluğu 0 sayma.",
+      "İstisnayı koru: EN’de F > Cl, ilk eklemede salınan enerjide Cl > F (RSC). İyonlaşmadaki N–O düzensizliği EN’ye taşınmaz.",
+      "Çok basamakta başlangıç taneciğini yaz ve işaretli topla: −150 + 700 = +550 kJ/mol; molle çarp. İlk basamağı ikiyle çarpma.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
