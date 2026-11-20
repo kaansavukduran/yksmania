@@ -2,8 +2,9 @@ import type { FigureDef } from "../sectionFigures/figureKit";
 
 /*
  * Temel İnşa (0. basamak): isteğe bağlı ön dersler. Çalışma planına, 505 konu
- * sayacına, XP'ye, kupaya ya da tekrar takvimine girmez; okuma, figür keşfi ve
- * kontrol sorusu çözmek ustalık kanıtı üretmez. Sorular özgündür.
+ * sayacına, XP'ye ve tekrar takvimine girmez; okuma ve figür keşfi kanıt
+ * üretmez. Yalnız kontrol sorularının ilk cevabı saklanır (Temel İnşa kupası).
+ * Sorular özgündür.
  */
 
 /** Okumadan önce kısa tahmin; cevap düğmeyle açılır. */

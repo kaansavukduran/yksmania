@@ -163,6 +163,15 @@ const GLYPHS: Record<string, ReactNode> = {
       <path d="m19 2 .8 1.6 1.7.2-1.3 1.1.4 1.7-1.6-.9-1.6.9.4-1.7-1.3-1.1 1.7-.2z" {...S} />
     </>
   ),
+  "temel-insa": (
+    <>
+      <path d="M3 20h18" {...S} />
+      <rect x="4" y="14" width="7" height="6" {...S} />
+      <rect x="13" y="14" width="7" height="6" {...S} />
+      <rect x="8.5" y="8" width="7" height="6" {...S} />
+      <path d="M12 2.5v3M10.5 4h3" {...S} />
+    </>
+  ),
   "hata-mezarligi": (
     <>
       <path d="M6 21V10a6 6 0 0 1 12 0v11z" {...S} />

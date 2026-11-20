@@ -80,7 +80,7 @@ for (const width of [1280, 320])
     await addSessions(page, [session("session:1:katli-oranlar", "2026-11-18", true)]);
     await page.goto("/#/world");
     const showcase = page.locator(".trophy-showcase");
-    await expect(showcase).toContainText("0 / 34 açıldı");
+    await expect(showcase).toContainText("0 / 35 açıldı");
     await expect(showcase.locator(".trophy-card.is-earned")).toHaveCount(0);
     // The same ten answers without help: the chemistry badge and the perfect run open.
     await addSessions(page, [session("session:2:katli-oranlar", "2026-11-19", false)]);

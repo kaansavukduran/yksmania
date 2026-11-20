@@ -74,3 +74,46 @@ describe("051 Temel İnşa ön dersleri", () => {
     }
   });
 });
+
+import { initialState } from "../src/domain/model";
+import { validateState } from "../src/domain/storage";
+import { foundationScore, foundationsMastered, recordFoundationAttempt } from "../src/domain/foundationAttempts";
+import { evaluateTrophies } from "../src/domain/achievements";
+import { resetLearningProgress } from "../src/domain/resetProgress";
+
+describe("051 Temel İnşa ilk deneme kaydı ve kupası", () => {
+  const lesson = foundationLessons[0];
+  it("records only the first answer and keeps old states valid", () => {
+    const old = initialState() as Record<string, unknown>;
+    delete old.foundationAttempts;
+    expect(validateState(old).foundationAttempts).toEqual({});
+    let s = initialState();
+    const wrong = (lesson.checks[0].answer + 1) % 5;
+    s = recordFoundationAttempt(s, lesson.id, 0, wrong, "2026-11-20");
+    s = recordFoundationAttempt(s, lesson.id, 0, lesson.checks[0].answer, "2026-11-20");
+    expect(s.foundationAttempts[lesson.id]["0"]).toEqual({ selected: wrong, correct: false, date: "2026-11-20" });
+    expect(foundationScore(s, lesson.id)).toEqual({ answered: 1, firstCorrect: 0 });
+    expect(validateState(structuredClone(s))).toEqual(s);
+    expect(recordFoundationAttempt(s, "yok", 0, 0, "2026-11-20")).toBe(s);
+  });
+  it("rejects forged attempts", () => {
+    const s = initialState();
+    s.foundationAttempts = { [lesson.id]: { "0": { selected: lesson.checks[0].answer, correct: false, date: "2026-11-20" } } };
+    expect(() => validateState(s)).toThrow("INVALID_FOUNDATION_ATTEMPT");
+    s.foundationAttempts = { yok: {} };
+    expect(() => validateState(s)).toThrow("UNKNOWN_FOUNDATION");
+  });
+  it("awards the trophy only for whole lessons answered correctly on the first try, and reset clears it", () => {
+    let s = initialState();
+    for (const l of foundationLessons.slice(0, 3)) l.checks.forEach((c, i) => (s = recordFoundationAttempt(s, l.id, i, c.answer, "2026-11-20")));
+    const other = foundationLessons[3];
+    s = recordFoundationAttempt(s, other.id, 0, (other.checks[0].answer + 1) % 5, "2026-11-20");
+    other.checks.slice(1).forEach((c, i) => (s = recordFoundationAttempt(s, other.id, i + 1, c.answer, "2026-11-20")));
+    expect(foundationsMastered(s)).toBe(3);
+    const t = evaluateTrophies(s, () => undefined).find((x) => x.id === "temel-insa")!;
+    expect(t.value).toBe(3);
+    expect(t.tier).toBe(1);
+    expect(evaluateTrophies(s, () => undefined).find((x) => x.id === "soru-canavari")!.value).toBe(0);
+    expect(resetLearningProgress(s).foundationAttempts).toEqual({});
+  });
+});

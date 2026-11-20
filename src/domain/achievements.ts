@@ -1,3 +1,4 @@
+import { foundationsMastered } from "./foundationAttempts";
 import type { AppState, Session } from "./model";
 import type { ExamSession } from "./examModel";
 
@@ -69,6 +70,7 @@ const BASE: TrophyDef[] = [
   { id: "yildiz-avcisi", title: "Yıldız Avcısı", goal: "7 yıldız ve üstü {n} farklı soruyu yardımsız doğru çöz", category: "ustalik", thresholds: [10, 50, 200] },
   { id: "secici-zirve", title: "Seçici Zirve", goal: "9–10 yıldızlı {n} farklı soruyu yardımsız doğru çöz", category: "ustalik", thresholds: [5, 25, 100] },
   { id: "yildiz-merdiveni", title: "Yıldız Merdiveni", goal: "{n} derste 1'den 10'a kadar her yıldız düzeyinden en az bir soruyu yardımsız doğru çöz", category: "ustalik", thresholds: [1, 3, 8] },
+  { id: "temel-insa", title: "Temel İnşa", goal: "{n} ön dersin bütün kontrol sorularını ilk denemede doğru çöz", category: "ustalik", thresholds: [3, 10, 25] },
   { id: "hata-mezarligi", title: "Hata Mezarlığı", goal: "Yanlış yaptığın {n} soruyu sonra yardımsız doğru çözerek onar", category: "ustalik", thresholds: [25, 50, 100] },
   { id: "tuzak-avcisi", title: "Tuzak Avcısı", goal: "\"Eminim\" deyip yanlış yaptığın {n} soruyu sonra yardımsız doğru çöz", category: "ustalik", thresholds: [1, 10, 30] },
   { id: "tekrar-dongusu", title: "Hatırlama Döngüsü", goal: "Vadesi gelen {n} tekrarı en az bir yardımsız doğruyla tamamla", category: "sureklilik", thresholds: [5, 30, 100] },
@@ -131,6 +133,7 @@ export function evaluateTrophies(
   }
   for (const subject of SUBJECTS) values[`ders:${subject.id}`] = mastered.get(subject.id)?.size ?? 0;
 
+  values["temel-insa"] = foundationsMastered(state);
   values["soru-canavari"] = sessions.reduce((n, s) => n + s.responses.filter((r) => r.correct && !r.assisted).length, 0);
   values["kusursuz-seri"] = sessions.filter((s) => s.responses.length >= 10 && s.responses.every((r) => r.correct && !r.assisted)).length;
   values["ipucu-yok"] = sessions.filter(

@@ -11,6 +11,7 @@ export function resetLearningProgress(state: AppState): AppState {
     theoryReviewCompletions: [],
     draft: null,
     topicProgress: {},
+    foundationAttempts: {},
     unlocked: [],
     explorations: {},
     focusTimer: changeTimer(

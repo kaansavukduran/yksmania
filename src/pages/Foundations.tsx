@@ -4,6 +4,8 @@ import { useApp } from "../store";
 import { subjectById } from "../domain/content";
 import { lessonById } from "../domain/content";
 import { SubjectMark } from "../components/Shared";
+import { foundationScore, recordFoundationAttempt } from "../domain/foundationAttempts";
+import { localDate } from "../domain/scheduler";
 import { SectionFigureView } from "../learning/sectionFigures/figureKit";
 import { foundationById, foundationLessons, foundationSubjects } from "../learning/foundations";
 import "../foundations.css";
@@ -12,9 +14,9 @@ import type { FoundationCheck, FoundationExample, FoundationLesson, FoundationPa
 
 /*
  * Temel İnşa (0. basamak). İsteğe bağlı ön dersler: çalışma planına, 505 konu
- * sayacına, XP'ye, kupaya ya da tekrar takvimine yazılmaz. Okumak, figürle
- * oynamak ve kontrol sorusu çözmek ustalık kanıtı değildir; kontrol cevapları
- * yalnız bu ekranda tutulur.
+ * sayacına, XP'ye ve tekrar takvimine yazılmaz. Okumak ve figürle oynamak hiçbir
+ * kayıt üretmez. Kontrol sorularında yalnız İLK cevap saklanır; yalnız ilk
+ * denemedeki doğrular “Temel İnşa” kupasına sayılır, tekrar denemeler alıştırmadır.
  */
 
 const MODE_KEY = "yksmania.foundations.mode";
@@ -41,7 +43,7 @@ export function Foundations({ route, navigate }: { route: string; navigate: (r: 
 }
 
 function FoundationList({ navigate, missing }: { navigate: (r: string) => void; missing: boolean }) {
-  const { l } = useApp();
+  const { l, state } = useApp();
   const [subject, setSubject] = useState<string>("tyt-matematik");
   const list = foundationLessons.filter((x) => x.subjectId === subject);
   return (
@@ -54,7 +56,8 @@ function FoundationList({ navigate, missing }: { navigate: (r: string) => void; 
       </header>
       <p className="lead muted">
         0. basamak: lise konularına geçmeden önce gereken temel beceriler. İsteğe bağlıdır; çalışma planına, konu sayacına, XP’ye ve
-        tekrar takvimine girmez. Her ön ders sayfa sayfa ilerler, dokunulabilir şekil ve çözümlü örnek içerir.
+        tekrar takvimine girmez. Her ön ders sayfa sayfa ilerler, dokunulabilir şekil ve çözümlü örnek içerir. Kontrol sorularında
+        yalnız ilk cevabın bu cihazda kaydedilir ve yalnız ilk denemedeki doğrular Temel İnşa kupasına sayılır.
       </p>
       {missing && <p className="foundation-note">Bu ön ders bulunamadı. Aşağıdaki listeden seçebilirsin.</p>}
       <div className="foundation-subjects" role="group" aria-label="Ders seç">
@@ -97,6 +100,7 @@ function FoundationList({ navigate, missing }: { navigate: (r: string) => void; 
                 </p>
                 <p>{x.goal}</p>
                 <Prepares lesson={x} />
+                <FirstTry lessonId={x.id} total={x.checks.length} answered={foundationScore(state, x.id).answered} correct={foundationScore(state, x.id).firstCorrect} />
               </div>
               <button type="button" className="primary" onClick={() => navigate(`/foundations?id=${x.id}`)}>
                 Başla <ArrowRight size={16} />
@@ -106,6 +110,16 @@ function FoundationList({ navigate, missing }: { navigate: (r: string) => void; 
         </ol>
       )}
     </>
+  );
+}
+
+function FirstTry({ total, answered, correct }: { lessonId: string; total: number; answered: number; correct: number }) {
+  if (!answered) return null;
+  return (
+    <p className="small foundation-firsttry">
+      İlk denemede doğru: {correct} / {total}
+      {answered < total ? ` · ${total - answered} soru henüz denenmedi` : correct === total ? " · tamamı" : ""}
+    </p>
   );
 }
 
@@ -231,8 +245,8 @@ function FoundationReader({ lesson, navigate }: { lesson: FoundationLesson; navi
         blocks.map((b, i) => <BlockView key={titles[i]} block={b} lesson={lesson} n={i + 1} />)
       )}
       <p className="small muted foundation-foot">
-        Bu ön ders isteğe bağlıdır. Okumak, şekillerle oynamak ve kontrol sorularını çözmek çalışma planına, XP’ye ya da tekrar takvimine
-        kayıt oluşturmaz. Örnek ve sorular özgündür.
+        Bu ön ders isteğe bağlıdır. Okumak ve şekillerle oynamak hiçbir kayıt oluşturmaz; kontrol sorularında yalnız ilk cevabın saklanır
+        ve çalışma planına, XP’ye ya da tekrar takvimine yazılmaz. Örnek ve sorular özgündür.
       </p>
     </article>
   );
@@ -252,9 +266,11 @@ function BlockView({ block, lesson, n }: { block: Block; lesson: FoundationLesso
   return (
     <section className="panel foundation-section" aria-labelledby={`fc-${lesson.id}`}>
       <h2 id={`fc-${lesson.id}`}>Kendini sına</h2>
-      <p className="small muted">Özgün alıştırma · ÖSYM sorusu değildir · cevapların kaydedilmez, ustalık kanıtı oluşturmaz.</p>
+      <p className="small muted">
+        Özgün alıştırma · ÖSYM sorusu değildir · yalnız ilk cevabın bu cihazda kaydedilir; plana ve tekrar takvimine girmez.
+      </p>
       {lesson.checks.map((c, i) => (
-        <CheckView key={c.prompt} check={c} n={i + 1} />
+        <CheckView key={c.prompt} check={c} n={i + 1} lessonId={lesson.id} />
       ))}
     </section>
   );
@@ -327,9 +343,15 @@ function ExampleView({ example }: { example: FoundationExample }) {
   );
 }
 
-function CheckView({ check, n }: { check: FoundationCheck; n: number }) {
+function CheckView({ check, n, lessonId }: { check: FoundationCheck; n: number; lessonId: string }) {
+  const { state, commit } = useApp();
+  const first = state.foundationAttempts[lessonId]?.[String(n - 1)];
   const [chosen, setChosen] = useState<number | null>(null);
   const right = chosen === check.answer;
+  const choose = (i: number) => {
+    setChosen(i);
+    if (!first) void commit((s) => recordFoundationAttempt(s, lessonId, n - 1, i, localDate()));
+  };
   return (
     <fieldset className="foundation-check">
       <legend>
@@ -343,12 +365,17 @@ function CheckView({ check, n }: { check: FoundationCheck; n: number }) {
             disabled={chosen !== null}
             aria-pressed={chosen === i}
             className={chosen === null ? "" : i === check.answer ? "correct" : chosen === i ? "wrong" : ""}
-            onClick={() => setChosen(i)}
+            onClick={() => choose(i)}
           >
             <span className="foundation-letter">{"ABCDE"[i]}</span> {o}
           </button>
         ))}
       </div>
+      {first && (
+        <p className="small muted foundation-first">
+          İlk denemen: {"ABCDE"[first.selected]} ({first.correct ? "doğru" : "yanlış"}) · kayıtlı. Yeni denemeler alıştırmadır, kaydı değiştirmez.
+        </p>
+      )}
       {chosen !== null && (
         <div className={right ? "foundation-feedback ok" : "foundation-feedback no"} role="status">
           <p>

@@ -56,6 +56,10 @@ test("Temel İnşa opens from the sidebar, pages one by one, checks explain wron
   await expect(page.getByRole("heading", { level: 1, name: LESSON })).toBeVisible();
   await expect(modes.getByRole("button", { name: "Tümünü gör" })).toHaveAttribute("aria-pressed", "true");
   await expect(page.locator(".foundation-section")).toHaveCount(5);
+  // Only the first answer is stored: the wrong first try stays, the retry does not overwrite it.
+  await expect(page.locator(".foundation-check").first().locator(".foundation-first")).toContainText("İlk denemen: A (yanlış) · kayıtlı");
+  await page.getByRole("button", { name: /Temel İnşa/ }).first().click();
+  await expect(page.locator(".foundation-card", { hasText: LESSON }).locator(".foundation-firsttry")).toContainText("İlk denemede doğru: 0 / 4 · 3 soru henüz denenmedi");
   await page.getByRole("navigation").getByRole("button", { name: "Bugün" }).click();
   await expect(page.locator(".hero-progress-chip")).toContainText("0 / 505 konu çalışıldı");
 });

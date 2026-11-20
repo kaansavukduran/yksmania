@@ -3,6 +3,7 @@ import { initialState, stateSchema, type AppState } from "./model";
 import { lessonById } from "./content";
 import { addDays } from "./scheduler";
 import { studyTopicById } from "./studyPlan";
+import { foundationById } from "../learning/foundations";
 import {
   parseCatalogue,
   type SourceCatalogue,
@@ -22,6 +23,15 @@ export function validateState(input: unknown): AppState {
     )
       throw Error("INVALID_THEORY_REVIEW");
     theoryKeys.add(key);
+  }
+  for (const [lessonId, answers] of Object.entries(state.foundationAttempts)) {
+    const lesson = foundationById(lessonId);
+    if (!lesson) throw Error("UNKNOWN_FOUNDATION");
+    for (const [key, a] of Object.entries(answers)) {
+      const check = lesson.checks[Number(key)];
+      if (!/^\d+$/.test(key) || !check || a.correct !== (a.selected === check.answer))
+        throw Error("INVALID_FOUNDATION_ATTEMPT");
+    }
   }
   const ids = new Set<string>();
   for (const session of state.sessions) {

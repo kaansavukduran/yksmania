@@ -160,6 +160,19 @@ export const stateSchema = z
         }),
       )
       .default({}),
+    /**
+     * Temel İnşa kontrol sorularında yalnız İLK cevap (ön ders → soru sırası).
+     * Tekrar denemeler kaydedilmez; plana, tekrar takvimine ve XP'ye girmez.
+     */
+    foundationAttempts: z
+      .record(
+        z.string().max(100),
+        z.record(
+          z.string().max(3),
+          z.object({ selected: z.number().int().min(0).max(4), correct: z.boolean(), date }),
+        ),
+      )
+      .default({}),
   })
   .superRefine((state, context) => {
     if (
@@ -198,6 +211,7 @@ export const initialState = (): AppState => ({
   readingPages: {},
   explorations: {},
   topicProgress: {},
+  foundationAttempts: {},
 });
 export interface Question {
   id: string;

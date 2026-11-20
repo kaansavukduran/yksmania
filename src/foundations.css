@@ -275,3 +275,10 @@
 .foundation-section.panel {
   padding: clamp(0.85rem, 3vw, 1.4rem);
 }
+.foundation-firsttry {
+  color: var(--mint);
+  margin: 0.2rem 0 0;
+}
+.foundation-first {
+  margin: 0.4rem 0 0;
+}
