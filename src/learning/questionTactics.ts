@@ -1591,6 +1591,19 @@ export const questionTactics: QuestionTactic[] = [
       "Düşünür adından önce pasajdaki ölçütü bul; aynı eylemi onaylamak aynı gerekçe demek değildir.",
     ],
   },
+  {
+    id: "hint-cin-iki-kanit",
+    guides: ["hint-ve-cin-dinleri"],
+    match: /Hinduizm|Budizm|Konfüçyüs|Konfüçyanizm|Taoizm|karma|samsara|mokşa|nirvana|avatar|Veda|Buda|sangha|vihara|wu wei|yin|Tao|ren|li|xiao/i,
+    title: "Hint ve Çin dinlerinde tek sözcükle değil iki kanıtla geleneği seç",
+    steps: [
+      "Ortak terimleri işaretle: karma, samsara, Hint alt kıtası Hinduizm ile Budizmde ortak; “Çin kökenli” Konfüçyanizm ile Taoizmde ortak.",
+      "Ayırıcı ikinci kanıtı ara: Vedalar, mokşa, avatar, Ganj → Hinduizm; Buda, nirvana, Sekiz Yol, anatta, sangha → Budizm.",
+      "Çin: ren, li, xiao, Konuşmalar, erdemli yönetim → Konfüçyanizm; Tao, wu wei, Tao Te Ching, doğayla uyum → Taoizm.",
+      "Yakın terimler: Brahma (ilah) ≠ Brahman (mutlak gerçeklik); Tripitaka (üç sepet) ≠ üç sığınak; wu wei ≠ hiç çalışmamak.",
+      "Sembol sorusunda kökü oku: yin–yang Taoizmle ilişkilendirilir (2026 AYT SB-2 39: A) ama kişinin aidiyetini kanıtlamaz; olumsuz kökte dışarıdakini seç.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
