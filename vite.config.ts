@@ -50,6 +50,16 @@ export default defineConfig({
               priority: 40,
             },
             {
+              // Step-by-step guidance grows with every content wave; one
+              // chunk per subject keeps each file far below the limit.
+              name: (id) => {
+                const pack = id.match(/[\\/]learning[\\/]guidance053[\\/]([a-z-]+)\.json$/);
+                return pack ? `guidance-${pack[1]}` : null;
+              },
+              test: /[\\/]src[\\/]learning[\\/]guidance053[\\/][a-z-]+\.json$/,
+              priority: 45,
+            },
+            {
               name: "learning-core",
               test: /[\\/]src[\\/](?:learning|domain)[\\/][^\\/]*\.ts$/,
               priority: 10,
