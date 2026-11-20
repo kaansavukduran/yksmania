@@ -100,6 +100,7 @@ import { chemistryFiguresMolParticles } from "./chemistryFiguresMolParticles";
 import { chemistryFiguresMolMass } from "./chemistryFiguresMolMass";
 import { chemistryFiguresColligative } from "./chemistryFiguresColligative";
 import { chemistryFiguresSoap } from "./chemistryFiguresSoap";
+import { chemistryFiguresNeutralization } from "./chemistryFiguresNeutralization";
 import { chemistryFiguresAffinity } from "./chemistryFiguresAffinity";
 import { biologyFiguresSkin } from "./biologyFiguresSkin";
 import { geographyFiguresWater } from "./geographyFiguresWater";
@@ -215,6 +216,7 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   chemistryFiguresMolMass,
   chemistryFiguresColligative,
   chemistryFiguresSoap,
+  chemistryFiguresNeutralization,
   biologyFiguresSkin,
   geographyFiguresWater,
   biologyFiguresAtp,

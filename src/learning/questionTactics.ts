@@ -1786,6 +1786,19 @@ export const questionTactics: QuestionTactic[] = [
       "İşlevi ölçümle ayır: köpük ya da koku temizlik veya dezenfeksiyon ölçümü değildir. Çamaşır suyu NaOCl, kireç kaymağı Ca(OCl)₂; sönmüş kireç Ca(OH)₂ ve kireç taşı CaCO₃ hipoklorit içermez. Hipokloritli ürünler asit/amonyakla karıştırılmaz.",
     ],
   },
+  {
+    id: "asit-baz-bds-son-hacim",
+    guides: ["asit-baz-tepkimeleri"],
+    match: /nötrleş|nötralleş|NaOH|KOH|HCl|H₂SO₄|H2SO4|asit.*baz|baz.*asit|artan|mol\/L/i,
+    title: "Asit–bazda eşdeğeri katsayıdan al; başlangıç–değişim–son; artanı son hacme böl",
+    steps: [
+      "Net denklem H⁺ + OH⁻ → H₂O; Na⁺, Cl⁻, K⁺, SO₄²⁻ seyircidir (yok olmaz). Zayıf asit, katı ve gaz iyonlarına parçalanmaz.",
+      "Eşdeğer: HCl 1, H₂SO₄ 2, H₃PO₄ 3 mol OH⁻ (0,10 mol H₂SO₄ → 0,20 mol KOH). 2017 YGS Fen 23 (C): nötralleşme ve tuz var, yükseltgenme basamağı değişmez (redoks yok).",
+      "n = c × V ve V litre (25 mL = 0,025 L). Tablo kur: başlangıç − tepkimeye giren = son; 0,020 mol HCl + 0,005 mol NaOH → 0,015 mol H⁺ artar.",
+      "Artanın derişimi = artan mol ÷ toplam hacim (0,015 ÷ 0,150 = 0,10 mol/L). Ardışık eklemede güncel stoku kullan; tükenmiş asidi yeniden sayma.",
+      "Gazı türden seç: karbonat + asit → CO₂ (CaCO₃ 2 HCl, NaHCO₃ 1 HCl), aktif metal + asit → H₂. Eşdeğerlik noktası her tuzda pH 7 değildir.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
