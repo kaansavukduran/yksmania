@@ -37,13 +37,14 @@
 - **Sınırlayıcı bileşen (TYT Kimya 040):** dört figür (n ÷ katsayı çubukları ve 2017 LYS2 Kimya 6 cevap A, iki turlu stok tablosu, artan gaz hacmi, başlangıç ürünü platosu) ve `sinirlayici-stok-tablosu` taktiği; eksen etiketi çakışması düzeltildi.
 - **Katı kütlesi değişimi (TYT Kimya 041):** dört figür (terazi kapsamı, oksijen alma ve 2015 LYS2 Kimya 2 cevap C, kısmi dönüşüm ve inert, farktan geriye saflık belirsizliği) ve `kati-kutle-terazi-kapsami` taktiği; 320 px’te seçim etiketleri çakıştığı için alt alta dizildi.
 - **Safsızlık problemleri (TYT Kimya 043):** dört figür (saf pay, saflık × verim kademeleri, 2011 LYS2 Kimya 4 geriye zinciri cevap C ve özgün %90 aktarımı, yüzde birleştirme denetimi) ve `saflik-pay-verim-carpan` taktiği.
+- **Karışım problemleri (TYT Kimya 045):** dört figür (seçicilik tablosu ve 2025 TYT Fen 14 cevap C, gaz–kütle doğrularının kesişimi, olabilirlik aralığı, mol/kütle yüzdesi) ve `karisim-iki-bagimsiz-denklem` taktiği; Mg–Cu ve Ag–Hg özgün karşılaştırmalar olarak etiketli (sınavın seçenek listesi değil).
 - **Doğrulanan, değişiklik gerekmeyen maddeler:** `AnswerOptions` (tüm düğmeler `type="button"`, elemeler soru kimliği değişince sıfırlanır, klavye dinleyicisi bir kez bağlanır ve güncel değerleri okur), `ChoiceSelect` (`useLayoutEffect`, boş değerli yer tutucu çip olarak çizilmez), `PlaceMap` (`useMemo` geometri, tıklanabilir pin bilgi kartı, yakınlaştır/uzaklaştır/odakla) zaten istenen durumda.
 - **Doğrulama:** check; 233 dosya / 2.963 birim testi; build; tarayıcı: Temel İnşa 2/2 (çevrimdışı yeniden yükleme, 320 px + büyük yazı, axe), plan/bugün/rehber 19/19, öğrenme derinliği/uygulama/kum saati 38/38, uygulama + ayarlar 36/36. Figür yazı çakışma denetimi 1100 ve 320 px'te, bütün kaydırıcı/adım/seçim durumlarında 0 bulgu (57/57 figür tarayıcı taraması ve birim çizim taraması).
 - **Öz denetim:** (a) sıfır ön bilgi: her terim ilk geçtiği sayfada tanımlı, yöntem adı yerine işlem sözle yazılı; (b) şekiller tema değişkenleriyle çizilir, 320 px'te yatay kaydırma yok; (c) akış: tek tıkla ön ders, sayfa noktalarıyla atlama; (d) kod: tip denetimi ve testler yeşil. Açık: kendi ders sırasını seçme, soru başına süre kaydı (süre nabzı/turlama için şema), istisna–tuzak avcısı, grafik/tablo okulu, masaüstü bölünmüş çalışma masası; 0.25.0 kilometre taşı. Ses motoru istenen bütün sesleri zaten içeriyor (Faz 1).
 
 ### İlerleme tablosu (20 Kasım, Forge051)
 
-PDF paydası 17 Kasım kanonik envanteridir: **116 / 8.981 (%1,29)**. Ders bazında PDF paydası envanterde ayrı tutulmadığı için ders satırları kopya kâğıdı paydasını kullanır (517 kopya kâğıdı); 8.445 sayısı kullanılmaz (bkz. `docs/FORGE_MASTER_PLAN.md`).
+PDF paydası 17 Kasım kanonik envanteridir: **117 / 8.981 (%1,30)**. Ders bazında PDF paydası envanterde ayrı tutulmadığı için ders satırları kopya kâğıdı paydasını kullanır (517 kopya kâğıdı); 8.445 sayısı kullanılmaz (bkz. `docs/FORGE_MASTER_PLAN.md`).
 
 | Ders | Kopya kâğıdı işlenen / toplam | Hazır konu / uygulama dersi | Görsel/interaktif lab (figürlü ders · figür) | Kalan açık (figürsüz ders) |
 | --- | ---: | ---: | ---: | ---: |
@@ -51,7 +52,7 @@ PDF paydası 17 Kasım kanonik envanteridir: **116 / 8.981 (%1,29)**. Ders bazı
 | TYT Matematik | 5 / 38 (%13,16) | 40 / 45 | 17 · 45 | 28 |
 | TYT Geometri | 1 / 32 (%3,13) | 19 / 19 | 19 · 174 | 0 |
 | TYT Fizik | 7 / 24 (%29,17) | 24 / 28 | 24 · 177 | 4 |
-| TYT Kimya | 35 / 56 (%62,50) | 55 / 57 | 38 · 167 | 19 |
+| TYT Kimya | 36 / 56 (%64,29) | 55 / 57 | 39 · 171 | 18 |
 | TYT Biyoloji | 7 / 36 (%19,44) | 36 / 45 | 12 · 37 | 33 |
 | TYT Tarih | 4 / 24 (%16,67) | 24 / 34 | 6 · 16 | 28 |
 | TYT Coğrafya | 5 / 40 (%12,50) | 40 / 40 | 8 · 17 | 32 |
@@ -63,8 +64,8 @@ PDF paydası 17 Kasım kanonik envanteridir: **116 / 8.981 (%1,29)**. Ders bazı
 | AYT Kimya | 11 / 55 (%20,00) | 55 / 56 | 18 · 19 | 38 |
 | AYT Biyoloji | 11 / 75 (%14,67) | 75 / 76 | 16 · 39 | 60 |
 | Temel İnşa (0. basamak) | — | 25 ön ders (10 TYT dersinin hepsi) | 25 · 57 | 0 ders ön derssiz |
-| **Toplam** | **106 / 517 (%20,50)** | **505 / 540** | **222 · 875** | **343** |
-| **Genel PDF** | **116 / 8.981 · %1,29** | | | |
+| **Toplam** | **107 / 517 (%20,70)** | **505 / 540** | **223 · 879** | **342** |
+| **Genel PDF** | **117 / 8.981 · %1,30** | | | |
 
 ## Forge046a — seçim çipleri, iki yeni tema, sade savaş şemaları
 

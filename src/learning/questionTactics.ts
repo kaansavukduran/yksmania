@@ -1942,6 +1942,19 @@ export const questionTactics: QuestionTactic[] = [
       "Yüzdeler toplanmaz, çarpılır: %70 saflık × %80 verim = 0,56; sonuç 0–%100 aralığında kalmalı.",
     ],
   },
+  {
+    id: "karisim-iki-bagimsiz-denklem",
+    guides: ["tepkimeli-karisim"],
+    match: /karışım|alaşım|iki metal|toplam kütle|toplam gaz|yalnız .* tepkimeye|bileşim|kütlece yüzde|molce yüzde/i,
+    title: "Tepkimeli karışımda her bileşene satır aç; seçiciliği koşuldan oku; iki bağımsız denklem kur",
+    steps: [
+      "Hangi bileşen hangi koşulda tepkime veriyor? 2025 TYT Fen 14 (C): Cu–Sn alaşımında HCl ve NaOH ile gazı amfoter Sn verir; Cu vermez. Seçiciyse gaz tek bileşeni ölçer (10 g Mg–Cu, 0,25 mol H₂ → 6 g Mg).",
+      "Ortak üründe katkıları katsayıyla topla: Mg ve Zn 1 : 1, Al 1 : 1,5 H₂ (Mg–Al: x + 1,5y = 0,25).",
+      "İki bilinmeyene iki bağımsız bilgi: gaz + kütle (x + y = 0,2; 24x + 65y = 8,9 → 0,1 ve 0,1). Aynı toplamı başka birimle yazmak yeni bilgi değildir.",
+      "Önce olabilirlik aralığı: 8,9 g tamamen Zn → 0,137, tamamen Mg → 0,371 mol H₂; veri bu aralıkta değilse model uyumsuz.",
+      "Mol yüzdesi ≠ kütle yüzdesi (0,1 + 0,1 mol: molce %50, kütlece %27 Mg). Sonucu iki eşitliğe geri koy; negatif miktar kabul edilmez.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
