@@ -110,6 +110,7 @@ import { chemistryFiguresStoichPath } from "./chemistryFiguresStoichPath";
 import { chemistryFiguresPolymers } from "./chemistryFiguresPolymers";
 import { chemistryFiguresFoodLabels } from "./chemistryFiguresFoodLabels";
 import { chemistryFiguresLimitingStock } from "./chemistryFiguresLimitingStock";
+import { chemistryFiguresSolidMass } from "./chemistryFiguresSolidMass";
 import { chemistryFiguresAffinity } from "./chemistryFiguresAffinity";
 import { biologyFiguresSkin } from "./biologyFiguresSkin";
 import { geographyFiguresWater } from "./geographyFiguresWater";
@@ -235,6 +236,7 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   chemistryFiguresPolymers,
   chemistryFiguresFoodLabels,
   chemistryFiguresLimitingStock,
+  chemistryFiguresSolidMass,
   biologyFiguresSkin,
   geographyFiguresWater,
   biologyFiguresAtp,

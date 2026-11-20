@@ -1916,6 +1916,19 @@ export const questionTactics: QuestionTactic[] = [
       "Başlangıç ürünü toplam ürüne eklenir, yeni oluşan ürünü değiştirmez; plato reaktif stokunu tersine verir. Kütle toplamı korunur.",
     ],
   },
+  {
+    id: "kati-kutle-terazi-kapsami",
+    guides: ["kati-kutlesi-degisimi"],
+    match: /katı kütlesi|kalıntı|ısıtıldı|ayrıştı|kütle kaybı|kütle artışı|oksitlen|inert|safsız|dönüşüm oranı/i,
+    title: "Katı kütlesinde önce terazinin kapsamını çiz; kalıntıyı bileşenlerine ayır",
+    steps: [
+      "Açık kapta yalnız katı tartılır: gaz çıkışı kütleyi azaltır (25 g CaCO₃ → 14 g CaO + 11 g CO₂). Kapalı sistemde toplam değişmez.",
+      "Oksijen alan katı ağırlaşır: 12 g Mg → 20 g MgO (8 g O). 2015 LYS2 Kimya 2: 1,6 g Ca + 1 g O₂ → 2,24 g CaO + 0,36 g artan O₂; Ca kalmaz (C).",
+      "Kısmi dönüşümde son katı = oluşan ürün + dönüşmeyen giren + inert (80 g, %75 → 25,2 + 15 + 20 = 60,2 g = 80 − 19,8).",
+      "Kayıptan yalnız dönüşen miktar bulunur (8,8 g CO₂ → 20 g CaCO₃); saflık için dönüşüm oranı da gerekir. İki gaz çıkıyorsa kayıp ikisinin toplamıdır (NaHCO₃: 168 g’dan 62 g).",
+      "Dönüşüm yüzdesi başlangıç reaktifinin payıdır, kalıntıdaki ürün yüzdesi değildir.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

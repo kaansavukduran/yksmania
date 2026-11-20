@@ -48,6 +48,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "polimer-kozmetik-ilac",
   "polimer-gida-ilac-yag",
   "sinirlayici-bilesen",
+  "kati-kutlesi-degisimi",
   "din-felsefesi",
   "ahlak-felsefesi",
   "radyoaktivite",
