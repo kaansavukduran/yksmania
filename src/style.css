@@ -1,7 +1,7 @@
 :root {
   /* Symbol fonts follow the text fonts so ✓, ●, ★ and arrows never fall back
      to an empty box on systems whose UI font lacks them. */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Segoe UI Symbol", "Noto Sans Symbols 2", "Noto Sans Symbols", "Apple Symbols", "DejaVu Sans", sans-serif;
+  font-family: "Inter Variable", -apple-system, BlinkMacSystemFont, "Segoe UI", "Segoe UI Symbol", "Noto Sans Symbols 2", "Noto Sans Symbols", "Apple Symbols", sans-serif;
   color: #eae9e5;
   background: #15191f;
   --bg: #15191f;
@@ -19,7 +19,7 @@
   --text-scale: 1;
   --font-display:
     "Bricolage Grotesque Variable", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", "Segoe UI Symbol", "Noto Sans Symbols 2", "Noto Sans Symbols", "Apple Symbols", "DejaVu Sans", sans-serif;
+    "Segoe UI", "Segoe UI Symbol", "Noto Sans Symbols 2", "Noto Sans Symbols", "Apple Symbols", sans-serif;
   color-scheme: dark;
   font-synthesis: none;
   scroll-behavior: smooth;
@@ -126,8 +126,8 @@
   }
 }
 :root[data-font="lexend"] {
-  font-family: Lexend, "Segoe UI Symbol", "Noto Sans Symbols 2", "Noto Sans Symbols", "Apple Symbols", "DejaVu Sans", sans-serif;
-  --font-display: Lexend, "Segoe UI Symbol", "Noto Sans Symbols 2", "Noto Sans Symbols", "Apple Symbols", "DejaVu Sans", sans-serif;
+  font-family: Lexend, "Segoe UI Symbol", "Noto Sans Symbols 2", "Noto Sans Symbols", "Apple Symbols", sans-serif;
+  --font-display: Lexend, "Segoe UI Symbol", "Noto Sans Symbols 2", "Noto Sans Symbols", "Apple Symbols", sans-serif;
 }
 .theme-options {
   display: grid;

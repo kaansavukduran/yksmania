@@ -1,3 +1,4 @@
+import { typeset } from "../../src/domain/typeset";
 import { localizedQuestionView } from "../../src/domain/questionPresentation";
 import { forge011HistoryLessons } from "../../src/learning/forge011History";
 import { forge011BiologyBLessons } from "../../src/learning/forge011BiologyB";
@@ -20,7 +21,8 @@ export function nextUnit(
   return {
     id,
     title,
-    firstQuestion: localizedQuestionView(
+    // The page shows the typeset prompt (spacing repaired on display only).
+    firstQuestion: typeset(localizedQuestionView(
       [
         ...forge011MathLessons,
         ...forge011PhysicsLessons,
@@ -30,7 +32,7 @@ export function nextUnit(
         ...forge011HistoryLessons,
         ...forge011TurkishLessons,
       ].find((l) => l.id === id)!.questions[0],
-    ).prompt.tr,
+    ).prompt.tr),
     exploration,
     lab: `[data-forge011="${id}"]`,
     result: "[data-model-result]",
