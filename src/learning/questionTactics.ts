@@ -1825,6 +1825,19 @@ export const questionTactics: QuestionTactic[] = [
       "Bazda su da reaktandır: 2Al + 2NaOH + 6H₂O → 2Na[Al(OH)₄] + 3H₂; atomları say (H 14 = 14). Pasif yüzey gaz yokluğunu açıklayabilir; tek başına soyluk kanıtı değildir.",
     ],
   },
+  {
+    id: "gunluk-ad-formul-tepkime",
+    guides: ["hayatimizda-asit-baz"],
+    match: /kireç|sirke|limon|soda|kostik|tuz ruhu|kezzap|zaç yağı|amonyak|asit yağmuru|mermer|günlük/i,
+    title: "Günlük adı formüle çevir, formülü tepkimeye bağla; saf kısmı mole çevir",
+    steps: [
+      "Adı formüle çevir: tuz ruhu HCl, kezzap HNO₃, zaç yağı H₂SO₄, sirke CH₃COOH içerir, limon sitrik asit içerir, sud kostik NaOH, potas kostik KOH, amonyak NH₃. Ad derişim ya da pH vermez.",
+      "Kireç üçlüsü: kireç taşı CaCO₃, sönmemiş kireç CaO, sönmüş kireç Ca(OH)₂ (2023 TYT Fen 8: ortak Ca ve O, E). Söndürme CaO + H₂O’dur.",
+      "İki soda: yemek sodası NaHCO₃, çamaşır sodası Na₂CO₃ (ikisi de tuz, çözeltileri bazik olabilir); kostik soda NaOH bazdır.",
+      "Kireç asitte CO₂ ile köpürür: CaCO₃ + 2HCl → CaCl₂ + CO₂ + H₂O. Önce saf kısmı bul (50 g × %80 = 40 g = 0,40 mol) → 0,40 mol CO₂, 0,80 mol HCl; inert kısmı ürüne çevirme.",
+      "Malzeme seçimi asit kuvvetinden ayrıdır (HF zayıf ama camı aşındırır). pH toplam asit miktarı değildir; birlikte kullanmak nötrlemek demek değildir.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
