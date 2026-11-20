@@ -1435,6 +1435,19 @@ export const questionTactics: QuestionTactic[] = [
       "Deney sorusunda yalnız ölçülen değişkenden sonuç çıkar: sıcaklık ölçülmediyse sıcaklık düzeni kanıtlanmaz (2010 LYS-2 Biyoloji 13 mantığı).",
     ],
   },
+  {
+    id: "orta-arka-beyin-sinif-olay",
+    guides: ["sinir-sistemi-orta-arka-beyin"],
+    match: /orta beyin|arka beyin|beyin sapı|beyincik|pons|soğan|medulla|yönelme|yutma|öksürme|koordinasyon|denge|solunum/i,
+    title: "Orta ve arka beyinde sınıfı kesiştir, olayın türünü yaz",
+    steps: [
+      "İki küme: beyin sapı = orta beyin + pons + soğan; arka beyin = pons + soğan + beyincik. Kesişim pons ve soğandır.",
+      "Olay türü: ani uyarana yönelme → orta beyin; yutma, öksürme, temel solunum/dolaşım → soğan; duruş ve hareket uyumu → beyincik.",
+      "Refleks sözcüğü merkez seçtirmez: diz refleksi omurilikte (2017 LYS-2 Biyoloji 30), yutma soğanda.",
+      "‘Denge’nin değişkenini yaz: duruş → beyincik; su ve sıcaklık → hipotalamus. Bilinçli tanıma kortekstedir.",
+      "Kuvvet var, zamanlama bozuk → koordinasyon (beyincik) ile uyumlu; tek bulgudan kesin klinik tanı çıkarma.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
