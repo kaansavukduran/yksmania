@@ -37,6 +37,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "mol-tanecik-iliskisi",
   "mol-kutle-iliskisi",
   "koligatif-ayirma",
+  "sabun-deterjan-temizlik",
   "din-felsefesi",
   "ahlak-felsefesi",
   "radyoaktivite",

@@ -1773,6 +1773,19 @@ export const questionTactics: QuestionTactic[] = [
       "Kristallendirmede çözünen kütle sabit, kapasite düşer: 150 g su, 80 °C’de 90 g, 20 °C’de 30 g → 60 g kristal. Soğukta çözünürlük artıyorsa bu yol çalışmaz.",
     ],
   },
+  {
+    id: "sabun-bas-kuyruk-iyon",
+    guides: ["sabun-deterjan-temizlik"],
+    match: /sabun|deterjan|misel|hidrofil|hidrofob|sert su|sabunlaşma|hipoklorit|çamaşır suyu|kireç kaymağı|yüzey etkin/i,
+    title: "Sabunda baş–kuyruk yönünü kur; sertlik 2 : 1, asit 1 : 1; işlevi kanıtla ayır",
+    steps: [
+      "Tanecik RCOO⁻: R kuyruk apolar (yağla), COO⁻ baş iyonik (suyla). İkisi aynı yapıda bulunur; çelişki değil (2017 LYS2 Kimya 29: I, II, III, E).",
+      "Misel kesitinde kuyruklar içte kiri sarar, başlar dışta suya bakar; tek bir sabun iyonu misel değildir. Başı yağa çizmek ilk hatadır.",
+      "Sabunlaşma: triaçilgliserol + 3 NaOH → gliserol + 3 RCOONa; üç ester bağı ↔ üç hidroksit. KOH ile RCOOK.",
+      "Sert su: her Ca²⁺/Mg²⁺ iki sabun anyonu bağlar (10 mmol sabun, 1 Ca²⁺ + 1 Mg²⁺ → 4 çöker, 6 kalır). Asit: RCOO⁻ + H⁺ → RCOOH, oran 1 : 1. Hacim farklıysa mmol derişim değildir.",
+      "İşlevi ölçümle ayır: köpük ya da koku temizlik veya dezenfeksiyon ölçümü değildir. Çamaşır suyu NaOCl, kireç kaymağı Ca(OCl)₂; sönmüş kireç Ca(OH)₂ ve kireç taşı CaCO₃ hipoklorit içermez. Hipokloritli ürünler asit/amonyakla karıştırılmaz.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
