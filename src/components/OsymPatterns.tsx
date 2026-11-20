@@ -87,13 +87,19 @@ export function OsymTopicPanel({ topicId, subjectId }: { topicId: string; subjec
   );
 }
 
-/** Topic × year question counts for one subject, most asked first or in study order. */
+/** Official heading × year question counts for one subject, most asked first or in heading order. */
+
+export const hasOsymData = (subjectId: string) => osymRows.some((r) => r.subject === subjectId);
+
 export function OsymHeatmap({
   subjectId,
   topics,
+  embedded = false,
 }: {
   subjectId: string;
   topics: readonly { id: string; title: string }[];
+  /** Inside another card: no frame of its own and no second heading. */
+  embedded?: boolean;
 }) {
   const [byCount, setByCount] = useState(true);
   const [open, setOpen] = useState<string | null>(null);
@@ -106,18 +112,19 @@ export function OsymHeatmap({
   const forms = formShares(osymRows, subjectId).slice(0, 4);
   return (
     <section
-      className="panel osym-panel osym-heatmap"
-      aria-labelledby={`osym-map-${subjectId}`}
+      className={embedded ? "osym-panel osym-embedded osym-heatmap" : "panel osym-panel osym-heatmap"}
+      aria-label="ÖSYM sıklık haritası"
       style={{ "--osym-years": map.years.length } as CSSProperties}
     >
       <div className="section-heading">
-        <h2 id={`osym-map-${subjectId}`}>ÖSYM sıklık haritası</h2>
-        <button type="button" className="secondary" aria-pressed={byCount} onClick={() => setByCount((v) => !v)}>
-          {byCount ? "Çalışma sırasına göre diz" : "En çok çıkana göre diz"}
+        {!embedded && <h2>ÖSYM sıklık haritası</h2>}
+        <button type="button" className="secondary" onClick={() => setByCount((v) => !v)}>
+          {byCount ? "Resmî başlık sırasına göre diz" : "En çok çıkana göre diz"}
         </button>
       </div>
       <p className="muted small">
-        {span(map.years)} arası {map.years.length} {exam} kitapçığında bu dersten {map.questions} soru işlendi. Sayılar
+        {map.years.length > 1 ? `${span(map.years)} arası ${map.years.length} ${exam} kitapçığında` : `${map.years[0]} ${exam} kitapçığında`}{" "}
+        bu dersten {map.questions} soru işlendi. Sayılar
         soru adedidir; boş kutu o yıl sorulmadığını gösterir. Başlığa dokununca o başlığın soru kalıpları açılır.
       </p>
       <div className="osym-map-head" aria-hidden="true">
