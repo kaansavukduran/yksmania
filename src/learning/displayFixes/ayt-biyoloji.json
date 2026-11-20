@@ -178,5 +178,197 @@
  {
   "from": "+1°C; ısı kaybını destekleyen yanıt",
   "to": "+1 °C; ısı kaybını destekleyen yanıt"
+ },
+ {
+  "from": "14,28,42",
+  "to": "14, 28, 42"
+ },
+ {
+  "from": "28,42,42",
+  "to": "28, 42, 42"
+ },
+ {
+  "from": "28,42,28",
+  "to": "28, 42, 28"
+ },
+ {
+  "from": "28,28,28",
+  "to": "28, 28, 28"
+ },
+ {
+  "from": "42,28,14",
+  "to": "42, 28, 14"
+ },
+ {
+  "from": "6 hücre,8 çekirdek",
+  "to": "6 hücre, 8 çekirdek"
+ },
+ {
+  "from": "7 hücre,7 çekirdek",
+  "to": "7 hücre, 7 çekirdek"
+ },
+ {
+  "from": "8 hücre,8 çekirdek",
+  "to": "8 hücre, 8 çekirdek"
+ },
+ {
+  "from": "8 hücre,7 çekirdek",
+  "to": "8 hücre, 7 çekirdek"
+ },
+ {
+  "from": "7 hücre,8 çekirdek",
+  "to": "7 hücre, 8 çekirdek"
+ },
+ {
+  "from": "Varsayımsal bir tohum partisinde diğer koşullar sabitken 10°C’de%20,20°C’de%80,30°C’de%45 çimlenme ölçülüyor. Yalnız bu verilerle hangisi söylenebilir?",
+  "to": "Varsayımsal bir tohum partisinde diğer koşullar sabitken 10°C’de %20, 20°C’de %80, 30°C’de %45 çimlenme ölçülüyor. Yalnız bu verilerle hangisi söylenebilir?"
+ },
+ {
+  "from": "Son kuru kütle 1,7 g’dir. Son su 1,0 g’dır. Yaş kütle 1,7+1,0=2,7 g olur; yaş artarken kuru azalmıştır. 2,7 g=1,7 g kuru+1,0 g su.",
+  "to": "Son kuru kütle 1,7 g’dir. Son su 1,0 g’dır. Yaş kütle 1,7+1,0=2,7 g olur; yaş artarken kuru azalmıştır. 2,7 g = 1,7 g kuru + 1,0 g su."
+ },
+ {
+  "from": "Üç tekrarlı kapta her birine 40 tohum konuyor. Aynı sürede sırasıyla 28,30 ve 26 tohum kök çıkarıyor. Tüm kaplar birlikte değerlendirildiğinde çimlenme yüzdesi kaçtır?",
+  "to": "Üç tekrarlı kapta her birine 40 tohum konuyor. Aynı sürede sırasıyla 28, 30 ve 26 tohum kök çıkarıyor. Tüm kaplar birlikte değerlendirildiğinde çimlenme yüzdesi kaçtır?"
+ },
+ {
+  "from": "DNA dizisi aynı kabul edilen bir bitki klonunun örnekleri 18°C’de 80,28°C’de 40 pigment birimi veriyor. Diğer etmenler aynı ve mutasyon saptanmamış. En doğrudan yorum hangisidir?",
+  "to": "DNA dizisi aynı kabul edilen bir bitki klonunun örnekleri 18°C’de 80, 28°C’de 40 pigment birimi veriyor. Diğer etmenler aynı ve mutasyon saptanmamış. En doğrudan yorum hangisidir?"
+ },
+ {
+  "from": "Aynı iki genotipin verimleri serin ortamdaA 12/B 8, sıcak ortamdaA 6/B 10 birim. Her ortamda tekrarlarla doğrulanmış bu sıralama hangi yorumu destekler?",
+  "to": "Aynı iki genotipin verimleri serin ortamda A 12/B 8, sıcak ortamda A 6/B 10 birim. Her ortamda tekrarlarla doğrulanmış bu sıralama hangi yorumu destekler?"
+ },
+ {
+  "from": "SerindeA>B’dir. SıcaktaB>A’dır. Sıralama değişimi genotip-çevre etkileşimiyle uyumludur. A−B serinde+4, sıcakta−4’tür.",
+  "to": "Serinde A>B’dir. Sıcakta B>A’dır. Sıralama değişimi genotip-çevre etkileşimiyle uyumludur. A−B serinde +4, sıcakta−4’tür."
+ },
+ {
+  "from": "Bir öğretim karşılaştırmasında A gövdesinin iletim demetleri temel dokuda dağınık; olağan vasküler kambiyum ve belirgin öz–korteks ayrımı yok. B gövdesinin demetleri halka biçiminde; öz ve korteks ayırt ediliyor. Bu iki tipik örnek için hangi eşleştirme uygundur?",
+  "to": "Bir karşılaştırmada A gövdesinin iletim demetleri temel dokuda dağınık; olağan vasküler kambiyum ve belirgin öz–korteks ayrımı yok. B gövdesinin demetleri halka biçiminde; öz ve korteks ayırt ediliyor. Bu iki tipik örnek için hangi eşleştirme uygundur?"
+ },
+ {
+  "from": "Q = +2,4 öğretim birimi; A→B yönü.",
+  "to": "Q = +2,4 model birimi; A→B yönü."
+ },
+ {
+  "from": "Fark −0,4−(−1,2) = +0,8; 3 × 0,8 = +2,4 hesaplanır. −0,4−(−1,2) = +0,8 hesapla. 3 ile çarpıp +2,4 elde et. Pozitifi A→B olarak oku ve öğretim birimini koru. Kontrol: Hem yön hem sayı hem de öğretim birimi doğru tutuldu.",
+  "to": "Fark −0,4−(−1,2) = +0,8; 3 × 0,8 = +2,4 hesaplanır. −0,4−(−1,2) = +0,8 hesapla. 3 ile çarpıp +2,4 elde et. Pozitifi A→B olarak oku ve model birimini koru. Kontrol: Hem yön hem sayı hem de model birimi doğru tutuldu."
+ },
+ {
+  "from": "Verilmiş oksin doz serisinde kökün kontrol göreli uzama değişimleri 0,+20,+5,−15; sürgünün 0,+10,+25,+35 birimdir. İki organa üçüncü sıradaki doz uygulanıyor. Hangi yorum doğrudur?",
+  "to": "Verilmiş oksin doz serisinde kökün kontrol göreli uzama değişimleri 0, +20, +5, −15; sürgünün 0, +10, +25, +35 birimdir. İki organa üçüncü sıradaki doz uygulanıyor. Hangi yorum doğrudur?"
+ },
+ {
+  "from": "Kök −15, sürgün+35 yanıt verir.",
+  "to": "Kök −15, sürgün +35 yanıt verir."
+ },
+ {
+  "from": "Üçüncü sıra kökte+5, sürgünde+25 verir; ikisi de pozitif kontrol farkıdır. Üçüncü değerleri kökte+5, sürgünde+25 seç. İki işaretin de pozitif olduğunu belirle. Göreli artışları karşılaştır; mutlak boy oranı çıkarma. Kontrol: Seçilen değerler üçüncü sütundan ve her organın kendi kontrolüne göre alındı.",
+  "to": "Üçüncü sıra kökte +5, sürgünde +25 verir; ikisi de pozitif kontrol farkıdır. Üçüncü değerleri kökte +5, sürgünde +25 seç. İki işaretin de pozitif olduğunu belirle. Göreli artışları karşılaştır; mutlak boy oranı çıkarma. Kontrol: Seçilen değerler üçüncü sütundan ve her organın kendi kontrolüne göre alındı."
+ },
+ {
+  "from": "Bir oksin deneyinde sıralı dozlar D0,D1,D2,D3,D4. Kök uzama değişimleri sırasıyla 0,28,14,−8,−30; sürgün 0,8,22,31,−4. Verilmiş ölçümlerde en yüksek yanıt veren dozlar hangileridir?",
+  "to": "Bir oksin deneyinde sıralı dozlar D0, D1, D2, D3, D4. Kök uzama değişimleri sırasıyla 0, 28, 14, −8, −30; sürgün 0, 8, 22, 31, −4. Verilmiş ölçümlerde en yüksek yanıt veren dozlar hangileridir?"
+ },
+ {
+  "from": "Kritik gecesi 11 saat olan olgun kısa gün modelinde A 16 saat kesintisiz gece, B 8 saat karanlık+etkili kısa darbe+8 saat karanlık alıyor. Darbe süresi ihmal, diğer koşullar eş. Hangisi doğrudur?",
+  "to": "Kritik gecesi 11 saat olan olgun kısa gün modelinde A 16 saat kesintisiz gece, B 8 saat karanlık + etkili kısa darbe + 8 saat karanlık alıyor. Darbe süresi ihmal, diğer koşullar eş. Hangisi doğrudur?"
+ },
+ {
+  "from": "Kısa gün öğretim modelinde yalnız kritik geceden daha uzun etkin karanlık uyarıyor; tam eşitlikte biyolojik yanıt belirtilmemiş. Olgun bitkinin etkin gecesi ve kritik değeri 10 saat. Model ne demelidir?",
+  "to": "Kısa gün modelinde yalnız kritik geceden daha uzun etkin karanlık uyarıyor; tam eşitlikte biyolojik yanıt belirtilmemiş. Olgun bitkinin etkin gecesi ve kritik değeri 10 saat. Model ne demelidir?"
+ },
+ {
+  "from": "Kesin uyarım var; >işareti her zaman eşitliği de içerir.",
+  "to": "Kesin uyarım var; > işareti her zaman eşitliği de içerir."
+ },
+ {
+  "from": "12,12,12.",
+  "to": "12, 12, 12."
+ },
+ {
+  "from": "24,12,6.",
+  "to": "24, 12, 6."
+ },
+ {
+  "from": "24,24,24.",
+  "to": "24, 24, 24."
+ },
+ {
+  "from": "24,24,12.",
+  "to": "24, 24, 12."
+ },
+ {
+  "from": "12,24,48.",
+  "to": "12, 24, 48."
+ },
+ {
+  "from": "5×4=20 başlangıç ürünü, her ana hücreden bir işlevli kaldığı için 5 sonuç olur. 5×4=20 başlangıç ürünü bul. Her grupta bir işlevli kaldığını uygulayarak 5 bul. Sayıları işlevli ve başlangıç etiketlerine doğru bağla. Kontrol: 20 toplamı 5 işlevli+15 kayıp olarak dengeleniyor.",
+  "to": "5×4=20 başlangıç ürünü, her ana hücreden bir işlevli kaldığı için 5 sonuç olur. 5×4=20 başlangıç ürünü bul. Her grupta bir işlevli kaldığını uygulayarak 5 bul. Sayıları işlevli ve başlangıç etiketlerine doğru bağla. Kontrol: 20 toplamı 5 işlevli + 15 kayıp olarak dengeleniyor."
+ },
+ {
+  "from": "Üç antipod, iki sinerjit, yumurta ve iki çekirdekli merkez hücre toplam 7 hücre/8 çekirdek verir. Üç mitozdan 8 çekirdek bul. 1 yumurta+2 sinerjit+3 antipod+1 merkez hücreyi say. 7 hücre ve 8 çekirdeği eşleştir. Kontrol: Yedi hücrenin birinin iki çekirdek taşıması sekiz toplamını açıklıyor.",
+  "to": "Üç antipod, iki sinerjit, yumurta ve iki çekirdekli merkez hücre toplam 7 hücre/8 çekirdek verir. Üç mitozdan 8 çekirdek bul. 1 yumurta + 2 sinerjit + 3 antipod + 1 merkez hücreyi say. 7 hücre ve 8 çekirdeği eşleştir. Kontrol: Yedi hücrenin birinin iki çekirdek taşıması sekiz toplamını açıklıyor."
+ },
+ {
+  "from": "Dört ürünün genetik farkı varsa kromozom sayıları zorunlu 1,2,3,4’tür.",
+  "to": "Dört ürünün genetik farkı varsa kromozom sayıları zorunlu 1, 2, 3, 4’tür."
+ },
+ {
+  "from": "30 anlamlı+1 duruş=31 üçlü; 31×3=93 nükleotit. Bu sayı yalnız açıkça sınırlandırılan bölgeye aittir; tam gen veya tüm mRNA diye genellenmez.",
+  "to": "30 anlamlı + 1 duruş = 31 üçlü; 31×3=93 nükleotit. Bu sayı yalnız açıkça sınırlandırılan bölgeye aittir; tam gen veya tüm mRNA diye genellenmez."
+ },
+ {
+  "from": "Yeni değerler 70,80,60’tır. En küçük 60 olduğu için brüt hız 60 olur. Bu durumda sıcaklık koşulu sınırdır. Sonuç her üç kapasiteden de büyük olamaz.",
+  "to": "Yeni değerler 70, 80, 60’tır. En küçük 60 olduğu için brüt hız 60 olur. Bu durumda sıcaklık koşulu sınırdır. Sonuç her üç kapasiteden de büyük olamaz."
+ },
+ {
+  "from": "Başta ışık 40 ve CO₂ 40 birlikte sınırlar. Yeni durumda 70,40,80 vardır. Minimum yine 40 olduğundan CO₂ sınırı kalır. CO₂ de artırılırsa yeni minimum ayrıca hesaplanır.",
+  "to": "Başta ışık 40 ve CO₂ 40 birlikte sınırlar. Yeni durumda 70, 40, 80 vardır. Minimum yine 40 olduğundan CO₂ sınırı kalır. CO₂ de artırılırsa yeni minimum ayrıca hesaplanır."
+ },
+ {
+  "from": "3 mol Fe³⁺ için 3 mol e⁻ kullanılır. 5−3=2 mol e⁻ artar. 3 mol Fe²⁺ oluşur. Kullanılan 3+artan 2=başlangıç 5 mol e⁻.",
+  "to": "3 mol Fe³⁺ için 3 mol e⁻ kullanılır. 5−3=2 mol e⁻ artar. 3 mol Fe²⁺ oluşur. Kullanılan 3 + artan 2 = başlangıç 5 mol e⁻."
+ },
+ {
+  "from": "Sinir sistemi — yalnız endoderm",
+  "to": "Sinir sistemi: yalnız endoderm"
+ },
+ {
+  "from": "Epidermis — yalnız mezoderm",
+  "to": "Epidermis: yalnız mezoderm"
+ },
+ {
+  "from": "Kan hücreleri — yalnız ektoderm",
+  "to": "Kan hücreleri: yalnız ektoderm"
+ },
+ {
+  "from": "Sindirim yolu iç epiteli — yalnız trofoblast",
+  "to": "Sindirim yolu iç epiteli: yalnız trofoblast"
+ },
+ {
+  "from": "Bağırsak duvarındaki düz kas — mezoderm",
+  "to": "Bağırsak duvarındaki düz kas: mezoderm"
+ },
+ {
+  "from": "İkisinin hızı yalnız çizimdeki renklerine bağlıdır",
+  "to": "İkisinin hızı yalnız renklerine bağlıdır"
+ },
+ {
+  "from": "Her çizimde daha çok boğum kesin daha yüksek hız demektir",
+  "to": "Her durumda daha çok boğum kesin daha yüksek hız demektir"
+ },
+ {
+  "from": "0,5/50=0,01 s=10 ms. Çizimdeki uzunluk değil verilen metre değeri kullanılır; bu temsili öğretim verisidir.",
+  "to": "0,5/50=0,01 s=10 ms. Verilen metre değeri kullanılır; bu temsili bir veridir."
+ },
+ {
+  "from": "MSS miyelininde bozulma ve ilgili iletim aksaması bir ders kartında anlatılıyor. Hangi bağlamla ilişkilendirilebilir?",
+  "to": "MSS miyelininde bozulma ve ilgili iletim aksaması anlatılıyor. Hangi bağlamla ilişkilendirilebilir?"
+ },
+ {
+  "from": "Merkezî miyelin ve iletim sorunları MS öğretim bağlamıyla ilişkilidir. Fakat gerçek bir belirtinin nedenini tek karttan belirlemek veya bütün miyelin sorunlarını aynı hastalık saymak doğru değildir.",
+  "to": "Merkezî miyelin ve iletim sorunları MS bağlamıyla ilişkilidir. Fakat gerçek bir belirtinin nedenini tek bilgiden belirlemek veya bütün miyelin sorunlarını aynı hastalık saymak doğru değildir."
  }
 ]

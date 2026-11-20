@@ -1,0 +1,138 @@
+[
+ {
+  "from": "Atölyeleri gezme gözlem, ortam anlatısı betimleme, bulgular ise araştırma aktarımıdır. Ustalarla görüşme bunlara ek bir malzemedir; metnin yalnız konuşma satırlarından oluşması gerekmiyor. Bu araçları birlikte gören seçenek uygundur; tek özellikten türü zorunlu kılanlar aşırı genellemedir. Röportajın geniş öğretim kapsamı araştırma, gözlem ve görüşmeleri birlikte içerebilir.",
+  "to": "Atölyeleri gezme gözlem, ortam anlatısı betimleme, bulgular ise araştırma aktarımıdır. Ustalarla görüşme bunlara ek bir malzemedir; metnin yalnız konuşma satırlarından oluşması gerekmiyor. Bu araçları birlikte gören seçenek uygundur; tek özellikten türü zorunlu kılanlar aşırı genellemedir. Röportaj araştırma, gözlem ve görüşmeleri birlikte içerebilir."
+ },
+ {
+  "from": "17,23,23,19 içinde en büyük sayı 23’tür. Bu değer hem salı hem çarşamba kayıtlarında yer alır. Ortak en yüksek iki günü veren adayı seç; yalnız sözü ekleyen adayı ele. En büyük değer 23’tür ve iki günde bulunur.",
+  "to": "17, 23, 23, 19 içinde en büyük sayı 23’tür. Bu değer hem salı hem çarşamba kayıtlarında yer alır. Ortak en yüksek iki günü veren adayı seç; yalnız sözü ekleyen adayı ele. En büyük değer 23’tür ve iki günde bulunur."
+ },
+ {
+  "from": "Bir çizgi serisinin eksiksiz metin eşdeğeri: Ardışık dört ayda su deposunda ay sonunda 56,63,59,68 metreküp su ölçülmüştür. Aylar eşit sıradadır; ara günlerdeki değerler verilmemiştir.",
+  "to": "Bir çizgi serisinin eksiksiz metin eşdeğeri: Ardışık dört ayda su deposunda ay sonunda 56, 63, 59, 68 metreküp su ölçülmüştür. Aylar eşit sıradadır; ara günlerdeki değerler verilmemiştir."
+ },
+ {
+  "from": "Katılım sayısında 42,35’ten büyüktür; A daha çok kişiyi ağırlamıştır. A’nın doluluğu 42/70=%60, B’nin 35/50=%70’tir. Sayıda A, oranda B sonucunu birlikte veren adayı seç. 42>35; A 42/70=%60, B 35/50=%70 olur.",
+  "to": "Katılım sayısında 42, 35’ten büyüktür; A daha çok kişiyi ağırlamıştır. A’nın doluluğu 42/70=%60, B’nin 35/50=%70’tir. Sayıda A, oranda B sonucunu birlikte veren adayı seç. 42>35; A 42/70=%60, B 35/50=%70 olur."
+ },
+ {
+  "from": "Bir çizelge yalnız pazartesi-cuma günlerini kapsar:18,21,16,20,17 kg kumaş toplanmıştır. Metin cumartesi ve pazar da toplama yapıldığını, bu iki günün miktarlarının henüz açıklanmadığını belirtir. Miktarlar negatif değildir.",
+  "to": "Bir çizelge yalnız pazartesi-cuma günlerini kapsar: 18, 21, 16, 20, 17 kg kumaş toplanmıştır. Metin cumartesi ve pazar da toplama yapıldığını, bu iki günün miktarlarının henüz açıklanmadığını belirtir. Miktarlar negatif değildir."
+ },
+ {
+  "from": "Bir kursun eşit aralıklı dört dönemindeki kayıt sayıları 9,12,12,15’tir. “Arttı” ifadesi bu soruda önceki dönemden kesin büyük olmayı; “azalmadı” ise büyük veya eşit olmayı anlatır.",
+  "to": "Bir kursun eşit aralıklı dört dönemindeki kayıt sayıları 9, 12, 12, 15’tir. “Arttı” ifadesi bu soruda önceki dönemden kesin büyük olmayı; “azalmadı” ise büyük veya eşit olmayı anlatır."
+ },
+ {
+  "from": "İlk geçiş 9→12 artış, ikinci 12→12 eşitlik, üçüncü 12→15 artıştır. Üç geçişin hiçbirinde düşüş yoktur; bir eşitlik kesin artış şartını bozar. Hem azalmamayı hem her geçişte artmama sonucunu veren adayı seç. 9→12 artış,12→12 eşitlik,12→15 artış; azalış yok ama her geçişte artış yoktur.",
+  "to": "İlk geçiş 9→12 artış, ikinci 12→12 eşitlik, üçüncü 12→15 artıştır. Üç geçişin hiçbirinde düşüş yoktur; bir eşitlik kesin artış şartını bozar. Hem azalmamayı hem her geçişte artmama sonucunu veren adayı seç. 9→12 artış, 12→12 eşitlik, 12→15 artış; azalış yok ama her geçişte artış yoktur."
+ },
+ {
+  "from": "Ağaçların insanlar gibi konuştuğu özellikle verilmiştir; kaynakların kişileştirme istisnası bu bağlamda geçerlidir. İnsan dışı nötr çoğul özne için verilen tekil yüklem kuralı, açık kişileştirmeye koşulsuz taşınmaz. Bu durum her çoğul öznenin zorunlu çoğul yüklem istediği sonucunu da vermez.",
+  "to": "Ağaçların insanlar gibi konuştuğu özellikle verilmiştir; kişileştirme istisnası bu bağlamda geçerlidir. İnsan dışı nötr çoğul özne için verilen tekil yüklem kuralı, açık kişileştirmeye koşulsuz taşınmaz. Bu durum her çoğul öznenin zorunlu çoğul yüklem istediği sonucunu da vermez."
+ },
+ {
+  "from": "A: “Demlediği çayı fincana doldurdu.” B: “Köyün yanındaki çay denize akıyor.” Çay sözcüğünün içecek ve akarsu anlamları için okul sınıflamasında hangi ilişki kullanılır?",
+  "to": "A: “Demlediği çayı fincana doldurdu.” B: “Köyün yanındaki çay denize akıyor.” Çay sözcüğünün içecek ve akarsu anlamları için hangi ilişki kullanılır?"
+ },
+ {
+  "from": "Çay içecek ve çay akarsu, okul örneklerinde sesteş sözcüklerdir. Bağlam hangi sözcüğün kullanıldığını gösterir. Aynı sözcüğün anlam bağıyla temel/yan/mecaz kullanımlar kazanması olan çok anlamlılıkla bu sınıflama birbirine karıştırılmaz.",
+  "to": "Çay içecek ve çay akarsu, sesteş sözcüklerdir. Bağlam hangi sözcüğün kullanıldığını gösterir. Aynı sözcüğün anlam bağıyla temel/yan/mecaz kullanımlar kazanması olan çok anlamlılıkla bu sınıflama birbirine karıştırılmaz."
+ },
+ {
+  "from": "“Kitabı okuyup not aldı.” cümlesinde okuyup tek zarf-fiildir. “Yazıyı okuyup, biraz düşünüp görüşünü yazdı.” cümlesinde ise art arda gelen eş görevli iki zarf-fiilli yapı vardır. Kaynaklarda verilen genel kural ve istisna bakımından hangisi doğrudur?",
+  "to": "“Kitabı okuyup not aldı.” cümlesinde okuyup tek zarf-fiildir. “Yazıyı okuyup, biraz düşünüp görüşünü yazdı.” cümlesinde ise art arda gelen eş görevli iki zarf-fiilli yapı vardır. Genel kural ve istisna bakımından hangisi doğrudur?"
+ },
+ {
+  "from": "Tek zarf-fiilden sonra otomatik virgül kullanılmaz. Ancak kaynaklar art arda gelen eş görevli zarf-fiilli yapılar arasındaki virgülü ayrıca gösterir. Örnekte okuyup ve biraz düşünüp yan eylemleri birbirini izler; istisnayı yok sayan hiçbir zaman genellemesi doğru değildir.",
+  "to": "Tek zarf-fiilden sonra otomatik virgül kullanılmaz. Ancak kurallar art arda gelen eş görevli zarf-fiilli yapılar arasındaki virgülü ayrıca gösterir. Örnekte okuyup ve biraz düşünüp yan eylemleri birbirini izler; istisnayı yok sayan hiçbir zaman genellemesi doğru değildir."
+ },
+ {
+  "from": "Bu soruda OGM’nin TYT sınıflaması kullanılmaktadır. “Hastayken dinlendi.” ve “Yürürken durdu.” sözlerindeki -kenli biçimler hangi seçenekte doğru ayrılır?",
+  "to": "Bu soruda yaygın dil bilgisi sınıflaması kullanılmaktadır. “Hastayken dinlendi.” ve “Yürürken durdu.” sözlerindeki -kenli biçimler hangi seçenekte doğru ayrılır?"
+ },
+ {
+  "from": "MEBİ/OGM okul sınıflamasına göre “Amacım okumaktır.” cümlesi için doğru yargı hangisidir?",
+  "to": "Dil bilgisi sınıflamasına göre “Amacım okumaktır.” cümlesi için doğru yargı hangisidir?"
+ },
+ {
+  "from": "Oku-mak isim-fiil, -tır ek fiildir. Okumaktır ad soylu temel yüklemdir; OGM’nin açık sınırına göre yüklemdeki tek fiilimsi ayrıca yan cümle oluşturmaz. Bu cümle basit isim cümlesidir.",
+  "to": "Oku-mak isim-fiil, -tır ek fiildir. Okumaktır ad soylu temel yüklemdir; bu sınıflamanın açık sınırına göre yüklemdeki tek fiilimsi ayrıca yan cümle oluşturmaz. Bu cümle basit isim cümlesidir."
+ },
+ {
+  "from": "Uygulama bu soruda MEBİ’nin öge adlandırmasını kullanır. “Eski köprü ustalar tarafından onarıldı.” cümlesindeki eski köprü ve ustalar tarafından öbekleri sırasıyla hangi görevlerdedir?",
+  "to": "Bu soruda yaygın öge adlandırması kullanılır. “Eski köprü ustalar tarafından onarıldı.” cümlesindeki eski köprü ve ustalar tarafından öbekleri sırasıyla hangi görevlerdedir?"
+ },
+ {
+  "from": "Onarıldı edilgendir; eski köprü etkilenen sözde öznedir. Ustalar tarafından anlamca yapanı bildirdiğinden örtülü özne diye anılır; MEBİ öge incelemesinde zarf tümleci sayılır. Bu iki düzey farklıdır.",
+  "to": "Onarıldı edilgendir; eski köprü etkilenen sözde öznedir. Ustalar tarafından anlamca yapanı bildirdiğinden örtülü özne diye anılır; bu sorudaki öge incelemesinde zarf tümleci sayılır. Bu iki düzey farklıdır."
+ },
+ {
+  "from": "MEBİ’nin gizli özneyi görünür öge sırasına ve sayısına katmayan kuralına göre “Dün eski defteri buldum.” cümlesinde kaç görünür öge vardır?",
+  "to": "Gizli özneyi görünür öge sırasına ve sayısına katmayan kurala göre “Dün eski defteri buldum.” cümlesinde kaç görünür öge vardır?"
+ },
+ {
+  "from": "Bu soruda araç bildiren edat öbekleri MEBİ’ye uygun biçimde zarf tümleci altında değerlendirilir. “Ece makasla kâğıdı kesti.” cümlesindeki makasla hangi ögedir?",
+  "to": "Bu soruda araç bildiren edat öbekleri zarf tümleci altında değerlendirilir. “Ece makasla kâğıdı kesti.” cümlesindeki makasla hangi ögedir?"
+ },
+ {
+  "from": "Makasla, kesmenin aracını bildirir; belirtilen MEBİ konvansiyonunda zarf tümlecidir. Kâğıdı belirtili nesne, Ece özne, kesti yüklemdir. Araç adı ile nesne veya eş özne karıştırılmaz.",
+  "to": "Makasla, kesmenin aracını bildirir; belirtilen konvansiyonda zarf tümlecidir. Kâğıdı belirtili nesne, Ece özne, kesti yüklemdir. Araç adı ile nesne veya eş özne karıştırılmaz."
+ },
+ {
+  "from": "Bu soruda MEBİ’nin öge çözümlemesi kullanılıyor. “Bu salonda erkenden yatılır.” cümlesi için hangi yargı doğrudur?",
+  "to": "Bu soruda yaygın öge çözümlemesi kullanılıyor. “Bu salonda erkenden yatılır.” cümlesi için hangi yargı doğrudur?"
+ },
+ {
+  "from": "MEBİ/OGM sınıflamasına göre “Dosyayı getirmedi Ece.” cümlesinin sırasıyla yüklem türü, yüklem yeri, anlamı ve yapısı hangisidir?",
+  "to": "Cümle türleri sınıflamasına göre “Dosyayı getirmedi Ece.” cümlesinin sırasıyla yüklem türü, yüklem yeri, anlamı ve yapısı hangisidir?"
+ },
+ {
+  "from": "MEBİ/OGM’nin yapı sınıflamasına göre “Ece ve Can kitap okudu.” cümlesi neden bağlı cümle değildir?",
+  "to": "Yapı sınıflamasına göre “Ece ve Can kitap okudu.” cümlesi neden bağlı cümle değildir?"
+ },
+ {
+  "from": "MEBİ/OGM’ye göre A: “Ece dosyayı açtı, Can not aldı.” B: “Ece dosyayı açtı ve Can not aldı.” cümlelerinin yapı farkı hangisidir?",
+  "to": "Yapı sınıflamasına göre A: “Ece dosyayı açtı, Can not aldı.” B: “Ece dosyayı açtı ve Can not aldı.” cümlelerinin yapı farkı hangisidir?"
+ },
+ {
+  "from": "İki örnekte de Ecenin açması ve Canın not alması iki temel yargıdır. A’da bunlar virgülle sıralanır; B’de ve bağlacıyla bağlanır. Noktalama veya bağlacın neyi ilişkilendirdiği de gösterilmiştir.",
+  "to": "İki örnekte de Ece’nin açması ve Can’ın not alması iki temel yargıdır. A’da bunlar virgülle sıralanır; B’de ve bağlacıyla bağlanır. Noktalama veya bağlacın neyi ilişkilendirdiği de gösterilmiştir."
+ },
+ {
+  "from": "OGM’nin yüklemdeki tek fiilimsi için verdiği sınır dikkate alındığında “Amacım araştırmaktır.” cümlesinin yapısı ve yüklem türü hangisidir?",
+  "to": "Yüklemdeki tek fiilimsi için kabul edilen sınır dikkate alındığında “Amacım araştırmaktır.” cümlesinin yapısı ve yüklem türü hangisidir?"
+ },
+ {
+  "from": "MEBİ’nin anlam sınıflamasına göre “Ece ne konuştu ne güldü.” cümlesi hakkında hangisi doğrudur?",
+  "to": "Anlam sınıflamasına göre “Ece ne konuştu ne güldü.” cümlesi hakkında hangisi doğrudur?"
+ },
+ {
+  "from": "Ne…ne bağlacı bu bağlamda Ecenin konuşmadığını ve gülmediğini bildirir. Fiillerin içinde -ma olumsuzluk eki görünmemesi anlamı olumlu yapmaz. Biçim ve anlam ayrı denetlenmelidir.",
+  "to": "Ne…ne bağlacı bu bağlamda Ece’nin konuşmadığını ve gülmediğini bildirir. Fiillerin içinde -ma olumsuzluk eki görünmemesi anlamı olumlu yapmaz. Biçim ve anlam ayrı denetlenmelidir."
+ },
+ {
+  "from": "MEBİ/OGM okul sınıflamasına göre “Dosyayı açınca not aldı.” cümlesi hangi gerekçeyle girişik birleşiktir?",
+  "to": "Yapı sınıflamasına göre “Dosyayı açınca not aldı.” cümlesi hangi gerekçeyle girişik birleşiktir?"
+ },
+ {
+  "from": "Aç-ınca zarf-fiili, not alma eylemine zaman ilişkisiyle bağlanan yan yapıdır. Aldı temel çekimli yüklemdir. Bu okul sınıflamasında fiilimsiyle kurulan yan yapı nedeniyle cümle girişik birleşiktir.",
+  "to": "Aç-ınca zarf-fiili, not alma eylemine zaman ilişkisiyle bağlanan yan yapıdır. Aldı temel çekimli yüklemdir. Bu sınıflamada fiilimsiyle kurulan yan yapı nedeniyle cümle girişik birleşiktir."
+ },
+ {
+  "from": "MEBİ/OGM’ye göre “Ece kapıyı açtı, içeri girdi.” cümlesi neden bağımlı sıralıdır?",
+  "to": "Yapı sınıflamasına göre “Ece kapıyı açtı, içeri girdi.” cümlesi neden bağımlı sıralıdır?"
+ },
+ {
+  "from": "MEBİ/OGM’nin yapı sınıflamasına göre hangi seçenek şartlı birleşik cümleye açık bir örnektir?",
+  "to": "Yapı sınıflamasına göre hangi seçenek şartlı birleşik cümleye açık bir örnektir?"
+ },
+ {
+  "from": "Yüklem yararlıydı, yararlı + idi ile kurulmuş ad soylu yüklemdir; okul düzeyinde fiilde çatı bu yüklemde aranmaz. Yapılan araştırmayı niteleyen fiilimsidir, cümlenin asıl yüklemi değildir. Geçmiş zamanın kendisi çatıya engel oluşturmaz.",
+  "to": "Yüklem yararlıydı, yararlı + idi ile kurulmuş ad soylu yüklemdir; fiilde çatı bu yüklemde aranmaz. Yapılan araştırmayı niteleyen fiilimsidir, cümlenin asıl yüklemi değildir. Geçmiş zamanın kendisi çatıya engel oluşturmaz."
+ },
+ {
+  "from": "Uyu- bu kullanımda geçişsizdir; uyut- ekle bebeği nesnesini alabilen geçişli fiile dönüşür. OGM’nin başlangıç geçişliliğine dayanan sınıflamasında bu oldurgandır. Başlangıç zaten geçişli olsaydı ettirgen ayrımı yapılırdı.",
+  "to": "Uyu- bu kullanımda geçişsizdir; uyut- ekle bebeği nesnesini alabilen geçişli fiile dönüşür. Başlangıç geçişliliğine dayanan sınıflamada bu oldurgandır. Başlangıç zaten geçişli olsaydı ettirgen ayrımı yapılırdı."
+ }
+]

@@ -1,0 +1,398 @@
+[
+ {
+  "from": "X grubunun ölçümleri 4,6,8; Y grubunun ölçümleri 6,6,6 birim. Hangi ifade doğrudur?",
+  "to": "X grubunun ölçümleri 4, 6, 8; Y grubunun ölçümleri 6, 6, 6 birim. Hangi ifade doğrudur?"
+ },
+ {
+  "from": "Işık artışının farkı düşük suda+2, yüksek suda−1’dir; etki bu verilerde su koşuluna göre değişir",
+  "to": "Işık artışının farkı düşük suda +2, yüksek suda−1’dir; etki bu verilerde su koşuluna göre değişir"
+ },
+ {
+  "from": "Işık her su düzeyinde aynı+2 etkiyi yapmıştır",
+  "to": "Işık her su düzeyinde aynı +2 etkiyi yapmıştır"
+ },
+ {
+  "from": "Doğru. İstenen, iki sabit su koşulundaki ışık farkını ayrı okumaktır. Düşük suda 7−5=+2 bulunur. Yüksek suda 8−9=−1 bulunur. İki fark aynı olmadığından tek sabit ışık etkisi varsayımı bu dört özeti karşılamaz. Kontrol: İşaretlerin+2 ve−1 olarak korunması, aynı yönlü evrensel artış iddiasını denetler.",
+  "to": "Doğru. İstenen, iki sabit su koşulundaki ışık farkını ayrı okumaktır. Düşük suda 7−5=+2 bulunur. Yüksek suda 8−9=−1 bulunur. İki fark aynı olmadığından tek sabit ışık etkisi varsayımı bu dört özeti karşılamaz. Kontrol: İşaretlerin +2 ve−1 olarak korunması, aynı yönlü evrensel artış iddiasını denetler."
+ },
+ {
+  "from": "Kalsiyum elementine ait net+2 yüklü iyonu gösterir",
+  "to": "Kalsiyum elementine ait net +2 yüklü iyonu gösterir"
+ },
+ {
+  "from": "Doğru. Gösterim bir kalsiyum iyonunun yük durumunu anlatır. Ca simgesi kalsiyumu belirtir. ²⁺ üst simgesi net+2 yükü gösterir. Bu iki bilgi kalsiyum iyonunu tanımlar; iki atom veya yeni element sonucu vermez. Kontrol: Cevap hem Ca kimliğini hem+2 net yükünü korumalıdır.",
+  "to": "Doğru. Gösterim bir kalsiyum iyonunun yük durumunu anlatır. Ca simgesi kalsiyumu belirtir. ²⁺ üst simgesi net +2 yükü gösterir. Bu iki bilgi kalsiyum iyonunu tanımlar; iki atom veya yeni element sonucu vermez. Kontrol: Cevap hem Ca kimliğini hem +2 net yükünü korumalıdır."
+ },
+ {
+  "from": "F₂’deki alt 2 net+2 yük anlamına gelir",
+  "to": "F₂’deki alt 2 net +2 yük anlamına gelir"
+ },
+ {
+  "from": "Özgün varsayımsal deneyde X derişimi 0,2,5,9 mg/L için aynı sürede ortalama kuru kütle artışları 1,4,4,2 mg.16 mg/L ölçülmemiştir. Hangi yorum doğrudur?",
+  "to": "Özgün varsayımsal deneyde X derişimi 0, 2, 5, 9 mg/L için aynı sürede ortalama kuru kütle artışları 1, 4, 4, 2 mg. 16 mg/L ölçülmemiştir. Hangi yorum doğrudur?"
+ },
+ {
+  "from": "H₂O kesin+2 yüklü iyondur",
+  "to": "H₂O kesin +2 yüklü iyondur"
+ },
+ {
+  "from": "Doğru. Logaritmik oran ve son çözeltinin sınıfı birlikte korunmuştur. pH 8’den 5’e üç birim azalmıştır. H⁺son/H⁺ilk=10^(8−5)=10³=1000’dir. Son pH 5,7’nin altında olduğundan verilen koşulda asidiktir. Kontrol: Daha küçük pH için daha yüksek H⁺ ve pH 5 için asidik sonuç birlikte çıkmalıdır.",
+  "to": "Doğru. Logaritmik oran ve son çözeltinin sınıfı birlikte korunmuştur. pH 8’den 5’e üç birim azalmıştır. H⁺son/H⁺ilk=10^(8−5)=10³=1000’dir. Son pH 5, 7’nin altında olduğundan verilen koşulda asidiktir. Kontrol: Daha küçük pH için daha yüksek H⁺ ve pH 5 için asidik sonuç birlikte çıkmalıdır."
+ },
+ {
+  "from": "10⁻⁴ mol/L ve pH−4",
+  "to": "10⁻⁴ mol/L ve pH −4"
+ },
+ {
+  "from": "İlk kesimden sonra AB ile CDEFG parçalarını yaz. İkinci kesim kalan uzun parçayı CDE ile FG olarak ayırır. Parça uzunlukları 2,3,2’dir; yalnız uzunluğu 1 olanlar serbest monosakkarit sayılır. Parçalar AB, CDE ve FG’dir; üçü de birden fazla birimli olduğundan serbest monosakkarit yoktur.",
+  "to": "İlk kesimden sonra AB ile CDEFG parçalarını yaz. İkinci kesim kalan uzun parçayı CDE ile FG olarak ayırır. Parça uzunlukları 2, 3, 2’dir; yalnız uzunluğu 1 olanlar serbest monosakkarit sayılır. Parçalar AB, CDE ve FG’dir; üçü de birden fazla birimli olduğundan serbest monosakkarit yoktur."
+ },
+ {
+  "from": "Uzunlukları 2,3,5 ve 6 amino asit olan dört hazır açık peptit, uçlarından eklenerek tek açık zincir yapılıyor. Net dehidrasyon modelinde yalnız bu birleştirmede kaç yeni peptit bağı ve su oluşur?",
+  "to": "Uzunlukları 2, 3, 5 ve 6 amino asit olan dört hazır açık peptit, uçlarından eklenerek tek açık zincir yapılıyor. Net dehidrasyon modelinde yalnız bu birleştirmede kaç yeni peptit bağı ve su oluşur?"
+ },
+ {
+  "from": "Bir öğretim modelinde v=2ES/(2+S); enzimsiz arka plan hızı ihmal ediliyor. E=0 ve S=20 iken model hızı nedir; bu sonuç hangi kapsamda geçerlidir?",
+  "to": "Bir modelde v=2ES/(2+S); enzimsiz arka plan hızı ihmal ediliyor. E=0 ve S=20 iken model hızı nedir; bu sonuç hangi kapsamda geçerlidir?"
+ },
+ {
+  "from": "Eşit başlangıç koşullarında varsayımsal X enziminin 20,40,60°C hızları 3,9,2; Y’nin 1,4,10 birimdir. Ölçülen sıcaklıklar içinde en yüksek hızlar hangi sıcaklıklardadır?",
+  "to": "Eşit başlangıç koşullarında varsayımsal X enziminin 20, 40, 60°C hızları 3, 9, 2; Y’nin 1, 4, 10 birimdir. Ölçülen sıcaklıklar içinde en yüksek hızlar hangi sıcaklıklardadır?"
+ },
+ {
+  "from": "X20°C; Y20°C",
+  "to": "X 20°C; Y 20°C"
+ },
+ {
+  "from": "X60°C; Y40°C",
+  "to": "X 60°C; Y 40°C"
+ },
+ {
+  "from": "X40°C; Y60°C",
+  "to": "X 40°C; Y 60°C"
+ },
+ {
+  "from": "X37°C; Y37°C",
+  "to": "X 37°C; Y 37°C"
+ },
+ {
+  "from": "X40°C; Y40°C",
+  "to": "X 40°C; Y 40°C"
+ },
+ {
+  "from": "X için 3,9,2 değerlerinden en büyüğünü seç:9. Y için 1,4,10 değerlerinden en büyüğünü seç:10. Ölçülenler içinde X40, Y60°C; denenmeyen ara sıcaklıklar için kesin optimum uydurma.",
+  "to": "X için 3, 9, 2 değerlerinden en büyüğünü seç: 9. Y için 1, 4, 10 değerlerinden en büyüğünü seç: 10. Ölçülenler içinde X 40, Y 60°C; denenmeyen ara sıcaklıklar için kesin optimum uydurma."
+ },
+ {
+  "from": "X için 3,9,2 değerlerinden en büyüğünü seç:9.",
+  "to": "X için 3, 9, 2 değerlerinden en büyüğünü seç: 9."
+ },
+ {
+  "from": "Bir enzimin pH2,4,6,8’de ölçülen hızları sırasıyla 5,9,4,0 birimdir. pH3,5 veya 4,5 ölçülmemiştir. Hangi ifade kesin olarak desteklenir?",
+  "to": "Bir enzimin pH 2, 4, 6, 8’de ölçülen hızları sırasıyla 5, 9, 4, 0 birimdir. pH 3,5 veya 4,5 ölçülmemiştir. Hangi ifade kesin olarak desteklenir?"
+ },
+ {
+  "from": "Hızın pH2’den 8’e her adımda arttığı kanıtlanmıştır.",
+  "to": "Hızın pH 2’den 8’e her adımda arttığı kanıtlanmıştır."
+ },
+ {
+  "from": "pH8’de bütün peptit bağları kesin kopmuştur.",
+  "to": "pH 8’de bütün peptit bağları kesin kopmuştur."
+ },
+ {
+  "from": "Gerçek optimum kesin pH4,000’dür.",
+  "to": "Gerçek optimum kesin pH 4,000’dür."
+ },
+ {
+  "from": "Denenen pH değerleri içinde en yüksek hız pH4’tedir.",
+  "to": "Denenen pH değerleri içinde en yüksek hız pH 4’tedir."
+ },
+ {
+  "from": "Bütün enzimlerin optimumu pH4’tür.",
+  "to": "Bütün enzimlerin optimumu pH 4’tür."
+ },
+ {
+  "from": "Ölçülen dört hız arasında en büyük değer 9’dur. 9 değeri pH4’e aittir; ara ölçümler yoktur. Ölçülen maksimumu söyle; gerçek tepenin kesin ondalık yerini veya molekülün bağ hasarını çıkarma.",
+  "to": "Ölçülen dört hız arasında en büyük değer 9’dur. 9 değeri pH 4’e aittir; ara ölçümler yoktur. Ölçülen maksimumu söyle; gerçek tepenin kesin ondalık yerini veya molekülün bağ hasarını çıkarma."
+ },
+ {
+  "from": "Kapalı bir sistemde dallanmayan A→B→C yolunda her dönüşüm 1:1’dir. BaşlangıçA60, B10, C0 birimdir. İlk 5 dakika A→B hızı 6, B→C hızı 2 birim/dakika sabit kalıyor; başka giriş/çıkış yok. Beşinci dakikada B ve C miktarları nedir?",
+  "to": "Kapalı bir sistemde dallanmayan A→B→C yolunda her dönüşüm 1:1’dir. Başlangıçta A 60, B 10, C 0 birimdir. İlk 5 dakika A→B hızı 6, B→C hızı 2 birim/dakika sabit kalıyor; başka giriş/çıkış yok. Beşinci dakikada B ve C miktarları nedir?"
+ },
+ {
+  "from": "İlk basamak 5×6=30 A’yı B’ye; ikinci 5×2=10 B’yi C’ye dönüştürür. Bson=10+30−10=30; Cson=0+10=10. Ason 30, B30, C10 toplam 70 başlangıç 60+10=70 ile eşittir.",
+  "to": "İlk basamak 5×6=30 A’yı B’ye; ikinci 5×2=10 B’yi C’ye dönüştürür. Bson=10+30−10=30; Cson=0+10=10. A son 30, B 30, C 10; toplam 70, başlangıç 60+10=70 ile eşittir."
+ },
+ {
+  "from": "Net enerji farkı+15 kalır; katalizör bu farkı enerji vererek kapatmış sayılmaz.",
+  "to": "Net enerji farkı +15 kalır; katalizör bu farkı enerji vererek kapatmış sayılmaz."
+ },
+ {
+  "from": "Net farkı ürün−giren olarak+15 belirle. Katalizör tepki yolunun engelini değiştirir; başlangıç ve son düzeylerini değiştirmez. Gereken enerjiyle ilişkili süreç ayrıca ele alınır; katalizör enerji kaynağı diye sayılamaz.",
+  "to": "Net farkı ürün−giren olarak +15 belirle. Katalizör tepki yolunun engelini değiştirir; başlangıç ve son düzeylerini değiştirmez. Gereken enerjiyle ilişkili süreç ayrıca ele alınır; katalizör enerji kaynağı diye sayılamaz."
+ },
+ {
+  "from": "Net farkı ürün−giren olarak+15 belirle.",
+  "to": "Net farkı ürün−giren olarak +15 belirle."
+ },
+ {
+  "from": "Üç son bölmeyi aynı birimde sırala:60,20,20. Başlangıç, bütün bölmelerin toplamıdır. 60+20+20=100 birim bulunur; etkinliğini yitiren bölüm de başlangıç muhasebesine dahildir.",
+  "to": "Üç son bölmeyi aynı birimde sırala: 60, 20, 20. Başlangıç, bütün bölmelerin toplamıdır. 60+20+20=100 birim bulunur; etkinliğini yitiren bölüm de başlangıç muhasebesine dahildir."
+ },
+ {
+  "from": "Üç son bölmeyi aynı birimde sırala:60,20,20.",
+  "to": "Üç son bölmeyi aynı birimde sırala: 60, 20, 20."
+ },
+ {
+  "from": "İnsanda D vitaminiyle ilgili yol şeması bu kartta “deride uygun UVB ile öncül dönüşümü → karaciğerde dönüşüm → böbrekte etkin biçimin oluşumuna katkı” olarak veriliyor. Hangi yorum doğrudur?",
+  "to": "İnsanda D vitaminiyle ilgili yol şeması “deride uygun UVB ile öncül dönüşümü → karaciğerde dönüşüm → böbrekte etkin biçimin oluşumuna katkı” olarak veriliyor. Hangi yorum doğrudur?"
+ },
+ {
+  "from": "Yalnız öğretim hesabında 40 öncül biriminin %20’si etkin A vitamini birimine 1:1 dönüşüyor. Başka kayıp yok. Ayrı örnekte 10 birim hazır etkin A var. İlk örneğin etkin ürünü ve ikinciye göre eksiği nedir?",
+  "to": "Yalnız bu hesapta 40 öncül biriminin %20’si etkin A vitamini birimine 1:1 dönüşüyor. Başka kayıp yok. Ayrı örnekte 10 birim hazır etkin A var. İlk örneğin etkin ürünü ve ikinciye göre eksiği nedir?"
+ },
+ {
+  "from": "B12 depolanmasını yalnız sonlu bir öğretim stok hesabında düşünelim. Başlangıç 18 stok birimi var; her adım 3 birim kullanılıyor,4 adımda giriş ve başka çıkış yok. Son stok nedir; bu hesap çözünürlük grubunu değiştirir mi?",
+  "to": "B12 depolanmasını yalnız sonlu bir stok hesabında düşünelim. Başlangıç 18 stok birimi var; her adım 3 birim kullanılıyor, 4 adımda giriş ve başka çıkış yok. Son stok nedir; bu hesap çözünürlük grubunu değiştirir mi?"
+ },
+ {
+  "from": "İki insan bağırsak emilimi öğretim modelinde aynı 80 birim D vitamini bulunuyor. X koşulunda emilen oran%25, Y’de%50 olarak verilmiş; bu oranlar evrensel değildir. Emilen Y/X oranı ve iki örneğin başlangıç vitamin miktarı ilişkisi nedir?",
+  "to": "İki insan bağırsak emilimi modelinde aynı 80 birim D vitamini bulunuyor. X koşulunda emilen oran%25, Y’de%50 olarak verilmiş; bu oranlar evrensel değildir. Emilen Y/X oranı ve iki örneğin başlangıç vitamin miktarı ilişkisi nedir?"
+ },
+ {
+  "from": "Su miktarı — bitki türü",
+  "to": "Su miktarı, bitki türü"
+ },
+ {
+  "from": "Başlangıç boyu — ışık süresi",
+  "to": "Başlangıç boyu, ışık süresi"
+ },
+ {
+  "from": "Işık süresi — boy uzaması",
+  "to": "Işık süresi, boy uzaması"
+ },
+ {
+  "from": "Boy uzaması — su miktarı",
+  "to": "Boy uzaması, su miktarı"
+ },
+ {
+  "from": "Bitki türü — deney süresi",
+  "to": "Bitki türü, deney süresi"
+ },
+ {
+  "from": "Demir — magnezyum",
+  "to": "Demir, magnezyum"
+ },
+ {
+  "from": "Magnezyum — demir",
+  "to": "Magnezyum, demir"
+ },
+ {
+  "from": "İyot — sodyum",
+  "to": "İyot, sodyum"
+ },
+ {
+  "from": "Kalsiyum — iyot",
+  "to": "Kalsiyum, iyot"
+ },
+ {
+  "from": "Potasyum — fosfor",
+  "to": "Potasyum, fosfor"
+ },
+ {
+  "from": "Moleküller arası kovalent — molekül içi hidrojen bağı",
+  "to": "Moleküller arası kovalent, molekül içi hidrojen bağı"
+ },
+ {
+  "from": "Molekül içi kovalent bağ — moleküller arası etkileşim",
+  "to": "Molekül içi kovalent bağ, moleküller arası etkileşim"
+ },
+ {
+  "from": "Nükleer bağ — peptit bağı",
+  "to": "Nükleer bağ, peptit bağı"
+ },
+ {
+  "from": "Adhezyon — kohezyon",
+  "to": "Adhezyon, kohezyon"
+ },
+ {
+  "from": "Hidroliz — denatürasyon",
+  "to": "Hidroliz, denatürasyon"
+ },
+ {
+  "from": "Kohezyon — adhezyon",
+  "to": "Kohezyon, adhezyon"
+ },
+ {
+  "from": "Peptit bağı — glikozit bağı",
+  "to": "Peptit bağı, glikozit bağı"
+ },
+ {
+  "from": "Oksidasyon — nötrleşme",
+  "to": "Oksidasyon, nötrleşme"
+ },
+ {
+  "from": "Hemoglobin — oksijen taşınmasıyla ilişki",
+  "to": "Hemoglobin: oksijen taşınmasıyla ilişki"
+ },
+ {
+  "from": "Keratin — temel olarak DNA bilgisinin eşlenmesi",
+  "to": "Keratin: temel olarak DNA bilgisinin eşlenmesi"
+ },
+ {
+  "from": "Antikor — yalnız kasılmanın mekanik kuvveti",
+  "to": "Antikor: yalnız kasılmanın mekanik kuvveti"
+ },
+ {
+  "from": "Aktin–miyozin — nişasta deposu",
+  "to": "Aktin–miyozin: nişasta deposu"
+ },
+ {
+  "from": "Bütün proteinler — yalnız enerji depolama",
+  "to": "Bütün proteinler: yalnız enerji depolama"
+ },
+ {
+  "from": "K vitamini — pıhtılaşma süreçleri",
+  "to": "K vitamini: pıhtılaşma süreçleri"
+ },
+ {
+  "from": "K vitamini — glikojenin tek monomeri",
+  "to": "K vitamini: glikojenin tek monomeri"
+ },
+ {
+  "from": "K vitamini — DNA’nın pentoz şekeri",
+  "to": "K vitamini: DNA’nın pentoz şekeri"
+ },
+ {
+  "from": "K vitamini — bütün sinir uyarılarının elektrik yükü",
+  "to": "K vitamini: bütün sinir uyarılarının elektrik yükü"
+ },
+ {
+  "from": "K vitamini — alyuvarın tek demir elementi",
+  "to": "K vitamini: alyuvarın tek demir elementi"
+ },
+ {
+  "from": "K vitamininin pıhtılaşma proteinleriyle ilişkisi temel okul eşleştirmesidir. Glikojenin monomeri glikoz, DNA şekeri deoksiribozdur; vitamin bunların veya demir elementinin yerini almaz. Bir süreçteki rol tüm süreçleri tek başına gerçekleştirmek anlamına gelmez.",
+  "to": "K vitamininin pıhtılaşma proteinleriyle ilişkisi temel bir eşleştirmedir. Glikojenin monomeri glikoz, DNA şekeri deoksiribozdur; vitamin bunların veya demir elementinin yerini almaz. Bir süreçteki rol tüm süreçleri tek başına gerçekleştirmek anlamına gelmez."
+ },
+ {
+  "from": "Denitrifikasyon nitrat gibi oksitlenmiş azot bileşiklerinden gaz ürünlerine dönüşüm yoludur; basit şemada N₂ ile gösterilir. Nitrifikasyon ise amonyumdan nitrat yönündedir.",
+  "to": "Denitrifikasyon nitrat gibi oksitlenmiş azot bileşiklerinden gaz ürünlerine dönüşüm yoludur; basit modelde N₂ ile gösterilir. Nitrifikasyon ise amonyumdan nitrat yönündedir."
+ },
+ {
+  "from": "n=9 yumurta ile aynı türünn=9 spermi normal dölleniyor. Zigotun kromozom sayısı nedir?",
+  "to": "n=9 yumurta ile aynı türün n=9 spermi normal dölleniyor. Zigotun kromozom sayısı nedir?"
+ },
+ {
+  "from": "Döllenme iki haploit takımı birleştirir:9+9=18. Kromozom sayıları çarpılmaz ve yeni zigot haploit kalmaz.",
+  "to": "Döllenme iki haploit takımı birleştirir: 9+9=18. Kromozom sayıları çarpılmaz ve yeni zigot haploit kalmaz."
+ },
+ {
+  "from": "Bütün fetüsler kesin Rh+olur",
+  "to": "Bütün fetüsler kesin Rh+ olur"
+ },
+ {
+  "from": "Bütün fetüsler kesin Rh−olur",
+  "to": "Bütün fetüsler kesin Rh− olur"
+ },
+ {
+  "from": "Rh− annenin her zaman doğuştananti-D’si vardır",
+  "to": "Rh− annenin her zaman doğuştan anti-D’si vardır"
+ },
+ {
+  "from": "Kimlik bir Punnettkaresiyle kesin belirlenir",
+  "to": "Kimlik bir Punnett karesiyle kesin belirlenir"
+ },
+ {
+  "from": "Bu basit okul modeliyle kişisel kromozom düzeni veya kimlik kesinleştirilemez",
+  "to": "Bu basit modelle kişisel kromozom düzeni veya kimlik kesinleştirilemez"
+ },
+ {
+  "from": "Ymodelini kesin kanıtlar",
+  "to": "Y modelini kesin kanıtlar"
+ },
+ {
+  "from": "Oğul babadan Xalmıştır",
+  "to": "Oğul babadan X almıştır"
+ },
+ {
+  "from": "Y’ye bağlı alel babadan tüm normal XY oğullara geçer ve tam ifade varsayılmıştır. Aykırı oğul bu temel modeli eler; genelbir biyolojik imkânsızlık hükmü değildir.",
+  "to": "Y’ye bağlı alel babadan tüm normal XY oğullara geçer ve tam ifade varsayılmıştır. Aykırı oğul bu temel modeli eler; genel bir biyolojik imkânsızlık hükmü değildir."
+ },
+ {
+  "from": "Kişiyiotomatik AA kabul et",
+  "to": "Kişiyi otomatik AA kabul et"
+ },
+ {
+  "from": "Olasılığa bakmadan kesindoğru de",
+  "to": "Olasılığa bakmadan kesin doğru de"
+ },
+ {
+  "from": "Ribozom hücresel protein sentezini yapar ve temel ortak yapıdır. Kamçı, kapsül, endospor ve plazmit bazı tür veya koşullarda bulunabilir; hepsine zorunlu değildir. Sorunun ortaklık ölçütü ile bir çizimde gösterilen zengin yapı listesini karıştırmamak gerekir.",
+  "to": "Ribozom hücresel protein sentezini yapar ve temel ortak yapıdır. Kamçı, kapsül, endospor ve plazmit bazı tür veya koşullarda bulunabilir; hepsine zorunlu değildir. Sorunun ortaklık ölçütü ile seçeneklerde sayılan zengin yapı listesini karıştırmamak gerekir."
+ },
+ {
+  "from": "Kapalı öğretim modelinde her biri üç monomer birimli iki polimer tamamen sindiriliyor. Dört monomer içeri alınırken kayıp ve tüketim yok. Dışarıda kaç monomer kalır?",
+  "to": "Kapalı modelde her biri üç monomer birimli iki polimer tamamen sindiriliyor. Dört monomer içeri alınırken kayıp ve tüketim yok. Dışarıda kaç monomer kalır?"
+ },
+ {
+  "from": "Bir hayvan çok sayıda porundan su alıyor, gerçek doku ve organ taşımıyor; yakaladığı besini hücre içinde sindiriyor. Hangi okul grubuyla en uyumludur?",
+  "to": "Bir hayvan çok sayıda porundan su alıyor, gerçek doku ve organ taşımıyor; yakaladığı besini hücre içinde sindiriyor. Hangi grupla en uyumludur?"
+ },
+ {
+  "from": "Suda yaşayan bir omurgalı akciğerle soluyor ve yavrusunu sütle besliyor. Hangi okul grubuna yerleştirilir?",
+  "to": "Suda yaşayan bir omurgalı akciğerle soluyor ve yavrusunu sütle besliyor. Hangi gruba yerleştirilir?"
+ },
+ {
+  "from": "Sazan, kurbağa, kertenkele, penguen ve yunus örnekleri için hangisi okul düzeyinde ortak omurgalı planıyla uyumludur?",
+  "to": "Sazan, kurbağa, kertenkele, penguen ve yunus örnekleri için hangisi ortak omurgalı planıyla uyumludur?"
+ },
+ {
+  "from": "Erkek32,sperm16",
+  "to": "Erkek 32, sperm 16"
+ },
+ {
+  "from": "Erkek16,sperm8",
+  "to": "Erkek 16, sperm 8"
+ },
+ {
+  "from": "Erkek32,sperm32",
+  "to": "Erkek 32, sperm 32"
+ },
+ {
+  "from": "Erkek8,sperm8",
+  "to": "Erkek 8, sperm 8"
+ },
+ {
+  "from": "Erkek16,sperm16",
+  "to": "Erkek 16, sperm 16"
+ },
+ {
+  "from": "Yumurta n; haploit erkeğin sperm üretimi okul modelinde mitozdur.",
+  "to": "Yumurta n; haploit erkeğin sperm üretimi bu modelde mitozdur."
+ },
+ {
+  "from": "İdeal bir su modelinde iç çözünen 3, dış çözünen 1, iç karşı basınç 2 ortak öğretim birimidir. Suya geçirgen zarda içe sürücü etki ‘iç−dış−basınç’ olarak tanımlanıyor. Model ne öngörür?",
+  "to": "İdeal bir su modelinde iç çözünen 3, dış çözünen 1, iç karşı basınç 2 ortak model birimidir. Suya geçirgen zarda içe sürücü etki ‘iç−dış−basınç’ olarak tanımlanıyor. Model ne öngörür?"
+ },
+ {
+  "from": "K-G farkı 1, K-M ve G-M farkı 2’dir; bu öğretim paketinde K-G yakınlığını destekler",
+  "to": "K-G farkı 1, K-M ve G-M farkı 2’dir; bu veride K-G yakınlığını destekler"
+ },
+ {
+  "from": "K ile G yalnız son konumda farklıdır:1. K-M ve G-M beşinci ve altıncı konumlarda farklıdır:2. Bu yapılandırılmış örnekte K-G yakınlığını destekleyen ayırt edici veri vardır. Diğer sayımlar yanlıştır; kısa oluşturulmuş diziden aynı tür, genom aynılığı veya kesin ayrılma tarihi çıkarılamaz.",
+  "to": "K ile G yalnız son konumda farklıdır: 1. K-M ve G-M beşinci ve altıncı konumlarda farklıdır: 2. Bu yapılandırılmış örnekte K-G yakınlığını destekleyen ayırt edici veri vardır. Diğer sayımlar yanlıştır; kısa oluşturulmuş diziden aynı tür, genom aynılığı veya kesin ayrılma tarihi çıkarılamaz."
+ },
+ {
+  "from": "İki maltozdan 2×2=4 glikoz, bir laktozdan 1 glikoz ve 1 galaktoz çıkar; toplam 5 glikoz+1 galaktozdur. Üç disakkaritin her birinde bir bağ hidroliz edildiğinden üç su kullanılır. Birim sayısını molekül türünden ayrı say.",
+  "to": "İki maltozdan 2×2=4 glikoz, bir laktozdan 1 glikoz ve 1 galaktoz çıkar; toplam 5 glikoz + 1 galaktozdur. Üç disakkaritin her birinde bir bağ hidroliz edildiğinden üç su kullanılır. Birim sayısını molekül türünden ayrı say."
+ },
+ {
+  "from": "A vitamininin görmeyle ilişkili olduğu öğretim bilgisini",
+  "to": "A vitamininin görmeyle ilişkili olduğu bilgisini"
+ },
+ {
+  "from": "Okul eşleştirmesi ile kişisel kesin tanıyı ayır.",
+  "to": "Kavramsal eşleştirme ile kişisel kesin tanıyı ayır."
+ }
+]
