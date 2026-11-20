@@ -1,4 +1,11 @@
-import { useEffect, useId, useRef, useState } from "react";
+import {
+  useEffect,
+  useId,
+  useLayoutEffect,
+  useRef,
+  useState,
+  type ReactNode,
+} from "react";
 
 /*
  * Section figures: one static or lightly interactive diagram for a single
@@ -103,7 +110,14 @@ export type El =
   | ({ k: "line"; a: V; b: V; ext?: number } & Style)
   | ({ k: "ray"; a: V; b: V; ext?: number } & Style)
   | ({ k: "vec"; a: V; b: V } & Style)
-  | ({ k: "poly"; ps: V[]; fill?: Tone; open?: boolean; bare?: boolean; smooth?: boolean } & Style)
+  | ({
+      k: "poly";
+      ps: V[];
+      fill?: Tone;
+      open?: boolean;
+      bare?: boolean;
+      smooth?: boolean;
+    } & Style)
   | ({ k: "circle"; c: V; r: number; fill?: Tone } & Style)
   | { k: "ball"; c: V; r: number; tone: Tone; label?: string }
   | { k: "pt"; p: V; label?: string; at?: Dir; tone?: Tone; hollow?: boolean }
@@ -137,7 +151,12 @@ export type El =
       pick?: number;
     };
 
-export const seg = (a: V, b: V, s: Style = {}): El => ({ k: "seg", a, b, ...s });
+export const seg = (a: V, b: V, s: Style = {}): El => ({
+  k: "seg",
+  a,
+  b,
+  ...s,
+});
 export const line = (a: V, b: V, s: Style & { ext?: number } = {}): El => ({
   k: "line",
   a,
@@ -150,10 +169,20 @@ export const ray = (a: V, b: V, s: Style & { ext?: number } = {}): El => ({
   b,
   ...s,
 });
-export const vec = (a: V, b: V, s: Style = {}): El => ({ k: "vec", a, b, ...s });
+export const vec = (a: V, b: V, s: Style = {}): El => ({
+  k: "vec",
+  a,
+  b,
+  ...s,
+});
 export const poly = (
   ps: V[],
-  s: Style & { fill?: Tone; open?: boolean; bare?: boolean; smooth?: boolean } = {},
+  s: Style & {
+    fill?: Tone;
+    open?: boolean;
+    bare?: boolean;
+    smooth?: boolean;
+  } = {},
 ): El => ({ k: "poly", ps, ...s });
 export const circle = (
   c: V,
@@ -161,7 +190,13 @@ export const circle = (
   s: Style & { fill?: Tone } = {},
 ): El => ({ k: "circle", c, r, ...s });
 /** Shaded 3D-looking sphere (atoms in molecule models); label sits inside. */
-export const ball = (c: V, r: number, tone: Tone, label?: string): El => ({ k: "ball", c, r, tone, label });
+export const ball = (c: V, r: number, tone: Tone, label?: string): El => ({
+  k: "ball",
+  c,
+  r,
+  tone,
+  label,
+});
 export const pt = (
   p: V,
   label?: string,
@@ -214,7 +249,13 @@ export const dim = (
 ): El => ({ k: "dim", a, b, label, side, tone });
 /** Measured span for physics drawings: a thin line with end ticks plus the
  * dim label, for distances that are not already an edge of the figure. */
-export const span = (a: V, b: V, label: string, side: 1 | -1 | V = 1, tone?: Tone): El[] => {
+export const span = (
+  a: V,
+  b: V,
+  label: string,
+  side: 1 | -1 | V = 1,
+  tone?: Tone,
+): El[] => {
   const n = mul(unit([-(b[1] - a[1]), b[0] - a[0]]), 0.15);
   return [
     { k: "seg", a, b, tone, thin: true },
@@ -227,7 +268,13 @@ export const txt = (
   p: V,
   s: string,
   at: Dir = "c",
-  opts: { tone?: Tone; small?: boolean; bold?: boolean; soft?: boolean; pick?: number } = {},
+  opts: {
+    tone?: Tone;
+    small?: boolean;
+    bold?: boolean;
+    soft?: boolean;
+    pick?: number;
+  } = {},
 ): El => ({ k: "text", p, s, at, ...opts });
 
 export interface FigureFrame {
@@ -291,7 +338,11 @@ const anchorFor = (d: Dir) =>
       ? "end"
       : "middle";
 const baselineShift = (d: Dir) =>
-  d === "s" || d === "se" || d === "sw" ? 0.75 : d === "e" || d === "w" || d === "c" ? 0.35 : 0;
+  d === "s" || d === "se" || d === "sw"
+    ? 0.75
+    : d === "e" || d === "w" || d === "c"
+      ? 0.35
+      : 0;
 
 function extendPoints(el: El): V[] {
   switch (el.k) {
@@ -313,10 +364,7 @@ function extendPoints(el: El): V[] {
       return el.ps;
     case "circle":
     case "ball":
-      return [
-        add(el.c, [el.r, el.r]),
-        sub(el.c, [el.r, el.r]),
-      ];
+      return [add(el.c, [el.r, el.r]), sub(el.c, [el.r, el.r])];
     case "pt":
     case "text":
       return [el.p];
@@ -341,8 +389,12 @@ function dimLabelPoint(el: Extract<El, { k: "dim" }>, scale: number): V {
 
 /** Fit math coordinates into the SVG; returns mapper and height. */
 function layout(els: El[]) {
-  const base = els.flatMap(extendPoints).filter((p) => p.every(Number.isFinite));
-  const dims = els.filter((el): el is Extract<El, { k: "dim" }> => el.k === "dim");
+  const base = els
+    .flatMap(extendPoints)
+    .filter((p) => p.every(Number.isFinite));
+  const dims = els.filter(
+    (el): el is Extract<El, { k: "dim" }> => el.k === "dim",
+  );
   // Labels extend beyond their anchor point. Estimate each label's pixel box
   // around its anchor (about 0.55em per glyph; vertical extent measured with
   // the larger mobile font) so the scale and margins can hold all of them.
@@ -372,7 +424,8 @@ function layout(els: El[]) {
       let sweep = a2 - a1;
       while (sweep <= -Math.PI) sweep += 2 * Math.PI;
       while (sweep > Math.PI) sweep -= 2 * Math.PI;
-      if (el.reflex) sweep = sweep > 0 ? sweep - 2 * Math.PI : sweep + 2 * Math.PI;
+      if (el.reflex)
+        sweep = sweep > 0 ? sweep - 2 * Math.PI : sweep + 2 * Math.PI;
       const midA = a1 + sweep / 2;
       const lr = (el.r ?? 28) + 15 + (label.length > 4 ? 9 : 0);
       dx = lr * Math.cos(midA);
@@ -424,8 +477,14 @@ function layout(els: El[]) {
     s = Math.min((W - 2 * PAD - 40) / w, (MAX_H - 2 * PAD) / h);
     offX = (W - w * s) / 2;
     for (let k = 0; k < 4; k++) {
-      const leftNeed = Math.max(PAD, ...sideText.map((t) => t.left + 8 - (t.x - minX) * s));
-      const rightNeed = Math.max(PAD, ...sideText.map((t) => t.right + 8 - (maxX - t.x) * s));
+      const leftNeed = Math.max(
+        PAD,
+        ...sideText.map((t) => t.left + 8 - (t.x - minX) * s),
+      );
+      const rightNeed = Math.max(
+        PAD,
+        ...sideText.map((t) => t.right + 8 - (maxX - t.x) * s),
+      );
       const avail = W - leftNeed - rightNeed;
       if (w * s <= avail + 0.5) {
         offX = leftNeed + (avail - w * s) / 2;
@@ -435,8 +494,14 @@ function layout(els: El[]) {
       offX = leftNeed;
     }
   }
-  const topNeed = Math.max(PAD, ...sideText.map((t) => t.up + 4 - (maxY - t.y) * s));
-  const bottomNeed = Math.max(PAD, ...sideText.map((t) => t.down + 4 - (t.y - minY) * s));
+  const topNeed = Math.max(
+    PAD,
+    ...sideText.map((t) => t.up + 4 - (maxY - t.y) * s),
+  );
+  const bottomNeed = Math.max(
+    PAD,
+    ...sideText.map((t) => t.down + 4 - (t.y - minY) * s),
+  );
   const height = Math.round((maxY - minY) * s + topNeed + bottomNeed);
   const P = (p: V): [number, number] => [
     offX + (p[0] - minX) * s,
@@ -447,9 +512,11 @@ function layout(els: El[]) {
 
 /** Catmull–Rom curve through the points as cubic Béziers (organic outlines). */
 function smoothPath(ps: [number, number][], closed: boolean) {
-  if (ps.length < 3) return `M${ps.map(([x, y]) => `${x.toFixed(1)} ${y.toFixed(1)}`).join("L")}`;
+  if (ps.length < 3)
+    return `M${ps.map(([x, y]) => `${x.toFixed(1)} ${y.toFixed(1)}`).join("L")}`;
   const n = ps.length;
-  const at = (i: number) => (closed ? ps[(i + n) % n] : ps[Math.max(0, Math.min(n - 1, i))]);
+  const at = (i: number) =>
+    closed ? ps[(i + n) % n] : ps[Math.max(0, Math.min(n - 1, i))];
   const f = (v: number) => v.toFixed(1);
   let d = `M${f(ps[0][0])} ${f(ps[0][1])}`;
   const last = closed ? n : n - 1;
@@ -489,28 +556,73 @@ function arcPath(
  * labels such as axis numbers when they would collide with a content label
  * or with an earlier secondary label.
  */
-function hiddenSoftLabels(els: El[], P: (p: V) => [number, number], scale: number) {
-  type Box = { i: number; soft: boolean; x0: number; x1: number; y0: number; y1: number };
+function hiddenSoftLabels(
+  els: El[],
+  P: (p: V) => [number, number],
+  scale: number,
+) {
+  type Box = {
+    i: number;
+    soft: boolean;
+    x0: number;
+    x1: number;
+    y0: number;
+    y1: number;
+  };
   const boxes: Box[] = [];
-  const add = (i: number, soft: boolean, x: number, y: number, label: string, anchor: string, shift: number, fs: number) => {
+  const add = (
+    i: number,
+    soft: boolean,
+    x: number,
+    y: number,
+    label: string,
+    anchor: string,
+    shift: number,
+    fs: number,
+  ) => {
     // Generous boxes (glyph advance, ascent and descent plus the label's
     // background stroke) so near misses count as collisions.
     const w = label.length * 0.6 * fs + 4;
     const x0 = anchor === "end" ? x - w : anchor === "middle" ? x - w / 2 : x;
     const base = y + shift * fs;
-    boxes.push({ i, soft, x0, x1: x0 + w, y0: base - 0.95 * fs, y1: base + 0.3 * fs });
+    boxes.push({
+      i,
+      soft,
+      x0,
+      x1: x0 + w,
+      y0: base - 0.95 * fs,
+      y1: base + 0.3 * fs,
+    });
   };
   els.forEach((el, i) => {
     if (el.k === "text" && el.s.trim()) {
       const [x, y] = P(el.p);
       const at = el.at ?? "c";
       const d = DIRS[at];
-      add(i, !!el.soft, x + d[0] * 12, y + d[1] * 12, el.s, anchorFor(at), baselineShift(at), el.small ? 17 : 21);
+      add(
+        i,
+        !!el.soft,
+        x + d[0] * 12,
+        y + d[1] * 12,
+        el.s,
+        anchorFor(at),
+        baselineShift(at),
+        el.small ? 17 : 21,
+      );
     } else if (el.k === "pt" && el.label) {
       const [x, y] = P(el.p);
       const at = el.at ?? "ne";
       const d = DIRS[at];
-      add(i, false, x + d[0] * 15, y + d[1] * 15, el.label, anchorFor(at), baselineShift(at), 21);
+      add(
+        i,
+        false,
+        x + d[0] * 15,
+        y + d[1] * 15,
+        el.label,
+        anchorFor(at),
+        baselineShift(at),
+        21,
+      );
     } else if (el.k === "dim") {
       const [x, y] = P(dimLabelPoint(el, scale));
       add(i, false, x, y, el.label, "middle", 0.35, 21);
@@ -524,29 +636,244 @@ function hiddenSoftLabels(els: El[], P: (p: V) => [number, number], scale: numbe
       let sweep = a2 - a1;
       while (sweep <= -Math.PI) sweep += 2 * Math.PI;
       while (sweep > Math.PI) sweep -= 2 * Math.PI;
-      if (el.reflex) sweep = sweep > 0 ? sweep - 2 * Math.PI : sweep + 2 * Math.PI;
+      if (el.reflex)
+        sweep = sweep > 0 ? sweep - 2 * Math.PI : sweep + 2 * Math.PI;
       const midA = a1 + sweep / 2;
       const lr = (el.r ?? 28) + 15 + (el.label.length > 4 ? 9 : 0);
-      add(i, false, ox + lr * Math.cos(midA), oy - lr * Math.sin(midA), el.label, "middle", 0.35, 21);
+      add(
+        i,
+        false,
+        ox + lr * Math.cos(midA),
+        oy - lr * Math.sin(midA),
+        el.label,
+        "middle",
+        0.35,
+        21,
+      );
     }
   });
   const hidden = new Set<number>();
   const hit = (a: Box, b: Box) =>
-    Math.min(a.x1, b.x1) - Math.max(a.x0, b.x0) > 0 && Math.min(a.y1, b.y1) - Math.max(a.y0, b.y0) > 0;
+    Math.min(a.x1, b.x1) - Math.max(a.x0, b.x0) > 0 &&
+    Math.min(a.y1, b.y1) - Math.max(a.y0, b.y0) > 0;
   const firm = boxes.filter((b) => !b.soft);
   const kept: Box[] = [];
   for (const b of boxes) {
     if (!b.soft) continue;
-    if (firm.some((f) => hit(b, f)) || kept.some((k) => hit(b, k))) hidden.add(b.i);
+    if (firm.some((f) => hit(b, f)) || kept.some((k) => hit(b, k)))
+      hidden.add(b.i);
     else kept.push(b);
   }
   return hidden;
 }
 
-function Render({ els, title, desc, onPick }: { els: El[]; title: string; desc: string; onPick?: (i: number) => void }) {
+/**
+ * A selectable figure label on a clean rounded capsule. The capsule is sized
+ * from the rendered text box (getBBox) so it follows the real font size, also
+ * the larger mobile size; before measuring it uses a glyph-count estimate.
+ */
+function PickLabel({
+  x,
+  y,
+  anchor,
+  dy,
+  tone,
+  className,
+  estimate,
+  size,
+  onPick,
+  plate,
+  children,
+}: {
+  x: number;
+  y: number;
+  anchor: "start" | "middle" | "end";
+  dy: number;
+  tone: string;
+  className: string;
+  estimate: number;
+  size: number;
+  onPick?: () => void;
+  plate?: boolean;
+  children: string;
+}) {
+  const ref = useRef<SVGTextElement>(null);
+  const x0 =
+    anchor === "end"
+      ? x - estimate
+      : anchor === "middle"
+        ? x - estimate / 2
+        : x;
+  const [box, setBox] = useState({
+    x: x0 - 6,
+    y: y + dy * size - 0.82 * size - 4,
+    w: estimate + 12,
+    h: size * 1.18 + 8,
+  });
+  useLayoutEffect(() => {
+    let live = true;
+    const measure = () => {
+      const t = ref.current;
+      if (!live || !t || typeof t.getBBox !== "function") return;
+      try {
+        const b = t.getBBox();
+        if (b.width > 0) {
+          // Sub- and superscript digits often come from a fallback font drawn
+          // outside the primary font's box: give the capsule room for them.
+          const sub = /[₀-₉₊₋]/.test(children) ? 0.28 * size : 0;
+          const sup = /[⁰-⁹⁺⁻¹²³]/.test(children) ? 0.12 * size : 0;
+          setBox({
+            x: b.x - 7,
+            y: b.y - 2 - sup,
+            w: b.width + 14,
+            h: b.height + 4 + sub + sup,
+          });
+        }
+      } catch {
+        /* Detached or unsupported: keep the estimate. */
+      }
+    };
+    measure();
+    // Web fonts and the mobile font size can change the box after first paint.
+    document.fonts?.ready.then(measure).catch(() => undefined);
+    const ro =
+      typeof ResizeObserver === "function"
+        ? new ResizeObserver(measure)
+        : undefined;
+    const svg = ref.current?.ownerSVGElement;
+    if (ro && svg) ro.observe(svg);
+    return () => {
+      live = false;
+      ro?.disconnect();
+    };
+  }, [children, x, y, className]);
+  return (
+    <g
+      className={`${tone} ${plate ? "sf-plate-group" : "sf-pick-group"}`}
+      onClick={onPick}
+    >
+      <rect
+        className={plate ? "sf-label-plate" : "sf-pick-pill"}
+        x={r2(box.x)}
+        y={r2(box.y)}
+        width={r2(box.w)}
+        height={r2(box.h)}
+        rx={r2(plate ? 5 : box.h / 2)}
+      />
+      <text
+        ref={ref}
+        x={x}
+        y={y}
+        textAnchor={anchor}
+        dy={`${dy}em`}
+        className={className}
+      >
+        {children}
+      </text>
+    </g>
+  );
+}
+
+/**
+ * Indices of plain text labels whose glyph core is crossed by a drawn line
+ * (segment, vector, axis, grid line or polygon edge). Those labels get a
+ * background plate; the text halo alone leaves dashes visible between glyphs.
+ */
+function lineCrossTest(els: El[], P: (p: V) => [number, number]) {
+  const segs: [number, number, number, number][] = [];
+  els.forEach((el) => {
+    if (el.k === "seg" || el.k === "vec" || el.k === "line" || el.k === "ray") {
+      let [a, b] = [el.a, el.b];
+      if (el.k === "line") [a, b] = extendPoints(el) as [V, V];
+      if (el.k === "ray") b = extendPoints(el)[1];
+      const [x1, y1] = P(a);
+      const [x2, y2] = P(b);
+      segs.push([x1, y1, x2, y2]);
+    } else if (el.k === "circle") {
+      const [cx, cy] = P(el.c);
+      const [ex] = P([el.c[0] + el.r, el.c[1]]);
+      const rr = Math.abs(ex - cx);
+      for (let k = 0; k < 32; k++) {
+        const t0 = (k / 32) * 2 * Math.PI;
+        const t1 = ((k + 1) / 32) * 2 * Math.PI;
+        segs.push([
+          cx + rr * Math.cos(t0),
+          cy + rr * Math.sin(t0),
+          cx + rr * Math.cos(t1),
+          cy + rr * Math.sin(t1),
+        ]);
+      }
+    } else if (el.k === "poly") {
+      const q = el.ps.map(P);
+      if (!el.open && q.length > 2) q.push(q[0]);
+      for (let i = 0; i + 1 < q.length; i++)
+        segs.push([q[i][0], q[i][1], q[i + 1][0], q[i + 1][1]]);
+    }
+  });
+  const crosses = (x0: number, y0: number, x1: number, y1: number) =>
+    segs.some(([ax, ay, bx, by]) => {
+      let t0 = 0;
+      let t1 = 1;
+      const dx = bx - ax;
+      const dy = by - ay;
+      const P4 = [-dx, dx, -dy, dy];
+      const Q4 = [ax - x0, x1 - ax, ay - y0, y1 - ay];
+      for (let k = 0; k < 4; k++) {
+        if (P4[k] === 0) {
+          if (Q4[k] < 0) return false;
+        } else {
+          const t = Q4[k] / P4[k];
+          if (P4[k] < 0) {
+            if (t > t1) return false;
+            if (t > t0) t0 = t;
+          } else {
+            if (t < t0) return false;
+            if (t < t1) t1 = t;
+          }
+        }
+      }
+      return true;
+    });
+  /** Does a drawn line pass through the glyph core of a label at (x, y)? */
+  return (
+    x: number,
+    y: number,
+    anchor: "start" | "middle" | "end",
+    shiftEm: number,
+    fs: number,
+    label: string,
+  ) => {
+    if (!segs.length || !label.trim()) return false;
+    const w = label.length * 0.58 * fs;
+    const x0 = anchor === "end" ? x - w : anchor === "middle" ? x - w / 2 : x;
+    const base = y + shiftEm * fs;
+    // Glyph core only: lines that merely graze the outer letters or the
+    // ascender area are fine with the halo.
+    return crosses(
+      x0 + w * 0.08,
+      base - 0.62 * fs,
+      x0 + w * 0.92,
+      base - 0.12 * fs,
+    );
+  };
+}
+
+function Render({
+  els,
+  title,
+  desc,
+  onPick,
+}: {
+  els: El[];
+  title: string;
+  desc: string;
+  onPick?: (i: number) => void;
+}) {
   const tid = useId();
   const { P, height, s: layoutScale } = layout(els);
   const hidden = hiddenSoftLabels(els, P, layoutScale);
+  const crossed = lineCrossTest(els, P);
+  const plates: ReactNode[] = [];
   const nodes = els.map((el, i) => {
     if (hidden.has(i)) return null;
     const cls = (tone: Tone | undefined, extra = "") =>
@@ -594,7 +921,13 @@ function Render({ els, title, desc, onPick }: { els: El[]; title: string; desc: 
           const cls2 = el.open
             ? `${cls(el.tone)} sf-stroke sf-nofill${el.dash ? " sf-dash" : ""}${el.thin ? " sf-thin" : ""}${el.bold ? " sf-bold" : ""}`
             : `${cls(el.tone)} sf-stroke${el.dash ? " sf-dash" : ""}${el.thin ? " sf-thin" : ""}${el.bold ? " sf-bold" : ""} ${el.fill ? `sf-fill-${el.fill}` : "sf-nofill"}${el.bare ? " sf-bare" : ""}`;
-          return <path key={i} d={smoothPath(el.ps.map(P), !el.open)} className={cls2} />;
+          return (
+            <path
+              key={i}
+              d={smoothPath(el.ps.map(P), !el.open)}
+              className={cls2}
+            />
+          );
         }
         if (el.open)
           return (
@@ -617,10 +950,27 @@ function Render({ els, title, desc, onPick }: { els: El[]; title: string; desc: 
         const rr = Math.abs(ex - cx);
         return (
           <g key={i}>
-            <ellipse cx={r2(cx + rr * 0.12)} cy={r2(cy + rr * 0.92)} rx={r2(rr * 0.8)} ry={r2(rr * 0.2)} className="sf-ball-shadow" />
-            <circle cx={r2(cx)} cy={r2(cy)} r={r2(rr)} fill={`url(#${tid}-ball-${el.tone})`} className={`${cls(el.tone)} sf-ball`} />
+            <ellipse
+              cx={r2(cx + rr * 0.12)}
+              cy={r2(cy + rr * 0.92)}
+              rx={r2(rr * 0.8)}
+              ry={r2(rr * 0.2)}
+              className="sf-ball-shadow"
+            />
+            <circle
+              cx={r2(cx)}
+              cy={r2(cy)}
+              r={r2(rr)}
+              fill={`url(#${tid}-ball-${el.tone})`}
+              className={`${cls(el.tone)} sf-ball`}
+            />
             {el.label && (
-              <text x={r2(cx)} y={r2(cy + rr * 0.32)} className="sf-ball-label" style={{ fontSize: `${Math.max(12, rr * 0.85).toFixed(0)}px` }}>
+              <text
+                x={r2(cx)}
+                y={r2(cy + rr * 0.32)}
+                className="sf-ball-label"
+                style={{ fontSize: `${Math.max(12, rr * 0.85).toFixed(0)}px` }}
+              >
                 {el.label}
               </text>
             )}
@@ -651,17 +1001,42 @@ function Render({ els, title, desc, onPick }: { els: El[]; title: string; desc: 
               r={4.5}
               className={el.hollow ? "sf-dot-hollow" : "sf-dot"}
             />
-            {el.label && (
-              <text
-                x={r2(x + d[0] * 15)}
-                y={r2(y + d[1] * 15)}
-                textAnchor={anchorFor(el.at ?? "ne")}
-                dy={`${baselineShift(el.at ?? "ne")}em`}
-                className="sf-label"
-              >
-                {el.label}
-              </text>
-            )}
+            {el.label &&
+              (crossed(
+                x + d[0] * 15,
+                y + d[1] * 15,
+                anchorFor(el.at ?? "ne"),
+                baselineShift(el.at ?? "ne"),
+                21,
+                el.label,
+              ) ? (
+                void plates.push(
+                  <PickLabel
+                    key={`plate-pt-${i}`}
+                    x={r2(x + d[0] * 15)}
+                    y={r2(y + d[1] * 15)}
+                    anchor={anchorFor(el.at ?? "ne")}
+                    dy={baselineShift(el.at ?? "ne")}
+                    tone=""
+                    className="sf-label"
+                    estimate={el.label.length * 0.58 * 21}
+                    size={21}
+                    plate
+                  >
+                    {el.label}
+                  </PickLabel>,
+                )
+              ) : (
+                <text
+                  x={r2(x + d[0] * 15)}
+                  y={r2(y + d[1] * 15)}
+                  textAnchor={anchorFor(el.at ?? "ne")}
+                  dy={`${baselineShift(el.at ?? "ne")}em`}
+                  className="sf-label"
+                >
+                  {el.label}
+                </text>
+              ))}
           </g>
         );
       }
@@ -675,7 +1050,8 @@ function Render({ els, title, desc, onPick }: { els: El[]; title: string; desc: 
         let sweep = a2 - a1;
         while (sweep <= -Math.PI) sweep += 2 * Math.PI;
         while (sweep > Math.PI) sweep -= 2 * Math.PI;
-        if (el.reflex) sweep = sweep > 0 ? sweep - 2 * Math.PI : sweep + 2 * Math.PI;
+        if (el.reflex)
+          sweep = sweep > 0 ? sweep - 2 * Math.PI : sweep + 2 * Math.PI;
         const r = el.r ?? 28;
         const midA = a1 + sweep / 2;
         const lr = r + 15 + (el.label && el.label.length > 4 ? 9 : 0);
@@ -688,19 +1064,40 @@ function Render({ els, title, desc, onPick }: { els: El[]; title: string; desc: 
               className={`sf-arc${el.fill ? " sf-arc-fill" : ""}`}
             />
             {el.double && (
-              <path d={arcPath(c, a1, sweep, r + 5, false)} className="sf-arc" />
+              <path
+                d={arcPath(c, a1, sweep, r + 5, false)}
+                className="sf-arc"
+              />
             )}
-            {el.label && (
-              <text
-                x={r2(lx)}
-                y={r2(ly)}
-                textAnchor="middle"
-                dy="0.35em"
-                className="sf-label sf-angle-label"
-              >
-                {el.label}
-              </text>
-            )}
+            {el.label &&
+              (crossed(lx, ly, "middle", 0.35, 21, el.label) ? (
+                void plates.push(
+                  <PickLabel
+                    key={`plate-angle-${i}`}
+                    x={r2(lx)}
+                    y={r2(ly)}
+                    anchor="middle"
+                    dy={0.35}
+                    tone={cls(el.tone ?? "a")}
+                    className="sf-label sf-angle-label"
+                    estimate={el.label.length * 0.58 * 21}
+                    size={21}
+                    plate
+                  >
+                    {el.label}
+                  </PickLabel>,
+                )
+              ) : (
+                <text
+                  x={r2(lx)}
+                  y={r2(ly)}
+                  textAnchor="middle"
+                  dy="0.35em"
+                  className="sf-label sf-angle-label"
+                >
+                  {el.label}
+                </text>
+              ))}
           </g>
         );
       }
@@ -760,6 +1157,23 @@ function Render({ els, title, desc, onPick }: { els: El[]; title: string; desc: 
       }
       case "dim": {
         const [x, y] = P(dimLabelPoint(el, layoutScale));
+        if (crossed(x, y, "middle", 0.35, 21, el.label))
+          return void plates.push(
+            <PickLabel
+              key={`plate-dim-${i}`}
+              x={r2(x)}
+              y={r2(y)}
+              anchor="middle"
+              dy={0.35}
+              tone={cls(el.tone)}
+              className={`${cls(el.tone)} sf-label sf-dim`}
+              estimate={el.label.length * 0.58 * 21}
+              size={21}
+              plate
+            >
+              {el.label}
+            </PickLabel>,
+          );
         return (
           <text
             key={i}
@@ -776,6 +1190,56 @@ function Render({ els, title, desc, onPick }: { els: El[]; title: string; desc: 
       case "text": {
         const [x, y] = P(el.p);
         const d = DIRS[el.at ?? "c"];
+        if (el.pick !== undefined && onPick) {
+          const pick = el.pick;
+          return (
+            <PickLabel
+              key={i}
+              x={r2(x + d[0] * 12)}
+              y={r2(y + d[1] * 12)}
+              anchor={anchorFor(el.at ?? "c")}
+              dy={baselineShift(el.at ?? "c")}
+              tone={cls(el.tone)}
+              className={`${cls(el.tone)} sf-label${el.small ? " sf-small" : ""}${el.bold ? " sf-strong" : ""} sf-pickable`}
+              estimate={el.s.length * 0.58 * (el.small ? 17 : 21)}
+              size={el.small ? 17 : 21}
+              onPick={() => onPick(pick)}
+            >
+              {el.s}
+            </PickLabel>
+          );
+        }
+        if (
+          el.pick === undefined &&
+          crossed(
+            x + d[0] * 12,
+            y + d[1] * 12,
+            anchorFor(el.at ?? "c"),
+            baselineShift(el.at ?? "c"),
+            el.small ? 17 : 21,
+            el.s,
+          )
+        ) {
+          // A drawn line passes through this label: draw it last, on a soft
+          // background plate, so no dash or edge shows between its glyphs.
+          plates.push(
+            <PickLabel
+              key={`plate-${i}`}
+              x={r2(x + d[0] * 12)}
+              y={r2(y + d[1] * 12)}
+              anchor={anchorFor(el.at ?? "c")}
+              dy={baselineShift(el.at ?? "c")}
+              tone={cls(el.tone)}
+              className={`${cls(el.tone)} sf-label${el.small ? " sf-small" : ""}${el.bold ? " sf-strong" : ""}`}
+              estimate={el.s.length * 0.58 * (el.small ? 17 : 21)}
+              size={el.small ? 17 : 21}
+              plate
+            >
+              {el.s}
+            </PickLabel>,
+          );
+          return null;
+        }
         return (
           <text
             key={i}
@@ -783,8 +1247,7 @@ function Render({ els, title, desc, onPick }: { els: El[]; title: string; desc: 
             y={r2(y + d[1] * 12)}
             textAnchor={anchorFor(el.at ?? "c")}
             dy={`${baselineShift(el.at ?? "c")}em`}
-            className={`${cls(el.tone)} sf-label${el.small ? " sf-small" : ""}${el.bold ? " sf-strong" : ""}${el.pick !== undefined && onPick ? " sf-pickable" : ""}`}
-            onClick={el.pick !== undefined && onPick ? () => onPick(el.pick!) : undefined}
+            className={`${cls(el.tone)} sf-label${el.small ? " sf-small" : ""}${el.bold ? " sf-strong" : ""}`}
           >
             {el.s}
           </text>
@@ -804,7 +1267,14 @@ function Render({ els, title, desc, onPick }: { els: El[]; title: string; desc: 
       {els.some((e) => e.k === "ball") && (
         <defs>
           {(["ink", "a", "b", "c", "muted", "warn"] as Tone[]).map((t) => (
-            <radialGradient key={t} id={`${tid}-ball-${t}`} cx="0.35" cy="0.3" r="0.75" className={`sf-${t}`}>
+            <radialGradient
+              key={t}
+              id={`${tid}-ball-${t}`}
+              cx="0.35"
+              cy="0.3"
+              r="0.75"
+              className={`sf-${t}`}
+            >
               <stop offset="0" className="sf-ball-hi" />
               <stop offset="0.5" className="sf-ball-mid" />
               <stop offset="1" className="sf-ball-lo" />
@@ -813,6 +1283,7 @@ function Render({ els, title, desc, onPick }: { els: El[]; title: string; desc: 
         </defs>
       )}
       {nodes}
+      {plates}
     </svg>
   );
 }
@@ -824,7 +1295,13 @@ function prefersReducedMotion() {
   );
 }
 
-export function SectionFigureView({ def, title }: { def: FigureDef; title: string }) {
+export function SectionFigureView({
+  def,
+  title,
+}: {
+  def: FigureDef;
+  title: string;
+}) {
   const id = useId();
   const [value, setValue] = useState(def.param?.init ?? 0);
   const [step, setStep] = useState(0);
@@ -876,9 +1353,18 @@ export function SectionFigureView({ def, title }: { def: FigureDef; title: strin
   }, [playing, p]);
   return (
     <figure className="section-figure" data-section-figure={title}>
-      <Render els={frame.els} title={`${title}: şekil`} desc={def.alt} onPick={def.picks ? togglePick : undefined} />
+      <Render
+        els={frame.els}
+        title={`${title}: şekil`}
+        desc={def.alt}
+        onPick={def.picks ? togglePick : undefined}
+      />
       {def.picks && def.picks.length > 0 && (
-        <div className="sf-picks" role="group" aria-label="Ayrıntısını açmak için bir öğe seç">
+        <div
+          className="sf-picks"
+          role="group"
+          aria-label="Ayrıntısını açmak için bir öğe seç"
+        >
           {def.picks.map((item, i) => (
             <button
               key={item.label + i}
@@ -903,7 +1389,11 @@ export function SectionFigureView({ def, title }: { def: FigureDef; title: strin
         </div>
       )}
       {frame.word && frame.word.length > 0 && (
-        <div className="sf-word" role="group" aria-label={`Sözcük yapısı: ${frame.word.map((w) => `${w.s} (${w.label})`).join(", ")}`}>
+        <div
+          className="sf-word"
+          role="group"
+          aria-label={`Sözcük yapısı: ${frame.word.map((w) => `${w.s} (${w.label})`).join(", ")}`}
+        >
           {frame.word.map((w, k) => (
             <span key={k} className={`sf-word-part sf-${w.tone}`}>
               <span className="sf-word-text">{w.s}</span>
@@ -919,7 +1409,9 @@ export function SectionFigureView({ def, title }: { def: FigureDef; title: strin
               <span>
                 {p.label}
                 <output htmlFor={`${id}-range`}>
-                  {p.plain ? String(Math.round(value)) : fmt(value, p.step < 1 ? 1 : 0)}
+                  {p.plain
+                    ? String(Math.round(value))
+                    : fmt(value, p.step < 1 ? 1 : 0)}
                   {p.unit ?? ""}
                 </output>
               </span>

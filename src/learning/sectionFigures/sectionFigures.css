@@ -214,12 +214,21 @@
 }
 
 /* Selectable items: a click on the drawn label or on the matching button opens its card. */
-.sf-label.sf-pickable {
-  cursor: pointer;
-  text-decoration: underline dotted;
-  text-underline-offset: 3px;
+/* Pickable labels sit on a clean measured capsule (see PickLabel): no dotted
+   underline, no glyph-shaped blobs; hover and the selected tone deepen it. */
+.sf-pick-group { cursor: pointer; }
+.sf-pick-pill {
+  fill: color-mix(in srgb, var(--sf, var(--text)) 13%, var(--bg));
+  stroke: color-mix(in srgb, var(--sf, var(--text)) 34%, var(--bg));
+  stroke-width: 1px;
 }
-.sf-label.sf-pickable:hover { text-decoration-style: solid; }
+.sf-pick-group:hover .sf-pick-pill { fill: color-mix(in srgb, var(--sf, var(--text)) 24%, var(--bg)); }
+.sf-label.sf-pickable { stroke: none; }
+.sf-label-plate {
+  fill: var(--bg);
+  fill-opacity: 0.94;
+  stroke: none;
+}
 .sf-picks {
   display: flex;
   flex-wrap: wrap;
