@@ -1903,6 +1903,19 @@ export const questionTactics: QuestionTactic[] = [
       "Ambalaj ve içerik ayrıdır (PET şişedeki yağ PET değildir; 2019 TYT Fen 14: PTFE kaplama malzemesidir). Katkının adı değil görevi sorulur: emülgatör dağılım, antioksidan oksitlenme, koruyucu mikrobiyal bozulma.",
     ],
   },
+  {
+    id: "sinirlayici-stok-tablosu",
+    guides: ["sinirlayici-bilesen"],
+    match: /sınırlayıcı|artan|hangisi artar|tamamen tükenir|eklenirse|ikinci kez|tam verimle/i,
+    title: "Sınırlayıcıda n ÷ katsayı karşılaştır; her eklemede stok tablosunu güncelle",
+    steps: [
+      "Her gireni mole çevir ve katsayısına böl; en küçük oran (ξ) biter. Küçük mol tek başına yetmez (1 mol N₂ + 2 mol H₂: 1 > 2/3 → H₂ biter).",
+      "Birimi denetle: 2017 LYS2 Kimya 6’da 22,4 g O₂ = 0,70 mol (litre değil); propan 0,05 < 0,14 biter, O₂ artığı 0,45 mol = 14,4 g (A).",
+      "Başlangıç − harcanan = son; ürün = katsayı × ξ. İkinci eklemede önceki artanlar yeni stoktur (3 H₂ + 2 O₂ → +2 H₂ → son H₂ 1, su 4 mol).",
+      "Aynı T, P’de gaz hacmi: 8 L CO + 6 L O₂ → 8 L CO₂ + 2 L O₂; artan gaz son hacme girer ama ürün değildir.",
+      "Başlangıç ürünü toplam ürüne eklenir, yeni oluşan ürünü değiştirmez; plato reaktif stokunu tersine verir. Kütle toplamı korunur.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
