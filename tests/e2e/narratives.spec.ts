@@ -43,7 +43,9 @@ async function open(page: Page, id: string) {
           ? ".nucleic-lab"
           : ".narrative-lab",
     ),
-  ).toBeVisible();
+    // The lab is a lazily loaded chunk served from the offline cache; a busy
+    // CI runner at 200% UI can need more than the default 5 s to mount it.
+  ).toBeVisible({ timeout: 15000 });
 }
 async function languageInteraction(page: Page, id: string) {
   if (id === "ses-bilgisi") {
