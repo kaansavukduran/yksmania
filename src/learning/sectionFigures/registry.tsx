@@ -81,6 +81,7 @@ import { chemistryFiguresModels } from "./chemistryFiguresModels";
 import { chemistryFiguresHbond } from "./chemistryFiguresHbond";
 import { physicsFiguresPhoto } from "./physicsFiguresPhoto";
 import { physicsFiguresProjectile } from "./physicsFiguresProjectile";
+import { physicsFiguresKepler } from "./physicsFiguresKepler";
 import { biologyFiguresSkin } from "./biologyFiguresSkin";
 import { geographyFiguresWater } from "./geographyFiguresWater";
 import { biologyFiguresAtp } from "./biologyFiguresAtp";
@@ -175,6 +176,7 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   chemistryFiguresHbond,
   physicsFiguresPhoto,
   physicsFiguresProjectile,
+  physicsFiguresKepler,
   biologyFiguresSkin,
   geographyFiguresWater,
   biologyFiguresAtp,

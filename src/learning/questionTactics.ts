@@ -1526,6 +1526,19 @@ export const questionTactics: QuestionTactic[] = [
       "Hareketli taşıyıcı/hedef: bırakılan cisim taşıyıcının yatay hızını korur; iki konumu işaretli yazıp eşitle (2025 AYT Fen 1: 21 m/s · 2 s = 42 m).",
     ],
   },
+  {
+    id: "kepler-odak-alan-periyot",
+    guides: ["kepler-yasalari"],
+    match: /Kepler|elips|odak|yörünge|periyot|alan|yarı eksen|açısal momentum|gezegen|uydu/i,
+    title: "Kepler’de yıldızı odağa koy, alanı zamana, periyodu a’ya bağla",
+    steps: [
+      "Elips: a = (rp + ra)/2, c = (ra − rp)/2, e = c/a, b = √(a² − c²). Yıldız merkezde değil odakta.",
+      "İkinci yasa: eşit sürede eşit alan (yay ya da açı değil); S/T = (taranan alan)/(πab).",
+      "Uç noktalarda hız r’ye dik: rp·vp = ra·va; ω = v/r, bu yüzden açısal hız oranı sürat oranının karesidir.",
+      "Üçüncü yasa aynı merkez kütlesinde: T ∝ a^(3/2); M değişirse √(M₁/M₂) çarpanını ekle. Anlık r’yi a sanma.",
+      "Korunanlar: yıldıza göre tork 0 ⇒ L sabit; E = K + U = −GMm/(2a) sabit, K ve U tek tek değişir (2025 AYT Fen 9: yalnız III).",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
