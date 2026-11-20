@@ -98,13 +98,15 @@ async function openFullHelp(
     i++
   ) {
     const next = container.locator(".help-next");
-    const previousLabel = await next.textContent();
+    const sections = container.locator(".help-content > section");
+    const previousCount = await sections.count();
     await next.click();
+    // Each help action opens one more panel (the hint, then the steps).
     await expect
       .poll(
         async () =>
           (await container.locator(".help-full-solution").isVisible()) ||
-          (await next.allTextContents()).join("") !== previousLabel,
+          (await sections.count()) > previousCount,
       )
       .toBe(true);
   }

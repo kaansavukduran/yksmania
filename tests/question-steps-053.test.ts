@@ -41,7 +41,13 @@ describe("053 ipucu ve adım adım çözüm", () => {
     expect(out).toContain("bağımsız doğru olarak sayılmaz");
   });
   it("ends with the distractor autopsy, the one-minute topic rule, a 30-second shortcut and a close-and-retry action", () => {
-    const out = html({ level: 6, steps: true, onSteps: () => {}, onHidden: () => {} });
+    const out = html({
+      level: 6,
+      steps: true,
+      onSteps: () => {},
+      onHidden: () => {},
+      similar: { kind: "ready", label: "Soru 2 / 5 (aynı ders seti)", onTry: () => {} },
+    });
     expect(out).toContain("Tam çözüm");
     expect(out).toContain("Çeldirici otopsisi");
     expect(out).toContain("30 saniyelik sınav kısayolu");
@@ -91,4 +97,97 @@ describe("053 ipucu ve adım adım çözüm", () => {
     find(tree)!.props.onClick();
     expect(onLevel).toHaveBeenCalledWith(6);
   });
+
+  it("keeps the hint and the step-by-step solution apart: the hint never shows steps or the key", () => {
+    const hint = html({ level: 1, onSteps: () => {} });
+    expect(hint).toContain('aria-label="İpucu"');
+    expect(hint).toContain("Bir sayının 3 katı 3x");
+    expect(hint).not.toContain("Cümleyi denkleme çevir");
+    expect(hint).not.toContain("3x + 5 = 20 yaz.");
+    expect(hint).not.toContain("Doğru yanıt");
+    expect(hint).not.toContain("Adım 1 /");
+    expect(hint).toContain('aria-expanded="false"');
+    // No second hint button walks into the solution.
+    expect(hint).not.toContain("Çözüm yolu aç");
+    expect(hint).not.toContain("Tam çözümü aç");
+  });
+  it("opening the step panel records help: from zero it opens step 1, after the hint step 2", () => {
+    const open = (level: number) => {
+      const onLevel = vi.fn();
+      const onSteps = vi.fn();
+      const tree = QuestionHelp({ question, level, onLevel, onSteps });
+      findButton(tree, "Adım adım çözüm")!.props.onClick();
+      return { onLevel, onSteps };
+    };
+    const first = open(0);
+    expect(first.onSteps).toHaveBeenCalledWith(true);
+    expect(first.onLevel).toHaveBeenCalledWith(1);
+    expect(open(1).onLevel).toHaveBeenCalledWith(2);
+    expect(open(4).onLevel).not.toHaveBeenCalled();
+  });
+  it("collapsing the step panel only hides it", () => {
+    const onLevel = vi.fn();
+    const onSteps = vi.fn();
+    const tree = QuestionHelp({ question, level: 3, steps: true, onLevel, onSteps });
+    findButton(tree, "Adım adım çözüm")!.props.onClick();
+    expect(onSteps).toHaveBeenCalledWith(false);
+    expect(onLevel).not.toHaveBeenCalled();
+  });
+  it("step 2 marks what is given and what is asked from the card's own stem", () => {
+    const out = html({ level: 2, steps: true, onSteps: () => {} });
+    expect(out).toContain('aria-label="Verilenler ve istenen"');
+    expect(out).toContain('<div class="help-given"><span class="help-tag">Verilen</span><span>Bir sayının <mark>3</mark> katının <mark>5</mark> fazlası <mark>20</mark> ise</span></div>');
+    expect(out).toContain('<div class="help-asked"><span class="help-tag">İstenen</span><span>sayı kaçtır?</span></div>');
+    expect(out).toContain('aria-live="polite"');
+    expect(out).toContain("Adım 2 / 6: Çözüm yolu");
+  });
+  it("a card without a guide says the steps are not ready and shows its existing explanation", () => {
+    const legacy: HelpQuestion = { ...question, id: "faz1-adim-eski", guidance: undefined, hint: "Denklemi kur." };
+    const closed = html({ question: legacy, level: 1, onSteps: () => {} });
+    expect(closed).toContain("Denklemi kur.");
+    expect(closed).toContain("Adım adım çözüm");
+    const onLevel = vi.fn();
+    findButton(QuestionHelp({ question: legacy, level: 1, onLevel, onSteps: () => {} }), "Adım adım çözüm")!.props.onClick();
+    expect(onLevel).toHaveBeenCalledWith(2);
+    const open = html({ question: legacy, level: 2, steps: true, onSteps: () => {}, onHidden: () => {} });
+    expect(open).toContain("Bu soruda adım adım çözüm henüz hazır değil");
+    expect(open).toContain("Doğru yanıt: C");
+    expect(open).toContain("3x + 5 = 20 → 3x = 15 → x = 5.");
+    expect(open).not.toContain("help-rail");
+  });
+  it("close-and-retry is honest about what it can open", () => {
+    const onHidden = vi.fn();
+    const onTry = vi.fn();
+    const ready = QuestionHelp({ question, level: 6, steps: true, onLevel: () => {}, onSteps: () => {}, onHidden, similar: { kind: "ready", label: "Soru 2 / 5", onTry } });
+    findButton(ready, "Çözümü kapat, benzerini bağımsız dene")!.props.onClick();
+    expect(onHidden).toHaveBeenCalledWith(true);
+    expect(onTry).toHaveBeenCalledTimes(1);
+    const none = html({ level: 6, steps: true, onSteps: () => {}, onHidden: () => {}, similar: { kind: "none", reason: "Bu ders setinde görülmemiş soru kalmadı." } });
+    expect(none).not.toContain("benzerini bağımsız dene");
+    expect(none).toContain(">Çözümü kapat</button>");
+    expect(none).toContain("Bu ders setinde görülmemiş soru kalmadı.");
+    const first = html({ level: 6, steps: true, hidden: true, onSteps: () => {}, onHidden: () => {}, similar: { kind: "answer-first", label: "Soru 2 / 5" } });
+    expect(first).toContain("Önce bu soruyu kendi yanıtınla kontrol et");
+    expect(first).not.toContain("Benzer soruyu yardımsız aç");
+    const after = html({ level: 6, steps: true, hidden: true, onSteps: () => {}, onHidden: () => {}, similar: { kind: "ready", label: "Soru 2 / 5", onTry } });
+    expect(after).toContain("Benzer soruyu yardımsız aç");
+    const exam = html({ level: 6, steps: true, onSteps: () => {}, onHidden: () => {} });
+    expect(exam).toContain(">Çözümü kapat</button>");
+    expect(exam).not.toContain("benzerini");
+  });
 });
+
+type Node = { type?: unknown; props?: { children?: unknown; onClick?: () => void } };
+function text(node: unknown): string {
+  if (node == null || typeof node === "boolean") return "";
+  if (typeof node === "string" || typeof node === "number") return String(node);
+  if (Array.isArray(node)) return node.map(text).join("");
+  return text((node as Node).props?.children);
+}
+function findButton(node: unknown, label: string): { props: { onClick: () => void } } | undefined {
+  if (!node || typeof node !== "object") return undefined;
+  if (Array.isArray(node)) return node.map((n) => findButton(n, label)).find(Boolean);
+  const el = node as Node;
+  if (el.type === "button" && text(el.props?.children).trim() === label) return el as never;
+  return findButton(el.props?.children, label);
+}

@@ -284,9 +284,9 @@ async function offlineReload(page: Page, context: BrowserContext) {
 
 async function expectFull(page: Page) {
   await expect(page.locator(".help-full-solution")).toBeVisible();
-  await expect(page.locator(".help-full-solution ol > li")).toHaveText(
-    rows[0].guidance.optionReasons.map(typeset),
-  );
+  await expect(
+    page.locator(".help-full-solution .help-autopsy-body > span:last-child"),
+  ).toHaveText(rows[0].guidance.optionReasons.map(typeset));
   await expect(page.locator(".help-full-solution ol > li")).toHaveCount(5);
   await expect(page.locator(".help-content h3")).toHaveText([
     "Bilmen gerekenler",
@@ -304,11 +304,12 @@ async function expectMethod(page: Page) {
     "Çözüm yolu",
   ]);
   await expect(
-    page.locator(".help-content > section").nth(1).locator("p"),
+    page.locator(".help-content > section").nth(1).locator(":scope > p"),
   ).toHaveText(typeset(rows[0].guidance.strategy));
   await expect(page.locator(".help-full-solution")).toHaveCount(0);
+  // The method is step 2 of the separate step-by-step panel.
   await expect(
-    page.getByRole("button", { name: "1. adım aç", exact: true }),
+    page.getByRole("button", { name: "Sonraki adım", exact: true }),
   ).toBeVisible();
 }
 
@@ -369,9 +370,10 @@ test("old hint1 opens its actual original-hint panel without becoming full or re
       .getByText(originalHint, { exact: true }),
   ).toBeVisible();
   await expect(page.locator(".help-full-solution")).toHaveCount(0);
+  // The hint never opens further steps itself; the step panel stays closed.
   await expect(
-    page.getByRole("button", { name: "Çözüm yolu aç", exact: true }),
-  ).toBeVisible();
+    page.getByRole("button", { name: "Adım adım çözüm", exact: true }),
+  ).toHaveAttribute("aria-expanded", "false");
   const mounted = await unchanged(page, fixture);
   await offlineReload(page, context);
   await expect(page.locator(".help-content h3")).toHaveText([
@@ -414,7 +416,7 @@ test("two fresh explicit study help clicks save count5 and level2 as method acro
     .toBe(5);
   expect((await stored(page)).draft!.helpLevel).toBe(1);
   await page
-    .getByRole("button", { name: "Çözüm yolu aç", exact: true })
+    .getByRole("button", { name: "Adım adım çözüm", exact: true })
     .click();
   await expectMethod(page);
   await expect.poll(async () => (await stored(page)).draft?.helpLevel).toBe(2);
@@ -487,7 +489,7 @@ test("fresh inline-guidance exam level2 remains method and its next explicit hel
   await seedAndMount(page, fixture, "/exams");
   await expectMethod(page);
   const mounted = await unchanged(page, fixture);
-  await page.getByRole("button", { name: "1. adım aç", exact: true }).click();
+  await page.getByRole("button", { name: "Sonraki adım", exact: true }).click();
   await expect(page.locator(".help-content h3")).toHaveText([
     "Bilmen gerekenler",
     "Çözüm yolu",
@@ -520,7 +522,7 @@ test("fresh inline-guidance exam level2 remains method and its next explicit hel
     "1. adım",
   ]);
   await expect(
-    page.locator(".help-content > section").nth(2).locator("p"),
+    page.locator(".help-content > section").nth(2).locator(":scope > p"),
   ).toHaveText(typeset(rows[0].guidance.steps[0]));
   await expect(page.locator(".help-full-solution")).toHaveCount(0);
   const reloaded = await unchanged(page, helped);

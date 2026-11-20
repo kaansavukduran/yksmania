@@ -920,9 +920,10 @@ test.describe("rational corrected feedback at 320 Matrix large text", () => {
         previous + 1,
       );
     }
-    const reasons = page.locator(".help-full-solution ol li");
+    // The step-by-step final shows each option with its reason (autopsy).
+    const reasons = page.locator(".help-full-solution .help-autopsy li");
     await expect(reasons).toHaveCount(5);
-    const selectedReason = reasons.nth(0);
+    const selectedReason = reasons.nth(0).locator(".help-autopsy-body > span").last();
     const corrected =
       "Üstteki grup 1−1/3=2/3, alttaki grup 1+1/2=3/2’dir; bölüm 4/9 olur. 1/3=3/9, bu iki grubun doğru bölümünü vermez.";
     await expect(selectedReason).toHaveText(corrected);
@@ -988,9 +989,9 @@ test.describe("rational corrected feedback at 320 Matrix large text", () => {
       useInnerText: true,
     });
     await expect(page.locator(".question-meta")).toContainText("12 / 48");
-    await expect(page.locator(".help-full-solution ol li").nth(0)).toHaveText(
-      corrected,
-    );
+    await expect(
+      page.locator(".help-full-solution .help-autopsy-body > span:last-child").nth(0),
+    ).toHaveText(corrected);
     expect((await stored(page)).draft).toEqual(checked.draft);
     expect((await stored(page)).sessions).toEqual(before.sessions);
     expect((await stored(page)).reviews).toEqual(before.reviews);

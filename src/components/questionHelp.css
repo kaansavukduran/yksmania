@@ -228,3 +228,156 @@
   margin: 0.2rem 0 0.5rem;
   padding-inline-start: 1.1rem;
 }
+
+/* Guided help: the hint area and the separate step-by-step panel. */
+.help-hint-area + .help-solution {
+  margin-top: 0.9rem;
+  padding-top: 0.6rem;
+  border-top: 1px dashed var(--border);
+}
+.help-solution > .help-steps-start {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 44px;
+  max-width: 100%;
+  margin: 0;
+  text-align: start;
+}
+.help-steps-chevron {
+  transition: transform 0.18s ease;
+}
+.help-steps-start[aria-expanded="true"] .help-steps-chevron {
+  transform: rotate(180deg);
+}
+.help-solution.is-open > .help-steps-start {
+  font-weight: 700;
+}
+.help-hint-moved {
+  margin: 0.3rem 0 0;
+}
+.help-step-actions button,
+.help-closed-actions button,
+.help-retry button,
+.help-legacy-open {
+  min-height: 44px;
+  max-width: 100%;
+}
+.help-closed-actions,
+.help-retry {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: center;
+}
+.help-retry {
+  margin-top: 0.8rem;
+}
+.help-retry p {
+  flex: 1 1 16rem;
+  margin: 0;
+}
+.help-not-ready {
+  padding: 0.55rem 0.75rem;
+  border: 1px dashed var(--border);
+  border-radius: 0.5rem;
+}
+.help-content [data-step-heading]:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 0.25rem;
+}
+.help-content [data-step-heading]:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Step 2: what the stem gives (solid, green) and what it asks (dashed, amber).
+   Each line also carries a word label, so colour is never the only cue. */
+.help-givens {
+  --help-given: var(--mint);
+  --help-asked: #d99a00;
+  display: grid;
+  gap: 0.4rem;
+  margin: 0.4rem 0 0.7rem;
+}
+.help-givens > div {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.55rem;
+  margin: 0;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.45rem;
+  line-height: 1.6;
+}
+.help-given {
+  border-inline-start: 4px solid var(--help-given);
+  background: color-mix(in srgb, var(--help-given) 14%, transparent);
+}
+.help-asked {
+  border: 2px dashed var(--help-asked);
+  background: color-mix(in srgb, var(--help-asked) 10%, transparent);
+}
+.help-tag {
+  flex: none;
+  padding: 0 0.45rem;
+  border-radius: 0.3rem;
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border: 1px solid currentColor;
+}
+.help-givens mark {
+  background: transparent;
+  color: inherit;
+  font-weight: 700;
+  text-decoration: underline 2px var(--help-given);
+  text-underline-offset: 3px;
+}
+.help-setup-figure {
+  margin: 0.4rem 0 0.7rem;
+}
+@media (prefers-reduced-motion: reduce) {
+  .help-steps-chevron { transition: none; }
+}
+@media (max-width: 420px) {
+  .help-step-actions { gap: 0.5rem; }
+  .help-step-actions button { flex: 1 1 100%; }
+}
+
+/* Narrow screens with large type: give whole words the full line width.
+   Indents shrink and the option letter sits above its reason, so no word
+   in the final has to break mid-word. */
+@media (max-width: 560px) {
+  .question-help.is-stepping .help-step.is-current {
+    padding-inline-start: 0.4rem;
+    border-inline-start-width: 2px;
+  }
+  .question-help.is-stepping .help-full-solution.is-current {
+    padding-inline-start: 0;
+    border-inline-start: 0;
+  }
+  .help-autopsy li {
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.4rem 0.45rem;
+  }
+  .help-route {
+    padding: 0.5rem 0 0.5rem 0.45rem;
+    border-inline-start-width: 2px;
+  }
+  .help-route ul {
+    padding-inline-start: 0;
+    list-style: none;
+  }
+  .help-route li + li {
+    border-top: 1px dashed var(--border);
+    padding-top: 0.35rem;
+  }
+  .question-help .hint-box {
+    padding-inline-start: 0.35rem;
+  }
+  .help-givens > div {
+    padding: 0.35rem 0.4rem;
+  }
+}

@@ -230,7 +230,7 @@ for (const [subject, lessonId] of cases) {
     await page.locator(".help-next").click();
     const full = page.locator(".help-full-solution");
     await expect(full).toBeVisible();
-    await expect(full.locator("li")).toHaveText(help.optionReasons.map(typeset));
+    await expect(full.locator(".help-autopsy-body > span:last-child")).toHaveText(help.optionReasons.map(typeset));
     await expect(full).toContainText(typeset(help.commonError));
     await expect(full).toContainText(typeset(help.check));
     await expect(full).toContainText(question.explanation.tr);
@@ -253,7 +253,7 @@ for (const [subject, lessonId] of cases) {
     await offlineReady(page);
     await context.setOffline(true);
     await page.reload();
-    await expect(page.locator(".help-full-solution li")).toHaveText(
+    await expect(page.locator(".help-full-solution .help-autopsy-body > span:last-child")).toHaveText(
       help.optionReasons.map(typeset),
     );
     await expect(
@@ -531,7 +531,7 @@ for (const target of guardedCases) {
     }
     const full = page.locator(".help-full-solution");
     await expect(full).toBeVisible();
-    await expect(full.locator("li")).toHaveText(help.optionReasons.map(typeset));
+    await expect(full.locator(".help-autopsy-body > span:last-child")).toHaveText(help.optionReasons.map(typeset));
     await expect(full).toContainText(target.explanation);
     await expect(full).toContainText(typeset(help.commonError));
     await expect(full).toContainText(typeset(help.check));
@@ -600,7 +600,7 @@ for (const target of guardedCases) {
     await expect(page.locator(".answer.answer-wrong")).toHaveCount(
       targetCorrect ? 0 : 1,
     );
-    await expect(page.locator(".help-full-solution li")).toHaveText(
+    await expect(page.locator(".help-full-solution .help-autopsy-body > span:last-child")).toHaveText(
       help.optionReasons.map(typeset),
     );
     await expect(page.locator(".help-full-solution")).toContainText(

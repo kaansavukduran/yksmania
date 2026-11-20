@@ -183,9 +183,10 @@ async function full026Solution(
     `Doğru yanıt: ${String.fromCharCode(65 + question.answer)} · ${question.options[question.answer].tr}`,
   );
   await expect(full.locator(":scope > p").nth(1)).toHaveText(typeset(question.explanation.tr));
-  await expect(full.locator('ol[type="A"] > li')).toHaveText(
-    guidance.optionReasons.map(typeset),
-  );
+  // The step-by-step final lists each option with its reason (autopsy).
+  await expect(
+    full.locator(".help-autopsy-body > span:last-child"),
+  ).toHaveText(guidance.optionReasons.map(typeset));
   await expect(full.locator(":scope > p").nth(2)).toHaveText(
     typeset(guidance.commonError),
   );
@@ -294,26 +295,28 @@ for (const { lesson, question, guidance } of cases) {
     await no026FullAnswer(page);
     await stage026Saved(page, 1, panelCount);
 
+    // The steps live in the separate "Adım adım çözüm" panel; opening it
+    // after the hint opens step 2 (the method).
     await page
-      .getByRole("button", { name: "Çözüm yolu aç", exact: true })
+      .getByRole("button", { name: "Adım adım çözüm", exact: true })
       .click();
     panels = page.locator(".help-content > section");
     await expect(panels).toHaveCount(2);
     await expect(panels.nth(1).locator("h3")).toHaveText("Çözüm yolu");
-    await expect(panels.nth(1).locator("p")).toHaveText(typeset(guidance.strategy));
+    await expect(panels.nth(1).locator(":scope > p")).toHaveText(typeset(guidance.strategy));
     await no026FullAnswer(page);
     await stage026Saved(page, 2, panelCount);
 
     for (const [index, step] of guidance.steps.map(typeset).entries()) {
       await page
-        .getByRole("button", { name: `${index + 1}. adım aç`, exact: true })
+        .getByRole("button", { name: "Sonraki adım", exact: true })
         .click();
       panels = page.locator(".help-content > section");
       await expect(panels).toHaveCount(index + 3);
       await expect(panels.nth(index + 2).locator("h3")).toHaveText(
         `${index + 1}. adım`,
       );
-      await expect(panels.nth(index + 2).locator("p")).toHaveText(step);
+      await expect(panels.nth(index + 2).locator(":scope > p")).toHaveText(step);
       if (index + 1 < guidance.steps.length)
         await expect(
           page.getByRole("heading", {
@@ -325,7 +328,7 @@ for (const { lesson, question, guidance } of cases) {
       await stage026Saved(page, index + 3, panelCount);
     }
     await page
-      .getByRole("button", { name: "Tam çözümü aç", exact: true })
+      .getByRole("button", { name: "Son adım: tam çözüm", exact: true })
       .click();
     await full026Solution(page, question, guidance);
     await stage026Saved(page, fullLevel, panelCount);

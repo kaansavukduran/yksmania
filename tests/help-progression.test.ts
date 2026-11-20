@@ -45,6 +45,7 @@ const fixture = vi.hoisted(() => {
       | { question: HelpQuestion; level: number; onLevel: (n: number) => void },
     tree: undefined as ReactNode,
     toasts: [] as string[],
+    pure: undefined as unknown as (props: never) => ReactNode,
   };
 });
 vi.mock("../src/learning/questionHelpCatalogue.json", async (original) => {
@@ -151,6 +152,7 @@ vi.mock("../src/store", () => {
 vi.mock("../src/components/QuestionHelp", async (original) => {
   const actual =
     await original<typeof import("../src/components/QuestionHelp")>();
+  fixture.pure = actual.QuestionHelp as never;
   return {
     QuestionHelp: (props: Parameters<typeof actual.QuestionHelp>[0]) => {
       fixture.help = props;
@@ -183,10 +185,13 @@ import {
   examAssistance,
 } from "../src/domain/exams";
 import { Study } from "../src/pages/Study";
+import { independentCorrect } from "../src/domain/scheduler";
+import { evaluateTrophies } from "../src/domain/achievements";
 import { Exams } from "../src/pages/Exams";
 import { validateState } from "../src/domain/storage";
 
 const panels = () => helpPanels(fixture.question);
+const QuestionHelpPure = (props: never) => fixture.pure(props);
 const deepFreeze = <T>(value: T): T => {
   if (value && typeof value === "object") {
     Object.values(value).forEach(deepFreeze);
@@ -625,5 +630,67 @@ describe("gerçek Study ve Exam yardım render/callback sınırı", () => {
     renderExam();
     expect(fixture.help!.level).toBe(6);
     expect(fixture.writes).toBe(0);
+  });
+});
+
+describe("Adım adım çözüm açıldığı anda yardımlı sayılır", () => {
+  const studyHelp = () =>
+    fixture.help as unknown as {
+      question: HelpQuestion;
+      level: number;
+      onLevel: (n: number) => void;
+      similar?: { kind: string; label?: string; onTry?: () => void };
+    };
+  const press = (label: string) => {
+    const tree = QuestionHelpPure({ ...studyHelp(), steps: false, onSteps: () => {} } as never);
+    const button = nodes(tree).find((n) => n.type === "button" && words(n.props.children).trim() === label);
+    expect(button, label).toBeDefined();
+    button!.props.onClick!();
+  };
+  const check = () =>
+    nodes(fixture.tree).find((n) => n.type === "button" && words(n.props.children) === "check")!.props.onClick!();
+  it("açmak yanıtı yardımlı yapar; XP/kupa/bağımsız doğru sayımına girmez; benzer soru yardımsız başlar", async () => {
+    fixture.state.draft = studyDraft({ hint: false, helpLevel: 0, selected: null });
+    renderStudy();
+    expect(studyHelp().similar).toMatchObject({ kind: "answer-first", label: "Soru 2 / 2 (aynı ders seti)" });
+    press("Adım adım çözüm");
+    await Promise.resolve();
+    expect(fixture.state.draft).toMatchObject({ hint: true, helpLevel: 1 });
+    fixture.state.draft = { ...fixture.state.draft!, selected: fixture.question.answer };
+    renderStudy();
+    check();
+    const first = fixture.state.draft!.responses[0];
+    expect(first).toMatchObject({ correct: true, assisted: true });
+    // An assisted correct answer is never independent: no XP, trophy or mastery credit.
+    const session = {
+      id: "s",
+      lessonId: "help-progression-lesson",
+      date: "2026-11-16",
+      finishedAt: "2026-11-16T10:00:00.000Z",
+      responses: [first],
+      kind: "learn" as const,
+      includesTheory: false,
+      minutes: 1,
+      note: "",
+    };
+    expect(independentCorrect(session as never)).toBe(0);
+    const trophies = evaluateTrophies({ ...initialState(), sessions: [session as never] }, () => "tyt-matematik");
+    expect((trophies.find((t) => t.id === "soru-canavari") as { value?: number } | undefined)?.value ?? 0).toBe(0);
+    // Close the solution and try the unseen next item alone.
+    renderStudy();
+    const similar = studyHelp().similar!;
+    expect(similar.kind).toBe("ready");
+    similar.onTry!();
+    await Promise.resolve();
+    expect(fixture.state.draft).toMatchObject({ index: 1, hint: false, helpLevel: 0, checked: false, selected: null });
+    expect(fixture.state.draft!.responses[0]).toEqual(first);
+    renderStudy();
+    expect(studyHelp().level).toBe(0);
+    expect(studyHelp().similar).toMatchObject({ kind: "none" });
+    fixture.state.draft = { ...fixture.state.draft!, selected: fixture.question.answer };
+    renderStudy();
+    check();
+    expect(fixture.state.draft!.responses[1]).toMatchObject({ correct: true, assisted: false });
+    expect(fixture.state.draft!.responses[0]).toMatchObject({ assisted: true });
   });
 });

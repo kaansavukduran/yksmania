@@ -59,14 +59,11 @@ async function check(page: Page, answer: number, last = false) {
     })
     .click();
 }
+// The hint shows only its first panel; the steps live in the separate
+// "Adım adım çözüm" panel (opening it after the hint opens step 2).
 async function openSteps(page: Page) {
-  for (const title of [
-    "Çözüm yolu aç",
-    "1. adım aç",
-    "2. adım aç",
-    "Tam çözümü aç",
-  ])
-    await page.getByRole("button", { name: title, exact: true }).click();
+  await page.getByRole("button", { name: "Adım adım çözüm", exact: true }).click();
+  await page.getByRole("button", { name: "Tüm adımları aç", exact: true }).click();
   await expect(
     page.getByRole("region", { name: "Tam çözüm", exact: true }),
   ).toBeVisible();
@@ -122,10 +119,13 @@ test("staged question guidance persists offline, records the actual assistance l
   await expect(
     page.getByRole("region", { name: "Tam çözüm", exact: true }),
   ).toHaveCount(0);
+  await expect(
+    page.getByRole("button", { name: "Çözüm yolu aç", exact: true }),
+  ).toHaveCount(0);
   await page
-    .getByRole("button", { name: "Çözüm yolu aç", exact: true })
+    .getByRole("button", { name: "Adım adım çözüm", exact: true })
     .click();
-  await page.getByRole("button", { name: "1. adım aç", exact: true }).click();
+  await page.getByRole("button", { name: "Sonraki adım", exact: true }).click();
   await expect(page.locator(".help-content")).toContainText("3/6");
   await expect(page.locator(".help-content h3")).toHaveCount(3);
   await saved(page);
@@ -140,9 +140,9 @@ test("staged question guidance persists offline, records the actual assistance l
   await expect(
     page.getByRole("textbox", { name: "Notun", exact: true }),
   ).toHaveValue("Payda aynı kalır; ÇĞİÖŞÜ.");
-  await page.getByRole("button", { name: "2. adım aç", exact: true }).click();
+  await page.getByRole("button", { name: "Sonraki adım", exact: true }).click();
   await page
-    .getByRole("button", { name: "Tam çözümü aç", exact: true })
+    .getByRole("button", { name: "Son adım: tam çözüm", exact: true })
     .click();
   await expect(page.locator(".help-full-solution")).toContainText(
     "Doğru yanıt: C",

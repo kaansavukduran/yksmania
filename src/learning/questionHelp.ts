@@ -131,3 +131,35 @@ export function helpPanels(question: HelpQuestion) {
     })),
   ];
 }
+
+/**
+ * Splits a stem into what it gives and what it asks, for the "verilenler ve
+ * yöntem" step. Display only and derived from the card's own wording: a
+ * sentence with a question mark (or the last sentence) is what is asked; the
+ * sentences before it are given. A one-sentence stem is split at its last
+ * condition word ("ise", "olduğuna göre", "olduğunda") when it has one.
+ * Nothing is invented: the returned lines are exact slices of the prompt.
+ */
+export function givenAndAsked(prompt: string): { given: string[]; asked: string[] } {
+  const text = prompt.trim();
+  if (!text) return { given: [], asked: [] };
+  const sentences = text
+    .split(/(?<=[.!?…:])\s+(?=["“(]?[A-ZÇĞİÖŞÜ0-9])/)
+    .map((s) => s.trim())
+    .filter(Boolean);
+  let askedAt = sentences.findIndex((s) => s.includes("?"));
+  if (askedAt < 0) askedAt = sentences.length - 1;
+  const given = sentences.slice(0, askedAt);
+  const asked = sentences.slice(askedAt);
+  if (given.length === 0 && asked.length === 1) {
+    const one = asked[0];
+    const cut = [...one.matchAll(/\b(ise|olduğuna göre|olduğunda)(,?)\s/g)].at(-1);
+    if (cut && cut.index !== undefined) {
+      const end = cut.index + cut[1].length + cut[2].length;
+      const head = one.slice(0, end).trim();
+      const tail = one.slice(end).trim();
+      if (head && tail) return { given: [head], asked: [tail] };
+    }
+  }
+  return { given, asked };
+}

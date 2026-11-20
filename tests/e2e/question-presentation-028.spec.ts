@@ -686,7 +686,7 @@ test("eq-2: three real options, five explicit panels then full6, canonical marke
     );
     if (level === 2)
       await expect(
-        page.locator(".help-content > section").nth(1).locator("p"),
+        page.locator(".help-content > section").nth(1).locator(":scope > p"),
       ).toHaveText(typeset(eqGuidance.strategy));
     const current = await stored(page);
     expect(current.draft).toMatchObject({
@@ -700,9 +700,9 @@ test("eq-2: three real options, five explicit panels then full6, canonical marke
     });
     expect({ ...current, draft: before.draft }).toEqual(before);
   }
-  await expect(page.locator(".help-full-solution > ol > li")).toHaveText(
-    eqGuidance.optionReasons.map(typeset),
-  );
+  await expect(
+    page.locator(".help-full-solution .help-autopsy-body > span:last-child"),
+  ).toHaveText(eqGuidance.optionReasons.map(typeset));
   await expect(page.locator(".help-full-solution > ol > li")).toHaveCount(3);
   await expect(page.locator(".help-full-solution > p").first()).toHaveText(
     "Doğru yanıt: C · 2",
@@ -720,9 +720,9 @@ test("eq-2: three real options, five explicit panels then full6, canonical marke
   await context.setOffline(true);
   await page.reload();
   await visibleCard(page.locator(".question-panel"), card, ".answer");
-  await expect(page.locator(".help-full-solution > ol > li")).toHaveText(
-    eqGuidance.optionReasons.map(typeset),
-  );
+  await expect(
+    page.locator(".help-full-solution .help-autopsy-body > span:last-child"),
+  ).toHaveText(eqGuidance.optionReasons.map(typeset));
   await expect(page.locator(".help-next")).toHaveCount(0);
   expect(await stored(page)).toEqual(full);
   expect(await writes(page)).toBe(0);

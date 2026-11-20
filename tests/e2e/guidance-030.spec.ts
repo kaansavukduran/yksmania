@@ -349,7 +349,7 @@ for (const [subject, lessonId] of cases) {
     await page.locator(".help-next").click();
     const full = page.locator(".help-full-solution");
     await expect(full).toBeVisible();
-    await expect(full.locator("li")).toHaveText(help.optionReasons.map(typeset));
+    await expect(full.locator(".help-autopsy-body > span:last-child")).toHaveText(help.optionReasons.map(typeset));
     await expect(full).toContainText(typeset(help.commonError));
     await expect(full).toContainText(typeset(help.check));
     await expect(full).toContainText(shownExplanation(question));
@@ -374,7 +374,7 @@ for (const [subject, lessonId] of cases) {
     await offlineReady(page);
     await context.setOffline(true);
     await page.reload();
-    await expect(page.locator(".help-full-solution li")).toHaveText(
+    await expect(page.locator(".help-full-solution .help-autopsy-body > span:last-child")).toHaveText(
       help.optionReasons.map(typeset),
     );
     await expect(
@@ -636,7 +636,7 @@ for (const target of guardedCases) {
     }
     const full = page.locator(".help-full-solution");
     await expect(full).toBeVisible();
-    await expect(full.locator("li")).toHaveText(help.optionReasons.map(typeset));
+    await expect(full.locator(".help-autopsy-body > span:last-child")).toHaveText(help.optionReasons.map(typeset));
     await expect(full).toContainText(target.explanation);
     await expect(full).toContainText(typeset(help.commonError));
     await expect(full).toContainText(typeset(help.check));
@@ -705,7 +705,7 @@ for (const target of guardedCases) {
     await expect(page.locator(".answer.answer-wrong")).toHaveCount(
       targetCorrect ? 0 : 1,
     );
-    await expect(page.locator(".help-full-solution li")).toHaveText(
+    await expect(page.locator(".help-full-solution .help-autopsy-body > span:last-child")).toHaveText(
       help.optionReasons.map(typeset),
     );
     await expect(page.locator(".help-full-solution")).toContainText(
@@ -1222,12 +1222,12 @@ test.describe("030 mobile full staged question help", () => {
         await expect(page.locator(".help-full-solution")).toHaveCount(0);
     }
     const full = page.locator(".help-full-solution");
-    await expect(full.locator("li")).toHaveText(help.optionReasons.map(typeset));
+    await expect(full.locator(".help-autopsy-body > span:last-child")).toHaveText(help.optionReasons.map(typeset));
     await expect(full).toContainText(question.explanation.tr);
     await expect(full).toContainText(typeset(help.commonError));
     await expect(full).toContainText(typeset(help.check));
     for (const paragraph of [...help.knowledge, help.strategy, ...help.steps].map(typeset))
-      await expect(page.locator(".help-content")).toContainText(paragraph);
+      await expect(page.locator(".help-content")).toContainText(typeset(paragraph));
     await expect(page.locator(".help-next")).toHaveCount(0);
     const helped = await stored(page);
     expect({ ...helped, draft: before.draft }).toEqual(before);
@@ -1246,7 +1246,7 @@ test.describe("030 mobile full staged question help", () => {
       page,
       page.locator(".question-panel"),
       true,
-      full.locator("li").first(),
+      full.locator(".help-autopsy-body > span:last-child").first(),
       "38.25px",
     );
     const placement = await page.locator(".practice-note").evaluate((el) => ({
@@ -1256,7 +1256,7 @@ test.describe("030 mobile full staged question help", () => {
         .getBoundingClientRect().bottom,
     }));
     expect(placement.top).toBeGreaterThanOrEqual(placement.panelBottom - 1);
-    await full.locator("li").nth(3).scrollIntoViewIfNeeded();
+    await full.locator(".help-autopsy-body > span:last-child").nth(3).scrollIntoViewIfNeeded();
     await info.attach("phone-full-help-formula-viewport.png", {
       body: await page.screenshot(),
       contentType: "image/png",
@@ -1266,7 +1266,7 @@ test.describe("030 mobile full staged question help", () => {
     await context.setOffline(true);
     await page.reload();
     await expect(page.locator(".question-panel h2")).toHaveText(typeset(question.prompt.tr));
-    await expect(page.locator(".help-full-solution li")).toHaveText(
+    await expect(page.locator(".help-full-solution .help-autopsy-body > span:last-child")).toHaveText(
       help.optionReasons.map(typeset),
     );
     await expect(
@@ -1279,7 +1279,7 @@ test.describe("030 mobile full staged question help", () => {
       page,
       page.locator(".question-panel"),
       true,
-      page.locator(".help-full-solution li").first(),
+      page.locator(".help-full-solution .help-autopsy-body > span:last-child").first(),
       "38.25px",
     );
     await page

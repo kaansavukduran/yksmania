@@ -4,14 +4,15 @@ import { Eraser, PencilLine, Trash2, Undo2 } from "lucide-react";
 /*
  * Offline scratch paper for working a question by hand (figures, sums,
  * diagrams). Mouse, pen and touch draw; nothing is saved or scored. Closing
- * the panel only hides it, so the drawing stays until the question changes
- * (the parent keys this component by question).
+ * the panel only hides it, so the drawing stays in the hidden canvas until
+ * the question changes: a new `questionKey` clears it here, even when the
+ * parent reuses this component instead of keying it per question.
  */
 const UNDO_LIMIT = 20;
 const WIDTHS = { ince: 2, kalın: 5 } as const;
 type Width = keyof typeof WIDTHS;
 
-export function Scratchpad() {
+export function Scratchpad({ questionKey }: { questionKey?: string | number } = {}) {
   const [open, setOpen] = useState(false);
   const [eraser, setEraser] = useState(false);
   const [width, setWidth] = useState<Width>("ince");
@@ -20,6 +21,24 @@ export function Scratchpad() {
   const last = useRef<{ x: number; y: number } | null>(null);
   const ink = useRef("#000");
   const history = useRef<ImageData[]>([]);
+  const drawnFor = useRef(questionKey);
+
+  // Another question: wipe the sheet and its undo history.
+  useEffect(() => {
+    if (drawnFor.current === questionKey) return;
+    drawnFor.current = questionKey;
+    const c = canvas.current;
+    const ctx = c?.getContext("2d");
+    if (c && ctx) {
+      ctx.save();
+      ctx.setTransform(1, 0, 0, 1, 0, 0);
+      ctx.clearRect(0, 0, c.width, c.height);
+      ctx.restore();
+    }
+    history.current = [];
+    setUndoCount(0);
+    last.current = null;
+  }, [questionKey]);
 
   useEffect(() => {
     if (!open) return;

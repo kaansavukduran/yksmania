@@ -17,7 +17,7 @@ import { Aion } from "../components/Aion";
 import { PastExamQuestions } from "../components/PastExamQuestions";
 import { lessonTopic } from "../domain/studyPlan";
 import { StudyTimer } from "../components/StudyTimer";
-import { GuidedQuestionHelp } from "../components/QuestionHelp";
+import { GuidedQuestionHelp, type SimilarOffer } from "../components/QuestionHelp";
 import { helpPanels, previousHelpPanelCount } from "../learning/questionHelp";
 import { effectiveHelpLevel } from "../learning/helpProgression";
 import { SourceQuestionFigure } from "../learning/SourceQuestionFigure";
@@ -166,6 +166,26 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
       setBusy(false);
     }
   };
+  // "Benzerini bağımsız dene": the next item of this set has not been seen in
+  // this session (items are taken in order and each is answered once). It
+  // opens through the regular next() step, so the session record, its order
+  // and the Today counts stay exactly as before. This item keeps its own
+  // (assisted) answer, which is why it must be answered first.
+  const following = lesson.questions[draft.index + 1];
+  const similar: SimilarOffer = !following
+    ? {
+        kind: "none",
+        reason:
+          "Bu ders setinde bu oturumda görülmemiş soru kalmadı; benzerini sonraki tekrarında yardımsız dene.",
+      }
+    : (() => {
+        const label = `Soru ${draft.index + 2} / ${lesson.questions.length} (aynı ders seti${
+          following.skill && following.skill === lesson.questions[draft.index].skill ? ", aynı alt beceri" : ""
+        })`;
+        return draft.checked
+          ? { kind: "ready", label, onTry: () => void next() }
+          : { kind: "answer-first", label };
+      })();
   async function openHelp(level: number) {
     if (busy || !draft || !lesson) return;
     setBusy(true);
@@ -248,7 +268,7 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
           {sourcePresentation?.figure && (
             <SourceQuestionFigure figure={sourcePresentation.figure} />
           )}
-          <Scratchpad key={`scratch-${draft.index}`} />
+          <Scratchpad key={`scratch-${draft.index}`} questionKey={`${draft.lessonId}-${draft.index}`} />
           <AnswerOptions
               questionKey={`${draft.lessonId}-${draft.index}`}
             key={`options-${draft.index}`}
@@ -292,6 +312,7 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
             onLevel={(level) => void openHelp(level)}
             disabled={busy}
             reviewed={draft.checked}
+            similar={similar}
           />
           {draft.checked && (
             <div

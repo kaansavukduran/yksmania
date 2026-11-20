@@ -4,12 +4,16 @@ import { decodeRings } from "./decodeRings";
 import { LAND_DETAIL_RINGS, LAND_DETAIL_SCALE } from "./landDetailData";
 import type { Place, PlaceKind } from "./gazetteer";
 import "./geo.css";
+import "./placeMap.css";
 
 /*
  * "Where did it happen?" maps for a theory page: a world map with the region
  * outlined, and a regional close-up with numbered markers. Coastlines are real
  * (Natural Earth); names stay in the legend under the maps so no label covers
- * the drawing. Looking at the map records nothing.
+ * the drawing. Choosing a pin (click, Enter or Space) opens a short summary
+ * card under the maps, highlights the pin and zooms in a little; Escape or
+ * "Kapat" closes it and restores the previous view. With reduced motion the
+ * zoom jumps instead of gliding. Looking at the map records nothing.
  */
 
 const KIND_TONE: Record<PlaceKind, string> = {
@@ -179,6 +183,12 @@ export function PlaceMap({ places }: { places: Place[] }) {
   };
   const viewRef = useRef(view);
   viewRef.current = view;
+  const frame = useRef(0);
+  /** The view before the automatic focus zoom, restored when the card closes. */
+  const beforeFocus = useRef<View | null>(null);
+  /** The pin or legend entry that opened the card; focus returns there. */
+  const trigger = useRef<HTMLElement | null>(null);
+  useEffect(() => () => cancelAnimationFrame(frame.current), []);
   useEffect(() => {
     const el = svgRef.current;
     if (!el) return;
@@ -201,7 +211,45 @@ export function PlaceMap({ places }: { places: Place[] }) {
   const names = places.map((p) => p.label).join(", ");
   const scale = W / view.w;
   const zoomPct = Math.round(scale * 100);
-  const choose = (i: number) => setSelected((cur) => (cur === i ? null : i));
+  const reduced = () => typeof window !== "undefined" && window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+  // Glide the regional viewBox to a target; jump when motion is reduced.
+  const animateTo = (target: View) => {
+    cancelAnimationFrame(frame.current);
+    if (reduced() || typeof requestAnimationFrame === "undefined") {
+      setView(target);
+      return;
+    }
+    const from = viewRef.current;
+    const start = performance.now();
+    const step = (now: number) => {
+      const t = Math.min(1, (now - start) / 280);
+      const e = 1 - (1 - t) ** 3;
+      setView({ x: from.x + (target.x - from.x) * e, y: from.y + (target.y - from.y) * e, w: from.w + (target.w - from.w) * e, h: from.h + (target.h - from.h) * e });
+      if (t < 1) frame.current = requestAnimationFrame(step);
+    };
+    frame.current = requestAnimationFrame(step);
+  };
+  const closeFocus = () => {
+    setSelected(null);
+    if (beforeFocus.current) animateTo(beforeFocus.current);
+    beforeFocus.current = null;
+    trigger.current?.focus();
+  };
+  const choose = (i: number) => {
+    if (selected === i) {
+      closeFocus();
+      return;
+    }
+    trigger.current = document.activeElement instanceof HTMLElement || document.activeElement instanceof SVGElement ? (document.activeElement as HTMLElement) : null;
+    setSelected(i);
+    // A light zoom on the chosen place, only from the overview.
+    if (viewRef.current.w >= W - 0.01 || beforeFocus.current) {
+      beforeFocus.current ??= viewRef.current;
+      const [fx, fy] = rxy(places[i].lon, places[i].lat);
+      const w = W / 1.6;
+      animateTo(clampView({ x: fx - w / 2, y: fy - (w * H) / W / 2, w, h: (w * H) / W }));
+    }
+  };
   const zoomToFocus = () => {
     if (!focus) return;
     const [fx, fy] = rxy(focus.lon, focus.lat);
@@ -209,7 +257,16 @@ export function PlaceMap({ places }: { places: Place[] }) {
     setView(clampView({ x: fx - w / 2, y: fy - (w * H) / W / 2, w, h: (w * H) / W }));
   };
   return (
-    <figure className="place-map">
+    <figure
+      className="place-map"
+      onKeyDown={(e) => {
+        if (e.key === "Escape" && selected !== null) {
+          e.preventDefault();
+          e.stopPropagation();
+          closeFocus();
+        }
+      }}
+    >
       <figcaption className="place-map-title">Haritada nerede?</figcaption>
       <div className="place-map-pair">
         <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Dünya haritasında konum: ${names}`}>
@@ -229,6 +286,7 @@ export function PlaceMap({ places }: { places: Place[] }) {
           onPointerDown={(e) => {
             if ((e.target as Element).closest(".place-pin-group")) return;
             drag.current = { px: e.clientX, py: e.clientY, view, id: e.pointerId };
+            beforeFocus.current = null;
             e.currentTarget.setPointerCapture(e.pointerId);
           }}
           onPointerMove={(e) => {
@@ -298,15 +356,20 @@ export function PlaceMap({ places }: { places: Place[] }) {
         <button type="button" className="secondary" disabled={!focus} onClick={zoomToFocus}>
           Seçili yere yakınlaştır
         </button>
-        <button type="button" className="secondary" disabled={selected === null && view.w >= W - 0.01} onClick={() => { setSelected(null); setView(full); }}>
+        <button type="button" className="secondary" disabled={selected === null && view.w >= W - 0.01} onClick={() => { setSelected(null); beforeFocus.current = null; animateTo(full); }}>
           Sıfırla
         </button>
       </div>
       {focus && (
         <div className={`place-focus-card place-${KIND_TONE[focus.kind]}`} role="status" aria-live="polite">
-          <strong>
-            {(selected ?? 0) + 1}. {focus.label}
-          </strong>
+          <div className="place-focus-head">
+            <strong>
+              {(selected ?? 0) + 1}. {focus.label}
+            </strong>
+            <button type="button" className="secondary place-focus-close" onClick={closeFocus} aria-label={`${focus.label} özetini kapat`}>
+              Kapat
+            </button>
+          </div>
           <span>
             {KIND_LABEL[focus.kind]} · {fmtCoord(focus.lat, "K", "G")}, {fmtCoord(focus.lon, "D", "B")}
             {focus.approx ? " · konum yaklaşık" : ""}
