@@ -5,6 +5,7 @@ const messages: Record<string, string> = {
   skipToContent: "İçeriğe geç",
   pdfText: "Sayfanın metni",
   today: "Bugün",
+  foundations: "Temel İnşa",
   courses: "Konu Anlatımı",
   calendar: "Takvim",
   mistakes: "Yanlışlarım",

@@ -1,0 +1,277 @@
+/* Temel İnşa (0. basamak) ön dersleri. Tema renkleri değişkenlerden gelir. */
+.foundation-subjects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+.foundation-subjects button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 2.75rem;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  background: var(--surface);
+  color: var(--text);
+}
+.foundation-subjects button.active {
+  border-color: var(--accent);
+  background: var(--surface-2);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+.foundation-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+.foundation-card {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.9rem;
+  align-items: start;
+}
+.foundation-card h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1.1em;
+}
+.foundation-card p {
+  margin: 0.25rem 0;
+}
+.foundation-step {
+  display: grid;
+  place-items: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  font-weight: 700;
+}
+.foundation-prepares {
+  color: var(--guidance);
+}
+.foundation-empty p,
+.foundation-note {
+  margin: 0;
+}
+.foundation-reader {
+  max-width: 52rem;
+  margin: 0 auto;
+}
+.foundation-head {
+  outline: none;
+  scroll-margin-top: 1rem;
+}
+.foundation-head h1 {
+  margin: 0.2rem 0 0.4rem;
+}
+.foundation-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: grid;
+  gap: 0.45rem;
+  padding: 0.55rem 0;
+  background: var(--bg);
+}
+.foundation-modes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.foundation-modes button {
+  min-height: 2.5rem;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--surface);
+  color: var(--muted);
+}
+.foundation-modes button.active {
+  color: var(--text);
+  background: var(--surface-2);
+  border-color: var(--accent);
+}
+.foundation-progress {
+  height: 0.35rem;
+  border-radius: 1rem;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+.foundation-progress span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  transition: width 0.2s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .foundation-progress span {
+    transition: none;
+  }
+}
+.foundation-dots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.5rem 0 0.8rem;
+}
+.foundation-dots button {
+  width: 2rem;
+  height: 0.9rem;
+  min-height: 0;
+  padding: 0;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+.foundation-dots button.seen {
+  background: var(--surface-2);
+}
+.foundation-dots button.active {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.foundation-section {
+  margin-bottom: 1rem;
+}
+.foundation-section h2 {
+  margin-top: 0;
+}
+.foundation-predict {
+  border-left: 4px solid var(--guidance);
+  padding: 0.5rem 0.8rem;
+  margin: 0 0 0.9rem;
+  background: var(--surface-2);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.foundation-predict p {
+  margin: 0.2rem 0 0.5rem;
+}
+.foundation-answer {
+  font-weight: 600;
+}
+.foundation-terms {
+  display: grid;
+  gap: 0.4rem;
+  margin: 0.8rem 0;
+}
+.foundation-terms div {
+  display: grid;
+  grid-template-columns: minmax(6rem, 10rem) 1fr;
+  gap: 0.6rem;
+}
+.foundation-terms dt {
+  font-weight: 700;
+}
+.foundation-terms dd {
+  margin: 0;
+}
+.foundation-example {
+  border-top: 1px solid var(--border);
+  padding-top: 0.8rem;
+  margin-top: 0.8rem;
+}
+.foundation-example h3 {
+  margin: 0 0 0.3rem;
+  font-size: 1em;
+}
+.foundation-given {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+.foundation-check {
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  padding: 0.7rem 0.9rem;
+  margin: 0.8rem 0;
+}
+.foundation-check legend {
+  font-weight: 700;
+  padding: 0 0.3rem;
+}
+.foundation-options {
+  display: grid;
+  gap: 0.4rem;
+}
+.foundation-options button {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 2.75rem;
+  text-align: left;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--surface);
+  color: var(--text);
+}
+.foundation-options button:disabled {
+  cursor: default;
+  opacity: 1;
+}
+.foundation-options button.correct {
+  border-color: var(--mint);
+  box-shadow: inset 0 0 0 2px var(--mint);
+}
+.foundation-options button.wrong {
+  border-color: var(--danger);
+  box-shadow: inset 0 0 0 2px var(--danger);
+}
+.foundation-letter {
+  display: grid;
+  place-items: center;
+  flex: 0 0 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  background: var(--surface-2);
+  font-weight: 700;
+}
+.foundation-feedback {
+  margin-top: 0.6rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.5rem;
+  background: var(--surface-2);
+}
+.foundation-feedback p {
+  margin: 0.2rem 0;
+}
+.foundation-feedback.ok {
+  border-left: 4px solid var(--mint);
+}
+.foundation-feedback.no {
+  border-left: 4px solid var(--danger);
+}
+.foundation-pager {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  margin: 1rem 0;
+}
+.foundation-pager > span {
+  flex: 1 1 10rem;
+  text-align: center;
+}
+.foundation-foot {
+  margin-top: 1.5rem;
+}
+@media (max-width: 640px) {
+  .foundation-card {
+    grid-template-columns: auto 1fr;
+  }
+  .foundation-card > button {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+  .foundation-terms div {
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
+  }
+}
+.foundation-section.panel {
+  padding: clamp(0.85rem, 3vw, 1.4rem);
+}

@@ -1,4 +1,39 @@
-# Forge046a — seçim çipleri, iki yeni tema, sade savaş şemaları (çalışma dalı, CI bekliyor)
+# Forge051 — Temel İnşa (0. basamak) ve tek kaynaklı konu sayısı
+
+20 Kasım 2026. Sahibin birleşik sürekli Forge direktifi (tüm geçmiş talimatlar, AGENTS.md ve AIONIA/ART/QA belgeleri korunarak) bu turla başladı. Sıra: birikmiş FORGE.md + 505/504 senkronu → Temel İnşa → kupa/ses/hata merkezi → laboratuvarlar → PDF dalgası; kilometre taşında 0.25.0.
+
+- **505/504 tek kaynak:** Ana ekran “505 hazır konu anlatımı” yanında “x / 504 konu çalışıldı” gösteriyordu. Kök neden: `alan-donusumleri` (“Üçgen ve paralelkenarda alan”) anlatımı hiçbir plan konusuna bağlı değildi. `src/data/supplementalTopics041.ts` ek konuyu mevcut kopya kâğıdı anahtarıyla (`lesson:alan-donusumleri`) bağlar; kayıtlı notlar çözülmeye devam eder, 479 çalışma kitabı kimliği ve sırası değişmez. `tests/topic-count-sync-041.test.ts` her anlatımın tam bir plan konusuna bağlı olduğunu ve iki toplamın eşit kaldığını korur. Plan toplamı beklentileri (birim, tarayıcı, masaüstü smoke) 505'e alındı.
+- **Temel İnşa (0. basamak) katmanı:** Kenar çubuğunda Bugün ile Konu Anlatımı arasında yeni “Temel İnşa” bölümü (`src/pages/Foundations.tsx`, `src/learning/foundations/`). İsteğe bağlıdır; ders listesine, 505 konuluk plana, XP'ye, kupaya ve 3/7/21 takvimine girmez. Her ön ders: sayfa sayfa (1/N) ↔ tümünü gör geçişi (tercih cihazda), yapışkan okuma ilerleme çubuğu ve sayfa noktaları, “önce tahmin et” kutusu, terim sözlüğü, mevcut figür kitiyle dokunulabilir şekil, adım adım açılan çözümlü örnekler ve “Özgün alıştırma · ÖSYM sorusu değildir” etiketli 5 seçenekli kontroller (yanlış seçeneğin nereden geldiği açıklanır; cevaplar kaydedilmez). Henüz ön dersi olmayan dersler “hazırlanıyor” görünür ve öğrenciden kaynak istenmez.
+- **TYT Matematik ön dersleri (7 ders, 15 figür, 15 çözümlü örnek, 26 kontrol):** dört işlem ve işlem önceliği; negatif sayılar ve işaret kuralları (sayı doğrusu yürüyüşü); kesirlerle dört işlem ve sadeleştirme (kesir şeridi, ortak payda, alan modeli, “kaç tane sığar”); ondalık sayılar (100'lük ızgara, virgül kaydırma); üslü ve köklü sayılara giriş (ikiye katlanma deseni, kare alanı); harfli ifade ve terazi denklemi; alan modeliyle çarpanlara ayırma.
+- **Doğrulama:** check; 233 dosya / 2.963 birim testi; build; tarayıcı: Temel İnşa 2/2 (çevrimdışı yeniden yükleme, 320 px + büyük yazı, axe), plan/bugün/rehber 19/19, öğrenme derinliği/uygulama/kum saati 38/38, uygulama + ayarlar 36/36. Figür yazı çakışma denetimi 1100 ve 320 px'te, bütün kaydırıcı/adım/seçim durumlarında 0 bulgu (9/9 figür örnekli tarama + 15/15 birim çizim taraması).
+- **Öz denetim:** (a) sıfır ön bilgi: her terim ilk geçtiği sayfada tanımlı, yöntem adı yerine işlem sözle yazılı; (b) şekiller tema değişkenleriyle çizilir, 320 px'te yatay kaydırma yok; (c) akış: tek tıkla ön ders, sayfa noktalarıyla atlama; (d) kod: tip denetimi ve testler yeşil. Açık: diğer dokuz dersin ön dersleri, “Sayfa sayfa” modunun 505 konu anlatımına taşınması.
+
+### İlerleme tablosu (20 Kasım, Forge051)
+
+PDF paydası 17 Kasım kanonik envanteridir: **94 / 8.981 (%1,05)**. Ders bazında PDF paydası envanterde ayrı tutulmadığı için ders satırları kopya kâğıdı paydasını kullanır (517 kopya kâğıdı); 8.445 sayısı kullanılmaz (bkz. `docs/FORGE_MASTER_PLAN.md`).
+
+| Ders | Kopya kâğıdı işlenen / toplam | Hazır konu / uygulama dersi | Görsel/interaktif lab (figürlü ders · figür) | Kalan açık (figürsüz ders) |
+| --- | ---: | ---: | ---: | ---: |
+| TYT Türkçe | 4 / 33 (%12,12) | 33 / 34 | 4 · 15 | 30 |
+| TYT Matematik | 5 / 38 (%13,16) | 40 / 45 | 17 · 45 | 28 |
+| TYT Geometri | 1 / 32 (%3,13) | 19 / 19 | 19 · 174 | 0 |
+| TYT Fizik | 7 / 24 (%29,17) | 24 / 28 | 24 · 177 | 4 |
+| TYT Kimya | 13 / 56 (%23,21) | 55 / 57 | 16 · 59 | 41 |
+| TYT Biyoloji | 7 / 36 (%19,44) | 36 / 45 | 12 · 37 | 33 |
+| TYT Tarih | 4 / 24 (%16,67) | 24 / 34 | 6 · 16 | 28 |
+| TYT Coğrafya | 5 / 40 (%12,50) | 40 / 40 | 8 · 17 | 32 |
+| TYT Felsefe | 3 / 17 (%17,65) | 17 / 17 | 3 · 7 | 14 |
+| TYT Din | 3 / 20 (%15,00) | 20 / 20 | 4 · 9 | 16 |
+| AYT Matematik | 2 / 17 (%11,76) | 17 / 18 | 13 · 19 | 5 |
+| AYT Geometri | 1 / 4 (%25,00) | 4 / 4 | 4 · 51 | 0 |
+| AYT Fizik | 7 / 46 (%15,22) | 46 / 47 | 11 · 26 | 36 |
+| AYT Kimya | 11 / 55 (%20,00) | 55 / 56 | 18 · 19 | 38 |
+| AYT Biyoloji | 11 / 75 (%14,67) | 75 / 76 | 16 · 39 | 60 |
+| Temel İnşa (0. basamak) | — | 7 ön ders (yalnız TYT Matematik) | 7 · 15 | 9 ders ön derssiz |
+| **Toplam** | **84 / 517 (%16,25)** | **505 / 540** | **182 · 725** | **365** |
+| **Genel PDF** | **94 / 8.981 · %1,05** | | | |
+
+## Forge046a — seçim çipleri, iki yeni tema, sade savaş şemaları
 
 19 Kasım 2026. Kullanıcı düzeltmeleri:
 

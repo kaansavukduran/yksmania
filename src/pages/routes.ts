@@ -7,6 +7,7 @@
  */
 export { Today } from "./Today";
 export { Courses } from "./Courses";
+export { Foundations } from "./Foundations";
 export { Cheatsheets } from "./Cheatsheets";
 export { Calendar } from "./Calendar";
 export { Mistakes } from "./Mistakes";

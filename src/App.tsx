@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { APP_VERSION } from "./version";
 import {
   BookOpen,
+  Blocks,
   Files,
   ClipboardCheck,
   ListChecks,
@@ -27,6 +28,7 @@ import {
   Cheatsheets,
   Courses,
   Exams,
+  Foundations,
   Mistakes,
   Result,
   Settings,
@@ -40,6 +42,7 @@ import { useConfirmationDialog } from "./components/ConfirmationDialog";
 import type { Lesson, ReviewStage } from "./domain/model";
 const routes = [
   { route: "/today", key: "today", Icon: Home },
+  { route: "/foundations", key: "foundations", Icon: Blocks },
   { route: "/courses", key: "courses", Icon: BookOpen },
   { route: "/cheatsheets", key: "cheatsheets", Icon: Files },
   { route: "/questions", key: "questions", Icon: ListChecks },
@@ -390,6 +393,8 @@ export default function App() {
               }}
               navigate={navigate}
             />
+          ) : path === "/foundations" ? (
+            <Foundations key={route} route={route} navigate={navigate} />
           ) : path === "/courses" ? (
             <Courses
               start={(l) => {
