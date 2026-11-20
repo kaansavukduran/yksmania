@@ -60,14 +60,17 @@ test("Temel İnşa opens from the sidebar, pages one by one, checks explain wron
   await expect(page.locator(".hero-progress-chip")).toContainText("0 / 505 konu çalışıldı");
 });
 
-test("Temel İnşa lists unprepared subjects honestly and stays readable at 320 px with large text", async ({ page }) => {
+test("Temel İnşa covers every TYT subject and stays readable at 320 px with large text", async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 800 });
   await page.goto("/#/foundations");
   await page.evaluate(() => document.documentElement.style.setProperty("--text-scale", "1.5"));
   const subjects = page.getByRole("group", { name: "Ders seç" });
   await expect(subjects.getByRole("button", { name: /Matematik.*7 ön ders/ })).toHaveAttribute("aria-pressed", "true");
-  await subjects.getByRole("button", { name: /Türkçe.*hazırlanıyor/ }).click();
-  await expect(page.locator(".foundation-empty")).toContainText("senden kaynak istenmez");
+  for (const [name, n] of [["Türkçe", 2], ["Geometri", 3], ["Fizik", 4], ["Kimya", 3], ["Biyoloji", 2], ["Tarih", 1], ["Coğrafya", 1], ["Felsefe", 1], ["Din Kültürü", 1]] as const) {
+    await subjects.getByRole("button", { name: new RegExp(`${name}.*${n} ön ders`) }).click();
+    await expect(page.locator(".foundation-card")).toHaveCount(n);
+  }
+  await expect(page.locator(".foundation-empty")).toHaveCount(0);
   await subjects.getByRole("button", { name: /Matematik/ }).click();
   await expect(page.locator(".foundation-card")).toHaveCount(7);
   await page.goto("/#/foundations?id=temel-mat-negatif-sayilar");
