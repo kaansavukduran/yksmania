@@ -1,17 +1,17 @@
 import type { QuestionGuidance } from "../../domain/questionHelpModel";
-import ayt_biyoloji from "./ayt-biyoloji.json";
-import ayt_fizik from "./ayt-fizik.json";
-import ayt_kimya from "./ayt-kimya.json";
-import ayt_matematik from "./ayt-matematik.json";
-import tyt_biyoloji from "./tyt-biyoloji.json";
-import tyt_cografya from "./tyt-cografya.json";
-import tyt_felsefe from "./tyt-felsefe.json";
-import tyt_fizik from "./tyt-fizik.json";
-import tyt_geometri from "./tyt-geometri.json";
-import tyt_kimya from "./tyt-kimya.json";
-import tyt_matematik from "./tyt-matematik.json";
-import tyt_tarih from "./tyt-tarih.json";
-import tyt_turkce from "./tyt-turkce.json";
+import ayt_biyoloji from "./ayt-biyoloji.json" with { type: "json" };
+import ayt_fizik from "./ayt-fizik.json" with { type: "json" };
+import ayt_kimya from "./ayt-kimya.json" with { type: "json" };
+import ayt_matematik from "./ayt-matematik.json" with { type: "json" };
+import tyt_biyoloji from "./tyt-biyoloji.json" with { type: "json" };
+import tyt_cografya from "./tyt-cografya.json" with { type: "json" };
+import tyt_felsefe from "./tyt-felsefe.json" with { type: "json" };
+import tyt_fizik from "./tyt-fizik.json" with { type: "json" };
+import tyt_geometri from "./tyt-geometri.json" with { type: "json" };
+import tyt_kimya from "./tyt-kimya.json" with { type: "json" };
+import tyt_matematik from "./tyt-matematik.json" with { type: "json" };
+import tyt_tarih from "./tyt-tarih.json" with { type: "json" };
+import tyt_turkce from "./tyt-turkce.json" with { type: "json" };
 
 /*
  * Forge053+ step-by-step guides for cards that used to open one hint and then

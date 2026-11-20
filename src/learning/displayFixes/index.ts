@@ -1,5 +1,5 @@
-import ayt_biyoloji from "./ayt-biyoloji.json";
-import ayt_kimya from "./ayt-kimya.json";
+import ayt_biyoloji from "./ayt-biyoloji.json" with { type: "json" };
+import ayt_kimya from "./ayt-kimya.json" with { type: "json" };
 
 /*
  * Display-only repairs for card text. Older content generations left glued

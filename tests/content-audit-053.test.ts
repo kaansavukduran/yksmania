@@ -33,7 +33,7 @@ const cards = lessons.flatMap((lesson) =>
 const DEPENDENT = /\b(önceki soru(da|ya|nun)?|bir önceki soru|yukarıdaki (parça|metin|tablo|grafik|şekil|paragraf)|aşağıdaki (parça|metin|paragraf)(?:da|ya)? göre)/i;
 // Ratchet: legacy cards still waiting for per-option reasons. Lower it as
 // cards are upgraded; it must never rise.
-const MAX_WITHOUT_REASONS = 490;
+const MAX_WITHOUT_REASONS = 0;
 
 describe("053 içerik denetimi", () => {
   it("every card has a valid key, distinct options and an explanation", () => {
