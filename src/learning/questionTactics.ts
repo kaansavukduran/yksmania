@@ -1565,6 +1565,19 @@ export const questionTactics: QuestionTactic[] = [
       "Kapı/menteşe: zıt momentleri eşitle (2026 AYT Fen 4: 0,40·F = 1,20·5 ⇒ F = 15 N). Birim N·m, joule değil.",
     ],
   },
+  {
+    id: "milli-mucadele-kurum-cephe-belge",
+    guides: ["milli-mucadele"],
+    match: /Millî Mücadele|Kurtuluş|Amasya|Erzurum|Sivas|Misak|TBMM|Sevr|İnönü|Sakarya|Büyük Taarruz|Dumlupınar|Mudanya|Lozan|Kuvay|cephe|Heyet-i Temsiliye/i,
+    title: "Millî Mücadele’de kurumu, coğrafyayı, belge türünü ve kronolojiyi birlikte eşle",
+    steps: [
+      "Kurum: İstanbul Hükûmeti, Son Osmanlı Mebusan Meclisi, Heyet-i Temsiliye ve TBMM ayrı aktörlerdir (Misak-ı Millî’yi Mebusan Meclisi kabul etti).",
+      "Kongre: Erzurum toplanışı bölgesel, kararları millî; Sivas cemiyetleri birleştirdi; Amasya Genelgesi yöntemi ilan etti.",
+      "Cephe: Doğu düzenli birlikler → Gümrü; Güney yerel direniş → Ankara Antlaşması; Batı düzenli ordu → Mudanya.",
+      "Askerî sonuç: Sakarya savunma (1921), Büyük Taarruz kesin taarruz (Afyon–Dumlupınar, 26–30 Ağustos 1922; 2025 AYT Tarih-1 33).",
+      "Belge türü: Mudanya ateşkes, Lozan kesin barış; Sevr imzalandı ama TBMM tanımadı, uygulanmadı.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
