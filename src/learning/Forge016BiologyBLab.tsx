@@ -473,13 +473,14 @@ export default function Forge016BiologyBLab({
                 </text>
               </g>
             ))}
-            <text x={505} y={99}>
+            {/* Layer names end inside the skin block, clear of its right edge. */}
+            <text x={555} y={99} textAnchor="end">
               Epidermis
             </text>
-            <text x={500} y={190}>
+            <text x={555} y={190} textAnchor="end">
               Dermis
             </text>
-            <text x={490} y={360}>
+            <text x={555} y={340} textAnchor="end">
               Deri altı
             </text>
           </svg>

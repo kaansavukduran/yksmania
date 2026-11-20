@@ -279,12 +279,14 @@ function Structure({
               data-hydrogens={h}
               className={`c023-atom${i === focus ? " c023-focus" : ""}${highlights.includes(i) ? " c023-marked" : ""}`}
             >
-              <circle cx={a.x} cy={a.y} r="24" />
+              {/* The ring fits its label: CH₃ and CH₂ need a wider circle. */}
+              <circle cx={a.x} cy={a.y} r={label.length > 2 ? 29 : 24} />
               <text
                 x={a.x}
                 y={a.y}
                 textAnchor="middle"
                 dominantBaseline="central"
+                style={label.length > 2 ? { fontSize: 18 } : undefined}
               >
                 {label}
               </text>

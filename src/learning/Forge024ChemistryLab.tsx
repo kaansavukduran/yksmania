@@ -143,11 +143,16 @@ function Molecule024View({
     ys = molecule.atoms.map((a) => a.y),
     minX = Math.min(...xs),
     minY = Math.min(...ys),
-    width = Math.max(250, (Math.max(...xs) - minX) * 0.7 + 64),
-    height = Math.max(160, (Math.max(...ys) - minY) * 0.7 + 64),
+    spanW = (Math.max(...xs) - minX) * 0.95 + 64,
+    spanH = (Math.max(...ys) - minY) * 0.95 + 64,
+    width = Math.max(250, spanW),
+    height = Math.max(160, spanH),
+    // A small molecule is centred in the minimum canvas, not left in a corner.
+    offX = (width - spanW) / 2,
+    offY = (height - spanH) / 2,
     pos = (id: string) => {
       const a = molecule.atoms.find((a) => a.id === id)!;
-      return { x: (a.x - minX) * 0.7 + 32, y: (a.y - minY) * 0.7 + 32 };
+      return { x: (a.x - minX) * 0.95 + 32 + offX, y: (a.y - minY) * 0.95 + 32 + offY };
     };
   const atomLabel = (id: string) => {
     const a = molecule.atoms.find((a) => a.id === id)!;
@@ -201,8 +206,8 @@ function Molecule024View({
               className={selected === a.id ? "c024-selected" : ""}
               onClick={() => onSelect(a.id)}
             >
-              <circle cx={p.x} cy={p.y} r="14" />
-              <text x={p.x} y={p.y + 7} textAnchor="middle">
+              <circle cx={p.x} cy={p.y} r="15" />
+              <text x={p.x} y={p.y + 6} textAnchor="middle">
                 {atomLabel(a.id)}
               </text>
             </g>

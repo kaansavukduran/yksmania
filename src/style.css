@@ -5131,3 +5131,21 @@ progress::-moz-progress-bar {
 .zero-start h2 { font-size: 1.05rem; margin: 0 0 0.35rem; }
 .zero-start p { margin: 0; color: var(--muted); max-width: 46rem; font-size: 0.9em; }
 .zero-start button { display: inline-flex; align-items: center; gap: 0.4rem; }
+
+/* Universal lab label standard: every text in an interactive lab keeps a
+   halo in the panel colour, so a ray, bond or grid line passing behind it
+   never cuts through the glyphs. Labels that sit inside a filled marker
+   (map pins) keep their own look. */
+.visual-lab svg text,
+[class*="-lab"] svg text,
+.concept-model svg text,
+.nucleic-builder svg text,
+[class*="-model-pair"] svg text {
+  paint-order: stroke fill;
+  stroke: var(--surface);
+  stroke-width: 4px;
+  stroke-linejoin: round;
+}
+.place-pin-text {
+  stroke: none;
+}

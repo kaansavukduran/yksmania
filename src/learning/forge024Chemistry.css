@@ -105,7 +105,7 @@
 }
 .c024-molecule svg text {
   fill: var(--text);
-  font-size: 22px;
+  font-size: 17px;
   font-weight: 650;
 }
 .c024-molecule svg .c024-selected circle {

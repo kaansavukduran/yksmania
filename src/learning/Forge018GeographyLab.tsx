@@ -318,7 +318,7 @@ function World() {
         <Diagram
           title="Dünya örneklerinin kabaca konumu"
           description="Boylam ve enlem ızgarasında sekiz örnek nokta. Harflerin tam adı ve koşulları şeklin altında; gerçek ülke sınırı veya nüfus ölçümü yok."
-          height={280}
+          height={296}
         >
           <WorldBase box={box} xy={xy} graticule={0} />
           {[-120, -60, 0, 60, 120].map((lon) => {
@@ -327,7 +327,7 @@ function World() {
               <g key={lon}>
                 <path className="g018-gridline" d={`M${x} 30V230`} />
                 <text x={x} y={255}>
-                  {lon}°
+                  {String(lon).replace("-", "−")}°
                 </text>
               </g>
             );
@@ -338,7 +338,7 @@ function World() {
               <g key={lat}>
                 <path className="g018-gridline" d={`M35 ${y}H405`} />
                 <text x={20} y={y + 5}>
-                  {lat}°
+                  {String(lat).replace("-", "−")}°
                 </text>
               </g>
             );
@@ -359,7 +359,7 @@ function World() {
               </g>
             );
           })}
-          <text x={220} y={272}>
+          <text x={220} y={284}>
             Boylam (°); dikey yön enlem (°)
           </text>
         </Diagram>
