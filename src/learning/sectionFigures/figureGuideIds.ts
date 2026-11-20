@@ -30,6 +30,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "elektron-ilgisi-elektronegatiflik",
   "elementlerin-siniflandirilmasi",
   "kimyasal-turler-lewis",
+  "iyonik-bilesik-adlandirma",
   "din-felsefesi",
   "ahlak-felsefesi",
   "radyoaktivite",

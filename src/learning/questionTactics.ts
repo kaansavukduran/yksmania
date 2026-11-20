@@ -1682,6 +1682,19 @@ export const questionTactics: QuestionTactic[] = [
       "Seçenekli soruda beklenen çizimi bilmek yetmez, çizilen noktaları say (2026 TYT Fen 10: Mg²⁺’ya iki nokta çizilmiş → yanlış; S²⁻ sekiz nokta → C).",
     ],
   },
+  {
+    id: "iyonik-ad-yuk-kok",
+    guides: ["iyonik-bilesik-adlandirma"],
+    match: /adlandır|formülü|Roma rakamı|demir\(|bakır\(|sülfat|sülfit|nitrat|nitrit|karbonat|fosfat|amonyum|hidroksit|klorür|oksit/i,
+    title: "İyonik adlandırmada yük dengesi rakamı, kök (oksijen sayısı) adı belirler",
+    steps: [
+      "İyonları ayır: katyon + anyon sırası; sağ üst yük, sağ alt adet. Çok atomlu iyon (NO₃⁻, SO₄²⁻, NH₄⁺) bütün olarak korunur.",
+      "Formül kurarken en küçük nötr oran: Ca²⁺ + NO₃⁻ → Ca(NO₃)₂; Al³⁺ + SO₄²⁻ → Al₂(SO₄)₃. Grup birden fazlaysa paranteze al, içini sadeleştirme.",
+      "Değişken metalde (Fe, Cu, Sn, Pb) Roma rakamı = metal iyonu başına yük: anyonların toplamını metal adedine böl (Fe₂(SO₄)₃: 6 ÷ 2 → demir(III)); indisi kopyalama.",
+      "Aynı yüklü kökleri yük ayırmaz: S²⁻ sülfür, SO₃²⁻ sülfit, SO₄²⁻ sülfat; H₂SO₄ sülfürik asittir (2013 YGS Fen 15’te “hidrojen sülfit” etiketi yanlış → D).",
+      "Sınırlar: Hg₂²⁺ (cıva(I)) grup olarak kalır → Hg₂Cl₂; Fe₃O₄ tek tür iyonla açıklanmaz (1 Fe²⁺ + 2 Fe³⁺).",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
