@@ -1046,7 +1046,8 @@ const dogru: Record<string, FigureDef> = {
     alt: "3x + 4y − 12 = 0 doğrusu ve üzerinden çıkan iki ok: dik normal (3; 4) ve doğru boyunca (−4; 3).",
     draw: () => {
       const W = [-2, 6, -1, 5] as const;
-      const Q = v(2.4, 1.2);
+      // Q sits right of the y axis so the (−4; 3) tip label clears the tick marks.
+      const Q = v(3.2, 0.6);
       return {
         els: [
           ...axes(...W),
@@ -1121,7 +1122,7 @@ const dogru: Record<string, FigureDef> = {
           seg(A, B, { tone: "c", bold: true }),
           right(B, v(-1, 0), A, "c"),
           dim(A, B, "3", v(0, -3), "c"),
-          txt(v(5.6, -1.2), "3x + 4y − 12 = 0", "n", { small: true, tone: "b" }),
+          txt(v(4.6, -2.1), "3x + 4y − 12 = 0", "s", { small: true, tone: "b" }),
           txt(v(-2.8, 1.4), "3x + 4y + 3 = 0", "n", { small: true, tone: "a" }),
         ],
       };

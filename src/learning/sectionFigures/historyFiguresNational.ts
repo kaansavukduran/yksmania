@@ -127,12 +127,13 @@ const pairs: FigureDef = {
   draw: (_v, _s, pick = -1) => {
     const els: El[] = [];
     PAIRS.forEach((p, i) => {
-      const y = -i * 0.9, sel = pick === i;
-      if (sel) els.push(rect(-0.1, 7.6, y - 0.18, 0.4, "a"));
+      const y = -i * 1.15, sel = pick === i;
+      // The highlight spans this row only (title and its question).
+      if (sel) els.push(rect(-0.1, 7.6, y - 0.78, 1.08, "a"));
       els.push(txt(v(0, y), `${p.a}  /  ${p.b}`, "e", { small: true, bold: true, tone: sel ? "a" : "ink", pick: i }));
-      els.push(txt(v(0.3, y - 0.38), p.q, "e", { small: true, tone: "muted" }));
+      els.push(txt(v(0.3, y - 0.5), p.q, "e", { small: true, tone: "muted" }));
     });
-    els.push(txt(v(-0.3, 0.5), " ", "c"), txt(v(7.8, -3.3), " ", "c"));
+    els.push(txt(v(-0.3, 0.5), " ", "c"), txt(v(7.8, -4.3), " ", "c"));
     return { els, readout: [pick >= 0 ? PAIRS[pick].detail.join(" ") : "Bir ikiliye tıkla ya da aşağıdan seç.", "Son kontrol: kurum, coğrafya, belge türü ve kronolojik yer aynı anda uyuşmalı."] };
   },
 };

@@ -17,9 +17,9 @@ const NODES: Node[] = [
   { label: "Arka beyin", at: v(7.0, -1.3), parent: 0, title: "Arka beyin", detail: ["Beyincik, pons ve omurilik soğanını içerir; ayrı başlıkta işlenir.", "Duruş ve hareket uyumunda beyincik öne çıkar."] },
   { label: "Uç beyin", at: v(0, -2.6), parent: 1, title: "Uç beyin", detail: ["İki yarım küre ve dıştaki korteks (beyin kabuğu).", "Yarım küreler nasırlı cisim (korpus kallozum) ile haberleşir.", "Korteks yarım kürenin tamamı değil, dış yüzeyidir; derinde gri çekirdekler de vardır."] },
   { label: "Ara beyin", at: v(2.8, -2.6), parent: 1, title: "Ara beyin", detail: ["Talamus, hipotalamus ve epitalamus burada.", "Üç yapı üç farklı düzenektir: aktarım, iç denge, günlük ritim."] },
-  { label: "Talamus", at: v(1.4, -3.9), parent: 5, title: "Talamus · aktarım", detail: ["Çoğu duyu bilgisini işleyip ilgili kortikal alana aktarır.", "Kokunun ilk kortikal yolu bu klasik aktarımın istisnasıdır.", "Aktarım ile kortikal yorum aynı basamak değildir."] },
+  { label: "Talamus", at: v(0.6, -3.9), parent: 5, title: "Talamus · aktarım", detail: ["Çoğu duyu bilgisini işleyip ilgili kortikal alana aktarır.", "Kokunun ilk kortikal yolu bu klasik aktarımın istisnasıdır.", "Aktarım ile kortikal yorum aynı basamak değildir."] },
   { label: "Hipotalamus", at: v(3.4, -3.9), parent: 5, title: "Hipotalamus · iç denge", detail: ["Sıcaklık, susama, açlık ve hipofizin düzenlenmesi.", "Sinirsel ve hormonal yanıtları birlikte kullanır.", "Duruş dengesi değil, iç ortam dengesi."] },
-  { label: "Epitalamus", at: v(5.4, -3.9), parent: 5, title: "Epitalamus · epifiz", detail: ["Epifiz burada; melatonin salgılar.", "Melatonin aydınlık–karanlık döngüsüyle ilişkilidir.", "Epifiz ile hipofiz farklı bezlerdir."] },
+  { label: "Epitalamus", at: v(6.2, -3.9), parent: 5, title: "Epitalamus · epifiz", detail: ["Epifiz burada; melatonin salgılar.", "Melatonin aydınlık–karanlık döngüsüyle ilişkilidir.", "Epifiz ile hipofiz farklı bezlerdir."] },
 ];
 
 const tree: FigureDef = {

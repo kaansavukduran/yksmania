@@ -37,7 +37,7 @@ const iv: FigureDef = {
         return v(X(V), Y(c.sat * (1 - (1 - t) ** 2)));
       });
       els.push(poly([v(X(-3), 0), v(X(c.cut), 0), ...pts], { tone: on ? "a" : c.tone, open: true, bold: on || pick < 0 }));
-      els.push(txt(v(X(2) + 0.15, Y(c.sat) + (c.name === "C" ? -0.35 : 0.1)), c.name, "e", { bold: true, tone: on ? "a" : c.tone, pick: i }));
+      els.push(txt(v(X(2) + 0.15, Y(c.sat) + (c.name === "C" ? -0.5 : 0.25)), c.name, "e", { bold: true, tone: on ? "a" : c.tone, pick: i }));
     });
     els.push(txt(v(-1.6, Y(5)), " ", "c"), txt(v(X(2.2) + 1.6, -0.9), " ", "c"));
     const sel = pick >= 0 ? CURVES[pick] : undefined;

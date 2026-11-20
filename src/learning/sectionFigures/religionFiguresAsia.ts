@@ -15,8 +15,8 @@ const arc = (c: V, r: number, a0: number, a1: number, n = 24): V[] =>
 const FOUR = [
   { s: "Hinduizm", x: 0, y: 0, line: "karma · samsara · mokşa · avatar", detail: ["Hint alt kıtası; tek tarihsel kurucu yok. Kaynak: Vedalar, Upanişadlar.", "Brahma, Vişnu, Şiva; puja, Ganj.", "Brahma (tanrısal varlık) ≠ Brahman (mutlak gerçeklik)."] },
   { s: "Budizm", x: 4.6, y: 0, line: "Buda · nirvana · Sekiz Yol · sangha", detail: ["Hint alt kıtası; Siddhartha Gautama (Buda). Kaynak: Tripitaka.", "Sangha (topluluk), vihara (manastır/mekân).", "Karma ve yeniden doğum Hinduizme özgü değil; anatta: sabit öz-benlik yok."] },
-  { s: "Konfüçyanizm", x: 0, y: -2.0, line: "ren · li · xiao · yönetim", detail: ["Çin; Konfüçyüs. Kaynak: Konuşmalar (Lun Yu), Beş Klasik, Dört Kitap.", "Ren: insanlık/erdem; li: uygun ritüel; xiao: evlada düşen saygı.", "Ata saygısı tek başına yetmez; toplumsal erdem paketi belirleyici."] },
-  { s: "Taoizm", x: 4.6, y: -2.0, line: "Tao · wu wei · yin–yang · Laozi", detail: ["Çin; Laozi. Kaynak: Tao Te Ching.", "Wu wei: zorlamadan, doğal akışa uygun eylem (hiç çalışmamak değil).", "Yin–yang daha geniş Çin düşüncesinde de görülür."] },
+  { s: "Konfüçyanizm", x: 0, y: -2.3, line: "ren · li · xiao · yönetim", detail: ["Çin; Konfüçyüs. Kaynak: Konuşmalar (Lun Yu), Beş Klasik, Dört Kitap.", "Ren: insanlık/erdem; li: uygun ritüel; xiao: evlada düşen saygı.", "Ata saygısı tek başına yetmez; toplumsal erdem paketi belirleyici."] },
+  { s: "Taoizm", x: 4.6, y: -2.3, line: "Tao · wu wei · yin–yang · Laozi", detail: ["Çin; Laozi. Kaynak: Tao Te Ching.", "Wu wei: zorlamadan, doğal akışa uygun eylem (hiç çalışmamak değil).", "Yin–yang daha geniş Çin düşüncesinde de görülür."] },
 ];
 const four: FigureDef = {
   caption:
@@ -24,14 +24,14 @@ const four: FigureDef = {
   alt: "İki satır iki sütunlu pano: üstte Hinduizm ve Budizm, altta Konfüçyanizm ve Taoizm; her kutuda kavramlar.",
   picks: FOUR.map((f) => ({ label: f.s, title: f.s, detail: f.detail })),
   draw: (_v, _s, pick = -1) => {
-    const els: El[] = [txt(v(-0.3, 0.55), "Hint", "w", { small: true, tone: "muted" }), txt(v(-0.3, -1.45), "Çin", "w", { small: true, tone: "muted" })];
+    const els: El[] = [txt(v(-0.3, 0.55), "Hint", "w", { small: true, tone: "muted" }), txt(v(-0.3, -1.75), "Çin", "w", { small: true, tone: "muted" })];
     FOUR.forEach((f, i) => {
       const sel = pick === i;
-      els.push(rect(f.x - 0.1, f.x + 4.3, f.y - 1.1, f.y + 0.35, sel ? "a" : i < 2 ? "c" : "b"));
+      els.push(rect(f.x - 0.1, f.x + 4.3, f.y - 1.4, f.y + 0.38, sel ? "a" : i < 2 ? "c" : "b"));
       els.push(txt(v(f.x + 0.1, f.y), f.s, "e", { small: true, bold: true, tone: sel ? "a" : "ink", pick: i }));
-      f.line.split(" · ").forEach((w, k) => els.push(txt(v(f.x + 0.2 + (k % 2) * 2.1, f.y - 0.45 - Math.floor(k / 2) * 0.4), w, "e", { small: true, tone: "muted" })));
+      f.line.split(" · ").forEach((w, k) => els.push(txt(v(f.x + 0.2 + (k % 2) * 2.1, f.y - 0.5 - Math.floor(k / 2) * 0.52), w, "e", { small: true, tone: "muted" })));
     });
-    els.push(txt(v(-1.0, 0.8), " ", "c"), txt(v(9.1, -3.3), " ", "c"));
+    els.push(txt(v(-1.0, 0.8), " ", "c"), txt(v(9.1, -3.9), " ", "c"));
     return { els, readout: [pick >= 0 ? FOUR[pick].detail[0] : "Bir geleneğe tıkla ya da aşağıdan seç.", "Tek sözcük değil, iki kanıt: kişi/kaynak + ayırıcı kavram."] };
   },
 };

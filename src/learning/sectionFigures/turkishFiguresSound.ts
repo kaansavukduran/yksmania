@@ -32,7 +32,10 @@ const vowelBoard: FigureDef = {
     const els: El[] = [];
     const W = 2.9;
     const H = 1.4;
-    COLS.forEach((c, j) => els.push(txt(v(j * W + W / 2, 2 * H + 0.1 + (j % 2) * 0.5), c, "n", { small: true, tone: "muted" })));
+    // Column headers on two lines (roundness over width) so neighbours never touch.
+    COLS.forEach((c, j) =>
+      c.split(" · ").forEach((part, k) => els.push(txt(v(j * W + W / 2, 2 * H + 0.15 + (1 - k) * 0.78), part, "n", { small: true, tone: "muted" }))),
+    );
     ["kalın", "ince"].forEach((r, i) => els.push(txt(v(-0.15, (1 - i) * H + H / 2), r, "w", { small: true, bold: true, tone: i === 0 ? "b" : "c" })));
     VOWELS.forEach((w, i) => {
       const x = w.col * W;
@@ -42,7 +45,7 @@ const vowelBoard: FigureDef = {
       els.push(poly([v(x + 0.05, y + 0.05), v(x + W - 0.05, y + 0.05), v(x + W - 0.05, y + H - 0.05), v(x + 0.05, y + H - 0.05)], { tone, fill: tone, thin: !on }));
       els.push(txt(v(x + W / 2, y + H / 2), w.ch, "c", { bold: true, tone: "ink", pick: i }));
     });
-    els.push(txt(v(-1.6, 2 * H + 1.3), " ", "c"), txt(v(4 * W + 0.2, -0.3), " ", "c"));
+    els.push(txt(v(-1.6, 2 * H + 1.6), " ", "c"), txt(v(4 * W + 0.2, -0.3), " ", "c"));
     const sel = pick >= 0 ? VOWELS[pick] : undefined;
     return { els, readout: [sel ? `${sel.ch}: ${sel.row === 0 ? "kalın" : "ince"}, ${COLS[sel.col]}` : "Bir ünlüye tıkla ya da aşağıdan seç.", "kavun: a, u ikisi kalın → büyük uyum var; a düz, u yuvarlak-dar → küçük uyum yok."] };
   },

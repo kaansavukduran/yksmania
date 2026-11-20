@@ -132,7 +132,7 @@ const hendek: Battle = {
   ],
   terrain: [
     ...trench,
-    txt(v(10.2, 5.2), "hendek", "e", { tone: "warn", small: true, bold: true }),
+    txt(v(10.3, 5.9), "hendek", "e", { tone: "warn", small: true, bold: true }),
     poly([v(0.4, 1.2), v(2.0, 1.6), v(2.6, 3.4), v(2.2, 5.0), v(0.8, 5.4), v(0.2, 3.4)], { tone: "muted", fill: "muted", thin: true, smooth: true }),
     poly([v(10.2, 1.0), v(11.8, 1.4), v(12.2, 3.4), v(11.6, 5.0), v(10.4, 4.6), v(9.9, 2.8)], { tone: "muted", fill: "muted", thin: true, smooth: true }),
     txt(v(1.4, 3.3), "harra", "c", { tone: "muted", small: true }),

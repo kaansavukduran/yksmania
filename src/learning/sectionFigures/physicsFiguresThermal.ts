@@ -369,7 +369,7 @@ const genlesme: Record<string, FigureDef> = {
     draw: (_, step) => {
       const els: El[] = [];
       if (step === 0) {
-        els.push(rect(0, 0.4, 8, 0.4, "warn", "warn"), rect(0, 0, 8, 0.4, "b", "b"), txt(v(8.2, 0.6), "A (büyük α)", "e", { small: true, tone: "warn" }), txt(v(8.2, 0.2), "B (küçük α)", "e", { small: true, tone: "b" }));
+        els.push(rect(0, 0.4, 8, 0.4, "warn", "warn"), rect(0, 0, 8, 0.4, "b", "b"), txt(v(8.2, 0.85), "A (büyük α)", "e", { small: true, tone: "warn" }), txt(v(8.2, -0.05), "B (küçük α)", "e", { small: true, tone: "b" }));
       } else {
         const R = 8;
         const arc = (r: number, n = 30) => Array.from({ length: n + 1 }, (_, i) => { const t = (i / n) * (8 / R); return v(r * Math.sin(t), R - r * Math.cos(t)); });

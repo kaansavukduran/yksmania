@@ -265,7 +265,7 @@ const newton: Record<string, FigureDef> = {
         ...force(v(1, 0.5), v(0, 2), "N (masa → kitap)", "b", "e"),
         ...block(5, -0.5, 3, 0.6, "masa"),
         ...force(v(6.5, 0.1), v(0, -1.8), "kitap → masa", "b", "e"),
-        txt(v(4, 2.8), "aynı renk: etki–tepki çifti", "c", { small: true, tone: "b" }),
+        txt(v(4.5, -2.5), "aynı renk: etki–tepki çifti", "c", { small: true, tone: "b" }),
       ],
     }),
   },

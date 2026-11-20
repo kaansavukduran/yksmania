@@ -91,7 +91,7 @@ const profile: FigureDef = {
     const els: El[] = [];
     els.push(seg(v(0, 0), v(X(4) + 0.3, 0), { tone: "muted" }), seg(v(0, 0), v(0, Y(190)), { tone: "muted" }));
     for (const m of [100, 140, 180]) els.push(txt(v(-0.15, Y(m)), `${m} m`, "w", { small: true, tone: "muted" }));
-    for (let k = 0; k <= 4; k++) els.push(txt(v(X(k), 0), `${k} km`, "s", { small: true, tone: "muted" }));
+    for (let k = 0; k <= 4; k++) els.push(txt(v(X(k), 0), `${k} km`, k === 0 ? "se" : "s", { small: true, tone: "muted" }));
     els.push(poly(PTS.map((m, k) => v(X(k), Y(m))), { tone: "c", open: true, bold: true }));
     const a = v(X(i), Y(PTS[i]));
     const b = v(X(i + 1), Y(PTS[i + 1]));

@@ -100,6 +100,9 @@ function rayDiagram(kind: "mirror" | "lens", f: number, u: number, h = 2) {
   const m = -vv / u;
   const I = v(side * vv, m * h);
   const real = vv > 0;
+  // A real mirror image stays in front of the mirror: a short axis behind it
+  // keeps the diagram large on a phone.
+  if (kind === "mirror" && real) els[0] = line(v(-span, 0), v(3, 0), { tone: "muted", thin: true, ext: 0 });
   const reach = (p: V, d: V) => {
     // Extend the outgoing ray a little beyond the image along its direction.
     const t = real ? Math.hypot(I[0] - p[0], I[1] - p[1]) + 1 : span * 0.8;
@@ -121,7 +124,7 @@ function rayDiagram(kind: "mirror" | "lens", f: number, u: number, h = 2) {
     crowded
       ? txt(v(I[0], I[1] * 0.6), "görüntü", near < I[0] ? "e" : "w", { small: true, tone: "b" })
       : I[1] < 0
-        ? txt(v(I[0], I[1] - 0.3 * h), "görüntü", "s", { small: true, tone: "b" })
+        ? txt(v(I[0], I[1] - 0.3 * h - 0.6), "görüntü", "s", { small: true, tone: "b" })
         : txt(I, "görüntü", imgAt, { small: true, tone: "b" }),
   );
   if (I[1] >= 0) els[objLabel] = txt(tip, "cisim", right ? "nw" : "ne", { small: true });

@@ -91,7 +91,7 @@ const pathway: FigureDef = {
     els.push(circle(v(3.0, -1.0), 0.4, { tone: tO, fill: som ? undefined : "c" }), circle(v(3.0, -1.0), 0.14, { fill: tO, tone: tO }));
     els.push(vec(v(3.2, -1.0), v(5.6, -1.0), { tone: tO, bold: !som, }));
     els.push(rect(5.7, 8.3, -1.0, 0.35, { fill: som ? undefined : "c", tone: tO, thin: true }), txt(v(7.0, -1.0), "düz kas / bez", "c", { small: true, tone: som ? "muted" : "ink" }));
-    els.push(txt(v(1.4, -1.45), "öncesi", "c", { small: true, tone: tO }), txt(v(3.0, -1.7), "gangliyon", "c", { small: true, tone: tO }), txt(v(4.5, -1.45), "sonrası", "c", { small: true, tone: tO }));
+    els.push(txt(v(1.4, -0.65), "öncesi", "c", { small: true, tone: tO }), txt(v(3.0, -1.75), "gangliyon", "c", { small: true, tone: tO }), txt(v(4.4, -0.65), "sonrası", "c", { small: true, tone: tO }));
     els.push(txt(v(-1.0, 2.7), " ", "c"), txt(v(8.6, -2.2), " ", "c"));
     return {
       els,

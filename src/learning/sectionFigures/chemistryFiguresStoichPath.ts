@@ -12,12 +12,12 @@ const rect = (x0: number, x1: number, y0: number, y1: number, tone: Tone, fill =
 const f = (x: number, d = 2) => x.toFixed(d).replace(".", ",");
 
 /** Dikey kutu zinciri: her kutu iki satır; oklar arasında işlem. */
-function chain(boxes: [string, string][], ops: string[], hi = -1, w = 2.6, step = 1.35): El[] {
+function chain(boxes: [string, string][], ops: string[], hi = -1, w = 2.6, step = 1.6): El[] {
   const els: El[] = [];
   boxes.forEach(([top, bottom], i) => {
     const y = -i * step, sel = i === hi;
-    els.push(rect(0, w, y - 0.45, y + 0.45, sel ? "a" : "b", sel), txt(v(w / 2, y + 0.17), top, "c", { small: true, bold: true }), txt(v(w / 2, y - 0.2), bottom, "c", { small: true }));
-    if (i < ops.length) els.push(vec(v(w / 2, y - 0.5), v(w / 2, y - step + 0.5), { tone: "warn" }), txt(v(w / 2 + 0.2, y - step / 2), ops[i], "e", { small: true, tone: "muted" }));
+    els.push(rect(0, w, y - 0.55, y + 0.55, sel ? "a" : "b", sel), txt(v(w / 2, y + 0.22), top, "c", { small: true, bold: true }), txt(v(w / 2, y - 0.3), bottom, "c", { small: true }));
+    if (i < ops.length) els.push(vec(v(w / 2, y - 0.6), v(w / 2, y - step + 0.6), { tone: "warn" }), txt(v(w / 2 + 0.2, y - step / 2), ops[i], "e", { small: true, tone: "muted" }));
   });
   return els;
 }
@@ -37,7 +37,7 @@ const hub: FigureDef = {
     const r = ROUTES[pick >= 0 ? pick : 0];
     const els: El[] = [txt(v(4.2, 0.2), r.eq, "e", { small: true, bold: true, tone: "a" }), ...chain(r.boxes, r.ops)];
     ROUTES.forEach((rr, i) => els.push(txt(v(4.2, -0.8 - i * 0.6), rr.label, "e", { small: true, bold: pick === i, tone: pick === i ? "a" : "ink", pick: i })));
-    els.push(txt(v(-0.3, 0.7), " ", "c"), txt(v(8.4, -4.6), " ", "c"));
+    els.push(txt(v(-0.3, 0.7), " ", "c"), txt(v(8.4, -5.4), " ", "c"));
     return { els, readout: [r.note, "Kütle → m/M, NK gaz hacmi → V/22,4, adet → N/Nₐ; dönüşte tersini uygula."] };
   },
 };
@@ -117,7 +117,7 @@ const backward: FigureDef = {
     const boxes: [string, string][] = [["6,72 L H₂", "ölçülen"], ["0,30 mol H₂", "mol"], ["0,20 mol Al", "giren mol"], ["5,4 g Al", "hedef"]];
     const els: El[] = [txt(v(4.2, 0.2), "2Al + 6HCl → 2AlCl₃ + 3H₂", "e", { small: true, bold: true, tone: "a" }), ...chain(boxes, ["÷ 22,4", "× 2/3", "× 27"], st.hi + 1)];
     els.push(ball(v(4.2, -0.8), 0.08, "a"), txt(v(4.4, -0.8), st.title, "e", { small: true, bold: true }));
-    els.push(txt(v(-0.3, 0.7), " ", "c"), txt(v(8.6, -4.6), " ", "c"));
+    els.push(txt(v(-0.3, 0.7), " ", "c"), txt(v(8.6, -5.4), " ", "c"));
     return { els, readout: [st.text, "Hatalı kısayol: 6,72 L’yi doğrudan 27 ile çarpmak; önce mole dön."] };
   },
 };

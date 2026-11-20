@@ -182,9 +182,10 @@ const cokgenler: Record<string, FigureDef> = {
       "Eşkenar dörtgenin kenarları eşittir ama açıları 60° ve 120°dir. Dikdörtgenin açıları eşittir ama kenarları 3 ve 5'tir. İkisi birden yalnız karede sağlanır.",
     alt: "Üç dörtgen: kenarları çentikli eşkenar dörtgen, dik açılı ama kenarları farklı dikdörtgen ve hem çentikli hem dik açılı kare.",
     draw: () => {
-      const r1: V[] = [v(0, 0), v(2.6, 0), add(v(2.6, 0), pol(2.6, 60)), pol(2.6, 60)];
-      const r2: V[] = [v(5.6, 0), v(10.6, 0), v(10.6, 3), v(5.6, 3)];
-      const r3: V[] = [v(12.4, 0), v(15.4, 0), v(15.4, 3), v(12.4, 3)];
+      // Rhombus side 3.6 keeps the 60° and 120° labels apart on a phone.
+      const r1: V[] = [v(0, 0), v(3.6, 0), add(v(3.6, 0), pol(3.6, 60)), pol(3.6, 60)];
+      const r2: V[] = [v(6.8, 0), v(11.8, 0), v(11.8, 3), v(6.8, 3)];
+      const r3: V[] = [v(13.4, 0), v(16.4, 0), v(16.4, 3), v(13.4, 3)];
       return {
         els: [
           quad(r1, "b"),
@@ -198,9 +199,9 @@ const cokgenler: Record<string, FigureDef> = {
           quad(r3, "a"),
           ...r3.map((p, i) => ticks(p, r3[(i + 1) % 4], 1, "a")),
           ...r3.map((p, i) => right(p, r3[(i + 1) % 4], r3[(i + 3) % 4], "a")),
-          txt(v(1.9, -1.5), "yalnız eş kenar", "c", { small: true }),
-          txt(v(8.1, -1.5), "yalnız eş açı", "c", { small: true }),
-          txt(v(13.9, -1.5), "düzgün", "c", { small: true, bold: true, tone: "a" }),
+          txt(v(2.7, -1.5), "yalnız eş kenar", "c", { small: true }),
+          txt(v(9.3, -1.5), "yalnız eş açı", "c", { small: true }),
+          txt(v(14.9, -1.5), "düzgün", "c", { small: true, bold: true, tone: "a" }),
         ],
       };
     },

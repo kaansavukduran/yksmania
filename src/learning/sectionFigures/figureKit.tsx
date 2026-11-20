@@ -319,7 +319,7 @@ export interface FigureDef {
 
 const W = 640;
 const PAD = 34;
-const MAX_H = 380;
+const MAX_H = 480;
 const DIRS: Record<Dir, [number, number]> = {
   n: [0, -1],
   ne: [0.72, -0.72],
@@ -844,6 +844,9 @@ function lineCrossTest(els: El[], P: (p: V) => [number, number]) {
     label: string,
   ) => {
     if (!segs.length || !label.trim()) return false;
+    // Narrow screens draw labels about 1.2× larger (see the 520px media
+    // query), so test with that size: a plate costs nothing on desktop.
+    fs *= 1.2;
     const w = label.length * 0.58 * fs;
     const x0 = anchor === "end" ? x - w : anchor === "middle" ? x - w / 2 : x;
     const base = y + shiftEm * fs;
@@ -1069,35 +1072,25 @@ function Render({
                 className="sf-arc"
               />
             )}
+            {/* Angle labels sit between an arc and its rays: always on a
+                soft plate, drawn last, so neither touches the digits. */}
             {el.label &&
-              (crossed(lx, ly, "middle", 0.35, 21, el.label) ? (
-                void plates.push(
-                  <PickLabel
-                    key={`plate-angle-${i}`}
-                    x={r2(lx)}
-                    y={r2(ly)}
-                    anchor="middle"
-                    dy={0.35}
-                    tone={cls(el.tone ?? "a")}
-                    className="sf-label sf-angle-label"
-                    estimate={el.label.length * 0.58 * 21}
-                    size={21}
-                    plate
-                  >
-                    {el.label}
-                  </PickLabel>,
-                )
-              ) : (
-                <text
+              void plates.push(
+                <PickLabel
+                  key={`plate-angle-${i}`}
                   x={r2(lx)}
                   y={r2(ly)}
-                  textAnchor="middle"
-                  dy="0.35em"
+                  anchor="middle"
+                  dy={0.35}
+                  tone={cls(el.tone ?? "a")}
                   className="sf-label sf-angle-label"
+                  estimate={el.label.length * 0.58 * 21}
+                  size={21}
+                  plate
                 >
                   {el.label}
-                </text>
-              ))}
+                </PickLabel>,
+              )}
           </g>
         );
       }

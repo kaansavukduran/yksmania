@@ -321,7 +321,7 @@ const tollensMix: FigureDef = {
     els.push(poly([v(0, 2), v(mAld * k, 2), v(mAld * k, 2.7), v(0, 2.7)], { tone: "c", fill: "c", thin: true }));
     if (mKet > 0.01) els.push(poly([v(mAld * k, 2), v(W, 2), v(W, 2.7), v(mAld * k, 2.7)], { tone: "b", fill: "b", thin: true }));
     els.push(txt(v(0, 2.7), "Karışım 30 g", "ne", { tone: "ink", small: true, bold: true }));
-    els.push(txt(v(W, 2.35), `propanal ${fmt(mAld, 1)} g + propanon ${fmt(mKet, 1)} g`, "e", { tone: "ink", small: true }));
+    els.push(txt(v(W, 2.6), `propanal ${fmt(mAld, 1)} g`, "e", { tone: "c", small: true }), txt(v(W, 2.05), `propanon ${fmt(mKet, 1)} g`, "e", { tone: "b", small: true }));
     const agW = Math.min(W, (ag / 108) * W);
     els.push(poly([v(0, 0.4), v(agW, 0.4), v(agW, 1.1), v(0, 1.1)], { tone: "muted", fill: "muted", thin: true }));
     els.push(txt(v(0, 1.1), "Ag (gümüş aynası)", "ne", { tone: "ink", small: true, bold: true }));

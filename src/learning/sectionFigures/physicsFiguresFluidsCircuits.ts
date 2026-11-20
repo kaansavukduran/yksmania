@@ -294,9 +294,9 @@ const kaldirma: Record<string, FigureDef> = {
       els: [
         ...water(0, 0, 6, 6),
         tank(0, 0, 6, 6),
-        rect(0.8, 3.8, 1.4, 1.2, "ink"),
+        rect(0.8, 3.2, 1.4, 1.2, "ink"),
         rect(3.8, 0.6, 1.4, 1.2, "ink"),
-        ...force(v(1.5, 5), v(0, 0.9), "Fk", "a", "e"),
+        ...force(v(1.5, 4.4), v(0, 0.9), "Fk", "a", "e"),
         ...force(v(4.5, 1.8), v(0, 0.9), "Fk (aynı)", "a", "e"),
       ],
     }),

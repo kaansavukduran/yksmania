@@ -131,7 +131,7 @@ const EVENTS: Ev[] = [
 ];
 const X0 = 1922;
 const K = 0.7; // strip units per year
-const ROW = 0.62;
+const ROW = 0.82;
 
 const reformStrip: FigureDef = {
   caption:

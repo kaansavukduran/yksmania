@@ -29,9 +29,9 @@ const anatomy: FigureDef = {
     els.push(ball(v(6.5, 0.1), 0.3, pick === 2 ? "a" : "c"), txt(v(6.5, 0.1), "Na⁺", "c", { small: true, bold: true }));
     els.push(txt(v(2.2, -0.75), "Kuyruk (R)", "c", { small: true, bold: pick === 0, tone: pick === 0 ? "a" : "ink", pick: 0 }));
     els.push(txt(v(5.2, -0.85), "Baş (COO⁻)", "c", { small: true, bold: pick === 1, tone: pick === 1 ? "a" : "ink", pick: 1 }));
-    els.push(txt(v(7.0, -0.85), "Katyon (Na⁺)", "c", { small: true, bold: pick === 2, tone: pick === 2 ? "a" : "ink", pick: 2 }));
+    els.push(txt(v(6.9, -1.5), "Katyon (Na⁺)", "c", { small: true, bold: pick === 2, tone: pick === 2 ? "a" : "ink", pick: 2 }));
     els.push(txt(v(2.2, 0.75), "apolar · yağla", "c", { small: true, tone: "muted" }), txt(v(5.2, 0.85), "polar · suyla", "c", { small: true, tone: "muted" }));
-    els.push(txt(v(-0.4, 1.2), " ", "c"), txt(v(8.0, -1.2), " ", "c"));
+    els.push(txt(v(-0.4, 1.2), " ", "c"), txt(v(8.0, -1.9), " ", "c"));
     return { els, readout: [pick >= 0 ? PARTS[pick].detail[0] : "Bir bölgeye tıkla.", "Şema ölçekli değildir; R gerçekte 11–17 karbonlu olabilir."] };
   },
 };

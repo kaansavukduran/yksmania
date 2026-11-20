@@ -48,7 +48,7 @@ const reflect: FigureDef = {
     els.push(dot(top.X(a), 1.2, true, "c"), dot(top.X(b), 1.2, true, "b"));
     els.push(txt(v(top.X(a), 1.6), "a = −3", "c", { small: true, tone: "c" }), txt(v(top.X(b), 1.6), "b = 2", "c", { small: true, tone: "b" }));
     els.push(dot(bot.X(ka), -0.8, true, "c"), dot(bot.X(kb), -0.8, true, "b"));
-    els.push(seg(v(top.X(a), 1.05), v(bot.X(ka), -0.65), { thin: true, dash: true, tone: "c" }), seg(v(top.X(b), 1.05), v(bot.X(kb), -0.65), { thin: true, dash: true, tone: "b" }));
+    els.push(seg(v(top.X(a), 0.45), v(bot.X(ka), -0.65), { thin: true, dash: true, tone: "c" }), seg(v(top.X(b), 0.45), v(bot.X(kb), -0.65), { thin: true, dash: true, tone: "b" }));
     els.push(txt(v(W / 2, -1.7), `k·a = ${fmt(ka)}  ${rel}  k·b = ${fmt(kb)}`, "c", { bold: true, tone: k < 0 ? "warn" : "ink" }));
     els.push(txt(v(-0.6, 2.1), " ", "c"), txt(v(W + 0.6, -2.1), " ", "c"));
     return {

@@ -58,7 +58,7 @@ const cooling: FigureDef = {
     [0, 100].forEach((t) => els.push(txt(v(-0.15, ty(t)), String(t), "w", { small: true, tone: "muted" })));
     els.push(poly(CURVE.map(([x, t]) => v(x, ty(t))), { open: true, tone: "b", bold: true }));
     els.push(cool ? vec(v(7.2, ty(130)), v(5.2, ty(130)), { tone: "a", bold: true }) : vec(v(1.2, ty(130)), v(3.2, ty(130)), { tone: "a", bold: true }));
-    els.push(txt(v(1.8, ty(0) - 0.36), d.plateaus[0], "c", { small: true, tone: "a" }), txt(v(4.9, ty(100) + 0.4), d.plateaus[1], "c", { small: true, tone: "a" }));
+    els.push(txt(v(2.4, ty(0) - 0.36), d.plateaus[0], "c", { small: true, tone: "a" }), txt(v(4.9, ty(100) + 0.4), d.plateaus[1], "c", { small: true, tone: "a" }));
     DIRS.forEach((dd, i) => els.push(txt(v(i * 2.6, -1.0), dd.label, "e", { small: true, bold: pick === i, tone: pick === i ? "a" : "ink", pick: i })));
     els.push(txt(v(-0.8, 4.8), " ", "c"), txt(v(9.4, -1.3), " ", "c"));
     return { els, readout: [d.note, "Sıcaklık ≠ ısı: platoda sıcaklık sabit kalırken enerji aktarımı sürer."] };

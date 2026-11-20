@@ -195,7 +195,7 @@ const cember: Record<string, FigureDef> = {
     draw: () => {
       const r = 2.2;
       const o1 = v(0, 0);
-      const o2 = v(7.5, 0);
+      const o2 = v(8.6, 0);
       const Q = (o: V, d: number) => pol(r, d, o);
       // Chords AB and CD; arc A→C (through 180°) is 100°, arc B→D is 40°.
       const A1 = Q(o1, 130);
@@ -234,7 +234,7 @@ const cember: Record<string, FigureDef> = {
           pt(meetP, "P", "e", "b"),
           txt(Q(o2, 180), "130°", "w", { small: true, tone: "c" }),
           txt(Q(o2, 0), "30°", "w", { small: true, tone: "c" }),
-          txt(v(7.5 + 1.5, -r - 0.4), "dış açı = (130 − 30)/2 = 50°", "s", { small: true, bold: true }),
+          txt(v(8.6 + 1.2, -r - 0.4), "dış açı = (130 − 30)/2 = 50°", "s", { small: true, bold: true }),
         ],
       };
     },

@@ -133,8 +133,8 @@ const acidName: FigureDef = {
     const a = ACIDS[pick >= 0 ? pick : 1], n = 0.15 * a.ratio, k = 16;
     const els: El[] = [txt(v(0, 0.9), a.eq, "e", { small: true, bold: true })];
     els.push(txt(v(-0.2, 0.2), a.gas === "—" ? "gaz" : a.gas, "w", { small: true, bold: true }), rect(0, Math.max(n * k, 0.001), 0, 0.4, "b"), txt(v(n * k + 0.15, 0.2), a.gas === "—" ? "0 (tepkime yok)" : `${f(n, 2)} mol (0,15 mol metal)`, "e", { small: true }));
-    ACIDS.forEach((aa, i) => els.push(txt(v((i % 2) * 3.6, -0.6 - Math.floor(i / 2) * 0.55), aa.label, "e", { small: true, bold: pick === i, tone: pick === i ? "a" : "ink", pick: i })));
-    els.push(txt(v(-1.0, 1.3), " ", "c"), txt(v(7.4, -2.0), " ", "c"));
+    ACIDS.forEach((aa, i) => els.push(txt(v(0, -0.6 - i * 0.55), aa.label, "e", { small: true, bold: pick === i, tone: pick === i ? "a" : "ink", pick: i })));
+    els.push(txt(v(-1.0, 1.3), " ", "c"), txt(v(7.4, -3.1), " ", "c"));
     return { els, readout: [a.note, "Gazın formülü asit, metal ve koşula bağlıdır; verilen denklemin katsayısını kullan."] };
   },
 };

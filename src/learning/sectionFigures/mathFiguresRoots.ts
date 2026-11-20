@@ -232,7 +232,7 @@ const kokluSayilar: Record<string, FigureDef> = {
         graph((x) => -Math.sqrt(2 * x + 3), -1.5, 4.8, "a", true),
         line(v(-2.4, -2.4), v(4.8, 4.8), { tone: "b", ext: 0 }),
         pt(v(3, 3), "x = 3 ✓", "nw", "c"),
-        pt(v(-1, -1), "x = −1 sahte", "se", "warn", true),
+        pt(v(-1, -1), "x = −1 sahte", "sw", "warn", true),
       ],
       readout: ["Kare: x² = 2x + 3 → x = 3 veya x = −1", "x ≥ 0 koşulu: yalnız 3"],
     }),

@@ -42,9 +42,10 @@ const centuryStrip: FigureDef = {
     els.push(seg(v(W / 2, -0.1), v(W / 2, 1.0), { tone: "ink", bold: true }));
     els.push(txt(v(W / 4, 0.8), "1. yarı", "n", { tone: t < 0.5 ? "ink" : "muted", small: true, bold: t < 0.5 }), txt(v((3 * W) / 4, 0.8), "2. yarı", "n", { tone: t >= 0.5 ? "ink" : "muted", small: true, bold: t >= 0.5 }));
     const sign = y > 0 ? "MS" : "MÖ";
-    els.push(txt(v(0, 0.4), `${sign} ${first}`, "w", { tone: "ink", small: true }), txt(v(W, 0.4), `${sign} ${last}`, "e", { tone: "ink", small: true }));
+    // Block ends sit above the corners so the side margins stay small on phones.
+    els.push(txt(v(0, 0.8), `${sign} ${first}`, "n", { tone: "ink", small: true }), txt(v(W, 0.8), `${sign} ${last}`, "n", { tone: "ink", small: true }));
     els.push(ball(v(t * W, 0.4), 0.15, "warn"), txt(v(t * W, 1.75), label(y), "n", { tone: "warn", small: true, bold: true }));
-    els.push(txt(v(-2.2, 2.7), " ", "c"), txt(v(W + 2.2, -0.9), " ", "c"));
+    els.push(txt(v(-1, 2.7), " ", "c"), txt(v(W + 1, -0.9), " ", "c"));
     const half = t < 0.5 ? "ilk yarısı" : "ikinci yarısı";
     const quarter = Math.floor(t * 4) + 1;
     const formula = y > 0 ? `⌊(${a} − 1)/100⌋ + 1 = ${c}` : `⌊(${a} − 1)/100⌋ + 1 = ${c} (MÖ)`;

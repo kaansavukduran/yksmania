@@ -58,16 +58,30 @@ function board(cards: Card[], cols: number, caption: string, alt: string, foot: 
     picks: cards.map((c) => ({ label: c.name, title: `${c.name} · ${c.tag}`, detail: [c.what, `Karıştırma: ${c.trap}`] })),
     draw: (_v, _s, pick = -1) => {
       const els: El[] = [];
-      const W = 3.6;
-      const H = 1.5;
+      const W = 3.9;
+      // Tags split at “ · ” onto their own lines so a phone-size font never
+      // runs into the next box; the box grows with the line count.
+      const lines = (t: string) =>
+        t.split(" · ").flatMap((part) => {
+          // Wrap long parts at spaces (about 12 characters per line).
+          const out: string[] = [];
+          for (const w of part.split(" ")) {
+            const last = out[out.length - 1];
+            if (last && (last + " " + w).length <= 12) out[out.length - 1] = last + " " + w;
+            else out.push(w);
+          }
+          return out;
+        });
+      const maxLines = Math.max(...cards.map((c) => lines(c.tag).length));
+      const H = 1.45 + 0.62 * maxLines;
       const rows = Math.ceil(cards.length / cols);
       cards.forEach((c, i) => {
         const x = (i % cols) * (W + 0.3);
         const y = (rows - 1 - Math.floor(i / cols)) * (H + 0.3);
         const on = pick === i;
         els.push(poly([v(x, y), v(x + W, y), v(x + W, y + H), v(x, y + H)], { tone: on ? "a" : c.tone, fill: on ? "a" : c.tone, thin: !on }));
-        els.push(txt(v(x + W / 2, y + H * 0.64), c.name, "c", { bold: true, tone: "ink", pick: i }));
-        els.push(txt(v(x + W / 2, y + H * 0.26), c.tag, "c", { small: true, tone: on ? "ink" : "muted" }));
+        els.push(txt(v(x + W / 2, y + H - 0.55), c.name, "c", { bold: true, tone: "ink", pick: i }));
+        lines(c.tag).forEach((l, k) => els.push(txt(v(x + W / 2, y + H - 1.3 - k * 0.62), l, "c", { small: true, tone: on ? "ink" : "muted" })));
       });
       els.push(txt(v(-0.2, rows * (H + 0.3) + 0.1), " ", "c"), txt(v(cols * (W + 0.3), -0.3), " ", "c"));
       const sel = pick >= 0 ? cards[pick] : undefined;
