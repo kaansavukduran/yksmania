@@ -1,5 +1,7 @@
 import { ArrowRight, Check, Sprout } from "lucide-react";
 import { useApp } from "../store";
+import { Sparkle } from "../components/Sparkle";
+import { contentCounts } from "../domain/counts";
 import { lessons, lessonById } from "../domain/content";
 import { SmartSession } from "../components/SmartSession";
 import {
@@ -64,7 +66,7 @@ export function Today({
       <section className="hero">
         <div className="hero-content">
           <span className="hero-kicker">
-            <span className="tiny-star">✦</span>
+            <Sparkle className="tiny-star" />
             {t(closed ? "unavailable" : state.draft ? "continue" : "welcome")}
           </span>
           <h2>{t(closed ? "blockedToday" : "heroTitle")}</h2>
@@ -95,16 +97,7 @@ export function Today({
             <ArrowRight size={18} />
           </button>
           <p className="hero-foot small">
-            {
-              lessons.filter((lesson) => !lesson.tags.includes("soru-seti"))
-                .length
-            }{" "}
-            {t("readyLessonCount")} ·{" "}
-            {lessons.reduce(
-              (total, lesson) => total + lesson.questions.length,
-              0,
-            )}{" "}
-            {t("originalQuestions")} · {t("offline")}
+            {contentCounts.readyLessons} {t("readyLessonCount")} · {contentCounts.originalQuestions} {t("originalQuestions")} · {t("available")}
           </p>
         </div>
         <div className="hero-art">
@@ -123,6 +116,20 @@ export function Today({
           <span className="art-caption">AIONIA</span>
         </div>
       </section>
+      {/* Only a learner with no study record yet is pointed to the foundations;
+          opening the card records nothing. */}
+      {!closed && !state.draft && theoryDone === 0 && state.sessions.length === 0 && (
+        <section className="panel zero-start" aria-labelledby="zero-start-heading">
+          <div>
+            <h2 id="zero-start-heading">Sıfırdan başlıyorsan</h2>
+            <p>0. Basamak: Temel İnşa ile başla. Kesir, üs, birim ve okuma gibi temel taşları kısa anlatım ve örneklerle kur, sonra konulara geç.</p>
+          </div>
+          <button type="button" className="secondary" onClick={() => navigate("/foundations")}>
+            Temel İnşa’yı aç
+            <ArrowRight size={16} />
+          </button>
+        </section>
+      )}
       <SmartSession navigate={navigate} />
       <div className="stats-strip">
         <div>

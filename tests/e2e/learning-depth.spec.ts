@@ -227,19 +227,26 @@ test("guided study advances meaningful sections, keeps its place and notes offli
   await page.getByRole("slider", { name: /^Payda:/ }).fill("3");
   await expect(page.locator(".area-result")).toContainText("1/3 ≈ 0,333");
   const journey = page.locator(".learning-journey");
-  // Each page ends with a button that turns to the next page.
-  await sections.nth(0).getByRole("button", { name: /^Sonraki sayfa:/ }).click();
-  await expect(sections.nth(1).locator(":scope > h2")).toBeFocused();
-  await sections.nth(1).getByRole("button", { name: /^Sonraki sayfa:/ }).click();
-  await expect(sections.nth(2).locator(":scope > h2")).toBeFocused();
-  await expect(journey).toContainText(`Sayfa 3 / ${sectionCount + 2} · ${titles[2]}`);
+  // “Tümünü gör” shows every page, so in-page turn links are hidden; the
+  // sticky page bar still turns pages. The position follows scrolling, so each
+  // turn focuses the next heading and the position line names that section.
+  await expect(sections.getByRole("button", { name: /^Sonraki sayfa:/ })).toHaveCount(0);
+  const pager = page.getByRole("navigation", { name: "Anlatım sayfaları" });
+  const focused = page.locator(".guide-section > h2:focus");
+  await pager.getByRole("button", { name: /^Sonraki sayfa/ }).click();
+  await expect(focused).toHaveCount(1);
+  const first = titles.indexOf(await focused.innerText());
+  expect(first).toBeGreaterThan(0);
+  await pager.getByRole("button", { name: /^Sonraki sayfa/ }).click();
+  await expect(sections.nth(first + 1).locator(":scope > h2")).toBeFocused();
+  await expect(journey).toContainText(`Sayfa ${first + 2} / ${sectionCount + 2} · ${titles[first + 1]}`);
   await expect(page.locator(".save-status")).toContainText(
     "Bu cihazda kaydedildi",
   );
   await context.setOffline(true);
   await page.reload();
   // The last turned page reopens.
-  await expect(journey).toContainText(`Sayfa 3 / ${sectionCount + 2}`);
+  await expect(journey).toContainText(`Sayfa ${first + 2} / ${sectionCount + 2}`);
   await expect(
     page.getByRole("textbox", { name: "Notun", exact: true }),
   ).toHaveValue("Konu notum adımlarla korunmalı.");

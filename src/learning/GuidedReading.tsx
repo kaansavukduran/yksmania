@@ -1,3 +1,4 @@
+import { typeset } from "../domain/typeset";
 import { geometryExpansion032Ids } from "../data/supplementalTopics032";
 import { geometryCircle040Ids } from "./geometryCircle040";
 import { lazy, Suspense, useId, useMemo, useRef, useState, useEffect, type ReactNode } from "react";
@@ -62,7 +63,7 @@ function Example({ example }: { example: WorkedExample }) {
   return (
     <details className="worked-example">
       <summary>{example.title}</summary>
-      <p className="example-prompt">{example.prompt}</p>
+      <p className="example-prompt">{typeset(example.prompt)}</p>
       <p>
         <strong>Nasıl başlayalım?</strong> {example.strategy}
       </p>
@@ -73,7 +74,7 @@ function Example({ example }: { example: WorkedExample }) {
             {step.expression && (
               <p className="math-expression">{step.expression}</p>
             )}
-            <p>{step.explanation}</p>
+            <p>{typeset(step.explanation)}</p>
           </li>
         ))}
       </ol>
@@ -105,13 +106,13 @@ function Example({ example }: { example: WorkedExample }) {
       {count === example.steps.length && (
         <div className="worked-conclusion" aria-live="polite">
           <p>
-            <strong>Sonuç:</strong> {example.answer}
+            <strong>Sonuç:</strong> {typeset(example.answer)}
           </p>
           <p>
-            <strong>Kontrol:</strong> {example.check}
+            <strong>Kontrol:</strong> {typeset(example.check)}
           </p>
           <p>
-            <strong>Dikkat:</strong> {example.pitfall}
+            <strong>Dikkat:</strong> {typeset(example.pitfall)}
           </p>
         </div>
       )}
@@ -347,7 +348,7 @@ export function GuidedReading({
               </p>
               <h2 tabIndex={-1}>{section.title}</h2>
               {section.paragraphs.map((paragraph, j) => (
-                <p key={j}>{paragraph}</p>
+                <p key={j}>{typeset(paragraph)}</p>
               ))}
               {section.table && (
                 <div
@@ -404,7 +405,8 @@ export function GuidedReading({
               )}
               <SectionPlaces text={[section.title, ...section.paragraphs].join(" ")} />
               {i === visualSection && !geometryCircle040Ids.includes(guide.id) && <VisualLab id={guide.id} />}
-              <PageTurn next={i + 1} title={pageTitle(i + 1)} onTurn={goTo} />
+              {/* “Tümünü gör” shows every page at once: no page-turn links. */}
+              {paged && <PageTurn next={i + 1} title={pageTitle(i + 1)} onTurn={goTo} />}
             </section>
           ),
       )}
@@ -418,11 +420,13 @@ export function GuidedReading({
           {guide.examples.map((example) => (
             <Example key={example.title} example={example} />
           ))}
-          <PageTurn
-            next={guide.sections.length + 1}
-            title={pageTitle(guide.sections.length + 1)}
-            onTurn={goTo}
-          />
+          {paged && (
+            <PageTurn
+              next={guide.sections.length + 1}
+              title={pageTitle(guide.sections.length + 1)}
+              onTurn={goTo}
+            />
+          )}
         </section>
       )}
       {shown(guide.sections.length + 1) && (

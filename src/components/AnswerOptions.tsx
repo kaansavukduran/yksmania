@@ -130,7 +130,7 @@ export function AnswerOptions({
         );
       })}
       <p className="small muted answer-keys">
-        Kısayollar: 1–{options.length} veya A–{letter(options.length - 1)} şık seçer, H ipucunu açar, Enter onaylar. ✕ ile elediğin şıkkın üstünü çiz; elemeler kaydedilmez.
+        Kısayollar: 1–{options.length} veya A–{letter(options.length - 1)} şık seçer, H ipucunu açar, Enter onaylar. Şıkkın yanındaki çarpı düğmesiyle elediğin şıkkın üstünü çiz; elemeler kaydedilmez.
       </p>
     </div>
   );

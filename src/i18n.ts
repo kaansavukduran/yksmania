@@ -238,11 +238,11 @@ const messages: Record<string, string> = {
   catalogueHeading: "Konu başlığı",
   sourceHeading: "Kaynak başlığı",
   curriculumScope:
-    "Excel kaynaklarından 341 ana konu başlığı. Bir başlığın listelenmesi, içeriğinin veya sorularının hazır olduğu anlamına gelmez. Sınav yılına ait resmî tam kapsam ayrıca doğrulanmalıdır. Kaynak başlıkları özgün Türkçesiyle korunur.",
+    "Müfredat kataloğunda {n} ana konu başlığı var. Bir başlığın listelenmesi, içeriğinin veya sorularının hazır olduğu anlamına gelmez. Sınav yılına ait resmî tam kapsam ayrıca doğrulanmalıdır. Kaynak başlıkları özgün Türkçesiyle korunur.",
   theoryIntro:
     "TYT veya AYT seç, dersini aç ve konu anlatımlarına ulaş. Sorular ayrı bölümde.",
   questionsIntro:
-    "Sınavını ve dersini seç. Hazır soru setlerini çöz veya cihazındaki kaynak PDF’lerini aç.",
+    "Sınavını ve dersini seç, hazır soru setlerini çöz.",
   readingNotMastery:
     "Okumak tek başına öğrenme puanı kazandırmaz. Bağımsız çözüm ayrı kaydedilir.",
   sourceFiles: "Kaynak dosyaları",

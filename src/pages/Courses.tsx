@@ -9,6 +9,7 @@ import curriculum from "../data/curriculum.json";
 import { Empty, SubjectMark } from "../components/Shared";
 import type { Lesson } from "../domain/model";
 import { StudyTimer } from "../components/StudyTimer";
+import { contentCounts } from "../domain/counts";
 import { geometryFoundation031Ids } from "../data/supplementalTopics031";
 import {
   originalExercisesForLesson,
@@ -52,7 +53,7 @@ export function Courses({
           <h1>{t(mode === "theory" ? "courses" : "questions")}</h1>
         </div>
         <span className="quiet-chip">
-          {curriculum.length} {t("topics")}
+          {contentCounts.officialHeadings} ana başlık · {contentCounts.readyLessons} hazır anlatım
         </span>
         <StudyTimer />
       </header>
@@ -217,7 +218,7 @@ export function Courses({
         })}
       </div>
       {!filtered.length && <Empty text={t("noResults")} />}
-      <p className="scope-note">{t("curriculumScope")}</p>
+      <p className="scope-note">{t("curriculumScope").replace("{n}", String(contentCounts.officialHeadings))}</p>
     </>
   );
 }

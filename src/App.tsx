@@ -23,6 +23,7 @@ import {
 import { useRegisterSW } from "virtual:pwa-register/react";
 import { Capacitor } from "@capacitor/core";
 import { useApp } from "./store";
+import { Sparkle } from "./components/Sparkle";
 import { ExamDeadlineWatcher } from "./pages/ExamDeadlineWatcher";
 import { TrophyToasts } from "./components/Trophies";
 import {
@@ -305,7 +306,7 @@ export default function App() {
       >
         <a className="brand" href="#/today">
           <span className="brand-symbol" aria-hidden="true">
-            Y<span>✦</span>
+            Y<Sparkle />
           </span>
           <span>
             yks<span>mania</span>

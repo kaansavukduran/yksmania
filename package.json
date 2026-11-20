@@ -5,7 +5,7 @@
   "main": "desktop/main.cjs",
   "scripts": {
     "dev": "vite",
-    "check": "node scripts/check-module-paths.mjs && tsc --noEmit",
+    "check": "node scripts/check-module-paths.mjs && tsc --noEmit && node scripts/lint-content.mjs",
     "build": "node scripts/check-module-paths.mjs && node scripts/prepare-assets.mjs && tsc --noEmit && vite build && node scripts/verify-build-cache.mjs",
     "preview": "vite preview --host 127.0.0.1",
     "test": "vitest run",
@@ -14,7 +14,8 @@
     "desktop:pack": "npm run build && electron-builder",
     "android:sync": "npm run build && cap sync android",
     "test:desktop": "node scripts/test-desktop.mjs",
-    "format": "prettier --write src tests desktop scripts *.ts *.json"
+    "format": "prettier --write src tests desktop scripts *.ts *.json",
+    "lint:content": "node scripts/lint-content.mjs"
   },
   "repository": {
     "type": "git",
