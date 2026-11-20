@@ -28,6 +28,7 @@ import { formatCountdown } from "../domain/focusTimer";
 import type { ExamDraft, ExamSession } from "../domain/examModel";
 import "../exams.css";
 import { hidesSubject } from "../domain/smartSession";
+import { ExamInsights } from "../components/ExamInsights";
 import { QuestionHelp } from "../components/QuestionHelp";
 import { helpPanels, previousHelpPanelCount } from "../learning/questionHelp";
 import { effectiveHelpLevel } from "../learning/helpProgression";
@@ -704,6 +705,7 @@ function ExamResults({
           </table>
         </div>
       </section>
+      <ExamInsights session={session} />
       <section
         className="exam-solutions"
         aria-label="Açıklamalı deneme çözümleri"
