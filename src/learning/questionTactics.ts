@@ -1864,6 +1864,19 @@ export const questionTactics: QuestionTactic[] = [
       "Redoks (AYT bağlantısı) basamak değişimi ister: 2017 YGS Fen 23’te nötralleşme ve tuz var, basamak değişmez (C). Tuz ya da katı oluşması redoks kanıtı değildir.",
     ],
   },
+  {
+    id: "denklemli-gecis-mol-merkez",
+    guides: ["denklemli-miktar-gecisi"],
+    match: /kaç gram|kaç litre|normal koşul|NK|katsayı|harcan|oluşan|tepkimeye giren|ayrıştı|ayrışma/i,
+    title: "Denklemli geçişte merkez mol: verilen → mol → × aranan/kaynak katsayı → hedef birim",
+    steps: [
+      "Verileni mole çevir: kütle m/M, NK gaz hacmi V/22,4, adet N/Nₐ (4 g H₂ = 2 mol). Gramı katsayıyla doğrudan çarpma.",
+      "Katsayı oranı harcanan miktara uygulanır: N₂ + 3H₂ → 2NH₃’te 0,9 mol H₂ harcanırsa NH₃ = 0,9 × 2/3 = 0,6 mol.",
+      "Aynı T, P’de gazların hacim oranı mol oranıdır; yalnız gaz türleri sayılır (4 L CH₄: CO₂ 4 L, su buharı 8 L; su yoğuşursa yalnız 4 L).",
+      "Toplam ürün gazında katsayıları topla: 2025 TYT Fen 12’de 2H₂O → 2H₂ + O₂, 3 mol gaz ↔ 2 mol su ayrıştı; 4 molün yarısı → %50 (A). 67,2 L’nin tamamı H₂ değildir.",
+      "Geriye yürü: 6,72 L H₂ = 0,30 mol → Al 0,30 × 2/3 = 0,20 mol = 5,4 g. Ardışık tepkimede ara ürünün yalnız kullanılan kısmını taşı (0,5 mol CaO’nun %80’i → 0,4 mol Ca(OH)₂ = 29,6 g).",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
