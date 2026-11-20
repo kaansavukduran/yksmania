@@ -1474,6 +1474,19 @@ export const questionTactics: QuestionTactic[] = [
       "Aralık işleminde bağımsızlığı ve işareti sor: a − b’nin alt ucunda a küçük, b büyük; sıfırı içeren aralıkta karenin alt ucu 0.",
     ],
   },
+  {
+    id: "rasyonel-butun-parca",
+    guides: ["rasyonel-sayilar", "tyt-mat-rasyonel-kaynak-035"],
+    match: /kesir|rasyonel|payda|pay|sadeleş|genişlet|devirli|ondalık|kalanın|bütün|doluluk/i,
+    title: "Rasyonelde parçayı eşitle, bütünü her adımda etiketle",
+    steps: [
+      "Toplama/çıkarmada parça boyunu eşitle (ortak payda); paydaları toplama. Sonucu 0, 1/2 ve 1 referanslarıyla denetle.",
+      "Çarpımda çarpanlar sadeleşir; bölmede yalnız böleni ters çevir. Toplama terimleri arasında sadeleştirme yapılmaz: (6 + 3)/3 ≠ 2 + 3.",
+      "Sıralama: önce işaret ve pozitif payda; ortak payda, 1’e eksik ya da çapraz çarpım. Negatiflerde sıfıra uzak olan küçüktür.",
+      "‘Kalanın kesri’nde bütün değişir: (1 − 1/4)(1 − 1/3)x gibi kalan çarpanlarını çarp; tersine çözümde her adımda bölünen bütünü yaz.",
+      "Oran sorusunda bütünü doğru seç: kap dahil tartımlardan önce boş kabı çıkar (2021 TYT Mat 1: 75/120 = 5/8).",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
