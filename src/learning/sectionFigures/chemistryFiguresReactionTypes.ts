@@ -25,20 +25,20 @@ const RX = [
 ];
 const criteria: FigureDef = {
   caption:
-    "Sınıflandırmadan önce ölçütü seç: bir tepkime birden çok sınıfa uyabilir. Bir denkleme tıkla: her ölçüt sütununda ✓ ya da – okunur ve gerekçe açılır. Yanma için O₂ giren olmalı; sentez/analiz tür sayısını izler; çökelme yeni katı ister. *Redoks AYT bağlantısıdır.",
-  alt: "Yedi denklem satırı ve altı ölçüt sütunlu tablo; seçili satır vurgulu.",
+    "Sınıflandırmadan önce ölçütü seç: bir tepkime birden çok sınıfa uyabilir. Bir denkleme tıkla: altı ölçüt çipinde ✓ ya da – okunur ve gerekçe açılır. Yanma için O₂ giren olmalı; sentez/analiz tür sayısını izler; çökelme yeni katı ister. *Redoks AYT bağlantısıdır.",
+  alt: "Seçili denklem için altı ölçüt çipi (✓ uyar, – uymaz) ve altta yedi denklem düğmesi.",
   picks: RX.map((r) => ({ label: r.label.split(" →")[0], title: r.label, detail: [r.why] })),
   draw: (_v, _s, pick = -1) => {
-    const els: El[] = [], x0 = 3.2, dx = 1.8;
-    CRIT.forEach((c, j) => els.push(txt(v(x0 + j * dx, 0.55), c, "c", { small: true, bold: true, tone: c === "redoks*" ? "muted" : "ink" })));
-    RX.forEach((r, i) => {
-      const y = -i * 0.55, sel = pick === i;
-      if (sel) els.push(rect(-0.1, x0 + 5.5 * dx, y - 0.24, y + 0.24, "a", false));
-      els.push(txt(v(0, y), r.label.split(" →")[0], "e", { small: true, bold: sel, tone: sel ? "a" : "ink", pick: i }));
-      r.m.forEach((ok, j) => els.push(txt(v(x0 + j * dx, y), ok ? "✓" : "–", "c", { small: true, bold: !!ok, tone: ok ? (j === 5 ? "muted" : "b") : "muted" })));
+    // Mobile-friendly: the selected reaction’s six criteria as two rows of
+    // chips; the reactions themselves are the pick list below.
+    const r = RX[pick >= 0 ? pick : 0], els: El[] = [txt(v(0, 1.25), r.label, "e", { small: true, bold: true, tone: "a" })];
+    CRIT.forEach((c, j) => {
+      const x = (j % 3) * 2.3, y = 0.45 - Math.floor(j / 3) * 0.75, ok = !!r.m[j];
+      els.push(rect(x, x + 2.1, y - 0.28, y + 0.28, ok ? (j === 5 ? "muted" : "b") : "muted", ok));
+      els.push(txt(v(x + 1.05, y), `${c} ${ok ? "✓" : "–"}`, "c", { small: true, bold: ok, tone: ok ? "ink" : "muted" }));
     });
-    els.push(txt(v(0, 1.15), pick >= 0 ? RX[pick].label : "Bir denkleme tıkla.", "e", { small: true, bold: true, tone: "a" }));
-    els.push(txt(v(-0.3, 1.5), " ", "c"), txt(v(x0 + 5.6 * dx, -3.6), " ", "c"));
+    RX.forEach((rr, i) => els.push(txt(v((i % 2) * 3.5, -1.0 - Math.floor(i / 2) * 0.5), rr.label.split(" →")[0], "e", { small: true, bold: pick === i, tone: pick === i ? "a" : "ink", pick: i })));
+    els.push(txt(v(-0.2, 1.6), " ", "c"), txt(v(6.9, -2.8), " ", "c"));
     return { els, readout: [pick >= 0 ? RX[pick].why : "Bir denkleme tıkla.", "CaCO₃ ısıtılınca CO₂ çıkması yanma değil, analizdir: O₂ girmez."] };
   },
 };
