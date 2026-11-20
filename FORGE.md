@@ -26,13 +26,14 @@
 - **Koligatif özellikler ve ayırma (TYT Kimya 048):** beş figür (etkin tanecik ÷ kg su, 2025 TYT Fen 13 cevap B, karışım → fark → yöntem akışı ve 2017 YGS Fen 25, dört bileşenli ayırma, kristallendirme) ve `koligatif-tanecik-ayirma-fark` taktiği; 320 px’te yöntem kutusu taşması ve kristal etiketinin çizgi üstüne binmesi düzeltildi; ara sıcaklıklar “doğrusal varsayım” olarak etiketli.
 - **Sabun, deterjan ve temizlik (TYT Kimya 053):** altı figür (sabun anyonu ve 2017 LYS2 Kimya 29 cevap E, misel aşamaları, sabunlaşma, sert su 2 : 1, asit 1 : 1, hipoklorit–kireç panosu) ve `sabun-bas-kuyruk-iyon` taktiği; katyon etiketi çakışması, “+ 3 NaOH” okla çakışması ve 320 px’te formül–işaret çakışması düzeltildi.
 - **Asit baz tepkimeleri (TYT Kimya 050):** beş figür (üç düzeyli denklem ve seyirci iyon, eşdeğer çubukları ve 2017 YGS Fen 23 cevap C, BDS doğruları, son hacim adımları, gaz kimliği) ve `asit-baz-bds-son-hacim` taktiği; eksen etiketi, hacim etiketi ve çizgi üstü yazı çakışmaları düzeltildi.
+- **Asit, baz ve tuzlar genel özellikler (TYT Kimya 049):** dört figür (gösterge aralıkları, formül ve suyla tepkime, kuvvet × derişim tanecik kabı, tuz pH bölgesi) ve `asit-baz-sinif-kanit` taktiği; gösterge renkleri yazıyla verilir, tonlar rengin kendisi sayılmaz.
 - **Doğrulanan, değişiklik gerekmeyen maddeler:** `AnswerOptions` (tüm düğmeler `type="button"`, elemeler soru kimliği değişince sıfırlanır, klavye dinleyicisi bir kez bağlanır ve güncel değerleri okur), `ChoiceSelect` (`useLayoutEffect`, boş değerli yer tutucu çip olarak çizilmez), `PlaceMap` (`useMemo` geometri, tıklanabilir pin bilgi kartı, yakınlaştır/uzaklaştır/odakla) zaten istenen durumda.
 - **Doğrulama:** check; 233 dosya / 2.963 birim testi; build; tarayıcı: Temel İnşa 2/2 (çevrimdışı yeniden yükleme, 320 px + büyük yazı, axe), plan/bugün/rehber 19/19, öğrenme derinliği/uygulama/kum saati 38/38, uygulama + ayarlar 36/36. Figür yazı çakışma denetimi 1100 ve 320 px'te, bütün kaydırıcı/adım/seçim durumlarında 0 bulgu (57/57 figür tarayıcı taraması ve birim çizim taraması).
 - **Öz denetim:** (a) sıfır ön bilgi: her terim ilk geçtiği sayfada tanımlı, yöntem adı yerine işlem sözle yazılı; (b) şekiller tema değişkenleriyle çizilir, 320 px'te yatay kaydırma yok; (c) akış: tek tıkla ön ders, sayfa noktalarıyla atlama; (d) kod: tip denetimi ve testler yeşil. Açık: kendi ders sırasını seçme, soru başına süre kaydı (süre nabzı/turlama için şema), istisna–tuzak avcısı, grafik/tablo okulu, masaüstü bölünmüş çalışma masası; 0.25.0 kilometre taşı. Ses motoru istenen bütün sesleri zaten içeriyor (Faz 1).
 
 ### İlerleme tablosu (20 Kasım, Forge051)
 
-PDF paydası 17 Kasım kanonik envanteridir: **105 / 8.981 (%1,17)**. Ders bazında PDF paydası envanterde ayrı tutulmadığı için ders satırları kopya kâğıdı paydasını kullanır (517 kopya kâğıdı); 8.445 sayısı kullanılmaz (bkz. `docs/FORGE_MASTER_PLAN.md`).
+PDF paydası 17 Kasım kanonik envanteridir: **106 / 8.981 (%1,18)**. Ders bazında PDF paydası envanterde ayrı tutulmadığı için ders satırları kopya kâğıdı paydasını kullanır (517 kopya kâğıdı); 8.445 sayısı kullanılmaz (bkz. `docs/FORGE_MASTER_PLAN.md`).
 
 | Ders | Kopya kâğıdı işlenen / toplam | Hazır konu / uygulama dersi | Görsel/interaktif lab (figürlü ders · figür) | Kalan açık (figürsüz ders) |
 | --- | ---: | ---: | ---: | ---: |
@@ -40,7 +41,7 @@ PDF paydası 17 Kasım kanonik envanteridir: **105 / 8.981 (%1,17)**. Ders bazı
 | TYT Matematik | 5 / 38 (%13,16) | 40 / 45 | 17 · 45 | 28 |
 | TYT Geometri | 1 / 32 (%3,13) | 19 / 19 | 19 · 174 | 0 |
 | TYT Fizik | 7 / 24 (%29,17) | 24 / 28 | 24 · 177 | 4 |
-| TYT Kimya | 24 / 56 (%42,86) | 55 / 57 | 27 · 119 | 30 |
+| TYT Kimya | 25 / 56 (%44,64) | 55 / 57 | 28 · 123 | 29 |
 | TYT Biyoloji | 7 / 36 (%19,44) | 36 / 45 | 12 · 37 | 33 |
 | TYT Tarih | 4 / 24 (%16,67) | 24 / 34 | 6 · 16 | 28 |
 | TYT Coğrafya | 5 / 40 (%12,50) | 40 / 40 | 8 · 17 | 32 |
@@ -52,8 +53,8 @@ PDF paydası 17 Kasım kanonik envanteridir: **105 / 8.981 (%1,17)**. Ders bazı
 | AYT Kimya | 11 / 55 (%20,00) | 55 / 56 | 18 · 19 | 38 |
 | AYT Biyoloji | 11 / 75 (%14,67) | 75 / 76 | 16 · 39 | 60 |
 | Temel İnşa (0. basamak) | — | 25 ön ders (10 TYT dersinin hepsi) | 25 · 57 | 0 ders ön derssiz |
-| **Toplam** | **95 / 517 (%18,38)** | **505 / 540** | **211 · 827** | **354** |
-| **Genel PDF** | **105 / 8.981 · %1,17** | | | |
+| **Toplam** | **96 / 517 (%18,57)** | **505 / 540** | **212 · 831** | **353** |
+| **Genel PDF** | **106 / 8.981 · %1,18** | | | |
 
 ## Forge046a — seçim çipleri, iki yeni tema, sade savaş şemaları
 

@@ -1799,6 +1799,19 @@ export const questionTactics: QuestionTactic[] = [
       "Gazı türden seç: karbonat + asit → CO₂ (CaCO₃ 2 HCl, NaHCO₃ 1 HCl), aktif metal + asit → H₂. Eşdeğerlik noktası her tuzda pH 7 değildir.",
     ],
   },
+  {
+    id: "asit-baz-sinif-kanit",
+    guides: ["asit-baz-tuz-ozellikleri"],
+    match: /pH|turnusol|fenolftalein|metil oranj|indikatör|asidik|bazik|nötr|iletken|kuvvetli asit|zayıf asit|tuz çözeltisi|oksit/i,
+    title: "Asit–baz sınıfını doğru kanıttan oku: pH sınıfı, gösterge aralığı, iletkenlik ayrı",
+    steps: [
+      "25 °C’de pH < 7 asidik, 7 nötr, > 7 bazik; 7 sıcaklığa bağlıdır. pH sınıfı verir, maddenin kimliğini ya da derişimini tek başına vermez.",
+      "Gösterge bir aralık okur: fenolftalein yaklaşık 8,3’ün altında renksiz (pH 7 ve 8 de), metil oranj 4,4’ün üstünde sarı. Renksizlik asit kanıtı değildir.",
+      "Formüldeki harfe değil suyla tepkimeye bak: N₂O₅ → HNO₃ (asidik), CaO → Ca(OH)₂ ve NH₃ → NH₄⁺ + OH⁻ (bazik); CH₃OH baz değildir, CO nötr oksittir.",
+      "Kuvvet = iyonlaşma oranı, derişim = hacim başına miktar. Seyreltik HCl yine kuvvetli asittir; su eklemek türü değiştirmez.",
+      "Tuz ≠ nötr: NaCl yaklaşık nötr, Na₂CO₃ ve NaHCO₃ bazik, NH₄Cl asidik. Hepsi iletken; iletkenlik asitlik kanıtı değildir.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
