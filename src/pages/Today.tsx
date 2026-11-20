@@ -2,7 +2,9 @@ import { ArrowRight, Check, Sprout } from "lucide-react";
 import { useApp } from "../store";
 import { Sparkle } from "../components/Sparkle";
 import { contentCounts } from "../domain/counts";
-import { lessons, lessonById } from "../domain/content";
+import { lessons, lessonById, subjects } from "../domain/content";
+import { weeklyReport } from "../domain/weeklyReport";
+import { WeeklyReportCard } from "../components/WeeklyReport";
 import { SmartSession } from "../components/SmartSession";
 import {
   addDays,
@@ -45,6 +47,7 @@ export function Today({
   const correct = state.sessions.reduce((n, s) => n + independentCorrect(s), 0);
   const dates = Array.from({ length: 7 }, (_, i) => addDays(today, i - 6));
   const theoryDone = completionDates(state, "theory").size;
+  const report = weeklyReport(state, today, (id) => lessonById(id)?.subjectId);
   return (
     <>
       <header className="page-heading">
@@ -149,6 +152,7 @@ export function Today({
           <span>{t("reviewsDue")}</span>
         </div>
       </div>
+      {report && <WeeklyReportCard report={report} subjectName={subjectName} />}
       <div className="today-flow">
         <TodayReviewQueue
           items={reviews}
@@ -207,4 +211,9 @@ export function Today({
       <p className="scope-note">{t("scopeNote")}</p>
     </>
   );
+}
+
+function subjectName(id: string) {
+  const subject = subjects.find((s) => s.id === id);
+  return subject ? `${subject.exam} ${subject.name.tr}` : id;
 }

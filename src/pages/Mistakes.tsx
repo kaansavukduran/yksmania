@@ -13,6 +13,8 @@ import { MistakeBoss, MistakeSprint, MistakeWarning, PocketBooklet } from "../co
 import { MistakeBridge } from "../components/MistakeBridge";
 import { StarBadge } from "../components/StarPractice";
 import { beginExam, mistakeSprintSpec, questionStars } from "../domain/exams";
+import { MistakePatterns } from "../components/MistakePatterns";
+import { lastSevenDays, mistakePatterns, wrongAnswers } from "../domain/mistakePatterns";
 import { compareMistakes, mistakeStatus, STATUS_LABEL, type MistakeStatus } from "../domain/mistakeStatus";
 export function Mistakes({
   start,
@@ -21,7 +23,7 @@ export function Mistakes({
   start: (l: Lesson) => void;
   navigate: (s: string) => void;
 }) {
-  const { state, t, l, update, commit, toast } = useApp();
+  const { state, today, t, l, commit, toast } = useApp();
   const { confirm, confirmationDialog } = useConfirmationDialog();
   const undoLock = useRef(false);
   const [undoing, setUndoing] = useState(false);
@@ -79,6 +81,22 @@ export function Mistakes({
     kalici: allItems.filter((x) => x.status === "kalici").length,
   };
   const items = allItems.filter((x) => filter === "hepsi" || x.status === filter);
+  const weekPatterns = mistakePatterns(
+    lastSevenDays(
+      wrongAnswers(state.sessions, state.examSessions, state.explorations, (id) => lessonById(id)?.subjectId),
+      today,
+    ),
+  );
+  async function startSprint(ids: string[]) {
+    const spec = mistakeSprintSpec(ids);
+    if (!spec) return;
+    try {
+      await commit((s) => beginExam(s, spec, Date.now(), "learning"));
+      navigate("/exams");
+    } catch {
+      toast("Sprint başlatılamadı. Kayıtların korundu; yeniden dene.");
+    }
+  }
   return (
     <>
       {confirmationDialog}
@@ -104,6 +122,14 @@ export function Mistakes({
           {t("history")}
         </button>
       </div>
+      {tab === "mistakes" && (
+        <MistakePatterns
+          patterns={weekPatterns}
+          subjectName={subjectName}
+          busy={!!state.examDraft}
+          begin={startSprint}
+        />
+      )}
       {tab === "mistakes" ? (
         allItems.length ? (
           <div className="mistake-list">
@@ -130,16 +156,7 @@ export function Mistakes({
             <MistakeSprint
               ids={allItems.filter((x) => x.status === "acik").map((x) => x.response.questionId)}
               busy={!!state.examDraft}
-              begin={async (ids) => {
-                const spec = mistakeSprintSpec(ids);
-                if (!spec) return;
-                try {
-                  await commit((s) => beginExam(s, spec, Date.now(), "learning"));
-                  navigate("/exams");
-                } catch {
-                  toast("Sprint başlatılamadı. Kayıtların korundu; yeniden dene.");
-                }
-              }}
+              begin={startSprint}
             />
             <MistakeBoss
               ids={[...allItems]

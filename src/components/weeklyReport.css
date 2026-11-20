@@ -1,0 +1,50 @@
+.weekly-report {
+  margin: 0 0 1.3rem;
+  padding: 1.2rem;
+  min-width: 0;
+  color: var(--text);
+}
+.weekly-report-sunday {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+.weekly-report h2 {
+  margin: 0;
+}
+.weekly-report > summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.25rem 0.75rem;
+  min-height: 44px;
+  cursor: pointer;
+}
+.weekly-report-title {
+  font-weight: 600;
+}
+.weekly-report-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+  gap: 0.6rem;
+  margin: 0.75rem 0;
+}
+.weekly-report-row {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.weekly-report-row dt {
+  color: var(--muted);
+  font-size: 0.9em;
+}
+.weekly-report-row dd {
+  display: grid;
+  gap: 0.1rem;
+  margin: 0;
+}

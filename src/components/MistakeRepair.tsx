@@ -1,32 +1,13 @@
 import { useState } from "react";
 import { useApp } from "../store";
+import { mistakeKey, mistakeReasons, type MistakeReason } from "../domain/mistakePatterns";
 
 /*
  * Mistake autopsy: tag why an answer went wrong and retry it closed-book.
  * Tags and retries are the learner's own notes. They live in `explorations`,
  * are never learning evidence, and award no XP or mastery.
  */
-export const mistakeReasons = [
-  { id: "bilgi", label: "Bilgi eksik", repair: "İlgili konu sayfasını yeniden oku; kuralı kopya kâğıdından kendi cümlenle yaz." },
-  { id: "kavram", label: "Kavram yanılgısı", repair: "Yanlış fikrini ve doğrusunu yan yana yaz; yanlışın neden yanlış olduğunu tek cümleyle açıkla." },
-  { id: "yontem", label: "Yöntem seçimi", repair: "İpucu panelindeki soru tipi yaklaşımını oku; aynı tipten bir soru daha çöz." },
-  { id: "islem", label: "İşlem hatası", repair: "Her adımı ayrı satıra yaz; sonucu ters işlemle veya değer vererek denetle." },
-  { id: "okuma", label: "Okuma / dikkat", repair: "Soru kökünde isteneni işaretle; “değildir, yalnız, en az” gibi sözcüklerin altını çiz." },
-  { id: "birim", label: "Birim / işaret", repair: "Birimleri sayılarla birlikte taşı; işaret değişimini her adımda kontrol et." },
-  { id: "sure", label: "Süre baskısı", repair: "Bu tip soruyu ilk turda işaretleyip geç; kolaylar bitince geri dön." },
-] as const;
-export type MistakeReason = (typeof mistakeReasons)[number]["id"];
-
-/** Short stable key within the 100-character exploration key limit. */
-export function mistakeKey(sessionId: string, questionId: string) {
-  let h = 2166136261;
-  const text = `${sessionId}\u0000${questionId}`;
-  for (let i = 0; i < text.length; i++) {
-    h ^= text.charCodeAt(i);
-    h = Math.imul(h, 16777619);
-  }
-  return `mistake:${(h >>> 0).toString(36)}:${text.length.toString(36)}`;
-}
+export { mistakeKey, mistakeReasons, type MistakeReason };
 
 export function MistakeRepair({
   sessionId,
