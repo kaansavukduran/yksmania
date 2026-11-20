@@ -1955,6 +1955,19 @@ export const questionTactics: QuestionTactic[] = [
       "Mol yüzdesi ≠ kütle yüzdesi (0,1 + 0,1 mol: molce %50, kütlece %27 Mg). Sonucu iki eşitliğe geri koy; negatif miktar kabul edilmez.",
     ],
   },
+  {
+    id: "hal-grafigi-esik-plazma",
+    guides: ["gazlar-hal-degisim-plazma"],
+    match: /ısıtma grafiği|soğutma grafiği|hâl değişim|erime sıcaklığı|kaynama sıcaklığı|plato|plazma|iyonlaşmış|gazın basıncı|mmHg|Kelvin/i,
+    title: "Hâl grafiğinde eğim/plato ve yönü oku; eşikleri sayı doğrusuna koy; plazmada yük taşıyıcısını ara",
+    steps: [
+      "Saf madde, sabit basınç: I katı, II erime (katı + sıvı), III sıvı, IV kaynama (sıvı + gaz), V gaz. Platoda ısı alınır ama sıcaklık sabittir.",
+      "Soğutmada ilk plato yoğuşma, sonra donma; platoda sistem enerji verir. Tam eşik sıcaklığı faz oranını vermez; basınç değişirse eşik de değişir.",
+      "Eşikleri sayı doğrusuna koy: 2023 TYT Fen 11 (A) cıva −39/357 °C → −50 katı, −30 yalnız sıvı, 360 gaz.",
+      "Plazma = iyonlaşmış gaz: serbest elektron + pozitif iyon (nötr de olabilir). Yük dengesi toplam yükle kurulur (12 adet 2+ → 24 elektron). Parlaklık ya da iletken sıvı plazma kanıtı değildir.",
+      "Birim: 1 atm = 760 mmHg; oranlarda sıcaklık Kelvin (°C oranı kullanılmaz). Gaz yasaları bu TYT kazanımında isteğe bağlı AYT bağlantısıdır.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

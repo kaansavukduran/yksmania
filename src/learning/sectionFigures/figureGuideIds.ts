@@ -51,6 +51,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "kati-kutlesi-degisimi",
   "safsizlik-problemleri",
   "tepkimeli-karisim",
+  "gazlar-hal-degisim-plazma",
   "din-felsefesi",
   "ahlak-felsefesi",
   "radyoaktivite",
