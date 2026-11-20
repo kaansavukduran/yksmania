@@ -34,6 +34,23 @@ const visualFirstLessonIds = new Set<string>([
   "cemberin-analitigi",
 ]);
 
+const MODE_KEY = "yksmania.guide.mode";
+/** Okuma biçimi cihaz tercihidir (öğrenme kaydı değildir); depolama kapalıysa “tümünü gör”. */
+function readGuideMode(): "all" | "page" {
+  try {
+    return localStorage.getItem(MODE_KEY) === "page" ? "page" : "all";
+  } catch {
+    return "all";
+  }
+}
+function writeGuideMode(mode: "all" | "page") {
+  try {
+    localStorage.setItem(MODE_KEY, mode);
+  } catch {
+    /* tercih yalnız bu oturumda geçerli */
+  }
+}
+
 function moveToSection(id: string) {
   const heading = document.getElementById(id)?.querySelector("h2");
   heading?.focus({ preventScroll: true });
@@ -144,6 +161,14 @@ export function GuidedReading({
         ? `${prefix}-examples`
         : `${prefix}-recall`;
   const [current, setCurrent] = useState(step);
+  const [mode, setModeState] = useState<"all" | "page">(readGuideMode);
+  const paged = mode === "page";
+  const shown = (i: number) => !paged || current === i;
+  function setMode(next: "all" | "page") {
+    setModeState(next);
+    writeGuideMode(next);
+    requestAnimationFrame(() => moveToSection(pageId(current)));
+  }
   // A page opened or turned stays aligned (even while lazy figures load)
   // until the learner scrolls, touches or clicks.
   const pinned = useRef<number | null>(step > 0 ? step : null);
@@ -159,7 +184,8 @@ export function GuidedReading({
     setJourney({ step: i });
     setCurrent(i);
     pinned.current = i;
-    moveToSection(pageId(i));
+    if (paged) requestAnimationFrame(() => moveToSection(pageId(i)));
+    else moveToSection(pageId(i));
   }
   // Reopen the last turned page without moving keyboard focus, and keep the
   // pinned page aligned while content above it finishes loading.
@@ -191,7 +217,7 @@ export function GuidedReading({
   }, [guide.id]);
   // The page bar shows the page whose top is nearest the reading line.
   useEffect(() => {
-    if (typeof IntersectionObserver === "undefined") return;
+    if (paged || typeof IntersectionObserver === "undefined") return;
     const ids = Array.from({ length: stages }, (_, i) => pageId(i));
     const observer = new IntersectionObserver(
       () => {
@@ -214,7 +240,7 @@ export function GuidedReading({
     }
     return () => observer.disconnect();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [prefix, stages]);
+  }, [prefix, stages, paged]);
   // Arrow keys turn pages unless the learner is using a control.
   useEffect(() => {
     function onKey(event: KeyboardEvent) {
@@ -247,6 +273,14 @@ export function GuidedReading({
         role="group"
         aria-label="Anlatım düzeni"
       >
+        <div className="segmented guide-modes" role="group" aria-label="Okuma biçimi">
+          <button type="button" className={paged ? "active" : ""} aria-pressed={paged} onClick={() => setMode("page")}>
+            Sayfa sayfa ({current + 1}/{stages})
+          </button>
+          <button type="button" className={!paged ? "active" : ""} aria-pressed={!paged} onClick={() => setMode("all")}>
+            Tümünü gör
+          </button>
+        </div>
         <p className="small muted">
           Sayfa {current + 1} / {stages} · {pageTitle(current)}
         </p>
@@ -254,6 +288,17 @@ export function GuidedReading({
           Sayfa numarası yalnız yerini gösterir; öğrenme veya tamamlanma puanı
           değildir.
         </p>
+      </div>
+      <div
+        className="guide-progress"
+        role="progressbar"
+        aria-label="Anlatımda konum"
+        aria-valuemin={1}
+        aria-valuemax={stages}
+        aria-valuenow={current + 1}
+        aria-valuetext={`Sayfa ${current + 1} / ${stages}`}
+      >
+        <span style={{ width: `${((current + 1) / stages) * 100}%` }} />
       </div>
       <nav className="guide-contents" aria-label="Anlatım içeriği">
         <p className="small muted">
@@ -291,7 +336,7 @@ export function GuidedReading({
       </nav>
       {guide.sections.map(
         (section, i) =>
-          (
+          shown(i) && (
             <section
               className="guide-section"
               key={section.title}
@@ -363,7 +408,7 @@ export function GuidedReading({
             </section>
           ),
       )}
-      {(
+      {shown(guide.sections.length) && (
         <section className="guide-examples" id={`${prefix}-examples`}>
           <h2 tabIndex={-1}>Çözümlü örnekler</h2>
           <p className="small muted">
@@ -380,7 +425,7 @@ export function GuidedReading({
           />
         </section>
       )}
-      {(
+      {shown(guide.sections.length + 1) && (
         <section className="guide-recall" id={`${prefix}-recall`}>
           <h2 tabIndex={-1}>Anlatmadan önce hatırla</h2>
           <p className="small muted">
