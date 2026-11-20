@@ -1409,6 +1409,19 @@ export const questionTactics: QuestionTactic[] = [
       "Hız karşılaştırmasında sabit tutulanı listele: çap eşitse miyelinli hızlı beklenir; çap da farklıysa kesin sıralama yoktur.",
     ],
   },
+  {
+    id: "omurilik-kok-refleks",
+    guides: ["sinir-sistemi-omurilik"],
+    match: /omurilik|arka kök|ön kök|refleks|boz madde|ak madde|gangliyon|karma sinir|sinaps|gecikme|kesil/i,
+    title: "Omurilikte yönü, yolu ve kesinin üç sonucunu ayrı kur",
+    steps: [
+      "Yön: merkeze giren duyu arka kökten, merkezden çıkan motor ön kökten geçer; duyu nöron gövdeleri arka kök gangliyonundadır.",
+      "Kesit: omurilikte boz madde içte (kelebek), ak madde dışta; uç beyin korteksinin düzenini buraya taşıma.",
+      "Sinapsı yol seçerek say: diz refleksinin ana kolu tek sinaps, karşıt kası baskılayan yan kol ara nöronla iki sinaps (2017 LYS-2 Biyoloji 30 bağlamı).",
+      "Kesintide üç ayrı soru: duyum var mı, refleks var mı, motor yol açık mı? Ön kök kesikse duyum korunup refleks kaybolabilir.",
+      "Gecikme: her yol için ayrı t = L/v, sonra sinaps gecikmesini ekle; mesafeleri toplayıp ortalama hıza bölme, s ile ms’yi karıştırma.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
