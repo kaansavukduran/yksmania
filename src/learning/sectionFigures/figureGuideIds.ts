@@ -32,6 +32,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "kimyasal-turler-lewis",
   "iyonik-bilesik-adlandirma",
   "karisim-sinif-cozunme",
+  "izotop-izoton-izobar",
   "din-felsefesi",
   "ahlak-felsefesi",
   "radyoaktivite",

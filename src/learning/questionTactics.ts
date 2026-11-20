@@ -1708,6 +1708,19 @@ export const questionTactics: QuestionTactic[] = [
       "Karıştırma ve ufaltma hızı değiştirir, aynı sıcaklıkta çözünürlüğü değiştirmez; sıcaklık etkisini veriden oku, gazlarda ısınma genellikle çözünürlüğü azaltır.",
     ],
   },
+  {
+    id: "izotop-tablo-iliski",
+    guides: ["izotop-izoton-izobar"],
+    match: /izotop|izoton|izobar|izoelektronik|nötron sayısı|kütle numarası|atom numarası/i,
+    title: "İzo-adlarında önce A, Z, n, e tablosu; sonra eşitlik ve gerekli farklılık",
+    steps: [
+      "Her tanecik için satır kur: Z = p, n = A − Z, e = Z − q (q işaretli). Sayılar negatif ya da kesirli çıkamaz.",
+      "Eşitlik + farklılık: izotop Z aynı n farklı; izoton n aynı Z farklı; izobar A aynı Z farklı; izoelektronik e ve dizilim aynı.",
+      "Eksik veride ilişkiyi denkleme çevir: izoton A₁ − Z₁ = A₂ − Z₂; izobarda ΔZ = −Δn; izotopta ΔA = Δn.",
+      "Çekirdek ile elektron ayrı eksenlerdir: izotonluk e eşitliği vermez (2023 TYT Fen 9: n(X) = 12 → A(X) = 24; nötr X 12 e⁻, Y⁺ 10 e⁻ → yalnız II, B).",
+      "“Kesin” için bütün koşullarda doğru olmalı; tek karşı örnek çürütür. İzotop ve izobar bir çiftte birlikte olamaz (Z hem aynı hem farklı olamaz).",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
