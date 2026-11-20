@@ -11,8 +11,8 @@ Her geliştirme turunda güncellenir. Sayılar yalnız gerçekten yapılmış i�
 | Kayıtlı toplam PDF (kanonik envanter, 17 Kasım taraması) | 8.981 |
 | Kanonik defterde öğretim aktarımı **tam** | 7 |
 | Kanonik defterde **kısmi** | 2 |
-| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 81 |
-| Okunduğu doğrulanan PDF toplamı (bu dal) | 81 / 8.981 (%0,90) |
+| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 82 |
+| Okunduğu doğrulanan PDF toplamı (bu dal) | 82 / 8.981 (%0,91) |
 
 Arşivdeki PDF'lerin büyük kısmı aynı konunun farklı biçimleridir (TYT konu özeti, “Dersler Cepte” sunumu, etkinlik, okuma metni, deneme). Bu yüzden PDF yüzdesi konu kapsamını ölçmez; konu kapsamı aşağıdaki rehber tablosundadır.
 
@@ -23,7 +23,7 @@ Klasördeki numaralı kopya kâğıtları ders ders sayıldı (517 kopya kâğı
 | Ders | Kopya kâğıdı | İşlendi | Oran |
 | --- | ---: | ---: | ---: |
 | TYT Türkçe | 33 | 4 | %12,1 |
-| TYT Matematik | 38 | 4 | %10,5 |
+| TYT Matematik | 38 | 5 | %13,2 |
 | TYT Geometri | 32 | 1 | %3,1 |
 | TYT Fizik | 24 | 7 | %29,2 |
 | TYT Kimya | 56 | 9 | %16,1 |
@@ -32,14 +32,14 @@ Klasördeki numaralı kopya kâğıtları ders ders sayıldı (517 kopya kâğı
 | TYT Coğrafya | 40 | 4 | %10,0 |
 | TYT Felsefe | 17 | 2 | %11,8 |
 | TYT Din Kültürü | 20 | 2 | %10,0 |
-| **TYT toplam** | **320** | **43** | **%13,4** |
+| **TYT toplam** | **320** | **44** | **%13,8** |
 | AYT Matematik | 17 | 2 | %11,8 |
 | AYT Geometri | 4 | 1 | %25,0 |
 | AYT Fizik | 46 | 3 | %6,5 |
 | AYT Kimya | 55 | 11 | %20,0 |
 | AYT Biyoloji | 75 | 11 | %14,7 |
 | **AYT toplam** | **197** | **28** | **%14,2** |
-| **Genel toplam** | **517** | **71** | **%13,7** |
+| **Genel toplam** | **517** | **72** | **%13,9** |
 
 Notlar: TYT Türkçe'de 028 numarası iki farklı konuda kullanılmış (33 dosya, 32 numara). TYT Kimya'da 031 aynı adla iki kez var (eski ve yeni sürüm; 55 farklı konu). TYT Matematik ve Geometri'de 000 numaralı genel özetler var. AYT klasöründeki 7 durum raporu “232 konu” diyor ama klasörlerde 197 AYT kopya kâğıdı bulunuyor; 35 konunun kopya kâğıdı Drive'da yok. Bu tablodaki sıfırlar, o derste kopya kâğıdından figür/taktik aktarılmadığını söyler; uygulamada o dersin anlatımı ve soruları yine vardır (ayrıntı aşağıdaki kapsam tablosunda).
 
@@ -126,6 +126,7 @@ Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen boz
 | 008 AYT Biyoloji – Sinir sistemi: ÇSS ve hastalıklar (kopya kâğıdı) | `sinir-sistemi-css-hastaliklar` ilk dört figürü: tıklanabilir yer–yön–hedef–kol ağacı (9 düğüm), hedef → motor sınıf panosu (6 seçilebilir yanıt), somatik/otonom motor yol adımları (gangliyon öncesi/sonrası), beş hastalık mekanizma panosu (tanı sınırıyla); yer–yön–hedef taktiği; 2010 LYS-2 Biyoloji 12 bağı | Kısmi |
 | 011 TYT Matematik – Basit eşitsizlikler (kopya kâğıdı) | `basit-esitsizlikler` ilk beş figürü: çarpan kaydırıcılı sayı doğrusu yansıması (negatifte yön döner), bileşik eşitsizlik adımları, ve/veya/boş küme üç satırlı doğru, seçilebilir aralık işlemleri (a+b, a−b, ab, a/b, a²), 2024 TYT Temel Matematik 8 kâr–zarar kaydırıcısı (10 < b < 30); yön–uç–bağlaç taktiği | Kısmi |
 | 009 TYT Matematik – Rasyonel sayılar (kopya kâğıdı) | `rasyonel-sayilar` ilk dört figürü: k kaydırıcılı denk kesir şeridi, ortak payda adımları (1/2 + 1/3 = 5/6), yakınlaşan sayı doğrusunda seçilebilir sıralama yöntemleri (ortak payda, 1’e eksik, negatifler), kalanın kesri şerit modeli (x = 80 L); bütün–parça taktiği; 2021 TYT Temel Matematik 1 bağı | Kısmi |
+| 010 TYT Matematik – Birinci dereceden denklemler (kopya kâğıdı) | `birinci-dereceden-denklemler` ilk dört figürü: terazi adımları (3x + 6 = 24), iki doğruyla seçilebilir tek çözüm / özdeşlik / çelişki grafiği, yasak değerli kesirli denklem grafiği, 2024 TYT Temel Matematik 17 yürüyüş kaydırıcısı (30x + 195 = 1395); denge–tür–model taktiği | Kısmi |
 
 PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olarak etiketlenmez.
 
@@ -136,7 +137,7 @@ Bu tablo her turda uygulamanın kendi verisinden yeniden üretilir. “Resmî ko
 | Ders | Resmî konu | Uygulama dersi | Anlatımlı | Soru | Figürlü ders | Bölüm figürü | Taktikli ders | Kopya kâğıdı işlenen |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | TYT Türkçe | 22 | 34 | 33 | 380 | 4 (%11,8) | 15 | 4 | 4 / 33 (%12,1) |
-| TYT Matematik | 31 | 45 | 40 | 735 | 16 (%35,6) | 41 | 21 | 4 / 38 (%10,5) |
+| TYT Matematik | 31 | 45 | 40 | 735 | 17 (%37,8) | 45 | 21 | 5 / 38 (%13,2) |
 | TYT Geometri | 16 | 19 | 19 | 217 | 19 (%100,0) | 174 | 15 | 1 / 32 (%3,1) |
 | TYT Fizik | 20 | 28 | 24 | 311 | 24 (%85,7) | 177 | 23 | 7 / 24 (%29,2) |
 | TYT Kimya | 17 | 57 | 55 | 535 | 12 (%21,1) | 38 | 15 | 9 / 56 (%16,1) |
@@ -150,9 +151,9 @@ Bu tablo her turda uygulamanın kendi verisinden yeniden üretilir. “Resmî ko
 | AYT Fizik | 32 | 47 | 46 | 541 | 7 (%14,9) | 10 | 11 | 3 / 46 (%6,5) |
 | AYT Kimya | 34 | 56 | 55 | 680 | 18 (%32,1) | 19 | 14 | 11 / 55 (%20,0) |
 | AYT Biyoloji | 29 | 76 | 75 | 907 | 16 (%21,1) | 39 | 12 | 11 / 75 (%14,7) |
-| **Toplam** | **341** | **540** | **505** | **6.465** | **162 (%30,0)** | **653** | **149** | **71 / 517 (%13,7)** |
+| **Toplam** | **341** | **540** | **505** | **6.465** | **163 (%30,2)** | **657** | **149** | **72 / 517 (%13,9)** |
 
-Okuma: anlatım ve soru bütün derslerde var (505 / 540 derste anlatım, 6.465 özgün soru); eksik olan en çok görsel/etkileşimli katman (figürlü ders %30) ve kopya kâğıtlarından aktarım (%13,7). AYT Matematik ve AYT Geometri'de resmî konu sayısı uygulama dersinden fazladır, çünkü bu derslerde birkaç resmî konu tek derste toplanmıştır.
+Okuma: anlatım ve soru bütün derslerde var (505 / 540 derste anlatım, 6.465 özgün soru); eksik olan en çok görsel/etkileşimli katman (figürlü ders %30) ve kopya kâğıtlarından aktarım (%13,9). AYT Matematik ve AYT Geometri'de resmî konu sayısı uygulama dersinden fazladır, çünkü bu derslerde birkaç resmî konu tek derste toplanmıştır.
 
 Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan konular):
 
@@ -183,7 +184,7 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | AYT Biyoloji | 75 | 4 |
 | **Toplam** | **371** | **82 (%22,1)** |
 
-Toplam bölüm figürü: 653 (679 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 104 (96 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
+Toplam bölüm figürü: 657 (683 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 105 (97 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
 
 TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 
@@ -238,6 +239,7 @@ TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 | 19 Kasım (44) | Biyoloji: güncel çevre sorunları 3 figür; 1 taktik | 1 | 81 / 371 |
 | 19 Kasım (45) | AYT Fizik: çembersel hareket, BHH izdüşümü, Lenz, Kmax–f, manyetik yarıçap (5 figür, birim sadeleştirmeli okumalar); 1 taktik; kupa sistemi | 0 | 81 / 371 |
 | 19 Kasım (46) | AYT Kimya: Boyle pistonu + P–V hiperbolü, denge bozulmasında etki anı (N₂ ekleme), kuvvetli asit–baz titrasyon eğrisi (mmol hesabı), Daniell pili (elektron/iyon yolu, 1,10 V), Cr/Cu orbital istisnaları (5 figür, birim okumalı) | 0 | 86 / 371 |
+| 20 Kasım (99) | Drive TYT Matematik 010 Birinci dereceden denklemler okundu: terazi, çözüm türü grafiği, yasak değer grafiği, 2024 TYT Mat 17 kaydırıcısı (4 figür), 1 taktik | 0 | 115 / 371 |
 | 20 Kasım (98) | Drive TYT Matematik 009 Rasyonel sayılar okundu: denk kesir kaydırıcısı, ortak payda adımları, yakınlaşan sıralama doğrusu, kalanın kesri şeridi (4 figür), 1 taktik | 0 | 114 / 371 |
 | 20 Kasım (97) | Drive TYT Matematik 011 Basit eşitsizlikler okundu: yansıma kaydırıcısı, bileşik adımlar, ve/veya, seçilebilir aralık işlemleri, 2024 TYT Mat 8 kaydırıcısı (5 figür), 1 taktik | 0 | 113 / 371 |
 | 20 Kasım (96) | Drive AYT Biyoloji 008 ÇSS ve hastalıklar okundu: yer–yön–hedef ağacı, hedef panosu, somatik/otonom yol, hastalık mekanizmaları (4 figür), 1 taktik; sinir sistemi serisi (003–008) tamam | 0 | 112 / 371 |

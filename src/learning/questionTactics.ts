@@ -1487,6 +1487,19 @@ export const questionTactics: QuestionTactic[] = [
       "Oran sorusunda bütünü doğru seç: kap dahil tartımlardan önce boş kabı çıkar (2021 TYT Mat 1: 75/120 = 5/8).",
     ],
   },
+  {
+    id: "denklem-denge-tur-model",
+    guides: ["birinci-dereceden-denklemler", "tyt-mat-dogrusal-denklemler-kaynak-036"],
+    match: /denklem|kök|çözüm kümesi|özdeşlik|çelişki|sistem|yerine koy|yok etme|bilinmeyen|payda|örüntü/i,
+    title: "Denklemde dengeyi koru, çözüm türünü ayır, modeli birimle kur",
+    steps: [
+      "İki tarafa aynı işlem: ekle/çıkar serbest; çarp/böl yalnız sıfır olmayan sayıyla. Parantezi her terime dağıt: −2(x − 3) = −2x + 6.",
+      "Son satır ax = b: a ≠ 0 tek çözüm; 0 = 0 özdeşlik (ÇK = ℝ); 0 = 5 çelişki (ÇK = ∅).",
+      "Paydada değişken varsa önce yasak değeri yaz; çarpmadan çıkan aday yasaksa ele.",
+      "Sistemde iki denklemi de kullan: yerine koyma ya da katsayıları zıt eşit yapıp yok etme; çifti iki denklemde de kontrol et.",
+      "Sözel modelde bilinmeyen + birim + ilişki: 2024 TYT Mat 17’de 16. gün x + 13’ten başlar, 30x + 195 = 1395 ⇒ x = 40.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

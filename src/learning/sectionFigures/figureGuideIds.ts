@@ -27,6 +27,7 @@ export const sectionFigureGuideIds = new Set<string>([
   "tyt-mat-mutlak-deger-kaynak-038",
   "basit-esitsizlikler",
   "rasyonel-sayilar",
+  "birinci-dereceden-denklemler",
   "duyu-organlari-goz",
   "sinir-sistemi-css-hastaliklar",
   "sinir-sistemi-orta-arka-beyin",
