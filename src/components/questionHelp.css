@@ -142,3 +142,89 @@
 }
 .help-route h4 { margin-block: 0.2rem; }
 .help-close { margin-top: 0.8rem; }
+
+/* Step rail: one dot per step, the final marked F. Opened steps are buttons. */
+.help-rail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  list-style: none;
+  margin: 0 0 0.6rem;
+  padding: 0;
+}
+.help-rail-dot {
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.help-rail-dot.is-open {
+  color: var(--text);
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--border));
+}
+.help-rail-dot.is-current {
+  background: var(--accent);
+  color: var(--accent-text);
+  border-color: var(--accent);
+}
+.help-rail-dot:disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+/* Earlier steps step back a little so the current one leads the eye. */
+.question-help.is-stepping .help-step:not(.is-current) {
+  opacity: 0.82;
+}
+.question-help.is-stepping .help-step.is-current {
+  border-inline-start: 3px solid var(--accent);
+  padding-inline-start: 0.7rem;
+}
+.help-autopsy {
+  display: grid;
+  gap: 0.45rem;
+  list-style: none;
+  margin: 0.3rem 0 0.8rem;
+  padding: 0;
+}
+.help-autopsy li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.45rem 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+}
+.help-autopsy-letter {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 1px solid var(--border);
+  border-radius: 0.35rem;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+.help-autopsy-body {
+  display: grid;
+  gap: 0.15rem;
+  min-width: 0;
+}
+.help-autopsy li.is-key {
+  border-color: var(--mint);
+  background: color-mix(in srgb, var(--mint) 9%, transparent);
+}
+.help-autopsy-option {
+  display: block;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.help-route ul {
+  margin: 0.2rem 0 0.5rem;
+  padding-inline-start: 1.1rem;
+}

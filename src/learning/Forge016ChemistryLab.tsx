@@ -479,7 +479,7 @@ export default function Forge016ChemistryLab({
         </title>
         <path className="c016-axis" d="M60 30 V260 H450" />
         <polyline className="c016-curve" points={points} />
-        <text x="60" y="20">
+        <text x="60" y="26">
           pH
         </text>
         <text x="45" y="50" textAnchor="end">

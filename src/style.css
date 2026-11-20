@@ -7,6 +7,8 @@
   --bg: #15191f;
   --surface: #1c222a;
   --surface-2: #232a33;
+  /* Older labs name the panel colour --panel; it follows --surface in every theme. */
+  --panel: var(--surface);
   --text: #eae9e5;
   --muted: #a7afb9;
   --border: #343d48;
@@ -5140,7 +5142,11 @@ progress::-moz-progress-bar {
 [class*="-lab"] svg text,
 .concept-model svg text,
 .nucleic-builder svg text,
-[class*="-model-pair"] svg text {
+[class*="-model-pair"] svg text,
+[class*="-chemistry"] svg text,
+.ca022 svg text,
+.bio019 svg text,
+.bio016a svg text {
   paint-order: stroke fill;
   stroke: var(--surface);
   stroke-width: 4px;

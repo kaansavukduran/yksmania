@@ -268,7 +268,7 @@ function PressureLab() {
       <figure>
         <Drawing
           title="İlk, ani ve son kısmi basınçların karşılaştırması; eksen atm"
-          height={355}
+          height={368}
         >
           {["AB", "A", "B"].map((name, i) => (
             <g key={name}>

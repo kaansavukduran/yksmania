@@ -31,8 +31,8 @@ describe("053 ipucu ve adım adım çözüm", () => {
   });
   it("numbers each opened step and offers next and open-all actions", () => {
     const out = html({ level: 2, steps: true, onSteps: () => {} });
-    expect(out).toContain("Adım 1 / 6 · terimler");
-    expect(out).toContain("Adım 2 / 6 · veri ve yöntem");
+    expect(out).toContain("Adım 1 / 6 · soru ne istiyor, temel kavramlar");
+    expect(out).toContain("Adım 2 / 6 · verilenler ve yöntem seçimi");
     expect(out).not.toContain("Adım 3 / 6");
     expect(out).toContain("Sonraki adım");
     expect(out).toContain("Tüm adımları aç");
@@ -40,13 +40,17 @@ describe("053 ipucu ve adım adım çözüm", () => {
     expect(out).not.toContain("Tam çözüm</h3>");
     expect(out).toContain("bağımsız doğru olarak sayılmaz");
   });
-  it("ends with the distractor autopsy, a 30-second route, the 1-minute rule and a close-and-retry action", () => {
+  it("ends with the distractor autopsy, the one-minute topic rule, a 30-second shortcut and a close-and-retry action", () => {
     const out = html({ level: 6, steps: true, onSteps: () => {}, onHidden: () => {} });
     expect(out).toContain("Tam çözüm");
     expect(out).toContain("Çeldirici otopsisi");
-    expect(out).toContain("30 saniyelik rota");
+    expect(out).toContain("30 saniyelik sınav kısayolu");
     expect(out).toContain("Cümleyi denkleme çevir. Son kontrol: 3·5 + 5 = 20 olduğunu doğrula.");
-    expect(out).toContain("1 dakika kuralı");
+    expect(out).toContain("Bu sorudan cebine kalan 1 dakikalık konu kuralı");
+    expect(out).toContain("Bir sayının 3 katı 3x, 5 fazlası + 5 demektir.</li>");
+    expect(out).toContain('<span class="help-autopsy-option">5</span><span>Doğru.</span>');
+    expect(out).toContain('<li class="is-key">');
+    expect(out).toContain("Final · çeldirici otopsisi ve konu özeti");
     expect(out).toContain("Çözümü kapat, benzerini bağımsız dene");
     expect(out).not.toContain("Sonraki adım");
   });
@@ -56,6 +60,18 @@ describe("053 ipucu ve adım adım çözüm", () => {
     expect(out).toContain("Adım 2 / 6");
     expect(out).not.toContain("Adım 3 / 6");
     expect(onLevel).not.toHaveBeenCalled();
+  });
+  it("draws a step rail: opened steps are buttons, later ones are locked, the final is marked F", () => {
+    const out = html({ level: 3, shown: 2, steps: true, onSteps: () => {}, onShown: () => {} });
+    expect(out).toContain('aria-label="Çözüm adımları"');
+    expect(out).toContain('aria-current="step" aria-label="Adım 2"');
+    expect(out).toContain('disabled="" aria-label="Adım 4 (henüz açılmadı)"');
+    expect(out).toContain('aria-label="Final (henüz açılmadı)"');
+  });
+  it("offers replay only after every step is open", () => {
+    expect(html({ level: 3, steps: true, onSteps: () => {}, onPlay: () => {} })).not.toContain("Baştan oynat");
+    expect(html({ level: 6, steps: true, onSteps: () => {}, onPlay: () => {} })).toContain("Baştan oynat");
+    expect(html({ level: 6, steps: true, playing: true, onSteps: () => {}, onPlay: () => {} })).toContain("Duraklat");
   });
   it("closing the solution hides it without undoing the recorded help", () => {
     const out = html({ level: 6, steps: true, hidden: true, onSteps: () => {}, onHidden: () => {} });

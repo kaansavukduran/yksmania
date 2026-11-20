@@ -5,7 +5,7 @@ import { helpPanels, resolvedGuidance } from "../learning/questionHelp";
 import "./questionHelp.css";
 import { SourceQuestionFigure } from "../learning/SourceQuestionFigure";
 import { sourceQuestionPresentation } from "../learning/sourceExercises024";
-import { lazy, Suspense, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import type { ComponentProps } from "react";
 import { hintFigureFor } from "../learning/sectionFigures/hintFigure";
 import { tacticsFor } from "../learning/questionTactics";
@@ -25,6 +25,8 @@ export function QuestionHelp({
   onHidden,
   shown,
   onShown,
+  playing = false,
+  onPlay,
 }: {
   question: HelpQuestion;
   level: number;
@@ -40,6 +42,9 @@ export function QuestionHelp({
   /** Steps on screen in step mode; going back only hides, help stays recorded. */
   shown?: number;
   onShown?: (shown: number) => void;
+  /** Replays the opened steps one by one (view only). */
+  playing?: boolean;
+  onPlay?: (playing: boolean) => void;
 }) {
   const question = clarifiedQuestionView(originalQuestion);
   const guidance = resolvedGuidance(question);
@@ -73,15 +78,37 @@ export function QuestionHelp({
     );
   return (
     <div className={`question-help${steps ? " is-stepping" : ""}`}>
+      {steps && level > 0 && (
+        <ol className="help-rail" aria-label="Çözüm adımları">
+          {Array.from({ length: total }, (_, i) => {
+            const n = i + 1;
+            const opened = n <= level;
+            return (
+              <li key={n}>
+                <button
+                  type="button"
+                  className={`help-rail-dot${n === view ? " is-current" : ""}${opened ? " is-open" : ""}`}
+                  disabled={!opened || disabled}
+                  aria-current={n === view ? "step" : undefined}
+                  aria-label={`${n === total ? "Final" : `Adım ${n}`}${opened ? "" : " (henüz açılmadı)"}`}
+                  onClick={() => onShown?.(n)}
+                >
+                  {n === total ? "F" : n}
+                </button>
+              </li>
+            );
+          })}
+        </ol>
+      )}
       {level > 0 && (
         <aside className="hint-box" aria-label="Çözüm rehberi">
           <div className="help-content">
             {panels.slice(0, view).map((panel, index) => (
-              <section key={index} className={steps ? "help-step" : undefined}>
+              <section key={index} className={steps ? `help-step${index + 1 === view ? " is-current" : ""}` : undefined}>
                 {steps && (
                   <span className="help-step-chip">
                     Adım {index + 1} / {total}
-                    {index === 0 ? " · terimler" : index === 1 ? " · veri ve yöntem" : ""}
+                    {index === 0 ? " · soru ne istiyor, temel kavramlar" : index === 1 ? " · verilenler ve yöntem seçimi" : " · işlem"}
                   </span>
                 )}
                 <h3>{panel.title}</h3>
@@ -99,13 +126,15 @@ export function QuestionHelp({
                       </ol>
                     </div>
                   ))}
-                {index === 0 && conceptFigure && (
+                {/* Hint mode shows the topic figure with the first panel; step
+                    mode shows it at step 2, where the method is chosen. */}
+                {index === (steps && panels.length > 1 ? 1 : 0) && conceptFigure && (
                   <div className="help-concept-figure">
                     <Suspense fallback={null}>
                       <SectionFigure
                         guideId={conceptFigure.guideId}
                         title={conceptFigure.title}
-                        label={`Konu anlatımından: ${conceptFigure.title}`}
+                        label={`${steps ? "Görsel kurulum" : "Konu anlatımından"}: ${conceptFigure.title}`}
                       />
                     </Suspense>
                   </div>
@@ -116,7 +145,8 @@ export function QuestionHelp({
               <SourceQuestionFigure figure={sourcePresentation.hintFigure} />
             )}
             {fullView && (
-              <section className="help-full-solution" aria-label="Tam çözüm">
+              <section className={`help-full-solution${steps ? " help-step is-current" : ""}`} aria-label="Tam çözüm">
+                {steps && <span className="help-step-chip">Final · çeldirici otopsisi ve konu özeti</span>}
                 <h3>Tam çözüm</h3>
                 <p>
                   <strong>
@@ -130,25 +160,50 @@ export function QuestionHelp({
                     figure={sourcePresentation.explanationFigure}
                   />
                 )}
-                {guidance && (
+                {guidance && !steps && (
                   <>
-                    {steps && route && (
-                      <div className="help-route">
-                        <h4>30 saniyelik rota</h4>
-                        <p>{route}</p>
-                        <h4>1 dakika kuralı</h4>
-                        <p>
-                          Bir dakikada ilk işlemi kuramıyorsan soruyu işaretle, sonrakine geç ve turun sonunda
-                          dön. Kurduysan bitir; yarım bırakılan işlem süreyi iki kez harcatır.
-                        </p>
-                      </div>
-                    )}
-                    <h4>{steps ? "Çeldirici otopsisi: şıkların mantığı" : "Şıkların mantığı"}</h4>
+                    <h4>Şıkların mantığı</h4>
                     <ol type="A">
                       {guidance.optionReasons.map((reason, i) => (
                         <li key={i}>{reason}</li>
                       ))}
                     </ol>
+                    <h4>Sık hata</h4>
+                    <p>{guidance.commonError}</p>
+                    <h4>Sonucu kontrol et</h4>
+                    <p>{guidance.check}</p>
+                  </>
+                )}
+                {guidance && steps && (
+                  <>
+                    <h4>Çeldirici otopsisi: her şık neden doğru ya da yanlış?</h4>
+                    <ol className="help-autopsy">
+                      {guidance.optionReasons.map((reason, i) => (
+                        <li key={i} className={i === question.answer ? "is-key" : undefined}>
+                          <span className="help-autopsy-letter" aria-hidden="true">
+                            {String.fromCharCode(65 + i)}
+                          </span>
+                          <span className="help-autopsy-body">
+                            <span className="help-autopsy-option">{question.options[i]}</span>
+                            <span>{reason}</span>
+                          </span>
+                        </li>
+                      ))}
+                    </ol>
+                    <div className="help-route">
+                      <h4>Bu sorudan cebine kalan 1 dakikalık konu kuralı</h4>
+                      <ul>
+                        {guidance.knowledge.map((rule, i) => (
+                          <li key={i}>{rule}</li>
+                        ))}
+                      </ul>
+                      {route && (
+                        <>
+                          <h4>30 saniyelik sınav kısayolu</h4>
+                          <p>{route}</p>
+                        </>
+                      )}
+                    </div>
                     <h4>Sık hata</h4>
                     <p>{guidance.commonError}</p>
                     <h4>Sonucu kontrol et</h4>
@@ -204,6 +259,11 @@ export function QuestionHelp({
               Tüm adımları aç
             </button>
           )}
+          {full && onPlay && (
+            <button type="button" className="text-button" disabled={disabled} aria-pressed={playing} onClick={() => onPlay(!playing)}>
+              {playing ? "Duraklat" : "Baştan oynat"}
+            </button>
+          )}
         </div>
       )}
       {!full && !steps && (
@@ -249,11 +309,24 @@ function thirtySecondRoute(strategy: string, check: string) {
  * QuestionHelp with its step-by-step state. Step mode and the closed solution
  * are view state only and reset when another question appears.
  */
-export function GuidedQuestionHelp(props: Omit<ComponentProps<typeof QuestionHelp>, "steps" | "onSteps" | "hidden" | "onHidden" | "shown" | "onShown">) {
+export function GuidedQuestionHelp(props: Omit<ComponentProps<typeof QuestionHelp>, "steps" | "onSteps" | "hidden" | "onHidden" | "shown" | "onShown" | "playing" | "onPlay">) {
   const id = props.question.id;
-  const fresh = { id, steps: false, hidden: false, shown: undefined as number | undefined };
+  const fresh = { id, steps: false, hidden: false, shown: undefined as number | undefined, playing: false };
   const [state, setState] = useState(fresh);
   const current = state.id === id ? state : fresh;
+  const total = helpPanels(clarifiedQuestionView(props.question)).length + 1;
+  // Replay: reveal the already opened steps one by one. View state only.
+  useEffect(() => {
+    if (!current.playing) return;
+    const timer = setInterval(
+      () =>
+        setState((s) =>
+          s.id !== id || !s.playing ? s : (s.shown ?? 1) >= total ? { ...s, playing: false } : { ...s, shown: (s.shown ?? 1) + 1 },
+        ),
+      2600,
+    );
+    return () => clearInterval(timer);
+  }, [current.playing, id, total]);
   return (
     <QuestionHelp
       {...props}
@@ -262,7 +335,9 @@ export function GuidedQuestionHelp(props: Omit<ComponentProps<typeof QuestionHel
       hidden={current.hidden}
       onHidden={(hidden) => setState({ ...current, hidden })}
       shown={current.shown}
-      onShown={(shown) => setState({ ...current, shown })}
+      onShown={(shown) => setState({ ...current, shown, playing: false })}
+      playing={current.playing}
+      onPlay={(playing) => setState({ ...current, playing, shown: playing ? 1 : current.shown })}
     />
   );
 }

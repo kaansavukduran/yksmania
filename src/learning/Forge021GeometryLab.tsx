@@ -418,7 +418,7 @@ function Plane({
         <text x={690} y={315} textAnchor="middle" data-axis-end="x">
           x
         </text>
-        <text x={370} y={font * 0.8} data-axis-end="y">
+        <text x={370} y={font * 1.05} data-axis-end="y">
           y
         </text>
       </svg>

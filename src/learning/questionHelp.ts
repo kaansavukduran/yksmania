@@ -28,16 +28,20 @@ import guidance027BiologyC from "./guidance027BiologyC.json";
 import guidance027HistoryA from "./guidance027HistoryA.json";
 import guidance027HistoryB from "./guidance027HistoryB.json";
 import {
+  identityHash,
   questionIdentity,
   type HelpQuestion,
   type QuestionGuidance,
 } from "../domain/questionHelpModel";
+import { guidance053Rows } from "./guidance053";
 
 // Identity includes the complete stem, passage, options, key and explanation.
 // A saved exam never borrows guidance for a changed version of its question.
 type CatalogueRow = {
   id: string;
-  identity: string;
+  /** Full identity string (older catalogues) or its short hash `h` (053+). */
+  identity?: string;
+  h?: string;
   hint?: string;
   guidance: QuestionGuidance;
   legacyPanelCount?: number;
@@ -46,6 +50,7 @@ type CatalogueRow = {
 // Keep that old numbering only for snapshots without their own inline guide.
 const expandedLegacyRows: CatalogueRow[] = [
   ...guidance053AytGeometry,
+  ...guidance053Rows,
   ...guidance030Math,
   ...guidance030Physics,
   ...guidance030Chemistry,
@@ -80,7 +85,9 @@ const catalogue = new Map<string, CatalogueRow>(
 function matchingRow(question: HelpQuestion) {
   const view = clarifiedQuestionView(question);
   const row = catalogue.get(view.id);
-  return row?.identity === questionIdentity(view) ? row : undefined;
+  if (!row) return undefined;
+  const identity = questionIdentity(view);
+  return (row.identity !== undefined ? row.identity === identity : row.h === identityHash(identity)) ? row : undefined;
 }
 // A saved snapshot with its own guide already has that guide's numbering.
 export function previousHelpPanelCount(

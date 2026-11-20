@@ -78,7 +78,7 @@
 .nucleic-figure svg .nucleic-oxygen {
   font-size: 17px;
   paint-order: stroke;
-  stroke: var(--panel);
+  stroke: var(--panel, var(--surface));
   stroke-width: 5px;
 }
 .nucleic-figure figcaption {

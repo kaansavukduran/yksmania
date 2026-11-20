@@ -287,10 +287,11 @@ export default function NucleicAcidsLab() {
               <text x="267" y="224">
                 2′
               </text>
-              <text x="174" y="220">
+              {/* 3′ and 4′ sit outside the ring, clear of its edges and bonds. */}
+              <text x="182" y="200" textAnchor="end">
                 3′
               </text>
-              <text x="159" y="132">
+              <text x="173" y="155" textAnchor="end">
                 4′
               </text>
               <text x="239" y="109" className="nucleic-oxygen">

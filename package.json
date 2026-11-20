@@ -15,7 +15,8 @@
     "android:sync": "npm run build && cap sync android",
     "test:desktop": "node scripts/test-desktop.mjs",
     "format": "prettier --write src tests desktop scripts *.ts *.json",
-    "lint:content": "node scripts/lint-content.mjs"
+    "lint:content": "node scripts/lint-content.mjs",
+    "progress": "UPDATE_PROGRESS=1 vitest run tests/progress-table.test.ts"
   },
   "repository": {
     "type": "git",
