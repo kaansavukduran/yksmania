@@ -1747,6 +1747,19 @@ export const questionTactics: QuestionTactic[] = [
       "Karışımda iki denklem kur: toplam mol ve hedef atom (CO + CO₂ = 1,0; O = 1,6 → CO₂ 0,6, CO 0,4). Adet istenirse en son Nₐ ile çarp.",
     ],
   },
+  {
+    id: "mol-kutle-birim-kopru",
+    guides: ["mol-kutle-iliskisi"],
+    match: /mol kütlesi|g\/mol|kaç gram|kaç moldür|ortalama mol|n ?= ?m|gram/i,
+    title: "Mol–kütlede birimi yan yana yaz: g ÷ (g/mol) = mol, mol × (g/mol) = g",
+    steps: [
+      "Formülden M kur: adet × atom kütlesi, sonra topla; parantez dışındaki indis grubu çarpar (Ca(OH)₂ = 40 + 2 × 17 = 74; Al₂(SO₄)₃ = 342).",
+      "Eşit mol eşit kütle değildir (1 mol H₂O 18 g, CO₂ 44 g); eşit kütlede M küçük olan daha çok molekül taşır (14 g N₂ 0,50 mol > 14 g CO₂ ≈ 0,32 mol).",
+      "Farklı veri türlerini aynı türün molüne çevir: hacim ÷ 22,4 yalnız normal koşulda, kütle ÷ M, sayı ÷ Nₐ (2023 TYT Fen 12: 0,050 · 0,500 · 0,025 → B > A > C, E). 1 g H₂, 1 mol değildir.",
+      "Karışımda her bileşeni ayrı böl; M̄ = toplam kütle ÷ toplam mol (8 g He + 8 g CH₄: 16 ÷ 2,5 = 6,4). Aritmetik ortalama yalnız eşit molde geçerli; M̄ iki M arasında kalmalı.",
+      "Atom istenirse molekül molünü indisle çarp; toplam atomdan geri dön (0,9 mol atom CO₂ → 0,3 mol → 13,2 g).",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
