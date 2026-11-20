@@ -1500,6 +1500,19 @@ export const questionTactics: QuestionTactic[] = [
       "Sözel modelde bilinmeyen + birim + ilişki: 2024 TYT Mat 17’de 16. gün x + 13’ten başlar, 30x + 195 = 1395 ⇒ x = 40.",
     ],
   },
+  {
+    id: "dunya-hareket-aci-gun",
+    guides: ["dunya-sekli-hareket"],
+    match: /gündönümü|ekinoks|eksen|eğiklik|dönence|kutup|gölge|öğle|ışın açısı|gündüz|mevsim|dönme|dolanma|Kutup Yıldızı/i,
+    title: "Döngüyü seç, açıyı işaretli farkla hesapla, süreyi ayrı oku",
+    steps: [
+      "Karşılaştırma gün içinde mi (dönme), yıl içinde mi (dolanma + 23,5° eğiklik), yerler arasında mı (küresel şekil ve enlem)?",
+      "Yerel öğle, yatay zemin: h = 90° − |φ − δ| (kuzey +, güney −). h < 0 ise Güneş ufkun altında; gölge Güneş’in tersine düşer, Türkiye’de hep kuzeye.",
+      "Dik ışın yalnız dönenceler arasına gelir; haziranda 23,5° K, aralıkta 23,5° G, ekinoksta Ekvator.",
+      "Açı (derece), gündüz süresi (saat) ve hava sıcaklığı (°C) ayrı büyüklüklerdir; akıntı sıcaklığı değiştirir, ışın açısını değil (2025 TYT Sosyal 6).",
+      "Mevsimleri uzaklıkla açıklama: aynı anda karşı yarım kürelerde zıt mevsim var; ocakta Dünya Güneş’e en yakın ama kuzeyde kış.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
