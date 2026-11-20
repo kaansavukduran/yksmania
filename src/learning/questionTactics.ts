@@ -1513,6 +1513,19 @@ export const questionTactics: QuestionTactic[] = [
       "Mevsimleri uzaklıkla açıklama: aynı anda karşı yarım kürelerde zıt mevsim var; ocakta Dünya Güneş’e en yakın ama kuzeyde kış.",
     ],
   },
+  {
+    id: "yatay-atis-ortak-zaman",
+    guides: ["yatay-atis"],
+    match: /yatay atış|menzil|uçuş süresi|çarpma|düşey|yatay hız|duvar|hedef|taşıyıcı|bırakıl/i,
+    title: "Yatay atışta zamanı düşeyden bul, yatayda ortak zamanla kullan",
+    steps: [
+      "Düşey: v₀ᵧ = 0, h − H = gt²/2 ⇒ t = √(2(h − H)/g). Yatay hız uçuş süresine girmez.",
+      "Yatay: x = u·t (ivme yok). Menzil = u·t; aynı yükseklikten bırakılan ve atılan aynı anda iner.",
+      "Anlık hız: vₓ = u sabit, |vᵧ| = gt; sürat √(vₓ² + vᵧ²), büyüklükleri doğrudan toplama.",
+      "Engel/hedef: önce x’ten zamanı bul, aynı zamanı y’ye koy (menzil > uzaklık tek başına aşmak demek değil).",
+      "Hareketli taşıyıcı/hedef: bırakılan cisim taşıyıcının yatay hızını korur; iki konumu işaretli yazıp eşitle (2025 AYT Fen 1: 21 m/s · 2 s = 42 m).",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

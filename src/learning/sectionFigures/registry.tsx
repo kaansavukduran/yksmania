@@ -80,6 +80,7 @@ import { turkishFiguresParagraph } from "./turkishFiguresParagraph";
 import { chemistryFiguresModels } from "./chemistryFiguresModels";
 import { chemistryFiguresHbond } from "./chemistryFiguresHbond";
 import { physicsFiguresPhoto } from "./physicsFiguresPhoto";
+import { physicsFiguresProjectile } from "./physicsFiguresProjectile";
 import { biologyFiguresSkin } from "./biologyFiguresSkin";
 import { geographyFiguresWater } from "./geographyFiguresWater";
 import { biologyFiguresAtp } from "./biologyFiguresAtp";
@@ -173,6 +174,7 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   chemistryFiguresModels,
   chemistryFiguresHbond,
   physicsFiguresPhoto,
+  physicsFiguresProjectile,
   biologyFiguresSkin,
   geographyFiguresWater,
   biologyFiguresAtp,
