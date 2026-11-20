@@ -1,0 +1,88 @@
+/* 055: hedef seçimi, kayıp net otopsisi, hız göstergesi ve hız kontrolü notu. */
+
+.compass-targets {
+  margin: 0.25rem 0 0.5rem;
+  max-width: 100%;
+}
+.compass-targets button {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.lost-net h3 {
+  margin: 0.75rem 0 0.25rem;
+}
+.lost-net table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.lost-net th,
+.lost-net td {
+  padding: 0.6rem 0.5rem;
+  text-align: start;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+.lost-net th:first-child {
+  padding-left: 0;
+  overflow-wrap: anywhere;
+}
+.lost-net thead th {
+  color: var(--muted);
+  font-weight: 600;
+}
+.lost-net td {
+  font-variant-numeric: tabular-nums;
+}
+.lost-net tfoot th,
+.lost-net tfoot td {
+  font-weight: 700;
+  border-bottom: 0;
+  border-top: 2px solid var(--border);
+}
+
+.exam-pace {
+  margin: 0.25rem 0;
+  font-size: 0.9em;
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+
+.exam-pace-note {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 0.5rem 0;
+  border: 1px solid var(--accent);
+  background: var(--surface);
+  color: var(--text);
+}
+.exam-pace-note p {
+  margin: 0;
+  flex: 1 1 14rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.exam-pace-note button {
+  min-height: 44px;
+  min-width: 44px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .exam-pace-note {
+    animation: exam-pace-note-in 200ms ease-out;
+  }
+}
+@keyframes exam-pace-note-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.exam-question-tools button {
+  min-height: 44px;
+}

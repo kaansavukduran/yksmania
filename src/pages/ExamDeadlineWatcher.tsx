@@ -1,12 +1,15 @@
 import { useEffect, useRef, useState } from "react";
 import { useApp } from "../store";
 import { finishExam } from "../domain/exams";
+import { playExamFinishCue } from "../domain/examFinishCue";
 
 // Deadline follows the saved exam even while another learning page is open.
 export function ExamDeadlineWatcher() {
   const { state, commit, status } = useApp();
   const commitRef = useRef(commit);
   commitRef.current = commit;
+  const settingsRef = useRef(state.settings);
+  settingsRef.current = state.settings;
   const attempted = useRef("");
   const storageFailed = useRef(false);
   const [recovery, setRecovery] = useState(0);
@@ -31,6 +34,7 @@ export function ExamDeadlineWatcher() {
       attempted.current = id;
       void commitRef
         .current((s) => (s.examDraft?.id === id ? finishExam(s, id, now) : s))
+        .then(() => playExamFinishCue(id, settingsRef.current))
         .catch(() => {});
     };
     check();

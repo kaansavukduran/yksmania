@@ -1,12 +1,26 @@
+import { useState } from "react";
 import type { ExamSession } from "../domain/examModel";
-import { fatigueCurve, netCompass } from "../domain/examInsights";
+import {
+  COMPASS_TARGETS,
+  DEFAULT_COMPASS_TARGET,
+  fatigueCurve,
+  lostNetTable,
+  netCompass,
+  type CompassTarget,
+} from "../domain/examInsights";
+import "./examInsights.css";
 
 const fmt = (x: number) => String(Math.round(x * 100) / 100).replace(".", ",");
 
-/** Deneme sonucu: yorgunluk eğrisi (çeyrek başına doğru oranı) ve +5 net pusulası. */
+/**
+ * Deneme sonucu: yorgunluk eğrisi, kayıp net otopsisi ve seçilebilir hedefli
+ * net pusulası. Hedef seçimi yalnız görünüm durumudur; kaydedilmez.
+ */
 export function ExamInsights({ session }: { session: ExamSession }) {
+  const [target, setTarget] = useState<CompassTarget>(DEFAULT_COMPASS_TARGET);
   const quarters = fatigueCurve(session);
-  const compass = netCompass(session, 5);
+  const compass = netCompass(session, target);
+  const lost = lostNetTable(session);
   return (
     <section className="panel exam-insights" aria-label="Deneme analizi">
       <h2>Deneme analizi</h2>
@@ -40,8 +54,55 @@ export function ExamInsights({ session }: { session: ExamSession }) {
       ) : (
         <p className="small muted">Yorgunluk eğrisi en az 12 soruluk denemelerde çizilir.</p>
       )}
+      <div className="lost-net">
+        <h3>Kayıp net otopsisi</h3>
+        {lost.rows.length === 0 ? (
+          <p className="small muted">Bu denemede yanlış ya da boş yok; kaybedilen net yok.</p>
+        ) : (
+          <>
+            <p className="small muted">Her ders için yanlış × 1,25 + boş × 1. En çok net kaybettiren ders en üstte.</p>
+            <div className="exam-table-wrap" tabIndex={0} role="region" aria-label="Kayıp net tablosu">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Ders</th>
+                    <th scope="col">Yanlış</th>
+                    <th scope="col">Boş</th>
+                    <th scope="col">Kayıp net</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {lost.rows.map((r) => (
+                    <tr key={r.subject}>
+                      <th scope="row">{r.subject}</th>
+                      <td>{r.wrong}</td>
+                      <td>{r.blank}</td>
+                      <td>{fmt(r.lost)}</td>
+                    </tr>
+                  ))}
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th scope="row">Toplam</th>
+                    <td>{lost.total.wrong}</td>
+                    <td>{lost.total.blank}</td>
+                    <td>{fmt(lost.total.lost)}</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </>
+        )}
+      </div>
       <div className="net-compass">
-        <h3>+5 Net Pusulası</h3>
+        <h3>+{target} Net Pusulası</h3>
+        <div className="segmented compass-targets" role="group" aria-label="Hedef net">
+          {COMPASS_TARGETS.map((value) => (
+            <button key={value} type="button" className={value === target ? "active" : ""} aria-pressed={value === target} onClick={() => setTarget(value)}>
+              +{value} net
+            </button>
+          ))}
+        </div>
         {compass.steps.length === 0 ? (
           <p className="small muted">Bu denemede yanlış ya da boş yok; artırılacak net kalmadı.</p>
         ) : (

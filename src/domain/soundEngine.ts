@@ -9,6 +9,8 @@
  *   repair         – a gliding major third: a past mistake solved without help
  *   seal           – two bell strikes: a topic sealed at its day-21 review
  *   finish         – a gentle major chord strum at the end of a set
+ *   examFinish     – a short victory chord when a timed exam ends (by the
+ *                    learner or by its deadline)
  *   trophy(tier)   – bronze/silver/gold arpeggios; platinum adds a shimmer
  */
 
@@ -18,6 +20,7 @@ export type SoundCue =
   | { kind: "repair" }
   | { kind: "seal" }
   | { kind: "finish" }
+  | { kind: "examFinish" }
   | { kind: "trophy"; tier: 1 | 2 | 3 | 4 };
 
 type Ctx = AudioContext;
@@ -84,6 +87,12 @@ export function cueNotes(cue: SoundCue): { midi: number; delay: number; length: 
       ];
     case "finish":
       return [72, 76, 79, 84].map((midi, i) => ({ midi, delay: i * 0.05, length: 0.8 }));
+    case "examFinish":
+      // Rising G–C–E pick-up, then a held C major chord above it.
+      return [
+        ...[67, 72, 76].map((midi, i) => ({ midi, delay: i * 0.09, length: 0.18 })),
+        ...[79, 84, 88].map((midi) => ({ midi, delay: 0.3, length: 0.9 })),
+      ];
     case "trophy": {
       const scale = [76, 79, 83, 88, 91, 95];
       const count = 2 + cue.tier; // 3, 4, 5, 6 notes

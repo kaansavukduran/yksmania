@@ -11,6 +11,7 @@ import {
   Flag,
   Timer,
   Trophy,
+  X,
 } from "lucide-react";
 import { useApp } from "../store";
 import {
@@ -31,6 +32,9 @@ import "../exams.css";
 import { hidesSubject } from "../domain/smartSession";
 import { ExamInsights } from "../components/ExamInsights";
 import { GuidedQuestionHelp } from "../components/QuestionHelp";
+import "../components/examInsights.css";
+import { examPace, nextFlagged, paceCheckpointDue } from "../domain/examInsights";
+import { playExamFinishCue } from "../domain/examFinishCue";
 import { helpPanels, previousHelpPanelCount } from "../learning/questionHelp";
 import { effectiveHelpLevel } from "../learning/helpProgression";
 
@@ -38,6 +42,8 @@ export { ExamDeadlineWatcher } from "./ExamDeadlineWatcher";
 
 const number = (value: number) =>
   value.toLocaleString("tr-TR", { maximumFractionDigits: 2 });
+// Hız kontrolü notu kapatılan denemeler; yalnız bu oturumun belleğinde tutulur.
+const dismissedPaceNotes = new Set<string>();
 const duration = (seconds: number) =>
   `${Math.floor(seconds / 60)} dk${seconds % 60 ? ` ${seconds % 60} sn` : ""}`;
 export function Exams({
@@ -272,8 +278,13 @@ function ExamRunner({
   navigate: (route: string) => void;
   showCatalog: () => void;
 }) {
-  const { commit } = useApp();
+  const { commit, state } = useApp();
+  const settingsRef = useRef(state.settings);
+  settingsRef.current = state.settings;
   const [now, setNow] = useState(Date.now);
+  const [paceNoteClosed, setPaceNoteClosed] = useState(() =>
+    dismissedPaceNotes.has(draft.id),
+  );
   const [busy, setBusy] = useState(false),
     [error, setError] = useState("");
   const lock = useRef(false),
@@ -285,6 +296,13 @@ function ExamRunner({
     expired = remaining <= 0;
   const clockParts = formatCountdown(remaining).split(":");
   const answered = draft.answers.filter((value) => value !== null).length;
+  const pace = examPace(
+    { answered, total: draft.items.length, startedAt: draft.startedAt, deadline: draft.deadline },
+    now,
+  );
+  const showPaceNote =
+    !paceNoteClosed && !dismissedPaceNotes.has(draft.id) && paceCheckpointDue(draft, now);
+  const flaggedTarget = nextFlagged(draft.flagged, draft.index, draft.items.length);
   const q = clarifiedQuestionView(draft.items[draft.index]);
   const sourcePresentation = sourceQuestionPresentation(q);
   const visibleHelpLevel = effectiveHelpLevel(
@@ -325,6 +343,7 @@ function ExamRunner({
     const ended = Date.now();
     try {
       await commit((s) => finishExam(s, draft.id, ended));
+      playExamFinishCue(draft.id, settingsRef.current);
       dialog.current?.close();
       navigate(`/exams?result=${encodeURIComponent(draft.id)}`);
     } catch {
@@ -408,6 +427,30 @@ function ExamRunner({
       <p className="small muted">
         Öğrenme denemesi · ipucu ve çözüm her soruda açık
       </p>
+      {pace && !expired && (
+        <p className="exam-pace" aria-live="off">
+          {paceSummary(pace)}
+        </p>
+      )}
+      {showPaceNote && pace && !expired && (
+        <div className="panel exam-pace-note" role="status">
+          <p>
+            <strong>Hız kontrolü.</strong> 30 dakika geçti: {answered}/
+            {draft.items.length} soru yanıtlandı. {paceSummary(pace)}
+          </p>
+          <button
+            className="secondary"
+            aria-label="Hız kontrolü notunu kapat"
+            onClick={() => {
+              dismissedPaceNotes.add(draft.id);
+              setPaceNoteClosed(true);
+            }}
+          >
+            <X size={17} aria-hidden="true" />
+            Kapat
+          </button>
+        </div>
+      )}
       {error && (
         <div role="alert" className="panel exam-error">
           <p>{error}</p>
@@ -510,6 +553,25 @@ function ExamRunner({
                 ? "İşareti kaldır"
                 : "Sonra bakmak için işaretle"}
             </button>
+            {draft.flagged.length > 0 && (
+              <button
+                className="secondary"
+                disabled={busy || expired || flaggedTarget === null}
+                aria-label={
+                  flaggedTarget === null
+                    ? "Sıradaki işaretli soru yok"
+                    : `Sıradaki işaretli soru: ${flaggedTarget + 1}`
+                }
+                onClick={() => {
+                  if (flaggedTarget !== null)
+                    void change({ type: "index", index: flaggedTarget });
+                }}
+              >
+                <Flag size={17} aria-hidden="true" />
+                Sıradaki işaretli soru
+                {flaggedTarget !== null && ` (${flaggedTarget + 1})`}
+              </button>
+            )}
           </div>
           <div className="exam-question-navigation">
             <button
@@ -609,6 +671,15 @@ function ExamRunner({
       </dialog>
     </section>
   );
+}
+function paceSummary(pace: NonNullable<ReturnType<typeof examPace>>) {
+  const gap =
+    pace.delta === 0
+      ? "Hedef hızdasın."
+      : pace.delta < 0
+        ? `Hedef hızın ${-pace.delta} soru gerisindesin.`
+        : `Hedef hızın ${pace.delta} soru ilerisindesin.`;
+  return `Bu hızla süre bitiminde yaklaşık ${pace.projected} soru yanıtlanmış olur. ${gap}`;
 }
 function ExamResults({
   session,
