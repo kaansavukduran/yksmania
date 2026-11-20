@@ -1422,6 +1422,19 @@ export const questionTactics: QuestionTactic[] = [
       "Gecikme: her yol için ayrı t = L/v, sonra sinaps gecikmesini ekle; mesafeleri toplayıp ortalama hıza bölme, s ile ms’yi karıştırma.",
     ],
   },
+  {
+    id: "on-beyin-basamak-kanit",
+    guides: ["sinir-sistemi-on-beyin"],
+    match: /ön beyin|uç beyin|ara beyin|talamus|hipotalamus|epitalamus|epifiz|melatonin|korteks|lob|frontal|parietal|temporal|oksipital|BOS|zar/i,
+    title: "Ön beyinde ipucunu sınıfla: aktarım mı, yorum mu, iç denge mi?",
+    steps: [
+      "Kapsamı ayır: ön beyin = uç beyin + ara beyin; ara beyin = talamus, hipotalamus, epitalamus.",
+      "Basamağı seç: reseptör alır, talamus aktarır (koku ilk kortikal yolda istisna), korteks yorumlar.",
+      "Lob: frontal istemli hareket, parietal vücut duyusu, temporal işitme, oksipital görme; merkezî oluğun önü motor, arkası duyu.",
+      "‘Denge’nin değişkenini yaz: sıcaklık, su, açlık → hipotalamus; duruş ve hareket uyumu → beyincik. Melatonin epifizden, hipofizden değil.",
+      "Deney sorusunda yalnız ölçülen değişkenden sonuç çıkar: sıcaklık ölçülmediyse sıcaklık düzeni kanıtlanmaz (2010 LYS-2 Biyoloji 13 mantığı).",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
