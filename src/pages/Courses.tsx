@@ -53,7 +53,9 @@ export function Courses({
           <h1>{t(mode === "theory" ? "courses" : "questions")}</h1>
         </div>
         <span className="quiet-chip">
-          {contentCounts.officialHeadings} ana başlık · {contentCounts.readyLessons} hazır anlatım
+          {mode === "theory"
+            ? `${contentCounts.officialHeadings} ana başlık · ${contentCounts.readyLessons} hazır anlatım`
+            : `${contentCounts.questionSets} soru seti · ${contentCounts.originalQuestions.toLocaleString("tr-TR")} özgün soru`}
         </span>
         <StudyTimer />
       </header>

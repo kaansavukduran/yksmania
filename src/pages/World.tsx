@@ -40,7 +40,6 @@ export function World({ navigate }: { navigate: (r: string) => void }) {
     <>
       <header className="page-heading">
         <h1>{t("world")}</h1>
-        <span className="quiet-chip">Çalışma haritası</span>
       </header>
       {!state.settings.gamification && <p className="muted">{t("worldOff")}</p>}
       <section className="panel world-progress">

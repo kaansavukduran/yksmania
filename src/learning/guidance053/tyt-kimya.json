@@ -3478,5 +3478,4243 @@
    "commonError": "Birden çok gazın çıktığı ısıtmada toplam kaybı tek bir gaza mal etmek.",
    "check": "Karşı örnek: 10 g kayıp 2 g su + 8 g CO₂ de olabilir, 5 g + 5 g da; aynı kayıp farklı CO₂ değerleri verir."
   }
+ },
+ {
+  "id": "f015-chem-yuzde-verim-1",
+  "h": "16b93c20a5a057",
+  "guidance": {
+   "knowledge": [
+    "Yüzde verim: elde edilen (gerçek) ürün miktarının, kusursuz tepkimede çıkması gereken (kuramsal, teorik) miktara oranının 100 ile çarpımıdır.",
+    "Kuramsal miktar ulaşılabilecek üst sınırdır; bu yüzden payda o olur, pay ölçülen miktardır."
+   ],
+   "strategy": "İki kütle de aynı ürüne ait ve doğrudan verilmiş; tanımı uygulamak yeter, mol hesabına gerek yok.",
+   "steps": [
+    "Pay ölçülen ürün: 18 g; payda kuramsal ürün: 24 g.",
+    "Oran: 18/24 = 0,75.",
+    "Yüzdeye çevir: 0,75 · 100 = %75."
+   ],
+   "optionReasons": [
+    "Doğru: 18/24 · 100 = %75.",
+    "Kaybolan payı hesaplar: 6/24 = %25; bu verim değil, kayıptır.",
+    "%80 olsaydı ürün 0,80 · 24 = 19,2 g olurdu; ölçülen 18 g bunu vermez.",
+    "%100'ü aşan verim gerçek ürünün kuramsal sınırı geçmesi demektir; 18 g, 24 g'dan küçüktür.",
+    "Pay ile paydayı ters koyar: 24/18 · 100 ≈ %133,33."
+   ],
+   "commonError": "Pay ile paydayı ters koyup %100'den büyük bir verim bulmak.",
+   "check": "Sonucu geri uygula: 24 g · 0,75 = 18 g, ölçülen değerle aynı."
+  }
+ },
+ {
+  "id": "f015-chem-yuzde-verim-2",
+  "h": "017dafc7481b46",
+  "guidance": {
+   "knowledge": [
+    "Yüzde verim: elde edilen (gerçek) ürün miktarının, kusursuz tepkimede çıkması gereken (kuramsal, teorik) miktara oranının 100 ile çarpımıdır.",
+    "Verim yüzdesini kesre çevirmek için 100'e bölersin: %80 = 0,80."
+   ],
+   "strategy": "Kuramsal miktar ve verim verilmiş, gerçek miktar isteniyor; tanımdaki oranı gerçek ürün = kuramsal · verim kesri biçiminde kullan.",
+   "steps": [
+    "Verimi kesre çevir: %80 = 0,80.",
+    "Gerçek ürün = 45 g · 0,80.",
+    "45 · 0,80 = 36 g."
+   ],
+   "optionReasons": [
+    "Kayıp kısmı bulur: 45 · 0,20 = 9 g.",
+    "Doğru: 45 · 0,80 = 36 g.",
+    "Verimi hiç kullanmaz ve kuramsal miktarı gerçek sanır.",
+    "Çarpması gerekirken böler: 45/0,80 = 56,25 g; bu kuramsaldan büyük, olamaz.",
+    "Yüzde değerini gram sanır: %80 → 80 g."
+   ],
+   "commonError": "Gerçek ürünü bulurken verim kesrine bölmek; gerçek ürün kuramsaldan büyük olamaz.",
+   "check": "36/45 = 0,80, yani %80; verilen verim geri gelir."
+  }
+ },
+ {
+  "id": "f015-chem-yuzde-verim-3",
+  "h": "1ffde13319b2be",
+  "guidance": {
+   "knowledge": [
+    "Yüzde verim: elde edilen (gerçek) ürün miktarının, kusursuz tepkimede çıkması gereken (kuramsal, teorik) miktara oranının 100 ile çarpımıdır.",
+    "Gerçek ürün = kuramsal ürün · verim kesri; buradan kuramsal = gerçek / verim kesri olur."
+   ],
+   "strategy": "Gerçek ürün ve verim verilmiş, kuramsal miktar isteniyor; bu ters işlemdir, verim kesrine bölünür.",
+   "steps": [
+    "Verimi kesre çevir: %75 = 0,75.",
+    "Kuramsal = 12 g / 0,75.",
+    "12 / 0,75 = 16 g."
+   ],
+   "optionReasons": [
+    "Bölmesi gerekirken çarpar: 12 · 0,75 = 9 g; kuramsal gerçekten küçük çıkamaz.",
+    "Gerçek ürünü kuramsal sanır; bu %100 verim demektir.",
+    "Doğru: 12 / 0,75 = 16 g.",
+    "%25'lik kaybı 12 g'ın üstüne ekler: 12 + 3 = 15 g; kayıp kuramsal üzerinden hesaplanır.",
+    "Kayıp yüzdesini (%25) gram sanar."
+   ],
+   "commonError": "Ters işlemde verim kesriyle çarpmak; kuramsal miktar her zaman gerçek miktardan büyük ya da ona eşittir.",
+   "check": "16 g · 0,75 = 12 g; verilen gerçek ürün geri gelir."
+  }
+ },
+ {
+  "id": "f015-chem-yuzde-verim-4",
+  "h": "13e13982f6f21d",
+  "guidance": {
+   "knowledge": [
+    "N₂ + 3 H₂ → 2 NH₃: 1 mol N₂ ile 3 mol H₂ tepkimeye girer ve 2 mol NH₃ oluşur.",
+    "Sınırlayıcı bileşen: önce tükenen, ürün miktarını belirleyen maddedir. Her maddenin molünü katsayısına bölüp küçük olanı seçersin.",
+    "Yüzde verim: elde edilen (gerçek) ürün miktarının, kusursuz tepkimede çıkması gereken (kuramsal, teorik) miktara oranının 100 ile çarpımıdır."
+   ],
+   "strategy": "İki başlangıç miktarı verildiği için önce sınırlayıcıyı bul; kuramsal NH₃ ondan hesaplanır, sonra verim tanımı uygulanır.",
+   "steps": [
+    "Mol/katsayı: N₂ için 2/1 = 2, H₂ için 3/3 = 1. Küçük olan H₂, sınırlayıcıdır.",
+    "3 mol H₂ en çok 2 mol NH₃ verir: kuramsal ürün 2 mol.",
+    "Verim: 1,6/2 = 0,80 → %80."
+   ],
+   "optionReasons": [
+    "Kuramsalı N₂'den hesaplar: 2 mol N₂ → 4 mol NH₃, 1,6/4 = %40; oysa H₂ önce biter.",
+    "%50 için kuramsal ürün 3,2 mol olmalıydı; ne N₂ ne H₂ sınırı bunu verir.",
+    "%60 için kuramsal ürün yaklaşık 2,67 mol olmalıydı; hiçbir sınırlayıcı seçimi bunu vermez.",
+    "Doğru: H₂ sınırlayıcı, kuramsal 2 mol, 1,6/2 = %80.",
+    "Ürünün tam oluştuğunu varsayar; oysa ölçülen 1,6 mol kuramsal 2 molden azdır."
+   ],
+   "commonError": "Sınırlayıcıyı bulmadan miktarı fazla olan reaktiften kuramsal ürünü hesaplamak.",
+   "check": "1,6 mol NH₃ için 2,4 mol H₂ harcanır; 2,4/3 = 0,80, aynı oran."
+  }
+ },
+ {
+  "id": "f015-chem-yuzde-verim-5",
+  "h": "058111907cdca7",
+  "guidance": {
+   "knowledge": [
+    "CaCO₃ → CaO + CO₂: 1 mol CaCO₃ ısıyla 1 mol CO₂ verir.",
+    "Mol = kütle / mol kütlesi; mol kütlesi (M) 1 mol maddenin gram cinsinden kütlesidir.",
+    "Yüzde verim: elde edilen (gerçek) ürün miktarının, kusursuz tepkimede çıkması gereken (kuramsal, teorik) miktara oranının 100 ile çarpımıdır."
+   ],
+   "strategy": "Verim aynı ürün üzerinden hesaplanır; bu yüzden önce CaCO₃'ten beklenen CO₂ kütlesini mol oranıyla bul, sonra ölçülen CO₂ ile oranla.",
+   "steps": [
+    "CaCO₃ molü: 25/100 = 0,25 mol.",
+    "Mol oranı 1:1, kuramsal CO₂: 0,25 · 44 = 11 g.",
+    "Verim: 8,8/11 = 0,80 → %80."
+   ],
+   "optionReasons": [
+    "Farklı maddelerin kütlelerini oranlar: 8,8/25 = %35,2; verim aynı ürüne bakar.",
+    "%50 için kuramsal CO₂ 17,6 g olmalıydı; 25 g CaCO₃ bunu veremez.",
+    "Kuramsal kütleyi yanlış bulmadan bu değere ulaşılmaz: 0,75 · 11 = 8,25 g, 8,8 g değil.",
+    "Oranı ters kurar: 11/8,8 = %125.",
+    "Doğru: kuramsal 11 g, 8,8/11 = %80."
+   ],
+   "commonError": "Verimi ürün kütlesini reaktif kütlesine bölerek hesaplamak.",
+   "check": "11 g · 0,80 = 8,8 g; ölçülen değer geri gelir."
+  }
+ },
+ {
+  "id": "f015-chem-yuzde-verim-6",
+  "h": "10fb68d483ea14",
+  "guidance": {
+   "knowledge": [
+    "Saflık: numunedeki istenen maddenin kütlesinin numune kütlesine oranıdır. %80 saf, 60 g numunenin 48 g'ı CaCO₃ demektir.",
+    "İnert safsızlık: verilen koşulda tepkimeye girmeyen kısım; ürün vermez.",
+    "Yüzde verim: elde edilen (gerçek) ürün miktarının, kusursuz tepkimede çıkması gereken (kuramsal, teorik) miktara oranının 100 ile çarpımıdır."
+   ],
+   "strategy": "Kuramsal ürün yalnız saf CaCO₃'ten hesaplanır; önce saflıkla saf kütleyi bul, sonra mol oranı, en son verim tanımı.",
+   "steps": [
+    "Saf CaCO₃: 60 · 0,80 = 48 g → 48/100 = 0,48 mol.",
+    "Kuramsal CO₂: 0,48 · 44 = 21,12 g.",
+    "Verim: 15,84/21,12 = 0,75 → %75."
+   ],
+   "optionReasons": [
+    "Doğru: kuramsal 21,12 g, 15,84/21,12 = %75.",
+    "Saflığı unutur: 60 g'ı saf sayar, kuramsal 0,6 · 44 = 26,4 g, 15,84/26,4 = %60.",
+    "Saflık yüzdesini verim sanar; ikisi ayrı oranlardır.",
+    "%90 için kuramsal 17,6 g olmalıydı; bu 40 g saf CaCO₃ demektir, 48 g değil.",
+    "Tepkimenin tam olduğunu varsayar; ölçülen 15,84 g kuramsaldan azdır."
+   ],
+   "commonError": "Saflık ile verimi karıştırmak ya da inert kısmı ürün veren madde saymak.",
+   "check": "21,12 · 0,75 = 15,84 g; ölçülen CO₂ ile aynı."
+  }
+ },
+ {
+  "id": "f015-chem-yuzde-verim-7",
+  "h": "1259ad6c1a6ea7",
+  "guidance": {
+   "knowledge": [
+    "Yüzde verim: elde edilen (gerçek) ürün miktarının, kusursuz tepkimede çıkması gereken (kuramsal, teorik) miktara oranının 100 ile çarpımıdır.",
+    "Kuramsal miktar doğru tanımlanmışsa ölçülen saf ürün onu aşamaz; aşıyorsa ölçümde (nem, safsızlık) ya da varsayımda hata vardır."
+   ],
+   "strategy": "Önce oranı aritmetik olarak hesapla, sonra sonucun kuramsal üst sınırla uyumunu yorumla.",
+   "steps": [
+    "Oran: 11/10 · 100 = %110.",
+    "Kuramsal üst sınır %100'dür; %110 bu sınırı aşar.",
+    "Sayıyı değiştirmek yerine ölçüm ve kuramsal model yeniden kontrol edilir."
+   ],
+   "optionReasons": [
+    "Hesaplanan değeri gizleyip keyfî düzeltme yapar; veri tutarsızlığı böyle çözülmez.",
+    "Doğru: oran %110 çıkar ve üst sınırı aştığı için ölçüm ile model yeniden incelenir.",
+    "Kütle korunumu her tepkimede geçerlidir; tutarsızlık onu askıya almaz.",
+    "Tek bir ölçümden genel kural çıkarır; verim deneyden deneye değişir.",
+    "Kuramsal miktarı ölçüme uydurur; kuramsal değer denklemden ve başlangıç miktarından gelir."
+   ],
+   "commonError": "Sınırı aşan bir oranı sorgulamadan kabul etmek ya da sayıyı keyfî düzeltmek.",
+   "check": "Kütle korunumuna göre ürün, girdiğin saf reaktiften fazla madde içeremez; 11 g, 10 g'lık kuramsal sınırı geçtiği için şüphelidir."
+  }
+ },
+ {
+  "id": "f015-chem-yuzde-verim-8",
+  "h": "1389f11e6eddc3",
+  "guidance": {
+   "knowledge": [
+    "Yüzde verim: elde edilen (gerçek) ürün miktarının, kusursuz tepkimede çıkması gereken (kuramsal, teorik) miktara oranının 100 ile çarpımıdır.",
+    "Bir sayının sıfıra bölümü tanımsızdır; 0/0 da belirli bir sayıya eşit değildir."
+   ],
+   "strategy": "Formüle değerleri yerleştir ve paydanın ne olduğuna bak; payda sıfırsa oran bir yüzde vermez.",
+   "steps": [
+    "Verim = gerçek/kuramsal · 100 = 0/0 · 100.",
+    "Payda sıfır olduğu için oran tanımsızdır.",
+    "Bu durumda hiçbir yüzde değeri atanmaz."
+   ],
+   "optionReasons": [
+    "Payın sıfır olmasına bakıp oranı sıfır sanar; payda da sıfırdır.",
+    "Gerçek ile kuramsal eşit diye oranı 1 sayar; 0/0 için bu kural geçmez.",
+    "Doğru: payda sıfır olduğundan 0/0 tanımsızdır.",
+    "İki uç değerin ortalamasını alır gibi keyfî bir sayı uydurur.",
+    "Hiçbir hesapla elde edilmeyen keyfî bir değerdir; 0/0 bir sayıya eşitlenemez."
+   ],
+   "commonError": "0/0 ifadesini 0 ya da 1 kabul etmek.",
+   "check": "Payda sıfıra yaklaşırken pay da sıfırsa oran her değere gidebilir; bu yüzden tek bir yüzde seçilemez."
+  }
+ },
+ {
+  "id": "f015-chem-yuzde-verim-9",
+  "h": "1d87c5c5708cc4",
+  "guidance": {
+   "knowledge": [
+    "Ardışık aşama: birinci aşamanın ürünü ikinci aşamanın girdisidir.",
+    "Her aşamanın verimi kendi girdisine göre bir kesirdir; peş peşe uygulanınca kesirler çarpılır."
+   ],
+   "strategy": "İkinci aşama yalnız birinci aşamadan kalan miktar üzerinde çalışır; bu yüzden yüzdeler toplanmaz, kesirleri çarpılır.",
+   "steps": [
+    "Kesirlere çevir: %90 = 0,90, %80 = 0,80.",
+    "Toplam kesir: 0,90 · 0,80 = 0,72.",
+    "Yüzdeye çevir: %72."
+   ],
+   "optionReasons": [
+    "İki yüzdeyi birbirinden çıkarır: 90 − 80 = 10.",
+    "Yüzdeleri toplar (%170) ve basamağı kaydırarak %17 okur.",
+    "Yalnız son aşamaya bakar; birinci aşamadaki kaybı unutur.",
+    "Doğru: 0,90 · 0,80 = 0,72 → %72.",
+    "Düz ortalama alır: (90 + 80)/2 = %85."
+   ],
+   "commonError": "Ardışık verimleri toplamak ya da ortalamasını almak.",
+   "check": "100 birimle başla: ilk aşamadan 90 çıkar, bunun %80'i 72; toplam %72."
+  }
+ },
+ {
+  "id": "f015-chem-yuzde-verim-10",
+  "h": "07b076fb232084",
+  "guidance": {
+   "knowledge": [
+    "Yüzde verim: elde edilen (gerçek) ürün miktarının, kusursuz tepkimede çıkması gereken (kuramsal, teorik) miktara oranının 100 ile çarpımıdır.",
+    "Farklı ölçekteki deneyleri kıyaslamak için ham kütleler değil, oranlar karşılaştırılır."
+   ],
+   "strategy": "Her deney için yüzde verimi ayrı hesapla; sonra iki yüzdeyi karşılaştır.",
+   "steps": [
+    "A: 9/12 = 0,75 → %75.",
+    "B: 12/15 = 0,80 → %80.",
+    "%80 > %75, B daha verimlidir."
+   ],
+   "optionReasons": [
+    "Gerçek ürünlerin küçüklüğüne değil orana bakmalı; A'nın oranı %75, B'den düşüktür.",
+    "Yalnız A'yı hesaplayıp B'ye de aynı sonucu uygular.",
+    "Yalnız B'yi hesaplayıp A'ya da aynı sonucu uygular.",
+    "Oranın birimsiz olduğunu unutur; gram farkı yüzde kıyaslamasını engellemez.",
+    "Doğru: A %75, B %80; B'nin verimi büyüktür."
+   ],
+   "commonError": "Gerçek ürün kütlesi büyük olanı daha verimli sanmak.",
+   "check": "Kaybı da kıyasla: A'da 3/12 = %25, B'de 3/15 = %20 kayıp; az kayıp B'de."
+  }
+ },
+ {
+  "id": "f015-chem-safsizlik-problemleri-1",
+  "h": "153b2ca44c7ed5",
+  "guidance": {
+   "knowledge": [
+    "Kütlece saflık: numunedeki istenen (saf) maddenin kütlesinin numunenin toplam kütlesine oranının 100 ile çarpımıdır.",
+    "Saf kütle = numune kütlesi · saflık kesri; %70 = 0,70."
+   ],
+   "strategy": "Numune ve saflık verilmiş, saf kütle isteniyor; tanımı çarpma biçiminde kullan.",
+   "steps": [
+    "Saflığı kesre çevir: %70 = 0,70.",
+    "Saf kütle = 90 · 0,70 = 63 g.",
+    "Kalan safsızlık: 90 − 63 = 27 g."
+   ],
+   "optionReasons": [
+    "Doğru: 90 · 0,70 = 63 g.",
+    "Safsızlık kısmını bulur: 90 · 0,30 = 27 g.",
+    "Yüzde değerini gram sanar: %70 → 70 g.",
+    "Numunenin tamamını saf sayar.",
+    "Çarpacağına böler: 90/0,70 ≈ 128,57 g; saf kısım numuneden büyük olamaz."
+   ],
+   "commonError": "Saf kütleyi bulurken saflık kesrine bölmek.",
+   "check": "63/90 = 0,70; verilen saflık geri gelir."
+  }
+ },
+ {
+  "id": "f015-chem-safsizlik-problemleri-2",
+  "h": "19a92d25d4d5b1",
+  "guidance": {
+   "knowledge": [
+    "Kütlece saflık: numunedeki istenen (saf) maddenin kütlesinin numunenin toplam kütlesine oranının 100 ile çarpımıdır.",
+    "İnert bileşen: tepkimeye girmeyen safsızlık; numune kütlesine dahildir ama saf maddeye dahil değildir."
+   ],
+   "strategy": "Saflık oranının payında yalnız hedef bileşen, paydasında numunenin tamamı olur.",
+   "steps": [
+    "Numune toplamı: 20 + 60 = 80 g.",
+    "Saflık: 60/80 = 0,75.",
+    "Yüzde: %75."
+   ],
+   "optionReasons": [
+    "İnert kütleyi yüzde sanar: 20 g → %20; oysa inert oranı 20/80 = %25'tir.",
+    "Doğru: 60/80 · 100 = %75.",
+    "İnert bileşenin oranını hesaplar: 20/80 = %25.",
+    "Hedef bileşenin kütlesini yüzde sanar: 60 g → %60.",
+    "Numune kütlesini yüzde sanar: 80 g → %80."
+   ],
+   "commonError": "Saflık oranında paydaya numune yerine hedef bileşeni ya da inerti koymak.",
+   "check": "İki oranın toplamı 100 olmalı: %75 + %25 = %100."
+  }
+ },
+ {
+  "id": "f015-chem-safsizlik-problemleri-3",
+  "h": "1d619be62971d2",
+  "guidance": {
+   "knowledge": [
+    "Kütlece saflık: numunedeki istenen (saf) maddenin kütlesinin numunenin toplam kütlesine oranının 100 ile çarpımıdır.",
+    "Saf kütle = numune · saflık kesri olduğundan numune = saf kütle / saflık kesri olur."
+   ],
+   "strategy": "Saf kütle ve saflık verilmiş, numune isteniyor; ters işlem olduğu için saflık kesrine bölünür.",
+   "steps": [
+    "Saflık kesri: %80 = 0,80.",
+    "Numune = 36/0,80 = 45 g.",
+    "Diğer bileşen: 45 − 36 = 9 g."
+   ],
+   "optionReasons": [
+    "Bölmesi gerekirken çarpar: 36 · 0,80 = 28,8 g; numune saf kısımdan küçük olamaz.",
+    "Saf kısmı numunenin tamamı sanır.",
+    "Doğru: 36/0,80 = 45 g.",
+    "Safsızlığı yanlış ekler: 36 + 8 = 44 g; diğer bileşen 9 g'dır.",
+    "Yüzde değerini gram sanar: %80 → 80 g."
+   ],
+   "commonError": "Numuneyi bulurken saflık kesriyle çarpmak.",
+   "check": "45 · 0,80 = 36 g; verilen saf kütle geri gelir."
+  }
+ },
+ {
+  "id": "f015-chem-safsizlik-problemleri-4",
+  "h": "0a292f4ce59929",
+  "guidance": {
+   "knowledge": [
+    "CaCO₃ → CaO + CO₂: 1 mol CaCO₃ 1 mol CO₂ verir.",
+    "Mol = kütle / mol kütlesi. Tek CO₂ kaynağı CaCO₃ olduğundan ölçülen CO₂ doğrudan CaCO₃ miktarını verir.",
+    "Kütlece saflık: numunedeki istenen (saf) maddenin kütlesinin numunenin toplam kütlesine oranının 100 ile çarpımıdır."
+   ],
+   "strategy": "Üründen geriye gidilir: CO₂ molünden CaCO₃ molünü, oradan saf kütleyi bul, sonra numuneye oranla.",
+   "steps": [
+    "CO₂ molü: 4,4/44 = 0,1 mol.",
+    "Mol oranı 1:1, CaCO₃ = 0,1 mol → 0,1 · 100 = 10 g.",
+    "Saflık: 10/20 = 0,50 → %50."
+   ],
+   "optionReasons": [
+    "Farklı maddelerin kütlelerini oranlar: 4,4/20 = %22.",
+    "CO₂'nin mol kütlesini yüzde sanar: 44 → %44.",
+    "%75 için numunede 15 g CaCO₃ olmalı; bu 6,6 g CO₂ verirdi.",
+    "Doğru: 10 g CaCO₃, 10/20 = %50.",
+    "Numunenin inert dolgu içerdiğini görmezden gelir; tamamı saf olsa 8,8 g CO₂ çıkardı."
+   ],
+   "commonError": "CO₂ kütlesini mol oranıyla CaCO₃'e çevirmeden doğrudan numuneye bölmek.",
+   "check": "20 g'ın yarısı 10 g CaCO₃ = 0,1 mol, o da 0,1 · 44 = 4,4 g CO₂ verir; veriyle uyumlu."
+  }
+ },
+ {
+  "id": "f015-chem-safsizlik-problemleri-5",
+  "h": "0148125c10f229",
+  "guidance": {
+   "knowledge": [
+    "Kütlece saflık: numunedeki istenen (saf) maddenin kütlesinin numunenin toplam kütlesine oranının 100 ile çarpımıdır.",
+    "CaCO₃ → CaO + CO₂: mol oranı 1:1. Kuramsal CO₂ saf CaCO₃'ten hesaplanır.",
+    "Yüzde verim: gerçek ürün = kuramsal ürün · verim kesri."
+   ],
+   "strategy": "Sıralı iki oran var: önce saflıkla saf maddeyi, sonra mol oranıyla kuramsal ürünü, en son verimle gerçek ürünü bul.",
+   "steps": [
+    "Saf CaCO₃: 50 · 0,80 = 40 g → 40/100 = 0,4 mol.",
+    "Kuramsal CO₂: 0,4 · 44 = 17,6 g.",
+    "Gerçek CO₂: 17,6 · 0,50 = 8,8 g."
+   ],
+   "optionReasons": [
+    "Verimi iki kez uygular: 17,6 · 0,5 · 0,5 = 4,4 g.",
+    "Kuramsal ürünü bulup verimi unutur.",
+    "Verimi CaCO₃ kütlesine uygular: 40 · 0,5 = 20 g; bu bir CO₂ hesabı değil.",
+    "Saflığı ve verimi atlar: 50 g'ı saf sayar, 0,5 · 44 = 22 g.",
+    "Doğru: 40 g saf → 0,4 mol → 17,6 g kuramsal → 8,8 g gerçek."
+   ],
+   "commonError": "Saflık ve verim oranlarından birini atlamak ya da birini iki kez uygulamak.",
+   "check": "Toplam katsayı 0,80 · 0,50 = 0,40; 50 g numunenin tamamı saf ve verim %100 olsa 22 g CO₂ çıkardı, 22 · 0,40 = 8,8 g."
+  }
+ },
+ {
+  "id": "f015-chem-safsizlik-problemleri-6",
+  "h": "110b39eab21999",
+  "guidance": {
+   "knowledge": [
+    "Kütlece saflık: numunedeki istenen (saf) maddenin kütlesinin numunenin toplam kütlesine oranının 100 ile çarpımıdır.",
+    "Kuramsal ürün = gerçek ürün / verim kesri. CaCO₃ → CaO + CO₂ mol oranı 1:1."
+   ],
+   "strategy": "Ölçülen CO₂ verimden etkilenmiştir; önce kuramsal CO₂'yi bul, sonra mol oranıyla saf CaCO₃'e, en son numuneye oranla.",
+   "steps": [
+    "Kuramsal CO₂: 8,8/0,80 = 11 g → 11/44 = 0,25 mol.",
+    "Saf CaCO₃: 0,25 mol · 100 = 25 g.",
+    "Saflık: 25/50 = 0,50 → %50."
+   ],
+   "optionReasons": [
+    "Doğru: kuramsal 11 g CO₂ → 25 g CaCO₃ → 25/50 = %50.",
+    "Verimi hesaba katmaz: 8,8 g → 0,2 mol → 20 g, 20/50 = %40.",
+    "Verim kesrini kendisiyle çarpıp saflık sanar: 0,8 · 0,8 = 0,64; bu işlemin kütlelerle ilgisi yoktur.",
+    "Verim yüzdesini saflık sanar.",
+    "Numunenin inert içerdiğini görmezden gelir; tamamı saf olsa %80 verimle 17,6 g CO₂ çıkardı."
+   ],
+   "commonError": "Ters hesapta verimi atlayıp ölçülen ürünü kuramsal saymak.",
+   "check": "Yerine koy: 50 g · 0,50 = 25 g CaCO₃ → 0,25 mol → 11 g kuramsal → %80 ile 8,8 g; veriyle aynı."
+  }
+ },
+ {
+  "id": "f015-chem-safsizlik-problemleri-7",
+  "h": "0f8b47a1477a14",
+  "guidance": {
+   "knowledge": [
+    "İnert: verilen deney koşullarında tepkimeye katılmayan bileşen. Saflık sorularında ürün vermeyen kısmı anlatır.",
+    "Bir maddenin tepkimeye girip girmemesi sıcaklığa, basınca ve karşısındaki maddeye bağlıdır."
+   ],
+   "strategy": "Kavramın soru modelindeki işlevine bak: inert kısım yalnız o deneyde ürün vermediği için hesap dışı kalır.",
+   "steps": [
+    "Saflık sorularında inert kısım yalnız kütleye katkı verir, ürün oluşturmaz.",
+    "Bu özellik o deneyin koşuluna bağlıdır; başka koşulda aynı madde tepkime verebilir.",
+    "Tanım zehirlilik, tartılabilirlik ya da fiziksel hâl içermez."
+   ],
+   "optionReasons": [
+    "Tanımı mutlak kurala çevirir; koşul değişince birçok madde tepkime verebilir.",
+    "Doğru: verilen koşullarda tepkimeye girmeyen bileşendir.",
+    "Tepkimesizliği tehlikeyle karıştırır; inert kelimesi zehirlilik anlatmaz.",
+    "İnert kısım numune kütlesine dahildir ve tartılır; saflık hesabı bunu kullanır.",
+    "Soy gazları akla getirip her inerti gaz sanır; kum gibi katılar da inert olabilir."
+   ],
+   "commonError": "İnertliği koşuldan bağımsız, mutlak bir özellik sanmak.",
+   "check": "Kum kalsiyum karbonatlı numunede asitle gaz vermediği için inerttir, ama yine de numunenin tartılan kütlesine girer."
+  }
+ },
+ {
+  "id": "f015-chem-safsizlik-problemleri-8",
+  "h": "0f038dd0507603",
+  "guidance": {
+   "knowledge": [
+    "Ters saflık hesabı: ölçülen üründen geriye giderek saf madde kütlesini bulmak. Bu, ürünün tek bir kaynaktan geldiğini varsayar.",
+    "CaCO₃ ve MgCO₃ ikisi de karbonattır; ısıtılınca ya da asitle her biri CO₂ verir."
+   ],
+   "strategy": "Ters hesabın dayandığı varsayımı (tek ürün kaynağı) kontrol et; iki kaynak varsa toplam ürün iki katkının toplamıdır.",
+   "steps": [
+    "Toplam CO₂ = CaCO₃'ten gelen + MgCO₃'ten gelen.",
+    "Hepsini CaCO₃'e bağlamak MgCO₃'ün katkısını CaCO₃ sayar.",
+    "Tek kaynak koşulu bozulduğu için bu yol CaCO₃ miktarını olduğundan büyük bulur."
+   ],
+   "optionReasons": [
+    "Her madde kütleye sahiptir; MgCO₃ da numunenin tartılan kütlesine girer.",
+    "CO₂ tartılarak ya da hacmiyle ölçülebilir; soru da toplam CO₂'nin bilindiğini söyler.",
+    "Doğru: MgCO₃ da CO₂ verir; toplam iki katkının toplamıdır.",
+    "Soru kökü karbonatların CO₂ verdiğini zaten söyler.",
+    "Bileşenlerin kütleleri hakkında bilgi yoktur; eşitlik keyfî bir varsayımdır."
+   ],
+   "commonError": "İkinci bir ürün kaynağı varken tek kaynak formülünü kullanmak.",
+   "check": "Uç örnek: numune yalnız MgCO₃ olsaydı yine CO₂ çıkardı ve tek kaynak hesabı olmayan bir CaCO₃ miktarı bulurdu."
+  }
+ },
+ {
+  "id": "f015-chem-safsizlik-problemleri-9",
+  "h": "1543a7791077bc",
+  "guidance": {
+   "knowledge": [
+    "Kütlece saflık: etkin (saf) bileşen kütlesi / numune kütlesi · 100. Bir parça bütünden büyük olamaz, bu yüzden saflık en çok %100'dür.",
+    "Sınırı aşan sonuç ölçümde ya da varsayımda (tek kaynak, verim) hata olduğunu gösterir."
+   ],
+   "strategy": "Oranı hesapla ve fiziksel sınırla karşılaştır; sınır aşılıyorsa sayıyı değil veriyi sorgula.",
+   "steps": [
+    "Saflık: 12/10 = 1,2 → %120.",
+    "%100'ü aşan bir parça olamaz; inert kısım −2 g çıkardı.",
+    "Negatif kütle olmadığından veri ya da varsayımlar tutarsızdır."
+   ],
+   "optionReasons": [
+    "Hesaptan çıkan −2 g'ı gerçek sanar; kütle negatif olamaz.",
+    "Tutarsızlığı keyfî bir sayıyla örter.",
+    "Numune kütlesini sonuca uydurur; tartılan 10 g veridir.",
+    "Doğru: %120 fiziksel olarak imkânsız, veri ya da varsayım tutarsız.",
+    "%80 için etkin bileşen 8 g olmalıydı; 12 g ile bu sonuç çıkmaz."
+   ],
+   "commonError": "Sınırı aşan sonucu sorgulamadan düzeltmek ya da kabul etmek.",
+   "check": "Numune = etkin + inert: 10 = 12 + inert ise inert = −2 g; negatif kütle tutarsızlığın kanıtıdır."
+  }
+ },
+ {
+  "id": "f015-chem-safsizlik-problemleri-10",
+  "h": "0c03c6709b24a1",
+  "guidance": {
+   "knowledge": [
+    "Kütlece saflık = saf bileşen / (saf bileşen + diğer bileşenler) · 100. Payda numunenin tamamıdır."
+   ],
+   "strategy": "Önce numune toplamını kur, sonra saf kısmı ona böl; doğru ifadeyi bu iki adıma göre seç.",
+   "steps": [
+    "Numune: 18 + 2 = 20 g.",
+    "Saflık: 18/20 · 100 = %90.",
+    "Bu işlemi gösteren ifade 18/(18 + 2) · 100'dür."
+   ],
+   "optionReasons": [
+    "Paydaya numune yerine inerti koyar: 18/2 · 100 = %900.",
+    "İnertin saf kısma oranını alır: 2/18 · 100 ≈ %11,1.",
+    "Oran kurmak yerine çarpar: 18 · 2 = 36; birimi g² olur.",
+    "Oranı ters kurar: 20/18 · 100 ≈ %111; parça bütünden büyük çıkar.",
+    "Doğru: 18/(18 + 2) · 100 = %90."
+   ],
+   "commonError": "Saflık oranında paydaya numunenin tamamı yerine bir bileşeni koymak.",
+   "check": "İnert oranı 2/20 = %10; %90 + %10 = %100, tutarlı."
+  }
+ },
+ {
+  "id": "f015-chem-atom-kutlesi-hesaplari-1",
+  "h": "1992eb9abb71da",
+  "guidance": {
+   "knowledge": [
+    "Ortalama atom kütlesi: her izotopun kütlesi atomca bolluk kesriyle çarpılıp toplanır (ağırlıklı ortalama).",
+    "Bolluk: o izotopun bütün atomlar içindeki yüzdesi. u, atomik kütle birimidir."
+   ],
+   "strategy": "Bolluklar eşit değil; bu yüzden düz ortalama değil ağırlıklı ortalama kullanılır.",
+   "steps": [
+    "Kesirler: %75 = 0,75, %25 = 0,25.",
+    "35 · 0,75 = 26,25 ve 37 · 0,25 = 9,25.",
+    "Toplam: 26,25 + 9,25 = 35,5 u."
+   ],
+   "optionReasons": [
+    "Doğru: 35 · 0,75 + 37 · 0,25 = 35,5 u.",
+    "Yalnız bol olan izotopu alır; ağır izotopun katkısını unutur.",
+    "Düz ortalama alır: (35 + 37)/2 = 36; bu eşit bolluk ister.",
+    "Bollukları ters eşler: 35 · 0,25 + 37 · 0,75 = 36,5.",
+    "Yalnız ağır izotopu alır."
+   ],
+   "commonError": "Bolluklar farklıyken düz ortalama almak.",
+   "check": "Ortalama bol izotopa yakın olmalı: 35,5, 35'e 37'den daha yakın."
+  }
+ },
+ {
+  "id": "f015-chem-atom-kutlesi-hesaplari-2",
+  "h": "1367e99d26faa9",
+  "guidance": {
+   "knowledge": [
+    "Ortalama atom kütlesi: her izotopun kütlesi atomca bolluk kesriyle çarpılıp toplanır (ağırlıklı ortalama).",
+    "Ağır izotop %20 ise hafif izotop %80'dir; bolluklar toplamı %100."
+   ],
+   "strategy": "Önce hafif izotopun bolluğunu tamamlayıcı olarak bul, sonra ağırlıklı ortalamayı uygula.",
+   "steps": [
+    "Hafif izotop: %100 − %20 = %80 → 0,80; ağır 0,20.",
+    "24 · 0,80 = 19,2 ve 26 · 0,20 = 5,2.",
+    "Toplam: 19,2 + 5,2 = 24,4 u."
+   ],
+   "optionReasons": [
+    "Bolluk kesrini hafif kütleye ekler: 24 + 0,2 = 24,2.",
+    "Doğru: 24 · 0,80 + 26 · 0,20 = 24,4 u.",
+    "Düz ortalama alır: (24 + 26)/2 = 25.",
+    "Bollukları ters eşler: 24 · 0,20 + 26 · 0,80 = 25,6.",
+    "Bolluk kesrini ağır kütleye ekler: 26 + 0,2 = 26,2."
+   ],
+   "commonError": "Verilen bolluğun hangi izotopa ait olduğunu karıştırmak.",
+   "check": "Fark yöntemi: 24 + 2 · 0,20 = 24,4; ortalama hafif izotoptan ağır payı kadar uzaklaşır."
+  }
+ },
+ {
+  "id": "f015-chem-atom-kutlesi-hesaplari-3",
+  "h": "0896129b23e7be",
+  "guidance": {
+   "knowledge": [
+    "Ortalama atom kütlesi: her izotopun kütlesi atomca bolluk kesriyle çarpılıp toplanır (ağırlıklı ortalama).",
+    "Bilinmeyen bolluk için ağır izotopun kesrine x dersen hafifin kesri 1 − x olur."
+   ],
+   "strategy": "Ortalama verilmiş, bolluk isteniyor; ağırlıklı ortalama denklemini kurup x'i çöz.",
+   "steps": [
+    "Denklem: 10(1 − x) + 11x = 10,65.",
+    "Aç: 10 − 10x + 11x = 10,65 → 10 + x = 10,65.",
+    "x = 0,65 ağır izotop; hafif 1 − 0,65 = 0,35 → %35."
+   ],
+   "optionReasons": [
+    "Ortalamanın ondalık kısmını yanlış okur; %10 hafifle ortalama 10,9 olurdu.",
+    "%30 hafif olsaydı ortalama 10 · 0,3 + 11 · 0,7 = 10,7 olurdu, 10,65 değil.",
+    "Doğru: ağır %65, hafif %35.",
+    "Eşit bolluk varsayar; o zaman ortalama 10,5 olurdu.",
+    "Bulduğu x'in ağır izotopa ait olduğunu unutup hafife verir."
+   ],
+   "commonError": "Denklemde x'i hangi izotopa verdiğini unutup tamamlayıcıyı seçmemek.",
+   "check": "10 · 0,35 + 11 · 0,65 = 3,5 + 7,15 = 10,65 u; ortalama geri gelir."
+  }
+ },
+ {
+  "id": "f015-chem-atom-kutlesi-hesaplari-4",
+  "h": "01947646922bff",
+  "guidance": {
+   "knowledge": [
+    "Ortalama atom kütlesi: her izotopun kütlesi atomca bolluk kesriyle çarpılıp toplanır (ağırlıklı ortalama).",
+    "Kesir: yüzdenin 100'e bölünmüş hâli; %70 = 0,70. Ağır izotop kesri x, hafif 1 − x."
+   ],
+   "strategy": "Ortalama verilmiş, ağır izotop kesri isteniyor; ağırlıklı ortalama denklemini x için çöz.",
+   "steps": [
+    "Denklem: 27(1 − x) + 29x = 28,4.",
+    "Aç: 27 + 2x = 28,4 → 2x = 1,4.",
+    "x = 0,70."
+   ],
+   "optionReasons": [
+    "Hafif izotopun kesrini (1 − 0,70 = 0,30) verir.",
+    "Ortalamayı yakın tam sayıdan çıkarır: 28,4 − 28 = 0,4; bu bir kesir değil.",
+    "Eşit bolluk varsayar; o zaman ortalama 28 olurdu.",
+    "Doğru: 2x = 1,4 → x = 0,70.",
+    "0,90 ağır kesirle ortalama 27 · 0,1 + 29 · 0,9 = 28,8 olurdu."
+   ],
+   "commonError": "2x = 1,4 adımında 2'ye bölmeyi unutmak ya da hafif kesri vermek.",
+   "check": "27 · 0,30 + 29 · 0,70 = 8,1 + 20,3 = 28,4 u; doğru."
+  }
+ },
+ {
+  "id": "f015-chem-atom-kutlesi-hesaplari-5",
+  "h": "13155c0589a8a5",
+  "guidance": {
+   "knowledge": [
+    "Atom numarası (Z): çekirdekteki proton sayısı.",
+    "Kütle numarası (A): proton + nötron sayısı. Nötron = A − Z."
+   ],
+   "strategy": "Kütle numarası ve atom numarası verilmiş; nötron sayısı bu ikisinin farkıdır.",
+   "steps": [
+    "Z = 8 proton, A = 18.",
+    "Nötron = 18 − 8 = 10."
+   ],
+   "optionReasons": [
+    "Proton sayısını nötron sanar.",
+    "Nötronu proton kadar sanıp ikiyle çarpar: 2 · 8 = 16.",
+    "Kütle numarasını nötron sanar.",
+    "Çıkarması gerekirken toplar: 18 + 8 = 26.",
+    "Doğru: 18 − 8 = 10 nötron."
+   ],
+   "commonError": "Kütle numarasından proton sayısını çıkarmayı unutmak.",
+   "check": "8 proton + 10 nötron = 18; kütle numarası geri gelir."
+  }
+ },
+ {
+  "id": "f015-chem-atom-kutlesi-hesaplari-6",
+  "h": "04dba410de61a0",
+  "guidance": {
+   "knowledge": [
+    "İzotop: proton sayısı aynı, nötron sayısı farklı atomlar. Kütle numarası = proton + nötron.",
+    "Elementin kimliğini proton sayısı belirler; proton sayısı değişirse başka bir element olur."
+   ],
+   "strategy": "İzotop tanımına bak: aynı elementin atomları olmaları için ortak olması zorunlu olan nicelik sorulur.",
+   "steps": [
+    "Aynı element olmak için proton sayısı aynı olmalıdır.",
+    "Nötron sayısı farklıdır; bu yüzden kütle numarası ve gerçek kütle de farklıdır.",
+    "Bolluk doğadaki dağılıma bağlıdır, izotopta ortak değildir."
+   ],
+   "optionReasons": [
+    "Doğru: izotoplar aynı elementin atomlarıdır, proton sayıları aynıdır.",
+    "İzotopları birbirinden ayıran tam olarak nötron sayısıdır.",
+    "Nötron farklı olduğundan kütle numarası da farklıdır.",
+    "Nötron farkı gerçek kütleyi de değiştirir.",
+    "İzotopların bollukları genelde farklıdır; örneğin bir izotop %75, diğeri %25 olabilir."
+   ],
+   "commonError": "İzotoplarda kütle numarasının da ortak olduğunu sanmak.",
+   "check": "Karbon-12 ile karbon-14'ün ikisi de 6 protonludur; kütle numaraları farklıdır."
+  }
+ },
+ {
+  "id": "f015-chem-atom-kutlesi-hesaplari-7",
+  "h": "12a14d1b01502e",
+  "guidance": {
+   "knowledge": [
+    "Ortalama atom kütlesi: her izotopun kütlesi atomca bolluk kesriyle çarpılıp toplanır (ağırlıklı ortalama).",
+    "Bolluklar 0 ile 1 arasında ve toplamları 1 olduğundan ortalama her zaman en hafif ile en ağır izotop kütlesi arasında kalır."
+   ],
+   "strategy": "Ortalamanın alabileceği aralığı bul ve raporlanan değeri bu aralıkla karşılaştır.",
+   "steps": [
+    "Yalnız 35 ve 37 u varsa ortalama 35 ile 37 u arasındadır.",
+    "38 u bu aralığın dışındadır.",
+    "Denklem çözülse ağır izotop kesri 1'den büyük, hafifinki negatif çıkar; bu fiziksel değildir."
+   ],
+   "optionReasons": [
+    "Hesaptan çıkan 1'i aşan kesri kabul eder; bolluk %100'ü geçemez.",
+    "Doğru: pozitif bolluklarla ortalama 37 u'yu aşamaz.",
+    "Her atomun kütlesi vardır; hafif izotop 35 u'dur.",
+    "Ortalama ağır ve hafif arasındadır, her zaman büyük olan değildir.",
+    "Raporu sorgulamadan kabul eder; 38 u aralığın dışındadır."
+   ],
+   "commonError": "Ağırlıklı ortalamanın en ağır izotoptan büyük olabileceğini sanmak.",
+   "check": "Uç durumlar: hepsi 35 ise ortalama 35, hepsi 37 ise 37; arada başka değer çıkmaz."
+  }
+ },
+ {
+  "id": "f015-chem-atom-kutlesi-hesaplari-8",
+  "h": "06c1909090e318",
+  "guidance": {
+   "knowledge": [
+    "Atom sayısı mol sayısıyla orantılıdır; mol = kütle / atom kütlesi.",
+    "Eşit kütlede hafif atomlardan daha çok tane bulunur."
+   ],
+   "strategy": "Kütleler eşit; her izotop için kütleyi kendi atom kütlesine bölüp oranla.",
+   "steps": [
+    "Kütleye m de. Hafif: m/10, ağır: m/20.",
+    "Oran: (m/10) / (m/20) = 20/10 = 2."
+   ],
+   "optionReasons": [
+    "Oranı ters kurar: ağır/hafif = 1/2.",
+    "Eşit kütleyi eşit atom sayısı sanar.",
+    "Doğru: m/10 bölü m/20 = 2.",
+    "Kütle farkını oran sanır; 20 − 10 = 10 bile 3 vermez, oran 20/10'dur.",
+    "Oranın karesini alır: 2² = 4."
+   ],
+   "commonError": "Eşit kütlenin eşit sayıda atom içerdiğini sanmak.",
+   "check": "Örnek: 20 g alırsan hafiften 2 mol, ağırdan 1 mol olur; oran 2."
+  }
+ },
+ {
+  "id": "f015-chem-atom-kutlesi-hesaplari-9",
+  "h": "02738fe46e612d",
+  "guidance": {
+   "knowledge": [
+    "X + 2 HCl → XCl₂ + H₂: 1 mol X tepkimeye girdiğinde 1 mol H₂ çıkar.",
+    "Mol kütlesi (M) = kütle / mol; birimi g/mol."
+   ],
+   "strategy": "Ürün molünden mol oranıyla X molünü bul, sonra kütleyi mole bölerek mol kütlesine ulaş.",
+   "steps": [
+    "H₂ ile X'in katsayıları 1 ve 1: X = 0,6 mol.",
+    "M = 24 g / 0,6 mol = 40 g/mol."
+   ],
+   "optionReasons": [
+    "Bölmesi gerekirken çarpar: 24 · 0,6 = 14,4.",
+    "Kütleyi mol kütlesi sanır; bu X'in 1 mol olduğunu varsayar.",
+    "28 g/mol olsaydı 24 g X yaklaşık 0,86 mol olur, 0,6 mol H₂ vermezdi.",
+    "Doğru: 24/0,6 = 40 g/mol.",
+    "X molünü 1 − 0,6 = 0,4 sanır: 24/0,4 = 60; oysa X ile H₂ birebirdir."
+   ],
+   "commonError": "Mol oranında HCl'nin katsayısını X'e karıştırmak.",
+   "check": "40 g/mol ile 24 g X = 0,6 mol; 1:1 oranla 0,6 mol H₂, veriyle aynı."
+  }
+ },
+ {
+  "id": "f015-chem-atom-kutlesi-hesaplari-10",
+  "h": "07ff61140f4569",
+  "guidance": {
+   "knowledge": [
+    "Mol kütlesi = kütle / mol. Bileşiğin mol kütlesi atomlarının mol kütleleri toplamıdır: XY için X + Y, XY₂ için X + 2Y."
+   ],
+   "strategy": "İki bilinmeyen var; iki bileşikten iki denklem kur ve birini diğerinden çıkararak çöz.",
+   "steps": [
+    "XY: 5,6/0,2 = 28 g/mol → X + Y = 28.",
+    "XY₂: 8,8/0,2 = 44 g/mol → X + 2Y = 44.",
+    "Çıkar: (X + 2Y) − (X + Y) = 44 − 28 → Y = 16.",
+    "X = 28 − 16 = 12."
+   ],
+   "optionReasons": [
+    "Sırayı ters yazar: X ile Y'yi karıştırır.",
+    "Kütleyi iki atoma eşit böler: 28/2 = 14; ikinci bileşiği kullanmaz.",
+    "Bileşiklerin mol kütlelerini atomlarınki sanar.",
+    "Verilen kütleleri mol kütlesi sanır; 0,2 mole bölmeyi unutur.",
+    "Doğru: X = 12, Y = 16 g/mol."
+   ],
+   "commonError": "Kütleyi mole bölmeden doğrudan mol kütlesi gibi kullanmak.",
+   "check": "Yerine koy: 12 + 16 = 28 ve 12 + 2 · 16 = 44; iki denklem de sağlanır."
+  }
+ },
+ {
+  "id": "f015-chem-tepkimeli-karisim-1",
+  "h": "02e6d6766203f1",
+  "guidance": {
+   "knowledge": [
+    "Tam yanma: hidrokarbondaki bütün karbon CO₂'ye dönüşür. CH₄ (metan) 1 C içerir, 1 mol CO₂ verir; C₂H₆ (etan) 2 C içerir, 2 mol CO₂ verir.",
+    "Karışım sorusunda her bilinmeyen için bir denklem gerekir: biri toplam mol, diğeri ürün katkılarının toplamı."
+   ],
+   "strategy": "İki bilinmeyen (CH₄ ve C₂H₆ molü) için iki bağımsız bilgi var: toplam mol ve toplam CO₂. İki denklemi kurup çıkarma ile çöz.",
+   "steps": [
+    "CH₄ = x, C₂H₆ = y. Toplam mol: x + y = 0,40.",
+    "Karbon sayımı: x + 2y = 0,55.",
+    "İkinciden birinciyi çıkar: y = 0,55 − 0,40 = 0,15 mol.",
+    "CH₄: x = 0,40 − 0,15 = 0,25 mol."
+   ],
+   "optionReasons": [
+    "Doğru: (x + 2y) − (x + y) = 0,15 mol C₂H₆.",
+    "0,10 mol C₂H₆ ile CO₂ 0,30 + 0,20 = 0,50 mol olurdu, 0,55 değil.",
+    "CH₄ molünü (0,25) C₂H₆ sanar.",
+    "Toplam molü tek bileşene verir.",
+    "CO₂ molünü C₂H₆ molü sanır."
+   ],
+   "commonError": "C₂H₆'nın 2 mol CO₂ verdiğini unutup her bileşenden 1 mol CO₂ saymak.",
+   "check": "Yerine koy: 0,25 + 2 · 0,15 = 0,55 mol CO₂; veriyle aynı."
+  }
+ },
+ {
+  "id": "f015-chem-tepkimeli-karisim-2",
+  "h": "084f8884eb6c0b",
+  "guidance": {
+   "knowledge": [
+    "Tam yanma: hidrokarbondaki bütün karbon CO₂'ye dönüşür. CH₄ (metan) 1 C içerir, 1 mol CO₂ verir; C₂H₆ (etan) 2 C içerir, 2 mol CO₂ verir.",
+    "İki bilinmeyenli doğrusal sistem: iki denklemden biri diğerinden çıkarılarak bir bilinmeyen yok edilir."
+   ],
+   "strategy": "Toplam mol ve toplam CO₂ iki bağımsız bilgi verir; önce C₂H₆'yı çıkarma ile bul, sonra CH₄'ü toplamdan hesapla.",
+   "steps": [
+    "CH₄ = x, C₂H₆ = y. x + y = 0,5.",
+    "Karbon: x + 2y = 0,8.",
+    "Çıkar: y = 0,8 − 0,5 = 0,3 mol.",
+    "x = 0,5 − 0,3 = 0,2 mol CH₄."
+   ],
+   "optionReasons": [
+    "0,1 mol CH₄ ile C₂H₆ 0,4 olur ve CO₂ 0,1 + 0,8 = 0,9 mol çıkar.",
+    "Doğru: x = 0,5 − 0,3 = 0,2 mol.",
+    "C₂H₆ molünü (0,3) CH₄ sanar.",
+    "0,4 mol CH₄ ile CO₂ 0,4 + 0,2 = 0,6 mol olurdu.",
+    "Toplam molü yalnız CH₄'e verir; karışımın saf olduğunu varsayar."
+   ],
+   "commonError": "Çıkarma ile bulunan y'yi istenen bileşen sanmak.",
+   "check": "0,2 + 2 · 0,3 = 0,8 mol CO₂; doğru."
+  }
+ },
+ {
+  "id": "f015-chem-tepkimeli-karisim-3",
+  "h": "024395cd0847fd",
+  "guidance": {
+   "knowledge": [
+    "Kütle = mol · mol kütlesi (M). Karışımın kütlesi bileşen kütlelerinin toplamıdır.",
+    "Verilen M: CH₄ için 16 g/mol, C₂H₆ için 30 g/mol."
+   ],
+   "strategy": "Her bileşenin kütlesini kendi molü ve mol kütlesiyle ayrı hesaplayıp topla; mollere tek bir M uygulanamaz.",
+   "steps": [
+    "CH₄: 0,2 · 16 = 3,2 g.",
+    "C₂H₆: 0,3 · 30 = 9 g.",
+    "Toplam: 3,2 + 9 = 12,2 g."
+   ],
+   "optionReasons": [
+    "Toplam molü (0,5) yalnız CH₄'ün M'siyle çarpar: 0,5 · 16 = 8 g.",
+    "Yalnız C₂H₆'nın kütlesini alır, CH₄'ü unutur.",
+    "Doğru: 3,2 + 9 = 12,2 g.",
+    "10,6 g için C₂H₆ kısmı 10,6 − 3,2 = 7,4 g olmalıydı; oysa 0,3 · 30 = 9 g.",
+    "Mol kütlelerini toplayıp toplam molle çarpar: 0,5 · 46 = 23 g."
+   ],
+   "commonError": "Molleri ve mol kütlelerini yanlış eşleştirmek.",
+   "check": "Ortalama mol kütlesi 12,2/0,5 = 24,4 g/mol; 16 ile 30 arasında ve C₂H₆ daha bol olduğundan 30'a yakın, mantıklı."
+  }
+ },
+ {
+  "id": "f015-chem-tepkimeli-karisim-4",
+  "h": "09d200d2765b3c",
+  "guidance": {
+   "knowledge": [
+    "Mg + 2 HCl → MgCl₂ + H₂: 1 mol Mg 1 mol H₂ verir.",
+    "Soruda Cu bu koşulda asitle tepkime vermiyor; bu yüzden H₂'nin tamamı Mg'den gelir."
+   ],
+   "strategy": "Gaz yalnız Mg'den geldiği için H₂ molü doğrudan Mg molünü verir; Mg kütlesini bulup karışımdan çıkar.",
+   "steps": [
+    "Mol oranı 1:1: Mg = 0,25 mol.",
+    "Mg kütlesi: 0,25 · 24 = 6 g.",
+    "Cu: 10 − 6 = 4 g."
+   ],
+   "optionReasons": [
+    "Mol değerini toplam kütleyle çarpar: 0,25 · 10 = 2,5 g.",
+    "Mg kütlesini (6 g) Cu sanır.",
+    "Kütle oranını bölme ile kurar: 7,5 g Cu olsaydı Mg 2,5 g olur ve 2,5/24 ≈ 0,10 mol H₂ verirdi.",
+    "Doğru: Cu = 10 − 6 = 4 g.",
+    "Karışımın tamamını Cu sanır; o zaman hiç H₂ çıkmazdı."
+   ],
+   "commonError": "Tepkime vermeyen metalin de gaz verdiğini sanmak ya da bulunan Mg kütlesini cevap sanmak.",
+   "check": "4 g Cu + 6 g Mg = 10 g ve 6/24 = 0,25 mol Mg → 0,25 mol H₂; veriyle uyumlu."
+  }
+ },
+ {
+  "id": "f015-chem-tepkimeli-karisim-5",
+  "h": "07ab5964226674",
+  "guidance": {
+   "knowledge": [
+    "CaCO₃ + asit → CO₂ çıkar; 1 mol CaCO₃ 1 mol CO₂ verir.",
+    "İnert kum asitle tepkime vermez; gazın tamamı karbonattan gelir. Mol = kütle / M."
+   ],
+   "strategy": "Tek gaz kaynağı karbonat; CO₂'den CaCO₃ kütlesine git ve karışım kütlesinden çıkar.",
+   "steps": [
+    "CO₂ molü: 4,4/44 = 0,1 mol.",
+    "CaCO₃: 0,1 mol · 100 = 10 g.",
+    "Kum: 30 − 10 = 20 g."
+   ],
+   "optionReasons": [
+    "CO₂ kütlesini kum sanır.",
+    "CaCO₃ kütlesini (10 g) kum sanır.",
+    "CO₂ kütlesini karışımdan çıkarır: 30 − 4,4 = 25,6 g; CO₂ karışımın bileşeni değildir.",
+    "Karışımın tamamını kum sanır; o zaman gaz çıkmazdı.",
+    "Doğru: 30 − 10 = 20 g kum."
+   ],
+   "commonError": "Ürün kütlesini doğrudan karışım kütlesinden çıkarmak.",
+   "check": "10 g CaCO₃ + 20 g kum = 30 g; 10 g CaCO₃ = 0,1 mol → 4,4 g CO₂, doğru."
+  }
+ },
+ {
+  "id": "f015-chem-tepkimeli-karisim-6",
+  "h": "0f0c6e2e280a83",
+  "guidance": {
+   "knowledge": [
+    "Bağımsız denklem: diğerlerinden türetilemeyen, yeni bilgi taşıyan denklem.",
+    "İki bilinmeyen için genelde iki bağımsız denklem gerekir; tek denklemin sonsuz çözümü olur."
+   ],
+   "strategy": "Bilinmeyen sayısını denklem sayısıyla karşılaştır; tek bilgiyle iki mol değeri ayrılamaz.",
+   "steps": [
+    "Bilinmeyenler: CH₄ = x, C₂H₆ = y.",
+    "Tek bilgi: x + y = t.",
+    "Örneğin t = 0,5 için (0,1; 0,4) da (0,3; 0,2) da sağlar; ikinci bilgi (CO₂, kütle) gerekir."
+   ],
+   "optionReasons": [
+    "Doğru: tek denklem iki bilinmeyeni belirlemez; ikinci bağımsız bilgi gerekir.",
+    "Eşit mol yalnız bir olasılıktır; veri bunu zorunlu kılmaz.",
+    "Eşit kütle de bir olasılıktır; toplam mol bunu söylemez.",
+    "Soru kökü karışımda iki bileşen olduğunu söyler.",
+    "Mol kütleleri farklıdır: CH₄ 16, C₂H₆ 30 g/mol."
+   ],
+   "commonError": "Tek denklemden iki bilinmeyen çıkarmaya çalışıp keyfî bir varsayım eklemek.",
+   "check": "Karşı örnek: 0,5 mol için (0,25; 0,25) ve (0,1; 0,4) ikisi de toplamı sağlar ama farklı bileşimdir."
+  }
+ },
+ {
+  "id": "f015-chem-tepkimeli-karisim-7",
+  "h": "1970aec74bfbe7",
+  "guidance": {
+   "knowledge": [
+    "Tam yanma: hidrokarbondaki bütün karbon CO₂'ye dönüşür. CH₄ (metan) 1 C içerir, 1 mol CO₂ verir; C₂H₆ (etan) 2 C içerir, 2 mol CO₂ verir.",
+    "Bir niceliğin olabilecek en küçük ve en büyük değerleri uç durumlarla bulunur: karışımın tamamı bir bileşen."
+   ],
+   "strategy": "CO₂ miktarı bileşime göre değişir; uç durumları hesaplayıp aralığın dışında kalan seçeneği bul.",
+   "steps": [
+    "Tamamı CH₄: 0,5 mol · 1 = 0,5 mol CO₂ (alt sınır).",
+    "Tamamı C₂H₆: 0,5 mol · 2 = 1,0 mol CO₂ (üst sınır).",
+    "Mümkün aralık 0,5 ile 1,0 mol; 1,2 mol bunun dışında."
+   ],
+   "optionReasons": [
+    "0,6 mol aralıkta: x + 2y = 0,6 ve x + y = 0,5 → y = 0,1, x = 0,4.",
+    "Doğru: 1,2 mol, en çok 1,0 molü aşar.",
+    "0,7 mol aralıkta: y = 0,2, x = 0,3.",
+    "0,75 mol aralıkta: y = 0,25, x = 0,25.",
+    "0,9 mol aralıkta: y = 0,4, x = 0,1."
+   ],
+   "commonError": "Uç durumları hesaplamadan her değeri mümkün sanmak.",
+   "check": "1,2 mol için y = 1,2 − 0,5 = 0,7 ve x = −0,2 çıkar; negatif mol olamaz."
+  }
+ },
+ {
+  "id": "f015-chem-tepkimeli-karisim-8",
+  "h": "001216846812a1",
+  "guidance": {
+   "knowledge": [
+    "Molce yüzde: bir bileşenin molünün toplam mole oranı · 100.",
+    "Kütlece yüzde başka bir orandır; mol kütleleri farklı olduğunda ikisi farklı çıkar."
+   ],
+   "strategy": "Soru molce yüzde istiyor; kütleye çevirmeden molleri doğrudan oranla.",
+   "steps": [
+    "Toplam mol: 0,2 + 0,3 = 0,5 mol.",
+    "C₂H₆ molce: 0,3/0,5 = 0,6 → %60."
+   ],
+   "optionReasons": [
+    "Mol değerini yüzde sanar: 0,3 → %30.",
+    "CH₄'ün molce yüzdesini verir: 0,2/0,5 = %40.",
+    "Doğru: 0,3/0,5 · 100 = %60.",
+    "İki bileşen var diye eşit paylaşım varsayar.",
+    "Kütlece yüzdeyi hesaplar: 9/(3,2 + 9) = 9/12,2 ≈ %73,77."
+   ],
+   "commonError": "Molce yüzde istenirken kütlece yüzde hesaplamak.",
+   "check": "CH₄ %40 + C₂H₆ %60 = %100; tutarlı."
+  }
+ },
+ {
+  "id": "f015-chem-tepkimeli-karisim-9",
+  "h": "05b01c4122170a",
+  "guidance": {
+   "knowledge": [
+    "Tam yanmada hidrokarbondaki bütün hidrojen H₂O'ya gider. Her H₂O 2 H içerir.",
+    "CH₄ 4 H içerir → 4/2 = 2 H₂O; C₂H₆ 6 H içerir → 6/2 = 3 H₂O."
+   ],
+   "strategy": "Her bileşenin su katkısını hidrojen sayımından bul, sonra katkıları topla.",
+   "steps": [
+    "CH₄ + 2 O₂ → CO₂ + 2 H₂O: x mol CH₄ → 2x mol su.",
+    "2 C₂H₆ + 7 O₂ → 4 CO₂ + 6 H₂O: 1 mol C₂H₆ → 3 mol su; y mol → 3y.",
+    "Toplam su: 2x + 3y."
+   ],
+   "optionReasons": [
+    "Toplam molü su sanır; her bileşen 1 mol su vermez.",
+    "CO₂ bağıntısını (x + 2y) su sanır; karbon ile hidrojeni karıştırır.",
+    "Katsayıları ters eşler: CH₄'e 3, C₂H₆'ya 2 verir.",
+    "Doğru: CH₄ 2, C₂H₆ 3 mol su verir: 2x + 3y.",
+    "Her iki bileşene 2 mol su verir; C₂H₆'nın 6 H'sini unutur."
+   ],
+   "commonError": "Su miktarını karbon sayısından hesaplamak; su hidrojen sayısından gelir.",
+   "check": "x = 1, y = 0 koy: 1 mol CH₄ 2 mol su verir, 2x + 3y = 2; doğru."
+  }
+ },
+ {
+  "id": "f015-chem-tepkimeli-karisim-10",
+  "h": "101a07b460d5f9",
+  "guidance": {
+   "knowledge": [
+    "İdeal gaz denklemi: PV = nRT. Aynı sıcaklık (T) ve basınçta (P) hacim mol sayısıyla orantılıdır: V = n · RT/P.",
+    "Bağımsız bilgi: diğerinden türetilemeyen bilgi."
+   ],
+   "strategy": "Verilen iki verinin birbirinden türetilip türetilemediğini kontrol et; türetiliyorsa yeni denklem vermez.",
+   "steps": [
+    "Aynı T ve P'de toplam hacim toplam molden doğrudan hesaplanır.",
+    "Yani hacim ve mol aynı toplamı farklı birimle söyler: tek denklem.",
+    "İki bilinmeyen için ikinci bağımsız bilgi (kütle, ürün miktarı) gerekir."
+   ],
+   "optionReasons": [
+    "Gaz hacmi ölçülebilir; soru zaten hacmi veriyor.",
+    "Gazlar her oranda karışıp homojen karışım oluşturur.",
+    "Gazların mol kütleleri farklı olabilir; kütle bilgisi ayrıca verilmedi.",
+    "Molar hacim sıfır değildir; normal koşulda 22,4 L/mol'dür.",
+    "Doğru: V = nRT/P olduğundan hacim, toplam molü başka birimde tekrarlar."
+   ],
+   "commonError": "Aynı toplamı veren iki veriyi iki ayrı denklem saymak.",
+   "check": "Toplam molü 2 katına çıkarırsan hacim de aynı T ve P'de 2 katına çıkar; hacim yeni bilgi taşımaz."
+  }
+ },
+ {
+  "id": "f015-chem-karisim-sinif-cozunme-1",
+  "h": "067391edbfc398",
+  "guidance": {
+   "knowledge": [
+    "Saf madde: tek tür tanecikten oluşur (element ya da bileşik). Karışım: birden çok maddenin fiziksel birlikteliği.",
+    "Homojen karışım (çözelti): her yerinde bileşimi aynı, tek fazlı karışım. Faz: sınırla ayrılan, özellikleri her yerinde aynı bölge."
+   ],
+   "strategy": "Önce madde sayısına (saf mı karışım mı), sonra faz sayısına (homojen mi heterojen mi) bak.",
+   "steps": [
+    "Şeker ve su iki ayrı maddedir: karışım.",
+    "Şeker tamamen çözünmüş, tek faz var: homojen.",
+    "Sonuç: homojen karışım (çözelti)."
+   ],
+   "optionReasons": [
+    "Doğru: iki madde, tek faz; homojen karışımdır.",
+    "Şeker ve su bileşiktir ve ikisi birlikte saf element olamaz.",
+    "Şekerli suyun bileşimi değişebilir; saf bileşiğin bileşimi sabittir.",
+    "Süspansiyonda katı tanecikler görünür ve çöker; çözünmüş şeker çökmez.",
+    "Emülsiyon birbirinde çözünmeyen iki sıvıdan oluşur; burada tek faz var."
+   ],
+   "commonError": "Görünüşü tek düze diye çözeltiyi saf madde sanmak.",
+   "check": "Suyu buharlaştırırsan şeker geri kalır; fiziksel yolla ayrılabildiği için karışımdır."
+  }
+ },
+ {
+  "id": "f015-chem-karisim-sinif-cozunme-2",
+  "h": "1013d6abcd5faf",
+  "guidance": {
+   "knowledge": [
+    "Süspansiyon: bir sıvıda çözünmeyen katı taneciklerin dağılmasıyla oluşan heterojen karışım; bekletince katı çöker.",
+    "Heterojen: bileşimi her yerinde aynı olmayan, birden çok fazlı karışım."
+   ],
+   "strategy": "Dağılan maddenin hâline (katı) ve bekleyince çökmesine bak; bu iki özellik sınıfı belirler.",
+   "steps": [
+    "Dağılan: kum, katı. Dağıtıcı: su, sıvı.",
+    "Bekleyince çöküyor: tanecikler çözünmemiş, heterojen.",
+    "Katı-sıvı heterojen karışım: süspansiyon."
+   ],
+   "optionReasons": [
+    "Çözeltide tanecikler çökmez; kum çöktüğü için çözünmemiştir.",
+    "Doğru: katı tanecikler sıvıda dağılmış ve çöküyor.",
+    "Kum ve su iki madde ve sıvı-katı karışımı; gaz değildir.",
+    "Alaşım katı hâlde metallerin homojen karışımıdır.",
+    "Emülsiyonda dağılan madde sıvıdır; kum katıdır."
+   ],
+   "commonError": "Süspansiyon ile emülsiyonu karıştırmak: süspansiyonda katı, emülsiyonda sıvı dağılır.",
+   "check": "Süzgeç kâğıdı kumu tutar ve suyu geçirir; çözeltide böyle bir ayrılma olmaz."
+  }
+ },
+ {
+  "id": "f015-chem-karisim-sinif-cozunme-3",
+  "h": "1c753794fff008",
+  "guidance": {
+   "knowledge": [
+    "Dağılan faz: karışımda az olan, ötekinin içine dağılan madde. Dağıtıcı faz: içinde dağılma olan ortam.",
+    "Aerosol: sıvı ya da katı taneciklerin gazda dağıldığı karışım. Sis, havadaki küçük su damlacıklarıdır."
+   ],
+   "strategy": "Sisin neyin içinde neyin dağıldığını belirle; sıralamada önce dağılan, sonra dağıtıcı gelir.",
+   "steps": [
+    "Sisteki su sıvı damlacık hâlindedir: dağılan sıvı.",
+    "Damlacıklar havada asılıdır: dağıtıcı gaz.",
+    "Sıralama: sıvı ve gaz."
+   ],
+   "optionReasons": [
+    "Sıralamayı ters yazar: dağıtıcıyı önce verir.",
+    "Katı-katı karışım alaşım gibi örneklere uyar; sis katı içermez.",
+    "Doğru: su damlacıkları (sıvı) havada (gaz) dağılmıştır.",
+    "Sisi su buharı sanır; su buharı görünmez, görünen sıvı damlacıklardır.",
+    "Sıvının katıda dağılması jöle gibi örneklere uyar; sisin dağıtıcısı havadır."
+   ],
+   "commonError": "Sisi su buharı sanıp gaz-gaz karışımı saymak.",
+   "check": "Su buharı renksiz ve görünmezdir; sisin görünmesi ışığı saçan sıvı damlacıklar içerdiğini gösterir."
+  }
+ },
+ {
+  "id": "f015-chem-karisim-sinif-cozunme-4",
+  "h": "1d130f11193e28",
+  "guidance": {
+   "knowledge": [
+    "NaCl iyonik bir bileşiktir: Na⁺ (sodyum katyonu) ve Cl⁻ (klorür anyonu) iyonlarından oluşur.",
+    "İyonik katı suda çözünürken iyonlar birbirinden ayrılır ve her biri su molekülleriyle sarılır (hidratlaşma)."
+   ],
+   "strategy": "Çözünme fiziksel bir olaydır; kimyasal tür değişmez, yalnız katıdaki iyonlar birbirinden ayrılır.",
+   "steps": [
+    "Katı NaCl'de zaten Na⁺ ve Cl⁻ iyonları vardır.",
+    "Su iyonları sarıp birbirinden ayırır.",
+    "Çözeltideki tanecikler Na⁺ ve Cl⁻ iyonlarıdır."
+   ],
+   "optionReasons": [
+    "Nötr atomlar için elektron alışverişi geri dönmeliydi; çözünme bunu yapmaz.",
+    "Formülü yanlış kurar: NaCl'de oran 1:1'dir, ayrıca iyonik katı molekül içermez.",
+    "Elektron tek başına çözünen tanecik değildir; yükler iyonlarda kalır.",
+    "Doğru: Na⁺ ve Cl⁻ iyonları suyla sarılarak dağılır.",
+    "Na₂ ve Cl₂ oluşumu kimyasal tepkime ister; çözünmede yeni madde oluşmaz."
+   ],
+   "commonError": "İyonik bileşiğin suda atomlarına ya da elementlerine ayrıştığını sanmak.",
+   "check": "Tuzlu su elektriği iletir; bu, çözeltide serbest yüklü tanecikler (iyonlar) olduğunu gösterir."
+  }
+ },
+ {
+  "id": "f015-chem-karisim-sinif-cozunme-5",
+  "h": "0c6cbe823a80ca",
+  "guidance": {
+   "knowledge": [
+    "Su polar bir moleküldür: O atomu kısmen negatif (δ−), H atomları kısmen pozitif (δ+) uçtur.",
+    "İyon-dipol etkileşimi: bir iyonun polar molekülün ters yüklü ucunu çekmesi. Katyon pozitif yüklü iyondur."
+   ],
+   "strategy": "Zıt yükler birbirini çeker; Na⁺ pozitif olduğu için suyun negatif ucuna yönelir.",
+   "steps": [
+    "Na⁺ pozitif yüklüdür.",
+    "Suyun negatif ucu O atomudur.",
+    "Su molekülleri O uçlarını Na⁺'ya çevirerek dizilir."
+   ],
+   "optionReasons": [
+    "Yükleri ters eşler; H uçları pozitiftir ve pozitif katyonla iter.",
+    "Su molekülü nötrdür, kısmi yükleri polarlığından gelir ve çözünmede kaybolmaz.",
+    "Na⁺'yı metale çevirmek elektron vermeyi gerektirir; çözünme bunu yapmaz.",
+    "Çözünmede suyun kovalent bağları kopmaz; etkileşim moleküller arasıdır.",
+    "Doğru: O'nun δ− ucu Na⁺'ya bakar."
+   ],
+   "commonError": "Katyon ile anyon etrafındaki su yönelimini karıştırmak.",
+   "check": "Cl⁻ etrafında tersi olur: su H uçlarını anyona çevirir; zıt yük kuralı iki durumu da açıklar."
+  }
+ },
+ {
+  "id": "f015-chem-karisim-sinif-cozunme-6",
+  "h": "0171b2e6336ac3",
+  "guidance": {
+   "knowledge": [
+    "Çözünürlük: belirli sıcaklık ve basınçta belirli miktar çözücüde çözünebilen en çok madde miktarıdır; bir denge sınırıdır.",
+    "Karıştırma çözücü ile katı arasındaki teması ve taşınmayı artırır; çözünmenin hızını etkiler."
+   ],
+   "strategy": "Hız ile sınırı ayır: karıştırma koşulları (T, P, bileşim) değiştirmez, yalnız dengeye ne kadar sürede ulaşıldığını değiştirir.",
+   "steps": [
+    "Çözünürlük T, P ve madde türüne bağlıdır; bunlar sabit.",
+    "Karıştırma yüzeydeki doygun tabakayı dağıtıp taze çözücü getirir: çözünme hızlanır.",
+    "Denge sınırı aynı kalır; değişen dengeye ulaşma hızıdır."
+   ],
+   "optionReasons": [
+    "Doğru: karıştırma taşınmayı artırıp dengeye daha çabuk ulaştırır.",
+    "Hızı sınırla karıştırır; aynı koşulda çözünürlük değişmez.",
+    "NaCl'deki Na⁺/Cl⁻ oranı formülle sabittir, karıştırma değiştirmez.",
+    "Karıştırma fiziksel bir işlemdir; element dönüşümü çekirdek tepkimesi ister.",
+    "Avogadro sabiti evrensel bir sabittir, işlemle değişmez."
+   ],
+   "commonError": "Çözünme hızını artıran etkenlerin çözünürlüğü de artırdığını sanmak.",
+   "check": "Karıştırmasan da yeterince beklersen aynı miktar çözünür; karıştırma yalnız süreyi kısaltır."
+  }
+ },
+ {
+  "id": "f015-chem-karisim-sinif-cozunme-7",
+  "h": "1cafdb9fd25162",
+  "guidance": {
+   "knowledge": [
+    "Çözünürlük: bu modelde 100 g su en çok 36 g NaCl çözer. Fazlası katı olarak dipte kalır.",
+    "Çözelti kütlesi = çözücü + çözünmüş madde. Çözünmeyen katı çözeltiye dahil değildir."
+   ],
+   "strategy": "Eklenen miktarı çözünürlükle karşılaştır; yalnız çözünen kısım sıvı çözeltinin kütlesine girer.",
+   "steps": [
+    "Eklenen 50 g > 36 g: 36 g çözünür, 50 − 36 = 14 g dipte kalır.",
+    "Sıvı çözelti: 100 + 36 = 136 g.",
+    "Kabın toplam içeriği 150 g'dır, ama 14 g'ı katıdır."
+   ],
+   "optionReasons": [
+    "Yalnız suyu sayar, çözünen tuzu unutur.",
+    "Doğru: 100 g su + 36 g çözünmüş tuz = 136 g.",
+    "Çözünmeyen 14 g'ı suya ekler: 100 + 14 = 114 g.",
+    "Eklenen 50 g'ın tamamının çözündüğünü sanar: 100 + 50 = 150 g.",
+    "Kütleleri iki kez sayar: 150 + 36 = 186 g."
+   ],
+   "commonError": "Çözünmeyen katıyı çözelti kütlesine katmak.",
+   "check": "Kütle korunumu: 136 g çözelti + 14 g katı = 150 g, başta konan toplamla aynı."
+  }
+ },
+ {
+  "id": "f015-chem-karisim-sinif-cozunme-8",
+  "h": "067e8dd9ace735",
+  "guidance": {
+   "knowledge": [
+    "Süzme: karışımı gözenekli bir engelden (filtre kâğıdı) geçirerek tanecikleri boyutlarına göre ayırma. Filtrat: filtreden geçen sıvı.",
+    "Çözünmüş iyonlar gözeneklerden çok küçüktür; soru da iyonların geçtiğini söylüyor."
+   ],
+   "strategy": "Filtrenin neyi tutup neyi geçirdiğine bak: tanecik boyutu gözenekten küçükse sıvıyla birlikte geçer.",
+   "steps": [
+    "Tuz tamamen çözünmüş: katı NaCl yok, Na⁺ ve Cl⁻ iyonları var.",
+    "İyonlar filtreden geçer: filtratta kalırlar.",
+    "Filtrat çözünmüş tuz içerebilir; süzme tuzu ayırmaz."
+   ],
+   "optionReasons": [
+    "İyonların geçtiği verildiği için filtrat saf su olamaz.",
+    "Tuz çözünmüş olduğundan katı NaCl yoktur; filtre tutacak katı bulamaz.",
+    "Doğru: geçen iyonlar filtratta çözünmüş tuz olarak kalır.",
+    "Madde yok olmaz; iyonlar yalnız filtreden geçmiştir.",
+    "Süzme hâl değişimi yaratmaz; filtrat sıvıdır."
+   ],
+   "commonError": "Süzmenin çözünmüş maddeyi de ayırdığını sanmak.",
+   "check": "Filtratı buharlaştırırsan dipte tuz kalır; tuzun filtreden geçtiğini gösterir."
+  }
+ },
+ {
+  "id": "f015-chem-karisim-sinif-cozunme-9",
+  "h": "030b0b6f0bce91",
+  "guidance": {
+   "knowledge": [
+    "Emülsiyon: birbirinde çözünmeyen iki sıvıdan birinin diğerinde damlacıklar hâlinde dağılmasıyla oluşan heterojen karışım.",
+    "Heterojen karışımda bekleyince fazlar ayrılabilir; yağ ve su iki tabaka oluşturur."
+   ],
+   "strategy": "Dağılan ve dağıtıcı maddenin hâline bak ve faz sayısını kontrol et: iki sıvı, çözünme yok, tabaka oluşuyor.",
+   "steps": [
+    "Dağılan yağ sıvı, dağıtıcı su sıvıdır.",
+    "Yağ suda çözünmez; damlacık hâlinde durur ve sonunda ayrılır.",
+    "Sıvı-sıvı heterojen karışım: emülsiyon."
+   ],
+   "optionReasons": [
+    "Yağ ve su sıvıdır; gaz yoktur ve tabakalaşma çözeltiyi dışlar.",
+    "Yağ ve su iki ayrı maddedir; saf bileşik olamaz.",
+    "Süblimleşme katının doğrudan gaza geçmesidir; bir karışım türü değildir.",
+    "Doğru: iki sıvı çözünmeden dağılmış ve tabakalaşmış.",
+    "Alaşım metallerin katı karışımıdır; burada metal yok."
+   ],
+   "commonError": "Çalkalanınca tek düze görünen emülsiyonu çözelti sanmak.",
+   "check": "Bekleyince ayrılması çözelti olmadığının kanıtıdır; çözeltide bileşenler kendiliğinden ayrılmaz."
+  }
+ },
+ {
+  "id": "f015-chem-karisim-sinif-cozunme-10",
+  "h": "105f29d295bb68",
+  "guidance": {
+   "knowledge": [
+    "Doygun çözelti: belirli sıcaklık ve basınçta çözebileceği en çok maddeyi çözmüş çözelti.",
+    "Zorunlu koşul: olmadan tanımın sağlanamadığı koşul. Dipte katı olması doygunluğun işaretidir ama şartı değildir."
+   ],
+   "strategy": "Her seçeneği tanımla karşılaştır: hangisi olmadan da çözelti doygun olabilir?",
+   "steps": [
+    "Doygunluk koşula bağlıdır; çözücü ve çözünen olmadan çözelti olmaz.",
+    "Tam sınır kadar madde çözünmüşse çözelti doygundur.",
+    "Bu durumda dipte artık katı olmayabilir; bu yüzden dipte katı zorunlu değildir."
+   ],
+   "optionReasons": [
+    "Çözünürlük sıcaklık ve basınca bağlıdır; koşul belirtilmeden doygunluk tanımlanamaz.",
+    "Doygunluk tam olarak bu sınıra ulaşılmasıdır; zorunludur.",
+    "Çözünmüş madde olmadan çözelti olmaz.",
+    "Çözücü olmadan çözelti olmaz.",
+    "Doğru: tam sınır kadar çözünmüşse dipte katı kalmaz ama çözelti yine doygundur."
+   ],
+   "commonError": "Dipte katı görmeden çözeltinin doygun olamayacağını sanmak.",
+   "check": "100 g su 36 g tuz çözüyorsa tam 36 g ekleyince dipte katı kalmaz, yine de çözelti doygundur."
+  }
+ },
+ {
+  "id": "f015-chem-cozelti-derisimi-1",
+  "h": "1543bc0b975ad2",
+  "guidance": {
+   "knowledge": [
+    "Kütlece yüzde: çözünen kütlesinin çözelti kütlesine oranı · 100. Çözelti kütlesi = çözünen + çözücü."
+   ],
+   "strategy": "Çözücü kütlesi verilmiş; paydaya çözücüyü değil çözeltinin tamamını koymak için önce ikisini topla.",
+   "steps": [
+    "Çözelti: 20 + 180 = 200 g.",
+    "Oran: 20/200 = 0,10.",
+    "Yüzde: %10."
+   ],
+   "optionReasons": [
+    "Doğru: 20/200 · 100 = %10.",
+    "Çözüneni paydaya bir kez daha ekler: 20/220 ≈ %9.",
+    "Paydaya yalnız suyu koyar: 20/180 ≈ %11,11.",
+    "Çözünen kütlesini yüzde sanır: 20 g → %20.",
+    "Suyun kütlece yüzdesini verir: 180/200 = %90."
+   ],
+   "commonError": "Paydaya çözelti yerine yalnız çözücüyü koymak.",
+   "check": "200 g'ın %10'u 20 g; çözünen kütlesi geri gelir."
+  }
+ },
+ {
+  "id": "f015-chem-cozelti-derisimi-2",
+  "h": "0ddd7de8ac7959",
+  "guidance": {
+   "knowledge": [
+    "Kütlece yüzde: çözünen kütlesinin çözelti kütlesine oranı · 100. Çözelti kütlesi = çözünen + çözücü.",
+    "Karıştırmada tuz kütleleri toplanır, çözelti kütleleri toplanır; yüzdeler toplanmaz."
+   ],
+   "strategy": "Kütleleri farklı iki çözeltinin yüzdeleri düz ortalamayla birleşmez; önce her birindeki tuzu bul, sonra toplamları oranla.",
+   "steps": [
+    "Birinci: 100 · 0,10 = 10 g tuz. İkinci: 300 · 0,30 = 90 g tuz.",
+    "Toplam tuz 10 + 90 = 100 g; toplam çözelti 100 + 300 = 400 g.",
+    "Son yüzde: 100/400 = %25."
+   ],
+   "optionReasons": [
+    "Yalnız birinci çözeltinin yüzdesini alır.",
+    "Doğru: 100 g tuz / 400 g çözelti = %25.",
+    "%15 için toplam tuz 60 g olmalıydı; oysa 10 + 90 = 100 g.",
+    "Düz ortalama alır: (10 + 30)/2 = %20; bu eşit kütleler için geçerlidir.",
+    "Yalnız ikinci çözeltinin yüzdesini alır; karışım ondan seyreltik olmalı."
+   ],
+   "commonError": "Farklı kütledeki çözeltilerin yüzdelerinin düz ortalamasını almak.",
+   "check": "Sonuç iki yüzde arasında ve kütlesi büyük olan %30'a daha yakın olmalı: %25 bu koşulu sağlar."
+  }
+ },
+ {
+  "id": "f015-chem-cozelti-derisimi-3",
+  "h": "0175446445b072",
+  "guidance": {
+   "knowledge": [
+    "Kütlece yüzde: çözünen kütlesinin çözelti kütlesine oranı · 100. Çözelti kütlesi = çözünen + çözücü.",
+    "Seyreltme: çözeltiye çözücü eklemek. Çözünen kütlesi değişmez, çözelti kütlesi artar."
+   ],
+   "strategy": "Su eklenince çözünen sabit kalır; önce çözünen kütlesini bul, sonra yeni toplam kütleye böl.",
+   "steps": [
+    "Çözünen: 200 · 0,15 = 30 g.",
+    "Yeni çözelti: 200 + 100 = 300 g.",
+    "Son yüzde: 30/300 = %10."
+   ],
+   "optionReasons": [
+    "%5 için çözelti 600 g olmalıydı; yalnız 100 g su eklendi.",
+    "Su ekleyince derişimin yarıya indiğini sanar: 15/2 = %7,5; su miktarı 2 kat çözelti değil.",
+    "Doğru: 30/300 · 100 = %10.",
+    "Su eklemenin derişimi değiştirmediğini sanar.",
+    "Su ekleyince derişimin arttığını sanar; çözünen sabit, payda büyür."
+   ],
+   "commonError": "Seyreltmede çözünen kütlesinin de değiştiğini sanmak.",
+   "check": "Kütle 200'den 300'e, yani 3/2 katına çıktı; yüzde 15 · 2/3 = %10 olur."
+  }
+ },
+ {
+  "id": "f015-chem-cozelti-derisimi-4",
+  "h": "0866313f30bef8",
+  "guidance": {
+   "knowledge": [
+    "Hacimce yüzde: çözünen hacminin son çözelti hacmine oranı · 100.",
+    "Sıvılar karışınca hacimler her zaman toplanmaz; ama burada son çözelti hacmi doğrudan verilmiş."
+   ],
+   "strategy": "Son çözelti hacmi verildiği için paydaya o yazılır; hacim toplamı varsaymaya gerek yok.",
+   "steps": [
+    "Pay: 25 mL etanol; payda: 250 mL çözelti.",
+    "Oran: 25/250 = 0,10 → %10."
+   ],
+   "optionReasons": [
+    "%5 için son hacim 500 mL olmalıydı.",
+    "Paydaya çözelti yerine çözücü hacmini (250 − 25 = 225 mL) koyar: 25/225 ≈ %11,11.",
+    "Etanol hacmini yüzde sanır: 25 mL → %25.",
+    "Doğru: 25/250 · 100 = %10.",
+    "Etanol dışındaki kısmın yüzdesini verir: %90."
+   ],
+   "commonError": "Paydaya çözelti yerine çözücü hacmini koymak.",
+   "check": "250 mL'nin %10'u 25 mL; kullanılan etanol miktarıyla aynı."
+  }
+ },
+ {
+  "id": "f015-chem-cozelti-derisimi-5",
+  "h": "0b0c89d8784db8",
+  "guidance": {
+   "knowledge": [
+    "Kütlece ppm (milyonda bir kısım): 1 kg çözeltideki mg cinsinden çözünen. 1 ppm = 1 mg/kg.",
+    "1 kg = 1 000 000 mg; bu yüzden mg/kg milyonda bir orandır."
+   ],
+   "strategy": "Birimler zaten mg ve kg; ppm tanımı mg/kg olduğundan doğrudan bölmek yeter.",
+   "steps": [
+    "Oran: 4 mg / 2 kg = 2 mg/kg.",
+    "1 mg/kg = 1 ppm olduğundan sonuç 2 ppm."
+   ],
+   "optionReasons": [
+    "Oranı ters kurar: 2/4 = 0,5.",
+    "Çözünen kütlesini ppm sanır; 2 kg'a bölmeyi unutur.",
+    "Bölmesi gerekirken çarpar: 4 · 2 = 8.",
+    "Kilogramı gram sanır: 4 mg / 2 g = 2 mg/g = 2000 ppm.",
+    "Doğru: 4 mg / 2 kg = 2 mg/kg = 2 ppm."
+   ],
+   "commonError": "Payda birimini kg yerine g almak.",
+   "check": "Kesir olarak: 0,004 g / 2000 g = 2 · 10⁻⁶, yani milyonda 2."
+  }
+ },
+ {
+  "id": "f015-chem-cozelti-derisimi-6",
+  "h": "1414c468993d9e",
+  "guidance": {
+   "knowledge": [
+    "Kütlece yüzde: çözünen kütlesinin çözelti kütlesine oranı · 100. Çözelti kütlesi = çözünen + çözücü.",
+    "Homojen çözeltinin her yerinde bileşim aynıdır; bir kısmını ayırmak derişimi değiştirmez."
+   ],
+   "strategy": "Ayrılan parçada çözünen ve çözelti aynı oranda azalır; oran (derişim) değişmez.",
+   "steps": [
+    "Başta 100 · 0,20 = 20 g çözünen.",
+    "Yarısı alınınca parçada 10 g çözünen ve 50 g çözelti var.",
+    "Oran: 10/50 = %20."
+   ],
+   "optionReasons": [
+    "Doğru: 10/50 = %20; homojen çözeltinin her parçası aynı derişimdedir.",
+    "Miktar yarıya inince derişimin de yarıya indiğini sanar.",
+    "%25 için 50 g parçada 12,5 g çözünen olmalıydı; parçada 10 g var.",
+    "Miktar azalınca derişimin arttığını sanır: 20 · 2 = %40.",
+    "Alınan kütlenin oranını derişim sanar: 50/100 = %50."
+   ],
+   "commonError": "Bir çözeltiden parça almanın derişimi değiştirdiğini sanmak.",
+   "check": "Kalan 50 g'da da 10 g çözünen var, o da %20; iki parça birleşince yine %20."
+  }
+ },
+ {
+  "id": "f015-chem-cozelti-derisimi-7",
+  "h": "136834621ca6a8",
+  "guidance": {
+   "knowledge": [
+    "Molarite: 1 litre çözeltideki çözünen mol sayısı (mol/L).",
+    "Yoğunluk = kütle / hacim; çözelti hacmi = çözelti kütlesi / yoğunluk. 1 L = 1000 mL."
+   ],
+   "strategy": "Molarite çözelti hacmi ister; hacim verilmediği için çözelti kütlesini yoğunluğa bölerek hacmi bul.",
+   "steps": [
+    "Çözünen mol: 20/40 = 0,5 mol.",
+    "Çözelti kütlesi 20 + 180 = 200 g; hacim 200/1,2 ≈ 166,67 mL ≈ 0,1667 L.",
+    "Molarite: 0,5/0,1667 = 3 mol/L."
+   ],
+   "optionReasons": [
+    "mL'yi litreye çevirmez: 0,5/166,67 ≈ 0,003.",
+    "Doğru: 0,5 mol / 0,1667 L = 3 mol/L.",
+    "Molü molarite sanır; hacme bölmez.",
+    "Kütleyi hacim sanır: 0,5/0,200 = 2,5; yoğunluğu kullanmaz.",
+    "Birim dönüşümünde virgülü bir basamak kaydırır ve 10 kat büyük sonuç bulur."
+   ],
+   "commonError": "Çözelti kütlesini yoğunluğa bölmeden doğrudan hacim gibi kullanmak.",
+   "check": "3 mol/L · 0,1667 L = 0,5 mol; çözünen mol sayısı geri gelir."
+  }
+ },
+ {
+  "id": "f015-chem-cozelti-derisimi-8",
+  "h": "0fcb8aa45e4f5f",
+  "guidance": {
+   "knowledge": [
+    "Molalite: 1 kg çözücüdeki çözünen mol sayısı (mol/kg). Payda çözelti değil çözücüdür.",
+    "1 kg = 1000 g; 180 g = 0,180 kg."
+   ],
+   "strategy": "Molalite çözücü kütlesini ister; su kütlesi verilmiş, kilograma çevirip mole böl.",
+   "steps": [
+    "Çözünen mol: 20/40 = 0,5 mol.",
+    "Çözücü: 180 g = 0,180 kg.",
+    "Molalite: 0,5/0,180 ≈ 2,778 mol/kg."
+   ],
+   "optionReasons": [
+    "Molü molalite sanır; çözücüye bölmez.",
+    "Paydaya çözelti kütlesini koyar: 0,5/0,200 = 2,5.",
+    "Doğru: 0,5/0,180 ≈ 2,778 mol/kg.",
+    "Molariteyi (3 mol/L) molalite sanır; ikisi farklı paydalı niceliklerdir.",
+    "Gramı kilograma yanlış çevirir: 0,5/0,018 ≈ 27,78."
+   ],
+   "commonError": "Molalitede paydaya çözücü yerine çözelti kütlesini koymak.",
+   "check": "2,778 · 0,180 ≈ 0,5 mol; çözünen mol sayısı geri gelir."
+  }
+ },
+ {
+  "id": "f015-chem-cozelti-derisimi-9",
+  "h": "1710f2a4e25f21",
+  "guidance": {
+   "knowledge": [
+    "mg/L: 1 litre çözeltideki mg cinsinden çözünen; hacim temelli bir birimdir.",
+    "Kütlece ppm: mg/kg; kütle temelli bir birimdir. İkisini bağlamak için yoğunluk (kg/L) gerekir."
+   ],
+   "strategy": "Hacim temelli birimi kütle temelli birime çevirmek için yoğunluk gerekir; verilmediğinde kesin eşitlik kurulamaz.",
+   "steps": [
+    "5 mg/L'yi mg/kg'a çevirmek için 1 L çözeltinin kaç kg olduğunu bilmek gerekir.",
+    "Yoğunluk verilmemiş.",
+    "Yoğunluk yaklaşık 1 kg/L kabul edilirse 5 mg/L yaklaşık 5 ppm olur; bu bir yaklaşımdır."
+   ],
+   "optionReasons": [
+    "Yoğunluğu her zaman 1 kg/L sanır; yoğun çözeltilerde bu tutmaz.",
+    "Birim dönüştürürken 1000'e böler; mg/L ile mg/kg arasında böyle bir çarpan yoktur.",
+    "Litre hacim, kilogram kütle birimidir; aynı değildir.",
+    "Doğru: yoğunluk ya da yaklaşık koşul olmadan sayısal eşitlik kesin değildir.",
+    "Derişim 5 mg/L olarak verilmiş; sıfır değildir."
+   ],
+   "commonError": "Litre ile kilogramı her koşulda eşit saymak.",
+   "check": "Yoğunluğu 1,2 kg/L olan bir çözeltide 5 mg/L, 5/1,2 ≈ 4,2 mg/kg eder; sayı yoğunluğa bağlıdır."
+  }
+ },
+ {
+  "id": "f015-chem-cozelti-derisimi-10",
+  "h": "003e02f696f648",
+  "guidance": {
+   "knowledge": [
+    "Kütlece yüzde: çözünen kütlesinin çözelti kütlesine oranı · 100. Çözelti kütlesi = çözünen + çözücü.",
+    "Uçucu olmayan madde buharlaşmaz; buharlaşmada yalnız çözücü kaybedilir."
+   ],
+   "strategy": "Çözünen sabit, çözelti kütlesi buharlaşan su kadar azalır; yeni kütleye böl.",
+   "steps": [
+    "Çözünen: 10 g, sabit.",
+    "Yeni çözelti: 100 − 20 = 80 g.",
+    "Son yüzde: 10/80 = 0,125 → %12,5."
+   ],
+   "optionReasons": [
+    "Buharlaşan suyu çıkaracağına ekler: 10/120 ≈ %8,3.",
+    "Buharlaşmanın derişimi değiştirmediğini sanar.",
+    "Buharlaşan su kütlesini yüzde sanar.",
+    "Buharlaşan suyu kalan çözeltiye oranlar: 20/80 = %25.",
+    "Doğru: 10/80 · 100 = %12,5."
+   ],
+   "commonError": "Buharlaşmada çözünenin de azaldığını sanmak ya da paydayı güncellememek.",
+   "check": "Su azalınca derişim artmalı: %12,5 > %10, yön doğru."
+  }
+ },
+ {
+  "id": "f014-chem-su-hayat-cevre-1",
+  "h": "0a6e0b2e59dd1c",
+  "guidance": {
+   "knowledge": [
+    "Debi: birim zamanda akan su miktarı. 9 L/dk, her dakika 9 litre geçmesi demektir.",
+    "Hacim = debi · süre; süre debideki zaman birimiyle aynı olmalıdır."
+   ],
+   "strategy": "Debi ve süre aynı zaman biriminde (dakika) verilmiş; çarpınca dakika sadeleşir ve litre kalır.",
+   "steps": [
+    "Hacim = 9 L/dk · 4 dk.",
+    "9 · 4 = 36 L."
+   ],
+   "optionReasons": [
+    "Doğru: 9 · 4 = 36 L.",
+    "Çarpacağına böler: 9/4 = 2,25.",
+    "Çarpacağına toplar: 9 + 4 = 13.",
+    "Bir dakika fazla sayar: 9 · 5 = 45.",
+    "Sonucu 10 kat büyük yazar; 360 L için süre 40 dakika olmalıydı."
+   ],
+   "commonError": "Hacim bulurken debi ile süreyi çarpmak yerine bölmek.",
+   "check": "Birim kontrolü: (L/dk) · dk = L; 36 L/9 L/dk = 4 dk, süre geri gelir."
+  }
+ },
+ {
+  "id": "f014-chem-su-hayat-cevre-2",
+  "h": "1969a516d29574",
+  "guidance": {
+   "knowledge": [
+    "Yüzde tasarruf: azalma miktarının eski (başlangıç) değere oranı · 100.",
+    "Azalma miktarı = eski değer − yeni değer."
+   ],
+   "strategy": "Soru eski değere göre oran istiyor; payda eski tüketim olur.",
+   "steps": [
+    "Azalma: 80 − 60 = 20 L.",
+    "Oran: 20/80 = 0,25 → %25."
+   ],
+   "optionReasons": [
+    "Farkı yüzde sanır: 20 L → %20.",
+    "Doğru: 20/80 · 100 = %25.",
+    "Paydaya yeni değeri koyar: 20/60 ≈ %33,33.",
+    "Yeni tüketimi yüzde sanır.",
+    "Yeni değerin eskiye oranını verir: 60/80 = %75; bu kalan kısımdır."
+   ],
+   "commonError": "Yüzde değişimde paydaya yeni değeri koymak.",
+   "check": "80 L'nin %25'i 20 L; 80 − 20 = 60 L, yeni tüketim geri gelir."
+  }
+ },
+ {
+  "id": "f014-chem-su-hayat-cevre-3",
+  "h": "1c2a3b9ab053c8",
+  "guidance": {
+   "knowledge": [
+    "Debi L/dk biriminde; süre de dakikaya çevrilmelidir.",
+    "Saat dakikaya çevrilirken 60 ile çarpılır: 1 saat = 60 dakika."
+   ],
+   "strategy": "Debi dakika başına verilmiş ama süre saat cinsinden; önce süreyi dakikaya çevir, sonra çarp.",
+   "steps": [
+    "Süre: 10 saat · 60 = 600 dakika.",
+    "Kayıp: 0,1 L/dk · 600 dk = 60 L."
+   ],
+   "optionReasons": [
+    "Saati dakikaya çevirmez: 0,1 · 10 = 1 L.",
+    "Yalnız 1 saati hesaplar: 0,1 · 60 = 6 L.",
+    "Doğru: 0,1 · 600 = 60 L.",
+    "100 L için süre 1000 dakika olmalıydı; 10 saat yalnız 600 dakikadır.",
+    "Dakika sayısını litre sanar: 600 dk → 600 L."
+   ],
+   "commonError": "Birimleri eşlemeden debi ile süreyi çarpmak.",
+   "check": "Saatte 0,1 · 60 = 6 L kaçar; 10 saatte 6 · 10 = 60 L, aynı sonuç."
+  }
+ },
+ {
+  "id": "f014-chem-su-hayat-cevre-4",
+  "h": "0fb8dc3d77a099",
+  "guidance": {
+   "knowledge": [
+    "İçilebilirlik: suyun mikrobiyolojik, kimyasal ve fiziksel ölçütlerin hepsini sağlaması.",
+    "Renk ve koku yalnız fiziksel gözlemlerdir; mikropları ve çözünmüş maddeleri göstermez."
+   ],
+   "strategy": "Verilen kanıtın neyi gösterip neyi göstermediğini ayır; gözlem kapsamı dışındaki ölçütler hakkında kesin sonuç çıkarılamaz.",
+   "steps": [
+    "Elde yalnız renk ve koku gözlemi var.",
+    "Mikroorganizmalar ve çözünmüş iyonlar gözle ve kokuyla tespit edilemez.",
+    "Bu yüzden gözlem içilebilirliği kanıtlamaz."
+   ],
+   "optionReasons": [
+    "Mikroorganizmalar renk ya da koku vermeden de bulunabilir; gözlem bunu ölçmez.",
+    "Çözünmüş iyonlar genelde renksiz ve kokusuzdur; gözlem bunları dışlamaz.",
+    "Damıtılmış olmayan sular da renksiz ve kokusuz olabilir.",
+    "Doğru: iki fiziksel gözlem bütün ölçütleri kapsamaz.",
+    "Gözlemi bütün kullanımlara genelleştirir; ölçülmeyen ölçütler hakkında karar verir."
+   ],
+   "commonError": "Berrak, renksiz ve kokusuz suyu kendiliğinden içilebilir saymak.",
+   "check": "Renksiz kokusuz bir suyun içinde çözünmüş tuz bulunabilir; tuzlu su da renksizdir."
+  }
+ },
+ {
+  "id": "f014-chem-su-hayat-cevre-5",
+  "h": "041e23791fe226",
+  "guidance": {
+   "knowledge": [
+    "Su sertliği: suda çözünmüş Ca²⁺ ve Mg²⁺ iyonlarının miktarıyla ilgili özellik.",
+    "Su kalitesi birçok ölçüte bakar: mikroorganizma, organik madde, ağır metal, sertlik gibi."
+   ],
+   "strategy": "Yapılan işlemin hangi ölçütü etkilediğini belirle; ölçülmeyen ölçütler hakkında kesin sonuç çıkarma.",
+   "steps": [
+    "Ca²⁺ ve Mg²⁺ azalması sertliği azaltır.",
+    "Bu işlem mikroorganizmaları ya da organik maddeleri ölçmez.",
+    "Sonuç: sertlik azalabilir; diğer güvenlik ölçütleri kanıtlanmaz."
+   ],
+   "optionReasons": [
+    "İyon gidermeyi mikrop gidermeyle karıştırır; ikisi ayrı ölçütlerdir.",
+    "Su molekülleri de atomlardan oluşur; iyon azalması atomları yok etmez.",
+    "Organik maddeler Ca²⁺ ve Mg²⁺ değildir; bu işlem onları ölçmez.",
+    "İyon azaltma hâl değişimi yaratmaz; su sıvı kalır.",
+    "Doğru: sertlik azalabilir, ama tek işlem bütün güvenlik ölçütlerini kanıtlamaz."
+   ],
+   "commonError": "Bir ölçütteki iyileşmeyi suyun bütün kalitesine genellemek.",
+   "check": "Sertliği giderilmiş bir suda mikrop bulunabilir; bu durum ikisinin ayrı ölçütler olduğunu gösterir."
+  }
+ },
+ {
+  "id": "f014-chem-su-hayat-cevre-6",
+  "h": "0b65f223828fc3",
+  "guidance": {
+   "knowledge": [
+    "Yüzde: bir bütünün yüzde kaç olduğu; %4 = 0,04.",
+    "Yarısı: bir miktarın 1/2'si. Ardışık oranlar sırayla uygulanır."
+   ],
+   "strategy": "İki adım var: önce bütünün %4'ünü bul, sonra o bölümün yarısını al. Her oran kendi bütününe uygulanır.",
+   "steps": [
+    "Kullanılabilir bölüm: 1000 · 0,04 = 40 L.",
+    "Yarısı: 40/2 = 20 L."
+   ],
+   "optionReasons": [
+    "Doğru: 1000 · 0,04 = 40 L, yarısı 20 L.",
+    "%4'ün yarısını %2 bulur ve 1000 ile çarpmayı unutup 2 L yazar.",
+    "Yarısını almayı unutur; kullanılabilir bölümün tamamını verir.",
+    "50 L için kullanılabilir bölüm 100 L, yani %10 olmalıydı.",
+    "Kullanılabilir bölümü değil deponun tamamını temel alır; 200 L, 40 L'lik bölümden büyüktür."
+   ],
+   "commonError": "Yarıyı kullanılabilir bölüm yerine deponun tamamına uygulamak.",
+   "check": "Tek adımda: 1000 · 0,04 · 0,5 = 1000 · 0,02 = 20 L."
+  }
+ },
+ {
+  "id": "f014-chem-su-hayat-cevre-7",
+  "h": "00b405ce0ce288",
+  "guidance": {
+   "knowledge": [
+    "Birim tüketim: toplam su / ürün miktarı (L/kg). Bir kilogram ürün için kullanılan su.",
+    "Farklı üretim büyüklüklerini adil kıyaslamak için toplam değil birim değer karşılaştırılır."
+   ],
+   "strategy": "Toplam hacimler farklı miktar ürüne ait; her çiftlik için L/kg hesaplayıp kıyasla.",
+   "steps": [
+    "A: 960/120 = 8 L/kg.",
+    "B: 720/80 = 9 L/kg.",
+    "8 < 9: A kilogram başına daha az su kullanır."
+   ],
+   "optionReasons": [
+    "Çiftliklerin değerlerini ters eşler; A 8, B 9 L/kg'dır.",
+    "Doğru: A 8 L/kg, B 9 L/kg; A daha azdır.",
+    "Yalnız A'yı hesaplayıp B'ye de uygular.",
+    "Toplam hacmi kıyaslar; B'nin ürünü de az olduğu için toplam yanıltır.",
+    "Oranı ters kurar: 120/960 = 0,125 kg/L ve 80/720 ≈ 0,111 kg/L; birim de L/kg değildir."
+   ],
+   "commonError": "Ürün miktarına bölmeden toplam su hacimlerini kıyaslamak.",
+   "check": "Geri çarp: 8 · 120 = 960 L ve 9 · 80 = 720 L; verilen hacimler geri gelir."
+  }
+ },
+ {
+  "id": "f014-chem-su-hayat-cevre-8",
+  "h": "0cc58206369fbb",
+  "guidance": {
+   "knowledge": [
+    "İçme suyu uygunluğu: mikrobiyolojik, kimyasal ve fiziksel ölçütlerin analizle doğrulanması.",
+    "Yağmur suyu toplama yüzeyinden (çatı, oluk) ve depodan madde ve mikrop alabilir."
+   ],
+   "strategy": "Kaynağın doğal olması ya da tek bir gözlem yeterli değildir; içme amacı için gereken bütün ölçütlerin analizle doğrulanması gerekir.",
+   "steps": [
+    "Yağmur suyu toplama ve depolama sırasında kirlenebilir.",
+    "Berraklık, sertlik ya da hacim tek başına içilebilirliği göstermez.",
+    "Uygun yaklaşım: toplama ve depolama etkilerini de kapsayan analizler istemek."
+   ],
+   "optionReasons": [
+    "Kaynağın doğallığını saflık sanar; toplama yüzeyi ve depo kirletebilir.",
+    "Mikroplar berrak suda da bulunabilir; berraklık mikrobiyolojik ölçüm değildir.",
+    "Doğru: toplama ve depolama etkileri dahil gerekli analizleri istemek.",
+    "Sertlik yalnız Ca²⁺ ve Mg²⁺ ile ilgilidir; diğer kimyasalları göstermez.",
+    "Hacim kalite hakkında bilgi vermez."
+   ],
+   "commonError": "Kaynağın doğal olmasını içilebilirlik için yeterli saymak.",
+   "check": "Aynı yağmur suyu temiz bir kapta ve kirli bir olukta farklı kalitede olur; kaliteyi kaynak değil analiz belirler."
+  }
+ },
+ {
+  "id": "f014-chem-su-hayat-cevre-9",
+  "h": "0d66fd22f1faf3",
+  "guidance": {
+   "knowledge": [
+    "Hacim = debi · süre (V = Q · t). Debi Q birim zamandaki akış, t kullanım süresi.",
+    "İki çarpan ayrı ayrı bir katsayıyla çarpılırsa sonuç bu katsayıların çarpımı kadar değişir."
+   ],
+   "strategy": "Hacim iki niceliğin çarpımı olduğundan değişim katsayıları çarpılır; toplanmaz.",
+   "steps": [
+    "Yeni debi Q/2, yeni süre t/2.",
+    "Yeni hacim: (Q/2) · (t/2) = Q · t/4.",
+    "Başlangıca göre 1/4 kat."
+   ],
+   "optionReasons": [
+    "Yarıya indirmeyi sıfırlamak sanır; iki nicelik de hâlâ sıfırdan büyüktür.",
+    "Yalnız bir çarpanın yarıya indiğini hesaba katar.",
+    "Tasarruf oranını (1 − 1/4 = 3/4) yeni hacim sanır.",
+    "Doğru: (1/2) · (1/2) = 1/4.",
+    "Yarıya indirmeyi iki katına çıkarmakla karıştırır."
+   ],
+   "commonError": "İki çarpandaki değişimi çarpmak yerine toplamak ya da yalnız birini hesaba katmak.",
+   "check": "Sayıyla dene: 10 L/dk · 4 dk = 40 L; 5 L/dk · 2 dk = 10 L, bu da 40'ın 1/4'ü."
+  }
+ },
+ {
+  "id": "f014-chem-su-hayat-cevre-10",
+  "h": "11d994886db66f",
+  "guidance": {
+   "knowledge": [
+    "Kullanım amacına göre su kalitesi: içme, teknik soğutma, sulama gibi amaçların her biri kendi ölçütlerine sahiptir.",
+    "Bir amacın ölçütlerini sağlamak başka bir amacın ölçütlerini sağladığını göstermez."
+   ],
+   "strategy": "Hangi ölçütlerin test edildiğine ve sonucun hangi amaca genellendiğine bak; test edilmeyen amaç hakkında kesin sonuç çıkarılamaz.",
+   "steps": [
+    "Soğutma ölçütleri sağlanmış.",
+    "İçme suyu analizleri yapılmamış.",
+    "Sonuç: soğutma uygunluğu tek başına içme uygunluğu anlamına gelmez."
+   ],
+   "optionReasons": [
+    "Farklı amaçların ölçütleri farklı olabilir; tek bir ölçüt seti hepsini kapsamaz.",
+    "Soğutma ölçütleri çözünmüş madde yokluğunu kanıtlamaz.",
+    "Teknik uygunluğu içme uygunluğuyla karıştırır; içme analizleri yapılmamıştır.",
+    "Su hangi amaçla kullanılırsa kullanılsın tüketim bütçesine girer.",
+    "Doğru: tek bir amacın onayı içme ölçütlerinin hepsini göstermez."
+   ],
+   "commonError": "Bir kullanım için uygun bulunan suyu her kullanım için uygun saymak.",
+   "check": "Mikroorganizma soğutma işlemini etkilemeyebilir ama içmede kritiktir; ölçütler amaca göre değişir."
+  }
+ },
+ {
+  "id": "f014-chem-kutle-korunumu-sabit-oran-1",
+  "h": "1e6b33ba4b5001",
+  "guidance": {
+   "knowledge": [
+    "Kütlenin korunumu: kapalı kapta tepkimeden önceki toplam kütle, tepkimeden sonraki toplam kütleye eşittir.",
+    "Tamamen birleşmek: girenlerin hiçbiri artmaz; hepsi ürüne dönüşür."
+   ],
+   "strategy": "Kap kapalı ve artan madde yok; bu yüzden ürün kütlesi, giren kütlelerin toplamı olarak bulunur.",
+   "steps": [
+    "Giren toplam kütle: 9 g A + 6 g B.",
+    "9 + 6 = 15 g.",
+    "Artan madde olmadığından bu 15 g’ın tamamı tek üründedir: ürün 15 g."
+   ],
+   "optionReasons": [
+    "Doğru: kapalı kapta 9 + 6 = 15 g korunur ve tamamı üründür.",
+    "Kütleleri toplamak yerine çıkarır: 9 − 6 = 3.",
+    "Yalnız B’nin kütlesini ürün sanar; A’nın katkısını unutur.",
+    "Yalnız A’nın kütlesini ürün sanar; B’nin katkısını unutur.",
+    "Kütleleri toplamak yerine çarpar: 9 · 6 = 54."
+   ],
+   "commonError": "Tepkimede kütlelerin çarpıldığını ya da büyük olanın ürün olduğunu sanmak.",
+   "check": "Son durumda yalnız ürün var; 15 g ürün, ilk toplam olan 15 g’a eşit, kütle korunuyor."
+  }
+ },
+ {
+  "id": "f014-chem-kutle-korunumu-sabit-oran-2",
+  "h": "19fce5b9ffe47e",
+  "guidance": {
+   "knowledge": [
+    "CaCO₃ ısıtılınca katı bir ürün ve gaz bir ürüne ayrışır.",
+    "Kütlenin korunumu: başlangıç kütlesi, oluşan bütün ürünlerin (kaçan gaz dahil) toplam kütlesine eşittir."
+   ],
+   "strategy": "Açık kapta gaz kaçsa da kütle kaybolmaz; başlangıç kütlesini katı ve gaz arasında paylaştırarak bilinmeyen gazı bul.",
+   "steps": [
+    "Korunum denklemi: 100 g = 56 g katı + gaz.",
+    "İki taraftan 56 çıkar: gaz = 100 − 56 = 44 g.",
+    "Tartımdaki 44 g azalma, kaptan çıkan gazın kütlesidir."
+   ],
+   "optionReasons": [
+    "Katının yarısını gaz sanar: 56 / 2 = 28.",
+    "Doğru: 100 − 56 = 44 g gaz kaptan çıkmıştır.",
+    "Gazı katıyla aynı kütlede sanır; katı kütlesini tekrar okur.",
+    "Bütün kütlenin gaza geçtiğini düşünür; katı ürünü hesaba katmaz.",
+    "Çıkarmak yerine toplar: 100 + 56 = 156."
+   ],
+   "commonError": "Açık kapta kütle azaldı diye kütlenin yok olduğunu düşünmek; azalma kaçan gazdır.",
+   "check": "Ürünleri topla: 56 + 44 = 100 g; başlangıç kütlesine eşit."
+  }
+ },
+ {
+  "id": "f014-chem-kutle-korunumu-sabit-oran-3",
+  "h": "1b6060f56f3f91",
+  "guidance": {
+   "knowledge": [
+    "Oksitlenme: metalin havadaki oksijenle birleşip oksit oluşturmasıdır.",
+    "Açık kapta havadan madde katılabilir; katı kütlesindeki artış, katılan oksijenin kütlesidir."
+   ],
+   "strategy": "Kütle korunur ama sisteme dışarıdan oksijen girer; artışı bulmak için son kütleden ilk kütleyi çıkar.",
+   "steps": [
+    "İlk katı kütlesi 12 g, son katı kütlesi 16 g.",
+    "Yalnız oksijen katıldığına göre: oksijen = 16 − 12.",
+    "16 − 12 = 4 g oksijen katılmıştır."
+   ],
+   "optionReasons": [
+    "Kütlenin korunumunu ‘katı kütlesi değişmez’ diye yanlış yorumlar; havadan gelen oksijeni görmez.",
+    "Metalin ilk kütlesini katılan oksijen sanar.",
+    "Doğru: 16 − 12 = 4 g oksijen havadan katılmıştır.",
+    "Oksidin son kütlesini katılan oksijen sanar.",
+    "Çıkarmak yerine toplar: 12 + 16 = 28."
+   ],
+   "commonError": "Açık kapta kütle artışını korunumun bozulması sanmak; artış havadan gelen oksijendir.",
+   "check": "12 g metal + 4 g oksijen = 16 g oksit; giren toplam ürüne eşit."
+  }
+ },
+ {
+  "id": "f014-chem-kutle-korunumu-sabit-oran-4",
+  "h": "05ebfc593a60af",
+  "guidance": {
+   "knowledge": [
+    "Atom kütlesi: H = 1, O = 16 verildi; bir atomun göreli kütlesidir.",
+    "Kütle oranı: bir moleküldeki her elementin toplam kütle katkısının oranıdır. Atom sayısı oranı ile aynı şey değildir."
+   ],
+   "strategy": "Kütle oranı istendiği için her elementin atom sayısını atom kütlesiyle çarpıp katkıları oranlarsın.",
+   "steps": [
+    "H₂O’da 2 H ve 1 O atomu vardır.",
+    "H katkısı: 2 · 1 = 2; O katkısı: 1 · 16 = 16.",
+    "H/O = 2/16; 2 ile sadeleştir: 1/8."
+   ],
+   "optionReasons": [
+    "Atom oranını ters çevirir: O/H = 1/2.",
+    "Kütle yerine atom sayısı oranını verir: 2 H / 1 O.",
+    "H sayısını 2 ile çarpmayı unutur: 1/16.",
+    "Doğru: 2/16 = 1/8.",
+    "Oranı ters yazar: O/H = 16/2 = 8/1."
+   ],
+   "commonError": "Atom sayısı oranıyla kütle oranını karıştırmak.",
+   "check": "18 g suda 2 g H ve 16 g O vardır; 2/16 = 1/8 aynı oranı verir."
+  }
+ },
+ {
+  "id": "f014-chem-kutle-korunumu-sabit-oran-5",
+  "h": "1b4203aa6f8d43",
+  "guidance": {
+   "knowledge": [
+    "Atom sayısı oranı: formüldeki alt simgelerden okunur; CO₂’de 1 C, 2 O vardır.",
+    "Kütle oranı: atom sayısı ile atom kütlesinin çarpımlarının oranıdır (C = 12, O = 16)."
+   ],
+   "strategy": "İki ayrı oran soruluyor; önce formülden atom oranını oku, sonra kütleleri çarparak kütle oranını bul.",
+   "steps": [
+    "Atom oranı: C/O = 1/2.",
+    "Kütleler: C için 1 · 12 = 12; O için 2 · 16 = 32.",
+    "Kütle oranı: 12/32; 4 ile sadeleştir: 3/8. Sonuç: 1/2 ve 3/8."
+   ],
+   "optionReasons": [
+    "Atom oranını kütle oranı için de kullanır; atom kütlelerinin farkını görmez.",
+    "İki oranı yer değiştirerek yazar: önce kütle, sonra atom oranı.",
+    "Atom oranını ters yazar (2/1) ve kütle oranını da ters çevirir (8/3).",
+    "O sayısını 2 ile çarpmayı unutur: atom 1/1, kütle 12/16 = 3/4.",
+    "Doğru: atom oranı 1/2, kütle oranı 12/32 = 3/8."
+   ],
+   "commonError": "Kütle oranında oksijenin atom sayısını (2) hesaba katmamak.",
+   "check": "44 g CO₂’de 12 g C ve 32 g O bulunur; 12 + 32 = 44 tutuyor ve 12/32 = 3/8."
+  }
+ },
+ {
+  "id": "f014-chem-kutle-korunumu-sabit-oran-6",
+  "h": "17748766775edc",
+  "guidance": {
+   "knowledge": [
+    "Sabit oranlar: bir saf bileşikte elementlerin kütle oranı her örnekte aynıdır.",
+    "C/O = 3/8 demek: 3 + 8 = 11 kütle payının 3 payı C, 8 payı O’dur."
+   ],
+   "strategy": "Oran parçadan parçayadır; karbonu bulmak için önce bütünü (11 pay) bulup karbonun payını oranlarsın.",
+   "steps": [
+    "Toplam pay: 3 + 8 = 11.",
+    "Karbonun bütündeki payı: 3/11.",
+    "55 · 3/11 = 15 g karbon; kalan 55 − 15 = 40 g oksijendir."
+   ],
+   "optionReasons": [
+    "Doğru: 55 · 3/11 = 15 g karbon.",
+    "Orandaki 8 sayısını gram sanar.",
+    "3/8 oranını bütünün kesri sanar: 55 · 3/8 ≈ 20,6, yaklaşık 20.",
+    "Orandaki sayıları çarpar: 3 · 8 = 24.",
+    "Oksijenin kütlesini (55 · 8/11 = 40) bulup karbon sanar."
+   ],
+   "commonError": "C/O oranını C/bileşik oranı gibi kullanmak.",
+   "check": "15/40 = 3/8 ve 15 + 40 = 55; iki koşul da sağlanıyor."
+  }
+ },
+ {
+  "id": "f014-chem-kutle-korunumu-sabit-oran-7",
+  "h": "154497825e3db4",
+  "guidance": {
+   "knowledge": [
+    "X/Y = 2/3 kütle oranı: bileşiğin her 5 kütle payının 2’si X, 3’ü Y’dir.",
+    "Bileşiğin kütlesi, içindeki X ve Y kütlelerinin toplamıdır."
+   ],
+   "strategy": "Bileşiğin toplam kütlesi verildiği için önce toplam payı bulup Y’nin bütündeki kesrini kullanırsın.",
+   "steps": [
+    "Toplam pay: 2 + 3 = 5.",
+    "Y’nin bütündeki payı 3/5.",
+    "Y = 20 · 3/5 = 12 g; X = 20 − 12 = 8 g."
+   ],
+   "optionReasons": [
+    "Bir payın kütlesini bulup orada kalır: 20 / 5 = 4.",
+    "Doğru: 20 · 3/5 = 12 g Y.",
+    "Orandaki sayıları çarpar: 2 · 3 = 6.",
+    "Y yerine X’in kütlesini verir: 20 · 2/5 = 8.",
+    "Orandaki 2’yi gram sanıp toplamdan çıkarır: 20 − 2 = 18."
+   ],
+   "commonError": "X’in ve Y’nin paylarını karıştırıp X’in kütlesini cevap vermek.",
+   "check": "8/12 = 2/3 ve 8 + 12 = 20; oran ve toplam tutuyor."
+  }
+ },
+ {
+  "id": "f014-chem-kutle-korunumu-sabit-oran-8",
+  "h": "104b9d1720c5db",
+  "guidance": {
+   "knowledge": [
+    "Kapalı sistem: dışarıyla madde alışverişi yok; toplam kütle sabit kalır.",
+    "Artan giren: tepkimeden sonra kullanılmadan kalan başlangıç maddesidir; son kütleye o da dahildir."
+   ],
+   "strategy": "Son karışım ürün ve artan girenden oluşur; korunum denklemini kurup bilinmeyen artanı çekersin.",
+   "steps": [
+    "Korunum: ilk toplam = ürün + artan.",
+    "30 = 24 + artan.",
+    "İki taraftan 24 çıkar: artan = 6 g."
+   ],
+   "optionReasons": [
+    "Ürünü son toplam sanar ve artan olmadığını düşünür.",
+    "Farkı iki katına çıkarır: 2 · 6 = 12.",
+    "Doğru: 30 − 24 = 6 g artan giren.",
+    "Ürün kütlesini artan sanar.",
+    "Çıkarmak yerine toplar: 30 + 24 = 54."
+   ],
+   "commonError": "Ürün kütlesini son toplam kütle sanıp artan maddeyi unutmak.",
+   "check": "24 g ürün + 6 g artan = 30 g; başlangıç toplamına eşit."
+  }
+ },
+ {
+  "id": "f014-chem-kutle-korunumu-sabit-oran-9",
+  "h": "0dc01b6a31679c",
+  "guidance": {
+   "knowledge": [
+    "Saf bileşik: belirli formülü olan tek tür maddedir (H₂O, CO₂, NaCl, MgO gibi).",
+    "Karışım: maddelerin istenen oranda bir araya gelmesidir; bileşimi değişebilir. Sabit oranlar kuralı yalnız saf bileşiklere uygulanır."
+   ],
+   "strategy": "Kural ‘saf bileşik’ şartı taşıdığı için şıklarda bileşik olmayan, oranı değişebilen maddeyi ararsın.",
+   "steps": [
+    "H₂O, CO₂, NaCl ve MgO belirli formüllü saf bileşiklerdir; element oranları sabittir.",
+    "Tuzlu su, tuz ve sudan oluşan bir karışımdır; farklı derişimlerde hazırlanabilir.",
+    "Oranı sabit olmadığı için kural doğrudan tuzlu suya uygulanamaz."
+   ],
+   "optionReasons": [
+    "Su saf bileşiktir; H/O kütle oranı her örnekte 1/8’dir.",
+    "CO₂ saf bileşiktir; C/O kütle oranı her örnekte 3/8’dir.",
+    "NaCl iyonik bile olsa saf bileşiktir; Na/Cl oranı sabittir. İyonik yapıyı istisna sanmak yanılgıdır.",
+    "Doğru: tuzlu su karışımdır; tuz/su oranı değişebilir.",
+    "MgO saf iyonik bileşiktir; Mg/O kütle oranı sabittir."
+   ],
+   "commonError": "İyonik bileşikleri sabit orana uymuyor sanmak ya da karışımı bileşik saymak.",
+   "check": "Aynı maddeden iki örnek düşün: iki bardak tuzlu su farklı tuzlulukta olabilir, iki saf su örneği hep 1/8 oranındadır."
+  }
+ },
+ {
+  "id": "f014-chem-kutle-korunumu-sabit-oran-10",
+  "h": "13ea50b7c19cc0",
+  "guidance": {
+   "knowledge": [
+    "Kütlece yüzde: 100 g bileşikte o elementin kaç gram olduğudur.",
+    "X/Y kütle oranı: X’in kütlesinin Y’nin kütlesine bölümüdür; bütün kütleye bölünmez."
+   ],
+   "strategy": "Yüzde verildiğinde 100 g örnek seçmek kütleleri doğrudan verir; sonra iki parçayı birbirine oranlarsın.",
+   "steps": [
+    "100 g bileşik seç: X = 40 g.",
+    "Y = 100 − 40 = 60 g.",
+    "X/Y = 40/60; 20 ile sadeleştir: 2/3."
+   ],
+   "optionReasons": [
+    "Oranı ters yazar: Y/X = 60/40 = 3/2.",
+    "X’i bütüne böler: 40/100 = 2/5; parça/parça yerine parça/bütün oranı verir.",
+    "Y’nin bütündeki payını verir: 60/100 = 3/5.",
+    "Hesapla desteklenmez: 1/4 oranında X’in payı 1/5 = %20 olurdu, verilen %40 değil.",
+    "Doğru: 40/60 = 2/3."
+   ],
+   "commonError": "Parça/bütün oranı (40/100) ile parça/parça oranını (40/60) karıştırmak.",
+   "check": "2/3 oranında X payı 2/(2 + 3) = 2/5 = %40 eder; verilen yüzdeyle uyumlu."
+  }
+ },
+ {
+  "id": "f014-chem-sinirlayici-artan-madde-1",
+  "h": "13ab4aacb67bb3",
+  "guidance": {
+   "knowledge": [
+    "Tüketim kütle oranı Fe/S = 7/4: her 7 g Fe ile 4 g S tepkimeye girer ve 11 g FeS oluşur. Buna bir ‘tarif’ diyebilirsin.",
+    "Sınırlayıcı madde: önce biten, ürün miktarını belirleyen girendir."
+   ],
+   "strategy": "Her girenin kaç tarife yettiğini hesaplarsın; küçük olan sınırlayıcıdır ve ürün ona göre bulunur.",
+   "steps": [
+    "Fe: 14 / 7 = 2 tarif; S: 12 / 4 = 3 tarif.",
+    "Küçük olan 2 tarif; Fe sınırlayıcıdır.",
+    "Bir tarif 7 + 4 = 11 g FeS verir; 2 · 11 = 22 g FeS."
+   ],
+   "optionReasons": [
+    "Doğru: Fe 2 tarife yeter, 2 · 11 = 22 g FeS.",
+    "Yalnız Fe kütlesini ürün sanar; tüketilen 8 g S’yi eklemez.",
+    "Fe’ye bir tarif S ekler: 14 + 4 = 18; tüketilen S’yi yarım hesaplar.",
+    "Başlangıç kütlelerini toplar: 14 + 12 = 26; artan 4 g S’yi de ürün sayar.",
+    "S’nin yettiği 3 tarifi kullanır: 3 · 11 = 33; Fe’nin yetmediğini görmez."
+   ],
+   "commonError": "Bütün başlangıç kütlesini ürün saymak; artan madde ürüne geçmez.",
+   "check": "22 g FeS + artan 4 g S = 26 g = 14 + 12; kütle korunuyor."
+  }
+ },
+ {
+  "id": "f014-chem-sinirlayici-artan-madde-2",
+  "h": "1b12bdfa6f2970",
+  "guidance": {
+   "knowledge": [
+    "Fe/S = 7/4: 7 g Fe tam 4 g S ile tepkimeye girer.",
+    "Artan madde: sınırlayıcı bittiğinde kullanılmadan kalan girendir."
+   ],
+   "strategy": "Önce hangi girenin sınırlayıcı olduğunu tarif sayısıyla belirler, sonra diğerinin ne kadarının harcandığını bulursun.",
+   "steps": [
+    "Fe: 14 / 7 = 2 tarif; S: 12 / 4 = 3 tarif. Fe sınırlayıcıdır.",
+    "14 g Fe, 2 · 4 = 8 g S tüketir.",
+    "Artan S: 12 − 8 = 4 g."
+   ],
+   "optionReasons": [
+    "Sınırlayıcıyı ters belirler; Fe’nin arttığını sanır.",
+    "Doğru: 14 g Fe 8 g S tüketir, 12 − 8 = 4 g S artar.",
+    "Harcanan S’yi 10 g sanar: 12 − 10 = 2; 7/4 oranını yanlış ölçekler.",
+    "S’yi sınırlayıcı sanıp Fe artığı hesaplar; 12 g S’nin yettiği 21 g Fe’yi görmez.",
+    "Başlangıç kütlelerinin oranı tarife uyuyor sanır; 14/12 ≠ 7/4."
+   ],
+   "commonError": "Büyük kütleli girenin her zaman artan olduğunu sanmak; karar tarif sayısıyla verilir.",
+   "check": "Tüketilenler 14 g Fe ve 8 g S: 14/8 = 7/4, oran sağlanıyor."
+  }
+ },
+ {
+  "id": "f014-chem-sinirlayici-artan-madde-3",
+  "h": "177d25ddd8119e",
+  "guidance": {
+   "knowledge": [
+    "Fe/S = 7/4: bir tarif 7 g Fe + 4 g S → 11 g FeS.",
+    "Tarif sayısı kesirli olabilir; en küçük tarif sayısı ürün miktarını belirler."
+   ],
+   "strategy": "İki giren için tarif sayısını ayrı ayrı bulup küçüğünü seçersin; ürün ve artan buna göre hesaplanır.",
+   "steps": [
+    "Fe: 17,5 / 7 = 2,5 tarif; S: 8 / 4 = 2 tarif.",
+    "Küçük olan 2 tarif; S sınırlayıcıdır. Harcanan Fe: 2 · 7 = 14 g.",
+    "Ürün: 2 · 11 = 22 g FeS; artan Fe: 17,5 − 14 = 3,5 g."
+   ],
+   "optionReasons": [
+    "Bir tarif ürünle S’yi toplar: 11 + 8 = 19; tarif sayısını yanlış bulur.",
+    "Başlangıç kütlelerini toplar: 17,5 + 8 = 25,5; artan Fe’yi de ürün sayar.",
+    "Doğru: S 2 tarife yeter, 2 · 11 = 22 g FeS.",
+    "Fe’nin 2,5 tarifini kullanır: 2,5 · 11 = 27,5; S’nin yetmediğini görmez.",
+    "Tarif sayısını 3’e yuvarlar: 3 · 11 = 33."
+   ],
+   "commonError": "Kütlesi büyük olan Fe’ye göre hesap yapıp sınırlayıcıyı yanlış seçmek.",
+   "check": "22 g FeS + 3,5 g Fe = 25,5 g = 17,5 + 8; kütle korunuyor."
+  }
+ },
+ {
+  "id": "f014-chem-sinirlayici-artan-madde-4",
+  "h": "162ed1a21e2b37",
+  "guidance": {
+   "knowledge": [
+    "İki giren de artmadan tükenirse başlangıç kütlelerinin oranı tüketim oranına eşittir.",
+    "Fe/S = 7/4: Fe kütlesi 7’nin, S kütlesi 4’ün aynı katı olmalıdır."
+   ],
+   "strategy": "Her şıkta Fe / 7 ve S / 4 tarif sayılarını karşılaştırırsın; ikisi eşitse hiçbir şey artmaz.",
+   "steps": [
+    "7 g Fe ve 7 g S: 1 ve 1,75 tarif; S artar. 14 g Fe ve 4 g S: 2 ve 1 tarif; Fe artar.",
+    "7 g Fe ve 12 g S: 1 ve 3 tarif; S artar. 28 g Fe ve 8 g S: 4 ve 2 tarif; Fe artar.",
+    "21 g Fe ve 12 g S: 21 / 7 = 3 ve 12 / 4 = 3; tarifler eşit, hiçbir şey artmaz."
+   ],
+   "optionReasons": [
+    "Eşit kütleleri eşit tüketim sanır; tarifler 1 ve 1,75, 3 g S artar.",
+    "Oranı 7/4 yerine 14/4 = 7/2 olarak kurar; tarifler 2 ve 1, 7 g Fe artar.",
+    "Sayıları ters eşleştirir; tarifler 1 ve 3, 8 g S artar.",
+    "Doğru: 21/12 = 7/4; ikisi de 3 tarife yeter.",
+    "Kütleleri 4 ve 2 katla büyütür; 28/8 = 7/2, 14 g Fe artar."
+   ],
+   "commonError": "Kütleleri eşit ya da büyük seçmenin tam tükenmeyi sağladığını sanmak.",
+   "check": "21 g Fe ve 12 g S ile 33 g FeS oluşur; 3 · 11 = 33 ve 21 + 12 = 33, artan sıfır."
+  }
+ },
+ {
+  "id": "f014-chem-sinirlayici-artan-madde-5",
+  "h": "00a833bc080e1f",
+  "guidance": {
+   "knowledge": [
+    "2H₂ + O₂ → 2H₂O: katsayılar mol oranıdır; 2 mol H₂, 1 mol O₂ ile tepkimeye girer.",
+    "Mol = kütle / mol kütlesi (n = m/M). Sınırlayıcı: önce biten giren."
+   ],
+   "strategy": "Katsayılar mol cinsinden olduğu için kütleleri önce mole çevirir, sonra her mol sayısını kendi katsayısına bölersin.",
+   "steps": [
+    "H₂: 6 / 2 = 3 mol; O₂: 32 / 32 = 1 mol.",
+    "Katsayıya böl: H₂ için 3 / 2 = 1,5; O₂ için 1 / 1 = 1.",
+    "Küçük olan O₂’dir; 1 mol O₂ yalnız 2 mol H₂ harcar, 1 mol H₂ artar. Sınırlayıcı O₂."
+   ],
+   "optionReasons": [
+    "Az kütleli olanı (6 g) sınırlayıcı sanır; mol sayısına bakmaz.",
+    "1 mol O₂ ile 3 mol H₂’nin tam tükeneceğini sanır; katsayı 2’yi kullanmaz.",
+    "Ürünü giren sanır; sınırlayıcı yalnız girenler arasından seçilir.",
+    "Mol kütleleri verildiği hâlde mole çevirmenin yeterli olduğunu görmez.",
+    "Doğru: 3/2 > 1/1 olduğundan O₂ önce tükenir."
+   ],
+   "commonError": "Sınırlayıcıyı kütleye bakarak seçmek; mol sayısı katsayıya bölünmelidir.",
+   "check": "H₂’nin tamamı için 3 / 2 = 1,5 mol O₂ gerekir ama 1 mol var; O₂ yetmiyor."
+  }
+ },
+ {
+  "id": "f014-chem-sinirlayici-artan-madde-6",
+  "h": "1e0a3589894628",
+  "guidance": {
+   "knowledge": [
+    "X/Y = 2/3: her 2 g X, 3 g Y ile tepkimeye girer ve 5 g XY oluşur.",
+    "Artan madde: sınırlayıcı bitince kalan girenin kütlesidir."
+   ],
+   "strategy": "Tarif sayılarını karşılaştırıp sınırlayıcıyı bulur, sonra diğer girenin harcanan miktarını çıkarırsın.",
+   "steps": [
+    "X: 10 / 2 = 5 tarif; Y: 9 / 3 = 3 tarif. Y sınırlayıcıdır.",
+    "9 g Y, 3 · 2 = 6 g X tüketir.",
+    "Kalan X: 10 − 6 = 4 g; ürün 6 + 9 = 15 g."
+   ],
+   "optionReasons": [
+    "Doğru: 9 g Y 6 g X tüketir, 10 − 6 = 4 g X kalır.",
+    "Hiçbir şeyin artmadığını sanar; oranı kontrol etmez.",
+    "Kütleleri 1:1 tüketilir sanır: 10 − 9 = 1.",
+    "Harcanan X’i kalan sanır.",
+    "X’in hiç tepkimeye girmediğini sanır; başlangıç kütlesini verir."
+   ],
+   "commonError": "Girenlerin eşit kütlelerde tükendiğini sanıp kütleleri doğrudan çıkarmak.",
+   "check": "15 g ürün + 4 g X = 19 g = 10 + 9; kütle korunuyor."
+  }
+ },
+ {
+  "id": "f014-chem-sinirlayici-artan-madde-7",
+  "h": "0d873a96be41f9",
+  "guidance": {
+   "knowledge": [
+    "X/Y = 2/3: 3 g Y, tam 2 g X ile tepkimeye girer ve 2 + 3 = 5 g ürün verir.",
+    "İlk tepkimeden sonra 9 g Y, 6 g X tüketmiş; 10 − 6 = 4 g X artmıştır."
+   ],
+   "strategy": "Önce ilk tepkimeden kalan X’i bul, sonra yeni eklenen Y ile yeni bir sınırlayıcı hesabı yap.",
+   "steps": [
+    "İlk aşama: 9 g Y, 6 g X tüketir; 4 g X artar.",
+    "Yeni 3 g Y, 3 · 2/3 = 2 g X tüketir; 4 g X buna yeter, Y sınırlayıcıdır.",
+    "Ek ürün: 2 + 3 = 5 g; 4 − 2 = 2 g X yine artar."
+   ],
+   "optionReasons": [
+    "Tüketilen X’i (2 g) ürün sanır; Y’nin katkısını eklemez.",
+    "Doğru: 2 g X + 3 g Y = 5 g ek ürün.",
+    "Yalnız eklenen Y’yi ürün sanar; X’in katkısını eklemez.",
+    "Kalan 4 g X’in tamamının tepkimeye girdiğini sanır: 4 + 3 = 7.",
+    "Ek ürüne artan X’i de katar: 5 + 4 = 9."
+   ],
+   "commonError": "Yeni eklenen giren için tüketim oranını yeniden uygulamayıp artanın tamamını ürüne katmak.",
+   "check": "Ek aşamada 4 + 3 = 7 g madde vardı; 5 g ürün + 2 g artan X = 7 g, korunum tutuyor."
+  }
+ },
+ {
+  "id": "f014-chem-sinirlayici-artan-madde-8",
+  "h": "133e64dc49acf4",
+  "guidance": {
+   "knowledge": [
+    "Fe/S = 7/4: 7 g Fe + 4 g S → 11 g FeS.",
+    "Tam tepkime burada 14 g Fe’nin bitmesiyle 22 g FeS verir; yarı ilerleme bunun yarısı, yani 11 g FeS demektir."
+   ],
+   "strategy": "Oluşan 11 g FeS’in kaç tarife karşılık geldiğini bulup o kadar Fe ve S’yi başlangıçtan çıkarırsın.",
+   "steps": [
+    "11 g FeS, 11 / 11 = 1 tarif demektir: 7 g Fe ve 4 g S harcanmıştır.",
+    "Kalan Fe: 14 − 7 = 7 g.",
+    "Kalan S: 12 − 4 = 8 g."
+   ],
+   "optionReasons": [
+    "İki girenin de başlangıç kütlesini yarıya indirir: 7 ve 6; S’nin 7/4 oranında harcandığını görmez.",
+    "Tepkimeyi tam ilerlemiş sayar: Fe biter, 4 g S artar.",
+    "Doğru: 7 g Fe ve 4 g S harcanır; 7 g Fe ve 8 g S kalır.",
+    "Harcananları yer değiştirir: Fe’den 0, S’den 11 düşer; 14 g Fe ve 1 g S.",
+    "Fe’den 11 g düşer, S’ye dokunmaz: 3 g Fe ve 12 g S."
+   ],
+   "commonError": "Yarı ilerlemeyi her girenin yarısının harcanması sanmak; harcamalar tüketim oranına uyar.",
+   "check": "7 + 8 + 11 = 26 g = 14 + 12; kütle korunuyor."
+  }
+ },
+ {
+  "id": "f014-chem-sinirlayici-artan-madde-9",
+  "h": "151b4c9639d850",
+  "guidance": {
+   "knowledge": [
+    "FeS bileşiği hem Fe hem S atomu içerir; ikisi olmadan oluşamaz.",
+    "Kimyasal tepkimede atomlar korunur; bir element başka bir elemente dönüşmez."
+   ],
+   "strategy": "Ürünün oluşması için iki girenin de bulunması gerektiğinden, eksik olan girenin tükenmiş olmasının sonucunu düşünürsün.",
+   "steps": [
+    "Fe tamamen tükenmiştir; ortamda tepkimeye girecek Fe yoktur.",
+    "Eklenen S, Fe yerine geçemez ve Fe’ye dönüşemez.",
+    "Fe olmadan yeni FeS oluşmaz; eklenen S artan olarak kalır."
+   ],
+   "optionReasons": [
+    "Fazla girenin kendi başına ürüne dönüştüğünü sanır; Fe gerektiğini unutur.",
+    "Giren eklemenin ürünü katladığını sanır; sınırlayıcı Fe bitmiştir.",
+    "Atomların korunduğunu unutur; S, Fe’ye dönüşemez.",
+    "Doğru: Fe bulunmadığı için ek FeS oluşmaz.",
+    "Kütlenin korunumunu yok sayar; artan S kaptan kaybolmaz."
+   ],
+   "commonError": "Fazla girenin miktarını artırmanın ürünü artıracağını sanmak.",
+   "check": "Ek FeS için Fe/S = 7/4 oranında Fe gerekir; Fe kütlesi 0 olduğunda bu oranla tüketilecek S de 0’dır."
+  }
+ },
+ {
+  "id": "f014-chem-sinirlayici-artan-madde-10",
+  "h": "0d7b8876a95661",
+  "guidance": {
+   "knowledge": [
+    "Kapalı sistemde kütle korunur: başlangıç toplamı = ürün + artan.",
+    "Tüketilen kütle: girenin tepkimeye gerçekten giren kısmıdır; artan kısım ürüne geçmez."
+   ],
+   "strategy": "Ürün yalnız tepkimeye giren maddelerden oluştuğundan, ürünü tüketilen kütlelerin toplamı olarak yazarsın.",
+   "steps": [
+    "X tamamen tükendi: tüketilen X = başlangıç X.",
+    "Y’nin bir kısmı tükendi, bir kısmı arttı.",
+    "Ürün = tüketilen X + tüketilen Y; başlangıç toplamı ise ürün + artan Y’dir."
+   ],
+   "optionReasons": [
+    "Ürünü Y’nin tamamı sanar; X’in katkısını ve artan Y’yi hesaba katmaz.",
+    "Artan maddeyi ürün sanar; artan, tepkimeye girmemiş kısımdır.",
+    "Artan Y’yi de ürüne katar; ‘her durumda’ ancak artan yoksa geçerli olurdu.",
+    "Yalnız X’i sayar; ürüne Y atomlarının da katıldığını unutur.",
+    "Doğru: ürün, tüketilen X ile tüketilen Y kütlelerinin toplamıdır."
+   ],
+   "commonError": "Kapalı sistemde ürün kütlesini başlangıç toplamına eşit sanmak; artan çıkarılmalıdır.",
+   "check": "Sayısal örnek: 6 g X ile 15 g Y’den 6 g X ve 9 g Y tükensin; ürün 15 g, artan Y 6 g, toplam 21 g korunur."
+  }
+ },
+ {
+  "id": "f014-chem-katli-oranlar-1",
+  "h": "081aec1b9462ef",
+  "guidance": {
+   "knowledge": [
+    "Katlı oranlar: aynı iki element birden fazla bileşik oluşturursa, birinin sabit kütlesine karşılık diğerinin kütleleri küçük tam sayılı bir oran verir.",
+    "CO’da 1 C ve 1 O, CO₂’de 1 C ve 2 O atomu vardır."
+   ],
+   "strategy": "C kütlesini eşitlemek, C atom sayısını eşitlemek demektir; iki formülde de 1 C olduğu için O sayıları doğrudan karşılaştırılır.",
+   "steps": [
+    "Her iki formülde de 1 C var; C zaten eşit.",
+    "O sayıları: CO’da 1, CO₂’de 2.",
+    "Aynı elementin atom kütlesi sadeleşir: O(CO)/O(CO₂) = 1/2."
+   ],
+   "optionReasons": [
+    "Doğru: eşit C için O sayıları 1 ve 2, oran 1/2.",
+    "Oranı ters yazar: O(CO₂)/O(CO) = 2.",
+    "İki formülde de oksijen bulunduğu için miktarları eşit sanır.",
+    "O sayısını 2 yerine 4 sayar ya da oranın karesini alır.",
+    "C ve O atom kütlelerini karıştırıp 3/2 gibi kütle oranları kurar; oran yalnız O sayılarından gelir."
+   ],
+   "commonError": "İstenen oranın payını ve paydasını ters yazmak.",
+   "check": "12 g C için CO’da 16 g, CO₂’de 32 g O vardır; 16/32 = 1/2."
+  }
+ },
+ {
+  "id": "f014-chem-katli-oranlar-2",
+  "h": "0777296cb9f203",
+  "guidance": {
+   "knowledge": [
+    "Eşit O kütlesi: iki örnekte aynı sayıda O atomu bulunması demektir.",
+    "Formülün önüne yazılan katsayı bütün formülü çoğaltır; 2 CO, 2 C ve 2 O içerir."
+   ],
+   "strategy": "O sayısını eşitlemek için CO’yu 2 ile çarparsın; sonra C sayılarını oranlarsın.",
+   "steps": [
+    "CO’da 1 O, CO₂’de 2 O var; eşitlemek için 2 CO al.",
+    "2 CO: 2 C ve 2 O; 1 CO₂: 1 C ve 2 O.",
+    "C(CO)/C(CO₂) = 2/1 = 2."
+   ],
+   "optionReasons": [
+    "Bir önceki soru tipindeki O oranını (1/2) burada da kullanır; eşitlenen elementin değiştiğini görmez.",
+    "Doğru: 2 CO ile 1 CO₂’de O eşit, C sayıları 2 ve 1.",
+    "Formüllerde birer C görüp eşitleme yapmadan oranı 1 sanır.",
+    "Oranı hem ters çevirir hem karesini alır: (1/2)² = 1/4.",
+    "Eşitlemede CO’yu 4 ile çarpar; O sayıları eşitlenmez."
+   ],
+   "commonError": "Eşitlenecek elementi karıştırıp C yerine O’yu karşılaştırmak.",
+   "check": "32 g O için CO’da 24 g, CO₂’de 12 g C vardır; 24/12 = 2."
+  }
+ },
+ {
+  "id": "f014-chem-katli-oranlar-3",
+  "h": "09a446637310d9",
+  "guidance": {
+   "knowledge": [
+    "Eşit X için Y kıyası: iki bileşikte X kütlesini aynı sayıya getirip Y kütlelerini oranlamaktır.",
+    "Bir bileşik örneğini bir sayıyla çarpmak, içindeki her elementin kütlesini aynı sayıyla çarpar; oran değişmez."
+   ],
+   "strategy": "X kütleleri 4 ve 8; I’i 2 ile çarparak X’i eşitler, sonra Y kütlelerini karşılaştırırsın.",
+   "steps": [
+    "I’i 2 katına al: 8 g X ve 2 · 6 = 12 g Y.",
+    "II: 8 g X ve 24 g Y; X artık eşit.",
+    "Y(I)/Y(II) = 12/24 = 1/2."
+   ],
+   "optionReasons": [
+    "X’i eşitlemeden Y’leri oranlar: 6/24 = 1/4.",
+    "Oranı ters yazar: 24/12 = 2.",
+    "Doğru: eşit X için 12/24 = 1/2.",
+    "X eşitlenince Y’lerin de eşit olacağını sanır; II’de X başına Y daha fazladır.",
+    "I’deki Y’yi II’deki X’e böler: 6/8 = 3/4."
+   ],
+   "commonError": "Ortak elementi eşitlemeden kütleleri doğrudan oranlamak.",
+   "check": "Y/X oranları: I’de 6/4 = 1,5, II’de 24/8 = 3; 1,5/3 = 1/2."
+  }
+ },
+ {
+  "id": "f014-chem-katli-oranlar-4",
+  "h": "0dcd7f8f33a2b2",
+  "guidance": {
+   "knowledge": [
+    "Katlı oran örneği için iki koşul gerekir: bileşikler aynı iki elementten oluşmalı ve basit (en sade) atom oranları farklı olmalıdır.",
+    "Basit formül: atomların en sade tam sayı oranıdır; N₂O₄’ün basit formülü NO₂’dir."
+   ],
+   "strategy": "Her çiftte önce element türlerini, sonra en sade atom oranlarını kontrol edip iki koşulu birden sağlayanı seçersin.",
+   "steps": [
+    "CO₂ ve SO₂ ile NaCl ve KCl farklı element çiftleri içerir; H₂SO₃ ve H₂SO₄ üç elementlidir.",
+    "NO₂ ve N₂O₄ aynı elementlerden oluşur ama N₂O₄ sadeleşince 1:2 olur; basit oran aynıdır.",
+    "NO 1:1, NO₂ 1:2; aynı iki element, farklı basit oran."
+   ],
+   "optionReasons": [
+    "Ortak elementin oksijen olmasını yeterli sanır; C ve S farklı elementtir.",
+    "Farklı molekül formülünü farklı basit oran sanır; ikisi de N:O = 1:2.",
+    "İki bileşiğin oksijen sayısının farklı olmasına bakar; üç element (H, S, O) içerdiğini görmez.",
+    "Doğru: NO 1:1, NO₂ 1:2; aynı N ve O, farklı basit oran.",
+    "Ortak klor yüzünden aynı element çifti sanır; Na ve K farklıdır."
+   ],
+   "commonError": "Molekül formülü farklı olan her çifti katlı oran örneği sanmak.",
+   "check": "Eşit N için O oranı: NO’da 1, NO₂’de 2; oran 1/2 bir tam sayı oranıdır, koşul sağlanıyor."
+  }
+ },
+ {
+  "id": "f014-chem-katli-oranlar-5",
+  "h": "05de154be18f1b",
+  "guidance": {
+   "knowledge": [
+    "Basit formül: atomların en sade oranı; molekül formülü: bir moleküldeki gerçek atom sayıları.",
+    "NO₂’de N/O = 1/2; N₂O₄’te N/O = 2/4 = 1/2."
+   ],
+   "strategy": "Eşit N için O oranının 1 çıkması, iki bileşikte N/O oranının aynı olduğunu söyler; bunu basit ve molekül formülüyle ayrı ayrı yorumlarsın.",
+   "steps": [
+    "NO₂: N/O = 1/2. N₂O₄: 2/4, sadeleşince 1/2.",
+    "En sade oranlar aynı olduğu için eşit N’ye düşen O kütlesi de aynıdır; oran 1 çıkar.",
+    "Molekül formülleri (NO₂ ve N₂O₄) farklıdır; yorum ‘aynı basit N/O oranı’dır."
+   ],
+   "optionReasons": [
+    "Basit oranın aynı olmasını molekül formülünün aynı olması sanır.",
+    "Oranın 1 çıkmasını oksijenin olmaması sanır; oksijen ikisinde de vardır.",
+    "Atom kütlesinin sabit olduğunu unutur; N₂’deki 2 atom sayısıdır, atom kütlesi değişmez.",
+    "Oran 1 diye korunumun bozulduğunu sanır; oranın korunumla ilgisi yoktur.",
+    "Doğru: ikisinin de basit N/O oranı 1/2’dir."
+   ],
+   "commonError": "Basit formül ile molekül formülünü aynı şey sanmak.",
+   "check": "14 g N için NO₂’de 32 g O, N₂O₄’te de 28 g N’ye 64 g O düşer, yani 14 g N’ye 32 g; oran 1."
+  }
+ },
+ {
+  "id": "f014-chem-katli-oranlar-6",
+  "h": "12a6ee67539b95",
+  "guidance": {
+   "knowledge": [
+    "X₂Y: 2 X ve 1 Y; XY₂: 1 X ve 2 Y içerir.",
+    "Aynı elementin atom kütlesi iki bileşikte de aynıdır; Y kütlelerinin oranı Y atom sayılarının oranına eşittir."
+   ],
+   "strategy": "X sayısını eşitlemek için XY₂’yi 2 ile çarparsın; sonra Y sayılarını oranlarsın.",
+   "steps": [
+    "Bir X₂Y: 2 X, 1 Y.",
+    "İki XY₂: 2 X, 2 · 2 = 4 Y.",
+    "X eşit; Y(X₂Y)/Y(XY₂) = 1/4."
+   ],
+   "optionReasons": [
+    "Doğru: eşit X için Y sayıları 1 ve 4, oran 1/4.",
+    "X’i eşitlemeden formüldeki Y’leri oranlar: 1/2.",
+    "X’i eşitlemeden oranı ters yazar: 2/1.",
+    "Eşitleme doğru ama oranı ters yazar: 4/1.",
+    "Her formülde iki element var diye miktarları eşit sanır."
+   ],
+   "commonError": "XY₂’yi 2 ile çarpmayı unutup formüldeki alt simgeleri doğrudan oranlamak.",
+   "check": "Y’yi eşitleyerek dene: 2 X₂Y (4 X, 2 Y) ile 1 XY₂ (1 X, 2 Y); X oranı 4, yani tersi 1/4 ile uyumlu."
+  }
+ },
+ {
+  "id": "f014-chem-katli-oranlar-7",
+  "h": "1fa4d65bab87bd",
+  "guidance": {
+   "knowledge": [
+    "Referans kütle: karşılaştırmada iki bileşikte eşitlenen X kütlesidir.",
+    "Bir oranın payı ve paydası aynı sayıyla çarpılırsa oran değişmez."
+   ],
+   "strategy": "X’i iki katına çıkarmak her iki bileşikteki Y’yi de iki katına çıkarır; bunu oran üzerinde düşünürsün.",
+   "steps": [
+    "Eşit X için Y(I)/Y(II) = 2 bulunmuş.",
+    "X iki katına çıkınca Y(I) ve Y(II) de iki katına çıkar.",
+    "(2 · Y(I))/(2 · Y(II)) = Y(I)/Y(II) = 2; oran değişmez."
+   ],
+   "optionReasons": [
+    "X değişince oranın eşitlendiğini sanır.",
+    "Doğru: pay ve payda birlikte iki katına çıkar, oran 2 kalır.",
+    "Yalnız payı iki katına çıkarır: 2 · 2 = 4.",
+    "Oranı ters çevirir: 1/2.",
+    "Referansı değiştirmenin Y’yi sıfırladığını sanır."
+   ],
+   "commonError": "Karşılaştırma için seçilen referans kütlenin sonucu değiştirdiğini sanmak.",
+   "check": "Sayıyla dene: 1 g X için 4 g ve 2 g Y; 2 g X için 8 g ve 4 g Y. İkisinde de oran 2."
+  }
+ },
+ {
+  "id": "f014-chem-katli-oranlar-8",
+  "h": "05b5ae5aec0dac",
+  "guidance": {
+   "knowledge": [
+    "Katsayı: formülün önüne yazılan sayı; kaç formül miktarı alındığını gösterir.",
+    "Alt simge: formülün içindeki küçük sayı; bir taneciğin içindeki atom sayısını gösterir."
+   ],
+   "strategy": "‘2 CO’ yazımında 2 formülün önünde olduğundan katsayıdır; katsayının anlamıyla alt simgenin anlamını ayırırsın.",
+   "steps": [
+    "2, CO’nun önünde duruyor; alt simge değil, katsayıdır.",
+    "Katsayı bütün formülü çoğaltır: 2 CO, 2 C ve 2 O içerir.",
+    "Yani iki formül miktarı CO alınmıştır; bir CO’nun içindeki 1:1 oranı değişmez."
+   ],
+   "optionReasons": [
+    "Karşılaştırma için yazılan katsayıyı bir tepkime sanır.",
+    "Katsayıyı alt simge sanır; CO’da yine 1 O vardır.",
+    "Doğru: katsayı, CO’dan iki formül miktarı alındığını gösterir.",
+    "Katsayıyı atom kütlesine uygular; atom kütlesi sabittir.",
+    "Katsayının oksijeni yok ettiğini sanır; 2 CO iki O içerir."
+   ],
+   "commonError": "Formül önündeki katsayıyı formül içindeki alt simgeyle karıştırmak.",
+   "check": "2 CO ile 1 CO₂’nin ikisinde de 2 O var; katsayı yalnız miktarı çoğaltmış."
+  }
+ },
+ {
+  "id": "f014-chem-katli-oranlar-9",
+  "h": "1970cce35acf67",
+  "guidance": {
+   "knowledge": [
+    "Basit formül XY: atom oranı X:Y = 1:1, yani her X’e bir Y düşer.",
+    "Eşit X için Y’nin iki katı olması, aynı sayıda X atomuna iki kat Y atomu düşmesi demektir."
+   ],
+   "strategy": "I’deki Y/X oranını iki ile çarpıp II’nin atom oranını, oradan en sade formülü yazarsın.",
+   "steps": [
+    "I’de Y/X = 1/1 = 1.",
+    "II’de eşit X için Y iki katı: Y/X = 2.",
+    "X:Y = 1:2; basit formül XY₂."
+   ],
+   "optionReasons": [
+    "X’i iki katına çıkarır; Y’nin iki katını X’e uygular.",
+    "Formülü bütünüyle iki katına çıkarır; X₂Y₂ sadeleşince yine XY olur.",
+    "I’in formülünü tekrar yazar; Y değişimini uygulamaz.",
+    "Doğru: Y/X = 2, basit formül XY₂.",
+    "X’e üç katı uygular; verilen ‘iki kat’ bilgisiyle ilgisi yoktur."
+   ],
+   "commonError": "Bir elementin artışını yanlışlıkla diğer elementin alt simgesine yazmak.",
+   "check": "XY ile XY₂’de eşit X için Y sayıları 1 ve 2; oran 2, verilenle aynı."
+  }
+ },
+ {
+  "id": "f014-chem-katli-oranlar-10",
+  "h": "0261fa783fb4de",
+  "guidance": {
+   "knowledge": [
+    "Katlı oranlar kanunu yalnız aynı iki elementten oluşan bileşiklerin karşılaştırılmasında kullanılır.",
+    "CO₂ karbon ve oksijenden, SO₂ kükürt ve oksijenden oluşur."
+   ],
+   "strategy": "Kanunun ön koşulunu (aynı iki element) iki bileşikte kontrol eder, sağlanmayan koşulu ararsın.",
+   "steps": [
+    "CO₂’nin elementleri: C ve O.",
+    "SO₂’nin elementleri: S ve O.",
+    "C ve S farklı elementtir; element çiftleri aynı değildir, kıyas kurulamaz."
+   ],
+   "optionReasons": [
+    "Ortak oksijenin koşulu sağladığını sanır; ikinci element de ortak olmalıdır.",
+    "Alt simgelerin aynı olmasını koşul sanır; bu, element çiftini aynı yapmaz.",
+    "Saflığı engel sanır; saf olmak koşul için gereklidir, engel değildir.",
+    "Kütlenin korunumunu engel sanır; korunum her tepkimede geçerlidir.",
+    "Doğru: CO₂ C ve O, SO₂ S ve O içerir; element çiftleri farklıdır."
+   ],
+   "commonError": "Ortak bir element bulunmasını katlı oran için yeterli saymak.",
+   "check": "NO ve NO₂ ile karşılaştır: orada iki element de ortaktır ve kıyas kurulur; CO₂ ve SO₂’de ikinci element farklıdır."
+  }
+ },
+ {
+  "id": "f014-chem-mol-tanecik-iliskisi-1",
+  "h": "135e842b739e51",
+  "guidance": {
+   "knowledge": [
+    "Mol: 6,02 · 10²³ tanecikten oluşan madde miktarı; bu sayıya Avogadro sabiti (Nₐ) denir.",
+    "Tanecik sayısı N = n · Nₐ; n mol sayısıdır."
+   ],
+   "strategy": "Soru molekül sayısını istiyor; molekülün kaç atomdan oluştuğu gerekmez, yalnız N = n · Nₐ uygulanır.",
+   "steps": [
+    "n = 0,5 mol H₂O molekülü.",
+    "N = 0,5 · Nₐ.",
+    "Molekül sayısı 0,5 Nₐ; atom sayısı sorulmadığı için 3 ile çarpılmaz."
+   ],
+   "optionReasons": [
+    "Doğru: N = 0,5 · Nₐ molekül.",
+    "Her maddenin 1 mol olduğunu sanır; verilen 0,5’i kullanmaz.",
+    "Atom sayısını bulur: 0,5 · 3 = 1,5 Nₐ; molekül sorulmuştu.",
+    "Çarpmak yerine böler: 1/0,5 = 2.",
+    "Molekül başına 3 atomu 1 molle çarpar: 3 Nₐ."
+   ],
+   "commonError": "Molekül sayısı sorulduğunda atom sayısını hesaplamak.",
+   "check": "1 mol su Nₐ molekül içerir; yarım mol yarısı kadar, 0,5 Nₐ."
+  }
+ },
+ {
+  "id": "f014-chem-mol-tanecik-iliskisi-2",
+  "h": "164fdda5a94945",
+  "guidance": {
+   "knowledge": [
+    "Formüldeki alt simge, bir moleküldeki atom sayısıdır; CO₂’de 2 O atomu vardır.",
+    "1 mol molekül, içindeki her atomdan alt simge kadar mol içerir."
+   ],
+   "strategy": "Molekül mol sayısını formüldeki O alt simgesiyle çarparak O atomu mol sayısını bulursun.",
+   "steps": [
+    "Bir CO₂ molekülünde 2 O atomu var.",
+    "0,5 mol CO₂ · 2 = 1 mol O atomu.",
+    "Bu 1 mol tek tek O atomudur; serbest O₂ molekülü demek değildir."
+   ],
+   "optionReasons": [
+    "Çarpmak yerine 2’ye böler: 0,5 / 2 = 0,25.",
+    "Doğru: 0,5 · 2 = 1 mol O atomu.",
+    "Molekül mol sayısını atom mol sayısı sanır.",
+    "Toplam atomu bulur: 0,5 · 3 = 1,5; yalnız O sorulmuştu.",
+    "O₂ varmış gibi bir kez daha 2 ile çarpar: 1 · 2 = 2."
+   ],
+   "commonError": "Molekül mol sayısını alt simgeyle çarpmayı unutmak.",
+   "check": "1 mol O atomu 16 g’dır; 0,5 mol CO₂ (22 g) içindeki O da 22 − 6 = 16 g çıkar."
+  }
+ },
+ {
+  "id": "f014-chem-mol-tanecik-iliskisi-3",
+  "h": "03be38443e4536",
+  "guidance": {
+   "knowledge": [
+    "Formül birimi: iyonik bileşiğin en sade iyon oranını gösteren birim.",
+    "Parantez dışındaki alt simge parantez içindeki her atomu çarpar: Ca(OH)₂ = 1 Ca, 2 O, 2 H."
+   ],
+   "strategy": "Önce bir formül birimindeki toplam atom sayısını bulur, sonra mol sayısıyla çarparsın.",
+   "steps": [
+    "Ca(OH)₂: 1 Ca + 2 O + 2 H = 5 atom.",
+    "0,25 mol · 5 = 1,25 mol atom."
+   ],
+   "optionReasons": [
+    "Formül birimi mol sayısını atom mol sayısı sanır.",
+    "Yalnız O (ya da yalnız H) atomlarını sayar: 0,25 · 2 = 0,50.",
+    "Doğru: 0,25 · 5 = 1,25 mol atom.",
+    "Parantez çarpanını kullanmaz; Ca, O, H’yi birer sayar: 0,25 · 3 = 0,75.",
+    "Ca’yı unutup O ve H’yi sayar: 0,25 · 4 = 1."
+   ],
+   "commonError": "Parantez dışındaki alt simgenin parantezin içindeki bütün atomları çarptığını unutmak.",
+   "check": "1 mol Ca(OH)₂ 5 mol atom içerir; dörtte biri 1,25 mol."
+  }
+ },
+ {
+  "id": "f014-chem-mol-tanecik-iliskisi-4",
+  "h": "1f60e17aeeadc3",
+  "guidance": {
+   "knowledge": [
+    "SO₄ grubu: 1 S ve 4 O atomundan oluşan çok atomlu iyondur.",
+    "(SO₄)₃: parantez dışındaki 3, gruptaki her atomu 3 ile çarpar."
+   ],
+   "strategy": "O atomları yalnız SO₄ gruplarında olduğu için grup sayısını gruptaki O sayısıyla çarparsın.",
+   "steps": [
+    "Al₂(SO₄)₃’te 3 tane SO₄ grubu var.",
+    "Her grupta 4 O: 3 · 4 = 12 O atomu."
+   ],
+   "optionReasons": [
+    "Yalnız grup sayısını (3) O sayısı sanır.",
+    "Tek bir SO₄ grubundaki O sayısını verir; parantez çarpanını unutur.",
+    "Çarpmak yerine toplar: 3 + 4 = 7.",
+    "Doğru: 3 · 4 = 12 O atomu.",
+    "Bütün atomları sayar: 2 Al + 3 S + 12 O = 17; yalnız O sorulmuştu."
+   ],
+   "commonError": "Parantez dışındaki sayıyı unutup tek grubun atomlarını saymak.",
+   "check": "Formülü aç: AlAl SO₄ SO₄ SO₄; dört O’lu üç grup, 4 + 4 + 4 = 12."
+  }
+ },
+ {
+  "id": "f014-chem-mol-tanecik-iliskisi-5",
+  "h": "154beb9fc25ff3",
+  "guidance": {
+   "knowledge": [
+    "Ayrışma: iyonik bileşiğin suda iyonlarına ayrılması; Ca(OH)₂ → Ca²⁺ + 2 OH⁻.",
+    "Denklemdeki katsayılar mol oranıdır: 1 mol Ca(OH)₂’den 1 mol Ca²⁺ ve 2 mol OH⁻ oluşur."
+   ],
+   "strategy": "Ayrışma denklemindeki katsayıları kullanarak her iyonun molünü bulur, sonra toplarsın.",
+   "steps": [
+    "Ca²⁺: 0,20 · 1 = 0,20 mol.",
+    "OH⁻: 0,20 · 2 = 0,40 mol.",
+    "Toplam iyon: 0,20 + 0,40 = 0,60 mol."
+   ],
+   "optionReasons": [
+    "Ayrışma olmamış gibi formül birimi molünü verir.",
+    "Yalnız OH⁻ iyonlarını sayar; Ca²⁺’yı unutur.",
+    "Ca²⁺’yı yükü kadar iki kez sayar: 0,40 + 0,40 = 0,80.",
+    "İyon yerine atom sayar: 0,20 · 5 = 1.",
+    "Doğru: 0,20 + 0,40 = 0,60 mol iyon."
+   ],
+   "commonError": "OH⁻ iyonunu O ve H olarak ayrı iyonlar saymak ya da yükü iyon sayısıyla karıştırmak.",
+   "check": "Bir formül birimi 3 iyon verir: 0,20 · 3 = 0,60 mol."
+  }
+ },
+ {
+  "id": "f014-chem-mol-tanecik-iliskisi-6",
+  "h": "04ad578b73cbac",
+  "guidance": {
+   "knowledge": [
+    "OH⁻ (hidroksit) iyonu tek bir iyondur; içindeki O ve H ayrı iyonlara ayrılmaz.",
+    "İyon sayısı = iyon molü · Nₐ."
+   ],
+   "strategy": "Ayrışma denkleminden OH⁻ molünü bulup Avogadro sabitiyle çarparsın.",
+   "steps": [
+    "Ca(OH)₂ → Ca²⁺ + 2 OH⁻; 1 formül birimi 2 OH⁻ verir.",
+    "OH⁻: 0,20 · 2 = 0,40 mol.",
+    "Sayı: 0,40 · Nₐ = 0,40 Nₐ."
+   ],
+   "optionReasons": [
+    "Doğru: 0,40 mol OH⁻, yani 0,40 Nₐ iyon.",
+    "Katsayı 2’yi unutur; Ca²⁺ ile aynı sayıda OH⁻ sanır.",
+    "Toplam iyon sayısını verir: 0,20 + 0,40 = 0,60.",
+    "OH⁻’yi O ve H olarak ayrı sayar: 0,40 + 0,40 = 0,80.",
+    "Bütün atomları sayar: 0,20 · 5 = 1 Nₐ."
+   ],
+   "commonError": "Yalnız OH⁻ sorulduğunda toplam iyon sayısını vermek.",
+   "check": "OH⁻ sayısı Ca²⁺ sayısının iki katı olmalı: 0,40 = 2 · 0,20."
+  }
+ },
+ {
+  "id": "f014-chem-mol-tanecik-iliskisi-7",
+  "h": "071353392f68d6",
+  "guidance": {
+   "knowledge": [
+    "İyon miktarı: bütün iyonların mol sayılarının toplamıdır.",
+    "Net yük: her iyonun yükü ile mol sayısının çarpımlarının toplamıdır; Ca²⁺ için +2, OH⁻ için −1."
+   ],
+   "strategy": "Miktar ile yük farklı büyüklüklerdir; önce mol sayılarını, sonra yük katkılarını ayrı ayrı toplarsın.",
+   "steps": [
+    "İyon miktarı: 1 + 2 = 3 mol.",
+    "Yük: 1 · (+2) + 2 · (−1) = +2 − 2 = 0.",
+    "Toplam 3 mol iyon, net yük sıfır."
+   ],
+   "optionReasons": [
+    "Yükler sıfırlanıyor diye iyon miktarını da sıfır sanır.",
+    "Doğru: 1 + 2 = 3 mol iyon; +2 ile −2 dengelenir.",
+    "Yükleri işaretsiz toplar: +2 + 1 = +3.",
+    "İyonlar yerine atomları sayar: Ca + 2 O + 2 H = 5.",
+    "Yalnız Ca²⁺’yı sayar; OH⁻ iyonlarını ve yüklerini unutur."
+   ],
+   "commonError": "Net yükün sıfır olmasını iyon sayısının sıfır olması sanmak.",
+   "check": "Bu oran Ca(OH)₂’nin bir formül birimidir; nötr bileşik olduğu için net yükün sıfır çıkması beklenir."
+  }
+ },
+ {
+  "id": "f014-chem-mol-tanecik-iliskisi-8",
+  "h": "166daca8c1d78e",
+  "guidance": {
+   "knowledge": [
+    "İyonik katı: zıt yüklü iyonların düzenli örgüsüdür; içinde ayrık molekül yoktur.",
+    "Formül birimi: iyonik bileşikte en sade iyon oranını gösteren sayım birimi; Ca(OH)₂ için 1 Ca²⁺ ve 2 OH⁻."
+   ],
+   "strategy": "Katının iyonik olduğu verilmiş; iyonik yapıda hangi sayım biriminin kullanıldığını hatırlarsın.",
+   "steps": [
+    "Ca(OH)₂ katısı Ca²⁺ ve OH⁻ iyonlarından oluşur.",
+    "İyonik örgüde bağımsız Ca(OH)₂ molekülü yoktur.",
+    "Sayım birimi olarak Ca(OH)₂ formül birimi kullanılır."
+   ],
+   "optionReasons": [
+    "Her formülü molekül sanar; iyonik katıda ayrık molekül yoktur.",
+    "Kalsiyumun gaz molekülü olarak bulunduğunu sanır; Ca iyon hâlindedir.",
+    "Doğru: iyonik katı formül birimiyle sayılır.",
+    "OH⁻ iyonunu nötr bir atom sanır; OH₂ diye bir atom yoktur.",
+    "Elektronları yapının tek parçası sanır; örgüde iyonlar bulunur."
+   ],
+   "commonError": "İyonik bileşikleri molekül olarak saymak.",
+   "check": "NaCl örneğiyle karşılaştır: orada da sayım birimi NaCl formül birimidir, ayrı NaCl molekülü değildir."
+  }
+ },
+ {
+  "id": "f014-chem-mol-tanecik-iliskisi-9",
+  "h": "1da7c5a4666585",
+  "guidance": {
+   "knowledge": [
+    "Mol sayısı n = N / Nₐ; N tanecik sayısıdır.",
+    "Bilimsel gösterimde aynı üslü sayılar bölünürken üsler sadeleşir: 10²³ / 10²³ = 1."
+   ],
+   "strategy": "Tanecik sayısı verilip mol istendiği için N’yi Avogadro sabitine bölersin.",
+   "steps": [
+    "n = (1,204 · 10²³) / (6,02 · 10²³).",
+    "10²³ çarpanları sadeleşir: n = 1,204 / 6,02.",
+    "1,204 / 6,02 = 0,20 mol (6,02 · 0,2 = 1,204)."
+   ],
+   "optionReasons": [
+    "Ondalık basamağı kaydırır: 0,20 yerine 0,02.",
+    "1,204’ü 12,04 gibi okuyup oranı yarım sanır.",
+    "Ondalık virgülleri yok sayıp 1204 / 602 = 2 bulur.",
+    "Doğru: 1,204 / 6,02 = 0,20 mol.",
+    "Bölmeyi ters yapar: 6,02 / 1,204 = 5."
+   ],
+   "commonError": "Bölmeyi ters yapmak, yani Nₐ’yı tanecik sayısına bölmek.",
+   "check": "0,20 · 6,02 · 10²³ = 1,204 · 10²³; verilen sayıyı geri verir."
+  }
+ },
+ {
+  "id": "f014-chem-mol-tanecik-iliskisi-10",
+  "h": "16c02775662085",
+  "guidance": {
+   "knowledge": [
+    "Moleküler çözünme: şeker gibi maddeler suda molekül olarak dağılır; iyonlarına ayrılmaz.",
+    "Tanecik sayısı N = n · Nₐ; çözünme molekül sayısını değiştirmez."
+   ],
+   "strategy": "Şekerin iyonlaşmadığı ve molekül kimliğini koruduğu verildiği için molekül sayısını doğrudan N = n · Nₐ ile bulursun.",
+   "steps": [
+    "Şeker iyonlaşmaz; 0,3 mol molekül çözeltide 0,3 mol molekül olarak kalır.",
+    "N = 0,3 · Nₐ.",
+    "Çözünmüş şeker molekülü sayısı 0,3 Nₐ’dır."
+   ],
+   "optionReasons": [
+    "Şekeri iyonik madde gibi ikiye ayrışmış sanar; iyonlaşma olmadığı verilmiştir.",
+    "Çözünmeyi molekülün atomlarına ayrılması sanır.",
+    "Çözünmeyi maddenin yok olması sanır; atomlar korunur.",
+    "Çözünen maddenin gözden kaybolmasını yok olması sanır; moleküller çözeltide durur.",
+    "Doğru: moleküller korunur, N = 0,3 Nₐ."
+   ],
+   "commonError": "Suda çözünen her maddenin iyonlarına ayrıldığını sanmak.",
+   "check": "NaCl’den farklı olarak şeker iyon vermez; bu yüzden çözünmeden önceki ve sonraki tanecik sayısı aynıdır."
+  }
+ },
+ {
+  "id": "f014-chem-mol-kutle-iliskisi-1",
+  "h": "1bc0e7e547f19c",
+  "guidance": {
+   "knowledge": [
+    "Mol kütlesi (M): bir mol maddenin gram cinsinden kütlesidir; birimi g/mol’dür.",
+    "Bir molekülün mol kütlesi, içindeki atomların atom kütlelerinin alt simgelerle çarpılıp toplanmasıyla bulunur."
+   ],
+   "strategy": "Formülde 1 C ve 2 O olduğu için her atom kütlesini sayısıyla çarpıp toplarsın; birimi g/mol yazarsın.",
+   "steps": [
+    "C katkısı: 1 · 12 = 12.",
+    "O katkısı: 2 · 16 = 32.",
+    "M = 12 + 32 = 44 g/mol."
+   ],
+   "optionReasons": [
+    "Doğru: 12 + 2 · 16 = 44 g/mol.",
+    "O’yu bir kez alır: 12 + 16 = 28; bu CO’nun mol kütlesidir.",
+    "Yalnız oksijen katkısını alır: 2 · 16 = 32.",
+    "Sayı doğru ama birimi yanlış; g bir örneğin kütlesidir, mol kütlesi g/mol’dür.",
+    "Yalnız karbonun atom kütlesini verir; oksijeni eklemez."
+   ],
+   "commonError": "Sayıyı doğru bulup birimi g/mol yerine g yazmak.",
+   "check": "44 g CO₂ alırsan n = 44 / 44 = 1 mol olur; mol kütlesinin tanımıyla uyumlu."
+  }
+ },
+ {
+  "id": "f014-chem-mol-kutle-iliskisi-2",
+  "h": "0905cdbf0648e4",
+  "guidance": {
+   "knowledge": [
+    "Mol kütlesi: formüldeki her atomun atom kütlesi ile sayısının çarpımlarının toplamıdır (g/mol).",
+    "Parantezin dışındaki alt simge, parantezin içindeki bütün atomları çarpar: (OH)₂ = 2 O + 2 H."
+   ],
+   "strategy": "Parantez içindeki OH grubunun kütlesini önce bulup ikiyle çarparsın; Ca’yı bir kez eklersin.",
+   "steps": [
+    "OH grubu: 16 + 1 = 17.",
+    "(OH)₂: 2 · 17 = 34.",
+    "M = 40 + 34 = 74 g/mol."
+   ],
+   "optionReasons": [
+    "Parantez çarpanını unutur: 40 + 16 + 1 = 57.",
+    "Doğru: 40 + 2 · (16 + 1) = 74 g/mol.",
+    "Çarpanı yalnız H’ye uygular: 40 + 16 + 2 · 1 = 58.",
+    "Ca’yı da parantezin içindeymiş gibi çarpar: 2 · (40 + 16 + 1) = 114.",
+    "Oksijeni unutur: 40 + 2 · 1 = 42."
+   ],
+   "commonError": "Parantez dışındaki 2’yi yalnız son atoma uygulamak.",
+   "check": "Atomları tek tek say: Ca 40, O 16 + 16, H 1 + 1; toplam 74."
+  }
+ },
+ {
+  "id": "f014-chem-mol-kutle-iliskisi-3",
+  "h": "0e4164026d4db1",
+  "guidance": {
+   "knowledge": [
+    "Mol sayısı n = m / M; m kütle (g), M mol kütlesi (g/mol).",
+    "Bölmede gram birimleri sadeleşir, sonuç mol çıkar."
+   ],
+   "strategy": "Kütle ve mol kütlesi verildiği için doğrudan n = m / M bağıntısını kullanırsın.",
+   "steps": [
+    "n = 11 g / (44 g/mol).",
+    "11 / 44 = 1/4 = 0,25 mol."
+   ],
+   "optionReasons": [
+    "Mol kütlesini iki O için ayrıca ikiyle çarpar: 11 / 88 = 0,125.",
+    "Kütleyi yanlış okur: 22 / 44 = 0,5.",
+    "Doğru: 11 / 44 = 0,25 mol.",
+    "Bölmeyi ters yapar ve yarıya indirir: 44 / 22 = 2.",
+    "Bölmeyi ters yapar: 44 / 11 = 4."
+   ],
+   "commonError": "Mol kütlesini kütleye bölmek, yani bölmeyi ters kurmak.",
+   "check": "0,25 mol · 44 g/mol = 11 g; verilen kütleyi geri verir."
+  }
+ },
+ {
+  "id": "f014-chem-mol-kutle-iliskisi-4",
+  "h": "1117e7e1a7bf6d",
+  "guidance": {
+   "knowledge": [
+    "Kütle m = n · M: mol sayısı ile mol kütlesinin çarpımıdır.",
+    "Formül miktarı: iyonik bileşiğin mol cinsinden miktarıdır; aynı formül kullanılır."
+   ],
+   "strategy": "Mol sayısı ve mol kütlesi verilip kütle istendiği için m = n · M bağıntısını kullanırsın.",
+   "steps": [
+    "m = 0,5 mol · 74 g/mol.",
+    "0,5 · 74 = 37 g."
+   ],
+   "optionReasons": [
+    "Sonucu bir kez daha yarıya indirir: 37 / 2 = 18,5.",
+    "Mol kütlesini örneğin kütlesi sanır; 0,5 ile çarpmaz.",
+    "Çarpmak yerine böler: 74 / 0,5 = 148.",
+    "Doğru: 0,5 · 74 = 37 g.",
+    "Molü mol kütlesine böler: 0,5 / 74 ≈ 0,00676."
+   ],
+   "commonError": "m = n · M yerine M’yi n’ye bölmek.",
+   "check": "37 g / 74 g/mol = 0,5 mol; verilen mol sayısını geri verir."
+  }
+ },
+ {
+  "id": "f014-chem-mol-kutle-iliskisi-5",
+  "h": "1895d68317ef95",
+  "guidance": {
+   "knowledge": [
+    "Molekül sayısı N = n · Nₐ; iki maddenin molekül sayıları oranı, mol sayıları oranına eşittir.",
+    "n = m / M: aynı kütlede, mol kütlesi küçük olan maddenin mol sayısı büyüktür."
+   ],
+   "strategy": "Kütleler eşit, mol kütleleri farklı; her maddenin mol sayısını bulup oranlarsın, Nₐ sadeleşir.",
+   "steps": [
+    "H₂: 4 / 2 = 2 mol.",
+    "O₂: 4 / 32 = 0,125 mol.",
+    "Oran: 2 / 0,125 = 16 (Nₐ sadeleşir)."
+   ],
+   "optionReasons": [
+    "Oranı ters yazar: O₂/H₂ = 0,125 / 2 = 1/16.",
+    "Eşit kütlenin eşit molekül sayısı demek olduğunu sanır.",
+    "Yalnız H₂’nin mol sayısını oran sanır.",
+    "O₂’nin mol kütlesini örnek kütlesine böler: 32 / 4 = 8.",
+    "Doğru: 2 / 0,125 = 16."
+   ],
+   "commonError": "Eşit kütledeki iki maddenin eşit sayıda tanecik içerdiğini sanmak.",
+   "check": "Kütleler eşitken mol oranı mol kütlelerinin ters oranıdır: 32 / 2 = 16."
+  }
+ },
+ {
+  "id": "f014-chem-mol-kutle-iliskisi-6",
+  "h": "13acb6ae54dda8",
+  "guidance": {
+   "knowledge": [
+    "n = m / M ile kütleden formül birimi molüne geçilir.",
+    "Ca(OH)₂’nin bir formül biriminde 2 O atomu vardır; O molü = formül birimi molü · 2."
+   ],
+   "strategy": "Önce kütleyi mole çevirir, sonra formüldeki O sayısıyla çarparak O atomu molüne geçersin.",
+   "steps": [
+    "n = 37 / 74 = 0,5 mol Ca(OH)₂.",
+    "O atomu: 0,5 · 2 = 1 mol."
+   ],
+   "optionReasons": [
+    "Doğru: 0,5 mol birim · 2 = 1 mol O atomu.",
+    "Çarpmak yerine 2’ye böler: 0,5 / 2 = 0,25.",
+    "Formül birimi molünü O molü sanır.",
+    "Kütleyi mole çevirmeden bir mol varsayıp 2 ile çarpar.",
+    "Bütün atomları sayar: 0,5 · 5 = 2,5."
+   ],
+   "commonError": "Formül birimi molünü alt simgeyle çarpmayı unutmak.",
+   "check": "1 mol O 16 g’dır; 37 g Ca(OH)₂’nin O payı 37 · 32/74 = 16 g, tutarlı."
+  }
+ },
+ {
+  "id": "f014-chem-mol-kutle-iliskisi-7",
+  "h": "090ff89a1278b7",
+  "guidance": {
+   "knowledge": [
+    "Mol kütlesi: atom kütlelerinin alt simgelerle çarpılıp toplanmasıdır (g/mol).",
+    "(SO₄)₃: parantez içindeki 1 S ve 4 O, 3 ile çarpılır; toplam 3 S ve 12 O."
+   ],
+   "strategy": "Parantezli formülde önce SO₄ grubunun kütlesini bulur, 3 ile çarpar, sonra iki Al ekleyerek toplarsın.",
+   "steps": [
+    "Al katkısı: 2 · 27 = 54.",
+    "SO₄ grubu: 32 + 4 · 16 = 96; üç grup: 3 · 96 = 288.",
+    "M = 54 + 288 = 342 g/mol."
+   ],
+   "optionReasons": [
+    "Bütün alt simgeleri unutur: 27 + 32 + 64 = 123.",
+    "Doğru: 54 + 3 · 96 = 342 g/mol.",
+    "Oksijeni unutur: 54 + 3 · 32 = 150.",
+    "Kükürdü unutur: 54 + 3 · 64 = 246.",
+    "Gruptaki O’yu 6 sayar: 54 + 3 · (32 + 96) = 438."
+   ],
+   "commonError": "Parantez dışındaki 3’ü yalnız S’ye ya da yalnız O’ya uygulamak.",
+   "check": "Atomları say: 2 Al = 54, 3 S = 96, 12 O = 192; 54 + 96 + 192 = 342."
+  }
+ },
+ {
+  "id": "f014-chem-mol-kutle-iliskisi-8",
+  "h": "181f3c9fc7fc1a",
+  "guidance": {
+   "knowledge": [
+    "Karışımdaki toplam mol, her bileşenin mol sayısının toplamıdır.",
+    "Her bileşenin molü kendi kütlesi ve kendi mol kütlesiyle bulunur: n = m / M."
+   ],
+   "strategy": "Farklı maddelerin mol kütleleri farklı olduğu için her birini ayrı mole çevirip toplarsın.",
+   "steps": [
+    "H₂O: 18 / 18 = 1 mol.",
+    "CO₂: 44 / 44 = 1 mol.",
+    "Toplam: 1 + 1 = 2 mol molekül."
+   ],
+   "optionReasons": [
+    "Toplam kütleyi toplam mol kütlesine böler: 62 / 62 = 1.",
+    "Bir moleküldeki atom sayısını (3) mol sayısı sanır.",
+    "Doğru: 1 + 1 = 2 mol molekül.",
+    "Molekül yerine atom sayar: 1 · 3 + 1 · 3 = 6.",
+    "Toplam gramı mol sanır: 18 + 44 = 62."
+   ],
+   "commonError": "Karışımın toplam kütlesini tek bir mol kütlesine bölmek.",
+   "check": "2 mol molekül 2 Nₐ tanecik eder; her madde 1 mol olduğundan 1 Nₐ + 1 Nₐ aynı sonucu verir."
+  }
+ },
+ {
+  "id": "f014-chem-mol-kutle-iliskisi-9",
+  "h": "161b3394d3e0b4",
+  "guidance": {
+   "knowledge": [
+    "Mol kütlesi M: 1 mol molekülün kütlesi (g/mol).",
+    "1 mol, Nₐ tane molekül içerir; Nₐ’nın birimi mol⁻¹’dir."
+   ],
+   "strategy": "Nₐ tane molekülün kütlesi M gram ise bir molekülün kütlesi M’nin Nₐ’ya bölümüdür; birim kontrolüyle doğrularsın.",
+   "steps": [
+    "Nₐ molekül → M gram.",
+    "1 molekül → M / Nₐ gram.",
+    "Birim: (g/mol) / (mol⁻¹) = g; sonuç gram çıkar."
+   ],
+   "optionReasons": [
+    "Bölmek yerine çarpar; birimi g · mol⁻² olur, gram değil.",
+    "Bölmeyi ters kurar; birimi 1/g olur.",
+    "Birimleri farklı iki büyüklüğü toplar; toplama anlamsızdır.",
+    "Doğru: M / Nₐ birimi gram verir.",
+    "Avogadro sabitini unutur; 1/M’nin birimi mol/g olur."
+   ],
+   "commonError": "Tek molekül kütlesi için M’yi Nₐ ile çarpmak.",
+   "check": "Su için M = 18 g/mol: 18 / (6,02 · 10²³) ≈ 3 · 10⁻²³ g; tek molekül için beklenen çok küçük bir değer."
+  }
+ },
+ {
+  "id": "f014-chem-mol-kutle-iliskisi-10",
+  "h": "124f185e4a6549",
+  "guidance": {
+   "knowledge": [
+    "Gaz hacmi sıcaklığa ve basınca bağlıdır; aynı miktar gaz farklı koşullarda farklı hacim kaplar.",
+    "22,4 L değeri, yalnız belirli koşullar (0 °C, 1 atm) ve ideal gaz kabulü için 1 mol gazın hacmidir."
+   ],
+   "strategy": "Hacim için koşulların gerektiğini bildiğin için, koşulsuz verilen bir mol bilgisinin kesin hacim verip vermediğini sorgularsın.",
+   "steps": [
+    "Yalnız miktar (1 mol) verilmiş; sıcaklık, basınç ve ideal kabul verilmemiş.",
+    "Hacim bu koşullar değişince değişir.",
+    "Verilenler tek başına kesin hacmi belirlemez."
+   ],
+   "optionReasons": [
+    "22,4 L’yi her koşulda geçerli sanır; o değer belirli koşullara aittir.",
+    "Molü litreyle karıştırır; mol bir miktar birimidir.",
+    "Mol kütlesini hacimle karıştırır; g/mol ile L farklı büyüklüklerdir.",
+    "Gaz taneciklerinin küçüklüğünü gazın hacimsiz olması sanır; gaz kabını doldurur.",
+    "Doğru: sıcaklık ve basınç olmadan hacim kesinleşmez."
+   ],
+   "commonError": "22,4 L değerini koşul belirtmeden her gaza uygulamak.",
+   "check": "Bir balonu ısıttığında içindeki gaz miktarı aynı kalırken balon şişer; miktar hacmi tek başına belirlemiyor."
+  }
+ },
+ {
+  "id": "f012-chem-katilar-viskozite-1",
+  "h": "1e6f1fc6f8ef32",
+  "guidance": {
+   "knowledge": [
+    "İyonik katı: artı yüklü ve eksi yüklü iyonların düzenli olarak dizildiği örgüdür.",
+    "NaCl formülü, Na⁺ ve Cl⁻ iyonlarının 1:1 oranını gösterir; ayrı NaCl molekülü bulunmaz."
+   ],
+   "strategy": "NaCl bir metal ve ametalden oluşan iyonik bileşiktir; iyonik katının yapıtaşlarını hatırlayarak seçersin.",
+   "steps": [
+    "Na metal, Cl ametaldir; Na elektron verip Na⁺, Cl elektron alıp Cl⁻ olur.",
+    "Bu iyonlar zıt yük çekimiyle örgü kurar.",
+    "Yapıtaşları Na⁺ ve Cl⁻ iyonlarıdır."
+   ],
+   "optionReasons": [
+    "Doğru: iyonik örgü Na⁺ ve Cl⁻ iyonlarından oluşur.",
+    "Formülü molekül sanır; iyonik katıda ayrı molekül yoktur.",
+    "Metalik bağdaki elektron denizini iyonik katıya taşır.",
+    "Klorun iyon değil nötr atom olduğunu sanır; Cl elektron almıştır.",
+    "Tuzu sulu çözeltisiyle karıştırır; katı NaCl’de su yoktur."
+   ],
+   "commonError": "İyonik bileşiklerin formülünü molekül olarak yorumlamak.",
+   "check": "Erimiş NaCl elektrik iletir; bu, yapıda yüklü iyonlar bulunduğunu destekler."
+  }
+ },
+ {
+  "id": "f012-chem-katilar-viskozite-2",
+  "h": "171b4c05e68478",
+  "guidance": {
+   "knowledge": [
+    "Moleküler katı: moleküllerin, aralarındaki zayıf çekimlerle düzenli dizildiği katıdır; buz bir moleküler katıdır.",
+    "Fiziksel değişim: maddenin kimliği korunur; yalnız hâli ya da düzeni değişir."
+   ],
+   "strategy": "Erimenin bir hâl değişimi olduğunu bildiğin için molekül içi bağlar ile moleküller arası çekimleri ayırırsın.",
+   "steps": [
+    "Buzda H₂O molekülleri düzenli bir örgüde durur.",
+    "Erimede moleküller arası düzen bozulur; moleküller daha serbest hareket eder.",
+    "O–H bağları kopmaz; H₂O kimliği korunur."
+   ],
+   "optionReasons": [
+    "Erimeyi suyun ayrışması (kimyasal değişim) sanır.",
+    "Doğru: H₂O korunur, yalnız moleküller arası düzen değişir.",
+    "Molekül içi bağlarla moleküller arası çekimleri karıştırır.",
+    "Buzu iyonik katı sanır; buz moleküler katıdır.",
+    "Hâl değişiminde elektronların yok olduğunu sanır; atomlar ve elektronlar korunur."
+   ],
+   "commonError": "Hâl değişiminde molekül içindeki kovalent bağların koptuğunu sanmak.",
+   "check": "Eriyen buz yeniden dondurulabilir ve yine su olur; madde kimliği değişmemiştir."
+  }
+ },
+ {
+  "id": "f012-chem-katilar-viskozite-3",
+  "h": "018f5bbded3044",
+  "guidance": {
+   "knowledge": [
+    "Kovalent ağ katısı: atomların birbirine kovalent bağlarla bağlanarak dev bir ağ kurduğu katıdır (elmas, grafit).",
+    "Bir genellemeyi çürütmek: ona uymayan tek bir örnek göstermektir; grafit iletken bir kovalent ağ katısıdır."
+   ],
+   "strategy": "Grafitin hem kovalent ağ yapılı hem iletken olduğunu bildiğin için, bu iki özelliği birlikte reddeden genellemeyi ararsın.",
+   "steps": [
+    "Grafit kovalent ağ yapılıdır ve hareketli elektronları sayesinde elektrik iletir.",
+    "‘Kovalent ağ yapılı bütün katılar yalıtkandır’ genellemesine göre grafit iletmemeliydi.",
+    "Grafit bu genellemeye uymayan bir örnektir; onu çürütür."
+   ],
+   "optionReasons": [
+    "Doğru bir bilgidir ama bakırla ilgilidir; grafit gözlemi metallerle ilgili bir genellemeyi sınamaz.",
+    "NaCl’nin iyonik oluşu grafitle ilgisi olmayan doğru bir bilgidir.",
+    "Doğru: grafit iletken bir kovalent ağ katısıdır, genellemeyi çürütür.",
+    "Buzun moleküler kristal olması doğrudur; grafit gözlemi bunu etkilemez.",
+    "Camın amorf olabilmesi doğrudur; grafitle çelişmez."
+   ],
+   "commonError": "İletken her katının metal olduğunu sanıp grafiti metal gibi düşünmek.",
+   "check": "Elmas da kovalent ağ yapılıdır ama yalıtkandır; demek ki kovalent ağ yapısı tek başına iletkenliği belirlemez."
+  }
+ },
+ {
+  "id": "f012-chem-katilar-viskozite-4",
+  "h": "049d24e1062b20",
+  "guidance": {
+   "knowledge": [
+    "Kristal katı: tanecikleri uzun mesafede düzenli ve tekrarlanan bir dizilim gösteren katı.",
+    "Amorf katı: taneciklerinde uzun mesafeli düzen olmayan katı; cam amorf bir katıdır."
+   ],
+   "strategy": "Dış şekil bir kalıpla da verilebileceği için, dış görünüşün iç düzen hakkında neyi kanıtlayamayacağını ararsın.",
+   "steps": [
+    "Cam kalıba dökülerek küp şeklinde yapılabilir.",
+    "Dış yüzey, hacim ve küp görünüşü doğrudan gözlemle zaten bellidir.",
+    "Taneciklerin uzun mesafede düzenli olup olmadığı dış şekilden anlaşılamaz."
+   ],
+   "optionReasons": [
+    "Bir cismin yüzeyi olduğu gözlemle kesindir; kuşku yoktur.",
+    "Gözlenen her cismin hacmi vardır; bu kesindir.",
+    "Camın kalıplanabildiği bilinir; küp şekli bunu destekler.",
+    "Doğru: dış biçim, iç uzun mesafe kristal düzenini kanıtlamaz.",
+    "Küp görünüşü zaten gözlemin kendisidir; kesindir."
+   ],
+   "commonError": "Düzgün dış şekli taneciklerin kristal düzeni sanmak.",
+   "check": "Buz kalıbında dondurulan su da küp olur; şekli kalıp verir, iç düzen ayrı bir sorudur."
+  }
+ },
+ {
+  "id": "f012-chem-katilar-viskozite-5",
+  "h": "1e6228f94805f7",
+  "guidance": {
+   "knowledge": [
+    "Ortalama akış hızı Q: birim zamanda geçen hacim; Q = hacim / süre (mL/s).",
+    "Viskozite: sıvının akmaya karşı direnci; aynı düzenekte daha hızlı geçen sıvı daha az viskozdur."
+   ],
+   "strategy": "Her sıvının akış hızını hacmi süreye bölerek bulur, sonra istenen sırayla oranlarsın.",
+   "steps": [
+    "Qₓ = 30 / 60 = 0,5 mL/s.",
+    "Qᵧ = 30 / 20 = 1,5 mL/s.",
+    "Qᵧ / Qₓ = 1,5 / 0,5 = 3."
+   ],
+   "optionReasons": [
+    "Oranı ters yazar: Qₓ / Qᵧ = 0,5 / 1,5 = 1/3.",
+    "Hacimler eşit diye hızları eşit sanır; süreler farklıdır.",
+    "Sürelerin farkını süreye böler: (60 − 20) / 20 = 2.",
+    "Yalnız X’in süresini (60 s) cevap sanır.",
+    "Doğru: 1,5 / 0,5 = 3."
+   ],
+   "commonError": "Eşit hacimde hız oranını süre oranının tersi değil, kendisi olarak almak.",
+   "check": "Eşit hacimde hız oranı süre oranının tersidir: 60 / 20 = 3."
+  }
+ },
+ {
+  "id": "f012-chem-katilar-viskozite-6",
+  "h": "195ad47aa30ecc",
+  "guidance": {
+   "knowledge": [
+    "Viskozite: akmaya karşı direnç; akıcılık bunun tersidir.",
+    "Isıtmada moleküllerin kinetik enerjisi artar; moleküller arası çekimi daha kolay yenerler."
+   ],
+   "strategy": "Isınmanın moleküler hareketi artırdığını bildiğin için akmaya karşı direncin nasıl değişeceğini düşünürsün; faz ve bileşim değişmediği verilmiş.",
+   "steps": [
+    "Sıcaklık artınca moleküller daha hızlı hareket eder.",
+    "Moleküller arası çekimleri daha kolay yenerler; akmaya direnç azalır.",
+    "Birçok sıvıda viskozite azalır, akıcılık artar."
+   ],
+   "optionReasons": [
+    "Doğru: ısınınca viskozite azalır, akıcılık artar.",
+    "Viskozite ile akıcılığın ters ilişkili olduğunu unutur.",
+    "Bileşimin korunduğu verildiği hâlde kimyasal değişim sanır.",
+    "Isınmanın hareketi azalttığını sanır; tersine artırır.",
+    "Fiziksel bir eğilimi molekül içi bağların kopması sanır."
+   ],
+   "commonError": "Viskozite ile akıcılığın aynı yönde değiştiğini sanmak.",
+   "check": "Bal ısıtılınca daha kolay akar; günlük gözlem eğilimi doğruluyor."
+  }
+ },
+ {
+  "id": "f012-chem-katilar-viskozite-7",
+  "h": "1ddf1bad3df020",
+  "guidance": {
+   "knowledge": [
+    "Elektrik iletimi için yüklü taneciklerin hareket edebilmesi gerekir.",
+    "Metallerde hareketli elektronlar, erimiş ya da çözünmüş iyonik bileşiklerde hareketli iyonlar yük taşır."
+   ],
+   "strategy": "Cu bir metal, erimiş NaCl bir iyonik sıvıdır; her birinde hangi taneciğin serbestçe hareket ettiğini sırayla eşleştirirsin.",
+   "steps": [
+    "Katı Cu: atomlar örgüde sabit, değerlik elektronları serbest; yükü elektronlar taşır.",
+    "Erimiş NaCl: Na⁺ ve Cl⁻ iyonları serbest hareket eder; yükü iyonlar taşır.",
+    "Sıra: elektronlar; iyonlar."
+   ],
+   "optionReasons": [
+    "Sırayı ters çevirir; doğru eşleşmeyi bilip soruyu dikkatsiz okur.",
+    "Doğru: Cu’da elektronlar, erimiş NaCl’de iyonlar.",
+    "Protonların çekirdekte sabit olduğunu unutur; protonlar akım taşımaz.",
+    "Nötronların yüksüz olduğunu unutur; yüksüz tanecik akım taşımaz.",
+    "Nötr moleküllerin akım taşıdığını sanar; Cu’da ve NaCl’de molekül yoktur."
+   ],
+   "commonError": "İletkenliği tek tip taneciğe bağlayıp metal ile iyonik sıvıyı aynı sanmak.",
+   "check": "Katı NaCl iletmez çünkü iyonları sabittir; eriyince iyonlar serbestleşir ve iletir. Bu, iyonların taşıyıcı olduğunu doğrular."
+  }
+ },
+ {
+  "id": "f012-chem-katilar-viskozite-8",
+  "h": "0740f332e64e0e",
+  "guidance": {
+   "knowledge": [
+    "Yoğunluk: birim hacmin kütlesi (d = m / V); bir sıvıda, sıvıdan az yoğun cisim yüzer.",
+    "Çoğu maddede katı hâl sıvı hâlden yoğundur; su bu kurala uymayan bir örnektir."
+   ],
+   "strategy": "Buzun yüzmesi buzun sudan az yoğun olduğunu gösterir; bunun hangi genellemeyi sınırladığını ararsın.",
+   "steps": [
+    "Buz suda yüzüyor: buzun yoğunluğu sıvı sudan küçük.",
+    "Demek ki su için katı hâl en yoğun hâl değildir.",
+    "Genelleme: katı hâl her maddede mutlaka en yoğun hâl değildir."
+   ],
+   "optionReasons": [
+    "Gazlarla ilgili bir sonuç çıkarır; gözlem gazlarla ilgili değildir.",
+    "Buzun başka bir madde olduğunu sanır; buz da H₂O’dur.",
+    "Doğru: su örneği, katının her maddede en yoğun hâl olmadığını gösterir.",
+    "Tek örnekten ters bir genelleme kurar; çoğu maddede katı daha yoğundur.",
+    "Yüzmeyi kristal titreşimiyle ilişkilendirir; ilgisi yoktur."
+   ],
+   "commonError": "Tek bir istisnadan bütün maddeler için ters bir kural çıkarmak.",
+   "check": "Katı mum erimiş mumda batar; bu, sudaki durumun bir istisna olduğunu gösterir."
+  }
+ },
+ {
+  "id": "f012-chem-katilar-viskozite-9",
+  "h": "0d1b6a0283669f",
+  "guidance": {
+   "knowledge": [
+    "Akış hızı viskoziteden başka sıcaklık, basınç farkı, boru çapı ve boyuna da bağlıdır.",
+    "Kontrollü deney: yalnız incelenen değişken farklı, diğer bütün koşullar aynı olan deneydir."
+   ],
+   "strategy": "Düzenekler ve sıcaklıklar farklı olduğu için deneyin kontrollü olup olmadığını sorgular, buna göre güvenli sonucu seçersin.",
+   "steps": [
+    "Düzenek (boru, basınç farkı) ve sıcaklık iki sıvıda farklı.",
+    "Akış farkı bu koşullardan da kaynaklanabilir.",
+    "Yalnız bu gözlemle viskoziteler kesin sıralanamaz."
+   ],
+   "optionReasons": [
+    "Yavaş akışı düşük viskoziteye bağlar; hem yönü ters hem de koşullar kontrolsüz.",
+    "Fiziksel bir farkı kimyasal tepkime sanır.",
+    "Sıcaklığın viskoziteyi etkilediğini unutur.",
+    "Doğru: koşullar farklı olduğu için kesin sıralama yapılamaz.",
+    "Boru çapının akışı etkilediğini unutur; dar boruda akış yavaşlar."
+   ],
+   "commonError": "Kontrolsüz bir gözlemden değişkenler hakkında kesin sonuç çıkarmak.",
+   "check": "Aynı sıvıyı dar ve geniş iki borudan akıt: hızlar farklı çıkar ama viskozite aynıdır."
+  }
+ },
+ {
+  "id": "f012-chem-katilar-viskozite-10",
+  "h": "0059e1ad9485a8",
+  "guidance": {
+   "knowledge": [
+    "Kovalent ağ katısı: bütün atomların kovalent bağlarla tek bir dev yapı oluşturduğu katı; elmas buna örnektir.",
+    "Moleküler katı: ayrı moleküllerin zayıf moleküller arası çekimlerle bir arada durduğu katı; katı CO₂ buna örnektir."
+   ],
+   "strategy": "Elmasta yalnız C atomu, katı CO₂’de ayrı CO₂ molekülleri olduğunu bilerek her birinin yapı türünü belirler ve doğru eşleşmeyi seçersin.",
+   "steps": [
+    "Elmas: her C atomu dört C atomuna kovalent bağlıdır; dev ağ oluşur.",
+    "Katı CO₂: C=O bağları molekül içindedir; moleküller birbirine zayıf çekimlerle tutunur.",
+    "Elmas kovalent ağ, katı CO₂ moleküler kristaldir."
+   ],
+   "optionReasons": [
+    "İkisinde de metal yokken iyonik yapı sanır; iyonik katı zıt yüklü iyon ister.",
+    "Elmasın ayrı C₂ moleküllerinden oluştuğunu sanır; bütün atomlar tek ağa bağlıdır.",
+    "Molekül içi C=O bağlarını bütün kristale yayılmış ağ sanır.",
+    "Elmasın sertliğini ve parlaklığını metal özelliği sanır; ikisinde de metal atomu yoktur.",
+    "Doğru: elmas kovalent ağ, katı CO₂ moleküler kristaldir."
+   ],
+   "commonError": "Molekül içinde kovalent bağ olan her katıyı kovalent ağ katısı saymak.",
+   "check": "Katı CO₂ oda koşullarında kolayca süblimleşir, elmas ise çok serttir; zayıf ve güçlü yapı farkı bu davranışlarla uyumludur."
+  }
+ },
+ {
+  "id": "f012-chem-buharlasma-buhar-basinci-1",
+  "h": "13c71a9f3e9702",
+  "guidance": {
+   "knowledge": [
+    "Buharlaşma: sıvı yüzeyindeki yeterince enerjili moleküllerin gaz hâline geçmesidir; her sıcaklıkta olabilir.",
+    "Kaynama: sıvının her yerinde kabarcıklarla gaz oluşmasıdır; buhar basıncı dış basınca eşit olunca gerçekleşir."
+   ],
+   "strategy": "Buharlaşma ile kaynamanın tanımlarını ayırarak, şıklarda buharlaşmaya ait doğru özelliği seçersin.",
+   "steps": [
+    "Buharlaşma yalnız yüzeyde olur ve kaynama sıcaklığının altında da gerçekleşir.",
+    "Buharlaşan molekül çevreden enerji alır; molekül kimliği değişmez.",
+    "Sıvı yüzeyinden kaynama sıcaklığının altında da gerçekleşebilir ifadesi doğrudur."
+   ],
+   "optionReasons": [
+    "Doğru: buharlaşma yüzeyden ve kaynama sıcaklığının altında da olur.",
+    "Buharlaşmayı kaynamayla karıştırır; kabarcık kaynamanın özelliğidir.",
+    "Suyun kaynama sıcaklığını buharlaşmanın tek sıcaklığı sanır.",
+    "Hâl değişimini suyun ayrışması (kimyasal değişim) sanır.",
+    "Buharlaşmanın ısı aldığını unutur; terlemede ciltten ısı alınarak serinlenir."
+   ],
+   "commonError": "Buharlaşmanın yalnız kaynama sıcaklığında olduğunu sanmak.",
+   "check": "Islak çamaşır oda sıcaklığında kurur; su 100 °C’ye ulaşmadan buharlaşmıştır."
+  }
+ },
+ {
+  "id": "f012-chem-buharlasma-buhar-basinci-2",
+  "h": "15bcf9bc5feefd",
+  "guidance": {
+   "knowledge": [
+    "Dinamik denge: ileri ve geri olayların aynı hızla sürdüğü, bu yüzden miktarların sabit göründüğü durumdur.",
+    "Kapalı kapta sıvı-buhar dengesinde buharlaşma ve yoğuşma birlikte sürer."
+   ],
+   "strategy": "‘Dinamik’ kelimesinin hareketin sürdüğünü söylediğini bilerek, iki yönlü olayların hızları arasındaki ilişkiyi ararsın.",
+   "steps": [
+    "Kapalı kapta sıvıdan buhara ve buhardan sıvıya geçiş sürekli olur.",
+    "Dengede iki hız eşitlenir; sıvı ve buhar miktarı sabit kalır.",
+    "Denge, buharlaşma ve yoğuşma hızlarının eşit olmasıdır."
+   ],
+   "optionReasons": [
+    "Dengeyi olayların durması sanır; dinamik dengede geçişler sürer.",
+    "Doğru: buharlaşma ve yoğuşma hızları eşittir.",
+    "Miktarların sabitliğini moleküllerin hareketsizliği sanır.",
+    "Dengede sıvının bitmesi gerektiğini sanır; sıvı ve buhar birlikte bulunur.",
+    "Basıncın sürekli arttığını sanır; dengede buhar basıncı sabittir."
+   ],
+   "commonError": "Dengede moleküler hareketin durduğunu sanmak.",
+   "check": "Hızlar eşit değilse sıvı miktarı değişirdi; sabit miktar ancak eşit hızlarla açıklanır."
+  }
+ },
+ {
+  "id": "f012-chem-buharlasma-buhar-basinci-3",
+  "h": "05dd7e43acfa55",
+  "guidance": {
+   "knowledge": [
+    "Denge buhar basıncı P*: kapalı kapta sıvı ve buharı dengedeyken buharın yaptığı basınçtır.",
+    "P* yalnız sıvının cinsine ve sıcaklığa bağlıdır; sıvının miktarına bağlı değildir."
+   ],
+   "strategy": "İki kapta aynı saf sıvı, aynı sıcaklık ve dengede sıvı var; P*’nin miktara bağlı olmadığını kullanırsın.",
+   "steps": [
+    "İki kapta da saf su ve 25 °C; sıvı cinsi ve sıcaklık aynı.",
+    "İkisinde de sıvı kaldığı için gerçek denge vardır.",
+    "P* miktara bağlı olmadığından P*A = P*B."
+   ],
+   "optionReasons": [
+    "Su miktarı üç kat diye basıncı da üç kat sanır.",
+    "Miktarla ters orantı kurar; P* miktara bağlı değildir.",
+    "Doğru: aynı sıvı, aynı sıcaklıkta P* eşittir.",
+    "Çok suyun basınç yapmadığını sanır; sıvı varken buhar basıncı vardır.",
+    "Çok suyun daha fazla basınç yapacağını kesin sanır; miktar etkisizdir."
+   ],
+   "commonError": "Denge buhar basıncını sıvı miktarına bağlamak.",
+   "check": "Bir bardak ve bir şişe su aynı odada kapatılırsa her ikisinde de 25 °C’deki aynı P* oluşur; tablo değerleri miktar sormaz."
+  }
+ },
+ {
+  "id": "f012-chem-buharlasma-buhar-basinci-4",
+  "h": "07b0d11813f393",
+  "guidance": {
+   "knowledge": [
+    "Buharlaşma hızı: birim zamanda buhara geçen molekül miktarı; yüzey alanı, sıcaklık ve hava akımına bağlıdır.",
+    "Denge buhar basıncı ise kapalı kapta yüzey alanından bağımsızdır."
+   ],
+   "strategy": "Açık kapta ilk buharlaşma hızı soruluyor; yüzeyden kaçan molekül sayısının yüzey alanıyla ilişkisini düşünürsün.",
+   "steps": [
+    "Buharlaşma yüzeyden olur; yüzey büyüyünce aynı anda kaçabilecek molekül sayısı artar.",
+    "Sıcaklık ve sıvı aynı, diğer koşullar aynı.",
+    "İlk buharlaşma hızı artabilir."
+   ],
+   "optionReasons": [
+    "Yüzey büyümesinin buharlaşmayı durdurduğunu sanır; tersine artırır.",
+    "Fiziksel bir değişikliğin madde kimliğini değiştirdiğini sanır.",
+    "Hız etkisini kapalı kaptaki denge basıncıyla karıştırır; P* yüzeye bağlı değildir.",
+    "Doğru: diğer koşullar aynıysa geniş yüzey buharlaşma hızını artırabilir.",
+    "Geniş yüzeyin geçişi engellediğini sanır; tersine kolaylaştırır."
+   ],
+   "commonError": "Buharlaşma hızını denge buhar basıncıyla karıştırmak.",
+   "check": "Tepsiye dökülen su, bardaktaki eşit miktar sudan daha çabuk kurur."
+  }
+ },
+ {
+  "id": "f012-chem-buharlasma-buhar-basinci-5",
+  "h": "0619ef69e9b92c",
+  "guidance": {
+   "knowledge": [
+    "Buhar basıncı mmHg (milimetre cıva) birimiyle verilir.",
+    "Basınç artışı: son değerden ilk değerin çıkarılmasıdır."
+   ],
+   "strategy": "İki basınç değeri verildiği için artışı doğrudan çıkarmayla bulursun; sıcaklık değerleri bu hesaba girmez.",
+   "steps": [
+    "Son basınç 92,5 mmHg, ilk basınç 23,8 mmHg.",
+    "Artış: 92,5 − 23,8 = 68,7 mmHg."
+   ],
+   "optionReasons": [
+    "İlk basıncı artış sanır.",
+    "Sıcaklık farkını basınç farkı sanır: 50 − 25 = 25.",
+    "Sıcaklık iki katı diye son basıncı ikiye böler: 92,5 / 2 = 46,25.",
+    "Çıkarmak yerine toplar: 92,5 + 23,8 = 116,3.",
+    "Doğru: 92,5 − 23,8 = 68,7 mmHg."
+   ],
+   "commonError": "Celsius sıcaklığının iki katına çıkmasını basıncın orantılı değişmesi sanmak.",
+   "check": "23,8 + 68,7 = 92,5; artış ilk değere eklenince son değeri verir."
+  }
+ },
+ {
+  "id": "f012-chem-buharlasma-buhar-basinci-6",
+  "h": "12c5d438ae05fd",
+  "guidance": {
+   "knowledge": [
+    "Doygun buhar: sıvısıyla dengede olan buhar; basıncı P*’dir.",
+    "Kapta sıvı kalmazsa buhar dengeye ulaşmamış olabilir; basıncı P*’nin altında kalabilir."
+   ],
+   "strategy": "P* kuralının sıvı ve buharın birlikte bulunmasını gerektirdiğini bildiğin için, sıvının tamamen bittiği durumu buna göre yorumlarsın.",
+   "steps": [
+    "Su tamamen buharlaşmış; kapta sıvı yok.",
+    "Sıvı olmadığı için buharlaşma-yoğuşma dengesi kurulamaz.",
+    "Buhar doygun değildir; ölçülen basınç P*’den küçük kalabilir."
+   ],
+   "optionReasons": [
+    "Doğru: sıvı kalmadığı için doygun denge koşulu sağlanmamıştır.",
+    "Kapalı olmayı denge için yeterli sanır; sıvının da bulunması gerekir.",
+    "Hâl değişimini suyun ayrışması sanır.",
+    "Kabın sızdırmaz verildiğini görmez; düşük basıncı kaçağa bağlar.",
+    "Düşük basıncı sıcaklık kavramının bozulması sanır; ilgisi yoktur."
+   ],
+   "commonError": "Kapalı her kapta buhar basıncının P* olacağını sanmak.",
+   "check": "Biraz daha su eklenirse ve sıvı kalırsa basınç P*’ye çıkar ve orada sabitlenir."
+  }
+ },
+ {
+  "id": "f012-chem-buharlasma-buhar-basinci-7",
+  "h": "1e978dc84182f0",
+  "guidance": {
+   "knowledge": [
+    "Kısmi basınç: gaz karışımında her gazın tek başına yaptığı basınç katkısı.",
+    "Toplam basınç: karışımdaki bütün gazların kısmi basınçlarının toplamıdır."
+   ],
+   "strategy": "Kapta hava da bulunduğu için toplam basıncı oluşturan katkıları ayrı ayrı düşünürsün.",
+   "steps": [
+    "Kapta su buharı ve hava birlikte var.",
+    "Toplam basınç = su buharının kısmi basıncı + havanın kısmi basıncı.",
+    "Bu yüzden toplam basınç doğrudan suyun buhar basıncı sayılamaz."
+   ],
+   "optionReasons": [
+    "Su buharının basınç yapmadığını sanır; buhar da bir gazdır.",
+    "Doğru: havanın kısmi basınç katkısı toplam basınca eklenir.",
+    "Havanın gaz olduğunu unutur.",
+    "Basıncı kütleyle karıştırır.",
+    "Gazları iyonik sanır; hava ve su buharı moleküllerden oluşur."
+   ],
+   "commonError": "Ölçülen toplam basıncı tek bir gazın basıncı sanmak.",
+   "check": "Kaptaki havayı boşaltıp aynı sıcaklıkta tekrar ölçsen toplam basınç düşer ama su buharının kısmi basıncı aynı kalır."
+  }
+ },
+ {
+  "id": "f012-chem-buharlasma-buhar-basinci-8",
+  "h": "16782e9f76336b",
+  "guidance": {
+   "knowledge": [
+    "Buharlaşma hızı; yüzey alanı, sıcaklık, nem ve hava akımına bağlıdır.",
+    "Geniş yüzey hızı artırır; düşük sıcaklık hızı azaltır."
+   ],
+   "strategy": "İki kapta etkenler ters yönde ve büyüklükleri bilinmiyor; bu durumda kesin karşılaştırma yapılıp yapılamayacağını sorgularsın.",
+   "steps": [
+    "A: geniş yüzey hızı artırır, soğukluk azaltır.",
+    "B: dar yüzey hızı azaltır, sıcaklık artırır.",
+    "Etkilerin büyüklüğü, nem ve hava akımı bilinmediği için kesin sıralama yapılamaz."
+   ],
+   "optionReasons": [
+    "Yalnız yüzey alanına bakar; düşük sıcaklığın etkisini görmez.",
+    "Yalnız sıcaklığa bakar; dar yüzeyin etkisini görmez.",
+    "Doğru: ters etkiler ve bilinmeyen koşullar varken kesin sıralama yapılamaz.",
+    "Ters etkilerin birbirini tam götürdüğünü varsayar; bunu gösteren veri yok.",
+    "Soğuk ya da dar kapta buharlaşmanın olmadığını sanır; her sıcaklıkta olur."
+   ],
+   "commonError": "Ters yönde çalışan birden fazla etkenden yalnız birine bakarak karar vermek.",
+   "check": "Sayısal örnek uydurursan bazen A, bazen B öne geçer; sonucu verilerin seçimi belirler, yani kesinlik yok."
+  }
+ },
+ {
+  "id": "f012-chem-buharlasma-buhar-basinci-9",
+  "h": "159f44ed23ba81",
+  "guidance": {
+   "knowledge": [
+    "Birim çevirme: 1 atm = 760 mmHg eşitliği bir dönüşüm oranı verir.",
+    "mmHg’den atm’ye geçerken mmHg değerini 760’a bölersin."
+   ],
+   "strategy": "Küçük birimden büyük birime geçildiği için sayı küçülmeli; bu yüzden 760’a bölersin.",
+   "steps": [
+    "380 mmHg · (1 atm / 760 mmHg).",
+    "mmHg birimleri sadeleşir: 380 / 760 = 0,5 atm."
+   ],
+   "optionReasons": [
+    "Bölmeyi ters yapar: 760 / 380 = 2.",
+    "10’a böler; dönüşüm oranını kullanmaz.",
+    "1 atm’nin mmHg değerini cevap sanır.",
+    "Doğru: 380 / 760 = 0,5 atm.",
+    "Bölmek yerine çarpar: 380 · 760 = 288 800."
+   ],
+   "commonError": "Birim çevirirken bölme yerine çarpma yapmak.",
+   "check": "0,5 atm · 760 mmHg/atm = 380 mmHg; başlangıç değerine dönülüyor."
+  }
+ },
+ {
+  "id": "f012-chem-buharlasma-buhar-basinci-10",
+  "h": "184d6c2b91a747",
+  "guidance": {
+   "knowledge": [
+    "Uçucu olmayan çözünen: kendisi buharlaşmayan, buhar basıncına katkı yapmayan madde (tuz, şeker gibi).",
+    "Çözücü buhar basıncı: çözeltinin üstündeki çözücü buharının basıncıdır."
+   ],
+   "strategy": "Çözünen tanecikler yüzeyin bir kısmını işgal edip çözücünün kaçma eğilimini düşürdüğü için çözücü buhar basıncının yönünü düşünürsün.",
+   "steps": [
+    "Saf çözücüde yüzeydeki bütün tanecikler çözücüdür.",
+    "Uçucu olmayan çözünen eklenince yüzeydeki çözücü payı azalır, buhara geçiş azalır.",
+    "Aynı sıcaklıkta çözücünün buhar basıncı azalır."
+   ],
+   "optionReasons": [
+    "Basınç için sınırsız bir artış uydurur; çözünen eklemek basıncı düşürür.",
+    "Çözünen eklemeyi basıncı katlamak sanır; yön ters.",
+    "Basıncın sıfırlandığını sanır; çözücü yine buharlaşır, yalnız daha az.",
+    "Fiziksel çözünmeyi kimyasal dönüşüm sanır.",
+    "Doğru: uçucu olmayan çözünen çözücü buhar basıncını azaltır."
+   ],
+   "commonError": "Çözünen eklenince buhar basıncının arttığını ya da sıfırlandığını sanmak.",
+   "check": "Tuzlu su saf sudan daha yüksek sıcaklıkta kaynar; buhar basıncının düşmesiyle uyumlu."
+  }
+ },
+ {
+  "id": "f012-chem-kaynama-bagil-nem-1",
+  "h": "1c6ac99bca4a2a",
+  "guidance": {
+   "knowledge": [
+    "Buhar basıncı (P*): bir sıvının belli sıcaklıkta kendi buharının yaptığı basınç; sıcaklık arttıkça büyür. P*(50 °C) = 92,5 mmHg, suyun 50 °C’deki buhar basıncı 92,5 mmHg demektir.",
+    "Kaynama: sıvının buhar basıncı dış basınca eşit olduğunda başlar; bu eşitliğin sağlandığı sıcaklığa kaynama sıcaklığı (Tk) denir."
+   ],
+   "strategy": "Kaynama koşulu P*(Tk) = Pdış olduğu için verilen dış basıncı, tablodaki aynı buhar basıncı değeriyle eşleştirirsin.",
+   "steps": [
+    "Dış basınç: Pdış = 92,5 mmHg.",
+    "Kaynama için P*(Tk) = 92,5 mmHg olmalı.",
+    "Verilen bilgiye göre su bu buhar basıncına 50 °C’de ulaşır; kaynama eşiği 50 °C olur."
+   ],
+   "optionReasons": [
+    "Doğru: P*(50 °C) = 92,5 mmHg dış basınca eşittir; kaynama 50 °C’de başlar.",
+    "50 °C’yi gereksiz yere ikiye böler; tabloda 25 °C için bir eşleşme verilmemiştir.",
+    "Basınç düşükken kaynamanın daha yüksek sıcaklıkta olacağını sanır; oysa düşük dış basınç kaynama sıcaklığını düşürür.",
+    "Basınç değerini (92,5 mmHg) sıcaklık birimiyle yazar; birim karışıklığıdır.",
+    "Suyun her koşulda 100 °C’de kaynadığını ezberler; 100 °C yalnız yaklaşık 1 atm dış basınçta geçerlidir."
+   ],
+   "commonError": "Suyun kaynama noktasını dış basınçtan bağımsız olarak hep 100 °C sanmak.",
+   "check": "760 mmHg’de su 100 °C’de kaynar; 92,5 mmHg çok daha düşük bir basınç olduğundan kaynama sıcaklığının 100 °C’nin epey altında, 50 °C gibi bir değerde çıkması beklenir."
+  }
+ },
+ {
+  "id": "f012-chem-kaynama-bagil-nem-2",
+  "h": "15cb1b63cfa079",
+  "guidance": {
+   "knowledge": [
+    "Kaynama sıcaklığı: sıvının buhar basıncının (P*) dış basınca eşit olduğu sıcaklık.",
+    "P*(T) sıcaklıkla artar: sıvı ısındıkça daha çok tanecik buhar fazına geçer, buhar basıncı büyür."
+   ],
+   "strategy": "Kaynama eşitliğini P*(Tk) = Pdış olarak yaz ve Pdış küçülünce bu eşitliğin hangi sıcaklıkta sağlanacağını P*’ın sıcaklıkla artmasından çıkar.",
+   "steps": [
+    "Kaynama koşulu: P*(Tk) = Pdış.",
+    "Pdış azalınca sıvının ulaşması gereken buhar basıncı da azalır.",
+    "P* sıcaklıkla arttığı için daha küçük bir P* değerine daha düşük sıcaklıkta ulaşılır; kaynama sıcaklığı azalır."
+   ],
+   "optionReasons": [
+    "Basıncın her şeyi artırdığını düşünüp yönü ters kurar; kaynama sıcaklığını artıran, dış basıncın artmasıdır.",
+    "Doğru: düşük dış basınca eşit buhar basıncı daha düşük sıcaklıkta sağlanır.",
+    "Kaynama noktasını maddenin değişmez kimliği sanır; kaynama noktası dış basınca bağlıdır.",
+    "Kaynama ile donmayı karıştırır; 0 °C suyun 1 atm’deki donma noktasıdır, buradaki eğilimle ilgisi yoktur.",
+    "Hâl değişimini kimyasal değişim sanır; kaynamada moleküller aynı kalır, formül değişmez."
+   ],
+   "commonError": "Basınç azalınca kaynama sıcaklığının da artacağını sanmak; ilişki aynı yöndedir, basınç düşerse kaynama sıcaklığı da düşer.",
+   "check": "Yüksek dağlarda hava basıncı düşüktür ve su 100 °C’nin altında kaynar; bu günlük gözlem azalma yönünü doğrular."
+  }
+ },
+ {
+  "id": "f012-chem-kaynama-bagil-nem-3",
+  "h": "196d43150a33cc",
+  "guidance": {
+   "knowledge": [
+    "Kaynama anında sıvının buhar basıncı (P*) dış basınca eşittir: P*(Tk) = Pdış.",
+    "Her saf sıvının buhar basıncı farklı sıcaklıklarda bu değere ulaşır; bu yüzden kaynama sıcaklıkları maddeye göre değişir."
+   ],
+   "strategy": "İki sıvı için kaynama eşitliğini ayrı ayrı yazıp ortak olan büyüklüğü bulursun; ortak olan yalnız dış basınçtır.",
+   "steps": [
+    "Birinci sıvı: P*₁(Tk₁) = Pdış.",
+    "İkinci sıvı: P*₂(Tk₂) = Pdış.",
+    "Sağ taraflar aynı olduğundan kaynama anındaki buhar basınçları eşittir: P*₁ = P*₂ = Pdış. Tk₁ ile Tk₂ ise farklı olabilir."
+   ],
+   "optionReasons": [
+    "Basınç eşitliğini sıcaklık eşitliği sanır; örneğin su ile etil alkol aynı basınçta farklı sıcaklıklarda kaynar.",
+    "Aynı davranışın aynı madde demek olduğunu düşünür; kaynama eşitliği formül hakkında bilgi vermez.",
+    "Doğru: ikisi de kaynarken buhar basıncı aynı dış basınca eşittir.",
+    "Kaynamanın miktara bağlı olduğunu sanır; kaynama koşulu kütleden bağımsızdır.",
+    "Kaynamada buharın yok olduğunu düşünür; tersine P* en büyük değerine, dış basınca ulaşmıştır."
+   ],
+   "commonError": "Aynı dış basınçta kaynayan sıvıların aynı sıcaklıkta kaynadığını sanmak.",
+   "check": "1 atm’de su 100 °C’de, etil alkol yaklaşık 78 °C’de kaynar; sıcaklıklar farklıdır ama ikisinin de kaynama anındaki buhar basıncı 1 atm’dir."
+  }
+ },
+ {
+  "id": "f012-chem-kaynama-bagil-nem-4",
+  "h": "09ac471243ac9e",
+  "guidance": {
+   "knowledge": [
+    "p: havadaki su buharının kısmi basıncı, yani havada gerçekten bulunan buharın yaptığı basınç.",
+    "P*: aynı sıcaklıkta suyun doygun buhar basıncı, havanın taşıyabileceği en çok buharın basıncı. Bağıl nem = 100 · p / P* (yüzde olarak)."
+   ],
+   "strategy": "Gerçek buhar basıncı ile doygun buhar basıncı verildiği için bağıl nem formülü doğrudan uygulanır; önce oranı, sonra 100 ile çarpımı yap.",
+   "steps": [
+    "Oran: p / P* = 11,9 / 23,8.",
+    "11,9 sayısı 23,8’in tam yarısıdır: oran 0,5.",
+    "Yüzdeye çevir: 100 · 0,5 = %50."
+   ],
+   "optionReasons": [
+    "Oranı (0,5) bulur ama 100 ile çarpmadan yüzde işareti koyar.",
+    "Kesri ters kurar: 23,8 / 11,9 = 2 ve bunu yüzde sanır.",
+    "Havanın doymuş olduğunu varsayar; bu ancak p = P* olsaydı geçerli olurdu.",
+    "Doğru: 100 · 11,9 / 23,8 = %50.",
+    "Kesri ters kurup 100 ile çarpar: 100 · 23,8 / 11,9 = %200; bağıl nem %100’ü aşamaz."
+   ],
+   "commonError": "Kesri ters kurmak, yani doygun buhar basıncını paya yazmak.",
+   "check": "%50 bağıl nemde gerçek basınç doygun basıncın yarısı olmalı: 23,8 / 2 = 11,9 mmHg; verilenle uyuşuyor."
+  }
+ },
+ {
+  "id": "f012-chem-kaynama-bagil-nem-5",
+  "h": "1dcdccc1227e96",
+  "guidance": {
+   "knowledge": [
+    "Bağıl nem = 100 · p / P*. Burada p havadaki su buharının gerçek kısmi basıncı, P* aynı sıcaklıktaki doygun buhar basıncıdır.",
+    "Yüzdeyi ondalığa çevirmek için 100’e bölünür: %75 = 0,75."
+   ],
+   "strategy": "Bağıl nem ve P* bilindiği için formülü p için çözersin: p = (bağıl nem / 100) · P*.",
+   "steps": [
+    "Formülü düzenle: p = (75 / 100) · P* = 0,75 · P*.",
+    "Yerine yaz: p = 0,75 · 20.",
+    "Hesapla: 0,75 · 20 = 15 mmHg."
+   ],
+   "optionReasons": [
+    "Eksik kalan %25’i hesaplar: 0,25 · 20 = 5; bu, doygunluğa kalan farktır.",
+    "Havanın doygun olduğunu varsayıp P*’ı cevap verir.",
+    "Çarpmak yerine böler: 20 / 0,75 ≈ 26,67; p doygun basıncı aşamaz.",
+    "Yüzde değerini doğrudan basınç sanar; 75 bir oran, mmHg değildir.",
+    "Doğru: p = 0,75 · 20 = 15 mmHg."
+   ],
+   "commonError": "Formülü ters çevirirken çarpma yerine bölme yapmak.",
+   "check": "Bulduğun değeri formüle geri koy: 100 · 15 / 20 = %75; verilen bağıl nemle aynı."
+  }
+ },
+ {
+  "id": "f012-chem-kaynama-bagil-nem-6",
+  "h": "08aa0405c229b2",
+  "guidance": {
+   "knowledge": [
+    "Bağıl nem = 100 · p / P*. p havadaki gerçek su buharı basıncı, P* o sıcaklıktaki doygun buhar basıncıdır.",
+    "P* sıcaklıkla artar: sıcak hava doymadan önce daha çok buhar taşıyabilir."
+   ],
+   "strategy": "Kesirde pay sabit, payda büyüyor; kesrin değerinin nasıl değiştiğine bakman yeterli.",
+   "steps": [
+    "Isıtmada havaya su eklenmediği için p sabit kalır.",
+    "Sıcaklık artınca payda olan P* büyür.",
+    "Sabit pay daha büyük paydaya bölününce oran küçülür; bağıl nem azalır."
+   ],
+   "optionReasons": [
+    "Doğru: p sabitken P* büyüyünce 100 · p / P* küçülür.",
+    "Isınmanın havayı nemlendirdiğini sanır; havaya yeni buhar eklenmeden bağıl nem artmaz.",
+    "Sıcak havanın doymuş olduğunu düşünür; doygunluk için p’nin P*’a eşit olması gerekir.",
+    "Isıtmanın madde ürettiğini sanır; ısıtma molekül sayısını değiştirmez.",
+    "Kısmi basıncı toplam basınçla karıştırır; bağıl nem bir orandır, basınç değildir."
+   ],
+   "commonError": "Hava ısınınca neminin de arttığını sanmak; yalnız su eklenirse p artar.",
+   "check": "Sayı dene: p = 10 mmHg, P* 20’den 40 mmHg’ye çıksın. Bağıl nem %50’den %25’e düşer."
+  }
+ },
+ {
+  "id": "f012-chem-kaynama-bagil-nem-7",
+  "h": "0c2a5a59164fc8",
+  "guidance": {
+   "knowledge": [
+    "Kaynama noktası: dış basınç ve sıvının bileşimiyle belirlenen sıcaklık; buhar basıncı dış basınca eşit olduğunda sıvı kaynar.",
+    "Güç: birim zamanda aktarılan enerji (1 W = 1 J/s). Isıtıcının gücü enerjinin ne kadar hızlı verildiğini gösterir, maddenin özelliğini değiştirmez."
+   ],
+   "strategy": "Kaynama noktasını belirleyen etkenlerle (basınç, bileşim) ısıtıcının etkilediği büyüklüğü (aktarım hızı) ayırırsın.",
+   "steps": [
+    "Dış basınç ve bileşim sabit olduğundan kaynama noktası değişmez.",
+    "Güçlü ısıtıcı aynı enerjiyi daha kısa sürede verir; kaynama noktasına daha çabuk ulaşılır.",
+    "Kaynama sırasında da enerji aktarımı sürer ve hâl değişimine harcanır; sonuç: süre kısalabilir, kaynama noktası aynı kalır."
+   ],
+   "optionReasons": [
+    "Güç ile kaynama sıcaklığını orantılı sanır; ısıtıcı ne kadar güçlü olursa olsun eşik basınç ve bileşimle belirlenir.",
+    "Doğru: güç yalnız enerji aktarım hızını değiştirir; eşik sıcaklık aynıdır, ulaşma süresi kısalır.",
+    "Hızlı buharlaşmayı anında yok olma sanır; buharlaşma için zaman ve enerji gerekir.",
+    "Sıcaklık sabit kaldığı için enerji gitmediğini sanır; enerji hâl değişimine harcanır.",
+    "Kaynama koşulunun ısıtıcıya bağlı olduğunu düşünür; P* = Pdış eşitliği yine geçerlidir."
+   ],
+   "commonError": "Daha güçlü ısıtıcının sıvıyı daha yüksek sıcaklıkta kaynattığını sanmak.",
+   "check": "Ocakta altı kısık ya da tam açık da olsa su 1 atm’de 100 °C’de kaynar; yalnız kaynamaya başlama süresi değişir."
+  }
+ },
+ {
+  "id": "f012-chem-kaynama-bagil-nem-8",
+  "h": "1538818d28c7a1",
+  "guidance": {
+   "knowledge": [
+    "Uçucu olmayan çözünen: çözeltiden buharlaşmayan madde. Çözücüde çözünen tanecik sayısı arttıkça kaynama noktası yükselir (kaynama noktası yükselmesi).",
+    "Tam ayrışma: iyonik madde çözünürken iyonlarına tamamen ayrılır. NaCl → Na⁺ + Cl⁻ (2 tanecik), MgCl₂ → Mg²⁺ + 2Cl⁻ (3 tanecik); şeker ayrışmaz (1 tanecik)."
+   ],
+   "strategy": "Su miktarı ve çözünen mol sayısı eşit olduğu için yalnız bir formül biriminin verdiği tanecik sayısını karşılaştırırsın; tanecik çok olan daha yüksek sıcaklıkta kaynar.",
+   "steps": [
+    "Şeker: moleküler çözünür, 1 mol şeker 1 mol tanecik verir.",
+    "NaCl: Na⁺ ve Cl⁻ olarak 2 mol tanecik; MgCl₂: Mg²⁺ ve 2 Cl⁻ olarak 3 mol tanecik verir.",
+    "Tanecik sırası 3 > 2 > 1 olduğundan kaynamaya başlama sıcaklığı: MgCl₂ > NaCl > şeker."
+   ],
+   "optionReasons": [
+    "Sırayı ters kurar; tanecik arttıkça kaynama noktasının düştüğünü sanır.",
+    "NaCl’yi en etkili sanıp şekeri ortaya koyar; şeker ayrışmadığı için en az tanecik verir.",
+    "Doğru: tanecik sayıları 3, 2, 1 olduğundan MgCl₂ > NaCl > şeker.",
+    "Uçucu olmayan çözünenin kaynama noktasını etkilemediğini sanır; her çözelti saf sudan yüksek sıcaklıkta kaynar.",
+    "MgCl₂’yi doğru yerleştirir ama NaCl’nin ayrışmasını unutup onu şekerle eşit ya da daha az sayar."
+   ],
+   "commonError": "Eşit mol çözüneni eşit etki sanıp iyonik maddelerin ayrışarak daha çok tanecik verdiğini unutmak.",
+   "check": "1 mol MgCl₂ çözündüğünde 1 mol Mg²⁺ ve 2 mol Cl⁻ olur: 3 mol tanecik. NaCl’nin 2 mol, şekerin 1 mol vermesiyle sıra yine aynı çıkar."
+  }
+ },
+ {
+  "id": "f012-chem-kaynama-bagil-nem-9",
+  "h": "0c480e62bdeedb",
+  "guidance": {
+   "knowledge": [
+    "Güç (P): birim zamanda aktarılan enerji. 1 W = 1 J/s; 300 W, her saniye 300 J aktarılması demektir.",
+    "Kayıpsız model: verilen enerjinin tamamının buharlaşmaya gittiği, çevreye ısı kaçmadığı varsayımı. Süre t = Q / P ile bulunur."
+   ],
+   "strategy": "Toplam enerji ve saniyedeki enerji bilindiği için toplamı saniyedeki miktara bölersin; birimler J / (J/s) = s verir.",
+   "steps": [
+    "Formül: t = Q / P.",
+    "Yerine yaz: t = 30000 J / 300 J/s.",
+    "Böl: 30000 / 300 = 100 s."
+   ],
+   "optionReasons": [
+    "Bölmede bir sıfırı fazla atar: 30000 / 3000 = 10.",
+    "30000 J’yi 30 kJ yazıp kilo önekini unutarak 30 sayısını cevap verir.",
+    "Güç değerini süre sanır; 300, saniyede verilen enerjidir.",
+    "Doğru: 30000 / 300 = 100 s.",
+    "Bölmek yerine çarpar: 30 kJ · 300 W gibi bir çarpımdan 9000 sayısına varır."
+   ],
+   "commonError": "Enerjiyi güçle bölmek yerine çarpmak ya da birim öneklerini karıştırmak.",
+   "check": "100 s boyunca saniyede 300 J verilirse toplam 100 · 300 = 30000 J eder; verilen enerjiyle aynı."
+  }
+ },
+ {
+  "id": "f012-chem-kaynama-bagil-nem-10",
+  "h": "0c7cef3a0bbfb4",
+  "guidance": {
+   "knowledge": [
+    "Yoğuşma: gaz hâlindeki maddenin sıvıya dönüşmesi; bu sırada madde çevreye ısı verir.",
+    "Süblimleşme: katının sıvı olmadan doğrudan gaza geçmesi. Elektroliz ve kimyasal ayrışma ise maddenin kimliğini değiştiren kimyasal olaylardır."
+   ],
+   "strategy": "Başlangıç ve bitiş hâllerini yaz: su buharı (gaz) damlacığa (sıvı) dönüşüyor. Bu yönün adını bulursun.",
+   "steps": [
+    "Başlangıç: havadaki su buharı, yani gaz.",
+    "Bitiş: camdaki damlacıklar, yani sıvı. Su molekülü H₂O olarak kalır; olay fiziksel bir hâl değişimidir.",
+    "Gazdan sıvıya geçişin adı yoğuşmadır."
+   ],
+   "optionReasons": [
+    "Katıdan gaza geçişi ifade eder; burada başlangıçta katı yoktur.",
+    "Elektrik akımıyla bileşiği ayırmaktır; camda akım yoktur, su kimliğini korur.",
+    "Maddenin yeni maddelere dönüşmesidir; damlacıklar yine sudur.",
+    "Süblimleşmenin tanımını okur; camda katı yoktur, başlangıç gaz, bitiş sıvıdır.",
+    "Doğru: su buharı soğuk camda ısı vererek sıvı damlacıklara dönüşür."
+   ],
+   "commonError": "Yoğuşmayı buharlaşma ya da süblimleşme ile karıştırıp geçişin yönünü ters okumak.",
+   "check": "Damlacık sonradan ısıtılırsa yeniden buhara döner; olay geri dönüşen bir hâl değişimidir ve gazdan sıvı yönü yoğuşmadır."
+  }
+ },
+ {
+  "id": "f012-chem-gazlar-hal-degisim-plazma-1",
+  "h": "1a11353d5b4fc6",
+  "guidance": {
+   "knowledge": [
+    "Kelvin (K): mutlak sıcaklık ölçeği; 0 K en düşük olası sıcaklıktır ve bu ölçekte eksi değer yoktur.",
+    "Celsius’tan Kelvin’e geçiş: T(K) = t(°C) + 273 (tam değer 273,15; soruda 273 yaklaşımı isteniyor)."
+   ],
+   "strategy": "İki ölçeğin aralıkları aynı büyüklükte, yalnız sıfır noktaları farklı; bu yüzden çarpma değil, 273 ekleme yapılır.",
+   "steps": [
+    "Dönüşüm kuralı: T = t + 273.",
+    "Yerine yaz: T = 27 + 273.",
+    "Topla: T = 300 K."
+   ],
+   "optionReasons": [
+    "Doğru: 27 + 273 = 300 K.",
+    "Dönüşümü hiç yapmaz, Celsius sayısını Kelvin birimiyle yazar.",
+    "Eklemek yerine çıkarır: 273 − 27 = 246.",
+    "Yalnız 0 °C’nin karşılığını yazar, 27’yi eklemeyi unutur.",
+    "Toplamaya bir kez daha 27 ekler: 300 + 27 = 327; dönüşüm tek bir toplamadır."
+   ],
+   "commonError": "273’ü eklemek yerine çıkarmak ya da gaz hesabında Celsius değerini doğrudan kullanmak.",
+   "check": "Ters dönüşüm yap: 300 − 273 = 27 °C; başlangıç değeri geri geliyor."
+  }
+ },
+ {
+  "id": "f012-chem-gazlar-hal-degisim-plazma-2",
+  "h": "1bbf46531f537b",
+  "guidance": {
+   "knowledge": [
+    "İdeal gaz: tanecikleri arasındaki çekimin ve kendi hacimlerinin ihmal edildiği model gaz.",
+    "Boyle yasası: sıcaklık (T) ve mol sayısı (n) sabitken basınç ile hacim ters orantılıdır: P₁ · V₁ = P₂ · V₂."
+   ],
+   "strategy": "T ve n sabit, değişen yalnız P ve V olduğu için Boyle yasasını kullanır, bilinmeyen P₂’yi yalnız bırakırsın.",
+   "steps": [
+    "Verilenler: P₁ = 1,5 atm, V₁ = 4 L, V₂ = 2 L.",
+    "P₁ · V₁ = 1,5 · 4 = 6 atm·L.",
+    "P₂ = 6 / V₂ = 6 / 2 = 3 atm."
+   ],
+   "optionReasons": [
+    "Oranı ters kurar: 1,5 · 2 / 4 = 0,75; hacim küçülünce basıncın azalacağını sanır.",
+    "Doğru: P₂ = 1,5 · 4 / 2 = 3 atm.",
+    "Sabit sıcaklığı sabit basınçla karıştırır; hacim değişince basınç da değişir.",
+    "Basıncı hacimle eşit sanıp yeni hacim değerini (2) cevap yazar; atm ile L farklı büyüklüklerdir.",
+    "P₁ · V₁ çarpımını (6) bulup yeni hacme bölmeyi unutur."
+   ],
+   "commonError": "Ters orantıyı doğru orantı gibi kurup basıncı yanlış yönde değiştirmek.",
+   "check": "Son durumda P₂ · V₂ = 3 · 2 = 6, başta P₁ · V₁ = 6 idi; çarpım korunuyor."
+  }
+ },
+ {
+  "id": "f012-chem-gazlar-hal-degisim-plazma-3",
+  "h": "1f309754267113",
+  "guidance": {
+   "knowledge": [
+    "Charles yasası: basınç (P) ve mol sayısı (n) sabitken ideal gazın hacmi mutlak sıcaklıkla doğru orantılıdır: V₁ / T₁ = V₂ / T₂.",
+    "Sıcaklıklar Kelvin cinsinden olmalıdır; burada 300 K ve 450 K zaten Kelvin’dir."
+   ],
+   "strategy": "P ve n sabit, değişen V ile T olduğu için V/T oranını sabit tutar, V₂’yi çözersin.",
+   "steps": [
+    "Sıcaklık oranı: 450 / 300 = 1,5.",
+    "Hacim aynı oranla artar: V₂ = 2 · 1,5.",
+    "V₂ = 3 L."
+   ],
+   "optionReasons": [
+    "Sıcaklık artınca hacmin küçüleceğini sanıp yarıya indirir; P sabitken ısınan gaz genleşir.",
+    "Oranı ters kurar: 2 · 300 / 450 ≈ 1,33.",
+    "Doğru: V₂ = 2 · 450 / 300 = 3 L.",
+    "Hacmin sabit kaldığını sanır; sabit olan basınçtır, hacim değil.",
+    "1,5 katlık artışı iki kez uygular: 2 · 1,5 · 1,5 = 4,5."
+   ],
+   "commonError": "Oranı ters kurup hacmi sıcaklık artarken azaltmak.",
+   "check": "V/T oranlarını karşılaştır: 2 / 300 ile 3 / 450 ikisi de 1/150’ye eşit."
+  }
+ },
+ {
+  "id": "f012-chem-gazlar-hal-degisim-plazma-4",
+  "h": "1e8e82776c5f2d",
+  "guidance": {
+   "knowledge": [
+    "Ortalama öteleme kinetik enerjisi: taneciklerin bir yerden başka yere hareketinden gelen enerjinin ortalaması; ideal gazda yalnız mutlak sıcaklığa bağlıdır.",
+    "Kinetik enerji = (1/2) · m · v²: aynı enerjide kütlesi küçük olan tanecik daha hızlı hareket eder. He’nin mol kütlesi Ar’dan küçüktür."
+   ],
+   "strategy": "Sıcaklığın doğrudan belirlediği büyüklüğü (enerji) kütleye bağlı büyüklükten (hız) ayırırsın; zorunlu olan, kütleden bağımsız olandır.",
+   "steps": [
+    "Aynı sıcaklık, ideal modelde aynı ortalama öteleme kinetik enerjisi demektir.",
+    "He atomu Ar’dan hafif olduğu için aynı enerjide ortalama hızı daha büyüktür; hızlar eşit değildir.",
+    "Zorunlu olan tek ifade: ortalama öteleme kinetik enerjileri eşittir."
+   ],
+   "optionReasons": [
+    "Ortalamayı tek tek taneciklere uygular; aynı gazda bile atomların hızları dağılım gösterir.",
+    "Enerji eşitliğini hız eşitliği sanır; kütle farklı olduğu için hafif He daha hızlıdır.",
+    "Aynı sıcaklığı aynı madde özelliği sanır; He ve Ar’ın mol kütleleri farklıdır.",
+    "Doğru: ideal gazda ortalama öteleme enerjisi yalnız sıcaklığa bağlıdır.",
+    "Hacmi yalnız sıcaklığa bağlar; hacim mol sayısı ve basınca da bağlıdır."
+   ],
+   "commonError": "Aynı sıcaklıktaki gazların aynı ortalama hızla hareket ettiğini sanmak.",
+   "check": "(1/2) · m · v² eşitse ve m(He) küçükse v(He) büyük olmalıdır; bu da hızların eşit olmadığını doğrular."
+  }
+ },
+ {
+  "id": "f012-chem-gazlar-hal-degisim-plazma-5",
+  "h": "0d4145b7af0f4b",
+  "guidance": {
+   "knowledge": [
+    "Erime platosu: sıcaklık-zaman grafiğinde, saf katı eriyip sıvılaşırken sıcaklığın sabit kaldığı yatay bölüm.",
+    "Gizli ısı (erime ısısı): hâl değişimine harcanan, sıcaklığı yükseltmeyen enerji. Bu sırada katı ve sıvı birlikte bulunur."
+   ],
+   "strategy": "Platoda alınan enerjinin nereye gittiğini düşünürsün: sıcaklığı artırmaya değil, katıyı sıvıya dönüştürmeye harcanır.",
+   "steps": [
+    "Platoda madde ısı alır; enerji aktarımı sürer.",
+    "Bu enerji tanecikler arası çekimi yenmeye gider; sıcaklık sabit kalır.",
+    "Katı eridikçe sıvı miktarı artar; doğru ifade: sıcaklık sabitken sıvı miktarı artabilir."
+   ],
+   "optionReasons": [
+    "Sıcaklık değişmediği için ısı gelmediğini sanır; soruda ısı alındığı açıkça söyleniyor.",
+    "Hâl değişimini kimyasal değişim sanır; erimede madde aynı kalır.",
+    "Sabit sıcaklığı hareketsizlik sanır; tanecikler her sıcaklıkta hareket eder.",
+    "Isı alan maddenin hep ısındığını düşünür; platoda enerji hâl değişimine gider.",
+    "Doğru: alınan gizli ısı katıyı sıvıya çevirir, sıcaklık sabit kalır."
+   ],
+   "commonError": "Isı alan maddenin sıcaklığının her zaman arttığını sanmak.",
+   "check": "Buzlu su karışımı ısıtılırken buz bitene kadar termometre 0 °C’yi gösterir, buz azalır ve su artar."
+  }
+ },
+ {
+  "id": "f012-chem-gazlar-hal-degisim-plazma-6",
+  "h": "0873603cff7997",
+  "guidance": {
+   "knowledge": [
+    "Erime noktası: katının sıvıya geçtiği sıcaklık (burada −10 °C). Bunun altında madde katıdır.",
+    "Kaynama noktası: sıvının gaza geçtiği sıcaklık (burada 80 °C). İki eşik arasında madde sıvı, kaynama noktasının üstünde gazdır."
+   ],
+   "strategy": "Sıcaklık eksenine iki eşiği yerleştirip 0 °C’nin hangi aralığa düştüğüne bakarsın; iki faz yalnız tam eşik sıcaklığında birlikte bulunur.",
+   "steps": [
+    "Aralıkları yaz: −10 °C altı katı, −10 ile 80 °C arası sıvı, 80 °C üstü gaz.",
+    "0 °C için −10 < 0 < 80 sağlanır.",
+    "0 °C hiçbir eşiğe eşit olmadığı için madde tek fazlıdır: sıvı."
+   ],
+   "optionReasons": [
+    "Doğru: 0 °C erime ile kaynama noktası arasındadır; X sıvıdır.",
+    "Suyun 0 °C’de donmasını X’e taşır; X’in erime noktası −10 °C’dir, 0 °C’de katı olamaz.",
+    "0 °C’yi kaynama noktası sanır; gaz için 80 °C’nin üstüne çıkmak gerekir.",
+    "Katı ile gazın birlikte bulunabileceğini düşünür; bu ancak süblimleşme koşullarında olur, burada aralık sıvıdır.",
+    "İki fazın bütün aralıkta bir arada olduğunu sanır; sıvı ve gaz yalnız 80 °C’de birlikte dengededir."
+   ],
+   "commonError": "Su için bilinen 0 °C ve 100 °C eşiklerini başka bir maddeye taşımak.",
+   "check": "Sınır durumlarını dene: −15 °C katı, 90 °C gaz çıkar; 0 °C ise iki eşiğin tam arasında kalıp sıvı olur."
+  }
+ },
+ {
+  "id": "f012-chem-gazlar-hal-degisim-plazma-7",
+  "h": "0f0eec247c8184",
+  "guidance": {
+   "knowledge": [
+    "Nötr atom: proton ve elektron sayıları eşit olduğu için yükü 0 olan atom.",
+    "e: bir elektronun yükünün büyüklüğü. Bir elektron −1e, bir elektron kaybetmiş atom (+1 iyon) +1e yük taşır."
+   ],
+   "strategy": "Yük korunur: başta toplam yük sıfırsa sonda da sıfır olmalıdır. Yine de iyonların ve elektronların yükünü ayrı ayrı toplayarak gösterirsin.",
+   "steps": [
+    "Başlangıç: 6 nötr atom, toplam yük 0.",
+    "Oluşan 6 tane +1 iyon: 6 · (+1e) = +6e. Kopan 6 elektron: 6 · (−1e) = −6e.",
+    "Toplam: +6e + (−6e) = 0e."
+   ],
+   "optionReasons": [
+    "Yalnız iyonları sayar, kopan elektronların −6e yükünü unutur.",
+    "Doğru: +6e ve −6e birbirini götürür; toplam 0e.",
+    "Yalnız serbest elektronları sayar, iyonların +6e yükünü unutur.",
+    "İşaretleri yok sayıp 6 ile 6’yı toplar; zıt yükler birbirini götürür.",
+    "İşareti eksi alıp 6 ile 6’yı toplar; elektronların yükü iyonların yükünü dengeler, toplamaz."
+   ],
+   "commonError": "Yalnız iyonların yükünü sayıp kopan elektronları hesaba katmamak.",
+   "check": "Yük korunumu: elektron kopması yük üretmez, yalnız ayırır. Başta 0 olan toplam sonda da 0 kalmalıdır."
+  }
+ },
+ {
+  "id": "f012-chem-gazlar-hal-degisim-plazma-8",
+  "h": "000669176f53c4",
+  "guidance": {
+   "knowledge": [
+    "Plazma: atomların önemli kısmının iyonlaştığı, serbest elektronlarla pozitif iyonların birlikte bulunduğu, elektrik ve manyetik alana toplu tepki veren hâl.",
+    "Kayaç eriyiği (lav, magma): erimiş taş; yüksek sıcaklıkta bulunan bir sıvıdır, iyonlaşmış gaz değildir."
+   ],
+   "strategy": "Plazmayı tanımlayan özelliği (iyonlaşma ve serbest yük taşıyıcıları) içeren gözlemleri ayıklar, yalnız sıcaklıktan söz eden gözlemi bulursun.",
+   "steps": [
+    "Serbest elektron ve iyonların birlikte bulunması plazmanın tanımıdır.",
+    "Elektrik boşalmasında iyonlaşma, yüklerin toplu elektromanyetik tepkisi ve plazma lambasındaki yük taşıyıcıları da iyonlaşmayı gösterir.",
+    "Sıcak kayaç eriyiği yalnız yüksek sıcaklığı gösterir; iyonlaşma kanıtı içermez. Tek başına tanı değildir."
+   ],
+   "optionReasons": [
+    "Plazmanın tanımıdır; serbest elektronlar ve iyonlar birlikte iyonlaşmayı doğrudan gösterir.",
+    "Elektrik boşalması gazı iyonlaştırır; iyonlaşmış ortam kanıtı plazmayı destekler.",
+    "Doğru: sıcak eriyik sıvı hâldedir; yüksek sıcaklık tek başına iyonlaşmayı kanıtlamaz.",
+    "Hareketli yüklerin toplu tepkisi plazmanın ayırt edici davranışıdır.",
+    "Plazma lambasında gaz iyonlaşır; yük taşıyıcılarının varlığı plazma göstergesidir."
+   ],
+   "commonError": "Çok sıcak olan her maddeyi plazma sanmak; ölçüt sıcaklık değil iyonlaşmadır.",
+   "check": "Floresan lamba içi plazma içerir ama elle tutulacak kadar ılık olabilir; lav ise çok sıcak olduğu hâlde sıvıdır. Ölçüt iyonlaşmadır."
+  }
+ },
+ {
+  "id": "f012-chem-gazlar-hal-degisim-plazma-9",
+  "h": "05cb9ba1ecea1b",
+  "guidance": {
+   "knowledge": [
+    "Net güç: maddeye birim zamanda gerçekten aktarılan enerji. 100 W, saniyede 100 J demektir (1 W = 1 J/s).",
+    "Güç sabitken aktarılan enerji zamanla doğru orantılıdır: Q = P · t, buradan t = Q / P."
+   ],
+   "strategy": "Toplam enerji ve saniyedeki enerji verildiği için toplamı saniyedeki miktara bölersin.",
+   "steps": [
+    "Formül: t = Q / P.",
+    "Yerine yaz: t = 5000 J / 100 J/s.",
+    "Böl: t = 50 s."
+   ],
+   "optionReasons": [
+    "5000 J’yi 5 kJ yazıp 5 sayısını cevap verir; kilo önekini unutur.",
+    "Bölmede bir sıfır fazla atar: 5000 / 500 = 10.",
+    "Güç değerini süre sanır; 100, saniyede aktarılan enerjidir.",
+    "Doğru: t = 5000 / 100 = 50 s.",
+    "Bir sıfır eksik atar: 5000 / 10 = 500."
+   ],
+   "commonError": "Bölme sırasında sıfırları yanlış sayıp sonucu 10 kat büyük ya da küçük bulmak.",
+   "check": "50 s boyunca saniyede 100 J verilirse 50 · 100 = 5000 J eder; toplam enerjiyle aynı."
+  }
+ },
+ {
+  "id": "f012-chem-gazlar-hal-degisim-plazma-10",
+  "h": "049e3ffaa79297",
+  "guidance": {
+   "knowledge": [
+    "atm ve mmHg: basınç birimleri. 1 atm = 760 mmHg, yani 1 atm’lik basınç 760 mm yüksekliğinde cıva sütununu dengeler.",
+    "Birim çevirmede verilen değer dönüşüm katsayısıyla çarpılır; basıncın kendisi değişmez, yalnız sayısı değişir."
+   ],
+   "strategy": "Büyük birimden (atm) küçük birime (mmHg) geçildiği için sayı büyür; 1,25 değerini 760 ile çarparsın.",
+   "steps": [
+    "Dönüşüm: P(mmHg) = 1,25 · 760.",
+    "1,25 = 1 + 0,25 diye ayır: 760 + 0,25 · 760.",
+    "0,25 · 760 = 190; toplam 760 + 190 = 950 mmHg."
+   ],
+   "optionReasons": [
+    "1,25 yerine 0,125 alır: 0,125 · 760 = 95.",
+    "Çarpmak yerine böler: 760 / 1,25 = 608.",
+    "Yalnız 1 atm’nin karşılığını yazar, 0,25 atm’lik kısmı unutur.",
+    "1,25 atm’yi 2 atm’ye yuvarlar: 2 · 760 = 1520.",
+    "Doğru: 1,25 · 760 = 950 mmHg."
+   ],
+   "commonError": "Birim çevirirken çarpacağı yerde bölmek.",
+   "check": "Ters çevir: 950 / 760 = 1,25 atm; başlangıç değeri geri geliyor."
+  }
+ },
+ {
+  "id": "f012-chem-doga-ve-kimya-1",
+  "h": "02627cdcb78e62",
+  "guidance": {
+   "knowledge": [
+    "Berrak su: içinden ışık geçen, bulanık görünmeyen su. Berraklık yalnız gözle görülebilen askıda tanecikler hakkında bilgi verir.",
+    "İçilebilirlik: suyun çözünmüş kimyasallar, mikroorganizmalar ve başka ölçütler bakımından sağlığa uygun olması; bunlar gözle görülmez, ölçümle denetlenir."
+   ],
+   "strategy": "Görünüşten çıkarılabilecek sonuçlarla ölçüm gerektiren sonuçları ayırırsın; gözle görülmeyen özellik berraklıkla kanıtlanamaz.",
+   "steps": [
+    "Berraklık ışığın geçtiğini, bulanıklığın az olduğunu ve suyun sıvı olarak gözlendiğini gösterir.",
+    "Çözünmüş zararlı maddeler ve mikroplar suyu bulandırmadan bulunabilir.",
+    "Bu nedenle berraklık, içilebilirlik ölçütlerinin tamamının sağlandığını tek başına kanıtlamaz."
+   ],
+   "optionReasons": [
+    "Doğru: çözünmüş kimyasallar ve mikroorganizmalar berrak suda da bulunabilir; içilebilirlik ölçümle anlaşılır.",
+    "Berrak görünüm zaten az bulanıklık demektir; bu sonuç gözlemden doğrudan çıkar.",
+    "Berrak görünmek ışığın sudan geçmesiyle mümkündür; bu gözlemle kanıtlanır.",
+    "Su gözle sıvı olarak görülmektedir; bu doğrudan gözlemdir.",
+    "Açık renk gözle algılanan bir özelliktir; berraklık gözlemi bunu destekler."
+   ],
+   "commonError": "Temiz görünen suyu güvenli su saymak; görünmeyen kirleticileri unutmak.",
+   "check": "Karşı örnek: şeker ya da tuz çözülmüş su da berraktır; demek ki berraklık suda çözünmüş madde olmadığını göstermez."
+  }
+ },
+ {
+  "id": "f012-chem-doga-ve-kimya-2",
+  "h": "05f82c40b08d60",
+  "guidance": {
+   "knowledge": [
+    "Su sertliği: suda çözünmüş kalsiyum (Ca²⁺) ve magnezyum (Mg²⁺) iyonlarının fazla olması; sabunun az köpürmesine ve kireçlenmeye yol açar.",
+    "İyon: elektron alıp vermiş, yüklü tanecik. H₂, O₂, Cl₂, N₂ yüksüz moleküllerdir; He ve Ne yüksüz soy gaz atomlarıdır."
+   ],
+   "strategy": "Önce şıklardaki taneciklerin iyon olup olmadığına, sonra iyonların sertlik yapan iki değerlikli iyonlar olup olmadığına bakarsın.",
+   "steps": [
+    "H₂ ile O₂, He ile Ne, Cl₂ ile N₂ yüksüz taneciklerdir; iyon çifti değildir.",
+    "Na⁺ ve K⁺ iyondur ama sertlik yapan iyonlar değildir.",
+    "Sertliğe yaygın katkı veren çift Ca²⁺ ve Mg²⁺ iyonlarıdır."
+   ],
+   "optionReasons": [
+    "Tek değerlikli bu iyonları da sertlik sanır; sertliğin asıl kaynağı Ca²⁺ ve Mg²⁺ iyonlarıdır.",
+    "Doğru: kalsiyum ve magnezyum iyonları sertlik yapar, kireç ve az köpük bunun sonucudur.",
+    "Suyun formülündeki elementleri iyon sanır; H₂ ve O₂ yüksüz moleküllerdir.",
+    "Soy gazları seçer; He ve Ne yüksüz, tepkimeye girmeyen atomlardır, iyon değildir.",
+    "Çözünmüş gazları iyonla karıştırır; Cl₂ ve N₂ yüksüz moleküllerdir."
+   ],
+   "commonError": "Sertliği Na⁺ gibi her çözünmüş iyona bağlamak ya da gaz molekülleriyle karıştırmak.",
+   "check": "Çaydanlıktaki kireç tortusu kalsiyum karbonattır; içinde kalsiyum bulunması Ca²⁺ iyonunun sertlikteki rolünü doğrular."
+  }
+ },
+ {
+  "id": "f012-chem-doga-ve-kimya-3",
+  "h": "1543b9639208d6",
+  "guidance": {
+   "knowledge": [
+    "Askıda katı: suda çözünmeden yüzen, süzgeçle tutulabilen küçük katı tanecikler.",
+    "Yüzde tutma: %80 tutmak, her 100 birimin 80’ini almak demektir; geçen kısım %100 − %80 = %20 olur."
+   ],
+   "strategy": "Soru kalan miktarı sorduğu için tutulan yüzdeyi değil, geçen yüzdeyi başlangıç miktarına uygularsın.",
+   "steps": [
+    "Kalan pay: %100 − %80 = %20 = 0,20.",
+    "Kalan miktar: 100 mg · 0,20.",
+    "Sonuç: 20 mg kalır."
+   ],
+   "optionReasons": [
+    "Filtrenin her şeyi tuttuğunu sanır; %80 tutma kalan %20’yi geride bırakır.",
+    "Tutulan miktarı (100 · 0,80 = 80 mg) kalan miktarla karıştırır.",
+    "Doğru: 100 · (1 − 0,80) = 20 mg kalır.",
+    "Filtrenin hiçbir şey tutmadığını varsayar; başlangıç değerini olduğu gibi yazar.",
+    "Çarpmak yerine böler: 100 / 0,80 = 125; kalan miktar başlangıcı aşamaz."
+   ],
+   "commonError": "Tutulan miktarı kalan miktar sanmak.",
+   "check": "Tutulan ile kalan toplanınca başlangıç çıkmalı: 80 + 20 = 100 mg."
+  }
+ },
+ {
+  "id": "f012-chem-doga-ve-kimya-4",
+  "h": "1d1ff2554b4b49",
+  "guidance": {
+   "knowledge": [
+    "Çözünmüş iyon giderme: suda çözünmüş tuzların iyonlarını azaltan işlem.",
+    "Mikrop giderimi (dezenfeksiyon): suda bulunabilecek hastalık yapıcı mikroorganizmaları etkisiz hâle getiren ayrı bir işlem."
+   ],
+   "strategy": "Her işlemi yalnız kendi hedefiyle değerlendirirsin; iyon gidermenin sonucunu mikrop konusuna genişletmezsin.",
+   "steps": [
+    "Verilen: çözünmüş iyonlar azalıyor.",
+    "Verilmeyen: mikrop giderimi. Bu hedefle ilgili bilgi yoktur.",
+    "Uygun çıkarım: mikrobiyolojik güvenlik tek başına bu işlemle kanıtlanamaz."
+   ],
+   "optionReasons": [
+    "İyon gidermeyi dezenfeksiyon sanır; mikrop giderimi verilmemiştir.",
+    "Azaltmayı tam arıtma sanır; iyonlar azalmıştır, su her bakımdan saf H₂O olmamıştır.",
+    "Tek bir işlemi her kullanım için yeterli sayar; içilebilirlik başka ölçütlere de bağlıdır.",
+    "Doğru: iyon giderme ile mikrop giderme ayrı hedeflerdir; mikrobiyolojik güvenlik kanıtlanmamıştır.",
+    "Azaltmayı sıfırlama sanır; işlem iyonları azaltır, tamamen yok etmesi gerekmez."
+   ],
+   "commonError": "Bir arıtma işleminin sonucunu, verilmeyen başka bir güvenlik hedefine genellemek.",
+   "check": "Karşı örnek düşün: iyonları azaltılmış ama mikrop bulaşmış bir su mümkündür; öyleyse güvenlik ayrıca kanıtlanmalıdır."
+  }
+ },
+ {
+  "id": "f012-chem-doga-ve-kimya-5",
+  "h": "1d5f1fbc8187b1",
+  "guidance": {
+   "knowledge": [
+    "Ozon (O₃): üç oksijen atomlu molekül.",
+    "Stratosferik ozon: yerden yüksekteki stratosfer katmanında bulunur ve Güneş’ten gelen UV (morötesi) ışınımın bir bölümünü soğurur. Yere yakın ozon ise solunan havada kirletici olarak hava kalitesini bozar."
+   ],
+   "strategy": "Aynı molekülün etkisinin bulunduğu yere göre değiştiğini düşünür, iki konumun rollerini ayrı ayrı yazarsın.",
+   "steps": [
+    "Stratosferdeki ozon UV ışınımını kısmen soğurarak canlıları korur.",
+    "Yere yakın ozon solunan havada kirletici gibi davranır.",
+    "Sonuç: konumuna göre koruyucu ve kirletici roller ayrılabilir."
+   ],
+   "optionReasons": [
+    "Ozonu su sertliğiyle karıştırır; sertlik suda çözünmüş Ca²⁺ ve Mg²⁺ ile ilgilidir.",
+    "Aynı molekülün her ortamda aynı etkiyi yaptığını sanır; etkisi bulunduğu katmana bağlıdır.",
+    "Yalnız ozon tabakasını düşünür; yere yakın ozon zararlıdır.",
+    "Ozonun UV ışınımını soğurduğunu unutur; koruyucu rolü bu etkileşimden gelir.",
+    "Doğru: stratosferde koruyucu, yere yakın havada kirletici rol üstlenir."
+   ],
+   "commonError": "Ozonu her yerde yalnız yararlı ya da yalnız zararlı saymak.",
+   "check": "Ozon tabakasının incelmesi UV artışı nedeniyle sorun sayılır, kent havasında ozonun artması da sorun sayılır; ikisi aynı anda doğru olabiliyorsa rol konuma bağlıdır."
+  }
+ },
+ {
+  "id": "f012-chem-doga-ve-kimya-6",
+  "h": "1ecdf63adc3a4a",
+  "guidance": {
+   "knowledge": [
+    "SO₂ (kükürt dioksit) ve NOₓ (azot oksitler): yakıtların yanmasıyla havaya karışan gazlar.",
+    "Asit yağmuru (asidik birikim): bu oksitlerin havada yükseltgenip suyla birleşerek asidik bileşikler oluşturması ve yağışla ya da kuru tanecikle yere inmesi."
+   ],
+   "strategy": "Oksitlerin havadaki su ile verdiği ürünlerin asidik olduğunu hatırla ve buna bağlanan çevre olayını seç.",
+   "steps": [
+    "SO₂ ve NOₓ havada yükseltgenir.",
+    "Oluşan oksitler suyla birleşerek asidik bileşiklere katkı verir.",
+    "Bu bileşiklerin yere inmesi asidik birikim ve asit yağmurudur."
+   ],
+   "optionReasons": [
+    "Doğru: kükürt ve azot oksitler suyla asidik bileşiklere dönüşür; asit yağmuru oluşur.",
+    "Su sertliğiyle karıştırır; sertlik Ca²⁺ ve Mg²⁺ iyonlarından gelir, havadaki oksitlerden değil.",
+    "Hâl değişimiyle kimyasal üretimi karıştırır; buz eriyince yine su oluşur, H₂ çıkmaz.",
+    "Abartılı genelleme yapar; havanın tamamı CO’ya dönüşmez, CO ayrı bir kirleticidir.",
+    "Asitlerin her maddeyi anında yok ettiğini sanır; plastiklerin bu oksitlerle anında yok olması söz konusu değildir."
+   ],
+   "commonError": "Asit yağmurunu ozon incelmesi ya da su sertliği gibi başka çevre sorunlarıyla karıştırmak.",
+   "check": "Formüllerde S ve N bulunan oksitler suyla kükürt ve azot içeren asitlere dönüşür; ürünün adı asit olduğuna göre sonuç asidik birikimdir."
+  }
+ },
+ {
+  "id": "f012-chem-doga-ve-kimya-7",
+  "h": "15e430eb2e48bf",
+  "guidance": {
+   "knowledge": [
+    "Besin girdisi: göle karışan azot ve fosfor gibi bitki besinleri; algleri hızla çoğaltır. Bu zincire ötrofikasyon denir.",
+    "Çözünmüş oksijen: suda çözünmüş O₂; balıklar ve ayrıştırıcılar solunumda bunu kullanır."
+   ],
+   "strategy": "Zinciri son halkasına kadar izlersin: ölen algleri ayrıştıran canlılar ne tüketir, o madde azalır.",
+   "steps": [
+    "Fazla besin alglerin aşırı çoğalmasına yol açar.",
+    "Ölen algler ayrıştırıcılarca parçalanır; bu canlılar solunumda suda çözünmüş oksijeni kullanır.",
+    "Sonuç: çözünmüş oksijen azalır ve diğer canlılar için risk oluşur."
+   ],
+   "optionReasons": [
+    "Zinciri tersine okur; ayrışan organik madde suyu kirletir, saflaştırmaz.",
+    "Doğru: ayrıştırıcılar organik maddeyi parçalarken suda çözünmüş oksijeni tüketir.",
+    "İyonlarla elektronları karıştırır; ayrışma iyonları elektrona dönüştürmez.",
+    "Biyolojik süreci hâl değişimiyle karıştırır; zincirde sıcaklık düşüşü ya da donma yoktur.",
+    "Göldeki bir olayı atmosferin tamamına taşır; ayrışma hava basıncını değiştirmez."
+   ],
+   "commonError": "Algin çoğalmasını yalnız oksijen üreten bir olay sanıp ayrışma sırasındaki oksijen tüketimini unutmak.",
+   "check": "Ayrıştırıcıların solunumu oksijen harcar: organik madde ne kadar çoksa harcanan oksijen de o kadar çoktur; azalma bununla tutarlıdır."
+  }
+ },
+ {
+  "id": "f012-chem-doga-ve-kimya-8",
+  "h": "1ec85976623cfe",
+  "guidance": {
+   "knowledge": [
+    "Ardışık yüzde: ikinci yüzde başlangıç miktarına değil, ilk işlemden sonra kalan miktara uygulanır.",
+    "%50 uzaklaştırmak, mevcut miktarın yarısını almak demektir; geriye yarısı kalır."
+   ],
+   "strategy": "İki aşamayı sırayla hesaplarsın; her aşamada o anda var olan miktarın yarısı kalır.",
+   "steps": [
+    "Birinci aşama: 80 mg · 0,5 = 40 mg kalır.",
+    "İkinci aşama: kalan 40 mg’ın yarısı alınır, 40 · 0,5 = 20 mg kalır.",
+    "Sonuç: 20 mg kalır; toplam giderim 60 mg, yani %75’tir."
+   ],
+   "optionReasons": [
+    "Yüzdeleri toplar: %50 + %50 = %100 sanıp hepsinin gittiğini düşünür.",
+    "Yalnız birinci aşamayı uygular, ikinci aşamayı unutur.",
+    "Doğru: 80 → 40 → 20 mg.",
+    "Yüzde değerini (50) miligram gibi okur; kalan miktar bir oran değildir.",
+    "Hiç işlem yapmaz, başlangıç miktarını yazar."
+   ],
+   "commonError": "Ardışık yüzdeleri toplayıp iki kez %50 giderimi %100 saymak.",
+   "check": "Kalan oran 0,5 · 0,5 = 0,25 olmalı: 80 · 0,25 = 20 mg; sonuç aynı."
+  }
+ },
+ {
+  "id": "f012-chem-doga-ve-kimya-9",
+  "h": "180174301fd33f",
+  "guidance": {
+   "knowledge": [
+    "Atık pil ve akü: içinde ağır metaller ve elektrolitler (iletken sıvı ya da macun) bulunan, çevreye karışınca toprağı ve suyu kirletebilen atık.",
+    "Ayrı toplama ve geri kazanım: atığın kendi türüne uygun kutuda toplanıp içindeki maddelerin denetimli biçimde işlenmesi."
+   ],
+   "strategy": "Her davranışı tek ölçütle tartarsın: kimyasalların kontrolsüz biçimde toprağa, suya ya da havaya geçmesini artırıyor mu, azaltıyor mu?",
+   "steps": [
+    "Toprağa gömmek ve lavaboya dökmek kimyasalları toprağa ve suya geçirir.",
+    "Evde yakmak zararlı maddeleri havaya ve çevreye yayar; tüm pilleri zararsız saymak da yanlıştır.",
+    "Kontrolsüz geçişi azaltan davranış, içeriğine uygun ayrı toplama ve geri kazanıma yönlendirmektir."
+   ],
+   "optionReasons": [
+    "Gömülen pilin kaybolduğunu sanır; içindeki metaller zamanla toprağa ve yeraltı suyuna sızar.",
+    "Sıvıyı akıtınca sorunun bittiğini düşünür; kimyasallar doğrudan atık suya karışır.",
+    "Yakmayı yok etme sanır; yanma zararlı maddeleri havaya taşır ve tehlikelidir.",
+    "Doğru: içeriğine uygun toplama, metal ve elektrolitlerin denetimsiz çevreye geçişini azaltır.",
+    "Bütün pillerin aynı olduğunu varsayar; farklı piller farklı metal ve elektrolit içerir."
+   ],
+   "commonError": "Atığı gözden uzaklaştırmayı (gömme, dökme, yakma) zararı ortadan kaldırmak sanmak.",
+   "check": "Her davranışa \"kimyasal nereye gidiyor?\" diye sor: yalnız ayrı toplamada cevap denetimli bir işleme tesisidir."
+  }
+ },
+ {
+  "id": "f012-chem-doga-ve-kimya-10",
+  "h": "0773a33a5df979",
+  "guidance": {
+   "knowledge": [
+    "Debi: birim zamanda akan su miktarı. 4 L/dk, her dakika 4 litre su akması demektir.",
+    "Toplam miktar = debi · süre. Süre birden çok güne yayılıyorsa günlük süre gün sayısıyla çarpılır."
+   ],
+   "strategy": "Önce bir günde önlenen akışı, sonra bunu gün sayısıyla çarparak toplam tasarrufu bulursun.",
+   "steps": [
+    "Bir günde önlenen akış: 4 L/dk · 3 dk = 12 L.",
+    "Beş günde: 12 L · 5 = 60 L.",
+    "Toplam tasarruf 60 L’dir."
+   ],
+   "optionReasons": [
+    "Yalnız bir günün tasarrufunu (4 · 3 = 12 L) bulup gün sayısıyla çarpmayı unutur.",
+    "Debiyi atlayıp dakika ile günü çarpar: 3 · 5 = 15; bu toplam dakikadır, litre değil.",
+    "Günlük süreyi atlar: 4 · 5 = 20.",
+    "Doğru bulduğu 60 L’yi gereksiz yere ikiyle çarpar: 4 · 3 · 5 · 2 = 120; soruda iki katı gerektiren bir bilgi yoktur.",
+    "Doğru: 4 · 3 · 5 = 60 L."
+   ],
+   "commonError": "Çarpılması gereken üç büyüklükten (debi, günlük süre, gün sayısı) birini unutmak.",
+   "check": "Birim kontrolü: (L/dk) · (dk/gün) · gün = L; sonuç litre çıkıyor. 5 günde toplam 15 dakikada 4 L/dk ile 15 · 4 = 60 L eder."
+  }
  }
 ]

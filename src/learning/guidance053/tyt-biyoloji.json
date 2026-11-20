@@ -1,0 +1,3272 @@
+[
+ {
+  "id": "f014-bio-ekoloji-giris-1",
+  "h": "0ee5591e857565",
+  "guidance": {
+   "knowledge": [
+    "Tür: kendi aralarında çiftleşip verimli yavru verebilen benzer bireyler topluluğu.",
+    "Ekolojik birimler küçükten büyüğe: birey, popülasyon (aynı tür, aynı yer ve zaman), komünite (farklı türlerin popülasyonları), ekosistem (komünite ve cansız çevre), biyom, biyosfer."
+   ],
+   "strategy": "Verilen bilgileri birim tanımlarının ölçütleriyle eşleştir: kaç tür var, yer ve zaman belli mi, cansız çevre kapsama alınmış mı?",
+   "steps": [
+    "Tür sayısı: hepsi aynı türe ait kurbağa, yani tek tür var.",
+    "Yer ve zaman belirli: aynı gölet, aynı ay.",
+    "Cansız çevre (su, mineral) kapsama alınmamış; yalnız tek türün bireyleri sayılmış.",
+    "Aynı türün belirli yer ve zamandaki bireyleri popülasyondur."
+   ],
+   "optionReasons": [
+    "Doğru: tek tür, belirli yer ve zaman; popülasyon tanımının üç ölçütü de karşılanıyor.",
+    "Biyom geniş iklim kuşağındaki büyük toplulukları kapsar; tek göletteki tek tür biyom ölçeğine ulaşmaz.",
+    "Biyosfer Dünya'daki bütün canlıların yaşadığı katmandır; 30 kurbağaya indirgemek ölçeği karıştırmaktır.",
+    "Birey sayısını tür sayısıyla karıştırır; 30 birey aynı türe ait olduğu için tür sayısı birdir.",
+    "Cansız bileşenler verilmediği hâlde ekosistem der; ekosistem için canlılarla cansız çevrenin birlikte ele alınması gerekir."
+   ],
+   "commonError": "Birey sayısını tür sayısıyla karıştırmak ya da cansız çevre verilmediği hâlde ekosistem demek.",
+   "check": "Bir kurbağa daha eklense birim değişmez, popülasyon büyür; araya bir balık türü girse komüniteye geçilirdi."
+  }
+ },
+ {
+  "id": "f014-bio-ekoloji-giris-2",
+  "h": "02e7cd30e4d9d7",
+  "guidance": {
+   "knowledge": [
+    "Popülasyon: aynı türün aynı yer ve zamandaki bireyleri.",
+    "Komünite: aynı alanda yaşayan farklı türlere ait popülasyonların tamamı.",
+    "Abiyotik faktör: sıcaklık, ışık, su, pH gibi cansız çevre etkenleri; bunlar eklenirse ekosistem düzeyine geçilir."
+   ],
+   "strategy": "Kapsamda kaç tür var ve cansız etkenler var mı diye bak; bu iki soru düzeyi belirler.",
+   "steps": [
+    "Alg, balık ve bakteri farklı türlerdir; yani birden çok popülasyon var.",
+    "Sıcaklık, su ve ışık kapsam dışında bırakılmış; cansız çevre yok.",
+    "Farklı türlerin aynı alandaki popülasyonları birlikte, cansız çevre olmadan: komünite."
+   ],
+   "optionReasons": [
+    "Birden çok tür olduğunu gözden kaçırır; tek popülasyon için yalnız bir tür olmalı.",
+    "Doğru: farklı türlere ait popülasyonlar aynı gölde birlikte incelenir, cansız çevre katılmaz.",
+    "Abiyotik faktör cansızdır; sorulan ise canlı topluluklarıdır, üstelik cansız etkenler kapsam dışında.",
+    "Tek organizma bir bireydir; burada birçok tür ve birey var.",
+    "Habitatın kimyası cansız çevreye girer; soru canlı toplulukların adını istiyor."
+   ],
+   "commonError": "Komüniteyi ekosistemle karıştırmak; cansız çevre eklenmedikçe ekosistem denmez.",
+   "check": "Kapsama sıcaklık ve ışık eklenseydi ad ekosisteme dönerdi; eklenmediği için komünitede kalınır."
+  }
+ },
+ {
+  "id": "f014-bio-ekoloji-giris-3",
+  "h": "1493be2b0472ec",
+  "guidance": {
+   "knowledge": [
+    "Habitat: canlının yaşadığı yer, adresi (sazlık, orman, göl kıyısı).",
+    "Ekolojik niş: canlının ekosistemdeki rolü, mesleği; ne yediği, ne zaman ürediği, hangi saatlerde etkin olduğu gibi bütün yaşam koşullarını kapsar."
+   ],
+   "strategy": "Her bilgiyi 'yer mi, rol ve yaşam biçimi mi?' diye sınıflandır; yer habitata, rol nişe gider.",
+   "steps": [
+    "Sazlık kuşun yaşadığı yerdir: habitat.",
+    "Yediği böcekler, üreme zamanı ve etkin saatleri kuşun yaşam biçimini anlatır: niş.",
+    "Sıra korunarak habitat ve ekolojik niş elde edilir."
+   ],
+   "optionReasons": [
+    "Atom numarası kimya kavramıdır, ekolojiyle ilgisi yoktur; ayrıca sıra da ters kurulmuş.",
+    "Popülasyon ve birey sayıma dayalı birimlerdir; yer ve yaşam biçimi bilgisini karşılamaz.",
+    "Doğru: sazlık yaşam alanı (habitat), besin, üreme ve etkinlik saatleri rol (niş) bilgisidir.",
+    "Biyosfer bütün Dünya ölçeğidir; nişi yalnız sıcaklığa indirgemek de besin ve zaman boyutlarını atlar.",
+    "Nişi yerin başka bir adı sanır; besin ve üreme zamanı yer değil, yaşam biçimidir."
+   ],
+   "commonError": "Nişi yalnızca yaşanan yer sanmak; niş yer değil, canlının rolüdür.",
+   "check": "Aynı sazlıkta yaşayıp farklı besin yiyen iki kuş düşün: habitatları aynı, nişleri farklıdır; bu ayrım doğrudur."
+  }
+ },
+ {
+  "id": "f014-bio-ekoloji-giris-4",
+  "h": "142e17112fc976",
+  "guidance": {
+   "knowledge": [
+    "Ototrof: inorganik maddelerden (CO₂ gibi) kendi organik besinini üreten canlı.",
+    "Fotoototrof enerjiyi ışıktan, kemoototrof enerjiyi inorganik maddelerin (NH₃, H₂S gibi) oksidasyonundan sağlar.",
+    "Saprotrof: ölü organik maddeyi ayrıştırarak beslenen heterotrof."
+   ],
+   "strategy": "İki soru sor: karbon kaynağı ne (CO₂ mi, hazır organik madde mi)? Enerji kaynağı ne (ışık mı, kimyasal tepkime mi)?",
+   "steps": [
+    "Karbon kaynağı CO₂: organik madde üretiyor, yani ototrof.",
+    "Enerji kaynağı inorganik maddelerin oksidasyonu, ışık değil: kemo.",
+    "İkisi birleşince beslenme tipi kemoototrofluktur."
+   ],
+   "optionReasons": [
+    "Işık kullanımına dair bilgi yok; enerji inorganik oksidasyondan geliyor, bu fotoototrofluğu dışlar.",
+    "Otçul hazır bitkisel besin yiyen heterotroftur; bu bakteri besinini CO₂'den kendisi üretir.",
+    "Saprotrof ölü organik madde kullanır; burada karbon kaynağı inorganik CO₂'dir.",
+    "Doğru: enerji inorganik maddelerin oksidasyonundan, karbon CO₂'den geliyor.",
+    "Omnivor hem bitki hem hayvan tüketen heterotroftur; organik madde üretimiyle çelişir."
+   ],
+   "commonError": "Her bakteriyi ayrıştırıcı ya da heterotrof sanmak; beslenme tipi karbon ve enerji kaynağına bakılarak belirlenir.",
+   "check": "Işık tamamen kesilse bile bu bakteri inorganik madde bulduğu sürece besin üretebilir; bu kemoototrof olduğunu doğrular."
+  }
+ },
+ {
+  "id": "f014-bio-ekoloji-giris-5",
+  "h": "1232481e31ae62",
+  "guidance": {
+   "knowledge": [
+    "Hücre dışı sindirim: canlının enzimlerini dışarı salgılayıp besini dışarıda küçük moleküllere parçalaması, sonra bunları emmesi.",
+    "Saprotrof ayrıştırıcı: ölü organik maddeyi bu yolla kullanan heterotrof; mineralleri yeniden toprağa kazandırır."
+   ],
+   "strategy": "Gözlemdeki iki ipucuna bak: besin ölü mü canlı mı, sindirim hücre içinde mi dışında mı?",
+   "steps": [
+    "Besin ölü organik madde: canlıdan değil, kalıntıdan besleniyor.",
+    "Enzim dışarı salgılanıp küçük moleküller alınıyor: hücre dışı sindirim.",
+    "Hazır organik madde kullandığı için heterotroftur; bu tablo saprotrof ayrıştırıcılıktır."
+   ],
+   "optionReasons": [
+    "Fotosentez inorganik karbonu ışıkla organik maddeye çevirir; burada hazır organik madde emiliyor.",
+    "Işık kullanımına dair bir gözlem yok; besin kimyasal olarak hazır alınıyor.",
+    "Mantarlar klorofil taşımaz ve üretici değildir; tek gözlemden bütün mantarlar için genelleme yapılmış.",
+    "Enerji yoktan var edilemez; mantar enerjiyi ölü organik maddedeki kimyasal bağlardan alır.",
+    "Doğru: ölü besinde hücre dışı sindirim ve ürünlerin emilmesi saprotrof ayrıştırıcılığın tanımıdır."
+   ],
+   "commonError": "Mineral döngüsüne katkı yaptığı için ayrıştırıcıyı üretici sanmak.",
+   "check": "Ölü besin ortadan kaldırılırsa küf beslenemez; ışık verilse de durum değişmez, bu heterotrof saprotrof olduğunu gösterir."
+  }
+ },
+ {
+  "id": "f014-bio-ekoloji-giris-6",
+  "h": "0a99ca7c22f738",
+  "guidance": {
+   "knowledge": [
+    "Heterotrof: besinini kendisi üretemeyip hazır organik madde tüketen canlı.",
+    "Omnivor (hepçil): hem bitkisel hem hayvansal besin tüketen heterotrof.",
+    "Fotoototrof ve kemoototrof besin üreten ototrof canlılardır; bunu söylemek için besin üretme yolu gösterilmelidir."
+   ],
+   "strategy": "Yalnız verilen veriye dayan: ne tüketiyor ve besin ürettiğine dair kanıt var mı?",
+   "steps": [
+    "Ayı meyve ve hayvan tüketiyor: hazır organik madde alıyor, yani heterotrof.",
+    "Hem bitkisel hem hayvansal besin: omnivor.",
+    "Fotosentez verisi yok; ototroflukla ilgili hiçbir seçenek desteklenmez. Sonuç: omnivor heterotrof."
+   ],
+   "optionReasons": [
+    "Doğru: hem meyve hem hayvan tüketmek omnivorluk, hazır besin almak heterotrofluktur.",
+    "Hiçbir besin üretme verisi yokken iki ototrof tipini birden atar; tüketmeyi üretmekle karıştırır.",
+    "Mineral tüketmek ototrofluk değildir; ayı organik besin yiyor.",
+    "Kloroplast fotosentez yapan hücrelerde bulunur; meyve yemek kloroplast taşımak anlamına gelmez.",
+    "İnorganik karbondan sentez ototrofluktur; ayının fotosentez ya da kemosentez yaptığına dair veri yok."
+   ],
+   "commonError": "Bitkisel besin yiyen canlının bitkinin özelliklerini de taşıdığını sanmak.",
+   "check": "Ayıyı besinsiz bırakıp yalnız ışık ve CO₂ versen yaşayamaz; bu heterotrof olduğunu doğrular."
+  }
+ },
+ {
+  "id": "f014-bio-ekoloji-giris-7",
+  "h": "166fe4169caf1a",
+  "guidance": {
+   "knowledge": [
+    "Tür zenginliği: bir alanda bulunan farklı tür sayısı; birey sayısını göstermez.",
+    "Ekoton (geçiş kuşağı): iki farklı ekosistemin birleştiği bölge, örneğin orman ile çayır arası.",
+    "Verinin sınırı: yalnız ölçülen nicelik ve ölçülen yerler hakkında sonuç çıkarılabilir."
+   ],
+   "strategy": "Önce hangi niceliğin ölçüldüğünü (tür sayısı) ve nerede ölçüldüğünü (yalnız bu iki alan) belirle; bu sınırı aşan seçenekleri ele.",
+   "steps": [
+    "Ölçülen: tür sayısı. Orman 8, geçiş kuşağı 12.",
+    "12 > 8 olduğundan bu örneklemede geçiş kuşağının tür zenginliği daha yüksek.",
+    "Birey sayısı, madde döngüsü ya da bütün ekotonlar ölçülmedi; bunlardan söz eden seçenekler elenir."
+   ],
+   "optionReasons": [
+    "Birey sayısı ölçülmedi; üstelik tek örnekten her ekoton için kesin genelleme yapılıyor.",
+    "Doğru: ölçülen tür sayısı yalnız bu iki alan için karşılaştırılıyor, 12 > 8.",
+    "Madde döngüsü hızı hiç ölçülmedi; tür sayısından döngü hızı çıkarılamaz.",
+    "Tür sayısını birey sayısıyla karıştırır; daha çok tür, her türden daha çok birey demek değildir.",
+    "Tek bir alanın 12 tür içermesini bütün dünyaya genelleştirir."
+   ],
+   "commonError": "Tek örneklemden elde edilen tür sayısını birey sayısına ya da bütün ekotonlara genellemek.",
+   "check": "Seçenekte 'her', 'bütün', 'kesin' gibi genelleme ya da ölçülmeyen bir nicelik varsa veri sınırını aşıyordur; doğru seçenekte ikisi de yok."
+  }
+ },
+ {
+  "id": "f014-bio-ekoloji-giris-8",
+  "h": "1b2819f31cc67b",
+  "guidance": {
+   "knowledge": [
+    "Popülasyon yoğunluğu: birim alandaki birey sayısı; yoğunluk = birey sayısı / alan.",
+    "Birimi birey/m²'dir; birey sayısı ile yoğunluk farklı niceliklerdir."
+   ],
+   "strategy": "Birey sayısı iki alanda aynı (24), alanlar farklı; yoğunluğu formülle her alan için ayrı hesapla.",
+   "steps": [
+    "A alanı: 24 / 6 = 4 birey/m².",
+    "B alanı: 24 / 12 = 2 birey/m².",
+    "Birey sayıları ikisinde de 24; yoğunluk A'da 4, B'de 2 birey/m²'dir."
+   ],
+   "optionReasons": [
+    "Alan değerlerini (6 m², 12 m²) birey sayısı sanır; her iki alanda da 24 birey var.",
+    "Oranı ters kurar: alan büyüdükçe yoğunluk küçülür, B'nin yoğunluğu A'nınkinin yarısıdır.",
+    "Doğru: 24 / 6 = 4 ve 24 / 12 = 2 birey/m²; birey sayısı ikisinde de 24.",
+    "Birey sayısı eşit diye yoğunluğu da eşit sanır; alanlar farklı olduğu için yoğunluk farklıdır.",
+    "Bölmek yerine çarpma yapar ya da birey sayısını yazar: A'da 24, B'de 24 · 2 = 48 gibi hatalı değer."
+   ],
+   "commonError": "Yoğunluğu hesaplarken birey sayısını alanla bölmek yerine çarpmak ya da alanı birey sayısı sanmak.",
+   "check": "Geri hesapla: 4 birey/m² · 6 m² = 24 ve 2 birey/m² · 12 m² = 24; iki alanda da birey sayısı tutuyor."
+  }
+ },
+ {
+  "id": "f014-bio-ekoloji-giris-9",
+  "h": "17e4d4353985c7",
+  "guidance": {
+   "knowledge": [
+    "Kontrollü deney: yalnız bir etken (bağımsız değişken) değiştirilir, diğerleri sabit tutulur.",
+    "Sınırlayıcı faktör: en kıt olan etken büyümeyi sınırlar; o etken kıt kaldıkça başka etkeni artırmak sonucu değiştirmeyebilir."
+   ],
+   "strategy": "Soru 'kesin olarak ulaşılamaz' diyor; deneyin yalnız tek bir koşulda (az su) yapıldığını dikkate alıp genelleme yapan seçeneği ara.",
+   "steps": [
+    "Deneyde değiştirilen ışık, sabit tutulan su (az ve eşit).",
+    "Sonuç: bu koşulda büyüme farkı yok. Su sınırlayıcı olduğu için ışık etkisi görünmemiş olabilir.",
+    "Tek koşuldan 'ışık bütün koşullarda gereksiz' demek genellemedir; kesin çıkarılamaz."
+   ],
+   "optionReasons": [
+    "Bu doğrudan gözlemdir; deneyde büyüme farkı görülmediği verilmiş.",
+    "Deney tasarımında yalnız ışık değiştirilmiş; bu bilgi sorunun içinde açıkça var.",
+    "Su her iki grupta az ve eşit tutulmuş; verilen tasarımın tekrarıdır.",
+    "Doğru: tek ve su kıtlığı olan koşuldan ışığın her koşulda gereksiz olduğu sonucu çıkarılamaz.",
+    "Su sınırlayıcı olabileceği için yeterli suyla yeni deney mantıklı bir sonraki adımdır."
+   ],
+   "commonError": "Tek koşulda etkisi görülmeyen bir etkenin hiçbir koşulda etkisi olmadığını sanmak.",
+   "check": "Bitkilerin fotosentez için ışığa gereksinim duyduğu bilinir; deneyin bunu göstermemesi suyun sınırlayıcı olmasıyla açıklanır, yani genelleme yanlıştır."
+  }
+ },
+ {
+  "id": "f014-bio-ekoloji-giris-10",
+  "h": "1687935807c7df",
+  "guidance": {
+   "knowledge": [
+    "Ekosistem: bir bölgedeki canlı toplulukları (komünite) ile etkileştikleri cansız çevrenin (sıcaklık, pH, ışık) bütünü.",
+    "Biyosfer: Dünya'da canlıların bulunduğu bütün katman; yerel bir araştırma bu ölçeğe çıkmaz."
+   ],
+   "strategy": "Listede hem farklı türler hem cansız etkenler varsa kapsam komünitenin bir üstüne, ekosisteme çıkar; ölçeğin yerel olduğunu da hesaba kat.",
+   "steps": [
+    "Kurbağa, alg, bakteri farklı türlerdir: komünite.",
+    "Sıcaklık, pH ve ışık cansız etkenlerdir ve canlılarla etkileşimleri incelenecek.",
+    "Canlı topluluklar ile cansız çevre birlikte ve yerel ölçekte: ekosistem."
+   ],
+   "optionReasons": [
+    "Listede birden çok tür ve cansız etken var; tek organizma kapsamı çok dar kalır.",
+    "Birden çok tür olduğunu ve cansız etkenleri atlar.",
+    "Canlıları dışarıda bırakır; listede kurbağa, alg ve bakteri de var.",
+    "Yerel bir araştırmayı bütün Dünya ölçeğine genişletir; liste tek bir su ortamını anlatıyor.",
+    "Doğru: farklı türler ve etkileştikleri sıcaklık, pH, ışık birlikte ekosistemi oluşturur."
+   ],
+   "commonError": "Komünite ile ekosistemi karıştırmak; cansız çevre eklenince ad ekosisteme döner.",
+   "check": "Listeden sıcaklık, pH ve ışığı çıkarsan geriye komünite kalır; bunlar listede olduğuna göre bir üst düzey, ekosistem doğrudur."
+  }
+ },
+ {
+  "id": "f014-bio-besin-piramidi-1",
+  "h": "1ea048c444200a",
+  "guidance": {
+   "knowledge": [
+    "Trofik düzey: besin zincirindeki basamak; üretici 1., birincil tüketici 2., ikincil tüketici 3. düzeydir.",
+    "Aktarım verimi: bir düzeyin üretiminin bir üst düzeye geçen oranı; %10 verim, enerjinin 0,10 ile çarpılması demektir."
+   ],
+   "strategy": "Üreticiden ikincil tüketiciye iki aktarım var; her aktarımda enerji 0,10 ile çarpılır. Yüzdeler toplanmaz, art arda çarpılır.",
+   "steps": [
+    "Üretici → birincil tüketici: 10.000 · 0,10 = 1.000 J/m²/yıl.",
+    "Birincil → ikincil tüketici: 1.000 · 0,10 = 100 J/m²/yıl.",
+    "İkincil tüketicinin üretimi 100 J/m²/yıl, yani başlangıcın %1'i."
+   ],
+   "optionReasons": [
+    "Doğru: 10.000 · 0,10 · 0,10 = 100.",
+    "Bir aktarım fazla yapar: 10.000 · 0,1³ = 10; bu üçüncül tüketicinin değeridir.",
+    "Yalnız bir aktarım yapar: 10.000 · 0,10 = 1.000; bu birincil tüketicinin değeridir.",
+    "Yüzdeleri toplar: %10 + %10 = %20, 10.000 · 0,20 = 2.000.",
+    "Kaybolan kısmı aktarılan sanır: 10.000 · 0,90 = 9.000."
+   ],
+   "commonError": "Ardışık verim yüzdelerini çarpmak yerine toplamak.",
+   "check": "İki aktarımda toplam oran 0,1 · 0,1 = 0,01; 10.000'in %1'i 100 eder, sonuç tutuyor."
+  }
+ },
+ {
+  "id": "f014-bio-besin-piramidi-2",
+  "h": "15bd50734fbfbb",
+  "guidance": {
+   "knowledge": [
+    "Aktarım verimi: bir trofik düzeyin üretiminin bir üst düzeye geçen kesri; %20 verim 0,20 ile çarpmak demektir.",
+    "Bu soruda %20 bir model koşuludur; her ekosistemde sabit bir değer değildir."
+   ],
+   "strategy": "Üreticiden son düzeye iki aktarım var; her aktarımda 0,20 ile çarp, yüzdeleri toplama.",
+   "steps": [
+    "İlk aktarım: 10.000 · 0,20 = 2.000 J/m²/yıl.",
+    "İkinci aktarım: 2.000 · 0,20 = 400 J/m²/yıl.",
+    "Son düzeyin üretimi 400 J/m²/yıl."
+   ],
+   "optionReasons": [
+    "Verimi bir aktarımda %20, diğerinde %10 alır: 10.000 · 0,2 · 0,1 = 200.",
+    "Doğru: 10.000 · 0,20 · 0,20 = 400.",
+    "Yalnız ilk aktarımı yapar: 10.000 · 0,20 = 2.000.",
+    "Yüzdeleri toplar: %20 + %20 = %40, 10.000 · 0,40 = 4.000.",
+    "Verilen %20 yerine alışılmış %10'u kullanır: 10.000 · 0,1 · 0,1 = 100."
+   ],
+   "commonError": "Soruda verilen verimi bırakıp ezberdeki %10 kuralını uygulamak.",
+   "check": "Toplam oran 0,2 · 0,2 = 0,04; 10.000'in %4'ü 400 eder."
+  }
+ },
+ {
+  "id": "f014-bio-besin-piramidi-3",
+  "h": "1c2ca923320d4d",
+  "guidance": {
+   "knowledge": [
+    "Sayı piramidi: her trofik düzeydeki birey sayısını gösterir; tek büyük üretici çok sayıda tüketiciyi besleyebildiği için ters olabilir.",
+    "Biyokütle piramidi kütleyi, enerji piramidi belli sürede aktarılan enerjiyi gösterir; enerji piramidi hiçbir zaman ters olmaz."
+   ],
+   "strategy": "Verilen tek nicelik birey sayısıdır; yalnız sayı piramidi hakkında yorum yapılabilir.",
+   "steps": [
+    "Üretici 1 meşe, birincil tüketici 100 tırtıl: tabanda 1, üstünde 100.",
+    "Üst basamak tabandan büyük olduğu için sayı piramidinin bu kısmı terstir.",
+    "Kütle ve enerji ölçülmediğinden onlar hakkında yorum yapılamaz; doğru yorum sayı piramidinin ters olabileceğidir."
+   ],
+   "optionReasons": [
+    "Enerji piramidi her zaman düzdür; ayrıca enerji ölçülmeden sayıdan enerji sonucu çıkarılmış.",
+    "Kütle ölçülmedi; tek meşe ağacının kütlesi yüz tırtıldan büyük olabilir.",
+    "Doğru: 1 meşeye 100 tırtıl düşmesi sayı piramidini bu basamakta ters yapar.",
+    "Meşe, tırtıl ve kuşun kütleleri açıkça farklıdır; veri bu varsayımı desteklemez.",
+    "Meşe fotosentezle besin üretir ve tüketicileri besler; enerji üretmediğini söylemek yanlıştır."
+   ],
+   "commonError": "Sayı piramidi ters diye enerji ya da biyokütle piramidinin de ters olduğunu sanmak.",
+   "check": "Meşe yerine çim olsaydı yüzlerce çim bitkisi tabanda olur, piramit düz görünürdü; terslik üreticinin iri olmasından kaynaklanır."
+  }
+ },
+ {
+  "id": "f014-bio-besin-piramidi-4",
+  "h": "15b2dc01696de0",
+  "guidance": {
+   "knowledge": [
+    "Biyokütle: belli anda bir düzeydeki canlıların toplam (kuru) kütlesi; anlık stoktur.",
+    "Üretim hızı: belli sürede oluşan yeni biyokütle ya da enerji; enerji piramidi bu hıza dayanır.",
+    "Plankton hızla çoğalır ve hızla tüketilir; anlık stoğu düşük, üretim hızı yüksek olabilir."
+   ],
+   "strategy": "Ölçülen niceliğin anlık kütle olduğunu fark et; anlık kütleden enerji akışı ya da üretim hızı çıkarılamaz.",
+   "steps": [
+    "Üretici 4 g/m², otçul 20 g/m²: o anda tüketici kütlesi daha büyük, biyokütle piramidi ters.",
+    "Bu bir anlık ölçümdür; üreticiler hızla yenilenip yenildiği için stokları küçük kalabilir.",
+    "Enerji akışı için dönemlik üretim hızı gerekir; doğru yorum anlık biyokütlenin ters olabileceğidir."
+   ],
+   "optionReasons": [
+    "Anlık kütle oranını (20 / 4 = 5) enerji üretimi sanır; kütle ile dönemlik enerji farklı niceliklerdir.",
+    "Otçulların besini üreticilerdir; üreticisiz göl tüketiciyi besleyemez.",
+    "Bu ölçüm biyokütle piramidinin ters olabildiğini gösteriyor; 'bütün piramitler düz' iddiası veriyle çelişir.",
+    "Doğru: anlık stok ters olabilir; enerji akışını yorumlamak için üretim hızı ayrıca bilinmeli.",
+    "Enerji yoktan var edilemez; tüketici enerjisi hızla yenilenen üreticilerden gelir."
+   ],
+   "commonError": "Anlık biyokütleyi bir dönemde aktarılan enerjiyle aynı nicelik sanmak.",
+   "check": "Bir yıl boyunca üreticinin toplam üretimi ölçülse tüketicinin aldığından büyük çıkar; enerji piramidi ters olamaz, terslik yalnız anlık stokta."
+  }
+ },
+ {
+  "id": "f014-bio-besin-piramidi-5",
+  "h": "03eb7f148bd32b",
+  "guidance": {
+   "knowledge": [
+    "Trofik düzey sayımı üreticiden başlar: üretici 1., onu yiyen 2., onu yiyen 3. düzeydir.",
+    "Tüketici sırası ise ilk tüketiciden başlar: birincil (otçul), ikincil, üçüncül tüketici. Bu yüzden tüketici sırası trofik düzeyden hep bir eksiktir."
+   ],
+   "strategy": "İki ayrı sayım yap: trofik düzeyi üreticiden, tüketici sırasını ilk tüketiciden say.",
+   "steps": [
+    "Trofik düzey: ot 1., çekirge 2., kurbağa 3.",
+    "Tüketici sırası: çekirge birincil, kurbağa ikincil tüketici.",
+    "Kurbağa ikincil tüketici ve üçüncü trofik düzeydedir."
+   ],
+   "optionReasons": [
+    "Kurbağa fotosentez yapmaz, üretici değildir; ikinci düzey de çekirgenin yeridir.",
+    "Birinci düzey ot, birincil tüketici çekirgedir; kurbağayı zincirin başına koymuş.",
+    "İki sayımı ters yönde kaydırır: tüketici sırasını bir fazla, trofik düzeyi bir eksik verir.",
+    "Kurbağa canlı av yiyen bir tüketicidir; ayrıştırıcı ölü maddeyle beslenir.",
+    "Doğru: ot 1., çekirge 2., kurbağa 3. düzey; tüketici olarak kurbağa ikincildir."
+   ],
+   "commonError": "Tüketici sırası ile trofik düzeyi aynı sayı sanmak.",
+   "check": "Kural: trofik düzey = tüketici sırası + 1; ikincil (2) + 1 = 3, sonuç tutarlı."
+  }
+ },
+ {
+  "id": "f014-bio-besin-piramidi-6",
+  "h": "181635a693d83d",
+  "guidance": {
+   "knowledge": [
+    "Ayrıştırıcı: ölü organizma ve atıklardaki organik maddeyi parçalayarak beslenen heterotrof (bakteri, mantar).",
+    "Detritus: ölü organik kalıntı ve atık; her trofik düzeyden oluşabilir."
+   ],
+   "strategy": "Ayrıştırıcının besin kaynağını düşün: ölü madde hangi düzeylerden gelebilir?",
+   "steps": [
+    "Üreticiler, otçullar ve yırtıcılar ölür, atık üretir.",
+    "Bu kalıntıların hepsi ayrıştırıcıların besinidir.",
+    "Ayrıştırıcılar tek bir basamağa bağlı değildir; bütün düzeylerin ölü madde ve atıklarını kullanabilir."
+   ],
+   "optionReasons": [
+    "Doğru: her düzeyden gelen ölü madde ve atık ayrıştırıcıların besinidir.",
+    "Piramit çiziminde ayrıştırıcının en üstte gösterilmesini beslenme ilişkisi sanır; ayrıştırıcı tüm düzeylerden beslenir.",
+    "Ayrıştırıcı canlı dokuyu avlamaz, ölü organik maddeyle beslenir.",
+    "Ayrıştırıcılar hazır organik maddeyi kullanır; bu onları heterotrof yapar.",
+    "Isı enerjisi canlılar tarafından yeniden besin enerjisine çevrilemez; enerji döngüsel değildir."
+   ],
+   "commonError": "Ayrıştırıcıyı yalnız zincirin en ucundaki tüketiciden beslenen bir basamak sanmak.",
+   "check": "Bir yaprak da bir yırtıcı leşi de çürür; ikisini de çürüten ayrıştırıcıdır, yani tek düzeye bağlı değildir."
+  }
+ },
+ {
+  "id": "f014-bio-besin-piramidi-7",
+  "h": "06913912f268c7",
+  "guidance": {
+   "knowledge": [
+    "Bir düzeydeki enerjinin bir kısmı solunumla ısıya dönüşür, bir kısmı yenmeden kalır, bir kısmı sindirilmeden atılır.",
+    "Yenmeyen ve atılan kısım detritus olarak ayrıştırıcılara geçebilir; bu enerji henüz ısıya dönüşmemiştir."
+   ],
+   "strategy": "Soru 'söylenemez' diyor; aktarılmayan enerjinin gidebileceği bütün yolları say ve 'tamamı tek yola gitti' diyen seçeneği bul.",
+   "steps": [
+    "Aktarılmayan enerji üç yola ayrılır: solunumla ısı, yenmeyen organik madde, atık (detritus).",
+    "Bu yollar aynı anda ve tamamen ısıya dönüşmez; yenmeyen madde organik bağlarında enerji taşır.",
+    "'Hepsi aynı anda doğrudan ısıya dönüşmüştür' ifadesi bu yüzden söylenemez."
+   ],
+   "optionReasons": [
+    "Yenmeyen yaprak, kemik gibi kısımlar organik madde olarak kalır; söylenebilir.",
+    "Doğru: yenmeyen ve atılan kısımlar ısıya dönüşmeden organik maddede kalır, tamamını ısı saymak yanlış.",
+    "Ölü madde ve atıklar ayrıştırıcıların yoluna girer; söylenebilir.",
+    "Solunumla açığa çıkan enerjinin bir kısmı ısıya dönüşür; söylenebilir.",
+    "Aktarım verimi hesabı yalnız üst tüketicinin üretimine geçeni sayar; geçmeyen enerji hesaba katılmaz."
+   ],
+   "commonError": "Bir üst basamağa geçmeyen enerjinin hepsini solunumla ısıya giden enerji sanmak.",
+   "check": "Yenmeyen bir ağaç gövdesi yıllarca durabilir ve sonra ayrıştırıcıya enerji verir; bu enerji henüz ısı olmamıştır."
+  }
+ },
+ {
+  "id": "f014-bio-besin-piramidi-8",
+  "h": "0aacd1c026f5cb",
+  "guidance": {
+   "knowledge": [
+    "Biyoakümülasyon: kalıcı bir maddenin tek bir canlının dokusunda zamanla birikmesi; giriş, uzaklaştırmadan hızlıdır.",
+    "Biyolojik büyütülme (trofik büyütülme): maddenin derişiminin besin zincirinde üst düzeylere çıkıldıkça artması; farklı düzeyler karşılaştırılır."
+   ],
+   "strategy": "Soru yalnız tek bir bireyi ve zamanı veriyor; bireysel birikim ile düzeyler arası artışı ayır.",
+   "steps": [
+    "Ölçüm tek bir balıkta, yaşamı boyunca yapılmış.",
+    "Farklı trofik düzeyler karşılaştırılmamış; yalnız birey içindeki zamanla artış var.",
+    "Bu tablo biyoakümülasyondur."
+   ],
+   "optionReasons": [
+    "Derişim artışı enerji piramidiyle ilgili değildir; enerji piramidi zaten ters olmaz.",
+    "Azot fiksasyonu atmosfer azotunun amonyağa bağlanmasıdır; kalıcı madde birikimiyle ilgisi yok.",
+    "Doğru: tek bireyin dokusunda zamanla artan derişim biyoakümülasyondur.",
+    "Nitrifikasyon amonyumun nitrit ve nitrata oksidasyonudur; madde birikimi değildir.",
+    "Trofik büyütülme düzeyler arası karşılaştırma ister; tek bireyden bütün türlere genelleme de yapılmış."
+   ],
+   "commonError": "Tek bireydeki birikimi besin zincirindeki büyütülmeyle karıştırmak.",
+   "check": "Soruda yalnız bir balık var, avı ya da avcısı yok; düzey karşılaştırması olmadan büyütülme denemez."
+  }
+ },
+ {
+  "id": "f014-bio-besin-piramidi-9",
+  "h": "1fbfe92ce0e23d",
+  "guidance": {
+   "knowledge": [
+    "Trofik kurallar enerji akışıyla ilgilidir: üretici ilk düzey, her aktarımda enerjinin bir kısmı ısıya dönüşür, hesapta aynı alan ve süre kullanılır.",
+    "Gelişmişlik bilimsel bir trofik ölçüt değildir; üreme hızı türe ve koşula göre değişir."
+   ],
+   "strategy": "Soru 'genel kural olarak kullanılamaz' diyor; enerji akışıyla ilgili doğru kuralları ele, geriye kalan ölçütsüz genellemeyi bul.",
+   "steps": [
+    "Üreticiler ilk düzey, solunumla ısı kaybı ve aynı zaman temeli enerji akışının doğru kurallarıdır.",
+    "Detritusun farklı düzeylerden gelmesi de doğrudur.",
+    "Gelişmişlik ve üreme hızının düzeyle zorunlu sıralanması bilimsel bir kural değildir."
+   ],
+   "optionReasons": [
+    "Üreticiler besin zincirinin tabanıdır; genel kuraldır.",
+    "Her düzeyde solunumla enerjinin bir kısmı ısıya dönüşür; genel kuraldır.",
+    "Farklı süre ya da alan karşılaştırılırsa verim anlamsızlaşır; aynı zaman temeli zorunludur.",
+    "Doğru: gelişmişlik ölçüt değildir, üreme hızı türe göre değişir; zorunlu sıralama kurulamaz.",
+    "Ölü madde ve atık her düzeyden ayrıştırıcılara gidebilir; doğru bir ifadedir."
+   ],
+   "commonError": "Üst trofik düzeydeki canlıları daha gelişmiş ya da daha yavaş üreyen sanmak.",
+   "check": "Bir kartal fareden yavaş ürer ama bir köpekbalığından hızlı olabilir; düzeyle zorunlu bir sıralama yoktur."
+  }
+ },
+ {
+  "id": "f014-bio-besin-piramidi-10",
+  "h": "0015525dad683f",
+  "guidance": {
+   "knowledge": [
+    "Sayı piramidi yalnız birey sayılarıyla çizilir; oranlar da bu sayılardan bulunur.",
+    "Trofik enerji aktarım verimi = üst düzeyin üretimi / alt düzeyin üretimi; birey sayısı değil, enerji ya da üretim verisi gerekir."
+   ],
+   "strategy": "Her niceliğin hangi veriye dayandığını sor: birey sayısıyla hesaplanabiliyor mu, yoksa kütle ya da enerji mi gerekiyor?",
+   "steps": [
+    "Birey adetleri ve iki düzeyin oranı doğrudan sayılardan bulunur.",
+    "Sayı piramidinde hangi basamağın büyük olduğu da sayılarla karşılaştırılır.",
+    "Aktarım verimi için her düzeyin enerji üretimi gerekir; bu veri yok, hesaplanamaz."
+   ],
+   "optionReasons": [
+    "Üretici birey sayısı verinin kendisidir; doğrudan okunur.",
+    "Birincil tüketici sayısı da verilmiştir; doğrudan okunur.",
+    "İki birey sayısının oranı basit bölmeyle bulunur.",
+    "Sayı piramidinin biçimi birey sayılarının karşılaştırılmasıyla belirlenir.",
+    "Doğru: verim enerji ya da üretim verisi ister; birey sayısı bu bilgiyi vermez."
+   ],
+   "commonError": "Birey sayısı oranını enerji aktarım verimi sanmak.",
+   "check": "Bir inek ve bin çekirge aynı otu yiyebilir; sayılar çok farklıyken enerji benzer olabilir, yani sayıdan verim çıkmaz."
+  }
+ },
+ {
+  "id": "f014-bio-besin-zinciri-agi-1",
+  "h": "1ff7a10d281e5d",
+  "guidance": {
+   "knowledge": [
+    "Besin zinciri: kimin kimi yediğini gösteren sıra.",
+    "Bu soruda ok besinden tüketiciye çizilir: A→B, B'nin A'yı yediği anlamına gelir.",
+    "Doğrudan besin: bir canlıya ok ile doğrudan bağlanan önceki halka; daha gerideki halkalar dolaylı kaynaktır."
+   ],
+   "strategy": "Okun yönünü kullan: kurbağaya hangi canlıdan ok geliyor, ona bak.",
+   "steps": [
+    "Zincirde çekirge→kurbağa oku var.",
+    "Ok besinden tüketiciye olduğundan kurbağa çekirgeyi yer.",
+    "Kurbağanın doğrudan besini çekirgedir."
+   ],
+   "optionReasons": [
+    "Doğru: çekirgeden kurbağaya ok geliyor, kurbağa çekirgeyi doğrudan yer.",
+    "Ot zincirde iki halka geride; kurbağaya enerjisi çekirge üzerinden dolaylı ulaşır.",
+    "Okun yönünü ters okur; kurbağa→şahin oku şahinin kurbağayı yediğini gösterir.",
+    "Güneş enerji kaynağıdır ama besin değildir ve zincirde canlı halka olarak yer almaz.",
+    "Bir canlının kendisi kendi besini olamaz; zincirde kurbağaya kendinden ok yok."
+   ],
+   "commonError": "Okun yönünü 'yer' anlamında okuyup yırtıcıyı besin sanmak.",
+   "check": "Oku 'şuna yenir' diye oku: çekirge kurbağaya yenir; cümle doğru kuruluyor."
+  }
+ },
+ {
+  "id": "f014-bio-besin-zinciri-agi-2",
+  "h": "0e1e2d68655d54",
+  "guidance": {
+   "knowledge": [
+    "Besin ağı: birbirine bağlı birden çok besin zinciri; bir canlı farklı zincirlerde farklı düzeyde olabilir.",
+    "Trofik düzey üreticiden sayılır: üretici 1., otçul 2., onu yiyen 3. düzeydir."
+   ],
+   "strategy": "Şahinin bulunduğu her yolu ayrı say; her yolda şahinin sıra numarası onun o yoldaki düzeyidir.",
+   "steps": [
+    "Kısa yol: ot (1), fare (2), şahin (3).",
+    "Uzun yol: ot (1), çekirge (2), kurbağa (3), şahin (4).",
+    "Şahin üçüncü ve dördüncü trofik düzeyde yer alır."
+   ],
+   "optionReasons": [
+    "Birinci düzey yalnız üreticiye, yani ota aittir; şahin fotosentez yapmaz.",
+    "Doğru: kısa yolda 3., uzun yolda 4. düzeydedir.",
+    "İkinci düzey otçulların yeridir (fare, çekirge); şahin otçulları yer.",
+    "Bir basamak fazla sayar ya da Güneş'i de basamak ekler; uzun yolda bile şahin 4. düzeyde.",
+    "Fareyi ve uzun yola eklenen hayali basamağı şahin sanır; iki değer de hiçbir yolla tutmaz."
+   ],
+   "commonError": "Besin ağında bir canlıya tek bir sabit trofik düzey vermek.",
+   "check": "Kısa yolda halka sayısı 3, uzun yolda 4; şahin her yolun son halkası olduğu için bu sayılar düzeyini verir."
+  }
+ },
+ {
+  "id": "f014-bio-besin-zinciri-agi-3",
+  "h": "00675b0b12f023",
+  "guidance": {
+   "knowledge": [
+    "Besin ağı modeli yalnız beslenme ilişkilerini (okları) gösterir; nüfus büyüklüğünü, hızını vermez.",
+    "Bir canlı modelden çıkarılınca ona giren ve ondan çıkan oklar silinir; diğer yollar kalır."
+   ],
+   "strategy": "Soru 'yalnız çizime dayanarak kesin' diyor; nüfus sayısı ya da zaman içeren tahminleri ele, yalnız çizimin değişimini söyleyen sonucu bul.",
+   "steps": [
+    "Kurbağa çıkınca çekirge→kurbağa ve kurbağa→şahin okları silinir.",
+    "Ot→fare→şahin yolu kaldığı için şahinin besini tamamen kesilmez.",
+    "Nüfusların ne kadar değişeceği çizimden bilinemez; kesin olan okların kalkmasıdır."
+   ],
+   "optionReasons": [
+    "Fare yolu sürdüğü için şahinin besini tamamen bitmez; 'hemen hepsi ölür' çizimden çıkmaz.",
+    "Çekirgenin artabileceği düşünülebilir ama 'tam iki kat' gibi bir sayı çizimde yok.",
+    "Doğru: kurbağaya giren ve çıkan beslenme okları modelden kalkar; bu çizimden kesin okunur.",
+    "Şahin fareye yönelebilir ve fare sayısı değişebilir; 'hiç değişemez' demek dayanaksızdır.",
+    "Çekirge artarsa ot azalabilir bile; 'her koşulda artar' kesin değildir."
+   ],
+   "commonError": "Besin ağından nüfusların kesin sayısal değişimini çıkarmaya çalışmak.",
+   "check": "Çizim yalnız okları içerir; okları silmek tek kesin işlem, sayı içeren her iddia ek veri ister."
+  }
+ },
+ {
+  "id": "f014-bio-besin-zinciri-agi-4",
+  "h": "0f53059649f930",
+  "guidance": {
+   "knowledge": [
+    "Trofik düzey üreticiden sayılır: üretici 1., üreticiyi yiyen 2., otçulu yiyen 3. düzey.",
+    "Karma beslenen canlı, her besin yolunda ayrı bir düzeyde sayılır."
+   ],
+   "strategy": "Kuşun iki besin yolunu ayrı ayrı yaz ve her yolda kuşun sırasını say.",
+   "steps": [
+    "Tohum yolu: üretici (1) → kuş (2).",
+    "Böcek yolu: üretici (1) → otçul böcek (2) → kuş (3).",
+    "Kuş ikinci ve üçüncü düzeylerle ilişkilidir."
+   ],
+   "optionReasons": [
+    "Birinci düzey üreticidir; kuş tohum yese de üretici olmaz.",
+    "Bir yolda bile dört halka yok; en uzun yolda kuş 3. halka.",
+    "Her iki yola birer fazla basamak ekler; üçüncü düzey doğru ama beşinci yok.",
+    "Doğru: tohumda 2., otçul böcekte 3. düzeydedir.",
+    "Hiçbir yolda beş halka yok; karma beslenmeyi tek sabit düzeye zorlar."
+   ],
+   "commonError": "Karma beslenen canlıya tek bir düzey vermek ya da üreticiyi saymayı unutmak.",
+   "check": "Tüketici sırasıyla doğrula: tohum yiyen kuş birincil (2. düzey), böcek yiyen kuş ikincil (3. düzey) tüketicidir."
+  }
+ },
+ {
+  "id": "f014-bio-besin-zinciri-agi-5",
+  "h": "12b782604e3077",
+  "guidance": {
+   "knowledge": [
+    "Her geçişte (aktarımda) enerji verimle çarpılır; %10 verim 0,1 ile çarpmak demektir.",
+    "Güneş canlı değildir, trofik basamak sayılmaz; sayım üreticiden başlar."
+   ],
+   "strategy": "Üreticiden şahine kaç geçiş olduğunu say, her geçişte 0,1 ile çarp.",
+   "steps": [
+    "Geçişler: ot→çekirge, çekirge→kurbağa, kurbağa→şahin; toplam 3 geçiş.",
+    "10.000 · 0,1 = 1.000 (çekirge); 1.000 · 0,1 = 100 (kurbağa).",
+    "100 · 0,1 = 10 J/m²/yıl (şahin)."
+   ],
+   "optionReasons": [
+    "Güneş'i de basamak sayıp 4 geçiş yapar: 10.000 · 0,1⁴ = 1.",
+    "İki geçiş yapar, kurbağada durur: 10.000 · 0,1² = 100.",
+    "Tek geçiş yapar, çekirgede durur: 10.000 · 0,1 = 1.000.",
+    "Yüzdeleri toplar: %10 · 3 = %30, 10.000 · 0,3 = 3.000.",
+    "Doğru: 10.000 · 0,1 · 0,1 · 0,1 = 10."
+   ],
+   "commonError": "Halka sayısını geçiş sayısıyla karıştırmak: dört halka arasında üç geçiş vardır.",
+   "check": "Üç geçişte toplam oran 0,1³ = 0,001; 10.000 · 0,001 = 10, tutuyor."
+  }
+ },
+ {
+  "id": "f014-bio-besin-zinciri-agi-6",
+  "h": "0bface4b9a57a8",
+  "guidance": {
+   "knowledge": [
+    "Detritus: ölü organik madde ve atık; üretici, otçul, yırtıcı gibi her düzeyden gelebilir.",
+    "Ayrıştırıcı: detritusu parçalayarak beslenen heterotrof; enerjisini bu organik maddeden alır."
+   ],
+   "strategy": "Çizimdeki okları oku: ayrıştırıcıya hangi düzeylerden ölü madde geliyor?",
+   "steps": [
+    "Ayrıştırıcıya üreticiden, otçuldan ve yırtıcıdan ok var.",
+    "Bu okların hepsi ölü madde ve atık taşır.",
+    "Ayrıştırıcılar farklı trofik düzeylerin detritusunu kullanabilir."
+   ],
+   "optionReasons": [
+    "Doğru: üç farklı düzeyden gelen ölü madde ayrıştırıcıya ulaşıyor.",
+    "Ayrıştırıcı canlı avlamaz; yırtıcının yalnız ölüsünü ve atığını kullanır, ayrıca diğer düzeylerden de besin alır.",
+    "Ayrıştırıcı heterotroftur; organik maddeye ve onun enerjisine gereksinim duyar.",
+    "Enerji yoktan var edilemez; ayrıştırma organik maddedeki enerjiyi kullanır, Güneş enerjisi yaratmaz.",
+    "Üreticiler de ölür, yaprak döker; üreticiden ayrıştırıcıya ok doğrudur."
+   ],
+   "commonError": "Ayrıştırıcıyı yalnız zincirin en üstündeki canlıdan beslenen bir halka sanmak.",
+   "check": "Çürüyen yaprak (üretici) ve leş (yırtıcı) aynı toprakta ayrışır; ayrıştırıcı tek düzeye bağlı değildir."
+  }
+ },
+ {
+  "id": "f014-bio-besin-zinciri-agi-7",
+  "h": "00c96286eb5196",
+  "guidance": {
+   "knowledge": [
+    "Besin ağı olası beslenme yollarını gösterir; nüfusun ne kadar ve ne hızla değişeceğini vermez.",
+    "Popülasyon büyüklüğü doğum, ölüm, göç, kaynak bolluğu ve başka türlerle etkileşimlerle belirlenir."
+   ],
+   "strategy": "Gerçek nüfus tahmini için nüfusu değiştiren süreçlere ait veriye gereksinim var; çizimin görsel özelliklerini ele.",
+   "steps": [
+    "Ağ yalnız 'kim kimi yer' bilgisini taşır.",
+    "Nüfus büyüklüğü üreme, ölüm, başka avcılar ve kaynak koşullarına bağlıdır.",
+    "Kesin tahmin için bu dinamik veriler eklenmelidir."
+   ],
+   "optionReasons": [
+    "Okun rengi çizim tercihidir; canlıların sayısı hakkında bilgi taşımaz.",
+    "Doğru: üreme, ölüm, alternatif avcılar ve kaynaklar nüfusu doğrudan belirler.",
+    "Kenar boşluğu sayfa düzenidir; biyolojik bir veri değildir.",
+    "Adların alfabetik sırası rastgeledir, beslenme ya da üremeyle ilgisi yoktur.",
+    "Kutunun yukarıda çizilmesi trofik sırayı gösterebilir ama nüfus büyüklüğünü vermez."
+   ],
+   "commonError": "Besin ağı çizimine bakarak nüfus sayılarını kesin tahmin etmeye çalışmak.",
+   "check": "Aynı ağ çizimi iki farklı gölde aynı kalabilir ama nüfuslar farklı olur; demek ki nüfus için çizim dışı veri gerekir."
+  }
+ },
+ {
+  "id": "f014-bio-besin-zinciri-agi-8",
+  "h": "1928ba3be6b3fd",
+  "guidance": {
+   "knowledge": [
+    "Bu ağda ok besinden tüketiciye çizilir: üretici→fare, farenin üreticiyi yediğini gösterir.",
+    "Beslenmeyle organik madde ve içindeki enerjinin bir kısmı tüketiciye geçer; kalanı yenmeden, atılarak ya da ısıyla kaybolur."
+   ],
+   "strategy": "Okun yönünü tanıma göre çöz, sonra aktarımın tam mı kısmi mi olduğuna bak.",
+   "steps": [
+    "Ok üreticiden fareye: fare üreticiyi yer.",
+    "Yenen organik maddenin enerjisinin bir kısmı fareye geçer.",
+    "Enerjinin tamamı aktarılmaz; doğru ifade 'bir bölümü fareye geçebilir' olandır."
+   ],
+   "optionReasons": [
+    "Fare ışık üretmez; ışığın kaynağı Güneş'tir, fare de fotosentez yapmaz.",
+    "Okun yönünü ters okur; ok besinden tüketiciye, yani fare üreticiyi tüketir.",
+    "Doğru: ok beslenmeyi gösterir, üreticinin organik maddesi ve enerjisinin bir kısmı fareye geçer.",
+    "Her aktarımda enerjinin bir kısmı ısı ve atık olarak kaybolur; kayıpsız aktarım olmaz.",
+    "Bu ok bir beslenme ilişkisidir; azot fiksasyonu atmosfer azotunun bağlanmasıdır."
+   ],
+   "commonError": "Okun yönünü ters okumak ya da enerjinin kayıpsız aktarıldığını sanmak.",
+   "check": "Oku 'fareye yenir' diye oku: üretici fareye yenir; cümle anlamlı, ters yönde okununca anlamsız."
+  }
+ },
+ {
+  "id": "f014-bio-besin-zinciri-agi-9",
+  "h": "070932190226fb",
+  "guidance": {
+   "knowledge": [
+    "Eşzamanlı değişim (korelasyon): iki niceliğin aynı dönemde birlikte değişmesi.",
+    "Neden-sonuç ilişkisi: bir değişimin diğerine yol açtığı; kanıtlamak için öteki etkenler kontrol edilmeli."
+   ],
+   "strategy": "Soru 'kanıtlamaz' diyor; gözlemin kendisini anlatan seçenekleri ele, gözlemden fazlasını iddia edeni bul.",
+   "steps": [
+    "Gözlem: yırtıcı azaldı, av arttı; ikisi farklı yönde değişti.",
+    "Bu dönemde yağış, kaynak, göç, hastalık gibi başka etkenler de değişmiş olabilir.",
+    "Tek ve kesin nedenin yırtıcı azalması olduğu bu gözlemle kanıtlanamaz."
+   ],
+   "optionReasons": [
+    "Bu gözlemin kendisidir; biri azalıp diğeri arttığı için iki değişken farklı yönde değişmiştir.",
+    "Av artışı doğrudan ölçülmüştür.",
+    "Yırtıcı azalması doğrudan ölçülmüştür.",
+    "Doğru: başka etkenler kontrol edilmeden tek ve kesin neden iddiası gözlemi aşar.",
+    "Başka etkenleri incelemek iyi bir araştırma adımıdır; kanıtlanması gereken bir iddia değildir."
+   ],
+   "commonError": "Birlikte değişen iki niceliği hemen neden-sonuç ilişkisine bağlamak.",
+   "check": "Aynı yıl yağış artıp otlar bollaşmış olsaydı av yine artabilirdi; başka bir açıklama mümkün olduğu için kesinlik yoktur."
+  }
+ },
+ {
+  "id": "f014-bio-besin-zinciri-agi-10",
+  "h": "1af1aefff13b95",
+  "guidance": {
+   "knowledge": [
+    "Her geçişte enerji verimle çarpılır; %10 verim 0,1 ile çarpmak demektir.",
+    "Geçiş sayısı = halka sayısı − 1; üç halkalı zincirde 2, dört halkalı zincirde 3 geçiş vardır."
+   ],
+   "strategy": "İki modeli ayrı hesapla; her birinde üretimin tamamı o yola verildiği için başlangıç 10.000 alınır.",
+   "steps": [
+    "Ot→fare→şahin: 2 geçiş. 10.000 · 0,1 · 0,1 = 100 J/m²/yıl.",
+    "Ot→çekirge→kurbağa→şahin: 3 geçiş. 10.000 · 0,1³ = 10 J/m²/yıl.",
+    "Sıra korunarak sonuç: 100 ve 10 J/m²/yıl."
+   ],
+   "optionReasons": [
+    "Her iki yolda birer geçiş eksik yapar: 10.000 · 0,1 = 1.000 ve 10.000 · 0,1² = 100.",
+    "Uzun yoldaki üçüncü geçişi unutur, iki modeli aynı uzunlukta sanır.",
+    "Sıralamayı ters çevirir ve kısa yola bir geçiş fazla verir; kısa yol daha çok enerji bırakır.",
+    "Yüzdeleri toplar: %10 · 2 = %20 ile 2.000, %10 · 3 = %30 ile 3.000.",
+    "Doğru: kısa yol 10.000 · 0,01 = 100, uzun yol 10.000 · 0,001 = 10."
+   ],
+   "commonError": "Halka sayısını geçiş sayısı sanıp bir çarpma fazla ya da eksik yapmak.",
+   "check": "Uzun yolda bir geçiş fazla var; o yüzden sonucu kısa yolun onda biri olmalı: 100 / 10 = 10, tutuyor."
+  }
+ },
+ {
+  "id": "f014-bio-madde-donguleri-1",
+  "h": "0f44ae8959ac09",
+  "guidance": {
+   "knowledge": [
+    "NH₄⁺: amonyum iyonu, NO₂⁻: nitrit iyonu, NO₃⁻: nitrat iyonu.",
+    "Nitrifikasyon: nitrifikasyon bakterilerinin amonyumu önce nitrite, sonra nitrata yükseltgemesi.",
+    "Denitrifikasyon nitratı N₂ gazına, fiksasyon N₂'yi amonyağa çevirir."
+   ],
+   "strategy": "Okun başındaki ve sonundaki maddeye bak: amonyumdan nitrata giden yolun adı nedir?",
+   "steps": [
+    "Başlangıç NH₄⁺, ara ürün NO₂⁻, son ürün NO₃⁻.",
+    "Amonyumun nitrit üzerinden nitrata yükseltgenmesi nitrifikasyondur.",
+    "Sonuç: nitrifikasyon."
+   ],
+   "optionReasons": [
+    "Doğru: amonyumun nitrit ve nitrata yükseltgenmesi nitrifikasyondur.",
+    "Fotosentez CO₂ ve sudan glikoz üretir; azot iyonları arasında dönüşüm değildir.",
+    "Yönü ters karıştırır; denitrifikasyon nitratı N₂ gazına çevirir.",
+    "Fiksasyon N₂'den başlar ve amonyak/amonyum verir; nitrit ve nitrat üretmez.",
+    "Buharlaşma suyun sıvıdan gaza geçişidir; azot bileşiği dönüşümü değildir."
+   ],
+   "commonError": "Benzer adlı nitrifikasyon ile denitrifikasyonun yönlerini karıştırmak.",
+   "check": "Ön ek 'de' geri dönüşü anlatır: denitrifikasyon nitratı geri N₂'ye götürür; soru ise ileri yöndedir."
+  }
+ },
+ {
+  "id": "f014-bio-madde-donguleri-2",
+  "h": "1659df4a8f2553",
+  "guidance": {
+   "knowledge": [
+    "Kapalı model: dışarıdan madde girmez, dışarıya çıkmaz; toplam azot miktarı sabit kalır.",
+    "Bir aktarımda yalnız kaynak ve hedef depo değişir; aktarılan miktar kaynaktan düşer, hedefe eklenir.",
+    "NH₄⁺→NO₂⁻ dönüşümü nitrifikasyonun ilk basamağıdır."
+   ],
+   "strategy": "Yalnız iki depo etkileniyor; kaynaktan 10 çıkar, hedefe 10 ekle, diğerlerini olduğu gibi bırak.",
+   "steps": [
+    "NH₄⁺: 20 − 10 = 10 birim.",
+    "NO₂⁻: 10 + 10 = 20 birim.",
+    "N₂ (50), NO₃⁻ (10) ve organik azot (10) değişmez. Toplam: 50 + 10 + 20 + 10 + 10 = 100, korunur."
+   ],
+   "optionReasons": [
+    "Aktarımı N₂'den NH₄⁺'ya yapar, yani fiksasyon sanır: N₂ 40, NH₄⁺ 30 olur.",
+    "Doğru: NH₄⁺ 20 − 10 = 10, NO₂⁻ 10 + 10 = 20; N₂ 50'de kalır.",
+    "Aktarılan 10'u toplamın üstüne ekler; kapalı modelde toplam 100'de kalır.",
+    "Nitriti atlayıp nitrata ekler ve amonyumdan düşmeyi unutur.",
+    "Organik azot bu aktarıma katılmaz; 10'da kalır."
+   ],
+   "commonError": "Aktarılan miktarı hedefe eklerken kaynaktan düşmeyi unutmak.",
+   "check": "Önce ve sonra toplam: 50 + 20 + 10 + 10 + 10 = 100 ve 50 + 10 + 20 + 10 + 10 = 100; korunum sağlanıyor."
+  }
+ },
+ {
+  "id": "f014-bio-madde-donguleri-3",
+  "h": "004330ad560e92",
+  "guidance": {
+   "knowledge": [
+    "N₂: atmosferdeki azot gazı; canlıların çoğu bunu doğrudan kullanamaz.",
+    "Biyolojik azot fiksasyonu: bazı prokaryotların (bazı bakteriler) N₂'yi amonyak (NH₃) ya da amonyuma (NH₄⁺) bağlaması."
+   ],
+   "strategy": "Başlangıç ve son maddeyi eşleştir: N₂'den amonyağa giden olayın adını bul.",
+   "steps": [
+    "Başlangıç atmosfer N₂'si, ürün NH₃/NH₄⁺.",
+    "Bu dönüşümü canlılar (prokaryotlar) yaptığı için biyolojiktir.",
+    "Sonuç: biyolojik azot fiksasyonu."
+   ],
+   "optionReasons": [
+    "Nitratın N₂'ye dönüşü denitrifikasyondur; yön tam tersidir.",
+    "Yoğuşma su buharının sıvıya dönmesidir; azotla ilgisi yoktur.",
+    "Doğru: N₂'nin prokaryotlarca amonyak/amonyuma bağlanması biyolojik azot fiksasyonudur.",
+    "Organik azot solunumla CO₂ olmaz; azot ve karbon döngüsünü karıştırır.",
+    "Nitritin nitrata oksidasyonu nitrifikasyonun ikinci basamağıdır; N₂ kullanılmaz."
+   ],
+   "commonError": "Fiksasyonun doğrudan nitrat ürettiğini sanmak; nitrat sonradan nitrifikasyonla oluşur.",
+   "check": "Fiksasyonun ürünü amonyak/amonyumdur; seçenek bu ürünü veren tek süreçtir."
+  }
+ },
+ {
+  "id": "f014-bio-madde-donguleri-4",
+  "h": "0dd7e040c0b01c",
+  "guidance": {
+   "knowledge": [
+    "Azot asimilasyonu: bitkinin topraktan aldığı nitrat ya da amonyumdaki azotu amino asit, protein, nükleik asit gibi organik bileşiklere katması.",
+    "Bitkiler atmosfer N₂'sini doğrudan bağlayamaz; bunu bazı prokaryotlar yapar."
+   ],
+   "strategy": "Olayın girdisine (nitrat) ve çıktısına (amino asit, organik madde) bak; inorganikten organiğe azot katılmasının adını bul.",
+   "steps": [
+    "Girdi: topraktan alınan nitrat (inorganik azot).",
+    "Çıktı: amino asit (organik azot).",
+    "İnorganik azotun organik bileşiklere katılması azot asimilasyonudur."
+   ],
+   "optionReasons": [
+    "Bitki atmosfer N₂'sini bağlamaz; burada topraktaki nitrat kullanılıyor.",
+    "Denitrifikasyon nitratı N₂ gazına çevirir; organik maddeye katmaz.",
+    "Buharlaşma su döngüsüne aittir; azotun organik maddeye katılmasıyla ilgisi yok.",
+    "Doğru: alınan nitrattaki azotun amino aside katılması asimilasyondur.",
+    "Nitritin nitrata oksidasyonu topraktaki bakterilerin işidir; organik madde üretmez."
+   ],
+   "commonError": "Bitkinin nitrat almasını bitkinin azot fiksasyonu yaptığı sanmak.",
+   "check": "Asimilasyonun anlamı 'benzetme, kendine katma'dır; bitki inorganik azotu kendi organik bileşiğine katıyor."
+  }
+ },
+ {
+  "id": "f014-bio-madde-donguleri-5",
+  "h": "03b5fbec735a01",
+  "guidance": {
+   "knowledge": [
+    "NO₃⁻: nitrat iyonu, N₂: azot gazı.",
+    "Denitrifikasyon: bazı bakterilerin nitratı azot gazına çevirerek azotu atmosfere geri göndermesi."
+   ],
+   "strategy": "Yöne bak: nitrattan atmosfer gazına dönüş, azotun döngüden atmosfere geri verilmesidir.",
+   "steps": [
+    "Başlangıç NO₃⁻, ürün N₂ gazı.",
+    "Bu, nitrifikasyonun tersi yöndür ve azot atmosfere döner.",
+    "Sonuç: denitrifikasyon."
+   ],
+   "optionReasons": [
+    "Nitrifikasyon amonyumdan nitrata giden ileri yöndür; burada nitrattan N₂'ye geri dönülüyor.",
+    "Fotosentez karbon bağlar; azot gazı üretmez.",
+    "Fiksasyon N₂'yi amonyağa bağlar; ok tam ters yönde.",
+    "Terleme bitkinin su buharı kaybıdır; azot dönüşümü değildir.",
+    "Doğru: nitratın N₂ gazına dönmesi denitrifikasyondur."
+   ],
+   "commonError": "Denitrifikasyon ile fiksasyonu karıştırmak; biri N₂ üretir, diğeri N₂ kullanır.",
+   "check": "Denitrifikasyonun ürünü N₂, fiksasyonun girdisi N₂'dir; böylece döngü kapanır ve yön doğrulanır."
+  }
+ },
+ {
+  "id": "f014-bio-madde-donguleri-6",
+  "h": "1c664c6ac5ccce",
+  "guidance": {
+   "knowledge": [
+    "Üretici: inorganik karbonu (CO₂) organik maddeye bağlayan ototrof; fotoototrof ışık, kemoototrof kimyasal enerji kullanır.",
+    "Hücresel solunum: organik maddenin parçalanıp CO₂ açığa çıkması; üreticiler dâhil bütün canlılar yapar."
+   ],
+   "strategy": "Üreticinin karbon girişi (bağlama) ve çıkışı (solunum) yollarını düşün; 'yalnız', 'bütün', 'hiç' içeren aşırı genellemeleri sına.",
+   "steps": [
+    "Üreticiler CO₂'yi bağlayıp organik karbon yapar.",
+    "Üreticiler de canlıdır ve solunum yapar; CO₂ verirler.",
+    "Doğru ifade hem bağlama hem solunumu içerendir."
+   ],
+   "optionReasons": [
+    "Doğru: üreticiler CO₂'yi organik karbona bağlar ve solunumla CO₂ verir.",
+    "Bitkilerin solunum yapmadığını sanır; bütün canlı hücreler solunum yapar.",
+    "Kemoototroflar ışık kullanmadan üretim yapar; 'bütün ototroflar ışık kullanır' yanlış genellemedir.",
+    "Madde yoktan var edilemez; üretici var olan karbonu organik biçime sokar.",
+    "Karbon üreticiye atmosfer ya da sudaki CO₂'den doğrudan girer; hayvan aracı gerekmez."
+   ],
+   "commonError": "Bitkilerin yalnız fotosentez yaptığını, solunum yapmadığını sanmak.",
+   "check": "Karanlıkta tutulan bir bitki CO₂ verir; bu solunum yaptığını gösterir."
+  }
+ },
+ {
+  "id": "f014-bio-madde-donguleri-7",
+  "h": "09441ec9c23c67",
+  "guidance": {
+   "knowledge": [
+    "Net değişim: girişlerin toplamı − çıkışların toplamı.",
+    "Atmosfer açısından fotosentez CO₂'yi atmosferden alır (−), solunum CO₂'yi atmosfere verir (+)."
+   ],
+   "strategy": "Atmosferi depo kabul et; her akışa atmosfere göre işaret ver ve topla.",
+   "steps": [
+    "Fotosentez: atmosferden 60 alır, −60.",
+    "Bitki solunumu +20, diğer solunumlar +30; toplam +50.",
+    "Net: −60 + 50 = −10, yani atmosferik CO₂ 10 birim azalır."
+   ],
+   "optionReasons": [
+    "İşareti ters kurar: fotosentezi ekleme, solunumu çıkarma sayar ve +10 bulur.",
+    "Doğru: −60 + 20 + 30 = −10, 10 birim azalma.",
+    "Solunumları da atmosferden çıkış sayar: 20 + 30 = 50 azalma; solunum CO₂ verir.",
+    "Yalnız fotosentezi alır ve işaretini ters çevirir: 60 artma.",
+    "Bütün akışları azalma olarak toplar: 60 + 20 + 30 = 110."
+   ],
+   "commonError": "Solunumun atmosfere CO₂ verdiğini unutup akışların işaretlerini karıştırmak.",
+   "check": "Giren 50, çıkan 60; çıkan girenden 10 fazla olduğu için depo 10 azalır."
+  }
+ },
+ {
+  "id": "f014-bio-madde-donguleri-8",
+  "h": "149b7ba88a66d7",
+  "guidance": {
+   "knowledge": [
+    "Buharlaşma: sıvı suyun ısınarak gaza dönüşüp atmosfere geçmesi.",
+    "Sızma: yüzeydeki suyun toprağın içine, oradan yeraltına geçmesi."
+   ],
+   "strategy": "Her sürecin suyu nereden nereye taşıdığını belirle; azot ya da kirletici iddialarını ayrıca sına.",
+   "steps": [
+    "Buharlaşma: yeryüzündeki sıvı su → atmosferdeki su buharı.",
+    "Sızma: yüzeydeki su → toprak ve yeraltı.",
+    "Bu iki tanımı doğru eşleştiren seçenek doğrudur."
+   ],
+   "optionReasons": [
+    "Su döngüsü süreçlerini azot döngüsüne karıştırır; buharlaşma ve sızma atmosfer azotunu değiştirmez.",
+    "Nitratın proteine katılması azot asimilasyonudur; buharlaşma yalnız suyun hâl değişimidir.",
+    "Doğru: buharlaşma sıvıyı atmosfere, sızma yüzey suyunu toprağın içine taşır.",
+    "Gazdan sıvı damlacık oluşması yoğuşmadır; sızma ile karıştırılmış.",
+    "Buharlaşma ve sızma kirleticileri tamamen yok etmez; 'bütün' ve 'kesin' aşırı genellemedir."
+   ],
+   "commonError": "Sızmayı yoğuşmayla ya da su döngüsünü azot döngüsüyle karıştırmak.",
+   "check": "Yağmurdan sonra su birikintisi hem buharlaşarak hem toprağa sızarak kaybolur; iki yön farklıdır: biri yukarı, biri aşağı."
+  }
+ },
+ {
+  "id": "f014-bio-madde-donguleri-9",
+  "h": "03b0461a3f3657",
+  "guidance": {
+   "knowledge": [
+    "Kapalı model: toplam madde sabittir, yalnız depolar arasında yer değiştirir.",
+    "Depo: karbonun tutulduğu yer (atmosfer, okyanus, canlılar, fosil yakıtlar)."
+   ],
+   "strategy": "Korunum toplamın sabitliğidir, her deponun sabitliği değildir; aktarımın iki ucunu düşün.",
+   "steps": [
+    "Fosil depodan 10 birim çıkar: fosil depo 10 azalır.",
+    "Aynı 10 birim atmosfere girer: atmosfer 10 artar.",
+    "Toplam değişmez; doğru yorum atmosferin artıp başka deponun aynı miktar azalmasıdır."
+   ],
+   "optionReasons": [
+    "Aktarım yapıldığı hâlde atmosferin değişemeyeceğini söyler; aktarım atmosferi artırır.",
+    "Toplamın korunmasını her deponun sabitliği sanır; depolar arasında yer değişimi olur.",
+    "Madde korunur; aktarımda atom kaybolmaz.",
+    "Doğru: atmosfer 10 artar, fosil depo 10 azalır, toplam korunur.",
+    "Toplamı yalnız atmosfere bakarak hesaplar; fosil depodaki 10 azalmayı unutur."
+   ],
+   "commonError": "Toplam korunumunu her deponun sabit kalması sanmak.",
+   "check": "Toplam değişim: (+10) + (−10) = 0; korunum sağlanırken atmosfer yine de artmıştır."
+  }
+ },
+ {
+  "id": "f014-bio-madde-donguleri-10",
+  "h": "13e4cae2b0db57",
+  "guidance": {
+   "knowledge": [
+    "Organik azot: protein, üre, nükleik asit gibi canlı kökenli bileşiklerdeki azot.",
+    "Amonifikasyon: ayrıştırıcıların organik azotu parçalayarak amonyak (NH₃) ya da amonyuma (NH₄⁺) çevirmesi."
+   ],
+   "strategy": "Girdi organik atık, ürün amonyak/amonyum; bu dönüşümün adını bul.",
+   "steps": [
+    "Girdi: ölü madde ve atıktaki organik azot.",
+    "Ayrıştırıcılar bunu parçalar, ürün NH₃/NH₄⁺ olur.",
+    "Bu süreç amonifikasyondur; ad da 'amonyak oluşturma'dan gelir."
+   ],
+   "optionReasons": [
+    "Denitrifikasyon nitratı N₂ gazına çevirir; organik atıktan başlamaz.",
+    "Yağış su döngüsünün bir basamağıdır, azot dönüşümü değildir.",
+    "Fotosentez karbon bağlar; organik azotu amonyağa çevirmez.",
+    "Nitritin nitrata oksidasyonu amonyum oluştuktan sonraki nitrifikasyon basamağıdır.",
+    "Doğru: organik azotun ayrıştırmayla amonyak/amonyuma dönmesi amonifikasyondur."
+   ],
+   "commonError": "Amonifikasyon ile nitrifikasyonu karıştırmak; biri amonyum üretir, diğeri amonyumu kullanır.",
+   "check": "Sıra: organik azot → (amonifikasyon) → NH₄⁺ → (nitrifikasyon) → NO₃⁻; soru ilk okun adını istiyor."
+  }
+ },
+ {
+  "id": "f014-bio-guncel-cevre-sorunlari-1",
+  "h": "15be5679221b70",
+  "guidance": {
+   "knowledge": [
+    "Ötrofikasyon: suya azot ve fosfor gibi besleyicilerin aşırı girmesiyle alglerin hızla çoğalması.",
+    "Aerobik solunum: oksijen kullanan solunum; ayrıştırıcılar ölü organik maddeyi parçalarken sudaki çözünmüş oksijeni tüketir."
+   ],
+   "strategy": "Olayları sırala ve oksijeni doğrudan tüketen basamağı bul; aşırı genelleme içeren seçenekleri ele.",
+   "steps": [
+    "Besleyici artışı → alg çoğalması → algler ölür, ölü organik madde artar.",
+    "Ayrıştırıcılar bu maddeyi aerobik solunumla parçalar ve oksijen kullanır.",
+    "Oksijen azalmasına doğrudan katkı veren basamak artan ayrıştırıcı solunumudur."
+   ],
+   "optionReasons": [
+    "Doğru: aerobik ayrıştırıcılar organik maddeyi parçalarken çözünmüş oksijeni tüketir.",
+    "Işığın her durumda tamamen yok olduğu verilmemiş; ışık azalması da oksijeni dolaylı etkiler, doğrudan tüketmez.",
+    "Işığın hiç ulaşmaması zorunlu değildir; 'her durumda' ifadesi veriyi aşar.",
+    "Gölün anında buharlaşması söz konusu değildir; oksijen azalmasının nedeni solunumdur.",
+    "Organik madde yok olmaz, ayrıştırılır; bu sırada oksijen tüketilir."
+   ],
+   "commonError": "Oksijen azalmasını yalnız ışık eksikliğine bağlayıp ayrıştırıcı solunumunu atlamak.",
+   "check": "Solunum denklemi: organik madde + O₂ → CO₂ + H₂O; organik madde arttıkça tüketilen O₂ de artar."
+  }
+ },
+ {
+  "id": "f014-bio-guncel-cevre-sorunlari-2",
+  "h": "128666f8de1e05",
+  "guidance": {
+   "knowledge": [
+    "Çözünmüş madde: suyun içinde gözle görülmeyecek kadar dağılmış madde; ızgara ya da elek onu tutamaz.",
+    "Ötrofikasyonda asıl sorun çözünmüş besleyicilerdir (fosfor, azot); iri katı atık ayrı bir sorundur."
+   ],
+   "strategy": "Önlemin neyi hedeflediğini (iri katı) ve sorunun ne olduğunu (çözünmüş fosfor) karşılaştır; ikisi uyuşmuyorsa ayrı önlem gerekir.",
+   "steps": [
+    "Izgara büyük poşet gibi katı atıkları tutar.",
+    "Çözünmüş fosfor ızgaradan geçer.",
+    "Katı çöp tutulabilir; fosfor için kaynak azaltma ya da arıtma gibi ayrı önlem gerekir."
+   ],
+   "optionReasons": [
+    "Çözünmüş madde ızgaradan geçer; 'zorunlu giderilir' demek önlemin işleyişiyle çelişir.",
+    "Doğru: ızgara katıyı tutar, çözünmüş fosfor için hedefli ayrı önlem gerekir.",
+    "İçilebilirlik mikrobiyolojik ve kimyasal ölçütler ister; poşet tutmak bunu sağlamaz.",
+    "Izgara mikroorganizma öldürmez; onlar ızgaradan rahatça geçer.",
+    "Fosfor girişi sürdüğü için ötrofikasyon sürer; ızgara asıl nedeni hedeflemez."
+   ],
+   "commonError": "Görünür atığı tutan bir önlemin çözünmüş kirleticiyi de gidereceğini sanmak.",
+   "check": "Bir bardak tuzlu suyu süzgeçten geçir: su yine tuzludur; çözünmüş fosfor da ızgaradan aynı biçimde geçer."
+  }
+ },
+ {
+  "id": "f014-bio-guncel-cevre-sorunlari-3",
+  "h": "0fcf123ff746d8",
+  "guidance": {
+   "knowledge": [
+    "Stratosferik ozon tabakası: Güneş'ten gelen morötesi (UV) ışınların bir kısmını soğurarak canlıları korur.",
+    "Sera etkisi: CO₂ gibi sera gazlarının yeryüzünden yayılan kızılötesi ışınımı tutup atmosferi ısıtması; doğal bölümü vardır, artması iklimi değiştirir."
+   ],
+   "strategy": "İki sorunu hangi ışınımla ilgili olduklarına göre ayır: UV mi, kızılötesi mi?",
+   "steps": [
+    "Ozon azalması → daha çok UV yeryüzüne ulaşır: UV korumasıyla ilgili.",
+    "Sera etkisi → kızılötesi ışınımın tutulması: enerji dengesiyle ilgili.",
+    "İkisi farklı mekanizmadır; doğru ayrım bunu söyleyen seçenektir."
+   ],
+   "optionReasons": [
+    "İki sorunu tek sorun sanır; biri UV soğurma, diğeri kızılötesi tutma mekanizmasıdır.",
+    "CO₂'nin sera etkisi kızılötesini tutmasından gelir; UV ile karıştırmış.",
+    "Doğru: ozon UV korumasıyla, sera etkisi kızılötesi enerji dengesiyle ilişkilidir.",
+    "Yer seviyesindeki ozon kirleticidir; 'her katmanda yalnız yararlı' yanlış genellemedir.",
+    "Doğal sera etkisi vardır ve Dünya'yı yaşanabilir sıcaklıkta tutar; yok saymak yanlıştır."
+   ],
+   "commonError": "Ozon deliğini küresel ısınmanın nedeni sanıp iki sorunu tek mekanizmaya bağlamak.",
+   "check": "Ozon azalmasının tipik sonucu deri yanığı ve UV hasarı, sera etkisinin sonucu ise sıcaklık artışıdır; sonuçlar da farklıdır."
+  }
+ },
+ {
+  "id": "f014-bio-guncel-cevre-sorunlari-4",
+  "h": "07fe3def932f90",
+  "guidance": {
+   "knowledge": [
+    "Asit çökelmesi: atmosferdeki asitlerin yağmur, kar ya da toz ile yere inmesi.",
+    "SO₂ (kükürt dioksit) sülfürik asidin, azot oksitler (NO, NO₂) nitrik asidin oluşumuna katkı verir; kaynakları yakıt yakımıdır."
+   ],
+   "strategy": "Sülfürik asitte kükürt, nitrik asitte azot var; bu elementleri içeren salımları ara.",
+   "steps": [
+    "Sülfürik asit kükürt içerir: kaynağı kükürt dioksit.",
+    "Nitrik asit azot oksitlerden oluşur.",
+    "İkisini birlikte veren seçenek kükürt dioksit ve azot oksitlerdir."
+   ],
+   "optionReasons": [
+    "Saf N₂ ve argon tepkimeye çok az girer; azot oksitlerle aynı şey değildir.",
+    "Helyum ve neon soy gazdır, asit oluşturmaz.",
+    "Su buharlaşması asit üretmez; salım değil, doğal bir hâl değişimidir.",
+    "Doğru: SO₂ sülfürik, azot oksitler nitrik asit oluşumuna katkı verir.",
+    "Işığın yansıtılması bir gaz salımı değildir ve asit oluşturmaz."
+   ],
+   "commonError": "Atmosferdeki bol N₂ gazını asit yağmurunun kaynağı sanmak; asıl kaynak yanmayla oluşan azot oksitlerdir.",
+   "check": "Asidin adındaki elementi izle: sülfürik → kükürt (S), nitrik → azot (N); SO₂ ve azot oksitler ikisini de karşılar."
+  }
+ },
+ {
+  "id": "f014-bio-guncel-cevre-sorunlari-5",
+  "h": "00627b6458dc8c",
+  "guidance": {
+   "knowledge": [
+    "Elektromanyetik ışınım: radyo dalgasından görünür ışığa, gama ışınına uzanan, frekansı ve foton enerjisi farklı dalgalar ailesi.",
+    "İyonlaştırıcı ışınım: atomdan elektron koparacak kadar yüksek enerjili ışınım (gama gibi); radyo dalgaları bu enerjiye sahip değildir.",
+    "Radyoaktif kirlenme: çevrede radyoaktif madde bulunmasıdır; her ışınım bu anlama gelmez."
+   ],
+   "strategy": "Ortak özellik (ikisi de elektromanyetik) ile farkı (foton enerjisi, iyonlaştırma) ayır; 'her', 'zorunlu' içeren genellemeleri sına.",
+   "steps": [
+    "Radyo dalgası ve gama ışını aynı elektromanyetik ailedendir.",
+    "Gama yüksek enerjili ve iyonlaştırıcı, radyo dalgası düşük enerjilidir.",
+    "Elektromanyetik olmak iyonlaştırıcı ya da radyoaktif madde olmak demek değildir."
+   ],
+   "optionReasons": [
+    "Radyo dalgasının foton enerjisi gamadan çok düşüktür; aynı aileden olmayı aynı enerji sanır.",
+    "Telefon radyo dalgası yayar, radyoaktif izotop salmaz; ışınım ile radyoaktif maddeyi karıştırır.",
+    "Görünür ışık da elektromanyetik ışınımdır; onu bu aileden ayırmak yanlıştır.",
+    "Işınım türlerinin etkisi frekansa ve doza göre farklıdır; hepsini aynı mekanizmayla açıklamak genellemedir.",
+    "Doğru: ikisi de elektromanyetiktir ama bu tek başına iyonlaştırıcı ya da radyoaktif yapmaz."
+   ],
+   "commonError": "'Işınım' kelimesini gören her şeyi radyoaktif ve iyonlaştırıcı sanmak.",
+   "check": "Görünür ışık da elektromanyetiktir ve lamba radyoaktif değildir; aynı mantık radyo dalgası için de geçerlidir."
+  }
+ },
+ {
+  "id": "f014-bio-guncel-cevre-sorunlari-6",
+  "h": "0254856ed5c229",
+  "guidance": {
+   "knowledge": [
+    "Habitat parçalanması: yol, tarla, yerleşim gibi engellerle bir yaşam alanının küçük ve kopuk parçalara bölünmesi.",
+    "Gen alışverişi: farklı yerlerdeki bireylerin eşleşerek alel aktarması; geçişler azalırsa bu alışveriş azalır."
+   ],
+   "strategy": "Ağaç sayısı aynı kalsa da hayvan geçişinin azalmasının neyi etkilediğini düşün; 'kesin', 'zorunlu' genellemelerini ele.",
+   "steps": [
+    "Ağaç sayısı benzer: bitki örtüsü miktarı korunmuş.",
+    "Hayvan geçişleri azalmış: parçalar arası hareket, eşleşme ve kaynağa erişim azalır.",
+    "Bağlantı ve gen alışverişi ağaç sayısı değişmeden de etkilenebilir."
+   ],
+   "optionReasons": [
+    "Doğru: geçiş azalması bağlantıyı ve gen alışverişini ağaç sayısı aynıyken bile etkiler.",
+    "Hayvan geçişlerinin azalması bir etkidir; 'hiç etkilenmemiştir' veriyle çelişir.",
+    "Bir yolun tür sayısını aynı gün sıfırlaması veriyle desteklenmez; abartılı genellemedir.",
+    "Geçişlerin azaldığı verilmiş; türlerin yolu aynı rahatlıkta geçtiği söylenemez.",
+    "Tek ölçütü ağaç sayısı sanır; hayvan hareketi de ekosistem işlevinin parçasıdır."
+   ],
+   "commonError": "Ekosistem sağlığını yalnız ağaç sayısıyla ölçmek.",
+   "check": "Yolun iki yanındaki iki küçük popülasyon birbirinden kopar; ağaç sayısı aynı kalsa da eşleşme olanakları azalır."
+  }
+ },
+ {
+  "id": "f014-bio-guncel-cevre-sorunlari-7",
+  "h": "1a0233baaa5a1f",
+  "guidance": {
+   "knowledge": [
+    "Erozyon: toprağın su ve rüzgârla taşınması; eğimli ve çıplak arazide hızlanır.",
+    "Bitki örtüsü kökleriyle toprağı tutar, yağmur damlasının çarpmasını ve yüzey akışını yavaşlatır.",
+    "Yüzey akışı: toprağa sızmadan yüzeyde akan su; hızlandıkça daha çok toprak taşır."
+   ],
+   "strategy": "Erozyonu artıran etkenleri (çıplaklık, hızlı akış, az su tutma) belirle; bunları azaltan tek seçeneği bul.",
+   "steps": [
+    "Erozyonu artıran: çıplak toprak ve hızlı yüzey akışı.",
+    "Bitki örtüsünü korumak toprağı tutar; eğime uygun uygulamalar (örneğin eşyükselti boyunca sürüm) akışı yavaşlatır.",
+    "Bu iki önlemi birlikte içeren seçenek doğrudur."
+   ],
+   "optionReasons": [
+    "Çıplak toprak yağmura ve rüzgâra açık kalır; erozyonu artırır.",
+    "Doğru: örtüyü korumak ve akışı yavaşlatmak toprağı yerinde tutar.",
+    "Anız yakmak toprağı örten artıkları ve toprak canlılarını yok eder; toprağı çıplak bırakır.",
+    "Yüzey akışı hızlandıkça taşınan toprak artar; risk büyür.",
+    "Su tutma azalırsa daha çok su yüzeyde akar; erozyon artar."
+   ],
+   "commonError": "Anız yakmayı toprağı temizleyen zararsız bir uygulama sanmak.",
+   "check": "Ormanlık bir yamaç ile çıplak bir yamaçta aynı yağmuru düşün: çıplak yamaçta su bulanık akar, yani daha çok toprak taşınır."
+  }
+ },
+ {
+  "id": "f014-bio-guncel-cevre-sorunlari-8",
+  "h": "0baa856d1db633",
+  "guidance": {
+   "knowledge": [
+    "Besleyici girişi: göle azot ve fosfor gibi maddelerin eklenmesi; ötrofikasyonun nedenidir.",
+    "Biriken yük: geçmişte gölün dibine çökmüş organik madde ve besleyiciler; giriş kesilse de bir süre etkisini sürdürür."
+   ],
+   "strategy": "Soru 'garanti edilemez' diyor; giriş azaltmanın mantıklı sonuçlarını ele, anında ve tam iyileşme iddiasını bul.",
+   "steps": [
+    "Önlem yeni girişi azaltır; geçmişte biriken yükü hemen ortadan kaldırmaz.",
+    "Dipteki yük ayrışma ve koşullara bağlı olarak etkisini sürdürebilir.",
+    "Biriken yükün aynı anda tamamen kaybolması garanti edilemez."
+   ],
+   "optionReasons": [
+    "Önlemin amacı besleyici kaynağını hedeflemektir; bu önlemin tanımından çıkar.",
+    "Önlemin işe yarayıp yaramadığını görmek için izleme gerekir; mantıklı bir sonuçtur.",
+    "Doğru: dipte biriken yük birden yok olmaz; anında tam düzelme garanti edilemez.",
+    "Geçmiş yükün etkisi sürebilir; bu ifade olasılık bildirir ve doğrudur.",
+    "İyileşme hızı sıcaklık, ayrışma gibi koşullara bağlıdır; olasılık bildirir ve doğrudur."
+   ],
+   "commonError": "Kirliliğin kaynağı kesilince ortamın hemen eski hâline döneceğini sanmak.",
+   "check": "Musluğu kapatınca dolu küvet hemen boşalmaz; dipteki yük de aynı biçimde zamanla azalır."
+  }
+ },
+ {
+  "id": "f014-bio-guncel-cevre-sorunlari-9",
+  "h": "0e7e7fb0e14778",
+  "guidance": {
+   "knowledge": [
+    "Berraklık: suyun görünür parçacık içermemesi; yalnız göze görünen kirliliği gösterir.",
+    "Patojen: hastalık yapan mikroorganizma; çıplak gözle görülmez.",
+    "Çözünmüş kirletici: suda dağılmış, suyu bulandırmayan zararlı madde."
+   ],
+   "strategy": "Gözle görülebilen ile görülemeyen kirleticiyi ayır; görünüşten tam güvenlik kararı veren seçenekleri ele.",
+   "steps": [
+    "Mikroorganizmalar ve çözünmüş maddeler suyu bulandırmayabilir.",
+    "Bu yüzden berrak su yine de kirli olabilir.",
+    "Güvenlik için mikrobiyolojik ve kimyasal ölçüm gerekir; berraklık tek başına kanıt değildir."
+   ],
+   "optionReasons": [
+    "Çözünmüş kimyasallar suyu bulandırmaz; berraklık onların yokluğunu göstermez.",
+    "Patojenler çıplak gözle görülmez; berrak suda da bulunabilir.",
+    "Görünür çöp olmaması mikrop ve çözünmüş kirletici olmadığını göstermez; arıtma yine gerekebilir.",
+    "Doğru: berraklık mikrop ve çözünmüş kirleticinin yokluğunu tek başına kanıtlamaz.",
+    "Renk yalnız bir göstergedir; mikrobiyolojik ve kimyasal ölçüm yerine geçmez."
+   ],
+   "commonError": "Görünüşü temiz olan suyu içilebilir sanmak.",
+   "check": "Tuzlu ya da şekerli su da berraktır ama saf değildir; berraklık içerik hakkında yeterli bilgi vermez."
+  }
+ },
+ {
+  "id": "f014-bio-guncel-cevre-sorunlari-10",
+  "h": "00851b23b5eec1",
+  "guidance": {
+   "knowledge": [
+    "Ötrofikasyon baskısı: göle besleyici girişinin yarattığı alg artışı ve oksijen azalması etkisi.",
+    "Gösterge: bir hedefe ulaşılıp ulaşılmadığını ölçmeye yarayan nicelik; hedefle doğrudan ilgili olmalı ve zaman içinde izlenmeli."
+   ],
+   "strategy": "Hedefin (ötrofikasyonu azaltmak) hangi niceliklerle doğrudan ilişkili olduğunu bul; faaliyetin biçimiyle ilgili seçenekleri ele.",
+   "steps": [
+    "Ötrofikasyonun nedeni besleyici girişi, sonucu oksijen azalması ve alg artışıdır.",
+    "Bu niceliklerin önceki ve sonraki değerleri karşılaştırılırsa başarı ölçülür.",
+    "Besleyici girdisi, çözünmüş oksijen ve biyolojik göstergelerin zaman içindeki değişimi en uygun gruptur."
+   ],
+   "optionReasons": [
+    "Afiş rengi tanıtım ayrıntısıdır; göldeki besleyici ya da oksijene etkisi yoktur.",
+    "Çöp kutusunun markası gölün kimyasını ölçmez.",
+    "Toplantı salonunun alanı projenin göle etkisiyle ilgisizdir.",
+    "Proje adının uzunluğu ölçülebilir ama hedefle hiçbir ilişkisi yoktur.",
+    "Doğru: besleyici girişi, oksijen ve biyolojik göstergeler hedefi doğrudan ölçer."
+   ],
+   "commonError": "Proje başarısını yapılan faaliyet sayısıyla ölçüp ortamdaki gerçek değişimi ölçmemek.",
+   "check": "Projeden önce ve sonra göldeki oksijeni ölç: artmışsa başarı vardır; afiş sayısı bunu göstermez."
+  }
+ },
+ {
+  "id": "f014-bio-dogal-kaynaklar-surdurulebilirlik-1",
+  "h": "04bfb0f2887130",
+  "guidance": {
+   "knowledge": [
+    "Stok: belli bir andaki kaynak miktarı.",
+    "Yıllık net değişim = yıllık yenilenme − yıllık kullanım; eksi çıkarsa stok azalır."
+   ],
+   "strategy": "Akışlar sabit olduğu için önce yıllık net değişimi bul, sonra yıl sayısıyla çarpıp başlangıca ekle.",
+   "steps": [
+    "Yıllık net değişim: 20 − 30 = −10 birim.",
+    "Beş yıllık değişim: 5 · (−10) = −50 birim.",
+    "Beş yıl sonra stok: 100 − 50 = 50 birim."
+   ],
+   "optionReasons": [
+    "Doğru: 100 + 5 · (20 − 30) = 100 − 50 = 50.",
+    "Yıllık yenilenme miktarını (20) stok sanar; beş yıllık net değişimi hesaplamaz.",
+    "Yenilenmeyi eklemek yerine çıkarır ve yalnız bir yıl hesaplar: 100 − 20 = 80.",
+    "Yenilenme kullanımı karşılıyor sanıp stoğu sabit kabul eder.",
+    "Toplam kullanımı stok sanar: 5 · 30 = 150; yenilenmeyi ve başlangıcı unutur."
+   ],
+   "commonError": "Yalnız kullanımı ya da yalnız yenilenmeyi hesaba katıp net değişimi bulmamak.",
+   "check": "Yıl yıl izle: 90, 80, 70, 60, 50; beşinci yılın sonunda 50 kalıyor."
+  }
+ },
+ {
+  "id": "f014-bio-dogal-kaynaklar-surdurulebilirlik-2",
+  "h": "1e01a5e36b23cc",
+  "guidance": {
+   "knowledge": [
+    "Yıllık net değişim = yenilenme − kullanım; sıfırsa stok sabit kalır.",
+    "Model yalnız miktarı izler; su kalitesi, mevsimsel eşikler ve canlıların gereksinimleri bu dar modelin dışındadır."
+   ],
+   "strategy": "Net değişimi hesapla, sonra sonucun modelin sınırlarını aşan iddialar içerip içermediğine bak.",
+   "steps": [
+    "Net değişim: 20 − 20 = 0.",
+    "Stok her yıl 100'de kalır.",
+    "Model yalnız miktarı ölçtüğü için kalite ve ekolojik riskler hakkında güvence vermez."
+   ],
+   "optionReasons": [
+    "Kullanımı unutup yalnız yenilenmeyi ekler: her yıl +20; oysa 20 − 20 = 0.",
+    "Doğru: 20 − 20 = 0, stok 100'de kalır; model ekolojik riskleri dışlamaz.",
+    "Miktar dengesi güvenlik ölçütlerinin hepsini kanıtlamaz; model habitatı ölçmüyor.",
+    "Su kalitesi modelde hiç ölçülmedi; miktardan kalite çıkarılamaz.",
+    "Stok sabitse bunu sağlayan yenilenmedir; yenilenme durursa stok azalır."
+   ],
+   "commonError": "Miktar dengesi sağlandığında bütün ekolojik sorunların çözüldüğünü sanmak.",
+   "check": "Yenilenme bir yıl 10'a düşse stok 90 olur; yani denge yenilenmenin sürmesine bağlıdır."
+  }
+ },
+ {
+  "id": "f014-bio-dogal-kaynaklar-surdurulebilirlik-3",
+  "h": "045a2994f6c60a",
+  "guidance": {
+   "knowledge": [
+    "Biyolojik çeşitliliğin üç düzeyi: genetik çeşitlilik (tür içindeki kalıtsal farklar), tür çeşitliliği (farklı tür sayısı), ekosistem çeşitliliği (farklı ekosistem tipleri).",
+    "Kalıtsal farklılık: bireylerin genlerindeki (alellerindeki) farklar."
+   ],
+   "strategy": "Farklılık nerede: aynı türün bireyleri arasında mı, türler arasında mı, ekosistemler arasında mı? Buna göre düzeyi seç.",
+   "steps": [
+    "Farklılık aynı türün bireyleri arasında.",
+    "Farklılık kalıtsal, yani genlerde.",
+    "Tür içindeki kalıtsal farklılık genetik çeşitliliktir."
+   ],
+   "optionReasons": [
+    "Ekosistem çeşitliliği farklı ekosistem tiplerinin sayısıdır; burada tek tür içi fark var.",
+    "Atom numarası kimya kavramıdır; biyolojik çeşitlilik düzeyi değildir.",
+    "Doğru: aynı türün bireyleri arasındaki kalıtsal farklar genetik çeşitliliktir.",
+    "Tür sayısı farklı türlerle ilgilidir; burada tek tür vardır.",
+    "Habitat alanı bir yer ölçüsüdür; kalıtsal farklılığı ölçmez."
+   ],
+   "commonError": "Genetik çeşitliliği tür çeşitliliğiyle karıştırmak.",
+   "check": "Aynı türden kırmızı, beyaz ve pembe çiçekli bitkiler tür sayısını artırmaz ama genetik çeşitliliği gösterir."
+  }
+ },
+ {
+  "id": "f014-bio-dogal-kaynaklar-surdurulebilirlik-4",
+  "h": "1f1e52a0154011",
+  "guidance": {
+   "knowledge": [
+    "Endemik tür: doğal olarak yalnız belirli bir bölgede yayılış gösteren tür.",
+    "İstilacı tür: yeni bir bölgeye girip hızla yayılan ve yerli türlere zarar veren tür.",
+    "Soyu tükenmiş tür: hiçbir bireyi kalmamış tür."
+   ],
+   "strategy": "Verilen tek bilgi doğal yayılışın sınırlı olmasıdır; bu tanımı doğrudan karşılayan terimi seç.",
+   "steps": [
+    "Tür yalnız belirli bir bölgede doğal olarak yaşıyor.",
+    "Evcillik, istilacılık ya da tükenme hakkında bilgi yok.",
+    "Doğal yayılışı belirli bölgeyle sınırlı tür endemiktir."
+   ],
+   "optionReasons": [
+    "Evcil ırk insanın seçerek oluşturduğu bir gruptur; doğal yayılışla ilgili değildir.",
+    "Her yerde yayılan tür kozmopolittir; sınırlı yayılışın tam tersidir.",
+    "İstilacılık yayılmayı ve zararı anlatır; veride böyle bir bilgi yok.",
+    "Doğru: doğal yayılışın belirli bölgeyle sınırlı olması endemizmdir.",
+    "Tür hâlâ yayılış gösteriyor; soyu tükenmiş olamaz."
+   ],
+   "commonError": "Endemik türü otomatik olarak soyu tükenmekte ya da tükenmiş tür sanmak.",
+   "check": "Endemik tür tehlikede olabilir ama bu ayrı bir değerlendirmedir; tanım yalnız yayılış alanına bakar."
+  }
+ },
+ {
+  "id": "f014-bio-dogal-kaynaklar-surdurulebilirlik-5",
+  "h": "0301a9340cbb7c",
+  "guidance": {
+   "knowledge": [
+    "Gen bankası: tohum gibi genetik materyalin kontrollü koşullarda saklandığı yer.",
+    "Yerinde koruma: türü doğal habitatında korumak. Yer dışında koruma: türü doğal ortamı dışında (gen bankası, botanik bahçesi) korumak."
+   ],
+   "strategy": "Gen bankasının neyi koruduğunu (tohum, genetik materyal) ve neyi koruyamadığını (habitat, ekolojik ilişkiler) ayır.",
+   "steps": [
+    "Tohumlar doğal ortam dışında saklanır: yer dışında koruma.",
+    "Gen bankası habitatı, tozlaştırıcıları ve komünite ilişkilerini saklayamaz.",
+    "Doğru yorum: yer dışında koruma sağlar ama habitat ve ilişkileri tek başına korumaz."
+   ],
+   "optionReasons": [
+    "Tohum saklamak doğal habitatı gereksiz kılmaz; türün doğadaki ilişkileri habitatta sürer.",
+    "Yalnız bitki tohumu saklanır; toprak canlıları saklanmaz.",
+    "Toplanan tohumlar türün bütün bireylerini temsil etmeyebilir; 'zorunlu' genellemedir.",
+    "Gen bankası doğadaki tehditleri ortadan kaldırmaz; habitat yine tehlikede olabilir.",
+    "Doğru: gen bankası yer dışında koruma sağlar, habitat ve ekolojik ilişkileri tek başına korumaz."
+   ],
+   "commonError": "Gen bankasını doğal habitatın koruma yerine geçen tam çözüm sanmak.",
+   "check": "Tozlaştırıcısı yok olmuş bir bitki tohumdan yetiştirilse bile doğada üreyemeyebilir; bu habitatın da gerektiğini gösterir."
+  }
+ },
+ {
+  "id": "f014-bio-dogal-kaynaklar-surdurulebilirlik-6",
+  "h": "09ea835095c071",
+  "guidance": {
+   "knowledge": [
+    "Yeniden kullanma ve onarım: ürünü atmak yerine ömrünü uzatmak; yeni ürün üretme gereksinimini azaltır.",
+    "Sürdürülebilirlik: kaynakları gelecek kuşakların gereksinimlerini tehlikeye atmadan kullanmak."
+   ],
+   "strategy": "Onarıp yeniden kullanmanın kaynak tüketimine ve atığa etkisini düşün; tersini savunan seçenekleri ele.",
+   "steps": [
+    "Ürün onarılınca yerine yenisi üretilmez: yeni kaynak talebi azalır.",
+    "Ürün atılmadığı için atık oluşumu azalır.",
+    "Bu davranış yeni kaynak talebini ve atığı azaltma yaklaşımıyla uyumludur."
+   ],
+   "optionReasons": [
+    "Doğru: onarım ve yeniden kullanım yeni üretimi ve atığı azaltır.",
+    "Tek kullanımlık ürün tüketmek onarımın tam tersidir; atığı artırır.",
+    "Geri dönüşüm de kayıplarla olur; ayrıca onarım geri dönüşüm değildir.",
+    "Tehlikeli atığı suya vermek kirliliktir; sürdürülebilirlikle çelişir.",
+    "İsraf kaynağı tüketir; yenilenme ise doğanın kaynağı yeniden üretmesidir."
+   ],
+   "commonError": "Onarım ve yeniden kullanımı geri dönüşümle aynı şey sanmak.",
+   "check": "Bir telefonu iki yıl daha kullanmak, o iki yıl için yeni telefon üretimini ve eski telefonun atık olmasını erteler."
+  }
+ },
+ {
+  "id": "f014-bio-dogal-kaynaklar-surdurulebilirlik-7",
+  "h": "06e41736a6689a",
+  "guidance": {
+   "knowledge": [
+    "Güç (W): birim zamanda harcanan enerji; 1 kW = 1.000 W.",
+    "Enerji = güç · süre; kWh birimi için güç kW, süre saat cinsinden alınır."
+   ],
+   "strategy": "Tasarrufu güç farkı üzerinden hesapla; önce W'ı kW'a çevir, sonra toplam saatle çarp.",
+   "steps": [
+    "Güç farkı: 100 − 20 = 80 W = 0,08 kW.",
+    "Toplam süre: 5 saat/gün · 30 gün = 150 saat.",
+    "Tasarruf: 0,08 kW · 150 saat = 12 kWh."
+   ],
+   "optionReasons": [
+    "Yeni lambanın tüketimini tasarruf sanır: 0,02 kW · 150 saat = 3 kWh.",
+    "Doğru: 0,08 kW · 150 saat = 12 kWh.",
+    "Günlük kullanım saatini (5) sonuç sanır; çarpma yapmaz.",
+    "Eski lambanın tüketimini tasarruf sanır: 0,1 kW · 150 saat = 15 kWh.",
+    "W'ı kW'a çevirirken 1.000 yerine 100'e böler: 0,8 · 150 = 120."
+   ],
+   "commonError": "W'ı kW'a çevirmeyi unutmak ya da yanlış katsayıyla çevirmek.",
+   "check": "Eski tüketim 15 kWh, yeni tüketim 3 kWh; fark 15 − 3 = 12 kWh, aynı sonuç."
+  }
+ },
+ {
+  "id": "f014-bio-dogal-kaynaklar-surdurulebilirlik-8",
+  "h": "0a0bbd48f61842",
+  "guidance": {
+   "knowledge": [
+    "Yenilenebilir enerji kaynağı: Güneş, rüzgâr, su gibi kullanıldıkça tükenmeyen ya da hızla yenilenen kaynak.",
+    "Yaşam döngüsü: bir tesisin malzeme çıkarımından üretimine, işletmesinden ömrünün sonuna kadar bütün aşamaları; her aşamanın çevresel etkisi olabilir."
+   ],
+   "strategy": "Soru 'tek başına doğrulamaz' diyor; ılımlı ve olası ifadeleri ele, 'hiçbir etkisi yok' gibi mutlak iddiayı bul.",
+   "steps": [
+    "Yenilenebilir olmak kaynağın tükenmemesiyle ilgilidir.",
+    "Tesis üretimi, malzeme ve arazi kullanımının çevresel etkileri yine olabilir.",
+    "'Hiçbir çevresel etkisinin olmadığı' iddiası yenilenebilirlikten çıkmaz."
+   ],
+   "optionReasons": [
+    "İşletme ve yaşam döngüsünü ayrı incelemek mantıklı bir yöntemdir; olasılık bildirir.",
+    "Barajın ya da rüzgâr çiftliğinin yerinin habitatı etkileyebileceği için değerlendirme gerekebilir.",
+    "Doğru: yenilenebilirlik malzeme, üretim ve arazi etkilerinin sıfır olduğunu göstermez.",
+    "Seçenekleri aynı hizmet üzerinden karşılaştırmak adil bir yöntemdir.",
+    "Kaynak ve talep yönetimini birlikte ele almak uygun bir yaklaşımdır."
+   ],
+   "commonError": "Yenilenebilir enerjinin hiçbir çevresel etkisi olmadığını sanmak.",
+   "check": "Güneş paneli üretmek için maden çıkarılır ve fabrika çalışır; bu, yenilenebilir kaynağın da etkisi olduğunu gösterir."
+  }
+ },
+ {
+  "id": "f014-bio-dogal-kaynaklar-surdurulebilirlik-9",
+  "h": "1ed7e33b599632",
+  "guidance": {
+   "knowledge": [
+    "Su ayak izi: bir ürün ya da etkinlik için kullanılan su miktarının göstergesi.",
+    "Gri su ayak izi: oluşan kirletici yükünü belirli kalite standardına inecek kadar seyreltmek için gereken hesaplanmış su hacmi; bir kirlilik göstergesidir.",
+    "Yeşil su ayak izi yağış kaynaklı, mavi su ayak izi yüzey ve yeraltı suyu kullanımıdır."
+   ],
+   "strategy": "'Gri' kelimesini renk olarak değil, kirlilik göstergesi olarak düşün; tanımı doğru veren seçeneği bul.",
+   "steps": [
+    "Gri su ayak izi suyun rengiyle ilgili değildir.",
+    "Kirleticiyi kalite standardına göre özümsemek için gereken hacmi gösterir.",
+    "Doğru açıklama gösterge hacmi tanımını veren seçenektir."
+   ],
+   "optionReasons": [
+    "'Gri' adını suyun rengi sanır; gösterge kirlilik yükünü ölçer.",
+    "Su buharı atmosfer bileşenidir; su ayak izi göstergesi değildir.",
+    "Yağış suyu kullanımı yeşil su ayak izidir.",
+    "Doğru: kirletici yükünü kalite standardına göre özümsemek için gereken hacimdir.",
+    "kg CO₂ eşdeğeri karbon ayak izinin birimidir; su ayak izi değil."
+   ],
+   "commonError": "Gri su ayak izini rengi gri olan atık su sanmak.",
+   "check": "Birim kontrolü: gri su ayak izi su hacmiyle (litre, m³) ölçülür; kg CO₂ eşdeğeri ya da renk birim olamaz."
+  }
+ },
+ {
+  "id": "f014-bio-dogal-kaynaklar-surdurulebilirlik-10",
+  "h": "1a098505f3e0d1",
+  "guidance": {
+   "knowledge": [
+    "Tek tür dikim (monokültür): alana yalnız bir ağaç türünün aynı yaşta dikilmesi.",
+    "Doğal orman: çok türlü, farklı yaşta ve yapıda bitkiler, hayvanlar, toprak canlıları ve aralarındaki ilişkilerden oluşan sistem."
+   ],
+   "strategy": "Soru 'kesin çıkarılamaz' diyor; verilen olguları ve mantıklı izleme önerilerini ele, abartılı geri kazanım iddiasını bul.",
+   "steps": [
+    "Dikim yapıldığı ve tek tür seçildiği sorunun verisidir.",
+    "Toprak canlılarının izlenmesi ve fidan sayısının tek ölçüt olmaması mantıklı önerilerdir.",
+    "Tek tür dikimle eski orman çeşitliliğinin ve işlevlerinin tamamının geri geldiği kesin çıkarılamaz."
+   ],
+   "optionReasons": [
+    "Dikimin yapıldığı soruda açıkça verilmiştir.",
+    "Tek türün seçildiği de soruda verilmiştir.",
+    "Toprak canlıları ve habitat yapısını izlemek uygun bir sonraki adımdır.",
+    "Fidan sayısı yalnız ağaç miktarını gösterir; çeşitliliği ölçmediği için tek ölçüt olamaz.",
+    "Doğru: tek tür dikim eski komünitenin genetik, tür ve ekosistem işlevlerini otomatik geri getirmez."
+   ],
+   "commonError": "Ağaç dikmenin kaybolan doğal ormanı bütün çeşitliliğiyle geri getirdiğini sanmak.",
+   "check": "Doğal ormanda onlarca tür vardı, dikimde bir tür var; tür sayısı bile aynı değilken bütün işlevlerin geri geldiği söylenemez."
+  }
+ },
+ {
+  "id": "f012-bio-eseyli-ureme-1",
+  "h": "0e93e4cee552fd",
+  "guidance": {
+   "knowledge": [
+    "n: bir kromozom takımındaki kromozom sayısı. Diploit (2n) hücrede iki takım, haploit (n) hücrede bir takım bulunur.",
+    "Gamet: üreme hücresi (sperm, yumurta); olağan durumda haploittir."
+   ],
+   "strategy": "2n verildiğinde gamet için n istenir; diploit sayıyı ikiye böl.",
+   "steps": [
+    "Vücut hücresi 2n = 22.",
+    "Bir takım: n = 22 / 2 = 11.",
+    "Haploit gamette 11 kromozom bulunur."
+   ],
+   "optionReasons": [
+    "Doğru: 2n = 22 → n = 22 / 2 = 11.",
+    "İkiye bölmeyi unutur; 22 vücut hücresinin sayısıdır.",
+    "Bölmek yerine iki ile çarpar: 22 · 2 = 44.",
+    "2n gösterimindeki 2'yi kromozom sayısı sanır; 2 takım sayısıdır.",
+    "Soru gamet başına kromozomu soruyor; kaç gamet oluştuğu bu sayıyı değiştirmez."
+   ],
+   "commonError": "Haploit gamet için diploit sayıyı ikiye bölmeyi unutmak.",
+   "check": "İki gamet döllenince 11 + 11 = 22 eder; vücut hücresinin sayısına geri dönülüyor."
+  }
+ },
+ {
+  "id": "f012-bio-eseyli-ureme-2",
+  "h": "16380b7a8cc009",
+  "guidance": {
+   "knowledge": [
+    "Döllenme: haploit sperm ile haploit yumurtanın birleşerek zigot oluşturması.",
+    "Zigot: döllenmiş yumurta; iki haploit takımı birlikte taşıdığı için diploittir (2n)."
+   ],
+   "strategy": "Döllenmede iki gametin kromozom takımları birleşir; sayıları topla.",
+   "steps": [
+    "Yumurta n = 9, sperm n = 9.",
+    "Zigot: 9 + 9 = 18 kromozom.",
+    "Zigot 2n = 18'dir."
+   ],
+   "optionReasons": [
+    "Zigotun haploit kaldığını sanır; döllenme iki takımı birleştirir.",
+    "Doğru: 9 + 9 = 18.",
+    "Haploit sayıyı bir kez daha yarıya böler (9 / 2 ≈ 4); döllenme bölmez, birleştirir.",
+    "Toplamı yeniden iki katına çıkarır: 18 · 2 = 36.",
+    "Kromozom sayılarını toplamak yerine çarpar: 9 · 9 = 81."
+   ],
+   "commonError": "Döllenmede kromozom sayılarını toplamak yerine çarpmak.",
+   "check": "Zigottan mayozla gamet oluşsa 18 / 2 = 9 olur; başlangıçtaki gamet sayısına dönülüyor."
+  }
+ },
+ {
+  "id": "f012-bio-eseyli-ureme-3",
+  "h": "01ccf10e8b96f9",
+  "guidance": {
+   "knowledge": [
+    "Mitoz: bir hücrenin aynı kromozom sayısına sahip iki yavru hücreye bölünmesi.",
+    "Her mitoz turunda hücre sayısı iki katına çıkar; her hücredeki kromozom sayısı değişmez."
+   ],
+   "strategy": "Hücre sayısını tur başına ikiye katla; kromozom sayısının hücre başına korunduğunu unutma.",
+   "steps": [
+    "1. tur: 1 hücre → 2 hücre.",
+    "2. tur: 2 hücre → 4 hücre.",
+    "Mitoz kromozom sayısını korur: her hücrede 14 kromozom."
+   ],
+   "optionReasons": [
+    "Yalnız bir tur sayar ve mitozu mayoz gibi kromozomu yarıya indiren bölünme sanır.",
+    "Hücre sayısı doğru ama mitozu mayozla karıştırıp kromozomu yarıya indirir: 14 / 2 = 7.",
+    "Doğru: iki turda 1 → 2 → 4 hücre, mitoz her hücrede 14 kromozomu korur.",
+    "Kromozom sayısı ile hücre sayısının yerini değiştirir.",
+    "Dört hücredeki toplam kromozomu (4 · 14 = 56) tek hücreye yazar."
+   ],
+   "commonError": "Mitozu kromozom sayısını yarıya indiren mayozla karıştırmak.",
+   "check": "Hücre sayısı 2ᵗ ile bulunur: t = 2 için 2² = 4; toplam kromozom 4 · 14 = 56, hücre başına yine 14."
+  }
+ },
+ {
+  "id": "f012-bio-eseyli-ureme-4",
+  "h": "036349121e3858",
+  "guidance": {
+   "knowledge": [
+    "Erselik (hermafrodit): aynı bireyde hem erkek hem dişi üreme organı ve gameti bulunması.",
+    "Eşeyli üreme: iki gametin birleşerek zigot oluşturduğu üreme; ölçüt gamet birleşmesidir.",
+    "Kendini dölleme: aynı bireyin erkek ve dişi gametlerinin birleşmesi."
+   ],
+   "strategy": "Eşeyli üremenin ölçütünü uygula: birey sayısına değil, gamet birleşmesi olup olmadığına bak.",
+   "steps": [
+    "İki tip gamet birleşip zigot oluşturuyor: döllenme var.",
+    "Gamet birleşmesi olduğu için olay eşeylidir.",
+    "Gametler aynı bireyden geldiği için bu kendini döllenmedir."
+   ],
+   "optionReasons": [
+    "Tek birey olmasını eşeysiz üreme sanır; gamet birleşmesi olduğu için eşeylidir.",
+    "Mitoz bir hücrenin bölünmesidir; gamet birleşmesi döllenmedir.",
+    "Soruda zigot oluştuğu açıkça veriliyor.",
+    "Doğru: aynı bireyin iki tip gameti birleşiyor, bu kendini döllenmeyle eşeyli üremedir.",
+    "Gametler olağan durumda haploittir; iki diploit gamet birleşse zigot 4n olurdu."
+   ],
+   "commonError": "Tek bir bireyden yavru oluşmasını her zaman eşeysiz üreme sanmak.",
+   "check": "Ölçüt sorusu: gamet birleşmesi var mı? Evet; öyleyse birey sayısı ne olursa olsun eşeylidir."
+  }
+ },
+ {
+  "id": "f012-bio-eseyli-ureme-5",
+  "h": "192a8fe597f4bc",
+  "guidance": {
+   "knowledge": [
+    "DNA eşlenmesi: hücre bölünmeden önce DNA miktarının iki katına çıkması; her kromozom iki kardeş kromatitli olur.",
+    "Eşlenmede kromozom sayısı değişmez; kardeş kromatitler aynı sentromerle bağlı kaldığı sürece tek kromozom sayılır."
+   ],
+   "strategy": "Ölçülen değişkenin DNA miktarı olduğunu fark et; DNA miktarından kromozom ya da hücre sayısı çıkarma.",
+   "steps": [
+    "DNA miktarı 4 → 8: 8 / 4 = 2, iki katına çıkmış.",
+    "Başlangıç kromozom sayısı verilmemiş; DNA birimi kromozom sayısına çevrilemez.",
+    "Güvenli çıkarım: DNA iki katlanmıştır; mutlak kromozom sayısı belirlenemez."
+   ],
+   "optionReasons": [
+    "DNA birimini kromozom sayısı sanır; eşlenme kromozom sayısını değiştirmez.",
+    "Döllenme iki ayrı gametin birleşmesidir; tek çekirdekteki DNA artışı eşlenmeyle de açıklanır.",
+    "DNA artmış, azalmamış; kromozom sayısının yarıya inmesi mayoz bölünmeyle ilgilidir.",
+    "DNA birimini hücre sayısı sanır; tek bir çekirdeğin DNA'sı ölçülüyor.",
+    "Doğru: 4 → 8 iki katlanmadır; başlangıç sayısı bilinmediği için kromozom sayısı bulunamaz."
+   ],
+   "commonError": "DNA miktarının iki katına çıkmasını kromozom sayısının iki katına çıkması sanmak.",
+   "check": "2n = 4 olan bir hücre de 2n = 46 olan bir hücre de eşlenince DNA'sını ikiye katlar; yani artış kromozom sayısını ele vermez."
+  }
+ },
+ {
+  "id": "f012-bio-eseyli-ureme-6",
+  "h": "12bb616235233d",
+  "guidance": {
+   "knowledge": [
+    "Mayoz: kromozom sayısını yarıya indirip gamet (n) oluşturan bölünme.",
+    "Döllenme: iki gametin birleşip zigot (2n) oluşturması.",
+    "Mitoz: kromozom sayısını koruyarak hücre sayısını artıran bölünme; zigottan çok hücreli canlı gelişir."
+   ],
+   "strategy": "Her olayın sonucuna bak: takım sayısı yarıya mı iniyor, birleşiyor mu, korunarak hücre mi çoğalıyor?",
+   "steps": [
+    "Gamet oluşumu: 2n → n, takım yarıya iner: mayoz.",
+    "Gamet birleşmesi: n + n → 2n: döllenme.",
+    "Zigotun hücre sayısının artışı: 2n → 2n, sayı korunur: mitoz. Sıra: mayoz, döllenme, mitoz."
+   ],
+   "optionReasons": [
+    "Doğru: gamet mayozla oluşur, döllenmeyle birleşir, zigot mitozla çoğalır.",
+    "Mitozu gamet oluşumuna verir; mitoz kromozomu yarıya indirmez, gamet üretemez.",
+    "Sırayı tamamen kaydırır; döllenme gamet oluşturmaz, gametleri birleştirir.",
+    "Döllenme yerine mitoz, gelişim yerine mayoz yazar; zigot mayozla büyürse kromozom yarıya inerdi.",
+    "Döllenmeyi iki kez yazar; gamet oluşumu ve zigotun çoğalması döllenme değildir."
+   ],
+   "commonError": "Mayoz ile mitozun görevlerini karıştırmak.",
+   "check": "Kromozom sayısını izle: 2n → n (mayoz) → 2n (döllenme) → 2n (mitoz); her olay sayıyı tutarlı biçimde değiştiriyor."
+  }
+ },
+ {
+  "id": "f012-bio-eseyli-ureme-7",
+  "h": "1cf6e6cd488621",
+  "guidance": {
+   "knowledge": [
+    "Polen: tohumlu bitkilerde erkek gametofit yapısı; içinde sperm hücrelerini oluşturacak ya da taşıyacak hücreler bulunur.",
+    "Sperm hücresi: erkek gamet; yumurtayla birleşip döllenmeyi sağlar.",
+    "Tozlaşma (polen taşınması) ile döllenme (sperm ve yumurta birleşmesi) ayrı basamaklardır."
+   ],
+   "strategy": "Polenin bir yapı mı yoksa tek bir gamet mi olduğunu ayır; tozlaşma ile döllenmeyi karıştıran seçenekleri ele.",
+   "steps": [
+    "Polen birden çok hücre içeren erkek gametofit yapısıdır.",
+    "Sperm hücreleri polenin içinde oluşur ya da taşınır; polenin kendisi sperm değildir.",
+    "Doğru ifade polenin erkek gametofit olduğu ve tek bir spermle özdeş olmadığıdır."
+   ],
+   "optionReasons": [
+    "Polen tek hücre değildir; sperm hücreleri polenin içindedir.",
+    "Doğru: polen erkek gametofit yapısıdır; tek bir sperm hücresiyle özdeş değildir.",
+    "Polen erkek yapıdır; dişi gamet yumurta hücresidir.",
+    "Polen oluşumu döllenmeden önce gelir; döllenme sperm ile yumurtanın birleşmesidir.",
+    "Polen canlı hücreler taşır; hücresel yapısı vardır."
+   ],
+   "commonError": "Poleni bitkinin sperm hücresi sanmak.",
+   "check": "Polen çiçeğe ulaştıktan sonra polen tüpü oluşturur ve spermler bu tüpten ilerler; yani polen spermleri taşıyan bir yapıdır."
+  }
+ },
+ {
+  "id": "f012-bio-eseyli-ureme-8",
+  "h": "11124ac36a680d",
+  "guidance": {
+   "knowledge": [
+    "Alel: bir genin farklı biçimleri; yeni alel mutasyonla oluşur.",
+    "Mayozda krossing over ve kromozomların rastgele ayrılması, döllenmede gametlerin rastgele birleşmesi mevcut alellerin yeni bileşimlerini oluşturur."
+   ],
+   "strategy": "Mayoz ve döllenmenin ne yaptığını (mevcut alelleri karıştırmak) ve ne yapmadığını (yeni alel üretmek, başarı garantisi) ayır.",
+   "steps": [
+    "Mayoz ve döllenme mevcut alelleri yeni bileşimlerde bir araya getirir.",
+    "Yeni alel üretmezler ve her yavrunun farklı ya da daha başarılı olacağını garanti etmezler.",
+    "Doğru ifade farklı alel bileşimlerinin oluşabilmesine katkı sağladıklarıdır."
+   ],
+   "optionReasons": [
+    "Çeşitlilik başarı garantisi vermez; çevreye uyum her ortamda farklıdır.",
+    "Kardeşler olasılıkla farklıdır ama aynı genotip de oluşabilir; 'kesin' fazla güçlüdür.",
+    "Doğru: mayoz ve rastgele döllenme farklı alel bileşimlerinin oluşabilmesine katkı sağlar.",
+    "Aleller yok olmaz; yalnız yeni bileşimlerde bir araya gelir.",
+    "Yeni alel mutasyonla oluşur; mayoz ve döllenme var olan alelleri karıştırır."
+   ],
+   "commonError": "Mayoz ve döllenmenin yeni alel ürettiğini sanmak.",
+   "check": "Bir iskambil destesini karıştırmak yeni kart üretmez, yalnız sıralamayı değiştirir; mayoz ve döllenme de alellere bunu yapar."
+  }
+ },
+ {
+  "id": "f012-bio-eseyli-ureme-9",
+  "h": "11fc1a8158b9a4",
+  "guidance": {
+   "knowledge": [
+    "Zigot: iki haploit gametin birleşmesiyle oluşan diploit (2n) hücre.",
+    "Olağan gamet haploittir (n); n = 2n / 2."
+   ],
+   "strategy": "Zigot iki eşit takımın toplamıdır; gamet sayısını bulmak için zigotun sayısını ikiye böl.",
+   "steps": [
+    "Zigot 2n = 16.",
+    "Her gamet n taşır: n = 16 / 2 = 8.",
+    "İki gametin her biri 8 kromozomludur."
+   ],
+   "optionReasons": [
+    "Zigotun sayısını gamete yazar; gamet haploittir, yarı sayıda kromozom taşır.",
+    "Yarıya bölmek yerine iki katına çıkarır: 16 · 2 = 32.",
+    "İki kez ikiye böler: 16 / 2 / 2 = 4.",
+    "Doğru: n = 16 / 2 = 8.",
+    "Zigot sayısı ile gamet başına kromozom sayısı ayrı şeylerdir; tek zigotun kromozom sayısı yeterlidir."
+   ],
+   "commonError": "Gametin kromozom sayısını zigotunkiyle aynı sanmak.",
+   "check": "8 + 8 = 16; iki gamet birleşince zigotun sayısı elde ediliyor."
+  }
+ },
+ {
+  "id": "f012-bio-eseyli-ureme-10",
+  "h": "0063c3f56fe184",
+  "guidance": {
+   "knowledge": [
+    "Eşeysiz üreme: tek bir atadan, gamet birleşmesi olmadan yeni birey oluşması.",
+    "Vejetatif üreme: bitkilerde kök, gövde, dal gibi vücut parçalarından yeni birey oluşması; mitozla gerçekleşir.",
+    "Eşeyli üreme: gamet birleşmesiyle (döllenme) yeni birey oluşması."
+   ],
+   "strategy": "Her olayda gamet birleşmesi olup olmadığına bak: yoksa eşeysiz, varsa eşeyli.",
+   "steps": [
+    "Dal köklendirme: vücut parçasından yeni birey, gamet birleşmesi yok: vejetatif eşeysiz.",
+    "İki gametin döllenmesi: gamet birleşmesi var: eşeyli.",
+    "Sonuç: ilki vejetatif eşeysiz, ikincisi eşeyli yoldur."
+   ],
+   "optionReasons": [
+    "Dal köklendirmede gamet birleşmesi yoktur; ikisini de döllenme saymak yanlıştır.",
+    "Dal köklendirme mitozla olur ve zigot oluşmaz.",
+    "Gamet birleşmesi eşeyli üremenin tanımıdır.",
+    "Yeni birey eşeysiz yolla da oluşabilir; dal köklendirme bunun örneğidir.",
+    "Doğru: dal köklendirme vejetatif eşeysiz, gamet birleşmesi eşeyli üremedir."
+   ],
+   "commonError": "Yeni birey oluşan her olayı eşeyli üreme sanmak.",
+   "check": "Dal köklendirmeyle oluşan bitki ana bitkiyle genetik olarak aynıdır; bu gamet birleşmesi olmadığını, yani eşeysiz olduğunu doğrular."
+  }
+ },
+ {
+  "id": "f012-bio-kalitima-giris-1",
+  "h": "0276a07e464eec",
+  "guidance": {
+   "knowledge": [
+    "Gen: bir özelliği belirleyen DNA bölgesi. Lokus: bu genin kromozom üzerindeki yeri.",
+    "Aynı genin farklı sürümlerine (biçimlerine) ayrı bir ad verilir; büyük harf baskın, küçük harf çekinik sürümü gösterir."
+   ],
+   "strategy": "Soru iki simgenin aynı genin farklı biçimleri olduğunu söylüyor; bu ilişkiye verilen terimi diğer kavramlardan (gamet, organel, tür, kromozom takımı) ayırarak bul.",
+   "steps": [
+    "A ve a aynı harftir; yani aynı genin, aynı lokustaki iki sürümüdür.",
+    "Aynı lokusta bulunan farklı gen sürümlerine alel denir.",
+    "Kromozom takımı, tür, organel ve gamet bu tanıma uymaz; cevap alel."
+   ],
+   "optionReasons": [
+    "Doğru: aynı genin farklı sürümleri alel olarak adlandırılır.",
+    "Kromozom takımı birçok geni taşıyan kromozomların bütünüdür; tek bir genin iki sürümüyle karıştırılır.",
+    "Büyük ve küçük harfi iki ayrı canlı sanan öğrenci bunu seçer; harfler aynı bireydeki gen sürümleridir.",
+    "Organel hücre içi yapıdır (mitokondri gibi); genetik simgelerle bir ilgisi yoktur.",
+    "İki harfi iki gamet sayar; oysa bir gamet bu lokusta yalnız birini taşır, harfler gamet sayısı değildir."
+   ],
+   "commonError": "Alel ile lokusu karıştırmak: lokus genin yeri, alel o yerdeki genin sürümüdür.",
+   "check": "Aa bireyinde lokus bir tanedir ama o lokusta iki farklı alel vardır; tanım tutarlıdır."
+  }
+ },
+ {
+  "id": "f012-bio-kalitima-giris-2",
+  "h": "0eccbfdb2153d2",
+  "guidance": {
+   "knowledge": [
+    "Tam baskınlık: baskın alel (A) tek kopyayla bile kendi özelliğini gösterir; çekinik alel (a) yalnız aa durumunda görünür.",
+    "Genotip: alel çifti (AA, Aa, aa). Fenotip: dışarıdan görülen özellik (uzun, kısa)."
+   ],
+   "strategy": "Uzun fenotip için en az bir A gerektiğinden, A içeren bütün genotipleri tek tek yaz.",
+   "steps": [
+    "AA: iki A var, uzun görünür.",
+    "Aa: bir A yeterli, a gizli kalır; yine uzun görünür.",
+    "aa: A yok, kısa görünür. O hâlde uzun birey AA ya da Aa olabilir."
+   ],
+   "optionReasons": [
+    "Heterozigot Aa bireyinin de uzun göründüğünü unutur.",
+    "Doğru: tam baskınlıkta AA ve Aa aynı uzun fenotipi verir.",
+    "aa bireyinde A yoktur, kısa görünür; uzun ile kısayı ters eşleştirir.",
+    "Aa doğru ama aa kısa fenotiptir; uzun listeye çekinik homozigotu ekler.",
+    "AA doğru ama aa kısa görünür; Aa yerine aa yazarak heterozigotu atlar."
+   ],
+   "commonError": "Baskın fenotipli bireyi otomatik olarak AA saymak; Aa da aynı görünür.",
+   "check": "Aa bireyinde A varken a'nın etkisi görünmez; yani uzun boy ikinci aleli kesinleştirmez, iki genotip kalır."
+  }
+ },
+ {
+  "id": "f012-bio-kalitima-giris-3",
+  "h": "059e2a3ce58c58",
+  "guidance": {
+   "knowledge": [
+    "Lokus: genin kromozomdaki yeri; genotipte her harf çifti bir lokustur (Aa, BB, cc).",
+    "Heterozigot lokus: iki farklı alel taşıyan çift (Aa). Homozigot: iki aynı alel (BB ya da cc)."
+   ],
+   "strategy": "Genotipi harf çiftlerine ayır ve her çiftte iki harfin aynı mı farklı mı olduğuna bak.",
+   "steps": [
+    "AaBBcc genotipini çiftlere böl: Aa, BB, cc.",
+    "Aa: A ve a farklı, heterozigot. BB: iki B aynı, homozigot. cc: iki c aynı, homozigot.",
+    "Heterozigot lokus sayısı 1."
+   ],
+   "optionReasons": [
+    "Büyük harfli BB çiftini de heterozigot sayar: Aa ve BB ile 2.",
+    "Bütün çiftleri heterozigot sayar ya da lokus sayısını (3) cevap sanar.",
+    "Doğru: yalnız Aa iki farklı alel taşır.",
+    "Lokus sayısı ile harf sayısını karıştırıp büyük harfleri (A, B, B) ve bir küçük harfi sayar; temelsiz bir toplam.",
+    "Toplam harf sayısını (6) sayar; harf sayısı heterozigotluğu göstermez."
+   ],
+   "commonError": "Büyük harfli çiftleri heterozigot sanmak; önemli olan iki harfin aynı ya da farklı olmasıdır.",
+   "check": "Gamet sayısıyla denetle: 2¹ = 2 gamet çeşidi (ABc, aBc) çıkar; bu tek heterozigot lokusla uyumludur."
+  }
+ },
+ {
+  "id": "f012-bio-kalitima-giris-4",
+  "h": "16de702bc07ba1",
+  "guidance": {
+   "knowledge": [
+    "Gamet: üreme hücresi; her lokustan yalnız bir alel taşır.",
+    "Bağımsız genler: farklı lokusların alelleri birbirinden bağımsız dağılır; her lokusun seçenekleri birleştirilir."
+   ],
+   "strategy": "Her lokusun gamete verebileceği alelleri ayrı yaz, sonra birleştir; homozigot lokus tek seçenek verir.",
+   "steps": [
+    "Aa lokusu A ya da a verir: 2 seçenek.",
+    "BB lokusu yalnız B, cc lokusu yalnız c verir: 1'er seçenek.",
+    "Birleştir: A·B·c = ABc ve a·B·c = aBc. Gamet kümesi ABc, aBc."
+   ],
+   "optionReasons": [
+    "Gameti lokus çiftlerinin listesi sanır; gamet her lokustan tek alel taşır, Aa gibi çift taşımaz.",
+    "cc lokusu yalnız küçük c verir; büyük C yazar ve BB'den b alelini de türetir.",
+    "Gameti diploit bireyin tüm genotipi sanır; gamet alel çiftlerini taşımaz.",
+    "Doğru: tek heterozigot lokus (Aa) 2 gamet verir, B ve c sabit kalır.",
+    "BB lokusunu heterozigot sayıp b alelini uydurur; BB'de b aleli yoktur."
+   ],
+   "commonError": "Homozigot lokuslardan olmayan alelleri üretmek ya da gamete iki alel koymak.",
+   "check": "Gamet çeşidi 2ⁿ ile bulunur; n = 1 heterozigot lokus olduğundan 2¹ = 2, küme de iki üyeli olmalı."
+  }
+ },
+ {
+  "id": "f012-bio-kalitima-giris-5",
+  "h": "1b6967095cc5c4",
+  "guidance": {
+   "knowledge": [
+    "Gamet çeşidi sayısı: bağımsız genlerde 2ⁿ; n heterozigot (iki farklı alel taşıyan) lokus sayısıdır.",
+    "Homozigot lokus (AA) gamete tek bir seçenek verir, sayıyı artırmaz."
+   ],
+   "strategy": "Her lokusun gamete kaç farklı alel verdiğini bul ve çarp; bu çarpım 2ⁿ ile aynı sonucu verir.",
+   "steps": [
+    "AA lokusu yalnız A verir: 1 seçenek.",
+    "Bb lokusu B ya da b: 2 seçenek. Cc lokusu C ya da c: 2 seçenek.",
+    "Çarp: 1 × 2 × 2 = 4 gamet çeşidi (ABC, ABc, AbC, Abc)."
+   ],
+   "optionReasons": [
+    "Yalnız tek heterozigot lokusu sayar ya da 2 ile 2'yi çarpmak yerine heterozigot lokus sayısını cevap sanar.",
+    "Lokus sayısını (3) gamet çeşidi sanar.",
+    "Seçenekleri çarpmak yerine toplar: 2 + 2 + 2 ya da 3 lokus × 2 gibi hatalı işlem.",
+    "AA lokusunu da heterozigot sayar: 2³ = 8.",
+    "Doğru: iki heterozigot lokus olduğundan 2² = 4."
+   ],
+   "commonError": "Homozigot lokusu da üste katıp 2³ = 8 yazmak.",
+   "check": "Gametleri tek tek yaz: ABC, ABc, AbC, Abc; hepsi A ile başlar ve dört tanedir."
+  }
+ },
+ {
+  "id": "f012-bio-kalitima-giris-6",
+  "h": "04495e078fbbad",
+  "guidance": {
+   "knowledge": [
+    "Genotip: bireyin alel yapısı. Fenotip: ölçülen özellik (burada boy).",
+    "Fenotip, genotip ile çevre koşullarının (ışık, besin, sıcaklık) birlikte etkisiyle ortaya çıkar."
+   ],
+   "strategy": "Soru genotipin aynı olduğunu veriyor; tek değişen ışık olduğu için farkı çevreye bağlayan, veriyi aşmayan ifadeyi seç.",
+   "steps": [
+    "Verilen: fidelerin genotipi aynı, ışık farklı, boy farklı.",
+    "Genotip sabitken farkı açıklayan tek değişken çevredir; fenotip çevreden etkilenmiştir.",
+    "Mutasyon, tür farkı ya da alel değişimi soruda verilmediği için kesin söylenemez; güvenli çıkarım çevre etkisidir."
+   ],
+   "optionReasons": [
+    "Doğru: genotip aynıyken boy farkı çevre etkisini gösterir, farklı alel kanıtı sayılamaz.",
+    "Her farkı DNA değişimine bağlar; oysa genotip aynıdır ve mutasyon bilgisi verilmemiştir.",
+    "Genotip alel yapısı, fenotip görünüştür; iki kavramı eş sanar.",
+    "Işığın fenotipi etkilediğini, alelleri değiştirdiği sanır; çevre DNA dizisini zorunlu olarak değiştirmez.",
+    "Aynı genotipli fideler aynı türdendir; boy farkını tür farkı sanmak veriyi aşar."
+   ],
+   "commonError": "Her fenotip farkını genetik farka bağlamak; çevre etkisini göz ardı etmek.",
+   "check": "Ters durumu düşün: fideler aynı ışıkta yetişseydi boylar benzer olurdu; fark ışıkla gelip gidiyorsa kaynak çevredir."
+  }
+ },
+ {
+  "id": "f012-bio-kalitima-giris-7",
+  "h": "0e1eddec85f3a6",
+  "guidance": {
+   "knowledge": [
+    "Gamet haploittir: her lokusta yalnız bir alel taşır.",
+    "Mayozda bir bireyin aynı lokustaki iki aleli birbirinden ayrılır ve farklı gametlere gider (ayrılma ilkesi)."
+   ],
+   "strategy": "Aa bireyindeki iki alelin mayozda ayrıldığını kullan; baskınlığın gamet içeriğini değiştirmediğini hatırla.",
+   "steps": [
+    "Aa bireyi iki farklı alel taşır: A ve a.",
+    "Mayozda bu iki alel ayrılır; gametlerin yarısı A, yarısı a alır.",
+    "Baskınlık yalnız fenotipi belirler; a aleli silinmez. Gamet A ya da a taşır."
+   ],
+   "optionReasons": [
+    "Baskın alelin çekiniği yok ettiğini sanır; a aleli gametlerin yarısına geçer.",
+    "Doğru: alel ayrılmasıyla her gamet A ya da a alır, çekinik alel korunur.",
+    "Gameti diploit sanır; normal gamet bir lokusta iki alel taşımaz.",
+    "Fenotipte görünmeyen alelin gametlere tek başına geçtiğini sanır; A da gametlere gider.",
+    "Gamete iki alel koyar ve a'yı A'ya dönüştürür; iki hata birden."
+   ],
+   "commonError": "Baskın fenotipi görünce çekinik alelin kaybolduğunu düşünmek.",
+   "check": "Aa × aa çaprazlamasında aa yavru çıkabilir; bu, Aa bireyinin a taşıyan gamet yaptığını kanıtlar."
+  }
+ },
+ {
+  "id": "f012-bio-kalitima-giris-8",
+  "h": "174ddeb5babc8f",
+  "guidance": {
+   "knowledge": [
+    "Bağlı genler: aynı kromozom üzerindeki lokuslar; birlikte gamete geçme eğilimindedir.",
+    "AB/ab gösterimi: eğik çizginin bir yanı bir homolog kromozom (A ile B), öbür yanı diğer homolog (a ile b).",
+    "Parça değişimi (krossing over): homologlar arası parça değişimi; yeni birleşimler (Ab, aB) yalnız bununla oluşur."
+   ],
+   "strategy": "Parça değişimi yoksa her homolog kromozom gamete olduğu gibi geçer; eğik çizginin iki yanını ayrı gamet olarak oku.",
+   "steps": [
+    "Bir homolog A ve B'yi, diğeri a ve b'yi taşır.",
+    "Mayozda homologlar ayrılır; parça değişimi olmadığından birleşimler bozulmaz.",
+    "Gametler: AB ve ab. Ab ve aB oluşmaz."
+   ],
+   "optionReasons": [
+    "Bağlı genleri bağımsız sanıp dört eşit gamet yazar; Ab ve aB için parça değişimi gerekir.",
+    "Gameti diploit genotip sanır; gamet her lokustan tek alel taşır.",
+    "Doğru: parça değişimi olmadan ebeveyn birleşimleri AB ve ab korunur.",
+    "Aynı lokusun iki alelini bir gamete koyar; Aa gamet olamaz.",
+    "Gamette aynı alelden iki tane yazar; gamet bir lokusta tek alel taşır."
+   ],
+   "commonError": "Bağlı genleri bağımsız sayıp dört gamet çeşidi yazmak.",
+   "check": "AB/ab bireyi bir kromozomda AB, diğerinde ab taşır; kromozomlar bütün hâlde ayrılınca yalnız bu iki dizilim çıkar."
+  }
+ },
+ {
+  "id": "f012-bio-kalitima-giris-9",
+  "h": "1335b5cd07c5cf",
+  "guidance": {
+   "knowledge": [
+    "Ayrık (birbirini dışlayan) olaylar: aynı anda gerçekleşemeyen olaylar; olasılıkları toplanır.",
+    "Aa × Aa çaprazlamasında her ebeveyn 1/2 olasılıkla A, 1/2 olasılıkla a gameti verir."
+   ],
+   "strategy": "Aa yavrunun iki yolu vardır: anneden A babadan a, ya da anneden a babadan A. Her yolu çarpımla bul, sonra iki ayrık yolu topla.",
+   "steps": [
+    "Yol 1: anneden A (1/2) ve babadan a (1/2): 1/2 × 1/2 = 1/4.",
+    "Yol 2: anneden a (1/2) ve babadan A (1/2): 1/2 × 1/2 = 1/4.",
+    "İki yol ayrıktır, topla: 1/4 + 1/4 = 2/4 = 1/2."
+   ],
+   "optionReasons": [
+    "Yalnız tek yolu hesaplar, ikinci köken yolunu unutur: 1/4.",
+    "Baskın fenotip olasılığını (AA + Aa = 1/4 + 1/2) Aa genotipi sanır.",
+    "Ebeveynler Aa olduğu için yavruyu da kesin Aa sanır; AA ve aa da oluşabilir.",
+    "Doğru: iki ayrık yol, her biri 1/4; toplam 1/2.",
+    "Aynı yavruda iki yolun birlikte gerçekleşemeyeceğini düşünüp olasılığı sıfır sanır; yollar ayrı ayrı mümkündür."
+   ],
+   "commonError": "Aynı genotipe giden iki farklı yolu tek yol sayıp 1/4 bulmak.",
+   "check": "Punnett karesi: AA, Aa, aA, aa; dört eş kutudan ikisi Aa, yani 2/4 = 1/2."
+  }
+ },
+ {
+  "id": "f012-bio-kalitima-giris-10",
+  "h": "14417ec10ad15a",
+  "guidance": {
+   "knowledge": [
+    "Baskın alel: heterozigot (Aa) bireyde fenotipe yansıyan alel. Çekinik alel: yalnız homozigot (aa) iken görünen alel.",
+    "Baskınlık yalnız alellerin heterozigottaki fenotip ilişkisini anlatır; sıklık, yarar ya da yaşla ilgisi yoktur."
+   ],
+   "strategy": "Baskınlığın tanımını hatırla ve şıklardan bu tanımın dışına taşan (sıklık, yarar, yaş, silme) iddiaları ele.",
+   "steps": [
+    "Tanım: Aa bireyde fenotipte etkisi görülen alel baskındır.",
+    "Bir alelin toplumda sık olması, yararlı olması ya da yeni olması bu tanımda yer almaz.",
+    "Çekinik alel DNA'dan silinmez, gizli kalır. Doğru ifade heterozigotta etkisinin görülmesidir."
+   ],
+   "optionReasons": [
+    "Baskın kelimesini sık anlamında okur; baskın bir alel toplumda nadir olabilir.",
+    "Baskınlığı üstünlük ya da yarar sanır; baskın bir alel zararlı bir özellik de verebilir.",
+    "Çekinik alelin yok olduğunu sanır; Aa bireyde a aleli DNA'da durur ve gametlere geçer.",
+    "Baskınlığı alelin evrimsel yaşıyla ilişkilendirir; tanımda böyle bir ölçüt yoktur.",
+    "Doğru: baskınlık, heterozigot bireyde fenotipe yansıyan alelin özelliğidir."
+   ],
+   "commonError": "Baskın kelimesini günlük anlamıyla (güçlü, yaygın, iyi) yorumlamak.",
+   "check": "Karşı örnek: Aa bireyin a aleli çocuğa geçip aa yavru verebilir; demek ki a silinmemiş, yalnız gizlenmiştir."
+  }
+ },
+ {
+  "id": "f012-bio-mendel-genetigi-1",
+  "h": "0cc2a13631255a",
+  "guidance": {
+   "knowledge": [
+    "Aa: heterozigot birey; gametlerinin 1/2'si A, 1/2'si a taşır.",
+    "aa: çekinik homozigot; tam baskınlıkta çekinik özellik yalnız bu genotipte görülür."
+   ],
+   "strategy": "aa yavru için her iki ebeveynden de a gelmesi gerekir; iki bağımsız gamet olasılığını çarp.",
+   "steps": [
+    "Anneden a gelme olasılığı 1/2.",
+    "Babadan a gelme olasılığı 1/2.",
+    "İki olay birlikte gerekir, çarp: 1/2 × 1/2 = 1/4."
+   ],
+   "optionReasons": [
+    "Doğru: AA, Aa, aA, aa kutularından yalnız biri aa; 1/4.",
+    "Aa (heterozigot) olasılığını aa sanır: 2/4 = 1/2.",
+    "Baskın fenotip olasılığını (1/4 + 2/4 = 3/4) cevap yazar.",
+    "Ebeveynler a taşıdığı için yavrunun kesin aa olacağını sanır.",
+    "Ebeveynler çekinik özelliği göstermediği için aa yavrunun imkânsız olduğunu sanır."
+   ],
+   "commonError": "1/4 olasılığını her dört çocuktan birinin kesin aa olacağı şeklinde yorumlamak.",
+   "check": "Tüm olasılıklar 1 etmeli: AA 1/4 + Aa 1/2 + aa 1/4 = 1."
+  }
+ },
+ {
+  "id": "f012-bio-mendel-genetigi-2",
+  "h": "15c2e856c37bbb",
+  "guidance": {
+   "knowledge": [
+    "Baskın fenotip: en az bir A aleli taşıyan bireyin görünüşü (AA ya da Aa).",
+    "aa ebeveyni yalnız a gameti verir; Aa ebeveyni 1/2 A, 1/2 a verir."
+   ],
+   "strategy": "İkinci ebeveynin aa olduğunu doğru kullan; yavrunun A alıp almaması yalnız Aa ebeveynine bağlıdır.",
+   "steps": [
+    "Aa ebeveyninin gametleri: A (1/2), a (1/2). aa ebeveyninin gameti: a (1).",
+    "Yavrular: A + a = Aa (1/2), a + a = aa (1/2).",
+    "Baskın fenotip yalnız Aa'dır: olasılık 1/2."
+   ],
+   "optionReasons": [
+    "aa çekinik oranını baskın sanır ya da Aa × Aa'daki aa payını (1/4) taşır.",
+    "Doğru: Aa ve aa yarı yarıya oluşur; baskın fenotip 1/2.",
+    "İkinci ebeveyni yanlışlıkla Aa sayıp 3:1 oranını uygular: 3/4.",
+    "Bir ebeveyn baskın göründüğü için bütün yavruların baskın olacağını sanır.",
+    "Bir ebeveyn çekinik diye baskın yavrunun çıkamayacağını sanır; Aa ebeveyni A verebilir."
+   ],
+   "commonError": "Her çaprazlamaya 3:1 oranını uygulamak; bu oran yalnız Aa × Aa içindir.",
+   "check": "Test çaprazlamasında heterozigot birey 1:1 oran verir; 1/2 baskın, 1/2 çekinik bununla uyumlu."
+  }
+ },
+ {
+  "id": "f012-bio-mendel-genetigi-3",
+  "h": "0500b9b20b5796",
+  "guidance": {
+   "knowledge": [
+    "Homozigot ebeveyn tek çeşit gamet verir: AA yalnız A, aa yalnız a.",
+    "Genotip oranı: yavrularda AA, Aa, aa sınıflarının dağılımı."
+   ],
+   "strategy": "İki ebeveyn de tek çeşit gamet verdiği için tek bir birleşme mümkündür; onu yaz.",
+   "steps": [
+    "AA ebeveyni yalnız A gameti verir.",
+    "aa ebeveyni yalnız a gameti verir.",
+    "Her birleşme A + a = Aa; yavruların tamamı Aa."
+   ],
+   "optionReasons": [
+    "Baskın ebeveynin genotipini olduğu gibi yavruya taşır; aa ebeveyninden gelen a'yı unutur.",
+    "Çekinik ebeveynin genotipini yavruya taşır; AA ebeveyninden gelen A'yı unutur.",
+    "Doğru: tek tip A ve tek tip a gameti birleşir, bütün yavrular Aa.",
+    "Yavruların ebeveynlerden birine tamamen benzediğini sanır; her yavru iki ebeveynden birer alel alır.",
+    "Aa × Aa çaprazlamasının 1:2:1 oranını ezberden uygular."
+   ],
+   "commonError": "Ebeveynlerin genotipine bakmadan ezber 1:2:1 oranını kullanmak.",
+   "check": "Yavruların hepsi Aa ise kendi aralarında çaprazlandığında 1:2:1 oranı ortaya çıkar; ezberin yeri ikinci kuşaktır."
+  }
+ },
+ {
+  "id": "f012-bio-mendel-genetigi-4",
+  "h": "0ef93ef18fd8d0",
+  "guidance": {
+   "knowledge": [
+    "Bağımsız lokuslar: farklı lokusların sonuçları birbirini etkilemez; ikisinin birlikte olma olasılığı çarpılarak bulunur.",
+    "aabb: her iki lokusta da çekinik homozigot birey."
+   ],
+   "strategy": "Problemi iki tek lokuslu çaprazlamaya böl: Aa × Aa ve Bb × Bb. Her birinde çekinik homozigot olasılığını bul ve çarp.",
+   "steps": [
+    "Aa × Aa için aa olasılığı: 1/2 × 1/2 = 1/4.",
+    "Bb × Bb için bb olasılığı: 1/2 × 1/2 = 1/4.",
+    "Bağımsızlık nedeniyle çarp: 1/4 × 1/4 = 1/16."
+   ],
+   "optionReasons": [
+    "Yalnız tek lokusun aa olasılığını hesaplar, ikinci lokusu unutur.",
+    "1/4 ile 1/2'yi çarpar; ikinci lokusu yanlışlıkla test çaprazlaması sanır.",
+    "9:3:3:1 oranındaki tek baskın sınıflardan birinin payını (3/16) yazar.",
+    "Doğru: 1/4 × 1/4 = 1/16.",
+    "İki baskın fenotipli sınıfın payını (9/16) çift çekinik sanır."
+   ],
+   "commonError": "Lokusları ayırmadan 9:3:3:1 oranından yanlış sınıfın payını okumak.",
+   "check": "9:3:3:1 oranında toplam 16 paydan çift çekinik sınıf 1 paydır; 1/16 ile uyumlu."
+  }
+ },
+ {
+  "id": "f012-bio-mendel-genetigi-5",
+  "h": "0a632bbbe6b184",
+  "guidance": {
+   "knowledge": [
+    "Bağımsız lokuslarda her lokus kendi ebeveyn çiftine göre ayrı hesaplanır, sonra olasılıklar çarpılır.",
+    "Aa × aa çaprazlamasında aa olasılığı 1/2; Bb × Bb çaprazlamasında bb olasılığı 1/4'tür."
+   ],
+   "strategy": "İki lokusun ebeveynleri farklı olduğu için her lokusu gerçek ebeveyn çiftiyle ayrı hesapla, sonra çarp.",
+   "steps": [
+    "A lokusu: Aa × aa. Aa ebeveyni 1/2 olasılıkla a, aa ebeveyni kesin a verir: aa = 1/2 × 1 = 1/2.",
+    "B lokusu: Bb × Bb. bb = 1/2 × 1/2 = 1/4.",
+    "Çarp: 1/2 × 1/4 = 1/8."
+   ],
+   "optionReasons": [
+    "İlk lokusu da Aa × Aa sayar: 1/4 × 1/4 = 1/16.",
+    "Yalnız B lokusunun bb olasılığını (1/4) yazar, A lokusunu unutur.",
+    "Yalnız A lokusunun aa olasılığını (1/2) yazar, B lokusunu unutur.",
+    "A lokusunda aa yerine baskın fenotip yazar ya da bb yerine B_ (3/4) kullanır: 1/2 × 3/4 = 3/8.",
+    "Doğru: 1/2 × 1/4 = 1/8."
+   ],
+   "commonError": "Her lokusu otomatik olarak Aa × Aa sanıp 1/16 bulmak.",
+   "check": "Gamet kutusuyla say: AaBb 4 gamet, aaBb 2 gamet verir; 8 kutudan yalnız ab + ab olan 1 kutu aabb'dir: 1/8."
+  }
+ },
+ {
+  "id": "f012-bio-mendel-genetigi-6",
+  "h": "1e3eb0da7060ea",
+  "guidance": {
+   "knowledge": [
+    "A_ gösterimi: baskın fenotipli bireyin bir aleli kesin A, ikincisi bilinmiyor (AA ya da Aa).",
+    "Yavru her ebeveynden bir alel alır; aa yavrunun iki ebeveyni de a taşımalıdır."
+   ],
+   "strategy": "Yavrunun çekinik alellerinin kaynağını izle: biri aa ebeveyninden, öbürü A_ ebeveyninden gelmiştir.",
+   "steps": [
+    "aa yavru iki a aleli taşır; birini aa ebeveyninden, diğerini A_ ebeveyninden almıştır.",
+    "Demek ki A_ ebeveyninde bir a vardır; baskın göründüğü için bir A da vardır.",
+    "A_ ebeveyninin genotipi Aa'dır."
+   ],
+   "optionReasons": [
+    "Doğru: hem baskın fenotip (A) hem çocuğa verilen a, genotipi Aa yapar.",
+    "Baskın fenotipliyi otomatik AA sayar; AA ebeveyn a veremez, aa yavru olamazdı.",
+    "aa bireyi çekinik görünür; baskın fenotiple çelişir.",
+    "Gamet gösterimini genotip sanar; diploit birey iki alel taşır.",
+    "Yavru bilgisini kullanmaz; aa çocuk ikinci aleli kesin olarak gösterir."
+   ],
+   "commonError": "Yavrudan gelen kanıtı kullanmayıp baskın bireyin genotipini belirsiz bırakmak.",
+   "check": "Aa × aa yavrularında aa çıkma olasılığı 1/2'dir; olay mümkündür. AA × aa'da ise aa olasılığı 0'dır."
+  }
+ },
+ {
+  "id": "f012-bio-mendel-genetigi-7",
+  "h": "0ae5dcfa1c839e",
+  "guidance": {
+   "knowledge": [
+    "Test çaprazlaması: genotipi bilinmeyen baskın bireyi aa ile çaprazlamak.",
+    "Bağımsız doğumlar: her doğumun sonucu öncekinden etkilenmez; hepsinin birlikte olma olasılığı çarpılır."
+   ],
+   "strategy": "Önce tek doğumda Aa olasılığını bul, sonra dört bağımsız doğum için bu olasılığı dört kez çarp.",
+   "steps": [
+    "Aa × aa çaprazlamasında tek yavrunun Aa olma olasılığı 1/2.",
+    "Dört bağımsız yavru: 1/2 × 1/2 × 1/2 × 1/2.",
+    "(1/2)⁴ = 1/16."
+   ],
+   "optionReasons": [
+    "Dört yavrunun da Aa olmasını imkânsız sanır; her doğumda Aa mümkündür.",
+    "Doğru: (1/2)⁴ = 1/16.",
+    "Dört yerine yalnız iki doğumu çarpar: (1/2)² = 1/4.",
+    "Tek doğum olasılığını dört doğuma da geçerli sanır.",
+    "Dört yavrunun hepsinin Aa olmasını kesin sanar; aa yavru da çıkabilir."
+   ],
+   "commonError": "Tek doğum olasılığını birden çok doğumun birlikte olma olasılığı yerine kullanmak.",
+   "check": "Tümleyen: dört yavrudan en az birinin aa olma olasılığı 1 − 1/16 = 15/16; ikisi toplanınca 1 eder."
+  }
+ },
+ {
+  "id": "f012-bio-mendel-genetigi-8",
+  "h": "0c7fb9e9e8ff90",
+  "guidance": {
+   "knowledge": [
+    "Koşullu olasılık: bir bilgi verildiğinde (yavru baskın) yalnız o bilgiyi sağlayan durumlar arasında oran kurulur.",
+    "Aa × Aa yavruları dört eş yoldan gelir: AA, Aa, aA, aa."
+   ],
+   "strategy": "Baskın fenotip bilgisi aa yolunu dışarıda bırakır; kalan eş yollar içinde Aa olanları say.",
+   "steps": [
+    "Dört eş yol: AA, Aa, aA, aa.",
+    "Baskın fenotip koşulu aa'yı çıkarır: AA, Aa, aA kalır (3 yol).",
+    "Bunların ikisi heterozigot: 2/3."
+   ],
+   "optionReasons": [
+    "Koşulu kullanmadan tüm yavrular içindeki Aa payını (2/4) yazar.",
+    "AA olasılığını tüm yavrular içinde (1/4) hesaplar.",
+    "Doğru: aa çıkarılınca 3 eş yoldan 2'si Aa.",
+    "Baskın fenotip olasılığını (3/4) Aa olasılığı sanır.",
+    "Koşullu AA olasılığını (1/3) Aa sanır."
+   ],
+   "commonError": "Verilen bilgiyle örnek uzayını daraltmayı unutmak ve 1/2 yazmak.",
+   "check": "Koşullu olasılıklar toplamı 1 olmalı: AA 1/3 + Aa 2/3 = 1."
+  }
+ },
+ {
+  "id": "f012-bio-mendel-genetigi-9",
+  "h": "0ada3b71f5cfca",
+  "guidance": {
+   "knowledge": [
+    "Tümleyen kuralı: en az bir olasılığı = 1 − hiç olmama olasılığı.",
+    "Aa × Aa çaprazlamasında bir yavrunun aa olmama (baskın) olasılığı 3/4'tür."
+   ],
+   "strategy": "En az bir aa durumunu doğrudan saymak uzun olduğu için önce hiç aa olmama olasılığını bul, sonra 1'den çıkar.",
+   "steps": [
+    "Bir doğumda aa olmama: 1 − 1/4 = 3/4.",
+    "Üç bağımsız doğumda hiç aa olmama: (3/4)³ = 27/64.",
+    "En az bir aa: 1 − 27/64 = 37/64."
+   ],
+   "optionReasons": [
+    "Tümleyeni almayı unutur; hiç aa olmama olasılığını (27/64) cevap yazar.",
+    "Tek doğumun aa olasılığını üç doğuma da geçerli sanır.",
+    "Tek doğumun baskın olasılığını yazar; üç doğumu hesaba katmaz.",
+    "Doğru: 1 − (3/4)³ = 1 − 27/64 = 37/64.",
+    "Üç doğumun hepsinin aa olma olasılığını hesaplar: (1/4)³ = 1/64."
+   ],
+   "commonError": "1/4'ü üç kez toplayıp 3/4 bulmak; olasılıklar bu şekilde toplanmaz.",
+   "check": "Doğrudan say: tam bir aa 3·(1/4)·(3/4)² = 27/64, tam iki 3·(1/4)²·(3/4) = 9/64, üç 1/64; toplam 37/64."
+  }
+ },
+ {
+  "id": "f012-bio-mendel-genetigi-10",
+  "h": "0604031776a22d",
+  "guidance": {
+   "knowledge": [
+    "Fenotip sınıfı: görünüşe göre gruplar (A_B_, A_bb, aaB_, aabb). Genotip: alel yapısı (AaBb gibi); AaBb × AaBb'de 9 çeşit genotip vardır.",
+    "Gamet oranı: AaBb bireyi AB, Ab, aB, ab gametlerini 1:1:1:1 oranında verir."
+   ],
+   "strategy": "9:3:3:1 oranındaki dört sayının dört sınıfa karşılık geldiğini kullan; dört sınıf olan tek kavram fenotiptir.",
+   "steps": [
+    "Tam baskınlıkta her lokus iki fenotip verir: 2 × 2 = 4 fenotip sınıfı.",
+    "A_ olasılığı 3/4, aa 1/4; B lokusu da aynı. Çarpımlar: 9/16, 3/16, 3/16, 1/16.",
+    "Bu dört pay fenotip sınıflarının beklenen oranıdır: 9:3:3:1."
+   ],
+   "optionReasons": [
+    "Genotip çeşidi dörttür sanır; aslında 9 çeşit genotip vardır ve oran beklenen değerdir, kesin aile sayısı değildir.",
+    "Gamet oranını 9:3:3:1 sanır; gametler 1:1:1:1 oranındadır.",
+    "Bir olasılık oranını kromozom sayısıyla karıştırır; mayozla ilgili bir sayı değildir.",
+    "Oranın her koşulda geçerli olduğunu sanır; bağlılık ya da eksik baskınlıkta oran değişir.",
+    "Doğru: bağımsızlık ve tam baskınlık altında dört fenotip sınıfının beklenen oranıdır."
+   ],
+   "commonError": "Fenotip, genotip ve gamet oranlarını birbirine karıştırmak.",
+   "check": "Paylar toplanınca 9 + 3 + 3 + 1 = 16 eder ve 16 = 4 gamet × 4 gamet kutusudur; oran kutu sayımıyla uyumlu."
+  }
+ },
+ {
+  "id": "f012-bio-mendelden-sapmalar-1",
+  "h": "12e70e82c35779",
+  "guidance": {
+   "knowledge": [
+    "Eksik baskınlık: hiçbir alel tam baskın değildir; heterozigot (Rr) iki homozigottan farklı, ara bir fenotip (pembe) gösterir.",
+    "Bu modelde her genotipin kendi fenotipi vardır: RR kırmızı, Rr pembe, rr beyaz."
+   ],
+   "strategy": "Önce genotip oranını Punnett karesiyle bul, sonra her genotipi verilen renge çevir; eksik baskınlıkta genotip ve fenotip oranı aynı olur.",
+   "steps": [
+    "Rr × Rr: her ebeveyn R ya da r verir; kutular RR, Rr, rR, rr.",
+    "Genotip oranı 1 RR, 2 Rr, 1 rr.",
+    "Renge çevir: 1 kırmızı, 2 pembe, 1 beyaz (1:2:1)."
+   ],
+   "optionReasons": [
+    "Doğru: üç genotip üç ayrı renge karşılık gelir, 1:2:1.",
+    "Tam baskınlık varmış gibi Rr'yi kırmızı sayar: 3:1.",
+    "Ebeveynler pembe olduğu için yavruların da hepsinin pembe olacağını sanır.",
+    "Pembe heterozigotları sayımdan çıkarır; yalnız homozigotları yazar.",
+    "İki lokuslu bağımsız çaprazlama oranını tek lokusa uygular."
+   ],
+   "commonError": "Eksik baskınlıkta da ezber 3:1 oranını kullanmak.",
+   "check": "Oranlar toplamı 1 + 2 + 1 = 4 eder; bu, 2 × 2 gamet kutusuyla uyumludur."
+  }
+ },
+ {
+  "id": "f012-bio-mendelden-sapmalar-2",
+  "h": "1fb276610da72f",
+  "guidance": {
+   "knowledge": [
+    "Eksik baskınlıkta pembe renk bir fenotiptir; R ve r alelleri hücrede ayrı ayrı varlığını sürdürür, kaynaşmaz.",
+    "Gamet haploittir: her lokusta tek alel taşır; mayozda iki alel farklı gametlere ayrılır."
+   ],
+   "strategy": "Fenotip adının alel adı olmadığını hatırla ve Rr bireyin iki alelinin mayozda ayrıldığını uygula.",
+   "steps": [
+    "Rr bireyin alelleri R ve r'dir; pembe yalnızca görünüştür.",
+    "Mayozda R ve r ayrılır; gametlerin yarısı R, yarısı r alır.",
+    "Her gamet R ya da r taşır."
+   ],
+   "optionReasons": [
+    "Ara rengi yeni bir alel sanır; pembe, iki alelin birlikte etkisidir.",
+    "Doğru: alel ayrılmasıyla her gamet R ya da r taşır.",
+    "Gamete diploit genotipi koyar; gamet bir lokusta tek alel taşır.",
+    "Gamete iki alel koyar ve heterozigottan RR üretir; bireyde tek R vardır.",
+    "Ara fenotipte alellerin kaybolduğunu sanır; gamet her lokustan bir alel taşır."
+   ],
+   "commonError": "Ara fenotipi alellerin karışıp yeni bir alele dönüşmesi sanmak.",
+   "check": "Rr × Rr'den yeniden kırmızı (RR) ve beyaz (rr) yavru çıkması, R ve r'nin ayrı kaldığını gösterir."
+  }
+ },
+ {
+  "id": "f012-bio-mendelden-sapmalar-3",
+  "h": "157c82186cbce8",
+  "guidance": {
+   "knowledge": [
+    "Eş baskınlık: heterozigotta iki alelin ürünü de ayrı ayrı ve birlikte görülür (hem M hem N antijeni).",
+    "Eksik baskınlık: heterozigotta iki homozigot arasında ara bir fenotip oluşur (kırmızı ile beyazdan pembe)."
+   ],
+   "strategy": "Heterozigotta iki ürün birlikte mi görülüyor, yoksa yeni bir ara görünüm mü oluşuyor sorusuna bak.",
+   "steps": [
+    "MN bireyde M antijeni de N antijeni de bulunuyor.",
+    "Yeni bir ara antijen yok; iki alelin ürünü birlikte var.",
+    "Bu durum eş baskınlıktır."
+   ],
+   "optionReasons": [
+    "Heterozigotun farklı fenotipini otomatik olarak ara fenotip sanır; burada iki ürün birlikte vardır.",
+    "Heterozigotta çekinik alel olsaydı ürünü görülmezdi; iki antijen de görülüyor.",
+    "Doğru: iki alelin ürünü aynı anda görülür, bu eş baskınlıktır.",
+    "Alel kaybı olsaydı antijenlerden biri eksik olurdu; ikisi de mevcut.",
+    "Tek bireyin antijen tipi tür oluşumuyla ilgisizdir; aynı türde farklı aleller bulunur."
+   ],
+   "commonError": "Eş baskınlık ile eksik baskınlığı karıştırmak.",
+   "check": "Eksik baskınlık olsaydı MN bireyde M ve N'den farklı tek bir ara antijen beklenirdi; oysa iki antijen ayrı ayrı ölçülüyor."
+  }
+ },
+ {
+  "id": "f012-bio-mendelden-sapmalar-4",
+  "h": "0efcf46fc6c6c0",
+  "guidance": {
+   "knowledge": [
+    "Eş baskınlıkta MN bireyi MN fenotipi, NN bireyi N fenotipi, MM bireyi M fenotipi gösterir.",
+    "NN ebeveyni yalnız N gameti verir; MN ebeveyni 1/2 M, 1/2 N gameti verir."
+   ],
+   "strategy": "Gametleri yaz, birleştir, sonra her genotipi fenotipe çevir.",
+   "steps": [
+    "MN ebeveyni: M (1/2) ya da N (1/2). NN ebeveyni: yalnız N.",
+    "Birleşmeler: M + N = MN (1/2), N + N = NN (1/2).",
+    "Fenotipler: MN 1/2, N 1/2. M fenotipi için MM gerekir, oluşamaz."
+   ],
+   "optionReasons": [
+    "MN yavrusunu M fenotipli sayar; eş baskınlıkta MN ayrı bir fenotiptir.",
+    "Bütün yavruların MN olacağını sanır; NN ebeveyninden gelen N ile N + N da oluşur.",
+    "MN × MN oranını uygular; ikinci ebeveyn NN olduğu için M gameti vermez.",
+    "Doğru: MN ve NN yarı yarıya, yani MN 1/2 ve N 1/2.",
+    "MN ebeveyninin M gameti verebileceğini unutur."
+   ],
+   "commonError": "İkinci ebeveyni de heterozigot sayıp 1:2:1 oranı yazmak.",
+   "check": "Olasılıklar toplanır: 1/2 + 1/2 = 1; MM için iki M gameti gerekir, bir ebeveyn hiç M vermediği için 0."
+  }
+ },
+ {
+  "id": "f012-bio-mendelden-sapmalar-5",
+  "h": "1a3c6baf518d69",
+  "guidance": {
+   "knowledge": [
+    "Çok alellilik: bir lokusun popülasyonda ikiden fazla alelinin bulunması.",
+    "Diploit birey: her kromozomdan iki tane (homolog çift) taşır; bir lokusta iki alel kopyası vardır."
+   ],
+   "strategy": "Toplum düzeyi ile birey düzeyini ayır: bireyin alel sayısını popülasyondaki çeşit değil, homolog kromozom sayısı belirler.",
+   "steps": [
+    "Diploit bireyde bir otozomal lokus iki homolog kromozomda bulunur.",
+    "Her homologda o lokusta tek alel vardır.",
+    "Birey en fazla iki farklı alel taşıyabilir: 2."
+   ],
+   "optionReasons": [
+    "Bireyin yalnız homozigot olabileceğini sanır; heterozigot birey iki farklı alel taşır.",
+    "Popülasyondaki alel çeşidini (3) bireye uygular.",
+    "Toplumdaki alel sayısına bir ekler; temelsiz bir sayım.",
+    "Popülasyondaki olası genotip sayısını (3 alelle 6) bireyin taşıdığı alel sayısı sanır.",
+    "Doğru: diploit birey bir lokusta en fazla iki alel taşır."
+   ],
+   "commonError": "Popülasyondaki alel sayısını bir bireyin taşıyabileceği alel sayısı sanmak.",
+   "check": "Kan grubu örneği: A, B, O üç alel vardır ama bir kişi en fazla ikisini (AB gibi) taşır."
+  }
+ },
+ {
+  "id": "f012-bio-mendelden-sapmalar-6",
+  "h": "1011c2684dcae7",
+  "guidance": {
+   "knowledge": [
+    "Homozigot genotip: iki aynı alel (A₁A₁). Heterozigot genotip: iki farklı alel (A₁A₂).",
+    "A₁A₂ ile A₂A₁ aynı genotiptir; alellerin sırası farklılık yaratmaz."
+   ],
+   "strategy": "Homozigot ve heterozigot genotipleri ayrı say: homozigot sayısı alel sayısı kadardır, heterozigotlar sıra gözetmeden ikili seçimdir.",
+   "steps": [
+    "Homozigot: her alelden biri, 4 genotip.",
+    "Heterozigot: 4 alelden 2 farklısını sırasız seç: (4 × 3) / 2 = 6 genotip.",
+    "Toplam: 4 + 6 = 10. Formülle de n(n + 1)/2 = 4 · 5 / 2 = 10."
+   ],
+   "optionReasons": [
+    "Doğru: 4 homozigot ve 6 heterozigot, toplam 10.",
+    "Yalnız homozigotları ya da alel sayısını sayar.",
+    "Yalnız heterozigotları sayar, homozigotları unutur.",
+    "Alel sayısını ikiyle çarpar: 4 × 2 = 8; temelsiz bir işlem.",
+    "Sırayı fark sayar: 4 × 4 = 16; A₁A₂ ile A₂A₁'i ayrı genotip sayar."
+   ],
+   "commonError": "AB ve BA'yı ayrı genotip sayıp 16 bulmak.",
+   "check": "Üç alelli kan grubu sisteminde aynı formül 3 · 4 / 2 = 6 genotip verir (AA, AO, BB, BO, AB, OO); formül doğrulanır."
+  }
+ },
+ {
+  "id": "f012-bio-mendelden-sapmalar-7",
+  "h": "1a0d49bf47e8da",
+  "guidance": {
+   "knowledge": [
+    "AB/ab: bir homologda A ve B, diğerinde a ve b. Ebeveyn tipi gametler AB ve ab; rekombinant gametler Ab ve aB.",
+    "Rekombinasyon yüzdesi: parça değişimiyle oluşan rekombinant gametlerin toplam yüzdesi; iki rekombinant tip bunu eşit paylaşır."
+   ],
+   "strategy": "Önce AB'nin ebeveyn mi rekombinant mı olduğunu düzene bakarak belirle, sonra ilgili toplam yüzdeyi iki tipe eşit böl.",
+   "steps": [
+    "AB/ab düzeninde AB ebeveyn tipidir.",
+    "Ebeveyn tiplerin toplamı: %100 − %20 = %80.",
+    "İki ebeveyn tip eşit pay alır: %80 / 2 = %40."
+   ],
+   "optionReasons": [
+    "AB'yi rekombinant sayıp %20'yi ikiye böler: %10.",
+    "Doğru: ebeveyn toplamı %80, AB payı %40.",
+    "Rekombinasyon yüzdesini doğrudan AB'nin payı sanır.",
+    "Bağlılığı yok sayıp dört gameti eşit (%25) dağıtır.",
+    "Ebeveyn toplamını (%80) tek bir gamet tipine verir, ab'yi unutur."
+   ],
+   "commonError": "Gametin ebeveyn mi rekombinant mı olduğuna bakmadan yüzdeyi bölmek.",
+   "check": "Dört gameti topla: AB %40 + ab %40 + Ab %10 + aB %10 = %100."
+  }
+ },
+ {
+  "id": "f012-bio-mendelden-sapmalar-8",
+  "h": "155173273894e6",
+  "guidance": {
+   "knowledge": [
+    "Ab/aB: bir homologda A ve b, diğerinde a ve B. Burada ebeveyn tipler Ab ve aB; rekombinant tipler AB ve ab.",
+    "Rekombinasyon yüzdesi iki rekombinant tip arasında eşit paylaşılır."
+   ],
+   "strategy": "Homologların düzenini oku: AB bu bireyde ancak parça değişimiyle oluşur, yani rekombinanttır. Rekombinant yüzdeyi ikiye böl.",
+   "steps": [
+    "Ab/aB düzeninde A ile B farklı homologlardadır; AB birleşimi rekombinanttır.",
+    "Rekombinantların toplamı %10; iki tip (AB ve ab) eşit pay alır.",
+    "AB: %10 / 2 = %5."
+   ],
+   "optionReasons": [
+    "Düzeni AB/ab sanıp AB'yi ebeveyn tip sayar: (%100 − %10) / 2 = %45.",
+    "Rekombinasyon yüzdesinin tamamını tek bir rekombinant tipe verir.",
+    "Doğru: AB rekombinanttır, %10'un yarısı %5.",
+    "Bağlılığı yok sayıp dört eşit gamet varsayar.",
+    "Ebeveyn tiplerin toplamını (%90) AB'ye verir."
+   ],
+   "commonError": "Homolog düzenini okumadan AB'yi her zaman ebeveyn tip saymak.",
+   "check": "Toplam: Ab %45 + aB %45 + AB %5 + ab %5 = %100."
+  }
+ },
+ {
+  "id": "f012-bio-mendelden-sapmalar-9",
+  "h": "0e4b708b13ca6f",
+  "guidance": {
+   "knowledge": [
+    "Bağımsız lokuslar 1:1:1:1 gamet oranı verir; rekombinant gametlerin toplamı %50 olur.",
+    "Aynı kromozomda birbirinden çok uzak lokuslarda parça değişimi çok sık olur; rekombinant toplamı yine %50'ye yaklaşır."
+   ],
+   "strategy": "Bir verinin bir açıklamayla uyumlu olması ile o açıklamayı tek başına kanıtlaması arasındaki farkı kullan.",
+   "steps": [
+    "Dört gametin her biri %25: rekombinantların toplamı %50.",
+    "Bu oran farklı kromozomdaki bağımsız lokuslarla da, aynı kromozomda çok uzak lokuslarla da oluşabilir.",
+    "Oran tek başına kromozom konumunu kanıtlamaz."
+   ],
+   "optionReasons": [
+    "Tek bir lokusun iki aleli dört gamet tipi veremez; dört tip iki ayrı lokusu gösterir.",
+    "Rekombinasyon yoksa yalnız iki ebeveyn tipi oluşurdu; dört eşit tip tersini düşündürür.",
+    "Oranı tek mayozun ürünü sanır; %25'ler çok sayıda mayozun ortalamasıdır.",
+    "Doğru: oran bağımsızlıkla uyumludur ama uzak bağlı lokuslar da aynı oranı verebilir.",
+    "İki lokustan elde edilen veriyi bütün genlere genelleştirir."
+   ],
+   "commonError": "Uyumlu bir veriyi kesin kanıt saymak.",
+   "check": "Karşı örnek: aynı kromozomun iki ucundaki lokuslar da yaklaşık %50 rekombinant verir; bu da aynı kromozomda olsalar bile dört eşit gamet görülebileceğini gösterir."
+  }
+ },
+ {
+  "id": "f012-bio-mendelden-sapmalar-10",
+  "h": "03cb41c7da6a37",
+  "guidance": {
+   "knowledge": [
+    "Genotip oranı: alel birleşimlerinin dağılımı (Aa × Aa için 1 AA, 2 Aa, 1 aa).",
+    "Fenotip oranı: bu genotiplerin görünüşe göre gruplanması; aynı görünen genotipler tek sınıfta toplanır."
+   ],
+   "strategy": "İki modelde genotip oranı aynı olduğuna göre farkı genotipin fenotipe eşlenmesinde ara; Aa'nın hangi sınıfa gittiğine bak.",
+   "steps": [
+    "Tam baskınlıkta Aa, AA gibi görünür; 1 + 2 = 3 baskın, 1 çekinik: 3:1.",
+    "Eksik baskınlıkta Aa ara fenotip gösterir; üç ayrı sınıf: 1:2:1.",
+    "Fark, heterozigotun hangi fenotip sınıfına katıldığıdır."
+   ],
+   "optionReasons": [
+    "Gamete iki alel koyar; iki modelde de normal gamet tek alel taşır.",
+    "Mayoz iki modelde de normal ilerler; durmuş olsaydı yavru hiç oluşmazdı.",
+    "Tam baskınlıkta çekinik alelin silindiğini sanır; aa yavrular çıktığına göre silinmemiştir.",
+    "Kromozom sayısı değişmez; iki modelde aynı 1:2:1 genotip oranı vardır.",
+    "Doğru: genotip oranı sabit, değişen yalnız Aa'nın fenotip sınıfıdır."
+   ],
+   "commonError": "Fenotip oranındaki farkı genotip oranındaki bir değişim sanmak.",
+   "check": "Eksik baskınlıkta pembe (Aa) payı 2/4'tür; tam baskınlıkta bu 2/4 baskın sınıfa eklenir: 1/4 + 2/4 = 3/4."
+  }
+ },
+ {
+  "id": "f012-bio-kan-gruplari-1",
+  "h": "1bb64243ee60a0",
+  "guidance": {
+   "knowledge": [
+    "AB0 sistemi üç alelle belirlenir: A, B ve O. A ile B, O'ya baskındır; A ile B birbirine eş baskındır.",
+    "A fenotipi: alyuvarında A antijeni bulunan ve B antijeni bulunmayan kişi."
+   ],
+   "strategy": "A fenotipini veren her genotipi yaz: A aleli bulunmalı, B aleli bulunmamalı; O'nun heterozigotta görünmediğini kullan.",
+   "steps": [
+    "AA: iki A aleli, A fenotipi.",
+    "AO: A baskın, O görünmez; yine A fenotipi.",
+    "AB iki antijenli AB fenotipi, OO ise O fenotipidir. A fenotipi: AA ve AO."
+   ],
+   "optionReasons": [
+    "Doğru: AA ve AO ikisi de yalnız A antijeni oluşturur.",
+    "A fenotipini otomatik homozigot sayar; AO da A görünür.",
+    "AB'yi A sayar; AB'de B antijeni de bulunur, fenotip AB'dir.",
+    "OO'yu A sayar; OO bireyde hiç A aleli yoktur, fenotip O'dur.",
+    "BO'yu A'ya dahil eder; BO bireyde A aleli yoktur, fenotip B'dir."
+   ],
+   "commonError": "A fenotipli bireyi yalnız AA sanmak ya da AB'yi A grubuna katmak.",
+   "check": "AO × OO çaprazlamasından O çocuk çıkabilir; bu, A fenotipli bir kişinin O aleli taşıyabildiğini doğrular."
+  }
+ },
+ {
+  "id": "f012-bio-kan-gruplari-2",
+  "h": "1a6fe99d0a1b20",
+  "guidance": {
+   "knowledge": [
+    "Antijen: alyuvar zarı yüzeyindeki A ya da B molekülü. Antikor: plazmada bulunan ve antijene bağlanan protein (anti-A, anti-B).",
+    "Eş baskınlık: heterozigotta iki alelin ürünü birlikte görülür."
+   ],
+   "strategy": "AB genotipinde A ve B alellerinin eş baskın olduğunu kullan; antijenin yeri alyuvar zarı, antikorun yeri plazmadır.",
+   "steps": [
+    "AB bireyde A aleli A antijenini, B aleli B antijenini üretir.",
+    "Eş baskınlık nedeniyle ikisi birlikte görülür.",
+    "Alyuvar zarında A ve B antijeni birlikte bulunur."
+   ],
+   "optionReasons": [
+    "A'yı B'ye baskın sanır; A ile B eş baskındır.",
+    "Doğru: eş baskınlıkla iki antijen birlikte bulunur.",
+    "B'yi A'ya baskın sanır; iki alel de ürününü gösterir.",
+    "O grubunu AB ile karıştırır; antijensiz olan O grubudur.",
+    "Antikorları zara yerleştirir; anti-A ve anti-B plazmadadır ve AB grubunda bulunmaz."
+   ],
+   "commonError": "Antijen ile antikoru ve bunların bulunduğu yeri karıştırmak.",
+   "check": "AB kişinin plazmasında anti-A ya da anti-B olsaydı kendi alyuvarlarına bağlanırdı; bu yüzden AB'de bu antikorlar bulunmaz."
+  }
+ },
+ {
+  "id": "f012-bio-kan-gruplari-3",
+  "h": "113da4a1f0d527",
+  "guidance": {
+   "knowledge": [
+    "O fenotipi yalnız OO genotipinde görülür; O aleli A ve B'ye çekiniktir.",
+    "AO ebeveyni 1/2 A, 1/2 O gameti; BO ebeveyni 1/2 B, 1/2 O gameti verir."
+   ],
+   "strategy": "O çocuk için iki ebeveynden de O gelmelidir; iki bağımsız gamet olasılığını çarp.",
+   "steps": [
+    "AO ebeveyninden O gelme olasılığı 1/2.",
+    "BO ebeveyninden O gelme olasılığı 1/2.",
+    "1/2 × 1/2 = 1/4. Dört eş birleşme: AB, AO, BO, OO."
+   ],
+   "optionReasons": [
+    "A ve B grubu ebeveynden O çocuk çıkamayacağını sanır; ikisi de O taşır.",
+    "Yalnız bir ebeveynin O verme olasılığını (1/2) yazar.",
+    "Doğru: 1/2 × 1/2 = 1/4.",
+    "O olmayan çocukların payını (AB + AO + BO) cevap sanır.",
+    "İki ebeveyn de O taşıdığı için çocuğun kesin O olacağını sanır."
+   ],
+   "commonError": "Tek ebeveynin O verme olasılığını O çocuk olasılığı saymak.",
+   "check": "Dört fenotip AB, A, B, O her biri 1/4; toplam 1 eder ve O payı 1/4'tür."
+  }
+ },
+ {
+  "id": "f012-bio-kan-gruplari-4",
+  "h": "0c92cbafd3d425",
+  "guidance": {
+   "knowledge": [
+    "AB ebeveyni 1/2 A, 1/2 B gameti; OO ebeveyni yalnız O gameti verir.",
+    "AO bireyi A grubu, BO bireyi B grubudur; O aleli çekiniktir."
+   ],
+   "strategy": "Gametleri yaz ve birleştir; sonra her genotipi fenotipe çevir. Ebeveynde olmayan aleli ekleme.",
+   "steps": [
+    "AB ebeveyni: A ya da B. OO ebeveyni: yalnız O.",
+    "Birleşmeler: A + O = AO, B + O = BO.",
+    "Fenotipler: A ve B. AB için iki ebeveynden A ve B, O için iki O gerekir; ikisi de mümkün değil."
+   ],
+   "optionReasons": [
+    "Çocukların ebeveynlerin gruplarını kopyalayacağını sanır; AB ya da OO oluşamaz.",
+    "AB ebeveyninin genotipinin olduğu gibi aktarıldığını sanır; gamet tek alel taşır.",
+    "OO ebeveynin grubunu kopyalar; her çocuk AB ebeveyninden A ya da B alır.",
+    "Doğru: çocuklar AO ya da BO, yani A ya da B grubu.",
+    "Dört grubun da her ailede çıkabileceğini sanır; gametler bunu sağlamaz."
+   ],
+   "commonError": "Çocuk grubunu ebeveyn gruplarından biri sanmak.",
+   "check": "Her çocuk OO ebeveyninden kesin bir O aldığı için hiçbir çocuk AB olamaz; AB ebeveyninden kesin A ya da B aldığı için hiçbiri O olamaz."
+  }
+ },
+ {
+  "id": "f012-bio-kan-gruplari-5",
+  "h": "1fe8b828e94aba",
+  "guidance": {
+   "knowledge": [
+    "A fenotipi: AA ya da AO genotipi. O fenotipi: yalnız OO.",
+    "Çocuk her ebeveynden bir alel alır."
+   ],
+   "strategy": "Çocuğun O alellerinin kaynağını izle; A fenotipli ebeveynin bir O vermesi gerektiğini çıkar.",
+   "steps": [
+    "OO çocuk iki O aleli taşır; birini OO ebeveyninden, diğerini A fenotipli ebeveynden almıştır.",
+    "A fenotipli ebeveyn bir O taşır; A fenotipli olduğu için bir A da taşır.",
+    "Genotip AO."
+   ],
+   "optionReasons": [
+    "Çocuk kanıtını kullanmaz; AA ebeveyn O aleli veremez.",
+    "AB bireyi AB fenotiplidir, A değildir; ayrıca O aleli taşımaz.",
+    "OO bireyi O fenotiplidir; A fenotipiyle çelişir.",
+    "BO bireyi B fenotiplidir; ebeveynin A fenotipini gözden kaçırır.",
+    "Doğru: A fenotipi ve çocuğa geçen O, genotipi AO yapar."
+   ],
+   "commonError": "A fenotipli ebeveyni çocuk bilgisine bakmadan AA saymak.",
+   "check": "AO × OO çaprazlamasında OO çocuk olasılığı 1/2'dir; olay mümkün. AA × OO'da ise 0'dır."
+  }
+ },
+ {
+  "id": "f012-bio-kan-gruplari-6",
+  "h": "158b199629aad7",
+  "guidance": {
+   "knowledge": [
+    "Antijen alyuvar zarında, antikor plazmada bulunur.",
+    "Bir kişinin plazmasında kendi alyuvarında bulunmayan antijene karşı antikor bulunur (standart yetişkin tablosu)."
+   ],
+   "strategy": "A grubunun alyuvarındaki antijeni bul, plazmada bunun tersine karşı antikor olacağını kullan.",
+   "steps": [
+    "A grubunun alyuvar zarında A antijeni vardır, B antijeni yoktur.",
+    "Plazmada kendi antijenine karşı antikor bulunmaz, olmayan antijene karşı bulunur.",
+    "A grubunun plazmasında anti-B vardır."
+   ],
+   "optionReasons": [
+    "Doğru: A grubunun plazmasında anti-B bulunur.",
+    "Antijeni antikorla karıştırır; A antijeni plazmada değil alyuvar zarındadır.",
+    "Antijeni plazmaya yerleştirir; B antijeni A grubunda bulunmaz.",
+    "Kendi antijenine karşı antikor olacağını sanır; anti-A kendi alyuvarlarını çöktürürdü.",
+    "Rh sistemine ait bir antijeni AB0 antikoru sanır; antijen plazmada bulunmaz."
+   ],
+   "commonError": "Grubun adındaki harfle aynı adlı antikorun bulunduğunu sanmak.",
+   "check": "O grubunda antijen yoktur, plazmada anti-A ve anti-B ikisi de vardır; aynı kural A grubunda yalnız anti-B bırakır."
+  }
+ },
+ {
+  "id": "f012-bio-kan-gruplari-7",
+  "h": "164cc043b6c27a",
+  "guidance": {
+   "knowledge": [
+    "Basit RhD modeli: D aleli Rh+ (baskın), d aleli Rh− (çekinik). Rh− fenotip yalnız dd'dir.",
+    "Dd ebeveyni 1/2 D, 1/2 d; dd ebeveyni yalnız d gameti verir."
+   ],
+   "strategy": "Rh− çocuk dd olmalıdır; dd ebeveyni hep d verdiği için sonuç yalnız Dd ebeveyninin d verme olasılığına bağlıdır.",
+   "steps": [
+    "Dd ebeveyni: D (1/2), d (1/2). dd ebeveyni: d (1).",
+    "Çocuklar: Dd (1/2) Rh+, dd (1/2) Rh−.",
+    "Rh− çocuk olasılığı 1/2."
+   ],
+   "optionReasons": [
+    "Rh+ ebeveynden Rh− çocuk çıkamayacağını sanır; Dd ebeveyn d verebilir.",
+    "Doğru: 1/2 × 1 = 1/2.",
+    "İki ebeveyni Dd sayıp Dd × Dd'deki dd payını (1/4) uygular.",
+    "Dd × Dd çaprazlamasındaki Rh+ payını (3/4) hem yanlış çaprazlamayla hem yanlış fenotiple yazar.",
+    "Bir ebeveyn Rh− olduğu için tüm çocukların Rh− olacağını sanır."
+   ],
+   "commonError": "Her çaprazlamaya Aa × Aa oranlarını uygulamak.",
+   "check": "Test çaprazlaması mantığı: heterozigot × çekinik homozigot hep 1:1 verir; Rh+ 1/2, Rh− 1/2."
+  }
+ },
+ {
+  "id": "f012-bio-kan-gruplari-8",
+  "h": "068bde848637a0",
+  "guidance": {
+   "knowledge": [
+    "Bağımsız sistemler: AB0 ve RhD sonuçları birbirini etkilemez; ikisinin birlikte olma olasılığı çarpılır.",
+    "O, Rh− çocuk: AB0'da OO ve RhD'de dd olmalıdır."
+   ],
+   "strategy": "İki sistemi ayrı çaprazla: AO × BO ve Dd × dd. Her birinde istenen sonucun olasılığını bul, sonra çarp.",
+   "steps": [
+    "AB0: AO × BO; OO için iki ebeveynden O gelmeli: 1/2 × 1/2 = 1/4.",
+    "RhD: Dd × dd; dd için Dd'den d gelmeli: 1/2 × 1 = 1/2.",
+    "Çarp: 1/4 × 1/2 = 1/8."
+   ],
+   "optionReasons": [
+    "Yalnız AB0 sistemini hesaplar, RhD'yi unutur.",
+    "Yalnız RhD sistemini hesaplar, AB0'yu unutur.",
+    "Doğru: 1/4 × 1/2 = 1/8.",
+    "AB0 sisteminde O yerine O olmayan payı (3/4) kullanır: 3/4 × 1/2 = 3/8.",
+    "RhD'yi de Dd × Dd sayar: 1/4 × 1/4 = 1/16."
+   ],
+   "commonError": "Bağımsız iki olasılığı çarpmak yerine toplamak ya da sistemlerden birini unutmak.",
+   "check": "Gamet kutusu: AO, Dd 4 gamet; BO, dd 2 gamet verir. 8 kutudan yalnız Od + Od olan 1 kutu: 1/8."
+  }
+ },
+ {
+  "id": "f012-bio-kan-gruplari-9",
+  "h": "05cdd013766799",
+  "guidance": {
+   "knowledge": [
+    "Rh uyuşmazlığı: Rh− annenin Rh+ fetüs kanıyla karşılaşıp anti-D antikoru üretmesi (duyarlanma) ve bunun sonraki Rh+ fetüslere zarar verebilmesi.",
+    "Rh+ baba DD ya da Dd olabilir; Dd ise fetüs Rh− de olabilir."
+   ],
+   "strategy": "Ebeveyn fenotiplerinden kesin hüküm çıkaran ifadeleri, babanın olası genotipleri ve duyarlanma koşulunu kullanarak ele.",
+   "steps": [
+    "Baba Dd olabilir; bu durumda fetüs dd (Rh−) olabilir, kesin Rh+ ya da kesin Rh− denemez.",
+    "Annede anti-D doğuştan bulunmaz; Rh+ kanla karşılaşmayla oluşur. Daha önce duyarlanmışsa ilk gebelik de etkilenebilir.",
+    "Güvenli ifade: bu iki fenotip tek başına her fetüsün hasta olacağını göstermez."
+   ],
+   "optionReasons": [
+    "Rh+ babayı DD sayar; Dd baba Rh− çocuk da verebilir.",
+    "Annenin daha önce (örneğin kan nakliyle) duyarlanmış olabileceğini yok sayar.",
+    "Anti-D'nin doğuştan bulunduğunu sanır; bu antikor Rh+ kanla karşılaşma sonrası oluşur.",
+    "Doğru: fetüsün Rh durumu ve annenin duyarlanması gibi ek koşullar gerekir.",
+    "Annenin Rh− olmasını belirleyici sanır; babadan D gelirse fetüs Rh+ olur."
+   ],
+   "commonError": "Anne ve baba fenotipinden her fetüs için kesin bir sonuç çıkarmak.",
+   "check": "Baba Dd ise fetüslerin yaklaşık yarısı dd olur; bu fetüslerde uyuşmazlık söz konusu değildir, yani her fetüs etkilenemez."
+  }
+ },
+ {
+  "id": "f012-bio-kan-gruplari-10",
+  "h": "185bb03a6092ec",
+  "guidance": {
+   "knowledge": [
+    "Çaprazlama (Punnett) karesi: ebeveyn gametlerini satır ve sütuna yazıp birleşimlerini gösteren tablo.",
+    "Model: belirli varsayımlar (temel AB0 alelleri, normal mayoz) altında olası sonuçları hesaplayan araç."
+   ],
+   "strategy": "Karenin yalnız alel aktarımını modellediğini hatırla; klinik, kimlik ya da kesin sayı iddiası taşıyan şıkları ele.",
+   "steps": [
+    "Kare, ebeveyn gametlerinin birleşimlerinden olası yavru genotiplerini ve olasılıklarını verir.",
+    "Kan nakli uygunluğu başka antijenler ve laboratuvar testleri, kimlik ise çok daha geniş kanıt gerektirir.",
+    "Karenin işlevi: temel modelde olası yavru AB0 gruplarını hesaplamak."
+   ],
+   "optionReasons": [
+    "Karenin klinik test yerine geçtiğini sanır; nakil uygunluğu laboratuvar testleriyle belirlenir.",
+    "Olası grupları kimlik kanıtı sanır; bir grup birçok kişide ortaktır.",
+    "Tek bir sistemin karesini bütün antijen sistemlerine genelleştirir.",
+    "Olasılığı kesin sayı sanır; 1/4 her dört çocuktan birinin kesin O olacağı anlamına gelmez.",
+    "Doğru: kare, verilen modelde olası yavru AB0 gruplarını hesaplar."
+   ],
+   "commonError": "Olasılık modelini kesin sonuç ya da klinik karar aracı gibi kullanmak.",
+   "check": "AO × BO karesi O çocuk için 1/4 verir; ama ailede iki çocuk da O olabilir. Kare olasılık verir, kesin sayı vermez."
+  }
+ },
+ {
+  "id": "f012-bio-eseyin-belirlenmesi-1",
+  "h": "022a8384249c51",
+  "guidance": {
+   "knowledge": [
+    "Otozom: eşey belirlemede rol almayan kromozom. Eşey kromozomları: X ve Y.",
+    "İnsan vücut hücresi 46 kromozom (44 otozom + XX ya da XY) taşır; gamet bunun yarısını, 23 kromozomu taşır."
+   ],
+   "strategy": "Normal spermin 22 otozom ve tek eşey kromozomu taşıdığını kullan; şıklarda toplamı 23 olan ve tek eşey kromozomu içereni ara.",
+   "steps": [
+    "Erkek vücut hücresi: 44 otozom + XY.",
+    "Mayozda her çiftten biri gamete gider: 22 otozom + X ya da 22 otozom + Y.",
+    "Toplam 23 olan ve tek eşey kromozomu taşıyan seçenek: 22 otozom + Y."
+   ],
+   "optionReasons": [
+    "Doğru: 22 otozom ve Y, toplam 23 kromozom.",
+    "Otozom sayısını 23 sanır; toplam 24 olur, eşey kromozomu da sayıya girer.",
+    "Vücut hücresinin bileşimini spermle karıştırır; bu diploit hücredir.",
+    "X ile Y'yi aynı gamete koyar; mayozda eşey kromozomları ayrılır, toplam 24 olur.",
+    "Hem otozom sayısını artırır hem iki X koyar; toplam 25 olur ve erkek X'i tek taşır."
+   ],
+   "commonError": "23 sayısını otozom sayısı sanıp eşey kromozomunu ayrıca eklemek.",
+   "check": "Sperm (22 + Y) ile yumurta (22 + X) birleşince 44 + XY = 46 kromozom eder."
+  }
+ },
+ {
+  "id": "f012-bio-eseyin-belirlenmesi-2",
+  "h": "1de63fa4b7aa3e",
+  "guidance": {
+   "knowledge": [
+    "XY: erkek, XX: dişi eşey kromozom düzeni.",
+    "Çocuk her ebeveynden bir eşey kromozomu alır; anne yalnız X verebilir, baba X ya da Y verebilir."
+   ],
+   "strategy": "Oğlun Y'sinin yalnız babadan gelebileceğini kullan; kalan X'in kaynağı diğer ebeveyndir.",
+   "steps": [
+    "Y kromozomu yalnız babada bulunur; oğul Y'yi babadan almıştır.",
+    "Babadan yalnız bir eşey kromozomu gelir; o da Y'dir.",
+    "X'i anneden almıştır."
+   ],
+   "optionReasons": [
+    "Babanın X'ini oğluna verdiğini sanır; baba oğluna Y verir, X'ini kızlarına verir.",
+    "Doğru: Y babadan geldiği için X anneden gelir.",
+    "Oğlun iki X taşıdığını sanır; XY bireyde tek X vardır.",
+    "Kromozomların sonradan oluştuğunu sanır; her kromozom bir ebeveynden gelir.",
+    "Y'nin X'e dönüştüğünü sanır; eşey kromozomları birbirine dönüşmez."
+   ],
+   "commonError": "Erkeğin X'ini babasından aldığını sanmak.",
+   "check": "Baba X verseydi çocuk anneden de X alacağı için XX, yani kız olurdu; oğul olması babadan Y geldiğini gösterir."
+  }
+ },
+ {
+  "id": "f012-bio-eseyin-belirlenmesi-3",
+  "h": "056dc647640d00",
+  "guidance": {
+   "knowledge": [
+    "X kromozomunun bazı lokuslarının Y'de karşılığı yoktur.",
+    "Homozigot: aynı lokusta iki aynı alel. Heterozigot: iki farklı alel. Her ikisi de iki alel gerektirir."
+   ],
+   "strategy": "İlgili lokusta XY bireyin kaç alel taşıdığını say; iki alel gerektiren terimleri ele.",
+   "steps": [
+    "XY bireyde tek X vardır; Y'de bu lokusun karşılığı yoktur.",
+    "Lokusta tek alel bulunur; ne iki aynı ne iki farklı alel söz konusudur.",
+    "Tek alel taşıma durumu hemizigotluktur."
+   ],
+   "optionReasons": [
+    "Tek aleli iki aynı alel gibi sayar; homozigotluk için iki alel gerekir.",
+    "Tek alelde farklılık karşılaştırması yapılamaz; heterozigotluk iki farklı alel ister.",
+    "Doğru: karşılığı olmayan X lokusunda tek alel taşımak hemizigotluktur.",
+    "Eş baskınlık iki alelin birlikte görülmesidir; burada tek alel vardır.",
+    "Çok alellilik popülasyondaki alel çeşitliliğidir; bireyin alel sayısıyla ilgili değildir."
+   ],
+   "commonError": "XY bireyin X'e bağlı lokustaki tek alelini homozigot saymak.",
+   "check": "XᵃY erkek tek çekinik alelle özelliği gösterir; iki alel olsaydı Aa gibi gizlenebilirdi, gizlenmemesi tek alel olduğunu doğrular."
+  }
+ },
+ {
+  "id": "f012-bio-eseyin-belirlenmesi-4",
+  "h": "0283ffed3cadb0",
+  "guidance": {
+   "knowledge": [
+    "X'e bağlı çekinik özellik: XᵃXᵃ dişide ve XᵃY erkekte görülür; XᴬXᵃ dişi taşıyıcıdır, özelliği göstermez.",
+    "Anne Xᴬ ya da Xᵃ (1/2'şer), baba Xᴬ ya da Y (1/2'şer) gameti verir."
+   ],
+   "strategy": "Dört eş birleşmeyi yaz ve paydanın bütün çocuklar olduğuna dikkat ederek özelliği gösterenleri say.",
+   "steps": [
+    "Birleşmeler: XᴬXᴬ, XᴬY, XᵃXᴬ, XᵃY.",
+    "Özelliği gösteren yalnız XᵃY; kızlar babadan Xᴬ aldığı için hiçbiri göstermez.",
+    "Tüm çocuklar içinde: 1/4."
+   ],
+   "optionReasons": [
+    "Anne özelliği göstermediği için çocukların da göstermeyeceğini sanır; anne Xᵃ taşır.",
+    "Oğullar içindeki oranı (1/2) tüm çocuklar için yazar.",
+    "Özelliği göstermeyenlerin payını yazar.",
+    "Doğru: dört eş birleşmeden yalnız XᵃY özelliği gösterir.",
+    "Annenin taşıdığı çekinik alelin bütün çocuklara geçtiğini sanır."
+   ],
+   "commonError": "Oğullar içindeki 1/2 oranını bütün çocuklar için kullanmak.",
+   "check": "Erkek doğma olasılığı 1/2, erkek çocuğun anneden Xᵃ alma olasılığı 1/2: 1/2 × 1/2 = 1/4."
+  }
+ },
+ {
+  "id": "f012-bio-eseyin-belirlenmesi-5",
+  "h": "1d3f68efe045d3",
+  "guidance": {
+   "knowledge": [
+    "Koşullu olasılık: çocuğun XY olduğu bilgisi örnek uzayını yalnız erkek çocuklara indirir.",
+    "XY oğul X'ini anneden alır; XᴬXᵃ anne 1/2 Xᴬ, 1/2 Xᵃ verir."
+   ],
+   "strategy": "Koşul yalnız oğulları bıraktığı için oğulun X'inin anneden geldiğini kullan ve oranı yalnız erkekler içinde kur.",
+   "steps": [
+    "Dört eş birleşme: XᴬXᴬ, XᴬY, XᵃXᴬ, XᵃY.",
+    "XY koşulu iki yolu bırakır: XᴬY ve XᵃY.",
+    "Bunlardan biri (XᵃY) özelliği gösterir: 1/2."
+   ],
+   "optionReasons": [
+    "Koşulu kullanmaz; tüm çocuklar içindeki 1/4'ü yazar.",
+    "Baba özelliği göstermediği için oğulların da göstermeyeceğini sanır; oğul X'ini anneden alır.",
+    "Etkilenmeyenlerin tüm çocuklar içindeki payını (3/4) yazar.",
+    "Annenin taşıyıcı olmasını bütün oğulların etkilenmesi sanır; anne 1/2 olasılıkla Xᴬ verir.",
+    "Doğru: XY yollarından biri etkilenmiş, 1/2."
+   ],
+   "commonError": "Koşul verildiği hâlde paydayı bütün çocuklar almak.",
+   "check": "Kısa yol: oğulun durumu yalnız annenin verdiği X'e bağlıdır; anne Xᵃ'yı 1/2 olasılıkla verir."
+  }
+ },
+ {
+  "id": "f012-bio-eseyin-belirlenmesi-6",
+  "h": "0d9e22b6107b1d",
+  "guidance": {
+   "knowledge": [
+    "Kız çocuk (XX) bir X'i anneden, bir X'i babadan alır.",
+    "Taşıyıcı: çekinik aleli taşıyan ama özelliği göstermeyen heterozigot birey (XᴬXᵃ)."
+   ],
+   "strategy": "Kızın iki X'ini ayrı kaynaklardan yaz: babanın tek X'i ve annenin X'lerinden biri.",
+   "steps": [
+    "Baba XᵃY: kızlarına Xᵃ, oğullarına Y verir.",
+    "Anne XᴬXᴬ: her çocuğa Xᴬ verir.",
+    "Kızlar: Xᴬ + Xᵃ = XᴬXᵃ; hepsi taşıyıcı."
+   ],
+   "optionReasons": [
+    "Doğru: babadan Xᵃ, anneden Xᴬ; bütün kızlar XᴬXᵃ.",
+    "Annenin de Xᵃ verdiğini sanır; anne yalnız Xᴬ taşır.",
+    "Babanın kızına X vermediğini sanır; kız babasının tek X'ini mutlaka alır.",
+    "Kızlarla oğulları karıştırır; XY genotipi oğullara aittir.",
+    "Kızlara XY genotipi yazar ve anneden gelen Xᴬ'yı unutur."
+   ],
+   "commonError": "Kızın bir X'ini babadan aldığını unutmak.",
+   "check": "Oğullar anneden Xᴬ, babadan Y alır: hepsi XᴬY. Babanın Xᵃ'sı yalnız kızlara gider, bu da sonucu doğrular."
+  }
+ },
+ {
+  "id": "f012-bio-eseyin-belirlenmesi-7",
+  "h": "07a5bee1aa4dc4",
+  "guidance": {
+   "knowledge": [
+    "Y'ye bağlı özellik: geni Y kromozomunun X'te karşılığı olmayan bölgesinde bulunur.",
+    "Tam ifade: geni taşıyan herkes özelliği gösterir. Y yalnız XY bireylerde bulunur ve babadan oğula geçer."
+   ],
+   "strategy": "Y kromozomunun aktarım yolunu izle: kim Y taşır, Y'yi kime verir.",
+   "steps": [
+    "Y kromozomu yalnız babada bulunur.",
+    "Baba Y'sini oğullarına, X'ini kızlarına verir.",
+    "Y'ye bağlı özellik babadan oğullara aktarılır."
+   ],
+   "optionReasons": [
+    "X'e bağlı baskın özelliğin yolunu yazar; kızlar babadan Y değil X alır.",
+    "Doğru: Y yalnız babadan oğula geçer.",
+    "Annenin Y taşıdığını varsayar; XX annede Y yoktur.",
+    "Annenin Y'ye bağlı gen aktarabileceğini sanır; anne Y taşımaz.",
+    "Kızların Y taşıdığını sanır; XX bireylerde Y bulunmaz."
+   ],
+   "commonError": "Y'ye bağlı ve X'e bağlı aktarım yollarını karıştırmak.",
+   "check": "Etkilenmiş bir babanın bütün oğulları ve onların oğulları etkilenir, hiçbir kız etkilenmez; bu, Y yolunun imzasıdır."
+  }
+ },
+ {
+  "id": "f012-bio-eseyin-belirlenmesi-8",
+  "h": "187f8be9086e82",
+  "guidance": {
+   "knowledge": [
+    "Bağımsız olay: önceki sonuçlar sonraki olayın olasılığını değiştirmez.",
+    "XX/XY modelinde her döllenmede babanın X ya da Y gameti verme olasılığı 1/2'dir."
+   ],
+   "strategy": "Yeni döllenmenin öncekilerden bağımsız olduğunu kullan; geçmiş seriyi hesaba katma.",
+   "steps": [
+    "Her doğumda XX olasılığı 1/2.",
+    "Önceki üç XY doğumu yeni gametin içeriğini etkilemez.",
+    "Sonraki XX olasılığı 1/2."
+   ],
+   "optionReasons": [
+    "Üç erkekten sonra kızın kesin geleceğini sanır; oranın dengelenmesi zorunlu değildir.",
+    "Seriden bu ailenin kız yapamayacağı sonucunu çıkarır; olasılık her doğumda 1/2.",
+    "Doğru: bağımsız döllenmede XX olasılığı 1/2.",
+    "Geçmiş serinin kız olasılığını artırdığını sanır; kumarbaz yanılgısı.",
+    "Tek doğumu sorulduğu hâlde iki doğumu birlikte çarpar: 1/2 × 1/2 = 1/4."
+   ],
+   "commonError": "Geçmiş sonuçların bir sonraki doğumu dengeleyeceğini sanmak.",
+   "check": "Ayırt et: dört çocuğun ilk üçü XY ve dördüncüsü XX olma olasılığı (1/2)⁴ = 1/16'dır; ama ilk üçü bilindiğinde yalnız dördüncüsü sorulur, o da 1/2."
+  }
+ },
+ {
+  "id": "f012-bio-eseyin-belirlenmesi-9",
+  "h": "09ef8e8ea29604",
+  "guidance": {
+   "knowledge": [
+    "Otozomal çekinik özellik: yalnız aa bireyde görülür; Aa taşıyıcıdır.",
+    "Akrabalar ortak atalardan geldiği için aynı aleli taşıma olasılıkları akraba olmayanlara göre daha yüksek olabilir."
+   ],
+   "strategy": "Risk artışı ile kesin sonucu ayır; mutlak ifadeler (mutlaka, her, bütün) içeren şıkları kalıtım bilgisiyle sına.",
+   "steps": [
+    "Akrabalık yeni alel üretmez; ortak atadan gelen aynı aleli iki kişinin taşıma olasılığını artırabilir.",
+    "İki ebeveyn de Aa olsa bile her çocukta aa olasılığı 1/4'tür, kesin değildir.",
+    "Uygun ifade: ortak aleli birlikte taşıma olasılığı artabilir, hastalık garanti değildir."
+   ],
+   "optionReasons": [
+    "Akrabalığın mutasyon yaptığını sanır; akrabalık var olan alellerin buluşma olasılığını etkiler.",
+    "Aynı alelin yalnız akrabalarda bulunabileceğini sanır; bir alel toplumda yaygın olabilir.",
+    "Bütün genetik hastalıkları çekinik sanır; baskın kalıtılan hastalıklar da vardır.",
+    "Doğru: ortak alel taşıma olasılığı artabilir ama her çocukta hastalık kesin değildir.",
+    "Olasılığı kesinliğe çevirir; Aa × Aa'da bile çocukların 3/4'ü etkilenmez."
+   ],
+   "commonError": "Artan riski kesin hastalık sonucu gibi yorumlamak.",
+   "check": "Aa × Aa çiftinde dört çocuğun hiçbirinin etkilenmeme olasılığı (3/4)⁴ ≈ 0,32'dir; demek ki hepsinin etkilenmesi zorunlu değildir."
+  }
+ },
+ {
+  "id": "f012-bio-eseyin-belirlenmesi-10",
+  "h": "1c73b0cb7a5a6c",
+  "guidance": {
+   "knowledge": [
+    "Kromozom düzeni (XX/XY): hücrelerdeki eşey kromozomlarıdır; ancak laboratuvar incelemesiyle belirlenebilir.",
+    "Okul modeli: belirli varsayımlar altında alellerin ebeveynden çocuğa geçişini öğreten basitleştirilmiş araçtır."
+   ],
+   "strategy": "Modelin neyi hesapladığını ve neyi hesaplayamadığını ayır; görünüşten kesin kromozom ya da kimlik hükmü veren şıkları ele.",
+   "steps": [
+    "Görünüş fenotiptir; kromozom düzenini doğrudan göstermez.",
+    "Punnett karesi olası alel birleşimlerini verir; bir kişinin kimliğini belirlemez.",
+    "Bu basit modelle kişisel kromozom düzeni ya da kimlik kesinleştirilemez."
+   ],
+   "optionReasons": [
+    "Görünüşü kromozom sayımı sanır; kromozom sayısı ancak hücre incelemesiyle bulunur.",
+    "Bir görüntüden hücre içi kromozom düzeninin okunabileceğini sanır.",
+    "Olasılık hesaplayan kareyi bir kişinin kimliğini belirleyen araç sanır.",
+    "Modelin sınırlılığını kromozomların rolünün yokluğu sanır; kromozomlar gelişimde rol oynar.",
+    "Doğru: basit model kişisel kromozom düzenini ya da kimliği kesinleştirmez."
+   ],
+   "commonError": "Bir modelin öğrettiği genel kalıbı tek bir kişi hakkında kesin hükme çevirmek.",
+   "check": "Şıklardaki her zaman, kesin, hiçbir gibi mutlak ifadeleri sına; yalnız modelin sınırını doğru çizen ifade bu sınamadan geçer."
+  }
+ },
+ {
+  "id": "f012-bio-soy-agaclari-1",
+  "h": "01b11f115c1848",
+  "guidance": {
+   "knowledge": [
+    "Soy ağacı: bir ailenin birkaç kuşağını simgelerle gösteren şema; dolu simge incelenen özelliği gösteren bireydir.",
+    "Fenotip: görünen özellik. Genotip: alel yapısı; aynı fenotip farklı modellerde farklı genotiplere karşılık gelir."
+   ],
+   "strategy": "Dolu simgenin neyi kodladığını (fenotip) ve genotipin neye bağlı olduğunu (kalıtım modeli) ayır; iki modelde karşı örnek dene.",
+   "steps": [
+    "Dolu simge yalnız özelliğin görüldüğünü söyler.",
+    "Otozomal çekinik modelde dolu birey aa, otozomal baskın modelde AA ya da Aa olur.",
+    "Dolu simge her soruda aa demek değildir; genotip modele bağlıdır."
+   ],
+   "optionReasons": [
+    "Doğru: doluluk fenotipi gösterir, genotip kalıtım modeline göre belirlenir.",
+    "Yalnız çekinik modeli düşünür; baskın modelde dolu birey AA ya da Aa olur.",
+    "Dolu simgeyi her zaman baskın homozigot sanır; çekinik modelde dolu birey aa'dır.",
+    "Soy ağacı simgelerini gamet sanır; simgeler bireyleri gösterir.",
+    "Simgenin dolu ya da boş olmasını eşey sanır; eşey kare ve daire biçimiyle gösterilir."
+   ],
+   "commonError": "Dolu simgeyi her zaman çekinik homozigot okumak.",
+   "check": "Karşı örnek: otozomal baskın bir özellikte etkilenen birey Aa olabilir; bu tek örnek her zaman aa iddiasını çürütür."
+  }
+ },
+ {
+  "id": "f012-bio-soy-agaclari-2",
+  "h": "1447554096d5e4",
+  "guidance": {
+   "knowledge": [
+    "Otozomal çekinik: geni eşey kromozomu dışındaki bir kromozomda bulunan ve yalnız aa bireyde görülen özellik.",
+    "Tam ifade: aa olan herkes özelliği gösterir; etkilenmeyen birey aa değildir."
+   ],
+   "strategy": "Çocuğun iki a alelinin kaynağını izle, sonra ebeveynlerin etkilenmemiş olmasını kullan.",
+   "steps": [
+    "aa çocuk her ebeveynden bir a almıştır; iki ebeveyn de a taşır.",
+    "Ebeveynler etkilenmediği için aa değildir; bir de A taşırlar.",
+    "İki ebeveyn de Aa: Aa × Aa."
+   ],
+   "optionReasons": [
+    "Hiçbir ebeveyn a taşımadığı için aa çocuk olamazdı.",
+    "Doğru: iki ebeveyn de birer a vermiş ve etkilenmemiştir, yani Aa × Aa.",
+    "AA ebeveyn a veremez; çocuk iki a alamazdı.",
+    "aa ebeveynler etkilenmiş olurdu; ebeveynlerin etkilenmediği bilgisiyle çelişir.",
+    "aa ebeveyn etkilenmiş olurdu, AA ebeveyn de a veremezdi; iki çelişki."
+   ],
+   "commonError": "Yalnız bir ebeveynin taşıyıcı olmasını yeterli sanmak.",
+   "check": "Aa × Aa'da aa çocuk olasılığı 1/4'tür, sıfırdan büyüktür; diğer bütün eşleşmelerde bu olasılık 0'dır."
+  }
+ },
+ {
+  "id": "f012-bio-soy-agaclari-3",
+  "h": "058c1870a7663d",
+  "guidance": {
+   "knowledge": [
+    "aa ebeveyn yalnız a gameti verir.",
+    "Otozomal çekinik özellikte etkilenmeyen birey en az bir A taşır (AA ya da Aa)."
+   ],
+   "strategy": "Önce kesin gelen aleli yaz (aa ebeveynden a), sonra çocuğun etkilenmemiş olmasını kullan.",
+   "steps": [
+    "Çocuk aa ebeveynden kesin a almıştır.",
+    "Çocuk özelliği göstermediği için aa değildir; diğer alel A'dır.",
+    "Genotip Aa; AA olamaz çünkü aa ebeveynden A gelemez."
+   ],
+   "optionReasons": [
+    "aa ebeveynden gelen a'yı unutur; AA için iki ebeveynden de A gerekir.",
+    "aa çocuk özelliği gösterirdi; çocuğun etkilenmemiş olmasıyla çelişir.",
+    "Doğru: aa ebeveynden a, etkilenmemiş olduğu için diğeri A.",
+    "Diploit bireye tek alel yazar; çocuk iki alel taşır.",
+    "İki genotipi de olası bırakır; aa ebeveynden gelen a, AA seçeneğini dışarıda bırakır."
+   ],
+   "commonError": "Etkilenmeyen her bireyi AA ya da Aa diye belirsiz bırakmak; ebeveyn bilgisi kesinlik sağlar.",
+   "check": "aa × herhangi bir ebeveyn çaprazlamasında hiçbir çocuk AA olamaz; çünkü her çocuk bir a alır."
+  }
+ },
+ {
+  "id": "f012-bio-soy-agaclari-4",
+  "h": "12f6a0b5da14b6",
+  "guidance": {
+   "knowledge": [
+    "Otozomal baskın: özellik en az bir A aleli taşıyan bireyde görülür (AA ya da Aa); etkilenmeyen birey aa'dır.",
+    "Çocuk her ebeveynden bir alel alır."
+   ],
+   "strategy": "Ebeveynin fenotipini (A taşır) ve çocuğun genotipini (ebeveynden a aldı) birleştir.",
+   "steps": [
+    "Etkilenen ebeveyn baskın modelde en az bir A taşır.",
+    "aa çocuk bu ebeveynden bir a almıştır.",
+    "Ebeveyn A ve a taşır: Aa."
+   ],
+   "optionReasons": [
+    "Çocuk kanıtını kullanmaz; AA ebeveyn a veremezdi.",
+    "Baskın modelde aa etkilenmez; ebeveynin etkilenmiş olmasıyla çelişir.",
+    "Diploit bireye tek alel yazar.",
+    "Doğru: fenotip A'yı, çocuk kanıtı a'yı gösterir.",
+    "Çocuktan gelen kanıtı yok sayar; aa çocuk genotipi kesinleştirir."
+   ],
+   "commonError": "Etkilenen bireyi baskın modelde otomatik AA saymak.",
+   "check": "Aa ebeveynin aa eşle çocuğu 1/2 olasılıkla aa olur; AA ebeveynin hiçbir çocuğu aa olamaz."
+  }
+ },
+ {
+  "id": "f012-bio-soy-agaclari-5",
+  "h": "1d94d8a6898aae",
+  "guidance": {
+   "knowledge": [
+    "Baskın modelde etkilenmeyen birey baskın aleli taşımaz; iki etkilenmeyen ebeveyn baskın aleli çocuğa veremez.",
+    "X'e bağlı çekinikte kız XᵃXᵃ olmak için babadan Xᵃ almalıdır; Xᵃ taşıyan baba XᵃY olup etkilenir.",
+    "Y'ye bağlı özellik kızda bulunmaz; kızlar Y taşımaz."
+   ],
+   "strategy": "Her modeli üç kişiye (iki etkilenmeyen ebeveyn ve etkilenen kız) ayrı ayrı uygula; çelişen modeli ele.",
+   "steps": [
+    "Otozomal baskın ve X'e bağlı baskın: etkilenmeyen ebeveynler baskın alel taşımaz, etkilenen çocuk olamaz.",
+    "Y'ye bağlı: kızda Y yok, elenir. X'e bağlı çekinik: etkilenen kızın babası etkilenmiş olmalı, baba etkilenmemiş, elenir.",
+    "Otozomal çekinik: Aa × Aa'dan aa kız çıkabilir. Uyumlu model budur."
+   ],
+   "optionReasons": [
+    "Baskın alel etkilenmeyen ebeveynlerde yoktur; etkilenen çocuğun alel kaynağı kalmaz.",
+    "Kız etkilenmek için bir ebeveynden Xᴬ almalı; iki ebeveyn de etkilenmediği için bu alel yoktur.",
+    "Y'ye bağlı özelliğin kızda görülebileceğini sanır; kızlar Y taşımaz.",
+    "Etkilenen kızın babadan Xᵃ alması gerektiğini atlar; o zaman baba XᵃY olup etkilenirdi.",
+    "Doğru: Aa × Aa ebeveynlerden aa kız çıkabilir."
+   ],
+   "commonError": "X'e bağlı çekinikte kızın bir alelinin babadan geldiğini unutmak.",
+   "check": "Otozomal çekinikte ebeveyn eşeyi önemsizdir; iki taşıyıcıdan her çocuk, kız ya da erkek, 1/4 olasılıkla etkilenir."
+  }
+ },
+ {
+  "id": "f012-bio-soy-agaclari-6",
+  "h": "09fe36c9f359d2",
+  "guidance": {
+   "knowledge": [
+    "Kız çocuk (XX) bir X'i anneden, bir X'i babadan alır.",
+    "Erkek tek X taşır; X'inde Xᵃ varsa (XᵃY) X'e bağlı çekinik özelliği gösterir."
+   ],
+   "strategy": "Kızın iki çekinik X'inden birinin babadan gelmek zorunda olduğunu kullan.",
+   "steps": [
+    "XᵃXᵃ kızın iki X'i de Xᵃ'dır.",
+    "Bunlardan biri babadan gelir; babanın tek X'i Xᵃ olmalıdır.",
+    "Baba XᵃY'dir ve özelliği gösterir."
+   ],
+   "optionReasons": [
+    "Doğru: kızın bir Xᵃ'sı babadan gelir, baba XᵃY olmalıdır.",
+    "XᴬY baba kızına Xᴬ verirdi; kız XᵃXᵃ olamazdı.",
+    "Erkeğe iki X yazar; standart modelde erkek tek X taşır.",
+    "Babanın kızın genotipine katkısını yok sayar; kız babasının X'ini mutlaka alır.",
+    "Babanın kızına Y verdiğini sanır; Y alan çocuk erkek olur."
+   ],
+   "commonError": "Kızın iki çekinik alelini yalnız anneden gelmiş sanmak.",
+   "check": "Anne XᴬXᵃ ve baba XᵃY ise kızların 1/2'si XᵃXᵃ olur; baba XᴬY ise hiçbir kız XᵃXᵃ olamaz."
+  }
+ },
+ {
+  "id": "f012-bio-soy-agaclari-7",
+  "h": "03b3ef83059846",
+  "guidance": {
+   "knowledge": [
+    "Y'ye bağlı ve tam ifadeli model: geni taşıyan babanın Y'si bütün oğullarına geçer ve hepsi özelliği gösterir.",
+    "Bir modelin veriyle uyuşmaması, o modelin bu aile için elenmesi demektir."
+   ],
+   "strategy": "Modelin zorunlu öngörüsünü yaz (etkilenen babanın bütün oğulları etkilenir) ve aile verisiyle karşılaştır.",
+   "steps": [
+    "Modelde etkilenen baba Y'sini her oğluna verir.",
+    "Tam ifade varsayıldığı için her oğul etkilenmelidir.",
+    "Etkilenmeyen oğul bu öngörüyle çelişir; yalın model bu aileyle uyuşmaz."
+   ],
+   "optionReasons": [
+    "Aykırı veriyi modelin kanıtı sanır; tersine, model bu veriyle elenir.",
+    "Doğru: modelin zorunlu öngörüsü bozulduğu için yalın model bu aileye uymaz.",
+    "Oğulun babadan X aldığını sanır; X alan çocuk kız olur.",
+    "Kızların Y'ye bağlı özelliği alabileceğini sanır; kızlar Y taşımaz.",
+    "Annede Y bulunabileceğini sanır; XX annede Y yoktur."
+   ],
+   "commonError": "Modele uymayan veriyi modelin kanıtı ya da biyolojik imkânsızlık sanmak.",
+   "check": "Model doğru olsaydı etkilenen babanın etkilenmemiş oğlu olasılığı 0 olurdu; gözlenen olay bu olasılığı bozuyor."
+  }
+ },
+ {
+  "id": "f012-bio-soy-agaclari-8",
+  "h": "19cce73915ad9a",
+  "guidance": {
+   "knowledge": [
+    "Taşıyıcı: çekinik aleli taşıyan ama özelliği göstermeyen Aa birey.",
+    "Koşullu olasılık: özelliği göstermiyor bilgisi aa durumunu örnek uzayından çıkarır."
+   ],
+   "strategy": "Aa × Aa'nın dört eş yolunu yaz, etkilenmeyen koşulu aa'yı çıkarır; kalanlar içinde Aa oranını bul.",
+   "steps": [
+    "Eş yollar: AA, Aa, aA, aa.",
+    "Etkilenmeyen koşulu aa'yı çıkarır: AA, Aa, aA (3 yol).",
+    "Taşıyıcı yollar 2: olasılık 2/3."
+   ],
+   "optionReasons": [
+    "Koşulu kullanmadan tüm çocuklar içindeki Aa payını (2/4) yazar.",
+    "AA ya da aa payını (1/4) taşıyıcı sanır.",
+    "Doğru: aa çıkarılınca 3 yoldan 2'si Aa.",
+    "Etkilenmeyenlerin tüm çocuklar içindeki payını (3/4) taşıyıcı sanır.",
+    "Etkilenmeyen her çocuğu taşıyıcı sanır; AA çocuk a taşımaz."
+   ],
+   "commonError": "Koşullu olasılıkta paydayı daraltmayı unutup 1/2 yazmak.",
+   "check": "Koşullu olasılıklar toplamı: AA 1/3 + Aa 2/3 = 1."
+  }
+ },
+ {
+  "id": "f012-bio-soy-agaclari-9",
+  "h": "0eb1573f2493a1",
+  "guidance": {
+   "knowledge": [
+    "Kesin (her zaman doğru) önerme: bütün olası durumlarda doğru olmalıdır; tek karşı örnek onu çürütür.",
+    "Etkilenmeyen birey otozomal çekinikte AA ya da Aa olabilir."
+   ],
+   "strategy": "Olası genotiplerin her birini eşin genotipiyle ayrı ayrı çaprazla; iddiayı bozan bir durum var mı bak.",
+   "steps": [
+    "İki genotip mümkün: AA ve Aa.",
+    "Her birini eşin genotipiyle çaprazla ve çocuk genotiplerini yaz.",
+    "Bir durumda Aa dışında çocuk çıkıyorsa bütün çocuklar Aa iddiası kesin değildir."
+   ],
+   "optionReasons": [
+    "Kanıt olmadan kişiyi AA sayar; Aa olasılığını yok sayar.",
+    "Yalnız iddiayı destekleyen durumu dener; Aa durumu karşı örnek verebilir.",
+    "Olasılık analizi yapmadan hükme varır.",
+    "Doğru: iki genotip de denenir, tek karşı örnek kesinliği bozar.",
+    "Önceki çocuğu sonrakiler için belirleyici sanır; her doğum bağımsızdır."
+   ],
+   "commonError": "Yalnız iddiayı doğrulayan genotipi deneyip diğerini gözden kaçırmak.",
+   "check": "Örnek: eş aa ise AA × aa hep Aa verir, ama Aa × aa 1/2 olasılıkla aa verir; iddia bu yüzden kesin değildir."
+  }
+ },
+ {
+  "id": "f012-bio-soy-agaclari-10",
+  "h": "011ac93e6198d4",
+  "guidance": {
+   "knowledge": [
+    "Uyumlu model: verilen soy ağacındaki hiçbir bireyle çelişmeyen kalıtım modeli.",
+    "Birden çok model uyumluysa veri modeller arasında ayrım yapmaya yetmez."
+   ],
+   "strategy": "Uyumlu model sayısının ne anlattığını düşün: elenemeyen model, kanıtlanmış model değildir.",
+   "steps": [
+    "Üç model de aile verisiyle çelişmiyor.",
+    "Bu, hiçbirinin elenemediğini, ama hiçbirinin de kesinleşmediğini gösterir.",
+    "Doğru yorum: verilen veri tek modeli kesinleştirmiyor; daha fazla bilgi gerekir."
+   ],
+   "optionReasons": [
+    "Uyumlu model sayısını risk olasılığına çevirir; ikisi farklı kavramlardır.",
+    "Farklı modelleri aynı mekanizma sanır; her model farklı aktarım yolu anlatır.",
+    "Üç modeli üç ayrı gen sanır; modeller aynı özellik için alternatif açıklamalardır.",
+    "Belirsizliği rastgele seçimle çözer; seçim kanıta dayanmalıdır.",
+    "Doğru: veri modeller arasında ayrım yapmaya yetmez."
+   ],
+   "commonError": "Eleyememeyi kanıtlamakla karıştırmak.",
+   "check": "Aileye yeni bir kuşak eklendiğinde modellerden biri çelişebilir; demek ki sonuç verinin miktarına bağlıydı."
+  }
+ }
+]

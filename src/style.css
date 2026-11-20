@@ -1961,10 +1961,12 @@ progress::-moz-progress-bar {
 .scale-presets button {
   background: transparent;
   border: 1px solid var(--border);
-  padding: 0.25rem 0.4rem;
+  padding: 0.25rem 0.55rem;
   border-radius: 0.3rem;
-  min-height: 2rem;
-  font-size: 0.76em;
+  /* A full touch target: these are the only way to pick a preset on a phone. */
+  min-height: 2.75rem;
+  min-width: 2.75rem;
+  font-size: 0.8em;
 }
 .scale-presets button.active {
   border-color: var(--accent);

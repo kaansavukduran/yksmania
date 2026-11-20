@@ -14,6 +14,7 @@ export const contentCounts = {
   officialHeadings: curriculum.length,
   readyLessons: lessons.filter((lesson) => !lesson.tags.includes("soru-seti")).length,
   originalQuestions: lessons.reduce((total, lesson) => total + lesson.questions.length, 0),
+  questionSets: lessons.filter((lesson) => lesson.questions.length > 0).length,
   studyTopics: studyTopics.length,
   workbookTopics: workbookStudyTopics.length,
 };

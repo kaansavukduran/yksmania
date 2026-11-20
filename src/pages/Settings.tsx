@@ -260,10 +260,10 @@ export function Settings({
       {confirmationDialog}
       <header className="page-heading">
         <div>
-          <p className="eyebrow">{t("deviceScope")}</p>
           <h1>{t("settings")}</h1>
         </div>
       </header>
+      <p className="lead muted">{t("deviceScope")}</p>
       <div className="settings-grid">
         <section className="panel settings-panel">
           <h2>{t("general")}</h2>

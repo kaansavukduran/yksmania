@@ -63,7 +63,6 @@ export function Calendar({
     <>
       <header className="page-heading">
         <div>
-          <p className="eyebrow">1 · 3 · 7 · 21</p>
           <h1>{t("calendar")}</h1>
         </div>
       </header>

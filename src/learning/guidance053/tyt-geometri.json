@@ -1,0 +1,252 @@
+[
+ {
+  "id": "f018-math-noktanin-analitigi-1",
+  "h": "0269bbb809e3f9",
+  "guidance": {
+   "knowledge": [
+    "P(a; b): noktanın apsisi a (yatay koordinat), ordinatı b (düşey koordinat).",
+    "I. bölgenin içi: apsis ve ordinat ikisi de kesin pozitif olan noktalar (a > 0 ve b > 0). Koordinatlardan biri 0 ise nokta bir eksen üzerindedir, bölgenin içinde değildir."
+   ],
+   "strategy": "Bölge koşulu iki koordinat için ayrı eşitsizlik verir; ikisini ayrı çözüp ortak kısmını alırsın.",
+   "steps": [
+    "Apsis koşulu: k − 1 > 0 → iki tarafa 1 ekle: k > 1.",
+    "Ordinat koşulu: 4 − k > 0 → iki tarafa k ekle: 4 > k, yani k < 4.",
+    "İki koşul birlikte sağlanmalı: 1 < k < 4."
+   ],
+   "optionReasons": [
+    "Uç değerleri de alır; k = 1 iken P(0; 3) y ekseninde, k = 4 iken P(3; 0) x ekseninde olur.",
+    "Apsis eşitsizliğinin yönünü ters çevirir; k < 1 iken k − 1 negatif olur.",
+    "Ordinat eşitsizliğinin yönünü ters çevirir; k > 4 iken 4 − k negatif olur.",
+    "Apsis koşulunda −1 ile 1’i karıştırır; k = 0 için P(−1; 4) II. bölgededir.",
+    "Doğru: k > 1 ve k < 4 birlikte 1 < k < 4 verir."
+   ],
+   "commonError": "Kesin eşitsizlik yerine ≤ kullanıp eksen üzerindeki noktaları bölgenin içine katmak.",
+   "check": "Aralıktan k = 2 seç: P(1; 2) I. bölgede. Aralık dışından k = 5 seç: P(4; −1) IV. bölgede; koşul doğru çalışıyor."
+  }
+ },
+ {
+  "id": "f018-math-noktanin-analitigi-2",
+  "h": "0ca3cabb466ec3",
+  "guidance": {
+   "knowledge": [
+    "İki nokta arası uzaklık: A(x₁; y₁) ve B(x₂; y₂) için |AB| = √((x₂ − x₁)² + (y₂ − y₁)²).",
+    "Bu formül, yatay ve düşey farkların dik kenar olduğu dik üçgende Pisagor bağıntısıdır."
+   ],
+   "strategy": "İki noktanın koordinatları verildiği için yatay ve düşey farkları bulup Pisagor bağıntısını uygularsın.",
+   "steps": [
+    "Yatay fark: Δx = 5 − (−3) = 5 + 3 = 8.",
+    "Düşey fark: Δy = 8 − 2 = 6.",
+    "|AB| = √(8² + 6²) = √(64 + 36) = √100 = 10 birim."
+   ],
+   "optionReasons": [
+    "Karekök almayı unutur; 100, uzaklığın karesidir.",
+    "Kareleri toplamak yerine çıkarır: √(64 − 36) = √28.",
+    "Doğru: √(8² + 6²) = √100 = 10.",
+    "Farkları doğrudan toplar: 8 + 6 = 14; bu, eksenlere paralel köşeli yolun uzunluğudur.",
+    "Farkları birbirinden çıkarır: 8 − 6 = 2."
+   ],
+   "commonError": "−3’ü çıkarırken işareti kaçırıp Δx’i 2 bulmak ya da karekökü unutmak.",
+   "check": "6, 8, 10 bilinen 3, 4, 5 dik üçgeninin iki katıdır; hipotenüs 10 çıkmalı."
+  }
+ },
+ {
+  "id": "f018-math-noktanin-analitigi-3",
+  "h": "0a408f7fb2c359",
+  "guidance": {
+   "knowledge": [
+    "Bir noktanın y eksenine uzaklığı, o noktadan y eksenine inen dik parçanın uzunluğudur ve apsisin mutlak değerine eşittir: |x|.",
+    "Mutlak değer: sayının sıfıra uzaklığı. |t| = 5 denkleminin iki çözümü vardır: t = 5 ve t = −5."
+   ],
+   "strategy": "y eksenine uzaklık yalnız apsise bağlı olduğundan ordinatı bir kenara bırakır, |t| = 5 denklemini çözersin.",
+   "steps": [
+    "y eksenine uzaklık: |t|.",
+    "|t| = 5 → t = 5 veya t = −5.",
+    "Bölge koşulu verilmediği için iki değer de geçerli: {−5, 5}."
+   ],
+   "optionReasons": [
+    "Doğru: |t| = 5 denkleminin iki çözümü de alınır.",
+    "Mutlak değerin negatif çözümünü unutur; (−5; −2) noktası da y ekseninden 5 birim uzaktadır.",
+    "Yalnız negatif çözümü alır; (5; −2) noktası da koşulu sağlar.",
+    "Eksenleri karıştırır; ±2 ordinatla ilgilidir ve x eksenine uzaklığı belirler.",
+    "Noktayı y ekseni üzerine koyar; t = 0 iken uzaklık 0 olur, 5 değil."
+   ],
+   "commonError": "y eksenine uzaklığı ordinatla karıştırmak ya da mutlak değerin iki çözümünden birini atmak.",
+   "check": "t = 5 için (5; −2), t = −5 için (−5; −2); ikisinden de y eksenine yatay uzaklık 5 birimdir."
+  }
+ },
+ {
+  "id": "f018-math-noktanin-analitigi-4",
+  "h": "026091bd5d4941",
+  "guidance": {
+   "knowledge": [
+    "Bir noktanın S merkezine göre simetriği: A’dan S’ye gidip aynı uzunlukta aynı yönde devam edince varılan A′ noktası. S, [AA′] parçasının orta noktasıdır.",
+    "Orta nokta bağıntısından A′ = 2S − A bulunur; her koordinata ayrı uygulanır."
+   ],
+   "strategy": "S orta nokta olduğu için orta nokta formülünü A′ için çözersin: A′ = 2S − A.",
+   "steps": [
+    "Apsis: 2 · 1 − 4 = 2 − 4 = −2.",
+    "Ordinat: 2 · 2 − (−3) = 4 + 3 = 7.",
+    "A′(−2; 7)."
+   ],
+   "optionReasons": [
+    "Çıkarmayı ters sırada yapar: A − 2S = (4 − 2; −3 − 4) = (2; −7).",
+    "Koordinatları toplar: A + S = (4 + 1; −3 + 2) = (5; −1).",
+    "Koordinatların yerini değiştirir: (4; −3) yerine (−3; 4) yazar; bu simetri değildir.",
+    "Doğru: A′ = 2S − A = (−2; 7).",
+    "Yalnız işaretleri değiştirir; bu orijine göre simetridir, merkez S(1; 2) iken geçerli değildir."
+   ],
+   "commonError": "Her nokta merkezine göre simetride yalnız işaretleri değiştirmek; bu kural yalnız orijin için geçerlidir.",
+   "check": "A ile A′’nün orta noktası: ((4 − 2)/2; (−3 + 7)/2) = (1; 2) = S."
+  }
+ },
+ {
+  "id": "f018-math-noktanin-analitigi-5",
+  "h": "11c35beb90b923",
+  "guidance": {
+   "knowledge": [
+    "Orta nokta: [AB] parçasını iki eşit parçaya bölen nokta. Koordinatları uçların ortalamasıdır: M = ((x_A + x_B)/2; (y_A + y_B)/2).",
+    "Bu bağıntı B için çözülünce B = 2M − A olur."
+   ],
+   "strategy": "Bir uç ve orta nokta bilindiği için orta nokta formülünü bilinmeyen uca göre düzenlersin.",
+   "steps": [
+    "Apsis: 2 · 2 − (−4) = 4 + 4 = 8.",
+    "Ordinat: 2 · (−1) − 5 = −2 − 5 = −7.",
+    "B(8; −7)."
+   ],
+   "optionReasons": [
+    "Orta noktadan A’yı çıkarır: M − A = (2 + 4; −1 − 5) = (6; −6); 2 ile çarpmayı unutur.",
+    "Doğru: B = 2M − A = (8; −7).",
+    "A ile M’nin orta noktasını bulur: ((−4 + 2)/2; (5 − 1)/2) = (−1; 2).",
+    "Çıkarmak yerine toplar: A + 2M = (−4 + 4; 5 − 2) = (0; 3).",
+    "Çıkarmayı ters sırada yapar: A − 2M = (−4 − 4; 5 + 2) = (−8; 7)."
+   ],
+   "commonError": "Orta noktayı uçlardan biri sanıp 2 ile çarpmayı unutmak.",
+   "check": "A ile B’nin ortalaması: ((−4 + 8)/2; (5 − 7)/2) = (2; −1) = M."
+  }
+ },
+ {
+  "id": "f018-math-noktanin-analitigi-6",
+  "h": "11323e9a8ee159",
+  "guidance": {
+   "knowledge": [
+    "İçten bölme: P, [AB] üzerinde ve |AP|:|PB| = 2:3 ise P, A’dan B’ye toplam yolun 2/5’ini gitmiştir (2 + 3 = 5 eşit parça).",
+    "Bu durumda P = (3A + 2B)/5 olur; A’nın katsayısı karşı parçanın oranı (3), B’ninki A tarafındaki oranın (2) değeridir."
+   ],
+   "strategy": "P parça üzerinde olduğu için A’dan başlayıp değişimin 2/5’ini eklersin; aynı sonucu ağırlıklı ortalama formülü de verir.",
+   "steps": [
+    "A’dan B’ye değişim: (8 − (−2); −1 − 4) = (10; −5).",
+    "Bunun 2/5’i: (10 · 2/5; −5 · 2/5) = (4; −2).",
+    "P = A + (4; −2) = (−2 + 4; 4 − 2) = (2; 2)."
+   ],
+   "optionReasons": [
+    "Ağırlıkları ters koyar: (2A + 3B)/5 = ((−4 + 24)/5; (8 − 3)/5) = (4; 1); bu nokta B’ye daha yakındır.",
+    "Oranı yok sayıp orta noktayı alır: ((−2 + 8)/2; (4 − 1)/2) = (3; 3/2).",
+    "Değişimi ters yönde ekler: A − (4; −2) = (−6; 6); bu nokta parçanın dışındadır.",
+    "Bu nokta AB doğrusu üzerinde bile değildir: A’dan değişim (8; −6), AB yönü (10; −5) ile orantılı değil.",
+    "Doğru: A + (2/5)(B − A) = (2; 2)."
+   ],
+   "commonError": "Ağırlıklı ortalamada katsayıların yerini değiştirmek.",
+   "check": "AP değişimi (4; −2), PB değişimi (6; −3); ikincisi birincinin 3/2 katı olduğundan |AP|:|PB| = 2:3 sağlanır."
+  }
+ },
+ {
+  "id": "f018-math-noktanin-analitigi-7",
+  "h": "1ed1c0e38dc798",
+  "guidance": {
+   "knowledge": [
+    "Dıştan bölme: P, AB doğrusu üzerinde ama [AB] parçasının dışındadır. |AP|:|PB| = 3:1 ise P, A’dan daha uzak olduğu için B’nin ötesindedir.",
+    "P B’nin ötesinde ve |PB| = x ise |AP| = |AB| + x = 3x olur; buradan |AB| = 2x, yani P = B + (1/2)(B − A) = (3B − A)/2."
+   ],
+   "strategy": "Oran büyük olan taraf A olduğundan P’yi B’nin ötesine yerleştirir, B’ye AB değişiminin yarısını eklersin.",
+   "steps": [
+    "A’dan B’ye değişim: (4 − 0; 3 − 1) = (4; 2).",
+    "Bunun yarısı: (2; 1).",
+    "P = B + (2; 1) = (4 + 2; 3 + 1) = (6; 4)."
+   ],
+   "optionReasons": [
+    "Formülde çıkarma yerine toplama yapar ve 2’ye bölmez: 3B + A = (12; 10).",
+    "Oranı yok sayıp orta noktayı alır: ((0 + 4)/2; (1 + 3)/2) = (2; 2); bu nokta [AB] içindedir.",
+    "Doğru: P = (3B − A)/2 = (6; 4).",
+    "İçten bölme yapar: (A + 3B)/4 = (3; 5/2); P’nin parça dışında olduğunu unutur.",
+    "P’yi A’nın ötesine koyar: (3A − B)/2 = (−2; 0); bu noktada oran 1:3 olur."
+   ],
+   "commonError": "Dıştan bölmede içten bölme formülünü kullanmak ya da P’yi yanlış uçun ötesine koymak.",
+   "check": "AP değişimi (6; 3), PB değişimi (−2; −1); uzunluklar 3√5 ve √5, oran 3:1. P de A ile B ile aynı doğrudadır."
+  }
+ },
+ {
+  "id": "f018-math-noktanin-analitigi-8",
+  "h": "1a39e7492324b5",
+  "guidance": {
+   "knowledge": [
+    "AB doğrusu: A ve B’den geçen sonsuz doğru. [AB] ise yalnız A ile B arasındaki parçadır.",
+    "Bir doğru üzerinde iki noktaya eşit uzaklıkta yalnız bir nokta vardır: o iki noktanın orta noktası."
+   ],
+   "strategy": "P’yi doğru üzerinde (x; 0) diye yazıp eşit uzaklık denklemini çözer, sonra bulunan noktanın parça dışında olma koşulunu denetlersin.",
+   "steps": [
+    "A ve B’nin ordinatı 0 olduğundan AB doğrusu x eksenidir; P(x; 0) yaz.",
+    "|PA| = |PB| → |x + 2| = |x − 2|. Kareleri eşitle: x² + 4x + 4 = x² − 4x + 4 → 8x = 0 → x = 0.",
+    "Tek çözüm (0; 0) noktasıdır ve [AB] içindedir; dışarıda bu koşulu sağlayan sonlu P yoktur."
+   ],
+   "optionReasons": [
+    "Doğru: tek çözüm x = 0’dır ve bu nokta parçanın içindedir; dışarıda uygun P kalmaz.",
+    "Eşit uzaklığı sağlar ama (0; 0) [AB] içindedir; \"parça dışında\" koşulunu atlar.",
+    "B’nin ötesinde bir nokta seçer; |PA| = 6, |PB| = 2 olur, eşit değildir.",
+    "A’nın ötesinde bir nokta seçer; |PA| = 2, |PB| = 6 olur, eşit değildir.",
+    "Doğru üzerinde olmayı yeterli sanır; örneğin (4; 0) için uzaklıklar 6 ve 2’dir."
+   ],
+   "commonError": "Eşit uzaklık koşulunu çözüp \"[AB] dışında\" koşulunu denetlemeyi unutmak.",
+   "check": "Dıştan bölme formülünde oran 1:1 olunca payda 1 − 1 = 0 olur; formül tanımsızlaşır, bu da sonlu bir P olmadığını gösterir."
+  }
+ },
+ {
+  "id": "f018-math-noktanin-analitigi-9",
+  "h": "1f38be076e2f1c",
+  "guidance": {
+   "knowledge": [
+    "Ağırlık merkezi (G): üçgenin kenarortaylarının kesiştiği nokta.",
+    "Koordinatları üç köşenin koordinat ortalamasıdır: G = ((x_A + x_B + x_C)/3; (y_A + y_B + y_C)/3)."
+   ],
+   "strategy": "Üç köşe verildiği için apsisleri ve ordinatları ayrı ayrı toplayıp 3’e bölersin.",
+   "steps": [
+    "Apsisler toplamı: −3 + 6 + 0 = 3; 3 / 3 = 1.",
+    "Ordinatlar toplamı: 1 + 4 + (−2) = 3; 3 / 3 = 1.",
+    "G(1; 1)."
+   ],
+   "optionReasons": [
+    "Toplamları bulur ama 3’e bölmeyi unutur: (3; 3).",
+    "Toplamların işaretini ters alır; apsis ve ordinat toplamları ikisi de +3’tür, ortalama −1 olamaz.",
+    "Ağırlık merkezinin her zaman orijin olduğunu varsayar; bu yalnız koordinat toplamları sıfırsa olur.",
+    "Doğru: ((−3 + 6 + 0)/3; (1 + 4 − 2)/3) = (1; 1).",
+    "Yalnız A ile B’nin orta noktasını alır: ((−3 + 6)/2; (1 + 4)/2) = (3/2; 5/2)."
+   ],
+   "commonError": "Üç köşenin ortalaması yerine iki köşenin ortalamasını, yani bir kenarın orta noktasını almak.",
+   "check": "BC’nin orta noktası (3; 1); A’dan bu noktaya giden kenarortayın A’dan 2/3’ü: (−3 + 2/3 · 6; 1 + 2/3 · 0) = (1; 1)."
+  }
+ },
+ {
+  "id": "f018-math-noktanin-analitigi-10",
+  "h": "05ddafa755a0bd",
+  "guidance": {
+   "knowledge": [
+    "Doğrusal noktalar: aynı doğru üzerinde bulunan noktalar. A(0; 0) ve B(6; 0) için AB doğrusu y = 0, yani x eksenidir.",
+    "İçten ve dıştan bölme formülleri yalnız AB doğrusu üzerindeki noktalar için geçerlidir; düzlemde aynı uzaklık oranını sağlayan sonsuz nokta vardır."
+   ],
+   "strategy": "Önce Q’nun AB doğrusu üzerinde olup olmadığını denetler, sonra oranın tek başına bir noktayı belirleyip belirlemediğine bakarsın.",
+   "steps": [
+    "Uzaklıkları doğrula: |QA| = √(8² + 4²) = √80 = 4√5, |QB| = √(2² + 4²) = √20 = 2√5; oran 2:1 doğrudur.",
+    "AB doğrusu y = 0, Q’nun ordinatı 4’tür; Q doğru üzerinde değildir.",
+    "Bölme formülleri doğrusal olma koşulu ister; oran tek başına Q’yu belirlemez."
+   ],
+   "optionReasons": [
+    "Orta noktada oran 1:1 olur; burada 2:1’dir ve Q zaten (3; 0) değildir.",
+    "Doğru: Q doğru dışında olduğundan oran bilgisi tek başına bölme noktası koşulu değildir.",
+    "Hesabı denetlemeden oranı yanlış sanır; 4√5:2√5 = 2:1’dir.",
+    "Uzaklığı tam sayıya bağlar; uzaklık oranı her koordinatta tanımlıdır, kökler de oranlanır.",
+    "Orijini özel durum sanır; uzaklık formülü orijin için de geçerlidir."
+   ],
+   "commonError": "Uzaklık oranı tutunca noktanın doğru üzerinde olduğunu varsaymak.",
+   "check": "Karşı örnek: (8; −4) noktası da A’ya 4√5, B’ye 2√5 uzaktadır; aynı oranı sağlayan farklı noktalar olduğuna göre oran tek başına bir nokta seçmez."
+  }
+ }
+]

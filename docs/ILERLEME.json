@@ -9,7 +9,7 @@
    "figureLessons": 4,
    "figures": 15,
    "questions": 380,
-   "stepped": 170,
+   "stepped": 380,
    "sheetsDone": 4,
    "sheets": 33,
    "open": 30
@@ -37,7 +37,7 @@
    "figureLessons": 19,
    "figures": 174,
    "questions": 217,
-   "stepped": 207,
+   "stepped": 217,
    "sheetsDone": 1,
    "sheets": 32,
    "open": 0
@@ -65,7 +65,7 @@
    "figureLessons": 41,
    "figures": 179,
    "questions": 535,
-   "stepped": 365,
+   "stepped": 535,
    "sheetsDone": 38,
    "sheets": 56,
    "open": 16
@@ -79,7 +79,7 @@
    "figureLessons": 12,
    "figures": 37,
    "questions": 515,
-   "stepped": 385,
+   "stepped": 515,
    "sheetsDone": 7,
    "sheets": 36,
    "open": 33
@@ -222,7 +222,7 @@
   "figureLessons": 200,
   "figures": 830,
   "questions": 6465,
-  "stepped": 4405,
+  "stepped": 4925,
   "sheetsDone": 109,
   "sheets": 517,
   "open": 340,

@@ -383,7 +383,7 @@ export const mathFoundations: FoundationLesson[] = [
         ],
         terms: [["Çarpan", "Çarpılan sayılardan her biri (3 × 4’te 3 ve 4)."], ["Bölüm", "Bölmenin sonucu (12 ÷ 4 = 3’te 3)."]],
         figure: groups,
-        predict: { question: "5 × 0 kaçtır? Önce tahmin et.", answer: "0: hiç nokta olmayan 5 grup yine hiç nokta demektir." },
+        predict: { question: "5 × 0 kaçtır?", answer: "0: hiç nokta olmayan 5 grup yine hiç nokta demektir." },
       },
       {
         title: "Uzun işlemde sıra",

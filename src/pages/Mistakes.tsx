@@ -84,7 +84,6 @@ export function Mistakes({
       {confirmationDialog}
       <header className="page-heading">
         <div>
-          <p className="eyebrow">{t("mistakesTitle")}</p>
           <h1>{t("mistakes")}</h1>
         </div>
       </header>

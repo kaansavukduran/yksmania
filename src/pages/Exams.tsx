@@ -108,7 +108,6 @@ export function Exams({
             Bilgini süre içinde uygula; sonra her sorunun mantığını incele.
           </p>
         </div>
-        <Timer size={32} aria-hidden="true" />
       </header>
       {state.examDraft && (
         <section className="panel exam-resume" aria-label="Devam eden deneme">
