@@ -15,7 +15,8 @@ const KEEP = new Set([
 ]);
 const wordDigit = new RegExp(`(^|[\\s(“"«])([${L}]{3,})(?=\\d)`, "g");
 const suffixDigit = new RegExp(`(’)([${L}]{2,})(?=\\d)`, "g");
-const commaWord = new RegExp(`(?<![A-Za-z0-9ÇĞİÖŞÜ${L}])([A-ZÇĞİÖŞÜ]?[${L}]{2,})([,;])(?=[${L}]{3,})`, "g");
+// The following word is captured so a subscript such as “fs,max” is not split.
+const commaWord = new RegExp(`(?<![A-Za-z0-9ÇĞİÖŞÜ${L}])([A-ZÇĞİÖŞÜ]?[${L}]{2,})([,;])(?=([${L}]{3,}))`, "g");
 const ellipsis = /(?<![.…])\.\.\.(?!\.)/g;
 // “fark−60°”, “nemi%100”, “için°C”: a word glued to a signed number, a percent or a degree unit.
 // Variables such as “ax−1” are mathematics, not prose: only real words qualify
@@ -44,7 +45,9 @@ export function typeset(original: string): string {
     .map((part) => (/\s/.test(part) ? part : fixToken(part)))
     .join("");
   return spaced
-    .replace(commaWord, (_m, word: string, mark: string) => `${word}${mark} `)
+    .replace(commaWord, (m, word: string, mark: string, next: string) =>
+      word.length <= 2 && KEEP.has(next) ? m : `${word}${mark} `,
+    )
     .replace(wordSign, (m, word: string) => (KEEP.has(word) || (word.length < 3 && !SHORT_WORDS.has(word)) ? m : `${word} `))
     .replace(semicolonDigit, "; ")
     .replace(sentenceDigit, "$1. ")

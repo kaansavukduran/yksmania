@@ -1,0 +1,582 @@
+[
+ {
+  "from": "49 için asallık denemesinde 2,3,5 elenmiştir. Hangi asal aday mutlaka denenmelidir?",
+  "to": "49 için asallık denemesinde 2, 3, 5 elenmiştir. Hangi asal aday mutlaka denenmelidir?"
+ },
+ {
+  "from": "7²=49 olduğu için 7 adaylara dahildir. 49=7·7 tam bölünür. Bu nedenle 49 bileşiktir. Denetim: 7, sayının 1 ve49 dışındaki pozitif bölenidir.",
+  "to": "7²=49 olduğu için 7 adaylara dahildir. 49=7·7 tam bölünür. Bu nedenle 49 bileşiktir. Denetim: 7, sayının 1 ve 49 dışındaki pozitif bölenidir."
+ },
+ {
+  "from": "2,3,5,7",
+  "to": "2, 3, 5, 7"
+ },
+ {
+  "from": "2,3,5",
+  "to": "2, 3, 5"
+ },
+ {
+  "from": "2,3,5,7,11",
+  "to": "2, 3, 5, 7, 11"
+ },
+ {
+  "from": "3,5,7",
+  "to": "3, 5, 7"
+ },
+ {
+  "from": "2,3,7",
+  "to": "2, 3, 7"
+ },
+ {
+  "from": "7²=49≤97;11²=121>97. Aradaki gereken asal adaylar 2,3,5,7’dir. 97 bu dördüne bölünmez; asaldır. Denetim: 11’den sonraki asalın karesi de 97’den büyüktür.",
+  "to": "7²=49≤97;11²=121>97. Aradaki gereken asal adaylar 2, 3, 5, 7’dir. 97 bu dördüne bölünmez; asaldır. Denetim: 11’den sonraki asalın karesi de 97’den büyüktür."
+ },
+ {
+  "from": "Farklı tabanlar 2,3,7’dir. İstenen tür sayısı değil, türlerin toplamıdır. 2+3+7=12 bulunur. Denetim: 4·3·7=84 ayrılışı doğru.",
+  "to": "Farklı tabanlar 2, 3, 7’dir. İstenen tür sayısı değil, türlerin toplamıdır. 2+3+7=12 bulunur. Denetim: 4·3·7=84 ayrılışı doğru."
+ },
+ {
+  "from": "Üsler 1 ve 2 olmalıdır. En küçük tabanlar 2,3 için adaylar 12 ve 18. 12 daha küçüktür ve bölenleri 1,2,3,4,6,12. Denetim: p⁵ biçimi iki asal tür koşulunu sağlamaz.",
+  "to": "Üsler 1 ve 2 olmalıdır. En küçük tabanlar 2, 3 için adaylar 12 ve 18. 12 daha küçüktür ve bölenleri 1, 2, 3, 4, 6, 12. Denetim: p⁵ biçimi iki asal tür koşulunu sağlamaz."
+ },
+ {
+  "from": "Asaldır;2,3,5,7 bölmez.",
+  "to": "Asaldır;2, 3, 5, 7 bölmez."
+ },
+ {
+  "from": "Bir asal sayı 2. Diğeri 31−2=29, asal. Çarpım 2·29=58. Denetim: 29 için 2,3,5 adayları bölmez;7²>29.",
+  "to": "Bir asal sayı 2. Diğeri 31−2=29, asal. Çarpım 2·29=58. Denetim: 29 için 2, 3, 5 adayları bölmez;7²>29."
+ },
+ {
+  "from": "Tabanlar 2,3,5 üç farklı türdür. Bölen sayısı (2+1)(2+1)(1+1). 3·3·2=18 bölen bulunur. Denetim: 4·9·5=180 ayrılışı doğru.",
+  "to": "Tabanlar 2, 3, 5 üç farklı türdür. Bölen sayısı (2+1)(2+1)(1+1). 3·3·2=18 bölen bulunur. Denetim: 4·9·5=180 ayrılışı doğru."
+ },
+ {
+  "from": "4,9,25 sayıları için hangisi doğrudur?",
+  "to": "4, 9, 25 sayıları için hangisi doğrudur?"
+ },
+ {
+  "from": "Üç asal tür 2,3,5 birbirinden farklıdır. Her ikilinin türleri ayrı; EBOB 1. Her biri kare bileşik sayıdır. Denetim: EBOB(4,9)=EBOB(4,25)=EBOB(9,25)=1.",
+  "to": "Üç asal tür 2, 3, 5 birbirinden farklıdır. Her ikilinin türleri ayrı; EBOB 1. Her biri kare bileşik sayıdır. Denetim: EBOB(4,9)=EBOB(4,25)=EBOB(9,25)=1."
+ },
+ {
+  "from": "4=2²,9=3²,25=5² yaz.",
+  "to": "4=2², 9=3², 25=5² yaz."
+ },
+ {
+  "from": "2,3,5,7,11,13",
+  "to": "2, 3, 5, 7, 11, 13"
+ },
+ {
+  "from": "3,5,7,11",
+  "to": "3, 5, 7, 11"
+ },
+ {
+  "from": "2,3,7,11",
+  "to": "2, 3, 7, 11"
+ },
+ {
+  "from": "11²=121≤157 ve 13²=169>157. Gerekli liste 2,3,5,7,11. 157=7·22+3=11·14+3; diğerleri de bölmez ve asal. Denetim: 157 tek, rakam toplamı 13, son rakam 7.",
+  "to": "11²=121≤157 ve 13²=169>157. Gerekli liste 2, 3, 5, 7, 11. 157=7·22+3=11·14+3; diğerleri de bölmez ve asal. Denetim: 157 tek, rakam toplamı 13, son rakam 7."
+ },
+ {
+  "from": "n pozitif tam sayı;2 n+1 ve n+4 asal olacak. Yalnız n=1,2,3 adaylarından hangileri uygundur?",
+  "to": "n pozitif tam sayı;2n+1 ve n+4 asal olacak. Yalnız n=1, 2, 3 adaylarından hangileri uygundur?"
+ },
+ {
+  "from": "1,2,3",
+  "to": "1, 2, 3"
+ },
+ {
+  "from": "47 sayısı için gerekli asal adayları 2,3,5 denenmiş ve hiçbiri tam bölmemiştir. Doğru sonuç hangisidir?",
+  "to": "47 sayısı için gerekli asal adayları 2, 3, 5 denenmiş ve hiçbiri tam bölmemiştir. Doğru sonuç hangisidir?"
+ },
+ {
+  "from": "5²=25,7²=49. Gerekli adaylar 2,3,5 olup tamamı elenmiştir. 47 asaldır; gerekçe yalnız tekliği değildir. Denetim: 47’nin 1 ve kendisi dışında pozitif böleni yoktur.",
+  "to": "5²=25, 7²=49. Gerekli adaylar 2, 3, 5 olup tamamı elenmiştir. 47 asaldır; gerekçe yalnız tekliği değildir. Denetim: 47’nin 1 ve kendisi dışında pozitif böleni yoktur."
+ },
+ {
+  "from": "Uygun pozitif grup boyları 1 ve 31. 31 sayısı 1’den büyük ve iki farklı pozitif bölenlidir. Tanıma göre asaldır. Denetim: 31 için 2,3,5 asal adayları da tam bölmez.",
+  "to": "Uygun pozitif grup boyları 1 ve 31. 31 sayısı 1’den büyük ve iki farklı pozitif bölenlidir. Tanıma göre asaldır. Denetim: 31 için 2, 3, 5 asal adayları da tam bölmez."
+ },
+ {
+  "from": "6,3,2",
+  "to": "6, 3, 2"
+ },
+ {
+  "from": "2,2,4",
+  "to": "2, 2, 4"
+ },
+ {
+  "from": "2,3,6",
+  "to": "2, 3, 6"
+ },
+ {
+  "from": "2,6,3",
+  "to": "2, 6, 3"
+ },
+ {
+  "from": "3,2,6",
+  "to": "3, 2, 6"
+ },
+ {
+  "from": "Asal tabanlar 2 ve 3: iki tür. Üsler 1+2=3 tekrar. Bölen sayısı (1+1)(2+1)=6. Denetim: Bölen listesi 1,2,3,6,9,18.",
+  "to": "Asal tabanlar 2 ve 3: iki tür. Üsler 1+2=3 tekrar. Bölen sayısı (1+1)(2+1)=6. Denetim: Bölen listesi 1, 2, 3, 6, 9, 18."
+ },
+ {
+  "from": "6,10,15 sayıları için hangisi doğrudur?",
+  "to": "6, 10, 15 sayıları için hangisi doğrudur?"
+ },
+ {
+  "from": "p²’nin asal çarpan ayrılışında tek asal taban p ve üs 2’dir. Üsler 0,1,2 seçilir. Bölenler 1, p, p²; üç farklı değer. Denetim: p=2 için 4 sayısının bölenleri 1,2,4.",
+  "to": "p²’nin asal çarpan ayrılışında tek asal taban p ve üs 2’dir. Üsler 0, 1, 2 seçilir. Bölenler 1, p, p²; üç farklı değer. Denetim: p=2 için 4 sayısının bölenleri 1, 2, 4."
+ },
+ {
+  "from": "Üç taraftan 2 çıkarınca −7<−3x≤9 olur. −3’e bölünce 7/3>x≥−3, küçükten büyüğe −3≤x<7/3 yazılır. Tam sayılar −3,−2,−1,0,1,2 olmak üzere altıdır. Sol −3 dahildir; sağdaki 7/3 açık uçtur ve 3 aralıkta değildir.",
+  "to": "Üç taraftan 2 çıkarınca −7<−3x≤9 olur. −3’e bölünce 7/3>x≥−3, küçükten büyüğe −3≤x<7/3 yazılır. Tam sayılar −3, −2, −1, 0, 1, 2 olmak üzere altıdır. Sol −3 dahildir; sağdaki 7/3 açık uçtur ve 3 aralıkta değildir."
+ },
+ {
+  "from": "70800 yazımını 7,0,8,0,0 diye beş konuma ayır. Farklı işaret kümesi{0,7,8} üç elemanlıdır; tekrarları yeniden sayma. Rakamları topla:7+0+8+0+0=15. Üç niceliği istenen sıraya koy.",
+  "to": "70800 yazımını 7, 0, 8, 0, 0 diye beş konuma ayır. Farklı işaret kümesi {0,7,8} üç elemanlıdır; tekrarları yeniden sayma. Rakamları topla: 7+0+8+0+0=15. Üç niceliği istenen sıraya koy."
+ },
+ {
+  "from": "70800 yazımını 7,0,8,0,0 diye beş konuma ayır.",
+  "to": "70800 yazımını 7, 0, 8, 0, 0 diye beş konuma ayır."
+ },
+ {
+  "from": "a,b,c birbirinden farklı ve sıfırdan farklı rakamlardır. [abc]=100 a+10 b+c, [cba]=100 c+10 b+a olsun. [abc]−[cba]=495 ve a+b+c=15 koşullarını sağlayan kaç farklı [abc] vardır?",
+  "to": "a, b, c birbirinden farklı ve sıfırdan farklı rakamlardır. [abc]=100a+10b+c, [cba]=100c+10b+a olsun. [abc]−[cba]=495 ve a+b+c=15 koşullarını sağlayan kaç farklı [abc] vardır?"
+ },
+ {
+  "from": "99(a−c)=495’ten a=c+5 bulunur. Toplamdan b=10−2 c; a≤9 ve c≥1 birlikte c=1,2,3,4 bırakır. Adaylar 681,762,843,924’tür; her üçlü farklı, sıfırdan farklı rakamlıdır. Toplam 4.",
+  "to": "99(a−c)=495’ten a=c+5 bulunur. Toplamdan b=10−2c; a≤9 ve c≥1 birlikte c=1, 2, 3, 4 bırakır. Adaylar 681, 762, 843, 924’tür; her üçlü farklı, sıfırdan farklı rakamlıdır. Toplam 4."
+ },
+ {
+  "from": "a,b sıfırdan farklı rakamlardır. [a 4]=10 a+4, [b 8]=10 b+8 iki basamaklı sayılarını tanımlasın. [a 4]+[a 4]=[b 8] eşitliği için kaç farklı a değeri mümkündür?",
+  "to": "a, b sıfırdan farklı rakamlardır. [a4]=10a+4, [b8]=10b+8 iki basamaklı sayılarını tanımlasın. [a4]+[a4]=[b8] eşitliği için kaç farklı a değeri mümkündür?"
+ },
+ {
+  "from": "Eşitliği 20 a+8=10 b+8 olarak aç. b=2 a çıkar; b≤9 olduğundan a≤4. a ilk rakam olduğundan a≥1. a=1,2,3,4 için b=2,4,6,8 elde edilir; hepsi iki basamaklı yazımlar üretir.",
+  "to": "Eşitliği 20a+8=10b+8 olarak aç. b=2a çıkar; b≤9 olduğundan a≤4. a ilk rakam olduğundan a≥1. a=1, 2, 3, 4 için b=2, 4, 6, 8 elde edilir; hepsi iki basamaklı yazımlar üretir."
+ },
+ {
+  "from": "Eşitliği 20 a+8=10 b+8 olarak aç.",
+  "to": "Eşitliği 20a+8=10b+8 olarak aç."
+ },
+ {
+  "from": "0,1,5,8,9 rakamlarından dördü seçilerek, rakam tekrarı olmadan dört basamaklı ve 5’e tam bölünen sayılar yazılıyor. Kaç sayı yazılabilir?",
+  "to": "0, 1, 5, 8, 9 rakamlarından dördü seçilerek, rakam tekrarı olmadan dört basamaklı ve 5’e tam bölünen sayılar yazılıyor. Kaç sayı yazılabilir?"
+ },
+ {
+  "from": "5’e bölünme son rakamı 0 veya 5 yapar; iki durum ayrıdır. Son 0’da ilk üç konum 4×3×2=24; son 5’te ilk konum 1,8,9’dan 3, diğerleri 3×2 olduğundan 18 seçenek vardır. Toplam 24+18=42.",
+  "to": "5’e bölünme son rakamı 0 veya 5 yapar; iki durum ayrıdır. Son 0’da ilk üç konum 4×3×2=24; son 5’te ilk konum 1, 8, 9’dan 3, diğerleri 3×2 olduğundan 18 seçenek vardır. Toplam 24+18=42."
+ },
+ {
+  "from": "0,2,4,6,8 rakamlarının her biri tam bir kez kullanılarak kaç beş basamaklı doğal sayı oluşturulur?",
+  "to": "0, 2, 4, 6, 8 rakamlarının her biri tam bir kez kullanılarak kaç beş basamaklı doğal sayı oluşturulur?"
+ },
+ {
+  "from": "Başa 0 gelemez;2,4,6,8 arasından 4 seçim vardır. Seçilen baş rakamdan sonra kalan dört farklı rakam 4×3×2×1=24 biçimde sıralanır. Toplam 4×24=96’dır; alternatif 5!−4! hesabı da 96 verir.",
+  "to": "Başa 0 gelemez;2, 4, 6, 8 arasından 4 seçim vardır. Seçilen baş rakamdan sonra kalan dört farklı rakam 4×3×2×1=24 biçimde sıralanır. Toplam 4×24=96’dır; alternatif 5!−4! hesabı da 96 verir."
+ },
+ {
+  "from": "Başa 0 gelemez;2,4,6,8 arasından 4 seçim vardır.",
+  "to": "Başa 0 gelemez;2, 4, 6, 8 arasından 4 seçim vardır."
+ },
+ {
+  "from": "2,5,8 rakamlarının her biri bir kez kullanılarak yazılabilecek bütün üç basamaklı sayıların toplamı kaçtır?",
+  "to": "2, 5, 8 rakamlarının her biri bir kez kullanılarak yazılabilecek bütün üç basamaklı sayıların toplamı kaçtır?"
+ },
+ {
+  "from": "a bir rakamdır. 46 a=460+a üç basamaklı sayısı hem 3’e hem 4’e tam bölünüyor. a kaçtır?",
+  "to": "a bir rakamdır. 46a=460+a üç basamaklı sayısı hem 3’e hem 4’e tam bölünüyor. a kaçtır?"
+ },
+ {
+  "from": "Son iki hane 60+a,4’e bölünmeli: a=0,4,8. Rakam toplamı 10+a,3’ün katı olmalı: a=2,5,8. İki aday kümesinin ortak elemanı 8’dir; sayı 468 olur.",
+  "to": "Son iki hane 60+a, 4’e bölünmeli: a=0, 4, 8. Rakam toplamı 10+a, 3’ün katı olmalı: a=2, 5, 8. İki aday kümesinin ortak elemanı 8’dir; sayı 468 olur."
+ },
+ {
+  "from": "Son iki hane 60+a,4’e bölünmeli: a=0,4,8.",
+  "to": "Son iki hane 60+a, 4’e bölünmeli: a=0, 4, 8."
+ },
+ {
+  "from": "a bir rakamdır. 139 a=1390+a sayısını 25’e tam bölünebilir yapan kaç a değeri vardır?",
+  "to": "a bir rakamdır. 139a=1390+a sayısını 25’e tam bölünebilir yapan kaç a değeri vardır?"
+ },
+ {
+  "from": "25’e bölünebilmede son iki hane 00,25,50 veya 75 olmalıdır. 139 a’nın son iki hanesi 9 a, yani 90–99 aralığındadır. Bu iki küme kesişmez; uygun a sayısı 0’dır.",
+  "to": "25’e bölünebilmede son iki hane 00, 25, 50 veya 75 olmalıdır. 139a’nın son iki hanesi 9a, yani 90–99 aralığındadır. Bu iki küme kesişmez; uygun a sayısı 0’dır."
+ },
+ {
+  "from": "25’e bölünebilmede son iki hane 00,25,50 veya 75 olmalıdır.",
+  "to": "25’e bölünebilmede son iki hane 00, 25, 50 veya 75 olmalıdır."
+ },
+ {
+  "from": "5¹,5²,… için 7’ye kalanları ardışık hesapla:5,4,6,2,3,1. 5⁶≡1 ve 83=6×13+5 olduğundan 5⁸³≡(5⁶)¹³·5⁵ olur. Geriye dönemin 5. terimi 3 kalır.",
+  "to": "5¹, 5², … için 7’ye kalanları ardışık hesapla: 5, 4, 6, 2, 3, 1. 5⁶≡1 ve 83=6×13+5 olduğundan 5⁸³≡(5⁶)¹³·5⁵ olur. Geriye dönemin 5. terimi 3 kalır."
+ },
+ {
+  "from": "5¹,5²,… için 7’ye kalanları ardışık hesapla:5,4,6,2,3,1.",
+  "to": "5¹, 5², … için 7’ye kalanları ardışık hesapla: 5, 4, 6, 2, 3, 1."
+ },
+ {
+  "from": "x tam sayısının 6’ya bölümünden kalanı 0–5 arasındadır. 2 x’in 6’ya bölümünden kalan 4 ise x’in 6’ya kalanı hangi değerler olabilir?",
+  "to": "x tam sayısının 6’ya bölümünden kalanı 0–5 arasındadır. 2x’in 6’ya bölümünden kalan 4 ise x’in 6’ya kalanı hangi değerler olabilir?"
+ },
+ {
+  "from": "x’in kalanına r deyip r=0,1,2,3,4,5 adaylarını düşün. 2 r’nin 6’ya kalanları sırasıyla 0,2,4,0,2,4’tür. 4 veren r değerleri 2 ve 5’tir; ikisini de koru.",
+  "to": "x’in kalanına r deyip r=0, 1, 2, 3, 4, 5 adaylarını düşün. 2r’nin 6’ya kalanları sırasıyla 0, 2, 4, 0, 2, 4’tür. 4 veren r değerleri 2 ve 5’tir; ikisini de koru."
+ },
+ {
+  "from": "x’in kalanına r deyip r=0,1,2,3,4,5 adaylarını düşün.",
+  "to": "x’in kalanına r deyip r=0, 1, 2, 3, 4, 5 adaylarını düşün."
+ },
+ {
+  "from": "50≤N≤100 aralığındaki doğal sayılardan 4’e bölündüğünde 3,6’ya bölündüğünde 5 kalanını veren kaç sayı vardır?",
+  "to": "50≤N≤100 aralığındaki doğal sayılardan 4’e bölündüğünde 3, 6’ya bölündüğünde 5 kalanını veren kaç sayı vardır?"
+ },
+ {
+  "from": "4’e kalanı 3 olan adaylar arasında 6’ya kalanı 5 veren ilk sınıf 11’dir. 12 eklemek iki kalanı da korur;50–100 içinde 59,71,83,95 elde edilir. Önceki 47 alt, sonraki 107 üst sınırın dışındadır; toplam 4 aday kalır.",
+  "to": "4’e kalanı 3 olan adaylar arasında 6’ya kalanı 5 veren ilk sınıf 11’dir. 12 eklemek iki kalanı da korur;50–100 içinde 59, 71, 83, 95 elde edilir. Önceki 47 alt, sonraki 107 üst sınırın dışındadır; toplam 4 aday kalır."
+ },
+ {
+  "from": "84=2²×3×7 ve 132=2²×3×11 olduğundan EBOB 12’dir. Ortak bölenler 12’nin bölenleriyle aynıdır.2’nin üssü 0,1,2;3’ün üssü 0,1 seçilir. 3×2=6 bölen bulunur:1,2,3,4,6,12.",
+  "to": "84=2²×3×7 ve 132=2²×3×11 olduğundan EBOB 12’dir. Ortak bölenler 12’nin bölenleriyle aynıdır.2’nin üssü 0, 1, 2; 3’ün üssü 0, 1 seçilir. 3×2=6 bölen bulunur: 1, 2, 3, 4, 6, 12."
+ },
+ {
+  "from": "a=4 x,b=4 y yaz:xy=240/4=60 ve EBOB(x,y)=1 gerekir. x≤y çarpan çiftleri 1,60;2,30;3,20;4,15;5,12;6,10’dur. Ortak böleni 2 olan iki çift elenir; kalan dört çift ölçeklenince dört farklı(a,b) verir.",
+  "to": "a=4x, b=4y yaz: xy=240/4=60 ve EBOB(x,y)=1 gerekir. x≤y çarpan çiftleri 1,60;2,30;3,20;4,15;5,12;6,10’dur. Ortak böleni 2 olan iki çift elenir; kalan dört çift ölçeklenince dört farklı (a,b) verir."
+ },
+ {
+  "from": "a=4 x,b=4 y yaz:xy=240/4=60 ve EBOB(x,y)=1 gerekir.",
+  "to": "a=4x, b=4y yaz: xy=240/4=60 ve EBOB(x,y)=1 gerekir."
+ },
+ {
+  "from": "30,42,70 sayıları için EBOB(30,42,70)·EKOK(30,42,70) çarpımı kaçtır?",
+  "to": "30, 42, 70 sayıları için EBOB(30,42,70)·EKOK(30,42,70) çarpımı kaçtır?"
+ },
+ {
+  "from": "30=2×3×5,42=2×3×7,70=2×5×7 yaz. Üçünde ortak asal yalnız 2; bütün gerekli asal kuvvetler 2×3×5×7=210’dur. İstenen 2×210=420’dir.",
+  "to": "30=2×3×5, 42=2×3×7, 70=2×5×7 yaz. Üçünde ortak asal yalnız 2; bütün gerekli asal kuvvetler 2×3×5×7=210’dur. İstenen 2×210=420’dir."
+ },
+ {
+  "from": "30=2×3×5,42=2×3×7,70=2×5×7 yaz.",
+  "to": "30=2×3×5, 42=2×3×7, 70=2×5×7 yaz."
+ },
+ {
+  "from": "42,70,98’in ortak en büyük böleni 14’tür. Her eksendeki küp adetleri 42/14=3,70/14=5,98/14=7 olur. Toplam 3×5×7=105 küp oluşur.",
+  "to": "42, 70, 98’in ortak en büyük böleni 14’tür. Her eksendeki küp adetleri 42/14=3, 70/14=5, 98/14=7 olur. Toplam 3×5×7=105 küp oluşur."
+ },
+ {
+  "from": "42,70,98’in ortak en büyük böleni 14’tür.",
+  "to": "42, 70, 98’in ortak en büyük böleni 14’tür."
+ },
+ {
+  "from": "İki olay 0. dakikada birlikte başlayıp 4 ve 10 dakikada bir tekrarlanıyor.0 hariç,100. dakika dahil(0,100] aralığında kaç ortak olay gerçekleşir?",
+  "to": "İki olay 0. dakikada birlikte başlayıp 4 ve 10 dakikada bir tekrarlanıyor.0 hariç, 100. dakika dahil (0,100] aralığında kaç ortak olay gerçekleşir?"
+ },
+ {
+  "from": "EKOK(4,10)=20 dakikadır. 100’e kadar pozitif 20 katlarını yaz:20,40,60,80,100. Sol uç 0 hariç,sağ uç 100 dahil olduğu için beş olay kalır.",
+  "to": "EKOK(4,10)=20 dakikadır. 100’e kadar pozitif 20 katlarını yaz: 20, 40, 60, 80, 100. Sol uç 0 hariç,sağ uç 100 dahil olduğu için beş olay kalır."
+ },
+ {
+  "from": "Ortak an 8 k=6+12ℓ eşitliğini sağlamalıdır. Sol taraf 4’ün katı,sağ taraf 4’e göre 2 kalanlıdır; eşitlik mümkün değildir. Eşdeğer kontrol:EBOB(8,12)=4,başlangıç farkı 6’yı bölmez.",
+  "to": "Ortak an 8k=6+12ℓ eşitliğini sağlamalıdır. Sol taraf 4’ün katı,sağ taraf 4’e göre 2 kalanlıdır; eşitlik mümkün değildir. Eşdeğer kontrol: EBOB(8,12)=4, başlangıç farkı 6’yı bölmez."
+ },
+ {
+  "from": "Ortak an 8 k=6+12ℓ eşitliğini sağlamalıdır.",
+  "to": "Ortak an 8k=6+12ℓ eşitliğini sağlamalıdır."
+ },
+ {
+  "from": "A anlarını 2,9,16,23,30,37,44,51,58,65 diye sırala. B anları 5,15,25,35,45,55,65,… biçimindedir. İlk kesişim 65’tir; bundan sonra ortak anlar 70 dakika arayla tekrar eder.",
+  "to": "A anlarını 2, 9, 16, 23, 30, 37, 44, 51, 58, 65 diye sırala. B anları 5, 15, 25, 35, 45, 55, 65, … biçimindedir. İlk kesişim 65’tir; bundan sonra ortak anlar 70 dakika arayla tekrar eder."
+ },
+ {
+  "from": "A anlarını 2,9,16,23,30,37,44,51,58,65 diye sırala.",
+  "to": "A anlarını 2, 9, 16, 23, 30, 37, 44, 51, 58, 65 diye sırala."
+ },
+ {
+  "from": "N−4,6 ve 10’un ortak katı;EKOK 30 olduğundan N=30 k+4. 30 k<246 eşitsizliğinde en büyük tam sayı k=8’dir. N=244;sonraki 274 sınırı aşar.",
+  "to": "N−4, 6 ve 10’un ortak katı; EKOK 30 olduğundan N=30k+4. 30k<246 eşitsizliğinde en büyük tam sayı k=8’dir. N=244; sonraki 274 sınırı aşar."
+ },
+ {
+  "from": "N−4,6 ve 10’un ortak katı;EKOK 30 olduğundan N=30 k+4.",
+  "to": "N−4, 6 ve 10’un ortak katı; EKOK 30 olduğundan N=30k+4."
+ },
+ {
+  "from": "9,1,4,4,7,8 gözlemlerinin ortancası kaçtır?",
+  "to": "9, 1, 4, 4, 7, 8 gözlemlerinin ortancası kaçtır?"
+ },
+ {
+  "from": "Sıralı liste 1,4,4,7,8,9 olur. Altı gözlemin üçüncü değeri 4, dördüncüsü 7; ortanca (4+7)/2=5,5’tir. Ortanca listede bulunan bir değer olmak zorunda değildir.",
+  "to": "Sıralı liste 1, 4, 4, 7, 8, 9 olur. Altı gözlemin üçüncü değeri 4, dördüncüsü 7; ortanca (4+7)/2=5,5’tir. Ortanca listede bulunan bir değer olmak zorunda değildir."
+ },
+ {
+  "from": "Değerleri 1,3,7 olan bir frekans tablosunda sıklıklar sırasıyla 2,3,1’dir. Aritmetik ortalama kaçtır?",
+  "to": "Değerleri 1, 3, 7 olan bir frekans tablosunda sıklıklar sırasıyla 2, 3, 1’dir. Aritmetik ortalama kaçtır?"
+ },
+ {
+  "from": "Bu soruda OGM okul tanımı kullanılıyor: en az iki farklı değerin tümü eş sıklıktaysa ayırt edici mod yok sayılır. 2,2,5,5 grubunun modu için doğru ifade?",
+  "to": "Bu soruda şu tanım kullanılıyor: en az iki farklı değerin tümü eş sıklıktaysa ayırt edici mod yok sayılır. 2, 2, 5, 5 grubunun modu için doğru ifade?"
+ },
+ {
+  "from": "Bu okul tanımında mod yoktur.",
+  "to": "Bu tanımda mod yoktur."
+ },
+ {
+  "from": "2 ve 5’in frekansı ikişerdir; farklı değerlerin hepsi eş sıklıktadır. Soruda açıkça belirtilen okul tanımı bu durumda ayırt edici mod vermez. Ortanca 3,5 olsa da bu, mod hesabı değildir.",
+  "to": "2 ve 5’in frekansı ikişerdir; farklı değerlerin hepsi eş sıklıktadır. Soruda açıkça belirtilen tanım bu durumda ayırt edici mod vermez. Ortanca 3,5 olsa da bu, mod hesabı değildir."
+ },
+ {
+  "from": "1,3,3,5 grubunda yalnız son gözlem 13 olarak düzeltiliyor; adet değişmiyor. Ortalama ve ortanca için doğru sonuç?",
+  "to": "1, 3, 3, 5 grubunda yalnız son gözlem 13 olarak düzeltiliyor; adet değişmiyor. Ortalama ve ortanca için doğru sonuç?"
+ },
+ {
+  "from": "Eski toplam 12, yeni toplam 20; dört gözlemde ortalama 3’ten 5’e çıkar. 1,3,3,13 sıralamasının ortaları yine 3 ve 3 olduğundan ortanca 3’tür. Bu örnek ortancanın her koşulda sabit kalacağını kanıtlamaz.",
+  "to": "Eski toplam 12, yeni toplam 20; dört gözlemde ortalama 3’ten 5’e çıkar. 1, 3, 3, 13 sıralamasının ortaları yine 3 ve 3 olduğundan ortanca 3’tür. Bu örnek ortancanın her koşulda sabit kalacağını kanıtlamaz."
+ },
+ {
+  "from": "2,4,6 gözlemleri için örneklem standart sapması s=√[Σ(x−ortalama)²/(n−1)] olarak tanımlanıyor. s kaçtır?",
+  "to": "2, 4, 6 gözlemleri için örneklem standart sapması s=√[Σ(x−ortalama)²/(n−1)] olarak tanımlanıyor. s kaçtır?"
+ },
+ {
+  "from": "Farklar −2,0,2 ve kareler toplamı 8’dir. Verilen örneklem tanımında n−1=2, varyans 8/2=4 ve s=2 olur. √(8/3), başka bir tanım olan anakütle sapmasıdır; bu kartın formülüne uymaz.",
+  "to": "Farklar −2, 0, 2 ve kareler toplamı 8’dir. Verilen örneklem tanımında n−1=2, varyans 8/2=4 ve s=2 olur. √(8/3), başka bir tanım olan anakütle sapmasıdır; verilen formüle uymaz."
+ },
+ {
+  "from": "2,4,6 grubunun ortalaması 4 ve n−1 tanımındaki örneklem sapması 2’dir. Her gözlem y=−3x+5 ile dönüştürülüyor. Yeni ortalama ve aynı tanımdaki sapma?",
+  "to": "2, 4, 6 grubunun ortalaması 4 ve n−1 tanımındaki örneklem sapması 2’dir. Her gözlem y=−3x+5 ile dönüştürülüyor. Yeni ortalama ve aynı tanımdaki sapma?"
+ },
+ {
+  "from": "Yeni liste −1,−7,−13; ortalama −7’dir. Sapma |−3|·2=6 olur; negatif çarpan sıralamayı ters çevirse de standart sapmayı negatif yapmaz. Sabit 5 eklenmesi yayılımı değiştirmez.",
+  "to": "Yeni liste −1, −7, −13; ortalama −7’dir. Sapma |−3|·2=6 olur; negatif çarpan sıralamayı ters çevirse de standart sapmayı negatif yapmaz. Sabit 5 eklenmesi yayılımı değiştirmez."
+ },
+ {
+  "from": "Bir histogramın sınıfları [0,5),[5,15),[15,30]; kişi sayıları sırasıyla 2,4,3’tür. Düşey eksen kişi/puan cinsinden frekans yoğunluğudur. Üç yükseklik hangi sıradadır?",
+  "to": "Bir histogramın sınıfları [0,5), [5,15), [15,30]; kişi sayıları sırasıyla 2, 4, 3’tür. Düşey eksen kişi/puan cinsinden frekans yoğunluğudur. Üç yükseklik hangi sıradadır?"
+ },
+ {
+  "from": "Genişlikler 5,10,15 puan olduğundan yoğunluklar 2/5=0,4;4/10=0,4;3/15=0,2 kişi/puandır. Yükseklik×genişlik alanı gerçek kişi sayısını verir; ilk iki yüksekliğin eşitliği frekanslarının eşitliği değildir.",
+  "to": "Genişlikler 5, 10, 15 puan olduğundan yoğunluklar 2/5=0,4;4/10=0,4;3/15=0,2 kişi/puandır. Yükseklik×genişlik alanı gerçek kişi sayısını verir; ilk iki yüksekliğin eşitliği frekanslarının eşitliği değildir."
+ },
+ {
+  "from": "A’nın üç deneme puanı 70,70,70; B’nin 60,70,80’dir. n−1 tanımıyla sapmalar sırasıyla 0 ve 10, ortalamalar ikisinde 70’tir. Yalnız bu ölçümlerden hangi çıkarım geçerlidir?",
+  "to": "A’nın üç deneme puanı 70, 70, 70; B’nin 60, 70, 80’dir. n−1 tanımıyla sapmalar sırasıyla 0 ve 10, ortalamalar ikisinde 70’tir. Yalnız bu ölçümlerden hangi çıkarım geçerlidir?"
+ },
+ {
+  "from": "Birbirinden ayrık üç kulüpte sırasıyla 20,30,50 kişi vardır. Bu 100 kişinin daire grafiğinde ikinci kulübün merkez açısı kaç derecedir?",
+  "to": "Birbirinden ayrık üç kulüpte sırasıyla 20, 30, 50 kişi vardır. Bu 100 kişinin daire grafiğinde ikinci kulübün merkez açısı kaç derecedir?"
+ },
+ {
+  "from": "A,B,C ayrık gruplarında 20,30,50 kişi var. Yalnız C’ye 20 yeni kişi ekleniyor. Yeni toplamda C’nin payı hangi kesirdir?",
+  "to": "A, B, C ayrık gruplarında 20, 30, 50 kişi var. Yalnız C’ye 20 yeni kişi ekleniyor. Yeni toplamda C’nin payı hangi kesirdir?"
+ },
+ {
+  "from": "2,3,3,8 veri grubunun aritmetik ortalaması, ortancası ve modu sırasıyla nedir?",
+  "to": "2, 3, 3, 8 veri grubunun aritmetik ortalaması, ortancası ve modu sırasıyla nedir?"
+ },
+ {
+  "from": "Bir ölçüm tablosunda değerler 1,2,3; bu değerlerin frekansları sırasıyla 2,3,1’dir. Altı gözlemin ortalaması kaçtır?",
+  "to": "Bir ölçüm tablosunda değerler 1, 2, 3; bu değerlerin frekansları sırasıyla 2, 3, 1’dir. Altı gözlemin ortalaması kaçtır?"
+ },
+ {
+  "from": "Eş genişlikli histogramda [0,10),[10,20),[20,30] puan aralıklarının frekansları 4,7,5’tir. Puanı en az 10 olanların bütün gruba oranı yüzde kaçtır?",
+  "to": "Eş genişlikli histogramda [0,10), [10,20), [20,30] puan aralıklarının frekansları 4, 7, 5’tir. Puanı en az 10 olanların bütün gruba oranı yüzde kaçtır?"
+ },
+ {
+  "from": "2,4,6 ölçümleri için örneklem standart sapması, ortalamadan farkların kareleri toplamını n−1’e bölüp karekök alarak hesaplanıyor. Sonuç kaçtır?",
+  "to": "2, 4, 6 ölçümleri için örneklem standart sapması, ortalamadan farkların kareleri toplamını n−1’e bölüp karekök alarak hesaplanıyor. Sonuç kaçtır?"
+ },
+ {
+  "from": "5,9,1,7 verilerinin ortancası kaçtır?",
+  "to": "5, 9, 1, 7 verilerinin ortancası kaçtır?"
+ },
+ {
+  "from": "Sıralama 1,5,7,9’dur. Dört gözlemde ortadaki iki değerin ortalaması (5+7)/2=6 alınır. Verilerin ilk yazılışındaki orta konumları kullanmak sıralama koşulunu atlar.",
+  "to": "Sıralama 1, 5, 7, 9’dur. Dört gözlemde ortadaki iki değerin ortalaması (5+7)/2=6 alınır. Verilerin ilk yazılışındaki orta konumları kullanmak sıralama koşulunu atlar."
+ },
+ {
+  "from": "Listede 1 iki kez yazılsa da tek elemandır. Farklı elemanlar 1,2,3 olduğundan s(A)=3’tür. Liste uzunluğu ile farklı eleman sayısı aynı kavram değildir.",
+  "to": "Listede 1 iki kez yazılsa da tek elemandır. Farklı elemanlar 1, 2, 3 olduğundan s(A)=3’tür. Liste uzunluğu ile farklı eleman sayısı aynı kavram değildir."
+ },
+ {
+  "from": "A∪B={1,2,3,4,5} olur. E’de olup bu listede olmayan elemanlar 6,7,8’dir. Tümleyen ortak olmayanları değil, birleşimde hiç bulunmayanları seçer; evren açıkça verilmiştir.",
+  "to": "A∪B={1,2,3,4,5} olur. E’de olup bu listede olmayan elemanlar 6, 7, 8’dir. Tümleyen ortak olmayanları değil, birleşimde hiç bulunmayanları seçer; evren açıkça verilmiştir."
+ },
+ {
+  "from": "A={1,2},B={3,4,5}. A×B’nin eleman sayısı kaçtır?",
+  "to": "A={1,2}, B={3,4,5}. A×B’nin eleman sayısı kaçtır?"
+ },
+ {
+  "from": "A={1,2},B={3},C={4,5} veriliyor. A×(B∪C) kümesinin eleman sayısı kaçtır?",
+  "to": "A={1,2}, B={3}, C={4,5} veriliyor. A×(B∪C) kümesinin eleman sayısı kaçtır?"
+ },
+ {
+  "from": "Boş olmayan A×B’nin bütün elemanları (1,3),(1,5),(2,3),(2,5) olarak verilmiştir. A∪B hangi kümedir?",
+  "to": "Boş olmayan A×B’nin bütün elemanları (1,3), (1,5), (2,3), (2,5) olarak verilmiştir. A∪B hangi kümedir?"
+ },
+ {
+  "from": "Ürün boş olmadığı ve bütün çiftler verildiği için ilk bileşenler A={1,2}, ikinciler B={3,5} olur. Birleşimleri {1,2,3,5}’tir. Çizimde arada bulunabilecek 4 sayısı listede yoksa kaynağa eklenmez.",
+  "to": "Ürün boş olmadığı ve bütün çiftler verildiği için ilk bileşenler A={1,2}, ikinciler B={3,5} olur. Birleşimleri {1,2,3,5}’tir. Arada bulunabilecek 4 sayısı listede yoksa kaynağa eklenmez."
+ },
+ {
+  "from": "Sabit net hızla dolan tankın payı 0.saatte 1/4,3.saatte 5/8. Başlangıçtan tam dolma süresi kaç saattir?",
+  "to": "Sabit net hızla dolan tankın payı 0. saatte 1/4, 3. saatte 5/8. Başlangıçtan tam dolma süresi kaç saattir?"
+ },
+ {
+  "from": "Üç saatte 3/8 artış, saatte 1/8 pay demektir. İlk 1/4’ten tam doluya 3/4 gerekir; (3/4)/(1/8)=6 saat. 3.saatten sonraki ek süre 3 saattir, toplamla karıştırma.",
+  "to": "Üç saatte 3/8 artış, saatte 1/8 pay demektir. İlk 1/4’ten tam doluya 3/4 gerekir; (3/4)/(1/8)=6 saat. 3. saatten sonraki ek süre 3 saattir, toplamla karıştırma."
+ },
+ {
+  "from": "Toplam 3x=93 ⇒ x=31. Sayılar 29,31,33; istenen ortadaki değil en büyük olan 33'tür. Ortak fark 1 seçilirse tek sayılık koşulu bozulur.",
+  "to": "Toplam 3x=93 ⇒ x=31. Sayılar 29, 31, 33; istenen ortadaki değil en büyük olan 33'tür. Ortak fark 1 seçilirse tek sayılık koşulu bozulur."
+ },
+ {
+  "from": "x+2=0 için x=−2; bu x'te y=0−3=−3. Grafik bu noktadan iki doğrusal kola ayrılır. Dikkat: İçteki+2'yi doğrudan sağa 2 birim diye okumak ötelemenin yönünü ters çevirir.",
+  "to": "x+2=0 için x=−2; bu x'te y=0−3=−3. Grafik bu noktadan iki doğrusal kola ayrılır. Dikkat: İçteki +2'yi doğrudan sağa 2 birim diye okumak ötelemenin yönünü ters çevirir."
+ },
+ {
+  "from": "Aşağıdaki ifadelerden hangisi bu dersin elementer gerçek sayı hesabında tanımsızdır?",
+  "to": "Aşağıdaki ifadelerden hangisi elementer gerçek sayı hesabında tanımsızdır?"
+ },
+ {
+  "from": "0⁻²=1/0²=1/0 gerektirir ve tanımsızdır. Diğerleri sırasıyla 1,0,1 ve −1'dir. Dikkat: a⁰=1 kuralının sıfırdan farklı taban koşulunu unutma; burada tanımsız olan negatif sıfır kuvvetidir.",
+  "to": "0⁻²=1/0²=1/0 gerektirir ve tanımsızdır. Diğerleri sırasıyla 1, 0, 1 ve −1'dir. Dikkat: a⁰=1 kuralının sıfırdan farklı taban koşulunu unutma; burada tanımsız olan negatif sıfır kuvvetidir."
+ },
+ {
+  "from": "2^(2x+2)=2^(3x−3); ortak taban pozitif ve 1'den farklı olduğundan 2x+2=3x−3, x=5 olur. Dikkat: Üssün içindeki+1 ve −1'e katsayıyı dağıtmamak yanlış denklem kurar.",
+  "to": "2^(2x+2)=2^(3x−3); ortak taban pozitif ve 1'den farklı olduğundan 2x+2=3x−3, x=5 olur. Dikkat: Üssün içindeki +1 ve −1'e katsayıyı dağıtmamak yanlış denklem kurar."
+ },
+ {
+  "from": "Dört katlanma sonunda 3·2⁴=3·16=48 olur. Ara sıra 6,12,24,48'dir. Dikkat: Başlangıcı ilk katlanma saymak veya her adımda 2 eklemek modelin koşulunu değiştirir.",
+  "to": "Dört katlanma sonunda 3·2⁴=3·16=48 olur. Ara sıra 6, 12, 24, 48'dir. Dikkat: Başlangıcı ilk katlanma saymak veya her adımda 2 eklemek modelin koşulunu değiştirir."
+ },
+ {
+  "from": "a bir rakamdır. 7a2=700+10 a+2 üç basamaklı sayısının 4’e tam bölünmesini sağlayan kaç farklı a değeri vardır?",
+  "to": "a bir rakamdır. 7a2=700+10a+2 üç basamaklı sayısının 4’e tam bölünmesini sağlayan kaç farklı a değeri vardır?"
+ },
+ {
+  "from": "100’ün katı olan 700’den sonra son iki basamağı incelemek yeterlidir. a2; 12,32,52,72,92 olduğunda 4’e bölünür. Böylece a=1,3,5,7,9 olmak üzere 5 değer vardır. 02 sayısal olarak 2’dir ve 4’e bölünmez.",
+  "to": "100’ün katı olan 700’den sonra son iki basamağı incelemek yeterlidir. a2; 12, 32, 52, 72, 92 olduğunda 4’e bölünür. Böylece a=1, 3, 5, 7, 9 olmak üzere 5 değer vardır. 02 sayısal olarak 2’dir ve 4’e bölünmez."
+ },
+ {
+  "from": "6=2·3,10=2·5 olduğundan N en az 2·3·5=30 çarpanlarını taşır. 60 için ek bir 2 gerekir ve zorunlu değildir. N=30 iki başlangıç koşulunu sağlar, fakat 12,20,40,60’a bölünmez; yalnız 30 her durumda garantidir.",
+  "to": "6=2·3, 10=2·5 olduğundan N en az 2·3·5=30 çarpanlarını taşır. 60 için ek bir 2 gerekir ve zorunlu değildir. N=30 iki başlangıç koşulunu sağlar, fakat 12, 20, 40, 60’a bölünmez; yalnız 30 her durumda garantidir."
+ },
+ {
+  "from": "EBOB(36,48,60)=12 cm en büyük küp kenarıdır. Üç yönde 3,4,5 küp sığar; toplam 3·4·5=60 küp oluşur. 12 uzunluk, 60 adettir. Hacim kontrolü 36·48·60/12³=60 sonucunu verir.",
+  "to": "EBOB(36,48,60)=12 cm en büyük küp kenarıdır. Üç yönde 3, 4, 5 küp sığar; toplam 3·4·5=60 küp oluşur. 12 uzunluk, 60 adettir. Hacim kontrolü 36·48·60/12³=60 sonucunu verir."
+ },
+ {
+  "from": "x−3≥0, yani x≥3. 7−x≥0, yani x≤7. x aynı zamanda tam sayıdır; adaylar 3,4,5,6,7. Denetim: x=3: 0! ve 4!; x=7: 4! ve 0! tanımlı.",
+  "to": "x−3≥0, yani x≥3. 7−x≥0, yani x≤7. x aynı zamanda tam sayıdır; adaylar 3, 4, 5, 6, 7. Denetim: x=3: 0! ve 4!; x=7: 4! ve 0! tanımlı."
+ },
+ {
+  "from": "Koşullar x=2,3,4,5 verir. Eşitlikler 0!=3!, 1!=2!, 2!=1!, 3!=0! olur. Sırasıyla 1≠6, 1≠2, 2≠1, 6≠1; hepsi elenir. Denetim: İçleri eşitlemek x=3,5 verir; bu tanım dışıdır.",
+  "to": "Koşullar x=2, 3, 4, 5 verir. Eşitlikler 0!=3!, 1!=2!, 2!=1!, 3!=0! olur. Sırasıyla 1≠6, 1≠2, 2≠1, 6≠1; hepsi elenir. Denetim: İçleri eşitlemek x=3,5 verir; bu tanım dışıdır."
+ },
+ {
+  "from": "⌊10/2⌋=5. ⌊10/4⌋=2 ve ⌊10/8⌋=1. 16>10; toplam 5+2+1=8. Denetim: 2,4,6,8,10 içindeki 2 kopyaları 1+2+1+3+1=8.",
+  "to": "⌊10/2⌋=5. ⌊10/4⌋=2 ve ⌊10/8⌋=1. 16>10; toplam 5+2+1=8. Denetim: 2, 4, 6, 8, 10 içindeki 2 kopyaları 1+2+1+3+1=8."
+ },
+ {
+  "from": "2,4,8 kuvvetlerinin katlarını say.",
+  "to": "2, 4, 8 kuvvetlerinin katlarını say."
+ },
+ {
+  "from": "3,6,9,12,15 birer 3 verir: 5 kopya. 9 ek bir 3 daha verir. Toplam 6. Denetim: 1+1+2+1+1=6.",
+  "to": "3, 6, 9, 12, 15 birer 3 verir: 5 kopya. 9 ek bir 3 daha verir. Toplam 6. Denetim: 1+1+2+1+1=6."
+ },
+ {
+  "from": "⌊25/5⌋=5. ⌊25/25⌋=1. 125>25; toplam 6. Denetim: 5,10,15,20,25 toplam 1+1+1+1+2=6 tane 5 verir.",
+  "to": "⌊25/5⌋=5. ⌊25/25⌋=1. 125>25; toplam 6. Denetim: 5, 10, 15, 20, 25 toplam 1+1+1+1+2=6 tane 5 verir."
+ },
+ {
+  "from": "Altı sayı 5’in katıdır. 25 bir ek 5 taşır. 6+1=7. Denetim: 5,10,15,20,25,30 katkısı 1+1+1+1+2+1=7.",
+  "to": "Altı sayı 5’in katıdır. 25 bir ek 5 taşır. 6+1=7. Denetim: 5, 10, 15, 20, 25, 30 katkısı 1+1+1+1+2+1=7."
+ },
+ {
+  "from": "⌊20/5⌋=4. ⌊20/25⌋=0. Faktöriyelde yeterli 2 vardır; son sıfır sayısı 4. Denetim: 5,10,15,20 birer 5 verir.",
+  "to": "⌊20/5⌋=4. ⌊20/25⌋=0. Faktöriyelde yeterli 2 vardır; son sıfır sayısı 4. Denetim: 5, 10, 15, 20 birer 5 verir."
+ },
+ {
+  "from": "5,10,15,20 sayılarını say.",
+  "to": "5, 10, 15, 20 sayılarını say."
+ },
+ {
+  "from": "İlk yere 3 seçenek. Kalan yerlere 3·2·1=6 seçenek. Toplam 3·6=18. Denetim: 24 toplam düzen−6 yasak düzen=18.",
+  "to": "İlk yere 3 seçenek. Kalan yerlere 3·2·1=6 seçenek. Toplam 3·6=18. Denetim: 24 toplam düzen − 6 yasak düzen = 18."
+ },
+ {
+  "from": "⌊20/3⌋=6. ⌊20/9⌋=2. Toplam 6+2=8. Denetim: 3,6,9,12,15,18 katkısı 1+1+2+1+1+2=8.",
+  "to": "⌊20/3⌋=6. ⌊20/9⌋=2. Toplam 6+2=8. Denetim: 3, 6, 9, 12, 15, 18 katkısı 1+1+2+1+1+2=8."
+ },
+ {
+  "from": "0! ve 1! bir olduğundan tektir. n≥2 olduğunda 2, n!’ın çarpanlarından biridir. Bu durumda n! çifttir; n’nin kendisinin tekliği belirlemez. Denetim: n=0,1,2,3 tablosu 1,1,2,6 değerlerini verir.",
+  "to": "0! ve 1! bir olduğundan tektir. n≥2 olduğunda 2, n!’ın çarpanlarından biridir. Bu durumda n! çifttir; n’nin kendisinin tekliği belirlemez. Denetim: n=0, 1, 2, 3 tablosu 1, 1, 2, 6 değerlerini verir."
+ },
+ {
+  "from": "Özgün öğretim modelinde ilk terim 1, her adımda sabit artış 3’tür. Terim 241 olduğunda pozitif tam sayı adımı kaçtır?",
+  "to": "Bir örüntüde ilk terim 1, her adımda sabit artış 3’tür. Terim 241 olduğunda pozitif tam sayı adımı kaçtır?"
+ },
+ {
+  "from": "Her yeni katman adedi bir önceki katmandakinin iki katıdır. İlk katman adetleri 1,2,4,8,… olduğuna göre hangi açıklama doğrudur?",
+  "to": "Her yeni katman adedi bir önceki katmandakinin iki katıdır. İlk katman adetleri 1, 2, 4, 8, … olduğuna göre hangi açıklama doğrudur?"
+ },
+ {
+  "from": "Farklar 1, 2, 4; sabit değil. Oranlar 2/1=2, 4/2=2, 8/4=2; sabit çarpan 2. Denetim: İlk üç veri kendi modelinde 1,2,4 ve toplam 7 vermeli.",
+  "to": "Farklar 1, 2, 4; sabit değil. Oranlar 2/1=2, 4/2=2, 8/4=2; sabit çarpan 2. Denetim: İlk üç veri kendi modelinde 1, 2, 4 ve toplam 7 vermeli."
+ },
+ {
+  "from": "x=x her gerçek x’te doğru. Bu tek başına bütün gerçekleri çözüme dahil eder. Denetim: −3,0,7/2 hepsi uygundur.",
+  "to": "x=x her gerçek x’te doğru. Bu tek başına bütün gerçekleri çözüme dahil eder. Denetim: −3, 0, 7/2 hepsi uygundur."
+ },
+ {
+  "from": "−1≤x≤2 için (2−x)+(x+1)=3. Dışarıda toplam, dışarı çıkılan mesafenin 2 katı kadar artar. Denetim: x=−1,0,2’de 3; x=3’te 5.",
+  "to": "−1≤x≤2 için (2−x)+(x+1)=3. Dışarıda toplam, dışarı çıkılan mesafenin 2 katı kadar artar. Denetim: x=−1, 0, 2’de 3; x=3’te 5."
+ },
+ {
+  "from": "|x|−3=1 veya −1. |x|=4 veya 2. x=−4,−2,2,4. Denetim: Her kökte dış uzaklık 1.",
+  "to": "|x|−3=1 veya −1. |x|=4 veya 2. x=−4, −2, 2, 4. Denetim: Her kökte dış uzaklık 1."
+ },
+ {
+  "from": "|x|−3=3 veya −3. |x|=6 veya 0. Kökler −6,0,6; 0 iki kez sayılmaz. Denetim: 0’da |−3|=3; ±6’da |6−3|=3.",
+  "to": "|x|−3=3 veya −3. |x|=6 veya 0. Kökler −6, 0, 6; 0 iki kez sayılmaz. Denetim: 0’da |−3|=3; ±6’da |6−3|=3."
+ },
+ {
+  "from": "x gerçek sayıdır. 3^(2 x+1)=3^(2 x+4) denklemi için hangisi doğrudur?",
+  "to": "x gerçek sayıdır. 3^(2x+1)=3^(2x+4) denklemi için hangisi doğrudur?"
+ },
+ {
+  "from": "2 x+1=2 x+4 olmalı. İki taraftan 2 x çıkarılınca 1=4 kalır. Bu yanlış olduğundan çözüm yoktur. Denetim: Sağ/sol=3^3=27; oran 1 değildir.",
+  "to": "2x+1=2x+4 olmalı. İki taraftan 2x çıkarılınca 1=4 kalır. Bu yanlış olduğundan çözüm yoktur. Denetim: Sağ/sol=3^3=27; oran 1 değildir."
+ },
+ {
+  "from": "4=2², 16=2⁴, 32=2⁵, 8=2³ ve 64=2⁶. 4⁻⁷·16·32³ = 2⁻¹⁴·2⁴·2¹⁵ = 2⁵. 2⁶·8³·64⁻² = 2⁶·2⁹·2⁻¹² = 2³. 2⁵/2³ = 2^(5−3) = 2² = 4. Kaynaktaki doğru seçenek E’dir.",
+  "to": "4=2², 16=2⁴, 32=2⁵, 8=2³ ve 64=2⁶. 4⁻⁷·16·32³ = 2⁻¹⁴·2⁴·2¹⁵ = 2⁵. 2⁶·8³·64⁻² = 2⁶·2⁹·2⁻¹² = 2³. 2⁵/2³ = 2^(5−3) = 2² = 4."
+ },
+ {
+  "from": "İfadede negatif a kuvvetleri bulunduğu için a≠0 olmalıdır. a⁻⁶·(−a)⁴·(−a)⁵ = a⁻⁶·a⁴·(−a⁵) = −a³. (−a)⁻³·(−a)⁻² = (−a⁻³)·a⁻² = −a⁻⁵. (−a³)/(−a⁻⁵) = a^(3−(−5)) = a⁸. İki dış eksi çarpanı sadeleşir. Kaynaktaki seçenek D’dir.",
+  "to": "İfadede negatif a kuvvetleri bulunduğu için a≠0 olmalıdır. a⁻⁶·(−a)⁴·(−a)⁵ = a⁻⁶·a⁴·(−a⁵) = −a³. (−a)⁻³·(−a)⁻² = (−a⁻³)·a⁻² = −a⁻⁵. (−a³)/(−a⁻⁵) = a^(3−(−5)) = a⁸. İki dış eksi çarpanı sadeleşir."
+ },
+ {
+  "from": "(25)^(2x+1) = (5²)^(2x+1) = 5^(4x+2). 5^(4x+2) = 5²·(5^x)⁴. 25·2⁴ = 25·16 = 400. Kaynaktaki seçenek E’dir.",
+  "to": "(25)^(2x+1) = (5²)^(2x+1) = 5^(4x+2). 5^(4x+2) = 5²·(5^x)⁴. 25·2⁴ = 25·16 = 400."
+ },
+ {
+  "from": "75 = 15²/3. 75^(2x) = 15^(4x)/3^(2x). 15^(4x)=(15^x)⁴=a⁴ ve 3^(2x)=(3^x)²=b². 75^(2x)=a⁴/b². Kaynaktaki seçenek A’dır.",
+  "to": "75 = 15²/3. 75^(2x) = 15^(4x)/3^(2x). 15^(4x)=(15^x)⁴=a⁴ ve 3^(2x)=(3^x)²=b². 75^(2x)=a⁴/b²."
+ },
+ {
+  "from": "75’i doğrudan verilen 15 ve3 tabanlarından kur; 2x kuvvetini sonradan uygula.",
+  "to": "75’i doğrudan verilen 15 ve 3 tabanlarından kur; 2x kuvvetini sonradan uygula."
+ },
+ {
+  "from": "0,72=18/25=(2·3²)/5². (0,72)^x = 2^x·(3^x)²·(5^x)⁻². 2^x=a,3^x=b,5^x=c olduğundan sonuç a·b²·c⁻²’dir. Kaynaktaki seçenek B’dir.",
+  "to": "0,72=18/25=(2·3²)/5². (0,72)^x = 2^x·(3^x)²·(5^x)⁻². 2^x=a, 3^x=b, 5^x=c olduğundan sonuç a·b²·c⁻²’dir."
+ },
+ {
+  "from": "5^(n+3)−2·5^(n+2)=5^(n+2)·(5−2)=3·5^(n+2). 3·5^(n+2)/5^(n+1)=3·5^((n+2)−(n+1))=3·5¹. 3·5=15. Kaynaktaki seçenek C’dir.",
+  "to": "5^(n+3)−2·5^(n+2)=5^(n+2)·(5−2)=3·5^(n+2). 3·5^(n+2)/5^(n+1)=3·5^((n+2)−(n+1))=3·5¹. 3·5=15."
+ }
+]

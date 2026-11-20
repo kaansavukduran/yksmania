@@ -34,4 +34,9 @@ describe("display typesetting", () => {
     const once = typeset("toplam180° ve açıortay,kenarortay...");
     expect(typeset(once)).toBe(once);
   });
+
+  it("keeps a two-letter symbol with a max/min subscript together", () => {
+    expect(typeset("Statik sürtünme fs,max değerini aşamaz.")).toBe("Statik sürtünme fs,max değerini aşamaz.");
+    expect(typeset("ip,makara ve kütle")).toBe("ip, makara ve kütle");
+  });
 });

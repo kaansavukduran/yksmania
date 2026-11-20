@@ -1,0 +1,338 @@
+[
+ {
+  "from": "Ölçek oranı 1/0,4=2,5 tir. Bu oran dalga boyu oranına eşittir. Frekans oranı 1/2,5=0,4 tür; çarpım 1 kalır.",
+  "to": "Ölçek oranı 1/0,4=2,5’tir. Bu oran dalga boyu oranına eşittir. Frekans oranı 1/2,5=0,4’tür; çarpım 1 kalır."
+ },
+ {
+  "from": "u yükü+2e/3, d yükü−e/3 tür. udd valans bileşiğinin toplam yükü ve ailesi nedir?",
+  "to": "u yükü +2e/3, d yükü −e/3’tür. udd valans bileşiğinin toplam yükü ve ailesi nedir?"
+ },
+ {
+  "from": "Verilen bileşimde bir u, iki d vardır. Toplam yük(2−1−1)e/3=0 dır. Üç bileşenin hepsi kuark olduğu için baryondur; nötron valans betimidir.",
+  "to": "Verilen bileşimde bir u, iki d vardır. Toplam yük (2−1−1)e/3=0’dır. Üç bileşenin hepsi kuark olduğu için baryondur; nötron valans betimidir."
+ },
+ {
+  "from": "u yükü+2e/3, antid yükü+e/3 tür. u-antid çiftinin toplam elektrik yükü ve baryon sayısı hangisidir?",
+  "to": "u yükü +2e/3, antid yükü +e/3’tür. u-antid çiftinin toplam elektrik yükü ve baryon sayısı hangisidir?"
+ },
+ {
+  "from": "Elektrik yükü 2e/3+e/3=+e dir. Baryon sayısı 1/3−1/3=0 dır. Bir kuark-antikuark çifti sade mezon kuralını sağlar; yüklü olabilir.",
+  "to": "Elektrik yükü 2e/3+e/3=+e’dir. Baryon sayısı 1/3−1/3=0’dır. Bir kuark-antikuark çifti sade mezon kuralını sağlar; yüklü olabilir."
+ },
+ {
+  "from": "Nötrino elektrikçe nötr leptondur; pozitron elektronun+e yüklü karşıtıdır",
+  "to": "Nötrino elektrikçe nötr leptondur; pozitron elektronun +e yüklü karşıtıdır"
+ },
+ {
+  "from": "Nötrino elektronun+e yüklü karşıtıdır",
+  "to": "Nötrino elektronun +e yüklü karşıtıdır"
+ },
+ {
+  "from": "Elektronun yükü−e, karşıt parçacığı pozitronun yükü+e dir. Elektron nötrinosu ayrı bir nötr leptondur. Nötr oluş zayıf etkileşime engel olmadığından etkileşimsiz sonucu çıkmaz.",
+  "to": "Elektronun yükü −e, karşıt parçacığı pozitronun yükü +e’dir. Elektron nötrinosu ayrı bir nötr leptondur. Nötr oluş zayıf etkileşime engel olmadığından etkileşimsiz sonucu çıkmaz."
+ },
+ {
+  "from": "Antinötronun baryon sayısı+1 olmak zorundadır",
+  "to": "Antinötronun baryon sayısı +1 olmak zorundadır"
+ },
+ {
+  "from": "Nötronun sade yapısı udd, baryon sayısı+1 dir. Antinötron üç antikuark içerir, baryon sayısı−1 dir. İkisinin net yükü 0 olsa da bu ayrı sayı onların özdeş olmadığını gösterir.",
+  "to": "Nötronun sade yapısı udd, baryon sayısı +1’dir. Antinötron üç antikuark içerir, baryon sayısı −1’dir. İkisinin net yükü 0 olsa da bu ayrı sayı onların özdeş olmadığını gösterir."
+ },
+ {
+  "from": "A=210, Z=84 çekirdeği enerji bakımından izinli bir alfa bozunması yapıyor. Ürünün A ve Z si nedir?",
+  "to": "A=210, Z=84 çekirdeği enerji bakımından izinli bir alfa bozunması yapıyor. Ürünün A ve Z’si nedir?"
+ },
+ {
+  "from": "Toplam A korunumu 210=Aürün+4 verir. Toplam Z korunumu 84=Zürün+2 verir. Aürün 206, Zürün 82 çıkar; N de 126 dan 124 e iner.",
+  "to": "Toplam A korunumu 210=Aürün+4 verir. Toplam Z korunumu 84=Zürün+2 verir. Aürün 206, Zürün 82 çıkar; N de 126’dan 124’e iner."
+ },
+ {
+  "from": "Bir proton nötrona döndüğünden Z 9 dan 8 e iner. Toplam nükleon sayısı 18 kalır. Pozitron+1 ve nötrino 0 yüküyle 8+1=9 yük dengesi sağlanır.",
+  "to": "Bir proton nötrona döndüğünden Z 9’dan 8’e iner. Toplam nükleon sayısı 18 kalır. Pozitron +1 ve nötrino 0 yüküyle 8+1=9 yük dengesi sağlanır."
+ },
+ {
+  "from": "Durgun çerçevede+x yönünde 10 m,+y yönünde 6 m kenarlı plaka+x boyunca gidiyor;γ=2. Laboratuvardaki x ve y boyları hangisidir?",
+  "to": "Durgun çerçevede +x yönünde 10 m, +y yönünde 6 m kenarlı plaka +x boyunca gidiyor; γ=2. Laboratuvardaki x ve y boyları hangisidir?"
+ },
+ {
+  "from": "E 1,5×6=9 MeV dir. K 9−6=3 MeV dir. Toplam 9=durgun 6+kinetik 3 eşitliği sağlanır.",
+  "to": "E 1,5×6=9 MeV’dir. K 9−6=3 MeV’dir. Toplam 9 = durgun 6 + kinetik 3 eşitliği sağlanır."
+ },
+ {
+  "from": "λtepe=9660 nm olan bir ideal yüzey için b=2,898×10⁻³ m·K. Sıcaklık kaç K dir?",
+  "to": "λtepe=9660 nm olan bir ideal yüzey için b=2,898×10⁻³ m·K. Sıcaklık kaç K’dir?"
+ },
+ {
+  "from": "9660×10⁻⁹=9,660×10⁻⁶ m dir. T=2,898×10⁻³/(9,660×10⁻⁶) yazılır. Sayı 0,3 ve üs 10³ çarpımı 300 K verir.",
+  "to": "9660×10⁻⁹=9,660×10⁻⁶ m’dir. T=2,898×10⁻³/(9,660×10⁻⁶) yazılır. Sayı 0,3 ve üs 10³ çarpımı 300 K verir."
+ },
+ {
+  "from": "Önce nm yi metreye çevir.",
+  "to": "Önce nm’yi metreye çevir."
+ },
+ {
+  "from": "Planckın tarihsel osilatör modelinde ardışık enerji basamakları arasındaki fark hangisidir?",
+  "to": "Planck’ın tarihsel osilatör modelinde ardışık enerji basamakları arasındaki fark hangisidir?"
+ },
+ {
+  "from": "Bir basamak enerjisi nhf olarak yazılır. Sonraki basamak(n+1)hf dir. Fark(n+1)hf−nhf=hf olur.",
+  "to": "Bir basamak enerjisi nhf olarak yazılır. Sonraki basamak (n+1)hf’dir. Fark (n+1)hf−nhf=hf olur."
+ },
+ {
+  "from": "Bir foton ideal bir aynadan geldiği yönün tersine, enerjisi değişmeden yansıyor. Fotonun başlangıç momentumu+p ise yüzeye aktarılan momentum nedir?",
+  "to": "Bir foton ideal bir aynadan geldiği yönün tersine, enerjisi değişmeden yansıyor. Fotonun başlangıç momentumu +p ise yüzeye aktarılan momentum nedir?"
+ },
+ {
+  "from": "Fotonun ilk momentumu+p, son momentumu−p dir. Fotonun değişimi−p−p=−2p dir. Toplam momentum korunumu yüzeye+2p aktarım verir.",
+  "to": "Fotonun ilk momentumu +p, son momentumu −p’dir. Fotonun değişimi −p−p=−2p’dir. Toplam momentum korunumu yüzeye +2p aktarım verir."
+ },
+ {
+  "from": "Fotoelektron yoktur; aynı frekansta akıyı artırmak eşiği aşırmaz",
+  "to": "Fotoelektron yoktur; aynı frekansta akıyı artırmak eşiği aştırmaz"
+ },
+ {
+  "from": "3<4 olduğundan çıkma maliyeti karşılanmaz. Akı artışı tek foton enerjisini 3 eV dan büyütmez. Dolayısıyla belirtilen modelde fotoelektron ve ona ait Kmax bulunmaz.",
+  "to": "3<4 olduğundan çıkma maliyeti karşılanmaz. Akı artışı tek foton enerjisini 3 eV’dan büyütmez. Dolayısıyla belirtilen modelde fotoelektron ve ona ait Kmax bulunmaz."
+ },
+ {
+  "from": "Önce tek fotonun 3 eV unu 4 eV ile kıyasla.",
+  "to": "Önce tek fotonun 3 eV’unu 4 eV ile kıyasla."
+ },
+ {
+  "from": "Joule birimli Kmax-Hz birimlif grafiğinin eğimi ve düşey uzantı kesişimi hangisidir?",
+  "to": "Joule birimli Kmax-Hz birimli f grafiğinin eğimi ve düşey uzantı kesişimi hangisidir?"
+ },
+ {
+  "from": "h/e ve+W",
+  "to": "h/e ve +W"
+ },
+ {
+  "from": "h ve−W",
+  "to": "h ve −W"
+ },
+ {
+  "from": "W ve−h",
+  "to": "W ve −h"
+ },
+ {
+  "from": "e ve+f₀",
+  "to": "e ve +f₀"
+ },
+ {
+  "from": "f nin katsayısıh olduğundan eğimh dir. f 0 için uzantıda K=−W çıkar. Bu negatif uzantı gerçek negatif kinetik enerjili fotoelektron demek değildir.",
+  "to": "f’nin katsayısı h olduğundan eğim h’dir. f 0 için uzantıda K=−W çıkar. Bu negatif uzantı gerçek negatif kinetik enerjili fotoelektron demek değildir."
+ },
+ {
+  "from": "Doğruyuy=ax+b biçimiyle karşılaştır.",
+  "to": "Doğruyu y=ax+b biçimiyle karşılaştır."
+ },
+ {
+  "from": "Bir fotoselde Kmax=2,8 eV. Anot katoda göre+1,2 V olduğunda anoda ulaşan en hızlı elektronun enerjisi kaç eV dir?",
+  "to": "Bir fotoselde Kmax=2,8 eV. Anot katoda göre +1,2 V olduğunda anoda ulaşan en hızlı elektronun enerjisi kaç eV’dir?"
+ },
+ {
+  "from": "Anot pozitif olduğundan elektron anoda giderken hızlanır. Elektronun enerji kazancı 1,2 eV dir. 2,8+1,2=4,0 eV anoda varış üst enerjisidir.",
+  "to": "Anot pozitif olduğundan elektron anoda giderken hızlanır. Elektronun enerji kazancı 1,2 eV’dir. 2,8+1,2=4,0 eV anoda varış üst enerjisidir."
+ },
+ {
+  "from": "Kmax=3,2 eV fotoelektronlar−1,5 V anot gerilimine karşı gidiyor. En hızlı elektron için kalan kinetik enerji kaç eV dir?",
+  "to": "Kmax=3,2 eV fotoelektronlar−1,5 V anot gerilimine karşı gidiyor. En hızlı elektron için kalan kinetik enerji kaç eV’dir?"
+ },
+ {
+  "from": "V−1,5 olduğundan 1,5 eV kayıp vardır. 3,2−1,5=1,7 eV kalır. Kalan pozitif olduğu için en hızlı elektronun ulaşması enerji bakımından mümkündür.",
+  "to": "V=−1,5 olduğundan 1,5 eV kayıp vardır. 3,2−1,5=1,7 eV kalır. Kalan pozitif olduğu için en hızlı elektronun ulaşması enerji bakımından mümkündür."
+ },
+ {
+  "from": "İşaretli gerilimi K ya ekle.",
+  "to": "İşaretli gerilimi K’ya ekle."
+ },
+ {
+  "from": "λ artar, f ve enerji azalır; boşluk hızıc kalır",
+  "to": "λ artar, f ve enerji azalır; boşluk hızı c kalır"
+ },
+ {
+  "from": "Verilen açı aralığında 1−cosθ pozitiftir. Son dalga boyu büyüdüğündenf veE azalır. Saçılan foton hâlâ elektromanyetik ışık olduğundan boşluk hızıc dir.",
+  "to": "Verilen açı aralığında 1−cosθ pozitiftir. Son dalga boyu büyüdüğünden f ve E azalır. Saçılan foton hâlâ elektromanyetik ışık olduğundan boşluk hızı c’dir."
+ },
+ {
+  "from": "λC=2,4 pm, gelen λ=8 pm,θ90° vecos 90°0. Saçılan dalga boyu kaç pm dir?",
+  "to": "λC=2,4 pm, gelen λ=8 pm, θ=90° ve cos 90°=0. Saçılan dalga boyu kaç pm’dir?"
+ },
+ {
+  "from": "1−cos 90°=1 dir. Δλ2,4×1=2,4 pm olur. λ′8+2,4=10,4 pm bulunur.",
+  "to": "1−cos 90°=1’dir. Δλ=2,4×1=2,4 pm olur. λ′=8+2,4=10,4 pm bulunur."
+ },
+ {
+  "from": "Serbest durgun elektron modelindeθ0° için hangi sonuç doğrudur?",
+  "to": "Serbest durgun elektron modelinde θ=0° için hangi sonuç doğrudur?"
+ },
+ {
+  "from": "Δλ0 veKe 0",
+  "to": "Δλ=0 ve Ke=0"
+ },
+ {
+  "from": "Δλ2λC veKe maksimum",
+  "to": "Δλ=2λC ve Ke maksimum"
+ },
+ {
+  "from": "ΔλλC",
+  "to": "Δλ=λC"
+ },
+ {
+  "from": "ΔλλC(1−1)=0 bulunur. λ′=λ olduğundan foton enerjisi değişmez. Enerji bütçesi Ke=Eilk−Eson=0 verir.",
+  "to": "Δλ=λC(1−1)=0 bulunur. λ′=λ olduğundan foton enerjisi değişmez. Enerji bütçesi Ke=Eilk−Eson=0 verir."
+ },
+ {
+  "from": "Aynı elektronda aynıθ açısı için ilk dalga boyları 5 pm ve 20 pm olan fotonlar saçılıyor. Hangi nicelik kesin eşittir?",
+  "to": "Aynı elektronda aynı θ açısı için ilk dalga boyları 5 pm ve 20 pm olan fotonlar saçılıyor. Hangi nicelik kesin eşittir?"
+ },
+ {
+  "from": "λC hedef elektron için ortaktır. θ ortak olduğundan 1−cosθ de ortaktır. Bu iki ortak çarpan Δλ yı eşitler; enerji oranını eşitlemez.",
+  "to": "λC hedef elektron için ortaktır. θ ortak olduğundan 1−cosθ de ortaktır. Bu iki ortak çarpan Δλ’yı eşitler; enerji oranını eşitlemez."
+ },
+ {
+  "from": "Formülde ilk λ nın bulunup bulunmadığını izle.",
+  "to": "Formülde ilk λ’nın bulunup bulunmadığını izle."
+ },
+ {
+  "from": "Bir olayda fotonun enerjisi 80 keV den 60 keV ye düşüyor. Başlangıç elektronu durgun ve serbest ise elektronun kinetik enerjisi kaç keV dir?",
+  "to": "Bir olayda fotonun enerjisi 80 keV’den 60 keV’ye düşüyor. Başlangıç elektronu durgun ve serbest ise elektronun kinetik enerjisi kaç keV’dir?"
+ },
+ {
+  "from": "Toplam bütçe 80+mec²=60+mec²+Ke dir. Ortakmec² sadeleşir. Ke 80−60=20 keV bulunur.",
+  "to": "Toplam bütçe 80+mec²=60+mec²+Ke’dir. Ortak mec² sadeleşir. Ke 80−60=20 keV bulunur."
+ },
+ {
+  "from": "Foton başlangıçta+x yönünde. Saçılan fotonun y momentum bileşeni+q. Başlangıçta durgun elektronun son y momentum bileşeni nedir?",
+  "to": "Foton başlangıçta +x yönünde. Saçılan fotonun y momentum bileşeni +q. Başlangıçta durgun elektronun son y momentum bileşeni nedir?"
+ },
+ {
+  "from": "İlk foton+x boyunca olduğundanpy 0 dır; elektron da durgundur. Son toplam y momentumu+q+py, e olmalıdır. 0=q+py, e denklemindenpy, e=−q çıkar.",
+  "to": "İlk foton +x boyunca olduğundan py 0’dır; elektron da durgundur. Son toplam y momentumu +q+py, e olmalıdır. 0=q+py, e denkleminden py, e=−q çıkar."
+ },
+ {
+  "from": "p ağır/p hafif=4mv/mv=4 tür. Dalga boyu momentumun tersidir. λ ağır/λ hafif=1/4 bulunur.",
+  "to": "p ağır/p hafif=4mv/mv=4’tür. Dalga boyu momentumun tersidir. λ ağır/λ hafif=1/4 bulunur."
+ },
+ {
+  "from": "p ağır/p hafif=√(4m/m)=2 dir. λ=h/p olduğundan oran ters döner. λ ağır/λ hafif=1/2 çıkar.",
+  "to": "p ağır/p hafif=√(4m/m)=2’dir. λ=h/p olduğundan oran ters döner. λ ağır/λ hafif=1/2 çıkar."
+ },
+ {
+  "from": "Eşit K yi koruyarakmomentumu karşılaştır.",
+  "to": "Eşit K’yi koruyarak momentumu karşılaştır."
+ },
+ {
+  "from": "Röntgen, MR, ultrason vePET için hangi eşleştirme doğrudur?",
+  "to": "Röntgen, MR, ultrason ve PET için hangi eşleştirme doğrudur?"
+ },
+ {
+  "from": "Yarı iletkende bir elektrik alan+x yönünde. Sürüklenmede elektron ve deliklerin yönleri hangisidir?",
+  "to": "Yarı iletkende bir elektrik alan +x yönünde. Sürüklenmede elektron ve deliklerin yönleri hangisidir?"
+ },
+ {
+  "from": "İkisi−x",
+  "to": "İkisi −x"
+ },
+ {
+  "from": "İkisi+x",
+  "to": "İkisi +x"
+ },
+ {
+  "from": "Elektron−x, delik+x",
+  "to": "Elektron −x, delik +x"
+ },
+ {
+  "from": "Elektron+x, delik−x",
+  "to": "Elektron +x, delik −x"
+ },
+ {
+  "from": "Elektrona etki eden kuvvet−eE olduğundan−x yönündedir. Delik için etkin kuvvet+eE olduğundan+x yönündedir. Sürüklenme yönleri bu yük farkına göre karşıttır.",
+  "to": "Elektrona etki eden kuvvet −eE olduğundan −x yönündedir. Delik için etkin kuvvet +eE olduğundan +x yönündedir. Sürüklenme yönleri bu yük farkına göre karşıttır."
+ },
+ {
+  "from": "Uygun koşulda doğru akım direnci 0 olabilir. Manyetik dışlama davranışı yalnız iyi normal iletkenlikten farklıdır. Aşırı alan veyaakım durumu bozabilir; soğutma tüketimi ayrıca hesaba girer.",
+  "to": "Uygun koşulda doğru akım direnci 0 olabilir. Manyetik dışlama davranışı yalnız iyi normal iletkenlikten farklıdır. Aşırı alan veya akım durumu bozabilir; soğutma tüketimi ayrıca hesaba girer."
+ },
+ {
+  "from": "Bir boşluk düzlem dalgasında seçili anda E alanı+y, B alanı−z yönünde. E×B yayılma yönünü veriyorsa dalga hangi yönde ilerler?",
+  "to": "Bir boşluk düzlem dalgasında seçili anda E alanı +y, B alanı −z yönünde. E×B yayılma yönünü veriyorsa dalga hangi yönde ilerler?"
+ },
+ {
+  "from": "+y ile+z için E×B yönü+x olur. B bu soruda−z olduğu için çarpımın işareti ters çevrilir. Yayılma−x yönündedir; D seçeneği doğrudur.",
+  "to": "+y ile +z için E×B yönü +x olur. B bu soruda −z olduğu için çarpımın işareti ters çevrilir. Yayılma −x yönündedir; D seçeneği doğrudur."
+ },
+ {
+  "from": "Bir düzlem dalgada ilk anda E=+y ve B=+z iken yayılma+x. Yarım periyot sonra E=−y ve B=−z oluyor. Yeni yayılma yönü nedir?",
+  "to": "Bir düzlem dalgada ilk anda E=+y ve B=+z iken yayılma +x. Yarım periyot sonra E=−y ve B=−z oluyor. Yeni yayılma yönü nedir?"
+ },
+ {
+  "from": "İkinci anda E×B=(−y)×(−z) yazılır. İki eksi işaret birbirini götürür ve y×z=x kalır. Alanlar salınırken dalga her yarım periyotta geri dönmez; yön+x’tir.",
+  "to": "İkinci anda E×B=(−y)×(−z) yazılır. İki eksi işaret birbirini götürür ve y×z=x kalır. Alanlar salınırken dalga her yarım periyotta geri dönmez; yön +x’tir."
+ },
+ {
+  "from": "Geometrik faz farkı 0 ama kaynak farkıπ olduğundan eşit katkılar her an birbirini sıfırlar.",
+  "to": "Geometrik faz farkı 0 ama kaynak farkı π olduğundan eşit katkılar her an birbirini sıfırlar."
+ },
+ {
+  "from": "Uzaklıklar eşit, kaynak faz farkıπ.",
+  "to": "Uzaklıklar eşit, kaynak faz farkı π."
+ },
+ {
+  "from": "Pozitif(n−1/2)λ<9 değerleri.",
+  "to": "Pozitif (n−1/2)λ<9 değerleri."
+ },
+ {
+  "from": "ΔU=−0,018 J;½·0,002·v²=0,018 → v²=18. Sürat pozitif köktür; kaynağın hareket etmediği açık verildi.",
+  "to": "ΔU=−0,018 J; ½·0,002·v²=0,018 → v²=18. Sürat pozitif köktür; kaynağın hareket etmediği açık verildi."
+ },
+ {
+  "from": "Sabit kaynakların bütün potansiyellerine aynı+50 V referans sabiti ekleniyor. A ile B arasındaki ΔV ne olur?",
+  "to": "Sabit kaynakların bütün potansiyellerine aynı +50 V referans sabiti ekleniyor. A ile B arasındaki ΔV ne olur?"
+ },
+ {
+  "from": "Üst levha 0 V, alt levha+100 V; aralık 0,10 m. Orta bölgede alan yönü?",
+  "to": "Üst levha 0 V, alt levha +100 V; aralık 0,10 m. Orta bölgede alan yönü?"
+ },
+ {
+  "from": "Düzgün E+x yönünde 4000 N/C. Test yükü+3 μC, alan boyunca+0,020 m ilerliyor. Elektrik işi?",
+  "to": "Düzgün E +x yönünde 4000 N/C. Test yükü +3 μC, alan boyunca +0,020 m ilerliyor. Elektrik işi?"
+ },
+ {
+  "from": "Sol+z telin sağında alan +y; sağ−z telin solunda yine+y. Toplam 20 μT olur.",
+  "to": "Sol +z telin sağında alan +y; sağ −z telin solunda yine +y. Toplam 20 μT olur."
+ },
+ {
+  "from": "Her katkı 10 μT, ikisi de+y.",
+  "to": "Her katkı 10 μT, ikisi de +y."
+ },
+ {
+  "from": "Gözlem O=(0; 0) m. Kaynak+2 μC(−1; 0),+1 μC(0; −1) m’de; k=9×10⁹. Net E bileşenleri?",
+  "to": "Gözlem O=(0; 0) m. Kaynak +2 μC (−1; 0), +1 μC (0; −1) m’de; k=9×10⁹. Net E bileşenleri?"
+ },
+ {
+  "from": "+4 μC x = 0,+1 μC x = 3 m’de. İki kaynak arasındaki sıfır alan noktası?",
+  "to": "+4 μC x = 0, +1 μC x = 3 m’de. İki kaynak arasındaki sıfır alan noktası?"
+ },
+ {
+  "from": "2(3−x)=x →x = 2 m. Daha küçük kaynağa daha yakınken iki alan büyüklüğü eşitlenir.",
+  "to": "2(3−x)=x → x = 2 m. Daha küçük kaynağa daha yakınken iki alan büyüklüğü eşitlenir."
+ },
+ {
+  "from": "4/x²=1/(3−x)²,0<x<3.",
+  "to": "4/x²=1/(3−x)², 0<x<3."
+ },
+ {
+  "from": "Sabit kaynakların P noktasında E=(3000; 0) N/C alanı var. Noktasal test yükü+1 nC’den 0’a değiştiriliyor. Hangisi doğrudur?",
+  "to": "Sabit kaynakların P noktasında E=(3000; 0) N/C alanı var. Noktasal test yükü +1 nC’den 0’a değiştiriliyor. Hangisi doğrudur?"
+ },
+ {
+  "from": "E = 0,kuvvet aynı olur.",
+  "to": "E = 0, kuvvet aynı olur."
+ },
+ {
+  "from": "vortalama = 18/6 = 3 m/s; süratortalama = 30/6 = 5 m/s. Dönüş, yol ile yer değiştirmeyi ayırır.",
+  "to": "vortalama = 18/6 = 3 m/s; ortalama sürat = 30/6 = 5 m/s. Dönüş, yol ile yer değiştirmeyi ayırır."
+ }
+]

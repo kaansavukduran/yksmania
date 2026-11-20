@@ -1,0 +1,66 @@
+[
+ {
+  "from": "4x+5=2x+43 eşitliğinden x=19 bulunur. Verilen ters açıların ölçüsü 4·19+5=81°dir. Komşu açı 180−81=99°dir. Denetim: Dört açı 81,99,81,99 olup toplamları 360°dir.",
+  "to": "4x+5=2x+43 eşitliğinden x=19 bulunur. Verilen ters açıların ölçüsü 4·19+5=81°dir. Komşu açı 180−81=99°dir. Denetim: Dört açı 81, 99, 81, 99 olup toplamları 360°dir."
+ },
+ {
+  "from": "x+2x+80+100=360 yazılır. 3x=180 olduğundan x=60 çıkar. Ölçüler 60,120,80,100 olduğundan en küçük 60°dir. Denetim: 60+120+80+100=360.",
+  "to": "x+2x+80+100=360 yazılır. 3x=180 olduğundan x=60 çıkar. Ölçüler 60, 120, 80, 100 olduğundan en küçük 60°dir. Denetim: 60+120+80+100=360."
+ },
+ {
+  "from": "1,4,6",
+  "to": "1, 4, 6"
+ },
+ {
+  "from": "3,3,6",
+  "to": "3, 3, 6"
+ },
+ {
+  "from": "2,2,5",
+  "to": "2, 2, 5"
+ },
+ {
+  "from": "4,6,9",
+  "to": "4, 6, 9"
+ },
+ {
+  "from": "2,3,5",
+  "to": "2, 3, 5"
+ },
+ {
+  "from": "Eşkenar ama 60°–120°açılı dörtgen düzgün değildir. Dört dik açılı 3×5 dikdörtgen de düzgün değildir. İki eşitliğin birlikte verilmesi düzgünlük tanımını sağlar. Denetim: Kare hem eş kenarlı hem eş açılıdır.",
+  "to": "Eşkenar ama 60°–120° açılı dörtgen düzgün değildir. Dört dik açılı 3×5 dikdörtgen de düzgün değildir. İki eşitliğin birlikte verilmesi düzgünlük tanımını sağlar. Denetim: Kare hem eş kenarlı hem eş açılıdır."
+ },
+ {
+  "from": "R=10 cm olduğundan a=10 cm. Alan 3√3·a²/2 formülü uygulanır. 3√3·100/2=150√3 cm²bulunur. Denetim: Apotem 5√3, çevre 60;60·5√3/2=150√3.",
+  "to": "R=10 cm olduğundan a=10 cm. Alan 3√3·a²/2 formülü uygulanır. 3√3·100/2=150√3 cm² bulunur. Denetim: Apotem 5√3, çevre 60;60·5√3/2=150√3."
+ },
+ {
+  "from": "R=aile eşkenar üçgenlere geç.",
+  "to": "R=a ile eşkenar üçgenlere geç."
+ },
+ {
+  "from": "B=20; p=18. Yanal alan 18·3=54. Toplam 20+54=74. Denetim: Kapalı 94−üst 20=74.",
+  "to": "B=20; p=18. Yanal alan 18·3=54. Toplam 20+54=74. Denetim: Kapalı 94 − üst 20 = 74."
+ },
+ {
+  "from": "Taban alanı 3²=9 kat olur. Yükseklik 3 kat olur. V_yeni/V_eski=9·3=27. Denetim: Örneğin 1 birim küp 3 birim küpe dönüşür; hacimler 1 ve27.",
+  "to": "Taban alanı 3²=9 kat olur. Yükseklik 3 kat olur. V_yeni/V_eski=9·3=27. Denetim: Örneğin 1 birim küp 3 birim küpe dönüşür; hacimler 1 ve 27."
+ },
+ {
+  "from": "n=5. Tabandaki 5 ayrıtın her köşesinden tepeye bir yan ayrıt gider:5 tane. Toplam 5+5=10. Denetim: Köşe 6−ayrıt 10+yüz 6=2.",
+  "to": "n=5. Tabandaki 5 ayrıtın her köşesinden tepeye bir yan ayrıt gider: 5 tane. Toplam 5+5=10. Denetim: Köşe 6 − ayrıt 10 + yüz 6 = 2."
+ },
+ {
+  "from": "İki doğru kesiştiğinde karşılıklı açılar ters olur. Ters açı eşitliği için başka bir paralel doğru gerekmez. Örneğin60°, 120°, 60°, 120° kesişimi diğer seçeneklerin neden zorunlu olmadığını gösterir. Denetim: 60°, 120°, 60°, 120° örneği 360°yi kaplar ve karşılıklılar eşittir.",
+  "to": "İki doğru kesiştiğinde karşılıklı açılar ters olur. Ters açı eşitliği için başka bir paralel doğru gerekmez. Örneğin 60°, 120°, 60°, 120° kesişimi diğer seçeneklerin neden zorunlu olmadığını gösterir. Denetim: 60°, 120°, 60°, 120° örneği 360°yi kaplar ve karşılıklılar eşittir."
+ },
+ {
+  "from": "İki doğru kesişiyor. Açılardan biri 82°ise tam karşısındaki ters açı kaç derecedir?",
+  "to": "İki doğru kesişiyor. Açılardan biri 82° ise tam karşısındaki ters açı kaç derecedir?"
+ },
+ {
+  "from": "Sorulan açı aynı kesişimde tam karşıdadır. Ters açı eşitliği82°=sorulan açı verir. Sorulan82°; komşu sorulsaydı98° olurdu. Denetim: 82+98+82+98=360°.",
+  "to": "Sorulan açı aynı kesişimde tam karşıdadır. Ters açı eşitliği 82° = sorulan açı verir. Sorulan 82°; komşu sorulsaydı98° olurdu. Denetim: 82+98+82+98=360°."
+ }
+]
