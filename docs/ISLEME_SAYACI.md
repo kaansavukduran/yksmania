@@ -11,8 +11,8 @@ Her geliştirme turunda güncellenir. Sayılar yalnız gerçekten yapılmış i�
 | Kayıtlı toplam PDF (kanonik envanter, 17 Kasım taraması) | 8.981 |
 | Kanonik defterde öğretim aktarımı **tam** | 7 |
 | Kanonik defterde **kısmi** | 2 |
-| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 112 |
-| Okunduğu doğrulanan PDF toplamı (bu dal) | 112 / 8.981 (%1,25) |
+| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 113 |
+| Okunduğu doğrulanan PDF toplamı (bu dal) | 113 / 8.981 (%1,26) |
 
 Arşivdeki PDF'lerin büyük kısmı aynı konunun farklı biçimleridir (TYT konu özeti, “Dersler Cepte” sunumu, etkinlik, okuma metni, deneme). Bu yüzden PDF yüzdesi konu kapsamını ölçmez; konu kapsamı aşağıdaki rehber tablosundadır.
 
@@ -26,20 +26,20 @@ Klasördeki numaralı kopya kâğıtları ders ders sayıldı (517 kopya kâğı
 | TYT Matematik | 38 | 5 | %13,2 |
 | TYT Geometri | 32 | 1 | %3,1 |
 | TYT Fizik | 24 | 7 | %29,2 |
-| TYT Kimya | 56 | 31 | %55,4 |
+| TYT Kimya | 56 | 32 | %57,1 |
 | TYT Biyoloji | 36 | 7 | %19,4 |
 | TYT Tarih | 24 | 4 | %16,7 |
 | TYT Coğrafya | 40 | 5 | %12,5 |
 | TYT Felsefe | 17 | 3 | %17,6 |
 | TYT Din Kültürü | 20 | 3 | %15,0 |
-| **TYT toplam** | **320** | **70** | **%21,9** |
+| **TYT toplam** | **320** | **71** | **%22,2** |
 | AYT Matematik | 17 | 2 | %11,8 |
 | AYT Geometri | 4 | 1 | %25,0 |
 | AYT Fizik | 46 | 7 | %15,2 |
 | AYT Kimya | 55 | 11 | %20,0 |
 | AYT Biyoloji | 75 | 11 | %14,7 |
 | **AYT toplam** | **197** | **32** | **%16,2** |
-| **Genel toplam** | **517** | **102** | **%19,7** |
+| **Genel toplam** | **517** | **103** | **%19,9** |
 
 Notlar: TYT Türkçe'de 028 numarası iki farklı konuda kullanılmış (33 dosya, 32 numara). TYT Kimya'da 031 aynı adla iki kez var (eski ve yeni sürüm; 55 farklı konu). TYT Matematik ve Geometri'de 000 numaralı genel özetler var. AYT klasöründeki 7 durum raporu “232 konu” diyor ama klasörlerde 197 AYT kopya kâğıdı bulunuyor; 35 konunun kopya kâğıdı Drive'da yok. Bu tablodaki sıfırlar, o derste kopya kâğıdından figür/taktik aktarılmadığını söyler; uygulamada o dersin anlatımı ve soruları yine vardır (ayrıntı aşağıdaki kapsam tablosunda).
 
@@ -157,6 +157,7 @@ Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen boz
 | 038 TYT Kimya – Kimyasal tepkime türleri (kopya kâğıdı) | `tepkime-turleri` dört figürü: tıklanabilir yedi denklem × altı ölçüt tablosu (yanma, sentez, analiz, asit-baz, çökelme, redoks*), I⁻ kaydırıcısıyla PbI₂ çökelme miktarı (0,010 mol, artan iyon), tıklanabilir A/B/C kapları (seyirci iyon, yeni katı), tıklanabilir yükseltgenme basamağı tablosu (2017 YGS Fen 23, cevap C); ölçüt taktiği | Kısmi |
 | 039 TYT Kimya – Denklemli miktar geçiş hesaplamaları (kopya kâğıdı) | `denklemli-miktar-gecisi` beş figürü: tıklanabilir mol merkezli dikey zincir (kütle, hacim, adet yolları), harcanan H₂ kaydırıcısıyla 1 : 3 : 2 çubukları, ayrışan su kaydırıcısıyla 2025 TYT Fen 12 toplam gaz (cevap A, %50), tıklanabilir su buharı / yoğuşmuş gaz hacimleri, adım kaydırıcısıyla üründen girene geriye zincir (6,72 L H₂ → 5,4 g Al); mol merkez taktiği | Kısmi |
 | 054 TYT Kimya – Polimerler, kozmetik ürünler ve ilaçlar (kopya kâğıdı) | `polimer-kozmetik-ilac` dört figürü: monomer kaydırıcısıyla etilen → polietilen zinciri (tekrar birimleri), tıklanabilir PE/PP/PVC/PS/PTFE/PET kartı (2019 TYT Fen 14, cevap A), tıklanabilir çözelti/süspansiyon/emülsiyon kabı, tıklanabilir ürünün dört düzeyi (ambalaj, dağılım, bileşen görevi, amaç); ad–yapı–işlev taktiği | Kısmi |
+| 055 TYT Kimya – Polimer, hazır gıda, ilaç ve yağ (kopya kâğıdı) | `polimer-gida-ilac-yag` dört figürü: porsiyon kaydırıcısıyla 100 g referans orantısı, tıklanabilir etiket rakamı / eşit 40 g karşılaştırması (m = ρV), C=C kaydırıcısıyla doymuş/tekli/çoklu doymamış zincir, tıklanabilir yağ işlemleri tablosu (natürel, rafine, riviera, vinterize, hidrojenasyon); payda–C=C–işlev taktiği | Kısmi |
 
 PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olarak etiketlenmez.
 
@@ -170,7 +171,7 @@ Bu tablo her turda uygulamanın kendi verisinden yeniden üretilir. “Resmî ko
 | TYT Matematik | 31 | 45 | 40 | 735 | 17 (%37,8) | 45 | 21 | 5 / 38 (%13,2) |
 | TYT Geometri | 16 | 19 | 19 | 217 | 19 (%100,0) | 174 | 15 | 1 / 32 (%3,1) |
 | TYT Fizik | 20 | 28 | 24 | 311 | 24 (%85,7) | 177 | 23 | 7 / 24 (%29,2) |
-| TYT Kimya | 17 | 57 | 55 | 535 | 34 (%59,6) | 151 | 34 | 31 / 56 (%55,4) |
+| TYT Kimya | 17 | 57 | 55 | 535 | 35 (%61,4) | 155 | 35 | 32 / 56 (%57,1) |
 | TYT Biyoloji | 18 | 45 | 36 | 515 | 12 (%26,7) | 37 | 14 | 7 / 36 (%19,4) |
 | TYT Tarih | 22 | 34 | 24 | 390 | 6 (%17,6) | 16 | 4 | 4 / 24 (%16,7) |
 | TYT Coğrafya | 21 | 40 | 40 | 400 | 8 (%20,0) | 17 | 5 | 5 / 40 (%12,5) |
@@ -181,9 +182,9 @@ Bu tablo her turda uygulamanın kendi verisinden yeniden üretilir. “Resmî ko
 | AYT Fizik | 32 | 47 | 46 | 541 | 11 (%23,4) | 26 | 15 | 7 / 46 (%15,2) |
 | AYT Kimya | 34 | 56 | 55 | 680 | 18 (%32,1) | 19 | 14 | 11 / 55 (%20,0) |
 | AYT Biyoloji | 29 | 76 | 75 | 907 | 16 (%21,1) | 39 | 12 | 11 / 75 (%14,7) |
-| **Toplam** | **341** | **540** | **505** | **6.465** | **193 (%35,7)** | **802** | **176** | **102 / 517 (%19,7)** |
+| **Toplam** | **341** | **540** | **505** | **6.465** | **194 (%35,9)** | **806** | **177** | **103 / 517 (%19,9)** |
 
-Okuma: anlatım ve soru bütün derslerde var (505 / 540 derste anlatım, 6.465 özgün soru); eksik olan en çok görsel/etkileşimli katman (figürlü ders %35) ve kopya kâğıtlarından aktarım (%19,7). AYT Matematik ve AYT Geometri'de resmî konu sayısı uygulama dersinden fazladır, çünkü bu derslerde birkaç resmî konu tek derste toplanmıştır.
+Okuma: anlatım ve soru bütün derslerde var (505 / 540 derste anlatım, 6.465 özgün soru); eksik olan en çok görsel/etkileşimli katman (figürlü ders %36) ve kopya kâğıtlarından aktarım (%19,9). AYT Matematik ve AYT Geometri'de resmî konu sayısı uygulama dersinden fazladır, çünkü bu derslerde birkaç resmî konu tek derste toplanmıştır.
 
 Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan konular):
 
@@ -214,7 +215,7 @@ Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan k
 | AYT Biyoloji | 75 | 4 |
 | **Toplam** | **371** | **82 (%22,1)** |
 
-Toplam bölüm figürü: 802 (828 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 135 (127 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
+Toplam bölüm figürü: 806 (832 bölümde; ilk sözel figürler: Selçuklu savaş şemaları). Soru tipi taktiği: 136 (128 konu taktiği + 8 yöntem taktiği); taktik kütüphanesinde 9 yöntem, 19 özgün çözümlü örnek.
 
 TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 
@@ -269,6 +270,7 @@ TYT Fizik'te figürü olmayan 1 rehber: fizik bilimine giriş.
 | 19 Kasım (44) | Biyoloji: güncel çevre sorunları 3 figür; 1 taktik | 1 | 81 / 371 |
 | 19 Kasım (45) | AYT Fizik: çembersel hareket, BHH izdüşümü, Lenz, Kmax–f, manyetik yarıçap (5 figür, birim sadeleştirmeli okumalar); 1 taktik; kupa sistemi | 0 | 81 / 371 |
 | 19 Kasım (46) | AYT Kimya: Boyle pistonu + P–V hiperbolü, denge bozulmasında etki anı (N₂ ekleme), kuvvetli asit–baz titrasyon eğrisi (mmol hesabı), Daniell pili (elektron/iyon yolu, 1,10 V), Cr/Cu orbital istisnaları (5 figür, birim okumalı) | 0 | 86 / 371 |
+| 20 Kasım (130) | Drive TYT Kimya 055 Polimer, hazır gıda, ilaç ve yağ okundu: porsiyon orantısı, mL–g paydası, C=C sayımı, yağ işlemleri tablosu (4 figür), 1 taktik | 0 | 143 / 371 |
 | 20 Kasım (129) | Drive TYT Kimya 054 Polimerler, kozmetik ve ilaçlar okundu: etilen zinciri, polimer kartı ve 2019 TYT Fen 14, dağılım türleri, ürünün dört düzeyi (4 figür), 1 taktik | 0 | 142 / 371 |
 | 20 Kasım (128) | Drive TYT Kimya 039 Denklemli miktar geçişi okundu: mol merkez zinciri, katsayı oranı, 2025 TYT Fen 12 toplam gaz, gaz hacmi ve suyun hâli, geriye zincir (5 figür), 1 taktik | 0 | 141 / 371 |
 | 20 Kasım (127) | Drive TYT Kimya 038 Kimyasal tepkime türleri okundu: ölçüt tablosu, PbI₂ miktarı, seyirci/katı kapları, basamak tablosu ve 2017 YGS Fen 23 (4 figür), 1 taktik | 0 | 140 / 371 |

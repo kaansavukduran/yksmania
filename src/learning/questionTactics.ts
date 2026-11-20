@@ -1890,6 +1890,19 @@ export const questionTactics: QuestionTactic[] = [
       "Ürünü dört düzeyde oku: ambalaj polimeri, dağılım türü, bileşen görevi, kullanım amacı. Etkin madde etkiyle, yardımcı madde (bağlayıcı, koruyucu) biçim ve kararlılıkla ilgilidir.",
     ],
   },
+  {
+    id: "etiket-payda-yag",
+    guides: ["polimer-gida-ilac-yag"],
+    match: /etiket|porsiyon|100 g|100 mL|yoğunluk|doymuş|doymamış|rafine|vinterize|riviera|hidrojen|emülgatör|antioksidan|koruyucu|pastörize|UHT/i,
+    title: "Etikette önce referansı ve paydayı eşitle; yağda C=C’yi say; işlem adını işleviyle oku",
+    steps: [
+      "Referansı işaretle: 100 g’da 18 g yağ → 35 g porsiyonda 35 × 18/100 = 6,3 g. Hacim etiketinde porsiyon sayısıyla orantıla (120 mL, 30 mL’de 4 g → 16 g).",
+      "mL ≠ g: m = ρV. 100 mL, ρ = 0,80 → 80 g; farklı paydalı etiketleri eşit kütlede karşılaştır (40 g’da A 9,6 g, B 6,0 g).",
+      "Doymuşlukta yalnız C=C sayılır: 0 doymuş, 1 tekli, 2+ çoklu doymamış; karboksildeki C=O sayılmaz. Triaçilgliserolde üç ester bağı vardır.",
+      "İşlem ≠ tür: rafine (arıtma), vinterize (soğutma–süzme, C=C değişmez), riviera (karışım), hidrojenasyon (H₂ katılması, C=C azalır); bir yağ hem rafine hem vinterize olabilir.",
+      "Ambalaj ve içerik ayrıdır (PET şişedeki yağ PET değildir; 2019 TYT Fen 14: PTFE kaplama malzemesidir). Katkının adı değil görevi sorulur: emülgatör dağılım, antioksidan oksitlenme, koruyucu mikrobiyal bozulma.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
