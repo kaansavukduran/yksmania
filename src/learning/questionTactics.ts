@@ -1578,6 +1578,19 @@ export const questionTactics: QuestionTactic[] = [
       "Belge türü: Mudanya ateşkes, Lozan kesin barış; Sevr imzalandı ama TBMM tanımadı, uygulanmadı.",
     ],
   },
+  {
+    id: "ahlak-gerekce-olcut",
+    guides: ["ahlak-felsefesi"],
+    match: /ahlak|etik|ödev|erdem|fayda|sonuç|vicdan|özgürlük|sorumluluk|determinizm|fatalizm|haz|mutluluk|Kant|Sokrates|Aristoteles|Epiküros|normatif|betimleyici/i,
+    title: "Ahlakta davranışın adından değil gerekçesinden yaklaşım seç",
+    steps: [
+      "“Çünkü”den sonrasını işaretle: ilke/ödev → Kant; etkilenenlerin toplam yararı → faydacılık; karakter/alışkanlık → erdem; kendi çıkarı → egoizm.",
+      "Betimleyici (“yapılıyor”) ile normatif (“yapılmalı”) yargıyı ayır; geçiş için köprü ilke gerekir ve yaygınlık haklılık değildir.",
+      "Özgürlük: katı determinizm özgür iradeyi reddeder; fatalizmde sonuç seçimden bağımsız; otodeterminizm kişinin kendini yönetmesi; nedensellik ≠ kader.",
+      "Sorumlulukta bilgi, niyet, seçenekler ve zorlamayı oku; “bilen iyi davranır” iddiasına kötüyü bilip seçmek karşı örnektir (2025 TYT Sosyal 13: C).",
+      "Düşünür adından önce pasajdaki ölçütü bul; aynı eylemi onaylamak aynı gerekçe demek değildir.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
