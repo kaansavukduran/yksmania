@@ -3,19 +3,23 @@ import { displayFix } from "../src/learning/displayFixes";
 import { typeset } from "../src/domain/typeset";
 import { lessons } from "../src/domain/content";
 import { localizedQuestionView } from "../src/domain/questionPresentation";
+import { lessonGuides } from "../src/learning/guides";
 
 const files = import.meta.glob<{ from: string; to: string }[]>("../src/learning/displayFixes/*.json", { eager: true, import: "default" });
 const rows = Object.values(files).flat();
 const text = (v: unknown) => (typeof v === "string" ? v : ((v as { tr?: string } | undefined)?.tr ?? ""));
 
 describe("gösterim onarımları", () => {
-  it("every repair still matches a current card string, so none is dead", () => {
+  it("every repair still matches a current card or lesson string, so none is dead", () => {
     const strings = new Set<string>();
     for (const lesson of lessons)
       for (const raw of lesson.questions) {
         const q = localizedQuestionView(raw) as never as Record<string, unknown> & { options: unknown[] };
         for (const v of [q.prompt, q.passage, q.explanation, q.hint, ...q.options]) if (v) strings.add(text(v));
       }
+    // Lesson paragraphs are repaired the same way (files named anlatim-*).
+    for (const guide of lessonGuides.values())
+      for (const section of guide.sections) for (const paragraph of section.paragraphs) strings.add(paragraph);
     expect(rows.filter((r) => !strings.has(r.from)).map((r) => r.from.slice(0, 60))).toEqual([]);
   });
   it("a repair never changes digits unless it only removes a leaked note, and never adds an em dash or ASCII ellipsis", () => {

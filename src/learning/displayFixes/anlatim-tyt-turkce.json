@@ -1,0 +1,122 @@
+[
+ {
+  "from": "Bir paragrafa bağlı iki veya daha çok soru, aynı bilgiyi farklı işlemler için kullanır. Bir soru yazarın temel düşüncesini, diğeri açık bir ayrıntıyı, bir başkası desteklenmeyen bir çıkarımı isteyebilir. Metin ortaktır; soru kökü, seçenekler ve seçilecek yanıt her kart için yeniden değerlendirilir.",
+  "to": "Bir paragrafa bağlı iki veya daha çok soru, aynı bilgiyi farklı işlemler için kullanır. Bir soru yazarın temel düşüncesini, diğeri açık bir ayrıntıyı, bir başkası desteklenmeyen bir çıkarımı isteyebilir. Metin ortaktır; soru kökü, seçenekler ve seçilecek yanıt her soru için yeniden değerlendirilir."
+ },
+ {
+  "from": "İlk çözümlü örnekte soru hedefi, cümle kanıtı ve kapsam denetimini sırayla aç. Sonraki örnekte yalnız takıldığın basamağı oku. Ardından yeni bir soru kartında tam pasajı kullanarak kendi gerekçeni oluştur; önceki örneğin cümlesini hazır sonuç diye kopyalama.",
+  "to": "İlk çözümlü örnekte soru hedefi, cümle kanıtı ve kapsam denetimini sırayla aç. Sonraki örnekte yalnız takıldığın basamağı oku. Ardından yeni bir soruda tam pasajı kullanarak kendi gerekçeni oluştur; önceki örneğin cümlesini hazır sonuç diye kopyalama."
+ },
+ {
+  "from": "Etkileşimli modelde soru değiştiğinde tahmin ve açıklama yeniden kurulur. Bu keşif bir sınav sonucu veya konu tamamlama kaydı üretmez. Geri çağırma sorularında yöntemi metne bakmadan anlatabilir, sonra eksik kalan ayrımı tekrar okuyabilirsin. Çalışma süresi ve ekrana bakmak tek başına öğrenildiği anlamına gelmez.",
+  "to": "Etkileşimli modelde soru değiştiğinde tahmin ve açıklama yeniden kurulur. Geri çağırma sorularında yöntemi metne bakmadan anlatabilir, sonra eksik kalan ayrımı tekrar okuyabilirsin. Çalışma süresi ve ekrana bakmak tek başına öğrenildiği anlamına gelmez."
+ },
+ {
+  "from": "Çözümlü örnekte açıklanan metni ezberlemek yerine aynı yöntemi yeni bir pasajda uygula. Geri çağırırken konu ile ana düşünceyi kendi farklı örneğinle anlat. Yanlışta ilk dışlanan cümleyi veya eklenen alanı belirle; yalnız doğru başlığı tekrar etme. Bu çalışma bir kişi hakkında genel okuma başarısı ölçümü değildir.",
+  "to": "Çözümlü örnekte açıklanan metni ezberlemek yerine aynı yöntemi yeni bir pasajda uygula. Geri çağırırken konu ile ana düşünceyi kendi farklı örneğinle anlat. Yanlışta ilk dışlanan cümleyi veya eklenen alanı belirle; yalnız doğru başlığı tekrar etme."
+ },
+ {
+  "from": "Sorudaki metin, gösterge ve dipnotlar verinin parçasıdır. Bir simge on kitabı temsil ediyorsa üç simge otuz kitaptır; açıklama yoksa simgeyi otomatik bir kişi diye okuyamazsın. Bu derste soru kartları gereken verileri tam metin olarak verir. Atölyede aynı kayıtlar okunabilir yazı ve özgün çizim ile birlikte gösterilir.",
+  "to": "Sorudaki metin, gösterge ve dipnotlar verinin parçasıdır. Bir simge on kitabı temsil ediyorsa üç simge otuz kitaptır; açıklama yoksa simgeyi otomatik bir kişi diye okuyamazsın. Atölyede aynı kayıtlar okunabilir yazı ve özgün çizim ile birlikte gösterilir."
+ },
+ {
+  "from": "Etkileşimli modelde miktar ve doluluk görünümünü değiştirerek sıralamanın neden değişebildiğini incele. Dönem seçimi değişince veri kümesini de yeniden oku. Tahminin gerekçesini yazıp sonra model açıklamasını aç. Bu keşif puan veya gerçek araştırma sonucu üretmez; yeni soru kartları kendi tam verileriyle bağımsız çözülür.",
+  "to": "Etkileşimli modelde miktar ve doluluk görünümünü değiştirerek sıralamanın neden değişebildiğini incele. Dönem seçimi değişince veri kümesini de yeniden oku. Tahminin gerekçesini yazıp sonra model açıklamasını aç. Yeni sorular kendi tam verileriyle bağımsız çözülür."
+ },
+ {
+  "from": "Etkileşimli alanda metin, soru ve kanıt cümlesi seçimini ayrı ayrı değiştirebilirsin. Yeni seçim kanıt bağlarını değiştirir; buna göre eski gerekçeni yeniden değerlendirmelisin. Bu keşif puan veya konu tamamlama kaydı üretmez. Ardından çözümlü örneklerde desteği kademeli açıp bağımsız sorularda tam pasaj üzerinden aynı işlemi kendin yürüt.",
+  "to": "Etkileşimli alanda metin, soru ve kanıt cümlesi seçimini ayrı ayrı değiştirebilirsin. Yeni seçim kanıt bağlarını değiştirir; buna göre eski gerekçeni yeniden değerlendirmelisin. Ardından çözümlü örneklerde desteği kademeli açıp bağımsız sorularda tam pasaj üzerinden aynı işlemi kendin yürüt."
+ },
+ {
+  "from": "Bu ünitenin çalışma başlığı paragrafta röportajdır; odak, verilen görüşme parçasını anlamak ve soruları yanıtlarla eşlemektir. Türün geniş anlamıyla soru tipinin dar becerisini ayır. Bir metinde soru–cevap bulunması onun bütün özelliklerinin tek başına belirlendiğini göstermez. Tür bilgisi soruluyorsa açık yapı özelliklerini, okuma soruluyorsa parçadaki gerçek sözleri kullan.",
+  "to": "Burada çalışılan konu paragrafta röportajdır; odak, verilen görüşme parçasını anlamak ve soruları yanıtlarla eşlemektir. Türün geniş anlamıyla soru tipinin dar becerisini ayır. Bir metinde soru–cevap bulunması onun bütün özelliklerinin tek başına belirlendiğini göstermez. Tür bilgisi soruluyorsa açık yapı özelliklerini, okuma soruluyorsa parçadaki gerçek sözleri kullan."
+ },
+ {
+  "from": "“Bu yöntemi” gibi bir gönderme bir önceki yanıttaki eyleme bağlanıyorsa oku öncülünden başlat. Önceki yanıt değiştiğinde takip sorusunun neye gönderdiği de değişebilir veya soru artık uygunsuz kalabilir. Etkileşimli görüşmede bu bağı gerçekten değiştirebilir, verilen yeni yanıtın önceki sözle tutarlı olup olmadığını inceleyebilirsin. Keşif, puanlı bir sınav sonucu değildir.",
+  "to": "“Bu yöntemi” gibi bir gönderme bir önceki yanıttaki eyleme bağlanıyorsa oku öncülünden başlat. Önceki yanıt değiştiğinde takip sorusunun neye gönderdiği de değişebilir veya soru artık uygunsuz kalabilir. Etkileşimli görüşmede bu bağı gerçekten değiştirebilir, verilen yeni yanıtın önceki sözle tutarlı olup olmadığını inceleyebilirsin."
+ },
+ {
+  "from": "Öğretim modelinde aynı atölye konusu dört farklı amaçla anlatılır. Bir seçimde olayın aşamaları, diğerinde aynı an özellikleri, başka birinde işleyiş veya sav-gerekçe haritası görünür olur. Bu model hazırlanmış tam metinleri inceler; her Türkçe paragrafı kendiliğinden çözen genel bir dil çözümleyicisi değildir.",
+  "to": "Öğretim modelinde aynı atölye konusu dört farklı amaçla anlatılır. Bir seçimde olayın aşamaları, diğerinde aynı an özellikleri, başka birinde işleyiş veya sav-gerekçe haritası görünür olur. Bu model hazırlanmış tam metinleri inceler."
+ },
+ {
+  "from": "Bu ünitenin etkileşiminde hazır tam metinler üzerinden desteklenen, çelişen ve belirlenemeyen iddiaları karşılaştırırsın. Seçim ve gerekçe bir öğrenme denemesidir; kendiliğinden ustalık veya puan oluşturmaz. Ardından bağımsız sorularda aynı yöntemi yeni pasajlarla uygula. Takıldığında yalnız cevabı ezberlemek yerine kapsamı değiştiren sözcüğü bulup kendi yanlış çıkarımını yeniden yaz.",
+  "to": "Etkileşimde hazır tam metinler üzerinden desteklenen, çelişen ve belirlenemeyen iddiaları karşılaştırırsın. Seçim ve gerekçe bir öğrenme denemesidir. Ardından bağımsız sorularda aynı yöntemi yeni pasajlarla uygula. Takıldığında yalnız cevabı ezberlemek yerine kapsamı değiştiren sözcüğü bulup kendi yanlış çıkarımını yeniden yaz."
+ },
+ {
+  "from": "Yeni sınav metninde cümlelerin uzunluğu veya sıra sayısı değişse bile aynı adımları uygula: tam oku, işlevleri bul, aday sınırı kur, iki bloğu ayrı denetle ve ilk yeni cümleyi işaretle. Bu ünitenin modeli hazırlanmış tam metinleri karşılaştırır; belirli sözcüklere otomatik paragraf yasağı koymaz. Sonraki sorular aynı yöntemi farklı bağlamlarda sınar.",
+  "to": "Yeni sınav metninde cümlelerin uzunluğu veya sıra sayısı değişse bile aynı adımları uygula: tam oku, işlevleri bul, aday sınırı kur, iki bloğu ayrı denetle ve ilk yeni cümleyi işaretle. Buradaki model hazırlanmış tam metinleri karşılaştırır; belirli sözcüklere otomatik paragraf yasağı koymaz. Sonraki sorular aynı yöntemi farklı bağlamlarda sınar."
+ },
+ {
+  "from": "Modelde cümleyi çıkarıp geri getirdiğinde bağlantılar ve kalan metin birlikte değişir. Her değişim bir düşünce denemesidir; otomatik puan, çalışma süresinden ustalık veya konu bitirme kaydı oluşturmaz. Bağımsız sorularda metni yeni baştan oku, gerekçeni kanıta bağla ve yanlış seçeneklerin neden uygun kalabildiğini de açıkla.",
+  "to": "Modelde cümleyi çıkarıp geri getirdiğinde bağlantılar ve kalan metin birlikte değişir. Her değişim bir düşünce denemesidir. Bağımsız sorularda metni yeni baştan oku, gerekçeni kanıta bağla ve yanlış seçeneklerin neden uygun kalabildiğini de açıkla."
+ },
+ {
+  "from": "Kalıplaşmışlık da gereklidir. Bir yazarın yeni kurduğu “düşüncelerim mor bir bulut oldu” benzetmesi mecazlı olabilir ama sırf mecaz olduğu için yerleşik deyim sayılmaz. Bu ünitede hazırlanmış ve anlamı açık bağlamlar kullanılır. Yeni bir sözle karşılaşırsan yalnız ilginç görünmesine dayanma; yerleşik kullanımı ve olay içindeki işlevini birlikte araştırmak gerekir.",
+  "to": "Kalıplaşmışlık da gereklidir. Bir yazarın yeni kurduğu “düşüncelerim mor bir bulut oldu” benzetmesi mecazlı olabilir ama sırf mecaz olduğu için yerleşik deyim sayılmaz. Yeni bir sözle karşılaşırsan yalnız ilginç görünmesine dayanma; yerleşik kullanımı ve olay içindeki işlevini birlikte araştırmak gerekir."
+ },
+ {
+  "from": "Etkileşimde bağlamı değiştirdiğinde kelimeler benzer kalsa bile anlam grubu ve sonuç bağı değişir. Gerçek anlamda organlara ayrı roller verilebilir; deyim kullanımında sözün bütünü tek durumun karşılığı olur. Bu, her Türkçe cümleyi otomatik çözme iddiası değildir; hazırlanmış iki açık sahneyi karşılaştırarak bağlamın nasıl kanıt sağladığını görmeni amaçlar.",
+  "to": "Etkileşimde bağlamı değiştirdiğinde kelimeler benzer kalsa bile anlam grubu ve sonuç bağı değişir. Gerçek anlamda organlara ayrı roller verilebilir; deyim kullanımında sözün bütünü tek durumun karşılığı olur. Amaç, hazırlanmış iki açık sahneyi karşılaştırarak bağlamın nasıl kanıt sağladığını görmendir."
+ },
+ {
+  "from": "Özdeyiş ya da vecize, söyleyeni bilinen özlü bir yargı olarak atasözünden ayrılır. Yerleşik atasözünün söyleyeni genellikle bilinmez; toplumun ortak dilinde yaşar. Fakat bir sözü ünlü biri de söylemiş diye o sözü mutlaka ilk onun kurduğunu varsayma. Tür ayrımı için kaynak ve yerleşiklik bilgisi gerekir; bu ünitenin soruları gereken bağlamı açık verir.",
+  "to": "Özdeyiş ya da vecize, söyleyeni bilinen özlü bir yargı olarak atasözünden ayrılır. Yerleşik atasözünün söyleyeni genellikle bilinmez; toplumun ortak dilinde yaşar. Fakat bir sözü ünlü biri de söylemiş diye o sözü mutlaka ilk onun kurduğunu varsayma. Tür ayrımı için kaynak ve yerleşiklik bilgisi gerekir."
+ },
+ {
+  "from": "Hızlı tekrar sırasında her sözün yanına “durum/genel yargı”, “anlam”, “ayırt edici sonuç” ve “yakın karışıklık” notlarını düşün. Uzun bir ezber listesi tek başına olayla eşleme becerisini kurmaz. Bir sözün anlamını bildiğini, onu yeni bir bağlamda doğru açıklayıp benzer sözden ayırabildiğinde daha sağlam gösterirsin. Keşif ve not okumak puan kanıtı değildir; bağımsız sorularda kendi kararını üret.",
+  "to": "Hızlı tekrar sırasında her sözün yanına “durum/genel yargı”, “anlam”, “ayırt edici sonuç” ve “yakın karışıklık” notlarını düşün. Uzun bir ezber listesi tek başına olayla eşleme becerisini kurmaz. Bir sözün anlamını bildiğini, onu yeni bir bağlamda doğru açıklayıp benzer sözden ayırabildiğinde daha sağlam gösterirsin. Bağımsız sorularda kendi kararını üret."
+ },
+ {
+  "from": "Yorumu cümlenin verdiği sınırda tut. Yargının öznesi, zamanı, olumlu veya olumsuz oluşu ve kesinliği değişirse aynı anlam kalmayabilir. Önce doğrudan söyleneni sadeleştir; sonra gerekiyorsa bundan zorunlu çıkan sonucu yaz. Uygulamadaki hazırlanmış örnekler bu ayrımı çizgilerle görünür kılar; sınırlı örnekleri serbest yazılmış her cümleyi anlayan genel bir dil çözümleyicisi gibi kullanma.",
+  "to": "Yorumu cümlenin verdiği sınırda tut. Yargının öznesi, zamanı, olumlu veya olumsuz oluşu ve kesinliği değişirse aynı anlam kalmayabilir. Önce doğrudan söyleneni sadeleştir; sonra gerekiyorsa bundan zorunlu çıkan sonucu yaz. Hazırlanmış örnekler bu ayrımı çizgilerle görünür kılar."
+ },
+ {
+  "from": "Tahmin ve olasılık bazı örneklerde birlikte bulunabilir; bunlar her zaman birbirini dışlayan kutular değildir. “Sanırım” sözü tek başına kanıtın ne olduğunu söylemez. Soru özellikle tahmin–ön yargı ayrımı istiyorsa kişi hangi bilgiye bakıyor, deneyim var mı, peşin karar mı veriyor diye bağlamı oku. Uygulamadaki kartlar gereken ipucunu açıkça verir; gelecekle ilgili her yargıyı peşin hüküm saymaz.",
+  "to": "Tahmin ve olasılık bazı örneklerde birlikte bulunabilir; bunlar her zaman birbirini dışlayan kutular değildir. “Sanırım” sözü tek başına kanıtın ne olduğunu söylemez. Soru özellikle tahmin–ön yargı ayrımı istiyorsa kişi hangi bilgiye bakıyor, deneyim var mı, peşin karar mı veriyor diye bağlamı oku. Gelecekle ilgili her yargı peşin hüküm değildir."
+ },
+ {
+  "from": "Pişmanlık, yapılan bir iş veya söylenen söz nedeniyle üzüntüdür: “Keşke ona o kırıcı sözü söylemeseydim.” Hayıflanma ise çoğu okul örneğinde yapılmamış veya değerlendirilememiş fırsat için üzülmeyi anlatır: “Keşke gençken yüzme öğrenseydim.” İkisinde de keşke bulunabilir; ayrımı yalnız bu sözcük değil, yapılan veya yapılamayan davranış kurar.",
+  "to": "Pişmanlık, yapılan bir iş veya söylenen söz nedeniyle üzüntüdür: “Keşke ona o kırıcı sözü söylemeseydim.” Hayıflanma ise çoğu örnekte yapılmamış veya değerlendirilememiş fırsat için üzülmeyi anlatır: “Keşke gençken yüzme öğrenseydim.” İkisinde de keşke bulunabilir; ayrımı yalnız bu sözcük değil, yapılan veya yapılamayan davranış kurar."
+ },
+ {
+  "from": "Alay, her mecazla veya kinayenin bütün tanımlarıyla aynı şey değildir. Bir sözün hem gerçek hem mecaz okunabilmesi başka bir özellik; tersini söyleyerek eleştirmek başka bir işlevdir. Kaynaklar kinayeli anlatım başlığını farklı genişlikte kullanabilir. Bu ünitede sözün işlevi açık olayla açıklanır; bağlam olmadan yalnız güzel veya çalışkan sıfatı görerek alay hükmü verilmez.",
+  "to": "Alay, her mecazla veya kinayenin bütün tanımlarıyla aynı şey değildir. Bir sözün hem gerçek hem mecaz okunabilmesi başka bir özellik; tersini söyleyerek eleştirmek başka bir işlevdir. Kaynaklar kinayeli anlatım başlığını farklı genişlikte kullanabilir. Burada sözün işlevi açık olayla açıklanır; bağlam olmadan yalnız güzel veya çalışkan sıfatı görerek alay hükmü verilmez."
+ },
+ {
+  "from": "Çözümünü etiket artı kanıt biçiminde kur: “Amaç; çünkü eylemin hedefi verilmiş, hedefe ulaşıldığı ayrıca söylenmemiş.” Ardından yakın hatayı açıkla: neden değil, zira hedef gerçekleşmiş sebep olarak sunulmuyor. Bu kısa gerekçe, aynı bağlacın başka işlevde olduğu yeni bir örneğe aktarımı kolaylaştırır. Etkileşimde tahminini yazman düşünceni görünür kılar; otomatik ustalık veya XP oluşturmaz.",
+  "to": "Çözümünü etiket artı kanıt biçiminde kur: “Amaç; çünkü eylemin hedefi verilmiş, hedefe ulaşıldığı ayrıca söylenmemiş.” Ardından yakın hatayı açıkla: neden değil, zira hedef gerçekleşmiş sebep olarak sunulmuyor. Bu kısa gerekçe, aynı bağlacın başka işlevde olduğu yeni bir örneğe aktarımı kolaylaştırır. Etkileşimde tahminini yazman düşünceni görünür kılar."
+ },
+ {
+  "from": "Sıralama sırasında her gönderme için bir ok düşün: sözü edilen şey nerede tanıtıldı? Ok önceki bir tanıtıma gidiyorsa yerel bağ desteklenir; henüz açıklanmamış bir işaret varsa eksik halka olabilir. Bazı edebî metinler bilerek geç tanıtır; bu ünitenin hazır örneklerinde ise amaçlanan öncül bağı açık verilir. Genel dilde her zamirin zorunlu en yakın ada gittiğini iddia etme.",
+  "to": "Sıralama sırasında her gönderme için bir ok düşün: sözü edilen şey nerede tanıtıldı? Ok önceki bir tanıtıma gidiyorsa yerel bağ desteklenir; henüz açıklanmamış bir işaret varsa eksik halka olabilir. Bazı edebî metinler bilerek geç tanıtır; buradaki hazır örneklerde ise amaçlanan öncül bağı açık verilir. Genel dilde her zamirin zorunlu en yakın ada gittiğini iddia etme."
+ },
+ {
+  "from": "Olumsuz soru kökünü de işaretle: uygun olanı mı, uygun olmayanı mı arıyorsun? Önce diğer seçeneklerin hangi cümleyle desteklendiğini göster, sonra desteklenmeyene karar ver. Metni eksik bırakılmış bir kartın ana düşüncesi sorulamaz; bu ünitede yorum gerektiren her kartın tam paragrafı kendi içinde bulunur. Önceki ders sayfasına dönüp metin aramak gerekmez.",
+  "to": "Olumsuz soru kökünü de işaretle: uygun olanı mı, uygun olmayanı mı arıyorsun? Önce diğer seçeneklerin hangi cümleyle desteklendiğini göster, sonra desteklenmeyene karar ver."
+ },
+ {
+  "from": "Tekrar sırasında farklı bir kısa paragrafla aynı işlemi yap: giriş neden bağımsız, hangi cümle örnek, son yargı neyi bağlıyor? Hazır düzenleme modelinde sırayı değiştirdikten sonra kopan bağı kendi sözlerinle açıkla. Bir paragraftaki beş sorunun metni paylaşması gerektiğinde her kart yine tam metni göstermelidir; metni hatırlamayı ölçmeden okuduğunu anlamayı sınamak gerekir.",
+  "to": "Tekrar sırasında farklı bir kısa paragrafla aynı işlemi yap: giriş neden bağımsız, hangi cümle örnek, son yargı neyi bağlıyor? Hazır düzenleme modelinde sırayı değiştirdikten sonra kopan bağı kendi sözlerinle açıkla."
+ },
+ {
+  "from": "Onarım sırasında koruman gereken bilgileri yaz: kim yaptı, ne oldu, kime veya neye yöneldi, ne zaman ve hangi kesinlikte anlatıldı? Sonra sorunlu bağı belirle, gereken en küçük değişikliği yap ve cümleyi aynı amaçla yeniden oku. Kulağa alışılmadık gelmesi tek başına kural değildir. Hazır etkileşimler bu nedenle tam cümleyi ve amacı birlikte verir; serbest yazılmış her Türkçe cümleyi otomatik çözdüğümüzü söylemeyiz.",
+  "to": "Onarım sırasında koruman gereken bilgileri yaz: kim yaptı, ne oldu, kime veya neye yöneldi, ne zaman ve hangi kesinlikte anlatıldı? Sonra sorunlu bağı belirle, gereken en küçük değişikliği yap ve cümleyi aynı amaçla yeniden oku. Kulağa alışılmadık gelmesi tek başına kural değildir. Hazır etkileşimler bu nedenle tam cümleyi ve amacı birlikte verir."
+ },
+ {
+  "from": "Kesinlik ve olasılık sözcükleri her görünüşte otomatik çelişki değildir. “Kesinlikle gelebilir.” sözü izin veya gelmenin mümkün olduğundan emin olma anlamıyla kurulabilir. Bu rehber, bağlamı verilmemiş bütün böyle cümleleri yanlış saymaz. Hata incelemesinde kesinlik ve belirsizlik gerçekten aynı tek iddiaya aynı anlamda mı yükleniyor, yoksa farklı katmanlar mı var diye sor.",
+  "to": "Kesinlik ve olasılık sözcükleri her görünüşte otomatik çelişki değildir. “Kesinlikle gelebilir.” sözü izin veya gelmenin mümkün olduğundan emin olma anlamıyla kurulabilir. Bağlamı verilmemiş bütün böyle cümleler yanlış sayılmaz. Hata incelemesinde kesinlik ve belirsizlik gerçekten aynı tek iddiaya aynı anlamda mı yükleniyor, yoksa farklı katmanlar mı var diye sor."
+ },
+ {
+  "from": "Buna karşılık “Dosyayı açtı ve kapattı.” sözünde iki fiil aynı belirtme nesnesini paylaşabilir. İkinci yüklemden önce her ögeyi yeniden yazmak zorunlu değildir. Öge eksikliği incelemesi, gerçekten gereken ilişkinin yokluğuna dayanır; her söylenmemiş adı hata sayma. Açık veya bağlamdan tamamlanan referentle, yanlış ekli ortak ögeyi birbirinden ayır.",
+  "to": "Buna karşılık “Dosyayı açtı ve kapattı.” sözünde iki fiil aynı belirtme nesnesini paylaşabilir. İkinci yüklemden önce her ögeyi yeniden yazmak zorunlu değildir. Öge eksikliği incelemesi, gerçekten gereken ilişkinin yokluğuna dayanır; her söylenmemiş adı hata sayma. Açık veya bağlamdan tamamlanan göndergeyle, yanlış ekli ortak ögeyi birbirinden ayır."
+ },
+ {
+  "from": "Zarf ve araç/birliktelik öbekleri de her yargıya aynı anlamda yayılmayabilir. Bir olumsuz yargıdaki hiçbir zaman sözü ile sonraki olumlu yargının zamanı ayrıysa kapsamlarını açıklığa kavuştur. Bu uygulama araç ve birliktelik öbeklerini zarf tümleci altında gösterir; bazı kaynakların edat tümleci adını ayrıca kullanması aynı ilişkiyi başka başlıkla sınıflamasıdır. İki farklı adı iki ayrı eksiklik sanma.",
+  "to": "Zarf ve araç/birliktelik öbekleri de her yargıya aynı anlamda yayılmayabilir. Bir olumsuz yargıdaki hiçbir zaman sözü ile sonraki olumlu yargının zamanı ayrıysa kapsamlarını açıklığa kavuştur. Burada araç ve birliktelik öbekleri zarf tümleci altında gösterilir; bazı kaynakların edat tümleci adını ayrıca kullanması aynı ilişkiyi başka başlıkla sınıflamasıdır. İki farklı adı iki ayrı eksiklik sanma."
+ },
+ {
+  "from": "İnsan adlarından oluşan çoğul özneler üçüncü kişide tekil veya çoğul yüklemle kullanılabilir: “Öğrenciler geldi/geldiler.” Burada kullanılan okul sınıflamasında, nötr anlatımdaki insan dışı çoğullar için tekil yüklem örnekleri esas alınır. Fakat bu kuralın koşulu ve kişileştirme istisnası birlikte öğrenilmelidir; yalnız çokluk ekini saymak yeterli değildir.",
+  "to": "İnsan adlarından oluşan çoğul özneler üçüncü kişide tekil veya çoğul yüklemle kullanılabilir: “Öğrenciler geldi/geldiler.” Burada kullanılan sınıflamada, nötr anlatımdaki insan dışı çoğullar için tekil yüklem örnekleri esas alınır. Fakat bu kuralın koşulu ve kişileştirme istisnası birlikte öğrenilmelidir; yalnız çokluk ekini saymak yeterli değildir."
+ }
+]
