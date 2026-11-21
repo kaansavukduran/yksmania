@@ -66,8 +66,11 @@ for (const width of [320, 375, 1280]) {
           await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth),
           `${guide} · ${theme} yatay kaydırma`,
         ).toBe(true);
-        const axe = await new AxeBuilder({ page }).include("figure.section-figure").analyze();
-        expect(axe.violations.map((v) => `${v.id}: ${v.nodes.length}`), `${guide} · ${theme}`).toEqual([]);
+        // A guide page may show its section figures on later pages only.
+        if (await page.locator("figure.section-figure").count()) {
+          const axe = await new AxeBuilder({ page }).include("figure.section-figure").analyze();
+          expect(axe.violations.map((v) => `${v.id}: ${v.nodes.length}`), `${guide} · ${theme}`).toEqual([]);
+        }
       }
     }
   });

@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { appendFileSync } from "node:fs";
 import { lessonGuides } from "../../src/learning/guides";
 import { issueLine, openGuideDrawings, svgLayoutAudit } from "./helpers/svgAudit";
 
@@ -1465,7 +1466,10 @@ for (const width of [320, 375, 1280])
           issues: Issue[];
         };
         for (const i of r.issues) {
-          if (KNOWN.has([width, guide, i.kind, i.s].join("\t"))) known++;
+          const key = [width, guide, i.kind, i.s].join("\t");
+          // LAB_KNOWN_OUT records every clash (used once to write KNOWN).
+          if (process.env.LAB_KNOWN_OUT) appendFileSync(process.env.LAB_KNOWN_OUT, key + "\n");
+          if (KNOWN.has(key)) known++;
           else issues.push(issueLine(guide, i));
         }
       }

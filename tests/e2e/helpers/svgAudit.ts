@@ -269,6 +269,7 @@ export const svgLayoutAudit = async (opt) => {
   const SKIP = /^(Oynat|Durdur|Başlat|Duraklat|Devam et|Sonraki sayfa|Önceki sayfa)\b/;
   const STEP = /^(İleri|Sonraki adım|Sonraki|Adım)\b/;
   const fire = (el, v) => {
+    if (!el) return; // the control left the page after an earlier change
     const proto = el.tagName === "SELECT" ? HTMLSelectElement.prototype : HTMLInputElement.prototype;
     Object.getOwnPropertyDescriptor(proto, "value").set.call(el, String(v));
     el.dispatchEvent(new Event("input", { bubbles: true }));
