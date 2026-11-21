@@ -1,0 +1,26 @@
+.recall-check {
+  display: grid;
+  gap: 0.6rem;
+  justify-items: start;
+  margin: 1.4rem 0 0.4rem;
+  padding: var(--card-pad-sm, 1.05rem 1.1rem);
+  border: 1px dashed var(--accent);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--accent) 7%, var(--surface));
+  min-width: 0;
+  overflow-wrap: anywhere;
+  line-height: 1.55;
+}
+.recall-check p {
+  margin: 0;
+}
+.recall-check-prompt {
+  font-weight: 600;
+}
+.recall-check-answer {
+  padding-left: 0.8rem;
+  border-left: 3px solid var(--accent);
+}
+.recall-check button {
+  min-height: 44px;
+}

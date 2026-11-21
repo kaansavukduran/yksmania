@@ -15,6 +15,8 @@ const SectionFigure = lazy(() =>
 import type { LessonGuide, WorkedExample } from "./guides/types";
 import { resolveGuideStep } from "./guides/position";
 import { geometryFoundation031Ids } from "../data/supplementalTopics031";
+import { recallChecksFor } from "./recallChecks";
+import { RecallCheckCard } from "./RecallCheckCard";
 
 const visualFirstLessonIds = new Set<string>([
   "tyt-mat-mutlak-deger-kaynak-038",
@@ -164,6 +166,7 @@ export function GuidedReading({
   const [current, setCurrent] = useState(step);
   const [mode, setModeState] = useState<"all" | "page">(readGuideMode);
   const paged = mode === "page";
+  const checks = recallChecksFor(guide.id);
   const shown = (i: number) => !paged || current === i;
   function setMode(next: "all" | "page") {
     setModeState(next);
@@ -405,6 +408,11 @@ export function GuidedReading({
               )}
               <SectionPlaces text={[section.title, ...section.paragraphs].join(" ")} />
               {i === visualSection && !geometryCircle040Ids.includes(guide.id) && <VisualLab id={guide.id} />}
+              {checks
+                .filter((check) => check.after === i)
+                .map((check) => (
+                  <RecallCheckCard key={`${guide.id}-${i}-${check.prompt}`} check={check} />
+                ))}
               {/* “Tümünü gör” shows every page at once: no page-turn links. */}
               {paged && <PageTurn next={i + 1} title={pageTitle(i + 1)} onTurn={goTo} />}
             </section>

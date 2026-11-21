@@ -66,6 +66,11 @@ export default defineConfig({
               priority: 45,
             },
             {
+              name: "recall-checks",
+              test: /[\\/]src[\\/]learning[\\/]recallChecks[\\/][a-z-]+\.json$/,
+              priority: 45,
+            },
+            {
               name: "osym-patterns",
               test: /[\\/]src[\\/]learning[\\/]osym[\\/][0-9a-z-]+\.json$/,
               priority: 45,
