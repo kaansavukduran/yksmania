@@ -52,8 +52,8 @@ test("039 normal entry saves55 unassisted cards, draft, Today and original3/7/21
     await expect(page.locator(".question-meta")).toContainText(`${index+1} / 55`);
     await expect(page.locator(".question-panel h2")).toHaveText(typeset(card.prompt));
     const answers=page.locator(".answer-options .answer");await expect(answers).toHaveCount(5);
-    expect((await answers.locator("span:last-child").allTextContents()).map(text=>text.trim()).sort()).toEqual([...card.options].sort());
-    await answers.filter({has:page.getByText(card.correct,{exact:true})}).click();
+    expect((await answers.locator("span:last-child").allTextContents()).map(text=>text.trim()).sort()).toEqual([...card.options].map(typeset).sort());
+    await answers.filter({has:page.getByText(typeset(card.correct),{exact:true})}).click();
     await page.getByRole("button",{name:"Cevabı kontrol et",exact:true}).click();
     await expect(page.locator(".feedback.correct")).toBeVisible();
     if(index===0||index===53) {

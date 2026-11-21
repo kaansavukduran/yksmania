@@ -342,7 +342,7 @@ test("OGM six original cards preserve images and option order through normal Que
     const options = page.locator(".answer-options .answer");
     expect(
       await options.locator("span:nth-child(2)").allTextContents(),
-    ).toEqual(original.options);
+    ).toEqual(original.options.map(typeset));
     expect((await stored(page)).sessions).toEqual(before.sessions);
     await options.nth(original.correctIndex).click();
     await page

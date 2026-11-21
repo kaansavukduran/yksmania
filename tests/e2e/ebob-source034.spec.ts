@@ -680,11 +680,9 @@ test("all46 self-contained cards finish offline, Today shows actual46/46, manual
     await expect(answers).toHaveCount(5);
     const texts = await answers.locator("span:last-child").allTextContents();
     // All option data must belong to this card even though display order rotates.
-    expect(texts.map((text) => text.trim()).sort()).toEqual(
-      [...card.options].sort(),
-    );
+    expect(texts.map((text) => text.trim()).sort()).toEqual([...card.options].map(typeset).sort());
     await answers
-      .filter({ has: page.getByText(card.correct, { exact: true }) })
+      .filter({ has: page.getByText(typeset(card.correct), { exact: true }) })
       .click();
     await page
       .getByRole("button", { name: "Cevabı kontrol et", exact: true })

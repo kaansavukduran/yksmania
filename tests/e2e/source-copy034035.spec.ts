@@ -620,7 +620,7 @@ test("corrected guidance and summary render through normal assisted study; past-
       (await answers.locator("span:last-child").allTextContents())
         .map((text) => text.trim())
         .sort(),
-    ).toEqual([...card.options].sort());
+    ).toEqual([...card.options].map(typeset).sort());
     const repair = correctedHelp[number];
     if (repair) {
       const help = page.locator(".question-help");
@@ -653,7 +653,7 @@ test("corrected guidance and summary render through normal assisted study; past-
         });
     }
     await answers
-      .filter({ has: page.getByText(card.correct, { exact: true }) })
+      .filter({ has: page.getByText(typeset(card.correct), { exact: true }) })
       .click();
     await page
       .getByRole("button", { name: "Cevabı kontrol et", exact: true })
