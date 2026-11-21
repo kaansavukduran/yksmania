@@ -1,0 +1,374 @@
+[
+ {
+  "from": "Bir saydam ortamın belirli ışık frekansındaki kırılma indisi n=c/v’dir. c boşluktaki ışık sürati, v o ortamın faz süratidir. Olağan görünür ışık örneklerinde n büyüdüğünde v küçülür. n birimsizdir; suyun kütle yoğunluğunu kg/m³ olarak n yerine koyamazsın. Okul hesaplarında hava çoğunlukla n≈1 kabul edilir.",
+  "to": "Bir saydam ortamın belirli ışık frekansındaki kırılma indisi n=c/v’dir. c boşluktaki ışık sürati, v o ortamın faz süratidir. Olağan görünür ışık örneklerinde n büyüdüğünde v küçülür. n birimsizdir; suyun kütle yoğunluğunu kg/m³ olarak n yerine koyamazsın. Hesaplarda hava çoğunlukla n≈1 kabul edilir."
+ },
+ {
+  "from": "Optikçe çok yoğun sözü büyük kırılma indisini anlatır; bu, her maddenin kütle yoğunluğuna göre sıralama değildir. İndis frekansa bağlı olabilir; kırmızı ve mor için aynı sayıyı kullanmak özel bir yaklaşımdır. Bu ünitenin tek renkli arayüz modeli her ortam için seçilen tek bir n değerini kullanır; gerçek malzemenin bütün tayfını hesaplamaz.",
+  "to": "Optikçe çok yoğun sözü büyük kırılma indisini anlatır; bu, her maddenin kütle yoğunluğuna göre sıralama değildir. İndis frekansa bağlı olabilir; kırmızı ve mor için aynı sayıyı kullanmak özel bir yaklaşımdır. Buradaki tek renkli model her ortam için seçilen tek bir n değerini kullanır; gerçek malzemenin bütün tayfını hesaplamaz."
+ },
+ {
+  "from": "Her soruda önce hangi taraftan hangi tarafa geçildiğini ve açıların normalden ölçüldüğünü yaz. n=c/v ile sürati, Snell ile açıyı, f sabitliğiyle dalga boyunu ayrı hesapla. Snell’in sağ tarafı 1’i aşarsa hesap makinesine tanımsız arcsin zorlamak yerine tam yansıma koşulunu denetle. Sonuçları gerçek ışın çizimi ve HTML açıklamasıyla karşılaştır.",
+  "to": "Her soruda önce hangi taraftan hangi tarafa geçildiğini ve açıların normalden ölçüldüğünü yaz. n=c/v ile sürati, Snell ile açıyı, f sabitliğiyle dalga boyunu ayrı hesapla. Snell’in sağ tarafı 1’i aşarsa hesap makinesine tanımsız arcsin zorlamak yerine tam yansıma koşulunu denetle. Sonuçları gerçek ışın çizimiyle karşılaştır."
+ },
+ {
+  "from": "İnce mercek yaklaşımında merceğin kalınlığı diğer uzaklıklara göre küçük alınır. Optik merkezden geçen ışın bu modelde yön değiştirmeden çizilir; gerçek kalın merceklerde iki yüzey ve asal düzlemler ayrıca gerekir. Uygulamadaki simetrik mercek çizimi bir ölçü krokisi değildir; bütün sayısal uzaklıklar optik merkez düzleminden ölçülür.",
+  "to": "İnce mercek yaklaşımında merceğin kalınlığı diğer uzaklıklara göre küçük alınır. Optik merkezden geçen ışın bu modelde yön değiştirmeden çizilir; gerçek kalın merceklerde iki yüzey ve asal düzlemler ayrıca gerekir. Simetrik mercek çizimi bir ölçü krokisi değildir; bütün sayısal uzaklıklar optik merkez düzleminden ölçülür."
+ },
+ {
+  "from": "Bu ünitedeki sayısal prizma, tepe açısı 40°, hava indisi 1 ve verilen iki renk indisiyle tanımlanır. Birinci yüzeyin normalinden ölçülen geliş 30°’dir. Bu sayılar gerçek bir camın ölçülmüş tayf tablosu değildir; açıkça verilen öğretim modelidir. Çizim, yüzeylerin kesiştiği yerleri ve iki ayrı normal açısını korur.",
+  "to": "Buradaki sayısal prizma, tepe açısı 40°, hava indisi 1 ve verilen iki renk indisiyle tanımlanır. Birinci yüzeyin normalinden ölçülen geliş 30°’dir. Bu sayılar gerçek bir camın ölçülmüş tayf tablosu değildir; açıkça verilen öğretim modelidir. Çizim, yüzeylerin kesiştiği yerleri ve iki ayrı normal açısını korur."
+ },
+ {
+  "from": "Okulun küçük genlikli dalga leğeni modeli düzenli ortamı inceler. Gerçek kıyıda akıntı, rüzgâr, kırılan dalgalar ve kütle taşınımı da bulunabilir. Modeldeki enerji aktarımını gerçek denizde hiçbir madde hareketi yoktur sonucuna dönüştürme. Önce çizimin üstten görünüm mü, yüzey kesiti mi olduğunu belirle.",
+  "to": "Küçük genlikli dalga leğeni modeli düzenli ortamı inceler. Gerçek kıyıda akıntı, rüzgâr, kırılan dalgalar ve kütle taşınımı da bulunabilir. Modeldeki enerji aktarımını gerçek denizde hiçbir madde hareketi yoktur sonucuna dönüştürme. Önce çizimin üstten görünüm mü, yüzey kesiti mi olduğunu belirle."
+ },
+ {
+  "from": "Aynı düzenli ve yaklaşık dağılımsız ortamda frekansı değiştirmek dalga boyunu ters yönde değiştirir. Amplitüd yüzeyin dengeye göre en büyük uzanımıdır; tepeden çukura düşey fark 2 A’dır. λ yatay, A düşey bir uzunluktur. Bir dalga tepesinin bir periyotta aldığı yol λ iken bir parçacığın net yer değiştirmesi farklı olabilir.",
+  "to": "Aynı düzenli ve yaklaşık dağılımsız ortamda frekansı değiştirmek dalga boyunu ters yönde değiştirir. Amplitüd yüzeyin dengeye göre en büyük uzanımıdır; tepeden çukura düşey fark 2A’dır. λ yatay, A düşey bir uzunluktur. Bir dalga tepesinin bir periyotta aldığı yol λ iken bir parçacığın net yer değiştirmesi farklı olabilir."
+ },
+ {
+  "from": "Dalga leğeninin sığ-su okul yaklaşımında daha derin bölgedeki yayılma sürati daha büyüktür. Durgun sınırdan geçen aynı kaynağın frekansı iki bölgede aynıdır; v₂/v₁=λ₂/λ₁ olur. Sığdan derine geçişte sürat ve λ artar, T değişmez. Derinden sığa geçişte ikisi azalır.",
+  "to": "Dalga leğeninin sığ-su yaklaşımında daha derin bölgedeki yayılma sürati daha büyüktür. Durgun sınırdan geçen aynı kaynağın frekansı iki bölgede aynıdır; v₂/v₁=λ₂/λ₁ olur. Sığdan derine geçişte sürat ve λ artar, T değişmez. Derinden sığa geçişte ikisi azalır."
+ },
+ {
+  "from": "Maddenin esnekliği ve yoğunluğu birlikte belirleyicidir; yalnız tanecik yakınlığı veya yoğunlukla evrensel sürat sıralaması kurma. Okulun demir–su–hava örneklerinde sürat genellikle katıda büyük, gazda küçük bulunur; bütün katıların bütün sıvılardan hızlı olması bir yasa değildir. Ses suya geçerken sabit sınır ve aynı kaynakta f korunur, v ve λ değişir.",
+  "to": "Maddenin esnekliği ve yoğunluğu birlikte belirleyicidir; yalnız tanecik yakınlığı veya yoğunlukla evrensel sürat sıralaması kurma. Demir–su–hava örneklerinde sürat genellikle katıda büyük, gazda küçük bulunur; bütün katıların bütün sıvılardan hızlı olması bir yasa değildir. Ses suya geçerken sabit sınır ve aynı kaynakta f korunur, v ve λ değişir."
+ },
+ {
+  "from": "İdeal gerilmiş telin temel frekansı f₁=(1/2 L)√(F/μ) biçimindedir. Aynı telde titreşen boy kısalır veya gerilim artarsa frekans artar; boyca kütle artarsa frekans azalır. Bu, teldeki dalga sürati ile telin oluşturduğu havadaki ses süratini aynı nicelik yapmaz.",
+  "to": "İdeal gerilmiş telin temel frekansı f₁=(1/(2L))√(F/μ) biçimindedir. Aynı telde titreşen boy kısalır veya gerilim artarsa frekans artar; boyca kütle artarsa frekans azalır. Bu, teldeki dalga sürati ile telin oluşturduğu havadaki ses süratini aynı nicelik yapmaz."
+ },
+ {
+  "from": "Şişeye üflemek hava sütununu, şişeye vurmak cam ve suyun birlikte titreşimini etkiler. Okul örneğinde su arttıkça üfleyerek çıkan ses tizleşirken vurarak çıkan ses pesleşebilir. Hangi şeyin titreştiğini açıklamadan yalnız 'su arttı' ile hüküm verme. İnsan kulağının yaklaşık 20 Hz–20 kHz aralığı kişiye ve yaşa bağlıdır; duyulamayan ultrases de mekanik sestir.",
+  "to": "Şişeye üflemek hava sütununu, şişeye vurmak cam ve suyun birlikte titreşimini etkiler. Bu örnekte su arttıkça üfleyerek çıkan ses tizleşirken vurarak çıkan ses pesleşebilir. Hangi şeyin titreştiğini açıklamadan yalnız 'su arttı' ile hüküm verme. İnsan kulağının yaklaşık 20 Hz–20 kHz aralığı kişiye ve yaşa bağlıdır; duyulamayan ultrases de mekanik sestir."
+ },
+ {
+  "from": "Bir ses kaynaktan engele gidip geri dönüyorsa toplam yol 2 d’dir: t=2 d/v. Ölçülen süreye doğrudan v çarpıp engel uzaklığı demek iki kat hata verir. Sonar ve ultrason yansımış dalgaların süre ve özelliklerinden bilgi çıkarır; ışık dalgası kullanmaları gerekmez.",
+  "to": "Bir ses kaynaktan engele gidip geri dönüyorsa toplam yol 2d’dir: t=2d/v. Ölçülen süreye doğrudan v çarpıp engel uzaklığı demek iki kat hata verir. Sonar ve ultrason yansımış dalgaların süre ve özelliklerinden bilgi çıkarır; ışık dalgası kullanmaları gerekmez."
+ },
+ {
+  "from": "Bilim tarihindeki Newton, Huygens, Young, Maxwell ve Einstein katkıları farklı deneyleri açıklayan modeller geliştirdi. Modern görüş, ışığın duruma göre seçtiği iki ayrı klasik nesne olduğu anlamına gelmez. Bu derste aydınlanma sayıları fotometrik niceliklerdir; tek fotonun enerjisi veya kuantum sayımı hesaplanmaz.",
+  "to": "Bilim tarihindeki Newton, Huygens, Young, Maxwell ve Einstein katkıları farklı deneyleri açıklayan modeller geliştirdi. Modern görüş, ışığın duruma göre seçtiği iki ayrı klasik nesne olduğu anlamına gelmez. Buradaki aydınlanma sayıları fotometrik niceliklerdir; tek fotonun enerjisi veya kuantum sayımı hesaplanmaz."
+ },
+ {
+  "from": "Işının yüzeyle yaptığı açı α ise i=90°−α’dır. Gelenle yansıyan ışın kolları arasındaki küçük taraftaki açı 2 i olarak verilebilir; sorunun hangi yönlü/açısal bölgeyi gösterdiğine dikkat et. Aynada yön değişir; aynı durgun ortamda frekans ve süratin büyüklüğü değişmez. Kaynak rengi yalnız ideal yansıma yönü değişti diye başka renge dönüşmez.",
+  "to": "Işının yüzeyle yaptığı açı α ise i=90°−α’dır. Gelenle yansıyan ışın kolları arasındaki küçük taraftaki açı 2i olarak verilebilir; sorunun hangi yönlü/açısal bölgeyi gösterdiğine dikkat et. Aynada yön değişir; aynı durgun ortamda frekans ve süratin büyüklüğü değişmez. Kaynak rengi yalnız ideal yansıma yönü değişti diye başka renge dönüşmez."
+ },
+ {
+  "from": "Bir kitabı farklı açılardan görebilmek dağınık yansımanın yararıdır. Aynada belirgin görüntü için yönler arasındaki düzen korunmalıdır. Parlak her yüzey kusursuz düzlem ayna değildir; metal kaşığın eğriliği görüntü boyunu değiştirebilir. Bu ünite yansıtıcı yüzeyi düz, ince ve ideal alır; cam kalınlığından doğan çoklu yansımaları hesaplamaz.",
+  "to": "Bir kitabı farklı açılardan görebilmek dağınık yansımanın yararıdır. Aynada belirgin görüntü için yönler arasındaki düzen korunmalıdır. Parlak her yüzey kusursuz düzlem ayna değildir; metal kaşığın eğriliği görüntü boyunu değiştirebilir. Burada yansıtıcı yüzey düz, ince ve ideal alınır; cam kalınlığından doğan çoklu yansımaları hesaplamaz."
+ },
+ {
+  "from": "Düşey aynanın yatay koordinatı xm, cismin koordinatı xc ise görüntü xg=2 xm−xc olur. Ayna sabitken cisim aynaya v süratiyle yaklaşıyorsa görüntü de aynaya aynı süratle yaklaşır; cisim-görüntü uzaklığı 2 v hızla azalır. Görüntünün yere göre sürati ile cisme göre bağıl yaklaşma sürati aynı değildir.",
+  "to": "Düşey aynanın yatay koordinatı xm, cismin koordinatı xc ise görüntü xg=2xm−xc olur. Ayna sabitken cisim aynaya v süratiyle yaklaşıyorsa görüntü de aynaya aynı süratle yaklaşır; cisim-görüntü uzaklığı 2v hızla azalır. Görüntünün yere göre sürati ile cisme göre bağıl yaklaşma sürati aynı değildir."
+ },
+ {
+  "from": "Cisim sabitken ayna cisme 3 cm yaklaşırsa görüntü yere göre 6 cm yer değiştirir; cisim-aynaya uzaklık 3 cm azalır. Cisim ve ayna birlikte hareket ederse önce son koordinatları yaz, sonra xg hesabını yap. Aynanın dönmesinde, gelen ışının doğrultusu sabitken ayna küçükθ açısı dönerse yansıyan ışın 2θ döner; bunun koşulu aynanın yalnız ötelenmesi değildir.",
+  "to": "Cisim sabitken ayna cisme 3 cm yaklaşırsa görüntü yere göre 6 cm yer değiştirir; cisim-aynaya uzaklık 3 cm azalır. Cisim ve ayna birlikte hareket ederse önce son koordinatları yaz, sonra xg hesabını yap. Aynanın dönmesinde, gelen ışının doğrultusu sabitken ayna küçük θ açısı dönerse yansıyan ışın 2θ döner; bunun koşulu aynanın yalnız ötelenmesi değildir."
+ },
+ {
+  "from": "Uçak kanadındaki akışa bağlı aerodinamik kuvvet ile durgun su veya havadaki Arşimet kaldırması aynı hesap değildir. Geminin su üzerinde durması için kanat üzerinden hızlı akış zorunlu değildir. Bir örnekte önce durgun akışkan basınç farkı mı, hareketli akış çevresi mi incelendiğini ayır. Bu ünitedeki sayısal model statik sıvı içindeki blokla sınırlıdır.",
+  "to": "Uçak kanadındaki akışa bağlı aerodinamik kuvvet ile durgun su veya havadaki Arşimet kaldırması aynı hesap değildir. Geminin su üzerinde durması için kanat üzerinden hızlı akış zorunlu değildir. Bir örnekte önce durgun akışkan basınç farkı mı, hareketli akış çevresi mi incelendiğini ayır. Buradaki sayısal model statik sıvı içindeki blokla sınırlıdır."
+ },
+ {
+  "from": "Gerilmiş ipte gerilim ve boyca kütle, sığ su yaklaşımında derinlik, seste ortam ve sıcaklık önemli olabilir. Gerçek ortamlarda dağılım nedeniyle hızın frekansa bağlı olabileceği daha ileri modeller vardır; burada dağılımsız okul yaklaşımı açıkça kullanılır. Formülü uygularken neyin sabit tutulduğunu önce yaz. Aynı kaynak farklı ortamda çalışıyorsa bu kez f korunup v ile λ birlikte değişebilir.",
+  "to": "Gerilmiş ipte gerilim ve boyca kütle, sığ su yaklaşımında derinlik, seste ortam ve sıcaklık önemli olabilir. Gerçek ortamlarda dağılım nedeniyle hızın frekansa bağlı olabileceği daha ileri modeller vardır; burada dağılımsız yaklaşım açıkça kullanılır. Formülü uygularken neyin sabit tutulduğunu önce yaz. Aynı kaynak farklı ortamda çalışıyorsa bu kez f korunup v ile λ birlikte değişebilir."
+ },
+ {
+  "from": "Bu spektrumda radyo yönünden gama yönüne frekans genel olarak artar, boşluk dalga boyu azalır. Bölgelerin sınırları kullanılan sınıflamaya göre değişebilir. Radyo iletişimi, termal görüntüleme, görünür görüş ve X ışınıyla görüntüleme farklı uygulamalardır; her elektromanyetik dalgayı göz göremez. Tedavi ve tanı örnekleri aynı işlem değildir; yalnız dalga sınıflandırması öğretimi yapılır.",
+  "to": "Bu spektrumda radyo yönünden gama yönüne frekans genel olarak artar, boşluk dalga boyu azalır. Bölgelerin sınırları kullanılan sınıflamaya göre değişebilir. Radyo iletişimi, termal görüntüleme, görünür görüş ve X ışınıyla görüntüleme farklı uygulamalardır; her elektromanyetik dalgayı göz göremez. Tedavi ve tanı örnekleri aynı işlem değildir."
+ },
+ {
+  "from": "İdeal serbest uçta gelen ve yansıyan tepe sınırda üst üste binince toplam uzanım geçici olarak iki kat olabilir. Bu, geri dönen ayrılmış atmanın kalıcı genliğinin iki kat olduğu anlamına gelmez. Halka üzerinde sürtünmesiz kayabilen uç, serbest sınırın okul örneğidir. Ucun ağırlığı veya ek yay etkisi önemliyse gerçek sınır koşulu ayrıca gerekir.",
+  "to": "İdeal serbest uçta gelen ve yansıyan tepe sınırda üst üste binince toplam uzanım geçici olarak iki kat olabilir. Bu, geri dönen ayrılmış atmanın kalıcı genliğinin iki kat olduğu anlamına gelmez. Halka üzerinde sürtünmesiz kayabilen uç, serbest sınırın temel örneğidir. Ucun ağırlığı veya ek yay etkisi önemliyse gerçek sınır koşulu ayrıca gerekir."
+ },
+ {
+  "from": "Etkileşimde sabit, serbest, daha ağır ve daha hafif ikinci ip sınırlarını seç. Gelen karede tek tepenin biçimini; sonraki karede yansıyanın işareti ve yönü ile varsa iletilenin hız/genliğini gör. Aynı F ve μ₁ korunurken yalnız sınırı değiştirmek ilk ortamın süratini değiştirmez. Kontroller ideal sınırın sonucunu adım adım açar, otomatik zaman baskısı oluşturmaz.",
+  "to": "Etkileşimde sabit, serbest, daha ağır ve daha hafif ikinci ip sınırlarını seç. Gelen karede tek tepenin biçimini; sonraki karede yansıyanın işareti ve yönü ile varsa iletilenin hız/genliğini gör. Aynı F ve μ₁ korunurken yalnız sınırı değiştirmek ilk ortamın süratini değiştirmez. Kontroller ideal sınırın sonucunu adım adım açar."
+ },
+ {
+  "from": "Sayısal kontrol için v₁, v₂, işaretli yansıma katsayısı ve enerji paylarının toplamı HTML’de de verilir. Bu ileri katsayılar eş gerilimli, doğrusal ve kayıpsız iki ip modeline özeldir; bağlantısı bilinmeyen her yaya evrensel sayısal oran diye uygulanmaz. Sınav çözümünde önce gerekli temel ilişkiyi seç, sayılar yerine oturunca yön, birim ve enerji kontrolü yap.",
+  "to": "Sayısal kontrol için v₁, v₂, işaretli yansıma katsayısı ve enerji paylarının toplamı da verilir. Bu ileri katsayılar eş gerilimli, doğrusal ve kayıpsız iki ip modeline özeldir; bağlantısı bilinmeyen her yaya evrensel sayısal oran diye uygulanmaz. Sınav çözümünde önce gerekli temel ilişkiyi seç, sayılar yerine oturunca yön, birim ve enerji kontrolü yap."
+ },
+ {
+  "from": "Elektrik akımı seçilen kesitten birim zamanda geçen net yönlü yük aktarımıyla tanımlanır. Sabit veya ortalama akım için I=Δq/Δt; birimi amperdir:1 A=1 C/s. Akım şiddeti skaler olarak ele alınır, devrede yön oklarıyla belirtilir. Seri devrede akım bir ampulde harcanıp azalmaz; yük korunur, eleman elektrik enerjisini başka biçimlere dönüştürür.",
+  "to": "Elektrik akımı seçilen kesitten birim zamanda geçen net yönlü yük aktarımıyla tanımlanır. Sabit veya ortalama akım için I=Δq/Δt; birimi amperdir: 1 A=1 C/s. Akım şiddeti skaler olarak ele alınır, devrede yön oklarıyla belirtilir. Seri devrede akım bir ampulde harcanıp azalmaz; yük korunur, eleman elektrik enerjisini başka biçimlere dönüştürür."
+ },
+ {
+  "from": "Konvansiyonel akım yönü pozitif taşıyıcının hareket yönü olarak tanımlanır. Basit pilin dış metal devresinde akım+uçtan−uca, elektron sürüklenmesi ters yönde olur. Bir çözeltide pozitif iyonların sağa ve negatif iyonların sola geçmesi aynı yöndeki konvansiyonel akıma katkı yapabilir. Akımı bulurken yalnız işaretli yükleri gelişigüzel çıkarma; taşıyıcıların hareket yönlerini de hesaba kat.",
+  "to": "Konvansiyonel akım yönü pozitif taşıyıcının hareket yönü olarak tanımlanır. Basit pilin dış metal devresinde akım + uçtan − uca, elektron sürüklenmesi ters yönde olur. Bir çözeltide pozitif iyonların sağa ve negatif iyonların sola geçmesi aynı yöndeki konvansiyonel akıma katkı yapabilir. Akımı bulurken yalnız işaretli yükleri gelişigüzel çıkarma; taşıyıcıların hareket yönlerini de hesaba kat."
+ },
+ {
+  "from": "İki nokta arasındaki potansiyel fark yük başına elektriksel enerji değişimiyle ilişkilidir;1 V=1 J/C. Bir elemanda dönüştürülen enerji büyüklüğü uygun sabit gerilimde E=qV olur. Voltmetre tek bir noktanın mutlak enerjisini ölçmez; iki noktayı karşılaştırır. Yükü veya enerjiyi yalnız volt değeriyle bulamazsın; diğer nicelik gerekir.",
+  "to": "İki nokta arasındaki potansiyel fark yük başına elektriksel enerji değişimiyle ilişkilidir; 1 V=1 J/C. Bir elemanda dönüştürülen enerji büyüklüğü uygun sabit gerilimde E=qV olur. Voltmetre tek bir noktanın mutlak enerjisini ölçmez; iki noktayı karşılaştırır. Yükü veya enerjiyi yalnız volt değeriyle bulamazsın; diğer nicelik gerekir."
+ },
+ {
+  "from": "Aynı yönlü seri ideal kaynakların ε değerleri toplanır; ters kaynak çıkarılır. Özdeş, aynı gerilimli kaynaklar uygun şekilde paralel bağlanırsa uç gerilimi tek kaynağınkiyle aynı kalır; yükü paylaşarak kullanım süresini artırabilirler. Farklı ideal gerilimli kaynakları doğrudan paralel bağlamak tutarlı bir ideal devre değildir. Gerçek devre bağlantısı için yalnız çizimdeki+ve−işaretlerini rastgele birleştirme.",
+  "to": "Aynı yönlü seri ideal kaynakların ε değerleri toplanır; ters kaynak çıkarılır. Özdeş, aynı gerilimli kaynaklar uygun şekilde paralel bağlanırsa uç gerilimi tek kaynağınkiyle aynı kalır; yükü paylaşarak kullanım süresini artırabilirler. Farklı ideal gerilimli kaynakları doğrudan paralel bağlamak tutarlı bir ideal devre değildir. Gerçek devre bağlantısı için yalnız çizimdeki + ve − işaretlerini rastgele birleştirme."
+ },
+ {
+  "from": "mAh bir yük kapasitesi birimidir; tek başına enerji birimi değildir.1 Ah=3600 C ve yaklaşık enerji, uygun gerilim bilgisiyle E≈Vq olarak bulunabilir.4000 mAh kapasiteden sabit 1000 mA çekilirse ideal süre 4 saat olur; gerçek süre sıcaklık, akım ve kaynak koşullarıyla değişebilir. Daha yüksek mAh değeri farklı gerilimli iki kaynağın enerjisini doğrudan sıralamaz.",
+  "to": "mAh bir yük kapasitesi birimidir; tek başına enerji birimi değildir. 1 Ah=3600 C ve yaklaşık enerji, uygun gerilim bilgisiyle E≈Vq olarak bulunabilir. 4000 mAh kapasiteden sabit 1000 mA çekilirse ideal süre 4 saat olur; gerçek süre sıcaklık, akım ve kaynak koşullarıyla değişebilir. Daha yüksek mAh değeri farklı gerilimli iki kaynağın enerjisini doğrudan sıralamaz."
+ },
+ {
+  "from": "Elektriksel güç P=VI, ohmik dirençte P=I²R=V²/R; birimi W=J/s. Enerji sabit güçte E=Pt olur. kW güç, kWh enerji birimidir;1 kWh=3,6×10⁶ J. Özdeş ve sabit direnç kabul edilen ampullerde daha büyük güç daha fazla parlaklıkla ilişkilendirilir. Farklı gerçek ampullerde bütün ışık verimlerini eşit sanma; sorunun basitleştirilmiş modelini kullan.",
+  "to": "Elektriksel güç P=VI, ohmik dirençte P=I²R=V²/R; birimi W=J/s. Enerji sabit güçte E=Pt olur. kW güç, kWh enerji birimidir; 1 kWh=3,6×10⁶ J. Özdeş ve sabit direnç kabul edilen ampullerde daha büyük güç daha fazla parlaklıkla ilişkilendirilir. Farklı gerçek ampullerde bütün ışık verimlerini eşit sanma; sorunun basitleştirilmiş modelini kullan."
+ },
+ {
+  "from": "Bu1/r ilişkisini noktasal elektrik yükünün 1/r² alanıyla karıştırma. Teli kalın, kısa veya kıvrımlı yapan başka geometriler için aynı denklem koşulsuz geçerli değildir. Birimi tesla olan küçük değerleri μT’ye çevirirken 1 μT=10⁻⁶ T kullan. Kuvvet veya kaldırılan ağırlık B’nin başka bir adı değildir; manyetik kuvvet ayrıca yük, hareket, akım veya geometrinin koşullarını gerektirir.",
+  "to": "Bu 1/r ilişkisini noktasal elektrik yükünün 1/r² alanıyla karıştırma. Teli kalın, kısa veya kıvrımlı yapan başka geometriler için aynı denklem koşulsuz geçerli değildir. Birimi tesla olan küçük değerleri μT’ye çevirirken 1 μT=10⁻⁶ T kullan. Kuvvet veya kaldırılan ağırlık B’nin başka bir adı değildir; manyetik kuvvet ayrıca yük, hareket, akım veya geometrinin koşullarını gerektirir."
+ },
+ {
+  "from": "Dünya alanı yüklü parçacıkların hareketini etkiler; kutup ışıklarında parçacıkların atmosferle etkileşmesi rol oynar. Bazı canlıların yön bulmasında da manyetik algı katkı yapabilir. Bu bilgilerden bütün ışınım türlerinin alanla engellendiği veya gündelik her alanın aynı sağlık etkisini oluşturduğu sonucu çıkarılmaz. Kaynak metindeki genel sağlık ifadeleri, maruziyet koşulu ve bağımsız kanıt olmadan nedensel hükme çevrilmez; bu ünitede fiziksel yön, kaynak ve büyüklük ilişkileri öğretilir.",
+  "to": "Dünya alanı yüklü parçacıkların hareketini etkiler; kutup ışıklarında parçacıkların atmosferle etkileşmesi rol oynar. Bazı canlıların yön bulmasında da manyetik algı katkı yapabilir. Bu bilgilerden bütün ışınım türlerinin alanla engellendiği veya gündelik her alanın aynı sağlık etkisini oluşturduğu sonucu çıkarılmaz. Genel sağlık ifadeleri, maruziyet koşulu ve bağımsız kanıt olmadan nedensel hükme çevrilmez."
+ },
+ {
+  "from": "Ölçüm görünümünde aynı uzunluğun üç gösterge okumasını, bilinen eklemeli sıfır sapmasını ve gösterge adımını değiştir. Düzeltmenin bütün okumalara aynı yönde etkisini ve tekrar aralığını izleyebilirsin. Aralığı sıfır olan üç okuma bile bilinen sapma varken düzeltilmeye ihtiyaç duyar. Grafikte aynı ölçekte gösterilen okumalar ve HTML sonuçlar birlikte okunur.",
+  "to": "Ölçüm görünümünde aynı uzunluğun üç gösterge okumasını, bilinen eklemeli sıfır sapmasını ve gösterge adımını değiştir. Düzeltmenin bütün okumalara aynı yönde etkisini ve tekrar aralığını izleyebilirsin. Aralığı sıfır olan üç okuma bile bilinen sapma varken düzeltilmeye ihtiyaç duyar. Grafikte aynı ölçekte gösterilen okumalar ve sayısal sonuçlar birlikte okunur."
+ },
+ {
+  "from": "Boyut görünümünde niceliklerin temel birim üslerini karşılaştır. Aynı boyutlu iki ifadenin aynı fiziksel yasa olmak zorunda olmadığını açıklamaya çalış. Tahmin ve gerekçe yalnız keşif kaydında saklanır; soru cevabı, puan veya ustalık kaydı oluşturmaz. Kontroller verilen basit modelin girdileridir; değiştirdiğin bir sayının gerçek bir laboratuvarda ölçüldüğü iddiası yoktur.",
+  "to": "Boyut görünümünde niceliklerin temel birim üslerini karşılaştır. Aynı boyutlu iki ifadenin aynı fiziksel yasa olmak zorunda olmadığını açıklamaya çalış. Kontroller verilen basit modelin girdileridir; değiştirdiğin bir sayının gerçek bir laboratuvarda ölçüldüğü iddiası yoktur."
+ },
+ {
+  "from": "SI özkütle birimi kg/m³’tür. Günlük laboratuvar verileri sıklıkla g/cm³ veya g/mL olarak gelir; 1 cm³=1 mL olduğundan bu son iki sayı aynı olabilir.1 g/cm³=1000 kg/m³ dönüşümünde kütlenin 10⁻³ kg, hacmin 10⁻⁶ m³ çarpanı birlikte kullanılır. Sadece gramı kilograma çevirip hacmi unutmak sonucu binlerce kat değiştirebilir.",
+  "to": "SI özkütle birimi kg/m³’tür. Günlük laboratuvar verileri sıklıkla g/cm³ veya g/mL olarak gelir; 1 cm³=1 mL olduğundan bu son iki sayı aynı olabilir. 1 g/cm³=1000 kg/m³ dönüşümünde kütlenin 10⁻³ kg, hacmin 10⁻⁶ m³ çarpanı birlikte kullanılır. Sadece gramı kilograma çevirip hacmi unutmak sonucu binlerce kat değiştirebilir."
+ },
+ {
+  "from": "Bir oranı yorumlarken birim çiftiyle düşün: 2 g/cm³, her 1 cm³ homojen örnekte 2 g kütle anlamına gelir.20 cm³ için 40 g,5 g için 2,5 cm³ bulunur. Buna karşılık 20 g ile 20 cm³ sayılarının aynı olması, birimler ve malzeme koşulları verilmeden evrensel bir eşitlik değildir. Su için kullanılan yaklaşık 1 g/cm³ değeri de belirli koşullar içindir; bütün sıvılara taşınmaz.",
+  "to": "Bir oranı yorumlarken birim çiftiyle düşün: 2 g/cm³, her 1 cm³ homojen örnekte 2 g kütle anlamına gelir. 20 cm³ için 40 g, 5 g için 2,5 cm³ bulunur. Buna karşılık 20 g ile 20 cm³ sayılarının aynı olması, birimler ve malzeme koşulları verilmeden evrensel bir eşitlik değildir. Su için kullanılan yaklaşık 1 g/cm³ değeri de belirli koşullar içindir; bütün sıvılara taşınmaz."
+ },
+ {
+  "from": "Hacmin sıcaklığa veya basınca nasıl bağlı olduğu verilmeden yalnız “ısıtıldı” sözcüğünden kesin sayı üretme. Gazlarda basınç ve sıcaklık koşulları özellikle önemlidir; katıların da genleşmesi ve sıkışması vardır. Bu rehberin yoğunluk modeli ölçüm anındaki kütle ve hacmi kullanır; ayrıca bir termal genleşme yasası çözmez. Farklı sıcaklıkta iki örneği karşılaştırırken aynı madde olsalar da farklı yoğunluk olabileceğini belirt.",
+  "to": "Hacmin sıcaklığa veya basınca nasıl bağlı olduğu verilmeden yalnız “ısıtıldı” sözcüğünden kesin sayı üretme. Gazlarda basınç ve sıcaklık koşulları özellikle önemlidir; katıların da genleşmesi ve sıkışması vardır. Buradaki yoğunluk modeli ölçüm anındaki kütle ve hacmi kullanır; ayrıca bir termal genleşme yasası çözmez. Farklı sıcaklıkta iki örneği karşılaştırırken aynı madde olsalar da farklı yoğunluk olabileceğini belirt."
+ },
+ {
+  "from": "Bu geometrik karşılaştırma temas, çözünme veya ısı aktarımı gibi yüzeyle ilişkili süreçlerde bir başlangıç sağlar; bütün süreçlerin hızını tek başına belirlemez. Kimyasal yapı, ortam ve boyutun çok küçük olduğu durumlarda yeni fiziksel etkiler de önemli olabilir. Bu rehberin benzerlik hesabı yalnız klasik alan ve hacim ölçeklemesini verir; özel nano malzeme davranışını otomatik üretmez.",
+  "to": "Bu geometrik karşılaştırma temas, çözünme veya ısı aktarımı gibi yüzeyle ilişkili süreçlerde bir başlangıç sağlar; bütün süreçlerin hızını tek başına belirlemez. Kimyasal yapı, ortam ve boyutun çok küçük olduğu durumlarda yeni fiziksel etkiler de önemli olabilir. Buradaki benzerlik hesabı yalnız klasik alan ve hacim ölçeklemesini verir; özel nano malzeme davranışını kapsamaz."
+ },
+ {
+  "from": "Yoğunluk görünümünde toplam tartım, dara ve sıvı düzeyi okumalarını birlikte değiştir. Tam ve kısmi batmanın sonuç alanında neden farklı tür bilgi verdiğini açıkla. Karışım görünümünde ölçülmüş son hacmi bağımsız değiştir; hacimlerin toplanabilir olması halinde verilen kıyas değeri ile gerçek son hacim hesabını ayrı oku. İki modelde de kütle ve hacim birimleri HTML sonuçlarda açık kalır.",
+  "to": "Yoğunluk görünümünde toplam tartım, dara ve sıvı düzeyi okumalarını birlikte değiştir. Tam ve kısmi batmanın sonuç alanında neden farklı tür bilgi verdiğini açıkla. Karışım görünümünde ölçülmüş son hacmi bağımsız değiştir; hacimlerin toplanabilir olması halinde verilen kıyas değeri ile gerçek son hacim hesabını ayrı oku. İki modelde de kütle ve hacim birimleri sonuçlarda açık kalır."
+ },
+ {
+  "from": "Bu rehberde tek doğru boyunca hareket incelenir; x bileşeni işaretli sayı ile gösterilir. Öteleme kavramı genel olarak yalnız düz bir yola zorunlu değildir; burada özellikle bir boyutlu model seçilmiştir. Bir cismin konumu negatifken hızı pozitif olabilir: başlangıç noktasının solunda olup sağa doğru ilerleyebilir. Konumun işareti, hareket yönünün işareti ve yön değişimi farklı bilgilerdir.",
+  "to": "Burada tek doğru boyunca hareket incelenir; x bileşeni işaretli sayı ile gösterilir. Öteleme kavramı genel olarak yalnız düz bir yola zorunlu değildir; burada özellikle bir boyutlu model seçilmiştir. Bir cismin konumu negatifken hızı pozitif olabilir: başlangıç noktasının solunda olup sağa doğru ilerleyebilir. Konumun işareti, hareket yönünün işareti ve yön değişimi farklı bilgilerdir."
+ },
+ {
+  "from": "Örneğin iki eşit yol için toplam süre L/v₁+L/v₂; ortalama sürat 2 v₁v₂/(v₁+v₂) olur. Bu bağıntıyı yol uzunlukları eşit değilken veya ayrıca bekleme varken koşulsuz kullanma. Ortalama hız işaretli olabilir; ortalama sürat negatif olmaz. Pozitif toplam sürede her zaman ortalama sürat ≥ |ortalama hız|; eşitlik, bütün hareketin aynı yönlü olmasıyla uyumludur.",
+  "to": "Örneğin iki eşit yol için toplam süre L/v₁+L/v₂; ortalama sürat 2v₁v₂/(v₁+v₂) olur. Bu bağıntıyı yol uzunlukları eşit değilken veya ayrıca bekleme varken koşulsuz kullanma. Ortalama hız işaretli olabilir; ortalama sürat negatif olmaz. Pozitif toplam sürede her zaman ortalama sürat ≥ |ortalama hız|; eşitlik, bütün hareketin aynı yönlü olmasıyla uyumludur."
+ },
+ {
+  "from": "Sabit ivmede yerel süreτiçin v=v₀+aτ ve Δx=v₀τ+½aτ² kullanılır. v ile a aynı işaretliyse sürat artar; zıt işaretliyse hız sıfıra gelene kadar sürat azalır. Sabit negatif ivme ile başlayan yavaşlama, hız negatife geçince hızlanmaya dönüşebilir. “Yavaşlayan” etiketi bütün süreye otomatik uzatılmaz; sıfır hız anı aralık içindeyse evre yön açısından ayrıca bölünür.",
+  "to": "Sabit ivmede yerel süre τ için v=v₀+aτ ve Δx=v₀τ+½aτ² kullanılır. v ile a aynı işaretliyse sürat artar; zıt işaretliyse hız sıfıra gelene kadar sürat azalır. Sabit negatif ivme ile başlayan yavaşlama, hız negatife geçince hızlanmaya dönüşebilir. “Yavaşlayan” etiketi bütün süreye otomatik uzatılmaz; sıfır hız anı aralık içindeyse evre yön açısından ayrıca bölünür."
+ },
+ {
+  "from": "Bir sonuçta önce birim, sonra işaret ve sınır denetimi yap. Son hız−5 m/s ise sürat 5 m/s’tir; yol−5 m yazılamaz. Son konum başlangıç noktasının solunda olabilir, fakat toplam yol bu yüzden negatife dönmez.3,6 km/h=1 m/s dönüşümünü hızlar karşılaştırılmadan önce uygula; ivmedeki zaman karesini ayrıca koru.",
+  "to": "Bir sonuçta önce birim, sonra işaret ve sınır denetimi yap. Son hız −5 m/s ise sürat 5 m/s’tir; yol −5 m yazılamaz. Son konum başlangıç noktasının solunda olabilir, fakat toplam yol bu yüzden negatife dönmez. 3,6 km/h=1 m/s dönüşümünü hızlar karşılaştırılmadan önce uygula; ivmedeki zaman karesini ayrıca koru."
+ },
+ {
+  "from": "Anlık hız, belirli bir anda konumun değişim hızıdır; düzgün bir x–t eğrisinde teğet eğimiyle ilişkilidir. İki uzak zaman arasındaki kiriş eğimi o aralığın ortalama hızını verir. İvme varsa anlık hızlar aralık içinde değişebilir; ortalama değerin bir uçtaki anlık hızla aynı olması gerekmez. Bir noktada xdeğeri ile o noktadaki eğim ayrı ayrı okunur.",
+  "to": "Anlık hız, belirli bir anda konumun değişim hızıdır; düzgün bir x–t eğrisinde teğet eğimiyle ilişkilidir. İki uzak zaman arasındaki kiriş eğimi o aralığın ortalama hızını verir. İvme varsa anlık hızlar aralık içinde değişebilir; ortalama değerin bir uçtaki anlık hızla aynı olması gerekmez. Bir noktada x değeri ile o noktadaki eğim ayrı ayrı okunur."
+ },
+ {
+  "from": "Sabit ivmede v=0 eşitliği içinτ=−v₀/açözülebilir. Bu zaman ancak incelenen aralığın içinde ve pozitifse o evrede duruş anıdır. τnegatifse duruş modelin geçmiş uzatımındadır; verilen gelecekte gerçekleşmiş sayılmaz. Evrenin tam sonunda sıfıra gelmek ile evre içinde yön değiştirip yolun bir bölümünü ters gitmek farklıdır.",
+  "to": "Sabit ivmede v=0 eşitliği için τ=−v₀/a çözülebilir. Bu zaman ancak incelenen aralığın içinde ve pozitifse o evrede duruş anıdır. τ negatifse duruş modelin geçmiş uzatımındadır; verilen gelecekte gerçekleşmiş sayılmaz. Evrenin tam sonunda sıfıra gelmek ile evre içinde yön değiştirip yolun bir bölümünü ters gitmek farklıdır."
+ },
+ {
+  "from": "İvme sabitse hız zamana göre doğru verir: v=v₀+aτ. Hız grafiğinin alanı, v₀τdikdörtgeniyle½aτ² işaretli üçgeninin toplamıdır. Böylece Δx=v₀τ+½aτ² elde edilir. Aynı evrede ortalama hız(v₀+vson)/2 olduğu için Δx=[(v₀+vson)/2]τda kullanılabilir; bu, son hızları farklı evrelerin tümüne gelişigüzel ortalama alma kuralı değildir.",
+  "to": "İvme sabitse hız zamana göre doğru verir: v=v₀+aτ. Hız grafiğinin alanı, v₀τ dikdörtgeniyle ½aτ² işaretli üçgeninin toplamıdır. Böylece Δx=v₀τ+½aτ² elde edilir. Aynı evrede ortalama hız (v₀+vson)/2 olduğu için Δx=[(v₀+vson)/2]τ da kullanılabilir; bu, son hızları farklı evrelerin tümüne gelişigüzel ortalama alma kuralı değildir."
+ },
+ {
+  "from": "Zaman elenince vson²=v₀²+2 aΔxbağıntısı bulunur. Kareli bağıntı yön bilgisini tek başına seçemez: karekökten çıkan büyüklüğün hangi işaretli hız olduğu hareketin yönü ve zaman koşuluyla belirlenir. AynıΔxdeğerine gidişte ve dönüşte farklı hız işaretleriyle ulaşılabilir. Yol yerineΔxkullanılması gereken bir eşitliğe toplam yolu koyma.",
+  "to": "Zaman elenince vson²=v₀²+2aΔx bağıntısı bulunur. Kareli bağıntı yön bilgisini tek başına seçemez: karekökten çıkan büyüklüğün hangi işaretli hız olduğu hareketin yönü ve zaman koşuluyla belirlenir. Aynı Δx değerine gidişte ve dönüşte farklı hız işaretleriyle ulaşılabilir. Yol yerine Δx kullanılması gereken bir eşitliğe toplam yolu koyma."
+ },
+ {
+  "from": "Bir sabit ivme evresinde v₀vevsonzıt işaretliyse hız sıfırı evrenin içindedir. Bu noktada yolu hesaplamak için evreyi iki yönlü parçaya ayırırsın. Her parçanın işaretli yer değiştirmesini bulup büyüklüklerini toplarsın. Yalnız bütün evrenin Δxdeğerinin mutlak değeri, gidip dönülen fazladan yolu kaybeder.",
+  "to": "Bir sabit ivme evresinde v₀ ve vson zıt işaretliyse hız sıfırı evrenin içindedir. Bu noktada yolu hesaplamak için evreyi iki yönlü parçaya ayırırsın. Her parçanın işaretli yer değiştirmesini bulup büyüklüklerini toplarsın. Yalnız bütün evrenin Δx değerinin mutlak değeri, gidip dönülen fazladan yolu kaybeder."
+ },
+ {
+  "from": "Örneğin v₀=4 m/s, a=−2 m/s² veτ=3 s için dönüş 2 s’dedir. İlk bölümün konum artışı 4 m, sonraki bölümün geri gelişi 1 m olduğundan Δx=3 m ama yol 5 m olur. Bu örnek, hız grafiğinin pozitif ve negatif üçgenlerini işaretli alanla veya mutlak alanla toplamanın iki farklı hedefini gösterir. Dönüş zamanı aralığın dışındaysa gereksiz parçalara ayırma yapılmaz.",
+  "to": "Örneğin v₀=4 m/s, a=−2 m/s² ve τ=3 s için dönüş 2 s’dedir. İlk bölümün konum artışı 4 m, sonraki bölümün geri gelişi 1 m olduğundan Δx=3 m ama yol 5 m olur. Bu örnek, hız grafiğinin pozitif ve negatif üçgenlerini işaretli alanla veya mutlak alanla toplamanın iki farklı hedefini gösterir. Dönüş zamanı aralığın dışındaysa gereksiz parçalara ayırma yapılmaz."
+ },
+ {
+  "from": "Hareketin farklı evrelerinde ivme değişebilir. Bir evre tbaşlangıçanında başlıyorsa o evredekiτ=t−tbaşlangıçyerel süresidir. Yeni evrenin ilk konum ve hızı, önceki evrenin son değerlerinden alınır. Aynı cismi izlerken saat sıfırlanmasa da evre denkleminin süre değişkeni yeniden 0’dan başlar.",
+  "to": "Hareketin farklı evrelerinde ivme değişebilir. Bir evre tbaşlangıç anında başlıyorsa o evredeki τ=t−tbaşlangıç yerel süresidir. Yeni evrenin ilk konum ve hızı, önceki evrenin son değerlerinden alınır. Aynı cismi izlerken saat sıfırlanmasa da evre denkleminin süre değişkeni yeniden 0’dan başlar."
+ },
+ {
+  "from": "İdeal parçalı sabit ivme programında ivme bir sınırda sıçrayabilir; bunun için hızın aynı anda sıçraması gerekmez. Sonlu ivmenin sıfır süreli katkısı hız değişimini sonlu bir sıçrama yapmaz. Bu model darbeli çarpışma veya anlık hız değiştirme içermediğinden xvevbir evrenin sonundan ötekinin başına aynı değerle geçer.",
+  "to": "İdeal parçalı sabit ivme programında ivme bir sınırda sıçrayabilir; bunun için hızın aynı anda sıçraması gerekmez. Sonlu ivmenin sıfır süreli katkısı hız değişimini sonlu bir sıçrama yapmaz. Bu model darbeli çarpışma veya anlık hız değiştirme içermediğinden x ve v bir evrenin sonundan ötekinin başına aynı değerle geçer."
+ },
+ {
+  "from": "İki evrede aynı süreτboyunca sabit süratler v₁vev₂ile aynı yönde gidilirse toplam yol(v₁+v₂)τve süre 2τolur; ortalama sürat(v₁+v₂)/2’dir. Evreler farklı süreliyse(v₁t₁+v₂t₂)/(t₁+t₂)kullanılır. Ortalama alırken ağırlıkların gerçekten eşit olup olmadığını kontrol et.",
+  "to": "İki evrede aynı süre τ boyunca sabit süratler v₁ ve v₂ ile aynı yönde gidilirse toplam yol (v₁+v₂)τ ve süre 2τ olur; ortalama sürat (v₁+v₂)/2’dir. Evreler farklı süreliyse (v₁t₁+v₂t₂)/(t₁+t₂) kullanılır. Ortalama alırken ağırlıkların gerçekten eşit olup olmadığını kontrol et."
+ },
+ {
+  "from": "İki evrede eşit yol Lgidilirse süreler farklıdır: L/v₁veL/v₂. Ortalama 2 L/[L/v₁+L/v₂]olur. Bu yüzden örneğin çok yavaş bir bölümün süre etkisi büyüktür; büyük sürat değeri aritmetik ortalamayı yapay biçimde yukarı taşıyabilir. Ek bir duruş varsa onun süresi de paydaya eklenir; eşit yol bağıntısı tek başına bütün yolculuğu vermez.",
+  "to": "İki evrede eşit yol L gidilirse süreler farklıdır: L/v₁ ve L/v₂. Ortalama 2L/[L/v₁+L/v₂] olur. Bu yüzden örneğin çok yavaş bir bölümün süre etkisi büyüktür; büyük sürat değeri aritmetik ortalamayı yapay biçimde yukarı taşıyabilir. Ek bir duruş varsa onun süresi de paydaya eklenir; eşit yol bağıntısı tek başına bütün yolculuğu vermez."
+ },
+ {
+  "from": "x–tgrafiğinin düşey kesimi başlangıç konumunu, eğimi hızı temsil eder. Farklı başlangıç konumlarında aynı eğimli iki doğru, aynı yön ve hızla giden cisimleri gösterebilir; konumların farklı olması hızların farklı olmasını gerektirmez. Yatay bir x–tdoğrusu sabit konum ve durgunluk demektir; zaman ekseninin altında olması yalnız negatif konumu gösterir.",
+  "to": "x–t grafiğinin düşey kesimi başlangıç konumunu, eğimi hızı temsil eder. Farklı başlangıç konumlarında aynı eğimli iki doğru, aynı yön ve hızla giden cisimleri gösterebilir; konumların farklı olması hızların farklı olmasını gerektirmez. Yatay bir x–t doğrusu sabit konum ve durgunluk demektir; zaman ekseninin altında olması yalnız negatif konumu gösterir."
+ },
+ {
+  "from": "v–tgrafiğinde pozitif bölgeler pozitifΔx, negatif bölgeler negatifΔxkatkısı yapar. İşaretli toplam, son konumun ilk konuma göre değişimini verir. Yol için negatif bölgelerin geometrik büyüklükleri de pozitif katkı alınır. Bir grafiğin altında iki pozitif ve bir negatif parça bulunması, toplam yer değiştirmenin işareti için hepsinin değerlerinin birlikte gerektiğini gösterir.",
+  "to": "v–t grafiğinde pozitif bölgeler pozitif Δx, negatif bölgeler negatif Δx katkısı yapar. İşaretli toplam, son konumun ilk konuma göre değişimini verir. Yol için negatif bölgelerin geometrik büyüklükleri de pozitif katkı alınır. Bir grafiğin altında iki pozitif ve bir negatif parça bulunması, toplam yer değiştirmenin işareti için hepsinin değerlerinin birlikte gerektiğini gösterir."
+ },
+ {
+  "from": "a–tgrafiğinin işaretli alanı Δvverir. Başlangıç hızı v₀biliniyorsa son hız v₀+Δvile bulunur. Aynı ivme grafiği, farklı başlangıç hızlarında farklı hız grafiklerine yol açabilir. Bu nedenle “alan 5 m/s” demek son hızın mutlaka 5 m/s olduğu anlamına gelmez; önce başlangıç değeri sorulur.",
+  "to": "a–t grafiğinin işaretli alanı Δv verir. Başlangıç hızı v₀ biliniyorsa son hız v₀+Δv ile bulunur. Aynı ivme grafiği, farklı başlangıç hızlarında farklı hız grafiklerine yol açabilir. Bu nedenle “alan 5 m/s” demek son hızın mutlaka 5 m/s olduğu anlamına gelmez; önce başlangıç değeri sorulur."
+ },
+ {
+  "from": "Başlangıçta aynı noktada bulunan, seçili eksende sabit u hızıyla giden gözlemci için Galile dönüşümü x′=x−ut, v′=v−u, a′=a biçimindedir. Burada klasik ve düşük hızlı bir model kullanılır; ışık hızına yakın hareket çözülmez. Gözlemciye göre yer değiştirmeΔx′=Δx−uΔtolur. Aynı dünya hareketi, gözlemciye göre başka yönde veya bir bölümde durgun görünebilir.",
+  "to": "Başlangıçta aynı noktada bulunan, seçili eksende sabit u hızıyla giden gözlemci için Galile dönüşümü x′=x−ut, v′=v−u, a′=a biçimindedir. Burada klasik ve düşük hızlı bir model kullanılır; ışık hızına yakın hareket çözülmez. Gözlemciye göre yer değiştirmeΔx′=Δx−uΔt olur. Aynı dünya hareketi, gözlemciye göre başka yönde veya bir bölümde durgun görünebilir."
+ },
+ {
+  "from": "Yol da seçilen gözlemciye bağlıdır: v′işaret değiştiriyorsa bu yeni sıfırlar üzerinden |v′|alanı toplanır. Dünya gözlemcisinde bulunan toplam yolu doğrudan uTçıkararak her durumda yeni yol elde edemezsin; bu işlem işaretli yer değiştirme içindir. Sabit hızlı gözlemciler arasında aynı hız programının ivmesi değişmez. İvmeli bir gözlemciye geçiş ise bu basit dönüşümün dışındadır.",
+  "to": "Yol da seçilen gözlemciye bağlıdır: v′ işaret değiştiriyorsa bu yeni sıfırlar üzerinden |v′| alanı toplanır. Dünya gözlemcisinde bulunan toplam yolu doğrudan uT çıkararak her durumda yeni yol elde edemezsin; bu işlem işaretli yer değiştirme içindir. Sabit hızlı gözlemciler arasında aynı hız programının ivmesi değişmez. İvmeli bir gözlemciye geçiş ise bu basit dönüşümün dışındadır."
+ },
+ {
+  "from": "Aynı gözlemci ve eksen yönünde yalnız konum başlangıcı b kadar kaydırılırsa bütün konumlara aynı sabit eklenir veya çıkarılır. İki konumun farkında bu sabit gider;Δx, hız, ivme ve yol değişmez. Buna karşılık hareketli gözlemci dönüşümünde utterimi zamana bağlıdır; hız da değişebilir. Sabit başlangıç kaymasıyla hareketli referansı birbirine karıştırma.",
+  "to": "Aynı gözlemci ve eksen yönünde yalnız konum başlangıcı b kadar kaydırılırsa bütün konumlara aynı sabit eklenir veya çıkarılır. İki konumun farkında bu sabit gider; Δx, hız, ivme ve yol değişmez. Buna karşılık hareketli gözlemci dönüşümünde ut terimi zamana bağlıdır; hız da değişebilir. Sabit başlangıç kaymasıyla hareketli referansı birbirine karıştırma."
+ },
+ {
+  "from": "Modelde ilk hız, her evrenin süresi ve ivmesi, gözlemcinin sabit hızı ve örnek anı değiştirilebilir. Evre sonundaki konum ve hız yeni evreye aktarılır; hız sıfırı evre içinde kalıyorsa yol parçalanır. Üç grafikte aynı örnek anına ait konum, hız ve ivme birlikte izlenir. HTML evre listesi çizimdeki başlangıç ve son değerleri sayısal olarak da sunar.",
+  "to": "Modelde ilk hız, her evrenin süresi ve ivmesi, gözlemcinin sabit hızı ve örnek anı değiştirilebilir. Evre sonundaki konum ve hız yeni evreye aktarılır; hız sıfırı evre içinde kalıyorsa yol parçalanır. Üç grafikte aynı örnek anına ait konum, hız ve ivme birlikte izlenir. Evre listesi çizimdeki başlangıç ve son değerleri sayısal olarak da sunar."
+ },
+ {
+  "from": "Gözlemci hızını değiştirirken aynı dünya programının hangi grafiklerinin değiştiğini incele. Hız–zaman alanınınΔx′ile ve mutlak alanın bu gözlemcinin yoluyla uyuşmasını denetle. Grafikte eklenen kılavuz veya işaretçi fiziksel yeni kuvvet değildir; seçili anı okumaya yardım eder. Keşif kaydı, verilen sayılarla model kullanımını saklar; soru başarısını otomatik üretmez.",
+  "to": "Gözlemci hızını değiştirirken aynı dünya programının hangi grafiklerinin değiştiğini incele. Hız–zaman alanının Δx′ ile ve mutlak alanın bu gözlemcinin yoluyla uyuşmasını denetle. Grafikte eklenen kılavuz veya işaretçi fiziksel yeni kuvvet değildir; seçili anı okumaya yardım eder."
+ },
+ {
+  "from": "Bütün ivmeler 0 ve ilk hız v₀sabitse toplam yer değiştirme v₀T, yol |v₀|Tolmalıdır. İlk ve son konum aynıysa ortalama hız 0 olabilir; yol ve ortalama sürat yine pozitif olabilir. Aynı v ile u seçilirse sabit hızla giden cisim bu gözlemciye göre durgun görünür. Bu sınır durumları, işaretleri ve ortalama tanımlarını birlikte sınar.",
+  "to": "Bütün ivmeler 0 ve ilk hız v₀ sabitse toplam yer değiştirme v₀T, yol |v₀|T olmalıdır. İlk ve son konum aynıysa ortalama hız 0 olabilir; yol ve ortalama sürat yine pozitif olabilir. Aynı v ile u seçilirse sabit hızla giden cisim bu gözlemciye göre durgun görünür. Bu sınır durumları, işaretleri ve ortalama tanımlarını birlikte sınar."
+ },
+ {
+  "from": "Bir hızın yalnız bir anda 0 olması tüm aralığın yolu 0 demek değildir. İki evrenin toplamΔvsi 0 olsa da arada hız ve konum değişmiş olabilir. Sonuç seçmeden önce istenenin son konum, yer değiştirme, yol, anlık hız veya aralık ortalaması olduğuna tekrar bak. Birimler farklı nicelikleri ayırır; aynı m/sbirimi taşıyan anlık ve ortalama değerleri de zaman bağlamı ayırır.",
+  "to": "Bir hızın yalnız bir anda 0 olması tüm aralığın yolu 0 demek değildir. İki evrenin toplam Δv’si 0 olsa da arada hız ve konum değişmiş olabilir. Sonuç seçmeden önce istenenin son konum, yer değiştirme, yol, anlık hız veya aralık ortalaması olduğuna tekrar bak. Birimler farklı nicelikleri ayırır; aynı m/s birimi taşıyan anlık ve ortalama değerleri de zaman bağlamı ayırır."
+ },
+ {
+  "from": "Her evre için başlangıç zamanı, süre, ilk konum, ilk hız ve ivme satırı kur. Son hızı ve işaretliΔxhesabını yaz; hız sıfırı evre içindeyse yol için alt parçalara geç. Son konumu önceki konuma ekle, son hızı öteki evreye taşı. Son satırda işaretli yer değiştirmeleri ayrı, pozitif yolları ayrı, bütün süreleri birlikte topla.",
+  "to": "Her evre için başlangıç zamanı, süre, ilk konum, ilk hız ve ivme satırı kur. Son hızı ve işaretli Δx hesabını yaz; hız sıfırı evre içindeyse yol için alt parçalara geç. Son konumu önceki konuma ekle, son hızı öteki evreye taşı. Son satırda işaretli yer değiştirmeleri ayrı, pozitif yolları ayrı, bütün süreleri birlikte topla."
+ },
+ {
+  "from": "Toplamın kontrolündeΣΔx=xson−xilkveΣsüre=Tuyumunu ara. Ortalama hız için toplamΔx/T, sürat için toplamyol/Tkullan. Hareketli gözlemcide hesaplara başlamadan v′=v−udönüşümünü uygulamak veya dünya konumlarını x′=x−utile dönüştürmek aynı sonucu vermelidir. Bu iki yolun uyuşması, gözlemci dönüşümü ve işaretli alan hesabı için güçlü bir denetimdir.",
+  "to": "Toplamın kontrolündeΣΔx=xson−xilk ve Σsüre=T uyumunu ara. Ortalama hız için toplam Δx/T, sürat için toplam yol/T kullan. Hareketli gözlemcide hesaplara başlamadan v′=v−u dönüşümünü uygulamak veya dünya konumlarını x′=x−ut ile dönüştürmek aynı sonucu vermelidir. Bu iki yolun uyuşması, gözlemci dönüşümü ve işaretli alan hesabı için güçlü bir denetimdir."
+ },
+ {
+  "from": "Fiziksel iş, seçilen kuvvetin uygulama noktasının yer değiştirmesiyle ilişkili enerji aktarımıdır. Sabit kuvvet ve doğrusal yer değiştirme için W=F·Δr=F·Δr·cosθ kullanılır. θkuvvetle yer değiştirme arasındaki açıdır; aynı yönde pozitif, zıt yönde negatif, dik durumda 0 iş oluşur. Kuvvet uygulamak veya yorulmak tek başına bu kuvvetin mekanik iş yaptığını göstermez.",
+  "to": "Fiziksel iş, seçilen kuvvetin uygulama noktasının yer değiştirmesiyle ilişkili enerji aktarımıdır. Sabit kuvvet ve doğrusal yer değiştirme için W=F·Δr=F·Δr·cosθ kullanılır. θ kuvvetle yer değiştirme arasındaki açıdır; aynı yönde pozitif, zıt yönde negatif, dik durumda 0 iş oluşur. Kuvvet uygulamak veya yorulmak tek başına bu kuvvetin mekanik iş yaptığını göstermez."
+ },
+ {
+  "from": "Seçilen bir çekme kuvvetinin işi, başka kuvvetler de iş yapıyorsa tek başınaΔK’ye eşit değildir. Net işin pozitifliği K’nin arttığını, negatifliği azaldığını söyler. Kütlesi sabit cismin süratinin karesi önemlidir; hızın işareti K’ye eksi işareti taşımaz. İş–kinetik enerji teoremini cismin bütün iç, kimyasal veya ısıl enerjisinin değişimi için koşulsuzWnet=ΔEtoplam biçimine genişletme.",
+  "to": "Seçilen bir çekme kuvvetinin işi, başka kuvvetler de iş yapıyorsa tek başına ΔK’ye eşit değildir. Net işin pozitifliği K’nin arttığını, negatifliği azaldığını söyler. Kütlesi sabit cismin süratinin karesi önemlidir; hızın işareti K’ye eksi işareti taşımaz. İş–kinetik enerji teoremini cismin bütün iç, kimyasal veya ısıl enerjisinin değişimi için koşulsuz Wnet=ΔEtoplam biçimine genişletme."
+ },
+ {
+  "from": "Yerçekimi potansiyel enerjisi, cisim–Dünya etkileşim sistemi ve seçilen sıfır düzeyiyle tanımlanır. Yaklaşık düzgün yerel g için U=mgh+C yazılır; fiziksel değişimdeΔU=mgΔh kullanılır. Yükseklik, uzamış homojen cisimde uygun kütle merkezinin yüksekliğidir. Sıfır düzeyini değiştirmek bütün U değerlerine sabit ekler; aynı başlangıç ve son arasındakiΔU’yu değiştirmez.",
+  "to": "Yerçekimi potansiyel enerjisi, cisim–Dünya etkileşim sistemi ve seçilen sıfır düzeyiyle tanımlanır. Yaklaşık düzgün yerel g için U=mgh+C yazılır; fiziksel değişimde ΔU=mgΔh kullanılır. Yükseklik, uzamış homojen cisimde uygun kütle merkezinin yüksekliğidir. Sıfır düzeyini değiştirmek bütün U değerlerine sabit ekler; aynı başlangıç ve son arasındaki ΔU’yu değiştirmez."
+ },
+ {
+  "from": "İdeal Hooke yayının doğal boydan işaretli sapması x için Uyay=½kx². Sıkıştırma ve uzatma aynı|x|ile aynı enerji depolayabilir; geri çağırıcı kuvvet Fyay=−kx olduğundan yönleri farklıdır. Bu ifade verilen aralıkta esneklik sınırı aşılmayan ideal yay içindir. Yay sabiti k sertliği anlatır; malzemenin ne kadar uzamaya kadar kalıcı bozulmadan dayanacağını tek başına belirlemez.",
+  "to": "İdeal Hooke yayının doğal boydan işaretli sapması x için Uyay=½kx². Sıkıştırma ve uzatma aynı |x| ile aynı enerji depolayabilir; geri çağırıcı kuvvet Fyay=−kx olduğundan yönleri farklıdır. Bu ifade verilen aralıkta esneklik sınırı aşılmayan ideal yay içindir. Yay sabiti k sertliği anlatır; malzemenin ne kadar uzamaya kadar kalıcı bozulmadan dayanacağını tek başına belirlemez."
+ },
+ {
+  "from": "Mekanik enerji, izlenen kinetik ve potansiyel enerji terimlerinin toplamıdır: Emek=K+Uyer+Uyay gibi. Seçilmiş sistemde yalnız modele alınan korunumlu etkileşimler enerji değiştiriyorsa ve dışarıdan net mekanik enerji aktarımı yoksa bu toplam korunur. Yerçekimi işini−ΔU ile ifade etmek, aynı etkiyi net iş tarafında ikinci kez eklememeyi gerektirir.",
+  "to": "Mekanik enerji, izlenen kinetik ve potansiyel enerji terimlerinin toplamıdır: Emek=K+Uyer+Uyay gibi. Seçilmiş sistemde yalnız modele alınan korunumlu etkileşimler enerji değiştiriyorsa ve dışarıdan net mekanik enerji aktarımı yoksa bu toplam korunur. Yerçekimi işini −ΔU ile ifade etmek, aynı etkiyi net iş tarafında ikinci kez eklememeyi gerektirir."
+ },
+ {
+  "from": "Yalnız bloğu sistem seçersen yerçekimi ve yay kuvveti dış kuvvet olarak net iş hesabına girebilir. Blok+Dünya veya blok+yay etkileşimini sistemin potansiyel enerjisine alırsan ilgili aktarımı U değişimiyle izlersin. İki yöntem aynı fiziksel olayı açıklayabilir; ancak aynı yerçekimi işini hem Wnet’e ekleyip hem aynı taraftaΔU diye ikinci kez sayamazsın.",
+  "to": "Yalnız bloğu sistem seçersen yerçekimi ve yay kuvveti dış kuvvet olarak net iş hesabına girebilir. Blok+Dünya veya blok+yay etkileşimini sistemin potansiyel enerjisine alırsan ilgili aktarımı U değişimiyle izlersin. İki yöntem aynı fiziksel olayı açıklayabilir; ancak aynı yerçekimi işini hem Wnet’e ekleyip hem aynı tarafta ΔU diye ikinci kez sayamazsın."
+ },
+ {
+  "from": "Bir doğru boyunca değişen kuvvet için F‖–xgrafiğinin işaretli alanı o kuvvetin işini verir. Alan kuvvet×uzunluk birimindedir. Pozitif bölgeler enerji aktarımını, negatif bölgeler ters yöndeki aktarımı temsil eder. Kuvvet grafikte yalnız bir seçilmiş kuvvetse bu alan doğrudan net iş olmayabilir; diğer kuvvetlerin işleri de ayrıca gerekir.",
+  "to": "Bir doğru boyunca değişen kuvvet için F‖–x grafiğinin işaretli alanı o kuvvetin işini verir. Alan kuvvet×uzunluk birimindedir. Pozitif bölgeler enerji aktarımını, negatif bölgeler ters yöndeki aktarımı temsil eder. Kuvvet grafikte yalnız bir seçilmiş kuvvetse bu alan doğrudan net iş olmayabilir; diğer kuvvetlerin işleri de ayrıca gerekir."
+ },
+ {
+  "from": "Kuvvet 0’danFmax’a doğrusal artıyorsa 0–Laralığındaki iş½FmaxL olur; son kuvveti bütün yol boyunca sabitmiş gibi FmaxL almak iki kat verir. Aynı iş, daha küçük kuvvetin daha uzun yoluyla da yapılabilir. Grafik ekseni zaman ise altındaki alanın birimi N·s olur; bu iş değildir. Önce eksen adlarını ve sorulan niceliği kontrol et.",
+  "to": "Kuvvet 0’dan Fmax’a doğrusal artıyorsa 0–L aralığındaki iş ½FmaxL olur; son kuvveti bütün yol boyunca sabitmiş gibi FmaxL almak iki kat verir. Aynı iş, daha küçük kuvvetin daha uzun yoluyla da yapılabilir. Grafik ekseni zaman ise altındaki alanın birimi N·s olur; bu iş değildir. Önce eksen adlarını ve sorulan niceliği kontrol et."
+ },
+ {
+  "from": "K=½mv² süratin karesiyle değişir. +v ve−v aynı K’yi verir; v yönlü, kinetik enerji skaler ve bu modelde negatif değildir. Net iş−Kilk olduğunda son K 0 olur; bundan daha negatif bir cebirsel değer ileri izlenen yolun aynı biçimde tamamlanamayacağını gösterebilir. Fiziksel son duruma negatif kinetik enerji atama.",
+  "to": "K=½mv² süratin karesiyle değişir. +v ve −v aynı K’yi verir; v yönlü, kinetik enerji skaler ve bu modelde negatif değildir. Net iş −Kilk olduğunda son K 0 olur; bundan daha negatif bir cebirsel değer ileri izlenen yolun aynı biçimde tamamlanamayacağını gösterebilir. Fiziksel son duruma negatif kinetik enerji atama."
+ },
+ {
+  "from": "Yayı doğal boydan uzatmak veya sıkıştırmak dış enerji aktarımı gerektirebilir. Yayın cisme yaptığı iş Wyay=Uilk−Uson; çok yavaş değişimde dış kuvvet işi Uson−Uilk olur. Başlangıç sapması 0 değilse doğrudan½kxson² yazıp bütün dış iş saymak başlangıçtaki depoyu atlar. Esneklik sınırı veya doğrusal davranış aralığı verilmemiş bir gerçek malzemeyi sonsuz Hooke yayı kabul etme.",
+  "to": "Yayı doğal boydan uzatmak veya sıkıştırmak dış enerji aktarımı gerektirebilir. Yayın cisme yaptığı iş Wyay=Uilk−Uson; çok yavaş değişimde dış kuvvet işi Uson−Uilk olur. Başlangıç sapması 0 değilse doğrudan ½kxson² yazıp bütün dış iş saymak başlangıçtaki depoyu atlar. Esneklik sınırı veya doğrusal davranış aralığı verilmemiş bir gerçek malzemeyi sonsuz Hooke yayı kabul etme."
+ },
+ {
+  "from": "Yay bir negatif sapmadan doğal boya gelip sonra pozitif sapmaya götürülürse ilk bölümde depolanan enerji geri verilebilir, ikinci bölümde tekrar enerji depolanır. Net dış iş toplamΔU’dur; yalnız pozitif enerji sağlanan kısmın toplamı bundan farklı olabilir. Bir bölümde geri alınan enerji ayrıca sayılınca bu iki raporun farklı olması anlaşılır.",
+  "to": "Yay bir negatif sapmadan doğal boya gelip sonra pozitif sapmaya götürülürse ilk bölümde depolanan enerji geri verilebilir, ikinci bölümde tekrar enerji depolanır. Net dış iş toplam ΔU’dur; yalnız pozitif enerji sağlanan kısmın toplamı bundan farklı olabilir. Bir bölümde geri alınan enerji ayrıca sayılınca bu iki raporun farklı olması anlaşılır."
+ },
+ {
+  "from": "Düz bir rampada yol s ve eğimin sinüsü q verilmişse yükseklik değişimiΔh=q·s olur. Yola paralel sabit itiş F’nin işiFs; durgun yüzeyde kaymaya karşı sabit direnç f’nin işi−fs; yerçekimi işi−mgqs’dir. Normal kuvvet, bu ideal sabit yüzeyde yer değiştirmeye dik olduğundan iş yapmaz. Böylece net iş(F−f−mgq)s olur.",
+  "to": "Düz bir rampada yol s ve eğimin sinüsü q verilmişse yükseklik değişimi Δh=q·s olur. Yola paralel sabit itiş F’nin işi Fs; durgun yüzeyde kaymaya karşı sabit direnç f’nin işi −fs; yerçekimi işi −mgqs’dir. Normal kuvvet, bu ideal sabit yüzeyde yer değiştirmeye dik olduğundan iş yapmaz. Böylece net iş (F−f−mgq)s olur."
+ },
+ {
+  "from": "Aynı bilanço Kson+mgΔh+fs=Kilk+Fs biçiminde de yazılabilir. q negatifse aşağı inişteΔU negatif olur; yerçekimi mekanik harekete enerji sağlayabilir. İtişin işi ile net iş aynı sayı olmak zorunda değildir. Sürtünme modelinde f sabit verilmiştir; bu sayıdan ayrıca bir statik tutunma eşiği veya hızla değişen sürtünme yasası çıkarılmaz.",
+  "to": "Aynı bilanço Kson+mgΔh+fs=Kilk+Fs biçiminde de yazılabilir. q negatifse aşağı inişte ΔU negatif olur; yerçekimi mekanik harekete enerji sağlayabilir. İtişin işi ile net iş aynı sayı olmak zorunda değildir. Sürtünme modelinde f sabit verilmiştir; bu sayıdan ayrıca bir statik tutunma eşiği veya hızla değişen sürtünme yasası çıkarılmaz."
+ },
+ {
+  "from": "Yol başındaki K₀ve her metre başına net enerji değişimi b=F−f−mgq ise K(s)=K₀+bsolur. b<0 iken K₀/|b| ileri duruş uzaklığıdır. Hedef bunun içindeyse pozitif hızla ulaşılır; tam sınırdaysa hedefe anlık 0 hızla varılır; ötesi aynı ileri kayma programıyla tamamlanamaz. Sınırın kendisi ile sınırın ötesini tek etiketle birleştirme.",
+  "to": "Yol başındaki K₀ ve her metre başına net enerji değişimi b=F−f−mgq ise K(s)=K₀+bs olur. b<0 iken K₀/|b| ileri duruş uzaklığıdır. Hedef bunun içindeyse pozitif hızla ulaşılır; tam sınırdaysa hedefe anlık 0 hızla varılır; ötesi aynı ileri kayma programıyla tamamlanamaz. Sınırın kendisi ile sınırın ötesini tek etiketle birleştirme."
+ },
+ {
+  "from": "Başlangıçta K₀=0 ve b≤0 ise modelde ileri hareket için pozitif başlangıç enerji veya ivme yoktur; pozitif yolu gidilmiş saymazsın. b>0 ise ilk hız 0 olsa da ileri hız kazanabilir. Duruştan sonra geri kayma veya statik sürtünmenin ne yapacağı bu modelde çözülmez. Geçen süre, sabit net kuvvet ve tamamlanan ileri bölüm için 2 s/(vilk+vson)ile bulunabilir; 0 yolda süre 0’dır.",
+  "to": "Başlangıçta K₀=0 ve b≤0 ise modelde ileri hareket için pozitif başlangıç enerji veya ivme yoktur; pozitif yolu gidilmiş saymazsın. b>0 ise ilk hız 0 olsa da ileri hız kazanabilir. Duruştan sonra geri kayma veya statik sürtünmenin ne yapacağı bu modelde çözülmez. Geçen süre, sabit net kuvvet ve tamamlanan ileri bölüm için 2s/(vilk+vson) ile bulunabilir; 0 yolda süre 0’dır."
+ },
+ {
+  "from": "Motor bandın hızını sabit tutarken sağladığı enerji, bloğun kinetik artışı ve kayma kaynaklı iç enerji artışı arasında paylaşılabilir. Bir cisme pozitif sürtünme işi bulunması, enerji yaratıldığı veya sürtünme ısınmasının bittiği anlamına gelmez. Kayan temasın iki tarafını ve dış motoru bilançoya eklemek işaret sorununu çözer. Bu rehberin rampası özellikle durgun yüzey ve harekete karşı sabit direnç modelidir.",
+  "to": "Motor bandın hızını sabit tutarken sağladığı enerji, bloğun kinetik artışı ve kayma kaynaklı iç enerji artışı arasında paylaşılabilir. Bir cisme pozitif sürtünme işi bulunması, enerji yaratıldığı veya sürtünme ısınmasının bittiği anlamına gelmez. Kayan temasın iki tarafını ve dış motoru bilançoya eklemek işaret sorununu çözer. Buradaki rampa özellikle durgun yüzey ve harekete karşı sabit direnç modelidir."
+ },
+ {
+  "from": "İnteraktif diyagramda ortak enerji ölçeğindeki çubuklar ayrı bileşenleri gösterir. Grafikteki renkli alan bir enerji miktarı temsil eder; kuvvetin gerçek uzunluğu veya cismin geometrik hacmi değildir. Sıfır enerji terimi çubuk genişliğini 0 yapabilir; adı ve sayısı HTML’de kalır. Toplam giriş ve toplam izlenen çıktı eşitliği, model varsayımlarındaki korunumu kontrol etmeye yarar.",
+  "to": "İnteraktif diyagramda ortak enerji ölçeğindeki çubuklar ayrı bileşenleri gösterir. Grafikteki renkli alan bir enerji miktarı temsil eder; kuvvetin gerçek uzunluğu veya cismin geometrik hacmi değildir. Sıfır enerji terimi çubuk genişliğini 0 yapabilir; adı ve sayısı yazılı kalır. Toplam giriş ve toplam izlenen çıktı eşitliği, model varsayımlarındaki korunumu kontrol etmeye yarar."
+ },
+ {
+  "from": "İki ardışık dönüştürücüde birincinin yararlı çıkışı ikincinin tam girişi ise toplam verimη₁η₂olur. Yüzdeler gelişigüzel toplanmaz. Aynı yararlı işi daha küçük giriş enerjisiyle yapmak enerji verimliliğini artırabilir. Giriş 0 olduğunda 0/0 oranı ölçülmüş verim vermez; modelde seçilenηkatsayısı bir varsayım olarak kalır. İdeal 100%model enerji korunumu ile uyumludur; gerçek cihazın bunu sağladığı ayrıca gösterilmelidir.",
+  "to": "İki ardışık dönüştürücüde birincinin yararlı çıkışı ikincinin tam girişi ise toplam verim η₁η₂ olur. Yüzdeler gelişigüzel toplanmaz. Aynı yararlı işi daha küçük giriş enerjisiyle yapmak enerji verimliliğini artırabilir. Giriş 0 olduğunda 0/0 oranı ölçülmüş verim vermez; modelde seçilen η katsayısı bir varsayım olarak kalır. İdeal 100% model enerji korunumu ile uyumludur; gerçek cihazın bunu sağladığı ayrıca gösterilmelidir."
+ },
+ {
+  "from": "1 W=1 J/s; 1 kW=1000 W. Kilowattsaat, kilowatt ile saatin çarpımıdır: 1 kWh=1000 J/s·3600 s=3,6×10⁶ J. Bu bir enerji birimidir,“saat başına kilowatt” değildir. Güç aynı kalırken çalışma süresi iki kat olursa aktarılan enerji iki kat olabilir; enerji sabitken süre yarıya inerse ortalama güç iki kat olur.",
+  "to": "1 W=1 J/s; 1 kW=1000 W. Kilowattsaat, kilowatt ile saatin çarpımıdır: 1 kWh=1000 J/s·3600 s=3,6×10⁶ J. Bu bir enerji birimidir, “saat başına kilowatt” değildir. Güç aynı kalırken çalışma süresi iki kat olursa aktarılan enerji iki kat olabilir; enerji sabitken süre yarıya inerse ortalama güç iki kat olur."
+ },
+ {
+  "from": "Bir aygıtın etiket gücüyle gerçek ortalama tüketim aynı olmak zorunda değildir; aygıt aralıklı çalışabilir veya yükü değişebilir. Soruda sabit güç verilmişse E=Pttanımı kullanılabilir. Bir enerji faturasında kWh gösterilmesi enerjiyi ölçer; sırf çok watt değeri kısa sürede çalışan cihazın her koşulda daha çok toplam enerji tükettiğini söylemez. Önce güç–süre çarpımlarını karşılaştır.",
+  "to": "Bir aygıtın etiket gücüyle gerçek ortalama tüketim aynı olmak zorunda değildir; aygıt aralıklı çalışabilir veya yükü değişebilir. Soruda sabit güç verilmişse E=Pt tanımı kullanılabilir. Bir enerji faturasında kWh gösterilmesi enerjiyi ölçer; sırf çok watt değeri kısa sürede çalışan cihazın her koşulda daha çok toplam enerji tükettiğini söylemez. Önce güç–süre çarpımlarını karşılaştır."
+ },
+ {
+  "from": "Seçilen kuvvetin anlık mekanik gücü P=F·v; doğrusal aynı yönde Fvsayısına iner. Kuvvet sabit olsa da hız değişiyorsa anlık güç değişebilir. Sabit kuvvetin ortalama gücü F·vortile hesaplanabilir; vortişaretli yer değiştirme/süre oranıdır. Kuvvet de değişiyorsa yalnız ayrı ayrı ortalamaları çarpmak genel bir kural değildir.",
+  "to": "Seçilen kuvvetin anlık mekanik gücü P=F·v; doğrusal aynı yönde Fv sayısına iner. Kuvvet sabit olsa da hız değişiyorsa anlık güç değişebilir. Sabit kuvvetin ortalama gücü F·vort ile hesaplanabilir; vort işaretli yer değiştirme/süre oranıdır. Kuvvet de değişiyorsa yalnız ayrı ayrı ortalamaları çarpmak genel bir kural değildir."
+ },
+ {
+  "from": "Frenleyen bir kuvvet için anlık güç negatif olabilir; bu, izlenen cismin mekanik enerjisinden aktarım yönünü gösterir. Güç birimindeki Wile iş için kullanılan Wsembolünü bağlamdan ayır: birinde watt birim, birinde fiziksel iş niceliği olabilir. Bu rehberin tüketim modeli negatif giriş gücü üretmez; olası geri besleme veya rejenerasyon başka bir model gerektirir.",
+  "to": "Frenleyen bir kuvvet için anlık güç negatif olabilir; bu, izlenen cismin mekanik enerjisinden aktarım yönünü gösterir. Güç birimindeki W ile iş için kullanılan W sembolünü bağlamdan ayır: birinde watt birim, birinde fiziksel iş niceliği olabilir. Buradaki tüketim modeli negatif giriş gücü üretmez; olası geri besleme veya rejenerasyon başka bir model gerektirir."
+ },
+ {
+  "from": "Bir ısı pompası soğuk ortamdan enerji alıp dışarıdan verilen işle daha sıcak ortama enerji taşır. Sıcak tarafa aktarılan enerji Qsıcak=Qsoğuk+Wgiriş olabilir. Qsıcak/Wgirişoranı 1’den büyük çıkarsa bu, ısı pompasının COPdeğeridir; yalnız giriş işinin enerjiye dönüşme verimi değildir. Çevreden alınan enerji de tam bilançoya dahildir.",
+  "to": "Bir ısı pompası soğuk ortamdan enerji alıp dışarıdan verilen işle daha sıcak ortama enerji taşır. Sıcak tarafa aktarılan enerji Qsıcak=Qsoğuk+Wgiriş olabilir. Qsıcak/Wgiriş oranı 1’den büyük çıkarsa bu, ısı pompasının COP değeridir; yalnız giriş işinin enerjiye dönüşme verimi değildir. Çevreden alınan enerji de tam bilançoya dahildir."
+ },
+ {
+  "from": "Yararlı çıktı/giriş veriminde bütün enerji girdileri tutarlı sayıldığında enerji korunumu 1 üstü enerji yaratmaya izin vermez. Isı pompasında yalnız Wgirişipayda almak, taşınan çevre enerjisini dışarıda bırakan farklı bir performans tanımıdır. Bu iki oran aynı sözcükle etiketlenmez. Sayısal sonuçtan önce hangi girişlerin hesaba katıldığını ve çıktı olarak neyin seçildiğini yaz.",
+  "to": "Yararlı çıktı/giriş veriminde bütün enerji girdileri tutarlı sayıldığında enerji korunumu 1 üstü enerji yaratmaya izin vermez. Isı pompasında yalnız Wgiriş’i payda almak, taşınan çevre enerjisini dışarıda bırakan farklı bir performans tanımıdır. Bu iki oran aynı sözcükle etiketlenmez. Sayısal sonuçtan önce hangi girişlerin hesaba katıldığını ve çıktı olarak neyin seçildiğini yaz."
+ },
+ {
+  "from": "Rampa görünümünde aynı ileri yol için itiş, direnç, yükseklik ve kinetik bütçeyi birlikte izle. Model ilk duruş noktasında yolu bitirir; hedefin ulaşılamayan bölümüne negatifKçizmez. Yay görünümünde ilk ve son işaretli sapmayı değiştir; kuvvet yönünün, enerjinin ve yay işinin aynı şey olmadığını karşılaştır. Bütün parametreler verilen ideal aralık içindedir.",
+  "to": "Rampa görünümünde aynı ileri yol için itiş, direnç, yükseklik ve kinetik bütçeyi birlikte izle. Model ilk duruş noktasında yolu bitirir; hedefin ulaşılamayan bölümüne negatif K çizmez. Yay görünümünde ilk ve son işaretli sapmayı değiştir; kuvvet yönünün, enerjinin ve yay işinin aynı şey olmadığını karşılaştır. Bütün parametreler verilen ideal aralık içindedir."
+ },
+ {
+  "from": "Tüketim görünümünde sabit giriş gücü, süre ve yararlı pay seçilir; JvekWhbilançosu aynı enerji için birlikte sunulur. Sıfır girişte oran neden tanımsız kalıyor açıklamaya çalış. Bu modeller ayrıntılı motor sürüşü, gerçek malzeme kopması veya ısı pompası çevrimi çözmez. Tahmin ve kısa gerekçe keşif kaydıdır; otomatik puan veya öğrenme ustalığı kaydı oluşturulmaz.",
+  "to": "Tüketim görünümünde sabit giriş gücü, süre ve yararlı pay seçilir; J ve kWh bilançosu aynı enerji için birlikte sunulur. Sıfır girişte oran neden tanımsız kalıyor açıklamaya çalış. Bu modeller ayrıntılı motor sürüşü, gerçek malzeme kopması veya ısı pompası çevrimi çözmez."
+ },
+ {
+  "from": "Yer değiştirme 0 ise seçilen sabit kuvvetin öteleme işi 0 olabilir; vücutta iç enerji harcanmadığı sonucu çıkmaz. İtiş ve direnç aynı işi zıt işaretle yaparsa net iş 0 ve Kson=Kilk olabilir; tek tek işler yine sıfır değildir. Yayda x=0 enerji sıfırı seçilmiş doğal boydur; kpozitifken±xsapmaları aynı pozitifenerjiyi verir.",
+  "to": "Yer değiştirme 0 ise seçilen sabit kuvvetin öteleme işi 0 olabilir; vücutta iç enerji harcanmadığı sonucu çıkmaz. İtiş ve direnç aynı işi zıt işaretle yaparsa net iş 0 ve Kson=Kilk olabilir; tek tek işler yine sıfır değildir. Yayda x=0 enerji sıfırı seçilmiş doğal boydur; k pozitifken ±x sapmaları aynı pozitif enerjiyi verir."
+ },
+ {
+  "from": "Önce sistem ve başlangıç–son durumları yaz. Kinetik terimler için sürati, potansiyel için aynı referanslı yükseklik veya doğal boydan sapmayı, kuvvet işleri için uygun yol ve açıyı seç. Korunumlu kuvveti potansiyelde sayıyorsan iş tarafında tekrar sayma. Isıl artış veya dış giriş varsa eşitliğe ekle;“sürtünmesiz” sözcüğünü otomatik her tür enerji korunumu etiketi yapma.",
+  "to": "Önce sistem ve başlangıç–son durumları yaz. Kinetik terimler için sürati, potansiyel için aynı referanslı yükseklik veya doğal boydan sapmayı, kuvvet işleri için uygun yol ve açıyı seç. Korunumlu kuvveti potansiyelde sayıyorsan iş tarafında tekrar sayma. Isıl artış veya dış giriş varsa eşitliğe ekle; “sürtünmesiz” sözcüğünü otomatik her tür enerji korunumu etiketi yapma."
+ },
+ {
+  "from": "Bulduğun son Knegatifse önce hedefin gerçekten erişilip erişilemediğini denetle. Birimleri J, N, m, sile uyumlu tut; kWhdönüşümünü ayrı göster. Verim veya güç isteniyorsa hangi enerji miktarının hangi süreye veya hangi toplam girişe bölündüğünü açıkla. Son eşitliği sayılarla geri kontrol et: başlangıçlar+girişler, izlenen sonlar+çıkışlarla aynı hesabı vermelidir.",
+  "to": "Bulduğun son K negatifse önce hedefin gerçekten erişilip erişilemediğini denetle. Birimleri J, N, m, s ile uyumlu tut; kWh dönüşümünü ayrı göster. Verim veya güç isteniyorsa hangi enerji miktarının hangi süreye veya hangi toplam girişe bölündüğünü açıkla. Son eşitliği sayılarla geri kontrol et: başlangıçlar+girişler, izlenen sonlar+çıkışlarla aynı hesabı vermelidir."
+ }
+]

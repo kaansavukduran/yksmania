@@ -1,0 +1,63 @@
+{
+ "mol": [
+  {
+   "after": 1,
+   "prompt": "1 mol NaCl formül biriminde toplam kaç mol iyon bulunur?",
+   "answer": "1 mol Na⁺ ve 1 mol Cl⁻ olmak üzere toplam 2 mol iyon bulunur; bu, 2 mol NaCl demek değildir."
+  },
+  {
+   "after": 3,
+   "prompt": "H=1 ve O=16 g/mol iken 36 g H₂O kaç mol H atomu içerir?",
+   "answer": "n=36/18=2 mol molekül olur; her molekülde 2 H bulunduğundan 4 mol, yani 4Nₐ tane H atomu vardır."
+  },
+  {
+   "after": 4,
+   "prompt": "1 mol Ca²⁺ iyonu kaç tane iyon içerir?",
+   "answer": "Nₐ tane iyon içerir; iyonun +2 yükü iyon sayısını çarpan bir katsayı değildir."
+  },
+  {
+   "after": 6,
+   "prompt": "Molar kütlesi 18 g/mol olan suyun tek bir molekülünün kütlesi kaç gramdır?",
+   "answer": "Bir taneciğin kütlesi M/Nₐ ile bulunur, yaklaşık 18/Nₐ gramdır; 18 g bir mol suyun kütlesidir."
+  }
+ ],
+ "periyodik-sistem": [
+  {
+   "after": 1,
+   "prompt": "Atom numarası 17 olan klorun Cl⁻ iyonunda kaç proton ve kaç elektron vardır?",
+   "answer": "17 proton vardır; e=Z−q=17−(−1)=18 elektron bulunur."
+  },
+  {
+   "after": 3,
+   "prompt": "He iki elektronlu olduğu hâlde neden 2. grupta değil 18. gruptadır?",
+   "answer": "İlk katmanı iki elektronla dolmuştur ve kimyasal davranışı soy gazlarınkine benzer; bu yüzden 1. periyot 18. gruptadır."
+  },
+  {
+   "after": 5,
+   "prompt": "O²⁻, F⁻, Ne, Na⁺ ve Mg²⁺ dizisinde yarıçap neden küçülür?",
+   "answer": "Hepsi 10 elektronludur; proton sayısı arttıkça elektronlara uygulanan çekim güçlenir ve yarıçap küçülür."
+  }
+ ],
+ "simyadan-kimyaya": [
+  {
+   "after": 1,
+   "prompt": "'İmbikle sıvı topladı', 'ölümsüzlük aradı' ve 'esans elde etti' cümleleri hangi bilgi katmanlarını anlatır?",
+   "answer": "Birincisi araç ve işlem, ikincisi amaç, üçüncüsü ürün bilgisidir."
+  },
+  {
+   "after": 3,
+   "prompt": "Tuzlu sudaki suyu ayrı bir kapta toplamak için neden yalnız buharlaştırma yetmez?",
+   "answer": "Buharlaştırma tuzu geride bırakır ama su buhar olarak uzaklaşır; buharı soğutup yoğunlaştırarak başka kapta toplamak, yani damıtma gerekir."
+  },
+  {
+   "after": 5,
+   "prompt": "Boyle'un element anlayışı modern element tanımından nasıl ayrılır?",
+   "answer": "Boyle elementi daha basit maddelere ayrılamayan saf madde olarak düşündü; modern tanım ise proton sayısına dayanır."
+  },
+  {
+   "after": 7,
+   "prompt": "Kuram ile yasa arasındaki fark nedir?",
+   "answer": "Kuram desteklenmiş açıklamalar bütünüdür, yasa belirli koşullardaki ilişkiyi betimler; biri zorunlu olarak ötekine dönüşmez."
+  }
+ ]
+}

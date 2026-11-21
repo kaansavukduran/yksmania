@@ -1,0 +1,574 @@
+{
+ "isigin-kirilmasi": [
+  {
+   "after": 1,
+   "prompt": "Işın yüzeyle 35° açı yapıyorsa Snell bağıntısına hangi açıyı koymalısın?",
+   "answer": "Normalle yapılan açıyı koymalısın: 90°−35°=55°. Yüzeyle ölçülen açı sinüs bağıntısına doğrudan girmez."
+  },
+  {
+   "after": 3,
+   "prompt": "Boşluktaki dalga boyu 600 nm olan ışık n=1,5 ortama geçince dalga boyu kaç nm olur?",
+   "answer": "Frekans korunduğu için λ₂=λ₁·n₁/n₂=600/1,5=400 nm olur; frekans 5×10¹⁴ Hz olarak kalır."
+  },
+  {
+   "after": 5,
+   "prompt": "Suyun indisi 4/3 iken 3 m derinlikteki cisme havadan dik bakınca cisim kaç metre derinde görünür?",
+   "answer": "h'=h·n_gözlemci/n_cisim=3·1/(4/3)=2,25 m görünür. Cisim yerinde durur, değişen algılanan konumdur."
+  }
+ ],
+ "mercekler": [
+  {
+   "after": 1,
+   "prompt": "Iraksak merceğe karşı taraftaki odağa yönelerek gelen ışın nasıl çıkar?",
+   "answer": "Asal eksene paralel çıkar. Paralel gelen ışının ise geri uzantısı giriş tarafındaki odaktan geçer."
+  },
+  {
+   "after": 3,
+   "prompt": "Yakınsak mercekte cisim f ile 2f arasındaysa görüntü nerede oluşur ve özellikleri nedir?",
+   "answer": "Görüntü çıkış tarafında 2f'nin dışında oluşur; gerçek, ters ve cisimden büyüktür."
+  },
+  {
+   "after": 4,
+   "prompt": "Iraksak merceğin önündeki gerçek cisim merceğe yaklaşırken büyütme hangi değere ulaşamaz?",
+   "answer": "Büyütme artar ama sonlu pozitif u için 1'e eşit olmaz; görüntü sanal, düz ve küçük kalır."
+  },
+  {
+   "after": 6,
+   "prompt": "Aynı indis oranında eğrilik yarıçaplarının büyüklüğü azalırsa odak uzaklığı nasıl değişebilir?",
+   "answer": "Mercek daha güçlü olabilir ve |f| küçülebilir; şeklin iki yüzeyinin yarıçapı da hesaba girer."
+  }
+ ],
+ "prizmalar-renkler": [
+  {
+   "after": 1,
+   "prompt": "Prizmada ışının toplam sapma açısı hangi bağıntıyla bulunur?",
+   "answer": "δ=i+e−A ile bulunur; e ikinci yüzeyin normalinden ölçülen çıkış açısıdır ve iç açılar A=r₁+r₂ sağlar."
+  },
+  {
+   "after": 2,
+   "prompt": "Normal dispersiyon aralığında mor ışık kırmızıdan neden daha fazla sapar?",
+   "answer": "Bu aralıkta mor ışık için kırılma indisi daha büyüktür; modelde mor için n=1,6, kırmızı için n=1,5 alınır."
+  },
+  {
+   "after": 4,
+   "prompt": "Sarı renk algısı neden ışığın tayfını tek başına kanıtlamaz?",
+   "answer": "Tek frekanslı sarı ışık da kırmızı ile yeşilin karışımı da sarı algı verebilir; aynı algı farklı tayflardan doğabilir."
+  },
+  {
+   "after": 6,
+   "prompt": "Beyaz ışık ideal camgöbeği filtreden geçip sarı opak yüzeye düşerse göze hangi bileşen ulaşır?",
+   "answer": "Filtre yeşil ve maviyi geçirir; sarı yüzey bunlardan yalnız yeşili yansıttığı için göze yeşil ulaşır."
+  }
+ ],
+ "su-dalgalari": [
+  {
+   "after": 2,
+   "prompt": "Bir saniyede altı tepe üreten kaynağın frekansı ve periyodu nedir?",
+   "answer": "Frekans 6 Hz'dir; f=1/T olduğundan periyot 1/6 s olur."
+  },
+  {
+   "after": 4,
+   "prompt": "Düz engelde ilerleme ışını ile engel arasındaki açıyı gelme açısı almak hangi hatayı doğurur?",
+   "answer": "Gelme açısı engelin normalinden ölçülür; engelle yapılan açıyı kullanmak 90° tümleyen hatası yaratır."
+  },
+  {
+   "after": 6,
+   "prompt": "Eğik gelişte dalga cephesi derinliği farklı bölgeye geçerken neden döner?",
+   "answer": "Cephenin sınırı önce geçen ucu yeni bölgede farklı süratle ilerler; bu sürat farkı cephenin yönünü değiştirir."
+  },
+  {
+   "after": 8,
+   "prompt": "Kırılma ile kırınımı birbirinden ayıran temel fark nedir?",
+   "answer": "Kırılma, sürat ya da ortam değişince cephenin yön değiştirmesidir; kırınım, engel kenarında ya da açıklıktan sonra dalganın yayılıp bükülmesidir."
+  }
+ ],
+ "ses-deprem-dalgalari": [
+  {
+   "after": 1,
+   "prompt": "Konuşan birinin sesi sana ulaşırken hava molekülleri neden ağzından kulağına taşınmaz?",
+   "answer": "Tanecikler yerlerinin çevresinde ileri geri salınır; sıkışma ve seyrekleşmelerle taşınan şey enerjidir, havanın kendisi değil."
+  },
+  {
+   "after": 3,
+   "prompt": "Aynı referansa göre ses şiddeti 100 kat artarsa şiddet düzeyi kaç dB artar?",
+   "answer": "Her 10 katlık artış düzeye 10 dB eklediği için 100 kat artış 20 dB artış demektir."
+  },
+  {
+   "after": 5,
+   "prompt": "İdeal gerilmiş telde gerilim artarsa ya da boyca kütle artarsa temel frekans nasıl değişir?",
+   "answer": "Gerilim artınca temel frekans artar; boyca kütle artınca temel frekans azalır."
+  },
+  {
+   "after": 6,
+   "prompt": "Yankıda ölçülen süreyi doğrudan sürat ile çarpıp engel uzaklığı demek neden hatalıdır?",
+   "answer": "Ses engele gidip geri döner, toplam yol 2d olur; t=2d/v olduğundan bu çarpım uzaklığı iki kat verir."
+  },
+  {
+   "after": 8,
+   "prompt": "Hiposantr ile episantr arasındaki fark nedir?",
+   "answer": "Hiposantr yer içindeki temsili odaktır, episantr onun yeryüzündeki düşey izdüşümüdür; aralarındaki düşey uzaklık odak derinliğidir."
+  }
+ ],
+ "isik-bilgisi": [
+  {
+   "after": 1,
+   "prompt": "Fotoelektrik olaydaki eşik frekans ışığın hangi modelini gerektirir?",
+   "answer": "Kuantalanmış enerji alışverişini, yani E=hf enerjili foton modelini gerektirir; girişim ve kırınım ise dalga modeline dayanır."
+  },
+  {
+   "after": 2,
+   "prompt": "Ay gibi kendisi ışık yaymayan bir cismi görebilmen için hangi iki koşul gerekir?",
+   "answer": "Cismin aydınlatılması ve ondan saçılan ya da yansıyan ışığın gözüne ulaşması gerekir."
+  },
+  {
+   "after": 4,
+   "prompt": "İdeal paralel demette uzaklık neden tek başına ters kare azalması doğurmaz?",
+   "answer": "Paralel demet açılmadığı için akı büyüyen bir küre alanına dağılmaz; soğurma da ihmal edilince birim alana düşen pay aynı kalır."
+  },
+  {
+   "after": 6,
+   "prompt": "Farklı geometrideki iki kaynağın bir noktadaki toplam aydınlanmasını bulurken neyi doğrudan toplamamalısın?",
+   "answer": "Uzaklıkları ya da şiddetleri toplamamalısın; her kaynağın aydınlanmasını kendi I, r ve θ değeriyle bulup katkıları toplarsın."
+  }
+ ],
+ "golge-yari-golge": [
+  {
+   "after": 2,
+   "prompt": "Dairesel bir gölgenin çapı 2 katına çıkarsa gölgenin alanı kaç katına çıkar?",
+   "answer": "Alan uzunluğun karesiyle değiştiği için 2²=4 katına çıkar; uzunluk oranını alan oranıyla eşitleme."
+  },
+  {
+   "after": 4,
+   "prompt": "Simetrik iki kaynak birbirinden uzaklaşınca perdedeki tam gölge neden daralır?",
+   "answer": "Gölgelerin merkezleri zıt yönlere kayar; her gölgenin boyu aynı kalsa da kesişimleri küçülür."
+  },
+  {
+   "after": 6,
+   "prompt": "Kaynak engelden büyükse tam gölge konisinde ne olabilir?",
+   "answer": "Tam gölge konisi belirli bir uzaklıkta sonlanabilir; daha geride kaynağın çevresi görünür ve tam gölge kalmaz."
+  }
+ ],
+ "duzlem-ayna": [
+  {
+   "after": 1,
+   "prompt": "Pürüzlü bir yüzeye gelen paralel ışınlar neden farklı yönlere yansır?",
+   "answer": "Yüzeyin küçük bölgelerinin normalleri farklıdır; her parça yansıma yasasına kendi normaline göre uyar."
+  },
+  {
+   "after": 3,
+   "prompt": "Ambulansın önündeki yazı neden ters yazılır?",
+   "answer": "Ayna yansıması yüzeye dik koordinatı ters çevirir; ters yazı düzlem aynadaki yansımada okunur hâle gelir."
+  },
+  {
+   "after": 6,
+   "prompt": "Gözlemci küçük bir aynaya yaklaşınca arkasındaki duvarda görebildiği aralık nasıl değişir?",
+   "answer": "Sınır ışınları değiştiği için görülen aralık genişleyebilir; bu, tam boy için gereken yarım boy koşulundan ayrı bir sorudur."
+  }
+ ],
+ "basinc": [
+  {
+   "after": 1,
+   "prompt": "60 N'luk yük 0,03 m² alana düzgün dağılırsa basınç kaç Pa olur?",
+   "answer": "P=F/A=60/0,03=2000 Pa olur; aynı yük 0,01 m²'de 6000 Pa yapar."
+  },
+  {
+   "after": 3,
+   "prompt": "V=Ah olmayan bir kapta sıvının taban kuvveti neden sıvı ağırlığına eşit çıkmayabilir?",
+   "answer": "Taban kuvveti P_taban·A ile bulunur; eğik yan yüzeyler de düşey kuvvet bileşeni taşıdığından bu değer ρVg'den farklı olabilir."
+  },
+  {
+   "after": 5,
+   "prompt": "İdeal hidrolik düzende büyük kuvvet üreten piston neden daha az yol alır?",
+   "answer": "Sıvı hacmi korunur, A₁x₁=A₂x₂ olur; ideal iş F₁x₁=F₂x₂ korunduğundan büyük kuvvet küçük yolla dengelenir."
+  },
+  {
+   "after": 7,
+   "prompt": "Barometrede daha düşük yoğunluklu sıvı kullanılırsa aynı dış basınç için sütun nasıl değişir?",
+   "answer": "P₀≈ρgh olduğundan ρ küçülünce aynı basıncı dengelemek için düşey sütun daha yüksek olur."
+  },
+  {
+   "after": 8,
+   "prompt": "Buz gibi erirken hacmi azalan maddelerde basınç artışı erime sıcaklığını nasıl etkiler?",
+   "answer": "Erime sıcaklığını düşürebilir; erirken hacmi artan maddelerde ise ters eğilim beklenir."
+  }
+ ],
+ "sivilarin-kaldirma-kuvveti": [
+  {
+   "after": 1,
+   "prompt": "Sıvıya batmış bir cisimde kaldırma kuvveti neden ortaya çıkar?",
+   "answer": "Derine indikçe basınç arttığı için sıvının alt yüzeye uyguladığı yukarı kuvvet üstteki aşağı kuvvetten büyüktür; basınç kuvvetlerinin toplamı kaldırmadır."
+  },
+  {
+   "after": 3,
+   "prompt": "Homojen cisimde Vb/V=ρc/ρs oranı 1'den büyük çıkarsa bu neyi gösterir?",
+   "answer": "Cisim bu koşullarda kısmen yüzemez; kısmi yüzmede bu oran 0 ile 1 arasında olmalıdır."
+  },
+  {
+   "after": 5,
+   "prompt": "Sıvıda dinamometrenin daha az göstermesi neden cismin ağırlığının azaldığı anlamına gelmez?",
+   "answer": "Dinamometre ip gerilmesini, yani T=G−Fk görünür ağırlığını okur; yerçekimi kuvveti ve kütle değişmez."
+  },
+  {
+   "after": 7,
+   "prompt": "Yüzen teknedeki metal yük suya atılıp batarsa su seviyesi neden azalabilir?",
+   "answer": "Teknedeyken yük, kütlesine denk m/ρs hacmi kadar su yer değiştirir; batınca yalnız kendi hacmi kadar yer değiştirir ve yoğun metalde bu hacim daha küçüktür."
+  }
+ ],
+ "dalgalara-giris": [
+  {
+   "after": 2,
+   "prompt": "+3 cm tepe ile −3 cm çukur arasındaki 6 cm neden genlik değildir?",
+   "answer": "Genlik denge konumundan en büyük uzanımdır, burada 3 cm'dir; tepe ile çukur arasındaki fark genliğin iki katıdır."
+  },
+  {
+   "after": 4,
+   "prompt": "t=0'daki ilk tepe ile t=2 s'deki beşinci tepe arasında kaç periyot vardır ve T kaç saniyedir?",
+   "answer": "Arada dört tam periyot vardır; 4T=2 s olduğundan T=0,5 s olur."
+  },
+  {
+   "after": 6,
+   "prompt": "Gerilmiş ipte dalga süratini hangi ortam özellikleri belirler?",
+   "answer": "İpin gerilimi ve boyca kütlesi belirler; dağılımsız modelde kaynağın frekansı sürati değiştirmez."
+  },
+  {
+   "after": 8,
+   "prompt": "Elektromanyetik tayfta radyodan gamaya giderken frekans ve boşluktaki dalga boyu nasıl değişir?",
+   "answer": "Frekans genel olarak artar, boşluktaki dalga boyu azalır; boşlukta yayılma hızı ise hepsinde aynıdır."
+  }
+ ],
+ "yay-dalgalari": [
+  {
+   "after": 1,
+   "prompt": "v=√(F/μ) bağıntısındaki μ neyi gösterir ve birimi nedir?",
+   "answer": "μ=m/L boyca kütledir ve birimi kg/m'dir; kg/m³ birimli hacimsel yoğunlukla karıştırılmaz."
+  },
+  {
+   "after": 3,
+   "prompt": "Sağa ilerleyen bir tepe atmasında yükselen sol yamaçtaki nokta o anda hangi yönde hareket eder?",
+   "answer": "Aşağı hareket eder, çünkü bir sonraki anda oraya soldaki biçim gelir; alçalan sağ yamaçtaki nokta ise yukarı hareket eder."
+  },
+  {
+   "after": 5,
+   "prompt": "İdeal serbest uçta sınırda uzanımın iki kat olması neden kalıcı genlik artışı değildir?",
+   "answer": "Gelen ve yansıyan tepe sınırda geçici olarak üst üste biner; ayrıldıktan sonra geri dönen atmanın genliği aynıdır."
+  },
+  {
+   "after": 7,
+   "prompt": "+4 cm tepe ile −7 cm çukur tam üst üste gelince toplam uzanım kaç cm olur?",
+   "answer": "Uzanımlar işaretli toplanır: +4+(−7)=−3 cm olur."
+  },
+  {
+   "after": 8,
+   "prompt": "Aynı ipte zıt yönde v süratiyle ilerleyen iki atmanın merkezleri arasındaki uzaklık hangi hızla azalır?",
+   "answer": "Uzaklık 2v ile azalır; bu yalnız bağıl yaklaşmadır, her atmanın ortamdaki sürati v olarak kalır."
+  }
+ ],
+ "genlesme": [
+  {
+   "after": 1,
+   "prompt": "Soğutmada bulunan negatif ΔL neyi gösterir?",
+   "answer": "Boyun negatif olduğunu değil, boy değişiminin kısalma olduğunu gösterir; soğutmada ΔT negatif seçilir."
+  },
+  {
+   "after": 3,
+   "prompt": "Soru hacimsel katsayı γ'yı doğrudan verdiyse ΔV hesabında hangi hatadan kaçınmalısın?",
+   "answer": "γ'yı bir daha 3 ile çarpmamalısın; ΔV=γV0ΔT doğrudan kullanılır, γ≈3α yalnız α verildiğinde gerekir."
+  },
+  {
+   "after": 6,
+   "prompt": "Bimetal termostatta temas sıcaklığını bulmak için α dışında hangi bilgiler gerekir?",
+   "answer": "Şeridin kalınlığı, boyu, esnekliği ve ilk boşluk da gerekir; temas sıcaklığı yalnız α'dan bulunmaz."
+  }
+ ],
+ "hal-degisimi": [
+  {
+   "after": 1,
+   "prompt": "Soğuk camda oluşan damla ile su buharının doğrudan buz kristaline dönüşmesi hangi hâl değişimleridir?",
+   "answer": "Camda oluşan sıvı damla yoğuşmadır; buharın doğrudan buz kristaline dönüşmesi kırağılaşmadır."
+  },
+  {
+   "after": 3,
+   "prompt": "Erime ısısı 334 J/g ise 0 °C'deki 0,1 kg buzu eritmek için kaç J gerekir?",
+   "answer": "Önce kütleyi grama çevirirsin: Q=mL=100 g·334 J/g=33400 J gerekir."
+  },
+  {
+   "after": 5,
+   "prompt": "Başlangıçta 0 °C'nin altında olan buzla karışım hesabında hangi enerji adımını atlamamalısın?",
+   "answer": "Buzu önce 0 °C'ye getirme enerjisini; bunu atlayıp doğrudan erimeye geçmek son sıcaklığı yüksek çıkarır."
+  }
+ ],
+ "durgun-elektrik": [
+  {
+   "after": 1,
+   "prompt": "Başlangıçta nötr A ve B cisimlerinden A, B'ye n elektron verirse son yükler ne olur?",
+   "answer": "A'nın yükü +ne, B'nin yükü −ne olur; yalıtılmış sistemde toplam yük sıfır kalır."
+  },
+  {
+   "after": 2,
+   "prompt": "Elektrostatik dengedeki bir iletkenin içinde elektrik alan neden sıfırdır?",
+   "answer": "Alan sıfır olmasaydı serbest elektronlar hareket etmeyi sürdürürdü; denge bu hareketin durduğu hâldir."
+  },
+  {
+   "after": 4,
+   "prompt": "Pozitif çubuk yakındayken birbirine dokunan iki nötr iletkeni ayırırsan parçaların yükü ne olur?",
+   "answer": "Toplam yük sıfır kalır; çubuğa yakın parça negatif, uzak parça pozitif net yük taşıyabilir."
+  },
+  {
+   "after": 6,
+   "prompt": "Nötr elektroskobun yaprakları açılınca yaklaştırılan cismin yük işareti neden belirlenemez?",
+   "answer": "Pozitif de negatif de yüklü cisim etkiyle yük ayrışması yaratıp yaprakları açabilir; bu tek gözlem işareti ayırmaz."
+  }
+ ],
+ "elektrik-akimi": [
+  {
+   "after": 1,
+   "prompt": "Seri devrede akım neden bir ampulden geçince azalmaz?",
+   "answer": "Yük korunur; eleman yükü harcamaz, elektrik enerjisini başka biçimlere dönüştürür. Bu yüzden tek yoldaki akım aynı kalır."
+  },
+  {
+   "after": 3,
+   "prompt": "Elektromotor kuvvetin birimi neden newton değil volttur?",
+   "answer": "ε bir kuvvet değil, kaynağın birim yük başına sağladığı enerjiyle ilgilidir; birimi J/C yani volttur."
+  },
+  {
+   "after": 5,
+   "prompt": "Aynı malzemeden hacmi sabit bir telin boyu iki katına çıkarılırsa direnci kaç katına çıkar?",
+   "answer": "Hacim sabit olduğundan kesit yarıya iner; R=ρL/A'da L iki kat, A yarı olunca R dört katına çıkar."
+  },
+  {
+   "after": 7,
+   "prompt": "Pozitif dirençler paralel bağlanınca eşdeğer direnç kol dirençleriyle nasıl karşılaştırılır?",
+   "answer": "1/Reş=Σ1/Ri olduğundan eşdeğer direnç en küçük kol direncinden de küçüktür."
+  }
+ ],
+ "miknatislar-ve-manyetik-alan": [
+  {
+   "after": 1,
+   "prompt": "Bilinmeyen bir çubuğun ucu bir mıknatısın N kutbunca çekiliyorsa hangi iki olasılık vardır?",
+   "answer": "O uç S kutbu olabilir ya da çubuk mıknatıslanmamış manyetik bir madde olabilir; ayırt edici kanıt itmedir."
+  },
+  {
+   "after": 3,
+   "prompt": "Manyetik alan çizgileri neden birbirini kesmez?",
+   "answer": "Bir noktada B'nin tek bir yönü vardır; kesişme o noktada iki ayrı yön olması anlamına gelirdi."
+  },
+  {
+   "after": 5,
+   "prompt": "Uzun düz telin manyetik alanı ile noktasal yükün elektrik alanı uzaklıkla nasıl farklı azalır?",
+   "answer": "Uzun düz telin alanı B=μ0I/(2πr) ile 1/r oranında, noktasal yükün alanı ise 1/r² oranında azalır."
+  },
+  {
+   "after": 6,
+   "prompt": "Akım kesilince demir çekirdekli elektromıknatısta neden biraz mıknatıslık kalabilir?",
+   "answer": "Akım kaynaklı alan kalkar, ama gerçek demir çekirdekte kalıcı mıknatıslanma kalabilir."
+  }
+ ],
+ "fizik-bilimine-giris": [
+  {
+   "after": 1,
+   "prompt": "Noktasal cisim ve dirençsiz hareket kabulleri hesapta neyi dışarıda bırakır?",
+   "answer": "Noktasal cisim kabulü dönmeyi, dirençsiz hareket kabulü hava etkisini hesaba katmaz."
+  },
+  {
+   "after": 3,
+   "prompt": "Enerji ve kuvvet momentinin aynı N·m birimiyle yazılabilmesi neyi göstermez?",
+   "answer": "Aynı fiziksel nicelik olduklarını göstermez; aynı boyut, aynı anlam ya da aynı işlem demek değildir."
+  },
+  {
+   "after": 5,
+   "prompt": "0–100 mm aralıklı ve 1 mm adımlı bir cetvelde aralık ile adım neyi ayrı ayrı anlatır?",
+   "answer": "Aralık ölçülebilecek değerlerin sınırını, adım ayırt edilebilen en küçük değişimi anlatır; adım tek başına okumanın gerçeğe 1 mm yakın olduğunu garanti etmez."
+  },
+  {
+   "after": 8,
+   "prompt": "Aygıtın sıfır sapması negatifse okumayı düzeltmek için hangi yönde işlem yaparsın?",
+   "answer": "Sapmanın işareti korunur; negatif sıfır sapmasında düzeltme okumaya ekleme yönündedir."
+  },
+  {
+   "after": 11,
+   "prompt": "1 g/cm³ özkütle kaç kg/m³ eder?",
+   "answer": "Pay ve payda birlikte dönüşür: 10⁻³ kg/10⁻⁶ m³=10³ kg/m³ olur."
+  },
+  {
+   "after": 13,
+   "prompt": "Aynı eksende bileşenleri +7 ve −3 olan iki vektörün bileşkesi kaçtır?",
+   "answer": "Bileşenler işaretleriyle toplanır: +7+(−3)=+4 olur; 10 sonucu yalnız aynı yön koşulunda doğrudur."
+  },
+  {
+   "after": 15,
+   "prompt": "Elektrik akımı şiddeti işaretli yazılabildiği hâlde hangi tür niceliktir?",
+   "answer": "SI temel skaler niceliğidir; işaret seçilen referans yöne göre verilir, bir yön oku değildir."
+  },
+  {
+   "after": 17,
+   "prompt": "Bir dizideki bütün okumalar aynı miktarda kayarsa ortalama ve yayılım nasıl değişir?",
+   "answer": "Ortalama kayma kadar değişir, yayılım ise aynı kalır."
+  },
+  {
+   "after": 19,
+   "prompt": "Yasa ile teori arasındaki ilişkide hangi yanılgıdan kaçınmalısın?",
+   "answer": "Teorinin kanıtlanınca yasaya terfi ettiğini düşünmemelisin; ikisi ayrı görevler üstlenir, biri ötekinin üst basamağı değildir."
+  }
+ ],
+ "madde-ozkutle": [
+  {
+   "after": 1,
+   "prompt": "Eşit kollu terazide çekim alanının etkisi neden sadeleşir?",
+   "answer": "Aynı yerde iki kefeye aynı g etki eder; dengede bu ortak etki sadeleşir ve terazi yalnız kütleleri karşılaştırır."
+  },
+  {
+   "after": 3,
+   "prompt": "Kütlesi büyük bir cismin özkütlesi neden büyük olmak zorunda değildir?",
+   "answer": "Özkütle m/V oranıdır; büyük ama düşük yoğunluklu bir blok, küçük ve yoğun bir metal parçasından daha ağır olabilir."
+  },
+  {
+   "after": 5,
+   "prompt": "Adezyon ile kohezyonu ayıran fark nedir?",
+   "answer": "Adezyon farklı tür maddeler arasındaki, kohezyon aynı madde içindeki tanecikler arası etkileşimle ilişkilidir."
+  },
+  {
+   "after": 7,
+   "prompt": "Tartım sırasında sıvı buharlaşmış ya da taşmışsa kütle farkını neden tümüyle cisme yükleyemezsin?",
+   "answer": "Kapalı sistem kabulü bozulur; kütle farkının bir kısmı kaybolan sıvıdan gelir."
+  },
+  {
+   "after": 9,
+   "prompt": "Özkütlesi 2 g/cm³ olan homojen bir örneğin 5 g'lık parçasının hacmi kaç cm³'tür?",
+   "answer": "V=m/ρ=5/2=2,5 cm³ olur; her 1 cm³'te 2 g kütle bulunur."
+  },
+  {
+   "after": 11,
+   "prompt": "Kısmi batmada tüm kütleyi batan hacme bölmek neden yalnız bir üst sınır verir?",
+   "answer": "Batan hacim dış hacimden küçük olduğu için m/Vbatan ortalama özkütleden büyük çıkar; dış hacim bilinmeden kesin değer bulunamaz."
+  },
+  {
+   "after": 13,
+   "prompt": "Madde kaybı olmadan hacmi yüzde 2 artan bir örneğin yeni yoğunluğu eskisinin kaç katıdır?",
+   "answer": "Kütle sabit kaldığından ρ=m/V ile yeni yoğunluk eskisinin 1/1,02 katı olur."
+  },
+  {
+   "after": 15,
+   "prompt": "İki cismin ölçülen yoğunluğunun aynı çıkması neden aynı madde olduklarını kanıtlamaz?",
+   "answer": "Bir alaşım, karışım ya da boşluklu örnek başka bir saf maddeyle aynı ortalama değeri verebilir; ek özellikler gerekir."
+  },
+  {
+   "after": 17,
+   "prompt": "Bir damlayı daha küçük damlalara bölmek toplam yüzey alanını nasıl etkiler?",
+   "answer": "Toplam hacim ve kütle korunurken toplam yüzey alanı artar; bu artışın γΔA kadar enerji bedeli vardır."
+  },
+  {
+   "after": 19,
+   "prompt": "Aynı γ, θ, ρ ve g ile kılcal borunun yarıçapı yarıya inerse |h| nasıl değişir?",
+   "answer": "h=2γcosθ/(ρgr) bağıntısında r paydada olduğundan |h| iki katına çıkar."
+  },
+  {
+   "after": 21,
+   "prompt": "Bir malzeme benzer küçük parçalara bölünürse yüzey/hacim oranı ile yoğunluk nasıl değişir?",
+   "answer": "Uzunluklar küçüldükçe yüzey/hacim oranı büyür; malzemenin kütle/hacim oranı, yani yoğunluğu ise aynı kalır."
+  }
+ ],
+ "dogrusal-hareket": [
+  {
+   "after": 1,
+   "prompt": "Bir cismin konumu negatifken hızı neden pozitif olabilir?",
+   "answer": "Konumun işareti cismin başlangıç noktasının hangi yanında olduğunu, hızın işareti hareket yönünü gösterir; solda olup sağa ilerleyebilir."
+  },
+  {
+   "after": 2,
+   "prompt": "Eşit iki yol v₁ ve v₂ süratleriyle gidilince ortalama sürat neden aritmetik ortalama olmaz?",
+   "answer": "Yavaş bölüm daha uzun sürer; toplam süre L/v₁+L/v₂ olduğundan ortalama sürat 2v₁v₂/(v₁+v₂) çıkar."
+  },
+  {
+   "after": 4,
+   "prompt": "Konum–zaman grafiğinin zaman eksenini kesmesi neyi gösterir?",
+   "answer": "Cismin x=0 noktasından geçtiğini gösterir; eğimin işareti değişmedikçe hareket yönü değişmiş olmaz."
+  },
+  {
+   "after": 6,
+   "prompt": "x–t eğrisinde teğet eğimi ile iki an arasındaki kiriş eğimi neyi ayrı ayrı verir?",
+   "answer": "Teğet eğimi o andaki anlık hızı, kiriş eğimi ise o aralığın ortalama hızını verir."
+  },
+  {
+   "after": 9,
+   "prompt": "v₀=4 m/s, a=−2 m/s² ve τ=3 s olan evrede yer değiştirme ve yol kaç metredir?",
+   "answer": "Dönüş 2 s'de olur; önce 4 m ileri, sonra 1 m geri gidilir. Bu yüzden Δx=3 m, yol 5 m olur."
+  },
+  {
+   "after": 11,
+   "prompt": "Parçalı sabit ivme programında evre sınırında ivme sıçrarken hız neden sıçramaz?",
+   "answer": "Sonlu ivmenin sıfır sürelik katkısı hızı değiştirmez; bu yüzden x ve v bir evreden ötekine aynı değerle geçer."
+  },
+  {
+   "after": 13,
+   "prompt": "Yolculuk sırasında yapılan bekleme toplam ortalama sürati nasıl etkiler?",
+   "answer": "Bekleme yola katkı yapmaz ama süreye eklenir; bu yüzden toplam ortalama sürat küçülür."
+  },
+  {
+   "after": 15,
+   "prompt": "Aynı eğimli fakat farklı düşey kesimli iki x–t doğrusu neyi gösterir?",
+   "answer": "Cisimler aynı yön ve hızla gider; yalnız başlangıç konumları farklıdır."
+  },
+  {
+   "after": 17,
+   "prompt": "İvme grafiğinde a=0 olan bir bölüm hız hakkında ne söyler?",
+   "answer": "Hızın o bölümde sabit kaldığını söyler; hızın sıfır olduğunu göstermez."
+  },
+  {
+   "after": 19,
+   "prompt": "Konum başlangıcını sabit bir b kadar kaydırmak hangi nicelikleri değiştirmez?",
+   "answer": "Bütün konumlar aynı sabit kadar kayar; Δx, hız, ivme ve yol değişmez."
+  },
+  {
+   "after": 21,
+   "prompt": "Programın verildiği toplam süreden sonraki hareketi neden kesin hesaplayamazsın?",
+   "answer": "Son hız bilinse de sonra hangi ivmenin uygulanacağı verilmemiştir; ileri hesap ek varsayım gerektirir."
+  }
+ ],
+ "enerji-ve-hareket": [
+  {
+   "after": 1,
+   "prompt": "Yer değiştirmeye dik etki eden bir kuvvet neden iş yapmaz?",
+   "answer": "İş F·Δr·cosθ ile bulunur; kuvvet yer değiştirmeye dik olunca cos 90°=0 olur ve iş sıfır çıkar."
+  },
+  {
+   "after": 3,
+   "prompt": "Yay sabiti k neyi anlatır, neyi tek başına belirlemez?",
+   "answer": "k yayın sertliğini anlatır; yayın kalıcı bozulmadan ne kadar uzayabileceğini tek başına belirlemez."
+  },
+  {
+   "after": 5,
+   "prompt": "Isı neden cismin içinde depolanan bir miktar gibi düşünülmez?",
+   "answer": "Isı, enerjinin sıcaklık farkıyla aktarılmasını anlatan kavramdır; sürtünmeyle artan şey cismin iç enerjisidir."
+  },
+  {
+   "after": 7,
+   "prompt": "Kuvvet 0'dan Fmax'a doğrusal artarken 0–L aralığında yaptığı iş nedir?",
+   "answer": "F–x grafiğinin üçgen alanı kadardır: ½FmaxL. Son kuvveti sabitmiş gibi FmaxL almak iki kat verir."
+  },
+  {
+   "after": 10,
+   "prompt": "Hooke yayında sapma iki katına çıkarsa kuvvet ve enerji kaç katına çıkar?",
+   "answer": "Kuvvet −kx ile 2 katına, enerji ½kx² ile 4 katına çıkar."
+  },
+  {
+   "after": 12,
+   "prompt": "Rampada yola paralel itiş F, sabit direnç f ve eğim sinüsü q ise s yolunda net iş nedir?",
+   "answer": "Net iş (F−f−mgq)s olur; normal kuvvet yer değiştirmeye dik olduğu için iş yapmaz."
+  },
+  {
+   "after": 14,
+   "prompt": "Hareketli bant üzerindeki daha yavaş bloğa sürtünme neden pozitif iş yapabilir?",
+   "answer": "Bant bloğa ileri yönde sürtünme uygulayıp onu hızlandırır; bu enerji bandı süren motordan gelir."
+  },
+  {
+   "after": 17,
+   "prompt": "Güç sabitken çalışma süresi iki katına çıkarsa aktarılan enerji nasıl değişir?",
+   "answer": "E=Pt olduğundan aktarılan enerji iki katına çıkar."
+  },
+  {
+   "after": 19,
+   "prompt": "Yenilenebilir bir kaynağı hangi iki yanlış anlamla eşitlememelisin?",
+   "answer": "Yenilenebilir olmak sürekli aynı güçte üretmek ya da hiç çevresel etkisi olmamak demek değildir."
+  }
+ ]
+}
