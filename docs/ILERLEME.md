@@ -29,7 +29,7 @@ Bu dosya `npm run progress` ile koddan üretilir; elle düzenlenmez.
 | 99_ÖSYM PDF (işlenen / beyan edilen) | 18 / 1.001 · %1,80 |
 | 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 76 |
 | Adım adım çözümlü soru | 6.465 / 6.465 · %100,00 |
-| Ara hatırlama (mikro ritim): ders · soru | 197 / 505 · %39,01 · 960 soru |
-| Gösterim onarımı: soru alanı · ders paragrafı | 962 · 534 |
+| Ara hatırlama (mikro ritim): ders · soru | 211 / 505 · %41,78 · 1.051 soru |
+| Gösterim onarımı: soru alanı · ders paragrafı | 962 · 560 |
 | Kopya kâğıdı (işlenen / toplam) | 109 / 517 · %21,08 |
 | Resmî ana başlık · uygulama dersi · hazır anlatım | 341 · 540 · 505 |

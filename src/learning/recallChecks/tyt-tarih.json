@@ -1,0 +1,485 @@
+{
+ "degisen-sosyoekonomik-hayat": [
+  {
+   "after": 1,
+   "prompt": "Atölyedeki usta ile fabrikadaki işçinin konumunu ayıran nedir?",
+   "answer": "Usta üretim araçları ve ürünle doğrudan ilişki kurar; fabrika işçisi ise ücret karşılığında belirli bir işi yapar."
+  },
+  {
+   "after": 3,
+   "prompt": "Islah-ı Sanayi çalışmalarında hangi araçlar kullanıldı?",
+   "answer": "Sergi, meslek eğitimi, şirketleşme ve üreticileri bir araya getirme kullanıldı."
+  },
+  {
+   "after": 5,
+   "prompt": "Dış borç alınan para kısa vadeli imkânın yanında hangi yükü doğurur?",
+   "answer": "Faiz ve geri ödeme yükümlülüğü doğurur; bu yüzden borç bir gelir değil yükümlülüktür."
+  },
+  {
+   "after": 7,
+   "prompt": "Demiryolu ile telgrafı işlevleri bakımından nasıl ayırırsın?",
+   "answer": "Demiryolu mal, insan ve askerin taşınmasını hızlandırır; telgraf ise bilginin iletim süresini kısaltır."
+  }
+ ],
+ "yirminci-yuzyil-baslarinda-osmanli": [
+  {
+   "after": 1,
+   "prompt": "Osmanlıcılığı Türkçülükten ayıran birlik dayanağı nedir?",
+   "answer": "Osmanlıcılık din ve etnik köken gözetmeden ortak Osmanlı vatandaşlığına, Türkçülük dil, kültür ve millî kimliğe dayanır."
+  },
+  {
+   "after": 3,
+   "prompt": "II. Balkan Savaşı'nı I. Balkan Savaşı'ndan ayıran taraf farkı nedir?",
+   "answer": "İlkinde Balkan devletleri Osmanlı'ya karşı savaştı; ikincisinde Bulgaristan paylaşım yüzünden eski ortaklarıyla çatıştı, Romanya da katıldı."
+  },
+  {
+   "after": 5,
+   "prompt": "Osmanlı'nın fiilen savaşa girmesinin yakın tetikleyicisi hangi olaydır?",
+   "answer": "29 Ekim 1914'te Osmanlı donanmasının Rus limanlarına yönelik Karadeniz harekâtıdır."
+  },
+  {
+   "after": 7,
+   "prompt": "Irak cephesinde 1916 ve 1917 yıllarında hangi farklı sonuçlar yaşandı?",
+   "answer": "1916'da Kutü'l-Amâre başarısı kazanıldı; 1917'de ise Bağdat kaybedildi."
+  },
+  {
+   "after": 9,
+   "prompt": "1916 Sykes–Picot düzenlemesi hangi devletlerin nüfuz alanlarıyla ilgilidir?",
+   "answer": "İngiltere ile Fransa'nın Osmanlı coğrafyasındaki nüfuz alanlarıyla ilgilidir."
+  }
+ ],
+ "sultan-osmanli-merkez-teskilati": [
+  {
+   "after": 1,
+   "prompt": "Divan, sadrazam ve Enderun'u kurum türü bakımından nasıl ayırırsın?",
+   "answer": "Divan bir kurul, sadrazam bir görevli, Enderun ise bir eğitim kurumudur."
+  },
+  {
+   "after": 3,
+   "prompt": "XVII. yüzyılda güçlenen ekber ve erşed anlayışı tahtta kimi öne çıkardı?",
+   "answer": "Hanedanın yaşça büyük ve uygun görülen üyesini öne çıkardı."
+  },
+  {
+   "after": 5,
+   "prompt": "Müsadere uygulaması özellikle hangi amaçla ilişkilendirilir?",
+   "answer": "Kul statüsündeki görevlilerin servetinin aile içinde kalıcı siyasi güce dönüşmesini önleme amacıyla ilişkilendirilir."
+  },
+  {
+   "after": 7,
+   "prompt": "Divan başkanlığı hangi padişahın döneminde sadrazama geçti?",
+   "answer": "Fatih döneminde geçti; Divanın temelleri ise Orhan Bey dönemine götürülür."
+  }
+ ],
+ "klasik-cag-osmanli-toplum-duzeni": [
+  {
+   "after": 1,
+   "prompt": "Klasik Osmanlı bağlamında millet kavramı neye dayanan toplulukları anlatır?",
+   "answer": "Din ve mezhep aidiyetine dayanan toplulukları anlatır; günümüzün ulus ya da etnik soy kavramıyla özdeş değildir."
+  },
+  {
+   "after": 4,
+   "prompt": "Çift-hane düzeninde üretim ve vergi birimini oluşturan üç öğe nedir?",
+   "answer": "Köylü ailesinin emeği, bir çift öküz ve bu emekle işlenen arazidir."
+  },
+  {
+   "after": 6,
+   "prompt": "Loncadaki çırak, kalfa ve usta ilerleyişi neleri bir araya getirir?",
+   "answer": "Bilgi, uygulama, meslek ahlakı ve denetimi bir araya getirir."
+  },
+  {
+   "after": 8,
+   "prompt": "Bir vakıfta mütevelli ile vakfedeni ayıran nedir?",
+   "answer": "Vakfeden vakfı kuran kişidir; mütevelli ise vakfı yöneten kişidir."
+  }
+ ],
+ "degisen-dunya-dengeleri-osmanli": [
+  {
+   "after": 2,
+   "prompt": "1596 Haçova zaferine rağmen uzun savaşın sürmesi neyi gösterir?",
+   "answer": "Tek bir meydan zaferinin bütün savaşı kesin biçimde bitirmediğini gösterir."
+  },
+  {
+   "after": 4,
+   "prompt": "Osmanlı ile Rusya arasındaki ilk antlaşma olarak hangisi öğrenilir?",
+   "answer": "1681 Bahçesaray Antlaşması öğrenilir; Rusya bu dönemde giderek kalıcı bir rakip oldu."
+  },
+  {
+   "after": 7,
+   "prompt": "1718 Pasarofça Antlaşması'nın farklı yönlü iki sonucu nedir?",
+   "answer": "Mora Osmanlı'da kaldı; buna karşılık Avusturya karşısında kayıplar yaşandı."
+  },
+  {
+   "after": 9,
+   "prompt": "1774'te Kırım'a tanınan statü ile sonraki Rus ilhakı arasındaki fark nedir?",
+   "answer": "1774'te Kırım siyasi bağımsızlık kazandı; Rus toprağına katılması daha sonraki ayrı bir olaydır."
+  }
+ ],
+ "osmanli-kurulus-siyaseti": [
+  {
+   "after": 1,
+   "prompt": "Kolaylaştırıcı koşul ile yeterli nedeni ayıran nedir?",
+   "answer": "Kolaylaştırıcı koşul sonucu mümkün ya da elverişli kılar; yeterli neden ise başka koşula gerek bırakmadan sonucu doğurduğu ileri sürülen etkendir."
+  },
+  {
+   "after": 3,
+   "prompt": "Wittek ile Köprülü kuruluşu açıklarken neyi öne çıkarır?",
+   "answer": "Wittek gaza tezini öne çıkarır; Köprülü Anadolu Türk-İslam birikimini ve uç çevresinin çoklu etkenlerini vurgular."
+  },
+  {
+   "after": 5,
+   "prompt": "İznik ve İzmit hangi yıllarda, kimin döneminde alındı?",
+   "answer": "İznik 1331'de, İzmit 1337'de, ikisi de Orhan Bey döneminde alındı."
+  },
+  {
+   "after": 7,
+   "prompt": "1396 Niğbolu Savaşı hangi padişahın döneminde yaşandı?",
+   "answer": "Yıldırım Bayezid döneminde yaşandı; Haçlı kuvvetlerinin yenilmesi Balkanlardaki Osmanlı gücünü artırdı."
+  },
+  {
+   "after": 9,
+   "prompt": "I. Murad döneminde Hamitoğullarından bazı yerler hangi yolla alındı?",
+   "answer": "Satın alma yoluyla alındı; Germiyanoğullarından bazı yerler ise çeyiz yoluyla geldi."
+  },
+  {
+   "after": 12,
+   "prompt": "Bir fetih dosyasında depo kaydı hangi ihtiyaca kanıt olur?",
+   "answer": "İaşeye kanıt olur; yol kaydı hareket imkânını, görevli ataması ise yönetimi gösterir."
+  }
+ ],
+ "osmanli-askeri-teskilat": [
+  {
+   "after": 2,
+   "prompt": "Orhan Bey döneminde kurulan yaya ile müsellemi ayıran nedir?",
+   "answer": "Yaya piyade, müsellem ise atlı birliktir; ikisi ilk düzenli birlikler olarak oluşturuldu."
+  },
+  {
+   "after": 4,
+   "prompt": "Kuşatmada tünel ve lağım çalışmaları hangi ocağın işidir?",
+   "answer": "Lağımcıların işidir; humbaracılar ise patlayıcı humbara mühimmatıyla ilgilidir."
+  },
+  {
+   "after": 6,
+   "prompt": "Devşirme adayları eğitimden sonra yeniçerilik dışında nerelere ayrılabilirdi?",
+   "answer": "Saray hizmetlerine ya da başka merkezî hizmetlere ayrılabilirdi; devşirmelerin tamamı yeniçeri olmazdı."
+  },
+  {
+   "after": 8,
+   "prompt": "Has, zeamet ve tımar birbirinden hangi ölçüte göre ayrılır?",
+   "answer": "Dirlik gelirlerinin büyüklüğüne göre ayrılır; hepsine aynı gelir eşiği ve asker sayısı uygulanmaz."
+  },
+  {
+   "after": 10,
+   "prompt": "Akıncılar ile azebleri görev bakımından nasıl ayırırsın?",
+   "answer": "Akıncılar sınır boyunda keşif ve akın yapan atlı kuvvettir; azebler ise hafif piyade çevresidir."
+  },
+  {
+   "after": 12,
+   "prompt": "Merkezden eğitim, görevlendirme ve ödeme hükümdara hangi açıdan güç sağlayabilir?",
+   "answer": "Hükümdarın taşradaki yerel güçlere bağımlılığını azaltabilir."
+  }
+ ],
+ "osmanli-medeniyeti": [
+  {
+   "after": 2,
+   "prompt": "Ahmet Yesevî'nin etkisinin Anadolu'da görülmesi neden orada yaşadığını kanıtlamaz?",
+   "answer": "Eserler, öğrenciler, sözlü aktarım ve tasavvuf çevreleri öğretiyi kişinin yaşamadığı yerlere de taşıyabilir."
+  },
+  {
+   "after": 5,
+   "prompt": "Ferman ile beratı belge türü olarak nasıl ayırırsın?",
+   "answer": "Ferman hükümdar emridir; berat ise görev, yetki ya da ayrıcalık tanınmasıyla ilgili belgedir."
+  },
+  {
+   "after": 7,
+   "prompt": "Kadı yargılama dışında hangi tür işleri de yürütürdü?",
+   "answer": "Şehir yönetimiyle ilgili idari, beledî, mali ve noterlik türü işleri de yürütürdü."
+  },
+  {
+   "after": 9,
+   "prompt": "Uluğ Bey'i Osmanlı hükümdarı gibi sınıflandırmak neden yanlıştır?",
+   "answer": "Uluğ Bey Timur'un torunudur ve Semerkant'taki medrese ile gözlemevi çalışmalarıyla ilişkilidir."
+  },
+  {
+   "after": 11,
+   "prompt": "II. Murad döneminde hangi faaliyetlerin desteklenmesi dil ve kültür aktarımıyla ilişkilendirilir?",
+   "answer": "Türkçe eser yazımının ve çeviri faaliyetlerinin desteklenmesi ilişkilendirilir."
+  },
+  {
+   "after": 13,
+   "prompt": "Tezhip ile minyatürü ayıran iş nedir?",
+   "answer": "Tezhip özellikle yazma sayfalarını bezemektir; minyatür ise resimle tasvir yapmaktır."
+  }
+ ],
+ "tarih-zaman": [
+  {
+   "after": 1,
+   "prompt": "Bir ders kitabı hangi araştırmada doğrudan inceleme nesnesi olur?",
+   "answer": "Yazıldığı dönemin eğitim anlayışı araştırılırken doğrudan inceleme nesnesi olur."
+  },
+  {
+   "after": 3,
+   "prompt": "Fermanın eski yazısını okumak ile hitap ve mühür düzenini incelemek hangi alanlara düşer?",
+   "answer": "Eski yazıyı okumak paleografyanın, hitap, mühür ve düzeni türünün kurallarıyla karşılaştırmak diplomatiğin işidir."
+  },
+  {
+   "after": 5,
+   "prompt": "Yalnız yıl numaralarıyla MÖ 5'ten MS 10'a kaç yıl geçer?",
+   "answer": "5 + 10 − 1 = 14 yıl geçer; miladı aşarken bir çıkarılır çünkü 0 yılı yoktur."
+  },
+  {
+   "after": 7,
+   "prompt": "Üzerinde yazı bulunan bir sikke hangi iki kaynak niteliğini birlikte taşır?",
+   "answer": "Hem maddi nesnedir hem okunabilir yazı içerir; hangi yönünün inceleneceğini araştırma sorusu belirler."
+  },
+  {
+   "after": 9,
+   "prompt": "Heraldik hangi nesneleri inceleyen yardımcı alandır?",
+   "answer": "Armaları inceler; paraları inceleyen alan ise nümizmatiktir."
+  },
+  {
+   "after": 12,
+   "prompt": "MÖ 600–501 aralığında ikinci çeyrek hangi yılları kapsar?",
+   "answer": "575–551 yıllarını kapsar; MÖ'de kronolojik akış büyük sayıdan küçüğe doğrudur."
+  }
+ ],
+ "insanligin-ilk-donemleri": [
+  {
+   "after": 1,
+   "prompt": "Göbeklitepe, tarım ile anıtsal yapı arasındaki sıra hakkında neyi düşündürür?",
+   "answer": "Her yerde önce tarım, sonra ortak anıtsal yapı biçiminde katı bir sıra kurulamayacağını düşündürür."
+  },
+  {
+   "after": 3,
+   "prompt": "Artı ürünü depoda herhangi bir şey bulunmasından ayıran nedir?",
+   "answer": "Artı ürün, temel tüketim ve sonraki üretim ihtiyacı ayrıldıktan sonra kalan fazladır."
+  },
+  {
+   "after": 5,
+   "prompt": "Hukukta kolektif ceza hangi durumu anlatır?",
+   "answer": "Yaptırımın yalnız suçluya değil, onun yakınları gibi başka kişilere de uzanmasını anlatır."
+  },
+  {
+   "after": 7,
+   "prompt": "Bir çukur iki tabakayı kesiyorsa çukurun açılması ne zaman olmuştur?",
+   "answer": "Kesilen tabakaların oluşumundan sonra olmuştur; bu göreli sıra mutlak bir yıl vermez."
+  },
+  {
+   "after": 9,
+   "prompt": "Tek bir demir aracın bulunması neden yerel demir işliğinin kesin kanıtı değildir?",
+   "answer": "Araç ithal edilmiş olabilir; yerel üretim için işlik, fırın, üretim artığı gibi bağlamlar gerekir."
+  },
+  {
+   "after": 11,
+   "prompt": "Karain ve Yarımburgaz hangi illerin çevresindedir?",
+   "answer": "Karain Antalya, Yarımburgaz ise İstanbul çevresindedir."
+  },
+  {
+   "after": 13,
+   "prompt": "Ziggurat nasıl bir yapıdır?",
+   "answer": "Basamaklı bir tapınak yapısıdır; onu yalnız hükümdarın mezarı saymak yanlıştır."
+  },
+  {
+   "after": 15,
+   "prompt": "Friglerle ilişkilendirilen tapates nedir?",
+   "answer": "Halı ve kilim türü dokumalardır; Frigler ayrıca Gordion ve tarım-hayvancılıkla anılır."
+  },
+  {
+   "after": 17,
+   "prompt": "Karum terimi hangi ticaret merkezleriyle ilişkilidir?",
+   "answer": "Asur ticaret merkezleriyle ilişkilidir; Anadolu'daki bu merkezlerin tabletleri kayıt uygulamalarına da veri sağlar."
+  }
+ ],
+ "ortacag-dunya": [
+  {
+   "after": 1,
+   "prompt": "Otokrasi kavramı neyi vurgular?",
+   "answer": "Karar yetkisinin dar bir merkezde ya da hükümdarda yoğunlaşmasını vurgular; belirli bir veraset yönteminin adı değildir."
+  },
+  {
+   "after": 3,
+   "prompt": "Kürk Yolu hangi bölgelerdeki ticareti hatırlatır?",
+   "answer": "Kuzey Avrasya'nın orman ve bozkır kuşaklarındaki deri-post ticaretini hatırlatır."
+  },
+  {
+   "after": 5,
+   "prompt": "Justinianus döneminde Roma hukukunun derlenmesi neyin örneğidir?",
+   "answer": "Önceki hukuk birikiminin yeni ihtiyaçlara göre düzenlenmesinin örneğidir; kurallar ilk kez o tarihte doğmamıştır."
+  },
+  {
+   "after": 7,
+   "prompt": "Roma'da 395 ve 476 yıllarında hangi farklı gelişmeler yaşandı?",
+   "answer": "395'te doğu ve batı yönetimleri ayrıldı; 476'da Batı Roma'da imparatorluk otoritesi sona erdi."
+  },
+  {
+   "after": 9,
+   "prompt": "Şehinşah unvanı ne anlama gelir?",
+   "answer": "Kralların kralı anlamına gelir; unvan kararların hangi kurumlarla uygulandığını tek başına açıklamaz."
+  },
+  {
+   "after": 11,
+   "prompt": "Kast kavramı Hindistan bağlamında neye bağlı statüyü açıklar?",
+   "answer": "Doğumla ilişkili statüyü ve buna bağlı toplumsal sınırları açıklar."
+  },
+  {
+   "after": 13,
+   "prompt": "Bedesten ile kapanı ticari işlev bakımından nasıl ayırırsın?",
+   "answer": "Bedesten değerli malların korunaklı ticaretiyle, kapan ise belirli malların toptan tartımı ve dağıtımıyla ilişkilidir."
+  },
+  {
+   "after": 15,
+   "prompt": "Kral Yolu'nun Sardes–Sus bağlantısı hangi çağ kökenlidir?",
+   "answer": "İlk Çağ kökenlidir; Orta Çağ anlatısında geçmesi yolun o dönemde açıldığını göstermez."
+  },
+  {
+   "after": 17,
+   "prompt": "Cengiz Han hangi yıl kağan ilan edildi?",
+   "answer": "1206'da kağan ilan edildi; Moğol siyasi birliği bu bağlamda güçlendi."
+  },
+  {
+   "after": 20,
+   "prompt": "1054 yılı hangi dinî ayrılığın geleneksel dönüm noktasıdır?",
+   "answer": "Katolik ve Ortodoks kiliseleri arasındaki ayrılığın geleneksel dönüm noktasıdır."
+  }
+ ],
+ "ilk-turk-dunyasi": [
+  {
+   "after": 1,
+   "prompt": "Eski Türk siyasi düzeninde töre nasıl tanımlanır?",
+   "answer": "Toplumsal ve siyasi düzeni kuran bağlayıcı kurallar bütünüdür; kağanın da uyması beklenir."
+  },
+  {
+   "after": 3,
+   "prompt": "II. Kök Türk Devleti hangi yıl, kimin önderliğinde kuruldu?",
+   "answer": "682'de Kutluk, yani İlteriş Kağan'ın önderliğinde kuruldu."
+  },
+  {
+   "after": 5,
+   "prompt": "Uygur Kağanlığı 840'ta hangi müdahaleyle bozkırdaki gücünü kaybetti?",
+   "answer": "Kırgız müdahalesiyle kaybetti; buna rağmen Turfan ve Kansu gibi çevrelerde hayat sürdü."
+  },
+  {
+   "after": 7,
+   "prompt": "Oguş, urug ve budun hangi örgütlenme düzeylerini anlatır?",
+   "answer": "Oguş aileyi, urug aileler birliğini, budun ise boylardan oluşan daha geniş topluluğu anlatır."
+  },
+  {
+   "after": 9,
+   "prompt": "Buyruk ve aygucı terimleri hangi görevleri anlatır?",
+   "answer": "Buyruk görevlileri, aygucı ise baş görevliyi anlatır."
+  },
+  {
+   "after": 11,
+   "prompt": "Yuğ ile kurganı ayıran nedir?",
+   "answer": "Yuğ cenaze törenidir; kurgan ise mezar yapısıdır."
+  },
+  {
+   "after": 13,
+   "prompt": "Kök Türkler Sasanilerle hangi topluluğa karşı iş birliği yaptı?",
+   "answer": "Ak Hunlara karşı iş birliği yaptı; bu ittifak belirli amaçlara bağlıydı."
+  },
+  {
+   "after": 15,
+   "prompt": "Bir yazıt için ayrı tutulması gereken üç tarih hangileridir?",
+   "answer": "Yazıtın dikildiği tarih, sonraki bir kopyasının üretildiği tarih ve modern araştırmada okunduğu tarihtir."
+  },
+  {
+   "after": 17,
+   "prompt": "Göçte at ve taşınabilir çadır neden itici etken sayılmaz?",
+   "answer": "Bunlar hareketin nasıl mümkün olduğunu açıklayan araçlardır; itici etken kuraklık ya da dış baskı gibi nedenlerdir."
+  }
+ ],
+ "islam-medeniyetinin-dogusu": [
+  {
+   "after": 1,
+   "prompt": "Muhacir ile ensarı ayıran nedir?",
+   "answer": "Muhacir Mekke'den gelen Müslümanlardır; ensar ise onlara yardım eden Medineli Müslümanlardır."
+  },
+  {
+   "after": 3,
+   "prompt": "Hz. Osman dönemiyle öne çıkan iki gelişme nedir?",
+   "answer": "Donanma ile Kur'an nüshalarının çoğaltılmasıdır."
+  },
+  {
+   "after": 5,
+   "prompt": "Mevali kavramı kimler için kullanılır?",
+   "answer": "Arap olmayan Müslümanlar için kullanılır; köle ya da gayrimüslim oldukları anlamına gelmez."
+  },
+  {
+   "after": 7,
+   "prompt": "Mescid-i Nebevi ibadet dışında hangi işlevlerle incelenir?",
+   "answer": "Eğitim ve toplumsal ilişkilerin yürütülmesi işlevleriyle de incelenir."
+  },
+  {
+   "after": 9,
+   "prompt": "Gazve ile seriyyeyi ayıran ölçüt nedir?",
+   "answer": "Hz. Muhammed'in sefere katılıp katılmamasıdır; galibiyet ya da katılanların kökeni ölçüt değildir."
+  },
+  {
+   "after": 11,
+   "prompt": "Ordugâh şehir nasıl bir merkez olarak düşünülür?",
+   "answer": "Askerî birliklerin konaklama ve örgütlenme merkezi olarak düşünülür."
+  },
+  {
+   "after": 13,
+   "prompt": "Mevaliden cizye alınması Haccac ile Ömer bin Abdülaziz arasında nasıl değişti?",
+   "answer": "Haccac Müslüman olan mevaliden cizye almayı sürdürdü; Ömer bin Abdülaziz döneminde bu uygulama değiştirildi."
+  },
+  {
+   "after": 15,
+   "prompt": "732 Puvatya hangi taraflar arasındaki karşılaşmadır?",
+   "answer": "İslam ordusu ile Frank kuvvetleri arasındadır; 711'deki İberya'ya geçişten ayrı bir olaydır."
+  },
+  {
+   "after": 17,
+   "prompt": "Rasathane ile darüşşifa hangi işlevlerle düşünülür?",
+   "answer": "Rasathane gözlemle, darüşşifa ise tedavi ve tıp eğitimiyle düşünülür."
+  }
+ ],
+ "turklerin-islamiyeti-kabulu": [
+  {
+   "after": 1,
+   "prompt": "751 Talas Savaşı'nda hangi taraflar karşılaştı?",
+   "answer": "Abbasi ordusu ile Çin'in Tang kuvvetleri karşılaştı; Karluklar Abbasi tarafını destekledi."
+  },
+  {
+   "after": 3,
+   "prompt": "Gök Tanrı inancı ile İslam arasındaki hangi benzerlikler kolaylaştırıcı etken sayılır?",
+   "answer": "Bazı yaratıcı ve ahlak anlayışı benzerlikleri; bu, öğreti ve ibadetin tümüyle aynı olduğu anlamına gelmez."
+  },
+  {
+   "after": 5,
+   "prompt": "1040 Dandanakan Savaşı hangi devletler arasında yapıldı?",
+   "answer": "Gazneliler ile Selçuklular arasında yapıldı."
+  },
+  {
+   "after": 7,
+   "prompt": "Maveraünnehir hangi iki nehir arasındaki bölgedir?",
+   "answer": "Ceyhun, yani Amuderya ile Seyhun, yani Siriderya arasındaki tarihsel bölgedir."
+  },
+  {
+   "after": 9,
+   "prompt": "Emevi ve Abbasi uygulamalarının karşılaştırılması kabulü kolaylaştıran hangi mekanizmayı gösterir?",
+   "answer": "Arap olmayan Müslümanlara konan görev ve ilişki engellerinin azalmasının yakınlaşmaya imkân yaratmasını gösterir."
+  },
+  {
+   "after": 12,
+   "prompt": "Satuk Buğra Han'ın Müslüman adı nedir?",
+   "answer": "Abdülkerim'dir; İslamiyet'i benimseyen Karahanlı hükümdarı olarak öğrenilir."
+  },
+  {
+   "after": 14,
+   "prompt": "922'de İdil Bulgarlarına gelen Abbasi heyetinde bulunan tanık kimdir?",
+   "answer": "İbn Fadlan'dır; heyetin gelişi Almış'ın dinî öğretim ve destek talebiyle ilişkilidir."
+  },
+  {
+   "after": 16,
+   "prompt": "Vezirlik için Karahanlılarda ve Gaznelilerde hangi unvanlar kullanılır?",
+   "answer": "Karahanlılarda yuğruş, Gaznelilerde hâce unvanı kullanılır."
+  },
+  {
+   "after": 18,
+   "prompt": "Türklerin İslamiyet'ten önceki yazı ve şehir birikimini hangi örnekler gösterir?",
+   "answer": "Orhun yazıtları ve Uygur şehir faaliyetleri gösterir."
+  }
+ ]
+}
