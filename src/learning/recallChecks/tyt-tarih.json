@@ -528,5 +528,238 @@
    "prompt": "1243 sonrası Moğol üstünlüğü ile İlhanlı idaresini anlatırken hangi tuzaktan kaçınmalısın?",
    "answer": "İkisi ayrı aşamalardır; İlhanlı adını o yapının oluşmasından önceki olaylara taşımamalısın."
   }
+ ],
+ "dunya-gucu-osmanli": [
+  {
+   "after": 1,
+   "prompt": "İstanbul’un alınması Osmanlı’ya hangi stratejik kazancı sağlayabilirdi?",
+   "answer": "Anadolu ile Rumeli arasındaki hareket ve güvenliği güçlendirir, önemli kara ve deniz geçişleri üzerinde denetim sağlayabilirdi."
+  },
+  {
+   "after": 3,
+   "prompt": "Cem Sultan olayı neden iç sorunun dış soruna dönüşmesi olarak anlatılır?",
+   "answer": "Cem’in Memlûklere, sonra Rodos Şövalyeleri ve Avrupa güçlerine sığınması, dış aktörlerin onu diplomatik baskı aracı yapmasını sağladı."
+  },
+  {
+   "after": 5,
+   "prompt": "1533 İstanbul Antlaşması’nda Avusturya arşidükünün sadrazama denk sayılması neyi gösterir?",
+   "answer": "Osmanlı’nın siyasi üstünlüğünü gösterir; Habsburg topraklarının katıldığı ya da rekabetin bittiği anlamına gelmez."
+  },
+  {
+   "after": 9,
+   "prompt": "Avrupa’daki Katolik–Protestan ayrılığı Osmanlı’ya nasıl bir diplomatik imkân sağladı?",
+   "answer": "Birleşik bir Osmanlı karşıtı cephe kurulmasını zorlaştırdı; Osmanlı bu ayrılıkları diplomatik denge için değerlendirdi."
+  },
+  {
+   "after": 11,
+   "prompt": "1590 Ferhat Paşa Antlaşması 1555 Amasya barışı hakkında neyi gösterir?",
+   "answer": "Yeniden başlayan savaşlardan sonra doğuda geniş kazanımlarla imzalanması, Amasya barışının sonsuza dek sürmediğini gösterir."
+  }
+ ],
+ "milli-mucadele": [
+  {
+   "after": 2,
+   "prompt": "Erzurum Kongresi bölgesel toplandığı hâlde kararları neden millî niteliktedir?",
+   "answer": "Doğu illerine dönük toplandı; ama vatanın bütünlüğü, manda ve himayenin reddi gibi kararları bölgesel sınırı aştı."
+  },
+  {
+   "after": 4,
+   "prompt": "Meclis hükûmeti sistemi neyi ifade eder?",
+   "answer": "Yasama ve yürütmenin mecliste toplandığı güçler birliği içinde bakanların meclisçe ayrı ayrı seçilmesini ifade eder."
+  },
+  {
+   "after": 6,
+   "prompt": "TBMM hükûmetinin ilk antlaşması hangisidir ve hangi cepheyle bağlantılıdır?",
+   "answer": "Aralık 1920 Gümrü Antlaşması’dır; Kâzım Karabekir komutasındaki Doğu Cephesi mücadelesiyle bağlantılıdır."
+  },
+  {
+   "after": 8,
+   "prompt": "Başkomutanlık Kanunu ile Tekâlif-i Millîye emirlerinin amacı nasıl ayrılır?",
+   "answer": "Kanun Mustafa Kemal’e askerî kararları hızlandıran süreli yetki verdi; Tekâlif-i Millîye silah, giyecek, taşıma ve üretim kaynaklarını seferber etti."
+  }
+ ],
+ "ataturkculuk-inkilap": [
+  {
+   "after": 1,
+   "prompt": "Saltanatın kaldırılması ile cumhuriyetin ilanı hangi konuda birbirinden ayrılır?",
+   "answer": "Saltanatın kaldırılması (1 Kasım 1922) hanedan yönetimine, cumhuriyetin ilanı (29 Ekim 1923) devletin yönetim biçimine ilişkindir."
+  },
+  {
+   "after": 3,
+   "prompt": "Kadınların belediye, köy ve milletvekili seçimlerindeki hakları hangi sırayla tanındı?",
+   "answer": "Belediye 1930, köy muhtarlığı ve ihtiyar heyeti 1933, milletvekili seçme ve seçilme 1934."
+  },
+  {
+   "after": 5,
+   "prompt": "1929 Millet Mektepleri hangi amaca yönelikti?",
+   "answer": "Yetişkinlerin yeni Türk harfleriyle okuryazar olmasına yönelikti; harf kabulünü uygulamaya taşıyan bir araçtı."
+  },
+  {
+   "after": 7,
+   "prompt": "1925’te aşarın kaldırılması ve kabotaj düzeni hangi alanları ilgilendirir?",
+   "answer": "Aşarın kaldırılması tarımsal yükü, kabotaj düzeni ise kıyı taşımacılığındaki egemenliği ilgilendirir."
+  },
+  {
+   "after": 8,
+   "prompt": "Hıfzıssıhha Müessesesi ve 1930 Umumi Hıfzıssıhha Kanunu hangi alana örnektir?",
+   "answer": "Salgınlarla mücadele ve koruyucu sağlık altyapısına; bu düzenlemeler halkçılıkla ilişkilendirilir."
+  }
+ ],
+ "iki-savas-arasi-turkiye-dunya": [
+  {
+   "after": 1,
+   "prompt": "Meclis içindeki I. ve II. gruplar neden siyasal partilerle karıştırılmamalıdır?",
+   "answer": "Grup adı ayrı bir parti örgütünün bütün özelliklerini göstermez; partiler farklı tarihlerde ayrıca kuruldu."
+  },
+  {
+   "after": 3,
+   "prompt": "Bağımsızlık ile barışçılık neden birbirine karşıt sayılmaz?",
+   "answer": "Barışçı politika her talebi kabul etmek değildir; görüşme ve uluslararası başvuru gibi araçlarla egemenlik korunabilir."
+  },
+  {
+   "after": 5,
+   "prompt": "Türk-Yunan nüfus mübadelesinde hangi topluluklar istisna tutuldu?",
+   "answer": "İstanbul Rumları ve Batı Trakya Türkleri; bu yüzden bütün nüfusun istisnasız değiştirildiği söylenemez."
+  },
+  {
+   "after": 7,
+   "prompt": "Balkan Antantı ve Sadabat Paktı hangi devletler arasında kuruldu?",
+   "answer": "Balkan Antantı Türkiye, Yunanistan, Yugoslavya ve Romanya; Sadabat Paktı Türkiye, İran, Irak ve Afganistan arasında kuruldu."
+  },
+  {
+   "after": 8,
+   "prompt": "Hatay’ın statüsünü 1936’da gündeme getiren gelişme neydi?",
+   "answer": "Fransa-Suriye ilişkilerinin yeniden düzenlenmesi planı Hatay’ın statüsünü gündeme getirdi."
+  }
+ ],
+ "kuresel-savaslar-arasinda-turkiye-dunya": [
+  {
+   "after": 1,
+   "prompt": "Wilson’un Milletler Cemiyeti fikrini desteklemesi ile ABD’nin üyeliği arasındaki ilişki nedir?",
+   "answer": "Wilson fikri destekledi ama ABD örgüte katılmadı; destek ile üyelik aynı şey değildir."
+  },
+  {
+   "after": 3,
+   "prompt": "1928 Briand-Kellogg Paktı hangi taahhüdü getirdi?",
+   "answer": "Uyuşmazlık çözümünde savaşın ulusal politika aracı olarak kullanılmasını reddetme taahhüdü getirdi."
+  },
+  {
+   "after": 5,
+   "prompt": "Nazizmi belirginleştiren ideolojik öğeler nelerdir?",
+   "answer": "Irk üstünlüğü iddiası, antisemitizm ve sistematik dışlama; bunlar incelenen ayrımcı ideolojinin savlarıdır."
+  },
+  {
+   "after": 7,
+   "prompt": "Lenin döneminde uygulanan NEP hangi faaliyetlere sınırlı izin verdi?",
+   "answer": "Bazı küçük işletme ve piyasa faaliyetlerine izin verdi; büyük sanayi, ulaşım ve bankacılıkta devletin rolü sürdü."
+  }
+ ],
+ "ikinci-dunya-savasi-sonrasi": [
+  {
+   "after": 1,
+   "prompt": "Yıldırım harbi hangi savaş yöntemini anlatır?",
+   "answer": "Hava ve kara unsurlarının hızlı ve eşgüdümlü kullanımını anlatır; Almanya bununla 1939–1940’ta hızlı başarılar kazandı."
+  },
+  {
+   "after": 3,
+   "prompt": "Savaş Avrupa’da ve küresel ölçekte hangi aylarda sona erdi?",
+   "answer": "Avrupa’da Almanya’nın Mayıs 1945 teslimiyle, küresel ölçekte ise Japonya’nın teslimiyle Eylül 1945’te sona erdi."
+  },
+  {
+   "after": 5,
+   "prompt": "Birleşmiş Milletler hangi tarihte ve hangi işlemle resmen kuruldu?",
+   "answer": "24 Ekim 1945’te yürürlüğe giren Şart’la kuruldu; Şart San Francisco Konferansı’nda hazırlanmıştı."
+  },
+  {
+   "after": 6,
+   "prompt": "1943 Adana ve Kahire görüşmeleri hangi taleplerle ilişkilidir?",
+   "answer": "Türkiye’nin savaşa katılması talepleriyle ilişkilidir; görüşmeye katılmak savaşa asker gönderildiği anlamına gelmez."
+  },
+  {
+   "after": 8,
+   "prompt": "Toprak Mahsulleri Vergisi neden aşarla aynı düzenleme sayılmaz?",
+   "answer": "Savaş döneminde tarımsal üretimden alınan bir yükümlülüktür; aşar ise 1925’te kaldırılmıştı."
+  }
+ ],
+ "degisim-caginda-avrupa-osmanli": [
+  {
+   "after": 1,
+   "prompt": "Hümanizm bu dönemde neyi ifade eder?",
+   "answer": "İnsanın eğitimine, yeteneklerine ve klasik metinlere odaklanan düşünceyi; günlük dildeki yardımseverlik anlamını değil."
+  },
+  {
+   "after": 3,
+   "prompt": "Sekülerleşme nasıl tanımlanır?",
+   "answer": "Dinin yok olması değil, siyasal ve toplumsal karar alanlarının dinî otoriteden farklılaşmasıdır."
+  },
+  {
+   "after": 5,
+   "prompt": "Osmanlı para düzeninde tağşiş ne demektir?",
+   "answer": "Sikkenin değerli maden içeriğinin azaltılması gibi yollarla nominal değer ile maden değeri arasındaki ilişkinin değiştirilmesidir."
+  },
+  {
+   "after": 7,
+   "prompt": "Suhte hareketleri ile başkentteki yeniçeri hareketlerinde öne çıkan sorunlar nasıl ayrılır?",
+   "answer": "Suhtelerde medrese öğrencilerinin eğitim, geçim ve görev sorunları; yeniçerilerde maaş, sikke, disiplin ve siyasal çıkarlar öne çıkar."
+  },
+  {
+   "after": 8,
+   "prompt": "Ekber ve erşed anlayışı veraset düzeninde neyi öne çıkardı?",
+   "answer": "Hanedanın yaşça büyük ve uygun görülen üyesinin taht önceliğini artırdı."
+  }
+ ],
+ "devrimler-caginda-devlet-toplum": [
+  {
+   "after": 1,
+   "prompt": "İnsan ve Yurttaş Hakları Bildirisi hangi ilkeleri öne çıkardı?",
+   "answer": "Özgürlük, hukuk önünde eşitlik, mülkiyet ve millet egemenliği gibi ilkeleri öne çıkardı."
+  },
+  {
+   "after": 3,
+   "prompt": "Yurttaşlık nasıl tanımlanır?",
+   "answer": "Kişinin siyasal topluluğa hak ve yükümlülüklerle bağlı olmasıdır; vergi, askerlik ve eğitimle ilişkilidir."
+  },
+  {
+   "after": 5,
+   "prompt": "1808 Sened-i İttifak neden anayasa sayılmaz?",
+   "answer": "Merkezle bazı ayanlar arasındaki siyasal bir uzlaşmadır; Kanun-ı Esasi gibi anayasal bir hukuki türde değildir."
+  },
+  {
+   "after": 7,
+   "prompt": "Islahat Fermanı’nı Tanzimat Fermanı’ndan ayıran kapsam nedir?",
+   "answer": "Özellikle gayrimüslimlerin hukuki ve toplumsal durumuna ilişkin eşitlik güvencelerini ayrıntılandırmasıdır."
+  },
+  {
+   "after": 8,
+   "prompt": "Mecelle hangi alanları düzenleyen bir metindir?",
+   "answer": "Borçlar, eşya ve yargılama alanlarını düzenleyen bir kanunlaştırmadır; anayasa değildir."
+  }
+ ],
+ "denge-stratejisi": [
+  {
+   "after": 1,
+   "prompt": "Kırım’ın statüsü 1774, 1783 ve 1792’de nasıl değişti?",
+   "answer": "1774 Küçük Kaynarca’da bağımsızlığı kabul edildi, 1783’te Rusya ilhak etti, 1792 Yaş’ta Osmanlı bu ilhakı tanıdı."
+  },
+  {
+   "after": 2,
+   "prompt": "1798’de Osmanlı neden eski rakibi Rusya ile yakınlaşabildi?",
+   "answer": "Fransa’nın Mısır’ı işgali ortak bir tehdit oluşturdu; ortak tehdidin değişmesi geçici iş birliğini mümkün kıldı."
+  },
+  {
+   "after": 4,
+   "prompt": "Sırp hareketinde özerklik ve bağımsızlık hangi antlaşmalarla anılır?",
+   "answer": "Özerklik 1829 Edirne, bağımsızlık 1878 Berlin ile anılır; ayrıcalık, özerklik ve bağımsızlık ayrı statülerdir."
+  },
+  {
+   "after": 6,
+   "prompt": "1840 ve 1841 Londra düzenlemeleri hangi konularda ayrılır?",
+   "answer": "1840 Londra Mısır sorunuyla, 1841 Londra Boğazlar Sözleşmesi ise Boğazların uluslararası statüsüyle ilgilidir."
+  },
+  {
+   "after": 8,
+   "prompt": "1878 düzenlemelerinde Bosna-Hersek ve Kıbrıs’ın yönetimi hangi devletlere bırakıldı?",
+   "answer": "Bosna-Hersek’in yönetimi Avusturya’ya, Kıbrıs’ın yönetimi İngiltere’ye bırakıldı; Bosna-Hersek’in ilhakı ise 1908’dedir."
+  }
  ]
 }

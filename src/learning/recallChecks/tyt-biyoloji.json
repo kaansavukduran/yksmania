@@ -560,5 +560,415 @@
    "prompt": "Kertenkele GGCCGA ile kedi GGCCTT dizileri kaç konumda farklıdır?",
    "answer": "İki konumda farklıdır; son iki baz GA ve TT olarak ayrılır."
   }
+ ],
+ "canli-ozellikleri": [
+  {
+   "after": 1,
+   "prompt": "Maya ve amip örneği hangi iki sınıflama eksenini birbirinden ayırmanı sağlar?",
+   "answer": "Hücre sayısını ve hücre planını; ikisi tek hücreli olduğu hâlde çekirdekli, yani ökaryottur."
+  },
+  {
+   "after": 3,
+   "prompt": "Tatlı su protistinde kontraktil kofulun suyu dışarı atması neden dinamik düzenlemeye örnektir?",
+   "answer": "Su girişi sürerken çıkış artar; iç denge için bütün madde geçişlerinin durması gerekmez."
+  },
+  {
+   "after": 5,
+   "prompt": "Ribozom neden çekirdek ve mitokondriyle aynı sınıfa konmaz?",
+   "answer": "Ribozom zarsız bir yapıdır, çekirdek ve mitokondri zarlıdır; prokaryot hücrede ribozom bulunması bu ayrımı gösterir."
+  },
+  {
+   "after": 7,
+   "prompt": "Fotoototrof ile kemoototrof canlı hangi açıdan birbirinden ayrılır?",
+   "answer": "Enerji kaynağında; fotoototrof ışık enerjisini, kemoototrof inorganik maddelerin oksidasyonundan gelen kimyasal enerjiyi kullanır."
+  },
+  {
+   "after": 10,
+   "prompt": "Besinin sindirimle parçalanması neden doğrudan ATP üretimi sayılmaz?",
+   "answer": "Sindirim besini küçük parçalara ayırır; ATP kazanımı bu parçaların enerji aktarım yollarında kullanıldığı ayrı bir aşamadır."
+  },
+  {
+   "after": 13,
+   "prompt": "Negatif geri bildirimde iç sıcaklık yükselirken nasıl bir yanıt oluşur?",
+   "answer": "Isı kaybı artar; yanıt sapmanın etkisini azaltır ama başlangıç değerine anında ve kusursuz dönmeyi gerektirmez."
+  },
+  {
+   "after": 15,
+   "prompt": "Islak kütle artışından neden belirli miktarda yeni protein sentezi hesaplanamaz?",
+   "answer": "Islak kütle artışı su girişini de içerebilir; protein için kuru kütle ya da madde bileşimi verisi gerekir."
+  },
+  {
+   "after": 17,
+   "prompt": "Eşeysiz yavruların genellikle birbirine benzemesi hangi yanlış sonuca götürmemeli?",
+   "answer": "Hiç mutasyon olamayacağı sonucuna; eşeysiz üremede de kalıtsal değişim olasılığı vardır."
+  }
+ ],
+ "bilimsel-yontem": [
+  {
+   "after": 1,
+   "prompt": "Hipotez ile tahmin arasındaki fark nedir?",
+   "answer": "Hipotez gözlemleri açıklamak için önerilen sınanabilir bir açıklamadır; tahmin, hipotez doğruysa beklenen gözlenebilir sonucu söyler."
+  },
+  {
+   "after": 3,
+   "prompt": "İki grup hem ışık hem su bakımından farklıysa sonuç farkı neden yalnız ışığa yüklenemez?",
+   "answer": "Su da değiştiği için karıştırıcı bir etkendir; fark ışıktan, sudan ya da ikisinden kaynaklanabilir."
+  },
+  {
+   "after": 5,
+   "prompt": "Teori ile yasa hangi rollerde birbirinden ayrılır?",
+   "answer": "Teori geniş kanıtları birleştiren açıklayıcı çerçevedir, yasa belirli koşullardaki bir düzenliliği betimler; biri diğerine terfi etmez."
+  },
+  {
+   "after": 7,
+   "prompt": "İşlemsel tanım bir araştırmada ne işe yarar?",
+   "answer": "Bir kavramın o çalışmada nasıl gözlenip ölçüleceğini belirler; örneğin çimlenmeyi kökün belirli düzeyde görünmesiyle tanımlamak."
+  },
+  {
+   "after": 9,
+   "prompt": "Pozitif kontrol ile negatif kontrol neyi gösterir?",
+   "answer": "Pozitif kontrol düzenek işlediğinde beklenen yanıtın alınabildiğini, negatif kontrol etki yokken ölçümün nasıl göründüğünü gösterir."
+  },
+  {
+   "after": 13,
+   "prompt": "Kalibrasyonda sabit kayma ile ölçek hatası nasıl ayrılır?",
+   "answer": "Sabit kayma her değere aynı miktarı ekler; ölçek hatası değerleri belirli bir çarpanla değiştirir."
+  },
+  {
+   "after": 14,
+   "prompt": "Bir oran %30’dan %45’e çıkarsa yüzde puan farkı ve göreli artış kaç olur?",
+   "answer": "Fark 15 yüzde puandır, göreli artış ise %50’dir; çünkü göreli değişimde payda başlangıç değeri olan 30’dur."
+  },
+  {
+   "after": 17,
+   "prompt": "İki faktörlü düzende ışığın etkisi farklı su düzeylerinde farklı çıkarsa hangi sonuca varılır?",
+   "answer": "Işık etkisinin bu verilerde su düzeyine göre değiştiği, yani iki faktörün etkileşim gösterdiği sonucuna varılır."
+  },
+  {
+   "after": 18,
+   "prompt": "Sıcak ve aydınlık ortamdaki fidelerin daha uzun olması neden ışığı tek neden yapmaz?",
+   "answer": "Bu bir birlikte değişmedir; sıcaklık gibi aynı anda değişen başka bir koşul da açıklamaya katılabilir."
+  }
+ ],
+ "mineraller": [
+  {
+   "after": 1,
+   "prompt": "Magnezyum ve iyot hangi yapılarla ilişkilidir?",
+   "answer": "Magnezyum klorofilin, iyot ise tiroit hormonlarının yapısıyla ilişkilidir."
+  },
+  {
+   "after": 3,
+   "prompt": "Koenzim ile metal iyonu kofaktörü birbirinden ayıran özellik nedir?",
+   "answer": "İkisi de enzime yardım eden protein dışı bileşendir; koenzim organik, metal iyonu ise inorganik bir yardımcıdır."
+  },
+  {
+   "after": 5,
+   "prompt": "Element ile iyon arasındaki fark nedir?",
+   "answer": "Element tek tür atomun kimliğidir; iyon ise Na⁺ ve Cl⁻ gibi elektrik yükü taşıyan atom ya da atom grubudur."
+  },
+  {
+   "after": 7,
+   "prompt": "Toprakta bir mineralin bol bulunması neden kökün onu alabileceğini garantilemez?",
+   "answer": "Kök mineralleri çoğunlukla toprak çözeltisinden alır; toplam maddenin hepsi alınabilir kimyasal biçimde olmayabilir."
+  },
+  {
+   "after": 9,
+   "prompt": "Yaprak sararması neden tek başına magnezyum eksikliği kanıtı sayılmaz?",
+   "answer": "Başka mineral eksikleri ya da çevre koşulları da benzer sararmaya yol açabilir."
+  },
+  {
+   "after": 13,
+   "prompt": "Kükürt hangi amino asitlerde bulunur ve neden her proteine aynı kükürt oranı atanmaz?",
+   "answer": "Sistein ve metiyonin gibi bazılarında bulunur; proteinin kükürt içeriği hangi amino asitten kaç tane taşıdığına bağlıdır."
+  },
+  {
+   "after": 15,
+   "prompt": "Florür iyonu ile F₂ gazı arasındaki fark nedir?",
+   "answer": "Florür F⁻ iyonudur ve diş dokusunun dayanıklılığıyla ilişkilidir; F₂ ise elementin gaz biçimidir, aynı kimyasal tür değildir."
+  },
+  {
+   "after": 16,
+   "prompt": "Makro ve iz mineral ayrımı neye göre yapılır?",
+   "answer": "Gereken miktara göre yapılır; bu ayrım bir önem sıralaması değildir."
+  },
+  {
+   "after": 20,
+   "prompt": "Derişim mg/L, hacim mL olarak verilirse toplam mineral miktarını nasıl bulursun?",
+   "answer": "Önce mililitreyi litreye çevirir, sonra derişimi hacimle çarparsın; bu, bitkinin aldığı miktar değildir."
+  }
+ ],
+ "su-asit-baz-tuz": [
+  {
+   "after": 2,
+   "prompt": "Kohezyon ile adhezyonu ayırırken hangi tarafların etkileşimine bakarsın?",
+   "answer": "Kohezyonda su molekülleri birbirini çeker; adhezyonda su cam ya da bitki çeperi gibi başka bir yüzeyle etkileşir."
+  },
+  {
+   "after": 4,
+   "prompt": "Canlıda metabolik su oluşması hangi genellemeyi yanlışlar?",
+   "answer": "İnorganik hiçbir molekülün canlıda üretilemeyeceği genellemesini; su gibi bir bileşik hücrede atomlardan oluşturulabilir."
+  },
+  {
+   "after": 7,
+   "prompt": "NaCl ile glikozun suda çözünmesi nasıl farklıdır?",
+   "answer": "NaCl iyonlarına ayrılarak dağılır; glikoz ise kimliğini koruyarak moleküller hâlinde çözünür."
+  },
+  {
+   "after": 9,
+   "prompt": "Hidroliz tepkimesinde su hangi rolü üstlenir?",
+   "answer": "Giren maddedir; uygun bağ su kullanılarak parçalanır."
+  },
+  {
+   "after": 11,
+   "prompt": "Buharlaşma için Q=m·L modelinde m hangi kütledir?",
+   "answer": "Gerçekten buharlaşan su kütlesidir; salgılanan toplam sıvı değildir ve formülde sıcaklık farkı çarpanı yoktur."
+  },
+  {
+   "after": 13,
+   "prompt": "Buzun yüzmesi ile küçük bir canlının su yüzeyinde durması hangi farklı nedenlerle açıklanır?",
+   "answer": "Buzun yüzmesi yoğunluk ve kaldırma etkisiyle, canlının yüzeyde durması ise yüzey gerilimiyle ilişkilidir."
+  },
+  {
+   "after": 16,
+   "prompt": "[H⁺]=10⁻⁴ mol/L olan ideal seyreltik çözeltinin pH’si kaçtır?",
+   "answer": "pH 4’tür; çünkü pH yaklaşık olarak −log₁₀[H⁺] değerine eşittir."
+  },
+  {
+   "after": 19,
+   "prompt": "Amonyum klorür ve sodyum karbonat çözeltileri hangi pH karakterini gösterir?",
+   "answer": "Amonyum klorür asidik, sodyum karbonat bazik çözelti verir; her tuz çözeltisi nötr değildir."
+  }
+ ],
+ "karbohidratlar": [
+  {
+   "after": 1,
+   "prompt": "Sakkaroz ve laktoz hangi monosakkaritlerden oluşur?",
+   "answer": "Sakkaroz glikoz ile fruktozdan, laktoz ise glikoz ile galaktozdan oluşur."
+  },
+  {
+   "after": 4,
+   "prompt": "Karbohidratın zar proteinine ya da lipidine bağlı kısa zincirleri hangi adı alır ve ne işe yarar?",
+   "answer": "Glikoprotein ve glikolipit adını alır; hücre yüzeyinde hücrelerin tanınmasına ve etkileşmesine katkı verir."
+  },
+  {
+   "after": 6,
+   "prompt": "Glikoz, fruktoz ve galaktoz aynı C₆H₁₂O₆ formülüne sahipken nasıl farklı moleküller olur?",
+   "answer": "Atomların bağlanma ya da uzaydaki düzeni farklıdır; izomerlik bu yüzden yalnız atom sayımıyla çözülemez."
+  },
+  {
+   "after": 8,
+   "prompt": "Nişastadaki alfa(1→4) ve alfa(1→6) bağlantıları hangi rolleri üstlenir?",
+   "answer": "Alfa(1→4) ana zinciri kurar; alfa(1→6) bir birimin 1. karbonunu diğerinin 6. karbonuna bağlayarak dal noktası oluşturur."
+  },
+  {
+   "after": 10,
+   "prompt": "İnsan selülozdan neden doğrudan glikoz elde edemez?",
+   "answer": "Kendi sindirim enzimleri selülozdaki beta(1→4) glikozit bağlarını nişastadaki gibi parçalayamaz."
+  },
+  {
+   "after": 12,
+   "prompt": "Aynı sayıda bağ arka arkaya kurulup koparılırsa su kaydını nasıl yorumlarsın?",
+   "answer": "Net su değişimi sıfır olabilir; yine de sentezin ve hidrolizin ikisinin de gerçekleştiği ayrı kaydedilir."
+  },
+  {
+   "after": 15,
+   "prompt": "Dış ortamda glikozun azalması neden hücrede yeni glikojen yapıldığını göstermez?",
+   "answer": "Glikoz alınıp solunumda kullanılmış ya da başka bir yapıya katılmış olabilir; glikojen için ona özgü bir ölçüm gerekir."
+  }
+ ],
+ "lipitler": [
+  {
+   "after": 1,
+   "prompt": "Mumlar yapı bakımından trigliseritten nasıl ayrılır?",
+   "answer": "Mumda uzun zincirli bir alkol bir yağ asidiyle ester bağı kurar; trigliseritte ise bir gliserole üç yağ asidi bağlanır."
+  },
+  {
+   "after": 4,
+   "prompt": "Yağ dokusunun enerji depolama dışındaki iki görevi nedir?",
+   "answer": "Isı yalıtımına ve mekanik korumaya katkı verir."
+  },
+  {
+   "after": 7,
+   "prompt": "b adet trigliserit kurulduğunda kaç gliserol, kaç yağ asidi kullanılır ve kaç su açığa çıkar?",
+   "answer": "b gliserol ve 3b yağ asidi kullanılır; kurulan ester bağı ve net sentez suyu sayısı da 3b olur."
+  },
+  {
+   "after": 10,
+   "prompt": "Aynı karbon uzunluğundaki iki yağ asidinde çift bağ sayısı artarsa hidrojen sayısı nasıl değişir?",
+   "answer": "Azalır; bu karşılaştırma yalnız iskelet ve işlevsel gruplar aynı tutulduğunda geçerlidir."
+  },
+  {
+   "after": 12,
+   "prompt": "Omega numarası yağ asidinin hangi ucundan sayılarak belirlenir?",
+   "answer": "Metil (CH₃) ucundan; ilk karbon–karbon çift bağının bu uca göre konumu omega numarasını verir."
+  },
+  {
+   "after": 14,
+   "prompt": "D vitamininin kolesterol kökenli olması neden A, E ve K vitaminlerini steroid yapmaz?",
+   "answer": "Metabolik ilişki yapısal grup üyeliği demek değildir; yapı sınıfı, çözünürlük grubu ve işlev ayrı ölçütlerdir."
+  },
+  {
+   "after": 15,
+   "prompt": "Yağların oksijenli yıkımında su ile ester hidrolizinde su hangi yönde rol alır?",
+   "answer": "Oksijenli yıkımda metabolik su oluşur; ester hidrolizinde ise su tüketilir."
+  }
+ ],
+ "proteinler": [
+  {
+   "after": 1,
+   "prompt": "Birden çok ayrı polipeptitte toplam peptit bağı sayısını nasıl bulursun?",
+   "answer": "Toplam amino asit sayısından zincir sayısını çıkarırsın; hidrojen bağı gibi etkileşimler bu sayıma eklenmez."
+  },
+  {
+   "after": 2,
+   "prompt": "Aynı amino asit dizisi neden beklenen işlevi göstermeyebilir?",
+   "answer": "Zincir uygun biçimde katlanmazsa aktif bölgedeki ya da bağlanma yerindeki gerekli düzen kurulamaz."
+  },
+  {
+   "after": 4,
+   "prompt": "Fibrinojen ve albümin kanda hangi görevlere katkı verir?",
+   "answer": "Fibrinojen fibrine dönüşerek pıhtı ağının oluşmasına, albümin ise kan plazmasının kolloid ozmotik basıncına katkı verir."
+  },
+  {
+   "after": 6,
+   "prompt": "Bir amino asidin amfoter olması ne anlama gelir?",
+   "answer": "Amino grubu proton alabildiği, karboksil grubu proton verebildiği için koşula göre asit ya da baz gibi davranabilmesidir."
+  },
+  {
+   "after": 9,
+   "prompt": "Her proteinin dördüncül yapıya sahip olmamasının nedeni nedir?",
+   "answer": "Dördüncül yapı birden çok polipeptit zincirinin işlevsel bütün oluşturmasıdır; tek zincirli proteinde bu düzey bulunmaz."
+  },
+  {
+   "after": 12,
+   "prompt": "Açık bir polipeptitte uçtaki tek kesim ile ortadaki tek kesim ne verir?",
+   "answer": "Uçtaki kesim bir amino asidi serbest bırakabilir; ortadaki kesim ise iki peptit parçası verir."
+  },
+  {
+   "after": 14,
+   "prompt": "Bir enzimin her çevrimde yeniden kullanılması neden hiç yenilenmeyeceği anlamına gelmez?",
+   "answer": "Çevrim ile molekülün ömrü farklı zaman ölçekleridir; hücre proteinleri zamanla parçalar ve yeniden sentezler."
+  },
+  {
+   "after": 16,
+   "prompt": "Bir örnekteki toplam protein miktarı neden protein çeşidi sayısını belirlemez?",
+   "answer": "Aynı kütle farklı uzunluk ve türlerdeki protein karışımlarıyla sağlanabilir; tür için dizi ya da işleve özgü ölçüm gerekir."
+  }
+ ],
+ "enzimler": [
+  {
+   "after": 1,
+   "prompt": "Pepsin ve tripsin adları enzim adlandırması hakkında neyi gösterir?",
+   "answer": "Birçok enzim -az ekini taşısa da bu ekin her enzim adı için zorunlu olmadığını gösterir."
+  },
+  {
+   "after": 2,
+   "prompt": "Apoenzim ile holoenzim arasındaki fark nedir?",
+   "answer": "Apoenzim enzimin protein kısmıdır; holoenzim ise gerekli yardımcı bileşeniyle birlikte çalışan bütündür."
+  },
+  {
+   "after": 4,
+   "prompt": "Substrat arttıkça başlangıç hızı neden bir üst değere yaklaşır?",
+   "answer": "Enzim miktarı sabitken etkin bölgelerin kullanım sınırına ulaşılır; ek substrat artık aynı hız artışını sağlamaz."
+  },
+  {
+   "after": 6,
+   "prompt": "Tersinir bir tepkimeye enzim eklemek neyi değiştirir, neyi değiştirmez?",
+   "answer": "Dengeye ulaşma süresini değiştirebilir; sıcaklık gibi koşullar sabitken dengedeki ürün–giren oranını değiştirmez."
+  },
+  {
+   "after": 8,
+   "prompt": "Aktivatör nedir ve etkisi neye bağlıdır?",
+   "answer": "Uygun koşulda enzim etkinliğini artıran etkendir; etkisi enzime ve ortama bağlıdır, her enzimi artırmaz."
+  },
+  {
+   "after": 11,
+   "prompt": "Pepsin ve tripsin hangi pH ortamlarıyla ilişkilendirilir?",
+   "answer": "Pepsin asidik mide ortamıyla, tripsin daha bazik ince bağırsak ortamıyla ilişkilendirilir."
+  },
+  {
+   "after": 14,
+   "prompt": "Pepsinojenden pepsin oluşması neden tam hidroliz sayılmaz?",
+   "answer": "Öncü bölüm sınırlı proteolizle ayrılır ve görevli protein açığa çıkar; zincir serbest amino asitlere parçalanmaz."
+  },
+  {
+   "after": 16,
+   "prompt": "Nişasta sindiriminde amilaz ve maltazın görevleri nasıl ayrılır?",
+   "answer": "Amilaz maltoz gibi daha küçük ürünlerin oluşmasına katkı verir; maltaz maltozu hidroliz ederek iki glikoz oluşturur."
+  },
+  {
+   "after": 18,
+   "prompt": "Modelde enzim etkisiz seçilince hızın sıfır alınması neyi iddia etmez?",
+   "answer": "Enzimsiz hiçbir kimyasal tepkimenin gerçekleşemeyeceğini iddia etmez; enzimsiz arka plan hızı yalnız ihmal edilmiştir."
+  }
+ ],
+ "vitaminler": [
+  {
+   "after": 2,
+   "prompt": "K vitamini ve C vitamini hangi süreçlerle ilişkilidir?",
+   "answer": "K vitamini pıhtılaşmada görevli bazı proteinlerin işleviyle, C vitamini kolajen yapımı gibi süreçlerle ilişkilidir."
+  },
+  {
+   "after": 4,
+   "prompt": "Vitaminin düzenleyici görev üstlenmesi neden onu mineral yapmaz?",
+   "answer": "Vitaminler organik, mineraller inorganiktir; düzenleyici görev bu organik–inorganik ayrımını ortadan kaldırmaz."
+  },
+  {
+   "after": 7,
+   "prompt": "Beta-karoten ile retinol arasındaki ilişki nedir?",
+   "answer": "Beta-karoten dönüşümle A vitamini etkinliğine katkı veren bir provitamin A’dır; retinol biçimindeki hazır A vitaminiyle aynı molekül değildir."
+  },
+  {
+   "after": 10,
+   "prompt": "C vitamininin pişirme suyuna geçmesi ile etkinliğini kaybetmesi nasıl ayrılır?",
+   "answer": "Suya geçişte molekül yemeğin suyunda bulunmaya devam eder; etkinlik kaybında ise vitamin kimyasal olarak etkinliğini yitirir."
+  },
+  {
+   "after": 12,
+   "prompt": "Beriberi ve pellagra hangi vitamin eksiklikleriyle eşleştirilir?",
+   "answer": "Beriberi B1, pellagra ise B3 eksikliğiyle eşleştirilir."
+  },
+  {
+   "after": 14,
+   "prompt": "Kapalı üç bölmeli modelde katı ve su ölçüldüyse etkinlik kaybını nasıl bulursun?",
+   "answer": "Başlangıç miktarından katıda kalan ve suya geçen miktarları çıkarırsın: kayıp=başlangıç−katı−su."
+  },
+  {
+   "after": 16,
+   "prompt": "Pişirme suyu dökülürse yenebilir bölümdeki vitamin miktarı neye eşit olur?",
+   "answer": "Yalnız katıda kalan miktara eşit olur; su yemekte tutulursa katı ile suyun toplamı hesaplanır."
+  },
+  {
+   "after": 18,
+   "prompt": "B12 emiliminde rol alan iç faktör nedir?",
+   "answer": "Mide kaynaklı ve B12’nin emilim basamaklarıyla ilişkili bir proteindir; vitaminin kendisi değildir."
+  }
+ ],
+ "nukleik-asitler": [
+  {
+   "after": 1,
+   "prompt": "Bir nükleotitte baz ile şeker ve şeker ile fosfat arasında hangi bağlar incelenir?",
+   "answer": "Baz ile şeker arasında glikozit bağı, şeker ile fosfat arasında fosfoester bağı incelenir."
+  },
+  {
+   "after": 3,
+   "prompt": "Pürin ve pirimidin bazları hangi ölçüte göre ayrılır?",
+   "answer": "Halka sayısına göre; adenin ve guanin çift halkalı pürin, sitozin, timin ve urasil tek halkalı pirimidindir."
+  },
+  {
+   "after": 5,
+   "prompt": "A=T ve G=C eşitliği çift zincirli DNA’da neden tek bir zincirin içinde zorunlu değildir?",
+   "answer": "Eşitlik iki zincirin tümü için geçerlidir; bir zincirdeki dengesizliği karşı zincir tamamlar."
+  },
+  {
+   "after": 8,
+   "prompt": "mRNA ile tRNA’nın taşıdıkları şey nasıl ayrılır?",
+   "answer": "mRNA DNA’dan aktarılan bilgiyi ribozomda okunacak kalıp olarak taşır; tRNA ise uygun amino asidi ribozoma getirir."
+  },
+  {
+   "after": 9,
+   "prompt": "Ökaryot hücrede çekirdek dışında DNA hangi organellerde bulunabilir?",
+   "answer": "Mitokondride ve fotosentetik hücrelerin kloroplastlarında bulunabilir."
+  }
  ]
 }

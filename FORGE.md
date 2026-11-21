@@ -45,8 +45,8 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | 99_ÖSYM PDF (işlenen / beyan edilen) | 18 / 1.001 · %1,80 |
 | 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 76 |
 | Adım adım çözümlü soru | 6.465 / 6.465 · %100,00 |
-| Ara hatırlama (mikro ritim): ders · soru | 231 / 505 · %45,74 · 1.182 soru |
-| Gösterim onarımı: soru alanı · ders paragrafı | 962 · 626 |
+| Ara hatırlama (mikro ritim): ders · soru | 250 / 505 · %49,50 · 1.303 soru |
+| Gösterim onarımı: soru alanı · ders paragrafı | 962 · 685 |
 | Kopya kâğıdı (işlenen / toplam) | 109 / 517 · %21,08 |
 | Resmî ana başlık · uygulama dersi · hazır anlatım | 341 · 540 · 505 |
 <!-- ilerleme:bitir -->

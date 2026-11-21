@@ -210,5 +210,105 @@
  {
   "from": "Çözüm sonunda hangi basamağı, hangi özellik düzeyini ve hangi canlı kümesini kullandığını bir cümleyle yaz. Ağacın dışındaki bilinmeyen türler hakkında ek sonuç uydurma. Model seçimleri ve gerekçen çalışma notudur; keşifte doğru yönü seçmek bağımsız soru doğrusu, ustalık veya konu tamamlanması olarak kaydedilmez. Konuyu öğrendiğini sınamak için açıklamayı kapatıp yeni bir canlı çiftiyle aynı kapsama ve kanıt kurallarını yeniden uygula.",
   "to": "Çözüm sonunda hangi basamağı, hangi özellik düzeyini ve hangi canlı kümesini kullandığını bir cümleyle yaz. Ağacın dışındaki bilinmeyen türler hakkında ek sonuç uydurma. Konuyu öğrendiğini sınamak için açıklamayı kapatıp yeni bir canlı çiftiyle aynı kapsama ve kanıt kurallarını yeniden uygula."
+ },
+ {
+  "from": "İdeal seyreltik okul yaklaşımında pH≈−log₁₀[H⁺] yazılır. Logaritma burada onluk üsle ilişkilidir: [H⁺]=10⁻⁴ mol/L ise pH 4’tür. pH bir azalınca H⁺ derişimi on kat artar; artan pH ise ters yönde derişim değişimi demektir.",
+  "to": "İdeal seyreltik yaklaşımda pH≈−log₁₀[H⁺] yazılır. Logaritma burada onluk üsle ilişkilidir: [H⁺]=10⁻⁴ mol/L ise pH 4’tür. pH bir azalınca H⁺ derişimi on kat artar; artan pH ise ters yönde derişim değişimi demektir."
+ },
+ {
+  "from": "Bu çizim gerçek hücredeki bütün enzimleri, etkinleştirilmiş şeker taşıyıcılarını ve ara ürünleri göstermez. Sorudaki okul sayımı varsayımı açıkça verilmiş olmalıdır. Bir bağın kopmasını susuz, kendiliğinden gerçekleşmiş bir olay gibi yorumlama; hidrolizde su da tepkimenin girdisidir.",
+  "to": "Bu çizim gerçek hücredeki bütün enzimleri, etkinleştirilmiş şeker taşıyıcılarını ve ara ürünleri göstermez. Sorudaki sayım varsayımı açıkça verilmiş olmalıdır. Bir bağın kopmasını susuz, kendiliğinden gerçekleşmiş bir olay gibi yorumlama; hidrolizde su da tepkimenin girdisidir."
+ },
+ {
+  "from": "Enzimle parçalama sonrası belirli ürünlerin artması bağın ve yapı biriminin incelenmesine yardım eder. Sonucun yokluğu ise deney koşulları, enzim etkinliği ve ölçüm duyarlılığı bilinmeden “molekül kesin yok” anlamına gelmez. Bu rehberin soruları gereken deney koşulunu ve ölçülen niceliği kartın içinde belirtir.",
+  "to": "Enzimle parçalama sonrası belirli ürünlerin artması bağın ve yapı biriminin incelenmesine yardım eder. Sonucun yokluğu ise deney koşulları, enzim etkinliği ve ölçüm duyarlılığı bilinmeden “molekül kesin yok” anlamına gelmez."
+ },
+ {
+  "from": "Etkileşimli şemada noktalar şeker birimleridir, atom çizimleri değildir. Bağların listesi ve parça uzunlukları HTML metninde de verilir. Tahminin sayısal modelle kıyaslanır; yazılı gerekçenin doğruluğu veya konuyu öğrenmiş olman otomatik olarak puanlanmaz. Farklı bir veriyle aynı ilişkiyi yeniden kurabilmen hedeflenir.",
+  "to": "Etkileşimli şemada noktalar şeker birimleridir, atom çizimleri değildir. Farklı bir veriyle aynı ilişkiyi yeniden kurabilmen hedeflenir."
+ },
+ {
+  "from": "Etkileşimde kalan bağlı kollar ve serbest bileşenler hem SVG’de hem HTML listesinde gösterilir. Çizim gerçek atom ölçeği veya tam sindirim deneyi değildir. Sayısal tahmin kıyası bir öğrenme puanı oluşturmaz; farklı bileşen ve kesim dağılımında aynı yöntemi gerekçelendirmek amaçlanır.",
+  "to": "Etkileşimde kalan bağlı kollar ve serbest bileşenler modelde gösterilir. Çizim gerçek atom ölçeği veya tam sindirim deneyi değildir. Farklı bileşen ve kesim dağılımında aynı yöntemi gerekçelendirmek amaçlanır."
+ },
+ {
+  "from": "SVG’nin altında sıra, bağlantılar, kopan bağlar ve parça uzunlukları HTML olarak da bulunur. Sayısal tahminin modelle kıyaslanması yazdığın gerekçenin bilimsel doğruluğunu otomatik değerlendirmez. Açıklamana hangi kanıtın hangi sonucu verdiğini ekle; gerekiyorsa belirlenemeyen sonucu da açıkça söyle.",
+  "to": "Açıklamana hangi kanıtın hangi sonucu verdiğini ekle; gerekiyorsa belirlenemeyen sonucu da açıkça söyle."
+ },
+ {
+  "from": "Kofaktör sözcüğü geniş kullanımda gerekli yardımcıları kapsayabilir; okul sınıflandırmasında inorganik yardımcı ile organik koenzimi ayırmak yararlıdır. Birçok koenzim vitamin kökenlidir; bütün vitaminler koenzim, bütün enzimler yardımcı gerektirir denemez. Protein enzimler odaktadır; katalitik RNA örnekleri bütün biyolojik katalizörlerin protein olduğu genellemesini sınırlar.",
+  "to": "Kofaktör sözcüğü geniş kullanımda gerekli yardımcıları kapsayabilir; ayrıntılı sınıflandırmada inorganik yardımcı ile organik koenzimi ayırmak yararlıdır. Birçok koenzim vitamin kökenlidir; bütün vitaminler koenzim, bütün enzimler yardımcı gerektirir denemez. Protein enzimler odaktadır; katalitik RNA örnekleri bütün biyolojik katalizörlerin protein olduğu genellemesini sınırlar."
+ },
+ {
+  "from": "Bir deneyde aynı sürede daha çok ürün görülmesi, son denge ürününün de daha çok olacağını zorunlu kılmaz. Erken zaman ölçümü ile yeterince uzun zaman ölçümünü ayır. Tepkime tersinmez kabul ediliyorsa veya ürün ortamdan uzaklaştırılıyorsa bu koşullar kartta ayrıca belirtilmelidir.",
+  "to": "Bir deneyde aynı sürede daha çok ürün görülmesi, son denge ürününün de daha çok olacağını zorunlu kılmaz. Erken zaman ölçümü ile yeterince uzun zaman ölçümünü ayır. Tepkime tersinmez kabul ediliyorsa veya ürün ortamdan uzaklaştırılıyorsa bu koşullar ayrıca belirtilmelidir."
+ },
+ {
+  "from": "Başlangıç hızları eşit iki deneyin son ürün miktarlarının her sürede eşit olması zorunlu değildir. Toplam başlangıç substratı veya enzimin dayanıklılığı farklı olabilir. Sabit hız varsayımı gereken sorularda bu kabul kartta açıkça yazılır; çizginin biçiminden verilmeyen bir süre icat edilmez.",
+  "to": "Başlangıç hızları eşit iki deneyin son ürün miktarlarının her sürede eşit olması zorunlu değildir. Toplam başlangıç substratı veya enzimin dayanıklılığı farklı olabilir. Sabit hız varsayımı gereken sorularda bu kabul açıkça yazılır; çizginin biçiminden verilmeyen bir süre icat edilmez."
+ },
+ {
+  "from": "Bu örüntü için yolun dallanmadığı, başka giriş veya çıkış bulunmadığı gibi varsayımlar gerekebilir. Yalnız bir ürünün azaldığını görmekten belirli bir enzimin kesin eksikliği çıkarılmaz. Sorular gerekli yol şemasını ve koşulları kendi kartlarında verir; verilmeyen ara basamak eklenmez.",
+  "to": "Bu örüntü için yolun dallanmadığı, başka giriş veya çıkış bulunmadığı gibi varsayımlar gerekebilir. Yalnız bir ürünün azaldığını görmekten belirli bir enzimin kesin eksikliği çıkarılmaz. Sorular gerekli yol şemasını ve koşulları kendi içinde verir; verilmeyen ara basamak eklenmez."
+ },
+ {
+  "from": "Hız eğrisi, enerji yolu ve sıcaklık–pH tablosu ayrı gösterimlerdir; birinin yatayı substrat, diğerinin yatayı tepkime ilerleyişi veya sıcaklıktır. Veriler HTML satırlarında da bulunur. Kıyas yalnız seçilen tahmine ilişkindir; yazılı gerekçeyi doğru saymaz ve öğrenme kaydı üretmez. Yeni koşulda hangi bağıntının geçerli kaldığını açıklamak amaçlanır.",
+  "to": "Hız eğrisi, enerji yolu ve sıcaklık–pH tablosu ayrı gösterimlerdir; birinin yatayı substrat, diğerinin yatayı tepkime ilerleyişi veya sıcaklıktır. Yeni koşulda hangi bağıntının geçerli kaldığını açıklamak amaçlanır."
+ },
+ {
+  "from": "Bir aralıkta hız sabit verildiyse o aralığın ürün artışı hız×süredir. Ardışık aralıklardaki artışları başlangıç ürününe ekleyerek ürün–zaman grafiği kurulur. Birimlere bak: µmol/dakika ile dakika çarpımıµmol verir; hızların kendilerini toplayıp doğrudan toplam ürün sayma.",
+  "to": "Bir aralıkta hız sabit verildiyse o aralığın ürün artışı hız×süredir. Ardışık aralıklardaki artışları başlangıç ürününe ekleyerek ürün–zaman grafiği kurulur. Birimlere bak: µmol/dakika ile dakika çarpımı µmol verir; hızların kendilerini toplayıp doğrudan toplam ürün sayma."
+ },
+ {
+  "from": "Vitaminle ilgili bir kartta önce organik düzenleyici oluşu, sonra çözünürlük grubu, sonra verilen özel görev veya eksiklik bilgisini ayır. Düzenleyici görev vitaminin mineral olduğu anlamına gelmez; minerallerle organik–inorganik ayrımı vardır. Yağda çözünmek de molekülü trigliserit yapmaz.",
+  "to": "Vitaminle ilgili bir soruda önce organik düzenleyici oluşu, sonra çözünürlük grubu, sonra verilen özel görev veya eksiklik bilgisini ayır. Düzenleyici görev vitaminin mineral olduğu anlamına gelmez; minerallerle organik–inorganik ayrımı vardır. Yağda çözünmek de molekülü trigliserit yapmaz."
+ },
+ {
+  "from": "Eksikliklerin okul örnekleri bilimsel eşleştirme içindir; gerçek bir kişiye tek belirtiyle tanı veya doz önerisi üretmez. Bir belirti birçok nedenle ortaya çıkabilir. Bu rehberde kişiye sağlık puanı verilmez; tabloda belirtilen bileşik ve deney koşullarıyla gerekçeli sonuç kurulması amaçlanır.",
+  "to": "Eksiklik örnekleri bilimsel eşleştirme içindir; gerçek bir kişiye tek belirtiyle tanı veya doz önerisi üretmez. Bir belirti birçok nedenle ortaya çıkabilir. Tabloda belirtilen bileşik ve deney koşullarıyla gerekçeli sonuç kurulması amaçlanır."
+ },
+ {
+  "from": "Bir depoya sahip olmak gereksinimin sonsuza dek ortadan kalkması anlamına gelmez. Suda çözünmek de sınırsız güvenlilik garantisi değildir. Okul sorusunda grup özelliği isteniyorsa verilen kapsamı kullan; mutlak her zaman/hiçbir zaman sözleri için istisna olup olmadığını denetle.",
+  "to": "Bir depoya sahip olmak gereksinimin sonsuza dek ortadan kalkması anlamına gelmez. Suda çözünmek de sınırsız güvenlilik garantisi değildir. Soruda grup özelliği isteniyorsa verilen kapsamı kullan; mutlak her zaman/hiçbir zaman sözleri için istisna olup olmadığını denetle."
+ },
+ {
+  "from": "A eksikliği için gece görmesinde bozulma okul örneği olarak kullanılır; bu eşleştirme her görme sorununun tek nedenini bulmaz. Yapı, öncül ve görev sorularını ayrı yanıtla. “Yağda çözünür” bilgisinden doğrudan enerji yakıtı veya steroid olduğu sonucu çıkarma.",
+  "to": "A eksikliği için gece görmesinde bozulma örnek olarak kullanılır; bu eşleştirme her görme sorununun tek nedenini bulmaz. Yapı, öncül ve görev sorularını ayrı yanıtla. “Yağda çözünür” bilgisinden doğrudan enerji yakıtı veya steroid olduğu sonucu çıkarma."
+ },
+ {
+  "from": "D vitamini kalsiyum–fosfor dengesi ve kemik mineralizasyonuna katkı verir. Eksikliğinin okul örnekleri çocukta raşitizm, erişkinde osteomalazi bağlamlarıdır. Bu ilişkiler kişisel belirti tanısı değildir; verilen soruda hangi basamak veya hangi işlevin anlatıldığını seçmek için kullanılır.",
+  "to": "D vitamini kalsiyum–fosfor dengesi ve kemik mineralizasyonuna katkı verir. Eksikliğinin örnekleri çocukta raşitizm, erişkinde osteomalazi bağlamlarıdır. Bu ilişkiler kişisel belirti tanısı değildir; verilen soruda hangi basamak veya hangi işlevin anlatıldığını seçmek için kullanılır."
+ },
+ {
+  "from": "Her kanama sorunu K eksikliği veya her üreme sorunu E eksikliği diye adlandırılamaz. Okul eşleştirmesinde verilen işlevin hangi vitamine karşılık geldiği incelenir; gerçek bir olayın nedenini belirlemek ek veriler gerektirir. Vitaminin görevi ile bir belirtiye atanan tek neden arasında ayrım kur.",
+  "to": "Her kanama sorunu K eksikliği veya her üreme sorunu E eksikliği diye adlandırılamaz. Eşleştirmede verilen işlevin hangi vitamine karşılık geldiği incelenir; gerçek bir olayın nedenini belirlemek ek veriler gerektirir. Vitaminin görevi ile bir belirtiye atanan tek neden arasında ayrım kur."
+ },
+ {
+  "from": "C vitamini kolajen yapımındaki bazı basamaklara ve başka metabolik süreçlere katkı verir. Eksikliğiyle ilişkili skorbüt okul düzeyinde bağ doku ve diş eti bulguları bağlamında ele alınır. Suda çözünen C vitamini, yiyeceğin suyuna geçebildiği için hazırlama koşullarında miktar dağılımı değişebilir.",
+  "to": "C vitamini kolajen yapımındaki bazı basamaklara ve başka metabolik süreçlere katkı verir. Eksikliğiyle ilişkili skorbüt temel düzeyde bağ doku ve diş eti bulguları bağlamında ele alınır. Suda çözünen C vitamini, yiyeceğin suyuna geçebildiği için hazırlama koşullarında miktar dağılımı değişebilir."
+ },
+ {
+  "from": "B9 ve B12, DNA sentezi ve sağlıklı kan hücresi oluşumu gibi süreçlerle bağlantılıdır; B12’nin sinir sistemiyle ilgili görevleri de vardır. Bu çeşitlilik B grubu üyelerinin tek bir vitamin sayılmaması gerektiğini gösterir. Ayrıntılı bir tablo sorusunda gereken görev bilgisi kartta da açıkça verilir.",
+  "to": "B9 ve B12, DNA sentezi ve sağlıklı kan hücresi oluşumu gibi süreçlerle bağlantılıdır; B12’nin sinir sistemiyle ilgili görevleri de vardır. Bu çeşitlilik B grubu üyelerinin tek bir vitamin sayılmaması gerektiğini gösterir."
+ },
+ {
+  "from": "B1 eksikliğiyle beriberi, B3 eksikliğiyle pellagra, C eksikliğiyle skorbüt gibi okul eşleştirmeleri yapılabilir. B9 ve B12 eksikliklerinde kan hücresi yapımıyla ilişkili bozukluklar görülebilir; iki vitaminin bütün işlevleri bu nedenle aynı sayılmaz. Benzer belirti farklı süreçlerle ilişkili olabilir.",
+  "to": "B1 eksikliğiyle beriberi, B3 eksikliğiyle pellagra, C eksikliğiyle skorbüt gibi eşleştirmeler yapılabilir. B9 ve B12 eksikliklerinde kan hücresi yapımıyla ilişkili bozukluklar görülebilir; iki vitaminin bütün işlevleri bu nedenle aynı sayılmaz. Benzer belirti farklı süreçlerle ilişkili olabilir."
+ },
+ {
+  "from": "Bir soru açıkça yalnız verilen okul tablosundaki eşleştirmeyi soruyorsa tablo kanıtını kullan. Gerçek bir kişinin yorgunluğu gibi tek bir gözlemi belirli bir vitamine kesin bağlama. Buradaki örneklerin amacı kavram ve görev ilişkisini öğretmektir; tıbbi karar üretmek değildir.",
+  "to": "Bir soru açıkça yalnız verilen tablodaki eşleştirmeyi soruyorsa tablo kanıtını kullan. Gerçek bir kişinin yorgunluğu gibi tek bir gözlemi belirli bir vitamine kesin bağlama. Buradaki örneklerin amacı kavram ve görev ilişkisini öğretmektir; tıbbi karar üretmek değildir."
+ },
+ {
+  "from": "Şemadaki katı, su ve kayıp bölmeleri HTML metninde de açıklanır. Kullanıcı tahmini modelle kıyaslanır; bir insanın vitamin durumu, sağlığı veya konuyu öğrenmişliği puanlanmaz. Kısa bir matematik gerekçesi de geçerlidir; önemli olan sonucu hangi verilenlerden çıkardığını kendinin açıklayabilmesidir.",
+  "to": "Kısa bir matematik gerekçesi de geçerlidir; önemli olan sonucu hangi verilenlerden çıkardığını kendinin açıklayabilmesidir."
+ },
+ {
+  "from": "Kaynakta verilen yaklaşık rRNA %80, tRNA %15 ve mRNA %5 dağılımı ders düzeyinde genel bir şemadır; her hücre türünün her koşulda aynı kesin oranları taşıdığı varsayılmaz. Ayrıntılı kodon tablosu, protein sentezinin bütün evreleri ve replikasyon enzimleri ayrı derslerde ilerletilir. Burada üç RNA’nın ayırt edici görevini ve birbirinin yerine geçmediğini açıklayabilmelisin.",
+  "to": "Verilen yaklaşık rRNA %80, tRNA %15 ve mRNA %5 dağılımı ders düzeyinde genel bir şemadır; her hücre türünün her koşulda aynı kesin oranları taşıdığı varsayılmaz. Ayrıntılı kodon tablosu, protein sentezinin bütün evreleri ve replikasyon enzimleri ayrı derslerde ilerletilir. Burada üç RNA’nın ayırt edici görevini ve birbirinin yerine geçmediğini açıklayabilmelisin."
+ },
+ {
+  "from": "Yanlış bir iddiayı düzeltirken üç aşama kullan: gerçek karşı örnek göster, doğru kuralı koşuluyla söyle, başka bir duruma uygula. ‘RNA’da H bağı olmaz’ için katlanmış tRNA karşı örneği; ‘aynı A, aynı nükleotit’ için riboz/deoksiriboz farkı kullanılır. Bu bölümdeki tahmin ve etkileşimler öğretim desteğidir; bağımsız doğrular ve konu tamamlanması olarak kaydedilmez.",
+  "to": "Yanlış bir iddiayı düzeltirken üç aşama kullan: gerçek karşı örnek göster, doğru kuralı koşuluyla söyle, başka bir duruma uygula. ‘RNA’da H bağı olmaz’ için katlanmış tRNA karşı örneği; ‘aynı A, aynı nükleotit’ için riboz/deoksiriboz farkı kullanılır."
  }
 ]
