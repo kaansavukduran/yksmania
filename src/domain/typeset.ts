@@ -35,6 +35,14 @@ const capitalFunction = new RegExp(
   "g",
 );
 
+// Reviewed spelling repairs for whole words older content misspelled.
+// “periskl” is “perisikl” (perisiklus); its suffixes follow the front vowel.
+const SPELLING: [RegExp, string][] = [
+  [/(?<![a-zçğıöşü])periskldan(?![a-zçğıöşü])/g, "perisiklden"],
+  [/(?<![a-zçğıöşü])periskldır(?![a-zçğıöşü])/g, "perisikldir"],
+  [/(?<![a-zçğıöşü])periskl(?=i?(?![a-zçğıöşü]))/g, "perisikl"],
+];
+
 function fixToken(token: string): string {
   if (linkLike.test(token)) return token;
   return token
@@ -45,7 +53,7 @@ function fixToken(token: string): string {
 export function typeset(original: string): string {
   if (!original) return original;
   // Reviewed per-card repairs come first; the general rules then tidy the rest.
-  const text = displayFix(original);
+  const text = SPELLING.reduce((t, [rule, to]) => t.replace(rule, to), displayFix(original));
   // Work token by token so a link or code fragment is never touched.
   const spaced = text
     .split(/(\s+)/)

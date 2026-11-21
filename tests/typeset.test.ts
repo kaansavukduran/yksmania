@@ -35,6 +35,12 @@ describe("display typesetting", () => {
     expect(typeset(once)).toBe(once);
   });
 
+  it("repairs the misspelled perisikl and its suffixes", () => {
+    expect(typeset("Yan kökler periskldan çıkar; bu katman periskldır, periskl ve periskli doku.")).toBe(
+      "Yan kökler perisiklden çıkar; bu katman perisikldir, perisikl ve perisikli doku.",
+    );
+  });
+
   it("lowers a sentence capital on a function name only when mathematics follows", () => {
     expect(typeset("Log₂(8·4)=log₂8+log₂4. Sin x=sin θ için")).toBe("log₂(8·4)=log₂8+log₂4. sin x=sin θ için");
     expect(typeset("Cos2u ve Tan A; Log_g ile Ln e")).toBe("cos2u ve tan A; log_g ile ln e");

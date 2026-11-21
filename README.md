@@ -39,8 +39,8 @@ Bu tablo `npm run progress` ile koddan üretilir; elle düzenlenmez. Yüzdeler y
 | 99_ÖSYM PDF (işlenen / beyan edilen) | 18 / 1.001 · %1,80 |
 | 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 76 |
 | Adım adım çözümlü soru | 6.465 / 6.465 · %100,00 |
-| Ara hatırlama (mikro ritim): ders · soru | 435 / 505 · %86,14 · 2.636 soru |
-| Gösterim onarımı: soru alanı · ders paragrafı | 962 · 1.510 |
+| Ara hatırlama (mikro ritim): ders · soru | 445 / 505 · %88,12 · 2.718 soru |
+| Gösterim onarımı: soru alanı · ders paragrafı | 962 · 1.520 |
 | Kopya kâğıdı (işlenen / toplam) | 109 / 517 · %21,08 |
 | Resmî ana başlık · anlatımlı konu · hazır anlatım | 341 · 505 · 505 |
 | İleri ve kaynak soru seti (anlatımı ana konusunda) | 35 |

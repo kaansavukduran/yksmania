@@ -218,5 +218,435 @@
    "prompt": "Vegetatif yolla çoğalan bireyler genetik bakımdan neden genellikle aynıdır?",
    "answer": "Ana bitkiden mitozla oluşan dokulardan gelişirler; yine de mutasyon olasılığı ayrıca vardır."
   }
+ ],
+ "ayt-yaprak-yapisi": [
+  {
+   "after": 1,
+   "prompt": "Arpa ve buğdayda sap görünmüyorsa yaprak gövdeye nasıl bağlanabilir?",
+   "answer": "Yaprak gövdeyi bir kınla sarar; sapın görünmemesi o yapının yaprak olmadığını göstermez."
+  },
+  {
+   "after": 3,
+   "prompt": "Tipik tek çenekli ve çift çenekli yapraklarda damarlanma nasıl farklıdır?",
+   "answer": "Tek çeneklide paralel, çift çeneklide ağsı damarlanma görülür; bu bir eğilimdir, tek başına kesin sınıflama ölçütü değildir."
+  },
+  {
+   "after": 5,
+   "prompt": "Kütikula neden bir hücre sırası sayılmaz?",
+   "answer": "Epidermis hücrelerinin ürettiği, hücrelerin dışında kalan mumsu bir tabakadır; kontrolsüz su kaybını azaltır."
+  },
+  {
+   "after": 8,
+   "prompt": "Stoma açıklığı ile bekçi hücresi arasındaki fark nedir?",
+   "answer": "Açıklık iki bekçi hücrenin çevrelediği gözenektir, hücre değildir ve kloroplast taşımaz; kloroplast bekçi hücrelerindedir."
+  },
+  {
+   "after": 10,
+   "prompt": "Tipik yaprak kesitinde ksilem ve floem hangi yüzlere yakın yer alır?",
+   "answer": "Ksilem üst yüze, floem alt yüze yakın taraftadır; şekli döndürmek bu anatomik konumu değiştirmez."
+  },
+  {
+   "after": 12,
+   "prompt": "Gelişmekte olan genç bir yaprak neden havuz sayılır?",
+   "answer": "Büyümesi için başka kaynaklardan organik madde alıp kullandığından net organik madde akışı ona doğrudur."
+  },
+  {
+   "after": 14,
+   "prompt": "Su üstünde yüzen bir yaprak örneğinde stomalar neden üst yüzde bulunabilir?",
+   "answer": "Havayla doğrudan temas eden yüz üst yüzdür; gaz alışverişi bu yüzdeki stomalarla yürüyebilir."
+  },
+  {
+   "after": 16,
+   "prompt": "Yeşil bir yapının fotosentez yapması neden onu yaprak saymaya yetmez?",
+   "answer": "Yeşil gövde de fotosentez yapabilir; köken, geliştiği yer ve gövdeyle bağlantısı gibi morfolojik kanıtlarla belirlenir."
+  }
+ ],
+ "bitki-madde-tasinmasi": [
+  {
+   "after": 1,
+   "prompt": "Toprak çözeltisindeki nitratı neden hazır protein diye adlandırmamalısın?",
+   "answer": "Nitrat mineral bir iyondur; hücre onu metabolik yollarla amino asit gibi organik yapılara katar."
+  },
+  {
+   "after": 3,
+   "prompt": "X için gereken 4, sağlanan 2 birim; Y için gereken 10, sağlanan 8 birimse hangisi büyümeyi sınırlayabilir?",
+   "answer": "X; sağlanan/gereken oranı X için 2/4 = 0,5, Y için 8/10 = 0,8 olur ve en düşük yeterlilik oranı sınırlar."
+  },
+  {
+   "after": 5,
+   "prompt": "Bir hücrede Ψs = −0,6 MPa ve Ψp = 0,2 MPa ise toplam su potansiyeli kaç olur?",
+   "answer": "Ψ = Ψs + Ψp = −0,6 + 0,2 = −0,4 MPa olur."
+  },
+  {
+   "after": 7,
+   "prompt": "Endodermisteki Kaspari şeridi hangi yolu sınırlar ve bunun sonucu ne olur?",
+   "answer": "Çeper boyunca merkeze ilerleyen apoplast geçişi sınırlar; maddeler seçici zardan geçmeye zorlanır ve alım denetlenir."
+  },
+  {
+   "after": 9,
+   "prompt": "Kök basıncı nasıl oluşur?",
+   "answer": "Kök dokularının ksileme iyon yüklemesi suyun ksileme girişini destekler; oluşan pozitif basınç sıvıyı yukarı iter."
+  },
+  {
+   "after": 11,
+   "prompt": "Kohezyon–gerilim açıklamasında ksilemdeki su sütununda gerilim neden oluşur?",
+   "answer": "Mezofil çeperlerindeki su filmi buharlaşıp yenilenirken ksilemden su çekilir; bu çekim sütunda negatif basınç yaratır."
+  },
+  {
+   "after": 13,
+   "prompt": "Floemdeki olgun kalburlu boru elemanı için çekirdeksiz ile ölü arasındaki fark nedir?",
+   "answer": "Eleman çekirdeğini kaybetmiştir ama canlıdır; metabolik desteği yakınındaki arkadaş hücreleri sağlar."
+  },
+  {
+   "after": 15,
+   "prompt": "Kaynak organda şekerin floeme yüklenmesi kalburlu boruda basıncı neden artırır?",
+   "answer": "Yükleme çözünen potansiyelini düşürür; su osmozla içeri girer ve turgor basıncı yükselir."
+  },
+  {
+   "after": 18,
+   "prompt": "Yalnız floem halkası kesilen bir bitkide kesinin üstünde ne gözlenebilir?",
+   "answer": "Organik madde aşağıya, köke taşınamadığı için kesinin üstünde organik madde birikimi görülebilir."
+  },
+  {
+   "after": 20,
+   "prompt": "Q = G × (A − B) modelinde G = 2, A = −0,3 ve B = −0,8 ise Q kaç olur ve yön nedir?",
+   "answer": "Q = 2 × (−0,3 + 0,8) = 1,0 olur; Q pozitif olduğu için yön A→B’dir."
+  }
+ ],
+ "stoma-nodul-mikoriza": [
+  {
+   "after": 1,
+   "prompt": "Stomayı nodül ve mikorizadan katılan canlılar açısından ayıran özellik nedir?",
+   "answer": "Stomada bekçi hücreleri bitkiye aittir; nodül ve mikorizada ise bitkiden ayrı canlı ortaklar bulunur."
+  },
+  {
+   "after": 3,
+   "prompt": "İyon taşımasının enerji gerektirmesi neden suyun ATP ile pompalandığı anlamına gelmez?",
+   "answer": "Enerji iyon ve çözünen taşınmasında kullanılır; çözünen artınca Ψs düşer ve su bekçi hücrelerine osmozla geçer."
+  },
+  {
+   "after": 5,
+   "prompt": "Işıklı bir günde bile stoma kapanmasını hangi koşul ve hormon sağlayabilir?",
+   "answer": "Su stresi ve absisik asit; ABA iyon kanallarını etkileyerek su çıkışına, turgor azalmasına ve açıklığın daralmasına yol açar."
+  },
+  {
+   "after": 7,
+   "prompt": "CAM metabolizmalı bitkiler CO₂ alımını geceye kaydırarak ne kazanır?",
+   "answer": "Bu düzen su kaybını azaltmaya yardım eder; CO₂ alımı ağırlıkla gece gerçekleşir."
+  },
+  {
+   "after": 9,
+   "prompt": "Hidatot ile lentisel arasındaki fark nedir?",
+   "answer": "Hidatot yaprak uç ve kenarında ksilem sıvısının gutasyonla çıkışını sağlar; lentisel peridermli yüzeyde gaz alışverişine katkı veren gevşek doku bölgesidir."
+  },
+  {
+   "after": 11,
+   "prompt": "Havada bol N₂ bulunmasına rağmen bitki azotu çoğunlukla hangi biçimlerde sağlar?",
+   "answer": "Nitrat ve amonyum gibi kullanılabilir biçimlerden sağlar; N₂’yi doğrudan amino asitlere katamaz."
+  },
+  {
+   "after": 13,
+   "prompt": "Nodülde O₂ düzeyinin ne çok yüksek ne de çok düşük olması neden gerekir?",
+   "answer": "Bakteri solunumla enerji sağlamak için O₂ ister, ama azot bağlayan enzim sistemi fazla O₂’den zarar görür; leghemoglobin bu dengeye katkı verir."
+  },
+  {
+   "after": 15,
+   "prompt": "Ektomikoriza ile arbusküler endomikorizayı mantar yapılarının yerine göre nasıl ayırırsın?",
+   "answer": "Ektomikorizada mantar kök dışını kılıfla sarar ve hücreler arasında bağlantı kurar; arbusküler endomikorizada mantar yapıları korteks hücrelerinin içinde gelişir."
+  }
+ ],
+ "bitki-hormonlari": [
+  {
+   "after": 2,
+   "prompt": "Oksine kök ve sürgün aynı dozda neden aynı uzama yanıtını vermez?",
+   "answer": "En uygun doz aralığı dokuya göre değişir; kök çoğu örnekte sürgünden daha düşük dozlarda yanıt verir."
+  },
+  {
+   "after": 4,
+   "prompt": "Oksin hücre uzamasını hangi yolla destekler?",
+   "answer": "Uygun dozda hücre duvarını gevşetir; uzamanın gerçekleşmesi için su girişi ve turgor da gerekir."
+  },
+  {
+   "after": 6,
+   "prompt": "Tek yönden ışık alan koleoptil neden ışığa doğru kıvrılır?",
+   "answer": "Gölgede kalan tarafta oksin etkisi ve uzama daha fazladır; uzun kalan taraf dış yaya geçer ve tepe ışığa döner."
+  },
+  {
+   "after": 8,
+   "prompt": "Giberellin verilen iki cüce sürgünden yalnız biri uzarsa diğeri için hangi neden düşünülür?",
+   "answer": "Hormonu algılama ya da yanıt oluşturma sorunu düşünülür; uzayan sürgündeki düzelme ise hormon eksikliğiyle uyumludur."
+  },
+  {
+   "after": 10,
+   "prompt": "Verilen doku kültürü modelinde oksin 6, sitokinin 2 birimse hangi gelişme beklenir?",
+   "answer": "Kök gelişimi beklenir; oksin sitokininin 6/2 = 3 katıdır ve modelde en az iki kat oksin kök sonucunu verir."
+  },
+  {
+   "after": 13,
+   "prompt": "ABA stoma kapanmasının yanında hangi gelişim olayıyla ilişkilidir?",
+   "answer": "Tohum ve tomurcuk dormansisinin oluşması ve sürmesiyle ilişkilidir."
+  },
+  {
+   "after": 15,
+   "prompt": "Meyvede olgunlaşma ile mikrobiyal çürüme arasındaki fark nedir?",
+   "answer": "Olgunlaşma renk, sertlik, koku ve şeker/asit dengesinin değişmesidir; çürüme ayrı bir olaydır ve etilen onun zorunlu nedeni sayılmaz."
+  }
+ ],
+ "bitkilerde-hareket": [
+  {
+   "after": 1,
+   "prompt": "Tropizmada pozitif ve negatif etiketleri neyi anlatır?",
+   "answer": "Uyarana doğru yönelme pozitif, uyarandan uzağa yönelme negatiftir; iyi ya da zararlı anlamı taşımaz."
+  },
+  {
+   "after": 3,
+   "prompt": "Fototropizmada gölgeli tarafın daha çok uzamasını açıklarken hangi açıklama zorunlu değildir?",
+   "answer": "Gölgeli tarafta hücrelerin daha çok bölündüğü açıklaması zorunlu değildir; deneyde karşılaştırılan uzama farkıdır."
+  },
+  {
+   "after": 6,
+   "prompt": "Saydam başlıkta yönelme sürüp opak başlıkta kayboluyorsa bu neyi gösterir?",
+   "answer": "Belirleyici olanın kapağın varlığı değil, ışığın uca ulaşması olduğunu gösterir."
+  },
+  {
+   "after": 8,
+   "prompt": "Jelatin blokla yanıtın sürüp mika ile kesilmesi sinyal hakkında ne gösterir?",
+   "answer": "Sinyalin hücre teması olmadan jelatinden geçebilen, taşınabilir kimyasal nitelikte olduğunu destekler."
+  },
+  {
+   "after": 10,
+   "prompt": "Yatırılmış bir saksıda kök ve sürgün hangi gravitropizma türlerini gösterir?",
+   "answer": "Kök yerçekimi yönünde büyüyerek pozitif, sürgün ters yönde büyüyerek negatif gravitropizma gösterir."
+  },
+  {
+   "after": 12,
+   "prompt": "Sağdaki yaradan uzağa, sola doğru büyüyen bir sürgünün tepkisi nasıl adlandırılır?",
+   "answer": "Uyaran yaralanma olduğu için travmatropizmadır; büyüme yaradan uzağa olduğundan negatif yönlüdür."
+  },
+  {
+   "after": 14,
+   "prompt": "Fotonasti ile termonasti arasındaki fark nedir?",
+   "answer": "Fotonastide açılıp kapanma ışık/karanlık durumuna, termonastide sıcaklık değişimine bağlıdır."
+  },
+  {
+   "after": 16,
+   "prompt": "Küstüm otunda dokunmayla yaprakçıkların kapanması hangi değişime bağlanır?",
+   "answer": "Motor bölgelerdeki iyon ve su hareketleriyle oluşan turgor değişimine bağlanır; yeni doku oluşturan bir büyüme değildir."
+  }
+ ],
+ "bitki-fotoperiyodizm": [
+  {
+   "after": 1,
+   "prompt": "Günlük döngü 24 saat ve gündüz 10 saatse gece kaç saattir?",
+   "answer": "Gece 24 − 10 = 14 saattir."
+  },
+  {
+   "after": 3,
+   "prompt": "Kritik gecesi 11 saat olan kısa gün örneği 13 saat kesintisiz gece alırsa ne beklenir?",
+   "answer": "Gece eşiği aştığı için çiçeklenme uyarımı beklenir; ancak bitki olgun değilse yanıt henüz oluşmayabilir."
+  },
+  {
+   "after": 5,
+   "prompt": "Uzun gün bitkilerine neden kısa gece bitkisi de denir?",
+   "answer": "Çiçeklenmeyi destekleyen koşul, kritik süreden kısa olan gecedir."
+  },
+  {
+   "after": 7,
+   "prompt": "Kritik gecesi 10 saat olan kısa gün örneğinde 14 saatlik gece tam ortadan bölünürse uyarım ne olur?",
+   "answer": "Darbe ihmal edilirse gece 7’şer saatlik iki parçaya ayrılır; en uzun karanlık 10 saatin altında kaldığı için uyarım kaybolur."
+  },
+  {
+   "after": 9,
+   "prompt": "Basit fitokrom şemasında Pr ve Pfr hangi ışıkla birbirine dönüşür?",
+   "answer": "Pr kırmızı ışıkla Pfr’ye, Pfr uzak kırmızı ışıkla yeniden Pr’ye dönüşür."
+  },
+  {
+   "after": 11,
+   "prompt": "Çok kısa bir gece darbesinin çiçeklenmeyi değiştirmesi neden fotosentez kazancıyla açıklanamaz?",
+   "answer": "Darbe karbon kazanımına çok küçük katkı yapar; etkisi şeker miktarı üzerinden değil, fotoperiyodik sinyal üzerindendir."
+  },
+  {
+   "after": 13,
+   "prompt": "Vernalizasyon ile fotoperiyodizm arasındaki fark nedir?",
+   "answer": "Vernalizasyon soğuk dönemine bağlı bir çiçeklenme gereksinimidir; fotoperiyodizm gün ve gece uzunluğuna verilen yanıttır."
+  }
+ ],
+ "cicek-yapisi-ureme": [
+  {
+   "after": 1,
+   "prompt": "Çiçekli bitkide sporofit ve gametofit evrelerini kromozom takımıyla nasıl ayırırsın?",
+   "answer": "Gövde, yaprak ve çiçek dokuları çoğunlukla diploit sporofite; polen ve embriyo kesesi haploit gametofite aittir."
+  },
+  {
+   "after": 3,
+   "prompt": "Taç yaprakların tozlaşmaya başlıca katkısı nedir?",
+   "answer": "Renk, koku ve biçimle hayvan tozlaştırıcıların ziyaretine katkı verir; sperm hücresi üretmez."
+  },
+  {
+   "after": 5,
+   "prompt": "Mikropil ile tepecik arasındaki fark nedir?",
+   "answer": "Tepecik dişi organda polenin tutulup çimlendiği yüzeydir; mikropil tohum taslağının örtülerindeki açıklıktır."
+  },
+  {
+   "after": 7,
+   "prompt": "Bir çiçeğin tam sayılması için hangi koşul gerekir?",
+   "answer": "Çanak, taç, erkek ve dişi organ takımlarının dördü de bulunmalıdır; karar tekil yaprak sayısına değil takımların varlığına dayanır."
+  },
+  {
+   "after": 10,
+   "prompt": "2n = 24 olan bir mikrospor ana hücresi mayoz geçirirse kaç mikrospor oluşur ve her biri kaç kromozom taşır?",
+   "answer": "Dört haploit mikrospor oluşur; her biri n = 12 kromozom taşır."
+  },
+  {
+   "after": 12,
+   "prompt": "Normal gelişen üç mikrospor ana hücresinden toplam kaç sperm oluşur?",
+   "answer": "3 × 4 = 12 mikrospor ve 12 polen oluşur; her polendeki generatif hücre iki sperm verdiği için 12 × 2 = 24 sperm olur."
+  },
+  {
+   "after": 14,
+   "prompt": "Megaspor ana hücresinden dört megaspor oluşması neden dört embriyo kesesi demek değildir?",
+   "answer": "Tipik örnekte dört megaspordan üçü kaybolur; yalnız biri işlevli kalıp embriyo kesesini oluşturur."
+  },
+  {
+   "after": 16,
+   "prompt": "Tipik embriyo kesesinde yumurta aygıtı hangi hücrelerden oluşur ve nerede bulunur?",
+   "answer": "Yumurta hücresi ile iki sinerjitten oluşur; mikropile yakın kutupta bulunur."
+  },
+  {
+   "after": 18,
+   "prompt": "Bir çiçekte taç yaprak bulunmaması neden mikrosporların kromozom sayısını etkilemez?",
+   "answer": "Taç yaprak yalnız organ takımına ve tamlık kararına ilişkindir; kromozom sayısını mayozun takımı yarıya indirmesi belirler."
+  }
+ ],
+ "bitki-tozlasma": [
+  {
+   "after": 1,
+   "prompt": "Çam örneğinde tozlaşma kapalı tohumlulardan hangi yapı bakımından ayrılır?",
+   "answer": "Çamda dişicik tepeciği bulunmaz; kapalı tohumlularda ise polenin varış yeri tepeciktir."
+  },
+  {
+   "after": 3,
+   "prompt": "Aynı çiçekte erkek ve dişi organın birlikte bulunması kendileşmeyi neden garanti etmez?",
+   "answer": "Polen canlılığı, tepeciğin alıcı evresi, genetik uyumluluk ve organların uygun zamanda etkin olması da gerekir."
+  },
+  {
+   "after": 5,
+   "prompt": "Çapraz tozlaşma demek için başka çiçek bilgisine ek olarak hangi iki bilgi gerekir?",
+   "answer": "Polen kaynağının ayrı bir birey olması ve bu bireyin aynı türden olması gerekir."
+  },
+  {
+   "after": 7,
+   "prompt": "Başçık ile tepeciğin konum ayrımı kendine uyuşmazlıktan nasıl farklıdır?",
+   "answer": "Konum ayrımı polenin kendi tepeciğine taşınma olasılığını azaltır; kendine uyuşmazlık ise polen ulaştıktan sonra kabul ve gelişimi sınırlar."
+  },
+  {
+   "after": 9,
+   "prompt": "Rüzgârla tozlaşan birçok türde polen ve çiçek yapısı nasıldır?",
+   "answer": "Polen bol, küçük ve hafiftir; başçıklar dışa açık, tepecikler polen yakalamaya uygundur ve çiçekler çoğunlukla gösterişsizdir."
+  },
+  {
+   "after": 12,
+   "prompt": "Elle yapılan suni tozlaşma neden tek başına çapraz tozlaşma sayılmaz?",
+   "answer": "İnsan aynı bireyin ya da farklı bir bireyin polenini aktarabilir; sınıfı polenin geldiği birey belirler."
+  },
+  {
+   "after": 14,
+   "prompt": "Dış poleni engelleyen torba ile başçık çıkarma hangi polen yollarını farklı biçimde kapatır?",
+   "answer": "Torba dışarıdan gelen poleni engeller ama çiçeğin kendi polenini engellemeyebilir; başçık çıkarma ise yerel polen kaynağını azaltır."
+  },
+  {
+   "after": 16,
+   "prompt": "200 polenden 40’ı tepeciğe ulaşıp 10’u çimlenirse ulaşanlara göre çimlenme yüzdesi kaçtır?",
+   "answer": "10/40 = yüzde 25 olur; toplam polene göre hesaplansaydı 10/200 = yüzde 5 bulunurdu."
+  }
+ ],
+ "bitki-ortu-doku": [
+  {
+   "after": 1,
+   "prompt": "Tipik yaprak epidermisinin sıradan hücrelerinin kloroplast taşımaması neye yarar?",
+   "answer": "Alttaki fotosentetik dokuya ışığın geçişini fazla engellemez."
+  },
+  {
+   "after": 3,
+   "prompt": "Genç emici kök yüzeyinde belirgin kütikula bulunmaması neden önemlidir?",
+   "answer": "Su geçirgenliği düşük bu örtü bulunmadığı için topraktan emilim kolaylaşır."
+  },
+  {
+   "after": 5,
+   "prompt": "Dış ortam −0,2 MPa, hücre −0,7 MPa ise su net olarak hangi yöne geçer?",
+   "answer": "Hücre içine geçer; −0,2 daha büyük olduğundan su yüksek su potansiyelli dış ortamdan düşük olan hücreye ilerler."
+  },
+  {
+   "after": 7,
+   "prompt": "Işık olduğu hâlde stomanın gündüz kapanması hangi koşullarda görülebilir?",
+   "answer": "Yeterli su yoksa veya absisik asit gibi kuraklık sinyalleri etkiliyse görülebilir."
+  },
+  {
+   "after": 9,
+   "prompt": "Kuraklığa uyumlu türlerde çukurdaki stomalar ve çevresindeki tüyler su kaybını nasıl sınırlar?",
+   "answer": "Su buharının dış ortama yayılmasını yavaşlatarak sınırlar."
+  },
+  {
+   "after": 11,
+   "prompt": "Gutasyon hangi koşullarda görülür?",
+   "answer": "Kök basıncı etkili, hava nemli ve terleme düşükken ksilem öz suyu hidatotlardan damla olarak çıkar."
+  },
+  {
+   "after": 13,
+   "prompt": "Kaktüs dikeni ile gül çıkıntısı köken bakımından nasıl ayrılır?",
+   "answer": "Kaktüs dikeni yaprak kökenlidir ve iletim bağlantısı taşır; gül çıkıntısı epidermis ve altındaki dokulardan oluşan bir emergenstir."
+  },
+  {
+   "after": 15,
+   "prompt": "Su buharı çıkışı neden tek başına stoma kanıtı sayılmaz?",
+   "answer": "Kütikuladan veya lentiselden de bir miktar su buharı kaybı olabilir."
+  }
+ ],
+ "bitki-kok-anatomisi": [
+  {
+   "after": 1,
+   "prompt": "Kara yosununun rizoidi neden gerçek kök sayılmaz?",
+   "answer": "Gerçek kök ksilem ve floem içeren bir organdır; tutunmaya yarayan rizoid bu iletim dokusunu taşımaz."
+  },
+  {
+   "after": 3,
+   "prompt": "Buğdaygillerde saçak kök sistemini oluşturan adventif kökler yan köklerden nasıl ayrılır?",
+   "answer": "Adventif kökler gövde tabanından gelişir; yan kökler ise mevcut bir kökün içinden çıkar, başlangıçları farklıdır."
+  },
+  {
+   "after": 5,
+   "prompt": "Patates yumrusunun gövde kökenli olduğunu gösteren kanıt nedir?",
+   "answer": "Üzerindeki gözler tomurcuktur; tomurcuk gövde kökenini gösterir, yer altında olması onu kök yapmaz."
+  },
+  {
+   "after": 7,
+   "prompt": "Hücre sayısı aynı kalan bir dizide ortalama hücre boyu 3 katına çıkarsa dizi boyu ne olur?",
+   "answer": "Dizi boyu da 3 katına çıkar; bunun için mitoz sayısının artması gerekmez."
+  },
+  {
+   "after": 9,
+   "prompt": "Emici tüyler kök boyunca hangi bölgede oluşur?",
+   "answer": "Uçtan biraz geride, genç olgunlaşma bölgesinde oluşur; kök uzadıkça yeni tüyler oluşur, yaşlı tüyler bozulur."
+  },
+  {
+   "after": 11,
+   "prompt": "Epidermis ile endodermisi kök kesitindeki konumlarıyla nasıl ayırırsın?",
+   "answer": "Epidermis toprakla temas eden en dış katmandır; endodermis ise korteksin en iç sınırını oluşturur."
+  },
+  {
+   "after": 13,
+   "prompt": "Akvaporinler kökte suyun geçişini nasıl etkiler?",
+   "answer": "Osmozla geçişi kolaylaştırır; suyu ATP harcayarak derişim farkına karşı pompalamaz."
+  },
+  {
+   "after": 15,
+   "prompt": "Olgun trake ve trakeitler ölü olduğu hâlde neden bütün ksilem ölü doku sayılmaz?",
+   "answer": "Ksilemde iletim elemanlarının yanında yaşayan parankima hücreleri de bulunabilir."
+  },
+  {
+   "after": 18,
+   "prompt": "Su basması ile kuraklık kökte ilk olarak hangi farklı basamakları bozar?",
+   "answer": "Su basması hava boşluklarını azaltıp solunum için gaz alışverişini, kuraklık ise dış su potansiyelini düşürüp su alımını bozar."
+  }
  ]
 }

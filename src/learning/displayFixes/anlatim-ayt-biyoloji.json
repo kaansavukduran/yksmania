@@ -34,5 +34,45 @@
  {
   "from": "Yalnız floemi etkileyen bir kabuk halkası çıkarıldığında yapraktan köke organik madde aktarımı kesintiye uğrayabilir. Ksilem sağlam kaldıysa su iletiminin ilk anda doğrudan kesildiği sonucu çıkmaz. Kaynağın üst tarafında organik madde birikmesi de izlenebilir.",
   "to": "Yalnız floemi etkileyen bir kabuk halkası çıkarıldığında yapraktan köke organik madde aktarımı kesintiye uğrayabilir. Ksilem sağlam kaldıysa su iletiminin ilk anda doğrudan kesildiği sonucu çıkmaz. Halkanın üst tarafında organik madde birikmesi de izlenebilir."
+ },
+ {
+  "from": "Floem öz suyunda başta sakkaroz gibi organik maddeler, amino asitler ve bazı başka çözünenler taşınabilir. Ksilem de yalnız saf su içeren bir boşluk değildir. Yine de temel okul karşılaştırmasında ksilemin su–mineral, floemin organik madde dağıtımındaki rolünü koru; iki dokuyu aynı boru sayma.",
+  "to": "Floem öz suyunda başta sakkaroz gibi organik maddeler, amino asitler ve bazı başka çözünenler taşınabilir. Ksilem de yalnız saf su içeren bir boşluk değildir. Yine de temel karşılaştırmada ksilemin su–mineral, floemin organik madde dağıtımındaki rolünü koru; iki dokuyu aynı boru sayma."
+ },
+ {
+  "from": "Stoma modeli zaman basamaklarında hücresel sıra; ortaklık modeli madde alışverişi yolları gösterir. İkisini aynı renk değişen kart düzenine indirmeden mekanizmayı kendi yapısında sorgula. Son açıklamanda hangi yolun gösterildiğini, hangi koşulda işlediğini ve neyin henüz ölçülmediğini açıkça söyle.",
+  "to": "Stoma modeli zaman basamaklarında hücresel sıra; ortaklık modeli madde alışverişi yolları gösterir. İkisini aynı renk değişen düzene indirmeden mekanizmayı kendi yapısında sorgula. Son açıklamanda hangi yolun gösterildiğini, hangi koşulda işlediğini ve neyin henüz ölçülmediğini açıkça söyle."
+ },
+ {
+  "from": "Sıcaklık ya da ışığın hangi eşikte yanıt oluşturduğu tür ve koşula bağlıdır. Bir kaynakta verilen lale sıcaklık aralığı bütün türlerin evrensel eşiği değildir. Örnek bitkiyi ve ölçülen yanıtı öğren; gözlemden daha geniş eşikler veya bütün gün için zorunlu davranış çıkarma.",
+  "to": "Sıcaklık ya da ışığın hangi eşikte yanıt oluşturduğu tür ve koşula bağlıdır. Bir örnekte verilen lale sıcaklık aralığı bütün türlerin evrensel eşiği değildir. Örnek bitkiyi ve ölçülen yanıtı öğren; gözlemden daha geniş eşikler veya bütün gün için zorunlu davranış çıkarma."
+ },
+ {
+  "from": "Modelde polar çekirdeklerin henüz birleşmediği kabul edilir; her biri n taşır. Birleşmiş merkez çekirdeği kullanılan başka bir aşamada sayı ve takım ifadesi ayrıca belirtilmelidir. Kaynaktaki altı hücre/sekiz çekirdek ifadesi merkez hücreyi dışarıda bırakır; bu anlatım doğru yedi hücre sayımını kullanır.",
+  "to": "Modelde polar çekirdeklerin henüz birleşmediği kabul edilir; her biri n taşır. Birleşmiş merkez çekirdeği kullanılan başka bir aşamada sayı ve takım ifadesi ayrıca belirtilmelidir. Altı hücre/sekiz çekirdek ifadesi merkez hücreyi dışarıda bırakır; doğru sayım yedi hücredir."
+ },
+ {
+  "from": "Polen sayısı, sperm sayısı, embriyo kesesi sayısı ve yumurta sayısını aynı adımda birbirine eşitleme. Sorunun hangi evreyi saydığını açıkça işaretle. Normal gelişim ve kayıp yok gibi sayısal kabuller, hesap yapılabilmesi için kart üzerinde verilmiş olmalıdır.",
+  "to": "Polen sayısı, sperm sayısı, embriyo kesesi sayısı ve yumurta sayısını aynı adımda birbirine eşitleme. Sorunun hangi evreyi saydığını açıkça işaretle. Normal gelişim ve kayıp yok gibi sayısal kabuller, hesap yapılabilmesi için soruda verilmiş olmalıdır."
+ },
+ {
+  "from": "Matrik ve yerçekimi gibi diğer potansiyel bileşenlerinin verilen iki kompartıman arasında ihmal edildiği okul modelinde su potansiyeli Ψ, çözünen potansiyeli Ψs ile basınç potansiyeli Ψp toplamıdır. Çözünen miktarının artışı, uygun koşullarda Ψs değerini daha negatif yapar. Pozitif turgor basıncı ise Ψp değerini artırır. İki etki aynı şey değildir; birlikte toplanır.",
+  "to": "Matrik ve yerçekimi gibi diğer potansiyel bileşenlerinin verilen iki kompartıman arasında ihmal edildiği modelde su potansiyeli Ψ, çözünen potansiyeli Ψs ile basınç potansiyeli Ψp toplamıdır. Çözünen miktarının artışı, uygun koşullarda Ψs değerini daha negatif yapar. Pozitif turgor basıncı ise Ψp değerini artırır. İki etki aynı şey değildir; birlikte toplanır."
+ },
+ {
+  "from": "Su, suya geçirgen zardan daha yüksek su potansiyelinden daha düşük su potansiyeline net olarak geçer. Örneğin dış ortam−0,3MPa, hücre−0,8MPa ise net yön hücre içinedir; negatif sayılarda−0,3 daha büyüktür. Bu geçişin kendisi ATP ile pompalanmaz. İyonların taşınması için çalışan pompalar ve kanallar, suyun izlediği farkı dolaylı olarak oluşturabilir.",
+  "to": "Su, suya geçirgen zardan daha yüksek su potansiyelinden daha düşük su potansiyeline net olarak geçer. Örneğin dış ortam −0,3 MPa, hücre −0,8 MPa ise net yön hücre içinedir; negatif sayılarda −0,3 daha büyüktür. Bu geçişin kendisi ATP ile pompalanmaz. İyonların taşınması için çalışan pompalar ve kanallar, suyun izlediği farkı dolaylı olarak oluşturabilir."
+ },
+ {
+  "from": "Ardından “hangi değişken neyi değiştirir?” diye sor: çözünen ve basınç, suyun net yönünü; hücre duvarı mimarisi ve turgor, açıklığın şeklini; ortamın nemi ve hava hareketi, buharın yayılmasını etkiler. Etkileşimde bir değeri değiştir, önce yönü tahmin et, sonra sayısal toplamla karşılaştır. Bu keşif çalışma kaydını korur; tek başına soru başarısı veya öğrenme puanı üretmez.",
+  "to": "Ardından “hangi değişken neyi değiştirir?” diye sor: çözünen ve basınç, suyun net yönünü; hücre duvarı mimarisi ve turgor, açıklığın şeklini; ortamın nemi ve hava hareketi, buharın yayılmasını etkiler. Etkileşimde bir değeri değiştir, önce yönü tahmin et, sonra sayısal toplamla karşılaştır."
+ },
+ {
+  "from": "Kazık kök sisteminde ana kök belirgin ve güçlüdür; ondan yan kökler çıkar. Fasulye, bakla, havuç ve birçok açık tohumlu bitki bu düzen için okul örnekleridir. Havuçta ana kökün depo dokularının gelişmesi, kökün her zaman ince bir emici uzantı olmadığına iyi bir örnektir.",
+  "to": "Kazık kök sisteminde ana kök belirgin ve güçlüdür; ondan yan kökler çıkar. Fasulye, bakla, havuç ve birçok açık tohumlu bitki bu düzen için tipik örneklerdir. Havuçta ana kökün depo dokularının gelişmesi, kökün her zaman ince bir emici uzantı olmadığına iyi bir örnektir."
+ },
+ {
+  "from": "Çift çeneklilerin ve açık tohumluların birçok kökünde damar kambiyumuyla sekonder kalınlaşma görülebilir. Çoğu tek çenekli kökte tipik damar kambiyumu halkası yoktur; bazı grupların özel kalınlaşma biçimleri bu okul modelinden farklıdır. “Açık/kapalı iletim demeti” adları, kambiyumla ilişkiyi anlatır; genç kökte iletim dokularının radyal yerleşimini yok saymaz.",
+  "to": "Çift çeneklilerin ve açık tohumluların birçok kökünde damar kambiyumuyla sekonder kalınlaşma görülebilir. Çoğu tek çenekli kökte tipik damar kambiyumu halkası yoktur; bazı grupların özel kalınlaşma biçimleri bu tipik modelden farklıdır. “Açık/kapalı iletim demeti” adları, kambiyumla ilişkiyi anlatır; genç kökte iletim dokularının radyal yerleşimini yok saymaz."
  }
 ]
