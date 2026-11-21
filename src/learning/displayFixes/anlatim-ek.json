@@ -336,6 +336,10 @@
   "to": "Son miktar = başlangıç + gerçek teslimler − gerçek çıkış; yalnız kapasiteyi çıkış diye kullanma."
  },
  {
+  "from": "Su gazlarında 2: 1 hacim hangi koşulda geçerlidir?",
+  "to": "Su gazlarında 2:1 hacim hangi koşulda geçerlidir?"
+ },
+ {
   "from": "Su→fotosistemII→araETS→fotosistemI→NADP⁺; iki ışık uyarımı ve proton gradyanı bağlantısı vardır.",
   "to": "Su → fotosistem II → ara ETS → fotosistem I → NADP⁺; iki ışık uyarımı ve proton gradyanı bağlantısı vardır."
  },
@@ -438,6 +442,10 @@
  {
   "from": "Üç farklı çiftten:12,13,23.",
   "to": "Üç farklı çiftten: 12, 13, 23."
+ },
+ {
+  "from": "İdeal ayrık parçalarda hacim aynı; toplam alan k kat olur, parça sayısık³’tür.",
+  "to": "İdeal ayrık parçalarda hacim aynı; toplam alan k kat olur, parça sayısı k³’tür."
  },
  {
   "from": "İdeal serbest durgun elektron modelinde 0;λ′=λ.",

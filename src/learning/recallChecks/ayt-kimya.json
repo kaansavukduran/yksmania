@@ -1,0 +1,1115 @@
+{
+ "kimyasal-denge": [
+  {
+   "after": 1,
+   "prompt": "N₂(g) + 3H₂(g) ⇌ 2NH₃(g) için yazılan Kc bağıntısındaki üsler neyi gösterir?",
+   "answer": "Denkleştirilmiş net tepkimenin katsayılarını gösterir; molar kütle ya da o anki mol miktarı değildir."
+  },
+  {
+   "after": 3,
+   "prompt": "Anlık Q değeri K’den büyük olan bir sistemde net dönüşüm hangi yönde beklenir?",
+   "answer": "Q>K olduğunda net dönüşüm girenlere doğru, yani ters yönde beklenir."
+  },
+  {
+   "after": 5,
+   "prompt": "A ⇌ B için Kc = 4 ve [A] + [B] = 5 mol/L korunuyorsa denge derişimleri kaçtır?",
+   "answer": "[B] = 4[A] olduğundan 5[A] = 5 olur; [A] = 1 mol/L, [B] = 4 mol/L bulunur."
+  },
+  {
+   "after": 7,
+   "prompt": "Sabit sıcaklık ve hacimdeki kaba inert gaz eklemek dengeyi neden kaydırmaz?",
+   "answer": "Toplam basınç artsa da tepkimeye giren gazların kısmi basınçları değişmez; bu yüzden Q değişmez."
+  },
+  {
+   "after": 9,
+   "prompt": "A ⇌ B için K = 5 ise 2B ⇌ 2A tepkimesinin denge sabiti kaçtır?",
+   "answer": "Ters çevirmek 1/5 verir, katsayıları 2 ile çarpmak kare aldırır; yeni K = (1/5)² = 1/25 olur."
+  },
+  {
+   "after": 11,
+   "prompt": "2A(g) ⇌ B(g) için Δn kaçtır ve Kp ile Kc nasıl bağlanır?",
+   "answer": "Δn = 1 − 2 = −1 olur; Kp = Kc(RT)⁻¹, yani Kp = Kc/(RT) bulunur."
+  },
+  {
+   "after": 13,
+   "prompt": "X₂ ⇌ 2X kapalı sisteminde başta 2 mol X₂ varken dengede 1,5 mol X₂ kalırsa kaç mol X bulunur?",
+   "answer": "Korunan stok 2n(X₂) + n(X) = 4 mol’dür; 4 − 2·1,5 = 1 mol X bulunur."
+  },
+  {
+   "after": 15,
+   "prompt": "Dengedeki sisteme izleme işaretli tanecik konursa ne gözlenir?",
+   "answer": "İşaretli tanecikler türler arasında geçmeyi sürdürür; ters geçişler toplam miktarı sabit tutar."
+  }
+ ],
+ "ayt-enerji-kaynaklari-gelismeler": [
+  {
+   "after": 2,
+   "prompt": "Fosil yakıtlar neden kısa insan ölçeğinde yenilenemez kabul edilir?",
+   "answer": "Jeolojik zaman boyunca oluşan sınırlı stoklardır; tüketilme hızlarıyla yeniden oluşmaları aynı zaman ölçeğinde değildir."
+  },
+  {
+   "after": 4,
+   "prompt": "LNG ile CNG arasındaki depolama farkı nedir?",
+   "answer": "LNG soğutularak sıvılaştırılmış doğal gaz, CNG ise sıkıştırılmış gaz hâlindeki doğal gazdır."
+  },
+  {
+   "after": 5,
+   "prompt": "2 mol C₂H₆O’nun tam yanması için kaç mol O₂ gerekir?",
+   "answer": "Denklik C₂H₆O + 3 O₂ → 2 CO₂ + 3 H₂O olduğundan 2 mol için 6 mol O₂ gerekir."
+  },
+  {
+   "after": 7,
+   "prompt": "Verimi 0,5 olan cihazda ısıl değeri 50 MJ/kg yakıtla 100 MJ yararlı enerji için kaç kg yakıt gerekir?",
+   "answer": "m = Eyararlı/(η·ısıl değer) = 100/(0,5·50) = 4 kg olur."
+  },
+  {
+   "after": 9,
+   "prompt": "CO ile CO₂ hangi farklı etkileriyle öne çıkar?",
+   "answer": "CO₂ iklim etkisiyle, CO ise hemoglobine bağlanarak zehirleyen sağlık etkisiyle öne çıkar."
+  },
+  {
+   "after": 11,
+   "prompt": "1 kW/m² ışınım, 2 m² panel alanı, 5 saat ve 0,2 verimle kaç kWh elektrik üretilir?",
+   "answer": "E = 1·2·5·0,2 = 2 kWh olur."
+  },
+  {
+   "after": 14,
+   "prompt": "Gelgit ve jeotermal örnekleri enerji kökeniyle ilgili hangi genellemeyi sınırlar?",
+   "answer": "Bütün enerjinin Güneş kökenli olduğu genellemesini; gelgit Ay/Güneş çekimine, jeotermal yer içi ısısına dayanır."
+  },
+  {
+   "after": 17,
+   "prompt": "Elektroliz ile hidroliz arasındaki fark nedir?",
+   "answer": "Elektroliz suyu dış elektrik enerjisiyle H₂ ve O₂’ye ayırmaktır; hidroliz kimyasal bağların suyla parçalanmasıdır."
+  },
+  {
+   "after": 20,
+   "prompt": "Fisyon ile füzyon arasındaki fark nedir ve Güneş’in ana enerji süreci hangisidir?",
+   "answer": "Fisyon ağır çekirdeğin bölünmesi, füzyon hafif çekirdeklerin birleşmesidir; Güneş’in ana süreci füzyondur."
+  }
+ ],
+ "ayt-surdurulebilirlik-geri-donusum": [
+  {
+   "after": 1,
+   "prompt": "Bir şişeyi yeniden kullanmak ile geri dönüştürmek arasındaki fark nedir?",
+   "answer": "Yeniden kullanımda ürün aynı ya da uygun başka işlevde tekrar kullanılır; geri dönüşümde camı kırılıp eritilerek yeni ürün yapılır."
+  },
+  {
+   "after": 3,
+   "prompt": "İki ambalajı karşılaştırırken neden yalnız gram başına etkiye bakılmaz?",
+   "answer": "Aynı ürünü uygun koşulda koruma hizmeti, yani işlevsel birim ortak ölçüt olmalıdır; dayanım ve ürün kaybı sonucu değiştirebilir."
+  },
+  {
+   "after": 5,
+   "prompt": "PE ile PVC tekrar birimleri hangi atom bakımından ayrılır?",
+   "answer": "PE –CH₂–CH₂–, PVC ise –CH₂–CHCl– birimine sahiptir; PVC klor atomu taşır."
+  },
+  {
+   "after": 8,
+   "prompt": "Bir ambalajın geri dönüşümünü ana polimer dışında hangi bileşenler etkiler?",
+   "answer": "Pigment, dolgu, plastikleştirici gibi katkılar ve çok katmanlı yapı da geri dönüşümü etkiler."
+  },
+  {
+   "after": 10,
+   "prompt": "Atığı yakıp enerji elde etmek neden malzeme geri dönüşümüyle eşit sayılmaz?",
+   "answer": "Bu yolla ısı ya da elektrik kazanılır; polimer malzemesi aynı madde döngüsüne geri kazanılmaz."
+  },
+  {
+   "after": 12,
+   "prompt": "Malzeme bilançosunda bu çevrimde kazanılamayan miktar hangi kayıpların toplamıdır?",
+   "answer": "Toplanmayan miktar, ayıklama reddi ve işleme kaybının toplamıdır; kütle yok olmaz, başka atık akışına gider."
+  },
+  {
+   "after": 14,
+   "prompt": "Geri kazanılan 1 kg malzemenin 1 kg yeni ham maddenin yerini tutması için ne gerekir?",
+   "answer": "Geri kazanılan malzemenin kalitesinin ve işlevinin o ürün için uygun olması gerekir."
+  },
+  {
+   "after": 17,
+   "prompt": "Metal atomları eritmede türünü korusa da neden kalite ve kütle kaybı yaşanabilir?",
+   "answer": "Alaşım karışması, oksitlenme, cüruf oluşumu ve kirlenme kalite ve kütle kaybına yol açabilir."
+  },
+  {
+   "after": 19,
+   "prompt": "Ürün tasarımında hangi özellikler sonraki geri kazanım olanağını artırır?",
+   "answer": "Dayanıklılık, onarılabilirlik, kolay sökülme, malzeme tanımlaması ve uyumlu parça seçimi geri kazanımı kolaylaştırır."
+  }
+ ],
+ "ayt-nanoteknoloji-gelismeler": [
+  {
+   "after": 1,
+   "prompt": "3 mm uzunluk kaç nanometreye eşittir?",
+   "answer": "1 mm = 10⁶ nm olduğundan 3 mm = 3×10⁶ nm olur."
+  },
+  {
+   "after": 3,
+   "prompt": "Kenarı 2 nm olan küpün yüzey/hacim oranı kaçtır?",
+   "answer": "Oran 6/a olduğundan 6/2 = 3 nm⁻¹ bulunur; birim ters uzunluktur."
+  },
+  {
+   "after": 5,
+   "prompt": "Malzeme ideal eş parçalara ayrıldığında parça başına kütle küçülürken toplam kütle nasıl değişir?",
+   "answer": "Toplam kütle ve hacim korunur; yalnız parça sayısı artar, her parçanın kütlesi küçülür."
+  },
+  {
+   "after": 6,
+   "prompt": "n = 4 olan basit kübik nokta modelinde sınırda kaç nokta bulunur?",
+   "answer": "Sınır sayısı n³ − (n−2)³ = 64 − 8 = 56 olur."
+  },
+  {
+   "after": 9,
+   "prompt": "Bazı yarı iletken nano yapılarda boyutun ışık soğurmasını değiştirmesi hangi tür açıklama gerektirir?",
+   "answer": "Kuantum sınırlama gibi malzemeye özgü açıklama gerekir; yalnız yüzey hesabı bunu açıklamaz."
+  },
+  {
+   "after": 11,
+   "prompt": "Yukarıdan aşağıya ve aşağıdan yukarıya üretim yaklaşımları arasındaki fark nedir?",
+   "answer": "İlki büyük yapıyı küçültür ya da örüntüler; ikincisi atom, molekül veya küçük birimlerden kontrollü yapı kurar."
+  },
+  {
+   "after": 13,
+   "prompt": "TiO₂ içeren kaplamalarda fotokatalitik temizleme hangi koşullara bağlıdır?",
+   "answer": "Işık ve kimyasal koşullara bağlıdır; nem, kir türü, aşınma ve kaplama ömrü de sonucu etkiler."
+  },
+  {
+   "after": 15,
+   "prompt": "Adsorpsiyonla tutulan kirleticinin atomlarına ne olur?",
+   "answer": "Atomlar yok olmaz, yüzeye tutunur; bu yüzden kapasite, doygunluk ve tutulan maddenin son yönetimi önemlidir."
+  }
+ ],
+ "ayt-alkol-eldesi-tepkimeleri": [
+  {
+   "after": 1,
+   "prompt": "Bir denklemde katsayı ile alt indis hangi farklı bilgileri verir?",
+   "answer": "Katsayı mol oranını, alt indis bir moleküldeki atom sayısını verir; biri ötekinin yerine kullanılmaz."
+  },
+  {
+   "after": 2,
+   "prompt": "Etenin asit katalizli hidrasyonunda etanoldeki O atomu nereden gelir?",
+   "answer": "O atomu sudan gelir; H ve OH iki karbona eklenir ve iskelet iki karbonlu kalır."
+  },
+  {
+   "after": 5,
+   "prompt": "Alkolik fermantasyonda glikozun altı karbonu ürünlere nasıl dağılır?",
+   "answer": "Dört karbon iki etanol molekülünde, iki karbon iki CO₂ molekülünde bulunur."
+  },
+  {
+   "after": 6,
+   "prompt": "Propanonun uygun indirgenmesi hangi alkolü verir ve bu alkol hangi sınıftadır?",
+   "answer": "Karbonile net iki H eklenir ve 2-propanol oluşur; bu bir sekonder alkoldür."
+  },
+  {
+   "after": 9,
+   "prompt": "Sekonder alkol olağan hafif yükseltgenmede hangi tür ürüne dönüşür?",
+   "answer": "Ketona dönüşür; örneğin 2-propanol yükseltgenince propanon ve su oluşur."
+  },
+  {
+   "after": 11,
+   "prompt": "Metanolün basamaklı yükseltgenmesinde ilk ve sonraki ürün nedir?",
+   "answer": "İlk basamakta metanal, sonraki basamakta metanoik asit oluşur."
+  },
+  {
+   "after": 15,
+   "prompt": "Esterleşme ürününü eterle karıştırmamak için hangi atomları izlersin?",
+   "answer": "Esterin iki O atomunu izlersin; eterde yalnız tek O köprüsü bulunur."
+  },
+  {
+   "after": 17,
+   "prompt": "C=12, H=1, O=16 iken 90 g glikozun tam fermantasyonu kuramsal olarak kaç g etanol verir?",
+   "answer": "90/180 = 0,5 mol glikozdan 1 mol etanol çıkar; bu 46 g’dır."
+  },
+  {
+   "after": 18,
+   "prompt": "Kuramsal 0,40 mol ürünün yüzde 75 verimle elde edilen miktarı kaç moldür?",
+   "answer": "Gerçekleşen ürün 0,40·0,75 = 0,30 mol olur."
+  }
+ ],
+ "ayt-eterler": [
+  {
+   "after": 1,
+   "prompt": "Eteri esterden ayırmak için O’nun iki karbon komşusuna bakmak neden yetmez?",
+   "answer": "Esterde de O iki karbona bağlıdır; ayrım için komşu karbonlardan birinin karbonil olup olmadığına bakmalısın."
+  },
+  {
+   "after": 2,
+   "prompt": "CₙH₂ₙ₊₂O formülüne uyan 3 karbonlu açık zincirli doymuş monoeterin molekül formülü nedir?",
+   "answer": "n=3 için C₃H₈O olur."
+  },
+  {
+   "after": 5,
+   "prompt": "CH₃OCH₂CH₂CH₃ adlandırılırken ana zincir neden üç karbonlu alınır?",
+   "answer": "O atomu ana zincire katılmaz; uzun C zinciri propan, kısa taraf O ile metoksi olur ve ad 1-metoksipropan çıkar."
+  },
+  {
+   "after": 8,
+   "prompt": "Fenol C₆H₅OH ile metoksibenzen arasındaki bağlantı farkı nedir?",
+   "answer": "Fenolde O, halkaya ve H’ye bağlıdır (O–H); metoksibenzende O, halka ile metil arasında iki karbona bağlıdır (O–C)."
+  },
+  {
+   "after": 10,
+   "prompt": "Eter molekülünü polar yapan iki etken nedir?",
+   "answer": "O daha elektronegatif olduğundan C–O bağları polardır ve O çevresi açısal olduğu için bağ dipolleri tam silinmez."
+  },
+  {
+   "after": 13,
+   "prompt": "Etanolün kaynama sıcaklığı izomeri dimetil eterden neden daha yüksektir?",
+   "answer": "Etanol molekülleri kendi aralarında O–H üzerinden hidrojen bağı kurar; dimetil eterde bu verici H yoktur."
+  },
+  {
+   "after": 14,
+   "prompt": "Görece inert sayılan eterlerde hangi iki ayrı davranış yine de göz ardı edilmemelidir?",
+   "answer": "Güçlü asitlerle bağ kırılması ve bazı eterlerde havayla peroksit oluşumu."
+  }
+ ],
+ "ayt-aldehit-keton": [
+  {
+   "after": 1,
+   "prompt": "Bir molekülün C=O taşıması onu neden tek başına aldehit yapmaz?",
+   "answer": "Asit, ester ve keton da karbonil taşır; sınıfı karbonil C’nin diğer komşuları belirler."
+  },
+  {
+   "after": 3,
+   "prompt": "En küçük ketonun en az üç karbon taşıması neden zorunludur?",
+   "answer": "Ketonda karbonil C iki karbon grubuna doğrudan bağlıdır; karbonil C ile iki komşu C birlikte en az üç C eder."
+  },
+  {
+   "after": 4,
+   "prompt": "Siklohekzanon C₆H₁₀O formülüyle CₙH₂ₙO kuralına neden uymaz?",
+   "answer": "Halka H sayısını ayrıca azaltır; CₙH₂ₙO yalnız açık zincirli, ek işlevsiz tek karbonilli aldehit ve ketonları kapsar."
+  },
+  {
+   "after": 6,
+   "prompt": "CH₃CH(CH₃)CH₂CHO yapısının sistematik adı nedir?",
+   "answer": "3-metilbütanal; CHO karbonu C1 sayılır, dört C’li ana zincirde metil C3’tedir."
+  },
+  {
+   "after": 10,
+   "prompt": "Pentan-2-on ile pentan-3-on arasında hangi izomerlik türü vardır?",
+   "answer": "Konum izomerliği; karbon iskeleti ve keton grubu aynı kalır, yalnız karbonilin zincirdeki yeri değişir."
+  },
+  {
+   "after": 12,
+   "prompt": "Aldehit ve ketonlar suyla hidrojen bağı kurabildiği hâlde kendi aralarında neden kuramaz?",
+   "answer": "O–H vericileri yoktur; karbonil O’su yalnız su gibi vericilerden gelen H’yi kabul edebilir."
+  },
+  {
+   "after": 14,
+   "prompt": "Tollens testindeki gümüş aynası hangi değişimle oluşur?",
+   "answer": "Gümüş(I) türü aldehit tarafından indirgenip Ag metali olarak ayrılır; aldehit ise yükseltgenir."
+  },
+  {
+   "after": 16,
+   "prompt": "Fehling testinde Cu(II) hangi türe indirgenir ve oluşan çökeleğin rengi nedir?",
+   "answer": "Cu(I)’e indirgenir; kızıl kahverengi Cu₂O çöker."
+  },
+  {
+   "after": 18,
+   "prompt": "Propanon uygun ayıraçla indirgenirse hangi alkol oluşur?",
+   "answer": "2-propanol oluşur; C=O’ya net H₂ katılır ve karbon iskeleti korunur."
+  },
+  {
+   "after": 20,
+   "prompt": "0,5 mol aldehit-basit keton karışımı Tollens ile 0,6 mol Ag verirse karışımda kaç mol keton vardır?",
+   "answer": "Aldehit molü 0,6/2=0,3 mol olur; keton farktan 0,5−0,3=0,2 mol bulunur."
+  }
+ ],
+ "ayt-karboksilik-asitler": [
+  {
+   "after": 1,
+   "prompt": "Bir moleküldeki karboksil grubu sayısını belirlerken neyi eşleştirmelisin?",
+   "answer": "O sayısına değil, karbonil C’yi ve ona tek bağla bağlı OH’yi birlikte bulmaya bak; her C(=O)OH bir karboksildir."
+  },
+  {
+   "after": 3,
+   "prompt": "Amino asitlerin amfoter davranışını hangi iki grup açıklar?",
+   "answer": "Proton alabilen amino grubu ile proton verebilen karboksil grubu."
+  },
+  {
+   "after": 5,
+   "prompt": "Salisilik asidin sistematik adı nedir?",
+   "answer": "2-hidroksibenzoik asit; OH halkada COOH’ye komşu olan 2 konumundadır."
+  },
+  {
+   "after": 6,
+   "prompt": "CₙH₂ₙO₂ formülüne göre 4 karbonlu, tek karboksilli, açık zincirli doymuş asidin formülü nedir?",
+   "answer": "n=4 için C₄H₈O₂ olur."
+  },
+  {
+   "after": 8,
+   "prompt": "İki karboksilik asit molekülünün dimer oluşturması neden formülün iki katına çıkması sayılmaz?",
+   "answer": "Dimer, iki molekülün karşılıklı hidrojen bağlarıyla oluşan birlikteliğidir; kalıcı kovalent formül değişmez."
+  },
+  {
+   "after": 11,
+   "prompt": "pKa değeri küçüldükçe asit kuvveti nasıl değişir?",
+   "answer": "Artar; pKa=−logKa olduğundan küçük pKa büyük Ka, yani proton vermeye daha yatkın asit demektir."
+  },
+  {
+   "after": 12,
+   "prompt": "Ka=10⁻⁶ olan tek protonlu zayıf asidin 0,01 M çözeltisinde yaklaşık pH kaç olur?",
+   "answer": "[H₃O⁺]≈√(10⁻⁶·10⁻²)=10⁻⁴ M olduğundan pH≈4 bulunur; iyonlaşma yüzde 1 olduğu için yaklaşım uygundur."
+  },
+  {
+   "after": 15,
+   "prompt": "2 mol RCOOH yeterli NaHCO₃ ile tepkimeye girerse kaç mol CO₂ oluşur?",
+   "answer": "Oran 1:1 olduğundan 2 mol CO₂ oluşur; Na₂CO₃ kullanılsaydı iki asit protonu bir karbonata gittiği için 1 mol oluşurdu."
+  },
+  {
+   "after": 16,
+   "prompt": "Asit ile alkol esterleşirken karboksilin karbonil C’si esterin hangi tarafında kalır?",
+   "answer": "Esterin asit kökenli tarafında kalır; tepkime asit katalizli bir dengedir ve yanında su oluşur."
+  },
+  {
+   "after": 19,
+   "prompt": "CₙH₂ₙ₋₂dO₂ formülüne göre C₁₈H₃₄O₂ formüllü oleik asidin zincirinde kaç C=C vardır?",
+   "answer": "n=18 için H sayısı 36−2d=34 olur; buradan d=1, yani bir C=C bulunur."
+  }
+ ],
+ "ayt-esterler": [
+  {
+   "after": 1,
+   "prompt": "CH₃CH₂C(=O)OCH₃ esterinde karbonil C hangi başlangıç maddesinden gelir?",
+   "answer": "Propanoik asitten gelir; karbonil C her zaman asit kökenli tarafta, O–CH₃ kısmı ise metanol kökenlidir."
+  },
+  {
+   "after": 3,
+   "prompt": "Fenil grubu ile benzil grubu arasındaki fark nedir?",
+   "answer": "Fenil doğrudan C₆H₅– grubudur; benzil C₆H₅CH₂– olup fazladan bir CH₂ taşır ve bu fark adı ve formülü değiştirir."
+  },
+  {
+   "after": 5,
+   "prompt": "Esterleşmede oluşan suyun uzaklaştırılması ester oluşumunu neden destekler?",
+   "answer": "Ürünün uzaklaştırılması denge bileşimini ester yönüne kaydırır; bunun nedeni katalizörün denge sabitini artırması değildir."
+  },
+  {
+   "after": 7,
+   "prompt": "2 mol asit ile 3 mol alkolün tek işlevli esterleşmesinde ilerleme en çok kaç mol olabilir?",
+   "answer": "Asit ve alkol 1:1 tükendiği için üst sınır min(2,3)=2 moldür; asit sınırlayıcıdır."
+  },
+  {
+   "after": 9,
+   "prompt": "Bazik hidroliz neden asit katalizli denge yazımına göre ürün yönünde güçlü ilerler?",
+   "answer": "Ürün doğrudan karboksilat RCOO⁻ olarak oluşur; bu yüzden tepkime ürün tarafına güçlü biçimde kayar."
+  },
+  {
+   "after": 11,
+   "prompt": "Tek karbonlu metanoik asidin ester izomeri neden kurulamaz?",
+   "answer": "Ester için karbonil C dışında köprü O’ya bağlı en az bir C daha gerekir; tek C ile bu bağlantı yapılamaz."
+  },
+  {
+   "after": 12,
+   "prompt": "Propanoik asit ile etil metanoat arasındaki izomerlik türü nedir?",
+   "answer": "İşlevsel grup izomerliği; ikisi de C₃H₆O₂’dir ama birinde COOH, öbüründe COOR bağlantısı vardır."
+  },
+  {
+   "after": 14,
+   "prompt": "Basit esterler benzer kütleli asit ve alkollerden neden daha uçucu olabilir?",
+   "answer": "O–H vericileri olmadığından kendi aralarında hidrojen bağı kuramazlar; yalnız London ve dipol etkileşimleri gösterirler."
+  },
+  {
+   "after": 17,
+   "prompt": "Gliserol üç yağ asidiyle tam esterleşince kaç mol su çıkar?",
+   "answer": "Üç mol su çıkar; gliserolün üç OH’sinin her biri bir ester bağı kurarken bir su ayrılır."
+  }
+ ],
+ "ayt-sikloalkanlar": [
+  {
+   "after": 1,
+   "prompt": "Açık zincirli pentanın iki ucu bağlanıp halka kapatılırsa oluşan siklopentanın formülü ne olur?",
+   "answer": "C₅H₁₂’den iki H eksilir ve C₅H₁₀ olur; yeni C–C bağı için iki uç karbon birer H kaybeder."
+  },
+  {
+   "after": 3,
+   "prompt": "(2C+2−H)/2 bağıntısına göre C₄H₆ için doymamışlık eşdeğeri kaçtır?",
+   "answer": "(8+2−6)/2=2 olur; örneğin bir üçlü bağ, iki çift bağ ya da bir halka ile bir çift bağ olasıdır."
+  },
+  {
+   "after": 5,
+   "prompt": "Siklobütan ile metilsiklopropan arasındaki iskelet farkı nedir?",
+   "answer": "İkisi de C₄H₈ ve tek halkalıdır; siklobütanda dört üyeli halka, metilsiklopropanda metil dallı üç üyeli halka vardır."
+  },
+  {
+   "after": 7,
+   "prompt": "Siklopropan ile propen hangi gerekçeyle zincir–halka izomeridir?",
+   "answer": "İkisi de C₃H₆’dır; siklopropan üç tek bağlı bir halka, propen bir C=C içeren açık zincirdir."
+  },
+  {
+   "after": 8,
+   "prompt": "Cis- ve trans-2-büteni yapı izomerlerinden ayıran nedir?",
+   "answer": "Atomların bağlantıları aynıdır; yalnız çift bağ çevresindeki grupların uzaydaki göreli yönelişi farklıdır."
+  },
+  {
+   "after": 9,
+   "prompt": "Metilsiklopentan adında metil için konum numarası neden genellikle yazılmaz?",
+   "answer": "Halkada tek dal varken bağlanma yerleri eşdeğerdir; tek bağlanma yeri için 1 yazmak gerekmez."
+  },
+  {
+   "after": 13,
+   "prompt": "Siklopropan yalnız sigma bağı taşıdığı hâlde neden katılma tepkimesi verebilir?",
+   "answer": "Küçük halkada bağ açıları zorlanır; bu halka gerilimi belirli koşullarda halka açılmasıyla katılmaya yol açar."
+  },
+  {
+   "after": 15,
+   "prompt": "1 mol C₅H₁₀ sikloalkanın tam yanması için kaç mol O₂ gerekir?",
+   "answer": "5 mol CO₂ ve 5 mol H₂O oluşur; ürünlerdeki 15 O atomu için 3n/2=7,5 mol O₂ gerekir."
+  }
+ ],
+ "ayt-alkenler": [
+  {
+   "after": 1,
+   "prompt": "Propendeki üç karbonun tamamına neden sp² denemez?",
+   "answer": "Yalnız çift bağ karbonları sp²’dir; tek bağlı CH₃ karbonu sp³ hibritleşmiştir."
+  },
+  {
+   "after": 2,
+   "prompt": "Açık zincirli tek çift bağlı C₄H₈ alkeninde kaç sigma bağı vardır?",
+   "answer": "3 C–C ve 8 C–H ile 3n−1=11 sigma bulunur; ayrıca bir pi bağı vardır."
+  },
+  {
+   "after": 4,
+   "prompt": "Dört karbonlu CH₂=C(CH₃)–CH₃ yapısının adı neden büten değil propen üzerine kurulur?",
+   "answer": "Çift bağı içeren ana zincir üç karbonludur; dördüncü C ikinci karbondaki metil dalıdır ve ad 2-metilpropen olur."
+  },
+  {
+   "after": 5,
+   "prompt": "Vinil klorür ile allil klorürü ayıran bağlanma farkı nedir?",
+   "answer": "Vinil klorürde Cl doğrudan çift bağ karbonuna, allil klorürde çift bağın dışındaki CH₂ karbonuna bağlıdır."
+  },
+  {
+   "after": 8,
+   "prompt": "Cis ve trans 2-büten neden tek bağ dönmesiyle birbirine geçen görünümler sayılmaz?",
+   "answer": "C=C çevresinde dönmek pi örtüşmesini bozmayı gerektirir; bu dönme kısıtı iki yönelişi ayrı izomer yapar."
+  },
+  {
+   "after": 10,
+   "prompt": "Etene Br₂ katılınca hangi ürün oluşur ve alkenin H sayısına ne olur?",
+   "answer": "1,2-dibromoetan oluşur; her karbona bir Br eklenir ve H sayısı korunur."
+  },
+  {
+   "after": 12,
+   "prompt": "Propene brom katılırken iki Br atomu nereye bağlanır?",
+   "answer": "Çift bağın iki farklı karbonuna birer Br gelir ve CH₃–CHBr–CH₂Br oluşur; ikisi aynı karbonda toplanmaz."
+  },
+  {
+   "after": 14,
+   "prompt": "Propene asit katalizli su katılmasında olağan ana ürün nedir?",
+   "answer": "2-propanol oluşur; H ve OH çift bağın iki karbonuna katılır ve OH ortadaki karbona gelir."
+  }
+ ],
+ "ayt-alkinler": [
+  {
+   "after": 1,
+   "prompt": "Propin CH₃–C≡CH molekülünde hangi karbonlar sp, hangisi sp³ hibritleşmiştir?",
+   "answer": "Üçlü bağdaki iki karbon sp, CH₃ karbonu ise sp³ hibritleşmiştir."
+  },
+  {
+   "after": 2,
+   "prompt": "Açık zincirli, tek üçlü bağlı C₄H₆ alkininde kaç sigma bağı vardır?",
+   "answer": "3 C–C ve 6 C–H ile 3n−3=9 sigma bulunur; üçlü bağdaki iki pi bağı bu sayıya katılmaz."
+  },
+  {
+   "after": 4,
+   "prompt": "Dimetil asetilenin toplam karbon sayısı kaçtır?",
+   "answer": "Asetilen merkezinin iki karbonuna birer metil eklenir; CH₃–C≡C–CH₃ yapısında toplam dört C vardır."
+  },
+  {
+   "after": 6,
+   "prompt": "Uç alkindeki H neden alken ve alkan H’lerinden daha asidik davranabilir?",
+   "answer": "Bu H sp karbona bağlıdır; yükün daha yüksek s karakterli orbitalde tutulması bu farkı açıklar."
+  },
+  {
+   "after": 8,
+   "prompt": "Bir alkini alken aşamasında tutmak için bir mol H₂ dışında ne gerekir?",
+   "answer": "Seçici bir katalizör ve durdurma koşulu gerekir; örneğin uygun Lindlar koşulu kullanılır."
+  },
+  {
+   "after": 10,
+   "prompt": "Etine iki mol Br₂ katılınca oluşan ürünün formülü nedir?",
+   "answer": "C₂H₂Br₄ oluşur; iki pi bağı da gider ve başlangıçtaki iki H korunur."
+  },
+  {
+   "after": 12,
+   "prompt": "Klasik asit/Hg²⁺ hidratasyonunda propin hangi ürünü verir?",
+   "answer": "Propanon verir; Markovnikov yönelimi ve enol dönüşümüyle keton oluşur."
+  },
+  {
+   "after": 14,
+   "prompt": "Uç alkinin amonyaklı Ag(I) ile verdiği çökelek Tollens gümüş aynasından nasıl ayrılır?",
+   "answer": "Uç alkinde terminal H’nin yerine metal bağlanır ve gümüş asetilür çöker; Tollens’te ise metalik gümüş oluşur."
+  },
+  {
+   "after": 16,
+   "prompt": "0,2 mol eten ve 0,3 mol etin karışımının tam doyması için kaç mol H₂ gerekir?",
+   "answer": "x+2y bağıntısıyla 0,2+2·0,3=0,8 mol H₂ gerekir."
+  }
+ ],
+ "ayt-arenler": [
+  {
+   "after": 1,
+   "prompt": "Benzende her karbonun yalnız bir H taşımasının nedeni nedir?",
+   "answer": "Her C, iki komşu halka karbonu ve bir H ile üç sigma bağı kurar; kalan p orbitali halkanın pi sistemine katılır."
+  },
+  {
+   "after": 3,
+   "prompt": "Bir Kekulé katkısındaki üç pi bağı ile altı pi elektronu nasıl ilişkilidir?",
+   "answer": "Her pi bağı iki elektronlu bir katkıdır; üç bağ ve altı elektron farklı nesneleri sayar ama birbirini tutar."
+  },
+  {
+   "after": 6,
+   "prompt": "Benzen halkasına bir Cl bağlanınca oluşan klorobenzenin formülü nedir?",
+   "answer": "C₆H₅Cl olur; Cl, halkadaki bir H’nin yerini alır, fazladan eklenmez."
+  },
+  {
+   "after": 7,
+   "prompt": "Benzende 1,5 konumlu iki substitüentli yapı neden yeni bir izomer sayılmaz?",
+   "answer": "Halkanın simetrisi nedeniyle yeniden numaralanınca 1,3 yani meta düzeni elde edilir."
+  },
+  {
+   "after": 9,
+   "prompt": "Saf fenol 20–25°C’de hangi fiziksel hâldedir?",
+   "answer": "Erime sıcaklığı yaklaşık 41°C olduğundan bu sıcaklıklarda katıdır."
+  },
+  {
+   "after": 11,
+   "prompt": "Naftalinin 10 karbonu iki altılı halkadan nasıl hesaplanır?",
+   "answer": "Ortak kenardaki iki karbon iki kez sayılmaz: 6+6−2=10."
+  },
+  {
+   "after": 13,
+   "prompt": "Benzenin katalizörlü bromlanmasını alkenin brom katılmasından ayıran yan ürün nedir?",
+   "answer": "Benzende bir halka H’sinin yerine Br geçer ve HBr oluşur; alkende iki Br çift bağa eklenir, HBr oluşmaz."
+  },
+  {
+   "after": 14,
+   "prompt": "Siklohekzen C₆H₁₀ için doymamışlık eşdeğeri kaçtır?",
+   "answer": "(2·6+2−10)/2=2 bulunur; bir halka ve bir çift bağ bu toplamı sağlar."
+  }
+ ],
+ "ayt-alkoller": [
+  {
+   "after": 1,
+   "prompt": "Bir yapıda O atomu görmek neden eter tanısı için yetmez?",
+   "answer": "Karboksilik asit ve esterlerde de O vardır; O’nun iki yanına hangi atomların hangi bağlarla bağlı olduğunu okumalısın."
+  },
+  {
+   "after": 3,
+   "prompt": "Metil etanoattaki köprü O’sunu dimetil eterdeki O’dan ayıran nedir?",
+   "answer": "Esterdeki köprü O’su karbonil karbonuna komşudur; dimetil eterde O’nun iki yanında karbonil yoktur."
+  },
+  {
+   "after": 6,
+   "prompt": "CₙH₂ₙ₊₂O formülüne göre dört karbonlu açık zincirli doymuş monoalkolün formülü nedir?",
+   "answer": "n=4 için C₄H₁₀O olur."
+  },
+  {
+   "after": 8,
+   "prompt": "tert-Bütanolde çok sayıda H bulunduğu hâlde alfa H sayısı neden sıfırdır?",
+   "answer": "OH’nin bağlı olduğu karbon üç karbona bağlıdır ve H taşımaz; metil H’leri alfa karbonda değildir."
+  },
+  {
+   "after": 9,
+   "prompt": "Gliserindeki üç OH’nin dereceleri nedir?",
+   "answer": "Uçtaki iki OH birincil, ortadaki OH ikincil çevrededir; üç OH taşıması molekülü üçüncül alkol yapmaz."
+  },
+  {
+   "after": 11,
+   "prompt": "Halkalı bir sikloalkanolde numaralama hangi karbondan başlar?",
+   "answer": "OH’nin bağlı olduğu halka karbonu 1 kabul edilir; diğer grupların konumları ona göre verilir."
+  },
+  {
+   "after": 13,
+   "prompt": "1-Bütanol ile 2-metil-1-propanol arasındaki izomerlik türü nedir?",
+   "answer": "İskelet izomerliği; formülleri aynıdır ama karbon iskeletleri farklıdır."
+  },
+  {
+   "after": 16,
+   "prompt": "Aynı formüllü monoalkol izomerlerinde dallanma kaynama noktasını neden düşürebilir?",
+   "answer": "Dallanmış yapının etkili temas yüzeyi azalır; bu da moleküller arası etkileşimi zayıflatabilir."
+  },
+  {
+   "after": 19,
+   "prompt": "Metanol ile etanol ad benzerliğine rağmen neden birbirinin yerine geçmez?",
+   "answer": "Farklı kimyasal kimliklerdir; metanolün toksik etkisi ve görme hasarı riski vardır, kaynama noktaları da farklıdır."
+  },
+  {
+   "after": 21,
+   "prompt": "Kloroetanın sulu hidroksitle yer değiştirmesinde hangi bağ değişir?",
+   "answer": "C–Cl bağının yerine C–O bağı kurulur; etanol ve Cl⁻ oluşur, karbon iskeleti korunur."
+  },
+  {
+   "after": 22,
+   "prompt": "İkincil bir alkol uygun yükseltgenmeyle hangi sınıfa dönüşür?",
+   "answer": "Ketona dönüşür; örneğin 2-propanol propanon verir."
+  }
+ ],
+ "elektrokimyasal-piller": [
+  {
+   "after": 1,
+   "prompt": "Elektrot ile elektrolit arasındaki görev farkı nedir?",
+   "answer": "Elektrot elektron alışverişinin olduğu iletken yüzeydir; elektrolit yükü hareketli iyonlarla taşıyan ortamdır."
+  },
+  {
+   "after": 3,
+   "prompt": "Geleneksel akım yönü ile dış teldeki elektron akışı arasındaki ilişki nedir?",
+   "answer": "Birbirine zıttır; elektronlar telde anottan katoda giderken geleneksel akım pozitif yük hareketi kabulüyle ters yönde tanımlanır."
+  },
+  {
+   "after": 4,
+   "prompt": "Daniell pilinde 0,5 mol Zn tükenirse dış devreden kaç mol elektron aktarılır?",
+   "answer": "Her Zn iki elektron verdiğinden 0,5·2=1 mol elektron aktarılır."
+  },
+  {
+   "after": 6,
+   "prompt": "Dış tel sağlam olduğu hâlde iyonik bağlantı kesikse pil neden sürekli akım veremez?",
+   "answer": "Başlangıçta oluşan küçük yük ayrışması daha fazla aktarımı engeller; sürekli akım için dış ve iç yol birlikte tamamlanmalıdır."
+  },
+  {
+   "after": 8,
+   "prompt": "Zn²⁺/Zn yarısı (−0,763 V) SHE ile eşleşince SHE hangi elektrot görevini alır?",
+   "answer": "Zn yükseltgenir ve SHE katot olur; orada H⁺ iyonları H₂’ye indirgenir."
+  },
+  {
+   "after": 9,
+   "prompt": "E°(Ag⁺/Ag)=+0,799 V ve E°(Cu²⁺/Cu)=+0,337 V ise Cu–Ag pilinin standart gerilimi kaç V olur?",
+   "answer": "Ag⁺ katotta indirgenir, Cu anottur; E°pil=0,799−0,337=0,462 V bulunur."
+  },
+  {
+   "after": 11,
+   "prompt": "Asit çözeltisindeki iletken katotta neden metal birikmeyebilir?",
+   "answer": "İndirgenen tür H⁺ ise H₂ gazı oluşur; katotta gaz çıkışı gözlenir ve kütle artışı olmaz."
+  },
+  {
+   "after": 14,
+   "prompt": "Birincil pil ile ikincil hücre arasındaki fark nedir?",
+   "answer": "Birincil pil yeniden doldurulmak için tasarlanmaz; ikincil hücrede dış elektrik enerjisiyle kullanışlı kimyasal durum geri kurulabilir."
+  }
+ ],
+ "pil-gerilimi-derisim-pilleri": [
+  {
+   "after": 1,
+   "prompt": "Cd+2Ag⁺→Cd²⁺+2Ag tepkimesinin Q ifadesinde Ag⁺ etkinliği neden karesiyle yazılır?",
+   "answer": "Ag⁺’nın dengeli denklemdeki katsayısı 2 olduğu için üs 2’dir; aktarılan elektron sayısı n ise ayrıca 2’dir."
+  },
+  {
+   "after": 3,
+   "prompt": "Q<1 olduğunda E ile E° nasıl karşılaştırılır?",
+   "answer": "log₁₀Q negatif olduğundan eksi işaretli düzeltme E’yi artırır ve E>E° bulunur."
+  },
+  {
+   "after": 4,
+   "prompt": "Daniell pilinde katottaki Cu²⁺ çözeltisi seyreltilirse E nasıl değişir?",
+   "answer": "Q=a(Zn²⁺)/a(Cu²⁺) oranının paydası küçülür, Q artar ve E azalır."
+  },
+  {
+   "after": 5,
+   "prompt": "100 mL 0,20 M ile 300 mL 0,60 M aynı iyon çözeltisi karışırsa son derişim kaç M olur?",
+   "answer": "Toplam mol 0,02+0,18=0,20 mol, toplam hacim 0,4 L olduğundan son derişim 0,50 M olur."
+  },
+  {
+   "after": 7,
+   "prompt": "Elektrot çubuğunu iki kat büyütmek aynı çiftte denge gerilimini neden değiştirmez?",
+   "answer": "Nernst ifadesinde saf metal gramı yer almaz; aynı faz, sıcaklık ve etkinliklerde gerilim ölçeklenmez."
+  },
+  {
+   "after": 8,
+   "prompt": "Zn+2H⁺→Zn²⁺+H₂ hücresinde ürün H₂ basıncı artarsa E nasıl değişir?",
+   "answer": "H₂ ürün tarafında olduğundan Q artar ve yazılan yöndeki E azalır."
+  },
+  {
+   "after": 11,
+   "prompt": "Cu/Cu²⁺ derişim hücresinde derişim oranı 1000 ise 25°C’de E kaç V olur?",
+   "answer": "E=(0,0592/2)·log₁₀1000=0,0296·3≈0,0888 V bulunur."
+  },
+  {
+   "after": 12,
+   "prompt": "Derişim hücresinde soldaki 0,10 M Cu²⁺ 0,40 M’ye çıkarılır, sağ 0,20 M kalırsa roller nasıl değişir?",
+   "answer": "Sol taraf daha derişik olduğu için katot, sağ taraf anot olur; elektron yönü sağdan sola döner."
+  }
+ ],
+ "elektroliz": [
+  {
+   "after": 1,
+   "prompt": "Galvanik pil ile elektroliz arasında enerji dönüşümünün yönü nasıl farklıdır?",
+   "answer": "Galvanik pilde kimyasal enerji elektriğe dönüşür; elektrolizde dış elektrik enerjisi kendiliğinden ilerlemeyen kimyasal değişime harcanır."
+  },
+  {
+   "after": 2,
+   "prompt": "Katot çevresinde indirgenme olması çözeltide serbest elektron bulunduğunu neden göstermez?",
+   "answer": "Elektronlar dış devrede taşınır; çözeltide yük aktarımını katyon ve anyonların hareketi tamamlar."
+  },
+  {
+   "after": 4,
+   "prompt": "Eriyik NaCl elektrolizinin net denklemi nedir?",
+   "answer": "2NaCl→2Na+Cl₂ olur; katotta Na⁺ indirgenir, anotta Cl⁻ yükseltgenir."
+  },
+  {
+   "after": 6,
+   "prompt": "Sulu CuSO₄ inert Pt anotla elektroliz edilirken çözeltinin asitliği neden değişebilir?",
+   "answer": "Anotta su yükseltgenip O₂ ile birlikte H⁺ verir; net tepkimede Cu²⁺ tükenirken H⁺ oluşur."
+  },
+  {
+   "after": 8,
+   "prompt": "Suyun H⁺ ve OH⁻ iyonlarına ayrışması neden redoks sayılmaz?",
+   "answer": "H’nin +1, O’nun −2 basamağı değişmez; su elektrolizinde ise H 0’a, O 0’a geçer."
+  },
+  {
+   "after": 10,
+   "prompt": "Tuzlu su elektrolizinde verilen yarılara göre H₂ ile Cl₂ mol oranı kaçtır?",
+   "answer": "Her iki yarı da iki elektronla bir mol gaz verdiği için oran 1:1’dir; Na⁺ seyirci kalır."
+  },
+  {
+   "after": 12,
+   "prompt": "Bakır bir nesneyi gümüşle kaplamak için nesne hangi elektrot yapılır?",
+   "answer": "Katot yapılır; Ag⁺ nesnenin yüzeyinde elektron alıp Ag metaline indirgenir."
+  },
+  {
+   "after": 13,
+   "prompt": "Zn–Cu galvanik tepkimesini ters sürmek için ideal örnekte hangi gerilim aşılmalıdır?",
+   "answer": "1,10 V standart hücre farkı aşılmalıdır; gerçekte aşırı gerilim ve direnç ek gerilim gerektirir."
+  }
+ ],
+ "faraday-yasalari": [
+  {
+   "after": 1,
+   "prompt": "F=96500 C/mol e⁻ kabul edilirse 19300 C yük kaç mol elektrona karşılık gelir?",
+   "answer": "n(e⁻)=Q/F=19300/96500=0,200 mol elektron olur."
+  },
+  {
+   "after": 3,
+   "prompt": "Yüzde 100 verim ve yeterli stokta 0,40 mol e⁻ Cu²⁺ çözeltisinden kaç mol Cu biriktirir?",
+   "answer": "Cu²⁺ için z=2 olduğundan 0,40/2=0,20 mol Cu birikir."
+  },
+  {
+   "after": 5,
+   "prompt": "Su elektrolizinde 4F yük geçerse kaç mol H₂ ve kaç mol O₂ oluşur?",
+   "answer": "n(H₂)=Q/(2F)=2 mol, n(O₂)=Q/(4F)=1 mol olur."
+  },
+  {
+   "after": 7,
+   "prompt": "Seri bağlı iki hücrenin birinde 21,6 g Ag biriktiğinde diğerinde kaç g Cu birikir (Ag=108, Cu=64 g/mol)?",
+   "answer": "0,2 mol Ag için 0,2 mol e⁻ geçer; Cu için z=2 olduğundan 0,1 mol yani 6,4 g Cu birikir."
+  },
+  {
+   "after": 9,
+   "prompt": "Toplam yük 10000 C ve hedef akım verimi yüzde 80 ise hedef sürece kaç C yük ayrılır?",
+   "answer": "Qhedef=(80/100)·10000=8000 C olur."
+  },
+  {
+   "after": 10,
+   "prompt": "İnert anotlu hücrede Q/(zF) değeri başlangıçtaki n₀ iyon molünden büyükse en çok ne kadar metal oluşur?",
+   "answer": "En çok n₀ mol metal oluşur; inert anot aynı iyonu yenilemediği için stok hesaba tavan koyar."
+  },
+  {
+   "after": 12,
+   "prompt": "Cu=64 g/mol ve F=96500 C/mol e⁻ iken 3,2 g Cu biriktirmek için kaç C yük gerekir?",
+   "answer": "n(Cu)=0,05 mol, n(e⁻)=2·0,05=0,1 mol ve Q=0,1·96500=9650 C bulunur."
+  },
+  {
+   "after": 13,
+   "prompt": "Hedef iyon stoğu tükenince m–Q grafiği neden yataylaşabilir?",
+   "answer": "Hedef metal birikimi durur; akım ise başka süreçler üzerinden yük taşımaya devam edebilir."
+  }
+ ],
+ "korozyon-katodik-koruma": [
+  {
+   "after": 1,
+   "prompt": "Nemli bir demir yüzeyinde dışarıdan pil bağlanmadan redoks devresi nasıl tamamlanır?",
+   "answer": "Anodik bölgede Fe, Fe²⁺ olur; elektronlar metal içinden katodik bölgeye gider, su filmi ve iyonlar sıvı yolunu sağlar."
+  },
+  {
+   "after": 2,
+   "prompt": "Havayla temas eden nötr sulu ortamda oksijenin katodik yarı tepkimesi nedir?",
+   "answer": "O₂+2H₂O+4e⁻→4OH⁻; nötr O₂ molekülü elektron alarak indirgenir."
+  },
+  {
+   "after": 4,
+   "prompt": "Demirin Fe²⁺ olarak çözünmesi neden pasın kendisi sayılmaz?",
+   "answer": "Bu ilk anodik adımdır; pas, oksijenle sonraki değişimlerle oluşan demir(III) içeren hidratlı oksit karışımlarıdır."
+  },
+  {
+   "after": 6,
+   "prompt": "Demir bakırla uygun bir elektrolitte temas ederse hangi metal anodik çözünmeye uğrayabilir?",
+   "answer": "Fe daha kolay yükseltgenen taraf olduğundan anodik çözünür; Cu yüzeyi katodik indirgenmeye katkı yapar."
+  },
+  {
+   "after": 8,
+   "prompt": "Kaplamada çizik açılınca çinko kaplama ile bakır kaplama demiri nasıl farklı etkiler?",
+   "answer": "Çinko daha aktif olduğundan kurban olup Fe’yi katodik tutabilir; soy bakır kaplamada ise açık Fe anodik taraf olabilir."
+  },
+  {
+   "after": 10,
+   "prompt": "Kurban anot koruması ile harici akım katodik koruması arasındaki fark nedir?",
+   "answer": "Kurban anotta aktif metal kendi yükseltgenmesiyle elektron sağlar; harici akımda dış doğru akım kaynağı yapıyı yardımcı anot üzerinden katodik yönde besler."
+  },
+  {
+   "after": 11,
+   "prompt": "İdeal yüzde 100 kullanımda 0,5 mol Zn kurban anot en çok kaç mol elektron sağlayabilir?",
+   "answer": "Zn iki değerlikli olduğundan 2·0,5=1 mol elektron sağlayabilir."
+  },
+  {
+   "after": 12,
+   "prompt": "Kaplama ile katodik koruma birlikte kullanılınca her biri ne katkı sağlar?",
+   "answer": "Kaplama etkin açık alanı azaltır; katodik koruma ise kusur bölgelerindeki anodik çözünmeyi azaltmaya katkı verir."
+  }
+ ],
+ "karbon-kimyasina-giris": [
+  {
+   "after": 2,
+   "prompt": "Etendeki bir karbonun üç komşusu olduğu hâlde bağ değerliği neden dörttür?",
+   "answer": "İki C–H tek bağı ve bir C=C çift bağı vardır; bağ mertebeleri toplamı 1+1+2=4 eder."
+  },
+  {
+   "after": 4,
+   "prompt": "Wöhler’in 1828’de amonyum siyanattan üre elde etmesi neden dönüm noktası sayılır?",
+   "answer": "Organik bir maddenin canlı dışında hazırlanabileceğini göstermiştir."
+  },
+  {
+   "after": 6,
+   "prompt": "NaCN ile CH₃CN aynı C ve N’yi taşıdığı hâlde neden farklı sınıflanır?",
+   "answer": "NaCN iyonik bir siyanür tuzudur ve anorganiktir; CH₃CN’de nitril grubu karbon iskeletine kovalent bağlıdır ve organiktir."
+  },
+  {
+   "after": 7,
+   "prompt": "Kimyadaki “organik” terimi tarımdaki organik etiketinden nasıl ayrılır?",
+   "answer": "Kimyada kimyasal sınıfı anlatır, köken ya da yarar değil; laboratuvar polimeri organik, canlıdaki su ise anorganik olabilir."
+  },
+  {
+   "after": 10,
+   "prompt": "Elmasın elektrik iletmediği hâlde ısıyı iyi iletmesi hangi yanlış çıkarımı çürütür?",
+   "answer": "“Elektrik iletmiyorsa ısı da iletmez” çıkarımını; ısı ve elektrik iletimi aynı mekanizma değildir."
+  },
+  {
+   "after": 11,
+   "prompt": "Grafitin yumuşak davranmasının yapısal nedeni nedir?",
+   "answer": "Tabakalar arasında güçlü kovalent ağ yoktur, yalnız zayıf etkileşimler vardır; bu yüzden tabakalar kayabilir."
+  },
+  {
+   "after": 13,
+   "prompt": "C₆₀’taki karbon–karbon bağlantı sayısı neden 60×3 değil 90’dır?",
+   "answer": "Her bağ iki ucundaki karbonda birer kez sayılır; bu yüzden 60×3=180 ikiye bölünür ve 90 bulunur."
+  },
+  {
+   "after": 14,
+   "prompt": "Bütün karbon nanotüplerinin aynı iletken olduğu neden söylenemez?",
+   "answer": "Silindir çapı ve kıvrılma yönü elektronik özellikleri değiştirir; yapıya göre metalik ya da yarı iletken davranış görülür."
+  },
+  {
+   "after": 16,
+   "prompt": "1 mol C₆₀ kaç mol karbon atomu içerir ve mol kütlesi kaçtır (C=12 g/mol)?",
+   "answer": "60 mol C atomu içerir; mol kütlesi 60·12=720 g/mol olur."
+  },
+  {
+   "after": 18,
+   "prompt": "Elmasın kesici uçlarda kullanılmasını hangi özelliği açıklar?",
+   "answer": "Üç boyutlu güçlü kovalent ağından gelen sertliği; ısı ya da elektrik iletimi bu kullanımın nedeni değildir."
+  }
+ ],
+ "basit-ve-molekul-formul": [
+  {
+   "after": 1,
+   "prompt": "C₄H₈O₂ molekül formülünün basit formülü nedir?",
+   "answer": "4, 8 ve 2’nin ortak böleni 2 olduğundan basit formül C₂H₄O olur."
+  },
+  {
+   "after": 3,
+   "prompt": "1,2 g C, 0,3 g H ve 0,8 g O içeren örneğin basit formülü nedir (C=12, H=1, O=16)?",
+   "answer": "Mol miktarları 0,1; 0,3; 0,05 olur, en küçüğe bölünce 2:6:1 çıkar ve basit formül C₂H₆O bulunur."
+  },
+  {
+   "after": 4,
+   "prompt": "En küçük mole bölünmüş C:H:O oranı 1:4/3:1 çıkarsa basit formül ne olur?",
+   "answer": "Bütün terimler 3 ile çarpılır; 3:4:3 oranından C₃H₄O₃ elde edilir."
+  },
+  {
+   "after": 6,
+   "prompt": "Saf C, H, O örneğinde O kütlesini farktan bulurken negatif sonuç çıkması neyi gösterir?",
+   "answer": "Verilerin veya varsayımların birbiriyle uyuşmadığını gösterir; mutlak değer alıp formül üretmek doğru değildir."
+  },
+  {
+   "after": 8,
+   "prompt": "Basit formülü CH₂O, mol kütlesi 180 g/mol olan maddenin molekül formülü nedir?",
+   "answer": "n=180/30=6 olduğundan bütün alt indisler 6 ile çarpılır ve C₆H₁₂O₆ bulunur."
+  },
+  {
+   "after": 10,
+   "prompt": "Tam yanmada 13,2 g CO₂ oluşursa yakılan örnekte kaç g karbon vardır?",
+   "answer": "m_C=13,2·12/44=3,6 g karbon bulunur."
+  },
+  {
+   "after": 11,
+   "prompt": "Tam yanmada 3,6 g H₂O oluşursa yakılan örnekte kaç g hidrojen vardır?",
+   "answer": "m_H=3,6·2/18=0,4 g hidrojen bulunur."
+  },
+  {
+   "after": 13,
+   "prompt": "Yanma ürünlerindeki bütün O atomlarını örneğe yazmak neden hatalıdır?",
+   "answer": "Ürünlerdeki O’nun bir kısmı yakmada kullanılan dış O₂’den gelir; örnekteki O, C ve H kütleleri çıkarılarak farktan bulunur."
+  },
+  {
+   "after": 15,
+   "prompt": "C₂H₈O₂ formülü olağan nötr C, H, O molekülü için neden olası değildir?",
+   "answer": "Bu moleküllerde H sayısı en çok 2C+2=6 olabilir; 8 H bu üst sınırı aşar."
+  }
+ ],
+ "hibritlesme": [
+  {
+   "after": 1,
+   "prompt": "Bir s ve iki p orbitali hibritleşince kaç hibrit orbital oluşur?",
+   "answer": "Üç sp² hibrit orbitali oluşur; giren ve çıkan orbital sayısı eşittir."
+  },
+  {
+   "after": 3,
+   "prompt": "HF molekülündeki σ bağı hangi orbitallerin örtüşmesiyle açıklanır?",
+   "answer": "H’nin 1s orbitali ile F’nin uygun p orbitalinin eksen boyunca s–p örtüşmesiyle açıklanır."
+  },
+  {
+   "after": 4,
+   "prompt": "π bağında elektron yoğunluğu nerede bulunur?",
+   "answer": "Bağ ekseninin iki yanında bulunur; eksenden geçen bir düğüm düzlemi vardır."
+  },
+  {
+   "after": 6,
+   "prompt": "NH₃ dört elektron bölgesi taşıdığı hâlde şekli neden metandan farklıdır?",
+   "answer": "Bölgelerden biri ortaklanmamış çifttir; bu çift molekül şeklini ve bağ açılarını metandan farklı kılar."
+  },
+  {
+   "after": 8,
+   "prompt": "HCN’deki N atomunun hibritleşmesi nedir?",
+   "answer": "sp’dir; N çevresinde C’ye bir σ bağı ve bir ortaklanmamış çift olmak üzere iki elektron bölgesi vardır."
+  },
+  {
+   "after": 9,
+   "prompt": "sp, sp² ve sp³ hibritlerinde s karakteri oranları kaçtır?",
+   "answer": "sp’de 1/2, sp²’de 1/3, sp³’te 1/4’tür; sıralama sp > sp² > sp³ olur."
+  },
+  {
+   "after": 10,
+   "prompt": "HCN molekülünde toplam kaç σ ve kaç π bağı vardır?",
+   "answer": "H–C ve C–N bağlantıları 2 σ verir; C≡N üçlü bağı ayrıca 2 π içerir."
+  },
+  {
+   "after": 12,
+   "prompt": "H₂C=O’daki O atomu neden sp² olarak anlatılır?",
+   "answer": "O, C’ye bir σ komşuluğu ve iki ortaklanmamış çift ile üç elektron bölgesi taşır."
+  },
+  {
+   "after": 14,
+   "prompt": "Aynı iki atom arasında bağ mertebesi arttıkça bağ uzunluğu ve koparma enerjisi nasıl değişir?",
+   "answer": "Bağ genellikle kısalır ve toplam koparma enerjisi artar."
+  }
+ ],
+ "molekul-geometrisi": [
+  {
+   "after": 1,
+   "prompt": "BF₃’ün merkez atomu B neden sekiz elektrona tamamlanmaz?",
+   "answer": "B elektronca eksik bir merkezdir ve altı elektronla çevrilidir; olmayan çiftler eklenerek oktet uydurulmaz."
+  },
+  {
+   "after": 3,
+   "prompt": "CO₂’de çift bağlar kurulurken toplam elektron sayısı neden değişmez?",
+   "answer": "Uçtaki O’ların birer ortaklanmamış çifti bağ ortaklığına çevrilir; elektron eklenmez, yalnız ortaklaşma değişir."
+  },
+  {
+   "after": 4,
+   "prompt": "CH₄ Lewis yapısında kaç değerlik elektronu vardır ve bunlar nerededir?",
+   "answer": "4+4·1=8 elektron vardır; hepsi dört C–H bağında kullanılır ve C üzerinde ortaklanmamış çift kalmaz."
+  },
+  {
+   "after": 6,
+   "prompt": "AX₃E gösterimindeki E neyi ifade eder?",
+   "answer": "Merkez atomdaki bir ortaklanmamış elektron çiftini ifade eder; X’ler merkeze bağlı atomlardır."
+  },
+  {
+   "after": 7,
+   "prompt": "İki atomlu HCl için neden merkez bağ açısından söz edilmez?",
+   "answer": "Bağ açısı en az iki merkez–komşu yönüyle tanımlanır; iki atomlu molekülde karşılaştırılacak ikinci bağ yönü yoktur."
+  },
+  {
+   "after": 9,
+   "prompt": "Düzgün dört yüzlü yerleşimde bağ yönleri arasındaki ideal açı kaçtır?",
+   "answer": "arccos(−1/3)≈109,47°’dir."
+  },
+  {
+   "after": 11,
+   "prompt": "NH₃’teki H–N–H açısı neden metan açısından küçüktür?",
+   "answer": "Yaklaşık 107°’dir; basit VSEPR açıklamasına göre ortaklanmamış çift bağ bölgelerini daha güçlü iter."
+  },
+  {
+   "after": 13,
+   "prompt": "Polar bağdaki kısmi yükler neden iyon yükü gibi yorumlanmaz?",
+   "answer": "Ortak elektron yoğunluğu yalnız eşit dağılmaz; elektron tümüyle aktarılmadığı için yükler kısmidir."
+  },
+  {
+   "after": 16,
+   "prompt": "CH₃Cl temel olarak dört yüzlü olduğu hâlde neden kalıcı dipol taşır?",
+   "answer": "Bir H yerine Cl geldiği için dört bağ katkısı eşdeğer değildir ve toplamda iptal olmaz."
+  },
+  {
+   "after": 17,
+   "prompt": "BF₃ ile NH₃ üç çevre atomu taşıdığı hâlde neden farklı şekillidir?",
+   "answer": "BF₃’te merkezde çift yoktur ve AX₃ üçgen düzlemdir; NH₃’te bir ortaklanmamış çift vardır ve AX₃E üçgen piramittir."
+  }
+ ],
+ "alkanlar": [
+  {
+   "after": 1,
+   "prompt": "CₙH₂ₙ₊₂ formülüne göre 7 karbonlu açık zincirli alkanın formülü nedir?",
+   "answer": "H sayısı 2·7+2=16 olduğundan C₇H₁₆ olur."
+  },
+  {
+   "after": 5,
+   "prompt": "Kuaterner karbon neden H taşımaz?",
+   "answer": "Dört farklı C’ye bağlıdır; dört değerliği karbonlarla dolduğu için H’ye yer kalmaz."
+  },
+  {
+   "after": 6,
+   "prompt": "Kâğıtta yatay çizilen zincir neden her zaman ana zincir değildir?",
+   "answer": "Bir dalın içinden geçen yol daha uzun olabilir; ana zincir en uzun kesintisiz karbon yoludur."
+  },
+  {
+   "after": 8,
+   "prompt": "Metil grubunun yazımındaki baştaki çizgi neyi gösterir?",
+   "answer": "Ana yapıya bağlanma yerini gösterir; eksi yük ya da serbest radikal noktası değildir."
+  },
+  {
+   "after": 10,
+   "prompt": "C₅H₁₂ formülüne karşılık gelen yapı izomerleri hangileridir?",
+   "answer": "n-pentan, 2-metilbütan ve 2,2-dimetilpropan olmak üzere üç bağlantı izomeri vardır."
+  },
+  {
+   "after": 12,
+   "prompt": "Etanın örtüşük ve şaşırtmalı görünümleri neden ayrı izomer sayılmaz?",
+   "answer": "Tek σ bağı etrafındaki dönmeyle oluşan konformasyonlardır; atom bağlantıları değişmez."
+  },
+  {
+   "after": 14,
+   "prompt": "Aynı formüllü alkan izomerlerinde daha kompakt dallanma kaynama sıcaklığını nasıl etkiler?",
+   "answer": "Genellikle düşürür; bu eğilim aynı C sayısındaki izomerler içindir, erime sıcaklığı için tek yönlü kural yoktur."
+  },
+  {
+   "after": 16,
+   "prompt": "1 mol propanın tam yanması için kaç mol O₂ gerekir?",
+   "answer": "3 CO₂ ve 4 H₂O oluşur; (3n+1)/2 ile n=3 için 5 mol O₂ gerekir."
+  },
+  {
+   "after": 17,
+   "prompt": "C=12, H=1 iken 0,5 mol bütanın kütlesi kaç g olur?",
+   "answer": "Mol kütlesi 14·4+2=58 g/mol olduğundan 0,5·58=29 g bulunur."
+  },
+  {
+   "after": 21,
+   "prompt": "Ayrımsal damıtma ile kraking arasındaki fark nedir?",
+   "answer": "Damıtma karışımı kaynama aralıklarına göre fraksiyonlara ayırır; kraking büyük molekülleri kimyasal olarak küçük parçalara böler."
+  },
+  {
+   "after": 22,
+   "prompt": "Siklopropanda halka içi C–C–C açısı neden 109,47° değildir?",
+   "answer": "Üçgen iskelet yaklaşık 60° açı gerektirir; yerel sp³ etiketine rağmen halka zorlanır."
+  },
+  {
+   "after": 25,
+   "prompt": "Bromo ve kloro dalları iki yönde de 2 ve 5 konumundaysa hangisi küçük numarayı alır?",
+   "answer": "Alfabetik önce gelen bromo küçük numarayı alır; ad 2-bromo-5-klorohekzan olur."
+  }
+ ]
+}

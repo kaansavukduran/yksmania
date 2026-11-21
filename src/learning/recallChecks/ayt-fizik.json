@@ -968,5 +968,537 @@
    "prompt": "Yalnız elektrik kuvveti iş yapıyorsa kinetik enerji değişimi ΔU ile nasıl ilişkilidir?",
    "answer": "ΔK=−ΔU olur, yani K+U toplamı sabit kalır."
   }
+ ],
+ "elektriksel-potansiyel": [
+  {
+   "after": 1,
+   "prompt": "Aynı noktaya konan test yükü iki katına çıkarsa o noktanın V değeri ve yükün U değeri nasıl değişir?",
+   "answer": "V kaynağa ve noktaya bağlı olduğu için aynı kalır; U=qV test yüküyle orantılı olduğundan iki katına çıkar."
+  },
+  {
+   "after": 4,
+   "prompt": "VA=100 V, VB=20 V iken +2 μC yük A’dan B’ye yavaş taşınırsa elektrik kuvvetinin işi kaç μJ olur?",
+   "answer": "ΔV=−80 V olduğundan We=−qΔV=−(2 μC)(−80 V)=+160 μJ olur."
+  },
+  {
+   "after": 6,
+   "prompt": "Tek kaynak çevresindeki eş potansiyel çember boyunca elektrik kuvveti neden net iş yapmaz?",
+   "answer": "Alan radyaldir ve çemberin teğetine diktir; çember üzerindeki noktalar aynı V’de olduğundan ΔV=0 ve net iş 0 olur."
+  },
+  {
+   "after": 8,
+   "prompt": "Elektrostatik dengedeki iletkenin yüzeyinde hangi alan bileşeni sıfır olmak zorundadır?",
+   "answer": "Teğetsel bileşen sıfırdır; içerideki alan da 0 olduğundan iletken yüzey boyunca aynı potansiyeldedir."
+  }
+ ],
+ "duzgun-alan-paralel-levhalar": [
+  {
+   "after": 1,
+   "prompt": "Aralarında 0,04 m bulunan levhalara 120 V uygulanırsa ideal orta bölgedeki alan kaç V/m olur?",
+   "answer": "|E|=V/d=120 V/0,04 m=3000 V/m olur."
+  },
+  {
+   "after": 3,
+   "prompt": "Levhalar arasındaki taneciğin ivme yönü neden o anki hareket yönüyle aynı olmak zorunda değildir?",
+   "answer": "İvme qE/m kuvvetinin yönünü verir; tanecik başka yönde bir başlangıç hızıyla girmiş olabilir."
+  },
+  {
+   "after": 5,
+   "prompt": "Elektrik kuvveti ağırlığa eşit olan tanecik alana bir başlangıç hızıyla girerse nasıl hareket eder?",
+   "answer": "Net kuvvet sıfır olduğundan ivmesi yoktur; aynı bölgede sabit hızla yoluna devam eder."
+  },
+  {
+   "after": 7,
+   "prompt": "Alana dik ilk hızla giren taneciğin yatay ve düşey hareketinde hangi nicelik ortaktır?",
+   "answer": "Zaman ortaktır; x ve y için ayrı uçuş süresi seçilmez, ikisi aynı t ile yazılır."
+  },
+  {
+   "after": 9,
+   "prompt": "Üretece bağlı levhaların aralığı artırılırsa alan nasıl değişir ve neden?",
+   "answer": "Üreteç V’yi sabit tuttuğu için E=V/d küçülür; levhalardaki Q da değişebilir."
+  }
+ ],
+ "sigaclar-kondansatorler": [
+  {
+   "after": 2,
+   "prompt": "4 μF sığaç 12 V’a bağlanınca her levhada kaç μC yük ayrılır?",
+   "answer": "Q=CV=4 μF·12 V=48 μC olur; mikrofarad çarpı volt mikrocoulomb verir."
+  },
+  {
+   "after": 4,
+   "prompt": "C=εA/d bağında iki levha bulunduğu hâlde A neden 2A alınmaz?",
+   "answer": "A, iki levhanın karşılıklı örtüşen tek alanını temsil eder; levha sayısı için alan ikiyle çarpılmaz."
+  },
+  {
+   "after": 6,
+   "prompt": "Üreteçten ayrılmış sığaca tam dolduran dielektrik konup C üç katına çıkarsa gerilim nasıl değişir?",
+   "answer": "Q korunduğu için V=Q/C üçte birine iner."
+  },
+  {
+   "after": 8,
+   "prompt": "Sığaçta depolanan enerjiyi U=QV diye yazmak neden yanlıştır?",
+   "answer": "Yükleme sırasında gerilim 0’dan V’ye artar, yüklerin hepsi son V’ye karşı taşınmaz; U=QV enerjiyi iki kat bulur."
+  },
+  {
+   "after": 10,
+   "prompt": "Bir enerji deposunda enerji yoğunluğu ile güç yoğunluğu arasındaki fark nedir?",
+   "answer": "Enerji yoğunluğu ne kadar enerji saklandığını, güç yoğunluğu o enerjinin ne kadar hızlı verilebildiğini anlatır."
+  }
+ ],
+ "manyetik-alan-ayt": [
+  {
+   "after": 1,
+   "prompt": "Akım taşıyan telin yanındaki pusula ibresinin kuzey ucu hangi yönü göstermeye yönelir?",
+   "answer": "O noktadaki yerel bileşke manyetik alanın yönünü gösterir; Dünya alanı gibi başka katkılar da buna girer."
+  },
+  {
+   "after": 3,
+   "prompt": "Uzun düz telden 2 A akım geçiyorsa 0,04 m uzaklıkta B kaç μT olur?",
+   "answer": "B=2K|I|/r=2×10⁻⁷·2/0,04=10⁻⁵ T, yani 10 μT olur."
+  },
+  {
+   "after": 5,
+   "prompt": "Zıt yönlü akım taşıyan iki telin orta noktasında alan katkıları nasıl birleşir?",
+   "answer": "Katkılar aynı yönde toplanabilir; aynı yönlü akımlarda ise orta noktadaki alanlar zıt olur."
+  },
+  {
+   "after": 7,
+   "prompt": "120 derecelik bir yay, merkezde tam halka alanının hangi kesrini oluşturur?",
+   "answer": "Katkı α/360 oranındadır; 120/360 ile tam halka alanının üçte biri bulunur."
+  },
+  {
+   "after": 9,
+   "prompt": "Bobinin dışında ve içinde manyetik alan çizgileri hangi kutuptan hangisine yönelir?",
+   "answer": "Dışarıda N’den S’ye, içeride S’den N’ye yönelir; çizgiler kapalı yapı oluşturur."
+  }
+ ],
+ "itme-momentum": [
+  {
+   "after": 1,
+   "prompt": "Momentum büyüklükleri eşit iki cisimden hangisi daha büyük kinetik enerji taşır?",
+   "answer": "K=p²/(2m) olduğundan kütlesi küçük olan cisim daha büyük kinetik enerji taşır."
+  },
+  {
+   "after": 3,
+   "prompt": "+5 m/s ile duvara giden 2 kg top −3 m/s ile geri dönerse momentum değişimi kaç N·s olur?",
+   "answer": "Δp=m(v_son−v_ilk)=2(−3−5)=−16 N·s olur; süratleri çıkarmak yön değişimini kaybettirir."
+  },
+  {
+   "after": 5,
+   "prompt": "3 m/s ile giden 2 kg cisim durgun 1 kg cisme çarpıp kenetlenirse ortak hız kaç m/s olur?",
+   "answer": "v=(m1u1+m2u2)/(m1+m2)=(2·3+1·0)/3=2 m/s olur."
+  },
+  {
+   "after": 7,
+   "prompt": "Bir boyutlu esnek çarpışmada kütleleri eşit iki cismin hızlarına ne olur?",
+   "answer": "Hızlarını değiş tokuş ederler; kütleler farklıysa bu doğrudan takas yapılmaz."
+  }
+ ],
+ "kesisen-kuvvetler-dengesi": [
+  {
+   "after": 1,
+   "prompt": "Etki–tepki kuvvet çifti neden aynı düğümün şemasında birbirini götürmez?",
+   "answer": "Çiftin kuvvetleri farklı cisimlere etki eder; düğümün şemasına yalnız düğüme etki eden kuvvet girer."
+  },
+  {
+   "after": 3,
+   "prompt": "Bir ip için hesaplanan gerilme negatif çıkarsa bu sonuç neyi gösterir?",
+   "answer": "İp yalnız çekebildiği için seçilen gergin ip dengesinin bu geometriyle gerçekleşmediğini gösterir."
+  },
+  {
+   "after": 5,
+   "prompt": "Simetrik askıda ipler yatayla daha küçük açı yaptıkça gerilme nasıl değişir?",
+   "answer": "İpler yataylaşır ve 2T sinθ=W gereği küçülen sinθ için gerilme büyür."
+  },
+  {
+   "after": 7,
+   "prompt": "İki ipin gerilme büyüklüklerini toplayıp yüke eşitlemek neden yanlıştır?",
+   "answer": "Yükü yalnız düşey bileşenler taşır, yatay bileşenler birbirini götürür; vektör toplamı skaler toplam gibi yapılmaz."
+  },
+  {
+   "after": 8,
+   "prompt": "Duran cisme etki eden statik sürtünmenin büyüklüğü neye göre belirlenir?",
+   "answer": "Dengenin gerektirdiği değeri alır; bu değer en çok μsN olabilir, her dengede tam μsN değildir."
+  }
+ ],
+ "tork-denge": [
+  {
+   "after": 1,
+   "prompt": "Aynı kuvvetin torku neden hesap için seçilen noktaya bağlıdır?",
+   "answer": "r, seçilen noktadan kuvvetin uygulama noktasına giden konum vektörüdür; nokta değişince r ve dolayısıyla tork değişebilir."
+  },
+  {
+   "after": 3,
+   "prompt": "r=(1; 2) m noktasına F=(3; 1) N uygulanırsa τz kaç N·m olur?",
+   "answer": "τz=rxFy−ryFx=1·1−2·3=−5 N·m olur; eksi işaret saat yönünde dönme etkisidir."
+  },
+  {
+   "after": 5,
+   "prompt": "Tork ile iş aynı N·m boyutunda olduğu hâlde neden ayrı niceliklerdir?",
+   "answer": "İş kuvvetle yer değiştirmenin skaler çarpımı, tork konumla kuvvetin vektörel çarpımıdır; torku joule diye adlandırmak anlamı gizler."
+  },
+  {
+   "after": 7,
+   "prompt": "Kuvvet çiftinde bileşke kuvvet sıfırken toplam moment neden sıfır olmayabilir?",
+   "answer": "Eşit ve zıt kuvvetler farklı paralel doğrular üzerindedir; aralarındaki dik uzaklık d olduğundan moment Fd olur."
+  },
+  {
+   "after": 8,
+   "prompt": "Merdiven dengesinde gereken statik sürtünme bulunduktan sonra hangi koşul denetlenir?",
+   "answer": "fs≤μsN koşulu denetlenir; eşitlik kayma eşiğidir, altında duran denge mümkündür."
+  }
+ ],
+ "kutle-agirlik-merkezi": [
+  {
+   "after": 1,
+   "prompt": "Bir doğru üzerinde 8 m arayla duran 2 kg ve 6 kg kütlelerin merkezi 2 kg’lık kütleden kaç m uzaktadır?",
+   "answer": "m1d1=m2d2 ile 2d1=6d2 ve d1+d2=8 m olur; buradan d1=6 m bulunur."
+  },
+  {
+   "after": 3,
+   "prompt": "Kütle merkezi ile ağırlık merkezinin çakışması için yer çekimi alanı nasıl olmalıdır?",
+   "answer": "Cismin bulunduğu bölgede aynı yönlü ve aynı g büyüklüğünde, yani düzgün olmalıdır."
+  },
+  {
+   "after": 5,
+   "prompt": "Bir cisimden parça kesilince kalan kısmın kütle merkezi hangi yöne kayar?",
+   "answer": "İlk merkezden, kesilen parçanın merkezinden uzaklaşan yöne kayar; parça tam ilk merkezdeyse değişmeyebilir."
+  },
+  {
+   "after": 7,
+   "prompt": "Asılı cisimde ağırlık merkezi askı noktasının üstünde kalırsa denge türü nedir?",
+   "answer": "Küçük sapmada uzaklaştıran moment oluştuğu için kararsız denge olur."
+  },
+  {
+   "after": 8,
+   "prompt": "Taban yarı genişliği 0,3 m, kütle merkezi 0,6 m yüksekte olan cismin kritik eğiminde tanφ kaçtır?",
+   "answer": "Kaymadan yatırılan basit modelde tanφ=b/h=0,3/0,6=0,5 olur."
+  }
+ ],
+ "basit-makineler-ayt": [
+  {
+   "after": 1,
+   "prompt": "Kuvvet kazancı 1’den büyük olan ideal bir makinede bunun karşılığı nedir?",
+   "answer": "Daha küçük kuvvet genellikle daha uzun yol ister; makine enerji yaratmaz, verilen iş kazanılan enerjiye eşittir."
+  },
+  {
+   "after": 3,
+   "prompt": "Ağırlıksız kaldıraçta yük kolu 0,2 m, kuvvet kolu 0,8 m ise 400 N yükü dengelemek için kaç N gerekir?",
+   "answer": "F·dF=G·dG ile F·0,8=400·0,2 olur; F=100 N bulunur."
+  },
+  {
+   "after": 5,
+   "prompt": "20 N ağırlıklı hareketli bloğu 4 eş gerilmeli düşey kol taşıyorsa 180 N yük için ideal kuvvet kaç N olur?",
+   "answer": "F=(G+Gm)/n=(180+20)/4=50 N olur."
+  },
+  {
+   "after": 7,
+   "prompt": "Sürtünmesiz 10 m rampa ile 500 N yük 2 m yükseğe paralel kuvvetle sabit hızla çıkarılırken F kaç N olur?",
+   "answer": "F=G h/L=500·2/10=100 N olur; yapılan iş yine G h=1000 J’dür."
+  },
+  {
+   "after": 10,
+   "prompt": "Dıştan temas eden ve kaymayan iki dişlinin dönüş yönleri ile tur sayıları nasıl ilişkilidir?",
+   "answer": "Dönüş yönleri zıttır; tur sayıları yarıçapla ya da diş sayısıyla ters orantılıdır."
+  }
+ ],
+ "elektriksel-kuvvet-ayt": [
+  {
+   "after": 1,
+   "prompt": "2 μC ve 3 μC yükler vakumda 30 cm arayla duruyorsa aralarındaki kuvvet kaç N olur?",
+   "answer": "F=k|q1q2|/r²=(9×10⁹)(6×10⁻¹²)/0,09=0,6 N olur."
+  },
+  {
+   "after": 3,
+   "prompt": "Aynı yükler ve geometri korunurken εr=4 olan homojen ortamda kuvvet vakumdakine göre nasıl değişir?",
+   "answer": "Kuvvet 1/εr oranında azalır, yani vakumdakinin dörtte birine iner."
+  },
+  {
+   "after": 5,
+   "prompt": "Eşit büyüklükte iki kuvvet hedefe birbirine dik etki ederse net kuvvetin büyüklüğü ne olur?",
+   "answer": "Bileşenler Pisagorla birleşir ve net kuvvet √2F olur; zıt yönlü olsalardı 0 olurdu."
+  },
+  {
+   "after": 7,
+   "prompt": "Aynı işaretli fakat farklı büyüklükteki iki kaynak arasında sıfır alan noktası hangi yüke daha yakındır?",
+   "answer": "Küçük yüke daha yakındır; |q1|/r1²=|q2|/r2² denkliği bunu verir."
+  },
+  {
+   "after": 9,
+   "prompt": "Simetrik yerleşmiş iki eşit kaynağın ekseninde duran hedefte net kuvvet neden sıfır olmayabilir?",
+   "answer": "Simetride bazı bileşenler birbirini götürürken diğerleri toplanır; yalnız yüklerin eşit olması net sıfır için yetmez."
+  }
+ ],
+ "serbest-dusme-limit-hiz": [
+  {
+   "after": 1,
+   "prompt": "g = 10 m/s² iken 20 m yükseklikten ilk hızsız bırakılan cisim kaç saniyede yere ulaşır?",
+   "answer": "T=√(2h/g)=√(40/10)=2 s olur."
+  },
+  {
+   "after": 3,
+   "prompt": "İlk hızsız ideal düşüşte g = 10 m/s² iken yalnız 4. saniye içinde kaç m düşülür?",
+   "answer": "İlk 4 s’de 80 m, ilk 3 s’de 45 m düşüldüğünden 4. saniyede 35 m düşülür."
+  },
+  {
+   "after": 5,
+   "prompt": "Karesel dirençli düşüşte direnç ağırlığın yarısına ulaştığı anda ivme kaçtır?",
+   "answer": "Net kuvvet mg/2 olduğundan ivme g/2’dir; ivme küçülse de sıfır olmamıştır."
+  },
+  {
+   "after": 7,
+   "prompt": "Aynı c ve g altında kütle dört katına çıkarsa limit hız nasıl değişir?",
+   "answer": "vt=√(mg/c) olduğundan limit hız √4=2 katına çıkar."
+  },
+  {
+   "after": 8,
+   "prompt": "Limit sürate yaklaşmış cismin kinetiği sabitken kaybettiği potansiyel enerji nereye gider?",
+   "answer": "Cisim alçalmayı sürdürür; kaybedilen potansiyel cismin ve havanın iç enerjisine ve akış hareketlerine aktarılır."
+  }
+ ],
+ "dusey-atis": [
+  {
+   "after": 1,
+   "prompt": "Yukarı atılan cisim ideal uçuşu sırasında hangi kuvvetin etkisindedir?",
+   "answer": "Yalnız ağırlığın; topa ilk hızı veren etkileşim bitince yukarı yönlü bir atış kuvveti kalmaz."
+  },
+  {
+   "after": 3,
+   "prompt": "Yerden 20 m/s ile yukarı atılan cisim g = 10 m/s² iken en çok kaç m yükselir?",
+   "answer": "Yükselme v0²/(2g)=400/20=20 m olur."
+  },
+  {
+   "after": 5,
+   "prompt": "Aynı yükseklikten aşağı ilk hızla atılan top neden ilk hızsız bırakılandan önce yere varır?",
+   "answer": "Hızı baştan aşağıdır ve ivme de aşağı olduğundan sürati daha büyük bir değerden artmaya başlar."
+  },
+  {
+   "after": 7,
+   "prompt": "Yerden yukarı atılıp 3 m yükselen ve atıldığı yere dönen topun yolu ve yer değiştirmesi nedir?",
+   "answer": "Yol iki yükselme miktarı kadar, yani 6 m’dir; aynı yere döndüğü için yer değiştirme sıfırdır."
+  },
+  {
+   "after": 8,
+   "prompt": "Yerden 30 m/s ile atılan topta y = 50 m için gerçek kök çıkmaması neyi gösterir?",
+   "answer": "Tepe yüksekliği 45 m olduğundan top 50 m seviyesine hiç erişemez."
+  }
+ ],
+ "yatay-atis": [
+  {
+   "after": 1,
+   "prompt": "Aynı yükseklikten aynı anda biri yatay atılan, biri ilk hızsız bırakılan iki cisimden hangisi önce yere iner?",
+   "answer": "İkisi aynı anda iner; düşey ilk hızları sıfır olduğundan düşey konumları her anda aynıdır."
+  },
+  {
+   "after": 3,
+   "prompt": "g = 10 m/s² iken 20 m yükseklikten 15 m/s yatay hızla atılan cismin menzili kaç m olur?",
+   "answer": "T=√(2h/g)=2 s olduğundan R=uT=15·2=30 m olur."
+  },
+  {
+   "after": 5,
+   "prompt": "6 m/s yatay hızla atılan cismin 0,8 s sonundaki sürati g = 10 m/s² iken kaç m/s olur?",
+   "answer": "vy=gt=8 m/s olur; sürat √(6²+8²)=10 m/s bulunur, 6+8 toplanmaz."
+  },
+  {
+   "after": 7,
+   "prompt": "Aynı u ve h ile yatay atılan farklı kütleli iki cisimde hangi büyüklükler farklı çıkar?",
+   "answer": "Uçuş süresi, menzil ve yörünge aynıdır; kinetik ve potansiyel enerji kütleye bağlı olduğundan farklıdır."
+  },
+  {
+   "after": 8,
+   "prompt": "Duvar sorusunda x = ut ile bulunan süre ilk yer temas süresi T’yi aşarsa ne anlaşılır?",
+   "answer": "Top duvara havada ulaşamaz; duvara varmadan önce yere düşmüştür."
+  }
+ ],
+ "egik-atis": [
+  {
+   "after": 1,
+   "prompt": "Atış açısı düşeyden verildiğinde ilk hızın bileşenleri yazılırken neye dikkat edilir?",
+   "answer": "Sin ve cos yer değiştirir; bileşenler şeklin görünüşüne göre değil açının hangi eksenden ölçüldüğüne göre seçilir."
+  },
+  {
+   "after": 3,
+   "prompt": "Yerden u = 20 m/s, sinθ = 0,6, cosθ = 0,8 ile atılan cisim g = 10 m/s² iken aynı seviyede kaç m menzil alır?",
+   "answer": "vx0=16, vy0=12 m/s olur; Tu=2·12/10=2,4 s ve R=16·2,4=38,4 m bulunur."
+  },
+  {
+   "after": 5,
+   "prompt": "Aynı seviyede θ ve 90° − θ açılarıyla atılan cisimlerde hangisi eşit, hangileri genellikle farklıdır?",
+   "answer": "Menziller eşittir; uçuş süreleri ve tepe yükseklikleri genellikle farklıdır."
+  },
+  {
+   "after": 7,
+   "prompt": "Pike atışta aynı seviye formülü 2vy0/g negatif süre verirse ne yapılmalıdır?",
+   "answer": "Bu, uçuşun imkânsız olduğunu göstermez; başlangıç yüksekliğini içeren genel yer kökü çözülmelidir."
+  },
+  {
+   "after": 8,
+   "prompt": "İdeal eğik atışta başlangıç seviyesinden daha alçak bir zemine varan cismin sürati u’ya göre nasıldır?",
+   "answer": "v² = u² + 2g(h − y) gereği alçalma miktarı kadar artar ve u’dan büyük olur."
+  }
+ ],
+ "ayt-enerji-hareket": [
+  {
+   "after": 1,
+   "prompt": "Cisim–Dünya–yay sistemi seçildiğinde yer çekimi ve yay işi neden ayrıca dış iş olarak eklenmez?",
+   "answer": "Bu etkiler potansiyel enerji olarak bilançoya zaten girmiştir; bir de dış iş diye eklemek aynı katkıyı iki kez saymaktır."
+  },
+  {
+   "after": 3,
+   "prompt": "F–x grafiğinin alanı ile F–t grafiğinin alanı hangi nicelikleri verir?",
+   "answer": "F–x alanı N·m = J biriminde işi, F–t alanı N·s biriminde itmeyi verir."
+  },
+  {
+   "after": 6,
+   "prompt": "k = 200 N/m olan ideal yay doğal boyundan 0,1 m sıkıştırılırsa kaç J enerji depolar?",
+   "answer": "Us = kx²/2 = 200·0,01/2 = 1 J olur."
+  },
+  {
+   "after": 8,
+   "prompt": "Doğal boyda durgun bırakılan kütlenin sönümsüz ilk en büyük uzaması, statik denge uzamasının kaç katıdır?",
+   "answer": "İki katıdır; enerjiden x = 2mg/k çıkar, statik dengede ise x = mg/k olur."
+  },
+  {
+   "after": 10,
+   "prompt": "Sabit ideal makarada 3 kg kütle 1 m alçalıp 1 kg kütle 1 m yükselirse g = 10 iken toplam kinetik artış kaç J olur?",
+   "answer": "Net potansiyel azalışı (m2 − m1)gh = 2·10·1 = 20 J’dür; kayıp yoksa toplam kinetik artış da 20 J olur."
+  },
+  {
+   "after": 12,
+   "prompt": "Yüzde 80 verimli bir düzenek 400 J yararlı iş için kaç J giriş enerjisi ister?",
+   "answer": "Giriş = yararlı/η = 400/0,8 = 500 J olur."
+  }
+ ],
+ "ayt-newton-hareket-yasalari": [
+  {
+   "after": 1,
+   "prompt": "Eğik düzlemde ağırlığı bileşenleriyle yazdıysan neden ağırlık okunu denkleme ayrıca koymazsın?",
+   "answer": "Bileşenler aynı ağırlığın izdüşümleridir; ikisini birlikte yazmak aynı kuvveti iki kez saymak olur."
+  },
+  {
+   "after": 3,
+   "prompt": "Aynı eğimde yukarı ve aşağı kayan bloklarda kinetik sürtünmenin yönü nasıl belirlenir?",
+   "answer": "Göreli kaymaya ters yönelir; yukarı kayan blokta aşağı, aşağı kayan blokta yukarıdır."
+  },
+  {
+   "after": 5,
+   "prompt": "sinθ = 3/5, cosθ = 4/5, g = 10 m/s² ve μk = 0,5 iken eğimde yukarı kayan bloğun ivmesi kaçtır?",
+   "answer": "Yukarı eksenine göre a = −g sinθ − μk g cosθ = −6 − 4 = −10 m/s² olur."
+  },
+  {
+   "after": 7,
+   "prompt": "Masada 2 kg, asılı 3 kg, μk = 0,25 ve g = 10 m/s² iken asılı cisim aşağı kayarsa ip gerilmesi kaç N olur?",
+   "answer": "a = (30 − 0,25·20)/5 = 5 m/s² bulunur; T = m2(g − a) = 3·5 = 15 N olur."
+  },
+  {
+   "after": 8,
+   "prompt": "Sabit hızla giden vagondaki ideal bobun ipi neden düşey kalır?",
+   "answer": "Vagonun ivmesi sıfır olduğundan ipin yatay bileşen üretmesi gerekmez; hızlı gitmek tek başına eğilme sebebi değildir."
+  }
+ ],
+ "bir-boyutta-sabit-ivmeli-hareket": [
+  {
+   "after": 1,
+   "prompt": "Eksenin pozitif yönünü ters çevirirsen v0, a ve sürat nasıl etkilenir?",
+   "answer": "v0 ile a birlikte işaret değiştirir; fiziksel sürat ve geçen süre değişmez."
+  },
+  {
+   "after": 3,
+   "prompt": "x0 = −5 m, v0 = 4 m/s ve a = 2 m/s² olan cismin t = 3 s’deki konumu kaç m olur?",
+   "answer": "Δx = 4·3 + 2·9/2 = 21 m olur; x = −5 + 21 = 16 m bulunur."
+  },
+  {
+   "after": 5,
+   "prompt": "Bir cisim 10 m ilerleyip durduktan sonra aynı doğruda 4 m geri gelirse yer değiştirme ve yol kaç m olur?",
+   "answer": "Yer değiştirme 10 − 4 = 6 m, yol ise 10 + 4 = 14 m olur."
+  },
+  {
+   "after": 7,
+   "prompt": "15 m/s hız, 1 s tepki süresi ve ardından −5 m/s² fren ivmesiyle toplam durma yolu kaç m olur?",
+   "answer": "Tepki yolu 15 m, fren yolu 15²/(2·5) = 22,5 m olduğundan toplam 37,5 m olur."
+  }
+ ],
+ "sabit-ivmeli-hareket-grafikleri": [
+  {
+   "after": 1,
+   "prompt": "x(t) = 2 + 6t − t² hareketinde x–t grafiğinin teğeti hangi anda yatay olur?",
+   "answer": "v(t) = 6 − 2t olur; teğet v = 0 iken, yani t = 3 s’de yataydır."
+  },
+  {
+   "after": 3,
+   "prompt": "v(t) = 8 − 2t için 0–6 s aralığında yer değiştirme ve yol kaç m olur?",
+   "answer": "Hız t = 4 s’de sıfırlanır; alanlar +16 m ve −4 m olduğundan yer değiştirme 12 m, yol 20 m olur."
+  },
+  {
+   "after": 5,
+   "prompt": "İlk hızı +4 m/s olan cisme 2 s boyunca −3 m/s² ivme etki ederse son hızı kaç m/s olur?",
+   "answer": "İvme alanı Δv = −3·2 = −6 m/s verir; son hız 4 − 6 = −2 m/s olur."
+  },
+  {
+   "after": 7,
+   "prompt": "x0’a sabit bir miktar eklemek konum, hız ve ivme grafiklerinden hangisini değiştirir?",
+   "answer": "Yalnız x–t grafiği düşey ötelenir; v–t ve a–t grafikleri aynı kalır."
+  }
+ ],
+ "vektorler": [
+  {
+   "after": 1,
+   "prompt": "Bir vektörü uç uca eklemek için kaydırırken hangi işlemler eşitliği bozar?",
+   "answer": "Döndürmek ya da uzatmak eşitliği bozar; yalnız yönü ve uzunluğu koruyan paralel kaydırma serbesttir."
+  },
+  {
+   "after": 3,
+   "prompt": "+x doğu ve +y kuzey iken A=(6,−8) vektörünün büyüklüğü kaç birimdir ve hangi yönleri içerir?",
+   "answer": "|A| = √(36 + 64) = 10 birimdir; doğuya 6, güneye 8 birim bileşen içerir."
+  },
+  {
+   "after": 5,
+   "prompt": "A=(3,−1) vektörü c = −3 ile çarpılırsa sonuç vektör ve büyüklüğü nasıl olur?",
+   "answer": "cA = (−9,3) olur; büyüklük üç katına çıkar, yön tersine döner."
+  },
+  {
+   "after": 6,
+   "prompt": "Büyüklükleri 3 ve 5 birim olan iki vektörün bileşkesi hangi aralıkta olabilir?",
+   "answer": "|a − b| ≤ R ≤ a + b olduğundan bileşke 2 ile 8 birim arasında olur."
+  }
+ ],
+ "bagil-hareket": [
+  {
+   "after": 1,
+   "prompt": "A doğuya 25 m/s, B doğuya 10 m/s gidiyorsa B’nin A’ya göre hızı nedir?",
+   "answer": "vB/A = 10 − 25 = −15 m/s olur; B, A’ya göre batıya 15 m/s ile gider."
+  },
+  {
+   "after": 3,
+   "prompt": "Dünya’ya göre doğuya 15 m/s giden trende yolcu trene göre doğuya 3 m/s yürürse Dünya’ya göre hızı nedir?",
+   "answer": "vyolcu/yer = vyolcu/tren + vtren/yer = 3 + 15 = 18 m/s, yönü doğudur."
+  },
+  {
+   "after": 5,
+   "prompt": "İki hareketlinin hız–zaman grafiklerinin kesişmesi neyi gösterir?",
+   "answer": "O anda hızlarının eşit olduğunu gösterir; karşılaşma ise konum–zaman grafiğinde aynı anda aynı konuma gelmektir."
+  }
+ ],
+ "nehir-problemleri": [
+  {
+   "after": 1,
+   "prompt": "Akıntıya bırakılmış bir tahtanın suya göre ve kıyıya göre hızı nedir?",
+   "answer": "Suya göre durgundur; kıyıya göre akıntının hızıyla ve yönünde gider."
+  },
+  {
+   "after": 3,
+   "prompt": "60 m genişlikte, suya göre 4 m/s ile kıyıya dik yönelen motor 3 m/s akıntıda kaç m sürüklenir?",
+   "answer": "Geçiş süresi t = 60/4 = 15 s olur; sürüklenme x = 3·15 = 45 m bulunur."
+  },
+  {
+   "after": 5,
+   "prompt": "s = 5 m/s, a = 3 m/s ve d = 80 m iken tam karşıya varmak isteyen motor kaç saniyede geçer?",
+   "answer": "Karşıya bileşen √(5² − 3²) = 4 m/s olur; süre 80/4 = 20 s bulunur."
+  },
+  {
+   "after": 6,
+   "prompt": "Suya göre 6 m/s hız ve 2 m/s akıntıda 40 m aşağı gidip geri dönmek toplam kaç saniye sürer?",
+   "answer": "Aşağı 40/8 = 5 s, yukarı 40/4 = 10 s sürer; toplam süre 15 s olur."
+  }
  ]
 }

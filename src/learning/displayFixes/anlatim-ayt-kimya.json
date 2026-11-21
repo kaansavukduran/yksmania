@@ -1,0 +1,282 @@
+[
+ {
+  "from": "Dengede [A] ve [B] sabittir fakat eşit olmak zorunda değildir. Uygulamanın A ⇌ B modelinde kileri=0,6 ve kgeri=0,3 seçilmiştir: vileri=0,6[A], vgeri=0,3[B]. Eşit hız koşulu [B]/[A]=2 verir. Bu iki doğrusal hız yasası modelin açık varsayımıdır; her toplam tepkimede hız üslerinin katsayılara eşit olduğu genellenmez.",
+  "to": "Dengede [A] ve [B] sabittir fakat eşit olmak zorunda değildir. Etkileşimli A ⇌ B modelinde kileri=0,6 ve kgeri=0,3 seçilmiştir: vileri=0,6[A], vgeri=0,3[B]. Eşit hız koşulu [B]/[A]=2 verir. Bu iki doğrusal hız yasası modelin açık varsayımıdır; her toplam tepkimede hız üslerinin katsayılara eşit olduğu genellenmez."
+ },
+ {
+  "from": "Lise düzeyindeki ideal derişim yaklaşımında aA+bB ⇌ cC+dD için Kc=[C]ᶜ[D]ᵈ/([A]ᵃ[B]ᵇ) yazılır; uygun gaz veya sulu çözeltideki türler ve denkleştirilmiş net denklem kullanılır. Örneğin N₂(g)+3H₂(g) ⇌ 2NH₃(g) için Kc=[NH₃]²/([N₂][H₂]³). Üsler türlerin molar kütlesi veya o anki mol miktarı değildir; dengeli net tepkimenin katsayılarıdır.",
+  "to": "Temel ideal derişim yaklaşımında aA+bB ⇌ cC+dD için Kc=[C]ᶜ[D]ᵈ/([A]ᵃ[B]ᵇ) yazılır; uygun gaz veya sulu çözeltideki türler ve denkleştirilmiş net denklem kullanılır. Örneğin N₂(g)+3H₂(g) ⇌ 2NH₃(g) için Kc=[NH₃]²/([N₂][H₂]³). Üsler türlerin molar kütlesi veya o anki mol miktarı değildir; dengeli net tepkimenin katsayılarıdır."
+ },
+ {
+  "from": "Saf katı ve saf sıvı fazları, etkinlikleri sabit kabul edildiği için bu lise bağıntısında açık derişim terimi olarak yazılmaz. CaCO₃(k) ⇌ CaO(k)+CO₂(g) için Kc=[CO₂] olur. CaCO₃ veya CaO yazılmaması onların tepkimeye katılmadığı veya miktarlarının hiç değişmediği anlamına gelmez; yalnız denge bağıntısındaki rolleri sabittir.",
+  "to": "Saf katı ve saf sıvı fazları, etkinlikleri sabit kabul edildiği için bu temel bağıntıda açık derişim terimi olarak yazılmaz. CaCO₃(k) ⇌ CaO(k)+CO₂(g) için Kc=[CO₂] olur. CaCO₃ veya CaO yazılmaması onların tepkimeye katılmadığı veya miktarlarının hiç değişmediği anlamına gelmez; yalnız denge bağıntısındaki rolleri sabittir."
+ },
+ {
+  "from": "Uygulama modelinde toplam [A]+[B]=3 mol/L korunur ve Kc=2’dir. [B]=2[A] ile 3[A]=3, dolayısıyla [A]=1, [B]=2 mol/L bulunur. Sonucu iki ayrı koşulla denetle: toplam 3 mü ve oran 2 mi? Birini sağlamak ötekini otomatik sağlamaz. Gerçek tepkimelerde toplam mol sayısı her zaman korunmadığından bu modelin toplamını bütün denge sorularına aktarma.",
+  "to": "Etkileşimli modelde toplam [A]+[B]=3 mol/L korunur ve Kc=2’dir. [B]=2[A] ile 3[A]=3, dolayısıyla [A]=1, [B]=2 mol/L bulunur. Sonucu iki ayrı koşulla denetle: toplam 3 mü ve oran 2 mi? Birini sağlamak ötekini otomatik sağlamaz. Gerçek tepkimelerde toplam mol sayısı her zaman korunmadığından bu modelin toplamını bütün denge sorularına aktarma."
+ },
+ {
+  "from": "Uygulamanın basit modelinde iki hız sabiti aynı çarpanla artırılır; Kc=2 oranı ve son derişimler korunurken yaklaşma eğrisi hızlanır. Bu oran değiştirmeme, seçili modelin güvenli gözlemidir. Grafikte derişimlerin sonlu zamanlı ve yuvarlanmış değerleri tam matematiksel dengeyle karıştırılmaz. Ürüne daha çabuk ulaşmak ile denge veriminin artması farklı ifadelerdir.",
+  "to": "Etkileşimli basit modelde iki hız sabiti aynı çarpanla artırılır; Kc=2 oranı ve son derişimler korunurken yaklaşma eğrisi hızlanır. Bu oran değiştirmeme, seçili modelin güvenli gözlemidir. Grafikte derişimlerin sonlu zamanlı ve yuvarlanmış değerleri tam matematiksel dengeyle karıştırılmaz. Ürüne daha çabuk ulaşmak ile denge veriminin artması farklı ifadelerdir."
+ },
+ {
+  "from": "Bu ilişki yön açıklamasıdır; tek başına kaç saniyede dönüşüm olacağını söylemez. Örneğin Q/K=1/4 için logaritma negatiftir, fakat geçiş engeli yüksekse gözlenebilir dönüşüm yavaş olabilir. İlk konu gövdesindeki hız ve denge ayrımı burada enerji ve oran arasında köprü kurar.",
+  "to": "Bu ilişki yön açıklamasıdır; tek başına kaç saniyede dönüşüm olacağını söylemez. Örneğin Q/K=1/4 için logaritma negatiftir, fakat geçiş engeli yüksekse gözlenebilir dönüşüm yavaş olabilir. Önceki bölümlerdeki hız ve denge ayrımı burada enerji ve oran arasında köprü kurar."
+ },
+ {
+  "from": "Daha genel denge ifadesi türlerin etkinliklerini kullanır; ideal çözeltide [i]/c° ve ideal gazda Pi/p° gibi referans oranlarına yaklaşılabilir. Böylece termodinamik K boyutsuzdur. Lise sorusunun Kc ve Kp sayıları ise belirtilen derişim/basınç gösterimiyle hesaplanır.",
+  "to": "Daha genel denge ifadesi türlerin etkinliklerini kullanır; ideal çözeltide [i]/c° ve ideal gazda Pi/p° gibi referans oranlarına yaklaşılabilir. Böylece termodinamik K boyutsuzdur. Sorulardaki Kc ve Kp sayıları ise belirtilen derişim/basınç gösterimiyle hesaplanır."
+ },
+ {
+  "from": "Uygulamanın hesap modelinde kullanılan tam girdiler ve sonuçtaki gösterim basamakları ayrılır. Öğrenci ekrandaki yuvarlak sayıları tekrar bölünce çok küçük fark görebilir; sayısal artık ve korunum bu yüzden aynı kaynak hesap üzerinden denetlenir. Yaklaşık çizilen eğri de ölçülmüş gerçek zaman kinetiği diye etiketlenmez.",
+  "to": "Etkileşimli hesap modelinde kullanılan tam girdiler ve sonuçtaki gösterim basamakları ayrılır. Öğrenci ekrandaki yuvarlak sayıları tekrar bölünce çok küçük fark görebilir; sayısal artık ve korunum bu yüzden aynı kaynak hesap üzerinden denetlenir. Yaklaşık çizilen eğri de ölçülmüş gerçek zaman kinetiği diye etiketlenmez."
+ },
+ {
+  "from": "Basitleştirilmiş okul denkliği NaBH₄+2 H₂O→NaBO₂+4 H₂’dir. Dört H atomu borhidrürden, dört H atomu iki sudan gelir; toplam sekiz H atomu dört H₂ oluşturur.",
+  "to": "Basitleştirilmiş denklik NaBH₄+2 H₂O→NaBO₂+4 H₂’dir. Dört H atomu borhidrürden, dört H atomu iki sudan gelir; toplam sekiz H atomu dört H₂ oluşturur."
+ },
+ {
+  "from": "Birçok termoplastik uygun sıcaklıkta yumuşayıp yeniden şekillendirilebilir; PE vePET yaygın örneklerdir. Çapraz bağlı termosetlerde kovalent ağ, aynı biçimde tekrar eriyip akmayı engeller; aşırı ısı bozunma doğurabilir.",
+  "to": "Birçok termoplastik uygun sıcaklıkta yumuşayıp yeniden şekillendirilebilir; PE ve PET yaygın örneklerdir. Çapraz bağlı termosetlerde kovalent ağ, aynı biçimde tekrar eriyip akmayı engeller; aşırı ısı bozunma doğurabilir."
+ },
+ {
+  "from": "Başlangıç talebi; önlenen, yeniden kullanılan, geri kazanılan ve bu çevrimde kazanılamayan kütleler olarak ayrılabilir. Son kazanılamayan miktar, toplanmayan+ayıklama reddi+işleme kaybının toplamıdır.",
+  "to": "Başlangıç talebi; önlenen, yeniden kullanılan, geri kazanılan ve bu çevrimde kazanılamayan kütleler olarak ayrılabilir. Son kazanılamayan miktar, toplanmayan + ayıklama reddi + işleme kaybının toplamıdır."
+ },
+ {
+  "from": "Nano, milyarda bir yani 10⁻⁹ çarpanını belirtir; 1 nm=10⁻⁹ m’dir.1μm=10³ nm ve 1 mm=10⁶ nm dönüşümleri farklı ölçekleri karşılaştırmayı sağlar. Önek uzunluğa uygulandığında birim de nanometredir.",
+  "to": "Nano, milyarda bir yani 10⁻⁹ çarpanını belirtir; 1 nm=10⁻⁹ m’dir. 1 μm=10³ nm ve 1 mm=10⁶ nm dönüşümleri farklı ölçekleri karşılaştırmayı sağlar. Önek uzunluğa uygulandığında birim de nanometredir."
+ },
+ {
+  "from": "Oranın birimi ters uzunluktur:nm⁻¹ gibi. Bir küpün kenarı yarıya inerse tek parçanın alanı dörtte, hacmi sekizde kalır; alan ve hacim aynı çarpanla değişmez. Toplam maddeyi koruyan çoklu parça hesabı bundan sonraki adımdır.",
+  "to": "Oranın birimi ters uzunluktur: nm⁻¹ gibi. Bir küpün kenarı yarıya inerse tek parçanın alanı dörtte, hacmi sekizde kalır; alan ve hacim aynı çarpanla değişmez. Toplam maddeyi koruyan çoklu parça hesabı bundan sonraki adımdır."
+ },
+ {
+  "from": "Basit kübik n×n×n nokta modelinde toplam n³, sınırda olmayan iç noktalar(n−2)³ sayılır; n en az 2’dir. Sınır noktası n³−(n−2)³ olarak türetilir; köşe ve kenarlar iki kez sayılmaz.",
+  "to": "Basit kübik n×n×n nokta modelinde toplam n³, sınırda olmayan iç noktalar (n−2)³ sayılır; n en az 2’dir. Sınır noktası n³−(n−2)³ olarak türetilir; köşe ve kenarlar iki kez sayılmaz."
+ },
+ {
+  "from": "Klasik okul karşılaştırmasında derişik asit ve daha yüksek sıcaklık, yaklaşık 170 °C, eten yönünü destekleyen koşul olarak verilir. Bu sayı bütün alkoller için evrensel eşik değildir; yapı, koşul ve yan ürünler gerçek seçiciliği etkiler.",
+  "to": "Klasik karşılaştırmada derişik asit ve daha yüksek sıcaklık, yaklaşık 170 °C, eten yönünü destekleyen koşul olarak verilir. Bu sayı bütün alkoller için evrensel eşik değildir; yapı, koşul ve yan ürünler gerçek seçiciliği etkiler."
+ },
+ {
+  "from": "Tepkime ağında bağ değişimini kanıtla: hidrasyonda pi azalır, yükseltgenmede C=O ortaya çıkar, sodyumda O–H hidrojeninin yerini karşı iyon alır. Model miktarları stokiyometriktir; ölçülmüş hız veya otomatik öğrenme başarısı değildir.",
+  "to": "Tepkime ağında bağ değişimini kanıtla: hidrasyonda pi azalır, yükseltgenmede C=O ortaya çıkar, sodyumda O–H hidrojeninin yerini karşı iyon alır. Model miktarları stokiyometriktir; ölçülmüş hız değildir."
+ },
+ {
+  "from": "NaBH₄ gibi ayıraçlarda gerçek süreç hidrit aktarımı ve protonlanma içerir; H₂ yazımı net atom hesabıdır. Aldehitler metanalın metanol vermesi özel durumu da düşünülerek çoğunlukla primer, basit ketonlar sekonder alkol verir.",
+  "to": "NaBH₄ gibi ayıraçlarda gerçek süreç hidrit aktarımı ve protonlanma içerir; H₂ yazımı net atom hesabıdır. Aldehitler çoğunlukla primer alkol verir; metanalın metanol vermesi özel durumdur. Basit ketonlar sekonder alkol verir."
+ },
+ {
+  "from": "Halka dışındaki COOH, benzenkarboksilik asit yani benzoik asit gibi okunabilir. Ftalik asit benzene-1,2-dikarboksilik asit yapısındadır. Salisilik asit 2-hidroksibenzoik asittir; OH konumu 2’dir, 3 değildir.",
+  "to": "Halka dışındaki COOH, benzenkarboksilik asit yani benzoik asit gibi okunabilir. Ftalik asit benzen-1,2-dikarboksilik asit yapısındadır. Salisilik asit 2-hidroksibenzoik asittir; OH konumu 2’dir, 3 değildir."
+ },
+ {
+  "from": "Yağ asitleri yağlarla ilişkili alifatik karboksilik asitlerdir; okul örnekleri çoğunlukla uzun ve düz, çift C sayılıdır. Bu yaygın örüntü bütün doğadaki yağ asitleri için zorunlu tanım değildir.",
+  "to": "Yağ asitleri yağlarla ilişkili alifatik karboksilik asitlerdir; sık verilen örnekler çoğunlukla uzun ve düz, çift C sayılıdır. Bu yaygın örüntü bütün doğadaki yağ asitleri için zorunlu tanım değildir."
+ },
+ {
+  "from": "İçteki karbon iki C komşusuna tek bağla bağlıysa CH₂’dir. Kağıtta görünmeyen H atomlarını bu yöntemle tamamla: bir çizginin ucu ve köşesi, başka atom yazılmamışsa karbondur. H sayısını ezber formülün yanında gerçek bağlanmayla doğrulamak, halka–zincir ayrımının başlangıcıdır.",
+  "to": "İçteki karbon iki C komşusuna tek bağla bağlıysa CH₂’dir. Kâğıtta görünmeyen H atomlarını bu yöntemle tamamla: bir çizginin ucu ve köşesi, başka atom yazılmamışsa karbondur. H sayısını ezber formülün yanında gerçek bağlanmayla doğrulamak, halka–zincir ayrımının başlangıcıdır."
+ },
+ {
+  "from": "CₙH₂ₙ olan hidrokarbonun tam yanmasında bir mol bileşikten n mol CO₂ ve n mol H₂O oluşur. Ürünlerde toplam 3 n O atomu bulunduğundan O₂ katsayısı 3 n/2’dir. Kesirli katsayı istenmiyorsa bütün denklem ikiyle çarpılır.",
+  "to": "CₙH₂ₙ olan hidrokarbonun tam yanmasında bir mol bileşikten n mol CO₂ ve n mol H₂O oluşur. Ürünlerde toplam 3n O atomu bulunduğundan O₂ katsayısı 3n/2’dir. Kesirli katsayı istenmiyorsa bütün denklem ikiyle çarpılır."
+ },
+ {
+  "from": "Sonra 1-büten yerine 2-büten veya metilsiklopropan seçerek hangi sayının değiştiğini tahmin et. Hedef, düğmeye basmak değil seçtiğin izomerlik türünü aynı formül ve farklı komşuluk kanıtıyla açıklayabilmektir. Bu keşif, soru doğrusu veya konu tamamlaması kaydı oluşturmaz.",
+  "to": "Sonra 1-büten yerine 2-büten veya metilsiklopropan seçerek hangi sayının değiştiğini tahmin et. Hedef, düğmeye basmak değil seçtiğin izomerlik türünü aynı formül ve farklı komşuluk kanıtıyla açıklayabilmektir."
+ },
+ {
+  "from": "Açık zincirli, tek çift bağlı CₙH₂ₙ için C–C komşuluk sayısı n−1 ve C–H sayısı 2 n olduğundan toplam sigma 3 n−1 olur. Bu kısa yol yalnız belirtilen hidrokarbon koşullarında kullanılır. O, halojen, halka veya ek çoklu bağ varsa gerçek bağlantıları tek tek saymak gerekir.",
+  "to": "Açık zincirli, tek çift bağlı CₙH₂ₙ için C–C komşuluk sayısı n−1 ve C–H sayısı 2n olduğundan toplam sigma 3n−1 olur. Bu kısa yol yalnız belirtilen hidrokarbon koşullarında kullanılır. O, halojen, halka veya ek çoklu bağ varsa gerçek bağlantıları tek tek saymak gerekir."
+ },
+ {
+  "from": "Açık zincirli tek üçlü bağlı CₙH₂ₙ₋₂ için sigma sayısı (n−1)+(2 n−2)=3 n−3 olur. Bu kısa sonuç, C–C komşuluğunu bir kez sayar; üçlü bağdaki diğer iki çizgi pi’ye aittir. Halojenli veya oksijenli bir üründe aynı formülü doğrudan kullanma; gerçek bağlantıları tekrar say.",
+  "to": "Açık zincirli tek üçlü bağlı CₙH₂ₙ₋₂ için sigma sayısı (n−1)+(2n−2)=3n−3 olur. Bu kısa sonuç, C–C komşuluğunu bir kez sayar; üçlü bağdaki diğer iki çizgi pi’ye aittir. Halojenli veya oksijenli bir üründe aynı formülü doğrudan kullanma; gerçek bağlantıları tekrar say."
+ },
+ {
+  "from": "Bazı okul notları amonyaklı Cu(I) çözeltisine “Fehling” adını verir; kimyasal olarak bu ikisini ayır. Standart Fehling çözeltisi bazik Cu(II)–tartrat ortamıdır ve aldehit oksidasyonunda Cu₂O çökeleğiyle anılır. Bir test sorusunda ayıracın formülü ve gözlenen ürün, yalnız günlük addan daha belirleyicidir.",
+  "to": "Bazı notlar amonyaklı Cu(I) çözeltisine “Fehling” adını verir; kimyasal olarak bu ikisini ayır. Standart Fehling çözeltisi bazik Cu(II)–tartrat ortamıdır ve aldehit oksidasyonunda Cu₂O çökeleğiyle anılır. Bir test sorusunda ayıracın formülü ve gözlenen ürün, yalnız günlük addan daha belirleyicidir."
+ },
+ {
+  "from": "Bir mol eten bir mol, bir mol etin iki mol H₂ alarak tamamen doyar. x mol eten ile y mol etinden oluşan karışımın tam doyması için x + 2 y mol H₂ gerekir. Toplam başlangıç molü ayrıca x+y’dir.",
+  "to": "Bir mol eten bir mol, bir mol etin iki mol H₂ alarak tamamen doyar. x mol eten ile y mol etinden oluşan karışımın tam doyması için x + 2y mol H₂ gerekir. Toplam başlangıç molü ayrıca x+y’dir."
+ },
+ {
+  "from": "Kendi açıklamanda üç şeyi söyle: kaç pi bağı kaldı, kaç mol reaktif eklendi ve son ürün hangi sınıfta? Su yolunun ikinci basamağında ek bir su tüketilmediğini, yalnız enolün karbonile dönüştüğünü belirt. Bu model bir tepkime süresi veya puan üretmez; kavramı sınayacağın bir yapı gösterir.",
+  "to": "Kendi açıklamanda üç şeyi söyle: kaç pi bağı kaldı, kaç mol reaktif eklendi ve son ürün hangi sınıfta? Su yolunun ikinci basamağında ek bir su tüketilmediğini, yalnız enolün karbonile dönüştüğünü belirt. Bu model bir tepkime süresi hesaplamaz; kavramı sınayacağın bir yapı gösterir."
+ },
+ {
+  "from": "Benzen kağıtta dönüşümlü üç tek ve üç çift bağla iki farklı Kekulé katkı yapısı olarak gösterilebilir. Bu iki çizim, gerçek molekülün saniyede sırayla geçtiği iki ayrı molekül değildir. Rezonans, aynı atom konumları için elektron dağılımının birden fazla katkıyla temsil edilmesidir.",
+  "to": "Benzen kâğıtta dönüşümlü üç tek ve üç çift bağla iki farklı Kekulé katkı yapısı olarak gösterilebilir. Bu iki çizim, gerçek molekülün saniyede sırayla geçtiği iki ayrı molekül değildir. Rezonans, aynı atom konumları için elektron dağılımının birden fazla katkıyla temsil edilmesidir."
+ },
+ {
+  "from": "Aynı formüllü uygun monoalkol izomerlerinde daha dallanmış yapının etkili temas yüzeyi azalabilir ve kaynama düşebilir. Kaynaklarda 1-bütanol, 2-bütanol ve tert-bütanol kıyası buna örnek verilir; tek başına alkol derece adını evrensel termometre yapmayız.",
+  "to": "Aynı formüllü uygun monoalkol izomerlerinde daha dallanmış yapının etkili temas yüzeyi azalabilir ve kaynama düşebilir. 1-bütanol, 2-bütanol ve tert-bütanol kıyası buna örnektir; tek başına alkol derece adını evrensel termometre yapmayız."
+ },
+ {
+  "from": "Etanoldeki –OH, kovalent molekülün parçasıdır; çözünürken NaOH gibi bol OH⁻ saldığı varsayılmaz. Basit alkol çözeltileri temel lise bağlamında moleküler çözünme ve elektrolit olmama özelliğiyle ele alınır.",
+  "to": "Etanoldeki –OH, kovalent molekülün parçasıdır; çözünürken NaOH gibi bol OH⁻ saldığı varsayılmaz. Basit alkol çözeltileri temel düzeyde moleküler çözünme ve elektrolit olmama özelliğiyle ele alınır."
+ },
+ {
+  "from": "Voltmetre iki elektrot arasındaki potansiyel farkını ölçer; tek bir yarı hücrenin potansiyeli bağımsız bir mutlak voltaj olarak doğrudan ölçülmez. İndirgenme potansiyellerini ortak ölçekte karşılaştırmak için standart hidrojen elektrodunun (SHE) standart potansiyeli uzlaşımla 0 V alınır. Bu derste referans 25°C’de, H⁺ etkinliği 1 ve H₂ gaz basıncı 1 bar olan Pt/H₂/H⁺ yarısıdır. Pt uygun iletken yüzey sağlar; H₂ gazı kendi başına metal elektrot değildir. İdeal çözelti yaklaşımında etkinlik yaklaşık [H⁺]/(1 M) ile kurulur; bazı okul sorularının 1 atm yaklaşımı açık veriyse o sorunun verisi ayrıca kullanılır.",
+  "to": "Voltmetre iki elektrot arasındaki potansiyel farkını ölçer; tek bir yarı hücrenin potansiyeli bağımsız bir mutlak voltaj olarak doğrudan ölçülmez. İndirgenme potansiyellerini ortak ölçekte karşılaştırmak için standart hidrojen elektrodunun (SHE) standart potansiyeli uzlaşımla 0 V alınır. Bu derste referans 25°C’de, H⁺ etkinliği 1 ve H₂ gaz basıncı 1 bar olan Pt/H₂/H⁺ yarısıdır. Pt uygun iletken yüzey sağlar; H₂ gazı kendi başına metal elektrot değildir. İdeal çözelti yaklaşımında etkinlik yaklaşık [H⁺]/(1 M) ile kurulur; bazı soruların 1 atm yaklaşımı açık veriyse o sorunun verisi ayrıca kullanılır."
+ },
+ {
+  "from": "Denklemde elektronları eşitlemek için katsayıları artırmak gerilimi aynı katsayıyla çarpmaz. Volt, birim yük başına enerjiyle ilişkilidir; daha çok madde aktarımı daha çok toplam yük ve iş sağlayabilir. Standart basınç modern tanımda 1 bar iken bazı sınıf soruları 1 atm yaklaşımı verir; sayısal sorunun açık verisini kullan.",
+  "to": "Denklemde elektronları eşitlemek için katsayıları artırmak gerilimi aynı katsayıyla çarpmaz. Volt, birim yük başına enerjiyle ilişkilidir; daha çok madde aktarımı daha çok toplam yük ve iş sağlayabilir. Standart basınç modern tanımda 1 bar iken bazı sorular 1 atm yaklaşımı verir; sayısal sorunun açık verisini kullan."
+ },
+ {
+  "from": "Yaygın lityum iyon hücrelerinde Li⁺ iyonları iki uygun elektrot yapısı arasında taşınır; elektrotların redoks durumları bu taşınmaya eşlik eder. Bu sistemleri tümüyle metalik Li anot ve TiS₂ katottan oluşan tek tip pil sanma. Li/TiS₂ gibi tarihsel lityum metal örnekleri ile yaygın girişim temelli Li-ion hücreleri ayrı yapılardır.",
+  "to": "Yaygın lityum iyon hücrelerinde Li⁺ iyonları iki uygun elektrot yapısı arasında taşınır; elektrotların redoks durumları bu taşınmaya eşlik eder. Bu sistemleri tümüyle metalik Li anot ve TiS₂ katottan oluşan tek tip pil sanma. Li/TiS₂ gibi tarihsel lityum metal örnekleri ile yaygın interkalasyon (araya girme) temelli Li-ion hücreleri ayrı yapılardır."
+ },
+ {
+  "from": "Basit bir iyonik tuzun soğuk katısında iyonlar örgüde bağlıdır; bu sınıf düzeneğinde yeterli iyonik iletim sağlanmaz. Eriyikte veya uygun çözeltide hareketli iyonlar bulunur. Elektroliz sorusunun sulu, eriyik veya başka iletken ortam dediğini ilk satırda işaretlemek ürün hesabının ön koşuludur.",
+  "to": "Basit bir iyonik tuzun soğuk katısında iyonlar örgüde bağlıdır; bu basit düzenekte yeterli iyonik iletim sağlanmaz. Eriyikte veya uygun çözeltide hareketli iyonlar bulunur. Elektroliz sorusunun sulu, eriyik veya başka iletken ortam dediğini ilk satırda işaretlemek ürün hesabının ön koşuludur."
+ },
+ {
+  "from": "Bu yüzden yalnız yükten hesaplanan teorik metal gramını ürünün varlığını denetlemeden doğru cevap sayma. Önce gerçek yarı tepkimeyi seç, sonra Faraday hesabına geç. Bir kaynakta sulu MgSO₄ yazılıp Mg metal hesabı yapılmışsa eriyik varsayımıyla kökü gizlice değiştirmek yerine ortam–ürün uyuşmazlığını fark et.",
+  "to": "Bu yüzden yalnız yükten hesaplanan teorik metal gramını ürünün varlığını denetlemeden doğru cevap sayma. Önce gerçek yarı tepkimeyi seç, sonra Faraday hesabına geç. Bir soruda sulu MgSO₄ yazılıp Mg metal hesabı yapılmışsa eriyik varsayımıyla kökü gizlice değiştirmek yerine ortam–ürün uyuşmazlığını fark et."
+ },
+ {
+  "from": "Su elektrolizinde aynı toplam yük için H₂ molü O₂ molünün iki katıdır. Gazlar aynı sıcaklık ve basınçta, aynı nicel toplama koşullarında karşılaştırılıyorsa hacim oranı da 2: 1 olur. Katotta H₂, anotta O₂ bulunduğunu ayırmak, hangi tüpün iki kat olduğunu doğru söylemeni sağlar.",
+  "to": "Su elektrolizinde aynı toplam yük için H₂ molü O₂ molünün iki katıdır. Gazlar aynı sıcaklık ve basınçta, aynı nicel toplama koşullarında karşılaştırılıyorsa hacim oranı da 2:1 olur. Katotta H₂, anotta O₂ bulunduğunu ayırmak, hangi tüpün iki kat olduğunu doğru söylemeni sağlar."
+ },
+ {
+  "from": "Sıcaklık/basınç farklıysa, miktarlar farklı verimle toplanıyorsa veya gazlar su buharı içeriyorsa ham hacimleri otomatik 2: 1 kabul etme. Ayrıca H₂/Cl₂ üreten belirtilmiş tuzlu su örneğinin mol oranı 1: 1 olabilir. Oranı cihazın şekline değil dengeli yarı tepkimelere bağla.",
+  "to": "Sıcaklık/basınç farklıysa, miktarlar farklı verimle toplanıyorsa veya gazlar su buharı içeriyorsa ham hacimleri otomatik 2:1 kabul etme. Ayrıca H₂/Cl₂ üreten belirtilmiş tuzlu su örneğinin mol oranı 1:1 olabilir. Oranı cihazın şekline değil dengeli yarı tepkimelere bağla."
+ },
+ {
+  "from": "Adımın sonunda atom, yük, ortam ve verim kontrolü yap. Elektroliz sonucunu yalnız ekrandaki güzel kabarcıklarla öğrenmiş sayma; hangi taneciğin hangi yönde redoks geçirdiğini kendi cümlenle söyle. Etkileşim kendi başına doğru soru, XP veya ustalık üretmez; bağımsız soruda koşulu doğru uygulamak ayrıca ölçülür.",
+  "to": "Adımın sonunda atom, yük, ortam ve verim kontrolü yap. Elektroliz sonucunu yalnız ekrandaki güzel kabarcıklarla öğrenmiş sayma; hangi taneciğin hangi yönde redoks geçirdiğini kendi cümlenle söyle."
+ },
+ {
+  "from": "Bir mol elektronun toplam yük büyüklüğü Faraday sabitidir. Güncel değeri yaklaşık 96485 C/mol e⁻’dir; sınıf sorularında 96500 gibi yuvarlama açık verilebilir. Her hesapta sorunun verdiği F değerini kullanmak sayısal sonucu ve birim tutarlılığını korur.",
+  "to": "Bir mol elektronun toplam yük büyüklüğü Faraday sabitidir. Güncel değeri yaklaşık 96485 C/mol e⁻’dir; sorularda 96500 gibi yuvarlama açık verilebilir. Her hesapta sorunun verdiği F değerini kullanmak sayısal sonucu ve birim tutarlılığını korur."
+ },
+ {
+  "from": "Aktif aynı metal anot iyon sağlayan başka bir model kurabilir. Bu yüzden stok sınırını değerlendirirken anot türünü ve eklenen maddeleri de oku. Modelin inört-anot örneğinde hedef yük min((η/100)Q, zFn₀) olarak seçilir; metal molü, artan iyon ve kalan yük birlikte korunur.",
+  "to": "Aktif aynı metal anot iyon sağlayan başka bir model kurabilir. Bu yüzden stok sınırını değerlendirirken anot türünü ve eklenen maddeleri de oku. Modelin inert-anot örneğinde hedef yük min((η/100)Q, zFn₀) olarak seçilir; metal molü, artan iyon ve kalan yük birlikte korunur."
+ },
+ {
+  "from": "Paralel kollarda aynı süre geçmesi, her koldan aynı akım veya yük geçtiğini zorunlu kılmaz. Her kol için Qkol=Ikol·t kurulur. Toplam akımın iki kol arasında nasıl dağıldığı verilmeden bütün hücrelere toplam akımı ayrı ayrı atamak yükü iki kez sayar.",
+  "to": "Paralel kollarda aynı süre geçmesi, her koldan aynı akım veya yük geçtiğini zorunlu kılmaz. Her kol için Q_kol=I_kol·t kurulur. Toplam akımın iki kol arasında nasıl dağıldığı verilmeden bütün hücrelere toplam akımı ayrı ayrı atamak yükü iki kez sayar."
+ },
+ {
+  "from": "Hedef metalin oluşmasına yükün yalnız yüzde η’sı gidiyorsa hedef yük Qhedef=(η/100)Q olur. Yeterli iyon stoğunda metal miktarı bu hedef yükle hesaplanır. Bu yüzde, enerji verimi veya hücre gerilimiyle aynı büyüklük değildir; ne kadar yükün istenen yarı sürece gittiğini belirtir.",
+  "to": "Hedef metalin oluşmasına yükün yalnız yüzde η’sı gidiyorsa hedef yük Q_hedef=(η/100)Q olur. Yeterli iyon stoğunda metal miktarı bu hedef yükle hesaplanır. Bu yüzde, enerji verimi veya hücre gerilimiyle aynı büyüklük değildir; ne kadar yükün istenen yarı sürece gittiğini belirtir."
+ },
+ {
+  "from": "Hesabın sonunda hedef üründeki elektron eşdeğeri ile kullanılan yükü karşılaştır. Qhedef+Qdiğer=Q, başlangıç iyonu=biriken metal+artan iyon ilişkileri uygun modelde birlikte sağlanmalıdır. Bir sonucun doğru birimi taşıması tek başına stok veya ürün hatasını dışlamaz.",
+  "to": "Hesabın sonunda hedef üründeki elektron eşdeğeri ile kullanılan yükü karşılaştır. Q_hedef+Q_diğer=Q, başlangıç iyonu=biriken metal+artan iyon ilişkileri uygun modelde birlikte sağlanmalıdır. Bir sonucun doğru birimi taşıması tek başına stok veya ürün hatasını dışlamaz."
+ },
+ {
+  "from": "Karbonun atom numarası 6’dır. Nötr temel hâl atomunun elektron dizilişi 1s² 2s² 2p² olur; ikinci katmanda dört değerlik elektronu bulunur. Periyodik tabloda ikinci periyot ve 14.grupta, eski gösterimle 4A grubundadır. İlk katmandaki iki elektron çoğu temel bağ modelinde iç katman olarak ele alınır.",
+  "to": "Karbonun atom numarası 6’dır. Nötr temel hâl atomunun elektron dizilişi 1s² 2s² 2p² olur; ikinci katmanda dört değerlik elektronu bulunur. Periyodik tabloda ikinci periyot ve 14. grupta, eski gösterimle 4A grubundadır. İlk katmandaki iki elektron çoğu temel bağ modelinde iç katman olarak ele alınır."
+ },
+ {
+  "from": "Lise kapsamındaki organik bileşikler karbon içerir; çoğu ayrıca hidrojen taşır. Ancak C–H bağı organik sayılmanın zorunlu koşulu değildir: CCl₄, hidrojen içermeyen organik bileşik örneğidir. Üre, etanol, glikoz ve asetonda da karbon farklı gruplarla bağlanır.",
+  "to": "Organik bileşikler karbon içerir; çoğu ayrıca hidrojen taşır. Ancak C–H bağı organik sayılmanın zorunlu koşulu değildir: CCl₄, hidrojen içermeyen organik bileşik örneğidir. Üre, etanol, glikoz ve asetonda da karbon farklı gruplarla bağlanır."
+ },
+ {
+  "from": "NaCN gibi siyanür tuzları ve HCN temel lise sınıflamasında anorganiktir. Buna karşılık CH₃–C≡N gibi bir karbon iskeletine bağlı nitril grubu organik bileşik oluşturur. Yapıda C ve N harflerini yan yana görmek, molekülü otomatik olarak anorganik yapmaz.",
+  "to": "NaCN gibi siyanür tuzları ve HCN temel sınıflamada anorganiktir. Buna karşılık CH₃–C≡N gibi bir karbon iskeletine bağlı nitril grubu organik bileşik oluşturur. Yapıda C ve N harflerini yan yana görmek, molekülü otomatik olarak anorganik yapmaz."
+ },
+ {
+  "from": "İzotopta çekirdekteki nötron sayısı değişir: ¹²C ve¹³C örneği budur. Yapı izomerinde ise aynı molekül formülüne sahip farklı atom bağlantıları bulunur; örneğin bütanın iki karbon iskeleti. Allotrop kavramı element yapılarını, yapı izomerliği molekül bağlantılarını karşılaştırır.",
+  "to": "İzotopta çekirdekteki nötron sayısı değişir: ¹²C ve ¹³C örneği budur. Yapı izomerinde ise aynı molekül formülüne sahip farklı atom bağlantıları bulunur; örneğin bütanın iki karbon iskeleti. Allotrop kavramı element yapılarını, yapı izomerliği molekül bağlantılarını karşılaştırır."
+ },
+ {
+  "from": "Kesik çizgiler grafitte tabakalar arası zayıf etkileşimi temsil eder; kovalent bağ diye sayılmaz. Fulleren kafesi ise 60 atomun tamamını kapalı biçimde gösterir. Görselde döndürme ve tahmin yapma ayrı keşif kaydıdır; kendi başına soru doğrusu veya konu tamamlama oluşturmaz.",
+  "to": "Kesik çizgiler grafitte tabakalar arası zayıf etkileşimi temsil eder; kovalent bağ diye sayılmaz. Fulleren kafesi ise 60 atomun tamamını kapalı biçimde gösterir."
+ },
+ {
+  "from": "Kimyasal formül element türleri ve sayı ilişkilerini özetler. Molekül formülü bir moleküldeki gerçek atom sayılarını, basit formül ise en küçük tam sayılı atom oranını gösterir. C₆H₁₂O₆ için molekül başına 6 C, 12 H, 6 O; en küçük oran 1: 2: 1 olduğundan basit formül CH₂O olur.",
+  "to": "Kimyasal formül element türleri ve sayı ilişkilerini özetler. Molekül formülü bir moleküldeki gerçek atom sayılarını, basit formül ise en küçük tam sayılı atom oranını gösterir. C₆H₁₂O₆ için molekül başına 6 C, 12 H, 6 O; en küçük oran 1:2:1 olduğundan basit formül CH₂O olur."
+ },
+ {
+  "from": "Alt indislerin ortak böleni 1 ise molekül formülü zaten en küçük orandadır. C₂H₆O için 2,6,1 sayılarının ortak böleni 1; basit ve molekül formülü aynı C₂H₆O olur. H₂O ve CO₂ de kendi alt indisleri bakımından sadeleşmez.",
+  "to": "Alt indislerin ortak böleni 1 ise molekül formülü zaten en küçük orandadır. C₂H₆O için 2, 6, 1 sayılarının ortak böleni 1; basit ve molekül formülü aynı C₂H₆O olur. H₂O ve CO₂ de kendi alt indisleri bakımından sadeleşmez."
+ },
+ {
+  "from": "Bu ünitenin sayısal örneklerinde C12, H1, O16, N14 g/mol değerleri soruda verildiğinde kullanılır. Gerçek ölçümlerde daha hassas atom kütleleri veya deney belirsizliği bulunabilir. Birimlerin atomik mol kütlesine ait olduğunu kontrol et; O atomu için 16, H atomu için 1 kullanılır.",
+  "to": "Bu ünitenin sayısal örneklerinde C 12, H 1, O 16, N 14 g/mol değerleri soruda verildiğinde kullanılır. Gerçek ölçümlerde daha hassas atom kütleleri veya deney belirsizliği bulunabilir. Birimlerin atomik mol kütlesine ait olduğunu kontrol et; O atomu için 16, H atomu için 1 kullanılır."
+ },
+ {
+  "from": "Her element için kütle, mol miktarı ve en küçük mole bölünmüş oran sütunları aç. Örneğin C3,6 g, H0,6 g, O4,8 g için mol miktarları 0,3; 0,6; 0,3 olur. En küçük 0,3’e bölünce 1: 2: 1 elde edilir; basit formül CH₂O’dur.",
+  "to": "Her element için kütle, mol miktarı ve en küçük mole bölünmüş oran sütunları aç. Örneğin C 3,6 g, H 0,6 g, O 4,8 g için mol miktarları 0,3; 0,6; 0,3 olur. En küçük 0,3’e bölünce 1:2:1 elde edilir; basit formül CH₂O’dur."
+ },
+ {
+  "from": "En küçük mole bölünmüş oran her zaman doğrudan tam sayı olmayabilir. 1,5: 4: 1 oranının bütün terimlerini 2 ile çarpmak 3: 8: 2 verir; basit formül C₃H₈O₂ olur. Yalnız 1,5’i 2’ye yuvarlamak oranı değiştirir.",
+  "to": "En küçük mole bölünmüş oran her zaman doğrudan tam sayı olmayabilir. 1,5:4:1 oranının bütün terimlerini 2 ile çarpmak 3:8:2 verir; basit formül C₃H₈O₂ olur. Yalnız 1,5’i 2’ye yuvarlamak oranı değiştirir."
+ },
+ {
+  "from": "Bu yöntem saf tek bileşik, tam yanma ve ürünlerin doğru toplanması koşullarına dayanır. Oksijen yetersizliğinde CO veya kurum oluşabilir; kaçan su veya karışım örneği de basit hesabı bozabilir. Sayısal kartlarda bu koşullar bağımsız olarak belirtilir.",
+  "to": "Bu yöntem saf tek bileşik, tam yanma ve ürünlerin doğru toplanması koşullarına dayanır. Oksijen yetersizliğinde CO veya kurum oluşabilir; kaçan su veya karışım örneği de basit hesabı bozabilir. Sayısal sorularda bu koşullar bağımsız olarak belirtilir."
+ },
+ {
+  "from": "Benzer şekilde kütlece yüzde bileşim, basit formülün bütün tam sayı katlarında aynıdır. CH₂O, C₂H₄O₂ ve C₆H₁₂O₆ aynı C: H: O oranını taşır. Mol kütlesi verilmeden bunlardan birini tek molekül formülü diye seçemezsin.",
+  "to": "Benzer şekilde kütlece yüzde bileşim, basit formülün bütün tam sayı katlarında aynıdır. CH₂O, C₂H₄O₂ ve C₆H₁₂O₆ aynı C:H:O oranını taşır. Mol kütlesi verilmeden bunlardan birini tek molekül formülü diye seçemezsin."
+ },
+ {
+  "from": "Kütle modunda C, H, O kütlelerini girip mol oranlarını gör; yanma modunda saf C, H, O örneğinin ve tam yanma ürünlerinin kütlelerini kullan. Atom mol kütleleri C12, H1, O16 g/mol olarak açık alınır. Mol kütlesi bilinmiyorsa 0 seçimi yalnız basit formülü verir.",
+  "to": "Kütle modunda C, H, O kütlelerini girip mol oranlarını gör; yanma modunda saf C, H, O örneğinin ve tam yanma ürünlerinin kütlelerini kullan. Atom mol kütleleri C 12, H 1, O 16 g/mol olarak açık alınır. Mol kütlesi bilinmiyorsa 0 seçimi yalnız basit formülü verir."
+ },
+ {
+  "from": "Bir atom için tabloya σ komşuluğu, ortaklanmamış çift, elektron bölgesi, hibrit türü, saf p ve yerel π sayısını sırayla yaz. CH₄ için 4,0,4, sp³, 0,0; etendeki bir C için 3,0,3, sp², 1,1 elde edilir.",
+  "to": "Bir atom için tabloya σ komşuluğu, ortaklanmamış çift, elektron bölgesi, hibrit türü, saf p ve yerel π sayısını sırayla yaz. CH₄ için 4, 0, 4, sp³, 0, 0; etendeki bir C için 3, 0, 3, sp², 1, 1 elde edilir."
+ },
+ {
+  "from": "Etindeki bir C için 2,0,2, sp, 2,2 bulunur. HCN’de N satırı ise 1,1,2, sp, 2,2 olur; π bağlarını komşu atomla ortak saydığını unutma. Bütün molekül π toplamını yerel C ve N satırlarını toplayarak iki kez hesaplama.",
+  "to": "Etindeki bir C için 2, 0, 2, sp, 2, 2 bulunur. HCN’de N satırı ise 1, 1, 2, sp, 2, 2 olur; π bağlarını komşu atomla ortak saydığını unutma. Bütün molekül π toplamını yerel C ve N satırlarını toplayarak iki kez hesaplama."
+ },
+ {
+  "from": "Koordinatlar bağlanmayı ve yönleri anlatan şemadır; bütün bağ uzunluklarını veya ölçülmüş elektron yoğunluğunu hesaplayan bir kuantum modeli değildir. Sonuçları açık yapı ve bölge sayımıyla karşılaştır. Tahmin–gerekçe kaydı keşfi saklar; soru doğrusu, XP veya konu tamamlama kanıtı oluşturmaz.",
+  "to": "Koordinatlar bağlanmayı ve yönleri anlatan şemadır; bütün bağ uzunluklarını veya ölçülmüş elektron yoğunluğunu hesaplayan bir kuantum modeli değildir. Sonuçları açık yapı ve bölge sayımıyla karşılaştır."
+ },
+ {
+  "from": "H₂O’da toplam 6+2=8 elektronun 4’ü iki bağda, 4’ü O’nun iki çiftindedir. Şimdi geometriye geçerken NH₃ için 3 bağ +1 çift, H₂O için 2 bağ +2 çift sayabilirsin. Böylece çift sayısı ezberden değil, Lewis elektron bütçesinden gelir; iyonlar ve farklı değerlik istisnaları kendi yük/bağ koşuluyla incelenir.",
+  "to": "H₂O’da toplam 6+2=8 elektronun 4’ü iki bağda, 4’ü O’nun iki çiftindedir. Şimdi geometriye geçerken NH₃ için 3 bağ + 1 çift, H₂O için 2 bağ + 2 çift sayabilirsin. Böylece çift sayısı ezberden değil, Lewis elektron bütçesinden gelir; iyonlar ve farklı değerlik istisnaları kendi yük/bağ koşuluyla incelenir."
+ },
+ {
+  "from": "CH₄, NH₃, H₂O karşılaştırmasında bağ açıları yaklaşık 109,47° >107° >104,5° sırasını izler. Bu karşılaştırma olağan moleküller içindir; her dört bölgeli merkezde yalnız çift sayısıyla bütün ölçümleri kesin hesaplayan formül değildir. Küçük halkalardaki bağ zorlanmaları gibi başka koşullar da geometriyi etkiler.",
+  "to": "CH₄, NH₃, H₂O karşılaştırmasında bağ açıları yaklaşık 109,47° > 107° > 104,5° sırasını izler. Bu karşılaştırma olağan moleküller içindir; her dört bölgeli merkezde yalnız çift sayısıyla bütün ölçümleri kesin hesaplayan formül değildir. Küçük halkalardaki bağ zorlanmaları gibi başka koşullar da geometriyi etkiler."
+ },
+ {
+  "from": "Molekülün kalıcı dipol davranışı bütün yük dağılımıyla ilişkilidir. Lise düzeyinde bağ dipol katkılarının yön ve büyüklüklerini birleştirerek simetrik iptali veya kalan yönü açıklayabiliriz. İki boyutlu çizimde okların uzunluklarını rastgele toplamak üç boyutlu iptali yakalamayabilir.",
+  "to": "Molekülün kalıcı dipol davranışı bütün yük dağılımıyla ilişkilidir. Temel düzeyde bağ dipol katkılarının yön ve büyüklüklerini birleştirerek simetrik iptali veya kalan yönü açıklayabiliriz. İki boyutlu çizimde okların uzunluklarını rastgele toplamak üç boyutlu iptali yakalamayabilir."
+ },
+ {
+  "from": "Kontrol paneli şematik göreli oklar kullanır; gerçek ölçülmüş dipol büyüklüğü göstermez. Tahmin kaydı düşünceni saklar, doğru çözüm veya XP kaydı oluşturmaz. Yanıtını yalnız renge veya ekran resmine değil Lewis sayımı ve üç boyutlu yönlerin mantığına dayandır.",
+  "to": "Kontrol paneli şematik göreli oklar kullanır; gerçek ölçülmüş dipol büyüklüğü göstermez. Yanıtını yalnız renge veya ekran resmine değil Lewis sayımı ve üç boyutlu yönlerin mantığına dayandır."
+ },
+ {
+  "from": "İzomer sayımı yaparken her çizim açısını ayrı molekül sayma. Gezginin bütün ağı kameraya göre çevirmesi ayrıca bağ etrafında dönme simülasyonu da değildir. Bağlantı isomerliği, bağ dönmesi ve kamera dönüşü üç ayrı işlemdir.",
+  "to": "İzomer sayımı yaparken her çizim açısını ayrı molekül sayma. Gezginin bütün ağı kameraya göre çevirmesi ayrıca bağ etrafında dönme simülasyonu da değildir. Bağlantı izomerliği, bağ dönmesi ve kamera dönüşü üç ayrı işlemdir."
+ },
+ {
+  "from": "Bu iki karşılaştırma koşulu farklıdır: aynı C sayısında dallanma ve farklı C sayısında zincir büyümesi. Erime sıcaklığı ise kristal paketleme ve simetriden de güçlü etkilenir; dallanmayla zorunlu ve tek yönlü değişim kuralı kurulmaz. Kaynaktaki erime verilerini aynı basit kaynama kuralıyla ezbere sıralama.",
+  "to": "Bu iki karşılaştırma koşulu farklıdır: aynı C sayısında dallanma ve farklı C sayısında zincir büyümesi. Erime sıcaklığı ise kristal paketleme ve simetriden de güçlü etkilenir; dallanmayla zorunlu ve tek yönlü değişim kuralı kurulmaz. Verilen erime verilerini aynı basit kaynama kuralıyla ezbere sıralama."
+ },
+ {
+  "from": "İlk olarak düz pentanı, sonra iki farklı dallanmış C₅H₁₂ yapısını karşılaştır. H toplamı ve mol kütlesi aynı kalırken en uzun yol ve monoklor yapı ürün sayısı değişir. Tahminini gerekçesiyle kaydetmek keşiftir; soru doğrusu, XP veya konu tamamlama kanıtı oluşturmaz.",
+  "to": "İlk olarak düz pentanı, sonra iki farklı dallanmış C₅H₁₂ yapısını karşılaştır. H toplamı ve mol kütlesi aynı kalırken en uzun yol ve monoklor yapı ürün sayısı değişir."
+ },
+ {
+  "from": "Bir maddenin sıvı veya gaz hâlini sıcaklık ve basınçla birlikte söyle. Etanalın 1 atm’de kaynama noktası yaklaşık 21 °C ise 25 °C’de açık, normal basınçtaki denge davranışını her zaman sıvı diye tanımlamak doğru değildir.",
+  "to": "Bir maddenin sıvı veya gaz hâlini sıcaklık ve basınçla birlikte söyle. Etanalın 1 atm’de kaynama noktası yaklaşık 21 °C ise 25 °C’de açık kapta ve normal basınçta onu sıvı diye tanımlamak doğru değildir."
+ },
+ {
+  "from": "0,0592 sayısı her sıcaklık için aynı katsayı değildir. Başka sıcaklıkta E=E°−[RT/(n F)]ln Q biçimi ve E°’nün o sıcaklıktaki değeri gerekir. Burada ln doğal logaritmadır; 10 tabanındaki logaritmaya geçerken ln Q≈2,303 log₁₀Q dönüşümü kullanılır. Buradaki etkileşim sıcaklığı 25°C’de tutar. Sorunun 0,059 veya 0,06 gibi açık yuvarlaması verilmişse bütün işlem boyunca o veriyi tutarlı kullan.",
+  "to": "0,0592 sayısı her sıcaklık için aynı katsayı değildir. Başka sıcaklıkta E=E°−[RT/(n F)]ln Q biçimi ve E°’nün o sıcaklıktaki değeri gerekir. Burada ln doğal logaritmadır; 10 tabanındaki logaritmaya geçerken ln Q≈2,303 log₁₀Q dönüşümü kullanılır. Buradaki etkileşimli model sıcaklığı 25°C’de tutar. Sorunun 0,059 veya 0,06 gibi açık yuvarlaması verilmişse bütün işlem boyunca o veriyi tutarlı kullan."
+ },
+ {
+  "from": "Cu/Cu²⁺ hücresinde seyreltiğe göre daha derişik katot için E=(0,0592/2)log₁₀(cderişik/cseyreltik) yazılır. Oran 10 olduğunda E=0,0296 V, oran 100 olduğunda 0,0592 V olur. Oranı iki kat yapmak gerilimi iki kat yapmaz; bağıntı logaritmiktir.",
+  "to": "Cu/Cu²⁺ hücresinde seyreltiğe göre daha derişik katot için E=(0,0592/2)log₁₀(c_derişik/c_seyreltik) yazılır. Oran 10 olduğunda E=0,0296 V, oran 100 olduğunda 0,0592 V olur. Oranı iki kat yapmak gerilimi iki kat yapmaz; bağıntı logaritmiktir."
+ },
+ {
+  "from": "İdeal yüzde 100 anot kullanımıyla n mol iki değerlikli Mg veya Zn en çok 2n mol elektronluk yük sağlayabilir. Qüst=zFn ilişkisi, sabit olarak verilmiş bir örnek yük ihtiyacına karşı stokun yeterli olup olmadığını kıyaslamaya yarar. Bu, maddenin tükendikçe yenilenmesi gerektiğini nicel gösterir.",
+  "to": "İdeal yüzde 100 anot kullanımıyla n mol iki değerlikli Mg veya Zn en çok 2n mol elektronluk yük sağlayabilir. Q_üst=zFn ilişkisi, sabit olarak verilmiş bir örnek yük ihtiyacına karşı stokun yeterli olup olmadığını kıyaslamaya yarar. Bu, maddenin tükendikçe yenilenmesi gerektiğini nicel gösterir."
+ }
+]

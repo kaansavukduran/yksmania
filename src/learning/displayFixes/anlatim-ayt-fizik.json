@@ -390,5 +390,209 @@
  {
   "from": "Keşifte önce aynı yük işaretleriyle uzaklığı değiştir, sonra yalnız test yükünün işaretini çevir. U,ΔU ve We’nin hangilerinin döndüğünü önceden tahmin et. Gerekçeyi modeldeki iki konumla karşılaştırmak bir alıştırmadır; gezgini açmak veya zamanı geçirmek XP ya da bağımsız doğru cevap oluşturmaz.",
   "to": "Keşifte önce aynı yük işaretleriyle uzaklığı değiştir, sonra yalnız test yükünün işaretini çevir. U, ΔU ve We’nin hangilerinin döndüğünü önceden tahmin et. Gerekçeyi modeldeki iki konumla karşılaştırmak bir alıştırmadır."
+ },
+ {
+  "from": "A’dan B’ye potansiyel farkı ΔV=VB−VA diye tanımladığında bütün enerji hesaplarını aynı sıralamayla yap. Örneğin VA=100 V, VB=20 V ise ΔV=−80 V olur. VAB gibi alt indis yazımlarında kaynağın hangi sırayı tanımladığını oku; bu anlatımda her zaman açık son eksi ilk ifadesi gösterilir.",
+  "to": "A’dan B’ye potansiyel farkı ΔV=VB−VA diye tanımladığında bütün enerji hesaplarını aynı sıralamayla yap. Örneğin VA=100 V, VB=20 V ise ΔV=−80 V olur. VAB gibi alt indis yazımlarında sorunun hangi sırayı tanımladığını oku; bu anlatımda her zaman açık son eksi ilk ifadesi gösterilir."
+ },
+ {
+  "from": "Sonucu volt/joule/newton birimleriyle tekrar oku. Aynı kaynakta yalnız q değişince V değişmemeli; aynı r’de açıyı değiştirince tek kaynak V’si aynı kalmalı; eş potansiyel yolun elektrik işi 0 çıkmalıdır. Tahmin–gerekçe kaydı puan değildir; farklı kaynak düzeni verilen bağımsız soruyu doğru kurabilmen öğrenme kanıtıdır.",
+  "to": "Sonucu volt/joule/newton birimleriyle tekrar oku. Aynı kaynakta yalnız q değişince V değişmemeli; aynı r’de açıyı değiştirince tek kaynak V’si aynı kalmalı; eş potansiyel yolun elektrik işi 0 çıkmalıdır. Farklı kaynak düzeni verilen bağımsız soruyu doğru kurabilmen öğrenme kanıtıdır."
+ },
+ {
+  "from": "Düzgün sabit alan ve sabit diğer kuvvetlerde ivme sabittir. Tanecik ilk hızsız bırakılırsa y=y0+½a_y t²,vy=a_y t olur. Alanı veya yük işaretini değiştirmek ivmeyi değiştirir; hareketi her seçimde baştan tanımlanan bir deney olarak hesaplarız.",
+  "to": "Düzgün sabit alan ve sabit diğer kuvvetlerde ivme sabittir. Tanecik ilk hızsız bırakılırsa y=y0+½a_y t², vy=a_y t olur. Alanı veya yük işaretini değiştirmek ivmeyi değiştirir; hareketi her seçimde baştan tanımlanan bir deney olarak hesaplarız."
+ },
+ {
+  "from": "Alan düşey, ilk hız yatay vx ise yatay ivme 0 koşulunda x=vx t olur. Düşeyde y=vy0 t+½a_y t²,vy=vy0+a_y t geçerlidir. Zaman bu iki hareketin ortak parametresidir; x için başka, y için başka bir uçuş süresi seçilmez.",
+  "to": "Alan düşey, ilk hız yatay vx ise yatay ivme 0 koşulunda x=vx t olur. Düşeyde y=vy0 t+½a_y t², vy=vy0+a_y t geçerlidir. Zaman bu iki hareketin ortak parametresidir; x için başka, y için başka bir uçuş süresi seçilmez."
+ },
+ {
+  "from": "Bu sıra özellikle büyük q/m veya düşük yatay hızda önemlidir. Sadece L/vx süresini kullanmak levhayı önceden geçen bir yörünge üretebilir. Keşifte zaman kontrolü ilk olayda biter; grafik ve HTML aynı olayı adlandırır. Negatif veya hayalî zaman kökü gelecekteki temas sayılmaz.",
+  "to": "Bu sıra özellikle büyük q/m veya düşük yatay hızda önemlidir. Sadece L/vx süresini kullanmak levhayı önceden geçen bir yörünge üretebilir. Keşifte zaman kontrolü ilk olayda biter; grafik ve sayısal sonuçlar aynı olayı adlandırır. Negatif veya hayalî zaman kökü gelecekteki temas sayılmaz."
+ },
+ {
+  "from": "Taneciğin yükü 0 seçildiğinde elektrik kuvveti 0 olur fakat yer çekimi açıksa düşey ivme−g kalır. Elektrik alanın sıfırlanması da diğer kuvvetleri silmez. Aynı anda hangi kuvvetin neden yok olduğunu açıklamak, iki etkiyi yanlışlıkla beraber kapatmaktan daha iyi bir deney okuması sağlar.",
+  "to": "Taneciğin yükü 0 seçildiğinde elektrik kuvveti 0 olur fakat yer çekimi açıksa düşey ivme −g kalır. Elektrik alanın sıfırlanması da diğer kuvvetleri silmez. Aynı anda hangi kuvvetin neden yok olduğunu açıklamak, iki etkiyi yanlışlıkla beraber kapatmaktan daha iyi bir deney okuması sağlar."
+ },
+ {
+  "from": "Keşif için zaman sürgüsü bir seçicidir; otomatik puan veya konu tamamlama üretmez. Modelin gösterdiği hareketi izlemekten sonra farklı q, m, V, d verilen bağımsız soruda aynı zinciri kurmaya geç. Akıcı öğrenme, formülün hangi fiziksel nedenden geldiğini açıklayabildiğinde güçlenir.",
+  "to": "Keşif için zaman sürgüsü bir seçicidir. Modelin gösterdiği hareketi izlemekten sonra farklı q, m, V, d verilen bağımsız soruda aynı zinciri kurmaya geç. Akıcı öğrenme, formülün hangi fiziksel nedenden geldiğini açıklayabildiğinde güçlenir."
+ },
+ {
+  "from": "Doğrusal ideal sığaçta C=Q/|V|,dolayısıyla Q=C|V| olur. C’nin birimi farad, F=Coulomb/Volt’tur. Aynı geometride iki kat gerilim iki kat yük ayırır; oran C aynı kalır. Sığa, sadece o anda depolanmış yük miktarının başka adı değildir.",
+  "to": "Doğrusal ideal sığaçta C=Q/|V|, dolayısıyla Q=C|V| olur. C’nin birimi farad, F=Coulomb/Volt’tur. Aynı geometride iki kat gerilim iki kat yük ayırır; oran C aynı kalır. Sığa, sadece o anda depolanmış yük miktarının başka adı değildir."
+ },
+ {
+  "from": "Günlük sığaçlarda mikrofarad, nanofarad ve pikofarad sık kullanılır:1 μF=10⁻⁶ F, 1 nF=10⁻⁹ F, 1 pF=10⁻¹² F. 3 μF ile 2 nF’yi toplarken aynı öneke dönüştürmeden sayıları birleştirme. Q=C V hesabında voltla farad kullanmak coulomb verir.",
+  "to": "Günlük sığaçlarda mikrofarad, nanofarad ve pikofarad sık kullanılır: 1 μF=10⁻⁶ F, 1 nF=10⁻⁹ F, 1 pF=10⁻¹² F. 3 μF ile 2 nF’yi toplarken aynı öneke dönüştürmeden sayıları birleştirme. Q=C V hesabında voltla farad kullanmak coulomb verir."
+ },
+ {
+  "from": "Kenar etkileri ihmal edilen tam doldurulmuş paralel levha sığacında C=εA/d olur. A tek levhanın karşılıklı örtüşen alanı, d dik aralık,ε=ε0εr ortamın permitivitesidir. Alan büyürse daha fazla yük aynı gerilimde ayrılabilir; aralık büyürse aynı Q daha büyük potansiyel farkı oluşturduğundan C azalır.",
+  "to": "Kenar etkileri ihmal edilen tam doldurulmuş paralel levha sığacında C=εA/d olur. A tek levhanın karşılıklı örtüşen alanı, d dik aralık, ε=ε0εr ortamın permitivitesidir. Alan büyürse daha fazla yük aynı gerilimde ayrılabilir; aralık büyürse aynı Q daha büyük potansiyel farkı oluşturduğundan C azalır."
+ },
+ {
+  "from": "Bu bağı birimle denetle:farad/metre·metrekare/metre=farad. İki levha olduğu için A’yı otomatik 2A yapma; formüldeki A karşılıklı örtüşen tek alanı temsil eder. Levhaların yalnız bir bölümü örtüşüyorsa etkin alan buna göre seçilir; tam dolduran tek ortam varsayımı değişirse yeni geometri modeli gerekir.",
+  "to": "Bu bağı birimle denetle: farad/metre·metrekare/metre=farad. İki levha olduğu için A’yı otomatik 2A yapma; formüldeki A karşılıklı örtüşen tek alanı temsil eder. Levhaların yalnız bir bölümü örtüşüyorsa etkin alan buna göre seçilir; tam dolduran tek ortam varsayımı değişirse yeni geometri modeli gerekir."
+ },
+ {
+  "from": "Levhalar arasına uygun yalıtkan konduğunda moleküler kutuplanma oluşur. Tam dolduran doğrusal dielektrikte εr>1 ise aynı geometri için C,εr katına çıkar. Dielektrik, metalik bir kısa devre oluşturmak yerine yükler arasındaki elektriksel etkileşimi kutuplanma yoluyla değiştirir.",
+  "to": "Levhalar arasına uygun yalıtkan konduğunda moleküler kutuplanma oluşur. Tam dolduran doğrusal dielektrikte εr>1 ise aynı geometri için C, εr katına çıkar. Dielektrik, metalik bir kısa devre oluşturmak yerine yükler arasındaki elektriksel etkileşimi kutuplanma yoluyla değiştirir."
+ },
+ {
+  "from": "Sığaç yüklenirken gerilim 0’dan son V’ye artar. Küçük dq yükünü eklemek için V(q)dq=q dq/C kadar iş gerekir. Q–V grafiğinde bu iş üçgen alanıdır:U=½Q V. Aynı sonuç U=½C V² ve U=Q²/(2C) biçimlerinde yazılır; bu enerji elektrik alanında depolanır.",
+  "to": "Sığaç yüklenirken gerilim 0’dan son V’ye artar. Küçük dq yükünü eklemek için V(q)dq=q dq/C kadar iş gerekir. Q–V grafiğinde bu iş üçgen alanıdır: U=½Q V. Aynı sonuç U=½C V² ve U=Q²/(2C) biçimlerinde yazılır; bu enerji elektrik alanında depolanır."
+ },
+ {
+  "from": "V sabitken U=C V²/2 olduğundan C artışı sığaç enerjisini artırır; üreteç iş yapıp yük sağlar. Q sabitken U=Q²/(2C),dolayısıyla C artışı enerjiyi azaltır. Dielektriğin içeri çekilmesi gibi mekanik enerji alışverişleri bu farkın bir parçasını açıklayabilir.",
+  "to": "V sabitken U=C V²/2 olduğundan C artışı sığaç enerjisini artırır; üreteç iş yapıp yük sağlar. Q sabitken U=Q²/(2C), dolayısıyla C artışı enerjiyi azaltır. Dielektriğin içeri çekilmesi gibi mekanik enerji alışverişleri bu farkın bir parçasını açıklayabilir."
+ },
+ {
+  "from": "Sonuçları Q=C V ve enerji bağıntısıyla geri denetle. Levhalardaki işaretler eşit-zıt, modelin toplam net yükü 0 olabilir; bu Q = 0 demek değildir. Keşif kaydı ayrı saklanır, puan üretmez. Öğrenme kanıtı, bağımsız sorudaki bağlantı koşulunu doğru seçip yeni Q veya V’yi açıklayabilmendir.",
+  "to": "Sonuçları Q=C V ve enerji bağıntısıyla geri denetle. Levhalardaki işaretler eşit-zıt, modelin toplam net yükü 0 olabilir; bu Q = 0 demek değildir. Öğrenme kanıtı, bağımsız sorudaki bağlantı koşulunu doğru seçip yeni Q veya V’yi açıklayabilmendir."
+ },
+ {
+  "from": "Sayfada +x sağ, +y yukarı, +z okuyucuya doğru seçersek ⊙ sayfadan dışarı,⊗ sayfanın içine yönü anlatır. Pozitif z yönlü tel akımı, okuyucuya gelen akımdır. Bu işaretleri tanımlamadan yalnız daire/çarpı çizmek üç boyutlu yön sorusunu belirsiz bırakır.",
+  "to": "Sayfada +x sağ, +y yukarı, +z okuyucuya doğru seçersek ⊙ sayfadan dışarı, ⊗ sayfanın içine yönü anlatır. Pozitif z yönlü tel akımı, okuyucuya gelen akımdır. Bu işaretleri tanımlamadan yalnız daire/çarpı çizmek üç boyutlu yön sorusunu belirsiz bırakır."
+ },
+ {
+  "from": "Bütün vektörler sayfa düzleminde olmak zorunda değildir. Sayfaya dik telin çevresinde B sayfa içinde dolaşır; halka sayfa üzerinde yatıyorsa merkezindeki B sayfaya diktir. Aynı⊙ simgesi bir çizimde akımı, başkasında alanı gösterebilir; yanındaki I veya B etiketi hangi nicelik olduğunu belirtmelidir.",
+  "to": "Bütün vektörler sayfa düzleminde olmak zorunda değildir. Sayfaya dik telin çevresinde B sayfa içinde dolaşır; halka sayfa üzerinde yatıyorsa merkezindeki B sayfaya diktir. Aynı ⊙ simgesi bir çizimde akımı, başkasında alanı gösterebilir; yanındaki I veya B etiketi hangi nicelik olduğunu belirtmelidir."
+ },
+ {
+  "from": "Sayfadan dışarı +z akımında sağdaki noktada B yukarı, soldaki noktada aşağıdır; çember dolaşımı saatin tersidir. Akımı−z’ye çevirince bütün bu yönler ters döner. Şekli döndürdüğünde de aynı sağ el kuralı geçerlidir; “telin sağı her zaman içeri” gibi gözlem düzleminden kopmuş ezber kullanılmaz.",
+  "to": "Sayfadan dışarı +z akımında sağdaki noktada B yukarı, soldaki noktada aşağıdır; çember dolaşımı saatin tersidir. Akımı −z’ye çevirince bütün bu yönler ters döner. Şekli döndürdüğünde de aynı sağ el kuralı geçerlidir; “telin sağı her zaman içeri” gibi gözlem düzleminden kopmuş ezber kullanılmaz."
+ },
+ {
+  "from": "Vakumda sonsuz uzun tel yaklaşımında B=μ0|I|/(2πr)=2K|I|/r olur; K=10⁻⁷ T·m/A,μ0=4π×10⁻⁷ T·m/A’dır. r tele dik uzaklıktır. Akım iki kat olursa B iki kat, r iki kat olursa B yarı olur. Elektrik alanın noktasal kaynaktaki ters kare bağı burada geçmez.",
+  "to": "Vakumda sonsuz uzun tel yaklaşımında B=μ0|I|/(2πr)=2K|I|/r olur; K=10⁻⁷ T·m/A, μ0=4π×10⁻⁷ T·m/A’dır. r tele dik uzaklıktır. Akım iki kat olursa B iki kat, r iki kat olursa B yarı olur. Elektrik alanın noktasal kaynaktaki ters kare bağı burada geçmez."
+ },
+ {
+  "from": "+z yönlü tel (x0; y0) noktasındaysa gözlem noktasına fark Δx,Δy için B=(μ0I/(2πr²))(−Δy;Δx) yazılır. Büyüklüğün 1/r oluşu ile bileşen formülündeki r² çelişmez; paydaki konum farkı bir r daha taşır. İşaretli I akımın dışarı/içeri yönünü içerir.",
+  "to": "+z yönlü tel (x0; y0) noktasındaysa gözlem noktasına fark Δx, Δy için B=(μ0I/(2πr²))(−Δy;Δx) yazılır. Büyüklüğün 1/r oluşu ile bileşen formülündeki r² çelişmez; paydaki konum farkı bir r daha taşır. İşaretli I akımın dışarı/içeri yönünü içerir."
+ },
+ {
+  "from": "Örneğin telin sağında Δy=0,Δx>0 olduğunda pozitif I için By>0 çıkar. Üstünde Δx = 0,Δy>0 ise Bx<0’dır. Bu iki sınır sağ el kuralını bağımsız doğrular. Gezgindeki oklar bu hesaplanan bileşenlerden çizilir; yalnız sabit yönlü süs okları değildir.",
+  "to": "Örneğin telin sağında Δy=0, Δx>0 olduğunda pozitif I için By>0 çıkar. Üstünde Δx = 0, Δy>0 ise Bx<0’dır. Bu iki sınır sağ el kuralını bağımsız doğrular. Gezgindeki oklar bu hesaplanan bileşenlerden çizilir; yalnız sabit yönlü süs okları değildir."
+ },
+ {
+  "from": "Sayfa üzerindeki halkada akım saatin tersine dolaşıyorsa merkez B+z, dışarıdır. N eş merkezli, aynı yarıçaplı ve birbirine çok yakın sarımın ideal katkıları aynı yöndeyse büyüklük N kat olur. Bu formül halkanın her noktasındaki alanı vermez; yalnız merkez için kullanılır.",
+  "to": "Sayfa üzerindeki halkada akım saatin tersine dolaşıyorsa merkez B +z, dışarıdır. N eş merkezli, aynı yarıçaplı ve birbirine çok yakın sarımın ideal katkıları aynı yöndeyse büyüklük N kat olur. Bu formül halkanın her noktasındaki alanı vermez; yalnız merkez için kullanılır."
+ },
+ {
+  "from": "Önce bir noktada alanın yönünü tahmin et, sonra modelin vektör bileşenleriyle karşılaştır. Yön kadar büyüklük oranını da açıklamayı dene. Keşif seçimi ve gerekçe ayrı saklanır; bağımsız doğru cevap veya XP üretmez. Öğrenme, başka geometri verilince kaynağı ve gözlem noktasını doğru seçerek devam eder.",
+  "to": "Önce bir noktada alanın yönünü tahmin et, sonra modelin vektör bileşenleriyle karşılaştır. Yön kadar büyüklük oranını da açıklamayı dene. Öğrenme, başka geometri verilince kaynağı ve gözlem noktasını doğru seçerek devam eder."
+ },
+ {
+  "from": "Etkileşimde zaman imlecini iki kuvvet aralığında ilerlet; işaretli alanla p(t) değerini karşılaştır. Ardından çarpışma katsayısını değiştirirken aynı ilk momentumu koruyup kinetik enerjinin nasıl değiştiğini tahmin et. Keşif kaydı puan veya ustalık değildir; öğrenme kanıtını bağımsız soruda koşulları seçerek üret.",
+  "to": "Etkileşimde zaman imlecini iki kuvvet aralığında ilerlet; işaretli alanla p(t) değerini karşılaştır. Ardından çarpışma katsayısını değiştirirken aynı ilk momentumu koruyup kinetik enerjinin nasıl değiştiğini tahmin et. Öğrenme kanıtını bağımsız soruda koşulları seçerek üret."
+ },
+ {
+  "from": "Keşifte önce yükü ve iki açıyı seç, hangi ipin daha fazla gerildiğini tahmin et. Çizimde oklar gerçek hesaplanan bileşenlere göre çizilir; ortak ok ölçeği ayrıca belirtilir. Gerekçeni kaydetmek puan değildir. Yeni bir soruda farklı açı referansını doğru seçebildiğinde bağımsız öğrenme kanıtı oluşur.",
+  "to": "Keşifte önce yükü ve iki açıyı seç, hangi ipin daha fazla gerildiğini tahmin et. Çizimde oklar gerçek hesaplanan bileşenlere göre çizilir; ortak ok ölçeği ayrıca belirtilir. Yeni bir soruda farklı açı referansını doğru seçebildiğinde bağımsız öğrenme kanıtı oluşur."
+ },
+ {
+  "from": "Sabit eksenli düzlemsel dönmede net tork sıfırsa açısal ivme sıfırdır; cisim başlangıçta dönüyorsa sabit açısal hızla dönmeye devam edebilir. Kaynaklardaki “tork sıfırsa dönemez” kısaltması yalnız başlangıçta durgun denge bağlamında okunmalıdır. Başlangıç koşulunu genel dinamik yasadan ayır.",
+  "to": "Sabit eksenli düzlemsel dönmede net tork sıfırsa açısal ivme sıfırdır; cisim başlangıçta dönüyorsa sabit açısal hızla dönmeye devam edebilir. Sık kullanılan “tork sıfırsa dönemez” kısaltması yalnız başlangıçta durgun denge bağlamında okunmalıdır. Başlangıç koşulunu genel dinamik yasadan ayır."
+ },
+ {
+  "from": "Keşifte kuvveti veya konumu tek tek değiştir; saat yönü ile saatin tersi işaretini önce tahmin et. Sıfır kuvveti, sıfır kolu ve karşılıklı momentleri ayrı dene. Çizim gerçek hesaplanan nokta, bileşen ve dik ayağı kullanır; onu okumak XP değildir, bağımsız problem çözümüne hazırlıktır.",
+  "to": "Keşifte kuvveti veya konumu tek tek değiştir; saat yönü ile saatin tersi işaretini önce tahmin et. Sıfır kuvveti, sıfır kolu ve karşılıklı momentleri ayrı dene. Çizim gerçek hesaplanan nokta, bileşen ve dik ayağı kullanır; onu okumak bağımsız problem çözümüne hazırlıktır."
+ },
+ {
+  "from": "Keşifte eş kütleli hücreleri çıkarıp ekle ve merkezi hesaplamadan yönünü tahmin et. Toplam kalan kütle, x ve y momentleri ve merkez koordinatları birlikte gösterilir. Hücre seçimi keşif kaydıdır; süre geçirmek veya bütün hücreleri açmak öğrenme puanı üretmez. Yeni dağılımda doğru payda ve moment kurman bağımsız kanıttır.",
+  "to": "Keşifte eş kütleli hücreleri çıkarıp ekle ve merkezi hesaplamadan yönünü tahmin et. Toplam kalan kütle, x ve y momentleri ve merkez koordinatları birlikte gösterilir. Yeni dağılımda doğru payda ve moment kurman bağımsız kanıttır."
+ },
+ {
+  "from": "Açık kayış bağlı kasnaklar aynı, çapraz kayış bağlılar ters yönde döner; kayma yok varsayımı gerekir. Aynı mile sabitlenmiş iki farklı yarıçaplı kasnak aynı turu yapar, çevresel yolları farklıdır. Kaynağın diş sayısı ile devir sayısını aynı n harfiyle göstermesi yerine her niceliği açık adlandır.",
+  "to": "Açık kayış bağlı kasnaklar aynı, çapraz kayış bağlılar ters yönde döner; kayma yok varsayımı gerekir. Aynı mile sabitlenmiş iki farklı yarıçaplı kasnak aynı turu yapar, çevresel yolları farklıdır. Diş sayısı ile devir sayısını aynı n harfiyle göstermek yerine her niceliği açık adlandır."
+ },
+ {
+  "from": "Makara ağırlığı nedeniyle yük için oran 1’den küçükken ideal düzeneğin ısı kaybı yine sıfır olabilir; aksesuarın potansiyeli de enerji taşır. Gezginde ideal makara için bu iki potansiyel ayrı, sürtünmeli rampa için ısı ayrı gösterilir. Önce tahmin edip sonra bilanço kurmak öğrenme alıştırmasıdır; kontrolü tıklamak kendi başına XP vermez.",
+  "to": "Makara ağırlığı nedeniyle yük için oran 1’den küçükken ideal düzeneğin ısı kaybı yine sıfır olabilir; aksesuarın potansiyeli de enerji taşır. Gezginde ideal makara için bu iki potansiyel ayrı, sürtünmeli rampa için ısı ayrı gösterilir. Önce tahmin edip sonra bilanço kurmak öğrenme alıştırmasıdır."
+ },
+ {
+  "from": "Gezginde sol ve sağ kaynaklar sabittir, hedefin yüksekliği ile üç yükün işareti değişebilir. Her katkı ve toplam aynı kuvvet ölçeğiyle çizilir. Alan ve kuvvet sonuçları ayrı HTML değerlerle de verilir; renk tek başına kaynak kimliğinin veya yük işaretinin yerine geçmez.",
+  "to": "Gezginde sol ve sağ kaynaklar sabittir, hedefin yüksekliği ile üç yükün işareti değişebilir. Her katkı ve toplam aynı kuvvet ölçeğiyle çizilir. Alan ve kuvvet sonuçları ayrı sayısal değerlerle de verilir; renk tek başına kaynak kimliğinin veya yük işaretinin yerine geçmez."
+ },
+ {
+  "from": "Önce bir bileşenin sıfır olup olmayacağını tahmin et, sonra vektör toplamını gerekçenle karşılaştır. Farklı kaynakların aynı hedef üzerindeki kuvvetlerini toplamakla etki–tepkiyi toplamak arasındaki ayrımı açıkça söyle. Keşif, kayıt ve zaman XP sağlamaz; bağımsız yeni soruda doğru hedef, işaret ve koşul seçimi öğrenme kanıtıdır.",
+  "to": "Önce bir bileşenin sıfır olup olmayacağını tahmin et, sonra vektör toplamını gerekçenle karşılaştır. Farklı kaynakların aynı hedef üzerindeki kuvvetlerini toplamakla etki–tepkiyi toplamak arasındaki ayrımı açıkça söyle. Bağımsız yeni soruda doğru hedef, işaret ve koşul seçimi öğrenme kanıtıdır."
+ },
+ {
+  "from": "Karesel sürüklenme yaklaşımında Fd = c v², c = ρCdA/2 yazılır. ρ hava yoğunluğu, Cd şekil ve akış rejimine bağlı boyutsuz katsayı, A harekete dik izdüşüm alanıdır; ıslanan bütün yüzey alanı değildir. Kaynakların K A v² yazımında K = ρCd/2 seçilebilir. Çok küçük Reynolds sayısında doğrusal direnç gibi başka modeller gerekebilir; v² evrensel yasa diye sunulmaz.",
+  "to": "Karesel sürüklenme yaklaşımında Fd = c v², c = ρCdA/2 yazılır. ρ hava yoğunluğu, Cd şekil ve akış rejimine bağlı boyutsuz katsayı, A harekete dik izdüşüm alanıdır; ıslanan bütün yüzey alanı değildir. K A v² yazımında K = ρCd/2 seçilebilir. Çok küçük Reynolds sayısında doğrusal direnç gibi başka modeller gerekebilir; v² evrensel yasa diye sunulmaz."
+ },
+ {
+  "from": "Limit sürate çok yaklaşmış bölümde kinetik yaklaşık sabit olsa da cisim yol almaya ve potansiyel kaybetmeye devam eder; bu aktarım hava tarafına gider. Sabit sürat, enerji aktarımı sıfır demek değildir. Kuvvet–hız gücü ile aktarılan enerji miktarını ayır; bilimsel kaynağın yaklaşık grafiği tüm sistem enerjisinin yok olduğunu göstermez.",
+  "to": "Limit sürate çok yaklaşmış bölümde kinetik yaklaşık sabit olsa da cisim yol almaya ve potansiyel kaybetmeye devam eder; bu aktarım hava tarafına gider. Sabit sürat, enerji aktarımı sıfır demek değildir. Kuvvet–hız gücü ile aktarılan enerji miktarını ayır; yaklaşık enerji grafiği tüm sistem enerjisinin yok olduğunu göstermez."
+ },
+ {
+  "from": "Her sonucu üç denetimle kapat: birim, sınır ve kuvvet yönü. c v² birimi newton; c sıfıra giderken ideal düşüşe yaklaşılır; durgun havada aşağı hız için direnç yukarıdır. İlk yer temasında durdurulan keşfi okumak veya süre geçirmek XP vermez. Öğrenme kanıtı bağımsız yeni soruyu koşullarını seçerek çözmendir.",
+  "to": "Her sonucu üç denetimle kapat: birim, sınır ve kuvvet yönü. c v² birimi newton; c sıfıra giderken ideal düşüşe yaklaşılır; durgun havada aşağı hız için direnç yukarıdır. Öğrenme kanıtı bağımsız yeni soruyu koşullarını seçerek çözmendir."
+ },
+ {
+  "from": "Sonuç kontrolünde g ve zaman birimlerini, y ≥ 0 uçuş sınırını ve her hızın işaretini doğrula. Aynı yüksekliğe dönüş simetrisini zemin farklıyken kullanma. Bu kontrollü keşif otomatik başarı veya XP üretmez; yeni bir yükseklik ve ilk hızla bağımsız problem kurabildiğinde mantığı başka bağlama aktarmış olursun.",
+  "to": "Sonuç kontrolünde g ve zaman birimlerini, y ≥ 0 uçuş sınırını ve her hızın işaretini doğrula. Aynı yüksekliğe dönüş simetrisini zemin farklıyken kullanma. Yeni bir yükseklik ve ilk hızla bağımsız problem kurabildiğinde mantığı başka bağlama aktarmış olursun."
+ },
+ {
+  "from": "Başlangıç zemindeyse v0 > 0 yukarı uçuşun sonraki kökü seçilir; v0 ≤ 0 için ilk temas zaten t = 0’dır. Aşağı hızlı atışta kök hesabında yakın iki sayının farkı sayısal hata yaratabilir; eşdeğer 2y0/[√(v0² + 2gy0) − v0] biçimi kullanılabilir. Fizik modeliyle sayısal uygulamanın aynı olayı döndürmesi gerekir.",
+  "to": "Başlangıç zemindeyse v0 > 0 yukarı uçuşun sonraki kökü seçilir; v0 ≤ 0 için ilk temas zaten t = 0’dır. Aşağı hızlı atışta kök hesabında yakın iki sayının farkı sayısal hata yaratabilir; eşdeğer 2y0/[√(v0² + 2gy0) − v0] biçimi kullanılabilir. İki biçim aynı sonucu verir."
+ },
+ {
+  "from": "Uçuşu sağa yapmak için u > 0 seçilebilir; sola atışta u < 0 olur ve x de negatif gider. Yatay yol uzunluğu |u|T, yönlü menzil uT’dir. İşaretli vektörle sürati karıştırmamak için toplam hız (u, −gt), sürat ise √(u² + g²t²) diye ayrı yazılır. Sayısal keşif koordinatları ile bu HTML sonuçları aynı denklemi kullanır.",
+  "to": "Uçuşu sağa yapmak için u > 0 seçilebilir; sola atışta u < 0 olur ve x de negatif gider. Yatay yol uzunluğu |u|T, yönlü menzil uT’dir. İşaretli vektörle sürati karıştırmamak için toplam hız (u, −gt), sürat ise √(u² + g²t²) diye ayrı yazılır. Keşif koordinatları ile sayısal sonuçlar aynı denklemi kullanır."
+ },
+ {
+  "from": "u ≠ 0 iken t = x/u elenirse y = h − gx²/(2u²) paraboli elde edilir. Bu yörünge denklemi konumları bağlar; hızın iki bileşeni hâlâ gereklidir. u = 0 dalında x üzerinden bölme yapılamaz, cisim aynı modelin serbest düşme özel durumudur. Program bu uç durumda bozuk veya sonsuz bir eğri çizmemelidir.",
+  "to": "u ≠ 0 iken t = x/u elenirse y = h − gx²/(2u²) paraboli elde edilir. Bu yörünge denklemi konumları bağlar; hızın iki bileşeni hâlâ gereklidir. u = 0 dalında x üzerinden bölme yapılamaz, cisim aynı modelin serbest düşme özel durumudur."
+ },
+ {
+  "from": "Yükseklik veya g değişince artık önceki toplam zamanı ezberden kullanma. Koordinat alanı bütün uçuşa göre sabit kalır; seçili an topu ekranda keyfî kaydırarak farklı hız hissi yaratmaz. Model elle adımlanır ve durgun görüntüde bile tüm sonuçlar HTML’de okunur. Keşif başarı veya XP sayılmaz; bağımsız sorular mantığı yeniden kurmanı ister.",
+  "to": "Yükseklik veya g değişince artık önceki toplam zamanı ezberden kullanma. Koordinat alanı bütün uçuşa göre sabit kalır; seçili an topu ekranda keyfî kaydırarak farklı hız hissi yaratmaz. Model elle adımlanır. Bağımsız sorular mantığı yeniden kurmanı ister."
+ },
+ {
+  "from": "Sürat √[vx0² + (vy0 − gt)²] olup iki bileşenin doğrudan toplamı değildir. vx0 sıfır dalında dik atış, vy0 sıfır dalında yatay atış elde edilir. Bu özel sınırlar ayrı fizik yasaları değil aynı denklemin başlangıç koşullarıdır. Program sıfır yatay bileşende x/vx0 gibi tanımsız bölme yapmamalıdır.",
+  "to": "Sürat √[vx0² + (vy0 − gt)²] olup iki bileşenin doğrudan toplamı değildir. vx0 sıfır dalında dik atış, vy0 sıfır dalında yatay atış elde edilir. Bu özel sınırlar ayrı fizik yasaları değil aynı denklemin başlangıç koşullarıdır. Sıfır yatay bileşende x/vx0 gibi tanımsız bölme yapılmaz."
+ },
+ {
+  "from": "Başlangıç bir balkonda ve hedef zemindeyse toplam süre artık yalnız 2vy0/g olmaz; ek yükseklik vardır. Bu durumda 45° zorunlu en iyi açı değildir ve tamamlayıcı açıların menzilleri eşit olmak zorunda değildir. Rüzgâr/direnç, eğimli hedef veya değişken g de bu özel sin(2θ) kuralını değiştirir. Keşif bu koşulu ayrı HTML uyarısında belirtir.",
+  "to": "Başlangıç bir balkonda ve hedef zemindeyse toplam süre artık yalnız 2vy0/g olmaz; ek yükseklik vardır. Bu durumda 45° zorunlu en iyi açı değildir ve tamamlayıcı açıların menzilleri eşit olmak zorunda değildir. Rüzgâr/direnç, eğimli hedef veya değişken g de bu özel sin(2θ) kuralını değiştirir. Keşif bu koşulu ayrı bir uyarıyla belirtir."
+ },
+ {
+  "from": "h = 0 ve ilk düşey bileşen aşağı veya sıfırsa ilk temas t = 0’dır; yere doğru fırlatılmış top için gizli bir havada kalma süresi üretilmez. θ = 90° ise yatay menzil sıfırdır ama düşey hareket hâlâ anlamlıdır. Sıfır süre ve sıfır yatay açıklık durumlarında kamera sonsuza büyüyüp okları savurmamalıdır.",
+  "to": "h = 0 ve ilk düşey bileşen aşağı veya sıfırsa ilk temas t = 0’dır; yere doğru fırlatılmış top için gizli bir havada kalma süresi üretilmez. θ = 90° ise yatay menzil sıfırdır ama düşey hareket hâlâ anlamlıdır."
+ },
+ {
+  "from": "Bir duvar x = d ise t = d/vx0 bulunur; sonra y(t) ve 0 ≤ t ≤ T denetlenir. Başlangıç hız doğrusunun duvardaki uzantısı ile gerçek çarpma noktası farklıdır: düşey sapma gt²/2’dir. Kaynaktaki yanlış bir cevap anahtarı bu geometriyi değiştirmez; uygulamadaki her özgün duvar sorusunda noktalar ve düşey fark açıkça tanımlanır.",
+  "to": "Bir duvar x = d ise t = d/vx0 bulunur; sonra y(t) ve 0 ≤ t ≤ T denetlenir. Başlangıç hız doğrusunun duvardaki uzantısı ile gerçek çarpma noktası farklıdır: düşey sapma gt²/2’dir. Her özgün duvar sorusunda noktalar ve düşey fark açıkça tanımlanır."
+ },
+ {
+  "from": "Her karşılaştırmada değişmeyenleri söyle: u mu, vx mi, vy mi aynı? Bunlar farklı deneylerdir. Zaman elle adımlanır, bütün sonuçlar çizim dışında HTML’de bulunur ve gerekçe en fazla 120 karakterle ayrı kaydedilir. Tahmini modelle karşılaştırmak otomatik ustalık veya XP değildir; bağımsız yeni problemde doğru koşulu seçmek asıl hedeftir.",
+  "to": "Her karşılaştırmada değişmeyenleri söyle: u mu, vx mi, vy mi aynı? Bunlar farklı deneylerdir. Zaman elle adımlanır. Bağımsız yeni problemde doğru koşulu seçmek asıl hedeftir."
+ },
+ {
+  "from": "K0 ≤ fL ise blok yaya varmadan veya tam temas noktasında durabilir; yay enerjisi sıfırdır. Yaya ulaşırsa ilk duruş sıkışması pozitif kök fz + kz²/2 = K0 − fL’den bulunur. Program bu kökü geçip negatif kinetik çizmez, ilk duruştan sonraki geri hareketi statik sürtünme koşulunu çözmeden otomatik üretmez.",
+  "to": "K0 ≤ fL ise blok yaya varmadan veya tam temas noktasında durabilir; yay enerjisi sıfırdır. Yaya ulaşırsa ilk duruş sıkışması pozitif kök fz + kz²/2 = K0 − fL’den bulunur. Model bu kökü geçip negatif kinetik çizmez, ilk duruştan sonraki geri hareketi statik sürtünme koşulunu çözmeden otomatik üretmez."
+ },
+ {
+  "from": "Önce tahmin et: μ artarsa ilk durma noktası nasıl değişir, yay sertleşince sıkışma ne olur, v0 iki kat olunca K0 kaç kat olur? Sonra yalnız bir parametreyi değiştirip denklemi ve gerçek grafiği karşılaştır. Keşif ayrı kaydedilir, otomatik XP veya ustalık doğurmaz; yeni problemde sistem sınırını ve ilk duruşu kendin seçmen gerekir.",
+  "to": "Önce tahmin et: μ artarsa ilk durma noktası nasıl değişir, yay sertleşince sıkışma ne olur, v0 iki kat olunca K0 kaç kat olur? Sonra yalnız bir parametreyi değiştirip denklemi ve gerçek grafiği karşılaştır. Yeni problemde sistem sınırını ve ilk duruşu kendin seçmen gerekir."
+ },
+ {
+  "from": "Atölyede kuvvetleri değiştirirken önce “duruyor” ile “yukarı kayıyor” hâllerini aynı koşullarda karşılaştır. Ardından tek bir m veya θ değiştir; normalin, statik sınırın ve ivmenin birlikte nasıl değiştiğini söyle. Tahminin yanlışsa yalnız sonucu ezberlemek yerine hangi rejim koşulunu atladığını bul. Modeli açmak veya zaman geçirmek öğrenme puanı sayılmaz; bağımsız sorularda mantığı yeniden kurman beklenir.",
+  "to": "Atölyede kuvvetleri değiştirirken önce “duruyor” ile “yukarı kayıyor” hâllerini aynı koşullarda karşılaştır. Ardından tek bir m veya θ değiştir; normalin, statik sınırın ve ivmenin birlikte nasıl değiştiğini söyle. Tahminin yanlışsa yalnız sonucu ezberlemek yerine hangi rejim koşulunu atladığını bul. Bağımsız sorularda mantığı yeniden kurman beklenir."
+ },
+ {
+  "from": "Bu laboratuvarda bütün seçili [0, T] yörüngesi sabit bir konum ölçeğine yerleştirilir; zaman kaydırıcısını oynatınca kamera cismin peşinden kaymaz. Konum m, hız m/s ve ivme m/s² panelleri farklı birimlerdir; ok uzunlukları bu farklı birimlerde birbirleriyle karşılaştırılmaz. Önce yön değişimini tahmin et, sonra anı ve yolu kanıtla; açılan görsel veya geçen süre ayrı bir başarı kaydı oluşturmaz.",
+  "to": "Bu laboratuvarda bütün seçili [0, T] yörüngesi sabit bir konum ölçeğine yerleştirilir; zaman kaydırıcısını oynatınca kamera cismin peşinden kaymaz. Konum m, hız m/s ve ivme m/s² panelleri farklı birimlerdir; ok uzunlukları bu farklı birimlerde birbirleriyle karşılaştırılmaz. Önce yön değişimini tahmin et, sonra anı ve yolu kanıtla."
+ },
+ {
+  "from": "Büyüklükleri a,b ve aralarındaki açı α olan iki vektörde R²=a²+b²+2 ab cosα’dır. Açı ortak başlangıçtaki iki ok arasında ölçülür. 0° aynı yönde a+b, 180° zıt yönde |a−b| verir. Böylece |a−b|≤R≤a+b; normu bu aralığın dışında bulmak işlem veya açı hatasıdır.",
+  "to": "Büyüklükleri a, b ve aralarındaki açı α olan iki vektörde R²=a²+b²+2 ab cosα’dır. Açı ortak başlangıçtaki iki ok arasında ölçülür. 0° aynı yönde a+b, 180° zıt yönde |a−b| verir. Böylece |a−b|≤R≤a+b; normu bu aralığın dışında bulmak işlem veya açı hatasıdır."
+ },
+ {
+  "from": "r 0=(30,40) m ve bağıl hız (−3,−4) m/s ise iki bileşen de 10 s sonra sıfır olur. Aynı anda ve aynı yerde oldukları için karşılaşırlar. Bağıl hız (−3,0) olsaydı x bileşeni sıfırlansa bile y uzaklığı 40 m kalırdı; iki boyutta tek bir ekseni kontrol etmek yeterli değildir.",
+  "to": "r₀=(30,40) m ve bağıl hız (−3,−4) m/s ise iki bileşen de 10 s sonra sıfır olur. Aynı anda ve aynı yerde oldukları için karşılaşırlar. Bağıl hız (−3,0) olsaydı x bileşeni sıfırlansa bile y uzaklığı 40 m kalırdı; iki boyutta tek bir ekseni kontrol etmek yeterli değildir."
  }
 ]
