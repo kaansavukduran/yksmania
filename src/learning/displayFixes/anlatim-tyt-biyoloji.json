@@ -1,0 +1,214 @@
+[
+ {
+  "from": "Organizma tek bir bireydir; tür ise bir sınıflandırma birimidir. Aynı türün bireyleri renk, büyüklük veya yaş bakımından farklı olabilir. Okulda kullanılan çiftleşip verimli döl oluşturma ölçütü eşeyli üreyen canlıların bir kısmında yararlıdır; fosillere, eşeysiz üreyen canlılara veya bütün tür sorunlarına uygulanabilen evrensel bir deney değildir.",
+  "to": "Organizma tek bir bireydir; tür ise bir sınıflandırma birimidir. Aynı türün bireyleri renk, büyüklük veya yaş bakımından farklı olabilir. Çiftleşip verimli döl oluşturma ölçütü eşeyli üreyen canlıların bir kısmında yararlıdır; fosillere, eşeysiz üreyen canlılara veya bütün tür sorunlarına uygulanabilen evrensel bir deney değildir."
+ },
+ {
+  "from": "Ayrıştırmada organik azotlu bileşiklerden amonyak/amonyum oluşmasına amonifikasyon denir. Nitrifikasyon ise amonyumun önce nitrite, sonra nitrata oksidasyonudur. Bunlar iki ayrı kimyasal geçiştir: NH₄⁺→NO₂⁻→NO₃⁻. Okul modelinde bu dönüşümler aerobik kemoototrof mikroorganizmalarla ilişkilendirilir; canlıların bütün azot dönüşümlerini tek türe yükleme.",
+  "to": "Ayrıştırmada organik azotlu bileşiklerden amonyak/amonyum oluşmasına amonifikasyon denir. Nitrifikasyon ise amonyumun önce nitrite, sonra nitrata oksidasyonudur. Bunlar iki ayrı kimyasal geçiştir: NH₄⁺→NO₂⁻→NO₃⁻. Bu dönüşümler aerobik kemoototrof mikroorganizmalarla ilişkilendirilir; canlıların bütün azot dönüşümlerini tek türe yükleme."
+ },
+ {
+  "from": "n bir kromozom takımını, 2n iki takımı gösterir. T ürün 2n=18 olduğu verilirse olağan gamette n=9, döllenmeyle oluşan zigotta 18 kromozom vardır. Buradaki dokuz, gamet adedi veya DNA kütlesi değildir.",
+  "to": "n bir kromozom takımını, 2n iki takımı gösterir. Türün 2n=18 olduğu verilirse olağan gamette n=9, döllenmeyle oluşan zigotta 18 kromozom vardır. Buradaki dokuz, gamet adedi veya DNA kütlesi değildir."
+ },
+ {
+  "from": "Bir olasılık küçük ailede kesin oran değildir.1/4 olasılık dört çocuktan kesin birinin özelliği göstereceğini söylemez. Soruyu bitirirken olası genotipler kümesini koru; ek bilgi olmadan kesin kişi genotipi üretme.",
+  "to": "Bir olasılık küçük ailede kesin oran değildir. 1/4 olasılık dört çocuktan kesin birinin özelliği göstereceğini söylemez. Soruyu bitirirken olası genotipler kümesini koru; ek bilgi olmadan kesin kişi genotipi üretme."
+ },
+ {
+  "from": "AaBb×AaBb için genler bağımsız, her lokusta tam baskınlık ve olağan eş gametler varsayıldığında dört fenotipin payları 9/16,3/16,3/16,1/16’dır. Her iki çekinik için aa ve bb olayları 1/4×1/4=1/16 verir.",
+  "to": "AaBb×AaBb için genler bağımsız, her lokusta tam baskınlık ve olağan eş gametler varsayıldığında dört fenotipin payları 9/16, 3/16, 3/16, 1/16’dır. Her iki çekinik için aa ve bb olayları 1/4×1/4=1/16 verir."
+ },
+ {
+  "from": "k alelin bütün homozigot ve heterozigot çiftleri mümkünse genotip çeşidi k (k+1)/2’dir. Üç alelde 3 homozigot+3 heterozigot=6 çeşit bulunur. Fenotip sayısı alellerin baskınlık ilişkilerine bağlıdır; yalnız formülden çıkmaz.",
+  "to": "k alelin bütün homozigot ve heterozigot çiftleri mümkünse genotip çeşidi k(k+1)/2’dir. Üç alelde 3 homozigot+3 heterozigot=6 çeşit bulunur. Fenotip sayısı alellerin baskınlık ilişkilerine bağlıdır; yalnız formülden çıkmaz."
+ },
+ {
+  "from": "İki lokus için rekombinant gamet oranı r verilmiş olsun. Simetrik okul modelinde iki rekombinant sınıfın her biri r/2, iki ebeveyn sınıfının her biri (1−r)/2 payındadır. AB/ab ve r=0,20 ise AB ve ab 0,40; Ab ve aB 0,10’dur.",
+  "to": "İki lokus için rekombinant gamet oranı r verilmiş olsun. Simetrik modelde iki rekombinant sınıfın her biri r/2, iki ebeveyn sınıfının her biri (1−r)/2 payındadır. AB/ab ve r=0,20 ise AB ve ab 0,40; Ab ve aB 0,10’dur."
+ },
+ {
+  "from": "Okul modelinde A, B, O olmak üzere üç alel gösterilir. Bilimsel gösterimde Iᴬ, Iᴮ ve i de kullanılır. A ve B birbirine eş baskın; O’ya karşı baskındır. AA ve AO, A grubunu; BB ve BO, B grubunu; AB, AB grubunu; OO ise O grubunu verir.",
+  "to": "Temel modelde A, B, O olmak üzere üç alel gösterilir. Bilimsel gösterimde Iᴬ, Iᴮ ve i de kullanılır. A ve B birbirine eş baskın; O’ya karşı baskındır. AA ve AO, A grubunu; BB ve BO, B grubunu; AB, AB grubunu; OO ise O grubunu verir."
+ },
+ {
+  "from": "Temel RhD modelinde D antijeninin varlığı Rh+, yokluğu Rh− ile gösterilir. DD ve Dd pozitif, dd negatiftir. Rh gerçekte çoklu bileşenler içerir; tek lokuslu D/d modeli okul sorusunun sadeleştirmesidir.",
+  "to": "Temel RhD modelinde D antijeninin varlığı Rh+, yokluğu Rh− ile gösterilir. DD ve Dd pozitif, dd negatiftir. Rh gerçekte çoklu bileşenler içerir; tek lokuslu D/d modeli soruların sadeleştirmesidir."
+ },
+ {
+  "from": "Rh− annenin Rh+ fetüsünün alyuvarlarına karşı önceden duyarlanmış bağışıklık yanıtı, plasentadan geçen antikorlarla sorun oluşturabilir. Bu okul anlatımı kalıtım ile bağışıklık süreçlerinin farklı basamaklarını bağlar.",
+  "to": "Rh− annenin Rh+ fetüsünün alyuvarlarına karşı önceden duyarlanmış bağışıklık yanıtı, plasentadan geçen antikorlarla sorun oluşturabilir. Bu anlatım kalıtım ile bağışıklık süreçlerinin farklı basamaklarını bağlar."
+ },
+ {
+  "from": "İnsanın olağan diploit modelinde 22 çift otozom ve bir çift eşey kromozomu bulunur; toplam 46’dır. XX ve XY kromozom düzenleri standart okul modelinde karşılaştırılır. Kromozomlar, genler ve gelişim süreçleri birlikte biyolojik eşey özelliklerine katkı sağlar.",
+  "to": "İnsanın olağan diploit modelinde 22 çift otozom ve bir çift eşey kromozomu bulunur; toplam 46’dır. XX ve XY kromozom düzenleri standart modelde karşılaştırılır. Kromozomlar, genler ve gelişim süreçleri birlikte biyolojik eşey özelliklerine katkı sağlar."
+ },
+ {
+  "from": "Hemofili A/B ve bazı kırmızı-yeşil renk görme bozuklukları okul örnekleridir; her renk görme bozukluğu veya her kanama hastalığı aynı kalıtımı izlemez. Basitleştirilmiş tam ifade ve mutasyonsuz modelin dışına tanı genellemesi yapma.",
+  "to": "Hemofili A/B ve bazı kırmızı-yeşil renk görme bozuklukları örneklerdir; her renk görme bozukluğu veya her kanama hastalığı aynı kalıtımı izlemez. Basitleştirilmiş tam ifade ve mutasyonsuz modelin dışına tanı genellemesi yapma."
+ },
+ {
+  "from": "Akrabalık yeni bir hastalık aleli üretmek veya her çocukta hastalık garantilemek değildir. Akraba olmayan kişiler de aynı çekinik alelin taşıyıcısı olabilir. Sağlık değerlendirmesi kişisel/ailevi verilere ve uzman danışmanlığına dayanır; okul karesi tek başına klinik karar değildir.",
+  "to": "Akrabalık yeni bir hastalık aleli üretmek veya her çocukta hastalık garantilemek değildir. Akraba olmayan kişiler de aynı çekinik alelin taşıyıcısı olabilir. Sağlık değerlendirmesi kişisel/ailevi verilere ve uzman danışmanlığına dayanır; kalıtım karesi tek başına klinik karar değildir."
+ },
+ {
+  "from": "Standart okul soy ağacında kare XY erkek, daire XX dişi modelini; dolu simge incelenen özelliğin fenotipte görüldüğünü belirtir. Dolu kişi bütün sorularda aa değildir: bu anlam kalıtım modeline bağlıdır.",
+  "to": "Standart soy ağacında kare XY erkek, daire XX dişi modelini; dolu simge incelenen özelliğin fenotipte görüldüğünü belirtir. Dolu kişi bütün sorularda aa değildir: bu anlam kalıtım modeline bağlıdır."
+ },
+ {
+  "from": "Özelliği göstermeyen ebeveynlerdenaaçocuk doğmuşsa her ebeveyn a vermiştir. İkisi de özelliği göstermediğinden AA değil Aa olmalıdır. Özelliği göstermeyen kardeşler ise AA veya Aa olabilir.",
+  "to": "Özelliği göstermeyen ebeveynlerden aa çocuk doğmuşsa her ebeveyn a vermiştir. İkisi de özelliği göstermediğinden AA değil Aa olmalıdır. Özelliği göstermeyen kardeşler ise AA veya Aa olabilir."
+ },
+ {
+  "from": "Tam baskınlık ve tam ifadede özelliği göstermeyenaa’dır; dolu kişi AA veya Aa olabilir. Dolu ebeveynin boşaaçocuğu varsa dolu ebeveynin a taşıdığı anlaşılır, yani Aa’dır.",
+  "to": "Tam baskınlık ve tam ifadede özelliği göstermeyen aa’dır; dolu kişi AA veya Aa olabilir. Dolu ebeveynin boş aa çocuğu varsa dolu ebeveynin a taşıdığı anlaşılır, yani Aa’dır."
+ },
+ {
+  "from": "İki boşaa ebeveynin dolu çocuğu standart mutasyonsuz tek lokuslu otozomal baskın modelle uyuşmaz. Buna karşılık iki dolu Aa ebeveynin boşaaçocuğu mümkündür. Kuşak atlama sözü tek başına güvenilir model kanıtı değildir.",
+  "to": "İki boş aa ebeveynin dolu çocuğu standart mutasyonsuz tek lokuslu otozomal baskın modelle uyuşmaz. Buna karşılık iki dolu Aa ebeveynin boş aa çocuğu mümkündür. Kuşak atlama sözü tek başına güvenilir model kanıtı değildir."
+ },
+ {
+  "from": "Çekinik özelliği gösteren XᵃXᵃ kız babadan Xᵃalmış olmalıdır; temel modelde babanın XᵃY olması gerekir. Özelliği göstermeyen babanın etkilenen kızı bu basit modeli eler.",
+  "to": "Çekinik özelliği gösteren XᵃXᵃ kız babadan Xᵃ almış olmalıdır; temel modelde babanın XᵃY olması gerekir. Özelliği göstermeyen babanın etkilenen kızı bu basit modeli eler."
+ },
+ {
+  "from": "Etkilenen oğul Xᵃ’yı anneden alır; anne XᴬXᵃ veya XᵃXᵃ olabilir. Baba ile oğulda aynı fenotip görülmesi babadan oğula Xaktarımı kanıtı değildir. Anne üzerinden aynı alel gelmiş olabilir.",
+  "to": "Etkilenen oğul Xᵃ’yı anneden alır; anne XᴬXᵃ veya XᵃXᵃ olabilir. Baba ile oğulda aynı fenotip görülmesi babadan oğula X aktarımı kanıtı değildir. Anne üzerinden aynı alel gelmiş olabilir."
+ },
+ {
+  "from": "Tam ifadeli X’e bağlı baskın modelde etkilenen babanın bütün kızları baba alelini alır ve etkilenir; oğullarına baba X’igeçmez. Etkilenmeyen bir kız varsa bu yalın model sorgulanır.",
+  "to": "Tam ifadeli X’e bağlı baskın modelde etkilenen babanın bütün kızları baba alelini alır ve etkilenir; oğullarına baba X’i geçmez. Etkilenmeyen bir kız varsa bu yalın model sorgulanır."
+ },
+ {
+  "from": "Y’ye bağlı modelde etkilenen baba bütün oğullarına ilgili Y’yi aktarır, kızlarına aktarmaz. Etkilenen kız bu modeli eler. Yalnız erkeklerde birkaç etkilenmiş kişi görmek Ykalıtımını kanıtlamaz; X’e bağlı veya otozomal model de uyabilir.",
+  "to": "Y’ye bağlı modelde etkilenen baba bütün oğullarına ilgili Y’yi aktarır, kızlarına aktarmaz. Etkilenen kız bu modeli eler. Yalnız erkeklerde birkaç etkilenmiş kişi görmek Y kalıtımını kanıtlamaz; X’e bağlı veya otozomal model de uyabilir."
+ },
+ {
+  "from": "Tipik çizim bir türün fotoğrafı değil, karşılaştırma modelidir. Çoğu okul örneğinde ana kromozom halkasaldır; bunu bütün bakterilerin tek ve değişmez kromozom biçimi diye evrenselleştirme. Plazmitler kromozomdan ayrı kalıtsal elemanlar olabilir. DNA’nın çekirdek zarı dışında bulunması onun işlevsiz veya düzensiz olduğu anlamına gelmez.",
+  "to": "Tipik çizim bir türün fotoğrafı değil, karşılaştırma modelidir. Çoğu öğretici örnekte ana kromozom halkasaldır; bunu bütün bakterilerin tek ve değişmez kromozom biçimi diye evrenselleştirme. Plazmitler kromozomdan ayrı kalıtsal elemanlar olabilir. DNA’nın çekirdek zarı dışında bulunması onun işlevsiz veya düzensiz olduğu anlamına gelmez."
+ },
+ {
+  "from": "Okul sınıflamasında Protista; bitki, hayvan ve gerçek mantar gruplarına yerleştirilmeyen çeşitli ökaryot örnekleri bir araya getirir. Çoğu tek hücrelidir; koloni veya çok hücreli alg örnekleri de vardır. Çekirdekli hücre düzeni temel ortaklıktır. Buna karşılık her örnekte aynı organelin, hücre duvarının, hareket yapısının veya beslenme yolunun bulunması gerekmez.",
+  "to": "Geleneksel sınıflamada Protista; bitki, hayvan ve gerçek mantar gruplarına yerleştirilmeyen çeşitli ökaryot örnekleri bir araya getirir. Çoğu tek hücrelidir; koloni veya çok hücreli alg örnekleri de vardır. Çekirdekli hücre düzeni temel ortaklıktır. Buna karşılık her örnekte aynı organelin, hücre duvarının, hareket yapısının veya beslenme yolunun bulunması gerekmez."
+ },
+ {
+  "from": "Modern soy ilişkilerinde geleneksel Protista tek bir doğal soy çizgisi değildir. Bu ders okulun karşılaştırma başlığını kullanırken bütün grubu ‘en ilkel canlılar’ gibi tek basamaklı bir gelişmişlik sırasına sokmaz. Tek hücrelilik prokaryotluk demek değildir; amibin bir hücresi de ökaryottur. Su ortamı veya yeşil renk tek başına sınıflama kanıtı olamaz.",
+  "to": "Modern soy ilişkilerinde geleneksel Protista tek bir doğal soy çizgisi değildir. Bu ders geleneksel karşılaştırma başlığını kullanırken bütün grubu ‘en ilkel canlılar’ gibi tek basamaklı bir gelişmişlik sırasına sokmaz. Tek hücrelilik prokaryotluk demek değildir; amibin bir hücresi de ökaryottur. Su ortamı veya yeşil renk tek başına sınıflama kanıtı olamaz."
+ },
+ {
+  "from": "Çok hücreli bir algin yaprak benzeri görünmesi gerçek kök, gövde, yaprak ve iletim dokularını kanıtlamaz. Okul karşılaştırmasında bitki benzeri protist olmak Bitkiler âlemine otomatik yerleşmek değildir. Bazı yeşil alglerin modern sınıflamada bitkilerle yakın soy ilişkileri ayrıca incelenir; burada tek bir pigmentten tüm sınıflandırmayı üretmiyoruz. Diyatomların silisli yapıları ile genel alg pigmentlerini de ayrı özellikler olarak oku.",
+  "to": "Çok hücreli bir algin yaprak benzeri görünmesi gerçek kök, gövde, yaprak ve iletim dokularını kanıtlamaz. Geleneksel karşılaştırmada bitki benzeri protist olmak Bitkiler âlemine otomatik yerleşmek değildir. Bazı yeşil alglerin modern sınıflamada bitkilerle yakın soy ilişkileri ayrıca incelenir; burada tek bir pigmentten tüm sınıflandırmayı üretmiyoruz. Diyatomların silisli yapıları ile genel alg pigmentlerini de ayrı özellikler olarak oku."
+ },
+ {
+  "from": "Okul karşılaştırmasında tek çeneklilerde bir çenek, çoğunlukla paralel damarlanma ve saçak kök; çift çenekli örneklerde iki çenek, çoğunlukla ağsı damarlanma ve kazık kök birlikte incelenir. Buğday bir tek çenekli; fasulye çift çenekli öğretici örnektir. Bunlar kapalı tohumlu kapsamının iç karşılaştırmalarıdır, tüm bitkileri bölmez.",
+  "to": "Temel karşılaştırmada tek çeneklilerde bir çenek, çoğunlukla paralel damarlanma ve saçak kök; çift çenekli örneklerde iki çenek, çoğunlukla ağsı damarlanma ve kazık kök birlikte incelenir. Buğday bir tek çenekli; fasulye çift çenekli öğretici örnektir. Bunlar kapalı tohumlu kapsamının iç karşılaştırmalarıdır, tüm bitkileri bölmez."
+ },
+ {
+  "from": "Omurgasız hayvanlarda omurga bulunmaz; bu geniş etiket tek bir yakın akrabalık dalının adı değildir. Okul düzeyinde süngerler, sölenterler, solucanlar, yumuşakçalar, eklembacaklılar ve derisidikenliler karşılaştırılır. Ortak hayvan planında ökaryot hücre, çok hücreli organizasyon, hücre duvarının olmaması ve heterotrof beslenme bulunur. Bir canlıyı mantardan ayırırken yalnız heterotrof olmasına bakmak yetmez; mantarda hücre duvarı vardır.",
+  "to": "Omurgasız hayvanlarda omurga bulunmaz; bu geniş etiket tek bir yakın akrabalık dalının adı değildir. Temel düzeyde süngerler, sölenterler, solucanlar, yumuşakçalar, eklembacaklılar ve derisidikenliler karşılaştırılır. Ortak hayvan planında ökaryot hücre, çok hücreli organizasyon, hücre duvarının olmaması ve heterotrof beslenme bulunur. Bir canlıyı mantardan ayırırken yalnız heterotrof olmasına bakmak yetmez; mantarda hücre duvarı vardır."
+ },
+ {
+  "from": "Omurgalılar kordalı hayvanların bir grubudur; omurga ve kafatasıyla ilişkili iç destek planı taşırlar. İç iskelet kıkırdak veya kemikten oluşabilir; bütün iç iskeletli hayvanlar omurgalı değildir. Sinir sisteminin sırt tarafındaki düzeni, kapalı dolaşım ve böbreklerle boşaltım okul düzeyindeki ortak karşılaştırma noktalarıdır. Kanın oksijen taşıyan hemoglobini tipik olarak alyuvarlarda bulunur.",
+  "to": "Omurgalılar kordalı hayvanların bir grubudur; omurga ve kafatasıyla ilişkili iç destek planı taşırlar. İç iskelet kıkırdak veya kemikten oluşabilir; bütün iç iskeletli hayvanlar omurgalı değildir. Sinir sisteminin sırt tarafındaki düzeni, kapalı dolaşım ve böbreklerle boşaltım temel ortak karşılaştırma noktalarıdır. Kanın oksijen taşıyan hemoglobini tipik olarak alyuvarlarda bulunur."
+ },
+ {
+  "from": "Okul karşılaştırmasında balıklar, iki yaşamlılar, sürüngenler, kuşlar ve memeliler kullanılır. Bu beşli tablo modern evrim ağacının tüm dallanmasını temsil etmez; örneğin kuşlar evrimsel olarak sürüngen soyunun içindedir. Öğretim tablosunu işlev karşılaştırması olarak kullan. ‘Bütün omurgalılarda akciğer, dört odacık ve aynı vücut ısısı vardır’ iddiasını balık örneğiyle hemen sınayabilirsin.",
+  "to": "Temel karşılaştırmada balıklar, iki yaşamlılar, sürüngenler, kuşlar ve memeliler kullanılır. Bu beşli tablo modern evrim ağacının tüm dallanmasını temsil etmez; örneğin kuşlar evrimsel olarak sürüngen soyunun içindedir. Öğretim tablosunu işlev karşılaştırması olarak kullan. ‘Bütün omurgalılarda akciğer, dört odacık ve aynı vücut ısısı vardır’ iddiasını balık örneğiyle hemen sınayabilirsin."
+ },
+ {
+  "from": "Çoğu okul örneğinde dış döllenme ve dış gelişme anlatılır; köpek balıkları gibi iç döllenen ve farklı gelişme yolları taşıyan türler karşı örnektir. Bütün balıklar aynı pulla kaplı değildir ve bütün köpek balıkları durmadan yüzmek zorunda değildir. Ektotermlik çevre ısısının vücut sıcaklığı üzerindeki güçlü etkisini anlatır; her an soğuk kan taşındığı anlamına gelmez. Habitatı tek başına balık tanısı yapma.",
+  "to": "Çoğu öğretici örnekte dış döllenme ve dış gelişme anlatılır; köpek balıkları gibi iç döllenen ve farklı gelişme yolları taşıyan türler karşı örnektir. Bütün balıklar aynı pulla kaplı değildir ve bütün köpek balıkları durmadan yüzmek zorunda değildir. Ektotermlik çevre ısısının vücut sıcaklığı üzerindeki güçlü etkisini anlatır; her an soğuk kan taşındığı anlamına gelmez. Habitatı tek başına balık tanısı yapma."
+ },
+ {
+  "from": "Kuru ve keratinleşmiş pullar su kaybını azaltır; akciğer solunumu görülür. İç döllenme ve amniyotik embriyo zarları, gelişmenin su içindeki serbest larvaya aynı biçimde bağımlı olmamasını sağlar. Kertenkele, yılan, kaplumbağa ve timsah okul grubunun örnekleridir. Çoğu örnekte üç ana kalp odacığı ve karıncık içindeki kısmi bölme karşılaştırılır.",
+  "to": "Kuru ve keratinleşmiş pullar su kaybını azaltır; akciğer solunumu görülür. İç döllenme ve amniyotik embriyo zarları, gelişmenin su içindeki serbest larvaya aynı biçimde bağımlı olmamasını sağlar. Kertenkele, yılan, kaplumbağa ve timsah bu grubun örnekleridir. Çoğu örnekte üç ana kalp odacığı ve karıncık içindeki kısmi bölme karşılaştırılır."
+ },
+ {
+  "from": "Kuşlarda tüy, gaga, akciğere bağlı hava keseleri ve dört odacıklı kalp birlikte ele alınır. Hava keseleri havalandırmaya yardımcıdır; gaz alışverişinin temel yüzeyi akciğerdir. Endotermik metabolizma sıcaklığın düzenlenmesine katkı verir. İç döllenme, kabuklu yumurta ve kuluçka/yavru bakımı okul karşılaştırmasının başlıca özellikleridir.",
+  "to": "Kuşlarda tüy, gaga, akciğere bağlı hava keseleri ve dört odacıklı kalp birlikte ele alınır. Hava keseleri havalandırmaya yardımcıdır; gaz alışverişinin temel yüzeyi akciğerdir. Endotermik metabolizma sıcaklığın düzenlenmesine katkı verir. İç döllenme, kabuklu yumurta ve kuluçka/yavru bakımı karşılaştırmanın başlıca özellikleridir."
+ },
+ {
+  "from": "Vücut sıcaklığının sabitliği ile ısının kaynağı aynı eksen değildir. Okul düzeyinde tipik karşılaştırma yararlıdır fakat ‘soğukkanlı canlının kanı her an daha soğuktur’ ifadesi yanlıştır. Hibernasyon veya günlük sıcaklık değişimi bütün türlerde aynı değildir. Soruda verilen ölçüm anı, çevre sıcaklığı ve canlı grubu ayrı yazılır; bir ölçümden bütün yaşamın ısı stratejisi çıkarılmaz.",
+  "to": "Vücut sıcaklığının sabitliği ile ısının kaynağı aynı eksen değildir. Tipik karşılaştırma yararlıdır fakat ‘soğukkanlı canlının kanı her an daha soğuktur’ ifadesi yanlıştır. Hibernasyon veya günlük sıcaklık değişimi bütün türlerde aynı değildir. Soruda verilen ölçüm anı, çevre sıcaklığı ve canlı grubu ayrı yazılır; bir ölçümden bütün yaşamın ısı stratejisi çıkarılmaz."
+ },
+ {
+  "from": "Omurgalılar besin ağlarında av, avcı, tohum yayıcı ve tozlaştırıcı olabilir; besin, ilaç araştırması ve ekonomik üretimle ilişkileri tür ve bağlama bağlıdır. Uygulamadaki karşılaştırmalı modelde örnek ve sistemi değiştir; aynı yapının farklı gruplarda, farklı yapıların aynı grupta bulunabildiğini izle. Bu sabit örnek tablosu tüm türlerin tüm istisnalarını içerdiği iddiasında değildir.",
+  "to": "Omurgalılar besin ağlarında av, avcı, tohum yayıcı ve tozlaştırıcı olabilir; besin, ilaç araştırması ve ekonomik üretimle ilişkileri tür ve bağlama bağlıdır. Karşılaştırmalı modelde örnek ve sistemi değiştir; aynı yapının farklı gruplarda, farklı yapıların aynı grupta bulunabildiğini izle. Bu sabit örnek tablosu tüm türlerin tüm istisnalarını içerdiği iddiasında değildir."
+ },
+ {
+  "from": "DNA eşlenmesiyle G₁’deki 2n ve2C düzeni 2n ve4C olur: takım sayısı artmaz. Anafazda kardeşlerin ayrılması bütün hücredeki anlık kromozom sayımını artırır, yeni homolog takım yaratıldığı anlamına gelmez. Sayı sorusunun başına evre ve alan yaz: bütün hücre, tek kutup, tek çekirdek veya tek yavru. Mitokondri ve kloroplast DNA’sı bu çekirdek sayımının dışında tutulur.",
+  "to": "DNA eşlenmesiyle G₁’deki 2n ve 2C düzeni 2n ve 4C olur: takım sayısı artmaz. Anafazda kardeşlerin ayrılması bütün hücredeki anlık kromozom sayımını artırır, yeni homolog takım yaratıldığı anlamına gelmez. Sayı sorusunun başına evre ve alan yaz: bütün hücre, tek kutup, tek çekirdek veya tek yavru. Mitokondri ve kloroplast DNA’sı bu çekirdek sayımının dışında tutulur."
+ },
+ {
+  "from": "Hücre başına DNA grafiği G₁’de2C, S sonunda4C, yavru başına yeniden2C gösterebilir. Bütün iki yavrunun toplamı4C’dir; DNA’nın yarısı yok olmamıştır. Aynı kat örüntüsü farklı kromozom sayılı türlerde görülebileceğinden DNA grafiğinden tek başına mutlak kromozom adedi çıkarılmaz. Dikey eksenin DNA mı kromozom mu olduğunu ilk adımda oku.",
+  "to": "Hücre başına DNA grafiği G₁’de 2C, S sonunda 4C, yavru başına yeniden 2C gösterebilir. Bütün iki yavrunun toplamı 4C’dir; DNA’nın yarısı yok olmamıştır. Aynı kat örüntüsü farklı kromozom sayılı türlerde görülebileceğinden DNA grafiğinden tek başına mutlak kromozom adedi çıkarılmaz. Dikey eksenin DNA mı kromozom mu olduğunu ilk adımda oku."
+ },
+ {
+  "from": "G₁’de6 pg varsa eşlenme sonunda12 pg, anafazdaki bütün hücrede12 pg, bir kutupta6 pg bulunur. Telofazda iki çekirdeğin toplamı ile bir çekirdeğin miktarı da aynı ayrımı gerektirir. Grafik sorusunda zaman çizgisini ve hücre başına normalizasyonu sabit tut; toplam popülasyon DNA’sı ölçülüyorsa hücre sayısındaki artış ayrıca hesaba katılır.",
+  "to": "G₁’de 6 pg varsa eşlenme sonunda 12 pg, anafazdaki bütün hücrede 12 pg, bir kutupta 6 pg bulunur. Telofazda iki çekirdeğin toplamı ile bir çekirdeğin miktarı da aynı ayrımı gerektirir. Grafik sorusunda zaman çizgisini ve hücre başına normalizasyonu sabit tut; toplam popülasyon DNA’sı ölçülüyorsa hücre sayısındaki artış ayrıca hesaba katılır."
+ },
+ {
+  "from": "Başlangıç N₀ hücrenin her biri her tur bir kez ikiye bölünüyorsa ve ölüm/kayıp yoksa k tur sonra N=N₀×2ᵏ olur. Buradaki k tur sayısıdır, kromozom takımı n ile karıştırılmaz. İki hücre üç tam tur bölünürse2×8=16 hücre oluşur. Tüm hücreler yerine yalnız seçilmiş üç hücre bölünürse toplam üç artar; bütün popülasyon ikiye katlanmaz.",
+  "to": "Başlangıç N₀ hücrenin her biri her tur bir kez ikiye bölünüyorsa ve ölüm/kayıp yoksa k tur sonra N=N₀×2ᵏ olur. Buradaki k tur sayısıdır, kromozom takımı n ile karıştırılmaz. İki hücre üç tam tur bölünürse 2×8=16 hücre oluşur. Tüm hücreler yerine yalnız seçilmiş üç hücre bölünürse toplam üç artar; bütün popülasyon ikiye katlanmaz."
+ },
+ {
+  "from": "Amipte bölünme düzlemi daha değişken, öglenada boyuna ve paramesyumda enine bölünme tipik okul örnekleridir. Yavruların sitoplazma miktarı veya organel adedi tam aynı olmak zorunda değildir; genetik benzerlik bütün hücresel miktarların eşitliği demek değildir. Bölünmede DNA’nın önce kopyalanması, prokaryot olayı mitoz diye adlandırmak için yeterli değildir.",
+  "to": "Amipte bölünme düzlemi daha değişken, öglenada boyuna ve paramesyumda enine bölünme tipik örneklerdir. Yavruların sitoplazma miktarı veya organel adedi tam aynı olmak zorunda değildir; genetik benzerlik bütün hücresel miktarların eşitliği demek değildir. Bölünmede DNA’nın önce kopyalanması, prokaryot olayı mitoz diye adlandırmak için yeterli değildir."
+ },
+ {
+  "from": "Bakteri endosporu ise olumsuz koşullara dayanıklılık yapısıdır. Bir hücreden bir endospor, sonra bir hücre oluşuyorsa1→1→1 sayımı üreme artışı göstermez. Aynı ‘spor’ sözcüğünün geçmesi işlevlerin aynı olduğunu kanıtlamaz. Sporun dayanıklılığı da her tür ve yapı için tek sert çeper kuralına indirgenmez; model yalnız belirtilen örneğin işlevini karşılaştırır.",
+  "to": "Bakteri endosporu ise olumsuz koşullara dayanıklılık yapısıdır. Bir hücreden bir endospor, sonra bir hücre oluşuyorsa 1→1→1 sayımı üreme artışı göstermez. Aynı ‘spor’ sözcüğünün geçmesi işlevlerin aynı olduğunu kanıtlamaz. Sporun dayanıklılığı da her tür ve yapı için tek sert çeper kuralına indirgenmez; model yalnız belirtilen örneğin işlevini karşılaştırır."
+ },
+ {
+  "from": "Partenogenez döllenmemiş yumurtanın yeni bireye gelişmesidir. Bal arısının standart haplodiploit modelinde kraliçe2n, yumurtalar mayozla n, döllenmemiş yumurtadan gelişen erkek n olur. Erkek arının sperm üretimi n düzeyini korur ve okul modelinde mitozla açıklanır. Döllenmiş n yumurta ile n sperm2n dişiyi oluşturur.",
+  "to": "Partenogenez döllenmemiş yumurtanın yeni bireye gelişmesidir. Bal arısının standart haplodiploit modelinde kraliçe 2n, yumurtalar mayozla n, döllenmemiş yumurtadan gelişen erkek n olur. Erkek arının sperm üretimi n düzeyini korur ve mitozla açıklanır. Döllenmiş n yumurta ile n sperm 2n dişiyi oluşturur."
+ },
+ {
+  "from": "G₁’de diploit hücre2n kromozom ve2C çekirdek DNA’sı taşır. Bir kez gerçekleşen S evresinin sonunda2n ve4C olur; her kromozom iki kardeşli olduğu için DNA molekülü sayısı iki katına çıkar. C eşlenmemiş haploit takımın DNA miktarıdır; kromozom adedi veya sabit bir pikogram değeri değildir.",
+  "to": "G₁’de diploit hücre 2n kromozom ve 2C çekirdek DNA’sı taşır. Bir kez gerçekleşen S evresinin sonunda 2n ve 4C olur; her kromozom iki kardeşli olduğu için DNA molekülü sayısı iki katına çıkar. C eşlenmemiş haploit takımın DNA miktarıdır; kromozom adedi veya sabit bir pikogram değeri değildir."
+ },
+ {
+  "from": "Homolog çiftlerin fiziksel eşleşmesine sinapsis, iki homologun toplam dört kromatitli birimine tetrat denir. Standart2n=6 örneğinde üç homolog çift ve üç tetrat vardır; eşlenmiş altı kromozom toplam on iki kromatit taşır. Kiyazmalar, homologların kardeş olmayan kromatitleri arasındaki değişimle ilişkili bağlantı bölgeleridir.",
+  "to": "Homolog çiftlerin fiziksel eşleşmesine sinapsis, iki homologun toplam dört kromatitli birimine tetrat denir. Standart 2n=6 örneğinde üç homolog çift ve üç tetrat vardır; eşlenmiş altı kromozom toplam on iki kromatit taşır. Kiyazmalar, homologların kardeş olmayan kromatitleri arasındaki değişimle ilişkili bağlantı bölgeleridir."
+ },
+ {
+  "from": "Krossing over homolog çiftin kardeş olmayan kromatitlerinin karşılıklı eş bölgeleri arasında gerçekleşir. Farklı homolog çiftleri arasındaki normal bir olay diye tanımlanmaz; kaynakta görülebilen ‘homolog olmayan’ yazımı bu tanımla düzeltilir. Tek bir değişime tetrattaki dört kromatidin tamamı zorunlu katılmaz. Modelde bir kromatitten AB, diğerinden ab işaretleri izlenir; iki işaret arasındaki tek değişim Ab ve aB üretebilir.",
+  "to": "Krossing over homolog çiftin kardeş olmayan kromatitlerinin karşılıklı eş bölgeleri arasında gerçekleşir. Farklı homolog çiftleri arasındaki normal bir olay diye tanımlanmaz. Tek bir değişime tetrattaki dört kromatidin tamamı zorunlu katılmaz. Modelde bir kromatitten AB, diğerinden ab işaretleri izlenir; iki işaret arasındaki tek değişim Ab ve aB üretebilir."
+ },
+ {
+  "from": "Parça değişimi dışlanmışken n homolog çiftin bağımsız yöneliminde olası takım bileşimi2ⁿ’dir. Her çift kendi içinde homolog iki kromozom taşır; farklı çiftler birbirine homolog değildir. Bu sayı tek mayozun dört hücresinin mutlaka2ⁿ farklı olduğu anlamına gelmez. İki çiftli bir olay AB,AB,ab,ab ürünlerini verirken başka bir olay Ab,Ab,aB,aB verebilir. Genel olasılık kümesiyle gerçekleşmiş tek olayın ürünlerini ayrı yaz.",
+  "to": "Parça değişimi dışlanmışken n homolog çiftin bağımsız yöneliminde olası takım bileşimi 2ⁿ’dir. Her çift kendi içinde homolog iki kromozom taşır; farklı çiftler birbirine homolog değildir. Bu sayı tek mayozun dört hücresinin mutlaka 2ⁿ farklı olduğu anlamına gelmez. İki çiftli bir olay AB, AB, ab, ab ürünlerini verirken başka bir olay Ab, Ab, aB, aB verebilir. Genel olasılık kümesiyle gerçekleşmiş tek olayın ürünlerini ayrı yaz."
+ },
+ {
+  "from": "Sitokinez I sonunda iki hücrenin her biri n kromozom ve2C DNA taşır. Haploit olmak her kromozomun mutlaka tek kromatitli olması demek değildir; takım sayısı ile eşlenme durumu farklı değişkenlerdir. 2n=8 başlangıçta her ilk ürün dört kromozom, sekiz DNA molekülü ve2C DNA alır. İki ilk ürünün toplamı4C’dir.",
+  "to": "Sitokinez I sonunda iki hücrenin her biri n kromozom ve 2C DNA taşır. Haploit olmak her kromozomun mutlaka tek kromatitli olması demek değildir; takım sayısı ile eşlenme durumu farklı değişkenlerdir. 2n=8 başlangıçta her ilk ürün dört kromozom, sekiz DNA molekülü ve 2C DNA alır. İki ilk ürünün toplamı 4C’dir."
+ },
+ {
+  "from": "TelofazI’de çekirdek zarı türüne göre yeniden oluşabilir. Sitokinez sitoplazmayı ayırır; çekirdek sayısı ile hücre sayısını karıştırma. Mayoz II’ye geçerken kromozomları yeniden kopyalamak sayımı iki katına çıkaran yanlış bir adımdır. Modelde ilk bölünme sonu ile metafaz II arasındaki DNA miktarının aynı kaldığını kontrol edebilirsin.",
+  "to": "Telofaz I’de çekirdek zarı türüne göre yeniden oluşabilir. Sitokinez sitoplazmayı ayırır; çekirdek sayısı ile hücre sayısını karıştırma. Mayoz II’ye geçerken kromozomları yeniden kopyalamak sayımı iki katına çıkaran yanlış bir adımdır. Modelde ilk bölünme sonu ile metafaz II arasındaki DNA miktarının aynı kaldığını kontrol edebilirsin."
+ },
+ {
+  "from": "Metafaz II’de her haploit hücrenin eşlenmiş kromozomları orta düzleme tek tek dizilir. Anafaz II’de kardeşler ayrılıp bağımsız kromozom sayılır. Başlangıç2n=6 ise mayoz I ürünü üç iki-kardeşli kromozom taşır; anafaz II’de bölünmemiş o hücrenin toplamı altı bağımsız kromozom, bir kutbu üç kromozomdur. DNA miktarı hücre başına2C, kutup başınaC’dir.",
+  "to": "Metafaz II’de her haploit hücrenin eşlenmiş kromozomları orta düzleme tek tek dizilir. Anafaz II’de kardeşler ayrılıp bağımsız kromozom sayılır. Başlangıç 2n=6 ise mayoz I ürünü üç iki-kardeşli kromozom taşır; anafaz II’de bölünmemiş o hücrenin toplamı altı bağımsız kromozom, bir kutbu üç kromozomdur. DNA miktarı hücre başına 2C, kutup başına C’dir."
+ },
+ {
+  "from": "Anafaz II toplamını ‘2n yavru oluştu’ diye yorumlama; bir takımın ayrılan iki kopyasını henüz aynı sitoplazmada sayıyorsun. İkinci sitokinez sonunda dört hücrenin her biri üç kromozom veC DNA alır. Dört ürünün toplamı4C olup S sonrası toplamla tutarlıdır. Hücre başına düşüş DNA’nın yok olması değil ürünlere paylaşılmasıdır.",
+  "to": "Anafaz II toplamını ‘2n yavru oluştu’ diye yorumlama; bir takımın ayrılan iki kopyasını henüz aynı sitoplazmada sayıyorsun. İkinci sitokinez sonunda dört hücrenin her biri üç kromozom ve C DNA alır. Dört ürünün toplamı 4C olup S sonrası toplamla tutarlıdır. Hücre başına düşüş DNA’nın yok olması değil ürünlere paylaşılmasıdır."
+ },
+ {
+  "from": "Her mayoz ürününün diğer üçünden mutlaka farklı olması veya bir değişimin incelenen bütün işaretleri mutlaka değiştirmesi gerekmez. Değişim işaretlerin dışında ise o işaretlerle fark göremeyebilirsin. Aynı kromozomdaki AB/ab değişim modeli ile ayrı kromozomlardaki A/a,B/b dağılım modeli farklı varsayımlar kullanır; uygulamada bu iki panel ayrı açıklanır. Sayısal olasılık hesabını hangi modelin koşulları sağlıyorsa ona uygula.",
+  "to": "Her mayoz ürününün diğer üçünden mutlaka farklı olması veya bir değişimin incelenen bütün işaretleri mutlaka değiştirmesi gerekmez. Değişim işaretlerin dışında ise o işaretlerle fark göremeyebilirsin. Aynı kromozomdaki AB/ab değişim modeli ile ayrı kromozomlardaki A/a, B/b dağılım modeli farklı varsayımlar kullanır. Sayısal olasılık hesabını hangi modelin koşulları sağlıyorsa ona uygula."
+ },
+ {
+  "from": "DNA’nın hücre başına2→4→2→1 kat deseni, arada başka eşlenme olmadan iki tamamlanmış bölünme verildiğinde standart mayozla uyumludur. Bu desen tek başına türün mutlak kromozom sayısını söylemez. Sorunun son kontrolü için toplam ürün DNA’sını S sonrasıyla karşılaştır, tek kutbu tek hücreden ayır ve kronolojik olayları eşlenme→homolog ayrımı→kardeş ayrımı şeklinde kur.",
+  "to": "DNA’nın hücre başına 2→4→2→1 kat deseni, arada başka eşlenme olmadan iki tamamlanmış bölünme verildiğinde standart mayozla uyumludur. Bu desen tek başına türün mutlak kromozom sayısını söylemez. Sorunun son kontrolü için toplam ürün DNA’sını S sonrasıyla karşılaştır, tek kutbu tek hücreden ayır ve kronolojik olayları eşlenme→homolog ayrımı→kardeş ayrımı şeklinde kur."
+ },
+ {
+  "from": "Küçük bir madde elektrokimyasal gradyanına karşı biriktiriliyorsa taşıma enerjiye bağlanmalıdır. TYT’nin temel örneğinde taşıyıcı/pompa proteini ATP kullanır. Na⁺/K⁺ pompası hücre zarında Na⁺’u dışarı ve K⁺’u içeri taşır; etkinin yönü ‘her zaman hücreye’ değildir. Derişimler eşitken çalışan pompa da fark oluşturabilir; aktif taşımayı yalnız mevcut farkın büyüklüğüyle tanımlama.",
+  "to": "Küçük bir madde elektrokimyasal gradyanına karşı biriktiriliyorsa taşıma enerjiye bağlanmalıdır. Temel örnekte taşıyıcı/pompa proteini ATP kullanır. Na⁺/K⁺ pompası hücre zarında Na⁺’u dışarı ve K⁺’u içeri taşır; etkinin yönü ‘her zaman hücreye’ değildir. Derişimler eşitken çalışan pompa da fark oluşturabilir; aktif taşımayı yalnız mevcut farkın büyüklüğüyle tanımlama."
+ },
+ {
+  "from": "Çözüm sonunda hangi basamağı, hangi özellik düzeyini ve hangi canlı kümesini kullandığını bir cümleyle yaz. Ağacın dışındaki bilinmeyen türler hakkında ek sonuç uydurma. Model seçimleri ve gerekçen çalışma notudur; keşifte doğru yönü seçmek bağımsız soru doğrusu, ustalık veya konu tamamlanması olarak kaydedilmez. Konuyu öğrendiğini sınamak için açıklamayı kapatıp yeni bir canlı çiftiyle aynı kapsama ve kanıt kurallarını yeniden uygula.",
+  "to": "Çözüm sonunda hangi basamağı, hangi özellik düzeyini ve hangi canlı kümesini kullandığını bir cümleyle yaz. Ağacın dışındaki bilinmeyen türler hakkında ek sonuç uydurma. Konuyu öğrendiğini sınamak için açıklamayı kapatıp yeni bir canlı çiftiyle aynı kapsama ve kanıt kurallarını yeniden uygula."
+ }
+]

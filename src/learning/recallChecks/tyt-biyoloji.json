@@ -1,0 +1,564 @@
+{
+ "hucre-organelleri": [
+  {
+   "after": 1,
+   "prompt": "Çift zarlı bir organelde kaç ayrı fosfolipit çift tabakası bulunur?",
+   "answer": "İki; her biyolojik zar kendi fosfolipit çift tabakasına sahiptir ve tek zar sayılır."
+  },
+  {
+   "after": 3,
+   "prompt": "Granülsüz ER hangi işlerle ilişkilidir?",
+   "answer": "Lipit ve steroid sentezi, bazı maddelerin dönüştürülmesi ve kas hücresinde Ca²⁺ depolanmasıyla ilişkilidir."
+  },
+  {
+   "after": 5,
+   "prompt": "Peroksizomdaki katalaz enzimi H₂O₂’yi neye dönüştürür?",
+   "answer": "Su ve oksijene dönüştürür; bu ipucu peroksizomu lizozom ve mitokondriden ayırır."
+  },
+  {
+   "after": 6,
+   "prompt": "Hücre iskeletinde mikrofilament ve mikrotübül hangi proteinlerle ilişkilidir?",
+   "answer": "Mikrofilament aktinle, mikrotübül tübülinle ilişkilidir."
+  }
+ ],
+ "ekoloji-giris": [
+  {
+   "after": 1,
+   "prompt": "Aynı yirmi birey daha küçük bir alana dağılırsa yoğunluk ve birey sayısı nasıl değişir?",
+   "answer": "Yoğunluk artar çünkü birey sayısının alana oranıdır; birey sayısı ise aynı kalır."
+  },
+  {
+   "after": 3,
+   "prompt": "Habitat ile biyotop terimlerini ayıran ölçüt nedir?",
+   "answer": "Habitat bir organizmanın yaşadığı alandır; biyotop ise bir komünitenin yer aldığı yaşam alanıdır."
+  },
+  {
+   "after": 5,
+   "prompt": "Işığı artırdığın hâlde bitkinin büyümesi değişmiyorsa olası açıklama nedir?",
+   "answer": "Su gibi başka bir etken büyümeyi sınırlandırıyor olabilir; bu, ışığın hiç rolü olmadığını göstermez."
+  }
+ ],
+ "besin-piramidi": [
+  {
+   "after": 1,
+   "prompt": "900 kJ’nin yüzde 10’u kaç joule eder?",
+   "answer": "90 kJ, yani 90.000 J eder; çünkü 1 kJ 1.000 J’dür."
+  },
+  {
+   "after": 3,
+   "prompt": "Üretim 10.000 J/m²/yıl ve her geçişte verim yüzde 20 ise ikincil tüketiciye kaç J/m²/yıl geçer?",
+   "answer": "Önce 2.000, sonra 400 J/m²/yıl geçer; 10.000 × 0,20 × 0,20 = 400."
+  },
+  {
+   "after": 5,
+   "prompt": "Bir ağaç, yüz tırtıl ve on kuş sayımı hangi piramidi ters yapar?",
+   "answer": "Sayı piramidini; tek ağaç birey olarak az görünür ama büyük kütlesi bu sayımda gizlenir."
+  },
+  {
+   "after": 6,
+   "prompt": "Biyoakümülasyon ile trofik büyütülmeyi ayıran fark nedir?",
+   "answer": "Biyoakümülasyon maddenin bir bireyin dokusunda zamanla birikmesidir; trofik büyütülme derişimin besin ağında üst düzeylere doğru artmasıdır."
+  }
+ ],
+ "besin-zinciri-agi": [
+  {
+   "after": 1,
+   "prompt": "Çayır→çekirge→kurbağa→şahin yolunda kaç beslenme aktarımı vardır?",
+   "answer": "Üç; dört canlılı yolda ok sayısı aktarım sayısını verir."
+  },
+  {
+   "after": 2,
+   "prompt": "Tohum→fare→yılan→şahin yolunda şahinin doğrudan besini hangi canlıdır?",
+   "answer": "Yılandır; şahine gelen son ok yılandan gelir, fare ve tohum dolaylı kaynaklardır."
+  },
+  {
+   "after": 4,
+   "prompt": "Ayrıştırma ekosisteme neden yeni bir dış enerji kaynağı sağlamaz?",
+   "answer": "Üreticilerin başlangıçta bağladığı organik enerjiyi kullanır; detritus yolunda da solunumla ısı dağılır."
+  },
+  {
+   "after": 6,
+   "prompt": "Trofik kaskadda bir avcı azalınca üretici neden etkilenebilir?",
+   "answer": "Av üzerindeki baskı hafifleyip av artabilir; bu da avın tükettiği üreticiye baskıyı artırabilir."
+  }
+ ],
+ "madde-donguleri": [
+  {
+   "after": 1,
+   "prompt": "Bir yılda ormana 60 kg C girip 42 kg C solunum/ayrışma ve 8 kg C yangınla çıkarsa stok değişimi kaç olur?",
+   "answer": "60 − 42 − 8 = +10 kg C; seçilen orman deposu 10 kg C artar."
+  },
+  {
+   "after": 3,
+   "prompt": "Fosil yakıt kullanımı karbonu hangi depodan hangisine aktarır?",
+   "answer": "Uzun sürede birikmiş fosil karbon deposundan kısa zamanda atmosferik depoya aktarır."
+  },
+  {
+   "after": 5,
+   "prompt": "Amonifikasyonda başlangıç maddesi ve ürün nedir?",
+   "answer": "Ayrıştırma sırasında organik azotlu bileşiklerden amonyak/amonyum oluşur."
+  },
+  {
+   "after": 7,
+   "prompt": "N₂ 50, NH₄⁺ 20 ve NO₂⁻ 10 birimken 10 birim NH₄⁺ NO₂⁻’e aktarılırsa yeni değerler ne olur?",
+   "answer": "NH₄⁺ 10, NO₂⁻ 20 olur; N₂ 50’de kalır ve toplam azot korunur."
+  }
+ ],
+ "guncel-cevre-sorunlari": [
+  {
+   "after": 1,
+   "prompt": "Asit çökelmesinde dönüşümleri özellikle önemli olan iki gaz hangileridir?",
+   "answer": "Kükürt dioksit ve azot oksitlerdir; karbonmonoksit sülfürik asidin doğrudan hammaddesi değildir."
+  },
+  {
+   "after": 2,
+   "prompt": "Sera etkisi ve stratosferik ozon hangi ışınım türleriyle ilişkilidir?",
+   "answer": "Sera etkisi yeryüzünün yaydığı kızılötesi enerjiyle, stratosferik ozon ise morötesi ışınımı soğurmasıyla ilişkilidir."
+  },
+  {
+   "after": 4,
+   "prompt": "Berrak görünen su neden kendiliğinden güvenli sayılamaz?",
+   "answer": "Patojen ya da ağır metal gibi yükler görünmeyebilir; güvenlik ölçümle doğrulanmalıdır."
+  },
+  {
+   "after": 6,
+   "prompt": "Bir habitatın yolla parçalanması alan kaybı dışında neleri etkiler?",
+   "answer": "Habitatlar arası bağlantıları, canlıların hareketini ve gen alışverişini etkileyebilir."
+  }
+ ],
+ "dogal-kaynaklar-surdurulebilirlik": [
+  {
+   "after": 1,
+   "prompt": "Başlangıç stoku 100, yıllık yenilenme 20 ve kullanım 30 birimse beşinci yılın sonunda stok kaç olur?",
+   "answer": "Her yıl 10 birim azalır; 100 − 5 × 10 = 50 birim kalır."
+  },
+  {
+   "after": 3,
+   "prompt": "Endemik tür ile nesli tehlikede tür kavramlarını ayıran ölçüt nedir?",
+   "answer": "Endemik, doğal dağılımın belirli bir bölgeyle sınırlı olmasını; nesli tehlikede olmak ise yok olma riskini anlatır."
+  },
+  {
+   "after": 4,
+   "prompt": "Gen bankası neden yerinde korumanın yerini tek başına tutamaz?",
+   "answer": "Tohumu saklamak tozlaşmayı, toprak ağını ya da komüniteyi saklamaz; habitatın işlevleri yeniden üretilemez."
+  },
+  {
+   "after": 6,
+   "prompt": "Verimli ampule geçildiğinde toplam enerji kazancı neden küçülebilir?",
+   "answer": "Birim saatteki tüketim azalsa da kullanım süresi çok artarsa güç × süre ile bulunan toplam tüketim yükselebilir."
+  }
+ ],
+ "eseyli-ureme": [
+  {
+   "after": 1,
+   "prompt": "Döllenmeyi iki hücrenin yalnız yan yana bulunmasından ayıran olay nedir?",
+   "answer": "Gametlerin kalıtsal içeriklerinin birleşmesidir; iki haploit takım birleşerek diploit zigotu kurar."
+  },
+  {
+   "after": 2,
+   "prompt": "Mayoz boyunca hücredeki DNA miktarı hangi sırayla değişir?",
+   "answer": "2C→4C→2C→C; önce bir DNA eşlenmesi, ardından iki bölünme olur."
+  },
+  {
+   "after": 4,
+   "prompt": "Bağımsız yönelme ve parça değişimi neden yeni alel üretmez?",
+   "answer": "Mevcut alelleri yeniden birleştirirler; yeni alelin kaynağı mutasyondur."
+  },
+  {
+   "after": 5,
+   "prompt": "Bir bitki dalının köklendirilmesi hangi üreme türüdür?",
+   "answer": "Vejetatif eşeysiz çoğalmadır; döllenme olmadığı için iki gametin alelleri birleşmez."
+  }
+ ],
+ "kalitima-giris": [
+  {
+   "after": 2,
+   "prompt": "Bir gamete otozomal bir lokus için neden Aa yazılamaz?",
+   "answer": "Gamet haploittir; bu lokustan yalnız tek alel, A ya da a taşır."
+  },
+  {
+   "after": 3,
+   "prompt": "Farklı fenotip neden tek başına farklı alel kanıtı sayılmaz?",
+   "answer": "Aynı genotip farklı çevrelerde farklı fenotip verebilir; çevre de fenotipe katkı sağlar."
+  },
+  {
+   "after": 6,
+   "prompt": "AB/ab düzeninde parça değişimi yoksa hangi gametler oluşur?",
+   "answer": "Yalnız ebeveyn tipleri AB ve ab oluşur; dört eş olasılıklı gamet varsayılamaz."
+  }
+ ],
+ "mendel-genetigi": [
+  {
+   "after": 1,
+   "prompt": "Bezelyeyi Mendel’in deneyleri için elverişli yapan iki özellik nedir?",
+   "answer": "Kısa nesil süresi ve kendini dölleyebilmesi; bunlar arı döllerin elde edilmesini kolaylaştırdı."
+  },
+  {
+   "after": 2,
+   "prompt": "Aa×Aa çaprazlamasında tam baskınlıkta genotip ve fenotip oranları nedir?",
+   "answer": "Genotip oranı 1:2:1, fenotip oranı 3:1 olur."
+  },
+  {
+   "after": 4,
+   "prompt": "AaBb×AaBb çaprazlamasında yavrunun aaBb olma olasılığı kaçtır?",
+   "answer": "aa için 1/4 ile Bb için 1/2 çarpılır: 1/4 × 1/2 = 1/8."
+  },
+  {
+   "after": 5,
+   "prompt": "Aa×aa eşleşmesinde dört bağımsız yavrunun hepsinin Aa olma olasılığı kaçtır?",
+   "answer": "(1/2)⁴ = 1/16; bu yüzden az sayıda baskın yavru AA’yı kesin kanıtlamaz."
+  }
+ ],
+ "mendelden-sapmalar": [
+  {
+   "after": 1,
+   "prompt": "Eksik baskınlık modelinde Rr×rr çaprazlamasından hangi fenotipler beklenir?",
+   "answer": "Yarı pembe, yarı beyaz yavru beklenir; Rr pembe, rr beyazdır."
+  },
+  {
+   "after": 3,
+   "prompt": "Üç alelli bir lokusta popülasyonda kaç genotip çeşidi bulunur?",
+   "answer": "k(k+1)/2 ile 3 × 4 / 2 = 6 çeşit; 3 homozigot ve 3 heterozigot."
+  },
+  {
+   "after": 4,
+   "prompt": "Parça değişimi yoksa Ab/aB bireyi hangi gametleri verir?",
+   "answer": "Yalnız Ab ve aB gametlerini verir; genotipi AaBb olsa da AB/ab bireyinden farklıdır."
+  }
+ ],
+ "kan-gruplari": [
+  {
+   "after": 1,
+   "prompt": "B grubu bir kişinin plazmasında hangi antikor bulunur?",
+   "answer": "Anti-A bulunur; bu kişinin alyuvarında ise B antijeni vardır."
+  },
+  {
+   "after": 3,
+   "prompt": "AO×BO eşleşmesinde O grubu çocuk olasılığı kaçtır?",
+   "answer": "OO birleşmesi dört eş olasılıklı yoldan biridir; olasılık 1/4’tür."
+  },
+  {
+   "after": 5,
+   "prompt": "AO, Dd ile BO, dd ebeveynlerin O, Rh− çocuk olasılığı kaçtır?",
+   "answer": "O için 1/4 ile Rh− için 1/2 çarpılır: 1/4 × 1/2 = 1/8."
+  }
+ ],
+ "eseyin-belirlenmesi": [
+  {
+   "after": 1,
+   "prompt": "Olağan XY bireyin 23 kromozomlu spermi hangi kromozomları taşır?",
+   "answer": "22 otozom ve bir eşey kromozomu, X ya da Y taşır; 23 otozom taşımaz."
+  },
+  {
+   "after": 3,
+   "prompt": "X’e bağlı çekinik özellikte XᴬXᵃ genotipli kadın nasıl adlandırılır?",
+   "answer": "Taşıyıcı olarak adlandırılır; Xᴬ aleli bulunduğu için özelliği göstermez."
+  },
+  {
+   "after": 4,
+   "prompt": "Özelliği gösteren XᵃY baba ile XᴬXᴬ annenin kızları hangi genotiptedir?",
+   "answer": "Hepsi XᴬXᵃ taşıyıcıdır; oğulları ise XᴬY olur."
+  },
+  {
+   "after": 6,
+   "prompt": "X’e bağlı baskın aleli taşıyan baba bu aleli hangi çocuklarına aktarır?",
+   "answer": "Standart modelde bütün kızlarına aktarır; oğullarına kendi X’ini vermez."
+  }
+ ],
+ "soy-agaclari": [
+  {
+   "after": 1,
+   "prompt": "Tek bir ailede benzer bir dağılım görmek neden kalıtım tipini kesin kanıtlamaz?",
+   "answer": "Bir modelin mümkün olması tek mümkün model olduğu anlamına gelmez; eksik bilgi birden fazla modele izin verebilir."
+  },
+  {
+   "after": 3,
+   "prompt": "Otozomal baskın modelde dolu ebeveynin boş çocuğu varsa ebeveynin genotipi nedir?",
+   "answer": "Aa’dır; boş çocuk aa olduğundan dolu ebeveyn a aleli taşımalıdır."
+  },
+  {
+   "after": 5,
+   "prompt": "X’e bağlı çekinik modelde etkilenen bir kızın babası hangi genotipte olmalıdır?",
+   "answer": "XᵃY olmalıdır; kız Xᵃ alellerinden birini babasından almıştır."
+  }
+ ],
+ "virusler": [
+  {
+   "after": 1,
+   "prompt": "Virionda bir hücreden farklı olarak hangi iki bileşen bulunmaz?",
+   "answer": "Kendi sitoplazması ve ribozomu bulunmaz; virion genom ve kapsid etrafında örgütlenir."
+  },
+  {
+   "after": 3,
+   "prompt": "Virüsün yeni parçacık oluşturması hücre bölünmesinden nasıl ayrılır?",
+   "answer": "Virüs büyüyüp ikiye bölünmez; konakta üretilen genom ve proteinler birleştirilerek yeni virionlar kurulur."
+  },
+  {
+   "after": 5,
+   "prompt": "Başlangıçta 50 ve 500 parçacık olan iki kabı karşılaştırırken neden son sayılara değil değişime bakarsın?",
+   "answer": "Başlangıçlar farklı olduğundan yeni üretim ancak başlangıca göre değişimle doğru değerlendirilir."
+  },
+  {
+   "after": 6,
+   "prompt": "Aşı ile antikor içeren serum bağışıklığa nasıl farklı katkı sağlar?",
+   "answer": "Aşı bağışıklık sistemini belirli hedeflere karşı hazırlar; serum ise hazır antikorlar sağlar."
+  }
+ ],
+ "bakteri-ve-arke": [
+  {
+   "after": 2,
+   "prompt": "Bakteri ile arkeyi zar lipitleri bakımından ayıran fark nedir?",
+   "answer": "Bakteri zarında tipik olarak ester bağlı yağ asitleri, arke zarında eter bağlı izopren zincirleri bulunur."
+  },
+  {
+   "after": 3,
+   "prompt": "Mitokondrisi olmayan bir prokaryotta oksijenli solunum nasıl mümkün olur?",
+   "answer": "Solunumun elektron taşıma basamakları hücre zarıyla ilişkili olarak yürüyebilir."
+  },
+  {
+   "after": 4,
+   "prompt": "Prokaryot ikiye bölünmesi neden mitoz sayılmaz?",
+   "answer": "Prokaryotta çekirdek ve mitotik iğ düzeni yoktur; DNA kopyalanır ve hücre ikiye ayrılır."
+  },
+  {
+   "after": 6,
+   "prompt": "Metanojen ve halofil örnekleri neden bütün arkelerin aşırı koşullarda yaşadığını göstermez?",
+   "answer": "Denizde, toprakta ve canlılarla ilişkili ılımlı ortamlarda yaşayan arkeler de vardır."
+  }
+ ],
+ "protista": [
+  {
+   "after": 2,
+   "prompt": "Paramesyumda büyük ve küçük çekirdek hangi işlerle ilişkilidir?",
+   "answer": "Büyük çekirdek günlük hücresel işleyişle, küçük çekirdek eşeysel süreçlerdeki kalıtsal değişimle ilişkilidir."
+  },
+  {
+   "after": 4,
+   "prompt": "Kontraktil koful ile besin kofulunun görevleri nasıl ayrılır?",
+   "answer": "Besin kofulu sindirim ortamıdır; kontraktil koful fazla suyu toplayıp uzaklaştırarak su dengesini düzenler."
+  },
+  {
+   "after": 5,
+   "prompt": "Çok hücreli bir algin yaprak benzeri görünmesi neyi kanıtlamaz?",
+   "answer": "Gerçek kök, gövde, yaprak ve iletim dokularının bulunduğunu kanıtlamaz."
+  },
+  {
+   "after": 6,
+   "prompt": "Plasmodium hücre içinde yaşadığı hâlde neden virüs sayılmaz?",
+   "answer": "Ökaryot hücresel düzene sahiptir; hücre içinde yaşamak tek başına virüs olmak demek değildir."
+  }
+ ],
+ "bitkiler": [
+  {
+   "after": 1,
+   "prompt": "Fotosentez yapan bitki hücreleri solunumu hangi zamanlarda sürdürür?",
+   "answer": "Gündüz ve gece sürdürür; fotosentez yapmak solunum yapmamak demek değildir."
+  },
+  {
+   "after": 3,
+   "prompt": "Odunsu gövde neden tek başına açık tohumlu olmanın kanıtı sayılmaz?",
+   "answer": "Çok sayıda kapalı tohumlu ağaç da vardır; tohum ve meyve kanıtı birlikte aranmalıdır."
+  },
+  {
+   "after": 5,
+   "prompt": "Bitkideki organik maddenin karbonu temel olarak nereden gelir?",
+   "answer": "CO₂’den gelir; kökle alınan su akışını karbon kaynağıyla karıştırmamalısın."
+  },
+  {
+   "after": 6,
+   "prompt": "Tek çenekli bir bitkide tipik olarak hangi damarlanma ve kök biçimi görülür?",
+   "answer": "Çoğunlukla paralel damarlanma ve saçak kök görülür; buğday öğretici bir örnektir."
+  }
+ ],
+ "mantarlar": [
+  {
+   "after": 1,
+   "prompt": "Mantar hücre duvarında bulunabilen bileşen ve depo karbonhidratı nedir?",
+   "answer": "Hücre duvarında kitin, depo karbonhidratı olarak glikojen bulunabilir."
+  },
+  {
+   "after": 3,
+   "prompt": "Saprotrof mantar ile parazit mantar besin kaynağı bakımından nasıl ayrılır?",
+   "answer": "Saprotrof ölü organik maddeden, parazit ise canlı konaktan ona zarar vererek beslenir."
+  },
+  {
+   "after": 6,
+   "prompt": "Mayalarda eşeysiz çoğalma hangi yollarla görülür?",
+   "answer": "Tomurcuklanmayla ya da bazı türlerde bölünmeyle görülür."
+  }
+ ],
+ "omurgasizlar": [
+  {
+   "after": 1,
+   "prompt": "Bir hayvanı mantardan ayırırken heterotrofluk yerine hangi özelliğe bakarsın?",
+   "answer": "Hücre duvarına bakarsın; hayvanlarda hücre duvarı yoktur, mantarlarda vardır."
+  },
+  {
+   "after": 3,
+   "prompt": "Planarya ile tenya sindirim sistemi bakımından nasıl ayrılır?",
+   "answer": "Planaryada tek açıklıklı bir sindirim boşluğu bulunur; parazit tenyada sindirim sistemi yoktur."
+  },
+  {
+   "after": 4,
+   "prompt": "Yumuşakçalarda mantonun görevi nedir?",
+   "answer": "Kabuk oluşturabilen dokudur; yine de her yumuşakçada belirgin bir dış kabuk bulunması gerekmez."
+  },
+  {
+   "after": 6,
+   "prompt": "Örümceğimsiler bacak ve anten bakımından böceklerden nasıl ayrılır?",
+   "answer": "Genellikle dört çift yürüme bacağı taşırlar ve antenleri yoktur; böceklerde göğüste üç çift bacak ve bir çift anten bulunur."
+  },
+  {
+   "after": 7,
+   "prompt": "Denizyıldızında kopan kolun yerine yenisinin gelmesi neden tek başına üreme sayılmaz?",
+   "answer": "Bu, aynı bireyin yenilenmesidir; birey sayısı artmaz, yeni birey ancak uygun parçadan gelişebilir."
+  }
+ ],
+ "omurgalilar": [
+  {
+   "after": 1,
+   "prompt": "Tipik kemikli balıkta dolaşım neden tek çevrimli sayılır?",
+   "answer": "Kalpten çıkan kan önce solungaçlara, oradan doğrudan vücuda gider."
+  },
+  {
+   "after": 2,
+   "prompt": "Kurbağanın larvası ve ergini hangi yapılarla solur?",
+   "answer": "Larva solungaçla, ergin ise akciğer ve nemli deriyle solur."
+  },
+  {
+   "after": 5,
+   "prompt": "Memelilerin önemli hücresel özelliği nedir?",
+   "answer": "Olgun alyuvarlarının çekirdeksiz olmasıdır."
+  },
+  {
+   "after": 7,
+   "prompt": "Güneşteki kertenkelenin sıcaklığı gölgedeki memeliden yüksekse neden yine ektoterm sayılır?",
+   "answer": "Ektotermlik ısının kaynağıyla ilgilidir; vücut sıcaklığını çevre ısısı güçlü biçimde etkiler, tek ölçüm sınıflandırmayı değiştirmez."
+  }
+ ],
+ "mitoz": [
+  {
+   "after": 1,
+   "prompt": "Benzer şekilli bir hücre büyürken yüzey/hacim oranı neden düşer?",
+   "answer": "Yüzey boyun karesiyle, hacim küpüyle artar; hacim daha hızlı büyür."
+  },
+  {
+   "after": 2,
+   "prompt": "2n=6 olan diploit hücrede kaç homolog çift bulunur?",
+   "answer": "Üç homolog çift bulunur; 2n iki kromozom takımını gösterir."
+  },
+  {
+   "after": 4,
+   "prompt": "Homologların tetrat hâlinde dizilmesi neden normal mitozla uyuşmaz?",
+   "answer": "Mitozun metafazında eşlenmiş kromozomlar orta düzleme tek tek dizilir; tetrat dizilişi normal mitozda görülmez."
+  },
+  {
+   "after": 5,
+   "prompt": "2n=4 olan hücrede anafazda bir kutba kaç kromozom ve kaç DNA molekülü gider?",
+   "answer": "Dört kromozom ve dört DNA molekülü gider; sekizlik toplam bütün hücreye aittir."
+  },
+  {
+   "after": 7,
+   "prompt": "G₁’de 6 pg DNA taşıyan hücrenin anafazında bir kutupta kaç pg DNA bulunur?",
+   "answer": "Eşlenme sonunda 12 pg olur; anafazda bir kutba bunun yarısı, 6 pg düşer."
+  }
+ ],
+ "eseysiz-ureme": [
+  {
+   "after": 1,
+   "prompt": "Aynı bitkiden alınan iki çelik farklı ışıkta farklı boya ulaşırsa bu neyi gösterir?",
+   "answer": "Fenotipe çevrenin de etki ettiğini gösterir; eşeyli üretim ya da farklı genotip kanıtı değildir."
+  },
+  {
+   "after": 3,
+   "prompt": "Tomurcuklanmada ayırt edici olay nedir?",
+   "answer": "Ata üzerinde yeni bir çıkıntının oluşup gelişmesidir; önce bir parçanın kopması değildir."
+  },
+  {
+   "after": 6,
+   "prompt": "Patates yumrusundaki gözler hangi yapıdır?",
+   "answer": "Tomurcuktur; yumru bir gövdedir ve toprak altında olması onu kök yapmaz."
+  },
+  {
+   "after": 7,
+   "prompt": "Doku kültüründe çoğalan hücre topluluğunun oluşturduğu yapıya ne denir?",
+   "answer": "Kallus denir; uygun farklılaşma koşullarında ondan kök ve sürgün gelişebilir."
+  }
+ ],
+ "mayoz": [
+  {
+   "after": 1,
+   "prompt": "2n=4 olan hücrede DNA eşlenmesinden sonra kaç kromozom ve kaç kromatit bulunur?",
+   "answer": "Dört kromozom ve sekiz kromatit bulunur; hücrede iki homolog çift vardır."
+  },
+  {
+   "after": 3,
+   "prompt": "Standart 2n=6 örneğinde profaz I’de kaç tetrat oluşur?",
+   "answer": "Üç tetrat oluşur; üç homolog çiftteki altı eşlenmiş kromozom on iki kromatit taşır."
+  },
+  {
+   "after": 5,
+   "prompt": "2n=4 olan hücrede anafaz I’de bir kutba kaç kromozom ve kaç DNA molekülü gider?",
+   "answer": "İki kromozom ve dört DNA molekülü gider; kardeşler birlikte kaldığı için her kromozom iki DNA taşır."
+  },
+  {
+   "after": 7,
+   "prompt": "2n=6 olan hücrede ikinci sitokinez sonunda oluşan her hücre kaç kromozom taşır?",
+   "answer": "Üç kromozom ve C miktarında DNA taşır; dört ürünün toplamı 4C’dir."
+  }
+ ],
+ "hucre-zarinda-madde-alisverisleri": [
+  {
+   "after": 1,
+   "prompt": "O₂ ile Na⁺ ikisi de küçükken zardan geçişte neden farklı yol izler?",
+   "answer": "O₂ apolar olduğundan lipit tabakadan geçer; Na⁺ yüklü olduğundan genellikle uygun bir protein ister."
+  },
+  {
+   "after": 3,
+   "prompt": "Na⁺/K⁺ pompası bu iyonları hangi yönlerde taşır?",
+   "answer": "Na⁺’u hücre dışına, K⁺’u hücre içine taşır; yönü her zaman hücreye doğru değildir."
+  },
+  {
+   "after": 5,
+   "prompt": "Alyuvar hipotonik ortamda parçalanırsa bu olaya özel olarak ne ad verilir?",
+   "answer": "Hemoliz denir; hayvan hücresinin aşırı su alıp parçalanmasının genel adı lizistir."
+  },
+  {
+   "after": 6,
+   "prompt": "Su modelinde iç çözünen 3, dış çözünen 1 ve iç basınç 2 ise içe sürücü etki kaç olur?",
+   "answer": "3 − 1 − 2 = 0 olur; karşı basınç ozmotik eğilimi dengeler."
+  },
+  {
+   "after": 8,
+   "prompt": "Diyaliz cihazının enerji kullanması neden ürenin aktif taşındığını göstermez?",
+   "answer": "Makine kanı dolaştırmak için enerji kullanır; üre zardan derişim farkıyla pasif geçer."
+  }
+ ],
+ "canlilarin-siniflandirilmasi": [
+  {
+   "after": 1,
+   "prompt": "Suda yaşamak balık ile balinayı aynı yakın gruba koymaya neden yetmez?",
+   "answer": "Yaşam ortamı akrabalık kanıtı değildir; anatomi, gelişim, biyokimya ve moleküler diziler birlikte değerlendirilir."
+  },
+  {
+   "after": 2,
+   "prompt": "Kuş ve böcek kanadı neden analog yapı örneğidir?",
+   "answer": "Uçuş işlevinde benzerdirler ama aynı atasal kanadın aynı yapısal dönüşümü değildirler."
+  },
+  {
+   "after": 4,
+   "prompt": "Mammalia ile sınıf arasındaki ilişki nedir?",
+   "answer": "Mammalia belirli bir taksonun adıdır; sınıf ise bu taksonun hiyerarşideki derecesidir."
+  },
+  {
+   "after": 5,
+   "prompt": "Biyolojik tür ölçütü fosillerde ve eşeysiz canlılarda neden doğrudan uygulanamaz?",
+   "answer": "Çiftleşme deneyi yapılamaz; morfolojik, ekolojik ve moleküler başka ölçütler gerekir."
+  },
+  {
+   "after": 8,
+   "prompt": "Kertenkele GGCCGA ile kedi GGCCTT dizileri kaç konumda farklıdır?",
+   "answer": "İki konumda farklıdır; son iki baz GA ve TT olarak ayrılır."
+  }
+ ]
+}

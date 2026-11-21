@@ -1,4 +1,5 @@
 // Üretilmiş dosya: elle düzenleme. Parti eklendikçe yeniden üretilir.
+import tyt_biyoloji from "./tyt-biyoloji.json" with { type: "json" };
 import tyt_fizik from "./tyt-fizik.json" with { type: "json" };
 import tyt_geometri from "./tyt-geometri.json" with { type: "json" };
 import tyt_kimya from "./tyt-kimya.json" with { type: "json" };
@@ -17,7 +18,7 @@ export interface RecallCheck {
  * short question about what was just read. Explicit imports so the module also
  * loads outside Vite (tests).
  */
-const byLesson: Record<string, RecallCheck[]> = Object.assign({}, tyt_fizik, tyt_geometri, tyt_kimya, tyt_matematik, tyt_turkce);
+const byLesson: Record<string, RecallCheck[]> = Object.assign({}, tyt_biyoloji, tyt_fizik, tyt_geometri, tyt_kimya, tyt_matematik, tyt_turkce);
 
 /** Mid-lesson recall checks of one lesson, in reading order. */
 export const recallChecksFor = (lessonId: string): readonly RecallCheck[] => byLesson[lessonId] ?? [];
