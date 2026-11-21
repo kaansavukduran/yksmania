@@ -12,8 +12,8 @@
    "stepped": 380,
    "sheetsDone": 4,
    "sheets": 33,
-   "osymQuestions": 240,
-   "osymBooklets": 6,
+   "osymQuestions": 320,
+   "osymBooklets": 8,
    "open": 30
   },
   {
@@ -28,8 +28,8 @@
    "stepped": 735,
    "sheetsDone": 5,
    "sheets": 38,
-   "osymQuestions": 179,
-   "osymBooklets": 6,
+   "osymQuestions": 240,
+   "osymBooklets": 8,
    "open": 28
   },
   {
@@ -44,8 +44,8 @@
    "stepped": 217,
    "sheetsDone": 1,
    "sheets": 32,
-   "osymQuestions": 61,
-   "osymBooklets": 6,
+   "osymQuestions": 80,
+   "osymBooklets": 8,
    "open": 0
   },
   {
@@ -60,8 +60,8 @@
    "stepped": 311,
    "sheetsDone": 7,
    "sheets": 24,
-   "osymQuestions": 42,
-   "osymBooklets": 6,
+   "osymQuestions": 56,
+   "osymBooklets": 8,
    "open": 4
   },
   {
@@ -76,8 +76,8 @@
    "stepped": 535,
    "sheetsDone": 38,
    "sheets": 56,
-   "osymQuestions": 42,
-   "osymBooklets": 6,
+   "osymQuestions": 56,
+   "osymBooklets": 8,
    "open": 16
   },
   {
@@ -92,8 +92,8 @@
    "stepped": 515,
    "sheetsDone": 7,
    "sheets": 36,
-   "osymQuestions": 36,
-   "osymBooklets": 6,
+   "osymQuestions": 48,
+   "osymBooklets": 8,
    "open": 33
   },
   {
@@ -108,8 +108,8 @@
    "stepped": 390,
    "sheetsDone": 4,
    "sheets": 24,
-   "osymQuestions": 30,
-   "osymBooklets": 6,
+   "osymQuestions": 40,
+   "osymBooklets": 8,
    "open": 28
   },
   {
@@ -124,8 +124,8 @@
    "stepped": 400,
    "sheetsDone": 5,
    "sheets": 40,
-   "osymQuestions": 30,
-   "osymBooklets": 6,
+   "osymQuestions": 40,
+   "osymBooklets": 8,
    "open": 32
   },
   {
@@ -140,8 +140,8 @@
    "stepped": 190,
    "sheetsDone": 3,
    "sheets": 17,
-   "osymQuestions": 59,
-   "osymBooklets": 6,
+   "osymQuestions": 79,
+   "osymBooklets": 8,
    "open": 14
   },
   {
@@ -156,8 +156,8 @@
    "stepped": 371,
    "sheetsDone": 3,
    "sheets": 20,
-   "osymQuestions": 31,
-   "osymBooklets": 6,
+   "osymQuestions": 41,
+   "osymBooklets": 8,
    "open": 16
   },
   {
@@ -264,9 +264,9 @@
   "open": 340,
   "ogmPdfDone": 119,
   "ogmPdfTotal": 8981,
-  "osymPdfDone": 13,
+  "osymPdfDone": 15,
   "osymPdfTotal": 1001,
-  "osymQuestions": 1310,
+  "osymQuestions": 1560,
   "osymCitedQuestions": 76
  }
 }
