@@ -29,9 +29,9 @@ Bu tablo `npm run progress` ile koddan üretilir; elle düzenlenmez. Yüzdeler y
 | AYT Geometri | 4 / 4 | 4 · 51 | 40 / 40 · %100,00 | 1 / 4 · %25,00 | 87 soru · 9 kitapçık | 0 |
 | AYT Fizik | 46 / 46 | 27 · 95 | 541 / 541 · %100,00 | 7 / 46 · %15,22 | 126 soru · 9 kitapçık | 19 |
 | AYT Kimya | 55 / 55 | 18 · 19 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 37 |
-| AYT Biyoloji | 75 / 75 | 16 · 39 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 59 |
+| AYT Biyoloji | 75 / 75 | 34 · 123 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 41 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **505 / 505** | **234 · 979** | **6.465 / 6.465 · %100,00** | **109 / 517 · %21,08** | **18 / 1.001 · %1,80 PDF · 1.845 soru** | **271** |
+| **Toplam** | **505 / 505** | **252 · 1063** | **6.465 / 6.465 · %100,00** | **109 / 517 · %21,08** | **18 / 1.001 · %1,80 PDF · 1.845 soru** | **253** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
