@@ -152,6 +152,13 @@ import { chemistryFigures060Formula } from "./chemistryFigures060Formula";
 import { chemistryFigures060Redox } from "./chemistryFigures060Redox";
 import { chemistryFigures060Solution } from "./chemistryFigures060Solution";
 import { chemistryFigures060Tyt } from "./chemistryFigures060Tyt";
+import { turkishFigures060Sentence } from "./turkishFigures060Sentence";
+import { turkishFigures060Verbals } from "./turkishFigures060Verbals";
+import { turkishFigures060Spelling } from "./turkishFigures060Spelling";
+import { turkishFigures060Words } from "./turkishFigures060Words";
+import { philosophyFigures060Logic } from "./philosophyFigures060Logic";
+import { philosophyFigures060History } from "./philosophyFigures060History";
+import { philosophyFigures060Being } from "./philosophyFigures060Being";
 import { biologyFigures059TytGenetics } from "./biologyFigures059TytGenetics";
 import { biologyFigures059TytCell } from "./biologyFigures059TytCell";
 import { biologyFigures059TytDiversity } from "./biologyFigures059TytDiversity";
@@ -331,6 +338,13 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   physicsFigures060Fields,
   physicsFigures060Motion,
   mathFigures060,
+  turkishFigures060Sentence,
+  turkishFigures060Verbals,
+  turkishFigures060Spelling,
+  turkishFigures060Words,
+  philosophyFigures060Logic,
+  philosophyFigures060History,
+  philosophyFigures060Being,
 ];
 export const sectionFigures: Record<string, Record<string, FigureDef>> = {};
 for (const pack of figurePacks)
