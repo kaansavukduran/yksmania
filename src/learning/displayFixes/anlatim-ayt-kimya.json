@@ -398,5 +398,125 @@
  {
   "from": "Yasa gezgininde önce bir deneyi seç ve yalnız izin verilen değişkeni değiştir. Başlangıç–son sayıları, sabitleri, noktanın grafikteki yerini ve HTML sonucunu birlikte karşılaştır. Sonra birleşik değişimde birden çok etkiyi açıp tahmininin hangi varsayımını değiştirdiğini yaz.",
   "to": "Yasa gezgininde önce bir deneyi seç ve yalnız izin verilen değişkeni değiştir. Başlangıç–son sayıları, sabitleri, noktanın grafikteki yerini ve hesaplanan sonucu birlikte karşılaştır. Sonra birleşik değişimde birden çok etkiyi açıp tahmininin hangi varsayımını değiştirdiğini yaz."
+ },
+ {
+  "from": "Entalpi H=U+PV olarak tanımlanan bir hâl fonksiyonudur; iç enerjiyle aynı büyüklük değildir. ΔH, başlangıç ve son hâlin farkıdır. Uygun sabit basınçlı süreçte yalnız basınç-hacim işi varsa alınan/verilen ısı qP=ΔH olur.",
+  "to": "Entalpi H=U+PV olarak tanımlanan bir hâl fonksiyonudur; iç enerjiyle aynı büyüklük değildir. ΔH, başlangıç ve son hâlin farkıdır. Uygun sabit basınçlı süreçte yalnız basınç-hacim işi varsa alınan/verilen ısı q_P=ΔH olur."
+ },
+ {
+  "from": "Sabit hacimde ve başka iş yokken qV=ΔU kullanılabilir. Birini ötekine koşulsuz çevirmek özellikle gazlı tepkimelerde hata doğurur. Sıcaklık, basınç, madde miktarı ve fazlar hâl bilgisinin parçalarıdır; bunlar aynı tutulmadan yalnız denklem adından tek bir enerji değeri çıkarılmaz.",
+  "to": "Sabit hacimde ve başka iş yokken q_V=ΔU kullanılabilir. Birini ötekine koşulsuz çevirmek özellikle gazlı tepkimelerde hata doğurur. Sıcaklık, basınç, madde miktarı ve fazlar hâl bilgisinin parçalarıdır; bunlar aynı tutulmadan yalnız denklem adından tek bir enerji değeri çıkarılmaz."
+ },
+ {
+  "from": "Çözelti ile kalorimetre kabı aynı ΔT kadar değişiyorsa kap için qkal=CkalΔT yazılır. Tepkimenin dışında ısınan toplam ortam hem mcΔT hem CkalΔT içerebilir. Kabı yok saymak, yalnız kap kapasitesi ihmal edilebilir diye verilmişse uygun yaklaşımdır. Örneğin Ckal=20 J/K ve ΔT=5 K için kap ayrıca 100 J alır; bu sayı çözelti enerjisine eklenir.",
+  "to": "Çözelti ile kalorimetre kabı aynı ΔT kadar değişiyorsa kap için q_kal=C_kalΔT yazılır. Tepkimenin dışında ısınan toplam ortam hem mcΔT hem C_kalΔT içerebilir. Kabı yok saymak, yalnız kap kapasitesi ihmal edilebilir diye verilmişse uygun yaklaşımdır. Örneğin C_kal=20 J/K ve ΔT=5 K için kap ayrıca 100 J alır; bu sayı çözelti enerjisine eklenir."
+ },
+ {
+  "from": "Dışarıya ısı kaybı ve başka katkı yoksa qtepkime+qçözelti+qkal=0. Bu bir enerji bilançosudur. Ürün ve çözücü kütlesini aynı anda iki kez sayma; m'nin deneyde tanımlanan son karışım mı yoksa ayrı ısınan bir bölme mi olduğunu oku.",
+  "to": "Dışarıya ısı kaybı ve başka katkı yoksa q_tepkime+q_çözelti+q_kal=0. Bu bir enerji bilançosudur. Ürün ve çözücü kütlesini aynı anda iki kez sayma; m'nin deneyde tanımlanan son karışım mı yoksa ayrı ısınan bir bölme mi olduğunu oku."
+ },
+ {
+  "from": "Bir tepkimeyi tersine çevirmek başlangıç ve son hâli yer değiştirir. Hson−Hilk farkı bu yüzden işaret değiştirir. C+½O₂→CO için −110,5 kJ verilmişse CO→C+½O₂ için +110,5 kJ yazılır; sayı büyüklüğü aynı kalır.",
+  "to": "Bir tepkimeyi tersine çevirmek başlangıç ve son hâli yer değiştirir. H_son−H_ilk farkı bu yüzden işaret değiştirir. C+½O₂→CO için −110,5 kJ verilmişse CO→C+½O₂ için +110,5 kJ yazılır; sayı büyüklüğü aynı kalır."
+ },
+ {
+  "from": "Aynı geçiş durumu için ileri engel tepe eksi giren, geri engel tepe eksi ürün düzeyidir. Bu nedenle ΔH=Ea, ileri−Ea, geri olur. İleri 60 ve geri 90 kJ/mol ise ürünler 30 kJ/mol daha düşük düzeydedir; ΔH=−30 kJ/mol bulunur.",
+  "to": "Aynı geçiş durumu için ileri engel tepe eksi giren, geri engel tepe eksi ürün düzeyidir. Bu nedenle ΔH=Ea,ileri−Ea,geri olur. İleri 60 ve geri 90 kJ/mol ise ürünler 30 kJ/mol daha düşük düzeydedir; ΔH=−30 kJ/mol bulunur."
+ },
+ {
+  "from": "İdeal gaz için Pi=[i]RT kullanılarak lise sayısal bağıntısı Kp=Kc(RT)^Δn elde edilir. Δn, ürün gaz katsayıları toplamı eksi giren gaz katsayıları toplamıdır. X₂⇌2X için Δn=1; N₂+3H₂⇌2NH₃ için Δn=−2 olur.",
+  "to": "İdeal gaz için Pi=[i]RT kullanılarak sayısal bağıntı Kp=Kc(RT)^Δn elde edilir. Δn, ürün gaz katsayıları toplamı eksi giren gaz katsayıları toplamıdır. X₂⇌2X için Δn=1; N₂+3H₂⇌2NH₃ için Δn=−2 olur."
+ },
+ {
+  "from": "T Kelvin, R kullanılan hacim-basınç birimleriyle uyumlu seçilir. Örneğin X₂⇌2X için Kc=1, T=300 K, R=0,08206 L·atm/(mol·K) verilirse sayısal Kp=24,618 bulunur. Daha genel termodinamik K etkinliklerle boyutsuz tanımlanır; burada soruda verilen lise derişim/basınç gösterimi korunur.",
+  "to": "T Kelvin, R kullanılan hacim-basınç birimleriyle uyumlu seçilir. Örneğin X₂⇌2X için Kc=1, T=300 K, R=0,08206 L·atm/(mol·K) verilirse sayısal Kp=24,618 bulunur. Daha genel termodinamik K etkinliklerle boyutsuz tanımlanır; burada soruda verilen derişim/basınç gösterimi korunur."
+ },
+ {
+  "from": "Ters denklem için Kters=1/K; bütün katsayıları r ile çarpılan denklem için Kyeni=Kʳ olur. Bu kural, bağıntıdaki bütün üslerin aynı işlemle değişmesinden gelir. K=49 olan ileri denklemin aynı yönde yarısı için √49=7; ters yarısı için 1/7 bulunur.",
+  "to": "Ters denklem için K_ters=1/K; bütün katsayıları r ile çarpılan denklem için K_yeni=Kʳ olur. Bu kural, bağıntıdaki bütün üslerin aynı işlemle değişmesinden gelir. K=49 olan ileri denklemin aynı yönde yarısı için √49=7; ters yarısı için 1/7 bulunur."
+ },
+ {
+  "from": "X+Y⇌XY için bir mol XY net oluştuğunda bir mol X ve bir mol Y tüketilir. Sabit hacimde derişim değişimleri de −x, −x,+x oranındadır. Bu, grafikte herhangi üç bağımsız eğri çizilemeyeceğini gösterir; aynı ilerleme bütün türlere uygulanmalıdır.",
+  "to": "X+Y⇌XY için bir mol XY net oluştuğunda bir mol X ve bir mol Y tüketilir. Sabit hacimde derişim değişimleri de −x, −x, +x oranındadır. Bu, grafikte herhangi üç bağımsız eğri çizilemeyeceğini gösterir; aynı ilerleme bütün türlere uygulanmalıdır."
+ },
+ {
+  "from": "Her müdahale için bir kısa tablo kur: değişen dış veri, ani etkilenen türler, Q/K kıyası ve sonraki stokiyometrik değişim. Tek tür eklemede yalnız o satır sıçrar; hacim değişiminde bütün gaz satırları sıçrar. Bu işlemler kaynak grafiğinin yalnız biçimini ezberlemekten daha geneldir.",
+  "to": "Her müdahale için bir kısa tablo kur: değişen dış veri, ani etkilenen türler, Q/K kıyası ve sonraki stokiyometrik değişim. Tek tür eklemede yalnız o satır sıçrar; hacim değişiminde bütün gaz satırları sıçrar. Bu işlemler grafiğin yalnız biçimini ezberlemekten daha geneldir."
+ },
+ {
+  "from": "Örneğin [X]=2,[Y]=1 M için Qc=0,50. Aynı T'de Kc=2 verilmişse oran ürün lehine artmalıdır; net yön ileridir. Bu kıyas yönü söyler, son miktarları tek başına vermez. Kap stoğu ve katsayılar ayrıca gerekir.",
+  "to": "Örneğin [X]=2, [Y]=1 M için Qc=0,50. Aynı T'de Kc=2 verilmişse oran ürün lehine artmalıdır; net yön ileridir. Bu kıyas yönü söyler, son miktarları tek başına vermez. Kap stoğu ve katsayılar ayrıca gerekir."
+ },
+ {
+  "from": "Etkileşimde X⇌Y için kurmaca ama açık bir K(T) tablosu verilir. Isı alan ileri modelde 300,325,350 K için K değerleri 1,2,4; ısı veren ileri modelde 4,2,1'dir. Bu sayılar belirli bir gerçek kimyasalın deneysel ölçümü diye sunulmaz.",
+  "to": "Etkileşimde X⇌Y için kurmaca ama açık bir K(T) tablosu verilir. Isı alan ileri modelde 300, 325, 350 K için K değerleri 1, 2, 4; ısı veren ileri modelde 4, 2, 1'dir. Bu sayılar belirli bir gerçek kimyasalın deneysel ölçümü diye sunulmaz."
+ },
+ {
+  "from": "X⇌Y için toplam derişim Ctop korunmuşsa [X]+[Y]=Ctop ve [Y]=K[X] iki denklemi kurulabilir. Böylece [X]=Ctop/(1+K),[Y]=K·Ctop/(1+K) bulunur. K büyüdükçe aynı toplam içinde Y payı artar; bütün Y'nin zorunlu tek anda oluştuğu söylenmez.",
+  "to": "X⇌Y için toplam derişim C_top korunmuşsa [X]+[Y]=C_top ve [Y]=K[X] iki denklemi kurulabilir. Böylece [X]=C_top/(1+K), [Y]=K·C_top/(1+K) bulunur. K büyüdükçe aynı toplam içinde Y payı artar; bütün Y'nin zorunlu tek anda oluştuğu söylenmez."
+ },
+ {
+  "from": "Sıcaklık değişimi ileri ve geri hızları ayrı ayrı etkileyebilir. Açık iki doğrusal hız yasasıyla verilen X⇌Y modelinde K=kileri/kgeri olur. İleri k 0,6'dan 1,2'ye, geri k 0,3'ten 0,9'a çıkarsa ikisi de büyür fakat oran 2'den 4/3'e iner.",
+  "to": "Sıcaklık değişimi ileri ve geri hızları ayrı ayrı etkileyebilir. Açık iki doğrusal hız yasasıyla verilen X⇌Y modelinde K=k_ileri/k_geri olur. İleri k 0,6'dan 1,2'ye, geri k 0,3'ten 0,9'a çıkarsa ikisi de büyür fakat oran 2'den 4/3'e iner."
+ },
+ {
+  "from": "İdeal gazların lise sayısal gösteriminde Kp=Kc(RT)^Δn kullanılır. Sıcaklık değişirken RT çarpanı da değişir. Δn=0 olan modelimizde bu ek çarpan birdir; bu yüzden oran tablosu ile ısı yönünü ilişkilendirmek doğrudan yapılır.",
+  "to": "İdeal gazların sayısal gösteriminde Kp=Kc(RT)^Δn kullanılır. Sıcaklık değişirken RT çarpanı da değişir. Δn=0 olan modelimizde bu ek çarpan birdir; bu yüzden oran tablosu ile ısı yönünü ilişkilendirmek doğrudan yapılır."
+ },
+ {
+  "from": "Sonlu kap boşalırken basınç ve akış hızı düşebilir. Başlangıç hızı sabitmiş gibi bütün gazın kesin sonlu sürede çıktığını iddia etme. Soru sabit besleme ve basınç sağlandığını veriyorsa okul oranı o sınırda uygulanır; vermiyorsa daha ayrıntılı dinamik veri gerekebilir.",
+  "to": "Sonlu kap boşalırken basınç ve akış hızı düşebilir. Başlangıç hızı sabitmiş gibi bütün gazın kesin sonlu sürede çıktığını iddia etme. Soru sabit besleme ve basınç sağlandığını veriyorsa basit oran o sınırda uygulanır; vermiyorsa daha ayrıntılı dinamik veri gerekebilir."
+ },
+ {
+  "from": "Önce yönü tahmin et, ardından sayıyla kontrol et ve notu kapatarak farklı koşullu bir örnek çöz. Gazın gerçek faz değişimi ve yoğun ortam sapmaları bu ideal sayısal modelin dışında kalır. Keşif seçimi öğrenme puanı değildir; bağımsız soru çözümleri ayrı kaydedilir.",
+  "to": "Önce yönü tahmin et, ardından sayıyla kontrol et ve notu kapatarak farklı koşullu bir örnek çöz. Gazın gerçek faz değişimi ve yoğun ortam sapmaları bu ideal sayısal modelin dışında kalır."
+ },
+ {
+  "from": "Hem P_toplam=P_X+P_su toplamını hem toplam su=buhar+sıvı envanterini kontrol et. Sonra basınç sabitliğiyle hacim sabitliğini yer değiştiren yeni bir soruyu not kapalı çöz. Kontrol eylemi veya tahmin kaydı tek başına bağımsız soru doğruluğu ve XP oluşturmaz.",
+  "to": "Hem P_toplam=P_X+P_su toplamını hem toplam su=buhar+sıvı envanterini kontrol et. Sonra basınç sabitliğiyle hacim sabitliğini yer değiştiren yeni bir soruyu not kapalı çöz."
+ },
+ {
+  "from": "Sıkıştırılabilirlik çarpanı Z=PV/(nRT) ile tanımlanır. İdeal modelde Z=1 olur. Kitapta PV/(RT) yazılıyorsa n=1 mol koşulunun ayrıca verildiğini kontrol et; farklı mol sayısında n’yi silmek yanlış bir ideal değer üretir.",
+  "to": "Sıkıştırılabilirlik çarpanı Z=PV/(nRT) ile tanımlanır. İdeal modelde Z=1 olur. PV/(RT) yazılıyorsa n=1 mol koşulunun ayrıca verildiğini kontrol et; farklı mol sayısında n’yi silmek yanlış bir ideal değer üretir."
+ },
+ {
+  "from": "Bir gaz daha ağır veya daha polar diye her P, T’de kesin daha büyük sapar sonucu çıkmaz. Kaynakların nitel örnekleri eğilim öğretir; kesin sayısal sıra için verilen Z verisi kullanılmalıdır. İki eğri kesişirse hangi basınç aralığında konuşulduğu özellikle yazılır.",
+  "to": "Bir gaz daha ağır veya daha polar diye her P, T’de kesin daha büyük sapar sonucu çıkmaz. Nitel örnekler eğilim öğretir; kesin sayısal sıra için verilen Z verisi kullanılmalıdır. İki eğri kesişirse hangi basınç aralığında konuşulduğu özellikle yazılır."
+ },
+ {
+  "from": "Kaynakta CO₂ için yaklaşık Tc=31,2 °C, Pc=73 atm verisi kullanılır. T>Tc ve P>Pc koşulları birlikte sağlandığında kritiküstü akışkan bölgesi konuşulur. Yalnız birinin aşılması ikisini birden aşmış olma sonucu vermez; kritik nokta ile üçlü nokta ayrıdır.",
+  "to": "CO₂ için yaklaşık Tc=31,2 °C, Pc=73 atm verisi kullanılır. T>Tc ve P>Pc koşulları birlikte sağlandığında kritiküstü akışkan bölgesi konuşulur. Yalnız birinin aşılması ikisini birden aşmış olma sonucu vermez; kritik nokta ile üçlü nokta ayrıdır."
+ },
+ {
+  "from": "CO₂’nin kaynakta gösterilen katı-sıvı eğrisi pozitif eğimlidir. Her iki maddede de sıvı-buhar sınırının T ve P değerleri birlikte okunur. Çok yüksek basınçtaki farklı buz fazları gibi ileri bölgeler basit ders şemasının dışında kalır; bütün su fazlarını tek doğruyla özetleme.",
+  "to": "CO₂’nin katı-sıvı eğrisi pozitif eğimlidir. Her iki maddede de sıvı-buhar sınırının T ve P değerleri birlikte okunur. Çok yüksek basınçtaki farklı buz fazları gibi ileri bölgeler basit ders şemasının dışında kalır; bütün su fazlarını tek doğruyla özetleme."
+ },
+ {
+  "from": "Ticari adlar her zaman tek bir saf molekülü göstermez; bazı soğutucular karışımdır. Eski bir listedeki çevre veya yasal kullanım cümlesini güncel bütün ürünlere kesin hüküm yapma. Bu çalışma kaynak kazanımını açıklar, kullanıcıya cihaz doldurma veya tehlikeli deney talimatı vermez.",
+  "to": "Ticari adlar her zaman tek bir saf molekülü göstermez; bazı soğutucular karışımdır. Eski bir listedeki çevre veya yasal kullanım cümlesini güncel bütün ürünlere kesin hüküm yapma. Bu çalışma konuyu açıklar, cihaz doldurma veya tehlikeli deney talimatı vermez."
+ },
+ {
+  "from": "Çözünme sıcaklığı geçici olarak değiştirebilir; hassas hacim için kalibrasyon sıcaklığı ve denge önemlidir. Buradaki sanal model fiziksel madde hazırlama talimatı değildir. Kullanıcının evde kimyasal eklemesi veya PDF’den veri yüklemesi öğrenmenin önkoşulu yapılmaz.",
+  "to": "Çözünme sıcaklığı geçici olarak değiştirebilir; hassas hacim için kalibrasyon sıcaklığı ve denge önemlidir. Buradaki sanal model fiziksel madde hazırlama talimatı değildir; evde kimyasal eklemek öğrenmenin önkoşulu değildir."
+ },
+ {
+  "from": "Gezgin tam çözünmüş, uçucu olmayan NaCl ve tepkimesiz/kayıpsız seyreltme modelidir. Son hacim ölçülmüş kabul edilir; eklenen su hacmi her koşulda son eksi ilk diye deney verisi yapılmaz. Tahmin ve gerekçe saklanır fakat doğru soru, ustalık veya XP yerine geçmez.",
+  "to": "Gezgin tam çözünmüş, uçucu olmayan NaCl ve tepkimesiz/kayıpsız seyreltme modelidir. Son hacim ölçülmüş kabul edilir; eklenen su hacmi her koşulda son eksi ilk diye deney verisi yapılmaz."
+ },
+ {
+  "from": "Nicel çökme ve artık çözünürlüğün ihmal edildiği okul modeli verilmişse stoklardan tepkime kadar düşülür. Gerçekte son küçük derişimler çözünürlük dengesi isteyebilir. Nicel modeldeki sıfırı bütün gerçek deneylerde tam matematiksel sıfır diye genelleme.",
+  "to": "Nicel çökme ve artık çözünürlüğün ihmal edildiği model verilmişse stoklardan tepkime kadar düşülür. Gerçekte son küçük derişimler çözünürlük dengesi isteyebilir. Nicel modeldeki sıfırı bütün gerçek deneylerde tam matematiksel sıfır diye genelleme."
+ },
+ {
+  "from": "Bir kaynak 0 M seçildiğinde o kaynak saf su katkısıdır; tür molleri sıfırsa çizimde varmış gibi tanecik üretilmez. İki kaynak da 0 M ise modelde yalnız su vardır. Tahminini hem tür envanteri hem yük denkliğiyle kontrol et; keşif kaydı bağımsız soru puanı değildir.",
+  "to": "Bir kaynak 0 M seçildiğinde o kaynak saf su katkısıdır; tür molleri sıfırsa çizimde varmış gibi tanecik üretilmez. İki kaynak da 0 M ise modelde yalnız su vardır. Tahminini hem tür envanteri hem yük denkliğiyle kontrol et."
+ },
+ {
+  "from": "Baş kuantum sayısı n=1,2,3,… değerlerini alır; 0, negatif veya kesirli olamaz. Katman adlarında K, L, M, N sırasıyla n=1,2,3,4 karşılığıdır. n, izinli alt kabukların sınırını da belirlediği için ilk kontrol bu sayıdan başlar.",
+  "to": "Baş kuantum sayısı n=1, 2, 3, … değerlerini alır; 0, negatif veya kesirli olamaz. Katman adlarında K, L, M, N sırasıyla n=1, 2, 3, 4 karşılığıdır. n, izinli alt kabukların sınırını da belirlediği için ilk kontrol bu sayıdan başlar."
+ },
+ {
+  "from": "Manyetik kuantum sayısı m_l=−l,…,0,…,+l tam sayılarını alır. l=2 için −2,−1,0,+1,+2 olmak üzere beş uzaysal durum vardır. n ve l sabitken m_l değişmesi aynı alt kabuk içindeki ayrı orbital durumlarını ayırır.",
+  "to": "Manyetik kuantum sayısı m_l=−l,…,0,…,+l tam sayılarını alır. l=2 için −2, −1, 0, +1, +2 olmak üzere beş uzaysal durum vardır. n ve l sabitken m_l değişmesi aynı alt kabuk içindeki ayrı orbital durumlarını ayırır."
  }
 ]

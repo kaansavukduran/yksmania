@@ -1620,5 +1620,348 @@
    "prompt": "n sabitken T 3 katına, V 1,5 katına çıkarsa basınç kaç katına çıkar?",
    "answer": "P₂/P₁=(T₂/T₁)(V₁/V₂)=3·(1/1,5)=2 olduğundan basınç 2 katına çıkar."
   }
+ ],
+ "ayt-tepkimelerde-enerji": [
+  {
+   "after": 2,
+   "prompt": "Sistem 50 J ısı alıp çevre üzerinde 20 J iş yaparsa ΔU kaç J olur?",
+   "answer": "Çevreye yapılan iş w=−20 J olarak girer; ΔU=q+w=50−20=+30 J olur."
+  },
+  {
+   "after": 4,
+   "prompt": "Kaptaki sıvının ısınması neden tepkimenin ısı aldığını göstermez?",
+   "answer": "Isınan sıvı tepkime dışındaki çevre olabilir; tepkime ısı verirken bu enerjiyi sıvı alır. Önce sistem sınırı belirlenir."
+  },
+  {
+   "after": 6,
+   "prompt": "Kalorimetre hesabında kabı yok saymak ne zaman uygundur?",
+   "answer": "Yalnız kabın ısı kapasitesinin ihmal edilebilir olduğu verilmişse; yoksa kap da aynı ΔT ile C_kal·ΔT kadar enerji alır."
+  },
+  {
+   "after": 8,
+   "prompt": "Bir mol yakıt için ΔH=−890 kJ ise 0,50 mol yakıt aynı son hâle yanınca enerji değişimi kaç kJ olur?",
+   "answer": "Enerji miktarla aynı oranda ölçeklenir: −445 kJ. Açığa çıkan ısının büyüklüğü 445 kJ diye de söylenebilir."
+  }
+ ],
+ "ayt-entalpi-bag-hess": [
+  {
+   "after": 1,
+   "prompt": "Elmasın standart oluşum entalpisi neden sıfır alınmaz?",
+   "answer": "Sıfır değeri yalnız seçilen referans hâline aittir; karbonda referans grafittir, elmas farklı bir değer alabilir."
+  },
+  {
+   "after": 3,
+   "prompt": "H₂O(gaz) için −242, H₂O(sıvı) için −286 kJ/mol verilirse yoğuşma entalpisi kaç kJ/mol olur?",
+   "answer": "Son eksi ilk: −286−(−242)=−44 kJ/mol. Sıvı su daha düşük entalpi düzeyindedir."
+  },
+  {
+   "after": 5,
+   "prompt": "D(H–H)=436, D(Cl–Cl)=242, D(H–Cl)=431 kJ/mol ise H₂+Cl₂→2HCl için ΔH kaç kJ olur?",
+   "answer": "Kopan bağlar 436+242=678 kJ, oluşan iki H–Cl 2·431=862 kJ eder; ΔH=678−862=−184 kJ olur."
+  },
+  {
+   "after": 7,
+   "prompt": "C→CO→CO₂ yolunda ara tür CO toplam denklemden neden silinir?",
+   "answer": "CO bir adımda oluşup sonraki adımda harcanır ve sonda kalmaz; karşı taraflardaki eşit miktarlar sadeleşir."
+  },
+  {
+   "after": 9,
+   "prompt": "Enerji toplamı doğru çıksa bile Hess çözümü hangi denetim olmadan tamamlanmış sayılmaz?",
+   "answer": "Toplanan denklemin hedefle atom sayısı, yük, faz ve miktar ölçeği bakımından aynı olduğu denetlenmelidir."
+  }
+ ],
+ "ayt-tepkime-hizi": [
+  {
+   "after": 1,
+   "prompt": "N₂+3H₂→2NH₃ tepkimesinde N₂ 0,020 M/s harcanıyorsa NH₃ kaç M/s oluşur?",
+   "answer": "Katsayı oranı 1:2 olduğundan NH₃ 0,040 M/s hızla oluşur; H₂ ise 0,060 M/s harcanır."
+  },
+  {
+   "after": 3,
+   "prompt": "Gaz mol toplamı iki tarafta eşitse sabit T ve V'de toplam basınç neden ilerlemeyi göstermeyebilir?",
+   "answer": "Gaz mol sayısı değişmediği için ideal kapta toplam basınç da değişmez; bu, tepkimenin durduğu anlamına gelmez."
+  },
+  {
+   "after": 5,
+   "prompt": "İleri engel 60, geri engel 90 kJ/mol olan tepkimenin ΔH değeri kaç kJ/mol olur?",
+   "answer": "ΔH=Ea,ileri−Ea,geri=60−90=−30 kJ/mol; ürünler girenlerden 30 kJ/mol daha düşük düzeydedir."
+  },
+  {
+   "after": 7,
+   "prompt": "r=k[A]²[B] yasasında r M/s ise k'nın birimi ne olur?",
+   "answer": "Toplam mertebe 3 olduğundan k'nın birimi M⁻²·s⁻¹, yani L²/(mol²·s) olur."
+  },
+  {
+   "after": 9,
+   "prompt": "Sabit sıcaklıkta yalnız başlangıç derişimi artırılırsa k ve r nasıl değişir?",
+   "answer": "k aynı kalır, r ise yasadaki derişim terimi büyüdüğü için değişebilir; k'yı değiştiren sıcaklıktır."
+  }
+ ],
+ "ayt-denge-hesaplari": [
+  {
+   "after": 1,
+   "prompt": "X₂⇌2X için mol sayılarıyla yazılan Kc'de hacim neden tamamen sadeleşmez?",
+   "answer": "Payda iki, paydada bir derişim olduğundan bir V artar: Kc=nX²/(V·nX₂). Üs toplamları farklıysa hacim kalır."
+  },
+  {
+   "after": 3,
+   "prompt": "1 L kapta yalnız 1 mol X₂ ve Kc=1 ise X₂⇌2X için çözülecek denklem ne olur?",
+   "answer": "Denge X₂ 1−x, X 2x mol olur; 4x²/(1−x)=1 düzenlenince 4x²+x−1=0 elde edilir."
+  },
+  {
+   "after": 6,
+   "prompt": "2 mol X₂'nin 0,50 molü ayrışırsa ayrışma yüzdesi kaç olur?",
+   "answer": "α=0,50/2=0,25, yani yüzde 25 olur. Oluşan monomer 1,00 moldür; ayrışan molle aynı sayı değildir."
+  },
+  {
+   "after": 8,
+   "prompt": "A⇌B için K=2 ve B⇌C için K=3 ise A⇌C dengesinin K değeri kaç olur?",
+   "answer": "Denklemler toplanıp B sadeleşince K değerleri çarpılır: 2·3=6. Sayıları toplamak yanlıştır."
+  }
+ ],
+ "ayt-denge-derisim": [
+  {
+   "after": 1,
+   "prompt": "Kc=1 olan X+Y⇌XY dengesinde derişimler 1, 1, 1 M iken X ani olarak 2 M'ye çıkarsa Q kaç olur?",
+   "answer": "Q=1/(2·1)=1/2 olur; Q<K olduğundan net dönüşüm ürünlere doğrudur."
+  },
+  {
+   "after": 3,
+   "prompt": "X'in 1 M'den 2 M'ye çıkarıldığı örnekte yeni dengedeki X derişimi eski ve ani değere göre nerededir?",
+   "answer": "Yaklaşık 1,732 M bulunur; ani 2 M'den düşük, eski 1 M'den yüksek kalır."
+  },
+  {
+   "after": 5,
+   "prompt": "X+Y⇌XY karışımında hacim yarıya inince Q neden yarıya düşer?",
+   "answer": "Bütün derişimler iki kat olur; payda bir, paydada iki derişim bulunduğundan Q 2/4 oranında, yani yarıya iner."
+  },
+  {
+   "after": 7,
+   "prompt": "H₂+I₂⇌2HI dengesinde sabit T'de hacim değişimi neden net kayma gerektirmeyebilir?",
+   "answer": "Gaz katsayı toplamları eşit olduğundan ortak hacim çarpanı Q'da sadeleşir; derişimlerin kendisi yine değişir."
+  }
+ ],
+ "ayt-denge-sicaklik-kesir": [
+  {
+   "after": 1,
+   "prompt": "Q=K olduğunda eşit olan şey nedir?",
+   "answer": "İleri ve geri hızlar eşittir; türlerin derişimleri eşit olmak zorunda değildir ve dönüşümler durmaz."
+  },
+  {
+   "after": 4,
+   "prompt": "325 K'de X 1, Y 2 M ile dengedeyken 350 K'de K=4 olursa yeni X derişimi kaç M olur?",
+   "answer": "Toplam 3 M korunur ve Y/X=4 olur; X=3/(1+4)=0,60 M, Y=2,40 M bulunur."
+  },
+  {
+   "after": 6,
+   "prompt": "İleri k 0,6'dan 1,2'ye, geri k 0,3'ten 0,9'a çıkarsa K=kileri/kgeri nasıl değişir?",
+   "answer": "İki hız sabiti de büyür ama oran 0,6/0,3=2'den 1,2/0,9=4/3'e düşer."
+  },
+  {
+   "after": 8,
+   "prompt": "Katalizör ile sıcaklık artışı denge bileşimini etkileme bakımından nasıl ayrılır?",
+   "answer": "Katalizör aynı dengeye daha hızlı ulaştırır, K'yi değiştirmez; sıcaklık ise K'yi ve son bileşimi değiştirebilir."
+  }
+ ],
+ "ayt-kinetik-yogunluk": [
+  {
+   "after": 1,
+   "prompt": "Brown hareketi ile gaz moleküllerinin ısıl hareketi nasıl ayrılır?",
+   "answer": "Isıl hareket moleküllerin kendisine aittir; Brown hareketi, bu darbelerin daha büyük asılı parçacıkta yarattığı düzensiz harekettir."
+  },
+  {
+   "after": 4,
+   "prompt": "Aynı sıcaklıkta mol kütlesi dört kat olan gazın v_rms değeri nasıl değişir?",
+   "answer": "v_rms mol kütlesinin kareköküyle ters orantılı olduğundan yarıya iner; ortalama öteleme enerjisi aynı kalır."
+  },
+  {
+   "after": 6,
+   "prompt": "Hızı iki kat olan gaz, sabit akış koşulunda eşit miktarı kaç kat sürede aktarır?",
+   "answer": "Süre hıza ters orantılıdır; aynı miktar yarı sürede aktarılır."
+  },
+  {
+   "after": 8,
+   "prompt": "22,4 L/mol molar hacmi hangi koşulda kullanılabilir?",
+   "answer": "Yalnız açıkça 0 °C, 1 atm ve ideal yaklaşım verildiğinde; başka sıcaklıklarda PV=nRT ile hesaplanır."
+  },
+  {
+   "after": 10,
+   "prompt": "Gaz karışımının ortalama mol kütlesi hangi kesirlerle hesaplanır?",
+   "answer": "Mol kesirleriyle: M_ort=ΣxᵢMᵢ. Kütle kesirlerini bu formüle koymak yanlış sonuç verir."
+  }
+ ],
+ "ayt-kismi-basinci-suustu": [
+  {
+   "after": 1,
+   "prompt": "Eşit gram He ve O₂ karışımında kısmi basınçlar neden eşit olmaz?",
+   "answer": "Kısmi basınç mol kesrine bağlıdır; mol kütlesi küçük olan He'den aynı gramda daha çok mol bulunur."
+  },
+  {
+   "after": 3,
+   "prompt": "Sabit P ve T'de inert gaz eklenip toplam mol iki kat olursa eklenmeyen türün kısmi basıncı ne olur?",
+   "answer": "Hacim de iki kat olduğundan o türün mol kesri ve kısmi basıncı yarıya iner."
+  },
+  {
+   "after": 5,
+   "prompt": "Sıcaklıkları farklı iki gaz kabı birleştirilecekse hesap hangi adımla başlar?",
+   "answer": "Önce her kap için nᵢ=PᵢVᵢ/(RTᵢ) bulunur; son sıcaklık verilmeden son basınç PV toplamıyla kesinleşmez."
+  },
+  {
+   "after": 7,
+   "prompt": "Piston tabandan 3V konumundayken sıvı su V hacim kaplıyorsa Boyle oranı hangi hacme uygulanır?",
+   "answer": "Gazın erişebildiği 2V hacmine uygulanır; toplam kap yüksekliği gaz hacmi değildir."
+  },
+  {
+   "after": 9,
+   "prompt": "Kaptaki toplam su doygun buhar için gereken n* değerinden azsa suyun kısmi basıncı nasıl bulunur?",
+   "answer": "Suyun tamamı gaz fazındadır; kısmi basınç n_su RT/V ile hesaplanır ve P_sat değerinin altında kalır."
+  }
+ ],
+ "ayt-gercek-gaz-faz": [
+  {
+   "after": 1,
+   "prompt": "Aynı n, V, T için gerçek gaz basıncı ne zaman ideal tahminden büyük çıkar?",
+   "answer": "Dışlanmış hacim ve itme baskın olduğunda yukarı sapma görülür; çekim baskınken basınç idealden küçük olur."
+  },
+  {
+   "after": 3,
+   "prompt": "Z<1 ölçülen bir gazın basıncı aynı n, V, T için ideal değere göre nasıldır?",
+   "answer": "Basınç ideal nRT/V değerinden küçüktür; Z>1 ise büyüktür."
+  },
+  {
+   "after": 5,
+   "prompt": "CO₂ 1 atm'de sabit basınçla ısıtılırken neden sıvı bölgesine girmez?",
+   "answer": "Üçlü nokta basıncı yaklaşık 5,11 atm'dir; 1 atm bunun altında kaldığından bu yol sıvı bölgesinden geçmez."
+  },
+  {
+   "after": 7,
+   "prompt": "Kritik sıcaklığın altındaki gaz fazına buhar demek neyi vurgular?",
+   "answer": "Bu maddenin uygun sıkıştırmayla yoğuşabileceğini vurgular; T>Tc tarafında basınçla bu sıvı-buhar geçişi beklenmez."
+  },
+  {
+   "after": 9,
+   "prompt": "Basınç artışı buzun erime sıcaklığını neden düşürebilir?",
+   "answer": "Buz sıvı sudan daha düşük yoğunluklu olduğu için suyun buz-sıvı sınırı negatif eğimlidir."
+  }
+ ],
+ "ayt-cozucu-cozunen": [
+  {
+   "after": 1,
+   "prompt": "CO₂'nin bağları kutuplu olduğu hâlde molekül neden apolardır?",
+   "answer": "Doğrusal ve simetrik geometride iki bağ dipolü zıt yönlüdür ve birbirini dengeler."
+  },
+  {
+   "after": 3,
+   "prompt": "Asetonda O–H bağı yokken aseton suyla nasıl hidrojen bağı kurabilir?",
+   "answer": "Karbonil oksijeni ortaklanmamış çiftiyle alıcı olur; suyun uygun H ucu verici görevini üstlenir."
+  },
+  {
+   "after": 5,
+   "prompt": "Su polar olduğu hâlde her iyonik katıyı iyi çözmesi neden beklenmez?",
+   "answer": "Örgüyü ayırma bedeli hidratasyon ve diğer katkılarla birlikte tartılır; AgCl gibi tuzların çözünürlüğü çok düşük olabilir."
+  },
+  {
+   "after": 7,
+   "prompt": "Üç adımlı enerji modelinde çözünme ne zaman endotermik olur?",
+   "answer": "Çözücüyü ve çözüneni ayırmanın pozitif katkıları negatif solvatasyon katkısını aşıp toplam ΔH pozitif çıkınca."
+  },
+  {
+   "after": 9,
+   "prompt": "Molarite ile molalitenin paydası nasıl ayrılır?",
+   "answer": "Molarite litre çözelti başına, molalite kilogram çözücü başına mol çözüneni verir."
+  }
+ ],
+ "ayt-molarite": [
+  {
+   "after": 1,
+   "prompt": "5,85 g NaCl (58,5 g/mol) çözülüp çözelti 250 mL'ye tamamlanırsa molarite kaç olur?",
+   "answer": "n=5,85/58,5=0,10 mol; M=0,10/0,250=0,40 mol/L olur."
+  },
+  {
+   "after": 3,
+   "prompt": "Su buharlaşırken çökelme olursa seyreltme bağıntısı M₁V₁=M₂V₂ neden kullanılamaz?",
+   "answer": "Çökelen tuz çözeltiden ayrıldığı için çözünmüş mol değişir; toplam tuz ile çözünmüş tuz ayrı tutulmalıdır."
+  },
+  {
+   "after": 5,
+   "prompt": "Hacimleri farklı iki çözelti karışınca son molarite neden aritmetik ortalama olmaz?",
+   "answer": "Katkılar mol üzerinden toplanır: n_toplam=M₁V₁+M₂V₂ son hacme bölünür; ortalama yalnız eşit hacim gibi özel durumda çıkar."
+  },
+  {
+   "after": 7,
+   "prompt": "M=10dY/M_A formülünde yüzde 20 için Y yerine hangi sayı yazılır?",
+   "answer": "20 yazılır, 0,20 değil; ayrıca d g/mL ve M_A g/mol olmalıdır."
+  }
+ ],
+ "ayt-iyon-derisimi": [
+  {
+   "after": 1,
+   "prompt": "CaCl₂ formülündeki alt indis 2 ile ayrışma denklemindeki katsayı 2 neyi gösterir?",
+   "answer": "Alt indis formül birimindeki iki klor atomunu, katsayı ise çözeltiye geçen iki klorür iyonunu gösterir."
+  },
+  {
+   "after": 3,
+   "prompt": "Tam ayrışan 0,20 M CaCl₂ çözeltisinde toplam iyon molaritesi kaçtır?",
+   "answer": "Ca²⁺ 0,20 M ve Cl⁻ 0,40 M olduğundan toplam 0,60 mol iyon/L olur; tuzun 0,20 M derişiminden farklıdır."
+  },
+  {
+   "after": 5,
+   "prompt": "0,10 M Al₂(SO₄)₃ tam ayrışırsa Al³⁺ derişimi kaç M olur?",
+   "answer": "Bir formel birim 2 Al³⁺ verdiğinden Al³⁺ 0,20 M olur; SO₄²⁻ ise 0,30 M bulunur."
+  },
+  {
+   "after": 7,
+   "prompt": "Nötr bir çözeltide katyon ve anyon sayılarının eşit olması neden gerekmez?",
+   "answer": "Eşit olması gereken yük toplamlarıdır; örneğin CaCl₂'de anyon sayısı iki kat, her Ca²⁺ de iki birim yük taşır."
+  },
+  {
+   "after": 9,
+   "prompt": "0,10 mol CaCl₂'deki Ca²⁺ iyonları kaç mol pozitif yük birimi taşır?",
+   "answer": "0,10 mol Ca²⁺ iyonu, her biri +2 yüklü olduğundan 0,20 mol pozitif yük birimi taşır."
+  }
+ ],
+ "ayt-modern-atom-elektron-dizilimi": [
+  {
+   "after": 1,
+   "prompt": "Katman kapasitesi 2n² olduğu hâlde 3. katman dolmadan 4. katmana neden elektron girebilir?",
+   "answer": "2n² yalnız izinli alt kabukların toplam üst sınırıdır; elektronların hangi sırayla yerleşeceğini belirtmez."
+  },
+  {
+   "after": 3,
+   "prompt": "n+l kuralına göre 4s ile 3d alt kabuklarından hangisi önce doldurulur?",
+   "answer": "4s için n+l=4, 3d için n+l=5 olduğundan önce 4s doldurulur."
+  },
+  {
+   "after": 5,
+   "prompt": "Nötr O atomunun 2p⁴ elektronları temel hâlde kutulara nasıl yerleşir?",
+   "answer": "Önce üç kutuya aynı spinli birer elektron girer, dördüncüsü eşleşir; bir kutu çift, iki kutu tek dolu olur."
+  },
+  {
+   "after": 8,
+   "prompt": "S²⁻ iyonunun elektron sayısı nasıl hesaplanır?",
+   "answer": "Yük parantezle düşülür: 16−(−2)=18 elektron; düzen [Ar] olur."
+  }
+ ],
+ "ayt-kuantum-sayilari": [
+  {
+   "after": 2,
+   "prompt": "n=2 katmanında 2d alt kabuğu neden bulunmaz?",
+   "answer": "l en fazla n−1=1 olabilir; bu katman yalnız 2s ve 2p içerir."
+  },
+  {
+   "after": 4,
+   "prompt": "Seçilen z ekseninde l=1, m_l=0 durumu hangi orbitalle ilişkilidir?",
+   "answer": "p_z orbitaliyle ilişkilidir; m_l=±1 durumları ise birleşimlerle p_x ve p_y çizimlerini verir."
+  },
+  {
+   "after": 6,
+   "prompt": "Bir d alt kabuğu en fazla kaç elektron alır?",
+   "answer": "l=2 için 2l+1=5 orbital ve 2·5=10 elektron; tek orbitalin iki elektronluk sınırı bütün alt kabuğa uygulanmaz."
+  },
+  {
+   "after": 8,
+   "prompt": "Hidrojen benzeri modelde 3p orbitalinin radyal düğüm sayısı kaçtır?",
+   "answer": "n−l−1=3−1−1=1 radyal düğüm vardır; açısal düğüm sayısı da l=1'dir."
+  }
  ]
 }
