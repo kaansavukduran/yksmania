@@ -661,5 +661,652 @@
    "prompt": "Mg oksitlenmesinde katı 8 g artarsa kaç gram Mg dönüşmüştür?",
    "answer": "8 g artış 0,5 mol O demektir; bu 0,5 mol yani 12 g Mg'nin dönüştüğünü gösterir."
   }
+ ],
+ "yuzde-verim": [
+  {
+   "after": 1,
+   "prompt": "N₂ + 3H₂ → 2NH₃ tepkimesinde kuramsal NH₃ miktarını hangi reaktife göre hesaplarsın?",
+   "answer": "Mol/katsayı değeri en küçük olan, yani sınırlayıcı reaktife göre hesaplarsın; çok olan reaktifi esas almak kuramsal sınırı şişirir."
+  },
+  {
+   "after": 3,
+   "prompt": "Gerçek ürün 24 g ve verim %60 ise teorik ürün kaç gram olur?",
+   "answer": "24 = teorik × 0,60 yazılır, teorik ürün 24/0,60 = 40 g olur. 24 g'ı yeniden 0,60 ile çarpmak hatadır."
+  },
+  {
+   "after": 4,
+   "prompt": "Saflık ile verim hangi miktarlara göre tanımlanan farklı oranlardır?",
+   "answer": "Saflık ilk numunedeki etkin reaktifin payıdır; verim, bu etkin reaktiften hesaplanan kuramsal ürünün ne kadarının elde edildiğidir."
+  },
+  {
+   "after": 6,
+   "prompt": "Ölçülen ürün kuramsal azamiyi aşarsa sonucu neden %100'e kırpmamalısın?",
+   "answer": "Bu, ideal modelle veri arasındaki uyumsuzluğu gösterir; nemli ürün, yanlış saflık ya da cihaz hatası incelenir ve oran uyarıyla birlikte verilir."
+  }
+ ],
+ "safsizlik-problemleri": [
+  {
+   "after": 1,
+   "prompt": "80 g numune %75 CaCO₃ içeriyorsa tam dönüşümde kaç gram CO₂ oluşur?",
+   "answer": "Saf CaCO₃ 60 g, yani 0,6 moldür; 1:1 oranla 0,6 mol CO₂ oluşur ve bu 0,6 × 44 = 26,4 g eder."
+  },
+  {
+   "after": 3,
+   "prompt": "Numunenin bir kısmı dönüşmediyse gazdan geri hesaplanan saflık neden olduğundan küçük çıkar?",
+   "answer": "Gazdan bulunan CaCO₃ yalnız tepkimeye gireni gösterir; dönüşmeyen kısmın karşılığı hesaba girmez ve ilk saflık küçük görünür."
+  },
+  {
+   "after": 5,
+   "prompt": "CaCO₃ ile MgCO₃ içeren numunede ölçülen CO₂'nin tamamını CaCO₃'ye bağlamak neden hatalıdır?",
+   "answer": "MgCO₃ de CO₂ üretir; her bileşen için mol ve ürün katsayısı ayrı yazılmalı, gerekirse ikinci bağımsız bilgi kullanılmalıdır."
+  }
+ ],
+ "atom-kutlesi-hesaplari": [
+  {
+   "after": 1,
+   "prompt": "Bağıl atom kütlesi, ortalama atomik kütle ve mol kütlesi hangi birimlerle yazılır?",
+   "answer": "Bağıl atom kütlesi boyutsuz bir orandır; ortalama atomik kütle u, mol kütlesi g/mol ile yazılır."
+  },
+  {
+   "after": 2,
+   "prompt": "35 u izotopu %75, 37 u izotopu %25 bollukta ise ortalama atom kütlesi kaç u olur?",
+   "answer": "35 × 0,75 + 37 × 0,25 = 26,25 + 9,25 = 35,5 u olur; değer daha bol olan 35 u izotopuna yakındır."
+  },
+  {
+   "after": 4,
+   "prompt": "Yalnız 35 u ve 37 u izotopları varken ortalama 38 u çıkarsa bu sonuç neyi gösterir?",
+   "answer": "Pozitif bolluklarla ortalama en küçük ve en büyük kütle arasında kalmalıdır; 38 u verilen bileşimle tutarsızdır."
+  },
+  {
+   "after": 6,
+   "prompt": "X + 2HCl → XCl₂ + H₂ tepkimesinde 24 g X tamamen tükenip 0,6 mol H₂ oluşursa M(X) kaç g/mol olur?",
+   "answer": "H₂ ile X 1:1 oranda olduğu için 0,6 mol X tükenir; M(X) = 24/0,6 = 40 g/mol bulunur."
+  }
+ ],
+ "tepkimeli-karisim": [
+  {
+   "after": 1,
+   "prompt": "Mg ve Cu karışımında HCl ile yalnız Mg tepkimeye giriyorsa Cu kütlesini nasıl bulursun?",
+   "answer": "Çıkan H₂ ile 1:1 oranla Mg molü ve kütlesi bulunur; bu kütle toplamdan çıkarılınca Cu kütlesi kalır."
+  },
+  {
+   "after": 3,
+   "prompt": "0,5 mol CH₄ ve C₂H₆ karışımı tam yanınca 0,8 mol CO₂ veriyorsa kaç mol C₂H₆ vardır?",
+   "answer": "x + y = 0,5 ve x + 2y = 0,8 yazılır; ikinciden birinci çıkarılınca y = 0,3 mol C₂H₆, x = 0,2 mol CH₄ bulunur."
+  },
+  {
+   "after": 4,
+   "prompt": "Toplam t mol CH₄ ve C₂H₆ tam yandığında oluşan CO₂ hangi aralıkta olmalıdır?",
+   "answer": "t ile 2t mol arasında olmalıdır; uçlar saf CH₄ ve saf C₂H₆ durumlarıdır, dışındaki değer modelle uyumsuzdur."
+  },
+  {
+   "after": 6,
+   "prompt": "x mol CH₄ ve y mol C₂H₆ tam yanınca oluşan toplam su hangi ifadeyle yazılır?",
+   "answer": "Toplam su 2x + 3y mol olur; bu ikinci ürünle bulduğun bileşimi denetleyebilirsin."
+  }
+ ],
+ "karisim-sinif-cozunme": [
+  {
+   "after": 1,
+   "prompt": "Buz ve sıvı sudan oluşan iki fazlı sistem neden karışım sayılmaz?",
+   "answer": "İki faz içerse de tek bileşikten oluşur; faz sayısı tek başına kimyasal tür sayısını göstermez."
+  },
+  {
+   "after": 2,
+   "prompt": "Çıplak gözle tekdüze görünen bir kolloidi çözeltiden ayıran temel özellik nedir?",
+   "answer": "Dağılan parçacıkları molekül ya da iyon ölçeğinde değildir, yaklaşık 1–1000 nm boyutundadır; ışık saçılması ayırt etmeye yardım eder."
+  },
+  {
+   "after": 4,
+   "prompt": "Hidratasyonda su molekülleri bir katyonun çevresine hangi uçlarıyla yönelir ve neden?",
+   "answer": "Kısmen negatif O uçlarıyla yönelir; zıt kısmi yükler elektrostatik olarak daha uygun bir dizilim sağlar."
+  },
+  {
+   "after": 6,
+   "prompt": "100 g suya 50 g NaCl eklenip 36 g çözünürse sıvı çözeltinin kütlesi kaç gram olur?",
+   "answer": "Sıvı çözelti 100 + 36 = 136 g olur; çözünmeyen 14 g katı ayrıdır ve kap içeriği toplam 150 g eder."
+  }
+ ],
+ "cozelti-derisimi": [
+  {
+   "after": 1,
+   "prompt": "50 mL alkol ile 50 mL su karışınca son hacmi neden koşulsuz 100 mL alamazsın?",
+   "answer": "Sıvılar karışınca hacimler tam toplanmak zorunda değildir; bunu ancak hacim değişiminin ihmal edildiği söylenirse yapabilirsin."
+  },
+  {
+   "after": 2,
+   "prompt": "2 kg çözeltide 4 mg çözünen varsa kütlece derişim kaç ppm olur?",
+   "answer": "4 mg/2 kg = 2 mg/kg eder; 1 mg/kg = 1 ppm olduğundan derişim 2 ppm olur."
+  },
+  {
+   "after": 4,
+   "prompt": "Homojen bir çözeltinin bir kısmını başka kaba ayırmak kütlece yüzdeyi neden değiştirmez?",
+   "answer": "Ayrılan kısımda çözünen ve çözelti miktarları aynı oranda azalır; oran değişmez."
+  },
+  {
+   "after": 6,
+   "prompt": "Aynı çözünenli 100 g %10 ve 300 g %30 çözeltiler karışırsa kütlece yüzde kaç olur?",
+   "answer": "Çözünenler 10 + 90 = 100 g, karışım 400 g olur; yüzde 100/400 × 100 = 25 çıkar, düz ortalama 20 yanlıştır."
+  }
+ ],
+ "su-hayat-cevre": [
+  {
+   "after": 1,
+   "prompt": "Toplam suyun %3'ü tatlı olsa bile bunun tamamı neden kullanılabilir içme suyu sayılmaz?",
+   "answer": "Buzullar, yer altı rezervleri, taşıma olanakları ve su kalitesi kullanılabilir miktarı ayrıca sınırlar."
+  },
+  {
+   "after": 3,
+   "prompt": "Bir kullanımda hem debi hem süre yarıya inerse tasarruf yüzde kaç olur?",
+   "answer": "Yeni hacim eskinin 1/2 × 1/2 = 1/4'ü olur; fark eskinin 3/4'ü olduğundan tasarruf %75'tir."
+  },
+  {
+   "after": 5,
+   "prompt": "Geçici sertliğin bir kısmı nasıl azaltılabilir ve bu yöntem neden her sertlik için geçerli değildir?",
+   "answer": "Bikarbonat kaynaklı geçici sertlik uygun ısıtmayla çökelti oluşturarak azalabilir; her sertlik türü kaynatmayla giderilmez."
+  },
+  {
+   "after": 7,
+   "prompt": "Kaçağı onarmak ile kirleticiyi kaynağında önlemek hangi farklı nicelikleri azaltır?",
+   "answer": "Kaçak onarımı çekilen suyu, kirleticiyi kaynağında önlemek sonraki arıtım yükünü azaltır; az su kullanmak atığı zararsız yapmaz."
+  }
+ ],
+ "kutle-korunumu-sabit-oran": [
+  {
+   "after": 2,
+   "prompt": "119 g Sn ile 16 g O birleşip 135 g SnO oluşuyorsa katının kütle artışı nereden gelir?",
+   "answer": "Havadan katıya katılan 16 g oksijenden gelir; oksijen başlangıç hesabına alınınca kütle eşitliği sağlanır."
+  },
+  {
+   "after": 5,
+   "prompt": "22 g saf CO₂ örneğinde kaç gram karbon bulunur?",
+   "answer": "Karbon payı 12/44 olduğundan 22 × 12/44 = 6 g karbon bulunur; kalan 16 g oksijendir."
+  },
+  {
+   "after": 7,
+   "prompt": "Toplam kütleyi sağlayan bir FeS sonucunu hangi ikinci denetimle sınamalısın?",
+   "answer": "Bileşiğin sabit element oranıyla sınamalısın; tüketilen Fe ve S kütleleri 7:4 oranına uymuyorsa sonuç yanlıştır."
+  }
+ ],
+ "sinirlayici-artan-madde": [
+  {
+   "after": 1,
+   "prompt": "Fe/S = 7/4 tarifinde 14 g Fe ile 12 g S tepkimeye girerse kaç gram FeS oluşur?",
+   "answer": "14 g Fe iki tarif, 12 g S üç tarif sağlar; iki tarifle 8 g S tüketilir, 22 g FeS oluşur ve 4 g S artar."
+  },
+  {
+   "after": 4,
+   "prompt": "2H₂ + O₂ → 2H₂O denklemindeki katsayıları neden doğrudan gram oranı diye okuyamazsın?",
+   "answer": "Katsayılar tanecik ve mol oranıdır; kütle tarifi mol kütleleriyle çarparak bulunur: 4 g H₂ + 32 g O₂ → 36 g H₂O."
+  },
+  {
+   "after": 6,
+   "prompt": "14 g Fe ve 12 g S ile sonunda 22 g FeS oluşacaksa yarı ilerlemede kaç gram Fe kalır?",
+   "answer": "Yarı ilerlemede 7 g Fe ile 4 g S tüketilir; 7 g Fe ve 8 g S kalır, 11 g FeS bulunur."
+  },
+  {
+   "after": 7,
+   "prompt": "Sınırlayıcı madde hesabını bitirince tüketilen girenlerin toplamı neye eşit olmalıdır?",
+   "answer": "Oluşan ürün kütlesine eşit olmalıdır; son karışım ise başlangıç toplamına eşittir ve tüketilen Fe/S oranı 7/4 olmalıdır."
+  }
+ ],
+ "katli-oranlar": [
+  {
+   "after": 1,
+   "prompt": "32 g oksijen eşitlendiğinde CO ile CO₂'deki karbon kütlelerinin CO/CO₂ oranı kaç olur?",
+   "answer": "CO'da 24 g, CO₂'de 12 g C gerekir; oran 24/12 = 2 olur. Sonuç hangi elementin eşitlendiğine bağlıdır."
+  },
+  {
+   "after": 3,
+   "prompt": "İki bileşiğin eşit toplam kütleleri katlı oran karşılaştırması için neden yetmez?",
+   "answer": "Eşit bileşik kütlesi, elementlerden birinin kütlesinin eşit olduğu anlamına gelmez; bir elementin kütlesini eşitlemelisin."
+  },
+  {
+   "after": 4,
+   "prompt": "I'de 3 g X ile 4 g Y, II'de 6 g X ile 16 g Y birleşmişse eşit X için Y(I)/Y(II) kaçtır?",
+   "answer": "I'i iki katına getirince 6 g X'e 8 g Y düşer; II'de aynı X'e 16 g Y vardır, oran 8/16 = 1/2 olur."
+  },
+  {
+   "after": 6,
+   "prompt": "I = XY ve II'de eşit X için Y iki katıysa II'nin en sade formülü nedir?",
+   "answer": "XY₂'dir; bunun tam molekül formülü olduğunu söylemek için molekül büyüklüğünü belirleyen ek veri gerekir."
+  }
+ ],
+ "mol-tanecik-iliskisi": [
+  {
+   "after": 1,
+   "prompt": "0,5 mol CO₂ molekülünde yaklaşık kaç molekül vardır ve sonucun birimi nedir?",
+   "answer": "0,5 Nₐ, yani yaklaşık 3,01 × 10²³ molekül vardır; mol × mol⁻¹ sadeleştiği için sonuç gram değil, sayıdır."
+  },
+  {
+   "after": 3,
+   "prompt": "İyonik Ca(OH)₂ sayılırken neden molekül yerine formül birimi kullanılır?",
+   "answer": "İyonik katı ayrık moleküllerden oluşmaz; formül birimi kristaldeki iyonların en sade oranını gösteren sayım birimidir."
+  },
+  {
+   "after": 4,
+   "prompt": "Al₂(SO₄)₃ formülünde toplam kaç atom vardır?",
+   "answer": "Parantez dışındaki 3 bütün gruba uygulanır: 2 Al, 3 S ve 12 O, toplam 17 atom vardır."
+  },
+  {
+   "after": 6,
+   "prompt": "Suda çözünen şekerin tanecik sayısını tam ayrışma denklemiyle bulmak neden yanlıştır?",
+   "answer": "Tam ayrışma her moleküler maddeye uygulanmaz; suda çözünen şeker iyonlara dönüşmez, molekül olarak kalır."
+  }
+ ],
+ "mol-kutle-iliskisi": [
+  {
+   "after": 1,
+   "prompt": "Ca = 40, O = 16, H = 1 alınırsa Ca(OH)₂'nin mol kütlesi kaç g/mol olur?",
+   "answer": "Önce parantez içi toplanır: 40 + 2 × (16 + 1) = 74 g/mol olur."
+  },
+  {
+   "after": 3,
+   "prompt": "Aynı maddenin örneğini iki katına çıkarmak m, n ve M değerlerini nasıl etkiler?",
+   "answer": "Kütle ve mol miktarı birlikte iki katına çıkar; mol kütlesi aynı madde için sabit kalır."
+  },
+  {
+   "after": 5,
+   "prompt": "Tek bir CO₂ molekülünün kütlesi hangi bağıntıyla bulunur ve yaklaşık kaç gramdır?",
+   "answer": "M/Nₐ ile bulunur: 44/(6,02 × 10²³) ≈ 7,31 × 10⁻²³ g; bir molün kütlesinden çok küçük olmalıdır."
+  },
+  {
+   "after": 7,
+   "prompt": "18 g H₂O ile 44 g CO₂ karışımında toplam kaç mol atom vardır?",
+   "answer": "Her birinden 1 mol vardır, toplam 2 mol molekül eder; ikisi de üç atomlu olduğundan 6 mol atom bulunur."
+  }
+ ],
+ "katilar-viskozite": [
+  {
+   "after": 1,
+   "prompt": "Katı NaCl elektriği çok az iletirken erimiş NaCl neden iletebilir?",
+   "answer": "Katıda iyonlar örgü boyunca serbestçe göç edemez; erimiş hâlde hareketli iyonlar yük taşıyabilir."
+  },
+  {
+   "after": 3,
+   "prompt": "Grafit, kovalent katıların hepsinin sert ve yalıtkan olduğu ezberini nasıl bozar?",
+   "answer": "Tabakaları kolay kaydığı için yumuşaktır ve hareketli elektron katkısıyla elektriği iletir."
+  },
+  {
+   "after": 4,
+   "prompt": "Saf bir kristal ile amorf bir malzeme ısıtılınca erime davranışları nasıl ayrılır?",
+   "answer": "Saf kristal sabit basınçta belirli bir erime sıcaklığı gösterir; amorf malzeme bir sıcaklık aralığında yumuşar."
+  },
+  {
+   "after": 6,
+   "prompt": "İki sıvının viskozitesini akış süreleriyle kıyaslarken hangi koşullar eşit tutulmalıdır?",
+   "answer": "Sıcaklık, boru çapı, basınç farkı ve geçirilen hacim eşit olmalıdır; farklı kaplardaki görüntüler ölçüm değildir."
+  }
+ ],
+ "buharlasma-buhar-basinci": [
+  {
+   "after": 1,
+   "prompt": "Açık bir kapta hava akımı ve yüksek nem net buharlaşmayı nasıl etkiler?",
+   "answer": "Hava akımı yüzeye yakın buharı uzaklaştırarak net buharlaşmayı artırabilir; yüksek nem ise azaltabilir."
+  },
+  {
+   "after": 3,
+   "prompt": "Havası alınmış kapalı kaba su konunca denge neden hemen kurulmaz?",
+   "answer": "Başta gazda buhar yoktur; buhar biriktikçe yoğuşma hızı artar ve ancak zamanla buharlaşma hızına eşitlenir."
+  },
+  {
+   "after": 5,
+   "prompt": "Aynı sıcaklıkta denge buhar basıncı daha büyük olan sıvının uçuculuğu için ne söylenir?",
+   "answer": "Daha uçucudur; benzer molekül ailelerinde bu genellikle daha zayıf moleküller arası tutunmaya karşılık gelir."
+  },
+  {
+   "after": 6,
+   "prompt": "Kapta hava da varsa ölçülen toplam gaz basıncını neden doğrudan P* diye yazamazsın?",
+   "answer": "Toplam basınç, su buharının kısmi basıncına ek olarak havanın basıncını da içerir."
+  }
+ ],
+ "kaynama-bagil-nem": [
+  {
+   "after": 1,
+   "prompt": "Düdüklü tencerede su neden daha yüksek sıcaklıkta kaynar?",
+   "answer": "İçerideki basınç yükselir; buhar basıncının ulaşması gereken dış basınç eşiği artar ve kaynama daha yüksek sıcaklıkta olur."
+  },
+  {
+   "after": 3,
+   "prompt": "Kayıpsız modelde ısıtıcı gücü iki katına çıkarsa aynı kütlenin kaynama süresi nasıl değişir?",
+   "answer": "t = Q/P olduğundan süre yarıya iner; dış basınç ve bileşim aynıysa kaynama sıcaklığı değişmez."
+  },
+  {
+   "after": 4,
+   "prompt": "Eşit mol ve çözücü miktarında tam ayrışan NaCl, MgCl₂ ve şeker kaçar tanecik birimi verir?",
+   "answer": "NaCl iki, MgCl₂ üç iyon verir; moleküler kalan şeker bir tanecik birimi verir."
+  },
+  {
+   "after": 6,
+   "prompt": "Hesapta su buharı kısmi basıncı P*'yi aşarsa kararlı denge modelinde son bağıl nem kaç olur?",
+   "answer": "Fazla buhar yoğuşur, son kısmi basınç P*'ye eşitlenir ve bağıl nem %100 olur."
+  },
+  {
+   "after": 7,
+   "prompt": "Sıcak havada yüksek bağıl nem terle serinlemeyi neden güçleştirir?",
+   "answer": "Terin buharlaşması güçleşir; buharlaşma vücuttan enerji uzaklaştırdığı için serinleme azalır."
+  }
+ ],
+ "gazlar-hal-degisim-plazma": [
+  {
+   "after": 1,
+   "prompt": "İdeal gaz modelinde taneciklerle ilgili hangi iki özellik ihmal edilir?",
+   "answer": "Taneciklerin kendi hacmi ve aralarındaki etkileşimler ihmal edilir; model düşük basınç ve yüksek sıcaklıkta daha uygundur."
+  },
+  {
+   "after": 2,
+   "prompt": "Dış basıncı sabit, serbest pistonlu bir kaptaki gaz ısıtılınca hangi değişken değişir?",
+   "answer": "Hacim artar; n ve P sabitken V/T sabittir. Rijit kapta ise basınç artardı."
+  },
+  {
+   "after": 4,
+   "prompt": "1 atm altında katı sudan başlayan ısıtma grafiğinde hangi platolar görülür?",
+   "answer": "Erime ve kaynama platoları görülür; bu yatay bölgelerde sıcaklık sabitken faz miktarları değişir."
+  },
+  {
+   "after": 6,
+   "prompt": "Plazmayı sıradan bir gazdan ayıran temel özellik nedir?",
+   "answer": "Serbest elektronlar ve iyonlar içermesidir; hareketli yükler ve elektromanyetik alanlara tepki önem kazanır."
+  },
+  {
+   "after": 7,
+   "prompt": "Lav çok sıcak olduğu hâlde neden plazma sayılmaz?",
+   "answer": "Sıcaklık tek başına tanı değildir; lav iyonlaşmış bir ortam değil, sıcak bir kayaç eriyiğidir."
+  }
+ ],
+ "doga-ve-kimya": [
+  {
+   "after": 1,
+   "prompt": "Su döngüsündeki buharlaşma neden her kirleticiyi geride bırakmaz?",
+   "answer": "Birçok çözünmüş tuz geride kalsa da uçucu kirleticiler farklı davranır; yağmur da hava ve yüzeylerle yeniden kirlenebilir."
+  },
+  {
+   "after": 3,
+   "prompt": "Dezenfeksiyon neden çözünmüş tuzları ayırmak için kullanılamaz?",
+   "answer": "Dezenfeksiyon mikroorganizmaları etkisizleştirmeyi hedefler; çözünmüş iyonları ayırmak iyon değişimi gibi başka bir mekanizma ister."
+  },
+  {
+   "after": 5,
+   "prompt": "Asit yağmuruna katkı veren başlıca yanma kirleticileri hangileridir?",
+   "answer": "SO₂ ve azot oksitlerdir; asit yağmurunu yalnız CO₂'ye ya da ozon deliğine bağlamak yanlıştır."
+  },
+  {
+   "after": 7,
+   "prompt": "Plastik atıkların küçük parçalara ayrılıp gözden kaybolması neden sorunun bittiğini göstermez?",
+   "answer": "Kalıcı plastik küçük parçalar hâlinde çevrede taşınmayı sürdürür; görünmez olmak ortadan kalkmak demek değildir."
+  }
+ ],
+ "kovalent-adlandirma-metalik-bag": [
+  {
+   "after": 1,
+   "prompt": "Diazot pentaoksidin formülü nedir ve bir molekülü toplam kaç atom içerir?",
+   "answer": "Di azota, penta oksijene aittir: N₂O₅; toplam 2 + 5 = 7 atom içerir."
+  },
+  {
+   "after": 3,
+   "prompt": "OF₂ bileşiğinin adı neden oksit ile bitmez?",
+   "answer": "Formülde oksijen ilk, flor ikinci sıradadır; son ad ikinci elemente göre verilir ve ad oksijen diflorür olur."
+  },
+  {
+   "after": 5,
+   "prompt": "Elektron denizi modelinde pozitif metal merkezleri neyi temsil eder?",
+   "answer": "Çekirdekleri iç elektronlarıyla birlikte temsil eder; bağlanmaya katılan yayılmış değerlik elektronları elektron denizini oluşturur."
+  },
+  {
+   "after": 6,
+   "prompt": "Bir maddenin elektriği iletmesi neden tek başına metal olduğunu kanıtlamaz?",
+   "answer": "Erimiş NaCl iyonlarla, grafit tabakalı kovalent yapısına rağmen elektronlarla iletir; yapı ve taşıyıcı birlikte değerlendirilir."
+  }
+ ],
+ "zayif-etkilesimler": [
+  {
+   "after": 1,
+   "prompt": "Doğrusal CO₂ polar bağlar içerdiği hâlde neden apolar bir moleküldür?",
+   "answer": "İki eş C=O dipolü zıt yönlüdür ve birbirini götürür; molekülde net dipol kalmaz."
+  },
+  {
+   "after": 3,
+   "prompt": "HCl molekülleri arasında neden hidrojen bağı oluşmaz?",
+   "answer": "Molekülde H bulunması yetmez; hidrojen bağı belirli verici ve alıcı koşulları ister ve HCl bu koşulu sağlamaz."
+  },
+  {
+   "after": 5,
+   "prompt": "Polar H₂O ile apolar O₂ arasındaki karakteristik etkileşimin adı nedir?",
+   "answer": "Dipol–indüklenmiş dipoldür; suyun elektrik alanı O₂'nin elektron dağılımını kutuplaştırır."
+  },
+  {
+   "after": 6,
+   "prompt": "Aynı dış basınçta Cl₂, Br₂ ve I₂'nin kaynama sıcaklıkları nasıl sıralanır?",
+   "answer": "I₂ > Br₂ > Cl₂ sıralanır; elektron bulutu büyüyüp kolay kutuplandıkça London katkısı genellikle artar."
+  }
+ ],
+ "hidrojen-bagi": [
+  {
+   "after": 1,
+   "prompt": "HF, H₂O, NH₃ ve HCl'den hangisi yaygın TYT kuralına göre hidrojen bağı vericisi olamaz?",
+   "answer": "HCl olamaz; H atomu F, O ya da N'ye değil Cl'ye bağlıdır. Diğerlerinde H–F, O–H ve N–H verici grubu vardır."
+  },
+  {
+   "after": 3,
+   "prompt": "Metanol neden hem hidrojen bağı vericisi hem alıcısı olabilir?",
+   "answer": "O–H grubundaki H verici, aynı O üzerindeki ortaklanmamış elektron çiftleri alıcı görevi görebilir."
+  },
+  {
+   "after": 4,
+   "prompt": "Aynı C₂H₆O kapalı formülü, hidrojen bağı kararını vermeye neden yetmez?",
+   "answer": "Bu formül hem O–H taşıyan etanolü hem H'leri C'ye bağlı eteri gösterebilir; karar için bağlanma düzeni gerekir."
+  },
+  {
+   "after": 6,
+   "prompt": "H₂S, H₂Se, H₂Te serisinde kaynama sıcaklığı neden artar ve su neden bu eğilimin çok üstündedir?",
+   "answer": "Elektron bulutu büyüdükçe London katkısı artar; su daha hafif olsa da hidrojen bağı ağı sayesinde çok daha yüksekte kaynar."
+  }
+ ],
+ "fiziksel-kimyasal-degisimler": [
+  {
+   "after": 1,
+   "prompt": "2H₂O ifadesinde toplam kaç H ve kaç O atomu vardır?",
+   "answer": "Katsayı bütün formüle uygulandığı için 4 H ve 2 O atomu vardır."
+  },
+  {
+   "after": 3,
+   "prompt": "Şekerin suda çözünmesini Zn'nin asitte gözden kaybolmasından ayıran nedir?",
+   "answer": "Şeker molekülleri bütün olarak dağılır, tür değişmez; Zn ise Zn²⁺'ya dönüşür ve H₂ oluşabilir, yani yeni türler oluşur."
+  },
+  {
+   "after": 5,
+   "prompt": "2H₂O → 2H₂ + O₂ tepkimesinde hangi nicelik korunur, hangisi korunmaz?",
+   "answer": "Atom türü ve sayısı korunur, iki tarafta 4 H ve 2 O vardır; molekül sayısı ise 2'den 3'e çıkar."
+  },
+  {
+   "after": 6,
+   "prompt": "Bir sürecin enerji almasından neden fiziksel mi kimyasal mı olduğuna karar veremezsin?",
+   "answer": "Buharlaşma enerji alır ve fizikseldir, elektroliz de enerji ister ama kimyasaldır; enerjinin yönü ayrımı tek başına belirlemez."
+  }
+ ],
+ "maddenin-halleri": [
+  {
+   "after": 1,
+   "prompt": "Kuru buz 1 atm'de ısıtıldığında neden sıvı hâle geçmez?",
+   "answer": "Bu basınçta sıvı faz aralığı yoktur; kuru buz doğrudan gaza geçer, yani süblimleşir."
+  },
+  {
+   "after": 3,
+   "prompt": "Katı H₂O, NaCl, elmas ve Cu hangi kristal türlerine örnektir?",
+   "answer": "Katı H₂O moleküler, NaCl iyonik, elmas kovalent ağ, Cu ise metalik kristaldir."
+  },
+  {
+   "after": 5,
+   "prompt": "Su buharı kısmi basıncı 1,2, aynı sıcaklıktaki doygunluk basıncı 2,4 ise bağıl nem yüzde kaçtır?",
+   "answer": "Bağıl nem 1,2/2,4 × 100 = %50 olur; pay toplam hava basıncı değil, su buharının kısmi basıncıdır."
+  },
+  {
+   "after": 6,
+   "prompt": "Gaz 20 °C'den 40 °C'ye ısıtılınca mutlak sıcaklık neden iki katına çıkmaz?",
+   "answer": "Kelvinde yaklaşık 293 K'den 313 K'e çıkar; oran 2 değil yaklaşık 1,07'dir."
+  },
+  {
+   "after": 7,
+   "prompt": "1 g ve 0 °C buza 167 J verilirse buzun ne kadarı erimiş olur?",
+   "answer": "Erime 334 J/g gerektirdiğinden 167 J buzun yarısını eritir; plato boyunca sıcaklık 0 °C kalır."
+  }
+ ],
+ "kovalent-bag-polar-apolar": [
+  {
+   "after": 1,
+   "prompt": "N₂ molekülündeki 10 değerlik elektronundan kaçı ortak, kaçı bağ dışıdır?",
+   "answer": "6 elektron üçlü bağda ortak, 4 elektron bağ dışıdır; her N atomunda bir yalnız çift bulunur."
+  },
+  {
+   "after": 4,
+   "prompt": "H için 2,20, Cl için 3,16, F için 3,98 alınırsa H–Cl ve H–F bağlarındaki elektronegatiflik farkları kaçtır?",
+   "answer": "H–Cl için 3,16 − 2,20 = 0,96; H–F için 3,98 − 2,20 = 1,78 olur. Bu farklar birimsizdir."
+  },
+  {
+   "after": 5,
+   "prompt": "Kimyasal dipol oku H–F bağında hangi yöne çizilir?",
+   "answer": "H'den F'ye, yani elektron yoğunluğunun fazla olduğu kısmi negatif uca doğru çizilir."
+  },
+  {
+   "after": 7,
+   "prompt": "Bağ enerjileriyle tepkime enerjisi hesaplanırken koparılan ve oluşan bağlar nasıl işlenir?",
+   "answer": "Koparılan bağlar için gereken enerji toplanır, oluşan bağlarda açığa çıkan enerji çıkarılır; iki olay zıt işaretlidir."
+  },
+  {
+   "after": 8,
+   "prompt": "NH₄Cl'de hangi parçalar arasındaki ilişki kovalent, hangisi iyoniktir?",
+   "answer": "NH₄⁺ grubunun içindeki N–H bağları kovalenttir; NH₄⁺ ile Cl⁻ arasındaki çekim iyoniktir."
+  }
+ ],
+ "molekullerde-polarlik-apolarlik": [
+  {
+   "after": 1,
+   "prompt": "Merkezde üç bağ yönü bulunan ve yalnız çifti olmayan bir molekülün atom geometrisi nedir?",
+   "answer": "Düzlemsel üçgendir; BF₃ buna örnektir. Bağ yönleri birbirinden en uzak konuma yerleşir."
+  },
+  {
+   "after": 3,
+   "prompt": "Aynı doğru üzerinde sağa 4 birim ve sola 1 birim bağ etkisi varsa bileşke nedir?",
+   "answer": "Zıt yönlü etkiler çıkarılır; bileşke sağa doğru 3 birim olur."
+  },
+  {
+   "after": 5,
+   "prompt": "BF₃ ve NH₃ üçer bağ içerdiği hâlde neden biri apolar, diğeri polardır?",
+   "answer": "BF₃'te üç eş dipol düzlemde 120° aralıkla dağılıp sıfırlanır; NH₃ yalnız çift nedeniyle üçgen piramittir ve N yönünde bileşen kalır."
+  },
+  {
+   "after": 7,
+   "prompt": "CH₂Cl₂'deki iki C–Cl bağının etkileri neden birbirini götürmez?",
+   "answer": "Dört yüzlüde iki köşe birbirine 180° zıt değildir; iki C–Cl yönünün ortak payı kalır ve molekül polardır."
+  },
+  {
+   "after": 8,
+   "prompt": "HCN doğrusal olduğu hâlde neden polar bir moleküldür?",
+   "answer": "H–C ve C≡N etkileri aynı genel doğrultuyu destekler; CO₂'deki gibi iki eş uçla kurulan denge yoktur."
+  }
+ ],
+ "atomun-temel-tanecikleri": [
+  {
+   "after": 1,
+   "prompt": "Nötr oksijen atomu ile oksit iyonunu aynı element yapan nedir?",
+   "answer": "Proton sayıları, yani Z = 8 aynıdır; yalnız elektron sayıları ve yükleri farklıdır."
+  },
+  {
+   "after": 3,
+   "prompt": "Z = 8 olan bir iyonun yükü q = −2 ise kaç elektronu vardır?",
+   "answer": "e = Z − q = 8 − (−2) = 10 elektron vardır; negatif yükü çıkarırken parantez kullanılır."
+  },
+  {
+   "after": 6,
+   "prompt": "CO₃²⁻ gösterimindeki 3 ve 2− sayıları neyi belirtir?",
+   "answer": "Alt indis 3, iyondaki O atomu sayısını; sağ üstteki 2− ise bütün iyonun net yükünü belirtir."
+  },
+  {
+   "after": 7,
+   "prompt": "¹H ve ³He örnekleri hangi iki yanlış genellemeyi bozar?",
+   "answer": "¹H nötronsuz olduğu için her atomda nötron bulunduğu, ³He'de p > n olduğu için bunun yalnız hidrojende görüldüğü genellemesini bozar."
+  },
+  {
+   "after": 8,
+   "prompt": "Başlangıçta +1 yüklü bir iyon iki elektron alırsa son yükü kaç olur?",
+   "answer": "Her elektron yükü 1 azaltır; +1 − 2 = −1 olur, iki elektron aldı diye son yük −2 olmaz."
+  },
+  {
+   "after": 10,
+   "prompt": "n/p = 5/4 oranı verildiğinde p ve n nasıl yazılır ve A ile hangi denklem kurulur?",
+   "answer": "p = 4k ve n = 5k yazılır, A = 9k denklemi kurulur; bulunan p ve n negatif olmayan tam sayılar olmalıdır."
+  },
+  {
+   "after": 12,
+   "prompt": "Yatay p, düşey e eksenli grafikte e = p doğrusunun üstündeki noktalar hangi yükü taşır?",
+   "answer": "Bu noktalarda e > p olduğundan q = p − e negatiftir; tanecikler anyondur."
+  },
+  {
+   "after": 14,
+   "prompt": "Çok atomlu bir taneciğin toplam nötron sayısı nasıl bulunur?",
+   "answer": "Her atom türü için adet × (A − Z) hesaplanır ve bu katkılar toplanır; belirtilen izotoplar kullanılır."
+  },
+  {
+   "after": 15,
+   "prompt": "Her biri q = −2 olan dört özdeş iyonun toplam yükü kaçtır?",
+   "answer": "Tanecik başına değer sayıyla çarpılır: 4 × (−2) = −8 olur; tek iyonun yükü yine −2'dir."
+  },
+  {
+   "after": 17,
+   "prompt": "Atomik kütle birimi u nasıl tanımlanır?",
+   "answer": "u, ¹²C atomunun kütlesinin on ikide biridir; bağıl atom kütlesi ise bu birime oranlanmış boyutsuz sayıdır."
+  }
+ ],
+ "izotop-izoton-izobar": [
+  {
+   "after": 1,
+   "prompt": "Aynı elementin iki izotopunda kütle numaraları arasındaki fark neyi verir?",
+   "answer": "Z aynı kaldığı için A farkı doğrudan nötron sayısı farkına eşittir."
+  },
+  {
+   "after": 2,
+   "prompt": "İzobar iki çekirdekte hangi sayı eşittir, hangileri farklı olmak zorundadır?",
+   "answer": "A eşittir; Z ve n farklı olmak zorundadır, bu yüzden iki çekirdek farklı elementlere aittir."
+  },
+  {
+   "after": 3,
+   "prompt": "F⁻, Ne ve Na⁺ tanecikleri kaçar elektron ve hangi katman dağılımını taşır?",
+   "answer": "Üçü de on elektron ve 2,8 dağılımı taşır; proton sayıları ve yükleri ise farklıdır."
+  },
+  {
+   "after": 5,
+   "prompt": "İki izotopun yüzde bollukları x ve 100 − x ise ortalama atom kütlesi nasıl yazılır?",
+   "answer": "m̄ = [x·m₁ + (100 − x)·m₂]/100 yazılır; ağırlıklar atom sayısına dayanan bolluklardır."
+  },
+  {
+   "after": 8,
+   "prompt": "İzobar çiftin ikinci çekirdeğinde iki proton fazlaysa nötron sayısı nasıl değişir?",
+   "answer": "A sabit olduğundan Δn = −ΔZ olur; ikinci çekirdekte iki nötron eksiktir."
+  },
+  {
+   "after": 9,
+   "prompt": "İki farklı çekirdek neden aynı anda hem izotop hem izoton olamaz?",
+   "answer": "Aynı Z ve aynı n taşıyan iki çekirdek aynı çekirdek türüdür; farklı çekirdek koşulu bozulur."
+  },
+  {
+   "after": 10,
+   "prompt": "Yatay Z, düşey n eksenli grafikte aynı dikey çizgideki noktalar hangi ilişkiyi gösterir?",
+   "answer": "Aynı dikeydeki noktaların Z'si aynı, n'si farklıdır; bu noktalar izotoplardır."
+  },
+  {
+   "after": 11,
+   "prompt": "Dört taneciklik bir tabloda çekirdek ilişkisi için kaç çift karşılaştırılmalıdır?",
+   "answer": "Altı çift karşılaştırılmalıdır; üç tanecik olsaydı üç çift olurdu."
+  },
+  {
+   "after": 13,
+   "prompt": "Bir yargının olabilir olduğunu göstermek için ne yeterlidir?",
+   "answer": "Verilen koşulları bozmayan en az bir örnek yeterlidir; olanaksız demek için koşulların çeliştiğini göstermelisin."
+  },
+  {
+   "after": 16,
+   "prompt": "Yalnız iki izotop varken ortalamadan hafif izotopun atom kesri hangi bağıntıyla bulunur?",
+   "answer": "x = (m₂ − m̄)/(m₂ − m₁) ile bulunur; yüzde için 100 ile çarpılır, öteki bolluk 100'den çıkarılır."
+  }
  ]
 }

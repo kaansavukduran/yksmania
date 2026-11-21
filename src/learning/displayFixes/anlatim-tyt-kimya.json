@@ -94,5 +94,265 @@
  {
   "from": "Son katı kütlesinden çıkarılan değişim, tek gaz alışverişi modelinde oksijen miktarını belirleyebilir. Mg oksitlenmesinde 8 g artış,0,5 mol Mg'nin yani 12 g Mg'nin dönüştüğünü gösterir.",
   "to": "Son katı kütlesinden çıkarılan değişim, tek gaz alışverişi modelinde oksijen miktarını belirleyebilir. Mg oksitlenmesinde 8 g artış, 0,5 mol Mg'nin yani 12 g Mg'nin dönüştüğünü gösterir."
+ },
+ {
+  "from": "Verim %0 olduğunda ters bölme yapılamaz. Gerçek 0 ve teori pozitifse ileri oran %0'dır; teori 0 ise yüzde formülü tanımsızdır. Model bu sınırı keyfî%0 veya %100 diye doldurmaz.",
+  "to": "Verim %0 olduğunda ters bölme yapılamaz. Gerçek 0 ve teori pozitifse ileri oran %0'dır; teori 0 ise yüzde formülü tanımsızdır. Model bu sınırı keyfî %0 veya %100 diye doldurmaz."
+ },
+ {
+  "from": "İki deneyi karşılaştırırken ham gramı değil, gerçek/teorik oranlarını karşılaştır.12/20 =%60 ve 15/20 =%75 arasındaki fark 15 yüzde puandır. “%15 daha fazla” ifadesiyle yüzde puanı birbirine karıştırma.",
+  "to": "İki deneyi karşılaştırırken ham gramı değil, gerçek/teorik oranlarını karşılaştır. 12/20 =%60 ve 15/20 =%75 arasındaki fark 15 yüzde puandır. “%15 daha fazla” ifadesiyle yüzde puanı birbirine karıştırma."
+ },
+ {
+  "from": "Kütlece saflık = etkin bileşenin kütlesi/numune kütlesi ×100'dür.50 g numunenin %80'i istenen maddeyse 40 g etkin,10 g diğer bileşen vardır. Payda ilk toplamdır.",
+  "to": "Kütlece saflık = etkin bileşenin kütlesi/numune kütlesi ×100'dür. 50 g numunenin %80'i istenen maddeyse 40 g etkin, 10 g diğer bileşen vardır. Payda ilk toplamdır."
+ },
+ {
+  "from": "80 g numune %75 CaCO₃ içeriyorsa saf 60 g =0,6 moldür. Tam dönüşümde 0,6 mol CO₂ =26,4 g oluşur.20 g inert CO₂ kaynağı değildir; kalıntı kapsamındaysa değişmeden bulunur.",
+  "to": "80 g numune %75 CaCO₃ içeriyorsa saf 60 g =0,6 moldür. Tam dönüşümde 0,6 mol CO₂ =26,4 g oluşur. 20 g inert CO₂ kaynağı değildir; kalıntı kapsamındaysa değişmeden bulunur."
+ },
+ {
+  "from": "CO₂'nin tek kaynağı CaCO₃ ve bütün etkin bileşen tepkimeye girmişse gazdan tüketilen CaCO₃ bulunabilir.11 g CO₂,0,25 mol yani 25 g CaCO₃'ye karşılık gelir.",
+  "to": "CO₂'nin tek kaynağı CaCO₃ ve bütün etkin bileşen tepkimeye girmişse gazdan tüketilen CaCO₃ bulunabilir. 11 g CO₂, 0,25 mol yani 25 g CaCO₃'ye karşılık gelir."
+ },
+ {
+  "from": "50 g örneğin 25 g'ı CaCO₃,25 g'ı inertse tam ayrışmada 14 g CaO ve 11 g CO₂ oluşur. Katı kalıntı 14+25 =39 g'dır; katı ile gaz toplam 50 g olur.",
+  "to": "50 g örneğin 25 g'ı CaCO₃, 25 g'ı inertse tam ayrışmada 14 g CaO ve 11 g CO₂ oluşur. Katı kalıntı 14+25 =39 g'dır; katı ile gaz toplam 50 g olur."
+ },
+ {
+  "from": "Negatif inert kütle fiziksel bir bileşen değildir. Model bu durumda geçerli bir numune bileşimi çizmez; uyuşmazlığı görünür bildirir.0 numune kütlesi için yüzde tanımı da ayrıca sınanmalıdır.",
+  "to": "Negatif inert kütle fiziksel bir bileşen değildir. Model bu durumda geçerli bir numune bileşimi çizmez; uyuşmazlığı görünür bildirir. 0 numune kütlesi için yüzde tanımı da ayrıca sınanmalıdır."
+ },
+ {
+  "from": "Çözümü başlangıç numunesine geri koyarak teorik ürün ve gerçek ölçümü yeniden üret. Bu çift yönlü denetim, yüzdeleri gelişigüzel çarpmayı engeller. Başlangıç saflığı ile kişisel çalışma başarısı bu ünitede farklı kavramlardır.",
+  "to": "Çözümü başlangıç numunesine geri koyarak teorik ürün ve gerçek ölçümü yeniden üret. Bu çift yönlü denetim, yüzdeleri gelişigüzel çarpmayı engeller."
+ },
+ {
+  "from": "35 u izotopu %75,37 u izotopu %25 atom bolluğundaysa ortalama 35,5 u'dur. Düz 36 ortalaması yalnız eşit atom bolluğunda çıkar. Ortalama daha bol izotopun kütlesine yakın olmalıdır.",
+  "to": "35 u izotopu %75, 37 u izotopu %25 atom bolluğundaysa ortalama 35,5 u'dur. Düz 36 ortalaması yalnız eşit atom bolluğunda çıkar. Ortalama daha bol izotopun kütlesine yakın olmalıdır."
+ },
+ {
+  "from": "35(1−x)+37 x =35,6 için 2 x =0,6, x=0,30 bulunur. Ağır izotopun atom bolluğu %30'dur. Bilinmeyenin hangi izotopu temsil ettiğini ilk satırda yaz.",
+  "to": "35(1−x)+37x =35,6 için 2x =0,6, x=0,30 bulunur. Ağır izotopun atom bolluğu %30'dur. Bilinmeyenin hangi izotopu temsil ettiğini ilk satırda yaz."
+ },
+ {
+  "from": "Kütle payları wᵢ verilirse atom miktarları wᵢ/Mᵢ ile orantılıdır. Normalize ettikten sonra atom kesirlerini bul. Aynı 35/37 çiftinde %25 ağır kütle payı,%25 ağır atom payıyla aynı ortalamayı vermez; model iki modu ayırır.",
+  "to": "Kütle payları wᵢ verilirse atom miktarları wᵢ/Mᵢ ile orantılıdır. Normalize ettikten sonra atom kesirlerini bul. Aynı 35/37 çiftinde %25 ağır kütle payı, %25 ağır atom payıyla aynı ortalamayı vermez; model iki modu ayırır."
+ },
+ {
+  "from": "0,2 mol XY'nin kütlesi 5,6 g ise M(XY)=28 g/mol;0,2 mol XY₂ 8,8 g ise M(XY₂)=44 g/mol olur. İki denklem çıkarılınca Y 16, X 12 bulunur.",
+  "to": "0,2 mol XY'nin kütlesi 5,6 g ise M(XY)=28 g/mol; 0,2 mol XY₂ 8,8 g ise M(XY₂)=44 g/mol olur. İki denklem çıkarılınca Y 16, X 12 bulunur."
+ },
+ {
+  "from": "CH₄'ün tam yanması bir mol başına 1 mol CO₂, C₂H₆'nın tam yanması 2 mol CO₂ verir. x mol CH₄ ve y mol C₂H₆ için CO₂=x+2 y olur.",
+  "to": "CH₄'ün tam yanması bir mol başına 1 mol CO₂, C₂H₆'nın tam yanması 2 mol CO₂ verir. x mol CH₄ ve y mol C₂H₆ için CO₂=x+2y olur."
+ },
+ {
+  "from": "Toplam karışım 0,5 mol, toplam CO₂ 0,8 mol ise x+y=0,5 ve x+2 y=0,8 kurulur. İkinciden birinciyi çıkarınca y 0,3, x 0,2 mol bulunur.",
+  "to": "Toplam karışım 0,5 mol, toplam CO₂ 0,8 mol ise x+y=0,5 ve x+2y=0,8 kurulur. İkinciden birinciyi çıkarınca y 0,3, x 0,2 mol bulunur."
+ },
+ {
+  "from": "Toplam t mol CH₄/C₂H₆ için CO₂ miktarı t ile 2 t arasında olmalıdır. İki bileşen de pozitifse değer bu uçların arasında kalır. Uç noktalar saf bileşen durumlarıdır.",
+  "to": "Toplam t mol CH₄/C₂H₆ için CO₂ miktarı t ile 2t arasında olmalıdır. İki bileşen de pozitifse değer bu uçların arasında kalır. Uç noktalar saf bileşen durumlarıdır."
+ },
+ {
+  "from": "CH₄+x ilişkisiyle su 2 x, C₂H₆ için su 3 y katkısıdır; toplam su 2 x+3 y olur. O₂ tüketimi 2 x+3,5 y'dir. Bulduğun bileşimi bu yeni niceliklerde deneyebilirsin.",
+  "to": "CH₄+x ilişkisiyle su 2x, C₂H₆ için su 3y katkısıdır; toplam su 2x+3y olur. O₂ tüketimi 2x+3,5y'dir. Bulduğun bileşimi bu yeni niceliklerde deneyebilirsin."
+ },
+ {
+  "from": "Ders modelinde yaklaşık boyut bölgeleri çözelti<1 nm, kolloid 1–1000 nm, kaba süspansiyon>1000 nm olarak kullanılır. Bunlar bütün gerçek örneklerde keskin evrensel duvarlar değildir; dağılım ve ölçüm yöntemi önemlidir.",
+  "to": "Ders modelinde yaklaşık boyut bölgeleri çözelti < 1 nm, kolloid 1–1000 nm, kaba süspansiyon > 1000 nm olarak kullanılır. Bunlar bütün gerçek örneklerde keskin evrensel duvarlar değildir; dağılım ve ölçüm yöntemi önemlidir."
+ },
+ {
+  "from": "100 g suya 50 g NaCl eklenip model dengesine ulaşıldığında 36 g çözünür,14 g ayrı katı kalır. Sıvı çözelti 136 g, bütün kap içeriği 150 g'dır.",
+  "to": "100 g suya 50 g NaCl eklenip model dengesine ulaşıldığında 36 g çözünür, 14 g ayrı katı kalır. Sıvı çözelti 136 g, bütün kap içeriği 150 g'dır."
+ },
+ {
+  "from": "Kütlece yüzde =çözünen kütlesi/çözelti kütlesi ×100.20 g madde 180 g suda tamamen çözünürse toplam 200 g, yüzde 10'dur. Paydayı yalnız çözücü 180 g seçmek başka bir oran üretir.",
+  "to": "Kütlece yüzde =çözünen kütlesi/çözelti kütlesi ×100. 20 g madde 180 g suda tamamen çözünürse toplam 200 g, yüzde 10'dur. Paydayı yalnız çözücü 180 g seçmek başka bir oran üretir."
+ },
+ {
+  "from": "Çözünmemiş dip katı sıvı çözeltinin paydasına girmez. Önce fazların hangi kütleyi taşıdığını belirle.20 g çözünmüş ve 10 g dipte varsa çözünen payına 30 g yazılmaz; kap toplamı ayrı niceliktir.",
+  "to": "Çözünmemiş dip katı sıvı çözeltinin paydasına girmez. Önce fazların hangi kütleyi taşıdığını belirle. 20 g çözünmüş ve 10 g dipte varsa çözünen payına 30 g yazılmaz; kap toplamı ayrı niceliktir."
+ },
+ {
+  "from": "Hacimce yüzde =alınan çözünen sıvı hacmi/son çözelti hacmi ×100'dür.25 mL etanolle son hacim 250 mL'ye tamamlanmışsa hacimce %10 elde edilir.",
+  "to": "Hacimce yüzde =alınan çözünen sıvı hacmi/son çözelti hacmi ×100'dür. 25 mL etanolle son hacim 250 mL'ye tamamlanmışsa hacimce %10 elde edilir."
+ },
+ {
+  "from": "Sıvılar karışınca hacimler tam toplanmak zorunda değildir.50 mL alkol+50 mL su için son 100 mL'yi koşulsuz varsayma. Soruda hacim değişiminin ihmal edildiği açıkça söylenirse bu ayrı model kullanılabilir.",
+  "to": "Sıvılar karışınca hacimler tam toplanmak zorunda değildir. 50 mL alkol+50 mL su için son 100 mL'yi koşulsuz varsayma. Soruda hacim değişiminin ihmal edildiği açıkça söylenirse bu ayrı model kullanılabilir."
+ },
+ {
+  "from": "Kütlece ppm, kütle kesrinin 10⁶ katıdır;1 mg/kg =1 ppm. Çözelti 2 kg ve çözünen 4 mg ise 2 ppm bulunur. Birimleri önce aynı kütle ölçeğine dönüştür.",
+  "to": "Kütlece ppm, kütle kesrinin 10⁶ katıdır; 1 mg/kg =1 ppm. Çözelti 2 kg ve çözünen 4 mg ise 2 ppm bulunur. Birimleri önce aynı kütle ölçeğine dönüştür."
+ },
+ {
+  "from": "Kayıp, reaksiyon ve çökelme olmadan saf su eklenirse çözünen kütlesi sabittir.200 g %15 çözeltide 30 g çözünen vardır;100 g su eklenince toplam 300 g ve yüzde 10 olur.",
+  "to": "Kayıp, reaksiyon ve çökelme olmadan saf su eklenirse çözünen kütlesi sabittir. 200 g %15 çözeltide 30 g çözünen vardır; 100 g su eklenince toplam 300 g ve yüzde 10 olur."
+ },
+ {
+  "from": "İstenen çözünen sabitse hedef yüzde, gereken son toplamı belirler.30 g çözünenle %10 için toplam 300 g gerekir; ilk çözelti 200 g ise 100 g su eklenir. Hesabın birimleri ve tabanı açık yazılır.",
+  "to": "İstenen çözünen sabitse hedef yüzde, gereken son toplamı belirler. 30 g çözünenle %10 için toplam 300 g gerekir; ilk çözelti 200 g ise 100 g su eklenir. Hesabın birimleri ve tabanı açık yazılır."
+ },
+ {
+  "from": "Örnek bir dağılımda toplam suyun %3’ünün tatlı olduğu verilse bile bunun tamamı kullanılabilir içme suyu sayılmaz. Buzullar, yer altı rezervleri, taşıma olanakları ve su kalitesi ayrıca sınırlayıcıdır. Uygulamadaki sayılar hesap öğretimi için verilen kurmaca veri olduğunda gerçek bir bölgenin güncel rezervi diye sunulmaz.",
+  "to": "Örnek bir dağılımda toplam suyun %3’ünün tatlı olduğu verilse bile bunun tamamı kullanılabilir içme suyu sayılmaz. Buzullar, yer altı rezervleri, taşıma olanakları ve su kalitesi ayrıca sınırlayıcıdır. Hesap öğretimi için verilen kurmaca sayılar gerçek bir bölgenin güncel rezervi diye sunulmaz."
+ },
+ {
+  "from": "Örneğin 14 g demir ve 12 g kükürtten 22 g FeS oluşuyorsa 4 g kükürt artar. Başlangıç 26 g, son karışım 22 + 4 = 26 g olur. Ürünün 22 g olması kütle kaybı değildir. Hangi maddenin arttığını bulma yöntemini sonraki sınırlayıcı madde ünitesinde derinleştireceksin.",
+  "to": "Örneğin 14 g demir ve 12 g kükürtten 22 g FeS oluşuyorsa 4 g kükürt artar. Başlangıç 26 g, son karışım 22 + 4 = 26 g olur. Ürünün 22 g olması kütle kaybı değildir. Hangi maddenin arttığını bulma yöntemini sınırlayıcı madde konusunda derinleştireceksin."
+ },
+ {
+  "from": "Son cevabı birimiyle yaz ve artan madde varsa açıkça ayır. Açık düzende çıkan gazı gizli bir kayıp olarak bırakma; miktarı ayrı bir kalem yap. Kütle, atom sayısı ve enerji farklı niceliklerdir; bu ünitedeki hesap olağan kimyasal dönüşümlerin madde bilançosudur, nükleer süreçlere ilişkin bir iddia değildir.",
+  "to": "Son cevabı birimiyle yaz ve artan madde varsa açıkça ayır. Açık düzende çıkan gazı gizli bir kayıp olarak bırakma; miktarı ayrı bir kalem yap. Kütle, atom sayısı ve enerji farklı niceliklerdir; buradaki hesap olağan kimyasal dönüşümlerin madde bilançosudur, nükleer süreçlere ilişkin bir iddia değildir."
+ },
+ {
+  "from": "CO ve CO₂ aynı C ve O elementlerini içerir; bir C başına O sayısı farklıdır. CO₂ ve SO₂ ise ortak oksijen içerse de aynı iki elementten oluşmaz. İkinci çift için bu okul düzeyi karşılaştırmayı uygulamak, karbon ile kükürdü aynı elementmiş gibi saymak olur.",
+  "to": "CO ve CO₂ aynı C ve O elementlerini içerir; bir C başına O sayısı farklıdır. CO₂ ve SO₂ ise ortak oksijen içerse de aynı iki elementten oluşmaz. İkinci çift için bu karşılaştırmayı uygulamak, karbon ile kükürdü aynı elementmiş gibi saymak olur."
+ },
+ {
+  "from": "NO₂ ile N₂O₄ aynı N/O basit oranına sahiptir: 1/2. Eşit N kütlesine karşılık O kütleleri de eşit olur; oran 1 çıkar. Bu çift farklı molekül büyüklüklerine sahip olsa da okul düzeyindeki farklı basit bileşim örneği olarak kullanılmaz.",
+  "to": "NO₂ ile N₂O₄ aynı N/O basit oranına sahiptir: 1/2. Eşit N kütlesine karşılık O kütleleri de eşit olur; oran 1 çıkar. Bu çift farklı molekül büyüklüklerine sahip olsa da farklı basit bileşim örneği olarak kullanılmaz."
+ },
+ {
+  "from": "Hesaplarda aksi verilmedikçe Nₐ için yaklaşık 6,02 × 10²³ mol⁻¹ kullanılabilir. Kesin tanım ile yuvarlatılmış hesap değerini karıştırma. “Bir mol oksijen” ifadesi O atomu mu O₂ molekülü mü dediğini açıklamıyorsa belirsizdir; uygulamada her soruda varlık adı açık yazılır.",
+  "to": "Hesaplarda aksi verilmedikçe Nₐ için yaklaşık 6,02 × 10²³ mol⁻¹ kullanılabilir. Kesin tanım ile yuvarlatılmış hesap değerini karıştırma. “Bir mol oksijen” ifadesi O atomu mu O₂ molekülü mü dediğini açıklamıyorsa belirsizdir; her soruda varlık adı açık yazılır."
+ },
+ {
+  "from": "Elektron sayısı sorulursa atom numarası ve iyon yükü ayrıca gereklidir. Pozitif iyon elektron kaybetmiştir; negatif iyon elektron kazanmıştır. Proton sayısı element kimliğini korur. Bu ünitedeki atom bileşimi hesabına, verilmemiş atom numaralarını veya nötr atom elektron sayısını sessizce ekleme.",
+  "to": "Elektron sayısı sorulursa atom numarası ve iyon yükü ayrıca gereklidir. Pozitif iyon elektron kaybetmiştir; negatif iyon elektron kazanmıştır. Proton sayısı element kimliğini korur. Atom bileşimi hesabına, verilmemiş atom numaralarını veya nötr atom elektron sayısını sessizce ekleme."
+ },
+ {
+  "from": "Bağıl atom kütlesi bir referansa göre oran olduğu için birimsizdir. Bir atomun kütlesi u birimiyle, bir mol atomun kütlesi ise gram cinsinden ifade edilebilir. Okul hesaplarında C için 12, O için 16 kullanıldığında sayısal bağlantı kolaydır; fakat niceliklerin adları ve birimleri aynı değildir.",
+  "to": "Bağıl atom kütlesi bir referansa göre oran olduğu için birimsizdir. Bir atomun kütlesi u birimiyle, bir mol atomun kütlesi ise gram cinsinden ifade edilebilir. Hesaplarda C için 12, O için 16 kullanıldığında sayısal bağlantı kolaydır; fakat niceliklerin adları ve birimleri aynı değildir."
+ },
+ {
+  "from": "Bilimsel gösterimde üssün işareti denetim için önemlidir: tek molekülün gram kütlesi, bir molün gram kütlesinden çok küçüktür. 10²³ ile bölme 10⁻²³ ölçeği oluşturur. Uygulama ayrıca Nₐ katsayısını gösterir; çizimdeki birkaç taneciğin gerçek sayı olduğu iddiasında bulunmaz.",
+  "to": "Bilimsel gösterimde üssün işareti denetim için önemlidir: tek molekülün gram kütlesi, bir molün gram kütlesinden çok küçüktür. 10²³ ile bölme 10⁻²³ ölçeği oluşturur. Model ayrıca Nₐ katsayısını gösterir; çizimdeki birkaç taneciğin gerçek sayı olduğu iddiasında bulunmaz."
+ },
+ {
+  "from": "MEBİ tablosunda su için 25 °C’de 23,8; 50 °C’de 92,5; 70 °C’de 233,7; 100 °C’de 760 mmHg bulunur. Aynı saf sıvının sıcaklığı arttıkça doygunluk basıncı artar. Ancak Celsius sıcaklığını ikiye katlamak buhar basıncını ikiye katlamak değildir; değerler doğrusal bir tablo oluşturmaz.",
+  "to": "Ölçüm tablosunda su için 25 °C’de 23,8; 50 °C’de 92,5; 70 °C’de 233,7; 100 °C’de 760 mmHg bulunur. Aynı saf sıvının sıcaklığı arttıkça doygunluk basıncı artar. Ancak Celsius sıcaklığını ikiye katlamak buhar basıncını ikiye katlamak değildir; değerler doğrusal bir tablo oluşturmaz."
+ },
+ {
+  "from": "Örneğin 25 °C’deP*=23,8 mmHg ve p=11,9 mmHg ise bağıl nem %50’dir. Bu yüzde kabın yarısının sıvıyla dolu olduğu anlamına gelmez. Suyun havada gaz hâlindeki payını o sıcaklığın doygunluk sınırıyla karşılaştırır. Hava ısıtılınca su moleküllerinin sayısı kendiliğinden artmaz; su alışverişi olup olmadığı belirtilmelidir.",
+  "to": "Örneğin 25 °C’de P*=23,8 mmHg ve p=11,9 mmHg ise bağıl nem %50’dir. Bu yüzde kabın yarısının sıvıyla dolu olduğu anlamına gelmez. Suyun havada gaz hâlindeki payını o sıcaklığın doygunluk sınırıyla karşılaştırır. Hava ısıtılınca su moleküllerinin sayısı kendiliğinden artmaz; su alışverişi olup olmadığı belirtilmelidir."
+ },
+ {
+  "from": "Atölyede seçilen p başlangıç değeri olarak verilir. Sıcaklıkta p>P* çıkarsa düz su yüzeyiyle kararlı denge modeli fazla su buharının yoğuşmasını gösterir; sonp=P* ve son bağıl nem %100 olur. Model bulut çekirdeklenmesi veya geçici aşırı doygunluğu çözmez. Böylece %150 hesaplaması kararlı ortamın her zaman %150 nemle kaldığı sanısını üretmez.",
+  "to": "Atölyede seçilen p başlangıç değeri olarak verilir. Sıcaklıkta p>P* çıkarsa düz su yüzeyiyle kararlı denge modeli fazla su buharının yoğuşmasını gösterir; son p=P* ve son bağıl nem %100 olur. Model bulut çekirdeklenmesi veya geçici aşırı doygunluğu çözmez. Böylece %150 hesaplaması kararlı ortamın her zaman %150 nemle kaldığı sanısını üretmez."
+ },
+ {
+  "from": "Bir kap ısıtıldığında rijitse basınç, serbest hareketli pistonlu ve dış basıncı sabitse hacim değişebilir. Gaz eklemekn değerini değiştirir; kaçak varsa sabit miktar kuralı bozulur. Soruyu okumadan tek bir gaz yasası seçmek yerine kap çizimine sabit değişkenleri yaz. Sonuçta büyüme/küçülme yönünü fiziksel sezgiyle denetle.",
+  "to": "Bir kap ısıtıldığında rijitse basınç, serbest hareketli pistonlu ve dış basıncı sabitse hacim değişebilir. Gaz eklemek n değerini değiştirir; kaçak varsa sabit miktar kuralı bozulur. Soruyu okumadan tek bir gaz yasası seçmek yerine kap çizimine sabit değişkenleri yaz. Sonuçta büyüme/küçülme yönünü fiziksel sezgiyle denetle."
+ },
+ {
+  "from": "Atölyenin enerji modu önceki su modelindeki 1 g örnek ve belirtilmiş gizli/öz ısı değerlerini kullanır. Grafiğin yatay bölgesinde sıcaklık sabitken verilen enerji faz dönüşümüne gider. 0 °C görmek tek başına tamamen sıvı,100 °C görmek tamamen gaz demek değildir. Platonun başı, içi ve sonu farklı faz miktarlarına karşılık gelir.",
+  "to": "Atölyenin enerji modu önceki su modelindeki 1 g örnek ve belirtilmiş gizli/öz ısı değerlerini kullanır. Grafiğin yatay bölgesinde sıcaklık sabitken verilen enerji faz dönüşümüne gider. 0 °C görmek tek başına tamamen sıvı, 100 °C görmek tamamen gaz demek değildir. Platonun başı, içi ve sonu farklı faz miktarlarına karşılık gelir."
+ },
+ {
+  "from": "Yaklaşık toplam nötrlük pozitif iyon sayısı negatif iyon sayısına eşittir demek değildir. Örneğin bir kez iyonlaşmış altı atom altı+1 iyon ve altı serbest elektron verir; negatif iyon hiç bulunmasa da toplam yük sıfır olabilir. Atölye on iki nötr atomdan seçilen kadarının birer elektron kaybetmesini sayar. Yükler sayılır; plazmanın tüm elektromanyetik dinamiği hesaplanmaz.",
+  "to": "Yaklaşık toplam nötrlük pozitif iyon sayısı negatif iyon sayısına eşittir demek değildir. Örneğin bir kez iyonlaşmış altı atom altı +1 iyon ve altı serbest elektron verir; negatif iyon hiç bulunmasa da toplam yük sıfır olabilir. Atölye on iki nötr atomdan seçilen kadarının birer elektron kaybetmesini sayar. Yükler sayılır; plazmanın tüm elektromanyetik dinamiği hesaplanmaz."
+ },
+ {
+  "from": "Bu ünitede iki elementli, yaygın moleküler formüller üzerinden ilerliyoruz. Molekül formülünü en küçük orana sadeleştirme: N₂O₄ ile NO₂ aynı atom oranına sahip olsa da farklı moleküllerdir. Verilen ad molekülü tanımlıyorsa gerçek alt indisler korunur; bileşimin en basit oranını isteyen soru farklıdır.",
+  "to": "Burada iki elementli, yaygın moleküler formüller üzerinden ilerliyoruz. Molekül formülünü en küçük orana sadeleştirme: N₂O₄ ile NO₂ aynı atom oranına sahip olsa da farklı moleküllerdir. Verilen ad molekülü tanımlıyorsa gerçek alt indisler korunur; bileşimin en basit oranını isteyen soru farklıdır."
+ },
+ {
+  "from": "Na⁺ ile Ar çiftinde kaynak molekül dipolü değil net iyon yüküdür; ad iyon–indüklenmiş dipoldür. Bu modelin bulunabilmesi iyonik tuzların apolar çözücülerde iyi çözüneceği anlamına gelmez. Derslerde van der Waals kapsamı değişik genişlikte kullanılabilir; burada OGM/MEBİ’nin tanecik eşleşmelerini açık adlarla kullanıyoruz.",
+  "to": "Na⁺ ile Ar çiftinde kaynak molekül dipolü değil net iyon yüküdür; ad iyon–indüklenmiş dipoldür. Bu modelin bulunabilmesi iyonik tuzların apolar çözücülerde iyi çözüneceği anlamına gelmez. Derslerde van der Waals kapsamı değişik genişlikte kullanılabilir; burada tanecik eşleşmelerini açık adlarla kullanıyoruz."
+ },
+ {
+  "from": "kJ/mol, tanımlanan bir mol olay başına enerji miktarıdır. Yaklaşık 40 kJ/mol okul metinlerinde güçlü–zayıf için kaba bir ipucu olabilir; fiziksel–kimyasal ayrımında kesin eşik değildir. Suyun yaklaşık 44 kJ/mol enerji alarak buharlaşması H₂O’yu başka kimyasal türe dönüştürmez. Buna karşılık H₂’nin atomlara ayrılması kimyasal tür değişimidir.",
+  "to": "kJ/mol, tanımlanan bir mol olay başına enerji miktarıdır. Yaklaşık 40 kJ/mol bazı metinlerde güçlü–zayıf için kaba bir ipucu olabilir; fiziksel–kimyasal ayrımında kesin eşik değildir. Suyun yaklaşık 44 kJ/mol enerji alarak buharlaşması H₂O’yu başka kimyasal türe dönüştürmez. Buna karşılık H₂’nin atomlara ayrılması kimyasal tür değişimidir."
+ },
+ {
+  "from": "H₂O’da O–H, NH₃’te N–H, HF’de H–F verici olabilir. HCl ve H₂S, bu ünitenin yaygın TYT verici koşuluna girmez. CH₄’teki C–H bağları da klasik örneklerde bu rolü üstlenmez. Bu okul tanıma kuralının daha geniş ileri kimya tanımlarının tamamını tükettiği iddia edilmez.",
+  "to": "H₂O’da O–H, NH₃’te N–H, HF’de H–F verici olabilir. HCl ve H₂S, yaygın TYT verici koşuluna girmez. CH₄’teki C–H bağları da klasik örneklerde bu rolü üstlenmez. Bu tanıma kuralının daha geniş ileri kimya tanımlarının tamamını tükettiği iddia edilmez."
+ },
+ {
+  "from": "Aynı su örneği uygun basınç ve sıcaklıkta katı, sıvı veya gaz olabilir. H₂O kimliği değişmez; taneciklerin yerleşimi ve hareket olanağı farklılaşır. Katıda belirli şekil/hacim, sıvıda belirli hacim ama kabın biçimini alma, gazda kabın kullanılabilir hacmine yayılma görülür. Katı ve sıvılar da küçük miktarda sıkışabilir; okul modelindeki ‘sıkıştırılamaz’ yaklaşık bir anlatımdır.",
+  "to": "Aynı su örneği uygun basınç ve sıcaklıkta katı, sıvı veya gaz olabilir. H₂O kimliği değişmez; taneciklerin yerleşimi ve hareket olanağı farklılaşır. Katıda belirli şekil/hacim, sıvıda belirli hacim ama kabın biçimini alma, gazda kabın kullanılabilir hacmine yayılma görülür. Katı ve sıvılar da küçük miktarda sıkışabilir; temel modeldeki ‘sıkıştırılamaz’ yaklaşık bir anlatımdır."
+ },
+ {
+  "from": "Gazın iyonlaşması ve yüklerin yeniden birleşmesi olağan katı–sıvı–gaz yerleşim değişiminden ayrı mikroskobik süreçler içerir. Plazmayı yalnız dört küçük topa artı/eksi çizmekten ibaret düşünme. Her sıcak gaz plazma sayılmaz, her plazmanın ağır tanecikleri aynı çok yüksek sıcaklıkta olmak zorunda değildir; bu giriş yaygın okul örnekleriyle sınırlıdır.",
+  "to": "Gazın iyonlaşması ve yüklerin yeniden birleşmesi olağan katı–sıvı–gaz yerleşim değişiminden ayrı mikroskobik süreçler içerir. Plazmayı yalnız dört küçük topa artı/eksi çizmekten ibaret düşünme. Her sıcak gaz plazma sayılmaz, her plazmanın ağır tanecikleri aynı çok yüksek sıcaklıkta olmak zorunda değildir; bu giriş yaygın örneklerle sınırlıdır."
+ },
+ {
+  "from": "H için duet, buradaki C/N/O/F/Cl örneklerinde oktet yararlı bir kontroldür. Bütün atomların bütün bileşiklerde oktet yapması zorunlu değildir: BF₃’ün basit Lewis yapısında B çevresinde altı elektron bulunur. Elektron bütçesine dışarıdan nokta ekleyerek okteti zorlamak türün yükünü değiştirir. Ayrıntılı orbital kuramı bu ünitenin yerine geçmez; çizim elektron sayımını düzenleyen bir modeldir.",
+  "to": "H için duet, buradaki C/N/O/F/Cl örneklerinde oktet yararlı bir kontroldür. Bütün atomların bütün bileşiklerde oktet yapması zorunlu değildir: BF₃’ün basit Lewis yapısında B çevresinde altı elektron bulunur. Elektron bütçesine dışarıdan nokta ekleyerek okteti zorlamak türün yükünü değiştirir. Ayrıntılı orbital kuramı buradaki modelin yerine geçmez; çizim elektron sayımını düzenleyen bir modeldir."
+ },
+ {
+  "from": "Bu ünitedeki kimyasal dipol okunun ucu elektron yoğunluğu fazla olan kısmi negatif tarafa bakar. H–Cl için H’den Cl’ye, H–F için H’den F’ye yönelir. Aynı elementli bağda iki eş ucun birini kalıcı negatif seçmek gerekçesiz olur. Bir molekülü kâğıtta ters çevirmek kutupluluğunu değiştirmez; yalnız okun sayfadaki yönü döner.",
+  "to": "Buradaki kimyasal dipol okunun ucu elektron yoğunluğu fazla olan kısmi negatif tarafa bakar. H–Cl için H’den Cl’ye, H–F için H’den F’ye yönelir. Aynı elementli bağda iki eş ucun birini kalıcı negatif seçmek gerekçesiz olur. Bir molekülü kâğıtta ters çevirmek kutupluluğunu değiştirmez; yalnız okun sayfadaki yönü döner."
+ },
+ {
+  "from": "Bir bağın kutuplu olması paylaşımın eşit olmadığını söyler; bütün molekülün net kutbunu henüz söylemez. İki atomlu HCl’de bu bağı dengeleyecek ikinci bir bağ yoktur. Çok atomlu CO₂’de iki eş C=O etkisi birbirine zıttır. Molekülün tamamı soruluyorsa bağ yönleri ve gerçek geometri için sonraki ünitenin ikinci kontrolüne geç.",
+  "to": "Bir bağın kutuplu olması paylaşımın eşit olmadığını söyler; bütün molekülün net kutbunu henüz söylemez. İki atomlu HCl’de bu bağı dengeleyecek ikinci bir bağ yoktur. Çok atomlu CO₂’de iki eş C=O etkisi birbirine zıttır. Molekülün tamamı soruluyorsa bağ yönleri ve gerçek geometri için ikinci bir kontrole geç."
+ },
+ {
+  "from": "C–H bağındaki elektronegatiflik farkı görece küçüktür; bazı okul sınıflamalarında yaklaşık apolar, bazı açıklamalarda zayıf polar kabul edilir. H–Cl ve H–F gibi açık karşılaştırmaları bu sınır örneğiyle karıştırma. Soru bir kabul veya değer tablosu veriyorsa onu kullan; tek bir ezber eşik bütün bağları kesin kutulara ayıran evrensel yasa değildir.",
+  "to": "C–H bağındaki elektronegatiflik farkı görece küçüktür; bazı sınıflamalarda yaklaşık apolar, bazı açıklamalarda zayıf polar kabul edilir. H–Cl ve H–F gibi açık karşılaştırmaları bu sınır örneğiyle karıştırma. Soru bir kabul veya değer tablosu veriyorsa onu kullan; tek bir ezber eşik bütün bağları kesin kutulara ayıran evrensel yasa değildir."
+ },
+ {
+  "from": "Son cümlede tam olarak sorulanı cevapla. ‘N₂’de üç ortak çift ve altı ortak elektron vardır; eş N uçları nedeniyle bağ apolardır’ bir tam açıklamadır. ‘Çok elektron var, o yüzden polar’ açıklaması ise sayıdan yön çıkardığı için geçersizdir. Modelde yeni tür seçip tahminini gerekçelendirmek alıştırma desteğidir; bağımsız doğru veya konu tamamlama kaydı oluşturmaz.",
+  "to": "Son cümlede tam olarak sorulanı cevapla. ‘N₂’de üç ortak çift ve altı ortak elektron vardır; eş N uçları nedeniyle bağ apolardır’ bir tam açıklamadır. ‘Çok elektron var, o yüzden polar’ açıklaması ise sayıdan yön çıkardığı için geçersizdir."
+ },
+ {
+  "from": "Bu ünitenin basit modellerinde bölgelerin birbirinden uzaklaşması şekli kurmaya yardım eder. İki bağ yönü ve yalnız çift olmaması doğrusal; üç bağ yönü ve yalnız çift olmaması düzlemsel üçgen; dört bağ yönü ve yalnız çift olmaması dört yüzlü düzen verir. Buradaki şekil adları atomların konumlarına aittir; yalnız elektron çiftleri atommuş gibi şeklin köşelerine eklenmez.",
+  "to": "Basit modellerde bölgelerin birbirinden uzaklaşması şekli kurmaya yardım eder. İki bağ yönü ve yalnız çift olmaması doğrusal; üç bağ yönü ve yalnız çift olmaması düzlemsel üçgen; dört bağ yönü ve yalnız çift olmaması dört yüzlü düzen verir. Buradaki şekil adları atomların konumlarına aittir; yalnız elektron çiftleri atommuş gibi şeklin köşelerine eklenmez."
+ },
+ {
+  "from": "‘Merkezde yalnız çift yoksa mutlaka apolar’ kısayolu güvenilir değildir. CH₃Cl’nin C’sinde yalnız çift yoktur ama bir Cl ve üç H köşesi eşdeğer değildir; net dipol kalır. Daha geniş geometri ailelerinde yalnız çift varlığı da tek başına evrensel polar karar vermez. Bu ünitede öğretilen basit şekli ve bağların eşdeğerliğini birlikte kullan; tek bir işareti sonuç sanma.",
+  "to": "‘Merkezde yalnız çift yoksa mutlaka apolar’ kısayolu güvenilir değildir. CH₃Cl’nin C’sinde yalnız çift yoktur ama bir Cl ve üç H köşesi eşdeğer değildir; net dipol kalır. Daha geniş geometri ailelerinde yalnız çift varlığı da tek başına evrensel polar karar vermez. Burada öğretilen basit şekli ve bağların eşdeğerliğini birlikte kullan; tek bir işareti sonuç sanma."
+ },
+ {
+  "from": "Bu bölüm yalnız sonraki zayıf etkileşim ünitesine köprü kurar. Molekül içindeki O–H kovalent bağı, iki su molekülü arasındaki hidrojen bağı ve katı NaCl’de iyonlar arası çekim farklı düzeylerdedir. İyonik kristali ‘polar NaCl molekülü’ diye sınıflandırma. Son kontrol: tanecik türü, bağ kutupluluğu, gerçek geometri ve bütün yönlerin toplamı aynı açıklamada uyuşuyor mu?",
+  "to": "Bu bölüm yalnız zayıf etkileşimlere köprü kurar. Molekül içindeki O–H kovalent bağı, iki su molekülü arasındaki hidrojen bağı ve katı NaCl’de iyonlar arası çekim farklı düzeylerdedir. İyonik kristali ‘polar NaCl molekülü’ diye sınıflandırma. Son kontrol: tanecik türü, bağ kutupluluğu, gerçek geometri ve bütün yönlerin toplamı aynı açıklamada uyuşuyor mu?"
+ },
+ {
+  "from": "Bazı kartlarda Z yerine elektron sayısı ve yük verilir. q=Z−e eşitliğinin iki yanına e ekleyerek Z=e+q yaz. Önce kimliği bul; A ayrıca verilmişse n=A−Z ile çekirdeği tamamla. Negatif iyonun proton sayısı elektron sayısından az olmalıdır.",
+  "to": "Bazı sorularda Z yerine elektron sayısı ve yük verilir. q=Z−e eşitliğinin iki yanına e ekleyerek Z=e+q yaz. Önce kimliği bul; A ayrıca verilmişse n=A−Z ile çekirdeği tamamla. Negatif iyonun proton sayısı elektron sayısından az olmalıdır."
+ },
+ {
+  "from": "Tek atomlu tanecikte T=p+n+e ve A=p+n olduğundan T−A=e olur. q da biliniyorsa p=e+q ve n=A−p ile hepsi bulunur. Nötr atomda T=2 p+n yazılabilir; bu tek eşitlik p ile n’yi ayrı ayrı belirlemez.",
+  "to": "Tek atomlu tanecikte T=p+n+e ve A=p+n olduğundan T−A=e olur. q da biliniyorsa p=e+q ve n=A−p ile hepsi bulunur. Nötr atomda T=2p+n yazılabilir; bu tek eşitlik p ile n’yi ayrı ayrı belirlemez."
+ },
+ {
+  "from": "n/p=5/4 gibi bir oran, p=4 k ve n=5 k seçilerek yazılabilir. A verilirse 9 k=A olur. Bu yoldan bulunan p, n tam sayı ve negatif olmayan değerler olmalıdır. Oran yalnız hangi iki nicelik arasında verildiyse o niceliklere uygulanır.",
+  "to": "n/p=5/4 gibi bir oran, p=4k ve n=5k seçilerek yazılabilir. A verilirse 9k=A olur. Bu yoldan bulunan p, n tam sayı ve negatif olmayan değerler olmalıdır. Oran yalnız hangi iki nicelik arasında verildiyse o niceliklere uygulanır."
+ },
+ {
+  "from": "İyonda elektronları belirli atomlara dağıtmak, toplam sayı hesabından farklı bir konudur. Bu derste Lewis yapısı, bağ sayısı veya biçimsel yük dağılımı sorulmuyorsa bütün elektronları atomlara paylaştırmaya gerek yoktur. Toplam yük kontrolü P−E=q yeterlidir.",
+  "to": "İyonda elektronları belirli atomlara dağıtmak, toplam sayı hesabından farklı bir konudur. Burada Lewis yapısı, bağ sayısı veya biçimsel yük dağılımı sorulmuyorsa bütün elektronları atomlara paylaştırmaya gerek yoktur. Toplam yük kontrolü P−E=q yeterlidir."
+ },
+ {
+  "from": "A<Z ise n=A−Z negatif çıkar; q>Z ise e=Z−q negatif olur. Bu veriler bu dersin atom/iyon sayımında geçersizdir. İki farklı doğru satırın aynı çekirdeğe farklı A vermesi de çelişkidir. Negatif tanecik sayısını mutlak değerle düzeltme.",
+  "to": "A<Z ise n=A−Z negatif çıkar; q>Z ise e=Z−q negatif olur. Bu veriler atom/iyon sayımında geçersizdir. İki farklı doğru satırın aynı çekirdeğe farklı A vermesi de çelişkidir. Negatif tanecik sayısını mutlak değerle düzeltme."
+ },
+ {
+  "from": "Son denetimde iki korunumu ara: çekirdekte p+n ve elektrik yükünde p−e; örnek büyüklüğü varsa çarpanları da denetle. Etkinlikte önce tahmin ve kısa gerekçe yazıp sonra kıyaslayabilirsin. Yazılı gerekçe otomatik olarak doğru veya yanlış sayılmaz; model yalnız seçilen sayısal tahmini denetler.",
+  "to": "Son denetimde iki korunumu ara: çekirdekte p+n ve elektrik yükünde p−e; örnek büyüklüğü varsa çarpanları da denetle. Etkinlikte önce tahmin ve kısa gerekçe yazıp sonra kıyaslayabilirsin."
+ },
+ {
+  "from": "Çekirdek türünü Z ve A birlikte belirler; elektronik durum ve iyon yükü ayrıca belirtilir. Bir izotopun radyoaktif olması elementin bütün izotoplarının radyoaktif olduğunu göstermez. Bu derste sayısal karşılaştırma yapılması çekirdek dönüşümü üretme veya kararlılık tahmini anlamına gelmez.",
+  "to": "Çekirdek türünü Z ve A birlikte belirler; elektronik durum ve iyon yükü ayrıca belirtilir. Bir izotopun radyoaktif olması elementin bütün izotoplarının radyoaktif olduğunu göstermez. Burada sayısal karşılaştırma yapılması çekirdek dönüşümü üretme veya kararlılık tahmini anlamına gelmez."
+ },
+ {
+  "from": "Aynı elementin nötr, aynı elektronik durumdaki izotoplarının elektronik yapısı aynıdır; okul düzeyinde kimyasal davranışları benzer kabul edilir. Farklı iyon yükü veya farklı elektronik durum bu koşulu değiştirir. İzotop kütlesinin bazı süreçlere etkisini “hiç yoktur” diye dışlama.",
+  "to": "Aynı elementin nötr, aynı elektronik durumdaki izotoplarının elektronik yapısı aynıdır; temel düzeyde kimyasal davranışları benzer kabul edilir. Farklı iyon yükü veya farklı elektronik durum bu koşulu değiştirir. İzotop kütlesinin bazı süreçlere etkisini “hiç yoktur” diye dışlama."
+ },
+ {
+  "from": "Farklı elementlerin izoton, izobar ya da izoelektronik olması bütün fiziksel ve kimyasal özelliklerini eşitlemez. Aynı elektron sayılı yaygın kapalı kabuklu iyonlarda çekirdek yükü karşılaştırması yarıçap yorumuna yardım eder, ancak bu dersten her atom için genel yarıçap sıralaması çıkarılmaz.",
+  "to": "Farklı elementlerin izoton, izobar ya da izoelektronik olması bütün fiziksel ve kimyasal özelliklerini eşitlemez. Aynı elektron sayılı yaygın kapalı kabuklu iyonlarda çekirdek yükü karşılaştırması yarıçap yorumuna yardım eder, ancak buradan her atom için genel yarıçap sıralaması çıkarılmaz."
+ },
+ {
+  "from": "Aynı elementin iki örneğini karıştırırken örneklerin ortalamalarını ancak atom sayıları eşitse basitçe ortalayabilirsin. Birincide N, ikincide 3 N atom varsa birleşik ortalama (m̄₁+3 m̄₂)/4 olur. İstersen her izotopun atom sayısını ayrı toplayarak da aynı sonuca ulaşırsın.",
+  "to": "Aynı elementin iki örneğini karıştırırken örneklerin ortalamalarını ancak atom sayıları eşitse basitçe ortalayabilirsin. Birincide N, ikincide 3N atom varsa birleşik ortalama (m̄₁+3m̄₂)/4 olur. İstersen her izotopun atom sayısını ayrı toplayarak da aynı sonuca ulaşırsın."
+ },
+ {
+  "from": "Bir koşulu değiştirerek düşün: yalnız elektron eklemek çekirdek ilişkisini korur, yalnız nötron farkı izotopluğu değiştirir, yalnız bolluk değişimi tek çekirdeği değiştirmez. Bu ayrım yeni bağlamlara aktarılacak ana yöntemdir; modelle kıyaslama tamamlanmış ustalık veya otomatik başarı puanı anlamına gelmez.",
+  "to": "Bir koşulu değiştirerek düşün: yalnız elektron eklemek çekirdek ilişkisini korur, yalnız nötron farkı izotopluğu değiştirir, yalnız bolluk değişimi tek çekirdeği değiştirmez. Bu ayrım yeni bağlamlara aktarılacak ana yöntemdir."
  }
 ]

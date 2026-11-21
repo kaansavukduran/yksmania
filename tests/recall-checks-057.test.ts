@@ -29,7 +29,9 @@ describe("mid-lesson recall checks", () => {
         expect(check.prompt.trim().endsWith("?"), where).toBe(true);
         expect(check.prompt.length, where).toBeLessThanOrEqual(140);
         expect(check.answer.length, where).toBeLessThanOrEqual(220);
-        expect(`${check.prompt} ${check.answer}`, where).not.toMatch(/\.\.\.|—|MEBİ|OGM|kaynakta/);
+        // "kaynaktan" (a real source of matter or energy) is content; a bare
+        // "kaynakta" refers to the production source and must not leak.
+        expect(`${check.prompt} ${check.answer}`, where).not.toMatch(/\.\.\.|—|MEBİ|OGM|(?<![a-zçğıöşü])kaynakta(?![a-zçğıöşü])/i);
         expect(seen.has(check.prompt), where).toBe(false);
         seen.add(check.prompt);
         // Not a second copy of the end-of-lesson recall.
