@@ -169,6 +169,12 @@ import { physicsFigures060Rotation } from "./physicsFigures060Rotation";
 import { physicsFigures060Fields } from "./physicsFigures060Fields";
 import { physicsFigures060Motion } from "./physicsFigures060Motion";
 import { mathFigures060 } from "./mathFigures060";
+import { biologyFigures060Skeleton } from "./biologyFigures060Skeleton";
+import { biologyFigures060Plant2 } from "./biologyFigures060Plant2";
+import { biologyFigures060Plant } from "./biologyFigures060Plant";
+import { biologyFigures060Genetics } from "./biologyFigures060Genetics";
+import { biologyFigures060Reproduction } from "./biologyFigures060Reproduction";
+import { biologyFigures060Digestion } from "./biologyFigures060Digestion";
 
 /*
  * Figure packs are merged per guide. A plain object spread replaced a whole
@@ -345,6 +351,12 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   philosophyFigures060Logic,
   philosophyFigures060History,
   philosophyFigures060Being,
+  biologyFigures060Skeleton,
+  biologyFigures060Plant2,
+  biologyFigures060Plant,
+  biologyFigures060Genetics,
+  biologyFigures060Reproduction,
+  biologyFigures060Digestion,
 ];
 export const sectionFigures: Record<string, Record<string, FigureDef>> = {};
 for (const pack of figurePacks)
