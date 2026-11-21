@@ -42,7 +42,16 @@ function PatternItem({ row }: { row: OsymRow }) {
  * a booklet of the heading's exam has been processed, so an empty archive is
  * never read as "this topic is not asked".
  */
-export function OsymTopicPanel({ topicId, subjectId }: { topicId: string; subjectId: string }) {
+export function OsymTopicPanel({
+  topicId,
+  subjectId,
+  embedded = false,
+}: {
+  topicId: string;
+  subjectId: string;
+  /** Inside another card: no frame of its own. */
+  embedded?: boolean;
+}) {
   const [all, setAll] = useState(false);
   const exam = examOfSubject(subjectId);
   const cells = topicYearCounts(osymRows, topicId, exam);
@@ -51,7 +60,7 @@ export function OsymTopicPanel({ topicId, subjectId }: { topicId: string; subjec
   const years = cells.map((c) => c.year);
   const shown = all ? mine : mine.slice(0, FIRST);
   return (
-    <section className="panel osym-panel" aria-labelledby={`osym-${topicId}`}>
+    <section className={embedded ? "osym-panel osym-embedded" : "panel osym-panel"} aria-labelledby={`osym-${topicId}`}>
       <h2 id={`osym-${topicId}`}>ÖSYM bu konuyu nasıl sordu?</h2>
       <p className="muted small">
         İşlenen {cells.length} {exam} kitapçığında ({span(years)}) bu başlıktan{" "}

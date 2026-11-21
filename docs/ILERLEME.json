@@ -172,8 +172,8 @@
    "stepped": 253,
    "sheetsDone": 2,
    "sheets": 17,
-   "osymQuestions": 182,
-   "osymBooklets": 6,
+   "osymQuestions": 212,
+   "osymBooklets": 7,
    "open": 5
   },
   {
@@ -188,8 +188,8 @@
    "stepped": 40,
    "sheetsDone": 1,
    "sheets": 4,
-   "osymQuestions": 58,
-   "osymBooklets": 6,
+   "osymQuestions": 68,
+   "osymBooklets": 7,
    "open": 0
   },
   {
@@ -204,8 +204,8 @@
    "stepped": 541,
    "sheetsDone": 7,
    "sheets": 46,
-   "osymQuestions": 84,
-   "osymBooklets": 6,
+   "osymQuestions": 98,
+   "osymBooklets": 7,
    "open": 36
   },
   {
@@ -220,8 +220,8 @@
    "stepped": 680,
    "sheetsDone": 11,
    "sheets": 55,
-   "osymQuestions": 78,
-   "osymBooklets": 6,
+   "osymQuestions": 91,
+   "osymBooklets": 7,
    "open": 38
   },
   {
@@ -236,8 +236,8 @@
    "stepped": 907,
    "sheetsDone": 11,
    "sheets": 75,
-   "osymQuestions": 78,
-   "osymBooklets": 6,
+   "osymQuestions": 91,
+   "osymBooklets": 7,
    "open": 60
   }
  ],
@@ -264,9 +264,9 @@
   "open": 340,
   "ogmPdfDone": 119,
   "ogmPdfTotal": 8981,
-  "osymPdfDone": 12,
+  "osymPdfDone": 13,
   "osymPdfTotal": 1001,
-  "osymQuestions": 1230,
+  "osymQuestions": 1310,
   "osymCitedQuestions": 76
  }
 }

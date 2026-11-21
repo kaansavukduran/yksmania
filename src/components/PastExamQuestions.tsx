@@ -3,6 +3,7 @@ import { ExternalLink } from "lucide-react";
 import { pastExamReferencesForTopic, officialBooklets } from "../domain/pastExams";
 import { examTeachingCases } from "../learning/pastExamCases";
 import { ChoiceSelect } from "./ChoiceSelect";
+import { OsymTopicPanel } from "./OsymPatterns";
 function TeachingCase({ id }: { id: string }) {
   const item = examTeachingCases[id];
   const [count, setCount] = useState(0);
@@ -41,6 +42,7 @@ function TeachingCase({ id }: { id: string }) {
 }
 export function PastExamQuestions({
   topicId,
+  subjectId,
 }: {
   topicId?: string;
   subjectId: string;
@@ -60,6 +62,7 @@ export function PastExamQuestions({
       className="past-exams"
       aria-label="Bu konunun geçmiş ÖSYM soruları"
     >
+      {topicId && <OsymTopicPanel topicId={topicId} subjectId={subjectId} embedded />}
       <h2>Geçmiş sınavlardan öğren</h2>
       <p className="muted small">
         {related.length} doğrulanmış konu bağlantısı. Aşağıdaki özgün öğretim
