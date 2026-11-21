@@ -1,0 +1,934 @@
+{
+ "veri-analizi": [
+  {
+   "after": 1,
+   "prompt": "Kesikli bir değişkeni sürekli bir nicelikten ayıran özellik nedir?",
+   "answer": "Kesikli değişken kardeş sayısı gibi sayılabilir belirli değerler alır; süre gibi sürekli nicelik bir aralıktaki gerçek değerlerle modellenir."
+  },
+  {
+   "after": 3,
+   "prompt": "2, 2, 5, 5 verisinde varsayılan mod tanımı ile en yüksek sıklık tanımı hangi sonuçları verir?",
+   "answer": "Değerlerin hepsi eş sıklıkta olduğu için varsayılan tanımda mod yoktur; en yüksek sıklık tanımı ise 2 ve 5'i listeler."
+  },
+  {
+   "after": 5,
+   "prompt": "1, 3, 3, 5 grubunda son gözlem 13 yapılınca ortanca neden değişmez?",
+   "answer": "Sıralı listede iki orta değer hâlâ 3 olduğu için ortanca 3 kalır; ortalama ise toplam 8 arttığından 5'e çıkar."
+  },
+  {
+   "after": 7,
+   "prompt": "Örneklem sapması 2 olan 2, 4, 6 verilerine y=−2x+10 uygulanırsa yeni sapma kaç olur?",
+   "answer": "Yeni sapma |a|·sapma kuralıyla 2·2=4 olur; eklenen 10 yayılımı değiştirmez."
+  },
+  {
+   "after": 9,
+   "prompt": "Gruplanmış veride sınıf orta noktalarıyla bulunan ortalama neden kesin değil de tahmindir?",
+   "answer": "Gözlemlerin sınıf içinde nerede durduğu bilinmez; aynı frekansları veren farklı ham listeler farklı ortalamalar üretebilir."
+  }
+ ],
+ "grafik-problemleri": [
+  {
+   "after": 1,
+   "prompt": "Sütun ekseni 50'den başlarsa 60 ve 65 değerlerinin görünen yükseklik oranı kaç olur?",
+   "answer": "Sütunlar 10 ve 15 birim görünür, oran 1,5 olur; oysa gerçek oran 65/60, yani yaklaşık 1,083'tür."
+  },
+  {
+   "after": 2,
+   "prompt": "20/100 payındaki bir kategoriye 10 kişi eklenince payı neden %30 olmaz?",
+   "answer": "Diğerleri sabitken bütünün toplamı da 110'a çıkar; yeni pay 30/110 olur."
+  },
+  {
+   "after": 4,
+   "prompt": "40'tan 50'ye çıkış %25 iken 50'den 40'a iniş neden %20 azalıştır?",
+   "answer": "Yüzde değişimin paydası ilk değerdir; aynı 10 birimlik fark 40'a göre %25, 50'ye göre %20 eder."
+  },
+  {
+   "after": 6,
+   "prompt": "Değerler 2, 5, 9 ve frekansları 3, 2, 1 ise ortanca kaç olur?",
+   "answer": "Sıralı gözlemler 2, 2, 2, 5, 5, 9 olur; üçüncü ve dördüncü değerin ortalaması (2+5)/2=3,5'tir."
+  }
+ ],
+ "kumeler": [
+  {
+   "after": 1,
+   "prompt": "{∅,{}} kümesi kaç elemanlıdır?",
+   "answer": "Tek elemanlıdır; ∅ ile {} aynı boş kümenin iki gösterimidir."
+  },
+  {
+   "after": 2,
+   "prompt": "5 elemanlı bir kümede belirli bir elemanı mutlaka içeren kaç öz alt küme vardır?",
+   "answer": "O elemanın kararı sabit olduğundan 2⁴=16 seçim kalır; kümenin kendisi çıkarılınca 15 olur."
+  },
+  {
+   "after": 4,
+   "prompt": "0<x<4 koşulu tam sayılarda ve gerçek sayılarda okunduğunda kümeler nasıl farklılaşır?",
+   "answer": "Tam sayılarda küme {1,2,3} olur ve sonludur; gerçek sayılarda aynı eşitsizlik sonsuz bir küme verir."
+  },
+  {
+   "after": 6,
+   "prompt": "A∩B=∅ bilgisi B'nin A′ olduğunu söylemeye neden yetmez?",
+   "answer": "Evrende iki kümenin de dışında kalan elemanlar olabilir; B=A′ için ayrıca A∪B=E gerekir."
+  }
+ ],
+ "kartezyen-carpim": [
+  {
+   "after": 1,
+   "prompt": "(2x+1,3)=(7,y−2) eşitliğinden x ve y kaç bulunur?",
+   "answer": "Aynı konumdaki bileşenler eşitlenir: 2x+1=7'den x=3, 3=y−2'den y=5 olur."
+  },
+  {
+   "after": 3,
+   "prompt": "A×B boş küme çıkarsa kaynak kümeler hakkında neden kesin hüküm veremezsin?",
+   "answer": "A boş, B boş ya da ikisi birden boş olabilir; boş çarpım hangi kaynağın boş olduğunu söylemez."
+  },
+  {
+   "after": 5,
+   "prompt": "B={3,4}, C={4,5} ve A iki elemanlı ise A×(B∪C) kaç elemanlıdır?",
+   "answer": "B∪C'de ortak 4 bir kez sayılır ve 3 eleman olur; çarpımda 2·3=6 çift vardır."
+  }
+ ],
+ "mantik-onerme": [
+  {
+   "after": 1,
+   "prompt": "“En az 5” ifadesinin değili nasıl kurulur?",
+   "answer": "“5'ten az” olur; “en çok 5” yanlıştır, çünkü eşitlik sınırı da olumsuzlanmalıdır."
+  },
+  {
+   "after": 3,
+   "prompt": "p ve q ikisi de doğruyken “veya” ile dışlayıcı “ya da” hangi değerleri verir?",
+   "answer": "p∨q en az biri doğru olduğu için 1, p⊻q ise yalnız biri doğru olmadığı için 0 verir."
+  },
+  {
+   "after": 5,
+   "prompt": "p⇒q ilişkisinde hangisi yeterli, hangisi gerekli koşuldur?",
+   "answer": "p, q için yeterli koşuldur; q ise p için gerekli koşuldur."
+  },
+  {
+   "after": 7,
+   "prompt": "E={−1,0,1} alanında x²>0 açık önermesinin doğruluk kümesi nedir?",
+   "answer": "Doğruluk kümesi {−1,1}'dir; x=0 için 0²>0 sağlanmaz."
+  }
+ ],
+ "faiz-problemleri": [
+  {
+   "after": 1,
+   "prompt": "Basit faizde faiz-zaman ve son tutar-zaman doğruları hangi değerlerden başlar?",
+   "answer": "Faiz doğrusu sıfırdan, son tutar doğrusu ise anapara P'den başlar."
+  },
+  {
+   "after": 3,
+   "prompt": "P, F ve t biliniyorsa yıllık oranı hangi eşitlik verir?",
+   "answer": "r=F/(Pt) ondalık yıllık oranı verir; yüzde için sonucu 100 ile çarparsın."
+  },
+  {
+   "after": 5,
+   "prompt": "Toplam P TL ikiye bölünüp x TL bir kola yatırılırsa diğer kola ne yazılır?",
+   "answer": "Diğer kola P−x TL yazılır; iki kola da P yazmak parayı iki kez sayar ve x için 0≤x≤P denetlenir."
+  },
+  {
+   "after": 6,
+   "prompt": "5000 TL iki yıl %10 ile basit faizde ve her yıl yeniden yatırılınca kaç TL olur?",
+   "answer": "Basit faizle 6000 TL, yeniden yatırmayla 5000·1,10·1,10=6050 TL olur."
+  }
+ ],
+ "karisim-problemleri": [
+  {
+   "after": 1,
+   "prompt": "80 gram %10'luk ile 240 gram %30'luk karışım birleşirse yeni yüzde kaç olur?",
+   "answer": "Saf madde 8+72=80 gram, toplam 320 gramdır; yeni yüzde 25 olur."
+  },
+  {
+   "after": 3,
+   "prompt": "120 gram %20 tuzlu sudan yalnız su uçup oran %30 olursa kaç gram su uçar?",
+   "answer": "24 gram tuz korunur, son toplam 24/0,30=80 gram olur; uçan su 40 gramdır."
+  },
+  {
+   "after": 5,
+   "prompt": "100 gram %40 tuzlu suyun dörtte biri alınıp yerine 25 gram saf su konursa oran kaç olur?",
+   "answer": "Alınan kısımla 10 gram tuz gider, 30 gram tuz 100 gramda kalır; oran %30 olur."
+  }
+ ],
+ "isci-problemleri": [
+  {
+   "after": 1,
+   "prompt": "A bir işi 12, B 18 saatte bitiriyorsa birlikte kaç saatte bitirirler?",
+   "answer": "Hızlar toplanır: 1/12+1/18=5/36 iş/saat; süre 36/5, yani 7,2 saattir."
+  },
+  {
+   "after": 3,
+   "prompt": "İlk 4 saat A ve B, sonra yalnız B çalışıyorsa B'nin çalıştığı süre nasıl yazılır?",
+   "answer": "B toplam 4+t saat çalışır; A yalnız ilk 4 saattedir, son t ortak süre değildir."
+  },
+  {
+   "after": 5,
+   "prompt": "Eş hızlı n kişi bir işi T günde bitiriyorsa m kişi kaç günde bitirir?",
+   "answer": "Tek kişinin hızı 1/(nT) olduğundan m kişi aynı işi nT/m günde bitirir."
+  },
+  {
+   "after": 6,
+   "prompt": "Çalışma hızı %20 artarsa aynı işin süresi eski sürenin kaç katı olur?",
+   "answer": "Yeni hız 1,20r olur; süre eski sürenin 1/1,20 katına iner."
+  }
+ ],
+ "havuz-problemleri": [
+  {
+   "after": 2,
+   "prompt": "%25 dolu bir tankta net hız 1/8 tank/saat ise tank kaç saatte dolar?",
+   "answer": "Gereken su 3/4 tanktır; (3/4)÷(1/8)=6 saatte dolar."
+  },
+  {
+   "after": 4,
+   "prompt": "A ilk 2 saat yalnız açık, sonra B de açılıyorsa toplam T sürede B'nin katkısı nasıl yazılır?",
+   "answer": "B'nin katkısı (T−2)·rB olur; bunun için T≥2 koşulu gerekir."
+  },
+  {
+   "after": 6,
+   "prompt": "Tank deliksizken 6, sabit kaçakla 9 saatte doluyorsa kaçak dolu tankı kaç saatte boşaltır?",
+   "answer": "Kaçak hızı 1/6−1/9=1/18 tank/saattir; dolu tankı 18 saatte boşaltır."
+  }
+ ],
+ "hiz-problemleri": [
+  {
+   "after": 1,
+   "prompt": "Gidip başlangıç noktasına dönen bir aracın yer değiştirmesi ile aldığı yol nasıl farklıdır?",
+   "answer": "Yer değiştirmesi sıfırdır; aldığı yol ise gidilen parçaların uzunlukları toplamı olduğundan pozitiftir."
+  },
+  {
+   "after": 3,
+   "prompt": "A 08.00'de 60 km/sa, B 09.00'da 90 km/sa ile aynı yerden çıkarsa B, A'ya saat kaçta yetişir?",
+   "answer": "09.00'da A'nın avantajı 60 km'dir; B bunu 30 km/sa farkla 2 saatte kapatır ve 11.00'de yetişir."
+  },
+  {
+   "after": 6,
+   "prompt": "Durgun sudaki sürati u, akıntı a olan tekne hangi durumda akıntıya karşı ilerleyemez?",
+   "answer": "u≤a ise kıyıya göre yukarı sürat u−a pozitif olmaz; tekne bu modelde akıntıya karşı ilerleyemez."
+  }
+ ],
+ "sayi-problemleri": [
+  {
+   "after": 1,
+   "prompt": "“İki katının beş fazlası” sözü hangi bilgi eklenince denkleme dönüşür?",
+   "answer": "2x+5 tek başına bir ifadedir; bir değere eşit olduğu söylenince, örneğin 2x+5=29 yazılınca denklem olur."
+  },
+  {
+   "after": 2,
+   "prompt": "3, 9 ve 15 sayıları neden ardışık tek sayılar sayılmaz?",
+   "answer": "Üçü de tek olsa da aralarındaki fark 6'dır; ardışık tek sayılarda ortak fark 2 olmalıdır."
+  },
+  {
+   "after": 5,
+   "prompt": "18 küçük+8 büyük kutu ile 12 küçük+10 büyük kutu aynı alanı dolduruyorsa bir büyük kutu kaç küçük eder?",
+   "answer": "18a+8b=12a+10b'den 6a=2b ve b=3a çıkar; bir büyük kutu üç küçük kutunun yerini alır."
+  },
+  {
+   "after": 6,
+   "prompt": "95 TL bütçeyle tanesi 12 TL olan üründen en çok kaç tane alınır?",
+   "answer": "En çok 7 tane alınır; 7 tanesi 84 TL, 8 tanesi 96 TL tutar ve bütçeyi aşar."
+  }
+ ],
+ "kesir-problemleri": [
+  {
+   "after": 1,
+   "prompt": "Bir paranın 2/7'si harcanıp geriye 250 TL kalmışsa başlangıç kaç TL'dir?",
+   "answer": "Kalan pay 5/7'dir; (5/7)N=250'den N=350 TL bulunur."
+  },
+  {
+   "after": 4,
+   "prompt": "Aynı bütünün 3/4'ü ile 2/5'i arasındaki fark bütünün kaçta kaçıdır?",
+   "answer": "Paydalar eşitlenince 15/20−8/20=7/20 olur."
+  },
+  {
+   "after": 6,
+   "prompt": "450 önce 1/3 artıp sonra yeni değerin 1/4'ü kadar azalırsa neden yine 450 olur?",
+   "answer": "Çarpanlar (4/3)·(3/4)=1 olduğu için 600'e çıkan değer yeniden 450'ye iner; oranların eşitliği bunun nedeni değildir."
+  }
+ ],
+ "yas-problemleri": [
+  {
+   "after": 1,
+   "prompt": "“Kardeşi doğduğunda 7 yaşındaydı” bilgisi sana neyi verir?",
+   "answer": "İki kardeşin yaş farkının 7 yıl olduğunu verir; bu fark sonraki bütün ortak tarihlerde sabit kalır."
+  },
+  {
+   "after": 2,
+   "prompt": "20 ve 30 yaşındaki iki kişiye beş yıl sonra yeni doğan biri katılırsa grubun ortalaması kaç olur?",
+   "answer": "Yaşlar 25, 35 ve 0 olur; toplam 60, kişi sayısı 3 olduğundan ortalama 20'dir."
+  },
+  {
+   "after": 4,
+   "prompt": "Bugün yaşlar 2:5 oranında, altı yıl sonra küçük büyüğün yarısı olacaksa bugünkü yaşlar kaçtır?",
+   "answer": "2(2k+6)=5k+6'dan k=6 bulunur; bugünkü yaşlar 12 ve 30'dur."
+  },
+  {
+   "after": 6,
+   "prompt": "Toplam yaşı 31 olan üç kişinin ortalamasının en az 15 olması için en az kaç tam yıl geçmelidir?",
+   "answer": "(31+3t)/3≥15'ten t≥14/3 çıkar; ilk uygun tam yıl 5'tir."
+  }
+ ],
+ "yuzde-problemleri": [
+  {
+   "after": 1,
+   "prompt": "%20'si 60 olan bütün kaçtır?",
+   "answer": "0,20B=60 denkleminden B=300 bulunur."
+  },
+  {
+   "after": 2,
+   "prompt": "100'e önce %20 ekleyip 10 çıkarmak ile önce 10 çıkarıp %20 eklemek neden farklı sonuç verir?",
+   "answer": "Sabit 10'luk indirim orantılı bir değişim değildir; ilk sıra 110, ikinci sıra 108 verir."
+  },
+  {
+   "after": 4,
+   "prompt": "Bir oran %0'dan %10'a çıkınca göreli artış yüzdesi neden hesaplanamaz?",
+   "answer": "Göreli artışta eski oran paydadır ve sıfıra bölünemez; yalnız 10 yüzde puan artış söylenebilir."
+  },
+  {
+   "after": 6,
+   "prompt": "500 g'lık 200 TL'lik paket 400 g ve 192 TL olursa gram fiyatı yüzde kaç değişir?",
+   "answer": "Gram fiyatı 0,40'tan 0,48 TL'ye çıkar; etiket düşse de birim fiyat %20 artar."
+  }
+ ],
+ "kar-zarar-problemleri": [
+  {
+   "after": 1,
+   "prompt": "“Zarar yok” ile “kâr var” koşulları arasındaki fark nedir?",
+   "answer": "Zarar yok S≥M, kâr var S>M demektir; sıfır kâr yalnız ilk koşulu sağlar."
+  },
+  {
+   "after": 2,
+   "prompt": "%20 zararla 320 TL'ye satılan bir ürünün maliyeti kaç TL'dir?",
+   "answer": "0,80M=320'den M=400 TL bulunur; 320'ye %20 eklemek yanlış tabanı kullanır."
+  },
+  {
+   "after": 4,
+   "prompt": "Biri %20 kârla, diğeri %20 zararla aynı S fiyatına satılan iki ürünün maliyetleri nasıl yazılır?",
+   "answer": "Maliyetler S/1,20 ve S/0,80 olur; eşit olmadıkları için kâr ve zarar birbirini götürmez."
+  }
+ ],
+ "mutlak-deger": [
+  {
+   "after": 1,
+   "prompt": "|2x−6| ifadesi hangi x değerinde kırılır ve x<3 için nasıl yazılır?",
+   "answer": "İçi sıfır yapan x=3'te kırılır; x<3 için 6−2x yazılır."
+  },
+  {
+   "after": 3,
+   "prompt": "|A|≤0 eşitsizliği hangi durumda sağlanır?",
+   "answer": "Yalnız A=0 iken sağlanır; mutlak değer hiçbir zaman negatif olmaz."
+  },
+  {
+   "after": 5,
+   "prompt": "u=3 ve v=−5 için |u+v| ile |u|+|v| kaç olur?",
+   "answer": "|u+v|=2, |u|+|v|=8 olur; zıt yönlü katkılar toplamı azaltır."
+  },
+  {
+   "after": 6,
+   "prompt": "||x−a|−b|=r denkleminde dış mutlak değer açılınca hangi iki iç denklem çıkar?",
+   "answer": "|x−a|=b+r ve |x−a|=b−r çıkar; her sağ tarafın işaretini ayrıca incelemen gerekir."
+  }
+ ],
+ "uslu-sayilar": [
+  {
+   "after": 1,
+   "prompt": "(−2)⁻³ ile 2⁻³ ifadelerinin değerleri kaçtır?",
+   "answer": "(−2)⁻³=1/(−2)³=−1/8, 2⁻³ ise 1/8'dir."
+  },
+  {
+   "after": 3,
+   "prompt": "2³·3⁴ çarpımı neden 5⁷ diye yazılamaz?",
+   "answer": "Üsleri toplama kuralı yalnız aynı tabanlı çarpımda geçerlidir; tabanlar toplanmaz."
+  },
+  {
+   "after": 4,
+   "prompt": "(2³)² ile 2^(3²) ifadeleri hangi kuvvetlere eşittir?",
+   "answer": "(2³)²=2⁶, 2^(3²) ise 2⁹'dur; parantezin kapsamı işlemi değiştirir."
+  },
+  {
+   "after": 7,
+   "prompt": "4^(x+1)=8^(x−1) denkleminde x kaçtır?",
+   "answer": "2 tabanına çevirince 2x+2=3x−3 olur; x=5 bulunur."
+  }
+ ],
+ "bilimsel-gosterim-katsayi": [
+  {
+   "after": 1,
+   "prompt": "0,000072 sayısı bilimsel gösterimde nasıl yazılır?",
+   "answer": "Virgül beş basamak sağa gider; sayı 7,2×10⁻⁵ olur."
+  },
+  {
+   "after": 3,
+   "prompt": "5×10³−4,8×10³ işleminin standart bilimsel gösterimdeki sonucu nedir?",
+   "answer": "Fark 0,2×10³ çıkar; katsayı 1'in altında kaldığı için 2×10² yazılır."
+  },
+  {
+   "after": 5,
+   "prompt": "0,01×10⁶ ile 9×10⁵ karşılaştırmasında yalnız üslere bakmak neden yanıltır?",
+   "answer": "0,01×10⁶ standart değildir ve 10⁴'e eşittir; üssü büyük görünse de 9×10⁵'ten küçüktür."
+  },
+  {
+   "after": 6,
+   "prompt": "3,2×10⁶ mm kaç metredir?",
+   "answer": "1 m=10³ mm olduğundan 10³'e bölünür; sonuç 3,2×10³ m'dir."
+  }
+ ],
+ "koklu-sayilar": [
+  {
+   "after": 1,
+   "prompt": "√(x−1)/√(5−x) ifadesinin tanım kümesi nedir?",
+   "answer": "x−1≥0 ve 5−x>0 birlikte x∈[1,5) verir; paydadaki kök sıfır olamaz."
+  },
+  {
+   "after": 3,
+   "prompt": "−3√5 ifadesi kök içine alınarak nasıl yazılır?",
+   "answer": "−√45 yazılır; yalnız 3'ün karesi içeri girer, eksi işaret kökün dışında kalır."
+  },
+  {
+   "after": 5,
+   "prompt": "5√12−2√27 işleminin sonucu kaçtır?",
+   "answer": "Kökler sadeleşince 10√3−6√3 olur; sonuç 4√3'tür."
+  },
+  {
+   "after": 7,
+   "prompt": "3/(√7−2) ifadesinin paydası rasyonelleştirilince ne elde edilir?",
+   "answer": "Eşlenik √7+2 ile çarpınca payda 7−4=3 olur; sonuç √7+2'dir."
+  }
+ ],
+ "oran-oranti": [
+  {
+   "after": 1,
+   "prompt": "1 m ile 25 cm'nin oranı neden 1/25 değil de 4'tür?",
+   "answer": "Aynı tür çokluklarda önce birim eşitlenir; 100 cm/25 cm=4 olur."
+  },
+  {
+   "after": 2,
+   "prompt": "3:5 oranında paylaşımda büyük parça 45 ise küçük parça kaçtır?",
+   "answer": "5t=45'ten t=9 bulunur; küçük parça 3·9=27'dir."
+  },
+  {
+   "after": 4,
+   "prompt": "6 eş verimli işçi bir işi 10 günde bitiriyorsa 15 işçi kaç günde bitirir?",
+   "answer": "Toplam iş 60 işçi-gündür; 15 işçi için 60/15=4 gün gerekir."
+  },
+  {
+   "after": 6,
+   "prompt": "A:B=4:7 ve B:C=14:15 ise A:B:C oranı nedir?",
+   "answer": "İlk oran 2 ile genişletilip B eşitlenince A:B:C=8:14:15 olur."
+  }
+ ],
+ "sayi-basamaklari": [
+  {
+   "after": 1,
+   "prompt": "a=3 ve b=8 için [ab] sayısı ile a×b çarpımı kaç olur?",
+   "answer": "[ab]=10a+b=38, a×b ise 24'tür; harfli yazım çarpım değildir."
+  },
+  {
+   "after": 3,
+   "prompt": "[abc]−[cba] farkında ortadaki b rakamı neden kaybolur?",
+   "answer": "b iki sayıda da onlar konumunda kalır ve 10b'ler sadeleşir; fark 99(a−c) olur."
+  },
+  {
+   "after": 5,
+   "prompt": "10–99 bloğunda kaç sayı vardır ve bunları yazmak için kaç rakam gerekir?",
+   "answer": "99−10+1=90 sayı vardır; her biri iki rakamlı olduğundan 180 rakam gerekir."
+  },
+  {
+   "after": 7,
+   "prompt": "Beş basamaklı pozitif sayılar hangi aralıktadır ve kaç tanedir?",
+   "answer": "10000≤N≤99999 aralığındadır; 9×10⁴=90000 tanedir."
+  },
+  {
+   "after": 9,
+   "prompt": "10^i ve 10^j konumlarındaki x ve y rakamlarının yeri değişince sayı ne kadar değişir?",
+   "answer": "Yeni−eski farkı (y−x)(10^i−10^j) olur; rakam toplamı ise korunur."
+  },
+  {
+   "after": 13,
+   "prompt": "Bütün rakamları farklı olan üç basamaklı kaç sayı yazılabilir?",
+   "answer": "İlk konuma 9, ikinciye sıfır dahil kalan 9, üçüncüye 8 seçenek kalır; 9×9×8=648 sayı yazılır."
+  },
+  {
+   "after": 15,
+   "prompt": "Numaralamayı geriye çözerken kalan rakam maliyetini bloktaki basamak adedine bölmek neyi verir?",
+   "answer": "O blokta yazılan sayı adedini verir; son etiket blok başı+adet−1 ile bulunur."
+  }
+ ],
+ "bolme-bolunebilme": [
+  {
+   "after": 1,
+   "prompt": "8'e bölünebilmede neden yalnız son üç basamağa bakmak yeterlidir?",
+   "answer": "1000 sayısı 8'in katıdır; N=1000q+t yazınca 8'e göre kalanı yalnız son üç basamaklı t belirler."
+  },
+  {
+   "after": 3,
+   "prompt": "25'e tam bölünen bir sayının son iki basamağı hangi değerleri alabilir?",
+   "answer": "100'lük kat kısmı atılınca son iki blok 00, 25, 50 ya da 75 olmalıdır."
+  },
+  {
+   "after": 5,
+   "prompt": "Rakam sorusunda 5'e bölünme şartı varsa son rakam için kaç aday kalır?",
+   "answer": "0 ve 5 olmak üzere iki aday kalır; dar bir şart olduğu için çözüme oradan başlarsın."
+  },
+  {
+   "after": 8,
+   "prompt": "−22'nin 5'e Öklid bölmesinde bölüm ve kalan kaçtır?",
+   "answer": "−22/5=−4,4 aşağı yuvarlanınca bölüm −5 olur; kalan −22−5·(−5)=3'tür."
+  },
+  {
+   "after": 10,
+   "prompt": "4'e bölünebilmede yalnız son rakama bakmak neden yetmez?",
+   "answer": "Son blok kuralı için 10^k bölenin katı olmalıdır; 10, 4'e bölünmediği için son iki basamak gerekir."
+  },
+  {
+   "after": 12,
+   "prompt": "N=10q+d için q−2d testi 7'ye göre neyi korur, neyi korumaz?",
+   "answer": "7'ye tam bölünüp bölünmemeyi korur; N ile q−2d'nin 7'ye kalanlarının eşit olduğunu söylemez."
+  },
+  {
+   "after": 14,
+   "prompt": "Kuvvetlerin kalan döngüsü 4 terimliyse üssü 4k olan kuvvet hangi konuma düşer?",
+   "answer": "Dönemin 4., yani son konumuna düşer; sıfırıncı terimle değiştirilmez."
+  },
+  {
+   "after": 16,
+   "prompt": "N≡r(mod a) ve N≡s(mod b) koşullarının hiç çözümü olmadığını ne gösterir?",
+   "answer": "EBOB(a,b), s−r farkını bölmüyorsa iki koşulu birlikte sağlayan sayı yoktur."
+  }
+ ],
+ "ebob-ekok": [
+  {
+   "after": 1,
+   "prompt": "40=2³×5 ve 56=2³×7 için EBOB ve EKOK kaçtır?",
+   "answer": "EBOB küçük üslerle 2³=8, EKOK büyük üslerle 2³×5×7=280'dir."
+  },
+  {
+   "after": 3,
+   "prompt": "3, 6 ve 12 için sayıların çarpımı neden EBOB×EKOK değerine eşit çıkmaz?",
+   "answer": "Çarpım 216, EBOB×EKOK ise 3×12=36'dır; bu çarpım bağı yalnız iki sayı için geçerlidir."
+  },
+  {
+   "after": 5,
+   "prompt": "Öklid yöntemiyle 65 ile 26'nın EBOB'u kaç bulunur?",
+   "answer": "65=26×2+13 ve 26=13×2+0 olur; son sıfır olmayan kalan 13 EBOB'dur."
+  },
+  {
+   "after": 7,
+   "prompt": "EBOB'u 2^u·3^v olan iki sayının kaç ortak pozitif böleni vardır?",
+   "answer": "Ortak bölenler EBOB'un bölenleridir; üs seçimleri 0 dahil olduğundan (u+1)(v+1) tanedir."
+  },
+  {
+   "after": 9,
+   "prompt": "x·y=36 koşulunda en yakın çift olan 6 ile 6 neden kullanılamaz?",
+   "answer": "EBOB(6,6)=6 olduğundan x ile y aralarında asal olmaz; uygun çiftler 1, 36 ve 4, 9'dur."
+  },
+  {
+   "after": 11,
+   "prompt": "a ve b kenarlı dikdörtgen en az sayıda eş kareyle kaplanacaksa kare kenarı ve kare adedi nedir?",
+   "answer": "Kare kenarı s=EBOB(a,b), kare adedi (a/s)(b/s)'dir."
+  },
+  {
+   "after": 14,
+   "prompt": "Farklı anlarda başlayan iki tekrar dizisinin hiç ortak anı olmadığını ne gösterir?",
+   "answer": "EBOB(a,b), başlangıç farkı β−α'yı bölmüyorsa iki dizi hiç buluşmaz."
+  },
+  {
+   "after": 16,
+   "prompt": "A ve B aynı d'ye bölününce r ve s kalanlarını veriyorsa d'nin adayları nelerdir?",
+   "answer": "EBOB(A−r,B−s)'nin pozitif bölenleridir; ayrıca d>r ve d>s olmalıdır."
+  }
+ ],
+ "tyt-mat-faktoriyel-kaynak-033": [
+  {
+   "after": 1,
+   "prompt": "n≥2 için n! neden her zaman çift sayıdır?",
+   "answer": "Çarpımın içinde 2 çarpanı bulunur; yalnız 0! ve 1! değeri 1 olduğundan tektir."
+  },
+  {
+   "after": 3,
+   "prompt": "3×4×5×6 ardışık çarpımı iki faktöriyelin bölümü olarak nasıl yazılır?",
+   "answer": "6!/2! yazılır; alt sınırın bir eksiği olan 2! paydaya gelir."
+  },
+  {
+   "after": 6,
+   "prompt": "(x−3)! ve (7−x)! birlikte tanımlıysa x hangi değerleri alabilir?",
+   "answer": "x≥3, x≤7 ve x tam sayı olmalıdır; adaylar 3, 4, 5, 6 ve 7'dir."
+  },
+  {
+   "after": 8,
+   "prompt": "(n+2)!/n!=42 denkleminde n kaçtır?",
+   "answer": "(n+2)(n+1)=42'den n=5 bulunur; −8 adayı n≥0 koşuluna uymaz."
+  },
+  {
+   "after": 11,
+   "prompt": "25! sayısının sonunda kaç sıfır vardır?",
+   "answer": "⌊25/5⌋+⌊25/25⌋=5+1=6 sıfır vardır; 25 ikinci bir 5 kopyası verir."
+  },
+  {
+   "after": 13,
+   "prompt": "9!+10! toplamının sonunda kaç sıfır vardır?",
+   "answer": "Toplam 11·9! olur; v₂=7, v₅=1 olduğundan tek son sıfır vardır."
+  },
+  {
+   "after": 16,
+   "prompt": "4 depo, depoda 5 raf, rafta 3 kutu, kutuda 2 paket varsa toplam paket hangi faktöriyele eşittir?",
+   "answer": "4·5·3·2=2·3·4·5=5!=120 paket olur."
+  },
+  {
+   "after": 17,
+   "prompt": "6!/4! ile (6!+4!)/4! ifadeleri kaça eşittir?",
+   "answer": "6!/4!=6·5=30, (6!+4!)/4!=30+1=31'dir."
+  }
+ ],
+ "tyt-mat-ebob-ekok-kaynak-034": [
+  {
+   "after": 1,
+   "prompt": "0 her sayının katı olduğu hâlde EKOK olarak neden alınmaz?",
+   "answer": "EKOK için en küçük pozitif ortak kat aranır; 0 pozitif olmadığından dışarıda kalır."
+  },
+  {
+   "after": 3,
+   "prompt": "72=2³×3² ve 120=2³×3×5 için EBOB ve EKOK kaçtır?",
+   "answer": "Küçük üslerle EBOB=2³×3=24, büyük üslerle EKOK=2³×3²×5=360 olur."
+  },
+  {
+   "after": 5,
+   "prompt": "6 ile 10'un EKOK'u neden 6×10=60 değildir?",
+   "answer": "EBOB'ları 2'dir, aralarında asal değillerdir; EKOK 60/2=30 olur."
+  },
+  {
+   "after": 7,
+   "prompt": "EBOB 4 ve EKOK 48 olan iki sayının toplamı en az kaçtır?",
+   "answer": "xy=12'de aralarında asal çiftler (1,12) ve (3,4)'tür; sayılar (4,48) ya da (12,16) olur, en küçük toplam 28'dir."
+  },
+  {
+   "after": 9,
+   "prompt": "36 cm×24 cm dikdörtgeni kaplamada 18 cm'lik kare neden kullanılamaz?",
+   "answer": "Kare kenarı iki kenarı da bölmelidir; 18, 36'yı böler ama 24'ü bölmez."
+  },
+  {
+   "after": 12,
+   "prompt": "Başlangıç saati 09.50 ise 36 dakika sonra saat kaç olur?",
+   "answer": "10 dakikayla 10.00'a, kalan 26 dakikayla 10.26'ya gidilir; 09.86 diye yazılmaz."
+  },
+  {
+   "after": 15,
+   "prompt": "8 ve 12 ile bölündüğünde 5 kalanını veren 100'den büyük en küçük sayı kaçtır?",
+   "answer": "N=24k+5'te k=3 için 77 yetmez, k=4 için 101 bulunur."
+  },
+  {
+   "after": 17,
+   "prompt": "18, 24 ve 30 sayılarının EBOB ve EKOK'u kaçtır?",
+   "answer": "Küçük üslerle EBOB=2×3=6, büyük üslerle EKOK=2³×3²×5=360 olur."
+  },
+  {
+   "after": 20,
+   "prompt": "12 ve 18 cm'lik küplerle eş büyük küpler kurulacaksa büyük kenar neden EBOB değil EKOK'tur?",
+   "answer": "Büyük kenar iki küçük kenarın tam katı olmalıdır; en küçüğü EKOK(12,18)=36 cm'dir."
+  },
+  {
+   "after": 22,
+   "prompt": "30 cm×42 cm dikdörtgen en büyük eş karelerle kaplanırsa kaç kare gerekir?",
+   "answer": "Kare kenarı EBOB(30,42)=6 cm olur; 5×7=35 kare gerekir."
+  },
+  {
+   "after": 23,
+   "prompt": "Aralarında asal a ve b için EBOB(a,b)=n²−6n+10 ise n kaçtır?",
+   "answer": "EBOB=1 olmalıdır; n²−6n+9=0, yani (n−3)²=0'dan n=3 bulunur."
+  },
+  {
+   "after": 25,
+   "prompt": "“60 ve 84 farklı, o hâlde EKOK=5040” akıl yürütmesindeki ilk hata nedir?",
+   "answer": "Farklı olmayı aralarında asal olmakla eşitlemektir; EBOB(60,84)=12 olduğundan EKOK 5040/12=420'dir."
+  }
+ ],
+ "tyt-mat-rasyonel-kaynak-035": [
+  {
+   "after": 1,
+   "prompt": "Sonsuz bir ondalık olan 0,333… neden irrasyonel sayılmaz?",
+   "answer": "Tekrarlayan bir ondalıktır ve 1/3'e eşittir; irrasyonel olan sonsuz ve tekrarlamayan gösterimlerdir."
+  },
+  {
+   "after": 5,
+   "prompt": "−3/5 ve 4/4 kesirleri basit kesir mi, bileşik kesir mi sayılır?",
+   "answer": "−3/5'te |pay|<|payda| olduğu için basit, 4/4'te |pay|≥|payda| olduğu için bileşik kesirdir."
+  },
+  {
+   "after": 7,
+   "prompt": "(14/15)·(25/21) çarpımının sade sonucu nedir?",
+   "answer": "14 ile 21'i 7'ye, 25 ile 15'i 5'e bölünce (2/3)·(5/3)=10/9 kalır."
+  },
+  {
+   "after": 9,
+   "prompt": "(1−1/3)/(1+1/2) çok katlı kesrinin değeri kaçtır?",
+   "answer": "Üst 2/3, alt 3/2 olur; (2/3)/(3/2)=4/9 bulunur."
+  },
+  {
+   "after": 10,
+   "prompt": "−3/4 ile −3/7'den hangisi küçüktür?",
+   "answer": "−3/4 daha küçüktür; küçük payda büyük kesir kuralı yalnız paylar pozitifken geçerlidir."
+  },
+  {
+   "after": 12,
+   "prompt": "18/25 ile 29/40'tan hangisi daha doludur?",
+   "answer": "Eksikler 7/25=56/200 ve 11/40=55/200'dür; eksiği az olan 29/40 daha doludur."
+  },
+  {
+   "after": 14,
+   "prompt": "Payda 60 seçilirse −7/10 ile −2/3 arasına hangi rasyonel yazılabilir?",
+   "answer": "−7/10=−42/60 ve −2/3=−40/60 olur; arada −41/60 bulunur."
+  },
+  {
+   "after": 16,
+   "prompt": "Devirli 0,(45) ile sonlu 0,45 hangi kesirlere eşittir?",
+   "answer": "0,(45)=45/99=5/11, sonlu 0,45 ise 9/20'dir; ikisi farklı sayılardır."
+  },
+  {
+   "after": 17,
+   "prompt": "0,1(6) ile 0,1667 arasındaki fark nedir?",
+   "answer": "0,1(6) tam olarak 1/6'dır; 0,1667 onun yuvarlanmış, farklı bir sayısıdır."
+  },
+  {
+   "after": 20,
+   "prompt": "Karışımın 2/5'i A, 3/5'i B iken B'nin 1/3'ü çıkarılıp yerine eşit hacimde A konursa A ne kadar olur?",
+   "answer": "Çıkan B miktarı V/5'tir; A, 2V/5+V/5=3V/5 olur ve toplam V korunur."
+  },
+  {
+   "after": 24,
+   "prompt": "“(1/2)/(3/4)=3/8” çözümündeki hata nedir ve doğru sonuç kaçtır?",
+   "answer": "Bölme yerine çarpma yapılmıştır; bölen ters çevrilince (1/2)·(4/3)=2/3 bulunur."
+  }
+ ],
+ "rasyonel-sayilar": [
+  {
+   "after": 2,
+   "prompt": "(6+3)/3 ifadesinde 6 ile 3’ü sadeleştirip 2+3 yazmak neden yanlıştır?",
+   "answer": "Toplamın tek terimi sadeleştirilmez; doğru sonuç 9/3=3’tür, hatalı yol 5 verir. Bölmeyi dağıtırsan 6/3+3/3=2+1=3 bulursun."
+  },
+  {
+   "after": 3,
+   "prompt": "−2+1/3 ifadesinin değeri kaçtır?",
+   "answer": "−2+1/3=−6/3+1/3=−5/3 olur; bu, −(2+1/3)=−7/3 ile aynı değildir."
+  },
+  {
+   "after": 5,
+   "prompt": "(2/3)÷(3/4) işleminin sonucu kaçtır?",
+   "answer": "Bölen kesrin tersiyle çarparsın: (2/3)×(4/3)=8/9."
+  },
+  {
+   "after": 6,
+   "prompt": "−3/4 ile −3/7 kesirlerinden hangisi büyüktür?",
+   "answer": "−3/7 büyüktür; paylar aynı ama negatif olduğu için küçük payda daha küçük sayı verir: −3/4<−3/7."
+  },
+  {
+   "after": 8,
+   "prompt": "0,454545… devirli sayısı kaydırma yöntemiyle hangi kesre eşit çıkar?",
+   "answer": "x=0,4545… için 100x−x=45, yani 99x=45 ve x=5/11 olur."
+  }
+ ],
+ "carpanlara-ayirma": [
+  {
+   "after": 1,
+   "prompt": "12x³y−18x²y² ifadesinden dışarı hangi ortak çarpan alınır?",
+   "answer": "Katsayıların en büyük ortak böleni 6 ile değişkenlerin en küçük üsleri x²y alınır: 6x²y(2x−3y)."
+  },
+  {
+   "after": 2,
+   "prompt": "2(x−3)−x(3−x) ifadesi çarpanlarına ayrılınca ne bulunur?",
+   "answer": "3−x=−(x−3) yazınca ifade 2(x−3)+x(x−3) olur; ortak parantezle (x−3)(x+2) bulunur."
+  },
+  {
+   "after": 4,
+   "prompt": "x²+9 ifadesi neden (x+3)² olarak yazılamaz?",
+   "answer": "(x+3)² açılınca x²+6x+9 olur; uçların kare olması yetmez, 2·x·3=6x orta terimi eksiktir."
+  },
+  {
+   "after": 6,
+   "prompt": "a+b+c=0 koşulu sağlanıyorsa a³+b³+c³ neye eşittir?",
+   "answer": "3abc’ye eşittir; bu sonuç yalnız a+b+c=0 koşulu varken kullanılabilir."
+  },
+  {
+   "after": 8,
+   "prompt": "2x²+7x+3 ifadesi orta terimi ayırma yöntemiyle nasıl çarpanlarına ayrılır?",
+   "answer": "a·c=6 ve toplamı 7 olan sayılar 6 ile 1’dir: 2x(x+3)+1(x+3)=(2x+1)(x+3)."
+  },
+  {
+   "after": 9,
+   "prompt": "x⁴−10x²+9 ifadesi u=x² yazılarak çarpanlarına ayrılınca ne bulunur?",
+   "answer": "u²−10u+9=(u−1)(u−9) olur; u yerine x² konup iki kare farkı uygulanınca (x−1)(x+1)(x−3)(x+3) bulunur."
+  }
+ ],
+ "tyt-mat-asal-kaynak-032": [
+  {
+   "after": 1,
+   "prompt": "23 asal iken 32 neden asal değildir?",
+   "answer": "32=2⁵ olduğu için 1 ve kendisi dışında da bölenleri vardır; yalnız asal rakamlarla yazılmak bir sayıyı asal yapmaz."
+  },
+  {
+   "after": 3,
+   "prompt": "1’den 50’ye kadar elekte hangi asalın katlarını eledikten sonra durabilirsin?",
+   "answer": "7’nin katlarından sonra durabilirsin; çünkü 7²=49≤50 iken 11²=121>50’dir."
+  },
+  {
+   "after": 5,
+   "prompt": "36=4·9 yazıp bölen sayısını 2·2=4 bulmak neden yanlıştır?",
+   "answer": "Formül asal tabanlarla uygulanır; 36=2²·3² olduğundan pozitif bölen sayısı (2+1)(2+1)=9’dur."
+  },
+  {
+   "after": 7,
+   "prompt": "n pozitif tam sayı ve n²−36 asal ise n kaçtır?",
+   "answer": "n²−36=(n−6)(n+6) çarpımında küçük çarpan 1 olmalıdır; n−6=1 için n=7 bulunur ve sonuç 13 gerçekten asaldır."
+  },
+  {
+   "after": 8,
+   "prompt": "İki asal sayının toplamı 31 ise çarpımları kaçtır?",
+   "answer": "Toplam tek olduğu için asallardan biri 2’dir; öteki 29 olur ve çarpım 58’dir."
+  },
+  {
+   "after": 10,
+   "prompt": "6, 10 ve 15 sayılarının ortak böleni 1 iken neden ikişer ikişer aralarında asal değildir?",
+   "answer": "Üçünün ortak böleni 1 olsa da 6 ile 10’un ortak böleni 2’dir; bütünün ortak böleni ikililer hakkında karar vermez."
+  },
+  {
+   "after": 12,
+   "prompt": "Tam 6 pozitif böleni ve iki farklı asal böleni olan en küçük sayı neden 12’dir?",
+   "answer": "(a+1)(b+1)=6 olduğundan üsler 1 ve 2’dir; 2²·3=12 ile 2·3²=18 adaylarından küçük olan 12’dir."
+  },
+  {
+   "after": 16,
+   "prompt": "n²+n+41 ifadesi neden her n için asal üreten bir formül değildir?",
+   "answer": "n=41 için değer 41·43 olur ve bileşiktir; tek bir karşı örnek bu iddiayı çürütür."
+  },
+  {
+   "after": 18,
+   "prompt": "143’ün bileşik olduğunu göstermek için ne yeterlidir?",
+   "answer": "143=11·13 çarpımını göstermek yeterlidir; asal olduğunu söylemek için ise bütün adayların elenmesi gerekirdi."
+  }
+ ],
+ "temel-kavramlar": [
+  {
+   "after": 1,
+   "prompt": "6 sayısı hangi sayı kümelerine aittir?",
+   "answer": "ℕ⊂ℤ⊂ℚ⊂ℝ olduğu için 6 dört kümeye de aittir; en dar kümeyi bilmek onu içeren kümeleri dışlamaz."
+  },
+  {
+   "after": 2,
+   "prompt": "Bir a sayısının çarpma tersi 1/a hangi koşulda vardır?",
+   "answer": "Yalnız a≠0 iken vardır; toplama tersi olan −a ise her gerçek sayı için vardır."
+  },
+  {
+   "after": 3,
+   "prompt": "−3² ile (−3)² ifadelerinin değerleri nedir?",
+   "answer": "−3²=−(3²)=−9’dur, çünkü üs yalnız 3’e uygulanır; (−3)²=9’dur, çünkü üs −3’ün tamamına uygulanır."
+  },
+  {
+   "after": 5,
+   "prompt": "2a−b ifadesini büyütmek için a ve b nasıl seçilmelidir?",
+   "answer": "a büyük, b küçük seçilmelidir; bütün değişkenleri en büyük seçmek her zaman sonucu büyütmez."
+  }
+ ],
+ "tek-cift-isaret": [
+  {
+   "after": 1,
+   "prompt": "Sıfır tek–çift ve işaret bakımından nasıl bir sayıdır?",
+   "answer": "Sıfır 2×0 biçiminde yazıldığı için çifttir; ne pozitif ne negatiftir."
+  },
+  {
+   "after": 3,
+   "prompt": "4⁰=1 örneği hangi genellemeyi bozar?",
+   "answer": "Üssün tabanın paritesini koruduğu genellemesini bozar; bu yalnız pozitif tam üslerde geçerlidir, 4 çift iken 4⁰=1 tektir."
+  },
+  {
+   "after": 4,
+   "prompt": "Çift bir sayının çift bir sayıya bölümü için neden tek ya da çift diye kesin kural yazılamaz?",
+   "answer": "Bölüm her iki pariteye çıkabilir ya da tam sayı olmayabilir: 14/2=7 tek, 16/2=8 çift, 2/4=1/2 ise tam sayı değildir."
+  }
+ ],
+ "ardisik-sayilar": [
+  {
+   "after": 1,
+   "prompt": "7, 11, 15, …, 47 listesinde kaç terim vardır?",
+   "answer": "Adım 4’tür; (47−7)/4+1=10+1=11 terim vardır."
+  },
+  {
+   "after": 2,
+   "prompt": "İlk 10 pozitif tek sayının toplamı kaçtır?",
+   "answer": "İlk n pozitif tek sayının toplamı n² olduğundan 10²=100’dür."
+  },
+  {
+   "after": 3,
+   "prompt": "4, 6, 8, 10 listesinin aritmetik ortalaması kaçtır?",
+   "answer": "(4+10)/2=7’dir; terim sayısı çift olduğundan ortalama ortadaki iki terimin ortalamasıdır ve listede bulunmaz."
+  }
+ ],
+ "asal-sayilar": [
+  {
+   "after": 1,
+   "prompt": "121’in asallığını denerken neden 11’i de denemelisin?",
+   "answer": "Deneme p²≤n koşulunu sağlayan asallarla yapılır ve eşitlik dahildir; 11²=121 olduğu için 11 de denenir."
+  },
+  {
+   "after": 2,
+   "prompt": "100 sayısının kaç pozitif böleni vardır?",
+   "answer": "100=2²×5² olduğundan bölen sayısı (2+1)(2+1)=9’dur."
+  },
+  {
+   "after": 4,
+   "prompt": "Çarpım asal ise çarpanlardan biri 1’dir kuralı neden gerçek sayı çarpanlarına uygulanamaz?",
+   "answer": "1,5×2=3 asaldır ama çarpanlardan hiçbiri 1 değildir; kural pozitif tam sayı çarpanlar için geçerlidir."
+  }
+ ],
+ "faktoriyel": [
+  {
+   "after": 1,
+   "prompt": "(x−2)! ve (5−x)! ifadeleri birlikte tanımlıysa x hangi değerleri alabilir?",
+   "answer": "İki faktöriyelin içi de negatif olmayan tam sayı olmalıdır: x≥2 ve x≤5, yani x tam sayı ve 2, 3, 4 ya da 5 olur."
+  },
+  {
+   "after": 2,
+   "prompt": "9!/6! oranı neye eşittir?",
+   "answer": "9!=9×8×7×6! olduğundan oran 9×8×7=504’tür."
+  },
+  {
+   "after": 4,
+   "prompt": "15! içinde 3 asalının kaç kopyası vardır?",
+   "answer": "⌊15/3⌋+⌊15/9⌋=5+1=6 kopya vardır; 9 iki tane 3 içerdiği için ek olarak sayılır."
+  }
+ ],
+ "birinci-dereceden-denklemler": [
+  {
+   "after": 1,
+   "prompt": "a=0 olduğunda ax+b=0 neden birinci dereceden denklem olmaz?",
+   "answer": "x’li terim kaybolur ve geriye yalnız sabit bir eşitlik kalır; birinci derece için a≠0 gerekir."
+  },
+  {
+   "after": 2,
+   "prompt": "5x−7=2x+8 denkleminin kökü kaçtır?",
+   "answer": "Aynı 2x terimini iki taraftan çıkarırsın: 3x−7=8, 3x=15 ve x=5 bulunur."
+  },
+  {
+   "after": 4,
+   "prompt": "(x+1)/2+(x−2)/3=4 denkleminde iki tarafı 6 ile çarparken hangi hatayı yapmamalısın?",
+   "answer": "Sağdaki 4’ü de 6 ile çarpmalısın; yalnız soldaki paydaları silmek geçersizdir. Doğru satır 3(x+1)+2(x−2)=24 olur."
+  }
+ ],
+ "basit-esitsizlikler": [
+  {
+   "after": 1,
+   "prompt": "−5x≥20 eşitsizliğinin çözümü nedir?",
+   "answer": "İki taraf negatif −5’e bölündüğü için yön döner: x≤−4."
+  },
+  {
+   "after": 3,
+   "prompt": "−3≤2x+1<7 eşitsizliğinin çözüm aralığı nedir?",
+   "answer": "Üç taraftan 1 çıkarılır: −4≤2x<6. Pozitif 2’ye bölünce −2≤x<3, yani [−2,3) bulunur."
+  },
+  {
+   "after": 4,
+   "prompt": "x<1 ve x>4 koşullarının çözüm kümesi nedir?",
+   "answer": "Ve kesişim istediği için iki koşulu aynı anda sağlayan değer yoktur, çözüm kümesi boştur; veya ile bağlansalardı iki ayrı aralık olurdu."
+  },
+  {
+   "after": 5,
+   "prompt": "−5<2 eşitsizliğinde iki tarafın karesini almak hangi sorunu gösterir?",
+   "answer": "25<4 yanlış çıkar; kare alma bütün gerçeklerde sıralamayı korumaz, a²<b² yalnız 0≤a<b için kullanılır."
+  }
+ ]
+}

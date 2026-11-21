@@ -54,43 +54,41 @@ export function OsymTopicPanel({
 }) {
   const [all, setAll] = useState(false);
   const exam = examOfSubject(subjectId);
-  const cells = topicYearCounts(osymRows, topicId, exam);
-  if (!cells.length) return null;
   const mine = rowsForTopic(osymRows, topicId);
-  const years = cells.map((c) => c.year);
+  // Not every question could be tied to a detailed heading, so an empty list
+  // proves nothing: say nothing rather than "never asked".
+  if (!mine.length) return null;
+  const years = processedYears(osymRows, exam);
+  const cells = topicYearCounts(osymRows, topicId, exam).filter((c) => c.count > 0);
   const shown = all ? mine : mine.slice(0, FIRST);
   return (
     <section className={embedded ? "osym-panel osym-embedded" : "panel osym-panel"} aria-labelledby={`osym-${topicId}`}>
       <h2 id={`osym-${topicId}`}>ÖSYM bu konuyu nasıl sordu?</h2>
       <p className="muted small">
-        İşlenen {cells.length} {exam} kitapçığında ({span(years)}) bu başlıktan{" "}
-        {mine.length ? `${mine.length} soru çıktı.` : "doğrudan soru çıkmadı."}
+        İşlenen {years.length} {exam} kitapçığında ({span(years)}) bu başlıkla eşleşen {mine.length} soru var.
       </p>
-      <ol className="osym-years" aria-label="Yıllara göre soru sayısı">
+      <ol className="osym-years" aria-label="Eşleşen soruların yılları">
         {cells.map((c) => (
-          <li key={c.year} className={c.count ? "has" : "none"}>
+          <li key={c.year} className="has">
             <span className="osym-year">{c.year}</span>
-            <span className="osym-count">{c.count ? `${c.count} soru` : "çıkmadı"}</span>
+            <span className="osym-count">{c.count} soru</span>
           </li>
         ))}
       </ol>
-      {mine.length > 0 && (
-        <>
-          <ul className="osym-patterns">
-            {shown.map((r) => (
-              <PatternItem key={`${r.y}-${r.e}-${r.test}-${r.q}`} row={r} />
-            ))}
-          </ul>
-          {mine.length > FIRST && (
-            <button type="button" className="secondary" aria-expanded={all} onClick={() => setAll((v) => !v)}>
-              {all ? "Daha az göster" : `Tümünü göster (${mine.length})`}
-            </button>
-          )}
-        </>
+      <ul className="osym-patterns">
+        {shown.map((r) => (
+          <PatternItem key={`${r.y}-${r.e}-${r.test}-${r.q}`} row={r} />
+        ))}
+      </ul>
+      {mine.length > FIRST && (
+        <button type="button" className="secondary" aria-expanded={all} onClick={() => setAll((v) => !v)}>
+          {all ? "Daha az göster" : `Tümünü göster (${mine.length})`}
+        </button>
       )}
       <p className="muted small osym-note">
-        Soru metinleri ÖSYM’ye aittir ve burada yer almaz. Bu satırlar, kitapçıktaki sorunun konu ve kalıp
-        çözümlemesidir; soruyu resmî kitapçıkta yıl ve soru numarasıyla bulabilirsin.
+        Soru metinleri ÖSYM’ye aittir ve burada yer almaz; bu satırlar sorunun konu ve kalıp çözümlemesidir. Her soru
+        ayrıntılı başlığa bağlanamadığı için liste eksik olabilir: yıl yıl tam sayım, ders kartındaki ÖSYM sıklık
+        haritasında resmî başlığa göre verilir.
       </p>
     </section>
   );

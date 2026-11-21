@@ -1,0 +1,1013 @@
+{
+ "paragraf": [
+  {
+   "after": 2,
+   "prompt": "‘Çünkü’ ile ‘bu nedenle’ bağlaçlarının kurduğu ilişkiler nasıl ayrılır?",
+   "answer": "‘Çünkü’ bir gerekçe bildirir; ‘bu nedenle’ ise o gerekçeden doğan sonucu bağlar."
+  },
+  {
+   "after": 4,
+   "prompt": "‘Düzenli tekrar hatırlamayı destekler.’ cümlesinden ‘Hatırlayan herkes düzenli tekrar yapmıştır.’ sonucu neden çıkmaz?",
+   "answer": "Bu sonuç koşulun yönünü ters çevirir ve özneyi genişletir; aynı sözcükler kullanılsa da ilişki bozulur."
+  },
+  {
+   "after": 7,
+   "prompt": "‘Bu nedenle’ ile başlayan bir cümle neden giriş cümlesi olmaya pek uygun değildir?",
+   "answer": "Bu bağlaç önce verilmiş bir neden ister; giriş cümlesi ise önceki bir düşünceye açıklamasız bağımlı olmamalıdır."
+  },
+  {
+   "after": 9,
+   "prompt": "Etiket, katalog ve araştırmacı cümlelerinin ortak katkısı hangi kısa sava dönüşür?",
+   "answer": "Belgeyi korumak, ona erişim sağlamakla işlevini tamamlar; çünkü üç cümlenin ortak katkısı belgenin bulunup kullanılabilmesidir."
+  },
+  {
+   "after": 11,
+   "prompt": "Bir metin önce avantajları sonra sınırlamaları anlatıyorsa ana sav hangi biçimi alabilir?",
+   "answer": "İki yönü dengeleyen koşullu bir yargı olabilir; yararı ve koşulu aynı açıklamada korur."
+  },
+  {
+   "after": 14,
+   "prompt": "Örtük savı çıkarırken örneklerin ortak yönünü nasıl bir yargıyla söylemelisin?",
+   "answer": "Yeni bilgi uydurmadan, örneklerin ortak yönünü karşılayan en küçük yeterli yargıyla söylemelisin."
+  },
+  {
+   "after": 15,
+   "prompt": "Yazarın amacı ile ana düşünce arasındaki fark nedir?",
+   "answer": "Amaç uyarmak, bilgilendirmek ya da düşündürmek gibi bir yöneliştir; ana düşünce bu amaçla iletilen temel yargıdır."
+  }
+ ],
+ "paragrafta-coklu-sorular": [
+  {
+   "after": 2,
+   "prompt": "Kök ‘altı çizili sözün işlevi’ni sorduğunda neyi ararsın?",
+   "answer": "O ifadenin yerel bağlamdaki görevini ararsın; anlamı etkileyen karşıtlık ya da açıklama için komşu cümleleri de okursun."
+  },
+  {
+   "after": 5,
+   "prompt": "Metinde ‘Üç kayıt yeniden dinlendi.’ yazıyorsa bu sözden hangi bilgi çıkar, hangisi çıkmaz?",
+   "answer": "Yeniden dinlenen kayıt sayısının üç olduğu çıkar; kayıtların tamamının üç tane olduğu çıkmaz."
+  },
+  {
+   "after": 8,
+   "prompt": "Bir çıkarımın metinden zorunlu çıkıp çıkmadığını hangi soruyla sınarsın?",
+   "answer": "‘Bu sonuç yanlış olsaydı pasajın bir cümlesiyle çelişir miydi?’ diye sorarsın; metinle uyumlu başka olasılık kalıyorsa kesinlik zayıflar."
+  },
+  {
+   "after": 10,
+   "prompt": "‘En az beş’ ifadesi hangi sayılara izin verir?",
+   "answer": "Beşe ya da beşten büyük sayılara izin verir; tam beş anlamına gelmez."
+  },
+  {
+   "after": 13,
+   "prompt": "‘Hızlıdır ama her metne uygun değildir.’ cümlesinde hangi iki bilgi birlikte korunmalıdır?",
+   "answer": "Yöntemin hızlı olduğu ve her metne uygun olmadığı; karşıtlığın iki tarafı da silinmemelidir."
+  },
+  {
+   "after": 15,
+   "prompt": "İki anlatının ortak yönünü seçerken hangi özelliği ortak sayabilirsin?",
+   "answer": "Yalnız iki tarafta da açık dayanağı olan, kesişen özelliği; birinde bulunanı ötekine taşımak ortaklık kurmaz."
+  }
+ ],
+ "paragrafta-konu": [
+  {
+   "after": 2,
+   "prompt": "Konu, tek bir nesne adı dışında hangi biçimlerde olabilir?",
+   "answer": "Bir karşılaştırma, dönüşüm, sorun ya da ilişki de konu olabilir."
+  },
+  {
+   "after": 4,
+   "prompt": "Bir sözcüğün metinde çok tekrar edilmesi neden konuyu bulmaya yetmez?",
+   "answer": "Konu, cümlelerin katkılarının geliştirdiği ortak alandır; ‘su’ sık geçse de odak suyu anlatan şiirlerin dil özellikleri olabilir."
+  },
+  {
+   "after": 7,
+   "prompt": "Yalnız yöntemin uygulandığını anlatan metne ‘yeni yöntemin başarıyı artırması’ konusu neden uymaz?",
+   "answer": "Metinde olmayan bir başarı ölçümünü ekler; hedefin gerçekleştiği sonucunu konu adına gizlice yerleştirir."
+  },
+  {
+   "after": 10,
+   "prompt": "İki ustanın deneyimini anlatan paragrafta konuyu nasıl adlandırırsın?",
+   "answer": "Adlar ve araçlar değişse de örneklerin ortak ilişkisini, örneğin meslek bilgisinin aktarılmasını, uygun genişlikte adlandırırsın."
+  },
+  {
+   "after": 12,
+   "prompt": "‘Neden yakınılıyor?’ sorusunda eleştirilen durum ile önerilen çözümü nasıl ayırırsın?",
+   "answer": "Cevap eleştirilen durumdur, örneğin kayıtların düzensizliği; yazarın önerdiği belge düzeni yakınmanın cevabı değildir."
+  },
+  {
+   "after": 15,
+   "prompt": "Kullanıcı, tasarımcı ve bakım görevlisinin farklı kaygılarını anlatan metnin konusu nasıl kurulur?",
+   "answer": "Görüşlerin döndüğü ortak karar ya da uygulama adlandırılır; örneğin erişim, görünüş ve dayanıklılıkla değerlendirilen tasarım."
+  }
+ ],
+ "metin-tablo-gorsel-yorumlama": [
+  {
+   "after": 2,
+   "prompt": "En büyük değer iki satırda eşitse ‘yalnız biri en çoktur’ yargısı neden desteklenmez?",
+   "answer": "Ortak liderler vardır; veri yalnız ‘en çok olanlardan biridir’ yargısını destekler."
+  },
+  {
+   "after": 4,
+   "prompt": "Bir kolda 36, diğerinde 24 kayıt varsa fark kaç kayıttır ve ilk değer ikincinin kaç katıdır?",
+   "answer": "Fark 36 − 24 = 12 kayıttır; ilk değer ikincinin 36/24 = 1,5 katıdır."
+  },
+  {
+   "after": 7,
+   "prompt": "Eksen sıfırdan başlamıyorsa sütun boylarından oran kurmak neden yanıltır?",
+   "answer": "Görünen boyların oranı gerçek değerlerin oranı olmayabilir; başlangıç çizgisini ve basamak aralığını okuyup etiketteki sayıları kullanmalısın."
+  },
+  {
+   "after": 9,
+   "prompt": "Daire grafiğinde 108 derecelik bir dilim bütünün yüzde kaçıdır?",
+   "answer": "108/360 = 0,3 olduğundan bütünün yüzde 30’udur."
+  },
+  {
+   "after": 12,
+   "prompt": "Metin bütün ayı, çizelge yalnız hafta içini kapsıyorsa çizelge toplamını nasıl kullanmalısın?",
+   "answer": "Toplamı bütün aya taşıyamazsın; bilinen hafta içi toplamını ve hafta sonunun bilinmeyen durumunu ayrı tutarsın."
+  },
+  {
+   "after": 15,
+   "prompt": "‘Kayıt yaptıran ve on altı yaşını dolduran herkes katılabilir.’ kuralı yalnız yaşı tutan biri için ne söyler?",
+   "answer": "Kesin katılım hakkı vermez; kural iki koşulu birlikte ister, kayıt koşulu da sağlanmalıdır."
+  },
+  {
+   "after": 16,
+   "prompt": "‘Olabilir’ diye soran bir kökte bir durumu doğru saymak için ne yeterlidir?",
+   "answer": "Verilen koşullarla çelişmeyen bir durum göstermek yeterli olabilir; o durumun gerçekleştiğini iddia etmezsin."
+  }
+ ],
+ "paragrafta-soru-cevap": [
+  {
+   "after": 2,
+   "prompt": "‘Hangisinin cevabıdır?’ ile ‘Hangisinin cevabı yoktur?’ kökleri çalışma biçimiyle nasıl ayrılır?",
+   "answer": "İlkinde yanıtın doğrudan karşıladığı soruyu bulursun; ikincisinde adayları metne yöneltip bilgisi verilmeyeni ararsın."
+  },
+  {
+   "after": 4,
+   "prompt": "‘Nedir?’ sorusunun karşılığını -dır ekine bakarak bulmak neden güvenilmez?",
+   "answer": "Tanım -dır eki olmadan da kurulabilir; -dır alan bir cümle ise yalnız bir özellik bildirebilir."
+  },
+  {
+   "after": 7,
+   "prompt": "‘Kitapları hasarın ilerleme riskine göre seçtik; büyüteçle inceledik.’ anlatımında seçim ölçütü nedir?",
+   "answer": "Seçim ölçütü hasarın ilerleme riskidir; büyüteç ölçüt değil, inceleme aracıdır."
+  },
+  {
+   "after": 9,
+   "prompt": "‘Salı’ ile ‘dört hafta’ bilgileri hangi farklı sorulara cevap verir?",
+   "answer": "Salı bir gün adı olarak ‘hangi gün?’ sorusunu, dört hafta ise bir süre olarak ‘ne kadar sürdü?’ sorusunu karşılar."
+  },
+  {
+   "after": 12,
+   "prompt": "Yanıt bazı katılımcılardan söz ederken soru bütün katılımcıları soruyorsa hangi hata yapılmış olur?",
+   "answer": "Soru metne verilmemiş bir genellik yükler; kapsam yanıtın sınırından geniş kurulmuş olur."
+  },
+  {
+   "after": 14,
+   "prompt": "‘Ne düşünüyorsunuz?’ ile ‘Niçin böyle düşünüyorsunuz?’ soruları ayrı ayrı neyi ister?",
+   "answer": "İlki kişinin görüşünü, ikincisi o görüşün dayanağını ister; yanıtta ikisinin bulunması bu hedefleri aynılaştırmaz."
+  },
+  {
+   "after": 15,
+   "prompt": "‘Kaynağını doğrulayabildiğimiz kayıtları öne aldık.’ yanıtı hangi tür soruya uygundur?",
+   "answer": "Hangi ölçütün esas alındığını soran soruya uygundur; soruda doğrulama sözcüğü geçmese de yanıt bir ölçüt verir."
+  }
+ ],
+ "paragrafta-roportaj": [
+  {
+   "after": 2,
+   "prompt": "Görüşmeye önceden soru hazırlamak hangi esnekliği engellemez?",
+   "answer": "Yeni yanıtlara göre takip sorusu sormayı engellemez; hazırlık ile esneklik birlikte yürüyebilir."
+  },
+  {
+   "after": 5,
+   "prompt": "Sorusu boş bırakılmış bir görüşmede uygun soruyu kurmaya nereden başlarsın?",
+   "answer": "Önce yanıtı bir cümleyle özetlersin; sonra yanıtın anlattığı yönü, örneğin yöntemi, isteyen soruyu ararsın."
+  },
+  {
+   "after": 8,
+   "prompt": "‘Atölye kapısı kırmızıydı.’ ile ‘Bu rengin mekânı sıcak gösterdiğini düşünüyorum.’ cümleleri nasıl ayrılır?",
+   "answer": "İlki gözleme dayalı bir nitelik bildirir; ikincisi konuşanın yorumu ve değerlendirmesidir."
+  },
+  {
+   "after": 11,
+   "prompt": "‘Bazen okurlarımla taslak paylaşırım.’ cümlesi sıklık hakkında neyi söyler, neyi söylemez?",
+   "answer": "Paylaşımın bazı zamanlarda olduğunu söyler; her taslağın paylaşıldığını da başka koşulda hiç paylaşılmadığını da göstermez."
+  },
+  {
+   "after": 14,
+   "prompt": "‘Ada, yöntemi değiştirdiğini söyledi.’ ile ‘Ada: Yöntemi değiştirdim.’ arasındaki fark nedir?",
+   "answer": "İlki bir anlatıcının aktardığı sözdür; ikincisi kişiye açıkça verilen doğrudan sözdür."
+  },
+  {
+   "after": 16,
+   "prompt": "Görüşülen kişi bütçeden hiç söz etmemişse bütçe hakkında ne söyleyebilirsin?",
+   "answer": "Yalnız bütçenin bilinmediğini söyleyebilirsin; projenin bütçesiz olduğunu ya da destek almadığını kesinleştiremezsin."
+  },
+  {
+   "after": 18,
+   "prompt": "Çok turlu bir görüşmeyi soru haritasına dökerken her tur için neyi ayrı etiketlersin?",
+   "answer": "Her turun yeni eklediği bilgiyi, örneğin başlangıç adımını, gerekçeyi ya da istisnayı ayrı etiketle yazarsın."
+  }
+ ],
+ "paragrafta-anlatim-bicimleri": [
+  {
+   "after": 2,
+   "prompt": "‘Ada kısa saçlıydı.’ ile ‘Ada kapıyı açıp bahçeye çıktı.’ cümleleri hangi farklı işi yapar?",
+   "answer": "İlki kişiyi tanıtır; ikincisi gerçekleşen bir değişimi anlatarak olayı ilerletir."
+  },
+  {
+   "after": 4,
+   "prompt": "Betimlemede yalnız iki görsel özellik verilmişse hangi sonucu eklememelisin?",
+   "answer": "Bütün duyulara seslenildiği sonucunu eklememelisin; her ayrıntının hangi duyuya karşılık geldiğini metinden gösterirsin."
+  },
+  {
+   "after": 7,
+   "prompt": "Laboratuvarı betimlemek ile cihazın ölçme ilkesini anlatmak hangi anlatım biçimlerine karşılık gelir?",
+   "answer": "Laboratuvarın rengini ve yerleşimini göstermek betimlemedir; cihazın hangi ilkeyle ölçtüğünü öğretmek açıklamadır."
+  },
+  {
+   "after": 9,
+   "prompt": "‘Su ısı alınca buharlaşır.’ cümlesi neden öyküleme sayılmaz?",
+   "answer": "Belirli bir kişinin yaşadığı olay dizisini değil, genel bir oluşu öğretir."
+  },
+  {
+   "after": 12,
+   "prompt": "Anlatım biçimi ile düşünceyi geliştirme yolu arasındaki fark nedir?",
+   "answer": "Anlatım biçimi metnin genel kuruluş ve iletişim amacıdır; tanım, örnek ya da sayısal veri gibi yollar bu amacı destekleyen araçlardır."
+  },
+  {
+   "after": 15,
+   "prompt": "Bir paragrafı tartışmacı anlatım diye sınıflandırmak için hangi iki kanıtı birlikte ararsın?",
+   "answer": "Savunulan bir yargıyı ve onu taşıyan dayanağı birlikte ararsın."
+  }
+ ],
+ "paragrafta-siralama": [
+  {
+   "after": 2,
+   "prompt": "‘Önce tanım, sonra örnek’ gibi sabit bir şablon ezberlemek neden yanıltır?",
+   "answer": "Yazar örnekten genele gidebilir ya da sonucu önce söyleyip nedenini sonra açıklayabilir; sıra metindeki açık ilişkiyle gösterilir."
+  },
+  {
+   "after": 5,
+   "prompt": "Konusu ortak olan bir müze tarihçesi neden erişim savına örnek olmayabilir?",
+   "answer": "Erişimin artırılması ilişkisini göstermiyorsa genel yargının hiçbir yanını somutlaştırmaz."
+  },
+  {
+   "after": 7,
+   "prompt": "‘Salon küçüktü. Buna rağmen katılım yüksekti.’ dizisinde karşıtlık nereden doğar?",
+   "answer": "Küçük salonun düşündürdüğü düşük katılım beklentisi ile gerçekleşen yüksek katılım arasındaki terslikten doğar."
+  },
+  {
+   "after": 10,
+   "prompt": "Bir paragrafta yüklemlerin farklı zaman ekleri taşıması neden tek başına bozukluk sayılmaz?",
+   "answer": "Yazar geçmiş işi, bugünkü etkisini ve yarınki planı birlikte anlatabilir; geçişler zaman işaretleri ve anlamla açıklanıyorsa uyum korunur."
+  },
+  {
+   "after": 12,
+   "prompt": "Doğru sırayı kurduğun hâlde yanlış seçeneği işaretlemene ne yol açabilir?",
+   "answer": "Kökün istediği biçimi, örneğin ilk cümleyi ya da yer değiştiren iki numarayı, kurduğun sırayla eşleştirmemek; bu bir görev okuma hatasıdır."
+  }
+ ],
+ "paragrafta-cumle-ekleme": [
+  {
+   "after": 2,
+   "prompt": "Eklenecek cümle ‘Bu araç ışığı kaydediyor.’ ise metinde önce neyi ararsın?",
+   "answer": "Aracın tanıtıldığı cümleyi ararsın; tanıtım hemen önce de daha eski bir cümlede de olabilir, gerçek öncülü anlam belirler."
+  },
+  {
+   "after": 5,
+   "prompt": "‘Örneğin’ ile başlayan bir cümleyi yerleştirirken solunda ne bulunmalıdır?",
+   "answer": "Örneklenen genel dayanak, yani tanım ya da genel yargı bulunmalıdır; sağında varsa örneğin açılımı gelir."
+  },
+  {
+   "after": 7,
+   "prompt": "‘Ancak bu yöntem her belgede işe yaramadı.’ cümlesinin solunda hangi bilgi bulunmalıdır?",
+   "answer": "Yöntemin yararını ya da ondan beklenen sonucu düşündüren bir bilgi bulunmalıdır; karşıtlık bu beklentiye cevap verir."
+  },
+  {
+   "after": 9,
+   "prompt": "Eklenen cümle ile komşusunda aynı fiilin geçmesi neden öznenin aynı olduğunu göstermez?",
+   "answer": "Taslağı bir görevli hazırlayıp bir ekip sınayabilir; kimin hangi işi yaptığını göndermelerden ayrıca izlemelisin."
+  },
+  {
+   "after": 11,
+   "prompt": "Metin yalnız bazı belgelerin tarandığını anlatıyorsa ‘Bütün belgeler erişime açıldı.’ cümlesi neden uymaz?",
+   "answer": "Metnin nicelik sınırını aşan ek bir iddia getirir; aynı sözcükleri taşısa da kapsamı büyütür."
+  }
+ ],
+ "paragrafta-bosluk-doldurma": [
+  {
+   "after": 2,
+   "prompt": "Baştaki boşluğu ‘Çünkü kapının menteşesi kırılmış.’ cümlesi izliyorsa boşlukta ne beklenir?",
+   "answer": "Bu gerekçeyle desteklenen bir iddia, örneğin bir durum ya da öneri beklenir; sonraki cümle gerekçe görevi yapar."
+  },
+  {
+   "after": 5,
+   "prompt": "Bir kişinin kendi kararını gerekçelendiren ‘çünkü’ cümlesini neye dönüştürmemelisin?",
+   "answer": "Bütün olaylar için geçerli zorunlu bir bilimsel yasaya dönüştürmemelisin; cümle yalnız o kararı destekler."
+  },
+  {
+   "after": 7,
+   "prompt": "‘Bazı küçük düzenlemeler erişimi artırabilir. Örneğin’ diye süren boşluğa fikri başka sözlerle yazmak neden yetmez?",
+   "answer": "Örnek verme görevi, o özelliği gösteren somut bir düzenleme ister; fikri yeniden söylemek bu görevi yerine getirmez."
+  },
+  {
+   "after": 9,
+   "prompt": "‘Çok ayrıntılı hazırlandık. Oysa’ diye süren boşluğa neden her olumsuz cümle uymaz?",
+   "answer": "Boşluk hazırlığın doğurduğu beklentiyi kırmalıdır; başka bir olay hakkındaki kötü bilgi aynı kişi, işlem ve zaman çerçevesini sürdürmez."
+  },
+  {
+   "after": 11,
+   "prompt": "Bir sözcüğün iki cümlede tekrar edilmesi hangi durumda düşünce bağını sağlamaz?",
+   "answer": "Sözcük iki farklı anlamda kullanılıyorsa, örneğin dil bir cümlede iletişim aracı, ötekinde organ anlamındaysa bağ kurulmaz."
+  }
+ ],
+ "yardimci-dusunce": [
+  {
+   "after": 2,
+   "prompt": "‘Atölyeye katılan herkes taslak verdi. Ece de katıldı.’ bilgilerinden hangi sonuca nasıl ulaşırsın?",
+   "answer": "İki öncülü birleştirerek Ece’nin taslak verdiği sonucuna ulaşırsın."
+  },
+  {
+   "after": 5,
+   "prompt": "Ece bütün gün okuldaysa ve toplantı başka şehirde yüz yüze yapıldıysa ne kesinleşir, ne kesinleşmez?",
+   "answer": "Ece’nin toplantıya yüz yüze katılmadığı kesinleşir; çevrim içi katılım hakkında bilgi yoksa o kesin dışlanamaz."
+  },
+  {
+   "after": 7,
+   "prompt": "‘Giderlerin bir bölümünü mahalleli karşıladı.’ sözüne hangi bilgi eklenince tamamının mahalleliye ait olmadığı kesinleşir?",
+   "answer": "Kalan bölümün kimce karşılandığı açıkça verilince kesinleşir; örneğin kalanını belediyenin karşıladığı belirtilmelidir."
+  },
+  {
+   "after": 9,
+   "prompt": "‘Bilet alırsa etkinliğe girebilir.’ cümlesinden hangi sonuçlar kesin olarak çıkmaz?",
+   "answer": "Kişinin bilet aldığı, etkinliğe girdiği ve biletin tek koşul olduğu kesin olarak çıkmaz."
+  },
+  {
+   "after": 11,
+   "prompt": "‘Düzenli aranan belgeler kolay bulunur.’ cümlesinden ‘Kolay bulunan belge düzenli aranmıştır.’ sonucu neden çıkmaz?",
+   "answer": "Cümle ilişkiyi yalnız verilen yönde kurar; belge başka bir nedenle, örneğin masanın üstünde durduğu için de kolay bulunabilir."
+  },
+  {
+   "after": 13,
+   "prompt": "Olumsuz soru kökü ile olumsuz cümle biçimindeki bir seçenek arasındaki fark nedir?",
+   "answer": "Kökün olumsuzluğu aranan hedefi, yani desteklenmeyen yargıyı belirtir; ‘Hiçbir etkinlik yapılmadı.’ gibi bir seçenek ise metinle desteklenebilir de çelişebilir de."
+  }
+ ],
+ "ikiye-bolme": [
+  {
+   "after": 2,
+   "prompt": "İkiye bölme işlemi akışı bozan cümle sorusundan hangi bakımdan ayrılır?",
+   "answer": "İkiye bölmede bütün cümleler korunur ve yalnız yeni paragrafın başlayacağı yer bulunur; hiçbir cümle metinden atılmaz."
+  },
+  {
+   "after": 3,
+   "prompt": "Koruma ve erişim cümlelerinden oluşan örnekte sınırı III’ten önce koymak hangi kusuru doğurur?",
+   "answer": "Ölçümün yararını anlatan III koruma bloğundan kopar ve erişim bloğunun başına taşınır."
+  },
+  {
+   "after": 7,
+   "prompt": "‘Örneğin’ ile başlayan kısa bir cümle neden çoğu zaman önceki blokta kalır?",
+   "answer": "Önceki genel düşünceyi somutlaştırır; genel savdan ayrılırsa örnek açıklamasız kalır."
+  },
+  {
+   "after": 9,
+   "prompt": "Bir kurumun yıllara göre gelişimini sıralayan cümlelerde yıl değişmesi neden tek başına sınır sayılmaz?",
+   "answer": "Yıllar tek bir gelişim çizgisinin doğal adımlarıdır; sınır ancak bugünkü erişim sorunları gibi yeni bir açıklama odağına geçilince doğar."
+  },
+  {
+   "after": 11,
+   "prompt": "Genel bir yargı ayrıntılandırılırken neden her yeni ayrıntıda paragraf başlatılmaz?",
+   "answer": "Ayrıntılandırma aynı paragrafın doğal gelişimidir; her ayrıntıda bölünürse her örnek ya da gerekçe ayrı bir parçaya dönüşür."
+  },
+  {
+   "after": 13,
+   "prompt": "Önerdiğin sınırı sınamak için onu nasıl kaydırarak denersin?",
+   "answer": "Bir cümle sola ve sağa kaydırırsın; erken bölme örneği savından ayırıyor mu, geç bölme yeni yönün ilk cümlesini eski blokta bırakıyor mu diye bakarsın."
+  }
+ ],
+ "akisi-bozan-cumle": [
+  {
+   "after": 1,
+   "prompt": "Yağmur suyu paragrafında ortak açıklamaya hizmet etmeyen cümle hangisidir ve neden?",
+   "answer": "‘Okul sergisi cuma günü açılacak.’ cümlesidir; suyun toplanıp kullanılma zincirine hiçbir adım katmaz."
+  },
+  {
+   "after": 4,
+   "prompt": "Ana çizgiyi ‘okul’ gibi geniş bir ifadeyle kurmak neden işe yaramaz?",
+   "answer": "Okulda yapılan her şey bu ifadeye sığar ve ilgisiz cümleler ayıklanamaz; ‘yağmur suyunun bahçede kullanılması’ ise ayırt edici bir odaktır."
+  },
+  {
+   "after": 8,
+   "prompt": "Bir örnek cümlesinin yeni bir şehir ya da kişi adı taşıması neden onu çıkarmaya yetmez?",
+   "answer": "Örnek, önceki genel yargıyı somutlaştırıyor olabilir; yeni ad, savla kurduğu ilişkiyi ortadan kaldırmaz."
+  },
+  {
+   "after": 10,
+   "prompt": "İlk cümleyi aday sayıp çıkardığında neyi denetlemelisin?",
+   "answer": "Geride kalan metnin anlaşılır bir başlangıcı olup olmadığını denetlemelisin; gerekli giriş cümlesi sırf farklı yazıldığı için çıkarılmaz."
+  },
+  {
+   "after": 12,
+   "prompt": "Bir deneyi anlatan paragrafta hangi zaman değişimi doğaldır, hangi cümle sapmadır?",
+   "answer": "Ölçümlerin farklı saatlerde yapılması karşılaştırma için doğaldır; araştırmacının çocukluk tatilini anlatan cümle ortak amaca bağlanmıyorsa sapmadır."
+  }
+ ],
+ "deyimler-ve-atasozleri": [
+  {
+   "after": 1,
+   "prompt": "‘Eli ayağına dolaşmak’ ile ‘dili tutulmak’ deyimleri hangi sonuçla ayrılır?",
+   "answer": "İlkinde kişi telaşla ne yapacağını şaşırır, davranışları karışır; ikincisinde korku ya da şaşkınlıkla konuşamaz duruma gelir."
+  },
+  {
+   "after": 3,
+   "prompt": "Yeni kurulmuş ‘Bugün dosyanı yedekle.’ gibi bir öğüt neden atasözü sayılmaz?",
+   "answer": "Anlaşılır bir öneri olsa da toplumda yerleşmiş bir söz değildir; atasözü için yerleşiklik ve genel yargı işlevi gerekir."
+  },
+  {
+   "after": 5,
+   "prompt": "‘Mecaz yoksa deyim de yoktur.’ kuralı neden kullanılamaz?",
+   "answer": "Gerçek anlamını büyük ölçüde koruyan yerleşik deyimler de vardır; anlam türü ile deyim olmak ayrı sınıflamalardır."
+  },
+  {
+   "after": 9,
+   "prompt": "Özdeyişi atasözünden ayıran temel özellik nedir?",
+   "answer": "Özdeyişin söyleyeni bilinir; yerleşik atasözünün söyleyeni ise genellikle bilinmez ve söz toplumun ortak dilinde yaşar."
+  },
+  {
+   "after": 10,
+   "prompt": "‘Her gün beş sayfa okudu, sonunda uzun kitabı bitirdi.’ olayı hangi temel ilişkiyi örnekler?",
+   "answer": "Küçük katkıların zamanla birikerek büyümesini örnekler; yalnız ‘çok çalıştı’ demek bu ayırt edici yönü açıklamaz."
+  }
+ ],
+ "cumlede-anlam": [
+  {
+   "after": 1,
+   "prompt": "‘Saat çaldı, pencere açıldı.’ cümlesinden neden ikinci olayın birinciden kaynaklandığı sonucu çıkmaz?",
+   "answer": "Yalnız art arda gerçekleşme verilmiştir; neden bağı açıkça kurulmadıkça zaman ilişkisine gizli bir neden eklenemez."
+  },
+  {
+   "after": 3,
+   "prompt": "‘Keşke yağmur yağsa.’ cümlesindeki -sa eki neden koşul bildirmez?",
+   "answer": "Cümle bir yargıyı başka bir şarta bağlamaz; gerçekleşmesi istenen bir durumu dilek olarak bildirir."
+  },
+  {
+   "after": 5,
+   "prompt": "‘Kapıda bakım levhası var; demek ki içeride çalışma yapılıyor.’ cümlesinde levhanın görevi nedir?",
+   "answer": "Levha çalışmanın nedeni değil, çıkarımın dayanağıdır; görülen işaretten bir sonuca gidilir."
+  },
+  {
+   "after": 7,
+   "prompt": "‘En az üç öğrenci geldi.’ cümlesi hangi sayıyı dışlar, hangilerini dışlamaz?",
+   "answer": "İki öğrenciyi dışlar; dört ya da beş öğrencinin gelmiş olmasını dışlamaz."
+  },
+  {
+   "after": 11,
+   "prompt": "‘Göç eden bir ailenin yaşamını kısa cümlelerle anlatır.’ cümlesinde içerik ve biçem bilgisi hangileridir?",
+   "answer": "Göç eden ailenin yaşamı içeriktir; kısa cümlelerle anlatılması biçem bilgisidir."
+  },
+  {
+   "after": 13,
+   "prompt": "‘Gelebilirim.’ diyen birinin sözünü ‘geleceğini kesin söyledi’ diye aktarmak neden yanlıştır?",
+   "answer": "Olasılık bildiren sözü kesinliğe çevirip anlamı güçlendirir; aktarımda asıl kişinin tutumu korunmalıdır."
+  },
+  {
+   "after": 15,
+   "prompt": "‘Keşke o sözü söylemeseydim.’ ile ‘Keşke gençken yüzme öğrenseydim.’ cümleleri hangi duyguları taşır?",
+   "answer": "İlki yapılmış bir davranış için pişmanlık, ikincisi değerlendirilemeyen bir fırsat için hayıflanmadır."
+  },
+  {
+   "after": 17,
+   "prompt": "Bir durumu çok kez yaşamış olmak neden tek başına kanıksama sayılmaz?",
+   "answer": "Kanıksama için tepkinin azaldığı ya da durumun sıradanlaştığı bilgisi de gerekir."
+  },
+  {
+   "after": 19,
+   "prompt": "‘Ne kadar dakiksin, yine yarım saat geç kaldın!’ sözünde alayı ortaya çıkaran nedir?",
+   "answer": "Övgü sözü gözlenen davranışla uyuşmaz; geç kalmayı bildiren ikinci yargı tersinin kastedildiğini açık eder."
+  }
+ ],
+ "paragrafa-giris": [
+  {
+   "after": 1,
+   "prompt": "Bir arşiv metninde bütün cümlelerin ‘kayıt’ sözcüğünü taşıması neden bütünlüğü garanti etmez?",
+   "answer": "Bir cümle kayıtların korunmasını, öteki ilgisiz bir müzik kaydını anlatıyorsa aynı sözcüğe rağmen düşünce bağı kopar."
+  },
+  {
+   "after": 4,
+   "prompt": "Bir örnek cümlesinin paragraftaki işlevini belirlemek için hangi soruyu sorarsın?",
+   "answer": "‘Bu örnek hangi daha geniş yargıyı gösteriyor?’ diye sorarsın; salt ayrıntı olması cümleyi gereksiz yapmaz."
+  },
+  {
+   "after": 7,
+   "prompt": "‘Çünkü’ ile başlayan bir son cümle neden kendiliğinden sonuç cümlesi sayılmaz?",
+   "answer": "Böyle bir cümle gerekçeyi son sırada veriyor olabilir; yeri bağlaca göre değil, önceki ve sonraki bağlara ve bütüne katkısına göre belirlenir."
+  },
+  {
+   "after": 10,
+   "prompt": "Arşiv kayıtlarını anlatan paragrafta bina cephesinin boyasına ilişkin cümle hangi durumda akışı bozmaz?",
+   "answer": "Boyanın kayıtları korumaya etkisini açıklıyorsa düşünce zincirine bağlanır ve akışı bozmaz."
+  },
+  {
+   "after": 12,
+   "prompt": "Kayıtları erişilebilir kılmayı anlatan paragrafa ‘Defter’ ve ‘İnsanlık’ başlıkları neden uymaz?",
+   "answer": "‘Defter’ çok dar kalıp öteki cümleleri dışlar; ‘İnsanlık’ ise gereğinden geniş olup ortak odağı göstermez."
+  },
+  {
+   "after": 14,
+   "prompt": "Belirsiz gönderme ve işlevsiz tekrar sırasıyla hangi anlatım özelliklerini zedeler?",
+   "answer": "Belirsiz gönderme açıklığı, işlevsiz tekrar ise duruluğu zedeler."
+  }
+ ],
+ "anlatim-bozukluklari": [
+  {
+   "after": 1,
+   "prompt": "‘Yaklaşık tam on dakika’ sorununu yalnız dil bilgisi düzeltmesiyle onarmak neden yetmez?",
+   "answer": "Sorun anlamdadır; süre hem kesin hem yaklaşık sunulur, önce hangi bilginin amaçlandığı seçilmelidir."
+  },
+  {
+   "after": 3,
+   "prompt": "‘Olayın sonunda’ ile ‘olayın sonucunda’ söyleyişleri nasıl ayrılır?",
+   "answer": "İlki zamanın bitimini, ikincisi olaydan doğan etkiyi anlatır."
+  },
+  {
+   "after": 5,
+   "prompt": "Cümlede ‘ama’ bağlacını görünce neden hemen anlatım bozukluğu aramamalısın?",
+   "answer": "Aynı iki bilgi bağlamda gerçekten beklenmedik bir karşıtlık kurabilir; önce iki yargı arasındaki amaçlanan ilişkiyi adlandırırsın."
+  },
+  {
+   "after": 8,
+   "prompt": "‘İki günde yapılan köprüyü açacak.’ ile ‘Köprüyü iki gün içinde açacak.’ cümleleri hangi bilgiyi vurgular?",
+   "answer": "İlki köprünün yapım süresini, ikincisi açılış zamanını vurgular."
+  },
+  {
+   "after": 10,
+   "prompt": "‘Seni Ece’den çok severim.’ cümlesindeki belirsizlik nereden doğar?",
+   "answer": "Sevilen kişilerin mi, yoksa sevenlerin sevgisinin mi karşılaştırıldığı açık değildir."
+  },
+  {
+   "after": 12,
+   "prompt": "‘Dersin süresi bitti, öğrenciler dışarı çıktı.’ cümlesinde iki yüklemin özneleri nelerdir?",
+   "answer": "İlk yüklemin öznesi dersin süresi, ikincisinin öznesi öğrencilerdir; ilk özne ikinci yükleme ortak değildir."
+  },
+  {
+   "after": 14,
+   "prompt": "‘Benim kitabımı ve onun kitabını inceledi.’ cümlesinde tamlanan neden yinelenmiştir?",
+   "answer": "İki tamlayan farklı kişi ekleri ister; tek ortak tamlanan bu farkı yok sayacağı için tamlanan kendi ekiyle yinelenir."
+  }
+ ],
+ "sozcukte-anlam": [
+  {
+   "after": 1,
+   "prompt": "Yan anlamı mecazdan ayıran ölçüt nedir?",
+   "answer": "Yan anlam temel anlamla bağını koruyup somut bir şeyi adlandırabilir, sandalyenin ayağı gibi; mecaz ise cesaretin kırılması gibi soyut bir aktarım yapar."
+  },
+  {
+   "after": 3,
+   "prompt": "“Hayatın her notasına uydu.” cümlesinde nota neden müzik terimi olarak okunmaz?",
+   "answer": "Burada nota bir müzik işaretini tanımlamaz; alanında terim olan söz bu cümlede mecazlaşmıştır."
+  },
+  {
+   "after": 6,
+   "prompt": "Gelmek ile gelmemek neden karşıt anlamlı bir çift sayılmaz?",
+   "answer": "Gelmemek, aynı eylemin olumsuz kuruluşudur; karşıt yönlü ayrı bir eylem değildir. Gelmek ile gitmek ise başka bir ilişki kurar."
+  },
+  {
+   "after": 8,
+   "prompt": "Yalnız elle tutulabilen şeyleri somut saymak neden eksik kalır?",
+   "answer": "Somutluğun ölçütü beş duyudan biriyle algılanmaktır; ses işitildiği, ışık görüldüğü için de somuttur."
+  },
+  {
+   "after": 9,
+   "prompt": "“Üç güzel çiçek” sözünde hangi sözcük nicel, hangisi nitel kullanılmıştır?",
+   "answer": "Üç sayı bildirdiği için nicel, güzel ise çiçeğin özelliğini anlattığı için nitel kullanılmıştır."
+  },
+  {
+   "after": 11,
+   "prompt": "Bir sözcüğün anlamca sesle ilgili olması neden onu yansıma yapmaya yetmez?",
+   "answer": "Yansıma, doğadaki bir sesin taklidiyle kurulmayı gerektirir; anlamın sesle ilgili olması bu taklidi kanıtlamaz."
+  },
+  {
+   "after": 13,
+   "prompt": "“Tatlı ses” sözünde özellik hangi duyudan hangisine aktarılır?",
+   "answer": "Tatma duyusuna ait tatlı özelliği işitme alanındaki sese taşınır; bu duyular arası aktarımdır."
+  },
+  {
+   "after": 16,
+   "prompt": "Dolaylama ile güzel adlandırmayı ayıran amaç nedir?",
+   "answer": "Dolaylama bir kavramı birden fazla sözle adlandırır, file bekçisi gibi; güzel adlandırma ise olumsuz çağrışımlı bir durumu daha yumuşak sözle anlatır."
+  },
+  {
+   "after": 17,
+   "prompt": "Bir sözün eziyet anlamından özenle yapılan iş anlamına kayması hangi değişmeye örnektir?",
+   "answer": "Anlam iyileşmesine örnektir; değerlendirme tonu olumluya kaymıştır ve bu, kapsam değişmesinden ayrı bir ölçüttür."
+  },
+  {
+   "after": 19,
+   "prompt": "Deyimi atasözünden ayırırken hangi ölçütü kullanırsın?",
+   "answer": "Atasözü birçok duruma uyan genel bir deneyim ya da yargı aktarır; deyim belirli bir durumu adlandırır. Uzunluk ya da tam cümle olmak ölçüt değildir."
+  }
+ ],
+ "yazim-kurallari": [
+  {
+   "after": 1,
+   "prompt": "İki noktadan sonra gelen söz hangi durumda büyük harfle başlar?",
+   "answer": "Ardından tam cümle geliyorsa büyük harfle başlar; özel ad içermeyen bir örnek listesi küçük harfle başlar."
+  },
+  {
+   "after": 3,
+   "prompt": "“Ece teyzem” sözünde teyze neden küçük harfle yazılır?",
+   "answer": "Teyze burada yalnız akrabalık bildirir; unvanın ya da Nene Hatun gibi yerleşmiş bir lakabın parçası değildir."
+  },
+  {
+   "after": 5,
+   "prompt": "“Batı düşüncesi” ile “köyün batısı” arasındaki büyük harf farkı neden doğar?",
+   "answer": "İlkinde Batı bir kültür ve düşünce alanını karşıladığı için büyük, ikincide yalnız coğrafi yön bildirdiği için küçük yazılır."
+  },
+  {
+   "after": 7,
+   "prompt": "Senetlerde yazıyla verilen tutarlar neden bitişik yazılır?",
+   "answer": "Bu, para belgelerine özgü bir güvenlik geleneğidir; sıradan metinde çok sözcüklü sayılar ayrı yazılır."
+  },
+  {
+   "after": 8,
+   "prompt": "1/2 kesrine iyelik eki getirirken neden 1/2’si yazılır?",
+   "answer": "Ek, kesrin okunuşuna göre gelir; bir bölü iki diye okunduğu için ek iki sözüne uyar."
+  },
+  {
+   "after": 10,
+   "prompt": "Prof. gibi noktalı bir kısaltmaya ek getirirken hangi yanlışı yapmamalısın?",
+   "answer": "Ayrıca kesme koymamalısın; nokta kısaltmanın parçasıdır ve ek okunuşa uygun olarak noktadan sonra yazılır."
+  },
+  {
+   "after": 13,
+   "prompt": "Ayrı yazılan soru parçasından sonra gelen kişi eki nasıl yazılır?",
+   "answer": "Kişi eki ve ek fiil soru parçasına bitişir: hazır mısın, gelecek miydi, okuyor muyuz."
+  },
+  {
+   "after": 15,
+   "prompt": "“Sırılsıklam” ile “ağır ağır” yazımını ayıran kuruluş farkı nedir?",
+   "answer": "Sırılsıklam ses eklenerek yapılmış pekiştirmedir ve bitişik yazılır; ağır ağır aynı sözün tekrarıyla kurulmuş ikilemedir ve ayrı yazılır."
+  },
+  {
+   "after": 18,
+   "prompt": "“Bir takım formalar” ile “birtakım sorunlar” neden farklı yazılır?",
+   "answer": "İlkinde bir sayı bildirir ve bir seti sayar, bu yüzden ayrıdır; ikincide birtakım belirsizlik sözüdür ve bitişik yazılır."
+  }
+ ],
+ "noktalama-isaretleri": [
+  {
+   "after": 1,
+   "prompt": "14.30 ile 03:52 gösterimleri neyi gösterdikleri bakımından nasıl ayrılır?",
+   "answer": "14.30 günün saatini noktayla gösterir; 03:52 ise dakika ve saniye gibi teknik bir süreyi iki noktayla verir."
+  },
+  {
+   "after": 2,
+   "prompt": "“Ece ve Can geldi.” cümlesinde ve bağlacının yanına neden virgül konmaz?",
+   "answer": "Ece ve Can tek bir özne ögesidir; ve iki adı zaten bağlar, sırf sözcükler sıralanıyor diye virgül gerekmez."
+  },
+  {
+   "after": 4,
+   "prompt": "Hitap olan “Arkadaşlar” ile özne olan “Arkadaşlar” virgül bakımından nasıl ayrılır?",
+   "answer": "Hitap edilen addan sonra virgül gelir: Arkadaşlar, beni dinleyin. Özne olan arkadaşlar ise yüklemine virgülsüz bağlanır."
+  },
+  {
+   "after": 6,
+   "prompt": "Şart ekinden hemen sonra virgül koymak neden yanlış olur?",
+   "answer": "Koşul yapısı yükleme bağlı bir bütündür; orada durak hissedilmesi virgül için gerekçe değildir: Yağmur dinerse çıkarız."
+  },
+  {
+   "after": 10,
+   "prompt": "Üç nokta hangi tür sözlerin yerine kullanılır?",
+   "answer": "Anlatımca tamamlanmamış, bilerek kesilmiş ya da açıkça yazılmak istenmeyen sözlerin yerine kullanılır; alıntıda alınmayan bölümü de gösterir."
+  },
+  {
+   "after": 12,
+   "prompt": "Ayraç içindeki ünlem ile ayraç içindeki soru işaretinin görev farkı nedir?",
+   "answer": "Ayraç içindeki ünlem alay ya da küçümsemeyi belirtir; ayraç içindeki soru işareti kesin olmayan, şüpheli bilgiyi gösterir."
+  },
+  {
+   "after": 13,
+   "prompt": "“Üç beş kişi” gibi yaklaşık sayı bildiren yinelemede neden kısa çizgi kullanılmaz?",
+   "answer": "Kısa çizgi aralık ve yön gibi ilişkileri gösterir; yaklaşık sayı bildiren yineleme bir aralık değildir ve çizgiyle bölünmez."
+  },
+  {
+   "after": 16,
+   "prompt": "Ayraç içindeki kısa bir ad açıklamasına neden otomatik nokta konmaz?",
+   "answer": "Ayraç içi yalnız bağımsız bir yargıysa kendi son işaretini taşır; kısa açıklama ana cümlenin akışında kalır."
+  }
+ ],
+ "fiilimsiler": [
+  {
+   "after": 1,
+   "prompt": "“Konuşmamayı” sözcüğündeki iki -ma ekinin görevleri nedir?",
+   "answer": "İlk -ma olumsuzluk ekidir, ikinci -ma isim-fiil ekidir; ardından kaynaştırma y’si ve belirtme eki gelir."
+  },
+  {
+   "after": 3,
+   "prompt": "“Bitecek işi paylaştık.” ile “İş yarın bitecek.” cümlelerinde bitecek sözcüğünün görevi nasıl ayrılır?",
+   "answer": "İlkinde bitecek iş adını niteleyen sıfat-fiildir; ikincide gelecek zamanla çekimlenmiş yüklemdir."
+  },
+  {
+   "after": 5,
+   "prompt": "“Kitabı alıp çıktı.” cümlesinde alıp neden ikinci bir yüklem sayılmaz?",
+   "answer": "Alıp çekimli değildir; çıkma eylemine bağlanan yan hareketi bildiren bir zarf-fiildir."
+  }
+ ],
+ "cumlenin-ogeleri": [
+  {
+   "after": 1,
+   "prompt": "“Dün eski defteri buldum.” cümlesinde kaç görünür öge vardır?",
+   "answer": "Üç görünür öge vardır: dün, eski defteri, buldum. Gizli ben öznesi görünür öge sayısına eklenmez."
+  },
+  {
+   "after": 3,
+   "prompt": "“İçeri girdi.” ile “İçeriye girdi.” cümlelerinde içeri sözünün görevi nasıl değişir?",
+   "answer": "Yalın içeri zarf görevindedir; yönelme eki alan içeriye ise yer tamlayıcısıdır."
+  },
+  {
+   "after": 4,
+   "prompt": "“Ece ile Can geldi.” cümlesinde Ece ile Can hangi ögeyi oluşturur?",
+   "answer": "Eş öznelerden oluşan tek bir özne grubunu oluşturur; buradaki ile araç bildiren bir zarf tümleci kurmaz."
+  },
+  {
+   "after": 6,
+   "prompt": "“Arkadaşlar, bu kitabı okuyun.” cümlesinde arkadaşlar neden özne değildir?",
+   "answer": "Arkadaşlar burada seslenmedir ve cümle dışı kalır; yüklemin kişisi gizli siz öznesini gösterir."
+  }
+ ],
+ "cumle-turleri": [
+  {
+   "after": 1,
+   "prompt": "“Hava serinledi.” ile “Hava serindi.” cümlelerini yüklem türü bakımından ne ayırır?",
+   "answer": "İlkinde yüklem çekimli fiildir ve cümle fiil cümlesidir; ikincide serin sıfatına ek fiil gelmiştir ve cümle isim cümlesidir."
+  },
+  {
+   "after": 3,
+   "prompt": "“Ben bu yolu bilmez miyim?” cümlesi hangi anlamda sözde sorudur?",
+   "answer": "Bilgi istemez; konuşan elbette bildiğini anlatır. Gerçekten bilgi isteyen soruyla aynı iletişim amacını taşımaz."
+  },
+  {
+   "after": 5,
+   "prompt": "“Keşke gelse!” cümlesi -se taşıdığı hâlde neden şartlı birleşik cümle değildir?",
+   "answer": "Tek başına bir dilek yargısıdır; bir koşul yargısı ve ona bağlanan ayrı bir temel yargı yoktur."
+  }
+ ],
+ "ek-fiil": [
+  {
+   "after": 1,
+   "prompt": "“Sınıf sessizdi.” ile “Sınıf sessizleşti.” yüklemleri yapıca nasıl ayrılır?",
+   "answer": "İlkinde sessiz ad soylu yüklem olup ek fiil almıştır; ikincide -leş yapım ekiyle türemiş bir fiil çekimlenmiştir."
+  },
+  {
+   "after": 2,
+   "prompt": "“Anahtar cebimdeymiş!” cümlesinde imiş hangi anlamı taşıyabilir?",
+   "answer": "Konuşanın durumu yeni fark ettiğini anlatabilir; bilginin başkasından duyulmuş olması zorunlu değildir."
+  },
+  {
+   "after": 4,
+   "prompt": "“Okuyuverdi” ile “beklemişti” arasındaki temel yapı farkı nedir?",
+   "answer": "Okuyuverdi, tezlik bildiren ver- ile kurulmuş birleşik fiil yapısıdır; beklemişti ise ilk kipe hikâye katmanı eklenmiş birleşik çekimdir."
+  },
+  {
+   "after": 6,
+   "prompt": "“Dürüst idi” bitişik yazılınca neden “dürüsttü” olur?",
+   "answer": "Bitişmede idi’nin i ünlüsü düşer ve ek ünsüz uyumuna uyar; sert t’den sonra d sesi t’ye döner."
+  }
+ ],
+ "edat-baglac-unlem": [
+  {
+   "after": 1,
+   "prompt": "“Dinlenmek için durdu.” ile “Hasta olduğu için durdu.” cümlelerinde için hangi ilişkileri kurar?",
+   "answer": "İlkinde hedeflenen bir işi, yani amacı; ikincide gerçekleşmiş bir nedenin etkisini anlatır. Her için amaç bildirmez."
+  },
+  {
+   "after": 3,
+   "prompt": "“Ne sıcak ne soğuk.” sözünde ne…ne yapısı hangi anlamı verir?",
+   "answer": "Burada olumsuzluk değil, iki uç arasında olmayı anlatır; ne mesaj geldi ne telefon çaldı örneğinde ise olumsuzluk bildirir."
+  },
+  {
+   "after": 6,
+   "prompt": "Yalnız sözcüğü hangi kullanımda bağlaç olur?",
+   "answer": "Fakat anlamıyla iki yargıyı bağladığında bağlaçtır: İsterim, yalnız vaktim yok. Adı nitelerse sıfat, eylemin biçimini bildirirse zarftır."
+  },
+  {
+   "after": 8,
+   "prompt": "“Danışman olarak katıldı.” sözündeki olarak neden doğrudan edat sayılmaz?",
+   "answer": "Olarak, ol- fiiline -arak zarf-fiil ekinin gelmesiyle kurulmuştur; her olarak biçimi edat listesine eklenmez."
+  }
+ ],
+ "fiiller": [
+  {
+   "after": 1,
+   "prompt": "“Nesne yoksa durumdur.” kuralı neden yanıltıcıdır?",
+   "answer": "Oluş fiilleri de nesne almaz; meyve olgunlaştı gibi öznede kendiliğinden değişim bildirir. Ayrıca kılış fiilinin nesnesi söylenmemiş olabilir."
+  },
+  {
+   "after": 3,
+   "prompt": "Geniş zamanın olumsuzunda neden her kişide -mez ekini aramamalısın?",
+   "answer": "Olumsuz biçim kişiye göre değişir: gelmez, gelmem, gelmeyiz. Birinci kişilerde -mez görünmeyebilir."
+  },
+  {
+   "after": 4,
+   "prompt": "“Geleli bir saat oldu.” cümlesindeki geleli neden istek kipi değildir?",
+   "answer": "Geleli süre bildiren bir zarf-fiildir; çekimli yüklem değildir ve gidelim gibi bir istek bildirmez."
+  },
+  {
+   "after": 6,
+   "prompt": "“Her pazar erkenden kalkarım.” cümlesinde geniş zaman hangi anlamı taşır?",
+   "answer": "Alışkanlık anlamı taşır; her geniş zaman kullanımı kesin bir genel doğru bildirmez."
+  },
+  {
+   "after": 8,
+   "prompt": "“Bu ürün yüz lira eder.” cümlesinde et- neden yardımcı fiil değildir?",
+   "answer": "Burada et- değer anlamı taşıyan temel fiildir; bir adla birleşip yardım etmek gibi birleşik fiil kurmaz."
+  }
+ ],
+ "fiilde-cati": [
+  {
+   "after": 1,
+   "prompt": "“Anladı” fiilindeki l sesi neden edilgenlik kanıtı sayılmaz?",
+   "answer": "L sesi anla- tabanının parçasıdır, sonradan gelmiş bir çatı eki değildir; kök ile gerçek eki ayırmadan çatı kararı verilmez."
+  },
+  {
+   "after": 3,
+   "prompt": "“Yola sabah çıkıldı.” cümlesinde neden sözde özne bulunmaz?",
+   "answer": "Edilgen yapı geçişsiz çık- tabanından kurulmuştur; nesnesi olmayan fiilde özne konumuna geçecek bir öge yoktur."
+  },
+  {
+   "after": 4,
+   "prompt": "“Çocuk kendi defterini açtı.” cümlesinin yüklemi neden dönüşlü değildir?",
+   "answer": "Kendi burada defterin kime ait olduğunu belirtir; açtı fiilinde yapan eylemden kendisi etkilenmez, yüklem etkendir."
+  },
+  {
+   "after": 6,
+   "prompt": "“Parkta yürüdü.” cümlesinde parkta neden nesne değildir?",
+   "answer": "Parkta bulunma eki almış bir yer tamlayıcısıdır; yürü- geçişsizdir ve nesne almaz."
+  },
+  {
+   "after": 8,
+   "prompt": "Yazdırttı fiilinde kaç yaptırma katmanı vardır?",
+   "answer": "Yaz- fiiline -dır ve -t olmak üzere iki yaptırma katmanı gelmiştir; her katman işe yeni bir katılımcı ekler."
+  }
+ ],
+ "zarflar": [
+  {
+   "after": 1,
+   "prompt": "“Sakin çocuk konuştu.” ile “Çocuk sakin konuştu.” cümlelerinde sakin sözcüğünün türü nasıl değişir?",
+   "answer": "İlkinde çocuk adını nitelediği için sıfat, ikincide konuşmanın biçimini bildirdiği için durum zarfıdır."
+  },
+  {
+   "after": 3,
+   "prompt": "“Aşağı kat boş.” cümlesinde aşağı neden yer-yön zarfı değildir?",
+   "answer": "Aşağı burada kat adını belirtir ve sıfattır; yer-yön zarfı olması için yalın biçimde bir eylemin yönünü bildirmesi gerekir."
+  },
+  {
+   "after": 5,
+   "prompt": "“Ece kadar dikkatli yazdı.” cümlesinde kadar sözcüğünün türü nedir?",
+   "answer": "Kadar edattır; Ece kadar öbeği dikkatli oluşun derecesini karşılaştırır ama öbeğin görevi kadar sözcüğünü zarf yapmaz."
+  },
+  {
+   "after": 7,
+   "prompt": "“Gülerek anlattı.” ile “Neşeyle anlattı.” arasındaki yapı farkı nedir?",
+   "answer": "Gülerek fiil kökünden kurulmuş zarf-fiildir; neşeyle ise isim kökünden gelir, zarf görevinde olsa da fiilimsi değildir."
+  }
+ ],
+ "isimler-isim-tamlamasi": [
+  {
+   "after": 1,
+   "prompt": "Cümle başında büyük harfle yazılan “Kitap” sözcüğü neden özel ad sayılmaz?",
+   "answer": "Büyük harf yalnız cümle başı kuralından gelir; kitap aynı türden varlıkların ortak adıdır, yani tür adıdır."
+  },
+  {
+   "after": 2,
+   "prompt": "“Toplantının havası değişti.” cümlesinde hava neden soyut anlamdadır?",
+   "answer": "Burada hava fiziksel çevreyi değil ortamın ruhunu anlatır; bu anlam duyularla doğrudan algılanmaz."
+  },
+  {
+   "after": 5,
+   "prompt": "“Bence uygun.” ile “çocukça davranış” sözlerindeki -ce eklerinin farkı nedir?",
+   "answer": "Bence sözündeki -ce görelik bildiren eşitlik ekidir; çocukça sözündeki -ce ise yeni sözcük kuran yapım ekidir."
+  },
+  {
+   "after": 8,
+   "prompt": "“Tren istasyonu” ile “geniş bahçe” arasındaki tamlama farkı nedir?",
+   "answer": "Tren istasyonu iki adın kurduğu belirtisiz isim tamlamasıdır; geniş bahçe ise bahçenin niteliğini bildiren sıfat tamlamasıdır."
+  },
+  {
+   "after": 9,
+   "prompt": "“Bahçe kapısının rengi” zincirleme tamlamasında dış tamlamanın tamlayanı nedir?",
+   "answer": "Bahçe kapısı grubu bütün olarak dış tamlamanın tamlayanıdır; tamlanan ise rengi sözcüğüdür."
+  }
+ ],
+ "sifatlar": [
+  {
+   "after": 2,
+   "prompt": "“Şu kutuyu taşı.” cümlesi “Şunu taşı.” olunca şu sözcüğünün türü nasıl değişir?",
+   "answer": "Kutu adı düşünce şu artık bir adı belirten işaret sıfatı değil, adın yerini tutan işaret zamiri olur."
+  },
+  {
+   "after": 3,
+   "prompt": "Dörder soru ve dördüncü soru sözlerindeki sayı sıfatları hangi anlamları bildirir?",
+   "answer": "Dörder paylaştırma bildiren üleştirme sayı sıfatı, dördüncü ise sırayı gösteren sıra sayı sıfatıdır."
+  },
+  {
+   "after": 5,
+   "prompt": "“Hangisini aldın?” cümlesinde hangisi neden soru sıfatı değildir?",
+   "answer": "Belirtilecek açık bir ad yoktur; hangisi adın yerini soru yoluyla tutar ve soru zamiridir."
+  },
+  {
+   "after": 7,
+   "prompt": "“Çok öğrenci geldi.” cümlesinde çok hangi türdedir?",
+   "answer": "Öğrenci adının belirsiz miktarını bildirdiği için belgisiz sıfattır; öğrenci çok çalıştı cümlesinde ise eylemin miktarını bildiren zarftır."
+  },
+  {
+   "after": 9,
+   "prompt": "“İrice elma” sözündeki -ce eki hangi anlamı katar?",
+   "answer": "Niteliğe yaklaşma anlamı katar; irice biraz iri olmayı anlatır, yalnız fiziksel küçüklük bildirmez."
+  }
+ ],
+ "zamirler": [
+  {
+   "after": 1,
+   "prompt": "“Çalışırken ara vermek yararlıdır; bunu unutma.” cümlesinde bunu neyi karşılar?",
+   "answer": "Tek bir sözcüğü değil, önceki yargının tamamını, yani çalışırken ara vermenin yararlı olduğunu karşılar."
+  },
+  {
+   "after": 2,
+   "prompt": "İnsanları gösteren “Şunlar bizi bekliyor.” cümlesinde şunlar neden kişi zamiri sayılmaz?",
+   "answer": "Bu ve şu, insanları gösterse bile işaret zamiri olarak kullanılır; gösterilenin insan olması türü değiştirmez."
+  },
+  {
+   "after": 4,
+   "prompt": "“Ece aynada kendini gördü.” cümlesindeki dönüşlülüğü hangi denemeyle sınarsın?",
+   "answer": "Zamirin yerine adı koyarsın: Ece aynada Ece’yi gördü. Gören ile görülenin aynı kişi olduğu ortaya çıkar."
+  },
+  {
+   "after": 6,
+   "prompt": "“Kimi insanlar erken gelir.” ile “Kimi aradın?” cümlelerinde kimi sözcüğünün türü nedir?",
+   "answer": "İlkinde insanlar adını belirten belgisiz sıfat, ikincide soru yoluyla bir kişinin yerini tutan soru zamiridir."
+  },
+  {
+   "after": 8,
+   "prompt": "“Evim” ile “evdeyim” sözcüklerindeki eklerin görev farkı nedir?",
+   "answer": "Evim sözündeki -im aitlik bildiren iyeliktir, benim evim diye açılır; evdeyim sözünde ise bulunma eki ve yüklemde kişi bildirimi vardır."
+  }
+ ],
+ "ses-bilgisi": [
+  {
+   "after": 1,
+   "prompt": "u ünlüsü kalınlık, dudak ve açıklık bakımından nasıl bir ünlüdür?",
+   "answer": "U kalın, yuvarlak ve dar bir ünlüdür."
+  },
+  {
+   "after": 2,
+   "prompt": "Kitap sözcüğü büyük ünlü uyumuna uymuyor diye neden yazımını değiştirmezsin?",
+   "answer": "Uyum bir ölçüttür, yazımın doğruluğu ayrı bir karardır; alıntılar ve bazı sözcükler uyuma uymaz, kitap doğru bir sözcüktür."
+  },
+  {
+   "after": 5,
+   "prompt": "Ev + i → evi örneğinde neden ünlü türemesi yoktur?",
+   "answer": "Buradaki i ekin kendi sesidir; azıcık örneğindeki gibi taban ve ekin dışında yeni beliren bir ünlü yoktur."
+  },
+  {
+   "after": 7,
+   "prompt": "Kitapçığı sözcüğünde hangi iki ses olayı hangi sırayla görülür?",
+   "answer": "Önce kitap + cık birleşirken benzeşme olur ve kitapçık çıkar; sonra kitapçık + ı aşamasında k yumuşar ve kitapçığı olur."
+  },
+  {
+   "after": 9,
+   "prompt": "Öğrenci sözcüğünün hece sayısını nasıl denetlersin?",
+   "answer": "Ünlüleri sayarsın; Türkçe sözcükte hece sayısı ünlü sayısına eşittir. Üç ünlü olduğu için öğ-ren-ci üç hecedir."
+  }
+ ],
+ "sozcukte-yapi": [
+  {
+   "after": 1,
+   "prompt": "Balık sözcüğünde kök neden bal olarak ayrılmaz?",
+   "answer": "Bal ile balık arasında gereken anlam ilişkisi yoktur; kök anlamla ilişkili en küçük parçadır, bu yüzden balık kök olarak kalır."
+  },
+  {
+   "after": 3,
+   "prompt": "Yalın hâldeki bir ad için hangi yanlış çıkarımı yapmamalısın?",
+   "answer": "Hiç ek almadığını düşünmemelisin; yalın olmak yalnız hâl eki almamak demektir, ad çokluk ya da iyelik eki taşıyabilir."
+  },
+  {
+   "after": 6,
+   "prompt": "“Gelecek hafta” ile “Yarın gelecek.” sözlerinde gelecek hangi görevleri üstlenir?",
+   "answer": "Gelecek hafta sözünde haftayı niteleyen sıfat-fiil görevindedir; yarın gelecek sözünde ise gelecek zamanla çekimlenmiş yüklemdir."
+  },
+  {
+   "after": 8,
+   "prompt": "“Annemsiz” sözcüğü yapımın hep çekimden önce geldiği kuralını nasıl sınırlar?",
+   "answer": "Anne + m + siz çözümünde önce iyelik çekim eki, sonra yokluk bildiren -siz yapım eki gelir."
+  },
+  {
+   "after": 10,
+   "prompt": "Çözemez ile çözemeyebilir arasındaki anlam farkı nedir?",
+   "answer": "Çözemez yapamamayı bildirir; çözemeyebilir ise yapamama olasılığını anlatır."
+  }
+ ]
+}

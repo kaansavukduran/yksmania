@@ -13,6 +13,7 @@ import { clarifiedGuideView } from "../learning/guidePresentation028";
 import { TheoryReviewAction } from "../components/LearningReviews";
 import { TopicCompletion } from "../components/StudyPlanning";
 import { lessonTopic, topicLessons } from "../domain/studyPlan";
+import { OsymTopicPanel } from "../components/OsymPatterns";
 import { OriginalExerciseReader } from "../learning/OriginalExerciseReader";
 const NarrativeRecall = lazy(() =>
   import("../learning/NarrativeExplorer").then((module) => ({
@@ -117,6 +118,7 @@ export function Theory({
           <Suspense fallback={<p role="status">Video önerileri açılıyor…</p>}>
             <VideoRecommendations031 lessonId={lesson.id} />
           </Suspense>
+          {relatedTopic && <OsymTopicPanel topicId={relatedTopic} subjectId={lesson.subjectId} embedded />}
           <div className="source-box">
             <strong>{t("sourceInfo")}</strong>
             <p>{guide?.source ?? l(lesson.source)}</p>
