@@ -221,7 +221,7 @@ for (const [subject, lessonId] of cases) {
         expectedPanels[i][0],
       );
       for (const paragraph of expectedPanels[i][1])
-        await expect(visible.nth(i)).toContainText(paragraph);
+        await expect(visible.nth(i)).toContainText(typeset(paragraph));
       await expect(page.locator(".help-full-solution")).toHaveCount(0);
       await expect
         .poll(async () => (await stored(page)).draft?.helpLevel)
@@ -230,9 +230,9 @@ for (const [subject, lessonId] of cases) {
     await page.locator(".help-next").click();
     const full = page.locator(".help-full-solution");
     await expect(full).toBeVisible();
-    await expect(full.locator("li")).toHaveText(help.optionReasons);
-    await expect(full).toContainText(help.commonError);
-    await expect(full).toContainText(help.check);
+    await expect(full.locator("li")).toHaveText(help.optionReasons.map(typeset));
+    await expect(full).toContainText(typeset(help.commonError));
+    await expect(full).toContainText(typeset(help.check));
     await expect(full).toContainText(question.explanation.tr);
     await expect(page.locator(".help-next")).toHaveCount(0);
     await expect
@@ -254,7 +254,7 @@ for (const [subject, lessonId] of cases) {
     await context.setOffline(true);
     await page.reload();
     await expect(page.locator(".help-full-solution li")).toHaveText(
-      help.optionReasons,
+      help.optionReasons.map(typeset),
     );
     await expect(
       page.getByRole("textbox", { name: "Notun", exact: true }),
@@ -525,16 +525,16 @@ for (const target of guardedCases) {
           panels[level - 1][0],
         );
         for (const paragraph of panels[level - 1][1])
-          await expect(sections.nth(level - 1)).toContainText(paragraph);
+          await expect(sections.nth(level - 1)).toContainText(typeset(paragraph));
         await expect(page.locator(".help-full-solution")).toHaveCount(0);
       }
     }
     const full = page.locator(".help-full-solution");
     await expect(full).toBeVisible();
-    await expect(full.locator("li")).toHaveText(help.optionReasons);
+    await expect(full.locator("li")).toHaveText(help.optionReasons.map(typeset));
     await expect(full).toContainText(target.explanation);
-    await expect(full).toContainText(help.commonError);
-    await expect(full).toContainText(help.check);
+    await expect(full).toContainText(typeset(help.commonError));
+    await expect(full).toContainText(typeset(help.check));
     await expect(page.locator(".help-next")).toHaveCount(0);
     await page.locator(".answer").nth(target.selected).click();
     await page
@@ -601,7 +601,7 @@ for (const target of guardedCases) {
       targetCorrect ? 0 : 1,
     );
     await expect(page.locator(".help-full-solution li")).toHaveText(
-      help.optionReasons,
+      help.optionReasons.map(typeset),
     );
     await expect(page.locator(".help-full-solution")).toContainText(
       target.explanation,

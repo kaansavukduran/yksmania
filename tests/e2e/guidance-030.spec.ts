@@ -90,7 +90,7 @@ const diagnostics = new WeakMap<
 const promptById = new Map(promptFixtures.map((row) => [row.id, row]));
 const shownPrompt = (q: Lesson["questions"][number]) =>
   promptById.get(q.id)?.prompt ?? q.prompt.tr;
-const shownExplanation = (q: Lesson["questions"][number]) => q.explanation.tr;
+const shownExplanation = (q: Lesson["questions"][number]) => typeset(q.explanation.tr);
 const flat = (q: Lesson["questions"][number]) => ({
   id: q.id,
   prompt: q.prompt.tr,
@@ -340,7 +340,7 @@ for (const [subject, lessonId] of cases) {
         expectedPanels[i][0],
       );
       for (const paragraph of expectedPanels[i][1])
-        await expect(visible.nth(i)).toContainText(paragraph);
+        await expect(visible.nth(i)).toContainText(typeset(paragraph));
       await expect(page.locator(".help-full-solution")).toHaveCount(0);
       await expect
         .poll(async () => (await stored(page)).draft?.helpLevel)
@@ -349,9 +349,9 @@ for (const [subject, lessonId] of cases) {
     await page.locator(".help-next").click();
     const full = page.locator(".help-full-solution");
     await expect(full).toBeVisible();
-    await expect(full.locator("li")).toHaveText(help.optionReasons);
-    await expect(full).toContainText(help.commonError);
-    await expect(full).toContainText(help.check);
+    await expect(full.locator("li")).toHaveText(help.optionReasons.map(typeset));
+    await expect(full).toContainText(typeset(help.commonError));
+    await expect(full).toContainText(typeset(help.check));
     await expect(full).toContainText(shownExplanation(question));
     await expect(page.locator(".help-next")).toHaveCount(0);
     await expect
@@ -375,7 +375,7 @@ for (const [subject, lessonId] of cases) {
     await context.setOffline(true);
     await page.reload();
     await expect(page.locator(".help-full-solution li")).toHaveText(
-      help.optionReasons,
+      help.optionReasons.map(typeset),
     );
     await expect(
       page.getByRole("textbox", { name: "Notun", exact: true }),
@@ -630,16 +630,16 @@ for (const target of guardedCases) {
           panels[level - 1][0],
         );
         for (const paragraph of panels[level - 1][1])
-          await expect(sections.nth(level - 1)).toContainText(paragraph);
+          await expect(sections.nth(level - 1)).toContainText(typeset(paragraph));
         await expect(page.locator(".help-full-solution")).toHaveCount(0);
       }
     }
     const full = page.locator(".help-full-solution");
     await expect(full).toBeVisible();
-    await expect(full.locator("li")).toHaveText(help.optionReasons);
+    await expect(full.locator("li")).toHaveText(help.optionReasons.map(typeset));
     await expect(full).toContainText(target.explanation);
-    await expect(full).toContainText(help.commonError);
-    await expect(full).toContainText(help.check);
+    await expect(full).toContainText(typeset(help.commonError));
+    await expect(full).toContainText(typeset(help.check));
     await expect(page.locator(".help-next")).toHaveCount(0);
     await page.locator(".answer").nth(target.selected).click();
     await page
@@ -706,7 +706,7 @@ for (const target of guardedCases) {
       targetCorrect ? 0 : 1,
     );
     await expect(page.locator(".help-full-solution li")).toHaveText(
-      help.optionReasons,
+      help.optionReasons.map(typeset),
     );
     await expect(page.locator(".help-full-solution")).toContainText(
       target.explanation,
@@ -1222,11 +1222,11 @@ test.describe("030 mobile full staged question help", () => {
         await expect(page.locator(".help-full-solution")).toHaveCount(0);
     }
     const full = page.locator(".help-full-solution");
-    await expect(full.locator("li")).toHaveText(help.optionReasons);
+    await expect(full.locator("li")).toHaveText(help.optionReasons.map(typeset));
     await expect(full).toContainText(question.explanation.tr);
-    await expect(full).toContainText(help.commonError);
-    await expect(full).toContainText(help.check);
-    for (const paragraph of [...help.knowledge, help.strategy, ...help.steps])
+    await expect(full).toContainText(typeset(help.commonError));
+    await expect(full).toContainText(typeset(help.check));
+    for (const paragraph of [...help.knowledge, help.strategy, ...help.steps].map(typeset))
       await expect(page.locator(".help-content")).toContainText(paragraph);
     await expect(page.locator(".help-next")).toHaveCount(0);
     const helped = await stored(page);
@@ -1267,7 +1267,7 @@ test.describe("030 mobile full staged question help", () => {
     await page.reload();
     await expect(page.locator(".question-panel h2")).toHaveText(typeset(question.prompt.tr));
     await expect(page.locator(".help-full-solution li")).toHaveText(
-      help.optionReasons,
+      help.optionReasons.map(typeset),
     );
     await expect(
       page.getByRole("textbox", { name: "Notun", exact: true }),

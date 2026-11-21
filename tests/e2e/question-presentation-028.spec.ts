@@ -1,3 +1,4 @@
+import { typeset } from "../../src/domain/typeset";
 import {
   test,
   expect,
@@ -686,7 +687,7 @@ test("eq-2: three real options, five explicit panels then full6, canonical marke
     if (level === 2)
       await expect(
         page.locator(".help-content > section").nth(1).locator("p"),
-      ).toHaveText(eqGuidance.strategy);
+      ).toHaveText(typeset(eqGuidance.strategy));
     const current = await stored(page);
     expect(current.draft).toMatchObject({
       index,
@@ -700,7 +701,7 @@ test("eq-2: three real options, five explicit panels then full6, canonical marke
     expect({ ...current, draft: before.draft }).toEqual(before);
   }
   await expect(page.locator(".help-full-solution > ol > li")).toHaveText(
-    eqGuidance.optionReasons,
+    eqGuidance.optionReasons.map(typeset),
   );
   await expect(page.locator(".help-full-solution > ol > li")).toHaveCount(3);
   await expect(page.locator(".help-full-solution > p").first()).toHaveText(
@@ -720,7 +721,7 @@ test("eq-2: three real options, five explicit panels then full6, canonical marke
   await page.reload();
   await visibleCard(page.locator(".question-panel"), card, ".answer");
   await expect(page.locator(".help-full-solution > ol > li")).toHaveText(
-    eqGuidance.optionReasons,
+    eqGuidance.optionReasons.map(typeset),
   );
   await expect(page.locator(".help-next")).toHaveCount(0);
   expect(await stored(page)).toEqual(full);

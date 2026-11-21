@@ -285,7 +285,7 @@ async function offlineReload(page: Page, context: BrowserContext) {
 async function expectFull(page: Page) {
   await expect(page.locator(".help-full-solution")).toBeVisible();
   await expect(page.locator(".help-full-solution ol > li")).toHaveText(
-    rows[0].guidance.optionReasons,
+    rows[0].guidance.optionReasons.map(typeset),
   );
   await expect(page.locator(".help-full-solution ol > li")).toHaveCount(5);
   await expect(page.locator(".help-content h3")).toHaveText([
@@ -305,7 +305,7 @@ async function expectMethod(page: Page) {
   ]);
   await expect(
     page.locator(".help-content > section").nth(1).locator("p"),
-  ).toHaveText(rows[0].guidance.strategy);
+  ).toHaveText(typeset(rows[0].guidance.strategy));
   await expect(page.locator(".help-full-solution")).toHaveCount(0);
   await expect(
     page.getByRole("button", { name: "1. adım aç", exact: true }),
@@ -521,7 +521,7 @@ test("fresh inline-guidance exam level2 remains method and its next explicit hel
   ]);
   await expect(
     page.locator(".help-content > section").nth(2).locator("p"),
-  ).toHaveText(rows[0].guidance.steps[0]);
+  ).toHaveText(typeset(rows[0].guidance.steps[0]));
   await expect(page.locator(".help-full-solution")).toHaveCount(0);
   const reloaded = await unchanged(page, helped);
   await attachState(testInfo, { fixture, mounted, helped, reloaded });
