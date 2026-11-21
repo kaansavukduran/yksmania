@@ -297,7 +297,7 @@ export const forge032SmokeCases = [
           "https://ogmmateryal.eba.gov.tr/panel/upload/etkilesimli/kitap/kazanim_kavrama/pdf/9/matematik.pdf",
         ],
         [
-          "MEB/OGM: Defterim Matematik 9 · sayfa245",
+          "MEB/OGM: Defterim Matematik 9 · sayfa 245",
           "https://ogmmateryal.eba.gov.tr/panel/upload/etkilesimli/kitap/defterim/9/matematik/files/basic-html/page245.html",
         ],
         [
