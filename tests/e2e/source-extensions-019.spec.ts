@@ -144,11 +144,11 @@ for (const extension of extensions)
       await expect(page.locator(".study-title h1")).toHaveText(lesson.title.tr);
       await expectGuideSections(page, old.sections.length + extension.sections.length);
       await expect(page.locator(".guide-section").first()).toContainText(
-        old.sections[0].paragraphs[0],
+        typeset(old.sections[0].paragraphs[0]),
       );
       const added = page.locator(".guide-section").nth(old.sections.length);
       for (const paragraph of extension.sections[0].paragraphs)
-        await expect(added).toContainText(paragraph);
+        await expect(added).toContainText(typeset(paragraph));
       const example = page.locator(".worked-example").nth(old.examples.length),
         authored = extension.examples[0];
       await example.locator("summary").click();
@@ -158,7 +158,7 @@ for (const extension of extensions)
         .click();
       await expect(example.locator(".worked-steps li")).toHaveCount(1);
       await expect(example.locator(".worked-steps li")).toContainText(
-        authored.steps[0].explanation,
+        typeset(authored.steps[0].explanation),
       );
       await example
         .getByRole("button", { name: "Çözümün tamamını göster", exact: true })
@@ -167,10 +167,10 @@ for (const extension of extensions)
         authored.steps.length,
       );
       await expect(example.locator(".worked-conclusion")).toContainText(
-        authored.answer,
+        typeset(authored.answer),
       );
       await expect(example.locator(".worked-conclusion")).toContainText(
-        authored.pitfall,
+        typeset(authored.pitfall),
       );
       expect(learning(await state(page))).toEqual(before);
       await nav(page, "Kopya Kağıtları");
@@ -189,7 +189,7 @@ for (const extension of extensions)
         .locator(".cheat-section")
         .nth(old.sections.length);
       for (const paragraph of extension.sections[0].paragraphs)
-        await expect(sheetAdded).toContainText(paragraph);
+        await expect(sheetAdded).toContainText(typeset(paragraph));
       await expect(page.locator('input[type="file"]')).toHaveCount(0);
       await nav(page, "Sorular");
       await page.getByRole("button", { name: exam, exact: true }).click();
