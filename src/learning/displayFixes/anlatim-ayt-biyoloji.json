@@ -186,5 +186,353 @@
  {
   "from": "Bütün prokaryotların tek halkasal kromozom, hiç DNA bağlayıcı protein ve aynı eşlenme düzeni taşıdığı söylenemez. Bakterilerde histon benzeri DNA düzenleyici proteinler vardır; arkelerde histon benzeri veya histon proteinleri de görülebilir. Temel okul karşılaştırması çekirdek zarının yokluğudur; ayrıntılı çeşitliliği yok sayan mutlak tanımlara dönüştürülmez.",
   "to": "Bütün prokaryotların tek halkasal kromozom, hiç DNA bağlayıcı protein ve aynı eşlenme düzeni taşıdığı söylenemez. Bakterilerde histon benzeri DNA düzenleyici proteinler vardır; arkelerde histon benzeri veya histon proteinleri de görülebilir. Temel karşılaştırma çekirdek zarının yokluğudur; ayrıntılı çeşitliliği yok sayan mutlak tanımlara dönüştürülmez."
+ },
+ {
+  "from": "1944’te Avery, MacLeod ve McCarty, S kökenli dönüştürücü özütü farklı işlemlerle karşılaştırdı. Proteaz proteinleri, RNaz RNA’yı, DNaz DNA’yı bozmak için kullanılır. Uygun koşullarda proteaz ve RNaz sonrası dönüşüm sürerken DNA’yı bozan işlem dönüşümü ortadan kaldırır. Kaynak şemasındaki yağları ve karbonhidratları parçalayan seçici enzim kontrollerinde de dönüşüm sürer; lipaz veya karbonhidrat parçalayıcı işlemin hedefi, DNazın hedefiyle aynı değildir.",
+  "to": "1944’te Avery, MacLeod ve McCarty, S kökenli dönüştürücü özütü farklı işlemlerle karşılaştırdı. Proteaz proteinleri, RNaz RNA’yı, DNaz DNA’yı bozmak için kullanılır. Uygun koşullarda proteaz ve RNaz sonrası dönüşüm sürerken DNA’yı bozan işlem dönüşümü ortadan kaldırır. Yağları ve karbonhidratları parçalayan seçici enzim kontrollerinde de dönüşüm sürer; lipaz veya karbonhidrat parçalayıcı işlemin hedefi, DNazın hedefiyle aynı değildir."
+ },
+ {
+  "from": "Bu derste verilen oyuncak bağıntı J=kAΔP/T olsun; k=1 seçilen ölçek katsayısı, A alan, T pozitif kalınlık, ΔP ise alveol eksi kan kısmi basınç farkıdır. A=2, ΔP=3, T=1 için J=6 model birimi bulunur. Bu katsayı gerçek bir kişinin akciğer difüzyon ölçümü değildir.",
+  "to": "Burada verilen oyuncak bağıntı J=kAΔP/T olsun; k=1 seçilen ölçek katsayısı, A alan, T pozitif kalınlık, ΔP ise alveol eksi kan kısmi basınç farkıdır. A=2, ΔP=3, T=1 için J=6 model birimi bulunur. Bu katsayı gerçek bir kişinin akciğer difüzyon ölçümü değildir."
+ },
+ {
+  "from": "Kaynakta verilen yaklaşık öğretim dağılımı toplam CO₂’nin yüzde 7 çözünmüş, yüzde 23 karbamino ve yüzde 70 bikarbonat biçimidir. Bu paylar tanımlı koşulların yaklaşık anlatımıdır; tüm canlı ve durumların değişmez sabiti değildir. Yüzde 23, yüzde 93’lük alt grubun yeniden yüzdesi olarak hesaplanmaz.",
+  "to": "Yaklaşık öğretim dağılımı toplam CO₂’nin yüzde 7 çözünmüş, yüzde 23 karbamino ve yüzde 70 bikarbonat biçimidir. Bu paylar tanımlı koşulların yaklaşık anlatımıdır; tüm canlı ve durumların değişmez sabiti değildir. Yüzde 23, yüzde 93’lük alt grubun yeniden yüzdesi olarak hesaplanmaz."
+ },
+ {
+  "from": "Böbrek su ve elektrolit dengesi, asit-baz dengesi ve metabolik atıkların uzaklaştırılmasına katkı verir. İdrarda atılan miktar, süzülen miktarın aynısı değildir; geri emilim ve salgılama bu içeriği değiştirir. Nefronun farklı bölümleri sonraki derste bu seçiciliğin nasıl kurulduğunu gösterecek.",
+  "to": "Böbrek su ve elektrolit dengesi, asit-baz dengesi ve metabolik atıkların uzaklaştırılmasına katkı verir. İdrarda atılan miktar, süzülen miktarın aynısı değildir; geri emilim ve salgılama bu içeriği değiştirir. Bu seçicilik nefronun farklı bölümlerinde kurulur."
+ },
+ {
+  "from": "Kaynakta yaklaşık 2 °C fark öğretim örneği olarak verilir; bütün kişilerde her anda değişmez sayı değildir. Sıcaklık koşulu gamet yapımını etkilerken testisin hormon görevi ayrı olarak izlenir. Organın dışarıda konumlanması, kanla hiçbir bağlantısı olmadığı veya hiç oksijen kullanmadığı anlamına gelmez.",
+  "to": "Yaklaşık 2 °C fark öğretim örneği olarak verilir; bütün kişilerde her anda değişmez sayı değildir. Sıcaklık koşulu gamet yapımını etkilerken testisin hormon görevi ayrı olarak izlenir. Organın dışarıda konumlanması, kanla hiçbir bağlantısı olmadığı veya hiç oksijen kullanmadığı anlamına gelmez."
+ },
+ {
+  "from": "Sekretin kendisi asidi bir enzim gibi hidroliz etmez. Hormon kana, bikarbonatlı salgı ise kanalla lümene gider. Gerçek salgı; sinirler ve başka hormonlarla birlikte düzenlenir. Tek bir asit düğmesinden her kişide değişmez bir pH veya mililitre salgı hesaplamak, kaynakta olmayan nicel yasa üretmek olur.",
+  "to": "Sekretin kendisi asidi bir enzim gibi hidroliz etmez. Hormon kana, bikarbonatlı salgı ise kanalla lümene gider. Gerçek salgı; sinirler ve başka hormonlarla birlikte düzenlenir. Tek bir asit düğmesinden her kişide değişmez bir pH veya mililitre salgı hesaplamak, verilmemiş bir nicel yasa üretmek olur."
+ },
+ {
+  "from": "Hidroliz hesabında açık bir doğrusal n birimli zincirin başlangıçta n−1 bağı vardır. K ayrı bağ kesilirse k+1 zincir parçası, n−1−k kalan bağ ve k su kullanımı bulunur. Kesim yerleri verilmeden her parçaya monomer denmez. Hormon sinyalini bu bağ sayısına bağlamak için ayrıca verilmiş deneysel veri gerekir.",
+  "to": "Hidroliz hesabında açık bir doğrusal n birimli zincirin başlangıçta n−1 bağı vardır. k sayıda ayrı bağ kesilirse k+1 zincir parçası, n−1−k kalan bağ ve k su kullanımı bulunur. Kesim yerleri verilmeden her parçaya monomer denmez. Hormon sinyalini bu bağ sayısına bağlamak için ayrıca verilmiş deneysel veri gerekir."
+ },
+ {
+  "from": "Vagus ucundaki asetilkolin bu bağlamda nörotransmiterdir; kanla uzak hedefe giden adrenalinle aynı yol değildir. Ateş, etkinlik ve otonom durum gibi etkenlerle kalp periyodu değişebilir. Kaynaktaki yaklaşık 0,8 saniyelik çevrim, her insanda yaşam boyu sabit süre sayılmaz.",
+  "to": "Vagus ucundaki asetilkolin bu bağlamda nörotransmiterdir; kanla uzak hedefe giden adrenalinle aynı yol değildir. Ateş, etkinlik ve otonom durum gibi etkenlerle kalp periyodu değişebilir. Yaklaşık 0,8 saniyelik çevrim, her insanda yaşam boyu sabit süre sayılmaz."
+ },
+ {
+  "from": "Nabız arter duvarındaki basınç dalgasıdır; bir kan hücresinin kalpten parmağa aynı hızla yolculuğuyla özdeş değildir. Bu derste v=Q/A yalnız verilmiş Q ve A arasındaki bağı hesaplar. Bütün dolaşım direncini bulmak için gerekli viskozite, uzunluk ve yarıçap verileri ayrıca gerekir.",
+  "to": "Nabız arter duvarındaki basınç dalgasıdır; bir kan hücresinin kalpten parmağa aynı hızla yolculuğuyla özdeş değildir. Burada v=Q/A yalnız verilmiş Q ve A arasındaki bağı hesaplar. Bütün dolaşım direncini bulmak için gerekli viskozite, uzunluk ve yarıçap verileri ayrıca gerekir."
+ },
+ {
+  "from": "Okulun azaltılmış modelinde kapiller hidrostatik basınç sıvıyı dışa iten, plazma proteinlerinin onkotik etkisi içe çeken karşı etki olarak verilir. Diğer basınç terimleri sıfır kabul edilirse net dışa fark Pc−π olur. Pozitif işaret dışa, negatif işaret içe eğilimi anlatır.",
+  "to": "Azaltılmış modelde kapiller hidrostatik basınç sıvıyı dışa iten, plazma proteinlerinin onkotik etkisi içe çeken karşı etki olarak verilir. Diğer basınç terimleri sıfır kabul edilirse net dışa fark Pc−π olur. Pozitif işaret dışa, negatif işaret içe eğilimi anlatır."
+ },
+ {
+  "from": "Klasik model sınav sorusunda açıkça verilen varsayımlar altında kullanılabilir. Modern ayrıntıların bütün katsayıları verilmeden yeni sayısal bir gerçek kişi hesabı uydurulmaz. Hangi terimlerin yok sayıldığını önce yazmak hem okul hesabını doğru çözmeyi hem modelin sınırını anlamayı sağlar.",
+  "to": "Klasik model sınav sorusunda açıkça verilen varsayımlar altında kullanılabilir. Modern ayrıntıların bütün katsayıları verilmeden yeni sayısal bir gerçek kişi hesabı uydurulmaz. Hangi terimlerin yok sayıldığını önce yazmak hem basit hesabı doğru çözmeyi hem modelin sınırını anlamayı sağlar."
+ },
+ {
+  "from": "Ders tablosunda eritrosit ürünü verilirken verici hücre antijeni ile alıcı antikorları düşünülür; plazma ürününde antikorun yönü farklıdır. ABO/Rh etiketi tek başına gerçek nakil kararı değildir; çapraz karşılaştırma ve klinik koşullar gerekir. Anti-D duyarlanması da her ilk karşılaşmada anında aynı miktarda oluşmak zorunda değildir.",
+  "to": "Eritrosit ürünü verilirken verici hücre antijeni ile alıcı antikorları düşünülür; plazma ürününde antikorun yönü farklıdır. ABO/Rh etiketi tek başına gerçek nakil kararı değildir; çapraz karşılaştırma ve klinik koşullar gerekir. Anti-D duyarlanması da her ilk karşılaşmada anında aynı miktarda oluşmak zorunda değildir."
+ },
+ {
+  "from": "Bir öğretim kartında sadece lenf çıkışı engellenmişse girişler ayrı sabit tutulur. Kapasitenin azalmasını bütün filtrasyonun da otomatik aynı oranda azalması saymak yanlış olur. Doku sıvısı şişliği kişisel tanıya indirgenmez; model yalnız belirtilen giriş-çıkış nedenselliğini gösterir.",
+  "to": "Bir öğretim örneğinde sadece lenf çıkışı engellenmişse girişler ayrı sabit tutulur. Kapasitenin azalmasını bütün filtrasyonun da otomatik aynı oranda azalması saymak yanlış olur. Doku sıvısı şişliği kişisel tanıya indirgenmez; model yalnız belirtilen giriş-çıkış nedenselliğini gösterir."
+ },
+ {
+  "from": "İnme iskemik tıkanma veya kanama gibi farklı mekanizmalarla oluşabilir; bütün inmeler tek pıhtı değildir. Koroner damar hastalığı ile lenf yolu engelini de ayır. Kaynaktaki bir ilaç adı her göğüs ağrısı veya inmede aynı kişisel müdahalenin uygun olduğu sonucunu vermez; burada hastalık mekanizmaları öğrenilir, ilaç seçimi yapılmaz.",
+  "to": "İnme iskemik tıkanma veya kanama gibi farklı mekanizmalarla oluşabilir; bütün inmeler tek pıhtı değildir. Koroner damar hastalığı ile lenf yolu engelini de ayır. Bir ilaç adı her göğüs ağrısı veya inmede aynı kişisel müdahalenin uygun olduğu sonucunu vermez; burada hastalık mekanizmaları öğrenilir, ilaç seçimi yapılmaz."
+ },
+ {
+  "from": "İskelet kası etkinliği toplardamar ve lenf akımını da destekleyebilir; kalp kasının pompa işi ise ayrı örgütlenmiştir. Kaynaklarda verilen vücut kütlesi veya ısı yüzdeleri yaş, etkinlik ve ölçüm koşuluyla değişebilir; herkesin değişmez oranları sayılmaz. Kuvvet, enerji ve güç de aynı nicelik değildir. Kas enerji yaratmaz; ATP ve besinlerden sağlanan enerjinin bir bölümünü mekanik işe, bir bölümünü ısıya dönüştürür.",
+  "to": "İskelet kası etkinliği toplardamar ve lenf akımını da destekleyebilir; kalp kasının pompa işi ise ayrı örgütlenmiştir. Vücut kütlesi veya ısı yüzdeleri yaş, etkinlik ve ölçüm koşuluyla değişebilir; herkesin değişmez oranları sayılmaz. Kuvvet, enerji ve güç de aynı nicelik değildir. Kas enerji yaratmaz; ATP ve besinlerden sağlanan enerjinin bir bölümünü mekanik işe, bir bölümünü ısıya dönüştürür."
+ },
+ {
+  "from": "Dinlenme ve toparlanma koşullarında ATP kullanılarak kreatin fosfat havuzu yenilenebilir. Kaynaktaki yaklaşık saniye değerleri efor şiddeti, depo ve başka koşullara bağlı öğretim örnekleridir; herkes için tam 15 saniyede biten zorunlu bir saat değildir. ATP havuzunun kararlı kalması ATP kullanılmadığı anlamına da gelmez: yeniden sentez tüketimi karşılayabilir. Kapalı bir deney miktarıyla kan akışı olan canlı kasın net bilançosunu eşitleme.",
+  "to": "Dinlenme ve toparlanma koşullarında ATP kullanılarak kreatin fosfat havuzu yenilenebilir. Yaklaşık saniye değerleri efor şiddeti, depo ve başka koşullara bağlı öğretim örnekleridir; herkes için tam 15 saniyede biten zorunlu bir saat değildir. ATP havuzunun kararlı kalması ATP kullanılmadığı anlamına da gelmez: yeniden sentez tüketimi karşılayabilir. Kapalı bir deney miktarıyla kan akışı olan canlı kasın net bilançosunu eşitleme."
+ },
+ {
+  "from": "EMG kasın elektriksel etkinliğinin kaydıyla ilişkilidir; mekanik kuvveti veya kas uzunluğunu doğrudan aynı birimde ölçmez. Bir grafikteki artışı yorumlamadan önce ölçülen niceliği ve ölçeği oku. Elektriksel etkinlik, sinir iletimi ve mekanik yanıt birbirine bağlı olsa da tek veri bütün basamakların sağlamlığını veya belirli bir hastalığı kesin göstermez. Bu derste kayıt örnekleri mekanizma ve kanıt ayrımını öğretir.",
+  "to": "EMG kasın elektriksel etkinliğinin kaydıyla ilişkilidir; mekanik kuvveti veya kas uzunluğunu doğrudan aynı birimde ölçmez. Bir grafikteki artışı yorumlamadan önce ölçülen niceliği ve ölçeği oku. Elektriksel etkinlik, sinir iletimi ve mekanik yanıt birbirine bağlı olsa da tek veri bütün basamakların sağlamlığını veya belirli bir hastalığı kesin göstermez. Buradaki kayıt örnekleri mekanizma ve kanıt ayrımını öğretir."
+ },
+ {
+  "from": "Modelde aynı hacimli bir küpün eş küçük küplere ayrılması yüzey alanını açıklayan oyuncak geometridir. Gerçek yiyeceklerin biçimi, gözenekleri ve enzime erişimi değiştiğinden yüzey iki kat olduysa sindirim hızı kesin iki kat olur sonucu verilmez. Safranın yağ damlalarını küçültmesi de mekanik örnektir; hidroliz yapan lipazla aynı iş değildir. Safra ayrıntısı sonraki bağırsak- yardımcı organ ünitesine bağlı bir karşılaştırmadır.",
+  "to": "Modelde aynı hacimli bir küpün eş küçük küplere ayrılması yüzey alanını açıklayan oyuncak geometridir. Gerçek yiyeceklerin biçimi, gözenekleri ve enzime erişimi değiştiğinden yüzey iki kat olduysa sindirim hızı kesin iki kat olur sonucu verilmez. Safranın yağ damlalarını küçültmesi de mekanik örnektir; hidroliz yapan lipazla aynı iş değildir. Safra ayrıntısı bağırsak ve yardımcı organlarla ilgili bir karşılaştırmadır."
+ },
+ {
+  "from": "Bir doğrusal zincirde bir bağın hidrolizi parçaların sayısını bir artırabilir; fakat parça sayısı ile bütün ürünlerin monomer olması aynı şey değildir. Yirmi glikoz birimli tek model zincirin üç yerden kesilip dört parça olması, yirmi serbest glikoz oluştuğunu göstermez. Dallanma, halka veya birden çok başlangıç zinciri varsa basit tek çizgi sayımı yeniden koşullandırılmalıdır. Soru kartı bu koşulları kendi içinde verir.",
+  "to": "Bir doğrusal zincirde bir bağın hidrolizi parçaların sayısını bir artırabilir; fakat parça sayısı ile bütün ürünlerin monomer olması aynı şey değildir. Yirmi glikoz birimli tek model zincirin üç yerden kesilip dört parça olması, yirmi serbest glikoz oluştuğunu göstermez. Dallanma, halka veya birden çok başlangıç zinciri varsa basit tek çizgi sayımı yeniden koşullandırılmalıdır. Bir soru bu koşulları kendi içinde verir."
+ },
+ {
+  "from": "Öğretim modelindeki koruma engeli seçimi bir klinik test değildir; hatalı eşgüdüm durumunda başarılı geçiş gösterilmez ve neden açıklanır. Kullanıcıdan yutarken nefes denemesi veya ters durma gibi gerçek davranış istenmez. Amaç, kaynak şeklinin iki-üç karesinde değişen geçitlerin hangi işlevi yaptığını kavramaktır. Bir çizimde bolusun yerini değiştirmek gerçek bir tanı veya güvenli yutma değerlendirmesi oluşturmaz.",
+  "to": "Öğretim modelindeki koruma engeli seçimi bir klinik test değildir; hatalı eşgüdüm durumunda başarılı geçiş gösterilmez ve neden açıklanır. Kullanıcıdan yutarken nefes denemesi veya ters durma gibi gerçek davranış istenmez. Amaç, şekildeki iki-üç karede değişen geçitlerin hangi işlevi yaptığını kavramaktır. Bir çizimde bolusun yerini değiştirmek gerçek bir tanı veya güvenli yutma değerlendirmesi oluşturmaz."
+ },
+ {
+  "from": "Büyük molekülün küçük parçalara ayrılması, bağırsakta emilim ve hücrede kullanımı ayrı konularla tamamlanır. Bu ünite ağızdan mideye hazırlık ve taşıma yolunu ayrıntılandırır; bütün sindirim-emilim sisteminin tamamını tek sayfada bitirmiş sayılmaz. Kendi tahminini şekil ve normal metinle karşılaştırmak, organ adını ezberlemekten daha aktarılabilir bir beceridir. Keşif seçimleri doğru soru veya konu tamamlama yerine geçmez.",
+  "to": "Büyük molekülün küçük parçalara ayrılması, bağırsakta emilim ve hücrede kullanımı ayrı konularla tamamlanır. Burada ağızdan mideye hazırlık ve taşıma yolu ayrıntılanır; sindirim-emilim sisteminin geri kalanı ayrı konulardır. Kendi tahminini şekil ve normal metinle karşılaştırmak, organ adını ezberlemekten daha aktarılabilir bir beceridir."
+ },
+ {
+  "from": "Mideye gelen besinlerin hepsi aynı anda ince bağırsağa boşaltılmaz. Karıştırma, içerik türü, miktar ve duodenumdan gelen girdiler boşalma örüntüsünü etkileyebilir. Kaynaktaki saat aralıkları her öğün ve kişiye değişmez sayaç oluşturmaz. Bir modelde pilor açılması seçildiğinde yalnız verilen geçiş koşulu gösterilir; bütün gerçek mide işlevi tek aç-kapa düğmesi değildir.",
+  "to": "Mideye gelen besinlerin hepsi aynı anda ince bağırsağa boşaltılmaz. Karıştırma, içerik türü, miktar ve duodenumdan gelen girdiler boşalma örüntüsünü etkileyebilir. Yaklaşık saat aralıkları her öğün ve kişiye değişmez sayaç oluşturmaz. Bir modelde pilor açılması seçildiğinde yalnız verilen geçiş koşulu gösterilir; bütün gerçek mide işlevi tek aç-kapa düğmesi değildir."
+ },
+ {
+  "from": "Normal mide mukozasını bütün yüzeyinde bağırsak tipindeki Goblet hücreleri varmış gibi etiketlemek doğru değildir. Kaynak resminde bir hücreye verilen kısa adın anatomik bağlamını doğrulamak gerekir. Bu derste öğrenci hücre görevini seçtiğinde lümen veya kan yolu ve temel etki birlikte gösterilir. Seçilen şekil gerçek doku kesitinin ölçekli fotoğrafı değildir; işlevler özgün ve sade bir vektör şemayla ayrılır.",
+  "to": "Normal mide mukozasını bütün yüzeyinde bağırsak tipindeki Goblet hücreleri varmış gibi etiketlemek doğru değildir. Modelde bir hücre görevi seçildiğinde lümen veya kan yolu ve temel etki birlikte gösterilir. Seçilen şekil gerçek doku kesitinin ölçekli fotoğrafı değildir; işlevler sade bir şemayla ayrılır."
+ },
+ {
+  "from": "Burada sonraki karaciğer-pankreas-bağırsak ünitelerinin bütün ayrıntıları tamamlanmış sayılmaz; odak mideye geri denetimdir. Pankreas salgısı kendi kanalıyla, safra koledok yoluyla gelir; bazı bağlantı noktalarını paylaşmaları iki kanal adını eşitlemez. Kaynakta bir ok yanlış yere çizilmişse onu aynen taşımak yerine organ, salgı ve kanalın gerçek ilişkisi korunmalıdır. Geri etkiler sadece bir rozet değil, doğru hedefe dönen hatlarla gösterilmelidir.",
+  "to": "Burada odak mideye geri denetimdir; karaciğer, pankreas ve bağırsak ayrıntıları ayrı konulardır. Pankreas salgısı kendi kanalıyla, safra koledok yoluyla gelir; bazı bağlantı noktalarını paylaşmaları iki kanal adını eşitlemez. Şemalarda organ, salgı ve kanalın gerçek ilişkisi korunmalı; geri etkiler doğru hedefe dönen hatlarla gösterilmelidir."
+ },
+ {
+  "from": "H. pylori enfeksiyonu ülser için önemli bir etkendir; fakat bütün ülserlerin tek nedeni olduğu veya asit-bariyer ilişkisinin artık önemsiz olduğu söylenmez. Kaynakların bir sayfasındaki tarihsel kısa anlatım başka sayfadaki çok etkenli anlatımla birlikte düzeltilir. Bu bölüm kişiye belirtilerden tanı veya ilaç seçmez; anatomik konum, salgı ve kanıt sınırının neden birlikte gerektiğini öğretir.",
+  "to": "H. pylori enfeksiyonu ülser için önemli bir etkendir; fakat bütün ülserlerin tek nedeni olduğu veya asit-bariyer ilişkisinin artık önemsiz olduğu söylenmez. Tarihsel kısa anlatım çok etkenli anlatımla birlikte değerlendirilmelidir. Bu bölüm kişiye belirtilerden tanı veya ilaç seçmez; anatomik konum, salgı ve kanıt sınırının neden birlikte gerektiğini öğretir."
+ },
+ {
+  "from": "Soru kartında gereken pH, zincir uzunluğu, kesim sayısı veya miktar bilgileri kendisi verilmelidir; önceki keşfin konumuna dayanılmaz. Etkileşimde varsayımsal kesim sayısı doğrudan verilirse gerçek enzim hızından türetilmiş gibi sunulmaz. Kendi tahminini kanıtla karşılaştırmak açıklayıcı bir öğrenme adımıdır; düğmeye basmak, zaman geçirmek veya bir şekli açmak soru doğruluğu ve ustalık kaydı oluşturmaz.",
+  "to": "Bir soruda gereken pH, zincir uzunluğu, kesim sayısı veya miktar bilgileri soruda verilmelidir; önceki keşfin konumuna dayanılmaz. Etkileşimde varsayımsal kesim sayısı doğrudan verilirse gerçek enzim hızından türetilmiş gibi sunulmaz. Kendi tahminini kanıtla karşılaştırmak açıklayıcı bir öğrenme adımıdır."
+ },
+ {
+  "from": "Bu yöntem, tek bir hormon adını ezberlemekten daha çok duruma aktarılır. Örneğin kandaki hormon azlığından yalnız başına sentez kusuru, fazla bulunmasından da bütün hedeflerde aşırı etki sonucu çıkarılmaz; salım, parçalanma ve hedef yanıtı ayrıdır. Modeldeki yol kesintisi ve açıklamalar öğrenme kanıtıdır; keşfe basmak sınav sorusunu doğru çözme veya ustalık kaydı oluşturmaz. Kendi gerekçeni kurup kaynak-hedef zinciriyle karşılaştır.",
+  "to": "Bu yöntem, tek bir hormon adını ezberlemekten daha çok duruma aktarılır. Örneğin kandaki hormon azlığından yalnız başına sentez kusuru, fazla bulunmasından da bütün hedeflerde aşırı etki sonucu çıkarılmaz; salım, parçalanma ve hedef yanıtı ayrıdır. Kendi gerekçeni kurup kaynak-hedef zinciriyle karşılaştır."
+ },
+ {
+  "from": "Spermatogenez yalnız FSH adını ezberleyerek bütünüyle açıklanmaz; testosteron ve uygun doku koşulları da önemlidir. LH uyarısı ile dolaşımdaki testosteron arasında üretim kapasitesi ve geri bildirim ilişkileri bulunur. Bu ünite yol eşleştirmesini öğretir; tek hormon ölçümünden doğurganlık garantisi vermez. Etkileşimdeki erkek gonadı hedef kartı bu sınırlı bağlamla sunulur; kadın hedefleri sonraki bölümde ayrıca ayrılır.",
+  "to": "Spermatogenez yalnız FSH adını ezberleyerek bütünüyle açıklanmaz; testosteron ve uygun doku koşulları da önemlidir. LH uyarısı ile dolaşımdaki testosteron arasında üretim kapasitesi ve geri bildirim ilişkileri bulunur. Bu ünite yol eşleştirmesini öğretir; tek hormon ölçümünden doğurganlık garantisi vermez. Etkileşimdeki erkek gonadı hedefi bu sınırlı bağlamla sunulur; kadın hedefleri sonraki bölümde ayrıca ayrılır."
+ },
+ {
+  "from": "Okul kaynaklarında ön-ara lob ilişkisi içinde MSH de listelenebilir; MSH melanokortin sinyalleri ve pigmentle ilişkili bir adlandırmadır. Erişkin insanın ara lobu bütün omurgalılarda aynı ölçüde bağımsız belirgin bir organ gibi sunulmaz. MSH, melanin pigmenti ve epifiz melatonini üç farklı kavramdır. Benzer adları tek molekül veya tek organ işlevi gibi ezberlemekten kaçın.",
+  "to": "Ön-ara lob ilişkisi içinde MSH de listelenebilir; MSH melanokortin sinyalleri ve pigmentle ilişkili bir adlandırmadır. Erişkin insanın ara lobu bütün omurgalılarda aynı ölçüde bağımsız belirgin bir organ gibi sunulmaz. MSH, melanin pigmenti ve epifiz melatonini üç farklı kavramdır. Benzer adları tek molekül veya tek organ işlevi gibi ezberlemekten kaçın."
+ },
+ {
+  "from": "Kaynaklarda büyüme hormonu GH, somatotropin veya STH; prolaktin ise PRL veya LTH adlarıyla görülebilir. ADH için antidiüretik hormon ve vazopressin adları kullanılır. Bunlar farklı listelerde yeni birer bez veya zorunlu yeni molekül saymak için gerekçe değildir. Adı değişse de sentez yeri, salım yeri ve hedef aynı mekanizma üzerinden kontrol edilir. Oksitosin için üretim hipotalamusta, salım arka lobda ayrımı bu eşleştirmelerde korunur.",
+  "to": "Büyüme hormonu GH, somatotropin veya STH; prolaktin ise PRL veya LTH adlarıyla görülebilir. ADH için antidiüretik hormon ve vazopressin adları kullanılır. Bunlar farklı listelerde yeni birer bez veya zorunlu yeni molekül saymak için gerekçe değildir. Adı değişse de sentez yeri, salım yeri ve hedef aynı mekanizma üzerinden kontrol edilir. Oksitosin için üretim hipotalamusta, salım arka lobda ayrımı bu eşleştirmelerde korunur."
+ },
+ {
+  "from": "Tedavi edilmemiş doğumsal hipotiroidi gelişimi etkileyebilir; kaynaklardaki eski “kretenizm” terimi bu tarihsel bağlamla açıklanmalı, kişileri etiketlemek için kullanılmamalıdır. Erken değerlendirme ve tedavinin önemi, öğrenme uygulamasının kişiye tanı veya doz seçmesi anlamına gelmez. Çocukta gelişim sorunu ya da yetişkinde yorgunluk tek başına belirli bir hormon hastalığının kesin kanıtı değildir.",
+  "to": "Tedavi edilmemiş doğumsal hipotiroidi gelişimi etkileyebilir; eski “kretenizm” terimi bu tarihsel bağlamla açıklanmalı, kişileri etiketlemek için kullanılmamalıdır. Erken değerlendirme ve tedavinin önemi, öğrenme uygulamasının kişiye tanı veya doz seçmesi anlamına gelmez. Çocukta gelişim sorunu ya da yetişkinde yorgunluk tek başına belirli bir hormon hastalığının kesin kanıtı değildir."
+ },
+ {
+  "from": "Kalsitonin tiroidin C hücreleriyle ilişkilidir ve okul düzeyinde kan kalsiyumunu azaltan, kemikte tutulmayı destekleyen etkisiyle öğretilir. T3/T4 gibi iyot sayısına dayalı adlandırılmaz ve HPT ekseninin aynı foliküler ürünü değildir. PTH ve aktif D vitaminiyle birlikte kalsiyum homeostazı ağında ele alınır; tüm insan kalsiyum düzenlemesini eşit ağırlıklı yalnız iki hormona indirme.",
+  "to": "Kalsitonin tiroidin C hücreleriyle ilişkilidir ve temel düzeyde kan kalsiyumunu azaltan, kemikte tutulmayı destekleyen etkisiyle öğretilir. T3/T4 gibi iyot sayısına dayalı adlandırılmaz ve HPT ekseninin aynı foliküler ürünü değildir. PTH ve aktif D vitaminiyle birlikte kalsiyum homeostazı ağında ele alınır; tüm insan kalsiyum düzenlemesini eşit ağırlıklı yalnız iki hormona indirme."
+ },
+ {
+  "from": "T3/T4 normal büyüme, protein metabolizması ve sinirsel gelişimle de ilişkilidir; etkisi yalnız vücut sıcaklığına indirgenmez. İyot eksikliğinin önlenmesinde uygun toplum sağlığı uygulamaları ve iyotlu tuz örneği öğretilebilir, ancak fazla iyotun her kişide daha iyi hormon işlevi sağlayacağı sonucu yanlıştır. Kaynağın tedavi örnekleri farklı neden ve değerlendirmeler içindir; bir şemadan cerrahi, radyoaktif iyot veya hormon seçimi yapılamaz. Buradaki temel beceri mekanizma, belirti ve klinik kararın farklı kanıt düzeylerini ayırmaktır.",
+  "to": "T3/T4 normal büyüme, protein metabolizması ve sinirsel gelişimle de ilişkilidir; etkisi yalnız vücut sıcaklığına indirgenmez. İyot eksikliğinin önlenmesinde uygun toplum sağlığı uygulamaları ve iyotlu tuz örneği öğretilebilir, ancak fazla iyotun her kişide daha iyi hormon işlevi sağlayacağı sonucu yanlıştır. Tedavi örnekleri farklı neden ve değerlendirmeler içindir; bir şemadan cerrahi, radyoaktif iyot veya hormon seçimi yapılamaz. Buradaki temel beceri mekanizma, belirti ve klinik kararın farklı kanıt düzeylerini ayırmaktır."
+ },
+ {
+  "from": "Kaynakların kalsitonin şemasında yüksek kan kalsiyumuna karşı kemikte tutulmanın desteklenmesi ve kemikten çıkışın sınırlanması öne çıkar. Ayrıca böbrekte kalsiyum ve fosfat geri emiliminin azaltılmasıyla idrarla çıkışa katkı anlatılır. Bu, PTH’nin böbrekte kalsiyumu korurken fosfat atımını artırabilmesiyle aynı bütün ok dizisi değildir. Yalnız iki hormona artı ve eksi yazmak yerine her madde ve organ için ayrı yön çiz.",
+  "to": "Kalsitonin şemasında yüksek kan kalsiyumuna karşı kemikte tutulmanın desteklenmesi ve kemikten çıkışın sınırlanması öne çıkar. Ayrıca böbrekte kalsiyum ve fosfat geri emiliminin azaltılmasıyla idrarla çıkışa katkı anlatılır. Bu, PTH’nin böbrekte kalsiyumu korurken fosfat atımını artırabilmesiyle aynı bütün ok dizisi değildir. Yalnız iki hormona artı ve eksi yazmak yerine her madde ve organ için ayrı yön çiz."
+ },
+ {
+  "from": "Kaynakta bağırsak kalsiyum emiliminin azalmasına hafif katkı da verilir; bu, insanın bütün bağırsak-kalsiyum kontrolünü kalsitoninin tek başına yaptığı anlamına gelmez. Aktif D’nin emilim üzerindeki belirgin rolü ve PTH’nin böbrek üzerinden dolaylı ilişkisi görünür kalmalıdır. Temel karşıt etkilere antagonist etki denir; antagonist iki molekülün aynı kaynaktan çıktığı, bütün dokularda birebir aynı hedefi paylaştığı veya insanda eşit ağırlıkta denetleyici olduğu sonucu çıkarılmaz.",
+  "to": "Bağırsak kalsiyum emiliminin azalmasına hafif katkı da anlatılır; bu, insanın bütün bağırsak-kalsiyum kontrolünü kalsitoninin tek başına yaptığı anlamına gelmez. Aktif D’nin emilim üzerindeki belirgin rolü ve PTH’nin böbrek üzerinden dolaylı ilişkisi görünür kalmalıdır. Temel karşıt etkilere antagonist etki denir; antagonist iki molekülün aynı kaynaktan çıktığı, bütün dokularda birebir aynı hedefi paylaştığı veya insanda eşit ağırlıkta denetleyici olduğu sonucu çıkarılmaz."
+ },
+ {
+  "from": "Kandaki düşük iyonize kalsiyum, uygun fizyolojik bağlamda PTH salımını artıran yönde etkili olur. Toplam kan kalsiyumu ile biyolojik olarak etkin iyonize bölüm tam aynı ölçüm değildir; protein bağlanması ve koşullar ayrılmalıdır. Okulda verilen yaklaşık 10 mg/dL gibi değerler tek başına her kişiye zorunlu tek hedef veya tanı eşiği değildir. Bu derste mekanizmanın yönü ve verilen miktarın birimi önceliklidir.",
+  "to": "Kandaki düşük iyonize kalsiyum, uygun fizyolojik bağlamda PTH salımını artıran yönde etkili olur. Toplam kan kalsiyumu ile biyolojik olarak etkin iyonize bölüm tam aynı ölçüm değildir; protein bağlanması ve koşullar ayrılmalıdır. Sık verilen yaklaşık 10 mg/dL gibi değerler tek başına her kişiye zorunlu tek hedef veya tanı eşiği değildir. Burada mekanizmanın yönü ve verilen miktarın birimi önceliklidir."
+ },
+ {
+  "from": "Okul şemalarında PTH kan kalsiyumunu artıran, tiroid C hücresi kalsitonini azaltan etkiyle karşılaştırılır. Bu karşıtlık temel yönleri ayırmaya yardımcı olur. Bununla birlikte insanın uzun dönem kalsiyum homeostazını eşit önemde yalnız iki hormonun aç-kapa düğmesiyle bütünüyle açıklamak eksiktir. Aktif D, böbrek işlevi, kemik dönüşümü ve emilim kaynakları ağın parçasıdır.",
+  "to": "Temel şemalarda PTH kan kalsiyumunu artıran, tiroid C hücresi kalsitonini azaltan etkiyle karşılaştırılır. Bu karşıtlık temel yönleri ayırmaya yardımcı olur. Bununla birlikte insanın uzun dönem kalsiyum homeostazını eşit önemde yalnız iki hormonun aç-kapa düğmesiyle bütünüyle açıklamak eksiktir. Aktif D, böbrek işlevi, kemik dönüşümü ve emilim kaynakları ağın parçasıdır."
+ },
+ {
+  "from": "Kalsiyum düzenlenmesindeki bozukluklar sinir-kas uyarılabilirliği ve kemik sağlığıyla ilişkili olabilir. Ancak bir kişide kasılma, halsizlik veya kemik sorunu görülmesinin tek olası nedeni paratiroit bozukluğu değildir. Kaynaktaki örnekler mekanizmayı ilişkilendirmek içindir; tek belirtiyi kesin tanıya dönüştürmek bilimsel kanıt sınırını aşar. Değişkenler ve organ işlevleri birlikte değerlendirilir.",
+  "to": "Kalsiyum düzenlenmesindeki bozukluklar sinir-kas uyarılabilirliği ve kemik sağlığıyla ilişkili olabilir. Ancak bir kişide kasılma, halsizlik veya kemik sorunu görülmesinin tek olası nedeni paratiroit bozukluğu değildir. Bu örnekler mekanizmayı ilişkilendirmek içindir; tek belirtiyi kesin tanıya dönüştürmek bilimsel kanıt sınırını aşar. Değişkenler ve organ işlevleri birlikte değerlendirilir."
+ },
+ {
+  "from": "Kalsiyum kemik mineralinin yanında kas kasılması, sinir uçlarında haberci salımı ve kan pıhtılaşması gibi süreçlerle ilişkilidir. Hücre içi kalsiyum sinyaliyle kandaki toplam kalsiyum ölçümünü aynı değişken sanma; farklı bölmelerde farklı düzey ve düzenlemeler vardır. Her aktif taşımanın tek zorunlu maddesi kalsiyumdur gibi bir genelleme de kurulmaz. Kaynaktaki görev listesini hangi hücresel olayla ilişkili olduğunu açıklayarak öğrenmek daha kullanışlıdır.",
+  "to": "Kalsiyum kemik mineralinin yanında kas kasılması, sinir uçlarında haberci salımı ve kan pıhtılaşması gibi süreçlerle ilişkilidir. Hücre içi kalsiyum sinyaliyle kandaki toplam kalsiyum ölçümünü aynı değişken sanma; farklı bölmelerde farklı düzey ve düzenlemeler vardır. Her aktif taşımanın tek zorunlu maddesi kalsiyumdur gibi bir genelleme de kurulmaz. Bu görev listesini hangi hücresel olayla ilişkili olduğunu açıklayarak öğrenmek daha kullanışlıdır."
+ },
+ {
+  "from": "PTH ve kalsitoninin temel kan-kalsiyum yönleri antagonist örneğidir; fakat kemikten kana giriş ve böbrekten çıkış ayrı süreçler olduğundan net sonucu birlikte belirler. Aşırı kemik mineral kaybı veya değişen sinir-kas uyarılabilirliği bu ağlarla ilişkili olabilir; bir belirtinin tek nedenini kanıtlamaz. Timüsün T lenfosit olgunlaşmasındaki timozin ilişkisi ise aynı komşu kaynak sayfasında yer alsa da kalsiyum hormonu değildir; konu yakınlığı molekül işlevini eşitlemez.",
+  "to": "PTH ve kalsitoninin temel kan-kalsiyum yönleri antagonist örneğidir; fakat kemikten kana giriş ve böbrekten çıkış ayrı süreçler olduğundan net sonucu birlikte belirler. Aşırı kemik mineral kaybı veya değişen sinir-kas uyarılabilirliği bu ağlarla ilişkili olabilir; bir belirtinin tek nedenini kanıtlamaz. Timüsün T lenfosit olgunlaşmasındaki timozin ilişkisi ise komşu bir konu olsa da kalsiyum hormonu değildir; konu yakınlığı molekül işlevini eşitlemez."
+ },
+ {
+  "from": "Anatomik olarak ayrı organ olması düzenleyici ilişki bulunmadığı anlamına gelmez. Böbreğin renin-anjiyotensin sistemi aldosteron kontrolüne katılabilir. “Böbreklerden bağımsız” gibi kısa kaynak cümlelerini bütün fizyolojik bağlantılar yokmuş gibi genişletme. Bir anatomik resim üzerinde önce dış-iç bölümü, sonra her bölümün hormon grubunu, en son ilgili kontrol girişini ayrı renksiz etiketlerle de anlaşılır biçimde işaretle.",
+  "to": "Anatomik olarak ayrı organ olması düzenleyici ilişki bulunmadığı anlamına gelmez. Böbreğin renin-anjiyotensin sistemi aldosteron kontrolüne katılabilir. “Böbreklerden bağımsız” gibi kısa cümleleri bütün fizyolojik bağlantılar yokmuş gibi genişletme. Bir anatomik resim üzerinde önce dış-iç bölümü, sonra her bölümün hormon grubunu, en son ilgili kontrol girişini ayrı renksiz etiketlerle de anlaşılır biçimde işaretle."
+ },
+ {
+  "from": "Korteksin farklı tabakaları farklı ürünlerle ilişkili olsa da bu okul ünitesinin amacı her alt tabakayı ezberden tek başına tanı yapmak değildir. Verilen bir hormonun ana kontrolü ve hedefi öne çıkarılır. Adrenal androjenler eşeysel gelişim ve kıllanma gibi süreçlere katkı verebilir; bütün testosteronun yalnız adrenal kaynaktan geldiği veya androjenlerin yalnız tek eşeyde bulunduğu sonucu çıkarılmaz. Gonad katkıları ayrıca önemlidir.",
+  "to": "Korteksin farklı tabakaları farklı ürünlerle ilişkili olsa da bu ünitenin amacı her alt tabakayı ezberden tek başına tanı yapmak değildir. Verilen bir hormonun ana kontrolü ve hedefi öne çıkarılır. Adrenal androjenler eşeysel gelişim ve kıllanma gibi süreçlere katkı verebilir; bütün testosteronun yalnız adrenal kaynaktan geldiği veya androjenlerin yalnız tek eşeyde bulunduğu sonucu çıkarılmaz. Gonad katkıları ayrıca önemlidir."
+ },
+ {
+  "from": "Uzun süreli veya aşırı glukokortikoid etkisinin bağışıklık ve doku süreçleriyle farklı sonuçları olabilir; kaynaklardaki “baskılar” ifadesi her bağlamda bütün savunmayı tamamen sıfırlar anlamına gelmez. Düzey, süre ve hedef koşulları önem taşır. Bu bilgiler tedavi dozu veya ilaç bırakma önerisi değildir. Dersin soruları normal düzenleme mantığı ve verilen varsayımsal verilerle sınırlı çıkarım yaptırır.",
+  "to": "Uzun süreli veya aşırı glukokortikoid etkisinin bağışıklık ve doku süreçleriyle farklı sonuçları olabilir; “baskılar” ifadesi her bağlamda bütün savunmayı tamamen sıfırlar anlamına gelmez. Düzey, süre ve hedef koşulları önem taşır. Bu bilgiler tedavi dozu veya ilaç bırakma önerisi değildir. Dersin soruları normal düzenleme mantığı ve verilen varsayımsal verilerle sınırlı çıkarım yaptırır."
+ },
+ {
+  "from": "Her tabloya bir sınır sütunu da ekle: bütün etkiler aynı anda ve aynı ölçüde olmaz; reseptör, süre ve fizyolojik durum önemlidir. Tek yorgunluk, tansiyon veya stres belirtisinden belirli böbreküstü hastalığı tanısı çıkmaz. Uygulamada keşif seçimleri kaydedilir fakat bu bir tanı raporu veya doğru soru sayısı değildir. Gerekçenin amacı tek kelimelik eşleştirmeden neden-sonuç ağına geçmektir.",
+  "to": "Her tabloya bir sınır sütunu da ekle: bütün etkiler aynı anda ve aynı ölçüde olmaz; reseptör, süre ve fizyolojik durum önemlidir. Tek yorgunluk, tansiyon veya stres belirtisinden belirli böbreküstü hastalığı tanısı çıkmaz. Gerekçenin amacı tek kelimelik eşleştirmeden neden-sonuç ağına geçmektir."
+ },
+ {
+  "from": "Deri ve bazı iç organlara kan dağılımıyla aktif iskelet kasının gereksinimi farklılaşabilir; damar yanıtlarında reseptör ve yerel metabolik koşullar önemlidir. Kaynak çizimindeki bir organ için genişleme okunu bütün damarların aynı yönde değişmesi diye yayma. Benzer biçimde kortizolün dikkat, hafıza veya ağrı ile ilişkisi süre ve bağlama bağlıdır; kronik stresin her koşulda hafızayı iyileştirdiği veya tek nörotransmitteri sabit miktarda azalttığı evrensel sonuç çıkarılmaz. Ölçülen net yanıt doğrudan etkiyle reflekslerin birleşimidir.",
+  "to": "Deri ve bazı iç organlara kan dağılımıyla aktif iskelet kasının gereksinimi farklılaşabilir; damar yanıtlarında reseptör ve yerel metabolik koşullar önemlidir. Bir organ için çizilen genişleme okunu bütün damarların aynı yönde değişmesi diye yayma. Benzer biçimde kortizolün dikkat, hafıza veya ağrı ile ilişkisi süre ve bağlama bağlıdır; kronik stresin her koşulda hafızayı iyileştirdiği veya tek nörotransmitteri sabit miktarda azalttığı evrensel sonuç çıkarılmaz. Ölçülen net yanıt doğrudan etkiyle reflekslerin birleşimidir."
+ },
+ {
+  "from": "Korteksin eşey steroidlerine katkısı çoğunlukla adrenal androjenlerle öğretilir; kaynakta küçük miktarlardaki diğer eşey steroidleri de anılır. Bu bilgi kadın ve erkekte yalnız tek bir eşey hormonunun bulunduğunu veya tüm üreme döngüsünün böbreküstünden yönetildiğini göstermez. Kortizol, aldosteron ve adrenal eşey steroidlerini aynı ailede görmek yararlıdır; ama ana kontrol, hedef ve geri etki tablosu her ürün için ayrı tutulur. Kimyasal akrabalık aynı fizyolojik göreve eşit değildir.",
+  "to": "Korteksin eşey steroidlerine katkısı çoğunlukla adrenal androjenlerle öğretilir; küçük miktarlardaki diğer eşey steroidleri de anılır. Bu bilgi kadın ve erkekte yalnız tek bir eşey hormonunun bulunduğunu veya tüm üreme döngüsünün böbreküstünden yönetildiğini göstermez. Kortizol, aldosteron ve adrenal eşey steroidlerini aynı ailede görmek yararlıdır; ama ana kontrol, hedef ve geri etki tablosu her ürün için ayrı tutulur. Kimyasal akrabalık aynı fizyolojik göreve eşit değildir."
+ },
+ {
+  "from": "Kaynaklarda verilen 90 mg/100 mL gibi bir değer öğretim referansı olabilir; herkesin her zamanda zorunlu aynı sayıda olması veya bu tek değerin tek başına tanı koydurması anlamına gelmez. Ölçümün zamanı, açlık-öğün durumu ve yöntemi önemlidir. Bu dersteki sayısal havuzlar varsayımsal glikoz eşdeğeri birimleridir; gerçek kişinin kan şekerini veya ilaç gereksinimini tahmin etmez.",
+  "to": "90 mg/100 mL gibi bir değer öğretim referansı olabilir; herkesin her zamanda zorunlu aynı sayıda olması veya bu tek değerin tek başına tanı koydurması anlamına gelmez. Ölçümün zamanı, açlık-öğün durumu ve yöntemi önemlidir. Buradaki sayısal havuzlar varsayımsal glikoz eşdeğeri birimleridir; gerçek kişinin kan şekerini veya ilaç gereksinimini tahmin etmez."
+ },
+ {
+  "from": "Gerçek vücutta dokular glikoz tüketir, bağırsak ekler ve karaciğer başka kaynaklardan üretir; model bütün metabolizmayı tüketmez. “Hedef yanıtı engelli” seçimi de yalnız gösterilen karaciğer aktarımını durduran deney varsayımıdır, tüm tip 2 diyabeti tek düğmede simüle etmez. Kas, yağ, karaciğer ve eritrosit kartlarını karşılaştırarak sayıların yanında taşıma-metabolizma farkını da açıklamayı dene.",
+  "to": "Gerçek vücutta dokular glikoz tüketir, bağırsak ekler ve karaciğer başka kaynaklardan üretir; model bütün metabolizmayı tüketmez. “Hedef yanıtı engelli” seçimi de yalnız gösterilen karaciğer aktarımını durduran deney varsayımıdır, tüm tip 2 diyabeti tek düğmede simüle etmez. Kas, yağ, karaciğer ve eritrosit örneklerini karşılaştırarak sayıların yanında taşıma-metabolizma farkını da açıklamayı dene."
+ },
+ {
+  "from": "Demir ve bakır gibi bazı minerallerle A ve B₁₂ gibi vitaminlerin depolanmasına katkı vardır; depolama kapasitesi maddeye göre değişir. Erişkinde EPO’nun başlıca kaynağı böbrektir, karaciğerin daha küçük katkısı da bulunabilir; embriyonik rol farklıdır. Bir kaynaktaki yaklaşık organ yüzdeleri her yaş ve koşul için değişmez yasa sayılmaz. Protrombin gibi bazı pıhtılaşma proteinleri de karaciğer sentezinin örnekleridir.",
+  "to": "Demir ve bakır gibi bazı minerallerle A ve B₁₂ gibi vitaminlerin depolanmasına katkı vardır; depolama kapasitesi maddeye göre değişir. Erişkinde EPO’nun başlıca kaynağı böbrektir, karaciğerin daha küçük katkısı da bulunabilir; embriyonik rol farklıdır. Protrombin gibi bazı pıhtılaşma proteinleri de karaciğer sentezinin örnekleridir."
+ },
+ {
+  "from": "Epifiz, beynin epitalamus bölgesiyle ilişkili küçük bir endokrin yapıdır; melatonin salgısıyla tanınır. Önceki beyin anatomisi dersindeki konum bilgisi burada bir hormon ağına bağlanır. Melatonin ışık-karanlık döngüsü ve sirkadiyen zamanlamayla ilişkilidir. “Uyku hormonu” kısaltması bir başlangıç olabilir, fakat bütün uyku ve uyanıklık mekanizmalarını tek molekülün aç-kapa düğmesine indirgememelidir.",
+  "to": "Epifiz, beynin epitalamus bölgesiyle ilişkili küçük bir endokrin yapıdır; melatonin salgısıyla tanınır. Beyin anatomisindeki konum bilgisi burada bir hormon ağına bağlanır. Melatonin ışık-karanlık döngüsü ve sirkadiyen zamanlamayla ilişkilidir. “Uyku hormonu” kısaltması bir başlangıç olabilir, fakat bütün uyku ve uyanıklık mekanizmalarını tek molekülün aç-kapa düğmesine indirgememelidir."
+ },
+ {
+  "from": "Uyku gereksinimi, uyanıklık ağları, davranış, çevresel zamanlayıcılar ve hormonal ritimler birlikte çalışır. Bu nedenle birinin uykulu olması melatonin düzeyini ölçmüş olmak değildir; melatoninin bulunması da her koşulda kesin uykuya geçiş garantisi vermez. Bu derste salgının zamanlanması ve ışık bilgisinin yolu öğretilir. Kişiye ilaç, takviye dozu veya uyku bozukluğu tanısı seçen bir araç kurulmaz.",
+  "to": "Uyku gereksinimi, uyanıklık ağları, davranış, çevresel zamanlayıcılar ve hormonal ritimler birlikte çalışır. Bu nedenle birinin uykulu olması melatonin düzeyini ölçmüş olmak değildir; melatoninin bulunması da her koşulda kesin uykuya geçiş garantisi vermez. Burada salgının zamanlanması ve ışık bilgisinin yolu öğretilir. Kişiye ilaç, takviye dozu veya uyku bozukluğu tanısı seçen bir araç kurulmaz."
+ },
+ {
+  "from": "Melatonin epifizle ilişkili hormonal habercidir; melanin deride ve başka dokularda bulunan pigmenttir. MSH ise melanokortin sinyalleriyle ilişkili ayrı bir hormon adıdır. Sözcüklerin ortak heceler taşıması aynı molekülü, aynı kaynağı veya aynı temel işi göstermez. İnsanda epifiz melatonininin temel görevi “deriyi renklendirmek” şeklinde öğretilmemelidir; bu kaynak kısaltması yanlış ana fikir oluşturabilir.",
+  "to": "Melatonin epifizle ilişkili hormonal habercidir; melanin deride ve başka dokularda bulunan pigmenttir. MSH ise melanokortin sinyalleriyle ilişkili ayrı bir hormon adıdır. Sözcüklerin ortak heceler taşıması aynı molekülü, aynı kaynağı veya aynı temel işi göstermez. İnsanda epifiz melatonininin temel görevi “deriyi renklendirmek” şeklinde öğretilmemelidir; bu kısaltma yanlış ana fikir oluşturabilir."
+ },
+ {
+  "from": "Dersin 24 saatlik modeli bu karmaşık düzenlemenin yalnız verilen zaman penceresini gösterir. Karanlık penceresi ile seçilen saatin ilişkisi görünürdür; isteğe bağlı gece ışığı işareti, bu pencerede ışık baskısını açıklayan bir koşul kartıdır. Gösterilen parlaklık veya renk gerçek hormon derişimi değildir. Gerçek doz-cevap ölçümü verilmediği için sayısal melatonin miktarı tahmini yapılmaz.",
+  "to": "Dersin 24 saatlik modeli bu karmaşık düzenlemenin yalnız verilen zaman penceresini gösterir. Karanlık penceresi ile seçilen saatin ilişkisi görünürdür; isteğe bağlı gece ışığı işareti, bu pencerede ışık baskısını açıklayan bir koşuldur. Gösterilen parlaklık veya renk gerçek hormon derişimi değildir. Gerçek doz-cevap ölçümü verilmediği için sayısal melatonin miktarı tahmini yapılmaz."
+ },
+ {
+  "from": "Hızın zamanla değiştiği gerçek bir eğri verilirse toplamı yalnız gece saatine bakarak bulamazsın; eğrinin altındaki alan veya verilen ölçümler gerekir. Sabit hızlı öğretim sorusunun sonucunu bütün insanlara hormon oranı diye taşımamak önemlidir. Modelde verilen süre hesabı ve ışık durumu görsel-HTML olarak birlikte sunulur; sayısal alan yalnız belirtilen kurgusal varsayım altında anlam taşır.",
+  "to": "Hızın zamanla değiştiği gerçek bir eğri verilirse toplamı yalnız gece saatine bakarak bulamazsın; eğrinin altındaki alan veya verilen ölçümler gerekir. Sabit hızlı öğretim sorusunun sonucunu bütün insanlara hormon oranı diye taşımamak önemlidir. Modelde süre hesabı ve ışık durumu birlikte gösterilir; sayısal alan yalnız belirtilen kurgusal varsayım altında anlam taşır."
+ },
+ {
+  "from": "Bu ünitenin sonunda epifiz kaynağını, retina-hipotalamus-sinir yolunu, karanlık penceresini ve faz-süre ayrımını kendi cümlenle kurabilmelisin. Sorularda bütün gerekli saatler ve varsayımlar kartın içinde verilir; önceki etkileşimin seçimine dayanılmaz. Tahmin ve gerekçe kaydı öğrenme sürecini görünür kılar, fakat kendi başına doğru sınav cevabı veya ustalık puanı sayılmaz. Kanıtı adım adım açıklamak ritim bilgisini aktarılabilir hale getirir.",
+  "to": "Bu ünitenin sonunda epifiz kaynağını, retina-hipotalamus-sinir yolunu, karanlık penceresini ve faz-süre ayrımını kendi cümlenle kurabilmelisin. Sorularda bütün gerekli saatler ve varsayımlar sorunun içinde verilir; önceki etkileşimin seçimine dayanılmaz. Kanıtı adım adım açıklamak ritim bilgisini aktarılabilir hale getirir."
+ },
+ {
+  "from": "Katman düzeninde tek katlı, çok katlı ve yalancı çok katlı örnekler ayrılır. Yalancı çok katlı epitelde hücrelerin boyu ve çekirdek düzeyleri farklı olsa da hücreler bazal yüzeyle ilişkilidir; görünüşü gerçek çok katmanla karıştırılmaz. Solunum yollarının bazı bölümlerindeki silli örnekler ile derinin çok katlı örtüsü farklıdır. Kaynakta yüzeydeki keratinli katman korun, alt canlı bölge ise Malpighi adıyla anılabilir; bu adlar bütün epidermis hücrelerinin aynı yapıda olduğu anlamına gelmez.",
+  "to": "Katman düzeninde tek katlı, çok katlı ve yalancı çok katlı örnekler ayrılır. Yalancı çok katlı epitelde hücrelerin boyu ve çekirdek düzeyleri farklı olsa da hücreler bazal yüzeyle ilişkilidir; görünüşü gerçek çok katmanla karıştırılmaz. Solunum yollarının bazı bölümlerindeki silli örnekler ile derinin çok katlı örtüsü farklıdır. Yüzeydeki keratinli katman korun, alt canlı bölge ise Malpighi adıyla anılabilir; bu adlar bütün epidermis hücrelerinin aynı yapıda olduğu anlamına gelmez."
+ },
+ {
+  "from": "Yara onarımında hücrelerin görevleri birlikte yürür: matriks üretimi, savunma ve yeniden düzenlenme birbirinin yerine geçmez. Yara büzülmesinde özelleşmiş miyofibroblastlar görev alabilir; buradan bütün fibroblastların kas hücresi olduğu sonucu çıkmaz. Kaynak sorusunda antikor belirtiliyorsa lif sentezleyen hücreyi seçmek, aynı dokuda bulunmalarına rağmen görevleri karıştırmaktır.",
+  "to": "Yara onarımında hücrelerin görevleri birlikte yürür: matriks üretimi, savunma ve yeniden düzenlenme birbirinin yerine geçmez. Yara büzülmesinde özelleşmiş miyofibroblastlar görev alabilir; buradan bütün fibroblastların kas hücresi olduğu sonucu çıkmaz. Bir soruda antikor belirtiliyorsa lif sentezleyen hücreyi seçmek, aynı dokuda bulunmalarına rağmen görevleri karıştırmaktır."
+ },
+ {
+  "from": "Ardından uyaranın türünü ve süresini sor. Basıncın başlaması, sabit sürmesi ve kalkması farklı bilgiler taşır. Modelde reseptöre dokunmak yalnız keşif seçimini kaydeder; doğru cevap veya ustalık puanı oluşturmaz. Konuyu açıklayabildiğinde bağımsız sorulara geç ve cevabını katman, yol ve zaman kanıtıyla gerekçelendir.",
+  "to": "Ardından uyaranın türünü ve süresini sor. Basıncın başlaması, sabit sürmesi ve kalkması farklı bilgiler taşır. Konuyu açıklayabildiğinde bağımsız sorulara geç ve cevabını katman, yol ve zaman kanıtıyla gerekçelendir."
+ },
+ {
+  "from": "Tat sinirleri bilgiyi beyin sapındaki bağlantılar üzerinden talamusa ve tatla ilgili kortikal alanlara taşır. Okul düzeyindeki kısa yol şeması, bu ara bağlantıların hepsini çizmek zorunda değildir; ama yolu doğrudan dilde oluşan bir görüntünün beyne taşınması gibi anlatmamalıdır. Tat hücresi, sinir ve merkez farklı basamaklardır.",
+  "to": "Tat sinirleri bilgiyi beyin sapındaki bağlantılar üzerinden talamusa ve tatla ilgili kortikal alanlara taşır. Kısa yol şeması, bu ara bağlantıların hepsini çizmek zorunda değildir; ama yolu doğrudan dilde oluşan bir görüntünün beyne taşınması gibi anlatmamalıdır. Tat hücresi, sinir ve merkez farklı basamaklardır."
+ },
+ {
+  "from": "Öte yandan farklı hücrelerin dilde dağılması, her tek tat hücresinin beş niteliğe de aynı yanıtı verdiği anlamına gelmez. Reseptör yolları ve hücre alt tipleri özelleşebilir. Modelde seçtiğin hücre belirli bir tat yolunun temsili örneğidir; bu hücrenin uyumsuz kartta etkin olmaması dilin o tadı hiç algılamadığını göstermez.",
+  "to": "Öte yandan farklı hücrelerin dilde dağılması, her tek tat hücresinin beş niteliğe de aynı yanıtı verdiği anlamına gelmez. Reseptör yolları ve hücre alt tipleri özelleşebilir. Modelde seçtiğin hücre belirli bir tat yolunun temsili örneğidir; bu hücrenin uyumsuz örnekte etkin olmaması dilin o tadı hiç algılamadığını göstermez."
+ },
+ {
+  "from": "Bu dersin amacı anatomi ve nedensel sırayı öğretmektir. Sanal molekül ve bağlantıları değiştirerek verilmiş koşulların sonucunu inceleyebilirsin; bilinmeyen kimyasalı koklama veya tatma gerekmiyor. Kendi sağlık durumun için tanı üreten bir test yapılmaz. Soruları çözerken yalnız kartta verilen erişim, hücre ve yol kanıtlarını kullan.",
+  "to": "Bu dersin amacı anatomi ve nedensel sırayı öğretmektir. Sanal molekül ve bağlantıları değiştirerek verilmiş koşulların sonucunu inceleyebilirsin; bilinmeyen kimyasalı koklama veya tatma gerekmiyor. Kendi sağlık durumun için tanı üreten bir test yapılmaz. Soruları çözerken yalnız soruda verilen erişim, hücre ve yol kanıtlarını kullan."
+ },
+ {
+  "from": "Astigmatta farklı doğrultulardaki eğrilik ve kırılma eşit değildir; bunu yalnız göz küresinin çapı değişimiyle açıklama. Presbiyopi ise yaşla uyum kapasitesinin azalmasıdır. Laboratuvarın eksen uzunluğu presetleri tüm bu bozuklukların klinik çeşitliliğini modellemez; verilen eşdeğer sistemde odak-retina ilişkisini ve düzeltme işaretini öğretir.",
+  "to": "Astigmatta farklı doğrultulardaki eğrilik ve kırılma eşit değildir; bunu yalnız göz küresinin çapı değişimiyle açıklama. Presbiyopi ise yaşla uyum kapasitesinin azalmasıdır. Laboratuvarın eksen uzunluğu ayarları tüm bu bozuklukların klinik çeşitliliğini modellemez; verilen eşdeğer sistemde odak-retina ilişkisini ve düzeltme işaretini öğretir."
+ },
+ {
+  "from": "Optik laboratuvarda uzaklıklar milimetre cinsinden tanımlı bir eşdeğer ince sistemle hesaplanır; nesne uzaklığı ve retina konumu ayrı değişkenlerdir. Yakın presetinde mercek uyumu sağlıklı referans göze göre seçilir; eksen farkı presetleri odağın retina önünde veya arkasında kalmasını görünür kılar. Düzeltme açıkken birleşik güç, verilen retina düzlemine odaklanacak biçimde değişir.",
+  "to": "Optik laboratuvarda uzaklıklar milimetre cinsinden tanımlı bir eşdeğer ince sistemle hesaplanır; nesne uzaklığı ve retina konumu ayrı değişkenlerdir. Yakın ayarında mercek uyumu sağlıklı referans göze göre seçilir; eksen farkı ayarları odağın retina önünde veya arkasında kalmasını görünür kılar. Düzeltme açıkken birleşik güç, verilen retina düzlemine odaklanacak biçimde değişir."
+ },
+ {
+  "from": "İşitme bilgisi beyin sapı bağlantıları, talamik röleler ve işitme korteksiyle birlikte işlenir. Sesin şiddeti artınca her aksiyon potansiyelinin boyunun sınırsız büyüdüğü düşünülmemelidir; sinirsel kodlamada etkinlik örüntüleri ve hangi liflerin katıldığı önemlidir. Bu derste ayrıntılı frekans analizi yerine yol ve sinyal türü ayrımı temellendirilir.",
+  "to": "İşitme bilgisi beyin sapı bağlantıları, talamik röleler ve işitme korteksiyle birlikte işlenir. Sesin şiddeti artınca her aksiyon potansiyelinin boyunun sınırsız büyüdüğü düşünülmemelidir; sinirsel kodlamada etkinlik örüntüleri ve hangi liflerin katıldığı önemlidir. Burada ayrıntılı frekans analizi yerine yol ve sinyal türü ayrımı temellendirilir."
+ },
+ {
+  "from": "Araç ileri ivmelenirken ve baş bir yana eğilirken iki farklı fiziksel durum vardır; otolit sistemi bunlara duyarlı olabilir. Bununla birlikte tek bir otolit sinyalinden bütün dünya hareketini kusursuz çıkarmak mümkün değildir; merkez başka duyusal verileri de kullanır. Modelin doğrusal ve eğim kartları bu farklı girdileri ayrı etiketlerle gösterir.",
+  "to": "Araç ileri ivmelenirken ve baş bir yana eğilirken iki farklı fiziksel durum vardır; otolit sistemi bunlara duyarlı olabilir. Bununla birlikte tek bir otolit sinyalinden bütün dünya hareketini kusursuz çıkarmak mümkün değildir; merkez başka duyusal verileri de kullanır. Modelin doğrusal ve eğim seçenekleri bu farklı girdileri ayrı etiketlerle gösterir."
+ },
+ {
+  "from": "Kaynaklarda kullanılan osein veya ara madde adını gördüğünde organik ve mineral bileşenlerin ayrı görevlerini kaybetme. Yalnız mineral miktarından her kişinin kırılma kuvveti hesaplanamaz; lif düzeni, mikro yapı, kemik geometrisi ve başka koşullar da önemlidir. Sanal karşılaştırmalar bileşen katkısını gösterir, gerçek kemikle asit veya yakma deneyi istemez.",
+  "to": "Osein veya ara madde adını gördüğünde organik ve mineral bileşenlerin ayrı görevlerini kaybetme. Yalnız mineral miktarından her kişinin kırılma kuvveti hesaplanamaz; lif düzeni, mikro yapı, kemik geometrisi ve başka koşullar da önemlidir. Sanal karşılaştırmalar bileşen katkısını gösterir, gerçek kemikle asit veya yakma deneyi istemez."
+ },
+ {
+  "from": "Kalınlaşma ise yüzeyde yeni doku eklenmesi ve içteki yeniden düzenlemelerle ilişkilidir; periostal katkı burada önemlidir. Plağın kapanması bütün kemik yapımının durduğu anlamına gelmez. Modelde yetişkin presetinde uzunluk sabitken yapımın baskın olduğu kalınlaşma seçeneği değişebilir; bu, her yetişkinde her yıl aynı kalınlaşma olduğu iddiası değildir.",
+  "to": "Kalınlaşma ise yüzeyde yeni doku eklenmesi ve içteki yeniden düzenlemelerle ilişkilidir; periostal katkı burada önemlidir. Plağın kapanması bütün kemik yapımının durduğu anlamına gelmez. Modelde yetişkin ayarında uzunluk sabitken yapımın baskın olduğu kalınlaşma seçeneği değişebilir; bu, her yetişkinde her yıl aynı kalınlaşma olduğu iddiası değildir."
+ },
+ {
+  "from": "Organik-mineral katkılarını anlatan temsili deney, bütün yaşlanmayı açıklayan bir yasa değildir. Düşük yoğunluk veya kırılganlık hakkında değerlendirme tek bir şemadan kişiye tanı koymaz. Bu derste amaç doku, büyüme ve yeniden yapılanmanın nedenlerini ilişkilendirerek verilen koşullardan sınırlı sonuç çıkarmaktır.",
+  "to": "Organik-mineral katkılarını anlatan temsili deney, bütün yaşlanmayı açıklayan bir yasa değildir. Düşük yoğunluk veya kırılganlık hakkında değerlendirme tek bir şemadan kişiye tanı koymaz. Burada amaç doku, büyüme ve yeniden yapılanmanın nedenlerini ilişkilendirerek verilen koşullardan sınırlı sonuç çıkarmaktır."
+ },
+ {
+  "from": "Dizde tipik eklem yüzlerinin hiyalin kıkırdağı ile aradaki fibröz menisküs farklı yapılardır. Kalça eklemindeki labrum da yüzey kıkırdağından ayrı ele alınır. Kaynakta 'dizde fibröz kıkırdak bulunur' cümlesini okuduğunda hangi anatomik bölüme işaret edildiğini sormak, doğru bilgiyi yanlış genellemeye dönüştürmeni önler.",
+  "to": "Dizde tipik eklem yüzlerinin hiyalin kıkırdağı ile aradaki fibröz menisküs farklı yapılardır. Kalça eklemindeki labrum da yüzey kıkırdağından ayrı ele alınır. 'Dizde fibröz kıkırdak bulunur' cümlesini okuduğunda hangi anatomik bölüme işaret edildiğini sormak, doğru bilgiyi yanlış genellemeye dönüştürmeni önler."
+ },
+ {
+  "from": "Kemiklerin bağlantı kurduğu bölgeler eklem olarak adlandırılır. Okul düzeyindeki işlevsel sınıflama oynamaz, yarı oynar ve oynar gruplarını hareket miktarıyla karşılaştırır. Yapısal sınıflama ise fibröz, kıkırdak ve sinoviyal bağlantı gibi doku ve boşluk özelliklerine bakar; iki ölçüt aynı sözcük listesi değildir.",
+  "to": "Kemiklerin bağlantı kurduğu bölgeler eklem olarak adlandırılır. Temel işlevsel sınıflama oynamaz, yarı oynar ve oynar gruplarını hareket miktarıyla karşılaştırır. Yapısal sınıflama ise fibröz, kıkırdak ve sinoviyal bağlantı gibi doku ve boşluk özelliklerine bakar; iki ölçüt aynı sözcük listesi değildir."
+ },
+ {
+  "from": "Sorularda gerekli doku bölgesi ve şart kartta verilmelidir; görünmeyen bir şekli hayal ederek cevaplama gerekmemeli. Laboratuvar seçimi ve gerekçesi bu cihazda korunur ama kendiliğinden ustalık veya konu tamamlanması kaydetmez. Önce bağlantıyı açıklayabilir hâle gel, sonra bağımsız örneklerle yeni bağlama taşı.",
+  "to": "Sorularda gerekli doku bölgesi ve şart soruda verilmelidir; görünmeyen bir şekli hayal ederek cevaplama gerekmemeli. Önce bağlantıyı açıklayabilir hâle gel, sonra bağımsız örneklerle yeni bağlama taşı."
+ },
+ {
+  "from": "Zar potansiyeli bu derste hücre içi elektriksel potansiyel eksi hücre dışı potansiyel olarak tanımlanır. −70 mV, hücre içinin dışına göre 70 mV daha negatif olduğunu söyler. mV milivolttur; 1 mV=0,001 V. Bu işareti toplam iyon sayısıyla karıştırma: zarın yakınındaki küçük yük ayrımı potansiyel farkı oluşturur; hücrenin bütün iç ve dış sıvısı tek tür elektrik yüküyle dolu değildir.",
+  "to": "Zar potansiyeli burada hücre içi elektriksel potansiyel eksi hücre dışı potansiyel olarak tanımlanır. −70 mV, hücre içinin dışına göre 70 mV daha negatif olduğunu söyler. mV milivolttur; 1 mV=0,001 V. Bu işareti toplam iyon sayısıyla karıştırma: zarın yakınındaki küçük yük ayrımı potansiyel farkı oluşturur; hücrenin bütün iç ve dış sıvısı tek tür elektrik yüküyle dolu değildir."
+ },
+ {
+  "from": "Etkileşimde gerilim eğrisi bir örnek AP’yi, ikinci uyaran alanı ayrı bir uyarılabilirlik koşulunu gösterir. Akış kendiliğinden başlamaz; isteyen bir kez oynatabilir veya zaman sürgüsünü kullanabilir. Temsili ms değerleri bir gerçek nöron ölçümü veya kişisel performans değildir. Hareket kapalıyken bütün fazlar kontrolle seçilebilir; animasyon süresi öğrenme puanı oluşturmaz.",
+  "to": "Etkileşimde gerilim eğrisi bir örnek AP’yi, ikinci uyaran alanı ayrı bir uyarılabilirlik koşulunu gösterir. Akış kendiliğinden başlamaz; isteyen bir kez oynatabilir veya zaman sürgüsünü kullanabilir. Temsili ms değerleri bir gerçek nöron ölçümü veya kişisel performans değildir. Hareket kapalıyken bütün fazlar kontrolle seçilebilir."
+ },
+ {
+  "from": "Talamus birçok duyusal bilginin kortekse iletilmesi ve düzenlenmesine katılır; motor ağlardan gelen bilgi alışverişinde ve uyanıklıkla ilişkili ağlarda da rol oynar. Okul düzeyinde koku dışındaki duyuların talamik aktarımı vurgulanır. Bu ifade, kokuyla ilgili bütün işlemlerde talamusun hiçbir bağlantısı yoktur diye sınırsız biçimde genişletilmemelidir.",
+  "to": "Talamus birçok duyusal bilginin kortekse iletilmesi ve düzenlenmesine katılır; motor ağlardan gelen bilgi alışverişinde ve uyanıklıkla ilişkili ağlarda da rol oynar. Temel düzeyde koku dışındaki duyuların talamik aktarımı vurgulanır. Bu ifade, kokuyla ilgili bütün işlemlerde talamusun hiçbir bağlantısı yoktur diye sınırsız biçimde genişletilmemelidir."
+ },
+ {
+  "from": "Temsili bir termostat modelinde hedef 37 °C, ölçüm 38 °C ise fark +1 °C’dir ve ısı kaybını destekleyen yanıt yönü seçilebilir. Ölçüm 36 °C ise fark −1°C, ısı korunması/üretimi yönüyle ilişkilendirilir. Bu basit örnek gerçek kişinin ateş tanısı, güvenli sıcaklık sınırı veya tüm fizyolojik yanıtların hız hesabı değildir. Geri bildirimde amaç sapmayı azaltan uygun yanıtı bulmaktır.",
+  "to": "Temsili bir termostat modelinde hedef 37 °C, ölçüm 38 °C ise fark +1 °C’dir ve ısı kaybını destekleyen yanıt yönü seçilebilir. Ölçüm 36 °C ise fark −1 °C, ısı korunması/üretimi yönüyle ilişkilendirilir. Bu basit örnek gerçek kişinin ateş tanısı, güvenli sıcaklık sınırı veya tüm fizyolojik yanıtların hız hesabı değildir. Geri bildirimde amaç sapmayı azaltan uygun yanıtı bulmaktır."
+ },
+ {
+  "from": "Etkileşimde görev kartını değiştirerek ilgili ön beyin bölgesinin rolünü ve başka bölgelerle bağlantısını gör. Şekil anatomik ölçekli bir beyin taraması değildir; kesit ve lob görünümü birbirinden ayrılır. İlişkiyi gerekçelendirirken kanıtın sınırını eklemek, yalnız renkli bölgenin adını seçmekten daha güçlü öğrenme sağlar.",
+  "to": "Etkileşimde görev seçeneğini değiştirerek ilgili ön beyin bölgesinin rolünü ve başka bölgelerle bağlantısını gör. Şekil anatomik ölçekli bir beyin taraması değildir; kesit ve lob görünümü birbirinden ayrılır. İlişkiyi gerekçelendirirken kanıtın sınırını eklemek, yalnız renkli bölgenin adını seçmekten daha güçlü öğrenme sağlar."
+ },
+ {
+  "from": "Omurilik soğanı yani medulla; solunum, dolaşım ve bazı koruyucu refleks ağlarında önemli merkezler içerir. Kalp hızı, damar çapı ve solunum örüntüsünün düzenlenmesi; yutma, öksürme ve kusma gibi yanıtlarla ilişkileri okul düzeyinde ele alınır. Bir organın kasılmasını sağlayan hücreyle bu kasılmanın düzenlenmesine katılan merkez aynı yapı değildir.",
+  "to": "Omurilik soğanı yani medulla; solunum, dolaşım ve bazı koruyucu refleks ağlarında önemli merkezler içerir. Kalp hızı, damar çapı ve solunum örüntüsünün düzenlenmesi; yutma, öksürme ve kusma gibi yanıtlarla ilişkileri temel düzeyde ele alınır. Bir organın kasılmasını sağlayan hücreyle bu kasılmanın düzenlenmesine katılan merkez aynı yapı değildir."
+ },
+ {
+  "from": "Bir vakada önce görev sorusunu belirle: algılama, yönelme, koordinasyon, ritim düzenleme veya kas yanıtı. Sonra yapının bu görevdeki katkısını gerekçelendir. Tek bir yapıya bir işlev eşleştirmen başka yapılar gereksiz demek değildir. İstenen en uygun ders ilişkisiyle gerçek bir hastadaki kesin lezyon tanısı farklı kanıt ister.",
+  "to": "Bir vakada önce görev sorusunu belirle: algılama, yönelme, koordinasyon, ritim düzenleme veya kas yanıtı. Sonra yapının bu görevdeki katkısını gerekçelendir. Tek bir yapıya bir işlev eşleştirmen başka yapılar gereksiz demek değildir. İstenen en uygun genel ilişkiyle gerçek bir hastadaki kesin lezyon tanısı farklı kanıt ister."
+ },
+ {
+  "from": "Gri madde kelebek benzeri bir görünüm verebilir; öne ve arkaya uzanan kısımlarına boynuz denir. Bir çizimin simetrik görünmesi bütün sinirsel işlevlerin sağda solda aynı tek hücrede bulunduğu anlamına gelmez. Kesitin ön/arka yönü etiketle belirtilmelidir; ekrandaki üst tarafı otomatik anatomik arka sayma.",
+  "to": "Gri madde kelebek benzeri bir görünüm verebilir; öne ve arkaya uzanan kısımlarına boynuz denir. Bir çizimin simetrik görünmesi bütün sinirsel işlevlerin sağda solda aynı tek hücrede bulunduğu anlamına gelmez. Kesitin ön/arka yönü etiketle belirtilmelidir; çizimdeki üst tarafı otomatik anatomik arka sayma."
+ },
+ {
+  "from": "Bu derste tek sinapslı modelde bir duyu ve bir motor nöron arasında bir merkezî kimyasal sinaps bulunur. Reseptör ve kasın efektör olması onları ayrıca birer nöron yapmaz. Motor nöron-kas kavşağı da bağlantıdır; merkezî sinaps sayısı soruluyorsa o sayıya başka basamağı sessizce ekleme.",
+  "to": "Burada tek sinapslı modelde bir duyu ve bir motor nöron arasında bir merkezî kimyasal sinaps bulunur. Reseptör ve kasın efektör olması onları ayrıca birer nöron yapmaz. Motor nöron-kas kavşağı da bağlantıdır; merkezî sinaps sayısı soruluyorsa o sayıya başka basamağı sessizce ekleme."
+ },
+ {
+  "from": "Etkileşimde devre türü ve kesinti yeri değişince gerçek SVG yolları ve metinsel sonuçlar birlikte güncellenir. Kesintiler bir düşünce deneyidir; fiziksel kişiye uygulanacak deney veya tek başına tanı yöntemi değildir. Öğrenilmiş karmaşık becerileri tek refleks yayına indirmeden ve her refleksi omurilikte sanmadan modelin kapsamını koru.",
+  "to": "Etkileşimde devre türü ve kesinti yeri değişince çizilen yollar ve yazılı sonuçlar birlikte güncellenir. Kesintiler bir düşünce deneyidir; fiziksel kişiye uygulanacak deney veya tek başına tanı yöntemi değildir. Öğrenilmiş karmaşık becerileri tek refleks yayına indirmeden ve her refleksi omurilikte sanmadan modelin kapsamını koru."
+ },
+ {
+  "from": "Okulun temel anatomik sayımında 12 çift kafa siniri ve 31 çift omurilik siniri ele alınır; toplam 43 çift, çift başına ikiyle 86 sinir eder. Bu sayı nöron veya bütün küçük sinir dalı sayısı değildir. Sayımın birimini korumak önemlidir. Baş bölgesinde bulunmak da tek başına her yapıyı çevresel veya merkezî seçmek için yeterli değildir; verilen anatomik yapı okunur.",
+  "to": "Temel anatomik sayımda 12 çift kafa siniri ve 31 çift omurilik siniri ele alınır; toplam 43 çift, çift başına ikiyle 86 sinir eder. Bu sayı nöron veya bütün küçük sinir dalı sayısı değildir. Sayımın birimini korumak önemlidir. Baş bölgesinde bulunmak da tek başına her yapıyı çevresel veya merkezî seçmek için yeterli değildir; verilen anatomik yapı okunur."
+ },
+ {
+  "from": "Otonom motor yollar düz kas, kalp kası ve bezler gibi hedeflerle ilişkilidir. Bu dersin temel iki nöronlu yolunda pregangliyonik nöronun gövdesi MSS’dedir; aksonu periferik gangliyonda postgangliyonik nörona bağlanır. İkinci nöronun gövdesi ÇSS’de bulunur ve aksonu hedefe uzanır. Bütün motor gövdeler yalnız MSS içindedir iddiasını bu örnek çürütür.",
+  "to": "Otonom motor yollar düz kas, kalp kası ve bezler gibi hedeflerle ilişkilidir. Temel iki nöronlu yolda pregangliyonik nöronun gövdesi MSS’dedir; aksonu periferik gangliyonda postgangliyonik nörona bağlanır. İkinci nöronun gövdesi ÇSS’de bulunur ve aksonu hedefe uzanır. Bütün motor gövdeler yalnız MSS içindedir iddiasını bu örnek çürütür."
+ },
+ {
+  "from": "Alzheimer hastalığında bellek ve başka bilişsel işlevlerle ilişkili ağlar etkilenebilir; hipokampal bölgeler erken dönemde önemli olabilir. Amiloid ve tau ile ilişkili patolojik süreçler hastalık bağlamında incelenir. Normal yaşlanmayı hastalıkla özdeşleştirme ve bütün unutkanlıkları aynı tanı sayma. Bir ders kartındaki ilişki, kişinin bütün bilişsel durumunu ölçmüş olmaz.",
+  "to": "Alzheimer hastalığında bellek ve başka bilişsel işlevlerle ilişkili ağlar etkilenebilir; hipokampal bölgeler erken dönemde önemli olabilir. Amiloid ve tau ile ilişkili patolojik süreçler hastalık bağlamında incelenir. Normal yaşlanmayı hastalıkla özdeşleştirme ve bütün unutkanlıkları aynı tanı sayma. Bir öğretim örneğindeki ilişki, kişinin bütün bilişsel durumunu ölçmüş olmaz."
+ },
+ {
+  "from": "Bir açıklama “MSS miyelini etkileniyor” dediğinde ilgili ders mekanizması seçilebilir; yalnız “el uyuşuyor” dediğinde aynı kesinlik yoktur. Nörotransmitter, doku, bölge ve devre gibi ek bilgiler seçenekleri daraltır. Hastalık adları arasında bir renk oyunu yerine hangi mekanizmanın hangi kanıta dayandığını yazmak gerekir. Benzer belirti farklı nedenlerle ortaya çıkabilir.",
+  "to": "Bir açıklama “MSS miyelini etkileniyor” dediğinde ilgili mekanizma seçilebilir; yalnız “el uyuşuyor” dediğinde aynı kesinlik yoktur. Nörotransmitter, doku, bölge ve devre gibi ek bilgiler seçenekleri daraltır. Hastalık adları arasında bir renk oyunu yerine hangi mekanizmanın hangi kanıta dayandığını yazmak gerekir. Benzer belirti farklı nedenlerle ortaya çıkabilir."
+ },
+ {
+  "from": "Etkileşimde somatik/otonom hedef ve motor yol değişirken seçilen mekanizma kartı açıklayıcı ilişkiyi ayrıca gösterir. Bu iki sınıflamayı karıştırma: ÇSS yolu öğretmek, bütün sinir hastalıklarının yalnız ÇSS’de olduğu anlamına gelmez. Öğrenme soruları kendi bağlamını ve varsayımını verir; model kullanımı tanı, soru doğrusu veya ustalık kaydı oluşturmaz.",
+  "to": "Etkileşimde somatik/otonom hedef ve motor yol değişirken seçilen mekanizma açıklayıcı ilişkiyi ayrıca gösterir. Bu iki sınıflamayı karıştırma: ÇSS yolu öğretmek, bütün sinir hastalıklarının yalnız ÇSS’de olduğu anlamına gelmez. Öğrenme soruları kendi bağlamını ve varsayımını verir; model kullanımı tanı oluşturmaz."
+ },
+ {
+  "from": "MSS aksonlarının miyelinlenmesinde oligodendrositler, ÇSS’de Schwann hücreleri görev alır. Miyelin nöronun kendisi veya yeni bir sinir hücresi değildir. Atlamalı iletim, impuls maddesinin boşluklardan zıplaması değil, elektriksel değişimin boğumlarda yeniden oluşturulmasıyla ilgili bir süreçtir. İyon kanalları ve ayrıntılı gerilim evreleri aksiyon potansiyeli ünitesinde ayrıca izlenecek.",
+  "to": "MSS aksonlarının miyelinlenmesinde oligodendrositler, ÇSS’de Schwann hücreleri görev alır. Miyelin nöronun kendisi veya yeni bir sinir hücresi değildir. Atlamalı iletim, impuls maddesinin boşluklardan zıplaması değil, elektriksel değişimin boğumlarda yeniden oluşturulmasıyla ilgili bir süreçtir."
  }
 ]

@@ -1395,5 +1395,1048 @@
    "prompt": "RNA genomlu virüsler RNA ile ilgili hangi genellemenin yanlış olduğunu gösterir?",
    "answer": "RNA'nın hiçbir bağlamda kalıtsal bilgi taşıyamayacağı ve kopyalanamayacağı genellemesinin yanlış olduğunu gösterir."
   }
+ ],
+ "kalitim-molekulu-kesfi": [
+  {
+   "after": 2,
+   "prompt": "Griffith deneyinde canlı R ile ısıyla öldürülmüş S karışımı verilen farede ne gözlenir?",
+   "answer": "Fare ölür ve farede canlı S bakterileri bulunur; R hücreleri kapsüllü özellik kazanmıştır."
+  },
+  {
+   "after": 4,
+   "prompt": "Bir bileşeni bozunca olayın durması ile saf bileşenin dönüşüm oluşturması hangi iki ayrı soruyu yanıtlar?",
+   "answer": "İlki bileşenin süreç için gerekli olduğunu, ikincisi tek başına yeterli olduğunu destekler."
+  },
+  {
+   "after": 6,
+   "prompt": "Hershey–Chase deneyinde santrifüj sonrası fosfor-32 sinyali daha çok nerede bulunur?",
+   "answer": "Bakteri çökeltisinde bulunur; kükürt-35 sinyali ise daha çok üst sıvıdaki ayrılmış kılıflarda kalır."
+  },
+  {
+   "after": 8,
+   "prompt": "Chargaff’ın bulguları neden tek bir DNA zincirinde A=T olacağını göstermez?",
+   "answer": "Eşitlik çift zincirli DNA’nın toplam baz bileşimine aittir; tek zincirin bileşimi bu ölçümlerden çıkmaz."
+  },
+  {
+   "after": 9,
+   "prompt": "X ışını kırınım fotoğrafı DNA hakkında neyi doğrudan okuyamaz?",
+   "answer": "Bazların tek tek harf sırasını okuyamaz; helisel düzen ve boyutlarla ilgili bilgi verir."
+  }
+ ],
+ "solunum-organlar": [
+  {
+   "after": 1,
+   "prompt": "Burunda havanın ısınması ve nemlenmesine hangi yapılar katkı verir?",
+   "answer": "Nemli mukuslu yüzey ve zengin kılcal damar ağı katkı verir."
+  },
+  {
+   "after": 3,
+   "prompt": "Trakedeki C biçimli kıkırdak halkasının açık arka bölümünü ne tamamlar?",
+   "answer": "Düz kas tamamlar; bu arka bölüm özofagusla komşudur."
+  },
+  {
+   "after": 5,
+   "prompt": "Sağ ve sol akciğerin lob sayıları kaçtır ve sol taraftaki farkı ne etkiler?",
+   "answer": "Sağ akciğer üç, sol akciğer iki lobludur; sol taraftaki biçimi kalbin komşuluğu etkiler."
+  },
+  {
+   "after": 7,
+   "prompt": "Sürfaktan alveollerin açılmasını hangi fiziksel etkiyle kolaylaştırır?",
+   "answer": "Yüzey gerilimini azaltır; böylece alveollerin sönme eğilimini de sınırlar."
+  },
+  {
+   "after": 9,
+   "prompt": "J=kAΔP/T modelinde k=1, A=4, ΔP=3 ve T=2 ise J kaç model birimi olur?",
+   "answer": "J=1·4·3/2=6 model birimi olur."
+  },
+  {
+   "after": 11,
+   "prompt": "Astım ile amfizemi ayıran temel fark nedir?",
+   "answer": "Astımda hava yolu daralır ve direnç artar; amfizemde alveol duvarları yıkılır, değişim yüzeyi ve elastik yapı kaybolur."
+  }
+ ],
+ "soluk-alisverisi": [
+  {
+   "after": 3,
+   "prompt": "Soluk alma sonunda akciğer hacmi yüksekken net hava akışı neden durur?",
+   "answer": "Alveol ve atmosfer basınçları eşitlenir; net basınç farkı sıfır olunca hava yolu açık olsa da akış olmaz."
+  },
+  {
+   "after": 5,
+   "prompt": "Hava akışının yönünü bulurken plevral basıncı alveol basıncı yerine kullanmak neden hatalıdır?",
+   "answer": "Akış yönünü atmosfer ile alveol basıncı arasındaki fark belirler; plevral basınç ayrı bir bölmeye aittir ve yönü yanlış verebilir."
+  },
+  {
+   "after": 6,
+   "prompt": "Q=(Patm−Palv)/R modelinde Patm=0, Palv=−2 ve R=4 ise Q kaç olur?",
+   "answer": "Q=(0−(−2))/4=+0,5 model akış birimi olur; içe pozitif tanımda bu içe akıştır."
+  },
+  {
+   "after": 8,
+   "prompt": "Toplam dakika ventilasyonu aynı kalsa da hızlı ve yüzeysel solukta alveoler ventilasyon neden düşer?",
+   "answer": "Her solukta aynı ölü boşluk hacmi düşülür; tidal hacim küçülünce değişim yüzeyine ulaşan yeni hava payı azalır."
+  },
+  {
+   "after": 10,
+   "prompt": "Merkezî kemoreseptörler kandaki CO₂ artışından hangi yolla etkilenir?",
+   "answer": "CO₂ beyin-omurilik sıvısına geçip suyla tepkimeye girer ve yerel H⁺ oluşturur; kandaki H⁺ bu sınırı aynı serbestlikle geçmez."
+  }
+ ],
+ "solunum-gaz-tasinmasi": [
+  {
+   "after": 1,
+   "prompt": "20 hemoglobinde ortalama doygunluk yüzde 50 ise bağlı O₂ kaç eşdeğer olur?",
+   "answer": "Azami kapasite 20·4=80 O₂’dir; yüzde 50 doluluk 40 O₂ eşdeğeri verir."
+  },
+  {
+   "after": 3,
+   "prompt": "Hemoglobinin O₂ ayrışma eğrisinin S biçimli olması neyle açıklanır?",
+   "answer": "İşbirlikli bağlanmayla açıklanır; bir O₂’nin bağlanması diğer yerlerin bağlanmasını etkiler."
+  },
+  {
+   "after": 5,
+   "prompt": "Karbamino biçiminde CO₂ hemoglobinin hangi kısmına bağlanır?",
+   "answer": "Proteinin amino gruplarına bağlanır; O₂’nin bağlandığı hem demirinden ayrı bir yerdir."
+  },
+  {
+   "after": 7,
+   "prompt": "Bohr etkisi ile Haldane etkisi arasındaki fark nedir?",
+   "answer": "Bohr etkisi CO₂ ve pH’nin O₂ ilgisine etkisini, Haldane etkisi oksijenlenmenin CO₂ ve H⁺ taşınmasına etkisini anlatır."
+  },
+  {
+   "after": 9,
+   "prompt": "Karbonmonoksit ortamda O₂ bulunsa bile taşımayı nasıl bozar?",
+   "answer": "Hemoglobine güçlü bağlanır; böylece O₂ için kullanılabilir yerler ve O₂ bırakma düzeni bozulur."
+  }
+ ],
+ "uriner-organlar": [
+  {
+   "after": 1,
+   "prompt": "Karaciğerdeki üre döngüsü azotlu atık yükünü nasıl sınırlar?",
+   "answer": "Amonyak azotunu üreye dönüştürür; bu toksik yükü sınırlar ama enerji gerektirir ve üre kanla böbreğe taşınır."
+  },
+  {
+   "after": 4,
+   "prompt": "Böbrekte glomerulus kılcallarından çıkan kan hangi damara geçer?",
+   "answer": "Efferent arteriyole, oradan da tüplere komşu sonraki kılcal ağlara geçer."
+  },
+  {
+   "after": 5,
+   "prompt": "Üreterde idrarın mesaneye iletilmesini ne sağlar?",
+   "answer": "Duvardaki düz kasların dalga biçimli peristaltik kasılmaları sağlar; iletim yalnız yer çekimine bağlı değildir."
+  },
+  {
+   "after": 7,
+   "prompt": "Üreter engeli ile üretra engeli arasındaki etki farkı nedir?",
+   "answer": "Üreter engeli o böbreğin mesaneye teslimini, üretra engeli ise mesaneden dışarı çıkışı etkiler."
+  },
+  {
+   "after": 9,
+   "prompt": "Üretrit ile gonore neden eş anlamlı sayılmaz?",
+   "answer": "Üretrit üretra iltihabının adıdır; gonore ise belirli bir etkenle ilişkili hastalıktır ve üretritin tek nedeni değildir."
+  },
+  {
+   "after": 11,
+   "prompt": "Mesanede 100 mL var, üreterlerden 60 mL gelir, çıkış kapasitesi 200 mL ve çıkış açıksa son miktar kaç mL olur?",
+   "answer": "Kullanılabilir 160 mL kapasiteden az olduğu için tamamı atılır; son mesane 0 mL olur."
+  }
+ ],
+ "nefron-isleyisi": [
+  {
+   "after": 1,
+   "prompt": "Glomerüler filtrasyon bariyerine katkı veren üç yapı nedir?",
+   "answer": "Endotelin pencereleri, glomerüler bazal membran ve podosit ayakları arasındaki yarık düzeni."
+  },
+  {
+   "after": 3,
+   "prompt": "Proksimal tüpte glikozun apikal girişi ve bazolateral çıkışı hangi taşıma türleridir?",
+   "answer": "Apikal giriş Na⁺ ile ortak ikincil aktif taşımadır; bazolateral çıkış GLUT aracılı kolaylaştırılmış taşımadır."
+  },
+  {
+   "after": 5,
+   "prompt": "Tüp sıvısında bir maddenin derişiminin artması neden daha çok madde geldiğini kanıtlamaz?",
+   "answer": "Derişim miktar/hacimdir; suyun geri alınması da kalan maddenin derişimini artırabilir."
+  },
+  {
+   "after": 6,
+   "prompt": "Plazma glikozu 2 mg/mL, GFR 125 mL/dakika ve Tm 200 mg/dakika ise atılan glikoz kaç mg/dakika olur?",
+   "answer": "Süzülen yük 2·125=250 mg/dakikadır; 200’ü geri emilir, 50 mg/dakika atılır."
+  },
+  {
+   "after": 8,
+   "prompt": "Vasa recta damarlarının medulla gradyanına katkısı nedir?",
+   "answer": "Karşı akım değişimiyle medulladaki ozmotik gradyanın hızla yıkanmasını sınırlar."
+  },
+  {
+   "after": 9,
+   "prompt": "ADH ile aldosteronun geç distal bölgedeki etkileri nasıl ayrılır?",
+   "answer": "ADH su geçirgenliğini artırır; aldosteron Na⁺ geri emilimini ve koşullu K⁺ salgılanmasını destekler."
+  },
+  {
+   "after": 12,
+   "prompt": "Günde 200 L süzüntüden 4 L idrar kalırsa net su geri kazanımı yüzde kaç olur?",
+   "answer": "Geri kazanılan 196 L’dir; 196/200·100=%98 olur."
+  }
+ ],
+ "erkek-ureme-organlari": [
+  {
+   "after": 2,
+   "prompt": "Seminifer tüpçükteki Sertoli hücreleri ile tüpçükler arasındaki Leydig hücrelerinin görevi nasıl ayrılır?",
+   "answer": "Sertoli hücreleri destek, beslenme ve kan-testis bariyerine katılır; Leydig hücreleri steroid hormon üretir."
+  },
+  {
+   "after": 3,
+   "prompt": "Birincil spermatositte DNA eşlenmesi kromozom sayısını neden 92’ye çıkarmaz?",
+   "answer": "Kromozomlar sentromere göre sayılır; eşlenmiş her kromozom iki kardeş kromatit taşısa da tek kromozomdur."
+  },
+  {
+   "after": 6,
+   "prompt": "Spermde orta bölüm ile kuyruğun hareketteki katkısı nasıl ayrılır?",
+   "answer": "Orta bölümdeki mitokondriler enerji üretimine, mikrotübüllü kuyruk ise hareketin gerçekleşmesine katkı verir."
+  },
+  {
+   "after": 7,
+   "prompt": "Epididimal olgunlaşmadan sonra tam döllenme yeterliliği için hangi değişim gerekir?",
+   "answer": "Kapasitasyon gerekir; normalde dişi üreme yolu ortamında ya da uygun laboratuvar koşullarında gerçekleşir."
+  },
+  {
+   "after": 8,
+   "prompt": "Spermin testisten dışarı çıkışına kadarki temel yol sırası nedir?",
+   "answer": "Testis, epididimis, vas deferens, ejakülasyon kanalı ve üretra."
+  },
+  {
+   "after": 9,
+   "prompt": "Seminal kese salgısı semene hangi katkıyı sağlar?",
+   "answer": "Fruktoz gibi enerji kaynakları ve spermin taşınacağı ortamı sağlar."
+  },
+  {
+   "after": 12,
+   "prompt": "Testosteronun negatif geri bildirimi hangi düzeylerde etki eder?",
+   "answer": "Hipotalamus ve hipofiz düzeyinde GnRH ve gonadotropin uyarısını sınırlar."
+  }
+ ],
+ "sindirim-bagirsaklar": [
+  {
+   "after": 1,
+   "prompt": "Bağırsak hareketlerinde segmentasyon ile peristaltik dalganın vurguladığı iş nasıl ayrılır?",
+   "answer": "Segmentasyon içeriği karıştırmayı, peristaltik dalga ise içeriğin net ilerlemesini vurgular."
+  },
+  {
+   "after": 3,
+   "prompt": "Glikozun apikal alımında taşıyıcı neden her geçişte ATP parçalamak zorunda değildir?",
+   "answer": "Alım Na⁺ gradyanına bağlı ikincil aktif taşımadır; enerji yalnız gradyanı sürdürmede dolaylı kullanılır."
+  },
+  {
+   "after": 5,
+   "prompt": "Kısa ve orta zincir yağ asitlerinin önemli bölümü kana hangi yolla ulaşır?",
+   "answer": "Lenfe gitmeden portal kan yoluyla ulaşır; bu yüzden bütün yağ ürünleri önce lenfe gider demek fazla geneldir."
+  },
+  {
+   "after": 8,
+   "prompt": "İç ve dış anal sfinkterin denetimi nasıl farklıdır?",
+   "answer": "İç sfinkter düz kas denetimiyle, dış sfinkter çizgili kas ve istemli denetim katkısıyla çalışır."
+  }
+ ],
+ "sindirim-enzimler-hormonlar": [
+  {
+   "after": 1,
+   "prompt": "İnsan amilazı nişastayı parçaladığı hâlde selülozu neden parçalayamaz?",
+   "answer": "Selülozun bağ düzeni nişasta ve glikojendekinden farklıdır; amilaz bu bağları kesemez."
+  },
+  {
+   "after": 2,
+   "prompt": "Mide asidiyle denatürasyon ile pepsinin proteine yaptığı iş nasıl ayrılır?",
+   "answer": "Asit proteinin yapısını bozar; pepsin ise peptit bağlarını enzimli hidrolizle keser."
+  },
+  {
+   "after": 5,
+   "prompt": "Nükleik asitlerin sindiriminde ulaşılan son ürünler nelerdir?",
+   "answer": "Fosfat, şeker ve azotlu baz; aminoasit nükleik asidin ürünü değildir."
+  },
+  {
+   "after": 7,
+   "prompt": "Sekretin salımının başlıca uyarısı ve pankreastaki sonucu nedir?",
+   "answer": "Duodenuma gelen asit uyarır; sekretin pankreasın bikarbonatça zengin sulu salgısını destekler."
+  },
+  {
+   "after": 8,
+   "prompt": "CCK safra üretmediği hâlde safra akışını nasıl artırır?",
+   "answer": "Safra kesesinin kasılmasını destekler; böylece depolanmış safra uygun zamanda akar."
+  }
+ ],
+ "sindirim-karaciger-safra": [
+  {
+   "after": 1,
+   "prompt": "Karaciğere kan hangi iki yoldan girer?",
+   "answer": "Hepatik arter ve sindirim organlarından gelen portal toplardamar yoluyla girer."
+  },
+  {
+   "after": 2,
+   "prompt": "Sistik kanal tıkanması ile ortak safra yolu tıkanmasının sonucu nasıl farklıdır?",
+   "answer": "Sistik kanalda kese kullanımı aksar ama hepatik yol açık kalabilir; ortak yol tıkanınca duodenuma safra çıkışı da aksar."
+  },
+  {
+   "after": 5,
+   "prompt": "100 birimlik safra tuzu havuzundan 70 birim geri dönerse havuzun korunması için kaç birim yeni sentez gerekir?",
+   "answer": "Kayıp 100−70=30 birimdir; havuzun korunması için 30 birim yeni sentez gerekir."
+  },
+  {
+   "after": 6,
+   "prompt": "Kolesterolü yalnız gereksiz bir zehir saymak neden yanlıştır?",
+   "answer": "Kolesterol hücresel bir yapı bileşenidir ve bazı ürünlerin öncülüdür."
+  },
+  {
+   "after": 9,
+   "prompt": "Katalazın hidrojen peroksidi parçaladığı dengelenmiş tepkime nasıl yazılır?",
+   "answer": "2 H₂O₂ → 2 H₂O + O₂; peroksit su ve oksijene ayrılır."
+  }
+ ],
+ "sindirim-pankreas": [
+  {
+   "after": 2,
+   "prompt": "Pankreatik lipazın yağ sindirimindeki baskın ürünleri nelerdir?",
+   "answer": "Yağ asitleri ve monoasilgliserol; gliserol ve üç yağ asidine tam hidroliz ayrı bir son nokta modelidir."
+  },
+  {
+   "after": 3,
+   "prompt": "Pankreas proteazlarının bez içinde değil duodenumda etkinleşmesi neden önemlidir?",
+   "answer": "Etkin proteazların bezin kendi proteinlerine etkisini sınırlar; tripsin oluşumunu duodenumdaki enteropeptidaz başlatır."
+  },
+  {
+   "after": 7,
+   "prompt": "Pankreas adacıklarında insülin ve glukagonu hangi hücreler salgılar?",
+   "answer": "İnsülini beta, glukagonu alfa hücreleri salgılar; bu hormonlar kanala değil kana verilir."
+  },
+  {
+   "after": 8,
+   "prompt": "10 birim asit eşdeğeri ile 7 birim bikarbonat eşdeğeri bire bir tepkimeye girerse kaç birim asit kalır?",
+   "answer": "7 birim asit nötralize edilir ve 10−7=3 birim asit kalır."
+  }
+ ],
+ "dolasim-kalp": [
+  {
+   "after": 1,
+   "prompt": "Sol ventrikülün kas duvarı neden sağdakinden kalındır?",
+   "answer": "Sistemik basınca karşı iş ürettiği için kalındır; bu, sağ ventrikülün daha az kan taşıdığı anlamına gelmez."
+  },
+  {
+   "after": 4,
+   "prompt": "Normal ritimde uyarı SA düğümden sonra hangi sırayla yayılır?",
+   "answer": "Atriyumlara, AV düğüme, His demeti ve dallarına, en son Purkinje ağına yayılır."
+  },
+  {
+   "after": 6,
+   "prompt": "Atriyum kasılmasından önce ventrikül dolumunun önemli kısmı nasıl gerçekleşir?",
+   "answer": "Ventrikül basıncı atriyumdan düşükken AV kapaklar açılır ve kan pasif basınç farkıyla ventriküle geçer."
+  },
+  {
+   "after": 8,
+   "prompt": "Birinci ve ikinci kalp sesleri temel olarak hangi olaylarla ilişkilidir?",
+   "answer": "Birincisi AV kapakların, ikincisi yarımay kapakların kapanmasıyla ilişkili mekanik titreşimlerdir."
+  }
+ ],
+ "dolasim-damarlar-starling": [
+  {
+   "after": 1,
+   "prompt": "Venlerde kanın kalbe dönüşünü hangi etkenler birlikte destekler?",
+   "answer": "Venöz kapaklar, kas pompası ve solunum basınçları birlikte destekler."
+  },
+  {
+   "after": 3,
+   "prompt": "Q=60 cm³/s akış toplam kesit alanı 3000 cm² olan kılcal düzeyinden geçerse ortalama hız kaç cm/s olur?",
+   "answer": "v=Q/A=60/3000=0,02 cm/s olur."
+  },
+  {
+   "after": 5,
+   "prompt": "Klasik Starling modelinde Pc=30 ve π=25 mmHg ise net fark ve eğilim yönü nedir?",
+   "answer": "Pc−π=+5 mmHg bulunur; pozitif işaret dışa eğilimi gösterir."
+  },
+  {
+   "after": 7,
+   "prompt": "Lenf, dokudan sıvı dışında hangi maddelerin taşınmasına katılır?",
+   "answer": "Dokuya çıkan proteinlerin ve bağırsaktan gelen bazı yağ paketlerinin taşınmasına katılır."
+  },
+  {
+   "after": 8,
+   "prompt": "Süzülen 25, doğrudan dönen 20 ve lenfle uzaklaştırılabilen 3 birimse dokudaki değişim kaç birim olur?",
+   "answer": "Değişim 25−20−3=+2 birimdir; artı işaret dokuda sıvı birikimi olduğunu gösterir."
+  }
+ ],
+ "dolasim-kan-doku": [
+  {
+   "after": 1,
+   "prompt": "8 mL kan örneğinde 3,2 mL paketlenmiş eritrosit tabakası varsa hematokrit yüzde kaçtır?",
+   "answer": "3,2/8=0,40 olduğundan hematokrit %40 bulunur."
+  },
+  {
+   "after": 2,
+   "prompt": "Albümin, fibrinojen ve immünoglobulinlerin temel görevleri nasıl ayrılır?",
+   "answer": "Albümin onkotik denge ve taşımaya, fibrinojen pıhtılaşmaya, immünoglobulinler özgül savunmaya katılır."
+  },
+  {
+   "after": 4,
+   "prompt": "Oksijen yetersizliğinde eritrosit üretimini destekleyen hormon başlıca hangi organdan salınır?",
+   "answer": "Eritropoietin başlıca böbrekten salınır; erişkinde üretim kırmızı kemik iliğinde olur."
+  },
+  {
+   "after": 7,
+   "prompt": "Pıhtılaşma zincirinde oluşan trombinin fibrin ağı oluşumundaki rolü nedir?",
+   "answer": "Trombin çözünür fibrinojenin fibrine dönüşmesine katılır; fibrin ağı ilk tıkacı destekler."
+  },
+  {
+   "after": 9,
+   "prompt": "Temel modelde 0 grubu bir kişinin eritrositinde ve plazmasında ne bulunur?",
+   "answer": "Eritrositte A ve B belirleyicisi yoktur; plazmada anti-A ve anti-B bulunur."
+  }
+ ],
+ "lenf-sistemi": [
+  {
+   "after": 2,
+   "prompt": "Lenfte normalde hangi bileşenler bulunur ve hangi hücrenin yoğun olması beklenmez?",
+   "answer": "Su, iyon, protein ve bağışıklık hücreleri bulunur; eritrositlerin kandaki gibi yoğun bulunması beklenmez."
+  },
+  {
+   "after": 4,
+   "prompt": "Göğüs kanalı lenfi hangi bölgelerden toplar ve nereye boşaltır?",
+   "answer": "Bacaklar, alt gövde, bağırsak ve sol üst bedenden toplar; sol venöz köşede kana katar."
+  },
+  {
+   "after": 6,
+   "prompt": "Timus ile lenf düğümlerinin görevi nasıl ayrılır?",
+   "answer": "Timus T hücresi olgunlaşmasında önemli birincil lenfoid organdır; düğümler lenfle gelen maddelerle karşılaşmayı destekler."
+  },
+  {
+   "after": 8,
+   "prompt": "Başlangıçta 8 mL doku sıvısı, net giriş 6 mL ve lenfle çıkış 4 mL ise son hacim kaç mL olur?",
+   "answer": "Son hacim 8+6−4=10 mL olur."
+  }
+ ],
+ "bagisiklik-sistemi": [
+  {
+   "after": 1,
+   "prompt": "Gözyaşı ve tükürükte kimyasal savunmaya katkı veren moleküle bir örnek nedir?",
+   "answer": "Lizozim örnektir; mide asidi ve normal mikrobiyota da başka bölgelerde katkı verir."
+  },
+  {
+   "after": 3,
+   "prompt": "NK hücrelerinin hedef hücreyi yok etme biçimi fagositozdan nasıl ayrılır?",
+   "answer": "NK hücreleri perforin ve granzim gibi araçlarla hedefi apoptoza yöneltir; fagosit gibi hedefi yutmaz."
+  },
+  {
+   "after": 4,
+   "prompt": "Klonal seçim sırasında hangi olay gerçekleşir?",
+   "answer": "Önceden oluşmuş farklı reseptörlü lenfositler arasından hedefi tanıyan klon etkinleşir ve çoğalır."
+  },
+  {
+   "after": 6,
+   "prompt": "T hücreleri antijeni çoğunlukla hangi biçimde tanır?",
+   "answer": "Hücre yüzeyinde uygun MHC bağlamında sunulmuş peptit olarak tanır."
+  },
+  {
+   "after": 9,
+   "prompt": "Anneden plasentayla ve sütle geçen antikorların türü ve görev yeri nasıl ayrılır?",
+   "answer": "Plasentadan geçen IgG doğum öncesi pasif destek verir; sütteki salgısal IgA özellikle mukozal yüzeyi korur."
+  },
+  {
+   "after": 11,
+   "prompt": "İnsanda B ve T hücrelerinin olgunlaşma yeri neresidir?",
+   "answer": "B hücreleri temel olarak kemik iliğinde, T hücreleri timusta olgunlaşır."
+  }
+ ],
+ "kas-doku": [
+  {
+   "after": 2,
+   "prompt": "Miyoglobin ile hemoglobin oksijen bağlasa da görev yerleri nasıl ayrılır?",
+   "answer": "Miyoglobin kas içindeki demirli oksijen bağlayıcı proteindir; hemoglobin ise kanda oksijen taşır."
+  },
+  {
+   "after": 4,
+   "prompt": "Kalp kasında iskelet kasındaki gibi tetanik kuvvet oluşmasını ne sınırlar?",
+   "answer": "Kalp kası hücrelerinin uzun refrakter dönemi bu toplanmayı sınırlar."
+  },
+  {
+   "after": 6,
+   "prompt": "Kalın filamentin 1,6 µm alındığı modelde sarkomer 2,4 µm ise H bölgesi kaç µm olur?",
+   "answer": "H=2,4−2,0=0,4 µm olur; A bandı kalın filament boyu olan 1,6 µm’de kalır."
+  },
+  {
+   "after": 8,
+   "prompt": "İskelet kasında kalsiyum aktin üzerindeki bağlanma bölgelerini nasıl açar?",
+   "answer": "Troponine bağlanır; tropomiyozin düzeni değişir ve aktindeki miyozin bağlanma bölgeleri açılır."
+  },
+  {
+   "after": 10,
+   "prompt": "Kreatin fosfat ATP yenilenmesini nasıl destekler?",
+   "answer": "ADP’ye fosfat aktarır: kreatin fosfat+ADP⇌kreatin+ATP."
+  },
+  {
+   "after": 11,
+   "prompt": "Laktatı yalnız işe yaramayan bir atık saymak neden yanlıştır?",
+   "answer": "Laktat başka dokularda kullanılabilir ve karaciğer yollarına katılabilir."
+  },
+  {
+   "after": 13,
+   "prompt": "EMG kaydı kasın hangi özelliğini ölçer?",
+   "answer": "Kasın elektriksel etkinliğini kaydeder; kuvveti ya da kas uzunluğunu doğrudan ölçmez."
+  }
+ ],
+ "sindirim-agiz-yutak-yemek-borusu": [
+  {
+   "after": 2,
+   "prompt": "Sindirim kanalı lümeninde gerçekleşen sindirim neden hücre dışı sindirim sayılır?",
+   "answer": "Lümen vücudun içinde olsa da hücre dışı bir bölmedir; besin orada hücreye alınmadan enzimlerle parçalanır."
+  },
+  {
+   "after": 4,
+   "prompt": "Tam erişkin modelde bir yarım çenedeki diş dağılımı nedir ve toplam kaç diş eder?",
+   "answer": "İki kesici, bir köpek, iki küçük azı ve üç büyük azı ile yarım çenede 8, dört yarım çenede 32 diş olur."
+  },
+  {
+   "after": 6,
+   "prompt": "20 glikoz birimli doğrusal bir model zincir üç yerden kesilirse kaç parça oluşur?",
+   "answer": "Dört parça oluşur; bu, yirmi serbest glikoz oluştuğu anlamına gelmez."
+  },
+  {
+   "after": 7,
+   "prompt": "Yutmada istemli başlangıç ile refleks devam evreleri nasıl ayrılır?",
+   "answer": "Lokmanın ağızdan yutağa itilmesi istemli başlayabilir; faringeal ve özofageal evreler eşgüdümlü refleksle yürür."
+  },
+  {
+   "after": 9,
+   "prompt": "Özofagusun üst, orta ve alt bölümlerinde kas tipi nasıl değişir?",
+   "answer": "Üst bölümde çizgili, orta bölümde karışık, alt bölümde düz kas özellikleri görülür."
+  }
+ ],
+ "sindirim-mide": [
+  {
+   "after": 2,
+   "prompt": "Mide bezlerinde pepsinojeni ve asidi hangi hücreler salgılar?",
+   "answer": "Pepsinojeni baş ya da şef hücreler, asidi ise pariyetal hücreler salgılar."
+  },
+  {
+   "after": 3,
+   "prompt": "Mide içeriğinin pH değeri 2’den 4’e çıkarsa [H⁺] kaç kat değişir?",
+   "answer": "[H⁺]=10^(−pH) olduğundan iki birim fark [H⁺] değerini 100 kat azaltır."
+  },
+  {
+   "after": 6,
+   "prompt": "Midede oluşan kimus nedir?",
+   "answer": "Kısmen sindirilmiş besin ile asidik mide sıvısının karışarak oluşturduğu içeriktir."
+  },
+  {
+   "after": 7,
+   "prompt": "Besinin görünmesi ve kokusu mide salgısını hangi yolla etkileyebilir?",
+   "answer": "Vagus gibi sinirsel düzenleme üzerinden etkiler; bu etki lokma mideye ulaşmadan başlayabilir."
+  },
+  {
+   "after": 9,
+   "prompt": "Midede 300 mL içeriğe 30 mL salgı eklenip 90 mL duodenuma geçerse kaç mL kalır?",
+   "answer": "300+30−90=240 mL kalır; bu hacim sindirilen ya da emilen miktarı göstermez."
+  },
+  {
+   "after": 10,
+   "prompt": "Reflü ile gastrit arasındaki mekanizma farkı nedir?",
+   "answer": "Reflü mide içeriğinin özofagusa geri kaçışıdır; gastrit ise mide mukozasındaki inflamasyondur."
+  }
+ ],
+ "endokrin-hipotalamus": [
+  {
+   "after": 1,
+   "prompt": "Peptit hormonlar ile steroid hormonların reseptör konumu nasıl ayrılır?",
+   "answer": "Peptit hormonların çoğu zar reseptörü üzerinden, steroidler ve tiroid hormonları hücre içi reseptörlerle etki eder."
+  },
+  {
+   "after": 3,
+   "prompt": "TRH’den tiroid bezine uzanan uyarı yolunun sırası nedir?",
+   "answer": "Hipotalamik TRH ön hipofizde TSH yolunu uyarır; TSH de tiroid bezini etkiler."
+  },
+  {
+   "after": 5,
+   "prompt": "Son nefron bölümüne gelen 12 su biriminin 9 birimi geri emilirse kaç birim dışarı çıkar?",
+   "answer": "12−9=3 su birimi idrarla dışarı çıkar."
+  },
+  {
+   "after": 6,
+   "prompt": "Doğumda oksitosin döngüsü neden pozitif geri bildirim örneğidir?",
+   "answer": "Gerilme oksitosin salımını, oksitosin rahim kasılmasını artırır; kasılma da gerilmeyi artırarak döngüyü güçlendirir."
+  },
+  {
+   "after": 8,
+   "prompt": "Sentez hızı aynı kaldığı hâlde kandaki hormon miktarı neden değişebilir?",
+   "answer": "Kandaki miktar salgılanma, dağılım ve uzaklaştırmanın ortak sonucudur; parçalanma hızı değişirse miktar da değişir."
+  }
+ ],
+ "endokrin-hipofiz": [
+  {
+   "after": 1,
+   "prompt": "TSH yükseldiği hâlde tiroksinin aynı ölçüde yükselmemesi hangi koşullarda görülebilir?",
+   "answer": "Tiroidin üretim kapasitesi sınırlıysa ya da iyot kısıtı varsa görülebilir."
+  },
+  {
+   "after": 2,
+   "prompt": "Aşırı GH etkisinde gigantizm ile akromegaliyi ayıran koşul nedir?",
+   "answer": "Gigantizm çocuklukta plaklar açıkken aşırı boy uzamasıdır; akromegalide yetişkinde plaklar kapalıyken el, ayak ve yüz değişir."
+  },
+  {
+   "after": 5,
+   "prompt": "Kadın üreme sisteminde LH hangi süreçlerle ilişkilidir?",
+   "answer": "Ovulasyon ile korpus luteumun oluşumu ve işleviyle ilişkilidir."
+  },
+  {
+   "after": 7,
+   "prompt": "MSH, melanin ve melatonin neden aynı kavram sayılmaz?",
+   "answer": "MSH pigmentle ilişkili melanokortin sinyalidir, melanin pigmentin kendisidir, melatonin ise epifizin hormonudur."
+  }
+ ],
+ "endokrin-tiroit": [
+  {
+   "after": 1,
+   "prompt": "T3 ve T4 aminoasit türevi olduğu hâlde hangi tür reseptörle etki eder?",
+   "answer": "Steroid hormonlara benzer biçimde hücre içi reseptörlerle gen ifadesini etkiler."
+  },
+  {
+   "after": 3,
+   "prompt": "İyot yetersizliğinde T4 düşükken TSH neden yükselebilir?",
+   "answer": "Düşük T3/T4 üst merkezlere baskıyı azaltır ve TSH artar; iyot kısıtı sürdüğü için T4 hemen normale dönmez."
+  },
+  {
+   "after": 4,
+   "prompt": "Graves hastalığı ile hipertiroidi arasındaki ilişki nedir?",
+   "answer": "Graves otoimmün bir hipertiroidi örneğidir; hipertiroidinin tek olası nedeni değildir."
+  },
+  {
+   "after": 7,
+   "prompt": "Kalsitoninin kan kalsiyumu ve kemik üzerindeki temel etkisi nedir?",
+   "answer": "Kan kalsiyumunu azaltır ve kalsiyumun kemikte tutulmasını destekler."
+  },
+  {
+   "after": 8,
+   "prompt": "Tiroid hormonu fazlalığı ile yetersizliğinde sıcaklıkla ilgili örnek bulgular nasıl ayrılır?",
+   "answer": "Fazlalıkta terleme ve sıcaklığa tahammülsüzlük, yetersizlikte soğuğa duyarlılık örnek verilir."
+  }
+ ],
+ "endokrin-paratiroit": [
+  {
+   "after": 1,
+   "prompt": "Toplam kan kalsiyumu ile iyonize kalsiyum neden aynı ölçüm sayılmaz?",
+   "answer": "Kalsiyumun bir kısmı proteine bağlı bulunur; biyolojik olarak etkin olan iyonize bölümdür."
+  },
+  {
+   "after": 3,
+   "prompt": "Filtreye gelen 12 kalsiyum biriminden 10’u geri emilirse kaç birim atılır?",
+   "answer": "12−10=2 kalsiyum birimi idrarla atılır."
+  },
+  {
+   "after": 5,
+   "prompt": "PTH ile kalsitoninin karşıtlığı kalsiyum dengesini neden tek başına açıklamaz?",
+   "answer": "Aktif D vitamini, böbrek işlevi, kemik dönüşümü ve emilim kaynakları da bu ağın parçasıdır."
+  },
+  {
+   "after": 6,
+   "prompt": "Kan havuzunda 8 birim kalsiyuma kemikten 2, bağırsaktan 3 birim girip 5 birim çıkarsa son miktar kaç olur?",
+   "answer": "Son miktar 8+2+3−5=8 birim olur."
+  }
+ ],
+ "endokrin-bobrek-ustu": [
+  {
+   "after": 2,
+   "prompt": "Kortizol salgısını başlatan eksenin basamak sırası nedir?",
+   "answer": "Hipotalamik CRH ön hipofizde ACTH yolunu, ACTH de adrenal kortekste kortizol salgısını destekler."
+  },
+  {
+   "after": 3,
+   "prompt": "Kortizolün desteklediği glikoz üretiminde hangi karbon kaynakları kullanılabilir?",
+   "answer": "Aminoasitler ve trigliseritlerden gelen gliserol kullanılabilir; insanda çift karbonlu yağ asitlerinden net glikoz üretilmez."
+  },
+  {
+   "after": 4,
+   "prompt": "Aldosteron böbrekte sodyum ve potasyumu hangi yönlerde etkiler?",
+   "answer": "Sodyumun geri emilimini, potasyumun ise tübül sıvısına salgılanıp atılmasını destekler."
+  },
+  {
+   "after": 6,
+   "prompt": "Kortizol 10’dan 16’ya çıkarken ACTH 8’den 4’e düşüyorsa bu veri neyle uyumludur?",
+   "answer": "Sağlam negatif geri bildirimle uyumludur; ancak iki ölçüm değişimin bütün nedenlerini kesin belirlemez."
+  },
+  {
+   "after": 8,
+   "prompt": "Sempatik-katekolamin yanıtında karaciğer kan glikozuna nasıl katkı verir?",
+   "answer": "Glikojen yıkımını artırarak kan glikozuna katkı verir."
+  }
+ ],
+ "endokrin-pankreas": [
+  {
+   "after": 1,
+   "prompt": "Kan glikozu ile karaciğer glikojeni neden ayrı havuzlar olarak izlenir?",
+   "answer": "Kan glikozu kandaki anlık derişimdir; glikojen ise dokudaki depodur ve giriş-çıkışları ayrı süreçlerle olur."
+  },
+  {
+   "after": 3,
+   "prompt": "Karaciğer deposunda 4 glikoz eşdeğeri kalmışken 6 birim istenirse modelde en çok kaç birim aktarılır?",
+   "answer": "En çok 4 birim aktarılır; yalnız depo aktarımı olan modelde eksik 2 birim kendiliğinden eklenmez."
+  },
+  {
+   "after": 5,
+   "prompt": "Tip 1 ve Tip 2 diyabetin temel mekanizması nasıl ayrılır?",
+   "answer": "Tip 1’de β hücre kaybıyla ciddi insülin eksikliği; Tip 2’de insülin direnci ve zamanla β hücre işlev yetersizliği öne çıkar."
+  },
+  {
+   "after": 6,
+   "prompt": "Glikoz mol kütlesi 180 g/mol iken 72 mg/dL glikoz kaç mmol/L eder?",
+   "answer": "72 mg/dL=720 mg/L=0,72 g/L’dir; 0,72/180=0,004 mol/L, yani 4 mmol/L olur."
+  },
+  {
+   "after": 7,
+   "prompt": "Kan 20, karaciğer deposu 50 birimle başlarken insülin yönünde 8 birim aktarılırsa havuzlar kaç olur?",
+   "answer": "Kan 12, depo 58 birim olur; toplam 70 korunur."
+  }
+ ],
+ "endokrin-epifiz": [
+  {
+   "after": 2,
+   "prompt": "Melatoninin bulunması neden kesin uykuya geçiş garantisi sayılmaz?",
+   "answer": "Uyku; uyku gereksinimi, uyanıklık ağları, davranış, çevresel zamanlayıcılar ve hormonal ritimlerle birlikte düzenlenir."
+  },
+  {
+   "after": 3,
+   "prompt": "Öğlen karanlık bir oda neden biyolojik geceyle aynı melatonin koşulunu sağlamaz?",
+   "answer": "Salımı yalnız karanlık değil, iç saat fazı ve ışığın zamanı ile özellikleri de belirler."
+  },
+  {
+   "after": 4,
+   "prompt": "21.00’de başlayıp 07.00’de biten karanlık pencere kaç saattir?",
+   "answer": "Gece yarısına kadar 3, sonra sabaha kadar 7 saat sayılır; toplam 10 saattir."
+  },
+  {
+   "after": 6,
+   "prompt": "Karanlıkta sabit 2 sinyal birimi/saat varsayımıyla 10 saatlik pencere kaç sinyal birimi verir?",
+   "answer": "2·10=20 sinyal birimi verir; bu yalnız sabit hız varsayımında geçerlidir."
+  }
+ ],
+ "duyu-organlari-deri": [
+  {
+   "after": 1,
+   "prompt": "Bir reseptörün hangi uyarana duyarlı olacağını ne belirler?",
+   "answer": "Reseptörün yapısı belirler; fotoreseptör ışığa, kemoreseptör kimyasallara, mekanoreseptör şekil değişimine duyarlıdır."
+  },
+  {
+   "after": 2,
+   "prompt": "Yalancı çok katlı epitel neden gerçek çok katlı epitelle karıştırılmamalıdır?",
+   "answer": "Çekirdekler farklı düzeylerde görünse de bütün hücreler bazal yüzeyle ilişkilidir."
+  },
+  {
+   "after": 4,
+   "prompt": "Bağ dokusunda fibroblast ile plazma hücresinin görevi nasıl ayrılır?",
+   "answer": "Fibroblast lifleri ve ara madde bileşenlerini üretir; plazma hücresi antikor salgılar."
+  },
+  {
+   "after": 6,
+   "prompt": "Pacini ve Ruffini yapıları hangi uyaranlarla ilişkilidir?",
+   "answer": "Pacini derin basınç değişimi ve titreşimle, Ruffini ise derinin gerilmesiyle ilişkilidir."
+  },
+  {
+   "after": 8,
+   "prompt": "Sıcakta deri damarlarının genişlemesi ısı kaybına nasıl katkı verir?",
+   "answer": "Vücut içinden yüzeye ısı aktarımını artırır; terin buharlaşması da ısı kaybına yardım eder."
+  }
+ ],
+ "duyu-organlari-dil-burun": [
+  {
+   "after": 1,
+   "prompt": "Kokulu moleküllerin burun mukusunda çözünmesi neden önemlidir?",
+   "answer": "Çözünme, molekülün reseptörlerin bulunduğu yüzeyle etkileşmesine yardım eder."
+  },
+  {
+   "after": 3,
+   "prompt": "Bir kokunun tanınması neden tek bir nörona dayanmaz?",
+   "answer": "Farklı moleküller farklı reseptör örüntülerini etkiler; tanıma çok sayıda hücrenin birlikte oluşturduğu örüntüye dayanır."
+  },
+  {
+   "after": 4,
+   "prompt": "Dildeki ipliksi papillalar daha çok hangi görevle ilişkilidir?",
+   "answer": "Daha çok mekanik görevlerle ilişkilidir; her papilla tat tomurcuğu taşımaz."
+  },
+  {
+   "after": 5,
+   "prompt": "Tat bilgisi tat hücresinden sonra hangi basamaklarla kortekse ulaşır?",
+   "answer": "Tat hücresi komşu duyu siniri ucuna haber verir; sinirler bilgiyi beyin sapı bağlantıları üzerinden talamusa ve kortekse taşır."
+  },
+  {
+   "after": 7,
+   "prompt": "Burun tıkalıyken yiyeceğe ait hangi bilgi korunabilir?",
+   "answer": "Tuzluluk ya da tatlılık gibi temel tat bilgisi kalabilir; azalan, aroma katkısıdır."
+  }
+ ],
+ "duyu-organlari-goz": [
+  {
+   "after": 1,
+   "prompt": "Dış göz kasları ile siliyer kasın görevi nasıl ayrılır?",
+   "answer": "Dış göz kasları iki gözün bakışını yönlendirir; siliyer kas ise merceğin uzaklığa uyumunu sağlar."
+  },
+  {
+   "after": 3,
+   "prompt": "Aköz sıvı ile camsı yapı arasındaki fark nedir?",
+   "answer": "Aköz sıvı ön bölümdedir ve üretim-akış dengesi göz içi basıncıyla ilişkilidir; camsı yapı merceğin arkasındaki boşluğu doldurur."
+  },
+  {
+   "after": 5,
+   "prompt": "Loş ışıkta ve renk ayrımında hangi fotoreseptörler öne çıkar?",
+   "answer": "Loş ışık ve çevresel görmede çubuklar, aydınlıkta renk ve ayrıntı ayrımında koniler öne çıkar."
+  },
+  {
+   "after": 7,
+   "prompt": "Fotoreseptörün yanıtı ile optik sinirdeki ileti nasıl farklıdır?",
+   "answer": "Fotoreseptörde dereceli hücresel yanıt oluşur; optik siniri oluşturan ganglion aksonlarında aksiyon potansiyeli taşınır."
+  },
+  {
+   "after": 9,
+   "prompt": "Hipermetropta odak nerede kalır ve hangi tür düzeltici mercek yardım eder?",
+   "answer": "Odak retinanın arkasında kalabilir; artı, yani yakınsak düzeltici mercek yardımcı olabilir."
+  },
+  {
+   "after": 10,
+   "prompt": "Katarakt ile glokom arasındaki temel fark nedir?",
+   "answer": "Katarakt merceğin saydamlığının azalmasıdır; glokom ise optik sinire zarar verebilen hastalıklar grubudur."
+  }
+ ],
+ "duyu-organlari-kulak": [
+  {
+   "after": 1,
+   "prompt": "Eşit kuvvet ve kayıpsız aktarım varsayımında etki alanı 15 kat küçülürse basınç kaç kat olur?",
+   "answer": "P=F/A olduğundan basınç 15 kat artar; enerji ya da güç yoktan üretilmez."
+  },
+  {
+   "after": 3,
+   "prompt": "Kokleada vestibüler, timpanik ve koklear kanallar hangi sıvıları içerir?",
+   "answer": "Vestibüler ve timpanik kanallar perilenf, koklear kanal ise endolenf içerir."
+  },
+  {
+   "after": 5,
+   "prompt": "Frekans ile ses şiddeti sesin hangi özelliklerine karşılık gelir?",
+   "answer": "Frekans titreşimin zamansal tekrarına, şiddet ise enerji aktarımıyla ilgili özelliğe karşılık gelir."
+  },
+  {
+   "after": 6,
+   "prompt": "Sabit açısal hızla dönme sürerken yarım daire kanallarının yanıtı neden azalabilir?",
+   "answer": "Kanallar dönme hızının değişimine duyarlıdır; sabit hızda ivme olmadığından göreli hareket ve yanıt azalır."
+  },
+  {
+   "after": 8,
+   "prompt": "Denge kontrolünde vestibüler bilgiyle birlikte hangi duyusal veriler değerlendirilir?",
+   "answer": "Görsel bilgi ile kas ve eklemlerden gelen duyu verileri birlikte değerlendirilir."
+  }
+ ],
+ "destek-hareket-kemik": [
+  {
+   "after": 1,
+   "prompt": "Kemikte kollajen ile mineral kristallerin mekanik katkısı nasıl ayrılır?",
+   "answer": "Kollajen esneklik ve çekmeye dayanım, kalsiyum-fosfat kristalleri ise sertlik ve basınca dayanım sağlar."
+  },
+  {
+   "after": 3,
+   "prompt": "Sık kemikte Havers ve Volkmann kanallarının farkı nedir?",
+   "answer": "Havers kanalları osteon merkezinde uzunlamasına damar-sinir yoludur; Volkmann kanalları yan bağlantılar kurar."
+  },
+  {
+   "after": 5,
+   "prompt": "Kırmızı ilik ile sarı ilik hangi görevlerle ilişkilidir?",
+   "answer": "Kırmızı ilik kan hücresi yapımıyla, sarı ilik ise yağ depolamayla ilişkilidir."
+  },
+  {
+   "after": 7,
+   "prompt": "Kafatasının bazı kemiklerindeki intramembranöz gelişme endokondral yoldan nasıl ayrılır?",
+   "answer": "İntramembranöz gelişmede kemik, kıkırdak taslağı olmadan bağ dokusu içinde doğrudan oluşur."
+  },
+  {
+   "after": 8,
+   "prompt": "Bir kemiğin uzun kemik sınıfına girmesi neye bağlıdır?",
+   "answer": "Boyunun enine göre belirgin olmasına bağlıdır; kemiğin santimetre olarak uzunluğu ölçüt değildir."
+  },
+  {
+   "after": 10,
+   "prompt": "Kaburgalardan kaç çift önde kendi kıkırdağıyla sternuma bağlanır ve kaç çiftin önde bağlantısı yoktur?",
+   "answer": "İlk yedi çift kendi kıkırdağıyla sternuma bağlanır; son iki çiftin önde sternuma bağlantısı yoktur."
+  }
+ ],
+ "destek-hareket-kikirdak-eklem": [
+  {
+   "after": 1,
+   "prompt": "Kıkırdak hasarının yavaş onarılmasını ne açıklar?",
+   "answer": "Doku kendi içinde damarsızdır; maddeler hücrelere difüzyonla ulaşır ve difüzyon uzaklığı onarımı sınırlar."
+  },
+  {
+   "after": 3,
+   "prompt": "Kulak kepçesi ve epiglotta hangi kıkırdak bulunur ve bu dokunun katkısı nedir?",
+   "answer": "Elastik kıkırdak bulunur; elastik lifler dokunun esneyip eski biçimine dönmesine katkı verir."
+  },
+  {
+   "after": 4,
+   "prompt": "Omurlar arası disk ve kalça labrumu hangi kıkırdak türüne örnektir?",
+   "answer": "Fibröz kıkırdağa örnektir; belirgin kollajen düzeni çekme ve basınç yükleriyle baş etmeye katkı verir."
+  },
+  {
+   "after": 5,
+   "prompt": "İşlevsel ve yapısal eklem sınıflaması hangi ölçütlere dayanır?",
+   "answer": "İşlevsel sınıflama hareket miktarına, yapısal sınıflama bağlantının doku ve boşluk özelliklerine dayanır."
+  },
+  {
+   "after": 6,
+   "prompt": "Sinoviyal eklemde fibröz kapsül ile sinoviyal zarın görevi nasıl ayrılır?",
+   "answer": "Kapsül destek ve bütünlük sağlar; sinoviyal zar ise sinoviyal sıvının oluşumuna katkı verir."
+  }
+ ],
+ "genetik-cesitlilik": [
+  {
+   "after": 1,
+   "prompt": "Mutasyonun organizmanın ihtiyacına göre oluştuğunu söylemek neden yanlıştır?",
+   "answer": "Mutasyonlar gereken özelliği üretmek için oluşmaz; seçilim ancak ortaya çıkmış farklılıklar arasında üreme başarısını değiştirir."
+  },
+  {
+   "after": 3,
+   "prompt": "Profaz I’deki parça değişimi hangi kromatitler arasında gerçekleşir?",
+   "answer": "Homolog kromozomların kardeş olmayan kromatitleri arasında gerçekleşir."
+  },
+  {
+   "after": 4,
+   "prompt": "AaBbCcDd bireyinde dört lokus bağımsız ayrılıyorsa kaç teorik gamet genotipi oluşabilir?",
+   "answer": "2⁴=16 teorik gamet genotipi oluşabilir; bu tek bir mayozun ürün sayısı değildir."
+  },
+  {
+   "after": 6,
+   "prompt": "Bir bakteride yeni bir kalıtsal özellik görülmesi neden kendi DNA’sında mutasyon olduğunu kanıtlamaz?",
+   "answer": "Özellik çevreden ya da başka bakteriden aktarılan mevcut DNA bilgisiyle de açıklanabilir."
+  }
+ ],
+ "sinir-sistemi-noron-ve-glialar": [
+  {
+   "after": 1,
+   "prompt": "Nöron gövdesindeki Nissl cisimcikleri hangi hücre yapılarıyla ilişkilidir?",
+   "answer": "Granüllü endoplazmik retikulum ve ribozomlarla ilişkilidir; somanın protein üretim düzeneklerinin parçasıdır."
+  },
+  {
+   "after": 3,
+   "prompt": "Sinir ile nöron arasındaki ölçek farkı nedir?",
+   "answer": "Sinir birçok aksonun oluşturduğu demettir; nöron ise tek bir hücredir."
+  },
+  {
+   "after": 5,
+   "prompt": "Mikroglia ile ependim hücrelerinin görevleri nasıl ayrılır?",
+   "answer": "Mikroglia savunma ve fagositoza katılır; ependim hücreleri merkezî boşlukları döşer ve beyin-omurilik sıvısının işleyişine katkı verir."
+  },
+  {
+   "after": 6,
+   "prompt": "Kimyasal sinapsta presinaptik uçtan nörotransmitter salımını hangi iyon girişi destekler?",
+   "answer": "Akson ucuna gelen elektriksel olayla oluşan kalsiyum girişi destekler."
+  }
+ ],
+ "sinir-sistemi-aksiyon-potansiyeli": [
+  {
+   "after": 1,
+   "prompt": "Na⁺/K⁺-ATPaz her tam çevrimde kaç Na⁺ ve kaç K⁺ taşır?",
+   "answer": "ATP kullanarak üç Na⁺’u dışarı, iki K⁺’u içeri taşır."
+  },
+  {
+   "after": 3,
+   "prompt": "Tepe sonrası zar potansiyeli +30 mV’den −50 mV’ye inerse değişim kaç mV olur?",
+   "answer": "Değişim −50−(+30)=−80 mV’dir; son potansiyel ise −50 mV’dir."
+  },
+  {
+   "after": 5,
+   "prompt": "İki saniyelik bir kayıtta 60 impuls varsa frekans kaç Hz olur?",
+   "answer": "60/2=30 impuls/s, yani 30 Hz olur."
+  },
+  {
+   "after": 6,
+   "prompt": "Atlamalı iletimde bir Ranvier boğumundan ötekine ne olur?",
+   "answer": "Madde ya da iyon atlamaz; yerel akım yayılır ve AP her boğumda yeniden oluşturulur."
+  }
+ ],
+ "sinir-sistemi-on-beyin": [
+  {
+   "after": 1,
+   "prompt": "Beyin zarları dıştan içe nasıl sıralanır ve BOS hangi aralıkta bulunur?",
+   "answer": "Sert zar, örümceksi zar ve ince zar sıralanır; BOS örümceksi zar ile ince zar arasındaki boşluktadır."
+  },
+  {
+   "after": 2,
+   "prompt": "Merkezî oluğun önünde ve arkasında hangi primer kortikal alanlar bulunur?",
+   "answer": "Önünde primer motor, arkasında primer somatosensoriyel korteks bulunur."
+  },
+  {
+   "after": 4,
+   "prompt": "Hedefi 37 °C olan termostat modelinde ölçüm 39 °C ise fark ve yanıt yönü nedir?",
+   "answer": "Fark +2 °C’dir; ısı kaybını destekleyen yanıt yönü seçilir."
+  },
+  {
+   "after": 6,
+   "prompt": "Nasırlı cismin yarımküreler arasındaki görevi nedir?",
+   "answer": "İki serebral yarımküre arasında çok sayıda akson bağlantısı kurar."
+  }
+ ],
+ "sinir-sistemi-orta-arka-beyin": [
+  {
+   "after": 1,
+   "prompt": "Göz bebeği ışık refleksi ile görüntünün bilinçli tanınması hangi bölgelerle ilişkilidir?",
+   "answer": "Işık refleksi yolunda orta beyin yapıları, bilinçli tanımada ön beyin görsel ağları rol oynar."
+  },
+  {
+   "after": 3,
+   "prompt": "Solunumun normal ritminin düzenlenmesinde pons hangi yapıyla birlikte çalışır?",
+   "answer": "Omurilik soğanıyla birlikte çalışır; gaz değişimi ise akciğerde gerçekleşir."
+  },
+  {
+   "after": 4,
+   "prompt": "Omurilik soğanının ilişkili olduğu koruyucu reflekslere hangi örnekler verilir?",
+   "answer": "Yutma, öksürme ve kusma gibi yanıtlar örnek verilir."
+  },
+  {
+   "after": 5,
+   "prompt": "Bir şemada iki yol çizgisinin kesişmesi neden mutlaka çaprazlaşma anlamına gelmez?",
+   "answer": "Kesişme sinaps ya da anatomik çaprazlaşma olmayabilir; bunu çizgi anahtarı ve verilen bağlantı noktaları gösterir."
+  }
+ ],
+ "sinir-sistemi-omurilik": [
+  {
+   "after": 1,
+   "prompt": "Omuriliğe giren duyu nöronlarının hücre gövdeleri nerede bulunabilir?",
+   "answer": "Arka kök gangliyonunda bulunabilir; reseptör ise omuriliğin dışında, çevrededir."
+  },
+  {
+   "after": 3,
+   "prompt": "Elin sıcak yüzeyden çekilmesi refleksi gerilme refleksinden devre bakımından nasıl ayrılır?",
+   "answer": "Çekilme refleksi ara nöronlu çok sinapslı bir yanıttır; gerilme refleksinin seçili yolu tek merkezî sinapsla kurulabilir."
+  },
+  {
+   "after": 4,
+   "prompt": "Duyu ile motor nöron arasına art arda iki ara nöron eklenen modelde kaç nöron ve kaç merkezî sinaps bulunur?",
+   "answer": "Dört nöron ve art arda bağlı her çift arasında birer tane olmak üzere üç merkezî sinaps bulunur."
+  },
+  {
+   "after": 6,
+   "prompt": "Duyu ve motor bölümleri 0,9 m, hız 60 m/s ve tek merkezî sinaps gecikmesi 0,5 ms ise toplam süre kaç ms olur?",
+   "answer": "Her bölüm 0,9/60=0,015 s=15 ms sürer; 15+15+0,5=30,5 ms olur."
+  }
+ ],
+ "sinir-sistemi-css-hastaliklar": [
+  {
+   "after": 1,
+   "prompt": "Çevresel sinir sisteminde sinir ile gangliyon arasındaki fark nedir?",
+   "answer": "Sinir akson demetidir; gangliyon ise periferik hücre gövdelerinin topluluğudur."
+  },
+  {
+   "after": 2,
+   "prompt": "İskelet kasının istemsiz refleks yanıtı neden onu otonom hedef yapmaz?",
+   "answer": "Yanıt refleks olsa da hedef iskelet kasıdır; iskelet kası somatik motor yolların hedefidir."
+  },
+  {
+   "after": 4,
+   "prompt": "Multipl skleroz ile Parkinson’da öne çıkan bozulma nasıl ayrılır?",
+   "answer": "MS’te merkezî miyelin ve sinir iletimi bozulur; Parkinson’da orta beyindeki dopaminerjik nöronlar ve hareket ağları bozulur."
+  },
+  {
+   "after": 6,
+   "prompt": "Depresyonu yalnız tek bir nörotransmitter miktarıyla açıklamak neden eksiktir?",
+   "answer": "Depresyon biyolojik, psikolojik ve çevresel etkenlerin birlikte değerlendirildiği bir durumdur."
+  }
  ]
 }
