@@ -438,5 +438,229 @@
  {
   "from": "Asal toplam 31 yerine 30 olursa tek toplam gerekçesi kalkar;7+23 ve 11+19 gibi farklı çiftler mümkündür. 24/54 oranında aralarında asallık kalkarsa a=4 t, b=9 t ve toplam 13 t serbest kalır. n²−25 sorusunda n pozitif yerine bütün tam sayılardan seçilirse 6 yanına−6 da katılır.",
   "to": "Asal toplam 31 yerine 30 olursa tek toplam gerekçesi kalkar; 7+23 ve 11+19 gibi farklı çiftler mümkündür. 24/54 oranında aralarında asallık kalkarsa a=4t, b=9t ve toplam 13t serbest kalır. n²−25 sorusunda n pozitif yerine bütün tam sayılardan seçilirse 6 yanına −6 da katılır."
+ },
+ {
+  "from": "İnteraktif kutular işaretli cebir parçalarıdır; negatif sayıları fiziksel negatif kütle gibi yorumlama. Sayı çizgisindeki konum ve metin sonucu aynı hesaptan gelir. Birkaç deneme tek kökü fark etmeyi sağlar; bütün çözüm kümesi için cebirsel tür ayrımı da yapılır. Keşif yapmak bağımsız doğru cevap, ustalık veya XP üretmez.",
+  "to": "İnteraktif kutular işaretli cebir parçalarıdır; negatif sayıları fiziksel negatif kütle gibi yorumlama. Sayı çizgisindeki konum ve metin sonucu aynı hesaptan gelir. Birkaç deneme tek kökü fark etmeyi sağlar; bütün çözüm kümesi için cebirsel tür ayrımı da yapılır."
+ },
+ {
+  "from": "İki yöntem aynı başlangıç koşullarını, sayı alanını ve eşitliği koruyorsa ikisi de geçerlidir. Bir terimi atlamak, sıfır koşulunu gizlemek veya ilk denklem kontrolünü engellemek kısa yol değildir. Kişisel hız veya net artışı ölçülmedi; daha az satır yazmak tek başına daha iyi öğrenme kanıtı sayılmaz.",
+  "to": "İki yöntem aynı başlangıç koşullarını, sayı alanını ve eşitliği koruyorsa ikisi de geçerlidir. Bir terimi atlamak, sıfır koşulunu gizlemek veya ilk denklem kontrolünü engellemek kısa yol değildir. Daha az satır yazmak tek başına daha iyi öğrenme kanıtı sayılmaz."
+ },
+ {
+  "from": "İlk örnekte bütün işlem ve nedenleri oku. Sonraki örnekte yalnız ilk hamleyi aç ve ara satırları kendin yaz. Ardından notu kapatarak soruyu çöz, bulduğun değeri başlangıçta kontrol et ve kendi gerekçeni verilen çözümle karşılaştır. Yardım alarak çözmek değerlidir; bağımsız çözümle aynı kayıt değildir.",
+  "to": "İlk örnekte bütün işlem ve nedenleri oku. Sonraki örnekte yalnız ilk hamleyi aç ve ara satırları kendin yaz. Ardından notu kapatarak soruyu çöz, bulduğun değeri başlangıçta kontrol et ve kendi gerekçeni verilen çözümle karşılaştır. Yardım alarak çözmek değerlidir; bağımsız çözümle aynı şey değildir."
+ },
+ {
+  "from": "Bir yanlışta soruyu hemen baştan ezberleme: dağıtma mı, işaret mi, tanım koşulu mu, model mi bozulduğunu ayır. Aynı yapıyı farklı sayıda ve farklı bağlamda yeniden kur. Görsele bakmak, süre doldurmak veya “çalıştım” demek otomatik ustalık/XP sayılmaz; tekrarlar öğrenme gününü 1 sayan 3/7/21 düzeninde uygulamanın kayıtlarıyla izlenir.",
+  "to": "Bir yanlışta soruyu hemen baştan ezberleme: dağıtma mı, işaret mi, tanım koşulu mu, model mi bozulduğunu ayır. Aynı yapıyı farklı sayıda ve farklı bağlamda yeniden kur."
+ },
+ {
+  "from": "Görseldeki açık/dolu uç ve sayısal aralık aynı koşuldan hesaplanmalıdır. Bir sınırı veya işareti değiştirdiğinde hem şekil hem küme yazımı birlikte değişir. Şekil ekrandan taşan sınırsız bölgeyi okla sürdürür; pencerenin kenarı yeni bir matematiksel sınır değildir. Sonucu okumak için HTML metni de şeklin yanındadır.",
+  "to": "Görseldeki açık/dolu uç ve sayısal aralık aynı koşuldan hesaplanmalıdır. Bir sınırı veya işareti değiştirdiğinde hem şekil hem küme yazımı birlikte değişir. Şekil ekrandan taşan sınırsız bölgeyi okla sürdürür; pencerenin kenarı yeni bir matematiksel sınır değildir."
+ },
+ {
+  "from": "a=0 gibi bir ayarda ortada yalnız sabit kalırsa iki koşul ya bütün gerçek sayılarda birlikte doğru olur ya da en az biri yanlış olur ve kesişim boştur. Görsel model iki tek koşulu ve ortak bölgeyi aynı hesaplardan üretir. Bu ek varyantlar kaynak yönteminin uygulamasıdır; PDF’de ayrı bir soru varmış gibi sayılmaz.",
+  "to": "a=0 gibi bir ayarda ortada yalnız sabit kalırsa iki koşul ya bütün gerçek sayılarda birlikte doğru olur ya da en az biri yanlış olur ve kesişim boştur. Görsel model iki tek koşulu ve ortak bölgeyi aynı hesaplardan üretir."
+ },
+ {
+  "from": "x<2 veya x>2 bütün gerçek sayılar içinden yalnız 2’yi çıkarır; açık-açık temas birleşimde bu deliği doldurmaz. x≤2 veya x>2 ise ℝ’dir, çünkü ilk koşul temas noktasını alır. Bu örnekler kaynakta öğretilen açık/kapalı uç ve bağlaç kurallarının ek uygulamalarıdır.",
+  "to": "x<2 veya x>2 bütün gerçek sayılar içinden yalnız 2’yi çıkarır; açık-açık temas birleşimde bu deliği doldurmaz. x≤2 veya x>2 ise ℝ’dir, çünkü ilk koşul temas noktasını alır. Bu örnekler açık/kapalı uç ve bağlaç kurallarının ek uygulamalarıdır."
+ },
+ {
+  "from": "“En az 20” tam 20’yi kabul eder: x≥20. “20’den fazla” kabul etmez: x>20. “En çok 880 TL” ≤880; “880 TL’den az” <880 demektir. Cümledeki eşitlik iznini belirlemeden sadece “büyük/küçük” sezgisiyle işaret seçme. Aynı kural kaynak örneğindeki “en az 5” için x≥5, “5’ten fazla” için x>5 verir.",
+  "to": "“En az 20” tam 20’yi kabul eder: x≥20. “20’den fazla” kabul etmez: x>20. “En çok 880 TL” ≤880; “880 TL’den az” <880 demektir. Cümledeki eşitlik iznini belirlemeden sadece “büyük/küçük” sezgisiyle işaret seçme. Aynı kural “en az 5” için x≥5, “5’ten fazla” için x>5 verir."
+ },
+ {
+  "from": "50 kişi tam 4.200 TL, 51 kişi 4.260 TL eder. Kaynak kurstaki “sabit + birim×adet” ilişkisi farklı bir yüzeyde aynıdır. Sayıları rastgele toplayıp bölmek yerine her terimin neyi ve hangi birimde ölçtüğünü söyle; ek bir kapasite sınırı verilmişse onu da kesişime katmak gerekir.",
+  "to": "50 kişi tam 4.200 TL, 51 kişi 4.260 TL eder. Kurstaki “sabit + birim×adet” ilişkisi farklı bir yüzeyde aynıdır. Sayıları rastgele toplayıp bölmek yerine her terimin neyi ve hangi birimde ölçtüğünü söyle; ek bir kapasite sınırı verilmişse onu da kesişime katmak gerekir."
+ },
+ {
+  "from": "Bu değişken dönüşümünü yazmadan b’yi önce TL, sonra bin TL gibi kullanma. u=20, resmî b=20.000 TL demektir; b=20 TL değildir. 1000 pozitif olduğundan 10<u<30 eşitsizliği TL’ye çevrilince 10.000<b<30.000 olur; yönler ve açık uçlar değişmez. Kaynaktaki bin TL uyarlaması bu açık adlandırmayla korunur.",
+  "to": "Bu değişken dönüşümünü yazmadan b’yi önce TL, sonra bin TL gibi kullanma. u=20, resmî b=20.000 TL demektir; b=20 TL değildir. 1000 pozitif olduğundan 10<u<30 eşitsizliği TL’ye çevrilince 10.000<b<30.000 olur; yönler ve açık uçlar değişmez."
+ },
+ {
+  "from": "10.000<b<30.000 aralığının orta noktası 20.000, orta noktadan her uca uzaklık 10.000 TL’dir. |b−20.000| ifadesi b ile 20.000 arasındaki negatif olmayan uzaklığı gösterir. Bu nedenle aynı açık aralık |b−20.000|<10.000 biçiminde de yazılır. Gerçek kitapçığın A seçeneği bu gösterimi kullanır.",
+  "to": "10.000<b<30.000 aralığının orta noktası 20.000, orta noktadan her uca uzaklık 10.000 TL’dir. |b−20.000| ifadesi b ile 20.000 arasındaki negatif olmayan uzaklığı gösterir. Bu nedenle aynı açık aralık |b−20.000|<10.000 biçiminde de yazılır."
+ },
+ {
+  "from": "2≤(x−1)/3<5 için iki koşulu ayrı çözmek ve kesiştirmek de, üç tarafı pozitif 3 ile çarpıp sonra 1 eklemek de geçerlidir. Daha az satır tek başına doğruluk veya hız kanıtı değildir. Katsayı işareti, açık/kapalı uç veya bölenin sıfır durumu gizleniyorsa kısa görünen yol güvenilir değildir; kişisel hız etkisi ölçülmedi. Ayrı yolda 2≤(x−1)/3 →6≤x−1 →x≥7; (x−1)/3<5 →x−1<15 →x<16. Ortak çözüm yine [7,16) olur.",
+  "to": "2≤(x−1)/3<5 için iki koşulu ayrı çözmek ve kesiştirmek de, üç tarafı pozitif 3 ile çarpıp sonra 1 eklemek de geçerlidir. Daha az satır tek başına doğruluk veya hız kanıtı değildir. Katsayı işareti, açık/kapalı uç veya bölenin sıfır durumu gizleniyorsa kısa görünen yol güvenilir değildir. Ayrı yolda 2≤(x−1)/3 →6≤x−1 →x≥7; (x−1)/3<5 →x−1<15 →x<16. Ortak çözüm yine [7,16) olur."
+ },
+ {
+  "from": "Farklı sayı ve bağlamdaki aktarım soruları, yalnız kaynak örneğinin cevabını hatırlamaktan daha fazlasını gerektirir. Yardımlı çözüm ile bağımsız çözüm ayrı tutulur. Görsel keşif, süre veya “çalıştım” işareti otomatik ustalık/XP değildir; PDF’nin üretilmiş olması da öğrenme veya ilk çalışma günü kanıtı sayılmaz.",
+  "to": "Farklı sayı ve bağlamdaki aktarım soruları, yalnız örneğin cevabını hatırlamaktan daha fazlasını gerektirir."
+ },
+ {
+  "from": "Aynı fikir |a²+3|=a²+3 verir; içerisi her gerçek a için en az 3’tür. |−a²−2| ise a²+2 olur, çünkü içerisi her zaman negatiftir ve tamamı −1 ile çarpılır: −(−a²−2)=a²+2. Seçili OGM örnekleri bu işaret gerekçesini kullanır. Bir ifadede eksi görmek tek başına yetmez; içte hesaplanan bütün değerin işaretine bak.",
+  "to": "Aynı fikir |a²+3|=a²+3 verir; içerisi her gerçek a için en az 3’tür. |−a²−2| ise a²+2 olur, çünkü içerisi her zaman negatiftir ve tamamı −1 ile çarpılır: −(−a²−2)=a²+2. Bir ifadede eksi görmek tek başına yetmez; içte hesaplanan bütün değerin işaretine bak."
+ },
+ {
+  "from": "Çözüm {0,5}. Eğer hedef toplam 3 olsaydı bütün [1,4] çözüm olurdu; hedef 2 olsaydı uçlar arası uzaklıktan bile küçük bir toplam istenir ve çözüm olmazdı. Parçalı yöntemle bulunan bir adayın kendi aralığına uymaması, cebirsel hesabın yanlış olması gerektirmeden o dalda reddedilmesini gerektirir.",
+  "to": "Çözüm {0, 5}. Eğer hedef toplam 3 olsaydı bütün [1,4] çözüm olurdu; hedef 2 olsaydı uçlar arası uzaklıktan bile küçük bir toplam istenir ve çözüm olmazdı. Parçalı yöntemle bulunan bir adayın kendi aralığına uymaması, cebirsel hesabın yanlış olması gerektirmeden o dalda reddedilmesini gerektirir."
+ },
+ {
+  "from": "İşlem sırasını dıştan içe takip etmek, bütün çizgileri bir anda kaldırmaktan daha güvenlidir. Her aşamada sağ tarafın işaretini yeniden denetle. Çakışan kökleri tek kez say; örneğin ||x|−3|=3 için iç hedefler 6 ve 0, kökler −6,0,6’dır. Sıfır iki farklı kök değildir.",
+  "to": "İşlem sırasını dıştan içe takip etmek, bütün çizgileri bir anda kaldırmaktan daha güvenlidir. Her aşamada sağ tarafın işaretini yeniden denetle. Çakışan kökleri tek kez say; örneğin ||x|−3|=3 için iç hedefler 6 ve 0, kökler −6, 0, 6’dır. Sıfır iki farklı kök değildir."
+ },
+ {
+  "from": "Bir ölçümün hedef 100’den sapması en çok 2 birim olsun. x ölçüm değeri için uzaklık |x−100|≤2’dir; çözüm [98,102]. 98 ve 102 tam sınırda kabul edilir. “Sapma 2’den az” denseydi (98,102) olurdu. Bu, kaynakta geçen tolerans yapısına farklı sayılarla yazılmış özgün bir uygulamadır.",
+  "to": "Bir ölçümün hedef 100’den sapması en çok 2 birim olsun. x ölçüm değeri için uzaklık |x−100|≤2’dir; çözüm [98,102]. 98 ve 102 tam sınırda kabul edilir. “Sapma 2’den az” denseydi (98,102) olurdu. Bu, tolerans yapısının özgün bir uygulamasıdır."
+ },
+ {
+  "from": "Yakın görünen bir soruda yöntem değişebilir: |x−2|<4 iç bölge, |x−2|>4 dış bölgedir. |3x|≥6 dış kollar, |3x|≤6 iç aralık ister. İkinci ifade yanlış bir soru değildir; yalnız birinciye ait dış bölge yöntemi ona uygulanamaz. Kaynak örneğine benziyor diye aynı çözümü otomatik kopyalama.",
+  "to": "Yakın görünen bir soruda yöntem değişebilir: |x−2|<4 iç bölge, |x−2|>4 dış bölgedir. |3x|≥6 dış kollar, |3x|≤6 iç aralık ister. İkinci ifade yanlış bir soru değildir; yalnız birinciye ait dış bölge yöntemi ona uygulanamaz. Bir örneğe benziyor diye aynı çözümü otomatik kopyalama."
+ },
+ {
+  "from": "x>0 iken |3x|=3x, |−2x|=2x ve |1+x|=1+x. Bu nedenle |3x|+|−2x|−|1+x| =3x+2x−(1+x)=4x−1. Dıştaki eksi bütün üçüncü ifadeye dağılır; −(1+x)=−1−x. x=2’de 6+4−3=7, ayrıca 4×2−1=7 olur.",
+  "to": "x>0 iken |3x|=3x, |−2x|=2x ve |1+x|=1+x. Bu nedenle |3x|+|−2x|−|1+x|=3x+2x−(1+x)=4x−1. Dıştaki eksi bütün üçüncü ifadeye dağılır; −(1+x)=−1−x. x=2’de 6+4−3=7, ayrıca 4×2−1=7 olur."
+ },
+ {
+  "from": "Her mutlak değer tek başına ≥0 olsa da çıkarma içeren bütün ifade negatif olabilir. x=1/8, izinli pozitif değerdir ve sonuç 4/8−1=−1/2’dir. x=0’da aynı cebirsel sonuç tesadüfen doğru çıksa da verilen x>0 koşulunun dışındadır; bu tek deneme koşulu silme izni vermez. Bu sayfa OGM görüntüleyicisinde 43, kitap üzerinde basılı 121’dir.",
+  "to": "Her mutlak değer tek başına ≥0 olsa da çıkarma içeren bütün ifade negatif olabilir. x=1/8, izinli pozitif değerdir ve sonuç 4/8−1=−1/2’dir. x=0’da aynı cebirsel sonuç tesadüfen doğru çıksa da verilen x>0 koşulunun dışındadır; bu tek deneme koşulu silme izni vermez."
+ },
+ {
+  "from": "(-2)^4 ifadesinde taban bütünüyle-2’dir: (-2)(-2)(-2)(-2)=16. -2^4 yazımında üs yalnız 2’ye aittir; baştaki eksi dışarıdadır: -(2^4)=-16. İşlem sırası, önce kuvvet sonra dış eksi biçimindedir. Üs çiftken bu ayrım sonucu değiştirir.",
+  "to": "(-2)^4 ifadesinde taban bütünüyle -2’dir: (-2)(-2)(-2)(-2)=16. -2^4 yazımında üs yalnız 2’ye aittir; baştaki eksi dışarıdadır: -(2^4)=-16. İşlem sırası, önce kuvvet sonra dış eksi biçimindedir. Üs çiftken bu ayrım sonucu değiştirir."
+ },
+ {
+  "from": "Bu çiftlik kuralı tam sayı üsler içindir. (-1)^n, n çift tam sayıysa 1, tek tam sayıysa-1 olur; negatif tam sayılarda da karşılık alma işareti değiştirmediği için aynı çiftlik düzeni sürer. (-1)^-3=-1. Kesirli üste “tek mi çift mi” sorusu yöneltilmez; önce rasyonel üssün sadeleşmiş paydasına ve gerçek tanım koşuluna bakılır.",
+  "to": "Bu çiftlik kuralı tam sayı üsler içindir. (-1)^n, n çift tam sayıysa 1, tek tam sayıysa -1 olur; negatif tam sayılarda da karşılık alma işareti değiştirmediği için aynı çiftlik düzeni sürer. (-1)^-3=-1. Kesirli üste “tek mi çift mi” sorusu yöneltilmez; önce rasyonel üssün sadeleşmiş paydasına ve gerçek tanım koşuluna bakılır."
+ },
+ {
+  "from": "Sıfır tabanını bütün kurallara sınırsız taşıma. 0^0 bu okul matematiği kapsamında tanımsız alınır. 0^-2 ise 1/0^2 gerektirdiği için tanımsızdır. “Sıfırın her kuvveti 0” önermesi bu iki durumu kaybeder. Bir süreçte 0. adım ayrıca başlangıç olarak tanımlanabilir; bu, 0^0’a genel bir sayı değeri atamak değildir.",
+  "to": "Sıfır tabanını bütün kurallara sınırsız taşıma. 0^0 bu kapsamda tanımsız alınır. 0^-2 ise 1/0^2 gerektirdiği için tanımsızdır. “Sıfırın her kuvveti 0” önermesi bu iki durumu kaybeder. Bir süreçte 0. adım ayrıca başlangıç olarak tanımlanabilir; bu, 0^0’a genel bir sayı değeri atamak değildir."
+ },
+ {
+  "from": "Payda a^n olduğu için sıfır tabanı dışlanır;0⁵/0² bir sadeleştirme sorusu değil 0/0 tanımsızlığıdır. Çıkarma sırasına dikkat et: payın üssü eksi paydanın üssü. 3^-2/3^4=3^-6’dır; -2-4=-6. Üs işaretlerini parantezle yazmak, eksi bir üssü çıkarırken hata yapmayı azaltır.",
+  "to": "Payda a^n olduğu için sıfır tabanı dışlanır; 0⁵/0² bir sadeleştirme sorusu değil 0/0 tanımsızlığıdır. Çıkarma sırasına dikkat et: payın üssü eksi paydanın üssü. 3^-2/3^4=3^-6’dır; -2-4=-6. Üs işaretlerini parantezle yazmak, eksi bir üssü çıkarırken hata yapmayı azaltır."
+ },
+ {
+  "from": "Negatif tam sayı dış üs varsa önce tanımı kontrol et: (2³)^-2=1/(2³)²=2^-6. Bu bölümdeki tam sayı kuralını bütün rasyonel üslere negatif tabanda koşulsuz genelleme. ((-1)²)^(1/2)=1 iken(-1)^(2·1/2)=-1 olur. Genel rasyonel üs özdeşlikleri için pozitif taban koşulu güvenlidir; ayrı kök durumları kendi tanım koşuluyla ele alınır.",
+  "to": "Negatif tam sayı dış üs varsa önce tanımı kontrol et: (2³)^-2=1/(2³)²=2^-6. Bu bölümdeki tam sayı kuralını bütün rasyonel üslere negatif tabanda koşulsuz genelleme. ((-1)²)^(1/2)=1 iken (-1)^(2·1/2)=-1 olur. Genel rasyonel üs özdeşlikleri için pozitif taban koşulu güvenlidir; ayrı kök durumları kendi tanım koşuluyla ele alınır."
+ },
+ {
+  "from": "Aynı dış üs bir toplamın terimlerine bu şekilde dağıtılamaz. (a+b)²=a²+2 ab+b²’dir; genel olarak a²+b² değildir. a=1, b=2 ile sol 9, önerilen toplam 5 çıkar. Bir kuraldaki çarpı işaretini artıya çevirmek yeni bir doğru kural üretmez.",
+  "to": "Aynı dış üs bir toplamın terimlerine bu şekilde dağıtılamaz. (a+b)²=a²+2ab+b²’dir; genel olarak a²+b² değildir. a=1, b=2 ile sol 9, önerilen toplam 5 çıkar. Bir kuraldaki çarpı işaretini artıya çevirmek yeni bir doğru kural üretmez."
+ },
+ {
+  "from": "4; 8; 16 sayıları 2’nin; 9; 27; 81 sayıları 3’ün kuvvetleridir. Bu ortak yapı, büyük çarpımları açmadan üs hesaplaması yapmanı sağlar. (4³·8²)/2⁵ için 4³=2⁶,8²=2⁶; sonuç 2^(6+6-5)=2⁷=128 olur.",
+  "to": "4; 8; 16 sayıları 2’nin; 9; 27; 81 sayıları 3’ün kuvvetleridir. Bu ortak yapı, büyük çarpımları açmadan üs hesaplaması yapmanı sağlar. (4³·8²)/2⁵ için 4³=2⁶, 8²=2⁶; sonuç 2^(6+6-5)=2⁷=128 olur."
+ },
+ {
+  "from": "Önce her tabanın dönüşümünü açık yaz, sonra dış üsleri çarp, en son çarpım/bölümde üsleri topla/çıkar. 12=2²·3 gibi bir taban tek bir asalın kuvveti değildir; çarpanlara ayırma özelliğiyle iki asalın kuvvetlerini ayrı izlersin. Her sayı çifti aynı pozitif tam sayı tabanının kuvveti olmak zorunda değildir;3⁵ ile 5³ gibi küçük karşılaştırmada doğrudan değer hesaplanabilir.",
+  "to": "Önce her tabanın dönüşümünü açık yaz, sonra dış üsleri çarp, en son çarpım/bölümde üsleri topla/çıkar. 12=2²·3 gibi bir taban tek bir asalın kuvveti değildir; çarpanlara ayırma özelliğiyle iki asalın kuvvetlerini ayrı izlersin. Her sayı çifti aynı pozitif tam sayı tabanının kuvveti olmak zorunda değildir; 3⁵ ile 5³ gibi küçük karşılaştırmada doğrudan değer hesaplanabilir."
+ },
+ {
+  "from": "Farklı üsleri ortaklaştırmak için ortak küçük kuvveti dışarı alabilirsin. 5^(n+3)-2·5^(n+2)=5^(n+2)(5-2)=3·5^(n+2). Üstteki+3’ü katsayı 3 sanma;5^(n+3)=5^(n+2)·5’tir. Ortak çarpanı açarak başlangıç ifadesini geri üretmen, dönüşümü denetler.",
+  "to": "Farklı üsleri ortaklaştırmak için ortak küçük kuvveti dışarı alabilirsin. 5^(n+3)-2·5^(n+2)=5^(n+2)(5-2)=3·5^(n+2). Üstteki +3’ü katsayı 3 sanma; 5^(n+3)=5^(n+2)·5’tir. Ortak çarpanı açarak başlangıç ifadesini geri üretmen, dönüşümü denetler."
+ },
+ {
+  "from": "2³+2⁴=8+16=24;2⁷=128. Aynı taban, toplamada üsleri birleştirmeye yetmez. (1+2)²=9;1²+2²=5. Üs, toplam üzerine genel olarak dağıtılmaz. 2^3 ile 3^2 bile 8 ve 9’dur; tabanla üssün yer değiştirmesi bir özdeşlik değildir.",
+  "to": "2³+2⁴=8+16=24; 2⁷=128. Aynı taban, toplamada üsleri birleştirmeye yetmez. (1+2)²=9; 1²+2²=5. Üs, toplam üzerine genel olarak dağıtılmaz. 2^3 ile 3^2 bile 8 ve 9’dur; tabanla üssün yer değiştirmesi bir özdeşlik değildir."
+ },
+ {
+  "from": "Yanlış olduğu düşünülen genel bir önermeyi sınarken tanımlı küçük sayılar seç ve iki tarafı ayrı hesapla. Bir tek farklılık, “her zaman” iddiasını çürütür. Birkaç eşit sonuç ise genel kanıt değildir. (-2)³ ve-2³’ün aynı çıkması, çift üsteki parantez farkını ortadan kaldırmaz. Bu yaklaşım, benzer görünen ama işlemi değişen sorularda doğru yöntemi seçmene yardım eder.",
+  "to": "Yanlış olduğu düşünülen genel bir önermeyi sınarken tanımlı küçük sayılar seç ve iki tarafı ayrı hesapla. Bir tek farklılık, “her zaman” iddiasını çürütür. Birkaç eşit sonuç ise genel kanıt değildir. (-2)³ ve -2³’ün aynı çıkması, çift üsteki parantez farkını ortadan kaldırmaz. Bu yaklaşım, benzer görünen ama işlemi değişen sorularda doğru yöntemi seçmene yardım eder."
+ },
+ {
+  "from": "2^x=A,3^x=B veriliyorsa 6^x=(2·3)^x=AB, çünkü tabanlar pozitiftir. 2^x=5 iken 8^x=(2³)^x=(2^x)³=125. x’in kendisini bulmak çoğu zaman gereksizdir; sorunun verdiği bütün kuvveti yerine koy.",
+  "to": "2^x=A, 3^x=B veriliyorsa 6^x=(2·3)^x=AB, çünkü tabanlar pozitiftir. 2^x=5 iken 8^x=(2³)^x=(2^x)³=125. x’in kendisini bulmak çoğu zaman gereksizdir; sorunun verdiği bütün kuvveti yerine koy."
+ },
+ {
+  "from": "75^x için 75=3·5²;3^x=A,5^x=B verilirse sonuç AB² olur. 0,18^x için 0,18=9/50=3²/(2·5²);2^x=A,3^x=B,5^x=C ile B²/(AC²) elde edilir. Negatif asal kuvvetler kesrin paydasında karşılık olarak görünür. Ortak üs gerçek de olsa burada kullanılan asal tabanlar pozitif olduğundan bu ayrıştırmalar geçerlidir.",
+  "to": "75^x için 75=3·5²; 3^x=A, 5^x=B verilirse sonuç AB² olur. 0,18^x için 0,18=9/50=3²/(2·5²); 2^x=A, 3^x=B, 5^x=C ile B²/(AC²) elde edilir. Negatif asal kuvvetler kesrin paydasında karşılık olarak görünür. Ortak üs gerçek de olsa burada kullanılan asal tabanlar pozitif olduğundan bu ayrıştırmalar geçerlidir."
+ },
+ {
+  "from": "a>0 ve a≠1 iken a^u=a^v ancak u=v olduğunda olur. Taban 1’den büyükken kuvvet fonksiyonu artar;0<a<1 iken azalır; her iki durumda da farklı üs aynı değeri vermez. 8^(x-1)=4^(x+2) için ortak taban 2 olur:3(x-1)=2(x+2).",
+  "to": "a>0 ve a≠1 iken a^u=a^v ancak u=v olduğunda olur. Taban 1’den büyükken kuvvet fonksiyonu artar; 0<a<1 iken azalır; her iki durumda da farklı üs aynı değeri vermez. 8^(x-1)=4^(x+2) için ortak taban 2 olur: 3(x-1)=2(x+2)."
+ },
+ {
+  "from": "Sonra doğrusal denklemi çöz:3 x-3=2 x+4 →x=7. Bulduğun değeri özgün üslü ifadede denetle:8⁶=4⁹=2¹⁸. Üsleri eşitlemeden önce tabanın koşulunu yaz; yalnız iki tarafta benzer bir a görmek yeterli değildir. Bu modelde üsler ax+b biçimindedir; genel bütün üslü denklemler için tek bir yöntem iddiası yoktur.",
+  "to": "Sonra doğrusal denklemi çöz: 3x-3=2x+4 → x=7. Bulduğun değeri özgün üslü ifadede denetle: 8⁶=4⁹=2¹⁸. Üsleri eşitlemeden önce tabanın koşulunu yaz; yalnız iki tarafta benzer bir a görmek yeterli değildir. Bu modelde üsler ax+b biçimindedir; genel bütün üslü denklemler için tek bir yöntem iddiası yoktur."
+ },
+ {
+  "from": "9^(x-1)=27 için 2 x-2=3 →x=5/2. Çözümün tam sayı olması gerekmez; x’in kümesi soruda verilene göre belirlenir. 3^(2 x+1)=3^(2 x+4) ise 1=4 çelişkisine gider ve gerçek çözümü yoktur.",
+  "to": "9^(x-1)=27 için 2x-2=3 → x=5/2. Çözümün tam sayı olması gerekmez; x’in kümesi soruda verilene göre belirlenir. 3^(2x+1)=3^(2x+4) ise 1=4 çelişkisine gider ve gerçek çözümü yoktur."
+ },
+ {
+  "from": "1^(2 x+3)=1^(x-4), bütün gerçek x’lerde 1=1’dir; üsleri eşitleyip tek kök üretmek yanlıştır. Negatif tabanlarda ayrıca tanım alanı ve çiftlik devreye girer: x tam sayı koşuluyla(-1)^x=1’in çift tam sayı çözümleri vardır. Bu, “negatif tabanlı hiçbir denklem çözülmez” demenin de yanlış olduğunu gösterir. 0 tabanında negatif/sıfır üsler ayrı tanım kontrolü ister.",
+  "to": "1^(2x+3)=1^(x-4), bütün gerçek x’lerde 1=1’dir; üsleri eşitleyip tek kök üretmek yanlıştır. Negatif tabanlarda ayrıca tanım alanı ve çiftlik devreye girer: x tam sayı koşuluyla (-1)^x=1’in çift tam sayı çözümleri vardır. Bu, “negatif tabanlı hiçbir denklem çözülmez” demenin de yanlış olduğunu gösterir. 0 tabanında negatif/sıfır üsler ayrı tanım kontrolü ister."
+ },
+ {
+  "from": "2¹⁸ ile 8⁶ aynı tabana çevrilince eşittir. 3⁵ ile 5³ için yalnız 3<5 veya 5>3 bilgisi yeterli değildir;243>125 doğrudan hesaplanır. Ortak taban/üs yoksa değerleri hesaplamak, oran kullanmak veya uygun sınırlar bulmak gerekebilir. İki pozitif sayının oranı 1’den büyükse pay büyüktür; eşitse eşittir; küçükse pay küçüktür.",
+  "to": "2¹⁸ ile 8⁶ aynı tabana çevrilince eşittir. 3⁵ ile 5³ için yalnız 3<5 veya 5>3 bilgisi yeterli değildir; 243>125 doğrudan hesaplanır. Ortak taban/üs yoksa değerleri hesaplamak, oran kullanmak veya uygun sınırlar bulmak gerekebilir. İki pozitif sayının oranı 1’den büyükse pay büyüktür; eşitse eşittir; küçükse pay küçüktür."
+ },
+ {
+  "from": "Üssü önce sadeleştir:4/6=2/3 aynı rasyonel sayıdır. Negatif pay karşılık aldırır; tabanı negatif yapmaz. Bazı sonuçlar tam kesir olmaz:2^(1/2)=√2 köklü biçimde kalır. Model bu durumda “irrasyonel, köklü biçim” diye ayırır; yuvarlanmış ondalığı tam eşitlik olarak sunmaz. Genel köklü sayılar ünitesinin kurallarını burada kullanılan pozitif taban koşuluyla ilişkilendir.",
+  "to": "Üssü önce sadeleştir: 4/6=2/3 aynı rasyonel sayıdır. Negatif pay karşılık aldırır; tabanı negatif yapmaz. Bazı sonuçlar tam kesir olmaz: 2^(1/2)=√2 köklü biçimde kalır. Model bu durumda “irrasyonel, köklü biçim” diye ayırır; yuvarlanmış ondalığı tam eşitlik olarak sunmaz. Genel köklü sayılar ünitesinin kurallarını burada kullanılan pozitif taban koşuluyla ilişkilendir."
+ },
+ {
+  "from": "Sadeleştirme zorunludur: (-8)^(2/6)=(-8)^(1/3)=-2, rasyonel üs en sade biçiminden yorumlanır. Bunu koşulsuz⁶√((-8)²)=+2 diye dönüştürmek eşitliği bozar. Pozitif tabanda güvenle kullandığın kök-kuvvet dönüşümünü negatif tabana aynen kopyalama. Sıfır tabanda pozitif rasyonel üs 0, sıfır veya negatif üs ise bu kapsamda tanımsızdır.",
+  "to": "Sadeleştirme zorunludur: (-8)^(2/6)=(-8)^(1/3)=-2, rasyonel üs en sade biçiminden yorumlanır. Bunu koşulsuz ⁶√((-8)²)=+2 diye dönüştürmek eşitliği bozar. Pozitif tabanda güvenle kullandığın kök-kuvvet dönüşümünü negatif tabana aynen kopyalama. Sıfır tabanda pozitif rasyonel üs 0, sıfır veya negatif üs ise bu kapsamda tanımsızdır."
+ },
+ {
+  "from": "a>0 için(a^r)^s=a^(rs), r ve s rasyonel olduğunda tanımlı pozitif kuvvetlerle kullanılabilir. Negatif a için iki tarafın ayrı ayrı tanımlı olması bu özdeşliğe yetmez. ((-1)²)^(1/2)=√1=1; (-1)^(2·1/2)=(-1)¹=-1. İki taraf da gerçek ama farklıdır.",
+  "to": "a>0 için (a^r)^s=a^(rs), r ve s rasyonel olduğunda tanımlı pozitif kuvvetlerle kullanılabilir. Negatif a için iki tarafın ayrı ayrı tanımlı olması bu özdeşliğe yetmez. ((-1)²)^(1/2)=√1=1; (-1)^(2·1/2)=(-1)¹=-1. İki taraf da gerçek ama farklıdır."
+ },
+ {
+  "from": "10³=1000,10²=100,10¹=10,10⁰=1. Üs her 1 azaldığında 10’a bölersin:10^-1=0,1;10^-2=0,01;10^-3=0,001. Büyük sayıyı küçük katsayıyla, çok küçük sayıyı da okunur bir katsayıyla yazmak bu düzen sayesinde mümkün olur.",
+  "to": "10³=1000, 10²=100, 10¹=10, 10⁰=1. Üs her 1 azaldığında 10’a bölersin: 10^-1=0,1; 10^-2=0,01; 10^-3=0,001. Büyük sayıyı küçük katsayıyla, çok küçük sayıyı da okunur bir katsayıyla yazmak bu düzen sayesinde mümkün olur."
+ },
+ {
+  "from": "Sıfırdan farklı gerçek bir sayı a×10^n biçiminde bilimsel gösterilir: n tam sayı,1≤|a|<10. Negatif sayıda katsayı da negatif olabilir: -30000=-3×10⁴. |a| koşulu işareti değil büyüklüğü denetler. Sıfır için bu normalleştirme aralığı uygulanmaz;0 ayrı yazılır.",
+  "to": "Sıfırdan farklı gerçek bir sayı a×10^n biçiminde bilimsel gösterilir: n tam sayı, 1≤|a|<10. Negatif sayıda katsayı da negatif olabilir: -30000=-3×10⁴. |a| koşulu işareti değil büyüklüğü denetler. Sıfır için bu normalleştirme aralığı uygulanmaz; 0 ayrı yazılır."
+ },
+ {
+  "from": "Katsayı tam 10 olduğunda üst sınırın dahil olmadığını unutma:10×10³=1×10⁴. Katsayı 0 ise başka üs seçerek 1≤|a| koşuluna getirilemez; sayı sıfırdır. Laboratuvar kesirle tam değer saklar ve normalleştirilmiş katsayı ile üssü aynı sayının üzerinden üretir; kayan virgül yuvarlaması normalleştirme anahtarı değildir.",
+  "to": "Katsayı tam 10 olduğunda üst sınırın dahil olmadığını unutma: 10×10³=1×10⁴. Katsayı 0 ise başka üs seçerek 1≤|a| koşuluna getirilemez; sayı sıfırdır. Laboratuvar kesirle tam değer saklar ve normalleştirilmiş katsayı ile üssü aynı sayının üzerinden üretir; kayan virgül yuvarlaması normalleştirme anahtarı değildir."
+ },
+ {
+  "from": "(a×10^m)(b×10^n)=(ab)×10^(m+n). (6×10⁷)(4×10^-3)=24×10⁴=2,4×10⁵. Önce katsayı işlemi ve üs işlemi ayrı yapılır; sonra katsayı standart aralığa getirilir. Son normalleştirme,10’un üssünü değiştirebilir.",
+  "to": "(a×10^m)(b×10^n)=(ab)×10^(m+n). (6×10⁷)(4×10^-3)=24×10⁴=2,4×10⁵. Önce katsayı işlemi ve üs işlemi ayrı yapılır; sonra katsayı standart aralığa getirilir. Son normalleştirme, 10’un üssünü değiştirebilir."
+ },
+ {
+  "from": "Bölmede b≠0 için(a×10^m)/(b×10^n)=(a/b)×10^(m-n). (9×10⁵)/(3×10²)=3×10³. Üslerde pay eksi payda sırasını koru; negatif üssü çıkarırken parantez kullan. Bilimsel çarpma veya bölme için kullanılan üs kuralları, iki sayının toplamına aynen uygulanmaz.",
+  "to": "Bölmede b≠0 için (a×10^m)/(b×10^n)=(a/b)×10^(m-n). (9×10⁵)/(3×10²)=3×10³. Üslerde pay eksi payda sırasını koru; negatif üssü çıkarırken parantez kullan. Bilimsel çarpma veya bölme için kullanılan üs kuralları, iki sayının toplamına aynen uygulanmaz."
+ },
+ {
+  "from": "Toplama ve çıkarmada önce aynı 10 kuvvetini ortak yap. 6×10⁵+4×10⁶=0,6×10⁶+4×10⁶=4,6×10⁶. İstersen 10⁵ tabanında(6+40)×10⁵=46×10⁵=4,6×10⁶ de yazabilirsin. İki yol aynı değeri vermelidir.",
+  "to": "Toplama ve çıkarmada önce aynı 10 kuvvetini ortak yap. 6×10⁵+4×10⁶=0,6×10⁶+4×10⁶=4,6×10⁶. İstersen 10⁵ tabanında (6+40)×10⁵=46×10⁵=4,6×10⁶ de yazabilirsin. İki yol aynı değeri vermelidir."
+ },
+ {
+  "from": "Normalleştirilmiş iki pozitif sayıda önce 10’un üssü, eşitse katsayı karşılaştırılır. 7,2×10⁶ >9,1×10⁵; ilk sayı milyon, ikincisi yüz bin büyüklüğündedir. Aynı üs varsa 4,2×10³<8,1×10³.",
+  "to": "Normalleştirilmiş iki pozitif sayıda önce 10’un üssü, eşitse katsayı karşılaştırılır. 7,2×10⁶>9,1×10⁵; ilk sayı milyon, ikincisi yüz bin büyüklüğündedir. Aynı üs varsa 4,2×10³<8,1×10³."
+ },
+ {
+  "from": "Doğrusal sayı doğrusunda eşit aralıklar eşit farkları gösterir. Logaritmik doğruda 10¹,10²,10³ eşit uzaklıkta durur; her adımda değer 10 katına çıkar. Bu yüzden 100 ile 1000 arasındaki orta nokta 550 değildir; logaritmik ortası 10^2,5≈316,23’tür.",
+  "to": "Doğrusal sayı doğrusunda eşit aralıklar eşit farkları gösterir. Logaritmik doğruda 10¹, 10², 10³ eşit uzaklıkta durur; her adımda değer 10 katına çıkar. Bu yüzden 100 ile 1000 arasındaki orta nokta 550 değildir; logaritmik ortası 10^2,5≈316,23’tür."
+ },
+ {
+  "from": "8,1×10⁸ değeri 10⁸ ile 10⁹ arasındadır;10⁹ noktasının tam üstünde değildir. log₁₀ konumu 8 + log₁₀(8,1) ≈ 8,9085’tir. log₁₀(X),10’un hangi üssünün X olduğunu belirtir. Bu ondalık yalnız çizimde yaklaşık konum içindir; sayı değeri tam kesirle korunur. Model, eksenin türünü ve görünür aralığı yazar. Negatif ve sıfır değerler gerçek logaritmik eksene yerleştirilmez; çizim için onları sessizce pozitife dönüştürmek yanlıştır.",
+  "to": "8,1×10⁸ değeri 10⁸ ile 10⁹ arasındadır; 10⁹ noktasının tam üstünde değildir. log₁₀ konumu 8 + log₁₀(8,1) ≈ 8,9085’tir. log₁₀(X), 10’un hangi üssünün X olduğunu belirtir. Bu ondalık yalnız çizimde yaklaşık konum içindir; sayı değeri tam kesirle korunur. Model, eksenin türünü ve görünür aralığı yazar. Negatif ve sıfır değerler gerçek logaritmik eksene yerleştirilmez; çizim için onları sessizce pozitife dönüştürmek yanlıştır."
+ },
+ {
+  "from": "Başlangıç miktarı N, her tamamlanan adımın çarpanı q olsun. Pozitif q ve tam sayı t≥0 için miktar N·q^t olur. Başlangıç 200, q=2, t=6 için 200·2⁶=12800. Başlangıcı 0. adım diye göster:0’da 200,1’de 400,2’de 800. Böylece ilk değeri bir katlama sanıp bir çarpan eksiltmezsin.",
+  "to": "Başlangıç miktarı N, her tamamlanan adımın çarpanı q olsun. Pozitif q ve tam sayı t≥0 için miktar N·q^t olur. Başlangıç 200, q=2, t=6 için 200·2⁶=12800. Başlangıcı 0. adım diye göster: 0’da 200, 1’de 400, 2’de 800. Böylece ilk değeri bir katlama sanıp bir çarpan eksiltmezsin."
+ },
+ {
+  "from": "q>1 ve N>0 büyüme,0<q<1 azalma, q=1 sabit değer verir. N=0 ise bütün değerler 0’dır. Yarılanmada q=1/2, üç katına çıkmada q=3 seçilir. Her adımda sabit sayı ekleniyorsa model üstel değil doğrusaldır; “iki artıyor” ile “iki katına çıkıyor” farklıdır.",
+  "to": "q>1 ve N>0 büyüme, 0<q<1 azalma, q=1 sabit değer verir. N=0 ise bütün değerler 0’dır. Yarılanmada q=1/2, üç katına çıkmada q=3 seçilir. Her adımda sabit sayı ekleniyorsa model üstel değil doğrusaldır; “iki artıyor” ile “iki katına çıkıyor” farklıdır."
+ },
+ {
+  "from": "q=0 sürecinde başlangıç ayrı tanımdır: t=0’da N, ilk tamamlanan adımdan sonra 0, sonraki adımlarda 0. Bunu N·0⁰ hesaplayarak gerekçelendirme;0. adım başlangıç verisidir ve 0⁰ bu okul kapsamındaki tanımsızlığını korur. Laboratuvarda “başlangıç değeri” etiketi bu ayrımı görünür yapar.",
+  "to": "q=0 sürecinde başlangıç ayrı tanımdır: t=0’da N, ilk tamamlanan adımdan sonra 0, sonraki adımlarda 0. Bunu N·0⁰ hesaplayarak gerekçelendirme; 0. adım başlangıç verisidir ve 0⁰ tanımsızlığını korur. Laboratuvarda “başlangıç değeri” etiketi bu ayrımı görünür yapar."
+ },
+ {
+  "from": "Bir ifade aynı anda negatif üs, negatif taban ve ortak asal taban içerebilir. Önce tanımlı olmasını sağla; a^-6 gibi terimler varsa a≠0 yaz. Sonra işaretleri ve üsleri ayrı izle. (-a)^4 pozitif işaretli a⁴, (-a)^5 ise-a⁵ olur. İki negatif bölüm çarpanı işareti yeniden değiştirebilir; bütün ifadeye tek bir eksi yakıştırma.",
+  "to": "Bir ifade aynı anda negatif üs, negatif taban ve ortak asal taban içerebilir. Önce tanımlı olmasını sağla; a^-6 gibi terimler varsa a≠0 yaz. Sonra işaretleri ve üsleri ayrı izle. (-a)^4 pozitif işaretli a⁴, (-a)^5 ise -a⁵ olur. İki negatif bölüm çarpanı işareti yeniden değiştirebilir; bütün ifadeye tek bir eksi yakıştırma."
+ },
+ {
+  "from": "Verilen kuvvetle kurulan sorularda ara taban verilmiş olabilir. 15^x=A ve 3^x=B ile 75=15²/3 olduğundan 75^(2 x)=(15^x)^4/(3^x)^2=A⁴/B². 5^x=2 iken 25^(2 x+1)=5^(4 x+2)=(5^x)^4·25=400. Önemli olan sorunun biçimini görmek, her seferinde x’i bulmak değildir. Aşağıdaki seçili altı OGM çözümü doğrudan incelenen tek sayfanın işlemlerini adım adım açıklar.",
+  "to": "Verilen kuvvetle kurulan sorularda ara taban verilmiş olabilir. 15^x=A ve 3^x=B ile 75=15²/3 olduğundan 75^(2x)=(15^x)^4/(3^x)^2=A⁴/B². 5^x=2 iken 25^(2x+1)=5^(4x+2)=(5^x)^4·25=400. Önemli olan sorunun biçimini görmek, her seferinde x’i bulmak değildir."
+ },
+ {
+  "from": "Bu paket seçili 12 sayfalık üslü sayılar çalışma kaynağının öğretim maddeleri ve doğrudan incelenen tek OGM özet sayfasından özgün uyarlamadır. Kaynaktaki bazı bölüm numaraları ve bilimsel eksen şeması düzeltilmiştir. 2019 MSÜ atfındaki kitapçık konumu/anahtar metinsel olarak doğrulanmış olsa da özgün sayısal görseli doğrulanmadığından burada resmî soru yeniden sunulmaz. 55 kart özgün öğretim sorusudur; tüm MEB/ÖSYM kitaplarının okunduğu iddiası yoktur. Görsel keşif, okuma, süre veya elle onay ustalık/XP kanıtı değildir.",
+  "to": "Buradaki örnekler özgün öğretim sorularıdır; resmî sınav sorusu olarak sunulmaz."
  }
 ]

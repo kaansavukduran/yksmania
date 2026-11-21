@@ -9,6 +9,7 @@ import { localizedQuestionView } from "../src/domain/questionPresentation";
 import { helpPanels } from "../src/learning/questionHelp";
 import { osymRows } from "../src/learning/osym";
 import { examCatalogue } from "../src/domain/exams";
+import { recallCheckCount, recallCheckLessonCount } from "../src/learning/recallChecks";
 
 /*
  * Machine-readable progress record. The table shown at the end of every Forge
@@ -86,6 +87,11 @@ function compute() {
   });
   const sum = (k: keyof (typeof rows)[number]) => rows.reduce((n, r) => n + (r[k] as number), 0);
   const catalogue = examCatalogue();
+  const fixDir = "src/learning/displayFixes";
+  const displayFixFiles = readdirSync(fixDir)
+    .filter((f) => f.endsWith(".json"))
+    .sort()
+    .map((f) => [f, JSON.parse(readFileSync(`${fixDir}/${f}`, "utf8")) as unknown[]] as const);
   return {
     rows,
     exams: {
@@ -111,6 +117,10 @@ function compute() {
       osymPdfDone: Number(osym[1]),
       osymPdfTotal: Number(osym[2]),
       osymQuestions: osymRows.length,
+      recallLessons: recallCheckLessonCount,
+      recallChecks: recallCheckCount,
+      displayFixCards: displayFixFiles.filter(([f]) => !f.includes("anlatim-")).reduce((n, [, r]) => n + r.length, 0),
+      displayFixParagraphs: displayFixFiles.filter(([f]) => f.includes("anlatim-")).reduce((n, [, r]) => n + r.length, 0),
       osymCitedQuestions: cited.size,
     },
   };
@@ -140,6 +150,8 @@ function markdown(data: ReturnType<typeof compute>) {
     `| 99_ÖSYM PDF (işlenen / beyan edilen) | ${frac(t.osymPdfDone, t.osymPdfTotal)} |`,
     `| 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | ${tr(t.osymQuestions)} · ${t.osymCitedQuestions} |`,
     `| Adım adım çözümlü soru | ${frac(t.stepped, t.questions)} |`,
+    `| Ara hatırlama (mikro ritim): ders · soru | ${frac(t.recallLessons, t.readyLessons)} · ${tr(t.recallChecks)} soru |`,
+    `| Gösterim onarımı: soru alanı · ders paragrafı | ${tr(t.displayFixCards)} · ${tr(t.displayFixParagraphs)} |`,
     `| Kopya kâğıdı (işlenen / toplam) | ${frac(t.sheetsDone, t.sheets)} |`,
     `| Resmî ana başlık · uygulama dersi · hazır anlatım | ${t.officialHeadings} · ${t.lessons} · ${t.readyLessons} |`,
   ];

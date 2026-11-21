@@ -1,0 +1,450 @@
+{
+ "alan-donusumleri": [
+  {
+   "after": 1,
+   "prompt": "50 cm ile 0,8 m kenarlı dikdörtgenin alanı kaç cm²'dir?",
+   "answer": "Önce 0,8 m=80 cm yapılır; 50·80=4000 cm², yani 0,4 m² bulunur."
+  },
+  {
+   "after": 3,
+   "prompt": "Yan kenarı 7 cm, tabanı 10 cm olan paralelkenarın alanı neden hemen 70 cm² denemez?",
+   "answer": "Alan taban ile ona ait dik yüksekliğin çarpımıdır; yan kenarın tabana dik olduğu bilinmeden yükseklik sayılamaz."
+  },
+  {
+   "after": 5,
+   "prompt": "D, BC üzerinde ve BD:DC=2:3 ise ABD ile ADC alanları nasıl paylaşılır?",
+   "answer": "A'dan BC'ye yükseklik ortak olduğundan alanlar 2:3 oranındadır; büyük üçgen toplam 5 paya bölünür."
+  },
+  {
+   "after": 7,
+   "prompt": "Alanı 72 birim² olan üçgende üç kenarortay çizilince her küçük parçanın alanı kaçtır?",
+   "answer": "Kenarortaylar üçgeni altı eş alanlı parçaya ayırır; her biri 72/6=12 birim² olur."
+  }
+ ],
+ "tyt-geo-temel-acilar-031": [
+  {
+   "after": 1,
+   "prompt": "Dar ve geniş açının ölçü aralıkları nelerdir?",
+   "answer": "Dar açı 0° ile 90°, geniş açı 90° ile 180° arasındadır; sınır değerler bu aralıklara dahil değildir."
+  },
+  {
+   "after": 3,
+   "prompt": "Kesişen iki doğrunun oluşturduğu açılardan biri 68° ise diğer üçü kaçar derecedir?",
+   "answer": "Ters açısı 68°, komşu iki açının her biri 180−68=112° olur."
+  },
+  {
+   "after": 5,
+   "prompt": "Komşu bütünler iki açının iç açıortayları arasındaki açı neden 90°dir?",
+   "answer": "İki açının toplamı 180° olduğundan açıortayların ayırdığı yarımların toplamı 90° olur."
+  }
+ ],
+ "tyt-geo-ucgende-acilar-031": [
+  {
+   "after": 1,
+   "prompt": "İki iç açısı 46° ve 71° olan üçgenin üçüncü açısı kaç derecedir?",
+   "answer": "İç açılar toplamı 180° olduğundan 180−46−71=63° olur."
+  },
+  {
+   "after": 3,
+   "prompt": "Bir üçgenin her köşesinden aynı dolaşım yönünde birer dış açı alınırsa toplamları kaç olur?",
+   "answer": "360° olur; her köşede yalnız bir dış açı aynı yönde seçilmelidir."
+  },
+  {
+   "after": 5,
+   "prompt": "A'dan inen yükseklik ile A'nın iç açıortayı arasındaki açı hangi ifadeyle bulunur?",
+   "answer": "B ve C açılarının farkının yarısıyla, yani |B−C|/2 ile bulunur."
+  }
+ ],
+ "tyt-geo-ucgen-esitsizligi-031": [
+  {
+   "after": 1,
+   "prompt": "Bilinen iki kenar 4 ve 9 ise üçüncü kenar hangi aralıkta olmalıdır?",
+   "answer": "|9−4|<c<9+4 olduğundan 5<c<13 olmalıdır; uçlarda köşeler doğrusal olur."
+  },
+  {
+   "after": 3,
+   "prompt": "5<c<13 aralığında kaç tam sayı kenar uzunluğu vardır?",
+   "answer": "6'dan 12'ye kadar 7 tam sayı vardır; açık aralığın uçları sayılmaz."
+  },
+  {
+   "after": 5,
+   "prompt": "Kenarları 4, 5, 6 olan üçgenin açı türünü nasıl belirlersin?",
+   "answer": "En büyük kenar 6 ile sınanır: 36<16+25=41 olduğundan üçgen dar açılıdır."
+  }
+ ],
+ "tyt-geo-dik-ucgen-031": [
+  {
+   "after": 1,
+   "prompt": "Bir dik kenarı 6, hipotenüsü 10 olan üçgende diğer dik kenar kaçtır?",
+   "answer": "√(100−36)=√64=8 olur; 64 alan değeridir, uzunluk 8'dir."
+  },
+  {
+   "after": 3,
+   "prompt": "Dik kenarları a olan ikizkenar dik üçgende hipotenüs kaçtır?",
+   "answer": "Eş dar açıların karşısındaki dik kenarlar eşittir ve hipotenüs a√2 olur."
+  },
+  {
+   "after": 6,
+   "prompt": "Duvara dayalı merdiven probleminde hipotenüs hangi parçadır?",
+   "answer": "Duvarla zemin dik olduğundan merdivenin kendisi hipotenüstür; uzunluğu yükseklik ile yatay mesafenin toplamı değildir."
+  }
+ ],
+ "tyt-geo-eslik-benzerlik-031": [
+  {
+   "after": 1,
+   "prompt": "ABC∼DEF yazımında BC kenarı hangi kenara karşılık gelir?",
+   "answer": "Köşe sırası B↔E ve C↔F eşlemesini verdiği için BC, EF'ye karşılık gelir."
+  },
+  {
+   "after": 3,
+   "prompt": "Kum saati görünümündeki ters açılar benzerlik için neden tek başına yetmez?",
+   "answer": "Ters açılar yalnız bir açı çifti sağlar; ikinci açı için paralellik ya da başka açık bir veri gerekir."
+  },
+  {
+   "after": 5,
+   "prompt": "İki kenarın orta noktalarını birleştiren parça üçüncü kenarla nasıl bir ilişkidedir?",
+   "answer": "Üçüncü kenara paraleldir ve onun yarısı uzunluğundadır."
+  },
+  {
+   "after": 6,
+   "prompt": "DE∥BC ve AD/AB=2/3 ise kalan yamuğun alanı ana alanın ne kadarıdır?",
+   "answer": "Üst üçgen ana alanın (2/3)²=4/9'u olduğundan yamuk 5/9'udur."
+  }
+ ],
+ "tyt-geo-ucgen-merkezleri-031": [
+  {
+   "after": 1,
+   "prompt": "AB=6, AC=9, BC=10 iken A'nın iç açıortayı BC'yi hangi parçalara ayırır?",
+   "answer": "BD/DC=6/9=2/3 olduğundan 10 uzunluk 4 ve 6 olarak bölünür."
+  },
+  {
+   "after": 3,
+   "prompt": "AB=AC olan üçgende A'daki dış açıortayla neden oran denklemi kurulmaz?",
+   "answer": "Bu dış açıortay BC'ye paraleldir; BC doğrusuyla sonlu bir kesişim noktası oluşmaz."
+  },
+  {
+   "after": 5,
+   "prompt": "A'nın karşısındaki dış teğet çember merkezi Iₐ için ∠BIₐC hangi ifadeyle bulunur?",
+   "answer": "∠BIₐC=90°−A/2 olur; iç merkezdeki 90°+A/2 ile işaret farkına dikkat edilir."
+  },
+  {
+   "after": 7,
+   "prompt": "Aynı üçgende büyük kenara ait yükseklik neden daha kısadır?",
+   "answer": "Alan a·hₐ/2 ile her kenar için aynıdır; taban büyüdükçe ona ait yükseklik küçülür."
+  },
+  {
+   "after": 9,
+   "prompt": "Eşkenar üçgende R ve r, yükseklik h cinsinden nedir?",
+   "answer": "Ağırlık merkezi oranından R=2h/3 ve r=h/3 olur; kenar a ise h=a√3/2'dir."
+  }
+ ],
+ "tyt-geo-cokgenler-032": [
+  {
+   "after": 1,
+   "prompt": "Dışbükey çokgeni içbükey çokgenden ayıran koşul nedir?",
+   "answer": "Her iç açı 180°den küçükse dışbükeydir; en az bir iç açı 180°den büyükse içbükeydir."
+  },
+  {
+   "after": 3,
+   "prompt": "Yedigenin iç açıları toplamı kaç derecedir?",
+   "answer": "Bir köşeden çizilen köşegenlerle beş üçgene ayrılır; 5·180°=900° olur."
+  },
+  {
+   "after": 5,
+   "prompt": "İç açısı 145° olan düzgün çokgen neden yoktur?",
+   "answer": "Dış açı 35° olur; 360/35 tam sayı olmadığından böyle bir düzgün çokgen kurulamaz."
+  },
+  {
+   "after": 7,
+   "prompt": "Kenarı 4 olan düzgün altıgende uzun köşegen ve alan kaçtır?",
+   "answer": "Uzun köşegen 2a=8, alan 3√3·a²/2=24√3 olur."
+  }
+ ],
+ "tyt-geo-dortgen-hiyerarsi-032": [
+  {
+   "after": 1,
+   "prompt": "Dört iç açısı eşit olan bir dörtgene kare demek için ne gerekir?",
+   "answer": "Açılar 90° olduğu için şekil dikdörtgendir; kare demek için kenarların da eşit olması gerekir."
+  },
+  {
+   "after": 3,
+   "prompt": "Deltoid tanımını karşı kenar eşitliğinden ayıran koşul nedir?",
+   "answer": "Deltoidde eş uzunluklar komşu kenarlardadır: AB=AD ve CB=CD; AB=CD ise karşı kenar eşitliğidir."
+  },
+  {
+   "after": 5,
+   "prompt": "Yamukta eğik yan kenar neden alan formülündeki h yerine yazılamaz?",
+   "answer": "h tabanlar arasındaki dik uzaklıktır; eğik yan kenar bu dik uzaklık değildir."
+  },
+  {
+   "after": 7,
+   "prompt": "Köşegenleri dik kesişen dışbükey dörtgende kenarlar arasında hangi eşitlik vardır?",
+   "answer": "AB²+CD²=BC²+DA² olur; bu, kenarların eşit olduğu anlamına gelmez."
+  },
+  {
+   "after": 9,
+   "prompt": "B ve C iç açıortaylarının oluşturduğu ∠BEC dörtgenin hangi açılarıyla bulunur?",
+   "answer": "∠BEC=180°−(B+C)/2 olur; bu da (A+D)/2'ye eşittir."
+  },
+  {
+   "after": 10,
+   "prompt": "AB∥CD yamukta köşegen parçalarının oranı AO/OC neye eşittir?",
+   "answer": "AOB ile COD benzer olduğundan AO/OC=AB/CD=a/b olur."
+  }
+ ],
+ "tyt-geo-yamuk-deltoid-032": [
+  {
+   "after": 1,
+   "prompt": "AB∥CD yamukta A=72° ise D açısı kaç derecedir?",
+   "answer": "Aynı yan kenardaki iç açılar bütünler olduğundan D=180°−72°=108° olur."
+  },
+  {
+   "after": 3,
+   "prompt": "AB∥CD yamukta E, AD'nin orta noktasıysa BEC üçgeninin alanı yamuğun ne kadarıdır?",
+   "answer": "BEC üçgeninin alanı yamuğun alanının yarısıdır."
+  },
+  {
+   "after": 5,
+   "prompt": "Tabanları 14 ve 5, yüksekliği 12 olan dik yamukta eğik kenar kaçtır?",
+   "answer": "Eğik kenar 12 ve 14−5=9 dik kenarlı üçgenin hipotenüsüdür: √(81+144)=15."
+  },
+  {
+   "after": 7,
+   "prompt": "Yamukta köşegen üçgenlerinden S₁=9 ve S₃=25 ise yan alanlar ve toplam alan kaçtır?",
+   "answer": "Yan alanlar eşittir ve √(9·25)=15 olur; toplam alan 9+25+15+15=64 bulunur."
+  },
+  {
+   "after": 8,
+   "prompt": "AB=AD=13, BC=CD=15 ve BD=24 olan deltoidde AC kaçtır?",
+   "answer": "AK=√(169−144)=5 ve KC=√(225−144)=9 olur; AC=5+9=14 bulunur."
+  }
+ ],
+ "tyt-geo-paralelkenar-ozel-dortgenler-032": [
+  {
+   "after": 1,
+   "prompt": "Bir çift karşı kenarın eşit olması paralelkenar için ne zaman yeterli olur?",
+   "answer": "Aynı karşı kenar çifti ayrıca paralelse paralelkenar sonucu çıkar; yalnız eşitlik yetmez."
+  },
+  {
+   "after": 3,
+   "prompt": "Komşu kenarları a ve b, aralarındaki açı 30° olan paralelkenarda a'ya ait yükseklik nedir?",
+   "answer": "hₐ=b·sin30°=b/2 olur; alan da a·b/2 bulunur."
+  },
+  {
+   "after": 5,
+   "prompt": "Paralelkenarın içindeki bir P için PAB ve PCD alanları toplamı neden S/2'dir?",
+   "answer": "AB ile CD eş ve paraleldir; P'den bu tabanlara yüksekliklerin toplamı paralelkenarın yüksekliğine eşittir."
+  },
+  {
+   "after": 7,
+   "prompt": "Eşkenar dörtgende iç teğet çemberin yarıçapı neden h/2'dir?",
+   "answer": "Karşı paralel kenarlara teğet çemberin çapı bu kenarlar arasındaki uzaklık h'dir; r=h/2=S/(2a) olur."
+  },
+  {
+   "after": 8,
+   "prompt": "Kenarları a=5, b=7 ve bir köşegeni 6 olan paralelkenarda diğer köşegenin karesi kaçtır?",
+   "answer": "d₁²+d₂²=2(a²+b²) bağıntısından d₂²=2(25+49)−36=112 bulunur."
+  }
+ ],
+ "tyt-geo-dik-prizmalar-032": [
+  {
+   "after": 1,
+   "prompt": "Kare tabanlı bir dik prizmanın küp olması için hangi ek koşul gerekir?",
+   "answer": "Prizmanın yüksekliği kare tabanın kenarına eşit olmalıdır."
+  },
+  {
+   "after": 3,
+   "prompt": "Altıgen dik prizmada kaç köşe, ayrıt ve yüz vardır?",
+   "answer": "n=6 için 2n=12 köşe, 3n=18 ayrıt ve n+2=8 yüz vardır."
+  },
+  {
+   "after": 5,
+   "prompt": "Yüz köşegeni verilen küpte hacmi bulurken hangi tuzaktan kaçınmalısın?",
+   "answer": "Köşegeni ayrıt sanıp küpünü almamalısın; önce yüz köşegeni a√2'den a bulunur."
+  },
+  {
+   "after": 6,
+   "prompt": "Ayrıtları 2, 3, 4 olan prizmada karşı köşeler arası en kısa yüzey yolu kaçtır?",
+   "answer": "Aday yolların kareleri 41, 45 ve 53 çıkar; en kısa yüzey yolu √41 olur."
+  }
+ ],
+ "tyt-geo-piramitler-032": [
+  {
+   "after": 1,
+   "prompt": "Piramitte yan yüz yüksekliği ℓ ile yan ayrıt e arasındaki fark nedir?",
+   "answer": "ℓ tepeden bir taban kenarına yüz içinde inen dikmedir; e ise tepeden tabandaki bir köşeye gider."
+  },
+  {
+   "after": 3,
+   "prompt": "Kare taban kenarı 6, dik yüksekliği 4 olan düzgün piramidin yan yüz yüksekliği kaçtır?",
+   "answer": "ℓ²=h²+(a/2)²=16+9 olduğundan ℓ=5 bulunur."
+  },
+  {
+   "after": 5,
+   "prompt": "Düzgün dört yüzlünün toplam yüzey alanı ayrıt a cinsinden nedir?",
+   "answer": "Dört eşkenar yüzün her biri a²√3/4 olduğundan toplam a²√3 olur."
+  },
+  {
+   "after": 6,
+   "prompt": "Paralel kesitte tabandan kesite uzaklık verilmişse ilk adım nedir?",
+   "answer": "Toplam yükseklikten çıkararak tepe-kesit uzaklığını bulursun; benzerlik oranı tepeden ölçülür."
+  }
+ ],
+ "tyt-geo-acilar-kaynak-pekitirme-032": [
+  {
+   "after": 1,
+   "prompt": "m(∠ABC) yazımı neyi gösterir?",
+   "answer": "∠ABC açısının ölçüsünü gösterir; B noktasının uzunluğu anlamına gelmez."
+  },
+  {
+   "after": 3,
+   "prompt": "87° ve 93° açıları 90°ye yakın olsalar da nasıl sınıflanır?",
+   "answer": "87° dar, 93° geniş açıdır; 90° sınırı iki aralığa da dahil değildir."
+  },
+  {
+   "after": 5,
+   "prompt": "Dış ters açılar paralel doğrulara ve kesene göre nerede bulunur?",
+   "answer": "Paralellerin dışında ve kesenin karşı yanlarında bulunur; paralellikte ölçüleri eşittir."
+  },
+  {
+   "after": 7,
+   "prompt": "4x−7=3x+18 ters açı denkleminde istenen açı onun komşusuysa kaç derecedir?",
+   "answer": "x=25 ve açı 4·25−7=93° olur; komşusu 180−93=87° bulunur."
+  }
+ ],
+ "noktanin-analitigi": [
+  {
+   "after": 1,
+   "prompt": "(1,5; 2) yazımında koordinatlar neden noktalı virgülle ayrılır?",
+   "answer": "Ondalık virgülle karışmaması için; burada x=1,5 ve y=2'dir."
+  },
+  {
+   "after": 3,
+   "prompt": "İki eksene eşit uzaklıktaki noktalar hangi doğrular üzerindedir?",
+   "answer": "|x|=|y| koşulu y=x ve y=−x doğrularının ikisini de verir."
+  },
+  {
+   "after": 5,
+   "prompt": "Apsisleri aynı iki nokta arasındaki uzaklık nasıl bulunur?",
+   "answer": "Yatay fark sıfır olduğundan |AB|=|y₂−y₁| olur; mutlak değer negatif uzunluğu önler."
+  },
+  {
+   "after": 7,
+   "prompt": "(t−a)²=b² denkleminde yalnız artı kökü seçmek neden hatadır?",
+   "answer": "t−a=b ve t−a=−b iki aday verir; birini atlamak bir noktayı kaybettirir."
+  },
+  {
+   "after": 9,
+   "prompt": "y=−x doğrusuna göre (x; y) noktasının görüntüsü nedir?",
+   "answer": "Koordinatlar yer değiştirir ve ikisinin de işareti ters çevrilir: (−y; −x)."
+  },
+  {
+   "after": 11,
+   "prompt": "İçten bölmede bulunan P'nin koordinatları için hangi hızlı kontrol yapılır?",
+   "answer": "Her eksende P'nin koordinatı iki ucun değerleri arasında kalmalıdır."
+  },
+  {
+   "after": 13,
+   "prompt": "A(0; 0), B(6; 0), Q(8; 4) için |QA|:|QB|=2 olsa da Q neden bölme noktası değildir?",
+   "answer": "Q, AB doğrusu üzerinde değildir; bölme bağıntısı oranla birlikte doğrusallık da ister."
+  },
+  {
+   "after": 15,
+   "prompt": "Paralelkenarda üç köşeden dördüncüyü bulurken hangi eşitlik kullanılır?",
+   "answer": "Köşegenler birbirini ortaladığından karşılıklı köşeler için A+C=B+D yazılır."
+  }
+ ],
+ "tyt-geo-cember-aci-040": [
+  {
+   "after": 1,
+   "prompt": "Yayın derece ölçüsü ile yay uzunluğu arasındaki fark nedir?",
+   "answer": "Derece ölçüsü merkez açıya eşittir; aynı derecedeki yay büyük çemberde daha uzun bir eğri parçasıdır."
+  },
+  {
+   "after": 3,
+   "prompt": "Hipotenüsü 10 olan dik üçgenin çevrel çember yarıçapı kaçtır?",
+   "answer": "Hipotenüs çevrel çemberin çapıdır; yarıçap 10/2=5 olur."
+  },
+  {
+   "after": 5,
+   "prompt": "Teğet ile AB kirişi arasındaki açı 35° ise AB yayı kaç derecedir?",
+   "answer": "Teğet–kiriş açısı yayın yarısı olduğundan yay 70° olur."
+  },
+  {
+   "after": 7,
+   "prompt": "Yarıçapı 5, kirişi 8 olan çemberde merkezin kirişe uzaklığı kaçtır?",
+   "answer": "Dikme kirişi ortalar; r²=d²+(c/2)² ile d=√(25−16)=3 olur."
+  },
+  {
+   "after": 9,
+   "prompt": "İçeride kesişen kirişlerde parçalar 4 ve 6, diğer kirişin bir parçası 3 ise öbür parça kaçtır?",
+   "answer": "PA·PB=PC·PD olduğundan 4·6=3·x ve x=8 bulunur."
+  }
+ ],
+ "tyt-geo-daire-040": [
+  {
+   "after": 1,
+   "prompt": "Yarıçapı 5 olan çemberin çevresi π cinsinden kaçtır?",
+   "answer": "Ç=2πr=10π olur; soruda yaklaşık değer verilmedikçe sonuç π'li bırakılır."
+  },
+  {
+   "after": 3,
+   "prompt": "Çapı 10 olan dairenin alanı neden 100π değildir?",
+   "answer": "Önce yarıçap 5 bulunur; alan πr²=25π olur."
+  },
+  {
+   "after": 5,
+   "prompt": "Yarıçapı 6, merkez açısı 60° olan daire diliminin çevresi nedir?",
+   "answer": "İki yarıçap ve yaydan oluşur: 6+6+2π=12+2π."
+  },
+  {
+   "after": 7,
+   "prompt": "Yarıçapı 6, merkez açısı 90° olan daire parçasının alanı kaçtır?",
+   "answer": "Dilim 9π, üçgen 6·6/2=18 olduğundan parça alanı 9π−18 olur."
+  }
+ ],
+ "tyt-geo-silindir-koni-kure-040": [
+  {
+   "after": 1,
+   "prompt": "Bir kutunun etiketi ile sacı hangi alanlara karşılık gelir?",
+   "answer": "Etiket yalnız yanal alan 2πrh'dir; kapalı kutunun sacı iki tabanı da içeren toplam alandır."
+  },
+  {
+   "after": 3,
+   "prompt": "r=3, ℓ=5 olan koninin açınımındaki dilim açısı kaç derecedir?",
+   "answer": "α=360°·r/ℓ=360°·3/5=216° olur."
+  },
+  {
+   "after": 5,
+   "prompt": "Silindir, küre ve koni hacimleri arasındaki 3:2:1 oranı hangi koşulda geçerlidir?",
+   "answer": "Silindirin yüksekliği 2r iken ve koni aynı taban ve yükseklikteyken geçerlidir."
+  },
+  {
+   "after": 7,
+   "prompt": "Yarıçapı 3 olan küre yarıçapı 6 olan silindir kaba batırılınca su kaç birim yükselir?",
+   "answer": "36π=π·36·Δh olduğundan Δh=1 birim olur; kap taşmamalı ve küre tamamen batmalıdır."
+  }
+ ],
+ "tyt-geo-trigonometrik-oranlar-040": [
+  {
+   "after": 1,
+   "prompt": "Dar açılarda sin ve cos değerleri neden 0 ile 1 arasındadır?",
+   "answer": "Hipotenüs en uzun kenar olduğundan bir dik kenarın hipotenüse oranı 1'den küçüktür."
+  },
+  {
+   "after": 3,
+   "prompt": "6–8–10 üçgeninde sin x neden 3–4–5 üçgenindekiyle aynıdır?",
+   "answer": "Aynı açılı dik üçgenler benzerdir; 6/10=3/5 olduğundan oran değişmez."
+  },
+  {
+   "after": 5,
+   "prompt": "sin²x yazımı neyi gösterir?",
+   "answer": "(sin x)² demektir; sin(x²) ile karıştırılmamalıdır."
+  },
+  {
+   "after": 7,
+   "prompt": "tan x=5/12 ise sin x ve cos x kaçtır?",
+   "answer": "Kenarlar 5k ve 12k, hipotenüs 13k olur; sin x=5/13 ve cos x=12/13 bulunur."
+  }
+ ]
+}

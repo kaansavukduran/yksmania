@@ -930,5 +930,293 @@
    "prompt": "−5<2 eşitsizliğinde iki tarafın karesini almak hangi sorunu gösterir?",
    "answer": "25<4 yanlış çıkar; kare alma bütün gerçeklerde sıralamayı korumaz, a²<b² yalnız 0≤a<b için kullanılır."
   }
+ ],
+ "tyt-mat-dogrusal-denklemler-kaynak-036": [
+  {
+   "after": 1,
+   "prompt": "{0} ile ∅ kümesini aynı sanmak hangi yanlışa yol açar?",
+   "answer": "{0} yalnız 0 sayısını içerir, ∅ hiç sayı içermez; ikisini karıştırırsan çözümü olan bir denklemi çözümsüz sanırsın."
+  },
+  {
+   "after": 3,
+   "prompt": "ax+b=0 denkleminde a≠0 ise tek kök hangi ifadeye eşittir?",
+   "answer": "x=−b/a olur; x'in sıfırdan farklı katsayısına bölerek bulunur."
+  },
+  {
+   "after": 5,
+   "prompt": "Çözerken değişkenli bir ifadeye bölmeden önce neyi ayrıca incelemelisin?",
+   "answer": "O ifadenin sıfır olabileceği durumu incelemelisin; sıfıra bölme tanımsızdır."
+  },
+  {
+   "after": 7,
+   "prompt": "4x−12=2x+10 denkleminin kökü kaçtır?",
+   "answer": "İki taraftan 2x çıkarıp 12 ekleyince 2x=22 olur; ikiye bölünce x=11 bulunur."
+  },
+  {
+   "after": 9,
+   "prompt": "Çözümün beş duraklı düzeni hangi sırayla ilerler?",
+   "answer": "Önce tanı, sonra parantezleri aç, benzer terimleri toplayıp Ax=B'ye ulaş, bölmeden önce türü ayır ve son olarak ilk denklemde kontrol et."
+  },
+  {
+   "after": 11,
+   "prompt": "(x+2)/4−(x−1)/3=1 denklemi 12 ile çarpılıp açılınca kök kaç olur?",
+   "answer": "3(x+2)−4(x−1)=12 açılınca −x+10=12 olur ve x=−2 bulunur."
+  },
+  {
+   "after": 14,
+   "prompt": "2(x−1)=2x+5 sadeleşince ne kalır ve çözüm kümesi nedir?",
+   "answer": "−2=5 çelişkisi kalır; hiçbir x bunu değiştiremeyeceği için ÇK=∅ olur."
+  },
+  {
+   "after": 16,
+   "prompt": "“Bir sayının yarısının 4 eksiği” ile “4 eksiğinin yarısı” nasıl farklı yazılır?",
+   "answer": "İlki x/2−4, ikincisi (x−4)/2 olur; sözcük sırası işlemi içten dışa belirler."
+  },
+  {
+   "after": 20,
+   "prompt": "2 yetişkin ve 3 öğrenci 390 TL ödüyor, yetişkin bileti 45 TL pahalıysa öğrenci bileti kaç TL'dir?",
+   "answer": "2(s+45)+3s=390 kurulur; 5s+90=390'dan s=60 TL bulunur."
+  },
+  {
+   "after": 22,
+   "prompt": "Her katman ikiye katlanıyorsa 12. adıma kadarki toplamdan 10. adıma kadarki toplam çıkınca ne kalır?",
+   "answer": "Yalnız 11. ve 12. katmanlar kalır: 2¹⁰+2¹¹=3×2¹⁰=3072."
+  },
+  {
+   "after": 24,
+   "prompt": "6(x−2)=3x+12'de iki tarafı 3'e bölersen kök kaç bulunur?",
+   "answer": "2(x−2)=x+4 olur; 2x−4=x+4'ten x=8 bulunur."
+  }
+ ],
+ "tyt-mat-basit-esitsizlikler-kaynak-037": [
+  {
+   "after": 1,
+   "prompt": "“Sıkı” eşitsizlik denince sınır değeri için ne anlaşılır?",
+   "answer": "< ve > sıkıdır; eşit sınır çözümün dışında kalır ve sayı doğrusunda açık noktayla gösterilir."
+  },
+  {
+   "after": 3,
+   "prompt": "(−2,5] aralığında hangi uç çözüme dahildir?",
+   "answer": "Yalnız 5 dahildir; −2 yuvarlak parantezle dışarıda kalır, yani −2<x≤5."
+  },
+  {
+   "after": 5,
+   "prompt": "2x≤10 çözülürken x=5 sınırının hâlâ dahil olduğunu nasıl görürsün?",
+   "answer": "Pozitif 2'ye bölmek yönü ve eşitlik kabulünü korur; x=5 başlangıçta 10≤10 verir."
+  },
+  {
+   "after": 7,
+   "prompt": "−3x>12 eşitsizliğinde x=−4 neden çözüme girmez?",
+   "answer": "x=−4 için 12>12 elde edilir ve bu sıkı koşul yanlıştır; sınır açık kalır."
+  },
+  {
+   "after": 9,
+   "prompt": "Değişkenli bir bölenin işareti bilinmiyorsa hangi iki yoldan birini seçersin?",
+   "answer": "Durumlara ayırırsın ya da o ifadeye bölmeden başka geçerli bir dönüşüm kullanırsın."
+  },
+  {
+   "after": 10,
+   "prompt": "3(2x−5)≤4x+7 eşitsizliğinin çözümü nedir?",
+   "answer": "6x−15≤4x+7 açılır, 2x≤22 olur ve pozitif 2'ye bölünce x≤11 bulunur."
+  },
+  {
+   "after": 13,
+   "prompt": "−4≤(x+2)/2<5 eşitsizliğinin çözüm aralığı nedir?",
+   "answer": "Üç taraf 2 ile çarpılınca −8≤x+2<10, 2 çıkarınca −10≤x<8 olur; aralık [−10,8)."
+  },
+  {
+   "after": 15,
+   "prompt": "−5<−2x+1≤9 eşitsizliğinin ortak çözümü nedir?",
+   "answer": "Soldan x<3, sağdan x≥−4 gelir; ortak çözüm [−4,3) olur."
+  },
+  {
+   "after": 17,
+   "prompt": "x≥2 ve x≤2 birlikte istenirse çözüm kümesi ne olur?",
+   "answer": "Yalnız 2 kalır, çözüm {2} olur; uçlardan biri sıkı olsaydı kesişim ∅ çıkardı."
+  },
+  {
+   "after": 19,
+   "prompt": "Cebirsel sonuç n≤8,2 ve n ders sayısıysa en büyük uygun değer kaçtır?",
+   "answer": "8'dir; ders sayısı negatif olmayan tam sayı olduğundan 8,2 ders sayılamaz."
+  },
+  {
+   "after": 21,
+   "prompt": "Sabit ücret 240 TL, ders başı 80 TL ve bütçe “880 TL'den az” ise en fazla kaç ders alınır?",
+   "answer": "880 kabul edilmez; 240+80n<880'den n<8 çıkar ve en fazla 7 ders alınır."
+  },
+  {
+   "after": 24,
+   "prompt": "Maliyet 40+u, ilk satış 2u+30 iken “zarar etmez” koşulu u için ne verir?",
+   "answer": "2u+30≥40+u'dan u≥10 çıkar; u=10 başa baş olduğu için bu kez sınır dahildir."
+  },
+  {
+   "after": 26,
+   "prompt": "Maliyet 80+b ve gelir 2b+20 iken kâr koşulu b için ne verir?",
+   "answer": "2b+20>80+b'den b>60 bulunur; b=60'ta iki tutar da 140 olup başa baştır."
+  },
+  {
+   "after": 28,
+   "prompt": "−4x+3>15 eşitsizliğini önce −1 ile çarparak çözersen hangi sonuca ulaşırsın?",
+   "answer": "4x−3<−15 olur, 3 ekleyince 4x<−12 ve x<−3 bulunur."
+  }
+ ],
+ "tyt-mat-mutlak-deger-kaynak-038": [
+  {
+   "after": 1,
+   "prompt": "|3−5| ile |3|−|5| neden farklı sonuç verir?",
+   "answer": "İlkinde önce içteki işlem yapılır ve |−2|=2 çıkar; ikincisinde uzaklıklar ayrı alınıp 3−5=−2 bulunur."
+  },
+  {
+   "after": 3,
+   "prompt": "|2x−4|=0 denkleminin çözümü nedir?",
+   "answer": "Mutlak değer yalnız içi sıfırken sıfır olur; 2x−4=0'dan x=2 bulunur."
+  },
+  {
+   "after": 5,
+   "prompt": "|−a²−2| ifadesi neden a²+2'ye eşittir?",
+   "answer": "İçerisi her gerçek a için negatiftir; tamamı −1 ile çarpılınca −(−a²−2)=a²+2 olur."
+  },
+  {
+   "after": 7,
+   "prompt": "|2x+1|=7 denkleminin kökleri nelerdir?",
+   "answer": "2x+1=7'den x=3, 2x+1=−7'den x=−4 bulunur."
+  },
+  {
+   "after": 9,
+   "prompt": "|3x−2|<7 eşitsizliğinin çözüm aralığı nedir?",
+   "answer": "−7<3x−2<7'den −5<3x<9 ve −5/3<x<3 çıkar; aralık (−5/3,3) olur."
+  },
+  {
+   "after": 11,
+   "prompt": "|2x−1|≥5 eşitsizliğinin çözümü nedir?",
+   "answer": "2x−1≤−5 veya 2x−1≥5 yazılır; x≤−2 veya x≥3 olur ve iki uç da kapalıdır."
+  },
+  {
+   "after": 13,
+   "prompt": "|x−2|>−1 eşitsizliğini hangi x değerleri sağlar?",
+   "answer": "Bütün gerçek x'ler sağlar; uzaklık en az 0 olduğu için her zaman −1'den büyüktür."
+  },
+  {
+   "after": 16,
+   "prompt": "y=|x−2|−1 grafiğinin kökleri nelerdir?",
+   "answer": "|x−2|=1'den x=1 ve x=3 bulunur; tepe ise (2,−1) noktasıdır."
+  },
+  {
+   "after": 17,
+   "prompt": "y=−|x−a|+b grafiğinde tepe neden en büyük değeri verir?",
+   "answer": "Dış çarpan negatif olduğu için grafik aşağı açılır; tepe (a, b) en yüksek noktadır."
+  },
+  {
+   "after": 20,
+   "prompt": "|x−1|+|x−4|=5 denkleminin çözüm kümesi nedir?",
+   "answer": "Dış aralıklardan x=0 ve x=5 gelir; 1 ile 4 arasında toplam 3 kaldığından çözüm {0, 5} olur."
+  },
+  {
+   "after": 22,
+   "prompt": "||x|−3|=3 denkleminde 0 kökü neden bir kez sayılır?",
+   "answer": "İç hedef 0 iken |x|=0 yalnız x=0 verir; çözüm −6, 0, 6 olur ve sıfır iki farklı kök değildir."
+  },
+  {
+   "after": 25,
+   "prompt": "Herhangi bir A>B eşitsizliğinin karesi neden koşulsuz alınamaz?",
+   "answer": "Negatif sayılarda sıralama bozulabilir; kare almak ancak iki taraf da negatif değilken eşdeğerdir."
+  },
+  {
+   "after": 27,
+   "prompt": "Hedef 100'den sapması 2'den az olan ölçümler hangi aralıktadır?",
+   "answer": "|x−100|<2 yazılır; çözüm uçları hariç (98,102) aralığıdır."
+  },
+  {
+   "after": 30,
+   "prompt": "|a+b|'yi ayrı ayrı toplamanın her zaman doğru olmadığını hangi karşı örnek gösterir?",
+   "answer": "|2+(−5)|=3 iken |2|+|−5|=7 olur; ters yönlü sayılarda eşitlik bozulur."
+  },
+  {
+   "after": 32,
+   "prompt": "x>0 iken bulunan 4x−1 sonucu neden negatif de olabilir?",
+   "answer": "Mutlak değerler tek tek negatif olmasa da ifadede çıkarma vardır; örneğin x=1/8 için sonuç −1/2 olur."
+  }
+ ],
+ "tyt-mat-uslu-sayilar-kaynak-039": [
+  {
+   "after": 1,
+   "prompt": "(2/3)^2 ile 2/3^2 neden farklı sonuç verir?",
+   "answer": "İlkinde kesrin tamamının karesi alınır ve 4/9 çıkar; ikincisinde yalnız 3'ün karesi alınır ve sonuç 2/9 olur."
+  },
+  {
+   "after": 3,
+   "prompt": "(−1)^−3 kaça eşittir ve neden?",
+   "answer": "−1'e eşittir; negatif tam sayı üste karşılık alma işareti değiştirmez ve tek üs eksiyi korur."
+  },
+  {
+   "after": 5,
+   "prompt": "(3/4)^−2 ifadesinin değeri kaçtır?",
+   "answer": "Tabanın tamamı ters çevrilir: (4/3)²=16/9 olur."
+  },
+  {
+   "after": 7,
+   "prompt": "3^−2/3^4 bölümü hangi kuvvete eşittir?",
+   "answer": "Payın üssünden paydanınki çıkarılır: −2−4=−6, sonuç 3^−6 olur."
+  },
+  {
+   "after": 9,
+   "prompt": "(2·5)³ hesaplanırken üs nasıl uygulanır ve sonuç kaçtır?",
+   "answer": "Üs her çarpana ayrı uygulanır: 2³·5³=8·125=1000 olur."
+  },
+  {
+   "after": 11,
+   "prompt": "(4³·8²)/2⁵ ifadesinin değeri kaçtır?",
+   "answer": "4³=2⁶ ve 8²=2⁶ yazılır; 2^(6+6−5)=2⁷=128 bulunur."
+  },
+  {
+   "after": 14,
+   "prompt": "2^x=5 ise 8^x kaçtır?",
+   "answer": "8^x=(2³)^x=(2^x)³ olduğundan 5³=125 bulunur; x'i ayrıca bulmak gerekmez."
+  },
+  {
+   "after": 16,
+   "prompt": "3^(2x+1)=3^(2x+4) denkleminin neden gerçek çözümü yoktur?",
+   "answer": "Üsler eşitlenince 2x+1=2x+4, yani 1=4 çelişkisi çıkar."
+  },
+  {
+   "after": 18,
+   "prompt": "3⁵ ile 5³ karşılaştırılırken neden yalnız 3<5 bilgisi yetmez?",
+   "answer": "Ortak taban ya da ortak üs yoktur; değerler hesaplanır ve 243>125 olduğundan 3⁵ büyüktür."
+  },
+  {
+   "after": 20,
+   "prompt": "(−16)^(1/2) neden gerçek sayılarda tanımlı değildir?",
+   "answer": "Sade üssün paydası 2 çifttir; negatif tabanın çift dereceli gerçek kökü yoktur."
+  },
+  {
+   "after": 22,
+   "prompt": "Ondalık virgül bir basamak sağa kayınca dıştaki 10 kuvveti nasıl değişmelidir?",
+   "answer": "Katsayı 10 kat büyüdüğü için değeri korumak üzere dış üs 1 azalmalıdır."
+  },
+  {
+   "after": 24,
+   "prompt": "810×10⁶ değeri doğru olsa da neden bilimsel gösterim sayılmaz?",
+   "answer": "Katsayı 1≤|a|<10 aralığında değildir; standart biçim 8,1×10⁸ olur."
+  },
+  {
+   "after": 26,
+   "prompt": "2×10⁴−7×10³ farkının bilimsel gösterimi nedir?",
+   "answer": "Ortak 10³ ile (20−7)×10³=13×10³ olur; standart biçim 1,3×10⁴'tür."
+  },
+  {
+   "after": 28,
+   "prompt": "−2×10⁵ ile −9×10⁴ sayılarından hangisi daha küçüktür?",
+   "answer": "−2×10⁵=−200000 daha küçüktür; negatif sayılarda mutlak değeri büyük olan küçüktür."
+  },
+  {
+   "after": 30,
+   "prompt": "Her adımda sabit bir sayı ekleniyorsa model neden üstel değildir?",
+   "answer": "Üstel modelde her adım sabit bir çarpanla çarpılır; sabit sayı eklemek doğrusal modeldir."
+  },
+  {
+   "after": 32,
+   "prompt": "5^x=2 iken 25^(2x+1) kaçtır?",
+   "answer": "25^(2x+1)=5^(4x+2)=(5^x)⁴·25 olur; 16·25=400 bulunur."
+  }
  ]
 }

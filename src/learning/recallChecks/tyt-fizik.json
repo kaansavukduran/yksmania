@@ -570,5 +570,76 @@
    "prompt": "Yenilenebilir bir kaynağı hangi iki yanlış anlamla eşitlememelisin?",
    "answer": "Yenilenebilir olmak sürekli aynı güçte üretmek ya da hiç çevresel etkisi olmamak demek değildir."
   }
+ ],
+ "newton": [
+  {
+   "after": 1,
+   "prompt": "Sağa giden ve yavaşlayan bir cismin ivmesi hangi yönde olabilir?",
+   "answer": "Sola olabilir; net kuvvetin yönü hızın değil ivmenin yönünden anlaşılır."
+  },
+  {
+   "after": 3,
+   "prompt": "3 kg cisme sağa 15 N, sola 6 N kuvvet etkirse ivme nedir?",
+   "answer": "ΣF=15−6=9 N olur; a=9/3=3 m/s² sağa doğrudur."
+  },
+  {
+   "after": 5,
+   "prompt": "Asansörde ivme aşağı yönlüyse normal kuvvet mg'ye göre nasıl olur?",
+   "answer": "N−mg=ma'da a negatif olduğundan normal mg'den küçük çıkar; kişi yukarı gidiyor olsa da böyledir."
+  },
+  {
+   "after": 6,
+   "prompt": "Statik sürtünme tam üst sınırdayken neden “kesin kayar” denmez?",
+   "answer": "İdeal modelde fs=μsN sınırında statik denge hâlâ mümkündür."
+  }
+ ],
+ "isi-ve-sicaklik": [
+  {
+   "after": 1,
+   "prompt": "Isıl dengeyi tanımlayan koşul nedir?",
+   "answer": "Örneklerin sıcaklıklarının eşit olmasıdır; iç enerjilerinin ya da kütlelerinin eşit olması gerekmez."
+  },
+  {
+   "after": 3,
+   "prompt": "15 °C'den 25 °C'ye artış Fahrenheit ölçeğinde kaç derecelik değişimdir?",
+   "answer": "ΔTF=(9/5)ΔTC olduğundan 10 °C'lik artış 18 °F'lik değişimdir."
+  },
+  {
+   "after": 5,
+   "prompt": "150 g kütle ve 900 J/(kg·°C) öz ısı birlikte verilince kütle nasıl yazılır?",
+   "answer": "c'nin paydasındaki birime uyması için m=0,150 kg kullanılır; böylece sonuç J çıkar."
+  },
+  {
+   "after": 7,
+   "prompt": "Karışımda denge sıcaklığı hangi örneğin ilk sıcaklığına daha yakındır?",
+   "answer": "Isı sığası C daha büyük olan örneğin ilk sıcaklığına daha yakındır."
+  },
+  {
+   "after": 8,
+   "prompt": "Erime sırasında buz-su karışımına Q=mcΔT uygulamak neden yanlış sonuç verir?",
+   "answer": "Sıcaklık sabit kaldığından ΔT=0 ve Q=0 bulunur; hâl değişiminde Q=m·L kullanılır."
+  }
+ ],
+ "kuresel-aynalar": [
+  {
+   "after": 1,
+   "prompt": "Çukur ayna ile odak arasındaki gerçek cisim nasıl bir görüntü verir?",
+   "answer": "Sanal, düz ve büyük görüntü verir; yakın makyaj aynası buna örnektir."
+  },
+  {
+   "after": 3,
+   "prompt": "Gerçek ve sanal görüntüyü ayıran ölçüt nedir?",
+   "answer": "Yansıyan ışınların kendileri buluşuyorsa gerçek, yalnız geri uzantıları buluşuyorsa sanal görüntü oluşur."
+  },
+  {
+   "after": 5,
+   "prompt": "Çukur aynada cisim f ile 2f arasındayken görüntü nerede ve nasıldır?",
+   "answer": "Görüntü 2f'nin ötesinde oluşur; gerçek, ters ve büyüktür."
+  },
+  {
+   "after": 6,
+   "prompt": "Tümsek aynada cisim aynaya yaklaşınca büyütme nasıl değişir?",
+   "answer": "Görüntü tepeye yaklaşır ve büyütme 1'e doğru artar, ama 1'den küçük kalır."
+  }
  ]
 }

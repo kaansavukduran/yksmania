@@ -1,0 +1,170 @@
+[
+ {
+  "from": "Bu formülde 90°ye eklenen yarım açı, açıortayları çizilmeyen A köşesinin açısıdır. İç ve dış açıortayları karıştırırsan farklı bir bölgeyi hesaplarsın. Önce küçük üçgeni kurup toplam180°den çıkarmak, formülü yanlış köşeye uygulamaktan daha güvenilir bir başlangıçtır.",
+  "to": "Bu formülde 90°ye eklenen yarım açı, açıortayları çizilmeyen A köşesinin açısıdır. İç ve dış açıortayları karıştırırsan farklı bir bölgeyi hesaplarsın. Önce küçük üçgeni kurup toplam 180°den çıkarmak, formülü yanlış köşeye uygulamaktan daha güvenilir bir başlangıçtır."
+ },
+ {
+  "from": "D noktası BC kenarının içindeyse ABD ve ACD ayrı üçgenlerdir. BD ile DC zıt yönlü olduğundan D’de bu iki üçgene ait komşu açılar toplam180°dir. Birinden bulduğun D açısını ötekine doğrudan eşit taşımak yerine bütünlerini kullanmalısın.",
+  "to": "D noktası BC kenarının içindeyse ABD ve ACD ayrı üçgenlerdir. BD ile DC zıt yönlü olduğundan D’de bu iki üçgene ait komşu açılar toplam 180°dir. Birinden bulduğun D açısını ötekine doğrudan eşit taşımak yerine bütünlerini kullanmalısın."
+ },
+ {
+  "from": "Şekilde görünmeyen eşitlikler ekleme. D’nin BC üzerinde olduğu, bir noktanın içeride olduğu veya bir ışının açıortay olduğu yazılıysa kullan; sadece çizimden öyle görünmesi yeterli değildir. Her adımın yanına toplam180°, doğrusal çift, eş kenar karşısı veya açıortay gibi kısa gerekçesini koy.",
+  "to": "Şekilde görünmeyen eşitlikler ekleme. D’nin BC üzerinde olduğu, bir noktanın içeride olduğu veya bir ışının açıortay olduğu yazılıysa kullan; sadece çizimden öyle görünmesi yeterli değildir. Her adımın yanına toplam 180°, doğrusal çift, eş kenar karşısı veya açıortay gibi kısa gerekçesini koy."
+ },
+ {
+  "from": "Bir çizginin şekle bakınca ortadan geçmesi veya dik görünmesi yeterli veri değildir. Orta nokta için eş parça işaretlerini, açıortay için eş açı işaretlerini ve yükseklik için90° işaretini ara. Genel üçgende bu görevler farklı doğrulardır; ikizkenar veya eşkenar gibi özel hâllerde birleşebilirler.",
+  "to": "Bir çizginin şekle bakınca ortadan geçmesi veya dik görünmesi yeterli veri değildir. Orta nokta için eş parça işaretlerini, açıortay için eş açı işaretlerini ve yükseklik için 90° işaretini ara. Genel üçgende bu görevler farklı doğrulardır; ikizkenar veya eşkenar gibi özel hâllerde birleşebilirler."
+ },
+ {
+  "from": "İç açıortay teoremi BD/DC=AB/AC verir. Eş bölünen açı iken karşı kenar genellikle eş bölünmez. AB=6, AC=9 ve BC=10 için karşı kenar2:3 oranında4 ve6 olarak bölünür. Parçaları bulurken oran paylarını topla ve bütün kenarı bu toplama böl.",
+  "to": "İç açıortay teoremi BD/DC=AB/AC verir. Eş bölünen açı iken karşı kenar genellikle eş bölünmez. AB=6, AC=9 ve BC=10 için karşı kenar 2:3 oranında 4 ve 6 olarak bölünür. Parçaları bulurken oran paylarını topla ve bütün kenarı bu toplama böl."
+ },
+ {
+  "from": "ABD ve ACD aynı yüksekliği paylaştığından alanları BD/DC oranındadır; dolayısıyla iç açıortayın ayırdığı alanların oranı AB/AC olur. Üçgenin kenarları5,5 ve6 ise tepe açıortayı tabanı3 ve3 böler; uzunluğu√(25−9)=4’tür. Bu özel örnekte açıortay yükseklik ve kenarortayla aynı parçadır.",
+  "to": "ABD ve ACD aynı yüksekliği paylaştığından alanları BD/DC oranındadır; dolayısıyla iç açıortayın ayırdığı alanların oranı AB/AC olur. Üçgenin kenarları 5, 5 ve 6 ise tepe açıortayı tabanı 3 ve 3 böler; uzunluğu √(25−9)=4’tür. Bu özel örnekte açıortay yükseklik ve kenarortayla aynı parçadır."
+ },
+ {
+  "from": "A köşesindeki bir dış açının açıortayı BC doğrusunu E’de kesiyorsa E,BC doğru parçasının dışındadır ve |BE|/|CE|=AB/AC olur. İç açıortayda parçalar toplanarak BC’yi verir; dış açıortayda ilgili büyük ve küçük uzaklığın farkı BC’dir.",
+  "to": "A köşesindeki bir dış açının açıortayı BC doğrusunu E’de kesiyorsa E, BC doğru parçasının dışındadır ve |BE|/|CE|=AB/AC olur. İç açıortayda parçalar toplanarak BC’yi verir; dış açıortayda ilgili büyük ve küçük uzaklığın farkı BC’dir."
+ },
+ {
+  "from": "AB=AC ise A’daki dış açıortay BC’ye paraleldir; sonlu bir kesişim noktası varmış gibi oran denklemi kurma. AB<AC olduğunda |BE|<|CE| olacağı için E,B tarafındaki uzantıda bulunur. Önce B,C,E sırasını yerleştirmek toplam–fark hatasını önler.",
+  "to": "AB=AC ise A’daki dış açıortay BC’ye paraleldir; sonlu bir kesişim noktası varmış gibi oran denklemi kurma. AB<AC olduğunda |BE|<|CE| olacağı için E, B tarafındaki uzantıda bulunur. Önce B, C, E sırasını yerleştirmek toplam–fark hatasını önler."
+ },
+ {
+  "from": "Üç iç açıortay üçgenin içinde tek bir I noktasında kesişir. I’nın üç kenarın doğrularına dik uzaklıkları eşittir; bu ortak r uzaklığı iç teğet çemberin yarıçapıdır. Köşelere olan IA,IB,IC uzaklıklarının eşit olması gerekmez.",
+  "to": "Üç iç açıortay üçgenin içinde tek bir I noktasında kesişir. I’nın üç kenarın doğrularına dik uzaklıkları eşittir; bu ortak r uzaklığı iç teğet çemberin yarıçapıdır. Köşelere olan IA, IB, IC uzaklıklarının eşit olması gerekmez."
+ },
+ {
+  "from": "G her kenarortayı köşeden başlayarak2:1 oranında böler: AG=2AM/3 ve GM=AM/3. Uzun parça köşeye yakındır. Üç kenarortay birlikte altı eş alanlı küçük üçgen oluşturur. Bu eşlik alan içindir; altı küçük üçgenin kenarları genel durumda eş değildir.",
+  "to": "G her kenarortayı köşeden başlayarak 2:1 oranında böler: AG=2AM/3 ve GM=AM/3. Uzun parça köşeye yakındır. Üç kenarortay birlikte altı eş alanlı küçük üçgen oluşturur. Bu eşlik alan içindir; altı küçük üçgenin kenarları genel durumda eş değildir."
+ },
+ {
+  "from": "BC=a, CA=b ve AB=c ise A’dan çizilen kenarortayın uzunluğu mₐ için4mₐ²=2b²+2c²−a²’dir. Bu ifade orta noktanın iki yanındaki küçük üçgenlerde kurulan uzunluk ilişkilerinin toplamından gelir. Dik olmayan üçgende mₐ’yı yükseklik sanarak Pisagor kullanmak doğru değildir.",
+  "to": "BC=a, CA=b ve AB=c ise A’dan çizilen kenarortayın uzunluğu mₐ için 4mₐ²=2b²+2c²−a²’dir. Bu ifade orta noktanın iki yanındaki küçük üçgenlerde kurulan uzunluk ilişkilerinin toplamından gelir. Dik olmayan üçgende mₐ’yı yükseklik sanarak Pisagor kullanmak doğru değildir."
+ },
+ {
+  "from": "Yüksekliğin boyunu bulmak için hangi tabana ait olduğunu belirt. Aynı üçgende alan a·hₐ/2=b·hᵦ/2=c·h𝚌/2 olduğundan büyük kenara ait yükseklik daha kısa olur. Yüksekliğin dik olduğu doğruyla köşenin karşısındaki kenarın yönü aynı olmalıdır; herhangi bir90° işareti yeterli değildir.",
+  "to": "Yüksekliğin boyunu bulmak için hangi tabana ait olduğunu belirt. Aynı üçgende alan a·hₐ/2=b·hᵦ/2=c·h𝚌/2 olduğundan büyük kenara ait yükseklik daha kısa olur. Yüksekliğin dik olduğu doğruyla köşenin karşısındaki kenarın yönü aynı olmalıdır; herhangi bir 90° işareti yeterli değildir."
+ },
+ {
+  "from": "Eşkenar üçgende bütün yükseklik, kenarortay ve açıortay doğruları aynı üç simetri doğrusu olduğundan I,G,H,O tek noktada birleşir. Kenarı a olan eşkenarda yükseklik a√3/2’dir; ağırlık merkezi oranından R=2h/3 ve r=h/3 çıkar. Bu birleşmeyi her üçgene genelleme.",
+  "to": "Eşkenar üçgende bütün yükseklik, kenarortay ve açıortay doğruları aynı üç simetri doğrusu olduğundan I, G, H, O tek noktada birleşir. Kenarı a olan eşkenarda yükseklik a√3/2’dir; ağırlık merkezi oranından R=2h/3 ve r=h/3 çıkar. Bu birleşmeyi her üçgene genelleme."
+ },
+ {
+  "from": "“İki eş açı” verisinden iç açıortaya; “karşı kenar eş iki parça” verisinden kenarortaya; “köşeden90°” verisinden yüksekliğe; “orta noktadan90°” verisinden orta dikmeye yönel. Bir merkez sorusunda önce hangi doğruların kesiştiğini adlandır.",
+  "to": "“İki eş açı” verisinden iç açıortaya; “karşı kenar eş iki parça” verisinden kenarortaya; “köşeden 90°” verisinden yüksekliğe; “orta noktadan 90°” verisinden orta dikmeye yönel. Bir merkez sorusunda önce hangi doğruların kesiştiğini adlandır."
+ },
+ {
+  "from": "Sonra oranı veya eş uzaklığı uygula ve modelde kontrol et: G için2:1, I için kenarlara eş dik uzaklık, O için köşelere eş uzaklık, H için yüksekliklerin dikliği. Etkileşimli şekli değiştirirken genel üçgendeki bu görev farklarını izle; görseldeki tek bir özel duruma dayanarak kural çıkarma.",
+  "to": "Sonra oranı veya eş uzaklığı uygula ve modelde kontrol et: G için 2:1, I için kenarlara eş dik uzaklık, O için köşelere eş uzaklık, H için yüksekliklerin dikliği. Etkileşimli şekli değiştirirken genel üçgendeki bu görev farklarını izle; görseldeki tek bir özel duruma dayanarak kural çıkarma."
+ },
+ {
+  "from": "Altı eşkenar üçgenin alanından S=6·a²√3/4=3√3·a²/2 bulunur. Çevre 6 a’dır. Bir köşe atlayan kısa köşegen a√3, karşı köşelere giden uzun köşegen 2 a’dır. Örneğin a=4 ise kısa köşegen 4√3, uzun köşegen 8 ve alan 24√3 olur.",
+  "to": "Altı eşkenar üçgenin alanından S=6·a²√3/4=3√3·a²/2 bulunur. Çevre 6a’dır. Bir köşe atlayan kısa köşegen a√3, karşı köşelere giden uzun köşegen 2a’dır. Örneğin a=4 ise kısa köşegen 4√3, uzun köşegen 8 ve alan 24√3 olur."
+ },
+ {
+  "from": "Buradan a=2 R·sin(180°/n), ρ=R·cos(180°/n), S=nR²·sin(360°/n)/2 ve S=n·a²/[4 tan(180°/n)] elde edilir. Bu tamamlayıcı bağıntılarda açı birimi derecedir. Önce şekli tanıdığın üçgenlere ayırmak, özellikle kare ve altıgende daha az işlem gerektirir; trigonometrik bağıntılar bu ayrımın genel yazımıdır.",
+  "to": "Buradan a=2R·sin(180°/n), ρ=R·cos(180°/n), S=nR²·sin(360°/n)/2 ve S=n·a²/[4 tan(180°/n)] elde edilir. Bu tamamlayıcı bağıntılarda açı birimi derecedir. Önce şekli tanıdığın üçgenlere ayırmak, özellikle kare ve altıgende daha az işlem gerektirir; trigonometrik bağıntılar bu ayrımın genel yazımıdır."
+ },
+ {
+  "from": "Dörtgeni adlandırırken köşeleri çevre boyunca sırayla yaz: ABCD dörtgeninde kenarlar AB, BC, CD, DA; köşegenler AC veBD’dir. Birbirini kesen papyon çizimini bu dersteki basit dörtgenler sınıfına katmayız. Herhangi üç köşenin aynı doğru üzerinde olmadığı, kenarların yalnız komşu uçlarda birleştiği durumları inceleriz.",
+  "to": "Dörtgeni adlandırırken köşeleri çevre boyunca sırayla yaz: ABCD dörtgeninde kenarlar AB, BC, CD, DA; köşegenler AC ve BD’dir. Birbirini kesen papyon çizimini bu dersteki basit dörtgenler sınıfına katmayız. Herhangi üç köşenin aynı doğru üzerinde olmadığı, kenarların yalnız komşu uçlarda birleştiği durumları inceleriz."
+ },
+ {
+  "from": "Dışbükey bir dörtgende bir köşegen şekli iki üçgene böler. İki üçgenin açıları birlikte dörtgenin dört iç açısını verir; toplam 180°+180°=360°dir. Basit içbükey dörtgende uygun iç köşegenle yine iki üçgen oluşur ve iç açı toplamı 360°kalır.",
+  "to": "Dışbükey bir dörtgende bir köşegen şekli iki üçgene böler. İki üçgenin açıları birlikte dörtgenin dört iç açısını verir; toplam 180°+180°=360°dir. Basit içbükey dörtgende uygun iç köşegenle yine iki üçgen oluşur ve iç açı toplamı 360° kalır."
+ },
+ {
+  "from": "Dışbükeyde çevre boyunca aynı yönde seçilen birer dış açının toplamı da 360°dir. Dışbükey olmak bütün açıların eşit olduğunu söylemez. Dört iç açı eşitse her biri 90°olur; şekil dikdörtgendir, ama kare demek için kenar eşitliği de gerekir.",
+  "to": "Dışbükeyde çevre boyunca aynı yönde seçilen birer dış açının toplamı da 360°dir. Dışbükey olmak bütün açıların eşit olduğunu söylemez. Dört iç açı eşitse her biri 90° olur; şekil dikdörtgendir, ama kare demek için kenar eşitliği de gerekir."
+ },
+ {
+  "from": "Bu derste MEBİ’nin kapsayıcı tanımı kullanılır: en az bir çift karşı kenarı paralel olan dörtgen yamuktur. İki karşı kenar çifti paralelse paralelkenardır; bu yüzden her paralelkenar aynı zamanda yamuktur. Bazı kaynaklar yamuğu yalnız bir paralel kenar çiftiyle sınırlar; böyle bir soruda verilen tanım ayrıca okunmalıdır.",
+  "to": "Bu derste kapsayıcı tanım kullanılır: en az bir çift karşı kenarı paralel olan dörtgen yamuktur. İki karşı kenar çifti paralelse paralelkenardır; bu yüzden her paralelkenar aynı zamanda yamuktur. Bazı kaynaklar yamuğu yalnız bir paralel kenar çiftiyle sınırlar; böyle bir soruda verilen tanım ayrıca okunmalıdır."
+ },
+ {
+  "from": "Dışbükey ABCD dörtgeninde AB=AD veCB=CD ise şekil bir deltoiddir. Eş uzunluklar komşu kenarlardadır; yalnız AB=CD veBC=AD yazmak deltoid tanımı değil, karşı kenar eşitliğidir. ABC ileADC üçgenleri üç kenardan eştir.",
+  "to": "Dışbükey ABCD dörtgeninde AB=AD ve CB=CD ise şekil bir deltoiddir. Eş uzunluklar komşu kenarlardadır; yalnız AB=CD ve BC=AD yazmak deltoid tanımı değil, karşı kenar eşitliğidir. ABC ile ADC üçgenleri üç kenardan eştir."
+ },
+ {
+  "from": "AC doğrusu simetri eksenidir; A veC açılarını ikiye böler, BD’ye diktir veBD’yi ortalar. B ileD açıları eşittir. BD’nin AC’yi ortalaması veya köşegenlerin eşit olması genel olarak gerekmez. Köşegenler dik olduğu için alan S=AC·BD/2’dir. AB=a, BC=b ise çevre 2(a+b) olur.",
+  "to": "AC doğrusu simetri eksenidir; A ve C açılarını ikiye böler, BD’ye diktir ve BD’yi ortalar. B ile D açıları eşittir. BD’nin AC’yi ortalaması veya köşegenlerin eşit olması genel olarak gerekmez. Köşegenler dik olduğu için alan S=AC·BD/2’dir. AB=a, BC=b ise çevre 2(a+b) olur."
+ },
+ {
+  "from": "AB∥CD olan dışbükey yamukta AB veCD tabandır. Bu tabanlar arasındaki dik uzaklık h yüksekliktir; eğik yan kenar h değildir. AD yan kenarındaki A veD iç açıları, BC yan kenarındaki B veC iç açıları bütünlerdir. Genel yamukta aynı tabanın iki açısı eşit olmak zorunda değildir.",
+  "to": "AB∥CD olan dışbükey yamukta AB ve CD tabandır. Bu tabanlar arasındaki dik uzaklık h yüksekliktir; eğik yan kenar h değildir. AD yan kenarındaki A ve D iç açıları, BC yan kenarındaki B ve C iç açıları bütünlerdir. Genel yamukta aynı tabanın iki açısı eşit olmak zorunda değildir."
+ },
+ {
+  "from": "Taban uzunlukları a veb ise alan S=(a+b)h/2 olur. İki eş yamuğu ters yönlerle birleştirdiğinde tabanı a+b, yüksekliği h olan paralelkenar oluşur; bir yamuğun alanı bunun yarısıdır. Alanla çevreyi ayır: çevre için dört kenar gerekir, taban ve yükseklik tek başına yetmez.",
+  "to": "Taban uzunlukları a ve b ise alan S=(a+b)h/2 olur. İki eş yamuğu ters yönlerle birleştirdiğinde tabanı a+b, yüksekliği h olan paralelkenar oluşur; bir yamuğun alanı bunun yarısıdır. Alanla çevreyi ayır: çevre için dört kenar gerekir, taban ve yükseklik tek başına yetmez."
+ },
+ {
+  "from": "Yamuğun paralel olmayan yan kenarlarının orta noktalarını birleştiren EF parçası tabanlara paraleldir ve orta tabandır. Uzunluğu(a+b)/2’dir. Bu yüzden alanı orta taban·yükseklik olarak da yazabilirsin. Orta taban köşegen değildir; uçları karşı köşeler değil, kenar orta noktalarıdır.",
+  "to": "Yamuğun paralel olmayan yan kenarlarının orta noktalarını birleştiren EF parçası tabanlara paraleldir ve orta tabandır. Uzunluğu (a+b)/2’dir. Bu yüzden alanı orta taban·yükseklik olarak da yazabilirsin. Orta taban köşegen değildir; uçları karşı köşeler değil, kenar orta noktalarıdır."
+ },
+ {
+  "from": "Alt taban a≥b üst taban olsun. Köşegenlerin orta tabanla kesiştiği iki nokta arasındaki parça(a−b)/2, orta tabanın iki ucunda kalan parçalar b/2’dir. Toplam b/2+(a−b)/2+b/2=(a+b)/2 olur. a=b olduğunda ortadaki parça sıfırdır; paralelkenarın köşegenleri aynı orta noktada buluşur.",
+  "to": "Alt taban a≥b üst taban olsun. Köşegenlerin orta tabanla kesiştiği iki nokta arasındaki parça (a−b)/2, orta tabanın iki ucunda kalan parçalar b/2’dir. Toplam b/2+(a−b)/2+b/2=(a+b)/2 olur. a=b olduğunda ortadaki parça sıfırdır; paralelkenarın köşegenleri aynı orta noktada buluşur."
+ },
+ {
+  "from": "Dik yamukta tabanlara dik olan yan kenar yüksekliktir. Diğer yan kenar h ve|a−b| ile dik üçgen oluşturur; uzunluğu√(h²+(a−b)²) olur. Çizimde diklik verilmeden bir yan kenarı yükseklik sayma.",
+  "to": "Dik yamukta tabanlara dik olan yan kenar yüksekliktir. Diğer yan kenar h ve |a−b| ile dik üçgen oluşturur; uzunluğu √(h²+(a−b)²) olur. Çizimde diklik verilmeden bir yan kenarı yükseklik sayma."
+ },
+ {
+  "from": "İkizkenar yamukta yan kenarlar eşittir; aynı tabana komşu açılar ve iki köşegen eşittir. Tabanlar a≥b, yan kenar ℓ ise kısa tabanın uçlarından dikmeler inince fark ikiye bölünür:(a−b)/2. Pisagor’dan h=√(ℓ²−((a−b)/2)²) çıkar. Yükseklik pozitif olmalıdır. Paralelkenar sınırında ek dik açı koşulu yoksa eş yan kenar tek başına klasik ikizkenar yamuk simetrisini zorunlu kılmaz; bu paragrafta a>b durumu kullanılır.",
+  "to": "İkizkenar yamukta yan kenarlar eşittir; aynı tabana komşu açılar ve iki köşegen eşittir. Tabanlar a≥b, yan kenar ℓ ise kısa tabanın uçlarından dikmeler inince fark ikiye bölünür: (a−b)/2. Pisagor’dan h=√(ℓ²−((a−b)/2)²) çıkar. Yükseklik pozitif olmalıdır. Paralelkenar sınırında ek dik açı koşulu yoksa eş yan kenar tek başına klasik ikizkenar yamuk simetrisini zorunlu kılmaz; bu paragrafta a>b durumu kullanılır."
+ },
+ {
+  "from": "Dışbükey dörtgende köşegenler AC veBD O’da dik kesişsin. Dört küçük dik üçgen için Pisagor yazıldığında AB²=AO²+BO², BC²=CO²+BO², CD²=CO²+DO² veDA²=AO²+DO² olur. Böylece AB²+CD²=BC²+DA² elde edilir.",
+  "to": "Dışbükey dörtgende köşegenler AC ve BD O’da dik kesişsin. Dört küçük dik üçgen için Pisagor yazıldığında AB²=AO²+BO², BC²=CO²+BO², CD²=CO²+DO² ve DA²=AO²+DO² olur. Böylece AB²+CD²=BC²+DA² elde edilir."
+ },
+ {
+  "from": "Bu kareler toplamı eşitliği köşegenleri dik olan genel dörtgene aittir; bütün kenarların veya köşegenlerin eşit olduğu anlamına gelmez. Dik köşegenli dışbükey dörtgenin alanı AC·BD/2’dir. Köşegenler arasında θ açısı varsa genel alan AC·BD·sinθ/2 olur;θ=90°için sinθ=1’e iner.",
+  "to": "Bu kareler toplamı eşitliği köşegenleri dik olan genel dörtgene aittir; bütün kenarların veya köşegenlerin eşit olduğu anlamına gelmez. Dik köşegenli dışbükey dörtgenin alanı AC·BD/2’dir. Köşegenler arasında θ açısı varsa genel alan AC·BD·sinθ/2 olur; θ=90° için sinθ=1’e iner."
+ },
+ {
+  "from": "Dışbükey ABCD dörtgeninde E, F, G, H sırasıyla AB, BC, CD, DA’nın orta noktaları olsun. ABC üçgeninin orta tabanından EF∥AC veEF=AC/2 bulunur. ADC üçgeninden HG∥AC veHG=AC/2 gelir. Benzer biçimde FG veEH, BD’ye paralel veBD/2 uzunluğundadır.",
+  "to": "Dışbükey ABCD dörtgeninde E, F, G, H sırasıyla AB, BC, CD, DA’nın orta noktaları olsun. ABC üçgeninin orta tabanından EF∥AC ve EF=AC/2 bulunur. ADC üçgeninden HG∥AC ve HG=AC/2 gelir. Benzer biçimde FG ve EH, BD’ye paralel ve BD/2 uzunluğundadır."
+ },
+ {
+  "from": "Dışbükey ABCD dörtgeninde B veC iç açılarının açıortayları E’de kesişsin. BEC üçgeninde B açısı B/2, C açısı C/2’dir. O halde ∠BEC=180°−(B+C)/2=(A+D)/2 olur. Formülün harfleri, hangi komşu iki köşenin açıortayını aldığınla birlikte okunmalıdır.",
+  "to": "Dışbükey ABCD dörtgeninde B ve C iç açılarının açıortayları E’de kesişsin. BEC üçgeninde B açısı B/2, C açısı C/2’dir. O halde ∠BEC=180°−(B+C)/2=(A+D)/2 olur. Formülün harfleri, hangi komşu iki köşenin açıortayını aldığınla birlikte okunmalıdır."
+ },
+ {
+  "from": "Karşı iki köşenin açıortay doğruları için küçük açı, diğer karşı açılar farkının mutlak değerinin yarısına bağlıdır. Örneğin B veD açıortay doğruları kesişiyorsa küçük açı |A−C|/2’dir. A=C sınırında doğrular paralel veya çakışık olabilir; her durumda varmış gibi bir kesişim noktası tanımlama. Şekil içindeki belirli bir geniş açıyı soruyorsa küçük açının bütünlerine geçmek gerekebilir.",
+  "to": "Karşı iki köşenin açıortay doğruları için küçük açı, diğer karşı açılar farkının mutlak değerinin yarısına bağlıdır. Örneğin B ve D açıortay doğruları kesişiyorsa küçük açı |A−C|/2’dir. A=C sınırında doğrular paralel veya çakışık olabilir; her durumda varmış gibi bir kesişim noktası tanımlama. Şekil içindeki belirli bir geniş açıyı soruyorsa küçük açının bütünlerine geçmek gerekebilir."
+ },
+ {
+  "from": "AB∥CD, AB=a, CD=b olan dışbükey yamukta köşegenler O’da kesişsin. AOB ileCOD üçgenlerinin tepe açıları ters, açı çiftleri paralellikten eşittir; iki üçgen benzerdir. Karşılıkları A↔C, B↔D olduğundan AO/OC=BO/OD=a/b’dir.",
+  "to": "AB∥CD, AB=a, CD=b olan dışbükey yamukta köşegenler O’da kesişsin. AOB ile COD üçgenlerinin tepe açıları ters, açı çiftleri paralellikten eşittir; iki üçgen benzerdir. Karşılıkları A↔C, B↔D olduğundan AO/OC=BO/OD=a/b’dir."
+ },
+ {
+  "from": "Burada MEBİ’nin kapsayıcı tanımı kullanılır: en az bir çift karşı kenarı paralel olan dörtgen yamuktur. Bu yüzden paralelkenar da bir yamuk çeşididir. Yamuğun iki tabanını seçtikten sonra hangi bağıntının genel yamuğa, hangisinin ek simetri koşuluna dayandığını ayır. Çizimin düzgün görünmesi yeni bir eşitlik vermez.",
+  "to": "Burada kapsayıcı tanım kullanılır: en az bir çift karşı kenarı paralel olan dörtgen yamuktur. Bu yüzden paralelkenar da bir yamuk çeşididir. Yamuğun iki tabanını seçtikten sonra hangi bağıntının genel yamuğa, hangisinin ek simetri koşuluna dayandığını ayır. Çizimin düzgün görünmesi yeni bir eşitlik vermez."
+ },
+ {
+  "from": "Örneğin a=6 ve h=4 ise ℓ=√(16+9)=5 olur; e=√(16+18)=√34 çıkar. ℓ=5 ile e=√34 aynı sayı değildir. Düzgün n-gen tabanda da aynı düşünce sürer: tabanın iç yarıçapıρ için ℓ²=h²+ρ², çevrel yarıçapı R için e²=h²+R². Bu bağıntılarda dik izdüşümün merkezde olma koşulu gereklidir.",
+  "to": "Örneğin a=6 ve h=4 ise ℓ=√(16+9)=5 olur; e=√(16+18)=√34 çıkar. ℓ=5 ile e=√34 aynı sayı değildir. Düzgün n-gen tabanda da aynı düşünce sürer: tabanın iç yarıçapı ρ için ℓ²=h²+ρ², çevrel yarıçapı R için e²=h²+R². Bu bağıntılarda dik izdüşümün merkezde olma koşulu gereklidir."
+ },
+ {
+  "from": "Formülü ezberlemeden büyük piramidi yeniden kur. Örneğin alt kare kenarı 6, üst kare kenarı 3 olduğunda uzunluk oranı 1/2’dir. Kesik yükseklik 4 ise büyük yükseklik 8, küçük yükseklik 4 olur. Hacimler 36·8/3=96 ve9·4/3=12; fark 84’tür. Kesik cismin yüksekliğini büyük piramidin tamamına ait yükseklik sanmak sonucu bozar.",
+  "to": "Formülü ezberlemeden büyük piramidi yeniden kur. Örneğin alt kare kenarı 6, üst kare kenarı 3 olduğunda uzunluk oranı 1/2’dir. Kesik yükseklik 4 ise büyük yükseklik 8, küçük yükseklik 4 olur. Hacimler 36·8/3=96 ve 9·4/3=12; fark 84’tür. Kesik cismin yüksekliğini büyük piramidin tamamına ait yükseklik sanmak sonucu bozar."
+ },
+ {
+  "from": "Örneğin ters iki açı 93° ise komşuları 87°dir: 93+87=180. Dört açı sırasıyla 93°,87°,93°,87° olur ve 360°yi tamamlar. Ters açıyı ararken önce aynı kesişimde olduğundan emin ol; farklı iki kesişimdeki açıları konuma göre ayrıca adlandır.",
+  "to": "Örneğin ters iki açı 93° ise komşuları 87°dir: 93+87=180. Dört açı sırasıyla 93°, 87°, 93°, 87° olur ve 360°yi tamamlar. Ters açıyı ararken önce aynı kesişimde olduğundan emin ol; farklı iki kesişimdeki açıları konuma göre ayrıca adlandır."
+ },
+ {
+  "from": "Bir problemde tümler deniyorsa toplam 90°, bütünler deniyorsa180° yazılır; aynı köşede olmaları gerekmez. Bir dik açıyı iki bölgeye ayırmak tümler ilişkiye yeni bir örnektir. İki doğrunun kesişimindeki ters açı eşitliğini komşu doğrusal toplamıyla karıştırma. Sayısal cevabının yanında neden o işlemi seçtiğini bir cümleyle açıkla.",
+  "to": "Bir problemde tümler deniyorsa toplam 90°, bütünler deniyorsa 180° yazılır; aynı köşede olmaları gerekmez. Bir dik açıyı iki bölgeye ayırmak tümler ilişkiye yeni bir örnektir. İki doğrunun kesişimindeki ters açı eşitliğini komşu doğrusal toplamıyla karıştırma. Sayısal cevabının yanında neden o işlemi seçtiğini bir cümleyle açıkla."
+ },
+ {
+  "from": "Örnekte2. ışının alt yatay duvarla yaptığı dar açı,3. ışının sol düşey duvarla yaptığı dar açıya eşittir. Yatay ve düşey90° oluşturur; ardışık iki ışın arasındaki72° çıkarıldığında 18° kalır. Eş iki payın her biri 9°dir. Böylece3. ışın yataya9° uzaktır; sonraki72° dönüşle4. ışının üst yatay duvarla yaptığı dar açı 72°−9°=63° olur. Bu çözüm,2024 TYT Temel Matematik 31. sorunun resmî kitapçık ve cevap anahtarıyla karşılaştırılmış özgün açıklamasıdır: D seçeneği 63°. O soru ile uygulamanın özgün alıştırmalarının kimlikleri ayrı tutulur; sayfadaki tek örnek bütün geçmiş sınav arşivini temsil etmez.",
+  "to": "Örnekte 2. ışının alt yatay duvarla yaptığı dar açı, 3. ışının sol düşey duvarla yaptığı dar açıya eşittir. Yatay ve düşey 90° oluşturur; ardışık iki ışın arasındaki 72° çıkarıldığında 18° kalır. Eş iki payın her biri 9°dir. Böylece 3. ışın yataya 9° uzaktır; sonraki 72° dönüşle 4. ışının üst yatay duvarla yaptığı dar açı 72°−9°=63° olur. Bu çözüm, 2024 TYT Temel Matematik 31. sorunun özgün açıklamasıdır: D seçeneği 63°."
+ },
+ {
+  "from": "Sonuç kontrolü hesap tekrarı değildir: iç noktanın uçlar arasında olması, dış noktada doğru uç sırası, simetri merkezinin orta nokta olması, uzaklığın negatif olmaması gibi bağımsız bir özelliği sınarsın. Etkileşimde önce tahminini ve kısa gerekçeni yaz, sonra gerçek koordinatlarla karşılaştır. Modeli kullanmak çalışma puanı veya konu tamamlanma kaydı oluşturmaz; bağımsız sorular ayrı öğrenme kanıtıdır.",
+  "to": "Sonuç kontrolü hesap tekrarı değildir: iç noktanın uçlar arasında olması, dış noktada doğru uç sırası, simetri merkezinin orta nokta olması, uzaklığın negatif olmaması gibi bağımsız bir özelliği sınarsın. Etkileşimde önce tahminini ve kısa gerekçeni yaz, sonra gerçek koordinatlarla karşılaştır."
+ }
+]
