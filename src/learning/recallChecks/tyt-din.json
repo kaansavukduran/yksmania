@@ -1,0 +1,1167 @@
+{
+ "islam-dusuncesinde-tasavvufi-yorumlar": [
+  {
+   "after": 1,
+   "prompt": "Fıkıh, kelam ve tasavvuf hangi konuları incelemeleriyle ayrılır?",
+   "answer": "Fıkıh davranışların dinî hükümlerini, kelam inanç esaslarını, tasavvuf ise özellikle ahlaki ve manevi gelişimi inceler."
+  },
+  {
+   "after": 4,
+   "prompt": "Nefis terbiyesinde insan neyi amaçlar?",
+   "answer": "Bencillik, kibir, haset ve zarar verici isteklerini fark edip güzel huylar geliştirmeyi amaçlar; tezkiye arındırma demektir."
+  },
+  {
+   "after": 6,
+   "prompt": "Tahalluk ile tahakkuk nasıl ayrılır?",
+   "answer": "Tahalluk ahlakı öğrenme ve yaşama boyutunu, tahakkuk ise manevi hakikati tanıma boyutunu anlatır."
+  },
+  {
+   "after": 8,
+   "prompt": "Mürşit ile mürit arasındaki rol farkı nedir?",
+   "answer": "Mürşit ya da şeyh manevi eğitimde rehberdir; mürit ya da talip bu eğitime yönelen kişidir."
+  },
+  {
+   "after": 9,
+   "prompt": "Nefis mertebelerinde emmâre ile levvâme nasıl ayrılır?",
+   "answer": "Emmâre kötülüğe yönelten nefis, levvâme ise yanlışını kınayan nefis olarak açıklanır."
+  },
+  {
+   "after": 12,
+   "prompt": "Kadiriliğin Anadolu’daki yayılışında hangi kişi ve eser anılır?",
+   "answer": "Eşrefoğlu Rûmî ve onun Müzekki’n-Nüfûs adlı eseri anılır."
+  },
+  {
+   "after": 14,
+   "prompt": "Mevlevi semasında sikke, hırka ve tennure neyle ilişkilendirilir?",
+   "answer": "Sikke mezar taşıyla, hırka mezarla, tennure ise kefenle ilişkilendirilir."
+  },
+  {
+   "after": 15,
+   "prompt": "Nakşibendilikte özellikle hangi zikir biçimi vurgulanır?",
+   "answer": "Gizli ya da kalbî zikir vurgulanır; zamanın değerini bilme ve ölçülülük de öne çıkar."
+  },
+  {
+   "after": 17,
+   "prompt": "Dört kapının her biriyle on makam ilişkilendirildiğine göre toplam kaç makam vardır?",
+   "answer": "4 × 10 = 40 makam vardır; kapılar şeriat, tarikat, marifet ve hakikattir."
+  },
+  {
+   "after": 19,
+   "prompt": "Düşkünlükten kaldırma cemi neyle ilişkilendirilir?",
+   "answer": "Hakların iadesi ve kişinin topluluğa dönüşüyle ilişkilendirilir."
+  },
+  {
+   "after": 21,
+   "prompt": "Bir kişinin razı olduğunu söylemesi neden başkasının alacağını ortadan kaldırmaz?",
+   "answer": "Hakkın sahibi, konusu ve iade bilgisi ayrı veridir; söz vermek ile somut hakkı yerine getirmek birlikte değerlendirilir."
+  },
+  {
+   "after": 23,
+   "prompt": "Cem hizmetlerinde ibrikçi ile sakka nasıl ayrılır?",
+   "answer": "İbrikçi temizlik ve su hizmetinde, sakka ise suyun temini ve dağıtımında görev alır."
+  },
+  {
+   "after": 26,
+   "prompt": "Muharrem orucu ile Hızır orucu neyle anılmaları bakımından ayrılır?",
+   "answer": "Muharrem orucu Kerbelâ’da yapılan zulmün hatırlanmasıyla, Hızır orucu dayanışma, şükür ve ihtiyaç sahibini gözetmeyle anılır."
+  }
+ ],
+ "guncel-dini-meseleler": [
+  {
+   "after": 1,
+   "prompt": "Bir yorumcunun sözünü doğrudan ayet saymak hangi hatayı doğurur?",
+   "answer": "Kaynak türlerini karıştırır; sözün kimden aktarıldığı ve hangi tür metne ait olduğu incelenmelidir."
+  },
+  {
+   "after": 3,
+   "prompt": "Güncel bir meselede tıp ya da hukuk uzmanının katkısı içtihattan nasıl ayrılır?",
+   "answer": "Uzmanlar işlemin etkilerini, hak ve mevzuat boyutunu açıklar; hükme ulaşma çabası ise ehliyetli âlimin içtihadıdır."
+  },
+  {
+   "after": 5,
+   "prompt": "Zarûrât-ı diniyye ile zarûrât-ı hamse nasıl ayrılır?",
+   "answer": "Zarûrât-ı diniyye dinin kesin temel esaslarını, zarûrât-ı hamse ise korunması hedeflenen beş temel değeri anlatır."
+  },
+  {
+   "after": 7,
+   "prompt": "Mekruh ile haram arasındaki fark nedir?",
+   "answer": "Haram kesin biçimde yasaklanan, mekruh ise kaçınılması uygun görülen davranıştır; ikisi aynı hüküm adı değildir."
+  },
+  {
+   "after": 9,
+   "prompt": "Eşyada asıl olan ibaha ilkesi neyi anlatır?",
+   "answer": "Yasak bulunduğu kanıtlanmadıkça izin alanının geniş olduğunu anlatır."
+  },
+  {
+   "after": 10,
+   "prompt": "Jelatin ile agar arasındaki fark nedir?",
+   "answer": "Jelatin hayvansal kaynaklı bir protein ürünüdür; agar bitkisel bir alternatiftir, aynı madde değildir."
+  },
+  {
+   "after": 12,
+   "prompt": "Nahl 115 gibi metinlerde zaruret hangi koşullarla birlikte görülür?",
+   "answer": "Mecburiyet, haddi aşmama ve başkasının hakkına saldırmama koşullarıyla birlikte görülür."
+  },
+  {
+   "after": 14,
+   "prompt": "Bağış yapmak neden ödenmemiş bir borcu kendiliğinden kapatmaz?",
+   "answer": "Gönüllü yardım ile belirli bir kişiye olan borç farklı yükümlülüklerdir."
+  },
+  {
+   "after": 16,
+   "prompt": "İşverenin kusuru ile çalışanın sorumluluğu birbirini nasıl etkiler?",
+   "answer": "İşverenin kusuru çalışanın sorumluluklarını, çalışanın kusuru da ücret ve güvenlik haklarını silmez; her fiil ayrı değerlendirilir."
+  },
+  {
+   "after": 18,
+   "prompt": "Akran zorbalığı ile mobbing nasıl ayrılır?",
+   "answer": "Akran zorbalığı başkasını inciten, dışlayan ya da baskılayan davranışlarla; mobbing çalışma ortamındaki sistemli psikolojik yıldırmayla ilişkilidir."
+  },
+  {
+   "after": 20,
+   "prompt": "Mâide 90–91’de içki ve kumarla ilgili hangi boyutlar öne çıkar?",
+   "answer": "Bunlardan uzak durma çağrısıyla birlikte düşmanlık ve sorumluluklardan alıkoyma boyutları öne çıkar."
+  },
+  {
+   "after": 22,
+   "prompt": "Otopsi organ nakli ve ötenaziden nasıl ayrılır?",
+   "answer": "Otopside ölüm ve hastalık nedenleri araştırılır; organ nakli ve ötenazinin amaç ve koşulları farklıdır."
+  },
+  {
+   "after": 24,
+   "prompt": "Organ naklinde alıcının rızası neden tek başına yeterli değildir?",
+   "answer": "Rıza vericinin koşullarını göstermez; vericiye zarar vermeme, izin, tıbbi gereklilik ve ticaret konusu yapmama da tartışılır."
+  },
+  {
+   "after": 26,
+   "prompt": "Beyin ölümü ile bitkisel hayat konusunda hangi tuzağa düşmemelisin?",
+   "answer": "İkisinin tıbbi anlamını aynı saymamalısın; bu ayrımı bilmek de kısa bir metinle yaşam desteği kararı vermeye yetmez."
+  },
+  {
+   "after": 28,
+   "prompt": "Bidat ile hurafe nasıl ayrılır?",
+   "answer": "Bidat dinî alana sonradan eklenen uygulamayla, hurafe ise dinî ya da akli dayanağı olmayan batıl inanışla ilişkilidir."
+  }
+ ],
+ "hint-ve-cin-dinleri": [
+  {
+   "after": 1,
+   "prompt": "Hinduizmi tek bir kurucuya dayanan dinlerden ayıran oluşum özelliği nedir?",
+   "answer": "Hint alt kıtasında uzun bir tarihsel süreçte oluşmuş gelenekler bütünüdür; tek bir tarihsel kurucuya dayandırılmaz."
+  },
+  {
+   "after": 3,
+   "prompt": "Brahma, Brahman ve Brahmin terimleri birbirinden nasıl ayrılır?",
+   "answer": "Brahma belirli bir tanrısal varlık, Brahman mutlak gerçeklikle ilgili felsefi kavram, Brahmin ise din adamı ya da toplumsal sınıf terimidir."
+  },
+  {
+   "after": 4,
+   "prompt": "Şruti ile smriti metin grupları nasıl ayrılır?",
+   "answer": "Şruti vahyedilmiş ya da işitilmiş kabul edilen metinleri, smriti ise hatırlanan gelenek bağlamındaki metinleri anlatır."
+  },
+  {
+   "after": 6,
+   "prompt": "Budizmdeki yeniden doğumu Hindu ruh göçüyle özdeşleştirmek neden yanlıştır?",
+   "answer": "Budist anlatım değişmez bir ruhun aynı biçimde taşındığını varsaymaz; aynı Türkçe söz iki öğretinin benlik anlayışını eşitlemez."
+  },
+  {
+   "after": 8,
+   "prompt": "Dharma sözcüğü Hindu ve Budist bağlamlarda sırasıyla neyi anlatabilir?",
+   "answer": "Hindu bağlamında düzen, görev ve doğru yaşayışı; Budist bağlamda Buda’nın öğretisini anlatabilir."
+  },
+  {
+   "after": 10,
+   "prompt": "Varna şeması ile jati sistemi arasındaki fark nedir?",
+   "answer": "Varna brahmin, kşatriya, vaişya ve şudradan oluşan tarihsel şemadır; jati günlük toplumsal grupları gösteren daha ayrıntılı sistemdir."
+  },
+  {
+   "after": 13,
+   "prompt": "Dört Yüce Hakikat’te ıstırabın kaynağı olarak hangi kavram gösterilir?",
+   "answer": "Bağlanma ve doymak bilmeyen arzu anlamındaki susuzluk, yani tanhâ gösterilir."
+  },
+  {
+   "after": 15,
+   "prompt": "Anatta yaklaşımı Hindu düşüncesindeki atman kavramından hangi noktada ayrılır?",
+   "answer": "Anatta değişmez ve bağımsız bir öz-benliğin bulunmadığını söyler; bu, atmanla karşılaştırmadaki temel farklardan biridir."
+  },
+  {
+   "after": 19,
+   "prompt": "Sangha ile vihara kavramlarını ayıran nedir?",
+   "answer": "Sangha insan topluluğunu, vihara ise manastır, yaşam ve ibadet mekânını anlatır."
+  },
+  {
+   "after": 21,
+   "prompt": "Lumbini, Bodhgaya, Sarnath ve Kushinagar Buda’nın hangi anlatılarıyla ilişkilidir?",
+   "answer": "Lumbini doğum, Bodhgaya aydınlanma, Sarnath ilk öğretim, Kushinagar ölüm anlatısıyla ilişkilidir."
+  },
+  {
+   "after": 24,
+   "prompt": "Tian kavramı yönetim anlatılırken neden önem taşır?",
+   "answer": "Tian gök ve ahlaki kozmik düzenle ilişkilidir; göğün buyruğu vurgusu yönetimin ahlaki sorumluluğunu anlatmada kullanılır."
+  },
+  {
+   "after": 26,
+   "prompt": "Konuşmalar ya da Analektler hangi metin grubuna girer ve neyi içerir?",
+   "answer": "Dört Kitap’a girer; Konfüçyüs ve öğrencileriyle ilişkilendirilen söz ve diyalogları içerir."
+  },
+  {
+   "after": 29,
+   "prompt": "Taoist düşüncede Te kavramı neyi anlatır?",
+   "answer": "Varlıklarda beliren erdem ve güç boyutunu anlatır; Tao Te Ching Tao ile bu erdemi ele alan temel metindir."
+  },
+  {
+   "after": 32,
+   "prompt": "Taoist geleneklerde kung, kuan ve miao adları hangi bağlamda kullanılır?",
+   "answer": "Tapınak gibi ibadet ve ziyaret mekânlarını adlandırma bağlamında kullanılır."
+  }
+ ],
+ "dunya-ve-ahiret": [
+  {
+   "after": 1,
+   "prompt": "İslam inancında dünya hayatı geçici olsa da neden değersiz sayılmaz?",
+   "answer": "Çünkü seçim, çalışma ve sorumluluk alanıdır; ibadet, dürüst emek, hak gözetme ve yardım bu hayatta gerçekleşir."
+  },
+  {
+   "after": 3,
+   "prompt": "Ahiret bilgisi hangi alanla ilişkilidir ve kanıt türü bakımından deney bilgisinden neden ayrılır?",
+   "answer": "Gayb, yani duyusal deneyimi aşan alanla ilişkilidir; Kur’an ve sünnete dayanır, laboratuvarda sınanan bir açıklama değildir."
+  },
+  {
+   "after": 6,
+   "prompt": "Kıyametin vaktini bir evre şemasından hesaplayamamanın gerekçesi olarak hangi öğreti hatırlatılır?",
+   "answer": "A’râf 187 bağlamında kıyametin vaktinin bilgisinin Allah’a ait olduğu hatırlatılır; şemadaki sıra bir takvim değildir."
+  },
+  {
+   "after": 9,
+   "prompt": "Amel defteri ile hesap kavramlarını ayıran nedir?",
+   "answer": "Amel defteri davranışların kaydıdır; hesap ise dünyada yapılanların değerlendirilip sorgulanmasıdır."
+  },
+  {
+   "after": 11,
+   "prompt": "Cennet tasvirlerinde nimetlerin de üstünde tutulan değer nedir?",
+   "answer": "Allah’ın rızası, nimetlerin üstünde bir değer olarak vurgulanır."
+  },
+  {
+   "after": 13,
+   "prompt": "Vasiyet ile borç arasındaki fark nedir?",
+   "answer": "Vasiyet kişinin ölümünden sonra yerine getirilmesini istediği meşru taleplerdir; borç ise başkalarına karşı mevcut yükümlülüklerdir."
+  },
+  {
+   "after": 15,
+   "prompt": "Cenaze namazını kılınış bakımından diğer namazlardan ayıran özellik nedir?",
+   "answer": "Topluca dua niteliğindedir; ayakta kılınır, rükû ve secde içermez."
+  },
+  {
+   "after": 17,
+   "prompt": "Sadaka-i cariye hangi tür hayırla ilişkilidir?",
+   "answer": "Yararı ölümden sonra da devam eden hayırla ilişkilidir."
+  },
+  {
+   "after": 18,
+   "prompt": "Alevi-Bektaşi geleneğinde ölüm ve cenaze uğurlaması hangi ifadelerle anılır?",
+   "answer": "Ölüm Hakk’a yürümek, cenaze uğurlaması Hakk’a Uğurlama Erkânı gibi ifadelerle anılır."
+  }
+ ],
+ "yahudilik-ve-hristiyanlik": [
+  {
+   "after": 2,
+   "prompt": "Musevi ve Yahudi adları sırasıyla hangi kişi ya da bölgeyle ilişkilendirilir?",
+   "answer": "Musevi adı Musa’yla, Yahudi adı ise Yahuda ve tarihî Yahuda bölgesiyle ilişkilendirilir."
+  },
+  {
+   "after": 4,
+   "prompt": "On Emir’i yalnız bir ibadet listesi saymak neden eksik kalır?",
+   "answer": "Listede Tanrı’ya bağlılığın yanında öldürmeme, çalmama, yalancı tanıklık yapmama gibi insanlarla ilgili ahlaki kurallar da vardır."
+  },
+  {
+   "after": 5,
+   "prompt": "Diaspora kavramı neyi anlatır?",
+   "answer": "Bir topluluğun anayurdu dışında, farklı ülkelere dağılmış biçimde yaşamasını anlatır."
+  },
+  {
+   "after": 7,
+   "prompt": "Tora’yla ilişkilendirilen ilk beş kitap hangileridir?",
+   "answer": "Tekvin, Çıkış, Levililer, Sayılar ve Tesniye."
+  },
+  {
+   "after": 9,
+   "prompt": "Sinagog ile haham kavramları hangi farklı bilgi türlerini gösterir?",
+   "answer": "Sinagog ya da havra ibadet ve toplanma mekânını, haham ise dinî bilgi ve öğretimle ilgili görev adını gösterir."
+  },
+  {
+   "after": 11,
+   "prompt": "Fısıh, Şavuot ve Sukkot sırasıyla neyin anılmasıyla ilişkilidir?",
+   "answer": "Fısıh Mısır’dan çıkışın, Şavuot Tora’nın verilişinin, Sukkot çölde yaşama hatırasının anılmasıyla ilişkilidir."
+  },
+  {
+   "after": 12,
+   "prompt": "Kipa ile kaşer kavramları hangi farklı alanlara aittir?",
+   "answer": "Kipa ibadette kullanılan takke ya da baş örtüsü olarak giyime, kaşer ise beslenmedeki dinî uygunluğa aittir."
+  },
+  {
+   "after": 14,
+   "prompt": "Ortodoks sözcüğü geçen bir cümlede hangi tuzağa dikkat etmelisin?",
+   "answer": "Bu ad hem Yahudi hem Hristiyan bağlamında kullanılır; hangi dinin anlatıldığını ayrıca belirlemelisin."
+  },
+  {
+   "after": 16,
+   "prompt": "Konsil ne tür bir toplantıdır?",
+   "answer": "İnanç ve kilise düzenine ilişkin meselelerin görüşüldüğü toplantıdır."
+  },
+  {
+   "after": 18,
+   "prompt": "Asli günah öğretisi hangi anlayışla bağlantılıdır?",
+   "answer": "İnsanlığın başlangıcına ilişkin günah ve kurtuluş anlayışıyla bağlantılıdır; açıklanışı mezhepler arasında farklılaşır."
+  },
+  {
+   "after": 22,
+   "prompt": "Vaftiz ile evharistiya hangi nesne ve anlamla birbirinden ayrılır?",
+   "answer": "Vaftiz suyla ilişkili kabul ve iman ritüelidir; evharistiya İsa’nın son yemeğiyle ilişkili ekmek-şarap ayinidir."
+  },
+  {
+   "after": 24,
+   "prompt": "Noel ile Paskalya hangi olayların anılmasıdır?",
+   "answer": "Noel İsa’nın doğumunu anar; Paskalya Hristiyan inancında onun dirilişini kutlar."
+  }
+ ],
+ "islam-ve-bilim": [
+  {
+   "after": 1,
+   "prompt": "İlim ile bilim kavramları kapsam bakımından nasıl ayrılır?",
+   "answer": "İlim dinî ve başka alanları kapsayabilen bilgi birikimidir; bilim ise sistemli yöntem, gözlem, ölçüm ve eleştirel denetimle açıklama üretir."
+  },
+  {
+   "after": 3,
+   "prompt": "Gözlem ile deneyi birbirinden ayıran nedir?",
+   "answer": "Gözlem bir olayı sistemli izleyip kaydetmektir; deney ise koşulları düzenleyerek bir açıklamayı sınamaktır."
+  },
+  {
+   "after": 4,
+   "prompt": "Bilimsel bilginin değişebilir olmasından hangi yanlış sonuç çıkarılmamalıdır?",
+   "answer": "Her görüşün eşit derecede gerekçeli olduğu ya da sonuçların keyfî seçildiği; düzeltme daha güvenilir kanıtla yapılır."
+  },
+  {
+   "after": 6,
+   "prompt": "İslam medeniyetinde çevrilip incelenen eserler hangi dil ve geleneklerden gelmiştir?",
+   "answer": "Yunanca, Süryanice, Farsça ve Hint bilgi geleneklerinden; daha sonra Arapçadan Latinceye de çeviriler yapılmıştır."
+  },
+  {
+   "after": 8,
+   "prompt": "Ders halkası nasıl bir öğrenim biçimidir?",
+   "answer": "Öğreticinin çevresinde toplanarak öğrenim görme biçimidir; camilerde tefsir, hadis ve fıkıh bu yolla okutulmuştur."
+  },
+  {
+   "after": 9,
+   "prompt": "Mektep ile medrese öğretim düzeyi bakımından nasıl ayrılır?",
+   "answer": "Mektep temel okuma-yazma ve başlangıç öğretimiyle, medrese ise daha örgütlü ve ileri öğretimle ilişkilidir."
+  },
+  {
+   "after": 13,
+   "prompt": "Bir kütüphanedeki kitap sayısı tek başına neyi kanıtlamaz?",
+   "answer": "Bütün kitapların okunduğunu ya da yeni buluş yapıldığını kanıtlamaz; yalnız erişim imkânının bir göstergesi olabilir."
+  },
+  {
+   "after": 15,
+   "prompt": "Anadolu’daki tarihî dârüşşifa örnekleri olarak hangi ikisi anılır?",
+   "answer": "Gevher Nesibe ve Divriği dârüşşifaları anılır."
+  },
+  {
+   "after": 16,
+   "prompt": "Müfessir, muhaddis ve fakih hangi alanların uzmanlarıdır?",
+   "answer": "Müfessir tefsirin, muhaddis hadisin, fakih ise ibadet ve günlük hayat hükümlerini inceleyen fıkhın uzmanıdır."
+  },
+  {
+   "after": 18,
+   "prompt": "Harita, seyahatname ve konum hesapları hangi bilgi alanının araçlarıdır?",
+   "answer": "Yeryüzünü doğal ve beşerî yönleriyle inceleyen coğrafyanın araçlarıdır."
+  },
+  {
+   "after": 20,
+   "prompt": "İbnü’l-Heysem görmeyi nasıl açıklamıştır?",
+   "answer": "Görmeyi cisimlerden göze ulaşan ışıkla açıklamıştır; karanlık oda incelemeleri de bu çalışmalarla anılır."
+  },
+  {
+   "after": 22,
+   "prompt": "Aziz Sancar Nobel Kimya Ödülü’nü hangi alandaki çalışmalarıyla almıştır?",
+   "answer": "DNA onarımı alanındaki çalışmalarıyla almıştır."
+  }
+ ],
+ "anadoluda-islam": [
+  {
+   "after": 1,
+   "prompt": "Maveraünnehir hangi iki nehir arasında kalan bölgedir?",
+   "answer": "Seyhun ve Ceyhun nehirleri arasında kalan tarihî bölgedir; Buhara ve Semerkant bu bölgededir."
+  },
+  {
+   "after": 3,
+   "prompt": "Satuk Buğra Han hangi Türk devletinin tarihiyle ilişkilidir?",
+   "answer": "Karahanlı tarihiyle ilişkilidir."
+  },
+  {
+   "after": 5,
+   "prompt": "Ribatların ilk işlevi neydi ve bazı dönemlerde hangi işlevleri kazandılar?",
+   "answer": "İlk olarak sınırda askerî amaçlı sağlam yapılardı; bazı dönemlerde eğitim, tasavvuf, konaklama ve yol güvenliği işlevi kazandılar."
+  },
+  {
+   "after": 7,
+   "prompt": "Ahilikte usta-kalfa-çırak ilişkisi hangi işlevi görür?",
+   "answer": "Mesleki becerinin kuşaktan kuşağa aktarılmasına katkı sağlar."
+  },
+  {
+   "after": 10,
+   "prompt": "Ebû Hanîfe’nin asıl adı nedir ve hangi fıkıh geleneğinin merkezindedir?",
+   "answer": "Asıl adı Numan bin Sabit’tir; Hanefî fıkıh geleneğinin merkezî şahsiyetidir."
+  },
+  {
+   "after": 11,
+   "prompt": "Cafer es-Sâdık’ın görüşleriyle ilişkili fıkıh geleneği hangisidir?",
+   "answer": "Caferî fıkıh geleneğidir; on iki imamı esas alan İmamiye çerçevesiyle de bağı bulunur."
+  },
+  {
+   "after": 13,
+   "prompt": "Şâfiî’nin Er-Risâle ve el-Ümm eserleri hangi konularla ilişkilidir?",
+   "answer": "Er-Risâle fıkıh usulündeki yöntem tartışmalarıyla, el-Ümm ise fıkıh birikimiyle ilişkilidir."
+  },
+  {
+   "after": 17,
+   "prompt": "Ahi Evran’ı tanırken şehir adının yanında hangi ipucunu aramalısın?",
+   "answer": "Esnaf teşkilatlanması ve meslek ahlakı gibi yaptığı işi gösteren ipucunu; Kırşehir’de geçen her olay onunla ilgili değildir."
+  },
+  {
+   "after": 18,
+   "prompt": "Hacı Bektaş-ı Velî’ye nispet edilen temel eser hangisidir?",
+   "answer": "Makâlât, ona nispet edilen temel eserler arasında anılır."
+  },
+  {
+   "after": 20,
+   "prompt": "Menkıbe ile bağımsız tarihî belge kanıt türü bakımından nasıl ayrılır?",
+   "answer": "Menkıbe dinî-kültürel hafızayı anlamaya yardım eder; her ayrıntısı bağımsız tarihî belgeyle aynı kanıt gücünde değildir."
+  },
+  {
+   "after": 21,
+   "prompt": "Hacı Bayrâm-ı Velî gelenekte manevi eğitimini kimden almış olarak anılır?",
+   "answer": "Somuncu Baba’dan aldığı manevi eğitimle anılır."
+  }
+ ],
+ "din-ve-islam": [
+  {
+   "after": 1,
+   "prompt": "İslam âlimlerinin din tanımında kaynak, bildirim yolu ve yönelen özne nedir?",
+   "answer": "Kaynak Allah, bildirim yolu peygamberlik, yönelen özne ise akıl ve irade sahibi insandır."
+  },
+  {
+   "after": 2,
+   "prompt": "Elmalılı Hamdi Yazır’ın din tanımı hangi noktayı öne çıkarır?",
+   "answer": "Hür iradeyle iyi davranışa yönelmeyi öne çıkarır; ilahî kaynak diğer iki tanımla ortak bağdır."
+  },
+  {
+   "after": 4,
+   "prompt": "Ulûhiyet ile ubûdiyet aynı ilişkinin hangi taraflarını adlandırır?",
+   "answer": "Ulûhiyet ilahlık ve ibadet edilen varlık boyutunu, ubûdiyet ise kulluk eden insanın yönelişini adlandırır."
+  },
+  {
+   "after": 6,
+   "prompt": "Peygamberlerin ortak çağrısı hangi üç inanç etrafında açıklanır?",
+   "answer": "Allah’ın birliği, peygamberlik ve ahiret sorumluluğu etrafında açıklanır."
+  },
+  {
+   "after": 8,
+   "prompt": "Hanifliği fıtrattan ayıran özgül kanıt nedir?",
+   "answer": "Hz. İbrahim’in tevhid çizgisi ve Allah’a ortak koşmama vurgusu hanifliğe özgüdür; fıtrat ise yaratılıştan gelen eğilimdir."
+  },
+  {
+   "after": 9,
+   "prompt": "Tevhit ile şirk kavramları nasıl bir karşıtlık kurar?",
+   "answer": "Tevhit Allah’ın bir, tek ve eşsiz yaratıcı olduğunu kabul etmek; şirk ise Allah’a ortak koşmaktır."
+  },
+  {
+   "after": 12,
+   "prompt": "İslam sözcüğü hangi anlamlarla ilişkilidir?",
+   "answer": "Teslimiyet, barış ve esenlik anlamlarıyla ilişkilidir."
+  },
+  {
+   "after": 14,
+   "prompt": "Kelimeişehadet İslam’ın beş şartı içinde hangi yönüyle diğerlerinden ayrılır?",
+   "answer": "Şehadet inancın sözle bildirilmesiyle ilgilidir; diğer şartlar temel uygulamalarla ilişkilidir."
+  },
+  {
+   "after": 16,
+   "prompt": "Esmayıhüsnadan Alîm, Semî ve Basîr isimleri hangi niteliklerle ilişkilidir?",
+   "answer": "Alîm bilme, Semî işitme, Basîr görme niteliğiyle ilişkilidir."
+  },
+  {
+   "after": 18,
+   "prompt": "Cibril hadisinde iman, İslam ve ihsan hangi odaklarla açıklanır?",
+   "answer": "İman temel inançları, İslam temel uygulamaları, ihsan ise Allah’ın gözetimi bilinciyle özenli kulluğu anlatır."
+  }
+ ],
+ "islam-ve-ibadet": [
+  {
+   "after": 1,
+   "prompt": "Namaz, oruç, zekât ve hac neden özel anlamda ibadet sayılır?",
+   "answer": "Her birinin vakit, koşul, uygulama ya da miktar gibi kendine özgü belirlenmiş kuralları vardır."
+  },
+  {
+   "after": 3,
+   "prompt": "İbadetin geniş anlamında kötülükten kaçınma neden kullukla ilişkilendirilir?",
+   "answer": "Yalan, haksızlık ve zarar vermekten Allah rızası amacıyla kaçınmak, sorumluluğun zararı önleme boyutunu oluşturur."
+  },
+  {
+   "after": 4,
+   "prompt": "Âbit, mabet ve mabut sırasıyla neyi adlandırır?",
+   "answer": "Âbit ibadet eden kişiyi, mabet ibadet edilen yeri, mabut ise kendisine ibadet edileni adlandırır."
+  },
+  {
+   "after": 6,
+   "prompt": "Mükellef sayılmak için hangi genel koşullar ele alınır?",
+   "answer": "Akıl, ergenlik, irade ve güç yetirebilme; bazı ibadetlerde maddi imkân gibi ek şartlar da bulunur."
+  },
+  {
+   "after": 7,
+   "prompt": "Hüküm sınıflamasında haram ve mekruh hangi davranış grubunda yer alır?",
+   "answer": "Kaçınılması istenen davranışlar grubunda; farz, vacip, sünnet ve mendup ise yapılması istenenler arasındadır."
+  },
+  {
+   "after": 11,
+   "prompt": "Sünnet sözcüğünün geniş kullanımı hüküm sınıflamasındaki kullanımından nasıl ayrılır?",
+   "answer": "Geniş kullanımda Hz. Muhammed’in söz, davranış ve onaylarına dayanan örnekliği; hüküm sınıflamasında farz ve vacip dışındaki belirli uygulamaları anlatır."
+  },
+  {
+   "after": 13,
+   "prompt": "Mendup davranışın ayırt edici özelliği nedir?",
+   "answer": "Yapılması kesin bağlayıcılık olmadan istenir ve terk edilmesi kınanmaz."
+  },
+  {
+   "after": 15,
+   "prompt": "Mekruh ile haram arasındaki fark nedir?",
+   "answer": "Haram kesin yasakla, mekruh ise yapılması hoş karşılanmayan davranışla ilişkilidir; mekruh önerilen bir eylem de sayılmaz."
+  },
+  {
+   "after": 16,
+   "prompt": "Bir duyurunun yeni bir iletişim aracıyla yapılması neden ibadetin değiştiği anlamına gelmez?",
+   "answer": "İbadetin kendisi ile onu kolaylaştıran araç farklıdır; araç değişince ibadetin temel yapısı değişmiş olmaz."
+  },
+  {
+   "after": 18,
+   "prompt": "Tövbe ile şükür hangi farklı yönelişleri anlatır?",
+   "answer": "Tövbe yanlışından dönüp düzeltmeye yönelmeyi, şükür ise nimetin değerini bilip teşekkür etmeyi anlatır."
+  },
+  {
+   "after": 20,
+   "prompt": "Bakara 177 öğretiminde birr kavramı hangi boyutların birlikteliğini anlatır?",
+   "answer": "İyilik ve erdemin iman, ibadet ve ahlak boyutlarının birlikteliğini anlatır."
+  }
+ ],
+ "ahlaki-tutum-ve-davranislar": [
+  {
+   "after": 1,
+   "prompt": "İslam ahlakının temel kaynakları nedir ve Hz. Muhammed’in yaşamı bunlarda hangi işlevi görür?",
+   "answer": "Kur’an ve sünnettir; Hz. Muhammed’in örnek yaşamı ilkelerin davranışa nasıl yansıtıldığını gösterir."
+  },
+  {
+   "after": 3,
+   "prompt": "Bir yardım olayında niyet, davranış ve sonuç nasıl ayrılır?",
+   "answer": "Niyet eylemin neden yapıldığını, davranış ne yapıldığını, sonuç sonrasında ne olduğunu anlatır; amaç metinde ayrıca belirtilmelidir."
+  },
+  {
+   "after": 5,
+   "prompt": "Adalet, hikmet, iffet ve şecaat erdemleri hangi becerilerle ilişkilendirilir?",
+   "answer": "Sırasıyla hak gözetme, bilgiyi yerinde kullanma, isteklerde ölçülülük ve doğru için ölçülü cesaretle ilişkilendirilir."
+  },
+  {
+   "after": 7,
+   "prompt": "Mutaffifîn suresinin 1–3. ayetlerinde kınanan davranış nedir?",
+   "answer": "Kendisi alırken tam ölçüp başkasına verirken eksiltmektir; iki işlemde farklı ölçüt kullanmak adaleti ve güveni bozar."
+  },
+  {
+   "after": 10,
+   "prompt": "Yardım ederken ihtiyaç sahibinin onurunu nasıl gözetirsin?",
+   "answer": "Kişiyi teşhir etmeden, örneğin adını yaymadan yardımı ulaştırarak; yardımın miktarı da tek ölçüt değildir."
+  },
+  {
+   "after": 12,
+   "prompt": "Kaçırılan ders kadar destek ölçütüyle iki ve altı saat eksiği olan iki öğrenciye sekiz saat nasıl paylaştırılır?",
+   "answer": "Ölçüt eksik saat kadar destek olduğundan birine iki, diğerine altı saat verilir; dört-dört paylaşım açık bırakır."
+  },
+  {
+   "after": 14,
+   "prompt": "İffet kavramı hangi davranış alanlarına uzanır?",
+   "answer": "İstek ve davranışlarda ölçüyü korumayı anlatır; yeme, konuşma ve harcama gibi alanlara da uzanır."
+  },
+  {
+   "after": 16,
+   "prompt": "Gıpta ile hasedi ayıran koşul nedir?",
+   "answer": "Gıptada başkasındaki iyiliğin yok olması istenmeden benzeri istenir; hasette ise o iyiliğin ortadan kalkması istenir."
+  },
+  {
+   "after": 18,
+   "prompt": "Mahremiyetin dört alanı hangileridir?",
+   "answer": "Beden, bilgi, mekân ve dijital mahremiyettir."
+  },
+  {
+   "after": 20,
+   "prompt": "İsraf, tasarruf ve cimrilik birbirinden nasıl ayrılır?",
+   "answer": "İsraf gereksiz savurganlık, tasarruf kaynağı amacına uygun ve ölçülü kullanma, cimrilik ise gereken harcamadan kaçınmadır."
+  },
+  {
+   "after": 22,
+   "prompt": "Hucurât suresinin 11 ve 12. ayetleri sırasıyla hangi davranışları eleştirir?",
+   "answer": "11. ayet alay, karalama ve incitici lakapları; 12. ayet günaha götüren zanları, gizlilikleri araştırmayı ve gıybeti eleştirir."
+  }
+ ],
+ "genclik-ve-degerler": [
+  {
+   "after": 1,
+   "prompt": "Bir cami hangi yönüyle maddi, hangi yönüyle manevi değer taşır?",
+   "answer": "Taş ve mekân olarak maddi; taşıdığı ibadet ve tarih hafızasıyla manevi değer taşır."
+  },
+  {
+   "after": 2,
+   "prompt": "Kültürel birikim kuşaklar arasında nasıl aktarılır?",
+   "answer": "İnsan bu birikimin içine doğar, onunla ilişki kurar ve kendi eylemleriyle değiştirip aktarır; aktarım yalnız kitaplarla olmaz."
+  },
+  {
+   "after": 4,
+   "prompt": "Örf ile âdet arasındaki fark nedir?",
+   "answer": "Örf kuşaklar arasında aktarılan yerleşik değer ve davranış örüntüleri, âdet ise tekrar edilen toplumsal alışkanlıklardır."
+  },
+  {
+   "after": 5,
+   "prompt": "Bir geleneği değerlendirirken yaygınlığı neden yeterli bir ölçüt değildir?",
+   "answer": "Yaygınlık ile ahlaki gerekçe farklı verilerdir; haksızlık ve zarar üreten bir uygulama sırf gelenek diye benimsenmez."
+  },
+  {
+   "after": 9,
+   "prompt": "Arkadaşlarının paylaştığı, kaynağı bilinmeyen bir iddia karşısında hangi tuzağa düşmemelisin?",
+   "answer": "Arkadaşlar paylaşıyor diye iddiayı doğru saymamalı, bilgiyi doğrulamalısın; akran etkisi tek yönlü belirlenme değildir."
+  },
+  {
+   "after": 10,
+   "prompt": "Farklı saat çalışanlara aynı saat ücretinin uygulanması adalet açısından ne gösterir?",
+   "answer": "Aynı ölçüt farklı toplam ödemeler doğurabilir; adalet her olayda aynı miktarı dağıtmak değildir."
+  },
+  {
+   "after": 11,
+   "prompt": "Hikmeti bir tanımı ezberlemekten ayıran nedir?",
+   "answer": "Hikmet bilginin anlamını kavrayıp düşünce ve eylemde yerinde kullanmaktır; ezber farklı durumda uygulayabilmekle aynı beceri değildir."
+  },
+  {
+   "after": 14,
+   "prompt": "İsrâ 23–29 hangi sorumlulukları aynı çerçevede ilişkilendirir?",
+   "answer": "Allah’a kulluk, anne babaya iyi davranma, yakınları ve ihtiyaç sahiplerini gözetme, israf ve cimrilikten kaçınmayı."
+  }
+ ],
+ "gonul-cografyamiz": [
+  {
+   "after": 1,
+   "prompt": "Kültür ile medeniyet kavramları kapsam bakımından nasıl ayrılır?",
+   "answer": "Kültür bir toplumun dil, gelenek, sanat ve yaşam birikimidir; medeniyet farklı toplumların etkileşimle geliştirdiği daha geniş kurum, düşünce ve sanat birikimidir."
+  },
+  {
+   "after": 2,
+   "prompt": "Gönül coğrafyası kavramı neden siyasi sınırla eş anlamlı değildir?",
+   "answer": "Ortak dinî, tarihî ve kültürel bağların hissedildiği yerleri anlatır; farklı ülkelerdeki şehirler aynı ortak hafızayla ilişkilendirilebilir."
+  },
+  {
+   "after": 5,
+   "prompt": "Mescid-i Nebevî ibadet dışında hangi işlevleri de üstlenmiştir?",
+   "answer": "Eğitim ve toplumsal görüşmelerin yapıldığı bir merkezdir; Suffe de buradaki eğitimle ilişkili önemli örnektir."
+  },
+  {
+   "after": 7,
+   "prompt": "Dımaşk ile Şam beldeleri ifadesi ölçek bakımından nasıl ayrılır?",
+   "answer": "Dımaşk bir şehir adıdır; Şam beldeleri ise Suriye, Filistin, Lübnan ve Ürdün çevresindeki daha geniş tarihî alanı anlatabilir."
+  },
+  {
+   "after": 8,
+   "prompt": "Bağdat’taki Beytülhikme ile Nizamiye medreseleri hangi farklı işlevlerle anılır?",
+   "answer": "Beytülhikme çeviri ve bilgi çalışmalarıyla, Nizamiye medreseleri ise eğitim örgütlenmesiyle anılır."
+  },
+  {
+   "after": 11,
+   "prompt": "Farabi, Harezmi ve Buhari hangi alanlardaki katkılarıyla ilişkilendirilir?",
+   "answer": "Farabi felsefeyle, Harezmi matematikle, Buhari hadis çalışmalarıyla ilişkilendirilir."
+  },
+  {
+   "after": 13,
+   "prompt": "Hint Alt Kıtası’nın düşünce ve edebiyat isimleri arasında kimler anılır?",
+   "answer": "İmam Rabbani, Şah Veliyullah Dihlevi ve Muhammed İkbal anılır."
+  },
+  {
+   "after": 16,
+   "prompt": "Kahire’deki Darülhikme ile Bağdat’taki Beytülhikme’yi karıştırmamak için neye bakmalısın?",
+   "answer": "Ortak hikmet sözcüğüne değil kent, kurum ve işlev eşleşmesine bakmalısın; ikisi farklı şehirlerde farklı kurumlardır."
+  },
+  {
+   "after": 17,
+   "prompt": "Abdülkadir el-Cezairi, Abdülkerim el-Hattabi ve Ömer Muhtar ortak olarak hangi tür mücadeleyle anılır?",
+   "answer": "Farklı ülkelerdeki bağımsızlık mücadeleleriyle anılırlar."
+  },
+  {
+   "after": 20,
+   "prompt": "Tercüme ile özgün eser üretimi medeniyete hangi farklı katkıları sağlar?",
+   "answer": "Tercüme aynı fikrin başka okuyuculara ulaşmasını sağlar; özgün eser ise yeni açıklama ve düşünce katkısı getirir."
+  },
+  {
+   "after": 21,
+   "prompt": "Hucurât 13 ile ilişkilendirilen takva kavramı neyi anlatır?",
+   "answer": "Allah’a karşı sorumluluk ve duyarlılık bilincini anlatır."
+  }
+ ],
+ "din-ve-hayat": [
+  {
+   "after": 1,
+   "prompt": "Ailede saygı göstermek neden zararlı davranışa koşulsuz boyun eğmek anlamına gelmez?",
+   "answer": "Aile ilişkileri karşılıklı hak ve sorumluluklarla kurulur; sorumluluk yalnız çocuklara ya da yalnız yetişkinlere yüklenmez."
+  },
+  {
+   "after": 4,
+   "prompt": "Külliye mimaride hangi özelliğiyle öne çıkar?",
+   "answer": "Cami, medrese, çeşme gibi farklı ihtiyaçlara yönelik birden çok işlevi aynı çevrede birleştirebilir."
+  },
+  {
+   "after": 5,
+   "prompt": "Kutadgu Bilig ve Atabetü’l-Hakayık hangi yazarlara aittir?",
+   "answer": "Kutadgu Bilig Yusuf Has Hacib’e, Atabetü’l-Hakayık Edib Ahmed’e aittir."
+  },
+  {
+   "after": 8,
+   "prompt": "Hattat ile müzehhip hangi sanatların icracısıdır?",
+   "answer": "Hattat güzel yazı sanatı olan hattın, müzehhip ise bezeme sanatı olan tezhibin sanatçısıdır."
+  },
+  {
+   "after": 10,
+   "prompt": "Minyatür sanatçısı ve çalışma yeri için hangi terimler kullanılır?",
+   "answer": "Sanatçıya nakkaş, çalışma yerine nakkaşhane denir."
+  },
+  {
+   "after": 11,
+   "prompt": "Çevre neden sınırsız bir mülk yerine emanetle ilişkilendirilir?",
+   "answer": "İnsanın çevreyi sınırsızca tüketmeyip sorumlulukla koruması gerekir; bu yaklaşım yararlanmayı bütünüyle yasaklamaz."
+  },
+  {
+   "after": 14,
+   "prompt": "İçtihat neden herkesin keyfî hüküm üretmesi anlamına gelmez?",
+   "answer": "İçtihat yetkinliğe dayalı dinî yorumlama çabasıdır; istenen hükmün keyfî biçimde üretilmesi değildir."
+  },
+  {
+   "after": 15,
+   "prompt": "Teyemmüm örneği hangi ilkeyi açıklar?",
+   "answer": "Güç yetirme ve kolaylık ilkesini; suyun bulunmaması hâlinde koşula göre öngörülmüş farklı uygulamayı açıklar."
+  },
+  {
+   "after": 18,
+   "prompt": "Zekât, sadaka ve infak kavramları nasıl ayrılır?",
+   "answer": "Zekât belirli şart ve ölçüleri olan ibadet, sadaka daha geniş maddi ve manevi yardım, infak ise imkânları uygun yolda harcamaktır."
+  },
+  {
+   "after": 21,
+   "prompt": "Düşünce, inanç ve ibadet özgürlüğü hangi hakları birbirine bağlar?",
+   "answer": "Düşünceyi ifade etme, inanç konusunda zorlanmama ve ibadeti yerine getirebilme haklarını bağlar."
+  },
+  {
+   "after": 23,
+   "prompt": "Âl-i İmrân 103–105 hangi mesajlarla ele alınır?",
+   "answer": "Birlik, kardeşlik, iyiliğe çağrı ve yıkıcı ayrışmadan kaçınma mesajlarıyla ele alınır."
+  }
+ ],
+ "hz-muhammed-ve-gencler": [
+  {
+   "after": 1,
+   "prompt": "En’âm 76–79 bağlamında Hz. İbrahim batan gök cisimleri üzerine düşünerek hangi sonuca yönelir?",
+   "answer": "Gelip geçici, batan varlıkları ilah kabul etmeyip gökleri ve yeri yaratana yönelir; tefekkür tevhide bağlanır."
+  },
+  {
+   "after": 3,
+   "prompt": "İffet, sabır ve takva kavramları nasıl tanımlanır?",
+   "answer": "İffet ahlaki sınırı gözetme, sabır güçlükte doğru davranışı sürdürme, takva ise Allah’a karşı sorumluluk bilinciyle davranmadır."
+  },
+  {
+   "after": 4,
+   "prompt": "Hz. Muhammed annesini ve dedesini kaç yaşındayken kaybetmiştir?",
+   "answer": "Annesini altı, dedesini sekiz yaşındayken kaybetmiş; ardından amcası Ebû Talib’in himayesinde büyümüştür."
+  },
+  {
+   "after": 6,
+   "prompt": "Hilfülfudûl hangi amaçla kurulmuştur?",
+   "answer": "İslam öncesi Mekke’de haksızlığa uğrayanları korumak amacıyla kurulan bir dayanışma girişimidir."
+  },
+  {
+   "after": 7,
+   "prompt": "Hacerülesved olayı Hz. Muhammed’in hangi görevini gösterir?",
+   "answer": "Kâbe’nin yeniden inşasında taşın yerine konması anlaşmazlığında taraflar arasında hakemlik yapmasını gösterir."
+  },
+  {
+   "after": 9,
+   "prompt": "Sahabi terimi kimi ifade eder?",
+   "answer": "Hz. Muhammed ile Müslüman olarak bir araya gelmiş ve Müslüman olarak vefat etmiş kişiyi ifade eder."
+  },
+  {
+   "after": 13,
+   "prompt": "Üsame bin Zeyd kimin oğludur ve hangi orduya komutan tayin edilmiştir?",
+   "answer": "Zeyd bin Hârise’nin oğludur; Suriye’ye gönderilmesi planlanan orduya komutan tayin edilmiştir."
+  },
+  {
+   "after": 14,
+   "prompt": "Muaz bin Cebel örneğinde kadılık ile muallimlik nasıl ayrılır?",
+   "answer": "Kadılık uyuşmazlık ve hukukla ilgili yargılama görevidir; muallimlik ise öğreticiliktir."
+  },
+  {
+   "after": 16,
+   "prompt": "Hz. Fatıma Uhud’da ve aile hayatında hangi faaliyetleriyle anlatılır?",
+   "answer": "Uhud’da yaralılara yardım etmesiyle, aile hayatında da çocuklarının eğitiminde üstlendiği sorumlulukla anlatılır."
+  },
+  {
+   "after": 17,
+   "prompt": "Esma binti Ebû Bekir’i Esma binti Umeys’ten ayıran bilgiler nelerdir?",
+   "answer": "Esma binti Ebû Bekir, Ebû Bekir’in kızı ve Hz. Aişe’nin kız kardeşidir; Esma binti Umeys ise Cafer’in eşidir."
+  }
+ ],
+ "allah-ve-insan-iliskisi": [
+  {
+   "after": 1,
+   "prompt": "Fıtrat kavramı neden evrensel bir davranış sıklığı ölçümü olarak sunulmaz?",
+   "answer": "Fıtrat dinî insan anlayışı içinde yatkınlığı anlatır; her kişinin aynı davranışı göstereceğini söyleyen bir deney sonucu değildir."
+  },
+  {
+   "after": 2,
+   "prompt": "Gaye ve nizam sözcükleri ne anlama gelir?",
+   "answer": "Gaye amaç, nizam düzen demektir; bu gerekçe gözlenen düzenden bir amaç ve düzenleyici yorumuna geçer."
+  },
+  {
+   "after": 4,
+   "prompt": "Ehad, Halık ve Rezzak isimleri neyi öne çıkarır?",
+   "answer": "Ehad birlik ve eşsizliği, Halık yaratmayı, Rezzak rızık vermeyi öne çıkarır."
+  },
+  {
+   "after": 5,
+   "prompt": "Tevhid ilkesi Allah’ı hangi yönlerden bir kabul etmeyi içerir?",
+   "answer": "Zatında, sıfatlarında ve fiillerinde bir kabul etmeyi ve kulluğu yalnız O’na yöneltmeyi içerir."
+  },
+  {
+   "after": 6,
+   "prompt": "Bâri ile Musavvir isimleri yaratmanın hangi farklı vurgularını taşır?",
+   "answer": "Bâri varlıkları örneksiz meydana getirmeyi, Musavvir ise biçim ve özellik vermeyi vurgular."
+  },
+  {
+   "after": 8,
+   "prompt": "Şâfi ismini öğrenmek neden tedaviye ihtiyaç olmadığı anlamına gelmez?",
+   "answer": "İlaç, hekim desteği ve koruyucu önlemler pratik sorumluluğun parçasıdır; isim bu sorumluluğu kaldırmaz."
+  },
+  {
+   "after": 10,
+   "prompt": "Akıl, irade ve sorumluluk insan için neyi öne çıkarır?",
+   "answer": "Akıl seçenekleri değerlendirmeyi, irade tercih etmeyi, sorumluluk ise tercih ve eylemlerin sonuçlarını üstlenmeyi öne çıkarır."
+  },
+  {
+   "after": 11,
+   "prompt": "Yalnız işitme fiilinin vurgulandığı bir ses örneğinde hangi isim aranır?",
+   "answer": "İşiten anlamındaki Semî aranır; yalnız görme vurgulansaydı Basîr öne çıkardı."
+  },
+  {
+   "after": 13,
+   "prompt": "Halifelik ve emanet anlayışında imkânları tüketme serbestisinden hangi yükümlülük ayrılır?",
+   "answer": "İmkânın hakkını gözetme yükümlülüğü; insan imkânları dilediği gibi tüketmeyip sorumlulukla kullanır."
+  },
+  {
+   "after": 17,
+   "prompt": "Kıraat ile tilavet arasındaki fark nedir?",
+   "answer": "Kıraat okumadır; tilavet ise anlamı üzerinde düşünme ve uygulama boyutlarını da içerir."
+  },
+  {
+   "after": 19,
+   "prompt": "Rûm 22’de birlikte anılan farklılıklar hangileridir?",
+   "answer": "Göklerin ve yerin yaratılmasıyla birlikte insanların dillerinin ve renklerinin farklılığı anılır."
+  }
+ ],
+ "islam-dusuncesinde-mezhepler": [
+  {
+   "after": 1,
+   "prompt": "Aynı temel kaynağa başvurmak hangi şeylerin aynı olmasını zorunlu kılmaz?",
+   "answer": "Kullanılan yöntemin ve varılan bütün ikincil hükümlerin aynı olmasını zorunlu kılmaz."
+  },
+  {
+   "after": 3,
+   "prompt": "Bir senaryoda şehir adının geçmesi neden tek başına coğrafi nedeni seçtirmez?",
+   "answer": "Belirleyici olan mekanizmadır; iklim belirleyiciyse coğrafya, örf vurgulanıyorsa kültür, liderlik tartışılıyorsa siyaset öne çıkar."
+  },
+  {
+   "after": 5,
+   "prompt": "Sosyal nedenler ile kültürel nedenler nasıl ayrılır?",
+   "answer": "Sosyal nedenler toplumsal değişim, savaş, afet ve krizle; kültürel nedenler örf, gelenek, dil ve bilgi birikimlerinin karşılaşmasıyla ilgilidir."
+  },
+  {
+   "after": 6,
+   "prompt": "Muhkem ile müteşabih ayet arasındaki fark nedir?",
+   "answer": "Muhkem ayetin anlamı açıktır; müteşabih ayet farklı yorumlara elverişli ifadeler taşır ve tevil ile açıklanabilir."
+  },
+  {
+   "after": 8,
+   "prompt": "Mezhep ile fırka terimleri nasıl ayrılır?",
+   "answer": "Mezhep kendine özgü yorum yöntemi etrafında oluşan ilmî-fikrî birikimdir; fırka daha çok itikadi-siyasi oluşumlar için kullanılır."
+  },
+  {
+   "after": 10,
+   "prompt": "Matüridilik akli ve naklî deliller konusunda nasıl bir yol izler?",
+   "answer": "İkisini birlikte kullanır; akla yer vermesi nakli yok saydığı anlamına gelmez."
+  },
+  {
+   "after": 11,
+   "prompt": "Eşarilikte iyi-kötü hakkındaki dinî yükümlülük bilgisinde ne öne çıkarılır?",
+   "answer": "Vahyin belirleyiciliği öne çıkarılır; Eşarilik hadis ve sünneti merkeze alırken akıl yürütmeyi de kullanır."
+  },
+  {
+   "after": 12,
+   "prompt": "Şia başlığında imamet kavramı hangi tartışmayla ilişkilidir?",
+   "answer": "Hz. Peygamber sonrası liderlik ve dinî otorite tartışmasıyla; Şia bu konuda Hz. Ali ve Ehlibeytini esas alır."
+  },
+  {
+   "after": 15,
+   "prompt": "Hanefilikte rey kavramı hangi anlamda kullanılır?",
+   "answer": "Gelişi güzel beğeni değil, ilmî değerlendirme ve akıl yürütme anlamında kullanılır."
+  },
+  {
+   "after": 16,
+   "prompt": "Malikiliği tanımada belirleyici yöntem ipucu nedir?",
+   "answer": "Medine halkının Hz. Peygamber geleneğiyle ilişkili uygulamalarının hüküm çıkarmada öne alınmasıdır; eseri Muvatta’dır."
+  },
+  {
+   "after": 17,
+   "prompt": "Şafiilikte kullanılan icma ve kıyas kavramları ne anlama gelir?",
+   "answer": "İcma âlimlerin görüş birliği, kıyas ise benzer gerekçeye dayanarak yapılan hüküm ilişkilendirmesidir."
+  },
+  {
+   "after": 19,
+   "prompt": "Caferilik ile İmamiye hangi farklı sınıflama eksenlerinde yer alır?",
+   "answer": "Caferilik fıkhi, İmamiye ise itikadi-siyasi sınıflamada yer alır; ilişkili ama aynı eksen değildir."
+  }
+ ],
+ "kur-ana-gore-hz-muhammed": [
+  {
+   "after": 1,
+   "prompt": "Peygamberlerin insanlardan seçilmesi hangi gerekçeyle açıklanır?",
+   "answer": "Toplumla iletişim ve uygulanabilir örneklikle; ilkenin hayatta nasıl karşılık bulduğu görünür olur, örnek yalnız söz olarak kalmaz."
+  },
+  {
+   "after": 3,
+   "prompt": "Hilm neden hiçbir yanlışın düzeltilmemesi anlamına gelmez?",
+   "answer": "Hilm yumuşak ve ölçülü davranıştır; bir hataya sakin biçimde müdahale etmek o hatayı onaylamak değildir."
+  },
+  {
+   "after": 4,
+   "prompt": "Tevazu ile sabır hangi davranışlarla ayırt edilir?",
+   "answer": "İmkânı olduğu hâlde başkasını aşağılamamak tevazu, uzun güçlüklere rağmen görevini sürdürmek sabırla ilişkilidir."
+  },
+  {
+   "after": 6,
+   "prompt": "Cömertlik neden yalnız para aktarımıyla sınırlı değildir?",
+   "answer": "Bilgi, zaman, emek ve güler yüz de destek olur ve sosyal ilişkide değer taşır."
+  },
+  {
+   "after": 7,
+   "prompt": "Nübüvvet ve risalet kavramları hangi anlam alanlarıyla ilişkilidir?",
+   "answer": "Nübüvvet peygamberlik, risalet ise elçilik anlam alanıyla ilişkilidir."
+  },
+  {
+   "after": 10,
+   "prompt": "Teşri hangi yetkiyle ilişkilendirilir?",
+   "answer": "Allah’ın izni ve bilgisi çerçevesindeki peygamberlik yetkisiyle ilişkilendirilir."
+  },
+  {
+   "after": 12,
+   "prompt": "Emaneti korumanın dijital veride de düşünülmesi örnek almada neyi gösterir?",
+   "answer": "İlke başka zamana aktarılırken amaç ve uygun koşul korunur; yüzeydeki araçların aynı olması gerekmez."
+  },
+  {
+   "after": 14,
+   "prompt": "Sünnet ile hadis kavramlarının kapsamı nasıl ayrılır?",
+   "answer": "Sünnet Hz. Peygamber’in söz, fiil ve onaylarını kapsayan örnek davranış geleneğidir; hadis ise ona nispet edilen söz ve rivayetlerdir."
+  },
+  {
+   "after": 16,
+   "prompt": "Bilinçli örnek alma ile biçimsel taklit arasındaki fark nedir?",
+   "answer": "Bilinçli örnek alma davranışın amacını ve koşulunu anlayıp ilkeyi uygulamak; biçimsel taklit ise yalnız dış hareketi kopyalamaktır."
+  },
+  {
+   "after": 18,
+   "prompt": "Aydınlatıcı kandil ifadesi ayette neyi anlatır?",
+   "answer": "Fiziksel bir lambayı değil, dinî rehberlik ve yol göstermeyi anlatan bir benzetmedir."
+  }
+ ],
+ "kur-anda-gecen-bazi-kavramlar": [
+  {
+   "after": 1,
+   "prompt": "Hidayet kavramında Allah ve insan açısından hangi boyutlar ayrılır?",
+   "answer": "Allah açısından rehberlik etme, insan açısından bu rehberliğe yönelme boyutu ayrılır; ihtida İslam’ı benimseme için kullanılır."
+  },
+  {
+   "after": 2,
+   "prompt": "Dalalet hidayetle nasıl bir ilişki içindedir?",
+   "answer": "Dalalet doğru yoldan sapma anlamıyla hidayetin karşıtıdır."
+  },
+  {
+   "after": 3,
+   "prompt": "El-Hâdi isminin anlamı nedir ve rehberliğin vesileleri olarak neler anlatılır?",
+   "answer": "Doğru yolu gösteren demektir; kitaplar ve peygamberler rehberlik vesilesi olarak anlatılır."
+  },
+  {
+   "after": 5,
+   "prompt": "Muhsin kime denir?",
+   "answer": "İhsan sahibine, yani işini Allah’ı görüyormuşçasına bilinç ve özenle yapan kişiye denir."
+  },
+  {
+   "after": 9,
+   "prompt": "Maide 2’de hangi alanlarda yardımlaşma istenir, hangilerinde istenmez?",
+   "answer": "İyilik ve takvada yardımlaşma istenir; günah ve düşmanlıkta yardımlaşma istenmez."
+  },
+  {
+   "after": 10,
+   "prompt": "Hidayet ile sırat-ı müstakim vurguları nasıl ayrılır?",
+   "answer": "Hidayet doğru yola yönelmeyi öne çıkarabilir; sırat vurgusu ise yolun kendisi ve o doğrultuda ilerlemeyle ilişkilidir."
+  },
+  {
+   "after": 11,
+   "prompt": "Fâtiha’da birlikte yer alan üç anlam parçası nedir?",
+   "answer": "Yalnız Allah’a kulluk, yardım dileme ve doğru yola iletilme talebidir."
+  },
+  {
+   "after": 14,
+   "prompt": "Davet ile irşat arasındaki fark nedir?",
+   "answer": "Davet çağırma, irşat ise yol gösterme ve rehberlik anlamı taşır."
+  },
+  {
+   "after": 15,
+   "prompt": "Şehadet sözcüğü hangi iki anlamda kullanılabilir?",
+   "answer": "Dinî-tarihî bağlamda canını vermeyle ilişkili anlamda ve tanıklık anlamında kullanılabilir."
+  },
+  {
+   "after": 16,
+   "prompt": "Salih amel kavramı neden dar bir tören listesine indirgenmez?",
+   "answer": "İbadetlerin yanında yardım, öğrenme, engeli kaldırma ve işi güzel yapma da salih amel örnekleridir."
+  },
+  {
+   "after": 18,
+   "prompt": "Aynı yardımı biri Allah rızası, diğeri alkış için yaparsa hangi boyut değişir, hangisi korunur?",
+   "answer": "Niyet düzeyinde ihlas yorumu değişir; eylem düzeyindeki paylaşım ise ikisinde de korunur."
+  }
+ ],
+ "inanc-ile-ilgili-meseleler": [
+  {
+   "after": 1,
+   "prompt": "Monoteizm ile politeizm arasındaki fark nedir?",
+   "answer": "Monoteizm tek tanrı inancı, politeizm ise birden çok tanrı inancıdır."
+  },
+  {
+   "after": 3,
+   "prompt": "İslam öğretisi Allah’ın evrenle ilişkisini deizmden hangi noktada farklı açıklar?",
+   "answer": "İlişki yalnız ilk yaratmayla sınırlanmaz; bilgi, irade, kudret, vahiy ve sorumlulukla devam eder."
+  },
+  {
+   "after": 7,
+   "prompt": "Comte’un pozitivizm başlığında anlatılan evreler hangileridir?",
+   "answer": "Teolojik, metafizik ve pozitif evrelerdir; bu tasarım bir ölçüm değil, Comte’un tarih ve düşünce anlayışıdır."
+  },
+  {
+   "after": 8,
+   "prompt": "Laiklik özellikle hangi ilişkinin düzenlenmesiyle ilgilidir?",
+   "answer": "Devlet ile din ilişkisinin düzenlenmesiyle ilgilidir."
+  },
+  {
+   "after": 10,
+   "prompt": "Transhümanizmin ana odağı nedir?",
+   "answer": "Bilim ve teknolojiyle insanın bedensel ya da bilişsel yetilerini geliştirmek, yani insan kapasitesine teknolojiyle müdahaledir."
+  },
+  {
+   "after": 11,
+   "prompt": "Kötülük problemi hangi iki unsurun bağdaştırılmasını sorgular?",
+   "answer": "Mutlak iyi, bilgili ve güçlü Tanrı anlayışı ile dünyadaki acı ve kötülüğün bağdaştırılmasını sorgular."
+  },
+  {
+   "after": 14,
+   "prompt": "Özgür irade savunması kötülük problemine nasıl bir cevap verir?",
+   "answer": "Anlamlı tercih yapabilmenin yanlış tercihi de mümkün kıldığını söyler; doğal afetlerin kökenini ise tek başına açıklamaz."
+  },
+  {
+   "after": 15,
+   "prompt": "Özgür irade dışında kötülük problemine verilen dinî-felsefi cevaplar hangileridir?",
+   "answer": "Hayatı imtihan olarak yorumlama, güçlüklerin ahlaki gelişimle ilişkisi ve insan bilgisinin sınırlılığı."
+  },
+  {
+   "after": 17,
+   "prompt": "Yeni dinî hareketlerin doğuş bağlamları arasında neler sayılır?",
+   "answer": "Şehirleşme, modernleşme ve anlam arayışı sayılır."
+  },
+  {
+   "after": 20,
+   "prompt": "Bir düşünceyi eleştirmek ile İslamofobi arasındaki fark nedir?",
+   "answer": "Düşünceyi gerekçeyle eleştirmek kimlik saldırısı değildir; İslamofobi Müslümanlara yönelik korku, önyargı ve dışlamayı anlatır."
+  },
+  {
+   "after": 22,
+   "prompt": "Lokman 27 hangi benzetmeyle Allah’ın sözlerinin tükenmezliğini anlatır?",
+   "answer": "Ağaçların kalem, denizlerin mürekkep olması benzetmesiyle; tema Kehf 109’a benzese de ayrı bir ayet bağlamıdır."
+  },
+  {
+   "after": 23,
+   "prompt": "Hadîd 1–5’te öne çıkan temalar nelerdir?",
+   "answer": "Allah’ın yüceltilmesi, hükümranlık, hayat-ölüm, başlangıç-son ve kapsamlı bilgi temalarıdır."
+  }
+ ],
+ "bilgi-ve-inanc": [
+  {
+   "after": 1,
+   "prompt": "İlim ile marifet terimlerinin vurguları nasıl ayrılır?",
+   "answer": "İlim gerçeğe uygun bilmeyi, marifet ise düşünerek daha derin kavrayış ve tanımayı vurgular."
+  },
+  {
+   "after": 2,
+   "prompt": "İslam düşüncesinde üç temel bilgi yolu hangileridir?",
+   "answer": "Salim duyular, selim akıl ve sadık haberdir."
+  },
+  {
+   "after": 3,
+   "prompt": "Termometredeki göstergeyi görmek ile o değerin anlamını açıklamak nasıl ayrılır?",
+   "answer": "Göstergeyi görmek duyusal veridir; ne anlama geldiğini açıklamak ayrıca kavram ve akıl yürütme gerektirir."
+  },
+  {
+   "after": 5,
+   "prompt": "Selim akıl neyi ifade eder?",
+   "answer": "Doğru ve tutarlı değerlendirmeye yönelen, veriler arasında ilişki kurup gerekçeli sonuç çıkaran aklı ifade eder."
+  },
+  {
+   "after": 8,
+   "prompt": "Bir iletinin bin kez kopyalanması neden mütevatir haber sayılmaz?",
+   "answer": "Mütevatirde sayı kadar aktarımın niteliği, kaynakların bağımsızlığı ve sürekliliği önemlidir; kopyalar aynı ilk iddiaya dönebilir."
+  },
+  {
+   "after": 10,
+   "prompt": "Sezgi, rüya ve ilham neden herkes için bağlayıcı kaynak sayılmaz?",
+   "answer": "Bunlar öznel yaşantılardır; kişisel önemleri olsa da genel kanıt gücü taşımazlar."
+  },
+  {
+   "after": 11,
+   "prompt": "Bir bilginin doğru olması ile faydalı olması nasıl ayrılır?",
+   "answer": "Doğruluk içeriğin gerçeklikle uygunluğudur; faydalılık ise belirli amaç ve kişiler açısından olumlu işlevdir."
+  },
+  {
+   "after": 13,
+   "prompt": "Bilgiyi korumak neden yalnız dosyayı saklamakla sınırlı değildir?",
+   "answer": "İçeriğin bozulmadan ve kaynağıyla birlikte anlaşılabilir kalması da gerekir."
+  },
+  {
+   "after": 14,
+   "prompt": "Akaid ile akait ilmi arasındaki fark nedir?",
+   "answer": "Akaid İslam inancının temel esaslarıdır; akait ilmi ise bu esasları konu edinen çalışma alanıdır."
+  },
+  {
+   "after": 17,
+   "prompt": "Tasdik merkezli yorumda amel ile imanın özü arasındaki ilişki nasıl kurulur?",
+   "answer": "Amel imanın özüyle aynı kavram sayılmaz; yine de iman ile yaşayış arasında güçlü bir ilişki kurulur."
+  },
+  {
+   "after": 19,
+   "prompt": "İsra 36’nın öne çıkarılan mesajı nedir?",
+   "answer": "Bilgi sahibi olunmayan şeyin peşine düşünmeden gitmemek ve duyu ile akıl imkânlarını sorumlu kullanmaktır."
+  }
+ ]
+}

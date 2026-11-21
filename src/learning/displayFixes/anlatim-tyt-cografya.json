@@ -262,5 +262,185 @@
  {
   "from": "Sonuçları HTML’deki mesafe, alan, kot ve eğim değerleriyle kontrol et. Harita, profil ve hesap aynı araziyi tarif etmeli; birinde değişen yükselti diğerinde unutulmamalıdır. Verilen bilgi yetmiyorsa bilinmiyor demek doğru sonuçtur; boşluğu uydurma ölçümle doldurmak öğrenme değil yanlış güven oluşturur.",
   "to": "Sonuçları modeldeki mesafe, alan, kot ve eğim değerleriyle kontrol et. Harita, profil ve hesap aynı araziyi tarif etmeli; birinde değişen yükselti diğerinde unutulmamalıdır. Verilen bilgi yetmiyorsa bilinmiyor demek doğru sonuçtur; boşluğu uydurma ölçümle doldurmak öğrenme değil yanlış güven oluşturur."
+ },
+ {
+  "from": "Okul karşılaştırmalarında 0–14 genç,15–64 çalışma çağındaki,65 ve üstü yaşlı grup olarak ele alınabilir. Bu bir yaş sınıflamasıdır;15–64 grubundaki herkes istihdamda değildir. Öğrenciler, iş arayanlar ve iş gücüne katılmayanlar bulunabilir;65 üstünde çalışan insanlar da olabilir.",
+  "to": "Karşılaştırmalarda 0–14 genç, 15–64 çalışma çağındaki,65 ve üstü yaşlı grup olarak ele alınabilir. Bu bir yaş sınıflamasıdır; 15–64 grubundaki herkes istihdamda değildir. Öğrenciler, iş arayanlar ve iş gücüne katılmayanlar bulunabilir; 65 üstünde çalışan insanlar da olabilir."
+ },
+ {
+  "from": "Verilen okul modeli genç ve yaşlı toplamını çalışma çağındaki yaş grubuna böler ve 100 ile çarpar. Örneğin genç 23, yaşlı 13, çalışma çağı 64 ise oran 36/64×100=%56,25 olur. Bu, çalışma çağındaki 100 kişiye karşılık tanımlı diğer yaş gruplarında 56,25 kişi anlamına gelir; toplamın %56,25’i çocuk veya yaşlıdır demek değildir.",
+  "to": "Verilen model genç ve yaşlı toplamını çalışma çağındaki yaş grubuna böler ve 100 ile çarpar. Örneğin genç 23, yaşlı 13, çalışma çağı 64 ise oran 36/64 × 100 = %56,25 olur. Bu, çalışma çağındaki 100 kişiye karşılık tanımlı diğer yaş gruplarında 56,25 kişi anlamına gelir; toplamın %56,25’i çocuk veya yaşlıdır demek değildir."
+ },
+ {
+  "from": "Oran isteniyorsa aynı dönemin başlangıç nüfusu veya soruda verilen uygun payda kullanılmalıdır. Binde ile yüzde farklı ölçeklerdir; binde 10, yüzde 1 ile aynı orandır. Salt doğum sayısı yüksek diye büyüme kesin yüksek denmez; ölüm, göç ve toplam nüfus da gerekir. Her hesap kartı kendi verisini açıkça vermelidir.",
+  "to": "Oran isteniyorsa aynı dönemin başlangıç nüfusu veya soruda verilen uygun payda kullanılmalıdır. Binde ile yüzde farklı ölçeklerdir; binde 10, yüzde 1 ile aynı orandır. Salt doğum sayısı yüksek diye büyüme kesin yüksek denmez; ölüm, göç ve toplam nüfus da gerekir. Her hesap sorusu kendi verisini açıkça vermelidir."
+ },
+ {
+  "from": "Tarihsel sayımlar vergi, askerlik veya yönetim amacıyla sınırlı grupları saymış olabilir. Osmanlı’nın 1831 sayımı erkek ve vergi-askerlik kapsamıyla,1927 ise Cumhuriyet’in ilk genel nüfus sayımı bağlamıyla ele alınır. Farklı kapsamdaki iki tarihsel sayıyı bütün nüfusun aynı yöntemle ölçülmüş dizisi gibi kullanma.",
+  "to": "Tarihsel sayımlar vergi, askerlik veya yönetim amacıyla sınırlı grupları saymış olabilir. Osmanlı’nın 1831 sayımı erkek ve vergi-askerlik kapsamıyla, 1927 ise Cumhuriyet’in ilk genel nüfus sayımı bağlamıyla ele alınır. Farklı kapsamdaki iki tarihsel sayıyı bütün nüfusun aynı yöntemle ölçülmüş dizisi gibi kullanma."
+ },
+ {
+  "from": "Beklenen yaşam süresi, verilen yaşa özgü ölüm koşulları sürse bir kişinin ortalama kaç yıl yaşamasının bekleneceğini özetleyen yaşam tablosu ölçüsüdür. Genellikle doğuşta beklenen süre karşılaştırılır; bu her yeni doğanın kesin o yaşta öleceği tahmini değildir. Bir yılda ölenlerin yaş ortalaması, yaşayanların ortanca yaşı ve doğuşta beklenen ömür farklı verilerdir. Kaynağın 2021 haritası bugünün güncel ölçümü diye sunulmaz.",
+  "to": "Beklenen yaşam süresi, verilen yaşa özgü ölüm koşulları sürse bir kişinin ortalama kaç yıl yaşamasının bekleneceğini özetleyen yaşam tablosu ölçüsüdür. Genellikle doğuşta beklenen süre karşılaştırılır; bu her yeni doğanın kesin o yaşta öleceği tahmini değildir. Bir yılda ölenlerin yaş ortalaması, yaşayanların ortanca yaşı ve doğuşta beklenen ömür farklı verilerdir. 2021 tarihli bir harita bugünün güncel ölçümü diye sunulmaz."
+ },
+ {
+  "from": "Sağlık, beslenme, salgınlar, savaş, afet, eğitim ve nüfus politikaları doğum, ölüm ve göç kanallarıyla yapıyı etkileyebilir. Yaşlanan toplumda bakım ve hizmet planı; genç toplumda eğitim ve istihdam planı farklılaşır. Kaynaktaki olumlu-olumsuz listeleri bu koşullu ilişkiler olarak öğren. Bir piramidi yalnız gelişmiş veya gelişmemiş etiketiyle açıklamak yerine gerçek yaş, göç, iş ve hizmet verisini birlikte kullan.",
+  "to": "Sağlık, beslenme, salgınlar, savaş, afet, eğitim ve nüfus politikaları doğum, ölüm ve göç kanallarıyla yapıyı etkileyebilir. Yaşlanan toplumda bakım ve hizmet planı; genç toplumda eğitim ve istihdam planı farklılaşır. Olumlu-olumsuz sonuç listelerini bu koşullu ilişkiler olarak öğren. Bir piramidi yalnız gelişmiş veya gelişmemiş etiketiyle açıklamak yerine gerçek yaş, göç, iş ve hizmet verisini birlikte kullan."
+ },
+ {
+  "from": "Etkileşimdeki üç yaş profili özgün karşılaştırmadır; gerçek ülkenin güncel sayımı değildir. Toplam ve alanı değiştirince yüzdeler aynı kalabilir ama kişi sayısı ve yoğunluk değişir. Gerekçeni görünür hesapla karşılaştır; bu keşif XP veya sınav doğruluğu sayılmaz. Bağımsız soru yeni verileri kendi kartında açıkça verir.",
+  "to": "Etkileşimdeki üç yaş profili özgün karşılaştırmadır; gerçek ülkenin güncel sayımı değildir. Toplam ve alanı değiştirince yüzdeler aynı kalabilir ama kişi sayısı ve yoğunluk değişir. Gerekçeni görünür hesapla karşılaştır."
+ },
+ {
+  "from": "Mercan iskeletleri, tebeşir ve bitkisel kalıntılardan gelişen kömürler organik/biyojenik köken ilişkisini gösterir. Kireç taşının kimyasal veya biyojenik katkılı türleri vardır; yalnız adını görüp her örneğe tek bir ayrıntılı geçmiş atama. Kaynakta kullanılan okul gruplaması ile gerçek örneğin karma oluşumunu ayır.",
+  "to": "Mercan iskeletleri, tebeşir ve bitkisel kalıntılardan gelişen kömürler organik/biyojenik köken ilişkisini gösterir. Kireç taşının kimyasal veya biyojenik katkılı türleri vardır; yalnız adını görüp her örneğe tek bir ayrıntılı geçmiş atama. Öğretimde kullanılan gruplama ile gerçek örneğin karma oluşumunu ayır."
+ },
+ {
+  "from": "Yüksek sıcaklık, basınç ve akışkanların etkisiyle kayaç katı hâlde değişebilir. Kireç taşından mermer, granitten gnays, kum taşından kuvarsit ve kilce zengin uygun kayaçlardan şist gelişmesi okul örnekleridir. Yeni mineral ve doku oluşabilir; başlangıç kayacı ve koşul sonucu belirler.",
+  "to": "Yüksek sıcaklık, basınç ve akışkanların etkisiyle kayaç katı hâlde değişebilir. Kireç taşından mermer, granitten gnays, kum taşından kuvarsit ve kilce zengin uygun kayaçlardan şist gelişmesi temel örneklerdir. Yeni mineral ve doku oluşabilir; başlangıç kayacı ve koşul sonucu belirler."
+ },
+ {
+  "from": "Taşlaşma ile soğuma, başkalaşma ile erime ayrı oklardır. Laboratuvarda süreç seçmek yalnız bir temsilî yolu gösterir; süreler, derinlikler ve gerçek saha hızları hesaplanmaz. Önce ürünü tahmin et, sonra ok üzerindeki süreç ile kayacın dokusunu karşılaştır. Bu keşif sınav başarısı veya XP oluşturmaz.",
+  "to": "Taşlaşma ile soğuma, başkalaşma ile erime ayrı oklardır. Laboratuvarda süreç seçmek yalnız bir temsilî yolu gösterir; süreler, derinlikler ve gerçek saha hızları hesaplanmaz. Önce ürünü tahmin et, sonra ok üzerindeki süreç ile kayacın dokusunu karşılaştır."
+ },
+ {
+  "from": "Anadolu’nun birçok yerinde yüksek düzlükler ve akarsuların derine yardığı yüzeyler, geniş ölçekli yükselme geçmişiyle ilişkilidir. Epirojenez okul dilinde geniş alanlı dikey hareketleri anlatır. Tek bir plato fotoğrafından bütün ülkenin aynı anda ve aynı miktarda yükseldiği sonucu çıkarılamaz.",
+  "to": "Anadolu’nun birçok yerinde yüksek düzlükler ve akarsuların derine yardığı yüzeyler, geniş ölçekli yükselme geçmişiyle ilişkilidir. Epirojenez geniş alanlı dikey hareketleri anlatır. Tek bir plato fotoğrafından bütün ülkenin aynı anda ve aynı miktarda yükseldiği sonucu çıkarılamaz."
+ },
+ {
+  "from": "Kıta sahanlığı deniz altındaki kıta kenarının görece sığ uzantısıdır; okulda yaklaşık 200 m derinliğe kadar anlatılabilir, gerçek sınır sabit metre çizgisi değildir. Dar şelf ve dik kıyı aşınımı destekleyebilir; yine de bütün dar şelf kıyılarında aynı falez yüksekliği veya gerileme hızı zorunlu değildir.",
+  "to": "Kıta sahanlığı deniz altındaki kıta kenarının görece sığ uzantısıdır; genellikle yaklaşık 200 m derinliğe kadar anlatılabilir, gerçek sınır sabit metre çizgisi değildir. Dar şelf ve dik kıyı aşınımı destekleyebilir; yine de bütün dar şelf kıyılarında aynı falez yüksekliği veya gerileme hızı zorunlu değildir."
+ },
+ {
+  "from": "Bugünkü bir dağda farklı yaşta ve kökende kayaçlar bulunabilir. Kaynağın ana sınıflaması baskın yapısal geçmişi anlatır; her yüzey parçasının aynı süreçle oluştuğu anlamına gelmez. Yer adını ezberledikten sonra mutlaka kıvrım, fay bloğu veya lav–kül kanıtıyla ilişkilendir; tek fotoğrafla her dağı adlandıramazsın.",
+  "to": "Bugünkü bir dağda farklı yaşta ve kökende kayaçlar bulunabilir. Ana sınıflama baskın yapısal geçmişi anlatır; her yüzey parçasının aynı süreçle oluştuğu anlamına gelmez. Yer adını ezberledikten sonra mutlaka kıvrım, fay bloğu veya lav–kül kanıtıyla ilişkilendir; tek fotoğrafla her dağı adlandıramazsın."
+ },
+ {
+  "from": "Debi belirli kesitten geçen hacim/zamandır;30 m³ su 2 saniyede geçerse ortalama 15 m³/s olur. Rejim yıl içindeki değişim örüntüsüdür. Kar erimesi ilkbahar akışını artırabilir, ama tek ilkbahar ölçümü bütün yılın rejimini göstermez. Havza büyüklüğü de tek başına hız veya debiyi kesin sıralamaz.",
+  "to": "Debi belirli kesitten geçen hacim/zamandır; 30 m³ su 2 saniyede geçerse ortalama 15 m³/s olur. Rejim yıl içindeki değişim örüntüsüdür. Kar erimesi ilkbahar akışını artırabilir, ama tek ilkbahar ölçümü bütün yılın rejimini göstermez. Havza büyüklüğü de tek başına hız veya debiyi kesin sıralamaz."
+ },
+ {
+  "from": "Sınıflamalar belirli ölçütlerle kurulur; okulda kullanılan sıcak, ılıman ve soğuk iklim aileleri bütün ayrıntıları aynı kutuya kapatmaz. Geçiş bölgeleri ve yükselti basamakları vardır. Önce sorunun kullandığı sınıflamayı ve verinin aylık ortalama mı, toplam mı olduğunu belirle; sonra birbiriyle bağımsız en az iki işaret ara.",
+  "to": "Sınıflamalar belirli ölçütlerle kurulur; sık kullanılan sıcak, ılıman ve soğuk iklim aileleri bütün ayrıntıları aynı kutuya kapatmaz. Geçiş bölgeleri ve yükselti basamakları vardır. Önce sorunun kullandığı sınıflamayı ve verinin aylık ortalama mı, toplam mı olduğunu belirle; sonra birbiriyle bağımsız en az iki işaret ara."
+ },
+ {
+  "from": "Yükselen hava ve ortalama sıcaklık ilişkisi okul sorularında çoğu zaman her 200 m'de 1 °C azalma şeklinde idealize edilir. Bu, bütün günlerde bütün vadilere uygulanacak ölçülmüş sabit değildir; terselme ve farklı hava kütleleri olabilir. Türkiye'de doğudaki yüksek alanların düşük ortalama sıcaklığında yükselti güçlü bir etkendir. Gerçek istasyon karşılaştırması uygun dönem ve ölçüm gerektirir.",
+  "to": "Yükselen hava ve ortalama sıcaklık ilişkisi sorularda çoğu zaman her 200 m'de 1 °C azalma şeklinde idealize edilir. Bu, bütün günlerde bütün vadilere uygulanacak ölçülmüş sabit değildir; terselme ve farklı hava kütleleri olabilir. Türkiye'de doğudaki yüksek alanların düşük ortalama sıcaklığında yükselti güçlü bir etkendir. Gerçek istasyon karşılaştırması uygun dönem ve ölçüm gerektirir."
+ },
+ {
+  "from": "Levha sınırları, fay kuşakları, deprem ve volkan dağılışları büyük ölçekte ilişkilidir; birebir aynı değildir. Genç yüksek dağlar her zaman volkan değildir; eski dağlar daha sonra yeniden yükselebilir. Laboratuvardaki hareket miktarı öğretici bir geometrik ayardır; gerçek deprem zamanı, büyüklüğü veya güvenli yer tahmini üretmez. Tahminini kanıtla karşılaştır, sonra özlü bir gerekçe yaz; şemayı izlemek başarı veya XP sayılmaz.",
+  "to": "Levha sınırları, fay kuşakları, deprem ve volkan dağılışları büyük ölçekte ilişkilidir; birebir aynı değildir. Genç yüksek dağlar her zaman volkan değildir; eski dağlar daha sonra yeniden yükselebilir. Laboratuvardaki hareket miktarı öğretici bir geometrik ayardır; gerçek deprem zamanı, büyüklüğü veya güvenli yer tahmini üretmez. Tahminini kanıtla karşılaştır, sonra özlü bir gerekçe yaz."
+ },
+ {
+  "from": "Bir harita üretmek, bir seyahat anlatısı yazmak ve iki bölgeyi karşılaştırmak farklı ürünlerdir. Aynı kişi birden çok yöntem kullanabilir; aynı yöntem farklı çağlarda sürer. Uygulamadaki dönem kartları bu sürekliliği gösterir, bilgi üretimini çağ sınırlarında bir anda kesmez.",
+  "to": "Bir harita üretmek, bir seyahat anlatısı yazmak ve iki bölgeyi karşılaştırmak farklı ürünlerdir. Aynı kişi birden çok yöntem kullanabilir; aynı yöntem farklı çağlarda sürer. Bu süreklilik nedeniyle bilgi üretimi çağ sınırlarında bir anda kesilmez."
+ },
+ {
+  "from": "Thales, Anaksimandros, Hekataios, Platon, Eratosthenes, Strabon ve Batlamyus kaynakta İlk Çağ bağlamında sıralanır. Yerlerin tanınması, dünyaya ilişkin düşünceler ve coğrafi betimleme bu dönemin öğrenme çerçevesidir. Antik çalışmaları yalnız masal veya bugünkü eksiksiz bilim olarak görmek iki ayrı aşırılıktır. Yeni karşılaştırılan Aurelia kâğıdı ayırt edici katkıları da verir: Eratosthenes Dünya çevresini gölge ve mesafelerle tahmin etmesiyle; Strabon Geographika adlı bölgesel tasviriyle; Batlamyus ise Geographia/Coğrafya Kılavuzu ve koordinat-harita yaklaşımıyla öne çıkar. Gölge hesabı ile harita koordinatını birbirine atama.",
+  "to": "Thales, Anaksimandros, Hekataios, Platon, Eratosthenes, Strabon ve Batlamyus İlk Çağ bağlamında sıralanır. Yerlerin tanınması, dünyaya ilişkin düşünceler ve coğrafi betimleme bu dönemin öğrenme çerçevesidir. Antik çalışmaları yalnız masal veya bugünkü eksiksiz bilim olarak görmek iki ayrı aşırılıktır. Ayırt edici katkılar şunlardır: Eratosthenes Dünya çevresini gölge ve mesafelerle tahmin etmesiyle; Strabon Geographika adlı bölgesel tasviriyle; Batlamyus ise Geographia/Coğrafya Kılavuzu ve koordinat-harita yaklaşımıyla öne çıkar. Gölge hesabı ile harita koordinatını birbirine atama."
+ },
+ {
+  "from": "Harezmi, İbn Sina, İbn Battuta, Biruni, Makdisi, İbn Hurdazbih, Mesudi ve İdrisi kaynakta bu dönem çerçevesinde yer alır. Yolculuklar, farklı bilgi birikimlerinin aktarılması, gözlem ve haritalama coğrafi bilginin devamını sağlar. Dönemde farklı bölgelerin koşulları ve kurumları aynı değildir. Biruni için konum ve mesafe hesabı; İdrisî için dünya haritası ve Sicilya çevresindeki çalışma bağlamı; İbn Battûta için uzun yolculuk gözlemleri ayırt edici ipuçlarıdır. İbn Haldun toplum ve çevre yorumlarıyla bu karşılaştırmaya katılır; yalnız “Orta Çağ coğrafyacısı” ifadesi bu kişileri tek başına ayırmaz.",
+  "to": "Harezmi, İbn Sina, İbn Battuta, Biruni, Makdisi, İbn Hurdazbih, Mesudi ve İdrisi bu dönem çerçevesinde yer alır. Yolculuklar, farklı bilgi birikimlerinin aktarılması, gözlem ve haritalama coğrafi bilginin devamını sağlar. Dönemde farklı bölgelerin koşulları ve kurumları aynı değildir. Biruni için konum ve mesafe hesabı; İdrisî için dünya haritası ve Sicilya çevresindeki çalışma bağlamı; İbn Battûta için uzun yolculuk gözlemleri ayırt edici ipuçlarıdır. İbn Haldun toplum ve çevre yorumlarıyla bu karşılaştırmaya katılır; yalnız “Orta Çağ coğrafyacısı” ifadesi bu kişileri tek başına ayırmaz."
+ },
+ {
+  "from": "Bartholomeu Dias, Vasco da Gama, Kristof Kolomb ve Macellan yeni deniz yolları ve yolculuklar bağlamında; Pirî Reis ve Seydî Ali Reis Osmanlı denizcilik birikimiyle birlikte kaynakta anılır. Rönesans, teknik araçlar ve deniz ulaşımı coğrafi bilginin toplanma ve dolaşma imkânlarını etkiledi.",
+  "to": "Bartholomeu Dias, Vasco da Gama, Kristof Kolomb ve Macellan yeni deniz yolları ve yolculuklar bağlamında; Pirî Reis ve Seydî Ali Reis Osmanlı denizcilik birikimiyle birlikte anılır. Rönesans, teknik araçlar ve deniz ulaşımı coğrafi bilginin toplanma ve dolaşma imkânlarını etkiledi."
+ },
+ {
+  "from": "Pirî Reis, Seydî Ali Reis, Kâtip Çelebi ve Evliya Çelebi kaynakta Yeni Çağ bölümündedir. Denizcilik, harita, derleme ve seyahat gibi bilgi türleri aynı dönemde yan yana bulunabilir. Bir kişi adı görmek tek başına hangi eserin hangi sayfasına ulaşıldığını göstermez. Kaynakla doğrulanan eser ayrımları şunlardır: Pirî Reis’in Kitâb-ı Bahriye’si denizcilik, kıyı ve liman bilgisini; Kâtip Çelebi’nin Cihannümâ’sı coğrafi derlemeyi; Evliya Çelebi’nin Seyahatnâme’si yerleşim, insan ve güzergâh gözlemlerini öne çıkarır. Eser adını, yazarını ve yaptığı işi birlikte hatırla.",
+  "to": "Pirî Reis, Seydî Ali Reis, Kâtip Çelebi ve Evliya Çelebi Yeni Çağ bağlamında anılır. Denizcilik, harita, derleme ve seyahat gibi bilgi türleri aynı dönemde yan yana bulunabilir. Ayırt edici eser ayrımları şunlardır: Pirî Reis’in Kitâb-ı Bahriye’si denizcilik, kıyı ve liman bilgisini; Kâtip Çelebi’nin Cihannümâ’sı coğrafi derlemeyi; Evliya Çelebi’nin Seyahatnâme’si yerleşim, insan ve güzergâh gözlemlerini öne çıkarır. Eser adını, yazarını ve yaptığı işi birlikte hatırla."
+ },
+ {
+  "from": "Bu ders kaynakta açıkça doğrulanmayan eser tarihi veya ayrıntısını soru anahtarı yapmaz. Sınavda bir seyahat notu verildiğinde, gözlenen yer ve tarih için bilgi sağlayabileceğini söyleyebilirsin. Bu notun bütün dünyayı sayısal olarak temsil ettiğini söylemek örneklem sınırını aşar.",
+  "to": "Sınavda bir seyahat notu verildiğinde, gözlenen yer ve tarih için bilgi sağlayabileceğini söyleyebilirsin. Bu notun bütün dünyayı sayısal olarak temsil ettiğini söylemek örneklem sınırını aşar."
+ },
+ {
+  "from": "Alexander von Humboldt, Carl Ritter ve Friedrich Ratzel kaynakta modern coğrafyanın gelişimiyle birlikte anılır. Yerleri tek tek tasvir etmenin yanında dağılışları, çevre–insan ilişkilerini ve nedenleri sistemli karşılaştırma önem kazanır. Önceki çağların gözlem ve haritaları da bu araştırmalar için birikim sağlar. Humboldt doğa olayları ve yükselti boyunca bitki dağılışı gibi fiziki örüntüleri; Ritter bölgeyi doğal koşul ve insan ilişkileriyle bütün olarak karşılaştırma odağıyla ayırt edilebilir. Ratzel ve Vidal de la Blache beşerî ve bölgesel yaklaşımların gelişiminde anılır. Bunlar katkı ağırlıklarıdır; her yazarın yalnız tek konuyla çalıştığı anlamına gelmez.",
+  "to": "Alexander von Humboldt, Carl Ritter ve Friedrich Ratzel modern coğrafyanın gelişimiyle birlikte anılır. Yerleri tek tek tasvir etmenin yanında dağılışları, çevre–insan ilişkilerini ve nedenleri sistemli karşılaştırma önem kazanır. Önceki çağların gözlem ve haritaları da bu araştırmalar için birikim sağlar. Humboldt doğa olayları ve yükselti boyunca bitki dağılışı gibi fiziki örüntüleri; Ritter bölgeyi doğal koşul ve insan ilişkileriyle bütün olarak karşılaştırma odağıyla ayırt edilebilir. Ratzel ve Vidal de la Blache beşerî ve bölgesel yaklaşımların gelişiminde anılır. Bunlar katkı ağırlıklarıdır; her yazarın yalnız tek konuyla çalıştığı anlamına gelmez."
+ },
+ {
+  "from": "Günümüzde sayısal haritalar, uzaktan algılama, konum verileri ve coğrafi bilgi sistemleri birden fazla katmanı birlikte incelemeyi kolaylaştırır. Bu, kaynak dönem sıralamasından güncel araştırma mantığına yapılan öğretici bir bağlantıdır; antik kişilere çağdaş araçlar atfedilmez.",
+  "to": "Günümüzde sayısal haritalar, uzaktan algılama, konum verileri ve coğrafi bilgi sistemleri birden fazla katmanı birlikte incelemeyi kolaylaştırır. Bu, dönem sıralamasından güncel araştırma mantığına yapılan öğretici bir bağlantıdır; antik kişilere çağdaş araçlar atfedilmez."
+ },
+ {
+  "from": "Soruda isimler verilirse önce onların kaynakta doğrulanan dönem çerçevesini eşleştir. Bir eserin adı ya da ölçüm tarihi verilmemişse bunu yalnız dönemden türetme. Gerekçeli cevap, veriyle desteklenen dar yargıyı seçer; etkileyici ama kanıtsız ayrıntıyı eklemez.",
+  "to": "Soruda isimler verilirse önce onların dönem çerçevesini eşleştir. Bir eserin adı ya da ölçüm tarihi verilmemişse bunu yalnız dönemden türetme. Gerekçeli cevap, veriyle desteklenen dar yargıyı seçer; etkileyici ama kanıtsız ayrıntıyı eklemez."
+ },
+ {
+  "from": "Meridyenler bir kutuptan ötekine uzanan yarım çemberlerdir; farklı enlemlerde aralarındaki yüzey mesafesi değişir. Buna karşılık bir derecelik boylam farkının okul modelindeki zaman karşılığı enleme göre değişmez. Kilometre farkı ile derece farkını karıştırma.",
+  "to": "Meridyenler bir kutuptan ötekine uzanan yarım çemberlerdir; farklı enlemlerde aralarındaki yüzey mesafesi değişir. Buna karşılık bir derecelik boylam farkının ideal modeldeki zaman karşılığı enleme göre değişmez. Kilometre farkı ile derece farkını karıştırma."
+ },
+ {
+  "from": "Dünya’nın günlük dönüşü için okul yaklaşımında 360° dönüş 24 saat kabul edilir. 24 saat 1.440 dakikadır; 1.440/360=4 dakika/derece bulunur. Tersi dönüşümde dakika farkını dörde bölerek boylam farkını bulursun.",
+  "to": "Dünya’nın günlük dönüşü için ideal yaklaşımda 360° dönüş 24 saat kabul edilir. 24 saat 1.440 dakikadır; 1.440 / 360 = 4 dakika/derece bulunur. Tersi dönüşümde dakika farkını dörde bölerek boylam farkını bulursun."
+ },
+ {
+  "from": "Bu model ortalama yerel güneş saatini ideal biçimde temsil eder; hassas astronomik düzeltmeleri içermez. Dereceyi doğrudan saat sanmak veya 60 ile yanlış çarpmak birim hatasıdır. Önce derece×dakika/derece işlemini yaz, sonra dakikayı saate çevir.",
+  "to": "Bu model ortalama yerel güneş saatini ideal biçimde temsil eder; hassas astronomik düzeltmeleri içermez. Dereceyi doğrudan saat sanmak veya 60 ile yanlış çarpmak birim hatasıdır. Önce derece × dakika/derece işlemini yaz, sonra dakikayı saate çevir."
+ },
+ {
+  "from": "Okul güneş saati modelinde aynı meridyen üzerindeki noktaların yerel saati aynıdır. Enlemler farklıysa gündüz süresi, Güneş’in yüksekliği ve iklim farklı olabilir. Saat eşitliğinden bu özelliklerin de aynı olduğu çıkarılmaz.",
+  "to": "İdeal güneş saati modelinde aynı meridyen üzerindeki noktaların yerel saati aynıdır. Enlemler farklıysa gündüz süresi, Güneş’in yüksekliği ve iklim farklı olabilir. Saat eşitliğinden bu özelliklerin de aynı olduğu çıkarılmaz."
+ },
+ {
+  "from": "Gündüz süresi veya mesafe sorusu bu hesapla karıştırılmamalıdır. İki meridyen arası saat farkı için 111 km gibi uzaklık bilgisini kullanmaya gerek yoktur. Öğrendikten sonra modeli kapatıp bir doğu–batı ve bir gece yarısı örneğini kendi cümlenle çöz; sorular her veriyi kendi kartında sunar.",
+  "to": "Gündüz süresi veya mesafe sorusu bu hesapla karıştırılmamalıdır. İki meridyen arası saat farkı için 111 km gibi uzaklık bilgisini kullanmaya gerek yoktur. Öğrendikten sonra modeli kapatıp bir doğu–batı ve bir gece yarısı örneğini kendi cümlenle çöz."
+ },
+ {
+  "from": "Kuru hava için hacimce yaklaşık %78 azot, %21 oksijen ve %1 diğer gazlar biçiminde okul oranları kullanılır. Bu sayılar yuvarlatılmıştır; diğer gazlar arasında argon ve karbondioksit de vardır. Hidrojen bir asal gaz değildir; gaz listelerini yalnız ezber sırasına göre sınıflandırma.",
+  "to": "Kuru hava için hacimce yaklaşık %78 azot, %21 oksijen ve %1 diğer gazlar biçiminde yaklaşık oranlar kullanılır. Bu sayılar yuvarlatılmıştır; diğer gazlar arasında argon ve karbondioksit de vardır. Hidrojen bir asal gaz değildir; gaz listelerini yalnız ezber sırasına göre sınıflandırma."
+ },
+ {
+  "from": "Kalınlık enlem ve mevsimle değişir; 13 km gibi değerler yaklaşık okul ortalamasıdır. Genel sıcaklık azalması her gün ve her yükseklikte zorunlu değildir; inversiyonda sıcaklık yükseklikle artabilir. “Su buharının tamamı yalnız burada bulunur” gibi mutlak bir sınır kurma.",
+  "to": "Kalınlık enlem ve mevsimle değişir; 13 km gibi değerler yaklaşık bir ortalamadır. Genel sıcaklık azalması her gün ve her yükseklikte zorunlu değildir; inversiyonda sıcaklık yükseklikle artabilir. “Su buharının tamamı yalnız burada bulunur” gibi mutlak bir sınır kurma."
+ },
+ {
+  "from": "“Bugün yağmurlu” kısa süreli gözlem; “yazların genel olarak kurak geçmesi” uzun dönem örüntüsüdür. Meteoroloji ile klimatoloji ilişkili alanlardır, biri diğerini gereksiz kılmaz. Soru kartında verilen süreyi ve mekânı okuyup hangi tür kanıtın istendiğini belirle.",
+  "to": "“Bugün yağmurlu” kısa süreli gözlem; “yazların genel olarak kurak geçmesi” uzun dönem örüntüsüdür. Meteoroloji ile klimatoloji ilişkili alanlardır, biri diğerini gereksiz kılmaz. Soruda verilen süreyi ve mekânı okuyup hangi tür kanıtın istendiğini belirle."
+ },
+ {
+  "from": "Sıcaklık maddenin termal durumunu belirleyen niceliktir; okul düzeyinde taneciklerin ortalama hareket enerjisiyle ilişkilendirilir. Termometreyle ölçülür; °C veya K gibi birimler kullanılır. Kelvin simgesine derece işareti eklenmez. Büyük bir gölün sıcaklığı düşükken toplam iç enerjisi küçük sıcak bir kaptan fazla olabilir.",
+  "to": "Sıcaklık maddenin termal durumunu belirleyen niceliktir; temel düzeyde taneciklerin ortalama hareket enerjisiyle ilişkilendirilir. Termometreyle ölçülür; °C veya K gibi birimler kullanılır. Kelvin simgesine derece işareti eklenmez. Büyük bir gölün sıcaklığı düşükken toplam iç enerjisi küçük sıcak bir kaptan fazla olabilir."
+ },
+ {
+  "from": "Bu karşılaştırma her kıyı ile her iç nokta için tek etkenli kesin yasa değildir. Akıntı, rüzgâr, bulut ve yükselti de önemlidir. Denizden gelen hava yazın serinletici, kışın ılıtıcı olabilir; gelen hava kütlesinin gerçekten hangi özellikleri taşıdığına bakılmalıdır. Günlük veya yıllık sıcaklık farkı verilen dönemin en yüksek değeri eksi en düşük değeridir. Negatif en düşükte çıkarma işaretine dikkat et:24−(−3)=27°C. Tek bir günün veya ayın sıcaklığı bütün yılın farkını vermez.",
+  "to": "Bu karşılaştırma her kıyı ile her iç nokta için tek etkenli kesin yasa değildir. Akıntı, rüzgâr, bulut ve yükselti de önemlidir. Denizden gelen hava yazın serinletici, kışın ılıtıcı olabilir; gelen hava kütlesinin gerçekten hangi özellikleri taşıdığına bakılmalıdır. Günlük veya yıllık sıcaklık farkı verilen dönemin en yüksek değeri eksi en düşük değeridir. Negatif en düşükte çıkarma işaretine dikkat et: 24 − (−3) = 27 °C. Tek bir günün veya ayın sıcaklığı bütün yılın farkını vermez."
+ },
+ {
+  "from": "Soruda 200 metrede 1°C azalma yaklaşımı veriliyorsa deniz seviyesine indirgenmiş sıcaklık T₀=Tölçülen+h/200 ile hesaplanır. 1.200 m’de 12°C için 18°C bulunur. Bu ölçülmüş deniz seviyesi sıcaklığı değil, yükselti etkisini belirli kabulle kaldıran karşılaştırma değeridir.",
+  "to": "Soruda 200 metrede 1°C azalma yaklaşımı veriliyorsa deniz seviyesine indirgenmiş sıcaklık T₀ = Tölçülen + h/200 ile hesaplanır. 1.200 m’de 12°C için 18°C bulunur. Bu ölçülmüş deniz seviyesi sıcaklığı değil, yükselti etkisini belirli kabulle kaldıran karşılaştırma değeridir."
+ },
+ {
+  "from": "Atmosfer basıncı, üzerindeki hava sütununun birim alana etkisiyle ilişkilidir. Basınç birimi pascaldır; meteorolojide hPa kullanılır ve 1 hPa=1 mbar’dır. Barometre basınç ölçer. 1.013 hPa yaklaşık bir standart referanstır; bir basınç merkezinin adına tek başına karar vermez.",
+  "to": "Atmosfer basıncı, üzerindeki hava sütununun birim alana etkisiyle ilişkilidir. Basınç birimi pascaldır; meteorolojide hPa kullanılır ve 1 hPa = 1 mbar’dır. Barometre basınç ölçer. 1.013 hPa yaklaşık bir standart referanstır; bir basınç merkezinin adına tek başına karar vermez."
+ },
+ {
+  "from": "Yatay basınç gradyanı, basınç değişiminin uzaklığa oranıdır.1.020–1.000 hPa farkı 100 km’de 0,2 hPa/km;200 km’de 0,1 hPa/km olur. Aynı basınç farkı daha kısa mesafede daha büyük gradyan oluşturur. İzobarların sıklaşması da bu ilişkiyi gösterir. İzobar aynı basınçtaki noktaları birleştiren eğridir. Çizgi aralığıyla kıyas yaparken haritaların ölçeği ve komşu izobarlar arasındaki basınç adımı aynı olmalıdır; aksi hâlde çıplak çizgi sıkılığı yanıltabilir.",
+  "to": "Yatay basınç gradyanı, basınç değişiminin uzaklığa oranıdır. 1.020–1.000 hPa farkı 100 km’de 0,2 hPa/km; 200 km’de 0,1 hPa/km olur. Aynı basınç farkı daha kısa mesafede daha büyük gradyan oluşturur. İzobarların sıklaşması da bu ilişkiyi gösterir. İzobar aynı basınçtaki noktaları birleştiren eğridir. Çizgi aralığıyla kıyas yaparken haritaların ölçeği ve komşu izobarlar arasındaki basınç adımı aynı olmalıdır; aksi hâlde çıplak çizgi sıkılığı yanıltabilir."
+ },
+ {
+  "from": "İdeal genel dolaşım şemasında Ekvator çevresinde termik alçak, kutuplarda termik yüksek;30° çevresinde dinamik yüksek,60° çevresinde dinamik alçak kuşaklar gösterilir. Gerçek basınç dağılışı mevsim, kara-deniz ve yükseklikle değişir; kuşaklar sabit duvar değildir.",
+  "to": "İdeal genel dolaşım şemasında Ekvator çevresinde termik alçak, kutuplarda termik yüksek; 30° çevresinde dinamik yüksek, 60° çevresinde dinamik alçak kuşaklar gösterilir. Gerçek basınç dağılışı mevsim, kara-deniz ve yükseklikle değişir; kuşaklar sabit duvar değildir."
+ },
+ {
+  "from": "Kara ve denizin farklı ısınması basınç farklarını etkiler. Musonlar mevsimlik ve geniş ölçekli dolaşımla ilişkilidir; temel okul şemasında yazın denizden karaya, kışın karadan denize yön baskındır. Yer şekilleri ve bölgesel koşullar yağışın dağılışını değiştirir.",
+  "to": "Kara ve denizin farklı ısınması basınç farklarını etkiler. Musonlar mevsimlik ve geniş ölçekli dolaşımla ilişkilidir; temel şemada yazın denizden karaya, kışın karadan denize yön baskındır. Yer şekilleri ve bölgesel koşullar yağışın dağılışını değiştirir."
+ },
+ {
+  "from": "Sirokko ve Hamsin sıcak kaynak bölgeleriyle; Mistral, Bora ve Krivetz soğuk kaynak ve güzergâhlarla birlikte kaynakta anılır. Bir rüzgâr deniz üzerinden geçerken nem kazanabilir. Adın sıcak veya kuru diye ezberlenmesi bütün yol boyunca hiç değişmediğini kanıtlamaz.",
+  "to": "Sirokko ve Hamsin sıcak kaynak bölgeleriyle; Mistral, Bora ve Krivetz soğuk kaynak ve güzergâhlarla birlikte anılır. Bir rüzgâr deniz üzerinden geçerken nem kazanabilir. Adın sıcak veya kuru diye ezberlenmesi bütün yol boyunca hiç değişmediğini kanıtlamaz."
+ },
+ {
+  "from": "Verilen sıcaklıkta denge koşullarındaki doygun su buharı miktarı sıcaklık arttıkça yükselir. Okul hesabında bağıl nem, mevcut buharın aynı koşullardaki doyma miktarına oranının 100 katıdır.10 g/m³ mevcut ve 20 g/m³ doyma değeri için%50 bulunur.",
+  "to": "Verilen sıcaklıkta denge koşullarındaki doygun su buharı miktarı sıcaklık arttıkça yükselir. Basit hesapta bağıl nem, mevcut buharın aynı koşullardaki doyma miktarına oranının 100 katıdır. 10 g/m³ mevcut ve 20 g/m³ doyma değeri için %50 bulunur."
+ },
+ {
+  "from": "Sabit hacimli kapalı modelde toplam su 10 g/m³ ve başlangıç doyma değeri 20 g/m³ olsun: hepsi buhar, bağıl nem%50’dir. Doyma değeri 10’a düşerse%100’e ulaşılır.8’e düşerse denge modelinde 8 buhar ve 2 yoğuşmuş su bulunur.",
+  "to": "Sabit hacimli kapalı modelde toplam su 10 g/m³ ve başlangıç doyma değeri 20 g/m³ olsun: hepsi buhar, bağıl nem %50’dir. Doyma değeri 10’a düşerse %100’e ulaşılır. 8’e düşerse denge modelinde 8 buhar ve 2 yoğuşmuş su bulunur."
+ },
+ {
+  "from": "Yoğuşan suyu hesapladıktan sonra buharı hâlâ10 g/m³ sayıp bağıl nemi%125 diye sürdürme. Bu ders denge modelinde fazla suyun yoğunlaştığını kabul eder. Gerçek bulut oluşumundaki çekirdekler ve geçici aşırı doygunluklar bu basitleştirilmiş hesabın dışındadır; varsayım açıkça yazılır.",
+  "to": "Yoğuşan suyu hesapladıktan sonra buharı hâlâ 10 g/m³ sayıp bağıl nemi %125 diye sürdürme. Bu ders denge modelinde fazla suyun yoğunlaştığını kabul eder. Gerçek bulut oluşumundaki çekirdekler ve geçici aşırı doygunluklar bu basitleştirilmiş hesabın dışındadır; varsayım açıkça yazılır."
  }
 ]

@@ -1,0 +1,841 @@
+{
+ "ronesans-felsefesi": [
+  {
+   "after": 1,
+   "prompt": "Bir bölgenin Rönesans’ta öncü olmasından hangi sonuç çıkarılmamalıdır?",
+   "answer": "Başka bölgelerde hiç üretim ya da düşünce olmadığı sonucu; dönüşüm farklı yerlerde farklı biçim ve hızla gelişir."
+  },
+  {
+   "after": 3,
+   "prompt": "Çeviriyle bir metne erişmek ile o metindeki görüşleri doğru kabul etmek nasıl ayrılır?",
+   "answer": "Erişim metni okunabilir kılar; görüşlerin doğru kabul edilmesi ayrı bir değerlendirme aşamasıdır."
+  },
+  {
+   "after": 5,
+   "prompt": "İnsanı konu alan bir anatomi ölçümü neden tek başına hümanist metin sayılmaz?",
+   "answer": "İnsanla ilgili olsa da yaptığı iş bilimsel yöntem sorusudur; hümanizm insanın değeri ve eğitimini kültürel yorumla ilişkilendirir."
+  },
+  {
+   "after": 7,
+   "prompt": "Hümanist eğitim bir metni ezberlemekten hangi yönüyle ayrılır?",
+   "answer": "Metnin gerekçelerini araştırıp kendi yargını geliştirmeye dayanır; dil, tarih, edebiyat ve ahlak çalışmaları bu yetileri geliştirir."
+  },
+  {
+   "after": 9,
+   "prompt": "Rönesans’taki düşünsel bağımsızlık, eski kaynaklara karşı nasıl bir tutum gerektirir?",
+   "answer": "Kaynaksız konuşmayı değil, kaynağın iddiasını ve kanıtını açık ve eleştirel biçimde değerlendirmeyi gerektirir."
+  },
+  {
+   "after": 11,
+   "prompt": "Himayenin bir esere koşul sağlaması ile eserin içeriğini belirlemesi arasındaki fark nedir?",
+   "answer": "Koşul sağlamak zaman, malzeme ve okur gibi imkânlar verir; içeriği bütünüyle belirlemek ayrı ve daha güçlü bir iddiadır."
+  },
+  {
+   "after": 13,
+   "prompt": "Rönesans’ta Brunelleschi ve Cervantes hangi alanlarla anılır?",
+   "answer": "Brunelleschi mimariyle, Cervantes edebiyatla anılır."
+  }
+ ],
+ "15-17-yuzyil-felsefesi": [
+  {
+   "after": 1,
+   "prompt": "Bir pasajı tanırken düşünür adını ezberlemek yerine hangi sırayı izlemelisin?",
+   "answer": "Önce pasajın hangi probleme cevap verdiğini, ardından dayandığı gerekçeyi belirlersin."
+  },
+  {
+   "after": 3,
+   "prompt": "Isınınca uzayan cisim örneğinde olgu ile hipotez nasıl ayrılır?",
+   "answer": "Cismin uzaması gözlenen olgudur; uzamanın hangi koşula bağlı olduğuna dair sınanabilir sav hipotezdir."
+  },
+  {
+   "after": 5,
+   "prompt": "Bacon’ın idoller kavramı neyi ifade eder?",
+   "answer": "Zihne yerleşmiş, araştırmayı yanıltabilecek önyargı, alışkanlık ve kabulleri ifade eder."
+  },
+  {
+   "after": 7,
+   "prompt": "Kopernik’in merkez sorusu neden ontolojik monizm sorusuyla karıştırılmamalıdır?",
+   "answer": "Merkez sözü kozmolojik yerleşime aittir; ruh ile maddenin tek töz olup olmadığı ayrı bir varlık sorusudur."
+  },
+  {
+   "after": 9,
+   "prompt": "Galileo’nun hareketli araç düşünce deneyi hangi itirazı sorgular?",
+   "answer": "Bırakılan cismin mutlaka geride kalacağı itirazını; cismin araçla ortak yatay hareketi paylaştığını gösterir."
+  },
+  {
+   "after": 12,
+   "prompt": "Descartes’ın yönteminde parçalara ayırmanın yanında hangi ilkeler yer alır?",
+   "answer": "Açık ve seçik kavrayış, basitten karmaşığa ilerleme ve eksikleri denetleyen sayım."
+  },
+  {
+   "after": 14,
+   "prompt": "Leibniz’in monadı Demokritos’un atomundan nasıl ayrılır?",
+   "answer": "Monad bölünmeyen birlik anlamında basit tözdür; maddi bir parça olmadığı için maddi atomla özdeşleştirilmez."
+  },
+  {
+   "after": 17,
+   "prompt": "Spinoza’da bir şeyin iyi ya da kötü değerlendirilmesinde hangi ölçüt rol oynar?",
+   "answer": "İnsanın etkinliğine yardımcı mı, engel mi olduğu; mutluluk da daha yeterli kavrayışla ilişkili bir yaşantıdır."
+  },
+  {
+   "after": 20,
+   "prompt": "Hobbes’a göre doğal durum neden tarihsel bir tutanak değildir?",
+   "answer": "Ortak güvenilir güç yokken güvensizliğin nasıl çatışma doğurduğunu açıklayan düşünsel bir modeldir."
+  },
+  {
+   "after": 21,
+   "prompt": "Hobbes’ta kuruluş yoluyla egemenlik ile edinim yoluyla egemenlik nasıl ayrılır?",
+   "answer": "Kuruluşta insanlar birbirleriyle anlaşıp egemeni yetkilendirir; edinimde üstün güç karşısında yaşamı korumak için boyun eğilir."
+  },
+  {
+   "after": 23,
+   "prompt": "Ütopya ile distopya arasındaki fark nedir?",
+   "answer": "Ütopya ideal bir toplum düzeni tasarlar; distopya istenmeyen düzeni uyarıcı biçimde gösterir."
+  },
+  {
+   "after": 24,
+   "prompt": "Robinson Crusoe ile Genç Werther’in Acıları hangi yüzyılda yazılmıştır?",
+   "answer": "İkisi de 18. yüzyıldandır; 15–17. yüzyıl eserleri gibi ezberlenmemelidir."
+  },
+  {
+   "after": 26,
+   "prompt": "Bir savın dayanağındaki yanlış varsayımı göstermek, karşıt görüş için ne sağlar?",
+   "answer": "Yalnız o dayanağı zayıflatır; karşıt görüşün bütün öncüllerini kendiliğinden kanıtlamaz."
+  }
+ ],
+ "aydinlanma-felsefesi": [
+  {
+   "after": 1,
+   "prompt": "Kant’ın ergin olmayış kavramı neyi anlatır?",
+   "answer": "Kişinin başkasının kılavuzluğu olmadan kendi anlama yetisini kullanamamasını; bağımsız düşünme sorumluluğunu üstlenmemeyi de kapsar."
+  },
+  {
+   "after": 3,
+   "prompt": "Aydınlanmacı eleştiri uzmana karşı nasıl bir tutum gerektirir?",
+   "answer": "Uzmanı dinlemeyi bırakmayı değil, sunduğu bilginin dayanağını kişi otoritesinden ayırıp sorgulamayı gerektirir."
+  },
+  {
+   "after": 5,
+   "prompt": "Bir kurumun emir vermesi ile aklın kamusal kullanımı arasındaki fark nedir?",
+   "answer": "Emir yalnız buyruktur; kamusal kullanımda kararın gerekçesi başkalarının inceleyip itiraz edebileceği biçimde açıklanır."
+  },
+  {
+   "after": 7,
+   "prompt": "Voltaire, Swift ve Rousseau’nun hangi eserleri felsefi soruları yazınsal araçlarla açar?",
+   "answer": "Voltaire’in Candide’i, Swift’in Gulliver’in Gezileri ve Rousseau’nun Emile’i."
+  },
+  {
+   "after": 9,
+   "prompt": "Hoşgörü tartışmasında hak tanımak ile bir iddiayı doğru saymak nasıl ayrılır?",
+   "answer": "Bir görüşü yanlış bulup yine de sahibinin ifade ve tartışma hakkını savunabilirsin; hak tanımak onaylamak değildir."
+  },
+  {
+   "after": 11,
+   "prompt": "Kant’ın eleştiriciliğinde deneyim ile zihin arasındaki iş bölümü nedir?",
+   "answer": "Deneyim malzeme sağlar; zihin bu malzemeyi ortak düzenleyici biçimlerle anlamlandırır."
+  },
+  {
+   "after": 13,
+   "prompt": "Edebi realizm ile varlık felsefesindeki gerçekçilik neden karıştırılmamalıdır?",
+   "answer": "Edebi realizm toplum gerçeğini gözleme dayalı olarak temsil eder; varlık felsefesindeki gerçekçilik başka bir sorunun cevabıdır."
+  },
+  {
+   "after": 15,
+   "prompt": "Bir kararın yasal olması ile kamusal olarak haklı olması nasıl ayrılır?",
+   "answer": "Yasallık kararın mevcut usulle alındığını gösterir; haklılık kararın etkilenenlere hangi gerekçeyle savunulabileceğidir."
+  }
+ ],
+ "18-19-yuzyil-felsefesi": [
+  {
+   "after": 1,
+   "prompt": "Akılcılık ile deneycilik tartışması neden düşünen ile düşünmeyen ayrımı değildir?",
+   "answer": "İkisi de akıl yürütür; tartışılan, güvenilir bilginin kaynağı ve gerekçesidir."
+  },
+  {
+   "after": 3,
+   "prompt": "Locke’un tabula rasa benzetmesi neyi açıklar?",
+   "answer": "Zihnin doğuştan hazır ide ve ilkelerle dolu olmadığını, idelerin deneyim yoluyla kazanıldığını açıklar."
+  },
+  {
+   "after": 5,
+   "prompt": "Locke’ta basit ideler ile bileşik ideler nasıl ayrılır?",
+   "answer": "Basit ideler deneyimden gelen içeriklerdir; bileşik ideleri zihin bunları birleştirip karşılaştırarak ve soyutlayarak kurar."
+  },
+  {
+   "after": 6,
+   "prompt": "Hume’da izlenim ile fikir arasındaki fark nedir?",
+   "answer": "İzlenim daha canlı, doğrudan edinimdir; fikir onun hatırlama ya da tasarımdaki daha az canlı karşılığıdır."
+  },
+  {
+   "after": 9,
+   "prompt": "Kant’ta zaman ve mekân ile kategoriler hangi yetilere bağlanır?",
+   "answer": "Zaman ve mekân duyarlığın biçimleridir; kategoriler anlama yetisinin nesne deneyimini düşünmede kullandığı yapılardır."
+  },
+  {
+   "after": 12,
+   "prompt": "Locke’a göre yönetim doğal haklar karşısında nasıl bir konumdadır?",
+   "answer": "Yönetim yaşam, özgürlük ve mülkiyet haklarının amacı değil, onları güvenceye almanın aracıdır."
+  },
+  {
+   "after": 14,
+   "prompt": "Montesquieu’nün devletler hukuku, siyasal hukuk ve medeni hukuk ayrımı neye göre yapılır?",
+   "answer": "İlişkinin taraflarına göre yapılır: devletler arası, yönetim ile yönetilen arası ve kişiler arası ilişkiler."
+  },
+  {
+   "after": 16,
+   "prompt": "Rousseau’da tarihsel yozlaşma eleştirisi ile haklı ortak düzen tasarımı nasıl ayrılır?",
+   "answer": "İlki toplumsallaşmayla doğan eşitsizlik ve bağımlılığı eleştirir; ikincisi meşru ortak yaşamın nasıl olması gerektiğini tasarlar."
+  },
+  {
+   "after": 19,
+   "prompt": "Kant’a göre bir eylemin ahlaki değeri neye bakılarak belirlenir?",
+   "answer": "Yalnız ortaya çıkan yarara değil, eylemin hangi ilke ve niyetle, ahlak yasasına saygıyla yapılıp yapılmadığına bakılır."
+  },
+  {
+   "after": 21,
+   "prompt": "Kant’ta maksim nedir?",
+   "answer": "Kişinin eylemini yöneten öznel ilkedir; Kant bu ilkenin herkes için yasa olarak istenip istenemeyeceğini sorar."
+  },
+  {
+   "after": 23,
+   "prompt": "Bentham’ın faydacı ölçütü neden oylamada en çok el kaldıranların sayısı değildir?",
+   "answer": "Ölçüt, eylemden etkilenen herkesin haz ve acılarının toplamı ve bunların nasıl dağıldığıdır."
+  },
+  {
+   "after": 24,
+   "prompt": "Mill’i salt nicelik hesabından ayıran fayda anlayışı nedir?",
+   "answer": "Hazların yalnız miktarını değil niteliğini de karşılaştırması; düşünsel yetilerin kullanıldığı yaşantılara ayrı değer vermesidir."
+  },
+  {
+   "after": 26,
+   "prompt": "Hegel’de idealizm terimi gündelik dildeki ideal sahibi olmaktan nasıl ayrılır?",
+   "answer": "Hegel’de idealizm varlık ile düşüncenin ilişkisine dair felsefi görüştür; iyi niyetli ideal taşımanın adı değildir."
+  },
+  {
+   "after": 27,
+   "prompt": "Comte’un üç hâlinde olaylar sırasıyla neye dayanılarak açıklanır?",
+   "answer": "Teolojik hâlde tanrısal güç ve iradelere, metafizik hâlde soyut öz ve güçlere, pozitif hâlde olgular arasındaki düzenli ilişkilere."
+  }
+ ],
+ "cagdas-felsefe": [
+  {
+   "after": 1,
+   "prompt": "Bir görüşü çağdaş felsefe başlığında incelemek düşünürün yaşam tarihi hakkında neyi göstermez?",
+   "answer": "Düşünürün mutlaka yirminci yüzyılda doğduğunu göstermez; etki tarihi ile yaşam tarihi ayrı tutulur."
+  },
+  {
+   "after": 3,
+   "prompt": "Mantıksal çözümlemede bir cümlenin dil bilgisel görünüşü neden yeterli sayılmaz?",
+   "answer": "Dil bilgisel görünüş mantıksal yapıyı her zaman doğrudan vermez; çözümleme çıkarımın nerede kurulduğunu açık gösterir."
+  },
+  {
+   "after": 4,
+   "prompt": "Husserl’de yönelimsellik ne demektir?",
+   "answer": "Bilincin her zaman bir şeyin bilinci olmasıdır; algılama, anımsama ya da isteme belirli bir içeriğe yönelir."
+  },
+  {
+   "after": 7,
+   "prompt": "Dilthey’a göre bir mektubun anlamını kavramak neden harflerini saymakla sağlanmaz?",
+   "answer": "Anlam, mektubu oluşturan yaşam ve dil bağlamına bağlıdır; tarihsel ürünleri anlamak doğa olaylarını açıklamaktan farklı bir yöntemdir."
+  },
+  {
+   "after": 8,
+   "prompt": "Gadamer’in ufukların kaynaşması kavramı hangi iki ufkun ilişkisini anlatır?",
+   "answer": "Tarihsel olarak konumlanmış yorumcunun ufku ile anlamaya çalıştığı metnin ufkunun ilişkisini anlatır."
+  },
+  {
+   "after": 10,
+   "prompt": "Kierkegaard felsefede hangi soruyu öne çıkarır?",
+   "answer": "Genel sistem içinde kaybolan tekil kişinin seçimini, kaygısını ve yaşamını neye adayacağını öne çıkarır."
+  },
+  {
+   "after": 12,
+   "prompt": "Varoluşçu özgürlük neden her dış sonucu sınırsızca kontrol etmek anlamına gelmez?",
+   "answer": "Kişi seçiminin sonuçlarını üstlenir, fakat içinde bulunduğu tarihsel, bedensel ve toplumsal durum gözden çıkarılamaz."
+  },
+  {
+   "after": 13,
+   "prompt": "Camus, insanın anlam arayışı ile dünya arasındaki hangi ilişkiyle anılır?",
+   "answer": "Uyumsuzlukla anılır; dünya insanın anlam arayışına hazır cevap vermez, başkaldırı da bu sorunla ilişkilidir."
+  },
+  {
+   "after": 15,
+   "prompt": "Bergson’da ölçülen zaman ile süre nasıl ayrılır?",
+   "answer": "Ölçülen zaman saatin eş parçalara böldüğü zamandır; süre yaşantının iç içe geçen niteliksel akışıdır."
+  },
+  {
+   "after": 17,
+   "prompt": "Hegel ile Marx–Engels diyalektiğinde açıklama temeli nasıl ayrılır?",
+   "answer": "Hegel’de idealist bir temel, Marx ve Engels’te maddi temele yönelen bir açıklama vurgusu vardır."
+  },
+  {
+   "after": 19,
+   "prompt": "Whitehead neden Viyana Çevresi mantıkçı pozitivisti diye sınıflandırılmamalıdır?",
+   "answer": "Mantık ve matematiğe katkı sunsa da bu okula ait değildir; birlikte anılmak aynı okuldan olmak demek değildir."
+  },
+  {
+   "after": 21,
+   "prompt": "Popper’a göre olumlu örneklerin çoğalması evrensel bir kuram için ne sağlar?",
+   "answer": "Kuramı destekler ama kesin doğrulamaz; karşı örnek bulunmaması da kesin doğruluk kanıtı değildir."
+  },
+  {
+   "after": 24,
+   "prompt": "Kuhn’da olağan bilim nedir?",
+   "answer": "Bir bilim topluluğunun paylaştığı paradigma çerçevesi içinde sorun çözmeye yönelen etkinliktir."
+  },
+  {
+   "after": 26,
+   "prompt": "Hartmann’a göre reel varlığın katmanları hangileridir?",
+   "answer": "İnorganik, organik, ruhsal ve tinsel katmanlardır; birbirinden kopuk dört evren değildir."
+  },
+  {
+   "after": 28,
+   "prompt": "Hasan Âli Yücel’in kültürel erişime katkısı hangi çalışmayla öne çıkar?",
+   "answer": "Çeviri bürosu aracılığıyla farklı birikimlerin Türkçeye kazandırılması ve eğitim çalışmalarıyla öne çıkar."
+  },
+  {
+   "after": 30,
+   "prompt": "Nurettin Topçu’nun isyan ahlakında isyan neye karşı bir direniştir?",
+   "answer": "Ahlaki yönelişi engelleyen bencillik, çıkar ve miskinliğe karşı direniştir; her kurala nedensiz karşı çıkmak değildir."
+  },
+  {
+   "after": 32,
+   "prompt": "Aydın Sayılı ile Mübahat Türker Küyel’in çalışma odakları nasıl ayrılır?",
+   "answer": "Sayılı bilim tarihine, Türker Küyel kültürler arası etkileşime ve Türk düşüncesinin dünya birikimine katkısına odaklanır."
+  }
+ ],
+ "din-felsefesi": [
+  {
+   "after": 1,
+   "prompt": "Din felsefesini teolojiden ayıran temel fark nedir?",
+   "answer": "Teoloji belirli bir geleneğin öğretilerini o gelenekle ilişki içinde açıklar; din felsefesi inancı baştan kabul etme zorunluluğu olmadan tartışabilir."
+  },
+  {
+   "after": 3,
+   "prompt": "Bir ilk nedenin varlığı kabul edilse bile hangi geçiş ayrı dayanak ister?",
+   "answer": "Bu nedenin tek, kişisel veya mutlak iyi olduğuna geçmek; yapıyı tanımak bütün sonucu kanıtlamak değildir."
+  },
+  {
+   "after": 6,
+   "prompt": "Teleolojik argümanda gözlenen tek bir işlevden hangi geçiş ek varsayım içerir?",
+   "answer": "Bütün evrenin tek bir bilinçli amaçla kurulduğu sonucuna geçiş ek varsayımlar içerir."
+  },
+  {
+   "after": 8,
+   "prompt": "Deizmi klasik teizmden ayırt etmek için yaratıcı kabulü neden yetmez?",
+   "answer": "Yaratıcıyı ikisi de kabul eder; ayrım vahiy ve olağanüstü müdahale konusundaki ek bilgiden çıkar."
+  },
+  {
+   "after": 10,
+   "prompt": "Düalizm sözcüğü geçen bir metinde hangi varsayımdan kaçınmalısın?",
+   "answer": "Her kullanımın iki eşit güçte tanrı anlamına geldiğini varsayma; zihin-madde tartışmasındaki ontolojik düalizm başka bir anlamdır."
+  },
+  {
+   "after": 12,
+   "prompt": "Ahlaki kötülük ile doğal kötülük neye göre ayrılır?",
+   "answer": "Ahlaki kötülük insan eyleminden doğan zarardır; doğal kötülük deprem, hastalık gibi insan iradesine doğrudan bağlanmayan acılardır."
+  },
+  {
+   "after": 14,
+   "prompt": "Evrenin başlangıcı, bağımlılığı ve sonu iddiaları neden ayrı tutulmalıdır?",
+   "answer": "Üçü ayrı iddialardır; birinin kabulü diğer ikisini tanım gereği kanıtlamaz."
+  },
+  {
+   "after": 16,
+   "prompt": "Aristoteles ruhu nasıl düşünür ve bu neyi önler?",
+   "answer": "Ruhu canlının formu olarak düşünür; bu, ruhu bedenden ayrı basit bir hayalet nesneye indirgemeyi önler."
+  }
+ ],
+ "siyaset-felsefesi": [
+  {
+   "after": 1,
+   "prompt": "Siyaset bilimi ile siyaset felsefesi incelediği şey bakımından nasıl ayrılır?",
+   "answer": "Siyaset bilimi siyasal olguları bilimsel yöntemlerle araştırır; siyaset felsefesi siyasal kavram, ilke ve gerekçeleri tartışır."
+  },
+  {
+   "after": 3,
+   "prompt": "Bir kararı bir memurun uygulaması neden onu siyasal yetkinin sahibi yapmaz?",
+   "answer": "Bürokraside memur işi görev, yetki ve usullerle yürütür; kararı uygulamak bütün siyasal yetkiye sahip olmak değildir."
+  },
+  {
+   "after": 6,
+   "prompt": "Yasallık ile normatif meşruiyet hangi farklı soruları sorar?",
+   "answer": "Yasallık işlemin yürürlükteki hukuka uygunluğunu, normatif meşruiyet yönetme yetkisinin hangi gerekçeyle haklı sayılacağını sorar."
+  },
+  {
+   "after": 9,
+   "prompt": "Toplum sözleşmesindeki doğa durumu neden tarihsel bir rapor sayılmamalıdır?",
+   "answer": "Bir düşünce deneyidir; herkesin bir tarihte kâğıt imzaladığını değil, yetki, güvenlik ve hakların dayanağını açıklar."
+  },
+  {
+   "after": 12,
+   "prompt": "Rousseau’da genel irade, özel isteklerin toplamından nasıl ayrılır?",
+   "answer": "Genel irade topluluğun ortak yararına ilişkin iradedir; tek tek isteklerin sayısal toplamı ya da çoğunluk oyu ile otomatik aynı değildir."
+  },
+  {
+   "after": 14,
+   "prompt": "Herkese açık bir kursa ulaşım engeli yüzünden gidemeyen kişide özgürlüğün hangi boyutu eksiktir?",
+   "answer": "Etkili olanak boyutu eksiktir; müdahale yoktur ama eylemi fiilen yapacak araç yoktur."
+  },
+  {
+   "after": 17,
+   "prompt": "Ütopya ile distopya kurgusal işlevleri bakımından nasıl ayrılır?",
+   "answer": "Ütopya mevcut düzenin sorunlarını ve olası alternatifleri düşündürür; distopya istenmeyen bir düzen kurgusuyla tehlikeleri eleştirel biçimde gösterir."
+  },
+  {
+   "after": 18,
+   "prompt": "Kuvvetler ayrılığında üç kurum adının bir şemada yer alması neden yetmez?",
+   "answer": "Yetki paylaşımı uygulamada etkisiz kalabilir; kurumların bağımsızlığı ve birbirini denetleyen işleyen usuller de gerekir."
+  },
+  {
+   "after": 20,
+   "prompt": "Bir kurumun daha çok veri toplayabilmesi ile bunun haklı olması arasındaki fark nedir?",
+   "answer": "Yapılabilirlik teknik imkânla ilgilidir; haklılık amaç, sınır ve denetim gerekçesi ister. İkisi farklı düzeylerdir."
+  }
+ ],
+ "sanat-felsefesi": [
+  {
+   "after": 2,
+   "prompt": "Sanatçının niyetini bilmek bir yorumu neden tek başına kanıtlamaz?",
+   "answer": "Yorumu destekleyen ayrıntıların eserde de gösterilmesi gerekir; üretim niyeti, eserin yapısı ve alımlama birbirinin yerine geçmez."
+  },
+  {
+   "after": 5,
+   "prompt": "Platon’a göre resim neden duyusal nesneyle aynı varlık düzeyinde değildir?",
+   "answer": "Duyusal nesne değişmeyen ideal örnekle ilişkilidir; resim ise yalnız görünüşün yeniden temsilidir."
+  },
+  {
+   "after": 6,
+   "prompt": "Aristoteles’te sanatsal anlatı tek bir olayın belgelenmesinden nasıl ayrılır?",
+   "answer": "Olabilecek eylemleri olasılık ve zorunluluk ilişkisiyle belirli bir düzen içinde kurar; dünyanın edilgin kopyası değildir."
+  },
+  {
+   "after": 8,
+   "prompt": "Yaratım yaklaşımı ile ifade yaklaşımı neyi vurgulamaları bakımından ayrılır?",
+   "answer": "Yaratım, sanatçının hazır olanı seçip dönüştürerek özgün düzen kurmasını; ifade, duygu ve iç yaşantının bir biçimle dışa vurulmasını vurgular."
+  },
+  {
+   "after": 10,
+   "prompt": "Bir sandalyenin sağlamlığı ile çizgilerinin uyumu hangi iki farklı yargıya konu olur?",
+   "answer": "Sağlamlık yararlılık yargısına, çizgilerin uyumu estetik değerlendirmeye konu olur; ikisi aynı gerekçeye dayanmak zorunda değildir."
+  },
+  {
+   "after": 12,
+   "prompt": "Hegel’e göre sanat eserini salt bir madde yığınından ayıran nedir?",
+   "answer": "Eserde düşünsel içerik ve anlam duyusal bir biçimde görünür hâle gelir."
+  },
+  {
+   "after": 14,
+   "prompt": "Estetik incelemek neden duyu organlarının yapısını ölçmekle aynı şey değildir?",
+   "answer": "Estetik bir çizgi, ses ya da mekânın bizde nasıl anlam ve değer kazandığını, duyum ile değerlendirme ilişkisini araştırır."
+  },
+  {
+   "after": 16,
+   "prompt": "Öznelci ve nesnelci yaklaşım estetik değeri neye bağlar?",
+   "answer": "Öznelci yaklaşım değerlendiren kişiye ve yaşantısına, nesnelci yaklaşım eserin özelliklerine ve kişiden bağımsız ölçütlere bağlar."
+  },
+  {
+   "after": 18,
+   "prompt": "Bir metinde biriciklik geçince hangi iki anlamı ayırt etmelisin?",
+   "answer": "Eserin kendine özgü kimliği anlamını ve tek maddi kopya anlamını ayırt etmelisin."
+  }
+ ],
+ "felsefi-okuma-ve-yazma": [
+  {
+   "after": 1,
+   "prompt": "Problem ile kavram arasındaki fark nedir?",
+   "answer": "Problem cevabı aranan sorundur; kavram bu soruyu kurmak ve cevaplamak için kullanılan anlam birimidir."
+  },
+  {
+   "after": 2,
+   "prompt": "Bir metnin son cümlesini neden otomatik olarak temel sav sayamazsın?",
+   "answer": "Metin bazen bir itiraz ya da örnekle biter; temel sav yazarın kabul ettirmeye çalıştığı cevaptır."
+  },
+  {
+   "after": 5,
+   "prompt": "“Bütün kuşlar uçar.” yargısına karşı tek bir uçmayan kuş örneği ne gösterir?",
+   "answer": "Bütün diye kurulan kapsamın korunamayacağını gösterir; karşı örneğin etkisi tek olumlu örneğinkinden farklıdır."
+  },
+  {
+   "after": 8,
+   "prompt": "Çözümleme ile sentez arasındaki fark nedir?",
+   "answer": "Çözümleme metni problem, kavram, sav ve gerekçe gibi işlevlerine ayırır; sentez parçaları ilişkilendirip bütünün anlamını yeniden kurar."
+  },
+  {
+   "after": 10,
+   "prompt": "Bir itiraza cevap verirken savın kapsamını daraltmak neden başarısızlık sayılmaz?",
+   "answer": "İtirazın haklı yanını kabul etmek, daha savunulabilir bir görüş geliştirmeyi sağlayabilir."
+  }
+ ],
+ "ilk-cag-felsefesi": [
+  {
+   "after": 2,
+   "prompt": "Anaksimandros arkhe olarak neden belirli bir madde yerine apeirona yönelir?",
+   "answer": "Belirli bir karşıtın diğerlerini açıklamakta sınırlı kalacağını düşünür; bu yüzden sınırsız-belirsiz bir ilke önerir."
+  },
+  {
+   "after": 3,
+   "prompt": "Empedokles’te dört kök ile sevgi ve nefret hangi farklı işleri görür?",
+   "answer": "Ateş, hava, su ve toprak köklerdir; sevgi ve nefret bu kökleri birleştirip ayıran güçlerdir."
+  },
+  {
+   "after": 6,
+   "prompt": "Herakleitos ile Parmenides değişim konusunda nasıl ayrılır?",
+   "answer": "Herakleitos değişimi ve karşıtların ilişkisini vurgular; Parmenides varlığın birliğini ve değişmezliğini öne çıkarıp oluşu sorgular."
+  },
+  {
+   "after": 9,
+   "prompt": "Gorgias’a atfedilen üçlü sav hangi üç düzeyi birbirinden ayırır?",
+   "answer": "Varlık, bilme ve bildirme düzeylerini; var mı, bilinir mi, başkasına aktarılır mı soruları ayrı ayrı sorulur."
+  },
+  {
+   "after": 11,
+   "prompt": "Sokrates kötülüğü neyle açıklar?",
+   "answer": "Bilgisizlikle açıklar; neyin gerçekten iyi olduğunu bilmek iyi eylemle sıkı biçimde bağlıdır."
+  },
+  {
+   "after": 13,
+   "prompt": "Mağara benzetmesinde zincirden kurtulup dışarıya yönelmek neyi anlatır?",
+   "answer": "Gölgeleri gerçeklik sanan alışılmış görünüşten daha kapsamlı bir kavrayışa geçişi anlatır."
+  },
+  {
+   "after": 15,
+   "prompt": "Aristoteles’te tohum ile yetişmiş ağaç hangi ayrımı örnekler?",
+   "answer": "Potansiyel ile aktüel ayrımını; imkânın gerçekleşmesi için uygun süreç ve koşullar gerekir."
+  },
+  {
+   "after": 17,
+   "prompt": "Aristoteles’in orta anlayışında hangi tuzağa düşmemelisin?",
+   "answer": "Ortayı iki sayıyı toplayıp ikiye bölmek sanmamalısın; orta, koşula ve kişiye uygun olanı belirlemektir."
+  },
+  {
+   "after": 19,
+   "prompt": "Konfüçyüs’te saygılı görünmek ile içtenlik ayrımı neden önemlidir?",
+   "answer": "Erdemler başkası görsün diye sergilenen dış görünüşler değildir; dış hareket ile içteki niyet ayrışabilir."
+  }
+ ],
+ "orta-cag-felsefesi": [
+  {
+   "after": 1,
+   "prompt": "Patristik ve skolastik dönemler hangi vurgularıyla ayrılır?",
+   "answer": "Patristik erken Hristiyan düşüncesinin savunulması ve kavramsal kuruluşuyla, skolastik inanç ile aklın okul geleneğinde sistemli ele alınışıyla ilişkilidir."
+  },
+  {
+   "after": 4,
+   "prompt": "Augustinusçu yaklaşımda körlük örneği kötülük hakkında neyi gösterir?",
+   "answer": "Kötülüğün bağımsız bir töz değil iyinin eksilmesi olduğunu; körlük ayrı bir madde değil, görme yetisinin yoksunluğudur."
+  },
+  {
+   "after": 6,
+   "prompt": "Thomas’a göre akıl ile vahyin Tanrı bilgisindeki payı nasıl ayrılır?",
+   "answer": "Bazı Tanrı bilgilerine akıl ulaşabilir; bazı inanç sırları ise vahiy ile kabul edilir."
+  },
+  {
+   "after": 9,
+   "prompt": "Ockhamlı William’ın adcılığı neyi reddeder, neyi reddetmez?",
+   "answer": "Tekillerden ayrı evrensel varlıkları reddeder; genel kavram ve göstergelerin kullanılabildiğini inkâr etmez."
+  },
+  {
+   "after": 11,
+   "prompt": "El Kindî’nin hudûs argümanı hangi başlangıçtan neye ulaşmak ister?",
+   "answer": "Evrenin sonradan oluşundan hareketle bir var ediciye ulaşmayı amaçlar."
+  },
+  {
+   "after": 13,
+   "prompt": "İbn Sînâ’nın Hayy bin Yakzan’ı ile İbn Tufeyl’in eseri neden karıştırılmamalıdır?",
+   "answer": "Aynı adla bilinen ayrı eserlerdir; ad benzerliği yazarı ve içeriği eşitlemez."
+  },
+  {
+   "after": 15,
+   "prompt": "Mu‘tezile ile Cebriyye insanın iradesi konusunda nasıl ayrılır?",
+   "answer": "Mu‘tezile insana verilen özgür iradeyi ve sorumluluğu güçlü biçimde öne çıkarır; Cebriyye insanın özgür iradesini kabul etmez."
+  },
+  {
+   "after": 17,
+   "prompt": "İbn Haldun’da asabiyet neyi ifade eder?",
+   "answer": "Bir grubun dayanışma bağlarıyla birlikte hareket etme gücünü ifade eder; tek kişinin öfkesi değildir."
+  },
+  {
+   "after": 19,
+   "prompt": "Gazzâlî’de kalp kavramını nasıl okumalısın?",
+   "answer": "Kan pompalayan organın ölçümü gibi değil, manevi hakikatin içsel kavranışındaki işleviyle okumalısın."
+  }
+ ],
+ "felsefeyi-tanima": [
+  {
+   "after": 1,
+   "prompt": "Bilgi ile bilgelik arasındaki ilişki nasıl kurulur?",
+   "answer": "Bilgi bir yargıyı bilmekle, bilgelik bilginin anlamını ve yaşamla ilişkisini düşünmekle bağlantılıdır; ikisi bütünüyle karşıt değildir."
+  },
+  {
+   "after": 4,
+   "prompt": "Bir metinde konu adı ile yazarın yaptığı işlem neden ayrı okunmalıdır?",
+   "answer": "Konu adı sorunun istediği zihinsel işlemi belirlemez; yazar kavram çözümlüyor, gerekçe istiyor ya da iki savı karşılaştırıyor olabilir."
+  },
+  {
+   "after": 6,
+   "prompt": "Kuşkuyu yöntem olarak kullanan düşünür ile kesin bilgiye itiraz eden düşünür nasıl ayrılır?",
+   "answer": "Birincisi kuşkuyu güvenilir bir sonuca ulaşmanın aracı yapar; ikincisi kesin bilgi iddiasının kendisine itiraz eder."
+  },
+  {
+   "after": 8,
+   "prompt": "“Bu yazar ünlü değil, o hâlde savı yanlış.” demek neden felsefi eleştiri sayılmaz?",
+   "answer": "Görüşün içeriğini incelemez; felsefi eleştiri dayanağın sonucu gerçekten destekleyip desteklemediğini araştırır."
+  },
+  {
+   "after": 9,
+   "prompt": "“Cesaret her riski almaktır.” tanımı hangi karşı örnekle zorlanır?",
+   "answer": "Anlamsız bir tehlikeye düşünmeden atılmak da tanıma girer; böylece tanım cesareti gözü karalıktan ayıramaz."
+  },
+  {
+   "after": 11,
+   "prompt": "Sistemli düşüncede bir varsayım değişirse ne yapılması gerekir?",
+   "answer": "O varsayıma bağlı sonuçların da yeniden incelenmesi gerekir."
+  },
+  {
+   "after": 14,
+   "prompt": "Felsefenin Antik Yunan’da sistemleşmesi hangi iddiayla karıştırılmamalıdır?",
+   "answer": "Bütün düşüncenin yalnız o toplumda ortaya çıktığı iddiasıyla; Mısır, Mezopotamya, Hint ve Çin’de de düşünce ve bilgi vardı."
+  },
+  {
+   "after": 16,
+   "prompt": "Bilinç ile öz bilinç nasıl ayrılır?",
+   "answer": "Bilinç kendinin ya da çevredeki bir durumun farkında olmaktır; öz bilinçte kişi kendi varlığı, düşüncesi ya da davranışı üzerinde durur."
+  },
+  {
+   "after": 18,
+   "prompt": "Bir deneyde katılımcıya zarar verme sorumluluğu hangi felsefe alanının sorusudur?",
+   "answer": "Ahlak felsefesinin; alanı olayın geçtiği yer değil, araştırılan sorunun kendisi belirler."
+  }
+ ],
+ "felsefe-ile-dusunme": [
+  {
+   "after": 2,
+   "prompt": "Bir yargının doğruluk değerini bilmemek onu neden önerme olmaktan çıkarmaz?",
+   "answer": "Doğruluk değeri taşıması ile senin o değeri bilmen ayrı meselelerdir; yargı yine doğru ya da yanlış olabilir."
+  },
+  {
+   "after": 4,
+   "prompt": "Ağır sözcüğünü bir öncülde kütle, ötekinde yavaşlık anlamında kullanmak hangi hataya yol açar?",
+   "answer": "Anlam kaymasına yol açar; çıkarım artık aynı konu üzerinde yürümez."
+  },
+  {
+   "after": 7,
+   "prompt": "Penguen örneğinde çıkarım geçerli olduğu hâlde sonuç neden güvenilmez?",
+   "answer": "Biçim geçerlidir ama “Bütün kuşlar uçar.” öncülü yanlıştır; sağlam bir çıkarım için öncüllerin de doğru olması gerekir."
+  },
+  {
+   "after": 9,
+   "prompt": "Islak sokak çıkarımını fıskiye olasılığıyla eleştirmek neyi göstermez?",
+   "answer": "Yağmurun kesinlikle yağmadığını göstermez; yalnız ıslaklığın tek başına yağmuru zorunlu kılmadığını gösterir."
+  },
+  {
+   "after": 12,
+   "prompt": "“Bazı kuşlar uçar.” yargısı tek bir uçamayan kuşla neden çürütülemez?",
+   "answer": "Bu yargı yalnız en az bir uçan kuşun var olduğunu söyler; uçamayan bir kuş bununla çelişmez."
+  },
+  {
+   "after": 13,
+   "prompt": "“Sabah kapalı, öğleden sonra açık” ifadesi neden çelişmezlik ilkesini ihlal etmez?",
+   "answer": "İki yargı farklı zamanlara ilişkindir; çelişki için aynı anlam ve aynı koşul gerekir."
+  }
+ ],
+ "varlik-felsefesi": [
+  {
+   "after": 2,
+   "prompt": "Bilim ile ontoloji varlığa yaklaşırken nasıl ayrılır?",
+   "answer": "Bilim dalları varlığın belirli yönlerini kendi yöntemleriyle açıklar; ontoloji var olmanın anlamını ve bu açıklamaların temel kabullerini sorgular."
+  },
+  {
+   "after": 4,
+   "prompt": "Görünüşlerin nihai gerçek olmadığını söylemek hangi iddiayla karıştırılmamalıdır?",
+   "answer": "Her şeyin hiçliğini ileri süren mutlak yokluk iddiasıyla; aldatıcı görünüş eleştirisi bu iddiayla aynı değildir."
+  },
+  {
+   "after": 8,
+   "prompt": "Suyu değişse de aynı nehir dememiz hangi problemi açar?",
+   "answer": "Değişim ile kimliğin, yani oluş ile kalıcılığın nasıl birlikte düşünülebileceği problemini açar."
+  },
+  {
+   "after": 10,
+   "prompt": "Aristoteles’in form anlayışı Platon’un idealarından nasıl ayrılır?",
+   "answer": "Aristoteles formu ayrı bir örnekler dünyasında değil, varlığın içinde onu belirleyen ilke olarak ele alır."
+  },
+  {
+   "after": 11,
+   "prompt": "Fârâbî’de zorunlu varlık ile mümkün varlık nasıl ayrılır?",
+   "answer": "Zorunlu varlık varlığını başkasına borçlu değildir; mümkün varlık var olmak için başka bir dayanağa ihtiyaç duyar."
+  },
+  {
+   "after": 13,
+   "prompt": "Descartes’a göre madde ile zihnin belirgin nitelikleri nedir?",
+   "answer": "Maddenin belirgin niteliği yer kaplama, zihninki ise düşünmedir."
+  },
+  {
+   "after": 15,
+   "prompt": "Sartre’ın “varoluş özden önce gelir” ifadesi insan hakkında neyi vurgular?",
+   "answer": "İnsanın önce var olup sonra seçimleri ve eylemleriyle kendini belirlediğini vurgular."
+  },
+  {
+   "after": 17,
+   "prompt": "Tahtaları değişen gemi örneğinde farklı sonuçlara varmak neden tutarsızlık sayılmaz?",
+   "answer": "Kimlik ölçütü değişmiştir; parçaları, işlevi, biçimi ya da tarihsel sürekliliği ölçüt almak farklı sonuç verebilir."
+  }
+ ],
+ "bilgi-felsefesi": [
+  {
+   "after": 1,
+   "prompt": "Doğru çıkan bir tahmin neden tek başına bilgi sayılmaz?",
+   "answer": "Tahmin tesadüfen doğru çıkabilir; bu, tahmini yapanın sağlam bir dayanağı olduğunu göstermez."
+  },
+  {
+   "after": 2,
+   "prompt": "Suda kırık görünen çubuk örneğinden hangi sonuç tek başına çıkmaz?",
+   "answer": "Her yargının her koşulda yanlış olduğu sonucu çıkmaz; bazı algıların yanılması bütün bilginin reddi değildir."
+  },
+  {
+   "after": 5,
+   "prompt": "Rasyonalizm bağlamında a priori ne anlama gelir?",
+   "answer": "Yargının gerekçesinin deneyden bağımsız olmasıdır; kişinin onu yaşamında ilk öğrendiği bilgi olması demek değildir."
+  },
+  {
+   "after": 7,
+   "prompt": "Kant’a göre bilginin deneyimle başlaması neden yalnız deneyimden türediğini göstermez?",
+   "answer": "Deneyim malzeme sağlar, bu malzemeyi anlamlı biçimde düzenleyen ise zihnin formlarıdır; iki kaynağın görevi farklıdır."
+  },
+  {
+   "after": 9,
+   "prompt": "Comte’un pozitivizmi olayları açıklarken neyi neyin yerine koyar?",
+   "answer": "Doğaüstü nedenler ve soyut özler yerine olgular arasındaki ilişkileri araştırmayı koyar."
+  },
+  {
+   "after": 11,
+   "prompt": "Mantıkçı pozitivizm bir önermenin anlamını neye bağlar?",
+   "answer": "Doğrulanabilirliğe bağlar; anlamlı bir önermenin nasıl doğrulanacağı gösterilebilmelidir."
+  },
+  {
+   "after": 12,
+   "prompt": "Nesnenin özüne erişilemediğini savunmak neden bütün bilginin imkânsızlığı sonucunu vermez?",
+   "answer": "Görünen nitelikler yine bilinebilir; yalnız öze erişim sınırlanır, bilinen alan ile erişilemeyen alan ayrılır."
+  },
+  {
+   "after": 15,
+   "prompt": "Matematikte bir sonucun tanım ve öncüllerden çıkarılması hangi doğruluk ölçütünü örnekler?",
+   "answer": "Tutarlılık ölçütünü; yargının kabul edilen öbür yargılarla çelişmeden bir bütün içinde yer alması aranır."
+  },
+  {
+   "after": 17,
+   "prompt": "Pragmatik doğruluk ölçütü ile ahlaktaki toplam fayda neden aynı soru değildir?",
+   "answer": "Pragmatik ölçüt bir yargının doğruluk anlayışını, toplam fayda ise bir eylemin ahlaki ölçütünü inceler."
+  },
+  {
+   "after": 19,
+   "prompt": "Bir kaynağın güvenilirliğini araştırırken unvan dışında neye bakmalısın?",
+   "answer": "Uzmanlığına, dayandığı yöntem ve verilere, bağımsız denetime ve hata ihtimaline bakmalısın."
+  }
+ ],
+ "bilim-felsefesi": [
+  {
+   "after": 1,
+   "prompt": "Yalnız boy ölçülmüşken bitkinin her bakımdan daha sağlıklı olduğunu söylemek neden hatalıdır?",
+   "answer": "Seçilen gösterge yalnız boydur; bu sonuç eldeki verinin kapsamını aşar."
+  },
+  {
+   "after": 3,
+   "prompt": "Hipotezde beklenen fark çıkmadığında ne yapılmalıdır?",
+   "answer": "Savın ya da sınama düzeninin yeniden incelenmesi gerekir; her sonuca sonradan gerekçe ekleyip varsayımı korumak sınamayı güçleştirir."
+  },
+  {
+   "after": 5,
+   "prompt": "Sıcak günlerde dondurma satışı ile su tüketiminin birlikte artması neden nedensellik kanıtı değildir?",
+   "answer": "İkisi ortak koşul olan sıcaklıkla artıyor olabilir; birlikte değişme nedenin yönünü ya da başka etkenlerin yokluğunu kanıtlamaz."
+  },
+  {
+   "after": 7,
+   "prompt": "Öndeyi ile açıklama arasındaki fark nedir?",
+   "answer": "Öndeyi belirli koşullarda ne görüleceğini söyler; açıklama olayın hangi ilişki ya da mekanizmayla ortaya çıktığını anlamlandırır."
+  },
+  {
+   "after": 9,
+   "prompt": "Beyaz ve siyah kuğu gözlemleri arasındaki asimetri nedir?",
+   "answer": "Çok sayıda beyaz kuğu evrensel savı kesinleştirmez; kapsamdaki tek bir siyah kuğu ise bu savla bağdaşmaz."
+  },
+  {
+   "after": 12,
+   "prompt": "Kuhn’a göre olağan bilimde araştırmacılar ne yapar?",
+   "answer": "Kabul edilen paradigma çerçevesinde bilmeceler çözer; önemli aykırılıklar ve krizler değişim tartışmalarına yol açabilir."
+  },
+  {
+   "after": 14,
+   "prompt": "Birkaç üçgende ölçüm yapmak neden bir teoremi kanıtlamaz?",
+   "answer": "Ölçüm bir sanı doğurabilir; matematikte teorem, tanım ve aksiyomlardan kurulan genel bir ispat gerektirir."
+  },
+  {
+   "after": 16,
+   "prompt": "Bir araç çalışıyor olsa bile teknolojik seçimde başka hangi değerler rol oynar?",
+   "answer": "Maliyet, erişim, çevresel etki ve güvenlik gibi değerler rol oynar; teknik başarı etik değerlendirmeyi tamamlamaz."
+  },
+  {
+   "after": 18,
+   "prompt": "Bir araştırmada matematiksel bağıntı kullanmak neden olgusal veri ihtiyacını ortadan kaldırmaz?",
+   "answer": "Alanı kullanılan araç değil, iddianın ne hakkında olduğu belirler; olgusal bir iddia yine veriyle gerekçelendirilmelidir."
+  }
+ ],
+ "ahlak-felsefesi": [
+  {
+   "after": 2,
+   "prompt": "“Bu toplulukta yaşlılara sıra veriliyor.” ile “Sıra vermek gerekir.” nasıl ayrılır?",
+   "answer": "İlki bir davranış örüntüsünü betimler, ikincisi ne yapılması gerektiğini söyleyen normatif yargıdır; aradaki geçiş gerekçe ister."
+  },
+  {
+   "after": 3,
+   "prompt": "İyi bıçak ile iyi eylem ifadelerinde iyi sözcüğü nasıl farklı iş görür?",
+   "answer": "İyi bıçakta aracın işlevine ilişkin başarı, iyi eylemde ise ahlaki değerlendirme söz konusudur."
+  },
+  {
+   "after": 5,
+   "prompt": "Sorumluluk tartışmasında hangi koşullar belirleyicidir?",
+   "answer": "Kişinin ne bildiği, neyi amaçladığı, hangi seçeneklere sahip olduğu ve eylem üzerindeki denetimi belirleyicidir."
+  },
+  {
+   "after": 7,
+   "prompt": "Bir kez doğruyu söylemek neden dürüst bir karakteri kanıtlamaz?",
+   "answer": "Erdem tek bir davranıştan daha kalıcı bir yönelimdir; davranışın sürekliliği ve gerekçesi önemlidir."
+  },
+  {
+   "after": 11,
+   "prompt": "Epikuros’un haz anlayışı sınırsız tüketimden nasıl ayrılır?",
+   "answer": "Epikuros ölçülülüğü, gereksiz kaygılardan uzaklaşmayı ve ruh dinginliğini vurgular."
+  },
+  {
+   "after": 13,
+   "prompt": "Faydacılık bir eylemi değerlendirirken kimlerin yarar ve zararını hesaba katar?",
+   "answer": "Yalnız eylemi yapanın değil, eylemin ya da kuralın etkilediği kişilerin yarar ve zararlarını hesaba katar."
+  },
+  {
+   "after": 14,
+   "prompt": "Etik egoizm, insanların hep bencil davrandığı betimlemesinden nasıl ayrılır?",
+   "answer": "Etik egoizm nasıl davranılması gerektiğini savunan normatif bir görüştür; öteki insanların fiilen nasıl davrandığını betimler."
+  },
+  {
+   "after": 16,
+   "prompt": "Belirlenimsizlikte bir kararın rastgele olması neden özgürlüğü kanıtlamaz?",
+   "answer": "Rastlantı, kararın kişi tarafından özgürce denetlendiğini tek başına göstermez."
+  },
+  {
+   "after": 17,
+   "prompt": "Bir davranışın yasaya uygunluğu ile ahlaki gerekçesi neden ayrı sorulardır?",
+   "answer": "Hukuk kurum ve yaptırımlarla işler; ahlaki değerlendirme vicdan, değer ve yükümlülüklerle daha geniş sorular sorar."
+  },
+  {
+   "after": 20,
+   "prompt": "Bergson’da kapalı toplum ile açık ahlak nasıl ayrılır?",
+   "answer": "Kapalı toplum alışkanlık ve baskı yönüyle, açık ahlak ise yaratıcı yönelimiyle öne çıkar."
+  },
+  {
+   "after": 21,
+   "prompt": "Nietzsche yerleşik ahlaki değerler hakkında hangi soruları sorar?",
+   "answer": "Değerlerin nereden geldiğini, hangi yaşam biçimini desteklediğini ve kişinin değer oluşturma gücünü sorgular."
+  }
+ ]
+}

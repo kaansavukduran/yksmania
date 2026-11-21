@@ -64,7 +64,7 @@ function Example({ example }: { example: WorkedExample }) {
   const [count, setCount] = useState(0);
   return (
     <details className="worked-example">
-      <summary>{example.title}</summary>
+      <summary>{typeset(example.title)}</summary>
       <p className="example-prompt">{typeset(example.prompt)}</p>
       <p>
         <strong>Nasıl başlayalım?</strong> {example.strategy}
@@ -265,7 +265,7 @@ export function GuidedReading({
   }
   const pageTitle = (i: number) =>
     i < guide.sections.length
-      ? guide.sections[i].title
+      ? typeset(guide.sections[i].title)
       : i === guide.sections.length
         ? "Birlikte çöz"
         : "Bakmadan hatırla";
@@ -319,7 +319,7 @@ export function GuidedReading({
                   aria-current={i === step ? "page" : undefined}
                   onClick={() => jump(i)}
                 >
-                  {section.title}
+                  {typeset(section.title)}
                 </button>
               ),
             )}
@@ -349,7 +349,7 @@ export function GuidedReading({
               <p className="page-label small muted">
                 Sayfa {i + 1} / {stages}
               </p>
-              <h2 tabIndex={-1}>{section.title}</h2>
+              <h2 tabIndex={-1}>{typeset(section.title)}</h2>
               {section.paragraphs.map((paragraph, j) => (
                 <p key={j}>{typeset(paragraph)}</p>
               ))}
@@ -358,7 +358,7 @@ export function GuidedReading({
                   className="guide-table"
                   role="region"
                   tabIndex={0}
-                  aria-label={`${section.title} tablosu`}
+                  aria-label={`${typeset(section.title)} tablosu`}
                 >
                   <table role="table">
                     <thead role="rowgroup">
@@ -370,7 +370,7 @@ export function GuidedReading({
                             id={`${prefix}-table-${i}-col-${j}`}
                             key={j}
                           >
-                            {header}
+                            {typeset(header)}
                           </th>
                         ))}
                       </tr>
@@ -388,10 +388,10 @@ export function GuidedReading({
                                 className="guide-table-cell-label"
                                 aria-hidden="true"
                               >
-                                {section.table!.headers[k]}
+                                {typeset(section.table!.headers[k])}
                               </span>
                               <span className="guide-table-cell-value">
-                                {cell}
+                                {typeset(cell)}
                               </span>
                             </td>
                           ))}
@@ -446,8 +446,8 @@ export function GuidedReading({
           </p>
           {guide.recall.map((item) => (
             <details key={item.prompt}>
-              <summary>{item.prompt}</summary>
-              <p>{item.answer}</p>
+              <summary>{typeset(item.prompt)}</summary>
+              <p>{typeset(item.answer)}</p>
             </details>
           ))}
           {recallSupplement}

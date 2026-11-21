@@ -1,0 +1,362 @@
+[
+ {
+  "from": "(a, b)≠(0,0) için|c|≤√(a²+b²); sıfır katsayılar ayrı dallanır.",
+  "to": "(a, b)≠(0,0) için |c|≤√(a²+b²); sıfır katsayılar ayrı dallanır."
+ },
+ {
+  "from": "1 dâhil,10 hariç:1≤|a|<10. İşaret katsayının mutlak değeriyle denetlenir.",
+  "to": "1 dâhil, 10 hariç: 1≤|a|<10. İşaret katsayının mutlak değeriyle denetlenir."
+ },
+ {
+  "from": "12 ve 18 dk, ortak başlangıçta ilk yeniden an ve[0, 72]sayımı?",
+  "to": "12 ve 18 dk, ortak başlangıçta ilk yeniden an ve [0, 72] sayımı?"
+ },
+ {
+  "from": "1808,1839,1856,1876 sırasını belge adlarıyla kur.",
+  "to": "1808, 1839, 1856, 1876 sırasını belge adlarıyla kur."
+ },
+ {
+  "from": "1838,1854,1875,1881 zincirini kur.",
+  "to": "1838, 1854, 1875, 1881 zincirini kur."
+ },
+ {
+  "from": "1840 Mısır,1841 Boğazlar: aynı Londra değil",
+  "to": "1840 Mısır, 1841 Boğazlar: aynı Londra değil"
+ },
+ {
+  "from": "1938 ayrı devletin kuruluşu,1939 Türkiye’ye katılma sürecinin sonucudur.",
+  "to": "1938 ayrı devletin kuruluşu, 1939 Türkiye’ye katılma sürecinin sonucudur."
+ },
+ {
+  "from": "2n kromozom takımlarını,2ʰ bağımsız heterozigot lokuslardan gamet çeşidini gösterir.",
+  "to": "2n kromozom takımlarını, 2ʰ bağımsız heterozigot lokuslardan gamet çeşidini gösterir."
+ },
+ {
+  "from": "8 yazılır,2 onluk taşınır:28=10×2+8.",
+  "to": "8 yazılır, 2 onluk taşınır: 28=10×2+8."
+ },
+ {
+  "from": "A, D, E, K yağda; B grubu veC suda çözünür. Grup eşliği görev eşliği değildir.",
+  "to": "A, D, E, K yağda; B grubu ve C suda çözünür. Grup eşliği görev eşliği değildir."
+ },
+ {
+  "from": "Alan yalnızΔvverir. Son hız için v₀; konum için başlangıç konumu ve hız programı da gerekir.",
+  "to": "Alan yalnız Δv verir. Son hız için v₀; konum için başlangıç konumu ve hız programı da gerekir."
+ },
+ {
+  "from": "Anafaz I veII’de ayrılan yapılar?",
+  "to": "Anafaz I ve II’de ayrılan yapılar?"
+ },
+ {
+  "from": "Anakütlenin betimleyici sapması ile MEBİ’nin örneklem sapması farklı tanımlardır; sorunun kapsamı veya formülü belirlemelidir.",
+  "to": "Anakütlenin betimleyici sapması ile örneklem sapması farklı tanımlardır; sorunun kapsamı veya formülü belirlemelidir."
+ },
+ {
+  "from": "Anlamca örtülü özne denir; MEBİ’nin öge çözümlemesinde zarf tümlecidir. Uygulama bu konvansiyonu açıkça kullanır.",
+  "to": "Anlamca örtülü özne denir; okul dil bilgisindeki öge çözümlemesinde zarf tümlecidir. Bu derste o çözümleme kullanılır."
+ },
+ {
+  "from": "Atılan=süzülen+salgılanan−geri emilen; aynı madde ve zaman birimiyle.",
+  "to": "Atılan = süzülen + salgılanan − geri emilen; aynı madde ve zaman birimiyle."
+ },
+ {
+  "from": "Aynı iki durumunΔU=mgΔhdeğeri ve tutarlı enerji hesabından çıkan fiziksel hareket sonucu değişmez.",
+  "to": "Aynı iki durumun ΔU=mgΔh değeri ve tutarlı enerji hesabından çıkan fiziksel hareket sonucu değişmez."
+ },
+ {
+  "from": "Açık kişileştirme bağlamında tekil veya çoğul yüklem kullanılabilir. Nötr okul örneğindeki tekil kuralı bu bağlama koşulsuz taşınmaz.",
+  "to": "Açık kişileştirme bağlamında tekil veya çoğul yüklem kullanılabilir. Nötr örnekteki tekil kuralı bu bağlama koşulsuz taşınmaz."
+ },
+ {
+  "from": "Bafa ve Eymir gibi okul örnekleri; akarsu birikimiyle tıkanma ilişkisi.",
+  "to": "Bafa ve Eymir gibi tipik örnekler; akarsu birikimiyle tıkanma ilişkisi."
+ },
+ {
+  "from": "Başlangıç ve bitiş aynı işarettir. Açık kenarda iki uç dahilse iki farklı uç bulunur ve nokta=aralık+1 olur.",
+  "to": "Başlangıç ve bitiş aynı işarettir. Açık kenarda iki uç dahilse iki farklı uç bulunur ve nokta = aralık + 1 olur."
+ },
+ {
+  "from": "Bileşik sayının küçük çarpanı√n değerini aşmaz; onun asal böleni de sınırın içindedir. Eşitlik dahildir.",
+  "to": "Bileşik sayının küçük çarpanı √n değerini aşmaz; onun asal böleni de sınırın içindedir. Eşitlik dahildir."
+ },
+ {
+  "from": "Bir ilerleme hesabında sonKnegatif çıkarsa ne kontrol edilir?",
+  "to": "Bir ilerleme hesabında son K negatif çıkarsa ne kontrol edilir?"
+ },
+ {
+  "from": "Birleşmiş Milletler:1941’den 1945’e",
+  "to": "Birleşmiş Milletler: 1941’den 1945’e"
+ },
+ {
+  "from": "Bu düzgün akış modelinde |akıntı|<suya göre sürat; eşitlikte dik bileşen 0 olur.",
+  "to": "Bu düzgün akış modelinde |akıntı| < suya göre sürat; eşitlikte dik bileşen 0 olur."
+ },
+ {
+  "from": "Bu okul tanımında tanımsız; sıfır olmayan sabitinki 0.",
+  "to": "Bu tanımda tanımsız; sıfır olmayan sabitinki 0."
+ },
+ {
+  "from": "Doğrudan neden iradeli insan eylemi mi yoksa doğal süreç mi?Aynı olay dizisinde ikisi bulunabilir.",
+  "to": "Doğrudan neden iradeli insan eylemi mi yoksa doğal süreç mi? Aynı olay dizisinde ikisi bulunabilir."
+ },
+ {
+  "from": "Dışbükey n-gen bir köşeden n−2 üçgene ayrılır; her üçgen 180°verir, toplam(n−2)·180°dir.",
+  "to": "Dışbükey n-gen bir köşeden n−2 üçgene ayrılır; her üçgen 180° verir, toplam (n−2)·180°dir."
+ },
+ {
+  "from": "E veB aynı anda ters dönerse yayılma neden geri dönmez?",
+  "to": "E ve B aynı anda ters dönerse yayılma neden geri dönmez?"
+ },
+ {
+  "from": "E=hf arttığı için aynıP=N·E değerini taşımak üzere saniyedeki foton sayısı azalır.",
+  "to": "E=hf arttığı için aynı P=N·E değerini taşımak üzere saniyedeki foton sayısı azalır."
+ },
+ {
+  "from": "EBOB(x,y)=1. Yalnızxy=m/d koşulu asıl EBOB’u korumaya yetmez.",
+  "to": "EBOB(x,y)=1. Yalnız xy=m/d koşulu asıl EBOB’u korumaya yetmez."
+ },
+ {
+  "from": "Ek tepkime ve ideal olmayan etkinlik farkları dışlanan okul modelinde hayır; denge derişimleri ve tuzun çözünürlüğü değişir.",
+  "to": "Ek tepkime ve ideal olmayan etkinlik farkları dışlanan modelde hayır; denge derişimleri ve tuzun çözünürlüğü değişir."
+ },
+ {
+  "from": "En büyük fotoelektron enerjisini: eVkesme=Kmax.",
+  "to": "En büyük fotoelektron enerjisini: e·V(kesme) = Kmax."
+ },
+ {
+  "from": "Erkek döllenmemiş n yumurtadan gelişir; okul modelinde n düzeyini koruyan mitozla sperm yapar.",
+  "to": "Erkek döllenmemiş n yumurtadan gelişir; bu modelde n düzeyini koruyan mitozla sperm yapar."
+ },
+ {
+  "from": "EtkinE sabitken üst sınır 2E’dir; I görünür payda sabitini değiştirir. Bu her inhibitöre genellenmez.",
+  "to": "Etkin E sabitken üst sınır 2E’dir; I görünür payda sabitini değiştirir. Bu her inhibitöre genellenmez."
+ },
+ {
+  "from": "Evrenin başlangıç koşulları kendi başlangıç anına aittir;τ=global t−evre başlangıcı kullanılır.",
+  "to": "Evrenin başlangıç koşulları kendi başlangıç anına aittir; τ = global t − evre başlangıcı kullanılır."
+ },
+ {
+  "from": "F=G, el yolu= yükün yükselmesi.",
+  "to": "F=G, el yolu = yükün yükselmesi."
+ },
+ {
+  "from": "Gevşek, az gelişmiş ana malzeme; volkanik kum/tüf okul örneği.",
+  "to": "Gevşek, az gelişmiş ana malzeme; volkanik kum/tüf tipik örneği."
+ },
+ {
+  "from": "Hat:harf düzeni; tezhip:ince bezeme; ebru:su yüzeyi desenini kâğıda aktarma; minyatür:küçük ayrıntılı tasvir. Bir sayfada birden çok teknik bulunabilir.",
+  "to": "Hat: harf düzeni; tezhip: ince bezeme; ebru: su yüzeyi desenini kâğıda aktarma; minyatür: küçük ayrıntılı tasvir. Bir sayfada birden çok teknik bulunabilir."
+ },
+ {
+  "from": "Hayır. Toplanabilir hacimde eşitV aritmetik; eşitm,2ρ₁ρ₂/(ρ₁+ρ₂) verir. Gerçek son hacim ayrıca ölçülmüşse doğrudan mtop/Vson kullanılır.",
+  "to": "Hayır. Toplanabilir hacimde eşit V aritmetik; eşit m, 2ρ₁ρ₂/(ρ₁+ρ₂) verir. Gerçek son hacim ayrıca ölçülmüşse doğrudan mtop/Vson kullanılır."
+ },
+ {
+  "from": "Hayır; Bohr Coulomb modelindeK=−E pozitif, U=2 E negatiftir.",
+  "to": "Hayır; Bohr Coulomb modelinde K=−E pozitif, U=2E negatiftir."
+ },
+ {
+  "from": "Hayır; olasılığı değiştirebilir.Değişimin yeri, etkisi ve aktarım yolu ayrıca belirlenmelidir.",
+  "to": "Hayır; olasılığı değiştirebilir. Değişimin yeri, etkisi ve aktarım yolu ayrıca belirlenmelidir."
+ },
+ {
+  "from": "Hayır; yerel etkenin baskınlığıyla ilgili okul grubudur.",
+  "to": "Hayır; yerel etkenin baskınlığıyla ilgili sınıflama grubudur."
+ },
+ {
+  "from": "Hayır; çevresel fenotip yanıtı olabilir.Seçilim için kalıtsal farkla bağlantılı yaşam/üreme katkısı gerekir.",
+  "to": "Hayır; çevresel fenotip yanıtı olabilir. Seçilim için kalıtsal farkla bağlantılı yaşam/üreme katkısı gerekir."
+ },
+ {
+  "from": "I:cd;Φ:lm;E:lx=lm/m².",
+  "to": "I: cd; Φ: lm; E: lx=lm/m²."
+ },
+ {
+  "from": "Kaynak incelemesi:2022 TYT Temel Matematik 14",
+  "to": "Kaynak incelemesi: 2022 TYT Temel Matematik 14"
+ },
+ {
+  "from": "Kelvin;λtepe T=b dalga boyuna göre tayf tepesine aittir.",
+  "to": "Kelvin; λ(tepe)·T = b dalga boyuna göre tayf tepesine aittir."
+ },
+ {
+  "from": "Küçülür. Örneğin(1/2)⁴<(1/2)²; eşitsizlikte üs sırası ters okunur.",
+  "to": "Küçülür. Örneğin (1/2)⁴<(1/2)²; eşitsizlikte üs sırası ters okunur."
+ },
+ {
+  "from": "Noktasal/öteleme modelindeΔKnet işe eşittir. Seçilmiş kuvvet ancak diğer kuvvetlerin net işi 0 ise tek başına aynı sonucu verir.",
+  "to": "Noktasal/öteleme modelinde ΔK net işe eşittir. Seçilmiş kuvvet ancak diğer kuvvetlerin net işi 0 ise tek başına aynı sonucu verir."
+ },
+ {
+  "from": "Okul güneş saati modelinde yerel saati; gündüz süresini veya iklimi zorunlu eşitlemez.",
+  "to": "Güneş saati modelinde yerel saati; gündüz süresini veya iklimi zorunlu eşitlemez."
+ },
+ {
+  "from": "Okulun sığ-su yaklaşımında sürat ve dalga boyu azalır; frekans/periyot korunur.",
+  "to": "Sığ su yaklaşımında sürat ve dalga boyu azalır; frekans/periyot korunur."
+ },
+ {
+  "from": "Ortak 10⁶ ile(0,6+4)×10⁶=4,6×10⁶.",
+  "to": "Ortak 10⁶ ile (0,6+4)×10⁶=4,6×10⁶."
+ },
+ {
+  "from": "Ortak pozitif tam çarpan t serbest kalır; a=mt, b=nt aynı oranı verir ve toplam(m+n) t tek değerli olmaz.",
+  "to": "Ortak pozitif tam çarpan t serbest kalır; a=mt, b=nt aynı oranı verir ve toplam (m+n)t tek değerli olmaz."
+ },
+ {
+  "from": "P=DQ+R, D≠0; R=0 veya degR<degD.",
+  "to": "P=DQ+R, D≠0; R=0 veya der(R)<der(D)."
+ },
+ {
+  "from": "Q=meriyenL; bütün başlangıç kütlesi yalnız tamamı erirse kullanılır. ΔT=0 enerji aktarımı yok demek değildir.",
+  "to": "Q=m(eriyen)·L; bütün başlangıç kütlesi yalnız tamamı erirse kullanılır. ΔT=0 enerji aktarımı yok demek değildir."
+ },
+ {
+  "from": "Rusya:1917 devrimlerinden yeni ekonomi politikasına",
+  "to": "Rusya: 1917 devrimlerinden yeni ekonomi politikasına"
+ },
+ {
+  "from": "Seçili OGM yönteminden özgün uyarlama",
+  "to": "Seçili yöntemden özgün uyarlama"
+ },
+ {
+  "from": "Seçili OGM örneklerinde kuralları zincirlemek",
+  "to": "Seçili örneklerde kuralları zincirlemek"
+ },
+ {
+  "from": "Seçili OGM örneğinde dış eksi",
+  "to": "Seçili örnekte dış eksi"
+ },
+ {
+  "from": "Seçili OGM örneğinde koşul ve dış eksi",
+  "to": "Seçili örnekte koşul ve dış eksi"
+ },
+ {
+  "from": "Seçili OGM örneğinde x>0 koşulu hangi üç açmayı verir?",
+  "to": "Seçili örnekte x>0 koşulu hangi üç açmayı verir?"
+ },
+ {
+  "from": "Seçili OGM: ara tabanı verilen kuvvetler",
+  "to": "Seçili örnek: ara tabanı verilen kuvvetler"
+ },
+ {
+  "from": "Seçili OGM: işaretleri ve üsleri ayrı izlemek",
+  "to": "Seçili örnek: işaretleri ve üsleri ayrı izlemek"
+ },
+ {
+  "from": "Seçili OGM: negatif üsleri ortak tabana taşımak",
+  "to": "Seçili örnek: negatif üsleri ortak tabana taşımak"
+ },
+ {
+  "from": "Seçili OGM: ortak çarpanı bölüme tamamlamak",
+  "to": "Seçili örnek: ortak çarpanı bölüme tamamlamak"
+ },
+ {
+  "from": "Seçili OGM: verilen 5 kuvvetinden sonuca",
+  "to": "Seçili örnek: verilen 5 kuvvetinden sonuca"
+ },
+ {
+  "from": "Seçili OGM:0,72’nin asal çarpanları",
+  "to": "Seçili örnek: 0,72’nin asal çarpanları"
+ },
+ {
+  "from": "Seçilmiş kuvvet işi hangi koşuldaΔK’ye eşittir?",
+  "to": "Seçilmiş kuvvet işi hangi koşulda ΔK’ye eşittir?"
+ },
+ {
+  "from": "Son miktar=başlangıç+gerçek teslimler−gerçek çıkış; yalnız kapasiteyi çıkış diye kullanma.",
+  "to": "Son miktar = başlangıç + gerçek teslimler − gerçek çıkış; yalnız kapasiteyi çıkış diye kullanma."
+ },
+ {
+  "from": "Su→fotosistemII→araETS→fotosistemI→NADP⁺; iki ışık uyarımı ve proton gradyanı bağlantısı vardır.",
+  "to": "Su → fotosistem II → ara ETS → fotosistem I → NADP⁺; iki ışık uyarımı ve proton gradyanı bağlantısı vardır."
+ },
+ {
+  "from": "Tabanlar a≥b ise orta taban(a+b)/2, orta tabanda köşegenler arasında kalan parça(a−b)/2’dir.",
+  "to": "Tabanlar a≥b ise orta taban (a+b)/2, orta tabanda köşegenler arasında kalan parça (a−b)/2’dir."
+ },
+ {
+  "from": "Tek fiilimsi temel yüklemdir; yüklem dışında başka yan yapı yoktur. OGM sınıflamasında bu cümle basit isim cümlesidir.",
+  "to": "Tek fiilimsi temel yüklemdir; yüklem dışında başka yan yapı yoktur. Dil bilgisi sınıflamasında bu cümle basit isim cümlesidir."
+ },
+ {
+  "from": "Tipik tek çeneklide belirgin öz çevresinde çok sayıda iletim grubu; çift çeneklide merkezde yıldız biçimli ksilem ve aralarda floem görülür. Bunlar tipik okul örnekleridir.",
+  "to": "Tipik tek çeneklide belirgin öz çevresinde çok sayıda iletim grubu; çift çeneklide merkezde yıldız biçimli ksilem ve aralarda floem görülür. Bunlar tipik örneklerdir."
+ },
+ {
+  "from": "Tortum, Sera ve Yedigöller okul örnekleri; set malzemesi kütle hareketidir.",
+  "to": "Tortum, Sera ve Yedigöller tipik örnekler; set malzemesi kütle hareketidir."
+ },
+ {
+  "from": "Uyutmak ile kestirmek okul sınıflamasında nasıl ayrılır?",
+  "to": "Uyutmak ile kestirmek dil bilgisi sınıflamasında nasıl ayrılır?"
+ },
+ {
+  "from": "Uçlarda radyal hız sıfırdır ve hız yarıçapa diktir; genel L=mrvsinθ bu noktalarda mrv olur.",
+  "to": "Uçlarda radyal hız sıfırdır ve hız yarıçapa diktir; genel L=mrv·sin θ bu noktalarda mrv olur."
+ },
+ {
+  "from": "Yumuşak kireçli ana malzeme ve koyu üst katın okul örneği.",
+  "to": "Yumuşak kireçli ana malzeme ve koyu üst katın tipik örneği."
+ },
+ {
+  "from": "Zonal, intrazonal, azonal bir okul çerçevesidir",
+  "to": "Zonal, intrazonal, azonal bir sınıflama çerçevesidir"
+ },
+ {
+  "from": "a sinx+b cosx=c ne zaman çözülebilir?",
+  "to": "a·sin x + b·cos x = c ne zaman çözülebilir?"
+ },
+ {
+  "from": "a/b=c/d'den(a+c)/(b+d)=k yazarken ek koşul?",
+  "to": "a/b=c/d'den (a+c)/(b+d)=k yazarken ek koşul?"
+ },
+ {
+  "from": "a/sinA=b/sinB=c/sinC=2R; R çevrel yarıçaptır.",
+  "to": "a/sin A = b/sin B = c/sin C = 2R; R çevrel yarıçaptır."
+ },
+ {
+  "from": "a≠0. 0⁰ bu okul kapsamı içinde tanımsızdır.",
+  "to": "a≠0. 0⁰ bu kapsamda tanımsızdır."
+ },
+ {
+  "from": "n≥2 için(n−2)³; bu gerçek bütün kristallerin zorunlu örgüsü değildir.",
+  "to": "n≥2 için (n−2)³; bu gerçek bütün kristallerin zorunlu örgüsü değildir."
+ },
+ {
+  "from": "n≥2 içinS_n−S_(n−1); a_1=S_1 ayrıca kontrol edilir.",
+  "to": "n≥2 için S_n−S_(n−1); a_1=S_1 ayrıca kontrol edilir."
+ },
+ {
+  "from": "x≠0 için 2 log_a|x|; 2 log_a x yalnızx>0’da.",
+  "to": "x≠0 için 2 log_a|x|; 2 log_a x yalnız x>0’da."
+ },
+ {
+  "from": "z=λalınan/λyayılan−1; kozmolojik homojen ölçek modelinde 1+z=aalınan/ayayılan.",
+  "to": "z = λ(alınan)/λ(yayılan) − 1; kozmolojik homojen ölçek modelinde 1+z = a(alınan)/a(yayılan)."
+ },
+ {
+  "from": "Çıldır ve Erçek okul örnekleri; çukurun geçmişiyle seti ayrı düşün.",
+  "to": "Çıldır ve Erçek tipik örnekler; çukurun geçmişiyle seti ayrı düşün."
+ },
+ {
+  "from": "Ölçülen olguya göre:uzaysal girişim/kırınımda dalga, tekil enerji-momentum alışverişinde foton yaklaşımı gerekir.",
+  "to": "Ölçülen olguya göre: uzaysal girişim/kırınımda dalga, tekil enerji-momentum alışverişinde foton yaklaşımı gerekir."
+ },
+ {
+  "from": "Üç farklı çiftten:12,13,23.",
+  "to": "Üç farklı çiftten: 12, 13, 23."
+ },
+ {
+  "from": "İdeal serbest durgun elektron modelinde 0;λ′=λ.",
+  "to": "İdeal serbest durgun elektron modelinde 0; λ′=λ."
+ },
+ {
+  "from": "İşaretli alanΔx; mutlak alan toplamı yoldur. Yön değişirse bu ikisi farklı olabilir.",
+  "to": "İşaretli alan Δx; mutlak alan toplamı yoldur. Yön değişirse bu ikisi farklı olabilir."
+ },
+ {
+  "from": "∛x tek başına=0’da sonlu türevli değilse x²∛x için ne söylenir?",
+  "to": "∛x tek başına x=0’da sonlu türevli değilse x²∛x için ne söylenir?"
+ }
+]

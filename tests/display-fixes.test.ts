@@ -17,9 +17,17 @@ describe("gösterim onarımları", () => {
         const q = localizedQuestionView(raw) as never as Record<string, unknown> & { options: unknown[] };
         for (const v of [q.prompt, q.passage, q.explanation, q.hint, ...q.options]) if (v) strings.add(text(v));
       }
-    // Lesson paragraphs are repaired the same way (files named anlatim-*).
-    for (const guide of lessonGuides.values())
-      for (const section of guide.sections) for (const paragraph of section.paragraphs) strings.add(paragraph);
+    // Lesson text is repaired the same way (files named anlatim-*): paragraphs,
+    // section and example titles, table cells and the end-of-lesson recall.
+    for (const guide of lessonGuides.values()) {
+      for (const section of guide.sections) {
+        strings.add(section.title);
+        for (const paragraph of section.paragraphs) strings.add(paragraph);
+        for (const cell of [...(section.table?.headers ?? []), ...(section.table?.rows.flat() ?? [])]) strings.add(cell);
+      }
+      for (const example of guide.examples) strings.add(example.title);
+      for (const item of guide.recall) strings.add(item.prompt).add(item.answer);
+    }
     expect(rows.filter((r) => !strings.has(r.from)).map((r) => r.from.slice(0, 60))).toEqual([]);
   });
   it("a repair never changes digits unless it only removes a leaked note, and never adds an em dash or ASCII ellipsis", () => {

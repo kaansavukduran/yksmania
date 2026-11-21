@@ -646,5 +646,432 @@
    "prompt": "Çatalhöyük, Çayönü ve Aşıklıhöyük hangi illerin çevresindeki Neolitik yerleşmelerdir?",
    "answer": "Çatalhöyük Konya, Çayönü Diyarbakır, Aşıklıhöyük Aksaray çevresindedir."
   }
+ ],
+ "nufus-onemi-ozellikleri": [
+  {
+   "after": 1,
+   "prompt": "Nüfusun fazla olması neden tek başına kalkınma ya da yoksulluk sonucu doğurmaz?",
+   "answer": "Sonucu eğitim, istihdam, verimlilik, kaynaklar ve kurumlar da belirler; genç nüfus koşula göre fırsat da baskı da olabilir."
+  },
+  {
+   "after": 4,
+   "prompt": "Toplamı 300.000 olan bir nüfusta 0–14 yaş payı %23 ise bu grupta kaç kişi vardır?",
+   "answer": "Yüzdeyi 100’e bölüp toplamla çarparsın: 300.000 × 23 / 100 = 69.000 kişi."
+  },
+  {
+   "after": 6,
+   "prompt": "Genç payı 15, yaşlı payı 5, çalışma çağı payı 80 ise yaşa dayalı bağımlılık oranı kaçtır?",
+   "answer": "(15 + 5) / 80 × 100 = 25 bulunur; çalışma çağındaki 100 kişiye 25 kişi düşer."
+  },
+  {
+   "after": 8,
+   "prompt": "Aritmetik yoğunluğun 100 kişi/km² çıkması neden her km²’de 100 kişi yaşadığı anlamına gelmez?",
+   "answer": "Bu değer bir ortalamadır; kent merkezi çok yoğun, bazı yamaçlar çok seyrek olabilir."
+  },
+  {
+   "after": 10,
+   "prompt": "Osmanlı’nın 1831 sayımını 1927 sayımıyla aynı dizi gibi kullanmak neden hatalıdır?",
+   "answer": "1831 sayımı vergi ve askerlik amacıyla erkekleri kapsar; 1927 Cumhuriyet’in ilk genel nüfus sayımıdır, kapsamları farklıdır."
+  },
+  {
+   "after": 11,
+   "prompt": "7, 9, 11, 13 ve 60 yaşlarından oluşan dizide ortanca yaş ve aritmetik ortalama kaçtır?",
+   "answer": "Ortanca ortadaki değer olan 11’dir; ortalama 100 / 5 = 20 olur, uç yaş ortalamayı yukarı çeker."
+  },
+  {
+   "after": 13,
+   "prompt": "Sayım anındaki yeri ve olağan ikamet adresini esas alan iki kural, göç olmadan yerel toplamı nasıl değiştirir?",
+   "answer": "O gün başka şehirde misafir olan kişi bir kurala göre bulunduğu yerde, diğerine göre ikamet adresinde sayılır."
+  }
+ ],
+ "cografya-kayaclar": [
+  {
+   "after": 1,
+   "prompt": "Granit gibi derinlik kayaçlarında kristallerin iri olması neden beklenir?",
+   "answer": "Magma yer kabuğu içinde yavaş soğuduğu için kristaller büyümeye daha çok zaman bulur."
+  },
+  {
+   "after": 3,
+   "prompt": "Jips, kaya tuzu ve traverten nasıl oluşan tortul kayaçlardır?",
+   "answer": "Suda çözünmüş maddelerin uygun koşullarda çökelmesiyle oluşan kimyasal tortullardır; hepsi kalsiyum karbonat değildir."
+  },
+  {
+   "after": 5,
+   "prompt": "Kum taşı ve granit başkalaşıma uğrarsa sırasıyla hangi kayaçlar oluşur?",
+   "answer": "Kum taşından kuvarsit, granitten gnays oluşur."
+  }
+ ],
+ "turkiye-ic-kuvvetler": [
+  {
+   "after": 1,
+   "prompt": "Haritada yüksek bir alan görmek neden tek başına kıvrım kanıtı sayılmaz?",
+   "answer": "Kıvrım için tabaka yapısı ve konum kanıtı gerekir; volkan konisi de yüksek olabilir, yükseklik ile köken ayrı şeylerdir."
+  },
+  {
+   "after": 3,
+   "prompt": "Kuzey Anadolu ve Doğu Anadolu fay sistemlerinde öne çıkan hareket türü nedir?",
+   "answer": "Doğrultu atımlı hareket, yani blokların fay boyunca birbirine göre yana kaymasıdır."
+  },
+  {
+   "after": 5,
+   "prompt": "Bitlis yakınındaki Nemrut ile Meke’de hangi volkanik biçimler görülür?",
+   "answer": "Nemrut’ta kaldera, Meke’de maar görülür; Bitlis’teki Nemrut, Adıyaman’daki Nemrut Dağı ile karıştırılmamalıdır."
+  }
+ ],
+ "dis-kuvvetler-akarsular": [
+  {
+   "after": 1,
+   "prompt": "Genişliği 20 m, ortalama derinliği 2 m olan dikdörtgen kesitte ortalama hız 1,5 m/s ise debi kaçtır?",
+   "answer": "Kesit alanı 20 × 2 = 40 m² olur; debi 40 × 1,5 = 60 m³/s bulunur."
+  },
+  {
+   "after": 3,
+   "prompt": "Yatayda 2 km uzaklıktaki iki nokta arasında 50 m yükseklik farkı varsa eğim yüzde kaçtır?",
+   "answer": "Birimleri eşitleyip 50 / 2000 × 100 = %2,5 bulursun."
+  },
+  {
+   "after": 5,
+   "prompt": "Plato ile peneplen arasındaki fark nedir?",
+   "answer": "Plato akarsularla yarılmış görece yüksek düzlüktür; peneplen uzun aşınmayla taban seviyesine yaklaşmış yüzeydir."
+  }
+ ],
+ "karstik-sekiller": [
+  {
+   "after": 1,
+   "prompt": "Dolinlerin birleşmesiyle hangi karstik şekil oluşur?",
+   "answer": "Daha büyük ve düzensiz kapalı çukurlar olan uvalalar oluşur."
+  },
+  {
+   "after": 3,
+   "prompt": "Yüzeyde akan suyun yer altına geçip vadisinin orada sona ermesi hangi şekli düşündürür?",
+   "answer": "Kör vadiyi düşündürür; su yok olmamış, yer altı akışına katılmış olabilir."
+  },
+  {
+   "after": 5,
+   "prompt": "Sarkıt ile dikit birleşince hangi şekil oluşur ve hangi süreçle büyür?",
+   "answer": "Sütun oluşur; çözünmeyle değil, karbonatın çökelip madde eklemesiyle büyür."
+  }
+ ],
+ "ruzgar-ve-buzul": [
+  {
+   "after": 1,
+   "prompt": "Deflasyon ince taneleri uzaklaştırınca yüzeyde ne kalabilir?",
+   "answer": "İri taşlı bir yüzey kalabilir; ince malzemenin süpürülmesiyle kalan bu yüzeye çöl kaldırımı denir."
+  },
+  {
+   "after": 3,
+   "prompt": "Aysberg ile bankiz arasındaki fark nedir?",
+   "answer": "Aysberg kara buzulundan kopup suda yüzen parçadır; bankiz deniz suyunun donmasıyla oluşan deniz buzudur."
+  },
+  {
+   "after": 5,
+   "prompt": "Yan vadinin ana vadiye göre yüksekte kaldığı buzul şekline ne denir ve neyle ilişkilidir?",
+   "answer": "Asılı vadi denir; ana ve yan vadinin buzulla farklı derinlikte oyulmasıyla ilişkilidir."
+  }
+ ],
+ "dalga-akinti-kiyi-tipleri": [
+  {
+   "after": 1,
+   "prompt": "Dalga aşındırmasıyla geriye çekilen falezin önünde açığa çıkan düzlüğe ne denir?",
+   "answer": "Abrazyon platformu denir; dalga dik kıyının tabanını oyar, üst bölüm çöktükçe falez geriler."
+  },
+  {
+   "after": 3,
+   "prompt": "Boyuna kıyı ile enine kıyıyı ayıran ölçüt nedir?",
+   "answer": "Dağ sıraları kıyıya paralelse boyuna, sırt ve vadiler kıyıya dik uzanıyorsa enine kıyı düşünülür."
+  },
+  {
+   "after": 5,
+   "prompt": "Skyer kıyı, nasıl bir arazinin su altında kalmasıyla oluşur?",
+   "answer": "Buzulla işlenmiş alçak arazinin su altında kalmasıyla oluşur; çok sayıda küçük kayalık ada görülür."
+  }
+ ],
+ "turkiye-dis-kuvvetler": [
+  {
+   "after": 1,
+   "prompt": "Şelalenin altında, düşen suyun aşındırdığı çukura ne ad verilir?",
+   "answer": "Dev kazanı denir; şelalede eğim kırığı ve suyun düştüğü yer önemlidir."
+  },
+  {
+   "after": 3,
+   "prompt": "Göksu ile Seyhan–Ceyhan hangi delta ovalarıyla ilişkilidir?",
+   "answer": "Göksu Silifke deltasıyla, Seyhan–Ceyhan Çukurova deltasıyla ilişkilidir."
+  },
+  {
+   "after": 5,
+   "prompt": "Karapınar ve Iğdır’da rüzgâr birikimini kolaylaştıran yüzey koşulları nelerdir?",
+   "answer": "Gevşek kumlu yüzey, seyrek bitki örtüsü ve kuruluk tanelerin taşınabilirliğini artırır."
+  }
+ ],
+ "turkiye-yer-sekilleri": [
+  {
+   "after": 1,
+   "prompt": "Yükselti ile engebe arasındaki fark nedir?",
+   "answer": "Yükselti bir noktanın deniz seviyesine göre konumudur; engebe yakın noktalar arasındaki yükselti farkıyla ilgilidir."
+  },
+  {
+   "after": 3,
+   "prompt": "Teke–Taşeli ile Erzurum–Kars platoları hangi farklı oluşum bağlamlarıyla anlatılır?",
+   "answer": "Teke ve Taşeli karstik plato, Erzurum–Kars ise lav platosu bağlamıyla anlatılır."
+  },
+  {
+   "after": 5,
+   "prompt": "Ege’de deniz etkisinin iç kesimlere sokulmasını hangi yer şekli düzeni kolaylaştırır?",
+   "answer": "Doğu–batı uzanımlı sırtların arasındaki alçak graben koridorları kolaylaştırır."
+  },
+  {
+   "after": 6,
+   "prompt": "Yatayda 4 km uzaklıktaki iki nokta arasında 200 m düşey fark varsa eğim oranı kaçtır?",
+   "answer": "Birimleri eşitleyip 200 / 4000 = 0,05 bulursun; yani 1/20."
+  }
+ ],
+ "dunyada-sular": [
+  {
+   "after": 1,
+   "prompt": "Dünya yüzeyinin %71’i ile su hacminin %97,5’i neden doğrudan karşılaştırılamaz?",
+   "answer": "%71 bir alan oranıdır, %97,5 ise su hacmi içindeki tuzlu su payıdır; paydaları farklıdır."
+  },
+  {
+   "after": 3,
+   "prompt": "48 m³ su 4 saniyede bir kesitten geçerse ortalama debi kaç m³/s olur?",
+   "answer": "Debi hacim bölü zamandır: 48 / 4 = 12 m³/s."
+  },
+  {
+   "after": 5,
+   "prompt": "Lav, moren ya da heyelanın bir vadiyi kapatmasıyla oluşan göle ne denir?",
+   "answer": "Set gölü denir; insanın yaptığı setin arkasında oluşan göl ise baraj gölüdür."
+  },
+  {
+   "after": 6,
+   "prompt": "Gözeneklilik ile geçirgenlik arasındaki fark nedir?",
+   "answer": "Gözeneklilik suyu depolayan boşluklarla, geçirgenlik boşlukların bağlantısı ve suyu iletme kolaylığıyla ilgilidir."
+  }
+ ],
+ "buyuk-iklim-tipleri": [
+  {
+   "after": 1,
+   "prompt": "En sıcak ay ortalaması 24 °C, en soğuk ay ortalaması −6 °C olan yerin yıllık sıcaklık farkı kaçtır?",
+   "answer": "En sıcak ay eksi en soğuk ay alınır: 24 − (−6) = 30 °C."
+  },
+  {
+   "after": 3,
+   "prompt": "Savanı ekvatoral iklimden ayıran temel özellik nedir?",
+   "answer": "Belirgin yağışlı ve kurak mevsimlerin olmasıdır; sıcaklık ikisinde de yıl boyu yüksek olabilir."
+  },
+  {
+   "after": 5,
+   "prompt": "Akdeniz ikliminde yaz kuraklığını ve kış yağışını hangi etkenler açıklar?",
+   "answer": "Yazın subtropikal yüksek basıncın etkisi, kışın batı rüzgârlarıyla gelen sistemler açıklar."
+  },
+  {
+   "after": 6,
+   "prompt": "Tundrayı kutup ikliminden ayıran en sıcak ay ölçütü nedir?",
+   "answer": "Tundrada en sıcak ay ortalaması 0 °C ile 10 °C arasındadır; kutup tipinde 0 °C’nin altında kalır."
+  }
+ ],
+ "turkiye-iklimi": [
+  {
+   "after": 1,
+   "prompt": "Denize açık bir kıyının yıllık sıcaklık farkı neden iç bölgeninkinden küçük olabilir?",
+   "answer": "Deniz karaya göre geç ısınıp geç soğuduğu için kışı ılımanlaştırır, yazın aşırı ısınmayı sınırlar."
+  },
+  {
+   "after": 2,
+   "prompt": "Her 200 m’de 1 °C azalma varsayımıyla deniz düzeyinde 18 °C olan hava 1600 m’de kaç °C olur?",
+   "answer": "1600 / 200 = 8 °C azalır; sıcaklık 18 − 8 = 10 °C olur."
+  },
+  {
+   "after": 4,
+   "prompt": "Fön rüzgârının ısınması nasıl açıklanır?",
+   "answer": "Hava dağın ardında alçalırken sıkışarak ısınır; dağa sürtünerek ısınma diye açıklanmaz."
+  },
+  {
+   "after": 6,
+   "prompt": "Güneydoğu Anadolu’nun yağış mevsimi İç Anadolu’dan nasıl ayrılır?",
+   "answer": "Güneydoğu’da yaz çok sıcak ve kurak, yağışın ağırlığı kıştadır; İç Anadolu’da ise birçok yerde ilkbahar yağışları yaygındır."
+  }
+ ],
+ "dunyanin-tektonik-olusumu": [
+  {
+   "after": 1,
+   "prompt": "Kıtasal kabuk ile okyanusal kabuk kalınlık ve yoğunluk bakımından nasıl ayrılır?",
+   "answer": "Kıtasal kabuk genellikle daha kalın ve daha düşük yoğunluklu, okyanusal kabuk daha ince ve daha yoğundur."
+  },
+  {
+   "after": 3,
+   "prompt": "İki kıyıda bugün yağmur ormanı bulunması neden eski kıta bağlantısının kanıtı sayılmaz?",
+   "answer": "Benzer güncel iklimle açıklanabilir; eş yaşlı aynı kara fosilleri ve kayaç kuşağı uyumu daha seçici kanıttır."
+  },
+  {
+   "after": 4,
+   "prompt": "Yarı yayılma hızı 2 cm/yıl olan sırttan 100 km uzaktaki okyanus tabanı yaklaşık kaç milyon yaşındadır?",
+   "answer": "Yaş yaklaşık d / (10v) ile bulunur: 100 / (10 × 2) = 5 milyon yıl."
+  },
+  {
+   "after": 6,
+   "prompt": "Okyanus–kıta ve okyanus–okyanus dalma-batmasında volkan yayı nerede gelişir?",
+   "answer": "Okyanus–kıta karşılaşmasında yay karada, okyanus–okyanus karşılaşmasında ada yayı biçiminde gelişir."
+  },
+  {
+   "after": 7,
+   "prompt": "Mesozoyik ve Senozoyik yaklaşık hangi milyon yıl sınırlarıyla ayrılır?",
+   "answer": "Mesozoyik yaklaşık 252–66 milyon yıl öncesini kapsar; Senozoyik 66 milyon yıl öncesinden günümüze uzanır."
+  }
+ ],
+ "ic-kuvvetler": [
+  {
+   "after": 1,
+   "prompt": "Basit tabakalı bir çizimde antiklinal ile senklinal nasıl ayrılır?",
+   "answer": "Yukarı kemer biçimli kıvrım antiklinal, aşağı oluk biçimli kıvrım senklinaldir."
+  },
+  {
+   "after": 3,
+   "prompt": "Buz kalınlığı 1100 m, buz yoğunluğu 0,9 ve destek ortamı yoğunluğu 3,3 g/cm³ ise düşey sapma kaç m olur?",
+   "answer": "Sapma h × 0,9 / 3,3 ile bulunur: 1100 × 0,9 / 3,3 = 300 m."
+  },
+  {
+   "after": 4,
+   "prompt": "Deniz 1 m yükselirken kara 4 m yükselirse göreli deniz seviyesi kaç m değişir?",
+   "answer": "Deniz düzeyi değişimi eksi kara yükselmesi: 1 − 4 = −3 m; göreli deniz seviyesi düşer, deniz geriler."
+  },
+  {
+   "after": 6,
+   "prompt": "Dayk ile sill arasındaki fark nedir?",
+   "answer": "İkisi de iç volkanizma sokulmasıdır; dayk tabakaları keser, sill tabakalara paralel yerleşir."
+  }
+ ],
+ "doga-insan-cografya": [
+  {
+   "after": 1,
+   "prompt": "Dağılış, nedensellik ve karşılıklı ilgi ilkeleri hangi üç soruya karşılık gelir?",
+   "answer": "Olayın nerede bulunduğu, neden orada oluştuğu ve çevresiyle nasıl ilişkili olduğu sorularına."
+  },
+  {
+   "after": 3,
+   "prompt": "Çevresel belirlenim hatası nedir?",
+   "answer": "Tek bir doğal nedene bakıp bütün toplumlar için tek ve zorunlu bir sonuç çıkarmaktır."
+  },
+  {
+   "after": 5,
+   "prompt": "Akarsuyun aylık akım değişimi ile havzanın uzun yıllık yağış düzeni hangi alt dalların önceliğidir?",
+   "answer": "Aylık akım değişimi hidrografyanın, uzun yıllık yağış düzeni klimatolojinin önceliğidir."
+  }
+ ],
+ "cografyanin-tarihi-gelisimi": [
+  {
+   "after": 1,
+   "prompt": "Eratosthenes coğrafya tarihinde hangi ölçme çalışmasıyla öne çıkar?",
+   "answer": "Dünya’nın çevresini gölge ve mesafelerden yararlanarak tahmin etmesiyle öne çıkar."
+  },
+  {
+   "after": 3,
+   "prompt": "Bir yerin Yeni Çağ’da keşfedildiğini okurken hangi tuzağa düşmemelisin?",
+   "answer": "Orada daha önce kimsenin yaşamadığını sanmamalısın; söz konusu olan belirli toplumların bilgisi ve bağlantı ağıdır."
+  },
+  {
+   "after": 5,
+   "prompt": "Doğal koşulun insan davranışını etkilediğini söylemek, çevresel zorunluluk iddiasından nasıl ayrılır?",
+   "answer": "İlki bir etkiyi kabul eder; ikincisi bütün toplumları tek başına zorunlu olarak belirlediğini ileri sürer."
+  }
+ ],
+ "yerel-saat": [
+  {
+   "after": 1,
+   "prompt": "İki yer arasındaki yerel saat farkı 52 dakikaysa boylam farkı kaç derecedir?",
+   "answer": "Dakika farkını dörde bölersin: 52 / 4 = 13°."
+  },
+  {
+   "after": 3,
+   "prompt": "25°D’de saat 00.30 iken 10°D’de yerel saat ve gün ne olur?",
+   "answer": "Fark 10 − 25 = −15°, yani −60 dakikadır; batıdaki yerde önceki gün 23.30 olur."
+  },
+  {
+   "after": 4,
+   "prompt": "60°D meridyeninin antimeridyeni hangi boylamdır?",
+   "answer": "Tam karşıdaki meridyen 180 − 60 = 120°B’dir."
+  },
+  {
+   "after": 5,
+   "prompt": "Türkiye’nin kullandığı UTC+3 ortak saatinin ideal merkez boylamı kaçtır?",
+   "answer": "45°D’dir; bu yüzden ülkenin her noktasında güneş öğlesi aynı duvar saatine denk gelmez."
+  }
+ ],
+ "atmosfer-katmanlari": [
+  {
+   "after": 1,
+   "prompt": "Termosferde sıcaklık yüksek olduğu hâlde ısı aktarımı neden zayıf kalabilir?",
+   "answer": "Taneciklerin kinetik enerjisi yüksek olsa da tanecik sayısı çok azdır; yüksek sıcaklık yoğun ısı aktarımı demek değildir."
+  },
+  {
+   "after": 3,
+   "prompt": "Ozonun ve sera gazlarının ışınımla ilişkisi nasıl ayrılır?",
+   "answer": "Ozon Güneş’ten gelen morötesi ışınımla, sera gazları yeryüzünden çıkan uzun dalga ışınımla etkileşir."
+  },
+  {
+   "after": 5,
+   "prompt": "Tropopoz ve stratopoz hangi katmanlar arasındaki geçişlerdir?",
+   "answer": "Tropopoz troposfer ile stratosfer, stratopoz stratosfer ile mezosfer arasındaki geçiştir."
+  }
+ ],
+ "cografya-sicaklik": [
+  {
+   "after": 1,
+   "prompt": "Aynı ışınım demeti yüzeye daha dik geldiğinde birim alana düşen enerji neden artar?",
+   "answer": "Enerji daha dar bir alana yayılır; küçük açıyla gelince aynı enerji daha geniş yüzeye dağılır."
+  },
+  {
+   "after": 3,
+   "prompt": "Kıyılarda sıcaklık farkının iç kesimlerden küçük olmasına hangi kara–deniz farkı katkı sağlar?",
+   "answer": "Karalar daha hızlı ısınıp soğurken denizler sıcaklık değişimini daha yavaş gösterir."
+  },
+  {
+   "after": 4,
+   "prompt": "200 m’de 1 °C kabulüyle 1.600 m’de 9 °C ölçülen yerin indirgenmiş sıcaklığı kaçtır?",
+   "answer": "Yükselti etkisi h/200 = 1600 / 200 = 8 °C eklenir; 9 + 8 = 17 °C bulunur."
+  },
+  {
+   "after": 6,
+   "prompt": "Kar örtüsü ile bitki örtüsü sıcaklığı hangi farklı yollarla etkiler?",
+   "answer": "Kar örtüsü yüksek yansıtmayla, bitki örtüsü gölgeleme ve buharlaşma-terlemeyle sıcaklığı değiştirir."
+  }
+ ],
+ "basinc-ruzgarlar": [
+  {
+   "after": 1,
+   "prompt": "Alçak basınç merkezinde hava yükselse bile yağış neden garanti değildir?",
+   "answer": "Yükselme bulutlanmayı destekler, fakat yağış için yeterli nem ve uygun atmosfer kararlılığı da gerekir."
+  },
+  {
+   "after": 2,
+   "prompt": "1.016 hPa ile 1.004 hPa arasındaki fark 60 km’lik mesafedeyse yatay basınç gradyanı kaçtır?",
+   "answer": "Basınç farkı uzaklığa bölünür: 12 / 60 = 0,2 hPa/km."
+  },
+  {
+   "after": 4,
+   "prompt": "Genel dolaşımda alizeler ve batı rüzgârları hangi enlemler arasında eser?",
+   "answer": "Alizeler yaklaşık 30°’den Ekvator’a, batı rüzgârları 30°’den 60°’ye doğru eser."
+  },
+  {
+   "after": 6,
+   "prompt": "Kuru alçalan havada 100 m’de 1 °C kabulüyle tepede 2 °C olan hava 1.400 m alçalırsa kaç °C olur?",
+   "answer": "1400 / 100 = 14 °C ısınır; sıcaklık 2 + 14 = 16 °C olur."
+  }
+ ],
+ "nem-yagis": [
+  {
+   "after": 1,
+   "prompt": "Bir su birikintisinin kaynamadan buharlaşabilmesi hangi ayrımı gösterir?",
+   "answer": "Buharlaşma ile kaynamanın aynı süreç olmadığını gösterir; buharlaşmayı hava hareketi, yüzey alanı ve çevre nemi de etkiler."
+  },
+  {
+   "after": 3,
+   "prompt": "Sabit hacimde toplam su 12 g/m³ iken doyma değeri 9 g/m³’e düşerse dengede ne kadar su yoğuşur?",
+   "answer": "Havada en çok 9 g/m³ buhar kalabilir; 12 − 9 = 3 g/m³ su yoğuşur."
+  },
+  {
+   "after": 5,
+   "prompt": "Kırağı ile kırç oluşum yolu bakımından nasıl ayrılır?",
+   "answer": "Kırağıda su buharı soğuk yüzeyde doğrudan buza dönüşür; kırçta aşırı soğumuş damlacıklar yüzeyde donar."
+  }
  ]
 }

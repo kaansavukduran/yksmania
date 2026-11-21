@@ -495,7 +495,7 @@ export default function GeometryLanguage032Lab({ id }: { id: string }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          MEB/OGM: Defterim Matematik 9 · sayfa245
+          MEB/OGM: Defterim Matematik 9 · sayfa 245
         </a>
       </div>
       <div className="gl032-sources gl032-older-videos">

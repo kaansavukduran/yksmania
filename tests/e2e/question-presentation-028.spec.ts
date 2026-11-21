@@ -414,7 +414,7 @@ for (const id of ids) {
     const view = expected(lesson.questions[target]);
     await expect(mistake).toHaveCount(1);
     await expect(mistake.locator("h2")).toHaveText(typeset(view.prompt));
-    await expect(mistake.locator(":scope > p")).toContainText(
+    await expect(mistake.locator(":scope > p:not(.mistake-osym)")).toContainText(
       view.options[selections[target]],
     );
     await mistake.locator("details > summary").click();
@@ -602,7 +602,8 @@ test("synthetic validated legacy TYT five-item raw paper: active and finished vi
   const completed = await stored(page);
   expect(completed.examDraft).toBeNull();
   const { finishedAt, timedOut, ...saved } = completed.examSessions[0];
-  expect(saved).toEqual(answered);
+  // Finishing closes the last question's timer, so only the timing fields may differ.
+  expect(withoutTiming(saved)).toEqual(withoutTiming(answered));
   expect(finishedAt).toBeGreaterThanOrEqual(draft.startedAt);
   expect(finishedAt).toBeLessThan(draft.deadline);
   expect(timedOut).toBe(false);

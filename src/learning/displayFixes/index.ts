@@ -1,5 +1,8 @@
+import anlatim_ek from "./anlatim-ek.json" with { type: "json" };
 import anlatim_tyt_biyoloji from "./anlatim-tyt-biyoloji.json" with { type: "json" };
 import anlatim_tyt_cografya from "./anlatim-tyt-cografya.json" with { type: "json" };
+import anlatim_tyt_din from "./anlatim-tyt-din.json" with { type: "json" };
+import anlatim_tyt_felsefe from "./anlatim-tyt-felsefe.json" with { type: "json" };
 import anlatim_tyt_fizik from "./anlatim-tyt-fizik.json" with { type: "json" };
 import anlatim_tyt_geometri from "./anlatim-tyt-geometri.json" with { type: "json" };
 import anlatim_tyt_kimya from "./anlatim-tyt-kimya.json" with { type: "json" };
@@ -31,7 +34,7 @@ import tyt_turkce from "./tyt-turkce.json" with { type: "json" };
  * this index is generated too (explicit imports, so it also loads outside Vite).
  */
 type Row = { from: string; to: string };
-const files: Row[][] = [anlatim_tyt_biyoloji, anlatim_tyt_cografya, anlatim_tyt_fizik, anlatim_tyt_geometri, anlatim_tyt_kimya, anlatim_tyt_matematik, anlatim_tyt_tarih, anlatim_tyt_turkce, ayt_biyoloji, ayt_fizik, ayt_kimya, ayt_matematik, tyt_biyoloji, tyt_cografya, tyt_din, tyt_felsefe, tyt_fizik, tyt_geometri, tyt_kimya, tyt_matematik, tyt_tarih, tyt_turkce];
+const files: Row[][] = [anlatim_ek, anlatim_tyt_biyoloji, anlatim_tyt_cografya, anlatim_tyt_din, anlatim_tyt_felsefe, anlatim_tyt_fizik, anlatim_tyt_geometri, anlatim_tyt_kimya, anlatim_tyt_matematik, anlatim_tyt_tarih, anlatim_tyt_turkce, ayt_biyoloji, ayt_fizik, ayt_kimya, ayt_matematik, tyt_biyoloji, tyt_cografya, tyt_din, tyt_felsefe, tyt_fizik, tyt_geometri, tyt_kimya, tyt_matematik, tyt_tarih, tyt_turkce];
 const repairs = new Map<string, string>();
 for (const rows of files) for (const row of rows) repairs.set(row.from, row.to);
 
