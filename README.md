@@ -19,7 +19,7 @@ Bu tablo `npm run progress` ile koddan üretilir; elle düzenlenmez. Yüzdeler y
 | TYT Matematik | 40 / 40 | 17 · 45 | 735 / 735 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 23 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 217 / 217 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
 | TYT Fizik | 24 / 24 | 24 · 177 | 311 / 311 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
-| TYT Kimya | 55 / 55 | 41 · 179 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 14 |
+| TYT Kimya | 55 / 55 | 47 · 198 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 8 |
 | TYT Biyoloji | 36 / 36 | 12 · 37 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 24 |
 | TYT Tarih | 24 / 24 | 6 · 16 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 18 |
 | TYT Coğrafya | 40 / 40 | 26 · 97 | 400 / 400 · %100,00 | 5 / 40 · %12,50 | 45 soru · 9 kitapçık | 14 |
@@ -28,10 +28,10 @@ Bu tablo `npm run progress` ile koddan üretilir; elle düzenlenmez. Yüzdeler y
 | AYT Matematik | 17 / 17 | 13 · 19 | 253 / 253 · %100,00 | 2 / 17 · %11,76 | 273 soru · 9 kitapçık | 4 |
 | AYT Geometri | 4 / 4 | 4 · 51 | 40 / 40 · %100,00 | 1 / 4 · %25,00 | 87 soru · 9 kitapçık | 0 |
 | AYT Fizik | 46 / 46 | 27 · 95 | 541 / 541 · %100,00 | 7 / 46 · %15,22 | 126 soru · 9 kitapçık | 19 |
-| AYT Kimya | 55 / 55 | 39 · 86 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 16 |
+| AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 34 · 123 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 41 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **505 / 505** | **273 · 1130** | **6.465 / 6.465 · %100,00** | **109 / 517 · %21,08** | **18 / 1.001 · %1,80 PDF · 1.845 soru** | **232** |
+| **Toplam** | **505 / 505** | **295 · 1211** | **6.465 / 6.465 · %100,00** | **109 / 517 · %21,08** | **18 / 1.001 · %1,80 PDF · 1.845 soru** | **210** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
