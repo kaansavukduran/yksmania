@@ -12,6 +12,7 @@ import { clarifiedGuideView } from "../src/learning/guidePresentation028";
 import { GuidedReading } from "../src/learning/GuidedReading";
 import { NarrativeRecall } from "../src/learning/NarrativeExplorer";
 import { Theory } from "../src/pages/Theory";
+import { typeset } from "../src/domain/typeset";
 
 // Actual useExploration and recall components; only their provider state is controlled.
 const fixture = vi.hoisted(() => ({
@@ -165,8 +166,8 @@ describe("029 narrative recall continuity inside enriched guides", () => {
       );
       expect(html).not.toContain('class="narrative-recall"');
       for (const item of guide.recall) {
-        expect(html).toContain(escape(item.prompt));
-        expect(html).toContain(escape(item.answer));
+        expect(html).toContain(escape(typeset(item.prompt)));
+        expect(html).toContain(escape(typeset(item.answer)));
       }
     }
     expect(fixture.updates).toBe(0);
@@ -204,8 +205,8 @@ describe("029 narrative recall continuity inside enriched guides", () => {
       expect(html).toContain(escape(`Önceki ikinci açıklamam: ${pack.id}`));
       expect(html).not.toContain('class="recall-explanation"');
       for (const item of guides[i].recall) {
-        expect(html).toContain(escape(item.prompt));
-        expect(html).toContain(escape(item.answer));
+        expect(html).toContain(escape(typeset(item.prompt)));
+        expect(html).toContain(escape(typeset(item.answer)));
       }
       for (const item of pack.pitfalls) {
         expect(html).toContain(escape(item.label));

@@ -34,8 +34,10 @@
   --card-pad-y: 1.2rem;
   --card-pad-x: 1.25rem;
   --card-pad: var(--card-pad-y) var(--card-pad-x);
-  /* Dar ekran: 1.05rem 1.1rem; büyük arayüz ölçeğinde 20px ile sınırlı. */
-  --card-pad-sm: clamp(14px, 1.05rem, 20px) clamp(14px, 1.1rem, 20px);
+  /* Dar ekran: 1.05rem 1.1rem. Yan boşluk arayüz ölçeği büyüdükçe kısalır
+     (%100'de 17,6px, %200'de 12px): 320px'lik telefonda %200 ölçekte satır
+     genişliği boşluktan daha değerlidir. */
+  --card-pad-sm: clamp(14px, 1.05rem, 20px) clamp(12px, calc(29.6px - 0.75rem), 17.6px);
   --panel-pad: 1.4rem;
   --card-gap: 1.15rem;
   --stack-gap: 1.25rem;
@@ -45,9 +47,10 @@
 @media (max-width: 640px) {
   :root {
     --card-pad-y: clamp(14px, 1.05rem, 20px);
-    --card-pad-x: clamp(14px, 1.1rem, 20px);
+    --card-pad-x: clamp(12px, calc(29.6px - 0.75rem), 17.6px);
     --panel-pad: var(--card-pad-sm);
-    --page-gutter: 16px;
+    /* Sayfa kenarı da aynı mantıkla: %100'de 16px, %200'de 12px. */
+    --page-gutter: clamp(12px, calc(20px - 0.25rem), 16px);
   }
 }
 :root[data-theme="light"] ,
