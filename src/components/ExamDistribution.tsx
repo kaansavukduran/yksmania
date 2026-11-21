@@ -116,8 +116,6 @@ export function ExamDistribution({
                     .join(", ")}.`
                 : "Ders başına soru sayıları resmî aralıklarda; başlıkların dağılımı yine de resmî kitapçıklarla aynı değildir."}
               {!mock.fullLength && " Bu kısa alıştırma tam sınav dağılımına ulaşmaz."}
-              {" "}Matematik ile geometri tek 40 soruluk havuzdan seçildiği için ikisinin payı her başlatmada
-              değişebilir.
             </p>
           )}
         </>

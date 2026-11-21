@@ -96,7 +96,10 @@ function groupTargets(exam: "TYT" | "AYT"): [string[], number][] {
   return exam === "TYT"
     ? [
         [["tyt-turkce"], 40],
-        [["tyt-matematik", "tyt-geometri"], 40],
+        // 2018–2026 kitapçıklarında Temel Matematik 40 sorunun 29–31'i
+        // matematik, 9–11'i geometridir: pay ayrı kotalarla sabitlenir.
+        [["tyt-matematik"], 30],
+        [["tyt-geometri"], 10],
         [["tyt-tarih"], 5],
         [["tyt-cografya"], 5],
         [["tyt-felsefe"], 5],
@@ -106,7 +109,8 @@ function groupTargets(exam: "TYT" | "AYT"): [string[], number][] {
         [["tyt-biyoloji"], 6],
       ]
     : [
-        [["ayt-matematik", "ayt-geometri"], 40],
+        [["ayt-matematik"], 30],
+        [["ayt-geometri"], 10],
         [["ayt-fizik"], 14],
         [["ayt-kimya"], 13],
         [["ayt-biyoloji"], 13],
