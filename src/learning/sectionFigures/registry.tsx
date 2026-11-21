@@ -127,6 +127,13 @@ import { physicsFigures058Forces } from "./physicsFigures058Forces";
 import { physicsFigures058Electric } from "./physicsFigures058Electric";
 import { physicsFigures058Magnetic } from "./physicsFigures058Magnetic";
 import { physicsFigures058Waves } from "./physicsFigures058Waves";
+import { geographyFigures058Climate } from "./geographyFigures058Climate";
+import { geographyFigures058Weather } from "./geographyFigures058Weather";
+import { geographyFigures058Time } from "./geographyFigures058Time";
+import { geographyFigures058Landforms } from "./geographyFigures058Landforms";
+import { geographyFigures058Soil } from "./geographyFigures058Soil";
+import { geographyFigures058Tectonic } from "./geographyFigures058Tectonic";
+import { geographyFigures058Population } from "./geographyFigures058Population";
 
 /*
  * Figure packs are merged per guide. A plain object spread replaced a whole
@@ -261,6 +268,13 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   physicsFigures058Electric,
   physicsFigures058Magnetic,
   physicsFigures058Waves,
+  geographyFigures058Climate,
+  geographyFigures058Weather,
+  geographyFigures058Time,
+  geographyFigures058Landforms,
+  geographyFigures058Soil,
+  geographyFigures058Tectonic,
+  geographyFigures058Population,
 ];
 export const sectionFigures: Record<string, Record<string, FigureDef>> = {};
 for (const pack of figurePacks)
