@@ -47,13 +47,13 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Coğrafya | 40 / 40 | 26 · 97 | 400 / 400 · %100,00 | 5 / 40 · %12,50 | 45 soru · 9 kitapçık | 14 |
 | TYT Felsefe | 17 / 17 | 3 · 7 | 190 / 190 · %100,00 | 3 / 17 · %17,65 | 89 soru · 9 kitapçık | 14 |
 | TYT Din | 20 / 20 | 4 · 9 | 371 / 371 · %100,00 | 3 / 20 · %15,00 | 46 soru · 9 kitapçık | 16 |
-| AYT Matematik | 17 / 17 | 13 · 19 | 253 / 253 · %100,00 | 2 / 17 · %11,76 | 273 soru · 9 kitapçık | 4 |
+| AYT Matematik | 17 / 17 | 17 · 38 | 253 / 253 · %100,00 | 2 / 17 · %11,76 | 273 soru · 9 kitapçık | 0 |
 | AYT Geometri | 4 / 4 | 4 · 51 | 40 / 40 · %100,00 | 1 / 4 · %25,00 | 87 soru · 9 kitapçık | 0 |
-| AYT Fizik | 46 / 46 | 27 · 95 | 541 / 541 · %100,00 | 7 / 46 · %15,22 | 126 soru · 9 kitapçık | 19 |
+| AYT Fizik | 46 / 46 | 41 · 152 | 541 / 541 · %100,00 | 7 / 46 · %15,22 | 126 soru · 9 kitapçık | 5 |
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 34 · 123 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 41 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **505 / 505** | **313 · 1279** | **6.465 / 6.465 · %100,00** | **109 / 517 · %21,08** | **18 / 1.001 · %1,80 PDF · 1.845 soru** | **192** |
+| **Toplam** | **505 / 505** | **331 · 1355** | **6.465 / 6.465 · %100,00** | **109 / 517 · %21,08** | **18 / 1.001 · %1,80 PDF · 1.845 soru** | **174** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
