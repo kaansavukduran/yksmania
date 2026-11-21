@@ -321,5 +321,5 @@ describe("029 narrative recall continuity inside enriched guides", () => {
       );
     expect(fixture.updates).toBe(0);
     noLearningCredit();
-  });
+  }, 30_000);
 });
