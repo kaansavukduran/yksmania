@@ -74,5 +74,117 @@
  {
   "from": "Çift çeneklilerin ve açık tohumluların birçok kökünde damar kambiyumuyla sekonder kalınlaşma görülebilir. Çoğu tek çenekli kökte tipik damar kambiyumu halkası yoktur; bazı grupların özel kalınlaşma biçimleri bu okul modelinden farklıdır. “Açık/kapalı iletim demeti” adları, kambiyumla ilişkiyi anlatır; genç kökte iletim dokularının radyal yerleşimini yok saymaz.",
   "to": "Çift çeneklilerin ve açık tohumluların birçok kökünde damar kambiyumuyla sekonder kalınlaşma görülebilir. Çoğu tek çenekli kökte tipik damar kambiyumu halkası yoktur; bazı grupların özel kalınlaşma biçimleri bu tipik modelden farklıdır. “Açık/kapalı iletim demeti” adları, kambiyumla ilişkiyi anlatır; genç kökte iletim dokularının radyal yerleşimini yok saymaz."
+ },
+ {
+  "from": "Homolaktik fermantasyonda pirüvat, NADH'den elektron alarak laktata dönüşür. Bir glikozdan iki 3 karbonlu laktat oluşur; bu kanonik yolda CO₂ ayrılmaz. Hücresel pH'da ürünün büyük bölümü laktat biçimindedir; okul kaynaklarında kullanılan laktik asit adıyla aynı karbon iskeletini takip ederiz.",
+  "to": "Homolaktik fermantasyonda pirüvat, NADH'den elektron alarak laktata dönüşür. Bir glikozdan iki 3 karbonlu laktat oluşur; bu kanonik yolda CO₂ ayrılmaz. Hücresel pH'da ürünün büyük bölümü laktat biçimindedir; yaygın kullanılan laktik asit adıyla aynı karbon iskeletini takip ederiz."
+ },
+ {
+  "from": "Anlık aydınlıkta net sıfır ile günlük net sıfırın neden farklı olabileceğini kendi cümlenle açıklamayı dene. Önce yönü tahmin et, ardından okların miktarını ve günlük toplamı kontrol et. Bu uygulamadaki keşif tahmini öğrenme puanı değildir; bağımsız sorular yöntemini ayrıca sınar.",
+  "to": "Anlık aydınlıkta net sıfır ile günlük net sıfırın neden farklı olabileceğini kendi cümlenle açıklamayı dene. Önce yönü tahmin et, ardından okların miktarını ve günlük toplamı kontrol et."
+ },
+ {
+  "from": "Keşifte bütün son hücrelerin daha sonra aynı katsayıyla uzadığı ve en kesit alanlarının sabit olduğu varsayılır. Bu, hacmi değiştirebilir fakat hücre sayısını tekrar ikiye katlamaz. Çizim bir başlangıç hücresinin örnek soyunu gösterirken HTML sonucu verilen bütün başlangıç hücrelerini sayar; model gerçek bitkinin günlük büyümesini öngörmez.",
+  "to": "Keşifte bütün son hücrelerin daha sonra aynı katsayıyla uzadığı ve en kesit alanlarının sabit olduğu varsayılır. Bu, hacmi değiştirebilir fakat hücre sayısını tekrar ikiye katlamaz. Çizim bir başlangıç hücresinin örnek soyunu gösterirken hesaplanan sonuç verilen bütün başlangıç hücrelerini sayar; model gerçek bitkinin günlük büyümesini öngörmez."
+ },
+ {
+  "from": "Burada kodon sözcüğünü mRNA üzerindeki üç nükleotit için kullanıyoruz. Bazı okul kaynaklarında DNA üçlüsüne kod veya DNA kodonu da denir; hangi molekülün verildiği mutlaka belirtilmelidir. RNA tablosu okunurken T değil U kullanılır.",
+  "to": "Burada kodon sözcüğünü mRNA üzerindeki üç nükleotit için kullanıyoruz. Bazı anlatımlarda DNA üçlüsüne kod veya DNA kodonu da denir; hangi molekülün verildiği mutlaka belirtilmelidir. RNA tablosu okunurken T değil U kullanılır."
+ },
+ {
+  "from": "Restriksiyon enzimleri belirli tanıma bölgelerinde kesim yapabilir; DNA ligaz uygun omurga uçlarını birleştirir. Uyumlu uçlar, doğru yön ve sağlam bağlar önemlidir. Aynı enzimle kesim yaygın bir okul örneğidir; bütün gerçek teknikler yalnız tek yapışkan uç biçimiyle sınırlı değildir.",
+  "to": "Restriksiyon enzimleri belirli tanıma bölgelerinde kesim yapabilir; DNA ligaz uygun omurga uçlarını birleştirir. Uyumlu uçlar, doğru yön ve sağlam bağlar önemlidir. Aynı enzimle kesim yaygın bir öğretim örneğidir; bütün gerçek teknikler yalnız tek yapışkan uç biçimiyle sınırlı değildir."
+ },
+ {
+  "from": "Oksijenli fotosentezin okul düzeyindeki toplam özeti 6CO₂+12H₂O→C₆H₁₂O₆+6O₂+6H₂O biçiminde yazılabilir; ışık ve uygun biyolojik düzenek gereklidir. Her iki taraftaki 6 su sadeleşirse net denklem 6CO₂+6H₂O→C₆H₁₂O₆+6O₂ olur.",
+  "to": "Oksijenli fotosentezin temel düzeydeki toplam özeti 6CO₂+12H₂O→C₆H₁₂O₆+6O₂+6H₂O biçiminde yazılabilir; ışık ve uygun biyolojik düzenek gereklidir. Her iki taraftaki 6 su sadeleşirse net denklem 6CO₂+6H₂O→C₆H₁₂O₆+6O₂ olur."
+ },
+ {
+  "from": "Yeşil ışıkta fotosentez mutlaka sıfır değildir. Dalga boyu ile hız eğrisi kullanılan canlıya, pigmentlere ve ölçüm düzenine bağlıdır. Eşit enerji akısı ile eşit foton akısı da aynı deney koşulu değildir. Okul grafiğinde mavi ve kırmızıdaki yüksek değerleri bu bağlamla yorumla; bütün fototrofları tek bir renk sırasına mahkûm etme.",
+  "to": "Yeşil ışıkta fotosentez mutlaka sıfır değildir. Dalga boyu ile hız eğrisi kullanılan canlıya, pigmentlere ve ölçüm düzenine bağlıdır. Eşit enerji akısı ile eşit foton akısı da aynı deney koşulu değildir. Standart grafikte mavi ve kırmızıdaki yüksek değerleri bu bağlamla yorumla; bütün fototrofları tek bir renk sırasına mahkûm etme."
+ },
+ {
+  "from": "Güneş görmeyen bir ortamda yaşamak, bütün canlıların dışarıdan hazır organik besin alması gerektiği anlamına gelmez. Bazı bakteri ve arkeler, belirli inorganik maddelerin kimyasal tepkimelerinden enerji kazanır; bu enerjiyi CO₂ gibi inorganik karbon kaynaklarından organik madde yapımına bağlayabilir. Okul düzeyinde bu üretim kemosentez olarak adlandırılır.",
+  "to": "Güneş görmeyen bir ortamda yaşamak, bütün canlıların dışarıdan hazır organik besin alması gerektiği anlamına gelmez. Bazı bakteri ve arkeler, belirli inorganik maddelerin kimyasal tepkimelerinden enerji kazanır; bu enerjiyi CO₂ gibi inorganik karbon kaynaklarından organik madde yapımına bağlayabilir. Bu üretim kemosentez olarak adlandırılır."
+ },
+ {
+  "from": "Organik atıklardaki azotun ayrıştırılmasıyla oluşan NH₃/NH₄⁺, bazı mikroorganizmalar tarafından nitrite kadar oksitlenebilir. Bu işlemde azotun yükseltgenme basamağı artar ve elektronlar ayrılır. Aerobik örnekte oksijen elektron alıcıdır. Amonyak oksitleyen bakteri ve arkeler bu işlevi yapabilir; klasik okul örneği Nitrosomonas’tır.",
+  "to": "Organik atıklardaki azotun ayrıştırılmasıyla oluşan NH₃/NH₄⁺, bazı mikroorganizmalar tarafından nitrite kadar oksitlenebilir. Bu işlemde azotun yükseltgenme basamağı artar ve elektronlar ayrılır. Aerobik örnekte oksijen elektron alıcıdır. Amonyak oksitleyen bakteri ve arkeler bu işlevi yapabilir; klasik örnek Nitrosomonas’tır."
+ },
+ {
+  "from": "Nitrit başka uygun mikroorganizmalarca nitrata oksitlenir. Klasik okul örneği Nitrobacter’dir. Sade denklem NO₂⁻ + 0,5 O₂ → NO₃⁻ biçimindedir. Her iki azotlu iyon da bir azot atomu taşır; bu yüzden bir mol nitrit işlenirse bir mol nitrat oluşur. Bu basamak da enerji kazanımına bağlanabilir.",
+  "to": "Nitrit başka uygun mikroorganizmalarca nitrata oksitlenir. Klasik örnek Nitrobacter’dir. Sade denklem NO₂⁻ + 0,5 O₂ → NO₃⁻ biçimindedir. Her iki azotlu iyon da bir azot atomu taşır; bu yüzden bir mol nitrit işlenirse bir mol nitrat oluşur. Bu basamak da enerji kazanımına bağlanabilir."
+ },
+ {
+  "from": "Glikolizin NADH’ı sitozolde oluşur. Mitokondri iç zarı bu NADH molekülünü doğrudan içeri geçirmek zorunda değildir; elektron eşdeğerleri mekik sistemleriyle aktarılır. Malat–aspartat mekik yolu ile gliserol fosfat mekik yolu elektronların ETS’ye katılımını farklılaştırabilir. Bu fark, okul düzeyindeki iki farklı ATP toplamını açıklar.",
+  "to": "Glikolizin NADH’ı sitozolde oluşur. Mitokondri iç zarı bu NADH molekülünü doğrudan içeri geçirmek zorunda değildir; elektron eşdeğerleri mekik sistemleriyle aktarılır. Malat–aspartat mekik yolu ile gliserol fosfat mekik yolu elektronların ETS’ye katılımını farklılaştırabilir. Bu fark, temel düzeydeki iki farklı ATP toplamını açıklar."
+ },
+ {
+  "from": "Okul düzeyindeki başlıca örnekler bazı bakteri ve arkelerdir. Bu hücrelerde mitokondri bulunması gerekmez; solunumsal taşıyıcı ve enerji dönüştüren düzenler uygun hücre zarında yer alır. Elektron aktarımından sağlanan enerji, zarın iki tarafında iyon farkı kurmaya ve ATP sentaz üzerinden ATP sentezine bağlanabilir.",
+  "to": "Başlıca örnekler bazı bakteri ve arkelerdir. Bu hücrelerde mitokondri bulunması gerekmez; solunumsal taşıyıcı ve enerji dönüştüren düzenler uygun hücre zarında yer alır. Elektron aktarımından sağlanan enerji, zarın iki tarafında iyon farkı kurmaya ve ATP sentaz üzerinden ATP sentezine bağlanabilir."
+ },
+ {
+  "from": "Gerçek bir örnekte yalnız “oksijen az” ölçümüyle tam ürün dağılımı belirlenemez. Elektron vericisi, alıcıların erişilebilirliği, pH, sıcaklık ve uygun mikroorganizmalar önemlidir. Arıtma veya biyogaz uygulamasında olumlu işlevleri anlamak kadar yan ürün ve emisyonları izlemek de gerekir. Kaynakta geçen çevresel rolü, her durumda bütün kirliliği çözen sihirli işlem gibi sunma.",
+  "to": "Gerçek bir örnekte yalnız “oksijen az” ölçümüyle tam ürün dağılımı belirlenemez. Elektron vericisi, alıcıların erişilebilirliği, pH, sıcaklık ve uygun mikroorganizmalar önemlidir. Arıtma veya biyogaz uygulamasında olumlu işlevleri anlamak kadar yan ürün ve emisyonları izlemek de gerekir. Bu çevresel rolü, her durumda bütün kirliliği çözen sihirli işlem gibi sunma."
+ },
+ {
+  "from": "Oogonyumların çoğalması ve birincil oositlerin oluşması embriyonik dönemde başlar. Birincil oositler mayozun profaz I evresinde bekleyebilir. Kaynakta yeni doğanda iki yumurtalıkta toplam yaklaşık 1–2 milyon folikül bulunduğu, bunların yalnız birkaç yüzünün üreme dönemi boyunca ovulasyona ulaşabildiği anlatılır. Sayılar bireyler arasında değişir.",
+  "to": "Oogonyumların çoğalması ve birincil oositlerin oluşması embriyonik dönemde başlar. Birincil oositler mayozun profaz I evresinde bekleyebilir. Yeni doğanda iki yumurtalıkta toplam yaklaşık 1–2 milyon folikül bulunur; bunların yalnız birkaç yüzü üreme dönemi boyunca ovulasyona ulaşabilir. Sayılar bireyler arasında değişir."
+ },
+ {
+  "from": "Kaynaklardaki dört, sekiz hücreli veya daha ileri transfer örnekleri belirli uygulama aşamalarını gösterir; bütün IVF işlemlerinde değişmez tek hücre sayısı kuralı değildir. Tüp geçişinin aşılması rahmin görevini ortadan kaldırmaz. Bir yöntem adı duyduğunda “hangi doğal basamak nerede destekleniyor?” sorusuyla açıklama kur.",
+  "to": "Dört, sekiz hücreli veya daha ileri transfer örnekleri belirli uygulama aşamalarını gösterir; bütün IVF işlemlerinde değişmez tek hücre sayısı kuralı değildir. Tüp geçişinin aşılması rahmin görevini ortadan kaldırmaz. Bir yöntem adı duyduğunda “hangi doğal basamak nerede destekleniyor?” sorusuyla açıklama kur."
+ },
+ {
+  "from": "Menopoz foliküler döngü ve ovulasyonun sonlanmasıdır; kaynaklarda yaklaşık orta yaş aralıkları verilir, fakat tek bir evrensel doğum günü sınırı yoktur. Sperm ve yumurta üretiminin zamanlamasını karşılaştırırken “başlangıç”, “bekleme”, “olgunlaşma” ve “üretimin sürmesi” ifadelerini birbirinden ayır.",
+  "to": "Menopoz foliküler döngü ve ovulasyonun sonlanmasıdır; genellikle yaklaşık orta yaş aralıkları verilir, fakat tek bir evrensel doğum günü sınırı yoktur. Sperm ve yumurta üretiminin zamanlamasını karşılaştırırken “başlangıç”, “bekleme”, “olgunlaşma” ve “üretimin sürmesi” ifadelerini birbirinden ayır."
+ },
+ {
+  "from": "Döngü günleri, adet kanamasının ilk gününden sayılır. Kaynaklarda 28 günlük bir örnek üzerinden yaklaşık 14. günde ovulasyon ve ardından luteal dönem gösterilir. Bu sayılar hormonlar ve dokular arasındaki ilişkiyi okumayı kolaylaştırır; her kişinin her döngüsünün 28 gün olmasını gerektirmez.",
+  "to": "Döngü günleri, adet kanamasının ilk gününden sayılır. Yaygın olarak 28 günlük bir örnek üzerinden yaklaşık 14. günde ovulasyon ve ardından luteal dönem gösterilir. Bu sayılar hormonlar ve dokular arasındaki ilişkiyi okumayı kolaylaştırır; her kişinin her döngüsünün 28 gün olmasını gerektirmez."
+ },
+ {
+  "from": "Etkileşimdeki gün kaydırıcısı bu sabit 28 günlük okul modeline aittir. Bir kişide gerçek ovulasyon günü veya gebelik olasılığı yalnız bu takvimden belirlenmez. Model verisiyle işlem yaparken “verilen örnekte” ifadesini koru; örnek takvimi kişisel bir ölçümle karıştırmadan doğru gün hesabını öğren.",
+  "to": "Etkileşimdeki gün kaydırıcısı bu sabit 28 günlük öğretim modeline aittir. Bir kişide gerçek ovulasyon günü veya gebelik olasılığı yalnız bu takvimden belirlenmez. Model verisiyle işlem yaparken “verilen örnekte” ifadesini koru; örnek takvimi kişisel bir ölçümle karıştırmadan doğru gün hesabını öğren."
+ },
+ {
+  "from": "Aynı molekülün farklı düzey ve hormonal ortamda farklı geri bildirim oluşturması çelişki değildir. Soruda düzey, süre ve evre belirtilmeden “östrojen her zaman artırır” veya “her zaman azaltır” demek eksik kalır. Kaynak grafiğini okurken önce eğrinin hangi bölümünde olduğuna, sonra hedef hormonun tepkisine bak.",
+  "to": "Aynı molekülün farklı düzey ve hormonal ortamda farklı geri bildirim oluşturması çelişki değildir. Soruda düzey, süre ve evre belirtilmeden “östrojen her zaman artırır” veya “her zaman azaltır” demek eksik kalır. Hormon grafiğini okurken önce eğrinin hangi bölümünde olduğuna, sonra hedef hormonun tepkisine bak."
+ },
+ {
+  "from": "Uygun gebelik sinyali olmadığında korpus luteum geriler; progesteron ve östrojen üretimi azalır. Endometriyumu sürdüren hormonal destek çekilince işlevsel tabakada damar ve doku değişimleri oluşur, adet kanaması başlar. Süre birkaç gün olabilir; kaynaklardaki 3–7 veya 4–7 günlük aralıklar yaklaşık örneklerdir.",
+  "to": "Uygun gebelik sinyali olmadığında korpus luteum geriler; progesteron ve östrojen üretimi azalır. Endometriyumu sürdüren hormonal destek çekilince işlevsel tabakada damar ve doku değişimleri oluşur, adet kanaması başlar. Süre birkaç gün olabilir; sık verilen 3–7 veya 4–7 günlük aralıklar yaklaşık örneklerdir."
+ },
+ {
+  "from": "Bir döngünün geçici olarak değişmesiyle üreme döneminin kalıcı sonlanmasını ayır. Kaynaklar menopoz için yaklaşık yaş aralıkları verir; herkes için sabit tek yaş yasası değildir. Ders sorularında önce verilen fizyolojik durumu tanı, sonra aynı geri bildirim kuralının hangi bağlamda kullanıldığını değerlendir.",
+  "to": "Bir döngünün geçici olarak değişmesiyle üreme döneminin kalıcı sonlanmasını ayır. Menopoz için yaklaşık yaş aralıkları verilir; herkes için sabit tek yaş yasası değildir. Ders sorularında önce verilen fizyolojik durumu tanı, sonra aynı geri bildirim kuralının hangi bağlamda kullanıldığını değerlendir."
+ },
+ {
+  "from": "Bu örneklerin her ayrıntısı bütün ortaklıklarda aynı değildir. Bazı liken ortakları uygun koşullarda ayrı da yaşayabilir; iki ortağın da tek başına asla yaşayamayacağı genellemesi kurulmaz. Geviş getirenlerin mikrobiyotasında konağa önemli enerji katkısı uçucu yağ asitleri üzerinden olabilir; ilişkiyi yalnız hazır glikoz paylaşımı olarak daraltma. Simbiyoz dar kullanımda uzun süreli yakın birlikteliği anlatır; okulun ilişki tabloları daha geniş etki türlerini de karşılaştırır.",
+  "to": "Bu örneklerin her ayrıntısı bütün ortaklıklarda aynı değildir. Bazı liken ortakları uygun koşullarda ayrı da yaşayabilir; iki ortağın da tek başına asla yaşayamayacağı genellemesi kurulmaz. Geviş getirenlerin mikrobiyotasında konağa önemli enerji katkısı uçucu yağ asitleri üzerinden olabilir; ilişkiyi yalnız hazır glikoz paylaşımı olarak daraltma. Simbiyoz dar kullanımda uzun süreli yakın birlikteliği anlatır; ilişki tabloları daha geniş etki türlerini de karşılaştırır."
+ },
+ {
+  "from": "Yarı parazit bitkiler fotosentez yapabilir; konaktan özellikle su ve mineral alma ilişkisi kurarlar. Ökse otu bu çerçevede anlatılan örneklerdendir. Tam parazit bitkiler organik maddeyi de konaktan sağlama bakımından farklıdır; küsküt veya canavar otu gibi örnekler okul kaynaklarında kullanılır.",
+  "to": "Yarı parazit bitkiler fotosentez yapabilir; konaktan özellikle su ve mineral alma ilişkisi kurarlar. Ökse otu bu çerçevede anlatılan örneklerdendir. Tam parazit bitkiler organik maddeyi de konaktan sağlama bakımından farklıdır; küsküt veya canavar otu gibi örnekler verilir."
+ },
+ {
+  "from": "Bu sınıflama gerçek etkilerin hiçbir zaman birleşmeyeceği anlamına gelmez. Aynı kuraklık düşük ve yüksek yoğunlukta farklı sonuca yol açabilir; kaynak azalması ardından rekabeti güçlendirebilir. Çevre direnci tek bir düşman canlı değildir; çoğalmayı sınırlayan etmenlerin toplam çerçevesidir. Uygulama modelinin basitliği bu mekanizmaların hepsini ölçtüğü iddiasına dönüşmez.",
+  "to": "Bu sınıflama gerçek etkilerin hiçbir zaman birleşmeyeceği anlamına gelmez. Aynı kuraklık düşük ve yüksek yoğunlukta farklı sonuca yol açabilir; kaynak azalması ardından rekabeti güçlendirebilir. Çevre direnci tek bir düşman canlı değildir; çoğalmayı sınırlayan etmenlerin toplam çerçevesidir. Etkileşimli modelin basitliği bu mekanizmaların hepsini ölçtüğü iddiasına dönüşmez."
+ },
+ {
+  "from": "Kaynakta verilen Türkiye 2016 yaş payları veya 2050 projeksiyonu kendi tarihine ve varsayımlarına aittir; bugünün kesin ölçümü veya garanti edilmiş gelecek olarak sunulmaz. Projeksiyonda doğurganlık, ölüm ve göç varsayımları değişirse sonuç değişir. Daha çok tarihli tablo ezberlemekten önce pay, oran, miktar ve belirsizliğin hangi soruya yanıt verdiğini öğren.",
+  "to": "Verilen Türkiye 2016 yaş payları veya 2050 projeksiyonu kendi tarihine ve varsayımlarına aittir; bugünün kesin ölçümü veya garanti edilmiş gelecek olarak sunulmaz. Projeksiyonda doğurganlık, ölüm ve göç varsayımları değişirse sonuç değişir. Daha çok tarihli tablo ezberlemekten önce pay, oran, miktar ve belirsizliğin hangi soruya yanıt verdiğini öğren."
+ },
+ {
+  "from": "Baz ile şekerin birleşmiş hâline nükleozit denir; fosfat eklendiğinde nükleotit yapısı oluşur. Kaynak şekillerindeki beşgen pentozu, daire fosfatı ve farklı baz biçimlerini ezber simgesi değil bağlantı haritası olarak kullan. Fosfatın varlığıyla fosfat sayısını karıştırma: hücrede serbest nükleotitlerin farklı fosfatlı biçimleri bulunabilir.",
+  "to": "Baz ile şekerin birleşmiş hâline nükleozit denir; fosfat eklendiğinde nükleotit yapısı oluşur. Şekillerdeki beşgen pentozu, daire fosfatı ve farklı baz biçimlerini ezber simgesi değil bağlantı haritası olarak kullan. Fosfatın varlığıyla fosfat sayısını karıştırma: hücrede serbest nükleotitlerin farklı fosfatlı biçimleri bulunabilir."
+ },
+ {
+  "from": "Okul düzeyi B-DNA modelinde çap yaklaşık 2 nm, komşu baz çiftleri arası eksenel uzaklık yaklaşık 0,34 nm ve bir tur yaklaşık 10 baz çiftiyle 3,4 nm olarak anlatılır. On baz çifti toplam yirmi nükleotittir; on nükleotit değildir. Gerçek sarmal parametreleri koşula ve DNA biçimine göre değişebilir; bu değerler açıkça kullanılan yaklaşık modeldir.",
+  "to": "Basit B-DNA modelinde çap yaklaşık 2 nm, komşu baz çiftleri arası eksenel uzaklık yaklaşık 0,34 nm ve bir tur yaklaşık 10 baz çiftiyle 3,4 nm olarak anlatılır. On baz çifti toplam yirmi nükleotittir; on nükleotit değildir. Gerçek sarmal parametreleri koşula ve DNA biçimine göre değişebilir; bu değerler açıkça kullanılan yaklaşık modeldir."
+ },
+ {
+  "from": "Bütün prokaryotların tek halkasal kromozom, hiç DNA bağlayıcı protein ve aynı eşlenme düzeni taşıdığı söylenemez. Bakterilerde histon benzeri DNA düzenleyici proteinler vardır; arkelerde histon benzeri veya histon proteinleri de görülebilir. Temel okul karşılaştırması çekirdek zarının yokluğudur; ayrıntılı çeşitliliği yok sayan mutlak tanımlara dönüştürülmez.",
+  "to": "Bütün prokaryotların tek halkasal kromozom, hiç DNA bağlayıcı protein ve aynı eşlenme düzeni taşıdığı söylenemez. Bakterilerde histon benzeri DNA düzenleyici proteinler vardır; arkelerde histon benzeri veya histon proteinleri de görülebilir. Temel karşılaştırma çekirdek zarının yokluğudur; ayrıntılı çeşitliliği yok sayan mutlak tanımlara dönüştürülmez."
  }
 ]

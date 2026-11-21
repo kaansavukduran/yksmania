@@ -648,5 +648,752 @@
    "prompt": "Su basması ile kuraklık kökte ilk olarak hangi farklı basamakları bozar?",
    "answer": "Su basması hava boşluklarını azaltıp solunum için gaz alışverişini, kuraklık ise dış su potansiyelini düşürüp su alımını bozar."
   }
+ ],
+ "ayt-fermantasyon": [
+  {
+   "after": 1,
+   "prompt": "Glikolizde 3 glikoz işlenirse harcanan, oluşan ve net ATP sayıları kaç olur?",
+   "answer": "6 ATP harcanır, 12 ATP oluşur; net kazanç 12 − 6 = 6 ATP olur."
+  },
+  {
+   "after": 3,
+   "prompt": "Alkol fermantasyonunda NADH'den elektron alan son organik ara ürün hangisidir?",
+   "answer": "Asetaldehittir; elektron alıp etanole indirgenir. Ayrılan CO₂ bu indirgenmenin alıcısı değildir."
+  },
+  {
+   "after": 5,
+   "prompt": "Homolaktik yolda 2 mol serbest glikoz işlenirse kaç mol laktat ve kaç mol CO₂ oluşur?",
+   "answer": "4 mol laktat oluşur, CO₂ oluşmaz; çünkü her glikoz iki 3 karbonlu laktata dönüşür."
+  },
+  {
+   "after": 7,
+   "prompt": "Olgun memeli alyuvarı oksijen taşıdığı hâlde ATP'sini neden glikolizle karşılar?",
+   "answer": "Mitokondrisi yoktur; bu yüzden ATP glikolizden gelir ve laktat oluşur. Taşıdığı oksijen ona mitokondri kazandırmaz."
+  },
+  {
+   "after": 10,
+   "prompt": "Bir deneyde tek bir zaman sonunda daha çok ürün görmek hangi koşulda daha yüksek üretim hızına işaret edebilir?",
+   "answer": "Başlangıç miktarı, sıcaklık, canlı miktarı ve süre gibi koşullar aynı tutulduğunda ortalama hızın daha yüksek olduğuna işaret edebilir."
+  }
+ ],
+ "ayt-fotosentez-solunum": [
+  {
+   "after": 2,
+   "prompt": "Bir yaprak saatte 10 birim karbon bağlayıp 4 birim CO₂ bırakıyorsa net CO₂ alımı saatte kaç birimdir?",
+   "answer": "Net alım 10 − 4 = 6 birimdir; brüt üretim ise 10 birim olarak kalır."
+  },
+  {
+   "after": 4,
+   "prompt": "Brüt hız saatte 6 birim ve aydınlık 10 saat, solunum 24 saat boyunca saatte 2 birimse günlük net karbon kaç birim olur?",
+   "answer": "Bağlanan 6 × 10 = 60, solunum kaybı 2 × 24 = 48 birimdir; günlük net kazanç 12 birim olur."
+  },
+  {
+   "after": 6,
+   "prompt": "Oksijenli solunumda O₂ hangi görevle tepkimeye girer ve hangi ürüne katılır?",
+   "answer": "Son elektron alıcısı olarak indirgenir ve su oluşumuna katılır; CO₂'nin karbonu ise organik maddeden gelir."
+  },
+  {
+   "after": 8,
+   "prompt": "Oksijenli fotosentezin doğrusal elektron akışında elektron vericisi ve son alıcı hangileridir?",
+   "answer": "Elektron vericisi sudur; NADP⁺ elektron alarak NADPH olur. NADP⁺'ı verici saymak yönü ters çevirir."
+  },
+  {
+   "after": 10,
+   "prompt": "Pozitif günlük net CO₂ alımı neden tek başına bitkinin taze kütle değişimini vermez?",
+   "answer": "Taze kütle büyük ölçüde su alışverişinden de etkilenir; su ve diğer giriş–çıkışlar bilinmeden hesaplanamaz."
+  }
+ ],
+ "ayt-meristem-doku": [
+  {
+   "after": 1,
+   "prompt": "Büyük çekirdek görmek bir hücrenin meristem olduğuna neden tek başına yetmez?",
+   "answer": "Hücrenin bulunduğu bölge ve bölünme etkinliği de birlikte değerlendirilmelidir; tek bir özellik kesin kanıt değildir."
+  },
+  {
+   "after": 3,
+   "prompt": "Kök ucunda emici tüyler hangi bölgede görülür?",
+   "answer": "Olgunlaşma bölgesinde görülür; uçtaki kaliptra ise ilerleyen hassas ucu koruyan kök şapkasıdır."
+  },
+  {
+   "after": 6,
+   "prompt": "Protoderma, temel meristem ve prokambiyum sırasıyla hangi birincil doku sistemlerine yol açar?",
+   "answer": "Protoderma birincil örtüye, temel meristem temel dokulara, prokambiyum birincil iletim dokularına yol açar."
+  },
+  {
+   "after": 8,
+   "prompt": "Periderm sistemini oluşturan üç yapı hangileridir?",
+   "answer": "Dışta mantar hücreleri, ortada mantar kambiyumu ve içte canlı felloderm dokusu birlikte peridermi oluşturur."
+  },
+  {
+   "after": 9,
+   "prompt": "Botanik anlamda kabuk hangi dokuları kapsar?",
+   "answer": "Damar kambiyumunun dışında kalan bütün dokuları kapsar; içte floem, dışta koruyucu yapılar vardır. Yalnız en dış kuru tabaka değildir."
+  },
+  {
+   "after": 11,
+   "prompt": "Belirli bir yükseklikten alınan gövde kesitindeki halkalar neden ağacın toplam yaşını her zaman vermez?",
+   "answer": "Kesit yalnız o noktaya ait odun birikimini gösterir; o yükseklik tohumdan itibaren var olmamış olabilir."
+  }
+ ],
+ "ayt-temel-doku": [
+  {
+   "after": 1,
+   "prompt": "Olgun bir parankima hücresinin tipik çeper ve hücre içi özellikleri nelerdir?",
+   "answer": "Çoğunlukla canlıdır; ince birincil çeperi, belirgin kofulu, sitoplazması ve çekirdeği vardır."
+  },
+  {
+   "after": 3,
+   "prompt": "Mezofilde hava oranının artması neden tek başına fotosentez hızının değişme yönünü söylemez?",
+   "answer": "Hız gaz yayılımı, ışık, kloroplast, su ve enzim koşullarına da bağlıdır; alan değişimi yalnız geometrik bir sonuçtur."
+  },
+  {
+   "after": 5,
+   "prompt": "Bir hücrenin depo maddesi taşıması neden onun fotosentez yaptığını göstermez?",
+   "answer": "Patates yumrusu gibi depo yapıları başka dokulardan gelen organik karbonu biriktirebilir; depo ile üretim ayrı işlerdir."
+  },
+  {
+   "after": 6,
+   "prompt": "İletim parankimasını trake ve kalburlu borudan ayıran görev farkı nedir?",
+   "answer": "İletim parankiması demet çevresinde kısa mesafeli yerel aktarım yapan canlı hücrelerdir; trake ve kalburlu boru uzun mesafeli ana iletim elemanlarıdır."
+  },
+  {
+   "after": 9,
+   "prompt": "Sklerenkima lifleri ile taş hücreleri biçim bakımından nasıl ayrılır?",
+   "answer": "Lifler uzun, dar ve çoğu kez demet hâlindedir; taş hücreleri daha kısa ya da dallanmıştır, armuttaki kumlu his buna örnektir."
+  },
+  {
+   "after": 11,
+   "prompt": "Toplamın yüzde 20'si hava, hücre alanının yüzde 75'i palizatsa sünger hücreleri toplamın yüzde kaçıdır?",
+   "answer": "Hücre alanı toplamın 0,80'idir; süngerin payı 0,80 × 0,25 = 0,20, yani toplamın yüzde 20'sidir."
+  }
+ ],
+ "ayt-iletim-doku": [
+  {
+   "after": 1,
+   "prompt": "Bir trakede lümen ile çeper arasındaki fark nedir?",
+   "answer": "Lümen suyun geçtiği boş iç alandır; ligninli çeper ise iletim yolunun mekanik olarak açık kalmasını sağlar."
+  },
+  {
+   "after": 3,
+   "prompt": "Trakeit ile trake elemanı komşu elemana suyu aktarma biçimiyle nasıl ayrılır?",
+   "answer": "Trakeitte su çeperdeki geçitlerden aktarılır; uç uca dizilen trake elemanlarında perforasyon plakaları daha açık bağlantı sağlar."
+  },
+  {
+   "after": 4,
+   "prompt": "Olgun kalburlu boru elemanı hangi yönüyle canlıdır, neyi yitirmiştir?",
+   "answer": "Olgunlukta canlıdır ama çekirdeğini ve bazı iç yapılarını kaybetmiştir; metabolik desteği çekirdekli arkadaş hücresinden alır."
+  },
+  {
+   "after": 7,
+   "prompt": "Floemin kaynak bölgesinde turgor basıncı neden yükselir?",
+   "answer": "Çözünmüş organik madde yüklenmesi su potansiyelini değiştirir; içeri giren su turgor basıncını artırır."
+  },
+  {
+   "after": 9,
+   "prompt": "Floemde hacim akısından şeker kütlesi akısına nasıl geçilir?",
+   "answer": "Hacim akısı (mL/saat) derişimle (mg/mL) çarpılır; sonuç şeker akısını mg/saat olarak verir."
+  },
+  {
+   "after": 11,
+   "prompt": "ΔP 20 kPa, R 4 kPa·saat/mL ve derişim 2 mg/mL ise stok yeterliyken 3 saatte kaç mg şeker taşınır?",
+   "answer": "Q = 20 / 4 = 5 mL/saat, şeker akısı 5 × 2 = 10 mg/saat olur; 3 saatte 30 mg şeker taşınır."
+  }
+ ],
+ "ayt-kodon-antikodon": [
+  {
+   "after": 1,
+   "prompt": "AUG kodonunun harflerini ters sırada yazmak neden aynı kodonu vermez?",
+   "answer": "Kodon 5′→3′ yönünde okunur ve yön sıranın parçasıdır; ters yazım GUA gibi başka bir kodon verir."
+  },
+  {
+   "after": 2,
+   "prompt": "Kodlayan DNA ipliği 5′GGC3′ ise kalıp iplik ve mRNA nasıl yazılır?",
+   "answer": "Kalıp iplik 3′CCG5′, mRNA ise kodlayan iplikle aynı sırada 5′GGC3′ olur; bu örnekte T bulunmadığı için harf değişmez."
+  },
+  {
+   "after": 4,
+   "prompt": "Bir kodonun anlamını bulurken tabloya neden antikodon harfleriyle girilmez?",
+   "answer": "Tablo mRNA kodonlarını 5′→3′ listeler; önce mRNA kodonu belirlenir, sonra tablo okunur."
+  },
+  {
+   "after": 7,
+   "prompt": "UAU→UAA değişimi neden sessiz bir değişim sayılmaz?",
+   "answer": "Tirozin kodonu olan UAU, duruş kodonu UAA'ya döner; amino asit anlamı korunmaz."
+  },
+  {
+   "after": 9,
+   "prompt": "Doğru amino asidin zincire girmesi hangi iki ayrı seçicilik basamağına dayanır?",
+   "answer": "Aminoasil-tRNA sentetazın ATP kullanarak doğru amino asidi tRNA'ya yüklemesine ve ribozomda antikodonun kodonla eşleşmesine."
+  },
+  {
+   "after": 10,
+   "prompt": "Wobble esnekliği kodon ve antikodonun hangi konumları arasında görülür?",
+   "answer": "Kodonun üçüncü konumu ile antikodonun ilk konumu arasında; bu, bir tRNA'nın birden çok eş anlamlı kodonu okumasına katkı verir."
+  }
+ ],
+ "ayt-protein-sentezi": [
+  {
+   "after": 1,
+   "prompt": "Aynı kromozomdaki iki genin kalıp iplikleri neden farklı olabilir?",
+   "answer": "Kalıp ve kodlayan iplik adları her genin kendi transkripsiyon yönüne göre verilir; başka bir gen karşı ipliği kalıp seçebilir."
+  },
+  {
+   "after": 3,
+   "prompt": "Olgun proteinin amino asit sayısından genin nükleotit sayısı neden koşulsuz bulunamaz?",
+   "answer": "İntronlar çıkarılır, olgun mRNA'da çevrilmeyen uçlar bulunur ve alternatif birleştirme farklı ürünler verebilir."
+  },
+  {
+   "after": 4,
+   "prompt": "Peptit bağı ile kodon–antikodon eşleşmesi arasındaki fark nedir?",
+   "answer": "Peptit bağı büyüyen zincirde amino asitleri birbirine bağlar; kodon–antikodon arasında ise geçici baz eşleşmesi kurulur."
+  },
+  {
+   "after": 7,
+   "prompt": "Uzamada peptit bağı oluştuktan hemen sonra büyüyen zincir hangi bölgedeki tRNA'ya bağlıdır?",
+   "answer": "A bölgesindeki tRNA'ya bağlıdır; ribozom üç baz ilerleyince bu tRNA P konumuna geçer."
+  },
+  {
+   "after": 10,
+   "prompt": "Toplam 50 kalıntı içeren 2 ayrı açık polipeptit zincirinde kaç peptit bağı vardır?",
+   "answer": "Bağ sayısı N − c kuralıyla 50 − 2 = 48 olur."
+  }
+ ],
+ "ayt-biyoteknoloji": [
+  {
+   "after": 1,
+   "prompt": "Yapay seçilim ile melezleme arasındaki fark nedir?",
+   "answer": "Yapay seçilimde istenen özelliği taşıyan bireylerin çoğalması tercih edilir; melezlemede farklı genotipli ebeveynlerin genleri yavruda birleşir."
+  },
+  {
+   "after": 3,
+   "prompt": "Kodlamayan DNA'yı protein belirtmiyor diye işlevsiz saymak neden yanlıştır?",
+   "answer": "Kodlamayan bölgelerin düzenleyici veya yapısal işlevleri olabilir."
+  },
+  {
+   "after": 4,
+   "prompt": "İdeal PCR modelinde 10 hedef çift DNA ile başlanırsa 3 döngü sonunda kaç molekül olur?",
+   "answer": "N = N₀ · 2ᵏ ile 10 · 2³ = 80 molekül olur; bu yalnız ideal koşul varsayımında geçerlidir."
+  },
+  {
+   "after": 6,
+   "prompt": "Aynı jel koşullarında benzer iki doğrusal çift DNA parçasından hangisi daha uzağa ilerler?",
+   "answer": "Genellikle küçük olan daha uzağa ilerler; boy, referans işaretlerle karşılaştırılarak yorumlanır."
+  },
+  {
+   "after": 8,
+   "prompt": "Rekombinant DNA yapımında restriksiyon enzimi ile DNA ligazın görevleri nasıl ayrılır?",
+   "answer": "Restriksiyon enzimi DNA'yı belirli tanıma bölgelerinde keser; DNA ligaz uygun omurga uçlarını birleştirir."
+  },
+  {
+   "after": 9,
+   "prompt": "Gen klonu, hücre klonu ve organizma klonu hangi ölçekte farklıdır?",
+   "answer": "Gen klonu hedef DNA'nın kopyalarıdır; hücre klonu ortak bir hücreden çoğalan topluluktur; organizma klonu çok hücreli bir bireyin yeniden oluşturulmasıdır."
+  },
+  {
+   "after": 11,
+   "prompt": "Embriyonik ve yetişkin kök hücreler farklılaşma potansiyeli bakımından nasıl ayrılır?",
+   "answer": "Embriyonik kök hücrelerin potansiyeli geniştir; yetişkin dokulardaki birçok kök hücrenin potansiyeli daha sınırlıdır."
+  },
+  {
+   "after": 14,
+   "prompt": "Altın pirinçte artırılan bileşen nedir ve vücutta neye dönüşebilir?",
+   "answer": "β-karoten öncülü artırılmıştır; insan vücudunda A vitaminine dönüşebilir."
+  },
+  {
+   "after": 15,
+   "prompt": "Biyolojik arıtma ağır metal kirliliğinde neyi yapabilir, neyi yapamaz?",
+   "answer": "Metalin bağlanıp ortamdan ayrılmasına katkı verebilir; ancak bir elementi başka bir elemente çeviremez."
+  }
+ ],
+ "ayt-fotosentez-genel": [
+  {
+   "after": 1,
+   "prompt": "Fotoototrof sözcüğü bir canlının enerji ve karbon kaynağı hakkında neyi birlikte söyler?",
+   "answer": "Enerji kaynağının ışık, temel karbon kaynağının ise inorganik karbon olduğunu söyler."
+  },
+  {
+   "after": 3,
+   "prompt": "Brüt denklemde 12 su girerken net denklemde neden 6 su tüketilmiş görünür?",
+   "answer": "Ürün tarafında da 6 su bulunur; iki taraftaki 6 su sadeleşince net tüketim 6 su kalır."
+  },
+  {
+   "after": 5,
+   "prompt": "Van Helmont'un bitki büyümesiyle ilgili gözlemleri neyi düşündürdü?",
+   "answer": "Büyümenin yalnız toprak kütlesiyle açıklanamayacağını düşündürdü; ancak bütün karbonun sudan geldiğini kanıtlamadı."
+  },
+  {
+   "after": 6,
+   "prompt": "Kloroplastta ışık tepkimelerinin düzenekleri ve Calvin enzimleri hangi bölmelerde bulunur?",
+   "answer": "Işık tepkimelerinin zar düzenekleri tilakoit zarında, Calvin karbon tepkimelerinin temel enzimleri stromadadır."
+  },
+  {
+   "after": 9,
+   "prompt": "Klorofilde magnezyum ile demirin rolü nasıl ayrılır?",
+   "answer": "Mg klorofilin yapısal merkez atomudur; Fe yapıya merkez olarak katılmaz, klorofil yapımı ve fotosentezle ilişkili proteinlerde rol alabilir."
+  },
+  {
+   "after": 10,
+   "prompt": "Soğurma spektrumu ile eylem spektrumu arasındaki fark nedir?",
+   "answer": "Soğurma spektrumu pigmentin hangi dalga boylarını aldığını, eylem spektrumu fotosentetik etkinliğin dalga boyuyla ilişkisini gösterir."
+  }
+ ],
+ "ayt-fotosentez-tepkimeler": [
+  {
+   "after": 1,
+   "prompt": "Fotosistemde elektronunu veren merkez ve elektronu alan yapı hangi duruma geçer?",
+   "answer": "Elektron veren merkez yükseltgenmiş, elektronu alan yapı indirgenmiş olur."
+  },
+  {
+   "after": 2,
+   "prompt": "Su ayrıştırma düzeneğinde 2 O₂ oluşursa kaç elektron ve kaç proton açığa çıkar?",
+   "answer": "Her O₂ için 2 H₂O'dan 4e⁻ ve 4H⁺ çıkar; 2 O₂ için 8 elektron ve 8 proton açığa çıkar."
+  },
+  {
+   "after": 5,
+   "prompt": "NADP⁺'nin NADPH'ye indirgenmesi için yalnız proton tutması neden yetmez?",
+   "answer": "İndirgenme elektron katkısı gerektirir; yarı denklemde NADP⁺ iki elektron ve bir proton alır."
+  },
+  {
+   "after": 6,
+   "prompt": "Döngüsel elektron akışı çıktısıyla doğrusal akıştan nasıl ayrılır?",
+   "answer": "Proton gradyanına ve ATP üretimine katkı verir; ancak doğrusal akıştaki gibi net NADPH ya da su kaynaklı O₂ üretmez."
+  },
+  {
+   "after": 8,
+   "prompt": "3 CO₂ bağlandığında oluşan altı PGA toplam kaç karbon taşır ve bu karbon nereden gelir?",
+   "answer": "18 karbon taşır: 15 karbon üç RuBP'den, 3 karbon bağlanan CO₂'lerden gelir."
+  },
+  {
+   "after": 10,
+   "prompt": "Calvin ürünlerinden amino asit yapılabilmesi için CO₂, su ve ışığa ek olarak ne gerekir?",
+   "answer": "Uygun azot girdileri gerekir; CO₂, su ve ışık azot atomu sağlamaz."
+  },
+  {
+   "after": 12,
+   "prompt": "Calvin tepkimeleri neden ışıktan bağımsız olarak adlandırılır?",
+   "answer": "Doğrudan foton soğuran bir klorofil basamağı içermez; yine de kullanılabilir ATP, NADPH, uygun enzim durumu ve CO₂ gerekir."
+  }
+ ],
+ "fotosentez-hiz-faktorleri": [
+  {
+   "after": 1,
+   "prompt": "Brüt O₂ üretimi 12, solunumun O₂ tüketimi 5 mikromol/dakika ise net O₂ çıkışı kaç olur?",
+   "answer": "Net çıkış 12 − 5 = 7 mikromol/dakika olur."
+  },
+  {
+   "after": 2,
+   "prompt": "Işık kompanzasyon noktasının altında ama sıfırdan büyükken yaprak dışarıyla hangi yönde gaz alışverişi yapar?",
+   "answer": "Fotosentez sürse de solunum daha hızlıdır; yaprak dışarıdan net O₂ alır ve net CO₂ verir."
+  },
+  {
+   "after": 4,
+   "prompt": "Kapasiteler ışık 50, CO₂ 40, sıcaklık 90 birim/dakikayken CO₂ 100'e çıkarsa modelde brüt hız kaç olur?",
+   "answer": "Hız 40'tan 50'ye çıkar; artık en küçük kapasite ışıktır ve darboğaz ışığa geçer."
+  },
+  {
+   "after": 5,
+   "prompt": "Işık–hız grafiğinde yükselişin ardından gelen plato neyi gösterir?",
+   "answer": "Işık artık sınırlayıcı değildir; karbon özümleme kapasitesi ya da CO₂ girişi gibi başka bir sınırlayıcı belirginleşmiştir."
+  },
+  {
+   "after": 8,
+   "prompt": "Sıcaklık–hız grafiği neden plato yerine bir optimumdan sonra düşer?",
+   "answer": "Aşırı sıcaklık enzimleri, zarları ve su dengesini bozar; bu yüzden hız optimumu geçince azalır."
+  },
+  {
+   "after": 9,
+   "prompt": "CO₂ tutucu bir hidroksit çözeltisini canlıya doğrudan eklemek neden güvenilir bir deney kurmaz?",
+   "answer": "Kimyasal pH değişimi ve doku hasarı gibi başka etkiler yaratır; gaz tutucu canlıdan ayrı tutulmalıdır."
+  },
+  {
+   "after": 10,
+   "prompt": "Su yetersizliği, tepkimedeki su azalması dışında fotosentezi hangi yolla sınırlar?",
+   "answer": "Su kaybını önlemek için stomalar kapanır; bu da CO₂ girişini azaltarak üretimi sınırlar."
+  },
+  {
+   "after": 12,
+   "prompt": "Birim klorofil başına hız sabitken toplam klorofil iki katına çıkarsa toplam üretim nasıl değişebilir?",
+   "answer": "Toplam üretim iki katına çıkabilir; birim klorofil başına hız ile toplam hız farklı paydalı ölçümlerdir."
+  }
+ ],
+ "kemosentez-enerji-karbon": [
+  {
+   "after": 1,
+   "prompt": "İnsan besin oksidasyonuyla kimyasal enerji kazandığı hâlde neden ototrof sayılmaz?",
+   "answer": "Ototrofluk karbonun kaynağıyla tanımlanır; insan karbonunu çoğunlukla organik besinlerden alır."
+  },
+  {
+   "after": 2,
+   "prompt": "Oksidasyon için O₂ ile birleşmek neden tanım gereği şart değildir?",
+   "answer": "Oksidasyon elektron kaybıdır; örneğin Fe²⁺ bir elektron verip Fe³⁺ olduğunda oksijen olmadan da oksitlenir."
+  },
+  {
+   "after": 5,
+   "prompt": "Amonyumun nitrite oksitlenmesinde azotun yükseltgenme basamağı nasıl değişir ve O₂ hangi rolü üstlenir?",
+   "answer": "Azotun yükseltgenme basamağı artar ve elektronlar ayrılır; aerobik örnekte O₂ bu elektronların alıcısıdır."
+  },
+  {
+   "after": 8,
+   "prompt": "Modelde 2 mol N amonyumdan nitrata kadar tamamen işlenirse toplam kaç mol O₂ gerekir?",
+   "answer": "Her mol N için ilk basamakta 1,5, ikinci basamakta 0,5 mol O₂ gerekir; 2 × 2 = 4 mol O₂ olur."
+  },
+  {
+   "after": 9,
+   "prompt": "Aynı H₂S'yi kullanan anoksijenik fotosentetik bakteri ile kemosentetik bakterinin enerji kaynağı nasıl ayrılır?",
+   "answer": "Fotosentetik bakteride ilk enerji girdisi ışık uyarımıdır; kemosentetik bakteride enerji kimyasal oksidasyondan gelir."
+  },
+  {
+   "after": 11,
+   "prompt": "Atık suda nitrifikasyon neden tek başına azotu sistemden uzaklaştırmaz?",
+   "answer": "Amonyumu nitrata dönüştürür ama N₂ gazı olarak dışarı atmaz; uzaklaştırma için denitrifikasyon gibi yollar da gerekir."
+  }
+ ],
+ "solunum-oksijenli-bilanco": [
+  {
+   "after": 1,
+   "prompt": "Oksijenli solunumda O₂'nin son alıcı olarak indirgenmesi yolun hangi noktasında gerçekleşir?",
+   "answer": "ETS'nin ucunda gerçekleşir; CO₂ oluşan basamaklarda aynı anda O₂ tüketilmesi gerekmez."
+  },
+  {
+   "after": 3,
+   "prompt": "Mitokondrisi olmayan prokaryot hücrede solunum ETS'si nerede bulunur?",
+   "answer": "Uygun hücre zarında bulunur; çözünebilir basamaklar ise sitoplazmada yürür."
+  },
+  {
+   "after": 4,
+   "prompt": "Bir NADH ile bir FADH₂ için neden her durumda aynı ATP sayısı kullanılmaz?",
+   "answer": "Elektronları ETS'ye farklı girişlerden katılır ve proton taşınmasına katkıları farklı olabilir."
+  },
+  {
+   "after": 7,
+   "prompt": "3 glikozdan oluşan piruvatların hepsi bağlantı basamağında işlenirse kaç CO₂ ve kaç NADH oluşur?",
+   "answer": "3 glikoz 6 piruvat verir; her piruvat bir CO₂ ve bir NADH oluşturduğundan 6 CO₂ ve 6 NADH oluşur."
+  },
+  {
+   "after": 8,
+   "prompt": "Krebs döngüsünde oksaloasetatın yeniden oluşması neden önemlidir?",
+   "answer": "Dört karbonlu kabul edici yenilendiği için uygun koşullarda sonraki asetil grubunu da alabilir ve döngü sürer."
+  },
+  {
+   "after": 9,
+   "prompt": "Bir glikozun tam oksidasyonunda toplam kaç NADH eşdeğeri oluşur ve bunlar nereden gelir?",
+   "answer": "Toplam 10 NADH eşdeğeri oluşur: glikolizden 2, bağlantı basamağından 2, iki Krebs turundan 6."
+  },
+  {
+   "after": 11,
+   "prompt": "ETS elemanları doğrudan ATP yapmıyorsa elektron akışı ATP üretimine nasıl bağlanır?",
+   "answer": "Elektron akışı iç zarda proton farkı kurar; protonların ATP sentazdan matrikse geri akışı ATP sentezine bağlanır."
+  },
+  {
+   "after": 13,
+   "prompt": "Mitokondri NADH'ı 2,5, FADH₂ 1,5 ATP sayılırsa 8 NADH ile 2 FADH₂ kaç oksidatif ATP verir?",
+   "answer": "8 × 2,5 = 20 ve 2 × 1,5 = 3 olduğundan toplam 23 oksidatif ATP elde edilir."
+  },
+  {
+   "after": 15,
+   "prompt": "Respirometrede CO₂ tutulmazken gaz hacminin sabit kalması neden O₂ tüketilmediğini göstermez?",
+   "answer": "Tüketilen O₂ yerine CO₂ oluşabilir; O₂ tüketimini hacim azalmasıyla izlemek için CO₂'nin tutucuyla bağlanması gerekir."
+  }
+ ],
+ "solunum-oksijensiz-alicilar": [
+  {
+   "after": 1,
+   "prompt": "Solunumsal elektron akışında verici ve son alıcı redoks bakımından nasıl değişir?",
+   "answer": "Elektron vericisi elektron vererek oksitlenir; elektronlar taşıyıcılardan geçer ve son alıcı elektron alarak indirgenir."
+  },
+  {
+   "after": 3,
+   "prompt": "Tam N₂ yolunda 4 mol nitrat indirgenirse kaç mol elektron gerekir ve kaç mol N₂ oluşur?",
+   "answer": "Her nitrat 5 elektron ister; 4 × 5 = 20 mol elektron gerekir ve iki nitrat bir N₂ verdiğinden 2 mol N₂ oluşur."
+  },
+  {
+   "after": 5,
+   "prompt": "Sülfat indirgenmesi ile H₂S'yi oksitleyen kemosentetik yol elektron yönüyle nasıl ayrılır?",
+   "answer": "Sülfat indirgenmesinde kükürt elektron alıp sülfüre iner; kemosentetik yolda H₂S elektron verip oksitlenir."
+  },
+  {
+   "after": 7,
+   "prompt": "CO₂ metana indirgenirken karbonun yükseltgenme basamağı nasıl değişir?",
+   "answer": "Karbon +4 basamağından −4 basamağına iner; bu bir mol CO₂ başına 8 mol elektron gerektirir."
+  },
+  {
+   "after": 9,
+   "prompt": "Havuzda 16 mol e⁻ ve 5 mol sülfat varsa sülfürlü ürüne kaç mol sülfat işlenir?",
+   "answer": "Sülfat başına 8 elektron gerekir; 16 / 8 = 2 mol sülfat işlenir, 3 mol sülfat artar ve 2 mol ürün oluşur."
+  },
+  {
+   "after": 11,
+   "prompt": "Oksijensiz solunumda karbonun CO₂'ye kadar hiç gidemeyeceği genellemesi neden yanlıştır?",
+   "answer": "Verici bazı tür ve koşullarda tamamen oksitlenebilir; sürecin adı karbonun yarım kalmasından değil O₂'nin son alıcı olmamasından gelir."
+  }
+ ],
+ "ureme-kadin-organlar": [
+  {
+   "after": 1,
+   "prompt": "Yumurtalığı hem üreme hem endokrin sistemle ilişkili kılan iki görev nedir?",
+   "answer": "Oositlerin gelişimi bu organda gerçekleşir; ayrıca östrojen ve progesteron gibi eşey hormonlarını üretir."
+  },
+  {
+   "after": 2,
+   "prompt": "Folikül ile oosit arasındaki fark nedir?",
+   "answer": "Oosit tek bir hücredir; folikül ise bu oositi çevreleyen ve beslenme, korunma, hormon üretimine katılan destek hücreleriyle birlikte oluşan yapıdır."
+  },
+  {
+   "after": 3,
+   "prompt": "Ergenlik neden bütün oositlerin ilk kez üretildiği başlangıç sayılmaz?",
+   "answer": "Oogonyum çoğalması ve birincil oositlerin oluşumu embriyonik dönemde başlar; ergenlikte önceden başlamış gelişim hormonal denetimle ilerler."
+  },
+  {
+   "after": 5,
+   "prompt": "Normal güzergâhta döllenme, ilk bölünmeler ve yerleşme hangi sırayla ve nerede gerçekleşir?",
+   "answer": "Döllenme yumurta kanalında olur, zigot rahme taşınırken ilk mitozları yapar, sonra erken embriyo endometriyuma yerleşir."
+  },
+  {
+   "after": 8,
+   "prompt": "Dış gebelik nedir ve en sık nerede görülür?",
+   "answer": "Embriyonun rahim boşluğu dışında yerleşmesidir; en sık tüplerde görülür ama yalnız tüp anlamına gelmez."
+  },
+  {
+   "after": 9,
+   "prompt": "İn vitro fertilizasyonda hangi doğal basamak laboratuvar ortamında gerçekleştirilir?",
+   "answer": "Döllenme basamağı; oosit ve spermler laboratuvarda bir araya getirilir, uygun erken embriyo sonra rahme aktarılır."
+  }
+ ],
+ "ureme-gametogenez": [
+  {
+   "after": 1,
+   "prompt": "S evresini tamamlamış birincil hücre 4C ise mayoz I ve mayoz II sonrasındaki çekirdekler kaç C olur?",
+   "answer": "Mayoz I sonrası hücre n ve 2C, mayoz II sonrası çekirdek n ve 1C olur."
+  },
+  {
+   "after": 3,
+   "prompt": "5 birincil spermatosit mayozu tamamlarsa kaç ikincil spermatosit ve kaç spermatit oluşur?",
+   "answer": "Her biri 2 ikincil spermatosit ve 4 spermatit verir; toplam 10 ikincil spermatosit ve 20 spermatit oluşur."
+  },
+  {
+   "after": 5,
+   "prompt": "Birincil oosit mayoz I'i tamamlayınca hangi iki hücre oluşur ve neden boyutları farklıdır?",
+   "answer": "Bir ikincil oosit ve küçük birinci kutup hücresi oluşur; bol sitoplazma döllenme potansiyeli için büyük hücrede korunur."
+  },
+  {
+   "after": 6,
+   "prompt": "İkincil oositte mayoz II'nin tamamlanmasını ne uyarır?",
+   "answer": "Spermle etkileşim ve döllenmenin başlattığı sinyaller uyarır; ardından büyük ovum ve küçük ikinci kutup hücresi oluşur."
+  },
+  {
+   "after": 9,
+   "prompt": "Erkekte LH ve FSH hangi testis hücreleriyle ilişkili görev yapar?",
+   "answer": "LH Leydig hücrelerinin testosteron üretimiyle, FSH ise Sertoli hücrelerinin desteğiyle ilişkilidir."
+  },
+  {
+   "after": 10,
+   "prompt": "Spermatogenez ile oogenezin başlama zamanı nasıl ayrılır?",
+   "answer": "Spermatogenez ergenlikle belirginleşip sürer; oogenez ise doğumdan önce başlar ve sınırlı bir folikül havuzuyla ilerler."
+  }
+ ],
+ "ureme-menstrual-dongu": [
+  {
+   "after": 1,
+   "prompt": "Menstrual döngünün birinci günü hangi olaya göre belirlenir?",
+   "answer": "Adet kanamasının başladığı gün döngünün birinci günü sayılır."
+  },
+  {
+   "after": 2,
+   "prompt": "FSH ve LH'nin yumurtalıktaki görevleri nasıl ayrılır?",
+   "answer": "FSH folikül gelişimini ve granüloza hücrelerinin işlevini destekler; LH steroid üretimine, ovulasyona ve luteal yapının oluşumuna katkı verir."
+  },
+  {
+   "after": 5,
+   "prompt": "Ovulasyonda yumurtalıktan hangi hücre ve hangi mayoz evresinde serbestleşir?",
+   "answer": "Metafaz II'deki ikincil oosit, çevresindeki bazı hücrelerle birlikte serbestleşir; bu döllenmiş bir zigot değildir."
+  },
+  {
+   "after": 6,
+   "prompt": "Ovulasyondan sonra korpus luteum hangi yapının dönüşümüyle oluşur?",
+   "answer": "Geride kalan folikül hücrelerinin LH etkisiyle dönüşmesiyle oluşur; özellikle progesteron üreten geçici bir endokrin yapıdır."
+  },
+  {
+   "after": 7,
+   "prompt": "Rahim döngüsünde çoğalma evresini ve salgı evresini hangi hormonlar yönlendirir?",
+   "answer": "Çoğalma evresinde östrojen doku yenilenmesini, ovulasyon sonrası salgı evresinde progesteron bez ve damar düzenini destekler."
+  },
+  {
+   "after": 9,
+   "prompt": "Erken gebelikte korpus luteumun sürmesine hangi sinyal yardım eder?",
+   "answer": "Trofoblast kökenli hCG sinyali yardım eder; böylece progesteron ve östrojen desteği erken dönemde korunur."
+  }
+ ],
+ "ureme-embriyonik-gelisim": [
+  {
+   "after": 1,
+   "prompt": "Döllenmede oositin etkinleşmesinden sonra ek sperm girişini sınırlamaya ne katkı verir?",
+   "answer": "Kalsiyum sinyalleriyle kortikal granüllerin içeriği boşalır ve hücre dışı örtüyü değiştirerek ek sperm girişini sınırlar."
+  },
+  {
+   "after": 2,
+   "prompt": "Eş zamanlı ve kayıpsız modelde zigot 5 bölünme turu geçirirse kaç blastomer oluşur?",
+   "answer": "Her tur hücre sayısını ikiye katladığından 2⁵ = 32 blastomer oluşur."
+  },
+  {
+   "after": 3,
+   "prompt": "Blastosistte trofoblast ile iç hücre kitlesi nasıl ayrılır?",
+   "answer": "Trofoblast dış hücre tabakasıdır; iç hücre kitlesi ise embriyonun kendisini oluşturacak hücrelerin temel kaynağıdır."
+  },
+  {
+   "after": 5,
+   "prompt": "Aynı DNA'yı taşıyan embriyo hücrelerinin farklı görevler edinmesi nasıl açıklanır?",
+   "answer": "Farklı kromozom sayısıyla değil, farklı gen ifadesi ve hücresel sinyallerle açıklanır."
+  },
+  {
+   "after": 7,
+   "prompt": "Apoptoz normal embriyonik şekillenmede nasıl bir rol üstlenir?",
+   "answer": "Bazı geçici hücre gruplarını programlı biçimde kaldırarak dokuların ayrılmasına ve biçim kazanmasına katkı verir."
+  },
+  {
+   "after": 9,
+   "prompt": "Plasentada fetal kan ve anne kanı hangi bölgelerde bulunur?",
+   "answer": "Fetal damarlar villusların içinde, anne kanı bunları çevreleyen aralıklarda bulunur; iki kan tek havuzda karışmaz."
+  },
+  {
+   "after": 11,
+   "prompt": "Fetal böbrekler idrar üretmeye ne zaman başlar ve bu idrar neye katkı verir?",
+   "answer": "İlk trimesterde başlar; ilerleyen evrelerde bu idrar amniyon sıvısına önemli katkı verir."
+  },
+  {
+   "after": 12,
+   "prompt": "Döllenmeden bu yana 30 hafta geçmişse klinik gebelik yaşı yaklaşık kaç haftadır?",
+   "answer": "Klinik yaş son âdet başlangıcından sayıldığı için yaklaşık iki hafta eklenir; sonuç yaklaşık 32 haftadır."
+  }
+ ],
+ "ekoloji-komunite": [
+  {
+   "after": 1,
+   "prompt": "Bir göldeki sazanların tümü ile o göldeki bütün canlılar arasındaki kavram farkı nedir?",
+   "answer": "Sazanların tümü tek türden bir popülasyondur; aynı alanda birlikte yaşayan farklı türlerin popülasyonları ise komüniteyi oluşturur."
+  },
+  {
+   "after": 3,
+   "prompt": "Derin denizde ışık az olduğu için çeşitlilik olmadığı sonucu neden yanlıştır?",
+   "answer": "Orada farklı enerji kaynaklarına dayanan topluluklar da bulunur; ışık tek belirleyici etmen değildir."
+  },
+  {
+   "after": 5,
+   "prompt": "Baskın tür ile kilit taşı tür arasındaki fark nedir?",
+   "answer": "Baskın tür sayı, biyokütle ya da alan gibi bir ölçütte öne çıkar; kilit taşı türün etkisi ise bolluğuna göre orantısız büyüktür."
+  },
+  {
+   "after": 6,
+   "prompt": "Yabancı bir türü istilacı saymak için ek olarak neye bakılır?",
+   "answer": "Türün yerleşip yayılmasına ve çevreye, ekonomiye ya da insan sağlığına zarar verip vermediğine bakılır."
+  },
+  {
+   "after": 8,
+   "prompt": "Kuşların ağacın farklı katlarında beslenmesi bir arada yaşamayı nasıl kolaylaştırır?",
+   "answer": "Kaynakları paylaşarak nişlerini ayrıştırırlar; böylece tam örtüşen nişlerden doğan rekabet dışlanması azalır."
+  },
+  {
+   "after": 9,
+   "prompt": "Karakter kaymasında kaynak kullanımına ilişkin özellik değişimi neden bilinçli bir karar değildir?",
+   "answer": "Değişim, farklı kaynakları daha iyi kullanan kalıtsal varyantların doğal seçilimle üreme başarısının artmasıyla kuşaklar boyunca oluşur."
+  },
+  {
+   "after": 10,
+   "prompt": "Bazı grafiklerde avcı sayısının tepesi neden av sayısını gecikmeli izler?",
+   "answer": "Av artınca avcının besini artar ve avcı sonra çoğalır; artan avcı baskısı da daha sonra av sayısını düşürür."
+  },
+  {
+   "after": 13,
+   "prompt": "Mikoriza ilişkisinde mantar ve bitki birbirine ne sağlar?",
+   "answer": "Mantar köke su ve mineral alımında katkı verir; bitki de mantara organik bileşik sağlar."
+  },
+  {
+   "after": 15,
+   "prompt": "Sıtmanın yayılmasında Plasmodium ile dişi Anopheles sivrisineğinin rolleri nasıl ayrılır?",
+   "answer": "Plasmodium hastalık etkeni olan ökaryotik parazittir; uygun dişi Anopheles sivrisineği ise etkeni taşıyan vektördür."
+  },
+  {
+   "after": 16,
+   "prompt": "Yarı parazit ve tam parazit bitkiler konaktan aldıkları madde bakımından nasıl ayrılır?",
+   "answer": "Yarı parazitler fotosentez yapar ve konaktan özellikle su ve mineral alır; tam parazitler organik maddeyi de konaktan sağlar."
+  }
+ ],
+ "ekoloji-populasyon": [
+  {
+   "after": 1,
+   "prompt": "90 birey 3 km² alanda yaşıyorsa ortalama yoğunluk kaçtır?",
+   "answer": "Yoğunluk N/A ile 90 / 3 = 30 birey/km² olur; bu her kilometrekarede kesin 30 birey olduğu anlamına gelmez."
+  },
+  {
+   "after": 3,
+   "prompt": "İlk yakalamada 40 birey işaretlenir; ikinci örnekte yakalanan 50 bireyin 10'u işaretliyse N kaç olarak tahmin edilir?",
+   "answer": "N ≈ M × C / R ile 40 × 50 / 10 = 200 birey olarak tahmin edilir."
+  },
+  {
+   "after": 6,
+   "prompt": "Doğumlar ölümlerden fazlayken bir alanın toplam birey sayısı nasıl azalabilir?",
+   "answer": "Dışa göç çok büyükse net göç olumlu doğal artışı aşar ve toplam sayı azalır."
+  },
+  {
+   "after": 8,
+   "prompt": "Tip I ve Tip III hayatta kalma eğrileri kayıpların yaşla dağılımına göre nasıl ayrılır?",
+   "answer": "Tip I'de erken ve orta yaşlarda yaşama yüksektir, ölüm ileri yaşta artar; Tip III'te erken kayıp fazladır, kalanlar daha uzun yaşayabilir."
+  },
+  {
+   "after": 10,
+   "prompt": "Taşıma kapasitesi K neden bir türün bütün ortamlarda sabit sayısı değildir?",
+   "answer": "K çevrenin besin, su, alan ve hastalık gibi koşullarına bağlıdır; kaynak artışı ya da habitat kaybıyla değişebilir."
+  },
+  {
+   "after": 11,
+   "prompt": "Basit lojistik modelde N = K olduğunda net anlık eğim kaçtır?",
+   "answer": "Eğim sıfırdır; çünkü rN(1 − N/K) ifadesinde 1 − N/K sıfır olur."
+  },
+  {
+   "after": 12,
+   "prompt": "Yoğunluğa bağlı düzenlemeye hangi etkenler örnek verilebilir?",
+   "answer": "Kalabalık arttıkça birey başına etkisi artan kaynak rekabeti, bazı hastalıklar ve parazit yayılımı örnektir."
+  }
+ ],
+ "nukleik-asitler-yapi": [
+  {
+   "after": 1,
+   "prompt": "Ribozu deoksiribozdan ayıran yapısal fark nedir?",
+   "answer": "Ribozun 2′ karbonunda hidroksil grubu bulunur; deoksiribozda bu konumda yalnız hidrojen vardır."
+  },
+  {
+   "after": 2,
+   "prompt": "Nükleik asit bazları halka yapısına göre hangi iki gruba ayrılır?",
+   "answer": "Adenin ve guanin çift halkalı pürinlerdir; sitozin, timin ve urasil tek halkalı pirimidinlerdir."
+  },
+  {
+   "after": 4,
+   "prompt": "Üst zincir 5′-GGTA-3′ ise karşı zincir kendi 5′→3′ yönünde nasıl yazılır?",
+   "answer": "Karşı zincir önce 3′-CCAT-5′ olarak eşlenir; kendi 5′→3′ yönünde yazılınca 5′-TACC-3′ olur."
+  },
+  {
+   "after": 6,
+   "prompt": "Çift zincirli DNA'da G bazlarının payı yüzde 15 ise A'nın payı yüzde kaçtır?",
+   "answer": "G = C = %15 olduğundan ikisi %30 eder; kalan %70 A ve T arasında eşit paylaşılır, A = %35 olur."
+  },
+  {
+   "after": 10,
+   "prompt": "Eşlenmiş bir kromozomun iki kardeş kromatidinde kaç DNA molekülü bulunur?",
+   "answer": "İki DNA molekülü bulunur; eşlenmemiş kromozom ise bir temel çift zincirli DNA molekülü taşır."
+  },
+  {
+   "after": 11,
+   "prompt": "Bakteride nükleoit ile plazmit arasındaki fark nedir?",
+   "answer": "Nükleoit temel kromozomal DNA'nın bulunduğu zarsız bölgedir; plazmit kromozomdan ayrı çoğalabilen küçük genetik elemandır."
+  },
+  {
+   "after": 13,
+   "prompt": "Aynı genomu taşıyan iki hücre neden farklı protein bileşimine sahip olabilir?",
+   "answer": "Gen ifadesi transkripsiyon miktarının yanında RNA kararlılığı ve çeviri denetimiyle de düzenlenir."
+  },
+  {
+   "after": 14,
+   "prompt": "RNA genomlu virüsler RNA ile ilgili hangi genellemenin yanlış olduğunu gösterir?",
+   "answer": "RNA'nın hiçbir bağlamda kalıtsal bilgi taşıyamayacağı ve kopyalanamayacağı genellemesinin yanlış olduğunu gösterir."
+  }
  ]
 }
