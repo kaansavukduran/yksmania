@@ -1,0 +1,222 @@
+{
+ "atp-metabolizma": [
+  {
+   "after": 1,
+   "prompt": "ATP sentezi yönündeki eşitlikte enerji ve su hangi taraflarda yer alır?",
+   "answer": "ADP+Pi+enerji→ATP+H₂O yazılır; enerji girenler tarafında, su ise ürünler tarafındadır."
+  },
+  {
+   "after": 3,
+   "prompt": "Ekzergonik bir tepkimenin hızlı olacağı neden söylenemez?",
+   "answer": "Hız aktivasyon enerjisine ve enzimlere bağlıdır; serbest enerjinin açığa çıkması tek başına hızı belirlemez."
+  },
+  {
+   "after": 4,
+   "prompt": "Substrat düzeyinde fosforilasyonu ETS’ye dayalı ATP sentezinden ayıran özellik nedir?",
+   "answer": "Fosfat, fosfatlı organik ara üründen doğrudan ADP’ye aktarılır; proton gradyanı ve ATP sentaz gerekmez."
+  },
+  {
+   "after": 5,
+   "prompt": "Ökaryotik oksijenli solunumda proton gradyanı hangi zar boyunca kurulur?",
+   "answer": "Mitokondrinin iç zarı boyunca kurulur; prokaryotlarda bu işi hücre zarındaki düzenekler yapabilir."
+  }
+ ],
+ "dna-eslenmesi": [
+  {
+   "after": 1,
+   "prompt": "Yarı korunumlu modelde bir tur eşlenmeden sonra her DNA molekülü hangi zincirleri taşır?",
+   "answer": "Her molekül bir atasal (eski) zincir ile bir yeni sentezlenmiş zincir taşır."
+  },
+  {
+   "after": 2,
+   "prompt": "Üst zincir 5′–GGAT–3′ ise karşı zincirin 5′→3′ yönündeki dizisi nedir?",
+   "answer": "Hizada 3′–CCTA–5′ yazılır; tersinden 5′→3′ okununca 5′–ATCC–3′ olur."
+  },
+  {
+   "after": 4,
+   "prompt": "Kesintili sentezde oluşan kısa DNA parçalarına ne ad verilir ve sonra ne gerekir?",
+   "answer": "Okazaki parçaları denir; bu parçaların sonradan birleştirilmesi gerekir."
+  },
+  {
+   "after": 6,
+   "prompt": "Kayıpsız 3 eşlenme turundan sonra tek başlangıç DNA’sından oluşan moleküllerde melez oranı kaç olur?",
+   "answer": "2³=8 molekül oluşur; eski zinciri taşıyan 2 melez molekül olduğundan oran 2/8=1/4 olur."
+  },
+  {
+   "after": 8,
+   "prompt": "Açılmış tek zincirlere bağlanan SSB ve RPA gibi proteinler ne işe yarar?",
+   "answer": "Tek zincirlerin kendi üzerine katlanmasını ya da istenmeden yeniden eşleşmesini sınırlamaya yardım eder."
+  },
+  {
+   "after": 11,
+   "prompt": "Ortada tek orijin olan 600 000 baz çiftlik bölgede her çatal saniyede 1000 baz çifti ilerlerse eşlenme kaç saniye sürer?",
+   "answer": "Süre L/(2v)=600 000/(2·1000)=300 saniye olur."
+  },
+  {
+   "after": 13,
+   "prompt": "İlk turdaki tek ara yoğunluk bandı hangi modeli desteklemez, hangi ayrımı tek başına yapamaz?",
+   "answer": "Korunumlu modeli desteklemez; yarı korunumlu model ile bazı dağılımlı model beklentilerini tek başına ayıramaz."
+  },
+  {
+   "after": 15,
+   "prompt": "Aziz Sancar’ın bilimsel katkıları hangi süreçle ilişkilidir?",
+   "answer": "DNA onarımıyla, özellikle nükleotit çıkarım onarımının mekanizmalarıyla ilişkilidir; eşlenmenin keşfiyle değil."
+  }
+ ],
+ "bitkilerde-dollenme-cimlenme": [
+  {
+   "after": 1,
+   "prompt": "Polen tüpünü büyüten yapı nedir ve tüp çekirdeğiyle neden karıştırılmamalıdır?",
+   "answer": "Tüpü polenin vejetatif hücresi geliştirir; tüp çekirdeği bu hücrenin bir organelidir, hücrenin kendisi değildir."
+  },
+  {
+   "after": 4,
+   "prompt": "Zigot hangi süreçlerle embriyoya dönüşür?",
+   "answer": "Mitoz, büyüme ve farklılaşmayla embriyoyu verir; embriyonik kök, sürgün ve çenekler bu yeni sporofitin parçalarıdır."
+  },
+  {
+   "after": 7,
+   "prompt": "Anne ve baba Aa iken yumurta a, sperm A taşırsa endosperm genotipi ne olur?",
+   "answer": "Polar çekirdekler yumurtayla aynı megaspordan mitozla geldiği için a taşır; endosperm aaA, embriyo ise Aa olur."
+  },
+  {
+   "after": 11,
+   "prompt": "Besini olan ama embriyosu ölmüş bir tohum neden su verilerek çimlendirilemez?",
+   "answer": "Çimlenme için canlı embriyo ve uygun gelişim programı gerekir; depo besin ve su tek başına yetmez."
+  },
+  {
+   "after": 12,
+   "prompt": "Bir meyvenin bulunması neden her zaman döllenme gerçekleştiğinin kanıtı sayılmaz?",
+   "answer": "Partenokarpiyle döllenme olmadan da meyve gelişebilir."
+  },
+  {
+   "after": 13,
+   "prompt": "Böğürtlen ile ananası meyve türü bakımından ayıran ölçüt nedir?",
+   "answer": "Böğürtlen tek çiçeğin birden çok yumurtalığından küme meyve, ananas birçok çiçeğin yumurtalıklarından bileşik meyve olarak gelişir."
+  },
+  {
+   "after": 16,
+   "prompt": "Kuru tohumun ilk su alımında hangi süreç önemlidir ve ardından ne başlar?",
+   "answer": "İmbibisyon önemlidir; suyu bağlayan yapılar şişer, ardından hidratasyon, enzim etkinleşmesi ve depo mobilizasyonu başlar."
+  },
+  {
+   "after": 17,
+   "prompt": "Suya doymuş bir ortam çimlenmeyi neden sınırlayabilir?",
+   "answer": "Gaz iletimini azaltıp oksijen yetersizliği yaratır; embriyo ATP’yi büyük ölçüde depo maddelerin solunumuyla karşılar."
+  },
+  {
+   "after": 20,
+   "prompt": "Absisik asit ile giberellinin tohumdaki etkileri nasıl ayrılır?",
+   "answer": "Absisik asit olgunlaşmaya ve dormansinin sürmesine, giberellin ise uygun bağlamda çimlenmenin uyarılmasına katkı verir."
+  },
+  {
+   "after": 21,
+   "prompt": "Olağan çimlenmede kabuktan ilk çıkan yapı hangisidir?",
+   "answer": "Radikula, yani embriyonik köktür; ardından sürgün ve yapraklar gelişir."
+  }
+ ],
+ "canlilar-ve-cevre": [
+  {
+   "after": 2,
+   "prompt": "Bir özellikte çevre etkisi görülmesi neden genetik bileşen olmadığını göstermez?",
+   "answer": "Fenotip genetik farkların, çevrenin ve ikisinin etkileşiminin ürünüdür; çevre etkisi genetik katkıyı dışlamaz."
+  },
+  {
+   "after": 5,
+   "prompt": "İki hattın verim sıralamasının ortam değişince tersine dönmesi neyin örneğidir?",
+   "answer": "Genotip-çevre etkileşiminin; iki genotip çevreye aynı eğimle yanıt vermek zorunda değildir."
+  },
+  {
+   "after": 6,
+   "prompt": "Antrenmanla kazanılan kas gelişiminin çocuğa DNA aleli olarak geçmesi neden beklenmez?",
+   "answer": "Bu, çevreye verilen bir fenotip yanıtıdır; DNA dizisi değişmeden gelişim ve gen işleyişi değişebilir."
+  },
+  {
+   "after": 8,
+   "prompt": "Hücrede geçici olarak değişen RNA miktarı neden genom mutasyonu sayılmaz?",
+   "answer": "Mutasyon genomdaki DNA dizisinde ya da kromozom yapısı veya sayısında kalıcı değişikliktir; geçici RNA değişimi bu kapsama girmez."
+  },
+  {
+   "after": 10,
+   "prompt": "Antimikrobiyal ortamda avantaj sağlayan direnç, madde yokken neden dezavantaj olabilir?",
+   "answer": "Direnç büyüme maliyeti taşıyabilir; yararlılık o çevredeki yaşam ve üreme katkısına göre değerlendirilir."
+  },
+  {
+   "after": 13,
+   "prompt": "Seçilimde yalnız hayatta kalma oranına bakmak neden yetersizdir?",
+   "answer": "Genetik katkıyı üreme belirler; uzun yaşayıp üremeyen birey, kısa yaşayıp çok yavru verenden daha az katkı sağlayabilir."
+  },
+  {
+   "after": 15,
+   "prompt": "Dirençliler 50’den 40’a, duyarlılar 450’den 60’a düşerse dirençlilerin payı yüzde kaç olur?",
+   "answer": "Başta pay 50/500=%10’dur; sonda toplam 100 birey içinde 40 dirençli olduğundan pay %40’a çıkar."
+  },
+  {
+   "after": 17,
+   "prompt": "Plazmit aracılı gen aktarımı seçilimden hangi yönüyle ayrılır?",
+   "answer": "Aktarım mevcut bir direnç geninin başka hücreye geçmesidir; seçilim ise direnç taşıyanların daha çok üremesidir."
+  },
+  {
+   "after": 18,
+   "prompt": "Bir pestisidin etkinliğinin düşmesi neden tek başına direnç kanıtı sayılmaz?",
+   "answer": "Uygulama biçimi, çevre koşulları ve hedefin yaşam evresi de etkinliği düşürebilir."
+  },
+  {
+   "after": 21,
+   "prompt": "Yüksek verim için seçim yapmak neden kuraklığa dayanıklılığı garanti etmez?",
+   "answer": "Özellikler arasında ödünleşim olabilir; bir hedefe göre seçim diğer özellikleri kendiliğinden iyileştirmez, çeşitliliği de azaltabilir."
+  },
+  {
+   "after": 22,
+   "prompt": "Aşılamada kalem takılan anacın genotipi neden değişmez?",
+   "answer": "Kalem ve anaç kendi doku kökenlerini korur; anaç dokusu kalemin genotipine dönüşmez."
+  }
+ ],
+ "ayt-govde-yapisi": [
+  {
+   "after": 1,
+   "prompt": "Bir kesitte ksilem görülmesi organın gövde olduğunu neden kanıtlamaz?",
+   "answer": "Kök ve yaprakta da iletim dokusu bulunur; organı birden çok yapısal kanıtla tanımalısın."
+  },
+  {
+   "after": 2,
+   "prompt": "Genç ve yeşil gövde hücreleri hangi koşulda fotosenteze katılabilir?",
+   "answer": "Kloroplast taşıyorlarsa katılabilir; her gövde bütünüyle odunsu ya da fotosentezsiz değildir."
+  },
+  {
+   "after": 4,
+   "prompt": "Tomurcuk dormansisi ile apikal baskınlık arasındaki fark nedir?",
+   "answer": "Dormansi tomurcuğun mevsimsel olarak etkin olmamasıdır; apikal baskınlık ise tepe sürgününün yanal tomurcuk gelişimini baskılamasıdır."
+  },
+  {
+   "after": 6,
+   "prompt": "Tipik tek çenekli gövdeye çift çenekliye özgü sekonder kalınlaşma modeli neden aynı biçimde uygulanmaz?",
+   "answer": "Dağınık iletim demetlerinde olağan vasküler kambiyum bulunmaz."
+  },
+  {
+   "after": 8,
+   "prompt": "Sürgün uzarken çapın değişmemesi hangi büyüme türünü gösterir?",
+   "answer": "Primer büyümeyi; uç meristemlerinin oluşturduğu birincil dokularla organ boyca gelişir."
+  },
+  {
+   "after": 10,
+   "prompt": "Periderm hangi meristemden gelişir ve neden gerekir?",
+   "answer": "Mantar kambiyumundan gelişir; kalınlaşan gövdede epidermis genişleyen yüzeyi tek başına örtemediği için yeni koruyucu örtü kurar."
+  },
+  {
+   "after": 12,
+   "prompt": "Odundaki bütün hücrelerin ölü olduğu neden söylenemez?",
+   "answer": "Olgun trake ve trakeitler canlı içeriğini kaybetmiştir, ama odunda canlı parankima hücreleri de bulunur."
+  },
+  {
+   "after": 13,
+   "prompt": "Kaktüsün su depolayan ekseni ile havucun şişkin bölümü neden aynı sınıfa konmaz?",
+   "answer": "Kaktüs ekseni gövde, havucun şişkin bölümü kök kökenlidir; benzer depolama işlevi farklı kökenlerde gelişebilir."
+  },
+  {
+   "after": 14,
+   "prompt": "Vegetatif yolla çoğalan bireyler genetik bakımdan neden genellikle aynıdır?",
+   "answer": "Ana bitkiden mitozla oluşan dokulardan gelişirler; yine de mutasyon olasılığı ayrıca vardır."
+  }
+ ]
+}

@@ -1111,5 +1111,514 @@
    "prompt": "Bromo ve kloro dalları iki yönde de 2 ve 5 konumundaysa hangisi küçük numarayı alır?",
    "answer": "Alfabetik önce gelen bromo küçük numarayı alır; ad 2-bromo-5-klorohekzan olur."
   }
+ ],
+ "cozunurluk-faktorleri": [
+  {
+   "after": 1,
+   "prompt": "MX₂ tuzu saf suda s mol/L çözünürse Kç bağıntısı s cinsinden nasıl yazılır?",
+   "answer": "İyon derişimleri s ve 2s olduğundan Kç≈s(2s)²=4s³ olur; MX için kullanılan s² burada geçmez."
+  },
+  {
+   "after": 4,
+   "prompt": "2 L çözeltide 0,06 mol tuz çözünmüşken yeni sıcaklıkta s=0,01 mol/L olursa kaç mol katı ayrılır?",
+   "answer": "Yeni kapasite 0,01·2=0,02 mol olduğundan, başka kayıp yoksa 0,06−0,02=0,04 mol katı ayrılır."
+  },
+  {
+   "after": 6,
+   "prompt": "MX dengesine dışarıdan M⁺ ortak iyonu eklenince hangi iyonun derişimi azalır?",
+   "answer": "Ortamın toplam M⁺ derişimi artabilirken MX’den gelen X⁻ derişimi azalır; bütün iyonlar azalmaz."
+  },
+  {
+   "after": 8,
+   "prompt": "Q<Kç olduğu hâlde ortam neden doymamış kalabilir?",
+   "answer": "Eldeki katı azsa tamamı çözünüp biter; doygunluk kapasitesine ulaşmak için eksik tuz kendiliğinden oluşmaz."
+  },
+  {
+   "after": 10,
+   "prompt": "Eşit sürede daha çok madde çözünmesi neden daha büyük denge çözünürlüğünü kanıtlamaz?",
+   "answer": "İlk kap henüz doymamış olabilir; hız ile denge ayrıdır, yeterli süre ve kalan katı ayrıca denetlenmelidir."
+  },
+  {
+   "after": 12,
+   "prompt": "Bir ligand metal iyonunu kompleks içinde tutarsa toplam ve serbest metal iyonu nasıl değişebilir?",
+   "answer": "Toplam çözünmüş metal artarken serbest metal iyonu azalabilir; Kç serbest iyonlara aittir."
+  }
+ ],
+ "redoks-denklestirme": [
+  {
+   "after": 2,
+   "prompt": "OF₂ bileşiğinde oksijenin yükseltgenme basamağı neden +2 çıkar?",
+   "answer": "Flor bileşiklerinde −1 alınır; iki F toplam −2 verdiğinden nötr bileşikte O=+2 olur."
+  },
+  {
+   "after": 4,
+   "prompt": "NH₄⁺ iyonunda azotun yükseltgenme basamağı kaçtır?",
+   "answer": "x+4(+1)=+1 eşitliğinden N=−3 bulunur."
+  },
+  {
+   "after": 6,
+   "prompt": "Ag⁺+Cl⁻ → AgCl çökelmesi neden redoks sayılmaz?",
+   "answer": "Hiçbir elementin yükseltgenme basamağı değişmez; katı oluşması tek başına redoks kanıtı değildir."
+  },
+  {
+   "after": 8,
+   "prompt": "2 H₂O₂ → 2 H₂O+O₂ ayrışmasında −1 basamaklı oksijen hangi basamaklara geçer?",
+   "answer": "Bir bölümü −2’ye inerek indirgenir, bir bölümü 0’a çıkarak yükseltgenir."
+  },
+  {
+   "after": 10,
+   "prompt": "C+HNO₃ → CO₂+NO+H₂O denkleştirmesinde C’ye ve NO’ya hangi katsayılar gelir?",
+   "answer": "C 4 e⁻ verir, N 3 e⁻ alır; ortak kat 12 için C’ye 3, NO’ya 4 gelir."
+  },
+  {
+   "after": 12,
+   "prompt": "Yarı tepkimeler toplanırken iki tarafta görünen su, H⁺ ya da OH⁻ hangi kurala göre sadeleşir?",
+   "answer": "Ancak iki taraftaki eşit miktarları kadar sadeleşir; fazla kalan miktar bulunduğu tarafta kalır."
+  },
+  {
+   "after": 14,
+   "prompt": "Permanganat asidik ortamda Mn²⁺, bazik ortamda MnO₂ verirken kaçar elektron alır?",
+   "answer": "Asidik örnekte 5, bazik örnekte 3 elektron alır; bu yüzden ürün ve ortam önce belirlenmelidir."
+  }
+ ],
+ "metalik-aktiflik": [
+  {
+   "after": 1,
+   "prompt": "Zn²⁺/Zn için −0,763 V verilmişse Zn → Zn²⁺+2 e⁻ yönü için hangi değer kullanılır?",
+   "answer": "Yön ters çevrildiğinde işaret değişir; yükseltgenme yönü için +0,763 V kullanılır."
+  },
+  {
+   "after": 3,
+   "prompt": "Standart hidrojen elektrodunda H⁺/H₂ çiftinin değeri neden 0 V alınır?",
+   "answer": "Tek elektrot potansiyeli bağımsız ölçülemediğinden yarı hücreler bir referansla kıyaslanır; bu çiftin değeri tanım gereği 0 V seçilir."
+  },
+  {
+   "after": 5,
+   "prompt": "E°(Cr³⁺/Cr)=−0,744 V ve E°(Pb²⁺/Pb)=−0,126 V ise 2 Cr+3 Pb²⁺ tepkimesinin E° değeri kaçtır?",
+   "answer": "Pb²⁺ alıcı, Cr verici olduğundan E°=−0,126−(−0,744)=+0,618 V olur."
+  },
+  {
+   "after": 7,
+   "prompt": "Zn kapta Ag⁺ çözeltisi bulunursa kap metali neden aşınabilir?",
+   "answer": "Zn elektron verip Zn²⁺ olarak çözeltiye geçerken Ag⁺ elektron alıp metal olarak yüzeye ayrılabilir."
+  },
+  {
+   "after": 9,
+   "prompt": "Cu, derişik ve seyreltik nitrik asitle tepkimeye girince hangi gazlar oluşur?",
+   "answer": "Derişik HNO₃ ile NO₂, seyreltik HNO₃ ile NO oluşur; elektronu H⁺ değil nitratın N’si alır."
+  },
+  {
+   "after": 10,
+   "prompt": "Bir metalin amfoter sayılması için asitle tepkimenin yanında hangi davranış da gerekir?",
+   "answer": "Uygun koşulda kuvvetli bazla da tepkime vermesi gerekir; yalnız asitle H₂ vermek yetmez."
+  },
+  {
+   "after": 13,
+   "prompt": "1 mol Zn için 2 mol H⁺ gerekiyorsa aktif metale rağmen bütün Zn neden tükenmeyebilir?",
+   "answer": "Asit yetersizse sınırlayıcı olur; ne kadar metalin tükeneceğini aktiflik değil mol bütçesi belirler."
+  }
+ ],
+ "ayt-denge-basinc-hacim": [
+  {
+   "after": 1,
+   "prompt": "Hacim küçülüp bütün kısmi basınçlar f katına çıkınca AB ⇌ A+B için Qp kaç katına çıkar?",
+   "answer": "Qp=pA·pB/pAB olduğundan f²/f=f katına çıkar; Kp sabit kaldığı için geri yönde net dönüşüm olur."
+  },
+  {
+   "after": 3,
+   "prompt": "300 K’de 24,6 L kapta 1 mol gazın hacmi 12,3 L’ye inince ilk kısmi basıncı kaç atm olur?",
+   "answer": "Mol miktarı ilk anda değişmez; p=1·0,082·300/12,3=2 atm olur."
+  },
+  {
+   "after": 5,
+   "prompt": "Sabit sıcaklıkta hacim iki katına çıkınca AB ⇌ A+B dengesi hangi yönde net dönüşüm yapar?",
+   "answer": "Qp, Kp’nin yarısına düşer; ileri yönde AB tüketilip A ve B oluşarak oran yeniden yükselir."
+  },
+  {
+   "after": 7,
+   "prompt": "300 K’de 1’er mol AB, A ve B içeren karışımın hacmi 41 L olursa her türün kısmi basıncı kaç atm olur?",
+   "answer": "p=1·0,082·300/41=0,6 atm olur; böylece Qp de 0,6 atm’e düşer."
+  },
+  {
+   "after": 9,
+   "prompt": "A(g) ⇌ B(g) gibi Δn gaz=0 olan dengede izotermal sıkıştırma bileşimi neden değiştirmez?",
+   "answer": "Bütün kısmi basınçlar aynı sayıyla ölçeklendiğinden pB/pA oranı, dolayısıyla Qp değişmez."
+  },
+  {
+   "after": 10,
+   "prompt": "NH₄Cl(k) ⇌ NH₃(g)+HCl(g) dengesi sıkıştırılınca hangi yönde net dönüşüm olabilir?",
+   "answer": "Gazların basınç çarpımı arttığından katı oluşumu yönünde, yani geri yönde net dönüşüm olabilir."
+  }
+ ],
+ "ayt-sulu-asit-baz-denge": [
+  {
+   "after": 1,
+   "prompt": "Çok saf suyun küçük de olsa elektrik iletmesinin nedeni nedir?",
+   "answer": "Küçük bir bölümü proton aktarımıyla H₃O⁺ ve OH⁻ iyonlarına dönüşür; bu iyonlar elektrik alanda hareket eder."
+  },
+  {
+   "after": 3,
+   "prompt": "[H₃O⁺]=3×10⁻⁶ M olan çözeltinin pH değeri yaklaşık kaçtır?",
+   "answer": "pH=6−log3≈5,523 olur; katsayıyı yok sayıp tam 6 demek hatalıdır."
+  },
+  {
+   "after": 4,
+   "prompt": "25 °C’de pH değeri 4,5 olan çözeltinin pOH değeri kaçtır?",
+   "answer": "pH+pOH=pKw=14 olduğundan pOH=9,5 olur."
+  },
+  {
+   "after": 6,
+   "prompt": "0,010 M HCl çözeltisinde H₃O⁺≈c yaklaşımı neden kullanılabilir?",
+   "answer": "Asit derişimi suyun 10⁻⁷ M düzeyindeki katkısından çok büyüktür; böylece pH yaklaşık 2 bulunur."
+  },
+  {
+   "after": 8,
+   "prompt": "25 °C’de 0,020 M KOH çözeltisinin pH değeri yaklaşık kaçtır?",
+   "answer": "[OH⁻]≈0,020 M olduğundan pOH≈1,699 ve pH≈14−1,699=12,301 olur."
+  },
+  {
+   "after": 10,
+   "prompt": "NH₃’ün BF₃’e elektron çifti verdiği etkileşimde Lewis asidi hangisidir?",
+   "answer": "Elektron çiftini alan BF₃ Lewis asidi, çifti veren NH₃ Lewis bazıdır."
+  }
+ ],
+ "ayt-zayif-asit-baz-tampon": [
+  {
+   "after": 2,
+   "prompt": "Başlangıç derişimi C olan HA çözeltisinde denge tablosu hangi Ka bağıntısını verir?",
+   "answer": "HA için C−x, A⁻ ve H₃O⁺ için x yazılır; böylece Ka=x²/(C−x) olur."
+  },
+  {
+   "after": 4,
+   "prompt": "Seyreltilen zayıf asitte iyonlaşma yüzdesi artarken H₃O⁺ derişimi neden azalabilir?",
+   "answer": "Yüzde bir oran, H₃O⁺ ise hacim başına miktardır; analitik C azaldığı için iki sonuç çelişmez."
+  },
+  {
+   "after": 5,
+   "prompt": "NH₃ çözeltisinde Kb’den bulunan x değerinden pH’a nasıl geçilir?",
+   "answer": "x, OH⁻ derişimidir; önce pOH=−log x, sonra pH=pKw−pOH hesaplanır."
+  },
+  {
+   "after": 7,
+   "prompt": "Tampona H₃O⁺ eklenince onu hangi bileşen tüketir?",
+   "answer": "A⁻ tüketir; A⁻+H₃O⁺→HA+H₂O dönüşümüyle HA ve su oluşur."
+  },
+  {
+   "after": 9,
+   "prompt": "[A⁻]/[HA] oranı 10 olan tamponun pH değeri pKa’ya göre nerededir?",
+   "answer": "pH=pKa+log10 olduğundan pH, pKa’dan yaklaşık bir birim yüksektir."
+  }
+ ],
+ "ayt-hidroliz": [
+  {
+   "after": 2,
+   "prompt": "Asetatın Kb değeri asetik asidin Ka değerinden nasıl bulunur?",
+   "answer": "Aynı sıcaklıkta Kb=Kw/Ka bağıntısıyla bulunur; Ka doğrudan OH⁻ denklemine konmaz."
+  },
+  {
+   "after": 4,
+   "prompt": "x≈√(K·C) kestiriminde bulunan x, asetat çözeltisinde hangi iyonun derişimidir?",
+   "answer": "Asetatta x yaklaşık OH⁻ derişimidir; amonyum çözeltisinde ise yaklaşık H₃O⁺ derişimini verir."
+  },
+  {
+   "after": 6,
+   "prompt": "Asetat ailesi için kütle denkliği nasıl yazılır?",
+   "answer": "[CH₃COO⁻]+[CH₃COOH]=C yazılır; toplam analitik derişim yalnız yüklü türün derişimine eşit olmak zorunda değildir."
+  },
+  {
+   "after": 8,
+   "prompt": "[Al(H₂O)₆]³⁺ iyonu, metal üzerinde H olmadığı hâlde nasıl asitlik gösterir?",
+   "answer": "Metale bağlı su molekülleri proton verir; bir hidroksi ligandı ve H₃O⁺ oluşur."
+  },
+  {
+   "after": 10,
+   "prompt": "Zayıf asit ile güçlü bazdan türeyen tuz çoğu basit örnekte hangi tür iyon verir?",
+   "answer": "Bazik anyon verir ve çözelti bazik olur; güçlü asit ile zayıf bazdan türeyen tuzda ise asidik katyon beklenir."
+  }
+ ],
+ "ayt-notrallesme": [
+  {
+   "after": 1,
+   "prompt": "Hidronyumlu yazımda iki su görünse de nötrleşme ısısı neden iki kat sayılmaz?",
+   "answer": "Molar nötrleşme ısısı tüketilen bir mol H⁺/OH⁻ çiftine, yani bir mol net su oluşumuna göre tanımlanır."
+  },
+  {
+   "after": 3,
+   "prompt": "0,100 M Ba(OH)₂ çözeltisinin 50 mL’si kaç mol OH⁻ eşdeğeri verir?",
+   "answer": "0,100·0,050=0,00500 mol baz vardır; her biri iki OH⁻ verdiğinden 0,0100 mol OH⁻ eşdeğeri olur."
+  },
+  {
+   "after": 5,
+   "prompt": "0,0100 mol H⁺ ile 0,0120 mol OH⁻ toplam 0,160 L’de karışırsa son OH⁻ derişimi kaç M olur?",
+   "answer": "Artan 0,00200 mol OH⁻ toplam hacme bölünür: 0,00200/0,160=0,0125 M olur."
+  },
+  {
+   "after": 7,
+   "prompt": "HCl ve Ba(OH)₂ karışımının yük bütçesinde Ba²⁺ derişimi neden 2 ile çarpılır?",
+   "answer": "Her Ba²⁺ iki birim artı yük taşır; bütçe [H₃O⁺]+2[Ba²⁺]=[OH⁻]+[Cl⁻] biçiminde kurulur."
+  },
+  {
+   "after": 8,
+   "prompt": "−57,3 kJ/mol verisiyle 0,0100 mol net su oluşan nötrleşmede qP kaç kJ olur?",
+   "answer": "qP=n·ΔH=0,0100·(−57,3)=−0,573 kJ olur; sistem 0,573 kJ enerji verir."
+  },
+  {
+   "after": 10,
+   "prompt": "HCl ile NaOH arasındaki tepkime neden redoks sayılmaz?",
+   "answer": "Bu proton aktarımında hiçbir türün yükseltgenme basamağı değişmez."
+  }
+ ],
+ "ayt-titrasyon": [
+  {
+   "after": 1,
+   "prompt": "Titrasyonda harcanan titrant hacmi büretten nasıl bulunur?",
+   "answer": "Son okuma ile ilk okuma arasındaki farktır; okumanın sıfırdan başlaması gerekmez."
+  },
+  {
+   "after": 3,
+   "prompt": "100 mL 0,100 M tek protonlu asit, 0,100 M NaOH ile titre edilirse eşdeğerlik hacmi kaç mL olur?",
+   "answer": "Asit 0,0100 mol olduğundan aynı molü sağlayan 0,100 M NaOH hacmi 100 mL’dir."
+  },
+  {
+   "after": 5,
+   "prompt": "Zayıf asit titrasyonunun tampon bölgesinde pH hangi bağıntıyla kestirilir?",
+   "answer": "pH≈pKa+log(nA/nHA) kullanılır; iki tür aynı son hacimde olduğundan hacim oranda sadeleşir."
+  },
+  {
+   "after": 7,
+   "prompt": "Zayıf asidin eşdeğerliğinde A⁻ derişimi hesaplanırken ilk 100 mL’yi kullanmak neden hatalıdır?",
+   "answer": "A⁻ molü toplam hacme bölünmelidir; yalnız ilk 100 mL’yi kullanmak derişimi iki kat büyütür."
+  },
+  {
+   "after": 9,
+   "prompt": "Zayıf asit-güçlü baz titrasyonunda indikatörün geçiş aralığı nereye denk gelmelidir?",
+   "answer": "Eşdeğerlik çevresindeki dik bölgeye; bu eşdeğerlik bazik olduğundan nötr çevresindeki her indikatör eşit uygun değildir."
+  },
+  {
+   "after": 10,
+   "prompt": "Önceden seyreltilmiş örnekte cA·VA=cB·VB ile bulunan derişim neyin derişimidir?",
+   "answer": "Titrasyon kabındaki çözeltinin derişimidir; başlangıç örneğine seyreltme oranıyla dönülür."
+  }
+ ],
+ "ayt-cozunurluk-dengesi": [
+  {
+   "after": 1,
+   "prompt": "Kç ifadesinde iyonların üsleri neye göre belirlenir?",
+   "answer": "Çözünme denklemindeki katsayılara göre belirlenir; iyonun elektriksel yükü üs olarak alınmaz."
+  },
+  {
+   "after": 3,
+   "prompt": "A₂B₃ tuzu saf suda s mol/L çözünürse Kç bağıntısı nedir?",
+   "answer": "İyon derişimleri 2s ve 3s olduğundan Kç=(2s)²(3s)³=108s⁵ olur."
+  },
+  {
+   "after": 4,
+   "prompt": "Molar çözünürlük s, son hacim V ve molar kütle M verilirse çözünen kütle nasıl bulunur?",
+   "answer": "Önce çözünen mol sV, sonra kütle m=sVM olarak bulunur."
+  },
+  {
+   "after": 6,
+   "prompt": "Ortak F⁻ derişimi c olan ortamda CaF₂ çözünürlüğü hangi bağıntıyla bulunur?",
+   "answer": "Kç=s(c+2s)² çözülür; AgCl için kullanılan karekök kısayolu doğrudan taşınmaz."
+  },
+  {
+   "after": 8,
+   "prompt": "Başta Ag⁺ derişimi a, Cl⁻ derişimi b ve b>a ise AgCl çöktükten sonra iki iyon nasıl ilişkilidir?",
+   "answer": "İyonlar bire bir azaldığından Cl⁻=Ag⁺+(b−a) olur; kalan Ag⁺ küçük ama sıfır değildir."
+  },
+  {
+   "after": 10,
+   "prompt": "Ortak Cl⁻ için kullanılan NaCl’deki Na⁺ Kç’ye girmediği hâlde nerede hesaba alınır?",
+   "answer": "Seyirci Na⁺ toplam yük denkliğinde yer alır; çözünürlük çarpımına girmez."
+  }
+ ],
+ "ayt-molalite-koligatif": [
+  {
+   "after": 1,
+   "prompt": "Molarite sıcaklığa bağlıyken molalite neden hacim genişlemesinden etkilenmez?",
+   "answer": "Molalite çözücü kütlesine dayanır; tepkime ve kayıp yoksa kütle ve mol değişmez, oysa hacim sıcaklıkla değişir."
+  },
+  {
+   "after": 3,
+   "prompt": "İdeal tam ayrışmada 1 mol MX₂ kaç mol etkin tanecik verir?",
+   "answer": "Bir M iyonu ve iki X iyonu verdiğinden 3 mol iyon oluşur."
+  },
+  {
+   "after": 5,
+   "prompt": "İdeal A–B karışımında iki bileşen de uçucuysa toplam buhar basıncı nasıl bulunur?",
+   "answer": "PA=XA·PA° ve PB=XB·PB° hesaplanıp toplanır; uçucu çözünenin katkısı sıfırlanmaz."
+  },
+  {
+   "after": 6,
+   "prompt": "Uçucu olmayan çözünen kaynamaya başlama sıcaklığını neden yükseltir?",
+   "answer": "Buhar basıncını düşürdüğünden, toplam buhar basıncının dış basınca ulaşması için daha yüksek sıcaklık gerekir."
+  },
+  {
+   "after": 8,
+   "prompt": "π=iMRT ile ozmotik basınç hesaplanırken molalite neden M yerine konmaz?",
+   "answer": "Bağıntı son çözelti molaritesiyle kurulur; hacim bilgisi olmadan molalite molarite yerine geçmez."
+  }
+ ],
+ "ayt-cozunurluk": [
+  {
+   "after": 1,
+   "prompt": "S=20 g/100 g su olan madde için 250 g suyun çözme kapasitesi kaç gramdır?",
+   "answer": "Kapasite 250×20/100=50 g olur."
+  },
+  {
+   "after": 3,
+   "prompt": "Aşırı doymuş bir sıvı neden metastabil sayılır?",
+   "answer": "Çekirdeklenme geciktiği için sınırdan fazla madde çözünmüş kalır; çekirdek oluşunca fazlalık kristallenebilir."
+  },
+  {
+   "after": 5,
+   "prompt": "Soğutmada kristal su içeren hidrat oluşursa hesapta neye ayrıca dikkat edilir?",
+   "answer": "Suyun da katı faza geçebileceği hesaplanmalıdır; bu bilgi verilmeden sade model hidrata genişletilmez."
+  },
+  {
+   "after": 6,
+   "prompt": "Aynı sıcaklıkta su miktarı iki katına çıkarılırsa çözünürlük S ve toplam kapasite nasıl değişir?",
+   "answer": "S aynı kalır; toplam kapasite iki katına çıkar."
+  },
+  {
+   "after": 8,
+   "prompt": "CO₂ gibi suyla tepkime veren bir gazın çözünürlüğünde hangi iki miktar ayrılmalıdır?",
+   "answer": "Toplam çözünmüş karbon ile yalnız fiziksel olarak çözünmüş gaz ayrı tutulmalıdır."
+  }
+ ],
+ "ayt-periyodik-sistem-atom-capi": [
+  {
+   "after": 1,
+   "prompt": "Eski A/B adlandırmasındaki grup sayısını modern sütun sayısıyla neden eşitlememelisin?",
+   "answer": "Eski 8B grubu üç ayrı sütunu kapsayabildiği için eski grup sayısı modern 1–18 sütunlarıyla birebir eşleşmez."
+  },
+  {
+   "after": 3,
+   "prompt": "Cu’nun 4s¹3d¹⁰ diziliminden d bloğundaki grup numarası nasıl bulunur?",
+   "answer": "ns ve (n−1)d elektronları toplanır: 1+10=11, yani Cu grup 11’dedir."
+  },
+  {
+   "after": 6,
+   "prompt": "Aynı periyotta nötr atomların yarıçapı soldan sağa neden genel olarak küçülür?",
+   "answer": "Katman sayısı aynı kalırken proton sayısı artar; perdeleme bunu tam dengelemediği için etkin çekim artar ve bulut küçülür."
+  },
+  {
+   "after": 8,
+   "prompt": "Farklı elementlerin iyonlarını boyuta göre sıralamadan önce yük işareti yerine neyi denetlemelisin?",
+   "answer": "Önce e=Z−q ile elektron sayısını ve dolu katmanları denetlemelisin; yalnız +/− işareti sırayı vermez."
+  }
+ ],
+ "ayt-iyonlasma-elektron-ilgisi-en": [
+  {
+   "after": 1,
+   "prompt": "Katı metalin çözünmesinde ölçülen ısı neden birinci iyonlaşma enerjisi sayılmaz?",
+   "answer": "Bu ısıya atomlaşma ve hidratasyon gibi ayrı katkılar da girer; İE₁ yalnız gaz hâlindeki atomdan ilk elektronu koparmayı anlatır."
+  },
+  {
+   "after": 3,
+   "prompt": "N’nin birinci iyonlaşma enerjisinin O’dan büyük olması neyle açıklanır?",
+   "answer": "N’de p³ yarı dolu düzen vardır; O’nun p⁴ düzenindeki eşleşme ve itme bir elektronun koparılmasını kolaylaştırır."
+  },
+  {
+   "after": 4,
+   "prompt": "Al’da İE₁’den İE₂’ye artış üç kattan fazla olduğu hâlde iç katmana geçilmiş sayılmamasının nedeni nedir?",
+   "answer": "İkinci elektron hâlâ değerlik bölgesindedir; belirgin iç katman geçişi üçüncüden dördüncü koparmaya doğrudur."
+  },
+  {
+   "after": 6,
+   "prompt": "Negatif bir gaz iyonuna ikinci elektronun eklenmesi için genel olarak ne söylenebilir?",
+   "answer": "Çoğunlukla enerji gerektirir; nötr atoma ilk elektron eklenirken açığa çıkan enerji bu basamağa aktarılamaz."
+  },
+  {
+   "after": 8,
+   "prompt": "H–Cl bağında kısmi yükler nasıl gösterilir?",
+   "answer": "Cl daha elektronegatif olduğundan Cl tarafı δ−, H tarafı δ+ gösterilir; atomlar tam ayrılmış iyon değildir."
+  }
+ ],
+ "ayt-elementler-yukseltgenme": [
+  {
+   "after": 1,
+   "prompt": "BeCl₂ örneği s bloğu metalleri için hangi genellemenin sınırını gösterir?",
+   "answer": "Bu metallerin bütün bileşiklerinin yalnız iyonik bağ yaptığı genellemesini; BeCl₂ kovalent karakterlidir."
+  },
+  {
+   "after": 3,
+   "prompt": "Zn, d bloğunda olduğu hâlde dar geçiş elementi tanımında neden ayrı değerlendirilir?",
+   "answer": "Dar tanım atomda ya da katyonda kısmen dolu d alt kabuğunu vurgular; Zn, Cd ve Hg bu ölçütle ayrı tutulur."
+  },
+  {
+   "after": 6,
+   "prompt": "Metal oksitleri baziktir genellemesinin sınırını gösteren iki farklı örnek türü nedir?",
+   "answer": "Al₂O₃ ve ZnO gibi amfoter oksitler ile CrO₃ gibi asidik davranan metal oksitleri."
+  },
+  {
+   "after": 8,
+   "prompt": "SO₄²⁻ iyonunda S’nin yükseltgenme basamağı kaç olur?",
+   "answer": "Toplam iyon yüküne eşit olmalı: S+4(−2)=−2 eşitliğinden S=+6 bulunur."
+  },
+  {
+   "after": 10,
+   "prompt": "N³⁻ ile N₃⁻ yazımlarının gösterdiği türler arasındaki fark nedir?",
+   "answer": "N³⁻ üç eksi yüklü tek N iyonudur; N₃⁻ ise üç N atomundan oluşan ve net yükü −1 olan türdür."
+  }
+ ],
+ "ayt-gaz-ozellikleri": [
+  {
+   "after": 1,
+   "prompt": "Tek atomlu He için hangi hareket türünü çizmek yanlış olur?",
+   "answer": "Molekül içi bağ titreşimini; He tek atomlu olduğundan titreşecek bir iç bağı yoktur."
+  },
+  {
+   "after": 2,
+   "prompt": "Aynı basınç daha geniş bir alana etki ederse toplam dik kuvvet nasıl değişir?",
+   "answer": "P=F/A olduğundan F=P·A olur; alan büyüdükçe toplam dik kuvvet daha büyük olabilir."
+  },
+  {
+   "after": 4,
+   "prompt": "0,75 dm³ hacim kaç cm³ eder?",
+   "answer": "1 dm³=1000 cm³ olduğundan 0,75 dm³=750 cm³ eder."
+  },
+  {
+   "after": 6,
+   "prompt": "273 yaklaşımıyla 27 °C’deki gaz 327 °C’ye ısıtılırsa mutlak sıcaklık kaç katına çıkar?",
+   "answer": "300 K’den 600 K’ye çıkar, yani mutlak sıcaklık 2 katına çıkar."
+  },
+  {
+   "after": 8,
+   "prompt": "İdeal modelde çarpışmaların elastik sayılması neyi anlatır, neyi anlatmaz?",
+   "answer": "Toplam enerjinin korunduğunu anlatır; her taneciğin çarpışmadan sonra kendi eski hızını koruduğunu anlatmaz."
+  }
+ ],
+ "ayt-gaz-yasalari": [
+  {
+   "after": 1,
+   "prompt": "Sabit n ve T’de 2 atm basınçlı gazın hacmi üçte birine indirilirse basınç kaç atm olur?",
+   "answer": "P₁V₁=P₂V₂ kullanılır; hacim üçte birine inince basınç 3 katına çıkar ve 6 atm olur."
+  },
+  {
+   "after": 2,
+   "prompt": "Esnek bir balonda ısıtma yapılırken basıncın tam sabit kaldığı neden garanti edilemez?",
+   "answer": "Zar gerilimi değişebilir; esneklik tek başına sabit P sağlamaz, sabit basınç ancak soruda kabul olarak verilirse kullanılır."
+  },
+  {
+   "after": 4,
+   "prompt": "Sabit P ve T’de 0,50 mol gaz 10 L kaplıyorsa 0,20 mol gaz kaç L kaplar?",
+   "answer": "V/n sabittir: 10/0,50=20 L/mol olduğundan 0,20 mol gaz 4 L kaplar."
+  },
+  {
+   "after": 6,
+   "prompt": "Başlangıç sıcaklıkları farklı kaplar birleştirildiğinde P_son hangi yolla bulunmalıdır?",
+   "answer": "Önce her kap için n_i=P_iV_i/(RT_i) ile moller bulunur, sonra son sıcaklık ve toplam hacimle P_son hesaplanır."
+  },
+  {
+   "after": 8,
+   "prompt": "Aynı P ve T’de yoğunluğu büyük olan gazın molekülleri için hız bakımından ne söylenir?",
+   "answer": "d=PM/(RT) ile yoğunluk büyükse M büyüktür; aynı T’de büyük mol kütleli gazın tanecikleri daha yavaştır."
+  },
+  {
+   "after": 10,
+   "prompt": "n sabitken T 3 katına, V 1,5 katına çıkarsa basınç kaç katına çıkar?",
+   "answer": "P₂/P₁=(T₂/T₁)(V₁/V₂)=3·(1/1,5)=2 olduğundan basınç 2 katına çıkar."
+  }
  ]
 }

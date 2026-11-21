@@ -1,0 +1,38 @@
+[
+ {
+  "from": "Basitleştirilmiş hidroliz gösterimi ATP+H₂O→ADP+Pi’dir; Pi serbest inorganik fosfatı belirtir. Hücresel koşullarda bu net dönüşüm ekzergonik olabilir; serbest enerji başka bir olaya eşlenebilir. ADP+Pi+enerji→ATP+H₂O ise fosforilasyon, yani ATP sentezi yönünü gösteren okul düzeyi özetidir. ATP sentezlemek için enerji gerekir.",
+  "to": "Basitleştirilmiş hidroliz gösterimi ATP+H₂O→ADP+Pi’dir; Pi serbest inorganik fosfatı belirtir. Hücresel koşullarda bu net dönüşüm ekzergonik olabilir; serbest enerji başka bir olaya eşlenebilir. ADP+Pi+enerji→ATP+H₂O ise fosforilasyon, yani ATP sentezi yönünü gösteren basitleştirilmiş özettir. ATP sentezlemek için enerji gerekir."
+ },
+ {
+  "from": "‘Bağ kırılınca enerji çıkar’ ifadesini tek bir bağı mekanik koparmakla açıklama: bağı koparmak enerji ister; net hidroliz tepkimesindeki ürün oluşumu ve bütün değişim sonucunda serbest enerji açığa çıkabilir. Kaynakların ‘yüksek enerjili fosfat bağı’ adı, bu net aktarım bağlamında kullanılır. Eşitlikte su, enerji ve fosfatın hangi tarafta olduğunu okuyarak yönü denetle.",
+  "to": "‘Bağ kırılınca enerji çıkar’ ifadesini tek bir bağı mekanik koparmakla açıklama: bağı koparmak enerji ister; net hidroliz tepkimesindeki ürün oluşumu ve bütün değişim sonucunda serbest enerji açığa çıkabilir. ‘Yüksek enerjili fosfat bağı’ adı, bu net aktarım bağlamında kullanılır. Eşitlikte su, enerji ve fosfatın hangi tarafta olduğunu okuyarak yönü denetle."
+ },
+ {
+  "from": "Uygun bir DNA kalıbı, dört çeşit deoksiribonükleotit, gerekli enzimler, enerji ve polimeraz işlevi için uygun iyon koşulları gerekir; kaynak bu bağlamda Mg iyonlarını da belirtir. Nükleotitler önceden bulunan uygun yapı taşlarıdır; DNA polimerazın her organik bileşeni yoktan ürettiğini düşünme. Uygun başlangıç ve reaksiyon koşulları olmadan yalnız baz eşleşmesi kuralı DNA sentezini tek başına yürütmez.",
+  "to": "Uygun bir DNA kalıbı, dört çeşit deoksiribonükleotit, gerekli enzimler, enerji ve polimeraz işlevi için uygun iyon koşulları gerekir; Mg iyonları bu koşullara örnektir. Nükleotitler önceden bulunan uygun yapı taşlarıdır; DNA polimerazın her organik bileşeni yoktan ürettiğini düşünme. Uygun başlangıç ve reaksiyon koşulları olmadan yalnız baz eşleşmesi kuralı DNA sentezini tek başına yürütmez."
+ },
+ {
+  "from": "Replikasyon orijini başlangıcın tanındığı özel bölgedir. Açılan bölüm kabarcık, kabarcığın iki yanındaki ilerleyen sınırlar çatallardır. Kaynakta incelenen tipik halkasal bakteriyel modelde bir orijinden iki yöne ilerleme gösterilir. Ökaryotik DNA’larda çok sayıda orijin bulunabilir; her kabarcığın iki ucunda çatal vardır.",
+  "to": "Replikasyon orijini başlangıcın tanındığı özel bölgedir. Açılan bölüm kabarcık, kabarcığın iki yanındaki ilerleyen sınırlar çatallardır. Tipik halkasal bakteriyel modelde bir orijinden iki yöne ilerleme gösterilir. Ökaryotik DNA’larda çok sayıda orijin bulunabilir; her kabarcığın iki ucunda çatal vardır."
+ },
+ {
+  "from": "Enerji kullanımı, helikaz gibi yardımcı enzimlerin ATP kullanımıyla birlikte ele alınabilir; her enzimin aynı kimyasal adımı yaptığı söylenmez. Ders sorusu soyut bir bağ–su sayımı koşulu verirse o model içinde işlem yapılır. Ancak gerçek polimerazın etkin öncülü ve ürünleri açıkça soruluyorsa dNTP ile pirofosfat ayrımını kullan.",
+  "to": "Enerji kullanımı, helikaz gibi yardımcı enzimlerin ATP kullanımıyla birlikte ele alınabilir; her enzimin aynı kimyasal adımı yaptığı söylenmez. Bir soru soyut bir bağ–su sayımı koşulu verirse o model içinde işlem yapılır. Ancak gerçek polimerazın etkin öncülü ve ürünleri açıkça soruluyorsa dNTP ile pirofosfat ayrımını kullan."
+ },
+ {
+  "from": "Bütün bitkiler için uygun sıcaklık 25°C veya alt sınır 5°C değildir. Keşifte gösterilen sayılar temsili profillerin varsayımlarıdır. Bir türde bulunan optimumu doğrudan başka türe veya farklı gelişim evresine aktarma.",
+  "to": "Bütün bitkiler için uygun sıcaklık 25 °C veya alt sınır 5 °C değildir. Keşifte gösterilen sayılar temsili profillerin varsayımlarıdır. Bir türde bulunan optimumu doğrudan başka türe veya farklı gelişim evresine aktarma."
+ },
+ {
+  "from": "Antibiyotiğin hedefi, bakterinin fizyolojisi ve direnç mekanizması önemlidir. Tedaviye karar verme laboratuvar ve klinik değerlendirme gerektirir; sınıf modelindeki maruziyet değeri tedavi önerisi değildir. Kendiliğinden doz artırma sonucuna ulaşılmaz.",
+  "to": "Antibiyotiğin hedefi, bakterinin fizyolojisi ve direnç mekanizması önemlidir. Tedaviye karar verme laboratuvar ve klinik değerlendirme gerektirir; modeldeki maruziyet değeri tedavi önerisi değildir. Kendiliğinden doz artırma sonucuna ulaşılmaz."
+ },
+ {
+  "from": "Halkaları saymadan önce her büyüme döneminde tek belirgin halka oluştuğunun ve kesitin hangi yükseklikten alındığının verilmesi gerekir. Kuraklık gibi koşullar yalancı ya da belirsiz halkalar oluşturabilir. Ders modelinde bir mevsim–bir halka kabulü özellikle belirtilir; bu koşul bütün doğaya otomatik taşınmaz.",
+  "to": "Halkaları saymadan önce her büyüme döneminde tek belirgin halka oluştuğunun ve kesitin hangi yükseklikten alındığının verilmesi gerekir. Kuraklık gibi koşullar yalancı ya da belirsiz halkalar oluşturabilir. Bu modelde bir mevsim–bir halka kabulü özellikle belirtilir; bu koşul bütün doğaya otomatik taşınmaz."
+ },
+ {
+  "from": "Yalnız floemi etkileyen bir kabuk halkası çıkarıldığında yapraktan köke organik madde aktarımı kesintiye uğrayabilir. Ksilem sağlam kaldıysa su iletiminin ilk anda doğrudan kesildiği sonucu çıkmaz. Kaynağın üst tarafında organik madde birikmesi de izlenebilir.",
+  "to": "Yalnız floemi etkileyen bir kabuk halkası çıkarıldığında yapraktan köke organik madde aktarımı kesintiye uğrayabilir. Ksilem sağlam kaldıysa su iletiminin ilk anda doğrudan kesildiği sonucu çıkmaz. Halkanın üst tarafında organik madde birikmesi de izlenebilir."
+ }
+]

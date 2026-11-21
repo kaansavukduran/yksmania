@@ -278,5 +278,125 @@
  {
   "from": "İdeal yüzde 100 anot kullanımıyla n mol iki değerlikli Mg veya Zn en çok 2n mol elektronluk yük sağlayabilir. Qüst=zFn ilişkisi, sabit olarak verilmiş bir örnek yük ihtiyacına karşı stokun yeterli olup olmadığını kıyaslamaya yarar. Bu, maddenin tükendikçe yenilenmesi gerektiğini nicel gösterir.",
   "to": "İdeal yüzde 100 anot kullanımıyla n mol iki değerlikli Mg veya Zn en çok 2n mol elektronluk yük sağlayabilir. Q_üst=zFn ilişkisi, sabit olarak verilmiş bir örnek yük ihtiyacına karşı stokun yeterli olup olmadığını kıyaslamaya yarar. Bu, maddenin tükendikçe yenilenmesi gerektiğini nicel gösterir."
+ },
+ {
+  "from": "Soğutulan çözelti için de aynı kontrol gerekir. Isı alan çözünmede soğuma kristal ayırabilirken ısı veren bir çözünmede aynı sonuç zorunlu değildir. Kaynaktaki eğrinin yukarı ya da aşağı gitmesini yalnız çizginin şekli olarak değil, verilen sıcaklıklardaki doygunluk sınırının değişmesi olarak açıkla.",
+  "to": "Soğutulan çözelti için de aynı kontrol gerekir. Isı alan çözünmede soğuma kristal ayırabilirken ısı veren bir çözünmede aynı sonuç zorunlu değildir. Çözünürlük eğrisinin yukarı ya da aşağı gitmesini yalnız çizginin şekli olarak değil, verilen sıcaklıklardaki doygunluk sınırının değişmesi olarak açıkla."
+ },
+ {
+  "from": "Bir deneyde eşit süre sonunda daha çok madde çözündüğünü görmek, tek başına daha büyük denge çözünürlüğü göstermez; ilk kap henüz doymamış olabilir. Sonuç için yeterli zaman, sıcaklık ve katı kalıp kalmadığı denetlenir. Kaynakta çözücü ekleme başlığını gördüğünde de hacim ve ortak iyon derişimi değişiyorsa bu denge etkilerini ayrıca hesaba kat.",
+  "to": "Bir deneyde eşit süre sonunda daha çok madde çözündüğünü görmek, tek başına daha büyük denge çözünürlüğü göstermez; ilk kap henüz doymamış olabilir. Sonuç için yeterli zaman, sıcaklık ve katı kalıp kalmadığı denetlenir. Çözücü eklendiğinde de hacim ve ortak iyon derişimi değişiyorsa bu denge etkilerini ayrıca hesaba kat."
+ },
+ {
+  "from": "Olağan basınç aralığında katı ve sıvıların çözünürlüğüne basınç etkisi çoğu okul hesabında ihmal edilir. Gazlarda ise sabit sıcaklıkta, seyreltik ve tepkimesiz koşullarda gazın kısmi basıncı arttıkça çözünme artabilir. Toplam basınçla kısmi basıncı, gaz davranışıyla iyonik katı dengesini karıştırma; gazların ısıl davranışını da verilmiş koşul yerine daima sözüyle genelleme.",
+  "to": "Olağan basınç aralığında katı ve sıvıların çözünürlüğüne basınç etkisi çoğu hesapta ihmal edilir. Gazlarda ise sabit sıcaklıkta, seyreltik ve tepkimesiz koşullarda gazın kısmi basıncı arttıkça çözünme artabilir. Toplam basınçla kısmi basıncı, gaz davranışıyla iyonik katı dengesini karıştırma; gazların ısıl davranışını da verilmiş koşul yerine daima sözüyle genelleme."
+ },
+ {
+  "from": "Son çözümde dört satır tut: sıcaklık ve Kç, denklemin formülü, son hacimde iyon katkıları, toplam tuz ve kalan katı. İki değişken aynı anda ters etkiler yaratıyorsa yalnız nitel yönlerle kesin sıralama yapma; gerekli sayısal veriyi iste. Keşifte tahmin ve gerekçen saklanır, ancak modelle oynamak doğru soru, XP veya konu tamamlanması oluşturmaz.",
+  "to": "Son çözümde dört satır tut: sıcaklık ve Kç, denklemin formülü, son hacimde iyon katkıları, toplam tuz ve kalan katı. İki değişken aynı anda ters etkiler yaratıyorsa yalnız nitel yönlerle kesin sıralama yapma; gerekli sayısal veriyi iste."
+ },
+ {
+  "from": "Element hâlindeki Fe, Zn, H₂, O₂ ve Cl₂ için yükseltgenme basamağı 0’dır. Bileşikte 1A metalleri okul kapsamındaki olağan iyonik bileşiklerde +1, 2A metalleri +2 alınır. Flor bileşiklerinde −1 olur. Çok atomlu iyonlarda ise tek tek atomların sayıyla ağırlıklı toplamı iyonun toplam yükünü vermelidir.",
+  "to": "Element hâlindeki Fe, Zn, H₂, O₂ ve Cl₂ için yükseltgenme basamağı 0’dır. Bileşikte 1A metalleri olağan iyonik bileşiklerde +1, 2A metalleri +2 alınır. Flor bileşiklerinde −1 olur. Çok atomlu iyonlarda ise tek tek atomların sayıyla ağırlıklı toplamı iyonun toplam yükünü vermelidir."
+ },
+ {
+  "from": "Yanma ve paslanma gibi olaylarda basamak değişimini görebilirsin. Fe₂O₃+3 CO → 2 Fe +3 CO₂ denkleminde Fe +3’ten 0’a inerken C +2’den +4’e çıkar. Redoks mutlaka ortamdan oksijen gazı alınması demek değildir; Fe+Cu²⁺ gibi oksijensiz bir denklem de redokstur.",
+  "to": "Yanma ve paslanma gibi olaylarda basamak değişimini görebilirsin. Fe₂O₃+3 CO → 2 Fe+3 CO₂ denkleminde Fe +3’ten 0’a inerken C +2’den +4’e çıkar. Redoks mutlaka ortamdan oksijen gazı alınması demek değildir; Fe+Cu²⁺ gibi oksijensiz bir denklem de redokstur."
+ },
+ {
+  "from": "İstemli bir redoks, verilen koşullarda termodinamik olarak ilerleyebilir; mutlaka hızlı veya ilk anda gözle görünür olması gerekmez. Yanma başlatıcı kıvılcım isteyebilir, suyun elektrolizi ise dış enerjiyle yürütülür. Dengeleme bize olası türler için korunum sağlar; hız ve gerçek yön ayrıca koşul bilgisi ister. Keşif kaydı bağımsız soru doğrusu, XP veya konu tamamlanması değildir.",
+  "to": "İstemli bir redoks, verilen koşullarda termodinamik olarak ilerleyebilir; mutlaka hızlı veya ilk anda gözle görünür olması gerekmez. Yanma başlatıcı kıvılcım isteyebilir, suyun elektrolizi ise dış enerjiyle yürütülür. Dengeleme bize olası türler için korunum sağlar; hız ve gerçek yön ayrıca koşul bilgisi ister."
+ },
+ {
+  "from": "Standart değer ile o anki koşullarda ölçülen değer ayrıdır. Standart etkinlikler 1’dir; derişim 1 M ifadesi ideal ders yaklaşımıdır. Güncel standart gaz basıncı 1 bar iken bazı ders kaynakları 1 atm kullanır. Bu uygulamadaki yuvarlatılmış sınıf verileri açıkça verilir; küçük basınç farkından yeni deneysel hassasiyet veya bütün koşullarda aynı voltaj iddiası çıkarılmaz.",
+  "to": "Standart değer ile o anki koşullarda ölçülen değer ayrıdır. Standart etkinlikler 1’dir; derişim 1 M ifadesi ideal ders yaklaşımıdır. Güncel standart gaz basıncı 1 bar iken bazı ders kaynakları 1 atm kullanır. Buradaki yuvarlatılmış veriler açıkça verilir; küçük basınç farkından yeni deneysel hassasiyet veya bütün koşullarda aynı voltaj iddiası çıkarılmaz."
+ },
+ {
+  "from": "Cu+Ag⁺ → Cu²⁺+Ag iskeletinde Cu 2 elektron verir, Ag⁺ bir elektron alır. Denge için Cu +2 Ag⁺ → Cu²⁺+2 Ag yazılır. Yarı tepkimeyi 2 ile çarpmak aktarılan elektron ve mol miktarını büyütür; standart elektrot potansiyeli ise aynı kalır.",
+  "to": "Cu+Ag⁺ → Cu²⁺+Ag iskeletinde Cu 2 elektron verir, Ag⁺ bir elektron alır. Denge için Cu+2 Ag⁺ → Cu²⁺+2 Ag yazılır. Yarı tepkimeyi 2 ile çarpmak aktarılan elektron ve mol miktarını büyütür; standart elektrot potansiyeli ise aynı kalır."
+ },
+ {
+  "from": "Cr metali Cr³⁺ oluştururken 3, Pb²⁺ metale dönüşürken 2 elektronla ilişkilidir. En küçük ortak 6 için 2 Cr +3 Pb²⁺ → 2 Cr³⁺+3 Pb bulunur. Bir metalin aktif olması onun denklemde katsayısının mutlaka 1 kalacağı anlamına gelmez; iyon yükleri korunmalıdır.",
+  "to": "Cr metali Cr³⁺ oluştururken 3, Pb²⁺ metale dönüşürken 2 elektronla ilişkilidir. En küçük ortak 6 için 2 Cr+3 Pb²⁺ → 2 Cr³⁺+3 Pb bulunur. Bir metalin aktif olması onun denklemde katsayısının mutlaka 1 kalacağı anlamına gelmez; iyon yükleri korunmalıdır."
+ },
+ {
+  "from": "Zn ve Mg gibi uygun aktif metaller, HCl gibi yükseltgen olmayan asitte H⁺’yi H₂’ye indirgeyebilir. Örnek Zn +2 H⁺ → Zn²⁺+H₂’dir; metal yükseltgenir, hidrojen iyonu indirgenir. Verilen standart çift değerlerinde E°_H=0 ile metal çiftinin değeri karşılaştırılarak bu eğilim incelenir.",
+  "to": "Zn ve Mg gibi uygun aktif metaller, HCl gibi yükseltgen olmayan asitte H⁺’yi H₂’ye indirgeyebilir. Örnek Zn+2 H⁺ → Zn²⁺+H₂’dir; metal yükseltgenir, hidrojen iyonu indirgenir. Verilen standart çift değerlerinde E°_H=0 ile metal çiftinin değeri karşılaştırılarak bu eğilim incelenir."
+ },
+ {
+  "from": "HNO₃ veya sıcak derişik H₂SO₄ gibi yükseltgen asitler, Cu ve Ag gibi HCl’den H₂ çıkarmayan metallerle farklı redokslar verebilir. Kaynakta verilen Cu örneklerinde derişik nitrik asitle NO₂, seyreltik nitrik asitle NO; sıcak derişik sülfürik asitle SO₂ ürünleri ele alınır. Bu gazların adını koşullarıyla birlikte öğren.",
+  "to": "HNO₃ veya sıcak derişik H₂SO₄ gibi yükseltgen asitler, Cu ve Ag gibi HCl’den H₂ çıkarmayan metallerle farklı redokslar verebilir. Sık verilen Cu örneklerinde derişik nitrik asitle NO₂, seyreltik nitrik asitle NO; sıcak derişik sülfürik asitle SO₂ ürünleri ele alınır. Bu gazların adını koşullarıyla birlikte öğren."
+ },
+ {
+  "from": "Bu yüzden gaz çıkmadı sonucunu tek başına bütün aktiflik sırasını tersine çevirmek için kullanma. Karşılaştırmalı bir soruda hangi iyonun metal olarak ayrıldığı veya hangi metalin yükseltgendiği açıkça verildiyse o değişimden ilişki çıkar. Gerçek gözlemde başka nedenler bulunabilir; uygulamanın standart modeli bu nedenleri ölçtüğünü iddia etmez.",
+  "to": "Bu yüzden gaz çıkmadı sonucunu tek başına bütün aktiflik sırasını tersine çevirmek için kullanma. Karşılaştırmalı bir soruda hangi iyonun metal olarak ayrıldığı veya hangi metalin yükseltgendiği açıkça verildiyse o değişimden ilişki çıkar. Gerçek gözlemde başka nedenler bulunabilir; standart model bu nedenleri ölçtüğünü iddia etmez."
+ },
+ {
+  "from": "Bu yüzden yalnız atom çapına bakıp bütün sulu çiftlerin kesin sırasını çıkarma. Kaynakta Li’nin güçlü sulu indirgen oluşuyla daha aşağı alkali metalin daha büyük yarıçapı birlikte bulunabilir. Net soruda verilen aktiflik sırası veya belirlenmiş iyon çiftinin potansiyeli esas alınır; farklı yükseltgenme basamaklı iki yarıyı aynı metal adıyla körlemesine özdeş sayma.",
+  "to": "Bu yüzden yalnız atom çapına bakıp bütün sulu çiftlerin kesin sırasını çıkarma. Li’nin güçlü sulu indirgen oluşuyla daha aşağı alkali metalin daha büyük yarıçapı birlikte bulunabilir. Net soruda verilen aktiflik sırası veya belirlenmiş iyon çiftinin potansiyeli esas alınır; farklı yükseltgenme basamaklı iki yarıyı aynı metal adıyla körlemesine özdeş sayma."
+ },
+ {
+  "from": "Halojenlerin belirli sulu çiftleri için F₂’nin güçlü yükseltgen oluşu, tek bir serbest atomun elektron ilgisiyle tamamen aynı ölçüm değildir. Hangi tür ve koşulun kıyaslandığını söyle. Son değerlendirmede önce verilen yarı çift, sonra elektron ve atom/yük dengesi, sonra E° işareti yazılır. Tahminini kaydetmek XP veya tamamlanmış soru sayılmaz; yeni koşullu bağımsız soruyu açıklayabilmek ayrı kanıttır.",
+  "to": "Halojenlerin belirli sulu çiftleri için F₂’nin güçlü yükseltgen oluşu, tek bir serbest atomun elektron ilgisiyle tamamen aynı ölçüm değildir. Hangi tür ve koşulun kıyaslandığını söyle. Son değerlendirmede önce verilen yarı çift, sonra elektron ve atom/yük dengesi, sonra E° işareti yazılır."
+ },
+ {
+  "from": "Nötr koşul [H₃O⁺]=[OH⁻] eşitliğidir; dolayısıyla nötr pH=pKw/2 olur. Suyun iyonlaşması sıcaklıkla değişir. Kaynak örneğinde 80 °C'de Kw=9,0×10⁻¹⁴ verilirse iki iyon derişimi de 3,0×10⁻⁷ M, pH yaklaşık 6,523 çıkar.",
+  "to": "Nötr koşul [H₃O⁺]=[OH⁻] eşitliğidir; dolayısıyla nötr pH=pKw/2 olur. Suyun iyonlaşması sıcaklıkla değişir. Örneğin 80 °C'de Kw=9,0×10⁻¹⁴ verilirse iki iyon derişimi de 3,0×10⁻⁷ M, pH yaklaşık 6,523 çıkar."
+ },
+ {
+  "from": "x, C yanında yeterince küçükse C−x yaklaşık C alınır ve x≈√(KaC) bulunur. Bu yöntem çoğu okul örneğini hızlandırır; asidin adından dolayı otomatik olarak geçerli olmaz. Önce yaklaşık x hesaplanır, sonra x/C oranı değerlendirilir.",
+  "to": "x, C yanında yeterince küçükse C−x yaklaşık C alınır ve x≈√(KaC) bulunur. Bu yöntem çoğu örneği hızlandırır; asidin adından dolayı otomatik olarak geçerli olmaz. Önce yaklaşık x hesaplanır, sonra x/C oranı değerlendirilir."
+ },
+ {
+  "from": "NaCl için Na⁺ ve Cl⁻, bu sulu ve seyreltik okul modelinde belirgin proton aktarımı oluşturmaz. Su kendi iyonlaşma dengesini korur; 25 °C ve Kw=10⁻¹⁴ iken ideal çözeltide H₃O⁺ ile OH⁻ derişimleri eşit ve pH 7 olur.",
+  "to": "NaCl için Na⁺ ve Cl⁻, bu sulu ve seyreltik modelde belirgin proton aktarımı oluşturmaz. Su kendi iyonlaşma dengesini korur; 25 °C ve Kw=10⁻¹⁴ iken ideal çözeltide H₃O⁺ ile OH⁻ derişimleri eşit ve pH 7 olur."
+ },
+ {
+  "from": "Bu model tek protonlu HA veya güçlü HCl ile sınırlıdır; ölçülmüş çok bileşenli numuneyi otomatik tanımlamaz. Kullanıcı nokta seçip önce pH yönünü tahmin eder, sonra aynı hacimdeki tür ve yük sonuçlarıyla karşılaştırır. Keşif kaydı öğrenme puanı veya tamamlanmış sınav sayılmaz.",
+  "to": "Bu model tek protonlu HA veya güçlü HCl ile sınırlıdır; ölçülmüş çok bileşenli numuneyi otomatik tanımlamaz. Modelde bir nokta seçip önce pH yönünü tahmin et, sonra aynı hacimdeki tür ve yük sonuçlarıyla karşılaştır."
+ },
+ {
+  "from": "Bu yaklaşım her derişimde aynı doğrulukta değildir. Çözücüyle tepkime, iyon çiftleri, birleşme ve güçlü ideal dışılık gerçek davranışı değiştirebilir. Uygulamadaki model açıkça ideal kabul eder; çok derişik antifriz karışımına kesin laboratuvar ölçümü veya ürün reçetesi sunmaz.",
+  "to": "Bu yaklaşım her derişimde aynı doğrulukta değildir. Çözücüyle tepkime, iyon çiftleri, birleşme ve güçlü ideal dışılık gerçek davranışı değiştirebilir. Etkileşimli model açıkça ideal kabul eder; çok derişik antifriz karışımına kesin laboratuvar ölçümü veya ürün reçetesi sunmaz."
+ },
+ {
+  "from": "Çekirdek oluştuğunda fazlalık kristallenebilir ve sıvı denge sınırına yaklaşır. Bu süreçte sıcaklık, çözücü miktarı ve kristalin yapısı ayrıca önemlidir. Öğretim modeli önce dengeye ulaşmış, su içermeyen X kristali varsayar; metastabil gecikme ayrı bir koşul kartıdır.",
+  "to": "Çekirdek oluştuğunda fazlalık kristallenebilir ve sıvı denge sınırına yaklaşır. Bu süreçte sıcaklık, çözücü miktarı ve kristalin yapısı ayrıca önemlidir. Öğretim modeli önce dengeye ulaşmış, su içermeyen X kristali varsayar; metastabil gecikme ayrı bir koşuldur."
+ },
+ {
+  "from": "Problem sonunda iki kontrol yap: çözünen toplamı korunuyor mu ve sıvı faz verilen sınırı sağlıyor mu? Kaynakta bir isim yanında verilen kurmaca sayı, gerçek sıcaklık tablosu diye sunulmaz. Şekilde dipteki katı ve sıvı içindeki çözünmüş madde farklı işaretlerle gösterilir.",
+  "to": "Problem sonunda iki kontrol yap: çözünen toplamı korunuyor mu ve sıvı faz verilen sınırı sağlıyor mu? Bir madde adının yanında verilen kurmaca sayı, gerçek sıcaklık tablosu diye sunulmaz. Şekilde dipteki katı ve sıvı içindeki çözünmüş madde farklı işaretlerle gösterilir."
+ },
+ {
+  "from": "Bu çalışmanın ilk 36 nötr atom kapsamında temel hâlde dolu orbitaller arasındaki en büyük n, periyodu verir. Bütün elementlere istisnasız bir tanım diye genişletme; daha ileri Pd gibi düzenler ayrı ele alınır. Bu kuralı elektron kaybetmiş iyonda son dolu katmana uygulayıp elementin yerini değiştirme. Na⁺ iki dolu katman taşısa da Na elementi üçüncü periyotta kalır; Z değişmemiştir.",
+  "to": "İlk 36 nötr atom kapsamında, temel hâlde dolu orbitaller arasındaki en büyük n, periyodu verir. Bütün elementlere istisnasız bir tanım diye genişletme; daha ileri Pd gibi düzenler ayrı ele alınır. Bu kuralı elektron kaybetmiş iyonda son dolu katmana uygulayıp elementin yerini değiştirme. Na⁺ iki dolu katman taşısa da Na elementi üçüncü periyotta kalır; Z değişmemiştir."
+ },
+ {
+  "from": "d bloğunda grup 3–12, okul düzeyinde ns ve (n−1)d elektronlarıyla ilişkilendirilir: Fe için 4s²3d⁶ toplamı grup 8, Cu için 4s¹3d¹⁰ grup 11 verir. Zn grup 12’dir. Bu toplam dış katmanın tek başına elektron sayısı değildir; iki farklı sayım ölçütünü aynı adla karıştırma.",
+  "to": "d bloğunda grup 3–12, temel düzeyde ns ve (n−1)d elektronlarıyla ilişkilendirilir: Fe için 4s²3d⁶ toplamı grup 8, Cu için 4s¹3d¹⁰ grup 11 verir. Zn grup 12’dir. Bu toplam dış katmanın tek başına elektron sayısı değildir; iki farklı sayım ölçütünü aynı adla karıştırma."
+ },
+ {
+  "from": "N>O ve P>S örneklerinde p³ yarı dolu düzen ile p⁴ içindeki eşleşme ve itme farkını düşün. Atom yarıçapı ile iyonlaşma arasında genel ilişki olması İE=C/r biçiminde bütün elementlere uygulanan kesin bir okul formülü bulunduğu anlamına gelmez.",
+  "to": "N>O ve P>S örneklerinde p³ yarı dolu düzen ile p⁴ içindeki eşleşme ve itme farkını düşün. Atom yarıçapı ile iyonlaşma arasında genel ilişki olması İE=C/r biçiminde bütün elementlere uygulanan kesin bir formül bulunduğu anlamına gelmez."
+ },
+ {
+  "from": "1 atm=760 mmHg=76 cmHg dönüşümü okul hesaplarında kullanılır; Torr da burada mmHg ile aynı yakınlıkta ele alınır. Pa bir SI basınç birimidir; atm ile SI denklem sabitini rastgele karıştırma. Ölçülen kuvvetin birimi N, basıncın birimi N/m²=Pa’dır.",
+  "to": "1 atm=760 mmHg=76 cmHg dönüşümü hesaplarda kullanılır; Torr da burada mmHg ile aynı yakınlıkta ele alınır. Pa bir SI basınç birimidir; atm ile SI denklem sabitini rastgele karıştırma. Ölçülen kuvvetin birimi N, basıncın birimi N/m²=Pa’dır."
+ },
+ {
+  "from": "V ve T sabitken P/n sabittir. Bir ideal gaz karışımında her türün kısmi basıncı P_i=n_iRT/V, toplamı P_toplam=ΣP_i olur. Okul kaynaklarında miktar–basınç ilişkisi Dalton başlığı altında da özetlenebilir; kısmi basınç tanımı aynı ideal çerçeveyle bağlanır.",
+  "to": "V ve T sabitken P/n sabittir. Bir ideal gaz karışımında her türün kısmi basıncı P_i=n_iRT/V, toplamı P_toplam=ΣP_i olur. Miktar–basınç ilişkisi Dalton başlığı altında da özetlenebilir; kısmi basınç tanımı aynı ideal çerçeveyle bağlanır."
+ },
+ {
+  "from": "Normal şartlar bu soruda 0 °C ve 1 atm olarak tanımlanırsa yaklaşık 22,4 L/mol kullanılabilir. Başka standart basınç tanımları farklı molar hacim verir; bütün sıcaklık-basınçlarda 1 mol gaz 22,4 L yer kaplar sonucu yoktur. Kullanılan yaklaşım ve koşul kartın içinde verilmeli.",
+  "to": "Normal şartlar bu soruda 0 °C ve 1 atm olarak tanımlanırsa yaklaşık 22,4 L/mol kullanılabilir. Başka standart basınç tanımları farklı molar hacim verir; bütün sıcaklık-basınçlarda 1 mol gaz 22,4 L yer kaplar sonucu yoktur. Kullanılan yaklaşım ve koşul soruda açıkça verilmelidir."
+ },
+ {
+  "from": "Santigrat eksenindeki doğruyu 0 °C’den sıfır hacimle başlatmak yanlıştır; ideal matematiksel uzantı yaklaşık −273,15 °C’ye gider. Bu uygulamanın sayısal grafiklerinde Kelvin ekseni ve pozitif çalışma aralığı açık görünür. Bir doğrunun uzantısı gerçek faz değişimini ortadan kaldırmaz.",
+  "to": "Santigrat eksenindeki doğruyu 0 °C’den sıfır hacimle başlatmak yanlıştır; ideal matematiksel uzantı yaklaşık −273,15 °C’ye gider. Etkileşimli modelin sayısal grafiklerinde Kelvin ekseni ve pozitif çalışma aralığı açık görünür. Bir doğrunun uzantısı gerçek faz değişimini ortadan kaldırmaz."
+ },
+ {
+  "from": "Yasa gezgininde önce bir deneyi seç ve yalnız izin verilen değişkeni değiştir. Başlangıç–son sayıları, sabitleri, noktanın grafikteki yerini ve HTML sonucunu birlikte karşılaştır. Sonra birleşik değişimde birden çok etkiyi açıp tahmininin hangi varsayımını değiştirdiğini yaz.",
+  "to": "Yasa gezgininde önce bir deneyi seç ve yalnız izin verilen değişkeni değiştir. Başlangıç–son sayıları, sabitleri, noktanın grafikteki yerini ve hesaplanan sonucu birlikte karşılaştır. Sonra birleşik değişimde birden çok etkiyi açıp tahmininin hangi varsayımını değiştirdiğini yaz."
  }
 ]
