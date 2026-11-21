@@ -134,12 +134,12 @@ export function OsymHeatmap({
       <p className="muted small">
         {map.years.length > 1 ? `${span(map.years)} arası ${map.years.length} ${exam} kitapçığında` : `${map.years[0]} ${exam} kitapçığında`}{" "}
         bu dersten {map.questions} soru işlendi. Sayılar
-        soru adedidir; boş kutu o yıl sorulmadığını gösterir. Başlığa dokununca o başlığın soru kalıpları açılır.
+        soru adedidir, sütunlar yılın son iki hanesidir; boş kutu o yıl sorulmadığını gösterir. Başlığa dokununca o başlığın soru kalıpları açılır.
       </p>
       <div className="osym-map-head" aria-hidden="true">
         <span />
         {map.years.map((y) => (
-          <span key={y}>’{String(y).slice(2)}</span>
+          <span key={y}>{String(y).slice(2)}</span>
         ))}
         <span>Top.</span>
       </div>
