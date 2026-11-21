@@ -11,11 +11,11 @@ sayıyla fark yok. Arşiv kataloğu (13 sütun, 1.001 satır) ve rehber PDF'i k�
 YKS dönemi kitapçıkları: 2018–2026 arası her yıl TYT ve AYT (cevap anahtarı aynı dosyada); ayrıca 2018 örnek
 soru kitapçığı. 1999–2009 ÖSS, 2010–2017 YGS ve LYS aynı klasördedir.
 
-<!-- sayac:osym-pdf islenen=17 toplam=1001 -->
+<!-- sayac:osym-pdf islenen=18 toplam=1001 -->
 
 | Klasör | Öncelik | PDF (sayım) | İşlenen | Kapsam notu |
 | --- | --- | ---: | ---: | --- |
-| 01 Üniversite (ÖSS, ÖYS, YGS, LYS, YKS) | 1 | 245 | 17 | TYT ve AYT Sayısal kalıplarının ana kaynağı. Figür ve taktiklerde yıl + soru numarasıyla atıf yapılan sorular buradandır. |
+| 01 Üniversite (ÖSS, ÖYS, YGS, LYS, YKS) | 1 | 245 | 18 | TYT ve AYT Sayısal kalıplarının ana kaynağı. Figür ve taktiklerde yıl + soru numarasıyla atıf yapılan sorular buradandır. |
 | 06 MSÜ, ALS ve askeri sınavlar | 1 | 40 | 0 | TYT düzeyi kalıplar. |
 | 09 Çözümler ve MEB derlemeleri | 1 | 91 | 0 | 2018–2019 TYT ve AYT matematik yazılı çözümleri; 2018–2026 MEB derlemeleri. |
 | 04 ALES ve LES | 2 | 87 | 0 | Paragraf, sayısal mantık ve problem kalıpları. |
@@ -25,7 +25,7 @@ soru kitapçığı. 1999–2009 ÖSS, 2010–2017 YGS ve LYS aynı klasördedir.
 | 07 EKPSS ve ÖMSS | 2 | 79 | 0 | Yalnız güncel TYT müfredatına uyan kalıplar. |
 | 08 Diğer ilgili sınavlar | 2 | 74 | 0 | Müfredat süzgecinden geçenler. |
 | 10 Resmî olmayan eski sınav derlemeleri | 2 | 6 | 0 | Yalnız kalıp karşılaştırması için. |
-| **Toplam** | | **1.001** | **17** | |
+| **Toplam** | | **1.001** | **18** | |
 
 ## Bağlantılı geçmiş sorular
 
