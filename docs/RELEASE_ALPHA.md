@@ -1,3 +1,13 @@
+# YKSMania 0.25.0 — web yayını
+
+21 Kasım 2026. Sahibin açık onayıyla `claude/laughing-ritchie-l0rre4` main'e alındı ve GitHub Pages'e yayımlandı. Durum: `npm run check`, tip denetimi ve derleme geçer; tam birim paketi 3.236 testte geçti (bir yük zaman aşımı tek başına koşunca geçti); CI tarayıcı parçalarının 2, 3 ve 4'ü yeşil. 1. parçadaki lab etiket kapısı yayın anında hâlâ koşuyordu: sonucu FORGE.md'ye yazılır. Windows/Linux paketleri ve Android sürüm etiketi tam yeşil CI koşusu gerektirdiği için bu yayına dahil değildir; gerçek cihaz kabulü yapılmadı.
+
+Kapsam: bütün sorularda adım adım çözüm (6.465 / 6.465), bütün anlatımlarda mikro ritim (505 / 505 ders, 3.052 soru), 99_ÖSYM kalıp haritası (18 / 1.001 PDF, 1.845 soru), sınav ve hata araçları, gösterim onarımı (soru alanında 962, ders paragrafında 1.635), Forge052 mobil ferahlık ve figür/lab çakışma kapıları. Sayılar `docs/ILERLEME.md`'dedir; PDF arşivinin tamamlandığı anlamına gelmez (OGM/MEBİ 119 / 8.981).
+
+---
+
+## Aşağıdaki kayıt 0.25.0 doğrulama adayına aittir
+
 # YKSMania 0.25.0 — doğrulama adayı
 
 20 Kasım 2026, Türkiye saati. **Bu aday henüz yayımlanmadı.** Yerel kontroller (check, 236 dosya / 2.974 birim testi, derleme ve bu sürümün yeni ve etkilenen tarayıcı testleri) geçti; tam uzak CI/E2E dal üzerinde çalışır ve main yalnız yeşil sonuçla ilerler. Windows/Linux paketleri ve kişisel Android denemesi yeni sürüm koduyla (`versionCode 35`) hazırdır; gerçek cihaz kabulü ayrıca yapılır.

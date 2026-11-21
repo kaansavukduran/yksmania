@@ -2,6 +2,6 @@
   "version": "0.25.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Temel İnşa (0. basamak): 10 TYT dersinin hepsinde 25 isteğe bağlı ön ders; sayfa sayfa okuma, dokunulabilir şekiller, adım adım çözümlü örnekler ve özgün kontrol soruları. Yalnız ilk denemedeki doğrular yeni Temel İnşa kupasına sayılır; plan ve tekrar takvimi etkilenmez. Konu anlatımlarında sayfa sayfa ↔ tümünü gör ve yapışkan konum çubuğu. Bugün ekranında akıllı oturum (15/30/60 dk karma pratik) ve 5 dk kurtarma; F ile Zen odak modu. Hata merkezinde önkoşul köprüsü ve hafta sonu hata boss’u; deneme sonuçlarında yorgunluk eğrisi ve +5 Net Pusulası. Konu sayısı tek kaynakta 505. Kayıtlı ilerleme, notlar, ayarlar ve özgün tekrar tarihleri korunur."
+    "tr": "0.25.0: Bütün 6.465 soruda ayrı İpucu ve Adım adım çözüm (terim, veri, adımlar, çeldirici otopsisi, 1 dakikalık kural; açmak yardım sayılır, XP vermez). 505 konu anlatımının hepsinde bölüm arası \"Okuduğunu hatırla\" kartları (3.052 soru). 2018–2026 YKS kitapçıklarından 1.845 soruluk ÖSYM kalıp haritası: konu paneli, Dersler'de sıklık haritası, Sınavlar'da dağılım, Yanlışlarım'da tuzak destesi. Sınavlarda ders sırası, süre nabzı ve 2. tur; hata merkezinde üç aşamalı onarım ve ikiz soru. Mobilde ferah kartlar, kırık simgeler SVG, figür ve lab etiketleri çakışmasız. Kayıtlı ilerleme, notlar, ayarlar ve özgün tekrar tarihleri korunur."
   }
 }
