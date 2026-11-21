@@ -59,5 +59,607 @@
    "prompt": "Kuram ile yasa arasındaki fark nedir?",
    "answer": "Kuram desteklenmiş açıklamalar bütünüdür, yasa belirli koşullardaki ilişkiyi betimler; biri zorunlu olarak ötekine dönüşmez."
   }
+ ],
+ "kimya-disiplinleri": [
+  {
+   "after": 1,
+   "prompt": "Bir kan örneğinde ölçüm yapılması neden işi tek başına biyokimya yapmaz?",
+   "answer": "Disiplin örneğin kaynağına göre değil yapılan işe göre seçilir; bileşeni belirlemek ya da miktarını ölçmek analitik kimyanın işidir."
+  },
+  {
+   "after": 3,
+   "prompt": "'Canlıdan gelen organik, laboratuvarda üretilen anorganik' ayrımı neden yanlıştır?",
+   "answer": "Aynı organik bileşik doğal kaynaktan alınabilir ya da sentezlenebilir; sınıflandırma üretim yerine yapıya ve kimyasal türe dayanır."
+  },
+  {
+   "after": 4,
+   "prompt": "Endüstriyel kimya bir üretim sürecinde hangi ölçütleri birlikte değerlendirir?",
+   "answer": "Verimi, kaliteyi, maliyeti, enerji gereksinimini ve çevresel etkileri birlikte değerlendirir."
+  }
+ ],
+ "sembolik-dil": [
+  {
+   "after": 1,
+   "prompt": "'Saf madde' ifadesi günlük dildeki hangi anlamlarla karıştırılmamalı?",
+   "answer": "Saf; zararsız, doğal ya da içilebilir demek değildir. Bileşikler saf maddedir, karışımlar saf madde değildir."
+  },
+  {
+   "after": 3,
+   "prompt": "Co ile CO yazımları arasındaki fark nedir?",
+   "answer": "Co kobalt elementinin sembolüdür; CO'da büyük O yeni sembol başlattığı için karbon ve oksijenden oluşan karbonmonoksit yazılmıştır."
+  },
+  {
+   "after": 4,
+   "prompt": "Bir tepkimeyi denkleştirirken neden alt indisi değil katsayıyı değiştirirsin?",
+   "answer": "Alt indisi değiştirmek maddenin kimliğini değiştirir; katsayı ise aynı formülden kaç tane olduğunu belirtir."
+  },
+  {
+   "after": 6,
+   "prompt": "H≈1 ve O≈16 alınırsa H₂O'da H:O kütle oranı kaç olur?",
+   "answer": "2·1:16 = 2:16 = 1:8 olur. 2:1 ise atom sayısı oranıdır, kütle oranı değildir."
+  }
+ ],
+ "kimya-guvenlik": [
+  {
+   "after": 1,
+   "prompt": "Oksitleyici işaretini yanıcı işaretinden ayıran şekil ve anlam farkı nedir?",
+   "answer": "Oksitleyicide alev bir çemberin üzerindedir; madde başka maddelerin yanmasını başlatır ya da şiddetlendirir, kendisi yakıt gibi yanmak zorunda değildir."
+  },
+  {
+   "after": 3,
+   "prompt": "Çamaşır suyunu asitli bir temizlik ürünüyle karıştırmak neden tehlikelidir?",
+   "answer": "Bu karışım tehlikeli gaz açığa çıkarabilir; temizlik ürünleri daha güçlü olsun diye birbirine katılmaz."
+  },
+  {
+   "after": 4,
+   "prompt": "Belirli son hacimde çözelti hazırlamak için kalibre edilen cam araç hangisidir?",
+   "answer": "Balon joje kullanılır; bu hacme göre kalibre edilmiştir ve boynunda ölçü çizgisi vardır, sıradan ısıtma kabı gibi kullanılmaz."
+  }
+ ],
+ "atom-modelleri": [
+  {
+   "after": 1,
+   "prompt": "Dalton modelinin hangi varsayımı izotopların varlığıyla çelişir?",
+   "answer": "Aynı elementin bütün atomlarının özdeş olduğu varsayımı; izotoplar aynı elementin farklı kütleli atomlarıdır."
+  },
+  {
+   "after": 3,
+   "prompt": "Rutherford deneyinde alfa taneciklerinin çoğunun sapmadan geçmesi hangi yorumu destekler?",
+   "answer": "Atom hacminin büyük bölümünün boşluklu olduğunu destekler; geçme gözlem, boşluk ise o gözlemden yapılan çıkarımdır."
+  },
+  {
+   "after": 4,
+   "prompt": "Bohr modelinde düzey farkı büyüdükçe yayılan ışığın dalga boyu nasıl değişir?",
+   "answer": "Fotonun enerjisi ve frekansı artar, dalga boyu ise azalır."
+  },
+  {
+   "after": 5,
+   "prompt": "Elektronun uyarılmasını iyonlaşmasından ayıran fark nedir?",
+   "answer": "Uyarılmada elektron daha yüksek ama hâlâ atoma bağlı bir düzeye geçer; iyonlaşmada atomdan kopar."
+  }
+ ],
+ "katman-elektron-dizilimi": [
+  {
+   "after": 1,
+   "prompt": "Na⁺ iyonunun dağılımı soy gazınkine benzese de neden soy gaz elementi sayılmaz?",
+   "answer": "Elektron vermek proton sayısını değiştirmez; element kimliği proton sayısıyla belirlendiği için Na⁺ yine sodyumdur."
+  },
+  {
+   "after": 2,
+   "prompt": "Potasyum (Z=19) için 2,8,9 dağılımını yazmak neden yanlıştır?",
+   "answer": "2n² yalnız katman kapasitesini verir; ilk 20 atomda temel hâl 2,8,8,1 olur, M katmanı 18'e dolmadan N kullanılır."
+  },
+  {
+   "after": 4,
+   "prompt": "Mg²⁺ iyonunda iki katman bulunduğu hâlde Mg elementi hangi periyottadır?",
+   "answer": "3. periyottadır; periyot iyonun görünümünden değil nötr atomun temel hâlindeki katman sayısından okunur."
+  }
+ ],
+ "elementlerin-siniflandirilmasi": [
+  {
+   "after": 1,
+   "prompt": "Cıva, metallerle ilgili hangi genellemenin yanlış olduğunu gösterir?",
+   "answer": "Oda koşullarında sıvı olduğu için katı olmanın metal olmanın zorunlu koşulu olmadığını gösterir."
+  },
+  {
+   "after": 2,
+   "prompt": "Grafit katı ametallerin hangi genel özelliğine istisnadır?",
+   "answer": "Katı ametaller genellikle iyi iletken değildir; karbonun grafit biçimi ise elektriği iletir."
+  },
+  {
+   "after": 4,
+   "prompt": "Soy gazların hiç bileşik yapmadığını söylemek neden yanlıştır?",
+   "answer": "Tepkime eğilimleri düşüktür ama özellikle Xe ve Kr uygun koşullarda bileşik oluşturur."
+  }
+ ],
+ "atom-capi-karsilastirma": [
+  {
+   "after": 2,
+   "prompt": "Aynı periyottaki Na, Mg ve Al'de yarıçap neden Na > Mg > Al sırasındadır?",
+   "answer": "Proton sayısı artarken aynı katmana eklenen elektronlar bu artışı tam perdeleyemez; etkin çekim güçlenir ve yarıçap küçülür."
+  },
+  {
+   "after": 4,
+   "prompt": "O²⁻, F⁻, Na⁺ ve Mg²⁺ arasında en küçük yarıçaplı tür hangisidir?",
+   "answer": "Mg²⁺; hepsi 10 elektronlu olduğundan en çok protonu (12) olan tür bulutu en güçlü çeker."
+  }
+ ],
+ "iyonlasma-enerjisi": [
+  {
+   "after": 1,
+   "prompt": "Üç elektronlu nötr bir atom için en fazla kaç iyonlaşma enerjisi tanımlanabilir?",
+   "answer": "En fazla üç; Z elektronlu atomdan en çok Z elektron koparılabilir, dördüncü iyonlaşma enerjisi olmaz."
+  },
+  {
+   "after": 3,
+   "prompt": "Mg ile Al'den hangisinin birinci iyonlaşma enerjisi daha büyüktür?",
+   "answer": "Mg'nin; dolu s alt kabuğundan elektron koparmak, Al'in daha yüksek enerjili p elektronunu koparmaktan zordur."
+  },
+  {
+   "after": 4,
+   "prompt": "Ardışık iyonlaşma sıçramasından değerlik elektronu bulma ipucu hangi elementlerde güvenle kullanılır?",
+   "answer": "Ana grup elementlerinde kullanılır; geçiş metallerine otomatik uygulanmaz ve sıçramanın katı evrensel bir eşik değildir."
+  }
+ ],
+ "elektron-ilgisi-elektronegatiflik": [
+  {
+   "after": 1,
+   "prompt": "Elektron alımında ΔE değerleri −349 ve −328 kJ/mol ise hangisi daha fazla enerji açığa çıkarır?",
+   "answer": "−349 kJ/mol daha fazla enerji açığa çıkarır; ancak cebirsel olarak daha büyük sayı −328'dir."
+  },
+  {
+   "after": 2,
+   "prompt": "Halojenlerde ilk elektron alımında açığa çıkan enerji hangi elementte F'dekinden fazladır?",
+   "answer": "Cl'de; F'nin en yüksek elektronegatifliğe sahip olması bu sıralamayı değiştirmez."
+  },
+  {
+   "after": 3,
+   "prompt": "Bir anyona ikinci elektron eklemek gaz fazında neden enerji gerektirir?",
+   "answer": "Eklenen elektron, anyondaki elektronların itmesine karşı yaklaştırılır; birinci alımın enerji vermesi ikinciye genellenemez."
+  }
+ ],
+ "kimyasal-turler-lewis": [
+  {
+   "after": 1,
+   "prompt": "O₂ ile HCl ikisi de iki atomlu molekülse onları ayıran nedir?",
+   "answer": "O₂ tek element türü içerdiği için element molekülüdür; HCl iki farklı elementten oluştuğu için bileşik molekülüdür."
+  },
+  {
+   "after": 3,
+   "prompt": "OH• ile OH⁻ değerlik elektron sayısı bakımından nasıl ayrılır?",
+   "answer": "OH• 7 değerlik elektronlu, eşleşmemiş elektron taşıyan radikaldir; OH⁻ ise 8 değerlik elektronlu anyondur."
+  },
+  {
+   "after": 5,
+   "prompt": "Cl atomunun Lewis sembolünde 7 nokta nasıl yerleştirilir?",
+   "answer": "İlk dört nokta dört tarafa tek tek, sonrakiler bunları eşleştirecek biçimde konur; sonuç üç çift ve bir tek noktadır."
+  },
+  {
+   "after": 7,
+   "prompt": "S²⁻ iyonunun Lewis sembolünde kaç nokta bulunur ve başka ne yazılmalıdır?",
+   "answer": "6 + 2 = 8 nokta bulunur; yapı köşeli ayraca alınır ve 2− yükü yazılır."
+  },
+  {
+   "after": 9,
+   "prompt": "N₂'de iki N'nin yerel elektron sayıları toplamı 16 iken molekülde kaç değerlik elektronu vardır?",
+   "answer": "10 vardır; üçlü bağdaki 6 ortak elektron iki atomun yerel denetiminde de sayıldığı için toplam 16 çıkar."
+  }
+ ],
+ "iyonik-bag-ve-guclu-etkilesimler": [
+  {
+   "after": 1,
+   "prompt": "Su kaynarken hangi tanecikler arasındaki etkileşimler aşılır?",
+   "answer": "Ayrı H₂O molekülleri arasındaki etkileşimler aşılır; molekül içindeki O–H bağları koparılıp su hidrojen ve oksijene ayrılmaz."
+  },
+  {
+   "after": 3,
+   "prompt": "Ca²⁺ ile O²⁻ iyonlarından oluşan bileşik için neden Ca₂O₂ değil CaO yazılır?",
+   "answer": "Ca₂O₂ yükü sıfırlasa da en küçük oran değildir; 2:2 oranı 1:1'e sadeleşir."
+  },
+  {
+   "after": 4,
+   "prompt": "Katı NaCl iyon içerdiği hâlde neden elektriği iyi iletmez?",
+   "answer": "İyonlar örgü konumları çevresinde titreşir ama serbestçe dolaşamaz; iletkenlik için yük taşıyıcısının hareket etmesi gerekir."
+  },
+  {
+   "after": 6,
+   "prompt": "İyonik katılar neden kırılgandır?",
+   "answer": "İyon tabakaları kaydığında aynı işaretli iyonlar karşı karşıya gelir; oluşan itme yapının kırılmasını kolaylaştırır."
+  }
+ ],
+ "iyonik-bilesik-adlandirma": [
+  {
+   "after": 1,
+   "prompt": "AlCl₃ için neden alüminyum(III) klorür yerine alüminyum klorür denir?",
+   "answer": "Al³⁺ yaygın sabit yüklü metallerdendir; böyle metallerin adına sayı eklenmez, üç klorür bulunması Roma rakamı gerektirmez."
+  },
+  {
+   "after": 3,
+   "prompt": "Kalsiyum sülfatın formülünde sadeleştirip CaS yazmak neden yanlıştır?",
+   "answer": "Çok atomlu iyonun iç indisi sadeleştirilmez; SO₄²⁻ grubu bütün olarak korunur ve CaSO₄ yazılır."
+  },
+  {
+   "after": 5,
+   "prompt": "Fe₂O₃'te her demir iyonunun yükü kaçtır ve bileşiğin adı nedir?",
+   "answer": "Üç O²⁻ toplam −6 yapar, iki Fe toplam +6 taşır; her Fe +3 olduğu için ad demir(III) oksittir."
+  },
+  {
+   "after": 6,
+   "prompt": "Cu₂O'daki 2 indisi neden bakırın yükünün II olduğunu göstermez?",
+   "answer": "İki Cu oksidin −2 yükünü paylaşır ve her biri +1 olur; Roma rakamı iyon yükünü verir, bu yüzden ad bakır(I) oksittir."
+  }
+ ],
+ "asit-baz-metaller": [
+  {
+   "after": 1,
+   "prompt": "Mg ile HCl tepkimesinin net denkleminde neden serbest elektron görünmez?",
+   "answer": "Mg'nin verdiği 2 elektronu 2H⁺ alır; verilen ve alınan elektron miktarı eşit olduğu için net denklemde elektron kalmaz."
+  },
+  {
+   "after": 3,
+   "prompt": "0,20 mol Mg ile 0,30 mol HCl tepkimeye girerse kaç mol H₂ oluşur ve kaç mol Mg artar?",
+   "answer": "Bölümler 0,20 ve 0,15 olduğundan ilerleme 0,15 moldür; 0,15 mol H₂ oluşur, 0,20 − 0,15 = 0,05 mol Mg artar."
+  },
+  {
+   "after": 5,
+   "prompt": "Bakır derişik nitrik asitle tepkimeye girdiğinde hangi gaz oluşur?",
+   "answer": "NO₂ oluşur; seyreltik koşulda NO çıkar. İki durumda da indirgenen türün ürünü hidrojen değildir."
+  },
+  {
+   "after": 7,
+   "prompt": "'Soy metal' nitelemesi neden her koşulda tepkimeye girmez anlamına gelmez?",
+   "answer": "Soy metaller olağan tek asit ortamlarına dirençlidir; karma yükseltgen ortamlar ise farklı davranış doğurabilir."
+  },
+  {
+   "after": 9,
+   "prompt": "Al parçasında kısa sürede kabarcık görülmemesi neden tepkimenin imkânsız olduğunu kanıtlamaz?",
+   "answer": "Yüzeydeki oksit ya da koruyucu tabaka tepkimeyi yavaşlatabilir; gözlenen hız, ürünün oluşup oluşamayacağını tek başına göstermez."
+  },
+  {
+   "after": 10,
+   "prompt": "Cu–Zn alaşımı HCl ile H₂ verdiğinde gaz miktarı neden yalnız Zn kütlesini bulmaya yarar?",
+   "answer": "Bu koşulda yalnız Zn tepkimeye girer ve H₂ molü Zn molüne eşittir; Cu kısmı gaz hesabına katılmaz."
+  }
+ ],
+ "hayatimizda-asit-baz": [
+  {
+   "after": 2,
+   "prompt": "NH₃ formülünde OH bulunmaması hangi yanlış sonuca götürmemeli?",
+   "answer": "Sulu çözeltisinin bazik olamayacağı sonucuna; amonyak suda bazik davranabilir."
+  },
+  {
+   "after": 4,
+   "prompt": "Kireç taşı uygun biçimde ısıtılınca hangi ürünler oluşur?",
+   "answer": "CaCO₃ ısıtılınca sönmemiş kireç CaO ve CO₂ oluşur; bu fiziksel ayırma değil kimyasal değişimdir."
+  },
+  {
+   "after": 6,
+   "prompt": "Kullanılabilir 0,10 mol H⁺ en çok kaç mol CaCO₃ çözebilir?",
+   "answer": "CaCO₃ + 2H⁺ denklemine göre her CaCO₃ için 2 H⁺ gerekir; 0,10/2 = 0,05 mol CaCO₃ çözünür."
+  },
+  {
+   "after": 8,
+   "prompt": "pH 4,6 olan örnekte hidrojen iyonu etkinliği aynı koşuldaki pH 5,6 örneğinin kaç katı olabilir?",
+   "answer": "On katı olabilir, çünkü pH logaritmiktir; bu fark ürünün derişiminin on kat olduğu anlamına gelmez."
+  },
+  {
+   "after": 10,
+   "prompt": "Doğal yağmur neden hafif asidik kabul edilir?",
+   "answer": "Atmosferdeki CO₂ suyla denge kurar; doğal yağmur bu yüzden yaklaşık pH 5,6 referansıyla gösterilir."
+  }
+ ],
+ "sabun-deterjan-temizlik": [
+  {
+   "after": 1,
+   "prompt": "Birçok sabun kimyasal olarak hangi maddenin tuzudur?",
+   "answer": "Uzun zincirli bir yağ asidinin sodyum ya da potasyum tuzudur; suda R–COO⁻ anyonu ve Na⁺ ya da K⁺ karşı iyonu bulunur."
+  },
+  {
+   "after": 3,
+   "prompt": "Yağ damlasının suda dağılması neden yağın gerçek çözelti oluşturması sayılmaz?",
+   "answer": "Yağ, yüzey etkin taneciklerle çevrelenmiş damlalar hâlinde dağılır; yağ molekülleri tek tek çözünmüş olmaz."
+  },
+  {
+   "after": 5,
+   "prompt": "Basit bir triaçilgliserol kaç mol NaOH ile sabunlaşır ve hangi ürünler oluşur?",
+   "answer": "Üç ester bağı için 3 mol NaOH gerekir; ürünler gliserol ve 3 mol RCOONa sabunudur."
+  },
+  {
+   "after": 7,
+   "prompt": "Yağ asitlerinin sodyum ve potasyum tuzlarından elde edilen sabunlar nasıl karşılaştırılır?",
+   "answer": "Sodyum tuzları genellikle daha sert, potasyum tuzları daha yumuşak sabunların yapımında kullanılır."
+  },
+  {
+   "after": 9,
+   "prompt": "Asidik ortamın sabuna etkisi sert suyun etkisinden nasıl ayrılır?",
+   "answer": "Asitte H⁺ sabun anyonunu az çözünen serbest yağ asidine çevirir; sert suda ise Ca²⁺ ya da Mg²⁺ ile metal sabunu çöker."
+  },
+  {
+   "after": 11,
+   "prompt": "Temizlik ile dezenfeksiyonun amacı nasıl ayrılır?",
+   "answer": "Temizlik kiri uzaklaştırır; dezenfeksiyon uygun koşullarda mikroorganizma yükünü azaltmayı ya da hedef mikroorganizmaları etkisizleştirmeyi amaçlar."
+  }
+ ],
+ "polimer-kozmetik-ilac": [
+  {
+   "after": 1,
+   "prompt": "Polimer şemasındaki n neyi gösterir?",
+   "answer": "Verilen gösterime göre tekrar birimi sayısını gösterir; doğrudan mol miktarı anlamına gelmez."
+  },
+  {
+   "after": 2,
+   "prompt": "A–B–A–B gibi polimer şemalarındaki harfler neyi simgeler?",
+   "answer": "Gerçek atomları değil, tanımlanan yapısal birimleri simgeler; farklı harfler farklı monomer birimlerini anlatır."
+  },
+  {
+   "after": 4,
+   "prompt": "'Naylon poşet' adı neden poşetin kimyasal olarak naylon olduğunu göstermez?",
+   "answer": "Böyle bir poşet PE olabilir; kimyasal sınıf olarak naylon bir poliamittir ve PE'nin başka adı değildir."
+  },
+  {
+   "after": 7,
+   "prompt": "Ambalajdaki malzeme kodu neyi tek başına kanıtlamaz?",
+   "answer": "Ürünün fiilen toplandığını ya da geri dönüştürüldüğünü kanıtlamaz; yalnız malzeme türünü tanımaya yardım eder."
+  },
+  {
+   "after": 9,
+   "prompt": "Yağ/su emülsiyonunu su/yağ emülsiyonundan ayıran nedir?",
+   "answer": "Hangi fazın damla, hangisinin sürekli faz olduğu; yağ/su emülsiyonunda yağ damlacıkları sürekli su fazında dağılmıştır."
+  },
+  {
+   "after": 10,
+   "prompt": "Bir tabletin bütün kütlesini etkin madde saymak neden yanlıştır?",
+   "answer": "Tablette bağlayıcı, kaplama ya da taşıyıcı gibi biçim ve kararlılığı destekleyen yardımcı maddeler de bulunur."
+  }
+ ],
+ "polimer-gida-ilac-yag": [
+  {
+   "after": 1,
+   "prompt": "Etikette net miktar ile beslenme bildirimi hangi bilgileri verir?",
+   "answer": "Net miktar paketteki ürün miktarını, beslenme bildirimi ise belirli referans miktardaki besin değerlerini verir; biri ötekinin yerine geçmez."
+  },
+  {
+   "after": 3,
+   "prompt": "Etikette 100 mL'de 3 g yağ yazıyorsa 250 mL üründe kaç gram yağ vardır?",
+   "answer": "3 × 250/100 = 7,5 g yağ vardır; aynı hacim referansı kullanıldığı için yoğunluk gerekmez."
+  },
+  {
+   "after": 6,
+   "prompt": "Son tüketim tarihi ile tavsiye edilen tüketim tarihi nasıl ayrılır?",
+   "answer": "Son tüketim tarihi uygun saklamada gıda güvenliği sınırıdır; tavsiye edilen tarih özelliklerin korunma süresiyle ilgilidir."
+  },
+  {
+   "after": 8,
+   "prompt": "Sabunlaşma ile hidrojenleme yağ molekülünün hangi bölgelerini etkiler?",
+   "answer": "Hidroliz ya da sabunlaşma ester bağlarını etkiler; hidrojenleme ise karbon zincirindeki C=C bağlarına hidrojen ekler."
+  },
+  {
+   "after": 10,
+   "prompt": "Molekül başına dört C=C taşıyan yağdan 0,25 mol tam hidrojenlenirse en çok kaç mol H₂ harcanır?",
+   "answer": "Her C=C için bir H₂ gerektiğinden 0,25 × 4 = 1 mol H₂ harcanır; ester C=O bu hesaba girmez."
+  }
+ ],
+ "koligatif-ayirma": [
+  {
+   "after": 1,
+   "prompt": "Tam ayrışma varsayımında 0,10 mol NaCl suda kaç mol çözünmüş iyon verir?",
+   "answer": "Her NaCl bir Na⁺ ve bir Cl⁻ verdiği için 0,20 mol iyon verir; bu 0,20 mol NaCl eklendiği anlamına gelmez."
+  },
+  {
+   "after": 3,
+   "prompt": "Çözünen sabitken suyun kütlesi iki katına çıkarsa ideal modelde kaynama yükselmesi nasıl değişir?",
+   "answer": "Yükselme, tanecik miktarının çözücü kilogramına oranıyla değiştiği için yarıya iner."
+  },
+  {
+   "after": 5,
+   "prompt": "Ters osmozda arıtılmış su tarafına net geçiş nasıl sağlanır?",
+   "answer": "Dışarıdan basınç uygulanarak sağlanır; bu süreç kendiliğinden yürümez, iş gerektirir."
+  },
+  {
+   "after": 7,
+   "prompt": "Diyalizde ayırmayı sağlayan seçicilik nereden gelir?",
+   "answer": "Uygun zarın bazı küçük türleri geçirip daha büyük türleri tutmasından gelir; zar sıradan filtre ya da elekle aynı değildir."
+  },
+  {
+   "after": 10,
+   "prompt": "Çayın demlenmesi hangi ayırma yöntemine örnektir?",
+   "answer": "Katıdan sıvıya özütlemeye örnektir; uygun çözücü katıdaki bazı bileşenleri seçici biçimde çözer."
+  },
+  {
+   "after": 11,
+   "prompt": "4 g demir, 6 g kum, 10 g tuz ve 100 g su karışımında mıknatıs ve filtreden sonra filtrat kaç gramdır?",
+   "answer": "Demir ve kum ayrılır; filtratta 10 g tuz ve 100 g su birlikte kalır, toplam 110 g olur."
+  },
+  {
+   "after": 13,
+   "prompt": "Elektrikle ayırma, mıknatısla ayırmadan hangi bakımdan farklıdır?",
+   "answer": "Elektrikle ayırma bileşenlerin elektriksel davranış farkından, mıknatısla ayırma ise manyetik çekilme farkından yararlanır."
+  }
+ ],
+ "asit-baz-tuz-ozellikleri": [
+  {
+   "after": 1,
+   "prompt": "CH₃OH yapısında OH bulunması neden onu NaOH gibi güçlü baz yapmaz?",
+   "answer": "CH₃OH suda NaOH gibi serbest OH⁻ vermez; formülde OH harflerini görmek bazlık için tek başına kanıt değildir."
+  },
+  {
+   "after": 3,
+   "prompt": "pH 2 olan çözeltiden pH 3 olana geçince H₃O⁺ derişimi nasıl değişir?",
+   "answer": "0,01 mol/L'den 0,001 mol/L'ye iner; yani bir pH birimi farkı on kat değişim demektir."
+  },
+  {
+   "after": 5,
+   "prompt": "10⁻⁸ mol/L güçlü asit çözeltisine pH 8 deyip bazik demek neden yanlıştır?",
+   "answer": "Suyun kendi iyonlaşması da hesaba katılmalıdır; bu çözelti çok az asidiktir ve pH yaklaşık 6,978 olur."
+  },
+  {
+   "after": 8,
+   "prompt": "CO ve NO, oksitlerle ilgili hangi basit genellemenin sınırını gösterir?",
+   "answer": "Ametal oksitlerin hep asidik davrandığı genellemesinin; CO ve NO nötr oksit örnekleridir."
+  },
+  {
+   "after": 10,
+   "prompt": "NH₄Cl çözeltisi tuz olduğu hâlde neden asidik olabilir?",
+   "answer": "NH₄⁺ iyonu suyla etkileşerek çözeltiyi asidik yapabilir; tuz çözeltilerinin hepsi nötr değildir."
+  }
+ ],
+ "asit-baz-tepkimeleri": [
+  {
+   "after": 2,
+   "prompt": "İki protonu tam nötrleşen 1 mol H₂SO₄ için kaç mol KOH gerekir?",
+   "answer": "2 mol KOH gerekir; katsayılar mol oranını verir, gram ya da mililitre oranını değil."
+  },
+  {
+   "after": 4,
+   "prompt": "0,20 mol HCl ile 0,15 mol NaOH tepkimeye girerse hangi madde, kaç mol artar?",
+   "answer": "NaOH sınırlayıcıdır ve tükenir; 0,15 mol HCl harcanır, 0,05 mol HCl artar."
+  },
+  {
+   "after": 6,
+   "prompt": "25 mL 0,20 mol/L HCl ile 25 mL 0,10 mol/L NaOH karışınca artan asidin derişimi kaç olur?",
+   "answer": "0,0050 − 0,0025 = 0,0025 mol asit artar; toplam 0,050 L hacme bölünce 0,050 mol/L olur."
+  },
+  {
+   "after": 8,
+   "prompt": "Su oluşmadan gerçekleşen asit-baz tepkimesine hangi örnek verilir ve neden asit-bazdır?",
+   "answer": "NH₃(g) + HCl(g) → NH₄Cl(k) örneği verilir; NH₃ proton alır, HCl proton verir."
+  },
+  {
+   "after": 10,
+   "prompt": "Bir metalin asitle H₂ oluşturması için hangi koşul belirtilmelidir?",
+   "answer": "Uygun aktif bir metal ve oksitleyici olmayan uygun bir asit gerekir; her metal her asitle aynı gazı vermez."
+  }
+ ],
+ "gercek-kutle-akb-nk": [
+  {
+   "after": 1,
+   "prompt": "Bir O atomunun yaklaşık 16 u olması neden onun 16 g geldiği anlamına gelmez?",
+   "answer": "u atomik ölçekte bir birimdir ve 1 u yaklaşık 1,6605 × 10⁻²⁴ g eder; gram düzeyindeki kütle mol miktarındaki örneğe aittir."
+  },
+  {
+   "after": 3,
+   "prompt": "Sabit sıcaklıkta bir gazın basıncı iki katına çıkarsa hacmi nasıl değişir?",
+   "answer": "Hacim yarıya iner; gazın madde miktarı ve kütlesi değişmez."
+  },
+  {
+   "after": 5,
+   "prompt": "NK'de 11,2 L He ile 11,2 L O₂ kaçar gram gelir?",
+   "answer": "İkisi de 0,5 moldür; He yaklaşık 2 g, O₂ yaklaşık 16 g gelir. Eşit hacim eşit kütle demek değildir."
+  },
+  {
+   "after": 6,
+   "prompt": "Gaz hacminden mol bulurken 22,4 ile çarpmak neden yanlıştır?",
+   "answer": "Mol n = V/Vₘ ile, yani hacmi molar hacme bölerek bulunur; çarpma işlemi birim kontrolünden geçmez."
+  }
+ ],
+ "tepkimeler-denklemler": [
+  {
+   "after": 1,
+   "prompt": "3 Ca(OH)₂ ifadesinde kaç Ca, kaç O ve kaç H atomu sayılır?",
+   "answer": "Ca 3, O 6, H 6 sayılır; katsayı bütün formüle, parantez dışı indis parantezin içine etki eder."
+  },
+  {
+   "after": 3,
+   "prompt": "Etanın yanmasında C₂H₆ katsayısı 1 seçilirse O₂ katsayısı kaç olur?",
+   "answer": "Ürünlerde 2 CO₂ ile 4, 3 H₂O ile 3 O atomu vardır; toplam 7 O için O₂ katsayısı 7/2 olur."
+  },
+  {
+   "after": 5,
+   "prompt": "Hangi tür dönüşüm kimyasal denklem çerçevesinin dışında kalır ve neden?",
+   "answer": "Radyoaktif dönüşüm dışarıda kalır; kimyasal denklem çekirdeği değiştirmez."
+  },
+  {
+   "after": 6,
+   "prompt": "Bir kimyasal tepkimede hangi nicelikler korunur?",
+   "answer": "Atom türü ve sayısı, toplam elektrik yükü ve uygun sistem sınırında toplam kütle korunur."
+  }
+ ],
+ "tepkime-turleri": [
+  {
+   "after": 1,
+   "prompt": "Bir hidrokarbonun tam yanmasında hangi ürünler oluşur?",
+   "answer": "Yeterli O₂ ile CO₂ ve H₂O oluşur; eksik yanmada CO ya da karbon da oluşabilir."
+  },
+  {
+   "after": 2,
+   "prompt": "CaCO₃ → CaO + CO₂ ayrışma ise bu tepkimenin tersi nasıl sınıflanır?",
+   "answer": "Tersi sentezdir; etiket verilirken tepkimenin yönü okunmalıdır."
+  },
+  {
+   "after": 4,
+   "prompt": "Çökelme modelinde AgCl için kullanılan 'çözünmez' sözcüğü ne anlama gelir?",
+   "answer": "Çözünürlüğün ihmal edilebilecek kadar düşük kabul edildiğini anlatır; gerçek dengede çözünürlük tamamen sıfır değildir."
+  },
+  {
+   "after": 6,
+   "prompt": "Mg okside dönüşürken Mg ve O'nun yükseltgenme basamakları nasıl değişir?",
+   "answer": "Mg 0'dan +2'ye, O 0'dan −2'ye geçer; bu değişim tepkimenin redoks olduğunu gösterir."
+  }
+ ],
+ "denklemli-miktar-gecisi": [
+  {
+   "after": 1,
+   "prompt": "N₂ + 3 H₂ → 2 NH₃ denkleminde kaynak H₂, hedef NH₃ ise çarpan kaçtır?",
+   "answer": "Çarpan hedef katsayısı bölü kaynak katsayısıdır: 2/3. Bu oran tüketilen H₂ miktarına uygulanır."
+  },
+  {
+   "after": 3,
+   "prompt": "6 g H₂ yeterli N₂ ile tamamen tepkimeye girerse kaç gram NH₃ oluşur?",
+   "answer": "6/2 = 3 mol H₂, 3 × 2/3 = 2 mol NH₃ verir; 2 × 17 = 34 g NH₃ oluşur."
+  },
+  {
+   "after": 4,
+   "prompt": "0,6 mol NH₃ örneğinde kaç mol H atomu bulunur?",
+   "answer": "Her NH₃ üç H atomu taşıdığından 0,6 × 3 = 1,8 mol H atomu bulunur."
+  },
+  {
+   "after": 6,
+   "prompt": "2 H₂O → 2 H₂ + O₂ ayrışmasında 2 mol su tükenirse toplam kaç mol gaz oluşur?",
+   "answer": "Ürün katsayıları toplanır: 2 mol H₂ ve 1 mol O₂ ile toplam 3 mol gaz oluşur."
+  }
+ ],
+ "sinirlayici-bilesen": [
+  {
+   "after": 1,
+   "prompt": "Daha az mol olan girenin sınırlayıcı olduğunu varsaymak neden hatalıdır?",
+   "answer": "Karar ihtiyaç oranına göre verilir; N₂ + 3 H₂ tepkimesinde 1 mol N₂ ve 2 mol H₂ varsa H₂ önce tükenir."
+  },
+  {
+   "after": 3,
+   "prompt": "28 g N₂ ile 12 g H₂ tam tepkimeye girerse kaç gram NH₃ oluşur ve kaç gram H₂ artar?",
+   "answer": "1 mol N₂ ve 6 mol H₂ vardır; N₂ sınırlar, 2 mol yani 34 g NH₃ oluşur ve 3 mol yani 6 g H₂ artar."
+  },
+  {
+   "after": 5,
+   "prompt": "Aynı koşulda 8 L CO ve 6 L O₂, 2 CO + O₂ → 2 CO₂ ile tam tepkimeye girerse son gaz hacmi kaç L olur?",
+   "answer": "8 L CO, 4 L O₂ harcar; 8 L CO₂ oluşur ve 2 L O₂ artar, son toplam 10 L olur."
+  },
+  {
+   "after": 6,
+   "prompt": "Yalnız ürün miktarı bilinirse her reaktifin başlangıç miktarı neden bulunamaz?",
+   "answer": "Üründen yalnız tüketimler bulunur; hangi girenin tükendiği ve artan miktar hakkında ikinci bir bilgi gerekir."
+  }
+ ],
+ "kati-kutlesi-degisimi": [
+  {
+   "after": 1,
+   "prompt": "24 g Mg tamamen MgO'ya dönüşürse katı kütlesi kaç gram artar?",
+   "answer": "24 g Mg 16 g oksijen alıp 40 g MgO oluşturur; katı 16 g artar."
+  },
+  {
+   "after": 3,
+   "prompt": "80 g saf CuO'nun yarısı H₂ ile indirgenirse tartılan katı kaç gram olur?",
+   "answer": "40 g CuO kalır ve tüketilen 40 g CuO'dan 32 g Cu oluşur; katı 40 + 32 = 72 g olur."
+  },
+  {
+   "after": 4,
+   "prompt": "Tepkimeye girmeyen inert dolgu katı kütlesi hesabında nasıl ele alınır?",
+   "answer": "Önce saf reaktiften ayrılır, stokiyometrik dönüşüme sokulmaz ve kalıntı kütlesine değişmeden eklenir."
+  },
+  {
+   "after": 5,
+   "prompt": "Mg oksitlenmesinde katı 8 g artarsa kaç gram Mg dönüşmüştür?",
+   "answer": "8 g artış 0,5 mol O demektir; bu 0,5 mol yani 12 g Mg'nin dönüştüğünü gösterir."
+  }
  ]
 }

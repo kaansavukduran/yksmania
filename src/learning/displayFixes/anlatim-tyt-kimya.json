@@ -1,0 +1,98 @@
+[
+ {
+  "from": "Periyodik tabloda metaller solda ve ortada, ametaller çoğunlukla sağ üstte, yarı metaller sınır çevresindedir. Hidrojen soldaki 1. grupta yer aldığı hâlde ametaldir. 18. grubun okul düzeyindeki tanıdık üyeleri soy gazlardır. Konum hızlı bir ipucudur; özel örneklerde elementin kimliğini de kullan.",
+  "to": "Periyodik tabloda metaller solda ve ortada, ametaller çoğunlukla sağ üstte, yarı metaller sınır çevresindedir. Hidrojen soldaki 1. grupta yer aldığı hâlde ametaldir. 18. grubun tanıdık üyeleri soy gazlardır. Konum hızlı bir ipucudur; özel örneklerde elementin kimliğini de kullan."
+ },
+ {
+  "from": "İncelenen MEBİ listesi B, Si, Ge, As, Sb, Te, Po ve At sembollerini yarı metal başlığında verir. Sınırdaki bazı elementlerin sınıflandırması kaynaklar arasında değişebilir. Soru bir şema veya liste veriyorsa onu esas al; bütün periyodik tablo veri tabanlarının aynı sınıf etiketini kullanmasını bekleme.",
+  "to": "Burada kullanılan liste B, Si, Ge, As, Sb, Te, Po ve At sembollerini yarı metal başlığında verir. Sınırdaki bazı elementlerin sınıflandırması kaynaklar arasında değişebilir. Soru bir şema veya liste veriyorsa onu esas al; bütün periyodik tablo veri tabanlarının aynı sınıf etiketini kullanmasını bekleme."
+ },
+ {
+  "from": "MEBİ’nin ana grup örneğindeki 900, 1750, 14850, 21000 kJ/mol dizisinde ilk artış yaklaşık iki kat, ikincisi çok daha büyüktür. İlk iki elektron dış katmandandır; bu örneğin iki değerlik elektronu vardır. Verilen bir tablo, tek bir periyodik ok ezberinden daha güçlü kanıttır.",
+  "to": "Bir ana grup örneğindeki 900, 1750, 14850, 21000 kJ/mol dizisinde ilk artış yaklaşık iki kat, ikincisi çok daha büyüktür. İlk iki elektron dış katmandandır; bu örneğin iki değerlik elektronu vardır. Verilen bir tablo, tek bir periyodik ok ezberinden daha güçlü kanıttır."
+ },
+ {
+  "from": "Pauling ölçeğindeki elektronegatiflik sayıları göreli ve birimsizdir. Aynı periyotta genellikle sağa, aynı grupta genellikle yukarı doğru artar; yaygın okul ölçeğinde en yüksek değer F’dedir. TYT’de soy gazlara çoğunlukla değer verilmez; değersiz hücreyi sıfır diye doldurma.",
+  "to": "Pauling ölçeğindeki elektronegatiflik sayıları göreli ve birimsizdir. Aynı periyotta genellikle sağa, aynı grupta genellikle yukarı doğru artar; yaygın ölçekte en yüksek değer F’dedir. TYT’de soy gazlara çoğunlukla değer verilmez; değersiz hücreyi sıfır diye doldurma."
+ },
+ {
+  "from": "Nötr atomun okul düzeyindeki Lewis sembolünü kurarken ilk dört elektron sembolün dört tarafına tek tek, sonraki elektronlar bunları eşleştirecek biçimde konur. O için 6 nokta iki çift ve iki tek noktadır; Cl için 7 nokta üç çift ve bir tek noktadır. He'nin dolu ilk katmanı ise iki elektronluk bir çiftle gösterilir. Sembolün kâğıtta döndürülmesi türün kimliğini değiştirmez.",
+  "to": "Nötr atomun Lewis sembolünü kurarken ilk dört elektron sembolün dört tarafına tek tek, sonraki elektronlar bunları eşleştirecek biçimde konur. O için 6 nokta iki çift ve iki tek noktadır; Cl için 7 nokta üç çift ve bir tek noktadır. He'nin dolu ilk katmanı ise iki elektronluk bir çiftle gösterilir. Sembolün kâğıtta döndürülmesi türün kimliğini değiştirmez."
+ },
+ {
+  "from": "Na⁺ ve Mg²⁺ gibi ana grup metal katyonları, nötr atomun dış değerlik elektronlarını verdikten sonra okul Lewis gösteriminde noktasız ve yüklü sembolle yazılır. Na⁺'ta 10, Mg²⁺'ta 10 toplam elektron vardır; dolu iç katman elektronları bu katyon sembolünde çizilmez. Buradaki sıfır nokta, iyonun gerçek en dış dolu katmanında sıfır elektron bulunduğu anlamına gelmez. Katyon için nokta hesabı ile bütün elektronların hesabını ayrı tut.",
+  "to": "Na⁺ ve Mg²⁺ gibi ana grup metal katyonları, nötr atomun dış değerlik elektronlarını verdikten sonra Lewis gösteriminde noktasız ve yüklü sembolle yazılır. Na⁺'ta 10, Mg²⁺'ta 10 toplam elektron vardır; dolu iç katman elektronları bu katyon sembolünde çizilmez. Buradaki sıfır nokta, iyonun gerçek en dış dolu katmanında sıfır elektron bulunduğu anlamına gelmez. Katyon için nokta hesabı ile bütün elektronların hesabını ayrı tut."
+ },
+ {
+  "from": "Her atom mutlaka oktet yapar demek doğru değildir. Be ve B'nin bazı bileşikleri eksik oktetli olabilir; NO gibi tek elektronlu türlerde basit yapı bütün atomların oktetini aynı anda sağlamaz. Bazı daha ağır merkez atomlarının okul gösterimlerinde genişlemiş oktetler bulunur; bu ders onların yapı seçimini öğretmeyi üstlenmez. Elektron sayısını bütçeyi aşarak artırmak bir oktet onarımı değildir; türün yükünü değiştirmiş olursun.",
+  "to": "Her atom mutlaka oktet yapar demek doğru değildir. Be ve B'nin bazı bileşikleri eksik oktetli olabilir; NO gibi tek elektronlu türlerde basit yapı bütün atomların oktetini aynı anda sağlamaz. Bazı daha ağır merkez atomlarının gösterimlerinde genişlemiş oktetler bulunur; bu ders onların yapı seçimini öğretmeyi üstlenmez. Elektron sayısını bütçeyi aşarak artırmak bir oktet onarımı değildir; türün yükünü değiştirmiş olursun."
+ },
+ {
+  "from": "Benzer yapılar karşılaştırılırken iyon yüklerinin büyüklüğü arttıkça ve iyonlar arasındaki uzaklık azaldıkça elektrostatik çekim genellikle güçlenir. Farklı yük, boyut ve yapı aynı anda değişiyorsa tek bir ipucundan kesin erime sırası üretme. Yaklaşık 40 kJ/mol gibi okul sınıflama eşikleri bütün bağları tek başına tanımlayan evrensel sınırlar değildir.",
+  "to": "Benzer yapılar karşılaştırılırken iyon yüklerinin büyüklüğü arttıkça ve iyonlar arasındaki uzaklık azaldıkça elektrostatik çekim genellikle güçlenir. Farklı yük, boyut ve yapı aynı anda değişiyorsa tek bir ipucundan kesin erime sırası üretme. Yaklaşık 40 kJ/mol gibi sınıflama eşikleri bütün bağları tek başına tanımlayan evrensel sınırlar değildir."
+ },
+ {
+  "from": "Mg + 2HCl → MgCl₂ + H₂ toplam denkleminde klorür iyonları tuzun bileşenidir. Çözeltide H⁺ gösterimi, hidratlanmış proton için kullanılan okul kısaltmasıdır. Atom sayısı, yük ve elektron bilançosu birlikte denetlenir; asit-baz tepkimesi ile redoks aynı ölçüt değildir.",
+  "to": "Mg + 2HCl → MgCl₂ + H₂ toplam denkleminde klorür iyonları tuzun bileşenidir. Çözeltide H⁺ gösterimi, hidratlanmış proton için kullanılan kısaltmadır. Atom sayısı, yük ve elektron bilançosu birlikte denetlenir; asit-baz tepkimesi ile redoks aynı ölçüt değildir."
+ },
+ {
+  "from": "Başka yükseltgenin bulunmadığı verilen sulu HCl okul modelinde Cu, H⁺ iyonlarından H₂ çıkarmaz. Mg ile aynı koşula konulduğunda farklı sonuç vermesi, “metal” sözcüğünün tek başına yeterli bir tepkime kuralı olmadığını gösterir.",
+  "to": "Başka yükseltgenin bulunmadığı verilen sulu HCl modelinde Cu, H⁺ iyonlarından H₂ çıkarmaz. Mg ile aynı koşula konulduğunda farklı sonuç vermesi, “metal” sözcüğünün tek başına yeterli bir tepkime kuralı olmadığını gösterir."
+ },
+ {
+  "from": "Au ve Pt okul sınıflamasında soy metallerin tipik örnekleridir. Olağan verilen tek asit ortamlarına dirençleri, birçok aktif metalden ayrılmalarını sağlar. Sınıflandırmayı soruda belirtilen reaktif ve gözlemle birlikte oku.",
+  "to": "Au ve Pt soy metallerin tipik örnekleridir. Olağan verilen tek asit ortamlarına dirençleri, birçok aktif metalden ayrılmalarını sağlar. Sınıflandırmayı soruda belirtilen reaktif ve gözlemle birlikte oku."
+ },
+ {
+  "from": "Sulu çözelti bağlamında asit, hidronyum H₃O⁺ derişimini; baz ise hidroksit OH⁻ derişimini artırabilen madde olarak tanıtılır. H⁺ yazımı çoğu okul denkleminde sulu proton için kullanılan kısaltmadır; suda serbest ve yalnız duran bir proton resmiyle karıştırılmamalıdır.",
+  "to": "Sulu çözelti bağlamında asit, hidronyum H₃O⁺ derişimini; baz ise hidroksit OH⁻ derişimini artırabilen madde olarak tanıtılır. H⁺ yazımı çoğu denklemde sulu proton için kullanılan kısaltmadır; suda serbest ve yalnız duran bir proton resmiyle karıştırılmamalıdır."
+ },
+ {
+  "from": "Tatma, koklama veya elle kayganlık arama bir kimya testi değildir. Uygulamada örnekler veri kartları ve güvenli temsillerle incelenir. Biberin acı hissi gibi duyu etkileri de bir maddenin baz olduğunun güvenilir kimyasal ölçütü sayılmaz.",
+  "to": "Tatma, koklama veya elle kayganlık arama bir kimya testi değildir. Biberin acı hissi gibi duyu etkileri de bir maddenin baz olduğunun güvenilir kimyasal ölçütü sayılmaz."
+ },
+ {
+  "from": "HCl + NaOH → NaCl + H₂O denkleminde mol oranı 1: 1’dir. H₂SO₄’ün iki protonunun tam nötrleştiği verilen toplam denklemde ise 1 mol H₂SO₄ için 2 mol KOH gerekir. Katsayı gram ya da mililitre oranı değildir.",
+  "to": "HCl + NaOH → NaCl + H₂O denkleminde mol oranı 1:1’dir. H₂SO₄’ün iki protonunun tam nötrleştiği verilen toplam denklemde ise 1 mol H₂SO₄ için 2 mol KOH gerekir. Katsayı gram ya da mililitre oranı değildir."
+ },
+ {
+  "from": "Bağıl atom kütlesi Aᵣ, ortalama atom kütlesinin u birimine oranıdır ve boyutsuzdur. Ortalama atom kütlesi u ile, mol kütlesi M ise g/mol ile yazılır. Okul hesabının hassasiyetinde sayısal değerleri eşleşir; bu, birimlerin aynı olduğu anlamına gelmez.",
+  "to": "Bağıl atom kütlesi Aᵣ, ortalama atom kütlesinin u birimine oranıdır ve boyutsuzdur. Ortalama atom kütlesi u ile, mol kütlesi M ise g/mol ile yazılır. Bu hesapların hassasiyetinde sayısal değerleri eşleşir; bu, birimlerin aynı olduğu anlamına gelmez."
+ },
+ {
+  "from": "N₂ + 3 H₂ → 2 NH₃ için bir mol N₂ üç mol H₂ gerektirir.1 mol N₂ ve 2 mol H₂ karışımında N₂ daha az mol olsa da H₂ önce tükenir. Kararı ihtiyaç oranı verir.",
+  "to": "N₂ + 3 H₂ → 2 NH₃ için bir mol N₂ üç mol H₂ gerektirir. 1 mol N₂ ve 2 mol H₂ karışımında N₂ daha az mol olsa da H₂ önce tükenir. Kararı ihtiyaç oranı verir."
+ },
+ {
+  "from": "28 g N₂ ile 12 g H₂,1 mol ve 6 mol giren demektir. N₂ sınırlar;2 mol NH₃ oluşur ve 3 mol H₂ artar. Ürün 34 g, artan 6 g; toplam 40 g korunur.",
+  "to": "28 g N₂ ile 12 g H₂, 1 mol ve 6 mol giren demektir. N₂ sınırlar; 2 mol NH₃ oluşur ve 3 mol H₂ artar. Ürün 34 g, artan 6 g; toplam 40 g korunur."
+ },
+ {
+  "from": "2 Mg +O₂ →2 MgO için 24 g Mg 16 g O alıp 40 g MgO oluşturur. O₂ molekülünden gelen oksijen atomları katının bileşimine katılır. Katı artışı bu modelde alınan oksijenin kütlesidir.",
+  "to": "2 Mg + O₂ → 2 MgO için 24 g Mg 16 g O alıp 40 g MgO oluşturur. O₂ molekülünden gelen oksijen atomları katının bileşimine katılır. Katı artışı bu modelde alınan oksijenin kütlesidir."
+ },
+ {
+  "from": "CuO +H₂ →Cu +H₂O için M(CuO)=80, M(Cu)=64, M(H₂O)=18 g/mol alınır. Her 80 g CuO'dan 16 g oksijen katıdan ayrılır;64 g Cu kalır.",
+  "to": "CuO + H₂ → Cu + H₂O için M(CuO)=80, M(Cu)=64, M(H₂O)=18 g/mol alınır. Her 80 g CuO'dan 16 g oksijen katıdan ayrılır; 64 g Cu kalır."
+ },
+ {
+  "from": "80 g saf CuO'nun yarısı indirgenirse 40 g CuO kalır,40 g tüketilen CuO'dan 32 g Cu oluşur. Tartılan katı 72 g'dır; yeni Cu yalnız 32 g'dır.",
+  "to": "80 g saf CuO'nun yarısı indirgenirse 40 g CuO kalır, 40 g tüketilen CuO'dan 32 g Cu oluşur. Tartılan katı 72 g'dır; yeni Cu yalnız 32 g'dır."
+ },
+ {
+  "from": "Katı kaybı 8 g O, oluşan su 9 g, tüketilen H₂ 1 g olur. Girenler 80+1, ürünler 72+9 =81 g. Aynı olayın iki ayrı sistem sınırı iki farklı ama tutarlı sonucu üretir.",
+  "to": "Katı kaybı 8 g O, oluşan su 9 g, tüketilen H₂ 1 g olur. Girenler 80+1, ürünler 72+9 = 81 g. Aynı olayın iki ayrı sistem sınırı iki farklı ama tutarlı sonucu üretir."
+ },
+ {
+  "from": "Örnekte verilen koşulda tepkimeye girmeyen dolgu varsa önce saf reaktif kütlesini ayır. İnert kısmı stoikiyometrik dönüşüme sokma; kalıntı hesabına değişmeden ekle.",
+  "to": "Örnekte verilen koşulda tepkimeye girmeyen dolgu varsa önce saf reaktif kütlesini ayır. İnert kısmı stokiyometrik dönüşüme sokma; kalıntı hesabına değişmeden ekle."
+ },
+ {
+  "from": "100 g örneğin %80'i CuO ise 80 g CuO,20 g inert vardır. Tam indirgenmede 64 g Cu+20 g inert =84 g katı kalır.16 g kayıp,100 gramın tümünün oksidi olduğu anlamına gelmez.",
+  "to": "100 g örneğin %80'i CuO ise 80 g CuO, 20 g inert vardır. Tam indirgenmede 64 g Cu + 20 g inert = 84 g katı kalır. 16 g kayıp, 100 gramın tümünün oksidi olduğu anlamına gelmez."
+ },
+ {
+  "from": "Son katı kütlesinden çıkarılan değişim, tek gaz alışverişi modelinde oksijen miktarını belirleyebilir. Mg oksitlenmesinde 8 g artış,0,5 mol Mg'nin yani 12 g Mg'nin dönüştüğünü gösterir.",
+  "to": "Son katı kütlesinden çıkarılan değişim, tek gaz alışverişi modelinde oksijen miktarını belirleyebilir. Mg oksitlenmesinde 8 g artış, 0,5 mol Mg'nin yani 12 g Mg'nin dönüştüğünü gösterir."
+ }
+]
