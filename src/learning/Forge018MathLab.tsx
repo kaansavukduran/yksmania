@@ -179,6 +179,15 @@ function PointLabels018({
           { x: px - w - gap, y: py + gap },
           { x: px - w / 2, y: py - h - gap * 2 },
           { x: px - w / 2, y: py + gap * 2 },
+          // Farther rings for crowded corners (two nearby points at a range end).
+          ...[2, 3].flatMap((k) => [
+            { x: px + gap, y: py - h * k - gap },
+            { x: px + gap, y: py + h * (k - 1) + gap },
+            { x: px - w - gap, y: py - h * k - gap },
+            { x: px - w - gap, y: py + h * (k - 1) + gap },
+            { x: px + gap + w * (k - 1), y: py - h / 2 },
+            { x: px - w * k - gap, y: py - h / 2 },
+          ]),
         ].map((r) => ({
           x: Math.max(78, Math.min(642 - w, r.x)),
           y: Math.max(36, Math.min(590 - h, r.y)),

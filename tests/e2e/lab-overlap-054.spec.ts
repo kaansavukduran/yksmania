@@ -1448,6 +1448,34 @@ const KNOWN = new Set(
 375	yatay-atis	yazı-çizgi	0
 375	zayif-etkilesimler	yazı-çizgi	δ+
 375	zayif-etkilesimler	yazı-çizgi	δ−
+1280	ayt-karmasik-sayilar	yazı-çizgi	-20
+1280	ayt-karmasik-sayilar	yazı-çizgi	-21
+1280	ayt-karmasik-sayilar	yazı-çizgi	-32
+1280	ayt-karmasik-sayilar	yazı-çizgi	20
+1280	ayt-karmasik-sayilar	yazı-çizgi	21
+1280	ayt-karmasik-sayilar	yazı-çizgi	32
+1280	ayt-karmasik-sayilar	yazı-çizgi	z/s
+1280	ayt-parabol	işaret	T/1/2
+1280	ayt-parabol	yazı-çizgi	y
+1280	kovalent-adlandirma-metalik-bag	yazı-çizgi	N
+320	ayt-karmasik-sayilar	yazı-çizgi	-20
+320	ayt-karmasik-sayilar	yazı-çizgi	-21
+320	ayt-karmasik-sayilar	yazı-çizgi	-32
+320	ayt-karmasik-sayilar	yazı-çizgi	20
+320	ayt-karmasik-sayilar	yazı-çizgi	21
+320	ayt-karmasik-sayilar	yazı-çizgi	32
+320	ayt-parabol	işaret	T/1/2
+320	ayt-parabol	yazı-çizgi	y
+320	kovalent-adlandirma-metalik-bag	yazı-çizgi	N
+375	ayt-karmasik-sayilar	yazı-çizgi	-20
+375	ayt-karmasik-sayilar	yazı-çizgi	-21
+375	ayt-karmasik-sayilar	yazı-çizgi	-32
+375	ayt-karmasik-sayilar	yazı-çizgi	20
+375	ayt-karmasik-sayilar	yazı-çizgi	21
+375	ayt-karmasik-sayilar	yazı-çizgi	32
+375	ayt-parabol	işaret	T/1/2
+375	ayt-parabol	yazı-çizgi	y
+375	kovalent-adlandirma-metalik-bag	yazı-çizgi	N
 `
     .split("\n")
     .filter(Boolean),

@@ -800,7 +800,12 @@ function MapLab() {
           {[0, 0.5, 1].map((f) => (
             <g key={f}>
               <path className="g020-axis" d={`M${55 + f * 220} 260V268`} />
-              <text x={55 + f * 220} y={293}>
+              {/* The right-end value ends at its tick so "11,25" stays inside the frame. */}
+              <text
+                x={55 + f * 220}
+                y={293}
+                style={f === 1 ? { textAnchor: "end" } : undefined}
+              >
                 {fmt(f * m.groundKm)}
               </text>
             </g>

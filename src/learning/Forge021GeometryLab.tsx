@@ -399,6 +399,12 @@ function Plane({
             </text>
           </g>
         ))}
+        {/* The origin name steps aside when a shape vertex sits on its plate. */}
+        {!points.some(
+          (p) =>
+            Math.abs(s.x(p.x) - (360 - font * 0.55)) < font * 1.2 &&
+            Math.abs(s.y(p.y) - (320 + Math.max(9, font * 0.2) + font * 0.6)) < font * 1.2,
+        ) && (
         <g data-origin-label>
           <rect
             className="g021-label-bg"
@@ -415,6 +421,7 @@ function Plane({
             O
           </text>
         </g>
+        )}
         <text x={690} y={315} textAnchor="middle" data-axis-end="x">
           x
         </text>

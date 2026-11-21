@@ -684,7 +684,7 @@ function BoundaryDiagram({ boundary }: { boundary: string }) {
       description={
         tectonic015Boundaries.find((x) => x.id === boundary)?.evidence ?? ""
       }
-      height={235}
+      height={246}
     >
       <path className="g015-gridline" d="M15 185H385" />
       {boundary === "divergent" ? (
