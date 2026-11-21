@@ -67,12 +67,17 @@ function compute() {
       );
     }).length;
     const figureLessons = ls.filter((l) => Object.keys(sectionFigures[l.id] ?? {}).length).length;
+    // An "ileri" or source question set has no lesson text of its own by design:
+    // its teaching lives in the base topic, so it is not a missing topic.
+    const questionSets = ls.filter((l) => !lessonGuides.has(l.id) && /-ileri$|-kaynak-sorulari-/.test(l.id)).length;
     const osymMine = osymRows.filter((r) => r.subject === id);
     return {
       id,
       name,
       officialHeadings: (curriculum as { subjectId: string }[]).filter((c) => c.subjectId === id).length,
       lessons: ls.length,
+      topics: ls.length - questionSets,
+      questionSets,
       readyLessons: ls.filter((l) => lessonGuides.has(l.id)).length,
       figureLessons,
       figures: ls.reduce((n, l) => n + Object.keys(sectionFigures[l.id] ?? {}).length, 0),
@@ -82,7 +87,7 @@ function compute() {
       sheets,
       osymQuestions: osymMine.length,
       osymBooklets: new Set(osymMine.map((r) => `${r.y}-${r.e}`)).size,
-      open: ls.length - figureLessons,
+      open: ls.length - questionSets - figureLessons,
     };
   });
   const sum = (k: keyof (typeof rows)[number]) => rows.reduce((n, r) => n + (r[k] as number), 0);
@@ -104,6 +109,8 @@ function compute() {
     totals: {
       officialHeadings: sum("officialHeadings"),
       lessons: sum("lessons"),
+      topics: sum("topics"),
+      questionSets: sum("questionSets"),
       readyLessons: sum("readyLessons"),
       figureLessons: sum("figureLessons"),
       figures: sum("figures"),
@@ -135,14 +142,14 @@ function markdown(data: ReturnType<typeof compute>) {
   ];
   const body = data.rows.map(
     (r) =>
-      `| ${r.name} | ${r.readyLessons} / ${r.lessons} | ${r.figureLessons} · ${r.figures} | ${frac(r.stepped, r.questions)} | ${frac(r.sheetsDone, r.sheets)} | ${r.osymQuestions ? `${tr(r.osymQuestions)} soru · ${r.osymBooklets} kitapçık` : "0"} | ${r.open} |`,
+      `| ${r.name} | ${r.readyLessons} / ${r.topics} | ${r.figureLessons} · ${r.figures} | ${frac(r.stepped, r.questions)} | ${frac(r.sheetsDone, r.sheets)} | ${r.osymQuestions ? `${tr(r.osymQuestions)} soru · ${r.osymBooklets} kitapçık` : "0"} | ${r.open} |`,
   );
   const x = data.exams;
   body.push(
     `| Denemeler | ${x.specs} hazır deneme (${x.specs - x.branch} karma, ${x.branch} ders) | — | ${x.specs} denemede toplam ${tr(x.items)} soru; incelemede aynı çözüm paneli | — | ${t.osymPdfDone} / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: ${x.fullLength} |`,
   );
   const foot = [
-    `| **Toplam** | **${t.readyLessons} / ${t.lessons}** | **${t.figureLessons} · ${t.figures}** | **${frac(t.stepped, t.questions)}** | **${frac(t.sheetsDone, t.sheets)}** | **${frac(t.osymPdfDone, t.osymPdfTotal)} PDF · ${tr(t.osymQuestions)} soru** | **${t.open}** |`,
+    `| **Toplam** | **${t.readyLessons} / ${t.topics}** | **${t.figureLessons} · ${t.figures}** | **${frac(t.stepped, t.questions)}** | **${frac(t.sheetsDone, t.sheets)}** | **${frac(t.osymPdfDone, t.osymPdfTotal)} PDF · ${tr(t.osymQuestions)} soru** | **${t.open}** |`,
     "",
     "| Genel gösterge | Değer |",
     "| --- | ---: |",
@@ -153,7 +160,8 @@ function markdown(data: ReturnType<typeof compute>) {
     `| Ara hatırlama (mikro ritim): ders · soru | ${frac(t.recallLessons, t.readyLessons)} · ${tr(t.recallChecks)} soru |`,
     `| Gösterim onarımı: soru alanı · ders paragrafı | ${tr(t.displayFixCards)} · ${tr(t.displayFixParagraphs)} |`,
     `| Kopya kâğıdı (işlenen / toplam) | ${frac(t.sheetsDone, t.sheets)} |`,
-    `| Resmî ana başlık · uygulama dersi · hazır anlatım | ${t.officialHeadings} · ${t.lessons} · ${t.readyLessons} |`,
+    `| Resmî ana başlık · anlatımlı konu · hazır anlatım | ${t.officialHeadings} · ${t.topics} · ${t.readyLessons} |`,
+    `| İleri ve kaynak soru seti (anlatımı ana konusunda) | ${t.questionSets} |`,
   ];
   return [...head, ...body, ...foot].join("\n") + "\n";
 }

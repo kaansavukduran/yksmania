@@ -5,6 +5,8 @@
    "name": "TYT Türkçe",
    "officialHeadings": 22,
    "lessons": 34,
+   "topics": 33,
+   "questionSets": 1,
    "readyLessons": 33,
    "figureLessons": 4,
    "figures": 15,
@@ -14,13 +16,15 @@
    "sheets": 33,
    "osymQuestions": 360,
    "osymBooklets": 9,
-   "open": 30
+   "open": 29
   },
   {
    "id": "tyt-matematik",
    "name": "TYT Matematik",
    "officialHeadings": 31,
    "lessons": 45,
+   "topics": 40,
+   "questionSets": 5,
    "readyLessons": 40,
    "figureLessons": 17,
    "figures": 45,
@@ -30,13 +34,15 @@
    "sheets": 38,
    "osymQuestions": 269,
    "osymBooklets": 9,
-   "open": 28
+   "open": 23
   },
   {
    "id": "tyt-geometri",
    "name": "TYT Geometri",
    "officialHeadings": 16,
    "lessons": 19,
+   "topics": 19,
+   "questionSets": 0,
    "readyLessons": 19,
    "figureLessons": 19,
    "figures": 174,
@@ -53,6 +59,8 @@
    "name": "TYT Fizik",
    "officialHeadings": 20,
    "lessons": 28,
+   "topics": 24,
+   "questionSets": 4,
    "readyLessons": 24,
    "figureLessons": 24,
    "figures": 177,
@@ -62,13 +70,15 @@
    "sheets": 24,
    "osymQuestions": 63,
    "osymBooklets": 9,
-   "open": 4
+   "open": 0
   },
   {
    "id": "tyt-kimya",
    "name": "TYT Kimya",
    "officialHeadings": 17,
    "lessons": 57,
+   "topics": 55,
+   "questionSets": 2,
    "readyLessons": 55,
    "figureLessons": 41,
    "figures": 179,
@@ -78,13 +88,15 @@
    "sheets": 56,
    "osymQuestions": 63,
    "osymBooklets": 9,
-   "open": 16
+   "open": 14
   },
   {
    "id": "tyt-biyoloji",
    "name": "TYT Biyoloji",
    "officialHeadings": 18,
    "lessons": 45,
+   "topics": 36,
+   "questionSets": 9,
    "readyLessons": 36,
    "figureLessons": 12,
    "figures": 37,
@@ -94,13 +106,15 @@
    "sheets": 36,
    "osymQuestions": 54,
    "osymBooklets": 9,
-   "open": 33
+   "open": 24
   },
   {
    "id": "tyt-tarih",
    "name": "TYT Tarih",
    "officialHeadings": 22,
    "lessons": 34,
+   "topics": 24,
+   "questionSets": 10,
    "readyLessons": 24,
    "figureLessons": 6,
    "figures": 16,
@@ -110,13 +124,15 @@
    "sheets": 24,
    "osymQuestions": 45,
    "osymBooklets": 9,
-   "open": 28
+   "open": 18
   },
   {
    "id": "tyt-cografya",
    "name": "TYT Coğrafya",
    "officialHeadings": 21,
    "lessons": 40,
+   "topics": 40,
+   "questionSets": 0,
    "readyLessons": 40,
    "figureLessons": 8,
    "figures": 17,
@@ -133,6 +149,8 @@
    "name": "TYT Felsefe",
    "officialHeadings": 15,
    "lessons": 17,
+   "topics": 17,
+   "questionSets": 0,
    "readyLessons": 17,
    "figureLessons": 3,
    "figures": 7,
@@ -149,6 +167,8 @@
    "name": "TYT Din",
    "officialHeadings": 19,
    "lessons": 20,
+   "topics": 20,
+   "questionSets": 0,
    "readyLessons": 20,
    "figureLessons": 4,
    "figures": 9,
@@ -165,6 +185,8 @@
    "name": "AYT Matematik",
    "officialHeadings": 36,
    "lessons": 18,
+   "topics": 17,
+   "questionSets": 1,
    "readyLessons": 17,
    "figureLessons": 13,
    "figures": 19,
@@ -174,13 +196,15 @@
    "sheets": 17,
    "osymQuestions": 273,
    "osymBooklets": 9,
-   "open": 5
+   "open": 4
   },
   {
    "id": "ayt-geometri",
    "name": "AYT Geometri",
    "officialHeadings": 9,
    "lessons": 4,
+   "topics": 4,
+   "questionSets": 0,
    "readyLessons": 4,
    "figureLessons": 4,
    "figures": 51,
@@ -197,6 +221,8 @@
    "name": "AYT Fizik",
    "officialHeadings": 32,
    "lessons": 47,
+   "topics": 46,
+   "questionSets": 1,
    "readyLessons": 46,
    "figureLessons": 11,
    "figures": 26,
@@ -206,13 +232,15 @@
    "sheets": 46,
    "osymQuestions": 126,
    "osymBooklets": 9,
-   "open": 36
+   "open": 35
   },
   {
    "id": "ayt-kimya",
    "name": "AYT Kimya",
    "officialHeadings": 34,
    "lessons": 56,
+   "topics": 55,
+   "questionSets": 1,
    "readyLessons": 55,
    "figureLessons": 18,
    "figures": 19,
@@ -222,13 +250,15 @@
    "sheets": 55,
    "osymQuestions": 117,
    "osymBooklets": 9,
-   "open": 38
+   "open": 37
   },
   {
    "id": "ayt-biyoloji",
    "name": "AYT Biyoloji",
    "officialHeadings": 29,
    "lessons": 76,
+   "topics": 75,
+   "questionSets": 1,
    "readyLessons": 75,
    "figureLessons": 16,
    "figures": 39,
@@ -238,7 +268,7 @@
    "sheets": 75,
    "osymQuestions": 117,
    "osymBooklets": 9,
-   "open": 60
+   "open": 59
   }
  ],
  "exams": {
@@ -254,6 +284,8 @@
  "totals": {
   "officialHeadings": 341,
   "lessons": 540,
+  "topics": 505,
+  "questionSets": 35,
   "readyLessons": 505,
   "figureLessons": 200,
   "figures": 830,
@@ -261,7 +293,7 @@
   "stepped": 6465,
   "sheetsDone": 109,
   "sheets": 517,
-  "open": 340,
+  "open": 305,
   "ogmPdfDone": 119,
   "ogmPdfTotal": 8981,
   "osymPdfDone": 18,
