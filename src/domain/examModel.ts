@@ -30,6 +30,12 @@ const shape = {
   helpEnabled: z.boolean().optional(),
   helpLevels: z.array(helpLevelSchema).min(1).max(300).optional(),
   helpPanelCounts: z.record(z.string(), helpLevelSchema).optional(),
+  // Soru başına toplam görüntülenme süresi (ms). İsteğe bağlı: eski kayıt ve
+  // yedekler bu alan olmadan açılır. Yalnız soru değişiminde ve bitişte,
+  // mutlak zaman damgalarından hesaplanır; saniyelik tik yazılmaz.
+  itemMs: z.array(z.number().int().min(0).max(86_400_000)).min(1).max(300).optional(),
+  // Açık sorunun görüntülenmeye başladığı mutlak an (yalnız taslakta).
+  viewedAt: z.number().int().nonnegative().optional(),
 };
 type DraftValue = {
   items: {
@@ -46,6 +52,8 @@ type DraftValue = {
   durationSeconds: number;
   helpLevels?: number[];
   helpPanelCounts?: Record<string, number>;
+  itemMs?: number[];
+  viewedAt?: number;
 };
 function check(value: DraftValue, context: z.RefinementCtx) {
   if (
@@ -64,6 +72,9 @@ function check(value: DraftValue, context: z.RefinementCtx) {
     ) ||
     (value.helpLevels !== undefined &&
       value.helpLevels.length !== value.items.length) ||
+    (value.itemMs !== undefined && value.itemMs.length !== value.items.length) ||
+    (value.viewedAt !== undefined &&
+      (value.viewedAt < value.startedAt || value.viewedAt > value.deadline)) ||
     (value.helpPanelCounts !== undefined &&
       Object.keys(value.helpPanelCounts).some(
         (key) =>

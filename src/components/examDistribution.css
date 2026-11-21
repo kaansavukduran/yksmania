@@ -1,0 +1,90 @@
+.exam-distribution {
+  margin-top: 2rem;
+  padding: max(var(--card-pad-y), min(3vw, 28px)) max(var(--card-pad-x), min(3vw, 28px));
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.exam-distribution h2 {
+  margin-top: 0;
+}
+.exam-distribution-tabs {
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+.exam-distribution > p {
+  max-width: 75ch;
+  line-height: 1.6;
+}
+.exam-distribution-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+  gap: 0.9rem;
+}
+.exam-distribution-row {
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  padding: 0.75rem 0.9rem;
+  min-width: 0;
+}
+.exam-distribution-row h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+.exam-distribution-row dl {
+  margin: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+.exam-distribution-row dl > div {
+  display: grid;
+  gap: 0.1rem;
+}
+.exam-distribution-row dt {
+  color: var(--muted);
+  font-size: 0.85em;
+}
+.exam-distribution-row dd {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+.exam-distribution-row dd svg {
+  flex: none;
+  color: var(--mint);
+}
+.exam-distribution-differs dd {
+  color: var(--danger);
+}
+.exam-distribution-differs dd svg {
+  color: var(--danger);
+}
+.exam-distribution-top-label {
+  margin: 0.7rem 0 0.3rem;
+  font-size: 0.85em;
+  color: var(--muted);
+}
+.exam-distribution-top {
+  margin: 0;
+  padding-inline-start: 1.3rem;
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.92em;
+}
+.exam-distribution-top li > span:first-child {
+  margin-inline-end: 0.4rem;
+}
+.exam-distribution-top li > span:last-child {
+  white-space: nowrap;
+}
+.exam-distribution-total {
+  font-weight: 600;
+}
+.exam-distribution-note {
+  border-inline-start: 3px solid var(--accent);
+  padding-inline-start: 0.75rem;
+}

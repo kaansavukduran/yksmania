@@ -9,6 +9,9 @@ import {
   ArrowRight,
   Check,
   Flag,
+  Hourglass,
+  Minus,
+  Repeat,
   Timer,
   Trophy,
   X,
@@ -37,6 +40,17 @@ import { examPace, nextFlagged, paceCheckpointDue } from "../domain/examInsights
 import { playExamFinishCue } from "../domain/examFinishCue";
 import { helpPanels, previousHelpPanelCount } from "../learning/questionHelp";
 import { effectiveHelpLevel } from "../learning/helpProgression";
+import { ExamBlockOrder } from "../components/ExamBlockOrder";
+import { ExamDistribution } from "../components/ExamDistribution";
+import { loadBlockOrder, saveBlockOrder } from "../domain/examOrder";
+import {
+  secondRoundIndices,
+  secondRoundStep,
+  secondRoundSummary,
+  slowestItems,
+  spokenDuration,
+  timePulse,
+} from "../domain/examPacing";
 
 export { ExamDeadlineWatcher } from "./ExamDeadlineWatcher";
 
@@ -56,6 +70,16 @@ export function Exams({
   const { state, commit } = useApp();
   const specs = useMemo(examCatalogue, []);
   const [tab, setTab] = useState("TYT");
+  const [distributionExam, setDistributionExam] = useState<"TYT" | "AYT">("TYT");
+  // Son kullanılan ders sırası bu cihazda hatırlanır (ilerleme kaydı değildir).
+  const [blockOrders, setBlockOrders] = useState(() => ({
+    TYT: loadBlockOrder("TYT"),
+    AYT: loadBlockOrder("AYT"),
+  }));
+  const changeBlockOrder = (exam: "TYT" | "AYT", order: string[]) => {
+    setBlockOrders((current) => ({ ...current, [exam]: order }));
+    saveBlockOrder(exam, order);
+  };
   // Hints are always available: learning while taking the exam is the goal.
   const mode = "learning" as const;
   const [catalog, setCatalog] = useState(false);
@@ -84,7 +108,8 @@ export function Exams({
     setError("");
     const now = Date.now();
     try {
-      await commit((s) => beginExam(s, spec, now, mode));
+      const order = spec.kind === "mixed" ? blockOrders[spec.exam] : undefined;
+      await commit((s) => beginExam(s, spec, now, mode, order));
       setCatalog(false);
       navigate("/exams");
     } catch {
@@ -136,7 +161,10 @@ export function Exams({
             key={value}
             className={tab === value ? "active" : ""}
             aria-pressed={tab === value}
-            onClick={() => setTab(value)}
+            onClick={() => {
+              setTab(value);
+              if (value === "TYT" || value === "AYT") setDistributionExam(value);
+            }}
           >
             {value === "AYT"
               ? "AYT Sayısal"
@@ -204,6 +232,14 @@ export function Exams({
                   sıralama tahmini değildir.
                 </p>
               )}
+              {spec.kind === "mixed" && (
+                <ExamBlockOrder
+                  exam={spec.exam}
+                  order={blockOrders[spec.exam]}
+                  disabled={busy || !!state.examDraft}
+                  onChange={(order) => changeBlockOrder(spec.exam, order)}
+                />
+              )}
               <button
                 className="primary"
                 disabled={busy || !!state.examDraft}
@@ -220,6 +256,13 @@ export function Exams({
             </article>
           ))}
       </div>
+      <ExamDistribution
+        exam={distributionExam}
+        onExam={setDistributionExam}
+        mock={specs.find(
+          (spec) => spec.kind === "mixed" && spec.exam === distributionExam,
+        )}
+      />
       <section className="exam-history" aria-label="Deneme geçmişi">
         <h2>Deneme geçmişin</h2>
         {state.examSessions.length ? (
@@ -303,6 +346,18 @@ function ExamRunner({
   const showPaceNote =
     !paceNoteClosed && !dismissedPaceNotes.has(draft.id) && paceCheckpointDue(draft, now);
   const flaggedTarget = nextFlagged(draft.flagged, draft.index, draft.items.length);
+  // Süre nabzı: ekranda canlı hesaplanır, hiçbir tik kaydedilmez.
+  const pulse = timePulse(draft, now);
+  // 2. tur listesi girişte sabitlenir; böylece boş bir soruyu yanıtlamak
+  // turdaki sırayı kaydırmaz. Yalnız bu ekranın belleğinde tutulur.
+  const [roundState, setRoundState] = useState<{ id: string; list: number[] } | null>(null);
+  const round = roundState?.id === draft.id ? roundState.list : null;
+  const roundCandidates = secondRoundIndices(draft);
+  const roundInfo = secondRoundSummary(draft, remaining);
+  const roundPosition = round ? round.indexOf(draft.index) : -1;
+  const roundPrevious = round ? secondRoundStep(round, draft.index, -1) : null;
+  const roundNext = round ? secondRoundStep(round, draft.index, 1) : null;
+  const [roundAnnouncement, setRoundAnnouncement] = useState("");
   const q = clarifiedQuestionView(draft.items[draft.index]);
   const sourcePresentation = sourceQuestionPresentation(q);
   const visibleHelpLevel = effectiveHelpLevel(
@@ -383,6 +438,28 @@ function ExamRunner({
       setBusy(false);
     }
   }
+  function startRound() {
+    const list = secondRoundIndices(draft);
+    if (!list.length) return;
+    const target = list.includes(draft.index)
+      ? draft.index
+      : (secondRoundStep(list, draft.index, 1) ?? list[0]);
+    setRoundState({ id: draft.id, list });
+    setRoundAnnouncement(
+      `2. tur başladı: ${list.length} soru. Önceki ve Sonraki yalnız bu sorular arasında gezer.`,
+    );
+    if (target !== draft.index) void change({ type: "index", index: target });
+  }
+  function endRound() {
+    setRoundState(null);
+    setRoundAnnouncement("2. turdan çıkıldı. Önceki ve Sonraki tüm sorularda gezer.");
+  }
+  const previousTarget = round ? roundPrevious : draft.index > 0 ? draft.index - 1 : null;
+  const nextTarget = round
+    ? roundNext
+    : draft.index < draft.items.length - 1
+      ? draft.index + 1
+      : null;
   return (
     <section className="exam-runner" aria-label="Devam eden sınav">
       <button className="text-button back-link" onClick={showCatalog}>
@@ -486,6 +563,27 @@ function ExamRunner({
             <span>{hidesSubject(draft.title) ? "Konu gizli (karma pratik)" : q.subjectName}</span>
             <StarBadge stars={questionStars(q.id)} />
           </div>
+          {pulse && !expired && (
+            <div className={`exam-pulse${pulse.over ? " exam-pulse-over" : ""}`}>
+              <p className="exam-pulse-line" aria-live="off">
+                <Hourglass size={16} aria-hidden="true" />
+                <span>
+                  Bu soruda {spokenDuration(pulse.spentMs)} · soru başı ortalama{" "}
+                  {spokenDuration(pulse.averageMs)}
+                </span>
+              </p>
+              <div className="exam-pulse-bar" aria-hidden="true">
+                <span style={{ width: `${Math.min(100, (pulse.ratio / 2) * 100)}%` }} />
+                <i className="exam-pulse-mark exam-pulse-average" />
+                <i className="exam-pulse-mark exam-pulse-limit" />
+              </div>
+              <p className="exam-pulse-warning" role="status">
+                {pulse.over
+                  ? "Bu soruda ortalamanın üstündesin; işaretleyip geçebilirsin."
+                  : ""}
+              </p>
+            </div>
+          )}
           {q.passage && (
             <section className="question-passage" aria-label="Sorunun metni">
               <p>{typeset(q.passage)}</p>
@@ -512,8 +610,8 @@ function ExamRunner({
                 void change({ type: "answer", index: draft.index, value: index })
               }
               onEnter={() => {
-                if (!busy && !expired && draft.index < draft.items.length - 1)
-                  void change({ type: "index", index: draft.index + 1 });
+                if (!busy && !expired && nextTarget !== null)
+                  void change({ type: "index", index: nextTarget });
               }}
               onHint={() => {
                 if (visibleHelpLevel < helpPanels(q).length + 1)
@@ -573,27 +671,71 @@ function ExamRunner({
               </button>
             )}
           </div>
+          <div className="exam-round" aria-label="2. tur">
+            {round ? (
+              <>
+                <p className="exam-round-summary">
+                  <strong>2. tur</strong>{" "}
+                  {roundPosition >= 0
+                    ? `· listede ${roundPosition + 1}/${round.length}`
+                    : "· bu soru 2. tur listesinde değil"}{" "}
+                  · işaretli {roundInfo.flagged} · boş {roundInfo.blank} · kalan süre{" "}
+                  {roundInfo.minutes} dk
+                </p>
+                <button
+                  className="secondary"
+                  disabled={busy || expired}
+                  onClick={endRound}
+                >
+                  Tüm sorulara dön
+                </button>
+              </>
+            ) : (
+              <>
+                <p className="exam-round-summary">
+                  İşaretli {roundInfo.flagged} · boş {roundInfo.blank} · kalan süre{" "}
+                  {roundInfo.minutes} dk
+                </p>
+                <button
+                  className="secondary"
+                  disabled={busy || expired || roundCandidates.length === 0}
+                  aria-label={
+                    roundCandidates.length
+                      ? `2. tur: işaretli ve boş ${roundCandidates.length} soru arasında gez`
+                      : "2. tur için işaretli ya da boş soru yok"
+                  }
+                  onClick={startRound}
+                >
+                  <Repeat size={17} aria-hidden="true" />
+                  2. tur
+                </button>
+              </>
+            )}
+            <p className="sr-only" aria-live="polite">
+              {roundAnnouncement}
+            </p>
+          </div>
           <div className="exam-question-navigation">
             <button
               className="secondary"
-              disabled={busy || expired || draft.index === 0}
-              onClick={() =>
-                void change({ type: "index", index: draft.index - 1 })
-              }
+              disabled={busy || expired || previousTarget === null}
+              onClick={() => {
+                if (previousTarget !== null)
+                  void change({ type: "index", index: previousTarget });
+              }}
             >
               <ArrowLeft size={17} />
-              Önceki soru
+              {round ? "Önceki (2. tur)" : "Önceki soru"}
             </button>
             <button
               className="secondary"
-              disabled={
-                busy || expired || draft.index === draft.items.length - 1
-              }
-              onClick={() =>
-                void change({ type: "index", index: draft.index + 1 })
-              }
+              disabled={busy || expired || nextTarget === null}
+              onClick={() => {
+                if (nextTarget !== null)
+                  void change({ type: "index", index: nextTarget });
+              }}
             >
-              Sonraki soru
+              {round ? "Sonraki (2. tur)" : "Sonraki soru"}
               <ArrowRight size={17} />
             </button>
           </div>
@@ -690,6 +832,7 @@ function ExamResults({
 }) {
   const score = examScore(session);
   const assistance = examAssistance(session);
+  const slowest = slowestItems(session);
   return (
     <section className="exam-results">
       <button
@@ -775,6 +918,47 @@ function ExamResults({
             </tbody>
           </table>
         </div>
+      </section>
+      <section className="panel exam-slowest" aria-labelledby="exam-slowest-title">
+        <h2 id="exam-slowest-title">En çok zaman alan 5 soru</h2>
+        {slowest === null ? (
+          <p className="muted">
+            Bu deneme soru başına süre kaydı eklenmeden önce kaydedildi; süre
+            dağılımı gösterilemez.
+          </p>
+        ) : slowest.length === 0 ? (
+          <p className="muted">Bu denemede ölçülen soru süresi yok.</p>
+        ) : (
+          <>
+            <p className="small muted">
+              Soru başı ortalama süre{" "}
+              {spokenDuration((session.durationSeconds * 1000) / session.items.length)}.
+              Süre, sorunun ekranda açık kaldığı toplam zamandır.
+            </p>
+            <ol className="exam-slowest-list">
+              {slowest.map((row) => (
+                <li key={row.index} className={`exam-slowest-${row.status}`}>
+                  <span>
+                    <strong>{row.index + 1}. soru</strong> · {row.subject}
+                  </span>
+                  <span className="exam-slowest-facts">
+                    <span className="exam-slowest-status">
+                      {row.status === "correct" ? (
+                        <Check size={15} aria-hidden="true" />
+                      ) : row.status === "wrong" ? (
+                        <X size={15} aria-hidden="true" />
+                      ) : (
+                        <Minus size={15} aria-hidden="true" />
+                      )}
+                      {row.status === "correct" ? "Doğru" : row.status === "wrong" ? "Yanlış" : "Boş"}
+                    </span>
+                    <span>{spokenDuration(row.ms)}</span>
+                  </span>
+                </li>
+              ))}
+            </ol>
+          </>
+        )}
       </section>
       <ExamInsights session={session} />
       <section

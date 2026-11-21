@@ -377,3 +377,63 @@ test("a new branch attempt varies available questions while both old results and
   expect(after.reviews).toEqual([]);
   expect(after.topicProgress).toEqual({});
 });
+
+test("block order, time pulse, second round and the official distribution panel work by keyboard without XP", async ({
+  page,
+}) => {
+  await page.clock.install({ time: new Date("2026-11-21T10:00:00+03:00") });
+  await page.goto("/#/today");
+  await nav(page, "Sınavlar");
+  const panel = page.getByRole("region", { name: "Gerçek sınavda dağılım" });
+  await expect(panel).toContainText("2018–2026");
+  await expect(panel).toContainText("Bu deneme resmî dağılımın birebir kopyası değildir");
+  await panel.getByRole("button", { name: "AYT Sayısal", exact: true }).click();
+  await expect(panel).toContainText("Fizik");
+  // Keyboard reordering keeps focus and is remembered on this device.
+  const up = page.getByRole("button", { name: "Sosyal Bilimler bloğunu yukarı taşı" });
+  await up.focus();
+  await page.keyboard.press("Enter");
+  await expect(up).toBeFocused();
+  await expect(page.getByText("Sosyal Bilimler 2. sıraya taşındı.")).toBeAttached();
+  expect(
+    await page.evaluate(() => JSON.parse(localStorage.getItem("yksmania.examBlockOrder.v1")!).TYT),
+  ).toEqual(["turkce", "sosyal", "matematik", "fen"]);
+  await page.getByRole("button", { name: "Başlat: TYT karma denemesi", exact: true }).click();
+  await expect(page.locator(".exam-runner")).toBeVisible();
+  const draft = (await stored(page)).examDraft;
+  expect(draft.items).toHaveLength(120);
+  expect(draft.items[40].subjectId).toMatch(/^tyt-(tarih|cografya|felsefe|din)$/);
+  // Time pulse: calm warning past 1.5 times the average; no per-second writes.
+  await page.clock.fastForward("02:10");
+  await expect(page.locator(".exam-pulse-warning")).toHaveText(
+    "Bu soruda ortalamanın üstündesin; işaretleyip geçebilirsin.",
+  );
+  expect((await stored(page)).examDraft.itemMs[0]).toBe(0);
+  await page.locator(".exam-answer").first().click();
+  await page.getByRole("button", { name: "Sonraki soru", exact: true }).click();
+  await expect(page.locator(".exam-question-meta")).toContainText("Soru 2 / 120");
+  await expect.poll(async () => (await stored(page)).examDraft.itemMs[0]).toBeGreaterThanOrEqual(130_000);
+  // Second round walks only flagged and blank questions.
+  await page.getByRole("button", { name: "Sonra bakmak için işaretle" }).click();
+  await page.getByRole("button", { name: "Önceki soru", exact: true }).click();
+  await page.getByRole("button", { name: "Sonra bakmak için işaretle" }).click();
+  await page.getByRole("button", { name: /^2\. tur:/ }).click();
+  await expect(page.locator(".exam-round-summary")).toContainText("listede 1/120");
+  await expect(page.locator(".exam-round-summary")).toContainText("işaretli 2 · boş 119");
+  await page.getByRole("button", { name: "Sonraki (2. tur)" }).click();
+  await expect(page.locator(".exam-question-meta")).toContainText("Soru 2 / 120");
+  await page.getByRole("button", { name: "Tüm sorulara dön" }).click();
+  await expect(page.getByRole("button", { name: "Sonraki soru", exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "Denemeyi bitir", exact: true }).click();
+  await page.getByRole("dialog").getByRole("button", { name: "Bitir ve sonucu gör", exact: true }).click();
+  const slowest = page.getByRole("region", { name: "En çok zaman alan 5 soru" });
+  await expect(slowest.locator("li").first()).toContainText("1. soru");
+  await expect(slowest.locator("li").first()).toContainText(/Doğru|Yanlış/);
+  const saved = await stored(page);
+  expect(saved.examSessions[0].itemMs).toHaveLength(120);
+  expect(saved.examSessions[0].viewedAt).toBeUndefined();
+  expect(saved.sessions).toEqual([]);
+  expect(saved.topicProgress).toEqual({});
+  const axe = await new AxeBuilder({ page }).include(".exam-slowest").analyze();
+  expect(axe.violations).toEqual([]);
+});

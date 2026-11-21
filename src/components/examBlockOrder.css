@@ -1,0 +1,48 @@
+.exam-block-order {
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  padding: 0.6rem 0.9rem 0.8rem;
+  margin: 0 0 1rem;
+  width: 100%;
+  min-width: 0;
+}
+.exam-block-order legend {
+  padding: 0 0.3rem;
+  font-weight: 650;
+}
+.exam-block-order > p {
+  margin: 0.2rem 0 0.6rem;
+}
+.exam-block-order ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.4rem;
+}
+.exam-block-order li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  min-width: 0;
+}
+.exam-block-order li > span:first-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.exam-block-place {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.exam-block-actions {
+  display: inline-flex;
+  gap: 0.35rem;
+  flex: none;
+}
+.exam-block-actions .secondary {
+  width: 2.75rem;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  padding: 0;
+}

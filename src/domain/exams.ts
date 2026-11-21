@@ -9,6 +9,8 @@ import {
 } from "../learning/questionHelp";
 import { effectiveHelpLevel } from "../learning/helpProgression";
 import { buildStarIndex, type StarIndex } from "./difficulty";
+import { defaultBlockOrder, orderExamItems } from "./examOrder";
+import { recordView } from "./examPacing";
 export type ExamSpec = {
   id: string;
   title: string;
@@ -342,6 +344,7 @@ export function beginExam(
   spec: ExamSpec,
   now: number,
   mode: "simulation" | "learning" = "simulation",
+  blockOrder?: readonly string[],
 ): AppState {
   if (state.examDraft) throw Error("EXAM_IN_PROGRESS");
   if (!spec.items.length) throw Error("EXAM_EMPTY");
@@ -351,11 +354,19 @@ export function beginExam(
       session.exam === spec.exam &&
       session.kind === spec.kind,
   );
-  const items = selectExamVariant(
+  // Ders sırası yalnız karma denemede seçilir; varyant karşılaştırması
+  // varsayılan sırayla yapılır ki seçilen sıra soru seçimini etkilemesin.
+  const ordered = spec.kind === "mixed" && blockOrder !== undefined;
+  const variant = selectExamVariant(
     spec,
     `${spec.id}:${now}:${state.examSessions.length}`,
-    previous?.items.map((item) => item.id),
+    previous &&
+      (ordered
+        ? orderExamItems(spec.exam, previous.items, defaultBlockOrder(spec.exam))
+        : previous.items
+      ).map((item) => item.id),
   );
+  const items = ordered ? orderExamItems(spec.exam, variant, blockOrder) : variant;
   const draft: ExamDraft = {
     id: `exam:${now}:${spec.id}`,
     title: spec.title,
@@ -369,6 +380,8 @@ export function beginExam(
     deadline: now + spec.durationSeconds * 1000,
     durationSeconds: spec.durationSeconds,
     mode,
+    itemMs: items.map(() => 0),
+    viewedAt: now,
   };
   return { ...state, examDraft: draft };
 }
@@ -393,7 +406,13 @@ export function changeExam(
   )
     throw Error("EXAM_INDEX");
   if (action.type === "index")
-    return { ...state, examDraft: { ...draft, index: action.index } };
+    return {
+      ...state,
+      examDraft:
+        action.index === draft.index
+          ? { ...draft, index: action.index }
+          : { ...recordView(draft, draft.index, now), index: action.index },
+    };
   if (action.type === "help-enabled")
     return { ...state, examDraft: { ...draft, helpEnabled: action.value } };
   if (action.type === "help") {
@@ -464,9 +483,17 @@ export function finishExam(state: AppState, id: string, now: number): AppState {
   if (state.examSessions.some((s) => s.id === id)) return state;
   const draft = state.examDraft;
   if (!draft || draft.id !== id) throw Error("EXAM_CHANGED");
+  const finishedAt = Math.min(draft.deadline, Math.max(now, draft.startedAt));
+  // Açık sorunun süresi bitiş anına kadar eklenir; görüntüleme başlangıcı
+  // yalnız taslakta anlamlıdır, oturuma taşınmaz.
+  const timed =
+    draft.viewedAt !== undefined || draft.itemMs !== undefined
+      ? recordView(draft, draft.index, finishedAt)
+      : { ...draft };
+  delete timed.viewedAt;
   const session: ExamSession = {
-    ...draft,
-    finishedAt: Math.min(draft.deadline, Math.max(now, draft.startedAt)),
+    ...timed,
+    finishedAt,
     timedOut: now >= draft.deadline,
   };
   return {

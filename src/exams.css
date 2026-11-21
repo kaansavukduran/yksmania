@@ -403,3 +403,131 @@
   margin: 0.4rem 0;
   padding-left: 1.3rem;
 }
+
+/* Süre nabzı: canlı hesap, kayıt yok. Renk + metin; yanıp sönme yok. */
+.exam-pulse {
+  margin: 0.4rem 0 1rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  display: grid;
+  gap: 0.4rem;
+}
+.exam-pulse p {
+  margin: 0;
+}
+.exam-pulse-line {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.92em;
+  color: var(--muted);
+}
+.exam-pulse-bar {
+  position: relative;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: var(--surface-2, var(--border));
+  overflow: hidden;
+}
+.exam-pulse-bar > span {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: var(--mint);
+  border-radius: inherit;
+}
+.exam-pulse-mark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--text);
+  opacity: 0.55;
+}
+.exam-pulse-average {
+  left: 50%;
+}
+.exam-pulse-limit {
+  left: 75%;
+}
+.exam-pulse-warning:empty {
+  display: none;
+}
+.exam-pulse-over {
+  border-color: var(--accent);
+  border-inline-start-width: 4px;
+}
+.exam-pulse-over .exam-pulse-bar > span {
+  background: var(--accent);
+}
+.exam-pulse-over .exam-pulse-line {
+  color: var(--text);
+}
+.exam-pulse-warning {
+  font-weight: 600;
+}
+
+/* 2. tur: işaretli ve boş sorular arasında dolaşma. */
+.exam-round {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+.exam-round-summary {
+  margin: 0;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.exam-round button {
+  max-width: 100%;
+}
+
+/* Sonuç: en çok zaman alan sorular. */
+.exam-slowest {
+  margin-top: 1.5rem;
+  padding: max(var(--card-pad-y), min(3vw, 28px)) max(var(--card-pad-x), min(3vw, 28px));
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.exam-slowest h2 {
+  margin-top: 0;
+}
+.exam-slowest-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.exam-slowest-list li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.3rem 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.exam-slowest-facts {
+  display: inline-flex;
+  gap: 1rem;
+  align-items: center;
+  font-variant-numeric: tabular-nums;
+}
+.exam-slowest-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.exam-slowest-correct .exam-slowest-status svg {
+  color: var(--mint);
+}
+.exam-slowest-wrong .exam-slowest-status svg {
+  color: var(--danger);
+}
+.exam-slowest-blank .exam-slowest-status svg {
+  color: var(--muted);
+}
