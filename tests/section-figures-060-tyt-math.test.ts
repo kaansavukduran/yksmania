@@ -1,0 +1,118 @@
+import { describe, expect, it } from "vitest";
+import { sectionFigures } from "../src/learning/sectionFigures/registry";
+import { sectionFigureGuideIds } from "../src/learning/sectionFigures/figureGuideIds";
+
+// Forge060 TYT Matematik figürleri: sonuç satırlarındaki sayılar rehber
+// bölümlerindeki örneklerle aynı hesaptan gelmeli.
+const fig = (guide: string, title: string) => {
+  const def = sectionFigures[guide]?.[title];
+  if (!def) throw Error(`eksik figür: ${guide} / ${title}`);
+  return def;
+};
+const frame = (guide: string, title: string, value = 0, step = 0) => {
+  const f = fig(guide, title).draw(value, step);
+  const labels = f.els.flatMap((e) => (e.k === "text" ? [e.s] : e.k === "pt" && e.label ? [e.label] : []));
+  return { labels, readout: (f.readout ?? []).join(" ") };
+};
+
+const GUIDES = [
+  "temel-kavramlar",
+  "tek-cift-isaret",
+  "asal-sayilar",
+  "faktoriyel",
+  "sayi-basamaklari",
+  "bolme-bolunebilme",
+  "carpanlara-ayirma",
+  "bilimsel-gosterim-katsayi",
+  "kartezyen-carpim",
+  "mantik-onerme",
+  "veri-analizi",
+  "grafik-problemleri",
+  "faiz-problemleri",
+  "havuz-problemleri",
+  "kesir-problemleri",
+  "sayi-problemleri",
+];
+
+describe("Forge060 TYT Matematik bölüm figürleri", () => {
+  it("16 dersin her birine dört figür kaydeder", () => {
+    for (const g of GUIDES) {
+      expect(sectionFigureGuideIds.has(g), g).toBe(true);
+      expect(Object.keys(sectionFigures[g] ?? {}).length, g).toBe(4);
+    }
+  });
+
+  it("figür metinlerinde uzun tire, şapka üs ve süs simgesi yok; her adım ve uç değer çizilir", () => {
+    for (const g of GUIDES)
+      for (const [title, def] of Object.entries(sectionFigures[g])) {
+        const values = def.param ? [def.param.min, def.param.init, def.param.max] : [0];
+        const steps = def.steps ? def.steps.map((_, i) => i) : [0];
+        for (const value of values)
+          for (const step of steps) {
+            const f = def.draw(value, step);
+            const text = [def.caption, def.alt, ...(f.readout ?? []), ...f.els.flatMap((e) => (e.k === "text" ? [e.s] : e.k === "pt" && e.label ? [e.label] : []))].join(" ");
+            expect(text, `${g} / ${title}`).not.toMatch(/[—✦★✓✕✗➜^]|NaN|undefined|Infinity/);
+          }
+      }
+  });
+
+  it("temel kavramlar, tek–çift ve asal sayılar", () => {
+    expect(frame("temel-kavramlar", "Rakam yazım aracıdır, sayı bir değerdir", 47).readout).toContain("47 = 10·4 + 7");
+    expect(frame("temel-kavramlar", "Tanım koşulunu sadeleştirerek silemezsin", 2).readout).toContain("0/0 tanımsız");
+    expect(frame("temel-kavramlar", "Tanım koşulunu sadeleştirerek silemezsin", 5).readout).toContain("(9)/(3) = 3");
+    expect(frame("tek-cift-isaret", "Üslerde koşulu ve tabanı koru", 4).readout).toContain("(−2)⁴ = 16");
+    expect(frame("tek-cift-isaret", "Üslerde koşulu ve tabanı koru", 3).readout).toContain("−2³ = −(2³) = −8");
+    expect(frame("tek-cift-isaret", "Çarpımda bir çift yeter; işarette sıfır önce gelir", 0, 3).readout).toContain("Negatif çarpan sayısı 2; işaret: pozitif");
+    expect(frame("tek-cift-isaret", "Çarpımda bir çift yeter; işarette sıfır önce gelir", 0, 4).readout).toContain("sıfır (işaretsiz)");
+    expect(frame("asal-sayilar", "Bölen denemesi neden karekökte biter?", 97).readout).toContain("97 asal");
+    expect(frame("asal-sayilar", "Bölen denemesi neden karekökte biter?", 49).readout).toContain("49 = 7 × 7");
+    expect(frame("asal-sayilar", "Bölen denemesi neden karekökte biter?", 121).readout).toContain("121 = 11 × 11");
+    expect(frame("asal-sayilar", "Asal toplamlarında 2’yi ayrı düşün", 19).readout).toContain("s = 19: 2 + 17.");
+    expect(frame("asal-sayilar", "Asal toplamlarında 2’yi ayrı düşün", 12).readout).toContain("5 + 7");
+  });
+
+  it("faktöriyel, basamak ve bölünebilme", () => {
+    expect(frame("faktoriyel", "Azalan seçimler neden n! verir?", 4).readout).toContain("= 24");
+    expect(frame("faktoriyel", "Bir asalın kaç kopyası var?", 0, 0).readout).toContain("4 + 1 = 5");
+    expect(frame("faktoriyel", "Bir asalın kaç kopyası var?", 0, 1).readout).toContain("6 + 3 + 1 = 10");
+    expect(frame("faktoriyel", "Sondaki sıfırların kaynağı 2×5 çiftleridir", 25).readout).toContain("5 + 1 = 6");
+    expect(frame("faktoriyel", "Sondaki sıfırların kaynağı 2×5 çiftleridir", 24).readout).toContain("4 + 0 = 4");
+    expect(frame("sayi-basamaklari", "Sola eklemek ve sağa eklemek farklıdır", 3).readout).toContain("62063");
+    expect(frame("sayi-basamaklari", "Sola eklemek ve sağa eklemek farklıdır", 3).readout).toContain("36206");
+    expect(frame("sayi-basamaklari", "Numara sayısı ile yazılan rakam sayısı", 120).readout).toContain("9·1 + 90·2 + 21·3 = 252");
+    expect(frame("sayi-basamaklari", "Basamak aralığı ve 10’un kuvvetleri", 5).readout).toContain("90.000");
+    expect(frame("bolme-bolunebilme", "Eşitlik tek başına bölme işlemi değildir", 38).readout).toContain("38 = 7·5 + 3");
+    expect(frame("bolme-bolunebilme", "11 için işaretli ağırlık tablosu").readout).toContain("kalan 9");
+    expect(9051 % 11).toBe(9);
+  });
+
+  it("cebir, bilimsel gösterim, kartezyen çarpım ve mantık", () => {
+    expect(frame("carpanlara-ayirma", "Tam karede uçlar kadar orta terim de önemlidir", 4).readout).toContain("16 + 24 + 9 = 49");
+    expect(frame("carpanlara-ayirma", "İki kare farkı: toplam ile farkın çarpımı", 2, 2).readout).toContain("3·7 = 21");
+    expect(frame("carpanlara-ayirma", "Baş katsayı 1 değilse çapraz terimlerin toplamını denetle", 0, 1).readout).toContain("(3x + 2)(2x − 1)");
+    expect(frame("bilimsel-gosterim-katsayi", "Toplama ve çıkarmada ortak ölçek kur", 0, 2).readout).toContain("3,9·10⁵");
+    expect(frame("bilimsel-gosterim-katsayi", "Çarpma ve bölmede katsayı ile ölçeği ayır", 0, 2).readout).toContain("2,4·10³");
+    expect(frame("kartezyen-carpim", "Her ilk seçimi her ikinci seçimle eşleştir", 0, 1).readout).toContain("6 çift");
+    expect(frame("kartezyen-carpim", "Dağılma tanımdaki “ve/veya”dan türetilir", 0, 2).readout).toContain("4 + 4 − 2 = 6");
+    const ct = fig("mantik-onerme", "Karşıt ters denktir; karşıt ve ters genellikle değildir").draw(0, 0);
+    expect(ct.els.filter((e) => e.k === "text").map((e) => (e as { s: string }).s).slice(6, 30)).toEqual("111111100110011001001111".split(""));
+  });
+
+  it("veri, grafik ve problem modelleri", () => {
+    expect(frame("veri-analizi", "Ortancayı yazılış sırası belirlemez", 0, 0).labels).toContain("ortanca = (4 + 7)/2 = 5,5");
+    expect(frame("veri-analizi", "Uç değerin etkisini ölç, ezberleme", 13).readout).toContain("ortalama 5; ortanca 3; açıklık 12");
+    expect(frame("veri-analizi", "Ortalamayı toplama geri döndür", 0, 1).readout).toContain("840/12 = 70");
+    expect(frame("grafik-problemleri", "Dairede payın paydası bütünün toplamıdır", 0, 0).labels).toContain("30: %30, 108°");
+    expect(frame("grafik-problemleri", "Dairede payın paydası bütünün toplamıdır", 0, 1).labels).toContain("30: %27,3, 98,2°");
+    expect(frame("grafik-problemleri", "Çizgi grafiğinde değişim ile değişim hızı ayrıdır", 3).readout).toContain("eşit (21 L)");
+    expect(frame("grafik-problemleri", "Ortalama, ortanca ve tepe değerini ayrı hesapla", 0, 1).readout).toContain("ortanca 3,5");
+    expect(frame("faiz-problemleri", "Basit faiz neden doğrusal artar?", 2).readout).toContain("7.200 TL");
+    expect(frame("faiz-problemleri", "Ayı ve günü oranla aynı döneme çevir", 3).readout).toContain("0,04");
+    expect(frame("faiz-problemleri", "Faiz yeniden yatırılıyorsa çarpanlar değişir", 2).readout).toContain("Fark 50 TL");
+    expect(frame("havuz-problemleri", "Giriş ekler, çıkış azaltır", 18).readout).toContain("%100 dolu");
+    expect(frame("havuz-problemleri", "Başlangıç doluluğunu denklemde tut", 3).readout).toContain("%62,5");
+    expect(frame("kesir-problemleri", "Geriye doğru çözüm hangi aşamayı geri alır?", 0, 2).readout).toContain("120/(2/3) = 180");
+    expect(frame("sayi-problemleri", "İşlemin cümledeki sırasını parantezle koru", 10).readout).toContain("4x − 3 = 37, 4(x − 3) = 28");
+    expect(frame("sayi-problemleri", "En az ve en çok eşitlikten fazlasını söyler", 95).readout).toContain("En çok 7 tane: 7·12 = 84 ≤ 95 < 96");
+  });
+});
