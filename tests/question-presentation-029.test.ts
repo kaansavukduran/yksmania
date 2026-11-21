@@ -464,11 +464,16 @@ describe("029 three guarded presentation revisions", () => {
     expect(state.examDraft).toEqual(before);
     state = finishExam(state, id, 2000);
     const session = state.examSessions[0];
-    expect({ ...session, finishedAt: undefined, timedOut: undefined }).toEqual({
-      ...before,
+    // Finishing closes the per-question timer: the open question's time joins
+    // itemMs and the draft-only viewedAt stamp is not carried into the session.
+    const { itemMs: sessionMs, ...sessionRest } = session;
+    const { itemMs: _draftMs, viewedAt: _viewedAt, ...beforeRest } = before as typeof before & { itemMs?: number[]; viewedAt?: number };
+    expect({ ...sessionRest, finishedAt: undefined, timedOut: undefined }).toEqual({
+      ...beforeRest,
       finishedAt: undefined,
       timedOut: undefined,
     });
+    expect(sessionMs).toHaveLength(before.items.length);
     expect(session.items).toEqual(paper);
     expect(session.answers).toEqual([3, 0, 3]);
     expect(session.flagged).toEqual([1, 2]);
