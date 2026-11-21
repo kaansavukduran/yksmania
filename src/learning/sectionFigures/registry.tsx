@@ -134,6 +134,11 @@ import { geographyFigures058Landforms } from "./geographyFigures058Landforms";
 import { geographyFigures058Soil } from "./geographyFigures058Soil";
 import { geographyFigures058Tectonic } from "./geographyFigures058Tectonic";
 import { geographyFigures058Population } from "./geographyFigures058Population";
+import { biologyFigures059Circulation } from "./biologyFigures059Circulation";
+import { biologyFigures059Endocrine } from "./biologyFigures059Endocrine";
+import { biologyFigures059Body } from "./biologyFigures059Body";
+import { biologyFigures059Molecular } from "./biologyFigures059Molecular";
+import { biologyFigures059Life } from "./biologyFigures059Life";
 
 /*
  * Figure packs are merged per guide. A plain object spread replaced a whole
@@ -275,6 +280,11 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   geographyFigures058Soil,
   geographyFigures058Tectonic,
   geographyFigures058Population,
+  biologyFigures059Circulation,
+  biologyFigures059Endocrine,
+  biologyFigures059Body,
+  biologyFigures059Molecular,
+  biologyFigures059Life,
 ];
 export const sectionFigures: Record<string, Record<string, FigureDef>> = {};
 for (const pack of figurePacks)
