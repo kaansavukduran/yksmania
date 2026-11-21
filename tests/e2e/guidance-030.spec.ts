@@ -89,7 +89,7 @@ const diagnostics = new WeakMap<
 >();
 const promptById = new Map(promptFixtures.map((row) => [row.id, row]));
 const shownPrompt = (q: Lesson["questions"][number]) =>
-  promptById.get(q.id)?.prompt ?? q.prompt.tr;
+  typeset(promptById.get(q.id)?.prompt ?? q.prompt.tr);
 const shownExplanation = (q: Lesson["questions"][number]) => typeset(q.explanation.tr);
 const flat = (q: Lesson["questions"][number]) => ({
   id: q.id,

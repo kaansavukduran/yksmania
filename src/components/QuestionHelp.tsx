@@ -289,7 +289,7 @@ export function QuestionHelp({
           );
         })}
       </ol>
-      <p className="sr-only" aria-live="polite" aria-atomic="true">
+      <p className="sr-only help-live" aria-live="polite" aria-atomic="true">
         {fullView ? "Final: tam çözüm, çeldirici otopsisi ve konu özeti" : `Adım ${view} / ${total}: ${panels[view - 1]?.title ?? ""}`}
       </p>
       <aside className="hint-box" aria-label="Çözüm rehberi">

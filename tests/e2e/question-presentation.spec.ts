@@ -402,7 +402,12 @@ test("a validated legacy raw two-item exam renders clarified conditions while re
   const completed = await stored(page);
   expect(completed.examDraft).toBeNull();
   const { finishedAt, timedOut, ...savedDraft } = completed.examSessions[0];
-  expect(savedDraft).toEqual(answeredDraft);
+  // Finishing closes the per-question timer; timing is not part of the saved paper.
+  const withoutTiming = <T extends object>(value: T) => {
+    const { itemMs: _itemMs, viewedAt: _viewedAt, ...rest } = value as T & { itemMs?: number[]; viewedAt?: number };
+    return rest;
+  };
+  expect(withoutTiming(savedDraft)).toEqual(withoutTiming(answeredDraft));
   expect(finishedAt).toBeGreaterThanOrEqual(draft.startedAt);
   expect(finishedAt).toBeLessThan(draft.deadline);
   expect(timedOut).toBe(false);

@@ -21,6 +21,11 @@ import type {
   QuestionGuidance,
 } from "../../src/domain/questionHelpModel";
 import { expectGuideSections, guideSectionCount } from "./helpers/guidePages";
+/** Exam drafts carry per-question timing (itemMs, viewedAt) that changes with navigation. */
+const withoutTiming = <T extends object>(draft: T) => {
+  const { itemMs: _itemMs, viewedAt: _viewedAt, ...rest } = draft as T & { itemMs?: number[]; viewedAt?: number };
+  return rest;
+};
 
 registerOfflineBootDiagnostics();
 
@@ -560,7 +565,8 @@ test("synthetic validated legacy TYT five-item raw paper: active and finished vi
         page.locator(".help-content > section").first(),
       ).toContainText(typeset(corrections[card.id].hint!));
     const current = (await stored(page)).examDraft!;
-    expect({ ...current, index: 0 }).toEqual(draft);
+    // Per-question timing moves with every question change; the paper itself must not.
+    expect(withoutTiming({ ...current, index: 0 })).toEqual(withoutTiming(draft));
     expect(JSON.stringify(current.items)).toBe(rawBytes);
     if (index < rawItems.length - 1) {
       await page

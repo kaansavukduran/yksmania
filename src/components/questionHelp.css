@@ -381,3 +381,12 @@
     padding: 0.35rem 0.4rem;
   }
 }
+
+/* The spoken step announcement is one pixel wide; letting its text wrap keeps
+   the hidden line inside the panel instead of running past the screen edge at
+   large text sizes. */
+.help-live {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-all;
+}

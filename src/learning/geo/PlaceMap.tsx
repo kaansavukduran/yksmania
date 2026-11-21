@@ -254,7 +254,9 @@ export function PlaceMap({ places }: { places: Place[] }) {
     if (!focus) return;
     const [fx, fy] = rxy(focus.lon, focus.lat);
     const w = W / 3;
-    setView(clampView({ x: fx - w / 2, y: fy - (w * H) / W / 2, w, h: (w * H) / W }));
+    // animateTo cancels a glide still running from the pin tap; setting the
+    // view directly would be overwritten by that glide's next frame.
+    animateTo(clampView({ x: fx - w / 2, y: fy - (w * H) / W / 2, w, h: (w * H) / W }));
   };
   return (
     <figure
