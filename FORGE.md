@@ -1,3 +1,19 @@
+# Forge053–057 — adım adım çözüm %100, ÖSYM kalıp haritası, sınav ve hata araçları, mikro ritim
+
+21 Kasım 2026. Forge052'nin üç ajanlı turu (ferahlık, SVG kapısı, şık ve çözüm paneli) ile ardından gelen içerik dalgaları bu bölümde toplanır. Durum etiketleri: **yapıldı** = bu dalda, testleriyle; **bekliyor** = henüz bu dalda değil.
+
+- **Adım adım çözüm (yapıldı):** 6.465 / 6.465 soru. Eski “tek ipucu + tam çözüm” kartlarının 2.600'üne terim, veri-yöntem, adımlar, 30 saniyelik rota, çeldirici otopsisi ve kontrol yazıldı (`src/learning/guidance053/`, kart verisi baytı baytına aynı; kılavuz kartın kimlik özetine bağlı). “İpucu al” yalnız ilk paneli açar; “Adım adım çözüm” ayrı paneldir (1…F ray, Verilen/İstenen kutusu, “Çözümü kapat, benzerini bağımsız dene”). Açılan her adım yardım olarak kaydedilir; XP, kupa ve bağımsız doğru üretmez.
+- **İçerik denetimi (yapıldı):** `npm run check` içinde içerik kapısı: eksik çeldirici, boş gerekçe, kendi kartından çözülemeyen soru, yetim konu, ipucusuz kart ve adım adım çözümsüz kart tavanlarının hepsi 0.
+- **Ferahlık (yapıldı):** kart iç boşluğu, kartlar arası boşluk ve sayfa kenarı tek yerden (`--card-pad`, `--card-gap`, `--page-gutter`). Dar ekranda %100 ölçekte 17,6 px kart yanı ve 16 px sayfa kenarı; arayüz ölçeği büyüdükçe 12 px'e iner. Okuma ve soru sayfaları 320 px'te eski, dar yan ölçüsünü korur (uzun sözcük bölünmesin diye).
+- **Sınav araçları (yapıldı):** ders sırası seçimi, süre nabzı (soru başına geçen süre, isteğe bağlı `itemMs`/`viewedAt` alanları; eski taslak ve yedekler aynen açılır), 2. tur, ÖSYM dağılım paneli. Karma denemede Temel Matematik 30 + Geometri 10 ayrı sayılır. Onarım turları (hata sprinti, boss) haftalık raporda deneme sayılmaz.
+- **Yanlışlarım (yapıldı):** kayıtlardan türeyen üç aşamalı onarım (aynı soru, ikiz soru, gecikmeli tekrar; “kalıcı onarım” yalnız 3. aşamada), ikiz soru seçimi, ÖSYM tuzak destesi ve hata kartında başlığın ÖSYM sıklığı.
+- **99_ÖSYM (yapıldı: 18 / 1.001 PDF):** 2018–2026 TYT ve AYT kitapçıkları sayfa görüntüsünden soru soru okundu: 1.845 satır (konu, kalıp, beceri, tuzak, biçim, zorluk, günlük bağlam; “yıl + sınav + test + soru numarası”). Soru metni kopyalanmaz; PDF depoya girmez. Görünen yerler: konu paneli, ders sonu, Dersler'de başlık × yıl sıklık haritası, Sınavlar'da dağılım, Yanlışlarım'da tuzak destesi. Eşleşme yoksa panel hiç çıkmaz; “sorulmadı” denmez.
+- **Mikro ritim (sürüyor):** anlatım bölümleri arasında “Okuduğunu hatırla” kartı (soru görünür, cevap düğmeyle açılır, hiçbir şey kaydetmez). Sayılar ilerleme tablosundadır; TYT'nin on dersi, AYT Matematik, Geometri ve Fizik tamam, AYT Kimya ve Biyoloji partileri yazılıyor.
+- **Gösterim onarımı (yapıldı, sürüyor):** kart ve ders verisi koruma testleriyle sabit olduğu için bitişik yazım, kayıp simge ve sızmış üretim notları ekranda onarılır: genel kurallar (`src/domain/typeset.ts`) + incelenmiş birebir eşleme (`src/learning/displayFixes/`). Bölüm başlığı, tablo, örnek başlığı, ders sonu hatırlama ve kopya kâğıtları da aynı katmandan geçer. Sağlık, güvenlik ve tarafsızlık notları ile “özgün” etiketleri yerinde bırakılır.
+- **İlerleme tablosu (yapıldı):** `npm run progress` koddan üretir; eskiyince test kırılır. “İleri” ve kaynak soru setleri (35) eksik konu sayılmaz, kendi satırında durur.
+- **Doğrulama (bu dal, 21 Kasım):** tip denetimi ve `npm run check` geçer; tam birim paketi 254 dosya / 3.236 test (yük altında bir zaman aşımı tek başına koşunca geçti); derleme geçer (en büyük parça önbellek sınırının altında). Tarayıcı testleri: değişen akışların hedefli koşuları yerelde geçti; tam set GitHub CI'da 4 parçada koşar.
+- **Bekliyor:** figür ve yerleşim kapısının son parçası (CI 1. parçada `figure-overlap-052` 320 ve 1280 px kırmızı; SVG ajanının commit'i birleşince kapanacak), ardından main'in ilerletilmesi ve 0.25.0'ın kapatılması. Sonraki dalgalar: figürsüz 305 derse bölüm figürü, “Tahmin et → Oynat → Gör” laboratuvar kabuğu, kopya kâğıdı (109 / 517), 99_ÖSYM'nin kalan 983 PDF'i, bölünmüş görünüm ve `.yksmania` yedek birleştirme.
+
 # Forge052 — Faz 0 temizliği ve Faz 1 adım adım çözüm
 
 20 Kasım 2026. Yeni ana direktif (Faz 0 → 4) uygulanıyor.
@@ -11,7 +27,7 @@
 - **Önceden yapılmış, doğrulanan maddeler:** AnswerOptions (güncel props ref ile, `type="button"`, soru değişince eleme sıfırlanır), ChoiceSelect (`useLayoutEffect`, veriye dayalı yer tutucu), PlaceMap (`useMemo`, iğne kartı ve yakınlaştırma).
 - **Doğrulama:** check, 3.129 birim testi, build; e2e: figür kapısı 052 (3/3), figür/taktik/temel paketleri 25/25, Bugün/kum saati/anlatım/sorular 48/48, yardım/sınav 50/50.
 - **Ek tur:** ayna laboratuvarında “Görüntü” etiketi ışınların geçmediği sağ alta alındı ve lab yazılarına tema renginde hale eklendi; kalıtım laboratuvarında alel harfleri kromozom çubuklarının üstünden yanlarına alındı; “Önceki adım” (yalnız görünüm, kayıtlı yardım düzeyi düşmez); `#/world` açıklaması 479 + 6 yerine tek kaynaktan çalışma kitabı + eklenen başlık sayısı; 6 tema (dark, light, contrast, matrix, axolotl, trans) × 320/1280 px figür ve axe kapısı; içerik denetimi `content-audit-053` (geçerli anahtar, ayrı şıklar, açıklama, bağımlı metin yok, yetim müfredat yok, çeldirici gerekçesi eksik kart sayısı 2.640'ı aşamaz). Önceki tabloda adım adım sayısı yerelleştirilmemiş metinle hesaplanmıştı (2.865); doğrusu 3.825.
-- **Açık:** 2.640 kartın adım adım çözüme yükseltilmesi (TYT Coğrafya 0 / 400 ve AYT Geometri 0 / 40 öncelikli), 99_ÖSYM PDF işleme ve `docs/OSYM_SAYACI.md`, Faz 3 laboratuvarlar, Faz 4 kupa/ses/karne.
+- **Açık (o tarihte):** kartların adım adım çözüme yükseltilmesi ve 99_ÖSYM işleme; ikisinin güncel durumu yukarıdaki Forge053–057 bölümündedir.
 
 ### İlerleme tablosu
 
