@@ -481,5 +481,52 @@
    "prompt": "Türklerin İslamiyet'ten önceki yazı ve şehir birikimini hangi örnekler gösterir?",
    "answer": "Orhun yazıtları ve Uygur şehir faaliyetleri gösterir."
   }
+ ],
+ "selcuklu-yerlesme-devletlesme": [
+  {
+   "after": 1,
+   "prompt": "Türkiye Selçuklu Devleti’nin ilk merkezi neresidir ve merkezin değişmesinde hangi gelişme önemlidir?",
+   "answer": "İlk merkez İznik’tir; I. Haçlı Seferi sürecinde İznik’in kaybı Konya merkezli döneme geçişte önemlidir."
+  },
+  {
+   "after": 3,
+   "prompt": "Miryokefalon, Yassıçemen ve Kösedağ’da Selçukluların karşısındaki güçler sırasıyla kimlerdir?",
+   "answer": "Miryokefalon’da Bizans, Yassıçemen’de Harzemşahlar, Kösedağ’da Moğollar."
+  },
+  {
+   "after": 5,
+   "prompt": "Vakıf, bir medrese ya da darüşşifa için hangi ihtiyacı karşılar?",
+   "answer": "Belirli gelirleri ayırarak hizmetin giderlerinin yıllar boyunca karşılanmasını sağlar; binanın ilk kurulması ayrı bir ihtiyaçtır."
+  },
+  {
+   "after": 7,
+   "prompt": "1240 Babaîler Ayaklanması ile 1243 Kösedağ yenilgisi hangi iki farklı etken türünü temsil eder?",
+   "answer": "Babaîler Ayaklanması iç gerilimi, Kösedağ ise Moğollardan gelen dış baskıyı temsil eder; ikisi ilişkili ama ayrı etkenlerdir."
+  },
+  {
+   "after": 9,
+   "prompt": "Göç ile yerleşme kavramlarını birbirinden ayıran nedir?",
+   "answer": "Göç nüfusun yer değiştirmesidir; yerleşme ise yeni yerde yaşamın ve üretimin kalıcı olarak sürmesidir."
+  },
+  {
+   "after": 11,
+   "prompt": "Haçlılar ile Bizans’ın hep ortak çıkarla hareket ettiği şemayı hangi 1204 olayı bozar?",
+   "answer": "1204’te İstanbul’un Haçlılarca alınması; aktörlerin amaçları her aşamada aynı değildir."
+  },
+  {
+   "after": 13,
+   "prompt": "Pervanenin görevi atabeyin görevinden nasıl ayrılır?",
+   "answer": "Pervane arazi işlerini ve bunlarla ilgili menşur ve beratları düzenler; atabey ise meliklerin eğitimine eşlik eder."
+  },
+  {
+   "after": 16,
+   "prompt": "Vakfiye ile hesap kaydı bir vakıf hakkında hangi farklı bilgileri verir?",
+   "answer": "Vakfiye öngörülen gelir ve görevleri, hesap kaydı ise belirli bir dönemdeki fiilî kullanımı gösterir."
+  },
+  {
+   "after": 18,
+   "prompt": "1243 sonrası Moğol üstünlüğü ile İlhanlı idaresini anlatırken hangi tuzaktan kaçınmalısın?",
+   "answer": "İkisi ayrı aşamalardır; İlhanlı adını o yapının oluşmasından önceki olaylara taşımamalısın."
+  }
  ]
 }

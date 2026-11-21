@@ -1,0 +1,266 @@
+[
+ {
+  "from": "Model 0–24 saat sınırlarını korur; 26 saat gündüz veya negatif gece üretmez. Güneş öğlede ufuk üstüne çıkmıyorsa yatay zeminde görünen bir Güneş gölgesi hesaplamak yerine tanımsız olarak bildiririz. Kaynaktaki yaklaşık altı aylık kutup dönemi her kutup enleminde aynı gün sayısı anlamına gelmez.",
+  "to": "Model 0–24 saat sınırlarını korur; 26 saat gündüz veya negatif gece üretmez. Güneş öğlede ufuk üstüne çıkmıyorsa yatay zeminde görünen bir Güneş gölgesi hesaplamak yerine tanımsız olarak bildiririz. Yaklaşık altı aylık kutup dönemi her kutup enleminde aynı gün sayısı anlamına gelmez."
+ },
+ {
+  "from": "Başlangıç meridyeni Greenwich üzerinden 0° olarak tanımlanır; doğu ve batı boylamları 180°’ye kadar adlandırılır. +180° ile−180° aynı fiziksel meridyenin iki yazımıdır. Bir tam derecelik çizgi tablosu kurarken bu ortak sınırı iki ayrı yer gibi saymayız; çizgi sayısı sorusu ancak hangi uçların sayıldığı açıkken yanıtlanır.",
+  "to": "Başlangıç meridyeni Greenwich üzerinden 0° olarak tanımlanır; doğu ve batı boylamları 180°’ye kadar adlandırılır. +180° ile −180° aynı fiziksel meridyenin iki yazımıdır. Bir tam derecelik çizgi tablosu kurarken bu ortak sınırı iki ayrı yer gibi saymayız; çizgi sayısı sorusu ancak hangi uçların sayıldığı açıkken yanıtlanır."
+ },
+ {
+  "from": "Aynı paralelde 1° boylam aralığı Ekvator’da yaklaşık 111 km iken kutuplara doğru küçülür. Küresel yaklaşımda 111 ×cos(enlem) kullanılabilir; 60°’de yaklaşık 55,5 km bulunur. Aynı boylam farkını her enlemde 111 ile çarpmak farklı paralel çemberlerini eşit sayma hatasıdır.",
+  "to": "Aynı paralelde 1° boylam aralığı Ekvator’da yaklaşık 111 km iken kutuplara doğru küçülür. Küresel yaklaşımda 111 × cos(enlem) kullanılabilir; 60°’de yaklaşık 55,5 km bulunur. Aynı boylam farkını her enlemde 111 ile çarpmak farklı paralel çemberlerini eşit sayma hatasıdır."
+ },
+ {
+  "from": "Soruda UTC+3 ve UTC−2 verildiyse fark−5 saattir; bunu yeniden 15° veya 4 dakika ile çarpmayız. Saat 00.00 sınırını geçiyorsa tarih de değişir. Türkiye için derslerde UTC+3 örneği kullanılır; farklı ülke veya dönemin resmî kuralı ayrıca verilmeden bütün dünya için tek ofset varsayılmaz.",
+  "to": "Soruda UTC+3 ve UTC−2 verildiyse fark −5 saattir; bunu yeniden 15° veya 4 dakika ile çarpmayız. Saat 00.00 sınırını geçiyorsa tarih de değişir. Türkiye için derslerde UTC+3 örneği kullanılır; farklı ülke veya dönemin resmî kuralı ayrıca verilmeden bütün dünya için tek ofset varsayılmaz."
+ },
+ {
+  "from": "Kaynaklarda Türkiye yaklaşık 36–42° kuzey ve 26–45° doğu aralığıyla öğretilir. Bu çerçeve kuzey ve doğu yarım küreyi, orta kuşağı ve 19° ×4 =76 dakikalık yaklaşık yerel saat genişliğini açıklar. Ülkenin ortak resmî saati bulunduğu için bu fark günlük duvar saatlerinin ayrı ayrı 76 dakika farklı olduğunu göstermez.",
+  "to": "Kaynaklarda Türkiye yaklaşık 36–42° kuzey ve 26–45° doğu aralığıyla öğretilir. Bu çerçeve kuzey ve doğu yarım küreyi, orta kuşağı ve 19° × 4 = 76 dakikalık yaklaşık yerel saat genişliğini açıklar. Ülkenin ortak resmî saati bulunduğu için bu fark günlük duvar saatlerinin ayrı ayrı 76 dakika farklı olduğunu göstermez."
+ },
+ {
+  "from": "6° ×111 ≈666 km hesabı yuvarlatılmış enlem genişliğinin meridyen doğrultusundaki yaklaşımıdır. Gerçek uç noktalarda 35°51′ veya 42°06′ gibi değerler kaynakta ayrıca verilir; yuvarlak 36–42 kutusu kesin sınır çizgisi değildir. Aynı nedenle yaklaşık değerleri bütün kıyı uzunluğu veya gerçek yol mesafesi diye kullanmayız.",
+  "to": "6° × 111 ≈ 666 km hesabı yuvarlatılmış enlem genişliğinin meridyen doğrultusundaki yaklaşımıdır. Gerçek uç noktalarda 35°51′ veya 42°06′ gibi değerler ayrıca verilir; yuvarlak 36–42 kutusu kesin sınır çizgisi değildir. Aynı nedenle yaklaşık değerleri bütün kıyı uzunluğu veya gerçek yol mesafesi diye kullanmayız."
+ },
+ {
+  "from": "Etkileşimli hücrelerde hem şekilsel üyelik hem hizmet bağı HTML listesinde görünür. Tek bir hücreyi seçip neden bir kümeye girdiğini kendi değeriyle açıkla. Sonra yalnız bir ayarı değiştirerek hangi sonucun sabit kaldığını denetle. Bu karşılaştırma bir tanımı ezberlemenin ötesinde bölgelemenin nasıl çalıştığını gösterir.",
+  "to": "Etkileşimli hücrelerde hem şekilsel üyelik hem hizmet bağı listede görünür. Tek bir hücreyi seçip neden bir kümeye girdiğini kendi değeriyle açıkla. Sonra yalnız bir ayarı değiştirerek hangi sonucun sabit kaldığını denetle. Bu karşılaştırma bir tanımı ezberlemenin ötesinde bölgelemenin nasıl çalıştığını gösterir."
+ },
+ {
+  "from": "Tünel, köprü ve dolgu farklı fiziksel müdahalelerdir; hepsi denizi doldurmak anlamına gelmez. Ulaşım yararıyla birlikte kıyı, su dolaşımı, habitat, malzeme ve bakım etkileri değerlendirilir. Bir yapının kaynakta örnek verilmesi güncel trafik, kâr veya çevresel etki miktarının bu derste ölçüldüğü anlamına gelmez.",
+  "to": "Tünel, köprü ve dolgu farklı fiziksel müdahalelerdir; hepsi denizi doldurmak anlamına gelmez. Ulaşım yararıyla birlikte kıyı, su dolaşımı, habitat, malzeme ve bakım etkileri değerlendirilir. Bir yapının örnek verilmesi güncel trafik, kâr veya çevresel etki miktarının burada ölçüldüğü anlamına gelmez."
+ },
+ {
+  "from": "Hortum daha dar alandaki güçlü dönel hava sütunudur; bir siklonun bütün alanıyla aynı ölçek değildir. Türkiye’de kuvvetli fırtına ve hortum görülebilir; tek bir tropikal örnekten bütün bölgelere aynı sıklık verilmez. Kaynaktaki tarihsiz dünya afet sırası, yıl ve ölçü belirtilmeden güncel kesin sıralama olarak öğrenilmez.",
+  "to": "Hortum daha dar alandaki güçlü dönel hava sütunudur; bir siklonun bütün alanıyla aynı ölçek değildir. Türkiye’de kuvvetli fırtına ve hortum görülebilir; tek bir tropikal örnekten bütün bölgelere aynı sıklık verilmez. Tarihsiz bir dünya afet sırası, yıl ve ölçü belirtilmeden güncel kesin sıralama olarak öğrenilmez."
+ },
+ {
+  "from": "Batı Avrupa ve ABD’nin doğu kesiminde sanayi, ticaret, limanlar ve ulaşım ağları önemli yoğunlaşma etkenleridir. Bir liman yalnız denizin varlığıyla açıklanmaz; hinterland bağlantısı, pazar ve iş olanakları da gerekir. Tarım dışı faaliyetler büyük kentleri büyütebilir.",
+  "to": "Batı Avrupa ve ABD’nin doğu kesiminde sanayi, ticaret, limanlar ve ulaşım ağları önemli yoğunlaşma etkenleridir. Bir liman yalnız denizin varlığıyla açıklanmaz; hinterlant bağlantısı, pazar ve iş olanakları da gerekir. Tarım dışı faaliyetler büyük kentleri büyütebilir."
+ },
+ {
+  "from": "Ders kaynağı dünya nüfusundaki belirgin artışları üç büyük dönüşümle ilişkilendirir: Paleolitik dönemde alet kullanımıyla beslenme ve korunmanın gelişmesi; Neolitik dönemde tarım, hayvanların evcilleştirilmesi ve yerleşik hayat; Sanayi Devrimi sonrasında üretim ve sağlık koşullarındaki değişim.",
+  "to": "Dünya nüfusundaki belirgin artışlar üç büyük dönüşümle ilişkilendirilir: Paleolitik dönemde alet kullanımıyla beslenme ve korunmanın gelişmesi; Neolitik dönemde tarım, hayvanların evcilleştirilmesi ve yerleşik hayat; Sanayi Devrimi sonrasında üretim ve sağlık koşullarındaki değişim."
+ },
+ {
+  "from": "Sanayileşme sonrasında beslenme, barınma ve hastalıklarla mücadeledeki değişimler ölümlerin azalmasına katkı verdi; doğumlar sürerken nüfus daha hızlı büyüyebildi. Kaynak 2022 için yaklaşık 8 milyarı tarihli örnek olarak verir. Bu sayı uygulamanın yeni bir güncel dünya sayımı değildir.",
+  "to": "Sanayileşme sonrasında beslenme, barınma ve hastalıklarla mücadeledeki değişimler ölümlerin azalmasına katkı verdi; doğumlar sürerken nüfus daha hızlı büyüyebildi. 2022 için verilen yaklaşık 8 milyar tarihli bir örnektir. Bu sayı yeni bir güncel dünya sayımı değildir."
+ },
+ {
+  "from": "Kenarları içe çökük ders tipinde taban çok geniş, ileri yaş kuşakları hızla dardır. Kaynak bu görünümü yüksek doğum ve yüksek ölüm koşullarıyla birlikte açıklar. Yüksek doğum, tek başına çok yüksek net nüfus artışını zorunlu kılmaz; ölüm ve göç de hesaba katılır.",
+  "to": "Kenarları içe çökük ders tipinde taban çok geniş, ileri yaş kuşakları hızla dardır. Bu görünüm yüksek doğum ve yüksek ölüm koşullarıyla birlikte açıklanır. Yüksek doğum, tek başına çok yüksek net nüfus artışını zorunlu kılmaz; ölüm ve göç de hesaba katılır."
+ },
+ {
+  "from": "Kaynağın asimetrik dediği tipte daha eski genç kuşaklar, en yeni çocuk kuşaklarından geniştir. Buradaki sözcük mutlaka kadın ve erkek taraflarının eşitsizliği anlamına gelmez; tabanın önceki kuşaklara göre daralması anlatılır. Yaş biçimi ile cinsiyet dengesini ayrı oku.",
+  "to": "Asimetrik denen tipte daha eski genç kuşaklar, en yeni çocuk kuşaklarından geniştir. Buradaki sözcük mutlaka kadın ve erkek taraflarının eşitsizliği anlamına gelmez; tabanın önceki kuşaklara göre daralması anlatılır. Yaş biçimi ile cinsiyet dengesini ayrı oku."
+ },
+ {
+  "from": "Arı kovanı tipinde yaş kuşaklarının genişlikleri daha dengelidir; çocuk payı görece düşük, ileri yaşların payı daha belirgindir. Kaynak bunu düşük doğum ve ölüm, uzun yaşam bağlamıyla ilişkilendirir. Aynı görünümden belirli bir yılın beklenen yaşam süresi sayısal bulunmaz.",
+  "to": "Arı kovanı tipinde yaş kuşaklarının genişlikleri daha dengelidir; çocuk payı görece düşük, ileri yaşların payı daha belirgindir. Bu tip düşük doğum ve ölüm, uzun yaşam bağlamıyla ilişkilendirilir. Aynı görünümden belirli bir yılın beklenen yaşam süresi sayısal bulunmaz."
+ },
+ {
+  "from": "Çan tipinde en yeni çocuk kuşakları, bir önceki dar kuşaklara göre yeniden genişler. Kaynak düşük doğum sonrasındaki artışın izini anlatır. Ancak tek bir kesit artışın nedeninin mutlaka belirli bir politika olduğunu kanıtlamaz; doğum serisi ve göç verisiyle sınanır.",
+  "to": "Çan tipinde en yeni çocuk kuşakları, bir önceki dar kuşaklara göre yeniden genişler. Bu görünüm düşük doğum sonrasındaki artışın izini taşır. Ancak tek bir kesit artışın nedeninin mutlaka belirli bir politika olduğunu kanıtlamaz; doğum serisi ve göç verisiyle sınanır."
+ },
+ {
+  "from": "Cumhuriyet’in ilk genel nüfus sayımı 1927’dedir; kaynak yaklaşık 13,6 milyon kişi verir. 1935’ten sonra beş yıllık sayım dönemleri, sonrasında 2000 genel sayımı ve 2007’den başlayan Adrese Dayalı Nüfus Kayıt Sistemi önemli dönüm noktalarıdır. Yöntem ve sınır değişimleri karşılaştırmada belirtilir.",
+  "to": "Cumhuriyet’in ilk genel nüfus sayımı 1927’dedir ve yaklaşık 13,6 milyon kişi sayılmıştır. 1935’ten sonra beş yıllık sayım dönemleri, sonrasında 2000 genel sayımı ve 2007’den başlayan Adrese Dayalı Nüfus Kayıt Sistemi önemli dönüm noktalarıdır. Yöntem ve sınır değişimleri karşılaştırmada belirtilir."
+ },
+ {
+  "from": "MEBİ’nin 1927–2023 serisi miktarın arttığını, artış hızının dalgalandığını gösterir. Kaynakta 2023 için 85.372.377 kişi ve yıllık yaklaşık binde 1,1 artış verilir; bunlar tarihli ders verileridir, uygulamanın güncel 2026 sayımı değildir. Binde 1,1 yüzde 1,1 değildir.",
+  "to": "1927–2023 serisi miktarın arttığını, artış hızının dalgalandığını gösterir. 2023 için 85.372.377 kişi ve yıllık yaklaşık binde 1,1 artış verilir; bunlar tarihli ders verileridir, güncel 2026 sayımı değildir. Binde 1,1 yüzde 1,1 değildir."
+ },
+ {
+  "from": "Savaş sonrası sağlık koşullarının iyileşmesi ve ölümlerin azalması artışa katılmış; kaynak 1955 ve 1960 sayım dönemlerini yüksek artış hızlarıyla ele almıştır. Aynı süreçte göçler ve doğum davranışı da rol oynar. Tek bir etken her dönem için yeterli açıklama değildir.",
+  "to": "Savaş sonrası sağlık koşullarının iyileşmesi ve ölümlerin azalması artışa katılmış; 1955 ve 1960 sayım dönemleri yüksek artış hızlarıyla öne çıkar. Aynı süreçte göçler ve doğum davranışı da rol oynar. Tek bir etken her dönem için yeterli açıklama değildir."
+ },
+ {
+  "from": "Adana–Mersin çevresinde verimli ova, sanayi ve liman; Gaziantep’te sanayi ve ulaşım; Zonguldak–Karabük’te madencilik ve sanayi kaynak örnekleridir. Antalya kıyılarında tarım, hizmet ve turizm etkilidir. Bütün kıyının veya bütün batının aynı yoğunlukta olduğu sonucu çıkmaz.",
+  "to": "Adana–Mersin çevresinde verimli ova, sanayi ve liman; Gaziantep’te sanayi ve ulaşım; Zonguldak–Karabük’te madencilik ve sanayi örnekleridir. Antalya kıyılarında tarım, hizmet ve turizm etkilidir. Bütün kıyının veya bütün batının aynı yoğunlukta olduğu sonucu çıkmaz."
+ },
+ {
+  "from": "MEBİ’nin tarihli örneğinde 2023 nüfusu 0–14 yaşta %21,4; 15–64 yaşta %68,3; 65+ yaşta %10,2 olarak verilir. Yuvarlama nedeniyle toplam %99,9 olabilir; eksik binde bir yeni bir yaş grubu değildir. Yaş paylarını tam kişi sayısı gibi kullanma.",
+  "to": "Tarihli örnekte 2023 nüfusu 0–14 yaşta %21,4; 15–64 yaşta %68,3; 65+ yaşta %10,2 olarak verilir. Yuvarlama nedeniyle toplam %99,9 olabilir; eksik binde bir yeni bir yaş grubu değildir. Yaş paylarını tam kişi sayısı gibi kullanma."
+ },
+ {
+  "from": "Aynı kaynak 2007 ortanca yaşını 28,3, 2023 değerini 34 olarak karşılaştırır. Ortanca, yaşlar sıralandığında ortayı bölen değerdir; aritmetik yaş ortalaması değildir. Piramidin üst kesiminin genişlemesi ileri yaş payını düşündürür; tek başına herkesin aynı süre yaşadığını kanıtlamaz.",
+  "to": "2007 ortanca yaşı 28,3, 2023 değeri 34’tür. Ortanca, yaşlar sıralandığında ortayı bölen değerdir; aritmetik yaş ortalaması değildir. Piramidin üst kesiminin genişlemesi ileri yaş payını düşündürür; tek başına herkesin aynı süre yaşadığını kanıtlamaz."
+ },
+ {
+  "from": "Kaynağın 2023 örneğinde kadın ve erkek payları yaklaşık %49,9 ve %50,1’dir. Yerel eğitim, askerî birlik veya yaşa-cinsiyete seçici göç bu dengeyi etkileyebilir. Ancak göç alan her ilçenin mutlaka erkek çoğunluklu olacağı gibi kesin bir kural kurulmaz.",
+  "to": "2023 örneğinde kadın ve erkek payları yaklaşık %49,9 ve %50,1’dir. Yerel eğitim, askerî birlik veya yaşa-cinsiyete seçici göç bu dengeyi etkileyebilir. Ancak göç alan her ilçenin mutlaka erkek çoğunluklu olacağı gibi kesin bir kural kurulmaz."
+ },
+ {
+  "from": "MEBİ 2020–2022 döneminde doğuşta beklenen yaşamı 77,5 yıl; erkeklerde 74,8, kadınlarda 80,3 yıl örneğiyle verir. Bu, o dönemin ölüm koşullarına dayalı bir göstergedir; herkesin ölüm yaşı veya nüfusun yaş ortalaması değildir. Eğitim için de okuryazarlık ve bitirilen okul ayrı ölçülerdir.",
+  "to": "2020–2022 döneminde doğuşta beklenen yaşam 77,5 yıl; erkeklerde 74,8, kadınlarda 80,3 yıldır. Bu, o dönemin ölüm koşullarına dayalı bir göstergedir; herkesin ölüm yaşı veya nüfusun yaş ortalaması değildir. Eğitim için de okuryazarlık ve bitirilen okul ayrı ölçülerdir."
+ },
+ {
+  "from": "Kaynakta 2023 okuryazarlığı yaklaşık %97,6 olarak örneklenir; eğitim göstergesinin kapsadığı yaş ve tanım korunmadan bebekleri de okuryazar saymak doğru değildir. Okuryazarlık, üniversite mezuniyeti veya bütün becerilerle aynı gösterge değildir.",
+  "to": "2023 okuryazarlığı yaklaşık %97,6 olarak örneklenir; eğitim göstergesinin kapsadığı yaş ve tanım korunmadan bebekleri de okuryazar saymak doğru değildir. Okuryazarlık, üniversite mezuniyeti veya bütün becerilerle aynı gösterge değildir."
+ },
+ {
+  "from": "MEBİ’nin 2022 çalışan dağılımı tarım %15,8, sanayi %27,7, hizmet %56,5 örneğidir. Payda çalışanlardır; toplam nüfus veya 15–64 yaş grubunun tamamı değildir. Aynı kişi sayısından gelir payı da çıkarılamaz; üretim ve katma değer ayrı ölçülür.",
+  "to": "2022 çalışan dağılımı tarım %15,8, sanayi %27,7, hizmet %56,5 örneğidir. Payda çalışanlardır; toplam nüfus veya 15–64 yaş grubunun tamamı değildir. Aynı kişi sayısından gelir payı da çıkarılamaz; üretim ve katma değer ayrı ölçülür."
+ },
+ {
+  "from": "Kaynağın %93 kent ve %7 kır gibi tarihli idari örnekleri bu kapsamla okunur; evrensel fiziksel kentleşme oranı sayılmaz. Keşifte B ve C’nin etiketi değişirken bir milyon yerleşik kişinin tamamı yerinde kalır. Eski ve yeni oranı aynı tanım olmadan göç hesabına dönüştürme.",
+  "to": "%93 kent ve %7 kır gibi tarihli idari örnekleri bu kapsamla okunur; evrensel fiziksel kentleşme oranı sayılmaz. Keşifte B ve C’nin etiketi değişirken bir milyon yerleşik kişinin tamamı yerinde kalır. Eski ve yeni oranı aynı tanım olmadan göç hesabına dönüştürme."
+ },
+ {
+  "from": "Ders kaynakları Orta Asya’dan göçleri uzun bir döneme yayılan hareketler olarak ele alır. Otlak ve su koşulları, geçim baskısı, siyasi mücadele ve dış baskılar birlikte anlatılır. Kuzeyde Sibirya, doğuda Çin çevresi, güneyde Hindistan-Afganistan, batıda Hazar çevresi ve Anadolu yönleri kaynak haritasında ayrılır.",
+  "to": "Ders kaynakları Orta Asya’dan göçleri uzun bir döneme yayılan hareketler olarak ele alır. Otlak ve su koşulları, geçim baskısı, siyasi mücadele ve dış baskılar birlikte anlatılır. Kuzeyde Sibirya, doğuda Çin çevresi, güneyde Hindistan-Afganistan, batıda Hazar çevresi ve Anadolu yönleri haritada ayrılır."
+ },
+ {
+  "from": "Coğrafi keşifler ve kolonileşme sonrasında Avrupa’dan Amerika’ya, daha sonra Avustralya ve Yeni Zelanda’ya yerleşme hareketleri gelişmiştir. Kaynak siyasi-dinî baskı, geçim ve yeni fırsatları birlikte ele alır. Bu yerler göçlerden önce de yerli toplumların yaşadığı alanlardı; boş kıta gibi anlatılmaz.",
+  "to": "Coğrafi keşifler ve kolonileşme sonrasında Avrupa’dan Amerika’ya, daha sonra Avustralya ve Yeni Zelanda’ya yerleşme hareketleri gelişmiştir. Bu harekette siyasi-dinî baskı, geçim ve yeni fırsatlar birlikte ele alınır. Bu yerler göçlerden önce de yerli toplumların yaşadığı alanlardı; boş kıta gibi anlatılmaz."
+ },
+ {
+  "from": "Kentten kente, kentten kıra ve kırdan kıra hareketler de iç göçtür. Kaynakların tersine göç dediği kentten kıra taşınma tek başına tüm kırsal alanların yeniden kalabalıklaştığını göstermez. Tayin, evlilik, eğitim ve afet de yön ve süreyi değiştirebilir.",
+  "to": "Kentten kente, kentten kıra ve kırdan kıra hareketler de iç göçtür. Tersine göç denen kentten kıra taşınma tek başına tüm kırsal alanların yeniden kalabalıklaştığını göstermez. Tayin, evlilik, eğitim ve afet de yön ve süreyi değiştirebilir."
+ },
+ {
+  "from": "Pamuk için Adana–Aydın–Şanlıurfa, fındık için Ordu–Giresun–Sakarya, üzüm için Manisa ve şeker pancarı için Konya–Kayseri–Eskişehir kaynak örnekleridir. Burada ürünün iş dönemi ile başka yerde yaşayıp çalışma ilişkisi kurulur; herkesin her yıl aynı yoldan gittiği varsayılmaz.",
+  "to": "Pamuk için Adana–Aydın–Şanlıurfa, fındık için Ordu–Giresun–Sakarya, üzüm için Manisa ve şeker pancarı için Konya–Kayseri–Eskişehir örneklerdir. Burada ürünün iş dönemi ile başka yerde yaşayıp çalışma ilişkisi kurulur; herkesin her yıl aynı yoldan gittiği varsayılmaz."
+ },
+ {
+  "from": "Kaynağın ders sınıflamasında inşaat ve elektrik üretimi de ikincil gruptadır. Kömür çıkarma birincil, kömürden santralde elektrik üretme ikincildir. Yapının otel olması inşaatı turizm hizmeti yapmaz; otel binasını yapmakla orada konaklama hizmeti sunmak farklı işlerdir.",
+  "to": "Ders sınıflamasında inşaat ve elektrik üretimi de ikincil gruptadır. Kömür çıkarma birincil, kömürden santralde elektrik üretme ikincildir. Yapının otel olması inşaatı turizm hizmeti yapmaz; otel binasını yapmakla orada konaklama hizmeti sunmak farklı işlerdir."
+ },
+ {
+  "from": "Her bilgi kullanan iş dördüncül diye etiketlenmez. Bir öğretmenin hazır bilgiyi öğreterek eğitim hizmeti vermesi ile yeni yöntem veya yazılım geliştiren araştırma ekibinin görevi ayrılabilir. Kaynağın sınıflama kuralı ve soruda verilen işin çıktısı birlikte dikkate alınır.",
+  "to": "Her bilgi kullanan iş dördüncül diye etiketlenmez. Bir öğretmenin hazır bilgiyi öğreterek eğitim hizmeti vermesi ile yeni yöntem veya yazılım geliştiren araştırma ekibinin görevi ayrılabilir. Kullanılan sınıflama kuralı ve soruda verilen işin çıktısı birlikte dikkate alınır."
+ },
+ {
+  "from": "Beşincil faaliyet kamu ve özel sektörde üst düzey stratejik karar ve kontrol işleriyle ele alınır. Büyük şirketin yatırım yönünü belirlemek veya üst düzey kamu politikasını yönetmek kaynak örnekleridir. Az sayıda kişinin kararları geniş ekonomik alanı etkileyebilir.",
+  "to": "Beşincil faaliyet kamu ve özel sektörde üst düzey stratejik karar ve kontrol işleriyle ele alınır. Büyük şirketin yatırım yönünü belirlemek veya üst düzey kamu politikasını yönetmek örneklerdir. Az sayıda kişinin kararları geniş ekonomik alanı etkileyebilir."
+ },
+ {
+  "from": "Akdeniz, Ege, Marmara ve Karadeniz kıyıları farklı bağlantı ve kıyı biçimlerine sahiptir. Cebelitarık Akdeniz’i Atlas’a; İstanbul ve Çanakkale boğazları Karadeniz–Marmara–Ege ağını bağlar. Kaynağın yaklaşık yüzey tuzluluk sırası Akdeniz 38‰, Ege 35‰, Marmara 22‰, Karadeniz 18‰ biçimindedir; bu bütün derinliklerin güncel sabit ölçümü değildir. Çanakkale’de de yüzey ve alt tabaka ters yönlü olabilir.",
+  "to": "Akdeniz, Ege, Marmara ve Karadeniz kıyıları farklı bağlantı ve kıyı biçimlerine sahiptir. Cebelitarık Akdeniz’i Atlas’a; İstanbul ve Çanakkale boğazları Karadeniz–Marmara–Ege ağını bağlar. Yaklaşık yüzey tuzluluk sırası Akdeniz 38‰, Ege 35‰, Marmara 22‰, Karadeniz 18‰ biçimindedir; bu bütün derinliklerin güncel sabit ölçümü değildir. Çanakkale’de de yüzey ve alt tabaka ters yönlü olabilir."
+ },
+ {
+  "from": "Temsilî modelde tahminini gerekçelendirip rota veya mevsim çizgisiyle karşılaştır. Akışın toplamı aynı kalırken dağılım değişebileceğini, sınır aşan bir nehrin kapalı alıcıya ulaşabileceğini yeni örneğe aktar. Şekli açmak veya zamanı tamamlamak ustalık kaydı değildir; bağımsız soruda doğru sonuca nasıl ulaştığını açıklaman gerekir.",
+  "to": "Temsilî modelde tahminini gerekçelendirip rota veya mevsim çizgisiyle karşılaştır. Akışın toplamı aynı kalırken dağılım değişebileceğini, sınır aşan bir nehrin kapalı alıcıya ulaşabileceğini yeni örneğe aktar. Bağımsız soruda doğru sonuca nasıl ulaştığını açıklaman gerekir."
+ },
+ {
+  "from": "B alt toprakta birikim veya yerinde dönüşüm özellikleri taşıyabilir. Bazı profillerde yıkanmanın belirgin olduğu E katı bulunur; her toprakta zorunlu değildir. Sağlam kaya bu çizimde R ile gösterilir; okul şemalarının D dediği alt kaya bağlamı ayrıca açıklanır. Harfler toprakların hepsinin aynı sayıda ve aynı kalınlıkta katı olduğu anlamına gelmez.",
+  "to": "B alt toprakta birikim veya yerinde dönüşüm özellikleri taşıyabilir. Bazı profillerde yıkanmanın belirgin olduğu E katı bulunur; her toprakta zorunlu değildir. Sağlam kaya bu çizimde R ile gösterilir; bazı şemaların D dediği alt kaya bağlamı ayrıca açıklanır. Harfler toprakların hepsinin aynı sayıda ve aynı kalınlıkta katı olduğu anlamına gelmez."
+ },
+ {
+  "from": "Okul kaynaklarında zonal topraklar iklim ve bitki ilişkilerinin belirginleştiği geniş bölgesel örnekleri toplar. İntrazonal örneklerde drenaj, tuzluluk veya ana malzeme gibi yerel etkenler öne çıkar. Azonal örneklerde taşınma, yeni birikim veya aşınma gibi gelişimi kesintiye uğratan koşullar belirgindir. Bu, öğretim amaçlı tarihsel sınıflama dilidir.",
+  "to": "Geleneksel sınıflamada zonal topraklar iklim ve bitki ilişkilerinin belirginleştiği geniş bölgesel örnekleri toplar. İntrazonal örneklerde drenaj, tuzluluk veya ana malzeme gibi yerel etkenler öne çıkar. Azonal örneklerde taşınma, yeni birikim veya aşınma gibi gelişimi kesintiye uğratan koşullar belirgindir. Bu, öğretim amaçlı tarihsel sınıflama dilidir."
+ },
+ {
+  "from": "Halomorfik, tuz birikiminin belirgin olduğu okul toprağı adıdır; kurakça kapalı tabanlar ve sulama-drenaj ilişkisi bu koşulu destekleyebilir. Hidromorfik, taban suyunun yüksekliği ve suya doygunlukla ilişkili özellikleri öne çıkarır. İkisi aynı ölçüt değildir; birinde tuz, ötekinde su-hava ve uzun doygunluk bağlamı önemlidir.",
+  "to": "Halomorfik, tuz birikiminin belirgin olduğu toprak adıdır; kurakça kapalı tabanlar ve sulama-drenaj ilişkisi bu koşulu destekleyebilir. Hidromorfik, taban suyunun yüksekliği ve suya doygunlukla ilişkili özellikleri öne çıkarır. İkisi aynı ölçüt değildir; birinde tuz, ötekinde su-hava ve uzun doygunluk bağlamı önemlidir."
+ },
+ {
+  "from": "Kalsimorfik başlığı kireçli-killi ana malzemenin önemini vurgular. Rendzina yumuşak kireçli malzeme üzerinde koyu organik katkılı üst kat örneğidir. Vertisol, uygun şişen kilin ıslanıp kurumasıyla çatlama ve karışma gösterebilir; dönen toprak adı buradan gelir. Bu okul sınıflaması her örnekte bütün B katlarının yok olduğunu veya her killi toprağın vertisol olduğunu kanıtlamaz.",
+  "to": "Kalsimorfik başlığı kireçli-killi ana malzemenin önemini vurgular. Rendzina yumuşak kireçli malzeme üzerinde koyu organik katkılı üst kat örneğidir. Vertisol, uygun şişen kilin ıslanıp kurumasıyla çatlama ve karışma gösterebilir; dönen toprak adı buradan gelir. Bu geleneksel sınıflama her örnekte bütün B katlarının yok olduğunu veya her killi toprağın vertisol olduğunu kanıtlamaz."
+ },
+ {
+  "from": "Litosol okul örneğinde engebeli ve zayıf örtülü yamaçta ince malzeme uzaklaşır, iri taşlı yüzey belirginleşir. Burada odak aşınmanın yüzeyi sürekli genç tutmasıdır. Regosol örneğinde gevşek ve az gelişmiş ana malzeme; Türkiye kaynaklarında özellikle volkanik kum ve tüf çevresi vurgulanır. Biri yalnız taş rengi, öteki kesin yüksek verim etiketi değildir.",
+  "to": "Litosol örneğinde engebeli ve zayıf örtülü yamaçta ince malzeme uzaklaşır, iri taşlı yüzey belirginleşir. Burada odak aşınmanın yüzeyi sürekli genç tutmasıdır. Regosol örneğinde gevşek ve az gelişmiş ana malzeme; Türkiye örneklerinde özellikle volkanik kum ve tüf çevresi vurgulanır. Biri yalnız taş rengi, öteki kesin yüksek verim etiketi değildir."
+ },
+ {
+  "from": "Akdeniz ikliminin görüldüğü kalkerli çevrelerde terra rossa okul örneğidir. Demir bileşikleri kırmızı rengi destekler; ancak renk her kırmızı toprağı aynı gruba sokmaz. Ana kayadaki çözünmeyen malzemeler, ayrışma ve taşınmış katkılar oluşuma katılabilir. Gelişmiş üst katın kimyası sağlam kalkerle tamamen aynı olmak zorunda değildir.",
+  "to": "Akdeniz ikliminin görüldüğü kalkerli çevrelerde terra rossa örneğidir. Demir bileşikleri kırmızı rengi destekler; ancak renk her kırmızı toprağı aynı gruba sokmaz. Ana kayadaki çözünmeyen malzemeler, ayrışma ve taşınmış katkılar oluşuma katılabilir. Gelişmiş üst katın kimyası sağlam kalkerle tamamen aynı olmak zorunda değildir."
+ },
+ {
+  "from": "Kapalı ve kurakça tabanlarda tuzluluk gelişebilir; bu iklimin her noktada aynı tuz miktarını yarattığı anlamına gelmez. Sulama, drenaj ve yer altı suyu düzeyi de önemlidir. İntrazonal okul terimini hiç horizon bulunmaz diye çevirmek yanlış olur. Baskın yerel etkeni ve örnekte gerçekten verilen kanıtı belirt.",
+  "to": "Kapalı ve kurakça tabanlarda tuzluluk gelişebilir; bu iklimin her noktada aynı tuz miktarını yarattığı anlamına gelmez. Sulama, drenaj ve yer altı suyu düzeyi de önemlidir. İntrazonal terimini hiç horizon bulunmaz diye çevirmek yanlış olur. Baskın yerel etkeni ve örnekte gerçekten verilen kanıtı belirt."
+ },
+ {
+  "from": "Kolüvyal birikimde yamaçtan aşağı hareket eden daha kısa mesafeli ve çoğu zaman az boylanmış malzeme öne çıkar. Yamaç eteğinin her birikimini büyük nehrin deltası sayma. Taşıyıcı, yol ve birikim ortamını ayırmak iki okul örneğini anlaşılır kılar. Zamanla bu yeni malzemelerde de toprak gelişimi sürebilir.",
+  "to": "Kolüvyal birikimde yamaçtan aşağı hareket eden daha kısa mesafeli ve çoğu zaman az boylanmış malzeme öne çıkar. Yamaç eteğinin her birikimini büyük nehrin deltası sayma. Taşıyıcı, yol ve birikim ortamını ayırmak iki örneği anlaşılır kılar. Zamanla bu yeni malzemelerde de toprak gelişimi sürebilir."
+ },
+ {
+  "from": "Çukurova, Bafra, Çarşamba ve Menemen deltaları alüvyal alanlara; Ergene Havzası ve bazı eski göl tabanları vertisol bağlamına örnektir. Aydın Dağları, Bozdağlar ve Toros eteklerinde kolüvyal birikim görülebilir. İç ve Doğu Anadolu’nun uygun volkanik kumlu alanları regosol; ince malzemenin aşındığı iç yamaçlar litosol okul örneklerini destekler.",
+  "to": "Çukurova, Bafra, Çarşamba ve Menemen deltaları alüvyal alanlara; Ergene Havzası ve bazı eski göl tabanları vertisol bağlamına örnektir. Aydın Dağları, Bozdağlar ve Toros eteklerinde kolüvyal birikim görülebilir. İç ve Doğu Anadolu’nun uygun volkanik kumlu alanları regosol; ince malzemenin aşındığı iç yamaçlar litosol örneklerini destekler."
+ },
+ {
+  "from": "Kaynakta alüvyal alanlar için pamuk, mısır ve yer fıstığı; step toprakları için buğday, arpa, nohut ve mercimek örneklenir. Terra rossa çevresinde zeytin ve turunçgil, uygun regosol çevresinde patates, soğan ve üzüm yetiştiriciliği anlatılır. Bunlar yetişme ilişkileridir; belirli ürünün bütün iklim ve sulama gereksinimlerini toprak adı tek başına karşılamaz.",
+  "to": "Alüvyal alanlar için pamuk, mısır ve yer fıstığı; step toprakları için buğday, arpa, nohut ve mercimek örneklenir. Terra rossa çevresinde zeytin ve turunçgil, uygun regosol çevresinde patates, soğan ve üzüm yetiştiriciliği anlatılır. Bunlar yetişme ilişkileridir; belirli ürünün bütün iklim ve sulama gereksinimlerini toprak adı tek başına karşılamaz."
+ },
+ {
+  "from": "Orman kullanımında kereste ve yakacak odunla birlikte reçine, kozalak ve orman meyveleri gibi yan ürünler bulunabilir. Orman yalnız hammadde deposu değildir; habitat, su ve yamaç işlevleri de vardır. Tarım, mera, ormancılık ve sanayi planı arazi niteliğiyle uyumlu kurulmalıdır. Kaynağın 2021 arazi kullanım grafiği güncel her yılın ölçümü sayılmaz; tarih ve payda korunur.",
+  "to": "Orman kullanımında kereste ve yakacak odunla birlikte reçine, kozalak ve orman meyveleri gibi yan ürünler bulunabilir. Orman yalnız hammadde deposu değildir; habitat, su ve yamaç işlevleri de vardır. Tarım, mera, ormancılık ve sanayi planı arazi niteliğiyle uyumlu kurulmalıdır. 2021 arazi kullanım grafiği güncel her yılın ölçümü sayılmaz; tarih ve payda korunur."
+ },
+ {
+  "from": "Özgün kesitteki konumları karşılaştırırken toprağın adını bir sonuç garantisi olarak kullanma. Aynı alüvyon kartı tuz ve drenajla farklı risk taşır; aynı orman bölgesinin içinde yeni taşkın birikimi görülebilir. Keşifteki seçimler öğrenme puanı vermez; amaç yeni bir soruda hangi kanıtın neyi gösterdiğini açıkça söyleyebilmektir.",
+  "to": "Özgün kesitteki konumları karşılaştırırken toprağın adını bir sonuç garantisi olarak kullanma. Aynı alüvyon kartı tuz ve drenajla farklı risk taşır; aynı orman bölgesinin içinde yeni taşkın birikimi görülebilir. Keşifte amaç yeni bir soruda hangi kanıtın neyi gösterdiğini açıkça söyleyebilmektir."
+ },
+ {
+  "from": "Daha seyrek, alçak çalı örtüleriyle maki arasındaki ilişkide toprak, yangın, otlatma ve tahrip geçmişi önemlidir. Garig gibi okul adlarını yalnız her yerde aynı ardışık basamağın zorunlu sonucu sayma. Bir değişim okunun doğru olması için başlangıç örtüsü, baskı ve zaman koşulu belirtilmelidir; çizim tek başına tarih yazmaz.",
+  "to": "Daha seyrek, alçak çalı örtüleriyle maki arasındaki ilişkide toprak, yangın, otlatma ve tahrip geçmişi önemlidir. Garig gibi adları yalnız her yerde aynı ardışık basamağın zorunlu sonucu sayma. Bir değişim okunun doğru olması için başlangıç örtüsü, baskı ve zaman koşulu belirtilmelidir; çizim tek başına tarih yazmaz."
+ },
+ {
+  "from": "Psödomaki, nemli ılıman orman çevresinde orman altı veya tahrip sonrası gelişen çalı topluluğu okul adıdır. Şimşir, çobanpüskülü, orman gülü ve kızılcık örnekleri bu bağlamı tanıtır. Toplulukta yaprak dökenler de bulunur; bütün türleri aynı yaprak davranışına zorlamak yanlıştır. Maki ile benzer çalı görünümü yağış ve soğuk dönem koşullarını eşitlemez.",
+  "to": "Psödomaki, nemli ılıman orman çevresinde orman altı veya tahrip sonrası gelişen çalı topluluğunun adıdır. Şimşir, çobanpüskülü, orman gülü ve kızılcık örnekleri bu bağlamı tanıtır. Toplulukta yaprak dökenler de bulunur; bütün türleri aynı yaprak davranışına zorlamak yanlıştır. Maki ile benzer çalı görünümü yağış ve soğuk dönem koşullarını eşitlemez."
+ },
+ {
+  "from": "Şekildeki katları ve aylık yağış çubuklarını aynı veri gibi okuma: biri seçili topluluk şeması, diğeri bağımsız temsilî koşul dizisidir. Yağış değişimini kanıtla yorumla fakat eksik sıcaklıktan kesin tür üretme. Tahmin ve gerekçe öğrenme denemesidir; tek bir düğme gerçek arazi haritası veya doğru sınav yanıtı kaydı oluşturmaz.",
+  "to": "Şekildeki katları ve aylık yağış çubuklarını aynı veri gibi okuma: biri seçili topluluk şeması, diğeri bağımsız temsilî koşul dizisidir. Yağış değişimini kanıtla yorumla fakat eksik sıcaklıktan kesin tür üretme. Tahmin ve gerekçe öğrenme denemesidir; tek bir düğme gerçek arazi haritası oluşturmaz."
+ },
+ {
+  "from": "Geven, çoban yastığı, yavşan otu ve gelincik bozkır için verilen örneklerdir; her türün bütün yayılışı yalnız bozkırla sınırlı sayılmaz. Erzurum, Kars ve Ardahan’ın uygun yüksek nemli alanlarındaki uzun boylu çayırla yazın sararan yarı kurak bozkır farklı koşullar taşır. Alpin çayır, ağaç gelişiminin sınırlanabildiği yüksek dağ ot topluluğudur; kaynakta yaklaşık 2.000 m örneklenmesi evrensel sınır değildir.",
+  "to": "Geven, çoban yastığı, yavşan otu ve gelincik bozkır için verilen örneklerdir; her türün bütün yayılışı yalnız bozkırla sınırlı sayılmaz. Erzurum, Kars ve Ardahan’ın uygun yüksek nemli alanlarındaki uzun boylu çayırla yazın sararan yarı kurak bozkır farklı koşullar taşır. Alpin çayır, ağaç gelişiminin sınırlanabildiği yüksek dağ ot topluluğudur; yaklaşık 2.000 m örneklenmesi evrensel sınır değildir."
+ },
+ {
+  "from": "Kasnak meşesi, Quercus vulcanica, doğal alanı Türkiye olan endemik tür örneğidir; güneybatı Anadolu’nun uygun alanlarıyla ilişkilendirilir. Sığla, Liquidambar orientalis, geçmiş dağılışın kalıntısı olan relikt örneğidir. Kaynak iki adı endemik–relikt ilişkisini düşünmek için birlikte anabilir; her iki kavramın ölçütü yine ayrı kalır.",
+  "to": "Kasnak meşesi, Quercus vulcanica, doğal alanı Türkiye olan endemik tür örneğidir; güneybatı Anadolu’nun uygun alanlarıyla ilişkilendirilir. Sığla, Liquidambar orientalis, geçmiş dağılışın kalıntısı olan relikt örneğidir. İki ad endemik–relikt ilişkisini düşünmek için birlikte anılabilir; her iki kavramın ölçütü yine ayrı kalır."
+ },
+ {
+  "from": "Bir soru endemikliği soruyorsa doğal yayılış sınırını; reliktliği soruyorsa geçmişten bugüne değişimi ara. Bozkır sorusunda doğal kuraklıkla insan etkisini ayır. Bu yöntem yalnız bitki adı ezberinden daha geniş aktarım sağlar. Model kullanımı puan veya konu tamamlama kanıtı değildir; yeni bağlamdaki soruda gerekçeli karar gerekir.",
+  "to": "Bir soru endemikliği soruyorsa doğal yayılış sınırını; reliktliği soruyorsa geçmişten bugüne değişimi ara. Bozkır sorusunda doğal kuraklıkla insan etkisini ayır. Bu yöntem yalnız bitki adı ezberinden daha geniş aktarım sağlar. Yeni bağlamdaki soruda gerekçeli karar gerekir."
+ },
+ {
+  "from": "Neolitik süreçleri ilk insanın ilk kez barındığı tarih diye anlatma. Bir tarihsel alanın törensel işlevi normal konut alanı olduğunun otomatik kanıtı değildir. Yeni bulgular tarihsel yorumu geliştirebilir; kaynakta verilen bir örneği bütün dünya yerleşmelerinin tek başlangıç noktası saymak yerine işlev ve kanıt türünü ayır.",
+  "to": "Neolitik süreçleri ilk insanın ilk kez barındığı tarih diye anlatma. Bir tarihsel alanın törensel işlevi normal konut alanı olduğunun otomatik kanıtı değildir. Yeni bulgular tarihsel yorumu geliştirebilir; verilen bir örneği bütün dünya yerleşmelerinin tek başlangıç noktası saymak yerine işlev ve kanıt türünü ayır."
+ },
+ {
+  "from": "Soruyu çözerken ölçütü adlandır: nerede, nasıl dizilmiş, ne zaman kullanılıyor, kaç kişi veya hangi işlev? Bir ölçütün cevabını ötekinin kanıtı gibi kullanma. Özgün şema gerçek kent planı veya nüfus sayımı değildir. Tahminini gerekçeyle karşılaştırmak öğrenme denemesidir; modeli oynatmak ustalık ve XP kaydı oluşturmaz.",
+  "to": "Soruyu çözerken ölçütü adlandır: nerede, nasıl dizilmiş, ne zaman kullanılıyor, kaç kişi veya hangi işlev? Bir ölçütün cevabını ötekinin kanıtı gibi kullanma. Özgün şema gerçek kent planı veya nüfus sayımı değildir. Tahminini gerekçeyle karşılaştırmak öğrenme denemesidir."
+ },
+ {
+  "from": "Zonguldak taş kömürü ve madencilik-sanayi ilişkisiyle önemli bir okul örneğidir. Konya’da tarım, sanayi ve hizmet bağlantıları birlikte görülebilir. Bir üretim kaynağı yerleşmenin gelişimine katkı sağlayabilir; fakat bütün çalışanlar tek sektörde veya aynı ücrette değildir. İşlev adı toplam nüfusun meslek dökümü değildir.",
+  "to": "Zonguldak taş kömürü ve madencilik-sanayi ilişkisiyle önemli bir örnektir. Konya’da tarım, sanayi ve hizmet bağlantıları birlikte görülebilir. Bir üretim kaynağı yerleşmenin gelişimine katkı sağlayabilir; fakat bütün çalışanlar tek sektörde veya aynı ücrette değildir. İşlev adı toplam nüfusun meslek dökümü değildir."
+ },
+ {
+  "from": "İstanbul Yarımburgaz, Antalya Karain, Adıyaman Palanlı ve Hatay Üçağızlı gibi mağara alanları Anadolu’nun erken insan ve barınma tarihini örnekler. Bu tarih tarımdan daha eskidir. Kaynaktaki 10–12 bin yıllık vurgu tarım ve Neolitik dönüşüm bağlamıyla okunmalıdır; ilk insan barınmasının yalnız o tarihte başladığı anlamına gelmez.",
+  "to": "İstanbul Yarımburgaz, Antalya Karain, Adıyaman Palanlı ve Hatay Üçağızlı gibi mağara alanları Anadolu’nun erken insan ve barınma tarihini örnekler. Bu tarih tarımdan daha eskidir. 10–12 bin yıllık vurgu tarım ve Neolitik dönüşüm bağlamıyla okunmalıdır; ilk insan barınmasının yalnız o tarihte başladığı anlamına gelmez."
+ },
+ {
+  "from": "Bir Türkiye yerleşme sorusunda önce sınırın idari mi fiziksel mi olduğunu denetle. Sonra nüfus kuralı, kullanım süresi, doku ve işlevi ayrı yaz. Bu düzen bir şehir adı ezberinden daha anlaşılır bir karar verir. Şema ile oynamak tamamlanma veya XP sağlamaz; soruda verilen yeni kanıtı bağımsız kullanman gerekir.",
+  "to": "Bir Türkiye yerleşme sorusunda önce sınırın idari mi fiziksel mi olduğunu denetle. Sonra nüfus kuralı, kullanım süresi, doku ve işlevi ayrı yaz. Bu düzen bir şehir adı ezberinden daha anlaşılır bir karar verir. Soruda verilen yeni kanıtı bağımsız kullanman gerekir."
+ },
+ {
+  "from": "Gerçek yatay uzunluk harita uzunluğu ile N’nin çarpımı; harita uzunluğu gerçek uzunluğun N’ye bölünmesidir. 100.000 cm=1 km dönüşümü uzunluk içindir. Gerçek yolun virajı ve eğimli yüzeyi haritada izlenen çizgiden farklı olabilir; hesaplanan şeyin kuş uçuşu mu çizgi güzergâhı mı olduğunu sorunun tanımı belirler.",
+  "to": "Gerçek yatay uzunluk harita uzunluğu ile N’nin çarpımı; harita uzunluğu gerçek uzunluğun N’ye bölünmesidir. 100.000 cm = 1 km dönüşümü uzunluk içindir. Gerçek yolun virajı ve eğimli yüzeyi haritada izlenen çizgiden farklı olabilir; hesaplanan şeyin kuş uçuşu mu çizgi güzergâhı mı olduğunu sorunun tanımı belirler."
+ },
+ {
+  "from": "Genel haritalar konum ve çeşitli doğal-beşerî öğeler hakkında başvuru bilgisi verir; siyasi ve fiziki haritalar örnek olabilir. Tematik haritalar nüfus yoğunluğu, jeoloji, toprak veya turizm gibi belirli konuya odaklanır. Aynı altlık üzerine farklı veriler yerleştirilebilir; başlık ve legend bu amacı açıklar.",
+  "to": "Genel haritalar konum ve çeşitli doğal-beşerî öğeler hakkında başvuru bilgisi verir; siyasi ve fiziki haritalar örnek olabilir. Tematik haritalar nüfus yoğunluğu, jeoloji, toprak veya turizm gibi belirli konuya odaklanır. Aynı altlık üzerine farklı veriler yerleştirilebilir; başlık ve lejant bu amacı açıklar."
+ },
+ {
+  "from": "Uzunluk oranı 1:N ise alan oranı 1:N²’dir. Haritadaki alanı N² ile çarparak yatay iz düşüm alan elde ederiz. 1 km=100.000 cm olduğundan 1 km²=10.000.000.000 cm² olur; alan dönüşümünde uzunluk dönüşümünü yalnız bir kez uygulamayız.",
+  "to": "Uzunluk oranı 1:N ise alan oranı 1:N²’dir. Haritadaki alanı N² ile çarparak yatay iz düşüm alan elde ederiz. 1 km = 100.000 cm olduğundan 1 km² = 10.000.000.000 cm² olur; alan dönüşümünde uzunluk dönüşümünü yalnız bir kez uygulamayız."
+ },
+ {
+  "from": "Nokta sayısı her zaman bire bir kişi veya ev sayısı değildir; bir noktanın temsil ettiği miktar legendde yazabilir. Renk sınıfları kesin nüfus sayısı veya aynı sınıftaki iki ilin sırasını zorunlu vermez. Mekânsal şekil ve nicel veri ayrı katmanlar olarak okunur; görünüşten açıklanmayan hassas sayı üretilmez.",
+  "to": "Nokta sayısı her zaman bire bir kişi veya ev sayısı değildir; bir noktanın temsil ettiği miktar lejantta yazabilir. Renk sınıfları kesin nüfus sayısı veya aynı sınıftaki iki ilin sırasını zorunlu vermez. Mekânsal şekil ve nicel veri ayrı katmanlar olarak okunur; görünüşten açıklanmayan hassas sayı üretilmez."
+ },
+ {
+  "from": "Harita çerçevesi bir eğriyi kesebilir; her çizginin sayfa içinde kapalı halka görünmesi zorunlu değildir. Tek değerli arazi yüzeyi gösteriminde farklı kotlar birbirini kesmez; özel diklik ve gösterim ayrıntıları legendle okunur. Kapalı halkaların içi çoğu tepe örneğinde yükselir ama çukur işareti varsa yön tersine dönebilir.",
+  "to": "Harita çerçevesi bir eğriyi kesebilir; her çizginin sayfa içinde kapalı halka görünmesi zorunlu değildir. Tek değerli arazi yüzeyi gösteriminde farklı kotlar birbirini kesmez; özel diklik ve gösterim ayrıntıları lejantla okunur. Kapalı halkaların içi çoğu tepe örneğinde yükselir ama çukur işareti varsa yön tersine dönebilir."
+ },
+ {
+  "from": "Fiziki haritalarda yeşil, sarı, turuncu ve kahverengi tonları açıklamada verilen yükselti basamaklarını gösterebilir. Mavi derinlik veya su, beyaz kalıcı kar ya da özel yüksek basamak için kullanılabilir; belirleyici olan o haritanın legendidir. Rengi otomatik bitki, ova veya çöl türüyle eşitlemeyiz.",
+  "to": "Fiziki haritalarda yeşil, sarı, turuncu ve kahverengi tonları açıklamada verilen yükselti basamaklarını gösterebilir. Mavi derinlik veya su, beyaz kalıcı kar ya da özel yüksek basamak için kullanılabilir; belirleyici olan o haritanın lejantıdır. Rengi otomatik bitki, ova veya çöl türüyle eşitlemeyiz."
+ },
+ {
+  "from": "Sonuçları HTML’deki mesafe, alan, kot ve eğim değerleriyle kontrol et. Harita, profil ve hesap aynı araziyi tarif etmeli; birinde değişen yükselti diğerinde unutulmamalıdır. Verilen bilgi yetmiyorsa bilinmiyor demek doğru sonuçtur; boşluğu uydurma ölçümle doldurmak öğrenme değil yanlış güven oluşturur.",
+  "to": "Sonuçları modeldeki mesafe, alan, kot ve eğim değerleriyle kontrol et. Harita, profil ve hesap aynı araziyi tarif etmeli; birinde değişen yükselti diğerinde unutulmamalıdır. Verilen bilgi yetmiyorsa bilinmiyor demek doğru sonuçtur; boşluğu uydurma ölçümle doldurmak öğrenme değil yanlış güven oluşturur."
+ }
+]

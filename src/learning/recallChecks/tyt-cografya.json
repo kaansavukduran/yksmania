@@ -1,0 +1,650 @@
+{
+ "dunya-sekli-hareket": [
+  {
+   "after": 1,
+   "prompt": "Paralellerin kutba doğru kısalmasını ve yarıçapların farklı olmasını sırasıyla hangi özellik açıklar?",
+   "answer": "Paralellerin kısalmasını küresellik, Ekvator ve kutup yarıçaplarının farklı olmasını basıklık açıklar."
+  },
+  {
+   "after": 3,
+   "prompt": "Ortalama Güneş günüyle hesaplarsan 30° boylam farkı kaç dakikalık yerel saat farkı verir?",
+   "answer": "Her derece 4 dakika olduğundan 30 × 4 = 120 dakika, yani 2 saat."
+  },
+  {
+   "after": 5,
+   "prompt": "Ekvator’da yaklaşık 1670 km/saat olan çizgisel dönüş hızı 60° enleminde yaklaşık kaç km/saat olur?",
+   "answer": "Hız enlemin kosinüsüyle çarpılır; cos 60° = 0,5 olduğundan yaklaşık 835 km/saat."
+  },
+  {
+   "after": 7,
+   "prompt": "Dünya Güneş’e yaklaşırken yörünge hızı nasıl değişir?",
+   "answer": "Hız artar; Güneş’e en yakın olunan günberi ocak ayı dolayındadır."
+  },
+  {
+   "after": 9,
+   "prompt": "Haziran gündönümünden sonra kuzeyde kısalmaya başlayan gündüz, hangi tarihe kadar geceden uzun kalır?",
+   "answer": "Eylül ekinoksuna kadar; kutup dışı birçok kuzey yerinde gündüz hâlâ geceden uzundur."
+  },
+  {
+   "after": 11,
+   "prompt": "Ekinoksta gündüz ve gecenin 12’şer saat çıkması hangi ideal varsayımlara dayanır?",
+   "answer": "İdeal küre, noktasal Güneş, düz yatay ufuk ve atmosfer kırılmasının olmaması."
+  },
+  {
+   "after": 13,
+   "prompt": "İdeal yıllık döngüde dönencede ve iç tropik enlemlerde öğle dik ışını kaç kez gelir?",
+   "answer": "Dönencenin kendisinde bir kez, iç tropik enlemlerde iki kez gelir."
+  },
+  {
+   "after": 15,
+   "prompt": "Eksen eğikliği sıfır olsaydı aynı enlemde öğle açısı yıl boyunca nasıl olurdu?",
+   "answer": "Deklinasyon hep 0° olacağından öğle açısı ve gündüz süresi bütün yıl aynı kalırdı; gece-gündüz yine sürerdi."
+  },
+  {
+   "after": 17,
+   "prompt": "Tan ve gurup süresinin kutba doğru uzamasını yalnız çizgisel hızın azalmasıyla açıklamak neden eksiktir?",
+   "answer": "Açısal dönüş hızı aynıdır; asıl fark, Güneş yolunun ufku daha yatık kesmesi ve ufuk altı aralığı yavaş geçmesidir."
+  }
+ ],
+ "cografi-konum": [
+  {
+   "after": 1,
+   "prompt": "Mutlak konumu göreceli konumdan ayıran nedir?",
+   "answer": "Mutlak konum enlem-boylam değerleriyle verilir; göreceli konum ise denize, yer şekillerine, yollara ve başka alanlara göre ilişkileri anlatır."
+  },
+  {
+   "after": 3,
+   "prompt": "Aynı meridyende aralarında 4° enlem farkı olan iki noktanın meridyen yayı yaklaşık kaç km olur?",
+   "answer": "1° enlem yaklaşık 111 km olduğundan 4 × 111 = 444 km."
+  },
+  {
+   "after": 5,
+   "prompt": "30° doğu ile 15° batı boylamındaki iki yer arasında yerel Güneş saati farkı kaç saattir?",
+   "answer": "Boylam farkı 30 + 15 = 45° olur; 45 × 4 = 180 dakika, yani 3 saat. Doğudaki yer ileridedir."
+  },
+  {
+   "after": 7,
+   "prompt": "İdeal takvim şemasında tarih çizgisi batıya doğru geçilince tarih nasıl düzeltilir?",
+   "answer": "Bir gün ileri alınır; doğuya doğru geçerken ise bir gün geri alınır."
+  },
+  {
+   "after": 10,
+   "prompt": "Türkiye’nin yaklaşık 26–45° doğu boylam aralığı kaç dakikalık yerel saat genişliği verir?",
+   "answer": "19° × 4 = 76 dakika; ortak resmî saat kullanıldığı için duvar saatleri bu kadar farklı değildir."
+  },
+  {
+   "after": 13,
+   "prompt": "Türkiye’de batı-doğu sıcaklık farkını yalnız boylamla açıklamak neden yanlıştır?",
+   "answer": "Bu farkta asıl etkili olan yükselti ve karasallıktır; boylam yerel saati belirler, sıcaklığı değil."
+  }
+ ],
+ "harita-bilgisi": [
+  {
+   "after": 1,
+   "prompt": "Harita ile krokiyi ayıran temel özellik nedir?",
+   "answer": "Harita belirli bir ölçekle çizilir; kroki kabataslak olduğundan ölçülü küçültme oranı taşımayabilir."
+  },
+  {
+   "after": 3,
+   "prompt": "Normal yerleşimde silindir, koni ve düzlem projeksiyonları sırasıyla hangi kuşaklara uygundur?",
+   "answer": "Silindir Ekvator çevresine, koni orta enlemlere, kutba teğet düzlem kutup çevresine uygundur."
+  },
+  {
+   "after": 5,
+   "prompt": "1:100.000 ölçekli haritada 7 cm olan bir uzaklık gerçekte kaç km’dir?",
+   "answer": "1 cm 100.000 cm yani 1 km olduğundan 7 cm gerçekte 7 km’dir."
+  },
+  {
+   "after": 7,
+   "prompt": "1:200.000 ölçekli bir harita her iki yönde 2 kat büyütülürse yeni ölçek ne olur?",
+   "answer": "Yeni payda N/q = 200.000/2 = 100.000 olur; ölçek 1:100.000’dir."
+  },
+  {
+   "after": 9,
+   "prompt": "Genel haritayı tematik haritadan ayıran nedir?",
+   "answer": "Genel harita konum ve çeşitli doğal-beşerî öğeler için başvuru bilgisi verir; tematik harita nüfus, toprak gibi tek bir konuya odaklanır."
+  },
+  {
+   "after": 11,
+   "prompt": "Yatay uzaklığı 2 km olan iki nokta arasında 100 m yükselti farkı varsa ortalama eğim yüzde kaçtır?",
+   "answer": "Birimler eşitlenir: 100 / 2000 × 100 = %5."
+  },
+  {
+   "after": 13,
+   "prompt": "Aynı göl neden bir haritada alan, başka bir haritada nokta simgesiyle gösterilebilir?",
+   "answer": "Gösterim türünün seçimi ölçeğe ve amaca bağlıdır; çok küçük ölçekte göl nokta simgesine iner."
+  },
+  {
+   "after": 15,
+   "prompt": "Akarsu vadisinde eş yükselti eğrilerinin V ucu hangi yöne bakar?",
+   "answer": "Genellikle yukarı çığırdaki yüksek yöne bakar; sırtta ise büklüm alçak tarafa uzanır."
+  },
+  {
+   "after": 18,
+   "prompt": "Düşey ölçeği büyütülmüş bir kabartmada görünen eğim neden gerçek eğim değildir?",
+   "answer": "Yükselti yatay uzunluktan daha büyük ölçekle çizildiği için yamaçlar olduğundan dik görünür."
+  }
+ ],
+ "bolge-turleri": [
+  {
+   "after": 1,
+   "prompt": "Buğday yetiştiren yerleri seçmek ile bu yerleri ürün gönderdikleri fabrikaya göre gruplamak nasıl ayrılır?",
+   "answer": "İlki ortak ürün özelliğine dayanan şekilsel bir sınıflamadır; ikincisi akış ve merkez ilişkisine dayanan işlevsel bir ağdır."
+  },
+  {
+   "after": 3,
+   "prompt": "Bir akarsu havzasının sınırını il sınırından ayıran nedir?",
+   "answer": "Havza sınırı yer şekline bağlı su bölümü çizgisidir; il sınırı ise yönetsel kararla çizilir."
+  },
+  {
+   "after": 5,
+   "prompt": "Haritada bir merkeze en yakın görünen yer neden o merkeze bağlı olmayabilir?",
+   "answer": "Ulaşım engeli, kurum kararı veya hizmet kapasitesi bağlantıyı farklı bir merkeze yöneltebilir."
+  },
+  {
+   "after": 7,
+   "prompt": "Türkiye’de istatistik bölgelerinin Düzey 3 basamağı hangi yönetim ölçeğine dayanır?",
+   "answer": "İl ölçeğine dayanır; daha üst düzeyler birden fazla ili birlikte ele alır."
+  },
+  {
+   "after": 10,
+   "prompt": "“Doğal sınırlar hep yavaş, beşerî sınırlar hep hızlı değişir” demek neden yanlıştır?",
+   "answer": "Akarsu yatağının yön değiştirmesi, heyelan veya volkanik olay doğal özellikleri kısa sürede de değiştirebilir."
+  }
+ ],
+ "ulasim-aglari": [
+  {
+   "after": 1,
+   "prompt": "Hava yolu için 1945 sonrası dönem hangi anlamda önemlidir?",
+   "answer": "Hava ulaşımının İkinci Dünya Savaşı sonrasında yaygınlaştığı dönemdir; ilk kullanım tarihi bundan ayrı tutulur."
+  },
+  {
+   "after": 3,
+   "prompt": "Bakü–Tiflis–Kars demir yolu hangi üç ülkeyi birbirine bağlar?",
+   "answer": "Azerbaycan, Gürcistan ve Türkiye’yi bağlar ve Asya–Avrupa koridorlarına katkı yapar."
+  },
+  {
+   "after": 5,
+   "prompt": "Bir taşıma zincirinde kara yolunun “son bağlantı” rolü nedir?",
+   "answer": "Limana veya istasyona gelen ürünü son bölümde yerleşmenin kapısına ulaştırarak ana hattın avantajını tamamlar."
+  },
+  {
+   "after": 7,
+   "prompt": "Boru hatları en çok hangi tür yüklerin taşınmasında kullanılır?",
+   "answer": "Petrol ve doğal gaz gibi akışkanların düzenli taşınmasında kullanılır."
+  },
+  {
+   "after": 10,
+   "prompt": "Boğazı kanaldan ayıran temel fark nedir?",
+   "answer": "Boğaz doğal dar deniz geçişidir; kanal insanın açtığı yapay su yoludur. Macellan boğaz, Panama kanaldır."
+  },
+  {
+   "after": 12,
+   "prompt": "Karadeniz’den Ege’ye giden bir gemi hangi geçişleri sırasıyla kullanır?",
+   "answer": "Önce İstanbul Boğazı’ndan Marmara’ya, sonra Çanakkale Boğazı’ndan Ege’ye geçer."
+  }
+ ],
+ "cevre-toplum": [
+  {
+   "after": 1,
+   "prompt": "Yamaçta uygun yapı biçimi seçmek ile tünel açmak hangi iki ilişki türüne örnektir?",
+   "answer": "Uygun yapı biçimi seçmek doğaya uyuma, tünel açmak ise doğayı doğrudan değiştirmeye örnektir."
+  },
+  {
+   "after": 3,
+   "prompt": "Bir su kirliliği zincirinde kaynak, taşınma yolu ve alıcıya hangi örnekler verilebilir?",
+   "answer": "Tesisin atığı kaynak, dere akışı taşınma yolu, sucul canlılar alıcı olabilir."
+  },
+  {
+   "after": 5,
+   "prompt": "Erozyon ile kimyasal toprak kirlenmesi nasıl ayrılır?",
+   "answer": "Erozyon toprağın taşınmasıdır; kimyasal kirlenme ise toprakta zararlı maddelerin birikmesidir. Aynı arazide birlikte görülebilirler."
+  },
+  {
+   "after": 7,
+   "prompt": "Termik santralde baca kontrolü neden bütün sera salımını ortadan kaldırmaz?",
+   "answer": "Baca kontrolü bazı kirleticileri azaltır; karbondioksit gibi sera salımı farklı bir kirletici türüdür ve ayrı ölçülür."
+  },
+  {
+   "after": 9,
+   "prompt": "Aral Gölü’nün küçülmesinin temel nedeni nedir?",
+   "answer": "Seyhun ve Ceyhun’dan sulamaya yönlendirilen suyun artması göle gelen akışı azaltmıştır."
+  },
+  {
+   "after": 11,
+   "prompt": "Doğal sera etkisi ile insan kaynaklı sera etkisi artışı nasıl ayrılır?",
+   "answer": "Doğal sera etkisi yaşanabilir koşulların parçasıdır; insan etkinlikleriyle gaz birikiminin artması ise ek ısınma baskısı oluşturur."
+  },
+  {
+   "after": 13,
+   "prompt": "Asit yağmuru ile okyanus asitlenmesinin mekanizmaları nasıl ayrılır?",
+   "answer": "Asit yağmuru kükürt ve azot oksitlerinin atmosferde asidik bileşiklere dönüşmesidir; okyanus asitlenmesi denizin CO₂ alıp pH’ının düşmesidir."
+  },
+  {
+   "after": 15,
+   "prompt": "Kuraklık ile çölleşme arasındaki fark nedir?",
+   "answer": "Kuraklık bir yerin olağan su koşullarına göre dönemsel eksikliktir; çölleşme kurak ve yarı kurak alanlarda arazinin bozulmasıdır."
+  },
+  {
+   "after": 17,
+   "prompt": "Atık yönetiminde ilk sırada hangi adım gelir?",
+   "answer": "Gereksiz tüketimi ve atık oluşumunu önlemek; yeniden kullanım ve geri dönüşüm bundan sonra gelir."
+  },
+  {
+   "after": 19,
+   "prompt": "İklim değişikliğinde azaltma ile uyumu ayıran nedir?",
+   "answer": "Azaltma sera gazı salımını düşürmeye ve yutakları güçlendirmeye, uyum ise değişen koşulların zararını azaltıp dayanıklılığı artırmaya yöneliktir."
+  }
+ ],
+ "afetler-risk": [
+  {
+   "after": 1,
+   "prompt": "Tehlike ile afet kavramları nasıl ayrılır?",
+   "answer": "Tehlike zarar doğurma potansiyelidir; afet ise toplumun işleyişinde ciddi kayıp ve kesinti yaratan durumdur."
+  },
+  {
+   "after": 3,
+   "prompt": "Orman yangını neden tek bir afet sınıfına kolayca yerleştirilemez?",
+   "answer": "Yangın yıldırımla doğal olarak da insan etkisiyle de başlayabilir; birden fazla etkenle oluşan olaylardandır."
+  },
+  {
+   "after": 5,
+   "prompt": "Volkanik külün etkisi neden kraterin çevresiyle sınırlı kalmaz?",
+   "answer": "Kül rüzgârla taşınarak hava ulaşımını ve uzaktaki yerleri de etkileyebilir."
+  },
+  {
+   "after": 7,
+   "prompt": "Heyelan riskini artırabilen insan etkilerine hangi örnekler verilebilir?",
+   "answer": "Yol açarken yamaç eteğini kazmak ve drenajı bozmak riski artırabilir."
+  },
+  {
+   "after": 9,
+   "prompt": "Erozyon ile heyelanın mekanizma farkı nedir?",
+   "answer": "Erozyonda toprak su veya rüzgârla aşındırılıp taşınır; heyelanda ise yamaç malzemesi yer çekimiyle kütle hâlinde kayar."
+  },
+  {
+   "after": 11,
+   "prompt": "Şiddetli yağışın düştüğü yer ile taşkının görüldüğü yer neden farklı olabilir?",
+   "answer": "Yağış havzanın yukarısına düşüp su aşağı havzada yükselebilir; bu yüzden yalnız yerel gökyüzüne değil havzaya bakılır."
+  },
+  {
+   "after": 13,
+   "prompt": "Çığ oluşumunda kar dengesini bozan koşullara hangi örnekler verilebilir?",
+   "answer": "Eğim, tabakalar arasındaki zayıf bağ, yeni kar yükü, rüzgârla kar birikmesi ve ısınma."
+  },
+  {
+   "after": 15,
+   "prompt": "Orman yangınının oluşup yayılması için hangi üç koşul birlikte ele alınır?",
+   "answer": "Yanabilir örtü, tutuşma kaynağı ve yangının yayılmasına uygun koşullar."
+  },
+  {
+   "after": 17,
+   "prompt": "COVID-19 adı kullanılırken hangi kavram ayrımına dikkat etmelisin?",
+   "answer": "COVID-19 hastalığın adıdır; hastalığa yol açan virüsün adıyla aynı kavram değildir."
+  },
+  {
+   "after": 19,
+   "prompt": "Deprem başladıktan sonra verilen erken uyarı neye dayanır?",
+   "answer": "Sismik dalgaların farklı varış zamanlarından yararlanır; depremin gününü önceden bilmek anlamına gelmez."
+  },
+  {
+   "after": 21,
+   "prompt": "AFAD hangi yılda ve hangi amaçla kurulmuştur?",
+   "answer": "2009’da afet ve acil durum yönetiminin koordinasyon yapısı olarak kurulmuştur; diğer kurumların görevleri sürer."
+  }
+ ],
+ "dunya-nufus-dagilisi": [
+  {
+   "after": 1,
+   "prompt": "500.000 kişinin yaşadığı 2.000 km²’lik bir alanın aritmetik nüfus yoğunluğu kaçtır?",
+   "answer": "Nüfus alana bölünür: 500.000 / 2.000 = 250 kişi/km²."
+  },
+  {
+   "after": 3,
+   "prompt": "Sahra ile Kuzey Kanada’nın seyrek nüfusunu açıklayan temel kısıtlar nasıl ayrılır?",
+   "answer": "Sahra’da belirleyici kısıt su azlığıdır; Kuzey Kanada’da ise çok düşük sıcaklık ve uzun don dönemidir."
+  },
+  {
+   "after": 5,
+   "prompt": "Bir maden yatağı ile onu işleyen yatırım nüfus etkeni olarak nasıl sınıflanır?",
+   "answer": "Maden yatağı doğal bir yer altı kaynağıdır; onu çıkarıp işleyen yatırım, iş ve yol ağı beşerî etkendir."
+  },
+  {
+   "after": 7,
+   "prompt": "Bir kıyıdaki yaz kalabalığı neden yerleşik nüfus yoğunluğunu göstermez?",
+   "answer": "Sezonluk ziyaretçi sayısı ile yıl sonu adres nüfusu farklı ölçülerdir; dönem ve sayılan kişiler belirtilmelidir."
+  },
+  {
+   "after": 9,
+   "prompt": "Toplam 10.000 kişi ve 100 km² olan dört eş hücrenin birinde 4.000 kişi varsa o hücrenin yoğunluğu kaçtır?",
+   "answer": "Her hücre 25 km²’dir; 4.000 / 25 = 160 kişi/km²."
+  },
+  {
+   "after": 11,
+   "prompt": "Dünya nüfusundaki belirgin artışlar hangi üç büyük dönüşümle ilişkilendirilir?",
+   "answer": "Paleolitik dönemde alet kullanımı, Neolitik dönemde tarım ve yerleşik hayat, Sanayi Devrimi sonrası üretim ve sağlık değişimi."
+  }
+ ],
+ "nufus-piramitleri": [
+  {
+   "after": 1,
+   "prompt": "Piramit hesaplarında 0–14, 15–64 ve 65+ grupları hangi adlarla toplanır?",
+   "answer": "0–14 çocuklar, 15–64 çalışma çağı, 65+ ileri yaş grubudur."
+  },
+  {
+   "after": 3,
+   "prompt": "Kenarları içe çökük piramit tipi hangi doğum ve ölüm koşullarıyla açıklanır?",
+   "answer": "Yüksek doğum ve yüksek ölüm koşullarıyla; taban çok geniş, ileri yaş kuşakları hızla dardır."
+  },
+  {
+   "after": 5,
+   "prompt": "Çan tipi piramidi arı kovanı tipinden ayıran özellik nedir?",
+   "answer": "Çan tipinde en yeni çocuk kuşakları, önceki dar kuşaklara göre yeniden genişler."
+  },
+  {
+   "after": 7,
+   "prompt": "Çalışma çağında 60, diğer yaşlarda 40 kişi olan 100 kişilik örnekte yaş bağımlılık oranı yaklaşık kaçtır?",
+   "answer": "40 / 60 × 100 ≈ %66,7; her yüz çalışma çağı kişiye yaklaşık 67 diğer yaş kişisi düşer."
+  }
+ ],
+ "turkiye-nufusu": [
+  {
+   "after": 1,
+   "prompt": "Bir ilçenin gündüz nüfusunun işe gelenlerle büyümesi neden göç sayılmaz?",
+   "answer": "Bu günlük bir dolaşımdır; kişilerin yerleşim adresi değişmediği için kalıcı göç değildir."
+  },
+  {
+   "after": 3,
+   "prompt": "1939’da Hatay’ın katılmasıyla gelen nüfus artışı neden doğumla açıklanamaz?",
+   "answer": "Artışın kaynağı ülke sınırının değişmesidir; yeni sınır içindeki nüfus toplama eklenmiştir."
+  },
+  {
+   "after": 5,
+   "prompt": "1960 sonrasında doğurganlığı ve artış hızını etkileyen değişimlere hangi örnekler verilebilir?",
+   "answer": "Aile planlaması, kentleşme, eğitim, evlilik yaşı ve iş yaşamındaki değişimler."
+  },
+  {
+   "after": 7,
+   "prompt": "Tuz Gölü çevresinin seyrek nüfusunu Yıldız Dağları’ndan ayıran kısıt nedir?",
+   "answer": "Tuz Gölü çevresinde kuraklık ve elverişsiz topraklar; Yıldız Dağları’nda ise engebe ve ulaşım koşulları öne çıkar."
+  },
+  {
+   "after": 9,
+   "prompt": "Ortanca yaş ile aritmetik yaş ortalaması nasıl ayrılır?",
+   "answer": "Ortanca yaş, yaşlar sıralandığında nüfusu ortadan ikiye bölen değerdir; yaşların ortalaması değildir."
+  },
+  {
+   "after": 11,
+   "prompt": "Tarım, sanayi ve hizmet çalışan paylarının paydası nedir?",
+   "answer": "Paydada çalışanlar vardır; toplam nüfus ya da 15–64 yaş grubunun tamamı değildir."
+  }
+ ],
+ "dunya-turkiye-gocler": [
+  {
+   "after": 1,
+   "prompt": "Birbirine yakın iki sınır kenti arasında ülke değiştiren kişinin hareketi hangi göç türüdür?",
+   "answer": "Ülke sınırı aşıldığı için dış (uluslararası) göçtür; uzaklık değil sınır belirleyicidir."
+  },
+  {
+   "after": 3,
+   "prompt": "Kavimler Göçü hangi yüzyılda hangi topluluğun batıya ilerleyişiyle ilişkilendirilir?",
+   "answer": "Dördüncü yüzyılda Hunların batıya ilerleyişiyle ilişkilendirilir."
+  },
+  {
+   "after": 5,
+   "prompt": "Afrika’dan Amerika’ya köleleştirilerek götürülenlerin hareketi neden gönüllü işçi göçü sayılmaz?",
+   "answer": "Bu hareket zorla yerinden edilme ve insan sömürüsüdür; ortada özgür bir seçim yoktur."
+  },
+  {
+   "after": 7,
+   "prompt": "Türkiye’den Almanya’ya işçi göçü hangi dönemde ve hangi talep nedeniyle yoğunlaştı?",
+   "answer": "1960’lı yıllarda, İkinci Dünya Savaşı sonrası Avrupa’nın iş gücü talebiyle yoğunlaştı."
+  },
+  {
+   "after": 9,
+   "prompt": "Türkiye’de 1950 sonrası kırdan kente göçü iten etkenlere hangi örnekler verilebilir?",
+   "answer": "Tarımda makineleşme, toprağın parçalanması ve kırsal iş ile hizmet koşulları; kentlerin çekimi de etkilidir."
+  },
+  {
+   "after": 11,
+   "prompt": "Göç veren bir yerde görülebilecek olumsuz ve olumlu etkilere hangi örnekler verilebilir?",
+   "answer": "İş gücünün ve bazı yaş gruplarının azalması olumsuz; para transferi ve geri dönüş olumlu etki olabilir."
+  },
+  {
+   "after": 13,
+   "prompt": "1923 sözleşmesinin 2. maddesine göre hangi gruplar değişimin dışında tutuldu?",
+   "answer": "İstanbul Rumları ve Batı Trakya Müslümanları; İstanbul için 30 Ekim 1918’den önce yerleşmiş olma koşulu aranır."
+  }
+ ],
+ "ekonomik-faaliyetler": [
+  {
+   "after": 1,
+   "prompt": "İleri teknolojiyle çalışan bir balık çiftliği hangi faaliyet grubundadır?",
+   "answer": "Birincil gruptadır; teknoloji düzeyi değil, doğal ortamdan ürün elde etme işlemi belirleyicidir."
+  },
+  {
+   "after": 3,
+   "prompt": "Gıda ürünü satan bir market satıcısı neden çiftçi gibi birincil faaliyette sayılmaz?",
+   "answer": "Sektör malın adına göre değil yapılan işe göre belirlenir; satıcının işi ticaret yani üçüncül faaliyettir."
+  },
+  {
+   "after": 5,
+   "prompt": "Bilgisayarla satış yapan bir kasiyer neden dördüncül faaliyette sayılmaz?",
+   "answer": "Belirleyici olan bilgisayar kullanmak değil bilgi ve yöntem üretmektir; kasiyerin işi satış hizmetidir."
+  },
+  {
+   "after": 7,
+   "prompt": "Çalışanları üçlü ayrımdan beşli ayrıma geçirince toplam çalışan sayısı nasıl değişir?",
+   "answer": "Değişmez; yalnız hizmet grubu ayrıntılı bölünür, her kişi tek ana görev grubunda sayılır."
+  },
+  {
+   "after": 10,
+   "prompt": "Tarımda 100 yerine 50 kişi aynı 100 değer birimini üretirse çalışan başına değer nasıl değişir?",
+   "answer": "100 / 100 = 1’den 100 / 50 = 2’ye çıkar; çalışan başına değer iki katına çıkar."
+  }
+ ],
+ "turkiye-sulari": [
+  {
+   "after": 1,
+   "prompt": "Meriç ve Asi’yi Kızılırmak’tan ayıran rota özelliği nedir?",
+   "answer": "Meriç ve Asi Türkiye dışında doğar; Kızılırmak’ın hem kaynağı hem denize ulaştığı kesim Türkiye içindedir."
+  },
+  {
+   "after": 3,
+   "prompt": "Türkiye akarsularının hidroelektrik potansiyelinin yüksek olması neye bağlıdır?",
+   "answer": "Birçok akarsuyun kısa mesafede yüksekten inmesine, yani yatak eğimi ve yükselti farkına bağlıdır."
+  },
+  {
+   "after": 5,
+   "prompt": "Bir su yolunu kapatarak göl oluşturabilen doğal set malzemelerine hangi örnekler verilebilir?",
+   "answer": "Heyelan kütlesi, akarsu alüvyonu, lav, kıyı kordonu ve moren."
+  },
+  {
+   "after": 7,
+   "prompt": "İstanbul Boğazı’nda üst ve alt akıntılar hangi yönlerde akar?",
+   "answer": "Üst tabaka Karadeniz’den Marmara’ya, daha tuzlu alt tabaka ise ters yönde Marmara’dan Karadeniz’e akar."
+  },
+  {
+   "after": 9,
+   "prompt": "Seyhan ve Ceyhan hangi deniz havzasına ve hangi birikim sistemine katılır?",
+   "answer": "Akdeniz havzasına ulaşırlar ve Çukurova birikim sistemine katılırlar."
+  },
+  {
+   "after": 11,
+   "prompt": "Türkiye çevresindeki denizlerin yaklaşık yüzey tuzluluğu en yüksekten en düşüğe nasıl sıralanır?",
+   "answer": "Akdeniz 38‰, Ege 35‰, Marmara 22‰, Karadeniz 18‰."
+  }
+ ],
+ "dunya-topraklari": [
+  {
+   "after": 1,
+   "prompt": "Fiziksel ayrışmayı kimyasal ayrışmadan ayıran nedir?",
+   "answer": "Fiziksel ayrışmada kayaç parçalanır ama mineral bileşimi aynı kalır; kimyasal ayrışmada çözünme, oksitlenme gibi yollarla mineral değişir."
+  },
+  {
+   "after": 3,
+   "prompt": "Toprak profilinde O, A ve C katları neyi gösterir?",
+   "answer": "O organik örtüyü, A organik katkıyla mineralin karıştığı üst katı, C ise az değişmiş ana malzemeyi gösterir."
+  },
+  {
+   "after": 5,
+   "prompt": "B katında biriken maddelere kireç dışında hangi örnekler verilebilir?",
+   "answer": "Kil ve demir bileşikleri; B katındaki bütün maddeler kireç değildir."
+  },
+  {
+   "after": 7,
+   "prompt": "Lateritleşmenin görüldüğü sıcak-nemli ortamda gür bitki örtüsüne rağmen humus neden kalın birikmez?",
+   "answer": "Organik kalıntılar sıcak ve nemli koşullarda hızla parçalanır."
+  },
+  {
+   "after": 10,
+   "prompt": "Halomorfik ve hidromorfik topraklarda öne çıkan etkenler nasıl ayrılır?",
+   "answer": "Halomorfikte tuz birikimi, hidromorfikte yüksek taban suyu ve uzun süreli suya doygunluk öne çıkar."
+  }
+ ],
+ "turkiye-topraklari": [
+  {
+   "after": 1,
+   "prompt": "Karadeniz’e açık nemli yamaçlarda toprak oluşumunda hangi etkenler öne çıkar?",
+   "answer": "Orman örtüsü ve yıkanma öne çıkar; kahverengi orman toprakları gibi profiller görülebilir."
+  },
+  {
+   "after": 3,
+   "prompt": "İç Anadolu’nun bozkır topraklarında alt katta kireç birikimi neden görülebilir?",
+   "answer": "Yarı kurak koşullarda yıkanma sınırlı kaldığı için kireç alt katta birikebilir."
+  },
+  {
+   "after": 5,
+   "prompt": "Kuzeydoğudaki yüksek çayırlarda çernozyomun koyu üst katını ne destekler?",
+   "answer": "Çayır köklerinin organik madde katkısı ve serin koşullar."
+  },
+  {
+   "after": 7,
+   "prompt": "Kolüvyal birikimi alüvyal birikimden ayıran nedir?",
+   "answer": "Alüvyal malzemeyi akarsu taşır; kolüvyal malzeme yamaçtan aşağı kısa mesafede hareket eder ve çoğu zaman az boylanmıştır."
+  },
+  {
+   "after": 9,
+   "prompt": "Iğdır Ovası’nın bazı tabanları ile Sultansazlığı çevresi hangi farklı toprak koşullarına örnektir?",
+   "answer": "Iğdır Ovası’nın bazı tabanları tuz etkisine, Sultansazlığı çevresi suya doygun hidromorfik koşula örnektir."
+  },
+  {
+   "after": 11,
+   "prompt": "Cam üretimi için toprakta hangi tür hammadde aranır?",
+   "answer": "Silisçe zengin uygun kumlar aranır; silis kaynağı olarak kuvars minerali öne çıkar."
+  }
+ ],
+ "dunya-bitkileri": [
+  {
+   "after": 1,
+   "prompt": "Bitki örtüsü ile bitki topluluğu kavramları nasıl ayrılır?",
+   "answer": "Bitki örtüsü bir alandaki bitkilerin bütünüdür; bitki topluluğu benzer yapı ve çevre ilişkileriyle ele alınan gruplardır."
+  },
+  {
+   "after": 3,
+   "prompt": "Ekvatoral orman çok gür olduğu hâlde toprağı neden zengin bir besin deposu olmayabilir?",
+   "answer": "Besinlerin önemli bölümü canlı biyokütlede tutulur; hızlı döngü ve yıkanma yüzeydeki stoku azaltır."
+  },
+  {
+   "after": 5,
+   "prompt": "Taygayı tundradan ayıran görünür yapı farkı nedir?",
+   "answer": "Taygada ağaç gövdeleri ve orman katı bulunur; tundra ağaçsızdır, yosun, liken ve kısa bitkilerden oluşur."
+  },
+  {
+   "after": 7,
+   "prompt": "Savanı bozkırdan ayıran koşullar nelerdir?",
+   "answer": "Savan sıcak ve yağışlı-kurak mevsimli alanlarda uzun ot ve seyrek ağaçlarla görülür; bozkır yarı kurak alanların otsu örtüsüdür."
+  },
+  {
+   "after": 10,
+   "prompt": "Psödomaki hangi ortamda gelişen bir çalı topluluğudur?",
+   "answer": "Nemli ılıman orman çevresinde, orman altında veya tahrip sonrası gelişir; şimşir, orman gülü ve kızılcık örnekleridir."
+  }
+ ],
+ "turkiye-bitkileri": [
+  {
+   "after": 1,
+   "prompt": "Karadeniz’e açık yamaçlarda nemli ormanların gelişmesini destekleyen süreç nedir?",
+   "answer": "Denizden gelen nemli hava yamaç boyunca yükselip soğur ve yağış koşulları oluşur."
+  },
+  {
+   "after": 3,
+   "prompt": "Akdeniz çevresinde maki ve kızılçamın yaygınlığı hangi iklim özelliğiyle ilişkilidir?",
+   "answer": "Yaz kuraklığıyla; sert yapraklı çalıların özellikleri kurak dönemde su kaybını sınırlar."
+  },
+  {
+   "after": 5,
+   "prompt": "Kuzeydoğu yüksek alanlarında çayırların gelişmesini hangi koşullar destekler?",
+   "answer": "Serin koşullar ve yaz nemi; uzun boylu otlar hayvancılıkla da ilişki kurar."
+  },
+  {
+   "after": 8,
+   "prompt": "Doğal bozkırın her yerine yoğun orman dikmek neden koşulsuz doğru değildir?",
+   "answer": "Yerel iklim ve su gereksinimi uygun olmayabilir; ayrıca mevcut bozkır ekosisteminin işlevi de korunmalıdır."
+  },
+  {
+   "after": 11,
+   "prompt": "Sığla için “Türkiye dışında doğal olarak hiç bulunmaz” demek neden yanlıştır?",
+   "answer": "Sığlanın doğal yayılışı batı-güneybatı Türkiye ile birlikte Rodos’u da içerir."
+  }
+ ],
+ "dunya-yerlesmeleri": [
+  {
+   "after": 1,
+   "prompt": "Bir yerleşmeyi incelerken birbirinden ayrı sorulara yanıt veren ölçütler hangileridir?",
+   "answer": "Yer seçimi, doku, büyüklük, kullanım süresi ve ekonomik işlev."
+  },
+  {
+   "after": 3,
+   "prompt": "Suya yakın bir nokta yerleşme için neden her zaman güvenli değildir?",
+   "answer": "Kaynağa erişim yanında taşkın gibi riskler de vardır; ikisi birlikte değerlendirilir."
+  },
+  {
+   "after": 5,
+   "prompt": "Çizgisel ve dairesel yerleşme düzenleri nasıl ayrılır?",
+   "answer": "Çizgiselde yapılar yol, vadi veya kıyı boyunca dizilir; daireselde bir merkez çevresinde halka benzeri düzen oluşur."
+  },
+  {
+   "after": 7,
+   "prompt": "Bir yerleşmede baskın bir işlevin bulunması neyi tek başına göstermez?",
+   "answer": "Bütün nüfusun aynı işi yaptığını veya başka işlevlerin bulunmadığını göstermez."
+  },
+  {
+   "after": 10,
+   "prompt": "Yerleşmede doku ile plan kavramları nasıl ayrılır?",
+   "answer": "Doku konutlar arası yakınlığı, plan ise diziliş biçimini anlatır; bu yüzden bir yerleşme hem toplu hem ışınsal olabilir."
+  }
+ ],
+ "turkiye-yerlesmeleri": [
+  {
+   "after": 1,
+   "prompt": "Büyükşehir statüsü neden yalnız nüfus eşiğinin aşılmasıyla oluşmaz?",
+   "answer": "Bu statü kendiliğinden gerçekleşen fiziksel bir olay değildir; yasal karar ve düzenleme gerekir."
+  },
+  {
+   "after": 3,
+   "prompt": "Mevsimlik hayvancılık ve üretimle ilişkili yerleşme adlarına hangi örnekler verilebilir?",
+   "answer": "Yayla, oba, kom, ağıl ve dam."
+  },
+  {
+   "after": 5,
+   "prompt": "Nemli ve parçalı arazide dağınık konut dokusunu hangi etkenler destekleyebilir?",
+   "answer": "Suya her yerden erişilebilmesi, küçük tarla parçaları ve eğim."
+  },
+  {
+   "after": 7,
+   "prompt": "Zonguldak hangi kaynak ve işlevle örneklenen bir kenttir?",
+   "answer": "Taş kömürüne dayalı madencilik ve sanayi ilişkisiyle örneklenir."
+  },
+  {
+   "after": 9,
+   "prompt": "Vali, kaymakam, belediye başkanı ve muhtardan hangileri atanır, hangileri seçilir?",
+   "answer": "Vali ve kaymakam atanır; belediye başkanı ve muhtar seçilir."
+  },
+  {
+   "after": 11,
+   "prompt": "Çatalhöyük, Çayönü ve Aşıklıhöyük hangi illerin çevresindeki Neolitik yerleşmelerdir?",
+   "answer": "Çatalhöyük Konya, Çayönü Diyarbakır, Aşıklıhöyük Aksaray çevresindedir."
+  }
+ ]
+}
