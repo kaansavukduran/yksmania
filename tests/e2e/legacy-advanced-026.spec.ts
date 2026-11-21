@@ -141,11 +141,11 @@ async function first026Card(page: Page, lesson: Lesson, question: Question) {
   await expect(answers).toHaveCount(5);
   for (const [index, option] of question.options.entries())
     await expect(answers.nth(index).locator("span").nth(1)).toHaveText(
-      option.tr,
+      typeset(option.tr),
     );
   if (question.passage)
     await expect(page.locator(".question-passage p")).toHaveText(
-      question.passage.tr,
+      typeset(question.passage.tr),
     );
   else await expect(page.locator(".question-passage")).toHaveCount(0);
 }
@@ -180,7 +180,7 @@ async function full026Solution(
   await expect(full).toBeVisible();
   await expect(full.locator(":scope > p")).toHaveCount(4);
   await expect(full.locator(":scope > p").nth(0)).toHaveText(
-    `Doğru yanıt: ${String.fromCharCode(65 + question.answer)} · ${question.options[question.answer].tr}`,
+    `Doğru yanıt: ${String.fromCharCode(65 + question.answer)} · ${typeset(question.options[question.answer].tr)}`,
   );
   await expect(full.locator(":scope > p").nth(1)).toHaveText(typeset(question.explanation.tr));
   // The step-by-step final lists each option with its reason (autopsy).

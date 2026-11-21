@@ -318,7 +318,7 @@ for (const [subject, lessonId] of cases) {
       shownPrompt(question),
     );
     await expect(page.locator(".answer > span:nth-child(2)")).toHaveText(
-      question.options.map((o) => o.tr),
+      question.options.map((o) => typeset(o.tr)),
     );
     await expect(
       page.getByRole("region", { name: "Tam çözüm", exact: true }),
@@ -443,7 +443,7 @@ for (const [subject, lessonId] of cases) {
     await expect(mistake.locator("h2")).toHaveText(shownPrompt(question));
     await mistake.locator("details > summary").click();
     await expect(mistake.locator("details strong")).toContainText(
-      question.options[question.answer].tr,
+      typeset(question.options[question.answer].tr),
     );
     await expect(mistake.locator("details > p").last()).toHaveText(
       shownExplanation(question),
@@ -575,7 +575,7 @@ for (const target of guardedCases) {
         shownPrompt(previous),
       );
       await expect(page.locator(".answer > span:nth-child(2)")).toHaveText(
-        previous.options.map((option) => option.tr),
+        previous.options.map((option) => typeset(option.tr)),
       );
       await page.locator(".answer").nth(previous.answer).click();
       await page
@@ -1203,7 +1203,7 @@ test.describe("030 mobile full staged question help", () => {
     }
     await expect(page.locator(".question-panel h2")).toHaveText(typeset(question.prompt.tr));
     await expect(page.locator(".answer > span:nth-child(2)")).toHaveText(
-      question.options.map((o) => o.tr),
+      question.options.map((o) => typeset(o.tr)),
     );
     await expect(page.locator(".help-full-solution")).toHaveCount(0);
     const note = "030 telefon alt notu · 14a + 6b = 8a + 8b; 6a = 2b. ÇĞİÖŞÜ";
@@ -1223,7 +1223,7 @@ test.describe("030 mobile full staged question help", () => {
     }
     const full = page.locator(".help-full-solution");
     await expect(full.locator(".help-autopsy-body > span:last-child")).toHaveText(help.optionReasons.map(typeset));
-    await expect(full).toContainText(question.explanation.tr);
+    await expect(full).toContainText(typeset(question.explanation.tr));
     await expect(full).toContainText(typeset(help.commonError));
     await expect(full).toContainText(typeset(help.check));
     for (const paragraph of [...help.knowledge, help.strategy, ...help.steps].map(typeset))

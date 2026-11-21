@@ -199,7 +199,7 @@ for (const [subject, lessonId] of cases) {
     await page.locator(`.ready-topic[data-lesson-id="${lesson.id}"]`).click();
     await expect(page.locator(".question-panel h2")).toHaveText(typeset(question.prompt.tr));
     await expect(page.locator(".answer > span:nth-child(2)")).toHaveText(
-      question.options.map((o) => o.tr),
+      question.options.map((o) => typeset(o.tr)),
     );
     await expect(
       page.getByRole("region", { name: "Tam çözüm", exact: true }),
@@ -233,7 +233,7 @@ for (const [subject, lessonId] of cases) {
     await expect(full.locator(".help-autopsy-body > span:last-child")).toHaveText(help.optionReasons.map(typeset));
     await expect(full).toContainText(typeset(help.commonError));
     await expect(full).toContainText(typeset(help.check));
-    await expect(full).toContainText(question.explanation.tr);
+    await expect(full).toContainText(typeset(question.explanation.tr));
     await expect(page.locator(".help-next")).toHaveCount(0);
     await expect
       .poll(async () => (await stored(page)).draft?.helpLevel)
@@ -319,7 +319,7 @@ for (const [subject, lessonId] of cases) {
     await expect(mistake.locator("h2")).toHaveText(typeset(question.prompt.tr));
     await mistake.locator("details > summary").click();
     await expect(mistake.locator("details strong")).toContainText(
-      question.options[question.answer].tr,
+      typeset(question.options[question.answer].tr),
     );
     await expect(mistake.locator("details > p").last()).toHaveText(typeset(question.explanation.tr));
     expect(await stored(page)).toEqual(completed);
@@ -470,7 +470,7 @@ for (const target of guardedCases) {
       const previous = lesson.questions[i];
       await expect(page.locator(".question-panel h2")).toHaveText(typeset(previous.prompt.tr));
       await expect(page.locator(".answer > span:nth-child(2)")).toHaveText(
-        previous.options.map((option) => option.tr),
+        previous.options.map((option) => typeset(option.tr)),
       );
       await page.locator(".answer").nth(previous.answer).click();
       await page

@@ -164,7 +164,7 @@ for (const extension of extensions)
       await expect(page.locator(".question-panel h2")).toHaveText(typeset(q.prompt.tr));
       if (q.passage)
         await expect(page.locator(".question-passage")).toHaveText(
-          q.passage.tr,
+          typeset(q.passage.tr),
         );
       await page.locator(".answer").nth(q.answer).click();
       await page

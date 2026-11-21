@@ -82,7 +82,7 @@ async function assertPassageBeforeStem(page: Page, question: Question) {
     await expect(passage).toHaveCount(0);
     return;
   }
-  await expect(passage).toHaveText(question.passage.tr);
+  await expect(passage).toHaveText(typeset(question.passage.tr));
   expect(
     await page.locator(".question-panel").evaluate((panel) => {
       const context = panel.querySelector(".question-passage")!,
@@ -117,7 +117,7 @@ for (const pack of allFoundationPracticeSets) {
       await assertPassageBeforeStem(page, question);
       await expect(page.locator(".answer")).toHaveCount(5);
       for (const [j, option] of question.options.entries())
-        await expect(page.locator(".answer").nth(j)).toContainText(option.tr);
+        await expect(page.locator(".answer").nth(j)).toContainText(typeset(option.tr));
       await page
         .locator(".answer")
         .nth(i === 0 ? (question.answer + 1) % 5 : question.answer)
