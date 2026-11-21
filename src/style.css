@@ -29,6 +29,26 @@
      Windows, Android, Linux and the web. */
   text-rendering: geometricPrecision;
   scroll-behavior: smooth;
+  /* Ferahlık standardı: kart iç boşluğu, kartlar arası boşluk ve sayfa kenarı
+     tek yerden gelir. Temalar bu değerleri değiştirmez. */
+  --card-pad-y: 1.2rem;
+  --card-pad-x: 1.25rem;
+  --card-pad: var(--card-pad-y) var(--card-pad-x);
+  /* Dar ekran: 1.05rem 1.1rem; büyük arayüz ölçeğinde 20px ile sınırlı. */
+  --card-pad-sm: clamp(14px, 1.05rem, 20px) clamp(14px, 1.1rem, 20px);
+  --panel-pad: 1.4rem;
+  --card-gap: 1.15rem;
+  --stack-gap: 1.25rem;
+  --page-gutter: 2.6rem;
+  --body-lh: 1.55;
+}
+@media (max-width: 640px) {
+  :root {
+    --card-pad-y: clamp(14px, 1.05rem, 20px);
+    --card-pad-x: clamp(14px, 1.1rem, 20px);
+    --panel-pad: var(--card-pad-sm);
+    --page-gutter: 16px;
+  }
 }
 :root[data-theme="light"] ,
 :root[data-theme="trans"] {
@@ -144,10 +164,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.65rem;
+  /* Büyük arayüz ölçeğinde de tema adı iki satırı aşmasın. */
+  gap: min(0.65rem, 10px);
   min-width: 0;
   min-height: 3.25rem;
-  padding: 0.7rem;
+  padding: 0.7rem min(0.7rem, 10px);
   border: 1px solid var(--border);
   border-radius: 0.6rem;
   background: var(--bg);
@@ -271,6 +292,10 @@ h1 {
   letter-spacing: -0.045em;
   font-weight: 650;
   margin-bottom: 0;
+}
+/* Başlığın altındaki açıklama başlığa yapışmaz. */
+.page-heading h1 + p {
+  margin: 0.55rem 0 0;
 }
 h1,
 h2,
@@ -784,7 +809,7 @@ small,
 }
 .path-panel,
 .weekly-panel {
-  padding: 1.35rem 1.4rem;
+  padding: var(--panel-pad);
 }
 .lesson-row {
   display: flex;
@@ -942,7 +967,7 @@ small,
   color: var(--muted);
   padding: 0.55rem 1rem;
   border-radius: 0.35rem;
-  min-height: 2.4rem;
+  min-height: 2.75rem;
   font-size: 0.85em;
   line-height: 1.4;
 }
@@ -980,7 +1005,7 @@ small,
   align-items: start;
 }
 .subject-panel {
-  padding: 0 1.3rem;
+  padding: 0 var(--card-pad-x);
   min-width: 0;
   overflow-wrap: anywhere;
 }
@@ -1061,7 +1086,7 @@ small,
 }
 .calendar-panel,
 .availability-panel {
-  padding: 1.4rem;
+  padding: var(--panel-pad);
 }
 .button-pair {
   display: flex;
@@ -1197,11 +1222,12 @@ small,
 .weekday-toggles {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.3rem;
+  gap: 0.35rem;
 }
 .weekday-toggles button {
   padding: 0.5rem 0.6rem;
-  min-height: 2.5rem;
+  min-height: 2.75rem;
+  min-width: 2.75rem;
   border: 1px solid var(--border);
   background: transparent;
   border-radius: 0.4rem;
@@ -1244,8 +1270,8 @@ small,
   margin: 0.25rem 0;
 }
 .upcoming-panel {
-  margin-top: 1.3rem;
-  padding: 1.4rem;
+  margin-top: var(--stack-gap);
+  padding: var(--panel-pad);
 }
 .upcoming-row {
   display: flex;
@@ -1327,7 +1353,7 @@ small,
   margin: 0.4rem 0;
 }
 .study-notes {
-  padding: 1.4rem;
+  padding: var(--panel-pad);
   align-self: start;
 }
 .study-notes textarea {
@@ -1611,10 +1637,10 @@ progress::-moz-progress-bar {
 .mistake-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.2rem;
+  gap: var(--card-gap);
 }
 .mistake-card {
-  padding: 1.4rem;
+  padding: var(--panel-pad);
 }
 .mistake-card h2 {
   margin: 1.2rem 0;
@@ -1642,7 +1668,7 @@ progress::-moz-progress-bar {
   color: var(--danger);
 }
 .history-list {
-  padding: 0.5rem 1.4rem;
+  padding: 0.5rem var(--card-pad-x);
 }
 .history-row {
   display: flex;
@@ -1914,7 +1940,7 @@ progress::-moz-progress-bar {
   align-items: start;
 }
 .settings-panel {
-  padding: 1.5rem;
+  padding: var(--panel-pad);
   min-width: 0;
 }
 .settings-panel.appearance-panel {
@@ -2266,7 +2292,7 @@ progress::-moz-progress-bar {
 }
 @media (max-width: 560px) {
   .main-content {
-    padding: 1.4rem clamp(12px, 3vw, 18px) 2rem;
+    padding: 1.4rem var(--page-gutter) 2rem;
   }
   .topbar .save-status {
     font-size: 0.63em;
@@ -2313,6 +2339,7 @@ progress::-moz-progress-bar {
     font-size: 0.72em;
   }
   .stats-strip {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0.6rem;
     padding: 1.3rem 0;
     margin-bottom: 1.4rem;
@@ -2321,20 +2348,20 @@ progress::-moz-progress-bar {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
-    padding: 0 0.5rem;
+    padding: 0 0.6rem;
+  }
+  .stats-strip > div:first-child {
+    padding-left: 0;
   }
   .stats-strip > div > span:last-child {
-    font-size: 0.66em;
+    font-size: 0.72em;
+    line-height: 1.35;
   }
   .stat-number {
     font-size: 1.7rem;
   }
   .today-grid {
-    gap: 1rem;
-  }
-  .path-panel,
-  .weekly-panel {
-    padding: 1.2rem 1rem;
+    gap: var(--stack-gap);
   }
   .lesson-row {
     gap: 0.6rem;
@@ -2365,22 +2392,19 @@ progress::-moz-progress-bar {
   .lead {
     font-size: 0.85em;
   }
-  .subject-panel {
-    padding: 0 1rem;
-  }
   .toolbar .search {
     width: 100%;
-  }
-  .calendar-panel,
-  .availability-panel {
-    padding: 1rem;
   }
   .calendar-day {
     min-height: 3.1rem;
     font-size: 0.8em;
   }
+  /* Yedi gün sütunu dar ekranda da dokunulabilir genişlikte kalsın. */
+  .calendar-panel {
+    padding-inline: 12px;
+  }
   .calendar-grid {
-    gap: 0.1rem;
+    gap: 0;
   }
   .calendar-weekday {
     font-size: 0.65em;
@@ -2394,7 +2418,7 @@ progress::-moz-progress-bar {
   }
   .lesson-article,
   .question-panel {
-    padding: clamp(12px, 3vw, 18px);
+    padding: var(--card-pad-sm);
   }
   .study-heading h1 {
     font-size: 1.8rem;
@@ -2454,9 +2478,6 @@ progress::-moz-progress-bar {
   .result-page h1 {
     font-size: 1.9rem;
   }
-  .settings-panel {
-    padding: clamp(12px, 3vw, 1.2rem);
-  }
   .import-panel {
     padding: 1.2rem;
   }
@@ -2478,10 +2499,6 @@ progress::-moz-progress-bar {
   }
   .range-row {
     gap: 0.4rem;
-  }
-  .numeric-control .icon-button {
-    width: 2rem;
-    min-width: 2rem;
   }
   .settings-buttons button {
     width: 100%;
@@ -3270,7 +3287,7 @@ progress::-moz-progress-bar {
 }
 .daily-plan {
   min-width: 0;
-  padding: 1.5rem;
+  padding: var(--panel-pad);
   overflow-wrap: anywhere;
 }
 .daily-plan h3 {
@@ -3884,8 +3901,15 @@ progress::-moz-progress-bar {
   border-radius: 50%;
   margin-right: 0.5rem;
 }
+.world-note {
+  margin: 0.9rem 0 var(--stack-gap);
+  max-width: 60rem;
+}
+.trophy-showcase {
+  margin-bottom: var(--stack-gap);
+}
 .skill-tree {
-  padding: 1.2rem;
+  padding: var(--card-pad);
   min-width: 0;
   overflow-wrap: anywhere;
 }
@@ -3977,6 +4001,7 @@ progress::-moz-progress-bar {
 }
 .skill-question {
   font-size: 0.75em;
+  min-height: 2.75rem;
 }
 .study-landscape {
   position: absolute;
@@ -4061,10 +4086,6 @@ progress::-moz-progress-bar {
 @media (max-width: 560px) {
   .hero-art .aion-companion {
     max-width: min(100%, 11rem);
-  }
-  .daily-plan,
-  .skill-tree {
-    padding: 1rem;
   }
   .question-branch {
     margin-left: 0.2rem;
@@ -4737,9 +4758,9 @@ progress::-moz-progress-bar {
 .mistake-map ul {
   list-style: none;
   padding: 0;
-  margin: 0.4rem 0;
+  margin: 0.6rem 0;
   display: grid;
-  gap: 0.35rem;
+  gap: 0.6rem;
 }
 .mistake-map li {
   display: grid;
@@ -4765,6 +4786,11 @@ progress::-moz-progress-bar {
   }
   .mistake-map .map-bar {
     grid-column: 1 / -1;
+    grid-row: 2;
+  }
+  .mistake-map li > strong {
+    grid-column: 2;
+    grid-row: 1;
   }
 }
 
@@ -4964,6 +4990,8 @@ progress::-moz-progress-bar {
 }
 .mistake-map {
   min-width: 0;
+  padding: var(--panel-pad);
+  margin-bottom: var(--stack-gap);
 }
 .mistake-heat {
   overflow-x: auto;
@@ -4993,17 +5021,17 @@ progress::-moz-progress-bar {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 .pocket-head h2 {
   margin: 0;
 }
 .pocket-list {
   display: grid;
-  gap: 0.6rem;
+  gap: 0.75rem;
   padding-left: 1.2rem;
-  max-height: 22rem;
-  overflow-y: auto;
+  margin-bottom: 0;
 }
 .pocket-list p {
   margin: 0.15rem 0;
@@ -5042,6 +5070,17 @@ progress::-moz-progress-bar {
   }
 }
 /* Hata merkezi: önkoşul köprüsü ve haftalık boss turu. */
+.pocket-booklet,
+.mistake-sprint,
+.mistake-boss {
+  padding: var(--panel-pad);
+  margin-bottom: var(--stack-gap);
+  min-width: 0;
+}
+.mistake-sprint h2,
+.mistake-boss h2 {
+  margin: 0 0 0.45rem;
+}
 .mistake-bridge {
   margin-top: 0.6rem;
 }
@@ -5054,7 +5093,7 @@ progress::-moz-progress-bar {
   gap: 0.4rem;
 }
 .mistake-bridge-link {
-  min-height: 2.4rem;
+  min-height: 2.75rem;
   padding: 0.35rem 0.75rem;
   border: 1px solid var(--border);
   border-radius: 999px;
@@ -5071,8 +5110,8 @@ progress::-moz-progress-bar {
 }
 /* Bugün: akıllı oturum. */
 .smart-session {
-  margin-block: 1.25rem;
-  padding: clamp(0.9rem, 2.5vw, 1.4rem);
+  margin-block: var(--stack-gap);
+  padding: var(--card-pad);
 }
 .smart-session p {
   margin: 0.4rem 0 0.8rem;
@@ -5090,6 +5129,17 @@ progress::-moz-progress-bar {
 }
 .smart-buttons button {
   min-height: 2.75rem;
+}
+@media (max-width: 640px) {
+  /* Süre seçenekleri dar ekranda eşit genişlikte sıralanır. */
+  .smart-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 9.5rem), 1fr));
+  }
+  .smart-buttons button {
+    justify-content: center;
+    padding-inline: 0.6rem;
+  }
 }
 /* Zen odak modu (F): yalnız içerik kalır. */
 .zen .sidebar,
@@ -5128,16 +5178,16 @@ progress::-moz-progress-bar {
   }
 }
 .zero-start {
-  padding: clamp(0.9rem, 2.5vw, 1.4rem);
+  padding: var(--card-pad);
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
   flex-wrap: wrap;
-  margin-top: 1.25rem;
+  margin-top: var(--stack-gap);
 }
 .zero-start h2 { font-size: 1.05rem; margin: 0 0 0.35rem; }
-.zero-start p { margin: 0; color: var(--muted); max-width: 46rem; font-size: 0.9em; }
+.zero-start p { margin: 0; color: var(--muted); max-width: 46rem; font-size: 0.9em; line-height: var(--body-lh); }
 .zero-start button { display: inline-flex; align-items: center; gap: 0.4rem; }
 
 /* Universal lab label standard: every text in an interactive lab keeps a

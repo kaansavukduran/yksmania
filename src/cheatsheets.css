@@ -38,10 +38,10 @@
 .cheat-comparisons {
   margin-top: 1.25rem;
   display: grid;
-  gap: 0.75rem;
+  gap: var(--card-gap);
 }
 .cheat-comparisons dl {
-  padding: clamp(12px, 2vw, 20px);
+  padding: max(14px, min(2vw, 20px));
   margin: 0;
   border: 1px solid var(--border);
   border-radius: 0.5rem;
@@ -189,9 +189,9 @@
 
 /* Tactic library (Forge044b) */
 .tactic-library { margin-top: 1.2rem; }
-.tactic-library-toggle { width: 100%; min-height: 44px; text-align: left; }
-.tactic-list { display: grid; gap: 0.6rem; padding: 0 1rem 1rem; }
-.tactic-card { border: 1px solid var(--line, currentColor); border-radius: 10px; padding: 0.2rem 0.8rem; }
+.tactic-library-toggle { width: 100%; min-height: 44px; text-align: left; padding: var(--card-pad); }
+.tactic-list { display: grid; gap: 0.75rem; padding: 0 var(--card-pad-x) var(--card-pad-y); }
+.tactic-card { border: 1px solid var(--line, currentColor); border-radius: 10px; padding: 0.25rem var(--card-pad-x); }
 .tactic-card > summary { cursor: pointer; min-height: 44px; display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
 .tactic-subject { font-size: 0.8rem; font-weight: 700; padding: 0.1rem 0.5rem; border-radius: 999px; border: 1px solid currentColor; }
 .tactic-title { font-weight: 600; overflow-wrap: anywhere; }

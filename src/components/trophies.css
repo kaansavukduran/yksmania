@@ -1,6 +1,6 @@
 /* Trophy showcase and unlock toast. Tier colours are fixed metal tones with
    dark ink so they stay readable in every theme. */
-.trophy-showcase { display: grid; gap: 0.8rem; min-width: 0; }
+.trophy-showcase { display: grid; gap: 0.9rem; min-width: 0; padding: var(--panel-pad); }
 .trophy-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem; }
 .trophy-head h2 { margin: 0; }
 .trophy-near h3 { font-size: 1rem; margin: 0 0 0.4rem; }
@@ -16,13 +16,13 @@
   cursor: pointer;
 }
 .trophy-filters button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-text); font-weight: 700; }
-.trophy-grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.6rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 15.5rem), 1fr)); }
+.trophy-grid { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--card-gap); grid-template-columns: repeat(auto-fill, minmax(min(100%, 15.5rem), 1fr)); }
 .trophy-card {
   display: flex;
   gap: 0.7rem;
   align-items: flex-start;
   min-width: 0;
-  padding: 0.7rem 0.8rem;
+  padding: 0.85rem 1rem;
   border: 1px solid var(--border);
   border-radius: 0.7rem;
   background: var(--surface-2);

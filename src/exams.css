@@ -22,7 +22,7 @@
 .exam-question,
 .exam-map,
 .exam-breakdown {
-  padding: clamp(14px, 3vw, 28px);
+  padding: max(var(--card-pad-y), min(3vw, 28px)) max(var(--card-pad-x), min(3vw, 28px));
   min-width: 0;
   overflow-wrap: anywhere;
 }

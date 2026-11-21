@@ -3,7 +3,6 @@ import { APP_VERSION } from "./version";
 const messages: Record<string, string> = {
   openMenu: "Menüyü aç",
   skipToContent: "İçeriğe geç",
-  pdfText: "Sayfanın metni",
   today: "Bugün",
   foundations: "Temel İnşa",
   courses: "Konu Anlatımı",
@@ -23,19 +22,15 @@ const messages: Record<string, string> = {
   retry: "Yeniden dene",
   loading: "Çalışma alanın açılıyor…",
   loadError: "Kayıt açılamadı. Mevcut verinin üzerine yazılmadı.",
-  online: "Bağlantı var",
-  offline: "Çevrimdışı",
+  online: "Çevrimdışı hazır",
+  offline: "Çevrimdışı çalışıyor",
   localFirst: "İlerlemen bu cihazda",
   brandNote: "Öğren. Hatırla. Keşfet.",
   heroTitle: "Bugün küçük bir adım, yarın sağlam bir bilgi.",
   heroBody:
     "Sana uygun bir sırayla öğren, sorularla dene ve zamanı gelince yeniden hatırla.",
   resumeBody: "Yarım kalan çalışman ve notların burada.",
-  dailyPath: "Bugünün çalışma yolu",
   review: "Tekrar",
-  newLearning: "Yeni öğrenme",
-  reviewReason: "Özgün tekrar vadesi geldi.",
-  nextReason: "İlk çalışma için hazır.",
   minutes: "dk",
   completed: "tamamlandı",
   independent: "Yardımsız doğru",
@@ -50,11 +45,7 @@ const messages: Record<string, string> = {
   weeklyBody: "Gerçek oturumların. Ara verdiğin günler kazanımlarını silmez.",
   welcome: "Birlikte keşfedelim",
   mascotText: "Aion yanında. Her doğru adım bir keşif.",
-  firstStep: "İlk adım",
   available: "Çevrimdışı hazır",
-  lessonCount: "etkileşimli konu",
-  mapNote:
-    "TYT ve AYT sayısal başvuru haritası. Konu listeleri resmî sınav yılı kapsamı olarak doğrulanmadı. Hazır dersler ayrıca işaretli.",
   search: "Ders veya konu ara",
   all: "Tümü",
   topics: "konu başlığı",
@@ -114,7 +105,6 @@ const messages: Record<string, string> = {
   loadEstimate:
     "Süreler başlangıç tahminidir; bir tekrar için 10 dakika ayrılır.",
   upcoming: "Yaklaşan tekrarlar",
-  mistakesTitle: "Yanlışından yeni bir yol çıkar.",
   mistakesBody:
     "Yanlışlar ve ipucuyla çözülen sorular. Yeniden denemek ilk kaydı değiştirmez.",
   noMistakes: "Henüz onarılacak soru yok. Çalışmaların burada birikecek.",
@@ -125,36 +115,9 @@ const messages: Record<string, string> = {
   undo: "Bu oturumu geri al",
   undoExplain: "Oturum ve ona bağlı tekrarlar geri alınır.",
   undoDone: "Oturum geri alındı.",
-  libraryTitle: "Kaynakların, yanında.",
-  libraryBody:
-    "Kendi PDF dosyalarını ekle. Dosyalar yalnız bu cihazda saklanır; sunucuya gönderilmez.",
-  importPdf: "PDF ekle",
-  documentSubject: "Dosyanın dersi",
-  noDocuments:
-    "Henüz PDF eklenmedi. MEBİ, OGM veya kendi notlarını dosyadan ekleyebilirsin.",
-  pdfLimit:
-    "PDF başına en fazla 256 MB. Kaynakların kullanım koşulları korunmalıdır.",
-  pdfInvalid: "Geçerli bir PDF seç; en fazla 256 MB olabilir.",
-  fileSaved: "PDF bu cihaza kaydedildi.",
   fileError: "Dosya kaydedilemedi. Depolama alanını kontrol edip yeniden dene.",
   delete: "Sil",
-  deleteConfirm: "Bu yerel dosya silinsin mi? Öğrenme geçmişin korunur.",
-  pdfLoading: "PDF açılıyor…",
-  pdfError: "PDF açılamadı. Dosyanın sağlam olduğunu kontrol et.",
-  pdfPrev: "Önceki sayfa",
-  pdfNext: "Sonraki sayfa",
   readyLessonCount: "hazır konu anlatımı",
-  catalogueBody:
-    "Drive arşivi incelendi. Tüm kitaplar bu pakete aktarılmış değildir. Özel ve dağıtım izni belirsiz kaynaklar herkese açık koda eklenmez.",
-  worldTitle: "Bilginle büyüyen bir dünya.",
-  worldBody:
-    "Keşiflerin gerçek çalışmalarına bağlı. XP bir sınav puanı veya yeterlik ölçümü değildir.",
-  xp: "Keşif XP",
-  milestones: "Keşif durakları",
-  milestone1: "İlk yolculuk",
-  milestone2: "Üç farklı konu",
-  milestone3: "İlk gecikmeli tekrar",
-  milestone4: "Altı konuya dokun",
   locked: "Henüz ulaşılmadı",
   earned: "Keşfedildi",
   worldOff:
@@ -211,7 +174,6 @@ const messages: Record<string, string> = {
   scaleError: "80–200 arasında, 5’in katı bir değer yaz.",
   restartPending: "Kaydedilmemiş değişiklikler var. Önce kaydı yeniden dene.",
   closeSession: "Çalışmayı bırakmadan çık",
-  startOver: "Taslağı bırak ve yeni çalışma aç",
   draftConfirm:
     "Yarım kalan çalışma var. Bu taslak bırakılıp yeni çalışma açılsın mı?",
   footer: `Fragaria Interactive · YKSMania ${APP_VERSION} alpha`,
@@ -220,15 +182,6 @@ const messages: Record<string, string> = {
   questions: "Sorular",
   exams: "Sınavlar",
   cheatsheets: "Kopya Kağıtları",
-  cheatsheetsIntro:
-    "TYT veya AYT seç, dersini aç ve kopya kağıtlarını konu konu incele.",
-  cheatsheetFiles: "Kopya kağıdı PDF’leri",
-  allCheatsheetFiles: "Dersteki tüm kopya kağıdı PDF’leri",
-  cheatsheetImport: "PDF veya kaynak kataloğu ekle",
-  cheatsheetNoFiles:
-    "Eşleşmiş PDF bulunamadı. Dosyalarını Ayarlar → Kaynak dosyaları bölümünden ekleyebilir veya dersin tüm kopya kağıdı PDF’lerine bakabilirsin.",
-  cheatsheetsScope:
-    "479 kaynak başlığı listelenir. PDF’ler ayrıca Ayarlar → Kaynak dosyaları bölümünden bu cihaza eklenir; başlık sayısı hazır PDF sayısı değildir.",
   mainNavigation: "Ana gezinme",
   studyNotes: "Çalışma notları",
   examChoice: "Sınav seçimi",
@@ -236,7 +189,6 @@ const messages: Record<string, string> = {
   readyQuestionSets: "hazır soru seti",
   originalQuestions: "özgün soru",
   catalogueHeading: "Konu başlığı",
-  sourceHeading: "Kaynak başlığı",
   curriculumScope:
     "Müfredat kataloğunda {n} ana konu başlığı var. Bir başlığın listelenmesi, içeriğinin veya sorularının hazır olduğu anlamına gelmez. Sınav yılına ait resmî tam kapsam ayrıca doğrulanmalıdır. Kaynak başlıkları özgün Türkçesiyle korunur.",
   theoryIntro:
@@ -245,59 +197,6 @@ const messages: Record<string, string> = {
     "Sınavını ve dersini seç, hazır soru setlerini çöz.",
   readingNotMastery:
     "Okumak tek başına öğrenme puanı kazandırmaz. Bağımsız çözüm ayrı kaydedilir.",
-  sourceFiles: "Kaynak dosyaları",
-  sourceCatalogue: "Kişisel kaynak kataloğu",
-  importCatalogue: "Kaynak kataloğunu ekle",
-  importCatalogueHelp:
-    "Kendi arşivini eşleştirmek için Ayarlar → Kaynak dosyaları bölümünden kaynak kataloğu ve PDF’lerini ekle.",
-  cataloguePrivacy:
-    "Katalog ve PDF’ler yalnız bu cihazda tutulur. İçe aktarma dosyaları internete yüklemez; ilerleme yedeği PDF’leri ve kaynak kataloğunu içermez. Orijinal dosyalarını ayrıca sakla.",
-  catalogueReferences: "kaynak dosya kaydı",
-  onDevice: "cihazda",
-  notOnDevice: "cihazda değil",
-  catalogueNotDownload: "Katalog eklendi; PDF dosyaları ayrıca içe alınır.",
-  pdfNotQuestionBank:
-    "PDF içe almak, soruları tek tek etkileşimli soru bankasına dönüştürmez ve öğrenme kaydı oluşturmaz.",
-  sourceFilter: "Kaynak filtresi",
-  sourceSearch: "Kaynak dosyası ara",
-  provider_all: "Tüm kaynaklar",
-  provider_mebi: "MEBİ",
-  provider_ogm: "OGM Materyal",
-  provider_past: "Çıkmış sorular / ÖSYM",
-  provider_aurelia: "Aurelia",
-  provider_other: "Diğer kaynaklar",
-  kind_theory: "Konu anlatımı",
-  kind_questions: "Sorular",
-  kind_mixed: "Anlatım ve sorular",
-  kind_cheatsheet: "Kopya kâğıdı",
-  kind_exam: "Deneme",
-  openPdf: "PDF’yi aç",
-  openDrive: "Drive’da aç (internet)",
-  showMore: "Daha fazla göster",
-  fallbackSubject: "Eşleşmeyen dosyalar için ders",
-  documentKind: "Eşleşmeyen dosyalar için içerik türü",
-  bulkImportHelp:
-    "Birden çok PDF veya klasör seçebilirsin. Katalogda dosya adı tekil eşleşirse dersi ve türü otomatik bulunur. Belirsiz eşleşmeler yukarıdaki derse eklenir. Dosyalar sırayla işlenir; sınır PDF başına 256 MB.",
-  importFolder: "Klasör ekle",
-  importProgress: "Dosya içe aktarma",
-  filesProcessed: "dosya işlendi",
-  stopImport: "İçe aktarmayı durdur",
-  filesImported: "yeni dosya eklendi",
-  duplicateFiles: "aynı içerik birleştirildi",
-  failedFiles: "eklenemeyen dosya",
-  importStopped: "İçe aktarma durdu. Daha önce kaydedilen dosyalar korunuyor.",
-  fallbackUsed:
-    "dosya seçili ders/tür ile eklendi veya birleştirildi; sınıflandırmayı kontrol et.",
-  replaceCatalogue:
-    "Mevcut kaynak kataloğu değiştirilecek. PDF’lerin, notların ve çalışma kayıtların korunacak. Devam edilsin mi?",
-  catalogueSaved: "Kaynak kataloğu bu cihaza kaydedildi.",
-  catalogueInvalid:
-    "Katalog açılamadı. Beklenen YKSMania kaynak kataloğu biçimini ve ders kimliklerini kontrol et. Mevcut katalog korunuyor.",
-  pdfPage: "PDF sayfası",
-  goPage: "Git",
-  pageRange: "Geçerli sayfa aralığı:",
-  importKeepOpen:
-    "İçe aktarırken bu bölümü açık tut. Başka bölüme geçersen işlem durur; kaydedilmiş dosyalar korunur.",
 };
 export function translate(key: string): string {
   return messages[key] ?? key;

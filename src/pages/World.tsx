@@ -133,7 +133,7 @@ export function World({ navigate }: { navigate: (r: string) => void }) {
           </table>
         </div>
       </section>
-      <p className="small muted">
+      <p className="small muted world-note">
         Ağaçlardaki dallar çalışma sırasını gösterir. Konudan anlatıma, yan
         dalından sorulara geçebilirsin. Yüzdeler {contentCounts.studyTopics} çalışma
         başlığına göredir: çalışma kitabı sırasındaki {contentCounts.workbookTopics} başlık ve
