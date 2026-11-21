@@ -31,6 +31,7 @@ async function addSessions(page: Page, sessions: unknown[]) {
   );
 }
 let lesson: Lesson;
+let twinOfQ3: string;
 test.beforeAll(async ({}, info) => {
   const root = fileURLToPath(new URL("../..", import.meta.url));
   const source = await createServer({
@@ -44,6 +45,8 @@ test.beforeAll(async ({}, info) => {
   try {
     const { lessonById } = await source.ssrLoadModule("/src/domain/content.ts");
     lesson = lessonById("katli-oranlar");
+    const { pickTwin } = await source.ssrLoadModule("/src/domain/twinQuestion.ts");
+    twinOfQ3 = pickTwin(lesson.questions, lesson.questions[2].id, new Set());
   } finally {
     await source.close();
   }
@@ -70,15 +73,19 @@ const session = (id: string, date: string, responses: unknown[]) => ({
 for (const width of [1280, 320])
   test(`049 mistakes: evidence-based status, confident-wrong first, warning note, heatmap and booklet at ${width}px`, async ({ page }) => {
     const [q1, q2, q3] = lesson.questions;
+    const twin = lesson.questions.find((q) => q.id === twinOfQ3)!;
+    expect([q1.id, q2.id, q3.id]).not.toContain(twin.id);
     await page.setViewportSize({ width, height: 900 });
     await page.goto("/");
     await expect(page.getByRole("heading", { name: "Bugün", exact: true })).toBeVisible();
     await page.goto("/#/settings");
     await setThemePreference(page, "dark");
     await addSessions(page, [
-      // q1 wrong, q2 wrong while "sure", q3 wrong; q3 solved 4 days later without help.
+      // q1 wrong, q2 wrong while "sure", q3 wrong; q3 then passes all three
+      // repair stages: retry and twin the next day, the delayed check 4 days later.
       session("session:1:katli-oranlar", "2026-11-10", [response(q1, false), response(q2, false, "high"), response(q3, false)]),
-      session("session:2:katli-oranlar", "2026-11-14", [response(q3, true)]),
+      session("session:2:katli-oranlar", "2026-11-11", [response(q3, true), response(twin, true)]),
+      session("session:3:katli-oranlar", "2026-11-14", [response(q3, true)]),
     ]);
     await page.goto("/#/mistakes");
     await page.reload();
@@ -88,6 +95,8 @@ for (const width of [1280, 320])
     await expect(cards.first().locator(".mistake-meta")).toContainText("Eminim dedin");
     await expect(cards.first().locator("h2")).toHaveText(typeset(q2.prompt.tr));
     await expect(cards.last().locator(".status-chip")).toHaveText("Kalıcı onarım");
+    await expect(cards.last().getByRole("group", { name: "Onarım aşamaları" })).toContainText("Üç aşama tamam: kalıcı onarıldı");
+    await expect(cards.first().getByRole("group", { name: "Onarım aşamaları" })).toContainText("Aşama 1 / 3: Yeniden dene");
     const filters = page.getByRole("group", { name: "Onarım durumu" });
     await expect(filters.getByRole("button", { name: "Açık (2)" })).toBeVisible();
     await filters.getByRole("button", { name: "Kalıcı onarım (1)" }).click();

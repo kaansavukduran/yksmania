@@ -1,0 +1,113 @@
+.trap-deck {
+  margin: 0 0 var(--stack-gap);
+  padding: var(--panel-pad);
+  min-width: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+.trap-deck h2,
+.trap-deck p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.trap-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1rem;
+  min-width: 0;
+}
+.trap-filters label {
+  display: grid;
+  gap: 0.25rem;
+  flex: 1 1 14rem;
+  min-width: 0;
+}
+.trap-filters label > span {
+  font-weight: 600;
+}
+.trap-filters select {
+  min-height: 44px;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--surface);
+  color: var(--text);
+}
+.trap-stage {
+  display: grid;
+  gap: 0.6rem;
+  min-width: 0;
+}
+.trap-card {
+  display: block;
+  width: 100%;
+  min-height: 12rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 14px;
+  background: var(--surface-2);
+  color: var(--text);
+  text-align: start;
+  font: inherit;
+}
+.trap-card.is-back {
+  border-left-color: var(--mint);
+  background: var(--surface);
+}
+.trap-card:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+.trap-face {
+  display: grid;
+  gap: 0.45rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.trap-question,
+.trap-label {
+  font-size: 0.85rem;
+  font-weight: 650;
+  color: var(--muted);
+}
+.trap-label {
+  margin-top: 0.2rem;
+}
+.trap-pattern {
+  font-size: 1.08rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.trap-heading {
+  color: var(--accent);
+}
+.trap-text {
+  font-weight: 600;
+}
+.trap-place {
+  color: var(--muted);
+}
+.trap-controls,
+.trap-marks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+.trap-controls .icon-button {
+  border: 1px solid var(--border);
+}
+.trap-controls button,
+.trap-marks button {
+  min-height: 44px;
+  min-width: 44px;
+  max-width: 100%;
+}
+.trap-controls .secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}

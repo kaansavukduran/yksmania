@@ -59,6 +59,8 @@ describe("exam items count only when answered without help", () => {
     expect(mistakeStatus([wrong], wrong, "q", [exam("2026-11-02", 0, 1)])).toBe("acik");
     expect(mistakeStatus([wrong], wrong, "q", [exam("2026-11-02", 1, 0)])).toBe("acik");
     expect(mistakeStatus([wrong], wrong, "q", [exam("2026-11-02", 0, 0)])).toBe("onarildi");
-    expect(mistakeStatus([wrong], wrong, "q", [exam("2026-11-05", 0, 0)])).toBe("kalici");
+    // One late answer passes stage 1 only; the delayed check needs a further answer.
+    expect(mistakeStatus([wrong], wrong, "q", [exam("2026-11-05", 0, 0)])).toBe("onarildi");
+    expect(mistakeStatus([wrong], wrong, "q", [exam("2026-11-02", 0, 0), exam("2026-11-05", 0, 0)])).toBe("kalici");
   });
 });

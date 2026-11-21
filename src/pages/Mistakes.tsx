@@ -1,6 +1,6 @@
 import { typeset } from "../domain/typeset";
 import { localizedQuestionView } from "../domain/questionPresentation";
-import { useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { RotateCcw, ArrowUpRight } from "lucide-react";
 import { useApp } from "../store";
 import { lessons, lessonById, subjects } from "../domain/content";
@@ -8,14 +8,21 @@ import { formatDate, undoSession } from "../domain/scheduler";
 import { useConfirmationDialog } from "../components/ConfirmationDialog";
 import { Empty } from "../components/Shared";
 import type { Lesson } from "../domain/model";
-import { MistakeRepair, mistakeKey, mistakeMap, mistakeReasons } from "../components/MistakeRepair";
+import { MistakeRepair, RepairStages, mistakeKey, mistakeMap, mistakeReasons } from "../components/MistakeRepair";
 import { MistakeBoss, MistakeSprint, MistakeWarning, PocketBooklet } from "../components/MistakeTools";
 import { MistakeBridge } from "../components/MistakeBridge";
 import { StarBadge } from "../components/StarPractice";
 import { beginExam, mistakeSprintSpec, questionStars } from "../domain/exams";
 import { MistakePatterns } from "../components/MistakePatterns";
 import { lastSevenDays, mistakePatterns, wrongAnswers } from "../domain/mistakePatterns";
-import { compareMistakes, mistakeStatus, STATUS_LABEL, type MistakeStatus } from "../domain/mistakeStatus";
+import { compareMistakes, repairProgress, statusOfStage, STATUS_LABEL, type MistakeStatus } from "../domain/mistakeStatus";
+import { twinForMistake } from "../domain/twinQuestion";
+import { lessonTopic } from "../domain/studyPlan";
+import { osymRows } from "../learning/osym";
+import { osymTopicCount } from "../domain/trapDeck";
+import { TrapDeck } from "../components/TrapDeck";
+
+const subjectOrder = subjects.map((s) => s.id);
 export function Mistakes({
   start,
   navigate,
@@ -60,12 +67,17 @@ export function Mistakes({
             .flatMap((x) => x.questions)
             .find((q) => q.id === r.questionId);
           const lesson = lessonById(s.lessonId);
+          const twinId = lesson
+            ? twinForMistake(lesson.questions, state.sessions, state.examSessions, s, r.questionId)
+            : undefined;
+          const progress = repairProgress(state.sessions, s, r.questionId, state.examSessions, twinId);
           return {
             session: s,
             response: r,
             lesson,
             question: question ? localizedQuestionView(question) : undefined,
-            status: mistakeStatus(state.sessions, s, r.questionId, state.examSessions),
+            progress,
+            status: statusOfStage(progress.stage),
             confident: !r.correct && r.confidence === "high",
             assistedOnly: r.correct,
             stars: questionStars(r.questionId) ?? 0,
@@ -81,12 +93,12 @@ export function Mistakes({
     kalici: allItems.filter((x) => x.status === "kalici").length,
   };
   const items = allItems.filter((x) => filter === "hepsi" || x.status === filter);
-  const weekPatterns = mistakePatterns(
-    lastSevenDays(
-      wrongAnswers(state.sessions, state.examSessions, state.explorations, (id) => lessonById(id)?.subjectId),
-      today,
-    ),
+  const allWrong = useMemo(
+    () => wrongAnswers(state.sessions, state.examSessions, state.explorations, (id) => lessonById(id)?.subjectId),
+    [state.sessions, state.examSessions, state.explorations],
   );
+  const wrongSubjects = useMemo(() => allWrong.map((w) => w.subjectId), [allWrong]);
+  const weekPatterns = mistakePatterns(lastSevenDays(allWrong, today));
   async function startSprint(ids: string[]) {
     const spec = mistakeSprintSpec(ids);
     if (!spec) return;
@@ -121,7 +133,17 @@ export function Mistakes({
         >
           {t("history")}
         </button>
+        <button
+          aria-pressed={tab === "traps"}
+          className={tab === "traps" ? "active" : ""}
+          onClick={() => setTab("traps")}
+        >
+          ÖSYM tuzak destesi
+        </button>
       </div>
+      {tab === "traps" && (
+        <TrapDeck subjectOrder={subjectOrder} wrongSubjects={wrongSubjects} subjectName={subjectName} />
+      )}
       {tab === "mistakes" && (
         <MistakePatterns
           patterns={weekPatterns}
@@ -130,7 +152,7 @@ export function Mistakes({
           begin={startSprint}
         />
       )}
-      {tab === "mistakes" ? (
+      {tab === "traps" ? null : tab === "mistakes" ? (
         allItems.length ? (
           <div className="mistake-list">
             <MistakeMapPanel
@@ -186,7 +208,9 @@ export function Mistakes({
                   answer: l(x.question!.options[x.question!.answer]),
                 }))}
             />
-            {items.map(({ session, response, lesson, question, status, confident, stars }, i) =>
+            {items.map(({ session, response, lesson, question, status, confident, stars, progress }, i) => {
+              const osym = lesson ? osymTopicCount(osymRows, lessonTopic[lesson.id], lesson.subjectId) : undefined;
+              return (
               question && lesson ? (
                 <article
                   className="panel mistake-card"
@@ -210,6 +234,13 @@ export function Mistakes({
                     {confident && <span className="error-chip">Eminim dedin · yanlış</span>}
                     <StarBadge stars={stars || undefined} />
                   </div>
+                  {osym && (
+                    <p className="small muted mistake-osym">
+                      {osym.questions
+                        ? `ÖSYM bu başlıktan ${osym.years} yılda ${osym.questions} soru sordu.`
+                        : `ÖSYM bu başlıktan ${osym.years} yılda doğrudan soru sormadı.`}
+                    </p>
+                  )}
                   <h2 className="question-prompt">{typeset(l(question.prompt))}</h2>
                   <p>
                     <span className="muted">{t("yourAnswer")}: </span>
@@ -231,15 +262,23 @@ export function Mistakes({
                     questionId={response.questionId}
                     options={question.options.map((o) => l(o))}
                     answer={question.answer}
-                  />
+                  >
+                    <RepairStages
+                      progress={progress}
+                      questionId={response.questionId}
+                      today={today}
+                      busy={!!state.examDraft}
+                      begin={startSprint}
+                    />
+                  </MistakeRepair>
                   <MistakeBridge lessonId={lesson.id} subjectId={lesson.subjectId} navigate={navigate} />
                   <button className="text-button" onClick={() => start(lesson)}>
                     {t("repair")}
                     <ArrowUpRight size={17} />
                   </button>
                 </article>
-              ) : null,
-            )}
+              ) : null);
+            })}
           </div>
         ) : (
           <Empty text={t("noMistakes")} />
