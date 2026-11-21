@@ -8,7 +8,8 @@
 //    TypeScript that uses import.meta, so the audit runs inside vitest and
 //    writes a machine-readable report; this script reads it and compares it
 //    with the ceilings below. Known gaps are ratchets: a rise fails, a fall
-//    asks for the ceiling to be lowered. Every other kind is zero-tolerance.
+//    asks for the ceiling to be lowered. Every other kind is zero-tolerance;
+//    since every card now has a guide, all ceilings are 0.
 // Usage: node scripts/lint-content.mjs [--no-audit]
 import { readFileSync, readdirSync, statSync, mkdtempSync, rmSync } from "node:fs";
 import { join } from "node:path";
@@ -18,8 +19,8 @@ import { fileURLToPath } from "node:url";
 
 /** Ceilings for the content audit. Lower them as content is repaired; never raise. */
 export const CONTENT_CEILINGS = {
-  /** Cards without a reason for every option (legacy cards awaiting a guide). */
-  missingReasons: 560,
+  /** Cards without a reason for every option (the last 560 got guides in 053). */
+  missingReasons: 0,
   /** A guide whose option reason is empty: zero tolerance. */
   emptyReasons: 0,
   /** Cards that cannot be answered from their own card. */
@@ -29,7 +30,7 @@ export const CONTENT_CEILINGS = {
   /** Cards without any hint. */
   missingHint: 0,
   /** Cards without a step-by-step solution (help panels < 3). */
-  missingSteps: 560,
+  missingSteps: 0,
 };
 const LABELS = {
   missingReasons: "Eksik çeldirici açıklaması",
