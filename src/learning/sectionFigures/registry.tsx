@@ -179,6 +179,12 @@ import { mathFigures060TytNumbers } from "./mathFigures060TytNumbers";
 import { mathFigures060TytAlgebra } from "./mathFigures060TytAlgebra";
 import { mathFigures060TytData } from "./mathFigures060TytData";
 import { mathFigures060TytProblems } from "./mathFigures060TytProblems";
+import { religionFigures061Worship } from "./religionFigures061Worship";
+import { religionFigures061Anatolia } from "./religionFigures061Anatolia";
+import { religionFigures061Life } from "./religionFigures061Life";
+import { religionFigures061Belief } from "./religionFigures061Belief";
+import { geographyFigures061Human } from "./geographyFigures061Human";
+import { geographyFigures061Environment } from "./geographyFigures061Environment";
 
 /*
  * Figure packs are merged per guide. A plain object spread replaced a whole
@@ -365,6 +371,12 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   mathFigures060TytAlgebra,
   mathFigures060TytData,
   mathFigures060TytProblems,
+  religionFigures061Worship,
+  religionFigures061Anatolia,
+  religionFigures061Life,
+  religionFigures061Belief,
+  geographyFigures061Human,
+  geographyFigures061Environment,
 ];
 export const sectionFigures: Record<string, Record<string, FigureDef>> = {};
 for (const pack of figurePacks)
