@@ -1,3 +1,14 @@
+# YKSMania 0.26.0 — web yayını
+
+21 Kasım 2026, Türkiye saati. Sahibin sürekli yayın onayıyla main'e alınıp GitHub Pages'e yayımlandı. Sürüm kuralı: her main + Pages yayınında sürüm bir basamak artar; tarih ve kapsam bu dosyaya ve Ayarlar → Güncelleme notuna yazılır.
+
+- **Öğrenme öncelikli süre:** Ayarlar → Zamanlayıcılar (kapalıyken kum saati, deneme sayacı, hız notları, süre nabzı, soru süreleri gizli). Deneme süre dolsa da kendiliğinden bitmez; yalnız öğrenci bitirince kaydedilir; "Süre tamamlandı" uyarısı yok, sayaç sakin "Ek süre" gösterir.
+- **Bölüm figürleri:** 0.25.0'dan bu yana 525 yeni figür; toplam 331 figürlü ders, 1.355 figür (docs/ILERLEME.md).
+- **Lab etiketleri:** paketli Inter ile her platformda aynı ölçü; dört labda gerçek düzeltme, kalan 0 px temaslar açık borç listesinde.
+- **Doğrulama:** tip denetimi, `npm run check`, ilgili birim ve tarayıcı testleri yerelde geçti; main CI'ı ayrıca koşar. 0.25.0 yayınındaki commit (`97061f2`) için main CI'ının dört tarayıcı parçası yeşildi. Paket sürümleri ve gerçek cihaz kabulü bu yayına dahil değildir.
+
+---
+
 # YKSMania 0.25.0 — web yayını
 
 21 Kasım 2026. Sahibin açık onayıyla `claude/laughing-ritchie-l0rre4` main'e alındı ve GitHub Pages'e yayımlandı. Durum: `npm run check`, tip denetimi ve derleme geçer; tam birim paketi 3.236 testte geçti (bir yük zaman aşımı tek başına koşunca geçti); CI tarayıcı parçalarının 2, 3 ve 4'ü yeşil. 1. parçadaki lab etiket kapısı yayın anında hâlâ koşuyordu: sonucu FORGE.md'ye yazılır. Windows/Linux paketleri ve Android sürüm etiketi tam yeşil CI koşusu gerektirdiği için bu yayına dahil değildir; gerçek cihaz kabulü yapılmadı.

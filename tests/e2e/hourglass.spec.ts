@@ -80,7 +80,7 @@ test("hourglass keeps its real deadline across theory, sheets, questions and off
   await page.getByRole("button", { name: "Devam et", exact: true }).click();
   await page.clock.fastForward(240100);
   await expect(page.locator(".hourglass-time")).toHaveText("00:00");
-  await expect(page.locator(".hourglass-state")).toHaveText("Süre tamamlandı");
+  await expect(page.locator(".hourglass-state")).toHaveText("Kum bitti · istersen yeniden çevir");
   await page.evaluate(async () => {
     await navigator.serviceWorker.ready;
   });

@@ -1,4 +1,4 @@
-# YKSMania 0.25.0 — güncel durum (21 Kasım 2026)
+# YKSMania 0.26.0 — güncel durum (21 Kasım 2026)
 
 **Web:** [GitHub Pages](https://kaansavukduran.github.io/yksmania/) main dalından, yalnız tam CI yeşil kaynaktan otomatik yayımlanır. 0.25.0 aday notları: [docs/RELEASE_ALPHA.md](docs/RELEASE_ALPHA.md). Masaüstü sürüm etiketi yok; Android deneme APK'sı `main` üzerinde Actions ile üretilir. Uygulama eski görünürse **Ayarlar → Güncelleme** ya da sayfayı yenile: çevrimdışı önbellek yeni sürümü güncellemeyle alır.
 

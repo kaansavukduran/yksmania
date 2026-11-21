@@ -1,7 +1,7 @@
 {
-  "version": "0.25.0",
+  "version": "0.26.0",
   "channel": "alpha",
   "notes": {
-    "tr": "0.25.0: Bütün 6.465 soruda ayrı İpucu ve Adım adım çözüm (terim, veri, adımlar, çeldirici otopsisi, 1 dakikalık kural; açmak yardım sayılır, XP vermez). 505 konu anlatımının hepsinde bölüm arası \"Okuduğunu hatırla\" kartları (3.052 soru). 2018–2026 YKS kitapçıklarından 1.845 soruluk ÖSYM kalıp haritası: konu paneli, Dersler'de sıklık haritası, Sınavlar'da dağılım, Yanlışlarım'da tuzak destesi. Sınavlarda ders sırası, süre nabzı ve 2. tur; hata merkezinde üç aşamalı onarım ve ikiz soru. Mobilde ferah kartlar, kırık simgeler SVG, figür ve lab etiketleri çakışmasız. Kayıtlı ilerleme, notlar, ayarlar ve özgün tekrar tarihleri korunur."
+    "tr": "0.26.0: Öğrenme öncelikli süre: Ayarlar → Zamanlayıcılar ile kum saati, deneme sayacı, hız notları ve soru süreleri tamamen gizlenebilir. Süre dolsa da deneme kapanmaz; sen \"Denemeyi bitir\" diyene kadar yanıtlarına, ipuçlarına ve çözümlere bakmaya devam edersin. 0.25.0'dan bu yana 525 yeni bölüm figürü: AYT Fizik, Kimya, Biyoloji ve Matematik, TYT Coğrafya, Biyoloji, Tarih ve Kimya (klimatogram, atış yörüngesi, titrasyon eğrisi, Punnett karesi, zaman çizelgesi ve daha fazlası). Lab etiketleri her platformda aynı yazı tipiyle çakışmasız. Kayıtlı ilerleme, notlar, ayarlar ve özgün tekrar tarihleri korunur."
   }
 }

@@ -212,7 +212,7 @@ export function StudyTimer() {
         </output>
         <p className="hourglass-state" role="status">
           {remaining === 0
-            ? "Süre tamamlandı"
+            ? "Kum bitti · istersen yeniden çevir"
             : running
               ? "Kum akıyor"
               : paused
