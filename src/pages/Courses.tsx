@@ -6,6 +6,7 @@ import { Search, ChevronDown, ArrowRight } from "lucide-react";
 import { useApp } from "../store";
 import { lessons, subjects } from "../domain/content";
 import curriculum from "../data/curriculum.json";
+import { OsymHeatmap, hasOsymData } from "../components/OsymPatterns";
 import { Empty, SubjectMark } from "../components/Shared";
 import type { Lesson } from "../domain/model";
 import { StudyTimer } from "../components/StudyTimer";
@@ -211,6 +212,16 @@ export function Courses({
                           </li>
                         ))}
                       </ul>
+                    </details>
+                  )}
+                  {!query && hasOsymData(subject.id) && (
+                    <details className="curriculum-details">
+                      <summary>ÖSYM sıklık haritası</summary>
+                      <OsymHeatmap
+                        subjectId={subject.id}
+                        topics={curriculum.filter((v) => v.subjectId === subject.id)}
+                        embedded
+                      />
                     </details>
                   )}
                 </div>
