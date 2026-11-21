@@ -276,7 +276,7 @@ async function visibleCard(
   card: HelpQuestion,
   answerClass: string,
 ) {
-  await expect(panel.locator("h2")).toHaveText(card.prompt);
+  await expect(panel.locator("h2")).toHaveText(typeset(card.prompt));
   await expect(panel.locator(`${answerClass} > span:nth-child(2)`)).toHaveText(
     card.options,
   );
@@ -343,12 +343,12 @@ for (const id of ids) {
         await page.locator(".help-next").click();
         await expect(
           page.locator(".help-content > section").first(),
-        ).toContainText(corrections[id].hint!);
+        ).toContainText(typeset(corrections[id].hint!));
       }
       await checkStudyAnswer(page, selections[index], index !== target);
       if (index === target) {
         await expect(page.locator(".feedback.repair > p")).toHaveText(
-          card.explanation,
+          typeset(card.explanation),
         );
         await expect
           .poll(async () => (await stored(page)).draft?.responses)
@@ -367,7 +367,7 @@ for (const id of ids) {
         await page.reload();
         await visibleCard(page.locator(".question-panel"), card, ".answer");
         await expect(page.locator(".feedback.repair > p")).toHaveText(
-          card.explanation,
+          typeset(card.explanation),
         );
         await expect(
           page.getByRole("textbox", { name: "Notun", exact: true }),
@@ -408,7 +408,7 @@ for (const id of ids) {
     const mistake = page.locator(".mistake-card");
     const view = expected(lesson.questions[target]);
     await expect(mistake).toHaveCount(1);
-    await expect(mistake.locator("h2")).toHaveText(view.prompt);
+    await expect(mistake.locator("h2")).toHaveText(typeset(view.prompt));
     await expect(mistake.locator(":scope > p")).toContainText(
       view.options[selections[target]],
     );
@@ -417,7 +417,7 @@ for (const id of ids) {
       view.options[view.answer],
     );
     await expect(mistake.locator("details > p").last()).toHaveText(
-      view.explanation,
+      typeset(view.explanation),
     );
     const viewed = await stored(page);
     expect(JSON.stringify(viewed.sessions)).toBe(sessionBytes);
@@ -550,7 +550,7 @@ test("synthetic validated legacy TYT five-item raw paper: active and finished vi
       page.locator(".exam-answer").nth(draft.answers[index]!),
     ).toHaveAttribute("aria-pressed", "true");
     await expect(page.locator(".help-full-solution > p").nth(1)).toHaveText(
-      card.explanation,
+      typeset(card.explanation),
     );
     await expect(page.locator(".help-full-solution > ol > li")).toHaveCount(
       card.options.length,
@@ -558,7 +558,7 @@ test("synthetic validated legacy TYT five-item raw paper: active and finished vi
     if (card.id === "periodic-4")
       await expect(
         page.locator(".help-content > section").first(),
-      ).toContainText(corrections[card.id].hint!);
+      ).toContainText(typeset(corrections[card.id].hint!));
     const current = (await stored(page)).examDraft!;
     expect({ ...current, index: 0 }).toEqual(draft);
     expect(JSON.stringify(current.items)).toBe(rawBytes);
@@ -610,7 +610,7 @@ test("synthetic validated legacy TYT five-item raw paper: active and finished vi
       const solution = page.locator(".exam-solution").nth(index);
       const card = expected(rawItems[index]);
       await solution.locator("summary").click();
-      await expect(solution.locator(":scope > h3")).toHaveText(card.prompt);
+      await expect(solution.locator(":scope > h3")).toHaveText(typeset(card.prompt));
       await expect(solution.locator(":scope > ol > li")).toHaveText(
         card.options.map(
           (option, i) =>
@@ -620,13 +620,13 @@ test("synthetic validated legacy TYT five-item raw paper: active and finished vi
         ),
       );
       await expect(solution.locator(".exam-explanation > p")).toHaveText(
-        card.explanation,
+        typeset(card.explanation),
       );
       if (card.id === "periodic-4") {
         await solution.locator(".help-next").click();
         await expect(
           solution.locator(".help-content > section").first(),
-        ).toContainText(corrections[card.id].hint!);
+        ).toContainText(typeset(corrections[card.id].hint!));
       }
     }
   };
@@ -708,7 +708,7 @@ test("eq-2: three real options, five explicit panels then full6, canonical marke
     "Doğru yanıt: C · 2",
   );
   await expect(page.locator(".help-full-solution > p").nth(1)).toHaveText(
-    card.explanation,
+    typeset(card.explanation),
   );
   await expect(page.locator(".help-next")).toHaveCount(0);
   const full = await stored(page);

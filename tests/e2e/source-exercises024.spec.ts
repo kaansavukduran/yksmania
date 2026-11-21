@@ -1,3 +1,4 @@
+import { typeset } from "../../src/domain/typeset";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import ogm from "../../src/learning/originalOgmExercises024.json" with { type: "json" };
@@ -632,7 +633,7 @@ test("explicit valid frozen exam fixture retains exact source images in runner/r
       .getByRole("button", { name: `Soru ${index + 1}, boş`, exact: true })
       .click();
     await expect(page.locator(".exam-question h2")).toHaveText(
-      fixture.items[index].prompt,
+      typeset(fixture.items[index].prompt),
     );
     await expect(
       page.locator(".exam-question .source-figure-open"),
@@ -672,7 +673,7 @@ test("explicit valid frozen exam fixture retains exact source images in runner/r
     const item = results.nth(index);
     await item.locator("summary").click();
     await expect(item.locator("h3").first()).toHaveText(
-      fixture.items[index].prompt,
+      typeset(fixture.items[index].prompt),
     );
     await expect(item.locator(".source-figure-open")).toHaveCount(
       index === 0 || index === 5 ? 1 : 0,

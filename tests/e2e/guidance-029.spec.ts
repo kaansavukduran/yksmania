@@ -494,7 +494,7 @@ for (const target of guardedCases) {
         .poll(async () => (await stored(page)).draft?.index)
         .toBe(i + 1);
     }
-    await expect(page.locator(".question-panel h2")).toHaveText(target.prompt);
+    await expect(page.locator(".question-panel h2")).toHaveText(typeset(target.prompt));
     await expect(page.locator(".question-panel")).toContainText(
       `Soru ${target.index + 1} / 10`,
     );
@@ -532,7 +532,7 @@ for (const target of guardedCases) {
     const full = page.locator(".help-full-solution");
     await expect(full).toBeVisible();
     await expect(full.locator(".help-autopsy-body > span:last-child")).toHaveText(help.optionReasons.map(typeset));
-    await expect(full).toContainText(target.explanation);
+    await expect(full).toContainText(typeset(target.explanation));
     await expect(full).toContainText(typeset(help.commonError));
     await expect(full).toContainText(typeset(help.check));
     await expect(page.locator(".help-next")).toHaveCount(0);
@@ -584,7 +584,7 @@ for (const target of guardedCases) {
     await offlineReady(page);
     await context.setOffline(true);
     await page.reload();
-    await expect(page.locator(".question-panel h2")).toHaveText(target.prompt);
+    await expect(page.locator(".question-panel h2")).toHaveText(typeset(target.prompt));
     await expect(page.locator(".answer > span:nth-child(2)")).toHaveText(
       target.options,
     );
@@ -604,7 +604,7 @@ for (const target of guardedCases) {
       help.optionReasons.map(typeset),
     );
     await expect(page.locator(".help-full-solution")).toContainText(
-      target.explanation,
+      typeset(target.explanation),
     );
     await expect(
       page.getByRole("textbox", { name: "Notun", exact: true }),
@@ -761,7 +761,7 @@ async function openMembraneWorked(page: Page, touch: boolean) {
   await expect(example).toHaveCount(1);
   await activate(example.locator(":scope > summary"), touch);
   await expect(example.locator(".example-prompt")).toHaveText(
-    membraneWorked.prompt,
+    typeset(membraneWorked.prompt),
   );
   await expect(example.locator(".worked-steps > li")).toHaveCount(0);
   for (let i = 0; i < 3; i++) {
@@ -781,7 +781,7 @@ async function openMembraneWorked(page: Page, touch: boolean) {
       membraneWorked.steps[i].expression,
     );
     await expect(steps.nth(i).locator("p").last()).toHaveText(
-      membraneWorked.steps[i].explanation,
+      typeset(membraneWorked.steps[i].explanation),
     );
     await expect(example.locator(".worked-conclusion")).toHaveCount(
       i === 2 ? 1 : 0,
@@ -802,12 +802,12 @@ async function openMembraneSheetWorked(page: Page, touch: boolean) {
   await expect(example).toHaveCount(1);
   await activate(example.locator(":scope > summary"), touch);
   await expect(example.locator(".example-prompt")).toHaveText(
-    membraneWorked.prompt,
+    typeset(membraneWorked.prompt),
   );
   await activate(example.locator(".cheat-solution > summary"), touch);
   await expect(example.locator(".cheat-solution li")).toHaveText(
     membraneWorked.steps.map(
-      (step) => `${step.label} · ${step.expression} · ${step.explanation}`,
+      (step) => `${step.label} · ${step.expression} · ${typeset(step.explanation)}`,
     ),
   );
   await expect(example.locator(".cheat-solution > p")).toHaveText(

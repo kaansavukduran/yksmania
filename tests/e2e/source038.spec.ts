@@ -1,3 +1,4 @@
+import { typeset } from "../../src/domain/typeset";
 import release from "../../package.json" with { type: "json" };
 import flow from "../fixtures/source038-question-flow.json" with { type: "json" };
 import { test, expect, type Page } from "@playwright/test";
@@ -49,7 +50,7 @@ test("038 normal entry saves55 unassisted cards, draft, Today and original3/7/21
   await page.getByRole("button",{name:"Sorulara geç",exact:true}).click();
   for(const [index,card] of cards.entries()) {
     await expect(page.locator(".question-meta")).toContainText(`${index+1} / 55`);
-    await expect(page.locator(".question-panel h2")).toHaveText(card.prompt);
+    await expect(page.locator(".question-panel h2")).toHaveText(typeset(card.prompt));
     const answers=page.locator(".answer-options .answer");await expect(answers).toHaveCount(5);
     expect((await answers.locator("span:last-child").allTextContents()).map(text=>text.trim()).sort()).toEqual([...card.options].sort());
     await answers.filter({has:page.getByText(card.correct,{exact:true})}).click();

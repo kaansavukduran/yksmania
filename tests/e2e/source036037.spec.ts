@@ -1,3 +1,4 @@
+import { typeset } from "../../src/domain/typeset";
 import release from "../../package.json" with { type: "json" };
 import flow from "../fixtures/source036037-question-flow.json" with { type: "json" };
 import { test, expect, type Page, type Locator } from "@playwright/test";
@@ -487,7 +488,7 @@ for (const unit of units)
       await expect(page.locator(".question-meta")).toContainText(
         `${index + 1} / ${count}`,
       );
-      await expect(page.locator(".question-panel h2")).toHaveText(card.prompt);
+      await expect(page.locator(".question-panel h2")).toHaveText(typeset(card.prompt));
       const answers = page.locator(".answer-options .answer");
       await expect(answers).toHaveCount(5);
       expect(

@@ -1,3 +1,4 @@
+import { typeset } from "../../src/domain/typeset";
 import { setThemePreference } from "./helpers/theme";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
@@ -83,10 +84,10 @@ test("built-in branch exam keeps full passages, flags and answers offline, then 
     .getByRole("button", { name: `Soru ${firstIndex + 1}, boş`, exact: true })
     .click();
   await expect(page.locator(".exam-question .question-passage")).toHaveText(
-    items[firstIndex].passage,
+    typeset(items[firstIndex].passage),
   );
   await expect(page.locator(".exam-question h2")).toHaveText(
-    items[firstIndex].prompt,
+    typeset(items[firstIndex].prompt),
   );
   expect(
     await page.locator(".exam-question").evaluate((element) => {
@@ -162,7 +163,7 @@ test("built-in branch exam keeps full passages, flags and answers offline, then 
     "Bir kitabı bitirmek",
   );
   await expect(solution.locator(".exam-explanation p")).toHaveText(
-    items[firstIndex].explanation,
+    typeset(items[firstIndex].explanation),
   );
   await page.reload();
   await expect(page.locator(".exam-score-summary")).toContainText("0,75");

@@ -1,3 +1,4 @@
+import { typeset } from "../../src/domain/typeset";
 import release from "../../package.json" with { type: "json" };
 import { writeFile } from "node:fs/promises";
 import { test, expect, type Page } from "@playwright/test";
@@ -612,7 +613,7 @@ test("corrected guidance and summary render through normal assisted study; past-
     await expect(page.locator(".question-meta")).toContainText(
       `Soru ${number} / 46`,
     );
-    await expect(page.locator(".question-panel h2")).toHaveText(card.prompt);
+    await expect(page.locator(".question-panel h2")).toHaveText(typeset(card.prompt));
     const answers = page.locator(".answer-options .answer");
     await expect(answers).toHaveCount(5);
     expect(

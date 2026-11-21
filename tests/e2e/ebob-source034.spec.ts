@@ -1,3 +1,4 @@
+import { typeset } from "../../src/domain/typeset";
 import release from "../../package.json" with { type: "json" };
 import { test, expect, type Page, type Locator } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
@@ -674,7 +675,7 @@ test("all46 self-contained cards finish offline, Today shows actual46/46, manual
     await expect(page.locator(".question-meta")).toContainText(
       `${index + 1} / 46`,
     );
-    await expect(page.locator(".question-panel h2")).toHaveText(card.prompt);
+    await expect(page.locator(".question-panel h2")).toHaveText(typeset(card.prompt));
     const answers = page.locator(".answer-options .answer");
     await expect(answers).toHaveCount(5);
     const texts = await answers.locator("span:last-child").allTextContents();

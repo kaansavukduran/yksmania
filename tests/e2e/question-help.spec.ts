@@ -1,3 +1,4 @@
+import { typeset } from "../../src/domain/typeset";
 import { setThemePreference } from "./helpers/theme";
 import { expect, test, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
@@ -215,7 +216,7 @@ for (const learning of [true])
     await context.setOffline(true);
     await page.reload();
     await expect(page.locator(".help-full-solution")).toContainText(
-      question.explanation,
+      typeset(question.explanation),
     );
     expect((await stored(page)).examDraft).toEqual(helped);
     if (!learning) {

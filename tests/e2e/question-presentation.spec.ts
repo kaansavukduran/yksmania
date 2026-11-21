@@ -121,7 +121,7 @@ async function expectConditions(
   item: (typeof cases)[number],
 ) {
   await expect(heading).toBeVisible();
-  await expect(heading).toHaveText(item.prompt);
+  await expect(heading).toHaveText(typeset(item.prompt));
   for (const condition of item.conditions)
     await expect(heading).toContainText(condition);
 }

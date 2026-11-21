@@ -1,3 +1,4 @@
+import { typeset } from "../../src/domain/typeset";
 import release from "../../package.json" with { type: "json" };
 import { test, expect, type Page, type Locator } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
@@ -664,7 +665,7 @@ test("all 48 rational cards finish independently and Today keeps the actual save
       `${index + 1} / 48`,
     );
     await expect(page.locator(".question-panel h2")).toHaveText(
-      expected.prompt,
+      typeset(expected.prompt),
     );
     await page
       .locator(".answer-options .answer")
@@ -891,7 +892,7 @@ test.describe("rational corrected feedback at 320 Matrix large text", () => {
         `${index + 1} / 48`,
       );
       await expect(page.locator(".question-panel h2")).toHaveText(
-        expectedQuestions[index].prompt,
+        typeset(expectedQuestions[index].prompt),
       );
       const answer = index === 11 ? "1/3" : expectedQuestions[index].answer;
       await page
