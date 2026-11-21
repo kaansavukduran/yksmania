@@ -1,0 +1,442 @@
+[
+ {
+  "from": "Bu dersin varsayılan OGM okul tanımında birden çok farklı değerin hepsi eş sıklıktaysa ayırt edici mod yoktur: 2, 2, 5, 5 için ‘mod yok’ denir. Atölyedeki alternatif ‘en yüksek sıklık’ tanımı ise bütün en büyük frekanslı değerleri listeler; aynı örnekte 2 ve 5 çıkar. Tanımı görünür seçmeden bu iki sonucu çelişen tek cevaplar gibi sunma. Bir kez görülenlerin hepsinde okul tanımı yine mod vermez.",
+  "to": "Bu derste kullanılan varsayılan tanımda birden çok farklı değerin hepsi eş sıklıktaysa ayırt edici mod yoktur: 2, 2, 5, 5 için ‘mod yok’ denir. Atölyedeki alternatif ‘en yüksek sıklık’ tanımı ise bütün en büyük frekanslı değerleri listeler; aynı örnekte 2 ve 5 çıkar. Tanımı görünür seçmeden bu iki sonucu çelişen tek cevaplar gibi sunma. Bir kez görülenlerin hepsinde varsayılan tanım yine mod vermez."
+ },
+ {
+  "from": "Ortalamadan işaretli farkların toplamı sıfırdır; bunu yayılım sanma. Önce her farkı karele ve kareleri topla: Q=Σ(x−ortalama)². MEBİ’nin bu öğretimindeki örneklem varyansı Q/(n−1), örneklem standart sapması bunun kareköküdür; n en az 2 olmalıdır. 2, 4, 6 için ortalama 4, Q=8, örneklem varyansı 4 ve sapması 2’dir. Sapma gözlemin birimini, varyans birimin karesini taşır.",
+  "to": "Ortalamadan işaretli farkların toplamı sıfırdır; bunu yayılım sanma. Önce her farkı karele ve kareleri topla: Q=Σ(x−ortalama)². Burada kullanılan örneklem varyansı Q/(n−1), örneklem standart sapması bunun kareköküdür; n en az 2 olmalıdır. 2, 4, 6 için ortalama 4, Q=8, örneklem varyansı 4 ve sapması 2’dir. Sapma gözlemin birimini, varyans birimin karesini taşır."
+ },
+ {
+  "from": "Gözlemler incelenen anakütlenin tamamı olarak tanımlanırsa başka bir betimleme olan anakütle varyansı Q/n kullanılır; aynı listede 8/3, sapma √(8/3) olur. Soruda kapsam veya formül belirtilmeden iki paydayı birbirinin yerine geçirme. Atölye ikisini adlandırarak gösterir; varsayılan MEBİ n−1 hesabıdır. Tek gözlemde anakütle sapması 0, örneklem sapması tanımsızdır; boş veride merkez ölçüleri de yoktur.",
+  "to": "Gözlemler incelenen anakütlenin tamamı olarak tanımlanırsa başka bir betimleme olan anakütle varyansı Q/n kullanılır; aynı listede 8/3, sapma √(8/3) olur. Soruda kapsam veya formül belirtilmeden iki paydayı birbirinin yerine geçirme. Atölye ikisini adlandırarak gösterir; varsayılan n−1 hesabıdır. Tek gözlemde anakütle sapması 0, örneklem sapması tanımsızdır; boş veride merkez ölçüleri de yoktur."
+ },
+ {
+  "from": "Histogram sayısal aralıkları bitişik dikdörtgenlerle gösterir. Sınırları açıkça tanımla: [0,5), [5,15), [15,30] seçilirse 5 yalnız ikinci, 15 yalnız üçüncü sınıfa girer; son 30 üçüncüde tutulur. Sınıf genişlikleri 5, 10 ve 15’tir. MEBİ’deki tam sayı yaş örneğinde kullanılan grup genişliği kuralı, o eş aralıklı okul kurulumuna aittir; bütün sürekli veriler için evrensel bir formül değildir.",
+  "to": "Histogram sayısal aralıkları bitişik dikdörtgenlerle gösterir. Sınırları açıkça tanımla: [0,5), [5,15), [15,30] seçilirse 5 yalnız ikinci, 15 yalnız üçüncü sınıfa girer; son 30 üçüncüde tutulur. Sınıf genişlikleri 5, 10 ve 15’tir. Tam sayı yaş örneğinde kullanılan grup genişliği kuralı, o eş aralıklı kuruluma aittir; bütün sürekli veriler için evrensel bir formül değildir."
+ },
+ {
+  "from": "Açıklık en büyük ile en küçük değerin farkıdır; yalnız iki uca bakar. Bu kaynakta örneklem standart sapması, ortalamadan farkların kareleri toplamını n−1’e bölüp karekök alarak tanımlanır; n≥2 gerekir. 2,4,6 için ortalama 4, kareler toplamı 8 ve standart sapma √(8/2)=2’dir.",
+  "to": "Açıklık en büyük ile en küçük değerin farkıdır; yalnız iki uca bakar. Burada örneklem standart sapması, ortalamadan farkların kareleri toplamını n−1’e bölüp karekök alarak tanımlanır; n≥2 gerekir. 2,4,6 için ortalama 4, kareler toplamı 8 ve standart sapma √(8/2)=2’dir."
+ },
+ {
+  "from": "Eksenlerin hangi kaynak kümeye karşılık geldiğini ve sayısal ölçeğini oku. B×A’ya geçince noktalar y=x doğrusuna göre yer değiştirir; sadece eksen başlığını değiştirmek yeterli değildir. Modelin HTML ikili listesi, şeklin küçük ekranda okunamadığı durumda da tam veriyi sunar.",
+  "to": "Eksenlerin hangi kaynak kümeye karşılık geldiğini ve sayısal ölçeğini oku. B×A’ya geçince noktalar y=x doğrusuna göre yer değiştirir; sadece eksen başlığını değiştirmek yeterli değildir. Modelin ikili listesi, şeklin küçük ekranda okunamadığı durumda da tam veriyi sunar."
+ },
+ {
+  "from": "p⇒q biçiminde hipotez p, hüküm q’dur. n=4k yazılabilen bir tam sayı için n=2(2k) yazarak 2’ye bölünmeyi göstermek doğrudan ispata örnektir. Tek sayısal örnek genel teoremi ispatlamaz, fakat tek geçerli karşı örnek genel yanlış yargıyı çürütebilir. Model gerekçeni kaydeder; serbest yazıyı otomatik ispat puanı saymaz.",
+  "to": "p⇒q biçiminde hipotez p, hüküm q’dur. n=4k yazılabilen bir tam sayı için n=2(2k) yazarak 2’ye bölünmeyi göstermek doğrudan ispata örnektir. Tek sayısal örnek genel teoremi ispatlamaz, fakat tek geçerli karşı örnek genel yanlış yargıyı çürütebilir."
+ },
+ {
+  "from": "Kısa bir sayıyla anlam kontrolü yap: x=10 için 4x−3=37, 4(x−3)=28 çıkar. İki sözel ifade farklı sonuç verdiği için parantezin süs olmadığını görürsün. İşlem kurallarını bilmek kadar hangi niceliğin hangi işlemden geçtiğini bilmek de gerekir. MEBİ'nin ilgili tablo satırındaki 14 eksiği ifadesinin karşılığı 5x−14 olmalıdır; eksik basılmış rakamı kural diye öğrenme.",
+  "to": "Kısa bir sayıyla anlam kontrolü yap: x=10 için 4x−3=37, 4(x−3)=28 çıkar. İki sözel ifade farklı sonuç verdiği için parantezin süs olmadığını görürsün. İşlem kurallarını bilmek kadar hangi niceliğin hangi işlemden geçtiğini bilmek de gerekir."
+ },
+ {
+  "from": "Yeni bir soruya başlarken üç satır yaz: tanımlanan yazım, rakam koşulları, aranan nicelik. Ardından uygun modeli seç: ağırlık toplamı, sütun denklemi, ayrık durum sayımı veya basamak bloğu. Etkinlikteki sonuçlar matematiksel kontrol sağlar; gerekçenin bilimsel doğruluğunu otomatik ölçmez ve öğrenme puanı üretmez.",
+  "to": "Yeni bir soruya başlarken üç satır yaz: tanımlanan yazım, rakam koşulları, aranan nicelik. Ardından uygun modeli seç: ağırlık toplamı, sütun denklemi, ayrık durum sayımı veya basamak bloğu. Etkinlikteki sonuçlar matematiksel kontrol sağlar."
+ },
+ {
+  "from": "Sabit dört haneli bir kodda 0008 geçerli olabilir; bu bir dört basamaklı doğal sayı değildir. Kod sayımı baştaki sıfıra izin verebilir, doğal sayı sayımı vermez. Virgüllü sayıda ise virgülün sağındaki ağırlıklar 1/10,1/100,1/1000 diye küçülür; virgül bir rakam değildir. Kökün hangi nesneyi tanımladığını önce oku.",
+  "to": "Sabit dört haneli bir kodda 0008 geçerli olabilir; bu bir dört basamaklı doğal sayı değildir. Kod sayımı baştaki sıfıra izin verebilir, doğal sayı sayımı vermez. Virgüllü sayıda ise virgülün sağındaki ağırlıklar 1/10,1/100,1/1000 diye küçülür; virgül bir rakam değildir. Sorunun hangi nesneyi tanımladığını önce oku."
+ },
+ {
+  "from": "Dönüşümlü toplam−13 ise 11’e göre kalan 9’dur:−13=11×(−2)+9. Toplam 22 ise kalan 0’dır. Etkinlikte her rakamın işaretli ağırlığı ve katkısı ayrı HTML satırlarında, toplamın kalana indirgenmesi sonuçta görünür. İşaretleri keyfî mutlak değere çevirmek kalan bilgisini kaybettirebilir.",
+  "to": "Dönüşümlü toplam −13 ise 11’e göre kalan 9’dur: −13=11×(−2)+9. Toplam 22 ise kalan 0’dır. Etkinlikte her rakamın işaretli ağırlığı ve katkısı ayrı satırlarda, toplamın kalana indirgenmesi sonuçta görünür. İşaretleri keyfî mutlak değere çevirmek kalan bilgisini kaybettirebilir."
+ },
+ {
+  "from": "Her cevapta A=bq+r eşitliğini ve kalan aralığını geri kontrol et. Bölünebilme sorusunda gerçek sayıyı her bölenle sınamak, rakam sorusunda bütün adayları tüketmek, kuvvette dönemi ve üssün sırasını doğrulamak ayrı kontrollerdir. Etkinlik ve özgün alıştırmalar bu kontrolü öğretir; öğrenme veya tamamlanma kaydı oluşturmaz.",
+  "to": "Her cevapta A=bq+r eşitliğini ve kalan aralığını geri kontrol et. Bölünebilme sorusunda gerçek sayıyı her bölenle sınamak, rakam sorusunda bütün adayları tüketmek, kuvvette dönemi ve üssün sırasını doğrulamak ayrı kontrollerdir. Etkinlik ve özgün alıştırmalar bu kontrolü öğretir."
+ },
+ {
+  "from": "Bir aday bulunduğunda EKOK(a,b) kadar eklemek her iki kalanı da korur. Ancak önce adayın varlığını ve ilk uygun değeri denetle. EBOB(a,b), s−r farkını bölmüyorsa hiç çözüm yoktur. Aralık uçlarının dahil olup olmadığı, bulunan dizide kaç aday sayılacağını belirler; negatif veya sıfır bölüm iznini kökten oku.",
+  "to": "Bir aday bulunduğunda EKOK(a,b) kadar eklemek her iki kalanı da korur. Ancak önce adayın varlığını ve ilk uygun değeri denetle. EBOB(a,b), s−r farkını bölmüyorsa hiç çözüm yoktur. Aralık uçlarının dahil olup olmadığı, bulunan dizide kaç aday sayılacağını belirler; negatif veya sıfır bölüm iznini sorudan oku."
+ },
+ {
+  "from": "A bölünen, b pozitif tam sayı bölen, q tam sayı bölüm, r kalan olsun. Bölme A=bq+r ve 0≤r<b koşullarının birlikte sağlanmasıdır. Örneğin 38=7×5+3 geçerlidir.38=7×4+10 da doğru bir eşitliktir ama 10 içinde bir tam 7’lik grup daha bulunduğundan bitmiş bölme değildir. Bölüm yalnız ondalık sonucu yuvarlamak anlamına gelmez.",
+  "to": "A bölünen, b pozitif tam sayı bölen, q tam sayı bölüm, r kalan olsun. Bölme A=bq+r ve 0≤r<b koşullarının birlikte sağlanmasıdır. Örneğin 38=7×5+3 geçerlidir. 38=7×4+10 da doğru bir eşitliktir ama 10 içinde bir tam 7’lik grup daha bulunduğundan bitmiş bölme değildir. Bölüm yalnız ondalık sonucu yuvarlamak anlamına gelmez."
+ },
+ {
+  "from": "Tam bölünme r=0 demektir.0 her pozitif tam sayıya tam bölünür; sıfıra bölme tanımsızdır. Bu rehber negatif bölünende de negatif olmayan kalan kullanır:−17=6×(−3)+1. Bölüm−3’tür, kalan 1. Nesne gruplaması doğal sayılar için uygundur; negatif sayıda aynı eşitliği sayı doğrusu üzerindeki ardışık katlarla yorumla.",
+  "to": "Tam bölünme r=0 demektir. 0 her pozitif tam sayıya tam bölünür; sıfıra bölme tanımsızdır. Bu rehber negatif bölünende de negatif olmayan kalan kullanır: −17=6×(−3)+1. Bölüm −3’tür, kalan 1. Nesne gruplaması doğal sayılar için uygundur; negatif sayıda aynı eşitliği sayı doğrusu üzerindeki ardışık katlarla yorumla."
+ },
+ {
+  "from": "N=10 q+d yazıldığında 10 q,2’ye ve 5’e tam bölünür. Bu nedenle 2 ve 5 ile bölümün kalanı son rakam d ile belirlenir. Son rakam çiftse 2’ye;0 veya 5 ise 5’e tam bölünür.10’a tam bölünmek için son rakam 0 olmalıdır. Bunlar sayının bütün rakamlarını değil, tam kat olan kısmı çıkardıktan sonra kalan parçayı kullanır.",
+  "to": "N=10 q+d yazıldığında 10 q, 2’ye ve 5’e tam bölünür. Bu nedenle 2 ve 5 ile bölümün kalanı son rakam d ile belirlenir. Son rakam çiftse 2’ye; 0 veya 5 ise 5’e tam bölünür. 10’a tam bölünmek için son rakam 0 olmalıdır. Bunlar sayının bütün rakamlarını değil, tam kat olan kısmı çıkardıktan sonra kalan parçayı kullanır."
+ },
+ {
+  "from": "4 için N=100 q+s biçiminde son iki,8 için N=1000 q+t biçiminde son üç basamak ayrılır.100,4’ün;1000,8’in katıdır. Son blok 00 veya 000 ise sayısal değeri 0’dır ve ilgili bölenlere tam bölünür. Bir sayının başına sıfır eklemekle son bloğun sıfır içermesi aynı koşul değildir.",
+  "to": "4 için N=100 q+s biçiminde son iki, 8 için N=1000 q+t biçiminde son üç basamak ayrılır. 100, 4’ün; 1000, 8’in katıdır. Son blok 00 veya 000 ise sayısal değeri 0’dır ve ilgili bölenlere tam bölünür. Bir sayının başına sıfır eklemekle son bloğun sıfır içermesi aynı koşul değildir."
+ },
+ {
+  "from": "3 ve 9’a göre 10’un her kuvveti 1 ile aynı kalanı taşır. Bu yüzden N ile rakamları toplamı aynı kalanı verir.3’e bölünen bir sayı mutlaka 9’a bölünmez; örneğin 15’in rakam toplamı 6’dır. Toplam büyükse onu da ilgili bölenle yeniden küçült; ham rakam toplamı son kalan olmak zorunda değildir.",
+  "to": "3 ve 9’a göre 10’un her kuvveti 1 ile aynı kalanı taşır. Bu yüzden N ile rakamları toplamı aynı kalanı verir. 3’e bölünen bir sayı mutlaka 9’a bölünmez; örneğin 15’in rakam toplamı 6’dır. Toplam büyükse onu da ilgili bölenle yeniden küçült; ham rakam toplamı son kalan olmak zorunda değildir."
+ },
+ {
+  "from": "Aralarında asal a ve b’ye tam bölünen sayı ab’ye de tam bölünür. Çünkü iki koşul birbirinde olmayan asal kuvvetleri ister.3 ve 4’ün birlikte sağlanması 12’ye yeter;2 ve 4 ise 8’e yetmez.4 koşulu 2’yi zaten içerir. Karşı örnek olarak 20,2’ye ve 4’e bölünür ama 8’e bölünmez.",
+  "to": "Aralarında asal a ve b’ye tam bölünen sayı ab’ye de tam bölünür. Çünkü iki koşul birbirinde olmayan asal kuvvetleri ister. 3 ve 4’ün birlikte sağlanması 12’ye yeter; 2 ve 4 ise 8’e yetmez. 4 koşulu 2’yi zaten içerir. Karşı örnek olarak 20, 2’ye ve 4’e bölünür ama 8’e bölünmez."
+ },
+ {
+  "from": "Genel ortak şart EKOK(a,b)’dir.6 için 2 ve 3;12 için 3 ve 4;18 için 2 ve 9;24 için 3 ve 8 birlikte sınanır.25 için 100’ün kat kısmı çıkarıldığından son iki blok 00,25,50 veya 75 olmalıdır. Bir bileşik bölenin yalnız bazı çarpanlarını denetlemek yeterli sayılmaz; gereken bütün asal kuvvetleri karşıla.",
+  "to": "Genel ortak şart EKOK(a,b)’dir. 6 için 2 ve 3; 12 için 3 ve 4; 18 için 2 ve 9; 24 için 3 ve 8 birlikte sınanır. 25 için 100’ün kat kısmı çıkarıldığından son iki blok 00, 25, 50 veya 75 olmalıdır. Bir bileşik bölenin yalnız bazı çarpanlarını denetlemek yeterli sayılmaz; gereken bütün asal kuvvetleri karşıla."
+ },
+ {
+  "from": "Üslü ifadede her çarpım sonrası kalanı küçültmek sayıyı yönetilebilir tutar. Döngü uzunluğunu ilk kuvvetlerden gerçekten bul; her bölen için 4 dönem varsayma. Kalan eşitliklerinde normal kesir gibi her sayıyı sadeleştiremezsin.2 x’in 6’ya kalanı 2 ise x=1 de x=4 de uygundur; bölmenin hangi bilgi kaybını yarattığını kontrol et.",
+  "to": "Üslü ifadede her çarpım sonrası kalanı küçültmek sayıyı yönetilebilir tutar. Döngü uzunluğunu ilk kuvvetlerden gerçekten bul; her bölen için 4 dönem varsayma. Kalan eşitliklerinde normal kesir gibi her sayıyı sadeleştiremezsin. 2 x’in 6’ya kalanı 2 ise x=1 de x=4 de uygundur; bölmenin hangi bilgi kaybını yarattığını kontrol et."
+ },
+ {
+  "from": "Son rakama bağlı dar bir şart varsa ondan başla;5’e bölünmede iki son rakam adayı vardır. Rakam toplamı şartı başka rakamları daraltabilir. Adayı bulunca gerçek sayıyı oluşturup her bölen için kalanı yeniden hesapla. Etkinliğin ? işaretleri bağımsız boşluklardır; aynı harf gibi eşit olmak zorunda değildir.",
+  "to": "Son rakama bağlı dar bir şart varsa ondan başla; 5’e bölünmede iki son rakam adayı vardır. Rakam toplamı şartı başka rakamları daraltabilir. Adayı bulunca gerçek sayıyı oluşturup her bölen için kalanı yeniden hesapla. Etkinliğin ? işaretleri bağımsız boşluklardır; aynı harf gibi eşit olmak zorunda değildir."
+ },
+ {
+  "from": "Pozitif bölenle Öklid bölmesinde bölüm A/b’nin aşağı yuvarlanmış tam sayısıdır. Örneğin−22/5=−4,4 olduğundan q=−5; r=−22−5×(−5)=3 olur. Sıfıra doğru kesmek q=−4 ve r=−2 verir; bu, burada seçilen kalan aralığına uymaz. Hangi sözleşmenin kullanıldığını belirt.",
+  "to": "Pozitif bölenle Öklid bölmesinde bölüm A/b’nin aşağı yuvarlanmış tam sayısıdır. Örneğin −22/5=−4,4 olduğundan q=−5; r=−22−5×(−5)=3 olur. Sıfıra doğru kesmek q=−4 ve r=−2 verir; bu, burada seçilen kalan aralığına uymaz. Hangi sözleşmenin kullanıldığını belirt."
+ },
+ {
+  "from": "Son k basamağın tek başına aynı kalanı vermesi için 10^k’nin bölenin katı olması gerekir.4 için k=2,8 için k=3,25 için k=2 bu şartı sağlar. Örneğin yalnız son rakama bakarak 4’e karar vermek,10’un 4’e tam bölünmemesi nedeniyle genel olarak geçerli değildir.",
+  "to": "Son k basamağın tek başına aynı kalanı vermesi için 10^k’nin bölenin katı olması gerekir. 4 için k=2, 8 için k=3, 25 için k=2 bu şartı sağlar. Örneğin yalnız son rakama bakarak 4’e karar vermek, 10’un 4’e tam bölünmemesi nedeniyle genel olarak geçerli değildir."
+ },
+ {
+  "from": "Rakam toplamını tek haneye kadar indirmek bazı sorularda yardımcıdır ama son kalanla karıştırılmamalıdır. Toplam 9 ise 9’a kalan 0’dır; tek haneli 9’u kalan diye bırakma.0 sayısının bütün rakam toplamı 0’dır ve bu kurallarla tutarlıdır. Her adımda hedef böleni aynı tut.",
+  "to": "Rakam toplamını tek haneye kadar indirmek bazı sorularda yardımcıdır ama son kalanla karıştırılmamalıdır. Toplam 9 ise 9’a kalan 0’dır; tek haneli 9’u kalan diye bırakma. 0 sayısının bütün rakam toplamı 0’dır ve bu kurallarla tutarlıdır. Her adımda hedef böleni aynı tut."
+ },
+ {
+  "from": "N=10 q+d için M=q−2 d düşün.2 N=20 q+2 d,21 q−2 N=q−2 d=M olduğundan N’nin 7’ye bölünmesi M’nin 7’ye bölünmesine denktir. Bu yöntem 7’ye tam bölünmeyi sınar; N ile M’nin 7’ye kalanının eşit olduğunu söylemez. Katsayı tersliği nedeniyle kalan başka bir sınıfa gidebilir.",
+  "to": "N=10 q+d için M=q−2 d düşün. 2 N=20 q+2 d, 21 q−2 N=q−2 d=M olduğundan N’nin 7’ye bölünmesi M’nin 7’ye bölünmesine denktir. Bu yöntem 7’ye tam bölünmeyi sınar; N ile M’nin 7’ye kalanının eşit olduğunu söylemez. Katsayı tersliği nedeniyle kalan başka bir sınıfa gidebilir."
+ },
+ {
+  "from": "Taban kalanı r olsun; r,r²,r³,… değerlerini her çarpım sonrası aynı bölenle küçült.1’e dönüş varsa buradan bir dönem kurulabilir. r bölenle ortak çarpan taşıdığında 0’a yerleşme veya farklı bir başlangıç kuyruğu oluşabilir; bütün diziler ilk terimden aynı kalıpla dönmez.",
+  "to": "Taban kalanı r olsun; r,r²,r³,… değerlerini her çarpım sonrası aynı bölenle küçült. 1’e dönüş varsa buradan bir dönem kurulabilir. r bölenle ortak çarpan taşıdığında 0’a yerleşme veya farklı bir başlangıç kuyruğu oluşabilir; bütün diziler ilk terimden aynı kalıpla dönmez."
+ },
+ {
+  "from": "Üs dönem uzunluğuna tam bölünüyorsa dönemin son terimi seçilir; sıfırıncı terimle rastgele değiştirilmez. Örneğin dönem 4 ise üs 4 k olan kuvvet dönemin 4. konumundadır.0’ın sıfırıncı kuvveti gibi ayrı tanım sorunlarını, verilen pozitif üslerin doğal tekrar çarpımı modeline taşımadan sınırla.",
+  "to": "Üs dönem uzunluğuna tam bölünüyorsa dönemin son terimi seçilir; sıfırıncı terimle rastgele değiştirilmez. Örneğin dönem 4 ise üs 4 k olan kuvvet dönemin 4. konumundadır. 0’ın sıfırıncı kuvveti gibi ayrı tanım sorunlarını, verilen pozitif üslerin doğal tekrar çarpımı modeline taşımadan sınırla."
+ },
+ {
+  "from": "Renk, görev veya gün dizisi 1’den sayılıyorsa kalanı 0 olan sıra tam grubun son elemanına karşılık gelir.0’dan sayılan dizide ise eşleme değişir. Takvimde “12. kez” ilk olay zaten sayılmışsa 11 aralık geçmiştir; olay sayısı ile zaman aralığı adedini ayır. Başlangıç anını açık yazmak belirsizliği giderir.",
+  "to": "Renk, görev veya gün dizisi 1’den sayılıyorsa kalanı 0 olan sıra tam grubun son elemanına karşılık gelir. 0’dan sayılan dizide ise eşleme değişir. Takvimde “12. kez” ilk olay zaten sayılmışsa 11 aralık geçmiştir; olay sayısı ile zaman aralığı adedini ayır. Başlangıç anını açık yazmak belirsizliği giderir."
+ },
+ {
+  "from": "Örneğin 65=26×2+13 ve 26=13×2+0 olduğundan EBOB 13’tür. Son satırdaki 0 algoritmanın bitiş işaretidir; EBOB’u 0 yapmaz. Başlangıç sırası küçük/büyük olabilir; küçük önce gelirse ilk bölüm 0 çıkar ve sonraki çift sıralanır. Etkinlikte bütün bölme satırları ayrıca HTML’de listelenir.",
+  "to": "Örneğin 65=26×2+13 ve 26=13×2+0 olduğundan EBOB 13’tür. Son satırdaki 0 algoritmanın bitiş işaretidir; EBOB’u 0 yapmaz. Başlangıç sırası küçük/büyük olabilir; küçük önce gelirse ilk bölüm 0 çıkar ve sonraki çift sıralanır. Etkinlikte bütün bölme satırları ayrıca listelenir."
+ },
+ {
+  "from": "Etkinliğin üç görünümünü karşılaştır: ortak kare ve şeritler aynı EBOB’u farklı adetlerde kullanır; fazlı tekrar ilk anı başlangıçlara bağlar; çift tablosu aralarında asal koşulunu görünür tutar. Yazılı gerekçe kıyas için gereklidir; sistem bu metnin matematiksel doğruluğunu otomatik puanlamaz veya konuyu tamamlanmış saymaz.",
+  "to": "Etkinliğin üç görünümünü karşılaştır: ortak kare ve şeritler aynı EBOB’u farklı adetlerde kullanır; fazlı tekrar ilk anı başlangıçlara bağlar; çift tablosu aralarında asal koşulunu görünür tutar. Yazılı gerekçe kıyas için gereklidir."
+ },
+ {
+  "from": "N=r değerinde bölüm 0 olabilir. Kök bölümleri pozitif istemiyorsa bu aday geçersiz sayılmaz. En küçük doğal sayı sorularında bu ayrım sonucu kökten değiştirebilir. Farklı r,s kalanı varsa N−r ortak kat denklemini kullanmadan önce iki eşitliği ayrı çöz; aynı kalan yöntemi için eşitlik şartı vardır.",
+  "to": "N=r değerinde bölüm 0 olabilir. Soru, bölümleri pozitif istemiyorsa bu aday geçersiz sayılmaz. En küçük doğal sayı sorularında bu ayrım sonucu kökten değiştirebilir. Farklı r,s kalanı varsa N−r ortak kat denklemini kullanmadan önce iki eşitliği ayrı çöz; aynı kalan yöntemi için eşitlik şartı vardır."
+ },
+ {
+  "from": "N’nin a ve b’ye bölümlerinden r kalıyorsa N=m·k+r, m=EKOK(a,b) biçimindedir. Örneğin r her iki bölenin altında olmalıdır. “100’den büyük” gibi bir sınır varsa m·k+r>100 eşitsizliğini kullan; ilk adayın gerçekten sınırın üstünde kaldığını ve önceki adayın kalmadığını denetle.",
+  "to": "N’nin a ve b’ye bölümlerinden r kalıyorsa N=m·k+r, m=EKOK(a,b) biçimindedir. Ayrıca r her iki bölenin altında olmalıdır. “100’den büyük” gibi bir sınır varsa m·k+r>100 eşitsizliğini kullan; ilk adayın gerçekten sınırın üstünde kaldığını ve önceki adayın kalmadığını denetle."
+ },
+ {
+  "from": "Ortak kat, her sayının bütün asal gereksinimlerini karşılamalıdır; EKOK’ta her asalın en büyük üssü seçilir. Örneğin 40=2³×5 ve 56=2³×7 için EBOB 8, EKOK 280’dir. Sonuçları yalnız çarpmayla değil,40/8,56/8,280/40 ve 280/56’nın tam sayı olmasıyla da sına. Ortak olma ile en büyük/en küçük olmayı birlikte gerekçelendir.",
+  "to": "Ortak kat, her sayının bütün asal gereksinimlerini karşılamalıdır; EKOK’ta her asalın en büyük üssü seçilir. Örneğin 40=2³×5 ve 56=2³×7 için EBOB 8, EKOK 280’dir. Sonuçları yalnız çarpmayla değil, 40/8, 56/8, 280/40 ve 280/56’nın tam sayı olmasıyla da sına. Ortak olma ile en büyük/en küçük olmayı birlikte gerekçelendir."
+ },
+ {
+  "from": "Biri diğerini bölüyorsa EBOB küçük sayı, EKOK büyük sayıdır. Sayıların yalnız farklı olması aralarında asal olduklarını göstermez. İki sayılı çarpım eşitliğini üç sayıya kopyalama:3,6,12 için çarpım 216, ortak EBOB×EKOK ise 3×12=36’dır. Çok sayıda da min/max üs yöntemi çalışır; iki sayılı özel özdeşlik ayrı kalır.",
+  "to": "Biri diğerini bölüyorsa EBOB küçük sayı, EKOK büyük sayıdır. Sayıların yalnız farklı olması aralarında asal olduklarını göstermez. İki sayılı çarpım eşitliğini üç sayıya kopyalama: 3, 6, 12 için çarpım 216, ortak EBOB×EKOK ise 3×12=36’dır. Çok sayıda da min/max üs yöntemi çalışır; iki sayılı özel özdeşlik ayrı kalır."
+ },
+ {
+  "from": "Aynı anda başlayıp sabit tam sayılı periyotlarla tekrarlayan olayların ilk pozitif ortak zamanı EKOK’tur.0 başlangıç olabilir, “yeniden” sözcüğü ilk pozitif zamanı ister. Başlangıçlar farklıysa yalnız periyotların EKOK’unu yazmak ilk ortak anı bulmaz. Her olay dizisinin ilk zamanı ve sonraki tam periyotları ayrı kurulmalıdır.",
+  "to": "Aynı anda başlayıp sabit tam sayılı periyotlarla tekrarlayan olayların ilk pozitif ortak zamanı EKOK’tur. 0 başlangıç olabilir, “yeniden” sözcüğü ilk pozitif zamanı ister. Başlangıçlar farklıysa yalnız periyotların EKOK’unu yazmak ilk ortak anı bulmaz. Her olay dizisinin ilk zamanı ve sonraki tam periyotları ayrı kurulmalıdır."
+ },
+ {
+  "from": "Asal sayı,1’den büyük ve pozitif bölenleri yalnız 1 ile kendisi olan tam sayıdır.1 asal değildir. Bir sayıyı asal çarpanlara ayırmak, aynı asalları üslerle saymayı sağlar: örneğin 108=2²×3³. EBOB/EKOK yöntemindeki üsler, kaç asal çarpan kopyasına izin verildiğini anlatır.",
+  "to": "Asal sayı, 1’den büyük ve pozitif bölenleri yalnız 1 ile kendisi olan tam sayıdır. 1 asal değildir. Bir sayıyı asal çarpanlara ayırmak, aynı asalları üslerle saymayı sağlar: örneğin 108=2²×3³. EBOB/EKOK yöntemindeki üsler, kaç asal çarpan kopyasına izin verildiğini anlatır."
+ },
+ {
+  "from": "Pozitif bir sayının bölenleri sonludur; pozitif katları sınırsızdır.1 her pozitif sayının böleni, her sayı da kendisinin bölenidir. İki sayı için “aralarında asal” demek ortak pozitif bölen kümesinin yalnız{1} olmasıdır. Örneğin 14 ve 25 bileşik olsalar da aralarında asaldır. Asal olma tek sayının, aralarında asal olma bir sayı çiftinin ilişkisidir.",
+  "to": "Pozitif bir sayının bölenleri sonludur; pozitif katları sınırsızdır. 1 her pozitif sayının böleni, her sayı da kendisinin bölenidir. İki sayı için “aralarında asal” demek ortak pozitif bölen kümesinin yalnız {1} olmasıdır. Örneğin 14 ve 25 bileşik olsalar da aralarında asaldır. Asal olma tek sayının, aralarında asal olma bir sayı çiftinin ilişkisidir."
+ },
+ {
+  "from": "d=EBOB(a,b) ise a ile b’nin ortak pozitif bölenleri tam olarak d’nin pozitif bölenleridir. d=2^u·3^v gibi farklı asal kuvvetlere ayrılmışsa bir bölen 2^i·3^j biçiminde,0≤i≤u ve 0≤j≤v seçilerek kurulur. Bu nedenle pozitif bölen adedi(u+1)(v+1) olur.",
+  "to": "d=EBOB(a,b) ise a ile b’nin ortak pozitif bölenleri tam olarak d’nin pozitif bölenleridir. d=2^u·3^v gibi farklı asal kuvvetlere ayrılmışsa bir bölen 2^i·3^j biçiminde, 0≤i≤u ve 0≤j≤v seçilerek kurulur. Bu nedenle pozitif bölen adedi (u+1)(v+1) olur."
+ },
+ {
+  "from": "Üs 0 seçimi de bir seçenek olduğu için+1’ler bulunur. Negatif bölenler isteniyorsa her pozitif bölenin bir negatifi daha vardır; bu rehberde sayımlar açıkça pozitif bölenleri kullanır. EBOB 1 ise tek ortak pozitif bölen 1’dir. Ortak bölen sayısı, EBOB’un sayısal değeriyle veya iki sayının bütün bölen adetlerinin toplamıyla aynı değildir.",
+  "to": "Üs 0 seçimi de bir seçenek olduğu için +1’ler bulunur. Negatif bölenler isteniyorsa her pozitif bölenin bir negatifi daha vardır; bu rehberde sayımlar açıkça pozitif bölenleri kullanır. EBOB 1 ise tek ortak pozitif bölen 1’dir. Ortak bölen sayısı, EBOB’un sayısal değeriyle veya iki sayının bütün bölen adetlerinin toplamıyla aynı değildir."
+ },
+ {
+  "from": "Örneğin x·y=36 için 6,6 en yakın çifttir ama EBOB 6 olduğundan ölçeklenmiş sayılar istenen d EBOB’unu vermez.1,36 ve 4,9 uygun çiftlerdir. “En küçük” sonucun kanıtı, uygun çarpan çiftlerini tüketmek veya bütün alternatiflerin toplamına sınır koymaktır. Bir adayın koşulu sağlaması en küçük olduğunu tek başına kanıtlamaz.",
+  "to": "Örneğin x·y=36 için 6,6 en yakın çifttir ama EBOB 6 olduğundan ölçeklenmiş sayılar istenen d EBOB’unu vermez. 1, 36 ve 4, 9 uygun çiftlerdir. “En küçük” sonucun kanıtı, uygun çarpan çiftlerini tüketmek veya bütün alternatiflerin toplamına sınır koymaktır. Bir adayın koşulu sağlaması en küçük olduğunu tek başına kanıtlamaz."
+ },
+ {
+  "from": "Dikdörtgenin a,b kenarları eş karelerle kenarlara paralel kaplanıyorsa kare kenarı s iki uzunluğu da bölmelidir. En az kare için s=EBOB(a,b); adet(a/s)(b/s)’dir. Prizmada eş küp kenarı üç uzunluğu böler; adet üç bölümün çarpımıdır. cm uzunluk, cm² alan, cm³ hacim birimleridir.",
+  "to": "Dikdörtgenin a,b kenarları eş karelerle kenarlara paralel kaplanıyorsa kare kenarı s iki uzunluğu da bölmelidir. En az kare için s=EBOB(a,b); adet (a/s)(b/s)’dir. Prizmada eş küp kenarı üç uzunluğu böler; adet üç bölümün çarpımıdır. cm uzunluk, cm² alan, cm³ hacim birimleridir."
+ },
+ {
+  "from": "Uzunluğu L olan açık bir doğru parçasına iki uç dahil eş s aralıkla işaret koyarsan L/s aralık ve L/s+1 nokta bulunur. Kapalı çevrede son nokta başlangıçla aynıdır; çevre/s işaret vardır, bir daha+1 eklenmez. Köşelerin de işaret olması isteniyorsa s her kenar uzunluğunu bölmelidir.",
+  "to": "Uzunluğu L olan açık bir doğru parçasına iki uç dahil eş s aralıkla işaret koyarsan L/s aralık ve L/s+1 nokta bulunur. Kapalı çevrede son nokta başlangıçla aynıdır; çevre/s işaret vardır, bir daha +1 eklenmez. Köşelerin de işaret olması isteniyorsa s her kenar uzunluğunu bölmelidir."
+ },
+ {
+  "from": "İki olay t=0’da birlikte gerçekleşip a,b aralıklarla tekrarlıyorsa ortak anlar 0,m,2 m,… biçimindedir; m=EKOK(a,b). İlk yeniden buluşma m’dir. Başlangıç dahil k. ortak olay(k−1)m sonra olur; başlangıç bir olay sayılmıyorsa ilk sonraki olay m’den başlar.",
+  "to": "İki olay t=0’da birlikte gerçekleşip a,b aralıklarla tekrarlıyorsa ortak anlar 0,m,2 m,… biçimindedir; m=EKOK(a,b). İlk yeniden buluşma m’dir. Başlangıç dahil k. ortak olay (k−1)m sonra olur; başlangıç bir olay sayılmıyorsa ilk sonraki olay m’den başlar."
+ },
+ {
+  "from": "[0,T] aralığında başlangıç ve son an dahildir; [0,T) son anı dışlar. T bir ortak ana eşitse bu fark olay sayısını 1 değiştirir. Saat gösteriminde 60 dakika bir saattir;09.70 gibi bir yazım kullanma. Etkinlikte son anın ve 0’ın dahil olup olmaması ayrı seçimlerle gösterilir.",
+  "to": "[0,T] aralığında başlangıç ve son an dahildir; [0,T) son anı dışlar. T bir ortak ana eşitse bu fark olay sayısını 1 değiştirir. Saat gösteriminde 60 dakika bir saattir; 09.70 gibi bir yazım kullanma. Etkinlikte son anın ve 0’ın dahil olup olmaması ayrı seçimlerle gösterilir."
+ },
+ {
+  "from": "Kaynağın aktardığı başka katmanlı modelde 11 kent, kent başına 12 ilçe, ilçe başına 13 okul, okul başına 2 kat, kat başına 7 derslik vardır. 2·7=14 birleşince toplam 11·12·13·14=14!/10!=24.024 dersliktir. Bu bölüm kendi öğretim açıklamamızdır; resmî soru veya resmî kurum çözümü olarak sunulmaz. 2021 TYT Temel Matematik 5’in gerçek kitapçık 27. ve anahtar 45. sayfası ayrıca incelendi; C=14!/10! eşleşmesi doğrulandı. İncelenen resmî PDF’nin bütün soruları veya güncel düzeltme duyuruları bu doğrulamaya dahil değildir.",
+  "to": "Başka bir katmanlı modelde 11 kent, kent başına 12 ilçe, ilçe başına 13 okul, okul başına 2 kat, kat başına 7 derslik vardır. 2·7=14 birleşince toplam 11·12·13·14=14!/10!=24.024 dersliktir. Bu bölüm kendi öğretim açıklamamızdır; resmî soru veya resmî kurum çözümü olarak sunulmaz."
+ },
+ {
+  "from": "Koşulu değiştirerek aynı cevabı ezberlemediğini denetle: n pozitif tam sayı ve n!=1 olursa 0 dışlanır, yalnız 1 kalır. İlk koltuk zorunluluğu yasağa dönerse 6 yerine 18; 10!/2⁸ yerine 10!/2⁷ gelirse 0 yerine 1 son sıfır; 20!’ta son sıfır yerine 3 çarpanı sorulursa v₃=6+2=8 kullanılır. Bunlar örnek hatalardır; gerçek kullanıcı hatası diye kaydedilmez.",
+  "to": "Koşulu değiştirerek aynı cevabı ezberlemediğini denetle: n pozitif tam sayı ve n!=1 olursa 0 dışlanır, yalnız 1 kalır. İlk koltuk zorunluluğu yasağa dönerse 6 yerine 18; 10!/2⁸ yerine 10!/2⁷ gelirse 0 yerine 1 son sıfır; 20!’ta son sıfır yerine 3 çarpanı sorulursa v₃=6+2=8 kullanılır. Bunlar örnek hatalardır."
+ },
+ {
+  "from": "Doğru sonuç, yöntem seçimi, sayı koşulu ve son kontrol ayrı değerlendirilir. Yeterli doğruluktan sonra süreli prova seçilebilir; evrensel saniye eşiği veya kişisel hız verisi üretilmez. Görseli değiştirmek, metni açmak ve süre geçirmek öğrenme puanı kazandırmaz. Uygulamanın ilk gün 1, tekrar günleri 3/7/21 düzeni ayrı kalır.",
+  "to": "Doğru sonuç, yöntem seçimi, sayı koşulu ve son kontrol ayrı değerlendirilir. Yeterli doğruluktan sonra süreli prova seçilebilir; evrensel saniye eşiği veya kişisel hız verisi üretilmez."
+ },
+ {
+  "from": "Bu ünite Aurelia Faktöriyel Kavramı kaynağının 15 sayfalık kapsamını öğretime dönüştürmek için hazırlanmış adaydır. MEB Matematik 10 Ünite 1 atıfları bütün kitabın işlendiği veya 2027 resmî kapsamının eksiksiz doğrulandığı anlamına gelmez. Gama fonksiyonu, ayrıntılı permütasyon/kombinasyon ve son sıfırdan farklı rakam algoritmaları kapsam dışıdır. İnsanlarla öğrenme başarısı deneyi ve bütün ÖSYM yılları için tarama iddia edilmez.",
+  "to": "Gama fonksiyonu, ayrıntılı permütasyon/kombinasyon ve son sıfırdan farklı rakam algoritmaları kapsam dışıdır."
+ },
+ {
+  "from": "Ayrıca EKOK(a, b)=n⁴+9 verilirse 3⁴+9=90 ve ab=90 olur. Çarpan çiftleri (1, 90),(2, 45),(3, 30),(5, 18),(6, 15),(9, 10). Ortak böleni 1 olmayan (3, 30),(6, 15) elenir; geçerli toplamlar 91, 47, 23, 19; en küçük 19. Bu, kaynağın MEB destek örneğindeki yöntemin kendi anlatımıdır; ÖSYM sorusu veya yeni resmî doğrulama diye sunulmaz.",
+  "to": "Ayrıca EKOK(a, b)=n⁴+9 verilirse 3⁴+9=90 ve ab=90 olur. Çarpan çiftleri (1, 90),(2, 45),(3, 30),(5, 18),(6, 15),(9, 10). Ortak böleni 1 olmayan (3, 30),(6, 15) elenir; geçerli toplamlar 91, 47, 23, 19; en küçük 19."
+ },
+ {
+  "from": "AAB 5’e bölünürse B=0 veya 5. B=0 için A=9 çıkar fakat ABA=909, 12’ye bölünmez. B=5 için A=2; 225 ve 252 bütün koşulları sağlar. Ters atamada ABA 5’e bölünürse A=5; 9 koşulundan B=8; AAB=558, 12’ye bölünmez. Tek uygun rakam çifti A=2, B=5 ve toplam 7. Bu kısa matematik çözümü kaynağın seçili 2021 TYT 15 atfıyla ilişkilidir; özgün öğretim kartları resmî sınav sorusu diye etiketlenmez.",
+  "to": "AAB 5’e bölünürse B=0 veya 5. B=0 için A=9 çıkar fakat ABA=909, 12’ye bölünmez. B=5 için A=2; 225 ve 252 bütün koşulları sağlar. Ters atamada ABA 5’e bölünürse A=5; 9 koşulundan B=8; AAB=558, 12’ye bölünmez. Tek uygun rakam çifti A=2, B=5 ve toplam 7."
+ },
+ {
+  "from": "İlk durumda kare kenarı her ölçüyü bölmelidir: 12 her iki kenarı böler, 72 ise kenarlardan büyüktür. İkinci durumda geçen süre her periyodun tam katıdır: 36 uyar, 6 uymaz. Tahminini bu iki gerekçeyle karşılaştırmak yöntem seçimini açar; bir ön tahmin, bu konunun bütün alt becerilerinin öğrenildiği kaydı değildir.",
+  "to": "İlk durumda kare kenarı her ölçüyü bölmelidir: 12 her iki kenarı böler, 72 ise kenarlardan büyüktür. İkinci durumda geçen süre her periyodun tam katıdır: 36 uyar, 6 uymaz. Tahminini bu iki gerekçeyle karşılaştırmak yöntem seçimini açar; bir ön tahmin, bu konunun bütün alt becerilerinin öğrenildiğini göstermez."
+ },
+ {
+  "from": "0 ile 1 arasındaki pozitif kesirlerde eksik parçayı görmek yararlıdır. Bu, yalnız paydaları kıyaslamak değildir; önce iki eksiğin paylarını da gör. 19/20 ile 23/24’te eksikler 1/20 ve 1/24, çapraz çarpımlar 456 ve 460’tır. Her yol aynı sonuca ulaşmalıdır. Bu yollar için kişisel hız veya net artışı ölçülmüş sayılmaz.",
+  "to": "0 ile 1 arasındaki pozitif kesirlerde eksik parçayı görmek yararlıdır. Bu, yalnız paydaları kıyaslamak değildir; önce iki eksiğin paylarını da gör. 19/20 ile 23/24’te eksikler 1/20 ve 1/24, çapraz çarpımlar 456 ve 460’tır. Her yol aynı sonuca ulaşmalıdır."
+ },
+ {
+  "from": "Aynı sıvının yoğunluğu değişmiyorsa hacim oranı ile kütle oranı eşittir. Kabın şeklinin yüksekliğini çizimden ölçmek gerekmez. Uygulamadaki mevcut 2021 TYT Matematik 1 bağlantısında boş 280 g, dolu 400 g, kısmi 355 g verilerinden su kütleleri 120 g ve 75 g, oran 5/8 elde edilir. Bu anlatım öğretim uyarlamasıdır; resmî metin ve şekil ayrı doğrulanmış kitapçık bağlantısındadır.",
+  "to": "Aynı sıvının yoğunluğu değişmiyorsa hacim oranı ile kütle oranı eşittir. Kabın şeklinin yüksekliğini çizimden ölçmek gerekmez. Başka bir örnekte boş 280 g, dolu 400 g, kısmi 355 g verilerinden su kütleleri 120 g ve 75 g, oran 5/8 elde edilir."
+ },
+ {
+  "from": "M1’in farklı yüzeyi yarım ve çeyrek litrenin toplamıdır; çarpma sorusunda aynı toplama kuralı çalışmaz. M2’nin farklı yüzeyi 2/3 L miktarı 4/5 L birimle ölçmektir: 5/6 birim. M3’te 9/10 ile 14/15’in eksikleri 1/10 ve 1/15’tir; 14/15 büyüktür, fakat 5/8 ve 7/12’de yalnız payda yeterli olmaz.",
+  "to": "Farklı bir yüzey, yarım ve çeyrek litrenin toplamıdır; çarpma sorusunda aynı toplama kuralı çalışmaz. Bir başka yüzey, 2/3 L miktarı 4/5 L birimle ölçmektir: 5/6 birim. Karşılaştırmada 9/10 ile 14/15’in eksikleri 1/10 ve 1/15’tir; 14/15 büyüktür, fakat 5/8 ve 7/12’de yalnız payda yeterli olmaz."
+ },
+ {
+  "from": "M4’te önce 1/3, sonra kalanın 1/2’si kullanılırsa 1/3 kalır. İki kullanım da ilk bütüne aitse kalan 1−1/3−1/2=1/6’dır; kalan çarpımı uygulanamaz. M5’te 0,(12) için 99x=12; sonlu 0,12 için 100x=12’dir. Sembolik olarak benzemek aynı koşulu sağlamak değildir.",
+  "to": "Ardışık kullanımda önce 1/3, sonra kalanın 1/2’si kullanılırsa 1/3 kalır. İki kullanım da ilk bütüne aitse kalan 1−1/3−1/2=1/6’dır; kalan çarpımı uygulanamaz. Devirli gösterimde 0,(12) için 99x=12; sonlu 0,12 için 100x=12’dir. Sembolik olarak benzemek aynı koşulu sağlamak değildir."
+ },
+ {
+  "from": "“−4/5>−3/4, çünkü 4/5 büyük” iddiası uzaklığı değer sanır. Doğrusu −4/5<−3/4’tür; yeni −5/6 ve −7/8 çiftini ortak paydada gerekçelendir. Kalan problemi yanlışsa önce hangi miktarın hangi bütüne ait olduğunu etiketle. Düzeltmeyi görmek, bağımsız bir doğru cevap yerine geçmez; yeni kartta çözümünü kaydet.",
+  "to": "“−4/5>−3/4, çünkü 4/5 büyük” iddiası uzaklığı değer sanır. Doğrusu −4/5<−3/4’tür; yeni −5/6 ve −7/8 çiftini ortak paydada gerekçelendir. Kalan problemi yanlışsa önce hangi miktarın hangi bütüne ait olduğunu etiketle. Düzeltmeyi görmek, bağımsız bir doğru cevap yerine geçmez."
+ },
+ {
+  "from": "Toplamı çıkararak, bölümü bölenle çarparak, verilen son miktarı başlangıca geri koyarak denetle. Küçük bir özel örnek genel iddiayı kanıtlamaz; geçerli bir karşı örnek yanlış genellemeyi çürütür. Süre tutmak isteğe bağlıdır; süre, şekille oynamak veya çözümü açmak uygulamada bağımsız doğru, ustalık veya XP oluşturmaz.",
+  "to": "Toplamı çıkararak, bölümü bölenle çarparak, verilen son miktarı başlangıca geri koyarak denetle. Küçük bir özel örnek genel iddiayı kanıtlamaz; geçerli bir karşı örnek yanlış genellemeyi çürütür. Süre tutmak isteğe bağlıdır."
+ },
+ {
+  "from": "Çevresi C olan pistte aynı noktadan çıkanlar aynı yönde yeniden yan yana geldiğinde hızlı olan tam bir tur fark atmıştır; süreC/(vh−vy). Zıt yönde ilk yeniden karşılaşmada toplam yol bir çevredir; süreC/(v₁+v₂). Başlangıçları farklıysa ilk aralık ayrıca gerekir; her duruma körce C koyma.",
+  "to": "Çevresi C olan pistte aynı noktadan çıkanlar aynı yönde yeniden yan yana geldiğinde hızlı olan tam bir tur fark atmıştır; süre C/(vh−vy). Zıt yönde ilk yeniden karşılaşmada toplam yol bir çevredir; süre C/(v₁+v₂). Başlangıçları farklıysa ilk aralık ayrıca gerekir; her duruma körce C koyma."
+ },
+ {
+  "from": "Başlangıç noktaları 20 ve 140 km, işaretli hızlar+40 ve−20 km/sa ise 20+40 t=140−20 t yazılır. t=2 saat ve konum 100 km bulunur. Yalnız zıt yönde denmesi yeterli değildir; birbirinden uzaklaşan araçlarda pozitif gelecekte karşılaşma olmayabilir. Oklarla yönü başlangıçta çiz.",
+  "to": "Başlangıç noktaları 20 ve 140 km, işaretli hızlar +40 ve −20 km/sa ise 20+40 t=140−20 t yazılır. t=2 saat ve konum 100 km bulunur. Yalnız zıt yönde denmesi yeterli değildir; birbirinden uzaklaşan araçlarda pozitif gelecekte karşılaşma olmayabilir. Oklarla yönü başlangıçta çiz."
+ },
+ {
+  "from": "Gerçek A için √(A²)=|A|; çünkü esas karekök negatif değildir. A=−6 iken √36=6, A'nın kendisi −6 değildir. Çift derece n içinⁿ √(Aⁿ)=|A|; tek derece için aynı yapı A verir. Kuralın hangi derecede olduğunu söylemeden kökle kuvveti silmek işareti kaybettirir.",
+  "to": "Gerçek A için √(A²)=|A|; çünkü esas karekök negatif değildir. A=−6 iken √36=6, A'nın kendisi −6 değildir. Çift derece n için ⁿ√(Aⁿ)=|A|; tek derece için aynı yapı A verir. Kuralın hangi derecede olduğunu söylemeden kökle kuvveti silmek işareti kaybettirir."
+ },
+ {
+  "from": "Kök derecesi n,2 veya daha büyük bir tam sayıdır. Çift dereceli gerçek kökte kök içi ≥0 olmalıdır; √(−4) gerçek sayı değildir. Tek dereceli kökler negatif değerlerde de tanımlıdır:∛(−8)=−2. Negatif sayının çift dereceden kökünü gerçek sayı gibi kullanarak işlem kuralı uygulama.",
+  "to": "Kök derecesi n, 2 veya daha büyük bir tam sayıdır. Çift dereceli gerçek kökte kök içi ≥0 olmalıdır; √(−4) gerçek sayı değildir. Tek dereceli kökler negatif değerlerde de tanımlıdır: ∛(−8)=−2. Negatif sayının çift dereceden kökünü gerçek sayı gibi kullanarak işlem kuralı uygulama."
+ },
+ {
+  "from": "√72=√(36·2)=6√2. Kök içini en büyük tam kare çarpan ile kalan biçiminde ayırmak en sade gösterime hızlı ulaştırır. Küçük bir kareyle başlamak da doğrudur:√72=√(4·18)=2√18; fakat √18'in hâlâ sadeleşmesi gerekir. Dışarı çıkan sayının karesi, içeriden çıkardığın çarpanı vermelidir.",
+  "to": "√72=√(36·2)=6√2. Kök içini en büyük tam kare çarpan ile kalan biçiminde ayırmak en sade gösterime hızlı ulaştırır. Küçük bir kareyle başlamak da doğrudur: √72=√(4·18)=2√18; fakat √18'in hâlâ sadeleşmesi gerekir. Dışarı çıkan sayının karesi, içeriden çıkardığın çarpanı vermelidir."
+ },
+ {
+  "from": "Pozitif katsayıyı kök içine alırken karesini al:3√5=√45. Negatif katsayıyı kare içine gizleyip işaretini yok etme:−3√5=−√45'tir. Kök içinden değişkenli kare çarpan çıkarırken √(x²y)=|x|√y için y≥0 koşulunu koru. Sayısal yöntem, değişkende mutlak değer ve tanım denetimine ihtiyaç duyar.",
+  "to": "Pozitif katsayıyı kök içine alırken karesini al:3√5=√45. Negatif katsayıyı kare içine gizleyip işaretini yok etme: −3√5=−√45'tir. Kök içinden değişkenli kare çarpan çıkarırken √(x²y)=|x|√y için y≥0 koşulunu koru. Sayısal yöntem, değişkende mutlak değer ve tanım denetimine ihtiyaç duyar."
+ },
+ {
+  "from": "Çıkarmada da kökleri önce sadeleştir ve katsayıların işaretlerini koru. 5√12−2√27=10√3−6√3=4√3. Sonucu kontrol etmek için yaklaşık değer veya karesini alma kullanılabilir; fakat karesini alırken çapraz terimleri unutma.(√a+√b)²=a+b+2√(ab), yalnız a+b değildir.",
+  "to": "Çıkarmada da kökleri önce sadeleştir ve katsayıların işaretlerini koru. 5√12−2√27=10√3−6√3=4√3. Sonucu kontrol etmek için yaklaşık değer veya karesini alma kullanılabilir; fakat karesini alırken çapraz terimleri unutma. (√a+√b)²=a+b+2√(ab), yalnız a+b değildir."
+ },
+ {
+  "from": "25<30<36 olduğundan 5<√30<6. Karekök, negatif olmayan sayılarda artandır; kök içlerinin sırası korunur. 3√2 ile 2√5 pozitif olduğundan karelerini karşılaştırabiliriz:18<20, yani 3√2<2√5. Her iki tarafın negatif olmadığını söylemek yöntemin parçasıdır.",
+  "to": "25<30<36 olduğundan 5<√30<6. Karekök, negatif olmayan sayılarda artandır; kök içlerinin sırası korunur. 3√2 ile 2√5 pozitif olduğundan karelerini karşılaştırabiliriz: 18<20, yani 3√2<2√5. Her iki tarafın negatif olmadığını söylemek yöntemin parçasıdır."
+ },
+ {
+  "from": "(−3)⁴ ifadesinde taban −3'tür; dört negatif çarpan pozitif 81 verir. −3⁴ ise üs yalnız 3'ün üzerindedir ve baştaki eksi en son uygulanır:−81. Pozitif çift tam kuvvet negatif tabanın işaretini kaldırır; tek kuvvet negatif işareti korur. Üssün negatif olması ise sonuç negatif demek değildir.",
+  "to": "(−3)⁴ ifadesinde taban −3'tür; dört negatif çarpan pozitif 81 verir. −3⁴ ise üs yalnız 3'ün üzerindedir ve baştaki eksi en son uygulanır: −81. Pozitif çift tam kuvvet negatif tabanın işaretini kaldırır; tek kuvvet negatif işareti korur. Üssün negatif olması ise sonuç negatif demek değildir."
+ },
+ {
+  "from": "Tabanları farklıysa önce ortak taban veya ortak üs arayabilirsin:8=2³,4=2². Fakat 2³·3⁴ için tabanları toplayıp 5⁷ yazılmaz. Aynı üs n varsa aⁿbⁿ=(ab)ⁿ kullanılabilir; negatif üs durumunda ilgili tabanlar sıfır olamaz. Her kuralın hangi yapıyı eşleştirdiğini söylemek ezberleri birbirinden ayırır.",
+  "to": "Tabanları farklıysa önce ortak taban veya ortak üs arayabilirsin: 8=2³, 4=2². Fakat 2³·3⁴ için tabanları toplayıp 5⁷ yazılmaz. Aynı üs n varsa aⁿbⁿ=(ab)ⁿ kullanılabilir; negatif üs durumunda ilgili tabanlar sıfır olamaz. Her kuralın hangi yapıyı eşleştirdiğini söylemek ezberleri birbirinden ayırır."
+ },
+ {
+  "from": "(ab)ⁿ=aⁿbⁿ ve b≠0 olmak üzere(a/b)ⁿ=aⁿ/bⁿ kuralları tam sayı üslerde tanım koşulları korunarak kullanılır. Toplamın kuvveti böyle dağılmaz:(a+b)²=a²+2 ab+b²'dir. Rasyonel üslerde bu kuralları negatif tabanlara körlemesine taşımak işaret sorunları yaratır; bu derste kesirli üs dönüşümleri pozitif taban koşuluyla verilir.",
+  "to": "(ab)ⁿ=aⁿbⁿ ve b≠0 olmak üzere (a/b)ⁿ=aⁿ/bⁿ kuralları tam sayı üslerde tanım koşulları korunarak kullanılır. Toplamın kuvveti böyle dağılmaz: (a+b)²=a²+2 ab+b²'dir. Rasyonel üslerde bu kuralları negatif tabanlara körlemesine taşımak işaret sorunları yaratır; bu derste kesirli üs dönüşümleri pozitif taban koşuluyla verilir."
+ },
+ {
+  "from": "aᵐ+aⁿ genellikle tek kuvvet yapısına doğrudan birleşmez. 2³+2⁴=8+16=24 iken 2⁷=128'dir. Taban ve üs tamamen aynı olduğunda katsayılar toplanır:3·2⁵+5·2⁵=8·2⁵. Katsayı ile üs farklı görevler taşır; 3·2⁵ ifadesindeki 3 yeni bir üs değildir.",
+  "to": "aᵐ+aⁿ genellikle tek kuvvet yapısına doğrudan birleşmez. 2³+2⁴=8+16=24 iken 2⁷=128'dir. Taban ve üs tamamen aynı olduğunda katsayılar toplanır: 3·2⁵+5·2⁵=8·2⁵. Katsayı ile üs farklı görevler taşır; 3·2⁵ ifadesindeki 3 yeni bir üs değildir."
+ },
+ {
+  "from": "Farklı üsler bulunan toplamda ortak en küçük kuvvet çarpan alınabilir:2³+2⁵=2³(1+2²)=40. Çarpanın içindeki 1, ilk terimin kendisine bölünmesinden gelir; onu unutmak sık bir hatadır. Ardışık kuvvet farklarında da aynı yöntem geçerlidir; önce işlem türünü belirle, sonra çarpma kuralını yalnız çarpım olan bölüme uygula.",
+  "to": "Farklı üsler bulunan toplamda ortak en küçük kuvvet çarpan alınabilir: 2³+2⁵=2³(1+2²)=40. Çarpanın içindeki 1, ilk terimin kendisine bölünmesinden gelir; onu unutmak sık bir hatadır. Ardışık kuvvet farklarında da aynı yöntem geçerlidir; önce işlem türünü belirle, sonra çarpma kuralını yalnız çarpım olan bölüme uygula."
+ },
+ {
+  "from": "a>1 ise üs büyüdükçe aˣ büyür; 0<a<1 ise üs büyüdükçe aˣ küçülür. Örneğin 2⁵>2³ fakat(1/2)⁵<(1/2)³'tür. Bu monotonluk kuralı pozitif tabanlar içindir; negatif tabanda gerçek üslerin her değeri tanımlı olmadığı gibi tam sayı kuvvetlerde tek–çift işareti de değişir.",
+  "to": "a>1 ise üs büyüdükçe aˣ büyür; 0<a<1 ise üs büyüdükçe aˣ küçülür. Örneğin 2⁵>2³ fakat (1/2)⁵<(1/2)³'tür. Bu monotonluk kuralı pozitif tabanlar içindir; negatif tabanda gerçek üslerin her değeri tanımlı olmadığı gibi tam sayı kuvvetlerde tek–çift işareti de değişir."
+ },
+ {
+  "from": "Farklı tabanlı ifadeleri ortak tabana dönüştür:8⁴=2¹² ve 4⁵=2¹⁰ olduğundan ilki büyüktür. Ortak üs varsa pozitif tabanları karşılaştır; iki taraf negatif olabiliyorsa işareti önce belirle. Ortak taban bulunamadığında komşu kuvvetlerle sınır koymak yaklaşık ondalık hesaplamadan daha güvenilir olabilir.",
+  "to": "Farklı tabanlı ifadeleri ortak tabana dönüştür: 8⁴=2¹² ve 4⁵=2¹⁰ olduğundan ilki büyüktür. Ortak üs varsa pozitif tabanları karşılaştır; iki taraf negatif olabiliyorsa işareti önce belirle. Ortak taban bulunamadığında komşu kuvvetlerle sınır koymak yaklaşık ondalık hesaplamadan daha güvenilir olabilir."
+ },
+ {
+  "from": "a>0,a≠1 için aᵘ=aᵛ eşitliği u=v verir. 4^(x+1)=8^(x−1) denklemini 2 tabanına çevirince 2x+2=3x−3 bulunur. Taban 1 olursa üsler eşit olmak zorunda değildir; 1²=1⁷ karşı örnektir. Taban −1 için tam üslerin tek–çiftliği,0 için tanım ve pozitiflik koşulları ayrı ele alınır.",
+  "to": "a>0,a≠1 için aᵘ=aᵛ eşitliği u=v verir. 4^(x+1)=8^(x−1) denklemini 2 tabanına çevirince 2x+2=3x−3 bulunur. Taban 1 olursa üsler eşit olmak zorunda değildir; 1²=1⁷ karşı örnektir. Taban −1 için tam üslerin tek–çiftliği, 0 için tanım ve pozitiflik koşulları ayrı ele alınır."
+ },
+ {
+  "from": "Sıfırdan farklı bir gerçek sayı a×10ⁿ biçiminde,1≤|a|<10 ve n tam sayı koşullarıyla yazıldığında standart bilimsel gösterimdedir. a katsayı, n üs; 10ⁿ ise ölçek çarpanıdır. 4,7×10⁵ ile 470000 aynı sayıdır. Burada 10⁵, katsayıya beş eklemek değil 100000 ile çarpmaktır.",
+  "to": "Sıfırdan farklı bir gerçek sayı a×10ⁿ biçiminde, 1≤|a|<10 ve n tam sayı koşullarıyla yazıldığında standart bilimsel gösterimdedir. a katsayı, n üs; 10ⁿ ise ölçek çarpanıdır. 4,7×10⁵ ile 470000 aynı sayıdır. Burada 10⁵, katsayıya beş eklemek değil 100000 ile çarpmaktır."
+ },
+ {
+  "from": "Negatif sayılar da bu tanıma girer:−6,2×10³ geçerlidir, çünkü katsayının mutlak değeri 6,2'dir. 10 veya −10 katsayıları sınırın dışında; 1 ve −1 içindedir. Sıfır için 1≤|a| koşulu sağlanamaz; standart sıfırdan farklı sayı tanımı içinde zorla bir katsayı seçilmez. Atölye sıfırı ayrıca belirtir ve sahte normalleştirme üretmez.",
+  "to": "Negatif sayılar da bu tanıma girer: −6,2×10³ geçerlidir, çünkü katsayının mutlak değeri 6,2'dir. 10 veya −10 katsayıları sınırın dışında; 1 ve −1 içindedir. Sıfır için 1≤|a| koşulu sağlanamaz; standart sıfırdan farklı sayı tanımı içinde zorla bir katsayı seçilmez. Atölye sıfırı ayrıca belirtir ve sahte normalleştirme üretmez."
+ },
+ {
+  "from": "0,000072 için 7,2'ye ulaşmak virgülü beş basamak sağa götürür; üs −5 olur. Bilimsel gösterimden olağan yazıma dönerken 10'un pozitif kuvveti virgülü sağa, negatif kuvveti sola taşır. İki dönüşümün yönünü karıştırmamak için çarpanı açık yaz:10⁻⁵=0,00001; 7,2 katı 0,000072'dir. Yaklaşık büyüklük kontrolü son basamak kadar önemlidir.",
+  "to": "0,000072 için 7,2'ye ulaşmak virgülü beş basamak sağa götürür; üs −5 olur. Bilimsel gösterimden olağan yazıma dönerken 10'un pozitif kuvveti virgülü sağa, negatif kuvveti sola taşır. İki dönüşümün yönünü karıştırmamak için çarpanı açık yaz: 10⁻⁵=0,00001; 7,2 katı 0,000072'dir. Yaklaşık büyüklük kontrolü son basamak kadar önemlidir."
+ },
+ {
+  "from": "84×10⁻⁵ bir sayıyı doğru belirtir ama katsayı 84 olduğu için standart biçimde değildir. 84=8,4×10 olduğundan 84×10⁻⁵=8,4×10⁻⁴ yapılır. Katsayı 10'a bölünürken üs 1 artar; iki değişim birbirini dengeler. 0,84×10⁻⁵'te katsayı 10 ile çarpılırken üs 1 azalır:8,4×10⁻⁶.",
+  "to": "84×10⁻⁵ bir sayıyı doğru belirtir ama katsayı 84 olduğu için standart biçimde değildir. 84=8,4×10 olduğundan 84×10⁻⁵=8,4×10⁻⁴ yapılır. Katsayı 10'a bölünürken üs 1 artar; iki değişim birbirini dengeler. 0,84×10⁻⁵'te katsayı 10 ile çarpılırken üs 1 azalır: 8,4×10⁻⁶."
+ },
+ {
+  "from": "3,2×10⁵+7×10⁴ ifadesinde doğrudan katsayıları toplayamazsın; birimler gibi ölçekler eşit olmalıdır. 7×10⁴=0,7×10⁵ yazınca toplam 3,9×10⁵ olur. İstersen küçük üssü ortak alıp(32+7)×10⁴=39×10⁴ yazabilir, sonra normalleştirebilirsin. İki yöntem aynı sayıyı verir.",
+  "to": "3,2×10⁵+7×10⁴ ifadesinde doğrudan katsayıları toplayamazsın; birimler gibi ölçekler eşit olmalıdır. 7×10⁴=0,7×10⁵ yazınca toplam 3,9×10⁵ olur. İstersen küçük üssü ortak alıp (32+7)×10⁴=39×10⁴ yazabilir, sonra normalleştirebilirsin. İki yöntem aynı sayıyı verir."
+ },
+ {
+  "from": "(a×10ᵐ)(b×10ⁿ)=(ab)×10ᵐ⁺ⁿ'dir. Katsayılar çarpılır, üsler toplanır; ardından standart katsayı aralığı denetlenir. Örneğin(6×10⁻³)(4×10⁵)=24×10²=2,4×10³. Ara katsayı 24 geçerlilik hatası değildir; sadece son bilimsel biçime henüz getirilmemiştir.",
+  "to": "(a×10ᵐ)(b×10ⁿ)=(ab)×10ᵐ⁺ⁿ'dir. Katsayılar çarpılır, üsler toplanır; ardından standart katsayı aralığı denetlenir. Örneğin (6×10⁻³)(4×10⁵)=24×10²=2,4×10³. Ara katsayı 24 geçerlilik hatası değildir; sadece son bilimsel biçime henüz getirilmemiştir."
+ },
+ {
+  "from": "Bölmede b≠0 koşuluyla katsayılar bölünür ve üsler çıkarılır:(a×10ᵐ)/(b×10ⁿ)=(a/b)×10ᵐ⁻ⁿ. Paydadaki üs negatifse çıkarılan eksi işaretini koru. Bir sonucun üssünü söylemek tek başına sayıyı belirlemez; katsayı, işaret ve varsa fiziksel birim birlikte yazılmalıdır.",
+  "to": "Bölmede b≠0 koşuluyla katsayılar bölünür ve üsler çıkarılır: (a×10ᵐ)/(b×10ⁿ)=(a/b)×10ᵐ⁻ⁿ. Paydadaki üs negatifse çıkarılan eksi işaretini koru. Bir sonucun üssünü söylemek tek başına sayıyı belirlemez; katsayı, işaret ve varsa fiziksel birim birlikte yazılmalıdır."
+ },
+ {
+  "from": "Pozitif, standart bilimsel gösterimlerde üs daha büyükse sayı daha büyüktür; üsler eşitse katsayıya bakılır. 9×10⁻⁸,2×10⁻⁹'dan büyüktür:−8>−9 veya ilkini 90×10⁻⁹ yazarak görebilirsin. Katsayılar standart değilse yalnız üs karşılaştırması güvenilir değildir; 0,01×10⁶ ile 9×10⁵ bunun nedenini gösterir.",
+  "to": "Pozitif, standart bilimsel gösterimlerde üs daha büyükse sayı daha büyüktür; üsler eşitse katsayıya bakılır. 9×10⁻⁸, 2×10⁻⁹'dan büyüktür: −8>−9 veya ilkini 90×10⁻⁹ yazarak görebilirsin. Katsayılar standart değilse yalnız üs karşılaştırması güvenilir değildir; 0,01×10⁶ ile 9×10⁵ bunun nedenini gösterir."
+ },
+ {
+  "from": "Negatif sayılarda önce mutlak büyüklüğü karşılaştırıp sayı doğrusundaki yönü hatırla:−8×10⁴=−80000,−2×10³=−2000'den küçüktür. Negatif bir üs sayıyı negatif yapmaz; işaret katsayıdan gelir. 10'un eşit üs aralıklarını gösteren çizgi logaritmik bir ölçektir; eşit aralıklar eşit toplamsal fark değil, eşit çarpan değişimi belirtir.",
+  "to": "Negatif sayılarda önce mutlak büyüklüğü karşılaştırıp sayı doğrusundaki yönü hatırla: −8×10⁴=−80000, −2×10³=−2000'den küçüktür. Negatif bir üs sayıyı negatif yapmaz; işaret katsayıdan gelir. 10'un eşit üs aralıklarını gösteren çizgi logaritmik bir ölçektir; eşit aralıklar eşit toplamsal fark değil, eşit çarpan değişimi belirtir."
+ },
+ {
+  "from": "Alan ve hacim dönüşümünde uzunluk çarpanını sırasıyla karesine ve küpüne yükselt:1 m²=10⁶ mm²,1 m³=10⁹ mm³. Hız gibi türetilmiş birimlerde pay ve paydayı ayrı dönüştür. Bilimsel gösterim yalnız sıfırları kısaltma tekniği değil, işlemde boyutu ve büyüklüğü korumayı kolaylaştıran bir yazımdır.",
+  "to": "Alan ve hacim dönüşümünde uzunluk çarpanını sırasıyla karesine ve küpüne yükselt: 1 m²=10⁶ mm², 1 m³=10⁹ mm³. Hız gibi türetilmiş birimlerde pay ve paydayı ayrı dönüştür. Bilimsel gösterim yalnız sıfırları kısaltma tekniği değil, işlemde boyutu ve büyüklüğü korumayı kolaylaştıran bir yazımdır."
+ },
+ {
+  "from": "Bir sayıyı tam olarak başka biçimde yazmak yuvarlama değildir:0,00000064=6,4×10⁻⁷ eşitliği kesindir. Katsayıyı 6 diye yuvarlarsan yaklaşık değer üretirsin ve≈ işaretiyle belirtmelisin. Soru yaklaşık bir sonuç istemiyorsa rakamları sırf kısa görünsün diye atma; son karşılaştırma veya işlem sonucu değişebilir.",
+  "to": "Bir sayıyı tam olarak başka biçimde yazmak yuvarlama değildir: 0,00000064=6,4×10⁻⁷ eşitliği kesindir. Katsayıyı 6 diye yuvarlarsan yaklaşık değer üretirsin ve ≈ işaretiyle belirtmelisin. Soru yaklaşık bir sonuç istemiyorsa rakamları sırf kısa görünsün diye atma; son karşılaştırma veya işlem sonucu değişebilir."
+ },
+ {
+  "from": "Aynı tür çoklukların oranında birimleri önce eşitle:1 m ile 25 cm için 100/25=4 bulunur; 1/25 değil. Farklı tür çoklukların bölümü birim oran verebilir:150 TL/kg, belirli ürünün kilogram başına ücretidir. Birimsiz oran ile birimli oranı ayırmak sonucun neyi anlattığını korur. Sıfır pay olabilir; sıfır payda olmaz.",
+  "to": "Aynı tür çoklukların oranında birimleri önce eşitle: 1 m ile 25 cm için 100/25=4 bulunur; 1/25 değil. Farklı tür çoklukların bölümü birim oran verebilir: 150 TL/kg, belirli ürünün kilogram başına ücretidir. Birimsiz oran ile birimli oranı ayırmak sonucun neyi anlattığını korur. Sıfır pay olabilir; sıfır payda olmaz."
+ },
+ {
+  "from": "a/b=c/d orantısında b,d≠0 iken iki tarafı bd ile çarparak ad=bc elde ederiz. İçler–dışlar kuralı bu cebirsel işlemin kısa adıdır. Pay ve paydayı aynı sıfırdan farklı katsayıyla çarpmak oranı korur; aynı sayıyı eklemek genel olarak korumaz:2/3≠3/4.",
+  "to": "a/b=c/d orantısında b,d≠0 iken iki tarafı bd ile çarparak ad=bc elde ederiz. İçler–dışlar kuralı bu cebirsel işlemin kısa adıdır. Pay ve paydayı aynı sıfırdan farklı katsayıyla çarpmak oranı korur; aynı sayıyı eklemek genel olarak korumaz: 2/3≠3/4."
+ },
+ {
+  "from": "Bir eşitliği oranlara ayırırken yeni paydaların sıfır olmadığını ayrıca denetle. a/b=c/d=k ise(a+c)/(b+d)=k ancak b+d≠0 olduğunda yazılabilir. Katsayılı toplamlar için de yeni paydanın sıfır olmaması gerekir. Ezberlenmiş bir orantı özelliği, tanımsız bir kesri geçerli yapmaz.",
+  "to": "Bir eşitliği oranlara ayırırken yeni paydaların sıfır olmadığını ayrıca denetle. a/b=c/d=k ise (a+c)/(b+d)=k ancak b+d≠0 olduğunda yazılabilir. Katsayılı toplamlar için de yeni paydanın sıfır olmaması gerekir. Ezberlenmiş bir orantı özelliği, tanımsız bir kesri geçerli yapmaz."
+ },
+ {
+  "from": "a:b=m:n verildiğinde a=mt,b=nt yazmak ortak ölçek katsayısını görünür kılar. m ve n, miktarların kendisi olmak zorunda değildir; aynı oranın sonsuz farklı büyüklükte örneği vardır. Fiziksel pozitif miktarlarda t>0 seçilir. Toplam verilirse(m+n)t; fark verilirse uygun sırayla(m−n)t denklemi kurulur.",
+  "to": "a:b=m:n verildiğinde a=mt,b=nt yazmak ortak ölçek katsayısını görünür kılar. m ve n, miktarların kendisi olmak zorunda değildir; aynı oranın sonsuz farklı büyüklükte örneği vardır. Fiziksel pozitif miktarlarda t>0 seçilir. Toplam verilirse (m+n)t; fark verilirse uygun sırayla (m−n)t denklemi kurulur."
+ },
+ {
+  "from": "Üç ardışık çift sayının toplamı 45 olamaz: üç çiftin toplamı çifttir. Denklem x−2+x+x+2=45 verip x=15 bulmak hesap olarak doğrudur fakat x çift olmalıdır; koşul başarısızdır. Sorularda önce hızlı parite veya aralık kontrolü yap, sonra denklem çöz; sonunda elde edilen adayın kaynak koşulunu koruduğunu denetle.",
+  "to": "Üç ardışık çift sayının toplamı 45 olamaz: üç çiftin toplamı çifttir. Denklem x−2+x+x+2=45 verip x=15 bulmak hesap olarak doğrudur fakat x çift olmalıdır; koşul başarısızdır. Sorularda önce hızlı parite veya aralık kontrolü yap, sonra denklem çöz; sonunda elde edilen adayın başlangıç koşulunu koruduğunu denetle."
+ },
+ {
+  "from": "Birleşik sayının birden fazla yoldan elenmesi yeni bir sayı üretmez. Yalnız çiftleri silmek,9,25,49 gibi tek bileşikleri bırakır. Her renk değişimini nedenine bağla: örneğin 49,7’nin katı olduğu için elenir. Şekil üzerinden elemek bir öğretim etkinliğidir; bağımsız soruda sonucu gerekçelendirmek ayrı bir iştir.",
+  "to": "Birleşik sayının birden fazla yoldan elenmesi yeni bir sayı üretmez. Yalnız çiftleri silmek, 9, 25, 49 gibi tek bileşikleri bırakır. Her renk değişimini nedenine bağla: örneğin 49, 7’nin katı olduğu için elenir. Şekil üzerinden elemekle yetinme; bağımsız soruda sonucu ayrıca gerekçelendir."
+ },
+ {
+  "from": "İki aday 2²·3=12 ve 2·3²=18’dir; küçük olan 12’dir. Bölenleri 1,2,3,4,6,12 ile sayı doğrulanır. p⁵ de 6 bölen verir fakat yalnız bir asal tür taşır; kaynak koşuluna uymaz. Yalnız 12’nin bölenlerini göstermek, daha küçük uygun sayı bulunmadığının gerekçesinin yerine geçmez.",
+  "to": "İki aday 2²·3=12 ve 2·3²=18’dir; küçük olan 12’dir. Bölenleri 1,2,3,4,6,12 ile sayı doğrulanır. p⁵ de 6 bölen verir fakat yalnız bir asal tür taşır; sorunun koşuluna uymaz. Yalnız 12’nin bölenlerini göstermek, daha küçük uygun sayı bulunmadığının gerekçesinin yerine geçmez."
+ },
+ {
+  "from": "Aday toplamlar 7,9,11,13’tür; yalnız 9 uygundur. Basamaklar 4 ve 5, sayılar 45 ve 54 olur;45·54=2430=30·81 ile kontrol edilir. 8,12,15,16 gibi toplamlar uygun basamak çiftlerinden çıkmaz. Örneğin 15 toplamı 5’in yanında 10 rakamını gerektirir;10 bir rakam değildir. Bu bölüm koşulları öğretir; öğretici açıklama resmî kurum çözümü olarak sunulmaz.",
+  "to": "Aday toplamlar 7,9,11,13’tür; yalnız 9 uygundur. Basamaklar 4 ve 5, sayılar 45 ve 54 olur; 45·54=2430=30·81 ile kontrol edilir. 8,12,15,16 gibi toplamlar uygun basamak çiftlerinden çıkmaz. Örneğin 15 toplamı 5’in yanında 10 rakamını gerektirir; 10 bir rakam değildir."
+ },
+ {
+  "from": "Asal toplamında tekliği; sade oranda ortak çarpanı; sayma sorusunda hangi sayacın istendiğini işaretle. 18=2·3² için farklı tür 2, tekrarlı çarpan 3, bütün pozitif bölen 6’dır. Çarpanları 2,3,3 diye etiketlersen iki etiket türü fakat üç etiket vardır. 8/9 karışım oranındaki aralarında asal parça sayıları 8 ve 9 olabilir; ikisi de asal değildir. Kısa yol gereksiz adayları kaldırır; ölçülmüş saniye veya başarı yüzdesi iddiası değildir.",
+  "to": "Asal toplamında tekliği; sade oranda ortak çarpanı; sayma sorusunda hangi sayacın istendiğini işaretle. 18=2·3² için farklı tür 2, tekrarlı çarpan 3, bütün pozitif bölen 6’dır. Çarpanları 2,3,3 diye etiketlersen iki etiket türü fakat üç etiket vardır. 8/9 karışım oranındaki aralarında asal parça sayıları 8 ve 9 olabilir; ikisi de asal değildir. Kısa yol gereksiz adayları kaldırır."
+ },
+ {
+  "from": "Yalnız bileşikliği göstermek isteniyorsa 143=11·13 çarpımı yeterlidir; diğer bütün bölenleri taramak gerekmez. Asallık içinse adayların tamamı elenmelidir. Soruları çözerken doğruluk, yöntem, koşul gerekçesi ve kontrolü ayrı düşün. Bir soruyu açmak veya şekli değiştirmek öğrenme puanı değildir; bağımsız çözüm ve gecikmeli farklı soru performansı ayrı kaydedilir.",
+  "to": "Yalnız bileşikliği göstermek isteniyorsa 143=11·13 çarpımı yeterlidir; diğer bütün bölenleri taramak gerekmez. Asallık içinse adayların tamamı elenmelidir. Soruları çözerken doğruluk, yöntem, koşul gerekçesi ve kontrolü ayrı düşün."
+ },
+ {
+  "from": "Küçük asallıkta çarpımı geri yaz; oran sorusunda en sadeliği; bölen sayısında asal tabanları; basamak sorusunda bütün rakam ve bölünme koşullarını kontrol et. Resmî sınav arşivinin bütün yılları bu tek üniteyle taranmış sayılmaz. Kaynağın öğretim içeriği ile kişisel sınav başarısı ve öğrenilmişlik ayrı ölçülerdir.",
+  "to": "Küçük asallıkta çarpımı geri yaz; oran sorusunda en sadeliği; bölen sayısında asal tabanları; basamak sorusunda bütün rakam ve bölünme koşullarını kontrol et."
+ },
+ {
+  "from": "Tam sayılar …,−2,−1,0,1,2,…; pozitif tam sayılar 1,2,3,… biçimindedir. a=b·k olacak bir tam sayı k varsa b, a’yı tam böler. Örneğin 15=3·5 olduğundan 3 ve 5,15’in pozitif bölenleridir. Bölen ile kat aynı ilişkinin iki yönüdür:15,3’ün katıdır.",
+  "to": "Tam sayılar …,−2,−1,0,1,2,…; pozitif tam sayılar 1,2,3,… biçimindedir. a=b·k olacak bir tam sayı k varsa b, a’yı tam böler. Örneğin 15=3·5 olduğundan 3 ve 5, 15’in pozitif bölenleridir. Bölen ile kat aynı ilişkinin iki yönüdür: 15, 3’ün katıdır."
+ },
+ {
+  "from": "Asal sayı 1’den büyük ve tam iki farklı pozitif böleni olan tam sayıdır:1 ve kendisi. 7’nin bölenleri 1 ve 7’dir. 9’un 1,3,9 olmak üzere üç böleni vardır;9 bileşiktir. 1’den büyük olup asal olmayan tam sayıya bileşik denir. Sayının hangi kümeden seçildiğini yazmadan asal çarpım kısayoluna geçme.",
+  "to": "Asal sayı 1’den büyük ve tam iki farklı pozitif böleni olan tam sayıdır: 1 ve kendisi. 7’nin bölenleri 1 ve 7’dir. 9’un 1,3,9 olmak üzere üç böleni vardır; 9 bileşiktir. 1’den büyük olup asal olmayan tam sayıya bileşik denir. Sayının hangi kümeden seçildiğini yazmadan asal çarpım kısayoluna geçme."
+ },
+ {
+  "from": "Tek olmak asal olmak değildir:9,15,21 bileşiktir. Asal rakamlar 2,3,5,7’dir; fakat yalnız bu rakamları kullanmak bütün sayıyı asal yapmaz. 32=2⁵ bileşikken 23 asaldır. Aynı rakamları farklı sıraya koymak sayının bölenlerini değiştirebilir.",
+  "to": "Tek olmak asal olmak değildir: 9, 15, 21 bileşiktir. Asal rakamlar 2,3,5,7’dir; fakat yalnız bu rakamları kullanmak bütün sayıyı asal yapmaz. 32=2⁵ bileşikken 23 asaldır. Aynı rakamları farklı sıraya koymak sayının bölenlerini değiştirebilir."
+ },
+ {
+  "from": "Eşitliği unutma:49 için 7,121 için 11 denenir. 97 için 2,3,5,7 yeterlidir;11²>97. 97 tek, rakam toplamı 16, son rakamı 7 ve 97=7·13+6 olduğu için bu adaylar elenir. 91=7·13 ise bileşiktir. Bir uygun bölen bileşikliği kanıtlar; asal demek için gerekli bütün adayların elenmesi gerekir.",
+  "to": "Eşitliği unutma: 49 için 7, 121 için 11 denenir. 97 için 2,3,5,7 yeterlidir; 11²>97. 97 tek, rakam toplamı 16, son rakamı 7 ve 97=7·13+6 olduğu için bu adaylar elenir. 91=7·13 ise bileşiktir. Bir uygun bölen bileşikliği kanıtlar; asal demek için gerekli bütün adayların elenmesi gerekir."
+ },
+ {
+  "from": "N=pᵃ qᵇ, p ve q farklı asal, a, b pozitif tam sayı olsun. Her bölen p’nin 0…a, q’nun 0…b kuvvetlerini bağımsız seçer. Böylece(a+1)(b+1) pozitif bölen bulunur. 12=2²·3 için 3·2=6 bölen vardır:1,2,3,4,6,12.",
+  "to": "N=pᵃ qᵇ, p ve q farklı asal, a, b pozitif tam sayı olsun. Her bölen p’nin 0…a, q’nun 0…b kuvvetlerini bağımsız seçer. Böylece (a+1)(b+1) pozitif bölen bulunur. 12=2²·3 için 3·2=6 bölen vardır: 1, 2, 3, 4, 6, 12."
+ },
+ {
+  "from": "Asal p’nin karesi p² yalnız 1, p, p² olmak üzere 3 pozitif bölen taşır. 1’in yalnız 1 böleni vardır. Bileşik tabanla formülü uygulama:36=4·9 diye 4 bölen sayılmaz;36=2²·3² olduğundan 9 bölen vardır. 180=2²·3²·5 için tür 3, bütün pozitif bölen 3·3·2=18’dir.",
+  "to": "Asal p’nin karesi p² yalnız 1, p, p² olmak üzere 3 pozitif bölen taşır. 1’in yalnız 1 böleni vardır. Bileşik tabanla formülü uygulama: 36=4·9 diye 4 bölen sayılmaz; 36=2²·3² olduğundan 9 bölen vardır. 180=2²·3²·5 için tür 3, bütün pozitif bölen 3·3·2=18’dir."
+ },
+ {
+  "from": "Bu sonuç gerçel çarpanlara taşınmaz:2,5·2,8=7 asaldır ama iki çarpan da 1 değildir. Negatif tam sayılara izin verilirse(−1)·(−p)=p de mümkündür. Önce sayının kümesini, ardından her çarpanın işaretini belirle. Pozitif n koşulundan çıkan 0 adayı da otomatik kabul edilmez.",
+  "to": "Bu sonuç gerçel çarpanlara taşınmaz: 2,5·2,8=7 asaldır ama iki çarpan da 1 değildir. Negatif tam sayılara izin verilirse (−1)·(−p)=p de mümkündür. Önce sayının kümesini, ardından her çarpanın işaretini belirle. Pozitif n koşulundan çıkan 0 adayı da otomatik kabul edilmez."
+ },
+ {
+  "from": "Aday üretmek çözümü doğrulamak değildir. n²−16 için aynı yol n=5 üretir ama sonuç 9 bileşiktir; çözüm yoktur. n²−25 için n=6 ve sonuç 11 uygundur. n’nin bütün tam sayılardan seçilmesine izin verilirse−6 da aynı kareyi verir; negatif dal ayrıca değerlendirilir.",
+  "to": "Aday üretmek çözümü doğrulamak değildir. n²−16 için aynı yol n=5 üretir ama sonuç 9 bileşiktir; çözüm yoktur. n²−25 için n=6 ve sonuç 11 uygundur. n’nin bütün tam sayılardan seçilmesine izin verilirse −6 da aynı kareyi verir; negatif dal ayrıca değerlendirilir."
+ },
+ {
+  "from": "Toplam çiftse 2 zorunlu değildir:12 için 5+7 uygundur;24 için 5+19,7+17,11+13;20 için 3+17 ve 7+13 örnekleri vardır. p+q=4 için 2+2 uygundur; “birbirinden farklı” denirse bu çözüm kalkar. Farkı 1 olan iki asal yalnız 2 ve 3’tür. Ardışık asal ise arada başka asal bulunmamasıdır:7 ve 11 ardışık asal ama farkları 4’tür; ikiz asalların farkı 2’dir;3 ve 5 böyle bir çifttir.",
+  "to": "Toplam çiftse 2 zorunlu değildir: 12 için 5+7 uygundur; 24 için 5+19, 7+17, 11+13; 20 için 3+17 ve 7+13 örnekleri vardır. p+q=4 için 2+2 uygundur; “birbirinden farklı” denirse bu çözüm kalkar. Farkı 1 olan iki asal yalnız 2 ve 3’tür. Ardışık asal ise arada başka asal bulunmamasıdır: 7 ve 11 ardışık asal ama farkları 4’tür; ikiz asalların farkı 2’dir; 3 ve 5 böyle bir çifttir."
+ },
+ {
+  "from": "Aralarında asal koşulu yoksa t serbesttir:3,5 de 6,10 da aynı oranı verir ve toplam 8 t olur. 24/54=4/9 için aralarında asal a=4, b=9, toplam 13’tür;4’ün bileşik olması engel değildir. 28/45 oranında koşul yoksa toplam 73 t olur; bir tek sayı söyleyemezsin. Her adayı hem oran hem ortak bölen koşuluyla kontrol et.",
+  "to": "Aralarında asal koşulu yoksa t serbesttir: 3, 5 de 6, 10 da aynı oranı verir ve toplam 8t olur. 24/54=4/9 için aralarında asal a=4, b=9, toplam 13’tür; 4’ün bileşik olması engel değildir. 28/45 oranında koşul yoksa toplam 73t olur; bir tek sayı söyleyemezsin. Her adayı hem oran hem ortak bölen koşuluyla kontrol et."
+ },
+ {
+  "from": "Tam 6 pozitif böleni ve iki farklı asal böleni bulunan en küçük sayı aransın. N=pᵃ qᵇ, p<q farklı asal, a, b≥1 yazılır. Bölen sayısı(a+1)(b+1)=6 olduğundan üsler 1 ve 2’dir. En küçük asal tabanlar 2 ve 3 seçilir.",
+  "to": "Tam 6 pozitif böleni ve iki farklı asal böleni bulunan en küçük sayı aransın. N=pᵃ qᵇ, p<q farklı asal, a, b≥1 yazılır. Bölen sayısı (a+1)(b+1)=6 olduğundan üsler 1 ve 2’dir. En küçük asal tabanlar 2 ve 3 seçilir."
+ },
+ {
+  "from": "İki basamaklı AB yazımı A·B değil 10A+B’dir; tersi BA=10B+A’dır. İkisi de iki basamaklıysa A, B 1…9 rakamlarıdır. 2’ye bölünme son rakamın çiftliğine;5’e bölünme son rakamın 0 veya 5 olmasına bağlıdır. 10A+B=9 A+(A+B) olduğundan 3’e bölünme A+B’nin 3’e bölünmesine eşdeğerdir.",
+  "to": "İki basamaklı AB yazımı A·B değil 10A+B’dir; tersi BA=10B+A’dır. İkisi de iki basamaklıysa A, B 1…9 rakamlarıdır. 2’ye bölünme son rakamın çiftliğine; 5’e bölünme son rakamın 0 veya 5 olmasına bağlıdır. 10A+B=9A+(A+B) olduğundan 3’e bölünme A+B’nin 3’e bölünmesine eşdeğerdir."
+ },
+ {
+  "from": "Sayı asal mı sorusunda karekök sınırındaki asal bölenleri dene; çok sayıyı sınıflandırıyorsan elek seç. Örneğin 47 için 2,3,5 yeterlidir;49’da 7’yi atlamak hatadır. 31 nesne yalnız 1’li ve 31’li eş gruplara ayrılıyorsa 31 asaldır. Çarpım asal sorusunda önce çarpanlara ayır ve pozitifliği belirle:7(x−1) asal, x>1 tam ise x=2;6(x−1) için çözüm yoktur.",
+  "to": "Sayı asal mı sorusunda karekök sınırındaki asal bölenleri dene; çok sayıyı sınıflandırıyorsan elek seç. Örneğin 47 için 2,3,5 yeterlidir; 49’da 7’yi atlamak hatadır. 31 nesne yalnız 1’li ve 31’li eş gruplara ayrılıyorsa 31 asaldır. Çarpım asal sorusunda önce çarpanlara ayır ve pozitifliği belirle: 7(x−1) asal, x>1 tam ise x=2; 6(x−1) için çözüm yoktur."
+ },
+ {
+  "from": "Asal toplam 31 yerine 30 olursa tek toplam gerekçesi kalkar;7+23 ve 11+19 gibi farklı çiftler mümkündür. 24/54 oranında aralarında asallık kalkarsa a=4 t, b=9 t ve toplam 13 t serbest kalır. n²−25 sorusunda n pozitif yerine bütün tam sayılardan seçilirse 6 yanına−6 da katılır.",
+  "to": "Asal toplam 31 yerine 30 olursa tek toplam gerekçesi kalkar; 7+23 ve 11+19 gibi farklı çiftler mümkündür. 24/54 oranında aralarında asallık kalkarsa a=4t, b=9t ve toplam 13t serbest kalır. n²−25 sorusunda n pozitif yerine bütün tam sayılardan seçilirse 6 yanına −6 da katılır."
+ }
+]

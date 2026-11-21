@@ -118,5 +118,233 @@
  {
   "from": "İnsan adlarından oluşan çoğul özneler üçüncü kişide tekil veya çoğul yüklemle kullanılabilir: “Öğrenciler geldi/geldiler.” Burada kullanılan okul sınıflamasında, nötr anlatımdaki insan dışı çoğullar için tekil yüklem örnekleri esas alınır. Fakat bu kuralın koşulu ve kişileştirme istisnası birlikte öğrenilmelidir; yalnız çokluk ekini saymak yeterli değildir.",
   "to": "İnsan adlarından oluşan çoğul özneler üçüncü kişide tekil veya çoğul yüklemle kullanılabilir: “Öğrenciler geldi/geldiler.” Burada kullanılan sınıflamada, nötr anlatımdaki insan dışı çoğullar için tekil yüklem örnekleri esas alınır. Fakat bu kuralın koşulu ve kişileştirme istisnası birlikte öğrenilmelidir; yalnız çokluk ekini saymak yeterli değildir."
+ },
+ {
+  "from": "Temel anlam sözcüğün ilk ve alışılmış kullanımını; yan anlam temel anlamla bağını koruyarak başka bir varlığa yakıştırılan kullanımı gösterir. İnsan ayağı ile sandalyenin ayağı arasında biçim veya işlev benzerliği düşünülebilir. Bu rehber MEBİ’nin temel ve yan anlam başlıklarını ayrı açıklar; bazı kaynaklar ikisini gerçek anlam çatısı altında birlikte değerlendirebilir.",
+  "to": "Temel anlam sözcüğün ilk ve alışılmış kullanımını; yan anlam temel anlamla bağını koruyarak başka bir varlığa yakıştırılan kullanımı gösterir. İnsan ayağı ile sandalyenin ayağı arasında biçim veya işlev benzerliği düşünülebilir. Temel ve yan anlam burada ayrı başlıklarda açıklanır; ikisi gerçek anlam çatısı altında birlikte de değerlendirilebilir."
+ },
+ {
+  "from": "Sesteş sözcükler aynı biçimde yazılıp söylenebilir ama farklı anlam alanlarını karşılar: içilen çay ile küçük akarsu çay okul örneklerindendir. Cümle, hangi sözcüğün kullanıldığını belirler. Sadece aynı harfleri gördüğün için iki cümlede de aynı nesneden söz edildiğini varsayma.",
+  "to": "Sesteş sözcükler aynı biçimde yazılıp söylenebilir ama farklı anlam alanlarını karşılar: içilen çay ile küçük akarsu çay bunun örneğidir. Cümle, hangi sözcüğün kullanıldığını belirler. Sadece aynı harfleri gördüğün için iki cümlede de aynı nesneden söz edildiğini varsayma."
+ },
+ {
+  "from": "Yansıma sözler ikileme veya yeni türemiş söz içinde bulunabilir; şıpır şıpır gibi tekrar, bir olayın sesini ve oluş biçimini birlikte canlandırır. Sessiz bir hareketin anlatımıyla gerçek ses taklidini ayır. Kaynakta bir örneğin yansıma diye verilmesi, o örneğe benzeyen bütün fiillerin aynı kökeni paylaştığı sonucu değildir; cümledeki taklit ilişkisini açıkla.",
+  "to": "Yansıma sözler ikileme veya yeni türemiş söz içinde bulunabilir; şıpır şıpır gibi tekrar, bir olayın sesini ve oluş biçimini birlikte canlandırır. Sessiz bir hareketin anlatımıyla gerçek ses taklidini ayır. Bir örneğin yansıma diye verilmesi, o örneğe benzeyen bütün fiillerin aynı kökeni paylaştığı sonucu değildir; cümledeki taklit ilişkisini açıkla."
+ },
+ {
+  "from": "Tarizde ise söylenenin tersi kastedilir: geç kalmış birine gecikmesini eleştirmek için “Ne kadar dakiksin!” denmesi gibi. Burada verilen niyet gerçek övgü değil, ters sözle eleştiridir. Günlük dilde kinayeli sözü geniş anlamda kullanılabilse de bu rehberin okul sınıflamasında iki başlık ayrı ölçütlerle açıklanır. Alay amacı ve bağlam verilmeden yalnız cümlenin olumlu biçiminden sonuç çıkarma.",
+  "to": "Tarizde ise söylenenin tersi kastedilir: geç kalmış birine gecikmesini eleştirmek için “Ne kadar dakiksin!” denmesi gibi. Burada verilen niyet gerçek övgü değil, ters sözle eleştiridir. Günlük dilde kinayeli sözü geniş anlamda kullanılabilse de burada iki başlık ayrı ölçütlerle açıklanır. Alay amacı ve bağlam verilmeden yalnız cümlenin olumlu biçiminden sonuç çıkarma."
+ },
+ {
+  "from": "Gerçek tür adını koruyan “nar çiçeği”, “bal arısı”, “duvar saati” gibi sözlerle renk, hastalık veya özel nesne adına dönüşmüş kullanımları karşılaştır. Renk tamlamaları ve tonlar “gece mavisi”, “açık mavi”; dış/iç/sıra sözleri “yurt dışı”, “hafta içi”, “yanı sıra” biçimlerinde ayrıdır. Kaynaklar bu başlıklar yanında gelenekleşmiş istisnalar da verir; yalnız ikinci sözcüğe bakıp sınırsız algoritma kurma.",
+  "to": "Gerçek tür adını koruyan “nar çiçeği”, “bal arısı”, “duvar saati” gibi sözlerle renk, hastalık veya özel nesne adına dönüşmüş kullanımları karşılaştır. Renk tamlamaları ve tonlar “gece mavisi”, “açık mavi”; dış/iç/sıra sözleri “yurt dışı”, “hafta içi”, “yanı sıra” biçimlerinde ayrıdır. Bu başlıkların yanında gelenekleşmiş istisnalar da vardır; yalnız ikinci sözcüğe bakıp sınırsız algoritma kurma."
+ },
+ {
+  "from": "Baş ile kurulan başhekim, başyazar; yönetici bildiren ustabaşı; ev ile kurulan yayınevi; hane/name/zede ile kurulan dershane, seyahatname, depremzede gibi biçimler kaynakların yerleşik bitişik yazım gruplarıdır. Biraz, birçok, birkaç, birtakım, herhangi, hiçbir de belirsizlik sözleri olarak öğrenilir. Buna karşılık sayı anlamındaki “bir takım formalar” gerçekten bir seti sayar; belirsiz birtakım ile aynı değildir.",
+  "to": "Baş ile kurulan başhekim, başyazar; yönetici bildiren ustabaşı; ev ile kurulan yayınevi; hane/name/zede ile kurulan dershane, seyahatname, depremzede gibi biçimler yerleşik bitişik yazım gruplarıdır. Biraz, birçok, birkaç, birtakım, herhangi, hiçbir de belirsizlik sözleri olarak öğrenilir. Buna karşılık sayı anlamındaki “bir takım formalar” gerçekten bir seti sayar; belirsiz birtakım ile aynı değildir."
+ },
+ {
+  "from": "Karar verirken önce tam yargıyı ve söz öbeklerini bul, sonra işaretin hangi görevi üstleneceğini açıkla. Her durakta virgül koymak, tamlamayı veya yan yapıyı yanlış bölebilir. Bazı edebî seçimler birden fazla biçime izin verebilir; tek doğru isteyen öğretim sorularında iletişim amacı ve gruplama koşulu bu nedenle açıkça verilir. Serbest metindeki bütün üslup kararlarını tek otomatik kuralla çözdüğümüzü iddia etmeyiz.",
+  "to": "Karar verirken önce tam yargıyı ve söz öbeklerini bul, sonra işaretin hangi görevi üstleneceğini açıkla. Her durakta virgül koymak, tamlamayı veya yan yapıyı yanlış bölebilir. Bazı edebî seçimler birden fazla biçime izin verebilir; tek doğru isteyen öğretim sorularında iletişim amacı ve gruplama koşulu bu nedenle açıkça verilir. Serbest metindeki bütün üslup kararları tek otomatik kuralla çözülemez."
+ },
+ {
+  "from": "Özne olarak kullanılan bu, şu, o zamirlerinden sonra virgül kullanımı kaynaklarda ayrıca gösterilir: “Bu, beklediğim sonuçtu.” Anlam karışıklığını önleyen “Yaralı, adama seslendi.” örneğinde de adlaşmış söz ile niteleme ayrılır. Sadece ilk sözcüğün ardından çizgi çekmek yerine kim, ne ve hangi sorularını cümle öbeklerine uygula; farklı işaret yerinin neyi değiştirdiğini açıklayabil.",
+  "to": "Özne olarak kullanılan bu, şu, o zamirlerinden sonra virgül kullanılabilir: “Bu, beklediğim sonuçtu.” Anlam karışıklığını önleyen “Yaralı, adama seslendi.” örneğinde de adlaşmış söz ile niteleme ayrılır. Sadece ilk sözcüğün ardından çizgi çekmek yerine kim, ne ve hangi sorularını cümle öbeklerine uygula; farklı işaret yerinin neyi değiştirdiğini açıklayabil."
+ },
+ {
+  "from": "Tırnak içinde verilmeyen alıntı cümlesinden sonra virgül kullanılabilir: “Anahtarı buldum, dedi.” Konuşma çizgisiyle başlayan aktarmada da kaynaklar bu virgülü gösterir. Tırnak içinde tam cümle kullanılıyorsa onun son işareti içeride kalır; iki farklı aktarma düzeninin kurallarını üst üste bindirip fazladan işaret ekleme.",
+  "to": "Tırnak içinde verilmeyen alıntı cümlesinden sonra virgül kullanılabilir: “Anahtarı buldum, dedi.” Konuşma çizgisiyle başlayan aktarmada da bu virgül kullanılır. Tırnak içinde tam cümle kullanılıyorsa onun son işareti içeride kalır; iki farklı aktarma düzeninin kurallarını üst üste bindirip fazladan işaret ekleme."
+ },
+ {
+  "from": "MEBİ, art arda gelen eş görevli zarf-fiilli yapıları ayrı bir koşul olarak gösterir: “Metni okuyup, biraz düşünüp yanıtını yazdı.” İlk yan yapıyı ayıran virgül bu bağlamda kullanılabilir. Bu istisna bütün zarf-fiillerden sonra zorunlu virgül var demek değildir; genel kural da hiçbir koşulda virgül olmaz diye genişletilmez. Kaç yan yapı olduğunu ve birbirine nasıl eş görevli bağlandığını açıkla.",
+  "to": "Art arda gelen eş görevli zarf-fiilli yapılar ayrı bir koşuldur: “Metni okuyup, biraz düşünüp yanıtını yazdı.” İlk yan yapıyı ayıran virgül bu bağlamda kullanılabilir. Bu istisna bütün zarf-fiillerden sonra zorunlu virgül var demek değildir; genel kural da hiçbir koşulda virgül olmaz diye genişletilmez. Kaç yan yapı olduğunu ve birbirine nasıl eş görevli bağlandığını açıkla."
+ },
+ {
+  "from": "Ögeleri arasında virgül bulunan sıralı cümleler de noktalı virgülle ayrılabilir. Kaynaklar ayrıca ikiden fazla eş değer ögesi virgüllü cümlelerde özne sonrasında noktalı virgül kullanılabileceğini gösterir; bu seçeneği her özneye zorunlu işaret diye taşıma. İki noktayla karıştırmamak için şu soruyu sor: grupları mı ayırıyorum, önceki sözün açıklamasını mı başlatıyorum?",
+  "to": "Ögeleri arasında virgül bulunan sıralı cümleler de noktalı virgülle ayrılabilir. İkiden fazla eş değer ögesi virgüllü cümlelerde özne sonrasında noktalı virgül de kullanılabilir; bu seçeneği her özneye zorunlu işaret diye taşıma. İki noktayla karıştırmamak için şu soruyu sor: grupları mı ayırıyorum, önceki sözün açıklamasını mı başlatıyorum?"
+ },
+ {
+  "from": "Alıntıda alınmayan bölümleri veya konuşmada eksik bırakılan cevabı göstermek de üç noktanın görevlerindendir. Üç nokta yerine keyfî sayıda nokta dizme. Soru ya da ünlem işaretinden sonra kaynaklar ?.. ve !.. biçimini gösterir; bu birleşik görünüm normal cümle sonuna gereksiz işaret yığma izni değildir. Hangi bölümün eksiltildiğini veya neden sesin kesildiğini açıklayabil.",
+  "to": "Alıntıda alınmayan bölümleri veya konuşmada eksik bırakılan cevabı göstermek de üç noktanın görevlerindendir. Üç nokta yerine keyfî sayıda nokta dizme. Soru ya da ünlem işaretinden sonra ?.. ve !.. biçimi kullanılabilir; bu birleşik görünüm normal cümle sonuna gereksiz işaret yığma izni değildir. Hangi bölümün eksiltildiğini veya neden sesin kesildiğini açıklayabil."
+ },
+ {
+  "from": "“Yağmur başladı mı içeri gireriz.” sözünde mı zaman/koşul ilişkisi kurar; doğrudan soru sormaz. Soru anlamlı bağlı veya sıralı cümlelerde soru işareti sona gelebilir; son ana yargı bildirme olduğunda kaynaklar noktayla biten örnekler de verir. Bilinmeyen doğum tarihi gibi bir bilgi için yay ayraç içindeki (?) ise bambaşka bir görevdir; bunu sıradan soru cümlesiyle eşitleme.",
+  "to": "“Yağmur başladı mı içeri gireriz.” sözünde mı zaman/koşul ilişkisi kurar; doğrudan soru sormaz. Soru anlamlı bağlı veya sıralı cümlelerde soru işareti sona gelebilir; son ana yargı bildirme olduğunda cümle noktayla da bitebilir. Bilinmeyen doğum tarihi gibi bir bilgi için yay ayraç içindeki (?) ise bambaşka bir görevdir; bunu sıradan soru cümlesiyle eşitleme."
+ },
+ {
+  "from": "Doğrudan ve olduğu gibi aktarılan söz tırnak içine alınır. Tam cümle olan alıntı büyük harfle başlar, kendi son işaretini kapanış tırnağının içinde taşır: “Ece ‘geldim’ dedi” gibi iç içe işaretleri düşünmeden karıştırmak yerine dış alıntıyı açıkça kur. Doğru tam aktarma örneği Ece “Anahtarı buldum.” dedi. biçimindedir.",
+  "to": "Doğrudan ve olduğu gibi aktarılan söz tırnak içine alınır. Tam cümle olan alıntı büyük harfle başlar, kendi son işaretini kapanış tırnağının içinde taşır. “Ece ‘geldim’ dedi” gibi iç içe işaretleri düşünmeden karıştırmak yerine dış alıntıyı açıkça kur. Doğru tam aktarma örneği Ece “Anahtarı buldum.” dedi. biçimindedir."
+ },
+ {
+  "from": "Açık kurum, kuruluş, kurul ve iş yeri adlarına gelen ekler kesmeyle ayrılmaz: “Türk Dil Kurumuna”; kısaltma ise “TDK’ye” olabilir. Kaynaklar Avrupa Birliği’ne biçimini özel istisna olarak gösterir. Yapım ve çokluk ekleri ile bunlardan sonraki ekler “Ankaralı”, “Türkçenin”, “Ahmetler” gibi ayrılmaz; iyeliği değişmiş “Boğaz Köprümüz” de ayrı bir durumdur. Sözcük özel ad diye bütün eklerin önüne otomatik kesme koyma.",
+  "to": "Açık kurum, kuruluş, kurul ve iş yeri adlarına gelen ekler kesmeyle ayrılmaz: “Türk Dil Kurumuna”; kısaltma ise “TDK’ye” olabilir. Avrupa Birliği’ne biçimi özel bir istisnadır. Yapım ve çokluk ekleri ile bunlardan sonraki ekler “Ankaralı”, “Türkçenin”, “Ahmetler” gibi ayrılmaz; iyeliği değişmiş “Boğaz Köprümüz” de ayrı bir durumdur. Sözcük özel ad diye bütün eklerin önüne otomatik kesme koyma."
+ },
+ {
+  "from": "Fiilimsi eki, okul dil bilgisinde yapım eki sayılır. Fiilimsi, bir çekimli fiil gibi kip ve kişiyle bağımsız temel yargı kurmaz; fakat isim çekim eki alabilir veya ek fiille yüklem olabilir. “Okuduğum kitap” sözündeki -um iyelik ilişkisi kurar; yalnız kişi çağrışımı yapıyor diye okuduğum sözcüğüne çekimli fiil denmez. Kökü, eki ve bağlı olduğu sözü ayrı ayrı göster.",
+  "to": "Fiilimsi eki yapım eki sayılır. Fiilimsi, bir çekimli fiil gibi kip ve kişiyle bağımsız temel yargı kurmaz; fakat isim çekim eki alabilir veya ek fiille yüklem olabilir. “Okuduğum kitap” sözündeki -um iyelik ilişkisi kurar; yalnız kişi çağrışımı yapıyor diye okuduğum sözcüğüne çekimli fiil denmez. Kökü, eki ve bağlı olduğu sözü ayrı ayrı göster."
+ },
+ {
+  "from": "Sıfat-fiil ekleri okul kaynaklarında -an/-en, -ası/-esi, -maz/-mez, -ar/-er, -dık/-dik/-duk/-dük, -acak/-ecek, -mış/-miş/-muş/-müş biçimleriyle gösterilir. “Bitecek işi paylaştık.” sözünde bitecek, iş adını niteler. “İş yarın bitecek.” sözündeyse bitecek gelecek zamanlı yüklemdir. Aynı -ecek görünümü, aynı sözcük türünü garanti etmez.",
+  "to": "Sıfat-fiil ekleri -an/-en, -ası/-esi, -maz/-mez, -ar/-er, -dık/-dik/-duk/-dük, -acak/-ecek, -mış/-miş/-muş/-müş biçimleriyle gösterilir. “Bitecek işi paylaştık.” sözünde bitecek, iş adını niteler. “İş yarın bitecek.” sözündeyse bitecek gelecek zamanlı yüklemdir. Aynı -ecek görünümü, aynı sözcük türünü garanti etmez."
+ },
+ {
+  "from": "“Kitabı alıp çıktı.” sözünde alıp çekimli ikinci yüklem değildir; çıkma eylemine bağlanan zarf-fiildir. “Almadan çıktı.” örneğinde yapılmayan yan eylem anlatılır. -dığında, -dıkça gibi birleşik görünümler kaynakların zarf-fiil başlığında ele aldığı yapılardır; her iç parçayı bağımsız bir sözcük sanma. İşlevi kanıtlarken hangi temel fiili tamamladığını açıkça belirt.",
+  "to": "“Kitabı alıp çıktı.” sözünde alıp çekimli ikinci yüklem değildir; çıkma eylemine bağlanan zarf-fiildir. “Almadan çıktı.” örneğinde yapılmayan yan eylem anlatılır. -dığında, -dıkça gibi birleşik görünümler zarf-fiil başlığında ele alınan yapılardır; her iç parçayı bağımsız bir sözcük sanma. İşlevi kanıtlarken hangi temel fiili tamamladığını açıkça belirt."
+ },
+ {
+  "from": "Bir sözcükte -ken benzeri bir son görmek fiilimsi kararı için yeterli değildir. “Yürürken durdu.” fiil kökünden kurulmuş zarf-fiildir; “Hastayken dinlendi.” sözündeki hastayken ise ad soylu tabana ek fiilin -ken biçiminin gelmesidir. OGM’nin TYT sınıflamasında bu ikinci kullanım fiilimsi sayılmaz; bütün öbek yine zaman veya durum belirtebilir.",
+  "to": "Bir sözcükte -ken benzeri bir son görmek fiilimsi kararı için yeterli değildir. “Yürürken durdu.” fiil kökünden kurulmuş zarf-fiildir; “Hastayken dinlendi.” sözündeki hastayken ise ad soylu tabana ek fiilin -ken biçiminin gelmesidir. Burada kullanılan sınıflamada bu ikinci kullanım fiilimsi sayılmaz; bütün öbek yine zaman veya durum belirtebilir."
+ },
+ {
+  "from": "“Amacım okumaktır.” cümlesinde okumak isim-fiili, -tır ek fiiliyle yüklem olmuştur. Yüklem ad soylu olduğundan bu bir isim cümlesidir; okumaktır biçimini çekimli bir asıl fiil sanma. OGM’nin yapı sınıflamasında cümledeki tek fiilimsi bu yüklemse ayrıca bir yan cümle oluşmuş sayılmaz; başka yan yapı yoksa cümle basittir.",
+  "to": "“Amacım okumaktır.” cümlesinde okumak isim-fiili, -tır ek fiiliyle yüklem olmuştur. Yüklem ad soylu olduğundan bu bir isim cümlesidir; okumaktır biçimini çekimli bir asıl fiil sanma. Yapı sınıflamasında cümledeki tek fiilimsi bu yüklemse ayrıca bir yan cümle oluşmuş sayılmaz; başka yan yapı yoksa cümle basittir."
+ },
+ {
+  "from": "“Dün eski defteri buldum.” sözünde yüklemdeki birinci tekil kişi, gizli ben öznesini düşündürür. Bu özne anlam ve kişi bakımından açıklanır; fakat MEBİ’nin öge sırası ve görünür öge sayısı sorularında gizli özne sıraya veya sayıya eklenmez. Dün / eski defteri / buldum dizisi üç görünür ögedir. Açık özne bulunmayan her cümleye düşünmeden gizli özne ekleme; öznesiz edilgen yapılar da vardır.",
+  "to": "“Dün eski defteri buldum.” sözünde yüklemdeki birinci tekil kişi, gizli ben öznesini düşündürür. Bu özne anlam ve kişi bakımından açıklanır; fakat öge sırası ve görünür öge sayısı sorularında gizli özne sıraya veya sayıya eklenmez. Dün / eski defteri / buldum dizisi üç görünür ögedir. Açık özne bulunmayan her cümleye düşünmeden gizli özne ekleme; öznesiz edilgen yapılar da vardır."
+ },
+ {
+  "from": "Bazı okul kaynakları araç, birliktelik ve amaç bildiren edat öbekleri için edat tümleci adını ayrıca verir. Bu uygulama MEBİ’nin öge çözümlemesini izleyerek bunları zarf tümleci altında gösterir; OGM de edat tümlecinin zarf tümleci kapsamında değerlendirildiğini belirtir. Bununla birlikte “Ece ile Can geldi.” sözünde Ece ile Can eş öznelerden oluşan tek gruptur; her ileyi otomatik araç zarfı sayma.",
+  "to": "Bazı sınıflamalar araç, birliktelik ve amaç bildiren edat öbekleri için edat tümleci adını ayrıca verir. Burada bunlar zarf tümleci altında gösterilir; edat tümleci zarf tümleci kapsamında değerlendirilir. Bununla birlikte “Ece ile Can geldi.” sözünde Ece ile Can eş öznelerden oluşan tek gruptur; her ileyi otomatik araç zarfı sayma."
+ },
+ {
+  "from": "Ustalar tarafından öbeği işi yapanı anlamca bildirir ve örtülü özne adıyla anılır; MEBİ/OGM öge incelemesinde zarf tümleci sayılır. Anlamsal yapan ile dil bilgisel özne ayrımını koru. “Bu salonda erkenden yatılır.” gibi geçişsiz fiilli edilgenlerde ise nesneden dönüşmüş bir sözde özne aranmaz. Yalnız edilgen eki gördüğün için her cümlede açık veya gizli bir özne varmış gibi davranma.",
+  "to": "Ustalar tarafından öbeği işi yapanı anlamca bildirir ve örtülü özne adıyla anılır; öge incelemesinde zarf tümleci sayılır. Anlamsal yapan ile dil bilgisel özne ayrımını koru. “Bu salonda erkenden yatılır.” gibi geçişsiz fiilli edilgenlerde ise nesneden dönüşmüş bir sözde özne aranmaz. Yalnız edilgen eki gördüğün için her cümlede açık veya gizli bir özne varmış gibi davranma."
+ },
+ {
+  "from": "Okul sorularında fiil cümlesinde yüklemden hemen önceki öge genellikle vurgulu öge olarak ele alınır; soru parçacığı ve bağlam vurguyu değiştirebilir, isim cümlelerinde yüklem vurgusu ayrıca düşünülür. Her konuşma tonunu tek mekanik kurala indirme. Çözümünü tam yüklem → özne → nesne → diğer tamlayıcılar sırasıyla denetle; gizli özneleri görünür sıraya ekleme ve bütün öbekleri koru.",
+  "to": "Sorularda fiil cümlesinde yüklemden hemen önceki öge genellikle vurgulu öge olarak ele alınır; soru parçacığı ve bağlam vurguyu değiştirebilir, isim cümlelerinde yüklem vurgusu ayrıca düşünülür. Her konuşma tonunu tek mekanik kurala indirme. Çözümünü tam yüklem → özne → nesne → diğer tamlayıcılar sırasıyla denetle; gizli özneleri görünür sıraya ekleme ve bütün öbekleri koru."
+ },
+ {
+  "from": "MEBİ/OGM okul sınıflamasında tek temel yargısı ve ayrıca yan cümlesi bulunmayan yapı basittir: “Ece dosyayı açtı.” Bir fiilimsi öbeği temel yargıya yan yapı olarak katılırsa girişik birleşik cümle kurulur: “Dosyayı açınca not aldı.” Açınca yan eylemi; aldı temel yargıyı taşır. Yargılar arasındaki ilişkiyi belirtmek yalnız fiilimsi ekini işaretlemekten daha açıklayıcıdır.",
+  "to": "Bu sınıflamada tek temel yargısı ve ayrıca yan cümlesi bulunmayan yapı basittir: “Ece dosyayı açtı.” Bir fiilimsi öbeği temel yargıya yan yapı olarak katılırsa girişik birleşik cümle kurulur: “Dosyayı açınca not aldı.” Açınca yan eylemi; aldı temel yargıyı taşır. Yargılar arasındaki ilişkiyi belirtmek yalnız fiilimsi ekini işaretlemekten daha açıklayıcıdır."
+ },
+ {
+  "from": "Önemli sınır: “Amacım araştırmaktır.” sözündeki tek fiilimsi temel yüklemdeyse, bu tek başına ayrı yan cümle değildir; OGM’nin açıklamasına göre cümle basittir. “Okuyan öğrencinin amacı araştırmaktır.” sözünde ise yüklem dışında okuyan sıfat-fiili yan yapı kurar; girişik birleşiktir. Cümlenin uzunluğu veya tamlama sayısı da basitliği ortadan kaldırmaz.",
+  "to": "Önemli sınır: “Amacım araştırmaktır.” sözündeki tek fiilimsi temel yüklemdeyse, bu tek başına ayrı yan cümle değildir; cümle basittir. “Okuyan öğrencinin amacı araştırmaktır.” sözünde ise yüklem dışında okuyan sıfat-fiili yan yapı kurar; girişik birleşiktir. Cümlenin uzunluğu veya tamlama sayısı da basitliği ortadan kaldırmaz."
+ },
+ {
+  "from": "Şartlı birleşik cümlede koşul yargısı temel yargıya bağlanır: “Yağmur diner ise dışarı çıkacağız.” Ki’li birleşik yapıda ayrı yazılan ki iki yargıyı ilişkilendirir: “Belli ki toplantı bitti.” İç içe birleşik cümlede bir alıntı yargı başka yargının içinde yer alır: “Ece, ‘Yarın gelirim.’ dedi.” Bu başlıklar uygulamada MEBİ’nin okul sınıflamasına göre adlandırılır.",
+  "to": "Şartlı birleşik cümlede koşul yargısı temel yargıya bağlanır: “Yağmur diner ise dışarı çıkacağız.” Ki’li birleşik yapıda ayrı yazılan ki iki yargıyı ilişkilendirir: “Belli ki toplantı bitti.” İç içe birleşik cümlede bir alıntı yargı başka yargının içinde yer alır: “Ece, ‘Yarın gelirim.’ dedi.”"
+ },
+ {
+  "from": "“Ece ve Can kitap okudu.” sözündeki ve iki özneyi bağlar; tek yüklem ve tek temel yargı vardır, bu yüzden cümle bağlı değil basittir. Benzer biçimde bir yüklemin yardımcı fiilini iki yüklem gibi sayma. Ortak yüklemli eksiltilerde görünür çekimli sözcük sayısı da tek başına yeterli olmayabilir; kaynakların çözümünü izleyerek her yargının tamamlanan öğesini açıkla.",
+  "to": "“Ece ve Can kitap okudu.” sözündeki ve iki özneyi bağlar; tek yüklem ve tek temel yargı vardır, bu yüzden cümle bağlı değil basittir. Benzer biçimde bir yüklemin yardımcı fiilini iki yüklem gibi sayma. Ortak yüklemli eksiltilerde görünür çekimli sözcük sayısı da tek başına yeterli olmayabilir; her yargının tamamlanan öğesini açıkla."
+ },
+ {
+  "from": "Bağlı yapılarda da ortak öge ilişkisi görülebilir; önce bağlı/sıralı ayrımını, sonra ortaklık soruluyorsa bunu denetle. Çok eksenli sonuç yazarken “Fiil; devrik; olumsuz; basit” gibi her kararın ayrı kanıtını göster. Soruya yalnız istenen eksende cevap ver; tartışmalı sınıflandırma geleneklerini bağlamsız tek doğru yapma. Bu rehberin model ve soruları belirtilen MEBİ/OGM okul konvansiyonuyla hazırlanmıştır.",
+  "to": "Bağlı yapılarda da ortak öge ilişkisi görülebilir; önce bağlı/sıralı ayrımını, sonra ortaklık soruluyorsa bunu denetle. Çok eksenli sonuç yazarken “Fiil; devrik; olumsuz; basit” gibi her kararın ayrı kanıtını göster. Soruya yalnız istenen eksende cevap ver; tartışmalı sınıflandırma geleneklerini bağlamsız tek doğru yapma."
+ },
+ {
+  "from": "“Anahtar cebimdeymiş!” sözü, konuşanın yeni fark ettiği bir durumu anlatabilir; bir haberci zorunlu değildir. Okul dil bilgisinde ad yüklemindeki imiş, ek fiilin duyulan geçmiş zamanı adıyla öğretilir; bu biçim adını her bağlamda aynı bilgi edinme yolu ve takvim zamanı sanma. Soruda “duydum, fark ettim, dün, şimdi” gibi belirtilen bağlamı, ekin biçimsel sınıflandırmasından ayrı bir satırda değerlendir.",
+  "to": "“Anahtar cebimdeymiş!” sözü, konuşanın yeni fark ettiği bir durumu anlatabilir; bir haberci zorunlu değildir. Dil bilgisinde ad yüklemindeki imiş, ek fiilin duyulan geçmiş zamanı adıyla öğretilir; bu biçim adını her bağlamda aynı bilgi edinme yolu ve takvim zamanı sanma. Soruda “duydum, fark ettim, dün, şimdi” gibi belirtilen bağlamı, ekin biçimsel sınıflandırmasından ayrı bir satırda değerlendir."
+ },
+ {
+  "from": "Bildirme eki -dır/-dir/-dur/-dür ve sert ünsüzden sonra -tır/-tir/-tur/-tür, ad soylu yüklemde kullanılabilir: “Bu işin sorumlusu müdürdür.” Çekimli fiilin ardından da gelir: “Rapor yarın açıklanacaktır.” Ancak -dır eklenmesi, okul dil bilgisindeki hikâye/rivayet/şart türünden birleşik çekimle aynı şey değildir. “Geliyordur” biçiminde iki zaman var diye yalnız ek sayısına göre karar verilmez.",
+  "to": "Bildirme eki -dır/-dir/-dur/-dür ve sert ünsüzden sonra -tır/-tir/-tur/-tür, ad soylu yüklemde kullanılabilir: “Bu işin sorumlusu müdürdür.” Çekimli fiilin ardından da gelir: “Rapor yarın açıklanacaktır.” Ancak -dır eklenmesi, dil bilgisindeki hikâye/rivayet/şart türünden birleşik çekimle aynı şey değildir. “Geliyordur” biçiminde iki zaman var diye yalnız ek sayısına göre karar verilmez."
+ },
+ {
+  "from": "Soru edatı ayrı yazılır, ardından gelen ekler ona bağlanabilir: “Hazır mıydın?”, “Yorgun muymuşsun?” ve “İyi misin?” doğrudur. İdi ayrı da yazılabilir: iyi idi → iyiydi, hasta idi → hastaydı. Bitişmede i düşer; iki ünlü arasında y görülebilir, ekler ünlü ve ünsüz uyumuna uyar: dürüst idi → dürüsttü. Yazılı ayırma işaretiyle yaptığımız çözümleme, bütün ekleri gerçek yazıda ayrı yazma önerisi değildir. Ek fiil, -ken ile de zarf görevli yapı kurar: “Hasta iken dinlendi.” → “Hastayken dinlendi.” Burada hasta ad soyludur; -ken bağımsız bir ana yargı veya yeni bir fiil kökü oluşturmaz. “Yürürken durdu.” ise fiil tabanlı zarf-fiildir. Bu sınır, OGM’nin fiilimsiler bölümünde ayrıca belirtilir; aynı son ses her yerde aynı tür demek değildir.",
+  "to": "Soru edatı ayrı yazılır, ardından gelen ekler ona bağlanabilir: “Hazır mıydın?”, “Yorgun muymuşsun?” ve “İyi misin?” doğrudur. İdi ayrı da yazılabilir: iyi idi → iyiydi, hasta idi → hastaydı. Bitişmede i düşer; iki ünlü arasında y görülebilir, ekler ünlü ve ünsüz uyumuna uyar: dürüst idi → dürüsttü. Yazılı ayırma işaretiyle yaptığımız çözümleme, bütün ekleri gerçek yazıda ayrı yazma önerisi değildir. Ek fiil, -ken ile de zarf görevli yapı kurar: “Hasta iken dinlendi.” → “Hastayken dinlendi.” Burada hasta ad soyludur; -ken bağımsız bir ana yargı veya yeni bir fiil kökü oluşturmaz. “Yürürken durdu.” ise fiil tabanlı zarf-fiildir. Bu sınır fiilimsiler konusunda ayrıca belirtilir; aynı son ses her yerde aynı tür demek değildir."
+ },
+ {
+  "from": "İlk örneği parçalar açıkken incele; sonra yalnız cümleye bakıp sınıflandırmanı ve gerekçeni yaz. Koşulu değiştir: hazırım yerine geliyorum, geliyordum yerine geliyordur kullanıldığında hangi katmanın değiştiğini açıkla. Modelin verdiği yanıtla gerekçeni kendin karşılaştır; yalnız aynı etiketi seçmek gerekçenin doğruluğunu kanıtlamaz. Bu keşif öğrenme puanı üretmez; bağımsız sorular ve gerçek çalışma kayıtları ayrıdır.",
+  "to": "İlk örneği parçalar açıkken incele; sonra yalnız cümleye bakıp sınıflandırmanı ve gerekçeni yaz. Koşulu değiştir: hazırım yerine geliyorum, geliyordum yerine geliyordur kullanıldığında hangi katmanın değiştiğini açıkla. Modelin verdiği yanıtla gerekçeni kendin karşılaştır; yalnız aynı etiketi seçmek gerekçenin doğruluğunu kanıtlamaz."
+ },
+ {
+  "from": "Sadece anlamındaki yalnız/ancak/bir/tek kullanımları OGM İsim Soylu Sözcükler notunda edat olarak sınıflanır; bazı özetlerde sınırlama zarfı terimi kullanılabilir. Bu rehber OGM’nin edat sınıflamasını açıkça belirtir; tür adlandırması değişen kullanımları bağlamsız tek-doğrulu soru yapmaz. ‘Ancak sen çözersin.’ sözünde asıl anlam kanıtı yalnızca sen sınırlamasıdır; ‘Çözerdim, ancak süre bitti.’ ise karşıtlık bağlacıdır.",
+  "to": "Sadece anlamındaki yalnız/ancak/bir/tek kullanımları edat olarak sınıflanır; bazı özetlerde sınırlama zarfı terimi kullanılabilir. Burada edat sınıflaması kullanılır. ‘Ancak sen çözersin.’ sözünde asıl anlam kanıtı yalnızca sen sınırlamasıdır; ‘Çözerdim, ancak süre bitti.’ ise karşıtlık bağlacıdır."
+ },
+ {
+  "from": "Mi/mı/mu/mü soru parçacığı ayrı yazılır; OGM bu yapıyı soru edatı başlığı altında ele alır: ‘Gelecek misiniz?’ Kişi eki soru parçacığına bitişebilir. ‘Güzel mi güzel’ pekiştirme anlamı taşır. İçinde aktarılan veya birden fazla soru bulunan bütün cümleler için tek soru sözcüğü yasağı çıkarma; istenen yapıyı kendi cümleciğinde incele.",
+  "to": "Mi/mı/mu/mü soru parçacığı ayrı yazılır; bu yapı soru edatı başlığı altında ele alınır: ‘Gelecek misiniz?’ Kişi eki soru parçacığına bitişebilir. ‘Güzel mi güzel’ pekiştirme anlamı taşır. İçinde aktarılan veya birden fazla soru bulunan bütün cümleler için tek soru sözcüğü yasağı çıkarma; istenen yapıyı kendi cümleciğinde incele."
+ },
+ {
+  "from": "Her seçenek için kanıtı kısa bir cümleyle yaz; sonra en yakın karşı örneği dene. İle için eş özne/araç, de için ek/bağlaç, ki için niteleme/bağlama, ünlem için duygu/adlaşma çiftleri kur. Etkileşimli cümle dönüşümü farklı görevi gösterir; kendi yazdığın gerekçe otomatik dil çözümlemesiyle puanlanmaz. Bağımsız yeni soruda aynı ilişkiyi not kapalı yeniden kur.",
+  "to": "Her seçenek için kanıtı kısa bir cümleyle yaz; sonra en yakın karşı örneği dene. İle için eş özne/araç, de için ek/bağlaç, ki için niteleme/bağlama, ünlem için duygu/adlaşma çiftleri kur. Etkileşimli cümle dönüşümü farklı görevi gösterir. Bağımsız yeni soruda aynı ilişkiyi not kapalı yeniden kur."
+ },
+ {
+  "from": "Çözüm sırası: yüklemi bul, tabanı çöz, istenen sınıflandırmayı belirle, kip/kişiyi ayır, zaman sözüyle anlamı karşılaştır. ‘Çekimi birleşik olduğu için yapısı türemiştir.’ gibi farklı ölçütleri birbirine bağlama. Fiilimsilerin bütün ayrıntıları ve fiilde çatı ayrı başlıklarda genişler; bu rehberin sınır bilgisi o konuların tamamlandığı anlamına gelmez.",
+  "to": "Çözüm sırası: yüklemi bul, tabanı çöz, istenen sınıflandırmayı belirle, kip/kişiyi ayır, zaman sözüyle anlamı karşılaştır. ‘Çekimi birleşik olduğu için yapısı türemiştir.’ gibi farklı ölçütleri birbirine bağlama. Fiilimsilerin bütün ayrıntıları ve fiilde çatı ayrı başlıklarda genişler."
+ },
+ {
+  "from": "Fiilde çatı, yüklemin öznesi ve nesnesiyle kurduğu ilişkileri anlatır. ‘Oda temizlendi.’ cümlesinde temizlen- fiil yüklemidir ve çatı incelenebilir. ‘Oda temizdi.’ sözünde temiz adı ek fiille yüklem olmuştur; okul düzeyindeki fiilde çatı sınıflaması bu isim cümlesinde aranmaz.",
+  "to": "Fiilde çatı, yüklemin öznesi ve nesnesiyle kurduğu ilişkileri anlatır. ‘Oda temizlendi.’ cümlesinde temizlen- fiil yüklemidir ve çatı incelenebilir. ‘Oda temizdi.’ sözünde temiz adı ek fiille yüklem olmuştur; fiilde çatı sınıflaması bu isim cümlesinde aranmaz."
+ },
+ {
+  "from": "Yüklemin sonunda l, n veya ş seslerini görmek çatı eki kanıtı değildir; kökü ve gerçek eki ayır. ‘Anladı.’ fiilinde anla- tabanındaki harflerden edilgenlik çıkarılmaz. OGM’nin etken için verdiği çatı eki yokluğu açıklaması, kök içindeki benzer seslere uygulanmaz. Etkenlikte işi yapan özneyle yargının kurduğu ilişki belirleyicidir.",
+  "to": "Yüklemin sonunda l, n veya ş seslerini görmek çatı eki kanıtı değildir; kökü ve gerçek eki ayır. ‘Anladı.’ fiilinde anla- tabanındaki harflerden edilgenlik çıkarılmaz. Etken için verilen çatı eki yokluğu açıklaması, kök içindeki benzer seslere uygulanmaz. Etkenlikte işi yapan özneyle yargının kurduğu ilişki belirleyicidir."
+ },
+ {
+  "from": "‘Çocuklar koştu.’ çok öznelidir fakat yalnız çoğulluk onu işteş çatılı yapmaz; işteşlik eki ve anlamı birlikte denetlenir. ‘Çocuk büyüdü.’ veya ‘Kapı açıldı.’ gibi l/n/ş sesli başka biçimleri de otomatik işteş sanma. Bazı sözcükler kalıplaşmış olabilir; bu rehberin örnekleri açıkça birlikte/karşılıklı anlamı sağlayan fiillerden seçilmiştir.",
+  "to": "‘Çocuklar koştu.’ çok öznelidir fakat yalnız çoğulluk onu işteş çatılı yapmaz; işteşlik eki ve anlamı birlikte denetlenir. ‘Çocuk büyüdü.’ veya ‘Kapı açıldı.’ gibi l/n/ş sesli başka biçimleri de otomatik işteş sanma. Bazı sözcükler kalıplaşmış olabilir; buradaki örnekler açıkça birlikte/karşılıklı anlamı sağlayan fiillerden seçilmiştir."
+ },
+ {
+  "from": "Birden fazla yaptırma katmanı olabilir: yaz- / yaz-dır- / yaz-dır-t- gibi biçimleri anlamlı bağlamda kullanmak gerekir. ‘Müdür, danışmana sekretere metni yazdırttı.’ sözünde katılımcı rollerini sırayla kur; yalnız ek sayısı ezberleme. Günlük dilde neden ettirme ile yaptırma terimleri değişebilir; burada OGM’nin geçişsiz→geçişli oldurgan, geçişli→daha yüksek geçişlilik ettirgen ayrımı kullanılır.",
+  "to": "Birden fazla yaptırma katmanı olabilir: yaz- / yaz-dır- / yaz-dır-t- gibi biçimleri anlamlı bağlamda kullanmak gerekir. ‘Müdür, danışmana sekretere metni yazdırttı.’ sözünde katılımcı rollerini sırayla kur; yalnız ek sayısı ezberleme. Günlük dilde neden ettirme ile yaptırma terimleri değişebilir; burada geçişsiz→geçişli oldurgan, geçişli→daha yüksek geçişlilik ettirgen ayrımı kullanılır."
+ },
+ {
+  "from": "Ağır ağır, usul usul gibi ikilemeler de biçim bildirebilir. Elbette, belki, mutlaka gibi sözcükler yargıya kesinlik veya olasılık katar; okul kaynakları bunları geniş durum başlığı altında ele alabilir. Anlam işlevini ayrıca yazmak, tekrar/sıklık bildiren kullanımların farklı kaynaklardaki alt sınıf adlarına takılmadan cümleyi anlamanı sağlar.",
+  "to": "Ağır ağır, usul usul gibi ikilemeler de biçim bildirebilir. Elbette, belki, mutlaka gibi sözcükler yargıya kesinlik veya olasılık katar; bunlar geniş durum başlığı altında ele alınabilir. Anlam işlevini ayrıca yazmak, tekrar/sıklık bildiren kullanımların farklı alt sınıf adlarına takılmadan cümleyi anlamanı sağlar."
+ },
+ {
+  "from": "Son adımda yakın yanlışı ele: ‘Az su’ niçin ‘az uyudu’ ile aynı değil, ‘içeriye’ niçin yalın yön zarfı sayılmıyor? Çözümü kapatıp farklı bir cümlede aynı ilişkiyi yeniden kur. Etkileşimli modelde doğru türü seçmenin yanında cümleden kanıt yazman istenir; bu keşif, bağımsız soru çözümünün veya konu tamamlanmasının yerine geçmez.",
+  "to": "Son adımda yakın yanlışı ele: ‘Az su’ niçin ‘az uyudu’ ile aynı değil, ‘içeriye’ niçin yalın yön zarfı sayılmıyor? Çözümü kapatıp farklı bir cümlede aynı ilişkiyi yeniden kur. Etkileşimli modelde doğru türü seçmenin yanında cümleden kanıt yazman istenir."
+ },
+ {
+  "from": "‘Geniş bahçe’ bir sıfat tamlamasıdır: geniş, bahçenin niteliğidir. ‘Okul bahçesi’nde ise okul ve bahçe iki addır. Belirtisiz tamlamanın iki unsurunun arasına sıfatı gelişi güzel sokma: ‘okul geniş bahçesi’ aynı yapıyı doğal kurmaz; ‘geniş okul bahçesi’ veya ‘okulun geniş bahçesi’ gibi farklı örgütlenmeleri incele. ‘Taş duvar’ gibi madde bildiren grupların takısız tamlama adıyla sınıflandırılması kaynaklar arasında tartışmalıdır; kesin etiketli sınav sorusuna dönüştürülmez.",
+  "to": "‘Geniş bahçe’ bir sıfat tamlamasıdır: geniş, bahçenin niteliğidir. ‘Okul bahçesi’nde ise okul ve bahçe iki addır. Belirtisiz tamlamanın iki unsurunun arasına sıfatı gelişi güzel sokma: ‘okul geniş bahçesi’ aynı yapıyı doğal kurmaz; ‘geniş okul bahçesi’ veya ‘okulun geniş bahçesi’ gibi farklı örgütlenmeleri incele. ‘Taş duvar’ gibi madde bildiren grupların takısız tamlama adıyla sınıflandırılması tartışmalıdır."
+ },
+ {
+  "from": "Kurallı birleşik sıfatlarda bir söz grubu bütün olarak adı niteler: mavi gözlü çocuk, üç günlük gezi, eli açık komşu. Mavi gözlüde mavi göz grubu -lü ile çocuk adına bağlanır. Kaynaklarda bu başlık altında kulaktan dolma bilgi, ailesine bağlı kişi, gözü pek öğrenci gibi genişlemiş gruplar da incelenir. Grubun tamamını ve nitelediği adı göster; her sözcüğü tek başına yeni bir sıfat türüne zorlamadan yapıyı çöz.",
+  "to": "Kurallı birleşik sıfatlarda bir söz grubu bütün olarak adı niteler: mavi gözlü çocuk, üç günlük gezi, eli açık komşu. Mavi gözlüde mavi göz grubu -lü ile çocuk adına bağlanır. Bu başlık altında kulaktan dolma bilgi, ailesine bağlı kişi, gözü pek öğrenci gibi genişlemiş gruplar da incelenir. Grubun tamamını ve nitelediği adı göster; her sözcüğü tek başına yeni bir sıfat türüne zorlamadan yapıyı çöz."
+ },
+ {
+  "from": "‘Sıfat çekim eki alırsa adlaşır.’ yararlı bir başlangıç kuralıdır ama her yapıya koşulsuz uygulanmaz: güzelim köy gibi özel ifadeler ve gideceğin okul gibi iyelik eki taşıyan sıfat-fiil grupları açık adı nitelemeyi sürdürebilir. Doktor Selin / Selin Hanım gibi unvan yapılarının söz dizimi de olağan sıfat sırasından farklı olabilir. Ayrıntı gerekiyorsa kaynak terminolojisini ve açık ad ilişkisini belirt; tartışmalı alt etiketleri gerekçesiz sınav anahtarı yapma.",
+  "to": "‘Sıfat çekim eki alırsa adlaşır.’ yararlı bir başlangıç kuralıdır ama her yapıya koşulsuz uygulanmaz: güzelim köy gibi özel ifadeler ve gideceğin okul gibi iyelik eki taşıyan sıfat-fiil grupları açık adı nitelemeyi sürdürebilir. Doktor Selin / Selin Hanım gibi unvan yapılarının söz dizimi de olağan sıfat sırasından farklı olabilir. Ayrıntı gerekiyorsa kullanılan terimi ve açık ad ilişkisini belirt."
+ },
+ {
+  "from": "‘O geldi.’ gibi tek başına cümlede hangi varlığa gönderim yapıldığı bilinmiyorsa kişi/işaret ayrımını kesinleştirecek bilgi eksiktir. Bu ve şu ise insanlar gösterilse bile işaret zamiri olarak kullanılır: ‘Şunlar bizi bekliyor.’ Sadece gösterilenin insan olmasına bakarak bu/şu sözcüklerini kişi zamiri sınıfına taşıma; kaynak ayrımını bağlamla birlikte uygula.",
+  "to": "‘O geldi.’ gibi tek başına cümlede hangi varlığa gönderim yapıldığı bilinmiyorsa kişi/işaret ayrımını kesinleştirecek bilgi eksiktir. Bu ve şu ise insanlar gösterilse bile işaret zamiri olarak kullanılır: ‘Şunlar bizi bekliyor.’ Sadece gösterilenin insan olmasına bakarak bu/şu sözcüklerini kişi zamiri sınıfına taşıma; ayrımı bağlamla birlikte uygula."
+ },
+ {
+  "from": "Okul dil bilgisinde iyelik ekleri ek hâlindeki zamirler başlığında da ele alınır: evim, evin, evi, evimiz, eviniz, evleri. Bu ekler varlığın aitliğini bildirir; açık kişi zamiriyle aynı sözcük değildir. ‘Evim’ benim evim diye açılır. ‘Evdeyim’ ise içinde bulunma eki ve yüklemde kişi bildirimi taşıyan farklı bir yapıdır.",
+  "to": "İyelik ekleri ek hâlindeki zamirler başlığında da ele alınır: evim, evin, evi, evimiz, eviniz, evleri. Bu ekler varlığın aitliğini bildirir; açık kişi zamiriyle aynı sözcük değildir. ‘Evim’ benim evim diye açılır. ‘Evdeyim’ ise içinde bulunma eki ve yüklemde kişi bildirimi taşıyan farklı bir yapıdır."
+ },
+ {
+  "from": "‘Onun çantasını taşıdım.’ cümlesinde çanta-sı-n-ı: iyelik, zamir n’si, belirtme durumu sıralaması vardır. ‘Senin çantanı taşıdım.’da çanta-n-ı: ikinci tekil iyelik ve belirtme vardır. Bu nedenle tek başına çantanı veya defterin gibi yüzey biçimlerinden sahip kişiyi kesinleştirme; açık tamlayan anlamı belirler. Benzer görünüşlü ekleri, bağlam verilmeyen bir sınav anahtarıyla cezalandırmak yerine belirsizliği fark etmeyi öğret.",
+  "to": "‘Onun çantasını taşıdım.’ cümlesinde çanta-sı-n-ı: iyelik, zamir n’si, belirtme durumu sıralaması vardır. ‘Senin çantanı taşıdım.’da çanta-n-ı: ikinci tekil iyelik ve belirtme vardır. Bu nedenle tek başına çantanı veya defterin gibi yüzey biçimlerinden sahip kişiyi kesinleştirme; açık tamlayan anlamı belirler. Benzer görünüşlü eklerde bağlam verilmemişse belirsizliği fark et."
+ },
+ {
+  "from": "Araba + y + a örneğinde y köke ait değildir; ekleme sınırında yardımcı sestir. Okul kaynaklarında y, ş, s, n yardımcı/kaynaştırma ünsüzleri birlikte incelenebilir: iki-ş-er, oda-s-ı, evi-n-e. n’nin bazı görevleri ayrıntılı kaynaklarda zamir n’si diye adlandırılır. Adlandırma ayrıntısı değişse de gerçek kökü, eki ve aradaki sesi açıkça göster.",
+  "to": "Araba + y + a örneğinde y köke ait değildir; ekleme sınırında yardımcı sestir. Yardımcı/kaynaştırma ünsüzleri y, ş, s, n birlikte incelenebilir: iki-ş-er, oda-s-ı, evi-n-e. n’nin bazı görevleri ayrıntılı incelemelerde zamir n’si diye adlandırılır. Adlandırma ayrıntısı değişse de gerçek kökü, eki ve aradaki sesi açıkça göster."
+ },
+ {
+  "from": "Yanlış cevabı yalnız harfle düzeltme. İlk hatanın türünü yaz: kök yanlış mı, ünlü eksilmesiyle değişmesi karıştı mı, kök sonu yerine ek başı mı incelendi, olumsuz kök mü kaçtı? Sonra aynı ayrımı farklı bir sözcükte yeniden dene. Aşağıdaki etkileşim destekli öğretimdir; bağımsız soru kaydı Sorular’da oluşur.",
+  "to": "Yanlış cevabı yalnız harfle düzeltme. İlk hatanın türünü yaz: kök yanlış mı, ünlü eksilmesiyle değişmesi karıştı mı, kök sonu yerine ek başı mı incelendi, olumsuz kök mü kaçtı? Sonra aynı ayrımı farklı bir sözcükte yeniden dene. Aşağıdaki etkileşim destekli öğretimdir."
+ },
+ {
+  "from": "Kökü yalnız en kısa anlamlı harf dizisi diye seçme. Balık sözcüğünün başındaki bal anlamlı görünür ama balık ile bal arasında gereken anlam ilişkisi yoktur; balık kökü korunur. Bu, okul düzeyinde güncel çözümlemedir; tarihsel kökeni belirsiz sözcükler için tahmin yürüterek parça uydurma. Fiil kökü gösterimindeki son kısa çizgi, örneğin yaz-, çözümleme işaretidir; sözcüğün yazımına eklenmez.",
+  "to": "Kökü yalnız en kısa anlamlı harf dizisi diye seçme. Balık sözcüğünün başındaki bal anlamlı görünür ama balık ile bal arasında gereken anlam ilişkisi yoktur; balık kökü korunur. Bu, güncel çözümlemedir; tarihsel kökeni belirsiz sözcükler için tahmin yürüterek parça uydurma. Fiil kökü gösterimindeki son kısa çizgi, örneğin yaz-, çözümleme işaretidir; sözcüğün yazımına eklenmez."
+ },
+ {
+  "from": "Aynı ses dizisi farklı bağlamlarda farklı kökler olabilir: ‘Yaz geldi’ mevsim adı, ‘Adını yaz’ eylemidir; anlam ilişkisi kurulmadığından sesteştir. ‘Tadı güzel’ ile ‘Yemeği tat’ örneklerinde tat ad ve fiil kullanımları arasında anlam ilişkisi vardır; ortak/kökteş kök diye incelenir. Tek sözcük görünüşü bağlamın görevini belirlemeye yetmez. Pat, cız gibi yansıma tabanlar okul sınıflamasında ad kökü grubundadır; pat-la- bir türetmedir.",
+  "to": "Aynı ses dizisi farklı bağlamlarda farklı kökler olabilir: ‘Yaz geldi’ mevsim adı, ‘Adını yaz’ eylemidir; anlam ilişkisi kurulmadığından sesteştir. ‘Tadı güzel’ ile ‘Yemeği tat’ örneklerinde tat ad ve fiil kullanımları arasında anlam ilişkisi vardır; ortak/kökteş kök diye incelenir. Tek sözcük görünüşü bağlamın görevini belirlemeye yetmez. Pat, cız gibi yansıma tabanlar ad kökü grubundadır; pat-la- bir türetmedir."
+ },
+ {
+  "from": "‘Burada koşma!’ olumsuz emir, ‘Koşma alışkanlığı edindim’ eylem adlandırmasıdır. İlk -ma olumsuzlukla fiili kullanır; sırf bu ek geldi diye türemiş sayılmaz. İkincisi isim-fiildir. Okul düzeyinde fiilimsilerin ad/sıfat/zarf görevi kuran ekleri yapım işlevli ele alınır; fakat bütün fiilimsi ve çatı ayrıntıları ayrı ünitede ilerletilir. ‘Gelecek günler’ ifadesindeki niteleme ile ‘Yarın gelecek’ yüklemindeki zaman görevini de bağlam belirler.",
+  "to": "‘Burada koşma!’ olumsuz emir, ‘Koşma alışkanlığı edindim’ eylem adlandırmasıdır. İlk -ma olumsuzlukla fiili kullanır; sırf bu ek geldi diye türemiş sayılmaz. İkincisi isim-fiildir. Bu düzeyde fiilimsilerin ad/sıfat/zarf görevi kuran ekleri yapım işlevli ele alınır; fakat bütün fiilimsi ve çatı ayrıntıları ayrı ünitede ilerletilir. ‘Gelecek günler’ ifadesindeki niteleme ile ‘Yarın gelecek’ yüklemindeki zaman görevini de bağlam belirler."
+ },
+ {
+  "from": "Masadaki kitap ifadesinde -ki bir adı niteler; benimki örneğinde adın yerini tutan ilgi zamiri görevi vardır. Okul sınıflamasında ilgi zamiri olan -ki çekim işleviyle incelenir; aynı harfleri gördün diye bütün -ki’leri tek bir göreve yerleştirme. Evde kaldı / ev de boş ayrımında ise bağlı hâl ekiyle ayrı bağlaç farklı unsurlardır.",
+  "to": "Masadaki kitap ifadesinde -ki bir adı niteler; benimki örneğinde adın yerini tutan ilgi zamiri görevi vardır. Bu sınıflamada ilgi zamiri olan -ki çekim işleviyle incelenir; aynı harfleri gördün diye bütün -ki’leri tek bir göreve yerleştirme. Evde kaldı / ev de boş ayrımında ise bağlı hâl ekiyle ayrı bağlaç farklı unsurlardır."
+ },
+ {
+  "from": "Birleşik fiil ayrı da yazılabilir: yardım etmek. Hissetmek ses değişimiyle bitişik yazılır; ikisi de yardımcı fiille kurulabilir. Sonradan ek almış birleşik tabanlarda tabanın kuruluşunu ve son ekin görevini ayrı anlat. Birleşik oluşumla türetmenin birlikte yer aldığı karmaşık bir örneği, kaynak ve soru ölçütünü okumadan tek basit etiketle kapatma.",
+  "to": "Birleşik fiil ayrı da yazılabilir: yardım etmek. Hissetmek ses değişimiyle bitişik yazılır; ikisi de yardımcı fiille kurulabilir. Sonradan ek almış birleşik tabanlarda tabanın kuruluşunu ve son ekin görevini ayrı anlat. Birleşik oluşumla türetmenin birlikte yer aldığı karmaşık bir örneği, sorunun ölçütünü okumadan tek basit etiketle kapatma."
+ },
+ {
+  "from": "Bağlam görevini kendi cümlenle söyle: sahip olan mı, bulunan nesne mi, eylemi yapan mı? Çözümde ilk hatayı bulduktan sonra koşulu değiştir: evlerimizden yerine evsizlerimizden verilince tek -siz yeni bir taban kurar, yapı türemişe döner; sondaki -den aynı ayrılma görevini sürdürür. Modelde parçaları tek tek seçip bu değişimi açıklayabilirsin. Destekli keşif bağımsız soru sonucu veya konu tamamlanması oluşturmaz.",
+  "to": "Bağlam görevini kendi cümlenle söyle: sahip olan mı, bulunan nesne mi, eylemi yapan mı? Çözümde ilk hatayı bulduktan sonra koşulu değiştir: evlerimizden yerine evsizlerimizden verilince tek -siz yeni bir taban kurar, yapı türemişe döner; sondaki -den aynı ayrılma görevini sürdürür. Modelde parçaları tek tek seçip bu değişimi açıklayabilirsin."
  }
 ]
