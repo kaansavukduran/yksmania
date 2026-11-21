@@ -88,6 +88,9 @@ export function StudyTimer() {
       setBusy(false);
     }
   }
+  // Zamanlayıcılar ayarla kapatıldıysa kum saati gösterilmez; kayıtlı
+  // durumu (süre, duraklatma, mutlak bitiş) olduğu gibi korunur.
+  if (state.settings.timers === false) return null;
   return (
     <div
       className="study-timer"

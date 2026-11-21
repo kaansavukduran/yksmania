@@ -1,51 +1,9 @@
-import { useEffect, useRef, useState } from "react";
-import { useApp } from "../store";
-import { finishExam } from "../domain/exams";
-import { playExamFinishCue } from "../domain/examFinishCue";
-
-// Deadline follows the saved exam even while another learning page is open.
+/*
+ * Sahibin kararı (21 Kasım 2026): resmî süre dolsa da deneme otomatik
+ * bitmez; yalnız öğrenci "Denemeyi bitir" dediğinde kaydedilir. Bileşen,
+ * uygulama ve rota içe aktarım düzeni bozulmasın diye yerinde kalır ama
+ * hiçbir şey yapmaz.
+ */
 export function ExamDeadlineWatcher() {
-  const { state, commit, status } = useApp();
-  const commitRef = useRef(commit);
-  commitRef.current = commit;
-  const settingsRef = useRef(state.settings);
-  settingsRef.current = state.settings;
-  const attempted = useRef("");
-  const storageFailed = useRef(false);
-  const [recovery, setRecovery] = useState(0);
-  useEffect(() => {
-    if (status === "error") storageFailed.current = true;
-    if (status === "saved" && storageFailed.current) {
-      storageFailed.current = false;
-      attempted.current = "";
-      setRecovery((value) => value + 1);
-    }
-  }, [status]);
-  const id = state.examDraft?.id,
-    deadline = state.examDraft?.deadline;
-  useEffect(() => {
-    if (!id || deadline === undefined) {
-      attempted.current = "";
-      return;
-    }
-    const check = () => {
-      const now = Date.now();
-      if (now < deadline || attempted.current === id) return;
-      attempted.current = id;
-      void commitRef
-        .current((s) => (s.examDraft?.id === id ? finishExam(s, id, now) : s))
-        .then(() => playExamFinishCue(id, settingsRef.current))
-        .catch(() => {});
-    };
-    check();
-    const timer = setInterval(check, 500);
-    window.addEventListener("focus", check);
-    document.addEventListener("visibilitychange", check);
-    return () => {
-      clearInterval(timer);
-      window.removeEventListener("focus", check);
-      document.removeEventListener("visibilitychange", check);
-    };
-  }, [id, deadline, recovery]);
   return null;
 }

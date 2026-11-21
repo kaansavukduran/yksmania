@@ -42,7 +42,7 @@ it("uses the normal time per question and labels incomplete exam distributions a
     }
   }
 });
-it("retains answer snapshots, flags and deadlines while enforcing the exact expiry boundary", () => {
+it("retains answer snapshots, flags and deadlines and keeps the exam open past the official time until the learner finishes", () => {
   const spec = examCatalogue().find((s) => s.id === "branch-tyt-turkce")!,
     start = 1000;
   let state = beginExam(initialState(), spec, start),
@@ -61,19 +61,22 @@ it("retains answer snapshots, flags and deadlines while enforcing the exact expi
     draft.deadline - 1,
   );
   expect(validateState(state)).toEqual(state);
-  expect(() =>
-    changeExam(
-      state,
-      draft.id,
-      { type: "answer", index: 1, value: 0 },
-      draft.deadline,
-    ),
-  ).toThrow("EXAM_EXPIRED");
+  // Resmî süre dolsa da yanıt değiştirilebilir; deneme kendiliğinden bitmez.
+  state = changeExam(
+    state,
+    draft.id,
+    { type: "answer", index: 1, value: 0 },
+    draft.deadline,
+  );
+  expect(state.examDraft!.answers[1]).toBe(0);
+  expect(state.examSessions).toEqual([]);
   expect(() =>
     changeExam(state, draft.id, { type: "index", index: 999 }, start + 1),
   ).toThrow();
   state = finishExam(state, draft.id, draft.deadline + 86400000);
-  expect(state.examSessions[0].finishedAt).toBe(draft.deadline);
+  // Bitiş anı resmî süreye kırpılmaz; timedOut "resmî süre aşıldı" demektir.
+  expect(state.examSessions[0].finishedAt).toBe(draft.deadline + 86400000);
+  expect(state.examSessions[0].answers[1]).toBe(0);
   expect(state.examDraft).toBeNull();
   expect(state.examSessions).toHaveLength(1);
   expect(state.examSessions[0].timedOut).toBe(true);

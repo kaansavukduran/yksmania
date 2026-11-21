@@ -215,21 +215,23 @@ it("records learning-mode help independently of the actual net and retains help 
   expect(validateState(state)).toEqual(state);
 });
 
-it("rejects invalid and expired help without changing history or granting learning evidence", () => {
+it("rejects invalid help without changing history, keeps help open after the official time and grants no learning evidence", () => {
   const state = paper("learning"),
     id = state.examDraft!.id;
   for (const level of [-1, 0, 0.5, 6, NaN, Infinity])
     expect(() =>
       changeExam(state, id, { type: "help", index: 0, level }, 1100),
     ).toThrow("EXAM_HELP_LEVEL");
-  expect(() =>
-    changeExam(
-      state,
-      id,
-      { type: "help", index: 0, level: 1 },
-      state.examDraft!.deadline,
-    ),
-  ).toThrow("EXAM_EXPIRED");
+  // Resmî süre dolduktan sonra da ipucu açılabilir (öğrenme öncelikli).
+  const late = changeExam(
+    state,
+    id,
+    { type: "help", index: 0, level: 1 },
+    state.examDraft!.deadline,
+  );
+  expect(late.examDraft!.helpLevels![0]).toBe(1);
+  expect(late.sessions).toEqual(state.sessions);
+  expect(late.topicProgress).toEqual(state.topicProgress);
   expect(state.examDraft!.helpLevels).toBeUndefined();
   const badLength = structuredClone(state);
   badLength.examDraft!.helpLevels = [1, 1];

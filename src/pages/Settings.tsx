@@ -369,6 +369,12 @@ export function Settings({
             checked={state.settings.motion}
             onChange={(v) => set("motion", v)}
           />
+          <Toggle
+            label="Zamanlayıcılar"
+            help="Kapalıyken kum saati, deneme geri sayımı, hız notları, süre nabzı ve soru süreleri gösterilmez. Denemeler her durumda sen bitirene kadar açık kalır."
+            checked={state.settings.timers !== false}
+            onChange={(v) => set("timers", v)}
+          />
         </section>
         <section className="panel settings-panel">
           <h2>{t("game")}</h2>

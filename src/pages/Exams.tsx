@@ -146,8 +146,9 @@ export function Exams({
             <h2>{state.examDraft.title}</h2>
             <p>
               {state.examDraft.answers.filter((v) => v !== null).length}/
-              {state.examDraft.items.length} soru yanıtlandı. Süre, bu ekrandan
-              ayrılsan da devam eder.
+              {state.examDraft.items.length} soru yanıtlandı.
+              {state.settings.timers !== false &&
+                " Süre, bu ekrandan ayrılsan da devam eder."}
             </p>
           </div>
           <button className="primary" onClick={() => setCatalog(false)}>
@@ -330,14 +331,19 @@ function ExamRunner({
   );
   const [busy, setBusy] = useState(false),
     [error, setError] = useState("");
-  const lock = useRef(false),
-    attemptedExpiry = useRef("");
+  const lock = useRef(false);
   const dialog = useRef<HTMLDialogElement>(null),
     finishTrigger = useRef<HTMLButtonElement>(null),
     cancel = useRef<HTMLButtonElement>(null);
+  // Zamanlayıcılar ayarla kapatılabilir (undefined = açık). Resmî süre dolsa
+  // da deneme açık kalır; süre yalnız bilgi olarak gösterilir.
+  const timersOn = state.settings.timers !== false;
   const remaining = Math.max(0, draft.deadline - now),
     expired = remaining <= 0;
-  const clockParts = formatCountdown(remaining).split(":");
+  const clockText = expired
+    ? `+${formatCountdown(Math.floor((now - draft.deadline) / 1000) * 1000)}`
+    : formatCountdown(remaining);
+  const clockParts = clockText.split(":");
   const answered = draft.answers.filter((value) => value !== null).length;
   const pace = examPace(
     { answered, total: draft.items.length, startedAt: draft.startedAt, deadline: draft.deadline },
@@ -410,20 +416,9 @@ function ExamRunner({
       setBusy(false);
     }
   }, [commit, draft.id, navigate]);
-  useEffect(() => {
-    if (expired && attemptedExpiry.current !== draft.id) {
-      attemptedExpiry.current = draft.id;
-      void finish();
-    }
-  }, [expired, draft.id, finish]);
   async function change(action: Parameters<typeof changeExam>[2]) {
     if (lock.current) return;
     const time = Date.now();
-    if (time >= draft.deadline) {
-      setNow(time);
-      void finish();
-      return;
-    }
     lock.current = true;
     setBusy(true);
     setError("");
@@ -464,7 +459,7 @@ function ExamRunner({
     <section className="exam-runner" aria-label="Devam eden sınav">
       <button className="text-button back-link" onClick={showCatalog}>
         <ArrowLeft size={17} />
-        Sınavlara dön · süre devam eder
+        {timersOn ? "Sınavlara dön · süre devam eder" : "Sınavlara dön"}
       </button>
       <header className="exam-runner-heading">
         <div>
@@ -478,38 +473,41 @@ function ExamRunner({
             soru işaretli
           </p>
         </div>
-        <div
-          className={`panel exam-time ${remaining <= 60000 ? "exam-time-low" : ""}`}
-        >
-          <Timer size={22} aria-hidden="true" />
-          <div>
-            <span>Kalan süre</span>
-            <output className="exam-clock" aria-live="off">
-              {clockParts.length === 3 ? (
-                <>
-                  {clockParts[0]}:<wbr />
-                  {clockParts.slice(1).join(":")}
-                </>
-              ) : (
-                formatCountdown(remaining)
-              )}
-            </output>
+        {timersOn && (
+          <div
+            className={`panel exam-time ${!expired && remaining <= 60000 ? "exam-time-low" : ""}`}
+          >
+            <Timer size={22} aria-hidden="true" />
+            <div>
+              <span>{expired ? "Ek süre" : "Kalan süre"}</span>
+              <output className="exam-clock" aria-live="off">
+                {clockParts.length === 3 ? (
+                  <>
+                    {clockParts[0]}:<wbr />
+                    {clockParts.slice(1).join(":")}
+                  </>
+                ) : (
+                  clockText
+                )}
+              </output>
+            </div>
           </div>
-        </div>
+        )}
       </header>
       <p className="small muted">
-        Süre duraklatılmaz; sayfadan ayrılsan veya uygulamayı kapatsan da son
-        zaman korunur. Süre bitince mevcut yanıtlarla sonuç kaydedilir.
+        {timersOn
+          ? "Süre duraklatılmaz; sayfadan ayrılsan veya uygulamayı kapatsan da son zaman korunur. Süre dolsa da deneme sen bitirene kadar açık kalır."
+          : "Deneme sen bitirene kadar açık kalır; istediğin kadar düşünebilirsin."}
       </p>
       <p className="small muted">
         Öğrenme denemesi · ipucu ve çözüm her soruda açık
       </p>
-      {pace && !expired && (
+      {timersOn && pace && !expired && (
         <p className="exam-pace" aria-live="off">
           {paceSummary(pace)}
         </p>
       )}
-      {showPaceNote && pace && !expired && (
+      {timersOn && showPaceNote && pace && !expired && (
         <div className="panel exam-pace-note" role="status">
           <p>
             <strong>Hız kontrolü.</strong> 30 dakika geçti: {answered}/
@@ -531,25 +529,7 @@ function ExamRunner({
       {error && (
         <div role="alert" className="panel exam-error">
           <p>{error}</p>
-          {expired && (
-            <button
-              className="secondary"
-              disabled={busy}
-              onClick={() => void finish()}
-            >
-              Sonucu kaydetmeyi yeniden dene
-            </button>
-          )}
         </div>
-      )}
-      {expired && (
-        <p role="status">
-          {busy
-            ? "Süre tamamlandı. Sonuç kaydediliyor."
-            : error
-              ? "Süre tamamlandı. Yanıtların korunuyor; sonucu kaydetmeyi yeniden dene."
-              : "Süre tamamlandı. Yanıtlar değiştirilemez."}
-        </p>
       )}
       <div className="exam-layout">
         <section
@@ -563,7 +543,7 @@ function ExamRunner({
             <span>{hidesSubject(draft.title) ? "Konu gizli (karma pratik)" : q.subjectName}</span>
             <StarBadge stars={questionStars(q.id)} />
           </div>
-          {pulse && !expired && (
+          {timersOn && pulse && !expired && (
             <div className={`exam-pulse${pulse.over ? " exam-pulse-over" : ""}`}>
               <p className="exam-pulse-line" aria-live="off">
                 <Hourglass size={16} aria-hidden="true" />
@@ -604,13 +584,13 @@ function ExamRunner({
               selected={draft.answers[draft.index] ?? null}
               checked={false}
               answer={-1}
-              busy={busy || expired}
+              busy={busy}
               label="Seçenekler"
               onSelect={(index) =>
                 void change({ type: "answer", index: draft.index, value: index })
               }
               onEnter={() => {
-                if (!busy && !expired && nextTarget !== null)
+                if (!busy && nextTarget !== null)
                   void change({ type: "index", index: nextTarget });
               }}
               onHint={() => {
@@ -624,7 +604,7 @@ function ExamRunner({
               key={q.id}
               question={q}
               level={visibleHelpLevel}
-              disabled={busy || expired}
+              disabled={busy}
               onLevel={(level) =>
                 void change({ type: "help", index: draft.index, level })
               }
@@ -633,7 +613,7 @@ function ExamRunner({
           <div className="exam-question-tools">
             <button
               className="text-button"
-              disabled={busy || expired || draft.answers[draft.index] === null}
+              disabled={busy || draft.answers[draft.index] === null}
               onClick={() =>
                 void change({ type: "answer", index: draft.index, value: null })
               }
@@ -642,7 +622,7 @@ function ExamRunner({
             </button>
             <button
               className="secondary"
-              disabled={busy || expired}
+              disabled={busy}
               aria-pressed={draft.flagged.includes(draft.index)}
               onClick={() => void change({ type: "flag", index: draft.index })}
             >
@@ -654,7 +634,7 @@ function ExamRunner({
             {draft.flagged.length > 0 && (
               <button
                 className="secondary"
-                disabled={busy || expired || flaggedTarget === null}
+                disabled={busy || flaggedTarget === null}
                 aria-label={
                   flaggedTarget === null
                     ? "Sıradaki işaretli soru yok"
@@ -679,12 +659,12 @@ function ExamRunner({
                   {roundPosition >= 0
                     ? `· listede ${roundPosition + 1}/${round.length}`
                     : "· bu soru 2. tur listesinde değil"}{" "}
-                  · işaretli {roundInfo.flagged} · boş {roundInfo.blank} · kalan süre{" "}
-                  {roundInfo.minutes} dk
+                  · işaretli {roundInfo.flagged} · boş {roundInfo.blank}
+                  {timersOn && !expired && ` · kalan süre ${roundInfo.minutes} dk`}
                 </p>
                 <button
                   className="secondary"
-                  disabled={busy || expired}
+                  disabled={busy}
                   onClick={endRound}
                 >
                   Tüm sorulara dön
@@ -693,12 +673,12 @@ function ExamRunner({
             ) : (
               <>
                 <p className="exam-round-summary">
-                  İşaretli {roundInfo.flagged} · boş {roundInfo.blank} · kalan süre{" "}
-                  {roundInfo.minutes} dk
+                  İşaretli {roundInfo.flagged} · boş {roundInfo.blank}
+                  {timersOn && !expired && ` · kalan süre ${roundInfo.minutes} dk`}
                 </p>
                 <button
                   className="secondary"
-                  disabled={busy || expired || roundCandidates.length === 0}
+                  disabled={busy || roundCandidates.length === 0}
                   aria-label={
                     roundCandidates.length
                       ? `2. tur: işaretli ve boş ${roundCandidates.length} soru arasında gez`
@@ -718,7 +698,7 @@ function ExamRunner({
           <div className="exam-question-navigation">
             <button
               className="secondary"
-              disabled={busy || expired || previousTarget === null}
+              disabled={busy || previousTarget === null}
               onClick={() => {
                 if (previousTarget !== null)
                   void change({ type: "index", index: previousTarget });
@@ -729,7 +709,7 @@ function ExamRunner({
             </button>
             <button
               className="secondary"
-              disabled={busy || expired || nextTarget === null}
+              disabled={busy || nextTarget === null}
               onClick={() => {
                 if (nextTarget !== null)
                   void change({ type: "index", index: nextTarget });
@@ -747,7 +727,7 @@ function ExamRunner({
           </p>
           <button
             className="primary exam-finish"
-            disabled={busy || expired}
+            disabled={busy}
             ref={finishTrigger}
             onClick={() => {
               dialog.current?.showModal();
@@ -763,7 +743,7 @@ function ExamRunner({
                 className={`exam-number ${draft.answers[index] !== null ? "answered" : ""}`}
                 aria-label={`Soru ${index + 1}, ${draft.answers[index] !== null ? "yanıtlandı" : "boş"}${draft.flagged.includes(index) ? ", işaretli" : ""}${(draft.helpLevels?.[index] ?? 0) > 0 ? ", yardım alındı" : ""}`}
                 aria-current={draft.index === index ? "step" : undefined}
-                disabled={busy || expired}
+                disabled={busy}
                 onClick={() => void change({ type: "index", index })}
               >
                 <span>{index + 1}</span>
@@ -833,6 +813,9 @@ function ExamResults({
   const score = examScore(session);
   const assistance = examAssistance(session);
   const slowest = slowestItems(session);
+  const { state } = useApp();
+  const timersOn = state.settings.timers !== false;
+  const overtimeMs = session.finishedAt - session.deadline;
   return (
     <section className="exam-results">
       <button
@@ -847,18 +830,25 @@ function ExamResults({
           <span className="eyebrow">Kaydedilmiş deneme sonucu</span>
           <h1>{session.title}</h1>
           <p>
-            {session.timedOut ? "Süre tamamlandı." : "Denemeyi bitirdin."}{" "}
-            {session.items.length} soru · kullanılan süre{" "}
-            {duration(
-              Math.min(
-                session.durationSeconds,
-                Math.max(
-                  0,
-                  Math.round((session.finishedAt - session.startedAt) / 1000),
+            Denemeyi bitirdin. {session.items.length} soru
+            {timersOn &&
+              ` · kullanılan süre ${duration(
+                Math.min(
+                  session.durationSeconds,
+                  Math.max(
+                    0,
+                    Math.round((session.finishedAt - session.startedAt) / 1000),
+                  ),
                 ),
-              ),
-            )}
+              )}`}
           </p>
+          {timersOn && session.timedOut && (
+            <p className="small muted exam-overtime">
+              {overtimeMs >= 60_000
+                ? `Resmî süreden ${Math.floor(overtimeMs / 60_000)} dk fazla çalıştın; öğrenme için sorun değil.`
+                : "Resmî süre doldu; öğrenme için sorun değil."}
+            </p>
+          )}
         </div>
         <Trophy size={32} aria-hidden="true" />
       </header>
@@ -919,7 +909,8 @@ function ExamResults({
           </table>
         </div>
       </section>
-      <section className="panel exam-slowest" aria-labelledby="exam-slowest-title">
+      {timersOn && (
+        <section className="panel exam-slowest" aria-labelledby="exam-slowest-title">
         <h2 id="exam-slowest-title">En çok zaman alan 5 soru</h2>
         {slowest === null ? (
           <p className="muted">
@@ -959,7 +950,8 @@ function ExamResults({
             </ol>
           </>
         )}
-      </section>
+        </section>
+      )}
       <ExamInsights session={session} />
       <section
         className="exam-solutions"

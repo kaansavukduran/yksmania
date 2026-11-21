@@ -448,3 +448,37 @@ test("reset confirmation keeps large-text copy and both actions inside the dialo
     expect(await stored(page)).toEqual(before);
   }
 });
+
+test("timers off in settings hide a running hourglass everywhere without changing its saved deadline; turning them on shows the same time", async ({
+  page,
+}) => {
+  await page.clock.install({ time: new Date("2026-11-14T12:00:00Z") });
+  await page.clock.pauseAt(new Date("2026-11-14T12:00:01Z"));
+  await page.goto("/");
+  await rational(page);
+  await page
+    .getByRole("button", { name: "Kum saatini ters çevir ve başlat", exact: true })
+    .click();
+  await expect(page.locator(".hourglass-state")).toHaveText("Kum akıyor");
+  await saved(page);
+  const timer = (await stored(page)).focusTimer;
+  await nav(page, "Ayarlar");
+  await page.getByRole("switch", { name: /Zamanlayıcılar/ }).uncheck();
+  await expect.poll(async () => (await stored(page)).settings.timers).toBe(false);
+  await rational(page);
+  await expect(page.locator(".study-timer")).toHaveCount(0);
+  await page.goto("/#/cheatsheets");
+  await expect(
+    page.getByRole("heading", { name: "Kopya Kağıtları", exact: true }),
+  ).toBeVisible();
+  await expect(page.locator(".study-timer")).toHaveCount(0);
+  await page.clock.fastForward(60000);
+  expect((await stored(page)).focusTimer).toEqual(timer);
+  await nav(page, "Ayarlar");
+  await page.getByRole("switch", { name: /Zamanlayıcılar/ }).check();
+  await expect.poll(async () => (await stored(page)).settings.timers).toBe(true);
+  await rational(page);
+  await expect(page.locator(".hourglass-time")).toHaveText("04:00");
+  expect((await stored(page)).focusTimer).toEqual(timer);
+  expect((await stored(page)).sessions).toEqual([]);
+});

@@ -41,6 +41,9 @@ export const settingsSchema = z.object({
   // Volume of the synthesised cues, 0–100. Older saves get the default.
   soundVolume: z.number().int().min(0).max(100).default(60),
   gamification: z.boolean(),
+  // Kum saati, deneme geri sayımı, hız ve süre notları. undefined = açık;
+  // eski kayıt ve yedekler bu alan olmadan aynen açılır.
+  timers: z.boolean().optional(),
   dailyMinutes: z.number().int().min(10).max(600),
   blockedWeekdays: z.array(z.number().int().min(0).max(6)).max(7),
   blockedDates: z.array(date).max(3650),

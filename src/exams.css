@@ -369,6 +369,12 @@
 }
 
 /* Deneme analizi: yorgunluk eğrisi ve +5 net pusulası. */
+.exam-insights {
+  margin-top: 1.5rem;
+  padding: max(var(--card-pad-y), min(3vw, 28px)) max(var(--card-pad-x), min(3vw, 28px));
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
 .exam-insights h2 {
   margin-top: 0;
 }

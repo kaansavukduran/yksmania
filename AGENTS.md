@@ -51,3 +51,5 @@ Study hourglass state is local and shared across theory, PDF and question routes
 Use an absolute deadline while running; never persist every display tick or award
 learning evidence for time. Reset progress only through explicit UI confirmation
 and one durable state commit; preserve settings, notes, documents and PDF pages.
+Timers can be switched off in Settings, and exams end only when the learner finishes
+them, even after the official time (owner decision, 21 November 2026).

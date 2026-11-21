@@ -95,7 +95,6 @@ export const examSessionSchema = z
     check(value, context);
     if (
       value.finishedAt < value.startedAt ||
-      value.finishedAt > value.deadline ||
       value.timedOut !== value.finishedAt >= value.deadline
     )
       context.addIssue({ code: "custom", message: "INVALID_EXAM_END" });

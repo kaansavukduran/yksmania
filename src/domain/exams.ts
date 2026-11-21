@@ -402,7 +402,7 @@ export function changeExam(
 ): AppState {
   const draft = state.examDraft;
   if (!draft || draft.id !== id) throw Error("EXAM_CHANGED");
-  if (now >= draft.deadline) throw Error("EXAM_EXPIRED");
+  // Resmî süre dolsa da deneme öğrenci bitirene kadar açık kalır.
   if (
     !Number.isInteger(action.index) ||
     action.index < 0 ||
@@ -487,7 +487,8 @@ export function finishExam(state: AppState, id: string, now: number): AppState {
   if (state.examSessions.some((s) => s.id === id)) return state;
   const draft = state.examDraft;
   if (!draft || draft.id !== id) throw Error("EXAM_CHANGED");
-  const finishedAt = Math.min(draft.deadline, Math.max(now, draft.startedAt));
+  // Bitiş anı resmî süreye kırpılmaz; deneme yalnız öğrenci bitirince biter.
+  const finishedAt = Math.max(now, draft.startedAt);
   // Açık sorunun süresi bitiş anına kadar eklenir; görüntüleme başlangıcı
   // yalnız taslakta anlamlıdır, oturuma taşınmaz.
   const timed =
@@ -498,7 +499,8 @@ export function finishExam(state: AppState, id: string, now: number): AppState {
   const session: ExamSession = {
     ...timed,
     finishedAt,
-    timedOut: now >= draft.deadline,
+    // "Resmî süre aşıldı" bilgisi; puanı, XP'yi ya da kupayı değiştirmez.
+    timedOut: finishedAt >= draft.deadline,
   };
   return {
     ...state,
