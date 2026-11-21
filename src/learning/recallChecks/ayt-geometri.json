@@ -1,0 +1,155 @@
+{
+ "donusum-oteleme-donme": [
+  {
+   "after": 1,
+   "prompt": "Öteleme ve dönme gibi katı hareketler hangi büyüklükleri korur?",
+   "answer": "İki nokta arasındaki uzaklığı, sıradan açı ölçülerini ve alanı korur; değişen yalnız konum ve yöndür."
+  },
+  {
+   "after": 2,
+   "prompt": "Görüntü P′(5; −1) ve öteleme vektörü (−2; 3) ise ilk nokta P nedir?",
+   "answer": "P=P′−v yazılır: (5−(−2); −1−3)=(7; −4) bulunur."
+  },
+  {
+   "after": 4,
+   "prompt": "2x−y−3=0 doğrusu (2; 1) vektörüyle ötelenince görüntü denklemi nedir?",
+   "answer": "x yerine x−2, y yerine y−1 konur; 2(x−2)−(y−1)−3=0, yani 2x−y−6=0 olur."
+  },
+  {
+   "after": 5,
+   "prompt": "f(x)=x²+1 grafiği 3 birim sağa ve 2 birim yukarı ötelenirse yeni kural nedir?",
+   "answer": "g(x)=f(x−3)+2 olduğundan g(x)=(x−3)²+3 bulunur."
+  },
+  {
+   "after": 8,
+   "prompt": "C(1; −1) merkezli pozitif 90° dönmede P(4; 3) noktasının görüntüsü nedir?",
+   "answer": "P−C=(3; 4) vektörü (−4; 3) olur; C geri eklenince P′(−3; 2) bulunur."
+  },
+  {
+   "after": 10,
+   "prompt": "P(1; 2) önce (3; −1) ötelenip sonra orijinde pozitif 90° döndürülürse görüntü nedir?",
+   "answer": "Ara nokta (4; 1), sonuç (−1; 4) olur; sıra ters çevrilirse (1; 0) çıkar."
+  }
+ ],
+ "donusum-yansima-simetri": [
+  {
+   "after": 1,
+   "prompt": "P(−2; 5) noktasının x eksenine ve y eksenine göre görüntüleri nedir?",
+   "answer": "x eksenine göre (−2; −5), y eksenine göre (2; 5) olur; aynaya dik bileşenin işareti değişir."
+  },
+  {
+   "after": 3,
+   "prompt": "P(−2; 5) noktasının y=x doğrusuna göre görüntüsü nedir?",
+   "answer": "Koordinatlar yer değiştirir ve görüntü (5; −2) olur."
+  },
+  {
+   "after": 5,
+   "prompt": "P(3; 4) noktasının 3x+4y−5=0 doğrusuna göre görüntüsü nedir?",
+   "answer": "t=20/25=4/5 ile H=(3/5; 4/5) bulunur; P′=2H−P=(−9/5; −12/5) olur."
+  },
+  {
+   "after": 7,
+   "prompt": "Simetri merkezi C, d doğrusunun üzerindeyse d’nin C’ye göre görüntüsü nedir?",
+   "answer": "Görüntü d’nin kendisidir; ayrı bir paralel doğru oluşmaz."
+  },
+  {
+   "after": 9,
+   "prompt": "x=0 ve x=2 aynaları sırayla uygulanırsa bileşke hangi dönüşümdür?",
+   "answer": "x→−x→4+x olduğundan (4; 0) ötelemesidir; büyüklük aynalar arası uzaklığın iki katıdır."
+  },
+  {
+   "after": 10,
+   "prompt": "x ekseni aynasından sonra y=x aynası uygulanırsa bileşke hangi dönüşümdür?",
+   "answer": "(x; y)→(x; −y)→(−y; x) olur; bu orijin çevresinde pozitif 90° dönmedir."
+  }
+ ],
+ "cemberin-analitigi": [
+  {
+   "after": 1,
+   "prompt": "Merkezi x ekseni üzerinde olan pozitif yarıçaplı bir çember x eksenini kaç noktada keser?",
+   "answer": "İki noktada keser; merkezin eksende olması o eksene teğet olmak demek değildir."
+  },
+  {
+   "after": 2,
+   "prompt": "M(2; −1) merkezli ve P(5; 3) noktasından geçen çemberin denklemi nedir?",
+   "answer": "Fark (3; 4) olduğundan r=5 bulunur; denklem (x−2)²+(y+1)²=25 olur."
+  },
+  {
+   "after": 3,
+   "prompt": "x²+y²−6x+4y−12=0 çemberinin merkezi ve yarıçapı nedir?",
+   "answer": "Tam kareye tamamlanınca (x−3)²+(y+2)²=25 olur; merkez (3; −2), yarıçap 5’tir."
+  },
+  {
+   "after": 5,
+   "prompt": "Ax²+By²+Cxy+Dx+Ey+F=0 denkleminin çember olabilmesi için ikinci derece katsayılar ne sağlamalıdır?",
+   "answer": "A=B≠0 ve çapraz katsayı C=0 olmalıdır; ardından r²’nin pozitifliği ayrıca denetlenir."
+  },
+  {
+   "after": 9,
+   "prompt": "M(2; 1) merkezli ve yarıçapı 5 olan çember x=5 doğrusunu hangi noktalarda keser?",
+   "answer": "δ=3 ve yarım kiriş √(25−9)=4 olur; kesimler (5; 5) ve (5; −3)’tür."
+  },
+  {
+   "after": 11,
+   "prompt": "x²+y²=r² çemberinin üzerindeki P(x₀; y₀) noktasındaki teğet denklemi nedir?",
+   "answer": "Teğet yarıçapa dik olduğundan denklem x₀x+y₀y=r² olur."
+  },
+  {
+   "after": 12,
+   "prompt": "Merkezler arası uzaklık iki yarıçapın toplamına eşitse iki çemberin durumu nedir?",
+   "answer": "d=r+s olduğunda çemberler dıştan teğettir ve tek ortak noktaları vardır."
+  }
+ ],
+ "dogrunun-analitigi": [
+  {
+   "after": 1,
+   "prompt": "Eğim hesaplarken yalnız paydaki farkın sırasını ters çevirmek neye yol açar?",
+   "answer": "Yanlış bir eksi işareti üretir; iki fark birlikte ters sırada alınırsa eğim değişmez."
+  },
+  {
+   "after": 2,
+   "prompt": "Eğim açısı 135° olan doğrunun eğimi kaçtır?",
+   "answer": "m=tan135°=−1 olur; ikinci bölgedeki açı negatif eğim verir."
+  },
+  {
+   "after": 5,
+   "prompt": "a=b=0 ve c≠0 iken ax+by+c=0 denkleminin çözüm kümesi nedir?",
+   "answer": "Yanlış bir sabit eşitlik kalır; çözüm kümesi boştur ve bir doğru çizilmez."
+  },
+  {
+   "after": 7,
+   "prompt": "Orijinden geçen bütün doğrular neden y=mx biçiminde yazılamaz?",
+   "answer": "Orijinden geçen düşey x=0 doğrusunun sonlu eğimi yoktur; bu biçime sığmaz."
+  },
+  {
+   "after": 8,
+   "prompt": "y=2x doğrusunu çizmek için eksen kesimleri neden yetmez?",
+   "answer": "İki eksen kesimi de aynı O noktasıdır; (1; 2) gibi ikinci bir nokta seçmek gerekir."
+  },
+  {
+   "after": 10,
+   "prompt": "y=x ile 2y=2x doğrularının birbirine göre durumu nedir?",
+   "answer": "İkisi aynı nokta kümesidir, yani çakışıktır; sonsuz ortak noktaları vardır."
+  },
+  {
+   "after": 12,
+   "prompt": "Eğimleri −2/3 ve 3/2 olan iki doğrunun birbirine göre durumu nedir?",
+   "answer": "Eğimlerin çarpımı −1 olduğundan doğrular birbirine diktir."
+  },
+  {
+   "after": 14,
+   "prompt": "Eğik bir doğruya uzaklık neden aynı apsisteki düşey farkla bulunmaz?",
+   "answer": "Düşey yol doğruya dik olmayabilir ve daha uzundur; uzaklık dik yol boyunca ölçülür."
+  },
+  {
+   "after": 17,
+   "prompt": "Eksenleri U(u; 0) ve V(0; v) noktalarında kesen doğrunun eksenlerle oluşturduğu üçgenin alanı nedir?",
+   "answer": "u ve v sıfır değilken alan |uv|/2 olur; mutlak değer alanı pozitif tutar."
+  },
+  {
+   "after": 18,
+   "prompt": "2x+(k−1)y−4=0 denkleminde k=1 için hangi doğru elde edilir?",
+   "answer": "y terimi yok olur ve x=2 düşey doğrusu kalır; k−1’e bölmek bu durumu kaybettirir."
+  }
+ ]
+}

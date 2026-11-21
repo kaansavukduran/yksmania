@@ -1,0 +1,606 @@
+[
+ {
+  "from": "a=2 yerel temasını korurken x=−4 noktasında başka bir kesişim vardır. Kübik keşfinde bu ek nokta ayrı etiketlenir; görünür pencerenin dışındaysa HTML koordinatı yine verilir. Kökün katlılığı yerel temas yapısını açıklar; çizginin global olarak yalnız değdiği iddiası kurulmaz.",
+  "to": "a=2 yerel temasını korurken x=−4 noktasında başka bir kesişim vardır. Kübik keşfinde bu ek nokta ayrı etiketlenir; görünür pencerenin dışındaysa koordinatı yine verilir. Kökün katlılığı yerel temas yapısını açıklar; çizginin global olarak yalnız değdiği iddiası kurulmaz."
+ },
+ {
+  "from": "Çift kökün gerçek tanım koşulu, negatif kuvvetin sıfır yasağı ve kesirli üssün gerçek yorumu birlikte korunur. Kaynak ifadenin tanımsız olduğu noktaya sade biçimden yeni değer eklenmez. Ters türevi bir açık aralıkta konuşmak, formülün hangi girdiler için kullanılacağını açık tutar.",
+  "to": "Çift kökün gerçek tanım koşulu, negatif kuvvetin sıfır yasağı ve kesirli üssün gerçek yorumu birlikte korunur. İlk ifadenin tanımsız olduğu noktaya sade biçimden yeni değer eklenmez. Ters türevi bir açık aralıkta konuşmak, formülün hangi girdiler için kullanılacağını açık tutar."
+ },
+ {
+  "from": "Bir başlangıç noktası seçildiğinde gerekli K ayrıca hesaplanır. Serbest K ile koşulu sağlayan K birbirine karıştırılmaz. Grafikler sayısal sonuçla birlikte okunur; gözle benzer görünmeleri fonksiyonların aynı olduğunu kanıtlamaz. Keşif kaydı bağımsız soru çözümünün yerini tutmaz.",
+  "to": "Bir başlangıç noktası seçildiğinde gerekli K ayrıca hesaplanır. Serbest K ile koşulu sağlayan K birbirine karıştırılmaz. Grafikler sayısal sonuçla birlikte okunur; gözle benzer görünmeleri fonksiyonların aynı olduğunu kanıtlamaz."
+ },
+ {
+  "from": "Birden fazla kapalı bölge varsa hepsinin mi seçilen birinin mi istendiği belirtilmelidir. Bağımsız soru kartlarında gerekli eğriler, sınırlar ve seçilen bölge açıkça verilir. Şekil destekleyicidir; sorunun çözümü önceki sayfanın grafiğine veya keşfin son seçimine bağlı değildir.",
+  "to": "Birden fazla kapalı bölge varsa hepsinin mi seçilen birinin mi istendiği belirtilmelidir."
+ },
+ {
+  "from": "Sonuç negatif çıktıysa toplamın işaretli integral mi yoksa alan mı olduğunu yeniden kontrol et. Çok küçük yuvarlama farklarıyla sıfır çevresinde gezinmek de modelin gösterim sınırıdır. Matematiksel işaret ve aralık koşulları, yuvarlanmış etiketten önce gelir; keşif tamamlandı diye öğrenme kaydı verilmez.",
+  "to": "Sonuç negatif çıktıysa toplamın işaretli integral mi yoksa alan mı olduğunu yeniden kontrol et. Çok küçük yuvarlama farklarıyla sıfır çevresinde gezinmek de modelin gösterim sınırıdır. Matematiksel işaret ve aralık koşulları, yuvarlanmış etiketten önce gelir."
+ },
+ {
+  "from": "Rasyonel kuvvet panelinde negatif girdiyi, tek-çift kökü ve sıfırı karşılaştır. İç nokta, sınır noktası ve gerçek tanım dışı durumları aynı sonuç etiketiyle örtülmez. Bu keşif çözümü açar; bağımsız soru başarısı veya ustalık kaydı üretmez. Ardından kendi sorusuna geçip yardımsız aktarımı dene.",
+  "to": "Rasyonel kuvvet panelinde negatif girdiyi, tek-çift kökü ve sıfırı karşılaştır. İç nokta, sınır noktası ve gerçek tanım dışı durumları aynı sonuç etiketiyle örtülmez. Bu keşif çözümü açar. Ardından kendi sorusuna geçip yardımsız aktarımı dene."
+ },
+ {
+  "from": "Bu üniteye başlamadan yönlü açı, birim çember ve sin²x+cos²x=1 bağıntısını kullanabilmelisin. sin(a+b), toplam açının tek sinüs değeridir; sin a+sin b ise iki farklı noktanın ordinatları toplamıdır. Örneğin a=b=30° için birincisi√3/2, ikincisi 1 olur.",
+  "to": "Bu üniteye başlamadan yönlü açı, birim çember ve sin²x+cos²x=1 bağıntısını kullanabilmelisin. sin(a+b), toplam açının tek sinüs değeridir; sin a+sin b ise iki farklı noktanın ordinatları toplamıdır. Örneğin a=b=30° için birincisi √3/2, ikincisi 1 olur."
+ },
+ {
+  "from": "Birim çemberde a açısının noktası(cos a, sin a) olsun. Düzlem b kadar döndüğünde yeni yatay koordinat cos a cos b−sin a sin b, yeni düşey koordinat sin a cos b+cos a sin b olur. Bir noktanın yalnız ordinatını döndürmüş gibi düşünmek yeterli değildir.",
+  "to": "Birim çemberde a açısının noktası (cos a, sin a) olsun. Düzlem b kadar döndüğünde yeni yatay koordinat cos a cos b−sin a sin b, yeni düşey koordinat sin a cos b+cos a sin b olur. Bir noktanın yalnız ordinatını döndürmüş gibi düşünmek yeterli değildir."
+ },
+ {
+  "from": "sin(a+b)=sin a cos b+cos a sin b eşitliğinde b yerine−b yaz. Sinüs tek, kosinüs çift olduğundan sin(a−b)=sin a cos b−cos a sin b çıkar. İki terimin de içinde bir sinüs ve bir kosinüs bulunur; açıların yerleri birbirini tamamlar.",
+  "to": "sin(a+b)=sin a cos b+cos a sin b eşitliğinde b yerine −b yaz. Sinüs tek, kosinüs çift olduğundan sin(a−b)=sin a cos b−cos a sin b çıkar. İki terimin de içinde bir sinüs ve bir kosinüs bulunur; açıların yerleri birbirini tamamlar."
+ },
+ {
+  "from": "75°=45°+30°,15°=45°−30° gibi yazımlar tam köklü değer üretir. sin75°=(√2/2)(√3/2)+(√2/2)(1/2)=(√6+√2)/4. Önce dört temel değeri yazıp sonra ortak paydayı toplamak karışıklığı azaltır.",
+  "to": "75°=45°+30°, 15°=45°−30° gibi yazımlar tam köklü değer üretir. sin75°=(√2/2)(√3/2)+(√2/2)(1/2)=(√6+√2)/4. Önce dört temel değeri yazıp sonra ortak paydayı toplamak karışıklığı azaltır."
+ },
+ {
+  "from": "Kotanjant toplamı(cot a cot b−1)/(cot a+cot b), farkı(cot a cot b+1)/(cot b−cot a) olur. İkinci paydanın sırası önemlidir: fark açısı a−b iken cot b−cot a yazılır. Gerekirse payı cos(a−b), paydayı sin(a−b) açarak yeniden türet.",
+  "to": "Kotanjant toplamı (cot a cot b−1)/(cot a+cot b), farkı (cot a cot b+1)/(cot b−cot a) olur. İkinci paydanın sırası önemlidir: fark açısı a−b iken cot b−cot a yazılır. Gerekirse payı cos(a−b), paydayı sin(a−b) açarak yeniden türet."
+ },
+ {
+  "from": "(sin a+cos a)²=1+sin2a ve(sin a−cos a)²=1−sin2a eşitlikleri, iki kare toplamının 1 olmasından gelir. sin a+cos a verilmişse hemen tek tek oranları çözmek yerine karesini alıp iki kat açıyı bulabilirsin.",
+  "to": "(sin a+cos a)²=1+sin2a ve (sin a−cos a)²=1−sin2a eşitlikleri, iki kare toplamının 1 olmasından gelir. sin a+cos a verilmişse hemen tek tek oranları çözmek yerine karesini alıp iki kat açıyı bulabilirsin."
+ },
+ {
+  "from": "Sin a=2 sin(a/2)cos(a/2),1+cos a=2 cos²(a/2) olduğundan tan(a/2)=sin a/(1+cos a) uygun tanım koşullarında bulunur.1−cos a biçimini kullanırsan(1−cos a)/sin a elde edilir. İkinci biçimin sin a≠0 şartı ayrıca vardır.",
+  "to": "Sin a=2 sin(a/2)cos(a/2), 1+cos a=2 cos²(a/2) olduğundan tan(a/2)=sin a/(1+cos a) uygun tanım koşullarında bulunur. 1−cos a biçimini kullanırsan (1−cos a)/sin a elde edilir. İkinci biçimin sin a≠0 şartı ayrıca vardır."
+ },
+ {
+  "from": "Toplam ve fark sinüs bağıntılarını topla:2 sin a cos b=sin(a+b)+sin(a−b). Kosinüs bağıntılarını toplayınca 2 cos a cos b=cos(a+b)+cos(a−b), çıkarınca 2 sin a sin b=cos(a−b)−cos(a+b) bulunur.",
+  "to": "Toplam ve fark sinüs bağıntılarını topla: 2 sin a cos b=sin(a+b)+sin(a−b). Kosinüs bağıntılarını toplayınca 2 cos a cos b=cos(a+b)+cos(a−b), çıkarınca 2 sin a sin b=cos(a−b)−cos(a+b) bulunur."
+ },
+ {
+  "from": "A=(u+v)/2 ve B=(u−v)/2 yazarsan u=A+B, v=A−B olur. Böylece sin u+sin v=2 sin A cos B ve sin u−sin v=2 cos A sin B çıkar. Kosinüs toplamında 2 cos A cos B, farkında−2 sin A sin B bulunur.",
+  "to": "A=(u+v)/2 ve B=(u−v)/2 yazarsan u=A+B, v=A−B olur. Böylece sin u+sin v=2 sin A cos B ve sin u−sin v=2 cos A sin B çıkar. Kosinüs toplamında 2 cos A cos B, farkında −2 sin A sin B bulunur."
+ },
+ {
+  "from": "Denklem yalnız bazı x değerlerinde doğru olan eşitliktir; özdeşlik ise tanım alanındaki her x için doğrudur. sin x=1/2’nin 30° ile sağlanması işi bitirmez:150° de aynı ordinatı verir ve tam turlar yeni kökler üretir. Önce hangi aralıkta veya hangi sayı kümesinde çözüm istendiğini oku.",
+  "to": "Denklem yalnız bazı x değerlerinde doğru olan eşitliktir; özdeşlik ise tanım alanındaki her x için doğrudur. sin x=1/2’nin 30° ile sağlanması işi bitirmez: 150° de aynı ordinatı verir ve tam turlar yeni kökler üretir. Önce hangi aralıkta veya hangi sayı kümesinde çözüm istendiğini oku."
+ },
+ {
+  "from": "Sinüs ve kosinüs için sağ tarafın−1 ile 1 arasında olması gerekir; sin x=2 gerçek çözüm üretmez. Tanjantta x=π/2+kπ, kotanjantta x=kπ yasaktır. Denklemde kesir varsa trigonometrik fonksiyonun kendi yasağına ek olarak kesrin paydasını da denetle.",
+  "to": "Sinüs ve kosinüs için sağ tarafın −1 ile 1 arasında olması gerekir; sin x=2 gerçek çözüm üretmez. Tanjantta x=π/2+kπ, kotanjantta x=kπ yasaktır. Denklemde kesir varsa trigonometrik fonksiyonun kendi yasağına ek olarak kesrin paydasını da denetle."
+ },
+ {
+  "from": "Sin x=1/2 için π/6 ve5π/6 temel kökleri bulunur. Sağ taraf±1 ise iki aile aynı noktalara denk gelir ve tekrarlar temizlenir. Sin x=0 için 0 veπ aileleri birleştirilerek x=kπ yazılabilir; yalnız x=0 demek eksik kalır.",
+  "to": "Sin x=1/2 için π/6 ve 5π/6 temel kökleri bulunur. Sağ taraf ±1 ise iki aile aynı noktalara denk gelir ve tekrarlar temizlenir. Sin x=0 için 0 ve π aileleri birleştirilerek x=kπ yazılabilir; yalnız x=0 demek eksik kalır."
+ },
+ {
+  "from": "Tan x=−1 için −π/4+kπ kullanılabilir; [0,2π) içindeki kökler 3π/4 ve7π/4’tür. Cot x=0 kökleri π/2+kπ’dir; cot x=0 denkleminden tan x=1/0 yazmak geçerli değildir. Sıfır oranı, karşıt oranın tanımsız olabileceğini hatırlatır.",
+  "to": "Tan x=−1 için −π/4+kπ kullanılabilir; [0,2π) içindeki kökler 3π/4 ve 7π/4’tür. Cot x=0 kökleri π/2+kπ’dir; cot x=0 denkleminden tan x=1/0 yazmak geçerli değildir. Sıfır oranı, karşıt oranın tanımsız olabileceğini hatırlatır."
+ },
+ {
+  "from": "Sin(2x−π/6)=1/2 denkleminde θ yerine 2x−π/6’yı yaz. İki aile 2x−π/6=π/6+2kπ ve2x−π/6=5π/6+2kπ olur. Her iki ailede de önce sabit açı taşınır, sonra katsayıya bölünür.",
+  "to": "Sin(2x−π/6)=1/2 denkleminde θ yerine 2x−π/6’yı yaz. İki aile 2x−π/6=π/6+2kπ ve 2x−π/6=5π/6+2kπ olur. Her iki ailede de önce sabit açı taşınır, sonra katsayıya bölünür."
+ },
+ {
+  "from": "Sin2x=sin x denkleminde iki kat açıyı aç:sin x(2 cos x−1)=0. Buradan sin x=0 veya cos x=1/2 dalları çıkar. Sin x’e bölmek ilk dalı kaybettirir; sıfır çarpım kuralı iki dalı birlikte saklar.",
+  "to": "Sin2x=sin x denkleminde iki kat açıyı aç: sin x(2 cos x−1)=0. Buradan sin x=0 veya cos x=1/2 dalları çıkar. Sin x’e bölmek ilk dalı kaybettirir; sıfır çarpım kuralı iki dalı birlikte saklar."
+ },
+ {
+  "from": "[0,2π) içinde ilk dal 0,π; ikinci dalπ/3,5π/3 verir. Toplam dört farklı kök vardır. Bir dalın diğerini sağlaması gerekmez; çarpımın sıfır olması için herhangi bir çarpanın sıfır olması yeterlidir. Bu nedenle iki çözüm kümesi birleştirilir.",
+  "to": "[0,2π) içinde ilk dal 0, π; ikinci dal π/3, 5π/3 verir. Toplam dört farklı kök vardır. Bir dalın diğerini sağlaması gerekmez; çarpımın sıfır olması için herhangi bir çarpanın sıfır olması yeterlidir. Bu nedenle iki çözüm kümesi birleştirilir."
+ },
+ {
+  "from": "2 sin²x−3 sin x+1=0 için t=sin x yazınca 2t²−3t+1=0 elde edilir. Çarpanlar(2t−1)(t−1) olduğundan t=1/2 veya 1 çıkar. Bunlar birer x değeri değil sinüs değeridir; her biri için ayrı trigonometrik denklem çözülür.",
+  "to": "2 sin²x−3 sin x+1=0 için t=sin x yazınca 2t²−3t+1=0 elde edilir. Çarpanlar (2t−1)(t−1) olduğundan t=1/2 veya 1 çıkar. Bunlar birer x değeri değil sinüs değeridir; her biri için ayrı trigonometrik denklem çözülür."
+ },
+ {
+  "from": "T=sin x dönüşümünde−1≤t≤1 koşulunu tut. Örneğin(t−2)(t+1)=0 çözülünce t=2 cebirsel kökü gerçek x üretmez. Aynı süreç kosinüste de geçerlidir; tanjantta sağ tarafın değer aralığı bütün gerçeklerdir ama yasak açılar sürer.",
+  "to": "t=sin x dönüşümünde −1≤t≤1 koşulunu tut. Örneğin (t−2)(t+1)=0 çözülünce t=2 cebirsel kökü gerçek x üretmez. Aynı süreç kosinüste de geçerlidir; tanjantta sağ tarafın değer aralığı bütün gerçeklerdir ama yasak açılar sürer."
+ },
+ {
+  "from": "Sin x+cos x=1 denkleminin karesini almak 1+sin2x=1, yani sin2x=0 verir. Bu yeni denklemin bütün kökleri asıl denklemi sağlamaz; örneğin x=π için toplam−1’dir. Kare alma iki farklı işareti aynı karede birleştirir.",
+  "to": "Sin x+cos x=1 denkleminin karesini almak 1+sin2x=1, yani sin2x=0 verir. Bu yeni denklemin bütün kökleri asıl denklemi sağlamaz; örneğin x=π için toplam −1’dir. Kare alma iki farklı işareti aynı karede birleştirir."
+ },
+ {
+  "from": "a sin x+b cos x için R=√(a²+b²) al. R>0 ise cosφ=a/R ve sinφ=b/R seçilerek ifade Rsin(x+φ) yazılır. Böylece denklem sin(x+φ)=c/R olur; çözümün varlığı|c|≤R koşuluyla görülür.",
+  "to": "a sin x+b cos x için R=√(a²+b²) al. R>0 ise cosφ=a/R ve sinφ=b/R seçilerek ifade Rsin(x+φ) yazılır. Böylece denklem sin(x+φ)=c/R olur; çözümün varlığı |c|≤R koşuluyla görülür."
+ },
+ {
+  "from": "Sinüs grafiğinde bir yatay çizgi iki farklı noktada kesişebilir; teğet seviyede bu iki kesişim birleşir. Rsin(kx+φ)=c denkleminde|c|>R ise hiç kesişim yok,|c|=R ise her tam periyotta bir,|c|<R ise genellikle iki kesişim vardır.",
+  "to": "Sinüs grafiğinde bir yatay çizgi iki farklı noktada kesişebilir; teğet seviyede bu iki kesişim birleşir. Rsin(kx+φ)=c denkleminde |c|>R ise hiç kesişim yok, |c|=R ise her tam periyotta bir, |c|<R ise genellikle iki kesişim vardır."
+ },
+ {
+  "from": "Önce bütün fonksiyonların tanımını, sonra bütün cebirsel dalları, sonra aralığı ve en son başlangıç eşitliğini kontrol et. Bu dört kontrol farklı kusurları yakalar:yasak noktalar, bölmeyle kaybolan sıfırlar, açık uçlar ve kare almanın ürettiği sahte kökler.",
+  "to": "Önce bütün fonksiyonların tanımını, sonra bütün cebirsel dalları, sonra aralığı ve en son başlangıç eşitliğini kontrol et. Bu dört kontrol farklı kusurları yakalar: yasak noktalar, bölmeyle kaybolan sıfırlar, açık uçlar ve kare almanın ürettiği sahte kökler."
+ },
+ {
+  "from": "x=π/6+kπ ailesini 0≤x<2π aralığına koyarsan−1/6≤k<11/6 bulunur; tam sayı k=0,1 seçilir. Aralıkta kaç tur var diye tahmin etmek yerine bu eşitsizlik özellikle kaydırılmış veya negatif aralıklarda güvenilir sonuç verir.",
+  "to": "x=π/6+kπ ailesini 0≤x<2π aralığına koyarsan −1/6≤k<11/6 bulunur; tam sayı k=0,1 seçilir. Aralıkta kaç tur var diye tahmin etmek yerine bu eşitsizlik özellikle kaydırılmış veya negatif aralıklarda güvenilir sonuç verir."
+ },
+ {
+  "from": "Yaklaşık grafik kökleri yolu anlamak için faydalıdır; tam cevap istendiğindeπ’li veya özel açılı değerler tercih edilir. Bir kökü sayısal olarak denemek bütün çözümün bulunduğunu kanıtlamaz; bütünlük, trigonometrik çözüm ailelerinin doğru kurulmasından gelir.",
+  "to": "Yaklaşık grafik kökleri yolu anlamak için faydalıdır; tam cevap istendiğinde π’li veya özel açılı değerler tercih edilir. Bir kökü sayısal olarak denemek bütün çözümün bulunduğunu kanıtlamaz; bütünlük, trigonometrik çözüm ailelerinin doğru kurulmasından gelir."
+ },
+ {
+  "from": "R=0 ise a=b=0’dır; denklem 0=c biçiminde ayrıca çözülür. C=0 için her x, diğer c’lerde hiçbir x çözüm değildir. Tek bir katsayıya bölmek yerine R yöntemi kullanmak, a veya b sıfırken de geçerli bir yol verir. Etkileşim bu özel durumları ayrı gösterir.",
+  "to": "R=0 ise a=b=0’dır; denklem 0=c biçiminde ayrıca çözülür. c=0 için her x, diğer c’lerde hiçbir x çözüm değildir. Tek bir katsayıya bölmek yerine R yöntemi kullanmak, a veya b sıfırken de geçerli bir yol verir. Etkileşim bu özel durumları ayrı gösterir."
+ },
+ {
+  "from": "Koşulları bulduktan sonra kesişim al. Log₂(x−3)+log₂(7−x) için x>3 ve x<7, yani 3<x<7 olur. Toplamı tek logaritmaya çevirip yalnız(x−3)(7−x)>0 yazmak bu örnekte aynı aralığı verse de her dönüşümde aynı sonucu vermeyebilir; başlangıç koşullarını sakla.",
+  "to": "Koşulları bulduktan sonra kesişim al. Log₂(x−3)+log₂(7−x) için x>3 ve x<7, yani 3<x<7 olur. Toplamı tek logaritmaya çevirip yalnız (x−3)(7−x)>0 yazmak bu örnekte aynı aralığı verse de her dönüşümde aynı sonucu vermeyebilir; başlangıç koşullarını sakla."
+ },
+ {
+  "from": "f(x)=a^x için(x, y) noktasını y=x doğrusuna göre yansıtınca(y, x) noktası logaritma grafiğine gider. Üstel fonksiyonun tanım kümesiℝ, görüntüsü(0,∞); tersinde bu iki küme yer değiştirir. Log_a1=0 ve log_a a=1 sabit dayanak noktalarıdır.",
+  "to": "f(x)=a^x için (x, y) noktasını y=x doğrusuna göre yansıtınca (y, x) noktası logaritma grafiğine gider. Üstel fonksiyonun tanım kümesi ℝ, görüntüsü (0,∞); tersinde bu iki küme yer değiştirir. Log_a1=0 ve log_a a=1 sabit dayanak noktalarıdır."
+ },
+ {
+  "from": "a>1 iken logaritma artan,0<a<1 iken azalandır. Her iki durumda x=0 düşey yaklaşım sınırıdır ve logaritma 0’da tanımlı değildir. Etkileşimde tabanı değiştirip aynı x’in yüksekliğini ve ters üstel kontrolü izle; grafiğin y eksenini kestiğini varsayma.",
+  "to": "a>1 iken logaritma artan, 0<a<1 iken azalandır. Her iki durumda x=0 düşey yaklaşım sınırıdır ve logaritma 0’da tanımlı değildir. Etkileşimde tabanı değiştirip aynı x’in yüksekliğini ve ters üstel kontrolü izle; grafiğin y eksenini kestiğini varsayma."
+ },
+ {
+  "from": "Tabanı 10 olan log₁₀x çoğunlukla log x diye yazılır; bu kitap düzeyinde tabansız log gösterimini onluk kabul ederiz. ln x ise tabanı e olan doğal logaritmadır. e≈2,71828… sabit bir irrasyonel sayıdır; bir dizinin veya yuvarlanmış 2,7 sayısının kendisi değildir.",
+  "to": "Tabanı 10 olan log₁₀x çoğunlukla log x diye yazılır; burada tabansız log gösterimini onluk kabul ederiz. ln x ise tabanı e olan doğal logaritmadır. e≈2,71828… sabit bir irrasyonel sayıdır; bir dizinin veya yuvarlanmış 2,7 sayısının kendisi değildir."
+ },
+ {
+  "from": "Log1=ln1=0, log10=1, ln e=1 olur. e^y=x ileln x=y aynı ilişkiyi ters yönden anlatır. Hesap makinesindeki log ve ln tuşlarının farklı tabanı olması, taban değiştirme oranında aynı tuşu hem pay hem paydada kullanman gerektiğini açıklar.",
+  "to": "Log1=ln1=0, log10=1, ln e=1 olur. e^y=x ile ln x=y aynı ilişkiyi ters yönden anlatır. Hesap makinesindeki log ve ln tuşlarının farklı tabanı olması, taban değiştirme oranında aynı tuşu hem pay hem paydada kullanman gerektiğini açıklar."
+ },
+ {
+  "from": "Log₂(8·4)=log₂8+log₂4=3+2=5. Buna karşılıklog₂(8+4)=log₂12,5’e eşit değildir. İki ifadede çarpım mı toplam mı bulunduğunu ilk satırda ayır. u ve v’nin pozitif olması, ayrı logaritmaların da tanımlı kalmasını sağlar.",
+  "to": "Log₂(8·4)=log₂8+log₂4=3+2=5. Buna karşılık log₂(8+4)=log₂12, 5’e eşit değildir. İki ifadede çarpım mı toplam mı bulunduğunu ilk satırda ayır. u ve v’nin pozitif olması, ayrı logaritmaların da tanımlı kalmasını sağlar."
+ },
+ {
+  "from": "Log_a b=p demek b=a^p demektir. Her iki tarafın c tabanında logaritmasını alırsanlog_c b=p log_c a çıkar. a, c>0, a≠1, c≠1, b>0 koşulundalog_a b=log_c b/log_c a olur; payda sıfır değildir.",
+  "to": "Log_a b=p demek b=a^p demektir. Her iki tarafın c tabanında logaritmasını alırsan log_c b=p log_c a çıkar. a, c>0, a≠1, c≠1, b>0 koşulunda log_a b=log_c b/log_c a olur; payda sıfır değildir."
+ },
+ {
+  "from": "a>0, a≠1, x>0 ve n≠0 ikenlog_(a^n)(x^m)=(m/n)log_a x yazılır. Tabanın kuvveti paydaya, için kuvveti paya gider. n=0 tabanı 1 yapacağı için daha işlem başlamadan yasaktır.",
+  "to": "a>0, a≠1, x>0 ve n≠0 iken log_(a^n)(x^m)=(m/n)log_a x yazılır. Tabanın kuvveti paydaya, için kuvveti paya gider. n=0 tabanı 1 yapacağı için daha işlem başlamadan yasaktır."
+ },
+ {
+  "from": "Log₈16 için a=2, n=3, m=4 alınır; sonuç 4/3 olur. m=0 ise iç1 ve sonuç 0’dır; bu özel durum n=0 yasağını kaldırmaz. Kuvvetler negatif de olabilir; pozitif a ve x sayesinde gerçek kuvvetlerin tanımı korunur.",
+  "to": "Log₈16 için a=2, n=3, m=4 alınır; sonuç 4/3 olur. m=0 ise iç 1 ve sonuç 0’dır; bu özel durum n=0 yasağını kaldırmaz. Kuvvetler negatif de olabilir; pozitif a ve x sayesinde gerçek kuvvetlerin tanımı korunur."
+ },
+ {
+  "from": "Log₂(x−1)=3 için önce x>1 yaz, sonra x−1=2³=8 ilex=9 bul. Log_a f(x)=log_a g(x) denkleminde taban uygun ve içler pozitifse birebirlik nedeniyle f(x)=g(x) olur. Bu son denklemin her kökü başlangıç koşulunu sağlamayabilir.",
+  "to": "Log₂(x−1)=3 için önce x>1 yaz, sonra x−1=2³=8 ile x=9 bul. Log_a f(x)=log_a g(x) denkleminde taban uygun ve içler pozitifse birebirlik nedeniyle f(x)=g(x) olur. Bu son denklemin her kökü başlangıç koşulunu sağlamayabilir."
+ },
+ {
+  "from": "Log₂(x−1)+log₂(x−3)=3 için x>3 şartı korunur. Çarpım(x−1)(x−3)=8 denklemi x=5 ve−1 adayları üretir; yalnız 5 kalır. İki negatif için çarpımın pozitif olması, iki ayrı logaritmayı tanımlı yapmaz.",
+  "to": "Log₂(x−1)+log₂(x−3)=3 için x>3 şartı korunur. Çarpım (x−1)(x−3)=8 denklemi x=5 ve −1 adayları üretir; yalnız 5 kalır. İki negatif için çarpımın pozitif olması, iki ayrı logaritmayı tanımlı yapmaz."
+ },
+ {
+  "from": "Log₂x=t dönüşümünde x=2^t>0 ve t bütün gerçeklerde olabilir. (log₂x)²−3 log₂x+2=0 denklemi t²−3t+2=0 olur; t=1,2’denx=2,4 bulunur. t’yi x ile karıştırmadan her adımın değişkenini yaz.",
+  "to": "Log₂x=t dönüşümünde x=2^t>0 ve t bütün gerçeklerde olabilir. (log₂x)²−3 log₂x+2=0 denklemi t²−3t+2=0 olur; t=1,2’den x=2,4 bulunur. t’yi x ile karıştırmadan her adımın değişkenini yaz."
+ },
+ {
+  "from": "Log_x16=2 için x>0 ve x≠1 gerekir; üstel biçim x²=16 verir. Adaylar±4 arasından yalnız 4 uygun tabandır. İçin pozitifliği 16 ile zaten sağlanmıştır; tabanı çözüm sonunda kontrol etmeyi atlama.",
+  "to": "Log_x16=2 için x>0 ve x≠1 gerekir; üstel biçim x²=16 verir. Adaylar ±4 arasından yalnız 4 uygun tabandır. İçin pozitifliği 16 ile zaten sağlanmıştır; tabanı çözüm sonunda kontrol etmeyi atlama."
+ },
+ {
+  "from": "a>1 ikenlog_a u≤log_a v eşitsizliği, u, v>0 koşuluyla u≤v demektir.0<a<1 iken aynı eşitsizlik u≥v olur. Bu yön değişimi, fonksiyonun sıralamayı ters çevirmesinden gelir; negatif sayıyla çarpma işlemi yapıldığı için değil.",
+  "to": "a>1 iken log_a u≤log_a v eşitsizliği, u, v>0 koşuluyla u≤v demektir. 0<a<1 iken aynı eşitsizlik u≥v olur. Bu yön değişimi, fonksiyonun sıralamayı ters çevirmesinden gelir; negatif sayıyla çarpma işlemi yapıldığı için değil."
+ },
+ {
+  "from": "y=log_a(x−h)+k için x>h tanım koşulu, x=h düşey yaklaşım sınırı ve(h+1, k) dayanak noktası vardır. h yatay, k düşey kaydırmadır. Logaritmanın içindeki x−h ifadesi, açık tanım aralığının başlangıcını da taşır.",
+  "to": "y=log_a(x−h)+k için x>h tanım koşulu, x=h düşey yaklaşım sınırı ve (h+1, k) dayanak noktası vardır. h yatay, k düşey kaydırmadır. Logaritmanın içindeki x−h ifadesi, açık tanım aralığının başlangıcını da taşır."
+ },
+ {
+  "from": "Başlangıç miktarıN₀>0, sabit dönem çarpanıq>0 içinN(t)=N₀q^t modeli kurulur. Verilen N’ye kaç dönemde ulaşıldığını bulmak için t=log_q(N/N₀) kullanılır; q=1 ise sabit miktar özel durumudur ve bu logaritma biçimi kurulamaz.",
+  "to": "Başlangıç miktarı N₀>0, sabit dönem çarpanı q>0 için N(t)=N₀q^t modeli kurulur. Verilen N’ye kaç dönemde ulaşıldığını bulmak için t=log_q(N/N₀) kullanılır; q=1 ise sabit miktar özel durumudur ve bu logaritma biçimi kurulamaz."
+ },
+ {
+  "from": "Yarılanma modelindeN(t)/N₀=(1/2)^(t/T) olur. Bir miktarın başlangıcın 1/8’ine inmesi üç yarılanma, yani 3T sürer. Modelin hangi miktarı ölçtüğü açık belirtilmeli; bir radyoaktif maddenin bozunma ürününe dair yanlış kimyasal adlar matematiksel modele eklenmemelidir.",
+  "to": "Yarılanma modelinde N(t)/N₀=(1/2)^(t/T) olur. Bir miktarın başlangıcın 1/8’ine inmesi üç yarılanma, yani 3T sürer. Modelin hangi miktarı ölçtüğü açık belirtilmelidir."
+ },
+ {
+  "from": "Tanımı verilmiş ses düzeyiL=10 log₁₀(I/I₀) modelinde I/I₀ boyutsuz ve pozitiftir. Şiddet 100 katına çıkarsa düzey 20 birim artar; ses düzeyinin 100 kat olması gerekmez. Bir örneğin logaritma modeli, koşulları verilmeden bütün ses veya deprem durumlarına genellenmez.",
+  "to": "Tanımı verilmiş ses düzeyi L=10 log₁₀(I/I₀) modelinde I/I₀ boyutsuz ve pozitiftir. Şiddet 100 katına çıkarsa düzey 20 birim artar; ses düzeyinin 100 kat olması gerekmez. Bir örneğin logaritma modeli, koşulları verilmeden bütün ses veya deprem durumlarına genellenmez."
+ },
+ {
+  "from": "Birinci kontrol tanımdır:taban pozitif mi,1’den farklı mı, iç pozitif mi? İkinci kontrol eşitliktir:bulunan sayı başlangıç üstel veya logaritmik denklemi sağlar mı? Üçüncü kontrol büyüklüktür:artan veya azalan tabana göre sonuç beklenen aralıkta mı?",
+  "to": "Birinci kontrol tanımdır: taban pozitif mi, 1’den farklı mı, iç pozitif mi? İkinci kontrol eşitliktir: bulunan sayı başlangıç üstel veya logaritmik denklemi sağlar mı? Üçüncü kontrol büyüklüktür: artan veya azalan tabana göre sonuç beklenen aralıkta mı?"
+ },
+ {
+  "from": "Örneğinlog₂10 sayısı 3 ile 4 arasındadır; çünkü 8<10<16. Log_(1/2)10 ise negatiftir; çünkütaban azalan ve10>1. Ondalık yaklaşımın basamak sayısı sorunun ihtiyacına göre seçilir; yaklaşık bir değer eşitlikte kesin sayıymış gibi kullanılmaz.",
+  "to": "Örneğin log₂10 sayısı 3 ile 4 arasındadır; çünkü 8<10<16. Log_(1/2)10 ise negatiftir; çünkü taban azalan ve 10>1. Ondalık yaklaşımın basamak sayısı sorunun ihtiyacına göre seçilir; yaklaşık bir değer eşitlikte kesin sayıymış gibi kullanılmaz."
+ },
+ {
+  "from": "Dizinin noktaları(n, a_n) düzlemde ayrı ayrı bulunur; indisler arasında kalan 1,5 gibi sayılar bu tanımda girdi değildir. Bu yüzden diziyi bir eğriyle birleştirmek zorunlu değildir. Etkileşimde terimler ayrı noktalarla ve aynı sırayı koruyan tabloyla görünür.",
+  "to": "Dizinin noktaları (n, a_n) düzlemde ayrı ayrı bulunur; indisler arasında kalan 1,5 gibi sayılar bu tanımda girdi değildir. Bu yüzden diziyi bir eğriyle birleştirmek zorunlu değildir. Etkileşimde terimler ayrı noktalarla ve aynı sırayı koruyan tabloyla görünür."
+ },
+ {
+  "from": "Tanım kümesi{1,2,…, N} olan sonlu dizinin N terimi vardır. a_n=c bütün indislerde aynıysa sabit dizidir. İki dizi eşit olmak için aynı tanım kümesindeki her n’de aynı değeri vermelidir; yalnız ilk iki terimin eşitliği yeterli değildir.",
+  "to": "Tanım kümesi {1,2,…, N} olan sonlu dizinin N terimi vardır. a_n=c bütün indislerde aynıysa sabit dizidir. İki dizi eşit olmak için aynı tanım kümesindeki her n’de aynı değeri vermelidir; yalnız ilk iki terimin eşitliği yeterli değildir."
+ },
+ {
+  "from": "a ve b arasına p terim yerleştirilirse toplam p+2 terim ve p+1 adım vardır; ortak fark(b−a)/(p+1) olur. Araya 3 terim koyulan 2 ile 14 arasında fark 3’tür:2,5,8,11,14. Paydanın 3 değil 4 olması adımları saymaktan gelir.",
+  "to": "a ve b arasına p terim yerleştirilirse toplam p+2 terim ve p+1 adım vardır; ortak fark (b−a)/(p+1) olur. Araya 3 terim koyulan 2 ile 14 arasında fark 3’tür: 2,5,8,11,14. Paydanın 3 değil 4 olması adımları saymaktan gelir."
+ },
+ {
+  "from": "S_n=n²+2n için S_1=3; fark alınca a_n=2n+1 çıkar ve ilk terimde de3 verir. Genel S_n ifadesi n=0’da0 vermiyorsa a_1 için otomatik fark kuralı kullanmak hata doğurabilir. Başlangıç satırını her zaman kontrol et.",
+  "to": "S_n=n²+2n için S_1=3; fark alınca a_n=2n+1 çıkar ve ilk terimde de 3 verir. Genel S_n ifadesi n=0’da 0 vermiyorsa a_1 için otomatik fark kuralı kullanmak hata doğurabilir. Başlangıç satırını her zaman kontrol et."
+ },
+ {
+  "from": "Sıfır olmayan a_p için a_q/a_p=r^(q−p) bulunur. İndis farkı çiftse r’nin pozitif veya negatif oluşu yalnız bu oranla belirlenmeyebilir. a_1=2, a_3=18 verilince r²=9 olduğundan hem 3 hem−3 mümkündür.",
+  "to": "Sıfır olmayan a_p için a_q/a_p=r^(q−p) bulunur. İndis farkı çiftse r’nin pozitif veya negatif oluşu yalnız bu oranla belirlenmeyebilir. a_1=2, a_3=18 verilince r²=9 olduğundan hem 3 hem −3 mümkündür."
+ },
+ {
+  "from": "S_n=a_1+a_1r+…+a_1r^(n−1) yazıp rS_n ile çıkarınca(1−r)S_n=a_1(1−r^n) bulunur. r≠1 ise S_n=a_1(1−r^n)/(1−r). r=1 olduğunda bu bölme kurulmaz; toplam doğrudan n a_1’dir.",
+  "to": "S_n=a_1+a_1r+…+a_1r^(n−1) yazıp rS_n ile çıkarınca (1−r)S_n=a_1(1−r^n) bulunur. r≠1 ise S_n=a_1(1−r^n)/(1−r). r=1 olduğunda bu bölme kurulmaz; toplam doğrudan n a_1’dir."
+ },
+ {
+  "from": "Toplamları ayırırken bütün terim sayısını koru:Σ(2k+3)=2Σk+3n, yalnız alt sınır 1 ise. Alt sınır m olduğunda sabit 3’ün katkısı 3(n−m+1) olur. Bir indis değişimi, sınırların da aynı dönüşümle değiştirilmesini gerektirir.",
+  "to": "Toplamları ayırırken bütün terim sayısını koru: Σ(2k+3)=2Σk+3n, yalnız alt sınır 1 ise. Alt sınır m olduğunda sabit 3’ün katkısı 3(n−m+1) olur. Bir indis değişimi, sınırların da aynı dönüşümle değiştirilmesini gerektirir."
+ },
+ {
+  "from": "Her sıraya 3 koltuk eklenen bir salonda son sıranın koltuğu a_n, toplam koltuk sayısı S_n’dir. Her yıl yüzde 10 büyüyen bir miktarda dönem çarpanı 1,1 olur; dönem sonunda ölçülen miktar ile yılların toplamı aynı değildir. Zaman başlangıcının n=0mı n=1mi olduğunu açık yaz.",
+  "to": "Her sıraya 3 koltuk eklenen bir salonda son sıranın koltuğu a_n, toplam koltuk sayısı S_n’dir. Her yıl yüzde 10 büyüyen bir miktarda dönem çarpanı 1,1 olur; dönem sonunda ölçülen miktar ile yılların toplamı aynı değildir. Zaman başlangıcının n=0 mı n=1 mi olduğunu açık yaz."
+ },
+ {
+  "from": "x sayısını a’ya yaklaştırırken x≠a değerlerindeki f(x) davranışını inceleriz. Örneğin f(x)=x+2 için x,3’e iki yandan yaklaşırken değerler 5’e yaklaşır. Limitin konusu çevredeki davranıştır; f(3) değerini ayrıca değiştirmek bu yaklaşımı tek başına değiştirmez.",
+  "to": "x sayısını a’ya yaklaştırırken x≠a değerlerindeki f(x) davranışını inceleriz. Örneğin f(x)=x+2 için x, 3’e iki yandan yaklaşırken değerler 5’e yaklaşır. Limitin konusu çevredeki davranıştır; f(3) değerini ayrıca değiştirmek bu yaklaşımı tek başına değiştirmez."
+ },
+ {
+  "from": "Payda sıfır çıkınca aynı kuralı zorlayıp sıfıra bölme yapma. Önce payın davranışını ve gerekirse yanları incele. Pay ile paydanın ikisi de0’a gidiyorsa 0/0 bir sayı değil, kullanılan yöntemle henüz sonucun belirlenmediğini söyleyen belirsizlik biçimidir.",
+  "to": "Payda sıfır çıkınca aynı kuralı zorlayıp sıfıra bölme yapma. Önce payın davranışını ve gerekirse yanları incele. Pay ile paydanın ikisi de 0’a gidiyorsa 0/0 bir sayı değil, kullanılan yöntemle henüz sonucun belirlenmediğini söyleyen belirsizlik biçimidir."
+ },
+ {
+  "from": "Logaritmada taban pozitif ve1’den farklı, iç çevrede pozitif ve limit L>0 ise log_a f(x)→log_a L yazılır. İçin 0’a yaklaşması log_a0 diye hesaplanamaz. Sinüs ve kosinüs bütün gerçeklerde sürekli; tanjant ve kotanjant yalnız kendi tanım noktalarında doğrudan değerlendirilir.",
+  "to": "Logaritmada taban pozitif ve 1’den farklı, iç çevrede pozitif ve limit L>0 ise log_a f(x)→log_a L yazılır. İçin 0’a yaklaşması log_a0 diye hesaplanamaz. Sinüs ve kosinüs bütün gerçeklerde sürekli; tanjant ve kotanjant yalnız kendi tanım noktalarında doğrudan değerlendirilir."
+ },
+ {
+  "from": "Grafikte x+2 doğrusu üzerindeki(2,4) noktası ilk fonksiyonda deliktir. O deliğe farklı bir dolu nokta yerleştirsen limit yine 4 olur. Sürekli uzatma istenirse deliği tam 4’te doldurmak gerekir; başka bir değer yalnız tanımlılık sağlar, süreklilik sağlamaz.",
+  "to": "Grafikte x+2 doğrusu üzerindeki (2,4) noktası ilk fonksiyonda deliktir. O deliğe farklı bir dolu nokta yerleştirsen limit yine 4 olur. Sürekli uzatma istenirse deliği tam 4’te doldurmak gerekir; başka bir değer yalnız tanımlılık sağlar, süreklilik sağlamaz."
+ },
+ {
+  "from": "|x|/x ifadesi x>0 için 1, x<0 için −1’dir. x→0+ limiti 1, x→0− limiti−1 olduğundan iki yanlı limit yoktur. |x|’i her yerde x diye sadeleştirmek sol dalı değiştirir.",
+  "to": "|x|/x ifadesi x>0 için 1, x<0 için −1’dir. x→0+ limiti 1, x→0− limiti −1 olduğundan iki yanlı limit yoktur. |x|’i her yerde x diye sadeleştirmek sol dalı değiştirir."
+ },
+ {
+  "from": "Polinomlarℝ’de; rasyonel fonksiyonlar paydanın sıfır olmadığı ortak alanda süreklidir. Kök ve logaritma gibi fonksiyonlarda kendi tanım koşulları da bu alana eklenir. İptal edilen bir payda kökü, ilk fonksiyonun tanımında hâlâ hariçtir.",
+  "to": "Polinomlar ℝ’de; rasyonel fonksiyonlar paydanın sıfır olmadığı ortak alanda süreklidir. Kök ve logaritma gibi fonksiyonlarda kendi tanım koşulları da bu alana eklenir. İptal edilen bir payda kökü, ilk fonksiyonun tanımında hâlâ hariçtir."
+ },
+ {
+  "from": "f(x)=(x²−1)/(x−1) için doğal tanım kümesiℝ\\{1}; fonksiyon bu kümede süreklidir. g(1)=2 diye eklenmiş bir uzatma ise bütünℝ’de sürekli olur. İki fonksiyonun 1 dışındaki aynı değerleri, tanım kümelerini de aynı yapmaz.",
+  "to": "f(x)=(x²−1)/(x−1) için doğal tanım kümesi ℝ\\{1}; fonksiyon bu kümede süreklidir. g(1)=2 diye eklenmiş bir uzatma ise bütün ℝ’de sürekli olur. İki fonksiyonun 1 dışındaki aynı değerleri, tanım kümelerini de aynı yapmaz."
+ },
+ {
+  "from": "Bir tabloya yalnız 0,1 veya 0,01 kadar yaklaştırılmış birkaç nokta koymak tek başına limit ispatı değildir. Tam kuraldan çarpan, işaret veya sürekli parça bilgisini kullan. Etkileşimde yakınlaşma adımı çıktıların davranışını görünür yapar; öğrenilmiş sayılma veya otomatik puan oluşturmaz.",
+  "to": "Bir tabloya yalnız 0,1 veya 0,01 kadar yaklaştırılmış birkaç nokta koymak tek başına limit ispatı değildir. Tam kuraldan çarpan, işaret veya sürekli parça bilgisini kullan. Etkileşimde yakınlaşma adımı çıktıların davranışını görünür yapar."
+ },
+ {
+  "from": "Önce tanım ve hedefi oku; uygunsa doğrudan yerine koy.0/0 çıktığında çarpan, eşlenik veya parçalı işaret yolunu dene; yanlar farklıysa onları ayrı çöz. Sonuç bir sonlu limitse noktadaki değerle yalnız süreklilik sorulunca karşılaştır.",
+  "to": "Önce tanım ve hedefi oku; uygunsa doğrudan yerine koy. 0/0 çıktığında çarpan, eşlenik veya parçalı işaret yolunu dene; yanlar farklıysa onları ayrı çöz. Sonuç bir sonlu limitse noktadaki değerle yalnız süreklilik sorulunca karşılaştır."
+ },
+ {
+  "from": "Kaynakta anılan L’Hôpital daha sonraki türev bilgisini ve özel koşulları gerektirir; her 0/0 ifadesinde koşulsuz pay ve paydanın türevini alma kuralı değildir. Buradaki temel çözümler türeve dayanmaz. İleri bağlantıda, delinmiş bir çevrede türevlenme, payda türevinin sıfır olmaması ve türev oranının uygun limiti gibi öncüller ayrıca denetlenmelidir.",
+  "to": "L’Hôpital kuralı daha sonraki türev bilgisini ve özel koşulları gerektirir; her 0/0 ifadesinde koşulsuz pay ve paydanın türevini alma kuralı değildir. Buradaki temel çözümler türeve dayanmaz. İleri bağlantıda, delinmiş bir çevrede türevlenme, payda türevinin sıfır olmaması ve türev oranının uygun limiti gibi öncüller ayrıca denetlenmelidir."
+ },
+ {
+  "from": "x²+6x+2=0 denkleminde x²+6x=(x+3)²−9 yazılır. Böylece (x+3)²=7 ve x=−3±√7 elde edilir. Her iki işareti almak gerekir; karesi 7 olan iki gerçek sayı √7 ve−√7’dir. Sağ taraf negatif olursa gerçek sayılarda çözüm bulunmaz.",
+  "to": "x²+6x+2=0 denkleminde x²+6x=(x+3)²−9 yazılır. Böylece (x+3)²=7 ve x=−3±√7 elde edilir. Her iki işareti almak gerekir; karesi 7 olan iki gerçek sayı √7 ve −√7’dir. Sağ taraf negatif olursa gerçek sayılarda çözüm bulunmaz."
+ },
+ {
+  "from": "Gerçek kökler x=(−b±√Δ)/(2a) ile bulunur. Payda, −b’ye de köklü terime de uygulanır. 2x²+3x−2=0 için Δ=25, kökler (−3+5)/4=1/2 ve(−3−5)/4=−2 olur. Eksi b yazarken b negatifse işaretin değiştiğini özellikle izle.",
+  "to": "Gerçek kökler x=(−b±√Δ)/(2a) ile bulunur. Payda, −b’ye de köklü terime de uygulanır. 2x²+3x−2=0 için Δ=25, kökler (−3+5)/4=1/2 ve (−3−5)/4=−2 olur. Eksi b yazarken b negatifse işaretin değiştiğini özellikle izle."
+ },
+ {
+  "from": "Tanım kümesi ile işaret şartını işlem başında ayırmak çözümü hızlandırır. Denklemin iki tarafını karesini almak tek yönlü bir çıkarımdır; adayların ilk eşitlikte doğrulanmasıyla eşdeğer çözüm tamamlanır. Gerçek kök ile cebirsel aday aynı şey değildir.",
+  "to": "Tanım kümesi ile işaret şartını işlem başında ayırmak çözümü hızlandırır. Denklemin iki tarafının karesini almak tek yönlü bir çıkarımdır; adayların ilk eşitlikte doğrulanmasıyla eşdeğer çözüm tamamlanır. Gerçek kök ile cebirsel aday aynı şey değildir."
+ },
+ {
+  "from": "Kenarları x ve x+3 metre olan dikdörtgenin alanı 40 m² ise x(x+3)=40, x²+3x−40=0 olur. Kökler 5 ve−8’dir; uzunluk koşulu x>0 olduğundan yalnız 5 m kabul edilir. Cebirsel çözümün fiziksel anlamını birim ve aralık seçer.",
+  "to": "Kenarları x ve x+3 metre olan dikdörtgenin alanı 40 m² ise x(x+3)=40, x²+3x−40=0 olur. Kökler 5 ve −8’dir; uzunluk koşulu x>0 olduğundan yalnız 5 m kabul edilir. Cebirsel çözümün fiziksel anlamını birim ve aralık seçer."
+ },
+ {
+  "from": "Etkileşimli modelde a’yı 0 yaparak derece kaybını, c’yi değiştirerek Δ’nın işaretini ve gerçek eksen kesimlerini karşılaştır. Kendi tahminini sayısal kanıtla açıkla. Bu keşif bir alıştırmadır; modeli oynatmak otomatik konu tamamlama, doğru cevap veya XP kaydı oluşturmaz.",
+  "to": "Etkileşimli modelde a’yı 0 yaparak derece kaybını, c’yi değiştirerek Δ’nın işaretini ve gerçek eksen kesimlerini karşılaştır. Kendi tahminini sayısal kanıtla açıkla. Bu keşif bir alıştırmadır."
+ },
+ {
+  "from": "x²+1=0 gerçek sayılarda çözülemez; bir gerçek sayının karesi negatif olamaz. i²=−1 sağlayan sanal birimi tanımlayıp a+bi biçimindeki sayıları oluşturduğumuzda bu denklem i ve−i köklerini alır. Karmaşık sayılar gerçeklerin yerine geçmez, onları genişleten bir kümedir.",
+  "to": "x²+1=0 gerçek sayılarda çözülemez; bir gerçek sayının karesi negatif olamaz. i²=−1 sağlayan sanal birimi tanımlayıp a+bi biçimindeki sayıları oluşturduğumuzda bu denklem i ve −i köklerini alır. Karmaşık sayılar gerçeklerin yerine geçmez, onları genişleten bir kümedir."
+ },
+ {
+  "from": "a+bi gerçektir ancak b=0 olduğunda. Salt sanal sayı denirken çoğunlukla a=0, b≠0 olan bi sayıları kastedilir; 0’ın bu sınıfa katılıp katılmadığı kaynakların adlandırmasına göre değişebilir. Burada salt sanal terimini sıfırdan farklı bi için kullanıyoruz.",
+  "to": "a+bi gerçektir ancak b=0 olduğunda. Salt sanal sayı denirken çoğunlukla a=0, b≠0 olan bi sayıları kastedilir; 0’ın bu sınıfa katılıp katılmadığı kullanılan adlandırmaya göre değişebilir. Burada salt sanal terimini sıfırdan farklı bi için kullanıyoruz."
+ },
+ {
+  "from": "(t−2)+(t²−9)i gerçek olsun istenirse t²−9=0, t=±3 bulunur. Aynı ifade salt sanal olsun istenirse t=2 ve sanal katsayı−5≠0 kontrol edilir. Gerçek kısım ile sanal kısım koşulları farklı hedeflere hizmet eder.",
+  "to": "(t−2)+(t²−9)i gerçek olsun istenirse t²−9=0, t=±3 bulunur. Aynı ifade salt sanal olsun istenirse t=2 ve sanal katsayı −5≠0 kontrol edilir. Gerçek kısım ile sanal kısım koşulları farklı hedeflere hizmet eder."
+ },
+ {
+  "from": "(a+bi)+(c+di)=(a+c)+(b+d)i olur. Çıkarmada ikinci parantezin tamamının işareti değişir. (2−3i)−(−1+4i)=3−7i örneğinde hem−1 hem 4i çıkarılmıştır; yalnız gerçek kısımda eksi dağıtmak yanlıştır.",
+  "to": "(a+bi)+(c+di)=(a+c)+(b+d)i olur. Çıkarmada ikinci parantezin tamamının işareti değişir. (2−3i)−(−1+4i)=3−7i örneğinde hem −1 hem 4i çıkarılmıştır; yalnız gerçek kısımda eksi dağıtmak yanlıştır."
+ },
+ {
+  "from": "Dağılma ile(a+bi)(c+di)=ac+adi+bci+bdi²=(ac−bd)+(ad+bc)i bulunur. (1+2i)(3−i)=5+5i’dir. Gerçek terimler yalnız ac değildir; i²=−1 ile gelen−bd katkısı da gerçektir.",
+  "to": "Dağılma ile (a+bi)(c+di)=ac+adi+bci+bdi²=(ac−bd)+(ad+bc)i bulunur. (1+2i)(3−i)=5+5i’dir. Gerçek terimler yalnız ac değildir; i²=−1 ile gelen −bd katkısı da gerçektir."
+ },
+ {
+  "from": "Çarpma düzlemde yön ve uzunluğu birlikte değiştirebilir. Özellikle i ile çarpma(a, b)→(−b, a) biçiminde 90° saat yönünün tersine dönmedir. −1 ile çarpma 180° döndürür. Bu yorum sıfırın yönünü varmış gibi tanımlamaz; sıfır yine sıfıra gider.",
+  "to": "Çarpma düzlemde yön ve uzunluğu birlikte değiştirebilir. Özellikle i ile çarpma (a, b)→(−b, a) biçiminde 90° saat yönünün tersine dönmedir. −1 ile çarpma 180° döndürür. Bu yorum sıfırın yönünü varmış gibi tanımlamaz; sıfır yine sıfıra gider."
+ },
+ {
+  "from": "z=a+bi sayısının eşleniği z̄=a−bi’dir. Gerçek kısım korunur, sanal kısmın işareti değişir. Düzlemde(a, b) noktası(a, −b)’ye yansır. Eşleniğin eşleniği başlangıç sayısıdır; z=z̄ ancak b=0, yani z gerçek olduğunda olur.",
+  "to": "z=a+bi sayısının eşleniği z̄=a−bi’dir. Gerçek kısım korunur, sanal kısmın işareti değişir. Düzlemde (a, b) noktası (a, −b)’ye yansır. Eşleniğin eşleniği başlangıç sayısıdır; z=z̄ ancak b=0, yani z gerçek olduğunda olur."
+ },
+ {
+  "from": "z/w için w=c+di≠0 olmalıdır. Pay ve paydayı c−di ile çarparsın; payda c²+d²>0 olur. Sonuç[(ac+bd)+(bc−ad)i]/(c²+d²) biçimindedir. (2+i)/(1−i)=(1+3i)/2 örneğinde eşlenik 1+i seçilir.",
+  "to": "z/w için w=c+di≠0 olmalıdır. Pay ve paydayı c−di ile çarparsın; payda c²+d²>0 olur. Sonuç [(ac+bd)+(bc−ad)i]/(c²+d²) biçimindedir. (2+i)/(1−i)=(1+3i)/2 örneğinde eşlenik 1+i seçilir."
+ },
+ {
+  "from": "|z|=√(a²+b²), z noktasının orijine uzaklığıdır. |3−4i|=5’tir. Modül negatif olmaz; yalnız z=0 için 0’dır. |z−w| iki sayının noktaları arasındaki uzaklığı verir. Örneğin 1+i ile 4+5i arasındaki uzaklık√(3²+4²)=5’tir.",
+  "to": "|z|=√(a²+b²), z noktasının orijine uzaklığıdır. |3−4i|=5’tir. Modül negatif olmaz; yalnız z=0 için 0’dır. |z−w| iki sayının noktaları arasındaki uzaklığı verir. Örneğin 1+i ile 4+5i arasındaki uzaklık √(3²+4²)=5’tir."
+ },
+ {
+  "from": "Re(z)=2 ve|z|=√13 ise 4+b²=13, b=±3 olur; iki sayı 2±3i mümkündür. Ek olarak Im(z)>0 verilirse yalnız 2+3i kalır. Bir uzaklık bilgisi, noktayı tek başına her zaman belirlemez.",
+  "to": "Re(z)=2 ve |z|=√13 ise 4+b²=13, b=±3 olur; iki sayı 2±3i mümkündür. Ek olarak Im(z)>0 verilirse yalnız 2+3i kalır. Bir uzaklık bilgisi, noktayı tek başına her zaman belirlemez."
+ },
+ {
+  "from": "r>0 için √(−r)=i√r, asal karekök seçimini ifade eder. Buna karşılık x²=−r denkleminin iki kökü±i√r’dir. Tek bir kök sembolünün değeriyle bir denklemin bütün köklerini ayır. √(−9)=3i seçilirken x²=−9 için 3i ve−3i gerekir.",
+  "to": "r>0 için √(−r)=i√r, asal karekök seçimini ifade eder. Buna karşılık x²=−r denkleminin iki kökü ±i√r’dir. Tek bir kök sembolünün değeriyle bir denklemin bütün köklerini ayır. √(−9)=3i seçilirken x²=−9 için 3i ve −3i gerekir."
+ },
+ {
+  "from": "Gerçek katsayılı ax²+bx+c=0 için Δ<0 olduğunda kökler−b/(2a)±i√(−Δ)/(2a) biçimindedir; küme aynı olduğundan sanal parçanın büyüklüğü√(−Δ)/(2|a|) ile de yazılabilir. x²+2x+5=0 için−1±2i bulunur.",
+  "to": "Gerçek katsayılı ax²+bx+c=0 için Δ<0 olduğunda kökler −b/(2a)±i√(−Δ)/(2a) biçimindedir; küme aynı olduğundan sanal parçanın büyüklüğü √(−Δ)/(2|a|) ile de yazılabilir. x²+2x+5=0 için −1±2i bulunur."
+ },
+ {
+  "from": "Köklerin toplamı−2, çarpımı(−1)²+2²=5 çıkar; Vieta hâlâ çalışır. Gerçek eksende kesişim yokken karmaşık düzlemde iki sayı bulunması bir çelişki değildir. Polinomun grafiği gerçek x ve gerçek y’yi, kök kümesi ise seçilen sayı kümesini anlatır.",
+  "to": "Köklerin toplamı −2, çarpımı (−1)²+2²=5 çıkar; Vieta hâlâ çalışır. Gerçek eksende kesişim yokken karmaşık düzlemde iki sayı bulunması bir çelişki değildir. Polinomun grafiği gerçek x ve gerçek y’yi, kök kümesi ise seçilen sayı kümesini anlatır."
+ },
+ {
+  "from": "Örneğin x²−(1+i)x+i=0 denkleminin kökleri 1 vei’dir; −i kök olmak zorunda değildir. Ayrıca bir gerçek kökün eşleniği kendisidir diye diğer gerçek kökün de ona eşit olması gerekmez. x²−3x+2 kökleri 1 ve 2 olan açık bir karşı örnektir.",
+  "to": "Örneğin x²−(1+i)x+i=0 denkleminin kökleri 1 ve i’dir; −i kök olmak zorunda değildir. Ayrıca bir gerçek kökün eşleniği kendisidir diye diğer gerçek kökün de ona eşit olması gerekmez. x²−3x+2 kökleri 1 ve 2 olan açık bir karşı örnektir."
+ },
+ {
+  "from": "Kökler a±bi ise toplam 2a, çarpım a²+b² olur. Monik denklem x²−2ax+(a²+b²)=0’dır. 2±3i için x²−4x+13=0 elde edilir; diskriminant−36 ile karmaşık kökler geri bulunur.",
+  "to": "Kökler a±bi ise toplam 2a, çarpım a²+b² olur. Monik denklem x²−2ax+(a²+b²)=0’dır. 2±3i için x²−4x+13=0 elde edilir; diskriminant −36 ile karmaşık kökler geri bulunur."
+ },
+ {
+  "from": "Karmaşık sayılarda gerçekteki büyüktür-küçüktür sıralamasını aynı cebir kurallarıyla tanımlamayız. |z|>|w| bir uzaklık karşılaştırmasıdır, z>w yazmanın genel gerekçesi değildir. Modeldeki etkileşim kanıttır; otomatik puan, konu bitirme veya XP üretmez.",
+  "to": "Karmaşık sayılarda gerçekteki büyüktür-küçüktür sıralamasını aynı cebir kurallarıyla tanımlamayız. |z|>|w| bir uzaklık karşılaştırmasıdır, z>w yazmanın genel gerekçesi değildir. Modeldeki etkileşim kanıttır."
+ },
+ {
+  "from": "Bir eşitsizliği doğru yapan bütün gerçek x değerleri çözüm kümesini oluşturur. x>2 için(2,∞), x≥2 için[2,∞) yazılır. Yuvarlak uç alınmadığını, köşeli uç alındığını gösterir. Sonsuz bir sayı olmadığı için sonsuz uçlara köşeli ayraç konmaz.",
+  "to": "Bir eşitsizliği doğru yapan bütün gerçek x değerleri çözüm kümesini oluşturur. x>2 için (2,∞), x≥2 için [2,∞) yazılır. Yuvarlak uç alınmadığını, köşeli uç alındığını gösterir. Sonsuz bir sayı olmadığı için sonsuz uçlara köşeli ayraç konmaz."
+ },
+ {
+  "from": "Birleşim veya anlamındadır; iki bölgeden en az biri yeterlidir. Kesişim ve anlamındadır; bütün koşullar birlikte gerekir. x<−1 veya x≥3, (−∞, −1)∪[3,∞); x>−1 ve x≤3 ise(−1,3] olur. Önce mantıksal bağlacı sonra aralığı seç.",
+  "to": "Birleşim veya anlamındadır; iki bölgeden en az biri yeterlidir. Kesişim ve anlamındadır; bütün koşullar birlikte gerekir. x<−1 veya x≥3, (−∞, −1)∪[3,∞); x>−1 ve x≤3 ise (−1,3] olur. Önce mantıksal bağlacı sonra aralığı seç."
+ },
+ {
+  "from": "Çarpımı veya bölümü sıfır yapan pay kökleri ile ifadeyi tanımsız yapan payda kökleri sayı doğrusunu aralıklara ayırır. Her aralığın içinde hiçbir çarpanın işareti değişmediği için ifadenin işareti sabittir. (x+2)(x−3) için sınırlar−2 ve 3’tür.",
+  "to": "Çarpımı veya bölümü sıfır yapan pay kökleri ile ifadeyi tanımsız yapan payda kökleri sayı doğrusunu aralıklara ayırır. Her aralığın içinde hiçbir çarpanın işareti değişmediği için ifadenin işareti sabittir. (x+2)(x−3) için sınırlar −2 ve 3’tür."
+ },
+ {
+  "from": "(x−r) tek kuvvetli olduğunda r’den geçerken işareti değişir. Çift kuvvetli olduğunda iki tarafta aynı işaret kalır; (x−r)² negatif olamaz. (x−1)²(x+2) ifadesinde−2’de işaret değişir,1’de değişmez.",
+  "to": "(x−r) tek kuvvetli olduğunda r’den geçerken işareti değişir. Çift kuvvetli olduğunda iki tarafta aynı işaret kalır; (x−r)² negatif olamaz. (x−1)²(x+2) ifadesinde −2’de işaret değişir, 1’de değişmez."
+ },
+ {
+  "from": "Çift kökün işaret değiştirmemesi, o noktayı çözüme her zaman almak demek değildir. > veya< gibi sıkı eşitsizlikte payın 0 olduğu nokta alınmaz; ≥ veya≤ durumunda tanımlıysa alınabilir. İşaret değişimini ve uç noktaya dahil olmayı iki ayrı satırda düşün.",
+  "to": "Çift kökün işaret değiştirmemesi, o noktayı çözüme her zaman almak demek değildir. > veya < gibi sıkı eşitsizlikte payın 0 olduğu nokta alınmaz; ≥ veya ≤ durumunda tanımlıysa alınabilir. İşaret değişimini ve uç noktaya dahil olmayı iki ayrı satırda düşün."
+ },
+ {
+  "from": "ax²+bx+c>0 eşitsizliğinin her gerçek x için doğru olması, a>0 ve Δ<0 gerektirir. Her x için<0 olması ise a<0 ve Δ<0 gerektirir. a=0 ikinci derece kapsamından çıkar ve doğrusal/sabit ifade ayrıca incelenir.",
+  "to": "ax²+bx+c>0 eşitsizliğinin her gerçek x için doğru olması, a>0 ve Δ<0 gerektirir. Her x için <0 olması ise a<0 ve Δ<0 gerektirir. a=0 ikinci derece kapsamından çıkar ve doğrusal/sabit ifade ayrıca incelenir."
+ },
+ {
+  "from": "Her x için≥0 istenirse a>0, Δ≤0; her x için≤0 istenirse a<0, Δ≤0 olur. Eşitlik sınırında grafik eksene dokunabilir. Kaynakta negatiflik için de a>0 yazılan bir satırı tekrarlamak yerine −x²−1 karşı örneğiyle doğru işareti denetle.",
+  "to": "Her x için ≥0 istenirse a>0, Δ≤0; her x için ≤0 istenirse a<0, Δ≤0 olur. Eşitlik sınırında grafik eksene dokunabilir. Negatiflik için a>0 yazma; −x²−1 karşı örneğiyle doğru işareti denetle."
+ },
+ {
+  "from": "Çarpanlara ayrılmış bir rasyonel ifadenin yeterince sağında her(x−r) pozitiftir; baştaki sıfır olmayan katsayının işareti kalır. Sola giderken tek toplam çokluklu kritik noktada işaret döner, çift toplam çoklukta korunur. Payda çarpanının işaret değiştirmesi de bölümün işaretini değiştirir.",
+  "to": "Çarpanlara ayrılmış bir rasyonel ifadenin yeterince sağında her (x−r) pozitiftir; baştaki sıfır olmayan katsayının işareti kalır. Sola giderken tek toplam çokluklu kritik noktada işaret döner, çift toplam çoklukta korunur. Payda çarpanının işaret değiştirmesi de bölümün işaretini değiştirir."
+ },
+ {
+  "from": "Bir sistemde her koşulun çözümünü ayrı bulup kesişim alabilirsin. x²−x−6≤0 için[−2,3], x−1>0 için(1,∞) bulunur; ortak çözüm(1,3] olur. Sınır 1 ilk koşulu sağlasa bile ikinciyi sağlamadığı için alınmaz.",
+  "to": "Bir sistemde her koşulun çözümünü ayrı bulup kesişim alabilirsin. x²−x−6≤0 için [−2,3], x−1>0 için (1,∞) bulunur; ortak çözüm (1,3] olur. Sınır 1 ilk koşulu sağlasa bile ikinciyi sağlamadığı için alınmaz."
+ },
+ {
+  "from": "Eşitlik noktalarını da sistemin bütün satırlarında denetle. x²≤0 ve x≥0 yalnız{0} verir; çözüm bazen tek bir izole noktadır. Bir grafik veya model yalnız açık aralık çizmeye programlandıysa bu özel çözümü kaçırır; bizim model noktaları ayrıca kaydeder.",
+  "to": "Eşitlik noktalarını da sistemin bütün satırlarında denetle. x²≤0 ve x≥0 yalnız {0} verir; çözüm bazen tek bir izole noktadır."
+ },
+ {
+  "from": "u vev negatif değilse u<v ile u²<v² eşdeğerdir. İşaretler serbestken bu kural geçerli değildir: −5<2 doğrudur ama 25<4 yanlıştır. Kareli bir eşitsizlik çözülürken mutlak değer veya işaret ayrımı gerekir.",
+  "to": "u ve v negatif değilse u<v ile u²<v² eşdeğerdir. İşaretler serbestken bu kural geçerli değildir: −5<2 doğrudur ama 25<4 yanlıştır. Kareli bir eşitsizlik çözülürken mutlak değer veya işaret ayrımı gerekir."
+ },
+ {
+  "from": "x²<9 doğrudan−3<x<3 verir; yalnız x<3 yazmak alt sınırı kaybettirir. (x−2)²≥4 için |x−2|≥2 ve x≤0 veya x≥4 çıkar. İki yandaki uzaklık yorumu, kareyi rastgele iptal etmeden çözümü kurar.",
+  "to": "x²<9 doğrudan −3<x<3 verir; yalnız x<3 yazmak alt sınırı kaybettirir. (x−2)²≥4 için |x−2|≥2 ve x≤0 veya x≥4 çıkar. İki yandaki uzaklık yorumu, kareyi rastgele iptal etmeden çözümü kurar."
+ },
+ {
+  "from": "|x+1|≤3 için−4≤x≤2 olur. Sağ taraf değişkense önce onun işareti önemlidir: |x−1|<x+1 için x+1>0 şartı gerekir; ardından −(x+1)<x−1<x+1 ile x>0 bulunur. Mutlak değerin içini koşulsuz kaldırma.",
+  "to": "|x+1|≤3 için −4≤x≤2 olur. Sağ taraf değişkense önce onun işareti önemlidir: |x−1|<x+1 için x+1>0 şartı gerekir; ardından −(x+1)<x−1<x+1 ile x>0 bulunur. Mutlak değerin içini koşulsuz kaldırma."
+ },
+ {
+  "from": "√u≤v için u≥0 vev≥0 gerekir; bu koşullarda u≤v² ile eşdeğerdir. Örneğin √(x+1)≤x−1 için x≥1 yazılır, sonra x+1≤(x−1)² ⇒x(x−3)≥0 elde edilir; kesişim x≥3’tür.",
+  "to": "√u≤v için u≥0 ve v≥0 gerekir; bu koşullarda u≤v² ile eşdeğerdir. Örneğin √(x+1)≤x−1 için x≥1 yazılır, sonra x+1≤(x−1)² ⇒x(x−3)≥0 elde edilir; kesişim x≥3’tür."
+ },
+ {
+  "from": "√u>v vev<0 ise u≥0 olan her noktada eşitsizlik zaten sağlanabilir; tek kareli dönüşüm bu dalı kaybedebilir. Çözümü önce sağ tarafın işaretine göre ayır, sonra gerekli dalda karesini al. Sonuç kümesinin her bölümünü ilk ifadede örnek değerle kontrol et.",
+  "to": "√u>v ve v<0 ise u≥0 olan her noktada eşitsizlik zaten sağlanabilir; tek kareli dönüşüm bu dalı kaybedebilir. Çözümü önce sağ tarafın işaretine göre ayır, sonra gerekli dalda karesini al. Sonuç kümesinin her bölümünü ilk ifadede örnek değerle kontrol et."
+ },
+ {
+  "from": "Bir parametrenin her x’te pozitiflik sağlaması istenirse kökleri tek tek çözmeden a veΔ koşulları kurulur. x²+2x+m>0 bütün gerçeklerde doğruysa Δ=4−4m<0, m>1 olur. Eşitlik m=1 için x=−1’de sıfır verdiğinden sıkı pozitiflik bozulur.",
+  "to": "Bir parametrenin her x’te pozitiflik sağlaması istenirse kökleri tek tek çözmeden a ve Δ koşulları kurulur. x²+2x+m>0 bütün gerçeklerde doğruysa Δ=4−4m<0, m>1 olur. Eşitlik m=1 için x=−1’de sıfır verdiğinden sıkı pozitiflik bozulur."
+ },
+ {
+  "from": "Çözümde tam sayılar istenirse önce doğru gerçek aralığı bul, sonra uçların dahil olup olmamasına göre say. −2<x≤4 için−1,0,1,2,3,4 olmak üzere 6 tam sayı vardır. Aralık uzunluğu ile tam sayı sayısı aynı büyüklük değildir.",
+  "to": "Çözümde tam sayılar istenirse önce doğru gerçek aralığı bul, sonra uçların dahil olup olmamasına göre say. −2<x≤4 için −1,0,1,2,3,4 olmak üzere 6 tam sayı vardır. Aralık uzunluğu ile tam sayı sayısı aynı büyüklük değildir."
+ },
+ {
+  "from": "Etkileşimli çizelgede bir kökü çift yap, sonra paydaya taşı ve noktanın davranışını izle. Tahminini aralık işareti ve uç koşuluyla gerekçelendir. Renk tek başına bilgi değildir; aynı çözüm açık/kapalı uçlarıyla normal metin olarak da verilir. Bu keşif otomatik puan oluşturmaz.",
+  "to": "Etkileşimli çizelgede bir kökü çift yap, sonra paydaya taşı ve noktanın davranışını izle. Tahminini aralık işareti ve uç koşuluyla gerekçelendir. Renk tek başına bilgi değildir; aynı çözüm açık/kapalı uçlarıyla normal metin olarak da verilir."
+ },
+ {
+  "from": "y ekseni için x=0, nokta(0, c) olur. x ekseni için y=0, ax²+bx+c=0 çözülür. Δ>0 iki kesim, Δ=0 eksene teğet tek nokta, Δ<0 gerçek kesişim yoktur. Kök bir x sayısı, kesim noktası ise(x,0) ikilisidir.",
+  "to": "y ekseni için x=0, nokta (0, c) olur. x ekseni için y=0, ax²+bx+c=0 çözülür. Δ>0 iki kesim, Δ=0 eksene teğet tek nokta, Δ<0 gerçek kesişim yoktur. Kök bir x sayısı, kesim noktası ise (x,0) ikilisidir."
+ },
+ {
+  "from": "Tanım kümesi R ve a>0 ise görüntü[k,∞), a<0 ise(−∞, k] olur. Uç değer tepe noktasında gerçekten alınır. Parabolün kolları sonsuza giderken sonsuzluk bir görüntü elemanı diye köşeli ayraçla yazılmaz.",
+  "to": "Tanım kümesi R ve a>0 ise görüntü [k,∞), a<0 ise (−∞, k] olur. Uç değer tepe noktasında gerçekten alınır. Parabolün kolları sonsuza giderken sonsuzluk bir görüntü elemanı diye köşeli ayraçla yazılmaz."
+ },
+ {
+  "from": "Tanım kümesi sınırlandırıldığında tüm parabolün aralığını kullanamazsın. f(x)=(x−2)², x∈[4,5] için görüntü[4,9]’dur; tepedeki 0, izinli bir x’te alınmaz. Önce tepe apsisinin verilen aralıkta olup olmadığını kontrol et.",
+  "to": "Tanım kümesi sınırlandırıldığında tüm parabolün aralığını kullanamazsın. f(x)=(x−2)², x∈[4,5] için görüntü [4,9]’dur; tepedeki 0, izinli bir x’te alınmaz. Önce tepe apsisinin verilen aralıkta olup olmadığını kontrol et."
+ },
+ {
+  "from": "a>0 için fonksiyon tepeye kadar azalır, tepeden sonra artar; a<0 için önce artar sonra azalır. Bu, iki x değeri arasındaki kare uzaklıklarının karşılaştırılmasıyla açıklanabilir. Örneğin(x−3)² tepeye yaklaşırken küçülür.",
+  "to": "a>0 için fonksiyon tepeye kadar azalır, tepeden sonra artar; a<0 için önce artar sonra azalır. Bu, iki x değeri arasındaki kare uzaklıklarının karşılaştırılmasıyla açıklanabilir. Örneğin (x−3)² tepeye yaklaşırken küçülür."
+ },
+ {
+  "from": "f’yi[L, U] üzerinde en büyük/en küçük yapmak için f(L), f(U) ve h bu aralıktaysa f(h) karşılaştırılır. a>0 olsa bile kapalı sınırlı aralıkta maksimum vardır ve uçlardan birinde bulunur. Tüm R’de maksimum olmaması bu sınırlı problemdeki sonucu kaldırmaz.",
+  "to": "f’yi [L, U] üzerinde en büyük/en küçük yapmak için f(L), f(U) ve h bu aralıktaysa f(h) karşılaştırılır. a>0 olsa bile kapalı sınırlı aralıkta maksimum vardır ve uçlardan birinde bulunur. Tüm R’de maksimum olmaması bu sınırlı problemdeki sonucu kaldırmaz."
+ },
+ {
+  "from": "Uç açık olduğunda en büyük değerin alınmaması mümkündür. x²,(0,2) üzerinde 0 ile 4 arasında değer alır ama bu iki değeri almaz. Bu durumda maksimum/minimum yerine üst/alt sınırdan söz etmek gerekebilir. Modelde kapalı aralık seçildiği açık yazılır; açık uç kuralları anlatımda ayrıca işlenir.",
+  "to": "Uç açık olduğunda en büyük değerin alınmaması mümkündür. x², (0,2) üzerinde 0 ile 4 arasında değer alır ama bu iki değeri almaz. Bu durumda maksimum/minimum yerine üst/alt sınırdan söz etmek gerekebilir. Modelde kapalı aralık seçildiği açık yazılır; açık uç kuralları anlatımda ayrıca işlenir."
+ },
+ {
+  "from": "Kökler r₁, r₂ ise f(x)=a(x−r₁)(x−r₂). Köklerden farklı x’e sahip A(u, v) yerine konunca a=v/[(u−r₁)(u−r₂)] bulunur. Örneğin kökler−1,3 ve f(0)=6 için 6=a(1)(−3), a=−2 olur.",
+  "to": "Kökler r₁, r₂ ise f(x)=a(x−r₁)(x−r₂). Köklerden farklı x’e sahip A(u, v) yerine konunca a=v/[(u−r₁)(u−r₂)] bulunur. Örneğin kökler −1,3 ve f(0)=6 için 6=a(1)(−3), a=−2 olur."
+ },
+ {
+  "from": "Parabolün kendi Δ=b²−4ac değeri yalnız x eksenini kesmesini anlatır. İkisini karıştırma. x²+1 x eksenini kesmez ama y=2 doğrusu ile±1 apsislerinde kesişir; doğru değişince ortak çözümün denklemi de değişir.",
+  "to": "Parabolün kendi Δ=b²−4ac değeri yalnız x eksenini kesmesini anlatır. İkisini karıştırma. x²+1 x eksenini kesmez ama y=2 doğrusu ile ±1 apsislerinde kesişir; doğru değişince ortak çözümün denklemi de değişir."
+ },
+ {
+  "from": "Ortak noktaların orta noktasında x ortalaması h_d=−(b−m)/(2a) olur; bu, parabolün tepe apsisi−b/(2a) ile ancak m=0 gibi özel durumlarda aynıdır. Eğik kirişin orta noktasını düşey simetri ekseninde varsayma.",
+  "to": "Ortak noktaların orta noktasında x ortalaması h_d=−(b−m)/(2a) olur; bu, parabolün tepe apsisi −b/(2a) ile ancak m=0 gibi özel durumlarda aynıdır. Eğik kirişin orta noktasını düşey simetri ekseninde varsayma."
+ },
+ {
+  "from": "Parabolle kesişmeyen y=mx+n doğrusuna en yakın parabol noktası için ona paralel teğeti kur. Aynı eğim koşulu 2at+b=m ⇒t=(m−b)/(2a) verir. Bu noktadaki dik uzaklık|f(t)−mt−n|/√(m²+1)’dir.",
+  "to": "Parabolle kesişmeyen y=mx+n doğrusuna en yakın parabol noktası için ona paralel teğeti kur. Aynı eğim koşulu 2at+b=m ⇒t=(m−b)/(2a) verir. Bu noktadaki dik uzaklık |f(t)−mt−n|/√(m²+1)’dir."
+ },
+ {
+  "from": "Kesişme varsa en küçük uzaklık zaten 0’dır ve ortak noktalar bunu sağlar. Düşey x=t doğrusu her zaman(t, f(t)) ile kesişir; dış bir doğru örneği olamaz. Düzlemde uzaklık yorumunun doğru olması için yatay ve düşey eksen birimleri eşit fiziksel ölçekte çizilmelidir.",
+  "to": "Kesişme varsa en küçük uzaklık zaten 0’dır ve ortak noktalar bunu sağlar. Düşey x=t doğrusu her zaman (t, f(t)) ile kesişir; dış bir doğru örneği olamaz. Düzlemde uzaklık yorumunun doğru olması için yatay ve düşey eksen birimleri eşit fiziksel ölçekte çizilmelidir."
+ },
+ {
+  "from": "Parabolün iki farklı gerçek kökündeki teğet eğimleri 2ar₁+b ve 2ar₂+b’dir; bu eğimler±√Δ olduğundan çarpım−Δ olur. Eşit birim ölçekli dik eksenlerde, birbirine dik ve sonlu eğimli teğetler için çarpım−1, dolayısıyla Δ=1 çıkar. Önce iki gerçek kökün varlığını ve kastedilen teğetleri belirt.",
+  "to": "Parabolün iki farklı gerçek kökündeki teğet eğimleri 2ar₁+b ve 2ar₂+b’dir; bu eğimler ±√Δ olduğundan çarpım −Δ olur. Eşit birim ölçekli dik eksenlerde, birbirine dik ve sonlu eğimli teğetler için çarpım −1, dolayısıyla Δ=1 çıkar. Önce iki gerçek kökün varlığını ve kastedilen teğetleri belirt."
+ },
+ {
+  "from": "f(x−h)+k grafiği h sağa, k yukarı taşır. −f(x) x eksenine, f(−x) y eksenine yansıtır. Dikey katsayı λ bütün y koordinatlarını λ ile çarpar; |λ|>1 dikey uzaklığı artırır. Kaynaktaki ters bir genişleme cümlesini nokta hesabı düzeltebilir.",
+  "to": "f(x−h)+k grafiği h sağa, k yukarı taşır. −f(x) x eksenine, f(−x) y eksenine yansıtır. Dikey katsayı λ bütün y koordinatlarını λ ile çarpar; |λ|>1 dikey uzaklığı artırır."
+ },
+ {
+  "from": "Modelde katsayıları, doğruyu ve kapalı tanım aralığını ayrı değiştir. Kesişim sayısını ve en büyük/en küçük değeri önceden tahmin et; sonra aynı hesaplardan türetilen HTML ve grafiği karşılaştır. Sadece resme bakıp eksen ölçeğinden eğim veya uzaklık uydurma; bu keşif puanlı cevap sayılmaz.",
+  "to": "Modelde katsayıları, doğruyu ve kapalı tanım aralığını ayrı değiştir. Kesişim sayısını ve en büyük/en küçük değeri önceden tahmin et; sonra aynı hesaplardan türetilen metni ve grafiği karşılaştır. Sadece resme bakıp eksen ölçeğinden eğim veya uzaklık uydurma."
+ },
+ {
+  "from": "Başlangıç ışınından bitiş ışınına saat yönünün tersine dönüş pozitif, saat yönüne dönüş negatiftir. Aynı bitiş ışınına birden fazla turla ulaşabilirsin. 30°,390° ve−330° aynı ışını gösterir ama yönlü dönme miktarları aynı değildir.",
+  "to": "Başlangıç ışınından bitiş ışınına saat yönünün tersine dönüş pozitif, saat yönüne dönüş negatiftir. Aynı bitiş ışınına birden fazla turla ulaşabilirsin. 30°, 390° ve −330° aynı ışını gösterir ama yönlü dönme miktarları aynı değildir."
+ },
+ {
+  "from": "Bir tam tur 360°,1°=60′ ve 1′=60″ olduğundan 1°=3600″ olur. 2°15′30″ toplam 2·3600+15·60+30=8130 açı saniyesidir. Buradaki dakika/saniye zaman değil açı alt birimidir.",
+  "to": "Bir tam tur 360°, 1°=60′ ve 1′=60″ olduğundan 1°=3600″ olur. 2°15′30″ toplam 2·3600+15·60+30=8130 açı saniyesidir. Buradaki dakika/saniye zaman değil açı alt birimidir."
+ },
+ {
+  "from": "Ters dönüşümde önce 3600’e bölerek dereceyi, kalanı 60’a bölerek dakikayı bul. Ondalık dereceyle dakika karışmaz: 1,5°=1°30′ olur,1°5′ değildir. İşlem sırasında hangi biçimin kullanıldığını birim işaretiyle açık tut.",
+  "to": "Ters dönüşümde önce 3600’e bölerek dereceyi, kalanı 60’a bölerek dakikayı bul. Ondalık dereceyle dakika karışmaz: 1,5°=1°30′ olur, 1°5′ değildir. İşlem sırasında hangi biçimin kullanıldığını birim işaretiyle açık tut."
+ },
+ {
+  "from": "Radyan cinsinden θ=s/r; yarıçap uzunluğundaki yayı gören açı 1 radyandır. Tam çemberde s=2πr olduğundan tam tur 2π radyan,180° iseπ radyandır. Dereceden radyana D·π/180, radyandan dereceye R·180/π kullanılır.",
+  "to": "Radyan cinsinden θ=s/r; yarıçap uzunluğundaki yayı gören açı 1 radyandır. Tam çemberde s=2πr olduğundan tam tur 2π radyan, 180° ise π radyandır. Dereceden radyana D·π/180, radyandan dereceye R·180/π kullanılır."
+ },
+ {
+  "from": "Açıya tam tur katları eklemek bitiş ışınını değiştirmez. Derecede esas ölçü[0,360°), radyanda[0,2π) aralığındaki temsilcidir. 720°’nin esas ölçüsü 0’dır; 0’ın dışlanması tam turları temsil edemez.",
+  "to": "Açıya tam tur katları eklemek bitiş ışınını değiştirmez. Derecede esas ölçü [0,360°), radyanda [0,2π) aralığındaki temsilcidir. 720°’nin esas ölçüsü 0’dır; 0’ın dışlanması tam turları temsil edemez."
+ },
+ {
+  "from": "Tanjantı sin/cos oranından çıkar: tan 30=√3/3, tan 45=1, tan 60=√3. Birim çemberde 0° noktası(1,0),90° noktası(0,1)’dir; sin 0=0, cos 0=1, sin 90=1, cos 90=0. Bu son açıların tanımını sıfıra bölme koşuluyla birlikte kontrol et.",
+  "to": "Tanjantı sin/cos oranından çıkar: tan 30=√3/3, tan 45=1, tan 60=√3. Birim çemberde 0° noktası (1,0), 90° noktası (0,1)’dir; sin 0=0, cos 0=1, sin 90=1, cos 90=0. Bu son açıların tanımını sıfıra bölme koşuluyla birlikte kontrol et."
+ },
+ {
+  "from": "Merkezi O(0,0), yarıçapı 1 olan çember x²+y²=1’i sağlar. Pozitif x ekseninden θ açılı ışının çemberi kestiği P noktası(cosθ, sinθ)’dır. Yatay izdüşüm kosinüsü, düşey izdüşüm sinüsü verir; ikisi aynı açının ayrı koordinatlarıdır.",
+  "to": "Merkezi O(0,0), yarıçapı 1 olan çember x²+y²=1’i sağlar. Pozitif x ekseninden θ açılı ışının çemberi kestiği P noktası (cosθ, sinθ)’dır. Yatay izdüşüm kosinüsü, düşey izdüşüm sinüsü verir; ikisi aynı açının ayrı koordinatlarıdır."
+ },
+ {
+  "from": "Bundan cos²θ+sin²θ=1 ve−1≤sinθ, cosθ≤1 çıkar. Herhangi bir gerçek açı için bu değerler tanımlıdır. Çemberin bir bölümünü dar üçgen gibi çizmek yalnız ilk bölgeyi anlatır; model diğer bölgelerde işaretli koordinatları korur.",
+  "to": "Bundan cos²θ+sin²θ=1 ve −1≤sinθ, cosθ≤1 çıkar. Herhangi bir gerçek açı için bu değerler tanımlıdır. Çemberin bir bölümünü dar üçgen gibi çizmek yalnız ilk bölgeyi anlatır; model diğer bölgelerde işaretli koordinatları korur."
+ },
+ {
+  "from": "secθ=1/cosθ, cscθ=1/sinθ olur. Sekantın yasak açıları tanjantla, kosekantınkiler kotanjantla aynıdır. Her iki görüntü kümesi(−∞, −1]∪[1,∞)’dir; mutlak değerleri 1’den küçük olamaz.",
+  "to": "secθ=1/cosθ, cscθ=1/sinθ olur. Sekantın yasak açıları tanjantla, kosekantınkiler kotanjantla aynıdır. Her iki görüntü kümesi (−∞, −1]∪[1,∞)’dir; mutlak değerleri 1’den küçük olamaz."
+ },
+ {
+  "from": "Bu tabloyu bağımsız bir ezber yerine P(cos, sin) noktasının koordinatlarıyla üret. Eksen üzerindeki değerler dört açık bölgenin içine sokulmaz; bir oran sıfır veya tanımsız olabilir. İşareti bilmek, kareli özdeşlikten gelen± seçimini doğru yapar.",
+  "to": "Bu tabloyu bağımsız bir ezber yerine P(cos, sin) noktasının koordinatlarıyla üret. Eksen üzerindeki değerler dört açık bölgenin içine sokulmaz; bir oran sıfır veya tanımsız olabilir. İşareti bilmek, kareli özdeşlikten gelen ± seçimini doğru yapar."
+ },
+ {
+  "from": "π±α ve 2π±α için sinüs/kosinüs kendi adıyla kalır; işaret bitiş noktasının bölgesinden gelir. π/2±α ve 3π/2±α için sin ilecos, tan ilecot yer değiştirir. Örneğin cos(π−α)=−cosα, sin(3π/2+α)=−cosα.",
+  "to": "π±α ve 2π±α için sinüs/kosinüs kendi adıyla kalır; işaret bitiş noktasının bölgesinden gelir. π/2±α ve 3π/2±α için sin ile cos, tan ile cot yer değiştirir. Örneğin cos(π−α)=−cosα, sin(3π/2+α)=−cosα."
+ },
+ {
+  "from": "f(x+T)=f(x) bütün tanım noktalarında geçerliyse T>0 bir periyottur. Sinüs ve kosinüsün temel periyodu 2π, tanjant ve kotanjantınπ’dir. Tek bir noktada değerlerin eşit olması bütün fonksiyonun periyodunu kanıtlamaz.",
+  "to": "f(x+T)=f(x) bütün tanım noktalarında geçerliyse T>0 bir periyottur. Sinüs ve kosinüsün temel periyodu 2π, tanjant ve kotanjantın π’dir. Tek bir noktada değerlerin eşit olması bütün fonksiyonun periyodunu kanıtlamaz."
+ },
+ {
+  "from": "A≠0, b≠0 için A sin(bx+c)+d ve A cos(bx+c)+d temel periyodu 2π/|b|; tan/cot içinπ/|b| olur. Burada x radyandır. A veya b sıfır olduğunda fonksiyonun tanımı ayrıca incelenir; sabit fonksiyonun her pozitif sayısı dönemdir ama en küçük pozitif temel periyodu yoktur.",
+  "to": "A≠0, b≠0 için A sin(bx+c)+d ve A cos(bx+c)+d temel periyodu 2π/|b|; tan/cot için π/|b| olur. Burada x radyandır. A veya b sıfır olduğunda fonksiyonun tanımı ayrıca incelenir; sabit fonksiyonun her pozitif sayısı dönemdir ama en küçük pozitif temel periyodu yoktur."
+ },
+ {
+  "from": "A sin(bx+c)+d için |A| genlik, d orta çizgi, b yatay ölçek ve c fazı belirler. Sin/cos görüntüsü[d−|A|, d+|A|] olur. b≠0 iken yatay kayma−c/b’dir; c’nin işaretini tek başına kayma yönü sayma.",
+  "to": "A sin(bx+c)+d için |A| genlik, d orta çizgi, b yatay ölçek ve c fazı belirler. Sin/cos görüntüsü [d−|A|, d+|A|] olur. b≠0 iken yatay kayma −c/b’dir; c’nin işaretini tek başına kayma yönü sayma."
+ },
+ {
+  "from": "Örneğin 2sin(3x−π)+1 için genlik 2, orta çizgi 1, periyot 2π/3 ve sağa kaymaπ/3’tür. Ekran modeli derece birimini açık kullanırsa karşılık gelen periyot 360°/|b| olur. Bir grafiğin x birimi değişirken sayısal dönem de değişir; fiziksel örüntü aynı kalır.",
+  "to": "Örneğin 2sin(3x−π)+1 için genlik 2, orta çizgi 1, periyot 2π/3 ve sağa kayma π/3’tür. Ekran modeli derece birimini açık kullanırsa karşılık gelen periyot 360°/|b| olur. Bir grafiğin x birimi değişirken sayısal dönem de değişir; fiziksel örüntü aynı kalır."
+ },
+ {
+  "from": "tan x her(−π/2+kπ,π/2+kπ) aralığında artar ve sınırda tanımsızdır; cot x, (kπ,(k+1)π) aralığında azalır. Tanım dışı sınırların iki yanını tek çizgiyle birleştirmek gerçekte bulunmayan bir grafik parçası çizer.",
+  "to": "tan x her (−π/2+kπ,π/2+kπ) aralığında artar ve sınırda tanımsızdır; cot x, (kπ,(k+1)π) aralığında azalır. Tanım dışı sınırların iki yanını tek çizgiyle birleştirmek gerçekte bulunmayan bir grafik parçası çizer."
+ },
+ {
+  "from": "Sinüs tüm R’de bire bir olmadığı için tersini tanımlarken[−π/2,π/2] aralığına kısıtlanır: arcsin:[−1,1]→[−π/2,π/2]. Arccos’un çıktı aralığı[0,π], arctan’ınki(−π/2,π/2)’dir. Ters fonksiyon tek bir esas açı döndürür.",
+  "to": "Sinüs tüm R’de bire bir olmadığı için tersini tanımlarken [−π/2,π/2] aralığına kısıtlanır: arcsin:[−1,1]→[−π/2,π/2]. Arccos’un çıktı aralığı [0,π], arctan’ınki (−π/2,π/2)’dir. Ters fonksiyon tek bir esas açı döndürür."
+ },
+ {
+  "from": "İki birim vektörün aralarındaki açı farkından skaler çarpım cos(A−B)=cosAcosB+sinAsinB verir. B yerine−B yazarsan cos(A+B)=cosAcosB−sinAsinB elde edilir. Toplam açıda iki sinüs çarpımının önündeki eksi önemlidir.",
+  "to": "İki birim vektörün aralarındaki açı farkından skaler çarpım cos(A−B)=cosAcosB+sinAsinB verir. B yerine −B yazarsan cos(A+B)=cosAcosB−sinAsinB elde edilir. Toplam açıda iki sinüs çarpımının önündeki eksi önemlidir."
+ },
+ {
+  "from": "sin 15°=sin(45°−30°)=(√6−√2)/4 bulunur. Sinüsün tekliğini kullanarak B’nin işaretini değiştirdiğinde fark formülünün çıktığını da kontrol edebilirsin. Açı birimlerini eşitlemeden 45 ileπ/6’yı aynı toplamın ham sayıları gibi toplama.",
+  "to": "sin 15°=sin(45°−30°)=(√6−√2)/4 bulunur. Sinüsün tekliğini kullanarak B’nin işaretini değiştirdiğinde fark formülünün çıktığını da kontrol edebilirsin. Açı birimlerini eşitlemeden 45 ile π/6’yı aynı toplamın ham sayıları gibi toplama."
+ },
+ {
+  "from": "cosA=1−2sin²(A/2) ve cosA=2cos²(A/2)−1’den sin²(A/2)=(1−cosA)/2, cos²(A/2)=(1+cosA)/2 çıkar. Karekök alınca± bulunur; A/2’nin bölgesi işareti belirler. Yarım açı her zaman dar açı değildir.",
+  "to": "cosA=1−2sin²(A/2) ve cosA=2cos²(A/2)−1’den sin²(A/2)=(1−cosA)/2, cos²(A/2)=(1+cosA)/2 çıkar. Karekök alınca ± bulunur; A/2’nin bölgesi işareti belirler. Yarım açı her zaman dar açı değildir."
+ },
+ {
+  "from": "tan(A/2)=sinA/(1+cosA) veya(1−cosA)/sinA, yazılan payda sıfır değilse kullanılabilir. İki yazımın tanım kümeleri bire bir aynı değildir. A=π örneğinde tan(A/2) tanımsızken bazı ara ifadeler 0/0 verebilir; bunlar iptal edilecek sayılar değildir.",
+  "to": "tan(A/2)=sinA/(1+cosA) veya (1−cosA)/sinA, yazılan payda sıfır değilse kullanılabilir. İki yazımın tanım kümeleri bire bir aynı değildir. A=π örneğinde tan(A/2) tanımsızken bazı ara ifadeler 0/0 verebilir; bunlar iptal edilecek sayılar değildir."
+ },
+ {
+  "from": "a/sinA=b/sinB=c/sinC=2R, R çevrel çember yarıçapı olmak üzere her geçerli üçgende doğrudur. Eşleşme karşılıklıdır; a’yı sinB ile aynı orana rastgele koyamazsın. İki açı biliniyorsa üçüncüyüπ−A−B ile bulup ölçeği belirleyebilirsin.",
+  "to": "a/sinA=b/sinB=c/sinC=2R, R çevrel çember yarıçapı olmak üzere her geçerli üçgende doğrudur. Eşleşme karşılıklıdır; a’yı sinB ile aynı orana rastgele koyamazsın. İki açı biliniyorsa üçüncüyü π−A−B ile bulup ölçeği belirleyebilirsin."
+ },
+ {
+  "from": "tanx=a için x=θ+kπ, cotx=a için de θ+kπ kullanılır; ilgili kutup açıları tanımda zaten dışlanır. Verilen çözüm aralığı[0,2π) gibi yarı açıksa 2π alınmaz. Model bir tam turdaki kökleri gösterir; bütün R çözümü için periyodik aileyi de söylemen gerekir.",
+  "to": "tanx=a için x=θ+kπ, cotx=a için de θ+kπ kullanılır; ilgili kutup açıları tanımda zaten dışlanır. Verilen çözüm aralığı [0,2π) gibi yarı açıksa 2π alınmaz. Model bir tam turdaki kökleri gösterir; bütün R çözümü için periyodik aileyi de söylemen gerekir."
+ },
+ {
+  "from": "a sinx+b cosx=0 için a≠0 ise cosx=0 değerleri ilk ifadede±a verir ve kök olmaz; bu kontrol sonrası tanx=−b/a yazılabilir. a=0, b≠0 ise doğrudan cosx=0 çözülür. a=b=0 olduğunda bütün gerçekler geçerlidir.",
+  "to": "a sinx+b cosx=0 için a≠0 ise cosx=0 değerleri ilk ifadede ±a verir ve kök olmaz; bu kontrol sonrası tanx=−b/a yazılabilir. a=0, b≠0 ise doğrudan cosx=0 çözülür. a=b=0 olduğunda bütün gerçekler geçerlidir."
+ },
+ {
+  "from": "Alt modellerde önce tahmin et, bir sayı veya koşulla gerekçe yaz, sonra aynı parametrelerden hesaplanan sonuçla karşılaştır. Derece/radyan birimini ve tanım dışı noktaları görünür tut. Model kullanımı kendi başına konu tamamlama, doğru cevap veya XP sayılmaz; bağımsız özgün sorularla çözümünü sınarsın.",
+  "to": "Alt modellerde önce tahmin et, bir sayı veya koşulla gerekçe yaz, sonra aynı parametrelerden hesaplanan sonuçla karşılaştır. Derece/radyan birimini ve tanım dışı noktaları görünür tut. Bağımsız özgün sorularla çözümünü sınarsın."
+ },
+ {
+  "from": "Bir günlük hayat modeli kurarken başlangıç miktarını, artış oranını ve geçerli giriş aralığını açık yaz. Gerçek veriden birkaç nokta görmek sonsuz aralıkta doğrusal yasayı kanıtlamaz; öğretim modelinin varsayımı belirtilmelidir. Keşifte kural, küme ve işlem sırasını tahminle denetle; kaydın XP veya soru doğrusu olmadığını aklında tut.",
+  "to": "Bir günlük hayat modeli kurarken başlangıç miktarını, artış oranını ve geçerli giriş aralığını açık yaz. Gerçek veriden birkaç nokta görmek sonsuz aralıkta doğrusal yasayı kanıtlamaz; öğretim modelinin varsayımı belirtilmelidir. Keşifte kural, küme ve işlem sırasını tahminle denetle."
+ },
+ {
+  "from": "Bir kümede alınan en küçük ve en büyük değerler, bütün o kümedeki çıktılarla karşılaştırılarak belirlenir; bunlara ulaşılan girdiler ayrıca yazılır. f(x)=x², [−2,1] üzerinde [−2,0]'da azalır ve [0,1]'de artar; minimum 0, x=0'da, maksimum 4, x=−2'dedir. Açık uçta yalnız yaklaşılan bir yükseklik elde edilmiyorsa onu alınan maksimum diye etiketleme; yerel bir tepe ile bütün kümenin en büyük değerini de ayır.",
+  "to": "Bir kümede alınan en küçük ve en büyük değerler, bütün o kümedeki çıktılarla karşılaştırılarak belirlenir; bunlara ulaşılan girdiler ayrıca yazılır. f(x)=x², [−2,1] üzerinde [−2,0]'da azalır ve [0,1]'de artar; minimum 0, x=0'da, maksimum 4, x=−2'dedir. Açık uçta yalnız yaklaşılan ama alınmayan bir yüksekliği maksimum diye etiketleme; yerel bir tepe ile bütün kümenin en büyük değerini de ayır."
+ },
+ {
+  "from": "P(x)=5 sabit ama sıfır olmayan bir polinomdur; x⁰ katsayısı 5 olduğu için derecesi 0'dır. P(x)=0 sıfır polinomunda hiçbir sıfır olmayan baş katsayı yoktur; bu okul tanımında derece tanımsızdır. Model bunu 0 derecesi diye etiketlemez; sıfır polinomu ayrı durumdur.",
+  "to": "P(x)=5 sabit ama sıfır olmayan bir polinomdur; x⁰ katsayısı 5 olduğu için derecesi 0'dır. P(x)=0 sıfır polinomunda hiçbir sıfır olmayan baş katsayı yoktur; bu tanımda derece tanımsızdır. Model bunu 0 derecesi diye etiketlemez; sıfır polinomu ayrı durumdur."
+ },
+ {
+  "from": "Modelde katsayıları değiştir, bir bölme tahmini ve gerekçe yaz, sonra gerçek ara işlemler ile DQ+R'yi karşılaştır. P(0), P(1), çift/tek katsayı toplamı ve çizilmiş seçili nokta bağımsız HTML sonuçlarında da yer alır. Bir görselin açılması veya katsayı sürüklemek bağımsız soru doğrusu, XP ya da konu tamamlanması oluşturmaz.",
+  "to": "Modelde katsayıları değiştir, bir bölme tahmini ve gerekçe yaz, sonra gerçek ara işlemler ile DQ+R'yi karşılaştır."
+ }
+]

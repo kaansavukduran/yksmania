@@ -35,6 +35,13 @@ describe("display typesetting", () => {
     expect(typeset(once)).toBe(once);
   });
 
+  it("lowers a sentence capital on a function name only when mathematics follows", () => {
+    expect(typeset("Log₂(8·4)=log₂8+log₂4. Sin x=sin θ için")).toBe("log₂(8·4)=log₂8+log₂4. sin x=sin θ için");
+    expect(typeset("Cos2u ve Tan A; Log_g ile Ln e")).toBe("cos2u ve tan A; log_g ile ln e");
+    expect(typeset("Tan vakti Sinir sistemi, Logaritma ve Tanım")).toBe("Tan vakti Sinir sistemi, Logaritma ve Tanım");
+    expect(typeset("Sinüs ve Cos kısaltması")).toBe("Sinüs ve Cos kısaltması");
+  });
+
   it("keeps a two-letter symbol with a max/min subscript together", () => {
     expect(typeset("Statik sürtünme fs,max değerini aşamaz.")).toBe("Statik sürtünme fs,max değerini aşamaz.");
     expect(typeset("ip,makara ve kütle")).toBe("ip, makara ve kütle");

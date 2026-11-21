@@ -27,6 +27,13 @@ const SHORT_WORDS = new Set(["ve", "de", "da", "ki", "ya"]);
 const semicolonDigit = /;(?=\d)/g;
 const sentenceDigit = new RegExp(`([${L}]{4,})\\.(?=\\d)`, "g");
 const linkLike = /[/_#@]|https?:|www\.|\.pdf|\.html/;
+// “Sin x”, “Log₂8”, “Cos2u”: an automatic sentence capital on a function name.
+// Only when mathematics follows (a digit, an index, a bracket or a lone variable),
+// so ordinary words such as “Tan vakti” or “Sinir” are left alone.
+const capitalFunction = new RegExp(
+  `(?<![A-Za-zÇĞİÖŞÜ${L}])(Sin|Cos|Tan|Cot|Sec|Csc|Log|Ln)(?=[0-9₀-₉²³(_]|\\s[A-Za-zαβθφ](?![A-Za-z${L}]))`,
+  "g",
+);
 
 function fixToken(token: string): string {
   if (linkLike.test(token)) return token;
@@ -51,5 +58,6 @@ export function typeset(original: string): string {
     .replace(wordSign, (m, word: string) => (KEEP.has(word) || (word.length < 3 && !SHORT_WORDS.has(word)) ? m : `${word} `))
     .replace(semicolonDigit, "; ")
     .replace(sentenceDigit, "$1. ")
+    .replace(capitalFunction, (name: string) => name.toLowerCase())
     .replace(ellipsis, "…");
 }

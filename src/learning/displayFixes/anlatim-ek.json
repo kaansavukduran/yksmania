@@ -64,6 +64,10 @@
   "to": "Aynı iki durumun ΔU=mgΔh değeri ve tutarlı enerji hesabından çıkan fiziksel hareket sonucu değişmez."
  },
  {
+  "from": "Aynı çizgi daha kısaλ ve daha büyükf ile görülür; c yine aynıdır.",
+  "to": "Aynı çizgi daha kısa λ ve daha büyük f ile görülür; c yine aynıdır."
+ },
+ {
   "from": "Açık kişileştirme bağlamında tekil veya çoğul yüklem kullanılabilir. Nötr okul örneğindeki tekil kuralı bu bağlama koşulsuz taşınmaz.",
   "to": "Açık kişileştirme bağlamında tekil veya çoğul yüklem kullanılabilir. Nötr örnekteki tekil kuralı bu bağlama koşulsuz taşınmaz."
  },
@@ -88,12 +92,24 @@
   "to": "Birleşmiş Milletler: 1941’den 1945’e"
  },
  {
+  "from": "Boşluk yayılma hızıc; frekans ve tek foton enerjisi artabilir.",
+  "to": "Boşluk yayılma hızı c; frekans ve tek foton enerjisi artabilir."
+ },
+ {
+  "from": "Boşlukta hızıc; enerji azalması frekansın azalmasıyla olur.",
+  "to": "Boşlukta hızı c; enerji azalması frekansın azalmasıyla olur."
+ },
+ {
   "from": "Bu düzgün akış modelinde |akıntı|<suya göre sürat; eşitlikte dik bileşen 0 olur.",
   "to": "Bu düzgün akış modelinde |akıntı| < suya göre sürat; eşitlikte dik bileşen 0 olur."
  },
  {
   "from": "Bu okul tanımında tanımsız; sıfır olmayan sabitinki 0.",
   "to": "Bu tanımda tanımsız; sıfır olmayan sabitinki 0."
+ },
+ {
+  "from": "Comptonθ hangi açıdır?",
+  "to": "Compton θ hangi açıdır?"
  },
  {
   "from": "Doğrudan neden iradeli insan eylemi mi yoksa doğal süreç mi?Aynı olay dizisinde ikisi bulunabilir.",
@@ -108,12 +124,20 @@
   "to": "E ve B aynı anda ters dönerse yayılma neden geri dönmez?"
  },
  {
+  "from": "E=Q/(εA),kenar etkileri ihmal edildiğinde.",
+  "to": "E=Q/(εA), kenar etkileri ihmal edildiğinde."
+ },
+ {
   "from": "E=hf arttığı için aynıP=N·E değerini taşımak üzere saniyedeki foton sayısı azalır.",
   "to": "E=hf arttığı için aynı P=N·E değerini taşımak üzere saniyedeki foton sayısı azalır."
  },
  {
   "from": "EBOB(x,y)=1. Yalnızxy=m/d koşulu asıl EBOB’u korumaya yetmez.",
   "to": "EBOB(x,y)=1. Yalnız xy=m/d koşulu asıl EBOB’u korumaya yetmez."
+ },
+ {
+  "from": "Einsteinın enerji bütçesi",
+  "to": "Einstein’ın enerji bütçesi"
  },
  {
   "from": "Ek tepkime ve ideal olmayan etkinlik farkları dışlanan okul modelinde hayır; denge derişimleri ve tuzun çözünürlüğü değişir.",
@@ -132,6 +156,10 @@
   "to": "Etkin E sabitken üst sınır 2E’dir; I görünür payda sabitini değiştirir. Bu her inhibitöre genellenmez."
  },
  {
+  "from": "Evet; [0,360°) veya[0,2π).",
+  "to": "Evet; [0,360°) veya [0,2π)."
+ },
+ {
   "from": "Evrenin başlangıç koşulları kendi başlangıç anına aittir;τ=global t−evre başlangıcı kullanılır.",
   "to": "Evrenin başlangıç koşulları kendi başlangıç anına aittir; τ = global t − evre başlangıcı kullanılır."
  },
@@ -144,12 +172,20 @@
   "to": "Gevşek, az gelişmiş ana malzeme; volkanik kum/tüf tipik örneği."
  },
  {
+  "from": "H, He⁺, Li²⁺gibi yalnız bir elektronlu sistem; Z’nin mutlaka 1 olması gerekmez.",
+  "to": "H, He⁺, Li²⁺ gibi yalnız bir elektronlu sistem; Z’nin mutlaka 1 olması gerekmez."
+ },
+ {
   "from": "Hat:harf düzeni; tezhip:ince bezeme; ebru:su yüzeyi desenini kâğıda aktarma; minyatür:küçük ayrıntılı tasvir. Bir sayfada birden çok teknik bulunabilir.",
   "to": "Hat: harf düzeni; tezhip: ince bezeme; ebru: su yüzeyi desenini kâğıda aktarma; minyatür: küçük ayrıntılı tasvir. Bir sayfada birden çok teknik bulunabilir."
  },
  {
   "from": "Hayır. Toplanabilir hacimde eşitV aritmetik; eşitm,2ρ₁ρ₂/(ρ₁+ρ₂) verir. Gerçek son hacim ayrıca ölçülmüşse doğrudan mtop/Vson kullanılır.",
   "to": "Hayır. Toplanabilir hacimde eşit V aritmetik; eşit m, 2ρ₁ρ₂/(ρ₁+ρ₂) verir. Gerçek son hacim ayrıca ölçülmüşse doğrudan mtop/Vson kullanılır."
+ },
+ {
+  "from": "Hayır. r>0 için asal karekök i√r; denklemin kökleri±i√r’dir.",
+  "to": "Hayır. r>0 için asal karekök i√r; denklemin kökleri ±i√r’dir."
  },
  {
   "from": "Hayır; Bohr Coulomb modelindeK=−E pozitif, U=2 E negatiftir.",
@@ -168,6 +204,10 @@
   "to": "Hayır; çevresel fenotip yanıtı olabilir. Seçilim için kalıtsal farkla bağlantılı yaşam/üreme katkısı gerekir."
  },
  {
+  "from": "Hayır;Φ=P/hf, f arttıkça Φ azalır.",
+  "to": "Hayır; Φ=P/hf, f arttıkça Φ azalır."
+ },
+ {
   "from": "I:cd;Φ:lm;E:lx=lm/m².",
   "to": "I: cd; Φ: lm; E: lx=lm/m²."
  },
@@ -182,6 +222,10 @@
  {
   "from": "Küçülür. Örneğin(1/2)⁴<(1/2)²; eşitsizlikte üs sırası ters okunur.",
   "to": "Küçülür. Örneğin (1/2)⁴<(1/2)²; eşitsizlikte üs sırası ters okunur."
+ },
+ {
+  "from": "Maviye kaymadaλ, f ve boşluk hızı nasıl değişir?",
+  "to": "Maviye kaymada λ, f ve boşluk hızı nasıl değişir?"
  },
  {
   "from": "Noktasal/öteleme modelindeΔKnet işe eşittir. Seçilmiş kuvvet ancak diğer kuvvetlerin net işi 0 ise tek başına aynı sonucu verir.",
@@ -204,16 +248,36 @@
   "to": "Ortak pozitif tam çarpan t serbest kalır; a=mt, b=nt aynı oranı verir ve toplam (m+n)t tek değerli olmaz."
  },
  {
+  "from": "Ortamdaλ ve v birlikte değişir",
+  "to": "Ortamda λ ve v birlikte değişir"
+ },
+ {
   "from": "P=DQ+R, D≠0; R=0 veya degR<degD.",
   "to": "P=DQ+R, D≠0; R=0 veya der(R)<der(D)."
+ },
+ {
+  "from": "Parçalı hareketin ikinci evresindeτneden yeniden başlar?",
+  "to": "Parçalı hareketin ikinci evresinde τ neden yeniden başlar?"
+ },
+ {
+  "from": "Planckın kesikli aktarımı",
+  "to": "Planck’ın kesikli aktarımı"
  },
  {
   "from": "Q=meriyenL; bütün başlangıç kütlesi yalnız tamamı erirse kullanılır. ΔT=0 enerji aktarımı yok demek değildir.",
   "to": "Q=m(eriyen)·L; bütün başlangıç kütlesi yalnız tamamı erirse kullanılır. ΔT=0 enerji aktarımı yok demek değildir."
  },
  {
+  "from": "Radyal ışık formülündekiβ>0 neyi temsil eder?",
+  "to": "Radyal ışık formülündeki β>0 neyi temsil eder?"
+ },
+ {
   "from": "Rusya:1917 devrimlerinden yeni ekonomi politikasına",
   "to": "Rusya: 1917 devrimlerinden yeni ekonomi politikasına"
+ },
+ {
+  "from": "Sabit ivmedeτ=−v₀/a sıfırını bul; 0<τ<evre süresi ve hızın işaret değişimi koşulunu kontrol et.",
+  "to": "Sabit ivmede τ=−v₀/a sıfırını bul; 0<τ<evre süresi ve hızın işaret değişimi koşulunu kontrol et."
  },
  {
   "from": "Seçili OGM yönteminden özgün uyarlama",
@@ -264,6 +328,10 @@
   "to": "Seçilmiş kuvvet işi hangi koşulda ΔK’ye eşittir?"
  },
  {
+  "from": "Sin x=sinθ için hangi iki aile vardır?",
+  "to": "sin x = sin θ için hangi iki aile vardır?"
+ },
+ {
   "from": "Son miktar=başlangıç+gerçek teslimler−gerçek çıkış; yalnız kapasiteyi çıkış diye kullanma.",
   "to": "Son miktar = başlangıç + gerçek teslimler − gerçek çıkış; yalnız kapasiteyi çıkış diye kullanma."
  },
@@ -280,8 +348,16 @@
   "to": "Tek fiilimsi temel yüklemdir; yüklem dışında başka yan yapı yoktur. Dil bilgisi sınıflamasında bu cümle basit isim cümlesidir."
  },
  {
+  "from": "Tek yarıkta merkez neden ikiλL/a genişliğindedir?",
+  "to": "Tek yarıkta merkez neden iki λL/a genişliğindedir?"
+ },
+ {
   "from": "Tipik tek çeneklide belirgin öz çevresinde çok sayıda iletim grubu; çift çeneklide merkezde yıldız biçimli ksilem ve aralarda floem görülür. Bunlar tipik okul örnekleridir.",
   "to": "Tipik tek çeneklide belirgin öz çevresinde çok sayıda iletim grubu; çift çeneklide merkezde yıldız biçimli ksilem ve aralarda floem görülür. Bunlar tipik örneklerdir."
+ },
+ {
+  "from": "Toplanan elektron/s; idealη sabitseeηΦ.",
+  "to": "Toplanan elektron/s; ideal η sabitse eηΦ."
  },
  {
   "from": "Tortum, Sera ve Yedigöller okul örnekleri; set malzemesi kütle hareketidir.",
@@ -294,6 +370,14 @@
  {
   "from": "Uçlarda radyal hız sıfırdır ve hız yarıçapa diktir; genel L=mrvsinθ bu noktalarda mrv olur.",
   "to": "Uçlarda radyal hız sıfırdır ve hız yarıçapa diktir; genel L=mrv·sin θ bu noktalarda mrv olur."
+ },
+ {
+  "from": "Yayda±xsapmaları için hangi nicelik aynı, hangisi zıttır?",
+  "to": "Yayda ±x sapmaları için hangi nicelik aynı, hangisi zıttır?"
+ },
+ {
+  "from": "Yokluk otomatik taşınmaz; bütün ifadenin fark oranı h∛h→0 olduğundan ürünün türevi0 olabilir.",
+  "to": "Yokluk otomatik taşınmaz; bütün ifadenin fark oranı h∛h→0 olduğundan ürünün türevi 0 olabilir."
  },
  {
   "from": "Yumuşak kireçli ana malzeme ve koyu üst katın okul örneği.",
@@ -320,12 +404,20 @@
   "to": "a≠0. 0⁰ bu kapsamda tanımsızdır."
  },
  {
+  "from": "f Hz iseh/e eV·s; enerji J iseh J·s.",
+  "to": "f Hz ise h/e eV·s; enerji J ise h J·s."
+ },
+ {
   "from": "n≥2 için(n−2)³; bu gerçek bütün kristallerin zorunlu örgüsü değildir.",
   "to": "n≥2 için (n−2)³; bu gerçek bütün kristallerin zorunlu örgüsü değildir."
  },
  {
   "from": "n≥2 içinS_n−S_(n−1); a_1=S_1 ayrıca kontrol edilir.",
   "to": "n≥2 için S_n−S_(n−1); a_1=S_1 ayrıca kontrol edilir."
+ },
+ {
+  "from": "v=0 daγ kaçtır?",
+  "to": "v=0’da γ kaçtır?"
  },
  {
   "from": "x≠0 için 2 log_a|x|; 2 log_a x yalnızx>0’da.",
@@ -354,6 +446,18 @@
  {
   "from": "İşaretli alanΔx; mutlak alan toplamı yoldur. Yön değişirse bu ikisi farklı olabilir.",
   "to": "İşaretli alan Δx; mutlak alan toplamı yoldur. Yön değişirse bu ikisi farklı olabilir."
+ },
+ {
+  "from": "θ+2kπ veπ−θ+2kπ; k tam sayı.",
+  "to": "θ+2kπ ve π−θ+2kπ; k tam sayı."
+ },
+ {
+  "from": "λ₀ ileλ neden ayrı yazılır?",
+  "to": "λ₀ ile λ neden ayrı yazılır?"
+ },
+ {
+  "from": "λ₀boşluk,λ=λ₀/n ortam dalga boyudur; indis aynı formülde ikinci kez bölünmez.",
+  "to": "λ₀ boşluk, λ=λ₀/n ortam dalga boyudur; indis aynı formülde ikinci kez bölünmez."
  },
  {
   "from": "∛x tek başına=0’da sonlu türevli değilse x²∛x için ne söylenir?",

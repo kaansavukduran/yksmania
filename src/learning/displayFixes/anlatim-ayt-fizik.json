@@ -1,0 +1,394 @@
+[
+ {
+  "from": "Alanı birim pozitif yük başına kuvvet diye tanımlamak, noktaya gerçekten+1 C gibi çok büyük bir yük konduğu anlamına gelmez. Çok küçük q0 için Felektrik/q0 oranı düşünülür; deneme yükü kaynak dağılımını belirgin değiştirmemelidir. Bu oran kaynağın oluşturduğu yerel E’yi tanımlar.",
+  "to": "Alanı birim pozitif yük başına kuvvet diye tanımlamak, noktaya gerçekten +1 C gibi çok büyük bir yük konduğu anlamına gelmez. Çok küçük q0 için Felektrik/q0 oranı düşünülür; deneme yükü kaynak dağılımını belirgin değiştirmemelidir. Bu oran kaynağın oluşturduğu yerel E’yi tanımlar."
+ },
+ {
+  "from": "Örneğin aynı noktada+1 nC için 3 μN, +2 nC için 6 μN ölçülüyorsa iki oran da3000 N/C verir. Negatif deneme yükünde kuvvet ters döner ama yönlü F/q oranı aynı E olur. Yüksüz bir taneciğe kuvvet 0 çıktığında 0/0 bölümüyle alan ölçülmez; alanı kaynak düzeninden veya farklı küçük test yükünden belirleriz.",
+  "to": "Örneğin aynı noktada +1 nC için 3 μN, +2 nC için 6 μN ölçülüyorsa iki oran da 3000 N/C verir. Negatif deneme yükünde kuvvet ters döner ama yönlü F/q oranı aynı E olur. Yüksüz bir taneciğe kuvvet 0 çıktığında 0/0 bölümüyle alan ölçülmez; alanı kaynak düzeninden veya farklı küçük test yükünden belirleriz."
+ },
+ {
+  "from": "Aynı doğru üzerindeki +4 μC x = 0 ve +1 μC x = 3 m kaynaklarının arasında alanlar zıttır. 4/x²=1/(3−x)² büyüklük eşitliği, 0<x<3 bölgesiyle birlikte çözülür. Pozitif uzaklıklarla 2/x=1/(3−x),dolayısıyla x = 2 m bulunur.",
+  "to": "Aynı doğru üzerindeki +4 μC x = 0 ve +1 μC x = 3 m kaynaklarının arasında alanlar zıttır. 4/x²=1/(3−x)² büyüklük eşitliği, 0<x<3 bölgesiyle birlikte çözülür. Pozitif uzaklıklarla 2/x=1/(3−x), dolayısıyla x = 2 m bulunur."
+ },
+ {
+  "from": "Düşey alanı işaretli Ey, yukarıyı artı seç. Elektrik kuvveti qEy, ağırlık−mg olduğundan ay=qEy/m−g olur. Negatif yükte yukarı elektrik kuvveti elde etmek için alan aşağı yönlü olabilir. Yük işaretini ve alan yönünü iki ayrı bilgi olarak işlemek çift eksi hatasını önler.",
+  "to": "Düşey alanı işaretli Ey, yukarıyı artı seç. Elektrik kuvveti qEy, ağırlık −mg olduğundan ay=qEy/m−g olur. Negatif yükte yukarı elektrik kuvveti elde etmek için alan aşağı yönlü olabilir. Yük işaretini ve alan yönünü iki ayrı bilgi olarak işlemek çift eksi hatasını önler."
+ },
+ {
+  "from": "Bu ek açıklamalar eski tek-kaynak keşfinin sayısal kapsamını büyütmüş sayılmaz; çoklu kaynak ve levha örnekleri burada kendi tam verileriyle çözülür. Eski sorular ve kayıtlar korunur, ileri soru seti ayrıdır. Öğrenme sırası kaynak→gözlem noktası→E→test kuvveti→gerekirse hareket olarak devam eder.",
+  "to": "Öğrenme sırası kaynak→gözlem noktası→E→test kuvveti→gerekirse hareket olarak devam eder."
+ },
+ {
+  "from": "Yakın dönem model çıkarımlarında yaklaşık%5 sıradan madde,%27 karanlık madde,%68 karanlık enerji değerleri kullanılır. Bunlar değişmez tanım sayıları değildir; bu bileşenlerin mikroskobik doğaları kesin çözülmüş diye anlatılmaz.",
+  "to": "Yakın dönem model çıkarımlarında yaklaşık %5 sıradan madde, %27 karanlık madde, %68 karanlık enerji değerleri kullanılır. Bunlar değişmez tanım sayıları değildir; bu bileşenlerin mikroskobik doğaları kesin çözülmüş diye anlatılmaz."
+ },
+ {
+  "from": "Altı kuark türü u, d, c, s, t, b ile gösterilir. u, c, t kuarklarının yükü+2e/3; d, s, b kuarklarının yükü−e/3 tür. Her kuarkın baryon sayısı 1/3 tür; elektrik yükü ile baryon sayısını aynı sütun gibi kullanma.",
+  "to": "Altı kuark türü u, d, c, s, t, b ile gösterilir. u, c, t kuarklarının yükü +2e/3; d, s, b kuarklarının yükü −e/3 tür. Her kuarkın baryon sayısı 1/3 tür; elektrik yükü ile baryon sayısını aynı sütun gibi kullanma."
+ },
+ {
+  "from": "Antikuarkın yükü ve baryon sayısı işaret değiştirir. Antiu yükü−2e/3, antid yükü+e/3 tür. Bileşiğin yükü bileşen yüklerinin toplamından hesaplanır; kuark sayısını toplam yük yerine yazmak sonuç vermez.",
+  "to": "Antikuarkın yükü ve baryon sayısı işaret değiştirir. Antiu yükü −2e/3, antid yükü +e/3 tür. Bileşiğin yükü bileşen yüklerinin toplamından hesaplanır; kuark sayısını toplam yük yerine yazmak sonuç vermez."
+ },
+ {
+  "from": "Elektron, müon, tau ile bunların nötrinoları leptonlardır. Elektron-müon-tau yükü−e, nötrinoların elektrik yükü sıfırdır. Leptonlar güçlü etkileşime katılmaz; yüklü olanlar elektromanyetik etkileşime de katılır.",
+  "to": "Elektron, müon, tau ile bunların nötrinoları leptonlardır. Elektron-müon-tau yükü −e, nötrinoların elektrik yükü sıfırdır. Leptonlar güçlü etkileşime katılmaz; yüklü olanlar elektromanyetik etkileşime de katılır."
+ },
+ {
+  "from": "Elektronla pozitron aynı durgun kütleye, zıt elektrik yüküne sahiptir. Antiprotonun yükü−e dir; nötron ve antinötronun ikisi de nötr olması onların aynı parçacık olduğunu göstermez.",
+  "to": "Elektronla pozitron aynı durgun kütleye, zıt elektrik yüküne sahiptir. Antiprotonun yükü −e dir; nötron ve antinötronun ikisi de nötr olması onların aynı parçacık olduğunu göstermez."
+ },
+ {
+  "from": "Alfa parçacığı iki proton ve iki nötron içeren helyum çekirdeğidir; yükü+2e, kütle numarası 4 tür. X(A, Z)→Y(A−4, Z−2)+α denkleminde hem nükleon sayısı hem elektrik yükü dengelenir.",
+  "to": "Alfa parçacığı iki proton ve iki nötron içeren helyum çekirdeğidir; yükü +2e, kütle numarası 4 tür. X(A, Z)→Y(A−4, Z−2)+α denkleminde hem nükleon sayısı hem elektrik yükü dengelenir."
+ },
+ {
+  "from": "β=v/c ve γ=1/√(1−β²) tanımlanır. Kütleli cisim için 0≤|β|<1;γ≥1 dir. Eşitlik yalnız v=0 da olur. β büyüdükçe γ doğrusal değil, giderek daha hızlı artar.",
+  "to": "β=v/c ve γ=1/√(1−β²) tanımlanır. Kütleli cisim için 0≤|β|<1; γ≥1 dir. Eşitlik yalnız v=0 da olur. β büyüdükçe γ doğrusal değil, giderek daha hızlı artar."
+ },
+ {
+  "from": "S′ çerçevesi S ye göre+x yönünde βc ile gidiyorsa ct′=γ(ct−βx), x′=γ(x−βct) olur. Burada ct ve x aynı uzunluk birimiyle yazılır; ct zamanı ışığın o sürede aldığı yola çevirir.",
+  "to": "S′ çerçevesi S ye göre +x yönünde βc ile gidiyorsa ct′=γ(ct−βx), x′=γ(x−βct) olur. Burada ct ve x aynı uzunluk birimiyle yazılır; ct zamanı ışığın o sürede aldığı yola çevirir."
+ },
+ {
+  "from": "İki olay için farkları aynı formülle dönüştürmek eşzamanlılığı gösterir. S deΔct=0 ama Δx≠0 ise β≠0 için Δct′=−γβΔx olur. İşaret hangi olayın önce olduğunu seçilen+x yönüne göre açıklar.",
+  "to": "İki olay için farkları aynı formülle dönüştürmek eşzamanlılığı gösterir. S de Δct=0 ama Δx≠0 ise β≠0 için Δct′=−γβΔx olur. İşaret hangi olayın önce olduğunu seçilen +x yönüne göre açıklar."
+ },
+ {
+  "from": "Kelvin sıcaklığı Celsius sayısına yaklaşık 273,15 eklenerek bulunur. Sıcaklığın iki katı gibi oranlar mutlak sıcaklık üzerinden kurulur.20°C den 40°C ye çıkış T nin iki katı değildir; Wien ve T⁴ bağıntılarına doğrudan Celsius koyulmaz.",
+  "to": "Kelvin sıcaklığı Celsius sayısına yaklaşık 273,15 eklenerek bulunur. Sıcaklığın iki katı gibi oranlar mutlak sıcaklık üzerinden kurulur. 20°C den 40°C ye çıkış T nin iki katı değildir; Wien ve T⁴ bağıntılarına doğrudan Celsius koyulmaz."
+ },
+ {
+  "from": "Modelde Planck spektral radyansı Bλ W·sr⁻¹·m⁻³ birimiyle hesaplanır. HTML sonuçta toplam yüzey çıkışı σT⁴ W/m² ayrıca verilir. Radyans ile bütün yönlere ve dalga boylarına integre edilmiş yüzey çıkışı farklı niceliklerdir.",
+  "to": "Modelde Planck spektral radyansı Bλ W·sr⁻¹·m⁻³ birimiyle hesaplanır. Model sonucunda toplam yüzey çıkışı σT⁴ W/m² ayrıca verilir. Radyans ile bütün yönlere ve dalga boylarına integre edilmiş yüzey çıkışı farklı niceliklerdir."
+ },
+ {
+  "from": "Planckın tarihsel osilatör modelinde enerji değişimleri hf nin tam sayı katlarıyla kurulur. h Planck sabiti, f frekanstır; bir aktarım paketi hf kadardır. Bu kuantumlama yüksek frekanstaki modların termal katkısını bastırır.",
+  "to": "Planck’ın tarihsel osilatör modelinde enerji değişimleri hf nin tam sayı katlarıyla kurulur. h Planck sabiti, f frekanstır; bir aktarım paketi hf kadardır. Bu kuantumlama yüksek frekanstaki modların termal katkısını bastırır."
+ },
+ {
+  "from": "Tek foton için E=hf=hc/λ dır. Frekansı büyük foton daha enerjilidir; dalga boyu büyük foton daha az enerjilidir. Enerji joule veya elektronvolt ile yazılabilir;1 eV≈1,602×10⁻¹⁹ J dir.",
+  "to": "Tek foton için E=hf=hc/λ dır. Frekansı büyük foton daha enerjilidir; dalga boyu büyük foton daha az enerjilidir. Enerji joule veya elektronvolt ile yazılabilir; 1 eV≈1,602×10⁻¹⁹ J dir."
+ },
+ {
+  "from": "Sorularda hangi büyüklüğün sabit tutulduğu açıkça verilir. Bir eğrinin daha yüksek görünmesini yalnız daha sıcaklığa bağlamadan önce düşey eksenin toplam güç mü birim alan dağılımı mı olduğuna bak; ölçüm tanımı çözümün parçasıdır.",
+  "to": "Sorularda hangi büyüklüğün sabit tutulduğu açıkça verilir. Bir eğrinin daha yüksek görünmesini yalnız daha yüksek sıcaklığa bağlamadan önce düşey eksenin toplam güç mü birim alan dağılımı mı olduğuna bak; ölçüm tanımı çözümün parçasıdır."
+ },
+ {
+  "from": "W=hf₀=hc/λ₀ tanımlarıyla f₀ en küçük uygun frekans,λ₀ en büyük uygun dalga boyudur. Aynı yüzeyde frekansın artması veya dalga boyunun azalması tek foton enerjisini yükseltir.",
+  "to": "W=hf₀=hc/λ₀ tanımlarıyla f₀ en küçük uygun frekans, λ₀ en büyük uygun dalga boyudur. Aynı yüzeyde frekansın artması veya dalga boyunun azalması tek foton enerjisini yükseltir."
+ },
+ {
+  "from": "W büyük yüzey için f₀ büyük,λ₀ küçüktür. Bir yüzeyin uzun eşik dalga boyuna sahip olması, onu ancak daha kısa dalga boyunun kestiği değil, daha düşük foton enerjisine de izin verdiği anlamına gelir.",
+  "to": "W büyük yüzey için f₀ büyük, λ₀ küçüktür. Bir yüzeyin uzun eşik dalga boyuna sahip olması, onu ancak daha kısa dalga boyunun kestiği değil, daha düşük foton enerjisine de izin verdiği anlamına gelir."
+ },
+ {
+  "from": "Joule enerji ekseninde Kmax=hf−W doğrusunun eğimi h dir. Doğrunun frekans ekseni kesişimi f₀, uzantısının enerji ekseni kesişimi−W olur. Negatif uzantı gerçek negatif kinetik enerjili elektron değildir.",
+  "to": "Joule enerji ekseninde Kmax=hf−W doğrusunun eğimi h dir. Doğrunun frekans ekseni kesişimi f₀, uzantısının enerji ekseni kesişimi −W olur. Negatif uzantı gerçek negatif kinetik enerjili elektron değildir."
+ },
+ {
+  "from": "Benzer biçimde kesme gerilimi iş fonksiyonuyla affine biçimde azalır, ters orantı değildir. Oran sorusunda sembolik ifadeyi koruyup sonra sayısal veriyi yerleştirmek yanlış ezberi önler.",
+  "to": "Benzer biçimde kesme gerilimi iş fonksiyonuyla doğrusal biçimde azalır, ters orantı değildir. Oran sorusunda sembolik ifadeyi koruyup sonra sayısal veriyi yerleştirmek yanlış ezberi önler."
+ },
+ {
+  "from": "Kopan elektronların tamamı toplandığında doyma akımı oluşur. Verilen kuantum verimiη için ideal üst değer Isat=eηΦ dir. Gelen her fotonun kesin bir elektron kopardığı varsayımı ancakη1 ve uygun eşik koşulu açıkça verilirse kullanılır.",
+  "to": "Kopan elektronların tamamı toplandığında doyma akımı oluşur. Verilen kuantum verimi η için ideal üst değer Isat=eηΦ dir. Gelen her fotonun kesin bir elektron kopardığı varsayımı ancak η=1 ve uygun eşik koşulu açıkça verilirse kullanılır."
+ },
+ {
+  "from": "Gerçek yüzeyde yansıma, kayıplar ve enerjiye bağlı verim vardır. Aynı W tek başına aynıη demek değildir. Laboratuvar sonucu bu yüzden ölçülmüş bütün I-V eğrisi gibi uydurulmaz; öğretici üst sınır ile enerji bütçesi ayrı gösterilir.",
+  "to": "Gerçek yüzeyde yansıma, kayıplar ve enerjiye bağlı verim vardır. Aynı W tek başına aynı η demek değildir. Laboratuvar sonucu bu yüzden ölçülmüş bütün I-V eğrisi gibi uydurulmaz; öğretici üst sınır ile enerji bütçesi ayrı gösterilir."
+ },
+ {
+  "from": "Aynı yüzeyde daha büyük kesme gerilimi daha büyük Kmax ve dolayısıyla daha büyük foton enerjisi demektir. Doyma akımı iseηΦ hakkında bilgi verir. Bu iki ölçümün farklı görevleri vardır.",
+  "to": "Aynı yüzeyde daha büyük kesme gerilimi daha büyük Kmax ve dolayısıyla daha büyük foton enerjisi demektir. Doyma akımı ise ηΦ hakkında bilgi verir. Bu iki ölçümün farklı görevleri vardır."
+ },
+ {
+  "from": "İki kaynağın aynı kesme gerilimi aynı yüzey koşulunda aynı tek foton enerjisini gösterir, fakat aynı foton sayısını gerektirmez. Aynı doyma akımı daη ler eşit değilse tek başına aynı gelen akıyı kanıtlamaz.",
+  "to": "İki kaynağın aynı kesme gerilimi aynı yüzey koşulunda aynı tek foton enerjisini gösterir, fakat aynı foton sayısını gerektirmez. Aynı doyma akımı da η ler eşit değilse tek başına aynı gelen akıyı kanıtlamaz."
+ },
+ {
+  "from": "Eşik üstünde, frekans, yüzey veη sabitken foton/s sayısını iki kat yapmak ideal doyma akımını iki kat yapar. Kmax ve kesme gerilimi değişmez; her fotonun enerji bütçesi aynıdır.",
+  "to": "Eşik üstünde, frekans, yüzey ve η sabitken foton/s sayısını iki kat yapmak ideal doyma akımını iki kat yapar. Kmax ve kesme gerilimi değişmez; her fotonun enerji bütçesi aynıdır."
+ },
+ {
+  "from": "P sabitse Φ=P/hf olur. Frekansı yükseltmek tek fotonu daha enerjili yaparken saniyedeki foton sayısını azaltır. Eşik üstündeη sabit tutulursa ideal doyma akımı azalabilir, kesme gerilimi ise artar.",
+  "to": "P sabitse Φ=P/hf olur. Frekansı yükseltmek tek fotonu daha enerjili yaparken saniyedeki foton sayısını azaltır. Eşik üstünde η sabit tutulursa ideal doyma akımı azalabilir, kesme gerilimi ise artar."
+ },
+ {
+  "from": "Bu sonuç çelişki değildir: akım elektron sayısı/s, kesme gerilimi en büyük enerjiyle ilgilidir. Frekansa bağlıη ölçülmemişse gerçek akım için aynı kesin oran söylenmez; varsayımın soru içinde bulunması gerekir.",
+  "to": "Bu sonuç çelişki değildir: akım elektron sayısı/s, kesme gerilimi en büyük enerjiyle ilgilidir. Frekansa bağlı η ölçülmemişse gerçek akım için aynı kesin oran söylenmez; varsayımın soru içinde bulunması gerekir."
+ },
+ {
+  "from": "Gelen ışık+x boyunca, saçılan foton+x ten+y ye doğru θ açısıyla çizildiğinde elektronun y momentumu negatiftir. Başlangıç toplam y momentumu 0 olduğundan fotonun+y katkısını dengelemesi gerekir.",
+  "to": "Gelen ışık +x boyunca, saçılan foton +x ten +y ye doğru θ açısıyla çizildiğinde elektronun y momentumu negatiftir. Başlangıç toplam y momentumu 0 olduğundan fotonun +y katkısını dengelemesi gerekir."
+ },
+ {
+  "from": "θ0 için Δλ0,θ90° için Δλ=λC,θ180° için Δλ=2λC dir. Sıfır açı ideal sınırında enerji aktarımı da 0 olur; bu yüzden her açıda kesin pozitif enerji kaybı genellemesi yapılmaz.",
+  "to": "θ=0 için Δλ=0, θ=90° için Δλ=λC, θ=180° için Δλ=2λC dir. Sıfır açı ideal sınırında enerji aktarımı da 0 olur; bu yüzden her açıda kesin pozitif enerji kaybı genellemesi yapılmaz."
+ },
+ {
+  "from": "px, e=Eγ/c−(Eγ′/c)cosθ, py, e=−(Eγ′/c)sinθ dir. Vektörel fark elektronun yönünü ve momentumunu verir. Büyüklükleri doğrudanp γ−pγ′ diye çıkarmak yalnız aynı doğrultudaki özel durumda geçerlidir.",
+  "to": "px, e=Eγ/c−(Eγ′/c)cosθ, py, e=−(Eγ′/c)sinθ dir. Vektörel fark elektronun yönünü ve momentumunu verir. Büyüklükleri doğrudan pγ−pγ′ diye çıkarmak yalnız aynı doğrultudaki özel durumda geçerlidir."
+ },
+ {
+  "from": "Elektron için Ke=pe²/2me yaklaşımı ancak küçük kinetik enerjide geçerlidir. Genel enerji kontrolü(Ke+mec²)²=(pec)²+(mec²)² ile yapılır. Ke si dinlenim enerjisine yaklaşan elektron için klasik kontrol hatalı olabilir.",
+  "to": "Elektron için Ke=pe²/2me yaklaşımı ancak küçük kinetik enerjide geçerlidir. Genel enerji kontrolü (Ke+mec²)²=(pec)²+(mec²)² ile yapılır. Ke si dinlenim enerjisine yaklaşan elektron için klasik kontrol hatalı olabilir."
+ },
+ {
+  "from": "Bu olay foton-elektron etkileşiminde toplam enerjinin ve momentumun korunduğu, elektronun iç uyarılmasının bulunmadığı ideal saçılmadır. Bazı lise kaynakları bunu esnek çarpışma diye adlandırır; foton enerjisinin tek başına korunması anlamına gelmez.",
+  "to": "Bu olay foton-elektron etkileşiminde toplam enerjinin ve momentumun korunduğu, elektronun iç uyarılmasının bulunmadığı ideal saçılmadır. Bazı anlatımlar bunu esnek çarpışma diye adlandırır; foton enerjisinin tek başına korunması anlamına gelmez."
+ },
+ {
+  "from": "Momentumup olan kuantum parçacığına λ=h/p dalga boyu atanır. Bu elektronun etrafında görünür bir su dalgası taşındığı anlamına gelmez; kuantum durumunun girişim ve kırınım özelliğini betimler.",
+  "to": "Momentumu p olan kuantum parçacığına λ=h/p dalga boyu atanır. Bu elektronun etrafında görünür bir su dalgası taşındığı anlamına gelmez; kuantum durumunun girişim ve kırınım özelliğini betimler."
+ },
+ {
+  "from": "Yavaş kütleli parçacıkta p≈mv kullanılır; göreli hızlarda p=γmv gerekir. Foton içinp=E/c kullanılır. Her taneciğe p=mc yazarak de Broglie bağıntısı türetmek doğru bir genel yol değildir.",
+  "to": "Yavaş kütleli parçacıkta p≈mv kullanılır; göreli hızlarda p=γmv gerekir. Foton için p=E/c kullanılır. Her taneciğe p=mc yazarak de Broglie bağıntısı türetmek doğru bir genel yol değildir."
+ },
+ {
+  "from": "Ke büyüdüğünde göreli düzeltmeylepc=√(Ke(Ke+2mec²)) kullanılır. Ke yi eV biriminde alırsan elektronun dinlenim enerjisi yaklaşık 511000 eV dir. Ke/mec² oranı küçük değilse klasik yaklaşımı sessizce sürdürme.",
+  "to": "Ke büyüdüğünde göreli düzeltmeyle pc=√(Ke(Ke+2mec²)) kullanılır. Ke yi eV biriminde alırsan elektronun dinlenim enerjisi yaklaşık 511000 eV dir. Ke/mec² oranı küçük değilse klasik yaklaşımı sessizce sürdürme."
+ },
+ {
+  "from": "Compton hesabında λ′≥λ veEγ′≤Eγ sonuçlarını, enerji toplamını ve iki momentum bileşenini denetle. Sıfır açı sınırında eşitlikler doğru kalmalı;180° de kayma 2λC yi aşmamalıdır.",
+  "to": "Compton hesabında λ′≥λ ve Eγ′≤Eγ sonuçlarını, enerji toplamını ve iki momentum bileşenini denetle. Sıfır açı sınırında eşitlikler doğru kalmalı; 180° de kayma 2λC yi aşmamalıdır."
+ },
+ {
+  "from": "Madde dalgasında hız veya gerilim büyüdüğünde momentum artışı veλ azalması beklenir. Hangi yaklaşımın kullanıldığını ve bütün sayısal veriyi soru kartında belirtmek, keşfin son durumunu bilmeden çözümü mümkün kılar.",
+  "to": "Madde dalgasında hız veya gerilim büyüdüğünde momentum artışı ve λ azalması beklenir."
+ },
+ {
+  "from": "Başlangıçta durgun elektron U voltla hızlandırılırsa kinetik enerji eU olur. K≪mec² ise p≈√(2mee U), dolayısıyla λ≈h/√(2mee U) kullanılır; U dört katına çıkınca λ yaklaşık yarıya iner.",
+  "to": "Başlangıçta durgun elektron U voltla hızlandırılırsa kinetik enerji eU olur. K≪mₑc² ise p≈√(2mₑeU), dolayısıyla λ≈h/√(2mₑeU) kullanılır; U dört katına çıkınca λ yaklaşık yarıya iner."
+ },
+ {
+  "from": "Bir cihazı anlamak için ne gönderdiğini, ne algıladığını ve hangi fiziksel farkı görüntüye çevirdiğini sor. Görüntü adının aynı olması röntgen, ultrason, MR vePET in aynı ışını kullandığı anlamına gelmez.",
+  "to": "Bir cihazı anlamak için ne gönderdiğini, ne algıladığını ve hangi fiziksel farkı görüntüye çevirdiğini sor. Görüntü adının aynı olması röntgen, ultrason, MR ve PET in aynı ışını kullandığı anlamına gelmez."
+ },
+ {
+  "from": "İdeal tek enerjili saçılmasız ışında I=I₀exp(−μL) olur. μ zayıflama katsayısı, L yol uzunluğudur;μ cm⁻¹ veL cm seçilirse üs boyutsuzdur. Ardışık katmanlarda üstekiμL katkıları toplanır.",
+  "to": "İdeal tek enerjili saçılmasız ışında I=I₀exp(−μL) olur. μ zayıflama katsayısı, L yol uzunluğudur; μ cm⁻¹ ve L cm seçilirse üs boyutsuzdur. Ardışık katmanlarda üsteki μL katkıları toplanır."
+ },
+ {
+  "from": "P veN bölgeleri birleştirildiğinde taşıyıcı yayılması ve birleşmesi bir tükenim bölgesi ile iç alan oluşturur. İleri kutuplama potansiyel engelini azaltarak akımı kolaylaştırabilir; ters kutuplama olağan çalışma bölgesinde akımı büyük ölçüde sınırlar.",
+  "to": "P ve N bölgeleri birleştirildiğinde taşıyıcı yayılması ve birleşmesi bir tükenim bölgesi ile iç alan oluşturur. İleri kutuplama potansiyel engelini azaltarak akımı kolaylaştırabilir; ters kutuplama olağan çalışma bölgesinde akımı büyük ölçüde sınırlar."
+ },
+ {
+  "from": "Transistör küçük bir giriş işaretiyle daha büyük akımın akışını denetleyebilir; anahtarlama veya yükseltmede kullanılır. Bipolar transistörde NPN vePNP yapılar bulunur; alan etkili türlerde kontrol başka biçimde yapılır.",
+  "to": "Transistör küçük bir giriş işaretiyle daha büyük akımın akışını denetleyebilir; anahtarlama veya yükseltmede kullanılır. Bipolar transistörde NPN ve PNP yapılar bulunur; alan etkili türlerde kontrol başka biçimde yapılır."
+ },
+ {
+  "from": "Kritik sıcaklık Tc malzemeye bağlıdır; kritik alan ve akım da sınır koyar. TipII süper iletkenlerin karma durumunda manyetik akı tüpleri bulunabileceği için her koşulda bütün iç alan kesin sıfır cümlesi genellenmez. Soğutma da enerji ve sistem tasarımı gerektirir.",
+  "to": "Kritik sıcaklık Tc malzemeye bağlıdır; kritik alan ve akım da sınır koyar. Tip II süper iletkenlerin karma durumunda manyetik akı tüpleri bulunabileceği için her koşulda bütün iç alan kesin sıfır cümlesi genellenmez. Soğutma da enerji ve sistem tasarımı gerektirir."
+ },
+ {
+  "from": "P tipi malzeme yalnız pozitif yüklü atomlardan oluşmuş net pozitif blok değildir. Elektron-delik çiftleri ve katkı merkezleri bütünüyle yük dengesi korunabilir. Bir elektrik alanda elektron sürüklenmesi alanın tersine, delik sürüklenmesi alan yönündedir.",
+  "to": "P tipi malzeme yalnız pozitif yüklü atomlardan oluşmuş net pozitif blok değildir. Elektron-delik çiftleri ve katkı merkezleri birlikte sayıldığında yük dengesi korunur. Bir elektrik alanda elektron sürüklenmesi alanın tersine, delik sürüklenmesi alan yönündedir."
+ },
+ {
+  "from": "Işık sekmesinde bağıl hızı değiştirip aynı çizginin yerini karşılaştır. İki modelin hız bağıntısı aynı olmadığını gör; burada ses dosyası veya gerçek tıbbi ölçüm üretilmez. Tahmin-gerekçe karşılaştırması puansızdır ve bağımsız soru cevabı yerine sayılmaz.",
+  "to": "Işık sekmesinde bağıl hızı değiştirip aynı çizginin yerini karşılaştır. İki modelin hız bağıntısı aynı olmadığını gör; burada ses dosyası veya gerçek tıbbi ölçüm üretilmez."
+ },
+ {
+  "from": "Bu durum, dalganın frekansının veya genel ilerleme doğrultusunun ortadan kalktığı anlamına gelmez. Modelde fazı 0°,90°,180° seçerek vektörleri, normalize alanları ve HTML bileşenlerini karşılaştır; yalnız renk değişimine bakarak karar verme.",
+  "to": "Bu durum, dalganın frekansının veya genel ilerleme doğrultusunun ortadan kalktığı anlamına gelmez. Modelde fazı 0°, 90°, 180° seçerek vektörleri, normalize alanları karşılaştır; yalnız renk değişimine bakarak karar verme."
+ },
+ {
+  "from": "Coulomb bağlı dairesel Bohr modelinde potansiyel enerji U=2 Eₙ, kinetik enerji K=−Eₙ olur. Böylece K pozitiftir, U negatiftir ve toplamları Eₙ verir. Örneğin H temel hâlinde K=13,6 eV ve U=−27,2 eV olur.",
+  "to": "Coulomb bağlı dairesel Bohr modelinde potansiyel enerji U=2Eₙ, kinetik enerji K=−Eₙ olur. Böylece K pozitiftir, U negatiftir ve toplamları Eₙ verir. Örneğin H temel hâlinde K=13,6 eV ve U=−27,2 eV olur."
+ },
+ {
+  "from": "Spin, elektronun içsel açısal özelliğidir; küçük katı bir topun kendi ekseni etrafındaki klasik dönüşüyle özdeş değildir. Bir orbital en çok iki zıt spinli elektron alır; bir n kabuğunda n² orbital ve en çok 2 n² elektron bulunması, her orbitalin önceden dolu olduğu anlamına gelmez.",
+  "to": "Spin, elektronun içsel açısal özelliğidir; küçük katı bir topun kendi ekseni etrafındaki klasik dönüşüyle özdeş değildir. Bir orbital en çok iki zıt spinli elektron alır; bir n kabuğunda n² orbital ve en çok 2n² elektron bulunması, her orbitalin önceden dolu olduğu anlamına gelmez."
+ },
+ {
+  "from": "Etkileşimde tarihsel modelin kanıt kartını ve Bohr enerji diyagramını ayrı incele. Enerji eksenindeki aralıklar hesaplanan düzey farklarından çizilir; orbital resmi bir kesin yörünge simülasyonu olarak sunulmaz. Tahmin ve örnek açma bağımsız soru başarısı yerine kaydedilmez.",
+  "to": "Etkileşimde tarihsel modelin kanıt kartını ve Bohr enerji diyagramını ayrı incele. Enerji eksenindeki aralıklar hesaplanan düzey farklarından çizilir; orbital resmi bir kesin yörünge simülasyonu olarak sunulmaz."
+ },
+ {
+  "from": "x eksenini denge O noktasından sağa pozitif seç. Uzanım x, konumun bu eksendeki işaretli bileşenidir; −A ile +A arasında değişir. Genlik A ise en büyük |x| değeridir, negatif olmaz ve SI birimi metredir. Uçlar arasındaki toplam mesafe 2 A olur.",
+  "to": "x eksenini denge O noktasından sağa pozitif seç. Uzanım x, konumun bu eksendeki işaretli bileşenidir; −A ile +A arasında değişir. Genlik A ise en büyük |x| değeridir, negatif olmaz ve SI birimi metredir. Uçlar arasındaki toplam mesafe 2A olur."
+ },
+ {
+  "from": "Örneğin uçlar −6 cm ve +6 cm ise A=6 cm, tam salınımda alınan yol 4 A=24 cm olur. Bir periyotta yer değiştirme sıfırdır. Genliği 12 cm sanmak uçlar arasındaki açıklığı, 24 cm sanmak tam çevrim yolunu genlikle karıştırmaktır.",
+  "to": "Örneğin uçlar −6 cm ve +6 cm ise A=6 cm, tam salınımda alınan yol 4A=24 cm olur. Bir periyotta yer değiştirme sıfırdır. Genliği 12 cm sanmak uçlar arasındaki açıklığı, 24 cm sanmak tam çevrim yolunu genlikle karıştırmaktır."
+ },
+ {
+  "from": "Bu anlatımda x=A cos(ωt), v=−Aω sin(ωt), a=−Aω² cos(ωt) başlangıcını kullanıyoruz. t=0, T/4, T/2, 3 T/4, T anlarında konum sırasıyla +A, 0, −A, 0, +A olur. Hızın işareti hangi yöne gidildiğini söyler.",
+  "to": "Bu anlatımda x=A cos(ωt), v=−Aω sin(ωt), a=−Aω² cos(ωt) başlangıcını kullanıyoruz. t=0, T/4, T/2, 3T/4, T anlarında konum sırasıyla +A, 0, −A, 0, +A olur. Hızın işareti hangi yöne gidildiğini söyler."
+ },
+ {
+  "from": "Sürat uzanıma ters orantılı değildir: |v|=C/|x| gibi bir yasa yoktur. Örneğin |x|=A/2 için sürat √3 Aω/2, |x|=0 için sonlu Aω olur. Grafik v–x düzleminde kapalı elips oluşturur; sürat–|x| eğrisi doğru değildir.",
+  "to": "Sürat uzanıma ters orantılı değildir: |v|=C/|x| gibi bir yasa yoktur. Örneğin |x|=A/2 için sürat √3Aω/2, |x|=0 için sonlu Aω olur. Grafik v–x düzleminde kapalı elips oluşturur; sürat–|x| eğrisi doğru değildir."
+ },
+ {
+  "from": "Aynı iki eşit yay için seri k/2, paralel 2 k verir; aynı m ile periyotlar oranı T_seri/T_paralel=2 olur. Yalnız çizimde yan yana görünmelerine göre karar verme: hangi yayların aynı uzamayı, hangilerinin aynı kuvveti paylaştığını incele.",
+  "to": "Aynı iki eşit yay için seri k/2, paralel 2k verir; aynı m ile periyotlar oranı T_seri/T_paralel=2 olur. Yalnız çizimde yan yana görünmelerine göre karar verme: hangi yayların aynı uzamayı, hangilerinin aynı kuvveti paylaştığını incele."
+ },
+ {
+  "from": "Aynı malzeme ve kesitteki düzgün bir yayın yay sabiti boyuyla ters orantılıdır. Uzunluğun yarısı olan parça yaklaşık 2 k yay sabitine sahiptir. Bu sonuç yayın geometrisi ve doğrusal esnekliği aynı kaldığında kullanılır; farklı malzeme veya kalınlık için yalnız boy oranı yetmez.",
+  "to": "Aynı malzeme ve kesitteki düzgün bir yayın yay sabiti boyuyla ters orantılıdır. Uzunluğun yarısı olan parça yaklaşık 2k yay sabitine sahiptir. Bu sonuç yayın geometrisi ve doğrusal esnekliği aynı kaldığında kullanılır; farklı malzeme veya kalınlık için yalnız boy oranı yetmez."
+ },
+ {
+  "from": "Başlangıç yayı iki eşit parçaya kesip parçaları paralel bağlarsan eşdeğer sabit 2 k+2 k=4 k olur. Aynı m kütlesinin periyodu yarıya iner. Kesilmiş her parçayı eski k ile almak hem bağlantıyı hem malzeme değişimini aynı işlem sanma hatasıdır.",
+  "to": "Başlangıç yayı iki eşit parçaya kesip parçaları paralel bağlarsan eşdeğer sabit 2k+2k=4k olur. Aynı m kütlesinin periyodu yarıya iner. Kesilmiş her parçayı eski k ile almak hem bağlantıyı hem malzeme değişimini aynı işlem sanma hatasıdır."
+ },
+ {
+  "from": "Büyük genlikte ideal sarkacın periyodu genlikle artar; küçük açı formülünü koşulsuz kullanma. Bu yaklaşımda kütle ve küçük başlangıç açısı T’yi değiştirmez. L dört katına çıkarsa T iki katına; g dört katına çıkarsa T yarıya iner. g=0 için sıradan asılı sarkaç geri çağırması yoktur.",
+  "to": "Büyük genlikte ideal sarkacın periyodu genlikle artar; küçük açı formülünü koşulsuz kullanma. Bu yaklaşımda kütle ve küçük başlangıç açısı T’yi değiştirmez. L dört katına çıkarsa T iki katına; g dört katına çıkarsa T yarıya iner. g=0 için sıradan asılı sarkacın geri çağırması yoktur."
+ },
+ {
+  "from": "Sonuç kontrolünde uçta hızın sıfır, dengede ivmenin sıfır ve toplam enerjinin sabit olmasını sına. A=0 seçilirse cisim denge noktasında kalır; sistemin doğal periyodu tanımlı olsa da görünür bir salınım gerçekleşmez. Etkileşimli modelde süre geçirmek öğrenme veya doğru soru kanıtı oluşturmaz.",
+  "to": "Sonuç kontrolünde uçta hızın sıfır, dengede ivmenin sıfır ve toplam enerjinin sabit olmasını sına. A=0 seçilirse cisim denge noktasında kalır; sistemin doğal periyodu tanımlı olsa da görünür bir salınım gerçekleşmez."
+ },
+ {
+  "from": "Tam ve kalıcı sıfır titreşim için iki katkı eşit yerel genlikli ve zıt evreli olmalıdır. A₁=A₂>0 ve δ=(2 n+1)π ise η her an sıfır olur. Aynı fazlı kaynaklarda |Δr|=(n−1/2)λ, n=1,2,... düğüm çizgilerini verir.",
+  "to": "Tam ve kalıcı sıfır titreşim için iki katkı eşit yerel genlikli ve zıt evreli olmalıdır. A₁=A₂>0 ve δ=(2n+1)π ise η her an sıfır olur. Aynı fazlı kaynaklarda |Δr|=(n−1/2)λ, n=1,2,… düğüm çizgilerini verir."
+ },
+ {
+  "from": "Genlikler eşit değilse aynı ters faz koşulunda minimum genlik |A₁−A₂| olur; tam düğüm oluşmaz. Aynı kaynak genliği de gerçek leğende farklı yayılma kayıpları nedeniyle her noktada eşit yerel genlik garantilemez. Lise ideal deseninde yayılma azalması ihmal edilip eşit yerel genlik koşulu açık alınır.",
+  "to": "Genlikler eşit değilse aynı ters faz koşulunda minimum genlik |A₁−A₂| olur; tam düğüm oluşmaz. Aynı kaynak genliği de gerçek leğende farklı yayılma kayıpları nedeniyle her noktada eşit yerel genlik garantilemez. İdeal desende yayılma azalması ihmal edilip eşit yerel genlik koşulu açık alınır."
+ },
+ {
+  "from": "Örneğin eşit fazlı iki katkı aynı anda sıfırdan geçiyorsa toplam yükseklik o an sıfır ama toplam genlik 2 A olabilir. Genlik, tüm çevrimde ulaşılabilen en büyük |η| değeridir. Modelde zaman düğmesini değiştirip genlik ile anlık yükseklik satırlarını ayrı izle.",
+  "to": "Örneğin eşit fazlı iki katkı aynı anda sıfırdan geçiyorsa toplam yükseklik o an sıfır ama toplam genlik 2A olabilir. Genlik, tüm çevrimde ulaşılabilen en büyük |η| değeridir. Modelde zaman düğmesini değiştirip genlik ile anlık yükseklik satırlarını ayrı izle."
+ },
+ {
+  "from": "Yalnız kaynakları birleştiren doğru parçasında, orta noktadan işaretli x uzaklık için Δr=−2 x olur. Aynı fazlı kaynakta ardışık katar kesişimleri λ/2, bir katarla yanındaki düğüm kesişimi λ/4 kadar ayrılır. Bu bir doğru parçası üzerindeki konum bağıntısıdır.",
+  "to": "Yalnız kaynakları birleştiren doğru parçasında, orta noktadan işaretli x uzaklık için Δr=−2x olur. Aynı fazlı kaynakta ardışık katar kesişimleri λ/2, bir katarla yanındaki düğüm kesişimi λ/4 kadar ayrılır. Bu bir doğru parçası üzerindeki konum bağıntısıdır."
+ },
+ {
+  "from": "İki sinüzoidal katkının genliği A_top²=A₁²+A₂²+2 A₁A₂ cosδ ile bulunur. Aynı evrede toplam A₁+A₂, ters evrede |A₁−A₂| olur. δ=π/2 için A_top=√(A₁²+A₂²) çıkar; iki genliği sırf pozitif büyüklük oldukları için her noktada doğrudan toplayamazsın.",
+  "to": "İki sinüzoidal katkının genliği A_top²=A₁²+A₂²+2A₁A₂ cosδ ile bulunur. Aynı evrede toplam A₁+A₂, ters evrede |A₁−A₂| olur. δ=π/2 için A_top=√(A₁²+A₂²) çıkar; iki genliği sırf pozitif büyüklük oldukları için her noktada doğrudan toplayamazsın."
+ },
+ {
+  "from": "Son kontrol olarak toplam genlik |A₁−A₂| ile A₁+A₂ arasında kalmalıdır. Aynı fazlı eşit kaynaklarda orta dikme üzerindeki genlik 2 A olmalı; ters fazlı eşit kaynaklarda 0 olmalıdır. Zamanı değiştirmek çizgilerin yerini değiştirmez, yalnız noktanın anlık yüksekliğini değiştirir.",
+  "to": "Son kontrol olarak toplam genlik |A₁−A₂| ile A₁+A₂ arasında kalmalıdır. Aynı fazlı eşit kaynaklarda orta dikme üzerindeki genlik 2A olmalı; ters fazlı eşit kaynaklarda 0 olmalıdır. Zamanı değiştirmek çizgilerin yerini değiştirmez, yalnız noktanın anlık yüksekliğini değiştirir."
+ },
+ {
+  "from": "Kaymadan sağa yuvarlanan tekerde üst noktanın sürati 2 v, merkezin sürati v ve alt temas noktasının sürati sıfırdır. Sağ ve sol uçlarda öteleme ile dönme hızları birbirine dik olduğu için sürat √2 v olur. Sıfır hız, janttaki o madde noktasının her zaman yerde durduğu anlamına gelmez; sonraki anda başka bir nokta zemine gelir.",
+  "to": "Kaymadan sağa yuvarlanan tekerde üst noktanın sürati 2v, merkezin sürati v ve alt temas noktasının sürati sıfırdır. Sağ ve sol uçlarda öteleme ile dönme hızları birbirine dik olduğu için sürat √2v olur. Sıfır hız, janttaki o madde noktasının her zaman yerde durduğu anlamına gelmez; sonraki anda başka bir nokta zemine gelir."
+ },
+ {
+  "from": "Merkezden geçen simetri ekseni için ince halka mR², düzgün dolu disk veya silindir mR²/2, düzgün dolu küre 2 mR²/5 değerindedir. Formülün ekseni ve cismin dolu/boş oluşu açıklanmalıdır. Yapı mühendisliğindeki alan atalet momenti farklı bir niceliktir; m⁴ birimi taşıyan alan momentini kg·m² ile karıştırma.",
+  "to": "Merkezden geçen simetri ekseni için ince halka mR², düzgün dolu disk veya silindir mR²/2, düzgün dolu küre 2mR²/5 değerindedir. Formülün ekseni ve cismin dolu/boş oluşu açıklanmalıdır. Yapı mühendisliğindeki alan atalet momenti farklı bir niceliktir; m⁴ birimi taşıyan alan momentini kg·m² ile karıştırma."
+ },
+ {
+  "from": "Başlangıçta durgun cisim, direnç ve enerji kaybı olmadan h kadar alçalırken kaymadan yuvarlansın. mgh = (1+k)mv²/2 verir; v = √[2 gh/(1+k)]. Aynı h ve aynı geometrik k için kütle ile yarıçap bu son süratten sadeleşir. Düzgün dolu küre k=0,4, disk k=0,5, halka k=1 olduğundan bu koşullarda küre daha büyük sürate ulaşır.",
+  "to": "Başlangıçta durgun cisim, direnç ve enerji kaybı olmadan h kadar alçalırken kaymadan yuvarlansın. mgh = (1+k)mv²/2 verir; v = √[2gh/(1+k)]. Aynı h ve aynı geometrik k için kütle ile yarıçap bu son süratten sadeleşir. Düzgün dolu küre k=0,4, disk k=0,5, halka k=1 olduğundan bu koşullarda küre daha büyük sürate ulaşır."
+ },
+ {
+  "from": "Etkileşimde tekerin boyalı noktasını değiştir ve hız oklarını karşılaştır. Sıfır ok sıfır hız demektir; gizlenmiş bir hareket veya tamamlanmış öğrenme kaydı değildir. Seçtiğin bir durumu kendi cümlenle açıklayıp sonra özgün sorularda bağımsız çözüm yap; modelle oynamak kendiliğinden ustalık veya XP üretmez.",
+  "to": "Etkileşimde tekerin boyalı noktasını değiştir ve hız oklarını karşılaştır. Sıfır ok sıfır hız demektir; gizlenmiş bir hareket değildir. Seçtiğin bir durumu kendi cümlenle açıklayıp sonra özgün sorularda bağımsız çözüm yap."
+ },
+ {
+  "from": "Bir simetri veya asal eksen çevresinde dönen katı cismin o eksendeki açısal momentumu L = Iω olur. Noktasal parçaların katkıları toplanır; I = Σmρ². Burada I ilgili eksene göre momenttir. Bu lise modelinin dışında, genel üç boyutlu katı cisim hareketinde L ve ω her zaman paralel olmak zorunda değildir.",
+  "to": "Bir simetri veya asal eksen çevresinde dönen katı cismin o eksendeki açısal momentumu L = Iω olur. Noktasal parçaların katkıları toplanır; I = Σmρ². Burada I ilgili eksene göre momenttir. Bu modelin dışında, genel üç boyutlu katı cisim hareketinde L ve ω her zaman paralel olmak zorunda değildir."
+ },
+ {
+  "from": "Bu, açısal momentum üretmek değildir. K= L²/(2 I) olduğundan aynı L ile I küçülürken dönme kinetik enerjisi artar; artış kasların yaptığı işten gelir. Etkileşimdeki merkez gövdenin momenti de toplam I içindedir; yalnız eldeki iki ağırlığı sayıp gövdeyi unutma.",
+  "to": "Bu, açısal momentum üretmek değildir. K=L²/(2I) olduğundan aynı L ile I küçülürken dönme kinetik enerjisi artar; artış kasların yaptığı işten gelir. Etkileşimdeki merkez gövdenin momenti de toplam I içindedir; yalnız eldeki iki ağırlığı sayıp gövdeyi unutma."
+ },
+ {
+  "from": "Kaynaklardaki topaç ve jiroskop örneklerini, dönmenin cisme dış etkilerden tam bağışıklık kazandırması gibi yorumlama. Sürtünme, yatış açısı, başlangıç hareketi ve dönme sürati önemlidir. Bu ünitenin nicel modeli sabit simetri eksenini kullanır; üç boyutlu topaç hareketini sahte bir düzlemsel döngüyle temsil etmez.",
+  "to": "Topaç ve jiroskop örneklerini, dönmenin cisme dış etkilerden tam bağışıklık kazandırması gibi yorumlama. Sürtünme, yatış açısı, başlangıç hareketi ve dönme sürati önemlidir. Bu ünitenin nicel modeli sabit simetri eksenini kullanır; üç boyutlu topaç hareketini sahte bir düzlemsel döngüyle temsil etmez."
+ },
+ {
+  "from": "Yüzeydeki çekim alanı g₀=GM/R² ise h yüksekliğinde g_h/g₀=R²/(R+h)² olur. h=R seçilirse merkez uzaklığı 2 R ve alan g₀/4 çıkar. Yüzeyin hemen üstünde küçük h/R için g az değişir; yakın-yüzey sabit g modeli bu sınıra dayanır.",
+  "to": "Yüzeydeki çekim alanı g₀=GM/R² ise h yüksekliğinde g_h/g₀=R²/(R+h)² olur. h=R seçilirse merkez uzaklığı 2R ve alan g₀/4 çıkar. Yüzeyin hemen üstünde küçük h/R için g az değişir; yakın-yüzey sabit g modeli bu sınıra dayanır."
+ },
+ {
+  "from": "Cisim uzaklaştığında U, negatiften sıfıra doğru artar. Birim kütle başına potansiyel φ=U/m=−GM/r olup J/kg birimi taşır. Homojen kürenin içinde φ=−GM[3−(r/R)²]/(2 R) olur; merkezde alan sıfır olmasına rağmen potansiyel sıfır değildir. Alan ile potansiyeli ayrı göster.",
+  "to": "Cisim uzaklaştığında U, negatiften sıfıra doğru artar. Birim kütle başına potansiyel φ=U/m=−GM/r olup J/kg birimi taşır. Homojen kürenin içinde φ=−GM[3−(r/R)²]/(2R) olur; merkezde alan sıfır olmasına rağmen potansiyel sıfır değildir. Alan ile potansiyeli ayrı göster."
+ },
+ {
+  "from": "Dairesel hızdan K=GMm/(2 r), U=−GMm/r ve toplam E=−GMm/(2 r) elde edilir. U negatif, K pozitif ve |U|=2 K’dır. Toplam enerjinin negatif olması bağlı yörüngeyle uyumludur; bu ifade enerjiyi sıfır seçtiğimiz sonsuz referansına bağlıdır.",
+  "to": "Dairesel hızdan K=GMm/(2r), U=−GMm/r ve toplam E=−GMm/(2r) elde edilir. U negatif, K pozitif ve |U|=2K’dır. Toplam enerjinin negatif olması bağlı yörüngeyle uyumludur; bu ifade enerjiyi sıfır seçtiğimiz sonsuz referansına bağlıdır."
+ },
+ {
+  "from": "Pozitif bağlanma enerjisi, bağlı yörüngeden enerjiyi sıfıra yükseltmek için gereken en küçük ek enerjidir: −E=GMm/(2 r). Bazı özetlerde negatif toplam mekanik enerji de bağlanma enerjisi adıyla geçebilir. Soruda hangi işaretli nicelik istendiğini açıkça belirt; burada ek enerji daima pozitif olarak tanımlanır.",
+  "to": "Pozitif bağlanma enerjisi, bağlı yörüngeden enerjiyi sıfıra yükseltmek için gereken en küçük ek enerjidir: −E=GMm/(2r). Bazı özetlerde negatif toplam mekanik enerji de bağlanma enerjisi adıyla geçebilir. Soruda hangi işaretli nicelik istendiğini açıkça belirt; burada ek enerji daima pozitif olarak tanımlanır."
+ },
+ {
+  "from": "Dış r konumunda yalnız çekim etkisiyle sonsuza gidip orada sıfır sürate yaklaşan cisim için ilk toplam enerji sıfırdır. mv_k²/2−GMm/r=0 verir: v_k=√(2 GM/r). Dairesel hızın √2 katıdır. Bu ideal enerji eşiği atmosferi, çarpışmayı ve başka gök cisimlerini dışarıda bırakır.",
+  "to": "Dış r konumunda yalnız çekim etkisiyle sonsuza gidip orada sıfır sürate yaklaşan cisim için ilk toplam enerji sıfırdır. mv_k²/2−GMm/r=0 verir: v_k=√(2GM/r). Dairesel hızın √2 katıdır. Bu ideal enerji eşiği atmosferi, çarpışmayı ve başka gök cisimlerini dışarıda bırakır."
+ },
+ {
+  "from": "Başlangıçta r’de durgun cismi kurtarmak için gerekli enerji GMm/r; zaten dairesel yörüngedeki cisme gereken en küçük ek enerji GMm/(2 r)’dir. Bunları aynı başlangıç deneyi gibi kullanma. Yön seçimi de önemlidir: içeriye fırlatılan cisim enerjisi yeterli olsa bile gezegene çarpabilir; kaçışın çarpışmasız dış yola açık olması gerekir.",
+  "to": "Başlangıçta r’de durgun cismi kurtarmak için gerekli enerji GMm/r; zaten dairesel yörüngedeki cisme gereken en küçük ek enerji GMm/(2r)’dir. Bunları aynı başlangıç deneyi gibi kullanma. Yön seçimi de önemlidir: içeriye fırlatılan cisim enerjisi yeterli olsa bile gezegene çarpabilir; kaçışın çarpışmasız dış yola açık olması gerekir."
+ },
+ {
+  "from": "Uydu motoru sürekli iterek yerçekimini yok etmez; uygun yörüngede serbest düşme hareketi yapar. Gerçek yörünge düzeltmeleri ve atmosfer sürüklemesi ayrı etkilerdir. Uydular haberleşme yanında hava ve çevre gözlemi, yer ölçümü ve navigasyonda kullanılır; her görev aynı yörünge koşulunu gerektirmez. Mevcut ülke uydu sayısı zamanla değiştiğinden eski kaynaklardaki sayıları değişmez fizik bilgisi gibi ezberletmek yerine yörünge koşulunu öğren.",
+  "to": "Uydu motoru sürekli iterek yerçekimini yok etmez; uygun yörüngede serbest düşme hareketi yapar. Gerçek yörünge düzeltmeleri ve atmosfer sürüklemesi ayrı etkilerdir. Uydular haberleşme yanında hava ve çevre gözlemi, yer ölçümü ve navigasyonda kullanılır; her görev aynı yörünge koşulunu gerektirmez. Mevcut ülke uydu sayısı zamanla değiştiğinden uydu sayılarını değişmez fizik bilgisi gibi ezberlemek yerine yörünge koşulunu öğren."
+ },
+ {
+  "from": "Modelde yarıçap ve uzaklık ayrı denetimlerdir: r=0 merkez, r=R yüzey, r=2 R yüzeyden bir yarıçap yüksekliktir. İç eğri doğrusal yükselir; dış eğri ters kare azalır. Kuvvet oku içeri bakarken tepki diğer cisim üzerinde dışarı yönelir. Potansiyelin sürekliliği ile alanın sıfır olduğu noktaları ayrı denetle.",
+  "to": "Modelde yarıçap ve uzaklık ayrı denetimlerdir: r=0 merkez, r=R yüzey, r=2R yüzeyden bir yarıçap yüksekliktir. İç eğri doğrusal yükselir; dış eğri ters kare azalır. Kuvvet oku içeri bakarken tepki diğer cisim üzerinde dışarı yönelir. Potansiyelin sürekliliği ile alanın sıfır olduğu noktaları ayrı denetle."
+ },
+ {
+  "from": "Newton’un evrensel çekim yasası daha sonra bu düzenliliklerin mekanik açıklamasını sağladı. Kepler’in yasaları Newton kuvvetinden tarihsel olarak türettiğini söylemek yanlıştır. Gözlem, matematiksel betimleme ve nedensel kuram birbirini tamamlar; aynı şey değildir.",
+  "to": "Newton’un evrensel çekim yasası daha sonra bu düzenliliklerin mekanik açıklamasını sağladı. Kepler’in yasalarını Newton kuvvetinden tarihsel olarak türettiğini söylemek yanlıştır. Gözlem, matematiksel betimleme ve nedensel kuram birbirini tamamlar; aynı şey değildir."
+ },
+ {
+  "from": "En yakın ve en uzak uzaklığın toplamı 2 a, farkı 2 ae olur. Böylece a=(r_p+r_a)/2 ve e=(r_a−r_p)/(r_a+r_p) bulunur. a, sorularda ortalama yarıçap diye de adlandırılabilir; burada bu terim yalnız iki uç uzaklığın aritmetik ortalamasıdır.",
+  "to": "En yakın ve en uzak uzaklığın toplamı 2a, farkı 2ae olur. Böylece a=(r_p+r_a)/2 ve e=(r_a−r_p)/(r_a+r_p) bulunur. a, sorularda ortalama yarıçap diye de adlandırılabilir; burada bu terim yalnız iki uç uzaklığın aritmetik ortalamasıdır."
+ },
+ {
+  "from": "Bu nedenle eliptik yörüngenin sürati sabit değildir. İdeal vis-viva bağıntısı v²=μ(2/r−1/a), μ=GM ile her noktadaki sürati verir. Kinetik ve potansiyel enerji değişirken toplam özgül enerji ε=−μ/(2 a) sabittir. Yalnız aynı a’ya sahip yörüngelerin toplam özgül enerjileri eşittir.",
+  "to": "Bu nedenle eliptik yörüngenin sürati sabit değildir. İdeal vis-viva bağıntısı v²=μ(2/r−1/a), μ=GM ile her noktadaki sürati verir. Kinetik ve potansiyel enerji değişirken toplam özgül enerji ε=−μ/(2a) sabittir. Yalnız aynı a’ya sahip yörüngelerin toplam özgül enerjileri eşittir."
+ },
+ {
+  "from": "Örneğin toplam alan 80 alan birimi ve periyot 20 zaman birimiyse 3 zaman biriminde 12 alan birimi taranır. Bu hesapta eşit açılı dilimler çizmek yerine eşit süre koşulunu uygula. Uygulamadaki sektörler yalnız dekoratif eş büyüklükte dilimler değildir; aynı Kepler zaman denkleminden üretilir.",
+  "to": "Örneğin toplam alan 80 alan birimi ve periyot 20 zaman birimiyse 3 zaman biriminde 12 alan birimi taranır. Bu hesapta eşit açılı dilimler çizmek yerine eşit süre koşulunu uygula. Modeldeki sektörler yalnız dekoratif eş büyüklükte dilimler değildir; aynı Kepler zaman denkleminden üretilir."
+ },
+ {
+  "from": "Modelde uzunluk, sürat ve ivme oklarının ölçekleri ayrı ve açık verilir; farklı birimleri sırf aynı uzunlukta göründüler diye eşitleme. İki eşit zaman sektörü karşıt yörünge bölgelerinden alınır; aynı alan değerleri HTML sonucunda sayısal olarak da sunulur. Hareketi kendin adımlarsın; otomatik döngü öğrenme puanı oluşturmaz.",
+  "to": "Modelde uzunluk, sürat ve ivme oklarının ölçekleri ayrı ve açık verilir; farklı birimleri sırf aynı uzunlukta göründüler diye eşitleme. İki eşit zaman sektörü karşıt yörünge bölgelerinden alınır; aynı alan değerleri model sonucunda sayısal olarak da sunulur. Hareketi kendin adımlarsın."
+ },
+ {
+  "from": "Galileo’yu teleskobun ilk mucidi ilan etmek yerine onu geliştiren ve astronomiye uygulayan önemli gözlemcilerden biri olarak anlatmak gerekir. Tarihsel modelleri de tek gözlemle bütün evrenin ispatı gibi sunma. Bu bölüm kişilerin kaynakta belirtilen somut katkılarını, fizik yasasının varsayımlarıyla karıştırmadan bağlama yerleştirir.",
+  "to": "Galileo’yu teleskobun ilk mucidi ilan etmek yerine onu geliştiren ve astronomiye uygulayan önemli gözlemcilerden biri olarak anlatmak gerekir. Tarihsel modelleri de tek gözlemle bütün evrenin ispatı gibi sunma. Bu bölüm kişilerin somut katkılarını, fizik yasasının varsayımlarıyla karıştırmadan bağlama yerleştirir."
+ },
+ {
+  "from": "Kepler modelinde merkezî, ters kare çekim; bağlı yörünge; ihmal edilebilir direnç ve başka cisim etkisi varsayılır. Çok güçlü kütle çekim, belirgin diğer gezegen etkileri veya itki gibi koşullarda küçük sapmalar veya farklı hareketler görülebilir. Lise düzeyindeki bu model doğru koşullarda son derece yararlıdır.",
+  "to": "Kepler modelinde merkezî, ters kare çekim; bağlı yörünge; ihmal edilebilir direnç ve başka cisim etkisi varsayılır. Çok güçlü kütle çekim, belirgin diğer gezegen etkileri veya itki gibi koşullarda küçük sapmalar veya farklı hareketler görülebilir. Bu model doğru koşullarda son derece yararlıdır."
+ },
+ {
+  "from": "Yarıçap hesabında toplam sürat yerine v⊥ kullanılır. Tam paralel girişte v⊥ = 0 olduğundan helisin çapı sıfıra iner ve hareket doğru olur. Uygulamadaki düzlem modeli Bz ve v_z = 0 seçer; üç boyutlu helisi iki boyutlu bir spiral diye çizmez.",
+  "to": "Yarıçap hesabında toplam sürat yerine v⊥ kullanılır. Tam paralel girişte v⊥ = 0 olduğundan helisin çapı sıfıra iner ve hareket doğru olur. Etkileşimli düzlem modeli Bz ve v_z = 0 seçer; üç boyutlu helisi iki boyutlu bir spiral diye çizmez."
+ },
+ {
+  "from": "Önce sapmanın yönünü tahmin et, sonra çapraz çarpımı ve F · v = 0 sonucunu denetle. Sonraki bağımsız kartta farklı yön veya başka kuvvet verilince yeni koşulları kur. Modeli açmak ya da zaman çubuğunu sürüklemek tek başına doğru cevap ve konu tamamlanması sayılmaz.",
+  "to": "Önce sapmanın yönünü tahmin et, sonra çapraz çarpımı ve F · v = 0 sonucunu denetle. Farklı yön veya başka kuvvet verilince yeni koşulları kur."
+ },
+ {
+  "from": "Alan düzgün değilse yüzeyi küçük parçalara ayırıp B’nin normal bileşeniyle katkıları toplamak gerekir; BA cos θ tek bir sabit alan/yüzey örneğidir. Uygulamadaki ray modeli Bz ve x–y yüzeyi seçer; burada normal +z ve Φ = B L x olduğu için bütün birim ve işaretler açıktır.",
+  "to": "Alan düzgün değilse yüzeyi küçük parçalara ayırıp B’nin normal bileşeniyle katkıları toplamak gerekir; BA cos θ tek bir sabit alan/yüzey örneğidir. Etkileşimli ray modeli Bz ve x–y yüzeyi seçer; burada normal +z ve Φ = B L x olduğu için bütün birim ve işaretler açıktır."
+ },
+ {
+  "from": "Önce akımın yönünü tahmin et, sonra −dΦ/dt ve çubuk üzerindeki I L × B sonucunu karşılaştır. Dış güç ile direnç ısısının eşitliğini son birim kontrolüyle doğrula. Çizgiler gerçek koordinat ve aynı işaret sözleşmesiyle üretilir; keşfi kaydetmek puan üretmez.",
+  "to": "Önce akımın yönünü tahmin et, sonra −dΦ/dt ve çubuk üzerindeki I L × B sonucunu karşılaştır. Dış güç ile direnç ısısının eşitliğini son birim kontrolüyle doğrula. Çizgiler gerçek koordinat ve aynı işaret sözleşmesiyle üretilir."
+ },
+ {
+  "from": "Önce yükseltici veya alçaltıcı olduğunu tahmin et; sonra VS/VP ve VP IP = VS IS eşitliklerini birlikte denetle. Bir oranı doğru kurup gücü iki kat yaratıyorsan hesap tamamlanmamıştır. Model keşfi ayrı saklanır, doğru cevap veya bitmiş konu kaydı üretmez.",
+  "to": "Önce yükseltici veya alçaltıcı olduğunu tahmin et; sonra VS/VP ve VP IP = VS IS eşitliklerini birlikte denetle. Bir oranı doğru kurup gücü iki kat yaratıyorsan hesap tamamlanmamıştır."
+ },
+ {
+  "from": "Bu yüzden “merkezkaç hiçbir hesapta yoktur” ile “yer çerçevesinde gerçek bir ek kuvvettir” iki ayrı hatadır. Önce gözlemciyi ve eksenleri adlandır. Bizim etkileşimde merkez sabit, x–y üst görünüm ve yer çerçevesi kullanılır; düşey N ve mg dengesi HTML açıklamada ayrı verilir.",
+  "to": "Bu yüzden “merkezkaç hiçbir hesapta yoktur” ile “yer çerçevesinde gerçek bir ek kuvvettir” iki ayrı hatadır. Önce gözlemciyi ve eksenleri adlandır. Bizim etkileşimde merkez sabit, x–y üst görünüm ve yer çerçevesi kullanılır; düşey N ve mg dengesi açıklamada ayrı verilir."
+ },
+ {
+  "from": "Önce sürati iki kat yapınca gereken kuvvetin dört kat olacağını tahmin et; sonra mv²/r ile μs mg’yi kıyasla. Mümkün durumda konum açısının seçtiği süre T ile tutarlıdır. Bu gösterim yalnız verilen ideal koşulları sınar; keşif kaydı puan veya bitmiş konu kaydı değildir.",
+  "to": "Önce sürati iki kat yapınca gereken kuvvetin dört kat olacağını tahmin et; sonra mv²/r ile μs mg’yi kıyasla. Mümkün durumda konum açısının seçtiği süre T ile tutarlıdır. Bu gösterim yalnız verilen ideal koşulları sınar."
+ },
+ {
+  "from": "Kaynakta bazen “elektriksel iş” diye yazılan qΔV ifadesi, dışarıdan yavaş taşımada gereken işle karışabilir. Burada adları açık kullanıyoruz: elektrik kuvvetinin işi −ΔU, potansiyel enerji değişimi ΔU’dur. Formül ezberini hareket yönünde kuvvet varsa pozitif iş beklentisiyle denetleyebilirsin.",
+  "to": "Bazen “elektriksel iş” diye yazılan qΔV ifadesi, dışarıdan yavaş taşımada gereken işle karışabilir. Burada adları açık kullanıyoruz: elektrik kuvvetinin işi −ΔU, potansiyel enerji değişimi ΔU’dur. Formül ezberini hareket yönünde kuvvet varsa pozitif iş beklentisiyle denetleyebilirsin."
+ },
+ {
+  "from": "Keşifte önce aynı yük işaretleriyle uzaklığı değiştir, sonra yalnız test yükünün işaretini çevir. U,ΔU ve We’nin hangilerinin döndüğünü önceden tahmin et. Gerekçeyi modeldeki iki konumla karşılaştırmak bir alıştırmadır; gezgini açmak veya zamanı geçirmek XP ya da bağımsız doğru cevap oluşturmaz.",
+  "to": "Keşifte önce aynı yük işaretleriyle uzaklığı değiştir, sonra yalnız test yükünün işaretini çevir. U, ΔU ve We’nin hangilerinin döndüğünü önceden tahmin et. Gerekçeyi modeldeki iki konumla karşılaştırmak bir alıştırmadır."
+ }
+]

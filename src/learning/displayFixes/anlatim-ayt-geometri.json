@@ -1,0 +1,30 @@
+[
+ {
+  "from": "Son denetimde üç soru sor: Her köşeye aynı kuralı mı uyguladım, iki eksenin fiziksel ölçeği eşit mi, korunan kenar ve alanlar gerçekten aynı mı? Keşifte tahminini kaydetmek bu denetimi destekler; süre, tıklama veya modeli açmak bağımsız soru doğrusu, XP ya da konu tamamlama oluşturmaz.",
+  "to": "Son denetimde üç soru sor: Her köşeye aynı kuralı mı uyguladım, iki eksenin fiziksel ölçeği eşit mi, korunan kenar ve alanlar gerçekten aynı mı? Keşifte tahminini kaydetmek bu denetimi destekler."
+ },
+ {
+  "from": "P=P′ ise tek bir yansıma doğrusu belirlenmez: P'den geçen her doğru P'yi sabit bırakır. Bir kaynakta yalnız aynı noktaya dönüş bilgisi verilmişse ek bir yön veya ikinci görüntü çifti gerekir. Model bu yetersizliği “ayna bulundu” diye orijinde rastgele bir çizgiyle kapatmaz.",
+  "to": "P=P′ ise tek bir yansıma doğrusu belirlenmez: P'den geçen her doğru P'yi sabit bırakır. Yalnız aynı noktaya dönüş bilgisi verilmişse ek bir yön veya ikinci görüntü çifti gerekir. Model bu yetersizliği “ayna bulundu” diye orijinde rastgele bir çizgiyle kapatmaz."
+ },
+ {
+  "from": "Keşifte önce hangi koordinatın ya da yönün değişeceğini tahmin et, sonra gerçek H, P′ ve eş uzaklıkları karşılaştır. Açıklaman saklanır fakat otomatik doğruluk notu verilmez. Tıklamak, yansımayı izlemek veya gerekçe kaydetmek XP ve konu tamamlama sayılmaz; sonraki bağımsız soruda koşulu kurman önemlidir.",
+  "to": "Keşifte önce hangi koordinatın ya da yönün değişeceğini tahmin et, sonra gerçek H, P′ ve eş uzaklıkları karşılaştır. Sonraki bağımsız soruda koşulu kurman önemlidir."
+ },
+ {
+  "from": "Keşifte bir değişkeni değiştirirken önce ortak nokta sayısını tahmin et ve gerekçeni yaz. Çemberin kaybolması negatif yarıçap karesi veya pencere dışı geometri gibi farklı nedenlere bağlı olabilir; durum metni hangisi olduğunu söylemelidir. Keşif kaydı XP ya da tamamlanmış soru değildir; farklı verili bağımsız soruyu çözmek ayrı kanıttır.",
+  "to": "Keşifte bir değişkeni değiştirirken önce ortak nokta sayısını tahmin et ve gerekçeni yaz. Çemberin kaybolması negatif yarıçap karesi veya pencere dışı geometri gibi farklı nedenlere bağlı olabilir; durum metni hangisi olduğunu söylemelidir."
+ },
+ {
+  "from": "Bu yöntem dikey x=h ve yatay y=k doğrularında da geçerlidir. Y=mx+n biçimini zorunlu tutmak dikeyi dışarıda bırakır. u=v=0 olunca denklem doğru tanımlamaz; model bu geçersiz doğru verisini gerçek çember-doğru durumundan ayrı tutar ve sahte kesim noktası çizmez.",
+  "to": "Bu yöntem dikey x=h ve yatay y=k doğrularında da geçerlidir. y=mx+n biçimini zorunlu tutmak dikeyi dışarıda bırakır. u=v=0 olunca denklem doğru tanımlamaz; model bu geçersiz doğru verisini gerçek çember-doğru durumundan ayrı tutar ve sahte kesim noktası çizmez."
+ },
+ {
+  "from": "b≠0 ise ax+by+c=0 denkleminde y'yi yalnız bırakalım: by=−ax−c ve y=(−a/b)x−c/b. Böylece eğim −a/b olur; −b/a değildir. Hangi katsayının paydada olduğunu hatırlamak için y'nin katsayısına bölündüğünü düşün. Kaynaklar arasında bir yazım tutarsızlığı görürsen bu kısa türetim sonucu denetler.",
+  "to": "b≠0 ise ax+by+c=0 denkleminde y'yi yalnız bırakalım: by=−ax−c ve y=(−a/b)x−c/b. Böylece eğim −a/b olur; −b/a değildir. Hangi katsayının paydada olduğunu hatırlamak için y'nin katsayısına bölündüğünü düşün. Bu kısa türetim sonucu denetler."
+ },
+ {
+  "from": "Keşifte önce sonucu tahmin et, kısa gerekçeni yaz, ardından gerçek şekil ve metin hesabıyla karşılaştır. Renk, kaynak veya durumun tek taşıyıcısı değildir; d/e harfleri ve koordinatlar da verilir. Kontrolü açmak veya süre geçirmek puan, doğru soru ya da konu tamamlama kaydı oluşturmaz. Bağımsız soruda veriyi seçip doğru bağıntıyı kurmak ayrı öğrenme kanıtıdır.",
+  "to": "Keşifte önce sonucu tahmin et, kısa gerekçeni yaz, ardından gerçek şekil ve metin hesabıyla karşılaştır. Bağımsız soruda veriyi seçip doğru bağıntıyı kurmak ayrı öğrenme kanıtıdır."
+ }
+]

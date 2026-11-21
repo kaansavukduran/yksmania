@@ -1,0 +1,766 @@
+{
+ "turev-teget": [
+  {
+   "after": 1,
+   "prompt": "f(x)=x² için a=2 ve b=2,5 alınırsa kirişin eğimi, yani ortalama değişim oranı kaç olur?",
+   "answer": "f(2,5)=6,25 ve f(2)=4 olduğundan oran (6,25−4)/0,5=4,5 olur."
+  },
+  {
+   "after": 3,
+   "prompt": "f(x)=x² için a=3 noktasında fonksiyon değeri ve türev değeri kaçtır?",
+   "answer": "f(3)=9 ve f′(3)=6 olur; değer yüksekliği, türev eğimi verir ve ikisi genelde eşit değildir."
+  },
+  {
+   "after": 5,
+   "prompt": "(x²·x³)′ hesabında yalnız 2x·3x² yazmak neden yanlıştır?",
+   "answer": "Çarpım kuralı u′v+uv′ ister; her çarpanın değişimi ötekinin o anki değeriyle çarpılır ve sonuç 5x⁴ çıkar."
+  },
+  {
+   "after": 6,
+   "prompt": "(3x−1)⁴ ifadesinin türevi kaçtır?",
+   "answer": "Dış türev 4(3x−1)³, iç türev 3 olduğundan sonuç 12(3x−1)³ olur."
+  },
+  {
+   "after": 8,
+   "prompt": "Bir aralıkta f′>0 olması fonksiyon hakkında neyi söyler, neyi söylemez?",
+   "answer": "Fonksiyonun o aralıkta arttığını söyler; f(x) değerlerinin pozitif olduğunu söylemez."
+  },
+  {
+   "after": 10,
+   "prompt": "Kapalı aralıkta mutlak en büyük değeri bulmak için hangi değerleri karşılaştırırsın?",
+   "answer": "İç noktalardaki ekstremum adaylarıyla uç noktalardaki fonksiyon değerlerini karşılaştırırsın."
+  },
+  {
+   "after": 12,
+   "prompt": "Verilen bir doğruya paralel teğet ararken temas apsisi a hangi denklemle bulunur?",
+   "answer": "Doğrunun sonlu eğimi m ise f′(a)=m çözülür; her izinli a için ayrı teğet kurulur."
+  },
+  {
+   "after": 14,
+   "prompt": "Teğetin eğimi negatifse 0≤θ<π aralığındaki eğim açısı hangi bölgededir?",
+   "answer": "İkinci bölgededir; hesap makinesinin verdiği negatif arctan değeri doğrudan eğim açısı değildir."
+  },
+  {
+   "after": 17,
+   "prompt": "f(x)=x³+2x eğrisinin a=0 noktasındaki teğet doğrusu nedir?",
+   "answer": "f(0)=0 ve f′(0)=2 olduğundan teğet y=2x olur."
+  }
+ ],
+ "ayt-belirsiz-integral": [
+  {
+   "after": 1,
+   "prompt": "Tanım kümesi birbirinden kopuk parçalardan oluşan bir fonksiyonun ters türevinde sabit nasıl seçilir?",
+   "answer": "Her parçanın sabiti ayrı seçilebilir; iki tarafı tek ortak sabite bağlamak ek bir koşul koymak olur."
+  },
+  {
+   "after": 3,
+   "prompt": "∫0 dx sonucu neden yalnız 0 değil de C olarak yazılır?",
+   "answer": "Türevi 0 olan her sabit fonksiyon bir ters türevdir; yalnız 0 yazmak öteki sabit fonksiyonları kaybettirir."
+  },
+  {
+   "after": 5,
+   "prompt": "x>0 için ∫√x dx sonucu nedir?",
+   "answer": "√x=x^(1/2) yazılıp kuvvet kuralı uygulanır: (2/3)x^(3/2)+C bulunur."
+  },
+  {
+   "after": 7,
+   "prompt": "F′(x)=4x ve F(1)=7 ise F(x) hangi fonksiyondur?",
+   "answer": "F(x)=2x²+C ailesinde 2+C=7 olduğundan C=5 ve F(x)=2x²+5 olur."
+  },
+  {
+   "after": 9,
+   "prompt": "∫x(x²+3)²dx hesabında u=x²+3 seçince sonucun paydası neden 6 olur?",
+   "answer": "du=2x dx olduğundan x dx=(1/2)du yazılır; (1/2)·u³/3 sonucu (x²+3)³/6+C verir."
+  },
+  {
+   "after": 11,
+   "prompt": "∫(2x+1)³dx sonucunda neden yalnız 4’e değil 8’e bölünür?",
+   "answer": "Türevde iç katsayı 2 geri geleceği için önceden dengelenir: (2x+1)⁴/(2·4)=(2x+1)⁴/8+C."
+  },
+  {
+   "after": 12,
+   "prompt": "x⁴/4+7 ile x⁴/4+7x ifadelerinden hangisi x³’ün ters türevidir?",
+   "answer": "x⁴/4+7’dir; sabit fark türevi bozmaz, 7x ise türevde fazladan 7 bırakır."
+  }
+ ],
+ "ayt-belirli-integral": [
+  {
+   "after": 1,
+   "prompt": "Belirli integral hesabında F(b)−F(a) yerine f(b)−f(a) yazmanın hatası nedir?",
+   "answer": "İntegrand ile ters türev karıştırılır; uç farkı F′=f olan ters türev F’nin değerleriyle alınır."
+  },
+  {
+   "after": 3,
+   "prompt": "Alan hesabında sınırlar ters sırayla verilmişse neden negatif bir alan kabul edilmez?",
+   "answer": "Geometrik alan negatifleşmez; uçlar küçükten büyüğe sıralanır ve yükseklik farkının mutlak değeri kullanılır."
+  },
+  {
+   "after": 5,
+   "prompt": "Aynı sınırlarda ∫f=5 ve ∫g=−2 ise ∫(2f−3g) kaçtır?",
+   "answer": "Doğrusallıkla 2·5−3·(−2)=10+6=16 bulunur."
+  },
+  {
+   "after": 6,
+   "prompt": "f(x)=x (x<1) ve f(x)=2 (x≥1) ise [0,3] üzerindeki integral kaçtır?",
+   "answer": "Kuralın değiştiği 1’de bölünür: ∫₀¹x dx+∫₁³2 dx=1/2+4=9/2 olur."
+  },
+  {
+   "after": 8,
+   "prompt": "Simetrik [−a,a] aralığında x³+x² integralinde hangi terimin katkısı kalır?",
+   "answer": "Tek fonksiyon x³’ün katkısı iptal olur; çift fonksiyon x²’nin katkısı 2∫₀ᵃx²dx olarak kalır."
+  },
+  {
+   "after": 9,
+   "prompt": "∫₀¹2x(x²+1)²dx integralinde u=x²+1 alınırsa yeni sınırlar ne olur?",
+   "answer": "x=0 için u=1, x=1 için u=2 olur; integral ∫₁²u²du biçimine gelir."
+  },
+  {
+   "after": 12,
+   "prompt": "Hız işaret değiştiriyorsa yer değiştirme ve alınan yol hangi integrallerle bulunur?",
+   "answer": "Yer değiştirme ∫v(t)dt, yol ∫|v(t)|dt ile bulunur; yol için hızın kökleriyle aralık parçalanır."
+  }
+ ],
+ "ayt-alan-riemann": [
+  {
+   "after": 1,
+   "prompt": "Eşit bölüntüde n=4 alt aralık seçilirse kaç bölüntü noktası olur?",
+   "answer": "n alt aralığın n+1 bölüntü noktası vardır; 4 alt aralık için 5 nokta olur."
+  },
+  {
+   "after": 3,
+   "prompt": "Bir alt aralığın içinde parabolün tepesi varsa o aralığın gerçek uç değeri için neler karşılaştırılır?",
+   "answer": "İki uç noktadaki değerlerle tepedeki değer karşılaştırılır; uçlardan biri gerçek minimum ya da maksimum olmayabilir."
+  },
+  {
+   "after": 5,
+   "prompt": "y=x grafiğinin [−1,1] aralığında net integrali ve toplam geometrik alanı kaçtır?",
+   "answer": "İki yarı birbirini götürdüğü için net integral 0 olur; iki üçgenin alanları toplanınca geometrik alan 1 çıkar."
+  },
+  {
+   "after": 7,
+   "prompt": "İki eğriden hangisinin üstte olduğunu küçük ölçekli grafiğe bakarak tahmin etmek yerine ne kullanırsın?",
+   "answer": "Kesişimler arasındaki her parçada bir test noktası ya da cebirsel işaret tablosu kullanırsın."
+  },
+  {
+   "after": 9,
+   "prompt": "x=a ve x=b doğrularıyla sınırlanan bölgede eğrilerin bu aralığın dışında kesişmesi alanı nasıl etkiler?",
+   "answer": "Etkilemez; verilen sınır doğruları kullanılır, dışarıdaki kesişim bölgeyi kendiliğinden genişletmez."
+  },
+  {
+   "after": 10,
+   "prompt": "Kesişim sınırlarıyla alan hesaplarken hangi değerin o noktalarda sıfır çıkması beklenir?",
+   "answer": "f−g farkının kesişimlerde sıfır çıkması beklenir; farkın ters türevinin o noktalarda sıfır olması beklenmez."
+  },
+  {
+   "after": 12,
+   "prompt": "y=2x grafiğinin [0,3] aralığında x ekseniyle arasındaki alan geometrik olarak kaçtır?",
+   "answer": "Taban 3, yükseklik 6 olan üçgenin alanı 9’dur; ∫₀³2x dx de 9 verir."
+  }
+ ],
+ "ayt-turev-alma-kurallari": [
+  {
+   "after": 1,
+   "prompt": "(x²+3)(2x−1) ile (2x−1)³ ifadelerinde türeve hangi kurallarla başlanır?",
+   "answer": "İlki iki fonksiyonun çarpımı olduğu için çarpım kuralıyla, ikincisi bileşke olduğu için zincir kuralıyla başlanır."
+  },
+  {
+   "after": 3,
+   "prompt": "f(x)=2x³+x için f′(−1) kaçtır?",
+   "answer": "f′(x)=6x²+1 olduğundan f′(−1)=6+1=7 bulunur."
+  },
+  {
+   "after": 5,
+   "prompt": "4x⁵−3x²+2x−9 ifadesinin türevi nedir?",
+   "answer": "Her terim ayrı işlenir ve sabit yok olur: 20x⁴−6x+2."
+  },
+  {
+   "after": 7,
+   "prompt": "x^(2/3) ifadesi neden negatif x için de gerçek sayı olarak anlamlıdır?",
+   "answer": "Kök derecesi 3 tek olduğundan gerçek küpkök negatif girdide tanımlıdır; ifade bu küpkökün karesidir."
+  },
+  {
+   "after": 9,
+   "prompt": "Çarpımda bir çarpan o noktada sıfır olsa bile türeve neden katkı gelebilir?",
+   "answer": "Sıfır olan çarpanın türevi, öteki çarpanın o anki değeriyle çarpılarak ayrı bir katkı verir."
+  },
+  {
+   "after": 11,
+   "prompt": "f(t)=t³ ve g(x)=2x+3 için f(g(x)) bileşkesinin türevi nedir?",
+   "answer": "Dış türev g(x)’te değerlendirilip iç türevle çarpılır: 3(2x+3)²·2=6(2x+3)²."
+  },
+  {
+   "after": 13,
+   "prompt": "f(3x−2)=x²+4x ise f′(4) kaçtır?",
+   "answer": "Türev alınca 3f′(3x−2)=2x+4 olur; 3x−2=4 için x=2 seçilir ve 3f′(4)=8, yani f′(4)=8/3 bulunur."
+  },
+  {
+   "after": 15,
+   "prompt": "Parçalı fonksiyonun birleşme noktasında türevlenebilirlik için hangi iki koşul sırayla kurulur?",
+   "answer": "Önce iki parçanın değerleri eşitlenerek süreklilik sağlanır, sonra sağ ve sol türevler eşitlenir."
+  }
+ ],
+ "ayt-toplam-fark-yarim-aci": [
+  {
+   "after": 1,
+   "prompt": "a=b=30° için sin(a+b) ile sin a+sin b değerleri kaçtır?",
+   "answer": "sin(a+b)=sin60°=√3/2, sin a+sin b=1/2+1/2=1 olur; toplam açının sinüsü sinüslerin toplamı değildir."
+  },
+  {
+   "after": 4,
+   "prompt": "sin75° değeri 45° ile 30° değerleri kullanılarak kaç bulunur?",
+   "answer": "sin(45°+30°)=(√2/2)(√3/2)+(√2/2)(1/2)=(√6+√2)/4 olur."
+  },
+  {
+   "after": 6,
+   "prompt": "cot(a−b) formülünün paydasında cot değerleri hangi sırayla yazılır?",
+   "answer": "Payda cot b−cot a olur; sıra karışırsa sonucun işareti değişir."
+  },
+  {
+   "after": 7,
+   "prompt": "a=30° için sin2a ile 2 sin a neden aynı sayı değildir?",
+   "answer": "sin60°=√3/2 iken 2 sin30°=1 olur; iki kat açı, değerin iki katı demek değildir."
+  },
+  {
+   "after": 8,
+   "prompt": "sin a+cos a değeri verildiğinde sin2a’yı nasıl bulursun?",
+   "answer": "Toplamın karesini alırsın: (sin a+cos a)²=1+sin2a olduğundan sin2a hemen çıkar."
+  },
+  {
+   "after": 10,
+   "prompt": "a=0° iken tan(a/2) için (1−cos a)/sin a biçimi neden kullanılamaz?",
+   "answer": "Bu yazım 0/0 verir; oysa sin a/(1+cos a) biçimi 0/2=0 sonucunu verir."
+  },
+  {
+   "after": 12,
+   "prompt": "cos70°−cos10° ifadesi çarpıma dönüştürülünce sonuç ne olur?",
+   "answer": "−2 sin40° sin30° yazılır ve sonuç −sin40° çıkar; 70°’nin kosinüsü daha küçük olduğu için negatiftir."
+  }
+ ],
+ "ayt-trigonometrik-denklemler": [
+  {
+   "after": 1,
+   "prompt": "sin x/cos x=0 denklemi hangi koşulda tan x=0 ile eşdeğerdir?",
+   "answer": "Yalnız cos x≠0 iken eşdeğerdir; sadeleştirme yasak noktaları ortadan kaldırmaz."
+  },
+  {
+   "after": 3,
+   "prompt": "cos x=−1/2 denkleminin temel kökleri hangileridir?",
+   "answer": "Aynı apsise sahip iki simetrik nokta 2π/3 ve 4π/3 kökleridir; turlar bunlara 2kπ ekler."
+  },
+  {
+   "after": 4,
+   "prompt": "tan x=−1 denkleminin [0,2π) aralığındaki kökleri nelerdir?",
+   "answer": "Aile −π/4+kπ olduğundan aralıktaki kökler 3π/4 ve 7π/4 olur."
+  },
+  {
+   "after": 5,
+   "prompt": "sin(2x−π/6)=1/2 denkleminin çözüm aileleri nelerdir?",
+   "answer": "2x−π/6=π/6+2kπ ya da 5π/6+2kπ çözülür; x=π/6+kπ veya x=π/2+kπ bulunur."
+  },
+  {
+   "after": 7,
+   "prompt": "sin3x=sin x denkleminde yalnız 3x=x yazmak neyi kaybettirir?",
+   "answer": "3x=π−x+2kπ simetri ailesini ve tam tur köklerini kaybettirir; iki aile ayrı çözülüp birleştirilir."
+  },
+  {
+   "after": 8,
+   "prompt": "sin2x=sin x denkleminin [0,2π) aralığında kaç farklı kökü vardır?",
+   "answer": "sin x(2 cos x−1)=0 dallarından 0, π, π/3 ve 5π/3 gelir; toplam 4 kök vardır."
+  },
+  {
+   "after": 10,
+   "prompt": "sin x+cos x=1 denkleminin karesini alınca çıkan x=π adayı neden atılır?",
+   "answer": "Asıl denklemde sin π+cos π=−1 olur; kare alma işareti silip sahte kök üretmiştir."
+  },
+  {
+   "after": 13,
+   "prompt": "x=π/6+kπ ailesinden 0≤x<2π aralığına hangi kökler girer?",
+   "answer": "Eşitsizlik k=0 ve k=1 verir; kökler π/6 ve 7π/6 olur."
+  }
+ ],
+ "ayt-logaritma": [
+  {
+   "after": 1,
+   "prompt": "log_(x−1)(x+2) ifadesinin tanımlı olması için x hangi koşulları birlikte sağlamalıdır?",
+   "answer": "Taban için x>1 ve x≠2 gerekir; iç x+2 bu aralıkta zaten pozitiftir."
+  },
+  {
+   "after": 3,
+   "prompt": "Tabansız log ile ln gösterimlerinin tabanları nedir?",
+   "answer": "Tabansız log onluk logaritmadır, tabanı 10’dur; ln ise tabanı e olan doğal logaritmadır."
+  },
+  {
+   "after": 6,
+   "prompt": "log₄8 değeri ortak taban kullanılarak kaç bulunur?",
+   "answer": "ln8/ln4=(3 ln2)/(2 ln2)=3/2 olur."
+  },
+  {
+   "after": 7,
+   "prompt": "log₂3·log₃5·log₅8 çarpımı kaçtır?",
+   "answer": "Orta tabanlar zincirde sadeleşir; çarpım log₂8=3 olur."
+  },
+  {
+   "after": 9,
+   "prompt": "a^(log_a x)=x eşitliği neden yalnız x>0 için yazılır?",
+   "answer": "Burada x logaritmanın içidir ve iç pozitif olmalıdır; log_a(a^t)=t ise her gerçek t için geçerlidir."
+  },
+  {
+   "after": 10,
+   "prompt": "log₂(x−1)+log₂(x−3)=3 denkleminde x=−1 adayı neden elenir?",
+   "answer": "Başlangıç koşulu x>3’tür; iki negatif çarpanın çarpımının pozitif olması ayrı logaritmaları tanımlı yapmaz."
+  },
+  {
+   "after": 12,
+   "prompt": "log_x16=2 denkleminin çözümü nedir?",
+   "answer": "x²=16’dan ±4 adayları çıkar; taban pozitif ve 1’den farklı olmalı, yalnız x=4 kalır."
+  },
+  {
+   "after": 15,
+   "prompt": "Bir miktarın başlangıcın 1/8’ine inmesi yarılanma süresi T cinsinden ne kadar sürer?",
+   "answer": "1/8=(1/2)³ olduğundan üç yarılanma gerekir; süre 3T olur."
+  },
+  {
+   "after": 16,
+   "prompt": "L=10 log₁₀(I/I₀) modelinde şiddet 100 katına çıkarsa ses düzeyi kaç birim artar?",
+   "answer": "log₁₀100=2 olduğundan düzey 10·2=20 birim artar; düzeyin 100 kat olması gerekmez."
+  }
+ ],
+ "ayt-diziler": [
+  {
+   "after": 1,
+   "prompt": "a_n=(n+1)/(n−3) ifadesi neden bütün pozitif tam sayılarda bir dizi tanımlamaz?",
+   "answer": "n=3’te payda sıfır olur ve terim tanımsızdır; her indisin tanımlı olması gerekir."
+  },
+  {
+   "after": 3,
+   "prompt": "a_n=3n−2 için a_(2n) ve 2a_n ifadeleri nedir?",
+   "answer": "a_(2n)=3·2n−2=6n−2, 2a_n=6n−4 olur; indisi katlamak değeri katlamak değildir."
+  },
+  {
+   "after": 6,
+   "prompt": "Aritmetik dizide a_4=11 ve a_9=26 ise a_12 kaçtır?",
+   "answer": "5 adımda 15 artış olduğundan d=3’tür; a_12=11+8·3=35 bulunur."
+  },
+  {
+   "after": 7,
+   "prompt": "2 ile 14 arasına 3 terim yerleştirilirse ortak fark kaç olur?",
+   "answer": "Toplam 5 terim ve 4 adım vardır; fark (14−2)/4=3 olur."
+  },
+  {
+   "after": 9,
+   "prompt": "S_n=n²+2n ise genel terim a_n nedir?",
+   "answer": "S_n−S_(n−1)=2n+1 bulunur; a_1=S_1=3 de bu kurala uyar."
+  },
+  {
+   "after": 12,
+   "prompt": "r=1 olan geometrik dizide ilk n terimin toplamı neden formülle değil doğrudan bulunur?",
+   "answer": "Formülde 1−r paydası sıfır olur; bütün terimler a_1 olduğundan toplam n·a_1’dir."
+  },
+  {
+   "after": 13,
+   "prompt": "Σ_(k=3)^7 (2k+1) toplamında kaç terim vardır?",
+   "answer": "k=3’ten 7’ye kadar 7−3+1=5 terim vardır; üst sınır terim sayısı değildir."
+  },
+  {
+   "after": 14,
+   "prompt": "Ardışık iki üçgensel sayının toplamı T_(n−1)+T_n neye eşittir?",
+   "answer": "Bu toplam n² eder."
+  }
+ ],
+ "ayt-limit-sureklilik": [
+  {
+   "after": 1,
+   "prompt": "x→2− gösterimindeki eksi işareti neyi belirtir?",
+   "answer": "2’den küçük girdilerle yaklaşıldığını belirtir; çıktı değerlerinin işaretiyle ilgisi yoktur."
+  },
+  {
+   "after": 3,
+   "prompt": "İki dalın açık uçları aynı L yüksekliğine giderken dolu nokta başka yükseklikteyse limit ve f(a) ne olur?",
+   "answer": "Limit L olur; f(a) ise dolu noktanın gösterdiği yüksekliktir."
+  },
+  {
+   "after": 6,
+   "prompt": "log_a f(x)→log_a L yazabilmek için iç fonksiyonun limiti L hangi koşulu sağlamalıdır?",
+   "answer": "İç çevrede pozitif olmalı ve L>0 olmalıdır; içi 0’a yaklaşan ifade log_a 0 diye hesaplanamaz."
+  },
+  {
+   "after": 8,
+   "prompt": "(x³−8)/(x−2) ifadesinin x→2 limiti kaçtır?",
+   "answer": "x³−8=(x−2)(x²+2x+4) olduğundan x≠2 için sadeleşir; 4+4+4=12 bulunur."
+  },
+  {
+   "after": 9,
+   "prompt": "(√(x+4)−2)/x ifadesinin x→0 limiti kaçtır?",
+   "answer": "Eşlenikle çarpınca ifade 1/(√(x+4)+2) olur; limit 1/4 bulunur."
+  },
+  {
+   "after": 10,
+   "prompt": "|x|/x ifadesinin 0’daki sol ve sağ limitleri nedir?",
+   "answer": "Soldan −1, sağdan 1’dir; yanlar farklı olduğundan iki yanlı limit yoktur."
+  },
+  {
+   "after": 12,
+   "prompt": "x<2 için ax+1, x>2 için x+4 olan fonksiyonda iki yanlı limit için a kaç olmalıdır?",
+   "answer": "Yanların eşitliği 2a+1=6 verir; a=5/2 bulunur."
+  },
+  {
+   "after": 15,
+   "prompt": "f(x)=(x²−1)/(x−1) fonksiyonunun doğal tanım kümesi nedir ve nerede süreklidir?",
+   "answer": "Tanım kümesi ℝ\\{1} kümesidir ve fonksiyon bu kümenin tamamında süreklidir."
+  }
+ ],
+ "ayt-ikinci-dereceden-denklemler": [
+  {
+   "after": 1,
+   "prompt": "x²=3x denkleminde iki tarafı x’e bölmek hangi çözümü kaybettirir?",
+   "answer": "x=0 çözümünü kaybettirir; bunun yerine x(x−3)=0 yazılıp iki çarpan ayrı sıfırlanır."
+  },
+  {
+   "after": 3,
+   "prompt": "x²+6x+2=0 denkleminin kökleri tam kareye tamamlayarak nedir?",
+   "answer": "(x+3)²=7 olur; iki işaret alınarak x=−3±√7 bulunur."
+  },
+  {
+   "after": 5,
+   "prompt": "2x²+3x−2=0 denkleminin kökleri nedir?",
+   "answer": "Δ=9+16=25 olduğundan kökler (−3+5)/4=1/2 ve (−3−5)/4=−2 olur."
+  },
+  {
+   "after": 7,
+   "prompt": "Kökler toplamı 5 ve çarpımı 3 ise α²+β² kaçtır?",
+   "answer": "α²+β²=S²−2P=25−6=19 olur."
+  },
+  {
+   "after": 8,
+   "prompt": "2x²−8x+3=0 denkleminin kökleri arasındaki uzaklık kaçtır?",
+   "answer": "Δ=64−24=40 olduğundan |α−β|=√40/2=√10 bulunur."
+  },
+  {
+   "after": 11,
+   "prompt": "x²−2x+5 için S>0 ve P>0 olsa da neden iki pozitif gerçek kök yoktur?",
+   "answer": "Δ=4−20<0 olduğundan gerçek kök yoktur; işaret şartına Δ≥0 da eklenmelidir."
+  },
+  {
+   "after": 13,
+   "prompt": "x⁴−5x²+4=0 denkleminin gerçek kökleri nelerdir?",
+   "answer": "t=x² ile t=1 ve t=4 bulunur; buradan x=±1 ve x=±2 olur."
+  },
+  {
+   "after": 15,
+   "prompt": "Kenarları x ve x+3 metre olan dikdörtgenin alanı 40 m² ise x neden −8 olamaz?",
+   "answer": "x²+3x−40=0 kökleri 5 ve −8’dir; uzunluk pozitif olmak zorunda olduğundan yalnız 5 m kabul edilir."
+  },
+  {
+   "after": 16,
+   "prompt": "y=x+1 ve x²+y²=13 sisteminin çözüm ikilileri nelerdir?",
+   "answer": "x²+x−6=0 kökleri 2 ve −3’tür; ikililer (2,3) ve (−3,−2) olur."
+  }
+ ],
+ "ayt-karmasik-sayilar": [
+  {
+   "after": 1,
+   "prompt": "3−i(2−i) sayısının gerçek kısmı kaçtır?",
+   "answer": "Açılınca 3−2i+i²=2−2i olur; gerçek kısım 2’dir."
+  },
+  {
+   "after": 2,
+   "prompt": "(t−2)+(t²−9)i ifadesinin gerçek sayı olması için t kaç olmalıdır?",
+   "answer": "Sanal kısım sıfır olmalıdır: t²−9=0, yani t=3 ya da t=−3."
+  },
+  {
+   "after": 3,
+   "prompt": "i³⁰ kaça eşittir?",
+   "answer": "30’un 4’e bölümünden kalan 2 olduğundan i³⁰=i²=−1 olur."
+  },
+  {
+   "after": 5,
+   "prompt": "(1+2i)(3−i) çarpımı nedir?",
+   "answer": "3−i+6i−2i² açılımında i²=−1 kullanılır; sonuç 5+5i olur."
+  },
+  {
+   "after": 8,
+   "prompt": "(2+i)/(1−i) bölümü standart biçimde nedir?",
+   "answer": "Pay ve payda 1+i ile çarpılır; pay 1+3i, payda 2 olur ve sonuç (1+3i)/2 çıkar."
+  },
+  {
+   "after": 9,
+   "prompt": "1+i ile 4+5i sayıları arasındaki uzaklık kaçtır?",
+   "answer": "Fark 3+4i olduğundan uzaklık √(3²+4²)=5 olur."
+  },
+  {
+   "after": 11,
+   "prompt": "√(−1)·√(−1) ile √((−1)(−1)) ifadeleri neden farklı sonuç verir?",
+   "answer": "İlki i²=−1, ikincisi √1=1 verir; √u√v=√(uv) kuralı negatif radikantlara taşınmaz."
+  },
+  {
+   "after": 12,
+   "prompt": "x²+2x+5=0 denkleminin kökleri nelerdir?",
+   "answer": "Δ=4−20=−16 olduğundan kökler −1±2i olur."
+  }
+ ],
+ "ayt-esitsizlikler": [
+  {
+   "after": 1,
+   "prompt": "1/(x−1)>0 eşitsizliğinde iki tarafı x−1 ile çarpmak neden hatalıdır?",
+   "answer": "x−1’in işareti bilinmez; x<1 için negatif payda ve x=1 tanımsızlığı gözden kaçar."
+  },
+  {
+   "after": 2,
+   "prompt": "(x+1)/(x−2)>2 eşitsizliği tek kesre getirilince hangi biçimi alır?",
+   "answer": "2 sola alınıp ortak payda kurulur: (5−x)/(x−2)>0 ve x≠2."
+  },
+  {
+   "after": 4,
+   "prompt": "(x−1)²(x+2) ifadesinde hangi kritik noktada işaret değişmez?",
+   "answer": "1’de değişmez, çünkü (x−1) çift kuvvetlidir; −2’de ise işaret değişir."
+  },
+  {
+   "after": 7,
+   "prompt": "ax²+bx+c≥0 eşitsizliğinin her gerçek x için doğru olması hangi koşulları gerektirir?",
+   "answer": "a>0 ve Δ≤0 gerekir; eşitlik sınırında grafik eksene dokunabilir."
+  },
+  {
+   "after": 9,
+   "prompt": "x²−x−6≤0 ve x−1>0 sisteminin ortak çözümü nedir?",
+   "answer": "İlki [−2,3], ikincisi (1,∞) verir; kesişim (1,3] olur."
+  },
+  {
+   "after": 11,
+   "prompt": "(x−2)²≥4 eşitsizliğinin çözümü nedir?",
+   "answer": "|x−2|≥2 olur; buradan x≤0 veya x≥4 bulunur."
+  },
+  {
+   "after": 13,
+   "prompt": "√(x+1)≤x−1 eşitsizliğinin çözümü nedir?",
+   "answer": "x≥1 iken kare alınır ve x(x−3)≥0 çıkar; kesişim x≥3 olur."
+  },
+  {
+   "after": 14,
+   "prompt": "−2<x≤4 aralığında kaç tam sayı vardır?",
+   "answer": "−1, 0, 1, 2, 3 ve 4 olmak üzere 6 tam sayı vardır."
+  }
+ ],
+ "ayt-parabol": [
+  {
+   "after": 1,
+   "prompt": "y=a(x−h)²+k ailesinde yalnız kolların genişliğini karşılaştırmak için hangi değerler sabit tutulur?",
+   "answer": "h ve k sabit tutulur; böylece tepe aynı kalır ve yükseliş yalnız a’ya bağlı görünür."
+  },
+  {
+   "after": 3,
+   "prompt": "f(x)=x²+1 hiç gerçek kök taşımadığı hâlde simetri ekseni neden vardır?",
+   "answer": "Simetri eksen kesimlerinden türetilmez; tepe apsisi h her zaman vardır ve burada eksen x=0’dır."
+  },
+  {
+   "after": 5,
+   "prompt": "f(x)=(x−2)² fonksiyonunun x∈[4,5] için görüntü kümesi nedir?",
+   "answer": "Tepe apsisi 2 aralıkta olmadığından görüntü uç değerlerden gelir: [4,9]."
+  },
+  {
+   "after": 7,
+   "prompt": "x² fonksiyonu (0,2) açık aralığında neden bir en büyük değer almaz?",
+   "answer": "Değerler 4’e yaklaşır fakat x=2 aralıkta olmadığı için 4 alınmaz; 4 yalnız üst sınırdır."
+  },
+  {
+   "after": 8,
+   "prompt": "Tepesi T(1,−3) olan ve A(3,5) noktasından geçen parabolün denklemi nedir?",
+   "answer": "5=a·2²−3 eşitliğinden a=2 bulunur; denklem y=2(x−1)²−3 olur."
+  },
+  {
+   "after": 11,
+   "prompt": "x²+1 parabolü x eksenini kesmediği hâlde y=2 doğrusuyla hangi apsislerde kesişir?",
+   "answer": "x²+1=2 denklemi x=±1 verir; doğruyla kesişim için ortak çözüm denkleminin Δ’sı kullanılır."
+  },
+  {
+   "after": 13,
+   "prompt": "y=x² parabolüne teğet olan y=2x+n doğrusunda n kaçtır?",
+   "answer": "x²−2x−n=0 için Δ_d=4+4n=0 olmalıdır; n=−1 ve temas noktası (1,1) olur."
+  },
+  {
+   "after": 16,
+   "prompt": "(x−2)²+1 grafiği x² grafiğinden hangi ötelemelerle elde edilir?",
+   "answer": "x² grafiği 2 birim sağa ve 1 birim yukarı taşınır."
+  },
+  {
+   "after": 17,
+   "prompt": "h(t)=−5t²+20t+1 modelinde en büyük yükseklik ne zaman ve kaç metredir?",
+   "answer": "Tepe t=2 saniyededir; yükseklik −20+40+1=21 metre olur."
+  },
+  {
+   "after": 18,
+   "prompt": "Çevresi 24 m olan dikdörtgenin alabileceği en büyük alan kaç metrekaredir?",
+   "answer": "A=x(12−x)=−(x−6)²+36 olduğundan en büyük alan x=6 için 36 m² olur."
+  }
+ ],
+ "ayt-trigonometri": [
+  {
+   "after": 1,
+   "prompt": "2°15′30″ açısı kaç açı saniyesidir?",
+   "answer": "1°=3600″ ve 1′=60″ olduğundan 2·3600+15·60+30=8130 açı saniyesidir."
+  },
+  {
+   "after": 3,
+   "prompt": "−450° açısının esas ölçüsü kaç derecedir?",
+   "answer": "−450°+2·360°=270° olur; işareti atıp 450 yazmak doğru değildir."
+  },
+  {
+   "after": 5,
+   "prompt": "tan 30° değerini sin 30° ve cos 30° değerlerinden nasıl bulursun?",
+   "answer": "(1/2)/(√3/2) oranı 1/√3 verir; sadeleşmiş hâli √3/3’tür."
+  },
+  {
+   "after": 7,
+   "prompt": "Tanjant ve kotanjant hangi açılarda tanımsızdır?",
+   "answer": "Tanjant cosθ=0 olan π/2+kπ açılarında, kotanjant sinθ=0 olan kπ açılarında tanımsızdır."
+  },
+  {
+   "after": 9,
+   "prompt": "Üçüncü bölgede sinüs, kosinüs ve tanjantın işaretleri nedir?",
+   "answer": "Sinüs ve kosinüs negatiftir; ikisinin oranı olan tanjant pozitiftir."
+  },
+  {
+   "after": 11,
+   "prompt": "sin(−300°) değeri kaçtır?",
+   "answer": "Sinüs tek olduğundan sin(−300°)=−sin300°=−(−√3/2)=√3/2 olur."
+  },
+  {
+   "after": 13,
+   "prompt": "sinθ=3/5 ve θ ikinci bölgede ise cosθ kaçtır?",
+   "answer": "cos²θ=16/25 olduğundan cosθ=±4/5 çıkar; ikinci bölgede kosinüs negatif olduğu için −4/5 seçilir."
+  },
+  {
+   "after": 14,
+   "prompt": "(1−cos²θ)/sinθ sadeleşip sinθ olunca hangi açılar yine tanım dışı kalır?",
+   "answer": "İlk kesrin paydasını sıfır yapan sinθ=0, yani θ=kπ açıları tanım dışı kalmaya devam eder."
+  },
+  {
+   "after": 16,
+   "prompt": "2sin(3x−π)+1 fonksiyonunun genliği, orta çizgisi ve yatay kayması nedir?",
+   "answer": "Genlik 2, orta çizgi y=1’dir; yatay kayma −c/b=π/3 olduğundan grafik π/3 sağa kayar."
+  },
+  {
+   "after": 18,
+   "prompt": "arcsin(sin(5π/6)) değeri kaçtır?",
+   "answer": "sin(5π/6)=1/2 olur ve arcsin ana aralıktaki açıyı verir; sonuç π/6’dır."
+  },
+  {
+   "after": 20,
+   "prompt": "sin 15° değeri fark formülüyle kaç bulunur?",
+   "answer": "sin(45°−30°)=sin45°cos30°−cos45°sin30°=(√6−√2)/4 olur."
+  },
+  {
+   "after": 22,
+   "prompt": "Yalnız sin A biliniyorsa cos 2A için hangi biçim seçilir?",
+   "answer": "cos 2A=1−2sin²A biçimi seçilir; yalnız cos A biliniyorsa 2cos²A−1 kullanılır."
+  },
+  {
+   "after": 25,
+   "prompt": "Kosinüs teoreminde A=90° olunca hangi bağıntı geri gelir?",
+   "answer": "cosA=0 olduğundan a²=b²+c², yani Pisagor bağıntısı elde edilir."
+  },
+  {
+   "after": 28,
+   "prompt": "A=30°, a=5 ve b=8 verildiğinde kaç farklı üçgen kurulabilir?",
+   "answer": "h=b sinA=4 olur; 4<5<8 sağlandığı için iki üçgen kurulabilir."
+  },
+  {
+   "after": 30,
+   "prompt": "sin(2x−π/3)=1/2 denkleminin çözüm aileleri nelerdir?",
+   "answer": "2x−π/3=π/6+2kπ veya 5π/6+2kπ çözülür; x=π/4+kπ ya da x=7π/12+kπ bulunur."
+  },
+  {
+   "after": 33,
+   "prompt": "a sinx+b cosx=0 denkleminde a=0 ve b≠0 ise nasıl çözülür?",
+   "answer": "Denklem b cosx=0 olur ve doğrudan cosx=0 çözülür; tanjanta bölme yapılmaz."
+  }
+ ],
+ "ayt-fonksiyonlar": [
+  {
+   "after": 1,
+   "prompt": "f(t)=t²+4 için f(x+2) ile f(x)+2 ifadeleri nedir?",
+   "answer": "f(x+2)=(x+2)²+4 girdiyi, f(x)+2=x²+6 çıktıyı değiştirir; ikisi genelde aynı değildir."
+  },
+  {
+   "after": 2,
+   "prompt": "A={−1,0,1}, B={0,1} ve f(x)=x² için f neden bire bir değildir?",
+   "answer": "−1 ile 1 aynı çıktı olan 1’e gider; B’nin tamamı erişildiği için fonksiyon yine de örtendir."
+  },
+  {
+   "after": 5,
+   "prompt": "f(x)=2x+1 ve g(x)=1/(x−3) için g(f(x)) nedir ve hangi koşul gerekir?",
+   "answer": "g(f(x))=1/(2x−2) olur; ara değer 3 olmamalı, yani x≠1 gerekir."
+  },
+  {
+   "after": 7,
+   "prompt": "x²:R→[0,∞) fonksiyonu örten olduğu hâlde neden tersi fonksiyon değildir?",
+   "answer": "Bire bir değildir; farklı girdiler aynı çıktıda birleştiği için geri dönüş tek değerli olamaz."
+  },
+  {
+   "after": 9,
+   "prompt": "f(x)=(ax+b)/(cx+d) için ad−bc≠0 iken ters kural nedir?",
+   "answer": "f⁻¹(y)=(dy−b)/(a−cy) olur; paydayı sıfır yapan y değeri tersin tanımından çıkarılır."
+  },
+  {
+   "after": 11,
+   "prompt": "f(x)=x², x∈[−2,1] fonksiyonunun görüntü kümesi nedir?",
+   "answer": "Uç görüntüleri 4 ve 1’dir ama içteki x=0 değeri 0 verir; görüntü [0,4] olur."
+  },
+  {
+   "after": 12,
+   "prompt": "x<1 için f(x)=x+2, x≥1 için f(x)=2x−1 ise f(1) kaçtır?",
+   "answer": "Eşitlik ikinci parçada olduğundan f(1)=2·1−1=1 olur; ilk kuralla 3 yazmak yanlış parçayı seçer."
+  },
+  {
+   "after": 14,
+   "prompt": "f(bx) dönüşümünde b>1 iken grafik nasıl değişir?",
+   "answer": "x koordinatları 1/b ile ölçeklenir; grafik y eksenine doğru yatay olarak daralır."
+  },
+  {
+   "after": 17,
+   "prompt": "Üç elemanlı A’dan iki elemanlı B’ye kaç fonksiyon ve kaç bire bir fonksiyon vardır?",
+   "answer": "2³=8 fonksiyon vardır; m>n olduğundan bire bir fonksiyon sayısı 0’dır."
+  },
+  {
+   "after": 18,
+   "prompt": "Bijektif f ve g için g∘f fonksiyonunun tersi hangi sırayla yazılır?",
+   "answer": "Tersi f⁻¹∘g⁻¹ olur; önce g’nin tersi, sonra f’nin tersi uygulanır."
+  }
+ ],
+ "ayt-polinomlar": [
+  {
+   "after": 1,
+   "prompt": "3x⁴−3x⁴+2x²−1 ifadesinin derecesi kaçtır?",
+   "answer": "Benzer terimler birleşince 2x²−1 kalır; derece 2’dir."
+  },
+  {
+   "after": 2,
+   "prompt": "P(x)=(a−2)x³+(b+1)x²+3 polinomunun tam ikinci dereceden olması için a ve b ne olmalıdır?",
+   "answer": "x³ katsayısı sıfırlanmalı, x² katsayısı sıfır olmamalıdır: a=2 ve b≠−1."
+  },
+  {
+   "after": 4,
+   "prompt": "P(x+1)=(x+1)³+5 veriliyorsa P(2) kaçtır?",
+   "answer": "t=x+1 ile P(t)=t³+5 olur; P(2)=8+5=13 bulunur."
+  },
+  {
+   "after": 6,
+   "prompt": "P=2x⁴−x+1 ve Q=−2x⁴+3x²−4 için P+Q polinomunun derecesi kaçtır?",
+   "answer": "Baş katsayılar birbirini götürür; P+Q=3x²−x−3 olduğundan derece 2’dir."
+  },
+  {
+   "after": 9,
+   "prompt": "2x³−3x²−5x+7 polinomu x−2’ye bölünürse bölüm ve kalan nedir?",
+   "answer": "Uzun bölme bölümü 2x²+x−3, kalanı 1 verir."
+  },
+  {
+   "after": 11,
+   "prompt": "x³+2x²+3x+4 polinomunun x²−1 ile bölümünden kalan nedir?",
+   "answer": "Kalan ax+b biçimindedir; P(1)=10 ve P(−1)=2 denklemleri a=4, b=6 verir ve kalan 4x+6 olur."
+  },
+  {
+   "after": 12,
+   "prompt": "x²+ax−6 polinomunda x−2’nin çarpan olması için a kaç olmalıdır?",
+   "answer": "P(2)=4+2a−6=0 olmalıdır; a=1 bulunur ve polinom (x−2)(x+3) olur."
+  }
+ ]
+}

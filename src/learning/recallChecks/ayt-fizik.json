@@ -1,0 +1,972 @@
+{
+ "elektrik-alan": [
+  {
+   "after": 2,
+   "prompt": "Noktasal Q yükünün alanında Q sabitken uzaklık üç katına çıkarsa alan büyüklüğü nasıl değişir?",
+   "answer": "Alan r² ile ters orantılı olduğundan dokuzda birine iner."
+  },
+  {
+   "after": 4,
+   "prompt": "Elektrik alan çizgileri neden birbirini kesmez?",
+   "answer": "Kesişselerdi aynı noktadaki tek alan vektörü için iki farklı yön verilmiş olurdu."
+  },
+  {
+   "after": 5,
+   "prompt": "Alan sabitken test yükü iki katına çıkarsa elektriksel kuvvet ve alan nasıl değişir?",
+   "answer": "Elektriksel kuvvet iki katına çıkar; kaynağın o noktadaki alanı değişmez."
+  },
+  {
+   "after": 8,
+   "prompt": "Bir noktada +1 nC deneme yüküne 3 μN kuvvet etkiyorsa alanın büyüklüğü kaçtır?",
+   "answer": "E=F/q0=3×10⁻⁶/10⁻⁹=3000 N/C olur; +2 nC ile 6 μN ölçmek aynı oranı verir."
+  },
+  {
+   "after": 9,
+   "prompt": "Bir noktada birbirine dik 18000 N/C ve 9000 N/C alan katkıları varsa net büyüklük kaçtır?",
+   "answer": "Bileşenler vektörel birleşir: √(18000²+9000²)=9000√5 N/C; 27000 skaler toplamı net değer değildir."
+  },
+  {
+   "after": 11,
+   "prompt": "+4 μC x=0’da, −1 μC x=3 m’de ise net alanın sıfır olduğu nokta nerededir?",
+   "answer": "Arada alanlar aynı yönlüdür; sağ dış bölgede 4/x²=1/(x−3)² çözülür ve x=6 m bulunur."
+  },
+  {
+   "after": 12,
+   "prompt": "Elektrostatik dengedeki iletkenin iç malzemesinde alan neden sıfırdır?",
+   "answer": "İçeride alan olsaydı serbest yükler hareket ederdi; dengede yükler yüzeye yerleşip iç alanı sıfırlar."
+  },
+  {
+   "after": 14,
+   "prompt": "−2 μC yüklü 0,001 kg tanecikte Ey=−5000 N/C ve g=10 ise net kuvvet kaçtır?",
+   "answer": "qEy=+0,010 N yukarı, ağırlık 0,010 N aşağıdır; net kuvvet ve ivme sıfır olur."
+  }
+ ],
+ "buyuk-patlama-atomalti": [
+  {
+   "after": 2,
+   "prompt": "Kozmolojik genişlemede hangi uzaklıklar artar, hangi yapılar bu ölçekle zorunlu olarak şişmez?",
+   "answer": "Kütleçekimle birbirine bağlı olmayan galaksi grupları arasındaki uzaklıklar artar; bağlı galaksinin yıldızları, Güneş sistemi ve atomlar zorunlu olarak şişmez."
+  },
+  {
+   "after": 5,
+   "prompt": "v=Hd ilişkisine göre iki kat uzaktaki eş hareketli bir grubun uzaklaşma hızı nasıl değişir?",
+   "answer": "Yaklaşık iki kat olur; yakın kozmolojik uzaklıklarda ortalama uzaklaşma hızı uzaklıkla orantılıdır."
+  },
+  {
+   "after": 7,
+   "prompt": "Kozmik mikrodalga art alanının ışığı bugün neden mikrodalga bölgesindedir?",
+   "answer": "Elektronlar çekirdeklere bağlanınca serbest ilerleyen o dönemin ışığı, evrenin genişlemesi nedeniyle bugün mikrodalga bölgesine kaymıştır."
+  },
+  {
+   "after": 9,
+   "prompt": "Karanlık madde ile karanlık enerji arasındaki fark nedir?",
+   "answer": "Karanlık madde kütleçekimsel etkilerinden çıkarılan madde bileşenidir; karanlık enerji hızlanan genişlemeyi açıklamakta kullanılan ayrı bir bileşendir."
+  },
+  {
+   "after": 11,
+   "prompt": "Bir u kuarkı ile bir anti-d kuarkından oluşan bileşiğin elektrik yükü kaç e olur?",
+   "answer": "+2e/3 ile +e/3 toplanır ve +e bulunur; bileşiğin yükü bileşen yüklerinin toplamıdır."
+  },
+  {
+   "after": 13,
+   "prompt": "Nötrinolar elektrikçe nötr olduğu hâlde saptanmalarını hangi etkileşim mümkün kılar?",
+   "answer": "Zayıf etkileşim; nötr olmaları bütün etkileşimlere kapalı oldukları anlamına gelmez."
+  },
+  {
+   "after": 15,
+   "prompt": "Bir parçacığın bozon mu fermiyon mu olduğunu hangi özelliği belirler?",
+   "answer": "Spini belirler: tam sayı spinliler bozon, yarım tam sayı spinliler fermiyondur; elektron ve kuarklar spin 1/2 fermiyondur."
+  },
+  {
+   "after": 17,
+   "prompt": "Protonun kütlesinin büyük bölümü nereden gelir?",
+   "answer": "Kuark-gluon sisteminin enerjisinden gelir; kütlenin tamamını yalnız Higgs ile doğrudan özdeşleştirmek yanlıştır."
+  }
+ ],
+ "radyoaktivite": [
+  {
+   "after": 1,
+   "prompt": "A=16 ve Z=7 olan bir çekirdekte kaç nötron vardır?",
+   "answer": "N=A−Z bağıntısıyla 16−7=9 nötron bulunur."
+  },
+  {
+   "after": 4,
+   "prompt": "Alfa bozunmasında çekirdeğin A, Z ve nötron sayısı nasıl değişir?",
+   "answer": "A 4, Z 2, nötron sayısı da 2 azalır; bu yüzden element değişir."
+  },
+  {
+   "after": 6,
+   "prompt": "β⁺ bozunması ile elektron yakalamanın farkı nedir?",
+   "answer": "A ve Z sonuçları aynıdır; β⁺ bozunmasında pozitron ve nötrino çıkar, elektron yakalamada ise çekirdek bir elektron alır ve nötrino çıkarır."
+  },
+  {
+   "after": 8,
+   "prompt": "Bir bozunma zincirinde gama sayısı neden A, Z hesabından bulunamaz?",
+   "answer": "Gama yayımı A, Z ve N değerlerini değiştirmez; aynı son A, Z sonucuna farklı gama sayıları eşlik edebilir."
+  },
+  {
+   "after": 10,
+   "prompt": "Alfanın kâğıtla durdurulabilmesi alfa yayıcıyı neden her durumda önemsiz yapmaz?",
+   "answer": "Vücut içine alınan alfa yayıcı iç kirlenme oluşturur; dış maruziyet ile iç kirlenme ayrı değerlendirilir."
+  },
+  {
+   "after": 12,
+   "prompt": "Kalan çekirdek sayısı aynı iki farklı izotoptan hangisinin aktivitesi büyüktür?",
+   "answer": "Kısa yarı ömürlü olanınki; aktivite λN ve λ=ln 2/T olduğundan T küçüldükçe λ büyür."
+  },
+  {
+   "after": 14,
+   "prompt": "Bir çekirdeğin bağlanma enerjisi kütle defektinden nasıl bulunur?",
+   "answer": "Serbest proton ve nötronların toplam kütlesinden çekirdek kütlesi çıkarılıp Δm bulunur, sonra Eb=Δmc² yazılır."
+  },
+  {
+   "after": 16,
+   "prompt": "Füzyonda hafif çekirdeklerin birleşmesi için neden yüksek sıcaklık önem taşır?",
+   "answer": "Pozitif çekirdekler yaklaşırken Coulomb engeliyle birbirini iter; yüksek sıcaklık ve uygun koşullar bu engeli aşmayı mümkün kılar."
+  }
+ ],
+ "ozel-gorelilik": [
+  {
+   "after": 1,
+   "prompt": "Michelson-Morley deneyinde beklenen saçak kaymasının bulunmaması hangi modele karşı bulgu oldu?",
+   "answer": "Klasik durağan esir rüzgârı modeline; aygıt döndürülünce o modelin öngördüğü düzenli kayma gözlenmedi."
+  },
+  {
+   "after": 3,
+   "prompt": "Hareketli vagondan ileri gönderilen ışığın boşluktaki hızını dış gözlemci kaç ölçer?",
+   "answer": "c ölçer, c+v değil; boşluktaki ışık hızı kaynağın hareketinden bağımsızdır."
+  },
+  {
+   "after": 5,
+   "prompt": "Kütleli bir cisim için β=1 değeri neden γ=1/√(1−β²) formülüne konamaz?",
+   "answer": "1−β² sıfır olur ve sonlu bir γ çıkmaz; kütleli cisimde 0≤|β|<1 koşulu sağlanmalıdır."
+  },
+  {
+   "after": 8,
+   "prompt": "Öz ömrü τ₀ olan bir parçacık laboratuvarda v hızıyla giderse ortalama ne kadar yol alır?",
+   "answer": "Laboratuvardaki ortalama süre γτ₀ olduğundan beklenen yol vγτ₀ olur."
+  },
+  {
+   "after": 10,
+   "prompt": "S çerçevesinde eşzamanlı ama Δx kadar ayrık iki olayın S′ çerçevesindeki zaman farkı nedir?",
+   "answer": "Δct′=−γβΔx olur; β≠0 iken bu fark sıfır olmadığı için olaylar S′ çerçevesinde eşzamanlı değildir."
+  },
+  {
+   "after": 13,
+   "prompt": "E²−p²c²=m²c⁴ bağıntısı foton için hangi sonucu verir?",
+   "answer": "Fotonun durgun kütlesi sıfır olduğundan E=pc çıkar; enerjisi ve momentumu sıfır olmak zorunda değildir."
+  },
+  {
+   "after": 15,
+   "prompt": "Kapalı bir sistem dışarı enerji verirse durgun kütlesine ne olabilir?",
+   "answer": "Durgun kütlesi azalabilir; bileşenlerin A gibi sayıları bu yüzden değişmek zorunda değildir."
+  },
+  {
+   "after": 16,
+   "prompt": "Uydu saatlerinde hangi iki görelilik etkisi birlikte önem taşıyabilir?",
+   "answer": "Hareketten gelen özel görelilik etkisi ile kütleçekiminden gelen genel görelilik etkisi."
+  }
+ ],
+ "siyah-cisim-foton": [
+  {
+   "after": 1,
+   "prompt": "Bir cismin sıcaklığı 20°C değerinden 40°C değerine çıkınca mutlak sıcaklığı neden iki katına çıkmış sayılmaz?",
+   "answer": "Oranlar kelvin üzerinden kurulur; 293,15 K değerinden 313,15 K değerine çıkış iki kat değildir."
+  },
+  {
+   "after": 3,
+   "prompt": "Oyuğun küçük deliği neden ideal siyah cisme iyi yaklaşır?",
+   "answer": "Deliğe giren ışık oyuk içinde birçok yansımada soğurulur ve geri kaçışı azalır; bunun nedeni siyah boya değildir."
+  },
+  {
+   "after": 5,
+   "prompt": "Bir siyah cismin sıcaklığı iki katına çıkarsa Bλ tepe dalga boyu nasıl değişir?",
+   "answer": "λtepe T=b sabit olduğundan tepe dalga boyu yarıya iner."
+  },
+  {
+   "after": 8,
+   "prompt": "Morötesi felaket diye anılan sorun nedir?",
+   "answer": "Klasik eş bölüşüm yaklaşımının kısa dalga boyunda sınırsız toplam ışınım öngörmesidir; deneysel tayf ise sonludur."
+  },
+  {
+   "after": 10,
+   "prompt": "E(eV)=1240/λ(nm) hesabında dalga boyu angstrom verilirse ne yapmalısın?",
+   "answer": "Dalga boyunu nanometreye çevirmeli ya da 12400 eV·Å değerini kullanmalısın; yoksa on katlık hata çıkar."
+  },
+  {
+   "after": 12,
+   "prompt": "Frekans sabitken saniyedeki foton sayısı artırılırsa tek foton enerjisi ve demetin gücü nasıl değişir?",
+   "answer": "Tek foton enerjisi hf değişmez; güç P=Φhf olduğundan foton sayısıyla birlikte artar."
+  },
+  {
+   "after": 14,
+   "prompt": "Termal kamera görüntüsündeki mavi ve sarı tonlar neyi gösterir?",
+   "answer": "Kızılötesi bantta algılanan ışınımın yazılım ölçeğiyle renklendirilmesini gösterir; cismin görünür mavi ya da sarı ışık yaydığını kanıtlamaz."
+  }
+ ],
+ "fotoelektrik-olay": [
+  {
+   "after": 2,
+   "prompt": "İş fonksiyonu W neyi ifade eder?",
+   "answer": "Seçilen yüzeyden bir elektronu dışarı çıkarmanın en küçük enerji maliyetidir; malzeme ve yüzey durumuna bağlı olabilir."
+  },
+  {
+   "after": 4,
+   "prompt": "Yüzeyden çıkan her fotoelektronun kinetik enerjisi neden Kmax olmaz?",
+   "answer": "Bazı elektronlar madde içinde ek enerji kaybeder; Kmax=hf−W yalnız bir üst sınırdır."
+  },
+  {
+   "after": 6,
+   "prompt": "İş fonksiyonu büyük olan bir yüzeyin eşik frekansı ve eşik dalga boyu nasıldır?",
+   "answer": "W=hf₀=hc/λ₀ olduğundan f₀ büyük, λ₀ küçüktür."
+  },
+  {
+   "after": 8,
+   "prompt": "Tek renkli ışığın gücü ile foton akısı arasındaki ilişki nedir?",
+   "answer": "P=ΦEγ olur; frekans değişirken aynı güç aynı foton sayısı anlamına gelmez."
+  },
+  {
+   "after": 11,
+   "prompt": "Hızlandırıcı gerilim artırılınca fotoelektronun yüzeyden çıktığı andaki Kmax değeri nasıl değişir?",
+   "answer": "Değişmez; ışık ve yüzey sabitse Kmax aynı kalır, artan şey elektronun anoda ulaştığı andaki kinetik enerjisidir."
+  },
+  {
+   "after": 13,
+   "prompt": "Aynı yüzeyde iki ışığın kesme gerilimlerinin eşit olması neyi gösterir?",
+   "answer": "Tek foton enerjilerinin eşit olduğunu gösterir; foton sayılarının da eşit olduğunu göstermez."
+  },
+  {
+   "after": 15,
+   "prompt": "Güç sabitken frekans artırılırsa saniyedeki foton sayısı ve kesme gerilimi nasıl değişir?",
+   "answer": "Φ=P/hf olduğundan foton sayısı azalır; foton enerjisi arttığı için kesme gerilimi artar."
+  },
+  {
+   "after": 16,
+   "prompt": "Kmax(eV)-f grafiğinden iş fonksiyonu W nasıl bulunur?",
+   "answer": "Önce iki noktadan h/e eğimi bulunur, sonra bir nokta Kmax=(h/e)f−W bağıntısına konarak W çözülür."
+  }
+ ],
+ "compton-debroglie": [
+  {
+   "after": 1,
+   "prompt": "Compton saçılmasının son durumu fotoelektrik olaydan nasıl ayrılır?",
+   "answer": "Compton saçılmasında son durumda saçılan bir foton bulunur ve elektron geri teper; fotoelektrik olayda foton soğurulur."
+  },
+  {
+   "after": 3,
+   "prompt": "Aynı elektron ve aynı θ için farklı ilk dalga boylarında hangi nicelik aynı kalır?",
+   "answer": "Mutlak dalga boyu kayması Δλ aynı kalır; enerji farkları ise aynı olmak zorunda değildir."
+  },
+  {
+   "after": 5,
+   "prompt": "Compton olayında geri tepen elektronun kinetik enerjisi foton enerjilerinden nasıl bulunur?",
+   "answer": "İki taraftaki dinlenim enerjileri sadeleşince Eγ=Eγ′+Ke kalır; yani Ke=Eγ−Eγ′ olur."
+  },
+  {
+   "after": 7,
+   "prompt": "Compton olayına esnek çarpışma denmesi neden foton enerjisinin korunduğu anlamına gelmez?",
+   "answer": "Korunan, foton ile elektronun toplam enerjisi ve momentumudur; foton enerjisinin bir bölümü elektrona geçer."
+  },
+  {
+   "after": 9,
+   "prompt": "Saçılan fotonun enerji payı Eγ′/Eγ dalga boylarıyla nasıl yazılır?",
+   "answer": "Eγ′/Eγ=λ/(λ+Δλ) olur; kalan Δλ/(λ+Δλ) payı elektrona gider."
+  },
+  {
+   "after": 11,
+   "prompt": "Göreli hızlarda de Broglie dalga boyu hesabında momentum nasıl yazılmalıdır?",
+   "answer": "p=γmv kullanılır; p≈mv yalnız yavaş kütleli parçacıkta geçerlidir."
+  },
+  {
+   "after": 13,
+   "prompt": "Aynı düşük kinetik enerjide de Broglie dalga boyu kütleyle nasıl değişir?",
+   "answer": "p=√(2mK) olduğundan λ∝1/√m olur; kütle büyüdükçe dalga boyu kısalır."
+  },
+  {
+   "after": 15,
+   "prompt": "Elektron mikroskobunda yüksek çözünürlüğe hangi özellik katkı verir?",
+   "answer": "Hızlandırılan elektronların kısa de Broglie dalga boyu katkı verir; mercek kusurları ve örnek etkileşimi de çözünürlüğü sınırlar."
+  }
+ ],
+ "modern-fizik-teknoloji": [
+  {
+   "after": 1,
+   "prompt": "Röntgen görüntüsünde dokular arasındaki kontrast temelde nasıl oluşur?",
+   "answer": "X ışınları dokulardan geçerken soğurma ve saçılmayla farklı miktarda zayıflar; algılayıcıya ulaşan dağılım görüntüyü oluşturur."
+  },
+  {
+   "after": 2,
+   "prompt": "I=I₀exp(−μL) modelinde ışın ardışık katmanlardan geçerse üs nasıl bulunur?",
+   "answer": "Her katmanın μL katkısı toplanır; μ cm⁻¹ ve L cm seçilince üs boyutsuz olur."
+  },
+  {
+   "after": 4,
+   "prompt": "Tek bir röntgen projeksiyonundan iç noktaların ayrı değerleri neden kesin bulunamaz?",
+   "answer": "Projeksiyon bir yol boyunca biriken zayıflamayı gösterir; derinlikteki farklı yerleşimler aynı yol toplamını verebilir."
+  },
+  {
+   "after": 6,
+   "prompt": "Ultrasonda derinlik için kullanılan d=vt/2 bağıntısındaki 2 nereden gelir?",
+   "answer": "Ses darbesi sınıra gidip geri döndüğü için ölçülen süre iki yolun toplamıdır."
+  },
+  {
+   "after": 8,
+   "prompt": "Radar ile sonar kullandıkları dalga türü bakımından nasıl ayrılır?",
+   "answer": "Radar elektromanyetik radyo ya da mikrodalga, sonar ise sıvı gibi bir ortamda ses dalgası kullanır."
+  },
+  {
+   "after": 10,
+   "prompt": "Plazma ekranda görünür renk nasıl oluşur?",
+   "answer": "Hücredeki gaz deşarjı ultraviyole üretir; bu ışık fosfor tabakalarını uyararak görünür renk verir."
+  },
+  {
+   "after": 13,
+   "prompt": "Bir elektrik alanda elektronlar ve delikler hangi yönlerde sürüklenir?",
+   "answer": "Elektronlar alanın tersine, delikler alan yönünde sürüklenir."
+  },
+  {
+   "after": 15,
+   "prompt": "Transistörde yükseltilmiş çıktının enerjisi nereden gelir?",
+   "answer": "Beslemeden gelir; giriş işareti yalnız akışı denetler, yükseltme enerji yaratmak değildir."
+  },
+  {
+   "after": 18,
+   "prompt": "Bant modelinde uzun dalga boylu bir foton neden bant geçişi oluşturamayabilir?",
+   "answer": "Eγ=hc/λ olduğundan dalga boyu uzadıkça foton enerjisi küçülür ve Eg değerinin altında kalabilir."
+  },
+  {
+   "after": 21,
+   "prompt": "Kenarı a olan bir küpte kenar küçülünce yüzey/hacim oranı nasıl değişir?",
+   "answer": "Oran 6/a olduğundan kenar küçüldükçe oran büyür."
+  },
+  {
+   "after": 23,
+   "prompt": "Popülasyon terslenmesi hangi durumu anlatır?",
+   "answer": "İlgili üst enerji düzeyinin alt düzeye göre daha çok dolu olduğu durumu anlatır; yarı kararlı düzeyle aynı kavram değildir."
+  }
+ ],
+ "isik-teorileri": [
+  {
+   "after": 1,
+   "prompt": "Huygens yaklaşımında dalga cephesinin her noktası nasıl ele alınır?",
+   "answer": "Sonraki dalga cephesinin kurulmasına katkı veren ikincil bir dalga kaynağı gibi ele alınır."
+  },
+  {
+   "after": 3,
+   "prompt": "Aynı frekansta daha parlak ışık tek fotonun enerjisini neden büyütmez?",
+   "answer": "Tek foton enerjisi E=hf ile yalnız frekansa bağlıdır; parlaklık daha çok enerji akışı sağlar."
+  },
+  {
+   "after": 5,
+   "prompt": "İki bağımsız ampulün ışığı neden gözle izlenen sabit girişim saçakları oluşturmaz?",
+   "answer": "Bağıl fazları hızla değişir; kararlı desen için bağıl fazın belirli kalması, yani uyumluluk gerekir."
+  },
+  {
+   "after": 8,
+   "prompt": "λ₀=600 nm, L=2 m ve d=0,30 mm ise havada saçak aralığı kaç mm olur?",
+   "answer": "Δy=λL/d=(600×10⁻⁹·2)/(0,30×10⁻³) m=4×10⁻³ m, yani 4 mm olur."
+  },
+  {
+   "after": 10,
+   "prompt": "Merkezin iki yanındaki ikinci aydınlıklar arasında kaç saçak aralığı vardır?",
+   "answer": "Her biri merkezden 2Δy uzakta olduğundan aralarında 4 aralık, yani 4Δy bulunur."
+  },
+  {
+   "after": 12,
+   "prompt": "Her iki yarığın genliği iki katına çıkarsa aydınlık maksimumdaki şiddet nasıl değişir?",
+   "answer": "Şiddet genliğin karesiyle ilişkili olduğundan dört kat olur; foton enerjisi değişmez."
+  },
+  {
+   "after": 14,
+   "prompt": "Kaynak yarık düzlemine paralel kaydırılırsa çift yarık deseninde ne olabilir?",
+   "answer": "Yarıklara geliş yolları farklılaşır ve desenin merkezi kayabilir."
+  },
+  {
+   "after": 16,
+   "prompt": "Aynı λ ve L için tek yarığın genişliği iki katına çıkarsa merkez aydınlığın genişliği nasıl değişir?",
+   "answer": "Merkez genişliği 2λL/a olduğundan yarıya iner."
+  },
+  {
+   "after": 17,
+   "prompt": "Sabun zarındaki renkler nasıl oluşur?",
+   "answer": "Farklı yüzeylerden dönen ışıklar farklı optik yollarla birleşir; girişim bazı renkleri güçlendirip bazılarını zayıflatır."
+  }
+ ],
+ "doppler-etkisi": [
+  {
+   "after": 1,
+   "prompt": "Kaynak hareketsizken λön=(v−vk)/f₀ bağıntısı hangi sonuca dönmelidir?",
+   "answer": "vk=0 olunca kaynağın önünde de arkasında da dalga boyu v/f₀ olur."
+  },
+  {
+   "after": 3,
+   "prompt": "fG=f₀·(v−vg)/(v−vk) formülünde kaynak sağa, yani alıcıya doğru giderse sonuç nasıl değişir?",
+   "answer": "Payda küçülür, bu yüzden gözlenen frekans kaynak frekansından büyük çıkar."
+  },
+  {
+   "after": 5,
+   "prompt": "Kaynak ve alıcı aynı doğruda aynı sabit hızla giderse gözlenen frekans ne olur?",
+   "answer": "vk=vg olduğundan pay ile payda eşitlenir ve gözlenen frekans kaynak frekansına döner."
+  },
+  {
+   "after": 7,
+   "prompt": "Sabit hızla yaklaşan bir sirenin sesi yaklaşırken neden giderek tizleşmiş sayılmaz?",
+   "answer": "İdeal modelde yaklaşma boyunca frekans sabittir ve f₀ değerinden büyüktür; yaklaşırken artan şey sesin şiddetidir."
+  },
+  {
+   "after": 9,
+   "prompt": "Uzak bir kaynağın tayfında kırmızıya kayma nasıl anlaşılır?",
+   "answer": "Laboratuvardaki aynı kimlikli çizgiyle eşleştirilen çizginin gözlenen dalga boyu laboratuvar değerinden büyükse kırmızıya kayma vardır."
+  },
+  {
+   "after": 11,
+   "prompt": "Doppler ultrasonda frekans değişimi hangi sesten ölçülür?",
+   "answer": "Hareketli kan hücrelerinden yansıyan sesin frekans değişiminden ölçülür."
+  }
+ ],
+ "elektromanyetik-dalgalar": [
+  {
+   "after": 1,
+   "prompt": "Elektromanyetik dalganın yayılması için maddesel ortam neden gerekmez?",
+   "answer": "Dalga elektrik ve manyetik alanların uzay ve zamanda değişmesidir; Güneş ışığı da Dünya’ya boşluktan geçerek ulaşır."
+  },
+  {
+   "after": 3,
+   "prompt": "Boşlukta E₀=120 V/m olan bir düzlem dalganın B₀ değeri yaklaşık kaç tesladır?",
+   "answer": "E₀/B₀=c olduğundan B₀=120/(3·10⁸) T, yani yaklaşık 4,00·10⁻⁷ T olur."
+  },
+  {
+   "after": 5,
+   "prompt": "Işık saydam bir ortama geçince frekans, hız ve dalga boyundan hangisi değişmez?",
+   "answer": "Frekans değişmez; faz hızı v=c/n, dalga boyu λ=λ₀/n olarak küçülür."
+  },
+  {
+   "after": 7,
+   "prompt": "Işığın yüksüz olması hangi davranışı göstermemesi anlamına gelir?",
+   "answer": "Statik elektrik ya da manyetik alanda yüklü bir tanecik gibi Lorentz kuvvetiyle sapmaz."
+  },
+  {
+   "after": 9,
+   "prompt": "Radyo yayınında bilgi elektromanyetik sinyale nasıl kodlanır?",
+   "answer": "Taşıyıcının genliği, frekansı ya da fazı gibi özellikleri değiştirilerek kodlanır; sinyalin kendisi konuşma sesi değildir."
+  },
+  {
+   "after": 11,
+   "prompt": "X ışınları hangi iki yolla üretilebilir?",
+   "answer": "Hızlı elektronların yavaşlatılmasıyla ya da atomun iç enerji düzeyleri arasındaki geçişlerle üretilebilir."
+  },
+  {
+   "after": 13,
+   "prompt": "Eksenleri dik iki doğrusal polarizörden geçişin çok azalması ışık hakkında neyi gösterir?",
+   "answer": "Işığın enine dalga olduğunu gösterir; ses gibi boyuna bir dalga bu biçimde doğrusal kutuplanmaz."
+  }
+ ],
+ "atom-modelleri-fizik": [
+  {
+   "after": 2,
+   "prompt": "Thomson modeli Rutherford betiminden pozitif yükün yeri bakımından nasıl ayrılır?",
+   "answer": "Thomson modelinde pozitif yük atoma yaygın dağılmıştır; Rutherford betiminde çok küçük ve yoğun bir çekirdekte toplanır."
+  },
+  {
+   "after": 3,
+   "prompt": "Millikan ölçümü Thomson’un ∣e∣/mₑ oranıyla birleştirilince ne bulunur?",
+   "answer": "Millikan temel yükün büyüklüğünü belirler; bu değer ∣e∣/mₑ oranıyla birleşince elektron kütlesi bulunur."
+  },
+  {
+   "after": 6,
+   "prompt": "Klasik elektromanyetizmaya göre çekirdek çevresinde dolanan elektronlu atomun neden çökmesi beklenir?",
+   "answer": "İvmeli hareket eden yüklü elektron enerji yayar; enerji kaybeden yörünge küçülür ve atom çökmelidir."
+  },
+  {
+   "after": 8,
+   "prompt": "Bohr modelinde açısal momentum nasıl kuantumlanır?",
+   "answer": "L=nħ biçiminde kuantumlanır; n pozitif tam sayıdır ve ħ=h/(2π) olur."
+  },
+  {
+   "after": 10,
+   "prompt": "Bohr modelinde aynı Z için n iki katına çıkarsa yörünge yarıçapı nasıl değişir?",
+   "answer": "rₙ=a₀n²/Z olduğundan yarıçap dört katına çıkar."
+  },
+  {
+   "after": 12,
+   "prompt": "Hidrojende n=2 düzeyindeki elektronun iyonlaşma eşiği kaç eV olur?",
+   "answer": "13,6 Z²/n² eV bağıntısında Z=1 ve n=2 alınırsa 13,6/4=3,4 eV bulunur."
+  },
+  {
+   "after": 13,
+   "prompt": "Hidrojende n=2 düzeyinden n=1 düzeyine geçişte yayılan fotonun enerjisi nasıl yazılır?",
+   "answer": "Eilk−Eson pozitif farkı olarak 10,2 eV yazılır; foton enerjisini −10,2 eV diye yazmak yanlıştır."
+  },
+  {
+   "after": 16,
+   "prompt": "Franck–Hertz deneyi atomların enerji düzeyleri hakkında neyi destekler?",
+   "answer": "Elektronların belirli eşiklerde atomlara kesikli enerji aktarması, enerji düzeylerinin sürekli olmadığını destekler."
+  },
+  {
+   "after": 18,
+   "prompt": "Hidrojende Balmer serisinin çizgileri hangi son düzeye inen geçişlerdir?",
+   "answer": "Son düzeyi n=2 olan geçişlerdir; Lyman n=1, Paschen n=3 düzeyine iner."
+  },
+  {
+   "after": 20,
+   "prompt": "Bir n kabuğunda en çok kaç orbital ve kaç elektron bulunabilir?",
+   "answer": "n² orbital ve en çok 2n² elektron bulunabilir; her orbital en çok iki zıt spinli elektron alır."
+  }
+ ],
+ "basit-harmonik-hareket": [
+  {
+   "after": 1,
+   "prompt": "Düşey bir yayda kütlenin denge uzaması nedir?",
+   "answer": "mg/k olur; bu noktada yayın kuvveti ağırlığı dengeler."
+  },
+  {
+   "after": 2,
+   "prompt": "Uçları −6 cm ve +6 cm olan salınımda genlik ve bir tam salınımda alınan yol kaçtır?",
+   "answer": "Genlik A=6 cm, bir tam salınımda alınan yol 4A=24 cm olur; yer değiştirme ise sıfırdır."
+  },
+  {
+   "after": 4,
+   "prompt": "Denge noktasından karşıt yönlü iki ardışık geçiş arasında ne kadar süre geçer?",
+   "answer": "T/2 geçer; aynı konumdan aynı yönde iki ardışık geçiş arası ise T kadardır."
+  },
+  {
+   "after": 6,
+   "prompt": "|x|=A/2 konumunda basit harmonik hareket yapan cismin sürati kaçtır?",
+   "answer": "|v|=ω√(A²−x²) bağıntısıyla ω√(A²−A²/4)=√3Aω/2 bulunur."
+  },
+  {
+   "after": 7,
+   "prompt": "Dengeye yaklaşan cisim kuvvetin büyüklüğü azaldığı hâlde neden hızlanır?",
+   "answer": "Dengeye yaklaşırken kuvvet ile hız aynı yöndedir; kuvvet azalsa da hızla aynı yönde kaldıkça sürat artar."
+  },
+  {
+   "after": 9,
+   "prompt": "Genlik iki katına çıkarsa yay sisteminin toplam enerjisi ve periyodu nasıl değişir?",
+   "answer": "E=kA²/2 olduğundan enerji dört katına çıkar; periyot ideal doğrusal koşullarda aynı kalır."
+  },
+  {
+   "after": 11,
+   "prompt": "Yay sabitleri k₁ ve k₂ olan iki yay seri bağlanırsa eşdeğer yay sabiti nedir?",
+   "answer": "1/k_eş=1/k₁+1/k₂ olduğundan k_eş=k₁k₂/(k₁+k₂) olur; seri sistem tek tek yaylardan daha yumuşaktır."
+  },
+  {
+   "after": 13,
+   "prompt": "Bir yay iki eşit parçaya kesilip parçalar paralel bağlanırsa eşdeğer sabit ve periyot ne olur?",
+   "answer": "Her parçanın sabiti 2k, paralel eşdeğer 4k olur; aynı kütlenin periyodu yarıya iner."
+  },
+  {
+   "after": 15,
+   "prompt": "Küçük açılı basit sarkaçta ip uzunluğu dört katına çıkarsa periyot nasıl değişir?",
+   "answer": "T≈2π√(L/g) olduğundan periyot iki katına çıkar; kütle periyodu değiştirmez."
+  }
+ ],
+ "su-dalgalarinda-kirinim": [
+  {
+   "after": 1,
+   "prompt": "Noktasal kaynak ve geniş doğrusal kaynak nasıl dalga cepheleri oluşturur?",
+   "answer": "Noktasal kaynak dairesel, geniş doğrusal kaynak ise yaklaşık düz dalga cepheleri oluşturur."
+  },
+  {
+   "after": 2,
+   "prompt": "Huygens çiziminde açıklıktaki noktaların küçük dalga katkıları neden yeni enerji kaynağı sayılmaz?",
+   "answer": "Bu katkılar gelen dalganın aktarılmasını betimler; çizim görünmeyen bir enerji artışı iddia etmez."
+  },
+  {
+   "after": 4,
+   "prompt": "Aynı kaynak ve ortamda açıklık genişliği yarıya indirilirse λ/w oranı ve yayılma nasıl değişir?",
+   "answer": "Oran iki katına çıkar ve yayılmanın açısal kapsamı genellikle artar."
+  },
+  {
+   "after": 6,
+   "prompt": "Sığ su yaklaşımında frekans korunurken derinlik artarsa dalga boyu nasıl değişir?",
+   "answer": "v≈√(gh) arttığı için λ=v/f de artar; açıklık sabitse λ/w büyür."
+  },
+  {
+   "after": 8,
+   "prompt": "Dalga leğeninde açıklık genişliğinin etkisini incelerken hangi değişkenler sabit tutulmalıdır?",
+   "answer": "Derinlik, kaynak frekansı ve genlik sabit tutulmalı; yalnız açıklık genişliği değiştirilmelidir."
+  },
+  {
+   "after": 11,
+   "prompt": "İdeal uzak alan zarfında w=2λ ise ilk sıfır kaç derecede oluşur?",
+   "answer": "w sinθ=λ koşulundan sinθ=1/2 bulunur, ilk sıfır 30° olur."
+  }
+ ],
+ "su-dalgalarinda-girisim": [
+  {
+   "after": 1,
+   "prompt": "İki kaynağın kararlı bir girişim deseni oluşturması için hangi koşul gerekir?",
+   "answer": "Aynı frekansta ve sabit faz farkıyla çalışmaları gerekir; yalnız aynı anda başlamaları yetmez."
+  },
+  {
+   "after": 3,
+   "prompt": "Kaynak 2’nin kaynak 1’e göre fazı φ ise P noktasındaki faz farkı nasıl yazılır?",
+   "answer": "Δr=r₂−r₁ seçilerek δ=φ−2πΔr/λ yazılır."
+  },
+  {
+   "after": 5,
+   "prompt": "Ters evreli iki katkının genlikleri eşit değilse noktadaki minimum genlik kaç olur?",
+   "answer": "|A₁−A₂| olur; bu yüzden tam düğüm oluşmaz."
+  },
+  {
+   "after": 7,
+   "prompt": "Katar ve düğüm çizgileri gerçekte hangi eğri biçimindedir?",
+   "answer": "Kaynakları odak alan hiperbol dallarıdır; Δr=0 özel durumu orta dikmedir."
+  },
+  {
+   "after": 10,
+   "prompt": "Kaynak aralığı d sabitken dalga boyu küçülürse çizgi sayısı nasıl değişebilir?",
+   "answer": "|Δr|<d aralığına daha çok tam ve buçuklu kat sığacağı için çizgi sayısı artabilir."
+  },
+  {
+   "after": 12,
+   "prompt": "Faz farkı δ=π/2 olan iki sinüzoidal katkının toplam genliği nedir?",
+   "answer": "A_top²=A₁²+A₂²+2A₁A₂cosδ ve cosδ=0 olduğundan A_top=√(A₁²+A₂²) olur."
+  }
+ ],
+ "donerek-oteleme-hareketi": [
+  {
+   "after": 1,
+   "prompt": "Saf ötelenmede cismin noktalarının hız vektörleri nasıldır?",
+   "answer": "Aynı anda bütün noktaların hız vektörü aynıdır; cismin yönelimi değişmez."
+  },
+  {
+   "after": 2,
+   "prompt": "Merkezi sağa 2 m/s giden, ω=−5 rad/s ve R=0,4 m olan tekerin üst noktası yere göre kaç m/s ile gider?",
+   "answer": "Dönme katkısı üstte sağa |ω|R=2 m/s olur; merkez hızıyla toplanınca üst nokta sağa 4 m/s gider."
+  },
+  {
+   "after": 5,
+   "prompt": "Kaymadan yuvarlanan bir teker n tur döndüğünde merkezi ne kadar ilerler?",
+   "answer": "Her turda 2πR ilerlediği için n tur sonunda merkez yolu n·2πR olur."
+  },
+  {
+   "after": 7,
+   "prompt": "Özkütlesi ve şekli sabit kürelerde yarıçap büyüyünce eylemsizlik momenti nasıl değişir?",
+   "answer": "Kütle R³ ile büyüdüğünden I ∝ R⁵ olur; yalnız mR² içindeki R değişmiş gibi hesaplamak yanlış oran verir."
+  },
+  {
+   "after": 9,
+   "prompt": "Aynı yükseklikten kaymadan yuvarlanan dolu küre, disk ve halkadan hangisi en büyük sürate ulaşır?",
+   "answer": "v=√[2gh/(1+k)] olduğundan k değeri en küçük olan dolu küre (k=0,4) en büyük sürate ulaşır."
+  },
+  {
+   "after": 11,
+   "prompt": "Kütlesi 3 kg, boyu 2 m olan ince çubuğun ucundan geçen dik eksene göre eylemsizlik momenti kaçtır?",
+   "answer": "I=mL²/3=3·2²/3=4 kg·m² olur; orta eksendeki 1 kg·m² değerinin dört katıdır."
+  }
+ ],
+ "acisal-momentum": [
+  {
+   "after": 1,
+   "prompt": "m=3 kg, r=(2;1) m ve v=(1;4) m/s olan parçacığın L_z değeri kaçtır?",
+   "answer": "p=(3;12) olur; L_z=x p_y−y p_x=2×12−1×3=21 kg·m²/s bulunur."
+  },
+  {
+   "after": 3,
+   "prompt": "x sağa, y yukarı seçilen sayfa düzleminde saat yönünün tersine dönme hangi yöne karşılık gelir?",
+   "answer": "+z yönüne, yani okuyucuya doğru yöne karşılık gelir; saat yönü −z olur."
+  },
+  {
+   "after": 5,
+   "prompt": "Sabit bir tork Δt süre boyunca etki ederse açısal momentum değişimi nedir?",
+   "answer": "ΔL=τΔt olur; tork–zaman grafiğinin işaretli alanı açısal itmeyi verir."
+  },
+  {
+   "after": 6,
+   "prompt": "Dönen sporcunun I değeri 9 kg·m² değerinden 3 kg·m² değerine inerken ilk ω 2 rad/s ise son ω kaç olur?",
+   "answer": "L=9·2=18 kg·m²/s sabit kalır; son ω=18/3=6 rad/s olur."
+  },
+  {
+   "after": 8,
+   "prompt": "Aynı eksendeki iki disk birbirine bağlanıp ortak ω ile dönünce hangi nicelik korunmayabilir?",
+   "answer": "Dönme kinetik enerjisi korunmayabilir; iç sürtünme bir bölümünü ısıya çevirir, net dış tork yoksa toplam açısal momentum ise korunur."
+  },
+  {
+   "after": 10,
+   "prompt": "Gezegenin yörüngesel açısal momentumu kendi ekseni etrafındaki dönme momentinden nasıl ayrılır?",
+   "answer": "Yörüngesel momentum yıldızdan gezegene uzanan r ve yörünge hızıyla hesaplanır; gezegenin kendi dönmesi ayrı bir niceliktir."
+  }
+ ],
+ "newton-genel-cekim-yasasi": [
+  {
+   "after": 1,
+   "prompt": "İki dış küre arasındaki çekim kuvveti hesabında r hangi uzaklıktır?",
+   "answer": "Merkezler arası uzaklıktır; yüzeyler arasındaki boşluk değildir."
+  },
+  {
+   "after": 2,
+   "prompt": "Kütleler sabitken uzaklık üç katına çıkarsa çekim kuvveti nasıl değişir?",
+   "answer": "Kuvvet 1/r² ile değiştiğinden dokuzda bire iner."
+  },
+  {
+   "after": 4,
+   "prompt": "Aynı konuma 1 kg yerine 5 kg deney kütlesi konursa çekim alanı ve çekim kuvveti nasıl değişir?",
+   "answer": "Çekim alanı değişmez; kuvvet deney kütlesiyle orantılı olduğundan beş katına çıkar."
+  },
+  {
+   "after": 6,
+   "prompt": "Özkütlesi sabit bir kürenin içinde çekim alanı merkezden uzaklıkla nasıl değişir?",
+   "answer": "İç kütle M(r/R)³ olduğundan alan g=g₀r/R ile doğrusal artar; merkezde sıfırdır."
+  },
+  {
+   "after": 8,
+   "prompt": "Bir kütle r₁ konumundan daha uzaktaki r₂ konumuna yavaşça taşınırsa dış iş ne kadardır?",
+   "answer": "ΔU=GMm(1/r₁−1/r₂) kadardır ve pozitiftir; çekimin işi bunun negatifidir."
+  },
+  {
+   "after": 10,
+   "prompt": "Dairesel yörüngedeki uydunun kinetik ve potansiyel enerjisi arasındaki ilişki nedir?",
+   "answer": "K=GMm/(2r) ve U=−GMm/r olduğundan |U|=2K olur."
+  },
+  {
+   "after": 12,
+   "prompt": "Yer sabit bir haberleşme uydusunun yörüngesi hangi koşulları sağlamalıdır?",
+   "answer": "Dairesel, ekvator düzleminde ve Dünya’nın dönüş yönüyle aynı yönlü olmalı; Dünya ile eş açısal hızla dolanmalıdır."
+  }
+ ],
+ "kepler-yasalari": [
+  {
+   "after": 1,
+   "prompt": "Kepler yasaları ile Newton’un çekim kuramı arasındaki tarihsel ilişki nedir?",
+   "answer": "Kepler yasaları önce gözlemsel düzenlilik olarak bulundu; Newton’un çekim yasası daha sonra bunların mekanik açıklamasını sağladı."
+  },
+  {
+   "after": 2,
+   "prompt": "En yakın ve en uzak uzaklıklar biliniyorsa büyük yarı eksen nasıl bulunur?",
+   "answer": "a=(r_p+r_a)/2 ile bulunur; bu değer gezegenin zamana göre ortalama uzaklığı olmak zorunda değildir."
+  },
+  {
+   "after": 4,
+   "prompt": "Alanlar yasası Newton mekaniğiyle nasıl açıklanır?",
+   "answer": "Merkezî çekimin yıldıza göre torku sıfır olduğundan h=|r×v| korunur ve alan hızı dA/dt=h/2 sabit kalır."
+  },
+  {
+   "after": 6,
+   "prompt": "Aynı yıldız çevresinde büyük yarı ekseni dört katı olan yörüngenin periyodu kaç katıdır?",
+   "answer": "T₂/T₁=(a₂/a₁)^(3/2)=4^(3/2)=8 olduğundan periyot sekiz katıdır."
+  },
+  {
+   "after": 7,
+   "prompt": "Toplam alanı 80 birim, periyodu 20 zaman birimi olan yörüngede 3 zaman biriminde kaç alan birimi taranır?",
+   "answer": "A=πab·Δt/T bağıntısıyla 80·3/20=12 alan birimi taranır."
+  },
+  {
+   "after": 9,
+   "prompt": "Eliptik yörüngede çekim ivmesi oku hangi noktaya yönelir?",
+   "answer": "Elipsin merkezine değil, yıldızın bulunduğu odağa yönelir."
+  },
+  {
+   "after": 11,
+   "prompt": "Kopernik ile Kepler’in katkıları yörünge biçimi bakımından nasıl ayrılır?",
+   "answer": "Kopernik Güneş merkezli sistemi dairesel hareketlerle kurdu; Kepler ise yörüngenin elips olduğunu buldu."
+  }
+ ],
+ "manyetik-kuvvet": [
+  {
+   "after": 1,
+   "prompt": "B=0,5 T, I=4 A, alandaki tel boyu 0,3 m ve α=30° ise tele etki eden kuvvet kaç N olur?",
+   "answer": "F=B I L sin α=0,5·4·0,3·0,5=0,30 N olur."
+  },
+  {
+   "after": 2,
+   "prompt": "Akım +x, alan +z yönündeyse tele etki eden manyetik kuvvet hangi yöndedir?",
+   "answer": "F=IL×B ve x×z=−y olduğundan kuvvet −y yönündedir; tel aşağı itilir."
+  },
+  {
+   "after": 4,
+   "prompt": "Düzgün alandaki akım çerçevesinde net kuvvet sıfırken neden dönme eğilimi oluşur?",
+   "answer": "Karşı kenarlardaki eşit ve zıt kuvvetlerin etki doğruları farklıdır; bu kuvvet çifti tork oluşturur."
+  },
+  {
+   "after": 7,
+   "prompt": "m=1 mg, q=2 μC olan tanecik B=0,5 T alana v=4 m/s ile dik girerse yörünge yarıçapı kaç m olur?",
+   "answer": "r=mv/(|q|B)=(10⁻⁶·4)/(2·10⁻⁶·0,5)=4 m olur."
+  },
+  {
+   "after": 8,
+   "prompt": "Alana dik giren tanecik hızlanırsa yarıçap ve dolanım periyodu nasıl değişir?",
+   "answer": "Yarıçap artar; periyot T=2πm/(|q|B) süratten bağımsız olduğu için değişmez."
+  },
+  {
+   "after": 10,
+   "prompt": "Dik E ve B alanlı hız seçiciden sapmadan geçen taneciğin sürati nedir?",
+   "answer": "|q|E=|q|vB koşulundan v=E/B olur; yön koşulu da ayrıca sağlanmalıdır."
+  }
+ ],
+ "elektromanyetik-induksiyon": [
+  {
+   "after": 1,
+   "prompt": "Düzgün alanda yüzey normali B ile 180° yapıyorsa akı nedir?",
+   "answer": "Φ=BA cos θ ve cos 180°=−1 olduğundan Φ=−BA olur."
+  },
+  {
+   "after": 3,
+   "prompt": "N sarımlı bir bobinde ortalama emk akı değişiminden nasıl bulunur?",
+   "answer": "ΔΦ=Φson−Φilk alınır ve ortalama emk −NΔΦ/Δt ile bulunur."
+  },
+  {
+   "after": 4,
+   "prompt": "Öz-indüktansı ihmal edilen kapalı devrede indüklenen akım nasıl bulunur?",
+   "answer": "I=ε/R ile bulunur; R toplam devre direncidir."
+  },
+  {
+   "after": 6,
+   "prompt": "Mıknatısın N kutbu halkaya yaklaşırken halkanın yakın yüzünde hangi kutup oluşur?",
+   "answer": "N kutbu oluşur; bu akım yaklaşmanın yarattığı akı artışına karşı koyar."
+  },
+  {
+   "after": 8,
+   "prompt": "Raylarda sabit süratle çekilen çubukta dış güç neye eşittir?",
+   "answer": "Fdış v=B²L²v²/R=I²R olur; dirençteki ısı dışarıdan yapılan mekanik işten gelir."
+  },
+  {
+   "after": 10,
+   "prompt": "B’ye dik düzlemde bir ucundan ω ile dönen L boyundaki çubukta emk nedir?",
+   "answer": "Sürat uzaklıkla arttığından ε=BωL²/2 olur; uç süratini bütün çubuğa uygulamak iki kat hata verir."
+  },
+  {
+   "after": 12,
+   "prompt": "Bobindeki akım artarken öz-indüksiyon emk’si nasıl davranır?",
+   "answer": "εöz=−L dI/dt ile akımın artışını azaltan yönde bir emk katkısı doğar."
+  }
+ ],
+ "alternatif-akim": [
+  {
+   "after": 1,
+   "prompt": "Düzgün alanda dönen çerçevede akının en büyük olduğu konumda emk ne olur?",
+   "answer": "Emk sıfır olur; akının sıfırdan en hızlı geçtiği konumda ise emk büyüklüğü en büyüktür."
+  },
+  {
+   "after": 2,
+   "prompt": "f=50 Hz olan sinüzoidal bir kaynağın periyodu ve açısal frekansı nedir?",
+   "answer": "T=1/f=0,020 s ve ω=2πf=100π rad/s olur."
+  },
+  {
+   "after": 4,
+   "prompt": "İdeal dirençte AC ile ortalama güç neden negatife gitmez?",
+   "answer": "Anlık güç R i² olduğundan hiçbir anda negatif olmaz; direnç enerjiyi ısıya çevirir."
+  },
+  {
+   "after": 6,
+   "prompt": "Frekans artınca indüktif ve kapasitif reaktans nasıl değişir?",
+   "answer": "XL=ωL büyür, XC=1/(ωC) ise küçülür."
+  },
+  {
+   "after": 9,
+   "prompt": "Seri sinüzoidal devrede ortalama gerçek güç nasıl hesaplanır?",
+   "answer": "P=Vetkin Ietkin cos φ=Ietkin²R ile hesaplanır; cos φ güç faktörüdür."
+  },
+  {
+   "after": 10,
+   "prompt": "Seri RLC devresinde rezonans açısal frekansı nedir?",
+   "answer": "XL=XC koşulundan ω₀=1/√(LC) bulunur; bu durumda empedans en küçük değer olan R olur."
+  },
+  {
+   "after": 12,
+   "prompt": "DC kaynağa bağlanan R–C devresinde kararlı son durumda sığaç akımı ne olur?",
+   "answer": "İlk anda yüklenme akımı olabilir; kararlı son durumda ideal sığaç üzerinden akım sıfıra iner."
+  }
+ ],
+ "transformatorler": [
+  {
+   "after": 1,
+   "prompt": "İdeal bir trafoda sekonder geriliminin frekansı girişe göre nasıldır?",
+   "answer": "Aynıdır; kaynak frekansı sarım sayıları oranıyla çarpılmaz."
+  },
+  {
+   "after": 2,
+   "prompt": "Gerilim yükseltici trafoyu alçaltıcı trafodan ayıran koşul nedir?",
+   "answer": "NS>NP ise çıkış etkin gerilimi büyüktür ve trafo yükselticidir; NS<NP ise alçaltıcıdır."
+  },
+  {
+   "after": 4,
+   "prompt": "NP=400, NS=100, VP=120 V ve yük direnci 30 Ω olan ideal trafoda primer akımı kaç A olur?",
+   "answer": "VS=30 V, IS=1 A ve çıkış gücü 30 W olur; IP=30 W/120 V=0,25 A bulunur."
+  },
+  {
+   "after": 5,
+   "prompt": "500 W girişten 400 W çıkış alınan bir trafonun verimi ve kayıp gücü nedir?",
+   "answer": "η=400/500=%80 olur; kayıp güç 500−400=100 W’tır."
+  },
+  {
+   "after": 8,
+   "prompt": "Aynı güç taşınırken hat gerilimi iki katına çıkarılırsa hattaki ısıl kayıp nasıl değişir?",
+   "answer": "Gereken akım yarıya iner, I²Rhat kaybı dörtte bire düşer."
+  },
+  {
+   "after": 9,
+   "prompt": "Verimi %80 olan iki trafo ardışık bağlanırsa toplam verim kaç olur?",
+   "answer": "Verimler çarpılır: 0,8·0,8=0,64, yani %64 olur; %160 değildir."
+  }
+ ],
+ "cembersel-hareket": [
+  {
+   "after": 1,
+   "prompt": "Dakikada 120 tur atan bir cismin frekansı ve periyodu nedir?",
+   "answer": "Frekans 120/60=2 Hz olur; periyot T=1/f=0,50 s’dir."
+  },
+  {
+   "after": 3,
+   "prompt": "Aynı rijit diskte merkeze uzak ve yakın iki noktadan hangisinin çizgisel sürati büyüktür?",
+   "answer": "İkisi aynı ω ile döner; v=|ω|r olduğundan merkeze uzak noktanın sürati büyüktür."
+  },
+  {
+   "after": 5,
+   "prompt": "Düzgün çembersel harekette ivme vektörü neden sabit değildir?",
+   "answer": "Büyüklüğü v²/r sabit kalsa da yönü hep merkeze baktığından cisimle birlikte döner."
+  },
+  {
+   "after": 7,
+   "prompt": "Yatay düzlemde dönen cismin ipi koptuğu anda cisim hangi doğrultuda gider?",
+   "answer": "Yatayda başka kuvvet yoksa o andaki teğet hız doğrultusunda gider; dışa doğru yeni bir itme gerekmez."
+  },
+  {
+   "after": 9,
+   "prompt": "Aynı ipe ardışık bağlı, aynı ω ile dönen iki cisimde iç ip parçasının gerilmesi T₁ nedir?",
+   "answer": "T₂=m₂ω²r₂ ve T₁−T₂=m₁ω²r₁ olduğundan T₁=ω²(m₁r₁+m₂r₂) olur."
+  },
+  {
+   "after": 10,
+   "prompt": "İp boyu L=2 m ve sin α=0,6 olan konik sarkaçta dönme yarıçapı kaç m olur?",
+   "answer": "r=L sin α=2·0,6=1,2 m olur; yarıçap ipin tam boyu değildir."
+  },
+  {
+   "after": 12,
+   "prompt": "Sürtünmesiz eğimli virajda gereken sürat nasıl bulunur?",
+   "answer": "N cos θ=mg ve N sin θ=mv²/r taraf tarafa bölünürse v²=gr tan θ bulunur."
+  },
+  {
+   "after": 14,
+   "prompt": "Dönen araçla birlikte seçilen ivmeli çerçevede Newton denklemi nasıl yazılır?",
+   "answer": "Uygun yapay eylemsizlik terimleri eklenerek yazılır; yer çerçevesinde ise dışa doğru gerçek bir ek kuvvet çizilmez."
+  }
+ ],
+ "elektriksel-potansiyel-enerji": [
+  {
+   "after": 1,
+   "prompt": "+2 μC ile +3 μC yük 0,30 m uzaktaysa potansiyel enerji kaç J olur?",
+   "answer": "U=kq1q2/r=(9×10⁹)(6×10⁻¹²)/0,30=0,18 J olur."
+  },
+  {
+   "after": 3,
+   "prompt": "0,30 m uzaklıkta U değeri 0,18 J olan aynı işaretli iki yük 0,60 m uzaklığa geçerse ΔU kaç J olur?",
+   "answer": "U, 1/r ile değiştiğinden 0,09 J olur; ΔU=0,09−0,18=−0,09 J bulunur."
+  },
+  {
+   "after": 4,
+   "prompt": "Zıt işaretli bir yük çekime karşı uzaklaştırılırken elektrik kuvvetinin işi ve U nasıl değişir?",
+   "answer": "Elektrik kuvveti harekete karşı olduğundan We negatif olur ve U artar."
+  },
+  {
+   "after": 6,
+   "prompt": "Uzaklıkla değişen elektrik kuvvetinin bir aralıktaki işi nasıl bulunur?",
+   "answer": "Kuvvet–konum grafiğinin altındaki alanla bulunur; tek bir kuvveti yol uzunluğuyla çarpmak genel olarak yanlıştır."
+  },
+  {
+   "after": 8,
+   "prompt": "Yalnız elektrik kuvveti iş yapıyorsa kinetik enerji değişimi ΔU ile nasıl ilişkilidir?",
+   "answer": "ΔK=−ΔU olur, yani K+U toplamı sabit kalır."
+  }
+ ]
+}

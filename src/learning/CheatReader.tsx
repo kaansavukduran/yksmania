@@ -4,6 +4,7 @@ import { useApp } from "../store";
 import { lessonById } from "../domain/content";
 import type { CheatSheet } from "./cheatsheetContent";
 import { VisualLab } from "./VisualLab";
+import { typeset } from "../domain/typeset";
 
 /*
  * "Kendini sına": the right-hand side of each formula (text after "=" up to
@@ -50,7 +51,7 @@ function Recall({ prompt, answer }: { prompt: string; answer: string }) {
   const [shown, setShown] = useState(false);
   return (
     <article className="cheat-recall-card">
-      <h3>{prompt}</h3>
+      <h3>{typeset(prompt)}</h3>
       <button
         className="secondary"
         aria-expanded={shown}
@@ -59,7 +60,7 @@ function Recall({ prompt, answer }: { prompt: string; answer: string }) {
         {shown ? <EyeOff size={16} /> : <Eye size={16} />}
         {shown ? "Yanıtı gizle" : "Yanıtı göster"}
       </button>
-      {shown && <p className="cheat-recall-answer">{answer}</p>}
+      {shown && <p className="cheat-recall-answer">{typeset(answer)}</p>}
     </article>
   );
 }
@@ -106,24 +107,24 @@ export function CheatReader({
       <div className="cheat-sections" key={testing ? "test" : "read"}>
         {sheet.sections.map((section, i) => (
           <section className="cheat-section" key={`${section.title}-${i}`}>
-            <h2>{section.title}</h2>
+            <h2>{typeset(section.title)}</h2>
             {section.text.map((text, j) => (
               <p key={j}>
-                <ClozeText text={text} testing={testing} />
+                <ClozeText text={typeset(text)} testing={testing} />
               </p>
             ))}
             {section.table && (
               <div
                 className="cheat-comparisons"
                 role="group"
-                aria-label={`${section.title} karşılaştırması`}
+                aria-label={`${typeset(section.title)} karşılaştırması`}
               >
                 {section.table.rows.map((row, j) => (
                   <dl key={j}>
                     {row.map((cell, k) => (
                       <div key={k}>
-                        <dt>{section.table!.headers[k]}</dt>
-                        <dd>{cell}</dd>
+                        <dt>{typeset(section.table!.headers[k])}</dt>
+                        <dd>{typeset(cell)}</dd>
                       </div>
                     ))}
                   </dl>
@@ -138,7 +139,7 @@ export function CheatReader({
           <h2>Dikkat et</h2>
           <ul>
             {sheet.cautions.map((text, i) => (
-              <li key={i}>{text}</li>
+              <li key={i}>{typeset(text)}</li>
             ))}
           </ul>
         </section>
@@ -151,22 +152,22 @@ export function CheatReader({
           <h2>Kuralı bir örnekte dene</h2>
           {sheet.examples.map((example, i) => (
             <details className="worked-example" key={i}>
-              <summary>{example.title}</summary>
+              <summary>{typeset(example.title)}</summary>
               {example.passage && (
                 <blockquote className="question-passage">
-                  {example.passage}
+                  {typeset(example.passage)}
                 </blockquote>
               )}
-              <p className="example-prompt">{example.prompt}</p>
+              <p className="example-prompt">{typeset(example.prompt)}</p>
               <details className="cheat-solution">
                 <summary>Çözümü adım adım gör</summary>
                 <ol>
                   {example.steps.map((step, j) => (
-                    <li key={j}>{step}</li>
+                    <li key={j}>{typeset(step)}</li>
                   ))}
                 </ol>
                 <p>
-                  <strong>Sonuç ve kontrol:</strong> {example.answer}
+                  <strong>Sonuç ve kontrol:</strong> {typeset(example.answer)}
                 </p>
               </details>
             </details>
@@ -210,7 +211,7 @@ export function CheatReader({
       )}
       <details className="cheat-source">
         <summary>Kaynak dayanağı</summary>
-        <p className="small muted">{sheet.source}</p>
+        <p className="small muted">{typeset(sheet.source)}</p>
       </details>
       <label className="field cheat-note">
         Notun
