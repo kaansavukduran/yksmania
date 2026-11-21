@@ -154,7 +154,7 @@
 .g016-tick {
   fill: var(--text);
   font:
-    18px system-ui,
+    18px "Inter Variable", system-ui,
     sans-serif;
 }
 .g016-on-accent {

@@ -60,7 +60,7 @@
 .bio016b-diagram text {
   fill: var(--text);
   font:
-    13px system-ui,
+    13px "Inter Variable", system-ui,
     sans-serif;
 }
 .bio016b-line {

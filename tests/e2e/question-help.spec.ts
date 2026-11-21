@@ -78,7 +78,7 @@ async function paragraphExam(page: Page, learning = false) {
     .click();
   await page
     .getByRole("button", {
-      name: "Başlat: TYT Türkçe branş denemesi",
+      name: "Denemeyi başlat: TYT Türkçe branş denemesi",
       exact: true,
     })
     .click();

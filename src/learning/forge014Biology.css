@@ -86,7 +86,7 @@
 .bio014-drawing text {
   fill: var(--text);
   font:
-    30px system-ui,
+    30px "Inter Variable", system-ui,
     sans-serif;
 }
 .bio014-line {

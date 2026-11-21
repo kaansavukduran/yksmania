@@ -155,7 +155,7 @@
 .g017-tick {
   fill: var(--text);
   font:
-    18px system-ui,
+    18px "Inter Variable", system-ui,
     sans-serif;
 }
 .g017-on-accent {
@@ -252,7 +252,7 @@ html[data-motion="off"] .forge017-geography-lab * {
 .g017-diagram text {
   fill: var(--text);
   font:
-    16px system-ui,
+    16px "Inter Variable", system-ui,
     sans-serif;
   text-anchor: middle;
 }

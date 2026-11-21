@@ -243,7 +243,7 @@ export function Exams({
               <button
                 className="primary"
                 disabled={busy || !!state.examDraft}
-                aria-label={`Başlat: ${spec.title}`}
+                aria-label={`Denemeyi başlat: ${spec.title}`}
                 onClick={() => void start(spec)}
               >
                 Denemeyi başlat <ArrowRight size={17} />

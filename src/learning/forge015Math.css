@@ -100,7 +100,7 @@
 }
 .stat015-lab svg text {
   fill: var(--text);
-  font: 16px sans-serif;
+  font: 16px "Inter Variable", sans-serif;
 }
 .stat015-axis {
   stroke: var(--text);

@@ -36,7 +36,7 @@ async function branch(page: Page) {
     .click();
   await page
     .getByRole("button", {
-      name: "Başlat: TYT Türkçe branş denemesi",
+      name: "Denemeyi başlat: TYT Türkçe branş denemesi",
       exact: true,
     })
     .click();
@@ -217,7 +217,7 @@ test("failed exam writes retain the last durable answer and finish draft; touch 
   await page.setViewportSize({ width: 320, height: 844 });
   await nav(page, "Sınavlar");
   await page
-    .getByRole("button", { name: "Başlat: TYT karma denemesi", exact: true })
+    .getByRole("button", { name: "Denemeyi başlat: TYT karma denemesi", exact: true })
     .click();
   await expect(page.locator(".exam-runner")).toBeVisible();
   expect(
@@ -398,7 +398,7 @@ test("block order, time pulse, second round and the official distribution panel 
   expect(
     await page.evaluate(() => JSON.parse(localStorage.getItem("yksmania.examBlockOrder.v1")!).TYT),
   ).toEqual(["turkce", "sosyal", "matematik", "fen"]);
-  await page.getByRole("button", { name: "Başlat: TYT karma denemesi", exact: true }).click();
+  await page.getByRole("button", { name: "Denemeyi başlat: TYT karma denemesi", exact: true }).click();
   await expect(page.locator(".exam-runner")).toBeVisible();
   const draft = (await stored(page)).examDraft;
   expect(draft.items).toHaveLength(120);

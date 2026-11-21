@@ -75,7 +75,7 @@
 .c012-drawing text {
   fill: currentColor;
   font:
-    16px system-ui,
+    16px "Inter Variable", system-ui,
     sans-serif;
 }
 .c012-primary {

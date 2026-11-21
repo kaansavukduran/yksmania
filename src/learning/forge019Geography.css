@@ -154,7 +154,7 @@
 .g019-diagram text {
   fill: var(--text);
   font:
-    20px system-ui,
+    20px "Inter Variable", system-ui,
     sans-serif;
   text-anchor: middle;
 }

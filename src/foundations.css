@@ -270,7 +270,7 @@
   .foundation-card {
     grid-template-columns: auto 1fr;
     row-gap: 0;
-    padding: clamp(14px, 1.05rem, 20px) clamp(14px, 1.1rem, 20px);
+    padding: clamp(14px, 1.05rem, 20px) clamp(14px, 1.15rem, 20px);
   }
   /* Ders seçimi dar ekranda iki sütunlu düzenli bir ızgaradır; ön ders
      sayısı adın altına iner. */

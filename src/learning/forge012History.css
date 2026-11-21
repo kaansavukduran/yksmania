@@ -73,7 +73,7 @@
 .h012-stage-label {
   fill: var(--text);
   font:
-    18px system-ui,
+    18px "Inter Variable", system-ui,
     sans-serif;
 }
 .h012-current {

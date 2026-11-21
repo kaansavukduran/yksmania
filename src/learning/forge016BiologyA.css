@@ -76,7 +76,7 @@
 .bio016a-drawing text {
   fill: var(--text);
   font:
-    26px system-ui,
+    26px "Inter Variable", system-ui,
     sans-serif;
 }
 .bio016a-drawing .bio016a-small {

@@ -77,7 +77,7 @@
 .f011-bio-a-drawing text {
   fill: var(--text);
   font:
-    18px system-ui,
+    18px "Inter Variable", system-ui,
     sans-serif;
 }
 .f011-bio-a-cell {

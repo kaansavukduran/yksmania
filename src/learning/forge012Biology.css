@@ -70,7 +70,7 @@
 .bio012-drawing text {
   fill: var(--text);
   font:
-    22px system-ui,
+    22px "Inter Variable", system-ui,
     sans-serif;
 }
 .bio012-drawing .bio012-phenotype {

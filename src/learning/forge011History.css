@@ -98,7 +98,7 @@
 .h011-diagram text {
   fill: var(--text);
   font:
-    14px system-ui,
+    14px "Inter Variable", system-ui,
     sans-serif;
 }
 .h011-role {

@@ -1122,8 +1122,10 @@ small,
 .calendar-day:hover {
   background: var(--surface-2);
 }
+/* Komşu aydaki günler soluk ama okunur: saydamlık yerine ikincil yazı rengi
+   (axe renk karşıtlığı; eski 0.4 saydamlık 3,4:1 veriyordu). */
 .calendar-day.other-month {
-  opacity: 0.4;
+  color: var(--muted);
 }
 .calendar-day.closed {
   background: repeating-linear-gradient(

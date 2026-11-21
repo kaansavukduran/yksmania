@@ -188,13 +188,13 @@
 .g014-number {
   fill: var(--text);
   font:
-    20px system-ui,
+    20px "Inter Variable", system-ui,
     sans-serif;
 }
 .g014-tick {
   fill: var(--text);
   font:
-    20px system-ui,
+    20px "Inter Variable", system-ui,
     sans-serif;
 }
 .g014-layer {

@@ -98,7 +98,7 @@
 }
 .b026-figure text {
   font:
-    18px system-ui,
+    18px "Inter Variable", system-ui,
     sans-serif;
   fill: currentColor;
 }

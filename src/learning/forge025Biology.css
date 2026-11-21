@@ -104,7 +104,7 @@
 }
 .b025-plot text {
   font:
-    20px system-ui,
+    20px "Inter Variable", system-ui,
     sans-serif;
   fill: var(--text);
 }
