@@ -2416,9 +2416,15 @@ progress::-moz-progress-bar {
   .selected-date .secondary {
     width: 100%;
   }
+  /* Reading and question pages keep their earlier, tighter side measure:
+     with the interface at 200% and text at 150% every pixel of line width
+     decides whether a long word stays whole. */
+  .main-content.study-main {
+    padding-inline: clamp(12px, 3vw, 18px);
+  }
   .lesson-article,
   .question-panel {
-    padding: var(--card-pad-sm);
+    padding: clamp(12px, 3vw, 18px);
   }
   .study-heading h1 {
     font-size: 1.8rem;
